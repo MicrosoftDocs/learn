@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.wwl.administer-unity-catalog-isolation-access
+uid: learn.wwl.secure-unity-catalog-for-governance
 metadata:
   title: "Structure Unity Catalog for governance"
   description: "Configure Unity Catalog isolation boundaries, leverage automatic lineage tracking, and migrate from Hive metastore to establish centralized data governance."
@@ -12,32 +12,29 @@ title: "Structure Unity Catalog for governance"
 summary: "Configure Unity Catalog isolation boundaries, leverage automatic lineage tracking for impact analysis, and migrate from Hive metastore to establish centralized governance."
 abstract: |
   By the end of this module, you'll be able to:
-  - Configure Unity Catalog isolation using administrative roles, workspace binding, and Azure storage separation
+  - Configure Unity Catalog isolation
   - Use automatic lineage tracking to analyze data flow and plan safe changes
-  - Enable Unity Catalog coexistence with Hive metastore for gradual migration
-  - Migrate tables from Hive metastore to Unity Catalog using SQL commands
-  - Apply governance best practices across multiple Azure Databricks workspaces
+  - Migrate tables from Hive metastore to Unity Catalog
 prerequisites: |
-  - Experience with Databricks workspace administration
-  - Understanding of Unity Catalog basic concepts and architecture
-  - Familiarity with organizational data governance requirements
+  - Basic understanding of data lakehouse concepts
+  - Familiarity with Azure Databricks workspace navigation
+  - Introductory knowledge of SQL
 iconUrl: /training/achievements/generic-badge.svg
 levels:
 - intermediate
 roles:
 - data-engineer
-- administrator
 products:
 - azure-databricks
 subjects:
-- data-management
+- data-engineering
 units:
-- learn.wwl.administer-unity-catalog-isolation-access.introduction
-- learn.wwl.administer-unity-catalog-isolation-access.implement-isolation-methods
-- learn.wwl.administer-unity-catalog-isolation-access.explore-lineage
-- learn.wwl.administer-unity-catalog-isolation-access.transition-from-hive-metastore
-- learn.wwl.administer-unity-catalog-isolation-access.knowledge-check
-- learn.wwl.administer-unity-catalog-isolation-access.exercise
-- learn.wwl.administer-unity-catalog-isolation-access.summary
+- learn.wwl.secure-unity-catalog-for-governance.introduction
+- learn.wwl.secure-unity-catalog-for-governance.implement-isolation-methods
+- learn.wwl.secure-unity-catalog-for-governance.explore-lineage
+- learn.wwl.secure-unity-catalog-for-governance.transition-from-hive-metastore
+- learn.wwl.secure-unity-catalog-for-governance.knowledge-check
+- learn.wwl.secure-unity-catalog-for-governance.exercise
+- learn.wwl.secure-unity-catalog-for-governance.summary
 badge:
-  uid: learn.wwl.administer-unity-catalog-isolation-access.badge
+  uid: learn.wwl.secure-unity-catalog-for-governance.badge

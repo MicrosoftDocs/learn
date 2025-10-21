@@ -1,60 +1,30 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.administer-unity-catalog-isolation-access.knowledge-check
+uid: learn.wwl.secure-unity-catalog-for-governance.knowledge-check
 title: Module assessment
 metadata:
   ai_generated_module_assessment: true
   title: Module assessment
   description: "Knowledge check"
-  ms.date: 10/19/2025
+  ms.date: 10/21/2025
   author: theresa-i
   ms.author: theresai
   ms.topic: unit
   module_assessment: true
-durationInMinutes: 3
+durationInMinutes: 5
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Which Unity Catalog isolation method provides the strongest separation for sensitive data requiring complete governance independence?"
+  - content: "Your organization needs to ensure the Finance team can only access their data from designated workspaces while physically storing that data in separate Azure storage containers. Which combination of Unity Catalog isolation methods should you implement?"
     choices:
-    - content: "Catalog-level isolation"
+    - content: "Administrative roles and catalog-level permissions only"
       isCorrect: false
-      explanation: "Incorrect. Catalog-level isolation provides logical separation within a single metastore but shares the same governance hierarchy."
-    - content: "Storage-level isolation"
+      explanation: "Incorrect. This approach doesn't restrict workspace access or provide physical data separation in storage."
+    - content: "Workspace-to-catalog binding and Azure storage separation"
       isCorrect: true
-      explanation: "Correct. Storage-level isolation using separate storage credentials and external locations provides the strongest data separation, ensuring different teams cannot access each other's underlying data files."
-    - content: "Workspace-level isolation with catalog binding"
+      explanation: "Correct. Workspace-to-catalog binding limits catalog visibility to specific workspaces, while Azure storage separation ensures data is physically isolated in different ADLS Gen2 containers."
+    - content: "Schema-level permissions and metastore admin roles"
       isCorrect: false
-      explanation: "Incorrect. Workspace isolation controls which catalogs are visible but doesn't prevent access if a user has permissions through another workspace."
-    - content: "Schema-level isolation"
+      explanation: "Incorrect. Schema-level permissions don't provide workspace isolation, and metastore admin roles are for overall governance, not team-specific access control."
+    - content: "Storage credentials and external locations only"
       isCorrect: false
-      explanation: "Incorrect. Schema-level isolation is the weakest form of separation and doesn't provide complete governance independence."
-
-  - content: "You need to access a legacy Hive metastore table after enabling Unity Catalog. What is the correct SQL syntax?"
-    choices:
-    - content: "SELECT * FROM legacy.default.customer_data"
-      isCorrect: false
-      explanation: "Incorrect. The Hive metastore catalog is called 'hive_metastore', not 'legacy'."
-    - content: "SELECT * FROM hive_metastore.default.customer_data"
-      isCorrect: true
-      explanation: "Correct. After Unity Catalog is enabled, Hive metastore tables are accessed through the special 'hive_metastore' catalog using three-level namespace syntax."
-    - content: "SELECT * FROM default.customer_data"
-      isCorrect: false
-      explanation: "Incorrect. You must specify the hive_metastore catalog name unless you've explicitly set it as your default catalog."
-    - content: "SELECT * FROM customer_data"
-      isCorrect: false
-      explanation: "Incorrect. Unity Catalog requires at least two-level namespace (schema.table) and Hive tables require the hive_metastore catalog prefix."
-
-  - content: "Where do you view the lineage graph for a Unity Catalog table?"
-    choices:
-    - content: "In the SQL query history under the Performance tab"
-      isCorrect: false
-      explanation: "Incorrect. Query history shows execution details, not data lineage."
-    - content: "In Catalog Explorer by selecting the table and clicking the Lineage tab"
-      isCorrect: true
-      explanation: "Correct. You access lineage by navigating to the table in Catalog Explorer and selecting the Lineage tab to view upstream sources and downstream dependencies."
-    - content: "In the Databricks workspace settings under Data Governance"
-      isCorrect: false
-      explanation: "Incorrect. Workspace settings don't display table-level lineage graphs."
-    - content: "In the notebook execution results after running a query"
-      isCorrect: false
-      explanation: "Incorrect. Lineage is viewed in Catalog Explorer, not in notebook execution results."
+      explanation: "Incorrect. While this provides storage separation, it doesn't control which workspaces can access the catalogs."

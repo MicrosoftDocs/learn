@@ -41,7 +41,7 @@ When you're ready to migrate tables from Hive metastore to Unity Catalog, you ha
 
 When you need to migrate specific tables, you can use SQL commands for precise control. The method you choose depends on your table type:
 
-**For managed Delta tables (recommended approach):**
+**For managed Delta tables:**
 
 ```sql
 -- Clone preserves all metadata, constraints, and properties
@@ -83,4 +83,4 @@ Here's what the upgrade wizard looks like:
 :::image type="content" source="../media/upgrade-wizard.png" alt-text="Screenshot of the Catalog Explorer upgrade wizard interface showing table selection and configuration options." lightbox="../media/upgrade-wizard.png":::
 
 > [!TIP]
-> For complete migration guidance, see [Upgrade Hive tables and views to Unity Catalog](https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/migrate) and [Use the UCX utilities to upgrade your workspace to Unity Catalog](https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/ucx).
+> For complete migration guidance, see [Upgrade Hive tables and views to Unity Catalog](/azure/databricks/data-governance/unity-catalog/migrate) and [Use the UCX utilities to upgrade your workspace to Unity Catalog](/azure/databricks/data-governance/unity-catalog/ucx).

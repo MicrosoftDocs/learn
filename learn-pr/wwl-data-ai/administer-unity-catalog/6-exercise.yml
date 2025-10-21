@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.administer-unity-catalog-isolation-access.exercise
+uid: learn.wwl.secure-unity-catalog-for-governance.exercise
 title: "Exercise - Transition from the Hive metastore"
 metadata:
   title: "Exercise - Transition from the Hive metastore"
