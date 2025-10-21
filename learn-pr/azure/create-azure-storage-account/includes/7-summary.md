@@ -4,7 +4,7 @@ If you tried to achieve the same thing without storage accounts, the end product
 
 Instead, you capture the rules in the settings for a storage account, and those rules are automatically applied to every data service in the account.
 
-[!INCLUDE [](../../../includes/azure-sandbox-cleanup.md)]
+[!INCLUDE [](../../../includes/azure-optional-exercise-subscription-cleanup.md)]
 
 > [!IMPORTANT]
 > When you're working in your own subscription, to avoid unwanted usage charges, you must remove any resources that you create.
