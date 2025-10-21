@@ -11,7 +11,7 @@ metadata:
   ms.custom:
     - devx-track-arm-template
   zone_pivot_groups: azure-shell-interface
-azureSandbox: true
+#azureSandbox: true
 durationInMinutes: 7
 content: |
   [!include[](includes/3-exercise-use-functions-create-expression.md)]
