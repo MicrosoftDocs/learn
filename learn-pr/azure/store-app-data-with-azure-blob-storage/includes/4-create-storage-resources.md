@@ -1,5 +1,11 @@
 After you have an idea about how you're going to store data across storage accounts, containers, and blobs, you can think about the Azure resources you need to support the app.
 
+[!INCLUDE[](../../../includes/azure-optional-exercise-subscription-note.md)]
+
+[!INCLUDE[](../../../includes/azure-optional-exercise-create-resource-group-note.md)]
+
+[!INCLUDE[](../../../includes/azure-cloud-shell-terminal-note.md)]
+
 ### Storage accounts
 
 Storage account creation is an administrative/management activity that takes place before you deploy and run your app. To create accounts, use a deployment or environment setup script, an Azure Resource Manager template, or set them up manually. Apps other than administrative tools shouldn't have permissions to create storage accounts.
@@ -16,7 +22,7 @@ You're going to complete an unfinished app by adding code to use Azure Blob Stor
 
 ::: zone pivot="csharp"
 
-:::image type="content" source="../media/4-fileuploader-with-files.PNG" alt-text="Screenshot of the FileUploader web app for C#.":::
+:::image type="content" source="../media/4-fileuploader-with-files.png" alt-text="Screenshot of the FileUploader web app for C#.":::
 
 ::: zone-end
 
@@ -34,12 +40,12 @@ The code you start with compiles and runs. The parts responsible for storing and
 
 Use Azure Cloud Shell with the Azure CLI to create a storage account. You need to provide a unique name for the storage account. Make a note of it for later. Replace `<your-unique-storage-account-name>` with a name you choose. Storage account names must be between 3 and 24 characters in length and use numbers and lower-case letters only.
 
-In the Cloud Shell window on the right side of the screen, select the **More** icon (**...**), then select **Settings** > **Go to Classic version**. Then, to create the storage account, run this command.
+Open the [Azure Cloud Shell](https://shell.azure.com/), select **Settings**, then select **Go to Classic version**. Then, to create the storage account, run this command. Replace **myResourceGroupName** with the name of an existing resource group, or the name of the resource group that you created for this exercise.
 
 ```azurecli
 az storage account create \
   --kind StorageV2 \
-  --resource-group "<rgn>[sandbox resource group name]</rgn>" \
+  --resource-group "myResourceGroupName" \
   --location eastus \
   --name <your-unique-storage-account-name>
 ```
