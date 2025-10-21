@@ -1,7 +1,7 @@
-The following SAP HANA products are supported on Azure VMs and SAP HANA on Azure (Large Instances) (as per [SAP HANA certified IaaS platforms](https://www.sap.com/dmc/exp/2014-09-02-hana-hardware/enEN/iaas.html) )
+The following SAP HANA products are supported on Azure VMs and SAP HANA on Azure (Large Instances) (as per [SAP HANA certified IaaS platforms](https://www.sap.com/partners/partner-program/certify-my-solution.html) )
 
 > [!NOTE]
-> See [SAP HANA certified IaaS platforms](https://www.sap.com/dmc/exp/2014-09-02-hana-hardware/enEN/iaas.html) for SAP HANA support for native Azure VMs and HANA Large Instances.
+> See [SAP HANA certified IaaS platforms](https://www.sap.com/partners/partner-program/certify-my-solution.html) for SAP HANA support for native Azure VMs and HANA Large Instances.
 
 :::row:::
   :::column:::
