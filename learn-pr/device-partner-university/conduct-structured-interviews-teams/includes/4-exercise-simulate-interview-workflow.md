@@ -39,13 +39,11 @@ You're preparing to interview a candidate for a marketing analyst role. You use 
 
    1. On the left side of the Meeting options menu go to the **Recording & transcription** tab and toggle on record and transcribe automatically.
 
-      [!div class="lightbox"]
-      :::image type="content" border="true" lightbox="true" source="../media/meeting-options-1.png" alt-text="Screenshot showing meeting options Recording & transcription in Microsoft Teams event window.":::
+      :::image type="content" border="true" source="../media/meeting-options-1.png" alt-text="Screenshot showing meeting options Recording & transcription in Microsoft Teams event window." lightbox="../media/meeting-window-options-1-expanded.png":::
    
    1. Next on the Meeting options menus click the **Copilot and other AI** tab. Ensure it's set to *During and after the meeting* (requires transcription).
    
-      [!div class="lightbox"]
-      :::image type="content" border="true" lightbox="true" source="../media/meeting-options-2.png" alt-text="Screenshot showing meeting options Copilot and other AI in Microsoft Teams event window.":::
+      :::image type="content" border="true" source="../media/meeting-options-2.png" alt-text="Screenshot showing meeting options Copilot and other AI in Microsoft Teams event window." lightbox="../media/meeting-window-options-2-expanded.png":::
 
 > [!NOTE]
 > According to [Microsoft Support](https://support.microsoft.com/office/schedule-a-webinar-10b2e2a2-c6e7-4905-9c2d-648e26c957ea), organizers can customize registration forms and presenter options for larger events.
@@ -65,7 +63,7 @@ You're preparing to interview a candidate for a marketing analyst role. You use 
    - “Highlight strengths and areas for improvement.”  
    - “List next steps discussed by the panel.”
 
-   :::image type="content" border="true" lightbox="true" source="../media/meeting-copilot.png" alt-text="Screenshot showing the copilot options during a live Teams meeting.":::
+   :::image type="content" border="true" source="../media/meeting-copilot.png" alt-text="Screenshot showing the copilot options during a live Teams meeting.":::
  
 1. Keep the conversation natural—Copilot captures themes and action items automatically.  
 1. If someone joins late, use **Copilot Catch-up** to review what’s already been discussed.
@@ -83,7 +81,7 @@ You're preparing to interview a candidate for a marketing analyst role. You use 
    - “Summarize the candidate’s communication style.”  
    - “Generate a short feedback report for the hiring manager.”  
 
-   :::image type="content" border="true" lightbox="true" source="../media/recap.png" alt-text="Screenshot showing the recap options after a Teams meeting.":::
+   :::image type="content" border="true" source="../media/recap.png" alt-text="Screenshot showing the recap options after a Teams meeting."lightbox="../media/recap-expanded.png":::
  
 1. Review the generated notes and insights from Copilot.  
 1. Save your feedback to your HR SharePoint or OneDrive folder.
