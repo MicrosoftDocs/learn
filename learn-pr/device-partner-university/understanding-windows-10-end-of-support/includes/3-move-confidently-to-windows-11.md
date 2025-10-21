@@ -1,20 +1,20 @@
-Windows 10 end of support isn’t just a deadline—it’s a shift in how you stay secure, productive, and supported in today’s digital world. Windows 11 is built to meet that moment with confidence. 
+Windows 10 end of support isn’t just a past deadline—it marks a shift in how you stay secure, productive, and supported in today’s digital world. Windows 11 is built to meet that moment with confidence.
 
 Let’s look at how it empowers you with smarter performance, stronger protection, and a more modern experience.
 
 ### Know what end of support really means
 
-**“Will my PC still get updates after the EOS date?”**  
-No. After October 14, 2025, Microsoft will no longer provide free security updates, non-security updates, bug fixes, technical support, or updates to online technical content for Windows 10.
+**“Will my PC still get updates now that support has ended?”**  
+No. As of October 14, 2025, Microsoft no longer provides free security updates, non-security updates, bug fixes, technical support, or updates to online technical content for Windows 10.
 
-EOS is a **final deadline**, not a gradual phase-out. Acting early helps you stay secure and avoid unnecessary disruptions.
+EOS was a final deadline, not a gradual phase-out. Acting now helps you stay secure and avoid unnecessary disruptions.
 
 ### Check if your device is ready
 
 **“Can my Windows 10 PC upgrade to Windows 11?”**  
 Not all devices qualify. Windows 11 has specific hardware requirements.
 
-Use the [PC Health Check app](https://support.microsoft.com/windows/how-to-use-the-pc-health-check-app-9c8abd9b-03ba-4e67-81ef-36f37caa7844) to see if your PC is compatible. This helps you plan ahead with confidence—whether that means upgrading your current device or exploring new options.
+Use the [PC Health Check app](https://support.microsoft.com/windows/how-to-use-the-pc-health-check-app-9c8abd9b-03ba-4e67-81ef-36f37caa7844) to see if your PC is compatible. This helps you plan confidently—whether that means upgrading your current device or exploring new options.
 
 ### Windows 11 system requirements
 
@@ -34,7 +34,7 @@ You can view full details on system requirements [here.](https://www.microsoft.c
 ### Choose secure, modern solutions
 
 **“Do I really need to upgrade if my PC still works?”**  
-Even if your device still functions, unsupported PCs are more vulnerable to threats and won’t keep up with modern features.
+Even if your device still functions, unsupported PCs are more vulnerable to threats and can’t take advantage of the latest security or productivity innovations.
 
 Upgrading to a Windows 11 Pro device gives you the latest tools for security, performance, and AI-enhanced productivity—helping you stay focused, protected, and efficient.
 

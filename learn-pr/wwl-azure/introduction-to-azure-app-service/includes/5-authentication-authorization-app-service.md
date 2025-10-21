@@ -22,7 +22,7 @@ App Service uses federated identity, in which a third-party identity provider ma
 | X | `/.auth/login/x` | [App Service X login](/azure/app-service/configure-authentication-provider-twitter) |
 | Any OpenID Connect provider | `/.auth/login/<providerName>` | [App Service OpenID Connect login](/azure/app-service/configure-authentication-provider-openid-connect) |
 | GitHub | `/.auth/login/github` | [App Service GitHub login](/azure/app-service/configure-authentication-provider-github) |
-| Apple | `/.auth/login/apple` | /azure/app-service/configure-authentication-provider-apple |
+| Apple | `/.auth/login/apple` | [App Service sign-in via Apple sign-in (preview)](/azure/app-service/configure-authentication-provider-apple) |
 
 When you configure this feature with one of these providers, its sign-in endpoint is available for user authentication and for validation of authentication tokens from the provider. You can provide your users with any number of these sign-in options.
 
