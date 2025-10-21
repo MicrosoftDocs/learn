@@ -3,8 +3,8 @@ uid: learn.wwl.administer-unity-catalog-isolation-access.introduction
 title: "Introduction"
 metadata:
   title: "Introduction"
-  description: "Understand the importance of administrative isolation in Unity Catalog and how it enables secure, compliant data governance at scale."
-  ms.date: 10/19/2025
+  description: "Learn how Unity Catalog addresses data governance challenges when scaling across multiple Azure Databricks workspaces and departments."
+  ms.date: 10/21/2025
   author: theresa-i
   ms.author: theresai
   ms.topic: unit

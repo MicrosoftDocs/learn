@@ -1,4 +1,4 @@
-Unity Catalog helps your organization implement secure and scalable data governance across multiple workspaces. As your platform grows, different teams, regions, or projects often need their own administrative boundaries, compute environments, and storage locations. Isolation in Unity Catalog provides the flexibility to meet these requirements while maintaining consistent governance.
+As your Databricks platform grows, different teams, regions, or projects often need their own administrative boundaries, compute environments, and storage locations. Isolation in Unity Catalog provides the flexibility to meet these requirements while maintaining consistent governance.
 
 In this unit, you’ll learn how Unity Catalog enforces isolation at the administrative, workspace, and storage levels, and how to combine these layers for effective delegation and control.
 

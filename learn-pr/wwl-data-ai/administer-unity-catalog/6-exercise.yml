@@ -1,13 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.administer-unity-catalog-isolation-access.exercise
-title: "Exercise - Configure isolation methods"
+title: "Exercise - Transition from the Hive metastore"
 metadata:
-  title: "Exercise - Configure isolation methods"
-  description: "Practice implementing Unity Catalog isolation methods through hands-on configuration tasks."
-  ms.date: 10/19/2025
+  title: "Exercise - Transition from the Hive metastore"
+  description: "Upgrade existing tables from the Hive metastore to Unity Catalog."
+  ms.date: 10/21/2025
   author: theresa-i
   ms.author: theresai
   ms.topic: unit
-durationInMinutes: 20
+durationInMinutes: 30
 content: |
   [!include[](includes/6-exercise.md)]

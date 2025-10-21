@@ -3,8 +3,8 @@ uid: learn.wwl.administer-unity-catalog-isolation-access.summary
 title: "Summary"
 metadata:
   title: "Summary"
-  description: "Review Unity Catalog isolation methods and administrative best practices for secure, compliant data governance."
-  ms.date: 10/19/2025
+  description: "Review how to implement Unity Catalog governance controls, lineage tracking, and Hive metastore coexistence for smooth migration."
+  ms.date: 10/21/2025
   author: theresa-i
   ms.author: theresai
   ms.topic: unit

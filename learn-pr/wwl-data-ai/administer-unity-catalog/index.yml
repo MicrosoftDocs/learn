@@ -2,20 +2,21 @@
 uid: learn.wwl.administer-unity-catalog-isolation-access
 metadata:
   title: "Structure Unity Catalog for governance"
-  description: "Structure Unity Catalog deployments using isolation strategies, workspace organization, lineage visibility, and gradual migration from the Hive Metastore."
-  ms.date: 10/19/2025
+  description: "Configure Unity Catalog isolation boundaries, leverage automatic lineage tracking, and migrate from Hive metastore to establish centralized data governance."
+  ms.date: 10/21/2025
   author: theresa-i
   ms.author: theresai
   ms.topic: module
+  ms.service: azure
 title: "Structure Unity Catalog for governance"
-summary: "Structure Unity Catalog using isolation methods, workspace organization, lineage for impact analysis, and phased migration from legacy Hive Metastore tables."
+summary: "Configure Unity Catalog isolation boundaries, leverage automatic lineage tracking for impact analysis, and migrate from Hive metastore to establish centralized governance."
 abstract: |
   By the end of this module, you'll be able to:
-  - Implement three Unity Catalog isolation methods (catalog, workspace binding, storage separation)
-  - Configure workspace access patterns and limit catalog visibility through binding
-  - Use automatic data lineage for impact analysis and safe change planning
-  - Transition from the Hive Metastore using a phased migration strategy
-  - Apply governance and organization best practices across multiple workspaces
+  - Configure Unity Catalog isolation using administrative roles, workspace binding, and Azure storage separation
+  - Use automatic lineage tracking to analyze data flow and plan safe changes
+  - Enable Unity Catalog coexistence with Hive metastore for gradual migration
+  - Migrate tables from Hive metastore to Unity Catalog using SQL commands
+  - Apply governance best practices across multiple Azure Databricks workspaces
 prerequisites: |
   - Experience with Databricks workspace administration
   - Understanding of Unity Catalog basic concepts and architecture

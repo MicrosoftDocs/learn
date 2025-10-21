@@ -3,8 +3,8 @@ uid: learn.wwl.administer-unity-catalog-isolation-access.implement-isolation-met
 title: "Implement isolation methods"
 metadata:
   title: "Implement isolation methods"
-  description: "Learn the three primary isolation methods in Unity Catalog and how to choose the right approach for your organizational needs."
-  ms.date: 10/19/2025
+  description: "Configure Unity Catalog isolation boundaries using administrative roles, workspace-to-catalog binding, and Azure storage separation."
+  ms.date: 10/21/2025
   author: theresa-i
   ms.author: theresai
   ms.topic: unit
