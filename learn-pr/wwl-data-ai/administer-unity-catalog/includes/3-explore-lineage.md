@@ -24,7 +24,7 @@ Imagine you're a data engineer who needs to add a new column to the `customer_si
 
 :::image type="content" source="../media/data-lineage-graph.png" alt-text="Lineage graph showing upstream and downstream dependencies for a Unity Catalog table." lightbox="../media/data-lineage-graph.png":::
 
-### What the lineage graph tells you
+### Interpret the lineage graph
 
 Looking at the lineage visualization above, you can see the complete data flow for `customer_silver`:
 
@@ -38,7 +38,7 @@ Looking at the lineage visualization above, you can see the complete data flow f
 
 **Data flow direction:** Arrows show data flows from left to right: bronze → silver → analytics view
 
-### An impact analysis
+### Perform an impact analysis
 
 Based on this lineage, here's what adding a column to `customer_silver` affects:
 
