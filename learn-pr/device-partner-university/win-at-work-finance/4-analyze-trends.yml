@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.win-at-work-finance.analyze-trends
+title: Analyze financial trends and build a presentation using Analyst agent
+metadata:
+  title: Analyze Financial Trends and Build a Presentation Using Analyst Agent
+  description: 'This content is part of the "Windows at work: Transforming finance teams with Windows 11 Pro" module.'
+  ms.date: 10/22/2025
+  author: Stephanie-Rosenzweig
+  ms.author: v-stephanier
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-analyze-trends.md)]

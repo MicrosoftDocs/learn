@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.win-at-work-finance.financial-analysis
+title: Understand the structure and purpose of a financial analysis
+metadata:
+  title: Understand the Structure and Purpose of a Financial Analysis
+  description: 'This content is part of the "Windows at work: Transforming finance teams with Windows 11 Pro" module.'
+  ms.date: 10/22/2025
+  author: Stephanie-Rosenzweig
+  ms.author: v-stephanier
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/2-financial-analysis.md)]
