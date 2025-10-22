@@ -16,7 +16,8 @@ abstract: |
     - Organize your data with Azure Blob Storage.
     - Create storage resources to hold blobs.
     - Store and retrieve data from Azure Blob Storage.
-prerequisites: None
+prerequisites: |
+  [!INCLUDE [](../../includes/azure-optional-exercise-subscription-prerequisite.md)]
 iconUrl: /training/achievements/store-app-data-with-azure-blob-storage.svg
 levels:
 - beginner
