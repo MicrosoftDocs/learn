@@ -116,9 +116,9 @@ Sometimes Copilot might not suggest the exact code you need. You can use more sp
 
 1. Press <kbd>Tab</kbd> or click **Accept** to apply the code suggestion.
 
-1. On a new line, enter `public bool Delete` and wait for Copilot to suggest code.
+1. On a new line, enter `public bool DeleteWord` and wait for Copilot to suggest code.
     
-    Copilot should suggest code that calls the `_delete` method.
+    Copilot should suggest code that calls the `_delete` method, providing the root node, the word to delete, and an initial index of 0.
 
 1. Press <kbd>Tab</kbd> or click **Accept** to apply the code suggestion.
 
