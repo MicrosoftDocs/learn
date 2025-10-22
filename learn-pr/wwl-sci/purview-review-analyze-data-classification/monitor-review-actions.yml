@@ -4,12 +4,12 @@ title: Monitor and review actions on labeled data
 metadata:
   title: Monitor and review actions on labeled data
   description: "Monitor and review actions on labeled data."
-  ms.date: 03/13/2025
+  ms.date: 10/22/2025
   author: wwlpublish
   ms.author: riswinto
   ms.topic: unit
 azureSandbox: false
 labModal: false
-durationInMinutes: 8
+durationInMinutes: 9
 content: |
   [!include[](includes/monitor-review-actions.md)]
