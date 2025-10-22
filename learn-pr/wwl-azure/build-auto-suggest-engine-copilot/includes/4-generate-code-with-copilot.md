@@ -42,7 +42,7 @@ As you develop with Copilot, you'll find that it can help you complete your code
 1. Navigate to the `GetAllWordsWithPrefix` method and remove the return statement;
 
     ```c#
-    private List<string> GetAllWordsWithPrefix(TrieNode node, string prefix)
+    private List<string> GetAllWordsWithPrefix(TrieNode root, string prefix)
     {
         
     }
