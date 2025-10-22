@@ -12,8 +12,8 @@ metadata:
     - devx-track-extended-java
   zone_pivot_groups: dev-lang-csharp-java
 durationInMinutes: 10
-interactive: bash
-azureSandbox: true
+#interactive: bash
+#azureSandbox: true
 content: |
   [!include[](includes/6-getting-blob-references.md)]
 

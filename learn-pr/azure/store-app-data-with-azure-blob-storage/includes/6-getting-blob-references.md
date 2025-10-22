@@ -1,5 +1,7 @@
 To interact with a container in Blob Storage, use a `BlobContainerClient` object. In addition to creating containers as you saw in the last unit, a `BlobContainerClient` object can also be used to list the blobs in a container.
 
+[!INCLUDE[](../../../includes/azure-optional-exercise-subscription-note.md)]
+
 ## Listing blobs in a container
 
 ::: zone pivot="csharp"
