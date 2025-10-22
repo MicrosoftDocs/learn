@@ -1,18 +1,22 @@
-**Activity explorer** in Microsoft Purview allows security and compliance teams to track how labeled content is accessed, modified, and shared. By analyzing activity trends, organizations can assess policy effectiveness, detect potential security risks, and refine data protection measures.
+**Activity Explorer** in Microsoft Purview helps security and compliance teams see how labeled content is accessed, modified, and shared. By reviewing these activity trends, organizations can evaluate policy effectiveness, spot potential risks, and strengthen data protection measures.
 
-## Why use Activity explorer?
+## Use Activity Explorer to track data activity
+
+You can use Activity Explorer in several ways to better understand how labeled data is used and protected across your organization.
 
 - **Monitor classified data usage**: Track how labeled content is accessed, modified, or shared.
 - **Audit policy effectiveness**: Identify compliance gaps by analyzing data loss prevention (DLP) matches, labeling changes, and file actions.
 - **Refine analysis with filters**: Apply filters for date, user, activity type, sensitivity label, location, and more.
 - **Use predefined filter sets**: Quickly view activities such as labeling changes, DLP detections, and endpoint data movement.
-- **Use Security Copilot (preview)**: AI-driven insights detect anomalies, analyze patterns, and suggest policy refinements.
+- **Use Security Copilot**: AI-driven insights detect anomalies, analyze patterns, and suggest policy refinements.
 
 ## Access Activity explorer
 
+Access to Activity Explorer requires specific permissions and an understanding of where it appears in the Microsoft Purview portal. These sections explain the roles and steps involved.
+
 ### Permissions
 
-Users must be assigned one of the following roles or role groups in Microsoft Purview or Microsoft 365.
+The table lists the Microsoft Purview and Microsoft 365 roles that grant access to Activity Explorer.
 
 | Category | Roles | Role groups |
 |-----|-----|-----|
@@ -43,9 +47,9 @@ You can access Activity explorer from multiple Microsoft Purview solutions, base
 
    :::image type="content" source="../media/navigate-to-activity-explorer.png" alt-text="Screenshot showing navigation to Activity explorer from Information Protection in Microsoft Purview." lightbox="../media/navigate-to-activity-explorer.png":::
 
-## Filters in Activity explorer
+## Use filters to focus your analysis
 
-Filters allow you to refine data based on specific criteria. Activity explorer provides around **50 different filters**, including:
+Filters help you focus on the data that matters most. You can combine multiple filters to narrow results by activity type, user, or location. The table shows some of the most common options.
 
 | Filter Type | Example |
 |-----|-----|
@@ -61,9 +65,9 @@ Filters allow you to refine data based on specific criteria. Activity explorer p
 > [!NOTE]
 > Filter dropdowns display results from the first 500 records for performance optimization.
 
-## Predefined filter sets
+## Apply predefined filter sets for quick insights
 
-Filter sets help quickly identify specific activities. Activity explorer includes built-in filter sets such as:
+Filter sets make it easier to find specific types of activity quickly. Activity explorer includes built-in filter sets such as:
 
 - **Endpoint DLP activities**: Actions on files from managed devices.
 - **Sensitivity label changes**: Applied, changed, or removed labels.
@@ -74,29 +78,29 @@ Filter sets help quickly identify specific activities. Activity explorer include
 
 Admins can also create and save custom filter sets by combining multiple filters.
 
-## Security Copilot in Activity explorer (preview)
+## Use Microsoft Security Copilot for AI-driven investigation
 
-Microsoft **Security Copilot** enhances Activity explorer with AI-driven insights, helping identify security risks, policy violations, and suspicious activity.
+**Microsoft Security Copilot** adds AI-driven insights to Activity Explorer. It helps identify risks, highlight potential policy violations, and surface unusual activity for investigation.
 
 AI-driven capabilities include:
 
-- **Data hunting**: Use machine learning to surface critical data activity.
-- **Prompt-based filtering**: Enter natural language queries to generate filter sets.
-- **Investigative assistance**: Drill down into suspicious activities.
+- **Data hunting**: Uses machine learning to surface significant data activity and anomalies.
+- **Prompt-based filtering**: Enter natural-language questions to create or refine filter sets.
+- **Investigative assistance**: Guides deeper review of suspicious or high-risk actions.
 
-Example prompts:
+**Example prompts**:
 
 - "Show me the top 5 activities from the past week."
-- "Filter and investigate files copied to the cloud with sensitive data."
+- "Find files with sensitive data copied to the cloud."
 
    :::image type="content" source="../media/security-copilot-activity-explorer.png" alt-text="Screenshot showing Activity explorer, highlighting Security Copilot features." lightbox="../media/security-copilot-activity-explorer.png":::
 
 > [!IMPORTANT]
-> Security Copilot results should be verified for accuracy before taking action.
+> Always verify Security Copilot results before taking action to confirm that AI-generated insights align with your organization’s context.
 
-## Activity types in Activity explorer
+## Review activity types tracked in Activity Explorer
 
-Activity explorer collects data from Microsoft 365 audit logs to track label-related actions.
+Activity Explorer collects data from Microsoft 365 audit logs to track labeling and protection-related actions. The table outlines common activity types that Activity Explorer tracks from Microsoft 365 audit logs.
 
 | Activity type | Example |
 |-----|-----|
@@ -109,11 +113,11 @@ Activity explorer collects data from Microsoft 365 audit logs to track label-rel
 > [!NOTE]
 > Exchange retention activities aren't currently included in Activity Explorer.
 
-## Alerts and policy effectiveness tracking
+## Analyze policy alerts and enforcement
 
-Activity explorer provides insight into policy enforcement and alerting behavior.
+Activity Explorer also provides insight into how policies enforce protection and trigger alerts. The table summarizes how different policy configurations affect logging, matches, and alerts.
 
-| Policy Configuration | Action Logged? | Policy Match Detected? | Alert Triggered? |
+| Policy configuration | Action logged? | Policy match detected? | Alert triggered? |
 |-----|-----|-----|-----|
 | Policy allows activity (no auditing) | Yes | No | No |
 | Policy audits some activities | Yes | Yes (only for specific rules) | Yes (if rule is set to trigger alerts) |
@@ -129,4 +133,4 @@ Users can export Activity explorer data to a CSV file for further analysis.
 - **Export scope**: Includes all visible filtered data.
 - **Retention**: Data is stored for 30 days in Activity Explorer.
 
-Activity explorer in Microsoft Purview helps security teams track how classified data is accessed and modified. It integrates with Microsoft 365 audit logs, supports filter-based investigation, and now includes Security Copilot AI insights. By using filters, predefined sets, and AI-driven queries, admins can enhance data protection policies and detect compliance risks more effectively.
+Activity Explorer gives security teams a real-time view of how classified data is used across Microsoft 365. It draws from Microsoft 365 audit logs, supports filter-based investigation, and integrates with Microsoft Security Copilot for AI-assisted insights. By combining filters, predefined sets, and natural-language queries, admins can fine-tune data-protection policies and quickly detect potential compliance risks.

@@ -1,113 +1,96 @@
-Understanding where sensitive data is stored and how it's accessed is essential for data security and compliance. **Data explorer** and **content explorer (classic)** in Microsoft Purview provide visibility into classified data across your organization.
+Knowing where sensitive data is stored and how it's accessed helps organizations maintain strong data security and compliance. In Microsoft Purview, **Data explorer** provides a centralized view of classified and labeled data across your organization. **Content explorer (classic)** is available for continuity but uses an older interface and requires more steps to display classification information.
 
-- **Data explorer** provides a consolidated view of classified data, making it easier to analyze multiple classification types at once.
-- **Content explorer** offers similar insights but requires more navigation to see classification details.
+**Data explorer** helps security and compliance teams:
 
-These tools help security and compliance teams:
+- Identify sensitive data across Microsoft 365 and connected environments
+- Analyze classification trends based on sensitivity labels, retention labels, and sensitive information types (SITs)
+- Review access patterns to detect potential security risks
+- Validate compliance policies by confirming that encryption, classification, and retention settings are applied correctly
 
-- **Identify sensitive data** across Microsoft 365 and connected environments.
-- **Analyze data classification trends** based on sensitivity labels, retention labels, and sensitive information types (SITs).
-- **Review access patterns** to detect potential security risks.
-- **Validate compliance policies** by verifying encryption, classification, and retention settings.
+## Access Data explorer
 
-## Access data explorer and content explorer
-
-To use data explorer or content explorer, you need the correct permissions in Microsoft Purview.
+To use data explorer, you need the correct permissions in Microsoft Purview.
 
 ### Permissions
 
-Access to these tools is highly restricted because they allow visibility into sensitive data. Permissions override local file access settings.
+Access to data explorer is restricted because it exposes sensitive information. This table lists the viewer roles and access levels available in both data explorer and content explorer (classic).
 
-| Role | Access level |
+| Role | Access level  |
 |-----|-----|
-| Data Explorer List Viewer | View file metadata and classification labels but not content. |
+| Data Explorer List Viewer | View file metadata and classification labels but not file contents. |
 | Data Explorer Content Viewer | View file contents in addition to metadata. |
-| Content Explorer List Viewer | View a list of items with classification details. |
-| Content Explorer Content Viewer | View file contents in addition to metadata. |
+| Content Explorer (classic) List Viewer | View a list of items with classification details. |
+| Content Explorer (classic) Content Viewer | View file contents in addition to metadata. |
 
 > [!NOTE]
-> Users with a **List Viewer** role can see classification details but can't open or preview file contents. The **Content Viewer** role is required to access file contents.
+> Users with a **List Viewer** role can see classification details but can't open or preview file contents. The **Content Viewer** role is required to view file contents.
 
-### Navigate to data explorer and content explorer
+### Navigate to data explorer
 
-You can access data explorer and content explorer from multiple Microsoft Purview solutions, based on the area you're working in:
+You can access data explorer from several Microsoft Purview solutions, depending on the area you're working in.
 
 1. Navigate to the [Microsoft Purview portal](https://purview.microsoft.com/).
-
 1. Select **Solutions**.
+1. Under **Information Protection**, expand **Explorers**, then select **Data explorer**.
+1. Optionally, select **Content explorer (classic)** if you need to view items through the older interface.
 
-1. **Data explorer** and **Content explorer (classic)** can be found in these solutions:
-
-   - Communication compliance
-
-   - Data lifecycle management
-
-   - Data loss prevention (DLP)
-
-   - Information protection
-
-   - Records management
-
-1. Select the drop-down for **Explorers**, then select **Data explorer** or **Content explorer (classic)**.
-
-   :::image type="content" source="../media/data-explorer-content-explorer.png" alt-text="Screenshot showing the top level filter for the Reports page within Information Protection." lightbox="../media/data-explorer-content-explorer.png":::
+   :::image type="content" source="../media/data-explorer-content-explorer.png" alt-text="Screenshot showing the Information Protection menu in Microsoft Purview with options for Data explorer, Content explorer, and Activity explorer." lightbox="../media/data-explorer-content-explorer.png":::
 
 ## Analyze sensitive data with data explorer
 
-### Data types displayed in data explorer
+Data explorer shows how different classification signals come together to describe your organization's sensitive data landscape.
 
-Data explorer provides a snapshot of classified items based on:
+### What Data explorer displays
 
-- **Sensitive information types (SITs)**: Identifies data like credit card numbers, Social Security numbers, and medical data.
-- **Sensitivity labels**: Shows how items are labeled based on organizational policies.
-- **Retention labels**: Displays how long labeled data is retained.
-- **Trainable classifiers**: Uses AI to identify sensitive content based on examples.
+Data explorer provides a unified snapshot of classified items, including:
 
-### Use the data explorer
+- **Sensitive information types (SITs)**: Identifies data such as credit card numbers, Social Security numbers, or medical information.
+- **Sensitivity labels**: Shows how content is labeled based on organizational policy.
+- **Retention labels**: Displays retention rules that apply to labeled data.
+- **Trainable classifiers**: Uses machine learning to detect sensitive content based on examples.
 
-1. Search or filter data by label, classifier, or SIT.
+### Explore data in data explorer
 
-1. Drill down into specific data sources like Exchange, OneDrive, or SharePoint.
+1. Filter by label, classifier, or SIT to narrow results.
+1. Drill into data sources such as Exchange, OneDrive, SharePoint, Teams, or Copilot.
+1. Export results to a CSV file for analysis or reporting.
 
-1. Export results to a CSV file for further analysis.
+   Exports reflect your current filters. Data explorer keeps activity data for up to 30 days to support most audit scenarios.
 
-   :::image type="content" source="../media/data-explorer.png" alt-text="Screenshot showing the Data explorer." lightbox="../media/data-explorer.png":::
+:::image type="content" source="../media/data-explorer.png" alt-text="Screenshot showing Data explorer in Microsoft Purview with data sources including Copilot, Exchange, OneDrive, SharePoint, and Teams, and columns for sensitivity labels and classifiers." lightbox="../media/data-explorer.png":::
 
-## Analyze classified data with content explorer (classic)
+## Compare data explorer and content explorer (classic)
 
-### How content explorer differs from data explorer
+Content explorer (classic) remains available for organizations that still rely on the older interface. It allows browsing by location to find labeled and classified content but doesn't provide the consolidated or interactive experience available in data explorer.
 
-| Feature | Data explorer | Content explorer |
+This table compares data explorer and content explorer (classic) to show how the experiences differ.
+
+| Feature | Data explorer | Content explorer (classic) |
 |-----|-----|-----|
-| Data organization and visibility | Shows sensitive information types, sensitivity labels, trainable classifiers, and retention labels in a single table for quick analysis. | Requires navigating into each location to view classification details, rather than displaying them in a consolidated table. |
-| Integration with Information Protection Reports | Links directly from information protection reports, allowing users to drill into classification details. | Not linked from reports, so users must navigate to content explorer manually. |
-| Copilot data visibility | Includes Copilot as a data source when applicable. | Doesn't list Copilot as a distinct source. |
+| Data organization and visibility | Displays sensitivity labels, retention labels, trainable classifiers, and SITs together in one view. | Requires navigating into each location to see details. |
+| Integration with Information Protection Reports | Linked directly from reports for deeper investigation. | Not linked from reports; must be opened manually. |
+| Copilot data visibility | Lists Copilot as a data source when enabled. | Doesn't include Copilot as a data source. |
 
-### Use content explorer
-
-1. Filter data by classification labels, retention labels, or SITs.
-
-1. Browse by location to find labeled content.
-
-   :::image type="content" source="../media/content-explorer.png" alt-text="Screenshot showing the Content explorer." lightbox="../media/content-explorer.png":::
+> [!NOTE]
+> Use **Data explorer** for most analysis tasks. Choose **Content explorer (classic)** only when legacy visibility is required.
 
 ## Export and refine data insights
 
-Both data explorer and content explorer allow users to:
+Data explorer allows you to export filtered data for reporting or deeper investigation. Exports are based on your current filters and reflect data retained within the 30-day activity window.
 
-- **Export** data insights as a CSV file.
+### Filter data for specific results
 
-- **Use filters** to refine searches by location, sensitivity label, or SIT.
+Filters in data explorer help you focus on the information that matters most. You can combine filters to narrow results by location, label, or data type, which makes it easier to investigate specific areas or trends.
 
-- **Analyze trends** to improve data classification policies.
-
-### Example search filters
+These examples show common filters you can apply in data explorer searches.
 
 | Filter type | Example |
 |-----|-----|
 | Site URL | `https://contoso.onmicrosoft.com/sites/finance` |
 | File name | `HR_policy_2024.docx` |
-| File extension | `.pdf`, `.csv`, `.txt`  |
-| Sensitive data | Credit card numbers, PII  |
+| File extension | `.pdf`, `.csv`, `.txt` |
+| Sensitive data | Credit card numbers, PII |
 
-**Data explorer** and **content explorer** provide visibility into classified and sensitive data across an organization. Security teams use these tools to track classified data, enforce compliance, and mitigate risks. Data explorer is the new experience that offers deeper insights, while content explorer remains available for organizations using the classic view.
+Using these filters together helps narrow results to the data that matters most before exporting or reporting.
+
+**Data explorer** gives security teams a clear view of where sensitive information lives and how it's classified. This visibility helps you build a clear picture of data protection across Microsoft 365. Next, you'll use **Activity explorer** to track how users handle labeled data and evaluate how well protection policies work in practice.
