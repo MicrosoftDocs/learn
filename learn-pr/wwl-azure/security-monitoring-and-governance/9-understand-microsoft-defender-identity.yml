@@ -3,13 +3,13 @@ uid: learn.wwl.security-monitoring-and-governance.understand-microsoft-defender-
 title: Understand Microsoft Defender for Identity
 metadata:
   title: Understand Microsoft Defender for Identity
-  description: "Understand Microsoft Defender for Identity"
-  ms.date: 05/13/2024
-  author: wwlpublish
+  description: Understand Microsoft Defender for Identity to detect and investigate advanced threats, compromised identities, and malicious insider actions including credential theft, lateral movement, and domain dominance attacks with integration to Microsoft Defender XDR.
+  ms.date: 10/22/2025
+  author: LuizMacedo
   ms.author: lumac
   ms.topic: unit
   ms.custom:
-  - N/A
-durationInMinutes: 4
+    - N/A
+durationInMinutes: 7
 content: |
-  [!include[](includes/9-understand-microsoft-defender-identity.md)]
+  [!include[](includes/9-understand-microsoft-defender-identity.md)]
