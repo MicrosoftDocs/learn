@@ -34,7 +34,7 @@ You can access data explorer from several Microsoft Purview solutions, depending
 1. Under **Information Protection**, expand **Explorers**, then select **Data explorer**.
 1. Optionally, select **Content explorer (classic)** if you need to view items through the older interface.
 
-   :::image type="content" source="../media/data-explorer-content-explorer.png" alt-text="Screenshot showing the Information Protection menu in Microsoft Purview with options for Data explorer, Content explorer, and Activity explorer." lightbox="../media/data-explorer-content-explorer.png":::
+   :::image type="content" source="../media/data-explorer-content-explorer.png" alt-text="Screenshot showing the Information Protection menu in Microsoft Purview with options for Data, Content, and Activity explorers." lightbox="../media/data-explorer-content-explorer.png":::
 
 ## Analyze sensitive data with data explorer
 
@@ -57,7 +57,7 @@ Data explorer provides a unified snapshot of classified items, including:
 
    Exports reflect your current filters. Data explorer keeps activity data for up to 30 days to support most audit scenarios.
 
-:::image type="content" source="../media/data-explorer.png" alt-text="Screenshot showing Data explorer in Microsoft Purview with data sources including Copilot, Exchange, OneDrive, SharePoint, and Teams, and columns for sensitivity labels and classifiers." lightbox="../media/data-explorer.png":::
+   :::image type="content" source="../media/data-explorer.png" alt-text="Screenshot showing Data explorer in Microsoft Purview with Copilot, Exchange, OneDrive, SharePoint, and Teams data sources." lightbox="../media/data-explorer.png":::
 
 ## Compare data explorer and content explorer (classic)
 
@@ -93,4 +93,4 @@ These examples show common filters you can apply in data explorer searches.
 
 Using these filters together helps narrow results to the data that matters most before exporting or reporting.
 
-**Data explorer** gives security teams a clear view of where sensitive information lives and how it's classified. This visibility helps you build a clear picture of data protection across Microsoft 365. Next, you'll use **Activity explorer** to track how users handle labeled data and evaluate how well protection policies work in practice.
+**Data explorer** gives security teams a clear view of where sensitive information lives and how it's classified. This visibility helps you build a clear picture of data protection across Microsoft 365. Next, you'll use **Activity Explorer** to track how users handle labeled data and evaluate how well protection policies work in practice.

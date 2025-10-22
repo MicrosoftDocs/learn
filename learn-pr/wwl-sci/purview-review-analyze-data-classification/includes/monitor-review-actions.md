@@ -10,7 +10,7 @@ You can use Activity Explorer in several ways to better understand how labeled d
 - **Use predefined filter sets**: Quickly view activities such as labeling changes, DLP detections, and endpoint data movement.
 - **Use Security Copilot**: AI-driven insights detect anomalies, analyze patterns, and suggest policy refinements.
 
-## Access Activity explorer
+## Access Activity Explorer
 
 Access to Activity Explorer requires specific permissions and an understanding of where it appears in the Microsoft Purview portal. These sections explain the roles and steps involved.
 
@@ -23,15 +23,15 @@ The table lists the Microsoft Purview and Microsoft 365 roles that grant access 
 | Microsoft Purview | - Information Protection Admin <br> - Information Protection Analyst <br> - Information Protection Investigator <br> - Information Protection Reader | - Information Protection <br> - Information Protection Admins <br> - Information Protection Investigators <br> - Information Protection Analysts <br> - Information Protection Readers |
 | Microsoft 365 | - Compliance Admin <br> - Security Admin <br> - Compliance Data Admin | - Compliance Administrator <br> - Security Administrator <br> - Security Reader |
 
-### Navigate to Activity explorer
+### Navigate to Activity Explorer
 
-You can access Activity explorer from multiple Microsoft Purview solutions, based on the area you're working in:
+You can access Activity Explorer from multiple Microsoft Purview solutions, based on the area you're working in:
 
 1. Navigate to the [Microsoft Purview portal](https://purview.microsoft.com/).
 
 1. Select **Solutions**.
 
-1. **Activity explorer** can be found in these solutions:
+1. **Activity Explorer** can be found in these solutions:
 
    - Communication compliance
 
@@ -43,9 +43,9 @@ You can access Activity explorer from multiple Microsoft Purview solutions, base
 
    - Records management
 
-1. Select the drop-down for **Explorers**, then select **Activity explorer**.
+1. Select the drop-down for **Explorers**, then select **Activity Explorer**.
 
-   :::image type="content" source="../media/navigate-to-activity-explorer.png" alt-text="Screenshot showing navigation to Activity explorer from Information Protection in Microsoft Purview." lightbox="../media/navigate-to-activity-explorer.png":::
+   :::image type="content" source="../media/navigate-to-activity-explorer.png" alt-text="Screenshot showing navigation to Activity Explorer from Information Protection in Microsoft Purview." lightbox="../media/navigate-to-activity-explorer.png":::
 
 ## Use filters to focus your analysis
 
@@ -67,7 +67,7 @@ Filters help you focus on the data that matters most. You can combine multiple f
 
 ## Apply predefined filter sets for quick insights
 
-Filter sets make it easier to find specific types of activity quickly. Activity explorer includes built-in filter sets such as:
+Filter sets make it easier to find specific types of activity quickly. Activity Explorer includes built-in filter sets such as:
 
 - **Endpoint DLP activities**: Actions on files from managed devices.
 - **Sensitivity label changes**: Applied, changed, or removed labels.
@@ -93,7 +93,7 @@ AI-driven capabilities include:
 - "Show me the top 5 activities from the past week."
 - "Find files with sensitive data copied to the cloud."
 
-   :::image type="content" source="../media/security-copilot-activity-explorer.png" alt-text="Screenshot showing Activity explorer, highlighting Security Copilot features." lightbox="../media/security-copilot-activity-explorer.png":::
+   :::image type="content" source="../media/security-copilot-activity-explorer.png" alt-text="Screenshot showing Activity Explorer, highlighting Security Copilot features." lightbox="../media/security-copilot-activity-explorer.png":::
 
 > [!IMPORTANT]
 > Always verify Security Copilot results before taking action to confirm that AI-generated insights align with your organization’s context.
@@ -127,7 +127,7 @@ Admins can use these insights to fine-tune compliance policies and mitigate risk
 
 ## Export and analyze activity data
 
-Users can export Activity explorer data to a CSV file for further analysis.
+Users can export Activity Explorer data to a CSV file for further analysis.
 
 - **Use case**: Investigate large-scale labeling changes.
 - **Export scope**: Includes all visible filtered data.
