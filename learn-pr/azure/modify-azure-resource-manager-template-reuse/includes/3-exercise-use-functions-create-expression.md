@@ -1,10 +1,8 @@
 In this exercise, you create an expression by using Azure Resource Manager (ARM) template functions. The expression creates a unique name for each resource group by combining a prefix input with a hash of the resource group ID. It results in Azure storage account names like `dev2hu6sbtr5` and `staging5his8hgr67`.
 
-In this exercise, you use the [Azure Resource Manager Tools for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=msazurermtools.azurerm-vscode-tools). Be sure to install this extension in Visual Studio Code.
+In this exercise, you use the [Azure Resource Manager Tools for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=msazurermtools.azurerm-vscode-tools).
 
 [!INCLUDE[](../../../includes/azure-optional-exercise-subscription-note.md)]
-
-[!INCLUDE[](../../../includes/azure-cloud-shell-terminal-note.md)]
 
 [!INCLUDE[](../../../includes/azure-optional-exercise-create-resource-group-note.md)]
 
@@ -21,7 +19,7 @@ In the previous module, you created an ARM template that deployed a storage acco
 
     [!code-json[](code/starter.json)]
 
-1. If you didn't complete the previous module, take a moment to review this file. Note the ```storageName``` parameter. This parameter is used to pass in a unique name for the storage account.
+1. If you didn't complete the previous module, take a moment to review this file. Note the ```storageName``` parameter is used to pass in a unique name for the storage account.
 
 ## Create an expression to set a unique storage account name
 
@@ -41,19 +39,15 @@ Instead of passing in the name of the storage account, change the parameter to t
 
 To deploy this template to Azure, you need to sign in to your Azure account from the Visual Studio Code terminal. Be sure you have the [Azure CLI](/cli/azure/install-azure-cli?azure-portal=true&view=azure-cli-latest&preserve-view=true) tools installed.
 
-1. Open a terminal window by using the **Terminal** menu.
+1. From the **Terminal** menu, select **New Terminal**.
 
 1. If the drop-down menu on the right side of the terminal window says **bash**, you have the right shell to work from. You can skip to the next section.
 
       :::image type="content" source="../media/3-bash.png" alt-text="A screenshot that shows the Visual Studio Code terminal window with bash in the drop-down menu." border="true":::
 
-1. If you don't have the right shell, select **Select Default Shell** in the drop-down menu.
-
-1. Select **bash**:
+1. If you don't have the right shell, select the downarrow, and then select **Git Bash**.
 
       :::image type="content" source="../media/3-select-shell.png" alt-text="Screenshot that shows the select shell list in the Visual Studio Code terminal window." border="true":::
-
-1. Select **+** in the terminal to create a new terminal with bash as the shell.
 
 ### Sign in to Azure
 
@@ -63,21 +57,23 @@ To deploy this template to Azure, you need to sign in to your Azure account from
     az login
     ```
 
-1. After you're signed in, you see a list of the subscriptions associated with the account in the terminal.
+In the browser window that opens, sign in to your account. After you sign in, a list of the subscriptions associated with this account displays in the terminal. The default subscription is marked with an asterisk (*). If you have multiple subscriptions, select the subscription you want to use for this exercise.
 
-1. Set the default subscription for all the Azure CLI commands you run in this session. Replace **My Subscription** with the name of the Azure subscription you want to use for this exercise.
+### Create and set the default resource group
 
-    ```azurecli
-    az account set --subscription "My Subscription"
-    ```
+```azurecli
+az group create --name <resource-group-name> --location <location>
+```
 
-### Set the default resource group
+Replace **\<resource-group-name>** with a unique name for your resource group. Replace **\<location>** with the Azure region closest to you. For example, use eastus for East US.
 
-Run `az configure` to set the default resource group name. Doing so allows you to omit that parameter from the rest of the Azure CLI commands in this exercise. Replace **myResourceGroupName** with the name of an existing resource group, or the name of the resource group that you created for this exercise.
+By setting the default resource group, you can omit that parameter from the Azure CLI commands in this exercise. To set the resource group, run the following command.
 
-    ```azurecli
-    az configure --defaults group="myResourceGroupName"
-    ```
+```azurecli
+az configure --defaults group="myResourceGroupName"
+```
+
+Replace **myResourceGroupName** with the resource group name.
 
 ### Deploy the template to Azure
 
@@ -106,66 +102,55 @@ You learned about the deployment commands in the previous module. Here, we're us
 
 To deploy this template to Azure, you need to sign in to your Azure account from the Visual Studio Code terminal. Be sure you have the [Azure PowerShell](/powershell/azure/install-az-ps?azure-portal=true&view=azps-4.3.0&preserve-view=true) tools installed.
 
-1. Open a terminal window by using the **Terminal** menu.
+1. From the **Terminal** menu, select **New Terminal**.
 
 1. If the drop-down menu on the right side of the terminal window says **pwsh**, you have the right shell to work from. You can skip to the next section.
 
       :::image type="content" source="../media/3-pwsh.png" alt-text="A screenshot that shows the Visual Studio Code terminal window with pwsh in the drop-down menu." border="true":::
 
-1. If you don't have the right shell, select **Select Default Shell** in the drop-down menu.
+1. If you don't have the right shell, select the down arrow and then select **PowerShell** in the drop-down menu.
 
-1. Select **pwsh**.
-
-      :::image type="content" source="../media/3-select-shell.png" alt-text="Screenshot that shows the select shell list in the Visual Studio Code terminal window." border="true":::
-
-1. Select **+** in the terminal to create a new terminal with **pwsh** as the shell.
+      :::image type="content" source="../media/3-select-shell-powershell.png" alt-text="Screenshot that shows the select shell list in the Visual Studio Code terminal window." border="true":::
 
 ### Sign in to Azure by using Azure PowerShell
 
-1. From the terminal in Visual Studio Code, run the following command to sign in to Azure. When you run this command, you're prompted to open a browser to a URL that allows you to sign in to your account. Use the code that's in the prompt.
+1. From the terminal in Visual Studio Code, run the following command to sign in to Azure.
 
     ```azurepowershell
     Connect-AzAccount
     ```
 
-1. After you're signed in, you see a list of the subscriptions associated with the account in the terminal.
+    In the browser window that opens (the browser window could be opened behind the current window, minimize the current window to see it), sign in to your account. After you sign in, a list of the subscriptions associated with this account displays in the terminal. The default subscription is marked with an asterisk (*). If you have multiple subscriptions, select the subscription you want to use for this exercise.
 
-    Set the default subscription for all the Azure CLI commands you run in this session.
+### Create and set the default resource group
 
-1. Get the subscription ID. The command lists your subscriptions and their IDs. The subscription ID is the second column. Look for the subscription you want to use and copy the second column. It looks something like this: `aaaa0a0a-bb1b-cc2c-dd3d-eeeeee4e4e4e`.
+```azurepowershell
+New-AzResourceGroup -Name <ResourceGroupName> -Location <Location>
+```
 
-    ```azurepowershell
-    Get-AzSubscription
-    ```
+Replace with a unique name for your resource group. Replace with the Azure region closest to you. For example, use eastus for East US.
 
-1. Change your active subscription to the subscription you chose in the previous step. Be sure to replace `{Your subscription ID}` with the ID you copied.
+By setting the default resource group, you can omit that parameter from the Azure CLI commands in this exercise. To set the resource group, run the following command.
 
-    ```azurepowershell
-    $context = Get-AzSubscription -SubscriptionId {Your subscription ID}
-    Set-AzContext $context
-    ```
+```azurepowershell
+Set-AzDefault -ResourceGroupName [resource group name]
+```
 
-1. Set the default resource group. Doing so allows you to omit that parameter from the rest of the Azure PowerShell commands in this exercise.
-
-    ```azurepowershell
-    Set-AzDefault -ResourceGroupName myResourceGroupName
-    ```
+replace *[resource group name]* with your resource group name.
 
 ### Deploy the template to Azure
 
-You learned about the deployment commands in the previous module. Here, we're using the Azure PowerShell ```New-AzResourceGroupDeployment``` command.
+Deploy the template by using Azure PowerShell commands in the Visual Studio Code terminal. Remember to replace `{your-prefix}` with a different string. For example, you could use **storage**.
 
-- Deploy the template by using Azure PowerShell commands in the Visual Studio Code terminal. Remember to replace `{your-prefix}` with a different string. For example, you could use **storage**.
-
-    ```azurepowershell
-    $templateFile = "azuredeploy.json"
-    $today=Get-Date -Format "MM-dd-yyyy"
-    $deploymentName="addfunction-"+"$today"
-    New-AzResourceGroupDeployment `
-      -Name $deploymentName `
-      -TemplateFile $templateFile `
-      -storagePrefix {your-prefix}
-    ```
+  ```azurepowershell
+  $templateFile = "azuredeploy.json"
+  $today=Get-Date -Format "MM-dd-yyyy"
+  $deploymentName="addfunction-"+"$today"
+  New-AzResourceGroupDeployment `
+    -Name $deploymentName `
+    -TemplateFile $templateFile `
+    -storagePrefix {your-prefix}
+  ```
 
 In the first section of this code, you set Azure PowerShell variables for the path to the template file that you want to deploy and the name of the deployment. You then used the ```New-AzResourceGroupDeployment``` command to deploy the template to Azure.
 

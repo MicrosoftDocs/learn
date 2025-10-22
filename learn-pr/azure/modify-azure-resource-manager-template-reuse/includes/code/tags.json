@@ -36,7 +36,7 @@
     "resources": [{
         "name": "[variables('uniqueStorageName')]",
         "type": "Microsoft.Storage/storageAccounts",
-        "apiVersion": "2019-06-01",
+        "apiVersion": "2025-01-01",
         "tags": "[parameters('resourceTags')]",
         "location": "[resourceGroup().location]",
         "kind": "StorageV2",
