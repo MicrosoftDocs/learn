@@ -57,4 +57,4 @@ Each report provides insights into classification, protection, and security acti
 | **Data sources with sensitive info** | Top locations where labeled or sensitive data is stored (for example, SharePoint, OneDrive, Exchange, Azure). | Identifies data concentration areas to enhance security controls. | Data Explorer |
 | **Trainable classifiers** | Most-used AI classifiers for autolabeling (for example, threat intelligence, HR records). | Supports automated classification for large-scale data protection. | Data Explorer |
 
-The **Information Protection Reports** in Microsoft Purview offer a centralized way to track data classification and protection across Microsoft 365, Azure, AWS, on-premises, and Microsoft Fabric. By filtering reports and using linked insights, security and compliance teams can monitor how data is labeled, protected, and accessed to enforce security policies effectively.
+Together, these reports give security and compliance teams a centralized view of labeling, protection, and access trends across all connected environments, helping ensure that data remains properly classified and secured.
