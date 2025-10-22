@@ -20,7 +20,7 @@ Rather than scaling a single agent to handle every user request or data interact
 - Assign specialized capabilities to agents that can be reused across solutions
 - Scale your system in a way that aligns with real-world business logic
 
-This approach is especially useful in scenarios where agents need to perform sensitive tasks independently, such has handling private data or generating personalized content.
+This approach is especially useful in scenarios where agents need to perform sensitive tasks independently, such as handling private data or generating personalized content.
 
 Using connected agents to automate workflows offers many benefits, for example:
 
