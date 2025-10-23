@@ -5,8 +5,8 @@ Azure offers several AI-ready networking services to help deliver applications. 
 | --- |--- | ---| --- | --- |
 | Type | Global | Regional | Global | Regional/Global |
 | Layer	| Layer 7 (HTTP/HTTPS) | Layer 7 (HTTP/HTTPS) | DNS-based | Layer 4 (TCP/UDP) |
-| Primary Use Case | Web traffic load balancing, application acceleration, and global routing | Web application firewall, TSL/SSL termination, and HTTP load balancing | DNS-based traffic routing for high availability and performance | Internal and external load balancing for non-HTTP(S) traffic |
-| Key Features | Path-based routing, TSL/SSL offload, Web Application Firewall (WAF), URL-based routing | Path-based routing, TSL/SSL offload, Web Application Firewall (WAF), URL-based routing | DNS-based routing, geographic routing, priority routing, weighted routing | High availability, low latency, zonal and zone-redundant endpoints |
+| Primary Use Case | Web traffic load balancing, application acceleration, and global routing | Web application firewall, TLS/SSL termination, and HTTP load balancing | DNS-based traffic routing for high availability and performance | Internal and external load balancing for non-HTTP(S) traffic |
+| Key Features | Path-based routing, TLS/SSL offload, Web Application Firewall (WAF), URL-based routing | Path-based routing, TLS/SSL offload, Web Application Firewall (WAF), URL-based routing | DNS-based routing, geographic routing, priority routing, weighted routing | High availability, low latency, zonal and zone-redundant endpoints |
 | Scalability | High | High | High | High |
 | Cost | Based on data processed and rules applied | Based on data processed, rules applied, and SKU | Based on DNS queries, health checks, and data points processed | Based on rules and data processed |
 
