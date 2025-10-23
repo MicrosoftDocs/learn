@@ -7170,6 +7170,11 @@ achievements:
   title: Create your first route finding app with Azure Maps
   summary: Learn about writing code to interact with Azure Maps. Develop and test a fun app to find the best route for a truck, car, or bicycle. The route is from the west coast of the USA, to the east coast. You can see how routes change based on vehicle. And, for trucks, how routes vary if the contents are hazardous. You get the chance to add in your own locations.
   iconUrl: /training/achievements/iot/create-your-first-app-with-azure-maps.svg
+- uid: learn.app-package-management-using-helm.badge
+  type: badge
+  title: Application and package management using Helm
+  summary: Helm is an application package manager for Kubernetes that you use to standardize and simplify the deployment of cloud-native applications on Kubernetes. Here, you learn how to install third-party packages, called Helm charts, and how to create and install Helm charts for the workloads your teams develop.
+  iconUrl: /training/achievements/app-package-management-using-helm.svg
 - uid: learn.azure.deploy-templates-command-line-github-actions.badge
   type: badge
   title: Automate the deployment of JSON ARM templates by using GitHub Actions
@@ -7180,8 +7185,25 @@ achievements:
   title: Manage services with the Azure portal
   summary: Explore the Azure portal features and services, and customize your portal.
   iconUrl: /training/achievements/tour-azure-portal-features.svg
+- uid: learn.shell.linux-command-line.trophy
+  type: trophy
+  title: Get started with the Linux command line and the Shell
+  summary: The command line is something you will interact with often when using Linux, both as a developer and admin. Knowing how it works and what commands you can use can greatly increase your productivity. In this learning path, you will get started with the Linux command line.
+  iconUrl: /training/achievements/shell-linux-command-line.svg
+- uid: learn.student-evangelism.unix-shell-wrangle-data.badge
+  type: badge
+  title: Use the UNIX shell to wrangle log data
+  summary: Learn how to use the UNIX shell to wrangle data and inspect data files.
+  iconUrl: /training/achievements/student-evangelism/unix-shell-wrangle-data.svg
+- uid: learn.student-evangelism.bash-introduction.badge
+  type: badge
+  title: Introduction to Bash
+  summary: Use Bash to manage IT infrastructure.
+  iconUrl: /training/achievements/student-evangelism/bash-introduction-badge.svg
 - uid: learn.azure.manage-deployments-advanced-arm-template-features.badge
   type: badge
   title: Manage complex cloud deployments by using advanced JSON ARM template features
   summary: This module teaches you how to use advanced features of JSON ARM templates to perform secrets management and conditional deployments.
   iconUrl: /training/achievements/manage-deployments-advanced-arm-template-features.svg
+
+
