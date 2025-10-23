@@ -1,0 +1,3 @@
+Unity Catalog standardizes **secure** and **auditable** access to data in Databricks, offering fine-grained permissions that can be granted **explicitly** or **inherited** at the catalog and schema levels. This reduces the manual setup and governance limitations of legacy approaches like Hive. 
+
+In parallel, the **Databricks Marketplace**, built on **Delta Sharing**, gives users a straightforward way to find, preview, and bring external datasets and models into their environment. Together, these tools support consistent access control and make it easier to incorporate external resources into analysis workflows.
