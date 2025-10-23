@@ -46,13 +46,13 @@ This module explores deployment pattern architectures, microservices design prin
 
 By the end of this module, you'll be able to:
 
-- Analyze deployment pattern architectures and implementation strategies
-- Evaluate microservices architecture principles and distributed system design
-- Compare classical and modern deployment patterns for optimal release strategies
-- Design scalable deployment architectures aligned with organizational requirements
+- Analyze deployment pattern architectures and implementation strategies.
+- Evaluate microservices architecture principles and distributed system design.
+- Compare classical and modern deployment patterns for optimal release strategies.
+- Design scalable deployment architectures aligned with organizational requirements.
 
 ## Prerequisites
 
-- Foundational understanding of DevOps principles and continuous delivery concepts
-- Familiarity with version control systems and collaborative development workflows
-- Experience in software delivery organizations provides beneficial context
+- Foundational understanding of DevOps principles and continuous delivery concepts.
+- Familiarity with version control systems and collaborative development workflows.
+- Experience in software delivery organizations provides beneficial context.
