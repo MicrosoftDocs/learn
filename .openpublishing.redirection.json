@@ -59478,6 +59478,66 @@
       "source_path": "learn-pr/azure/tour-azure-portal/9-summary.md",
       "redirect_url": "/azure/azure-portal/azure-portal-overview",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-deployments-advanced-arm-template-features/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/templates/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-deployments-advanced-arm-template-features/2-dependencies.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/templates/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-deployments-advanced-arm-template-features/3-dependencies-exercise.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/templates/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-deployments-advanced-arm-template-features/4-secure-parameters.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/templates/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-deployments-advanced-arm-template-features/5-secure-parameters-exercise.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/templates/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-deployments-advanced-arm-template-features/6-conditions.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/templates/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-deployments-advanced-arm-template-features/7-conditions-exercise.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/templates/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-deployments-advanced-arm-template-features/8-copy.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/templates/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-deployments-advanced-arm-template-features/9-copy-exercise.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/templates/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-deployments-advanced-arm-template-features/10-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/templates/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-deployments-advanced-arm-template-features/11-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/templates/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-deployments-advanced-arm-template-features/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/templates/",
+      "redirect_document_id": false
     }
   ]
 }
