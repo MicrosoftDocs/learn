@@ -4,7 +4,7 @@ Imagine you need to prepare a first-quarter financial results presentation for s
 
 By the end of this module, you’ll be able to use Windows 11 features and  Copilot to efficiently analyze financial data and create a professional presentation that clearly communicates insights.
 
-## Learning Objectives
+## Learning objectives
 
 - Use Windows 11 features to organize your workspace and protect sensitive data.  
 - Analyze financial data with Copilot in Excel and Copilot in PowerPoint to generate actionable insights.  
