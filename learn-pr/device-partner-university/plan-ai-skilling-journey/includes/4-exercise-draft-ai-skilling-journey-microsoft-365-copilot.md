@@ -19,8 +19,11 @@ Use Microsoft 365 Copilot as your brainstorming partner to design an AI skilling
 
    >[!NOTE]
    > If you wish to elaborate on the differences between the Explore, Build, and Optimize stages in your prompt, you can add brief context like:
+   >
    > **Explore:** "We're new to AI and focusing on awareness and experimentation."
+   >
    > **Build:** "We're starting to integrate AI tools like Microsoft 365 Copilot into daily workflows."
+   >
    > **Optimize:** "We already use AI regularly and are refining best practices and measuring impact."
 
 1. Copilot in Word creates a draft of an AI skilling plan.

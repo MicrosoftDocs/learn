@@ -12,7 +12,7 @@ Just as important is responsible adoption. Establish clear, role-specific guidel
 
 Microsoft's AI is developed around six guidelines, called the Responsible AI principles.
 
-:::image type="content" border="true" source="../media/add-resources-to-microsoft-365-copilot-in-word.png" alt-text="Screenshot showing the location of the + arrow on Microsoft 365 Copilot in Word's inline prompt that is used to add company resources.":::
+:::image type="content" border="true" source="../media\concept-responsible-ai-principles.png" alt-text="Diagram showing Microsoft's Responsible AI principles.":::
 
 - **Fairness**: AI systems must not discriminate or exhibit bias—instead, they should treat all individuals the same.
 - **Reliability and Safety**: AI systems must be robust, dependable, and safe—minimizing risks and unintended consequences.
@@ -40,9 +40,8 @@ Use the table to connect each Responsible AI principle to practical steps you ca
 A strong AI culture grows when people learn *with* each other, not just from formal training. This exercise helps you design a small, low-effort initiative that encourages shared learning and reinforces responsible use.
 
 Here are some ideas of example initiatives your organization can use at any readiness level.
-
 | **Readiness level** | **Example initiatives** |
 | :--- | :--- |
-| **Explore** | • Create a Teams channel where employees can post AI tips or questions.<br>• Add a short "AI spotlight" moment to weekly meetings where early adopters share one success or lesson learned.<br>• Start an internal newsletter or chat thread summarizing interesting AI use cases found across the organization.<br>• Encourage managers to ask, "Has anyone tried using AI for this yet?" during project discussions. |
-| **Build** | • Host short "AI Show-and-Tell" or lunch sessions where teams share quick demos.<br>• Form a small community of practice that meets monthly to discuss use cases and responsible AI principles.<br>• Highlight contributions publicly—through badges, shout-outs, or an "AI Win of the Month."<br>• Pair early adopters with peers who are just beginning to use AI tools. |
-| **Optimize** | • Launch an "AI Champions" or peer-mentorship program that includes responsible-use guidance.<br>• Create an internal repository of AI best practices, templates, and ethical guidelines.<br>• Integrate AI collaboration milestones into performance objectives or learning dashboards.<br>• Encourage cross-department AI innovation challenges that emphasize transparency and fairness. |
+| **Explore** | <br>• Create a Teams channel where employees can post AI tips or questions.<br>• Add a short "AI spotlight" moment to weekly meetings where early adopters share one success or lesson learned.<br>• Start an internal newsletter or chat thread summarizing interesting AI use cases found across the organization.<br>• Encourage managers to ask, "Has anyone tried using AI for this yet?" during project discussions. |
+| **Build** | <br>• Host short "AI Show-and-Tell" or lunch sessions where teams share quick demos.<br>• Form a small community of practice that meets monthly to discuss use cases and responsible AI principles.<br>• Highlight contributions publicly—through badges, shout-outs, or an "AI Win of the Month."<br>• Pair early adopters with peers who are just beginning to use AI tools. |
+| **Optimize** | <br>• Launch an "AI Champions" or peer-mentorship program that includes responsible-use guidance.<br>• Create an internal repository of AI best practices, templates, and ethical guidelines.<br>• Integrate AI collaboration milestones into performance objectives or learning dashboards.<br>• Encourage cross-department AI innovation challenges that emphasize transparency and fairness. |
