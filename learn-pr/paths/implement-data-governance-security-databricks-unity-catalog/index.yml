@@ -23,6 +23,7 @@ subjects:
 - data-engineering
 modules:
 - learn.wwl.understand-unity-catalog
+- learn.wwl.secure-unity-catalog-for-governance
 - learn.wwl.implement-security-unity-catalog
 - learn.wwl.implement-advanced-security-unity-catalog
 trophy:
