@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.integrate-identity-management-systems.design-implement-permissions-security-groups
-title: Design and Implement Permissions and Security Groups in Azure DevOps
+title: Design and implement permissions and security groups in Azure DevOps
 metadata:
-  title: Design and Implement Permissions and Security Groups in Azure DevOps
-  description: "Design Azure DevOps access control implementing Microsoft Entra ID integration, group membership hierarchies, and permission inheritance patterns for least-privilege security"
+  title: Design and implement permissions and security groups in Azure DevOps
+  description: "Design Azure DevOps access control implementing Microsoft Entra ID integration, group membership hierarchies, and permission inheritance patterns for least-privilege security."
   ms.date: 10/23/2025
   author: LuizMacedo
   ms.author: lumac

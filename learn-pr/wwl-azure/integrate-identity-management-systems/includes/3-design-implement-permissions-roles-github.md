@@ -17,15 +17,21 @@ GitHub organizational architectures implement comprehensive built-in role taxono
 - **Organization owners:** Maintain comprehensive administrative authority governing organizational infrastructure including repository management, team orchestration, configuration administration, and member permission assignment. Best practices recommend owner role limitation with minimum dual-owner requirements ensuring redundancy and operational continuity.
 - **Organization members:** Constitute default non-administrative organizational participation tier providing baseline permissions including repository and project creation capabilities without organization-wide administrative privileges.
 - **Organization moderators:** Extend member permissions enabling contributor management operations including non-member blocking/unblocking, interaction limitation configuration, and public repository comment moderation facilitating community governance and repository order maintenance.
+
 - **Billing managers:** Designate users authorized to manage organizational billing configurations including payment instrument administration, supporting scenarios segregating financial access from organizational membership privileges.
+
 - **Security managers:** Organization-level role conferring security alert visibility, code security configuration management, and universal repository read access supporting dedicated security team operations. (Note: As of March 2024, Security Managers role remains in public beta subject to modification.)
+
 - **GitHub app managers:** Typically organization owners managing GitHub App registration settings, capable of delegating GitHub App manager permissions for specific registration administration. This role excludes organizational GitHub App installation/uninstallation privileges.
+
 - **Outside collaborators:** Non-member individuals granted access to specific organizational repositories supporting consultant, temporary employee, or external contributor scenarios. Outside collaborators receive limited organizational resource access maintaining data security while enabling necessary collaborative workflows.
 
-## GitHub Enterprise organizations
+## GitHub enterprise organizations
 
 GitHub Enterprise introduces additional roles beyond those available in standard GitHub personal accounts and organizations. These roles are geared within enterprise-level functionality:
 
 - **Enterprise owners**: Have full control over the enterprise, including managing administrators, adding or removing organizations, enforcing policies, and managing billing settings.
+
 - **Enterprise members**: Are automatically included in organizations owned by the enterprise and can collaborate within these organizations. However, they lack access to enterprise settings and are limited to accessing repositories with the internal visibility within the enterprise.
-- **Guest collaborators**: Are intended to provide restricted access to the organization’s internal repositories by external vendors and contractors. The restrictions are based on the organization's permission policy.<br>
+
+- **Guest collaborators**: Are intended to provide restricted access to the organization's internal repositories by external vendors and contractors. The restrictions are based on the organization's permission policy.

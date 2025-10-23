@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.integrate-identity-management-systems.explore-service-principals
-title: Explore Workload Identities
+title: Explore workload identities
 metadata:
-  title: Explore Workload Identities
-  description: "Explore Microsoft Entra ID workload identities including application registrations, service principals, and client secret authentication for Azure Pipelines and GitHub Actions"
+  title: Explore workload identities
+  description: "Explore Microsoft Entra ID workload identities including application registrations, service principals, and client secret authentication for Azure Pipelines and GitHub Actions."
   ms.date: 10/23/2025
   author: LuizMacedo
   ms.author: lumac

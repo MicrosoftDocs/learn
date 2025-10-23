@@ -3,7 +3,7 @@ This module established comprehensive identity integration architectures encompa
 You acquired competencies encompassing:
 
 - Azure DevOps integration with Microsoft Entra ID identity management architectures.
-- GitHub single sign-on (SSO) and multi-factor authentication implementation strategies.
+- GitHub single sign-on (SSO) and multifactor authentication implementation strategies.
 - Service principal provisioning and workload identity configuration.
 - Managed identity deployment for passwordless Azure resource authentication.
 

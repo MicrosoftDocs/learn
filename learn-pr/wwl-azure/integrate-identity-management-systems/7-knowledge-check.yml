@@ -3,7 +3,7 @@ uid: learn.wwl.integrate-identity-management-systems.knowledge-check
 title: Module assessment
 metadata:
   title: Module assessment
-  description: "Validate comprehension of GitHub SSO integration, Microsoft Entra ID workload identities, service principals, and managed identity implementation patterns"
+  description: "Validate comprehension of GitHub SSO integration, Microsoft Entra ID workload identities, service principals, and managed identity implementation patterns."
   ms.date: 10/23/2025
   author: LuizMacedo
   ms.author: lumac
