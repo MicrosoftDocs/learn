@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.implement-canary-releases-dark-launching.understand-dark-launching
-title: Understand Dark Launching
+title: Understand dark launching
 metadata:
-  title: Understand Dark Launching
-  description: "Implement dark launching strategies for hidden feature validation, backend performance assessment, and user response measurement"
-  ms.date: 10/06/2025
+  title: Understand dark launching
+  description: "Implement dark launching strategies for hidden feature validation, backend performance assessment, and user response measurement."
+  ms.date: 10/23/2025
   author: LuizMacedo
   ms.author: lumac
   ms.topic: unit

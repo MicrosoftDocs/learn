@@ -14,7 +14,7 @@ Canary stability validation through extended monitoring periods authorizes produ
 
 :::image type="content" source="../media/canary-release-47d754eb.png" alt-text="Screenshot of Canary Release.":::
 
-Canary release implementation leverages integrated deployment mechanisms combining feature toggles, intelligent traffic routing, and deployment slot orchestration:\*\*
+Canary release implementation leverages integrated deployment mechanisms combining feature toggles, intelligent traffic routing, and deployment slot orchestration:
 
 - **Percentage-based traffic routing:** Deployment slot configuration enables controlled traffic distribution directing specified percentages to new feature implementations.
 - **Segment-specific targeting:** Feature toggle frameworks enable precise user cohort targeting for granular exposure control.

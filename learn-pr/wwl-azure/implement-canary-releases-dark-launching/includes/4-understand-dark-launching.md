@@ -18,7 +18,7 @@ Performance parity or improvement validation authorizes legacy sensor replacemen
 
 Software implementations mirror aerospace validation patterns through parallel execution architectures where new features process production data and calculations without user-facing exposure, generating validation telemetry through shadow operation.
 
-## How to Implement Dark Launching
+## How to implement dark launching
 
 Dark launching implementation leverages identical technical foundations as canary releases and feature toggle systems, employing deployment isolation and controlled exposure mechanisms.
 

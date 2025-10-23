@@ -1,6 +1,6 @@
 This module delivers comprehensive canary release implementation strategies, Azure Traffic Manager configuration for gradual traffic shifting, and dark launching methodologies for risk-mitigated progressive delivery.
 
-## Learning Objectives
+## Learning objectives
 
 By the end of this module, you'll be able to:
 
