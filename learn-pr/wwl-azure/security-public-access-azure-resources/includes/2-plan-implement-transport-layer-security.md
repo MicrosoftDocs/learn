@@ -54,7 +54,7 @@ Clients attempting to connect with older TLS versions receive a connection error
 3. Set **HTTPS Only** to **On**.
 4. Select **Save**.
 
-Azure automatically redirects HTTP requests to HTTPS, ensuring all traffic uses encrypted connections. Encrypted connections eliminate mixed-content warnings in browsers and simplifies compliance audits.
+Azure automatically redirects HTTP requests to HTTPS, ensuring all traffic uses encrypted connections. Encrypted connections eliminate mixed-content warnings in browsers and simplify compliance audits.
 
 ### Add a custom domain certificate
 
