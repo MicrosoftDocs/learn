@@ -35,13 +35,13 @@ products:
   - office-excel
   - office-powerpoint
 units:
-  - learn.dpu.win-at-work-finance.introduction
-  - learn.dpu.win-at-work-finance.financial-analysis
-  - learn.dpu.win-at-work-finance.analyst-agent
-  - learn.dpu.win-at-work-finance.analyze-trends
-  - learn.dpu.win-at-work-finance.ai-features
-  - learn.dpu.win-at-work-finance.analyze-sales
-  - learn.dpu.win-at-work-finance.knowledge-check
-  - learn.dpu.win-at-work-finance.summary
+  - learn.dpu.windows-at-work-finance.introduction
+  - learn.dpu.windows-at-work-finance.financial-analysis
+  - learn.dpu.windows-at-work-finance.analyst-agent
+  - learn.dpu.windows-at-work-finance.analyze-trends
+  - learn.dpu.windows-at-work-finance.ai-features
+  - learn.dpu.windows-at-work-finance.analyze-sales
+  - learn.dpu.windows-at-work-finance.knowledge-check
+  - learn.dpu.windows-at-work-finance.summary
 badge:
   uid: learn.dpu.windows-at-work-finance.badge
