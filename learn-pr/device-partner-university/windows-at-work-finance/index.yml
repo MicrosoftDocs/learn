@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.dpu.win-at-work-finance
+uid: learn.dpu.windows-at-work-finance
 title: 'Windows at work: Transforming finance teams with Windows 11 Pro'
 metadata:
   title: 'Windows At Work: Transforming Finance Teams With Windows 11 Pro'
@@ -19,7 +19,7 @@ abstract: |
   - Build a clear, visually effective presentation for stakeholders.
 prerequisites: |
   - None
-iconUrl: /training/achievements/win-at-work-finance.svg
+iconUrl: /training/achievements/windows-at-work-finance.svg
 ratingEnabled: false
 levels:
   - beginner
@@ -44,4 +44,4 @@ units:
   - learn.dpu.win-at-work-finance.knowledge-check
   - learn.dpu.win-at-work-finance.summary
 badge:
-  uid: learn.dpu.win-at-work-finance.badge
+  uid: learn.dpu.windows-at-work-finance.badge

@@ -17,7 +17,7 @@ You need to evaluate actual regional sales compared to forecast, identify discre
 3. **Prompt Copilot in Excel**:  
    > "Compare actual sales versus forecast for each region. Highlight regions exceeding or underperforming against forecast. Generate visual summaries."  
 
-![A screenshot of a Copilot-generated chart in Excel. It shows forcast versus actual sales by region.](../media/forecast.png)
+   [![A screenshot of a Copilot-generated chart in Excel. It shows forecast versus actual sales by region.](../media/forecast-inline.png)](../media/forecast-expanded.png)
 
 4. Review Copilot-generated tables, charts, and insights.
 5. Refine the output with other prompts as needed: 
@@ -30,11 +30,9 @@ You need to evaluate actual regional sales compared to forecast, identify discre
 
 - Variance vs Forecast: `Actual Sales - Forecast`  
 - Percent Over/Under Forecast: `(Actual Sales - Forecast) / Forecast * 100`  
-- Highlight top 3 overperforming and underperforming regions.  
+- Highlight top 3 overperforming and underperforming regions.
 
----
-
-### Example Copilot Prompts
+### Example Copilot prompts
 
 - `"Compare actual sales vs forecast for each region and highlight top 3 overperformers and underperformers."`  
 - `"Generate a bar chart showing variance vs forecast by region."`  

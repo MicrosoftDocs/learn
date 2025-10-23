@@ -1,13 +1,13 @@
 ### YamlMime:ModuleUnit
-uid: learn.dpu.win-at-work-finance.analyze-sales
-title: Analyze regional sales versus forecast data in Excel using Copilot
+uid: learn.dpu.windows-at-work-finance.introduction
+title: Introduction
 metadata:
-  title: Analyze Regional Sales Versus Forecast In Excel Using Copilot
+  title: Introduction
   description: 'This content is part of the "Windows at work: Transforming finance teams with Windows 11 Pro" module.'
   ms.date: 10/22/2025
   author: Stephanie-Rosenzweig
   ms.author: v-stephanier
   ms.topic: unit
-durationInMinutes: 2
+durationInMinutes: 1
 content: |
-  [!include[](includes/6-analyze-sales.md)]
+  [!include[](includes/1-introduction.md)]

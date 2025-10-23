@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
-uid: learn.dpu.win-at-work-finance.analyst-agent
-title: Use Analyst agent to generate insights in Excel
+uid: learn.dpu.windows-at-work-finance.analyze-sales
+title: Analyze regional sales versus forecast data in Excel using Copilot
 metadata:
-  title: Use Analyst Agent to Generate Insights In Excel
+  title: Analyze Regional Sales Versus Forecast Data In Excel Using Copilot
   description: 'This content is part of the "Windows at work: Transforming finance teams with Windows 11 Pro" module.'
   ms.date: 10/22/2025
   author: Stephanie-Rosenzweig
@@ -10,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 2
 content: |
-  [!include[](includes/3-analyst-agent.md)]
+  [!include[](includes/6-analyze-sales.md)]
