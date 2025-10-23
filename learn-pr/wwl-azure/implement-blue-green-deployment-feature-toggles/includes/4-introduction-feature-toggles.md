@@ -42,7 +42,7 @@ Feature deployment and exposure separation provides compelling Continuous Delive
 
 Problematic feature detection enables immediate deactivation without deployment rollback, followed by hotfix development addressing root causes. Deployment-exposure decoupling enables anytime release capabilities since new code remains dormant without impacting production system stability.
 
-## What Are Feature Toggles?
+## What are feature toggles?
 
 Feature toggle terminology encompasses multiple synonymous designations including feature flippers, feature flags, feature switches, and conditional features representing identical runtime control mechanisms.
 
@@ -52,7 +52,7 @@ Feature toggles serve as viable branching alternatives within version control wo
 
 Toggle-based development implements features behind runtime switches enabling trunk-based development. Disabled features during release cycles remain unexposed and operationally isolated from production functionality despite code presence.
 
-## How to Implement a Feature Toggle
+## How to implement a feature toggle
 
 Fundamental feature toggle implementation utilizes conditional IF statement logic for binary execution path selection.
 

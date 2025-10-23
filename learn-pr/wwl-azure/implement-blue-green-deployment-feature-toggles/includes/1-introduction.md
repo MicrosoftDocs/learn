@@ -1,6 +1,6 @@
 This module delivers comprehensive blue-green deployment methodology implementation and feature toggle architecture design for controlled progressive delivery, zero-downtime releases, and dynamic feature management capabilities.
 
-## Learning Objectives
+## Learning objectives
 
 By the end of this module, you'll be able to:
 

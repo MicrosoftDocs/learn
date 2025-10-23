@@ -6,7 +6,7 @@ Production slot designation identifies the primary environment serving active us
 
 New application version deployment utilizes staging slots for complete validation prior to production cutover. Environment swap operations execute through internal IP address exchange between slots, enabling seamless traffic transition.
 
-## Swap Operations
+## Swap operations
 
 Slot swap functionality delivers zero-downtime deployment capabilities through seamless traffic redirection mechanisms that preserve all active requests without connection drops during swap operation execution.
 

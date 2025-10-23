@@ -11,7 +11,7 @@ Martin Fowler's toggle classification framework evaluates implementations across
 - **Longevity dimension:** Expected toggle lifetime within the codebase.
 - **Dynamism dimension:** Required runtime reconfiguration flexibility and frequency.
 
-## Planning Feature Flag Lifecycles
+## Planning feature flag lifecycles
 
 :::image type="content" source="../media/switch-position-triggers-flag-64d2ca6d.png" alt-text="Diagram showing a switch in the on position triggers a flag, if this, else that.":::
 
@@ -34,7 +34,7 @@ Feature flag lifecycle management planning constitutes critical implementation r
 
 Feature flag repurposing violates fundamental best practices, evidenced by high-profile production failures resulting from assumed-obsolete flag reuse for new functionality without comprehensive impact analysis.
 
-## Tooling for Release Flag Management
+## Tooling for release flag management
 
 Feature flag management effort requirements demand significant organizational investment justifying dedicated tooling adoption for comprehensive tracking capabilities:\*\*
 
