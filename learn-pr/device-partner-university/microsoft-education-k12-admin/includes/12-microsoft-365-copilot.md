@@ -10,4 +10,4 @@ Let’s look at some examples of what administrators can do with Microsoft 365 C
 - Automatically take notes and organize action items with Copilot in Teams.
 - Summarize lengthy email threads and ensure nothing important is overlooked with Copilot in Outlook.
 - Draft a grant proposal outline based on school improvement goals with Copilot in Word.
-- Create an agent that handles routine administrative tasks with Copilot Studio agent builder in Copilot Chat.
+- Create an agent that handles routine administrative tasks with the Copilot Studio lite experience in Copilot Chat.
