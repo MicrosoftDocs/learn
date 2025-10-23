@@ -17,7 +17,7 @@ There are a few ways to access the Analyst agent. First, let’s look at how you
 2. In the left navigation pane, select **Agents**.
 3. Choose **Analyst** from the list of available agents.
 
-   [![A screenshot of the Copilot desktop app with Agents selected.](../media/application-inline.png)](../media/application-expanded.png)
+   [![A screenshot of the Copilot desktop app with Agents selected.](../media/application-inline.png)](../media/application-expanded.png#lightbox)
 
 ### Attach your data
 - Select the **+ icon** and select **Attach content** to upload the file(s) containing the data you want to analyze.

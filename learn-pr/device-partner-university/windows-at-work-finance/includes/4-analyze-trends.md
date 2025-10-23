@@ -28,7 +28,7 @@ You're tasked with preparing a Q1 financial results presentation. Your goal is t
 1. Select the **Copilot icon** on the Home Ribbon.
 2. In the Copilot sidebar, select the hamburger menu to open the list of available agents. Then choose **Analyst**.
 
-   [![A screenshot of the Copilot agents list in Excel.](../media/analyze-inline.png)](../media/analyze-expanded.png)
+   [![A screenshot of the Copilot agents list in Excel.](../media/analyze-inline.png)](../media/analyze-expanded.png#lightbox)
 
 3. Enter a clear prompt, for example:
 
@@ -72,19 +72,19 @@ You're tasked with preparing a Q1 financial results presentation. Your goal is t
 1. Ask Copilot to create graphs for visual representation:  
   `"Generate a line chart for revenue over the last 3 years and a bar chart for volume."`
 
-   [![A line chart in Excel showing revenue growth over three years.](../media/revenue-inline.png)](../media/revenue-expanded.png)
+   [![A line chart in Excel showing revenue growth over three years.](../media/revenue-inline.png)](../media/revenue-expanded.png#lightbox)
 
-   [![A bar chart in Excel showing volume over three years illustrated with green bars.](../media/volume-inline.png)](../media/volume-expanded.png)
+   [![A bar chart in Excel showing volume over three years illustrated with green bars.](../media/volume-inline.png)](../media/volume-expanded.png#lightbox)
 
 2. Verify **chart titles, axis labels, and legends**. You can use prompts to further customize the charts. For example, "Make the bars in our graph purple."
 
-   [![A bar chart in Excel showing volume over three years illustrated with purple bars.](../media/purple-inline.png)](../media/purple-expanded.png)
+   [![A bar chart in Excel showing volume over three years illustrated with purple bars.](../media/purple-inline.png)](../media/purple-expanded.png#lightbox)
 
 ## Step 5: Transfer graphs and insights to PowerPoint
 
 1. Copy or download the graphs from Excel.
 
-   [![A screenshot of Copilot in Excel with the Copy and Download options highlighted on a graph.](../media/copy-inline.png)](../media/copy-expanded.png)
+   [![A screenshot of Copilot in Excel with the Copy and Download options highlighted on a graph.](../media/copy-inline.png)](../media/copy-expanded.png#lightbox)
 
 2. Paste the graphs into the corresponding **PowerPoint slides**.  
 3. Add **Copilot-generated textual insights** below or next to each graph.
@@ -93,13 +93,13 @@ You're tasked with preparing a Q1 financial results presentation. Your goal is t
 
 1. Select the **Copilot icon** in PowerPoint.  
 
-   [![A screenshot of PowerPoint with the Copilot icon highlighted.](../media/powerpoint-inline.png)](../media/powerpoint-expanded.png)
+   [![A screenshot of PowerPoint with the Copilot icon highlighted.](../media/powerpoint-inline.png)](../media/powerpoint-expanded.png#lightbox)
 
 2. Enter prompts like:  
    - `"Summarize the charts into concise bullet points for executives."`  
    - `"Rewrite insights in a professional and clear tone."`  
 
-   [![A screenshot of PowerPoint with a Copilot-generated summary of a bar chart copy and pasted from Excel.](../media/summary-inline.png)](../media/summary-expanded.png)
+   [![A screenshot of PowerPoint with a Copilot-generated summary of a bar chart copy and pasted from Excel.](../media/summary-inline.png)](../media/summary-expanded.png#lightbox)
 
 3. Review the suggestions and integrate them into your slides.
 
