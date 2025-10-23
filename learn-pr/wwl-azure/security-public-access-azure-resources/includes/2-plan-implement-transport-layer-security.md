@@ -8,7 +8,7 @@ Transport Layer Security (TLS) encrypts data traveling between clients and serve
 
 Modern organizations rely on TLS to:
 
-- **Meet regulatory requirements**: Standards like PCI DSS, HIPAA, and GDPR mandate encryption for data in transit.
+- **Meet regulatory requirements**: Standards like PCI DSS, HIPAA, and other stadandars mandate encryption for data in transit.
 - **Build customer trust**: Browser security indicators and certificate warnings directly change user confidence.
 - **Prevent data breaches**: Unencrypted connections expose credentials, session tokens, and business data to network attackers.
 
