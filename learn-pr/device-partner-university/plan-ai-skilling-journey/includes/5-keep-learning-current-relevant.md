@@ -1,7 +1,7 @@
 AI evolves fast—and so should your training. Even the best-designed programs lose impact if they stagnate. How you maintain and update learning depends on where your organization is in its AI journey:
 
 | **Readiness level** | **Recommended approach** | **Typical actions** |
-| :---: | :---: | :---: |
+| :--- | :--- | :--- |
 | **Explore** | Begin developing simple habits for review. | Schedule periodic check-ins, even if formal training doesn't yet exist. Capture and share "quick wins" from early adopters. Note emerging AI topics that generate interest or confusion. |
 | **Build** | Establish a predictable rhythm for updates. | Refresh materials quarterly or twice a year. Assign an owner or small working group to monitor AI advancements. Update examples, links, and internal guidance to reflect new tools. |
 | **Optimize** | Embed continuous improvement into operations. | Treat AI learning updates as part of standard release or performance cycles. Track participation and outcomes as business metrics. Use feedback and analytics to refine skilling goals continuously. |

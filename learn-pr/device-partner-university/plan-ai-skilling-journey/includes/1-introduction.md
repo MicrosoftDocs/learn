@@ -1,11 +1,11 @@
-# Introduction
+Imagine your company just announced a new AI initiative. Leadership is excited, employees are curious, and expectations are high — but no one’s quite sure what “getting skilled in AI” really means. Some teams dive into tools like Copilot, while others hesitate, unsure how AI fits into their work.
 
-Imagine your company just announced a new AI initiative. Leadership is excited, employees are curious, and expectations are high — but no one knows exactly what "getting skilled in AI" means. Some teams jump into tools like Copilot, while others hesitate, unsure of how AI fits their work.
+That uncertainty is common. Successfully integrating AI requires both structure and intention. This module is designed for learning leaders, HR partners, and managers who guide organizational learning. An AI skilling journey provides the framework to turn curiosity into capability — connecting individual exploration with measurable business outcomes.  
 
-That uncertainty is common. Integrating AI effectively requires structure and intention. This module is for learning leaders, HR partners, or managers responsible for AI skilling. An AI skilling journey gives your organization both — a way to connect individual curiosity with business outcomes. Throughout this module, you'll explore how to design that journey step by step: understanding where you are today, defining role-based skilling journeys, and building a culture where AI learning never stops.
+Throughout this module, you’ll learn how to design that journey step by step: assessing your organization’s readiness, creating role-based skilling plans, and fostering a culture where AI learning continues to grow.
 
 ## Learning objectives
 
 - Assess your organization's AI readiness to identify current strengths, gaps, and opportunities for growth.
-- Design structured, role-based skilling journeys that align AI learning with day-to-day work and business outcomes.
+- Design structured skilling journeys that align AI learning with day-to-day work and business outcomes using Microsoft Copilot 365 in Microsoft Word.
 - Build and sustain a culture of responsible, collaborative AI use by integrating ongoing learning and Microsoft's Responsible AI principles.

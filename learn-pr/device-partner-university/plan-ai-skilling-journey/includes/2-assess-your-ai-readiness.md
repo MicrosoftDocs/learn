@@ -9,10 +9,10 @@ Equally important is your organization's *attitude* toward learning. People need
 Organizations typically progress through several stages as they build AI capability. Use the table to understand what each stage looks like and to identify where your organization might be today.
 
 | **Level** | **Description** | **Typical characteristics** |
-| :---: | :---: | :---: |
-| **Explore** | Curiosity without coordination | • AI experimentation is ad-hoc and individual. • No formal training or policy in place. • Leadership interest is emerging but undefined. |
-| **Build** | Early structure and growing leadership support | • Leadership recognizes the value of AI learning. • Some training or pilot programs are in place. • Teams begin sharing successes and challenges. |
-| **Optimize** | AI skilling embedded in strategy | • Clear alignment between AI initiatives and business goals. • Regular training updates and role-based skilling journeys. • Governance and responsible-use policies established. |
+| :--- | :--- | :--- |
+| **Explore** | Curiosity without coordination | • AI experimentation is ad-hoc and individual.<br>• No formal training or policy in place.<br>• Leadership interest is emerging but undefined. |
+| **Build** | Early structure and growing leadership support | • Leadership recognizes the value of AI learning.<br>• Some training or pilot programs are in place.<br>• Teams begin sharing successes and challenges. |
+| **Optimize** | AI skilling embedded in strategy | • Clear alignment between AI initiatives and business goals.<br>• Regular training updates and role-based skilling journeys.<br>• Governance and responsible-use policies established. |
 
 ## Gauge your organization's AI starting point
 
@@ -32,8 +32,8 @@ For each statement, answer **Yes** or **No**. Think about your organization as a
 
 ## Interpret your results
 
-If you answered "Yes" to six or seven questions, your organization is in the Optimize stage. AI learning is already embedded in your strategy, and the focus now should be on refining your approach, scaling successful practices, and keeping training current.
+If you answered "Yes" to six or seven questions, your organization is in the **Optimize** stage. AI learning is already embedded in your strategy, and the focus now should be on refining your approach, scaling successful practices, and keeping training current.
 
-If you answered "Yes" to three to five questions, you're in the Build stage. Momentum is growing, and the next step is to establish more structure and consistency—creating formal skilling journeys, setting expectations, and ensuring leadership support remains visible.
+If you answered "Yes" to three to five questions, you're in the **Build** stage. Momentum is growing, and the next step is to establish more structure and consistency—creating formal skilling journeys, setting expectations, and ensuring leadership support remains visible.
 
-If you answered "Yes" to two or fewer questions, your organization is in the Explore stage. Curiosity and experimentation exist, but coordination is limited. Focus first on building foundational AI understanding and aligning leadership around clear goals for adoption.
+If you answered "Yes" to two or fewer questions, your organization is in the **Explore** stage. Curiosity and experimentation exist, but coordination is limited. Focus first on building foundational AI understanding and aligning leadership around clear goals for adoption.
