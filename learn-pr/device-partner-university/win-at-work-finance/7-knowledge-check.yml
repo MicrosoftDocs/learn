@@ -47,7 +47,7 @@ quiz:
           explanation: "Incorrect. This prompt doesn't relate to financial data analysis."
         - content: "Analyze revenue and volume data. Calculate CAGR and YoY changes. Highlight trends and anomalies."
           isCorrect: true
-          explanation: ""
+          explanation: "Correct. This prompt is relevant to your needs and clearly written."
         - content: "Make my slides look pretty."
           isCorrect: false
           explanation: "Incorrect. Analyst focuses on data analysis, not design aesthetics."
@@ -60,8 +60,8 @@ quiz:
           isCorrect: false
           explanation: "Incorrect. Manual recreation is time-consuming and unnecessary."
         - content: "Use copy or download in Copilot to capture charts, then paste them into PowerPoint slides"
-          isCorrect: false
-          explanation: ""
+          isCorrect: true
+          explanation: "Correct. You can paste a downloaded or copied chart into PowerPoint from Copilot in Excel."
         - content: "Print charts and scan them"
           isCorrect: false
           explanation: "Incorrect. Scanning is inefficient and reduces image quality."
