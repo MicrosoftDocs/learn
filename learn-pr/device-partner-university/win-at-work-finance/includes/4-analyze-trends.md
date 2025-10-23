@@ -80,7 +80,7 @@ You're tasked with preparing a Q1 financial results presentation. Your goal is t
  
 2. Verify **chart titles, axis labels, and legends**. You can use prompts to further customize the charts. For example, "Make the bars in our graph purple."
 
-![A bar chart in Excel showing volume over three years illustrating with purple bars.](../media/volume.png)
+![A bar chart in Excel showing volume over three years illustrating with purple bars.](../media/purple.png)
 
 ## Step 5: Transfer graphs and insights to PowerPoint
 
