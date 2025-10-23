@@ -7180,8 +7180,24 @@ achievements:
   title: Manage services with the Azure portal
   summary: Explore the Azure portal features and services, and customize your portal.
   iconUrl: /training/achievements/tour-azure-portal-features.svg
+- uid: learn.shell.linux-command-line.trophy
+  type: trophy
+  title: Get started with the Linux command line and the Shell
+  summary: The command line is something you will interact with often when using Linux, both as a developer and admin. Knowing how it works and what commands you can use can greatly increase your productivity. In this learning path, you will get started with the Linux command line.
+  iconUrl: /training/achievements/shell-linux-command-line.svg
+- uid: learn.student-evangelism.unix-shell-wrangle-data.badge
+  type: badge
+  title: Use the UNIX shell to wrangle log data
+  summary: Learn how to use the UNIX shell to wrangle data and inspect data files.
+  iconUrl: /training/achievements/student-evangelism/unix-shell-wrangle-data.svg
+- uid: learn.student-evangelism.bash-introduction.badge
+  type: badge
+  title: Introduction to Bash
+  summary: Use Bash to manage IT infrastructure.
+  iconUrl: /training/achievements/student-evangelism/bash-introduction-badge.svg
 - uid: learn.azure.manage-deployments-advanced-arm-template-features.badge
   type: badge
   title: Manage complex cloud deployments by using advanced JSON ARM template features
   summary: This module teaches you how to use advanced features of JSON ARM templates to perform secrets management and conditional deployments.
   iconUrl: /training/achievements/manage-deployments-advanced-arm-template-features.svg
+
