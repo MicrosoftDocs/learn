@@ -7180,3 +7180,8 @@ achievements:
   title: Manage services with the Azure portal
   summary: Explore the Azure portal features and services, and customize your portal.
   iconUrl: /training/achievements/tour-azure-portal-features.svg
+- uid: learn.azure.manage-deployments-advanced-arm-template-features.badge
+  type: badge
+  title: Manage complex cloud deployments by using advanced JSON ARM template features
+  summary: This module teaches you how to use advanced features of JSON ARM templates to perform secrets management and conditional deployments.
+  iconUrl: /training/achievements/manage-deployments-advanced-arm-template-features.svg
