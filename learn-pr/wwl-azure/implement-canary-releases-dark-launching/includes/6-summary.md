@@ -1,6 +1,6 @@
 This module delivered comprehensive canary release implementation strategies, Azure Traffic Manager configuration for gradual traffic shifting, and dark launching methodologies for risk-mitigated progressive delivery.
 
-You explored advanced progressive deployment strategies including:\*\*
+**You explored advanced progressive deployment strategies including:**
 
 - **Progressive deployment strategies:** Incremental rollout patterns and risk-controlled deployment architectures
 - **Canary release implementation:** Gradual traffic migration with performance monitoring and controlled rollback capabilities
