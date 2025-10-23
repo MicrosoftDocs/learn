@@ -51,6 +51,5 @@ modules:
 - learn.intro-to-kubernetes
 - learn.intro-to-azure-kubernetes-service
 - learn.aks-deploy-container-app
-- learn.app-package-management-using-helm
 trophy:
   uid: learn.intro-to-kubernetes-on-azure.trophy
