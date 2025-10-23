@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.windows-at-work-finance.ai-features
+title: Other useful features for financial professionals
+metadata:
+  title: Other Useful Features for Financial Professionals
+  description: 'This content is part of the "Windows at work: Transforming finance teams with Windows 11 Pro" module.'
+  ms.date: 10/22/2025
+  author: Stephanie-Rosenzweig
+  ms.author: v-stephanier
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/5-ai-features.md)]
