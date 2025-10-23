@@ -18,7 +18,7 @@ Developers can choose from these different experiences to get started to build a
 
 | Feature    | Types  |
 |----------- |----------|
-| **Standalone experience** | The standalone experience supports three different ways of creating an agent: <br> **1. [NL2Agent](/copilot/security/developer/build-agent-natural-language)**: Build agents simply by describing what you want in natural language. <br> **2. [Create an agent from scratch using agent builder](/copilot/security/developer/create-agent-dev)**: Configure agents using the agent builder interface in the Security Copilot platform. <br> **3. [Upload YAML](/copilot/security/developer/build-agent-yaml-file)**: Build a YAML in your Integrated Development Environment (IDE) of choice and upload it to Security Copilot. |
+| **Standalone experience** | The standalone experience supports three different ways of creating an agent: <br> **1. [NL2Agent](/copilot/security/developer/build-agent-natural-language)**: Build agents simply by describing what you want in natural language. <br> **2. [Create an agent from scratch using the lite experience](/copilot/security/developer/create-agent-dev)**: Configure agents using the lite experience interface in the Security Copilot platform. <br> **3. [Upload YAML](/copilot/security/developer/build-agent-yaml-file)**: Build a YAML in your Integrated Development Environment (IDE) of choice and upload it to Security Copilot. |
 | **Model Context Protocol (MCP)** | **[MCP tools](/copilot/security/developer/mcp-overview)**: Create agents using natural language in an MCP compatible IDE using MCP tools. |
 
 The agent development process follows a structured workflow: **Build**, **Test**, and **Publish**. Regardless of which development method you choose, all approaches converge into a YAML manifest file that defines your agent's capabilities, tools, and behavior.
@@ -32,7 +32,7 @@ The Natural Language Agent Creation method allows you to build agents simply by 
 - No technical expertise required
 - Quick and intuitive agent creation
 - Guided experience with suggested prompts
-- Seamless transition to the agent builder for further customization
+- Seamless transition to the lite experience for further customization
 
 This method is perfect for security professionals who want to quickly prototype agents or those who prefer describing requirements in plain language rather than technical specifications.
 
@@ -54,9 +54,9 @@ This method is perfect for security professionals who want to quickly prototype 
 
 ---
 
-## Agent Builder interface
+## lite experience interface
 
-The Agent Builder provides a comprehensive form-based experience for creating agents from scratch using the Security Copilot platform's graphical interface.
+The lite experience provides a comprehensive form-based experience for creating agents from scratch using the Security Copilot platform's graphical interface.
 
 **Key capabilities:**
 
@@ -66,7 +66,7 @@ The Agent Builder provides a comprehensive form-based experience for creating ag
 - Comprehensive permission management
 - Support for multiple tool types (GPT, KQL, API, MCP, and AGENT tools)
 
-The Agent Builder is ideal for users who want granular control over their agent configuration while maintaining the convenience of a guided interface.
+The lite experience is ideal for users who want granular control over their agent configuration while maintaining the convenience of a guided interface.
 
 **What you do:**
 
@@ -78,22 +78,22 @@ The Agent Builder is ideal for users who want granular control over their agent 
 - Switch between form view and code view to see the generated YAML
 
 # [Start from scratch](#tab/start-from-scratch)
-:::image type="content" source="../media/agent-builder-start-from-scratch.png" lightbox="../media/agent-builder-start-from-scratch.png" alt-text="Screenshot of the option to upload a yaml manifest.":::
+:::image type="content" source="../media/lite-experience-start-from-scratch.png" lightbox="../media/lite-experience-start-from-scratch.png" alt-text="Screenshot of the option to upload a yaml manifest.":::
 
 # [Configure details](#tab/configure-details)
-:::image type="content" source="../media/agent-builder-overview.png" lightbox="../media/agent-builder-overview.png" alt-text="Screenshot of the agent details form in agent builder.":::
+:::image type="content" source="../media/lite-experience-overview.png" lightbox="../media/lite-experience-overview.png" alt-text="Screenshot of the agent details form in the lite experience.":::
 
 # [Tools-triggers-permissions](#tab/tools-triggers-permissions)
-:::image type="content" source="../media/agent-builder-tools-triggers-permissions.png" lightbox="../media/agent-builder-tools-triggers-permissions.png" alt-text="Screenshot showing the section in agent builder where you configured tools, triggers, and permissions.":::
+:::image type="content" source="../media/lite-experience-tools-triggers-permissions.png" lightbox="../media/lite-experience-tools-triggers-permissions.png" alt-text="Screenshot showing the section in the lite experience where you configured tools, triggers, and permissions.":::
 
 # [Agent code](#tab/builder-agent-code)
-:::image type="content" source="../media/agent-builder-view-code.png" lightbox="../media/agent-builder-view-code.png" alt-text="Screenshot the page of agent builder where you can view the code of the agent.":::
+:::image type="content" source="../media/lite-experience-view-code.png" lightbox="../media/lite-experience-view-code.png" alt-text="Screenshot of the page of the lite experience where you can view the code of the agent.":::
 
 ---
 
 ## YAML Upload method
 
-If you prefer not to use natural language prompts or the form-based Agent builder, you can define your agent by uploading a YAML manifest. This approach gives developers the flexibility to build the agent YAML in their development environment of choice. The YAML Upload method caters to developers who prefer working with code and want to define their agents programmatically using YAML manifest files.
+If you prefer not to use natural language prompts or the form-based lite experience, you can define your agent by uploading a YAML manifest. This approach gives developers the flexibility to build the agent YAML in their development environment of choice. The YAML Upload method caters to developers who prefer working with code and want to define their agents programmatically using YAML manifest files.
 
 **Key advantages:**
 
@@ -110,11 +110,11 @@ This approach is best suited for developers familiar with YAML syntax and those 
 - Create agent manifest files in your preferred Integrated Development Environment (IDE)
 - Define agent instructions, tools, triggers, and permissions in YAML format
 - Upload the completed YAML file to Security Copilot
-- Review and modify the agent configuration through the agent builder interface
+- Review and modify the agent configuration through the lite experience interface
 - Test and deploy your agent
 
 # [Upload YAML](#tab/upload-yaml)
-:::image type="content" source="../media/upload-yaml-manifest.png" lightbox="../media/upload-yaml-manifest.png" alt-text="Screenshot of the option to build your agent from scratch, which is done using agent builder.":::
+:::image type="content" source="../media/upload-yaml-manifest.png" lightbox="../media/upload-yaml-manifest.png" alt-text="Screenshot of the option to build your agent from scratch, which is done using the lite experience.":::
 
 # [Agent YAML](#tab/agent-yaml)
 :::image type="content" source="../media/build-agent-yaml-upload.png" lightbox="../media/build-agent-yaml-upload.png" alt-text="Screenshot of the code in the YAML manifest.":::
