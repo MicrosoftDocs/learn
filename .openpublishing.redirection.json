@@ -59368,6 +59368,321 @@
       "source_path": "learn-pr/azure/aks-app-package-management-using-helm/index.yml",
       "redirect_url": "https://learn.microsoft.com/azure/aks/quickstart-helm",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-templates-command-line-github-actions/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/templates/deploy-github-actions?tabs=openid",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-templates-command-line-github-actions/2-single-deployment.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/templates/deploy-github-actions?tabs=openid",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-templates-command-line-github-actions/3-exercise-single-deployment.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/templates/deploy-github-actions?tabs=openid",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-templates-command-line-github-actions/4-linked-templates.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/templates/deploy-github-actions?tabs=openid",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-templates-command-line-github-actions/5-exercise-linked-templates.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/templates/deploy-github-actions?tabs=openid",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-templates-command-line-github-actions/6-github-actions.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/templates/deploy-github-actions?tabs=openid",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-templates-command-line-github-actions/7-exercise-github-actions.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/templates/deploy-github-actions?tabs=openid",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-templates-command-line-github-actions/8-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/templates/deploy-github-actions?tabs=openid",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-templates-command-line-github-actions/9-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/templates/deploy-github-actions?tabs=openid",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-templates-command-line-github-actions/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/templates/deploy-github-actions?tabs=openid",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/introduction-sql-server-2022-t-sql-enhancements/1-introduction.yml",
+      "redirect_url": "/training/modules/introduction-sql-server-2022-t-sql-enhancements",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/introduction-sql-server-2022-t-sql-enhancements/2-resumable-constraints-and-wait-low-priority-index.yml",
+      "redirect_url": "/training/modules/introduction-sql-server-2022-t-sql-enhancements",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/introduction-sql-server-2022-t-sql-enhancements/3-select-window.yml",
+      "redirect_url": "/training/modules/introduction-sql-server-2022-t-sql-enhancements",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/introduction-sql-server-2022-t-sql-enhancements/4-is-not-distinct-from.yml",
+      "redirect_url": "/training/modules/introduction-sql-server-2022-t-sql-enhancements",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/introduction-sql-server-2022-t-sql-enhancements/5-time-and-series-functions.yml",
+      "redirect_url": "/training/modules/introduction-sql-server-2022-t-sql-enhancements",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/introduction-sql-server-2022-t-sql-enhancements/6-string-and-other-functions.yml",
+      "redirect_url": "/training/modules/introduction-sql-server-2022-t-sql-enhancements",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/introduction-sql-server-2022-t-sql-enhancements/7-process-json-data.yml",
+      "redirect_url": "/training/modules/introduction-sql-server-2022-t-sql-enhancements",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/introduction-sql-server-2022-t-sql-enhancements/8-aggregate-functions.yml",
+      "redirect_url": "/training/modules/introduction-sql-server-2022-t-sql-enhancements",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/introduction-sql-server-2022-t-sql-enhancements/9-bit-manipulation.yml",
+      "redirect_url": "/training/modules/introduction-sql-server-2022-t-sql-enhancements",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/introduction-sql-server-2022-t-sql-enhancements/10-summary.yml",
+      "redirect_url": "/training/modules/introduction-sql-server-2022-t-sql-enhancements",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/tour-azure-portal/index.md",
+      "redirect_url": "/azure/azure-portal/azure-portal-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/tour-azure-portal/1-introduction.md",
+      "redirect_url": "/azure/azure-portal/azure-portal-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/tour-azure-portal/2-azure-management.md",
+      "redirect_url": "/azure/azure-portal/azure-portal-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/tour-azure-portal/3-navigate-the-portal.md",
+      "redirect_url": "/azure/azure-portal/azure-portal-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/tour-azure-portal/4-exercise-work-with-blades.md",
+      "redirect_url": "/azure/azure-portal/azure-portal-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/tour-azure-portal/5-exercise-navigate-the-portal.md",
+      "redirect_url": "/azure/azure-portal/azure-portal-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/tour-azure-portal/6-customize-the-dashboard.md",
+      "redirect_url": "/azure/azure-portal/azure-portal-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/tour-azure-portal/7-exercise-customize-the-dashboard.md",
+      "redirect_url": "/azure/azure-portal/azure-portal-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/tour-azure-portal/8-preview-features.md",
+      "redirect_url": "/azure/azure-portal/azure-portal-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/tour-azure-portal/9-summary.md",
+      "redirect_url": "/azure/azure-portal/azure-portal-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/bash-introduction/0-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/bash-introduction/1-what-is-bash.yml",
+      "redirect_url": "https://learn.microsoft.com/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/bash-introduction/2-bash-fundamentals.yml",
+      "redirect_url": "https://learn.microsoft.com/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/bash-introduction/3-bash-commands.yml",
+      "redirect_url": "https://learn.microsoft.com/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/bash-introduction/4-exercise-try-bash.yml",
+      "redirect_url": "https://learn.microsoft.com/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/bash-introduction/5-exercise-terminate-process.yml",
+      "redirect_url": "https://learn.microsoft.com/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/bash-introduction/6-exercise-filter-cli-output.yml",
+      "redirect_url": "https://learn.microsoft.com/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/bash-introduction/7-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/bash-introduction/8-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/bash-introduction/index.yml",
+      "redirect_url": "https://learn.microsoft.com/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/unix-shell-wrangle-data/0-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/unix-shell-wrangle-data/1-file-inspection.yml",
+      "redirect_url": "https://learn.microsoft.com/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/unix-shell-wrangle-data/2-cat-tool.yml",
+      "redirect_url": "https://learn.microsoft.com/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/unix-shell-wrangle-data/3-regular-expressions.yml",
+      "redirect_url": "https://learn.microsoft.com/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/unix-shell-wrangle-data/4-grep-tool.yml",
+      "redirect_url": "https://learn.microsoft.com/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/unix-shell-wrangle-data/5-sed-and-regex.yml",
+      "redirect_url": "https://learn.microsoft.com/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/unix-shell-wrangle-data/6-pipes-and-filters.yml",
+      "redirect_url": "https://learn.microsoft.com/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/unix-shell-wrangle-data/7-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/unix-shell-wrangle-data/8-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/unix-shell-wrangle-data/index.yml",
+      "redirect_url": "https://learn.microsoft.com/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/shell/index.yml",
+      "redirect_url": "https://learn.microsoft.com/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-deployments-advanced-arm-template-features/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/templates/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-deployments-advanced-arm-template-features/2-dependencies.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/templates/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-deployments-advanced-arm-template-features/3-dependencies-exercise.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/templates/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-deployments-advanced-arm-template-features/4-secure-parameters.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/templates/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-deployments-advanced-arm-template-features/5-secure-parameters-exercise.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/templates/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-deployments-advanced-arm-template-features/6-conditions.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/templates/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-deployments-advanced-arm-template-features/7-conditions-exercise.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/templates/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-deployments-advanced-arm-template-features/8-copy.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/templates/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-deployments-advanced-arm-template-features/9-copy-exercise.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/templates/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-deployments-advanced-arm-template-features/10-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/templates/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-deployments-advanced-arm-template-features/11-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/templates/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-deployments-advanced-arm-template-features/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/templates/",
+      "redirect_document_id": false
     }
   ]
 }

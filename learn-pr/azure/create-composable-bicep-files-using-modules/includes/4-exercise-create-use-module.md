@@ -11,7 +11,14 @@ During the process, you'll:
 > - Deploy the template to Azure.
 > - Review the deployment history.
 
-[!INCLUDE [Install the Bicep extension for Visual Studio Code](../../includes/azure-template-bicep-exercise-vscode-extension.md)]
+[!INCLUDE[](../../../includes/azure-optional-exercise-subscription-note.md)]
+
+[!INCLUDE[](../../includes/azure-template-bicep-exercise-vscode-extension.md)]
+
+[!INCLUDE[](../../../includes/azure-optional-exercise-create-resource-group-note.md)]
+
+> [!NOTE]
+> Throughout this exercise, replace **myResourceGroupName** in the examples with the name of an existing resource group, or the name of the resource group that you created for this exercise.
 
 ## Create a blank Bicep file
 
@@ -46,8 +53,6 @@ Here, you add the _app_ module to your Bicep template as a starting point.
    :::code language="bicep" source="code/4-template-1.bicep" range="1-10" :::
 
    Because this is the template that you intend to deploy for your toy websites, it's a little more specific. The App Service plan name is defined as a variable. The SKU parameter has a default value that makes sense for the toy launch website.
-
-   [!INCLUDE [Sandbox location note](../../includes/azure-template-bicep-exercise-sandbox-location.md)]
 
 1. Below the parameters, create a blank line. Now, type the first line of the app module definition:
 
@@ -113,7 +118,7 @@ If it doesn't, either copy the example or adjust your template to match the exam
 
 ::: zone pivot="cli"
 
-[!INCLUDE [Bootstrapping instructions for first Bicep exercise - CLI](../../includes/azure-template-bicep-exercise-sandbox-deploy-cli.md)]
+[!INCLUDE[](../../includes/azure-template-bicep-exercise-nosandbox-deploy-cli.md)]
 
 ### Deploy the template to Azure
 
@@ -129,7 +134,7 @@ The status `Running...` appears in the terminal.
 
 ::: zone pivot="powershell"
 
-[!INCLUDE [Bootstrapping instructions for first Bicep exercise - PowerShell](../../includes/azure-template-bicep-exercise-sandbox-deploy-powershell.md)]
+[!INCLUDE[](../../includes/azure-template-bicep-exercise-nosandbox-deploy-powershell.md)]
 
 ### Deploy the template to Azure
 
@@ -143,14 +148,15 @@ New-AzResourceGroupDeployment -Name main -TemplateFile main.bicep
 
 ## Review the deployment history
 
-1. Go to the [Azure portal](https://portal.azure.com) and make sure you're in the sandbox subscription:
+1. Sign in to the [Azure portal](https://portal.azure.com) and make sure you're using the appropriate subscription:
 
    1. Select your avatar in the upper-right corner of the page.
-   1. Select **Switch directory**. In the list, choose the **Microsoft Learn Sandbox** directory.
+   1. Select **Switch directory**. In the list, choose the appropriate directory.
+
 
 1. On the left-side panel, select **Resource groups**.
 
-1. Select **<rgn>[sandbox resource group name]</rgn>**.
+1. Select **myResourceGroupName**.
 
 1. On the left menu, select **Deployments** under **Settings**.
 

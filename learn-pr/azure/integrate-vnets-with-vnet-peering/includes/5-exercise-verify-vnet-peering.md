@@ -2,6 +2,11 @@ In the previous unit, you configured peering connections between the virtual net
 
 :::image type="content" source="../media/5-hub-spoke-network.svg" alt-text="Diagram of a hub and spoke topology for virtual networks.":::
 
+[!INCLUDE[](../../../includes/azure-optional-exercise-subscription-note.md)]
+
+> [!NOTE]
+> Throughout this exercise, replace **myResourceGroupName** in the examples with the name of an existing resource group, or the name of the resource group that you created for this exercise.
+
 Remember, peering connections are nontransitive. Intermediate virtual networks don't allow connectivity to flow through them to connected virtual networks. **SalesVNet** can communicate with **MarketingVNet**. **ResearchVNet** can communicate with **MarketingVNet**. **MarketingVNet** can communicate with both **SalesVNet** and **ResearchVNet**. The only communication that isn't permitted is between **SalesVNet** and **ResearchVNet**. Even though **SalesVNet** and **ResearchVNet** are both connected to **MarketingVNet**, they can't communicate with each other because they're not directly peered to each other.
 
 Let's confirm the connectivity across the peering connections. First, you create a connection from Azure Cloud Shell to the *public* IP address of a target virtual machine (VM). Then you connect from the target VM to the destination VM by using the destination VM's *private* IP address.
@@ -15,7 +20,7 @@ Let's confirm the connectivity across the peering connections. First, you create
 
     ```azurecli
     az vm list \
-        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
+        --resource-group "myResourceGroupName" \
         --query "[*].{Name:name, PrivateIP:privateIps, PublicIP:publicIps}" \
         --show-details \
         --output table

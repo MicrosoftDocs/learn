@@ -1,5 +1,7 @@
 In this unit, you use Azure Cloud Shell to format your PowerShell output. Azure Cloud Shell is a shell that you can access through the Azure portal. You don't have to install anything on your PC or laptop to use it.
 
+[!INCLUDE[](../../../includes/azure-optional-exercise-subscription-note.md)]
+
 ## Compare formatting approaches
 
 Different output formats make sense for different scenarios. For example, depending on the type of data that you want to display, a table might make more sense than a list.

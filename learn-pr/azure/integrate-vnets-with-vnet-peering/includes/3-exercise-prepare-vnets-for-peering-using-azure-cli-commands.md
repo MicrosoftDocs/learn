@@ -14,13 +14,20 @@ You're going to create the following resources:
 | MarketingVNet | North Europe | 10.2.0.0/16 | Apps | 10.2.1.0/24 |
 | ResearchVNet | West Europe | 10.3.0.0/16 | Data | 10.3.1.0/24 |
 
+[!INCLUDE[](../../../includes/azure-optional-exercise-subscription-note.md)]
+
+[!INCLUDE[](../../../includes/azure-optional-exercise-create-resource-group-note.md)]
+
+> [!NOTE]
+> Throughout this exercise, replace **myResourceGroupName** in the examples with the name of an existing resource group, or the name of the resource group that you created for this exercise.
+
 ## Create the virtual networks
 
 1. In Cloud Shell, run the following command to create the virtual network and subnet for the **Sales** systems:
 
     ```azurecli
     az network vnet create \
-        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
+        --resource-group "myResourceGroupName" \
         --name SalesVNet \
         --address-prefixes 10.1.0.0/16 \
         --subnet-name Apps \
@@ -32,7 +39,7 @@ You're going to create the following resources:
 
     ```azurecli
     az network vnet create \
-        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
+        --resource-group "myResourceGroupName" \
         --name MarketingVNet \
         --address-prefixes 10.2.0.0/16 \
         --subnet-name Apps \
@@ -44,7 +51,7 @@ You're going to create the following resources:
 
     ```azurecli
     az network vnet create \
-        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
+        --resource-group "myResourceGroupName" \
         --name ResearchVNet \
         --address-prefixes 10.3.0.0/16 \
         --subnet-name Data \
@@ -80,7 +87,7 @@ Now, you deploy some Ubuntu virtual machines (VMs) in each of the virtual networ
 
     ```azurecli
     az vm create \
-        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
+        --resource-group "myResourceGroupName" \
         --no-wait \
         --name SalesVM \
         --location northeurope \
@@ -98,7 +105,7 @@ Now, you deploy some Ubuntu virtual machines (VMs) in each of the virtual networ
 
     ```azurecli
     az vm create \
-        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
+        --resource-group "myResourceGroupName" \
         --no-wait \
         --name MarketingVM \
         --location northeurope \
@@ -113,7 +120,7 @@ Now, you deploy some Ubuntu virtual machines (VMs) in each of the virtual networ
 
     ```azurecli
     az vm create \
-        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
+        --resource-group "myResourceGroupName" \
         --no-wait \
         --name ResearchVM \
         --location westeurope \
@@ -130,7 +137,7 @@ Now, you deploy some Ubuntu virtual machines (VMs) in each of the virtual networ
 
     ```bash
     watch -d -n 5 "az vm list \
-        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
+        --resource-group "myResourceGroupName" \
         --show-details \
         --query '[*].{Name:name, ProvisioningState:provisioningState, PowerState:powerState}' \
         --output table"

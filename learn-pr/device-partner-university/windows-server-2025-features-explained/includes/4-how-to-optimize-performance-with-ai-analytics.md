@@ -4,7 +4,7 @@ Organizations today run increasingly complex applications, from advanced analyti
 
 ## How to use GPU partitioning for AI and ML
 
-Windows Server 2025 introduces [GPU partitioning](/windows-server/virtualization/hyper-v/plan/gpu-partitioning), a feature that allows a single GPU to be divided into multiple virtual GPUs. This enables more efficient use of GPU resources for AI and machine learning workloads. IT teams can:  
+Windows Server 2025 introduces [GPU partitioning](/windows-server/virtualization/hyper-v/partition-assign-vm-gpu), a feature that allows a single GPU to be divided into multiple virtual GPUs. This enables more efficient use of GPU resources for AI and machine learning workloads. IT teams can:  
 
 - Allocate GPU resources to multiple virtual machines (VMs) simultaneously.  
 - Improve efficiency by ensuring workloads use only the GPU resources they need.  
