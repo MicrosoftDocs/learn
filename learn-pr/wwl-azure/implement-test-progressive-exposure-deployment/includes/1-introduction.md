@@ -1,6 +1,6 @@
 This module delivers comprehensive A/B testing implementation strategies, progressive exposure deployment patterns, and ring-based CI/CD architectures for data-driven feature validation and phased rollout orchestration.
 
-## Learning Objectives
+## Learning objectives
 
 By the end of this module, you'll be able to:
 

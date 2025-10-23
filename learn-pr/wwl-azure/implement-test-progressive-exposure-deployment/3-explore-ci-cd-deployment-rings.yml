@@ -3,7 +3,7 @@ uid: learn.wwl.implement-testing-progressive-exposure-deployment.explore-ci-cd-d
 title: Explore CI/CD with deployment rings
 metadata:
   title: Explore CI/CD with deployment rings
-  description: "Implement ring-based deployment architectures for progressive exposure, managing blast radius through staged rollouts across user cohorts with automated health validation"
+  description: "Implement ring-based deployment architectures for progressive exposure, managing blast radius through staged rollouts across user cohorts with automated health validation."
   ms.date: 10/23/2025
   author: LuizMacedo
   ms.author: lumac
