@@ -11,30 +11,30 @@ Effective permission derivation emerges from three primary authorization mechani
 Default security group provisioning establishes organizational and project-scope authorization hierarchies:
 
 - **Organization:**
-  - Project Collection Administrators
-  - Project Collection Build Administrators
-  - Project Collection Build Service Accounts
-  - Project Collection Proxy Service Accounts
-  - Project Collection Service Accounts
-  - Project Collection Test Service Accounts
-  - Project Collection Valid Users
-  - Project-Scoped Users
-  - Security Service Group
+  - Project Collection Administrators.
+  - Project Collection Build Administrators.
+  - Project Collection Build Service Accounts.
+  - Project Collection Proxy Service Accounts.
+  - Project Collection Service Accounts.
+  - Project Collection Test Service Accounts.
+  - Project Collection Valid Users.
+  - Project-Scoped Users.
+  - Security Service Group.
 - **Project:**
-  - Build Administrators
-  - Contributors
-  - Project Administrators
-  - Project Valid Users
-  - Readers
-  - Release Administrators
-  - <Project_Name> Team (where <Project_Name> designates the name of the project)
+  - Build Administrators.
+  - Contributors.
+  - Project Administrators.
+  - Project Valid Users.
+  - Readers.
+  - Release Administrators.
+  - <Project_Name> Team (where <Project_Name> designates the name of the project).
 
 Standard Azure DevOps user provisioning assigns Contributors security group membership with Basic access level allocation. Contributors group default permissions confer read and write capabilities across primary DevOps functional domains including repositories, work tracking, and pipeline management. Basic access licensing enables comprehensive feature availability across Azure Boards, Azure Repos, Azure Pipelines, and Azure Artifacts. Azure Test Plans management requires Basic + Test Plans access level elevation.
 
 Security group membership automatically establishes valid user group association:
 
-- **Project Collection Valid Users:** All organization-level group members
-- **Project Valid Users:** All project-level group members
+- **Project Collection Valid Users:** All organization-level group members.
+- **Project Valid Users:** All project-level group members.
 
 Valid user groups receive predominantly read-only default permissions encompassing View build resources, View project-level information, and View collection-level information capabilities.
 

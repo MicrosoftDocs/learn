@@ -4,7 +4,7 @@ title: Design and Implement Permissions and Security Groups in Azure DevOps
 metadata:
   title: Design and Implement Permissions and Security Groups in Azure DevOps
   description: "Design Azure DevOps access control implementing Microsoft Entra ID integration, group membership hierarchies, and permission inheritance patterns for least-privilege security"
-  ms.date: 10/06/2025
+  ms.date: 10/23/2025
   author: LuizMacedo
   ms.author: lumac
   ms.topic: unit

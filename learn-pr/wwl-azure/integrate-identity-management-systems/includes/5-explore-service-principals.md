@@ -14,10 +14,10 @@ Traditional Azure Pipelines and GitHub Actions Azure subscription access provisi
 
 Application registration within Microsoft Entra tenant infrastructure establishes identity configurations. Registration workflows determine application usage authorization scope:
 
-- Accounts in the same organizational directory
-- Accounts in any organizational directory
-- Accounts in any organizational directory and personal Microsoft accounts
-- Personal accounts only
+- Accounts in the same organizational directory.
+- Accounts in any organizational directory.
+- Accounts in any organizational directory and personal Microsoft accounts.
+- Personal accounts only.
 
   :::image type="content" source="../media/workload-identities-register-application-635f9d16.png" alt-text="Screenshot of register an application feature.":::
 
@@ -35,8 +35,8 @@ Application identities receive permission grants within Microsoft Entra ID-trust
 
 Resource access requires security principal representation. Connection establishment necessitates entity knowledge of:
 
-- **TenantID:** Microsoft Entra tenant identifier
-- **ApplicationID:** Application identifier (alternatively designated clientID)
-- **Client Secret:** Authentication credential
+- **TenantID:** Microsoft Entra tenant identifier.
+- **ApplicationID:** Application identifier (alternatively designated clientID).
+- **Client Secret:** Authentication credential.
 
 For more information on Service Principals, see [App Objects and Service Principals](/entra/identity-platform/app-objects-and-service-principals).

@@ -4,13 +4,13 @@ This module establishes comprehensive identity integration architectures for Dev
 
 After completing this module, you'll be able to:
 
-- Integrate Azure DevOps with Microsoft Entra ID identity management architectures
-- Implement GitHub single sign-on (SSO) and multi-factor authentication strategies
-- Design and provision service principals for workload identity scenarios
-- Configure managed identities for passwordless Azure resource authentication
+- Integrate Azure DevOps with Microsoft Entra ID identity management architectures.
+- Implement GitHub single sign-on (SSO) and multi-factor authentication strategies.
+- Design and provision service principals for workload identity scenarios.
+- Configure managed identities for passwordless Azure resource authentication.
 
 ## Prerequisites
 
-- Foundational understanding of DevOps principles and continuous delivery concepts
-- Familiarity with Azure Active Directory/Microsoft Entra ID identity fundamentals
-- Experience implementing authentication and authorization in enterprise environments
+- Foundational understanding of DevOps principles and continuous delivery concepts.
+- Familiarity with Azure Active Directory/Microsoft Entra ID identity fundamentals.
+- Experience implementing authentication and authorization in enterprise environments.
