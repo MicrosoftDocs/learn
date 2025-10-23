@@ -1,152 +1,131 @@
-Encryption used in Microsoft Azure includes encryption at rest, encryption in flight, and key management with Azure Key Vault.
+Transport Layer Security (TLS) is a cryptographic protocol designed to secure communications over networks by providing encryption, authentication, and data integrity. It works by establishing a secure handshake between a client and a server, negotiating cipher suites, and validating certificates issued by trusted Certificate Authorities. This process ensures that sensitive information, such as credentials and application data, is transmitted in an encrypted form, protecting it from interception or tampering during transit. TLS evolved through multiple versions, with TLS 1.2 and TLS 1.3 offering stronger encryption, faster handshakes, and enhanced privacy compared to earlier iterations.
 
-## Encryption of data at rest
+In the context of Azure, TLS plays a critical role in safeguarding data across services like App Service, API Management, Azure Storage, and SQL Database. Azure enforces TLS for all connections to ensure encryption in transit, mitigating risks such as man-in-the-middle attacks. Modern TLS versions (1.2 or higher) are required, Azure aligns with industry security standards and provides features like Perfect Forward Secrecy and authenticated encryption, which enhance resilience against evolving threats. Newer versions of TLS not only protect customer data but also ensures compliance with regulatory requirements, making TLS a foundational component of Azure’s security posture.
 
-Data at rest includes information that resides in persistent storage on physical media, in any digital format. The media can include files on magnetic or optical media, archived data, and data backups. Microsoft Azure offers a variety of data storage solutions to meet different needs, including file, disk, blob, and table storage. Microsoft also provides encryption to protect Azure SQL Database, Azure Cosmos DB, and Azure Data Lake.
+## What Transport Layer Security does for your applications
 
-Data encryption at rest is available for services across the software as a service (SaaS), platform as a service (PaaS), and infrastructure as a service (IaaS) cloud models.
+Transport Layer Security (TLS) encrypts data traveling between clients and servers, preventing eavesdropping and tampering. When a user connects to your web application or API, TLS creates an encrypted tunnel that protects sensitive information—like authentication tokens, personal data, and business transactions—from interception.
 
-## Azure encryption models
+Modern organizations rely on TLS to:
 
-Azure supports various encryption models, including server-side encryption that uses service-managed keys, customer-managed keys in Key Vault, or customer-managed keys on customer-controlled hardware. With client-side encryption, you can manage and store keys on-premises or in another secure location.
+- **Meet regulatory requirements**: Standards like PCI DSS, HIPAA, and other stadandars mandate encryption for data in transit.
+- **Build customer trust**: Browser security indicators and certificate warnings directly change user confidence.
+- **Prevent data breaches**: Unencrypted connections expose credentials, session tokens, and business data to network attackers.
 
-### Client-side encryption
+TLS replaces the deprecated Secure Sockets Layer (SSL) protocol. Always configure services to use TLS 1.2 or TLS 1.3—older versions contain known vulnerabilities.
 
-Client-side encryption is performed outside of Azure. It includes:
+## Why TLS matters in Azure
 
- -  Data encrypted by an application that’s running in the customer’s datacenter or by a service application.<br>
- -  Data that is already encrypted when it is received by Azure.
+Azure services handle millions of customer requests daily across global regions. TLS provides three critical protections:
 
-With client-side encryption, cloud service providers don’t have access to the encryption keys and cannot decrypt this data. You maintain complete control of the keys.
+- **Authentication**: Certificates prove your service identity, preventing man-in-the-middle attacks where attackers impersonate your endpoints.
+- **Confidentiality**: Encryption ensures only authorized parties can read transmitted data, even when traffic crosses untrusted networks.
+- **Integrity**: Cryptographic signatures detect any tampering with data during transmission.
 
-### Server-side encryption<br>
+Without TLS, an attacker on the same network as your users could capture sign in credentials, API keys, or customer records. Azure includes built-in TLS support across platform services, but you must configure minimum versions and certificate policies to align with your security requirements.
 
-The three server-side encryption models offer different key management characteristics, which you can choose according to your requirements:
+> [!IMPORTANT]
+> TLS only protects data in transit. You must separately encrypt data at rest using Azure Storage encryption, database transparent data encryption, or Azure Disk Encryption.
 
- -  Service-managed keys: Provides a combination of control and convenience with low overhead.<br>
- -  Customer-managed keys: Gives you control over the keys, including Bring Your Own Keys (BYOK) support, or allows you to generate new ones.<br>
- -  Service-managed keys in customer-controlled hardware: Enables you to manage keys in your proprietary repository, outside of Microsoft control. This characteristic is called Host Your Own Key (HYOK). However, configuration is complex, and most Azure services don’t support this model.<br>
+## Configure TLS for Azure App Service
 
-### Azure disk encryption<br>
+In your application code, you can access the public or private certificates that you add to Azure App Service. Your app code might act as a client and access an external service that requires certificate authentication. It might also need to perform cryptographic tasks.
 
-You can protect your managed disks by using Azure Disk Encryption for Linux VMs, which uses Device Mapper (DM)-Crypt, or Azure Disk Encryption for Windows VMs, which uses Windows BitLocker, to protect both operating system disks and data disks with full volume encryption.
+This approach to using certificates in your code makes use of the Transport Layer Security (TLS) functionality in App Service, which requires your app to be in the Basic tier or higher. If your app is in the Free or Shared tier, you can include the certificate file in your app repository.
 
-Encryption keys and secrets are safeguarded in your Azure Key Vault subscription. By using the Azure Backup service, you can back up and restore encrypted virtual machines (VMs) that use Key Encryption Key (KEK) configuration.
+When you let App Service manage your TLS/Secure Sockets Layer (SSL) certificates, you can maintain the certificates and your application code separately and safeguard your sensitive data.
 
-### Azure Storage Service Encryption<br>
+Azure App Service provides managed TLS termination with automatic certificate renewal. You control the minimum TLS version and can enforce HTTPS for all connections.
 
-Data at rest in Azure Blob storage and Azure file shares can be encrypted in both server-side and client-side scenarios.
+### Enforce minimum TLS version
 
-Azure Storage Service Encryption (SSE) can automatically encrypt data before it is stored, and it automatically decrypts the data when you retrieve it. The process is completely transparent to users. Storage Service Encryption uses 256-bit Advanced Encryption Standard (AES) encryption, which is one of the strongest block ciphers available. AES handles encryption, decryption, and key management transparently.
+1. In the Azure portal, navigate to your App Service resource.
+2. Under **Settings**, select **Configuration**.
+3. Select the **General settings** tab.
+4. Set **Minimum TLS version** to **1.2** or **1.3**.
+5. Select **Save** to apply the change.
 
-### Client-side encryption of Azure blobs<br>
+Clients attempting to connect with older TLS versions receive a connection error, preventing legacy systems from using weak cryptography.
 
-You can perform client-side encryption of Azure blobs in various ways.
+### Require HTTPS connections
 
-You can use the Azure Storage Client Library for .NET NuGet package to encrypt data within your client applications prior to uploading it to your Azure storage.
+1. In your App Service resource, select **Configuration** under **Settings**.
+2. Select the **General settings** tab.
+3. Set **HTTPS Only** to **On**.
+4. Select **Save**.
 
-When you use client-side encryption with Key Vault, your data is encrypted using a one-time symmetric Content Encryption Key (CEK) that is generated by the Azure Storage client SDK. The CEK is encrypted using a Key Encryption Key (KEK), which can be either a symmetric key or an asymmetric key pair. You can manage it locally or store it in Key Vault. The encrypted data is then uploaded to Azure Storage.
+Azure automatically redirects HTTP requests to HTTPS, ensuring all traffic uses encrypted connections. Encrypted connections eliminate mixed-content warnings in browsers and simplify compliance audits.
 
-Finally, you can also use the Azure Storage Client Library for Java to perform client-side encryption before you upload data to Azure Storage, and to decrypt the data when you download it to the client. This library also supports integration with Key Vault for storage account key management.
+### Add a custom domain certificate
 
-## Encryption of data at rest with Azure SQL Database
+App Service apps receive a free `*.azurewebsites.net` certificate. For production workloads using custom domains:
 
-Azure SQL Database is a general-purpose relational database service in Azure that supports structures such as relational data, JSON, spatial, and XML. SQL Database supports both server-side encryption via the Transparent Data Encryption (TDE) feature and client-side encryption via the Always Encrypted feature.
+1. Purchase or import a certificate that matches your domain name.
+2. In your App Service, select **Certificates** under **Settings**.
+3. Select **Add certificate** and follow the wizard to upload your certificate or create an App Service managed certificate.
+4. Bind the certificate to your custom domain under **Custom domains**.
 
-### Transparent Data Encryption<br>
+Managed certificates automatically renew before expiration. Private certificates require manual renewal and reupload.
 
-TDE is used to encrypt SQL Server, Azure SQL Database, and Azure Synapse Analytics data files in real time, using a Database Encryption Key (DEK), which is stored in the database boot record for availability during recovery.
+## Configure TLS for Azure API Management
 
-TDE protects data and log files, using AES and Triple Data Encryption Standard (3DES) encryption algorithms. Encryption of the database file is performed at the page level. The pages in an encrypted database are encrypted before they are written to disk and are decrypted when they’re read into memory. TDE is now enabled by default on newly created Azure SQL databases.
+Azure API Management sits between clients and backend APIs, handling authentication, rate limiting, and transformation. You configure TLS at both the gateway (client-facing) and backend (service-to-service) layers.
 
-### Always Encrypted feature<br>
+### Set minimum TLS version for the gateway
 
-With the Always Encrypted feature in Azure SQL you can encrypt data within client applications prior to storing it in Azure SQL Database. You can also enable delegation of on-premises database administration to third parties and maintain separation between those who own and can view the data and those who manage it but should not have access to it.
+1. In the Azure portal, open your API Management instance.
+2. Under **Security**, select **Protocols + ciphers**.
+3. Clear the checkboxes for **SSL 3.0**, **TLS 1.0**, and **TLS 1.1**.
+4. Ensure **TLS 1.2** is enabled (TLS 1.3 support depends on your service tier).
+5. Select **Save**.
 
-### Cell-level or column-level encryption<br>
+Preventing clients from negotiating weak protocol versions. Test with your API consumers before disabling TLS 1.1 if you support older mobile apps or legacy systems.
 
-With Azure SQL Database, you can apply symmetric encryption to a column of data by using Transact-SQL. This approach is called cell-level encryption or column-level encryption (CLE), because you can use it to encrypt specific columns or even specific cells of data with different encryption keys. Doing so gives you more granular encryption capability than TDE, which encrypts data in pages.
+### Enforce HTTPS for API endpoints
 
-CLE has built-in functions that you can use to encrypt data by using either symmetric or asymmetric keys, the public key of a certificate, or a passphrase using 3DES.
+1. Navigate to **APIs** in your API Management instance.
+2. Select the API you want to secure.
+3. Under **Settings**, locate the **URL scheme** option.
+4. Select **HTTPS only**.
+5. Select **Save**.
 
-## Azure Cosmos DB database encryption
+API Management rejects HTTP requests with a 403 Forbidden response, protecting against accidental exposure of unencrypted endpoints.
 
-Azure Cosmos DB is Microsoft's globally distributed, multi-model database. User data that's stored in Azure Cosmos DB in non-volatile storage (solid-state drives) is encrypted by default. There are no controls to turn it on or off. Encryption at rest is implemented by using a number of security technologies, including secure key storage systems, encrypted networks, and cryptographic APIs. Encryption keys are managed by Microsoft and are rotated per Microsoft internal guidelines. Optionally, you can choose to add a second layer of encryption with keys you manage to use the customer-managed keys or CMK feature.
+### Configure backend TLS validation
 
-### At-rest encryption in Data Lake<br>
+When API Management calls backend services, verify those connections also use TLS:
 
-Azure Data Lake is an enterprise-wide repository of every type of data collected in a single place prior to any formal definition of requirements or schema. Data Lake Store supports **on by default**, transparent encryption of data at rest, which is set up during the creation of your account. By default, Azure Data Lake Store manages the keys for you, but you have the option to manage them yourself.
+1. In your API, select **Design** and choose an operation.
+2. In the **Backend** section, select the pencil icon to edit.
+3. Enable **Validate certificate chain** and **Validate certificate name**.
+4. Upload trusted root certificates if your backend uses private or self-signed certificates.
 
-Three types of keys are used in encrypting and decrypting data: the Master Encryption Key (MEK), Data Encryption Key (DEK), and Block Encryption Key (BEK). The MEK is used to encrypt the DEK, which is stored on persistent media, and the BEK is derived from the DEK and the data block. If you are managing your own keys, you can rotate the MEK.
+Verify backed connections to prevent API Management from accepting invalid or expired certificates from backend services, maintaining end-to-end encryption.
 
-## Encryption of data in transit<br>
+> [!TIP]
+> Use Azure Key Vault to store and rotate certificates for both App Service and API Management. You build centralized certificate lifecycle management and simplify compliance reporting.
 
-Azure offers many mechanisms for keeping data private as it moves from one location to another.
+## Plan your TLS configuration
 
-### Data-link Layer encryption in Azure<br>
+Before deploying TLS changes to production:
 
-Whenever Azure Customer traffic moves between datacenters-- outside physical boundaries not controlled by Microsoft (or on behalf of Microsoft)-- a data-link layer encryption method using the IEEE 802.1AE MAC Security Standards (also known as MACsec) is applied from point-to-point across the underlying network hardware. The packets are encrypted on the devices before being sent, preventing physical “man-in-the-middle” or snooping/wiretapping attacks. Because this technology is integrated on the network hardware itself, it provides line rate encryption on the network hardware with no measurable link latency increase. This MACsec encryption is on by default for all Azure traffic traveling within a region or between regions, and no action is required on customers’ part to enable.
+- **Audit existing clients**: Identify any systems using TLS 1.0 or 1.1 and plan their upgrades.
+- **Test certificate renewals**: Verify automated renewal works for managed certificates and document manual renewal procedures for private certificates.
+- **Configure monitoring**: Set up Azure Monitor alerts for TLS handshake failures and certificate expiration warnings.
+- **Document compliance mappings**: Record which TLS settings satisfy specific regulatory requirements for audit trails.
 
-### TLS encryption in Azure<br>
+Disabling older TLS versions can break compatibility with legacy clients. Coordinate with application owners and plan a phased rollout with clear communication to API consumers.
 
-Microsoft gives customers the ability to use Transport Layer Security (TLS) protocol to protect data when it’s traveling between the cloud services and customers. Microsoft datacenters negotiate a TLS connection with client systems that connect to Azure services. TLS provides strong authentication, message privacy, and integrity (enabling detection of message tampering, interception, and forgery), interoperability, algorithm flexibility, and ease of deployment and use.
+## Key Takeaways
 
-Perfect Forward Secrecy (PFS) protects connections between customers’ client systems and Microsoft cloud services by unique keys. Connections also use RSA-based 2,048-bit encryption key lengths. This combination makes it difficult for someone to intercept and access data that is in transit.
+- Configure minimum TLS version to 1.2 or higher on all Azure services to prevent weak cryptography vulnerabilities.
+- Enforce HTTPS-only connections on App Service and API Management to eliminate unencrypted traffic.
+- Enable backend certificate validation in API Management to maintain end-to-end encryption across service boundaries.
+- Use Azure Key Vault for centralized certificate management and automated renewal workflows.
+- Test TLS configuration changes in staging environments before production rollout to identify client compatibility issues.
 
-### Azure Storage transactions<br>
+### Recommended Next Steps
 
-When you interact with Azure Storage through the Azure portal, all transactions take place over HTTPS. You can also use the Storage REST API over HTTPS to interact with Azure Storage. You can enforce the use of HTTPS when you call the REST APIs to access objects in storage accounts by enabling the secure transfer that's required for the storage account.
-
-Shared Access Signatures (SAS), which can be used to delegate access to Azure Storage objects, include an option to specify that only the HTTPS protocol can be used when you use Shared Access Signatures. This approach ensures that anybody who sends links with SAS tokens uses the proper protocol.
-
-SMB 3.0, which used to access Azure Files shares, supports encryption, and it's available in Windows Server 2012 R2, Windows 8, Windows 8.1, and Windows 10. It allows cross-region access and even access on the desktop.
-
-Client-side encryption encrypts the data before it’s sent to your Azure Storage instance, so that it’s encrypted as it travels across the network.
-
-### Server Message Block (SMB) encryption over Azure virtual networks<br>
-
-By using SMB 3.0 in VMs that are running Windows Server 2012 or later, you can make data transfers secure by encrypting data in transit over Azure Virtual Networks. By encrypting data, you help protect against tampering and eavesdropping attacks. Administrators can enable SMB encryption for the entire server, or just specific shares.
-
-By default, after SMB encryption is turned on for a share or server, only SMB 3.0 clients are allowed to access the encrypted shares.
-
-### In-transit encryption in VMs<br>
-
-Data in transit to, from, and between VMs that are running Windows can be encrypted in a number of ways, depending on the nature of the connection.
-
-### Remote Desktop Protocol (RDP) sessions<br>
-
-You can connect and sign in to a VM by using the Remote Desktop Protocol (RDP) from a Windows client computer, or from a Mac with an RDP client installed. Data in transit over the network in RDP sessions can be protected by TLS.
-
-You can also use Remote Desktop to connect to a Linux VM in Azure.
-
-**Secure access to Linux VMs with SSH**
-
-For remote management, you can use Secure Shell (SSH) to connect to Linux VMs running in Azure. SSH is an encrypted connection protocol that allows secure sign-ins over unsecured connections. It is the default connection protocol for Linux VMs hosted in Azure. By using SSH keys for authentication, you eliminate the need for passwords to sign in. SSH uses a public/private key pair (asymmetric encryption) for authentication.
-
-## Azure VPN gateways
-
-You can use an Azure VPN gateway to send encrypted traffic between your virtual network and your on-premises location across a public connection, or to send traffic between virtual networks.
-
-Site-to-site VPNs use IPsec for transport encryption. Azure VPN gateways use a set of default proposals. You can configure Azure VPN gateways to use a custom IPsec/IKE policy with specific cryptographic algorithms and key strengths, rather than the Azure default policy sets.
-
-### Point-to-site VPNs
-
-Point-to-site VPNs allow individual client computers access to an Azure virtual network. The Secure Socket Tunneling Protocol (SSTP) is used to create the VPN tunnel. It can traverse firewalls (the tunnel appears as an HTTPS connection). You can use your own internal public key infrastructure (PKI) root certificate authority (CA) for point-to-site connectivity.
-
-You can configure a point-to-site VPN connection to a virtual network by using the Azure portal with certificate authentication or PowerShell.
-
-### Site-to-site VPNs<br>
-
-You can use a site-to-site VPN gateway connection to connect your on-premises network to an Azure virtual network over an Internet Protocol Security (IPSec)/Internet Key Exchange (IKEv1 or IKEv2) VPN tunnel. This type of connection requires an on-premises VPN device that has an external-facing public IP address assigned to it.
-
-You can configure a site-to-site VPN connection to a virtual network by using the Azure portal, PowerShell, or Azure CLI.
-
-### In-transit encryption in Data Lake
-
-Data in transit (also known as data in motion) is also always encrypted in Data Lake Store. In addition to encrypting data prior to storing it in persistent media, the data is also always secured in transit by using HTTPS. HTTPS is the only protocol that is supported for the Data Lake Store Representational State Transfer (REST) interfaces.
-
-### Key management with Key Vault
-
-Without proper protection and management of the keys, encryption is rendered useless. Key Vault is the Microsoft-recommended solution for managing and controlling access to encryption keys used by cloud services. Permissions to access keys can be assigned to services or to users through Microsoft Entra accounts.
-
-Key Vault relieves organizations of the need to configure, patch, and maintain hardware security modules (HSMs) and key management software. When you use Key Vault, you maintain control. Microsoft never sees your keys, and applications don’t have direct access to them. You can also import or generate keys in HSMs.
+- Audit your existing Azure App Service and API Management instances to identify services still allowing TLS 1.0 or 1.1.
+- Create an Azure Key Vault and migrate certificate storage from manual uploads to centralized vault-based management.
+- Configure Azure Monitor alerts for certificate expiration (30 days before expiry) and TLS handshake failures to prevent service disruptions.
