@@ -4,14 +4,14 @@ This module establishes comprehensive application configuration management strat
 
 After completing this module, you'll be able to:
 
-- Design externalized configuration architectures implementing separation of concerns principles
-- Implement Azure App Configuration with key-value pair management strategies
-- Integrate Azure Key Vault with Azure Pipelines for secure secret management
-- Configure feature flags and dynamic configuration patterns
-- Manage secrets, tokens, and certificates following DevOps security best practices
+- Design externalized configuration architectures implementing separation of concerns principles.
+- Implement Azure App Configuration with key-value pair management strategies.
+- Integrate Azure Key Vault with Azure Pipelines for secure secret management.
+- Configure feature flags and dynamic configuration patterns.
+- Manage secrets, tokens, and certificates following DevOps security best practices.
 
 ## Prerequisites
 
-- Foundational understanding of DevOps principles and continuous delivery concepts
-- Familiarity with Azure services and cloud-native application architectures
-- Experience with application deployment and configuration management practices
+- Foundational understanding of DevOps principles and continuous delivery concepts.
+- Familiarity with Azure services and cloud-native application architectures.
+- Experience with application deployment and configuration management practices.

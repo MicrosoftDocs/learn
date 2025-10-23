@@ -1,9 +1,9 @@
 Applications maintain sensitive credential collections including:
 
-- Connection strings
-- Passwords
-- Certificates
-- Tokens presenting severe security breach risks through unauthorized disclosure
+- Connection strings.
+- Passwords.
+- Certificates.
+- Tokens presenting severe security breach risks through unauthorized disclosure.
 
 Credential compromise results in organizational reputation damage and regulatory compliance violations across governing bodies.
 

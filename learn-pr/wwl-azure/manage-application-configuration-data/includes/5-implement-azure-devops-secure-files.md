@@ -8,18 +8,18 @@ Secure file implementation encompasses sensitive file upload to Azure DevOps fol
 
 **Secure file upload workflow:**
 
-1.  Navigate to Azure DevOps project within web portal interface
-2.  Select Pipelines or Releases tab aligned with intended secure file utilization context
-3.  Access Library from left-side navigational menu
-4.  Select Secure files followed by + Secure file initiating upload workflow
-5.  Select target file and assign descriptive identifier
+1.  Navigate to Azure DevOps project within web portal interface.
+2.  Select Pipelines or Releases tab aligned with intended secure file utilization context.
+3.  Access Library from left-side navigational menu.
+4.  Select Secure files followed by + Secure file initiating upload workflow.
+5.  Select target file and assign descriptive identifier.
 
 **Pipeline permission grant workflow:**
 
-1.  Select newly provisioned secure file
-2.  Navigate Pipeline permissions from secure file properties toolbar
-3.  Select Add pipeline (+) button within Configure secure file pane
-4.  Select authorized pipeline(s) from current project pipeline inventory granting secure file access
+1.  Select newly provisioned secure file.
+2.  Navigate Pipeline permissions from secure file properties toolbar.
+3.  Select Add pipeline (+) button within Configure secure file pane.
+4.  Select authorized pipeline(s) from current project pipeline inventory granting secure file access.
 
 **YAML pipeline secure file reference implementation:**
 

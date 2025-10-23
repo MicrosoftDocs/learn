@@ -28,9 +28,9 @@ Configuration data key naming strategies encompass flat and hierarchical approac
 
 Application usage perspectives demonstrate functional equivalence, while hierarchical naming confers operational advantages:
 
-- **Enhanced readability:** Delimiter-based hierarchical structure replaces monolithic character sequences with semantic segmentation improving human comprehension
-- **Simplified management:** Hierarchical key nomenclature represents logical configuration data groupings facilitating organizational workflows
-- **Optimized query operations:** Pattern-matching query construction targeting hierarchical structures enables selective configuration data retrieval
+- **Enhanced readability:** Delimiter-based hierarchical structure replaces monolithic character sequences with semantic segmentation improving human comprehension.
+- **Simplified management:** Hierarchical key nomenclature represents logical configuration data groupings facilitating organizational workflows.
+- **Optimized query operations:** Pattern-matching query construction targeting hierarchical structures enables selective configuration data retrieval.
 
 **Hierarchical key structure examples:**
 

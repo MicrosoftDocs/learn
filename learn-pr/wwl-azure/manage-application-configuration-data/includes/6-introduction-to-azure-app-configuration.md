@@ -10,21 +10,21 @@ Azure App Configuration service provides unified storage infrastructure for appl
 
 **Azure App Configuration service capabilities:**
 
-- Fully managed service supporting rapid provisioning within minutes
-- Flexible key representation and mapping strategies
-- Label-based configuration tagging for environment differentiation
-- Point-in-time configuration replay supporting historical state restoration
-- Dedicated user interface for feature flag administration
-- Configuration comparison across custom-defined dimensions
-- Enhanced security through Azure managed identity integration
-- Comprehensive data encryption for data at rest and in transit
-- Native integration with popular application frameworks
+- Fully managed service supporting rapid provisioning within minutes.
+- Flexible key representation and mapping strategies.
+- Label-based configuration tagging for environment differentiation.
+- Point-in-time configuration replay supporting historical state restoration.
+- Dedicated user interface for feature flag administration.
+- Configuration comparison across custom-defined dimensions.
+- Enhanced security through Azure managed identity integration.
+- Comprehensive data encryption for data at rest and in transit.
+- Native integration with popular application frameworks.
 
 App Configuration complements Azure Key Vault for application secret storage, enabling distinct configuration and secret management architectures. App Configuration facilitates implementation of:
 
-- Centralized hierarchical configuration management and distribution across multi-environment and multi-geography deployments
-- Dynamic application setting modification without application redeployment or restart operations
-- Real-time feature availability control supporting progressive rollout strategies
+- Centralized hierarchical configuration management and distribution across multi-environment and multi-geography deployments.
+- Dynamic application setting modification without application redeployment or restart operations.
+- Real-time feature availability control supporting progressive rollout strategies.
 
 ## Use App Configuration
 
