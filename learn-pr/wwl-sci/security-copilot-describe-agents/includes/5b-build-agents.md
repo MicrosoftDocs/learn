@@ -54,7 +54,7 @@ This method is perfect for security professionals who want to quickly prototype 
 
 ---
 
-## lite experience interface
+## Lite experience interface
 
 The lite experience provides a comprehensive form-based experience for creating agents from scratch using the Security Copilot platform's graphical interface.
 
