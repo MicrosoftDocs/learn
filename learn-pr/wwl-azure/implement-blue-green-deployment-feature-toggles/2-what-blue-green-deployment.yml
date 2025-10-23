@@ -2,7 +2,7 @@
 uid: learn.wwl.implement-blue-green-deployment-feature-toggles.what-blue-green-deployment
 title: What is blue-green deployment?
 metadata:
-  title: What is blue-green deployment?
+  title: What Is Blue-Green Deployment?
   description: "Learn blue-green deployment architecture, zero-downtime release strategies, and instant rollback capabilities."
   ms.date: 10/23/2025
   author: LuizMacedo

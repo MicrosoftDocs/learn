@@ -2,7 +2,7 @@
 uid: learn.wwl.implement-blue-green-deployment-feature-toggles.knowledge-check
 title: Module assessment
 metadata:
-  title: Module assessment
+  title: Module Assessment
   description: "Validate understanding of blue-green deployments, deployment slots, and feature toggle implementations."
   ms.date: 10/23/2025
   author: LuizMacedo

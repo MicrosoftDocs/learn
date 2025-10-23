@@ -2,7 +2,7 @@
 uid: learn.wwl.implement-blue-green-deployment-feature-toggles.explore-deployment-slots
 title: Explore deployment slots
 metadata:
-  title: Explore deployment slots
+  title: Explore Deployment Slots
   description: "Configure Azure App Service deployment slots for staging environments, swap operations, and zero-downtime deployments."
   ms.date: 10/23/2025
   author: LuizMacedo

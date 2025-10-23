@@ -2,7 +2,7 @@
 uid: learn.wwl.implement-blue-green-deployment-feature-toggles.introduction-feature-toggles
 title: Introduction to feature toggles
 metadata:
-  title: Introduction to feature toggles
+  title: Introduction to Feature Toggles
   description: "Implement feature toggle systems for dynamic feature control, progressive rollouts, and A/B testing strategies."
   ms.date: 10/23/2025
   author: LuizMacedo
