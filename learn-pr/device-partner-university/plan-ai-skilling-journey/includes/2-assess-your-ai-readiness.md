@@ -2,7 +2,7 @@ Before building any training, take a clear-eyed look at your starting point. Ass
 
 Start by mapping your team's existing comfort with AI. Who already experiments with it in daily tasks? Who's hesitant or skeptical? These insights help you focus your efforts and tailor communication to different levels of confidence.
 
-Equally important is your organization's *attitude* toward learning. People need space — and permission — to explore AI without fear of mistakes. Encourage leaders to model curiosity, schedule time for experimentation, and celebrate early attempts, even when they're imperfect. This builds trust and lowers barriers to engagement.
+Equally important is your organization's *attitude* toward learning. People need space—and permission—to explore AI without fear of mistakes. Encourage leaders to model curiosity, schedule time for experimentation, and celebrate early attempts, even when they're imperfect. This builds trust and lowers barriers to engagement.
 
 ## Stages of AI capability
 
@@ -16,21 +16,21 @@ Organizations typically progress through several stages as they build AI capabil
 
 ## Gauge your organization's AI starting point
 
-Before you can plan an AI skilling journey, it helps to understand where your organization stands today. Use the brief self-assessment below to take stock of your current level of AI readiness. You don't need to score or share it formally—this is simply a quick way to identify strengths and opportunities.
+Before you can plan an AI skilling journey, it helps to understand where your organization stands today. Use the brief self-assessment to take stock of your current level of AI readiness. You don't need to score or share it formally—this is simply a quick way to identify strengths and opportunities.
 
 ### Answer the questions
 
 For each statement, answer **Yes** or **No**. Think about your organization as a whole, not your individual experience.
 
-- **Strategy:** Leadership has defined clear goals for using AI.
+- **Strategy:** Leadership has clear goals for using AI.
 - **Leadership example:** Managers or executives model curiosity and experimentation with AI tools.
 - **Culture:** Employees are encouraged to learn and try AI without fear of mistakes.
-- **Skills:** Most employees understand the basics of what AI can and cannot do.
+- **Skills:** Most employees understand the basics of what AI can and can't do.
 - **Training:** Learning resources for AI are available and promoted internally.
 - **Governance:** Guidelines or policies exist that explain how to use AI responsibly.
 - **Feedback:** Training programs are reviewed and updated regularly to reflect new technologies.
 
-## Interpret your results
+### Interpret your results
 
 If you answered "Yes" to six or seven questions, your organization is in the **Optimize** stage. AI learning is already embedded in your strategy, and the focus now should be on refining your approach, scaling successful practices, and keeping training current.
 

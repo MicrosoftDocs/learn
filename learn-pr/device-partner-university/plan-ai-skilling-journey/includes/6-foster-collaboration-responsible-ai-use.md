@@ -1,4 +1,4 @@
-True AI maturity isn't just technical—it's cultural. To sustain engagement, make AI learning both social and ethical. How you encourage collaboration and responsibility will depend on your organization's readiness level:
+True AI maturity isn't just technical—it's cultural. To sustain engagement, make AI learning both social and ethical. How you encourage collaboration and responsibility depends on your organization's readiness level:
 
 | **Readiness level** | **Recommended approach** | **Example actions** |
 | :--- | :--- | :--- |
