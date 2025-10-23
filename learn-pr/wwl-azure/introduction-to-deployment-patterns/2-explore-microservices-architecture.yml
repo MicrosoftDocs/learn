@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.introduction-to-deployment-patterns.explore-microservices-architecture
-title: Explore Microservices Architecture
+title: Explore microservices architecture
 metadata:
-  title: Explore Microservices Architecture
-  description: "Learn microservices architecture principles, distributed system design patterns, and service decomposition strategies"
+  title: Explore microservices architecture
+  description: Learn microservices architecture principles, distributed system design patterns, and service decomposition strategies.
   ms.date: 10/06/2025
   author: LuizMacedo
   ms.author: lumac

@@ -1,8 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.introduction-to-deployment-patterns
 metadata:
-  title: Introduction to Deployment Patterns
-  description: "Explore deployment pattern architectures including microservices frameworks, classical deployment methodologies, and modern continuous delivery strategies for optimized software release cycles"
+  title: Introduction to deployment patterns
+  description: Explore deployment pattern architectures including microservices frameworks, classical deployment methodologies, and modern continuous delivery strategies for optimized software release cycles.
   ms.date: 10/06/2025
   author: LuizMacedo
   ms.author: lumac
@@ -11,7 +11,7 @@ metadata:
     - N/A
   ms.service: azure
   ai-usage: ai-assisted
-title: Introduction to Deployment Patterns
+title: Introduction to deployment patterns
 summary: This module delivers comprehensive deployment pattern analysis through microservices architecture exploration, classical deployment methodology examination, and modern continuous delivery strategy implementation for optimized release cycle management.
 abstract: |
   By the end of this module, you'll be able to:

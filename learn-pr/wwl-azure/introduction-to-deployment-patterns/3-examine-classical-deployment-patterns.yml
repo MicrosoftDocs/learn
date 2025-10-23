@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.introduction-to-deployment-patterns.examine-classical-deployment-patterns
-title: Examine Classical Deployment Patterns
+title: Examine classical deployment patterns
 metadata:
-  title: Examine Classical Deployment Patterns
-  description: "Analyze traditional deployment methodologies including blue-green deployments, canary releases, and rolling update strategies"
+  title: Examine classical deployment patterns
+  description: Analyze traditional deployment methodologies including blue-green deployments, canary releases, and rolling update strategies.
   ms.date: 10/06/2025
   author: LuizMacedo
   ms.author: lumac

@@ -17,7 +17,7 @@ Modern deployment pattern examples include:
 - **Progressive exposure (ring-based deployment):** Phased rollout through user cohorts.
 - **Feature toggles:** Runtime feature control for dynamic availability management.
 
-## Architecture Readiness Assessment
+## Architecture readiness assessment
 
 Continuous Delivery implementation requires comprehensive architectural evaluation to identify readiness gaps and optimization opportunities.
 

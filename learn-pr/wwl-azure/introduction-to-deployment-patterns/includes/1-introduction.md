@@ -10,17 +10,17 @@ Deployment constitutes a single component within comprehensive Continuous Delive
 
 Critical prerequisite categories include:
 
-## Testing Strategy Frameworks
+## Testing strategy frameworks
 
 Comprehensive test automation infrastructure eliminates manual validation bottlenecks that constrain on-demand delivery capabilities. Automated testing ecosystems enable rapid validation cycles essential for continuous deployment workflows.
 
-## Code Quality Standards
+## Code quality standards
 
 Maintainable, secure codebases enable sustainable high-frequency release cadences. Technical debt accumulation introduces complexity that constrains rapid, reliable code modification capabilities.
 
 Quality-focused development practices and comprehensive test coverage constitute essential Continuous Delivery foundations.
 
-## Architectural Patterns
+## Architectural patterns
 
 Application architecture significantly influences Continuous Delivery implementation success, particularly for complex enterprise systems.
 
@@ -42,7 +42,7 @@ Multi-provider Git integration and extensive cloud platform compatibility enable
 
 This module explores deployment pattern architectures, microservices design principles, and continuous delivery implementation strategies essential for modern software delivery excellence.
 
-## Learning Objectives
+## Learning objectives
 
 By the end of this module, you'll be able to:
 

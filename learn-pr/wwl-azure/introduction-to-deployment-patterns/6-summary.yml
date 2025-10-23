@@ -3,7 +3,7 @@ uid: learn.wwl.introduction-to-deployment-patterns.summary
 title: Summary
 metadata:
   title: Summary
-  description: "Review deployment pattern architectures, microservices principles, and modern release strategy implementations"
+  description: Review deployment pattern architectures, microservices principles, and modern release strategy implementations.
   ms.date: 10/06/2025
   author: LuizMacedo
   ms.author: lumac
