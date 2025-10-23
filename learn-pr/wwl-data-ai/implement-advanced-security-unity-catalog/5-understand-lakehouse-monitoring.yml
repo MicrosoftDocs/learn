@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-advanced-security-unity-catalog.understand-lakehouse-monitoring
+title: 'Understand Lakehouse Monitoring'
+metadata:
+  title: 'Understand Lakehouse Monitoring'
+  description: "Understand Lakehouse Monitoring"
+  ms.date: 10/03/2025
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/5-understand-lakehouse-monitoring.md)]
