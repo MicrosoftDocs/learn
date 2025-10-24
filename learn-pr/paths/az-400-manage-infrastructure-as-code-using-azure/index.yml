@@ -12,7 +12,7 @@ prerequisites: |
   None
 summary: |
   This learning path explores Infrastructure as Code (IaC) principles and best practices for managing Azure infrastructure using declarative approaches.
-  iconUrl: /learn/achievements/az-400-manage-infrastructure-as-code-using-azure.svg
+iconUrl: /learn/achievements/az-400-manage-infrastructure-as-code-using-azure.svg
 levels:
   - advanced
 roles:
