@@ -13,4 +13,4 @@ Hardware Security Modules (HSMs) provide enhanced protection for secrets and key
 
 Key Vault capabilities include secret versioning, comprehensive traceability, and efficient permission management through access policy configurations.
 
-Azure Key Vault comprehensive documentation: [What is Azure Key Vault](/azure/key-vault/key-vault-overview).
+Azure Key Vault comprehensive documentation: [What is Azure Key Vault?](/azure/key-vault/key-vault-overview).

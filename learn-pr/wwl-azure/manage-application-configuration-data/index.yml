@@ -3,13 +3,13 @@ uid: learn.wwl.manage-application-configuration-data
 metadata:
   title: Manage Application Configuration Data
   description: "Learn externalized configuration patterns, Azure App Configuration implementation, Key Vault integration, and feature flag management for secure, dynamic application settings"
-  ms.date: 10/23/2025
+  ms.date: 10/24/2025
   author: LuizMacedo
   ms.author: lumac
   ms.topic: module
   ai-usage: ai-assisted
   ms.service: azure-devops-pipelines
-title: Manage Application Configuration Data
+title: Manage application configuration data
 summary: This module delivers comprehensive configuration management strategies encompassing externalized configuration patterns, separation of concerns architectures, Azure App Configuration implementation, Key Vault secret management integration, and dynamic feature flag orchestration for secure, maintainable application settings.
 abstract: |
   By the end of this module, you'll be able to:

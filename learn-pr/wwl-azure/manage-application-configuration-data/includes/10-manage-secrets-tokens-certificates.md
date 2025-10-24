@@ -45,7 +45,7 @@ Enhanced assurance requirements enable HSM-based key import or generation mainta
 
 Microsoft employs Thales hardware security modules. Thales tools facilitate key migration from organizational HSMs to Azure Key Vault.
 
-Azure Key Vault architecture ensures Microsoft data visibility and extraction prevention.
+Azure Key Vault architecture ensures Microsoft data visibility and extraction prevention is granted.
 
 ### Monitor access and use
 
