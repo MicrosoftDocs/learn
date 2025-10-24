@@ -65,6 +65,12 @@ Microsoft has built Copilot directly into its apps—so whether you’re writing
 
 Together, these tools create a seamless way to stay in the flow of work—less time jumping between tasks, more time focusing on results.  
 
+> [!NOTE]
+> Microsoft 365 Copilot Chat is available at no additional cost to all Microsoft Entra ID users with a Microsoft 365 subscription. To use agents, an Azure subscription is required and pricing is metered based on usage.
+> 
+> Availability of Microsoft 365 Copilot may vary by market and language.  
+> To purchase, organizations must have a qualifying plan for [enterprise](https://go.microsoft.com/fwlink/?linkid=2266702) or [business](https://go.microsoft.com/fwlink/?linkid=2267117).
+
 ## Real-world scenario
 
 A regional sales team spends hours each week writing follow-up emails, preparing meeting notes, and compiling performance reports.  
