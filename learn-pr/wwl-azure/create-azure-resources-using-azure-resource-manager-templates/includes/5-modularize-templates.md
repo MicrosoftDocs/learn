@@ -143,8 +143,7 @@
 
 **Important limitations:**
 
-> [!NOTE]
-> **Nested template scope:** Nested templates can only use parameters and variables from the main template. You cannot define new parameters or variables within the nested template itself.
+> [!NOTE] > **Nested template scope:** Nested templates can only use parameters and variables from the main template. You cannot define new parameters or variables within the nested template itself.
 
 **Linked vs. Nested templates:**
 
@@ -271,9 +270,11 @@ New-AzResourceGroupDeployment `
 
 ### Best practices
 
-> [!NOTE] > **One resource group per deployment:** Use dedicated resource groups for each logical application or environment to simplify management and avoid accidental deletions.
+> [!NOTE]
+> **One resource group per deployment:** Use dedicated resource groups for each logical application or environment to simplify management and avoid accidental deletions.
 
-> [!NOTE] > **Linked/nested templates limitation:** You can only use **incremental mode** for both linked and nested templates. Complete mode is not supported for child deployments.
+> [!NOTE]
+> **Linked/nested templates limitation:** You can only use **incremental mode** for both linked and nested templates. Complete mode is not supported for child deployments.
 
 **Recommendations:**
 
