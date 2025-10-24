@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.explore-infrastructure-as-code-configuration-management.understand-idempotent-configuration
-title: Understand Idempotent Configuration
+uid: learn.wwl.explore-infrastructure-code-configuration-management.understand-idempotent-configuration
+title: Understand idempotent configuration
 metadata:
-  title: Understand Idempotent Configuration
+  title: Understand idempotent configuration
   description: "Explore idempotency principles in Infrastructure as Code, consistent outcome guarantees, achievement methodologies, and importance for cloud service elasticity and scaling operations."
   ms.date: 10/24/2025
   author: LuizMacedo

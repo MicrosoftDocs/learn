@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.explore-infrastructure-as-code-configuration-management.understand-imperative-versus-declarative-configuration
-title: Understand Imperative Versus Declarative Configuration
+uid: learn.wwl.explore-infrastructure-code-configuration-management.understand-imperative-versus-declarative-configuration
+title: Understand imperative versus declarative configuration
 metadata:
-  title: Understand Imperative Versus Declarative Configuration
+  title: Understand imperative versus declarative configuration
   description: "Learn declarative and imperative configuration approaches, implementation differences, best practices, and selection criteria for Infrastructure as Code and Configuration as Code."
   ms.date: 10/24/2025
   author: LuizMacedo

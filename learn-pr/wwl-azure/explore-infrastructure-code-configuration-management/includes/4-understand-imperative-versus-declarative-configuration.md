@@ -80,9 +80,7 @@ This code explicitly tells the system: "First create the VM, then install IIS, t
 
 **Example tools:** Azure Resource Manager templates, Bicep, Terraform, CloudFormation
 
----
-
-**When to use imperative:**
+### When to use imperative
 
 **Advantages:**
 
@@ -100,9 +98,7 @@ This code explicitly tells the system: "First create the VM, then install IIS, t
 
 **Example tools:** PowerShell, Azure CLI, Python scripts, Ansible.
 
----
-
-**Hybrid approach:**
+### Hybrid approach
 
 Many organizations use **both approaches together:**
 

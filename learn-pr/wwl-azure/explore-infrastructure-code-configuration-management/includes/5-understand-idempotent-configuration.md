@@ -40,22 +40,22 @@ resource "azurerm_resource_group" "example" {
 
 **You can make operations idempotent in two ways:**
 
-1. **Check and configure (smart updates):**
+- **Check and configure (smart updates):**
 
-   - Check if resource exists.
-   - If it exists and matches desired state: do nothing.
-   - If it exists but differs: update it.
-   - If it doesn't exist: create it.
+  - Check if resource exists.
+  - If it exists and matches desired state: do nothing.
+  - If it exists but differs: update it.
+  - If it doesn't exist: create it.
 
-   Example: Terraform, Azure Resource Manager.
+  Example: Terraform, Azure Resource Manager.
 
-2. **Replace rather than update (immutable infrastructure):**
+- **Replace rather than update (immutable infrastructure):**
 
-   - Delete old resources.
-   - Create new resources with desired configuration.
-   - No in-place updates—always start fresh.
+  - Delete old resources.
+  - Create new resources with desired configuration.
+  - No in-place updates—always start fresh.
 
-   Example: Container deployments, blue/green deployments.
+  Example: Container deployments, blue/green deployments.
 
 ## Benefits for cloud operations
 
