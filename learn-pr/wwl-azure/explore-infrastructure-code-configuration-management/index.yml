@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.wwl.explore-infrastructure-code-configuration-management
+uid: learn.wwl.explore-infrastructure-as-code-configuration-management
 metadata:
   title: Explore Infrastructure as Code and Configuration Management
   description: Learn Infrastructure as Code (IaC) foundational concepts, environment deployment strategies, configuration management approaches, and idempotent configuration principles for automated infrastructure operations.
@@ -52,12 +52,12 @@ products:
 subjects:
   - devops
 units:
-  - learn.wwl.explore-infrastructure-code-configuration-management.introduction
-  - learn.wwl.explore-infrastructure-code-configuration-management.explore-environment-deployment
-  - learn.wwl.explore-infrastructure-code-configuration-management.examine-environment-configuration
-  - learn.wwl.explore-infrastructure-code-configuration-management.understand-imperative-versus-declarative-configuration
-  - learn.wwl.explore-infrastructure-code-configuration-management.understand-idempotent-configuration
-  - learn.wwl.explore-infrastructure-code-configuration-management.knowledge-check
-  - learn.wwl.explore-infrastructure-code-configuration-management.summary
+  - learn.wwl.explore-infrastructure-as-code-configuration-management.introduction
+  - learn.wwl.explore-infrastructure-as-code-configuration-management.explore-environment-deployment
+  - learn.wwl.explore-infrastructure-as-code-configuration-management.examine-environment-configuration
+  - learn.wwl.explore-infrastructure-as-code-configuration-management.understand-imperative-versus-declarative-configuration
+  - learn.wwl.explore-infrastructure-as-code-configuration-management.understand-idempotent-configuration
+  - learn.wwl.explore-infrastructure-as-code-configuration-management.knowledge-check
+  - learn.wwl.explore-infrastructure-as-code-configuration-management.summary
 badge:
   uid: learn.wwl.explore-infrastructure-as-code-configuration-management.badge
