@@ -1,5 +1,5 @@
 ### YamlMime:LearningPath
-uid: learn.wwl.az-400-manage-infrastructure-code-using-azure
+uid: learn.wwl.az-400-manage-infrastructure-as-code-using-azure
 metadata:
   title: "AZ-400: Manage infrastructure as code using Azure and DSC"
   description: "AZ-400: Manage infrastructure as code using Azure and DSC"
@@ -43,7 +43,7 @@ subjects:
   - architecture
   - cloud-computing
 modules:
-  - learn.wwl.explore-infrastructure-code-configuration-management
+  - learn.wwl.explore-infrastructure-as-code-configuration-management
   - learn.wwl.create-azure-resources-using-azure-resource-manager-templates
   - learn.wwl.create-azure-resources-by-using-azure-cli
   - learn.wwl.explore-azure-automation-devops
