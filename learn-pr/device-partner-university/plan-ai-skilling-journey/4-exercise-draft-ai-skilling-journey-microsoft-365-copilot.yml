@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.plan-ai-skilling-journey.exercise-draft-ai-skilling-journey-microsoft-365-copilot
+title: Exercise – Draft an AI skilling journey with Microsoft 365 Copilot
+metadata:
+  title: Exercise – Draft An AI Skilling Journey With Microsoft 365 Copilot
+  description: This content is part of the "Plan your organization’s AI skilling journey with Microsoft 365 Copilot" module.
+  ms.date: 10/23/2025
+  author: melissawinters
+  ms.author: v-mwinters
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-exercise-draft-ai-skilling-journey-microsoft-365-copilot.md)]
