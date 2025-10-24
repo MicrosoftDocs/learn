@@ -17487,7 +17487,7 @@
     },
     {
       "source_path_from_root": "/learn-pr/paths/az-400-create-manage-containers-using-docker-kubernetes/index.md",
-      "redirect_url": "/training/paths/az-400-manage-infrastructure-as-code-using-azure/"
+      "redirect_url": "/training/paths/az-400-manage-infrastructure-code-using-azure/"
     },
     {
       "source_path_from_root": "/learn-pr/paths/az-400-get-started-devops-transformation-journey/index.md",
@@ -23663,27 +23663,27 @@
     },
     {
       "source_path_from_root": "/learn-pr/wwl-azure/design-processes-capture-analyze-user-feedback/1-introduction.md",
-      "redirect_url": "/training/paths/az-400-manage-infrastructure-as-code-using-azure/"
+      "redirect_url": "/training/paths/az-400-manage-infrastructure-code-using-azure/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-azure/design-processes-capture-analyze-user-feedback/2-explore-twitter-sentiment-release-gate.md",
-      "redirect_url": "/training/paths/az-400-manage-infrastructure-as-code-using-azure/"
+      "redirect_url": "/training/paths/az-400-manage-infrastructure-code-using-azure/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-azure/design-processes-capture-analyze-user-feedback/3-exercise-deploy-release-management-green-light-capabilities.md",
-      "redirect_url": "/training/paths/az-400-manage-infrastructure-as-code-using-azure/"
+      "redirect_url": "/training/paths/az-400-manage-infrastructure-code-using-azure/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-azure/design-processes-capture-analyze-user-feedback/4-knowledge-check.md",
-      "redirect_url": "/training/paths/az-400-manage-infrastructure-as-code-using-azure/"
+      "redirect_url": "/training/paths/az-400-manage-infrastructure-code-using-azure/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-azure/design-processes-capture-analyze-user-feedback/5-summary.md",
-      "redirect_url": "/training/paths/az-400-manage-infrastructure-as-code-using-azure/"
+      "redirect_url": "/training/paths/az-400-manage-infrastructure-code-using-azure/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-azure/design-processes-capture-analyze-user-feedback/index.md",
-      "redirect_url": "/training/paths/az-400-manage-infrastructure-as-code-using-azure/"
+      "redirect_url": "/training/paths/az-400-manage-infrastructure-code-using-azure/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-azure/design-solution-to-log-monitor-azure-resources/6-monitor-resources-for-performance-efficiency.md",
@@ -25279,31 +25279,31 @@
     },
     {
       "source_path_from_root": "/learn-pr/wwl-azure/explore-kubernetes-tooling/1-introduction.md",
-      "redirect_url": "/training/paths/az-400-manage-infrastructure-as-code-using-azure/"
+      "redirect_url": "/training/paths/az-400-manage-infrastructure-code-using-azure/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-azure/explore-kubernetes-tooling/2-explore-kubectl.md",
-      "redirect_url": "/training/paths/az-400-manage-infrastructure-as-code-using-azure/"
+      "redirect_url": "/training/paths/az-400-manage-infrastructure-code-using-azure/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-azure/explore-kubernetes-tooling/3-explore-helm.md",
-      "redirect_url": "/training/paths/az-400-manage-infrastructure-as-code-using-azure/"
+      "redirect_url": "/training/paths/az-400-manage-infrastructure-code-using-azure/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-azure/explore-kubernetes-tooling/4-examine-kubernetes-extension-for-visual-studio-code.md",
-      "redirect_url": "/training/paths/az-400-manage-infrastructure-as-code-using-azure/"
+      "redirect_url": "/training/paths/az-400-manage-infrastructure-code-using-azure/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-azure/explore-kubernetes-tooling/5-knowledge-check.md",
-      "redirect_url": "/training/paths/az-400-manage-infrastructure-as-code-using-azure/"
+      "redirect_url": "/training/paths/az-400-manage-infrastructure-code-using-azure/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-azure/explore-kubernetes-tooling/6-summary.md",
-      "redirect_url": "/training/paths/az-400-manage-infrastructure-as-code-using-azure/"
+      "redirect_url": "/training/paths/az-400-manage-infrastructure-code-using-azure/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-azure/explore-kubernetes-tooling/index.md",
-      "redirect_url": "/training/paths/az-400-manage-infrastructure-as-code-using-azure/"
+      "redirect_url": "/training/paths/az-400-manage-infrastructure-code-using-azure/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-azure/explore-message-processing-tasks/1-introduction.md",
@@ -25472,35 +25472,35 @@
     },
     {
       "source_path_from_root": "/learn-pr/wwl-azure/explore-sre-design-practices-measure-end-user-satisfaction/1-introduction.md",
-      "redirect_url": "/training/paths/az-400-manage-infrastructure-as-code-using-azure/"
+      "redirect_url": "/training/paths/az-400-manage-infrastructure-code-using-azure/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-azure/explore-sre-design-practices-measure-end-user-satisfaction/2-what-is-site-reliability-engineering.md",
-      "redirect_url": "/training/paths/az-400-manage-infrastructure-as-code-using-azure/"
+      "redirect_url": "/training/paths/az-400-manage-infrastructure-code-using-azure/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-azure/explore-sre-design-practices-measure-end-user-satisfaction/3-capture-end-user-satisfaction.md",
-      "redirect_url": "/training/paths/az-400-manage-infrastructure-as-code-using-azure/"
+      "redirect_url": "/training/paths/az-400-manage-infrastructure-code-using-azure/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-azure/explore-sre-design-practices-measure-end-user-satisfaction/4-capture-feedback-product.md",
-      "redirect_url": "/training/paths/az-400-manage-infrastructure-as-code-using-azure/"
+      "redirect_url": "/training/paths/az-400-manage-infrastructure-code-using-azure/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-azure/explore-sre-design-practices-measure-end-user-satisfaction/5-provide-feedback-from-product-roadmap.md",
-      "redirect_url": "/training/paths/az-400-manage-infrastructure-as-code-using-azure/"
+      "redirect_url": "/training/paths/az-400-manage-infrastructure-code-using-azure/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-azure/explore-sre-design-practices-measure-end-user-satisfaction/6-knowledge-check.md",
-      "redirect_url": "/training/paths/az-400-manage-infrastructure-as-code-using-azure/"
+      "redirect_url": "/training/paths/az-400-manage-infrastructure-code-using-azure/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-azure/explore-sre-design-practices-measure-end-user-satisfaction/7-summary.md",
-      "redirect_url": "/training/paths/az-400-manage-infrastructure-as-code-using-azure/"
+      "redirect_url": "/training/paths/az-400-manage-infrastructure-code-using-azure/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-azure/explore-sre-design-practices-measure-end-user-satisfaction/index.md",
-      "redirect_url": "/training/paths/az-400-manage-infrastructure-as-code-using-azure/"
+      "redirect_url": "/training/paths/az-400-manage-infrastructure-code-using-azure/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-azure/explore-time-series-insights-integration/1-introduction.md",
@@ -26051,51 +26051,51 @@
     },
     {
       "source_path_from_root": "/learn-pr/wwl-azure/implement-ansible/1-introduction.md",
-      "redirect_url": "/training/paths/az-400-manage-infrastructure-as-code-using-azure/"
+      "redirect_url": "/training/paths/az-400-manage-infrastructure-code-using-azure/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-azure/implement-ansible/10-knowledge-check.md",
-      "redirect_url": "/training/paths/az-400-manage-infrastructure-as-code-using-azure/"
+      "redirect_url": "/training/paths/az-400-manage-infrastructure-code-using-azure/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-azure/implement-ansible/11-summary.md",
-      "redirect_url": "/training/paths/az-400-manage-infrastructure-as-code-using-azure/"
+      "redirect_url": "/training/paths/az-400-manage-infrastructure-code-using-azure/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-azure/implement-ansible/2-what-ansible.md",
-      "redirect_url": "/training/paths/az-400-manage-infrastructure-as-code-using-azure/"
+      "redirect_url": "/training/paths/az-400-manage-infrastructure-code-using-azure/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-azure/implement-ansible/3-explore-ansible-workflow.md",
-      "redirect_url": "/training/paths/az-400-manage-infrastructure-as-code-using-azure/"
+      "redirect_url": "/training/paths/az-400-manage-infrastructure-code-using-azure/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-azure/implement-ansible/4-examine-ansible-components.md",
-      "redirect_url": "/training/paths/az-400-manage-infrastructure-as-code-using-azure/"
+      "redirect_url": "/training/paths/az-400-manage-infrastructure-code-using-azure/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-azure/implement-ansible/5-install-ansible.md",
-      "redirect_url": "/training/paths/az-400-manage-infrastructure-as-code-using-azure/"
+      "redirect_url": "/training/paths/az-400-manage-infrastructure-code-using-azure/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-azure/implement-ansible/6-explore-ansible-azure.md",
-      "redirect_url": "/training/paths/az-400-manage-infrastructure-as-code-using-azure/"
+      "redirect_url": "/training/paths/az-400-manage-infrastructure-code-using-azure/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-azure/implement-ansible/7-examine-playbook-structure.md",
-      "redirect_url": "/training/paths/az-400-manage-infrastructure-as-code-using-azure/"
+      "redirect_url": "/training/paths/az-400-manage-infrastructure-code-using-azure/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-azure/implement-ansible/8-exercise-run-ansible-azure-cloud-shell.md",
-      "redirect_url": "/training/paths/az-400-manage-infrastructure-as-code-using-azure/"
+      "redirect_url": "/training/paths/az-400-manage-infrastructure-code-using-azure/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-azure/implement-ansible/9-exercise-run-ansible-visual-studio-code.md",
-      "redirect_url": "/training/paths/az-400-manage-infrastructure-as-code-using-azure/"
+      "redirect_url": "/training/paths/az-400-manage-infrastructure-code-using-azure/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-azure/implement-ansible/index.md",
-      "redirect_url": "/training/paths/az-400-manage-infrastructure-as-code-using-azure/"
+      "redirect_url": "/training/paths/az-400-manage-infrastructure-code-using-azure/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-azure/implement-application-configuration/1-introduction.md",
@@ -26141,55 +26141,55 @@
     },
     {
       "source_path_from_root": "/learn-pr/wwl-azure/implement-azure-kubernetes-service/1-introduction.md",
-      "redirect_url": "/training/paths/az-400-manage-infrastructure-as-code-using-azure/"
+      "redirect_url": "/training/paths/az-400-manage-infrastructure-code-using-azure/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-azure/implement-azure-kubernetes-service/10-update-images.md",
-      "redirect_url": "/training/paths/az-400-manage-infrastructure-as-code-using-azure/"
+      "redirect_url": "/training/paths/az-400-manage-infrastructure-code-using-azure/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-azure/implement-azure-kubernetes-service/11-knowledge-check.md",
-      "redirect_url": "/training/paths/az-400-manage-infrastructure-as-code-using-azure/"
+      "redirect_url": "/training/paths/az-400-manage-infrastructure-code-using-azure/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-azure/implement-azure-kubernetes-service/12-summary.md",
-      "redirect_url": "/training/paths/az-400-manage-infrastructure-as-code-using-azure/"
+      "redirect_url": "/training/paths/az-400-manage-infrastructure-code-using-azure/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-azure/implement-azure-kubernetes-service/2-introduction-to-kubernetes.md",
-      "redirect_url": "/training/paths/az-400-manage-infrastructure-as-code-using-azure/"
+      "redirect_url": "/training/paths/az-400-manage-infrastructure-code-using-azure/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-azure/implement-azure-kubernetes-service/3-explore-azure-kubernetes-service-aks.md",
-      "redirect_url": "/training/paths/az-400-manage-infrastructure-as-code-using-azure/"
+      "redirect_url": "/training/paths/az-400-manage-infrastructure-code-using-azure/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-azure/implement-azure-kubernetes-service/4-examine-aks-architectural-components.md",
-      "redirect_url": "/training/paths/az-400-manage-infrastructure-as-code-using-azure/"
+      "redirect_url": "/training/paths/az-400-manage-infrastructure-code-using-azure/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-azure/implement-azure-kubernetes-service/5-understand-kubernetes-networking.md",
-      "redirect_url": "/training/paths/az-400-manage-infrastructure-as-code-using-azure/"
+      "redirect_url": "/training/paths/az-400-manage-infrastructure-code-using-azure/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-azure/implement-azure-kubernetes-service/6-explore-ingress-controllers.md",
-      "redirect_url": "/training/paths/az-400-manage-infrastructure-as-code-using-azure/"
+      "redirect_url": "/training/paths/az-400-manage-infrastructure-code-using-azure/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-azure/implement-azure-kubernetes-service/7-explore-deployment-units.md",
-      "redirect_url": "/training/paths/az-400-manage-infrastructure-as-code-using-azure/"
+      "redirect_url": "/training/paths/az-400-manage-infrastructure-code-using-azure/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-azure/implement-azure-kubernetes-service/8-exercise-deploy-connect-to-aks-cluster.md",
-      "redirect_url": "/training/paths/az-400-manage-infrastructure-as-code-using-azure/"
+      "redirect_url": "/training/paths/az-400-manage-infrastructure-code-using-azure/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-azure/implement-azure-kubernetes-service/9-implement-continuous-deployment.md",
-      "redirect_url": "/training/paths/az-400-manage-infrastructure-as-code-using-azure/"
+      "redirect_url": "/training/paths/az-400-manage-infrastructure-code-using-azure/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-azure/implement-azure-kubernetes-service/index.md",
-      "redirect_url": "/training/paths/az-400-manage-infrastructure-as-code-using-azure/"
+      "redirect_url": "/training/paths/az-400-manage-infrastructure-code-using-azure/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-azure/implement-azure-vm-based-sap-solutions/1-introduction.md",
@@ -26298,43 +26298,43 @@
     },
     {
       "source_path_from_root": "/learn-pr/wwl-azure/implement-docker-multi-stage-builds/1-introduction.md",
-      "redirect_url": "/training/paths/az-400-manage-infrastructure-as-code-using-azure/"
+      "redirect_url": "/training/paths/az-400-manage-infrastructure-code-using-azure/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-azure/implement-docker-multi-stage-builds/2-explore-multiple-stage-builds.md",
-      "redirect_url": "/training/paths/az-400-manage-infrastructure-as-code-using-azure/"
+      "redirect_url": "/training/paths/az-400-manage-infrastructure-code-using-azure/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-azure/implement-docker-multi-stage-builds/3-examine-multi-stage-dockerfiles.md",
-      "redirect_url": "/training/paths/az-400-manage-infrastructure-as-code-using-azure/"
+      "redirect_url": "/training/paths/az-400-manage-infrastructure-code-using-azure/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-azure/implement-docker-multi-stage-builds/4-examine-considerations-multiple-stage-builds.md",
-      "redirect_url": "/training/paths/az-400-manage-infrastructure-as-code-using-azure/"
+      "redirect_url": "/training/paths/az-400-manage-infrastructure-code-using-azure/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-azure/implement-docker-multi-stage-builds/5-explore-builder-pattern.md",
-      "redirect_url": "/training/paths/az-400-manage-infrastructure-as-code-using-azure/"
+      "redirect_url": "/training/paths/az-400-manage-infrastructure-code-using-azure/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-azure/implement-docker-multi-stage-builds/6-manage-multiple-projects-solutions.md",
-      "redirect_url": "/training/paths/az-400-manage-infrastructure-as-code-using-azure/"
+      "redirect_url": "/training/paths/az-400-manage-infrastructure-code-using-azure/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-azure/implement-docker-multi-stage-builds/7-exercise-add-docker-support-to-existing-application.md",
-      "redirect_url": "/training/paths/az-400-manage-infrastructure-as-code-using-azure/"
+      "redirect_url": "/training/paths/az-400-manage-infrastructure-code-using-azure/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-azure/implement-docker-multi-stage-builds/8-knowledge-check.md",
-      "redirect_url": "/training/paths/az-400-manage-infrastructure-as-code-using-azure/"
+      "redirect_url": "/training/paths/az-400-manage-infrastructure-code-using-azure/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-azure/implement-docker-multi-stage-builds/9-summary.md",
-      "redirect_url": "/training/paths/az-400-manage-infrastructure-as-code-using-azure/"
+      "redirect_url": "/training/paths/az-400-manage-infrastructure-code-using-azure/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-azure/implement-docker-multi-stage-builds/index.md",
-      "redirect_url": "/training/paths/az-400-manage-infrastructure-as-code-using-azure/"
+      "redirect_url": "/training/paths/az-400-manage-infrastructure-code-using-azure/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-azure/implement-durable-functions/1-introduction.md",
@@ -26518,75 +26518,75 @@
     },
     {
       "source_path_from_root": "/learn-pr/wwl-azure/implement-route-mobile-application-crash-report-data/1-introduction.md",
-      "redirect_url": "/training/paths/az-400-manage-infrastructure-as-code-using-azure/"
+      "redirect_url": "/training/paths/az-400-manage-infrastructure-code-using-azure/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-azure/implement-route-mobile-application-crash-report-data/2-explore-app-center-diagnostics.md",
-      "redirect_url": "/training/paths/az-400-manage-infrastructure-as-code-using-azure/"
+      "redirect_url": "/training/paths/az-400-manage-infrastructure-code-using-azure/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-azure/implement-route-mobile-application-crash-report-data/3-configure-alerts.md",
-      "redirect_url": "/training/paths/az-400-manage-infrastructure-as-code-using-azure/"
+      "redirect_url": "/training/paths/az-400-manage-infrastructure-code-using-azure/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-azure/implement-route-mobile-application-crash-report-data/4-create-bug-tracker.md",
-      "redirect_url": "/training/paths/az-400-manage-infrastructure-as-code-using-azure/"
+      "redirect_url": "/training/paths/az-400-manage-infrastructure-code-using-azure/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-azure/implement-route-mobile-application-crash-report-data/5-knowledge-check.md",
-      "redirect_url": "/training/paths/az-400-manage-infrastructure-as-code-using-azure/"
+      "redirect_url": "/training/paths/az-400-manage-infrastructure-code-using-azure/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-azure/implement-route-mobile-application-crash-report-data/6-summary.md",
-      "redirect_url": "/training/paths/az-400-manage-infrastructure-as-code-using-azure/"
+      "redirect_url": "/training/paths/az-400-manage-infrastructure-code-using-azure/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-azure/implement-route-mobile-application-crash-report-data/index.md",
-      "redirect_url": "/training/paths/az-400-manage-infrastructure-as-code-using-azure/"
+      "redirect_url": "/training/paths/az-400-manage-infrastructure-code-using-azure/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-azure/implement-terraform/1-introduction.md",
-      "redirect_url": "/training/paths/az-400-manage-infrastructure-as-code-using-azure/"
+      "redirect_url": "/training/paths/az-400-manage-infrastructure-code-using-azure/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-azure/implement-terraform/10-summary.md",
-      "redirect_url": "/training/paths/az-400-manage-infrastructure-as-code-using-azure/"
+      "redirect_url": "/training/paths/az-400-manage-infrastructure-code-using-azure/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-azure/implement-terraform/2-what-terraform.md",
-      "redirect_url": "/training/paths/az-400-manage-infrastructure-as-code-using-azure/"
+      "redirect_url": "/training/paths/az-400-manage-infrastructure-code-using-azure/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-azure/implement-terraform/3-examine-terraform-components.md",
-      "redirect_url": "/training/paths/az-400-manage-infrastructure-as-code-using-azure/"
+      "redirect_url": "/training/paths/az-400-manage-infrastructure-code-using-azure/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-azure/implement-terraform/4-explore-terraform-azure.md",
-      "redirect_url": "/training/paths/az-400-manage-infrastructure-as-code-using-azure/"
+      "redirect_url": "/training/paths/az-400-manage-infrastructure-code-using-azure/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-azure/implement-terraform/5-install-terraform.md",
-      "redirect_url": "/training/paths/az-400-manage-infrastructure-as-code-using-azure/"
+      "redirect_url": "/training/paths/az-400-manage-infrastructure-code-using-azure/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-azure/implement-terraform/6-examine-terraform-configure-file-structure.md",
-      "redirect_url": "/training/paths/az-400-manage-infrastructure-as-code-using-azure/"
+      "redirect_url": "/training/paths/az-400-manage-infrastructure-code-using-azure/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-azure/implement-terraform/7-exercise-run-terraform-azure-cloud-shell.md",
-      "redirect_url": "/training/paths/az-400-manage-infrastructure-as-code-using-azure/"
+      "redirect_url": "/training/paths/az-400-manage-infrastructure-code-using-azure/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-azure/implement-terraform/8-exercise-run-terraform-visual-studio-code.md",
-      "redirect_url": "/training/paths/az-400-manage-infrastructure-as-code-using-azure/"
+      "redirect_url": "/training/paths/az-400-manage-infrastructure-code-using-azure/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-azure/implement-terraform/9-knowledge-check.md",
-      "redirect_url": "/training/paths/az-400-manage-infrastructure-as-code-using-azure/"
+      "redirect_url": "/training/paths/az-400-manage-infrastructure-code-using-azure/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-azure/implement-terraform/index.md",
-      "redirect_url": "/training/paths/az-400-manage-infrastructure-as-code-using-azure/"
+      "redirect_url": "/training/paths/az-400-manage-infrastructure-code-using-azure/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-azure/implement-test-progressive-exposure-deployment/2-what-a-b-testing.md",
@@ -26723,31 +26723,31 @@
     },
     {
       "source_path_from_root": "/learn-pr/wwl-azure/integrate-aks-pipelines/1-introduction.md",
-      "redirect_url": "/training/paths/az-400-manage-infrastructure-as-code-using-azure/"
+      "redirect_url": "/training/paths/az-400-manage-infrastructure-code-using-azure/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-azure/integrate-aks-pipelines/2-integrate-aks-with-pipelines.md",
-      "redirect_url": "/training/paths/az-400-manage-infrastructure-as-code-using-azure/"
+      "redirect_url": "/training/paths/az-400-manage-infrastructure-code-using-azure/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-azure/integrate-aks-pipelines/3-explore-kubernetes-azure-key-vault.md",
-      "redirect_url": "/training/paths/az-400-manage-infrastructure-as-code-using-azure/"
+      "redirect_url": "/training/paths/az-400-manage-infrastructure-code-using-azure/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-azure/integrate-aks-pipelines/4-explore-readiness-liveness-probes.md",
-      "redirect_url": "/training/paths/az-400-manage-infrastructure-as-code-using-azure/"
+      "redirect_url": "/training/paths/az-400-manage-infrastructure-code-using-azure/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-azure/integrate-aks-pipelines/5-knowledge-check.md",
-      "redirect_url": "/training/paths/az-400-manage-infrastructure-as-code-using-azure/"
+      "redirect_url": "/training/paths/az-400-manage-infrastructure-code-using-azure/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-azure/integrate-aks-pipelines/6-summary.md",
-      "redirect_url": "/training/paths/az-400-manage-infrastructure-as-code-using-azure/"
+      "redirect_url": "/training/paths/az-400-manage-infrastructure-code-using-azure/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-azure/integrate-aks-pipelines/index.md",
-      "redirect_url": "/training/paths/az-400-manage-infrastructure-as-code-using-azure/"
+      "redirect_url": "/training/paths/az-400-manage-infrastructure-code-using-azure/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-azure/integrate-azure-pipelines/10-integrate-external-source-control-with-azure-pipelines.md",
@@ -26996,47 +26996,47 @@
     },
     {
       "source_path_from_root": "/learn-pr/wwl-azure/introduction-chef-puppet/1-introduction.md",
-      "redirect_url": "/training/paths/az-400-manage-infrastructure-as-code-using-azure/"
+      "redirect_url": "/training/paths/az-400-manage-infrastructure-code-using-azure/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-azure/introduction-chef-puppet/10-summary.md",
-      "redirect_url": "/training/paths/az-400-manage-infrastructure-as-code-using-azure/"
+      "redirect_url": "/training/paths/az-400-manage-infrastructure-code-using-azure/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-azure/introduction-chef-puppet/2-what-is-chef.md",
-      "redirect_url": "/training/paths/az-400-manage-infrastructure-as-code-using-azure/"
+      "redirect_url": "/training/paths/az-400-manage-infrastructure-code-using-azure/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-azure/introduction-chef-puppet/3-explore-chef-automate.md",
-      "redirect_url": "/training/paths/az-400-manage-infrastructure-as-code-using-azure/"
+      "redirect_url": "/training/paths/az-400-manage-infrastructure-code-using-azure/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-azure/introduction-chef-puppet/4-explore-chef-cookbooks.md",
-      "redirect_url": "/training/paths/az-400-manage-infrastructure-as-code-using-azure/"
+      "redirect_url": "/training/paths/az-400-manage-infrastructure-code-using-azure/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-azure/introduction-chef-puppet/5-examine-chef-knife-command.md",
-      "redirect_url": "/training/paths/az-400-manage-infrastructure-as-code-using-azure/"
+      "redirect_url": "/training/paths/az-400-manage-infrastructure-code-using-azure/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-azure/introduction-chef-puppet/6-what-is-puppet.md",
-      "redirect_url": "/training/paths/az-400-manage-infrastructure-as-code-using-azure/"
+      "redirect_url": "/training/paths/az-400-manage-infrastructure-code-using-azure/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-azure/introduction-chef-puppet/7-deploy-puppet-azure.md",
-      "redirect_url": "/training/paths/az-400-manage-infrastructure-as-code-using-azure/"
+      "redirect_url": "/training/paths/az-400-manage-infrastructure-code-using-azure/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-azure/introduction-chef-puppet/8-explore-manifest-files.md",
-      "redirect_url": "/training/paths/az-400-manage-infrastructure-as-code-using-azure/"
+      "redirect_url": "/training/paths/az-400-manage-infrastructure-code-using-azure/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-azure/introduction-chef-puppet/9-knowledge-check.md",
-      "redirect_url": "/training/paths/az-400-manage-infrastructure-as-code-using-azure/"
+      "redirect_url": "/training/paths/az-400-manage-infrastructure-code-using-azure/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-azure/introduction-chef-puppet/index.md",
-      "redirect_url": "/training/paths/az-400-manage-infrastructure-as-code-using-azure/"
+      "redirect_url": "/training/paths/az-400-manage-infrastructure-code-using-azure/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-azure/introduction-iot-solution-architecture/1-introduction.md",
