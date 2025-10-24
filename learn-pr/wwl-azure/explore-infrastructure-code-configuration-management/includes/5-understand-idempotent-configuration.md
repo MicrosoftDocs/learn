@@ -42,29 +42,29 @@ resource "azurerm_resource_group" "example" {
 
 1. **Check and configure (smart updates):**
 
-   - Check if resource exists
-   - If it exists and matches desired state: do nothing
-   - If it exists but differs: update it
-   - If it doesn't exist: create it
+   - Check if resource exists.
+   - If it exists and matches desired state: do nothing.
+   - If it exists but differs: update it.
+   - If it doesn't exist: create it.
 
-   Example: Terraform, Azure Resource Manager
+   Example: Terraform, Azure Resource Manager.
 
 2. **Replace rather than update (immutable infrastructure):**
 
-   - Delete old resources
-   - Create new resources with desired configuration
-   - No in-place updates—always start fresh
+   - Delete old resources.
+   - Create new resources with desired configuration.
+   - No in-place updates—always start fresh.
 
-   Example: Container deployments, blue/green deployments
+   Example: Container deployments, blue/green deployments.
 
 ## Benefits for cloud operations
 
 **Idempotency is essential in cloud environments because:**
 
-- **Auto-scaling:** Systems automatically create and destroy instances. Idempotent scripts ensure each instance configures correctly, even if the script runs multiple times
-- **Recovery:** If a deployment fails halfway through, you can safely re-run it without causing errors or duplicates
-- **Continuous deployment:** Pipelines can deploy repeatedly without checking current state
-- **Disaster recovery:** Restore entire environments by running your IaC templates again
+- **Auto-scaling:** Systems automatically create and destroy instances. Idempotent scripts ensure each instance configures correctly, even if the script runs multiple times.
+- **Recovery:** If a deployment fails halfway through, you can safely re-run it without causing errors or duplicates.
+- **Continuous deployment:** Pipelines can deploy repeatedly without checking current state.
+- **Disaster recovery:** Restore entire environments by running your IaC templates again.
 
 **Best practice:** Always design your Infrastructure as Code and Configuration as Code scripts to be idempotent. This prevents errors, enables automation, and makes your infrastructure more reliable.
 

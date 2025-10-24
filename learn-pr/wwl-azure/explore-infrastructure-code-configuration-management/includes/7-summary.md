@@ -4,38 +4,38 @@ This module explored Infrastructure as Code (IaC) and Configuration as Code foun
 
 **Infrastructure as Code:**
 
-- Treats infrastructure as version-controlled code rather than manual configurations
-- Enables "cattle not pets" approach—easily replaceable infrastructure
-- Provides consistency, auditability, and rapid provisioning
-- Tools: Azure Resource Manager, Bicep, Terraform, Ansible
+- Treats infrastructure as version-controlled code rather than manual configurations.
+- Enables "cattle not pets" approach—easily replaceable infrastructure.
+- Provides consistency, auditability, and rapid provisioning.
+- Tools: Azure Resource Manager, Bicep, Terraform, Ansible.
 
 **Configuration Management:**
 
-- Automates application and environment configuration
-- Reduces documentation burden—code IS the documentation
-- Enables drift detection and automatic correction
-- Prevents "works on my machine" problems
+- Automates application and environment configuration.
+- Reduces documentation burden—code IS the documentation.
+- Enables drift detection and automatic correction.
+- Prevents "works on my machine" problems.
 
 **Declarative vs. Imperative:**
 
-- **Declarative:** Specify _what_ you want (easier, idempotent by design)
-- **Imperative:** Specify _how_ to get there (more control, familiar to developers)
-- Many teams use both—declarative for provisioning, imperative for configuration
+- **Declarative:** Specify _what_ you want (easier, idempotent by design).
+- **Imperative:** Specify _how_ to get there (more control, familiar to developers).
+- Many teams use both—declarative for provisioning, imperative for configuration.
 
 **Idempotency:**
 
-- Same operation produces same result regardless of how many times you run it
-- Essential for cloud auto-scaling, recovery, and automation
-- Prevents errors from re-running scripts or failed deployments
+- Same operation produces same result regardless of how many times you run it.
+- Essential for cloud auto-scaling, recovery, and automation.
+- Prevents errors from re-running scripts or failed deployments.
 
 ## Next steps
 
 Now that you understand IaC fundamentals, you can:
 
-- Implement version-controlled infrastructure definitions
-- Choose appropriate declarative or imperative approaches for your scenarios
-- Design idempotent scripts ensuring consistent, reliable deployments
-- Build automated infrastructure pipelines with confidence
+- Implement version-controlled infrastructure definitions.
+- Choose appropriate declarative or imperative approaches for your scenarios.
+- Design idempotent scripts ensuring consistent, reliable deployments.
+- Build automated infrastructure pipelines with confidence.
 
 ## Learn more
 

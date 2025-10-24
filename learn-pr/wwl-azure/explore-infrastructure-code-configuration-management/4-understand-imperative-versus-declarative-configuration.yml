@@ -4,7 +4,7 @@ title: Understand Imperative Versus Declarative Configuration
 metadata:
   title: Understand Imperative Versus Declarative Configuration
   description: "Learn declarative and imperative configuration approaches, implementation differences, best practices, and selection criteria for Infrastructure as Code and Configuration as Code."
-  ms.date: 10/07/2025
+  ms.date: 10/24/2025
   author: LuizMacedo
   ms.author: lumac
   ms.topic: unit

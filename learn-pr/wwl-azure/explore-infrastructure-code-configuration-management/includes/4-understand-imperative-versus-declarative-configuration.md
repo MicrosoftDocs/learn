@@ -22,10 +22,10 @@ This code declares: "I want a virtual machine with these properties." The IaC to
 
 **Popular declarative tools:**
 
-- Azure Resource Manager (ARM) templates
-- Bicep
-- Terraform
-- Kubernetes manifests
+- Azure Resource Manager (ARM) templates.
+- Bicep.
+- Terraform.
+- Kubernetes manifests.
 
 ## Imperative approach (procedural)
 
@@ -47,17 +47,17 @@ This code explicitly tells the system: "First create the VM, then install IIS, t
 
 **Imperative approaches often include:**
 
-- For loops and conditionals (if-then statements)
-- Explicit ordering of operations
-- Error handling logic
-- More procedural programming concepts
+- For loops and conditionals (if-then statements).
+- Explicit ordering of operations.
+- Error handling logic.
+- More procedural programming concepts.
 
 **Popular imperative tools:**
 
-- PowerShell scripts
-- Azure CLI scripts
-- Ansible playbooks (can be used declaratively or imperatively)
-- Python/Bash scripts
+- PowerShell scripts.
+- Azure CLI scripts.
+- Ansible playbooks (can be used declaratively or imperatively).
+- Python/Bash scripts.
 
 ## Choosing the right approach
 
@@ -65,18 +65,18 @@ This code explicitly tells the system: "First create the VM, then install IIS, t
 
 **Advantages:**
 
-- **Easier to read and understand:** You see _what_ infrastructure exists, not implementation details
-- **Idempotent by design:** Run the same template repeatedly—it creates resources that don't exist and ignores ones that do
-- **Order-independent:** The tool figures out dependencies and correct ordering
-- **Less code:** Shorter, more maintainable definitions
-- **Better for teams:** Easier for team members to review and understand
+- **Easier to read and understand:** You see _what_ infrastructure exists, not implementation details.
+- **Idempotent by design:** Run the same template repeatedly—it creates resources that don't exist and ignores ones that do.
+- **Order-independent:** The tool figures out dependencies and correct ordering.
+- **Less code:** Shorter, more maintainable definitions.
+- **Better for teams:** Easier for team members to review and understand.
 
 **Best for:**
 
-- Provisioning cloud infrastructure (VMs, networks, storage)
-- Deploying containerized applications to Kubernetes
-- Teams new to IaC
-- Infrastructure that changes infrequently
+- Provisioning cloud infrastructure (VMs, networks, storage).
+- Deploying containerized applications to Kubernetes.
+- Teams new to IaC.
+- Infrastructure that changes infrequently.
 
 **Example tools:** Azure Resource Manager templates, Bicep, Terraform, CloudFormation
 
@@ -86,19 +86,19 @@ This code explicitly tells the system: "First create the VM, then install IIS, t
 
 **Advantages:**
 
-- **Fine-grained control:** Specify exactly how things should happen
-- **Easier for complex logic:** If you need loops, conditions, and complex workflows
-- **Familiar to developers:** Looks like regular programming
-- **Better for dynamic scenarios:** When you need to make decisions based on current state
+- **Fine-grained control:** Specify exactly how things should happen.
+- **Easier for complex logic:** If you need loops, conditions, and complex workflows.
+- **Familiar to developers:** Looks like regular programming.
+- **Better for dynamic scenarios:** When you need to make decisions based on current state.
 
 **Best for:**
 
-- Complex configuration workflows with conditional logic
-- Migrating existing scripts to IaC
-- Situations requiring precise control over execution order
-- Integration with external systems and APIs
+- Complex configuration workflows with conditional logic.
+- Migrating existing scripts to IaC.
+- Situations requiring precise control over execution order.
+- Integration with external systems and APIs.
 
-**Example tools:** PowerShell, Azure CLI, Python scripts, Ansible
+**Example tools:** PowerShell, Azure CLI, Python scripts, Ansible.
 
 ---
 
@@ -106,12 +106,12 @@ This code explicitly tells the system: "First create the VM, then install IIS, t
 
 Many organizations use **both approaches together:**
 
-- **Declarative for infrastructure provisioning** (creating VMs, networks, storage)
-- **Imperative for configuration management** (installing software, configuring applications)
+- **Declarative for infrastructure provisioning** (creating VMs, networks, storage).
+- **Imperative for configuration management** (installing software, configuring applications).
 
 For example:
 
-1. Use Terraform (declarative) to create Azure resources
-2. Use Ansible or PowerShell (imperative) to configure those resources
+1. Use Terraform (declarative) to create Azure resources.
+2. Use Ansible or PowerShell (imperative) to configure those resources.
 
 **There's no single "best" approach**—choose based on your team's skills, project complexity, and organizational needs. Many modern tools support both styles, giving you flexibility.
