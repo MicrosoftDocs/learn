@@ -1,0 +1,84 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.plan-ai-skilling-journey.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge Check
+  description: This content is part of the "Plan your organization’s AI skilling journey with Microsoft 365 Copilot" module.
+  ms.date: 10/23/2025
+  author: melissawinters
+  ms.author: v-mwinters
+  ms.topic: unit
+durationInMinutes: 5
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "What characterizes the Explore stage of AI capability?"
+    choices:
+        - content: "Formal training programs and defined policies"
+          isCorrect: false
+          explanation: "Incorrect. These are typical of the Optimize stage."
+        - content: "Ad-hoc experimentation and emerging leadership interest"
+          isCorrect: true
+          explanation: "Correct. The Explore stage involves curiosity without coordination."
+        - content: "Role-based skilling journeys and governance"
+          isCorrect: false
+          explanation: "Incorrect. These are features of the Optimize stage."
+        - content: "Regular training updates and business alignment"
+          isCorrect: false
+          explanation: "Incorrect. These are part of the Optimize stage."
+  - content: "What is a key action in the Build stage of role-based skilling?"
+    choices:
+        - content: "Create informal AI spotlight moments"
+          isCorrect: false
+          explanation: "Incorrect. This is typical of the Explore stage."
+        - content: "Launch AI Champions mentorship programs"
+          isCorrect: false
+          explanation: "Incorrect. This is part of the Optimize stage."
+        - content: "Identify Copilot scenarios per role and collect feedback"
+          isCorrect: true
+          explanation: "Correct. This supports hands-on use and collaboration in the Build stage."
+        - content: "Establish a repository of ethical guidelines"
+          isCorrect: false
+          explanation: "Incorrect. This is recommended in the Optimize stage."
+  - content: "Which principle of Microsoft’s Responsible AI focuses on equal access and avoiding bias?"
+    choices:
+        - content: "Fairness"
+          isCorrect: true
+          explanation: "Correct. It ensures AI systems treat individuals equally and avoid bias."
+        - content: "Reliability and Safety"
+          isCorrect: false
+          explanation: "Incorrect. This principle focuses on robustness and minimizing risks."
+        - content: "Transparency"
+          isCorrect: false
+          explanation: "Incorrect. It emphasizes making AI decisions understandable."
+        - content: "Accountability"
+          isCorrect: false
+          explanation: "Incorrect. It involves assigning ownership for AI outcomes."
+  - content: "What does the Optimize stage emphasize in sustaining AI learning?"
+    choices:
+        - content: "Capturing quick wins from early adopters"
+          isCorrect: false
+          explanation: "Incorrect. This is part of the Explore stage."
+        - content: "Hosting informal AI demos"
+          isCorrect: false
+          explanation: "Incorrect. This is typical of the Build stage."
+        - content: "Refreshing materials twice a year"
+          isCorrect: false
+          explanation: "Incorrect. This is recommended in the Build stage."
+        - content: "Embedding continuous improvement into operations"
+          isCorrect: true
+          explanation: "Correct. This is a hallmark of the Optimize stage."
+  - content: "What is a recommended collaborative initiative for the Explore stage?"
+    choices:
+        - content: "Create a Teams channel for AI tips and questions"
+          isCorrect: true
+          explanation: "Correct. This supports informal sharing in the Explore stage."
+        - content: "Form a community of practice"
+          isCorrect: false
+          explanation: "Incorrect. This is recommended in the Build stage."
+        - content: "Launch an AI Champions program"
+          isCorrect: false
+          explanation: "Incorrect. This is part of the Optimize stage."
+        - content: "Integrate AI milestones into performance dashboards"
+          isCorrect: false
+          explanation: "Incorrect. This is typical of the Optimize stage."
