@@ -4,7 +4,7 @@ title: Why Use Azure Resource Manager Templates?
 metadata:
   title: Why Use Azure Resource Manager Templates?
   description: "Discover the benefits of ARM templates including consistency, repeatability, complex deployments, reduced errors, and infrastructure as code paradigm."
-  ms.date: 10/07/2025
+  ms.date: 10/24/2025
   author: LuizMacedo
   ms.author: lumac
   ms.topic: unit

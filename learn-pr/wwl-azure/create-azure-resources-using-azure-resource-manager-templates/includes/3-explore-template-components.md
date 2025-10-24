@@ -4,11 +4,11 @@
 
 A **JSON document** is a collection of key-value pairs. Each key is a string, and values can be:
 
-- **A string:** `"name": "myStorageAccount"`
-- **A number:** `"count": 3`
-- **A Boolean:** `"enabled": true`
-- **An array:** `"locations": ["eastus", "westus"]`
-- **An object:** `"sku": { "name": "Standard_LRS", "tier": "Standard" }`
+- **A string:** `"name": "myStorageAccount"`.
+- **A number:** `"count": 3`.
+- **A Boolean:** `"enabled": true`.
+- **An array:** `"locations": ["eastus", "westus"]`.
+- **An object:** `"sku": { "name": "Standard_LRS", "tier": "Standard" }`.
 
 **Why JSON for infrastructure?** JSON provides a structured, machine-readable format that Azure Resource Manager can parse and execute. It's language-agnostic and widely supported by development tools.
 
@@ -48,10 +48,10 @@ The **parameters section** defines which values are configurable when the templa
 
 **Common use cases:**
 
-- Environment-specific settings (VM sizes, SKUs)
-- Credentials (usernames, passwords)
-- Naming conventions (prefixes, suffixes)
-- Regional settings (locations, availability zones)
+- Environment-specific settings (VM sizes, SKUs).
+- Credentials (usernames, passwords).
+- Naming conventions (prefixes, suffixes).
+- Regional settings (locations, availability zones).
 
 **Example:** Virtual machine credentials:
 
@@ -187,7 +187,8 @@ The **functions section** defines custom user-defined functions for procedures y
 - **Reusability:** Call the same function multiple times with different parameters.
 - **Consistency:** Ensure all resources follow the same naming convention.
 
-**Note:** For most cases, **built-in ARM template functions** (like `concat()`, `uniqueString()`, `reference()`) are sufficient. Custom functions are helpful for organization-specific logic.
+> [!NOTE]
+> For most cases, **built-in ARM template functions** (like `concat()`, `uniqueString()`, `reference()`) are sufficient. Custom functions are helpful for organization-specific logic.
 
 ## Resources section
 

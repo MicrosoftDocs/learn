@@ -13,10 +13,10 @@
 
 **Real-world example:** Create separate templates for:
 
-- **Networking module:** Virtual networks, subnets, NSGs, route tables
-- **Storage module:** Storage accounts, blob containers, file shares
-- **Compute module:** Virtual machines, availability sets, load balancers
-- **Security module:** Key Vault, managed identities, RBAC assignments
+- **Networking module:** Virtual networks, subnets, NSGs, route tables.
+- **Storage module:** Storage accounts, blob containers, file shares.
+- **Compute module:** Virtual machines, availability sets, load balancers.
+- **Security module:** Key Vault, managed identities, RBAC assignments.
 
 ## Linked templates
 
@@ -24,9 +24,9 @@
 
 **How it works:**
 
-1. Store child templates in accessible locations (Azure Storage, GitHub, etc.)
-2. Main template references external templates via URI
-3. Resource Manager downloads and executes linked templates during deployment
+1. Store child templates in accessible locations (Azure Storage, GitHub, etc.).
+2. Main template references external templates via URI.
+3. Resource Manager downloads and executes linked templates during deployment.
 
 **Syntax:** Add a deployment resource to your main template:
 
@@ -143,7 +143,8 @@
 
 **Important limitations:**
 
-> [!NOTE] > **Nested template scope:** Nested templates can only use parameters and variables from the main template. You cannot define new parameters or variables within the nested template itself.
+> [!NOTE]
+> **Nested template scope:** Nested templates can only use parameters and variables from the main template. You cannot define new parameters or variables within the nested template itself.
 
 **Linked vs. Nested templates:**
 
@@ -199,9 +200,9 @@ az deployment group validate \
 
 **Example scenario:**
 
-- Template defines VM1, VM2, Storage1
-- Resource group has VM1, VM3, Storage1
-- **After deployment:** VM1 (updated), VM2 (added), VM3 (unchanged), Storage1 (updated)
+- Template defines VM1, VM2, Storage1.
+- Resource group has VM1, VM3, Storage1.
+- **After deployment:** VM1 (updated), VM2 (added), VM3 (unchanged), Storage1 (updated).
 
 **When to use:**
 
@@ -221,9 +222,9 @@ az deployment group validate \
 
 **Example scenario:**
 
-- Template defines VM1, VM2, Storage1
-- Resource group has VM1, VM3, Storage1, VM4
-- **After deployment:** VM1 (updated), VM2 (added), Storage1 (updated), VM3 (deleted), VM4 (deleted)
+- Template defines VM1, VM2, Storage1.
+- Resource group has VM1, VM3, Storage1, VM4.
+- **After deployment:** VM1 (updated), VM2 (added), Storage1 (updated), VM3 (deleted), VM4 (deleted).
 
 **When to use:**
 
@@ -231,7 +232,8 @@ az deployment group validate \
 - Achieving idempotency (same deployment result every time).
 - Removing unwanted or manual resources.
 
-**⚠️ Warning:** Complete mode can delete resources. Test thoroughly before using in production!
+> [!WARNING]
+> Complete mode can delete resources. Test thoroughly before using in production!
 
 ### Setting deployment mode
 
@@ -290,16 +292,16 @@ New-AzResourceGroupDeployment `
 
 **What works:**
 
-- ✅ **Azure Blob Storage:** Public or private with SAS tokens
-- ✅ **GitHub:** Public repositories or private with access tokens
-- ✅ **HTTPS endpoints:** Any publicly accessible HTTPS URL
-- ✅ **Azure Container Instances:** Hosting template files in containers
+- **Azure Blob Storage:** Public or private with SAS tokens.
+- **GitHub:** Public repositories or private with access tokens.
+- **HTTPS endpoints:** Any publicly accessible HTTPS URL.
+- **Azure Container Instances:** Hosting template files in containers.
 
 **What doesn't work:**
 
-- ❌ **Local files:** Files on your computer or local network
-- ❌ **File:// protocol:** Local file system paths
-- ❌ **HTTP (non-secure):** Only HTTPS is supported
+- **Local files:** Files on your computer or local network.
+- **File:// protocol:** Local file system paths.
+- **HTTP (non-secure):** Only HTTPS is supported.
 
 ### Using templateLink and parametersLink
 
@@ -307,7 +309,8 @@ New-AzResourceGroupDeployment `
 
 **parametersLink:** References an external parameter file (alternative to inline parameters).
 
-**Important:** You cannot use both inline parameters and parametersLink simultaneously. Choose one approach.
+> [!IMPORTANT]
+> You cannot use both inline parameters and parametersLink simultaneously. Choose one approach.
 
 **Complete example with templateLink:**
 

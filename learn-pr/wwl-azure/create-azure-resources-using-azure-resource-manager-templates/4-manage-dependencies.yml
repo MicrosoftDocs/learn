@@ -4,7 +4,7 @@ title: Manage Dependencies
 metadata:
   title: Manage Dependencies
   description: "Learn how to define and manage resource dependencies using dependsOn element and reference functions, and avoid circular dependencies."
-  ms.date: 10/07/2025
+  ms.date: 10/24/2025
   author: LuizMacedo
   ms.author: lumac
   ms.topic: unit

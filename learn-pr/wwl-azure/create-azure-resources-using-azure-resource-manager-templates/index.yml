@@ -3,7 +3,7 @@ uid: learn.wwl.create-azure-resources-using-azure-resource-manager-templates
 metadata:
   title: Create Azure Resources Using Azure Resource Manager Templates
   description: Learn how to create and deploy Azure resources using ARM templates and Bicep, including template components, dependencies, modularization, and secrets management for infrastructure as code.
-  ms.date: 10/07/2025
+  ms.date: 10/24/2025
   author: LuizMacedo
   ms.author: lumac
   ms.topic: module

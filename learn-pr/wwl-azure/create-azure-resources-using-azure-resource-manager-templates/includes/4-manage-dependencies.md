@@ -25,10 +25,10 @@
 
 **Example deployment order:**
 
-1. Virtual Network (no dependencies) → deploys first
-2. Public IP Address (no dependencies) → deploys in parallel with VNet
-3. Network Interface (depends on VNet and Public IP) → waits for both
-4. Virtual Machine (depends on Network Interface) → deploys last
+1. Virtual Network (no dependencies) → deploys first.
+2. Public IP Address (no dependencies) → deploys in parallel with VNet.
+3. Network Interface (depends on VNet and Public IP) → waits for both.
+4. Virtual Machine (depends on Network Interface) → deploys last.
 
 ## The dependsOn element
 

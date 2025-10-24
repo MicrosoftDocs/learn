@@ -358,4 +358,4 @@ Instead of hardcoding the Key Vault resource ID, you can build it dynamically us
 
 This approach requires additional parameters for `keyVaultResourceGroup` and `keyVaultName`, but provides more flexibility for multi-environment deployments.
 
-**For more information:** See [Azure Key Vault to pass secure parameter values during deployment](https://learn.microsoft.com/azure/azure-resource-manager/templates/key-vault-parameter) for advanced scenarios including dynamic IDs and cross-subscription references.
+**For more information:** See [Azure Key Vault to pass secure parameter values during deployment](/azure/azure-resource-manager/templates/key-vault-parameter) for advanced scenarios including dynamic IDs and cross-subscription references.

@@ -49,10 +49,10 @@ You now understand how to:
 
 ## Learn more
 
-- [ARM template documentation - Azure Resource Manager](https://learn.microsoft.com/azure/azure-resource-manager/templates/)
-- [What is Bicep? - Azure Resource Manager](https://learn.microsoft.com/azure/azure-resource-manager/bicep/overview)
-- [Azure Key Vault to pass secure parameter values](https://learn.microsoft.com/azure/azure-resource-manager/templates/key-vault-parameter)
-- [CI/CD with Azure Pipelines and templates](https://learn.microsoft.com/azure/azure-resource-manager/templates/add-template-to-azure-pipelines)
+- [ARM template documentation - Azure Resource Manager](/azure/azure-resource-manager/templates/)
+- [What is Bicep? - Azure Resource Manager](/azure/azure-resource-manager/bicep/overview)
+- [Azure Key Vault to pass secure parameter values](/azure/azure-resource-manager/templates/key-vault-parameter)
+- [CI/CD with Azure Pipelines and templates](/azure/azure-resource-manager/templates/add-template-to-azure-pipelines)
 - [Azure Quickstart Templates on GitHub](https://github.com/Azure/azure-quickstart-templates)
-- [Connect to Microsoft Azure - Azure Pipelines](https://learn.microsoft.com/azure/devops/pipelines/library/connect-to-azure)
-- [Security through templates - Azure Pipelines](https://learn.microsoft.com/azure/devops/pipelines/security/templates)
+- [Connect to Microsoft Azure - Azure Pipelines](/azure/devops/pipelines/library/connect-to-azure)
+- [Security through templates - Azure Pipelines](/azure/devops/pipelines/security/templates)
