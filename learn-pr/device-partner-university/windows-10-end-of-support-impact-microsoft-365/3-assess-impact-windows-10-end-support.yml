@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.keep-microsoft-365-secure.assess-impact-windows-10-end-support
+title: Assess the impact of Windows 10 end of support on Microsoft 365
+metadata:
+  title: Assess the Impact of Windows 10 End of Support on Microsoft 365
+  description: This content is part of the "Keep Microsoft 365 secure after Windows 10 end of support" module.
+  ms.date: 10/15/2025
+  author: melissawinters
+  ms.author: v-mwinters
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/3-assess-impact-windows-10-end-support.md)]
