@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.dpu.plan-ai-skilling-journey
+title: Plan your organization’s AI skilling journey with Microsoft 365 Copilot
+metadata:
+  title: Plan Your Organization’s AI Skilling Journey With Microsoft 365 Copilot
+  description: In this module, you'll learn how to plan and sustain an AI skilling journey that connects individual curiosity with organizational goals. You'll assess your organization's AI readiness, design role-based learning paths, and explore ways to build a culture of continuous, responsible AI learning.
+  ms.date: 10/23/2025
+  author: melissawinters
+  ms.author: v-mwinters
+  ms.topic: module
+  ms.service: microsoft-365-copilot
+  ms.custom: CM031325-1
+summary: >
+  Discover how to assess your organization’s AI readiness and create role-based skilling journeys that connect learning to real business outcomes with Copilot in Word.
+abstract: |
+  By the end of this module, you'll be able to:
+  - Assess your organization's AI readiness to identify current strengths, gaps, and opportunities for growth.
+  - Design structured, role-based skilling journeys that align AI learning with day-to-day work and business outcomes.
+  - Build and sustain a culture of responsible, collaborative AI use by integrating ongoing learning and Microsoft's Responsible AI principles.
+prerequisites: |
+  - None
+iconUrl: /training/achievements/plan-ai-skilling-journey.svg
+ratingEnabled: false
+levels:
+  - beginner
+roles:
+  - business-owner
+  - business-user
+  - administrator
+  - technology-manager
+  - business-leader
+products:
+  - microsoft-365-copilot
+units:
+  - learn.dpu.plan-ai-skilling-journey.introduction
+  - learn.dpu.plan-ai-skilling-journey.assess-your-ai-readiness
+  - learn.dpu.plan-ai-skilling-journey.build-structured-role-based-skilling-journeys
+  - learn.dpu.plan-ai-skilling-journey.exercise-draft-ai-skilling-journey-microsoft-365-copilot
+  - learn.dpu.plan-ai-skilling-journey.keep-learning-current-relevant
+  - learn.dpu.plan-ai-skilling-journey.foster-collaboration-responsible-ai-use
+  - learn.dpu.plan-ai-skilling-journey.knowledge-check
+  - learn.dpu.plan-ai-skilling-journey.summary
+badge:
+  uid: learn.dpu.plan-ai-skilling-journey.badge
