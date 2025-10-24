@@ -2,7 +2,7 @@
 uid: learn.wwl.manage-application-configuration-data.knowledge-check
 title: Module assessment
 metadata:
-  title: Module assessment
+  title: Module Assessment
   description: "Validate comprehension of configuration management patterns, Azure App Configuration, Key Vault integration, and feature flag implementations"
   ms.date: 10/24/2025
   author: LuizMacedo
