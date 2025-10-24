@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.dpu.generative-ai-productivity
+title: Unlock productivity with generative AI
+metadata:
+  title: Unlock Productivity With Generative AI
+  description: Learn how generative AI enhances productivity, ensures responsible use, and empowers innovation through Microsoft tools like Copilot Studio and Azure AI. This module explores practical applications, security principles, and platform capabilities to help organizations confidently adopt and scale AI solutions.
+  ms.date: 10/24/2025
+  author: hhreyes21
+  ms.author: v-homerreyes
+  ms.topic: module
+  ms.service: microsoft-365-copilot
+summary: >
+  Learn how generative AI enhances productivity, ensures responsible use, and empowers innovation through Microsoft tools like Copilot Studio and Azure AI. This module explores practical applications, security principles, and platform capabilities to help organizations confidently adopt and scale AI solutions.
+abstract: |
+ By the end of this module, you're able to:
+
+ - Describe how generative AI enhances productivity in business scenarios.
+ - Identify key security and compliance considerations for responsible AI use.
+ - Explain the role of Microsoft platforms like Copilot Studio and Azure AI in enabling AI innovation.
+ - Distinguish between different AI capabilities and how they support business transformation.
+
+prerequisites: |
+  - None
+iconUrl: /training/achievements/generic-badge.svg
+ratingEnabled: false
+levels:
+  - beginner
+roles:
+  - administrator
+  - business-leader
+  - business-owner
+  - business-user
+  - technology-manager
+products:
+  - microsoft-365-copilot
+  - azure-local
+units:
+  - learn.dpu.generative-ai-productivity.introduction
+  - learn.dpu.generative-ai-productivity.generative-ai-and-its-impact-business-productivity
+  - learn.dpu.generative-ai-productivity.secure-responsible-ai
+  - learn.dpu.generative-ai-productivity.ai-innovation-platform
+  - learn.dpu.generative-ai-productivity.summary
+badge:
+  uid: learn.dpu.generative-ai-productivity.badge
