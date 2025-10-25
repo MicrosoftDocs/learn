@@ -43,9 +43,10 @@ quiz:
         - content: "Use the keyword `Throw` followed by a string or object."
           isCorrect: true
           explanation: "That's correct."
-        - content: "Create a new instance of the class `Error`, like this: `new Error("error message")`."
+        - content: "Create a new instance of the class `Error`, like this: `new Error(\u0022error message\u0022)`."
           isCorrect: false
           explanation: "Incorrect. That's not how you do it."
         - content: "Use the common parameter `ErrorAction`, like this: `-ErrorAction Error`."
           isCorrect: false
           explanation: "Incorrect. You can use an `-ErrorAction` to cause an error, but it needs to have the `Stop` argument. `Error` isn't a valid argument."
+
