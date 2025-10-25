@@ -25,7 +25,7 @@ You can create Windows VMs with the Azure portal, Azure CLI, or Azure PowerShell
 
 Azure presents a *wizard* as a series of tabs to walk you through all the configuration details for creating the VM. The first tab is **Basics**. You can select **Next** or **Previous** to move from one tab to another, or you can select any tab in the horizontal menu to move to a  customizable configuration section.
 
-:::image type="content" source="../media/3-azure-portal-create-vm.png" border="true" alt-text="Screenshot showing **Basics** tab of the **Create a virtual machine** pane.":::
+:::image type="content" source="../media/3-azure-portal-create-vm.png" border="true" alt-text="Screenshot showing Basics tab of the Create a virtual machine pane.":::
 
 ### Configure basic VM settings
 
@@ -65,7 +65,7 @@ Azure presents a *wizard* as a series of tabs to walk you through all the config
 1. Select **Next : Disks**.
 
     > [!TIP]
-    > You can use the horizonal scroll bar to slide the view to the left to get back to the VM settings, which had opened a new pane on the right hand side.
+    > You can use the horizontal scroll bar to slide the view to the left to get back to the VM settings, which had opened a new pane on the right hand side.
 
 ## Configure disks for the VM
 
@@ -129,3 +129,4 @@ On the **Create a virtual machine** pane, the rest of the tabs have reasonable d
 1. After deployment completes, select **Go to resource**. Your virtual machine pane appears.
 
 Now, let's look at what we can do with this VM.
+
