@@ -1,3 +1,81 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=2e6bb99b-40d5-40ac-a70f-f2f83e151fe5]
+
+> [!NOTE]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
+To a computer, an image is an array of numeric *pixel* values. For example, consider the following array:
+
+```
+ 0   0   0   0   0   0   0  
+ 0   0   0   0   0   0   0
+ 0   0  255 255 255  0   0
+ 0   0  255 255 255  0   0
+ 0   0  255 255 255  0   0
+ 0   0   0   0   0   0   0
+ 0   0   0   0   0   0   0
+```
+
+The array consists of seven rows and seven columns, representing the pixel values for a 7x7 pixel image (which is known as the image's *resolution*). Each pixel has a value between 0 (black) and 255 (white); with values between these bounds representing shades of gray. The image represented by this array looks similar to the following (magnified) image:
+
+![Diagram of a grayscale image.](../media/white-square.png)
+
+The array of pixel values for this image is two-dimensional (representing rows and columns, or *x* and *y* coordinates) and defines a single rectangle of pixel values. A single layer of pixel values like this represents a grayscale image. In reality, most digital images are multidimensional and consist of three layers (known as *channels*) that represent red, green, and blue (RGB) color hues. For example, we could represent a color image by defining three channels of pixel values that create the same square shape as the previous grayscale example:
+
+```
+Red:
+ 150  150  150  150  150  150  150  
+ 150  150  150  150  150  150  150
+ 150  150  255  255  255  150  150
+ 150  150  255  255  255  150  150
+ 150  150  255  255  255  150  150
+ 150  150  150  150  150  150  150
+ 150  150  150  150  150  150  150
+
+Green:
+ 0    0    0    0    0    0    0          
+ 0    0    0    0    0    0    0
+ 0    0   255  255  255   0    0
+ 0    0   255  255  255   0    0
+ 0    0   255  255  255   0    0
+ 0    0    0    0    0    0    0
+ 0    0    0    0    0    0    0
+
+Blue:
+ 255  255  255  255  255  255  255  
+ 255  255  255  255  255  255  255
+ 255  255   0    0    0   255  255
+ 255  255   0    0    0   255  255
+ 255  255   0    0    0   255  255
+ 255  255  255  255  255  255  255
+ 255  255  255  255  255  255  255
+```
+
+Here's the resulting image:
+
+![Diagram of a color image.](../media/color-square.png)
+
+The purple squares are represented by the combination: 
+```
+Red: 150 
+Green: 0 
+Blue: 255 
+```
+
+The yellow squares in the center are represented by the combination: 
+```
+Red: 255
+Green: 255
+Blue: 0
+```
+
+## Filters
+
 A common way to perform image processing tasks is to apply *filters* that modify the pixel values of the image to create a visual effect. A filter is defined by one or more arrays of pixel values, called filter *kernels*. For example, you could define filter with a 3x3 kernel as shown in this example:
 
 ```
@@ -52,8 +130,8 @@ To see the effect of the filter more clearly, here's an example of the same filt
 
 | Original Image | Filtered Image |
 |--|--|
-|![Diagram of a banana.](../media/banana-grayscale.png)| ![Diagram of a filtered banana.](../media/laplace.png)|
+|![Photograph of a dog.](../media/dog-grayscale.png)| ![Photograph of a dog with a Laplace filter applied.](../media/dog-filtered.png)|
 
-Because the filter is convolved across the image, this kind of image manipulation is often referred to as *convolutional filtering*. The filter used in this example is a particular type of filter (called a *laplace* filter) that highlights the edges on objects in an image. There are many other kinds of filter that you can use to create blurring, sharpening, color inversion, and other effects.
+Because the filter is convolved across the image, this kind of image manipulation is often referred to as *convolutional filtering*. The filter used in this example is a particular type of filter (called a *Laplace* filter) that highlights the edges on objects in an image. There are many other kinds of filter that you can use to create blurring, sharpening, color inversion, and other effects.
 
-Next, let's connect concepts of convolutional filtering to modern vision models. 
+::: zone-end
