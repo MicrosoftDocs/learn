@@ -15,5 +15,5 @@ The models used for computer vision tasks have evolved from statistics-based ima
 
 ::: zone-end
 
-> [!NOTE]
+> [!TIP]
 > For more information, see **[What is Computer Vision?](https://azure.microsoft.com/resources/cloud-computing-dictionary/what-is-computer-vision?azure-portal=true)**.
