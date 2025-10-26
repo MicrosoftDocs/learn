@@ -13,7 +13,13 @@ metadata:
     - wwl-ai-copilot
 title: Introduction to computer vision concepts
 summary: Introduction to computer vision concepts
-abstract: Introduction to computer vision concepts
+abstract: |
+  After completing this module, you will be able to:
+  -   Identify different types of computer vision tasks
+  -   Describe how filters are used in image analysis
+  -   Describe the main features of a convolutional neural network (CNN)
+  -   Describe the main features of a vision transformer (ViT)
+  -   Describe how generative AI can be used to create images
 prerequisites: A basic understanding of machine learning concepts
 iconUrl: /training/achievements/analyze-images-computer-vision.svg
 levels:
