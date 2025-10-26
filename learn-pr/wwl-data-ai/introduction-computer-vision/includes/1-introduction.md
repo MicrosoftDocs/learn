@@ -11,7 +11,7 @@
 Consider these scenarios: 
 
 - An autonomous vehicle needs to detect and respond to traffic and pedestrians.
-- A store uses smart checkouts with cameras to determine the products in a customers basket.
+- A store uses smart checkouts with cameras to determine the products in a customer's basket.
 - A doorbell camera is used to detect people at your front door.
 
 These use cases, and many others, rely on computer vision.

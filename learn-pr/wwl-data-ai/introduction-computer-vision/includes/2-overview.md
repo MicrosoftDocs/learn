@@ -37,4 +37,6 @@ The latest *multimodal* computer vision models are trained to find contextual re
 
 ![Photograph of a person eating an apple.](../media/image-analysis.png)
 
+***A person eating an apple.***
+
 ::: zone-end
