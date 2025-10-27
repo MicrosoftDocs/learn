@@ -1,10 +1,7 @@
-Now it's your chance to explore some generative AI scenarios!
+Now it's your chance to explore generative AI!
 
-In this exercise, you'll see how generative AI and agentic AI can be used to:
-
-- Power an intelligent agent that assists employees with expense claims.
-- Help a recruiter match candidates to available jobs and generate email messages.
+In this exercise, you'll use a chat playground to interact with a generative AI model, and observe the effect of system prompts, model parameters, and grounding the model with data.
 
 Launch the exercise and follow the instructions.
 
-[![Button to launch exercise.](../media/launch-exercise.png)](https://go.microsoft.com/fwlink/?linkid=2334224&azure-portal=true)
+[![Button to launch exercise.](../media/launch-exercise.png)](https://go.microsoft.com/fwlink/?linkid=2339547&azure-portal=true)
