@@ -5,11 +5,12 @@ metadata:
   title: Summary
   description: Summary
   author: wwlpublish
-  ms.author: sheryang
-  ms.date: 5/20/2025
+  ms.author: gmalc
+  ms.date: 10/24/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
+  zone_pivot_groups: video-or-text
 durationInMinutes: 1
 content: |
   [!include[](includes/7-summary.md)]
