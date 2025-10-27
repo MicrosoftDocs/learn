@@ -1,5 +1,12 @@
 Virtual machines must be sized appropriately for the expected work. A VM without the correct amount of memory or CPU will fail under load or run too slowly to be effective.
 
+[!INCLUDE[](../../../includes/azure-optional-exercise-subscription-note.md)]
+
+[!INCLUDE[](../../../includes/azure-cloud-shell-terminal-note.md)]
+
+> [!NOTE]
+> Throughout this exercise, replace **myResourceGroupName** in the examples with the name of an existing resource group, or the name of the resource group that you created for this exercise.
+
 ## Predefined VM sizes
 
 When you create a virtual machine, you can supply a _VM size_ value that determines the amount of compute resources devoted to the VM, including CPU, GPU, and memory made available to the virtual machine from Azure.
@@ -54,7 +61,7 @@ We didn't specify a size when we created our VM, so Azure selected a default gen
 
 ```azurecli
 az vm create \
-    --resource-group "<rgn>[sandbox resource group name]</rgn>" \
+    --resource-group "myResourceGroupName" \
     --name SampleVM2 \
     --image Ubuntu2204 \
     --admin-username azureuser \
@@ -72,21 +79,18 @@ We can also resize an existing VM if the workload changes or if it was incorrect
 
 ```azurecli
 az vm list-vm-resize-options \
-    --resource-group "<rgn>[sandbox resource group name]</rgn>" \
+    --resource-group "myResourceGroupName" \
     --name SampleVM \
     --output table
 ```
 
 This command returns a list of all the possible size configurations available in the resource group. If the size we want isn't available in our cluster but _is_ available in the region, we can [deallocate the VM](/cli/azure/vm#az-vm-deallocate). This command stops the running VM and removes it from the current cluster without losing any resources. We can then resize it, which re-creates the VM in a new cluster where the size configuration is available.
 
-> [!NOTE]
-> The Microsoft Learn sandbox is limited to a few VM sizes.
-
 To resize a VM, we'll use the `vm resize` command. For example, perhaps we find our VM is underpowered for the task we want it to perform. We could bump it up to a D2s_v3, where it has 2 vCores and 8 GB of memory. Type this command in Cloud Shell:
 
 ```azurecli
 az vm resize \
-    --resource-group "<rgn>[sandbox resource group name]</rgn>" \
+    --resource-group "myResourceGroupName" \
     --name SampleVM \
     --size Standard_D2s_v3
 ```
