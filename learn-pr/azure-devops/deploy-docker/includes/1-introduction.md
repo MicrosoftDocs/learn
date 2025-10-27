@@ -1,4 +1,4 @@
-In [Create a release pipeline in Azure Pipelines](/training/modules/create-release-pipeline?azure-portal=true), you built a basic release pipeline that deploys an ASP.NET Core application to Azure App Service. Although this process covers the needs for basic applications, modern solutions often require a combination of applications, services, and other components.
+Although a basic release pipeline covers the needs for basic applications, modern solutions often require a combination of applications, services, and other components.
 
 Azure provides great support for traditional app deployments, such as to virtual machines or application services. Another option you might consider is to deploy your app by using a container. A *container* app is one that's packaged and published as a single artifact that can be deployed with all of its dependencies to run in an isolated environment.
 
