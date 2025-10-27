@@ -13,6 +13,6 @@ You learned how to:
 
 ## Additional resources
 
-- [Building a pipeline with DSC - Azure Pipelines](/azure/devops/pipelines/release/dsc-cicd?view=azure-devops)
-- [Azure Automation State Configuration overview](/azure/automation/automation-dsc-overview)
-- [Desired State Configuration for Azure overview](/azure/virtual-machines/extensions/dsc-overview)
+- [Building a pipeline with DSC - Azure Pipelines](/azure/devops/pipelines/release/dsc-cicd).
+- [Azure Automation State Configuration overview](/azure/automation/automation-dsc-overview).
+- [Desired State Configuration for Azure overview](/azure/virtual-machines/extensions/dsc-overview).

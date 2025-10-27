@@ -24,7 +24,7 @@ While eliminating **configuration drift** can be difficult, there are many ways 
 
 ### Windows PowerShell Desired State Configuration
 
-**Windows PowerShell Desired State Configuration (DSC)** is a management platform in **PowerShell** that enables you to manage and enforce resource configurations. For more information about **Windows PowerShell Desired State Configuration**, go to [Windows PowerShell Desired State Configuration Overview](/powershell/scripting/dsc/overview?view=powershell-7.4).
+**Windows PowerShell Desired State Configuration (DSC)** is a management platform in **PowerShell** that enables you to manage and enforce resource configurations. For more information about **Windows PowerShell Desired State Configuration**, go to [Windows PowerShell Desired State Configuration Overview](/powershell/scripting/dsc/overview).
 
 ### Azure Policy
 
