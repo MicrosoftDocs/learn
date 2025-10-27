@@ -2,11 +2,15 @@ In this unit, you use Azure Cloud Shell on the right side of your screen as your
 
 First, you learn how to set up a profile so you can customize your working environment the way you want it. Then, you write some basic scripts and get a feeling for interpolation and scope.
 
+[!INCLUDE[](../../../includes/azure-optional-exercise-subscription-note.md)]
+
+[!INCLUDE[](../../../includes/azure-cloud-shell-terminal-note.md)]
+
 ## Set up a profile
 
 A profile is a script that runs when you start a new session. Having a customized environment can make you more productive.
 
-1. In the Cloud Shell window on the right side of the screen, select the **More** icon (**...**), then select **Settings** > **Go to Classic version**.
+1. Open the [Azure Cloud Shell](https://shell.azure.com/), select **Settings**, and then **Go to Classic version**.
 
 1. Enter `pwsh` in a terminal window to start a PowerShell session:
 
