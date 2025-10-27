@@ -820,8 +820,8 @@ TEST_MODE=true ./deploy-infrastructure.sh
 
 ### Additional resources
 
-- **Azure CLI samples repository:** [github.com/Azure-Samples/azure-cli-samples](https://github.com/Azure-Samples/azure-cli-samples)
-- **Azure CLI scripting guide:** [learn.microsoft.com/cli/azure/azure-cli-vm-tutorial](https://learn.microsoft.com/cli/azure/azure-cli-vm-tutorial)
-- **Bash scripting best practices:** [www.gnu.org/software/bash/manual/](https://www.gnu.org/software/bash/manual/)
+- **Azure CLI samples repository:** [github.com/Azure-Samples/azure-cli-samples](https://github.com/Azure-Samples/azure-cli-samples).
+- **Azure CLI scripting guide:** [learn.microsoft.com/cli/azure/azure-cli-vm-tutorial](/cli/azure/azure-cli-vm-tutorial).
+- **Bash scripting best practices:** [www.gnu.org/software/bash/manual/](https://www.gnu.org/software/bash/manual/).
 
 The scripts in this unit demonstrate **Azure CLI** capabilities when combining variables, loops, conditionals, and error handling with **Azure CLI** commands. These patterns scale from managing a few resources to orchestrating complex enterprise infrastructure deployments.

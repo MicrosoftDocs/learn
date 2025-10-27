@@ -195,4 +195,5 @@ To find examples for **Azure CLI** reference commands, use one of several A to Z
 
 Both the **Azure portal** and **Microsoft Edge** offer **Copilot** experiences that return information on **Azure CLI** reference commands, samples, and published articles. **Copilot** also provides links to related **Stack Overflow** questions. When you have a difficult job to be done with multiple scripting steps, **Copilot** is helpful in compiling multiple sources of information to answer your question.
 
-> [!NOTE] > **GitHub Copilot** can also help you write **Azure CLI** scripts directly in your code editor, providing intelligent code completion and suggestions.
+> [!NOTE] 
+> **GitHub Copilot** can also help you write **Azure CLI** scripts directly in your code editor, providing intelligent code completion and suggestions.

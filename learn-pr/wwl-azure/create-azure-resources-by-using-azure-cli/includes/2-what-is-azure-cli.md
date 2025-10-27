@@ -47,11 +47,11 @@ Installation details and command execution patterns are explained in depth later
 
 **Examples of core reference groups:**
 
-- `az account` - Manage Azure subscriptions
-- `az group` - Manage resource groups
-- `az storage` - Manage Azure Storage accounts
-- `az vm` - Manage virtual machines
-- `az network` - Manage networking resources
+- `az account` - Manage Azure subscriptions.
+- `az group` - Manage resource groups.
+- `az storage` - Manage Azure Storage accounts.
+- `az vm` - Manage virtual machines.
+- `az network` - Manage networking resources.
 
 ### Extensions
 
@@ -64,9 +64,9 @@ Installation details and command execution patterns are explained in depth later
 
 **Common use cases for extensions:**
 
-- Preview features for Azure services
-- Specialized tools for specific scenarios (e.g., Azure IoT, Azure ML)
-- Vendor-provided commands for third-party integrations
+- Preview features for Azure services.
+- Specialized tools for specific scenarios (e.g., Azure IoT, Azure ML).
+- Vendor-provided commands for third-party integrations.
 
 **Example:** The first time you run an extension command, Azure CLI prompts you:
 
@@ -91,23 +91,23 @@ The command requires the extension aks-preview. Do you want to install it now? (
 
 - **GA (Generally Available):**
 
-  - Production-ready, stable commands
-  - Breaking changes only in major version updates
-  - Full Microsoft support and SLA coverage
-  - Recommended for production workloads
+  - Production-ready, stable commands.
+  - Breaking changes only in major version updates.
+  - Full Microsoft support and SLA coverage.
+  - Recommended for production workloads.
 
 - **Public Preview:**
 
-  - New features available for testing and feedback
-  - May have breaking changes without notice
-  - Limited support; report issues through GitHub or feedback channels
-  - Test in development environments before production use
+  - New features available for testing and feedback.
+  - May have breaking changes without notice.
+  - Limited support; report issues through GitHub or feedback channels.
+  - Test in development environments before production use.
 
 - **Deprecated:**
-  - Command scheduled for removal in future release
-  - Usually replaced by newer, better command
-  - Migration path provided in documentation
-  - Avoid using in new scripts or automation
+  - Command scheduled for removal in future release.
+  - Usually replaced by newer, better command.
+  - Migration path provided in documentation.
+  - Avoid using in new scripts or automation.
 
 **Important:** Both core and extension commands can have any status. A core command might be in preview, and an extension command might be GA.
 
@@ -144,10 +144,10 @@ az <reference-group> <subgroup> <command> --<parameter> <value>
 az account set --subscription "my subscription name"
 ```
 
-- **Reference group:** `az account` (manages Azure subscriptions)
-- **Command:** `set` (changes the active subscription)
-- **Parameter:** `--subscription` (specifies which subscription)
-- **Parameter value:** `"my subscription name"` (your subscription name or ID)
+- **Reference group:** `az account` (manages Azure subscriptions).
+- **Command:** `set` (changes the active subscription).
+- **Parameter:** `--subscription` (specifies which subscription).
+- **Parameter value:** `"my subscription name"` (your subscription name or ID).
 
 ### More command examples
 
@@ -192,17 +192,17 @@ az vm restart --name myVM --resource-group myResourceGroup
 
 **Interactive mode** allows you to type commands at a terminal prompt and see immediate results. This approach is ideal for:
 
-- Learning Azure CLI commands and syntax
-- Exploring Azure resources and their properties
-- Quick one-time tasks (creating a test resource, checking status)
-- Troubleshooting and debugging
+- Learning Azure CLI commands and syntax.
+- Exploring Azure resources and their properties.
+- Quick one-time tasks (creating a test resource, checking status).
+- Troubleshooting and debugging.
 
 **How it works:**
 
-1. Open your preferred shell (Bash, PowerShell, cmd.exe, Azure Cloud Shell)
-2. Type the Azure CLI command at the prompt
-3. Press Enter to execute
-4. View the results immediately
+1. Open your preferred shell (Bash, PowerShell, cmd.exe, Azure Cloud Shell).
+2. Type the Azure CLI command at the prompt.
+3. Press Enter to execute.
+4. View the results immediately.
 
 **Example:** Restart a virtual machine interactively:
 
@@ -227,17 +227,17 @@ $ az storage account create --name mystorageacct --resource-group myRG --locatio
 
 **Scripted mode** combines multiple Azure CLI commands into a script file for automation. This approach is essential for:
 
-- Repetitive tasks (creating development environments daily)
-- Complex multi-step operations (deploying entire applications)
-- CI/CD pipelines (automated deployments)
-- Infrastructure as Code (IaC) implementations
+- Repetitive tasks (creating development environments daily).
+- Complex multi-step operations (deploying entire applications).
+- CI/CD pipelines (automated deployments).
+- Infrastructure as Code (IaC) implementations.
 
 **How it works:**
 
-1. Write Azure CLI commands in a script file (`.sh` for Bash, `.ps1` for PowerShell)
-2. Add variables, loops, and conditional logic as needed
-3. Make the script executable (Bash: `chmod +x script.sh`)
-4. Execute the script with parameters
+1. Write Azure CLI commands in a script file (`.sh` for Bash, `.ps1` for PowerShell).
+2. Add variables, loops, and conditional logic as needed.
+3. Make the script executable (Bash: `chmod +x script.sh`).
+4. Execute the script with parameters.
 
 **Example:** Bash script that creates multiple storage accounts:
 

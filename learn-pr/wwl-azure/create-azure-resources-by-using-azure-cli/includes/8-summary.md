@@ -19,14 +19,10 @@ In this module, you learned how to:
 - **CI/CD integration:** Incorporate **Azure CLI** into your **DevOps** pipelines for infrastructure as code.
 - **Cross-platform:** Works on **Windows**, **Linux**, **macOS**, **Docker**, and **Azure Cloud Shell**.
 
-<!-- Cleanup sandbox -->
-
-[!include[](../../../includes/azure-sandbox-cleanup.md)]
-
 ## Learn more
 
-- [Azure CLI onboarding cheat sheet](/cli/azure/cheat-sheet-onboarding)
-- [Tutorial: Learn to use the Azure CLI](/cli/azure/get-started-tutorial-0-before-you-begin)
-- [Azure CLI samples GitHub repository](https://github.com/Azure-Samples/azure-cli-samples)
-- [JMESPath tutorial](https://jmespath.org/tutorial.html)
-- [Install Azure CLI](/cli/azure/install-azure-cli)
+- [Azure CLI onboarding cheat sheet](/cli/azure/cheat-sheet-onboarding).
+- [Tutorial: Learn to use the Azure CLI](/cli/azure/get-started-tutorial-0-before-you-begin).
+- [Azure CLI samples GitHub repository](https://github.com/Azure-Samples/azure-cli-samples).
+- [JMESPath tutorial](https://jmespath.org/tutorial.html).
+- [Install Azure CLI](/cli/azure/install-azure-cli).
