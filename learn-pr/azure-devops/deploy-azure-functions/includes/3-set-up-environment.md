@@ -90,8 +90,6 @@ At the end of this module, move the card to the **Done** column after you comple
 
 Here, you create the App Service and Azure Functions app required to deploy the new version of the site and API.
 
-In the [Create a release pipeline with Azure Pipelines](/training/modules/create-release-pipeline?azure-portal=true) Learn module, you brought up App Service through the Azure portal. Although the portal is a great way to explore what's available on Azure or to do basic tasks, bringing up components such as App Service can be tedious.
-
 In this module, you use the Azure CLI to bring up an App Service instance. You can access the Azure CLI from a terminal or through Visual Studio Code. Used Azure CLI from Azure Cloud Shell. This browser-based shell experience is hosted in the cloud. In Cloud Shell, the Azure CLI is configured for use with your Azure subscription.
 
 > [!IMPORTANT]
@@ -266,7 +264,7 @@ Your solution requires several Azure resources for deployment, which you create 
 
 ## Create pipeline variables in Azure Pipelines
 
-In the [Create a release pipeline with Azure Pipelines](/training/modules/create-release-pipeline?azure-portal=true) module, you added a variable to your pipeline that stores the name of your web app in App Service. Here, do the same. Also, add the name of your leaderboard app for the Azure Functions instance.
+Here, you add a variable to your pipeline that stores the name of your web app in App Service. Also, you add the name of your leaderboard app for the Azure Functions instance.
 
 You could hard-code these names in your pipeline configuration, but if you define them as variables, your configuration is more reusable. Plus, if the names of your instances change, you can update the variables and trigger your pipeline without modifying your configuration.
 

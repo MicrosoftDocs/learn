@@ -10,13 +10,20 @@ In the previous diagram, notice that the local network gateway names in each loc
 
 In this unit, you configure the virtual networks with a subnet, add a gateway subnet, and then create the local network gateway by using the Azure CLI.
 
+[!INCLUDE[](../../../includes/azure-optional-exercise-subscription-note.md)]
+
+[!INCLUDE[](../../../includes/azure-optional-exercise-create-resource-group-note.md)]
+
+> [!NOTE]
+> Throughout this exercise, replace **myResourceGroupName** in the examples with the name of an existing resource group, or the name of the resource group that you created for this exercise.
+
 ## Create the Azure-side resources
 
 1. Run the following command in Azure Cloud Shell to create the **Azure-VNet-1** virtual network and the **Services** subnet:
 
     ```azurecli
     az network vnet create \
-        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
+        --resource-group "myResourceGroupName" \
         --name Azure-VNet-1 \
         --address-prefixes 10.0.0.0/16 \
         --subnet-name Services \
@@ -27,7 +34,7 @@ In this unit, you configure the virtual networks with a subnet, add a gateway su
 
     ```azurecli
     az network vnet subnet create \
-        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
+        --resource-group "myResourceGroupName" \
         --vnet-name Azure-VNet-1 \
         --address-prefixes 10.0.255.0/27 \
         --name GatewaySubnet
@@ -37,7 +44,7 @@ In this unit, you configure the virtual networks with a subnet, add a gateway su
 
     ```azurecli
     az network local-gateway create \
-        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
+        --resource-group "myResourceGroupName" \
         --gateway-ip-address 94.0.252.160 \
         --name LNG-HQ-Network \
         --local-address-prefixes 10.1.0.0/16
@@ -51,7 +58,7 @@ In this unit, you configure the virtual networks with a subnet, add a gateway su
 
     ```azurecli
     az network vnet create \
-        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
+        --resource-group "myResourceGroupName" \
         --name HQ-Network \
         --address-prefixes 172.16.0.0/16 \
         --subnet-name Applications \
@@ -62,7 +69,7 @@ In this unit, you configure the virtual networks with a subnet, add a gateway su
 
     ```azurecli
     az network vnet subnet create \
-        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
+        --resource-group "myResourceGroupName" \
         --address-prefixes 172.16.255.0/27 \
         --name GatewaySubnet \
         --vnet-name HQ-Network
@@ -72,7 +79,7 @@ In this unit, you configure the virtual networks with a subnet, add a gateway su
 
     ```azurecli
     az network local-gateway create \
-        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
+        --resource-group "myResourceGroupName" \
         --gateway-ip-address 94.0.252.160 \
         --name LNG-Azure-VNet-1 \
         --local-address-prefixes 172.16.255.0/27
@@ -92,7 +99,7 @@ In this unit, you configure the virtual networks with a subnet, add a gateway su
 
     ```azurecli
     az network local-gateway list \
-        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
+        --resource-group "myResourceGroupName" \
         --output table
     ```
 
