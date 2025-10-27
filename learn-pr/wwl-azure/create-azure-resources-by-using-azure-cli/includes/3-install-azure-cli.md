@@ -28,9 +28,11 @@ The following sections provide platform-specific installation instructions for *
 
 1. Download and install the latest release of **Azure CLI**. When the installer asks if it can make changes to your computer, select the **Yes** box.
 
-   > [!div class="nextstepaction"] > [Latest MSI of the Azure CLI (32-bit)](https://aka.ms/installazurecliwindows)
+   > [!div class="nextstepaction"] 
+   > [Latest MSI of the Azure CLI (32-bit)](https://aka.ms/installazurecliwindows)
 
-   > [!div class="nextstepaction"] > [Latest MSI of the Azure CLI (64-bit)](https://aka.ms/installazurecliwindowsx64)
+   > [!div class="nextstepaction"] 
+   > [Latest MSI of the Azure CLI (64-bit)](https://aka.ms/installazurecliwindowsx64)
 
    If you previously installed **Azure CLI**, running either the 32-bit or 64-bit **Microsoft Installer (MSI)** overwrites an existing installation.
 
