@@ -2,6 +2,13 @@ Now, you're ready to create and deploy some virtual networks with the IP address
 
 In this unit, you deploy three virtual networks and subnets to support resources in those virtual networks.
 
+[!INCLUDE[](../../../includes/azure-optional-exercise-subscription-note.md)]
+
+[!INCLUDE[](../../../includes/azure-optional-exercise-create-resource-group-note.md)]
+
+> [!NOTE]
+> Throughout this exercise, replace **myResourceGroupName** in the examples with the name of an existing resource group, or the name of the resource group that you created for this exercise.
+
 The **CoreServicesVnet** virtual network is deployed in the **US West** region. This virtual network has the largest number of resources. It has connectivity to on-premises networks through a VPN connection. This network has web services, databases, and other systems that are key to business operations. Shared services, such as domain controllers and Domain Name System (DNS), are located here as well. A large amount of growth is anticipated, so a large address space is necessary for this virtual network.
 
 The **ManufacturingVnet** virtual network is deployed in the **North Europe** region, near the location of your organization's manufacturing facilities. This virtual network contains systems for the manufacturing facilities' operations. The organization is anticipating a large number of internal connected devices from which their systems retrieve data (such as temperature) and need an IP address space for expansion.
@@ -36,38 +43,38 @@ These virtual networks and subnets are structured in a way that accommodates exi
 
     ```azurecli
     az network vnet create \
-        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
+        --resource-group "myResourceGroupName" \
         --name CoreServicesVnet \
         --address-prefixes 10.20.0.0/16 \
         --location westus
     ```
 
    > [!NOTE]
-   > If the `--resource-group` name value in the following command is listed as "[sandbox resource group name]", replace that value with the sandbox `--resource-group` name value from the previous step.
+   > Replace **myResourceGroupName** with the name of your resource group.
 
 1. Now, let's create the subnets that we need for the planned resources in the virtual network:
 
     ```azurecli
     az network vnet subnet create \
-        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
+        --resource-group "myResourceGroupName" \
         --vnet-name CoreServicesVnet \
         --name GatewaySubnet \
         --address-prefixes 10.20.0.0/27
 
     az network vnet subnet create \
-        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
+        --resource-group "myResourceGroupName" \
         --vnet-name CoreServicesVnet \
         --name SharedServicesSubnet \
         --address-prefixes 10.20.10.0/24
 
     az network vnet subnet create \
-        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
+        --resource-group "myResourceGroupName" \
         --vnet-name CoreServicesVnet \
         --name DatabaseSubnet \
         --address-prefixes 10.20.20.0/24
 
     az network vnet subnet create \
-        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
+        --resource-group "myResourceGroupName" \
         --vnet-name CoreServicesVnet \
         --name PublicWebServiceSubnet \
         --address-prefixes 10.20.30.0/24
@@ -77,7 +84,7 @@ These virtual networks and subnets are structured in a way that accommodates exi
 
     ```azurecli
     az network vnet subnet list \
-        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
+        --resource-group "myResourceGroupName" \
         --vnet-name CoreServicesVnet \
         --output table
     ```
@@ -87,10 +94,10 @@ These virtual networks and subnets are structured in a way that accommodates exi
     ```output
     AddressPrefix    Name                    PrivateEndpointNetworkPolicies    PrivateLinkServiceNetworkPolicies    ProvisioningState    ResourceGroup
     ---------------  ----------------------  --------------------------------  -----------------------------------  -------------------  -------------------------------------------
-    10.20.0.0/27     GatewaySubnet           Enabled                           Enabled                              Succeeded            <rgn>[sandbox resource group name]</rgn>
-    10.20.10.0/24    SharedServicesSubnet    Enabled                           Enabled                              Succeeded            <rgn>[sandbox resource group name]</rgn>
-    10.20.20.0/24    DatabaseSubnet          Enabled                           Enabled                              Succeeded            <rgn>[sandbox resource group name]</rgn>
-    10.20.30.0/24    PublicWebServiceSubnet  Enabled                           Enabled                              Succeeded            <rgn>[sandbox resource group name]</rgn>
+    10.20.0.0/27     GatewaySubnet           Enabled                           Enabled                              Succeeded            myResourceGroupName
+    10.20.10.0/24    SharedServicesSubnet    Enabled                           Enabled                              Succeeded            myResourceGroupName
+    10.20.20.0/24    DatabaseSubnet          Enabled                           Enabled                              Succeeded            myResourceGroupName
+    10.20.30.0/24    PublicWebServiceSubnet  Enabled                           Enabled                              Succeeded            myResourceGroupName
     ```
 
 ## Create the *ManufacturingVnet* virtual network
@@ -99,7 +106,7 @@ These virtual networks and subnets are structured in a way that accommodates exi
 
     ```azurecli
     az network vnet create \
-        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
+        --resource-group "myResourceGroupName" \
         --name ManufacturingVnet \
         --address-prefixes 10.30.0.0/16 \
         --location northeurope
@@ -109,25 +116,25 @@ These virtual networks and subnets are structured in a way that accommodates exi
 
     ```azurecli
     az network vnet subnet create \
-        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
+        --resource-group "myResourceGroupName" \
         --vnet-name ManufacturingVnet \
         --name ManufacturingSystemSubnet \
         --address-prefixes 10.30.10.0/24
 
     az network vnet subnet create \
-        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
+        --resource-group "myResourceGroupName" \
         --vnet-name ManufacturingVnet \
         --name SensorSubnet1 \
         --address-prefixes 10.30.20.0/24
 
     az network vnet subnet create \
-        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
+        --resource-group "myResourceGroupName" \
         --vnet-name ManufacturingVnet \
         --name SensorSubnet2 \
         --address-prefixes 10.30.21.0/24
 
     az network vnet subnet create \
-        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
+        --resource-group "myResourceGroupName" \
         --vnet-name ManufacturingVnet \
         --name SensorSubnet3 \
         --address-prefixes 10.30.22.0/24
@@ -137,7 +144,7 @@ These virtual networks and subnets are structured in a way that accommodates exi
 
     ```azurecli
     az network vnet subnet list \
-        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
+        --resource-group "myResourceGroupName" \
         --vnet-name ManufacturingVnet \
         --output table
     ```
@@ -147,10 +154,10 @@ These virtual networks and subnets are structured in a way that accommodates exi
     ```azurecli
     AddressPrefix    Name                       PrivateEndpointNetworkPolicies    PrivateLinkServiceNetworkPolicies    ProvisioningState    ResourceGroup
     ---------------  -------------------------  --------------------------------  -----------------------------------  -------------------  -------------------------------------------
-    10.30.10.0/24    ManufacturingSystemSubnet  Enabled                           Enabled                              Succeeded            <rgn>[sandbox resource group name]</rgn>
-    10.30.20.0/24    SensorSubnet1              Enabled                           Enabled                              Succeeded            <rgn>[sandbox resource group name]</rgn>
-    10.30.21.0/24    SensorSubnet2              Enabled                           Enabled                              Succeeded            <rgn>[sandbox resource group name]</rgn>
-    10.30.22.0/24    SensorSubnet3              Enabled                           Enabled                              Succeeded            <rgn>[sandbox resource group name]</rgn>
+    10.30.10.0/24    ManufacturingSystemSubnet  Enabled                           Enabled                              Succeeded            myResourceGroupName
+    10.30.20.0/24    SensorSubnet1              Enabled                           Enabled                              Succeeded            myResourceGroupName
+    10.30.21.0/24    SensorSubnet2              Enabled                           Enabled                              Succeeded            myResourceGroupName
+    10.30.22.0/24    SensorSubnet3              Enabled                           Enabled                              Succeeded            myResourceGroupName
     ```
 
 ## Create the *ResearchVnet* virtual network
@@ -159,7 +166,7 @@ These virtual networks and subnets are structured in a way that accommodates exi
 
     ```azurecli
     az network vnet create \
-        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
+        --resource-group "myResourceGroupName" \
         --name ResearchVnet \
         --address-prefixes 10.40.40.0/24 \
         --location westindia
@@ -169,7 +176,7 @@ These virtual networks and subnets are structured in a way that accommodates exi
 
     ```azurecli
     az network vnet subnet create \
-        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
+        --resource-group "myResourceGroupName" \
         --vnet-name ResearchVnet \
         --name ResearchSystemSubnet \
         --address-prefixes 10.40.40.0/24
@@ -179,7 +186,7 @@ These virtual networks and subnets are structured in a way that accommodates exi
 
     ```azurecli
     az network vnet subnet list \
-        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
+        --resource-group "myResourceGroupName" \
         --vnet-name ResearchVnet \
         --output table
     ```
@@ -189,7 +196,7 @@ These virtual networks and subnets are structured in a way that accommodates exi
     ```azurecli
     AddressPrefix    Name                  PrivateEndpointNetworkPolicies    PrivateLinkServiceNetworkPolicies    ProvisioningState    ResourceGroup
     ---------------  --------------------  --------------------------------  -----------------------------------  -------------------  -------------------------------------------
-    10.40.40.0/24    ResearchSystemSubnet  Enabled                           Enabled                              Succeeded            <rgn>[sandbox resource group name]</rgn>
+    10.40.40.0/24    ResearchSystemSubnet  Enabled                           Enabled                              Succeeded            myResourceGroupName
     ```
 
 With the virtual networks and subnets created, you have the infrastructure on which you can deploy resources.
