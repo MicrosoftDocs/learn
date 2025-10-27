@@ -24,7 +24,4 @@ Learning Path 1 Tips and Tricks
 - Ask students to think about examples of AI they have seen or used in real-life
 
 Learning Path 1 Demo
-- [Demo 01: Explore Automated Machine Learning in Azure Machine Learning](https://aka.ms/ai900-auto-ml)
-
-Learning Path 1 Exercise
-- [Exercise 01: Explore Azure AI Services](https://aka.ms/ai900-azure-ai-services)
+- [Demo 01: Explore Automated Machine Learning in Azure Machine Learning](https://microsoftlearning.github.io/mslearn-ai-fundamentals/)

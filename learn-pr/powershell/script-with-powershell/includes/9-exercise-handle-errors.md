@@ -1,8 +1,10 @@
-In this unit, you'll use Azure Cloud Shell on the right side of your screen as your Linux terminal. Azure Cloud Shell is a shell you can access through the Azure portal or at https://shell.azure.com. You don't have to install anything on your computer to use it.
-
 In this exercise, you'll use a `Try/Catch` block to ensure the script stops responding early if a certain condition isn't met. You'll again work with your backup script.
 
 Say you've noticed that you sometimes specify an erroneous path, which causes backup of files that shouldn't be backed up. You decide to add some error management.
+
+[!INCLUDE[](../../../includes/azure-optional-exercise-subscription-note.md)]
+
+[!INCLUDE[](../../../includes/azure-cloud-shell-terminal-note.md)]
 
 > [!NOTE]
 > Run the following commands *only* if you haven't completed any of the previous exercises in this module. We're assuming you've completed the previous exercises. If you haven't done so, you need a few files.
