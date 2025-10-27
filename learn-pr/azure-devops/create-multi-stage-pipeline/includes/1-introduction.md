@@ -1,4 +1,4 @@
-In [Create a release pipeline in Azure Pipelines](/training/modules/create-release-pipeline?azure-portal=true), you built a basic release pipeline. That pipeline has a *Build* stage that builds the artifact, and a *Deploy* stage that installs the web app on Azure App Service. Mara and Andy built this pipeline as a proof of concept that they showed to the rest of the team.
+A basic release pipeline has a *Build* stage that builds the artifact, and a *Deploy* stage that installs the web app on Azure App Service. Mara and Andy built this pipeline as a proof of concept that they showed to the rest of the team.
 
 An actual release pipeline has more stages. Each stage has its own set of tasks that can potentially take an artifact all the way to production.
 

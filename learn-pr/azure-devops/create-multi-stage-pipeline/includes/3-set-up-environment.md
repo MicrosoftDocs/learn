@@ -100,8 +100,6 @@ At the end of this module, you'll move the card to the **Done** column, after yo
 
 Here, you create the environments that define the pipeline stages. You create one App Service instance for each stage: *Dev*, *Test*, and *Staging*.
 
-In [Create a release pipeline with Azure Pipelines](/training/modules/create-release-pipeline?azure-portal=true), you brought up App Service through the Azure portal. Although the portal is a great way to explore what's available on Azure or to do basic tasks, bringing up components such as App Service can be tedious.
-
 In this module, you use the Azure CLI to bring up three App Service instances. You can access the Azure CLI from a terminal or through Visual Studio Code. Here, you access the Azure CLI from Azure Cloud Shell. This browser-based shell experience is hosted in the cloud. In Cloud Shell, the Azure CLI is configured for use with your Azure subscription.
 
 > [!IMPORTANT]
@@ -254,7 +252,7 @@ To create your App Service instances, follow these steps:
 
 ## Create pipeline variables in Azure Pipelines
 
-In [Create a release pipeline with Azure Pipelines](/training/modules/create-release-pipeline?azure-portal=true), you added a variable to your pipeline that stores the name of your web app in App Service. Here you do the same. But this time, you add one variable for each App Service instance that corresponds to a *Dev*, *Test*, or *Staging* stage in your pipeline.
+In this section, you add one variable for each App Service instance that corresponds to a *Dev*, *Test*, or *Staging* stage in your pipeline.
 
 You could hard-code these names in your pipeline configuration, but if you define them as variables, your configuration is more reusable. Additionally, if the names of your App Service instances change, you can update the variables and trigger your pipeline without modifying your configuration.
 
@@ -262,8 +260,6 @@ To add the variables:
 
 1. In Azure DevOps, go to your **Space Game - web - Multistage** project.
 1. Under **Pipelines**, select **Library**.
-
-    :::image type="content" source="../../create-release-pipeline/media/5-pipelines-library.png" alt-text="A screenshot of Azure Pipelines showing the location of the Library menu option.":::
 1. Select **+ Variable group**.
 1. Under **Properties**, enter **Release** for the variable group name.
 1. Under **Variables**, select **+ Add**.
@@ -287,8 +283,6 @@ To add the variables:
     :::image type="content" source="../media/3-library-variable-group.png" alt-text="A screenshot of Azure Pipelines showing the variable group. The group contains three variables.":::
 
 ## Create the dev and test environments
-
-In [Create a release pipeline with Azure Pipelines](/training/modules/create-release-pipeline?azure-portal=true), you created an environment for the **dev** environment. Here, you repeat the process for both the **dev** and **test** environments. Later, you set up the **staging** environment, which includes more criteria.
 
 To create the **dev** and **test** environments:
 

@@ -57,7 +57,6 @@ products:
 subjects:
 - devops
 modules:
-- learn.azdo.create-release-pipeline
 - learn.azdo.create-multi-stage-pipeline
 - learn.azdo.run-functional-tests-azure-pipelines
 - learn.azdo.run-non-functional-tests-azure-pipelines
