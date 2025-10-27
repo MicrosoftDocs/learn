@@ -51,7 +51,7 @@ Now that you've created your GitHub repository, you can create a Static Web Apps
 
 ::: zone pivot="angular"
 
-6. Select the **Angular** option, and press <kbd>Enter</kbd>
+6. Select the **Angular** option, and press <kbd>Enter</kbd>.
 
    :::image type="content" source="../media/extension-angular-option.png" alt-text="Screenshot showing the angular option selected.":::
 
@@ -67,7 +67,7 @@ Now that you've created your GitHub repository, you can create a Static Web Apps
 
 ::: zone pivot="react"
 
-6. Select the **React** option, and press <kbd>Enter</kbd>
+6. Select the **React** option, and press <kbd>Enter</kbd>.
 
    :::image type="content" source="../media/extension-react-option.png" alt-text="Screenshot showing the react option selected.":::
 
@@ -83,7 +83,7 @@ Now that you've created your GitHub repository, you can create a Static Web Apps
 
 ::: zone pivot="svelte"
 
-6. Select the **Svelte** option, and press <kbd>Enter</kbd>
+6. Select the **Svelte** option, and press <kbd>Enter</kbd>.
 
    :::image type="content" source="../media/extension-svelte-option.png" alt-text="Screenshot showing the svelte option selected.":::
 
@@ -99,7 +99,7 @@ Now that you've created your GitHub repository, you can create a Static Web Apps
 
 ::: zone pivot="vue"
 
-6. Select the **Vue** option, and press <kbd>Enter</kbd>
+6. Select the **Vue** option, and press <kbd>Enter</kbd>.
 
    :::image type="content" source="../media/extension-vue-option.png" alt-text="Screenshot showing the vue option selected.":::
 
