@@ -11,8 +11,8 @@ metadata:
     - devx-track-azurecli
 title: Exercise - Create an NVA and virtual machines
 durationInMinutes: 10
-interactive: bash
-azureSandbox: true
+#interactive: bash
+#azureSandbox: true
 content: |
   [!include[](includes/5-exercise-create-nva-vm.md)]
 

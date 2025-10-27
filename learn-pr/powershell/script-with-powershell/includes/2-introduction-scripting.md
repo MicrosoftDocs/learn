@@ -5,7 +5,8 @@ The steps to automate your task usually include calls to cmdlets, functions, var
 Before you start learning to script, let's get an overview of the features of the PowerShell scripting language:
 
 - **Variables**. You can use variables to store values. You can also use variables as arguments to commands.
-- **Functions**. A function is a named list of statements. Functions produce an output that display in the console. You can also use functions as input for other commands.
+- **Functions**. A function is a named list of statements. Functions produce an output that displays in the console. You can also use functions as input for other commands.
+
 
    > [!NOTE]
    > Many of the tasks you'd use PowerShell for are about side effects or modifications to system state (local or otherwise). Often the output is a secondary concern (reporting data, for example).
