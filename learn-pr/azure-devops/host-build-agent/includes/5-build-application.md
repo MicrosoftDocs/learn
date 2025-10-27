@@ -25,8 +25,6 @@ This branch contains the _Space Game_ project that you worked with in previous m
 
 1. Optionally, in Visual Studio Code, open the _azure-pipelines.yml_ file and familiarize yourself with the initial configuration.
 
-    The configuration resembles the basic one that you created in the [Create a build pipeline with Azure Pipelines](/training/modules/create-a-build-pipeline/6-create-the-pipeline?azure-portal=true) module. It builds only the application's release configuration.
-
 ## Modify the build configuration
 
 In this section, you'll modify the build configuration to switch from using a Microsoft-hosted agent to using the agent from your build pool.
