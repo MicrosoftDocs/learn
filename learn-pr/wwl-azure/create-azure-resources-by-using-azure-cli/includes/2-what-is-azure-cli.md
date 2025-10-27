@@ -65,7 +65,7 @@ Installation details and command execution patterns are explained in depth later
 **Common use cases for extensions:**
 
 - Preview features for Azure services.
-- Specialized tools for specific scenarios (e.g., Azure IoT, Azure ML).
+- Specialized tools for specific scenarios (e.g., Azure IoT, Azure Machine Learning).
 - Vendor-provided commands for third-party integrations.
 
 **Example:** The first time you run an extension command, Azure CLI prompts you:
