@@ -22,6 +22,7 @@ prerequisites: |
   - [Node.js LTS](https://nodejs.org/)
   - [GitHub](https://github.com) account
   - [Visual Studio Code](https://code.visualstudio.com)
+  - An Azure subscription. Sign up for a [free account](https://azure.microsoft.com/free/) or [Azure for Students](https://azure.microsoft.com/free/students/)
 iconUrl: /training/achievements/publish-static-web-app-and-api.svg
 levels:
   - beginner
@@ -42,4 +43,4 @@ units:
   - learn.azure.publish-static-web-app-and-api.12-summary
 badge:
   uid: learn.azure.publish-static-web-app-and-api.badge
-
+
