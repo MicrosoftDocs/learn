@@ -6,6 +6,8 @@ In this module, you have:
 
 Now that you understand how to plan IP addressing for Azure networks, you understand the private and public IP addressing capabilities of Azure virtual networks. You can use this information to plan out the IP addressing for your own Azure infrastructure.
 
+[!INCLUDE [](../../../includes/azure-optional-exercise-subscription-cleanup.md)]
+
 ## Learn more
 
 For more information about IP addressing in Azure, see the following articles:

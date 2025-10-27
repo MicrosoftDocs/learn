@@ -1,0 +1,60 @@
+### YamlMime:Module
+uid: learn.github.azure-devops-to-github-enterprise-migrations-part-ii-assessment-setup
+title: Azure Devops to GitHub Enterprise Migrations Part II - Source Environment Assessment and Target Environment Setup
+metadata:
+  title: Azure Devops to GitHub Enterprise Migrations Part II - Source Environment Assessment and Target Environment Setup
+  description: This module guides you through the critical preparation steps for migrating from Azure DevOps (ADO) to GitHub Enterprise Cloud (GHEC). You'll learn how to analyze the structure and dependencies of your ADO environment and translate that understanding into a secure, organized, and migration-ready GHEC setup.
+  author: camihmerhar
+  ms.author: camhernandez
+  ms.date: 10/17/2025
+  ms.update-cycle: 180-days
+  ms.service: github
+  ms.topic: module
+summary: By clearly understanding your source environment and setting up an appealing target environment, you turn migration into a straightforward execution process. Use your Phase 2 insights to align stakeholders and your Phase 3 setup to onboard a pilot team quickly—building momentum through clarity and strong foundations.
+abstract: |
+  By the end of this module, you'll be able to:
+  - Explain the purpose and value of a thorough source assessment in terms stakeholders can understand
+  - Generate and interpret an Azure DevOps inventory, turning raw CSV output into meaningful migration insights
+  - Recognize repository traits that influence migration approach and timelines
+  - Map Azure Boards and Azure Pipelines dependencies and choose appropriate migration strategies
+  - Validate GitHub Enterprise Cloud environment type and authentication readiness
+  - Design an organization and team structure that matches how your enterprise actually works
+  - Establish baseline repository governance so migrated teams are productive from day one
+  - Configure hybrid integrations with Azure Boards and Azure Pipelines to reduce transition risk
+prerequisites: |
+  Before starting, ensure you have:
+  
+  Access permissions:
+  - Azure DevOps Organization Admin or read permissions covering your target migration scope
+  - GitHub Enterprise Cloud Organization Owner or delegated administrative access
+  - Identity provider admin access for SAML/SCIM or group sync configuration
+
+  Required tokens and tools:
+  - Azure DevOps Personal Access Token with necessary scopes
+  - GitHub Personal Access Token with appropriate repository and admin scopes
+  - GitHub CLI with the ADO2GH extension installed
+  - Git configured with correct credentials
+
+  Environment setup:
+  - Test Azure DevOps organization or clearly defined assessment scope
+  - Test GitHub organization within your Enterprise account
+  - Single sign-on configured and tested for GitHub Enterprise Cloud
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+  - intermediate
+roles:
+  - devops-engineer
+  - administrator
+  - developer
+  - solution-architect
+products:
+  - github
+units:
+  - learn.github.azure-devops-to-github-enterprise-migrations-part-ii-assessment-setup.introduction
+  - learn.github.azure-devops-to-github-enterprise-migrations-part-ii-assessment-setup.source-environment-assessment
+  - learn.github.azure-devops-to-github-enterprise-migrations-part-ii-assessment-setup.target-environment-setup
+  - learn.github.azure-devops-to-github-enterprise-migrations-part-ii-assessment-setup.skills-exercise
+  - learn.github.azure-devops-to-github-enterprise-migrations-part-ii-assessment-setup.knowledge-check
+  - learn.github.azure-devops-to-github-enterprise-migrations-part-ii-assessment-setup.summary
+badge:
+  uid: learn.github.azure-devops-to-github-enterprise-migrations-part-ii-assessment-setup.badge
