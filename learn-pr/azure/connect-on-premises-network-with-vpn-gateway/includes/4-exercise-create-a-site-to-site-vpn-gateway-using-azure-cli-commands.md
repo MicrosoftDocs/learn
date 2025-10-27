@@ -2,6 +2,11 @@ You're now ready to complete your site-to-site VPN gateway by creating the publi
 
 Ideally, the public IP addresses and virtual network gateways should be created *before* the local network gateways. In this exercise, you learn how to update the local network gateways. You can use the same commands to update any configuration elements in the local network gateways, like remote network address spaces.
 
+[!INCLUDE[](../../../includes/azure-optional-exercise-subscription-note.md)]
+
+> [!NOTE]
+> Throughout this exercise, replace **myResourceGroupName** in the examples with the name of an existing resource group, or the name of the resource group that you created for this exercise.
+
 ## Create the Azure-side VPN gateway
 
 First, create the VPN gateway for the Azure end of the connection. It can take up to 45 minutes to create a virtual network gateway. To save time, you use Azure CLI commands with the `--no-wait` parameter. This parameter lets you create both virtual network gateways simultaneously to minimize the overall time required to create these resources.
@@ -10,7 +15,7 @@ First, create the VPN gateway for the Azure end of the connection. It can take u
 
     ```azurecli
     az network public-ip create \
-        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
+        --resource-group "myResourceGroupName" \
         --name PIP-VNG-Azure-VNet-1 \
         --allocation-method Static
     ```
@@ -19,7 +24,7 @@ First, create the VPN gateway for the Azure end of the connection. It can take u
 
     ```azurecli
     az network vnet create \
-        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
+        --resource-group "myResourceGroupName" \
         --name VNG-Azure-VNet-1 \
         --subnet-name GatewaySubnet 
     ```
@@ -28,7 +33,7 @@ First, create the VPN gateway for the Azure end of the connection. It can take u
 
     ```azurecli
     az network vnet-gateway create \
-        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
+        --resource-group "myResourceGroupName" \
         --name VNG-Azure-VNet-1 \
         --public-ip-addresses PIP-VNG-Azure-VNet-1 \
         --vnet VNG-Azure-VNet-1 \
@@ -46,7 +51,7 @@ Next, you create a VPN gateway to simulate an on-premises VPN device.
 
     ```azurecli
     az network public-ip create \
-        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
+        --resource-group "myResourceGroupName" \
         --name PIP-VNG-HQ-Network \
         --allocation-method Static
     ```
@@ -55,7 +60,7 @@ Next, you create a VPN gateway to simulate an on-premises VPN device.
 
     ```azurecli
     az network vnet create \
-        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
+        --resource-group "myResourceGroupName" \
         --name VNG-HQ-Network \
         --subnet-name GatewaySubnet 
     ```
@@ -64,7 +69,7 @@ Next, you create a VPN gateway to simulate an on-premises VPN device.
 
     ```azurecli
     az network vnet-gateway create \
-        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
+        --resource-group "myResourceGroupName" \
         --name VNG-HQ-Network \
         --public-ip-addresses PIP-VNG-HQ-Network \
         --vnet VNG-HQ-Network \
@@ -78,7 +83,7 @@ Next, you create a VPN gateway to simulate an on-premises VPN device.
 
     ```azurecli
     watch -d -n 5 az network vnet-gateway list \
-        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
+        --resource-group "myResourceGroupName" \
         --output table
     ```
 
@@ -87,8 +92,8 @@ Next, you create a VPN gateway to simulate an on-premises VPN device.
     ```output
     ActiveActive    EnableBgp    EnablePrivateIpAddress   GatewayType    Location        Name              ProvisioningState    ResourceGroup                         ResourceGuid                          VpnType
     --------------  -----------  ------------------------ -------------  --------------  ----------------  -------------------  -----------------------------  ------------------------------------  ----------
-    False           False        False                    Vpn            southcentralus  VNG-Azure-VNet-1  Succeeded            "<rgn>[sandbox resource group name]</rgn>"  48dc714e-a700-42ad-810f-a8163ee8e001  RouteBased
-    False           False        False                    Vpn            southcentralus  VNG-HQ-Network    Succeeded            "<rgn>[sandbox resource group name]</rgn>"  49b3041d-e878-40d9-a135-58e0ecb7e48b  RouteBased
+    False           False        False                    Vpn            southcentralus  VNG-Azure-VNet-1  Succeeded            "myResourceGroupName"  48dc714e-a700-42ad-810f-a8163ee8e001  RouteBased
+    False           False        False                    Vpn            southcentralus  VNG-HQ-Network    Succeeded            "myResourceGroupName"  49b3041d-e878-40d9-a135-58e0ecb7e48b  RouteBased
     ```
 
 ## Update the local network gateway IP references
@@ -102,7 +107,7 @@ In this section, you update the remote gateway IP address references that are de
 
     ```azurecli
     az network vnet-gateway list \
-        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
+        --resource-group "myResourceGroupName" \
         --output table
     ```
 
@@ -119,7 +124,7 @@ In this section, you update the remote gateway IP address references that are de
 
     ```azurecli
     PIPVNGAZUREVNET1=$(az network public-ip show \
-        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
+        --resource-group "myResourceGroupName" \
         --name PIP-VNG-Azure-VNet-1 \
         --query "[ipAddress]" \
         --output tsv)
@@ -129,7 +134,7 @@ In this section, you update the remote gateway IP address references that are de
 
     ```azurecli
     az network local-gateway update \
-        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
+        --resource-group "myResourceGroupName" \
         --name LNG-Azure-VNet-1 \
         --gateway-ip-address $PIPVNGAZUREVNET1
     ```
@@ -138,7 +143,7 @@ In this section, you update the remote gateway IP address references that are de
 
     ```azurecli
     PIPVNGHQNETWORK=$(az network public-ip show \
-        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
+        --resource-group "myResourceGroupName" \
         --name PIP-VNG-HQ-Network \
         --query "[ipAddress]" \
         --output tsv)
@@ -148,7 +153,7 @@ In this section, you update the remote gateway IP address references that are de
 
     ```azurecli
     az network local-gateway update \
-        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
+        --resource-group "myResourceGroupName" \
         --name LNG-HQ-Network \
         --gateway-ip-address $PIPVNGHQNETWORK
     ```
@@ -170,7 +175,7 @@ Here, you complete the configuration by creating the connections from each VPN g
 
     ```azurecli
     az network vpn-connection create \
-        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
+        --resource-group "myResourceGroupName" \
         --name Azure-VNet-1-To-HQ-Network \
         --vnet-gateway1 VNG-Azure-VNet-1 \
         --shared-key $SHAREDKEY \
@@ -181,7 +186,7 @@ Here, you complete the configuration by creating the connections from each VPN g
 
     ```azurecli
     az network vpn-connection create \
-        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
+        --resource-group "myResourceGroupName" \
         --name HQ-Network-To-Azure-VNet-1  \
         --vnet-gateway1 VNG-HQ-Network \
         --shared-key $SHAREDKEY \
@@ -198,7 +203,7 @@ Let's confirm that the VPN tunnels are connected.
 
     ```azurecli
     az network vpn-connection show \
-        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
+        --resource-group "myResourceGroupName" \
         --name Azure-VNet-1-To-HQ-Network  \
         --output table \
         --query '{Name:name,ConnectionStatus:connectionStatus}'
