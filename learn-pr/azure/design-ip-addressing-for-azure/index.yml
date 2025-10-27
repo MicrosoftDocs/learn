@@ -17,6 +17,9 @@ abstract: |
   - Identify the private IP addressing capabilities of Azure virtual networks.
   - Identify the public IP addressing capabilities of Azure.
   - Identify the requirements for IP addressing when integrating with on-premises networks.
+
+  [!INCLUDE [](../../includes/azure-optional-exercise-subscription-prerequisite.md)]
+
 prerequisites: | 
   - Knowledge of basic networking concepts, network subnets, and IP addressing
   - Familiarity with Azure virtual networking
