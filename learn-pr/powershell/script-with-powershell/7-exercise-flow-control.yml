@@ -9,8 +9,8 @@ metadata:
   ms.date: 02/04/2021
   ms.topic: unit
   ms.custom: team=nextgen
-azureSandbox: true
-interactive: powershell
+#azureSandbox: true
+#interactive: powershell
 durationInMinutes: 4
 content: |
   [!include[](includes/7-exercise-flow-control.md)]
