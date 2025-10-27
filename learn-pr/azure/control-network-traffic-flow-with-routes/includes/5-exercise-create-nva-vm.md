@@ -8,15 +8,17 @@ In this exercise, you deploy the **nva** network appliance to the **dmzsubnet** 
 
 In the following steps, you'll deploy an NVA. You'll then update the Azure virtual NIC and the network settings within the appliance to enable IP forwarding.
 
+[!INCLUDE[](../../../includes/azure-optional-exercise-subscription-note.md)]
+
 ## Deploy the network virtual appliance
 
 To build the NVA, deploy an Ubuntu LTS instance.
 
-1. In Cloud Shell, run the following command to deploy the appliance. Replace `<password>` with a suitable password of your choice for the **azureuser** admin account.
+1. In [Azure Cloud Shell](https://shell.azure.com/), run the following command to deploy the appliance. Replace `<password>` with a suitable password of your choice for the **azureuser** admin account, and **myResourceGroupName** with the name of your resource group.
 
     ```azurecli
     az vm create \
-        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
+        --resource-group "myResourceGroupName" \
         --name nva \
         --vnet-name vnet \
         --subnet dmzsubnet \
@@ -33,7 +35,7 @@ In the next steps, you enable IP forwarding for the **nva** network appliance. W
 
     ```azurecli
     NICID=$(az vm nic list \
-        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
+        --resource-group "myResourceGroupName" \
         --vm-name nva \
         --query "[].{id:id}" --output tsv)
 
@@ -44,7 +46,7 @@ In the next steps, you enable IP forwarding for the **nva** network appliance. W
 
     ```azurecli
     NICNAME=$(az vm nic show \
-        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
+        --resource-group "myResourceGroupName" \
         --vm-name nva \
         --nic $NICID \
         --query "{name:name}" --output tsv)
@@ -56,7 +58,7 @@ In the next steps, you enable IP forwarding for the **nva** network appliance. W
 
     ```azurecli
     az network nic update --name $NICNAME \
-        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
+        --resource-group "myResourceGroupName" \
         --ip-forwarding true
     ```
 
@@ -66,7 +68,7 @@ In the next steps, you enable IP forwarding for the **nva** network appliance. W
 
     ```azurecli
     NVAIP="$(az vm list-ip-addresses \
-        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
+        --resource-group "myResourceGroupName" \
         --name nva \
         --query "[].virtualMachine.network.publicIpAddresses[*].ipAddress" \
         --output tsv)"

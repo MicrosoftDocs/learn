@@ -11,8 +11,8 @@ metadata:
   ms.custom:
     - devx-track-azurecli
 durationInMinutes: 6
-interactive: bash
-azureSandbox: true
+#interactive: bash
+#azureSandbox: true
 content: |
   [!include[](includes/3-exercise-prepare-azure-and-on-premises-vnets-using-azure-cli-commands.md)]
 
