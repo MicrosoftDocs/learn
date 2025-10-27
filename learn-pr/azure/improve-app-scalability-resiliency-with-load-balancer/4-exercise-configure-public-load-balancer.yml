@@ -13,8 +13,8 @@ metadata:
   zone_pivot_groups: azure-interface
 title: Exercise - Configure a public load balancer
 durationInMinutes: 10
-interactive: bash
-azureSandbox: true
+#interactive: bash
+#azureSandbox: true
 content: |
   [!include[](includes/4-exercise-configure-public-load-balancer.md)]
 
