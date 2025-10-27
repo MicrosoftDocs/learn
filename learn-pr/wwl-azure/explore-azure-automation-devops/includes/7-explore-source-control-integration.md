@@ -16,36 +16,36 @@
 
 You integrate source control with **Azure Automation** using the following steps:
 
-1.  In the **Azure portal**, access your **Automation account**.
-2.  Under **Account Settings**, select **Source control**, and then choose **+ Add**.
-3.  In the **Source Control type**, select **GitHub** as source control type and then select **Authenticate**.
+1. In the **Azure portal**, access your **Automation account**.
+2. Under **Account Settings**, select **Source control**, and then choose **+ Add**.
+3. In the **Source Control type**, select **GitHub** as source control type and then select **Authenticate**.
 
-    > [!NOTE]
-    > You'll require a **GitHub** account to complete the next step.
+   > [!NOTE]
+   > You'll require a **GitHub** account to complete the next step.
 
-4.  When the browser page opens, prompting you to authenticate to [https://www.github.com](https://www.github.com/), select **Authorize azureautomation** and enter your **GitHub** account password. If successful, you should receive an email notification from **GitHub** stating that a third-party **OAuth Application** (Automation Source Control) with repo scope was recently authorized to access your account.
+4. When the browser page opens, prompting you to authenticate to [https://www.github.com](https://www.github.com/), select **Authorize azureautomation** and enter your **GitHub** account password. If successful, you should receive an email notification from **GitHub** stating that a third-party **OAuth Application** (Automation Source Control) with repo scope was recently authorized to access your account.
 
 ### Source control configuration
 
-5.  After authentication completes, fill in the details based on the following table, and then select **Save:**
+5. After authentication completes, fill in the details based on the following table, and then select **Save:**
 
-| **Property**        | **Description**                                                                                                        |
-| ------------------- | ---------------------------------------------------------------------------------------------------------------------- |
-| Name                | Friendly name for the source control connection                                                                        |
-| Source control type | **GitHub**, **Azure DevOps Git**, or **Azure DevOps TFVC**                                                             |
-| Repository          | The name of the repository or project                                                                                  |
-| Branch              | The branch from which to pull the source files. Branch targeting isn't available for the **TFVC** source control type. |
-| Folder Path         | The folder that contains the runbooks to sync                                                                          |
-| Autosync            | Turns on or off automatic sync when a commit is made in the source control repository                                  |
-| Publish Runbook     | If set to **On**, after runbooks are synced from source control, they'll be automatically published                    |
-| Description         | A text field to provide more details                                                                                   |
+   | **Property**        | **Description**                                                                                                        |
+   | ------------------- | ---------------------------------------------------------------------------------------------------------------------- |
+   | Name                | Friendly name for the source control connection                                                                        |
+   | Source control type | **GitHub**, **Azure DevOps Git**, or **Azure DevOps TFVC**                                                             |
+   | Repository          | The name of the repository or project                                                                                  |
+   | Branch              | The branch from which to pull the source files. Branch targeting isn't available for the **TFVC** source control type. |
+   | Folder Path         | The folder that contains the runbooks to sync                                                                          |
+   | Autosync            | Turns on or off automatic sync when a commit is made in the source control repository                                  |
+   | Publish Runbook     | If set to **On**, after runbooks are synced from source control, they'll be automatically published                    |
+   | Description         | A text field to provide more details                                                                                   |
 
 ### Syncing and verification
 
-6.  If you set **Autosync** to **Yes**, full sync will start. If you set **Autosync** to **No**, open the **Source Control Summary** blade again by selecting your repository in **Azure Automation** and then selecting **Start Sync**.
+6. If you set **Autosync** to **Yes**, full sync will start. If you set **Autosync** to **No**, open the **Source Control Summary** blade again by selecting your repository in **Azure Automation** and then selecting **Start Sync**.
 
-:::image type="content" source="../media/source-control-summary-4b83dab3.png" alt-text="Screenshot of the Source Control Summary blade containing fields, and details to be filled in.":::
+   :::image type="content" source="../media/source-control-summary-4b83dab3.png" alt-text="Screenshot of the Source Control Summary blade containing fields, and details to be filled in.":::
 
-7.  Verify that your source control is listed on the **Azure Automation Source control** page for you to use.
+7. Verify that your source control is listed on the **Azure Automation Source control** page for you to use.
 
-:::image type="content" source="../media/source-control-f1d31c38.png" alt-text="Screenshot of the Azure Automation source control window with the just-created source control account.":::
+   :::image type="content" source="../media/source-control-f1d31c38.png" alt-text="Screenshot of the Azure Automation source control window with the just-created source control account.":::

@@ -29,9 +29,9 @@ You can choose from different runbook types based on your requirements and **Win
 
 **Key characteristics:**
 
-- Visual design without code exposure
-- Drag-and-drop interface in **Azure portal**
-- Ideal for users without scripting experience
+- Visual design without code exposure.
+- Drag-and-drop interface in **Azure portal**.
+- Ideal for users without scripting experience.
 
 ### PowerShell runbooks
 
@@ -39,10 +39,10 @@ You can choose from different runbook types based on your requirements and **Win
 
 **Key characteristics:**
 
-- Based on **PowerShell** scripting language
-- Don't use parallel processing
-- Execute commands sequentially
-- Faster startup time compared to **PowerShell Workflow runbooks**
+- Based on **PowerShell** scripting language.
+- Don't use parallel processing.
+- Execute commands sequentially.
+- Faster startup time compared to **PowerShell Workflow runbooks**.
 
 ### PowerShell Workflow runbooks
 
@@ -50,10 +50,10 @@ You can choose from different runbook types based on your requirements and **Win
 
 **Key characteristics:**
 
-- Use parallel processing for simultaneous task completion
-- Support checkpoints for workflow resilience
-- Take longer to start than **PowerShell runbooks** because they must be compiled before running
-- Ideal for long-running operations that need to resume after interruption
+- Use parallel processing for simultaneous task completion.
+- Support checkpoints for workflow resilience.
+- Take longer to start than **PowerShell runbooks** because they must be compiled before running.
+- Ideal for long-running operations that need to resume after interruption.
 
 ### Python runbooks
 
@@ -61,9 +61,9 @@ You can directly edit the code of the runbook using the text editor in the **Azu
 
 **Key characteristics:**
 
-- Support **Python** libraries
-- Must import third-party packages into the **Automation Account** before use
-- Useful for integrating with **Python**-based tools and services
+- Support **Python** libraries.
+- Must import third-party packages into the **Automation Account** before use.
+- Useful for integrating with **Python**-based tools and services.
 
 > [!NOTE]
 > You can't convert runbooks from graphical to textual type and vice versa.
