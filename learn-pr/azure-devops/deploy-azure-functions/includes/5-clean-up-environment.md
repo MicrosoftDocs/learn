@@ -7,8 +7,6 @@ You're finished with the tasks for this module. Here, you clean up your Azure re
 
 Here, you delete your Azure App Service and Azure Functions instances. The easiest way to delete the instances is to delete their parent resource group. When you delete a resource group, you delete all resources in that group.
 
-In the [Create a release pipeline with Azure Pipelines](/training/modules/create-release-pipeline?azure-portal=true) module, you managed Azure resources through the Azure portal. Tear down your deployment by using the Azure CLI through Azure Cloud Shell. The steps are similar to the steps that you used when you created the resources.
-
 To clean up your resource group:
 
 1. Go to the [Azure portal](https://portal.azure.com?azure-portal=true) and sign in.

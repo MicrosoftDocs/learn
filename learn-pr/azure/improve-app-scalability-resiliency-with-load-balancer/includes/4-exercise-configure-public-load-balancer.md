@@ -4,6 +4,13 @@ In your healthcare organization, you want to load-balance client traffic to prov
 
 Here, you create a load balancer resource and use it to distribute a load across the virtual machines.
 
+[!INCLUDE[](../../../includes/azure-optional-exercise-subscription-note.md)]
+
+[!INCLUDE[](../../../includes/azure-optional-exercise-create-resource-group-note.md)]
+
+> [!NOTE]
+> Throughout this exercise, replace **myResourceGroupName** in the examples with the name of an existing resource group, or the name of the resource group that you created for this exercise.
+
 ## Deploy the patient portal web application
 
 First, deploy your patient-portal application across two virtual machines in a single availability set. To save time, let's start by running a script to create this application. The script:
@@ -23,10 +30,10 @@ To deploy the patient portal web application:
 1. As its name suggests, the script generates two virtual machines in a single availability set. It takes about two minutes to run.
 
     ```bash
-    bash create-high-availability-vm-with-sets.sh <rgn>[sandbox resource group name]</rgn>
+    bash create-high-availability-vm-with-sets.sh myResourceGroupName
     ```
 
-1. When the script finishes, on the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) menu or from the **Home** page, select **Resource groups**, then select the **<rgn>[sandbox resource group name]</rgn>** resource group. Review the resources created by the script.
+1. When the script finishes, on the [Azure portal](https://portal.azure.com/) menu or from the **Home** page, select **Resource groups**, then select the **myResourceGroupName** resource group. Review the resources created by the script.
 
 ::: zone pivot="portal"
 
@@ -34,7 +41,7 @@ To deploy the patient portal web application:
 
 Now, let's create the load balancer.
 
-1. On the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) menu or from the **Home** page, under **Azure services**, select **Create a resource**. The **Create a resource** pane appears.
+1. On the [Azure portal](https://portal.azure.com/) menu or from the **Home** page, under **Azure services**, select **Create a resource**. The **Create a resource** pane appears.
 
 1. In the **Search services and marketplace** search box, enter *Load Balancer*, and then press <kbd>Enter</kbd>.
 
@@ -48,7 +55,7 @@ Now, let's create the load balancer.
     | ----- | ----------- |
     | **Project details** |
     | Subscription | **Your subscription** |
-    | Resource group | Select **<rgn>[sandbox resource group name]</rgn>** |
+    | Resource group | Select **myResourceGroupName** |
     | **Instance details** |
     | Name | Enter a unique name. For example, **Pub-LB-PatientsPortal**. |
     | Region | Select the location where the virtual machines were created. |
@@ -168,10 +175,10 @@ First, we need a public IP address for the load balancer.
 1. In PowerShell, create a new public IP address:
 
     ```powershell
-    $Location = $(Get-AzureRmResourceGroup -ResourceGroupName <rgn>[sandbox resource group name]</rgn>).Location
+    $Location = $(Get-AzureRmResourceGroup -ResourceGroupName myResourceGroupName).Location
 
     $publicIP = New-AzPublicIpAddress `
-      -ResourceGroupName <rgn>[sandbox resource group name]</rgn> `
+      -ResourceGroupName myResourceGroupName `
       -Location $Location `
       -AllocationMethod "Static" `
       -Name "myPublicIP"
@@ -224,7 +231,7 @@ When you use PowerShell to configure a load balancer, you must create the back-e
 
     ```powershell
     $lb = New-AzLoadBalancer `
-      -ResourceGroupName <rgn>[sandbox resource group name]</rgn> `
+      -ResourceGroupName myResourceGroupName `
       -Name 'MyLoadBalancer' `
       -Location $Location `
       -FrontendIpConfiguration $frontendIP `
@@ -236,8 +243,8 @@ When you use PowerShell to configure a load balancer, you must create the back-e
 1. Connect the virtual machines to the back-end pool by updating the network interfaces that the script created to use the back-end pool information.
 
     ```powershell
-    $nic1 = Get-AzNetworkInterface -ResourceGroupName <rgn>[sandbox resource group name]</rgn> -Name "webNic1"
-    $nic2 = Get-AzNetworkInterface -ResourceGroupName <rgn>[sandbox resource group name]</rgn> -Name "webNic2"
+    $nic1 = Get-AzNetworkInterface -ResourceGroupName myResourceGroupName -Name "webNic1"
+    $nic2 = Get-AzNetworkInterface -ResourceGroupName myResourceGroupName -Name "webNic2"
 
     $nic1.IpConfigurations[0].LoadBalancerBackendAddressPools = $backendPool
     $nic2.IpConfigurations[0].LoadBalancerBackendAddressPools = $backendPool
@@ -250,7 +257,7 @@ When you use PowerShell to configure a load balancer, you must create the back-e
 
     ```powershell
     Write-Host http://$($(Get-AzPublicIPAddress `
-      -ResourceGroupName <rgn>[sandbox resource group name]</rgn> `
+      -ResourceGroupName myResourceGroupName `
       -Name "myPublicIP").IpAddress)
     ```
 
@@ -266,7 +273,7 @@ Let's use the Azure CLI to create the load balancer and its associated resources
 
     ```azurecli
     az network public-ip create \
-      --resource-group <rgn>[sandbox resource group name]</rgn> \
+      --resource-group myResourceGroupName \
       --allocation-method Static \
       --name myPublicIP
     ```
@@ -275,7 +282,7 @@ Let's use the Azure CLI to create the load balancer and its associated resources
 
     ```azurecli
     az network lb create \
-      --resource-group <rgn>[sandbox resource group name]</rgn> \
+      --resource-group myResourceGroupName \
       --name myLoadBalancer \
       --public-ip-address myPublicIP \
       --frontend-ip-name myFrontEndPool \
@@ -286,7 +293,7 @@ Let's use the Azure CLI to create the load balancer and its associated resources
 
     ```azurecli
     az network lb probe create \
-      --resource-group <rgn>[sandbox resource group name]</rgn> \
+      --resource-group myResourceGroupName \
       --lb-name myLoadBalancer \
       --name myHealthProbe \
       --protocol tcp \
@@ -297,7 +304,7 @@ Let's use the Azure CLI to create the load balancer and its associated resources
 
     ```azurecli
     az network lb rule create \
-      --resource-group <rgn>[sandbox resource group name]</rgn> \
+      --resource-group myResourceGroupName \
       --lb-name myLoadBalancer \
       --name myHTTPRule \
       --protocol tcp \
@@ -312,14 +319,14 @@ Let's use the Azure CLI to create the load balancer and its associated resources
 
     ```azurecli
     az network nic ip-config update \
-      --resource-group <rgn>[sandbox resource group name]</rgn> \
+      --resource-group myResourceGroupName \
       --nic-name webNic1 \
       --name ipconfig1 \
       --lb-name myLoadBalancer \
       --lb-address-pools myBackEndPool
 
     az network nic ip-config update \
-      --resource-group <rgn>[sandbox resource group name]</rgn> \
+      --resource-group myResourceGroupName \
       --nic-name webNic2 \
       --name ipconfig1 \
       --lb-name myLoadBalancer \
@@ -330,7 +337,7 @@ Let's use the Azure CLI to create the load balancer and its associated resources
 
     ```azurecli
     echo http://$(az network public-ip show \
-                    --resource-group <rgn>[sandbox resource group name]</rgn> \
+                    --resource-group myResourceGroupName \
                     --name myPublicIP \
                     --query ipAddress \
                     --output tsv)
@@ -346,6 +353,6 @@ Let's test the load balancer setup, by showing how it can handle availability an
 
 1. Try a "force refresh" by pressing <kbd>Ctrl+F5</kbd> a few times to see that the response is returned randomly from both virtual machines.
 
-1. On the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) menu or from the **Home** page, select **All resources**. Then select **webVM1**, and select **Stop**.
+1. On the [Azure portal](https://portal.azure.com/) menu or from the **Home** page, select **All resources**. Then select **webVM1**, and select **Stop**.
 
 1. Return to the tab that shows the website and force a refresh of the webpage. All requests are returned from **webVM2**.
