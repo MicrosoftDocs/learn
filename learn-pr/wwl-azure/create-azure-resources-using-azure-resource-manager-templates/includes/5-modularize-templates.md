@@ -166,7 +166,7 @@ When deploying templates, you must choose a **deployment mode** that determines 
 
 ### Three deployment options
 
-1. **Validate mode**
+#### Validate mode
 
 **Purpose:** Test template without making changes.
 
@@ -188,7 +188,7 @@ az deployment group validate \
   --parameters @parameters.json
 ```
 
-2. **Incremental mode (default)**
+#### Incremental mode (default)
 
 **Purpose:** Add or update resources without affecting existing ones.
 
@@ -210,7 +210,7 @@ az deployment group validate \
 - Updating specific resources without risk to others.
 - Development and testing environments.
 
-3. **Complete mode**
+#### Complete mode
 
 **Purpose:** Ensure resource group matches template exactly (idempotency).
 

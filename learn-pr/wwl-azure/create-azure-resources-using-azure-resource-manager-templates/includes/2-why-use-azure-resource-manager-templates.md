@@ -21,14 +21,14 @@ Provisioning infrastructure for applications has traditionally been time-consumi
 
 Consider using **Resource Manager templates** when you need these benefits:
 
-### 1. Improved consistency
+- **Improved consistency**
 
 **Resource Manager templates provide a common language** for describing deployments. Regardless of the tool (Azure Portal, Azure CLI, PowerShell, or SDKs), the template structure, format, and expressions remain identical. This consistency ensures:
 
 - **Cross-team collaboration:** Developers and operations teams work with the same infrastructure definitions.
 - **Multi-environment reliability:** Development, staging, and production use the same template structure.
 
-### 2. Express complex deployments clearly
+- **Express complex deployments clearly**
 
 Templates enable you to **deploy multiple resources in the correct order automatically**. For example:
 
@@ -36,7 +36,7 @@ Templates enable you to **deploy multiple resources in the correct order automat
 - **Automatic ordering:** Dependency mapping ensures resources are created in the right sequence.
 - **Visual representation:** You can see all resources and their relationships in one JSON file.
 
-### 3. Infrastructure as code paradigm
+- **Infrastructure as code paradigm**
 
 Templates are **code that can be shared, tested, and versioned** like any software:
 
@@ -45,7 +45,7 @@ Templates are **code that can be shared, tested, and versioned** like any softwa
 - **Testing:** Validate templates using unit tests and automated validation tools.
 - **Audit trail:** Every infrastructure change is documented in version history.
 
-### 4. Promote reuse through parameters
+- **Promote reuse through parameters**
 
 **Template parameters** enable creating multiple versions of infrastructure from a single template:
 
@@ -68,7 +68,7 @@ Templates are **code that can be shared, tested, and versioned** like any softwa
 - **Cost optimization:** Pass different SKUs or sizes based on environment requirements.
 - **Reduced duplication:** Maintain one template instead of separate files per environment.
 
-### 5. Modular and linkable templates
+- **Modular and linkable templates**
 
 You can **link templates together** to create modular, reusable components:
 
@@ -77,7 +77,7 @@ You can **link templates together** to create modular, reusable components:
 - **Reusability:** Share common components across multiple projects.
 - **Maintainability:** Update one module and all dependent deployments benefit.
 
-### 6. Simplified orchestration
+- **Simplified orchestration**
 
 Deploy all resources with a **single command**:
 

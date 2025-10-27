@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.create-azure-resources-using-azure-resource-manager-templates.explore-template-components
-title: Explore Template Components
+title: Explore template components
 metadata:
-  title: Explore Template Components
+  title: Explore template components
   description: "Learn about ARM template structure including parameters, variables, functions, resources, and outputs sections with practical JSON examples."
   ms.date: 10/24/2025
   author: LuizMacedo

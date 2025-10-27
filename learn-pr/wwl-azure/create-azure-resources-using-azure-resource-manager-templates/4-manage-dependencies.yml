@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.create-azure-resources-using-azure-resource-manager-templates.manage-dependencies
-title: Manage Dependencies
+title: Manage dependencies
 metadata:
-  title: Manage Dependencies
+  title: Manage dependencies
   description: "Learn how to define and manage resource dependencies using dependsOn element and reference functions, and avoid circular dependencies."
   ms.date: 10/24/2025
   author: LuizMacedo

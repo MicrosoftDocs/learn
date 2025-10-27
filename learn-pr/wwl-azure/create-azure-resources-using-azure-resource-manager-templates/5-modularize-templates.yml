@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.create-azure-resources-using-azure-resource-manager-templates.modularize-templates
-title: Modularize Templates
+title: Modularize templates
 metadata:
-  title: Modularize Templates
+  title: Modularize templates
   description: "Discover how to organize templates using linked and nested templates, deployment modes, and external template storage with SAS tokens."
   ms.date: 10/24/2025
   author: LuizMacedo

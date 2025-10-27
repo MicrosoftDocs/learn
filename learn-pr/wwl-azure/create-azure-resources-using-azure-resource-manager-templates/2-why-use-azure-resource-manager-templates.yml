@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.create-azure-resources-using-azure-resource-manager-templates.why-use-azure-resource-manager-templates
-title: Why Use Azure Resource Manager Templates?
+title: Why use Azure Resource Manager templates?
 metadata:
-  title: Why Use Azure Resource Manager Templates?
+  title: Why use Azure Resource Manager templates?
   description: "Discover the benefits of ARM templates including consistency, repeatability, complex deployments, reduced errors, and infrastructure as code paradigm."
   ms.date: 10/24/2025
   author: LuizMacedo
