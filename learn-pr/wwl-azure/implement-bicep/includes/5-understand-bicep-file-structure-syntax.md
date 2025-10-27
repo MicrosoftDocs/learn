@@ -118,7 +118,8 @@ resource conditionalResource 'type@version' = if (condition) {
 
 To improve code reusability and manageability, you can refer to another **Bicep** template as a **module**. Just like any other resource, you can add a condition to a **module**, which will evaluate to true before deploying it.
 
-> [!NOTE] > **Modules** allow you to reuse code from a **Bicep** file in other **Bicep** files. A **module** is a **Bicep** file that's deployed from another **Bicep** file.
+> [!NOTE] 
+> **Modules** allow you to reuse code from a **Bicep** file in other **Bicep** files. A **module** is a **Bicep** file that's deployed from another **Bicep** file.
 
 **Module syntax:**
 
