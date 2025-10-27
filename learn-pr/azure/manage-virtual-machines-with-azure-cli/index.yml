@@ -19,6 +19,9 @@ abstract: |
   - Connect to a running VM with SSH and the Azure CLI.
 prerequisites: |
   Basic understanding of the Azure CLI tool from the [Control Azure services with the CLI](/training/modules/control-azure-services-with-cli/) module.
+
+  [!INCLUDE [](../../includes/azure-optional-exercise-subscription-prerequisite.md)]
+
 iconUrl: /training/achievements/manage-virtual-machines-with-azure-cli.svg
 levels: 
 - beginner
