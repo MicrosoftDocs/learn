@@ -1,6 +1,6 @@
 Development teams accumulate valuable knowledge through daily work—solving problems, making architecture decisions, discovering tool capabilities, and learning from incidents. This organizational knowledge represents significant investment and competitive advantage. Without intentional effort to capture and share it, this knowledge disappears when team members change roles, leave the organization, or simply forget details over time.
 
-**The cost of lost knowledge**
+## The cost of lost knowledge
 
 **Repeated mistakes:** Teams encounter the same bugs, make identical architecture errors, and repeat failed approaches when previous lessons aren't documented.
 

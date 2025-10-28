@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.share-knowledge-within-teams.introduction-azure-devops-project-wikis
-title: Introduction to Azure DevOps Project Wikis
+title: Introduction to Azure DevOps project wikis
 metadata:
   title: Introduction to Azure DevOps Project Wikis
   description: "Learn to create and manage Azure DevOps project wikis for team documentation. Explore wiki permissions, Markdown formatting, GitHub Flavored Markdown (GFM) syntax, Mermaid diagram creation, file attachments, and video embedding for comprehensive technical documentation and knowledge sharing."

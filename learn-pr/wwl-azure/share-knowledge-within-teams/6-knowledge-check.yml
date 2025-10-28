@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.share-knowledge-within-teams.knowledge-check
-title: Module Assessment
+title: Module assessment
 metadata:
   title: Module Assessment
   description: "Test your knowledge of sharing knowledge within teams, Azure DevOps Wikis, Markdown documentation, Mermaid diagrams, and Microsoft Teams integration with GitHub and Azure DevOps for effective collaboration and knowledge preservation."

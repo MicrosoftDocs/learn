@@ -2,7 +2,7 @@ Effective knowledge sharing is fundamental to successful software development te
 
 This module teaches you to implement practical knowledge sharing strategies using Azure DevOps Wikis, GitHub documentation, and Microsoft Teams integration. You'll learn to create accessible documentation, preserve organizational learning, and establish collaboration patterns that keep your team informed and productive.
 
-**Why knowledge sharing matters**
+## Why knowledge sharing matters
 
 **Preserve organizational learning:** Teams accumulate wisdom through experience—documenting prevents knowledge loss when people change roles or leave.
 
@@ -14,7 +14,7 @@ This module teaches you to implement practical knowledge sharing strategies usin
 
 **Enable asynchronous collaboration:** Written documentation allows team members across time zones and schedules to stay informed without constant meetings.
 
-**Common knowledge sharing challenges**
+## Common knowledge sharing challenges
 
 **Knowledge lives in people's heads:** Critical information remains undocumented, accessible only through verbal questions.
 

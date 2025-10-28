@@ -1,6 +1,6 @@
 Microsoft Teams serves as a central hub for team communication and collaboration. Integrating GitHub and Azure DevOps with Teams brings development activity, work tracking, and pipeline notifications directly into team conversations—reducing context switching and keeping everyone informed in real-time.
 
-**Why integrate DevOps tools with Teams:**
+## Why integrate DevOps tools with Teams
 
 **Reduce context switching:** Developers stay in Teams for communication while receiving updates about code, builds, and deployments without switching to separate tools.
 
@@ -12,7 +12,7 @@ Microsoft Teams serves as a central hub for team communication and collaboration
 
 **Enable mobile access:** Teams mobile apps keep developers connected to critical events even when away from their workstations.
 
-**Common integration scenarios:**
+## Common integration scenarios
 
 **Code review discussions:** Pull request notifications appear in Teams channels where developers discuss changes, request reviews, and provide feedback.
 
@@ -30,7 +30,7 @@ The integration between DevOps platforms and Teams is bidirectional—teams rece
 
 The GitHub app for Microsoft Teams allows seamless integration between the two platforms, enabling users to receive notifications and interact with GitHub directly from Teams.
 
-You can install the GitHub app for Microsoft Teams from the Teams app store or directly from GitHub by navigating to the [https://teams.github.com](https://teams.github.com) web page. Following a successful installation, a welcome message will prompt you to use the @github handle to interact with the app. To start, link to your GitHub accounts by entering @github sign-in, which will trigger the GitHub authentication process.
+You can install the GitHub app for Microsoft Teams from the Teams app store or directly from GitHub by navigating to the [https://teams.github.com](https://teams.github.com) web page. Following a successful installation, a welcome message will prompt you to use the @github handle to interact with the app. To start, link to your GitHub accounts by entering @github signin, which will trigger the GitHub authentication process.
 
 To subscribe to notifications for pull requests and issues in an organization or repository, use the @github subscribe &lt;organization&gt;/&lt;repository&gt; command. Notifications can be customized by subscribing to specific features using @github subscribe owner/repo \[feature\] and unsubscribing from less relevant activities using @github unsubscribe owner/repo \[feature\]. Default features include issues, pull requests, commits, comments, deployments, and releases. It's possible to selectively enable or disable other features, such as reviews, workflows, branches, and discussions.
 
@@ -70,7 +70,7 @@ The Azure Repos app for Microsoft Teams facilitates monitoring of repositories f
 
 As with the Azure Boards app, before using the app, ensure they have the necessary permissions at the repository level and that the app access via OAuth for the Azure DevOps organization is enabled. Once these prerequisites are satisfied, you can add the Azure Repos app to your Teams channel by accessing the App store in Microsoft Teams, installing the app, and using the @azure repos handle to interact with it.
 
-After installing the app, connect it to your repos by using the @azure repos sign-in command and specifying the project or repo URL, enabling monitoring of code changes and pull requests. To manage subscriptions to repo-related events, use commands such as @azure repos subscribe and @azure repos subscriptions, allowing customization of notifications based on specific conditions and filters. To remove subscriptions related to repositories, use the @azure repos unsubscribe all \[project url\] command.
+After installing the app, connect it to your repos by using the @azure repos signin command and specifying the project or repo URL, enabling monitoring of code changes and pull requests. To manage subscriptions to repo-related events, use commands such as @azure repos subscribe and @azure repos subscriptions, allowing customization of notifications based on specific conditions and filters. To remove subscriptions related to repositories, use the @azure repos unsubscribe all \[project url\] command.
 
 The Azure Repos app supports a compose extension, which supports searching for and sharing pull request information within Microsoft Teams. You can preview pull request URLs shared within the channel. This feature enhances visibility and understanding of pull request-related conversations.
 
@@ -82,7 +82,7 @@ The Azure Pipelines app for Microsoft Teams simplifies pipeline monitoring and m
 
 As with the other two Azure DevOps related Microsoft Teams apps, before using this one, ensure they have the necessary permissions at the level of the project hosting the pipelines and that the app access via OAuth for the Azure DevOps organization is enabled. Once these prerequisites are satisfied, you can add the Azure Repos app to your Teams channel by accessing the App store in Microsoft Teams, installing the app, and using the @azure pipelines handle to interact with it.
 
-After installing the app, connect it to your pipelines by using the @azure pipelines sign-in command. Next, use the @azure pipelines subscribe command to subscribe either to individual or all pipelines in a project. You can customize pipeline subscriptions to receive notifications for specific events, such as failed builds or deployments to production environments. The Azure Pipelines app supports filters to tailor notifications according to your preferences.
+After installing the app, connect it to your pipelines by using the @azure pipelines signin command. Next, use the @azure pipelines subscribe command to subscribe either to individual or all pipelines in a project. You can customize pipeline subscriptions to receive notifications for specific events, such as failed builds or deployments to production environments. The Azure Pipelines app supports filters to tailor notifications according to your preferences.
 
 The app supports approving deployments directly from their Teams channel without accessing the Azure Pipelines portal. Notifications with options to approve or reject deployment requests are posted in the channel, facilitating quick decision-making, and enhancing workflow efficiency. Notifications linked to a particular run of a pipeline are logically linked together, providing a clear overview of pipeline activities, and facilitating organized communication within the channel.
 

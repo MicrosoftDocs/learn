@@ -11,7 +11,7 @@ metadata:
     - N/A
   ms.service: azure-devops-repos
   ai-usage: ai-assisted
-title: Share Knowledge Within Teams
+title: Share knowledge within teams
 summary: This module teaches you to establish effective knowledge sharing practices within development teams using Azure DevOps Wikis, GitHub documentation, and Microsoft Teams integration. Learn to create and manage project wikis, write documentation with Markdown and Mermaid diagrams, integrate DevOps tools with communication platforms, and implement strategies to preserve organizational knowledge as teams evolve. Discover how to avoid relearning lessons, reduce onboarding time, and improve team collaboration through structured documentation and real-time notifications.
 abstract: |
   By the end of this module, you'll be able to:

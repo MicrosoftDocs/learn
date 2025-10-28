@@ -4,7 +4,7 @@ This module equipped you with practical strategies and tools for sharing knowled
 
 Throughout this module, you gained hands-on understanding of knowledge sharing approaches, documentation tools, and team collaboration integrations. You learned when and how to document team knowledge, create wikis for structured information, write technical documentation with Markdown, and connect DevOps tools with communication platforms for real-time awareness.
 
-**Key concepts you learned:**
+### Key concepts you learned
 
 **Knowledge sharing strategies:**
 

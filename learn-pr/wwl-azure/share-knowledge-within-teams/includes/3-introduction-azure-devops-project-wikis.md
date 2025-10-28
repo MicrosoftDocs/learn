@@ -18,7 +18,7 @@ Azure DevOps provides integrated wiki functionality for creating and managing te
 
 Azure DevOps Wikis use the same permission model as other project resources, allowing fine-grained control over who can create, edit, and view documentation.
 
-**Permission levels:**
+### Permission levels
 
 **Create Repository permission:**
 
@@ -153,7 +153,7 @@ Horizontal rule
 
 GitHub Flavored Markdown (GFM) is a formal specification extending CommonMark (base Markdown standard) with practical features for software documentation. Azure DevOps Wikis render GFM, providing these additional capabilities beyond basic Markdown.
 
-**GFM extensions:**
+### GFM extensions
 
 **Task lists:**
 
