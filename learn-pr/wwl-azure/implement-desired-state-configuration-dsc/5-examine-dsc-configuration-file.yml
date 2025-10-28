@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.implement-desired-state-configuration-dsc.examine-dsc-configuration-file
-title: Examine DSC Configuration File
+title: Examine DSC configuration file
 metadata:
   title: Examine DSC Configuration File
   description: "Examine DSC configuration file syntax, structure, and components including configuration blocks, nodes, and resources."

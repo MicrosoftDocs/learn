@@ -8,7 +8,7 @@ Eventually, an environment can become a **snowflake**. A **snowflake** is a uniq
 
 The more an environment drifts from its original state, the more likely it is for an application to encounter issues. The greater the degree of **configuration drift**, the longer it takes to troubleshoot and rectify problems.
 
-:::image type="content" source="../media/configuration-drift-44f43cbe.png" alt-text="A flowchart representing how application state changes over time begins with an application state icon. An arrow with a clock representing time, points from the application state to a second, different application state, which has another clock and arrow pointing to a third, different application state.":::
+:::image type="content" source="../media/configuration-drift-44f43cbe.png" alt-text="Diagram showing application state changes over time from initial to drifted configurations.":::
 
 ## Security considerations
 

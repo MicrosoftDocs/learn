@@ -28,9 +28,9 @@ The following **Linux** operating system versions are currently supported by bot
 
 To implement **DSC for Linux** on **Azure**, you can use **Azure Automation State Configuration** to:
 
-1.  **Create DSC configurations** for **Linux** systems using **PowerShell**.
-2.  **Upload and compile** configurations in **Azure Automation**.
-3.  **Onboard Linux VMs** to **Azure Automation State Configuration**.
-4.  **Apply configurations** to **Linux** nodes through the built-in pull server.
+- **Create DSC configurations** for **Linux** systems using **PowerShell**.
+- **Upload and compile** configurations in **Azure Automation**.
+- **Onboard Linux VMs** to **Azure Automation State Configuration**.
+- **Apply configurations** to **Linux** nodes through the built-in pull server.
 
 This approach provides centralized management and monitoring of both **Windows** and **Linux** systems from a single platform.

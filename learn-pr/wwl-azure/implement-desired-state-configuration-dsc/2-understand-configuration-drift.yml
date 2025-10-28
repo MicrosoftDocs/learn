@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.implement-desired-state-configuration-dsc.understand-configuration-drift
-title: Understand Configuration Drift
+title: Understand configuration drift
 metadata:
   title: Understand Configuration Drift
   description: "Learn about configuration drift, its causes, and how it impacts infrastructure consistency and reliability over time."
