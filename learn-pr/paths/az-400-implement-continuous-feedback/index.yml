@@ -8,7 +8,7 @@ metadata:
   ms.author: lumac
   ms.topic: learning-path
   ai-usage: ai-assisted
-title: "AZ-400: Implement Continuous Feedback"
+title: "AZ-400: Implement continuous feedback"
 prerequisites: |
   - Understanding of DevOps principles and practices.
   - Familiarity with Azure DevOps or GitHub for version control and CI/CD.
