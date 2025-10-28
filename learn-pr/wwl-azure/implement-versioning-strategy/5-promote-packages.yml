@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.implement-versioning-strategy.promote-packages
-title: Promote Packages
+title: Promote packages
 metadata:
   title: Promote Packages
   description: "Learn to promote packages between Azure Artifacts views to indicate quality levels, automate promotion in CI/CD pipelines, and manage package visibility for different audiences."

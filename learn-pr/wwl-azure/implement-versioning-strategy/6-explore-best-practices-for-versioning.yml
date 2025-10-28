@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.implement-versioning-strategy.explore-best-practices-for-versioning
-title: Explore Best Practices for Versioning
+title: Explore best practices for versioning
 metadata:
   title: Explore Best Practices for Versioning
   description: "Explore best practices for versioning strategies, including documented standards, SemVer 2.0 adoption, feed management, and automated package publishing workflows."

@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.implement-versioning-strategy.explore-semantic-versioning
-title: Explore Semantic Versioning
+title: Explore semantic versioning
 metadata:
   title: Explore Semantic Versioning
   description: "Explore Semantic Versioning (SemVer 2.0) principles, including Major.Minor.Patch format, prerelease labels, and backward compatibility indicators for consistent version communication."

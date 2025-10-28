@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.implement-versioning-strategy.examine-release-views
-title: Examine Release Views
+title: Examine release views
 metadata:
   title: Examine Release Views
   description: "Examine Azure Artifacts feed views (@Local, @Prerelease, @Release), how they filter packages by quality level, and how to use view-specific URIs for consuming packages."

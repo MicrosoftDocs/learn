@@ -91,7 +91,7 @@ You learned how to describe the benefits and usage of:
 
 - **Advanced promotion workflows:** Implement multi-stage promotion with approval gates.
 - **Version range management:** Understand dependency version ranges and constraints.
-- **Branching strategies:** Align versioning with branching strategies (GitFlow, trunk-based).
+- **Branching strategies:** Align versioning with branching strategies (Gitflow, trunk-based).
 - **Hotfix versioning:** Handle hotfixes and backports correctly.
 
 **Explore advanced scenarios:**

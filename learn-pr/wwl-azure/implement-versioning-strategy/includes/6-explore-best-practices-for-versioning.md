@@ -155,7 +155,7 @@ steps:
 
 ## Additional best practices
 
-### 5. Use views for quality gates
+### Use views for quality gates
 
 **Leverage views to indicate package quality:**
 
@@ -183,7 +183,7 @@ steps:
                 --view Release
 ```
 
-### 6. Never republish the same version
+### Never republish the same version
 
 **Package immutability is critical:**
 
@@ -198,23 +198,23 @@ Wrong: Republish 1.2.3 with fixes
 Right: Publish 1.2.4 with fixes
 ```
 
-### 7. Use retention policies wisely
+### Use retention policies wisely
 
 **Balance storage costs with retention needs:**
 
-- **Promote important packages:** Protected from deletion.
-- **Clean up @Local:** Let retention policies clean up unpromoted packages.
-- **Keep release history:** Always keep promoted versions.
+- Promote important packages: Protected from deletion.
+- Clean up @Local: Let retention policies clean up unpromoted packages.
+- Keep release history: Always keep promoted versions.
 
 **Example retention policy:**
 
 ```
 @Local view: Keep last 30 days
 @Prerelease view: Keep last 90 days
-@Release view: Keep forever
+@Release view: Keep indefinitely
 ```
 
-### 8. Version source code and packages together
+### Version source code and packages together
 
 **Tag source code with package versions:**
 
@@ -230,7 +230,7 @@ git push origin v1.2.3
 - **Debugging:** Find exact code that produced a package.
 - **Reproducibility:** Rebuild package from tagged source.
 
-### 9. Include version in package metadata
+### Include version in package metadata
 
 **Comprehensive package metadata:**
 
@@ -248,7 +248,7 @@ git push origin v1.2.3
 }
 ```
 
-### 10. Test before promoting
+### Test before promoting
 
 **Always test before promotion:**
 

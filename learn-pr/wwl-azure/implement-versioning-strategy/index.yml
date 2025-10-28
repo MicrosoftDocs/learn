@@ -9,7 +9,7 @@ metadata:
   ms.topic: module
   ms.service: azure
   ai-usage: ai-assisted
-title: Implement a Versioning Strategy
+title: Implement a versioning strategy
 summary: This module explains versioning strategies for packaging, semantic versioning principles, package promotion workflows, and best practices for managing package versions throughout the software development lifecycle. Learn to use Azure Artifacts views to indicate package quality and implement automated versioning in CI/CD pipelines.
 abstract: |
   By the end of this module, you're able to:

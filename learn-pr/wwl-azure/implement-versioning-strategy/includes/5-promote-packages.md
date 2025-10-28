@@ -78,9 +78,9 @@ Promote to @Release for production use
 
 **Important notes:**
 
-- **Upstream only with @Local:** Other views don't trigger upstream source evaluation.
-- **Cache first:** Once cached, package is treated like any other feed package.
-- **Promotion control:** Control which upstream packages are approved for production.
+- Upstream only with @Local: Other views don't trigger upstream source evaluation.
+- Cache first: Once cached, package is treated like any other feed package.
+- Promotion control: Control which upstream packages are approved for production.
 
 ## Deciding when to promote
 
@@ -238,8 +238,8 @@ stages:
 1.  **Navigate to Artifacts:** Go to Artifacts in Azure DevOps.
 2.  **Select feed:** Choose the feed containing your package.
 3.  **Find package:** Locate the package version to promote.
-4.  **Package details:** Click on the package to view details.
-5.  **Promote button:** Click "Promote" button.
+4.  **Package details:** Select the package to view details.
+5.  **Promote button:** Select the "Promote" button.
 6.  **Select view:** Choose the target view (@Prerelease or @Release).
 7.  **Confirm:** Confirm the promotion.
 

@@ -198,7 +198,7 @@ It **doesn't relate or refer** to the `@Prerelease` view of a feed. Instead, it 
 
 **Two separate concepts:**
 
-### 1. Prerelease labels (SemVer)
+### Prerelease labels (SemVer)
 
 - **Version-based:** Part of the version number (e.g., `1.0.0-beta`).
 - **Semantic versioning:** Follows SemVer conventions.
@@ -212,7 +212,7 @@ It **doesn't relate or refer** to the `@Prerelease` view of a feed. Instead, it 
 1.0.0          ← Stable version
 ```
 
-### 2. @Prerelease view (Azure Artifacts)
+### @Prerelease view (Azure Artifacts)
 
 - **Feed metadata:** Azure Artifacts-specific quality indicator.
 - **Promotion-based:** Packages promoted to this view.
@@ -275,7 +275,7 @@ Beyond the three default views, you can create **custom views** for finer-graine
 
 1.  **Navigate to feed settings:** Go to your feed in Azure Artifacts.
 2.  **Views tab:** Select the Views section.
-3.  **Add view:** Click "Add view" and provide a name.
+3.  **Add view:** Select "Add view" and provide a name.
 4.  **Configure:** Set visibility and promotion rules.
 
 ## View benefits

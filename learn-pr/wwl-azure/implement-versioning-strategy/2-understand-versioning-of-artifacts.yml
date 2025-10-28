@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.implement-versioning-strategy.understand-versioning-of-artifacts
-title: Understand Versioning of Artifacts
+title: Understand versioning of artifacts
 metadata:
   title: Understand Versioning of Artifacts
   description: "Learn about artifact versioning fundamentals, including major, minor, and patch changes, and how different package types implement version numbering schemes."
