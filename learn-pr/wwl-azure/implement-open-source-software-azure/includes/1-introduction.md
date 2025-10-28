@@ -8,15 +8,15 @@ This module provides comprehensive guidance on implementing open-source software
 
 This module covers essential knowledge for working with open-source software in professional environments:
 
-**Understanding modern software development:** You'll explore how contemporary applications are built by combining original code with open-source libraries, frameworks, and tools. You'll learn why organizations choose open-source components and understand the benefits they provide including faster development, proven solutions, community support, and cost savings.
+- **Understanding modern software development:** You'll explore how contemporary applications are built by combining original code with open-source libraries, frameworks, and tools. You'll learn why organizations choose open-source components and understand the benefits they provide including faster development, proven solutions, community support, and cost savings.
 
-**Corporate concerns about open-source software:** You'll examine the security, legal, and operational risks that organizations face when using open-source components. This includes security vulnerabilities in dependencies, license compliance requirements, supply chain risks, unmaintained or abandoned projects, and the challenge of managing thousands of dependencies across multiple applications.
+- **Corporate concerns about open-source software:** You'll examine the security, legal, and operational risks that organizations face when using open-source components. This includes security vulnerabilities in dependencies, license compliance requirements, supply chain risks, unmaintained or abandoned projects, and the challenge of managing thousands of dependencies across multiple applications.
 
-**Open-source license fundamentals:** You'll learn about different categories of open-source licenses, from permissive licenses like MIT and Apache that allow broad commercial use, to copyleft licenses like GPL that require derivative works to use the same license. Understanding license characteristics helps you make informed decisions about which open-source components are appropriate for your projects.
+- **Open-source license fundamentals:** You'll learn about different categories of open-source licenses, from permissive licenses like MIT and Apache that allow broad commercial use, to copyleft licenses like GPL that require derivative works to use the same license. Understanding license characteristics helps you make informed decisions about which open-source components are appropriate for your projects.
 
-**License implications for commercial software:** You'll discover how different licenses affect commercial software development, including restrictions on proprietary software, requirements for disclosing source code, attribution requirements, and license compatibility concerns. This knowledge prevents legal issues that could impact your organization's ability to sell or distribute software.
+- **License implications for commercial software:** You'll discover how different licenses affect commercial software development, including restrictions on proprietary software, requirements for disclosing source code, attribution requirements, and license compatibility concerns. This knowledge prevents legal issues that could impact your organization's ability to sell or distribute software.
 
-**Strategies for managing open-source components:** You'll explore practical approaches for implementing open-source software safely and compliantly, including maintaining component inventories, scanning for vulnerabilities, tracking license obligations, establishing approval processes, and using automated tools to monitor dependencies continuously.
+- **Strategies for managing open-source components:** You'll explore practical approaches for implementing open-source software safely and compliantly, including maintaining component inventories, scanning for vulnerabilities, tracking license obligations, establishing approval processes, and using automated tools to monitor dependencies continuously.
 
 ## Learning objectives
 

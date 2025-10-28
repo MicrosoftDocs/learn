@@ -34,7 +34,7 @@ Security risks represent the most immediate and serious concerns about open-sour
 - **Dependency confusion:** Attackers publish malicious packages to public registries with names matching internal private packages, exploiting package manager resolution behavior.
 - **Maintainer compromise:** Attackers compromise maintainer accounts through phishing, credential theft, or social engineering to inject malicious code into trusted packages.
 
-**Example incidents:** The Event-Stream package in npm was compromised to steal cryptocurrency wallet credentials. The Colors.js and Faker.js maintainer intentionally added infinite loops to protest corporate usage without financial support, breaking thousands of applications.
+**Example incidents:** The eventstream package in npm is compromised to steal cryptocurrency wallet credentials. The Colors.js and Faker.js maintainer intentionally added infinite loops to protest corporate usage without financial support, breaking thousands of applications.
 
 ### Unmaintained and abandoned projects
 
