@@ -51,16 +51,16 @@ products:
   - azure-pipelines
   - azure-repos
   - azure-test-plans
-  - github
+  - devops
 subjects:
   - devops
 units:
   - learn.wwl.implement-open-source-software-azure.introduction
-  - learn.wwl.implement-open-source-software-azure.explore-how-software-built
-  - learn.wwl.implement-open-source-software-azure.what-open-source-software
-  - learn.wwl.implement-open-source-software-azure.explore-corporate-concerns-components
-  - learn.wwl.implement-open-source-software-azure.introduction-to-licenses
-  - learn.wwl.implement-open-source-software-azure.explore-common-licenses
+  - learn.wwl.implement-open-source-software-azure.explore-how-software-is-built
+  - learn.wwl.implement-open-source-software-azure.what-is-open-source-software
+  - learn.wwl.implement-open-source-software-azure.explore-corporate-concerns-with-open-source-software-components
+  - learn.wwl.implement-open-source-software-azure.introduction-to-open-source-licenses
+  - learn.wwl.implement-open-source-software-azure.explore-common-open-source-licenses
   - learn.wwl.implement-open-source-software-azure.examine-license-implications-ratings
   - learn.wwl.implement-open-source-software-azure.knowledge-check
   - learn.wwl.implement-open-source-software-azure.summary

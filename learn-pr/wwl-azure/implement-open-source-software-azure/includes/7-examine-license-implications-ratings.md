@@ -146,7 +146,7 @@ Organizations commonly rate licenses based on the risk they pose for commercial 
 
 **Legal environment:**
 
-- **Jurisdictional differences:** License interpretation varies by country.
+- **Jurisdictional differences:** License interpretation varies by country/region.
 - **Enforcement history:** Some licenses have stronger enforcement precedent.
 - **Patent considerations:** Patent clauses interact with organizational patent strategies.
 
