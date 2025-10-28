@@ -4,7 +4,7 @@ title: Package Management With Azure Artifacts
 metadata:
   title: Package Management With Azure Artifacts
   description: "Hands-on exercise demonstrating package management with Azure Artifacts including creating feeds, publishing packages, and consuming packages in projects."
-  ms.date: 10/13/2025
+  ms.date: 10/27/2025
   author: LuizMacedo
   ms.author: lumac
   ms.topic: unit

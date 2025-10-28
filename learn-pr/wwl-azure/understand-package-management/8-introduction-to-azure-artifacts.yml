@@ -4,7 +4,7 @@ title: Introduction to Azure Artifacts
 metadata:
   title: Introduction to Azure Artifacts
   description: "Introduction to Azure Artifacts features including feed creation, package types support, upstream sources, feed views, and integration with Azure DevOps."
-  ms.date: 10/13/2025
+  ms.date: 10/27/2025
   author: LuizMacedo
   ms.author: lumac
   ms.topic: unit

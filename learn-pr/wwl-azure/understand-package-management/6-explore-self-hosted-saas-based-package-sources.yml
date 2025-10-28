@@ -4,7 +4,7 @@ title: Explore Self-Hosted and SaaS-Based Package Sources
 metadata:
   title: Explore Self-Hosted and SaaS-Based Package Sources
   description: "Compare self-hosted package sources (NuGet Server, Nexus, Artifactory) with SaaS-based solutions (Azure Artifacts, MyGet) including benefits and trade-offs."
-  ms.date: 10/13/2025
+  ms.date: 10/27/2025
   author: LuizMacedo
   ms.author: lumac
   ms.topic: unit

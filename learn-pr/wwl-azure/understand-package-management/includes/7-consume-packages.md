@@ -1,10 +1,10 @@
-Each software project that **consumes packages** to include the required dependencies will use the **package manager** and one or more **package sources**.
+Each software project that **consumes packages** to include the required dependencies use the **package manager** and one or more **package sources**.
 
-The package manager will download the individual packages from the sources and install them locally on the development machine or build server.
+The package manager downloads the individual packages from the sources and install them locally on the development machine or build server.
 
 ## Developer workflow for consuming packages
 
-The developer flow will follow this general pattern:
+The developer flow follows this general pattern:
 
 1. **Identify a required dependency:** Determine what functionality is needed in your codebase.
 2. **Find a component:** Search for a component that satisfies the requirements for the project.
@@ -12,11 +12,11 @@ The developer flow will follow this general pattern:
 4. **Install the package:** Use the package manager to install the package into the codebase and development machine.
 5. **Implement functionality:** Create the software implementation that uses the new components from the package.
 
-The **package manager tooling** will help search and install the components in the packages. How it's achieved varies for the different package types. Refer to the documentation of the package manager for instructions on consuming packages from feeds.
+The **package manager tooling** helps search and install the components in the packages. How it's achieved varies for the different package types. Refer to the documentation of the package manager for instructions on consuming packages from feeds.
 
 ## Configuring package sources
 
-To get started, you'll need to specify the **package source**. Package managers will have a default source defined as the standard package feed for its type.
+To get started, you need to specify the **package source**. Package managers have a default source defined as the standard package feed for its type.
 
 **Default sources by package type:**
 
@@ -26,7 +26,7 @@ To get started, you'll need to specify the **package source**. Package managers 
 - **pip:** PyPI.org
 - **Docker:** Docker Hub
 
-**Alternative feeds** will need to be configured to allow consuming the packages they offer.
+**Alternative feeds** need to be configured to allow consuming the packages they offer.
 
 ### Configuration examples
 
@@ -98,7 +98,7 @@ A source with an upstream source defined may **download and cache** the requeste
 
 **How caching works:**
 
-- The source will include these downloaded packages.
+- The source includes these downloaded packages.
 - Starts to act as a **cache** for the upstream source.
 - Offers the ability to keep track of any packages from the external upstream source.
 - Improves performance by reducing repeated downloads.
@@ -110,7 +110,7 @@ An upstream source can be a way to **avoid direct access** of developers and bui
 **Proxy pattern:**
 
 - The private feed uses the upstream source as a **proxy** for the external source.
-- It will be your feed manager and private source that have the communication to the outside.
+- It is your feed manager and private source that have the communication to the outside.
 - Developers and build machines only access the private feed.
 - Only privileged roles can add upstream sources to a private feed.
 
@@ -125,7 +125,7 @@ See also [Upstream sources](/azure/devops/artifacts/concepts/upstream-sources).
 
 ## Package graphs
 
-A feed can have one or more **upstream sources**, which might be internal or external. Each of these can have additional upstream sources, creating a **package graph** of the source.
+A feed can have one or more **upstream sources**, which might be internal or external. Each of these can have other upstream sources, creating a **package graph** of the source.
 
 ### Benefits of package graphs
 

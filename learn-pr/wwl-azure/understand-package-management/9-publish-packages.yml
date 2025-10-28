@@ -4,7 +4,7 @@ title: Publish Packages
 metadata:
   title: Publish Packages
   description: "Learn how to create, package, and publish packages to Azure Artifacts and other feeds including versioning, metadata, and automation with CI/CD pipelines."
-  ms.date: 10/13/2025
+  ms.date: 10/27/2025
   author: LuizMacedo
   ms.author: lumac
   ms.topic: unit

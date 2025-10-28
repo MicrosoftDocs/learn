@@ -3,8 +3,8 @@ uid: learn.wwl.understand-package-management.consume-packages
 title: Consume Packages
 metadata:
   title: Consume Packages
-  description: "Learn how to consume packages in your projects including configuring package sources, installing packages, managing versions, and resolving dependencies."
-  ms.date: 10/13/2025
+  description: "Learn how to consume packages in your projects including configuring package sources, installing packages, manage versions, and resolve dependencies."
+  ms.date: 10/27/2025
   author: LuizMacedo
   ms.author: lumac
   ms.topic: unit
