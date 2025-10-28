@@ -148,7 +148,7 @@ You learned how to describe the benefits and usage of:
 
 - [GitVersion](https://gitversion.net/) - Automated versioning from Git history.
 - [semantic-release](https://semantic-release.gitbook.io/) - Fully automated version management and package publishing.
-- [Azure DevOps CLI](https://docs.microsoft.com/en-us/cli/azure/artifacts) - Command-line tools for Azure Artifacts automation.
+- [Azure DevOps CLI](/cli/azure/artifacts) - Command-line tools for Azure Artifacts automation.
 
 ### Community and support
 
