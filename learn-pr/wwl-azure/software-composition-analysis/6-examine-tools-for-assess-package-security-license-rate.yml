@@ -3,7 +3,7 @@ uid: learn.wwl.software-composition-analysis.examine-tools-for-assess-package-se
 title: Examine Tools for Assessing Package Security and License Compliance
 metadata:
   title: Examine Tools for Assessing Package Security and License Compliance
-  description: "Evaluate leading SCA tools including Mend, Snyk, OWASP Dependency-Check, Black Duck, GitHub Dependabot, JFrog Xray, and Sonatype Nexus Lifecycle."
+  description: "Evaluate leading SCA tools including Mend, Snyk, OWASP Dependency-Check, Black Duck, and GitHub Dependabot."
   ms.date: 10/22/2025
   author: LuizMacedo
   ms.author: lumac
