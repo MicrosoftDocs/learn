@@ -223,7 +223,7 @@ Numerous Software Composition Analysis tools are available, each with different 
 
 - **Policy management:** Flexible policy engine for security, license, and quality requirements.
 - **Automated remediation:** Suggests alternative components with fewer vulnerabilities.
-- **Continuous monitoring:** Monitors applications continuously for newly-disclosed vulnerabilities.
+- **Continuous monitoring:** Monitors applications continuously for newly disclosed vulnerabilities.
 - **License analysis:** Comprehensive license risk assessment and compliance reporting.
 - **Component intelligence:** Quality, security, and license risk scoring for components.
 - **Application composition reporting:** Detailed reports on application dependencies and risks.

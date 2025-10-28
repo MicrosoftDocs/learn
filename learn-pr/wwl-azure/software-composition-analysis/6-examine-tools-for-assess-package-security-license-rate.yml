@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.software-composition-analysis.examine-tools-for-assess-package-security-license-rate
-title: Examine Tools for Assessing Package Security and License Compliance
+uid: learn.wwl.software-composition-analysis.examine-tools-for-assessing-package-security-license-compliance
+title: Examine tools for assessing package security and license compliance
 metadata:
   title: Examine Tools for Assessing Package Security and License Compliance
   description: "Evaluate leading SCA tools including Mend, Snyk, OWASP Dependency-Check, Black Duck, and GitHub Dependabot."

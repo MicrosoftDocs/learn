@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.software-composition-analysis.interpret-alerts-from-scanner-tools
-title: Interpret Alerts from Scanner Tools
+title: Interpret alerts from scanner tools
 metadata:
   title: Interpret Alerts from Scanner Tools
   description: "Understand CVSS scoring, assess exploitability, manage false positives, prioritize vulnerabilities, and establish security bug bars for effective remediation."

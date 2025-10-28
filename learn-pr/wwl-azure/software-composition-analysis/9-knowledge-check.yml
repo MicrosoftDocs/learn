@@ -37,7 +37,7 @@ quiz:
         - content: "OWASP."
           isCorrect: false
           explanation: "Incorrect. Mend Bolt can be used to assess open-source security and licensing compliance."
-    - content: "Which of the following situations GitHub Dependabot detects vulnerable dependencies and send Dependabot alerts about them?"
+    - content: "In which of the following situations does GitHub Dependabot detect vulnerable dependencies and send Dependabot alerts about them?"
       choices:
         - content: "A new vulnerability is added to the GitHub Advisory database."
           isCorrect: true

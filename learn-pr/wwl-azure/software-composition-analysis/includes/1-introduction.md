@@ -8,19 +8,19 @@ This module provides comprehensive guidance on implementing Software Composition
 
 This module covers essential knowledge for implementing Software Composition Analysis:
 
-**Understanding Software Composition Analysis:** You'll explore what SCA is, why it's critical for modern development, what SCA tools detect, and the benefits of automated dependency scanning. Understanding SCA fundamentals helps you recognize why manual dependency management doesn't scale and how automated tools provide continuous visibility into security and compliance risks.
+- **Understanding Software Composition Analysis:** You'll explore what SCA is, why it's critical for modern development, what SCA tools detect, and the benefits of automated dependency scanning. Understanding SCA fundamentals helps you recognize why manual dependency management doesn't scale and how automated tools provide continuous visibility into security and compliance risks.
 
-**Inspecting and validating code bases:** You'll learn how to inventory all dependencies in your applications, validate license compliance to avoid legal issues, detect known security vulnerabilities through CVE databases, and assess dependency quality including maintenance status and community health.
+- **Inspecting and validating code bases:** You'll learn how to inventory all dependencies in your applications, validate license compliance to avoid legal issues, detect known security vulnerabilities through CVE databases, and assess dependency quality including maintenance status and community health.
 
-**Implementing GitHub Dependabot:** You'll discover how GitHub Dependabot automatically scans dependencies for vulnerabilities, creates pull requests with security updates, generates dependency graphs showing transitive dependencies, and integrates with GitHub Security tab for centralized vulnerability management.
+- **Implementing GitHub Dependabot:** You'll discover how GitHub Dependabot automatically scans dependencies for vulnerabilities, creates pull requests with security updates, generates dependency graphs showing transitive dependencies, and integrates with GitHub Security tab for centralized vulnerability management.
 
-**Integrating SCA into pipelines:** You'll explore how to implement automated scanning in Azure Pipelines during build and deployment, configure SCA tools including Mend (WhiteSource), Snyk, and OWASP Dependency-Check, establish quality gates that fail builds when critical vulnerabilities are detected, and generate Software Bill of Materials (SBOM) for compliance and transparency.
+- **Integrating SCA into pipelines:** You'll explore how to implement automated scanning in Azure Pipelines during build and deployment, configure SCA tools including Mend (WhiteSource), Snyk, and OWASP Dependency-Check, establish quality gates that fail builds when critical vulnerabilities are detected, and generate Software Bill of Materials (SBOM) for compliance and transparency.
 
-**Examining SCA tools:** You'll compare different SCA solutions understanding their strengths, limitations, and ideal use cases. Tools covered include commercial offerings like Mend and Snyk that provide comprehensive scanning with support, open-source options like OWASP Dependency-Check for cost-effective scanning, and platform-integrated solutions like Azure Artifacts upstream sources and GitHub Dependabot.
+- **Examining SCA tools:** You'll compare different SCA solutions understanding their strengths, limitations, and ideal use cases. Tools covered include commercial offerings like Mend and Snyk that provide comprehensive scanning with support, open-source options like OWASP Dependency-Check for cost-effective scanning, and platform-integrated solutions like Azure Artifacts upstream sources and GitHub Dependabot.
 
-**Automating container scanning:** You'll learn how to scan container base images for vulnerabilities, analyze application dependencies within containers, integrate container scanning into CI/CD pipelines, and configure container registries like Azure Container Registry and Docker Hub to block vulnerable images automatically.
+- **Automating container scanning:** You'll learn how to scan container base images for vulnerabilities, analyze application dependencies within containers, integrate container scanning into CI/CD pipelines, and configure container registries like Azure Container Registry and Docker Hub to block vulnerable images automatically.
 
-**Interpreting scanner alerts:** You'll discover how to assess vulnerability severity using CVSS scores, determine exploitability considering whether vulnerabilities are reachable in your application, prioritize remediation based on business impact and risk, and manage false positives that can overwhelm teams if not properly filtered.
+- **Interpreting scanner alerts:** You'll discover how to assess vulnerability severity using CVSS scores, determine exploitability considering whether vulnerabilities are reachable in your application, prioritize remediation based on business impact and risk, and manage false positives that can overwhelm teams if not properly filtered.
 
 ## Learning objectives
 

@@ -2,9 +2,7 @@ Integrating Software Composition Analysis into CI/CD pipelines enables automated
 
 ## Why integrate SCA into pipelines?
 
-Traditional security approaches
-
-created dangerous patterns where security teams discovered vulnerabilities late in development when pressure to release was highest. This pattern resulted in either shipping vulnerable software or expensive last-minute remediation efforts delaying releases.
+Traditional security approaches created dangerous patterns where security teams discovered vulnerabilities late in development when pressure to release was highest. This pattern resulted in either shipping vulnerable software or expensive last-minute remediation efforts delaying releases.
 
 ### Shift-left security benefits
 
@@ -299,7 +297,7 @@ steps:
 **Scheduled scan advantages:**
 
 - **Thorough analysis:** Deep scanning with all severity levels without blocking development.
-- **New vulnerability detection:** Detect newly-disclosed vulnerabilities in unchanged dependencies.
+- **New vulnerability detection:** Detect newly disclosed vulnerabilities in unchanged dependencies.
 - **Comprehensive reporting:** Generate detailed reports for security teams and management.
 - **Trend analysis:** Track security posture changes over time through consistent scanning.
 
@@ -511,7 +509,7 @@ steps:
 **SBOM use cases:**
 
 - **Compliance evidence:** Provide to customers or auditors demonstrating dependency transparency.
-- **Vulnerability tracking:** Use SBOM to quickly determine if newly-disclosed vulnerabilities affect deployed software.
+- **Vulnerability tracking:** Use SBOM to quickly determine if newly disclosed vulnerabilities affect deployed software.
 - **Supply chain security:** Track software provenance and detect supply chain attacks.
 - **License compliance:** Document all license obligations in deployed software.
 

@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.software-composition-analysis.integrate-software-composition-analysis-checks-into-pipelines
-title: Integrate Software Composition Analysis Checks into Pipelines
+title: Integrate software composition analysis checks into pipelines
 metadata:
   title: Integrate Software Composition Analysis Checks into Pipelines
   description: "Implement SCA scanning in CI/CD pipelines with pull request validation, build-time checks, quality gates, policy enforcement, and SBOM generation."

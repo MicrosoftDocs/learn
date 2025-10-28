@@ -49,7 +49,7 @@ This module explored how to implement comprehensive Software Composition Analysi
 **Securing container images:**
 
 - **Multi-layer vulnerabilities:** Container images contain base image packages and application dependencies requiring scanning.
-- **Registry scanning:** Continuous scanning of images in container registries detects newly-disclosed vulnerabilities.
+- **Registry scanning:** Continuous scanning of images in container registries detects newly disclosed vulnerabilities.
 - **Build-time validation:** Scanning during image builds prevents vulnerable images from reaching registries.
 - **Runtime monitoring:** Scanning deployed containers detects vulnerabilities in production environments.
 - **Best practices:** Use minimal base images, implement multi-stage builds, scan early and often, and automate remediation.
@@ -85,7 +85,7 @@ Successful Software Composition Analysis implementation follows proven patterns:
 - **Developer workstations:** Integrate SCA scanning into IDEs for real-time feedback.
 - **Pull request validation:** Automatically scan dependency changes before merge.
 - **CI/CD pipelines:** Run comprehensive scans during builds with policy enforcement.
-- **Production monitoring:** Continuously monitor deployed applications for newly-disclosed vulnerabilities.
+- **Production monitoring:** Continuously monitor deployed applications for newly disclosed vulnerabilities.
 
 **Enable remediation:**
 

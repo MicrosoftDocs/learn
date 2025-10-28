@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.software-composition-analysis.implement-github-dependabot-alerts-security-updates
-title: Implement GitHub Dependabot Alerts and Security Updates
+title: Implement GitHub Dependabot alerts and security updates
 metadata:
   title: Implement GitHub Dependabot Alerts and Security Updates
   description: "Configure GitHub Dependabot for automated vulnerability alerts, security updates, and version updates with automated pull request workflows."

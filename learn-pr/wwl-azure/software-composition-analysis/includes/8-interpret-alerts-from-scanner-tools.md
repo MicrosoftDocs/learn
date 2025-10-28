@@ -399,7 +399,7 @@ Systematic triage ensures efficient vulnerability management:
 
 - **Scanner tools:** Automatically filter vulnerabilities by severity.
 - **Reachability analysis:** Remove unreachable vulnerabilities from triage queue.
-- **Known false positives:** Automatically suppress previously-identified false positives.
+- **Known false positives:** Automatically suppress previously identified false positives.
 
 **Step 2: Initial assessment:**
 
@@ -455,7 +455,7 @@ Track vulnerability management effectiveness:
 **Trend metrics:**
 
 - **Open vulnerability count:** Trending count of unresolved vulnerabilities by severity.
-- **New vs. resolved:** Comparison of newly-detected and remediated vulnerabilities.
+- **New vs. resolved:** Comparison of newly detected and remediated vulnerabilities.
 - **SLA compliance:** Percentage of vulnerabilities remediated within defined SLAs.
 - **False positive rate:** Percentage of findings determined to be false positives.
 

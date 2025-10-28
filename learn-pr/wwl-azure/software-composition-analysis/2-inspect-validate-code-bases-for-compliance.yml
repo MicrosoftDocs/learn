@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.software-composition-analysis.inspect-validate-code-bases-for-compliance
-title: Inspect and Validate Code Bases for Compliance
+title: Inspect and validate code bases for compliance
 metadata:
   title: Inspect and Validate Code Bases for Compliance
   description: "Learn systematic approaches for dependency discovery, vulnerability assessment, license validation, and compliance checking in code bases."

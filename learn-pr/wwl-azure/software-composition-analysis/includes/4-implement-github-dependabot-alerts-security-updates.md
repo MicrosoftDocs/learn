@@ -86,7 +86,7 @@ Organization administrators can enable Dependabot alerts across all repositories
 1. Navigate to organization **Settings**.
 2. Click **Security & analysis** in the left sidebar.
 3. Click **Enable all** next to Dependabot alerts to activate alerts for all current and future repositories.
-4. Optionally select **Automatically enable for new repositories** to enable alerts for newly-created repositories.
+4. Optionally select **Automatically enable for new repositories** to enable alerts for newly created repositories.
 
 ### Supported package ecosystems
 
@@ -266,7 +266,7 @@ Dependabot pull requests support special commands for managing updates.
 - **`@dependabot recreate`:** Recreate the pull request, overwriting any manual edits.
 - **`@dependabot merge`:** Merge the pull request once CI checks pass.
 - **`@dependabot squash and merge`:** Squash commits and merge once checks pass.
-- **`@dependabot cancel merge`:** Cancel a previously-requested merge.
+- **`@dependabot cancel merge`:** Cancel a previously requested merge.
 - **`@dependabot reopen`:** Reopen a closed pull request.
 - **`@dependabot close`:** Close the pull request and prevent Dependabot from recreating it.
 - **`@dependabot ignore this major version`:** Close the pull request and ignore future updates to this major version.

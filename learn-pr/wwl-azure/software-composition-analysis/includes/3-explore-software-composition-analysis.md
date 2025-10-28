@@ -141,12 +141,12 @@ SCA tools employ multiple techniques to discover and analyze dependencies:
 - **Call graph construction:** Build call graphs showing which dependency code is actually executed by your application.
 - **Dead code detection:** Identify dependencies bundled but never actually used.
 - **Exploit path analysis:** Determine whether vulnerable code paths are reachable from application entry points.
-- **Risk refinement:** Reduce noise by focusing on exploitable vulnerabilities in actually-used code.
+- **Risk refinement:** Reduce noise by focusing on exploitable vulnerabilities in actually used code.
 
 **Continuous monitoring:**
 
 - **Real-time alerting:** Receive immediate notifications when new vulnerabilities affecting your dependencies are disclosed.
-- **Scheduled scanning:** Regularly rescan applications to detect newly-discovered vulnerabilities in unchanged dependencies.
+- **Scheduled scanning:** Regularly rescan applications to detect newly discovered vulnerabilities in unchanged dependencies.
 - **Baseline comparison:** Track changes in vulnerability and compliance status over time.
 - **Regression prevention:** Alert when new dependencies introduce vulnerabilities or license violations.
 
@@ -206,14 +206,14 @@ Effective SCA implementation involves integration at multiple points in the deve
 
 **Production scanning:**
 
-- **Deployed application analysis:** Scan actually-deployed applications to detect runtime dependencies.
+- **Deployed application analysis:** Scan actually deployed applications to detect runtime dependencies.
 - **Container registry scanning:** Continuously scan container images stored in registries.
 - **Serverless function analysis:** Scan deployed serverless functions and their dependencies.
 - **Drift detection:** Identify differences between intended and actual deployed dependencies.
 
 **Continuous vulnerability monitoring:**
 
-- **Ongoing surveillance:** Monitor deployed applications for newly-disclosed vulnerabilities affecting current dependencies.
+- **Ongoing surveillance:** Monitor deployed applications for newly disclosed vulnerabilities affecting current dependencies.
 - **Incident response:** Trigger incident response workflows when critical vulnerabilities are discovered in production.
 - **Patch planning:** Generate patch deployment plans for addressing vulnerabilities in deployed applications.
 - **SLA compliance:** Track remediation timeframes to ensure compliance with security SLAs.

@@ -66,7 +66,7 @@ Container registries provide centralized locations for scanning and policy enfor
 
 - **Automatic scanning:** Microsoft Defender for Containers automatically scans images pushed to Azure Container Registry.
 - **Trigger-based scanning:** Scans trigger on push, import, and pull operations.
-- **Continuous re-scanning:** Images are periodically rescanned for newly-disclosed vulnerabilities.
+- **Continuous re-scanning:** Images are periodically rescanned for newly disclosed vulnerabilities.
 - **Recommendations:** Security Center provides remediation recommendations for discovered vulnerabilities.
 
 **Registry scan triggers:**
@@ -74,7 +74,7 @@ Container registries provide centralized locations for scanning and policy enfor
 - **Push triggers:** New images automatically scan when pushed to the registry.
 - **Import triggers:** Images imported from external registries are scanned.
 - **Pull triggers:** Images are scanned within 24 hours after being pulled.
-- **Periodic rescanning:** Previously-scanned images are rescanned daily (last 90 days for pushed images, last 30 days for pulled images).
+- **Periodic rescanning:** Previously scanned images are rescanned daily (last 90 days for pushed images, last 30 days for pulled images).
 
 ### Build-time scanning
 
@@ -291,7 +291,7 @@ jobs:
 ### Runtime scanning
 
 **Deployed container monitoring:**
-Runtime scanning detects vulnerabilities in actually-deployed containers.
+Runtime scanning detects vulnerabilities in actually deployed containers.
 
 **Kubernetes admission controllers:**
 Admission controllers enforce policies before containers are deployed to Kubernetes clusters.
@@ -676,7 +676,7 @@ CMD ["/myapp"]
 - **Pull request validation:** Scan in CI pipelines on every pull request.
 - **Main branch builds:** Comprehensive scans on main branch merges.
 - **Registry admission:** Scan images before accepting them into registries.
-- **Scheduled rescanning:** Periodically rescan stored images for newly-disclosed vulnerabilities.
+- **Scheduled rescanning:** Periodically rescan stored images for newly disclosed vulnerabilities.
 - **Pre-deployment:** Final validation before deploying to production.
 
 ### Implement security gates

@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.software-composition-analysis.automate-container-images
-title: Automate Container Image Scanning
+uid: learn.wwl.software-composition-analysis.automate-container-image-scanning
+title: Automate container image scanning
 metadata:
   title: Automate Container Image Scanning
   description: "Implement automated container scanning for base images, dependencies, and runtime environments with registry, build-time, and runtime scanning."
