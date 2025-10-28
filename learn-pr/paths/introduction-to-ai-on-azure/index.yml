@@ -32,6 +32,7 @@ modules:
 - learn.wwl.get-started-generative-ai-azure
 - learn.wwl.introduction-language
 - learn.wwl.get-started-language-azure
+- learn.wwl.introduction-ai-speech
 - learn.wwl.recognize-synthesize-speech
 - learn.wwl.introduction-computer-vision
 - learn.wwl.get-started-computer-vision
