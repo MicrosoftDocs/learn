@@ -11,7 +11,7 @@ metadata:
     - N/A
   ms.service: azure
   ai-usage: ai-assisted
-title: Develop Monitor and Status Dashboards
+title: Develop monitor and status dashboards
 summary: This comprehensive module teaches you to develop effective monitoring and status dashboards for modern DevOps environments. You'll learn to use Azure Dashboards for integrated visualizations, Azure Monitor Workbooks for interactive reporting, and Power BI for advanced analytics. Learn to configure GitHub monitoring, track critical pipeline health metrics (failure rates, duration, flaky tests), and optimize pipeline performance for cost, time, and reliability. Discover strategies for building custom monitoring applications and implementing concurrency optimization to maximize throughput while controlling costs.
 abstract: |
   By the end of this module, you'll be able to:

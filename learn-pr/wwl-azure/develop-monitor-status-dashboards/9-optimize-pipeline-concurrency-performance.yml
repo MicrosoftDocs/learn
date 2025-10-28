@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.develop-monitor-status-dashboards.optimize-pipeline-concurrency-performance
-title: Optimize Pipeline Concurrency for Performance
+title: Optimize pipeline concurrency for performance
 metadata:
   title: Optimize Pipeline Concurrency for Performance
   description: "Learn pipeline concurrency optimization to maximize throughput while controlling costs. Configure parallel jobs, understand Microsoft-hosted vs self-hosted agent economics, implement job dependencies and stages, optimize test parallelization, and balance concurrency limits against infrastructure costs for efficient pipeline execution at scale."

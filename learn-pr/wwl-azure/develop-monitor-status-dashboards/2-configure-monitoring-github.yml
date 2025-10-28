@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.develop-monitor-status-dashboards.configure-monitoring-github
-title: Configure Monitoring in GitHub
+title: Configure monitoring in GitHub
 metadata:
   title: Configure Monitoring in GitHub
   description: "Learn to configure comprehensive monitoring in GitHub repositories using status badges, GitHub Insights, Actions workflow analytics, and third-party monitoring integrations. Explore repository activity tracking, security alerts, dependency monitoring, and workflow performance metrics for complete visibility into GitHub-based development workflows."

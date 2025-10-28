@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.develop-monitor-status-dashboards.build-your-own-custom-application
-title: Build Your Own Custom Monitoring Application
+title: Build your own custom monitoring application
 metadata:
   title: Build Your Own Custom Monitoring Application
   description: "Discover how to build custom monitoring applications using Azure DevOps REST APIs, Application Insights SDKs, and Azure Monitor APIs. Learn authentication approaches, data retrieval strategies, real-time dashboard development, custom alerting logic, and integration patterns for specialized monitoring requirements beyond standard dashboard tools."

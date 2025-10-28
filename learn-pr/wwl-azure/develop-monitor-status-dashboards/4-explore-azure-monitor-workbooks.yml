@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.develop-monitor-status-dashboards.explore-azure-monitor-workbooks
-title: Explore Azure Monitor Workbooks
+title: Explore Azure Monitor workbooks
 metadata:
   title: Explore Azure Monitor Workbooks
   description: "Discover Azure Monitor Workbooks for creating interactive, parameterized monitoring reports with rich visualizations, text narratives, and KQL queries. Learn to build custom workbooks, use templates, implement dynamic parameters, create drill-down experiences, and share interactive reports that combine metrics, logs, and Application Insights data."

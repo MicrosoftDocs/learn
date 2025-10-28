@@ -354,7 +354,7 @@ While Azure Dashboards offer powerful capabilities, understanding their **limita
 - **Maximum series:** Log visualizations are limited to **10 data series** per chart
 - **Grouping behavior:** Data series beyond 10 are automatically grouped into an "Other" bucket
 - **Impact:** High-cardinality data (e.g., metrics by individual user, by specific IP) may lose granularity
-- **Example:** Query showing requests by country works well with <10 countries, but 50+ countries results in most grouped as "Other"
+- **Example:** Query showing requests by country/region works well with <10 countries/regions, but 50+ countries/regions results in most grouped as "Other"
 - **Workaround:** Add filters to reduce cardinality (e.g., "top 10 countries by request volume")
 
 ### No custom parameters for log charts

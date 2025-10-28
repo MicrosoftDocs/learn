@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.develop-monitor-status-dashboards.explore-azure-dashboards
-title: Explore Azure Dashboards
+title: Explore Azure dashboards
 metadata:
   title: Explore Azure Dashboards
   description: "Learn to use Azure Dashboards for creating customizable, shareable visualizations of Azure resources and monitoring data. Pin tiles from various Azure services, organize multi-resource views, configure refresh intervals, share dashboards across teams, and implement role-based access control for secure dashboard management."

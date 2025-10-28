@@ -205,9 +205,3 @@ jobs:
 
 - **Microsoft-hosted:** Buy just enough for peak concurrent demand
 - **Self-hosted:** Unlimited parallelism included—no incremental cost
-
-**Example optimization:**
-
-- **Before:** 10 parallel jobs, average 5 min queue time, $500/month
-- **After:** 15 parallel jobs, average 30 sec queue time, $650/month
-- **Value:** $150/month buys 4.5 min faster feedback—worth it for team productivity

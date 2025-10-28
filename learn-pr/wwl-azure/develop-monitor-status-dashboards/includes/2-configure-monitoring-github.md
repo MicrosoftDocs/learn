@@ -183,9 +183,9 @@ Historical charts do **not track** items that have been:
 - **Archived:** Removed from active view but retained in project history
 - **Deleted:** Permanently removed from the project
 
-**Rationale:** These items represent abandoned or cancelled work that shouldn't influence velocity calculations or historical trends.
+**Rationale:** These items represent abandoned or canceled work that shouldn't influence velocity calculations or historical trends.
 
-**Workaround:** If you need to track cancelled work separately, use a custom status like "Cancelled" or "Won't Do" before archiving, so the historical chart captures the closure event.
+**Workaround:** If you need to track canceled work separately, use a custom status like "Canceled" or "Won't Do" before archiving, so the historical chart captures the closure event.
 
 ## Plan availability and limits
 

@@ -129,7 +129,7 @@ Workbooks excel at **parameters** that enable users to filter, customize, and ex
 **Cross-visualization interaction:**
 
 - **Scenario:** Multiple visualizations respond to selections in one visualization
-- **Example:** Click country in geographic map → updates request volume chart, error rate chart, and user activity table to show only that country's data
+- **Example:** Click country/region in geographic map → updates request volume chart, error rate chart, and user activity table to show only that country/region's data
 
 **Drill-down capabilities:**
 
@@ -181,21 +181,21 @@ Workbooks follow a **vertical document structure** with sequential steps, enabli
 
 **Troubleshooting guide structure:**
 
-1. **Introduction (markdown):** Problem description and investigation approach
-2. **Parameters:** Time range, resource selection
-3. **Overview (queries):** High-level metrics showing problem scope
-4. **Hypothesis section 1 (markdown + queries):** "Is it a network issue?" + network metrics
-5. **Hypothesis section 2 (markdown + queries):** "Is it a database issue?" + database performance
-6. **Detailed analysis (queries):** Drill-down into identified root cause
-7. **Recommendations (markdown):** Remediation steps and prevention strategies
+- **Introduction (markdown):** Problem description and investigation approach
+- **Parameters:** Time range, resource selection
+- **Overview (queries):** High-level metrics showing problem scope
+- **Hypothesis section 1 (markdown + queries):** "Is it a network issue?" + network metrics
+- **Hypothesis section 2 (markdown + queries):** "Is it a database issue?" + database performance
+- **Detailed analysis (queries):** Drill-down into identified root cause
+- **Recommendations (markdown):** Remediation steps and prevention strategies
 
 **Performance analysis structure:**
 
-1. **Executive summary (markdown + metrics):** Key performance indicators
-2. **Trend analysis (queries):** Performance over time with historical comparison
-3. **Bottleneck identification (queries):** Slowest operations, highest resource consumption
-4. **Comparative analysis (queries):** Performance across regions, versions, or customer segments
-5. **Optimization recommendations (markdown):** Specific actions to improve performance
+- **Executive summary (markdown + metrics):** Key performance indicators
+- **Trend analysis (queries):** Performance over time with historical comparison
+- **Bottleneck identification (queries):** Slowest operations, highest resource consumption
+- **Comparative analysis (queries):** Performance across regions, versions, or customer segments
+- **Optimization recommendations (markdown):** Specific actions to improve performance
 
 ### Personal and shared workbooks
 
