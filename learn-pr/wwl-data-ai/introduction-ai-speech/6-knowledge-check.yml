@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.introduction-ai-speech.knowledge-check
+title: Module assessment
+metadata:
+  title: Module assessment
+  description: Knowledge check
+  author: wwlpublish
+  ms.author: gmalc
+  ms.date: 10/27/2025
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 3
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What activity happens during the pre-processing stage of speech recognition?"
+    choices:
+    - content: "The audio is converted to .wmv format."
+      isCorrect: false
+      explanation: "Incorrect. Conversion to .wmv format isn't required."
+    - content: "Background noise is added to the audio signal."
+      isCorrect: false
+      explanation: "Incorrect. Background noise isn't added to the audio signal during pre-processing."
+    - content: "Feature vectors are extracted from the audio waveform for modeling."
+      isCorrect: true
+      explanation: "Correct. Feature vectors, often MFCCs, are extracted from the audio waveform for modeling."
+  - content: "What are *phonemes*?"
+    choices:
+    - content: "Artifacts that are removed from the signal as part of the clean-up process."
+      isCorrect: false
+      explanation: "Incorrect. Phonemes aren't artifacts in the audio signal."
+    - content: "The smallest unit of sound in speech."
+      isCorrect: true
+      explanation: "Correct. Phonemes are the smallest unit of sound in speech."
+    - content: "AI models that generate audio."
+      isCorrect: false
+      explanation: "Incorrect. Phonemes aren't AI models."
+  - content: "Why is it important to generate prosody in speech synthesis?"
+    choices:
+    - content: "Prosody maximizes the volume of the audio output."
+      isCorrect: false
+      explanation: "Incorrect. Prosody doesn't maximize volume"
+    - content: "Prosody translates the speech to the language of the listener."
+      isCorrect: false
+      explanation: "Incorrect. Prosody doesn't translate speech to another language."
+    - content: "Prosody ensures natural pronunciation and speech cadence."
+      isCorrect: true
+      explanation: "Correct. Prosody ensures natural pronunciation and speech cadence."
