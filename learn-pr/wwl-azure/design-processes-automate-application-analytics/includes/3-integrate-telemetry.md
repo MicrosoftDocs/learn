@@ -2,7 +2,9 @@ Telemetry is the foundation of automated feedback in modern DevOps environments.
 
 **Beyond technical monitoring:** While DevOps teams use telemetry primarily to detect and solve technical problems, this data provides value far beyond operations. When properly collected and analyzed, telemetry reveals how customers actually use your application, which features they value, and where they encounter difficulties.
 
-**Stakeholder intelligence:** Telemetry data serves multiple audiences in your organization:
+### Stakeholder intelligence
+
+Telemetry data serves multiple audiences in your organization:
 
 **Technical teams:** Use telemetry to monitor application health, detect issues, diagnose problems, and measure performance.
 
@@ -30,7 +32,9 @@ Telemetry is the automated collection and transmission of data from remote syste
 
 **Telemetry provides a complete view:** With comprehensive telemetry including infrastructure logs, application metrics, and business events, you gain a complete understanding of application health, performance, and user intent. This complete perspective enables data-driven decisions about application improvements.
 
-**Why telemetry matters in DevOps:** In modern DevOps environments, telemetry is essential for several reasons:
+### Why telemetry matters in DevOps
+
+In modern DevOps environments, telemetry is essential for several reasons:
 
 **Real-time visibility:** You cannot manually monitor application health. Telemetry provides automated, continuous visibility into how applications perform in production.
 
@@ -93,7 +97,9 @@ Modern applications run across diverse infrastructure components, each generatin
 
 Each infrastructure source provides telemetry about resource utilization, performance characteristics, and operational health.
 
-**Azure monitoring services for telemetry collection:** Azure provides specialized services designed to collect and analyze telemetry from different sources:
+### Azure monitoring services for telemetry collection
+
+Azure provides specialized services designed to collect and analyze telemetry from different sources:
 
 **Application Insights:** Collects telemetry from web applications hosted on various compute platforms including App Services, virtual machines, physical servers, containers, and serverless functions. Application Insights provides:
 
@@ -152,7 +158,9 @@ The primary benefit of telemetry is the ability to monitor application state and
 
 **Understanding real user behavior:** Users often interact with applications in ways designers and developers never anticipated. Telemetry reveals actual usage patterns, helping you optimize for how users really work rather than how you think they should work.
 
-**Questions telemetry helps answer:** Comprehensive telemetry enables you to answer critical questions about your application:
+### Questions telemetry helps answer
+
+Comprehensive telemetry enables you to answer critical questions about your application:
 
 **Feature usage and engagement:**
 
@@ -214,7 +222,9 @@ While telemetry provides valuable insights for application improvement, implemen
 - Performance issues affecting them may go undetected.
 - Feature preferences from this user segment won't be captured.
 
-**Selection bias in telemetry data:** Users who opt out of telemetry often represent specific segments of your user base:
+### Selection bias in telemetry data
+
+Users who opt out of telemetry often represent specific segments of your user base:
 
 **Technical sophistication:** More tech-savvy users tend to notice and disable telemetry features more frequently. These users often represent your power users who push applications to their limits and encounter edge cases that other users never experience.
 
@@ -222,7 +232,9 @@ While telemetry provides valuable insights for application improvement, implemen
 
 **Impact on product decisions:** Selection bias in telemetry data can lead to product decisions that favor the preferences of users who allow telemetry while neglecting needs of users who opt out. Since opt-out users often include technical experts, you might miss valuable signals about advanced use cases, integration scenarios, or performance issues under heavy usage.
 
-**Balancing telemetry and privacy:** Organizations must find balance between collecting useful telemetry and respecting user privacy:
+### Balancing telemetry and privacy
+
+Organizations must find balance between collecting useful telemetry and respecting user privacy:
 
 **Be transparent:** Clearly communicate what telemetry you collect, why you collect it, and how you use it. Transparency builds trust and reduces user concerns about surveillance.
 
@@ -234,7 +246,9 @@ While telemetry provides valuable insights for application improvement, implemen
 
 **Show value:** Help users understand how telemetry improves their experience. When users see bug fixes and features driven by telemetry insights, they may be more willing to participate.
 
-**Account for gaps in your data:** When analyzing telemetry data and making decisions based on it, explicitly account for potential biases introduced by opt-out users:
+### Account for gaps in your data
+
+When analyzing telemetry data and making decisions based on it, explicitly account for potential biases introduced by opt-out users:
 
 **Consider silent users:** Recognize that your telemetry represents users who opted in, not your entire user base. Consider what experiences and needs might be missing from your data.
 

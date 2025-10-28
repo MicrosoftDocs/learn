@@ -48,14 +48,14 @@ Now that you understand automated application analytics design, you can:
 
 Continue building your DevOps monitoring expertise with these resources:
 
-**Official Microsoft documentation:**
+### Official Microsoft documentation
 
 - [What is Azure Application Insights? - Azure Monitor](/azure/azure-monitor/app/app-insights-overview) - Comprehensive guide to Application Insights capabilities and configuration.
 - [Continuous monitoring of your DevOps release pipeline with Azure Pipelines and Azure Application Insights](/azure/azure-monitor/app/continuous-monitoring) - Learn to integrate monitoring throughout your deployment pipeline.
 - [Azure Monitor Application Insights Documentation](/azure/azure-monitor/azure-monitor-app-hub) - Complete reference for Application Insights features and scenarios.
 - [IT Service Management Connector Overview](/azure/azure-monitor/platform/itsmc-overview) - Detailed setup and configuration guidance for ITSMC.
 
-**Additional learning resources:**
+### Additional learning resources
 
 - Explore Azure Monitor Logs query language (KQL) for custom analytics.
 - Study distributed tracing patterns for microservices architectures.

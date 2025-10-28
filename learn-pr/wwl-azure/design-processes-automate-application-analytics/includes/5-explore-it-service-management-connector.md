@@ -1,6 +1,8 @@
 Organizations use Azure monitoring tools to identify, analyze, and troubleshoot application and infrastructure issues. However, incident management workflows typically occur in separate IT Service Management (ITSM) tools where work items, tickets, and change requests are tracked.
 
-**The integration challenge:** When monitoring and incident management occur in separate systems, teams face workflow inefficiencies:
+## The integration challenge
+
+When monitoring and incident management occur in separate systems, teams face workflow inefficiencies:
 
 **Context switching overhead:** Engineers must switch between Azure monitoring tools to investigate issues and ITSM tools to document findings, create tickets, and track resolutions. This switching wastes time and breaks concentration during critical incident response.
 
@@ -14,25 +16,31 @@ Organizations use Azure monitoring tools to identify, analyze, and troubleshoot 
 
 IT Service Management Connector (ITSMC) for Azure solves these integration challenges by providing bi-directional synchronization between Azure monitoring tools and ITSM platforms. ITSMC integrates with leading ITSM solutions including ServiceNow, Provance, Cherwell, and System Center Service Manager.
 
-**Bi-directional integration benefits:** ITSMC connects Azure Monitor with ITSM tools in both directions:
+### Bi-directional integration benefits
+
+ITSMC connects Azure Monitor with ITSM tools in both directions:
 
 **Azure to ITSM:** Automatically create or update work items in ITSM tools based on Azure monitoring alerts. When Azure Monitor detects issues, ITSM tickets are created automatically with complete diagnostic context.
 
 **ITSM to Azure:** Pull incident and change request data from ITSM tools into Azure Log Analytics. This integration enables correlation between incidents tracked in ITSM systems and telemetry data in Azure Monitor.
 
-**Supported Azure alert types:** ITSMC can create ITSM work items from multiple Azure alert sources:
+### Supported Azure alert types
+
+ITSMC can create ITSM work items from multiple Azure alert sources:
 
 - **Activity Log Alerts:** Alerts based on Azure resource management operations, service health events, and resource health changes.
 - **Metric Alerts:** Near real-time alerts triggered when metrics cross defined thresholds.
 - **Log Analytics Alerts:** Alerts generated from log queries in Azure Monitor Logs.
 
-**Work item types:** ITSMC can create and update various ITSM work item types:
+### Work item types
+
+ITSMC can create and update various ITSM work item types:
 
 - **Events:** General notifications about system occurrences.
 - **Alerts:** Notifications requiring attention or investigation.
 - **Incidents:** Work items tracking service disruptions requiring resolution.
 
-**Key capabilities of ITSMC:**
+## Key capabilities of ITSMC
 
 **Automated incident creation:** When Azure Monitor raises alerts, ITSMC automatically creates corresponding incidents in your ITSM tool. This automation eliminates manual ticket creation and ensures incidents are logged immediately when problems are detected.
 
@@ -44,7 +52,9 @@ IT Service Management Connector (ITSMC) for Azure solves these integration chall
 
 **Incident correlation:** Analyze incidents from ITSM systems alongside telemetry data in Azure Monitor. This correlation helps identify patterns such as which types of changes lead to incidents or which infrastructure issues cause the most service disruptions.
 
-**Improved troubleshooting experience:** With ITSMC, engineers can:
+### Improved troubleshooting experience
+
+With ITSMC, engineers can:
 
 - View ITSM incident context directly from Azure Monitor dashboards.
 - Navigate from Azure alerts to related ITSM tickets for complete incident history.
