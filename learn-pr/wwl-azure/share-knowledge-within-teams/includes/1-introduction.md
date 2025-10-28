@@ -59,7 +59,7 @@ This module addresses these challenges by teaching you to use integrated tools t
 **Microsoft Teams integration:**
 
 - Connect GitHub to Teams for pull request and issue notifications
-- Integrate Azure DevOps Boards for work item updates in Teams
+- Integrate Azure Boards for work item updates in Teams
 - Configure Azure Repos notifications for code review discussions
 - Set up Azure Pipelines alerts for build and deployment events
 - Use subscriptions and filters to control notification noise
