@@ -18,9 +18,9 @@ A remarkable thing happens when engineers make mistakes and feel safe providing 
 
 Developing a Just Culture requires deliberate organizational practices and commitments:
 
-### Encourage learning through blameless post-mortems
+### Encourage learning through blameless postmortems
 
-**Regular practice:** Conduct blameless post-mortems on outages and accidents as standard practice, not exceptional events.
+**Regular practice:** Conduct blameless postmortems on outages and accidents as standard practice, not exceptional events.
 
 **Understand how accidents could happen:** The goal is understanding **how** an accident could have happened to better equip ourselves to prevent it in the future. This differs from asking "who caused it" which doesn't improve safety.
 
@@ -48,7 +48,7 @@ Developing a Just Culture requires deliberate organizational practices and commi
 
 **Judgment occurs in hindsight:** Accept that judgment of those decisions happens in hindsight. We assess decisions with information the person making the decision didn't have.
 
-**Hindsight bias awareness:** Accept that [Hindsight Bias](http://en.wikipedia.org/wiki/Hindsight) will continue to cloud our assessment of past events. Work hard to eliminate it by asking "what made sense given what they knew then?" instead of "why didn't they do what we now know they should have done?"
+**Hindsight bias awareness:** Accept that [Hindsight Bias](http://en.wikipedia.org/wiki/Hindsight) continues to cloud our assessment of past events. Work hard to eliminate it by asking "what made sense given what they knew then?" instead of "why didn't they do what we now know they should have done?"
 
 ### Focus on environmental factors
 
@@ -70,7 +70,7 @@ Developing a Just Culture requires deliberate organizational practices and commi
 
 **Sharp end defines boundaries:** The sharp end is relied upon to inform the organization about the line between appropriate and inappropriate behavior. It isn't something that the blunt end can come up with on its own.
 
-**Ground truth:** Engineers working in systems daily have ground truth about what's realistically achievable, what shortcuts are necessary, and what risks are unavoidable given current constraints.
+**Ground truth:** Engineers working in systems daily have ground truth about what's achievable, what shortcuts are necessary, and what risks are unavoidable given current constraints.
 
 **Collaborative standards:** Develop behavioral standards and expectations collaboratively between sharp end and blunt end rather than imposing top-down rules that don't reflect operational reality.
 
