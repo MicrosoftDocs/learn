@@ -36,13 +36,13 @@ Text normalization prevents the system from attempting to pronounce raw symbols 
 
 ## Linguistic analysis: Map text to phonemes
 
-Linguistic analysis breaks normalized text into *phonemes* (the smallest units of sound) and determines how to pronounce each word. The linguistic analysis stage
+Linguistic analysis breaks normalized text into *phonemes* (the smallest units of sound) and determines how to pronounce each word. The linguistic analysis stage:
 
-1. Segments text into words and syllables
-2. Looks up word pronunciations in lexicons (pronunciation dictionaries)
-3. Applies G2P rules or neural models to handle unknown words
-4. Marks syllable boundaries and identifies stressed syllables
-5. Determines phonetic context for adjacent sounds
+1. Segments text into words and syllables.
+2. Looks up word pronunciations in lexicons (pronunciation dictionaries).
+3. Applies G2P rules or neural models to handle unknown words.
+4. Marks syllable boundaries and identifies stressed syllables.
+5. Determines phonetic context for adjacent sounds.
 
 ### Grapheme-to-phoneme conversion
 
@@ -50,9 +50,9 @@ Grapheme-to-phoneme (G2P) conversion maps written letters (*graphemes*) to pronu
 
 For example:
 
-- "though" converts to /θoʊ/
-- "through" converts to /θruː/
-- "cough" converts to /kɔːf/
+- The word "though" converts to /θoʊ/
+- The word "through" converts to /θruː/
+- The word "cough" converts to /kɔːf/
 
 Each word contains the letters "ough", but the pronunciation differs dramatically.
 
