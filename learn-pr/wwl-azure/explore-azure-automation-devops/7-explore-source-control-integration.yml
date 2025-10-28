@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.explore-azure-automation-devops.explore-source-control-integration
-title: Explore Source Control Integration
+title: Explore source control integration
 metadata:
   title: Explore Source Control Integration
   description: "Integrate Azure Automation with GitHub, Azure DevOps Git, and Team Foundation Version Control. Learn how to manage runbooks through version control, enable collaboration, and implement CI/CD workflows."

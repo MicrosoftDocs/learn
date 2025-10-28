@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.explore-azure-automation-devops.explore-runbook-gallery
-title: Explore Runbook Gallery
+title: Explore runbook gallery
 metadata:
   title: Explore Runbook Gallery
   description: "Discover the Azure Automation runbook gallery with pre-built runbooks and modules from Microsoft and the community. Learn how to import and customize runbooks for your automation needs."

@@ -29,18 +29,18 @@ You create a **webhook** linked to a runbook using the following steps:
 
 ### Parameters and run settings
 
-5.  Select the **Parameters run settings (Default: Azure)** option. This option allows you to configure the following:
+1. Select the **Parameters run settings (Default: Azure)** option. This option allows you to configure the following:
 
-- **Mandatory parameters:** If the runbook has mandatory parameters, you'll need to provide these required parameters during creation. You can't create the webhook unless values are provided.
-- **Optional parameters:** If there are no mandatory parameters in the runbook, there's no configuration required here.
-- **Parameter values:** The webhook must include values for any mandatory parameters of the runbook and can include values for optional parameters.
-- **Client override:** When a client starts a runbook using a webhook, it can't override the parameter values defined.
-- **WebhookData parameter:** To receive data from the client, the runbook can accept a single parameter called **$WebhookData** of type `[object]` that contains data that the client includes in the **POST request**.
-- **Configuration requirement:** There's no required webhook configuration to support the **$WebhookData** parameter.
+   - **Mandatory parameters:** If the runbook has mandatory parameters, you'll need to provide these required parameters during creation. You can't create the webhook unless values are provided.
+   - **Optional parameters:** If there are no mandatory parameters in the runbook, there's no configuration required here.
+   - **Parameter values:** The webhook must include values for any mandatory parameters of the runbook and can include values for optional parameters.
+   - **Client override:** When a client starts a runbook using a webhook, it can't override the parameter values defined.
+   - **WebhookData parameter:** To receive data from the client, the runbook can accept a single parameter called **$WebhookData** of type `[object]` that contains data that the client includes in the **POST request**.
+   - **Configuration requirement:** There's no required webhook configuration to support the **$WebhookData** parameter.
 
-:::image type="content" source="../media/create-webhook-e62bc51c.png" alt-text="Screenshot of a warning explaining that after creating a webhook, its URL cannot be viewed. Copy it before pressing OK.":::
+   :::image type="content" source="../media/create-webhook-e62bc51c.png" alt-text="Screenshot of a warning explaining that after creating a webhook, its URL cannot be viewed. Copy it before pressing OK.":::
 
-6.  When finished, select **Create**.
+1. When finished, select **Create**.
 
 ## Using a webhook
 

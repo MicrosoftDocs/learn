@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.explore-azure-automation-devops.explore-powershell-workflows
-title: Explore PowerShell Workflows
+title: Explore PowerShell workflows
 metadata:
   title: Explore PowerShell Workflows
   description: "Understand PowerShell Workflow fundamentals for Azure Automation including workflow syntax, parallel processing, checkpoints, and persistence. Learn the differences between PowerShell and PowerShell Workflow runbooks."

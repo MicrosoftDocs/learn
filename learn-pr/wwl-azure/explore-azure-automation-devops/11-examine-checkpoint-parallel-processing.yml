@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.explore-azure-automation-devops.examine-checkpoint-parallel-processing
-title: Examine Checkpoint and Parallel Processing
+title: Examine checkpoint and parallel processing
 metadata:
   title: Examine Checkpoint and Parallel Processing
   description: "Learn how to implement checkpoints for workflow resilience and parallel processing for improved performance in PowerShell Workflow runbooks. Understand Checkpoint-Workflow and Parallel keywords."

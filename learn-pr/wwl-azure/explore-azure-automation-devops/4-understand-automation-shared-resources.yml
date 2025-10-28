@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.explore-azure-automation-devops.understand-automation-shared-resources
-title: Understand Automation Shared Resources
+title: Understand automation shared resources
 metadata:
   title: Understand Automation Shared Resources
   description: "Learn about Azure Automation shared resources including connections, credentials, modules, schedules, and variables. Understand how to use these resources to configure and automate environments at scale."

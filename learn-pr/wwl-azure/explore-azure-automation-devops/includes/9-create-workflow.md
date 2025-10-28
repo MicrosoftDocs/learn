@@ -20,11 +20,11 @@ When you create your workflow, begin with the **workflow** keyword, which identi
 
 ### Adding parameters
 
-2.  To add parameters to a workflow, use the **Param** keyword. It's the same technique that you use to add parameters to a function.
+1. To add parameters to a workflow, use the **Param** keyword. It's the same technique that you use to add parameters to a function.
 
 ### Adding commands
 
-3.  Finally, add your standard **PowerShell** commands:
+1. Finally, add your standard **PowerShell** commands:
 
     ```powershell
     workflow MyFirstRunbook-Workflow

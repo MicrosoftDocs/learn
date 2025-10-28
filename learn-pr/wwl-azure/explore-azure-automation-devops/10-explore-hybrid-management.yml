@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.explore-azure-automation-devops.explore-hybrid-management
-title: Explore Hybrid Management
+title: Explore hybrid management
 metadata:
   title: Explore Hybrid Management
   description: "Plan and implement hybrid management using Azure Automation Hybrid Runbook Workers. Learn how to execute runbooks on on-premises servers and manage resources across Azure and local data centers."

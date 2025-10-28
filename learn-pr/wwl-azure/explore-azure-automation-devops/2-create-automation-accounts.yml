@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.explore-azure-automation-devops.create-automation-accounts
-title: Create Automation Accounts
+title: Create automation accounts
 metadata:
   title: Create Automation Accounts
   description: "Learn how to create and configure Azure Automation accounts to store runbooks, jobs, and automation assets. Understand account requirements, permissions, and best practices for managing multiple environments."

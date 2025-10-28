@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.explore-azure-automation-devops.what-runbook
-title: What Is a Runbook?
+title: What is a runbook?
 metadata:
   title: What Is a Runbook?
   description: "Understand runbooks in Azure Automation including PowerShell, PowerShell Workflow, Python, and graphical runbook types. Learn how to create, import, and manage runbooks for automation workflows."

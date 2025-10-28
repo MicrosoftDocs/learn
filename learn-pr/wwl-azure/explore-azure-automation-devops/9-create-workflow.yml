@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.explore-azure-automation-devops.create-workflow
-title: Create a Workflow
+title: Create a workflow
 metadata:
   title: Create a Workflow
   description: "Learn how to create PowerShell Workflow runbooks in Azure Automation. Understand the workflow keyword, parameters, InlineScript blocks, and best practices for workflow development."

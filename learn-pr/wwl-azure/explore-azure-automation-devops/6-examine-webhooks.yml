@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.explore-azure-automation-devops.examine-webhooks
-title: Examine Webhooks
+title: Examine webhooks
 metadata:
   title: Examine Webhooks
   description: "Learn how to create and configure webhooks to trigger Azure Automation runbooks from external systems using HTTP POST requests. Understand webhook security, parameters, and integration patterns."
