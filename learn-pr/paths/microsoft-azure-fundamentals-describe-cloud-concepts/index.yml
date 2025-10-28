@@ -3,11 +3,11 @@ uid: learn.wwl.microsoft-azure-fundamentals-describe-cloud-concepts
 metadata:
   title: 'Introduction to Cloud Infrastructure: Describe Cloud Concepts'
   description: 'Introductory learning path that is part of the Azure Infrastructure fundamentals content.'
-  ms.date: 08/08/2023
+  ms.date: 10/28/2025
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: learning-path
-title: 'Introduction to Microsoft Azure: Describe cloud concepts'
+title: 'Introduction to Cloud Infrastructure: Describe cloud concepts'
 prerequisites: |
   *   Basic familiarity with IT terms and concepts
 summary: |
