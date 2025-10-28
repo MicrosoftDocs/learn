@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.introduction-ai-speech.exercise-speech
+title: Exercise - Explore an AI speech scenario
+metadata:
+  title: Exercise - Explore an AI speech scenario
+  description: Explore an AI speech scenario.
+  author: GraemeMalcolm
+  ms.author: gmalc
+  ms.date: 10/27/2025
+  ms.topic: unit
+durationInMinutes: 15
+content: |
+  [!include[](includes/5-exercise-speech.md)]
+
