@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.introduction-github-packages.explore-package-access-control-visibility
-title: Explore Package Access Control and Visibility
+title: Explore package access control and visibility
 metadata:
   title: Explore Package Access Control and Visibility
   description: "Explore package access control and visibility settings in GitHub Packages, including permissions, public/private packages, and organizational access management."

@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.introduction-github-packages.install-package
-title: Install a Package
+title: Install a package
 metadata:
   title: Install a Package
   description: "Learn how to install packages from GitHub Packages by configuring package managers, authenticating with PATs, and consuming packages in projects."

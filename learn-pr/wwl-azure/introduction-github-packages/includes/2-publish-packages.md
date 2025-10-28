@@ -222,9 +222,9 @@ npm publish
 
 After you publish a package, you can **view it on GitHub**:
 
-- Navigate to your repository
-- Click **Packages** in the sidebar
-- Select your package to view details, versions, and download statistics
+1. Navigate to your repository
+2. Click **Packages** in the sidebar
+3. Select your package to view details, versions, and download statistics
 
 For an example, see [Codertocat/hello-world-npm](https://github.com/Codertocat/hello-world-npm/packages/10696?version=1.0.1).
 

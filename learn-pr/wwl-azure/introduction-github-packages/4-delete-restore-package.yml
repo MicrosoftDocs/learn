@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.introduction-github-packages.delete-restore-package
-title: Delete and Restore a Package
+title: Delete and restore a package
 metadata:
   title: Delete and Restore a Package
   description: "Learn how to delete and restore packages in GitHub Packages, understanding permissions, deletion scope, and restoration procedures for package management."

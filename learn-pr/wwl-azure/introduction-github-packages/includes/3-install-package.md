@@ -63,19 +63,21 @@ Use your package client's **native installation commands** (npm install, dotnet 
 Visual Studio provides a **graphical interface** for managing NuGet packages:
 
 1. **Open NuGet Package Manager:**
+
    - Expand **Solution → Project**
    - Right-click on **Dependencies**
    - Select **Manage NuGet Packages...**
 
-:::image type="content" source="../media/visual-studio-manage-nuget-packages-a3289d20.png" alt-text="Screenshot of Visual Studio option for manage NuGet packages.":::
+   :::image type="content" source="../media/visual-studio-manage-nuget-packages-a3289d20.png" alt-text="Screenshot of Visual Studio option for manage NuGet packages.":::
 
 2. **Browse and install:**
+
    - Click the **Browse** tab
    - Search for your package name
    - Select the version you want
    - Click **Install**
 
-:::image type="content" source="../media/visual-studio-manage-nuget-packages-browse-3c2e2b84.png" alt-text="Screenshot of how to manage NuGet packages, install and update from Visual Studio.":::
+   :::image type="content" source="../media/visual-studio-manage-nuget-packages-browse-3c2e2b84.png" alt-text="Screenshot of how to manage NuGet packages, install and update from Visual Studio.":::
 
 You can browse, install, and update dependencies from **multiple registries** simultaneously. For more information, see [Create and remove project dependencies](/visualstudio/ide/how-to-create-and-remove-project-dependencies).
 

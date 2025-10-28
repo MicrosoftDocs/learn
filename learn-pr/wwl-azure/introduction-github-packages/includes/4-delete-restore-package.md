@@ -29,7 +29,7 @@ You can **delete packages** from GitHub if you have the **required access permis
 - **Organization owner:** Full access to all organization packages
 
 > [!IMPORTANT]
-> The **5,000 download limit** for public packages is a safety measure to prevent breaking widely-used packages. Once a package exceeds this threshold, deletion is disabled to protect consumers.
+> The **5,000 download limit** for public packages is a safety measure to prevent breaking widely used packages. Once a package exceeds this threshold, deletion is disabled to protect consumers.
 
 ## Restoration requirements
 
@@ -108,13 +108,13 @@ To delete a version of a **repository-scoped package**:
 
 **Step 2: Access version management**
 
-4. In the top right of your package's landing page, click **Package settings**
-5. On the left sidebar, click **Manage versions**
+1. In the top right of your package's landing page, click **Package settings**
+2. On the left sidebar, click **Manage versions**
 
 **Step 3: Delete version**
 
-6. To the right of the version you want to delete, click the **⋯** menu and select **Delete version**
-7. To confirm the deletion, type the **package name** and click **I understand the consequences, delete this version**
+1. To the right of the version you want to delete, click the **⋯** menu and select **Delete version**
+2. To confirm the deletion, type the **package name** and click **I understand the consequences, delete this version**
 
 > [!WARNING]
 > Deletion is **permanent** after the 30-day restoration window. Make sure you have the correct version before confirming.
@@ -153,15 +153,15 @@ To delete an **entire repository-scoped package**:
 
 **Step 2: Access package settings**
 
-4. In the top right of your package's landing page, click **Package settings**
+1. In the top right of your package's landing page, click **Package settings**
 
 **Step 3: Delete package**
 
-5. Scroll down to the **Danger Zone** section
-6. Click **Delete this package**
-7. Review the confirmation message carefully
-8. Enter your **package name** to confirm
-9. Click **I understand, delete this package**
+1. Scroll down to the **Danger Zone** section
+2. Click **Delete this package**
+3. Review the confirmation message carefully
+4. Enter your **package name** to confirm
+5. Click **I understand, delete this package**
 
 > [!CAUTION]
 > Deleting an entire package removes **all versions** and **all metadata**. This action is **irreversible** after 30 days. Consumers depending on this package will experience broken builds.
@@ -198,14 +198,14 @@ To restore a **deleted package version**:
 
 **Step 2: Find deleted versions**
 
-3. On the left sidebar, click **Manage versions**
-4. Use the **Versions** drop-down menu on the top right
-5. Select **Deleted** to show only deleted versions
+1. On the left sidebar, click **Manage versions**
+2. Use the **Versions** drop-down menu on the top right
+3. Select **Deleted** to show only deleted versions
 
 **Step 3: Restore version**
 
-6. Next to the deleted package version you want to restore, click **Restore**
-7. To confirm, click **I understand the consequences, restore this version**
+1. Next to the deleted package version you want to restore, click **Restore**
+2. To confirm, click **I understand the consequences, restore this version**
 
 > [!TIP]
 > Restored packages return to the same visibility settings they had before deletion (public, private, or internal).
