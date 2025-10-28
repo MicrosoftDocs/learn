@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.understand-package-management.package-management-azure-artifacts
-title: Package Management With Azure Artifacts
+uid: learn.wwl.understand-package-management.package-management-with-azure-artifacts
+title: Package management with Azure Artifacts
 metadata:
   title: Package Management With Azure Artifacts
   description: "Hands-on exercise demonstrating package management with Azure Artifacts including creating feeds, publishing packages, and consuming packages in projects."

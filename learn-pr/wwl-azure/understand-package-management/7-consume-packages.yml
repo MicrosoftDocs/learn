@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.understand-package-management.consume-packages
-title: Consume Packages
+title: Consume packages
 metadata:
   title: Consume Packages
   description: "Learn how to consume packages in your projects including configuring package sources, installing packages, manage versions, and resolve dependencies."

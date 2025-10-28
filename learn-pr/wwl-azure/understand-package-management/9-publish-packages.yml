@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.understand-package-management.publish-packages
-title: Publish Packages
+title: Publish packages
 metadata:
   title: Publish Packages
   description: "Learn how to create, package, and publish packages to Azure Artifacts and other feeds including versioning, metadata, and automation with CI/CD pipelines."

@@ -11,7 +11,7 @@ metadata:
     - N/A
   ai-usage: ai-assisted
   ms.service: azure-devops-artifacts
-title: Understand Package Management
+title: Understand package management
 summary: This module describes package management fundamentals including package feeds, package feed managers, common public package sources, self-hosted and SaaS-based solutions, and practical guidance for consuming, creating, and publishing packages using Azure Artifacts and other package management tools.
 abstract: |
   By the end of this module, you're able to:

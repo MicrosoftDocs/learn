@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.understand-package-management.explore-packages
-title: Explore Packages
+title: Explore packages
 metadata:
   title: Explore Packages
   description: "Understand what packages are, their components, different package types (NuGet, npm, Maven, Python), and how they facilitate code reuse and distribution."

@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.understand-package-management.understand-package-feeds
-title: Understand Package Feeds
+title: Understand package feeds
 metadata:
   title: Understand Package Feeds
   description: "Learn about package feeds, their role in storing and managing packages, public versus private feeds, and feed visibility options."

@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.understand-package-management.explore-common-public-package-sources
-title: Explore Common Public Package Sources
+title: Explore common public package sources
 metadata:
   title: Explore Common Public Package Sources
   description: "Explore common public package sources including NuGet.org, npmjs.com, Maven Central, and PyPI, and understand when to use them."

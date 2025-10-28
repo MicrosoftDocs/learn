@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.understand-package-management.explore-package-feed-managers
-title: Explore Package Feed Managers
+title: Explore package feed managers
 metadata:
   title: Explore Package Feed Managers
   description: "Explore package feed managers and client tools including NuGet, npm, Maven, pip, and how they interact with package feeds."
