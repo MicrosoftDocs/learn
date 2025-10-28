@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.explore-package-dependencies.scan-your-codebase-for-dependencies
-title: Scan Your Codebase for Dependencies
+title: Scan your codebase for dependencies
 metadata:
   title: Scan Your Codebase for Dependencies
   description: "Learn to use tools and techniques to scan your codebase for dependencies, including NuGet, npm, Maven, and dependency analysis tools."

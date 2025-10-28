@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.explore-package-dependencies.identify-dependencies
-title: Identify Dependencies
+title: Identify dependencies
 metadata:
   title: Identify Dependencies
   description: "Learn how to identify and categorize dependencies in your projects, including direct dependencies, transitive dependencies, and development dependencies."

@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.explore-package-dependencies.understand-source-package-componentization
-title: Understand Source and Package Componentization
+title: Understand source and package componentization
 metadata:
   title: Understand Source and Package Componentization
   description: "Learn the differences between source componentization and package componentization, and understand when to use each approach for managing dependencies."

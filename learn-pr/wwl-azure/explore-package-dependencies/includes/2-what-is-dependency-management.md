@@ -16,8 +16,8 @@ Modern software development involves complex projects and solutions that rely on
 
 A software engineer must identify the components that make up parts of the solution and decide whether to:
 
-1. **Write the implementation:** Build the functionality from scratch.
-2. **Include an existing component:** Use a library, framework, or package that already provides the functionality.
+- **Write the implementation:** Build the functionality from scratch.
+- **Include an existing component:** Use a library, framework, or package that already provides the functionality.
 
 The latter approach introduces a **dependency** on other components.
 

@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.explore-package-dependencies.what-is-dependency-management
-title: What Is Dependency Management?
+uid: learn.wwl.explore-package-dependencies.what-dependency-management
+title: What is dependency management?
 metadata:
   title: What Is Dependency Management?
   description: "Learn what dependency management is, why it's essential in modern software development, and how it helps manage components, enable governance, and improve efficiency."

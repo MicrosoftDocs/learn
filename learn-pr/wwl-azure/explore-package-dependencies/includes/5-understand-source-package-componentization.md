@@ -2,7 +2,7 @@ Current development practices already have the notion of **componentization**—
 
 ## Two approaches to componentization
 
-### 1. Source componentization
+### Source componentization
 
 **Source componentization** is focused on organizing source code. It refers to splitting the source code in the codebase into separate parts and organizing it around the identified components.
 
@@ -32,7 +32,7 @@ Current development practices already have the notion of **componentization**—
 - **Build times:** Entire solution must be built even for small changes.
 - **Limited autonomy:** Teams must coordinate changes across components.
 
-### 2. Package componentization
+### Package componentization
 
 **Package componentization** uses packages as a formal way of wrapping and handling components. Distributing software components is performed by creating and publishing packages.
 

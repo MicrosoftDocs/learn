@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.explore-package-dependencies.decompose-your-system
-title: Decompose Your System
+title: Decompose your system
 metadata:
   title: Decompose Your System
   description: "Learn strategies for decomposing monolithic systems into manageable components, including identifying boundaries, defining interfaces, and organizing codebases."
