@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.migrate-consolidating-secure-artifacts.identify-existing-artifact-repositories
-title: Identify Existing Artifact Repositories
+title: Identify existing artifact repositories
 metadata:
   title: Identify Existing Artifact Repositories
   description: "Learn how to inventory and assess existing artifact repositories across your organization, including self-hosted and third-party solutions, to plan migration strategies."

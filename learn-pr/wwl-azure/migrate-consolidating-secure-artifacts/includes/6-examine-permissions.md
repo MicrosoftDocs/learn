@@ -28,7 +28,7 @@ You need to have the **Owner role** to do so.
 **Best practices:**
 
 - **Use teams:** Assign permissions to teams rather than individual users for easier management.
-- **Azure AD groups:** Leverage Azure Active Directory groups for organization-wide permission management.
+- **Microsoft Entra groups:** Leverage Microsoft Entra ID groups for organization-wide permission management.
 - **Service principals:** Use service principals for automated systems and CI/CD pipelines.
 
 ### Feed users

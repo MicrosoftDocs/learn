@@ -27,7 +27,7 @@ Package feeds must be secured for access by **authorized accounts** only, so onl
 
 ### Preventing unauthorized publishing
 
-**None should push packages to a feed without the proper role and permissions.**
+**No one should push packages to a feed without the proper role and permissions.**
 
 **Access control benefits:**
 
@@ -44,6 +44,8 @@ Especially in the **open-source world**, it's done by the community. A package s
 - **Automated scanning:** Vulnerability and malware scanning of packages.
 - **Code signing:** Verify package authenticity with digital signatures.
 - **Review processes:** Manual or automated reviews before publishing.
+
+### Additional security measures
 
 **Consumer-side security:**
 
@@ -108,6 +110,8 @@ Only those allowed access will consume the packages from the feed.
 
 **Why restrict publishing:**
 
+**Implementation:**
+
 - **Quality control:** Ensure only tested, approved packages are published.
 - **Security:** Prevent injection of malicious packages.
 - **Compliance:** Maintain audit trail of package publishers.
@@ -131,7 +135,7 @@ Only those allowed access will consume the packages from the feed.
 
 **Authentication:**
 
-- **Strong credentials:** Require strong passwords or multi-factor authentication.
+- **Strong credentials:** Require strong passwords or multifactor authentication.
 - **Personal Access Tokens:** Use PATs with appropriate scopes and expiration.
 - **Rotate credentials:** Regularly rotate tokens and credentials.
 

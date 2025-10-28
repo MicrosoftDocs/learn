@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.migrate-consolidating-secure-artifacts.secure-access-to-package-feeds
-title: Secure Access to Package Feeds
+title: Secure access to package feeds
 metadata:
   title: Secure Access to Package Feeds
   description: "Learn how to secure package feeds with visibility settings, access control, and security best practices to protect your artifacts from unauthorized access."

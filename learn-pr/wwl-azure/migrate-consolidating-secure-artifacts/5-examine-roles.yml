@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.migrate-consolidating-secure-artifacts.examine-roles
-title: Examine Roles
+title: Examine roles
 metadata:
   title: Examine Roles
   description: "Understand Azure Artifacts feed roles including Reader, Collaborator, Contributor, and Owner, and their respective permissions and use cases."

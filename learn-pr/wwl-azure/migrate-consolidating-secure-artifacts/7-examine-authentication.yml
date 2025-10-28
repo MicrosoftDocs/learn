@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.migrate-consolidating-secure-artifacts.examine-authentication
-title: Examine Authentication
+title: Examine authentication
 metadata:
   title: Examine Authentication
   description: "Learn authentication mechanisms for Azure Artifacts including Personal Access Tokens, credential providers, service principals, and managed identities."

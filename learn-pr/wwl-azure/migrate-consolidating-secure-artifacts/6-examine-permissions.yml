@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.migrate-consolidating-secure-artifacts.examine-permissions
-title: Examine Permissions
+title: Examine permissions
 metadata:
   title: Examine Permissions
   description: "Explore granular permissions in Azure Artifacts including feed-level and organization-level permissions, and how to assign them to users, teams, and groups."

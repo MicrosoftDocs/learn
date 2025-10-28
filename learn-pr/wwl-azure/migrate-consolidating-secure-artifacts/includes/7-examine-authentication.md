@@ -128,7 +128,7 @@ export AZURE_ARTIFACTS_PAT="your_pat_here"
 echo $AZURE_ARTIFACTS_PAT | base64 | pbcopy
 ```
 
-## Credential Providers
+## Credential providers
 
 **Credential providers** simplify authentication by automatically handling credentials for package managers.
 
@@ -179,7 +179,7 @@ The tool updates your `.npmrc` file with credentials that are automatically refr
 
 ### Creating a service principal
 
-1.  **Azure Active Directory:** Navigate to Azure AD in the Azure portal.
+1.  **Microsoft Entra ID:** Navigate to Microsoft Entra ID in the Azure portal.
 2.  **App registrations:** Create a new app registration.
 3.  **Credentials:** Generate a client secret or certificate.
 4.  **Azure DevOps permissions:** Add the service principal to your Azure DevOps organization.
