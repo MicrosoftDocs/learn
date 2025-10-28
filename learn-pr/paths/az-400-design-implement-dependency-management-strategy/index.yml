@@ -7,7 +7,7 @@ metadata:
   author: LuizMacedo
   ms.author: lumac
   ms.topic: learning-path
-title: "AZ-400: Design and Implement a Dependency Management Strategy"
+title: "AZ-400: Design and implement a dependency management strategy"
 prerequisites: |
   -   Understanding of DevOps concepts and practices
   -   Familiarity with Azure DevOps or GitHub
