@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.implement-bicep.understand-bicep-file-structure-syntax
-title: Understand Bicep File Structure and Syntax
+title: Understand Bicep file structure and syntax
 metadata:
   title: Understand Bicep File Structure and Syntax
   description: "Learn Bicep syntax including parameters, variables, resources, outputs, modules, and how to define dependencies between resources."

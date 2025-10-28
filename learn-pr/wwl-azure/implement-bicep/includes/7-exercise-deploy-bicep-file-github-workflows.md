@@ -58,19 +58,19 @@ Create another secret for the name of the resource group with a name such as `AZ
 
 ## Creating a GitHub action
 
-### Step 1: Create a new workflow
+### Create a new workflow
 
-1.  First, navigate to your repository and select the **Actions** menu. Then, set up a workflow to create an empty workflow in your repository. You can rename the file to a different name if you prefer.
+1. First, navigate to your repository and select the **Actions** menu. Then, set up a workflow to create an empty workflow in your repository. You can rename the file to a different name if you prefer.
 
-    :::image type="content" source="../media/github-new-file-f123693e.jpg" alt-text="Screenshot of GitHub new file creation, edit and preview.":::
+   :::image type="content" source="../media/github-new-file-f123693e.jpg" alt-text="Screenshot of GitHub new file creation, edit and preview.":::
 
-### Step 2: Define the workflow
+### Define the workflow
 
-2.  Replace the content of the file with the following snippet:
+2. Replace the content of the file with the following snippet:
 
     ```yaml
     on: [push]
-    name: Azure ARM
+    name: Azure Resource Manager
     jobs:
       build-and-deploy:
         runs-on: ubuntu-latest
@@ -116,20 +116,20 @@ This **GitHub Action** workflow performs the following:
   > [!NOTE]
   > The first part of the workflow defines the trigger and its name. The rest defines a job and uses a few tasks to check out the code, sign in to **Azure**, and deploy the **Bicep** file.
 
-### Step 3: Commit the workflow
+### Commit the workflow
 
-3.  Select **Start commit**, and enter a title and a description in the pop-up dialog. Then select **Commit directly to the main branch**, followed by **Commit new file**.
+3. Select **Start commit**, and enter a title and a description in the pop-up dialog. Then select **Commit directly to the main branch**, followed by **Commit new file**.
 
-    :::image type="content" source="../media/github-commit-action-ee701105.jpg" alt-text="Screenshot of GitHub commits a new file to the main branch.":::
+   :::image type="content" source="../media/github-commit-action-ee701105.jpg" alt-text="Screenshot of GitHub commits a new file to the main branch.":::
 
-### Step 4: Monitor the workflow
+### Monitor the workflow
 
-4.  Navigate to the **Actions** tab and select the newly created action that should be running.
+4. Navigate to the **Actions** tab and select the newly created action that should be running.
 
-    :::image type="content" source="../media/github-action-run-caf8225d.jpg" alt-text="Screenshot of GitHub action running and deploying.":::
+   :::image type="content" source="../media/github-action-run-caf8225d.jpg" alt-text="Screenshot of GitHub action running and deploying.":::
 
-### Step 5: Verify deployment
+### Verify deployment
 
-5.  Monitor the status and when the job is finished, check the **Azure portal** to see if the storage account has been created.
+5. Monitor the status and when the job is finished, check the **Azure portal** to see if the storage account has been created.
 
-    :::image type="content" source="../media/github-success-job-eb496fe9.jpg" alt-text="Screenshot of GitHub action successful executed job.":::
+   :::image type="content" source="../media/github-success-job-eb496fe9.jpg" alt-text="Screenshot of GitHub action successful executed job.":::

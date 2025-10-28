@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.implement-bicep.azure-deployment-use-resource-manager-templates
-title: Deployments Using Azure Bicep Templates
+title: Deployments using Azure Bicep templates
 metadata:
   title: Deployments Using Azure Bicep Templates
   description: "Understand how Bicep integrates with Azure Resource Manager, the deployment process, and best practices for production deployments."

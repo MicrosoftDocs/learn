@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.implement-bicep.what-bicep
-title: What Is Bicep?
+title: What is Bicep?
 metadata:
   title: What Is Bicep?
   description: "Learn about Bicep as a domain-specific language for Azure, its benefits over JSON templates, and how it simplifies infrastructure as code."

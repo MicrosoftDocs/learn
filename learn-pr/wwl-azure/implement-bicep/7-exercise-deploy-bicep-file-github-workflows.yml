@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.implement-bicep.exercise-deploy-bicep-file-github-workflows
-title: Exercise - Deploy a Bicep File from GitHub Workflows
+title: Exercise - Deploy a Bicep file from GitHub workflows
 metadata:
   title: Exercise - Deploy a Bicep File from GitHub Workflows
   description: "Hands-on exercise to deploy Bicep templates using GitHub Actions workflows for automated infrastructure deployment."

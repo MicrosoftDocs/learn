@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.implement-bicep.exercise-deploy-bicep-file-azure-pipelines
-title: Exercise - Deploy a Bicep File from Azure Pipelines
+title: Exercise - Deploy a Bicep file from Azure Pipelines
 metadata:
   title: Exercise - Deploy a Bicep File from Azure Pipelines
   description: "Hands-on exercise to deploy Bicep templates using Azure Pipelines for continuous deployment and infrastructure automation."

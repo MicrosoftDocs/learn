@@ -12,20 +12,20 @@ You also need to have that **Bicep** file you created earlier pushed into the **
 
 ## Creating the pipeline
 
-### Step 1: Create a new pipeline
+### Create a new pipeline
 
-1.  From within your **Azure DevOps** project, select **Pipelines**, and **New pipeline**.
-2.  Select **Azure Repos Git (YAML)** and specify your **Azure Repo** as a source.
+1. From within your **Azure DevOps** project, select **Pipelines**, and **New pipeline**.
+2. Select **Azure Repos Git (YAML)** and specify your **Azure Repo** as a source.
 
-    :::image type="content" source="../media/new-pipeline-git-eed3f3a1.jpg" alt-text="Screenshot of a new Azure Pipeline from Azure Repo.":::
+   :::image type="content" source="../media/new-pipeline-git-eed3f3a1.jpg" alt-text="Screenshot of a new Azure Pipeline from Azure Repo.":::
 
-3.  Select the **Starter pipeline** from the list of templates.
+3. Select the **Starter pipeline** from the list of templates.
 
-    :::image type="content" source="../media/starter-pipeline-template-cf6fce79.jpg" alt-text="Screenshot of starter pipeline template.":::
+   :::image type="content" source="../media/starter-pipeline-template-cf6fce79.jpg" alt-text="Screenshot of starter pipeline template.":::
 
-### Step 2: Configure the pipeline YAML
+### Configure the pipeline YAML
 
-4.  Replace everything in the starter pipeline file with the following snippet:
+4. Replace everything in the starter pipeline file with the following snippet:
 
     ```yaml
     trigger:
@@ -76,14 +76,14 @@ This **YAML** pipeline performs the following:
   > [!NOTE]
   > Don't forget to replace the `azureServiceConnection` value with your service connection name.
 
-### Step 3: Save and run
+### Save and run
 
-5.  Select **Save and run** to create a new commit in your repository containing the pipeline **YAML** file and then run the pipeline. Wait for the pipeline to finish running and check the status.
+5. Select **Save and run** to create a new commit in your repository containing the pipeline **YAML** file and then run the pipeline. Wait for the pipeline to finish running and check the status.
 
-    :::image type="content" source="../media/azure-devops-successful-job-51e2cf04.jpg" alt-text="Screenshot of Azure DevOps successful job.":::
+   :::image type="content" source="../media/azure-devops-successful-job-51e2cf04.jpg" alt-text="Screenshot of Azure DevOps successful job.":::
 
-### Step 4: Verify deployment
+### Verify deployment
 
-6.  Once the pipeline runs successfully, you should be able to see the resource group and the storage account in the **Azure portal**.
+6. Once the pipeline runs successfully, you should be able to see the resource group and the storage account in the **Azure portal**.
 
-    :::image type="content" source="../media/azure-resource-group-bicep-b3c33069.jpg" alt-text="Screenshot of a resource group created by Bicep.":::
+   :::image type="content" source="../media/azure-resource-group-bicep-b3c33069.jpg" alt-text="Screenshot of a resource group created by Bicep.":::
