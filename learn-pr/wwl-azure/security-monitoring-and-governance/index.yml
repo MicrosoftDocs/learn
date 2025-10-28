@@ -12,7 +12,7 @@ metadata:
   ms.service: azure
   ai-usage: ai-assisted
 title: Security Monitoring and Governance
-summary: This module explores comprehensive security monitoring and governance for Azure DevOps environments. Learn to implement pipeline security, configure Microsoft Defender for Cloud for threat protection and compliance, manage Azure Policy for governance enforcement, secure resources with locks, leverage Microsoft Defender for Identity for identity threat detection, and integrate GitHub Advanced Security with Microsoft Defender for unified security visibility across your development lifecycle.
+summary: This module explores comprehensive security monitoring and governance for Azure DevOps environments. Learn to implement pipeline security, configure Microsoft Defender for Cloud for threat protection and compliance, manage Azure Policy for governance enforcement, secure resources with locks, use Microsoft Defender for Identity threat detection, and integrate GitHub Advanced Security with Microsoft Defender for unified security visibility across your development lifecycle.
 abstract: |
   By the end of this module, you're able to:
 
@@ -24,7 +24,7 @@ abstract: |
 
   -   Understand policy initiatives, resource locks, and governance frameworks.
 
-  -   Deploy Microsoft Defender for Identity for identity threat detection.
+  -   Deploy Microsoft Defender for Identity threat detection.
 
   -   Integrate GitHub Advanced Security with Microsoft Defender for Cloud.
 

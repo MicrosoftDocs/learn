@@ -60,4 +60,4 @@ Organizations implementing security monitoring and governance should:
 - [GitHub Advanced Security documentation](https://docs.github.com/en/code-security).
 - [Microsoft Security DevOps](https://github.com/microsoft/security-devops-action).
 - [Azure Well-Architected Framework - Security pillar](/azure/well-architected/security/).
-- [DevSecOps on Azure](https://learn.microsoft.com/azure/architecture/solution-ideas/articles/devsecops-in-azure).
+- [DevSecOps on Azure](/azure/architecture/solution-ideas/articles/devsecops-in-azure).
