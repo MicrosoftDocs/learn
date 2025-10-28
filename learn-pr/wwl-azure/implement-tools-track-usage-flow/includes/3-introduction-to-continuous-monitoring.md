@@ -963,6 +963,7 @@ Use [Impact Analysis](/azure/application-insights/app-insights-usage-impact) to 
 **Question:** How does checkout page load time impact purchase completion rate?
 
 **Analysis results:**
+
 | Page Load Time | Conversion Rate | Sample Size |
 |---------------|----------------|-------------|
 | < 1 second | 45% | 15,000 users |
