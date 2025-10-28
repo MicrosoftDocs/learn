@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.manage-alerts-blameless-retrospectives-just-culture.understand-server-response-time-degradation
-title: Understand Server Response Time Degradation
+title: Understand server response time degradation
 metadata:
   title: Understand Server Response Time Degradation
   description: "Learn how Application Insights detects response time degradation by establishing baselines, using statistical analysis to distinguish genuine degradation from normal variance, and providing diagnostic information including profiler traces and performance reports."
@@ -9,7 +9,7 @@ metadata:
   ms.author: lumac
   ms.topic: unit
   ms.custom:
-  - N/A
+    - N/A
 durationInMinutes: 4
 content: |
   [!include[](includes/6-understand-server-response-time-degradation.md)]

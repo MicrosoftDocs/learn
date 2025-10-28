@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.manage-alerts-blameless-retrospectives-just-culture.explore-smart-detection-notifications
-title: Configure Smart Detection Notifications
+title: Configure smart detection notifications
 metadata:
   title: Configure Smart Detection Notifications
   description: "Learn to configure notification recipients, manage notification frequency to prevent alert fatigue, and integrate smart detection with incident management workflows through action groups."

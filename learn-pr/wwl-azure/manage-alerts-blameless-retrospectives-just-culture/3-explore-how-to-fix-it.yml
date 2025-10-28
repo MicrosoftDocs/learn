@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.manage-alerts-blameless-retrospectives-just-culture.explore-how-to-fix-it
-title: Explore How to Fix Performance Issues
+title: Explore how to fix performance issues
 metadata:
   title: Explore How to Fix Performance Issues
   description: "Learn to investigate performance degradation using triage information, scope analysis, diagnostic data, and powerful tools like Application Insights Profiler and Snapshot Debugger."

@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.manage-alerts-blameless-retrospectives-just-culture.examine-blameless-retrospective
-title: Examine Blameless Retrospectives
+title: Examine blameless retrospectives
 metadata:
   title: Examine Blameless Retrospectives
   description: "Understand why traditional blame-focused approaches prevent learning from failures. Learn how blameless retrospectives enable engineers to provide detailed accounts without fear of punishment, breaking the destructive cycle of blame that reduces trust and increases errors."

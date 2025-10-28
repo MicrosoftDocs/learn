@@ -6,9 +6,8 @@ In DevOps environments, monitoring systems generate alerts constantly. Some aler
 
 **Building better approaches:** This module teaches two complementary approaches that high-performing DevOps organizations use:
 
-**Effective alert management:** Learn to distinguish meaningful alerts that require human action from automated notifications that create noise. Understand how Azure Application Insights smart detection identifies real performance degradations. Design alert strategies that ensure critical issues get attention while reducing meaningless interruptions.
-
-**Blameless retrospectives and just culture:** Learn to conduct post-incident reviews that focus on learning rather than blaming. Understand how creating psychological safety enables engineers to share honest details about failures, leading to better system improvements and organizational learning.
+- **Effective alert management:** Learn to distinguish meaningful alerts that require human action from automated notifications that create noise. Understand how Azure Application Insights smart detection identifies real performance degradations. Design alert strategies that ensure critical issues get attention while reducing meaningless interruptions.
+- **Blameless retrospectives and just culture:** Learn to conduct post-incident reviews that focus on learning rather than blaming. Understand how creating psychological safety enables engineers to share honest details about failures, leading to better system improvements and organizational learning.
 
 ## Learning objectives
 

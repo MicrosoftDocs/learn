@@ -88,14 +88,14 @@ Smart detection notifications provide three types of critical information to gui
 
 ## Systematic investigation approach
 
-**Step 1 - Assess impact and prioritize:** Review triage information to understand severity. Determine if immediate response is required or if investigation can wait for normal working hours.
+1. **Assess impact and prioritize:** Review triage information to understand severity. Determine if immediate response is required or if investigation can wait for normal working hours.
 
-**Step 2 - Identify scope:** Examine scope information to understand which traffic segments are affected. This narrows your investigation focus significantly.
+2. **Identify scope:** Examine scope information to understand which traffic segments are affected. This narrows your investigation focus significantly.
 
-**Step 3 - Form hypotheses:** Based on diagnostic information, develop hypotheses about potential causes. For example, if degradation correlates with high load and affects all traffic, hypothesis might be infrastructure capacity constraints.
+3. **Form hypotheses:** Based on diagnostic information, develop hypotheses about potential causes. For example, if degradation correlates with high load and affects all traffic, hypothesis might be infrastructure capacity constraints.
 
-**Step 4 - Use investigative tools:** Open the Performance blade and examine detailed telemetry. If available, review Profiler traces to identify specific code paths causing slowness. Check snapshot debugger if exceptions are involved.
+4. **Use investigative tools:** Open the Performance blade and examine detailed telemetry. If available, review Profiler traces to identify specific code paths causing slowness. Check snapshot debugger if exceptions are involved.
 
-**Step 5 - Correlate with changes:** Check what changed around the time degradation started. Recent deployments, configuration changes, database schema changes, or traffic pattern shifts often correlate with performance issues.
+5. **Correlate with changes:** Check what changed around the time degradation started. Recent deployments, configuration changes, database schema changes, or traffic pattern shifts often correlate with performance issues.
 
-**Step 6 - Verify and remediate:** Once you identify the likely cause, implement a fix and verify that performance returns to normal baselines. Continue monitoring to ensure the issue is fully resolved.
+6. **Verify and remediate:** Once you identify the likely cause, implement a fix and verify that performance returns to normal baselines. Continue monitoring to ensure the issue is fully resolved.

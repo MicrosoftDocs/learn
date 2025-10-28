@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.manage-alerts-blameless-retrospectives-just-culture.examine-when-get-notification
-title: Examine When to Get a Notification
+title: Examine when to get a notification
 metadata:
   title: Examine When to Get a Notification
   description: "Learn how Azure Application Insights smart detection automatically identifies performance degradation patterns including response time issues, dependency problems, and slow performance patterns across different user segments."
