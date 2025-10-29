@@ -3,7 +3,7 @@ uid: learn.wwl.implement-open-source-software-azure
 metadata:
   title: Implement Open-Source Software
   description: "Learn how to implement open-source software securely, understand licensing implications, evaluate corporate concerns, and manage open-source components in enterprise environments."
-  ms.date: 10/21/2025
+  ms.date: 10/28/2025
   author: LuizMacedo
   ms.author: lumac
   ms.topic: module
@@ -51,7 +51,7 @@ products:
   - azure-pipelines
   - azure-repos
   - azure-test-plans
-  - devops
+  - github
 subjects:
   - devops
 units:
