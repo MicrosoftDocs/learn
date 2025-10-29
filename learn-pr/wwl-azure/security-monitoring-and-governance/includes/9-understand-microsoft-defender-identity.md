@@ -10,7 +10,7 @@ Identity-based attacks represent primary attack vector for modern cyber threats.
 
 - **Defender for Identity portal:** Cloud-based management portal accessed at `https://security.microsoft.com/` for viewing alerts, investigating threats, and configuring policies.
 - **Defender for Identity sensors:** Lightweight agents installed directly on domain controllers monitoring authentication traffic, Kerberos events, NTLM authentication, LDAP queries, and network activities without requiring dedicated servers or port mirroring.
-- **Microsoft Defender XDR integration:** Defender for Identity integrates with Microsoft Defender XDR (formerly Microsoft 365 Defender) providing unified security operations across identities, endpoints, email, applications, and cloud resources.
+- **Microsoft Defender XDR integration:** Defender for Identity integrates with Microsoft Defender XDR (formerly Microsoft Defender XDR) providing unified security operations across identities, endpoints, email, applications, and cloud resources.
 - **Cloud service:** Azure-hosted analytics engine processing sensor data, correlating events, applying behavioral analytics and machine learning models, generating security alerts, and providing threat intelligence.
 
 **Deployment prerequisites:**
