@@ -5,7 +5,7 @@ metadata:
   description: In this module, you learn how Azure Monitoring alerts proactively notifies you when Azure Monitor data indicates there might be a problem with your infrastructure or applications before the problem becomes one for your users.
   ms.date: 10/25/2023
   author: wwlpublish
-  ms.author: tonyj
+  ms.author: robbarefoot
   ms.topic: module
   ms.service: azure-monitor
 title: Configure alerts and responses
@@ -34,4 +34,5 @@ units:
 - learn.wwl.configure-alerts-responses.summary
 badge:
   uid: learn.wwl.configure-alerts-responses.badge
+
 
