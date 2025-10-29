@@ -4,7 +4,7 @@ title: Configure GitHub Advanced Security for GitHub and Azure DevOps
 metadata:
   title: Configure GitHub Advanced Security for GitHub and Azure DevOps
   description: Configure GitHub Advanced Security in GitHub including CodeQL code scanning workflows, secret scanning with push protection, Dependabot dependency scanning and automated updates, dependency review in pull requests, custom patterns, and security policies for comprehensive repository protection.
-  ms.date: 10/22/2025
+  ms.date: 10/28/2025
   author: LuizMacedo
   ms.author: lumac
   ms.topic: unit

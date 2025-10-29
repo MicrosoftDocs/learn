@@ -4,7 +4,7 @@ title: Implement Pipeline Security
 metadata:
   title: Implement Pipeline Security
   description: "Implement comprehensive pipeline security with secrets management, service connection security, RBAC, agent security, deployment gates, audit logging, and security scanning integration."
-  ms.date: 10/22/2025
+  ms.date: 10/28/2025
   author: LuizMacedo
   ms.author: lumac
   ms.topic: unit

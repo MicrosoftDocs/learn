@@ -29,7 +29,7 @@ Azure Policy provides built-in initiatives for common compliance frameworks:
 
 Comprehensive security baseline with policies covering:
 
-- **Identity and access:** Multi-factor authentication, privileged account protection, role-based access control.
+- **Identity and access:** Multifactor authentication, privileged account protection, role-based access control.
 - **Network security:** Network segmentation, secure connectivity, DDoS protection, firewall rules.
 - **Data protection:** Encryption at rest, encryption in transit, secure data transfer protocols.
 - **Asset management:** Resource inventory, approved resource types, resource locks.

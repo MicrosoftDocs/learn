@@ -4,7 +4,7 @@ title: Integrate GitHub Advanced Security with Microsoft Defender for Cloud
 metadata:
   title: Integrate GitHub Advanced Security with Microsoft Defender for Cloud
   description: Integrate GitHub Advanced Security with Microsoft Defender for Cloud to achieve unified DevSecOps security visibility spanning code repositories through cloud deployments including code scanning, secret scanning, dependency scanning, and Infrastructure as Code security with actionable recommendations and automated workflows.
-  ms.date: 10/22/2025
+  ms.date: 10/28/2025
   author: LuizMacedo
   ms.author: lumac
   ms.topic: unit

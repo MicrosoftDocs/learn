@@ -1,4 +1,4 @@
-**Microsoft Defender for Cloud** is Azure's unified cloud-native application protection platform (CNAPP) that provides comprehensive security posture management and threat protection across Azure, hybrid, and multi-cloud environments. Defender for Cloud combines security capabilities previously scattered across multiple tools into a single, integrated platform for protecting workloads, detecting threats, ensuring compliance, and providing actionable security recommendations.
+**Microsoft Defender for Cloud** is Azure's unified cloud-native application protection platform (CNAPP) that provides comprehensive security posture management and threat protection across Azure, hybrid, and multicloud environments. Defender for Cloud combines security capabilities previously scattered across multiple tools into a single, integrated platform for protecting workloads, detecting threats, ensuring compliance, and providing actionable security recommendations.
 
 As organizations adopt cloud infrastructure and DevOps practices, security visibility and threat detection become increasingly complex across distributed resources, multiple subscriptions, and diverse workload types. Defender for Cloud addresses these challenges by providing continuous security assessment, automated threat detection, workload-specific protection plans, and integration with development pipelines for DevSecOps workflows.
 
@@ -6,7 +6,7 @@ As organizations adopt cloud infrastructure and DevOps practices, security visib
 
 **Cloud Security Posture Management (CSPM):**
 
-Defender for Cloud continuously assesses Azure resources, hybrid workloads, and multi-cloud deployments against security best practices and compliance standards. **CSPM** identifies misconfigurations, vulnerabilities, and compliance violations with actionable remediation guidance.
+Defender for Cloud continuously assesses Azure resources, hybrid workloads, and multicloud deployments against security best practices and compliance standards. **CSPM** identifies misconfigurations, vulnerabilities, and compliance violations with actionable remediation guidance.
 
 **Key CSPM features:**
 
@@ -40,7 +40,7 @@ Defender for Cloud integrates with Azure DevOps and GitHub to **shift security l
 
 **DevSecOps capabilities:**
 
-- **Code vulnerability scanning:** Scan infrastructure-as-code templates (ARM, Bicep, Terraform) for misconfigurations before deployment.
+- **Code vulnerability scanning:** Scan infrastructure-as-code templates (Azure Resource Manager, Bicep, Terraform) for misconfigurations before deployment.
 - **GitHub Advanced Security integration:** Surface GitHub code scanning, secret scanning, and dependency scanning findings in Defender for Cloud.
 - **Pull request annotations:** Display security issues as pull request comments with remediation guidance.
 - **Pipeline integration:** Block deployments with critical security issues through Azure Pipeline gates.
@@ -331,4 +331,4 @@ Defender for Cloud maps security recommendations to compliance controls, showing
    - **NIST SP 800-53 Rev. 5:** Federal information security standards.
 5. **Save configuration** to enable continuous compliance assessment.
 
-Microsoft Defender for Cloud provides comprehensive cloud security posture management, workload protection, and threat detection capabilities that integrate seamlessly with DevOps workflows to enable secure cloud adoption at scale. By continuously assessing security posture, detecting threats in real-time, and providing actionable recommendations, Defender for Cloud empowers organizations to maintain robust security across Azure, hybrid, and multi-cloud environments. The next unit examines practical Microsoft Defender for Cloud usage scenarios for common security challenges.
+Microsoft Defender for Cloud provides comprehensive cloud security posture management, workload protection, and threat detection capabilities that integrate seamlessly with DevOps workflows to enable secure cloud adoption at scale. By continuously assessing security posture, detecting threats in real-time, and providing actionable recommendations, Defender for Cloud empowers organizations to maintain robust security across Azure, hybrid, and multicloud environments. The next unit examines practical Microsoft Defender for Cloud usage scenarios for common security challenges.

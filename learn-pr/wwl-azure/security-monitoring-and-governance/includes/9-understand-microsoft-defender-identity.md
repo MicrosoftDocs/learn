@@ -147,10 +147,10 @@ Install sensors on all domain controllers ensuring complete visibility into auth
 
 **Enable audit policies:**
 
-Configure advanced audit policies on domain controllers capturing detailed security events:
+Configure Advanced Audit Policy Configuration on domain controllers capturing detailed security events:
 
 ```powershell
-# Enable advanced audit policies
+# Enable Advanced Audit Policy Configuration
 auditpol /set /category:"Account Logon" /success:enable /failure:enable
 auditpol /set /category:"Account Management" /success:enable /failure:enable
 auditpol /set /category:"DS Access" /success:enable /failure:enable

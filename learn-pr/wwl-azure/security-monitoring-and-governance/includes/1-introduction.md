@@ -1,6 +1,6 @@
 Security monitoring and governance form the foundation of secure DevOps practices, ensuring that development pipelines, cloud resources, and identity systems remain protected against evolving threats. As organizations adopt DevOps methodologies and migrate workloads to Azure, comprehensive security visibility and governance enforcement become critical for maintaining compliance, detecting threats, and preventing security incidents.
 
-Modern DevSecOps requires integrating security throughout the development lifecycle rather than treating it as a final gate. **Microsoft Defender for Cloud** provides unified security management and advanced threat protection across Azure resources, hybrid environments, and multi-cloud deployments. **Azure Policy** enables governance at scale through policy-as-code, ensuring consistent compliance across subscriptions and resource groups. **Microsoft Defender for Identity** detects identity-based threats and suspicious activities targeting user accounts and privileged access. **GitHub Advanced Security** extends security capabilities directly into the development workflow with code scanning, secret detection, and dependency vulnerability management.
+Modern DevSecOps requires integrating security throughout the development lifecycle rather than treating it as a final gate. **Microsoft Defender for Cloud** provides unified security management and advanced threat protection across Azure resources, hybrid environments, and multicloud deployments. **Azure Policy** enables governance at scale through policy-as-code, ensuring consistent compliance across subscriptions and resource groups. **Microsoft Defender for Identity** detects identity-based threats and suspicious activities targeting user accounts and privileged access. **GitHub Advanced Security** extends security capabilities directly into the development workflow with code scanning, secret detection, and dependency vulnerability management.
 
 This module explores the tools, techniques, and best practices for implementing comprehensive security monitoring and governance in Azure DevOps environments.
 
@@ -32,7 +32,7 @@ This module provides comprehensive coverage of security monitoring and governanc
 
 **Pipeline security fundamentals:** Learn essential security practices for Azure Pipelines including secrets management with Azure Key Vault, service connection security, pipeline permissions, secure variables, and agent security. Understand how to implement least-privilege access, audit logging, and branch protection policies.
 
-**Microsoft Defender for Cloud:** Explore Azure's unified security management platform providing security posture management, threat protection, and compliance monitoring. Learn to configure Defender for Cloud, interpret security recommendations, remediate vulnerabilities, and respond to security alerts across Azure, hybrid, and multi-cloud environments.
+**Microsoft Defender for Cloud:** Explore Azure's unified security management platform providing security posture management, threat protection, and compliance monitoring. Learn to configure Defender for Cloud, interpret security recommendations, remediate vulnerabilities, and respond to security alerts across Azure, hybrid, and multicloud environments.
 
 **Microsoft Defender for Cloud use cases:** Examine real-world scenarios including regulatory compliance monitoring, threat detection and response, secure score improvement, workload protection for VMs, containers, databases, and storage, vulnerability assessment, and integration with Azure DevOps for DevSecOps workflows.
 
@@ -71,6 +71,6 @@ To get the most from this module, you should have:
 - **Azure DevOps knowledge:** Experience creating and running Azure Pipelines, managing repositories, and using service connections.
 - **Security awareness:** Basic understanding of security concepts including authentication, authorization, encryption, and security best practices.
 - **GitHub familiarity:** Experience with GitHub repositories, pull requests, and GitHub Actions workflows is beneficial for GitHub Advanced Security content.
-- **Identity concepts:** Understanding of Active Directory, Entra ID (Azure AD), user accounts, groups, and role-based access control.
+- **Identity concepts:** Understanding of Active Directory, Microsoft Entra ID (formerly Azure AD), user accounts, groups, and role-based access control.
 
 Organizations implementing comprehensive security monitoring and governance establish foundations for secure, compliant, and resilient DevOps practices that protect development pipelines, cloud resources, and identity systems against evolving threats.

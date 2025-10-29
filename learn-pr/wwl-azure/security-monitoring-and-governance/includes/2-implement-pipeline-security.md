@@ -444,7 +444,7 @@ steps:
 
 ## Authentication and authorization
 
-**Multi-factor authentication (MFA):**
+**Multifactor authentication (MFA):**
 
 **Enforce MFA** for all users with access to Azure DevOps, GitHub, and Azure subscriptions to protect against credential theft and phishing attacks.
 

@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.security-monitoring-and-governance.examine-microsoft-defender-cloud-usage-scenarios
-title: Examine Microsoft Defender for Cloud Usage Scenarios
+title: Examine Microsoft Defender for Cloud usage scenarios
 metadata:
   title: Examine Microsoft Defender for Cloud Usage Scenarios
   description: "Examine practical Microsoft Defender for Cloud usage scenarios including incident response, regulatory compliance, Secure Score improvement, container security, DevSecOps pipeline integration, and vulnerability management."
-  ms.date: 10/22/2025
+  ms.date: 10/28/2025
   author: LuizMacedo
   ms.author: lumac
   ms.topic: unit

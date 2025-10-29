@@ -4,7 +4,7 @@ title: Explore Azure Policy
 metadata:
   title: Explore Azure Policy
   description: "Explore Azure Policy fundamentals including policy-as-code, policy effects, evaluation flow, assignments, scopes, built-in policies, compliance monitoring, and CI/CD pipeline integration."
-  ms.date: 10/22/2025
+  ms.date: 10/28/2025
   author: LuizMacedo
   ms.author: lumac
   ms.topic: unit

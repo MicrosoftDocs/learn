@@ -484,7 +484,7 @@ updates:
 
 **Configuration options:**
 
-- **package-ecosystem:** npm, pip, maven, nuget, docker, github-actions, terraform, etc.
+- **package-ecosystem:** npm, pip, maven, NuGet, docker, github-actions, terraform, etc.
 - **schedule:** daily, weekly, monthly.
 - **open-pull-requests-limit:** Maximum simultaneous PRs (default: 5).
 - **reviewers/assignees:** Auto-assign PRs to teams/individuals.

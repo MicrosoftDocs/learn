@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.security-monitoring-and-governance.understand-policies
-title: Understand Policies
+title: Understand policies
 metadata:
   title: Understand Policies
   description: "Understand custom policy authoring including policy structure, parameters, testing, deployment, remediation tasks, versioning, and CI/CD integration for governance automation."
-  ms.date: 10/22/2025
+  ms.date: 10/28/2025
   author: LuizMacedo
   ms.author: lumac
   ms.topic: unit

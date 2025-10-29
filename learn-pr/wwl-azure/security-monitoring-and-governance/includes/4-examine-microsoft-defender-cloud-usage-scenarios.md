@@ -121,7 +121,7 @@ Financial services organization requires PCI DSS compliance for payment processi
 5. **Review compliance score:** Initial score shows `68%` compliance.
 6. **Examine failed controls:**
    - **Control 2.2.4:** "Remove unnecessary services and protocols" (8 non-compliant VMs).
-   - **Control 8.2.3:** "Multi-factor authentication for all non-console administrative access" (MFA not enforced for 5 admin accounts).
+   - **Control 8.2.3:** "Multifactor authentication for all non-console administrative access" (MFA not enforced for 5 admin accounts).
    - **Control 10.2.1:** "Audit trails for all access to cardholder data" (diagnostic logging disabled on 12 storage accounts).
 
 **Remediate compliance gaps:**

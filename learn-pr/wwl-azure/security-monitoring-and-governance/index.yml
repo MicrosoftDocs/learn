@@ -1,9 +1,9 @@
 ### YamlMime:Module
 uid: learn.wwl.security-monitoring-and-governance
 metadata:
-  title: Security Monitoring and Governance
+  title: Security monitoring and governance
   description: "Learn security monitoring and governance with Microsoft Defender for Cloud, Azure Policy, resource locks, Microsoft Defender for Identity, and GitHub Advanced Security integration for comprehensive DevSecOps protection."
-  ms.date: 10/22/2025
+  ms.date: 10/28/2025
   author: LuizMacedo
   ms.author: lumac
   ms.topic: module
@@ -11,7 +11,7 @@ metadata:
     - N/A
   ms.service: azure
   ai-usage: ai-assisted
-title: Security Monitoring and Governance
+title: Security monitoring and governance
 summary: This module explores comprehensive security monitoring and governance for Azure DevOps environments. Learn to implement pipeline security, configure Microsoft Defender for Cloud for threat protection and compliance, manage Azure Policy for governance enforcement, secure resources with locks, use Microsoft Defender for Identity threat detection, and integrate GitHub Advanced Security with Microsoft Defender for unified security visibility across your development lifecycle.
 abstract: |
   By the end of this module, you're able to:
