@@ -59791,12 +59791,12 @@
     },
     {
       "source_path": "learn-pr/wwl-azure/configure-alerts-responses/7-knowledge-check.md",
-      "redirect_url": "/training/modules/configure-alerts-responses/6-knowledge-check.md",
+      "redirect_url": "/training/modules/configure-alerts-responses/6-knowledge-check",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/wwl-azure/configure-alerts-responses/8-summary.md",
-      "redirect_url": "/training/modules/configure-alerts-responses/7-summary.md",
+      "redirect_url": "/training/modules/configure-alerts-responses/7-summary",
       "redirect_document_id": false
     }
   ]
