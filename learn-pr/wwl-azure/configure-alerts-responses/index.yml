@@ -30,9 +30,8 @@ units:
 - learn.wwl.configure-alerts-responses.action-groups
 - learn.wwl.configure-alerts-responses.alert-rules
 - learn.wwl.configure-alerts-responses.alert-processing-rules
-- learn.wwl.configure-alerts-responses.azure-monitor-change-analysis
 - learn.wwl.configure-alerts-responses.knowledge-check
 - learn.wwl.configure-alerts-responses.summary
 badge:
   uid: learn.wwl.configure-alerts-responses.badge
-
+

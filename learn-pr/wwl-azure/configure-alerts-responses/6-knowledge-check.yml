@@ -47,4 +47,4 @@ quiz:
       explanation: "Incorrect. If you define multiple filters in a rule, all the rules apply. There's a logical AND between all filters."
     - content: "Three"
       isCorrect: true
-      explanation: "Correct. If you define multiple filters in a rule, all the rules apply. There's a logical AND between all filters."
+      explanation: "Correct. If you define multiple filters in a rule, all the rules apply. There's a logical AND between all filters."
