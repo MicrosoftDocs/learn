@@ -6,8 +6,9 @@ metadata:
   description: "Summary"
   ms.date: 10/25/2023
   author: wwlpublish
-  ms.author: tonyj
+  ms.author: robbarefoot
   ms.topic: unit
 durationInMinutes: 3
 content: |
-  [!include[](includes/8-summary.md)]
+  [!include[](includes/7-summary.md)]
+
