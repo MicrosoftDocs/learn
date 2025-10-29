@@ -6,12 +6,12 @@ metadata:
   description: "Knowledge check"
   ms.date: 10/25/2023
   author: wwlpublish
-  ms.author: tonyj
+  ms.author: robbarefoot
   ms.topic: unit
   module_assessment: true
 durationInMinutes: 3
 content: |
-  [!include[](includes/7-knowledge-check.md)]
+  [!include[](includes/6-knowledge-check.md)]
 quiz:
   title: ""
   questions:
@@ -48,3 +48,4 @@ quiz:
     - content: "Three"
       isCorrect: true
       explanation: "Correct. If you define multiple filters in a rule, all the rules apply. There's a logical AND between all filters."
+
