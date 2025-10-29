@@ -1,60 +1,68 @@
 ### YamlMime:Module
 uid: learn.wwl.implement-open-source-software-azure
 metadata:
-  title: Implement open-source software
-  description: "Implement open-source software"
-  ms.date: 05/07/2024
-  author: wwlpublish
+  title: Implement Open-Source Software
+  description: "Learn how to implement open-source software securely, understand licensing implications, evaluate corporate concerns, and manage open-source components in enterprise environments."
+  ms.date: 10/28/2025
+  author: LuizMacedo
   ms.author: lumac
   ms.topic: module
   ms.custom:
-  - N/A
+    - N/A
   ms.service: azure
-  ai-usage: human-only
-title: Implement open-source software
-summary: This module explores open-source software and corporate concerns with software components. Also, it explains common open-source licenses, license implications, and ratings.
+  ai-usage: ai-assisted
+title: Implement Open-Source Software
+summary: This module explores how modern software is built with open-source components, corporate concerns about security and licensing, common open-source licenses (MIT, Apache, GPL), license implications for commercial use, and strategies for managing open-source software in enterprise environments.
 abstract: |
   By the end of this module, you're able to:
 
-  -   Implement open-source software.
+  -   Understand how modern software is built using open-source components and the benefits they provide.
 
-  -   Explain corporate concerns for open-source components.
+  -   Explain corporate concerns about open-source software including security vulnerabilities, license compliance, and supply chain risks.
 
-  -   Describe open-source licenses.
+  -   Describe common open-source licenses including MIT, Apache, GPL, BSD, and their key characteristics.
 
-  -   Understand the license implications and ratings.
+  -   Evaluate license implications for commercial software development and understand license compatibility.
+
+  -   Implement strategies for managing open-source components including inventory management, vulnerability scanning, and license compliance.
 prerequisites: None
 iconUrl: /training/achievements/2-implement-open-source-software.svg
 levels:
-- advanced
+  - advanced
 roles:
-- administrator
-- developer
-- devops-engineer
-- security-engineer
-- security-operations-analyst
-- service-adoption-specialist
-- solution-architect
-- technology-manager
+  - administrator
+  - ai-engineer
+  - data-engineer
+  - developer
+  - devops-engineer
+  - platform-engineer
+  - security-engineer
+  - security-operations-analyst
+  - service-adoption-specialist
+  - solution-architect
+  - startup-founder
+  - technology-manager
 products:
-- azure
-- azure-artifacts
-- azure-boards
-- azure-cloud-services
-- azure-devops
-- azure-pipelines
-- azure-repos
-- azure-test-plans
-- github
+  - azure
+  - azure-artifacts
+  - azure-boards
+  - azure-cloud-services
+  - azure-devops
+  - azure-pipelines
+  - azure-repos
+  - azure-test-plans
+  - github
+subjects:
+  - devops
 units:
-- learn.wwl.implement-open-source-software-azure.introduction
-- learn.wwl.implement-open-source-software-azure.explore-how-software-built
-- learn.wwl.implement-open-source-software-azure.what-open-source-software
-- learn.wwl.implement-open-source-software-azure.explore-corporate-concerns-components
-- learn.wwl.implement-open-source-software-azure.introduction-to-licenses
-- learn.wwl.implement-open-source-software-azure.explore-common-licenses
-- learn.wwl.implement-open-source-software-azure.examine-license-implications-ratings
-- learn.wwl.implement-open-source-software-azure.knowledge-check
-- learn.wwl.implement-open-source-software-azure.summary
+  - learn.wwl.implement-open-source-software-azure.introduction
+  - learn.wwl.implement-open-source-software-azure.explore-how-software-is-built
+  - learn.wwl.implement-open-source-software-azure.what-is-open-source-software
+  - learn.wwl.implement-open-source-software-azure.explore-corporate-concerns-with-open-source-software-components
+  - learn.wwl.implement-open-source-software-azure.introduction-to-open-source-licenses
+  - learn.wwl.implement-open-source-software-azure.explore-common-open-source-licenses
+  - learn.wwl.implement-open-source-software-azure.examine-license-implications-ratings
+  - learn.wwl.implement-open-source-software-azure.knowledge-check
+  - learn.wwl.implement-open-source-software-azure.summary
 badge:
-  uid: learn.wwl.implement-open-source-software-azure.badge
+  uid: learn.wwl.implement-open-source-software-azure.badge
