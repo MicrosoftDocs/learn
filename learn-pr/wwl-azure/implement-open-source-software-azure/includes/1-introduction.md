@@ -4,7 +4,7 @@ However, using open-source software introduces important considerations that org
 
 This module provides comprehensive guidance on implementing open-source software in enterprise environments. You'll learn how modern software is built with open-source components, understand corporate concerns about security and licensing, explore common open-source licenses and their implications, and discover strategies for managing open-source software effectively.
 
-## What you'll learn
+## What you learn
 
 This module covers essential knowledge for working with open-source software in professional environments:
 
@@ -20,7 +20,7 @@ This module covers essential knowledge for working with open-source software in 
 
 ## Learning objectives
 
-After completing this module, you'll be able to:
+After completing this module, you can:
 
 - **Understand how modern software is built** using open-source components and the benefits they provide for development velocity, quality, and innovation.
 - **Explain corporate concerns** about open-source software including security vulnerabilities, license compliance, supply chain risks, and the challenges of managing dependencies at scale.
