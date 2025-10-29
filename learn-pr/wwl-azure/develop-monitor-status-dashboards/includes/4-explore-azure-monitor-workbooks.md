@@ -211,7 +211,7 @@ Workbooks follow a **vertical document structure** with sequential steps, enabli
 **Shared workbooks:**
 
 - **Scope:** Published to Azure subscription/resource group, accessible to authorized users
-- **Storage:** Azure resource (can appear in Azure Portal resource lists)
+- **Storage:** Azure resource (can appear in Azure portal resource lists)
 - **Use case:** Team troubleshooting guides, standardized reporting, organizational dashboards
 - **RBAC:** Role-based access control determines who can view, edit, or delete
 

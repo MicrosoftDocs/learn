@@ -581,7 +581,7 @@ Enterprise organizations often have existing monitoring ecosystems. Third-party 
 - **Capabilities:** Unified monitoring across Azure Pipelines, infrastructure, applications, logs
 - **Integration:** Azure DevOps integration via marketplace extension and API
 - **Features:** Custom dashboards, anomaly detection, APM correlation, SLO tracking
-- **Use case:** Organizations with multi-cloud or hybrid environments requiring single pane of glass
+- **Use case:** Organizations with multicloud or hybrid environments requiring single pane of glass
 
 **New Relic:**
 

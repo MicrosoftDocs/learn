@@ -129,7 +129,7 @@ jobs:
 
 **Dynamic scaling (self-hosted):**
 
-- **Azure VMSS:** Auto-scale agent pools based on demand
+- **Azure Virtual Machine Scale Sets:** Auto-scale agent pools based on demand
 - **Scale up:** Add agents when queue depth increases
 - **Scale down:** Remove idle agents to save costs
 - **Example:** Scale from 5 agents (overnight) to 20 agents (business hours)
@@ -199,7 +199,7 @@ jobs:
 
 - **Morning rush:** Scale up for peak commit activity
 - **Overnight/weekend:** Scale down during low activity
-- **Automated scaling:** Use VMSS or similar for dynamic adjustment
+- **Automated scaling:** Use virtual machine scale sets or similar for dynamic adjustment
 
 **Parallel job licenses:**
 

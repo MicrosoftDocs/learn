@@ -30,7 +30,7 @@ Effective visualizations transform raw monitoring data into **actionable insight
 - **Single pane of glass:** Unified view across multiple Azure services, subscriptions, and resource groups
 - **Tile-based interface:** Drag-and-drop tiles from various Azure services onto a customizable canvas
 - **Native integration:** Deep connections to Azure Monitor, Application Insights, Log Analytics, and all Azure services
-- **Portal-based:** Built directly into the Azure Portal—no separate tool installation required
+- **Portal-based:** Built directly into the Azure portal—no separate tool installation required
 - **Quick issue identification:** Critical metrics and alerts visible immediately upon dashboard load
 
 **Common use cases:**
@@ -84,7 +84,7 @@ Azure Dashboards are **deeply integrated** into the Azure ecosystem, enabling yo
 
 **Pin workflow:**
 
-1. Navigate to any supported visualization in the Azure Portal
+1. Navigate to any supported visualization in the Azure portal
 2. Select the **Pin icon** (pushpin) in the top-right corner of the visualization
 3. Choose **existing dashboard** or **create new dashboard**
 4. Visualization appears as a tile on the selected dashboard
@@ -157,7 +157,7 @@ Azure Dashboards excel at **aggregating data** from diverse sources into a singl
 
 - **Visibility:** Only visible to the creating user
 - **Use case:** Individual developer's monitoring view, personal work context
-- **Storage:** Saved to user's Azure Portal profile
+- **Storage:** Saved to user's Azure portal profile
 - **Advantage:** No RBAC configuration required, immediate creation
 
 **Shared dashboards:**
@@ -195,7 +195,7 @@ Azure Dashboards excel at **aggregating data** from diverse sources into a singl
 
 **Scenario 3: Customer-facing status dashboard**
 
-- **Requirement:** External stakeholders view service health without Azure Portal access
+- **Requirement:** External stakeholders view service health without Azure portal access
 - **Solution:** Export dashboard to Power BI or create custom status page (dashboards cannot be made truly public)
 
 ### Automatic refresh
@@ -327,7 +327,7 @@ Azure Dashboards support **full-screen mode** for distraction-free monitoring:
 **Presentations and demos:**
 
 - **Audience:** Stakeholders, customers, or team meetings
-- **Benefit:** Professional appearance without Azure Portal chrome/navigation
+- **Benefit:** Professional appearance without Azure portal chrome/navigation
 - **Tip:** Prepare dashboard beforehand with appropriate time ranges and filters
 
 **Focus mode:**
