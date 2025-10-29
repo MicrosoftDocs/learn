@@ -59783,6 +59783,21 @@
       "source_path": "learn-pr/azure/manage-deployments-advanced-arm-template-features/index.yml",
       "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/templates/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-alerts-responses/6-azure-monitor-change-analysis.md",
+      "redirect_url": "/training/modules/configure-alerts-responses/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-alerts-responses/7-knowledge-check.md",
+      "redirect_url": "/training/modules/configure-alerts-responses/6-knowledge-check.md",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-alerts-responses/8-summary.md",
+      "redirect_url": "/training/modules/configure-alerts-responses/7-summary.md",
+      "redirect_document_id": false
     }
   ]
 }
