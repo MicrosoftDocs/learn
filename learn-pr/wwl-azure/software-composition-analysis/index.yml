@@ -62,8 +62,8 @@ units:
   - learn.wwl.software-composition-analysis.explore-software-composition-analysis
   - learn.wwl.software-composition-analysis.implement-github-dependabot-alerts-security-updates
   - learn.wwl.software-composition-analysis.integrate-software-composition-analysis-checks-into-pipelines
-  - learn.wwl.software-composition-analysis.examine-tools-for-assess-package-security-license-rate
-  - learn.wwl.software-composition-analysis.automate-container-images
+  - learn.wwl.software-composition-analysis.examine-tools-for-assessing-package-security-license-compliance
+  - learn.wwl.software-composition-analysis.automate-container-image-scanning
   - learn.wwl.software-composition-analysis.interpret-alerts-from-scanner-tools
   - learn.wwl.software-composition-analysis.knowledge-check
   - learn.wwl.software-composition-analysis.summary
