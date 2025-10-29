@@ -1,0 +1,85 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.cloud-native-myths.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge Check
+  description: 'This content is part of the "Windows 11 and cloud-native concepts: myths, realities, and best practices" module.'
+  ms.date: 10/29/2025
+  author: Stephanie-Rosenzweig
+  ms.author: v-stephanier
+  ms.topic: unit
+  durationInMinutes: 5
+
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "What is a key advantage of cloud-native technologies compared to traditional on-premises systems?"
+    choices:
+        - content: "Manual scaling and updates"
+          isCorrect: false
+          explanation: "Incorrect. Traditional systems require manual scaling and updates."
+        - content: "Automated scaling and updates"
+          isCorrect: true
+          explanation: "Correct. Cloud-native technologies automate scaling and updates, improving efficiency."
+        - content: "Exclusive reliance on physical servers"
+          isCorrect: false
+          explanation: "Incorrect. Cloud-native solutions are designed to use cloud infrastructure."
+        - content: "Limited remote access"
+          isCorrect: false
+          explanation: "Incorrect. Cloud-native systems support broad remote access and management."
+  - content: "Which statement best describes the transition to cloud-native management?"
+    choices:
+        - content: "It must happen all at once"
+          isCorrect: false
+          explanation: "Incorrect. The transition to cloud-native can happen at a pace that suits the organization."
+        - content: "It can be gradual and strategic"
+          isCorrect: true
+          explanation: "Correct. Organizations can move to cloud-native management gradually and strategically."
+        - content: "It requires abandoning all legacy systems immediately"
+          isCorrect: false
+          explanation: "Incorrect. Legacy infrastructure can still be used alongside cloud-native solutions."
+        - content: "It's only possible for new organizations"
+          isCorrect: false
+          explanation: "Incorrect. Existing organizations can transition to cloud-native management."
+  - content: "How does Windows Autopilot simplify device deployment for remote employees?"
+    choices:
+        - content: "Requires end users to handle configuration themselves"
+          isCorrect: false
+          explanation: ""
+        - content: "Automatically provisions devices with apps and policies"
+          isCorrect: true
+          explanation: "Correct. Autopilot enables zero-touch deployment for remote employees."
+        - content: "Limits device setup to office locations"
+          isCorrect: false
+          explanation: "Incorrect. Devices can be shipped to employees and set up remotely."
+        - content: "Delays employee onboarding"
+          isCorrect: false
+          explanation: "Incorrect. Autopilot speeds up onboarding by automating setup."
+  - content: "Which of the following responses is a common misconception about cloud-native device management?"
+    choices:
+        - content: "You must be fully cloud-native to deploy Windows 11 Pro"
+          isCorrect: true
+          explanation: "Correct. You don’t need to be fully cloud-native to upgrade or manage devices."
+        - content: "It increases visibility and automation"
+          isCorrect: false
+          explanation: "Incorrect. Cloud-native management actually improves visibility and automates processes."
+        - content: "It enables centralized management"
+          isCorrect: false
+          explanation: "Incorrect. Centralized management is a key benefit of cloud-native solutions."
+        - content: "It simplifies software and policy deployment"
+          isCorrect: false
+          explanation: "Incorrect. Cloud-native management simplifies deployment and ongoing device management."
+  - content: "Which tool allows IT teams to manage, protect, and monitor endpoints from a single platform?"
+    choices:
+        - content: "Windows Autopilot"
+          isCorrect: false
+          explanation: "Incorrect. Autopilot is used for device provisioning and deployment."
+        - content: "Microsoft Intune"
+          isCorrect: true
+          explanation: "Correct. Intune is a single, integrated management platform for endpoints."
+        - content: "Microsoft Entra ID"
+          isCorrect: false
+          explanation: "Incorrect. Entra ID is focused on identity and access management."
+        - content: "Physical server management console"
+          isCorrect: false
+          explanation: "Incorrect. This isn't a cloud-native management tool."
