@@ -127,10 +127,10 @@ Replace with a unique name for your resource group. Replace with the Azure regio
 By setting the default resource group, you can omit that parameter from the Azure CLI commands in this exercise. To set the resource group, run the following command.
 
 ```azurepowershell
-Set-AzDefault -ResourceGroupName [resource group name]
+Set-AzDefault -ResourceGroupName <ResourceGroupName>
 ```
 
-replace *[resource group name]* with your resource group name.
+replace *<ResourceGroupName>* with your resource group name.
 
 Deploy the template to Azure by running the following commands. The ARM template doesn't have any resources yet, so there aren't any resources created.
 
