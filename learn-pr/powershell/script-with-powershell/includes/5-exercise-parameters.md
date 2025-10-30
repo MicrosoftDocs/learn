@@ -1,12 +1,14 @@
-In this unit, you'll use Azure Cloud Shell on the right side of your screen as your Linux terminal. Azure Cloud Shell is a shell you can access through the Azure portal or at https://shell.azure.com. You don't need to install anything on your computer to use it.
-
 One way to make your scripts flexible is to use parameters, so users can provide input when the script runs. In this exercise, you'll create a backup script and add parameters to it.
+
+[!INCLUDE[](../../../includes/azure-optional-exercise-subscription-note.md)]
+
+[!INCLUDE[](../../../includes/azure-cloud-shell-terminal-note.md)]
 
 ## Create a backup script
 
 A common task is to create a *backup*. A backup is usually a compressed file that stores all the files belonging to, for example, an app. When you installed PowerShell, you got the cmdlet `Compress-Archive`, which can help you complete this task.
 
-1. In your Cloud Shell terminal, run these bash commands:
+1. Open the [Azure Cloud Shell](https://shell.azure.com/) and run these bash commands:
 
    ```bash
    mkdir app
