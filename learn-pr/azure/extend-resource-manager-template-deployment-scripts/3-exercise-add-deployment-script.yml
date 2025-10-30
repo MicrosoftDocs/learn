@@ -4,7 +4,7 @@ title: Exercise - Add a deployment script to an ARM template
 metadata:
   title: Exercise - Add a deployment script to an ARM template
   description: Update an ARM template with a deployment script resource
-  author: smurawski
+  author: usepowershell
   ms.author: stmuraws
   ms.date: 04/28/2025
   ms.topic: unit
