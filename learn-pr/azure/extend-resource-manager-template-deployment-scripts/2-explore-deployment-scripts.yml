@@ -4,7 +4,7 @@ title: What are deployment scripts?
 metadata:
   title: What are deployment scripts?
   description: Understand deployment scripts and how to use them to add custom behavior to Azure Resource Manager templates.
-  author: smurawski
+  author: usepowershell
   ms.author: stmuraws
   ms.date: 04/28/2025
   ms.topic: unit
