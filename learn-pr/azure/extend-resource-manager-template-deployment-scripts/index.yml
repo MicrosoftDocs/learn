@@ -5,7 +5,7 @@ metadata:
   description: Learn how to add custom steps to your Azure Resource Manager templates
     (ARM templates) and Bicep files by using deployment scripts.
   ms.date: 04/28/2025
-  author: smurawski
+  author: usepowershell
   ms.author: stmuraws
   ms.topic: module
   ms.contributors: stmuraws-12142021
