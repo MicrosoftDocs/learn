@@ -1,9 +1,5 @@
 [Azure App Service](/azure/app-service/overview) brings together everything you need to create websites, mobile backends, and web APIs for any platform or device. Applications run and scale with ease in both Windows and Linux-based environments.
 
-This video covers an App Service features overview and the basics of creating an app service.
-
-> [!VIDEO https://learn-video.azurefd.net/vod/player?id=8ea7ab2d-9e29-4b5a-916d-307100c16bf9]
-
 App Service provides Quickstarts for programming languages. These languages include: ASP.NET, Java, Node.js, Python, and PHP. 
 
 ### App Service benefits
