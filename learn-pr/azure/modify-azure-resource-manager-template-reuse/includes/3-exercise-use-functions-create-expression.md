@@ -1,10 +1,6 @@
 In this exercise, you create an expression by using Azure Resource Manager (ARM) template functions. The expression creates a unique name for each resource group by combining a prefix input with a hash of the resource group ID. It results in Azure storage account names like `dev2hu6sbtr5` and `staging5his8hgr67`.
 
-In this exercise, you use the [Azure Resource Manager Tools for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=msazurermtools.azurerm-vscode-tools).
-
 [!INCLUDE[](../../../includes/azure-optional-exercise-subscription-note.md)]
-
-[!INCLUDE[](../../../includes/azure-optional-exercise-create-resource-group-note.md)]
 
 > [!NOTE]
 > Throughout this exercise, replace **myResourceGroupName** in the examples with the name of an existing resource group, or the name of the resource group that you created for this exercise.
@@ -43,23 +39,25 @@ To deploy this template to Azure, you need to sign in to your Azure account from
 
 1. If the drop-down menu on the right side of the terminal window says **bash**, you have the right shell to work from. You can skip to the next section.
 
-      :::image type="content" source="../media/3-bash.png" alt-text="A screenshot that shows the Visual Studio Code terminal window with bash in the drop-down menu." border="true":::
+    :::image type="content" source="../media/3-bash.png" alt-text="A screenshot that shows the Visual Studio Code terminal window with bash in the drop-down menu." border="true":::
 
-1. If you don't have the right shell, select the downarrow, and then select **Git Bash**.
+    If you don't have the right shell, select the downarrow, and then select **Git Bash**.
 
-      :::image type="content" source="../media/3-select-shell.png" alt-text="Screenshot that shows the select shell list in the Visual Studio Code terminal window." border="true":::
+    :::image type="content" source="../media/3-select-shell.png" alt-text="Screenshot that shows the select shell list in the Visual Studio Code terminal window." border="true":::
 
 ### Sign in to Azure
 
-1. From the terminal in Visual Studio Code, run the following command to sign in to Azure. Running this command opens a browser that allows you to sign in to your account:
+From the terminal in Visual Studio Code, run the following command to sign in to Azure. Running this command opens a browser that allows you to sign in to your account:
 
-    ```azurecli
-    az login
-    ```
+```azurecli
+az login
+```
 
 In the browser window that opens, sign in to your account. After you sign in, a list of the subscriptions associated with this account displays in the terminal. The default subscription is marked with an asterisk (*). If you have multiple subscriptions, select the subscription you want to use for this exercise.
 
 ### Create and set the default resource group
+
+You need to use a resource group to complete the steps in this exercise. You can use a resource group that you already created, or you can create a new resource group specifically for this exercise. If you choose to create a new resource group, that will make it easier to clean up any resources that you create as you complete the exercise. If you have an existing resource group and set it as the default resource group, you can skip this session.
 
 ```azurecli
 az group create --name <resource-group-name> --location <location>
@@ -106,23 +104,25 @@ To deploy this template to Azure, you need to sign in to your Azure account from
 
 1. If the drop-down menu on the right side of the terminal window says **pwsh**, you have the right shell to work from. You can skip to the next section.
 
-      :::image type="content" source="../media/3-pwsh.png" alt-text="A screenshot that shows the Visual Studio Code terminal window with pwsh in the drop-down menu." border="true":::
+    :::image type="content" source="../media/3-pwsh.png" alt-text="A screenshot that shows the Visual Studio Code terminal window with pwsh in the drop-down menu." border="true":::
 
-1. If you don't have the right shell, select the down arrow and then select **PowerShell** in the drop-down menu.
+    If you don't have the right shell, select the down arrow and then select **PowerShell** in the drop-down menu.
 
-      :::image type="content" source="../media/3-select-shell-powershell.png" alt-text="Screenshot that shows the select shell list in the Visual Studio Code terminal window." border="true":::
+    :::image type="content" source="../media/3-select-shell-powershell.png" alt-text="Screenshot that shows the select shell list in the Visual Studio Code terminal window." border="true":::
 
-### Sign in to Azure by using Azure PowerShell
+### Sign in to Azure
 
-1. From the terminal in Visual Studio Code, run the following command to sign in to Azure.
+From the terminal in Visual Studio Code, run the following command to sign in to Azure.
 
-    ```azurepowershell
-    Connect-AzAccount
-    ```
+```azurepowershell
+Connect-AzAccount
+```
 
-    In the browser window that opens (the browser window could be opened behind the current window, minimize the current window to see it), sign in to your account. After you sign in, a list of the subscriptions associated with this account displays in the terminal. The default subscription is marked with an asterisk (*). If you have multiple subscriptions, select the subscription you want to use for this exercise.
+In the browser window that opens (the browser window could be opened behind the current window, minimize the current window to see it), sign in to your account. After you sign in, a list of the subscriptions associated with this account displays in the terminal. The default subscription is marked with an asterisk (*). If you have multiple subscriptions, select the subscription you want to use for this exercise.
 
 ### Create and set the default resource group
+
+You need to use a resource group to complete the steps in this exercise. You can use a resource group that you already created, or you can create a new resource group specifically for this exercise. If you choose to create a new resource group, that will make it easier to clean up any resources that you create as you complete the exercise. If you have an existing resource group and set it as the default resource group, you can skip this session.
 
 ```azurepowershell
 New-AzResourceGroup -Name <ResourceGroupName> -Location <Location>

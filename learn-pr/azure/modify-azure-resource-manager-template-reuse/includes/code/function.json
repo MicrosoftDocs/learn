@@ -24,18 +24,20 @@
   },
   "functions": [],
   "variables": {},
-  "resources": [{
-    "name": "[toLower(concat(parameters('storagePrefix'),uniqueString(resourceGroup().id)))]",
-    "type": "Microsoft.Storage/storageAccounts",
-    "apiVersion": "2025-01-01",
-    "tags": {
+  "resources": [
+    {
+      "name": "[toLower(concat(parameters('storagePrefix'),uniqueString(resourceGroup().id)))]",
+      "type": "Microsoft.Storage/storageAccounts",
+      "apiVersion": "2025-01-01",
+      "tags": {
         "displayName": "[toLower(concat(parameters('storagePrefix'),uniqueString(resourceGroup().id)))]"
-    },
-    "location": "[resourceGroup().location]",
-    "kind": "StorageV2",
-    "sku": {
-      "name": "[parameters('storageSKU')]"
+      },
+      "location": "[resourceGroup().location]",
+      "kind": "StorageV2",
+      "sku": {
+        "name": "[parameters('storageSKU')]"
+      }
     }
-  }],
+  ],
   "outputs": {}
 }

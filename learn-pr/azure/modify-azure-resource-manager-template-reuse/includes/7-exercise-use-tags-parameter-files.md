@@ -1,7 +1,5 @@
 In this exercise, you add tags to help organize and track your Microsoft Azure resources. You also use an Azure Resource Manager (ARM) template parameter file to allow for different parameter configurations for each deployment.
 
-This exercise uses the [Azure Resource Manager Tools for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=msazurermtools.azurerm-vscode-tools).
-
 [!INCLUDE[](../../../includes/azure-optional-exercise-subscription-note.md)]
 
 [!INCLUDE[](../../../includes/azure-cloud-shell-terminal-note.md)]
