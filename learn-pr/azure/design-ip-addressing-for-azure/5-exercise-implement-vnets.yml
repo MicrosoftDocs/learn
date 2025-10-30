@@ -10,8 +10,8 @@ metadata:
   ms.custom: devx-track-azurecli
 title: Exercise - Design and implement IP addressing for Azure virtual networks
 durationInMinutes: 10
-interactive: bash
-azureSandbox: true
+#interactive: bash
+#azureSandbox: true
 content: |
   [!include[](includes/5-exercise-implement-vnets.md)]
 # NOTE: Task validation is failing for learners, so that is disabled for now.

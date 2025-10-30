@@ -8,6 +8,13 @@ You configure the network so that all traffic flowing from a public subnet to a 
 
 In this exercise, you create the route table, custom route, and subnets. You'll then associate the route table with a subnet.
 
+[!INCLUDE[](../../../includes/azure-optional-exercise-subscription-note.md)]
+
+[!INCLUDE[](../../../includes/azure-optional-exercise-create-resource-group-note.md)]
+
+> [!NOTE]
+> Throughout this exercise, replace **myResourceGroupName** in the examples with the name of an existing resource group, or the name of the resource group that you created for this exercise.
+
 ## Create a route table and custom route
 
 The first task is to create a new routing table and then add a custom route for all traffic intended for the private subnet.
@@ -15,14 +22,14 @@ The first task is to create a new routing table and then add a custom route for 
 > [!NOTE]
 > You might get an error that reads: *This command is implicitly deprecated*. Please ignore this error for this learning module. We're working on it!
 
-1. In the Cloud Shell window on the right side of the screen, select the **More** icon (**...**), then select **Settings** > **Go to Classic version**.
+1. Open the [Azure Cloud Shell](https://shell.azure.com/), select **Settings**, then select **Go to Classic version**.
 
-1. In Azure Cloud Shell, run the following command to create a route table:
+1. In Azure Cloud Shell, run the following command to create a route table. Replace **myResourceGroupName** with the name of your resource group.
 
     ```azurecli
         az network route-table create \
             --name publictable \
-            --resource-group "<rgn>[sandbox resource group name]</rgn>" \
+            --resource-group "myResourceGroupName" \
             --disable-bgp-route-propagation false
     ```
 
@@ -31,7 +38,7 @@ The first task is to create a new routing table and then add a custom route for 
     ```azurecli
         az network route-table route create \
             --route-table-name publictable \
-            --resource-group "<rgn>[sandbox resource group name]</rgn>" \
+            --resource-group "myResourceGroupName" \
             --name productionsubnet \
             --address-prefix 10.0.1.0/24 \
             --next-hop-type VirtualAppliance \
@@ -47,7 +54,7 @@ The next task is to create the **vnet** virtual network and the three subnets yo
     ```azurecli
         az network vnet create \
             --name vnet \
-            --resource-group "<rgn>[sandbox resource group name]</rgn>" \
+            --resource-group "myResourceGroupName" \
             --address-prefixes 10.0.0.0/16 \
             --subnet-name publicsubnet \
             --subnet-prefixes 10.0.0.0/24
@@ -59,7 +66,7 @@ The next task is to create the **vnet** virtual network and the three subnets yo
         az network vnet subnet create \
             --name privatesubnet \
             --vnet-name vnet \
-            --resource-group "<rgn>[sandbox resource group name]</rgn>" \
+            --resource-group "myResourceGroupName" \
             --address-prefixes 10.0.1.0/24
     ```
 
@@ -69,7 +76,7 @@ The next task is to create the **vnet** virtual network and the three subnets yo
         az network vnet subnet create \
             --name dmzsubnet \
             --vnet-name vnet \
-            --resource-group "<rgn>[sandbox resource group name]</rgn>" \
+            --resource-group "myResourceGroupName" \
             --address-prefixes 10.0.2.0/24
     ```
 
@@ -77,7 +84,7 @@ The next task is to create the **vnet** virtual network and the three subnets yo
 
     ```azurecli
         az network vnet subnet list \
-            --resource-group "<rgn>[sandbox resource group name]</rgn>" \
+            --resource-group "myResourceGroupName" \
             --vnet-name vnet \
             --output table
     ```
@@ -92,6 +99,6 @@ Run the following command to associate the route table with the public subnet.
     az network vnet subnet update \
         --name publicsubnet \
         --vnet-name vnet \
-        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
+        --resource-group "myResourceGroupName" \
         --route-table publictable
 ```
