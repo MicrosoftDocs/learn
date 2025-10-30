@@ -2,9 +2,6 @@ In this exercise, you create an expression by using Azure Resource Manager (ARM)
 
 [!INCLUDE[](../../../includes/azure-optional-exercise-subscription-note.md)]
 
-> [!NOTE]
-> Throughout this exercise, replace **myResourceGroupName** in the examples with the name of an existing resource group, or the name of the resource group that you created for this exercise.
-
 ## Create the ARM template file
 
 In the previous module, you created an ARM template that deployed a storage account. You added parameters and an output to this file. Here, you start with that file, but the output is removed to reduce the overhead.
@@ -45,6 +42,8 @@ To deploy this template to Azure, you need to sign in to your Azure account from
 
     :::image type="content" source="../media/3-select-shell.png" alt-text="Screenshot that shows the select shell list in the Visual Studio Code terminal window." border="true":::
 
+1. Change directory to the folder containing your ARM template file.
+
 ### Sign in to Azure
 
 From the terminal in Visual Studio Code, run the following command to sign in to Azure. Running this command opens a browser that allows you to sign in to your account:
@@ -68,10 +67,10 @@ Replace **\<resource-group-name>** with a unique name for your resource group. R
 By setting the default resource group, you can omit that parameter from the Azure CLI commands in this exercise. To set the resource group, run the following command.
 
 ```azurecli
-az configure --defaults group="myResourceGroupName"
+az configure --defaults group="<resource-group-name>"
 ```
 
-Replace **myResourceGroupName** with the resource group name.
+Replace **<resource-group-name>** with the resource group name.
 
 ### Deploy the template to Azure
 
@@ -110,6 +109,8 @@ To deploy this template to Azure, you need to sign in to your Azure account from
 
     :::image type="content" source="../media/3-select-shell-powershell.png" alt-text="Screenshot that shows the select shell list in the Visual Studio Code terminal window." border="true":::
 
+1. Change directory to the folder containing your ARM template file.
+
 ### Sign in to Azure
 
 From the terminal in Visual Studio Code, run the following command to sign in to Azure.
@@ -133,10 +134,10 @@ Replace with a unique name for your resource group. Replace with the Azure regio
 By setting the default resource group, you can omit that parameter from the Azure CLI commands in this exercise. To set the resource group, run the following command.
 
 ```azurepowershell
-Set-AzDefault -ResourceGroupName [resource group name]
+Set-AzDefault -ResourceGroupName <ResourceGroupName>
 ```
 
-replace *[resource group name]* with your resource group name.
+replace *<ResourceGroupName>* with your resource group name.
 
 ### Deploy the template to Azure
 
@@ -162,7 +163,7 @@ When the deployment finishes, go to the [Azure portal](https://portal.azure.com?
 
 1. In the left pane, select **Resource groups**.
 
-1. Select **myResourceGroupName**.
+1. Select your resource group name.
 
 1. In the **Overview** section, you see that one deployment succeeded:
 

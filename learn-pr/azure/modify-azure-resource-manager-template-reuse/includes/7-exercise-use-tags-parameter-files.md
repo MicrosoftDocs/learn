@@ -4,9 +4,6 @@ In this exercise, you add tags to help organize and track your Microsoft Azure r
 
 [!INCLUDE[](../../../includes/azure-cloud-shell-terminal-note.md)]
 
-> [!NOTE]
-> Throughout this exercise, replace **myResourceGroupName** in the examples with the name of an existing resource group, or the name of the resource group that you created for this exercise.
-
 ## Create a tag to track the resource deployment environment and project
 
 First, you create a parameter to use as a resource tag in your template.
@@ -96,7 +93,7 @@ First, you create a parameter to use as a resource tag in your template.
 
 ### Verify that the new tags are in the deployment
 
-1. In Azure, select the **myResourceGroupName** resource group, then select the storage account you deployed.
+1. In Azure, select your resource group name, then select the storage account you deployed.
 
 1. Notice the **Environment : Dev** and **Project : Tutorial** tags:
 
