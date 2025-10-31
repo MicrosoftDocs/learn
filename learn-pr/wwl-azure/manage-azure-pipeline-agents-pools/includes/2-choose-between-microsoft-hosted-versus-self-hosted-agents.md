@@ -1,38 +1,38 @@
-To build your code or deploy your software, you generally need at least one agent.
+To build your code or deploy your software, you need at least one agent. As you add more code and team members, you'll eventually need more agents.
 
-As you add more code and people, you'll eventually need more.
+When your build or deployment runs, the system starts one or more jobs. An agent is installable software that runs one build or deployment job at a time.
 
-When your build or deployment runs, the system begins one or more jobs.
+## Microsoft-hosted agents
 
-An agent is an installable software that runs one build or deployment job at a time.
+If your pipelines are in Azure Pipelines, you have a convenient option to build and deploy using Microsoft-hosted agents.
 
-## Microsoft-hosted agent
+With Microsoft-hosted agents, maintenance and upgrades happen automatically. Each time a pipeline runs, you get a fresh virtual machine instance that's discarded after one use.
 
-If your pipelines are in Azure Pipelines, then you've got a convenient option to build and deploy using a Microsoft-hosted agent.
+For many teams, this is the simplest way to build and deploy. You can try it first and see if it works for your build or deployment. If not, you can use a self-hosted agent.
 
-With a Microsoft-hosted agent, maintenance and upgrades are automatically done.
+**Key characteristics:**
 
-Each time a pipeline is run, a new virtual machine (instance) is provided. The virtual machine is discarded after one use.
+- Fresh virtual machine for each pipeline run
+- Automatic maintenance and updates
+- No setup or management required
+- Job time limits apply
 
-For many teams, this is the simplest way to build and deploy.
+## Self-hosted agents
 
-You can try it first and see if it works for your build or deployment. If not, you can use a self-hosted agent.
+A self-hosted agent is one you set up and manage yourself to run build and deployment jobs. Self-hosted agents give you more control to install dependent software needed for your builds and deployments.
 
-A Microsoft-hosted agent has job time limits.
+**Installation options:**
 
-## Self-hosted agent
+- Linux.
+- macOS.
+- Windows.
+- Linux Docker containers.
 
-An agent that you set up and manage on your own to run build and deployment jobs is a self-hosted agent.
+After installing the agent on a machine, you can install any other software required by your build or deployment jobs.
 
-You can use a self-hosted agent in Azure Pipelines. A self-hosted agent gives you more control to install dependent software needed for your builds and deployments.
+**Key characteristics:**
 
-You can install the agent on:
-
- -  Linux.
- -  macOS.
- -  Windows.
- -  Linux Docker containers.
-
-After you've installed the agent on a machine, you can install any other software on that machine as required by your build or deployment jobs.
-
-A self-hosted agent doesn't have job time limits.
+- Full control over the environment.
+- Custom software installation.
+- No job time limits.
+- Requires setup and maintenance.
