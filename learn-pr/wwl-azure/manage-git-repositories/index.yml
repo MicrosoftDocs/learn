@@ -11,7 +11,7 @@ metadata:
     - N/A
   ms.service: azure
   ai-usage: human-only
-title: Manage and Configure Repositories
+title: Manage and configure repositories
 summary: Learn how to work with large code repositories, clean up repository data, and manage releases using GitHub.
 abstract: |
   By the end of this module, you'll be able to:
