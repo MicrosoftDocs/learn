@@ -2,60 +2,81 @@
 uid: learn.wwl.implement-bicep
 metadata:
   title: Implement Bicep
-  description: "Implement Bicep"
-  ms.date: 05/23/2024
-  author: wwlpublish
+  description: "Learn to implement Bicep for infrastructure as code, including installation, template creation, deployment with Azure Pipelines and GitHub workflows, and integration with Azure Resource Manager."
+  ms.date: 10/08/2025
+  author: LuizMacedo
   ms.author: lumac
   ms.topic: module
   ms.custom:
-  - N/A
+    - N/A
   ms.service: azure
-  ai-usage: human-only
+  ai-usage: ai-assisted
 title: Implement Bicep
-summary: This module explains Bicep and how it integrates with different tools such as Azure CLI and Visual Studio Code for environment deployment configuration.
+summary: This module explains Bicep and how it integrates with different tools such as Azure CLI, Visual Studio Code, Azure Pipelines, and GitHub workflows for infrastructure as code deployment. Learn to create, deploy, and manage Azure resources using Bicep templates.
 abstract: |
   By the end of this module, you're able to:
 
-  - Learn what Bicep is.
+  - Understand what Bicep is and its benefits for infrastructure as code.
 
-  - Learn how to install it and create a smooth authoring experience.
+  - Install Bicep and configure a smooth authoring experience with Visual Studio Code.
 
-  - Use Bicep to deploy resources to Azure.
+  - Create Bicep templates to define Azure resources.
 
-  - Deploy Bicep files in Cloud Shell and Visual Studio Code.
-prerequisites: None
+  - Understand Bicep file structure, syntax, parameters, variables, and modules.
+
+  - Deploy Bicep files using Azure CLI and Cloud Shell.
+
+  - Deploy Bicep templates from Azure Pipelines for continuous deployment.
+
+  - Deploy Bicep templates from GitHub workflows for automated deployments.
+
+  - Understand how Bicep integrates with Azure Resource Manager templates.
+prerequisites: |
+  -   Understanding of infrastructure as code concepts.
+
+  -   Basic knowledge of Azure resources and resource groups.
+
+  -   Familiarity with Azure CLI or Azure PowerShell.
+
+  -   Experience with Azure Pipelines or GitHub workflows is helpful but not required.
 iconUrl: /training/achievements/implement-bicep.svg
 levels:
-- advanced
+  - advanced
 roles:
-- administrator
-- developer
-- devops-engineer
-- security-engineer
-- security-operations-analyst
-- service-adoption-specialist
-- solution-architect
-- technology-manager
+  - administrator
+  - ai-engineer
+  - data-engineer
+  - developer
+  - devops-engineer
+  - platform-engineer
+  - security-engineer
+  - security-operations-analyst
+  - service-adoption-specialist
+  - solution-architect
+  - startup-founder
+  - technology-manager
 products:
-- azure
-- azure-artifacts
-- azure-boards
-- azure-cloud-services
-- azure-devops
-- azure-pipelines
-- azure-repos
-- azure-test-plans
-- github
+  - azure
+  - azure-artifacts
+  - azure-boards
+  - azure-cloud-services
+  - azure-devops
+  - azure-pipelines
+  - azure-repos
+  - azure-test-plans
+  - github
+subjects:
+  - devops
 units:
-- learn.wwl.implement-bicep.introduction
-- learn.wwl.implement-bicep.what-bicep
-- learn.wwl.implement-bicep.install-bicep
-- learn.wwl.implement-bicep.exercise-create-bicep-templates
-- learn.wwl.implement-bicep.understand-bicep-file-structure-syntax
-- learn.wwl.implement-bicep.exercise-deploy-bicep-file-azure-pipelines
-- learn.wwl.implement-bicep.exercise-deploy-bicep-file-github-workflows
-- learn.wwl.implement-bicep.azure-deployment-use-resource-manager-templates
-- learn.wwl.implement-bicep.knowledge-check
-- learn.wwl.implement-bicep.summary
+  - learn.wwl.implement-bicep.introduction
+  - learn.wwl.implement-bicep.what-bicep
+  - learn.wwl.implement-bicep.install-bicep
+  - learn.wwl.implement-bicep.exercise-create-bicep-templates
+  - learn.wwl.implement-bicep.understand-bicep-file-structure-syntax
+  - learn.wwl.implement-bicep.exercise-deploy-bicep-file-azure-pipelines
+  - learn.wwl.implement-bicep.exercise-deploy-bicep-file-github-workflows
+  - learn.wwl.implement-bicep.azure-deployment-use-resource-manager-templates
+  - learn.wwl.implement-bicep.knowledge-check
+  - learn.wwl.implement-bicep.summary
 badge:
-  uid: learn.wwl.implement-bicep.badge
+  uid: learn.wwl.implement-bicep.badge
