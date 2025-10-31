@@ -3,11 +3,11 @@ uid: learn.wwl.share-knowledge-within-teams.integrate-github-azure-devops-micros
 title: Integrate GitHub and Azure DevOps with Microsoft Teams
 metadata:
   title: Integrate GitHub and Azure DevOps with Microsoft Teams
-  description: "Integrate GitHub and Azure DevOps with Microsoft Teams"
-  ms.date: 05/24/2024
-  author: wwlpublish
+  description: "Learn to integrate GitHub and Azure DevOps with Microsoft Teams for real-time collaboration. Configure notifications for pull requests, issues, work items, builds, and deployments. Set up subscriptions with filters, manage workflow approvals, and use compose extensions for seamless DevOps communication within Teams channels."
+  ms.date: 10/21/2025
+  author: LuizMacedo
   ms.author: lumac
   ms.topic: unit
-durationInMinutes: 3
+durationInMinutes: 5
 content: |
-  [!include[](includes/4-integrate-github-azure-devops-microsoft-teams.md)]
+  [!include[](includes/4-integrate-github-azure-devops-microsoft-teams.md)]

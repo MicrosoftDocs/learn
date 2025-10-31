@@ -1,58 +1,82 @@
 ### YamlMime:Module
 uid: learn.wwl.implement-tools-to-track-usage-flow
 metadata:
-  title: Implement tools to track usage and flow
-  description: Implement tools to track usage and flow
-  ms.date: 05/24/2024
-  author: wwlpublish
+  title: Implement Tools to Track Usage and Flow
+  description: "Learn how to implement continuous monitoring tools to track application usage and flow. Explore Azure Monitor, Log Analytics, Kusto Query Language (KQL), and Application Insights for comprehensive telemetry, performance monitoring, and user behavior analysis."
+  ms.date: 10/13/2025
+  author: LuizMacedo
   ms.author: lumac
   ms.topic: module-standard-task-based
   ms.custom:
-  - N/A
-  ai-usage: human-only
-  ms.service: kusto
-title: Implement tools to track usage and flow
-summary: This module introduces you to continuous feedback practices and tools to track usage and flow, such as Azure Logs Analytics, Kusto Query Language (KQL), and Application Insights.
+    - N/A
+  ai-usage: ai-assisted
+  ms.service: azure
+title: Implement Tools to Track Usage and Flow
+summary: This module introduces you to **continuous feedback practices** and **monitoring tools** essential for tracking application usage and flow. Learn how to implement Azure Monitor, Log Analytics, and Application Insights to gain deep insights into application performance, user behavior, and system health. Explore Kusto Query Language (KQL) for powerful data analysis and understand the inner loop development workflow for faster feedback cycles.
 abstract: |
   By the end of this module, you're able to:
-  -   Implement tools to track feedback
-  -   Plan for continuous monitoring
-  -   Implement Application Insights
-  -   Use Kusto Query Language (KQL)
-prerequisites: None
+  -   Implement tools to track feedback and telemetry data from applications
+
+  -   Plan for continuous monitoring strategies across development and production environments
+
+  -   Implement Application Insights for comprehensive application performance monitoring
+
+  -   Use Kusto Query Language (KQL) to query and analyze telemetry data
+
+  -   Design and implement metrics and queries for actionable insights
+
+  -   Monitor application performance using Azure Monitor and Log Analytics
+
+  -   Understand the inner loop and outer loop development workflows
+prerequisites: |
+  -   Understanding of DevOps concepts and practices
+
+  -   Familiarity with Azure portal and Azure services
+
+  -   Basic knowledge of application development and deployment
+
+  -   Experience with monitoring and logging concepts
+
+  -   Understanding of CI/CD pipelines and automation
 iconUrl: /training/achievements/1-implement-tools-to-track-usage-and-flow.svg
 levels:
-- advanced
+  - advanced
 roles:
-- administrator
-- developer
-- devops-engineer
-- security-engineer
-- security-operations-analyst
-- service-adoption-specialist
-- solution-architect
-- technology-manager
+  - administrator
+  - ai-engineer
+  - data-engineer
+  - developer
+  - devops-engineer
+  - platform-engineer
+  - security-engineer
+  - security-operations-analyst
+  - service-adoption-specialist
+  - solution-architect
+  - startup-founder
+  - technology-manager
 products:
-- azure
-- azure-artifacts
-- azure-boards
-- azure-cloud-services
-- azure-devops
-- azure-pipelines
-- azure-repos
-- azure-test-plans
-- github
+  - azure
+  - azure-artifacts
+  - azure-boards
+  - azure-cloud-services
+  - azure-devops
+  - azure-pipelines
+  - azure-repos
+  - azure-test-plans
+  - github
+subjects:
+  - devops
 units:
-- learn.wwl.implement-tools-to-track-usage-flow.introduction
-- learn.wwl.implement-tools-to-track-usage-flow.understand-inner-loop
-- learn.wwl.implement-tools-to-track-usage-flow.introduction-to-continuous-monitoring
-- learn.wwl.implement-tools-to-track-usage-flow.explore-azure-monitor-log-analytics
-- learn.wwl.implement-tools-to-track-usage-flow.examine-kusto-query-language-kql
-- learn.wwl.implement-tools-to-track-usage-flow.explore-application-insights
-- learn.wwl.implement-tools-to-track-usage-flow.implement-application-insights
-- learn.wwl.implement-tools-to-track-usage-flow.design-implement-metrics-queries
-- learn.wwl.implement-tools-to-track-usage-flow.monitor-application-performance-app-insights
-- learn.wwl.implement-tools-to-track-usage-flow.knowledge-check
-- learn.wwl.implement-tools-to-track-usage-flow.summary
+  - learn.wwl.implement-tools-to-track-usage-flow.introduction
+  - learn.wwl.implement-tools-to-track-usage-flow.understand-inner-loop
+  - learn.wwl.implement-tools-to-track-usage-flow.introduction-to-continuous-monitoring
+  - learn.wwl.implement-tools-to-track-usage-flow.explore-azure-monitor-log-analytics
+  - learn.wwl.implement-tools-to-track-usage-flow.examine-kusto-query-language-kql
+  - learn.wwl.implement-tools-to-track-usage-flow.explore-application-insights
+  - learn.wwl.implement-tools-to-track-usage-flow.implement-application-insights
+  - learn.wwl.implement-tools-to-track-usage-flow.design-implement-metrics-queries
+  - learn.wwl.implement-tools-to-track-usage-flow.monitor-application-performance-app-insights
+  - learn.wwl.implement-tools-to-track-usage-flow.knowledge-check
+  - learn.wwl.implement-tools-to-track-usage-flow.summary
 badge:
   uid: learn.wwl.implement-tools-to-track-usage-flow.badge
