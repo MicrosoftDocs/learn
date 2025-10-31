@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.security-monitoring-and-governance.implement-pipeline-security
-title: Implement Pipeline Security
+title: Implement pipeline security
 metadata:
   title: Implement Pipeline Security
   description: "Implement comprehensive pipeline security with secrets management, service connection security, RBAC, agent security, deployment gates, audit logging, and security scanning integration."
