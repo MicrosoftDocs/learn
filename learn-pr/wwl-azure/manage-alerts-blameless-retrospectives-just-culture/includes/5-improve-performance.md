@@ -4,7 +4,7 @@ Slow and failed responses create significant frustration for users and directly 
 
 **Assess business impact:** Not all performance issues require immediate attention. Effective triage balances technical metrics with business context:
 
-**Consider usage frequency:** If a page loads slowly but only 1% of users ever access it, the impact is limited. You might have higher-priority issues affecting more users. However, consider the page's purpose. A rarely-used admin configuration page might not warrant immediate optimization. A rarely-accessed but critical checkout flow deserves attention despite low traffic.
+**Consider usage frequency:** If a page loads slowly but only 1% of users ever access it, the impact is limited. You might have higher-priority issues affecting more users. However, consider the page's purpose. A rarely used admin configuration page might not warrant immediate optimization. A rarely accessed but critical checkout flow deserves attention despite low traffic.
 
 **Evaluate severity:** A page that consistently throws exceptions for all users who access it represents a critical issue regardless of traffic volume. Failed requests are worse than slow requests. Prioritize fixing failures before optimizing performance.
 
