@@ -11,7 +11,7 @@ metadata:
     - N/A
   ms.service: azure
   ai-usage: ai-assisted
-title: Implement Open-Source Software
+title: Implement open-source software
 summary: This module explores how modern software is built with open-source components, corporate concerns about security and licensing, common open-source licenses (MIT, Apache, GPL), license implications for commercial use, and strategies for managing open-source software in enterprise environments.
 abstract: |
   By the end of this module, you're able to:
