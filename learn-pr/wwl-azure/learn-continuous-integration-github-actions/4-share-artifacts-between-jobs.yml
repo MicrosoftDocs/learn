@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.learn-continuous-integration-github-actions.share-artifacts-between-jobs
-title: Share Artifacts Between Jobs
+title: Share artifacts between jobs
 metadata:
   title: Share Artifacts Between Jobs
   description: "Learn how to share build artifacts and data between jobs in GitHub Actions workflows."

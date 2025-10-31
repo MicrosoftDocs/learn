@@ -23,7 +23,7 @@ After completing this lab, you'll be able to:
 During this lab, you'll complete the following exercises:
 
 - Exercise 0: Import eShopOnWeb to your GitHub Repository.
-- Exercise 1: Setup your GitHub Repository and Azure access.
+- Exercise 1: Set up your GitHub Repository and Azure access.
 - Exercise 2: Remove the Azure lab resources.
 
 [:::image type="content" source="../media/launch-exercise-25d42425.png" alt-text="Screenshot of a launch button, which will take you to the lab.":::

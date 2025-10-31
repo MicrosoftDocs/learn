@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.learn-continuous-integration-github-actions.examine-workflow-badges
-title: Examine Workflow Badges
+title: Examine workflow badges
 metadata:
   title: Examine Workflow Badges
   description: "Learn how to create and use workflow status badges to display build and deployment status."
