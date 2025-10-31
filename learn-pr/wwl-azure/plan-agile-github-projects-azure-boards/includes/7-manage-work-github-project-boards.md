@@ -52,16 +52,16 @@ Start typing "Create new field". When "Create new field" displays in the command
 
 **Advanced configuration options:**
 
-5.  **Name selection**: Choose names that reflect business context and team workflow
-6.  **Field type**: Select "Iteration" for time-boxed planning
-7.  **Start date strategy**:
+1.  **Name selection**: Choose names that reflect business context and team workflow
+1.  **Field type**: Select "Iteration" for time-boxed planning
+1.  **Start date strategy**:
     - **Current day**: For immediate project initiation
     - **Strategic date**: Align with business cycles, team availability, major releases
-8.  **Duration optimization**:
+1.  **Duration optimization**:
     - **Standard teams**: 2 weeks (14 days) for balanced planning and delivery
     - **Research teams**: 3-4 weeks for deeper investigation cycles
     - **Maintenance teams**: 1 week for rapid response and fixes
-9.  Click **Save and create**
+1.  Click **Save and create**
 
 :::image type="content" source="../media/github-create-iteration-6d37845a-bf36fd62-509c7773.png" alt-text="Screenshot of GitHub settings. New iteration creation.":::
 
@@ -91,14 +91,14 @@ Examples:
 
 **Advanced iteration customization:**
 
-6.  **Custom iteration configuration**:
+1.  **Custom iteration configuration**:
 
     - Click the dropdown next to "Add iteration"
     - **Strategic start date selection**: Align with business quarters, team availability, or dependency completion
     - **Dynamic duration management**: Adjust based on scope complexity and team capacity
     - Click **Add** to implement
 
-7.  **Save and validate changes**: Ensure iteration alignment with project timeline
+1.  **Save and validate changes**: Ensure iteration alignment with project timeline
 
 :::image type="content" source="../media/github-iterations-45abf300-1249f80d-ccee81e7.png" alt-text="Screenshot of GitHub iterations example list.":::
 

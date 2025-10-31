@@ -28,7 +28,8 @@ GitHub Projects are flexible tools designed to help you plan and track work acro
 - **Use case**: Cross-team coordination, high-level roadmap planning, and strategic initiative tracking
 - **Best for**: Product roadmaps, company-wide initiatives, release planning, portfolio management
 
-> **Note**: To create organization projects, you must have the appropriate permissions within the organization.
+> [!Note]
+> To create organization projects, you must have the appropriate permissions within the organization.
 
 ### Multiple views for different perspectives
 
