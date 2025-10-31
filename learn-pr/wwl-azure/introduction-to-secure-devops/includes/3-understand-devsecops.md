@@ -25,7 +25,7 @@ Security gaps persist even as cloud adoption grows. Organizations moving to clou
 - Unplanned work appears right before deployment when teams are under pressure to release.
 - Security issues discovered late require expensive rework of completed features.
 - Security becomes a bottleneck that slows or blocks releases.
-- Teams view security as an obstacle rather than a enabler.
+- Teams view security as an obstacle rather than an enabler.
 - Critical security vulnerabilities might be deprioritized due to release pressures.
 
 **The Secure DevOps solution:** Secure DevOps integrates security with DevOps practices into a cohesive set of activities designed to meet the goals of both DevOps velocity and security effectiveness. Security becomes part of the development process from the beginning rather than a gate at the end.
