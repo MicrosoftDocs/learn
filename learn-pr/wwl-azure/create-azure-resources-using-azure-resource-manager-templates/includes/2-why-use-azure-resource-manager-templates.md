@@ -1,4 +1,4 @@
-**Resource Manager templates**, also called **Azure Resource Manager (ARM) templates**, are JSON files that define the infrastructure and configuration for your Azure deployments. They represent a modern approach to **infrastructure as code (IaC)**, replacing manual and error-prone deployment processes.
+**Resource Manager templates**, also called **Azure Resource Manager templates**, are JSON files that define the infrastructure and configuration for your Azure deployments. They represent a modern approach to **infrastructure as code (IaC)**, replacing manual and error-prone deployment processes.
 
 ## The challenge with manual deployments
 
@@ -23,7 +23,7 @@ Consider using **Resource Manager templates** when you need these benefits:
 
 - **Improved consistency**
 
-**Resource Manager templates provide a common language** for describing deployments. Regardless of the tool (Azure Portal, Azure CLI, PowerShell, or SDKs), the template structure, format, and expressions remain identical. This consistency ensures:
+**Resource Manager templates provide a common language** for describing deployments. Regardless of the tool (Azure portal, Azure CLI, PowerShell, or SDKs), the template structure, format, and expressions remain identical. This consistency ensures:
 
 - **Cross-team collaboration:** Developers and operations teams work with the same infrastructure definitions.
 - **Multi-environment reliability:** Development, staging, and production use the same template structure.

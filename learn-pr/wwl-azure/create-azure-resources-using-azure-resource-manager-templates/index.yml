@@ -11,8 +11,8 @@ metadata:
     - N/A
   ai-usage: ai-assisted
   ms.service: azure-resource-manager
-title: Create Azure Resources Using Azure Resource Manager Templates
-summary: This module explores Azure Resource Manager (ARM) templates and their components, teaching you how to create declarative infrastructure as code. Learn to manage dependencies, modularize templates for reusability, and securely handle secrets with Azure Key Vault integration. Discover both JSON ARM templates and modern Bicep syntax for efficient Azure resource deployment.
+title: Create Azure Resources by using Azure Resource Manager templates
+summary: This module explores Azure Resource Manager templates (ARM templates) and their components, teaching you how to create declarative infrastructure as code. Learn to manage dependencies, modularize templates for reusability, and securely handle secrets with Azure Key Vault integration. Discover both JSON ARM templates and modern Bicep syntax for efficient Azure resource deployment.
 abstract: |
   By the end of this module, you're able to:
   -   Create and deploy Azure resources using ARM templates and Bicep syntax.

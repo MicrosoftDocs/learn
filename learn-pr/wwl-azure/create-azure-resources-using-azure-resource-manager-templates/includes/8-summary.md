@@ -1,4 +1,4 @@
-This module explored **Azure Resource Manager (ARM) templates** and their components, teaching you how to implement infrastructure as code for consistent, repeatable Azure deployments.
+This module explored **Azure Resource Manager templates** and their components, teaching you how to implement infrastructure as code for consistent, repeatable Azure deployments.
 
 ## What you learned
 
@@ -42,7 +42,7 @@ You now understand how to:
 **Continue your infrastructure as code journey:**
 
 - Explore **Azure Bicep** as a modern alternative to JSON ARM templates.
-- Learn about **Terraform** for multi-cloud infrastructure management.
+- Learn about **Terraform** for multicloud infrastructure management.
 - Implement **CI/CD pipelines** for automated template deployments.
 - Study **Azure Policy** to enforce governance on deployed resources.
 - Practice with **Azure Quickstart Templates** for real-world scenarios.

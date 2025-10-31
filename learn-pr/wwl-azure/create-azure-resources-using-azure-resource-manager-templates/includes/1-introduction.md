@@ -1,4 +1,4 @@
-This module explores **Azure Resource Manager (ARM) templates** and their components, teaching you how to implement **infrastructure as code (IaC)** for Azure deployments. You'll learn about template structure, dependency management, modularization techniques, and secure secrets handling through **Azure Key Vault** integration.
+This module explores **Azure Resource Manager templates (ARM templates)** and their components, teaching you how to implement **infrastructure as code (IaC)** for Azure deployments. You'll learn about template structure, dependency management, modularization techniques, and secure secrets handling through **Azure Key Vault** integration.
 
 **ARM templates** provide a declarative way to define Azure resources using JSON syntax, enabling consistent and repeatable deployments. You'll also discover **Bicep**, a modern domain-specific language that simplifies ARM template authoring with cleaner syntax while maintaining the same capabilities.
 
