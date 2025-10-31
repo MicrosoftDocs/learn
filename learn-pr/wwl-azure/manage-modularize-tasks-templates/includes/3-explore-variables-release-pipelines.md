@@ -1,49 +1,45 @@
-Variables give you a convenient way to get critical bits of data into various parts of the pipeline.
+Variables enable dynamic data injection across pipeline components, providing configuration flexibility and environment-specific parameter management throughout build and release processes.
 
-As the name suggests, the contents of a variable may change between releases, stages of jobs of your pipeline.
+Variable content adapts to deployment context, changing values across releases, stages, and job executions to support diverse environment requirements and deployment scenarios.
 
-The system predefines some variables, and you're free to add your own as well.
+Azure DevOps provides predefined system variables alongside custom variable definition capabilities for comprehensive pipeline configuration management.
 
-The variable's scope is the most important thing you need to think about when using variables in the release pipeline.
+Variable scope determines accessibility and inheritance patterns within release pipelines, requiring strategic planning for optimal configuration management and deployment flexibility.
 
-You can imagine that a variable containing the target server's name may vary between a Development environment and a Test Environment.
-
-Within the release pipeline, you can use variables in different scopes and different ways.
+Environment-specific variables, such as target server configurations, demonstrate scope importance by varying values between Development, Test, and Production environments while maintaining consistent pipeline logic.
 
 For more information, see [Release variables and debugging](/azure/devops/pipelines/release/variables).
 
 ## Predefined variables
 
-When running your release pipeline, you always need variables that come from the agent or context of the release pipeline.
+Release pipeline execution requires contextual information from agent environments and pipeline metadata for proper task execution and environment configuration.
 
-For example, the agent directory where the sources are downloaded, the build number or build ID, the agent's name, or any other information.
+System-generated variables provide essential runtime information including agent directories, source locations, build identifiers, agent names, and pipeline context metadata.
 
-This information is accessible in predefined variables that you can use in your tasks.
+Predefined variables enable task access to execution context without manual configuration, ensuring consistent information availability across all pipeline stages and environments.
 
 ## Release pipeline variables
 
-Choose a release pipeline variable when you need to use the same value across all the stages and tasks in the release pipeline, and you want to change the value in a single place.
+Release pipeline variables provide global scope access across all stages and tasks within a single pipeline definition, enabling centralized value management and consistent configuration throughout the deployment process.
 
 ## Stage variables
 
-Share values across all the tasks within one specific stage by using stage variables.
+Stage variables offer scoped access within individual pipeline stages, supporting values that remain constant across stage tasks while varying between different deployment stages.
 
-Use a stage-level variable for values that vary from stage to stage (and are the same for all the tasks in a stage).
+Stage-level variables optimize configuration for environment-specific requirements that change between deployment stages but maintain consistency within each stage's task execution.
 
 ## Variable groups
 
-Share values across all the definitions in a project by using variable groups. We'll cover variable groups later in this module.
+Variable groups enable cross-pipeline value sharing within project scope, providing centralized configuration management for multiple pipeline definitions. Detailed variable group implementation follows in subsequent module sections.
 
 ## Normal and secret variables
 
-Because the pipeline tasks are executed on an agent, variable values are passed to the various tasks using environment variables.
+Pipeline task execution utilizes environment variables for value transmission between pipeline engine and agent-based task processors, enabling dynamic configuration during runtime.
 
-The task knows how to read it. You should be aware that a variable contains clear text and can be exposed to the target system.
+Standard variables contain plaintext values that appear in log output and system environments, creating potential security exposure for sensitive information during pipeline execution and debugging.
 
-When you use the variable in the log output, you can also see the variable's value.
+Variable lifecycle management includes automatic cleanup after pipeline completion, removing environment variables from agent systems to minimize security footprint.
 
-When the pipeline has finished, the values will be cleared.
-
-You can mark a variable in the release pipeline as secret. This way, the secret is hidden from the log output. It's beneficial when writing a password or other sensitive information.
+Secret variables provide masked logging and secure value transmission, hiding sensitive information such as passwords, API keys, and authentication tokens from log output while maintaining functional access for task execution.
 
 :::image type="content" source="../media/vars-3569d015.png" alt-text="Screenshot showing Variables tab.":::
