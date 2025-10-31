@@ -2,60 +2,66 @@
 uid: learn.wwl.manage-alerts-blameless-retrospectives-just-culture
 metadata:
   title: Manage alerts, blameless retrospectives and a just culture
-  description: Manage alerts, blameless retrospectives and a just culture
-  ms.date: 05/08/2024
-  author: wwlpublish
+  description: "Learn to manage monitoring alerts effectively, conduct blameless retrospectives after incidents, and develop a just culture that promotes learning from failures. Improve application performance by reducing alert fatigue and understanding performance degradation patterns."
+  ms.date: 10/21/2025
+  author: LuizMacedo
   ms.author: lumac
   ms.topic: module
   ms.custom:
-  - N/A
-  ai-usage: human-only
+    - N/A
+  ai-usage: ai-assisted
   ms.service: azure-devops
 title: Manage alerts, blameless retrospectives and a just culture
-summary: This module examines alerts, blameless retrospectives and creates a just culture. It helps improving application performance, reducing meaningless and nonactionable alerts, and explains server response-time degradation.
+summary: This module teaches you to manage monitoring alerts effectively, conduct blameless retrospectives that focus on learning rather than blame, and build a just culture where engineers feel safe reporting mistakes. Learn to improve application performance by identifying real issues with Azure Application Insights smart detection, reducing meaningless alerts, and understanding server response-time degradation patterns.
 abstract: |
-  By the end of this module, you're able to:
-  -   Carry out blameless retrospectives and create a just culture
-  -   Improve application performance
-  -   Explain server response time degradation
-  -   Reduce meaningless and nonactionable alerts
+  By the end of this module, you'll be able to:
+
+  - Configure Azure Application Insights smart detection and interpret performance degradation notifications.
+  - Diagnose and improve application performance using telemetry and profiler data.
+  - Reduce alert fatigue by distinguishing actionable alerts from meaningless noise.
+  - Conduct blameless retrospectives that focus on system improvements rather than individual blame.
+  - Build a just culture where engineers learn from mistakes without fear of punishment.
 prerequisites: None
 iconUrl: /learn/achievements/8-manage-alerts-blameless-retrospectives-and-a-just-culture.svg
 levels:
-- advanced
+  - advanced
 roles:
-- administrator
-- developer
-- devops-engineer
-- security-engineer
-- security-operations-analyst
-- service-adoption-specialist
-- solution-architect
-- technology-manager
+  - administrator
+  - ai-engineer
+  - data-engineer
+  - developer
+  - devops-engineer
+  - platform-engineer
+  - security-engineer
+  - security-operations-analyst
+  - service-adoption-specialist
+  - solution-architect
+  - startup-founder
+  - technology-manager
 products:
-- azure
-- azure-artifacts
-- azure-boards
-- azure-cloud-services
-- azure-devops
-- azure-pipelines
-- azure-repos
-- azure-test-plans
-- github
+  - azure
+  - azure-artifacts
+  - azure-boards
+  - azure-cloud-services
+  - azure-devops
+  - azure-pipelines
+  - azure-repos
+  - azure-test-plans
+  - github
 subjects:
-- architecture
+  - devops
+  - architecture
 units:
-- learn.wwl.manage-alerts-blameless-retrospectives-just-culture.introduction
-- learn.wwl.manage-alerts-blameless-retrospectives-just-culture.examine-when-get-notification
-- learn.wwl.manage-alerts-blameless-retrospectives-just-culture.explore-how-to-fix-it
-- learn.wwl.manage-alerts-blameless-retrospectives-just-culture.explore-smart-detection-notifications
-- learn.wwl.manage-alerts-blameless-retrospectives-just-culture.improve-performance
-- learn.wwl.manage-alerts-blameless-retrospectives-just-culture.understand-server-response-time-degradation
-- learn.wwl.manage-alerts-blameless-retrospectives-just-culture.reduce-meaningless-non-actionable-alerts
-- learn.wwl.manage-alerts-blameless-retrospectives-just-culture.examine-blameless-retrospective
-- learn.wwl.manage-alerts-blameless-retrospectives-just-culture.develop-just-culture
-- learn.wwl.manage-alerts-blameless-retrospectives-just-culture.knowledge-check
-- learn.wwl.manage-alerts-blameless-retrospectives-just-culture.summary
+  - learn.wwl.manage-alerts-blameless-retrospectives-just-culture.introduction
+  - learn.wwl.manage-alerts-blameless-retrospectives-just-culture.examine-when-get-notification
+  - learn.wwl.manage-alerts-blameless-retrospectives-just-culture.explore-how-to-fix-it
+  - learn.wwl.manage-alerts-blameless-retrospectives-just-culture.explore-smart-detection-notifications
+  - learn.wwl.manage-alerts-blameless-retrospectives-just-culture.improve-performance
+  - learn.wwl.manage-alerts-blameless-retrospectives-just-culture.understand-server-response-time-degradation
+  - learn.wwl.manage-alerts-blameless-retrospectives-just-culture.reduce-meaningless-non-actionable-alerts
+  - learn.wwl.manage-alerts-blameless-retrospectives-just-culture.examine-blameless-retrospective
+  - learn.wwl.manage-alerts-blameless-retrospectives-just-culture.develop-just-culture
+  - learn.wwl.manage-alerts-blameless-retrospectives-just-culture.knowledge-check
+  - learn.wwl.manage-alerts-blameless-retrospectives-just-culture.summary
 badge:
   uid: learn.wwl.manage-alerts-blameless-retrospectives-just-culture.badge
-
