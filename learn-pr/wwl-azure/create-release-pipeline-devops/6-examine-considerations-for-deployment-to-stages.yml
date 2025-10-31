@@ -3,13 +3,13 @@ uid: learn.wwl.create-release-pipeline.examine-considerations-for-deployment-to-
 title: Examine considerations for deployment to stages
 metadata:
   title: Examine considerations for deployment to stages
-  description: "Examine considerations for deployment to stages"
-  ms.date: 05/28/2024
-  author: wwlpublish
+  description: "Understand key factors and best practices for deploying applications across different pipeline stages."
+  ms.date: 10/01/2025
+  author: LuizMacedo
   ms.author: lumac
   ms.topic: unit
   ms.custom:
-  - N/A
+    - N/A
 durationInMinutes: 3
 content: |
-  [!include[](includes/6-examine-considerations-for-deployment-to-stages.md)]
+  [!include[](includes/6-examine-considerations-for-deployment-to-stages.md)]
