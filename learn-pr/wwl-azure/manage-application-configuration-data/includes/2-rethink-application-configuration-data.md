@@ -1,53 +1,53 @@
 ## Configuration information in files
 
-Most application runtime environments include configuration information that is held in files deployed with the application. In some cases, it's possible to edit these files to change the application behavior after deploying.
+Traditional application runtime environments embed configuration information within deployment-bundled files enabling post-deployment behavior modification through file editing capabilities.
 
-However, changes to the configuration require the application to be redeployed, often resulting in unacceptable downtime and other administrative overhead.
+Configuration modification workflows requiring complete application redeployment introduce unacceptable downtime and administrative overhead contradicting continuous delivery principles.
 
-Local configuration files also limit the configuration to a single application, but sometimes it would be helpful to share configuration settings across multiple applications.
+Local configuration file architectures constrain settings to individual application contexts preventing cross-application configuration sharing despite legitimate scenarios requiring shared configuration distribution.
 
-Examples include database connection strings, UI theme information, or the URLs of queues and storage used by a related set of applications.
+Common shared configuration requirements encompass database connection strings, user interface theming parameters, and message queue or storage endpoint URLs utilized across related application portfolios.
 
-It's challenging to manage changes to local configurations across multiple running instances of the application, especially in a cloud-hosted scenario.
+Multi-instance application deployment scenarios particularly cloud-hosted environments present significant configuration synchronization challenges across concurrent running instances.
 
-It can result in instances using different configuration settings while the update is being deployed. Also, updates to applications and components might require changes to configuration schemas.
+Configuration deployment windows introduce temporary inconsistencies where application instances operate with divergent configuration states creating unpredictable system behavior.
 
-Many configuration systems don't support different versions of configuration information.
+Application and component evolution frequently necessitates configuration schema modifications further complicating management workflows, while numerous configuration systems lack multi-version configuration information support.
 
-## Example
+## Example scenario
 
-It's 2:00 AM. Adam is done making all changes to his super fantastic code piece.
+Development workflows completing at 2:00 AM frequently introduce security vulnerabilities through configuration management oversights.
 
-The tests are all running fine. They hit commit -&gt; push -&gt; all commits pushed successfully to git. Happily, Adam drives back home. 10 mins later, they get a call from the SecurityOps engineer, "Adam, did you push the Secret Key to our public repo?"
+Following successful test execution and Git commit operations, developers inadvertently commit configuration files containing sensitive credentials to public repositories.
 
-YIKES! That blah.config file, Adam thinks. How could I've forgotten to include that in .gitignore? The nightmare has already begun.
+Configuration file .gitignore exclusion oversights expose secret keys, connection strings, and authentication tokens to unauthorized access representing critical security incidents.
 
-We can surely blame Adam for sinning, checking in sensitive secrets, and not following the recommended practices of managing configuration files.
+While developer responsibility for secret management practices remains paramount, systemic configuration management approaches abstracting secret handling from development workflows prevent such security compromises.
 
-Still, the bigger question is that if the underlying toolchain had abstracted out the configuration management from the developer, this fiasco would have never happened!
+Toolchain-level configuration abstraction eliminates credential exposure vectors inherent in file-based configuration patterns.
 
 ## History
 
-The virus was injected a long time ago. Since the early days of .NET, the app.config and web.config files have the notion that developers can make their code flexible by moving typical configuration into these files.
+Configuration file patterns originated during early .NET framework evolution, introducing app.config and web.config mechanisms enabling code flexibility through externalized settings.
 
-When used effectively, these files are proven to be worthy of dynamic configuration changes. However, much time, we see the misuse of what goes into these files.
+Effective utilization demonstrates dynamic configuration modification capabilities, yet widespread implementation patterns reveal significant security anti-patterns and configuration misuse.
 
-A common culprit is how samples and documentation have been written. Most samples on the web would usually use these config files to store key elements such as ConnectionStrings and even passwords.
+Documentation and sample code proliferation established problematic precedents storing sensitive elements including connection strings and passwords within configuration files.
 
-The values might be obfuscated but what we are telling developers is that "hey, It's a great place to push your secrets!".
+Obfuscation practices provide false security assurances while implicitly endorsing secret storage within version-controlled configuration files representing fundamental security vulnerabilities.
 
-So, in a world where we're preaching using configuration files, we can't blame the developer for not managing its governance.
+Configuration file advocacy created environments where developers reasonably interpreted configuration files as appropriate secret storage locations absent alternative guidance.
 
-We aren't challenging the use of Configuration here. It's an absolute need for an exemplary implementation. Instead, we should debate using multiple JSON, XML, and YAML files to maintain configuration settings.
+Configuration flexibility constitutes essential application requirements demanding robust implementation strategies. Critical evaluation focuses on distributed JSON, XML, and YAML file proliferation for configuration maintenance.
 
-Configs are great for ensuring the flexibility of the application, config files. However, they aren't straightforward, especially across environments.
+Configuration files enable application flexibility while introducing complexity particularly across multi-environment deployment scenarios requiring distinct configuration variants.
 
-## A ray of hope: The DevOps movement
+## Modern DevOps approaches
 
-In recent years, we've seen a shift around following some excellent practices around effective DevOps and some great tools (Chef, Puppet) for managing Configuration for different languages.
+Contemporary DevOps evolution introduced configuration management best practices supported by infrastructure automation tools including Chef and Puppet for cross-language configuration orchestration.
 
-While these have helped inject values during CI/CD pipeline and greatly simplified configuration management, the blah.config concept hasn't moved away.
+CI/CD pipeline value injection capabilities significantly improved configuration management workflows, yet fundamental file-based configuration paradigms persist.
 
-Frameworks like ASP.NET Core support the notion of appSettings.json across environments.
+Modern frameworks including ASP.NET Core advance environment-specific configuration through appSettings.json patterns with IHostingEnvironment and IConfiguration interface abstractions.
 
-The framework has made it practical to use across environments through interfaces like IHostingEnvironment and IConfiguration, but we can do better.
+Framework improvements enable practical cross-environment configuration management, yet opportunities remain for enhanced externalized configuration patterns eliminating file-based limitations and secret exposure vulnerabilities.

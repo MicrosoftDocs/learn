@@ -1,9 +1,29 @@
-When you use the agent to deploy artifacts to a set of servers, it must-have "line of sight" connectivity to those servers.
+When using agents to deploy artifacts to target servers, the agent must have "line of sight" connectivity to those servers.
 
-The Microsoft-hosted agent pools, by default, have connectivity to Azure websites and servers running in Azure.
+## Microsoft-hosted agent connectivity
 
-Suppose your on-premises environments don't have connectivity to a Microsoft-hosted agent pool (because of intermediate firewalls). In that case, you'll need to manually configure a self-hosted agent on the on-premises computer(s).
+Microsoft-hosted agent pools have default connectivity to:
 
-The agents must have connectivity to the target on-premises environments and access to the Internet to connect to Azure Pipelines or Azure DevOps Server, as shown in the following diagram.
+- Azure websites
+- Servers running in Azure
+- Most internet-accessible endpoints
+
+## On-premises deployment requirements
+
+If your on-premises environments don't have connectivity to Microsoft-hosted agent pools due to firewalls or network restrictions, you'll need to set up self-hosted agents.
+
+**Self-hosted agent requirements:**
+
+- Connectivity to target on-premises environments
+- Internet access to connect to Azure Pipelines or Azure DevOps Server
+- Appropriate network configuration to reach both internal and external resources
 
 :::image type="content" source="../media/agents-stages-behind-firewall-ae9c03be.png" alt-text="Diagram that shows on-premises agents and target on-premises stages are behind the firewall.":::
+
+## Network considerations
+
+**Firewall configuration:** Ensure your self-hosted agents can communicate through firewalls to both Azure DevOps and your target deployment servers.
+
+**Security:** Implement appropriate security measures while maintaining necessary connectivity for deployments.
+
+**Performance:** Consider network latency and bandwidth when planning agent placement relative to deployment targets.
