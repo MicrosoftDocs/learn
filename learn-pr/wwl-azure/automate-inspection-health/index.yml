@@ -11,7 +11,7 @@ metadata:
     - N/A
   ai-usage: ai-assisted
   ms.service: azure-devops
-title: Automate Inspection of Health
+title: Automate inspection of health
 summary: This module explores automated health event monitoring, notification configuration across Azure DevOps and GitHub platforms, service hook implementation for pipeline oversight, and quality measurement frameworks for robust release management processes.
 abstract: |
   By the end of this module, you're able to:

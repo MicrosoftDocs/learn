@@ -2,13 +2,13 @@ Release communication strategies require comprehensive documentation frameworks 
 
 Release notes generation employs multiple storage architectures and content management approaches designed to optimize information delivery and maintain traceability with release artifacts.
 
-### Document Storage Systems
+### Document storage systems
 
 Centralized document repositories provide traditional release notes storage through structured file systems and content management platforms. Documentation consolidation enables organizational knowledge management while maintaining separation from release management workflows.
 
 Implementation limitations include disconnected release management tool integration, requiring manual correlation between release artifacts and corresponding documentation assets.
 
-### Wiki-Based Documentation
+### Wiki-based documentation
 
 Collaborative wiki platforms deliver modern release notes management through hyperlinked content structures and integrated version control. Popular wiki implementations include:
 
@@ -19,13 +19,13 @@ Collaborative wiki platforms deliver modern release notes management through hyp
 
 Wiki architectures enable dynamic cross-referencing between build artifacts, release packages, and deployment documentation through hyperlink associations and automated content generation.
 
-### Repository-Integrated Documentation
+### Repository-integrated documentation
 
 Source code repository integration provides optimal release notes management by maintaining strict alignment between feature implementations and corresponding documentation. Codebase-integrated documentation ensures synchronized version control and automated change tracking.
 
 Development workflow integration enables feature completion documentation through collaborative authoring between development teams and product ownership, creating living documentation that evolves synchronously with code modifications.
 
-### Work Item Documentation
+### Work item documentation
 
 Agile work item integration enables release notes management through structured work tracking systems including Bugs, Tasks, Product Backlog Items, and User Stories. Dedicated release notes fields within work items provide customer-facing communication content.
 

@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.automate-inspection-of-health.explore-service-hooks
-title: Explore Service Hooks
+title: Explore service hooks
 metadata:
   title: Explore Service Hooks
   description: "Learn to implement service hooks for automated pipeline monitoring and external system integration"

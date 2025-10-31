@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.automate-inspection-of-health.configure-azure-devops-notifications
-title: Configure Azure DevOps Notifications
+title: Configure Azure DevOps notifications
 metadata:
   title: Configure Azure DevOps Notifications
   description: "Configure comprehensive notification systems in Azure DevOps for real-time pipeline and project updates"

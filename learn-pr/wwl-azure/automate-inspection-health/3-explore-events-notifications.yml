@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.automate-inspection-of-health.explore-events-notifications
-title: Explore Events and Notifications
+title: Explore events and notifications
 metadata:
   title: Explore Events and Notifications
   description: "Understand event-driven notification systems and real-time communication frameworks for DevOps workflows"

@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.automate-inspection-of-health.automate-inspection-health
-title: Automate Inspection of Health
+title: Automate inspection of health
 metadata:
   title: Automate Inspection of Health
   description: "Implement automated health monitoring systems for proactive issue detection and continuous pipeline oversight"

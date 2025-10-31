@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.automate-inspection-of-health.configure-github-notifications
-title: Configure GitHub Notifications
+title: Configure GitHub notifications
 metadata:
   title: Configure GitHub Notifications
   description: "Set up GitHub notification systems for repository events, pull requests, and workflow monitoring"
