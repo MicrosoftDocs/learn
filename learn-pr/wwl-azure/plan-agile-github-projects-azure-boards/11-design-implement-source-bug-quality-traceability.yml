@@ -4,10 +4,10 @@ title: Design and implement source, bug, and quality traceability
 metadata:
   title: Design and implement source, bug, and quality traceability
   description: "Design and implement source, bug, and quality traceability"
-  ms.date: 05/24/2024
-  author: wwlpublish
+  ms.date: 09/02/2025
+  author: LuizMacedo
   ms.author: lumac
   ms.topic: unit
 durationInMinutes: 3
 content: |
-  [!include[](includes/11-design-implement-source-bug-quality-traceability.md)]
+  [!include[](includes/11-design-implement-source-bug-quality-traceability.md)]
