@@ -3,13 +3,13 @@ uid: learn.wwl.manage-azure-pipeline-agents-pools.examine-other-considerations
 title: Examine other considerations
 metadata:
   title: Examine other considerations
-  description: "Examine other considerations"
-  ms.date: 05/07/2024
-  author: wwlpublish
+  description: "Explore additional factors and advanced considerations for optimizing agent performance, scalability, and maintenance strategies."
+  ms.date: 09/26/2025
+  author: LuizMacedo
   ms.author: lumac
   ms.topic: unit
   ms.custom:
-  - N/A
+    - N/A
 durationInMinutes: 5
 content: |
-  [!include[](includes/9-examine-other-considerations.md)]
+  [!include[](includes/9-examine-other-considerations.md)]
