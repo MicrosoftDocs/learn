@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.implement-pipeline-strategy.explore-multi-configuration-multi-agent
-title: Explore Multi-Configuration and Multi-Agent Builds
+title: Explore multi-configuration and multi-agent builds
 metadata:
   title: Explore Multi-Configuration and Multi-Agent Builds
   description: "Discover how to implement multi-configuration and multi-agent builds to test across different environments and platforms simultaneously."

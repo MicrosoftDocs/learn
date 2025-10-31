@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.implement-pipeline-strategy.design-implement-comprehensive-test-strategy
-title: Design and Implement a Comprehensive Testing Strategy
+title: Design and implement a comprehensive testing strategy
 metadata:
   title: Design and Implement a Comprehensive Testing Strategy
   description: "Learn how to design and implement comprehensive testing strategies that ensure code quality and reliability in your CI/CD pipelines."

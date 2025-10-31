@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.implement-pipeline-strategy.configure-agent-demands
-title: Configure Agent Demands
+title: Configure agent demands
 metadata:
   title: Configure Agent Demands
   description: "Learn how to configure agent demands to ensure your pipeline jobs run on agents with the right capabilities and resources."

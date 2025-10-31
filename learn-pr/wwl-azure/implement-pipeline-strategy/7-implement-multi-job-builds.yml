@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.implement-pipeline-strategy.implement-multi-job-builds
-title: Implement Multi-Job Builds
+title: Implement multi-job builds
 metadata:
   title: Implement Multi-Job Builds
   description: "Learn how to implement multi-job builds to create efficient and parallelized CI/CD workflows with proper job dependencies and coordination."

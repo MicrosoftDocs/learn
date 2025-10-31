@@ -11,7 +11,7 @@ metadata:
     - N/A
   ms.service: azure
   ai-usage: ai-assisted
-title: Design and Implement a Pipeline Strategy
+title: Design and implement a pipeline strategy
 summary: Learn how to design and implement effective pipeline strategies using Azure Pipelines. This module covers agent demands, multi-configuration builds, GitHub integration, testing strategies, code coverage, and source control options.
 abstract: |
   By the end of this module, you're able to:

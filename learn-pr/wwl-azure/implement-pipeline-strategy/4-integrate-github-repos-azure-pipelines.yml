@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.implement-pipeline-strategy.integrate-github-repos-azure-pipelines
-title: Integrate GitHub Repositories with Azure Pipelines
+title: Integrate GitHub repositories with Azure Pipelines
 metadata:
   title: Integrate GitHub Repositories with Azure Pipelines
   description: "Learn how to connect GitHub repositories with Azure Pipelines to enable continuous integration and deployment workflows."
