@@ -11,7 +11,7 @@ metadata:
     - N/A
   ms.service: azure
   ai-usage: human-only
-title: Identify Technical Debt
+title: Identify technical debt
 summary: Learn how to find and manage technical debt in your code, use code quality tools, and plan effective code reviews.
 abstract: |
   By the end of this module, you will be able to:
