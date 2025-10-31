@@ -1,27 +1,24 @@
-These patterns store the configuration information in an external location and provide an interface that can be used to quickly and efficiently read and update configuration settings.
+External configuration store patterns persist configuration information in dedicated external infrastructure providing efficient interfaces for configuration reading and modification operations.
 
-The type of external store depends on the hosting and runtime environment of the application.
+External store selection depends on application hosting and runtime environment characteristics.
 
-A cloud-hosted scenario is typically a cloud-based storage service but could be a hosted database or other systems.
+Cloud-hosted deployments typically leverage cloud storage services, though hosted database implementations or alternative backing stores remain viable options.
 
-The backing store you choose for configuration information should have an interface that provides consistent and easy-to-use access.
+Configuration backing store architectures require interfaces providing consistent, accessible configuration retrieval exposing correctly typed, structured information.
 
-It should expose the information in a correctly typed and structured format.
+Implementation requirements include user access authorization protecting configuration data and flexible multi-version configuration storage supporting development, staging, and production environments with corresponding release version differentiation.
 
-The implementation might also need to authorize users' access to protect configuration data and be flexible enough to allow storage of multiple configuration versions (such as development, staging, or production, including many release versions of each one).
+Traditional configuration systems load data during application initialization implementing in-memory caching for rapid access minimizing application performance impact.
 
-Many built-in configuration systems read the data when the application starts up and cache the data in memory to provide fast access and minimize the impact on application performance.
-
-Depending on the type of backing store used and its latency, it might be helpful to implement a caching mechanism within the external configuration store.
+Backing store latency characteristics may necessitate external configuration store caching mechanisms optimizing configuration retrieval performance.
 
 For more information, see the Caching Guidance. The figure illustrates an overview of the External Configuration Store pattern with optional local cache.
 
 :::image type="content" source="../media/applications-accessing-external-configuration-ef278b40.png" alt-text="Diagram shows applications are accessing the external configuration store, which is accessing cloud storage, or databases.":::
 
+External configuration store pattern applicability:
 
-This pattern is helpful for:
-
- -  Configuration settings are shared between multiple applications and application instances, or where a standard configuration must be enforced across various applications and application instances.
- -  A standard configuration system doesn't support all the required configuration settings, such as storing images or complex data types.
- -  As a complementary store for some application settings, they allow applications to override some or all the centrally stored settings.
- -  To simplify the administration of multiple applications and optionally monitor configuration settings by logging some or all types of access to the configuration store.
+- **Cross-application configuration sharing:** Multiple applications and application instances require shared configuration settings or standardized configuration enforcement across distributed application portfolios.
+- **Extended configuration capabilities:** Standard configuration systems lack support for specialized configuration requirements including image storage or complex data type persistence.
+- **Hybrid configuration strategies:** Complementary configuration store implementations enable applications to override centrally stored settings with application-specific configurations.
+- **Centralized administration and monitoring:** Simplified multi-application administration with optional configuration access logging supporting audit and compliance requirements.
