@@ -1,17 +1,46 @@
-GitHub Advanced Security (GHAS) is a comprehensive suite of security features designed to enhance the security posture of software development projects. Besides being tightly integrated with GitHub. GHAS is also available as an extension to Azure DevOps, providing similar capabilities on both platforms.
+GitHub Advanced Security (GHAS) helps you find and fix security issues that can become technical debt. It works with both GitHub and Azure DevOps, giving you powerful tools to keep your code healthy.
 
-While GHAS is not designed to directly measure technical debt, its capabilities can greatly contribute to its discovery and remediation. GHAS offers code analysis, dependency management, and advanced code reviews along with security scanning services, such as code scanning, secret scanning, and dependency scanning. GHAS also provides detailed insights and recommendations to help prioritize and address security vulnerabilities.
+While GHAS focuses on security, it also helps you discover technical debt. Its scanning tools find code problems, dependency issues, and security vulnerabilities that slow down development over time.
 
-By leveraging these features, organizations can proactively identify and address technical debt early in the development lifecycle. This reduces security risks, enhances code quality, and facilitates long-term maintainability of their software projects.
+## How GHAS helps with technical debt
 
-## CodeQL analysis
+GHAS provides three main tools to help you:
 
-CodeQL is a semantic code analysis engine that assists developers with identifying issues within their codebases. It provides a declarative query language designed to search for patterns that help identify coding errors and design flaws, all of which contribute to accumulation of technical debt. Its analytics capabilities can also be used to detect potential security vulnerabilities, such as injection flaws, authentication issues, and access control problems, which are often indicative of underlying technical debt.
+- **Code analysis** - Finds patterns that create technical debt
+- **Dependency scanning** - Identifies outdated or risky dependencies
+- **Security scanning** - Catches vulnerabilities that become debt
 
-## Dependency management
+By using these tools early in development, you can prevent technical debt from building up. This keeps your code secure, maintainable, and easier to work with.
 
-Dependency management is critical for managing technical debt associated with outdated or vulnerable dependencies. GHAS dependency scanning provides visibility into project dependencies, including information on outdated packages, security vulnerabilities, and licensing issues. Dependabot can automatically update dependencies with security vulnerabilities, helping you keep your codebase up to date and secure.
+## CodeQL analysis: Find code problems automatically
 
-## Code scanning
+CodeQL is a smart code analysis tool that searches for problematic patterns in your code. It helps you find:
 
-Code scanning automatically scans code repositories for potential security vulnerabilities and coding errors, including code smells and anti-patterns, using a combination of static analysis techniques. It detects common security issues, such as cross-site scripting (XSS), SQL injection, and buffer overflows, which, similarly to CodeQL-based analysis, commonly indicate technical debt resulting from insecure coding practices. In addition, Security Code Scanning provides actionable insights into code quality and security risks, helping prioritize and address technical debt in the most efficient and effective manner.
+- Coding errors that slow down development
+- Design flaws that make code hard to maintain
+- Security vulnerabilities like injection attacks
+- Authentication and access control issues
+
+Think of CodeQL as a detective that looks for clues about potential problems in your codebase. It uses patterns to identify areas where technical debt might be hiding.
+
+## Dependency management: Keep your dependencies healthy
+
+Outdated dependencies are a common source of technical debt. GHAS dependency scanning helps you:
+
+- See all your project dependencies in one place
+- Find packages with security vulnerabilities
+- Identify outdated libraries that need updates
+- Check for licensing issues
+
+**Dependabot** automatically creates pull requests to update vulnerable dependencies. This saves you time and keeps your code secure without manual work.
+
+## Code scanning: Catch issues before they become debt
+
+Code scanning automatically checks your code for:
+
+- Security vulnerabilities (like XSS and SQL injection)
+- Code smells that indicate poor design
+- Anti-patterns that make code hard to maintain
+- Quality issues that slow down development
+
+Each scan provides clear, actionable recommendations. You'll see exactly what's wrong and how to fix it, helping you prioritize the most important issues first.
