@@ -32,7 +32,7 @@ abstract: |
 
   -   Onboard a Linux server.
 prerequisites: None
-iconUrl: /training/achievements/generic-badge.svg
+iconUrl: /training/achievements/microsoft-defender-module.svg
 levels:
 - intermediate
 roles:
@@ -53,4 +53,4 @@ units:
 - learn.wwl.configure-defender-cloud-azure-arc-enabled-servers.knowledge-check
 - learn.wwl.configure-defender-cloud-azure-arc-enabled-servers.summary
 badge:
-  uid: learn.wwl.configure-defender-cloud-azure-arc-enabled-servers.badge
+  uid: learn.wwl.configure-defender-cloud-azure-arc-enabled-servers.badge

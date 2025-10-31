@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.consolidate-duplicate-logic-github-copilot-agent.examine-code-extraction-refactoring-techniques
+title: Examine code extraction and refactoring techniques
+metadata:
+  title: Examine Code Extraction and Refactoring Techniques
+  description: Examine code extraction and refactoring techniques
+  ms.date: 10/14/2025
+  author: chrishowd
+  ms.author: cahowd
+  ms.topic: unit
+  ms.service: github-copilot
+durationInMinutes: 8
+content: |
+  [!include[](includes/3-examine-code-extraction-refactoring-techniques.md)]

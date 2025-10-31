@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.architect-scalable-ai-agent-solutions.reference-architecture
+title: Leverage reference architectures for improved efficiency
+metadata:
+  title: Leverage Reference Architectures for Improved Efficiency
+  description: Learn how to utilize reference architectures to enhance the efficiency and scalability of AI agent solutions on Azure.
+  ms.date: 10/1/2025
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/1-reference-architecture.md)]

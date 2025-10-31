@@ -11,8 +11,8 @@ metadata:
   ms.custom:
     - devx-track-azurecli
 durationInMinutes: 25
-interactive: bash
-azureSandbox: true
+#interactive: bash
+#azureSandbox: true
 content: |
   [!include[](includes/4-exercise-create-a-site-to-site-vpn-gateway-using-azure-cli-commands.md)]
 

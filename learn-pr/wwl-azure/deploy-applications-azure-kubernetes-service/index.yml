@@ -18,7 +18,7 @@ abstract: |
   -   Validate the effect of Azure Policy
 prerequisites: |
   None
-iconUrl: /training/achievements/generic-badge.svg
+iconUrl: /training/achievements/kubernetes-module.svg
 levels:
 - intermediate
 roles:
@@ -37,4 +37,4 @@ units:
 - learn.wwl.deploy-applications-azure-kubernetes-service.summary
 badge:
   uid: learn.wwl.deploy-applications-azure-kubernetes-service.badge
-
+

@@ -8,11 +8,11 @@ NumPy is a Python library that provides functionality comparable to mathematical
 
 Pandas is an extremely popular Python library for data analysis and manipulation. Pandas is like a spreadsheet application for Python, providing easy-to-use functionality for data tables.
 
-![Diagram of Pandas DF.](../media/2-pandas-df.png)
+![Diagram of a Pandas dataframe.](../media/2-pandas-df.png)
 
-## Explore data in a Jupyter notebook
+## Explore data in a notebook
 
-Jupyter notebooks are a popular way of running basic scripts using your web browser. Typically, these notebooks are a single webpage, broken up into text sections and code sections that are executed on the server rather than your local machine. By running code in Jupyter notebooks on a server, you can get started quickly without needing to install Python or other tools on your local computer.
+Notebooks are a popular way of running basic scripts using your web browser. Typically, these notebooks are a single webpage, broken up into text sections and code sections that can be run individually.
 
 ## Testing hypotheses
 

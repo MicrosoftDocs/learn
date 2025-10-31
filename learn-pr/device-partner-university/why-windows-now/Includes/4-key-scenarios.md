@@ -12,7 +12,7 @@ These factors help to determine the right messaging. Understanding how Windows 1
 
 Now let's explore the three key user scenarios for a Windows 11 device upgrade:
 
-- _Windows 10 End of Support (EOS)_: These users have a high volume of outdated Windows 10 devices. With Windows end of support fast approaching, it's important for them to recognize the urgent need to upgrade before support needs. This messaging highlights the security risks of not moving to Windows 11 and the productivity and performance benefits they gain by acting now.
+- _Windows 10 End of Support (EOS)_: These users have a high volume of outdated Windows 10 devices. With end of support behind us, it’s important they recognize the urgent need to upgrade. This messaging highlights the security risks of not moving to Windows 11 and the productivity and performance benefits they gain by acting now.
 
 - _Windows 11 Pro PC_: These users are actively moving to Windows 11, but they might still have some Windows 10 or older Windows 11 devices that need to be refreshed. Fortunately, they're motivated and tend to act on necessary updates. With Windows 11 Pro's core messaging, these users are encouraged to update their devices, which references all available devices (including Copilot+ PCs).
 

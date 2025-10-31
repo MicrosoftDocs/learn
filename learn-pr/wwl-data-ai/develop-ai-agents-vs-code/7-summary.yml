@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.develop-ai-agents-vs-code.summary
+title: Summary
+metadata:
+  title: Summary
+  description: Summarize what you've learned about developing AI agents using the Azure AI Foundry extension in Visual Studio Code.
+  author: buzahid
+  ms.author: buzahid
+  ms.date: 10/06/2025
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/7-summary.md)]
+

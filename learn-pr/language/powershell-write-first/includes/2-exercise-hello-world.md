@@ -1,16 +1,20 @@
 One of the best ways to learn to code is to write many tiny programs. Writing smaller programs gets you grounded in the fundamentals of programming and important techniques that you apply when you begin writing larger programs.
 
+[!INCLUDE[](../../../includes/azure-optional-exercise-subscription-note.md)]
+
+[!INCLUDE[](../../../includes/azure-cloud-shell-terminal-note.md)]
+
 ## Write your first lines of code
 
 In this exercise, you follow a longstanding tradition among software developers of printing the phrase "Hello World!" to a command line, or console window. You can learn a lot from even this basic exercise.
 
 ### Step 1: Type the code in Cloud Shell
 
-Azure Cloud Shell provides an in-browser experience to support our tutorial approach. Cloud Shell is at the right side of the webpage. It behaves like a normal PowerShell terminal window, but in a sandbox environment. You can type commands directly in the window, or you can run your previously written scripts and get the results in Cloud Shell.
+Azure Cloud Shell provides an in-browser experience to support our tutorial approach, and it behaves like a normal PowerShell terminal window. You can type commands directly in the window, or you can run your previously written scripts and get the results in Cloud Shell.
 
 In this module, you use a version of a code editor in Cloud Shell to write and run scripts.
 
-1. In the Cloud Shell terminal, type the following code:
+1. Open the [Azure Cloud Shell](https://shell.azure.com/) and type the following code:
 
     ```powershell
     New-Item HelloWorld.ps1

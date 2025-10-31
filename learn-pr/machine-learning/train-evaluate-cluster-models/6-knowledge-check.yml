@@ -4,7 +4,7 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: "Knowledge check"
-  ms.date: 09/07/2023
+  ms.date: 10/14/2025
   author: madiepev
   ms.author: madiepev
   ms.topic: unit
@@ -36,4 +36,4 @@ quiz:
       explanation: "Incorrect. The n_init parameter determines the number of times the algorithm will run with different initialization seeds."
     - content: "model = KMeans(max_iter=3)"
       isCorrect: false
-      explanation: "Incorrect. The max_iter parameter determines the maximum number of algorithm iterations used for cluster assignment."
+      explanation: "Incorrect. The max_iter parameter determines the maximum number of algorithm iterations used for cluster assignment."

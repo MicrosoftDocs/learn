@@ -1,64 +1,69 @@
-While SQL Server 2022 offers deployment, edition, and licensing options that are similar to previous releases of SQL Server, there are some differences that you learn about in this module.
+SQL Server 2025 introduces deployment, edition, and licensing options that support hybrid, cloud-native, and AI scenarios. This unit explores deployment methods, containerization features, and differences from earlier versions.
 
-## Deployment options for SQL Server 2022
+## Choose deployment options for SQL Server 2025
 
-Just like in SQL Server 2017 and SQL Server 2019, SQL Server 2022 can be deployed on Windows and Linux operating systems on computers, virtual machines, and in cloud virtual machine platforms. SQL Server 2022 can also be deployed using containers and on Kubernetes platforms.
+SQL Server 2025 expands deployment flexibility, supporting Windows and Linux operating systems, virtual machines, and a wide range of cloud platforms. New in this release are advanced containerization features, improved orchestration for Kubernetes and Azure Arc, and seamless integration with Azure for hybrid and multicloud scenarios.
 
-SQL Server 2022 is supported on Windows 10, Windows 11, and Windows Server. SQL Server 2022 for Linux is supported on Red Hat Enterprise Linux 8.0 - 8.5 Server, SUSE Enterprise Linux Server v15, and Ubuntu 20.04 LTS.
+Key deployment enhancements in SQL Server 2025 include:
 
-You can deploy SQL Server using the same methods as in previous versions. Including the Windows graphical setup wizard, command line options, Linux package managers, and container runtime engines, such as Docker. SQL Server 2022 is also available through Azure Virtual Machine marketplace images.
+- **Enhanced containerization**: Native support for containerized deployments with improved scalability, security, and orchestration using Kubernetes, Azure Arc, and other cloud-native tools.
+- **Cloud-native options**: Deploy SQL Server 2025 as a fully managed service in Azure, or in hybrid environments with unified management and monitoring.
+- **Immutable infrastructure**: Support for immutable deployments and automated scaling, making it easier to manage and update SQL Server instances in DevOps and CI/CD pipelines.
+- **Simplified provisioning**: Streamlined setup and configuration for both on-premises and cloud environments, with unified tooling and improved upgrade paths.
 
-## Editions for SQL Server 2022
+SQL Server 2025 is supported on the latest versions of Windows and Linux, and is available through Azure Marketplace images, container registries, and traditional installation methods.
 
-As with previous versions of SQL Server, SQL Server 2022 can be deployed using the following editions:
+## Compare editions of SQL Server 2025
 
-- **SQL Server Evaluation** edition can be used to evaluate all features of SQL Server 2022. There's a time limit of 180 days after you run setup. This edition doesn't require a paid license but can't be used for production.
+SQL Server 2025 offers editions to meet different requirements, with updates to support new features and deployment models:
 
-- **SQL Server Developer** edition can be used to test all features for your SQL Server 2022 application. There's no time limit for this edition and no paid license is required, but it can't be used for production.
+| Edition | Purpose | Key Limitations | Production Use |
+|---------|---------|-----------------|----------------|
+| Evaluation | Feature testing | 180-day limit | No |
+| Developer | Development and testing | None (feature-wise) | No |
+| Express | Basic applications | CPU, memory, database size limits | Yes |
+| Web | Web applications | Limited to web workloads | Yes |
+| Standard | General business use | Feature limitations | Yes |
+| Enterprise | Mission-critical systems | None | Yes |
 
-- **SQL Server Express** edition doesn't require a paid license and can be used in production. This edition contains many of the core capabilities of SQL Server 2022, but has limits on specific features and resources, such as CPU, memory, and database size.
+For a full list of capabilities for each edition, see [What's new in SQL Server 2025](/sql/sql-server/what-s-new-in-sql-server-2025).
 
-- **SQL Server Web** edition is a low total-cost-of-ownership option for Web hosters and Web Value Added Providers (VAPs) to provide scalability, affordability, and manageability capabilities for small to large-scale Web properties.
+## Understand licensing for SQL Server 2025
 
-- **SQL Server Standard** edition includes most of the core capabilities of SQL Server, along with a common surface area of features so that developers can access most SQL Server features from an application. SQL Server Standard edition doesn't include all SQL Server features and has some limitations for resources, such as CPU and memory.
+SQL Server 2025 paid editions are licensed per core, with options for Software Assurance (SA), and expanded support for pay-as-you-go and consumption-based models in Azure and hybrid environments.
 
-- **SQL Server Enterprise** edition includes all features and capabilities of SQL Server with unlimited access to resources, such as CPU and memory.
+## Identify feature differences from previous releases
 
-For more information, and a list of all the capabilities for each edition, see [Editions and supported features of SQL Server 2022](https://aka.ms/sql2022editions).
+SQL Server 2025 includes these key changes from previous releases:
 
-## Licensing for SQL Server 2022
-
-SQL Server 2022 paid editions are licensed on individual instances using models like per core, or with contract agreements such as Software Assurance (SA). SQL Server 2022 offers a new licensing model called pay-as-you-go. Learn more about all the licensing options for SQL Server 2022 at [SQL Server licensing](https://aka.ms/sqlserver2022licensing).
-
-## Feature differences for SQL Server 2022 from previous releases
-
-In future units, you learn about all the new features and capabilities in SQL Server 2022 compared to previous releases:
-
-- Cloud connected
-- Built-in query intelligence
-- Core engine
-- Data virtualization
-- Transact-SQL (T-SQL) enhancements
+- AI-powered analytics and built-in machine learning integration
+- Advanced cloud-connected and hybrid capabilities
+- Intelligent query processing and performance improvements
+- Enhanced security, compliance, and data protection
+- Expanded data virtualization and support for S3-compatible object storage
+- New T-SQL language features and developer productivity tools
 
 > [!TIP]
-> Stay up to date with all the latest release notes at [SQL Server 2022 release notes](https://aka.ms/sqlserver2022releasenotes).
+> Stay up to date with all the latest release notes at [SQL Server 2025 release notes](/sql/sql-server/sql-server-2025-release-notes).
 
-### Features removed or deprecated in SQL Server 2022
+### Features removed or deprecated in SQL Server 2025
 
-The following features that were available in previous releases were removed from SQL Server 2022:
+The following features are deprecated in SQL Server 2025:
 
-- R, Python, and Java runtimes - R, Python, and Java runtimes are no longer included as part of the setup for SQL Server 2022. The Machine Learning Services feature is still supported, but you must add your own packages that include the runtimes you need.
+- Legacy PolyBase Hadoop connectivity and scale-out groups (replaced by modern connectors and virtualization)
+- Machine Learning Server and bundled R/Python/Java runtimes (use external packages and services)
+- Distributed Replay (removed from setup)
+- Stretch Database (deprecated, to be removed in a future version)
+- Some legacy security and management features replaced by new unified management and compliance tools
 
-- Polybase Hadoop Connectivity with Java - The Polybase feature with Hadoop connectivity is removed from SQL Server 2022. You can still use Polybase services with ODBC drivers or new REST API based connectors for Azure Blob storage, Azure Data Lake Storage, or S3 compatible object storage.
+> [!TIP]
+> Review the [SQL Server feature comparison](/sql/sql-server/editions-and-components-of-sql-server-2025) documentation to understand detailed capabilities of each feature across editions.
 
-- Polybase scale out groups - The Polybase scale out group feature is removed from SQL Server 2022. Queries using external tables or OPENROWSET for data virtualization can take advantage of scale-up processing built into SQL Server.
+## Enable preview features
 
-- Machine Learning Server - The Machine Learning Server feature was retired in July of 2022 and is removed from the SQL Server setup.
+SQL Server 2025 provides a preview feature option to test upcoming capabilities before they become generally available. By enabling this option, you can experiment with innovations like vector indexing, enhanced text chunking, and change event streaming—without affecting your production workloads. This approach gives you the flexibility to test and evaluate new features in a safe, isolated way, bringing agility to your on-premises environment.
 
-- The Distributed Replay feature - Distributed Replay is no longer available to configure with the setup for SQL Server 2022 on Windows.
+Unlike traditional trace flags, which are mainly for debugging and affect the whole server, the preview feature switch is set at the database level. This means you can enable preview features for specific databases, allowing targeted experimentation while keeping the rest of your environment stable. Preview features are intended for evaluation and shouldn't be used in production, but the core database remains fully supported and stable even when preview features are enabled.
 
-- Stretch Database - Stretch Database is deprecated in SQL Server 2022. This feature will be removed in a future version of Microsoft SQL Server. Avoid using this feature in new development work, and plan to modify applications that currently use this feature.
-
-### New deployment experiences in SQL Server 2022
-
-In SQL Server 2022, the Azure extension for SQL Server configuration is part of the SQL Server 2022 setup experience. The Azure extension for SQL Server can be used to configure SQL Server 2022 as an Azure Arc-enabled SQL Server. There's no subscription charge to set up an Azure Arc-enabled SQL Server. You only incur subscription charges when you use specific Azure services such as Microsoft Entra authentication, Microsoft Purview, or Microsoft Defender for SQL.
+> [!IMPORTANT]
+> Preview features are not intended for production environments and may change before final release. Use them only in development or test environments.
