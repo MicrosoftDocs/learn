@@ -3,13 +3,13 @@ uid: learn.wwl.create-release-pipeline.choose-appropriate-artifact-source
 title: Choose the appropriate artifact source
 metadata:
   title: Choose the appropriate artifact source
-  description: "Choose the appropriate artifact source"
-  ms.date: 05/28/2024
-  author: wwlpublish
+  description: "Learn how to select the most suitable artifact source for your deployment scenarios."
+  ms.date: 10/01/2025
+  author: LuizMacedo
   ms.author: lumac
   ms.topic: unit
   ms.custom:
-  - N/A
+    - N/A
 durationInMinutes: 3
 content: |
-  [!include[](includes/5-choose-appropriate-artifact-source.md)]
+  [!include[](includes/5-choose-appropriate-artifact-source.md)]
