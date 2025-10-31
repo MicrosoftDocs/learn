@@ -130,7 +130,7 @@ By setting the default resource group, you can omit that parameter from the Azur
 Set-AzDefault -ResourceGroupName <ResourceGroupName>
 ```
 
-replace *<ResourceGroupName>* with your resource group name.
+replace *\<ResourceGroupName>* with your resource group name.
 
 Deploy the template to Azure by running the following commands. The ARM template doesn't have any resources yet, so there aren't any resources created.
 

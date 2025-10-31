@@ -70,7 +70,7 @@ By setting the default resource group, you can omit that parameter from the Azur
 az configure --defaults group="<resource-group-name>"
 ```
 
-Replace **<resource-group-name>** with the resource group name.
+Replace **\<resource-group-name>** with the resource group name.
 
 ### Deploy the template to Azure
 
@@ -137,7 +137,7 @@ By setting the default resource group, you can omit that parameter from the Azur
 Set-AzDefault -ResourceGroupName <ResourceGroupName>
 ```
 
-replace *<ResourceGroupName>* with your resource group name.
+replace *\<ResourceGroupName>* with your resource group name.
 
 ### Deploy the template to Azure
 
