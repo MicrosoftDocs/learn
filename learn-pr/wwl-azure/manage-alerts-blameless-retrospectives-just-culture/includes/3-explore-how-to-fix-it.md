@@ -17,7 +17,7 @@ Smart detection notifications provide three types of critical information to gui
 - **Percentage of total traffic:** What portion of your overall traffic is affected.
 - **Time range:** When the degradation started and how long it has persisted.
 
-**Using triage data for prioritization:** High user impact combined with significant degradation severity requires immediate attention. Issues affecting small percentages of traffic or users might be investigated during normal working hours. Consider business context when prioritizing. For example, degradation affecting your checkout process deserves higher priority than degradation affecting a rarely-used admin page, even if fewer total users are affected.
+**Using triage data for prioritization:** High user impact combined with significant degradation severity requires immediate attention. Issues affecting small percentages of traffic or users might be investigated during normal working hours. Consider business context when prioritizing. For example, degradation affecting your checkout process deserves higher priority than degradation affecting a rarely used admin page, even if fewer total users are affected.
 
 ### Scope information
 
