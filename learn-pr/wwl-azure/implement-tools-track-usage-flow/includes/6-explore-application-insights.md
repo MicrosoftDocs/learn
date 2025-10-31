@@ -8,7 +8,7 @@ You install a small **instrumentation package** in your application and set up a
 
 **1. Create Application Insights resource:**
 
-- Navigate to Azure Portal and create an Application Insights resource
+- Navigate to Azure portal and create an Application Insights resource
 - Obtain the **Instrumentation Key** or **Connection String**
 - Resource can be standalone or linked to a Log Analytics workspace
 
@@ -68,7 +68,7 @@ Application Insights provides **multiple telemetry sources** for complete observ
 
 **Unified analysis:**
 
-- All these telemetry streams are **integrated into the Azure Portal**
+- All these telemetry streams are **integrated into the Azure portal**
 - Apply powerful **analytic and search tools** to the raw data
 - Use KQL to query across all telemetry types
 - Correlate events from different sources using operation IDs

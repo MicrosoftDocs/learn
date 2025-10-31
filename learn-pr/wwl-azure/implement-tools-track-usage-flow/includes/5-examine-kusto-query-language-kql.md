@@ -31,7 +31,7 @@
 
 **Tools for writing KQL queries:**
 
-**1. Azure Portal:**
+**1. Azure portal:**
 
 - Integrated directly in Log Analytics workspace
 - IntelliSense and syntax highlighting
@@ -579,7 +579,7 @@ We strongly encourage you to **explore the advanced tutorials** available for Lo
 
 **Community resources:**
 
-- KQL query samples in Azure Portal
+- KQL query samples in Azure portal
 - GitHub repositories with example queries
 - Stack Overflow for troubleshooting
 - Azure Monitor community forums

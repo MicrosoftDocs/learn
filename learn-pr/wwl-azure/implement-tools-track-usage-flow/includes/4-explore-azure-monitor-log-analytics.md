@@ -500,7 +500,7 @@ To generate **performance statistics** for observation in Log Analytics, downloa
 5. **Increase load:** CPU 80%, Memory 70% for 5 minutes
 6. **Run heavy load:** CPU 95%, Memory 85% for 5 minutes
 7. **Stop load:** Allow system to return to baseline for 5-10 minutes
-8. **Query data:** Return to Azure Portal after 10-15 minutes (data latency) to query results
+8. **Query data:** Return to Azure portal after 10-15 minutes (data latency) to query results
 
 **Data ingestion latency:**
 

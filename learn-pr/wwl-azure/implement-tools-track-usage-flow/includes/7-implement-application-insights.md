@@ -261,7 +261,7 @@ There are **several ways to get started**. Begin with whichever works best for y
 
 **[Azure web app or VM](/azure/azure-monitor/app/azure-vm-vmss-apps):**
 
-- Enable Application Insights through Azure Portal
+- Enable Application Insights through Azure portal
 - One-click integration for Azure App Service
 - VM extension for Azure Virtual Machines
 - Automatic instrumentation with zero code changes
