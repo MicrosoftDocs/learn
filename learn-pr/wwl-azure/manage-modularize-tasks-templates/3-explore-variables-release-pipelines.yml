@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.manage-modularize-tasks-templates.explore-variables-release-pipelines
-title: Explore Variables in Release Pipelines
+title: Explore Variables in release pipelines
 metadata:
   title: Explore Variables in Release Pipelines
   description: "Understand variable scoping, inheritance, and configuration management across release pipeline stages and environments"

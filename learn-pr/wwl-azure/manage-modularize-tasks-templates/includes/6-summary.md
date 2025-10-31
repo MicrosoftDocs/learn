@@ -1,4 +1,4 @@
-This module explored comprehensive approaches to task group creation, variable group management, custom task development, and advanced variable configuration strategies for modular Azure DevOps pipeline architectures.
+This module explored comprehensive approaches to task group creation, variable group management, custom task development, and advanced variable configuration strategies for modular Azure pipeline architectures.
 
 Key learning outcomes include implementation strategies and best practices for:
 

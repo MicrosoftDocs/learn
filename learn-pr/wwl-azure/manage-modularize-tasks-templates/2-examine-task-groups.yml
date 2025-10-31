@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.manage-modularize-tasks-templates.examine-task-groups
-title: Examine Task Groups
+title: Examine task groups
 metadata:
   title: Examine Task Groups
   description: "Learn how to create and manage task groups for reusable pipeline components and modular DevOps workflows"
