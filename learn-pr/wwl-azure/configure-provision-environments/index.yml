@@ -1,64 +1,69 @@
 ### YamlMime:Module
 uid: learn.wwl.configure-provision-environments
 metadata:
-  title: Provision and test environments
-  description: "Provision and test environments"
-  ms.date: 05/06/2024
-  author: wwlpublish
+  title: Configure and Provision Environments
+  description: "Learn environment provisioning, service connection configuration, and automated testing infrastructure setup."
+  ms.date: 10/01/2025
+  author: LuizMacedo
   ms.author: lumac
   ms.topic: module
   ms.custom:
-  - N/A
+    - N/A
   ms.service: azure-devops
-  ai-usage: human-only
-title: Provision and test environments
-summary: This module details target environment provisioning, service connections creation process, and test infrastructure setup. Learn how to configure functional test automation and run availability tests.
+  ai-usage: ai-assisted
+title: Configure and Provision Environments
+summary: Learn target environment provisioning, service connection configuration, and test infrastructure setup. Configure functional test automation and implement availability testing strategies.
 abstract: |
   By the end of this module, you're able to:
 
-  -   Provision and configure target environment.
+  -   Provision and configure target environments for deployment workflows.
 
-  -   Deploy to an environment securely using a service connection.
+  -   Deploy securely to environments using service connections.
 
-  -   Configure functional test automation and run availability tests.
+  -   Configure functional test automation and implement availability testing.
 
-  -   Setup test infrastructure.
+  -   Set up comprehensive test infrastructure for quality assurance.
 prerequisites: None
 iconUrl: /training/achievements/2-configure-and-provision-environments.svg
 levels:
-- advanced
+  - advanced
 roles:
-- administrator
-- developer
-- devops-engineer
-- security-engineer
-- security-operations-analyst
-- service-adoption-specialist
-- solution-architect
-- technology-manager
+  - administrator
+  - ai-engineer
+  - data-engineer
+  - developer
+  - devops-engineer
+  - platform-engineer
+  - security-engineer
+  - security-operations-analyst
+  - service-adoption-specialist
+  - solution-architect
+  - startup-founder
+  - technology-manager
 products:
-- azure
-- azure-artifacts
-- azure-boards
-- azure-cloud-services
-- azure-devops
-- azure-pipelines
-- azure-repos
-- azure-test-plans
-- github
+  - azure
+  - azure-artifacts
+  - azure-boards
+  - azure-cloud-services
+  - azure-devops
+  - azure-pipelines
+  - azure-repos
+  - azure-test-plans
+  - github
 subjects:
-- cloud-security
-- data-engineering
+  - devops
+  - cloud-security
+  - data-engineering
 units:
-- learn.wwl.configure-provision-environments.introduction
-- learn.wwl.configure-provision-environments.provision-configure-target-environments
-- learn.wwl.configure-provision-environments.exercise-set-up-service-connections
-- learn.wwl.configure-provision-environments.configure-automated-integration-functional-test-automation
-- learn.wwl.configure-provision-environments.understand-shift-left
-- learn.wwl.configure-provision-environments.set-up-run-availability-tests
-- learn.wwl.configure-provision-environments.explore-azure-load-testing
-- learn.wwl.configure-provision-environments.set-up-run-functional-tests
-- learn.wwl.configure-provision-environments.knowledge-check
-- learn.wwl.configure-provision-environments.summary
+  - learn.wwl.configure-provision-environments.introduction
+  - learn.wwl.configure-provision-environments.provision-configure-target-environments
+  - learn.wwl.configure-provision-environments.exercise-set-up-service-connections
+  - learn.wwl.configure-provision-environments.configure-automated-integration-functional-test-automation
+  - learn.wwl.configure-provision-environments.understand-shift-left
+  - learn.wwl.configure-provision-environments.set-up-run-availability-tests
+  - learn.wwl.configure-provision-environments.explore-azure-load-testing
+  - learn.wwl.configure-provision-environments.set-up-run-functional-tests
+  - learn.wwl.configure-provision-environments.knowledge-check
+  - learn.wwl.configure-provision-environments.summary
 badge:
-  uid: learn.wwl.configure-provision-environments.badge
+  uid: learn.wwl.configure-provision-environments.badge

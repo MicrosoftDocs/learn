@@ -4,12 +4,12 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: "Knowledge check"
-  ms.date: 05/13/2024
-  author: wwlpublish
+  ms.date: 10/28/2025
+  author: LuizMacedo
   ms.author: lumac
   ms.topic: unit
   ms.custom:
-  - N/A
+    - N/A
   module_assessment: true
 durationInMinutes: 5
 content: |
@@ -17,36 +17,87 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Which of the following choices is a monitoring service that can provide threat protection and security recommendations across all your services in Azure and on-premises?"
-    choices:
-    - content: "Azure Policy."
-      isCorrect: false
-      explanation: "Incorrect. Microsoft Defender is a monitoring service that provides threat protection across all your services in Azure and on-premises."
-    - content: "Microsoft Defender."
-      isCorrect: true
-      explanation: "Correct. Microsoft Defender is a monitoring service that provides threat protection across all your services in Azure and on-premises."
-    - content: "Azure Key Vault."
-      isCorrect: false
-      explanation: "Incorrect. Microsoft Defender is a monitoring service that provides threat protection across all your services in Azure and on-premises."
-  - content: "Which of the following choices can you use to create, assign and manage policies?"
-    choices:
-    - content: "Azure Machine Learning."
-      isCorrect: false
-      explanation: "Incorrect. Azure Policy is a service in Azure that you use to create, assign, and manage policies. These policies enforce different rules and effects on your resources, ensuring they stay compliant with your corporate standards and service-level agreements (SLAs)."
-    - content: "Microsoft Defender."
-      isCorrect: false
-      explanation: "Incorrect. Azure Policy is a service in Azure that you use to create, assign, and manage policies. These policies enforce different rules and effects on your resources, ensuring they stay compliant with your corporate standards and service-level agreements (SLAs)."
-    - content: "Azure Policy."
-      isCorrect: true
-      explanation: "Correct. Azure Policy is a service in Azure that you use to create, assign, and manage policies. These policies enforce different rules and effects on your resources, ensuring they stay compliant with your corporate standards and service-level agreements (SLAs)."
-  - content: "Which of the following choices is a tool to prevent accidental deletion of Azure resources?"
-    choices:
-    - content: "Locks."
-      isCorrect: true
-      explanation: "Correct. Locks help you prevent accidental deletion or modification of your Azure resources. You can manage these locks from within the Azure portal."
-    - content: "Policy."
-      isCorrect: false
-      explanation: "Incorrect. Locks help you prevent accidental deletion or modification of your Azure resources. You can manage these locks from within the Azure portal."
-    - content: "Key Vault."
-      isCorrect: false
-      explanation: "Incorrect. Locks help you prevent accidental deletion or modification of your Azure resources. You can manage these locks from within the Azure portal."
+    - content: "Which Azure Key Vault access method is recommended for CI/CD pipelines to minimize credential exposure?"
+      choices:
+        - content: "Storing connection strings in pipeline variables."
+          isCorrect: false
+          explanation: "Incorrect. Service connections with managed identities provide passwordless authentication eliminating stored credentials and minimizing exposure."
+        - content: "Using service connections with managed identities."
+          isCorrect: true
+          explanation: "Correct. Service connections with managed identities provide passwordless authentication to Azure Key Vault eliminating credential storage and reducing security risks."
+        - content: "Embedding access keys in pipeline YAML files."
+          isCorrect: false
+          explanation: "Incorrect. Embedding credentials in code creates security vulnerabilities. Service connections with managed identities eliminate this risk."
+        - content: "Sharing Key Vault credentials across multiple pipelines."
+          isCorrect: false
+          explanation: "Incorrect. Credential sharing violates least privilege principles. Managed identities provide secure per-pipeline authentication."
+    - content: "What is the primary difference between Cloud Security Posture Management (CSPM) and Cloud Workload Protection (CWP) in Microsoft Defender for Cloud?"
+      choices:
+        - content: "CSPM focuses on real-time threat detection while CWP provides configuration recommendations."
+          isCorrect: false
+          explanation: "Incorrect. This description reverses the roles. CSPM assesses configuration security posture while CWP provides runtime threat protection."
+        - content: "CSPM assesses configuration security posture while CWP provides runtime threat protection."
+          isCorrect: true
+          explanation: "Correct. CSPM evaluates resource configurations and provides security recommendations, while CWP delivers real-time threat detection and response for running workloads."
+        - content: "CSPM monitors on-premises resources while CWP protects cloud resources."
+          isCorrect: false
+          explanation: "Incorrect. Both CSPM and CWP apply to multicloud and hybrid environments. The distinction is assessment versus protection."
+        - content: "CSPM generates compliance reports while CWP performs vulnerability scanning."
+          isCorrect: false
+          explanation: "Incorrect. Both contribute to compliance and vulnerability management. The primary difference is configuration assessment versus runtime protection."
+    - content: "Which Azure Policy effect should be used to automatically remediate non-compliant resources by deploying missing configurations?"
+      choices:
+        - content: "Deny."
+          isCorrect: false
+          explanation: "Incorrect. Deny blocks non-compliant deployments but does not deploy missing configurations. DeployIfNotExists provides automatic remediation."
+        - content: "Audit."
+          isCorrect: false
+          explanation: "Incorrect. Audit logs compliance violations without enforcement or remediation. DeployIfNotExists automatically deploys missing configurations."
+        - content: "DeployIfNotExists."
+          isCorrect: true
+          explanation: "Correct. DeployIfNotExists automatically deploys missing configurations such as diagnostic settings, monitoring agents, or encryption when resources do not meet compliance requirements."
+        - content: "Modify."
+          isCorrect: false
+          explanation: "Incorrect. Modify updates existing resource properties. DeployIfNotExists creates new related resources like diagnostic settings or agents."
+    - content: "What happens when a ReadOnly resource lock is applied to an Azure storage account?"
+      choices:
+        - content: "Users can read and update storage account configuration but cannot delete the account."
+          isCorrect: false
+          explanation: "Incorrect. ReadOnly locks prevent both updates and deletion. Only read operations are permitted."
+        - content: "Users can read data but cannot update configuration or delete the account."
+          isCorrect: true
+          explanation: "Correct. ReadOnly locks allow read operations while preventing all write operations including configuration updates and resource deletion."
+        - content: "Users cannot access the storage account until the lock is removed."
+          isCorrect: false
+          explanation: "Incorrect. ReadOnly locks do not prevent read access. Users can read data but cannot modify or delete resources."
+        - content: "Users can update data but cannot change storage account access keys."
+          isCorrect: false
+          explanation: "Incorrect. ReadOnly locks prevent all write operations including data updates and key regeneration."
+    - content: "Which Microsoft Defender for Identity capability helps map identity attacks to the MITRE ATT&CK framework?"
+      choices:
+        - content: "Automatic alert correlation grouping related suspicious activities into incidents."
+          isCorrect: false
+          explanation: "Incorrect. While alert correlation is valuable, security alert categorization with MITRE tactics and techniques provides the ATT&CK framework mapping."
+        - content: "Security alert categorization with MITRE tactics and techniques."
+          isCorrect: true
+          explanation: "Correct. Defender for Identity categorizes security alerts using MITRE ATT&CK framework tactics (credential access, lateral movement, domain dominance) and techniques enabling structured threat analysis."
+        - content: "Defender portal unified investigation interface."
+          isCorrect: false
+          explanation: "Incorrect. The unified interface aids investigation but alert categorization with MITRE framework provides the ATT&CK mapping."
+        - content: "Domain controller sensor network traffic monitoring."
+          isCorrect: false
+          explanation: "Incorrect. Sensors collect data but security alert categorization with MITRE framework maps attacks to ATT&CK tactics and techniques."
+    - content: "What is the primary benefit of integrating GitHub Advanced Security with Microsoft Defender for Cloud?"
+      choices:
+        - content: "Automatically fixing all code vulnerabilities detected in repositories."
+          isCorrect: false
+          explanation: "Incorrect. Integration provides visibility and recommendations but does not automatically fix vulnerabilities. Unified security visibility is the primary benefit."
+        - content: "Providing unified security visibility across code repositories and cloud infrastructure."
+          isCorrect: true
+          explanation: "Correct. Integration delivers centralized security dashboard showing code vulnerabilities, infrastructure risks, and runtime threats enabling comprehensive DevSecOps security management."
+        - content: "Eliminating need for GitHub Advanced Security licenses for private repositories."
+          isCorrect: false
+          explanation: "Incorrect. Licensing requirements remain unchanged. Integration provides unified visibility not license changes."
+        - content: "Replacing GitHub code scanning with Defender vulnerability scanning."
+          isCorrect: false
+          explanation: "Incorrect. Integration aggregates findings from both platforms rather than replacing GitHub code scanning capabilities."
