@@ -3,8 +3,8 @@ uid: learn.wwl.plan-agile-github-projects-azure-boards
 metadata:
   title: Plan Agile with GitHub Projects and Azure Boards
   description: "Plan Agile with GitHub Projects and Azure Boards"
-  ms.date: 05/24/2024
-  author: wwlpublish
+  ms.date: 09/02/2025
+  author: LuizMacedo
   ms.author: lumac
   ms.topic: module
   ms.service: azure
@@ -24,40 +24,40 @@ abstract: |
 prerequisites: None
 iconUrl: /training/achievements/plan-agile-github-projects-azure-boards.svg
 levels:
-- advanced
+  - advanced
 roles:
-- administrator
-- developer
-- devops-engineer
-- security-engineer
-- security-operations-analyst
-- service-adoption-specialist
-- solution-architect
-- technology-manager
+  - administrator
+  - developer
+  - devops-engineer
+  - security-engineer
+  - security-operations-analyst
+  - service-adoption-specialist
+  - solution-architect
+  - technology-manager
 products:
-- azure
-- azure-artifacts
-- azure-boards
-- azure-cloud-services
-- azure-devops
-- azure-pipelines
-- azure-repos
-- azure-test-plans
-- github
+  - azure
+  - azure-artifacts
+  - azure-boards
+  - azure-cloud-services
+  - azure-devops
+  - azure-pipelines
+  - azure-repos
+  - azure-test-plans
+  - github
 units:
-- learn.wwl.plan-agile-github-projects-azure-boards.introduction
-- learn.wwl.plan-agile-github-projects-azure-boards.introduction-to-project-boards
-- learn.wwl.plan-agile-github-projects-azure-boards.introduction-to-azure-boards
-- learn.wwl.plan-agile-github-projects-azure-boards.configure-projects-teams-azure-devops
-- learn.wwl.plan-agile-github-projects-azure-boards.link-github-to-azure-boards
-- learn.wwl.plan-agile-github-projects-azure-boards.configure
-- learn.wwl.plan-agile-github-projects-azure-boards.manage-work-github-project-boards
-- learn.wwl.plan-agile-github-projects-azure-boards.customize-project-views
-- learn.wwl.plan-agile-github-projects-azure-boards.collaborate-using-team-discussions
-- learn.wwl.plan-agile-github-projects-azure-boards.design-implement-strategy-feedback-cycles
-- learn.wwl.plan-agile-github-projects-azure-boards.design-implement-source-bug-quality-traceability
-- learn.wwl.plan-agile-github-projects-azure-boards.agile-plan-portfolio-management-azure-boards
-- learn.wwl.plan-agile-github-projects-azure-boards.knowledge-check
-- learn.wwl.plan-agile-github-projects-azure-boards.summary
+  - learn.wwl.plan-agile-github-projects-azure-boards.introduction
+  - learn.wwl.plan-agile-github-projects-azure-boards.introduction-to-project-boards
+  - learn.wwl.plan-agile-github-projects-azure-boards.introduction-to-azure-boards
+  - learn.wwl.plan-agile-github-projects-azure-boards.configure-projects-teams-azure-devops
+  - learn.wwl.plan-agile-github-projects-azure-boards.link-github-to-azure-boards
+  - learn.wwl.plan-agile-github-projects-azure-boards.configure
+  - learn.wwl.plan-agile-github-projects-azure-boards.manage-work-github-project-boards
+  - learn.wwl.plan-agile-github-projects-azure-boards.customize-project-views
+  - learn.wwl.plan-agile-github-projects-azure-boards.collaborate-using-team-discussions
+  - learn.wwl.plan-agile-github-projects-azure-boards.design-implement-strategy-feedback-cycles
+  - learn.wwl.plan-agile-github-projects-azure-boards.design-implement-source-bug-quality-traceability
+  - learn.wwl.plan-agile-github-projects-azure-boards.agile-plan-portfolio-management-azure-boards
+  - learn.wwl.plan-agile-github-projects-azure-boards.knowledge-check
+  - learn.wwl.plan-agile-github-projects-azure-boards.summary
 badge:
-  uid: learn.wwl.plan-agile-github-projects-azure-boards.badge
+  uid: learn.wwl.plan-agile-github-projects-azure-boards.badge
