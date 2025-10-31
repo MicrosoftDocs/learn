@@ -11,7 +11,7 @@ metadata:
     - N/A
   ms.service: azure-devops
   ai-usage: ai-assisted
-title: Manage Azure Pipeline agents And pools
+title: Manage Azure Pipeline agents and pools
 summary: This module explores the differences between Microsoft-hosted and self-hosted agents, details job types, and configures agent pools. Understand typical situations to use agent pools and how to manage their security.
 abstract: |
   By the end of this module, you're able to:
