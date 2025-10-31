@@ -2,14 +2,14 @@
 uid: learn.wwl.security-monitoring-and-governance.examine-microsoft-defender-cloud-usage-scenarios
 title: Examine Microsoft Defender for Cloud usage scenarios
 metadata:
-  title: Examine Microsoft Defender for Cloud usage scenarios
-  description: "Examine Microsoft Defender for Cloud usage scenarios"
-  ms.date: 05/13/2024
-  author: wwlpublish
+  title: Examine Microsoft Defender for Cloud Usage Scenarios
+  description: "Examine practical Microsoft Defender for Cloud usage scenarios including incident response, regulatory compliance, Secure Score improvement, container security, DevSecOps pipeline integration, and vulnerability management."
+  ms.date: 10/28/2025
+  author: LuizMacedo
   ms.author: lumac
   ms.topic: unit
   ms.custom:
-  - N/A
-durationInMinutes: 3
+    - N/A
+durationInMinutes: 13
 content: |
-  [!include[](includes/4-examine-microsoft-defender-cloud-usage-scenarios.md)]
+  [!include[](includes/4-examine-microsoft-defender-cloud-usage-scenarios.md)]
