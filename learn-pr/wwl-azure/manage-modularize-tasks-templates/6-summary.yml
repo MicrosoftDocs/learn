@@ -3,13 +3,13 @@ uid: learn.wwl.manage-modularize-tasks-templates.summary
 title: Summary
 metadata:
   title: Summary
-  description: "Summary"
-  ms.date: 05/21/2024
-  author: wwlpublish
+  description: "Summary of task group management, variable group configuration, and custom task development for modular DevOps pipelines"
+  ms.date: 10/01/2025
+  author: LuizMacedo
   ms.author: lumac
   ms.topic: unit
   ms.custom:
-  - N/A
-durationInMinutes: 1
+    - N/A
+durationInMinutes: 2
 content: |
-  [!include[](includes/6-summary.md)]
+  [!include[](includes/6-summary.md)]
