@@ -22,7 +22,7 @@ prerequisites: |
   - [Node.js LTS](https://nodejs.org/)
   - [GitHub](https://github.com) account
   - [Visual Studio Code](https://code.visualstudio.com)
-  - An Azure subscription. Sign up for a [free account](https://azure.microsoft.com/free/) or [Azure for Students](https://azure.microsoft.com/free/students/)
+  - An Azure subscription. Sign up for a [free account](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn) or [Azure for Students](https://azure.microsoft.com/free/students/?cid=msft_learn).
 iconUrl: /training/achievements/publish-static-web-app-and-api.svg
 levels:
   - beginner
