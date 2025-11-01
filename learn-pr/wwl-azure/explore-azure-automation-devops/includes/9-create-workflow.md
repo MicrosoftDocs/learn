@@ -8,28 +8,28 @@ When you create your workflow, begin with the **workflow** keyword, which identi
 
 ### Creating a workflow
 
-1.  A workflow is a **Windows** command type, so select a name with a **verb-noun** format:
+A workflow is a **Windows** command type, so select a name with a **verb-noun** format:
 
-    ```powershell
-    workflow Test-Workflow
-      {
-          ...
-      }
+```powershell
+workflow Test-Workflow
+  {
+      ...
+  }
 
     ```
 
 ### Adding parameters
 
-1. To add parameters to a workflow, use the **Param** keyword. It's the same technique that you use to add parameters to a function.
+To add parameters to a workflow, use the **Param** keyword. It's the same technique that you use to add parameters to a function.
 
 ### Adding commands
 
-1. Finally, add your standard **PowerShell** commands:
+Finally, add your standard **PowerShell** commands:
 
-    ```powershell
-    workflow MyFirstRunbook-Workflow
-      {
-          Param(
+```powershell
+workflow MyFirstRunbook-Workflow
+  {
+      Param(
                 [string]$VMName,
                 [string]$ResourceGroupName
             )
