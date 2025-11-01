@@ -114,10 +114,10 @@ steps:
 
 ### Security considerations
 
-1. **Pin critical actions**: Use SHA references for deployment and security-sensitive actions
-2. **Review updates**: Test new versions in non-production environments first
-3. **Monitor dependencies**: Use tools like Dependabot to track action updates
-4. **Audit action sources**: Only use actions from trusted publishers
+- **Pin critical actions**: Use SHA references for deployment and security-sensitive actions
+- **Review updates**: Test new versions in non-production environments first
+- **Monitor dependencies**: Use tools like Dependabot to track action updates
+- **Audit action sources**: Only use actions from trusted publishers
 
 ### Update management workflow
 
@@ -158,7 +158,7 @@ Practice action development with GitHub's interactive tutorials:
 
 - **[act](https://github.com/nektos/act)**: Run GitHub Actions locally for rapid testing
 - **[GitHub CLI](https://cli.github.com/)**: Interact with Actions via command line
-- **Action debugging**: Use `tmate` action for interactive SSH debugging sessions
+- **Action debugging**: Use the `tmate` action for interactive SSH debugging sessions
 
 ### Testing checklist
 

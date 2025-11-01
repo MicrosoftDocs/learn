@@ -2,7 +2,7 @@ Jobs are the building blocks of GitHub Actions workflows. Each job is a collecti
 
 ## Understanding job execution
 
-### Key characteristics of jobs:
+### Key characteristics of jobs
 
 - **Sequential steps**: Steps within a job run one after another
 - **Shared environment**: All steps share the same runner and filesystem
@@ -160,11 +160,11 @@ jobs:
 
 ## Best practices for jobs
 
-1. **Keep jobs focused**: Each job should have a single responsibility
-2. **Use descriptive names**: Make job purposes clear in the workflow UI
-3. **Optimize dependencies**: Only create dependencies when truly necessary
-4. **Choose appropriate runners**: Match runner OS to your application needs
-5. **Handle failures gracefully**: Use conditional execution and continue-on-error strategically
-6. **Share data efficiently**: Use artifacts or outputs to pass data between jobs
+- **Keep jobs focused**: Each job should have a single responsibility
+- **Use descriptive names**: Make job purposes clear in the workflow UI
+- **Optimize dependencies**: Only create dependencies when truly necessary
+- **Choose appropriate runners**: Match runner OS to your application needs
+- **Handle failures gracefully**: Use conditional execution and continue-on-error strategically
+- **Share data efficiently**: Use artifacts or outputs to pass data between jobs
 
 For comprehensive job configuration options, see [Using jobs in a workflow](https://docs.github.com/actions/using-jobs).
