@@ -22,7 +22,8 @@ GitHub provides two distinct runner options, each suited for different scenarios
 
 ## Security considerations
 
-**Important Security Warning**: Never use self-hosted runners with public repositories. This creates a serious security vulnerability where malicious actors could execute code on your infrastructure through pull requests.
+> [!IMPORTANT]
+> Never use self-hosted runners with public repositories. This creates a serious security vulnerability where malicious actors could execute code on your infrastructure through pull requests.
 
 **Safe usage patterns**:
 
@@ -63,7 +64,8 @@ Each runner comes with a comprehensive set of development tools:
 - **Windows**: PowerShell, Visual Studio Build Tools, Windows SDK
 - **macOS**: Xcode, Homebrew, CocoaPods
 
-**Pro tip**: Check the complete software inventory at the [runner images repository](https://github.com/actions/runner-images) or view the "Set up job" section in your workflow logs.
+> [!TIP]
+> Check the complete software inventory at the [runner images repository](https://github.com/actions/runner-images) or view the "Set up job" section in your workflow logs.
 
 ### Usage limits and considerations
 

@@ -87,7 +87,8 @@ on:
         type: string
 ```
 
-**Note:** The workflow file must exist in the default branch to appear in the manual trigger UI.
+> [!NOTE]
+> The workflow file must exist in the default branch to appear in the manual trigger UI.
 
 ## Webhook events
 
@@ -129,10 +130,10 @@ curl -X POST \
 
 ## Best practices for events
 
-1. **Be specific**: Use branch and path filters to avoid unnecessary runs
-2. **Combine related events**: Group similar triggers in one workflow
-3. **Use appropriate event types**: Choose the most specific event type for your needs
-4. **Test manually first**: Use `workflow_dispatch` during development
-5. **Monitor usage**: Review workflow runs to optimize event configuration
+- **Be specific**: Use branch and path filters to avoid unnecessary runs
+- **Combine related events**: Group similar triggers in one workflow
+- **Use appropriate event types**: Choose the most specific event type for your needs
+- **Test manually first**: Use `workflow_dispatch` during development
+- **Monitor usage**: Review workflow runs to optimize event configuration
 
 For complete event documentation, see [Events that trigger workflows](https://docs.github.com/actions/learn-github-actions/events-that-trigger-workflows).
