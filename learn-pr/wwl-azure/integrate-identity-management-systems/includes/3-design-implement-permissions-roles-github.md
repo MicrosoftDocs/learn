@@ -1,10 +1,4 @@
-GitHub role-based ## GitHub Enterprise organizations
-
-GitHub Enterprise architectures introduce elevated role classifications transcending standard personal account and organizational capabilities, delivering enterprise-scale functionality:
-
-- **Enterprise owners:** Exercise comprehensive enterprise control encompassing administrator management, organizational membership administration, policy enforcement, and billing configuration governance.
-- **Enterprise members:** Automatically inherit organizational membership across enterprise-owned organizations enabling intra-organizational collaboration. Enterprise members lack enterprise configuration access with repository visibility constrained to internal classification within enterprise boundaries.
-- **Guest collaborators:** Facilitate restricted organizational internal repository access for external vendors and contractors, implementing access constraints aligned with organizational permission policies.control architectures across personal accounts, organizations, and enterprise tiers implement hierarchical permission models governing repository, project, and configuration access patterns. Role structures enable collaborative workflows and governance enforcement, with personal accounts providing single-user repository control while organizational and enterprise models facilitate granular responsibility delegation aligned with information technology departmental structures.
+GitHub role-based control architectures across personal accounts, organizations, and enterprise tiers implement hierarchical permission models governing repository, project, and configuration access patterns. Role structures enable collaborative workflows and governance enforcement, with personal accounts providing single-user repository control while organizational and enterprise models facilitate granular responsibility delegation aligned with information technology departmental structures.
 
 ## Personal GitHub accounts
 
