@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.design-container-build-strategy.examine-considerations-for-multiple-stage-builds
-title: Examine Considerations for Multiple Stage Builds
+title: Examine considerations for multiple stage builds
 metadata:
-  title: Examine Considerations for Multiple Stage Builds
+  title: Examine considerations for multiple stage builds
   description: "Evaluate when and how to implement multi-stage builds effectively"
   ms.date: 09/26/2025
   author: LuizMacedo

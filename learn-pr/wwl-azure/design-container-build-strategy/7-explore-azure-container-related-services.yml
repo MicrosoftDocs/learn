@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.design-container-build-strategy.explore-azure-container-related-services
-title: Explore Azure Container-Related Services
+title: Explore Azure container-related services
 metadata:
-  title: Explore Azure Container-Related Services
+  title: Explore Azure container-related services
   description: "Discover Azure container services including Container Registry, App Service, and AKS"
   ms.date: 09/26/2025
   author: LuizMacedo

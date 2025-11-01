@@ -11,7 +11,7 @@ metadata:
     - N/A
   ai-usage: ai-assisted
   ms.service: azure-devops-pipelines
-title: Design a Container Build Strategy
+title: Design a container build strategy
 summary: Learn to plan container build strategies, work with Docker containers, and deploy containerized applications using Azure services.
 abstract: |
   In this module, you will:

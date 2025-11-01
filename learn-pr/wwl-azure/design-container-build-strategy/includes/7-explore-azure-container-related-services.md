@@ -20,7 +20,7 @@ Managed Kubernetes orchestration service for complex containerized applications.
 - Automated cluster management and updates
 - Built-in security and monitoring
 - Auto-scaling and load balancing
-- Integration with Azure Active Directory and RBAC
+- Integration with Microsoft Entra ID and RBAC
 - Support for Windows and Linux node pools
 
 ## Azure Container Registry (ACR)

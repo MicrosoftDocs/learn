@@ -11,7 +11,7 @@ echo $HOME'
 CMD ["echo", "Hello World from within the container"]
 ```
 
-## Key Dockerfile Instructions
+## Key Dockerfile instructions
 
 **FROM** - Specifies the base image for the new container image. Most images inherit from existing base images; use `FROM scratch` for base images without parents.
 

@@ -1,4 +1,4 @@
-## Container Lifecycle
+## Container lifecycle
 
 The standard Docker workflow involves these core operations:
 

@@ -1,4 +1,4 @@
-## Container Design Principles
+## Container design principles
 
 **Single Responsibility**: Design containers with single-purpose applications to maximize reusability and maintainability.
 
@@ -6,17 +6,17 @@
 
 **Horizontal Scaling**: Separate containers enable selective scaling of application components based on demand patterns.
 
-## Image Optimization
+## Image optimization
 
 **Minimal Dependencies**: Include only verified required packages to reduce image size, attack surface, and build times.
 
 **Lean Base Images**: Select minimal base images like Alpine Linux or distroless images when appropriate for your application runtime.
 
-## Base Image Selection
+## Base image selection
 
 Choose base images that match your application requirements without excess components. Consider official images, security update frequency, and size optimization for production deployments.
 
-## Data Management
+## Data management
 
 **External Storage**: Use Docker volumes or bind mounts for persistent data to maintain container immutability and enable data persistence beyond container lifecycle.
 
