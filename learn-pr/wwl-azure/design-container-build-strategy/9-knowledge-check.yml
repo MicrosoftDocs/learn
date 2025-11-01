@@ -39,7 +39,7 @@ quiz:
           explanation: "Incorrect. Azure provides a wide range of services that help you to work with containers such as Azure App Service and Azure Container Instances."
         - content: "Azure Virtual Machine Scale Sets."
           isCorrect: true
-          explanation: "Correct. VM Scale Sets manage virtual machines, not containers. Azure container services include ACI, AKS, Container Apps, and App Service."
+          explanation: "Correct. Virtual Machine Scale Sets manage virtual machines, not containers. Azure container services include ACI, AKS, Container Apps, and App Service."
     - content: "Which of the following choices creates an instance of the image?"
       choices:
         - content: "Docker run."

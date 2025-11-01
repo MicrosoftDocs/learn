@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.design-container-build-strategy.deploy-docker-containers-to-azure-app-service-web-apps
-title: Deploy Docker Containers to Azure App Service Web Apps
+title: Deploy Docker containers to Azure App Service web apps
 metadata:
-  title: Deploy Docker Containers to Azure App Service Web Apps
+  title: Deploy Docker containers to Azure App Service web apps
   description: "Use Azure DevOps to build, push, and deploy containers to Azure App Service"
   ms.date: 09/26/2025
   author: LuizMacedo

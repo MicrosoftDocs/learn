@@ -26,7 +26,7 @@ ENTRYPOINT ["dotnet", "WebApplication1.dll"]
 
 ```
 
-## Multi-Stage Build Mechanics
+## Multi-stage build mechanics
 
 Multi-stage builds use named stages that can reference each other. Key concepts:
 
@@ -36,7 +36,7 @@ Multi-stage builds use named stages that can reference each other. Key concepts:
 
 **Optimized Images**: Compile with full SDK images while deploying minimal runtime images, reducing final image size and attack surface.
 
-## Stage Breakdown
+## Stage breakdown
 
 **Stage 1 (base)**: Runtime foundation using optimized ASP.NET Core runtime image with production configurations and exposed ports.
 
@@ -46,7 +46,7 @@ Multi-stage builds use named stages that can reference each other. Key concepts:
 
 **Stage 4 (final)**: Production image combining the minimal runtime base with published artifacts, creating an optimized deployment container.
 
-## Testing Integration
+## Testing integration
 
 Separate build and publish stages enable test execution between compilation and deployment:
 
@@ -58,7 +58,7 @@ RUN dotnet test
 
 This pattern ensures code quality by failing the build process if tests fail, preventing deployment of broken code.
 
-## Stage Ordering Strategy
+## Stage ordering strategy
 
 Placing the base stage first provides development and performance benefits:
 

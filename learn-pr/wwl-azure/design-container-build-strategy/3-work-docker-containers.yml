@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.design-container-build-strategy.work-docker-containers
-title: Work with Docker Containers
+title: Work with Docker containers
 metadata:
-  title: Work with Docker Containers
+  title: Work with Docker containers
   description: "Understand Docker fundamentals and container operations"
   ms.date: 09/26/2025
   author: LuizMacedo

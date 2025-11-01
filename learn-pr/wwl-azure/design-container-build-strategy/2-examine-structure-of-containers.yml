@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.design-container-build-strategy.examine-structure-of-containers
-title: Examine Structure of Containers
+title: Examine structure of containers
 metadata:
-  title: Examine Structure of Containers
+  title: Examine structure of containers
   description: "Learn container architecture and how containers differ from virtual machines"
   ms.date: 09/26/2025
   author: LuizMacedo
