@@ -1,7 +1,7 @@
 If you have an Azure subscription, you can use the [Azure Machine Learning studio](https://ml.azure.com?azure-portal=true) to try out Automated machine learning.
 
 > [!NOTE]
-> If you don't already have one, you can [sign up for an Azure subscription](https://azure.microsoft.com/free?azure-portal=true), which includes free credits for the first 30 days.
+> If you don't already have one, you can [sign up for an Azure subscription](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn), which includes free credits for the first 30 days.
 
 Launch the exercise and follow the instructions.
 

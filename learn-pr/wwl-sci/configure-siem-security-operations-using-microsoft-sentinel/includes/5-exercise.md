@@ -4,7 +4,7 @@ Now it's time to validate that our Microsoft Sentinel deployment is receiving se
 In this exercise, you learn how to perform a simulated attack to validate that the Analytic and Automation rules create an incident and assign it to the `Operator1`. You perform a `Privilege Escalation` attack on `vm1`.
 
 > [!NOTE]
-> To complete this exercise, you need to complete the previous three exercises and have an [Azure subscription](https://azure.microsoft.com/free?azure-portal=true).
+> To complete this exercise, you need to complete the previous three exercises and have an [Azure subscription](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn).
 
 Launch the exercise and follow the instructions.
 
