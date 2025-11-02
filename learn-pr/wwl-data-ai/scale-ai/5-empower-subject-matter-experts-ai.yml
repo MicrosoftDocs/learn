@@ -1,16 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.scale-ai.empower-subject-matter-experts-ai
-title: Empower subject matter experts with AI
+title: Empower Subject Matter Experts with AI
 metadata:
-  title: Empower subject matter experts with AI
-  description: "Empower subject matter experts with AI"
-  ms.date: 02/13/2025
+  title: 5-empower-subject-matter-experts-ai
+  description: "Empower Subject Matter Experts with AI"
+  ms.date: 11/02/2025
   author: wwlpublish
   ms.author: rcaper
   ms.topic: unit
-  ms.custom:
-  - N/A
-  - ai-learning-hub
-durationInMinutes: 5
+durationInMinutes: 3
 content: |
   [!include[](includes/5-empower-subject-matter-experts-ai.md)]
