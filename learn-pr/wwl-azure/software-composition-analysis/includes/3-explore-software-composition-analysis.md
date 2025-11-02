@@ -60,7 +60,7 @@ Modern software development practices make SCA indispensable:
 
 - **High-profile breaches:** Major security incidents regularly involve exploitation of known vulnerabilities in popular open-source packages.
 - **Supply chain attacks:** Attackers compromise legitimate packages to distribute malware to downstream consumers.
-- **Zero-day vulnerabilities:** Previously unknown vulnerabilities in widely-used packages can affect thousands of organizations simultaneously.
+- **Zero-day vulnerabilities:** Previously unknown vulnerabilities in widely used packages can affect thousands of organizations simultaneously.
 - **Patch urgency:** Critical vulnerabilities require rapid identification and remediation across all affected applications.
 
 **Traditional security tools miss dependency vulnerabilities:**
