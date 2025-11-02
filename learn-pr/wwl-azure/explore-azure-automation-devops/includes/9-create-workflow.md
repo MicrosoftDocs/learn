@@ -28,16 +28,14 @@ Finally, add your standard **PowerShell** commands:
 
 ```powershell
 workflow MyFirstRunbook-Workflow
-  {
-      Param(
-                [string]$VMName,
-                [string]$ResourceGroupName
-            )
-            ....
-          Start-AzureRmVM -Name $VMName -ResourceGroupName $ResourceGroupName
-      }
-
-    ```
+{
+    Param(
+        [string]$VMName,
+        [string]$ResourceGroupName
+    )
+    Start-AzureRmVM -Name $VMName -ResourceGroupName $ResourceGroupName
+}
+```
 
 ## Key workflow features
 

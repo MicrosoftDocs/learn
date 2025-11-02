@@ -48,4 +48,4 @@ If you set **Autosync** to **Yes**, full sync will start. If you set **Autosync*
 
 Verify that your source control is listed on the **Azure Automation Source control** page for you to use.
 
-   :::image type="content" source="../media/source-control-f1d31c38.png" alt-text="Screenshot of the Azure Automation source control window with the just-created source control account.":::
+:::image type="content" source="../media/source-control-f1d31c38.png" alt-text="Screenshot of the Azure Automation source control window with the just-created source control account.":::
