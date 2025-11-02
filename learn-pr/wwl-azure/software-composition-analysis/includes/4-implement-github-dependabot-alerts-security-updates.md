@@ -212,7 +212,7 @@ updates:
 
 **Advanced options:**
 
-- **schedule.day:** Day of week for weekly updates (monday through sunday).
+- **schedule.day:** Day of week for weekly updates (Monday through Sunday).
 - **schedule.time:** Time of day for updates (24-hour format).
 - **schedule.timezone:** Timezone for schedule (IANA timezone identifier).
 - **reviewers:** GitHub users or teams automatically requested for pull request reviews.

@@ -470,9 +470,9 @@ Medium Vulnerabilities: 47 (Target: < 100)
 Low Vulnerabilities: 132 (Tracking only)
 
 Mean Time to Remediate:
-- Critical: 18 hours (SLA: 24 hours) ✓
-- High: 6 days (SLA: 7 days) ✓
-- Medium: 21 days (SLA: 30 days) ✓
+- Critical: 18 hours ✓
+- High: 6 days ✓
+- Medium: 21 days ✓
 
 Remediation Progress:
 - P0 (Emergency): 0 overdue
@@ -485,5 +485,8 @@ Trends (Last 90 Days):
 - Remediated: 138
 - Net reduction: -11 ✓
 ```
+
+> [!NOTE]
+> For more information about service level agreements (SLAs) and remediation timelines, see [Azure Service Level Agreements](https://azure.microsoft.com/support/legal/sla/).
 
 Effective vulnerability alert interpretation and prioritization transforms overwhelming scanner output into actionable security improvements. By understanding severity scores, assessing exploitability, managing false positives, and implementing systematic prioritization, teams focus remediation efforts on vulnerabilities posing actual risk rather than chasing every alert. This risk-based approach enables sustainable security programs that protect applications without overwhelming development teams with noise.
