@@ -66,9 +66,9 @@ Measurable goals need realistic timelines and regular checkpoints. Use the **Obj
 **Example OKR:**
 
 - **Objective**: "Become a highly reliable software delivery organization"
-- **Key Result 1**: Achieve 99.9% uptime for production services
-- **Key Result 2**: Reduce mean time to recovery (MTTR) to under 30 minutes
-- **Key Result 3**: Deploy to production daily with zero-downtime deployments
+  - **Key Result 1**: Achieve 99.9% uptime for production services
+  - **Key Result 2**: Reduce mean time to recovery (MTTR) to under 30 minutes
+  - **Key Result 3**: Deploy to production daily with zero-downtime deployments
 
 ### Timeline best practices examples
 

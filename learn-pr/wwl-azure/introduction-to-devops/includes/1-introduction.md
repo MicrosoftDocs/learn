@@ -1,4 +1,5 @@
-**"DevOps is the union of people, process, and products to enable continuous delivery of value to our end users."** \- According to Donovan Brown in [What is DevOps?](https://www.donovanbrown.com/post/what-is-devops)
+**"DevOps is the union of people, process, and products to enable continuous delivery of value to our end users."**  
+\- Donovan Brown in [What is DevOps?](https://www.donovanbrown.com/post/what-is-devops)
 
 ## Real-world DevOps transformation success
 
@@ -10,7 +11,7 @@ Similarly, Microsoft's own transformation journey demonstrates the power of DevO
 
 The DevOps learning paths will help you prepare for a comprehensive DevOps transformation. You'll learn the main characteristics of the DevOps process, tools, and people involved during the lifecycle. This module also prepares you for the Microsoft DevOps Solution certification exam (AZ-400). The content includes real-world scenarios, hands-on exercises, reference links, interactive assessments, and practical templates you can use in your organization.
 
-## What you'll learn in this comprehensive journey
+## What you learn in this comprehensive journey
 
 By completing this module, you'll master the foundational concepts needed to lead or participate in a DevOps transformation:
 
@@ -29,21 +30,21 @@ Before starting your DevOps journey, evaluate your current state:
 
 **Technical Readiness**
 
-- [ ] Do you have experience with version control systems?
-- [ ] Are you familiar with basic cloud computing concepts?
-- [ ] Do you understand software development lifecycles?
+- Do you have experience with version control systems?
+- Are you familiar with basic cloud computing concepts?
+- Do you understand software development lifecycles?
 
 **Organizational Readiness**
 
-- [ ] Does your organization support cultural change?
-- [ ] Are stakeholders committed to DevOps transformation?
-- [ ] Do you have executive sponsorship for change initiatives?
+- Does your organization support cultural change?
+- Are stakeholders committed to DevOps transformation?
+- Do you have executive sponsorship for change initiatives?
 
 **Personal Readiness**
 
-- [ ] Are you prepared to learn new tools and processes?
-- [ ] Can you dedicate time for hands-on practice?
-- [ ] Are you ready to champion change in your organization?
+- Are you prepared to learn new tools and processes?
+- Can you dedicate time for hands-on practice?
+- Are you ready to champion change in your organization?
 
 _If you answered "yes" to most questions, you're ready to begin. If not, consider addressing these areas first._
 

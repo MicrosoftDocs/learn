@@ -47,7 +47,7 @@ Enables rapid deployment of software solutions to production and testing environ
 
 **Key benefits:**
 
-- **Reduced deployment risk**: Smaller, frequent releases are easier to troubleshoot and rollback
+- **Reduced deployment risk**: Smaller, frequent releases are easier to troubleshoot and roll back
 - **Faster time-to-market**: Features reach customers weeks or months sooner
 - **Improved reliability**: Automated deployments eliminate human error
 - **Better customer responsiveness**: Rapid response to feedback and market changes
@@ -78,7 +78,7 @@ Usually implemented with a Git-based repository, version control enables teams w
 - Compliance and audit requirements
 - Backup and disaster recovery
 
-:::image type="content" source="../media/devops-version-control-44e5f5cf-767b9d74.png" alt-text="Diagram showing Git branching strategy with main branch, feature branches (feature 1 and feature 2), and merge points illustrating collaborative development workflow.":::
+:::image type="content" source="../media/devops-version-control-44e5f5cf-767b9d74.png" alt-text="Diagram showing Git branching with main branch, feature branches, and merge points.":::
 
 ### Agile Planning and Lean Project Management
 
@@ -132,7 +132,7 @@ Monitor running applications including production environments for application h
 - Cost optimization through log level management
 - Real-time analysis for critical issues
 
-:::image type="content" source="../media/devops-monitor-2245ddb9-849d61af.png" alt-text="Dashboard showing various monitoring charts including performance metrics, error rates, and system health indicators with visual representations of data trends.":::
+:::image type="content" source="../media/devops-monitor-2245ddb9-849d61af.png" alt-text="Dashboard with monitoring charts showing performance metrics, error rates, and system health indicators.":::
 
 - Public and Hybrid Clouds have made the impossible easy. The cloud has removed traditional bottlenecks and helped commoditize Infrastructure. You can use Infrastructure as a Service (IaaS) to lift and shift your existing apps or Platform as a Service (PaaS) to gain unprecedented productivity. The cloud gives you a data center without limits.
 

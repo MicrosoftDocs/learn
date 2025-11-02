@@ -12,7 +12,7 @@ metadata:
 title: Introduction to DevOps
 summary: This module explores the fundamental concepts organizations need to understand to start their DevOps transformation journey. Students learn to define DevOps as the union of people, process, and products for continuous value delivery. The content covers identifying transformation teams, establishing shared goals and timelines, understanding cycle time optimization, and implementing validated learning approaches. Key topics include Azure DevOps and GitHub platform introductions, source control fundamentals with Git, and practical strategies for organizational change management. The module emphasizes data-informed decision making, shortened cycle times, and continuous improvement practices that form the foundation of successful DevOps adoption.
 abstract: |
-  By the end of this module, you'll be able to:
+  By the end of this module, you're able to:
   - DevOps definition and core principles
   - Organizational transformation planning
   - Team structure and agile practices

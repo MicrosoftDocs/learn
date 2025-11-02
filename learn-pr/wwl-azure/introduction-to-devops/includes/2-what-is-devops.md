@@ -16,7 +16,7 @@ Organizations implementing DevOps practices typically see measurable improvement
 - Improved developer productivity and satisfaction
 - Lower operational costs through automation
 
-:::image type="content" source="../media/devops-cycle-98924900-a8ba6dc4.png" alt-text="Diagram showing the collaborative DevOps cycle with plan, build, continuous integration, deploy, operate, and continuous feedback phases forming a continuous loop.":::
+:::image type="content" source="../media/devops-cycle-98924900-a8ba6dc4.png" alt-text="Diagram showing DevOps cycle with plan, build, integrate, deploy, operate, and feedback phases in a continuous loop.":::
 
 ## Understand and calculate your cycle time
 
@@ -32,9 +32,9 @@ Let's start with a fundamental concept about software development using the OODA
 **Cycle Time Calculation Exercise:**
 Think about your current development process. How long does it take to go from:
 
-1. Code commit → Production deployment?
-2. Feature request → Customer feedback?
-3. Bug report → Fix in production?
+- Code commit → Production deployment?
+- Feature request → Customer feedback?
+- Bug report → Fix in production?
 
 _Example: If it takes 2 weeks to deploy a one-line configuration change, your cycle time is 2 weeks. This becomes your velocity constraint._
 
