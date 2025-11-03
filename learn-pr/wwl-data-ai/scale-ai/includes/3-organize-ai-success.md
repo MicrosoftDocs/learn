@@ -6,7 +6,7 @@ The following image illustrates the organizational layers required for successfu
 
 At the top, AI leadership sets a clear, end-to-end strategy and makes informed investment decisions. Senior leaders translate that strategy into actionable business priorities and partnerships, ensuring risks are managed and measurable value is delivered.
 
-But success isn’t just about top-down control. Weekly governance is essential to break down technology silos, align standards, and ensure responsible AI practices. And at the foundation, empowering citizen developers and IT teams to build, share, and scale AI solutions drives adoption and real business impact.
+But success isn't just about top-down control. Weekly governance is essential to break down technology silos, align standards, and ensure responsible AI practices. And at the foundation, empowering citizen developers and IT teams to build, share, and scale AI solutions drives adoption and real business impact.
 
 The key questions for every leader should be:
 
@@ -18,7 +18,7 @@ The key questions for every leader should be:
 Organizations that get this right avoid the pitfalls making headlines—and instead, scale AI safely, responsibly, and with measurable results.
 
 > [!IMPORTANT]
-> Any strategy for AI adoption needs to address your existing business capabilities. Learn more in the module [Create business value from AI](../../create-business-value?azure-portal=true). The goal is to prepare your company for AI initiatives.
+> Any strategy for AI adoption needs to address your existing business capabilities. Learn more in the module [Create business value from AI](/training/modules/create-business-value?azure-portal=true). The goal is to prepare your company for AI initiatives.
 
 The question now is: within your organization, who is responsible for what tasks when it comes to AI?
 
@@ -73,7 +73,7 @@ Business leaders drive AI adoption within their function by aligning initiatives
 
 ![Photograph of a person who is a Chief Digital Officer.](../media/03-chief-digital-officer.jpg)
 
-The CDO leads digital transformation and positions AI as a catalyst for growth. They set the vision and create momentum for adoption.
+The Chief Digital Officer leads digital transformation and positions AI as a catalyst for growth. They set the vision and create momentum for adoption.
 
 - Promote a culture of data sharing to break down silos.
 - Define an AI manifesto that inspires and aligns the organization.
@@ -98,7 +98,7 @@ HR leaders shape the culture and workforce needed for AI success. They focus on 
 IT leaders operationalize AI by managing technology infrastructure and delivery. They ensure scalability and governance.
 
 - Implement Agile practices to align business and IT teams.
-- Address “dark data” by cleaning and consolidating unstructured information.
+- Address "dark data" by cleaning and consolidating unstructured information.
 - Form cross-functional delivery teams to keep AI projects connected to business goals.
 - Scale MLOps practices to manage the machine learning lifecycle efficiently.
 
