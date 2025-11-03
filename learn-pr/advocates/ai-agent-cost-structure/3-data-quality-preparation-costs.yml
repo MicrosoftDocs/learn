@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.ai-agent-cost-structure.data-quality-preparation-costs
+title: Understand data quality and data preparation costs of AI Agents
+metadata:
+  title: Understand Data Quality and Data Preparation Costs of AI Agents
+  description: This unit covers the data quality and data preparation costs associated with AI agents, including data collection, cleaning, and transformation.
+  ms.date: 10/01/2025
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-data-quality-preparation-costs.md)]

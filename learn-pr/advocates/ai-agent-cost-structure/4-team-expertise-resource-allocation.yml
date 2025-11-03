@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.ai-agent-cost-structure.team-expertise-resource-allocation
+title: Understand costs related to team expertise and resource allocation for AI Agents
+metadata:
+  title: Understand Costs Related to Team Expertise and Resource Allocation for AI Agents
+  description: This unit covers the costs associated with team expertise and resource allocation for AI agents, including personnel costs, training, and infrastructure.
+  ms.date: 10/01/2025
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-team-expertise-resource-allocation.md)]
