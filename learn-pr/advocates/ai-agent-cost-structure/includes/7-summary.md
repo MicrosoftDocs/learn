@@ -4,9 +4,9 @@ In this module, you explored the key cost factors involved in building AI agents
 
 For more information, see:
 
-- [Pricing Calculator](https://azure.microsoft.com/en-us/pricing/calculator/?msockid=36c5dc16ae1466b93f08ce23afaa6712)
+- [Pricing Calculator](https://azure.microsoft.com/pricing/calculator/?msockid=36c5dc16ae1466b93f08ce23afaa6712)
 - [Behind the Azure AI Foundry: Essential Azure Infrastructure & Cost Insights](https://techcommunity.microsoft.com/blog/azureinfrastructureblog/behind-the-azure-ai-foundry-essential-azure-infrastructure--cost-insights/4407568)
-- [Azure AI services pricing](https://azure.microsoft.com/en-us/pricing/details/cognitive-services)
+- [Azure AI services pricing](https://azure.microsoft.com/pricing/details/cognitive-services)
 - [Plan and manage costs for Azure AI Foundry](/azure/ai-foundry/how-to/costs-plan-manage)
 - [Understanding tokens](/dotnet/ai/conceptual/understanding-tokens)
 - [Azure AI Foundry Models Pricing](https://azure.microsoft.com/en-us/pricing/details/phi-3/)

@@ -38,7 +38,7 @@ subjects:
 units:
 - learn.ai-agent-cost-structure.infrastructure-costs
 - learn.ai-agent-cost-structure.development-integration-costs
-- learn.ai-agent-cost-structure.data-quality-data-preparation-costs
+- learn.ai-agent-cost-structure.data-quality-preparation-costs
 - learn.ai-agent-cost-structure.team-expertise-resource-allocation
 - learn.ai-agent-cost-structure.ongoing-costs
 - learn.ai-agent-cost-structure.knowledge-check
