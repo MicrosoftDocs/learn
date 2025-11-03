@@ -1,6 +1,6 @@
 AI agent success depends not only on infrastructure and models, but on the expertise and enablement of the cross-functional teams who build, test, and deploy them. This unit outlines the key cost drivers associated with upskilling and collaboration for AI engineers, software developers, and UX designers, drawing from Microsoft's guidance and enterprise best practices.
 
-![Conceptual image of key cost drivers of AI agent team expertise and resource allocation.](../media/team-expertise.png)
+![Diagram of key cost drivers of AI agent team expertise and resource allocation.](../media/team-expertise.png)
 
 ## Upskilling costs across core roles
 
