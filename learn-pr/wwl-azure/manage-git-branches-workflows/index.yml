@@ -1,10 +1,10 @@
 ### YamlMime:Module
 uid: learn.wwl.manage-git-branches-workflows
 metadata:
-  title: Design and implement branch strategies and workflows
-  description: Design and implement branch strategies and workflows
-  ms.date: 05/24/2024
-  author: wwlpublish
+  title: Design and Implement Branch Strategies and Workflows
+  description: This module explores Git branching types, concepts, and models for the continuous delivery process. It helps companies defining their branching strategy and organization.
+  ms.date: 09/02/2025
+  author: LuizMacedo
   ms.author: lumac
   ms.topic: module
   ai-usage: human-only
@@ -20,39 +20,38 @@ abstract: |
 prerequisites: None
 iconUrl: /training/achievements/2-manage-git-branches-and-workflows.svg
 levels:
-- advanced
+  - advanced
 roles:
-- administrator
-- developer
-- devops-engineer
-- security-engineer
-- security-operations-analyst
-- service-adoption-specialist
-- solution-architect
-- technology-manager
+  - administrator
+  - developer
+  - devops-engineer
+  - security-engineer
+  - security-operations-analyst
+  - service-adoption-specialist
+  - solution-architect
+  - technology-manager
 products:
-- azure
-- azure-artifacts
-- azure-boards
-- azure-cloud-services
-- azure-devops
-- azure-pipelines
-- azure-repos
-- azure-test-plans
-- github
+  - azure
+  - azure-artifacts
+  - azure-boards
+  - azure-cloud-services
+  - azure-devops
+  - azure-pipelines
+  - azure-repos
+  - azure-test-plans
+  - github
 subjects:
-- process-workflow
+  - process-workflow
 units:
-- learn.wwl.manage-git-branches-workflows.introduction
-- learn.wwl.manage-git-branches-workflows.explore-branch-workflow-types
-- learn.wwl.manage-git-branches-workflows.explore-feature-branch-workflow
-- learn.wwl.manage-git-branches-workflows.explore-git-branch-model-for-continuous-delivery
-- learn.wwl.manage-git-branches-workflows.explore-github-flow
-- learn.wwl.manage-git-branches-workflows.explore-fork-workflow
-- learn.wwl.manage-git-branches-workflows.implement-branch-merging-restrictions
-- learn.wwl.manage-git-branches-workflows.version-control-git-azure-repos
-- learn.wwl.manage-git-branches-workflows.knowledge-check
-- learn.wwl.manage-git-branches-workflows.summary
+  - learn.wwl.manage-git-branches-workflows.introduction
+  - learn.wwl.manage-git-branches-workflows.explore-branch-workflow-types
+  - learn.wwl.manage-git-branches-workflows.explore-feature-branch-workflow
+  - learn.wwl.manage-git-branches-workflows.explore-git-branch-model-for-continuous-delivery
+  - learn.wwl.manage-git-branches-workflows.explore-github-flow
+  - learn.wwl.manage-git-branches-workflows.explore-fork-workflow
+  - learn.wwl.manage-git-branches-workflows.implement-branch-merging-restrictions
+  - learn.wwl.manage-git-branches-workflows.version-control-git-azure-repos
+  - learn.wwl.manage-git-branches-workflows.knowledge-check
+  - learn.wwl.manage-git-branches-workflows.summary
 badge:
   uid: learn.wwl.manage-git-branches-workflows.badge
-

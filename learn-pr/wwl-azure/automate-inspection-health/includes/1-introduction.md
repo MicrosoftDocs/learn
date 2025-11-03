@@ -1,17 +1,17 @@
-This module describes how to automate the inspection of health events, configure notifications, and set up service hooks to monitor pipelines.
+This module explores automated health event monitoring, comprehensive notification configuration, and service hook implementation for robust pipeline oversight and proactive issue detection.
 
 ## Learning objectives
 
 After completing this module, students and professionals can:
 
- -  Implement automated inspection of health.
- -  Create and configure events.
- -  Configure notifications.
- -  Create service hooks to monitor the pipeline.
+- Implement automated health inspection systems for continuous monitoring and early warning capabilities.
+- Create and configure event-driven notification frameworks for real-time communication and alerting.
+- Configure comprehensive notification systems across Azure DevOps and GitHub platforms for stakeholder awareness.
+- Develop service hooks for automated pipeline monitoring and external system integration workflows.
 
 ## Prerequisites
 
- -  Understanding of what DevOps is and its concepts.
- -  Familiarity with version control principles is helpful but isn't necessary.
- -  Beneficial to have experience in an organization that delivers software.
- -  You need to create an Azure DevOps Organization and a Team Project for some exercises. If you don't have it yet, see: [Create an organization - Azure DevOps](/azure/devops/organizations/accounts/create-organization).
+- Comprehensive understanding of DevOps principles, practices, and continuous integration/continuous deployment workflows
+- Experience with Azure Pipelines, release management, and project administration
+- Familiarity with GitHub workflows, notifications, and repository management
+- Active Azure DevOps organization with team project access for hands-on configuration exercises. Reference: [Create an organization - Azure DevOps](/azure/devops/organizations/accounts/create-organization)

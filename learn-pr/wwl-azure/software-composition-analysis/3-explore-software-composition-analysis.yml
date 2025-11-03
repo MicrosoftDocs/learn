@@ -1,13 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.software-composition-analysis.explore-software-composition-analysis
-title: Explore software composition analysis (SCA)
+title: Explore software composition analysis
 metadata:
-  title: Explore software composition analysis (SCA)
-  description: "Explore software composition analysis (SCA)"
-  ms.date: 05/13/2024
-  author: wwlpublish
+  title: Explore Software Composition Analysis
+  description: "Understand SCA fundamentals, core capabilities, discovery mechanisms, analysis features, and integration patterns for managing dependency security."
+  ms.date: 10/22/2025
+  author: LuizMacedo
   ms.author: lumac
   ms.topic: unit
-durationInMinutes: 4
+durationInMinutes: 10
 content: |
-  [!include[](includes/3-explore-software-composition-analysis.md)]
+  [!include[](includes/3-explore-software-composition-analysis.md)]
