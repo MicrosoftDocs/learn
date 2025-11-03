@@ -42,10 +42,10 @@ You integrate source control with **Azure Automation** using the following steps
 
 ### Syncing and verification
 
-1. If you set **Autosync** to **Yes**, full sync will start. If you set **Autosync** to **No**, open the **Source Control Summary** blade again by selecting your repository in **Azure Automation** and then selecting **Start Sync**.
+If you set **Autosync** to **Yes**, full sync will start. If you set **Autosync** to **No**, open the **Source Control Summary** blade again by selecting your repository in **Azure Automation** and then selecting **Start Sync**.
 
-   :::image type="content" source="../media/source-control-summary-4b83dab3.png" alt-text="Screenshot of the Source Control Summary blade containing fields, and details to be filled in.":::
+:::image type="content" source="../media/source-control-summary-4b83dab3.png" alt-text="Screenshot of the Source Control Summary blade containing fields, and details to be filled in.":::
 
-1. Verify that your source control is listed on the **Azure Automation Source control** page for you to use.
+Verify that your source control is listed on the **Azure Automation Source control** page for you to use.
 
-   :::image type="content" source="../media/source-control-f1d31c38.png" alt-text="Screenshot of the Azure Automation source control window with the just-created source control account.":::
+:::image type="content" source="../media/source-control-f1d31c38.png" alt-text="Screenshot of the Azure Automation source control window with the just-created source control account.":::
