@@ -9,7 +9,7 @@ metadata:
   ms.author: lumac
   ms.topic: unit
   ms.custom:
-  - N/A
+    - N/A
 durationInMinutes: 2
 content: |
-  [!include[](includes/6-build-your-own-custom-application.md)]
+  [!include[](includes/6-build-your-own-custom-application.md)]

@@ -1,47 +1,55 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.az-400-implement-continuous-feedback
 metadata:
-  title: 'AZ-400: Implement continuous feedback'
-  description: 'AZ-400: Implement continuous feedback'
-  ms.date: 05/06/2024
-  author: wwlpublish
+  title: "AZ-400: Implement Continuous Feedback"
+  description: "Learn to implement continuous feedback practices in DevOps using Azure Application Insights, monitoring dashboards, team knowledge sharing, automated analytics, and blameless retrospectives to create a culture of continuous improvement."
+  ms.date: 10/21/2025
+  author: LuizMacedo
   ms.author: lumac
   ms.topic: learning-path
-title: 'AZ-400: Implement continuous feedback'
+  ai-usage: ai-assisted
+title: "AZ-400: Implement continuous feedback"
 prerequisites: |
-  None
+  - Understanding of DevOps principles and practices.
+  - Familiarity with Azure DevOps or GitHub for version control and CI/CD.
+  - Basic knowledge of application monitoring concepts.
+  - Experience with Azure services and the Azure portal.
 summary: |
-  This learning path introduces the continuous feedback concept and describes how to implement it in your DevOps cycle.
+  This learning path teaches you to implement continuous feedback practices throughout your DevOps cycle. Learn to track application usage and system flow, develop monitoring dashboards for real-time visibility, share knowledge effectively within teams, automate application analytics to identify trends early, and manage alerts while building a just culture through blameless retrospectives. By implementing these practices, you'll create feedback loops that drive continuous improvement, reduce incident response time, and build team cultures where learning from failures strengthens rather than weakens organizational resilience.
 iconUrl: /learn/achievements/az-400-implement-continuous-feedback.svg
 levels:
-- advanced
+  - advanced
 roles:
-- administrator
-- developer
-- devops-engineer
-- security-engineer
-- security-operations-analyst
-- service-adoption-specialist
-- solution-architect
-- technology-manager
+  - administrator
+  - ai-engineer
+  - data-engineer
+  - developer
+  - devops-engineer
+  - platform-engineer
+  - security-engineer
+  - security-operations-analyst
+  - service-adoption-specialist
+  - solution-architect
+  - startup-founder
+  - technology-manager
 products:
-- azure
-- azure-artifacts
-- azure-boards
-- azure-cloud-services
-- azure-devops
-- azure-pipelines
-- azure-repos
-- azure-test-plans
-- github
+  - azure
+  - azure-artifacts
+  - azure-boards
+  - azure-cloud-services
+  - azure-devops
+  - azure-pipelines
+  - azure-repos
+  - azure-test-plans
+  - github
 subjects:
-- change-management
-- devops
+  - devops
+  - change-management
 modules:
-- learn.wwl.implement-tools-to-track-usage-flow
-- learn.wwl.develop-monitor-status-dashboards
-- learn.wwl.share-knowledge-within-teams
-- learn.wwl.design-processes-to-automate-application-analytics
-- learn.wwl.manage-alerts-blameless-retrospectives-just-culture
+  - learn.wwl.implement-tools-to-track-usage-flow
+  - learn.wwl.develop-monitor-status-dashboards
+  - learn.wwl.share-knowledge-within-teams
+  - learn.wwl.design-processes-to-automate-application-analytics
+  - learn.wwl.manage-alerts-blameless-retrospectives-just-culture
 trophy:
   uid: learn.wwl.az-400-implement-continuous-feedback.trophy

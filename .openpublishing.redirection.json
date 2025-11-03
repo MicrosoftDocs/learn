@@ -58325,6 +58325,106 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/azure-devops/create-a-build-pipeline/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/build/ci-build-git",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/create-a-build-pipeline/2-what-is-azure-pipelines.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/build/ci-build-git",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/create-a-build-pipeline/3-build-locally.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/build/ci-build-git",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/create-a-build-pipeline/4-plan-build-tasks.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/build/ci-build-git",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/create-a-build-pipeline/5-set-up-environment.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/build/ci-build-git",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/create-a-build-pipeline/6-create-the-pipeline.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/build/ci-build-git",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/create-a-build-pipeline/7-publish-build-result.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/build/ci-build-git",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/create-a-build-pipeline/8-build-multiple-configurations.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/build/ci-build-git",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/create-a-build-pipeline/9-clean-up-environment.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/build/ci-build-git",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/create-a-build-pipeline/10-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/build/ci-build-git",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/create-a-build-pipeline/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/build/ci-build-git",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/create-release-pipeline/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/release/define-multistage-release-process",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/create-release-pipeline/2-what-is-cd.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/release/define-multistage-release-process",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/create-release-pipeline/3-plan-release-pipeline.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/release/define-multistage-release-process",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/create-release-pipeline/4-set-up-environment.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/release/define-multistage-release-process",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/create-release-pipeline/5-deploy-to-appservice.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/release/define-multistage-release-process",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/create-release-pipeline/6-monitor-pipeline-health.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/release/define-multistage-release-process",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/create-release-pipeline/7-clean-up-environment.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/release/define-multistage-release-process",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/create-release-pipeline/8-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/release/define-multistage-release-process",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/create-release-pipeline/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/release/define-multistage-release-process",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/azure/intro-to-azure-private-5g-core/1-introduction.yml",
       "redirect_url": "https://learn.microsoft.com/azure/private-5g-core/private-5g-core-overview",
       "redirect_document_id": false
@@ -58922,6 +59022,56 @@
     {
       "source_path": "learn-pr/wwl-data-ai/fundamentals-generative-ai/6c-responsible-ai.yml",
       "redirect_url": "https://learn.microsoft.com/training/modules/get-started-ai-fundamentals/7-responsible-ai",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/run-quality-tests-build-pipeline/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/courses/gh-200t00",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/run-quality-tests-build-pipeline/2-what-is-automated-testing.yml",
+      "redirect_url": "https://learn.microsoft.com/training/courses/gh-200t00",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/run-quality-tests-build-pipeline/3-set-up-environment.yml",
+      "redirect_url": "https://learn.microsoft.com/training/courses/gh-200t00",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/run-quality-tests-build-pipeline/4-add-unit-tests.yml",
+      "redirect_url": "https://learn.microsoft.com/training/courses/gh-200t00",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/run-quality-tests-build-pipeline/5-add-dashboard-widget.yml",
+      "redirect_url": "https://learn.microsoft.com/training/courses/gh-200t00",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/run-quality-tests-build-pipeline/6-perform-code-coverage.yml",
+      "redirect_url": "https://learn.microsoft.com/training/courses/gh-200t00",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/run-quality-tests-build-pipeline/7-fix-failed-test.yml",
+      "redirect_url": "https://learn.microsoft.com/training/courses/gh-200t00",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/run-quality-tests-build-pipeline/8-clean-up-environment.yml",
+      "redirect_url": "https://learn.microsoft.com/training/courses/gh-200t00",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/run-quality-tests-build-pipeline/9-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/courses/gh-200t00",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/run-quality-tests-build-pipeline/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/courses/gh-200t00",
       "redirect_document_id": false
     },
     {
@@ -59682,6 +59832,21 @@
     {
       "source_path": "learn-pr/azure/manage-deployments-advanced-arm-template-features/index.yml",
       "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/templates/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-alerts-responses/6-azure-monitor-change-analysis.md",
+      "redirect_url": "/training/modules/configure-alerts-responses/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-alerts-responses/7-knowledge-check.md",
+      "redirect_url": "/training/modules/configure-alerts-responses/6-knowledge-check",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-alerts-responses/8-summary.md",
+      "redirect_url": "/training/modules/configure-alerts-responses/7-summary",
       "redirect_document_id": false
     }
   ]

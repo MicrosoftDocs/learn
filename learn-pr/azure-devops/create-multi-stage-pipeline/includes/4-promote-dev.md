@@ -2,7 +2,7 @@ The team has a plan and is ready to begin implementing their release pipeline. Y
 
 At this point, remember that the team's pipeline has only two stages. The first stage produces the build artifact. The second stage deploys the *Space Game* web app to App Service. Here, you follow along with Andy and Mara as they modify the pipeline. They're going to deploy to the App Service environment that corresponds to the *Dev* stage.
 
-The *Dev* stage resembles the deployment stage that you made in the [Create a release pipeline in Azure Pipelines](/training/modules/create-release-pipeline?azure-portal=true) module. There, you used a CI trigger to start the build process. Here you do the same.
+Here, you use a CI trigger to start the build process.
 
 ## Fetch the branch from GitHub
 
@@ -23,8 +23,6 @@ To fetch and switch to the branch:
     The format of these commands enables you to get starter code from the Microsoft GitHub repository, known as `upstream`. Shortly, you're going to push this branch up to your GitHub repository, known as `origin`.
 
 1. As an optional step, from Visual Studio Code, open *azure-pipelines.yml*. Familiarize yourself with the initial configuration.
-
-    The configuration resembles the basic one that you created in the [Create a release pipeline with Azure Pipelines](/training/modules/create-release-pipeline?azure-portal=true) module. It builds only the app's release configuration. For learning purposes, this configuration doesn't run the quality or security checks that you set up in previous modules.
 
     [!include[](../../shared/includes/pipeline-branches-note.md)]
 

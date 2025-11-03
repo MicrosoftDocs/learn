@@ -1,4 +1,4 @@
-In the [Create a release pipeline with Azure Pipelines](/training/modules/create-release-pipeline?azure-portal=true) learning path, you built a basic release pipeline that deployed an ASP.NET Core application to Azure App Service. Although that scenario works for a single application, modern solutions often require a combination of applications, services, and other components. This module shows you how to build a more complicated pipeline.
+Modern solutions often require a combination of applications, services, and other components. This module shows you how to build a complicated pipeline.
 
 In this module, you learn how to add an Azure Functions project to an existing CI/CD pipeline and deploy to both Azure App Service and Azure Functions in a single process. This module focuses on the core build and deployment tasks.
 
