@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.windows-11-readiness-assessment.evaluate-readiness-using-pc-health-check
+title: Evaluate readiness using PC Health Check
+metadata:
+  title: Evaluate Readiness Using PC Health Check
+  description: This content is part of the "Perform a Windows 11 device readiness assessment" module.
+  ms.date: 10/31/2025
+  author: hhreyes21
+  ms.author: v-homerreyes
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/3-evaluate-readiness-using-pc-health-check.md)]

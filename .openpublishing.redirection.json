@@ -59848,6 +59848,86 @@
       "source_path": "learn-pr/wwl-azure/configure-alerts-responses/8-summary.md",
       "redirect_url": "/training/modules/configure-alerts-responses/7-summary",
       "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/azure/intro-to-azure-remote-rendering/1-introduction.yml",
+    "redirect_url": "https://learn.microsoft.com/training/browse/",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/azure/intro-to-azure-remote-rendering/2-what-is-azure-remote-rendering.yml",
+    "redirect_url": "https://learn.microsoft.com/training/browse/",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/azure/intro-to-azure-remote-rendering/3-how-azure-remote-rendering-works.yml",
+    "redirect_url": "https://learn.microsoft.com/training/browse/",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/azure/intro-to-azure-remote-rendering/4-when-to-use-azure-remote-rendering.yml",
+    "redirect_url": "https://learn.microsoft.com/training/browse/",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/azure/intro-to-azure-remote-rendering/5-knowledge-check.yml",
+    "redirect_url": "https://learn.microsoft.com/training/browse/",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/azure/intro-to-azure-remote-rendering/6-summary.yml",
+    "redirect_url": "https://learn.microsoft.com/training/browse/",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/azure/intro-to-azure-remote-rendering/index.yml",
+    "redirect_url": "https://learn.microsoft.com/training/browse/",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/azure/render-model-azure-remote-rendering-unity/1-introduction.yml",
+    "redirect_url": "https://learn.microsoft.com/training/browse/",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/azure/render-model-azure-remote-rendering-unity/2-what-is-azure-remote-rendering.yml",
+    "redirect_url": "https://learn.microsoft.com/training/browse/",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/azure/render-model-azure-remote-rendering-unity/3-exercise-create-an-azure-remote-rendering-resource.yml",
+    "redirect_url": "https://learn.microsoft.com/training/browse/",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/azure/render-model-azure-remote-rendering-unity/4-managing-a-session-and-rendering-models.yml",
+    "redirect_url": "https://learn.microsoft.com/training/browse/",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/azure/render-model-azure-remote-rendering-unity/5-exercise-render-a-model-in-unity.yml",
+    "redirect_url": "https://learn.microsoft.com/training/browse/",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/azure/render-model-azure-remote-rendering-unity/6-knowledge-check.yml",
+    "redirect_url": "https://learn.microsoft.com/training/browse/",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/azure/render-model-azure-remote-rendering-unity/7-summary.yml",
+    "redirect_url": "https://learn.microsoft.com/training/browse/",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/azure/render-model-azure-remote-rendering-unity/index.yml",
+    "redirect_url": "https://learn.microsoft.com/training/browse/",
+    "redirect_document_id": false
+    },
+      {
+    "source_path": "learn-pr/paths/get-started-with-azure-remote-rendering/index.yml",
+    "redirect_url": "https://learn.microsoft.com/training/browse/",
+    "redirect_document_id": false
     }
   ]
 }

@@ -1,15 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.develop-monitor-status-dashboards.monitor-pipeline-health-include-failure-rate-duration
-title: Monitor pipeline health, including failure rate, duration, and flaky tests
+title: Monitor pipeline health including failure rate, duration, and flaky tests
 metadata:
-  title: Monitor pipeline health, including failure rate, duration, and flaky tests
-  description: "Monitor pipeline health, including failure rate, duration, and flaky tests"
-  ms.date: 05/08/2024
-  author: wwlpublish
+  title: Monitor Pipeline Health Including Failure Rate, Duration, and Flaky Tests
+  description: "Learn to track critical pipeline health metrics including build/release failure rates, execution duration trends, and flaky test detection. Calculate key performance indicators, establish baseline metrics, identify anomalies, implement automated alerting on threshold violations, and create dashboards that visualize pipeline reliability over time."
+  ms.date: 10/20/2025
+  author: LuizMacedo
   ms.author: lumac
   ms.topic: unit
   ms.custom:
     - N/A
-durationInMinutes: 3
+durationInMinutes: 7
 content: |
   [!include[](includes/7-monitor-pipeline-health-include-failure-rate-duration.md)]
