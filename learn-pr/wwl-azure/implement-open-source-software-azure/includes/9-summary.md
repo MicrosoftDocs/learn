@@ -9,5 +9,5 @@ You learned how to describe the benefits and usage of:
 
 ## Learn more
 
- -  [Deploy Open Source Apps With Your Free Account \| Microsoft Azure](https://azure.microsoft.com/free/open-source/search).
+ -  [Deploy Open Source Apps With Your Free Account \| Microsoft Azure](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn).
  -  [Microsoft’s Open Source Program \| Microsoft Open Source](https://opensource.microsoft.com/program/).

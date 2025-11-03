@@ -6,7 +6,7 @@ Instead of creating a service principal, consider using managed identities for A
 
 To register an application in your Microsoft Entra tenant, you need:
 
- -  A Microsoft Entra user account. If you don't already have one, you can [create an account for free](https://azure.microsoft.com/free/?WT.mc_id=A261C142F).
+ -  A Microsoft Entra user account. If you don't already have one, you can [create an account for free](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn).
 
 ## Permissions required for registering an app
 
