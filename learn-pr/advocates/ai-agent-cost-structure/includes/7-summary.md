@@ -9,4 +9,4 @@ For more information, see:
 - [Azure AI services pricing](https://azure.microsoft.com/pricing/details/cognitive-services)
 - [Plan and manage costs for Azure AI Foundry](/azure/ai-foundry/how-to/costs-plan-manage)
 - [Understanding tokens](/dotnet/ai/conceptual/understanding-tokens)
-- [Azure AI Foundry Models Pricing](https://azure.microsoft.com/en-us/pricing/details/phi-3/)
+- [Azure AI Foundry Models Pricing](https://azure.microsoft.com/pricing/details/phi-3/)
