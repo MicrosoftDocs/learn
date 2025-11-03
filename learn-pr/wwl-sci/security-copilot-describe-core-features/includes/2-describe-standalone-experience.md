@@ -94,7 +94,7 @@ From the home menu, the user can navigate as follows:
 
 - Security Store, which is integrated into the standalone experience of Microsoft Security Copilot, is Microsoft Security’s new security-optimized storefront enabling organizations to find, try, buy, and deploy Microsoft and partner-built security solutions and agents. These solutions and agents integrate directly with Microsoft Security products such as Microsoft Defender, Microsoft Sentinel, Microsoft Entra, Purview, Intune and Security Copilot, offering a unified experience that simplifies procurement and accelerates time to value.
 
-    :::image type="content" source="../media/security-store.png" lightbox="../media/security-story.png" alt-text="Screen capture showing the Security store landing page.":::
+    :::image type="content" source="../media/security-store.png" lightbox="../media/security-store.png" alt-text="Screen capture showing the Security store landing page.":::
 
 Selecting the ellipses on the bottom left corner of the navigation panel, allows users to view settings, access help options, and select a tenant for use with Copilot Studio.
 
