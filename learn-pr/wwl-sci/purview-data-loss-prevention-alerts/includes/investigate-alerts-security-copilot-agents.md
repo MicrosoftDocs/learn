@@ -29,7 +29,7 @@ The agent automatically groups triaged alerts into categories:
 - **Less urgent**: Alerts that appear lower in severity or likelihood of data loss
 - **Not categorized**: Alerts the agent couldn't evaluate, such as those triggered by unsupported policy types
 
-:::image type="content" source="../media/dlp-triage-agent-alerts-view.png" alt-text="Screenshot showing the Alert Triage Agent view in Microsoft Purview with prioritized DLP alerts." lightbox="../media/dlp-triage-agent-alerts-view.png":::
+:::image type="content" source="../media/data-loss-prevention-triage-agent-alerts-view.png" alt-text="Screenshot showing the Alert Triage Agent view in Microsoft Purview with prioritized DLP alerts." lightbox="../media/data-loss-prevention-triage-agent-alerts-view.png":::
 
 Alerts are prioritized using three main factors:
 
@@ -88,7 +88,7 @@ Once alerts are triaged, review the prioritized queue to decide what comes next:
 1. Use **Summarize** to generate an AI summary of the alert or user activity if you need more context.
 1. Select **View details** or update the alert as needed, for example by assigning it or notifying users.
 
-   :::image type="content" source="../media/dlp-triage-agent-summary.png" alt-text="Screenshot showing the Agent summary pane in Microsoft Purview with DLP alert categorization and triage notes." lightbox="../media/dlp-triage-agent-summary.png":::
+   :::image type="content" source="../media/data-loss-prevention-triage-agent-summary.png" alt-text="Screenshot showing the Agent summary pane in Microsoft Purview with DLP alert categorization and triage notes." lightbox="../media/data-loss-prevention-triage-agent-summary.png":::
 
 You can rerun the agent on a single alert if conditions change or you need a new evaluation.
 
