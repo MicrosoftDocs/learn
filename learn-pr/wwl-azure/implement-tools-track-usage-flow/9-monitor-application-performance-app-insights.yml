@@ -3,9 +3,9 @@ uid: learn.wwl.implement-tools-to-track-usage-flow.monitor-application-performan
 title: Monitor Application Performance with Azure Load Testing
 metadata:
   title: Monitor Application Performance with Azure Load Testing
-  description: "Monitor Application Performance with Azure Load Testing"
-  ms.date: 12/12/2024
-  author: wwlpublish
+  description: "Learn how to monitor application performance using Azure Load Testing integrated with Application Insights for comprehensive performance analysis."
+  ms.date: 10/13/2025
+  author: LuizMacedo
   ms.author: lumac
   ms.topic: unit
   ms.custom:
