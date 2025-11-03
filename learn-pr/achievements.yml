@@ -7220,5 +7220,15 @@ achievements:
   title: Manage complex cloud deployments by using advanced JSON ARM template features
   summary: This module teaches you how to use advanced features of JSON ARM templates to perform secrets management and conditional deployments.
   iconUrl: /training/achievements/manage-deployments-advanced-arm-template-features.svg
+- uid: learn.azure.render-a-model-with-azure-remote-rendering-and-unity.badge
+  type: badge
+  title: Render a 3D model with Azure Remote Rendering
+  summary: Use Azure Remote Rendering to render a 3D model in a Unity project. You can deploy the model to HoloLens 2 or use the power of mixed reality with the MRTK.
+  iconUrl: /training/achievements/render-model-azure-remote-rendering-unity-social.png
+- uid: learn.intro-to-azure-remote-rendering.badge
+  type: badge
+  title: Introduction to Azure Remote Rendering
+  summary: Describe how Microsoft Azure Remote Rendering can enable you to bring your high-quality 3D models into mixed reality. Evaluate whether Azure Remote Rendering, a cloud-hosted service, can help you complete complex rendering workloads.
+  iconUrl: /training/achievements/intro-to-azure-remote-rendering-social.png
 
 

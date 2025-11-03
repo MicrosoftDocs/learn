@@ -1,0 +1,47 @@
+### YamlMime:Module
+uid: learn.ai-agent-cost-structure
+metadata:
+  title: Understand the Key Cost Drivers of AI Agents
+  description: Developing and deploying AI agents can unlock transformative capabilities for businesses, but it requires careful planning and budgeting.
+  ms.date: 10/01/2025
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: module-standard-task-based # Please don't edit, used for our analytics
+  ms.service: artificial-intelligence
+title: Understand the key cost drivers of AI agents
+summary: "You can build agentic AI agents using Azure AI Foundry and pretrained models. In this scenario, the infrastructure costs are all included with no requirement to consider costs such as compute and networking. This module explores more complex scenarios where you're considering the cost drivers for custom AI agents, particularly if they use AI models."
+abstract: |
+  You can build agentic AI agents using Azure AI Foundry and pretrained models. In this scenario, the infrastructure costs are all included with no requirement to consider costs such as compute and networking. This module explores more complex scenarios where you're considering the cost drivers for custom AI agents, particularly if they use AI models. Developing and deploying AI agents can unlock transformative capabilities for businesses, but it requires careful planning and budgeting. This module explores the key cost factors involved in building custom AI agents, from infrastructure and integration to data quality and team expertise. In this module, business leaders gain insights into how to manage these costs effectively and discover Microsoft solutions that can streamline development, reduce overhead, and ensure long-term success. Further to the contents of this module, you should also consider resiliency, which adds redundant infrastructure and security costs.
+
+  In this module, you learn about:
+
+  - AI agent infrastructure costs.
+  - AI agent development and integration costs.
+  - AI agent data quality and data preparation costs.
+  - Key cost drivers of AI agent team expertise and resource allocation.
+  - Ongoing costs of AI agents.
+prerequisites: |
+  - "Basic understanding of AI and large language models (LLMs)"
+  - "Familiarity with cloud platforms and software lifecycle concepts"
+iconUrl: /learn/achievements/generic-badge.svg
+levels: 
+  - intermediate
+roles: 
+  - developer
+products: 
+  - azure-ai-foundry
+  - ai-services
+  - azure-openai
+  - ms-copilot
+subjects: 
+  - artificial-intelligence
+units:
+- learn.ai-agent-cost-structure.infrastructure-costs
+- learn.ai-agent-cost-structure.development-integration-costs
+- learn.ai-agent-cost-structure.data-quality-preparation-costs
+- learn.ai-agent-cost-structure.team-expertise-resource-allocation
+- learn.ai-agent-cost-structure.ongoing-costs
+- learn.ai-agent-cost-structure.knowledge-check
+- learn.ai-agent-cost-structure.summary
+badge:
+  uid: learn.ai-agent-cost-structure.badge

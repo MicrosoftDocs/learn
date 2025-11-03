@@ -1,0 +1,46 @@
+### YamlMime:Module
+uid: learn.dpu.windows-11-readiness-assessment
+title: Perform a Windows 11 device readiness assessment
+metadata:
+  title: Perform A Windows 11 Device Readiness Assessment
+  description: Learn how to assess device readiness for Windows 11 using PC Health Check and Endpoint Analytics in Microsoft Intune. This module guides IT professionals through evaluating upgrade eligibility and planning secure transitions post–Windows 10 end of support.
+  ms.date: 10/31/2025
+  author: hhreyes21
+  ms.author: v-homerreyes
+  ms.topic: module-standard-task-based
+  ms.service: windows
+  ms.custom: CW121224-1
+summary: >
+  Learn how to assess device readiness for Windows 11 using PC Health Check and Endpoint Analytics in Microsoft Intune. This module guides IT professionals through evaluating upgrade eligibility and planning secure transitions post–Windows 10 end of support.
+abstract: |
+ By the end of this module, you're able to:
+
+ - Assess Windows 11 readiness for unmanaged devices using PC Health Check.  
+ - Evaluate managed devices using Endpoint Analytics in Microsoft Intune.  
+ - Interpret readiness results to determine which devices require upgrades or replacements.  
+ - Document findings to support planning and deployment decisions.
+
+prerequisites: |
+  - None
+iconUrl: /training/achievements/generic-badge.svg
+ratingEnabled: false
+levels:
+  - beginner
+roles:
+  - business-owner
+  - business-user
+  - administrator
+  - technology-manager
+products:
+  - windows-10
+  - windows-11
+units:
+  - learn.dpu.windows-11-readiness-assessment.introduction
+  - learn.dpu.windows-11-readiness-assessment.assess-unmanaged-devices-pc-health-check
+  - learn.dpu.windows-11-readiness-assessment.evaluate-readiness-using-pc-health-check
+  - learn.dpu.windows-11-readiness-assessment.assess-managed-devices-endpoint-analytics-intune
+  - learn.dpu.windows-11-readiness-assessment.review-readiness-data-endpoint-analytics
+  - learn.dpu.windows-11-readiness-assessment.knowledge-check
+  - learn.dpu.windows-11-readiness-assessment.summary
+badge:
+  uid: learn.dpu.windows-11-readiness-assessment.badge

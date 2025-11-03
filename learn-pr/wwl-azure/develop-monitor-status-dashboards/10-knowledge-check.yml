@@ -3,9 +3,9 @@ uid: learn.wwl.develop-monitor-status-dashboards.knowledge-check
 title: Module assessment
 metadata:
   title: Module assessment
-  description: "Knowledge check"
-  ms.date: 12/12/2024
-  author: wwlpublish
+  description: "Assess your understanding of monitoring dashboards, visualization tools, pipeline health metrics, and optimization strategies. Test your knowledge of Azure Dashboards, Azure Monitor Workbooks, Power BI, GitHub monitoring, custom applications, and pipeline performance optimization techniques covered in this module."
+  ms.date: 10/20/2025
+  author: LuizMacedo
   ms.author: lumac
   ms.topic: unit
   ms.custom:
@@ -49,4 +49,4 @@ quiz:
           explanation: "Incorrect. While increasing parallel jobs can improve performance, it's important to balance this with cost considerations."
         - content: "Ignoring pipeline performance metrics."
           isCorrect: false
-          explanation: "Incorrect. Monitoring pipeline performance metrics is crucial for identifying optimization opportunities."
+          explanation: "Incorrect. Monitoring pipeline performance metrics is crucial for identifying optimization opportunities."
