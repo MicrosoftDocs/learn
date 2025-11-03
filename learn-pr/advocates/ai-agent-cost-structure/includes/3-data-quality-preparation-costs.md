@@ -1,6 +1,6 @@
 Data quality and preparation are foundational to the performance, reliability, and cost-efficiency of AI agents. Clean, well-governed data reduces inference costs, improves model relevance, and supports scalable deployment. This unit outlines the cost implications and strategic considerations of preparing clean, deduplicated data for AI workloads on Azure.
 
-![Diagram illustrating data quality and data preparation icons](../media/data-quality.png)
+![Diagram illustrating data quality and data preparation icons.](../media/data-quality.png)
 
 ## Importance of clean and deduplicated data
 

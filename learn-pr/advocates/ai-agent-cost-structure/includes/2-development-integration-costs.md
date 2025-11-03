@@ -2,7 +2,7 @@ Building and deploying AI agents involves multiple cost centers beyond model sel
 organizations must account for development, testing, integration, and hosting expenses. This unit breaks down each stage with actionable
 guidance.
 
-![Conceptual diagram of icons for development integration costs](../media/development-integration-costs.png)
+![Conceptual diagram of icons for development integration costs.](../media/development-integration-costs.png)
 
 ## Model development and customization
 

@@ -1,6 +1,6 @@
 Building and deploying AI agents involves multiple cost centers beyond model selection. To maximize ROI and ensure long-term scalability, organizations must account for development, testing, integration, and hosting expenses. This unit breaks down each stage with actionable guidance.
 
-![Diagram illustrating main concepts of this unit](../media/development-integration-costs.png)
+![Diagram illustrating main concepts of this unit.](../media/development-integration-costs.png)
 
 ## Model development and customization
 
@@ -70,7 +70,7 @@ Hosting determines scalability, reliability, and operational overhead. Azure off
 |**Scenario**      | **Recommended platform**      | **Cost strategy** |
 |------------------|------------------------------|----------------------|
 |**EDA and prototyping**        | Azure Machine Learning compute instances, Azure Databricks   | Transient usage, team-level sharing|
-|**Training and tuning**   | Azure ML in Azure AI Foundry, CycleCloud | Batch orchestration, spot pricing|
+|**Training and tuning**   | Azure Machine Learning in Azure AI Foundry, CycleCloud | Batch orchestration, spot pricing|
 |**Batch inference**           | Azure Machine Learning batch endpoints, Synapse, Databricks     | Parallelization,  isolated compute|
 |**Online  inference**         | Azure AI Foundry Models, Azure Machine Learning managed endpoints | Elastic scaling, quota-aware design|
 |**Self-hosting**  | AKS or IaaS (Data Science Virtual Machine)    | Predictable latency,  isolated node pool|

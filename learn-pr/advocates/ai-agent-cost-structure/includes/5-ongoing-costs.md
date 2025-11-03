@@ -22,55 +22,49 @@ Several factors, including model type, fine-tuning strategy, hosting tier, and p
 
 ### Strategic considerations
 
-1. Understand token-based pricing models
+- Understand token-based pricing models
+  - Costs are incurred per **input and output token**, with output tokens typically priced higher.
+  - Pricing varies by **model type**, **deployment tier**, and **region**.
+  - Use the **Azure Pricing Calculator** to estimate costs before deployment.
 
-    - Costs are incurred per **input and output token**, with output tokens typically priced higher.
-    - Pricing varies by **model type**, **deployment tier**, and **region**.
-    - Use the **Azure Pricing Calculator** to estimate costs before deployment.
+- If using a fine-tuned model, optimize fine-tuning strategy
 
-2. If using a fine-tuned model, optimize fine-tuning strategy
+  - **Supervised Fine-Tuning (SFT)** and **Direct Preference Optimization (DPO)** are priced per token × epochs.
+  - **Reinforcement Fine-Tuning (RFT)** is time-based and includes grading token costs.
+  - Choose the **smallest model** that meets your quality needs to reduce training and hosting costs.
 
-    - **Supervised Fine-Tuning (SFT)** and **Direct Preference Optimization (DPO)** are priced per token × epochs.
-    - **Reinforcement Fine-Tuning (RFT)** is time-based and includes grading token costs.
-    - Choose the **smallest model** that meets your quality needs to reduce training and hosting costs.
+- Minimize prompt token usage
 
-3. Minimize prompt token usage
+  - Fine-tuned models require **shorter prompts**, reducing token usage and latency. However, tuning models also incurs costs. You must find the right balance of tuning for your use case.
+  - Use **prompt engineering** to craft efficient prompts that minimize token count.
 
-    - Fine-tuned models require **shorter prompts**, reducing token usage and latency. However, tuning models also incurs costs. You must find the right balance of tuning for your use case.
-    - Use **prompt engineering** to craft efficient prompts that minimize token count.
+- Choose the right hosting tier
 
-4. Choose the right hosting tier
+  - **Standard** and **Global Standard** tiers incur hourly hosting fees.
+  - **Developer Tier** avoids hosting fees but has limited availability and autodeletion after 24 hours.
+  - **Provisioned Throughput Units (PTUs)** offer latency guarantees but are billed differently.
 
-    - **Standard** and **Global Standard** tiers incur hourly hosting fees (\~\$1.70/hr).
-    - **Developer Tier** avoids hosting fees but has limited availability and autodeletion after 24 hours.
-    - **Provisioned Throughput Units (PTUs)** offer latency guarantees but are billed differently.
+- Monitor and forecast usage
 
-5. Monitor and forecast usage
+  - Use **Microsoft Cost Management** tools to monitor token usage, set budgets, and forecast costs.
+  - Export cost data for deeper analysis in Excel or Power BI.
 
-    - Use **Microsoft Cost Management** tools to monitor token usage, set budgets, and forecast costs.
-    - Export cost data for deeper analysis in Excel or Power BI.
+- Tokenization awareness
+  - Tokenization affects how text is split and priced. For example, \"blueberries\" = 2 tokens.
+  - Use tools like **OpenAI Tokenizer** or **tiktoken** to estimate token counts.
 
-6. Tokenization awareness
+- Design for cost optimization
+  - Apply **Azure Well-Architected Framework** principles: optimize for usage, rate, and resource allocation.
+  - Avoid over-provisioning and use **elastic compute** for orchestration.
 
-    - Tokenization affects how text is split and priced. For example, \"blueberries\" = 2 tokens.
-    - Use tools like **OpenAI Tokenizer** or **tiktoken** to estimate token counts.
+- Leverage model distillation
+  - Use outputs from larger models to fine-tune smaller ones, reducing cost and latency.
 
-7. Design for cost optimization
+- Avoid unnecessary retraining
+  - Retraining is costly. Only retrain when data changes significantly or a new base model is released.
 
-    - Apply **Azure Well-Architected Framework** principles: optimize for usage, rate, and resource allocation.
-    - Avoid over-provisioning and use **elastic compute** for orchestration.
-
-8. Leverage model distillation
-
-    - Use outputs from larger models to fine-tune smaller ones, reducing cost and latency.
-
-9. Avoid unnecessary retraining
-
-    - Retraining is costly. Only retrain when data changes significantly or a new base model is released.
-
-10. Plan for failures and cancellations
-
-    - You're not billed for failed jobs or time in queue, but partial training before cancellation is billable.
+- Plan for failures and cancellations
+  - You're not billed for failed jobs or time in queue, but partial training before cancellation is billable.
 
 ## Performance monitoring
 
