@@ -34,12 +34,14 @@ products:
   - azure-boards
   - azure-cloud-services
   - azure-devops
+  - azure-devops-server
   - azure-pipelines
   - azure-repos
   - azure-test-plans
   - github
 subjects:
   - devops
+  - platform-engineering
 modules:
   - learn.wwl.introduction-to-devops
   - learn.wwl.plan-agile-github-projects-azure-boards
