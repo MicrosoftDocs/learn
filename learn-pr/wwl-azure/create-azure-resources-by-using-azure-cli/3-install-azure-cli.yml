@@ -3,9 +3,9 @@ uid: learn.wwl.create-azure-resources-by-using-azure-cli.install-azure-cli
 title: Install Azure CLI
 metadata:
   title: Install Azure CLI
-  description: "Choose the right environment and install Azure CLI."
-  ms.date: 02/17/2025
-  author: wwlpublish
+  description: "Choose the right environment and install Azure CLI on Windows, Linux, or macOS. Learn authentication methods and verify installation."
+  ms.date: 10/08/2025
+  author: LuizMacedo
   ms.author: lumac
   ms.topic: unit
   ms.custom: devx-track-azurecli
@@ -13,4 +13,3 @@ metadata:
 durationInMinutes: 10
 content: |
   [!include[](includes/3-install-azure-cli.md)]
-

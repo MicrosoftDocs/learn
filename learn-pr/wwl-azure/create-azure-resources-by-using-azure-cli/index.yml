@@ -1,57 +1,66 @@
 ### YamlMime:Module
 uid: learn.wwl.create-azure-resources-by-using-azure-cli
 metadata:
-  title: Create Azure resources by using Azure CLI
-  description: "Create Azure resources by using Azure CLI"
-  ms.date: 02/17/2025
-  author: wwlpublish
+  title: Create Azure Resources Using Azure CLI
+  description: "Learn how to install and use Azure CLI to create and manage Azure resources interactively and through Bash scripts. Learn CLI syntax, authentication, resource management, and troubleshooting for efficient cloud automation."
+  ms.date: 10/08/2025
+  author: LuizMacedo
   ms.author: lumac
   ms.topic: module
   ms.service: azure
   ai-usage: ai-assisted
-title: Create Azure resources using Azure CLI
-summary: This module explains how to use the Azure CLI to create Azure resources interactively, or by using a Bash script. Learn to install the Azure CLI and use common reference commands to log in, manage resource groups, and create storage accounts.
+title: Create Azure Resources Using Azure CLI
+summary: This module teaches you how to use the Azure Command-Line Interface (CLI) to create and manage Azure resources efficiently. Learn to install Azure CLI across Windows, Linux, and macOS, execute commands interactively, create Bash automation scripts, and troubleshoot common issues. Discover best practices for authentication, resource group management, and storage account creation using this powerful cross-platform tool.
 abstract: |
-  By the end of this module, you're able to:
-  - Install the Azure CLI on Linux, macOS, and/or Windows.
-  - Log into Azure using Azure CLI.
-  - Understand Azure CLI syntax components.
-  - Create Azure resources interactively using the Azure CLI.
-  - Create an Azure CLI script for Bash.
-  - Troubleshoot Azure CLI commands.
-prerequisites: None
+  By the end of this module, you'll be able to:
+  - Install Azure CLI: Set up Azure CLI on Linux, macOS, and Windows operating systems.
+  - Authenticate to Azure: Log into Azure using various methods including interactive login, managed identities, and service principals.
+  - Understand CLI syntax: Learn Azure CLI command structure including reference groups, commands, parameters, and values.
+  - Create resources interactively: Execute Azure CLI commands at the terminal to create resource groups and storage accounts.
+  - Automate with scripts: Write and execute Bash scripts that leverage Azure CLI for automated resource management.
+  - Troubleshoot effectively: Use the --debug parameter and understand scripting language differences to resolve common issues.
+prerequisites: |
+  - Command-line experience: Familiarity with Bash, PowerShell, or similar command-line interfaces.
+  - Azure fundamentals: Basic understanding of Azure concepts including resource groups, storage accounts, and subscriptions.
+  - Azure portal experience: Practical experience managing Azure resources through the Azure portal.
+  - DevOps awareness: General knowledge of automation and infrastructure management practices.
 iconUrl: /learn/achievements/3-create-azure-resources-by-using-azure-cli.svg
 levels:
-- advanced
+  - advanced
 roles:
-- administrator
-- developer
-- devops-engineer
-- security-engineer
-- security-operations-analyst
-- service-adoption-specialist
-- solution-architect
-- technology-manager
+  - administrator
+  - ai-engineer
+  - data-engineer
+  - developer
+  - devops-engineer
+  - platform-engineer
+  - security-engineer
+  - security-operations-analyst
+  - service-adoption-specialist
+  - solution-architect
+  - startup-founder
+  - technology-manager
 products:
-- azure
-- azure-artifacts
-- azure-boards
-- azure-cloud-services
-- azure-devops
-- azure-pipelines
-- azure-repos
-- azure-test-plans
-- github
+  - azure
+  - azure-artifacts
+  - azure-boards
+  - azure-cloud-services
+  - azure-devops
+  - azure-pipelines
+  - azure-repos
+  - azure-test-plans
+  - github
 subjects:
-- infrastructure
+  - devops
+  - infrastructure
 units:
-- learn.wwl.create-azure-resources-by-using-azure-cli.introduction
-- learn.wwl.create-azure-resources-by-using-azure-cli.what-azure-cli
-- learn.wwl.create-azure-resources-by-using-azure-cli.install-azure-cli
-- learn.wwl.create-azure-resources-by-using-azure-cli.execute-azure-cli-interactively
-- learn.wwl.create-azure-resources-by-using-azure-cli.create-an-azure-cli-script
-- learn.wwl.create-azure-resources-by-using-azure-cli.use-azure-cli-successfully
-- learn.wwl.create-azure-resources-by-using-azure-cli.knowledge-check
-- learn.wwl.create-azure-resources-by-using-azure-cli.summary
+  - learn.wwl.create-azure-resources-by-using-azure-cli.introduction
+  - learn.wwl.create-azure-resources-by-using-azure-cli.what-azure-cli
+  - learn.wwl.create-azure-resources-by-using-azure-cli.install-azure-cli
+  - learn.wwl.create-azure-resources-by-using-azure-cli.execute-azure-cli-interactively
+  - learn.wwl.create-azure-resources-by-using-azure-cli.create-an-azure-cli-script
+  - learn.wwl.create-azure-resources-by-using-azure-cli.use-azure-cli-successfully
+  - learn.wwl.create-azure-resources-by-using-azure-cli.knowledge-check
+  - learn.wwl.create-azure-resources-by-using-azure-cli.summary
 badge:
   uid: learn.wwl.create-azure-resources-by-using-azure-cli.badge

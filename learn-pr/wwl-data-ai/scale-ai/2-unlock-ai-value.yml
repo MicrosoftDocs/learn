@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.scale-ai.unlock-ai-value
+title: Unlock AI value
+metadata:
+  title: Unlock AI value
+  description: "Unlock AI value"
+  ms.date: 11/02/2025
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-unlock-ai-value.md)]
