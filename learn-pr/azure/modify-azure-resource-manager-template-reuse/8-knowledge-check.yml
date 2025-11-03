@@ -54,4 +54,4 @@ quiz:
     - content: "All of these sections."
       isCorrect: true
       explanation: "Template expressions can be used in any section of an ARM template."
-
+
