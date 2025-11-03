@@ -2,14 +2,14 @@
 uid: learn.wwl.develop-monitor-status-dashboards.explore-azure-monitor-workbooks
 title: Explore Azure Monitor workbooks
 metadata:
-  title: Explore Azure Monitor workbooks
-  description: "Explore Azure Monitor workbooks"
-  ms.date: 05/08/2024
-  author: wwlpublish
+  title: Explore Azure Monitor Workbooks
+  description: "Discover Azure Monitor Workbooks for creating interactive, parameterized monitoring reports with rich visualizations, text narratives, and KQL queries. Learn to build custom workbooks, use templates, implement dynamic parameters, create drill-down experiences, and share interactive reports that combine metrics, logs, and Application Insights data."
+  ms.date: 10/20/2025
+  author: LuizMacedo
   ms.author: lumac
   ms.topic: unit
   ms.custom:
-  - N/A
-durationInMinutes: 3
+    - N/A
+durationInMinutes: 6
 content: |
-  [!include[](includes/4-explore-azure-monitor-workbooks.md)]
+  [!include[](includes/4-explore-azure-monitor-workbooks.md)]
