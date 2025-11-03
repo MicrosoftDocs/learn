@@ -1,5 +1,5 @@
 
-Microsoft Security Copilot can be accessed through the dedicated site https://securitycopilot.microsoft.com. This dedicated site is also referred to as the standalone experience. It is through the standalone experience that users access the landing page or portal to the platform. To ensure that the users can access the features of Copilot, they need to have the appropriate role permissions. For more information on role-based access control for Copilot, see the Assign roles section of [Understand authentication in Microsoft Security Copilot](/security-copilot/authentication?assign-roles).
+Microsoft Security Copilot can be accessed through the dedicated site, referred to as the standalone experience. It is through the standalone experience that users access the landing page or portal to the platform. To ensure that the users can access the features of Copilot, they need to have the appropriate role permissions. For more information on role-based access control for Copilot, see the Assign roles section of [Understand authentication in Microsoft Security Copilot](/security-copilot/authentication?assign-roles).
 
 There are some key landmarks on the Copilot landing page (portal) to which the user can navigate.
 
@@ -31,16 +31,19 @@ From the home menu, the user can navigate as follows:
 
     :::image type="content" source="../media/build-agents-home-screen.png" lightbox="../media/build-agents-home-screen.png" alt-text="Screen capture of the build your own agents window that includes the options to build an agent from scratch or upload a YAML manifest.":::
 
-- History enables users to access their past sessions. For each session, you can view a summary of that session, pin prompts and responses to the pin board, edit prompts, and delete prompts. Currently sessions are kept until they're manually deleted. When a session is deleted, all data associated with that session is marked as deleted and the time to live (TTL) is set to 30 days. After that TTL expires, queries can't access that data. Logs, which contain session data aren't affected when a session is deleted via the in-product UX. These logs have a retention period of up to 90 days.
+- History enables users to access their past sessions. Users can view individual, past sessions or a list of all their past sessions, as shown in the image below. Currently sessions are kept until they're manually deleted. When a session is deleted, all data associated with that session is marked as deleted and the time to live (TTL) is set to 30 days. After that TTL expires, queries can't access that data. Logs, which contain session data aren't affected when a session is deleted via the in-product UX. These logs have a retention period of up to 90 days.
 
-    :::image type="content" source="../media/history-failed-logins.png" lightbox="../media/history-failed-logins.png" alt-text="Screen capture listing a user's past session.":::
+    :::image type="content" source="../media/history-all-history.png" lightbox="../media/history-all-history.png" alt-text="Screen capture listing a user's past sessions.":::
 
 - Owner specific options, for users configured as owners:
 
-  - Owner settings. These settings include the option to switch Security Compute Units (SCUs) capacity, configure data sharing options to help improve Copilot, allow logging audit data in Microsoft Purview, and configure who can upload files.
+  - Owner settings. These settings include the option to switch Security Compute Units (SCUs) capacity, select the workspace for Copilot agents, configure data sharing options to help improve Copilot, allow logging audit data in Microsoft Purview, and configure who can upload files.
 
-    # [Capacity](#tab/capacity)
+    # [Swtich capacity](#tab/switch-capacity)
     :::image type="content" source="../media/owner-settings-capacity.png" lightbox="../media/owner-settings-capacity.png" alt-text="Screen capture showing the owner settings, specifically focused on capacity information.":::
+
+    # [Agent workspaces](#tab/agent-worksapces)
+    :::image type="content" source="../media/agent-workspaces.png" lightbox="../media/agent-workspaces.png" alt-text="Screen capture showing the workspace that will be used for Security Copilot agent experiences in Microsoft Defender, Microsoft Entra, Microsoft Purview and Microsoft Intune.":::
 
     # [Improve Copilot](#tab/improve-copilot)
     :::image type="content" source="../media/owner-settings-improve-copilot.png" lightbox="../media/owner-settings-improve-copilot.png" alt-text="Screen capture showing the owner settings, specifically focused on data sharing options.":::
