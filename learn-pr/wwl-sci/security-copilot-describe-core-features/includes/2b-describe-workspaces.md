@@ -23,14 +23,14 @@ You need to be at least a Security Administrator to create new workspaces for yo
 
 There are several entry points for you to create a new workspace:
 
-- From the breadcrumb of the portal
+- From the landing page of the Security Copilot portal
 - From the Manage workspaces section of the Owner settings page
 
 # [From the breadcrumb](#tab/breadcrumb)
-:::image type="content" source="../media/workspace-create.png" lightbox="../media/workspace-create.png" alt-text="A screenshot showing the new workspace option from the breadcrumb.":::
+:::image type="content" source="../media/workspace-create.png" lightbox="../media/workspace-create.png" alt-text="A screenshot showing the new workspace option from the landing page of the Copilot Studio portal.":::
 
 # [Owner settings page](#tab/owner-settings-page)
-:::image type="content" source="../media/workspace-owner-settings.png" lightbox="../media/workspace-owner-settings.png" alt-text="A screenshot showing the new workspace option from the owner settings page.":::
+:::image type="content" source="../media/workspace-owner-settings-v3.png" lightbox="../media/workspace-owner-settings-v3.png" alt-text="A screenshot showing the manage workspace option from the owner settings page.":::
 
 ---
 
