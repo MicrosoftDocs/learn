@@ -21,7 +21,7 @@ We start by bringing business and technical leaders together for focused executi
 
 ### Step 2: Understand your AI readiness
 
-Next, we work with your Microsoft account team to conduct a Secure AI Readiness Assessment. This identifies strengths and gaps across five dimensions: business strategy, technology strategy, AI experience, organization and culture, and AI governance and security. We map your current stage—Exploring → Planning → Implementing → Scaling → Realizing—and agree on the most valuable next steps. This step anchors your strategy and defines your guardrails before building, and surfaces data and security dependencies eary.
+Next, we work with your Microsoft account team to conduct a Secure AI Readiness Assessment. This identifies strengths and gaps across five dimensions: business strategy, technology strategy, AI experience, organization and culture, and AI governance and security. We map your current stage—Exploring → Planning → Implementing → Scaling → Realizing—and agree on the most valuable next steps. This step anchors your strategy and defines your guardrails before building, and surfaces data and security dependencies early.
 
 ### Step 3: Map your AI journey
 
