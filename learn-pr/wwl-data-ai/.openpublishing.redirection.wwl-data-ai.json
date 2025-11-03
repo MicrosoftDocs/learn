@@ -5112,6 +5112,18 @@
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/orchestrate-semantic-kernel-multi-agent-solution/9-manage-orchestration-runtime-lifecycles.yml",
       "redirect_url": "/training/modules/orchestrate-semantic-kernel-multi-agent-solution"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/scale-ai/2-evaluate-prioritize-ai-investments.yml",
+      "redirect_url": "/training/modules/scale-ai/"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/scale-ai/2a-apply-horizon-framework.yml",
+      "redirect_url": "/training/modules/scale-ai/"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/scale-ai/3-establish-ai-related-roles-responsibilities.yml",
+      "redirect_url": "/training/modules/scale-ai/organize-ai-success"
     }
   ]
 }

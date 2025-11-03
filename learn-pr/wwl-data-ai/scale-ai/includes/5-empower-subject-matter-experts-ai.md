@@ -18,7 +18,7 @@ For example:
 
 ## Create AI solutions without code
 
-Prebuilt models like GPT are now integrated into everyday tools—Microsoft 365, Dynamics 365, and Bing—so SMEs can start using AI immediately. For more advanced needs, platforms like Microsoft Power Platform and Azure AI Services enable SMEs to create apps, automate processes, and even integrate AI models without writing code.
+Prebuilt models like GPT are now integrated into everyday tools—Microsoft 365, Dynamics 365, and Bing—so subject matter experts can start using AI immediately. For more advanced needs, platforms like Microsoft Power Platform and Azure AI Services enable Subject matter experts to create apps, automate processes, and even integrate AI models without writing code.
 
 > [!NOTE]
 > Nearly a third of business users have tried to incorporate prebuilt generative AI models such as GPT in their work routines.
@@ -27,10 +27,10 @@ For more complex solutions, business users may want to create their own AI model
 
 To explore these capabilities in more depth, see the module [Leverage AI tools and resources for your business](/leverage-ai-tools?azure-portal=true).
 
-Empowering subject matter experts with AI isn’t just about convenience—it’s a strategic advantage. When SMEs can apply AI directly, organizations accelerate innovation, reduce dependency on technical teams, and unlock faster time-to-value. This approach turns expertise into impact, enabling your business to adapt quickly, seize new opportunities, and stay ahead in a competitive market.
+Empowering subject matter experts with AI isn't just about convenience—it's a strategic advantage. When subject matter experts can apply AI directly, organizations accelerate innovation, reduce dependency on technical teams, and unlock faster time-to-value. This approach turns expertise into impact, enabling your business to adapt quickly, seize new opportunities, and stay ahead in a competitive market.
 
 >[!TIP]
 >Take a moment to consider how subject matter experts in your organization might use AI to expand their impact.
 >![Photograph showing people working and chatting around a table.](../media/05-reflection.jpg)
 
-Next, let’s wrap up everything you’ve learned with a knowledge check.
+Next, let's wrap up everything you learned with a knowledge check.

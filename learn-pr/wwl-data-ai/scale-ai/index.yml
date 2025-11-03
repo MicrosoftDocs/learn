@@ -13,7 +13,7 @@ metadata:
 title: Scale AI in your organization
 summary: This module provides insights for a full adoption of AI in your organization. It covers AI strategy, assigning responsibilities, and empowering business users and subject matter experts so they can use AI themselves.
 abstract: |
-  By the end of this module, you are able to:
+  By the end of this module, you're able to:
   *   Explain the foundational concepts and business value of generative AI for organizations.
   *   Identify and evaluate Microsoft generative AI solutions—including Copilot, Azure AI, and agents—for common business scenarios.
   *   Assess key considerations for adopting generative AI, including model selection, cost drivers, and responsible use.
