@@ -61,7 +61,7 @@ Horizontal team structures divide teams according to technical layers or softwar
 - **Slow delivery**: Dependencies create bottlenecks and delays
 - **Limited business context**: Teams focus on technical concerns over user value
 
-:::image type="content" source="../media/devops-ds-image-101-cd10ac81-579ed473-4116f357.png" alt-text="Diagram showing horizontal team organization where teams are divided by technical layers (UI, SOA, Data) with each team working on different products (Email, Voice, TV) creating cross-dependencies.":::
+:::image type="content" source="../media/devops-ds-image-101-cd10ac81-579ed473-4116f357.png" alt-text="Diagram showing horizontal teams divided by technical layers with cross-dependencies.":::
 
 ### Vertical teams (Recommended)
 
@@ -81,7 +81,7 @@ Vertical team structures span the entire technology stack and are aligned with b
 - **Customer focus**: Teams understand business context and user needs
 - **Improved quality**: Teams are responsible for the entire user experience
 
-:::image type="content" source="../media/devops-ds-image-103-b26487ac-24ceba66-43ffd70d.png" alt-text="Diagram showing vertical team organization where teams are divided by business capability (Email, Voice, TV) with each team having all necessary technical skills (UI, SOA, Data) for complete ownership.":::
+:::image type="content" source="../media/devops-ds-image-103-b26487ac-24ceba66-43ffd70d.png" alt-text="Diagram showing vertical teams divided by business capability with full technical skills.":::
 
 ### Scaling vertical teams
 
@@ -94,4 +94,4 @@ Vertical teams scale more effectively because you can add entire teams rather th
 - **Minimize handoffs**: Each team should be able to deliver independently
 - **Shared services**: Create platform teams to support feature teams with common needs
 
-:::image type="content" source="../media/devops-ds-image-102-2a966b63-ba75b645-2d2f4153.png" alt-text="Diagram showing scaled vertical teams with additional feature teams for Customer Profile, Shopping Cart, Service Status, and Internet, each with complete technical capability across UI, SOA, and Data layers.":::
+:::image type="content" source="../media/devops-ds-image-102-2a966b63-ba75b645-2d2f4153.png" alt-text="Diagram showing scaled vertical teams with complete technical capability across all layers.":::

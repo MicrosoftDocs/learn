@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.introduction-to-devops.describe-working-git-locally
-title: Describe Working With Git Locally
+title: Describe working with Git locally
 metadata:
   title: Describe Working With Git Locally
   description: "Learn Git fundamentals for local development and version control operations."
