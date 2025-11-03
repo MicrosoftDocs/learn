@@ -2,12 +2,12 @@
 uid: learn.wwl.software-composition-analysis.inspect-validate-code-bases-for-compliance
 title: Inspect and validate code bases for compliance
 metadata:
-  title: Inspect and validate code bases for compliance
-  description: "Inspect and validate code bases for compliance"
-  ms.date: 05/13/2024
-  author: wwlpublish
+  title: Inspect and Validate Code Bases for Compliance
+  description: "Learn systematic approaches for dependency discovery, vulnerability assessment, license validation, and compliance checking in code bases."
+  ms.date: 10/22/2025
+  author: LuizMacedo
   ms.author: lumac
   ms.topic: unit
-durationInMinutes: 3
+durationInMinutes: 5
 content: |
-  [!include[](includes/2-inspect-validate-code-bases-for-compliance.md)]
+  [!include[](includes/2-inspect-validate-code-bases-for-compliance.md)]

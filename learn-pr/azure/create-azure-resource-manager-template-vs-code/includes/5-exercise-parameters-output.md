@@ -156,7 +156,6 @@ Here, you deploy successfully by using a ```storageSKU``` parameter that's in th
 
 1. Deploy the template by running the following commands. Fill in a unique name for the ```storageName``` parameter. It must be globally unique across Azure, contain 3 to 24 characters, and include only lowercase letters, numbers, and hyphens. You can reuse the unique name you created in the previous unit; if you do, Azure will update the existing resource instead of creating a new one.
 
-
     ```azurepowershell
     $today=Get-Date -Format "MM-dd-yyyy"
     $deploymentName="addSkuParameter-"+"$today"
@@ -170,7 +169,6 @@ Here, you deploy successfully by using a ```storageSKU``` parameter that's in th
       Allow this deployment to finish. This deployment succeeds as expected. Your list of allowed values, prevents your template's users from passing in parameter values that don't work for the resource. Let's see what happens when you provide an invalid SKU.
 
 1. Run the following commands to deploy the template with a parameter that isn't allowed. Here, you changed the ```storageSKU``` parameter to **Basic**. Fill in a unique name for the ```storageName``` parameter. It must be globally unique across Azure, contain 3 to 24 characters, and include only lowercase letters, numbers, and hyphens. You can reuse the unique name you created in the previous unit; if you do, Azure will update the existing resource instead of creating a new one.
-
 
     ```azurepowershell
     $today=Get-Date -Format "MM-dd-yyyy"
@@ -208,7 +206,6 @@ Here, you add to the ```outputs``` section of the ARM template to output the end
 ### Deploy the ARM template with an output
 
 Here, you deploy the template and see the endpoints output as JSON. You need to fill in a unique name for the ```storageName``` parameter. It must be globally unique across Azure, contain 3 to 24 characters, and include only lowercase letters, numbers, and hyphens. You can reuse the unique name you created in the previous unit; if you do, Azure will update the existing resource instead of creating a new one.
-
 
 ::: zone pivot="cli"
 
