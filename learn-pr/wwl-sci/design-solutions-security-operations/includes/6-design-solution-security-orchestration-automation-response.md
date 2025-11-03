@@ -4,9 +4,9 @@ SIEM/SOC teams are typically inundated with security alerts and incidents on a r
 
 One way to manage this problem is to automate any recurring and predictable enrichment, response, and remediation tasks that are the responsibility of your Security Operations Center and personnel (SOC/SecOps). This frees up time and resources for more in-depth investigation of, and hunting for, advanced threats.
 
-## Microsoft Sentinel as a SOAR solution
+## SOAR capabilities in Microsoft Sentinel
 
-Microsoft Sentinel, in addition to being a Security Information and Event Management (SIEM) system, is also a platform for Security Orchestration, Automation, and Response (SOAR). Automation takes a few different forms in Microsoft Sentinel, from automation rules that centrally manage the automation of incident handling and response, to playbooks that run predetermined sequences of actions to provide powerful and flexible advanced automation to your threat response tasks.
+Microsoft Sentinel is a cloud-native Security Information and Event Management (SIEM) solution that includes built-in Security Orchestration, Automation, and Response (SOAR) capabilities. These SOAR capabilities include: automation rules that centrally streamline incident handling, and playbooks (Logic Apps workflows) that execute predefined sequences of enrichment, containment, and remediation actions. Together, they reduce manual effort and deliver consistent, repeatable response at scale.
 <!--
 [](/azure/sentinel/automation#automation-rules)
 -->
