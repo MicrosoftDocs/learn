@@ -1,0 +1,56 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.windows-11-readiness-assessment.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge Check
+  description: This content is part of the "Perform a Windows 11 device readiness assessment" module.
+  ms.date: 10/31/2025
+  author: hhreyes21
+  ms.author: v-homerreyes
+  ms.topic: unit
+durationInMinutes: 3
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "What does NPU stand for?"
+    choices:
+        - content: "Network Processing Unit"
+          isCorrect: false
+          explanation: "Incorrect. That refers to a chip handling networking tasks."
+        - content: "Neural Processing Unit"
+          isCorrect: true
+          explanation: "Correct. NPUs accelerate AI workloads efficiently."
+        - content: "Nuclear Power Unit"
+          isCorrect: false
+          explanation: "Incorrect. This is unrelated to computing."
+        - content: "Natural Processing Utility"
+          isCorrect: false
+          explanation: "Incorrect. No such thing exists in this context."
+  - content: "Which file format is produced when you select 'Save JSON…'?"
+    choices:
+        - content: ".yml"
+          isCorrect: false
+          explanation: "Incorrect. That's for the YAML export."
+        - content: ".yaml"
+          isCorrect: false
+          explanation: "Incorrect. That's for the YAML export."
+        - content: ".json"
+          isCorrect: true
+          explanation: "Correct. The JSON button saves .json."
+        - content: ".csv"
+          isCorrect: false
+          explanation: "Incorrect. The app doesn't export CSV."
+  - content: "How many choices must each question include?"
+    choices:
+        - content: "Two"
+          isCorrect: false
+          explanation: "Incorrect. The schema requires four choices."
+        - content: "Three"
+          isCorrect: false
+          explanation: "Incorrect. The schema requires four choices."
+        - content: "Four"
+          isCorrect: true
+          explanation: "Correct. Exactly four choices are required."
+        - content: "Five"
+          isCorrect: false
+          explanation: "Incorrect. Limit is four choices."
