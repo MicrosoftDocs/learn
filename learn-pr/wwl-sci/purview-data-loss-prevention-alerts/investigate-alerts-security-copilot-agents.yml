@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.purview-data-loss-prevention-alerts.investigate-alerts-purview
+uid: learn.wwl.purview-data-loss-prevention-alerts.investigate-alerts-security-copilot-agents
 title: Investigate alerts with Security Copilot and agents
 metadata:
   title: Investigate alerts with Security Copilot and AI agents
@@ -12,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 10
 content: |
-  [!include[](includes/investigate-alerts-purview.md)]
+  [!include[](includes/investigate-alerts-security-copilot-agents.md)]
