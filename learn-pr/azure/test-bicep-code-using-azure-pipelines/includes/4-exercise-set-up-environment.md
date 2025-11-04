@@ -23,6 +23,8 @@ The modules in this learning path are part of a progression. Each module has an 
 
 Run a template that sets up your Azure DevOps organization.
 
+[!INCLUDE[important-note-demo-generator](../../azure-devops/shared/includes/important-note-demo-generator.md)]
+
 1. [Get and run the ADOGenerator project](https://github.com/microsoft/AzDevOpsDemoGenerator/blob/main/docs/RunApplication.md) in Visual Studio or another IDE.
 
 1. When you're asked whether you want to create a new template or use the demo generator, enter **1** and then select **Enter**.
