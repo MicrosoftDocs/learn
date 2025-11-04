@@ -18,7 +18,7 @@ The Threat Intelligence Briefing Agent, which is available through the standalon
 
 Follow these steps to configure the Threat Intelligence Briefing Agent, corresponding images are shown in the tabbed images that follow:
 
-1. Agents - Navigate to the **Agents** page in the Microsoft Security Copilot portal and select **View details** under the Threat Intelligence Briefing Agent.
+1. Agents - Navigate to the **Active Agents** page in the Microsoft Security Copilot portal and select **View details** under the Threat Intelligence Briefing Agent.
 2. Details page - Review the agent details and select **Set up**.
 3. Set up - Connect a user account by selecting **Next** and choosing the appropriate account.
 4. Parameters - Specify parameters to customize the output, such as:
@@ -29,7 +29,7 @@ Follow these steps to configure the Threat Intelligence Briefing Agent, correspo
 5. Run - After setup, access the agent overview page to run the agent manually or schedule it to run automatically.
 
 # [Agents](#tab/agents)
-:::image type="content" source="../media/agents-copilot-v2.png" lightbox="../media/agents-copilot-v2.png" alt-text="Screen capture showing the navigation flow to access the Agents page in Microsoft Security Copilot. ":::
+:::image type="content" source="../media/agents-copilot-threat-intelligence.png" lightbox="../media/agents-copilot-threat-intelligence.png" alt-text="Screen capture showing the navigation flow to access the Agents page in Microsoft Security Copilot. ":::
 
 # [Details page](#tab/details-page)
 :::image type="content" source="../media/threat-intelligence-agent-view-details.png" lightbox="../media/threat-intelligence-agent-view-details.png" alt-text="Screenshot of Threat Intelligence Briefing Agent details page.":::
