@@ -2,7 +2,7 @@ Now that you know how to validate, compile, and deploy your resources from your 
 
 ## Prerequisites
 
-You'll need an **Azure** subscription. If you don't have one, [create a free account](https://azure.microsoft.com/free/) before you begin.
+You'll need an Azure Subscription, if you don't have one, [create a free account](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn) before you begin.
 
 You also need an **Azure DevOps** organization. Similarly, if you don't have one, [create one for free](/azure/devops/pipelines/get-started/pipelines-sign-up/).
 

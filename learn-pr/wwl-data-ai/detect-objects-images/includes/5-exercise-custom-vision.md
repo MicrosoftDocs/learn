@@ -3,7 +3,7 @@ If you have an Azure subscription, you can use Azure AI Custom Vision to create 
 In this exercise, you'll train an object detection model and test it from a client application.
 
 > [!NOTE]
-> If you don't have an Azure subscription, and you want to explore Azure AI Studio, you can [sign up for an account](https://azure.microsoft.com/free?azure-portal=true), which includes credits for the first 30 days.
+> If you don't have an Azure subscription, and you want to explore Azure AI Studio, you can [sign up for an account](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn), which includes credits for the first 30 days.
 
 Launch the exercise and follow the instructions.
 

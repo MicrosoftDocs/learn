@@ -4,7 +4,7 @@
 
 - You'll need a **GitHub** account that you can [create for free here](https://github.com/join).
 - A **GitHub** repository is also required to store your **Bicep** file and workflows created earlier in the [Exercise - Create Bicep templates](/training/modules/implement-bicep/4-exercise-create-bicep-templates). Once you've created your **GitHub** repository, push the **Bicep** file into it.
-- For deployment to **Azure**, access to an **Azure** subscription is needed, which can be [created for free here](https://azure.microsoft.com/free/).
+- For deployment to **Azure**, access to an **Azure** subscription is needed, which can be [created for free here](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn).
 
 ## Creating a service principal in Azure
 

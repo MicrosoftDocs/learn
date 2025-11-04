@@ -4,7 +4,7 @@ You've deployed and configured a Microsoft Sentinel workspace, now it's your cha
 In this exercise, you learn how to install Microsoft Sentinel Content Hub solutions and data connectors.
 
 > [!NOTE]
-> To complete this exercise, you need to complete the previous exercise and have an [Azure subscription](https://azure.microsoft.com/free?azure-portal=true).
+> To complete this exercise, you need to complete the previous exercise and have an [Azure subscription](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn).
 
 Launch the exercise and follow the instructions.
 

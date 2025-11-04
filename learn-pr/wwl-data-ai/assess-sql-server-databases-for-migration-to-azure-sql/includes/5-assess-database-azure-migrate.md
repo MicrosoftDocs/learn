@@ -44,7 +44,7 @@ There are three assessment types that you can create using the **Azure Migrate: 
 To run this exercise, ensure you follow these steps before proceeding:
 
 > [!NOTE]
-> To complete this exercise, you need access to an Azure subscription to create Azure resources. If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?azure-portal=true) before you begin.
+> To complete this exercise, you need access to an Azure subscription to create Azure resources. If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn) before you begin.
 >
 > If you choose to perform this exercise in this module, be aware that you might incur costs in your Azure Subscription.
 

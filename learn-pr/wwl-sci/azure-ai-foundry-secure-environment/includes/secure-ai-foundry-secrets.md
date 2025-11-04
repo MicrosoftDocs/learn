@@ -64,7 +64,7 @@ When secrets are centralized in Azure Key Vault and retrieved using managed iden
 Test your Key Vault integration in a development environment to see how secret management works in practice.
 
 > [!TIP]
-> If you'd like to follow along with the exercises, you can use your own development environment or create a free **[Azure trial account](https://azure.microsoft.com/free?azure-portal=true)** to test the configurations safely.
+> If you'd like to follow along with the exercises, you can use your own development environment or create a free **[Azure trial account](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn)** to test the configurations safely.
 
 Your organization's Azure AI Foundry resource already connects to several data sources. You've been asked to secure the connection strings and API keys used by model deployments.
 

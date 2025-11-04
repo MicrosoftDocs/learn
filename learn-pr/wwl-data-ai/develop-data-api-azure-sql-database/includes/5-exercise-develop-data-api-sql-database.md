@@ -2,7 +2,7 @@
 In this exercise, you develop and deploy a data API for an Azure SQL Database using Azure Static Web Apps, Visual Studio Code, and GitHub. This allows you to familiarize yourself with the process of developing a data API for Azure SQL Database.
 
 > [!NOTE]
-> To complete this exercise, you will need an [Azure subscription](https://azure.microsoft.com/free?azure-portal=true).
+> To complete this exercise, you will need an [Azure subscription](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn).
 
 Launch the exercise and follow the instructions.
 

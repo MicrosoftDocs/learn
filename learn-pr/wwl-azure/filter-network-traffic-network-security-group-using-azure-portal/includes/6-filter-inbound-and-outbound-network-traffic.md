@@ -1,7 +1,7 @@
 In this lab, learn how to configure and use a network security group to filter inbound and outbound network traffic to and from Azure resources in an Azure virtual network.
 
 > [!NOTE]
-> To complete this lab, you will need an [Azure subscription](https://azure.microsoft.com/free).
+> To complete this lab, you will need an [Azure subscription](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn).
 
 Launch the exercise and follow the instructions.
 

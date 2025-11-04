@@ -16,7 +16,7 @@ In this module, you will:
 ## Prerequisites
 
 - Familiarity with Azure, including the Azure portal, subscriptions, resource groups, and resource definitions.
-- An Azure account. You can get a free account [here](https://azure.microsoft.com/free?azure-portal=true).
+- An Azure account. You can get a free account [here](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn).
 - [Visual Studio Code](https://code.visualstudio.com?azure-portal=true) installed locally.
 - Either:
   - The latest [Azure CLI](/cli/azure/install-azure-cli?azure-portal=true) tools installed locally.

@@ -81,4 +81,4 @@ If you wish to perform some of the tasks described in the preceding units, use t
 - [Exercise - Configure a virtual machine scale set](https://aka.ms/exercise-configure-virtual-machine-scale-set?azure-portal=true)
 - [Exercise - Update applications in virtual machine scale sets](https://aka.ms/exercise-update-applications-virtual-machine-scale-sets?azure-portal=true)
 
-To complete these exercises, [get a free trial Azure subscription](https://azure.microsoft.com/free/?azure-portal=true). After completing the exercises, remove any resource groups that you created.
+To complete these exercises, [get a free trial Azure subscription](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn). After completing the exercises, remove any resource groups that you created.
