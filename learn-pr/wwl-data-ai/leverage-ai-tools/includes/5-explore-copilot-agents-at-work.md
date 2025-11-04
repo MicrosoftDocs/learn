@@ -16,7 +16,7 @@ Microsoft 365 Copilot is more than an AI-powered assistant—it’s the hub for 
 
 ### Key AI capabilities for productivity
 
-There are several key AI capabilites to help your organization be more productive.
+There are several key AI capabilities to help your organization be more productive.
 
 #### Secure AI Chat
 

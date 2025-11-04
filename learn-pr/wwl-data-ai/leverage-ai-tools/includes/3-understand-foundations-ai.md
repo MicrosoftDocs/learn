@@ -10,7 +10,7 @@ Machine learning is a set of techniques that lets systems learn patterns from da
 
 **Examples of machine learning**:
 
-- Email spam detection: Machine learning identifies signals—such as suspicious words, bocked domains, or mismatched URLs—to filter unwanted messages.
+- Email spam detection: Machine learning identifies signals—such as suspicious words, blocked domains, or mismatched URLs—to filter unwanted messages.
 - Credit card fraud detection: Machine learning flags unusual patterns, like atypical locations or sudden spending spikes, to reduce risk.
 
 ## What is deep learning?

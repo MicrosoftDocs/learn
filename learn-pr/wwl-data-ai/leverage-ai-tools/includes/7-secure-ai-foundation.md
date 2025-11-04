@@ -43,7 +43,7 @@ To succeed, governance must be unified across three interconnected pillars:
 
 :::image type="content" source="../media/07-govern-ai.png" alt-text="Diagram showing data, AI, and regulatory governance.":::
 
-Start with a top-down business lens. Get clear on the problem you’re solving and what success looks like. Begin with the "why"—prioritize AI investments based on your most important business objectives. This approach ensures focused, strategic, intiatives aligned with organizational goals, turning governance into a driver of value rather than a barrier to innovation.
+Start with a top-down business lens. Get clear on the problem you’re solving and what success looks like. Begin with the "why"—prioritize AI investments based on your most important business objectives. This approach ensures focused, strategic, initiatives aligned with organizational goals, turning governance into a driver of value rather than a barrier to innovation.
 
 1. **What specific challenge will AI address**? Identify a specific business challenge that AI is uniquely positioned to address. Is it improving customer service, automating repetitive tasks, enhancing cybersecurity, or something else? Be precise.
 2. **How will you measure progress and success**? Define clear, measurable metrics to track the success of your AI implementation. What key performance indicators (KPIs) and objectives and key results (OKRs) will you use to measure progress? Will it be increased efficiency, reduced costs, improved customer satisfaction, or something else? Anchor AI investments to the business OKRs and KPIs and utilize A/B/N experimentation practices. This approach allows for precise measurement of AI’s true-positive and true-negative impact on business objectives.
