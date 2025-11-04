@@ -81,7 +81,7 @@ From the home menu, the user can navigate as follows:
     ---
   - Manage workspaces, where owners can create new workspaces, configure them by assigning access and permissions, and fine-tune settings such as owner roles and plugin configurations. Workspaces are described in more detail in the subsequent unit.
   
-       :::image type="content" source="../media/workspace-manage.png" lightbox="../media/workspace-manage.png" alt-text="A screenshot of the manage workspaces page that lists the available workspaces.":::
+       :::image type="content" source="../media/workspace-manage-v2.png" lightbox="../media/workspace-manage-v2.png" alt-text="A screenshot of the manage workspaces page that lists the available workspaces.":::
 
   - Usage monitoring, which provides a dashboard showing how SCUs are consumed over a period of time by your Microsoft Security Copilot workloads. The usage monitoring dashboard provides visibility, for a selected workspace, into the number of units used, the specific plugins employed during sessions, and the initiators of those sessions. The dashboard also allows you to apply filters and export usage data seamlessly. The dashboard includes up to 90 days of data. When an analyst is in the middle of an investigation and the usage is nearing the provisioned capacity limit (90%), a notification is displayed to the analyst while entering the prompt. The notification informs the analyst to contact the owner to increase the capacity or limit the number of prompts to avoid disruptions. These notifications are also shown in the Security Copilot embedded experiences.
   
