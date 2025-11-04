@@ -12,7 +12,7 @@ Azure helps organizations outpace competition, build securely, and deliver diffe
 > [!NOTE]
 > Azure supports open-source frameworks like PyTorch and TensorFlow, and integrates with GitHub Copilot and Visual Studio for streamlined development.
 
-## Unify Your Data Platform
+## Unify your data platform
 
 A unified data estate is essential for AI-driven insights and decision-making. Microsoft Azure simplifies data management, ensures compliance, and accelerates analytics with integrated solutions like:
 
@@ -27,7 +27,7 @@ A unified data estate is essential for AI-driven insights and decision-making. M
 > [!NOTE]
 > A unified data platform reduces operational complexity and enhances data security and accessibility.
 
-## Migrate and Modernize Your Estate
+## Migrate and modernize your estate
 
 Modernizing IT infrastructure unlocks agility and lays the foundation for AI innovation. Azure provides tools to migrate workloads securely and optimize performance across hybrid and multicloud environments:
 
@@ -41,7 +41,7 @@ Modernizing IT infrastructure unlocks agility and lays the foundation for AI inn
 > [!TIP]
 > Start with a cloud migration assessment to identify workloads that benefit most from modernization.
 
-## Innovate with Azure AI Apps and Agents
+## Innovate with Azure AI apps and agents
 
 Building intelligent applications is central to digital transformation. Azure offers a rich set of AI services and developer tools to create custom solutions that enhance productivity and customer engagement:
 
