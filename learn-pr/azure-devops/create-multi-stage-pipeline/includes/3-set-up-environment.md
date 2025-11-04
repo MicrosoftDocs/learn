@@ -31,7 +31,7 @@ The modules in this learning path form a progression. You follow the Tailspin we
 
 Run a template that sets up your Azure DevOps organization.
 
-[!INCLUDE[important-note-demo-generator](../../shared/included/important-note-demo-generator.md)]
+[!INCLUDE[important-note-demo-generator](../../shared/includes/important-note-demo-generator.md)]
 
 1. [Get and run the ADOGenerator project](https://github.com/microsoft/AzDevOpsDemoGenerator/blob/main/docs/RunApplication.md) in Visual Studio or the IDE of your choice.
 
