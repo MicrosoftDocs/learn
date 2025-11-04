@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.leverage-ai-tools.3-understand-foundations-ai
+title: "Understand the foundations of AI"
+metadata:
+  title: "Understand the Foundations of AI"
+  description: "Learn how AI builds on data science, machine learning, and deep learning to create reliable value for businesses via enhanced decisions."
+  ms.date: 11/03/2025
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/3-understand-foundations-ai.md)]

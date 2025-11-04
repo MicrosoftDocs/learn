@@ -6,7 +6,7 @@ Now, it's time to try translating text using the Azure AI Translator service. In
 
 > [!Note]
 >
-> To complete this exercise, you will need an [Azure subscription](https://azure.microsoft.com/free).
+> To complete this exercise, you will need an [Azure subscription](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn).
 
 Launch the exercise and follow the instructions.
 

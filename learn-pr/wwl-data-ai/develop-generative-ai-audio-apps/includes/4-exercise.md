@@ -1,7 +1,7 @@
 If you have an Azure subscription, you can complete this exercise to develop an audio-enabled chat app.
 
 > [!NOTE]
-> If you don't have an Azure subscription, you can [sign up for an account](https://azure.microsoft.com/free?azure-portal=true), which includes credits for the first 30 days.
+> If you don't have an Azure subscription, you can [sign up for an account](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn), which includes credits for the first 30 days.
 
 Launch the exercise and follow the instructions.
 

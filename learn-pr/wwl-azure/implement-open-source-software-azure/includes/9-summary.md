@@ -167,7 +167,7 @@ By applying these principles and implementing systematic open-source management 
 
 ## Learn more
 
-- [Deploy Open Source Apps With Your Free Account \| Microsoft Azure](https://azure.microsoft.com/free/open-source/search).
+- [Deploy Open Source Apps With Your Free Account \| Microsoft Azure](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn).
 - [Microsoft's Open Source Program \| Microsoft Open Source](https://opensource.microsoft.com/program/).
 - [Open Source Initiative - The Open Source Definition](http://opensource.org/osd).
 - [Choose an Open Source License](https://choosealicense.com/).
