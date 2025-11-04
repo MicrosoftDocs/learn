@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.explore-azure-pipelines.understand-key-terms
-title: Understand Azure Pipelines Key Terms
+title: Understand Azure Pipelines key terms
 metadata:
   title: Understand Azure Pipelines Key Terms
   description: "Learn essential Azure Pipelines terminology including pipelines, stages, jobs, tasks, and agents."
