@@ -28,11 +28,11 @@ quiz:
       isCorrect: false
     - content: "Replaces all existing on premises applications."
       isCorrect: false
-  - content: "Which practice is most important for responsible AI at scale"
+  - content: "Which practice is most important for responsible AI at scale?"
     choices:
     - content: "Maximizing model complexity."
       isCorrect: false
-    - content: " Reducing stakeholder involvement."
+    - content: "Reducing stakeholder involvement."
       isCorrect: false
-    - content: " Implementing governance, security, and regulatory controls."
+    - content: "Implementing governance, security, and regulatory controls."
       isCorrect: true
