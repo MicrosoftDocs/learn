@@ -21,7 +21,7 @@ The Conditional Access Optimization Agent, which is available in Microsoft Entra
 
 Follow these steps to configure and run the Conditional Access optimization agent:
 
-1. Go to agents - Once you sign in to the [Microsoft Entra admin center](https://entra.microsoft.com) with at least a Security Administrator role, from the Microsoft Entra home page, select **Go to agents** from the agent notification card.
+1. Go to agents - Sign in to the Microsoft Entra admin portal with at least a Security Administrator role, and from the Microsoft Entra home page, select **Go to agents** from the agent notification card.
 1. Available agents - The Security Copilot agents page, shows tiles for the available agents. The page currently only shows the Conditional Access Optimization Agent, but more agents are coming soon.
 1. Start Agent - In the Conditional Access Optimization Agent tile, select **View details**. If you have not previously run the agent, you'll see the option to **Start agent** to begin the agent's first run.
 1. Overview page - If you have previously run the agent, selecting view details, brings you to the Overview page. The Overview page shows you see most recent and next scheduled runtimes, performance highlights, recent suggestions, and recent activity.
