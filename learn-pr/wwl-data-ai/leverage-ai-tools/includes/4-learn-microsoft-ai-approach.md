@@ -13,7 +13,7 @@ Together, these drivers enable organizations to move faster, manage risk, and de
 
 :::image type="content" source="../media/04-business-strategy.png" alt-text="Screenshot of a business person looking at a device.":::
 
-The first and most critical driver is aligning AI initiatives with your organization’s business strategy. AI should not be pursued as a technical experiment—it must be integrated with strategic objectives to solve real business problems and deliver measurable value.
+The first and most critical driver is aligning AI initiatives with your organization’s business strategy. AI shouldn't be pursued as a technical experiment—it must be integrated with strategic objectives to solve real business problems and deliver measurable value.
 
 - Define and prioritize business needs, such as improving customer satisfaction, increasing efficiency, or driving innovation.
 - Identify use cases that support these goals and evaluate them based on impact, feasibility, time-to-value, and risk.
@@ -29,7 +29,7 @@ The first and most critical driver is aligning AI initiatives with your organiza
 
 The second driver of AI readiness is building a robust technology and data strategy. AI success depends on high-quality data and scalable infrastructure. Without the right foundation, even the most promising AI initiatives can falter.
 
-AI success depends on high-quality data and scalable infrastructure.You need to:
+AI success depends on high-quality data and scalable infrastructure. You need to:
 
 - Align technology strategy with business goals for scalability, security, and performance.
 - Prepare your data estate by breaking down silos, ensuring data quality, and creating unified views.
@@ -77,7 +77,7 @@ Governance ensures AI is used responsibly and securely. Organizations should:
 - Collaborate across functions—legal, compliance, IT, and business.
 - Create guardrails for responsible use, data protection, and transparency.
 - Build trust through validation, testing, and clear communication.
-- Address risks like bias, data leakage, and regulatory non-compliance proactively.
+- Address risks like bias, data leakage, and regulatory noncompliance proactively.
 
 AI readiness is a journey shaped by these five drivers. Together, they provide a roadmap for scaling AI responsibly and effectively—aligning strategy, technology, people, and governance to deliver measurable business value.
 

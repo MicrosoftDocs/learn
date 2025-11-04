@@ -20,7 +20,7 @@ There are several key AI capabilites to help your organization be more productiv
 
 #### Secure AI Chat
 
-Copilot Chat is the starting point for AI in Microsoft 365. It’s a secure, business-ready chat experience grounded in your organizational data and enhanced by knowledge from the web. Built on the latest models, Copilot Chat is designed for everyday use across apps like Word, PowerPoint, and Excel—helping you draft, summarize, and reason with confidence.
+Copilot Chat is the starting point for AI in Microsoft 365. It’s a secure, business-ready chat experience, grounded in your organizational data and enhanced by knowledge from the web. Built on the latest models, Copilot Chat is designed for everyday use across apps like Word, PowerPoint, and Excel—helping you draft, summarize, and reason with confidence.
 
 #### Powerful AI search
 
@@ -47,7 +47,7 @@ Create brings generative AI into design and storytelling. Generate images, video
 
 Agents are joining the workforce as digital teammates, working alongside humans to drive process improvement. This collaboration delivers measurable ROI through time savings and efficiency gains—and across the organization, these scenarios add up to significant cost reductions.
 
-Agents exist on a spectrum, from simple prompt-and-response to fully autonomous. In this section, we’ll focus on agents designed for work and common processes where they add value.
+Agents exist on a spectrum, from simple prompt-and-response to fully autonomous. In this section, we focus on agents designed for work and common processes where they add value.
 
 How AI agents improve processes:
 
@@ -64,7 +64,7 @@ Autonomous agents enable organizations to move from legacy processes to AI-first
 - **Supplier Communications Agent**. Optimizes supply chains by tracking performance, detecting delays, and responding autonomously—freeing procurement teams from manual monitoring.
 - **Customer Intent and Knowledge Management Agents**. Support customer care teams by resolving issues and autonomously adding knowledge articles to scale best practices.
 
-Additional autonomous agents are available through Dynamics 365, and custom agents can be built with Copilot Studio to fit your unique business needs.
+More autonomous agents are available through Dynamics 365, and custom agents can be built with Copilot Studio to fit your unique business needs.
 
 > [!TIP]
 > Prebuilt agents accelerate adoption, but custom agents unlock tailored value. Use Copilot Studio to create agents that understand your workflows and act on your behalf—delivering support across roles, teams, and functions.
@@ -72,7 +72,7 @@ Additional autonomous agents are available through Dynamics 365, and custom agen
 > [!NOTE]
 > The following are some examples of what companies are doing today:
 > 
-> - Organizations like Clifford Chance, McKinsey & Company, Pets at Home and Thomson Reuters are already creating autonomous agents to increase revenue, reduce costs and scale impact.
+> - Organizations like Clifford Chance, McKinsey & Company, Pets at Home and Thomson Reuters are already creating autonomous agents to increase revenue, reduce costs, and scale impact.
 > - Pets at Home, the U.K.’s leading pet care business, created an agent for its profit protection team to more efficiently compile cases for skilled human review, which could have the potential to drive a seven-figure annual savings.  
 > - McKinsey & Company is creating an agent that will speed up the client onboarding process. The pilot showed lead time could be reduced by 90% and administrative work reduced by 30%.  
 > - Thomson Reuters built a professional-grade agent to speed up the legal due diligence workflow, with initial testing showing some tasks could be done in half the time. This agent can help Thomson Reuters increase the efficiency of work for clients and boost its new business pipeline.

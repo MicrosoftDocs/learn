@@ -12,12 +12,12 @@ Generative AI is a subset of AI that creates content—text, code, images, or vi
 - Predictive: forecasting, anomaly detection, scoring
 - Prescriptive: recommendations, optimization
 
-**Example**: Use generative AI to draft follow up questions after a meeting, create a slide image from a description, or explain a complex idea in plain language.
+**Example**: Use generative AI to draft follow-up questions after a meeting, create a slide image from a description, or explain a complex idea in plain language.
 
 :::image type="content" source="../media/02-artificial-intelligence-concepts.png" alt-text="Diagram showing generative AI as a subset of AI.":::
 
 > [!NOTE]
-> AI has powerful potential—and important responsibilities. **Responsible AI** means designing and using AI that is accountable, inclusive, reliable, safe, fair, transparent, secure, and respectful of privacy. For example, AI can create realistic media; using it to mislead people or violate privacy is harmful. Responsible AI practices help you unlock value while protecting customers, employees, and your brand.
+> AI has powerful potential—and important responsibilities. **Responsible AI** means designing and using AI that's accountable, inclusive, reliable, safe, fair, transparent, secure, and respectful of privacy. For example, AI can create realistic media; using it to mislead people or violate privacy is harmful. Responsible AI practices help you unlock value while protecting customers, employees, and your brand.
 
 ## Why this matters
 

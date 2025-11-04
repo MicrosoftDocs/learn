@@ -2,7 +2,7 @@
 uid: learn.wwl.leverage-ai-tools
 metadata:
   title: "Leverage AI tools and resources for your business"
-  description: "Learn how to leverage AI tools and resources for your business."
+  description: "Learn how to use AI tools and resources for your business."
   ms.date: 11/03/2025
   author: wwlpublish
   ms.author: rcaper
@@ -11,11 +11,11 @@ metadata:
 title: "Leverage AI tools and resources for your business"
 summary: Drive business transformation with Azure cloud and AI. Learn how to unify your data estate, modernize infrastructure, and build intelligent apps and agents—while securing AI with governance, compliance, and responsible practices to deliver measurable outcomes.
 abstract: |
-  After completing this module, you will be able to:
-  - Prioritize AI use cases by value, feasibility, and time to value, and track results with clear KPIs.
+  After completing this module, you'll be able to:
+  - Prioritize AI use cases by value, feasibility, and time to value, and track results with clear Key Performance Indicators (KPIs).
   - Unify data, modernize infrastructure, and adopt Azure services to run secure, compliant AI at scale.
   - Put governance, security, and regulatory controls in place to manage risk and maintain trust.
-  - •	Enable people to use AI in daily work with Copilot, agents, and low code tools to boost productivity and streamline processes.
+  - Enable people to use AI in daily work with Copilot, agents, and low code tools to boost productivity and streamline processes.
 prerequisites: 'None.'
 iconUrl: /training/achievements/leverage-ai-tools.svg
 levels:

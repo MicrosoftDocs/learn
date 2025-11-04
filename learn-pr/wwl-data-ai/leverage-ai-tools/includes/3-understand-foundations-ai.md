@@ -10,7 +10,7 @@ Machine learning is a set of techniques that lets systems learn patterns from da
 
 **Examples of machine learning**:
 
-- Email spam detection: Machine learning identifies signals—such as suspicious words, blacklisted domains, or mismatched URLs—to filter unwanted messages.
+- Email spam detection: Machine learning identifies signals—such as suspicious words, bocked domains, or mismatched URLs—to filter unwanted messages.
 - Credit card fraud detection: Machine learning flags unusual patterns, like atypical locations or sudden spending spikes, to reduce risk.
 
 ## What is deep learning?
@@ -29,6 +29,6 @@ Understanding how AI works is only the start. For business leaders, the real que
 - **Invest in data quality**: Clean, consistent, and well‑labeled data is the foundation of trustworthy AI; without it, even the best models underperform.
 - **Plan for operations**: Define how you’ll monitor performance, detect drift, and retrain models as conditions change to keep outcomes stable over time.
 - **Keep humans in the loop**: Use AI to augment expertise, not replace it—especially for high‑stakes decisions where oversight, context, and judgment matter.
-- **Measure what matters**: Tie AI initiatives to clear KPIs (e.g., time‑to‑value, accuracy, cost savings, customer satisfaction) and use A/B/N testing to validate impact.
+- **Measure what matters**: Tie AI initiatives to clear Key Performance Indicators (KPIs), such as time‑to‑value, accuracy, cost savings, customer satisfaction, and use A/B/N testing to validate impact.
 
 Next, explore the Microsoft approach to AI adoption.

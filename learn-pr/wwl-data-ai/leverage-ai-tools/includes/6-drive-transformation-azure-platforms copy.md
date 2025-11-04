@@ -36,7 +36,7 @@ Modernizing IT infrastructure unlocks agility and lays the foundation for AI inn
 - **Azure Arc**: Extends Azure management and governance to on-premises, multicloud, and edge environments.
 - **Azure Landing Zone**: Scalable foundation for cloud adoption with best practices for identity, security, and governance.
 - **Azure Monitor**: Full-stack observability with metrics, logs, and alerts.
-- **Microsoft Defender for Cloud**: Comprehensive security posture management and threat protection across Azure, AWS, and GCP.
+- **Microsoft Defender for Cloud**: Comprehensive security posture management and threat protection across Azure, Amazon web Services (AWS), and Googl Cloud Platform (GCP).
 
 > [!TIP]
 > Start with a cloud migration assessment to identify workloads that benefit most from modernization.
