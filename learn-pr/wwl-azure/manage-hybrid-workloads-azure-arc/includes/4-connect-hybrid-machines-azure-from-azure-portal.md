@@ -10,6 +10,6 @@ In this demonstration, you learn to:
 
 Review the steps for this demonstration: [Connect hybrid machines to Azure from the Azure portal](https://aka.ms/onboard-portal?azure-portal=true).
 
-If you want to repeat these steps, [get a free trial Azure subscription](https://azure.microsoft.com/free/?azure-portal=true). After completing the steps, delete any resource groups you created.
+If you want to repeat these steps, [get a free trial Azure subscription](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn). After completing the steps, delete any resource groups you created.
 
 Choose the best response for each of the questions below:

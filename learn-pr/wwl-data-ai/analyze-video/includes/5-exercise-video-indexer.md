@@ -3,7 +3,7 @@ Now it's your turn to try using the Azure AI Video Indexer service.
 In this exercise, you analyze a video using the Azure AI Video Indexer portal and its API.
 
 > [!NOTE]
-> To complete this lab, you need an **[Azure subscription](https://azure.microsoft.com/free?azure-portal=true)** in which you have administrative access.
+> To complete this lab, you need an **[Azure subscription](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn)** in which you have administrative access.
 
 Launch the exercise and follow the instructions.
 

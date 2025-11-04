@@ -15,7 +15,7 @@ prerequisites: |
   - Knowledge of operational technology (OT) networks and networking concepts at an intermediate level 
   - Familiarity with the Purdue networking model, like the device types that are included in each networking level
   - Knowledge of what Azure roles and role-based access controls (RBAC) are and how they work at a beginner level
-  - Access to an [Azure subscription](https://azure.microsoft.com/free) as a Security Admin, Contributor, or Owner user
+  - Access to an [Azure subscription](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn) as a Security Admin, Contributor, or Owner user
   -	A Defender for IoT license with an [OT plan](/azure/defender-for-iot/organizations/getting-started)
   - A configured firewall and all of the rules and settings for it to connect to port 443, including: IP address, subnet mask, default gateway, DNS and hostname
   - Access to either a virtual or physical OT sensor

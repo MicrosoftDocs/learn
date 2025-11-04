@@ -4,8 +4,8 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: "Knowledge check"
-  ms.date: 05/07/2024
-  author: wwlpublish
+  ms.date: 09/11/2025
+  author: LuizMacedo
   ms.author: lumac
   ms.topic: unit
   module_assessment: true
@@ -47,4 +47,4 @@ quiz:
       explanation: "Incorrect. Automatically ensure you don't ship broken code."
     - content: "Ensure deployment targets have the latest code."
       isCorrect: false
-      explanation: "Incorrect. Automatically ensure you don't ship broken code."
+      explanation: "Incorrect. Automatically ensure you don't ship broken code."

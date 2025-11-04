@@ -4,7 +4,7 @@ You need to assign extra permissions to one of your newly created administrators
 
 The tasks in this exercise and the exercises in this learning path require you to already have an Azure subscription that you can use or to sign up for an Azure trial account. If you already have your own Azure subscription, you might skip this task and continue to the next.
 
-1. In a web browser, go to [Azure portal](https://azure.microsoft.com/free/).
+1. In a web browser, go to [Azure portal](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn).
 2. Scroll down through the page to learn more about the benefits and free services available.
 3. Select **Start free**.
 4. Use the wizard to sign up for your Azure trial subscription.

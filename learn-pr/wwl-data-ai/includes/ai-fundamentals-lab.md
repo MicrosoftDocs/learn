@@ -1,6 +1,6 @@
 To complete this exercise, you'll need the following:
 
-- **A Microsoft Azure subscription**. If you don't already have one, you can sign up for a free trial at [https://azure.microsoft.com/free](https://azure.microsoft.com/free?azure-portal=true).
+- **A Microsoft Azure subscription**. If you don't already have one, you can sign up for a free trial at [https://azure.microsoft.com/free](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn).
 - **A Python environment** in which you can run the Jupyter notebooks in the [MicrosoftLearning/mslearn-ai900](https://github.com/MicrosoftLearning/mslearn-ai900) GitHub repository. Launch a virtual lab environment from the gray box above which will provide you with a Python environment in Visual Studio Code. 
     - Alternatively, you can clone the lab files from GitHub into your own environment and follow these [instructions](https://github.com/MicrosoftLearning/mslearn-ai900/blob/main/instructions/00%20-%20Local%20development.md) to set up your environment.  
 

@@ -3,7 +3,7 @@ Use this Try-This exercise to gain some hands-on experience with Azure Kubernete
 To view the image in your registry, navigate to your registry in the portal and select **Repositories**, then select the **hello-world** repository you created with `docker push`.
 
 > [!NOTE]
-> To complete this procedure, you need an [Azure subscription](https://azure.microsoft.com/free/).
+> To complete this procedure, you need an [Azure subscription](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn).
 
 1.  From **Container registries**, select the registry you created in the previous unit.
     
