@@ -29,7 +29,7 @@ Follow these steps to configure the Threat Intelligence Briefing Agent, correspo
 5. Run - After setup, access the agent overview page to run the agent manually or schedule it to run automatically.
 
 # [Agents](#tab/agents)
-:::image type="content" source="../media/agents-copilot-threat-intelligence.png" lightbox="../media/aagents-copilot-threat-intelligence.png" alt-text="Screen capture showing the navigation flow to access the Agents page in Microsoft Security Copilot. ":::
+:::image type="content" source="../media/agents-copilot-threat-intelligence.png" lightbox="../media/agents-copilot-threat-intelligence.png" alt-text="Screen capture showing the navigation flow to access the Agents page in Microsoft Security Copilot. ":::
 
 # [Details page](#tab/details-page)
 :::image type="content" source="../media/threat-intelligence-agent-view-details.png" lightbox="../media/threat-intelligence-agent-view-details.png" alt-text="Screenshot of Threat Intelligence Briefing Agent details page.":::
