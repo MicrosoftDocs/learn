@@ -1,60 +1,41 @@
 ### YamlMime:Module
 uid: learn.wwl.leverage-ai-tools
 metadata:
-  title: Leverage AI tools and resources for your business
-  description: "Learn the primary concepts and technologies of AI, and how Microsoft is turning the latest AI into tools, products, and services that organizations can use."
-  ms.date: 02/13/2025
-  author: Adriamen
+  title: "Leverage AI tools and resources for your business"
+  description: "Learn how to leverage AI tools and resources for your business."
+  ms.date: 11/03/2025
+  author: wwlpublish
   ms.author: rcaper
   ms.topic: module
-  ms.collection: N/A
-  ms.custom:
-  - N/A
-  ms.service: microsoft-365
-  ai-usage: human-only
-title: Leverage AI tools and resources for your business
-summary: This module provides a high-level overview of the primary concepts of AI and the technologies behind it. You’ll learn how Microsoft is embedding AI into tools, products, and services that can be used by organizations.
+  ms.service: artificial-intelligence
+title: "Leverage AI tools and resources for your business"
+summary: Drive business transformation with Azure cloud and AI. Learn how to unify your data estate, modernize infrastructure, and build intelligent apps and agents—while securing AI with governance, compliance, and responsible practices to deliver measurable outcomes.
 abstract: |
-  In this module, you will:
-
-  -   Understand basic AI terminology and concepts.
-
-  -   Articulate Microsoft’s approach to AI.
-
-  -   Identify scenarios in which copilots can benefit an organization.
-
-  -   Identify scenarios in which Power Platform can be used to integrate AI into business processes.
-
-  -   Identify scenarios where AI Services can be used to build custom AI solutions.
-
-  -   Identify scenarios where Azure Machine Learning enables organizations to train and manage AI models.
-prerequisites: |
-  -   Basic understanding of IT concepts.
-
-  -   Basic understanding of business concepts.
+  After completing this module, you will be able to:
+  - Prioritize AI use cases by value, feasibility, and time to value, and track results with clear KPIs.
+  - Unify data, modernize infrastructure, and adopt Azure services to run secure, compliant AI at scale.
+  - Put governance, security, and regulatory controls in place to manage risk and maintain trust.
+  - •	Enable people to use AI in daily work with Copilot, agents, and low code tools to boost productivity and streamline processes.
+prerequisites: 'None.'
 iconUrl: /training/achievements/leverage-ai-tools.svg
 levels:
 - beginner
 roles:
-- business-owner
-- business-user
+- business-leader
 products:
 - azure
-- dynamics-365
-- m365
+- microsoft-365-copilot
 subjects:
 - artificial-intelligence
-- data-management
 units:
-- learn.wwl.leverage-ai-tools.introduction
-- learn.wwl.leverage-ai-tools.identify-basic-ai-technology-concepts
-- learn.wwl.leverage-ai-tools.identify-foundations-of-ai
-- learn.wwl.leverage-ai-tools.learn-microsoft-ai-approach
-- learn.wwl.leverage-ai-tools.use-ai-embedded-everyday-applications
-- learn.wwl.leverage-ai-tools.discover-how-microsoft-power-platform
-- learn.wwl.leverage-ai-tools.explore-potential-azure-cognitive-services
-- learn.wwl.leverage-ai-tools.understand-machine-learning-lifecycle
-- learn.wwl.leverage-ai-tools.knowledge-check
-- learn.wwl.leverage-ai-tools.summary
+- learn.wwl.leverage-ai-tools.1-introduction
+- learn.wwl.leverage-ai-tools.2-identify-basic-ai-technology-concepts
+- learn.wwl.leverage-ai-tools.3-understand-foundations-ai
+- learn.wwl.leverage-ai-tools.4-learn-microsoft-ai-approach
+- learn.wwl.leverage-ai-tools.5-explore-copilot-agents-at-work
+- learn.wwl.leverage-ai-tools.6-drive-transformation-azure-platforms
+- learn.wwl.leverage-ai-tools.7-secure-ai-foundation
+- learn.wwl.leverage-ai-tools.8-knowledge-check
+- learn.wwl.leverage-ai-tools.9-summary
 badge:
   uid: learn.wwl.leverage-ai-tools.badge

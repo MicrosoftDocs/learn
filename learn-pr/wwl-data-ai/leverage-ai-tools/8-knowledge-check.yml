@@ -1,0 +1,38 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.leverage-ai-tools.8-knowledge-check
+title: "Knowledge check"
+metadata:
+  title: "Knowledge check"
+  description: "Choose the best response for each of the questions below."
+  ms.date: 10/30/2023
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: unit
+  module_assessment: false
+durationInMinutes: 3
+quiz:
+  questions:
+  - content: "Which Azure capability best supports a unified data foundation for analytics and governance?"
+    choices:
+    - content: "Azure SQL Database."
+      isCorrect: false
+    - content: "Microsoft Fabric."
+      isCorrect: true
+    - content: "Azure Functions."
+      isCorrect: false
+  - content: "What is a primary benefit of modernizing your estate with Azure Landing Zones?"
+    choices:
+    - content: "Provides a scalable foundation with security, governance, and resource organization."
+      isCorrect: true
+    - content: "Eliminates the need for identity management."
+      isCorrect: false
+    - content: "Replaces all existing on premises applications."
+      isCorrect: false
+  - content: "Which practice is most important for responsible AI at scale"
+    choices:
+    - content: "Maximizing model complexity."
+      isCorrect: false
+    - content: " Reducing stakeholder involvement."
+      isCorrect: false
+    - content: " Implementing governance, security, and regulatory controls."
+      isCorrect: true
