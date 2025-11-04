@@ -11,7 +11,7 @@ metadata:
     - N/A
   ms.service: azure
   ai-usage: ai-assisted
-title: Explore Infrastructure as Code and Configuration Management
+title: Explore Infrastructure as Code and configuration management
 summary: This module examines Infrastructure as Code (IaC) foundational concepts encompassing environment deployment provisioning and configuration management methodologies. Content explores imperative versus declarative configuration approaches, idempotent configuration principles, and organizational implementation strategies enabling automated infrastructure operations with version control, consistency, and reproducibility.
 abstract: |
   By the end of this module, you're able to:

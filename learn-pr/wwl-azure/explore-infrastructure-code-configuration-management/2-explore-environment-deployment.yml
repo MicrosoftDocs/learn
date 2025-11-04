@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.explore-infrastructure-as-code-configuration-management.explore-environment-deployment
-title: Explore Environment Deployment
+title: Explore environment deployment
 metadata:
   title: Explore Environment Deployment
   description: "Learn manual deployment versus Infrastructure as Code approaches, implementation strategies, and benefits including automation, consistency, and immutable infrastructure."

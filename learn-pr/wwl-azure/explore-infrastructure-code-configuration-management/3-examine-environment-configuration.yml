@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.explore-infrastructure-as-code-configuration-management.examine-environment-configuration
-title: Examine Environment Configuration
+title: Examine environment configuration
 metadata:
   title: Examine Environment Configuration
   description: "Explore configuration management principles, automated configuration approaches, version-controlled configurations, and benefits including consistency, drift detection, and reduced documentation."
