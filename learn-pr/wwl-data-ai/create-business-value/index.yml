@@ -32,13 +32,13 @@ subjects:
 - artificial-intelligence
 - data-management
 units:
-- learn.wwl.create-business-value.1-introduction
-- learn.wwl.create-business-value.2-business-strategy
-- learn.wwl.create-business-value.3-technology-data-strategy
-- learn.wwl.create-business-value.4-ai-strategy-experience
-- learn.wwl.create-business-value.5-organization-culture
-- learn.wwl.create-business-value.6-ai-governance
-- learn.wwl.create-business-value.7-knowledge-check
-- learn.wwl.create-business-value.8-summary
+- learn.wwl.create-business-value.introduction
+- learn.wwl.create-business-value.business-strategy
+- learn.wwl.create-business-value.technology-data-strategy
+- learn.wwl.create-business-value.ai-strategy-experience
+- learn.wwl.create-business-value.organization-culture
+- learn.wwl.create-business-value.ai-governance
+- learn.wwl.create-business-value.knowledge-check
+- learn.wwl.create-business-value.summary
 badge:
   uid: learn.wwl.create-business-value.badge

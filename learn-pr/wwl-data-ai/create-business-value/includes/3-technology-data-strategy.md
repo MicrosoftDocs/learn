@@ -1,13 +1,13 @@
 A reliable AI outcome starts with the right platform and data. This unit explains how to align technology to strategy, prepare your data estate, and choose build versus buy so you can move from proof‑of‑concept to production.
 
-:::image type="content" source="../media/03-technology-data-strategy.png" alt-text="Screenshot of a person looking at a monitor.":::
+:::image type="content" source="../media/03-technology-data-strategy.jpg" alt-text="Screenshot of a person looking at a monitor.":::
 
 ## Align tech strategy to business goals
 
 Your technology choices should directly enable your strategic priorities. This means defining target architectures that support scalability, security, and performance; selecting deployment models that match your risk and cost profile; and standardizing on landing zones and governance patterns so teams can onboard and iterate quickly.
 
 - Define target architectures that support **scalability**, **security**, and **performance**.
-- Choose a **deployment model** (cloud, on‑premises, colocation, or hybrid) that fits your risk and cost profile.
+- Choose a **deployment model** (cloud, on-premises, colocation, or hybrid) that fits your risk and cost profile.
 - Standardize on **landing zones** and governance patterns to accelerate onboarding.
 
 ## Prepare your data estate
@@ -34,11 +34,11 @@ Deciding whether to buy a prebuilt AI capability or build a custom solution depe
 
 ## Plan for compliance and security
 
-Build compliance and security into AI from the start. Aligning to relevant regulations, protecting data, and using strong cloud and on prem controls reduces risk and enables confident, scalable adoption.
+Build compliance and security into AI from the start. Aligning to relevant regulations, protecting data, and using strong cloud and on-premises controls reduces risk and enables confident, scalable adoption.
 
 - Plan for compliance and security and choose deployment models that fit your needs.
 - Ensure data privacy, residency, and encryption.
-- Use cloud security services for identity, access, and monitoring; keep on‑prem for data sovereignty as needed.
+- Use cloud security services for identity, access, and monitoring; keep on-premises for data sovereignty as needed.
 
 ## Keep data readiness continuous
 
