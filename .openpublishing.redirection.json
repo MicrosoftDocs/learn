@@ -59993,6 +59993,106 @@
       "source_path_from_root": "/learn-pr/wwl-data-ai/create-business-value/6-summary.md",
       "redirect_url": "/training/modules/create-business-value/8-summary/",
       "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/test-machine-learning-models/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/create-machine-learn-models/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/test-machine-learning-models/2-normalization-and-standardization.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/create-machine-learn-models/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/test-machine-learning-models/3-exercise-feature-normalization.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/create-machine-learn-models/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/test-machine-learning-models/4-test-training-datasets.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/create-machine-learn-models/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/test-machine-learning-models/5-exercise-test-training-datasets.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/create-machine-learn-models/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/test-machine-learning-models/6-nuance-tests.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/create-machine-learn-models/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/test-machine-learning-models/7-exercise-test-set-nuances.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/create-machine-learn-models/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/test-machine-learning-models/8-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/create-machine-learn-models/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/test-machine-learning-models/9-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/create-machine-learn-models/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/test-machine-learning-models/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/create-machine-learn-models/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/machine-learning-confusion-matrix/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/create-machine-learn-models/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/machine-learning-confusion-matrix/2-confusion-matrices.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/create-machine-learn-models/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/machine-learning-confusion-matrix/3-exercise-building-matrix.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/create-machine-learn-models/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/machine-learning-confusion-matrix/4-data-imbalances.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/create-machine-learn-models/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/machine-learning-confusion-matrix/5-exercise-resolve-bias.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/create-machine-learn-models/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/machine-learning-confusion-matrix/6-cost-vs-evaluation.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/create-machine-learn-models/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/machine-learning-confusion-matrix/7-exercise-metrics-and-curves.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/create-machine-learn-models/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/machine-learning-confusion-matrix/8-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/create-machine-learn-models/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/machine-learning-confusion-matrix/9-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/create-machine-learn-models/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/machine-learning-confusion-matrix/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/create-machine-learn-models/",
+      "redirect_document_id": false
     }
   ]
 }

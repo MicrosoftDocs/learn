@@ -7230,5 +7230,13 @@ achievements:
   title: Introduction to Azure Remote Rendering
   summary: Describe how Microsoft Azure Remote Rendering can enable you to bring your high-quality 3D models into mixed reality. Evaluate whether Azure Remote Rendering, a cloud-hosted service, can help you complete complex rendering workloads.
   iconUrl: /training/achievements/intro-to-azure-remote-rendering-social.png
-
-
+- uid: learn.machinelearning.evaluate-real-world-models.badge
+  type: badge
+  title: Confusion matrix and data imbalances
+  summary: How do we know if a model is good or bad at classifying our data? The way that computers assess model performance sometimes can be difficult for us to comprehend or can over-simplify how the model behaves in the real world. To build models that work satisfactorily, we need to find intuitive ways to assess them, and understand how these metrics can bias our view.
+  iconUrl: /training/achievements/machine-learning/machine-learning-confusion-matrix.svg
+- uid: learn.machinelearning.test-machine-learning-models.badge
+  type: badge
+  title: Refine and test machine learning models
+  summary: When we think of machine learning, we often focus on the training process. A small amount of preparation before this process can not only speed up and improve learning, but also give us some confidence about how well our models will work when faced with data we have never seen before.
+  iconUrl: /training/achievements/machine-learning/test-machine-learning-models.svg
