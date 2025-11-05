@@ -60020,11 +60020,6 @@
       "redirect_document_id": false
     },
     {
-      "source_path_from_root": "/learn-pr/azure/introduction-to-machine-learning/5-exercise-improve-models.yml",
-      "redirect_url": "https://learn.microsoft.com/training/paths/create-machine-learn-models/",
-      "redirect_document_id": false
-    },
-    {
       "source_path_from_root": "/learn-pr/azure/introduction-to-machine-learning/6-test-models.yml",
       "redirect_url": "https://learn.microsoft.com/training/paths/create-machine-learn-models/",
       "redirect_document_id": false
