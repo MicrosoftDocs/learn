@@ -7230,5 +7230,13 @@ achievements:
   title: Introduction to Azure Remote Rendering
   summary: Describe how Microsoft Azure Remote Rendering can enable you to bring your high-quality 3D models into mixed reality. Evaluate whether Azure Remote Rendering, a cloud-hosted service, can help you complete complex rendering workloads.
   iconUrl: /training/achievements/intro-to-azure-remote-rendering-social.png
-
-
+- uid: learn.machinelearning.optimize-model-performance-roc-auc-dropout.badge
+  type: badge
+  title: Measure and optimize model performance with ROC and AUC
+  summary: Receiver operator characteristic (ROC) curves are a powerful way to assess and fine-tune trained classification models. We introduce and explain the utility of these curves through learning content and practical exercises.
+  iconUrl: /training/achievements/machine-learning/optimize-model-performance-roc-auc.svg
+- uid: learn.machine-learning-essentials.trophy
+  type: trophy
+  title: Understand data science for machine learning
+  summary: Machine learning is enables data scientists make predictions about objects, people, and the future. This learning path is a high-level introduction to machine learning for people with little or no knowledge of computer science or statistics.
+  iconUrl: /training/achievements/machine-learning/machine-learning-essentials.svg
