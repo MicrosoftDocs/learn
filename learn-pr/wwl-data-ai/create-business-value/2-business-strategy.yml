@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-business-value.2-business-strategy
+title: "Business strategy"
+metadata:
+  title: "Business Strategy"
+  description: "Learn to align AI with strategy, prioritize use cases, measure outcomes, and manage a portfolio to maximize business impact."
+  ms.date: 11/04/2025
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-business-strategy.md)]
