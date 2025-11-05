@@ -21,7 +21,7 @@ abstract: |
   - Create, manage, and resolve Insider Risk Management cases.
 prerequisites: |
   - Familiarity with Microsoft Purview Insider Risk Management policies and indicators
-  - Basic understanding of Microsoft 365 compliance and security tools
+  - Basic understanding of Microsoft 365 security and compliance tools
 iconUrl: /training/achievements/generic-badge.svg
 levels:
 - intermediate
