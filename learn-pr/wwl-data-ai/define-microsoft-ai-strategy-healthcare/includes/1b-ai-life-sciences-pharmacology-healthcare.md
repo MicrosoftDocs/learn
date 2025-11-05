@@ -29,6 +29,6 @@ Hospitals and health systems deploy AI to optimize scheduling, automate document
 Conversational AI and virtual health assistants enable personalized, multilingual interactions that improve access and adherence. Generative AI can summarize care instructions, answer questions, and support remote monitoring, creating a more connected patient journey.
 
 ### Data security and compliance
-Healthcare operates in one of the most regulated environments. Microsoft AI solutions are built on the Microsoft Cloud for Healthcare, ensuring compliance with HIPAA, GDPR, and other global standards. This foundation of trust allows organizations to innovate without compromising privacy or security.
+Healthcare operates in one of the most regulated environments. Microsoft AI solutions are built on the Microsoft Cloud for Healthcare, ensuring compliance with global standards. This foundation of trust allows organizations to innovate without compromising privacy or security.
 
 Next, let's explore the goals and challenges in life sciences, pharmacology, and healthcare.
