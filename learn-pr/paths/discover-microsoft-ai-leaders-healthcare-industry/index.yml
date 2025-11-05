@@ -2,7 +2,7 @@
 uid: learn.wwl.discover-microsoft-ai-leaders-healthcare-industry
 metadata:
   title: Discover AI for Leaders in Healthcare
-  description: In this learning path, healthcare business leaders will find all the knowledge and resources to adopt AI in their organizations. It discusses available resources, strategy, responsible practices, and finance use cases.
+  description: In this learning path, healthcare business leaders will find the knowledge and resources to adopt AI in their organizations. It discusses available resources, strategy, responsible practices, and finance use cases.
   ms.date: 05/05/2025
   author: wwlpublish
   ms.author: rcaper
@@ -12,7 +12,7 @@ prerequisites: |
   -   Basic understanding of AI concepts.
   -   Basic understanding of healthcare concepts.
 summary: |
-  In this learning path, healthcare business leaders will find all the knowledge and resources to adopt AI in their organizations. It discusses available resources, strategy, responsible practices, and healthcare use cases.
+  In this learning path, healthcare business leaders will find the knowledge and resources to adopt AI in their organizations. It discusses available resources, strategy, responsible practices, and healthcare use cases.
 iconUrl: /training/achievements/discover-microsoft-ai-leaders-healthcare-industry.svg
 levels:
 - beginner
