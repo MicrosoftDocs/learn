@@ -3,7 +3,7 @@ uid: learn.wwl.purview-insider-risk-investigate-alerts
 metadata:
   title: Investigate Insider Risk Alerts and Related Activity
   description: "Investigate Insider Risk Alerts and Related Activity."
-  ms.date: 08/05/2025
+  ms.date: 11/05/2025
   author: wwlpublish
   ms.author: riswinto
   ms.topic: module
@@ -39,6 +39,7 @@ units:
 - learn.wwl.purview-insider-risk-investigate-alerts.understand-insider-risk-alerts
 - learn.wwl.purview-insider-risk-investigate-alerts.manage-alert-volume
 - learn.wwl.purview-insider-risk-investigate-alerts.investigate-triage-alerts
+- learn.wwl.purview-insider-risk-investigate-alerts.investigate-alerts-security-copilot-agents
 - learn.wwl.purview-insider-risk-investigate-alerts.all-risk-factors-tab
 - learn.wwl.purview-insider-risk-investigate-alerts.activity-explorer-tab
 - learn.wwl.purview-insider-risk-investigate-alerts.user-activity-tab
