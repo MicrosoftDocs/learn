@@ -1,4 +1,4 @@
-:::image type="content" border="true" source="../media/surface-pro-12-ports" alt-text="Image of diagram showing the port selection on Surface Pro 12 inch":::
+:::image type="content" border="true" source="../media/surface-pro-12-ports.png" alt-text="Image of diagram showing the port selection on Surface Pro 12 inch":::
 
 Surface Pro 12-inch is a Copilot+ PC that is ideal for AI productivity use cases, flexible work, and portability. Let's get familiar with the hardware of Surface Pro 12-inch before you turn it on for the first time.
 
@@ -45,7 +45,6 @@ It is important to keep your Surface Pro 12-inch Keyboard updated to ensure opti
 - From the choice of connected accessories at the bottom of the app, select your keyboard.
 - Expand **Firmware Update** to view the currently installed firmware and see whether it is up to date. If needed, select the option to update the device.
 - After installing the update, disconnect Surface Pro 12-inch from the keyboard and then reconnect it.
-:::image type="content" border="true" source="../media/img-6f44598b.gif" alt-text="":::
 
 **Using the Precision Touchpad:** Surface Pro 12-inch Keyboard features a precision touchpad that uses two buttons which can be used as a mouse—as well as gestures to interact with your Surface. Let's go over some of those gestures and what they can do:
 
