@@ -72,7 +72,7 @@ The following reference lists all the tables in the schema. Each table name link
 | DeviceTvmSoftwareVulnerabilitiesKB| Knowledge base of publicly disclosed vulnerabilities, including whether exploit code is publicly available|  
 |EmailAttachmentInfo| Information about files attached to emails|
 | EmailEvents| Microsoft 365 email events, including email delivery and blocking events|
-| EmailPostDeliveryEvents| Security events that occur post-delivery, after Microsoft 365 has delivered the emails to the recipient mailbox|
+| EmailPostDeliveryEvents| Security events that occur post-delivery, after Microsoft 365 delivered the emails to the recipient mailbox|
 | EmailUrlInfo| Information about URLs on emails|
 | IdentityDirectoryEvents| Events involving an on-premises domain controller running Active Directory (AD). This table covers a range of identity-related events and system events on the domain controller.|
 | IdentityInfo| Account information from various sources, including Microsoft Entra ID|
@@ -132,7 +132,7 @@ With the query in the query editor, select Create detection rule and specify the
 
 - Detection name—name of the detection rule
 
-- Frequency—interval for running the query and taking action. See additional guidance below
+- Frequency—interval for running the query and taking action. See more guidance below
 
 - Alert title—title displayed with alerts triggered by the rule
 
@@ -159,7 +159,7 @@ When saved, a new custom detection rule immediately runs and checks for matches 
 
 - Every hour—runs hourly, checking data from the past 4 hours
 
-- Continuous (NRT)—runs continuously, checking data from events as they are collected and processed in near real-time   (NRT)
+- Continuous (NRT)—runs continuously, checking data from events as they're collected and processed in near real-time   (NRT)
 
 Select the frequency that matches how closely you want to monitor detections, and consider your organization's capacity to respond to the alerts.
 
@@ -170,11 +170,11 @@ Select the frequency that matches how closely you want to monitor detections, an
 
 Identify the columns in your query results where you expect to find the main affected or impacted entity. For example, a query might return both device and user IDs. Identifying which of these columns represents the main impacted entity helps the service aggregate relevant alerts, correlate incidents, and target response actions.
 
-You can select only one column for each entity type. Columns that aren't returned by your query can't be selected.
+You can select only one column for each entity type. Columns not returned by your query can't be selected.
 
 **5. Specify actions.**
 
-Your custom detection rule can automatically take actions on files or devices that are returned by the query.
+Your custom detection rule can automatically take actions on files or devices returned by the query.
 
 Actions on devices
 
@@ -204,8 +204,102 @@ Set the scope to specify which devices are covered by the rule:
 
 - Specific device groups
 
-Only data from devices in scope will be queried. Also, actions will be taken only on those devices.
+Only data from devices in scope are queried. Also, actions are taken only on those devices.
 
 **7. Review and turn on the rule.**
 
 After reviewing the rule, select Create to save it. The custom detection rule immediately runs. It runs again based on configured frequency to check for matches, generate alerts, and take response actions.
+
+## Visualize threat paths with the Hunting graph (Preview)
+
+> [!IMPORTANT]
+> The Hunting graph is in Preview. Capabilities may change before general availability.
+
+The Hunting graph is the Microsoft Sentinel graph integration with Microsoft Defender XDR. It extends advanced hunting by rendering predefined threat scenarios as interactive, graph‑based visualizations. Instead of manually stitching relationships through KQL joins, you can visually traverse entities (nodes) and their relationships (edges) to quickly spot attack paths, choke points, or over‑privileged identities.
+
+:::image type="content" source="../media/hunting-graph-render.png" alt-text="Screenshot of a rendered graph in the hunting graph page." lightbox="../media/hunting-graph-render.png":::
+
+### Why use the Hunting graph?
+
+Use it when you need to:
+
+- Trace potential lateral‑movement paths between two entities.
+- Assess exposure to sensitive assets (Key Vaults, storage accounts, SQL data stores, Kubernetes clusters).
+- Inventory identities with access to high‑value repositories (for example, Azure DevOps).
+- Prioritize mitigation by finding nodes that appear in many critical paths.
+
+It complements tabular KQL queries: start visually to scope the investigation, then pivot to advanced hunting queries or custom detections for automation.
+
+### Prerequisites and access
+
+You need:
+
+- Appropriate Microsoft Entra ID role for advanced hunting.
+- Access to the Microsoft Sentinel data lake (for cross‑workspace graph data).
+- At least read-only access in Microsoft Security Exposure Management.
+
+### How to launch it
+
+1. In the Microsoft Defender portal: **Investigation & response > Hunting > Advanced hunting**.
+2. In the Advanced hunting page toolbar, select the hunting graph icon, or choose **Create new > Hunting graph**.
+3. A new tab labeled “New hunt” opens.
+
+:::image type="content" source="../media/hunting-graph-new.png" alt-text="Screenshot of the Create new Hunting graph option in the advanced hunting page." lightbox="../media/hunting-graph-new.png":::
+
+### Graph basics
+
+- **Nodes** represent entities (users, devices, storage accounts, clusters, repositories, etc.).
+- **Edges** represent relationships (permissions, authentication capability, membership, traffic routing, containment).
+- Controls in the lower-right let you zoom and manage **Layers** (helpful for decluttering dense graphs).
+
+### Using predefined scenarios
+
+Choose “Search with predefined scenarios” to load a guided panel.
+
+:::image type="content" source="../media/hunting-graph-predefined-scenarios.png" alt-text="Screenshot of the hunting graph page highlighting the Search with Predefined scenarios button." lightbox="../media/hunting-graph-predefined-scenarios.png":::
+
+Scenarios bundle queries + relationship logic. Common examples:
+
+| Scenario | What it helps you answer | Input required |
+|----------|--------------------------|----------------|
+| Paths between two entities | Is there a traversable path from A to B? | Start entity, End entity |
+| Users with access to sensitive data | Which users can reach a sensitive storage asset? | Target storage account |
+| Data exfiltration by a device | What storage accounts can a given device access? | Source device |
+| Paths to a highly critical Kubernetes cluster | Which actors can reach a critical cluster? | Target Kubernetes cluster |
+| Identities with access to Azure DevOps repositories | Who can read/write a specific repo? | Target ADO repository |
+| Nodes in highest number of paths to SQL data stores | Which nodes are high-leverage for reaching SQL assets? | None |
+| Critical users with access to sensitive storage | Which privileged identities can touch sensitive data? | None |
+| Entities that have access to a key vault | Who (directly or indirectly) can reach a Key Vault? | Target key vault |
+
+
+:::image type="content" source="../media/hunting-graph-select-scenario.png" alt-text="Screenshot of the predefined scenarios side panel highlighting the available options." lightbox="../media/hunting-graph-select-scenario.png":::
+
+For scenarios with inputs, type or search the entity name/ID. Direction matters for “Paths between two entities” (start → end).
+
+### Refining with filters
+
+Use panel filters to narrow focus:
+
+- Shortest paths only (quickly identify minimal traversal).
+- Source / Target node constraints (Is critical, Is vulnerable, Has sensitive data, Has risk score, Exposed to internet).
+- Edge type filters (for example: has permissions to, can authenticate as, member of, routes traffic to, has role on, can impersonate as).
+
+Remove individual filters or clear all to broaden exploration.
+
+### Rendering and exploring
+
+After selecting scenario + filters:
+
+1. Select **Run** to generate the graph.
+2. Select nodes to view enriched context (roles, sensitivity, exposure).
+3. Expand or focus on subregions if paths are dense.
+4. Identify repeated intermediate nodes (potential choke points or escalation catalysts).
+
+### Workflow integration
+
+| Goal | Suggested approach |
+|------|--------------------|
+| Hypothesize lateral movement | Use “Paths between two entities” then build a KQL query to validate event evidence. |
+| Privilege review | Run “Critical users with access…” and export involved identities to an access review process. |
+| Data exfiltration triage | Start with “Data exfiltration by a device” to scope possible targets, then craft a custom detection for unusual transfer volumes. |
+| Attack surface reduction | Use “Nodes in highest number of paths…” to find over‑centralized assets and apply segmentation or least privilege. |
