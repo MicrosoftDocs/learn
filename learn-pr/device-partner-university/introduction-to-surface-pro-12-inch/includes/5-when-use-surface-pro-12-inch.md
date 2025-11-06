@@ -1,4 +1,4 @@
-:::image type="content" border="true" source="../media/surface-pro-12-ink-render.png" alt-text="Image of Surface Pro 12 inch with keyboard in Platinum color detached with Copilot+ PC Bloom on screen":::
+:::image type="content" border="true" source="../media/surface-pro-12-ink-render.png" alt-text="Image of Surface Pro 12 inch with keyboard in Platinum color detached with Copilot+ PC Bloom on screen.":::
 
 Surface Pro 12-inch offers flexibility, manageability, and performance for modern business users. While many types of users can see value from this device, it's ideal for frontline workers and those in the education sector (specifically those in higher education).
 

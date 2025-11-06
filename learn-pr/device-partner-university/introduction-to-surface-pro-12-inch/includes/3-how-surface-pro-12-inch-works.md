@@ -1,4 +1,4 @@
-:::image type="content" border="true" source="../media/surface-pro-12-ports.png" alt-text="Image of diagram showing the port selection on Surface Pro 12 inch":::
+:::image type="content" border="true" source="../media/surface-pro-12-ports.png" alt-text="Diagram of the port selection on Surface Pro 12 inch.":::
 
 Surface Pro 12-inch is a Copilot+ PC that's ideal for AI productivity use cases, flexible work, and portability. Let's get familiar with the hardware of Surface Pro 12-inch before you turn it on for the first time.
 
@@ -14,20 +14,20 @@ After powering Surface Pro 12-inch, it's easy to configure your settings and be 
 
 After your account is synchronized, you'll have the option to set up biometric unlocking through Windows Hello to keep your device secure, importing settings from previous devices with your Microsoft Account backup, and finally setting up privacy settings. And now your Surface Pro 12-inch is ready to be used.
 
-To set up Windows Hello follow these steps:
+To set up Windows Hello, follow these steps:
 
-- Open **Settings**
-- Then select **Accounts**
-- Choose **Sign-in options**
-- Select **Facial recognition (Windows Hello)**
-- **Set up**
-- Follow on-screen instructions to register facial scan data
+1. Open **Settings**
+2. Then select **Accounts**
+3. Choose **Sign-in options**
+4. Select **Facial recognition (Windows Hello)**
+5. Select **Set up**
+6. Follow on-screen instructions to register facial scan data
 
 Lastly, on the back of the device you'll see the Surface Slim Pen storage slot. This is where you can store your Surface Slim Pen 2nd Edition (sold separately) allowing it to be docked when not in use. To the right of this slot, you'll see the 10MP Ultra HD rear-facing camera. This camera is capable of capturing video in 4K resolution.
 
 ## Using Surface Pro 12-inch Keyboard
 
-:::image type="content" border="true" source="../media/surface-pro-12-side-view.png" alt-text="Image of Surface Pro 12 inch with keyboard in Ocean right side":::
+:::image type="content" border="true" source="../media/surface-pro-12-side-view.png" alt-text="Image of Surface Pro 12 inch with keyboard in Ocean right side.":::
 
 Surface Pro 12-inch Keyboard (sold separately) transforms your Surface Pro 12-inch into a full Windows laptop experience. It features a matte palm rest, keyboard lighting, precision touchpad, and a 360-degree hinge ensuring a comfortable typing experience for long work sessions. Let's learn how to connect it to your Surface Pro 12-inch.
 

@@ -4,22 +4,22 @@ As a Copilot+ PC, Surface Pro 12-inch enables on-device AI experiences that help
 
 Click to Do identifies text and images on your screen that you can take contextual actions with. Click to Do analyzes what's on screen and then you can choose the text or image you want to act on with intelligent actions, powered by on-device AI for privacy and speed. Analysis only begins after you actively engage with Click to Do and ends when you exit. Here's how to use Click to Do on Surface Pro 12-inch:
 
-- Enter Click to Do with a press of the **Windows key and a mouse click**  the **Windows key + Q**. (Other entry points for Click to Do include right swipe on touch enabled PCs, Snipping Tool, search results, and the Start menu).
-- When launching Click to Do for the first time, you are offered a quick interactive tutorial that shows you how to accomplish tasks faster. You can revisit the tutorial at any time by selecting "**…"**, then **Start tutorial**.
-- Highlight text with Click to Do, and the following options are available to you:
+1. Enter Click to Do with a press of the **Windows key and a mouse click**  the **Windows key + Q**. (Other entry points for Click to Do include right swipe on touch enabled PCs, Snipping Tool, search results, and the Start menu).
+2. When launching Click to Do for the first time, you are offered a quick interactive tutorial that shows you how to accomplish tasks faster. You can revisit the tutorial at any time by selecting "**…"**, then **Start tutorial**.
+3. Highlight text with Click to Do, and the following options are available to you:
   - **Copy:** Copies the selected text to the clipboard
   - **Open with:** Opens the selected text in a text editor like Notepad
   - **Search the web:** Does a search for the selected text using Microsoft Edge and Bing
-- When highlighting text that is an email address, you can either copy the text or:
+4. When highlighting text that is an email address, you can either copy the text or:
   - **Send email:** Uses your default email app to open a new email to the selected email address
   - **Send a message with Teams:** Opens a Teams message using the selected email address as the recipient
   - **Schedule a meeting with Teams:** Opens a new Teams calendar invite with the selected email address as an attendee.
-- More intelligent text actions are available when your default language is set to English, at least 10 words are selected, and you're signed in with either a Microsoft account or Microsoft Entra account. These actions include:
+5. More intelligent text actions are available when your default language is set to English, at least 10 words are selected, and you're signed in with either a Microsoft account or Microsoft Entra account. These actions include:
   - **Summarize:** Briefly outlines the main points of the selected text
   - **Create a bulleted list:** Creates a bulleted list of key details from the selected text
   - **Rewrite:** Revises the selected text using either a casual tone, formal tone, or by making grammatical improvements
   - **Draft with Copilot in Word:** sends the selected text to Copilot in Word
-- If you select an image in Click to Do, you're given the following options:
+6. If you select an image in Click to Do, you're given the following options:
   - **Copy:** Copies the image to the clipboard
   - **Save as:** Saves the image to a specified location
   - **Share:** Opens the share files option for the image file
@@ -28,7 +28,7 @@ Click to Do identifies text and images on your screen that you can take contextu
   - **Blur background with Photos:** Blurs the background with the Photos app
   - **Erase objects with Photos:** Erases unwanted objects in the image with the Photos app
   - **Remove background with Paint:** Removes the background of the image with Paint
-- Click to Do is enabled by default on Surface Pro 12-inch. If you don't want to use this feature, this is how to disable it:
+7. Click to Do is enabled by default on Surface Pro 12-inch. If you don't want to use this feature, this is how to disable it:
   - Open **Settings**, then go to **Privacy & security** > **Click to Do**
   - Set the Click to Do setting to **Off** to disable the feature
 
@@ -53,7 +53,8 @@ Improved Windows search will index and support your searches automatically. You 
 - Click on **Searching Windows** to adjust which locations are indexed on your PC.
 - Turn on **Enhanced** to index your entire PC.
 
-Note: It's recommended that you plug in your Surface Pro 12-inch for the initial search indexing to get completed.
+[!NOTE] 
+It's recommended that you plug in your Surface Pro 12-inch for the initial search indexing to get completed.
 
 This feature is optimized for six languages:
 
@@ -73,7 +74,8 @@ Cocreator in Paint allows you to create artwork with the help of AI. Start by en
 - Open Microsoft Paint and select the Cocreator icon on the toolbar to see the side pane.
 - Enter a text prompt in the box. For example, you can type "a dog in a park" or "a plane in the sky". Be as descriptive as you can when describing the elements of your drawing.
 
-Note: Cocreator is optimized for text prompts in English. Other languages may experience degraded performance.
+[!NOTE]
+Cocreator is optimized for text prompts in English. Other languages may experience degraded performance.
 
 - Start drawing on the canvas with your mouse, finger, or Surface Slim Pen 2nd Edition. You can use any tools or colors you want. For best results, use the colors you desire in the output, broader brush strokes and fill up the canvas as much as you can.
 - As you draw, you'll see AI generating artwork in the side pane based on your text and sketch. Adjust the Creativity level by moving the slider. Lower creativity means less AI input, while higher creativity means more AI input to your drawing. You can also select the Style option from the dropdown menu to select art styles like watercolor and oil painting to customize the artwork you create.

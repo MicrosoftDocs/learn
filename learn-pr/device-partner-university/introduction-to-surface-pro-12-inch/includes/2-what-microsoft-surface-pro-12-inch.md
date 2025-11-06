@@ -1,10 +1,10 @@
-:::image type="content" border="true" source="../media/surface-pro-side-pen.png" alt-text="Image of Surface Pro 12 inch right side Platinum":::
+:::image type="content" border="true" source="../media/surface-pro-side-pen.png" alt-text="Image of Surface Pro 12 inch right side Platinum.":::
 
 Microsoft Surface Pro 12-inch is a Copilot+ PC built by Microsoft. As a laptop-to-tablet hybrid device, it offers portability to get work done from virtually any location. Combining software, hardware, and AI features, Surface Pro 12-inch allows you to complete your daily tasks through various interaction methods. Surface Pro 12-inch enables business users to execute their goals with the latest generation of hardware and software advancements through various inputs.
 
 ## Hardware
 
-:::image type="content" border="true" source="../media/surface-pro-12-rear.png" alt-text="Image of Surface Pro 12 inch back Platinum":::
+:::image type="content" border="true" source="../media/surface-pro-12-rear.png" alt-text="Image of Surface Pro 12 inch back Platinum.":::
 
 Imagine your IT team needs to equip a field team with a device that balances performance, portability, and flexibility. Surface Pro 12-inch offers hardware that meets those needs. Let's look at some of the device specifications that solve this need without adding complexity.
 
