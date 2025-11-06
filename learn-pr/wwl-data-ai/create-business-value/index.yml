@@ -8,6 +8,7 @@ metadata:
   ms.author: rcaper
   ms.topic: module
   ms.service: artificial-intelligence
+  ai-usage: ai-assisted
 title: "Create business value with AI"
 summary: Learn to turn AI experiments into dependable drivers of measurable business outcomes.
 abstract: |
@@ -26,7 +27,6 @@ roles:
 - business-owner
 products:
 - azure
-- dynamics-365
 - m365
 subjects:
 - artificial-intelligence
