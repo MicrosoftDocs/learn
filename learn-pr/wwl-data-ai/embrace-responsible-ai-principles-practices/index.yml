@@ -1,34 +1,27 @@
 ### YamlMime:Module
 uid: learn.wwl.embrace-responsible-ai-principles-practices
 metadata:
-  title: Embrace responsible AI principles and practices
+  title: Embrace Responsible AI Principles and Practices
   description: "Explore six principles to guide AI development and use - fairness, reliability and safety, privacy and security, inclusiveness, transparency, and accountability."
-  ms.date: 02/13/2025
+  ms.date: 11/05/2025
   author: wwlpublish
   ms.author: rcaper
   ms.topic: module
   ms.collection: N/A
-  ms.custom:
-  - N/A
-  - ai-learning-hub
   ms.service: azure-ai-services
-  ai-usage: human-only
+  ai-usage: ai-assisted
 title: Embrace responsible AI principles and practices
-summary: This module is designed to help you adopt responsible AI practices. It offers an overview of the principles, governance system, and procedures followed at Microsoft, but we encourage you to develop your own AI strategy.
+summary: Learn how to embrace responsible AI practices that build trust and unlock value. Explore Microsoft’s principles, governance systems, and real-world examples to help you design policies, processes, and safeguards for ethical, secure, and scalable AI adoption.
 abstract: |
   In this module, you will:
 
-  -   Prepare for the implications of responsible AI
+  -   Explain why responsible AI matters and identify its societal implications.
 
-  -   Describe principles of responsible AI
+  -   Apply Microsoft’s six guiding principles for responsible AI in your organization.
 
-  -   Establish a system for AI governance
+  -   Design a governance system that turns principles into actionable policies and controls.
 
-  -   Take actions for AI governance
-
-  -   Engage across teams and organizations to implement responsible AI principles
-
-  -   Take inspiration from how responsible AI is approached at Microsoft
+  -   Take practical steps to implement responsible AI across teams and processes.
 prerequisites: |
   -   Basic understanding of AI concepts.
 
@@ -37,15 +30,14 @@ iconUrl: /training/achievements/embrace-responsible-ai-principles-practices.svg
 levels:
 - beginner
 roles:
+- business-leader
 - business-owner
-- business-user
 products:
 - azure
 - dynamics-365
 - m365
 subjects:
 - artificial-intelligence
-- data-management
 units:
 - learn.wwl.embrace-responsible-ai-principles-practices.introduction
 - learn.wwl.embrace-responsible-ai-principles-practices.prepare-implications-responsible-ai

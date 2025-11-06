@@ -8,6 +8,7 @@ metadata:
   ms.author: rcaper
   ms.topic: module
   ms.service: artificial-intelligence
+  ai-usage: ai-assisted  
 title: "Leverage AI tools and resources for your business"
 summary: Drive business transformation with Azure cloud and AI. Learn how to unify your data estate, modernize infrastructure, and build intelligent apps and agents—while securing AI with governance, compliance, and responsible practices to deliver measurable outcomes.
 abstract: |
