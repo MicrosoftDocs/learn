@@ -7230,6 +7230,16 @@ achievements:
   title: Introduction to Azure Remote Rendering
   summary: Describe how Microsoft Azure Remote Rendering can enable you to bring your high-quality 3D models into mixed reality. Evaluate whether Azure Remote Rendering, a cloud-hosted service, can help you complete complex rendering workloads.
   iconUrl: /training/achievements/intro-to-azure-remote-rendering-social.png
+- uid: learn.machinelearning.understand-regression-machine-learning.badge
+  type: badge
+  title: Train and understand regression models in machine learning
+  summary: Regression is arguably the most widely used machine learning technique, commonly underlying scientific discoveries, business planning, and stock market analytics. This learning material takes a dive into some common regression analyses, both simple and more complex, and provides some insight on how to assess model performance.
+  iconUrl: /training/achievements/machine-learning/understand-regression-machine-learning.svg
+- uid: learn.machinelearning.introduction-to-data-for-machine-learning.badge
+  type: badge
+  title: Introduction to data for machine learning
+  summary: The power of machine learning models comes from the data that is used to train them. Through content and exercises, we explore how to understand your data, how to encode it so that the computer can interpret it properly, how to clean any errors, and tips that will help you create high performance models.
+  iconUrl: /training/achievements/machine-learning/introduction-to-data-for-machine-learning.svg
 - uid: learn.machinelearning.introduction-to-classical-machine-learning.badge
   type: badge
   title: Build classical machine learning models with supervised learning
