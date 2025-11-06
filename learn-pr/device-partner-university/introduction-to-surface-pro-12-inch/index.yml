@@ -1,6 +1,5 @@
 ### YamlMime:Module
 uid: learn.dpu.introduction-to-surface-pro-12-inch
-module: learn.dpu.introduction-to-surface-pro-12-inch
 title: Introduction to Microsoft Surface Pro 12-inch
 metadata:
   title: Introduction To Microsoft Surface Pro 12-inch
@@ -8,7 +7,7 @@ metadata:
   ms.date: 11/06/2025
   author: ozahran7
   ms.author: v-zahranomar
-  ms.topic: module-intro-to-product
+  ms.topic: module
   ms.service: surface
 summary: Discover the 12-inch Microsoft Surface Pro, a Copilot+ PC designed for AI-powered productivity. It supports secure enterprise deployment and offers seamless hardware and software integration for modern IT environments.
 
