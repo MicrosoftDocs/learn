@@ -41,9 +41,7 @@ products:
 subjects:
 - machine-learning
 modules:
-- learn.machinelearning.test-machine-learning-models
 - learn.machinelearning.understand-classification-machine-learning
-- learn.machinelearning.evaluate-real-world-models
 - learn.machinelearning.optimize-model-performance-roc-auc-dropout
 trophy:
   uid: learn.machine-learning-essentials.trophy
