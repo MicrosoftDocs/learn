@@ -14,7 +14,7 @@ quiz:
   questions:
   - content: "Which hardware feature of the Microsoft Surface Pro 12-inch enables on-device AI experiences such as document summarization and multilingual translation?"
     choices:
-        - content: "12\” PixelSense Display"
+        - content: "12 inch PixelSense Display"
           isCorrect: false
           explanation: "Incorrect. The PixelSense Display provides touch input and high-quality visuals, but does not enable AI experiences."
         - content: "Qualcomm Snapdragon X Plus (8-core) processor with NPU"
@@ -26,7 +26,7 @@ quiz:
         - content: "Surface Thunderbolt 4 dock"
           isCorrect: false
           explanation: "Incorrect. The Thunderbolt 4 dock is for connecting accessories, not for running AI models."
-  - content: "What is the main function of the \“Click to Do\” feature on the Surface Pro 12-inch?"
+  - content: "What is the main function of the Click to Do feature on the Surface Pro 12-inch?"
     choices:
         - content: "It automatically summarizes all emails"
           isCorrect: false
