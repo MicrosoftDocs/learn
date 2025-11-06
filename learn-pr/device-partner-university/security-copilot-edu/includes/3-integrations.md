@@ -12,7 +12,7 @@ Microsoft Sentinel is a cloud-native SIEM solution that delivers scalable, cost-
 
 Learn more at [Microsoft Sentinel SIEM overview](/azure/sentinel/overview?tabs=defender-portal).
 
-[![A screenshot of Security Copilot using information from Microsoft Sentinel to generate an incident summary](media/sentinel-inline.png)](media/sentinel-expanded.png#lightbox)
+[![A screenshot of Security Copilot using information from Microsoft Sentinel to generate an incident summary](/media/sentinel-inline.png)](/media/sentinel-expanded.png#lightbox)
 
 ## Microsoft Defender Threat Intelligence (Defender TI)
 

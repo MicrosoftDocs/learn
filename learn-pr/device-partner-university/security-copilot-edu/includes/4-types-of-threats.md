@@ -4,7 +4,7 @@ Educational institutions face a unique set of cybersecurity challenges. Unlike c
 - Limited budgets for security tools and training
 - Open networks to support learning and collaboration
 
-[![A screenshot of Microsoft Security Copilot analyzing a PowerShell script and identifying potentially malicious behavior.](media/copilot-inline.png)](media/copilot-expanded.png#lightbox)
+[![A screenshot of Microsoft Security Copilot analyzing a PowerShell script and identifying potentially malicious behavior.](/media/copilot-inline.png)](/media/copilot-expanded.png#lightbox)
 
 These factors make schools attractive targets for cybercriminals. Common threats include:
 

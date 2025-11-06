@@ -7,7 +7,7 @@ Microsoft Security Copilot is a cutting-edge AI assistant that's deeply integrat
 
 In education, where IT teams are often stretched thin, Security Copilot acts as a force multiplier. It enables faster decision-making, reduces manual effort, and helps ensure that no critical signals are missed.
 
-[![A screenshot of Microsoft Security Copilot in Microsoft Defender XDR generating an incident summary.](media/summary-inline.png)](media/summary-expanded.png#lightbox)
+[![A screenshot of Microsoft Security Copilot in Microsoft Defender XDR generating an incident summary.](/media/summary-inline.png)](/media/summary-expanded.png#lightbox)
 
 Key capabilities include:
 
