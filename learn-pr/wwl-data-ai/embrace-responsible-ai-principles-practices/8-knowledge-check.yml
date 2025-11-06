@@ -6,13 +6,10 @@ metadata:
   ai_generated_module_assessment: true
   title: Module assessment
   description: "Knowledge check"
-  ms.date: 02/13/2025
+  ms.date: 11/05/2025
   author: wwlpublish
   ms.author: rcaper
   ms.topic: unit
-  ms.custom:
-  - N/A
-  - ai-learning-hub
   module_assessment: true
 durationInMinutes: 3
 content: |

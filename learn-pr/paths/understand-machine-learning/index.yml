@@ -41,10 +41,6 @@ products:
 subjects:
 - machine-learning
 modules:
-- learn.machinelearning.introduction-to-machine-learning
-- learn.machinelearning.introduction-to-classical-machine-learning
-- learn.machinelearning.introduction-to-data-for-machine-learning
-- learn.machinelearning.understand-regression-machine-learning
 - learn.machinelearning.understand-classification-machine-learning
 - learn.machinelearning.optimize-model-performance-roc-auc-dropout
 trophy:
