@@ -16,7 +16,7 @@ quiz:
     choices:
         - content: "It replaces all IT staff"
           isCorrect: false
-          explanation: "Incorrect. Security Copilot assists IT teams but does not replace them."
+          explanation: "Incorrect. Security Copilot assists IT teams but doesn't replace them."
         - content: "It automates grading"
           isCorrect: false
           explanation: "Incorrect. Security Copilot is for cybersecurity, not academic tasks."
@@ -25,18 +25,18 @@ quiz:
           explanation: "Correct. Security Copilot helps security teams identify and respond to threats more efficiently."
         - content: "It blocks all emails"
           isCorrect: false
-          explanation: "Incorrect. It does not block all emails but can help analyze suspicious ones."
+          explanation: "Incorrect. It doesn't block all emails but can help analyze suspicious ones."
   - content: "Which of the following is a common cyber threat in education?"
     choices:
         - content: "SQL injection"
           isCorrect: false
-          explanation: "Incorrect. While it is a cyber threat, phishing is more common in education settings."
+          explanation: "Incorrect. While it's a cyber threat, phishing is more common in education settings."
         - content: "Phishing"
           isCorrect: true
           explanation: "Correct. Phishing is one of the most frequent cyber threats faced by schools."
         - content: "Cryptocurrency mining"
           isCorrect: false
-          explanation: "Incorrect. It can happen but is not a typical issue in educational environments."
+          explanation: "Incorrect. It can happen but isn't a typical issue in educational environments."
         - content: "None of the above"
           isCorrect: false
           explanation: "Incorrect. Phishing is indeed a common cyber threat in education."
@@ -50,10 +50,10 @@ quiz:
           explanation: "Correct. A clear timeline helps document and analyze what occurred during the incident."
         - content: "Teacher evaluations"
           isCorrect: false
-          explanation: "Incorrect. Evaluations do not belong in a security report."
+          explanation: "Incorrect. Evaluations don't belong in a security report."
         - content: "Social media posts"
           isCorrect: false
-          explanation: "Incorrect. Social media activity is not relevant to a formal incident report."
+          explanation: "Incorrect. Social media activity isn't relevant to a formal incident report."
   - content: "What kind of prompt can you use in Security Copilot to investigate a phishing email?"
     choices:
         - content: "Delete all emails from yesterday"
