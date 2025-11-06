@@ -9,9 +9,10 @@ metadata:
   ms.author: v-zahranomar
   ms.topic: module
   ms.service: surface
-summary: Discover the 12-inch Microsoft Surface Pro, a Copilot+ PC designed for AI-powered productivity. It supports secure enterprise deployment and offers seamless hardware and software integration for modern IT environments.
+summary: >
+Discover the 12-inch Microsoft Surface Pro, a Copilot+ PC designed for AI-powered productivity. It supports secure enterprise deployment and offers seamless hardware and software integration for modern IT environments.
 
-abstract: 
+abstract: | 
   By the end of this module, you'll be able to:
     - Evaluate whether Microsoft Surface Pro 12-inch is appropriate for your business.
     - Describe how the software and hardware features of Microsoft Surface Pro 12-inch work to complete more tasks.
