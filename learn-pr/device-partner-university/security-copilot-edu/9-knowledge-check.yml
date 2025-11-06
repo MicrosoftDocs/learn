@@ -1,0 +1,85 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.security-copilot-education.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge Check
+  description: This content is part of the "Microsoft Security Copilot in Education" module.
+  ms.date: 11/06/2025
+  author: Stephanie-Rosenzweig
+  ms.author: v-stephanier
+  ms.topic: unit
+durationInMinutes: 5
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "What is one benefit of using Microsoft Security Copilot in schools?"
+    choices:
+        - content: "It replaces all IT staff"
+          isCorrect: false
+          explanation: "Incorrect. Security Copilot assists IT teams but does not replace them."
+        - content: "It automates grading"
+          isCorrect: false
+          explanation: "Incorrect. Security Copilot is for cybersecurity, not academic tasks."
+        - content: "It helps investigate threats faster"
+          isCorrect: true
+          explanation: "Correct. Security Copilot helps security teams identify and respond to threats more efficiently."
+        - content: "It blocks all emails"
+          isCorrect: false
+          explanation: "Incorrect. It does not block all emails but can help analyze suspicious ones."
+  - content: "Which of the following is a common cyber threat in education?"
+    choices:
+        - content: "SQL injection"
+          isCorrect: false
+          explanation: "Incorrect. While it is a cyber threat, phishing is more common in education settings."
+        - content: "Phishing"
+          isCorrect: true
+          explanation: "Correct. Phishing is one of the most frequent cyber threats faced by schools."
+        - content: "Cryptocurrency mining"
+          isCorrect: false
+          explanation: "Incorrect. It can happen but is not a typical issue in educational environments."
+        - content: "None of the above"
+          isCorrect: false
+          explanation: "Incorrect. Phishing is indeed a common cyber threat in education."
+  - content: "What should you include in a security incident report?"
+    choices:
+        - content: "Student grades"
+          isCorrect: false
+          explanation: "Incorrect. Grades are unrelated to the technical details of a security incident."
+        - content: "Timeline of events"
+          isCorrect: true
+          explanation: "Correct. A clear timeline helps document and analyze what occurred during the incident."
+        - content: "Teacher evaluations"
+          isCorrect: false
+          explanation: "Incorrect. Evaluations do not belong in a security report."
+        - content: "Social media posts"
+          isCorrect: false
+          explanation: "Incorrect. Social media activity is not relevant to a formal incident report."
+  - content: "What kind of prompt can you use in Security Copilot to investigate a phishing email?"
+    choices:
+        - content: "Delete all emails from yesterday"
+          isCorrect: false
+          explanation: "Incorrect. This would remove data without investigation."
+        - content: "Investigate phishing email sent to someone@example.com on date"
+          isCorrect: true
+          explanation: "Correct. This is a clear, specific prompt to start an investigation in Security Copilot."
+        - content: "Send a warning to all students"
+          isCorrect: false
+          explanation: "Incorrect. That is a communication action, not an investigative one."
+        - content: "Create a new user account"
+          isCorrect: false
+          explanation: "Incorrect. Account creation is unrelated to investigating phishing emails."
+  - content: "Why is it important to generate a report after resolving a security incident?"
+    choices:
+        - content: "To punish the person responsible"
+          isCorrect: false
+          explanation: "Incorrect. The purpose of a report is improvement, not punishment."
+        - content: "To share it on social media"
+          isCorrect: false
+          explanation: "Incorrect. Security reports should remain internal and confidential."
+        - content: "To document the incident for leadership and improve future response"
+          isCorrect: true
+          explanation: "Correct. Reports provide insights and help strengthen security practices."
+        - content: "To delete all related data"
+          isCorrect: false
+          explanation: "Incorrect. Data should be retained for analysis and compliance."
+
