@@ -3,7 +3,7 @@ uid: learn.wwl.scale-ai
 metadata:
   title: Scale AI in your organization
   description: "Learn enterprise AI management with our free open online course, including scaling AI."
-  ms.date: 11/02/2025
+  ms.date: 11/06/2025
   author: wwlpublish
   ms.author: rcaper
   ms.topic: module
@@ -23,6 +23,7 @@ iconUrl: /training/achievements/scale-ai-in-your-organization.svg
 levels:
 - beginner
 roles:
+- business-leader
 - business-owner
 products:
 - azure
