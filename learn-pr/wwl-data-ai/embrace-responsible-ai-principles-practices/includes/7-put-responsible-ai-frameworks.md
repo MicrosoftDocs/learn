@@ -24,7 +24,7 @@ In this case, a law enforcement agency approached us to develop a facial recogni
 
 ### Assessment
 
-The Responsible AI Champ, working with the Office of Responsible AI and the Microsoft team involved in the use case, investigates the case to gather the relevant facts, follows a guided process to assess the effect of the proposed system on individuals and society, and reviews past cases to determine if guidance already exists for a similar scenario. If earlier guidance doesn't exist, or if the case requires more expertise and evaluation, the Responsible AI Champ presents the case to the Sensitive Uses Working Group of the Ether Committee.
+The Responsible AI Champ, working with the Office of Responsible AI and the Microsoft team involved in the use case, investigates the case to gather the relevant facts, follows a guided process to assess the effect of the proposed system on individuals and society, and reviews past cases to determine if guidance already exists for a similar scenario. If earlier guidance doesn't exist, or if the case requires more expertise and evaluation, the Responsible AI Champ presents the case to the Sensitive Uses Working Group of the Aether Committee.
 
 In this face recognition case, the Responsible AI Champ worked closely with the Office of Responsible AI, the account teams, and the customers to assess the risks. It was decided that all three cases needed to be escalated to the Aether Sensitive Uses Working Group for further input, as they touched on one or more of the sensitive uses of AI.
 
@@ -37,7 +37,7 @@ The Sensitive Uses Working Group deliberates with a diverse group of experts to 
 
 Once the case is reviewed, the Responsible AI Champ works with the Office of Responsible AI to provide advice to the project team on mitigation strategies that align to our responsible AI practices and principles. These mitigation strategies could include technical approaches, employee training and governance approaches, or alterations to the scope of the project. At times, our teams were advised to not proceed with certain projects because we were unable to deliver them in a way that upholds our principles.
 
-In the use case, the Aether Sensitive Uses Working Group took separate decisions for each of the scenarios. After careful consideration, they determined that we wouldn't support the patrolling scenario to identify "persons of interest," during traffic stops. As the state of the technology and the broader ecosystem weren't sufficiently mature enough to mitigate the harmful consequences for when the technology performs imperfectly, the Ether working group considered this scenario a premature use case. 
+In the use case, the Aether Sensitive Uses Working Group took separate decisions for each of the scenarios. After careful consideration, they determined that we wouldn't support the patrolling scenario to identify "persons of interest," during traffic stops. As the state of the technology and the broader ecosystem weren't sufficiently mature enough to mitigate the harmful consequences for when the technology performs imperfectly, the Aether working group considered this scenario a premature use case. 
 
 We explained the issues to the customer, and they decided not to pursue that scenario.
 
