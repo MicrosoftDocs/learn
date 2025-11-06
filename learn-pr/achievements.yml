@@ -7240,3 +7240,14 @@ achievements:
   title: Introduction to data for machine learning
   summary: The power of machine learning models comes from the data that is used to train them. Through content and exercises, we explore how to understand your data, how to encode it so that the computer can interpret it properly, how to clean any errors, and tips that will help you create high performance models.
   iconUrl: /training/achievements/machine-learning/introduction-to-data-for-machine-learning.svg
+- uid: learn.machinelearning.introduction-to-classical-machine-learning.badge
+  type: badge
+  title: Build classical machine learning models with supervised learning
+  summary: Supervised learning is a form of machine learning where an algorithm learns from examples of data. We progressively paint a picture of how supervised learning automatically generates a model that can make predictions about the real world. We also touch on how these models are tested, and difficulties that can arise in training them.
+  iconUrl: /training/achievements/machine-learning/introduction-to-classical-machine-learning.svg
+- uid: learn.machinelearning.introduction-to-machine-learning.badge
+  type: badge
+  title: Introduction to machine learning
+  summary: A high-level overview of machine learning for people with little or no knowledge of computer science and statistics. You'll learn some essential concepts, explore data, and interactively go through the machine learning lifecycle, using Python to train, save, and use a machine learning model, just like in the real world.
+  iconUrl: /training/achievements/machine-learning/introduction-to-machine-learning.svg
+

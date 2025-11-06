@@ -43,8 +43,6 @@ subjects:
 - data-analytics
 - machine-learning
 modules:
-- learn.machinelearning.introduction-to-machine-learning
-- learn.machinelearning.introduction-to-classical-machine-learning
 - learn.wwl.explore-analyze-data-with-python
 - learn.machinelearning.test-machine-learning-models
 - learn.wwl.train-evaluate-regression-models

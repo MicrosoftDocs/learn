@@ -59924,7 +59924,7 @@
     "redirect_url": "https://learn.microsoft.com/training/browse/",
     "redirect_document_id": false
     },
-      {
+    {
     "source_path": "learn-pr/paths/get-started-with-azure-remote-rendering/index.yml",
     "redirect_url": "https://learn.microsoft.com/training/browse/",
     "redirect_document_id": false
@@ -59994,6 +59994,106 @@
       "redirect_url": "/training/modules/create-business-value/8-summary/",
       "redirect_document_id": false
     },
+    {
+      "source_path_from_root": "/learn-pr/azure/introduction-to-machine-learning/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/create-machine-learn-models/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/introduction-to-machine-learning/2-what-are-ml-models.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/create-machine-learn-models/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/introduction-to-machine-learning/3-exercise-create-ml-model.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/create-machine-learn-models/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/introduction-to-machine-learning/4-understand-training.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/create-machine-learn-models/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/introduction-to-machine-learning/5-exercise-improve-models.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/create-machine-learn-models/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/introduction-to-machine-learning/6-test-models.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/create-machine-learn-models/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/introduction-to-machine-learning/7-exercise-test-ml-models.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/create-machine-learn-models/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/introduction-to-machine-learning/8-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/create-machine-learn-models/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/introduction-to-machine-learning/9-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/create-machine-learn-models/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/introduction-to-machine-learning/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/create-machine-learn-models/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/introduction-to-classical-machine-learning/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/create-machine-learn-models/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/introduction-to-classical-machine-learning/2-supervised-learning.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/create-machine-learn-models/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/introduction-to-classical-machine-learning/3-exercise-separate-data-test-model.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/create-machine-learn-models/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/introduction-to-classical-machine-learning/4-minimize-error-cost-functions.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/create-machine-learn-models/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/introduction-to-classical-machine-learning/5-exercise-optimize-models.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/create-machine-learn-models/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/introduction-to-classical-machine-learning/6-gradient-descent.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/create-machine-learn-models/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/introduction-to-classical-machine-learning/7-exercise-implement-gradient-descent.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/create-machine-learn-models/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/introduction-to-classical-machine-learning/8-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/create-machine-learn-models/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/introduction-to-classical-machine-learning/9-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/create-machine-learn-models/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/introduction-to-classical-machine-learning/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/create-machine-learn-models/",
+      "redirect_document_id": false
+        },
     {
       "source_path_from_root": "/learn-pr/azure/introduction-to-data-for-machine-learning/1-introduction.yml",
       "redirect_url": "https://learn.microsoft.com/training/paths/create-machine-learn-models/",

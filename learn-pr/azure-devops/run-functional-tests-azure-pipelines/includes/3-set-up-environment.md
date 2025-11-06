@@ -30,6 +30,8 @@ The modules in this learning path form a progression as you follow the Tailspin 
 
 Run a template that sets up your Azure DevOps organization.
 
+[!INCLUDE[important-note-demo-generator](../../shared/includes/important-note-demo-generator.md)]
+
 1. [Get and run the ADOGenerator project](https://github.com/microsoft/AzDevOpsDemoGenerator/blob/main/docs/RunApplication.md) in Visual Studio or the IDE of your choice.
 
 1. When prompted to **Enter the template number from the list of templates**, enter **32** for **Run functional tests in Azure Pipelines**, then press **Enter**.

@@ -6,9 +6,6 @@ Additionally, neural networks are structured so that they can continue to learn 
 
 ### Additional resources
 
-To continue your learning journey, go to:
-
-- [Introduction to machine learning](/training/modules/introduction-to-machine-learning/)
-- [Leverage AI tools and resources for your business](/training/modules/leverage-ai-tools/)
+To continue your learning journey, go to [Leverage AI tools and resources for your business](/training/modules/leverage-ai-tools/).
 
 <sup>6</sup>: See the *Bibliography* in this module's **Summary** section.
