@@ -9,7 +9,7 @@ helps quantify the financial return relative to the total cost of implementation
 **Basic ROI Formula**
 
 $$
-ROI\% =
+\text{ROI}\% = 
 \frac{
 \mathrm{Benefits} - (\mathrm{Cost\ to\ Achieve} + \mathrm{Cost\ to\ Maintain})
 }{
