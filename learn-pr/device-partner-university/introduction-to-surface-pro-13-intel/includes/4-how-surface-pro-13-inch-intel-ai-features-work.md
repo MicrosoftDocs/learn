@@ -1,4 +1,4 @@
-:::image type="content" border="true" source="../media/surface-pro-13-ai-features.png" alt-text="Render of Surface Pro in platinum front facing, highlighting Teams call.":::
+:::image type="content" border="true" source="../media/surface-pro-13-ai-features.png" alt-text="Photo of Surface Pro in platinum front facing, highlighting Teams call.":::
 
 As a Copilot+ PC, Surface Pro 13-inch (Intel) enables on-device AI experiences that help complete repeatable tasks quicker. Let's learn how to utilize some of these experiences.
 
@@ -38,7 +38,7 @@ Click to Do identifies text and images on your screen that you can take contextu
 
 Imagine you're working on an important presentation. You remember stumbling across a chart that would be great for a slide, but you forgot where you saw it. In the past, this meant digging through your browser history in the hopes of finding the right page.
 
-:::image type="content" border="true" source="../media/using-recall.gif" alt-text="GIF of using Recall to find a file using natural language.":::
+:::image type="content" border="true" source="../media/using-recall.gif" alt-text="Animation of using Recall to find a file using natural language.":::
 
 With Recall (preview) on Surface Pro 13-inch (Intel), you can use an explorable timeline to find the content you remember seeing before. Using semantic powered search, simply describe how you remember something, and Recall (preview) will retrieve the moment you saw it. Any photo, link, or message can be a fresh point to continue from.
 
@@ -82,7 +82,7 @@ When searching with Recall (preview), the results are listed under the headings 
 
 - **Close match:** Close matches typically include at least one of the search terms or images that are representative of a term in your query.
 - **Related match:** Matches that share a commonality with the search terms would be considered related.
-:::image type="content" border="true" source="../media/recall-settings.gif" alt-text="GIF of a user accessing Recall settings to filter out content.":::
+:::image type="content" border="true" source="../media/recall-settings.gif" alt-text="Animation of a user accessing Recall settings to filter out content.":::
 
 You can filter out apps and websites from being saved as snapshots. You can add apps and websites at any time by going to **Settings** > **Privacy & security** > **Recall & snapshots** on your Surface Pro 13-inch (Intel).
 

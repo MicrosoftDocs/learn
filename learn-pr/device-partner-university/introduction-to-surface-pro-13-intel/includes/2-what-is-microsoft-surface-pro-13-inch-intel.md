@@ -1,4 +1,4 @@
-:::image type="content" border="true" source="../media/surface-pro-13-intel-render.png" alt-text="Render of Surface Pro in black with Pro Flex Keyboard detached and Pen left facing view.":::
+:::image type="content" border="true" source="../media/surface-pro-13-intel-render.png" alt-text="Photo of Surface Pro in black with Pro Flex Keyboard detached and Pen left facing view.":::
 
 Microsoft Surface Pro 13-inch (Intel) is a Copilot+ PC built by Microsoft that is designed specifically for business users. As a laptop-to-tablet hybrid device, it offers the portability of a tablet and the advanced power of a laptop. Combining software, hardware, and AI features, Surface Pro 13-inch (Intel) allows you to complete your daily tasks through various interaction methods. Surface Pro 13-inch (Intel) enables business users to execute their tasks with hardware and software advancements through various inputs.
 
