@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.copilot-meeting-productivity.exercise-use-copilot-summarize-meeting
+title: Exercise use Copilot summarize meeting
+metadata:
+  title: Exercise Use Copilot Summarize Meeting
+  description: This content is part of the "Enhance meeting productivity with Copilot in Microsoft Teams" module.
+  ms.date: 11/06/2025
+  author: hhreyes21
+  ms.author: v-homerreyes
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-exercise-use-copilot-summarize-meeting.md)]

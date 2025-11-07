@@ -1,0 +1,84 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.copilot-meeting-productivity.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge Check
+  description: This content is part of the "Enhance meeting productivity with Copilot in Microsoft Teams" module.
+  ms.date: 11/06/2025
+  author: hhreyes21
+  ms.author: v-homerreyes
+  ms.topic: unit
+durationInMinutes: 5
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "What does Copilot in Microsoft Teams help users do during meetings?"
+    choices:
+        - content: "Automatically schedule future meetings"
+          isCorrect: false
+          explanation: "Incorrect. Copilot does not handle scheduling."
+        - content: "Clarify discussions and capture action items in real time"
+          isCorrect: true
+          explanation: "Correct. Copilot helps participants stay aligned during meetings."
+        - content: "Record video and audio automatically"
+          isCorrect: false
+          explanation: "Incorrect. Recording must be manually enabled."
+        - content: "Prevent off-topic conversations"
+          isCorrect: false
+          explanation: "Incorrect. Copilot summarizes content but does not filter topics."
+  - content: "What must be enabled to use Copilot effectively in a Teams meeting?"
+    choices:
+        - content: "Screen sharing"
+          isCorrect: false
+          explanation: "Incorrect. Not required for Copilot functionality."
+        - content: "Transcription"
+          isCorrect: true
+          explanation: "Correct. Transcription must be turned on for Copilot to generate insights."
+        - content: "Chat history"
+          isCorrect: false
+          explanation: "Incorrect. Copilot uses transcripts, not chat logs."
+        - content: "Video recording"
+          isCorrect: false
+          explanation: "Incorrect. Recording is helpful but not mandatory."
+  - content: "How does Copilot support inclusive collaboration?"
+    choices:
+        - content: "Highlights only the loudest voices"
+          isCorrect: false
+          explanation: "Incorrect. Copilot aims to represent all voices fairly."
+        - content: "Filters out non-verbal communication"
+          isCorrect: false
+          explanation: "Incorrect. Copilot focuses on spoken content."
+        - content: "Assigns speaking turns to participants"
+          isCorrect: false
+          explanation: "Incorrect. Copilot does not manage speaking behavior."
+        - content: "Identifies missed or interrupted contributions"
+          isCorrect: true
+          explanation: "Correct. This ensures equitable engagement."
+  - content: "What benefit does Copilot provide after a meeting?"
+    choices:
+        - content: "Deletes irrelevant content"
+          isCorrect: false
+          explanation: "Incorrect. Copilot does not delete content."
+        - content: "Sends email summaries to all attendees"
+          isCorrect: false
+          explanation: "Incorrect. Summaries are provided in Teams."
+        - content: "Generates structured summaries with key decisions and action items"
+          isCorrect: true
+          explanation: "Correct. This helps users catch up efficiently."
+        - content: "Automatically schedules follow-up meetings"
+          isCorrect: false
+          explanation: "Incorrect. Copilot does not manage scheduling."
+  - content: "What does Copilot use to generate meeting summaries?"
+    choices:
+        - content: "Transcripts and recordings"
+          isCorrect: true
+          explanation: "Correct. Copilot analyzes these to create summaries."
+        - content: "Chat messages"
+          isCorrect: false
+          explanation: "Incorrect. Copilot relies on spoken content."
+        - content: "Participant feedback"
+          isCorrect: false
+          explanation: "Incorrect. Summaries are based on meeting data."
+        - content: "Calendar invites"
+          isCorrect: false
+          explanation: "Incorrect. These are not used for summarization."
