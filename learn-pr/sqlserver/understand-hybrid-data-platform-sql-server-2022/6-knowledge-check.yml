@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.understand-hybrid-data-platform-sql-server-2022.knowledge-check
+title: Module assessment
+metadata:
+  title: Module assessment
+  description: "Knowledge check"
+  ms.date: 11/3/2025
+  author: JulianePadrao
+  ms.author: jupadrao
+  ms.topic: unit
+  module_assessment: true
+durationInMinutes: 8
+content: |
+  [!include[](includes/7-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which of the following is a limitation of the Azure SQL Managed Instance link feature?"
+    choices:
+    - content: "The link feature can only replicate databases of a certain size."
+      isCorrect: false
+      explanation: "Incorrect. There's no specific database size limit."
+    - content: "The link feature cannot replicate databases that use In-Memory OLTP objects on the General Purpose service tier."
+      isCorrect: true
+      explanation: "Correct. Replicating databases that use In-Memory OLTP objects is not supported on the General Purpose service tier of Azure SQL Managed Instance."
+    - content: "The link feature cannot replicate databases that use columnstore indexes."
+      isCorrect: false
+      explanation: "Incorrect. Columnstore indexes are supported."
+  - content: "How many databases can be placed into a single availability group for one Azure SQL Managed Instance link?"
+    choices:
+    - content: "Only one database"
+      isCorrect: true
+      explanation: "Correct. Only one database can be placed into a single availability group for one Azure SQL Managed Instance link."
+    - content: "Multiple databases"
+      isCorrect: false
+      explanation: "Incorrect. Multiple databases aren't supported. However, it's possible to replicate multiple databases in a single SQL Server instance by establishing multiple links."
+    - content: "Multiple databases, as long as the database size is less than a certain limit"
+      isCorrect: false
+      explanation: "Incorrect. Multiple databases aren't supported. However, it's possible to replicate multiple databases in a single SQL Server instance by establishing multiple links."
+  - content: "What is the primary purpose of mirroing in Microsoft Fabric?"
+    choices:
+    - content: "To provide disaster recovery and failover capabilities"
+      isCorrect: false
+      explanation: "Incorrect. Disaster recovery and failover are provided by Azure SQL Managed Instance Link. Microsoft Fabric Mirroring is designed for near real-time analytics and data replication to OneLake."
+    - content: "To replicate data in near real-time to OneLake for analytics workloads"
+      isCorrect: true
+      explanation: "Correct. Microsoft Fabric Mirroring continuously replicates SQL Server data to OneLake using change data capture (CDC), enabling near real-time analytics without impacting operational workloads."
+    - content: "To replace Azure Arc-enabled SQL Server for centralized management"
+      isCorrect: false
+      explanation: "Incorrect. Microsoft Fabric Mirroring is focused on data replication for analytics, not management. Azure Arc-enabled SQL Server provides centralized management capabilities."
+
