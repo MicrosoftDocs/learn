@@ -60340,7 +60340,7 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "/learn-pr/paths/machine-learning-foundations-using-data-science/index.yml",
+      "source_path": "learn-pr/paths/machine-learning-foundations-using-data-science/index.yml",
       "redirect_url": "https://learn.microsoft.com/training/paths/create-machine-learn-models/",
       "redirect_document_id": false
     }
