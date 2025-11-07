@@ -9,3 +9,4 @@ SQL Server 2025 supports deployment both on-premises and in the cloud. Features 
 > You can download SQL Server 2025 from the [Microsoft Evaluation Center](https://www.microsoft.com/evalcenter/evaluate-sql-server-2025?azure-portal=true).
 
 In this module, you'll learn how to apply SQL Server 2025's AI capabilities to build intelligent, data-driven applications. You'll explore native vector support, implement semantic search, integrate with Azure OpenAI and other AI services, and build [Retrieval Augmented Generation (RAG)](/azure/ai-services/openai/concepts/use-your-data?azure-portal=true) applications—all using familiar T-SQL and modern development frameworks.
+
