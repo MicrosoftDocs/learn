@@ -46,7 +46,6 @@ modules:
 - learn.wwl.explore-analyze-data-with-python
 - learn.wwl.train-evaluate-regression-models
 - learn.machinelearning.understand-classification-machine-learning
-- learn.machinelearning.optimize-model-performance-roc-auc-dropout
 - learn.wwl.train-evaluate-classification-models
 - learn.wwl.train-evaluate-cluster-models
 - learn.wwl.train-evaluate-deep-learn-models
