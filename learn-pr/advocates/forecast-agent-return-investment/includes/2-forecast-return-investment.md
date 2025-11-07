@@ -9,11 +9,11 @@ helps quantify the financial return relative to the total cost of implementation
 **Basic ROI Formula**
 
 $$
-\mathrm{ROI}\% \;=\; 
+\text{ROI}\% \;=\;
 \frac{
-\mathrm{Benefits} - (\mathrm{Cost\ to\ Achieve} + \mathrm{Cost\ to\ Maintain})
+\text{Benefits} - (\text{Cost\ to\ Achieve} + \text{Cost\ to\ Maintain})
 }{
-\mathrm{Cost\ to\ Achieve} + \mathrm{Cost\ to\ Maintain}
+\text{Cost\ to\ Achieve} + \text{Cost\ to\ Maintain}
 }
 \times 100
 $$
