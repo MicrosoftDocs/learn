@@ -34,7 +34,7 @@ Click to Do identifies text and images on your screen that you can take contextu
 
 ## Improved Windows Search
 
-:::image type="content" border="true" source="../media/windows-search.gif" alt-text="Screenshot of using new Windows Search on a PC using natural language to find a file":::
+:::image type="content" border="true" source="../media/windows-search.gif" alt-text="Screenshot of using new Windows Search on a PC using natural language to find a file.":::
 
 On Surface Pro 12-inch, finding files is simplified, ensuring that time isn't wasted looking for the files that you need. By using natural language, you can find the files and settings that you need without needing to remember the full file name. This feature uses on-device AI to scan your files and find what you are looking for quickly and efficiently.
 
@@ -48,13 +48,13 @@ To initiate a search, simply click on the search box and begin typing what you a
 
 Improved Windows search will index and support your searches automatically. You can manage what is indexed and included using the following steps:
 
-- Go to **Settings**.
-- Select **Privacy & Security**.
-- Click on **Searching Windows** to adjust which locations are indexed on your PC.
-- Turn on **Enhanced** to index your entire PC.
+1. Go to **Settings**.
+1. Select **Privacy & Security**.
+1. Click on **Searching Windows** to adjust which locations are indexed on your PC.
+1. Turn on **Enhanced** to index your entire PC.
 
-[!NOTE] 
-It's recommended that you plug in your Surface Pro 12-inch for the initial search indexing to get completed.
+>[!NOTE] 
+>It's recommended that you plug in your Surface Pro 12-inch for the initial search indexing to get completed.
 
 This feature is optimized for six languages:
 
@@ -74,8 +74,8 @@ Cocreator in Paint allows you to create artwork with the help of AI. Start by en
 - Open Microsoft Paint and select the Cocreator icon on the toolbar to see the side pane.
 - Enter a text prompt in the box. For example, you can type "a dog in a park" or "a plane in the sky". Be as descriptive as you can when describing the elements of your drawing.
 
-[!NOTE]
-Cocreator is optimized for text prompts in English. Other languages may experience degraded performance.
+>[!NOTE]
+>Cocreator is optimized for text prompts in English. Other languages may experience degraded performance.
 
 - Start drawing on the canvas with your mouse, finger, or Surface Slim Pen 2nd Edition. You can use any tools or colors you want. For best results, use the colors you desire in the output, broader brush strokes and fill up the canvas as much as you can.
 - As you draw, you'll see AI generating artwork in the side pane based on your text and sketch. Adjust the Creativity level by moving the slider. Lower creativity means less AI input, while higher creativity means more AI input to your drawing. You can also select the Style option from the dropdown menu to select art styles like watercolor and oil painting to customize the artwork you create.
