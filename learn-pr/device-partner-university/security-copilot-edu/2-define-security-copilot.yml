@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.security-copilot-education.define-security-copilot
+title: What's Security Copilot?
+metadata:
+  title: What's Security Copilot?
+  description: This content is part of the "Microsoft Security Copilot in Education" module.
+  ms.date: 11/06/2025
+  author: Stephanie-Rosenzweig
+  ms.author: v-stephanier
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/2-define-security-copilot.md)]
