@@ -7230,5 +7230,34 @@ achievements:
   title: Introduction to Azure Remote Rendering
   summary: Describe how Microsoft Azure Remote Rendering can enable you to bring your high-quality 3D models into mixed reality. Evaluate whether Azure Remote Rendering, a cloud-hosted service, can help you complete complex rendering workloads.
   iconUrl: /training/achievements/intro-to-azure-remote-rendering-social.png
-
+- uid: learn.machinelearning.evaluate-real-world-models.badge
+  type: badge
+  title: Confusion matrix and data imbalances
+  summary: How do we know if a model is good or bad at classifying our data? The way that computers assess model performance sometimes can be difficult for us to comprehend or can over-simplify how the model behaves in the real world. To build models that work satisfactorily, we need to find intuitive ways to assess them, and understand how these metrics can bias our view.
+  iconUrl: /training/achievements/machine-learning/machine-learning-confusion-matrix.svg
+- uid: learn.machinelearning.test-machine-learning-models.badge
+  type: badge
+  title: Refine and test machine learning models
+  summary: When we think of machine learning, we often focus on the training process. A small amount of preparation before this process can not only speed up and improve learning, but also give us some confidence about how well our models will work when faced with data we have never seen before.
+  iconUrl: /training/achievements/machine-learning/test-machine-learning-models.svg
+- uid: learn.machinelearning.understand-regression-machine-learning.badge
+  type: badge
+  title: Train and understand regression models in machine learning
+  summary: Regression is arguably the most widely used machine learning technique, commonly underlying scientific discoveries, business planning, and stock market analytics. This learning material takes a dive into some common regression analyses, both simple and more complex, and provides some insight on how to assess model performance.
+  iconUrl: /training/achievements/machine-learning/understand-regression-machine-learning.svg
+- uid: learn.machinelearning.introduction-to-data-for-machine-learning.badge
+  type: badge
+  title: Introduction to data for machine learning
+  summary: The power of machine learning models comes from the data that is used to train them. Through content and exercises, we explore how to understand your data, how to encode it so that the computer can interpret it properly, how to clean any errors, and tips that will help you create high performance models.
+  iconUrl: /training/achievements/machine-learning/introduction-to-data-for-machine-learning.svg
+- uid: learn.machinelearning.introduction-to-classical-machine-learning.badge
+  type: badge
+  title: Build classical machine learning models with supervised learning
+  summary: Supervised learning is a form of machine learning where an algorithm learns from examples of data. We progressively paint a picture of how supervised learning automatically generates a model that can make predictions about the real world. We also touch on how these models are tested, and difficulties that can arise in training them.
+  iconUrl: /training/achievements/machine-learning/introduction-to-classical-machine-learning.svg
+- uid: learn.machinelearning.introduction-to-machine-learning.badge
+  type: badge
+  title: Introduction to machine learning
+  summary: A high-level overview of machine learning for people with little or no knowledge of computer science and statistics. You'll learn some essential concepts, explore data, and interactively go through the machine learning lifecycle, using Python to train, save, and use a machine learning model, just like in the real world.
+  iconUrl: /training/achievements/machine-learning/introduction-to-machine-learning.svg
 
