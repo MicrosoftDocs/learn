@@ -10,11 +10,8 @@ helps quantify the financial return relative to the total cost of implementation
 
 $$
 \mathrm{ROI}\% \;=\;
-\frac{
-\mathrm{Benefits} - (\mathrm{Cost\ to\ Achieve} + \mathrm{Cost\ to\ Maintain})
-}{
-\mathrm{Cost\ to\ Achieve} + \mathrm{Cost\ to\ Maintain}
-}
+\dfrac{\mathrm{Benefits} - \left(\mathrm{Cost\ to\ Achieve} + \mathrm{Cost\ to\ Maintain}\right)}
+{\mathrm{Cost\ to\ Achieve} + \mathrm{Cost\ to\ Maintain}}
 \times 100
 $$
 
