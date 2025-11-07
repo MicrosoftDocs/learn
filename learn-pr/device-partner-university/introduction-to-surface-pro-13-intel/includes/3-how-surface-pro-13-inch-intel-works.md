@@ -18,16 +18,16 @@ After your account is synchronized, you'll have the option to set up biometric u
 
 To set up Windows Hello follow these steps:
 
-- Open **Settings**
-- Then select **Accounts**
-- Choose **Sign-in options**
-- Select **Facial recognition (Windows Hello)**
-- **Set up**
-- Follow on-screen instructions to register facial scan data
+1. Open **Settings**.
+2. Then select **Accounts**.
+3. Choose **Sign-in options**.
+4. Select **Facial recognition (Windows Hello)**.
+5. Select **Set up**.
+6. Follow on-screen instructions to register facial scan data.
 
 ## Using Surface Pro Flex Keyboard
 
-:::image type="content" border="true" source="../media/surface-pro-13-flex-keyboard.png" alt-text="Image of Surface Pro sitting open on a desk with detached Pro Flex Keyboard.":::
+:::image type="content" border="true" source="../media/surface-pro-13-flex-keyboard.png" alt-text="Photo of Surface Pro sitting open on a desk with detached Pro Flex Keyboard.":::
 
 Surface Pro Flex Keyboard (sold separately) transforms your Surface Pro 13-inch (Intel) into a full Windows laptop experience. It features a matte palm rest, keyboard lighting, precision touchpad, and a 360-degree hinge ensuring a comfortable typing experience for long work sessions. Let's learn how to connect it to your Surface Pro 13-inch (Intel).
 
@@ -54,11 +54,11 @@ It's important to keep your Surface Pro Flex Keyboard updated to ensure optimal 
 
 **Using the Precision Touchpad:** Surface Pro Flex Keyboard features a precision touchpad that uses two buttons, which can be used as a mouse—as well as gestures to interact with your Surface. Let's go over some of those gestures and what they can do:
 
-- Press down on the left side of your touchpad > Click or select an item
-- Press down on the right side of your touchpad > Open commands in Windows apps or a context menu in desktop apps
-- Swipe three fingers on the touchpad > Display your virtual desktop
-- Slide two fingers horizontally or vertically > Scroll through a screen or document
-- Pinch your thumb and forefinger together or move them apart > Zoom in or out
+- Press down on the left side of your touchpad > Click or select an item.
+- Press down on the right side of your touchpad > Open commands in Windows apps or a context menu in desktop apps.
+- Swipe three fingers on the touchpad > Display your virtual desktop.
+- Slide two fingers horizontally or vertically > Scroll through a screen or document.
+- Pinch your thumb and forefinger together or move them apart > Zoom in or out.
 
 >[!NOTE]
 > You can easily adjust touchpad settings to customize gestures, adjust cursor speed, and scrolling direction. To access these settings, go to **Start** > **Settings** > **Bluetooth & devices** > **Touchpad**.

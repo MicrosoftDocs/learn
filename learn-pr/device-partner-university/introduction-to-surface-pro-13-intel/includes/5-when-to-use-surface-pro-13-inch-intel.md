@@ -1,4 +1,4 @@
-:::image type="content" border="true" source="../media/surface-pro-13-users.png" alt-text="Image of person sitting on couch with Surface Pro on a small table.":::
+:::image type="content" border="true" source="../media/surface-pro-13-users.png" alt-text="Photo of person sitting on couch with Surface Pro on a small table.":::
 
 While many types of users can see value from Surface Pro 13-inch (Intel), it's ideal for business professionals, IT decision makers, and creative teams.
 
