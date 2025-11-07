@@ -14,8 +14,6 @@ The following table outlines key Copilot features and how they support meeting p
 
 These features work together to create continuity across meetings. When teams review Copilot summaries from earlier sessions, they can quickly identify patterns—topics that keep resurfacing, recurring blockers, or ownership gaps. Over time, this helps leaders refine processes, improve meeting agendas, and track long-term project health. Copilot becomes not only a recap tool but also a lens for continuous improvement.
 
-> [!VIDEO](../media/copilot-meeting-catchup.mp4)
-
 ## Get the most out of meetings
 
 By understanding how Copilot captures and presents meeting insights, professionals can make better use of their time—focusing on analysis and next steps rather than catching up on what they missed. Whether attending live or reviewing afterward, Copilot ensures collaboration remains consistent, transparent, and accessible to everyone.

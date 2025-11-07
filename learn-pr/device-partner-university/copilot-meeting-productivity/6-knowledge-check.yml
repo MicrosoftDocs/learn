@@ -16,7 +16,7 @@ quiz:
     choices:
         - content: "Automatically schedule future meetings"
           isCorrect: false
-          explanation: "Incorrect. Copilot does not handle scheduling."
+          explanation: "Incorrect. Copilot doesn't handle scheduling."
         - content: "Clarify discussions and capture action items in real time"
           isCorrect: true
           explanation: "Correct. Copilot helps participants stay aligned during meetings."
@@ -25,7 +25,7 @@ quiz:
           explanation: "Incorrect. Recording must be manually enabled."
         - content: "Prevent off-topic conversations"
           isCorrect: false
-          explanation: "Incorrect. Copilot summarizes content but does not filter topics."
+          explanation: "Incorrect. Copilot summarizes content but doesn't filter topics."
   - content: "What must be enabled to use Copilot effectively in a Teams meeting?"
     choices:
         - content: "Screen sharing"
@@ -45,12 +45,12 @@ quiz:
         - content: "Highlights only the loudest voices"
           isCorrect: false
           explanation: "Incorrect. Copilot aims to represent all voices fairly."
-        - content: "Filters out non-verbal communication"
+        - content: "Filters out nonverbal communication"
           isCorrect: false
           explanation: "Incorrect. Copilot focuses on spoken content."
         - content: "Assigns speaking turns to participants"
           isCorrect: false
-          explanation: "Incorrect. Copilot does not manage speaking behavior."
+          explanation: "Incorrect. Copilot doesn't manage speaking behavior."
         - content: "Identifies missed or interrupted contributions"
           isCorrect: true
           explanation: "Correct. This ensures equitable engagement."
@@ -58,7 +58,7 @@ quiz:
     choices:
         - content: "Deletes irrelevant content"
           isCorrect: false
-          explanation: "Incorrect. Copilot does not delete content."
+          explanation: "Incorrect. Copilot doesn't delete content."
         - content: "Sends email summaries to all attendees"
           isCorrect: false
           explanation: "Incorrect. Summaries are provided in Teams."
@@ -67,7 +67,7 @@ quiz:
           explanation: "Correct. This helps users catch up efficiently."
         - content: "Automatically schedules follow-up meetings"
           isCorrect: false
-          explanation: "Incorrect. Copilot does not manage scheduling."
+          explanation: "Incorrect. Copilot doesn't manage scheduling."
   - content: "What does Copilot use to generate meeting summaries?"
     choices:
         - content: "Transcripts and recordings"
@@ -81,4 +81,4 @@ quiz:
           explanation: "Incorrect. Summaries are based on meeting data."
         - content: "Calendar invites"
           isCorrect: false
-          explanation: "Incorrect. These are not used for summarization."
+          explanation: "Incorrect. These aren't used for summarization."
