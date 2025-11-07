@@ -9,7 +9,7 @@ Fortunately, the meeting was recorded and transcribed in Microsoft Teams, so you
 1. **Open Microsoft Teams.**  
    Go to the **chat** tab on the left pane and select the meeting you missed.
 
-   :::image type="content" border="true" source="../media/teams-chat-recap.png" alt-text="Screenshot showing Microsoft Teams chat tab on the left pane toolbar options to view recent or miss chats or events." lightbox="../media/teams-chat-recap-expended.png":::
+   :::image type="content" border="true" source="../media/teams-chat-recap.png" alt-text="Screenshot showing Microsoft Teams chat tab on the left pane toolbar options to view recent or miss chats or events." lightbox="../media/teams-chat-recap-expanded.png":::
 
 1. **Access the recap.**  
    On the meeting details page, open the **Recap** tab to view the recording and transcript in a new separate window.
@@ -20,7 +20,7 @@ Fortunately, the meeting was recorded and transcribed in Microsoft Teams, so you
    In the Recap tab open **Copilot**, then prompt it with:  
    - “Summarize the meeting and list all key decisions.”
 
-   :::image type="content" border="true" source="../media/meeting-recap-expanded.png" alt-text="Screenshot showing the Copilot view after a Teams meeting."lightbox="../media/meeting-recap-expanded.png":::
+   :::image type="content" border="true" source="../media/meeting-recap.png" alt-text="Screenshot showing the Copilot view after a Teams meeting."lightbox="../media/meeting-recap-expanded.png":::
 
 1. **Review the results.**  
    Look through Copilot’s summary and note:

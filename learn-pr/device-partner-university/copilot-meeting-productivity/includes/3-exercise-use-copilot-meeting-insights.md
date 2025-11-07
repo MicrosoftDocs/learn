@@ -17,7 +17,7 @@ As the meeting progresses, you want to ensure everyone leaves with clear next st
    - To manually start transcription once the meeting begins, select **More (⋯)** and **Turn on transcription or recording** from the meeting toolbar.
    - All participants see a notification that the meeting is being transcribed.
  
-   :::image type="content" border="true" source="../media/teams-copilot-on.png" alt-text="Screenshot showing Microsoft Teams meeting toolbar options to turn on transcription or recording." lightbox="../media/teams-copilot-on-expended.png":::
+   :::image type="content" border="true" source="../media/teams-copilot-on.png" alt-text="Screenshot showing Microsoft Teams meeting toolbar options to turn on transcription or recording." lightbox="../media/teams-copilot-on-expanded.png":::
 
 1. **Open Copilot.**  
    From the meeting toolbar, select **Copilot** to launch the panel.
