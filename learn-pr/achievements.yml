@@ -7230,6 +7230,12 @@ achievements:
   title: Introduction to Azure Remote Rendering
   summary: Describe how Microsoft Azure Remote Rendering can enable you to bring your high-quality 3D models into mixed reality. Evaluate whether Azure Remote Rendering, a cloud-hosted service, can help you complete complex rendering workloads.
   iconUrl: /training/achievements/intro-to-azure-remote-rendering-social.png
+- uid: learn.machinelearning.machine-learning-foundations-using-data-science.trophy
+  type: trophy
+  title: Foundations of data science for machine learning
+  summary: Machine learning is a powerful, modern way to analyze data and make predictions. Using data science fundamentals, you'll learn the core principles of machine learning and how to use common tools and frameworks to train, evaluate, and use machine learning models.
+  iconUrl: /training/achievements/machine-learning/machine-learning-foundations-using-data-science.svg
+
 - uid: learn.machinelearning.optimize-model-performance-roc-auc-dropout.badge
   type: badge
   title: Measure and optimize model performance with ROC and AUC
