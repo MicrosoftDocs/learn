@@ -16,6 +16,8 @@ The modules in this learning path form a progression, where you follow the Tails
 
 Run a template that sets up your Azure DevOps organization.
 
+[!INCLUDE[important-note-demo-generator](../../shared/includes/important-note-demo-generator.md)]
+
 1. [Get and run the ADOGenerator project](https://github.com/microsoft/AzDevOpsDemoGenerator/blob/main/docs/RunApplication.md) in Visual Studio or the IDE of your choice.
 
 1. When prompted to **Enter the template number from the list of templates**, enter **28** for **Host your own build agent in Azure Pipelines**, then press **Enter**.
