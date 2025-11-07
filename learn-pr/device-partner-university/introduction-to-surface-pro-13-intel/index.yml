@@ -1,0 +1,41 @@
+### YamlMime:Module
+uid: learn.dpu.introduction-to-surface-pro-13-intel
+title: Introduction to Microsoft Surface Pro 13-inch (Intel)
+metadata:
+  title: Introduction To Microsoft Surface Pro 13-Inch (intel)
+  description: 'Explore Microsoft Surface Pro 13-inch for Business (Intel), a Copilot+ PC designed for business professionals focused on productivity, security, and versatility.'
+  ms.date: 11/07/2025
+  author: ozahran7
+  ms.author: v-zahranomar
+  ms.topic: module
+  ms.service: surface
+summary: >
+ "Discover the Microsoft Surface Pro 13-inch for Business (Intel), a Copilot+ PC designed for business professionals focused on productivity, security, and versatility."
+abstract: |2+
+  By the end of this module, you'll be able to:    
+  - Evaluate whether Microsoft Surface Pro 13-inch (Intel) is appropriate for your business.
+  - Describe how the software and hardware features of Microsoft Surface Pro 13-inch (Intel) work to complete tasks more efficiently.
+prerequisites: |
+  - None
+iconUrl: /training/achievements/generic-badge.svg
+ratingEnabled: false
+levels:
+  - beginner
+roles:
+  - administrator
+  - business-leader
+  - business-owner
+  - business-user
+  - technology-manager
+products:
+  - surface
+units:
+  - learn.dpu.introduction-to-surface-pro-13-intel.introduction
+  - learn.dpu.introduction-to-surface-pro-13-intel.what-is-microsoft-surface-pro-13-inch-intel
+  - learn.dpu.introduction-to-surface-pro-13-intel.how-surface-pro-13-inch-intel-works
+  - learn.dpu.introduction-to-surface-pro-13-intel.how-surface-pro-13-inch-intel-ai-features-work
+  - learn.dpu.introduction-to-surface-pro-13-intel.when-to-use-surface-pro-13-inch-intel
+  - learn.dpu.introduction-to-surface-pro-13-intel.knowledge-check
+  - learn.dpu.introduction-to-surface-pro-13-intel.summary
+badge:
+  uid: learn.dpu.introduction-to-surface-pro-13-intel.badge
