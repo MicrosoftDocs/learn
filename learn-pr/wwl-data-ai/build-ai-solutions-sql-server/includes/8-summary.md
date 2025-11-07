@@ -6,7 +6,7 @@ In this module, you explored the AI concepts and capabilities in SQL Server 2025
 
 You implemented complete Retrieval Augmented Generation (RAG) workflows that combine vector search with large language models to create context-aware AI responses. You learned to integrate SQL Server with AI frameworks including LangChain and Semantic Kernel, and explored hybrid search scenarios that combine semantic similarity with traditional SQL filtering and full-text search. You also configured Change Event Streaming for real-time, event-driven AI applications and implemented conversational AI interfaces using natural language to SQL (NL2SQL) capabilities with safety guardrails.
 
-Finally, you used Microsoft Copilot in SQL Server Management Studio 21 for AI-powered assistance in writing queries, optimizing performance, debugging errors, and exploring schemas. You also learned to configure Microsoft Fabric mirroring for near real-time analytics, use the MSSQL extension for Visual Studio Code with GitHub Copilot integration, and apply Entity Framework Core with AI capabilities to build production-ready applications.
+Finally, you used GitHub Copilot in SQL Server Management Studio for AI-powered assistance in writing queries, optimizing performance, debugging errors, and exploring schemas. You also learned to configure Microsoft Fabric mirroring for near real-time analytics, use the MSSQL extension for Visual Studio Code with GitHub Copilot integration, and apply Entity Framework Core with AI capabilities to build production-ready applications.
 
 ## Additional resources
 
