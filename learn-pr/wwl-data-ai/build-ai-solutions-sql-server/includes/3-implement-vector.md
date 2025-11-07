@@ -194,7 +194,7 @@ WHERE
 ORDER BY s.distance;
 ```
 
-This hybrid search combines semantic similarity search with traditional SQL filtering. First, it finds the 20 most semantically similar products to "comfortable running shoes," then filters those results to only include footwear items priced between $50 and $150. This approach enables precise targeting while using semantic understanding.
+This hybrid search combines semantic similarity search with traditional SQL filtering. First, it finds the 20 most semantically similar products to "comfortable running shoes," then filters those results to only include footwear items priced between 50 USD and 150 USD. This approach enables precise targeting while using semantic understanding.
 
 ### Integrate full-text and vector search
 
