@@ -34,7 +34,7 @@ Click to Do identifies text and images on your screen that you can take contextu
 
 ## Improved Windows Search
 
-:::image type="content" border="true" source="../media/windows-search.gif" alt-text="Image of using new Windows Search on a PC using natural language to find a file":::
+:::image type="content" border="true" source="../media/windows-search.gif" alt-text="Screenshot of using new Windows Search on a PC using natural language to find a file":::
 
 On Surface Pro 12-inch, finding files is simplified, ensuring that time isn't wasted looking for the files that you need. By using natural language, you can find the files and settings that you need without needing to remember the full file name. This feature uses on-device AI to scan your files and find what you are looking for quickly and efficiently.
 

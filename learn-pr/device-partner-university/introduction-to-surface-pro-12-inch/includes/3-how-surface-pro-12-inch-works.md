@@ -27,7 +27,7 @@ Lastly, on the back of the device you'll see the Surface Slim Pen storage slot. 
 
 ## Using Surface Pro 12-inch Keyboard
 
-:::image type="content" border="true" source="../media/surface-pro-12-side-view.png" alt-text="Image of Surface Pro 12 inch with keyboard in Ocean right side.":::
+:::image type="content" border="true" source="../media/surface-pro-12-side-view.png" alt-text="Screenshot of Surface Pro 12 inch with keyboard in Ocean right side.":::
 
 Surface Pro 12-inch Keyboard (sold separately) transforms your Surface Pro 12-inch into a full Windows laptop experience. It features a matte palm rest, keyboard lighting, precision touchpad, and a 360-degree hinge ensuring a comfortable typing experience for long work sessions. Let's learn how to connect it to your Surface Pro 12-inch.
 
