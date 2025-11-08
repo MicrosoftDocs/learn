@@ -8,10 +8,7 @@ helps quantify the financial return relative to the total cost of implementation
 
 **Basic ROI Formula**
 
-$$
-\mathrm{ROI}\% \mathrel{=} \dfrac{\mathrm{Benefits} - \bigl(\mathrm{Cost\ to\ Achieve} + \mathrm{Cost\ to\ Maintain}\bigr)}{\mathrm{Cost\ to\ Achieve} + \mathrm{Cost\ to\ Maintain}} \times 100
-$$
-
+ROI% $= \dfrac{\mathrm{Benefits} - (\mathrm{Cost\ to\ Achieve} + \mathrm{Cost\ to\ Maintain})}{\mathrm{Cost\ to\ Achieve} + \mathrm{Cost\ to\ Maintain}} \times 100$
 
 This formula accounts for both the initial investment and ongoing operational costs, giving a more realistic view of long-term returns.
 
