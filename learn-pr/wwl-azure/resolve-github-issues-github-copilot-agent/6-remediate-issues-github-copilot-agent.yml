@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.resolve-github-issues-github-copilot-agent.remediate-issues-github-copilot-agent
+title: Remediate issues using GitHub Copilot's Agent mode
+metadata:
+  title: Remediate Issues using GitHub Copilot's Agent Mode
+  description: "Remediate issues using GitHub Copilot's Agent mode"
+  ms.date: 11/12/2025
+  author: chrishowd
+  ms.author: cahowd
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/6-remediate-issues-github-copilot-agent.md)]

@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.resolve-github-issues-github-copilot-agent
+metadata:
+  title: Resolve GitHub issues using GitHub Copilot Agent
+  description: "This module covers how to identify and remediate GitHub issues using GitHub Copilot's Ask and Agent modes. The training focuses on security vulnerabilities such as SQL injection, encryption, logging, and path traversal problems."
+  ms.date: 11/9/2025
+  author: chrishowd
+  ms.author: cahowd
+  ms.topic: module-standard-task-based # Please don't edit, used for our analytics
+  ms.service: github-copilot
+title: Resolve GitHub issues using GitHub Copilot Agent
+summary: "This module covers how to identify and remediate GitHub issues using GitHub Copilot's Ask and Agent modes. The training focuses on security vulnerabilities such as SQL injection, encryption, logging, and path traversal problems."
+abstract: |
+  By the end of this module, you'll be able to:
+    - Describe several common categories of code security vulnerabilities and the associated GitHub issues.
+    - Describe the lifecycle of a GitHub issue from creation to resolution.
+    - Use GitHub Copilot's Ask mode to analyze the code vulnerabilities associated with a GitHub issue and suggest potential fixes.
+    - Use GitHub Copilot's Agent mode to fix code vulnerabilities and resolve GitHub issues.
+prerequisites: |
+  - Experience using GitHub Copilot in Visual Studio Code.
+  - Experience developing C# applications.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+  - intermediate
+roles:
+  - developer
+products:
+  - github
+  - vs-code
+subjects:
+  - app-development
+  - productivity
+units:
+- learn.resolve-github-issues-github-copilot-agent.introduction
+- learn.resolve-github-issues-github-copilot-agent.get-started-github-issues
+- learn.resolve-github-issues-github-copilot-agent.examine-common-code-security-issues
+- learn.resolve-github-issues-github-copilot-agent.prevent-issues-github-copilot
+- learn.resolve-github-issues-github-copilot-agent.analyze-issues-github-copilot-ask
+- learn.resolve-github-issues-github-copilot-agent.remediate-issues-github-copilot-agent
+- learn.resolve-github-issues-github-copilot-agent.exercise-resolve-github-issues
+- learn.resolve-github-issues-github-copilot-agent.knowledge-check
+- learn.resolve-github-issues-github-copilot-agent.summary
+badge:
+  uid: learn.resolve-github-issues-github-copilot-agent.badge

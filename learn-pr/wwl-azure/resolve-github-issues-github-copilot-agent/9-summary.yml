@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.resolve-github-issues-github-copilot-agent.{{unitName}}
+title: Summary
+metadata:
+  title: Summary
+  description: "Summary"
+  ms.date: 11/12/2025
+  author: chrishowd
+  ms.author: cahowd
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/9-summary.md)]
