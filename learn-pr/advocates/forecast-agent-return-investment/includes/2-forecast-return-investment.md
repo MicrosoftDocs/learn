@@ -8,11 +8,11 @@ helps quantify the financial return relative to the total cost of implementation
 
 **Basic ROI Formula**
 
-$$
-ROI\% = \frac{\text{Benefits} - (\text{Cost to Achieve} + \text{Cost to Maintain})}{\text{Cost to Achieve} + \text{Cost to Maintain}} \times 100
-$$
+ROI% $= \dfrac{\mathrm{Benefits} - (\mathrm{Cost\ to\ Achieve} + \mathrm{Cost\ to\ Maintain})}{\mathrm{Cost\ to\ Achieve} + \mathrm{Cost\ to\ Maintain}} \times 100$
 
 This formula accounts for both the initial investment and ongoing operational costs, giving a more realistic view of long-term returns.
+
+Table: Components and drivers
 
 | Category          | Components                                        | Drivers |
 |-------------------|---------------------------------------------------|---------|
@@ -67,7 +67,7 @@ $$
 
 ### Step 5: Interpret the Result
 
-- **ROI  0%** → Profitable investment
+- **ROI > 0%** → Profitable investment
 
 - **ROI < 0%** → Loss-making investment
 
@@ -133,7 +133,7 @@ Then:
 
 ![A diagram showing showing NPV values over 5 years.](../media/net-present-value-table.png)
 
-The NPV (for example, discounted) cash flow impact over 5 years is $19,781 (while the cash flow impact is $50,000 if we don't take into account the discount rate).
+The discounted NPV cash flow impact over 5 years is $19,781. If we don't take into account the discount rate, the cash flow impact is $50,000.
 
 ### Step 5: Interpret the Result
 
