@@ -4,13 +4,11 @@ title: Near real-time analytics with Azure Synapse Link for SQL
 metadata:
   title: Near real-time analytics with Azure Synapse Link for SQL
   description: "Near real-time analytics with Azure Synapse Link for SQL"
-  ms.date: 04/19/2023
-  author: wwlpublish
+  ms.date: 11/3/2025
+  author: JulianePadrao
   ms.author: jupadrao
   ms.topic: unit
-  ms.custom:
-    - build-2023
 durationInMinutes: 16
 content: |
   [!include[](includes/4-near-real-time-analytics-synapse-link-for-sql.md)]
-
+
