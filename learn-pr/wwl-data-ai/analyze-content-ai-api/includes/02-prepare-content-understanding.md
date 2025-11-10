@@ -1,12 +1,12 @@
-Before you can use the Azure AI Content Understanding REST API, you need an Azure AI services multi-services resource in your Azure subscription. You can provision this resource in the following ways:
+Before you can use the Azure Content Understanding REST API, you need an Azure AI services multi-services resource in your Azure subscription. You can provision this resource in the following ways:
 
 - Create an **Azure AI services** resource in the Azure portal.
 - Create a **Microsoft Foundry** hub, which includes an Azure AI services resource by default.
 
 > [!TIP]
-> Creating a Microsoft Foundry hub enables you to work in a Microsoft Foundry project, in which you can use visual tools to create and manage Azure AI Content Understanding schemas and analyzers.
+> Creating a Microsoft Foundry hub enables you to work in a Microsoft Foundry project, in which you can use visual tools to create and manage Azure Content Understanding schemas and analyzers.
 
-After you've provisioned an Azure AI services resource, you need the following information to connect to the Azure AI Content Understanding REST API from a client application:
+After you've provisioned an Azure AI services resource, you need the following information to connect to the Azure Content Understanding REST API from a client application:
 
 - The Azure AI services resource *endpoint*
 - One of the API *keys* associated with the endpoint.

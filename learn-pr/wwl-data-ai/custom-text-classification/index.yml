@@ -4,7 +4,7 @@ metadata:
   adobe-target: true
   prefetch-feature-rollout: true
   title: Create a custom text classification solution
-  description: "The Azure AI Language service enables processing of natural language to use in your own app. Learn how to build a custom text classification project."
+  description: "The Azure Language service enables processing of natural language to use in your own app. Learn how to build a custom text classification project."
   ms.date: 09/04/2025
   author: ivorb
   ms.author: berryivor
@@ -15,7 +15,7 @@ metadata:
   ms.service: azure-ai-language
   ai-usage: human-only
 title: Create custom text classification solutions
-summary: The Azure AI Language service enables processing of natural language to use in your own app. Learn how to build a custom text classification project.
+summary: The Azure Language service enables processing of natural language to use in your own app. Learn how to build a custom text classification project.
 abstract: |
   After completing this module, you'll be able to:
 

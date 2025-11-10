@@ -6,6 +6,6 @@ We live in a digital world, in which data is increasingly captured as images. Of
 - Photographing street signs or store fronts so you can submit the text they contain to a translation app.
 - Digitizing handwritten notes using a cellphone camera.
 
-![Diagram of an image containing text being read by the Azure AI Vision image analysis service.](../media/optical-character-recognition.png)
+![Diagram of an image containing text being read by the Azure Vision image analysis service.](../media/optical-character-recognition.png)
 
-In this module, we'll explore the *optical character recognition* (OCR) capabilities of the Azure AI Vision *Image Analysis* API, which makes these scenarios, and more, possible.
+In this module, we'll explore the *optical character recognition* (OCR) capabilities of the Azure Vision *Image Analysis* API, which makes these scenarios, and more, possible.

@@ -1,4 +1,4 @@
-In this exercise, you use the Azure AI Language SDK to develop a client application that analyzes text.
+In this exercise, you use the Azure Language SDK to develop a client application that analyzes text.
 
 > [!NOTE]
 > To complete this lab, you need an **[Azure subscription](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn)** in which you have administrative access.

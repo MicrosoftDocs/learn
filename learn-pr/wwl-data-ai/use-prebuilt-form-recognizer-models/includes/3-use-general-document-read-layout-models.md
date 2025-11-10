@@ -1,12 +1,12 @@
 If you want to extract text, languages, and other information from documents with unpredictable structures, you can use the read, general document, or layout models.
 
-In your polling company, customers and partners often send specifications, tenders, statements of work, and other documents with unpredictable structures. You want to know if Azure AI Document Intelligence can analyze and extract values from these documents.
+In your polling company, customers and partners often send specifications, tenders, statements of work, and other documents with unpredictable structures. You want to know if Azure Document Intelligence can analyze and extract values from these documents.
 
 Here, you'll learn about the prebuilt models that Microsoft provides for general documents.
 
 ## Using the read model
 
-The Azure AI Document Intelligence read model extracts printed and handwritten text from documents and images. It's used to provide text extraction in all the other prebuilt models.
+The Azure Document Intelligence read model extracts printed and handwritten text from documents and images. It's used to provide text extraction in all the other prebuilt models.
 
 The read model can also detect the language that a line of text is written in and classify whether it's handwritten or printed text.
 
@@ -57,7 +57,7 @@ Selection marks are extracted with their bounding box, a confidence indicator, a
 
 ## Learn more
 
-- [Language support for Azure AI Document Intelligence](/azure/ai-services/document-intelligence/language-support)
-- [Azure AI Document Intelligence read model](/azure/ai-services/document-intelligence/concept-read)
-- [Azure AI Document Intelligence general document model](/azure/ai-services/document-intelligence/concept-general-document)
-- [Azure AI Document Intelligence layout model](/azure/ai-services/document-intelligence/concept-layout)
+- [Language support for Azure Document Intelligence](/azure/ai-services/document-intelligence/language-support)
+- [Azure Document Intelligence read model](/azure/ai-services/document-intelligence/concept-read)
+- [Azure Document Intelligence general document model](/azure/ai-services/document-intelligence/concept-general-document)
+- [Azure Document Intelligence layout model](/azure/ai-services/document-intelligence/concept-layout)

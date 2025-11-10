@@ -36,7 +36,7 @@ There are many healthcare scenarios that benefit from improved interactions:
 
 New generation AI, including generative AI, is taking document AI technologies to the next level. This progress allows for further, smarter automation.
 
-* **Process and organize medical data**: Azure AI Document Intelligence, Azure OpenAI Services, and Azure Cognitive Search can help you manage patient records, medical research, and operational data.
+* **Process and organize medical data**: Azure Document Intelligence, Azure OpenAI Services, and Azure Cognitive Search can help you manage patient records, medical research, and operational data.
 * **Anticipate equipment needs and patient admission rates**: You can use Azure Machine Learning, Microsoft Power BI, and Azure OpenAI Services to do predictive analytics. That means you know beforehand when your MRI scanner or other devices are likely to start malfunctioning or when you’ll receive more patients.
 * **Generate full-circle medical reports**: With Azure OpenAI Services, Microsoft Power BI, and Azure Synapse Analytics, you can automatically create reports on patient outcomes, treatment efficiency, or operational metrics.
 

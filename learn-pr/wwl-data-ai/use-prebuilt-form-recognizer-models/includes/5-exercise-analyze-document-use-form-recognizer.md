@@ -1,4 +1,4 @@
-In this exercise, you use Azure AI Document Intelligence to analyze forms using a prebuilt model.
+In this exercise, you use Azure Document Intelligence to analyze forms using a prebuilt model.
 
 > [!NOTE]
 > To complete this lab, you need an **[Azure subscription](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn)** in which you have administrative access.

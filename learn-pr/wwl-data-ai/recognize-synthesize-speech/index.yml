@@ -14,13 +14,13 @@ metadata:
   ms.service: azure-ai-speech
   ai-usage: ai-assisted
 title: Get started with speech in Azure
-summary: Learn how to recognize and synthesize speech by using Azure AI Speech.
+summary: Learn how to recognize and synthesize speech by using Azure Speech.
 abstract: |
   In this module you will:
 
   - Learn about speech recognition and synthesis
 
-  - Learn how to use Azure AI Speech
+  - Learn how to use Azure Speech
 prerequisites: Ability to navigate the Azure portal
 iconUrl: /training/achievements/convert-speech-to-text.svg
 levels:

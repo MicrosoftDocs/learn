@@ -34,9 +34,9 @@ quiz:
     - content: "Azure AI services with a billable tier."
       isCorrect: false
       explanation: "Incorrect. Azure AI services isn't required for semantic ranking."
-    - content: "Azure AI Language service."
+    - content: "Azure Language service."
       isCorrect: false
-      explanation: "Incorrect. Azure AI language service isn't required for semantic ranking."
+      explanation: "Incorrect. Azure Language service isn't required for semantic ranking."
   - content: "What are semantic captions?"
     choices:
     - content: "Verbatim summary sentences from the document."
@@ -48,4 +48,4 @@ quiz:
     - content: "A summary of the content from all documents."
       isCorrect: false
       explanation: "Semantic captions don't include content from all documents."
-
+

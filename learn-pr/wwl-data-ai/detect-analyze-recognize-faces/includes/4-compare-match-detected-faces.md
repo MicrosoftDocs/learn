@@ -1,4 +1,4 @@
-In addition to detecting and analyzing faces, you can use the Azure AI Vision Face service to compare and recognize faces.
+In addition to detecting and analyzing faces, you can use the Azure Vision Face service to compare and recognize faces.
 
 > [!IMPORTANT]
 > Usage of facial recognition, comparison, and verification requires approval through a **[Limited Access policy](https://aka.ms/cog-services-limited-access)**.
@@ -33,4 +33,4 @@ The trained model is stored in your Face (or Azure AI Services) resource, and ca
 - Analyze new images to find faces that are *similar* to a known, persisted face.
 
 > [!Tip]
-> To learn more about using face verification and identification to implement a facial recognition solution, see **[Face recognition](/azure/ai-services/computer-vision/concept-face-recognition)** in the Azure AI Vision Face documentation.
+> To learn more about using face verification and identification to implement a facial recognition solution, see **[Face recognition](/azure/ai-services/computer-vision/concept-face-recognition)** in the Azure Vision Face documentation.

@@ -1,4 +1,4 @@
-In this exercise, you use Azure AI Language to build a custom named entity recognition model.
+In this exercise, you use Azure Language to build a custom named entity recognition model.
 
 > [!NOTE]
 > To complete this lab, you need an **[Azure subscription](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn)**.

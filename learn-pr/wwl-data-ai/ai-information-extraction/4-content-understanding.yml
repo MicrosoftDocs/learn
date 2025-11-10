@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.ai-information-extraction.content-understanding
-title: Extract multimodal information with Azure AI Content Understanding
+title: Extract multimodal information with Azure Content Understanding
 metadata:
-  title: Extract multimodal information with Azure AI Content Understanding
-  description: Use Azure AI Content Understanding to extract multimodal information.
+  title: Extract multimodal information with Azure Content Understanding
+  description: Use Azure Content Understanding to extract multimodal information.
   author: graememalcolm
   ms.author: gmalc
   ms.date: 05/11/2025

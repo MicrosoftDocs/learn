@@ -14,9 +14,9 @@ OpenAI is an AI research organization and technology company known for its groun
 
 The [**Azure OpenAI Service**](/azure/ai-services/openai/overview) provides REST API access to OpenAI's powerful language models and is designed to help build GenAI applications using Azure. Exposing a robust suite of artificial intelligence services and models enables you to build innovative applications that use natural language understanding, text generation, and other GenAI capabilities. Azure OpenAI provides access to state-of-the-art generative AI language models capable of understanding context, generating coherent text, and performing translation, summarization, and question-answering tasks. With Azure OpenAI, you can build applications that understand natural language input and respond intelligently.
 
-### Azure AI Language service
+### Azure Language service
 
-The [**Azure AI Language**](/azure/ai-services/language-service/overview) empowers you to build intelligent applications that understand and process natural language. When integrated with an Azure Database for PostgreSQL flexible server instance, these services enhance your database capabilities, allowing you to perform tasks like sentiment analysis, text summarization, and key phrase extraction directly within SQL queries.
+The [**Azure Language**](/azure/ai-services/language-service/overview) empowers you to build intelligent applications that understand and process natural language. When integrated with an Azure Database for PostgreSQL flexible server instance, these services enhance your database capabilities, allowing you to perform tasks like sentiment analysis, text summarization, and key phrase extraction directly within SQL queries.
 
 ## Azure Machine Learning
 

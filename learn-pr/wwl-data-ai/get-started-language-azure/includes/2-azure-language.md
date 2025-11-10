@@ -2,9 +2,9 @@ Core natural language processing (NLP) tasks include: language detection, sentim
 
 |**Service**|**Description**|
 |-|-|
-|![Screenshot of Azure AI Language icon.](../media/azure-ai-language.png) **Azure AI Language service**| A cloud-based service that includes features for understanding and analyzing text. Azure AI Language includes various features that support sentiment analysis, key phrase identification, text summarization, and conversational language understanding.|
-|![Screenshot of Azure AI Translator icon.](../media/azure-ai-translator.png) **Azure AI Translator service**|A cloud-based service that uses Neural Machine Translation (NMT) for translation, which analyzes the semantic context of the text and renders a more accurate and complete translation as a result.|
+|![Screenshot of Azure Language icon.](../media/azure-ai-language.png) **Azure Language service**| A cloud-based service that includes features for understanding and analyzing text. Azure Language includes various features that support sentiment analysis, key phrase identification, text summarization, and conversational language understanding.|
+|![Screenshot of Azure Translator icon.](../media/azure-ai-translator.png) **Azure Translator service**|A cloud-based service that uses Neural Machine Translation (NMT) for translation, which analyzes the semantic context of the text and renders a more accurate and complete translation as a result.|
 
-Next, let's explore Azure AI Language capabilities.
+Next, let's explore Azure Language capabilities.
 
  

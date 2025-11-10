@@ -13,7 +13,7 @@ This Learning Path consists of two lessons:
 ### Learning Path 6 Tips and Tricks
 
 - Encourage students to think of an example of when to use prebuilt models and when a custom model would be better
-- Note that Azure AI Document Intelligence was formerly known as Form Recognizer
+- Note that Azure Document Intelligence was formerly known as Form Recognizer
 
 Demo and lab instructions can be found in the Trainer Prep Guide, in the “Required Materials to prepare for and teach this course” section:
 

@@ -1,5 +1,5 @@
 
-Before you can use Azure AI Speech, you need to create an Azure AI Speech resource in your Azure subscription. You can use either a dedicated Azure AI Speech resource or a multi-service Azure AI Services or Microsoft Foundry resource.
+Before you can use Azure Speech, you need to create an Azure Speech resource in your Azure subscription. You can use either a dedicated Azure Speech resource or a multi-service Azure AI Services or Microsoft Foundry resource.
 
 After you create your resource, you'll need the following information to use it from a client application through one of the supported SDKs:
 
@@ -8,9 +8,9 @@ After you create your resource, you'll need the following information to use it 
 
 You can view of these values on the **Keys and Endpoint** page for your resource in the Azure portal.
 
-While the specific syntax and parameters can vary between language-specific SDKs, most interactions with the Azure AI Speech service start with the creation of a **SpeechConfig** object that encapsulates the connection to your Azure AI Speech resource.
+While the specific syntax and parameters can vary between language-specific SDKs, most interactions with the Azure Speech service start with the creation of a **SpeechConfig** object that encapsulates the connection to your Azure Speech resource.
 
-For example, the following Python code instantiates a SpeechConfig object based on an Azure AI Speech resource in the East US region:
+For example, the following Python code instantiates a SpeechConfig object based on an Azure Speech resource in the East US region:
 
 ```python
 import azure.cognitiveservices.speech as speech_sdk

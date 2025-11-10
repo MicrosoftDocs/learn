@@ -5,7 +5,7 @@ All of the topics covered in the A1-102: Designing and Implementing a Microsoft 
 Become familiar with the objective domains which are a comprehensive set of specific and measurable knowledge, skills, and abilities that are the basis for the development of both this course and the certification exam.
 
 - **Learning Path 1:** Get started with Azure AI Services 
-- **Learning Path 2:** Develop computer vision solutions with Azure AI Vision 
+- **Learning Path 2:** Develop computer vision solutions with Azure Vision 
 - **Learning Path 3:** Develop natural language processing solutions with Azure AI Services 
 - **Learning Path 4:** Develop generative AI solutions with Azure OpenAI Service 
 - **Learning Path 5:** Develop knowledge mining solutions with Azure AI Search 

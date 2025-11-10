@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.ai-information-extraction.azure-ai-vision
-title: Extract information with Azure AI Vision
+title: Extract information with Azure Vision
 metadata:
-  title: Extract information with Azure AI Vision
-  description: Use Azure AI Vision to extract information from images.
+  title: Extract information with Azure Vision
+  description: Use Azure Vision to extract information from images.
   author: graememalcolm
   ms.author: gmalc
   ms.date: 05/11/2025

@@ -1,14 +1,14 @@
-Azure AI provides a wide range of cloud-based services for various AI tasks, including computer vision. Microsoft's **Azure AI Vision** service provides prebuilt and customizable computer vision models that are based on deep learning models and provide various capabilities. Azure AI Vision provides "off-the-shelf" functionality for many common computer vision scenarios, while retaining the ability to create custom models using your own images.
+Azure AI provides a wide range of cloud-based services for various AI tasks, including computer vision. Microsoft's **Azure Vision** service provides prebuilt and customizable computer vision models that are based on deep learning models and provide various capabilities. Azure Vision provides "off-the-shelf" functionality for many common computer vision scenarios, while retaining the ability to create custom models using your own images.
 
-Azure AI Vision service contains several products. Within Azure AI Vision, there are services that handle specific sets of tasks including:
+Azure Vision service contains several products. Within Azure Vision, there are services that handle specific sets of tasks including:
 
-- **Azure AI Vision Image Analysis service**: Detects common objects in images, tags visual features, generates captions, and supports optical character recognition (OCR).
+- **Azure Vision Image Analysis service**: Detects common objects in images, tags visual features, generates captions, and supports optical character recognition (OCR).
     ![Screenshot of image captioning example from Microsoft Foundry.](../media/image-captioning-example.png)
 
 - **Azure AI Face service**: Detects, recognizes, and analyzes human faces in images. Provides specific models for facial analysis that extend beyond what is available with image analysis. 
     ![Screenshot of face detection example from Microsoft Foundry.](../media/face-detection-example.png)
 
-There are many applications for Azure AI Vision's *image analysis* and *face* detection, analysis, and recognition. For example:
+There are many applications for Azure Vision's *image analysis* and *face* detection, analysis, and recognition. For example:
 
 - Search engine optimization - using image tagging and captioning for essential improvements in search ranking.
 - Content moderation - using image detection to help monitor the safety of images posted online.
@@ -21,5 +21,5 @@ There are many applications for Azure AI Vision's *image analysis* and *face* de
 > [!NOTE]
 > Many modern vision solutions are built with a combination of capabilities. For example, video analysis capabilities are supported by [*Azure AI Video indexer*](/azure/azure-video-indexer/video-indexer-overview). Azure AI Video indexer is built on several Azure AI services, such as  Face, Translator, Image Analysis, and Speech.  
 
-Next, let's take a look at some core Azure AI Vision Image Analysis capabilities. 
+Next, let's take a look at some core Azure Vision Image Analysis capabilities. 
 

@@ -4,7 +4,7 @@ The enrichment pipeline that is orchestrated by an indexer uses a *skillset* of 
 
 ## Built-in skills
 
-Azure AI Search provides a collection of *built-in* skills that you can include in a skillset for your indexer. Built-in skills include functionality from Azure AI services such as Azure AI Vision and Azure AI Language, enabling you to apply enrichments such as:
+Azure AI Search provides a collection of *built-in* skills that you can include in a skillset for your indexer. Built-in skills include functionality from Azure AI services such as Azure Vision and Azure Language, enabling you to apply enrichments such as:
 
 - Detecting the language that text is written in.
 - Detecting and extracting places, locations, and other entities in the text.
@@ -18,7 +18,7 @@ To use the built-in skills, your indexer must have access to an Azure AI service
 
 ## Custom skills
 
-You can further extend the enrichment capabilities of your index by creating *custom* skills. As the name suggests, custom skills perform custom logic on input data from your index document to return new field values that can be incorporated into the index. Often, custom skills are "wrappers" around services that are specifically designed to extract data from documents. For example, you could implement a custom skill as an Azure Function, and use it to pass data from your index document to an Azure AI Document Intelligence model, which can extract fields from a form.
+You can further extend the enrichment capabilities of your index by creating *custom* skills. As the name suggests, custom skills perform custom logic on input data from your index document to return new field values that can be incorporated into the index. Often, custom skills are "wrappers" around services that are specifically designed to extract data from documents. For example, you could implement a custom skill as an Azure Function, and use it to pass data from your index document to an Azure Document Intelligence model, which can extract fields from a form.
 
 > [!TIP]
 > To learn more about using custom skills with Azure AI Search, see **[Add a custom skill to an Azure AI Search enrichment pipeline](/azure/search/cognitive-search-custom-skill-interface)** in the Azure AI Search documentation.

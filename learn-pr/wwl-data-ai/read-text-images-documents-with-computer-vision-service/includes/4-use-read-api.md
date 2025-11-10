@@ -1,4 +1,4 @@
-To use Azure AI Vision for image analysis, including optical character recognition, you must provision an Azure AI Vision resource in an Azure subscription. The resource can be:
+To use Azure Vision for image analysis, including optical character recognition, you must provision an Azure Vision resource in an Azure subscription. The resource can be:
 
 - An **Azure AI Services** multi-service resource (either deployed as part of a Microsoft Foundry hub and project, or as a standalone resource).
 - A **Computer Vision** resource.
@@ -17,7 +17,7 @@ https://<endpoint>/computervision/imageanalysis:analyze?features=read&...
 
 ::: zone pivot="python"
 
-To use the Azure AI Vision Python SDK to extract text from an image, install the **azure-ai-vision-imageanalysis** package. Then, in your code, use either key-based authentication or Microsoft Entra ID authentication to connect an **ImageAnalysisClient** object to an Azure AI Vision resource. To find and read text in an image, call the **analyze** (or **analyze_from_url**) method, specifying the **VisualFeatures.READ** enumeration.
+To use the Azure Vision Python SDK to extract text from an image, install the **azure-ai-vision-imageanalysis** package. Then, in your code, use either key-based authentication or Microsoft Entra ID authentication to connect an **ImageAnalysisClient** object to an Azure Vision resource. To find and read text in an image, call the **analyze** (or **analyze_from_url**) method, specifying the **VisualFeatures.READ** enumeration.
 
 ```python
 from azure.ai.vision.imageanalysis import ImageAnalysisClient
@@ -40,7 +40,7 @@ result = client.analyze(
 
 ::: zone pivot="csharp"
 
-To use the Azure AI Vision .NET SDK to extract text from an image, install the **Azure.AI.Vision.ImageAnalysis** package. Then, in your code, use either key-based authentication or Microsoft Entra ID authentication to connect an **ImageAnalysisClient** object to an Azure AI Vision resource. To find and read text in an image, call the **Analyze** method, specifying the **VisualFeatures.Read** enumeration.
+To use the Azure Vision .NET SDK to extract text from an image, install the **Azure.AI.Vision.ImageAnalysis** package. Then, in your code, use either key-based authentication or Microsoft Entra ID authentication to connect an **ImageAnalysisClient** object to an Azure Vision resource. To find and read text in an image, call the **Analyze** method, specifying the **VisualFeatures.Read** enumeration.
 
 ```csharp
 using Azure.AI.Vision.ImageAnalysis;

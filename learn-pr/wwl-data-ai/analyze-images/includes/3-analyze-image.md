@@ -1,4 +1,4 @@
-After connecting to your Azure AI Vision resource endpoint, your client application can use the service to perform image analysis tasks.
+After connecting to your Azure Vision resource endpoint, your client application can use the service to perform image analysis tasks.
 
 Note the following requirements for image analysis:
 

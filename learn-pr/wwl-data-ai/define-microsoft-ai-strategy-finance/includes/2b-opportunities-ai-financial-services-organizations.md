@@ -26,7 +26,7 @@ These AI solutions enable customized interactions based on context and on busine
 
 Microsoft AI offers you the tools to automate tasks, so you can spend time on what’s important.
 
-* **Process and organize financial data**: You can have applications that search in large amounts of transaction data, customer feedback, and market trends. This feature is covered in Azure AI Document Intelligence (formerly Form Recognizer), Azure OpenAI Services, and Azure Cognitive Search.
+* **Process and organize financial data**: You can have applications that search in large amounts of transaction data, customer feedback, and market trends. This feature is covered in Azure Document Intelligence (formerly Form Recognizer), Azure OpenAI Services, and Azure Cognitive Search.
 * **Anticipate customer behavior**: Azure Machine Learning, Power BI, and Azure OpenAI Services can do predictive analytics for you, that is, these solutions use past or current data to predict future trends in customer behavior.
 * **Generate full-circle financial reports**: Several Microsoft products, such as OpenAI Services, Microsoft Power BI, and Azure Synapse Analytics, enable you to automatically create these documents for your analysts. They can also analyze customer trends and draft risk assessments.  
 

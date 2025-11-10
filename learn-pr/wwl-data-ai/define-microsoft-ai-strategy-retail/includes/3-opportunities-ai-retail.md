@@ -28,7 +28,7 @@ Current shopping experiences generate great amounts of data. AI solutions allow 
 
 A typical AI strategy to improve productivity is automation, which can be useful in many retail jobs.
 
-* **Search complex documents**: Products like Azure AI Document Intelligence, Azure OpenAI Services, and Azure AI Search enable you to easily find insights in lengthy, dense documents. Thanks to these tools, retail organizations can process and organize sales data, customer feedback, and inventory details.
+* **Search complex documents**: Products like Azure Document Intelligence, Azure OpenAI Services, and Azure AI Search enable you to easily find insights in lengthy, dense documents. Thanks to these tools, retail organizations can process and organize sales data, customer feedback, and inventory details.
 * **Anticipate inventory and supply chain management**: Azure Machine Learning, Microsoft Power BI, and Azure OpenAI Services can do predictive analytics, that is, use historic and present data to forecast future scenarios. In retail, this technique is helpful to anticipate inventory needs and sales. This task is key to optimizing your supply chain.
 * **Automate reporting**: A modern organization requires many reports if they want to take decisions based on data. Solutions like Azure OpenAI Services, Microsoft Power BI, and Azure Synapse Analytics help you automate the generation of these reports, which otherwise takes much time. This way, retail companies can quickly profit from sales reports, customer trends, and financial forecasts.
 

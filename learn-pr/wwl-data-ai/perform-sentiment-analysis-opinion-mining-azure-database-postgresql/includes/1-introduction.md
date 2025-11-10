@@ -14,11 +14,11 @@ You're a developer for Margie's Travel, a company whose web and mobile apps conn
 
 ## Analyze sentiment with Azure AI Services
 
-The Azure AI Language service, part of Azure AI Services, allows you to analyze sentiment and mine opinions from textual data. Incorporating sentiment analysis capabilities into your applications can be accomplished seamlessly using the `azure_ai` extension for the Azure Database for PostgreSQL flexible server.
+The Azure Language service, part of Azure AI Services, allows you to analyze sentiment and mine opinions from textual data. Incorporating sentiment analysis capabilities into your applications can be accomplished seamlessly using the `azure_ai` extension for the Azure Database for PostgreSQL flexible server.
 
 ## Learning objectives
 
-The module explores the sentiment analysis and opinion mining capabilities of the Azure AI Language service and how the `azure_ai` extension can be used to integrate sentiment analysis directly into your PostgreSQL databases. In this module, you:
+The module explores the sentiment analysis and opinion mining capabilities of the Azure Language service and how the `azure_ai` extension can be used to integrate sentiment analysis directly into your PostgreSQL databases. In this module, you:
 
 - Explore the fundamentals of sentiment analysis and how it can be applied to gain insights into user sentiments and emotions.
 - Describe opinion mining techniques to identify sentiments related to specific attributes.

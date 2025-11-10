@@ -17,12 +17,12 @@ quiz:
   questions:
   - content: "Which Azure resource provides language and vision services from a single endpoint?"
     choices:
-    - content: "Azure AI Language"
+    - content: "Azure Language"
       isCorrect: false
-      explanation: "Incorrect. Azure AI Language provides only language services."
-    - content: "Azure AI Vision"
+      explanation: "Incorrect. Azure Language provides only language services."
+    - content: "Azure Vision"
       isCorrect: false
-      explanation: "Incorrect. Azure AI Vision provides only vision services."
+      explanation: "Incorrect. Azure Vision provides only vision services."
     - content: "Azure AI Services"
       isCorrect: true
       explanation: "Correct. Azure AI Services provides multiple services from a single endpoint."
