@@ -1,4 +1,40 @@
-There are many ways that developers can create AI agents, including multiple frameworks and SDKs.
+AI agents are the next step in artificial intelligence, going beyond traditional apps that only respond to user input. While conventional AI improves experiences through personalization and automation, AI agents can act on their own, make decisions, and work together to accomplish complex tasks.
+
+Because these systems are proactive rather than reactive, developers now need specialized frameworks and tools to build them. A growing ecosystem of agent development solutions exists today—each suited to different use cases, skill levels, and deployment needs.
+
+## From AI Frameworks to AI Agent Frameworks
+
+### Traditional AI Frameworks: Enhancing Apps with Intelligence
+Traditional AI frameworks help developers integrate intelligent capabilities into applications. These frameworks improve performance and user engagement in several key ways:
+
+- **Personalization:**  
+  AI can analyze user behavior and preferences to deliver tailored recommendations and experiences.  
+  *Example:* Streaming platforms like **Netflix** suggest shows and movies based on viewing history, enhancing engagement.
+
+- **Automation and Efficiency:**  
+  AI automates repetitive tasks and streamlines workflows, improving operational efficiency.  
+  *Example:* **AI chatbots** in customer service handle common inquiries, reducing response times and freeing human agents for complex issues.
+
+- **Enhanced User Experience:**  
+  AI introduces features like natural language processing, voice recognition, and predictive text.  
+  *Example:* Virtual assistants like **Siri** and **Google Assistant** understand voice commands, making device interactions more intuitive.
+
+### Beyond Traditional AI: The Rise of AI Agent Frameworks
+While traditional AI enhances applications, **AI Agent Frameworks** go further by enabling the development of **autonomous, goal-oriented agents**. These agents don't just process data—they **act**, **decide**, and **collaborate** to achieve objectives.
+
+Key capabilities include:
+
+- **Agent Collaboration and Coordination:**  
+  Supports multiple agents that communicate, share information, and work together to solve complex problems.
+
+- **Task Automation and Management:**  
+  Automates multi-step workflows and dynamic task delegation across agents for more efficient operations.
+
+- **Contextual Understanding and Adaptation:**  
+  Enables agents to perceive context, make decisions based on real-time data, and adapt to changing environments.
+
+### The Next Step in Intelligent Systems
+AI Agent Frameworks elevate automation by creating systems that can **learn, adapt, and act independently**. They represent the next evolution in AI—moving from simple assistance to **autonomous collaboration** and **continuous optimization**.
 
 ## Azure AI Foundry Agent Service
 
@@ -50,11 +86,13 @@ Business users can use the *declarative* Copilot Studio lite experience tool in 
 
 With such a wide range of available tools and frameworks, it can be challenging to decide which ones to use. Use the following considerations to help you identify the right choices for your scenario:
 
-- For business users with little or no software development experience, Copilot Studio lite experience in Microsoft 365 Copilot Chat provides a way to create simple declarative agents that automate everyday tasks. This approach can empower users across an organization to benefit from AI agents with minimal impact on IT.
-- If business users have sufficient technical skills to build low-code solutions using Microsoft Power Platform technologies, Copilot Studio enables them to combine those skills with their business domain knowledge and build agent solutions that extend the capabilities of Microsoft 365 Copilot or add agentic functionality to common channels like Microsoft Teams, Slack, or Messenger.
-- When an organization needs more complex extensions to Microsoft 365 Copilot capabilities, professional developers can use the Microsoft 365 Agents SDK to build agents that target the same channels as Copilot Studio.
-- To develop agentic solutions that use Azure back-end services with a wide choice of models, custom storage and search services, and integration with Azure AI services, professional developers should use Foundry Agent Service.
-- Use the Microsoft Agent Framework to develop single, standalone agents or build multi-agent solutions that use different orchestration patterns.
+| **User Type / Scenario** | **Recommended Solution** | **Key Capabilities** | **Typical Use Cases / Benefits** |
+|---------------------------|---------------------------|-----------------------|----------------------------------|
+| **Business users with little or no software development experience** | **Copilot Studio (lite experience in Microsoft 365 Copilot Chat)** | - Simple declarative agent creation<br>- No coding required | - Automate everyday tasks<br>- Empower non-technical staff to use AI with minimal IT involvement |
+| **Business users with low-code development skills (Power Platform)** | **Copilot Studio (full version)** | - Combines low-code tools with business domain knowledge<br>- Extends Microsoft 365 Copilot capabilities<br>- Adds agent functionality to Teams, Slack, Messenger | - Build low-code agentic solutions<br>- Extend enterprise productivity tools |
+| **Professional developers extending Microsoft 365 Copilot** | **Microsoft 365 Agents SDK** | - Full developer flexibility<br>- Build complex extensions targeting Microsoft 365 channels | - Custom integrations and advanced agent behaviors in Microsoft ecosystem |
+| **Professional developers building Azure-based AI solutions** | **Foundry Agent Service** | - Integrates with Azure AI and back-end services<br>- Supports multiple models, storage, and search options | - Create scalable, customized agentic solutions using Azure infrastructure |
+| **Developers building standalone or multi-agent systems** | **Microsoft Agent Framework** | - Enables creation of single or multi-agent systems<br>- Supports different orchestration patterns | - Build complex, orchestrated agent systems across diverse environments |
 
 > [!NOTE]
 > There's overlap between the capabilities of each agent development solution, and in some cases factors like existing familiarity with tools, programming language preferences, and other considerations will influence the decision.

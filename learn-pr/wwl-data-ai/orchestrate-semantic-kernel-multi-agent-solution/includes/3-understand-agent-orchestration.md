@@ -13,6 +13,52 @@ Single-agent systems are often limited in scope, constrained by one set of instr
 
 This approach opens the door to more flexible, efficient, and scalable solutions, especially for real-world applications that require collaboration, specialization, or redundancy.
 
+## Understand workflows in the Microsoft Agent Framework
+
+The Microsoft Agent Framework provides **workflows** — structured sequences of steps used to complete a task. These workflows can include one or more **AI agents** alongside other components to automate complex operations.  
+
+Workflows give developers control over how tasks are executed, enable **multi-agent orchestration**, and support **checkpointing** to save and resume workflow states.
+
+### Core Components of a Workflow
+
+#### **Executors**
+Executors are the main workers in a workflow. They receive input messages, perform specific actions, and produce outputs that move the workflow toward completing its goal.  
+Executors can represent **AI agents** or **custom logic** components.  
+
+*Example:* One executor could analyze a travel request, while another books the flight or hotel based on the results.
+
+#### **Edges**
+Edges define how messages flow between executors, determining the logic and order of execution. The Microsoft Agent Framework supports several types of edges:
+
+- **Direct Edges:** Connect one executor directly to another in sequence.  
+  *Example:* After an AI agent gathers user input, the next executor processes the booking.*
+
+- **Conditional Edges:** Trigger only when certain conditions are met.  
+  *Example:* If hotel rooms are unavailable, the workflow branches to an executor that suggests alternative dates or locations.*
+
+- **Switch-Case Edges:** Route messages to different executors based on predefined conditions.  
+  *Example:* VIP customers might be routed to a premium service executor, while others follow the standard process.*
+
+- **Fan-Out Edges:** Send a single message to multiple executors simultaneously.  
+  *Example:* One request could be sent to several agents — one checking flights, another checking hotels.*
+
+- **Fan-In Edges:** Combine multiple messages from different executors into one for a final step.  
+  *Example:* After gathering hotel and flight results, a summary executor compiles them into a single travel itinerary.*
+
+#### **Events**
+The Microsoft Agent Framework includes built-in events to improve **observability** and **debugging** during workflow execution. These events help developers monitor progress, track errors, and analyze system performance.
+
+| **Event Name** | **Description** |
+|----------------|-----------------|
+| **WorkflowStartedEvent** | Triggered when workflow execution begins. |
+| **WorkflowOutputEvent** | Emitted when the workflow produces an output. |
+| **WorkflowErrorEvent** | Occurs when an error is encountered. |
+| **ExecutorInvokeEvent** | Fired when an executor starts processing a task. |
+| **ExecutorCompleteEvent** | Fired when an executor finishes its work. |
+| **RequestInfoEvent** | Logged when an external request is issued. |
+
+Workflows in the Microsoft Agent Framework allow developers to **design, monitor, and control** how multiple AI agents and logic components interact to complete complex tasks. They bring structure, flexibility, and transparency to agent-driven applications.
+
 ## Supported orchestration patterns
 
 Microsoft Agent Framework provides several orchestration patterns directly in the SDK, each offering a different approach to coordinating agents. These patterns are designed to be technology-agnostic so you can adapt them to your own domain and integrate them into your existing systems.
