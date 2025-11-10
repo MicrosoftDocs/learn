@@ -1,20 +1,20 @@
-Azure AI Foundry portal provides a user interface based around **hubs** and **projects**. In general, creating a **hub** provides more comprehensive access to Azure AI and Azure Machine Learning. Within a hub, you can create projects. **Projects** provide more specific access to models and agent development. You can manage your projects from Azure AI Foundry portal's *overview* page. 
+Microsoft Foundry portal provides a user interface based around **hubs** and **projects**. In general, creating a **hub** provides more comprehensive access to Azure AI and Azure Machine Learning. Within a hub, you can create projects. **Projects** provide more specific access to models and agent development. You can manage your projects from Microsoft Foundry portal's *overview* page. 
 
-![Screenshot of Azure AI Foundry overview page](../media/foundry-overview-page.png) 
+![Screenshot of Microsoft Foundry overview page](../media/foundry-overview-page.png) 
 
-When you create an Azure AI Hub, several other resources are created in tandem, including an **Azure AI services** resource. In Azure AI Foundry portal, you can test all kinds of Azure AI services, including Azure AI Speech, Azure AI Language, Azure AI Vision, and Azure AI Foundry Content Safety. 
+When you create an Azure AI Hub, several other resources are created in tandem, including an **Azure AI services** resource. In Microsoft Foundry portal, you can test all kinds of Azure AI services, including Azure AI Speech, Azure AI Language, Azure AI Vision, and Microsoft Foundry Content Safety. 
 
-![Screenshot of Azure AI services on Azure AI Foundry portal.](../media/foundry-ai-services-home-page.png)
+![Screenshot of Azure AI services on Microsoft Foundry portal.](../media/foundry-ai-services-home-page.png)
 
-In addition to demos, Azure AI Foundry portal provides playgrounds to test Azure AI services and other models from the model catalog. 
+In addition to demos, Microsoft Foundry portal provides playgrounds to test Azure AI services and other models from the model catalog. 
 
-![Screenshot of playgrounds on Azure AI Foundry portal](../media/foundry-playgrounds-page.png)
+![Screenshot of playgrounds on Microsoft Foundry portal](../media/foundry-playgrounds-page.png)
 
-![Screenshot of the chat playground on Azure AI Foundry portal.](../media/foundry-chat-playground.png)
+![Screenshot of the chat playground on Microsoft Foundry portal.](../media/foundry-chat-playground.png)
 
 ## Customizing models
 
-There are many ways to customize the models in generative AI applications. The purpose of customizing your model is to improve aspects of its performance, including quality  and safety of the responses. Let's take a look at four of the main ways you can customize models in Azure AI Foundry. 
+There are many ways to customize the models in generative AI applications. The purpose of customizing your model is to improve aspects of its performance, including quality  and safety of the responses. Let's take a look at four of the main ways you can customize models in Microsoft Foundry. 
 
 |**Method**|**Description**|
 |-|-|
@@ -23,4 +23,4 @@ There are many ways to customize the models in generative AI applications. The p
 |**Fine-tuning**| Involves taking a pretrained model and further training it on a smaller, task-specific dataset to make it more suitable for a particular application. This process allows the model to specialize and perform better at specific tasks that require domain-specific knowledge. Fine-tuning is useful for adapting models to domain-specific requirements, improving accuracy, and reducing the likelihood of generating irrelevant or inaccurate responses.|
 |**Managing security and governance controls**| Security and governance controls are needed to manage access, authentication, and data usage. These controls help prevent the publication of incorrect or unauthorized information.|
 
-Next, let's understand how Azure AI Foundry provides tools for generative AI application performance evaluation. 
+Next, let's understand how Microsoft Foundry provides tools for generative AI application performance evaluation. 

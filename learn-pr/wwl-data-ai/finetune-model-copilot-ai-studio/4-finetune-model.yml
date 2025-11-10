@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.finetune-model-copilot-ai-studio.finetune-model
-title: Explore fine-tuning language models in Azure AI Foundry portal
+title: Explore fine-tuning language models in Microsoft Foundry portal
 metadata:
-  title: Explore fine-tuning foundation models in Azure AI Foundry portal
-  description: Explore fine-tuning foundation models from the model catalog in Azure AI Foundry portal.
+  title: Explore fine-tuning foundation models in Microsoft Foundry portal
+  description: Explore fine-tuning foundation models from the model catalog in Microsoft Foundry portal.
   author: madiepev
   ms.author: madiepev
   ms.date: 07/15/2025
@@ -13,4 +13,5 @@ metadata:
 durationInMinutes: 8
 content: |
   [!include[](includes/4-finetune-model.md)]
+
 

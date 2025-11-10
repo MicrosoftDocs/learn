@@ -1,4 +1,4 @@
-To use the Azure AI Vision Face API, you must provision a resource for the service in an Azure subscription. You can provision **Face** as a single-service resource, or you can use the Face API in a multi-service **Azure AI Services** resource; which can be provisioned as a standalone resource or as part of an Azure AI Foundry hub.
+To use the Azure AI Vision Face API, you must provision a resource for the service in an Azure subscription. You can provision **Face** as a single-service resource, or you can use the Face API in a multi-service **Azure AI Services** resource; which can be provisioned as a standalone resource or as part of A Microsoft Foundry hub.
 
 To use your resource from a client application you must connect to its *endpoint* using either *key-based authentication* or *Microsoft Entra AI authentication*. When using the REST interface you can provide the authentication key or token in the request header. When using a language-specific SDK (for example, the Python **azure-ai-vision-face** package or the Microsoft .NET **Azure.AI.Vision.Face** package), you use a **FaceClient** object to connect to the service.
 
@@ -101,3 +101,5 @@ A response for an image containing a single face might look similar to the follo
     }
 ]
 ```
+
+

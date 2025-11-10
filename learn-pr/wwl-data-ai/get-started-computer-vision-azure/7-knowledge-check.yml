@@ -36,7 +36,7 @@ quiz:
     - content: "A set of coordinates for each face, defining a rectangular bounding box around the face"
       isCorrect: true
       explanation: "Correct: The locations of detected faces are indicated by coordinates for a rectangular bounding box"
-  - content: "Which of the following is a benefit of using the Azure AI Foundry portal for Azure AI Vision?"
+  - content: "Which of the following is a benefit of using the Microsoft Foundry portal for Azure AI Vision?"
     choices:
     - content: "It only supports facial recognition features."
       isCorrect: false
@@ -47,3 +47,4 @@ quiz:
     - content: "It limits access to only one Azure AI service at a time."
       isCorrect: false
       explanation: "Incorrect."
+

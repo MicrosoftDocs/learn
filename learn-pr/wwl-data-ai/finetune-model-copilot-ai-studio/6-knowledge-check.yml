@@ -22,7 +22,7 @@ quiz:
       explanation: "Correct. JSONL or JSON Lines is the expected input format."
     - content: "YAML"
       isCorrect: false
-      explanation: "Incorrect. In the context of the Azure AI Foundry, YAML is used to specify the configuration of jobs or flows."
+      explanation: "Incorrect. In the context of the Microsoft Foundry, YAML is used to specify the configuration of jobs or flows."
     - content: "HTML"
       isCorrect: false
       explanation: "Incorrect. HTML is a markup language for web pages."
@@ -48,4 +48,5 @@ quiz:
     - content: "n_epochs"
       isCorrect: true
       explanation: "Correct. When you set the number of epochs, you set the number of full cycles to run through the dataset."
+
 

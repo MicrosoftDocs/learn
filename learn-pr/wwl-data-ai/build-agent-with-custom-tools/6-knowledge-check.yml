@@ -13,7 +13,7 @@ durationInMinutes: 3
 content: |
 quiz:
   questions:
-  - content: "What are custom tools, and how can they help you develop effective agents with Azure AI Foundry Agent Service?"  
+  - content: "What are custom tools, and how can they help you develop effective agents with Microsoft Foundry Agent Service?"  
     choices:  
     - content: "Callable functions that an agent can use to extend its capabilities."  
       isCorrect: true  

@@ -1,8 +1,8 @@
-Each Azure AI Foundry project includes **connected resources**, which are defined both at the *parent* (Azure AI Foundry resource or hub) level, and at the *project* level. Each resource is a *connection* to an external service, such as Azure storage, Azure AI Search, Azure OpenAI, or another Azure AI Foundry resource.
+Each Microsoft Foundry project includes **connected resources**, which are defined both at the *parent* (Microsoft Foundry resource or hub) level, and at the *project* level. Each resource is a *connection* to an external service, such as Azure storage, Azure AI Search, Azure OpenAI, or another Microsoft Foundry resource.
 
-[ ![Screenshot of the connected resources page in Azure AI Foundry portal.](../media/ai-project-connections.png) ](../media/ai-project-connections.png#lightbox)
+[ ![Screenshot of the connected resources page in Microsoft Foundry portal.](../media/ai-project-connections.png) ](../media/ai-project-connections.png#lightbox)
 
-With the Azure AI Foundry SDK, you can connect to a project and retrieve connections; which you can then use to consume the connected services.
+With the Microsoft Foundry SDK, you can connect to a project and retrieve connections; which you can then use to consume the connected services.
 
 For example, the **AIProjectClient** object in Python has a **connections** property, which you can use to access the resource connections in the project. Methods of the **connections** object include:
 
@@ -35,3 +35,4 @@ try:
 except Exception as ex:
     print(ex)
 ```
+

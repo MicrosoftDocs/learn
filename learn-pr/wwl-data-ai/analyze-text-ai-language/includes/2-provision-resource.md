@@ -10,7 +10,7 @@ Azure AI Language is designed to help you extract information from text. It prov
 
 ## Azure resources for text analysis
 
-To use Azure AI Language to analyze text, you must provision a resource for it in your Azure subscription. You can provision a resource through Azure AI Foundry portal
+To use Azure AI Language to analyze text, you must provision a resource for it in your Azure subscription. You can provision a resource through Microsoft Foundry portal
 
 After you have provisioned a suitable resource in your Azure subscription, you can use its **endpoint** and one of its **keys** to call the Azure AI Language APIs from your code. You can call the Azure AI Language APIs by submitting requests in JSON format to the REST interface, or by using any of the available programming language-specific SDKs.
 

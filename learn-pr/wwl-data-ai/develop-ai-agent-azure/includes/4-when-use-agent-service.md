@@ -14,7 +14,7 @@ Foundry Agent Service provides several SDKs and a REST API for you to integrate 
 The diagram shows the following high-level steps that you must implement in your code:
 
 1. Connect to the *AI Foundry project* for your agent, using the project endpoint and Entra ID authentication.
-2. Get a reference to an existing agent that you created in the Azure AI Foundry portal, or create a new one specifying:
+2. Get a reference to an existing agent that you created in the Microsoft Foundry portal, or create a new one specifying:
     - The *model deployment* in the project that the agent should use to interpret and respond to prompts.
     - *Instructions* that determine the functionality and behavior of the agent.
     - *Tools and resources* that the agent can use to perform tasks.
@@ -31,7 +31,7 @@ The diagram shows the following high-level steps that you must implement in your
 
 Much of the enhanced functionality of an agent comes from the agent's ability to determine when and how to use *tools*. Tools make additional functionality available to your agent, and if the conversation or task warrants the use of one or more of the tools, the agent calls that tool and handle the response.
 
-You can assign tools when creating an agent in the Azure AI Foundry portal, or when defining an agent in code using the SDK.
+You can assign tools when creating an agent in the Microsoft Foundry portal, or when defining an agent in code using the SDK.
 
 ![Screenshot of adding tools in Foundry portal for agents.](../media/portal-tools.png)
 
@@ -61,3 +61,4 @@ Action tools perform an action or run a function. Available tools include:
 - **OpenAPI Spec**: Call external APIs based on the OpenAPI 3.0 spec.
 
 By connecting built-in and custom tools, you can allow your agent to perform countless tasks on your behalf.
+

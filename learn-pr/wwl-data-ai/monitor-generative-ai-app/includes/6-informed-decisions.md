@@ -16,7 +16,7 @@ You can use the workbooks that Azure Monitor Insights provide, use the workbook 
 
 ### Access the prebuilt workbook
 
-When you connect an Application Insights instance to your Azure AI Foundry project, important metrics are already visualized for you in the **Insights for Generative AI applications dashboard**.
+When you connect an Application Insights instance to your Microsoft Foundry project, important metrics are already visualized for you in the **Insights for Generative AI applications dashboard**.
 
 :::image type="content" source="../media/open-generative-ai-workbook.gif" alt-text="Animation the Insights for Generative AI applications dashboard linking to the workbook." lightbox="../media/open-generative-ai-workbook.gif":::
 
@@ -41,3 +41,4 @@ Errors tell you when your deployment is hitting a limit. For example:
 - Failures within a flow step can point to logic errors or data quality issues.
 
 If your error rate increases with usage, that’s a sign your app needs optimization—either in compute capacity or flow design.
+

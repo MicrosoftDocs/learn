@@ -1,10 +1,10 @@
-Azure AI Foundry Agent Service is a fully managed service designed to empower developers to securely build, deploy, and scale high-quality, extensible AI agents without needing to manage the underlying compute and storage resources. This unit covers the purpose, benefits, key features, and integration capabilities of Azure AI Foundry Agent Service.
+Microsoft Foundry Agent Service is a fully managed service designed to empower developers to securely build, deploy, and scale high-quality, extensible AI agents without needing to manage the underlying compute and storage resources. This unit covers the purpose, benefits, key features, and integration capabilities of Microsoft Foundry Agent Service.
 
-## Purpose of Azure AI Foundry Agent Service
+## Purpose of Microsoft Foundry Agent Service
 
 The Foundry Agent Service allows developers to create AI agents tailored to their needs through custom instructions and advanced tools like code interpreters and custom functions. These agents can answer questions, perform actions, or automate workflows by combining generative AI models with tools that interact with real-world data sources. The service simplifies the development process by reducing the amount of code required and managing the underlying infrastructure.
 
-Previously, developers could create an agent-like experience by using standard APIs in Azure AI Foundry and connect to custom functions or other tools, but doing so would take a significant coding effort. Foundry Agent Service handles all of that for you through AI Foundry to build agents via the portal or in your own app in fewer than 50 lines of code. The exercise in the module explores both methods of building an agent.
+Previously, developers could create an agent-like experience by using standard APIs in Microsoft Foundry and connect to custom functions or other tools, but doing so would take a significant coding effort. Foundry Agent Service handles all of that for you through AI Foundry to build agents via the portal or in your own app in fewer than 50 lines of code. The exercise in the module explores both methods of building an agent.
 
 Foundry Agent Service is ideal for scenarios requiring advanced language models for workflow automation. It can be used to:
 
@@ -31,7 +31,7 @@ Foundry Agent Service provides a more streamlined and secure way to build and de
 
 Foundry Agent Service is fully managed and designed to help developers build agents without having to worry about underlying resources. Through Azure, AI Foundry and the Agent Service will provision the necessary cloud resources. If desired, you can choose to connect your own resources when building your agent, giving you the flexibility to utilize Azure however works best for you.
 
-At a minimum, you need to create an Azure AI hub with an Azure AI project for your agent. You can add more Azure services as required. You can create the resources using the Azure AI Foundry portal, or you can use [predefined bicep templates](https://github.com/Azure/azure-quickstart-templates/tree/master/quickstarts/microsoft.azure-ai-agent-service) to deploy the resources in your subscription. Two common architectures for Foundry Agent Service solutions are:
+At a minimum, you need to create an Azure AI hub with an Azure AI project for your agent. You can add more Azure services as required. You can create the resources using the Microsoft Foundry portal, or you can use [predefined bicep templates](https://github.com/Azure/azure-quickstart-templates/tree/master/quickstarts/microsoft.azure-ai-agent-service) to deploy the resources in your subscription. Two common architectures for Foundry Agent Service solutions are:
 
 - **Basic agent setup**: A minimal configuration that includes Azure AI hub,  Azure AI project, and Azure AI Services resources.
 
@@ -40,4 +40,5 @@ At a minimum, you need to create an Azure AI hub with an Azure AI project for yo
 - **Standard agent setup**: A more comprehensive configuration that includes the basic agent setup plus Azure Key Vault, Azure AI Search, and Azure Storage.
 
     ![Diagram showing the standard setup of Foundry Agent Service resources.](../media/standard-agent-setup-resources.png)
+
 

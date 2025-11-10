@@ -33,9 +33,9 @@ quiz:
     - content: "Azure Machine Learning studio."
       isCorrect: false
       explanation: "Incorrect. Azure Machine Learning studio isn't a tool for working with Content Understanding projects."
-    - content: "Azure AI Foundry portal."
+    - content: "Microsoft Foundry portal."
       isCorrect: true
-      explanation: "Correct. Azure AI Foundry portal provides a visual interface for creating Content Understanding projects."
+      explanation: "Correct. Microsoft Foundry portal provides a visual interface for creating Content Understanding projects."
   - content: "What should you define for the information you want to extract from content?"
     choices:
     - content: "A schema."
@@ -47,4 +47,5 @@ quiz:
     - content: "A cluster."
       isCorrect: false
       explanation: "Incorrect. You don't need to create a cluster to use Content Understanding."
+
 

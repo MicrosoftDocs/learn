@@ -12,6 +12,6 @@ Azure AI Translator includes the following capabilities:
 - **Document translation** - used to translate multiple documents across all supported languages while preserving original document structure.  
 - **Custom translation** -  used to enable enterprises, app developers, and language service providers to build customized neural machine translation (NMT) systems. 
 
-You can use *Azure AI Translator* in **Azure AI Foundry**, a unified platform for enterprise AI operations, model builders, and application development. The service is also available for use in **Microsoft Translator Pro** a mobile application, designed specifically for enterprises, that enables seamless real-time speech-to-speech translation. 
+You can use *Azure AI Translator* in **Microsoft Foundry**, a unified platform for enterprise AI operations, model builders, and application development. The service is also available for use in **Microsoft Translator Pro** a mobile application, designed specifically for enterprises, that enables seamless real-time speech-to-speech translation. 
 
-Next, let's learn how to get started with language capabilities in Azure AI Foundry portal.
+Next, let's learn how to get started with language capabilities in Microsoft Foundry portal.

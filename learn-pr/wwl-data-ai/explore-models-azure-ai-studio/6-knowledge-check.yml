@@ -13,7 +13,7 @@ durationInMinutes: 3
 content: |
 quiz:
   questions:
-  - content: "Where can you test a deployed model in the Azure AI Foundry portal?"
+  - content: "Where can you test a deployed model in the Microsoft Foundry portal?"
     choices:
     - content: "Chat playground"
       isCorrect: true
@@ -35,15 +35,17 @@ quiz:
     - content: "System message"
       isCorrect: true
       explanation: "Correct. System messages are used to customize the model's responses by specifying the tone, format, and content for each interaction."
-  - content: "What deployment option should you choose to host an OpenAI model in an Azure AI Foundry resource?"
+  - content: "What deployment option should you choose to host an OpenAI model in a Microsoft Foundry resource?"
     choices:
     - content: "Standard deployment"
       isCorrect: true
-      explanation: "Correct. Standard deployment is the recommended option for hosting OpenAI models in Azure AI Foundry."
+      explanation: "Correct. Standard deployment is the recommended option for hosting OpenAI models in Microsoft Foundry."
     - content: "Serverless compute"
       isCorrect: false
-      explanation: "Incorrect. Serverless compute requires an Azure AI Foundry hub."
+      explanation: "Incorrect. Serverless compute requires a Microsoft Foundry hub."
     - content: "Managed compute"
       isCorrect: false
-      explanation: "Incorrect. Managed compute requires an Azure AI Foundry hub."
+      explanation: "Incorrect. Managed compute requires a Microsoft Foundry hub."
+
+
 

@@ -1,5 +1,5 @@
 
-Before you can use Azure AI Speech, you need to create an Azure AI Speech resource in your Azure subscription. You can use either a dedicated Azure AI Speech resource or a multi-service Azure AI Services or Azure AI Foundry resource.
+Before you can use Azure AI Speech, you need to create an Azure AI Speech resource in your Azure subscription. You can use either a dedicated Azure AI Speech resource or a multi-service Azure AI Services or Microsoft Foundry resource.
 
 After you create your resource, you'll need the following information to use it from a client application through one of the supported SDKs:
 

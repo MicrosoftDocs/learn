@@ -23,7 +23,7 @@ Let's explore what to trace and how we can use this information to identify erro
 
 ### Example 1: Model inference operation
 
-The AI system includes an inference operation that represents an API call to a generative AI model like GPT-4o, which is deployed through Azure AI Foundry.
+The AI system includes an inference operation that represents an API call to a generative AI model like GPT-4o, which is deployed through Microsoft Foundry.
 
 :::image type="content" source="../media/inference.png" alt-text="Screenshot of a trace view showing the performance of the inference operation." lightbox="../media/inference.png":::
 
@@ -71,3 +71,4 @@ By analyzing these traces from the Trail Guide AI Assistant, you can identify sp
 **Debugging specific failures**: When a customer reports receiving recommendations for discontinued hiking boots, you can trace their exact session. The trace might show that the retrieval operation accessed outdated product data, pointing you to a specific data synchronization issue rather than a model problem.
 
 These concrete insights from Trail Guide traces enable you to make targeted improvements that directly affect customer satisfaction and business outcomes.
+

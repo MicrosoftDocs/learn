@@ -3,10 +3,10 @@ Azure AI provides a wide range of cloud-based services for various AI tasks, inc
 Azure AI Vision service contains several products. Within Azure AI Vision, there are services that handle specific sets of tasks including:
 
 - **Azure AI Vision Image Analysis service**: Detects common objects in images, tags visual features, generates captions, and supports optical character recognition (OCR).
-    ![Screenshot of image captioning example from Azure AI Foundry.](../media/image-captioning-example.png)
+    ![Screenshot of image captioning example from Microsoft Foundry.](../media/image-captioning-example.png)
 
 - **Azure AI Face service**: Detects, recognizes, and analyzes human faces in images. Provides specific models for facial analysis that extend beyond what is available with image analysis. 
-    ![Screenshot of face detection example from Azure AI Foundry.](../media/face-detection-example.png)
+    ![Screenshot of face detection example from Microsoft Foundry.](../media/face-detection-example.png)
 
 There are many applications for Azure AI Vision's *image analysis* and *face* detection, analysis, and recognition. For example:
 
@@ -22,3 +22,4 @@ There are many applications for Azure AI Vision's *image analysis* and *face* de
 > Many modern vision solutions are built with a combination of capabilities. For example, video analysis capabilities are supported by [*Azure AI Video indexer*](/azure/azure-video-indexer/video-indexer-overview). Azure AI Video indexer is built on several Azure AI services, such as  Face, Translator, Image Analysis, and Speech.  
 
 Next, let's take a look at some core Azure AI Vision Image Analysis capabilities. 
+

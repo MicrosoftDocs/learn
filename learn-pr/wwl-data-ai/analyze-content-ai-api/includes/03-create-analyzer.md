@@ -1,4 +1,4 @@
-In most scenarios, you should consider creating and testing analyzers using the visual interface in the Azure AI Foundry portal. However, in some cases you might want to create an analyzer by submitting a JSON definition of the schema for your desired content fields to the REST API.
+In most scenarios, you should consider creating and testing analyzers using the visual interface in the Microsoft Foundry portal. However, in some cases you might want to create an analyzer by submitting a JSON definition of the schema for your desired content fields to the REST API.
 
 ## Defining a schema for an analyzer
 
@@ -74,3 +74,4 @@ while status == "Running":
 
 print("Done!")
 ```
+

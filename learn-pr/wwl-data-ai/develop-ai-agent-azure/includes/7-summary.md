@@ -13,6 +13,7 @@ After completing this module, you're now able to:
 
 More reading:
 
-- [Quickstart Guide for Azure AI Foundry Agent Service](/azure/ai-services/agents/quickstart?azure-portal=true)
-- [What's new in Azure AI Foundry Agent Service](/azure/ai-services/agents/whats-new?azure-portal=true)
+- [Quickstart Guide for Microsoft Foundry Agent Service](/azure/ai-services/agents/quickstart?azure-portal=true)
+- [What's new in Microsoft Foundry Agent Service](/azure/ai-services/agents/whats-new?azure-portal=true)
 - For detailed instructions, see the [quickstart guide](/azure/ai-services/agents/quickstart?azure-portal=true).
+

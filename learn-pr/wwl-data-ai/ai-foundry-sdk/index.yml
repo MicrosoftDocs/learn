@@ -1,8 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.ai-foundry-sdk
 metadata:
-  title: Develop an AI app with the Azure AI Foundry SDK
-  description: Use the Azure AI Foundry SDK to develop AI applications with Azure AI Foundry projects.
+  title: Develop an AI app with the Microsoft Foundry SDK
+  description: Use the Microsoft Foundry SDK to develop AI applications with Microsoft Foundry projects.
   author: wwlpublish
   ms.author: gmalc
   ms.date: 08/28/2025
@@ -11,13 +11,13 @@ metadata:
   ai-usage: ai-assisted
   ms.collection:
     - wwl-ai-copilot
-title: Develop an AI app with the Azure AI Foundry SDK
-summary: Use the Azure AI Foundry SDK to develop AI applications with Azure AI Foundry projects.
+title: Develop an AI app with the Microsoft Foundry SDK
+summary: Use the Microsoft Foundry SDK to develop AI applications with Microsoft Foundry projects.
 abstract: |
   After completing this module, you'll be able to:
-  - Describe capabilities of the Azure AI Foundry SDK.
-  - Use the Azure AI Foundry SDK to work with connections in projects.
-  - Use the Azure AI Foundry SDK to develop an AI chat app.
+  - Describe capabilities of the Microsoft Foundry SDK.
+  - Use the Microsoft Foundry SDK to work with connections in projects.
+  - Use the Microsoft Foundry SDK to develop an AI chat app.
 prerequisites: |
   Before starting this module, you should:
   - Be familiar with Azure services and the Azure portal.
@@ -43,4 +43,5 @@ units:
 - learn.wwl.ai-foundry-sdk.summary
 badge:
   uid: learn.wwl.ai-foundry-sdk.badge
+
 

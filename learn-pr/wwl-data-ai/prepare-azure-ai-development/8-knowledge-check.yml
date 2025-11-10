@@ -28,9 +28,9 @@ quiz:
       explanation: "Correct. Azure AI Services provides multiple services from a single endpoint."
   - content: "You plan to create a simple chat app that uses a generative AI model. What kind of project should you create?"
     choices:
-    - content: "Azure AI Foundry project."
+    - content: "Microsoft Foundry project."
       isCorrect: true
-      explanation: "Correct. An Azure AI Foundry project is the best choice for a simple generative AI app."
+      explanation: "Correct. A Microsoft Foundry project is the best choice for a simple generative AI app."
     - content: "Azure AI hub based project."
       isCorrect: false
       explanation: "Incorrect. An Azure AI hub-based project includes unnecessary services for this scenario."
@@ -45,7 +45,9 @@ quiz:
     - content: "Semantic Kernel SDK"
       isCorrect: false
       explanation: "Incorrect. The Semantic Kernel SDK is used to build generative AI apps and doesn't rely on connections in a hub."
-    - content: "Azure AI Foundry SDK"
+    - content: "Microsoft Foundry SDK"
       isCorrect: true
-      explanation: "Correct. The Azure AI Foundry SDK provides the AI Projects client library, which you can use to access connections in a project or hub."
+      explanation: "Correct. The Microsoft Foundry SDK provides the AI Projects client library, which you can use to access connections in a project or hub."
+
+
 

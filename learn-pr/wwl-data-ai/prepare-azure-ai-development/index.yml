@@ -18,7 +18,7 @@ abstract: |
   By the end of this module, you'll be able to:
     - Identify common AI capabilities that you can implement in applications
     - Describe Azure AI Services and considerations for using them
-    - Describe Azure AI Foundry and considerations for using it
+    - Describe Microsoft Foundry and considerations for using it
     - Identify appropriate developer tools and SDKs for an AI project
     - Describe considerations for responsible AI
 prerequisites: |
@@ -49,4 +49,5 @@ units:
 - learn.wwl.prepare-azure-ai-development.summary
 badge:
   uid: learn.wwl.prepare-azure-ai-development.badge
+
 

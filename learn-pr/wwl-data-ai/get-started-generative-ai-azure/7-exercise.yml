@@ -1,11 +1,11 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.get-started-generative-ai-azure.exercise
-title: Exercise - Explore generative AI in Azure AI Foundry portal
+title: Exercise - Explore generative AI in Microsoft Foundry portal
 metadata:
   adobe-target: true
   prefetch-feature-rollout: true
-  title: Exercise - Explore generative AI in Azure AI Foundry portal
-  description: "Exercise - Explore generative AI in Azure AI Foundry portal"
+  title: Exercise - Explore generative AI in Microsoft Foundry portal
+  description: "Exercise - Explore generative AI in Microsoft Foundry portal"
   author: sherzyang
   ms.author: sheryang
   ms.date: 05/26/2025
@@ -15,3 +15,4 @@ metadata:
 durationInMinutes: 25
 content: |
   [!include[](includes/7-exercise.md)]
+

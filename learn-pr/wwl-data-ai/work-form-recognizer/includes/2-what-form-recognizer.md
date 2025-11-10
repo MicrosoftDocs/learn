@@ -37,7 +37,7 @@ You can access Azure Document Intelligence services in several ways. These optio
 - A REST API
 - Client library SDKs
 - Azure Document Intelligence Studio 
-- Azure AI Foundry 
+- Microsoft Foundry 
 
 > [!TIP]
 > This module's exercise focuses on the Python and .NET SDKs. The underlying REST services can be used by any language.
