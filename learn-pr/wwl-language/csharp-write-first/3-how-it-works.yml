@@ -25,4 +25,3 @@ quiz:
     - content: "`Console.WriteLine` appends a new line after the output."
       isCorrect: true
       explanation: "Correct! `Console.WriteLine` prints the output on the existing line and appends a new line after it."
-interactive: csharp

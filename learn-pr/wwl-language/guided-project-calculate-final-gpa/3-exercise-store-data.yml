@@ -13,4 +13,3 @@ metadata:
 durationInMinutes: 10
 content: |
   [!include[](includes/3-exercise-store-data.md)]
-interactive: csharp

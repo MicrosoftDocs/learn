@@ -11,4 +11,3 @@ metadata:
 durationInMinutes: 10
 content: |
   [!include[](includes/4-exercise-perform-division.md)]
-interactive: csharp
