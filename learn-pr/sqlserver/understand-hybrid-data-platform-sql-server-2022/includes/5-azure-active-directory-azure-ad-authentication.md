@@ -25,7 +25,7 @@ SQL Server 2025 enhances encryption with new capabilities:
 
 ### Improved password security
 
-SQL Server 2025 enables [PBKDF2](https://csrc.nist.gov/pubs/sp/800/63/b/upd2/final) (Password-Based Key Derivation Function 2) for password hashes by default. This enhancement strengthens password security and helps organizations comply with NIST SP 800-63b standards, providing better protection against brute-force attacks.
+SQL Server 2025 enables password-based key derivation function for password hashes by default. This enhancement strengthens password security and helps organizations comply with NIST SP 800-63b standards, providing better protection against brute-force attacks.
 
 ### Security cache optimization
 

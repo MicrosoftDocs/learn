@@ -20,7 +20,7 @@ There are several ways to use the link feature and use Azure services and resour
 - **Business continuity**. As a disaster recovery solution, the link feature in SQL Server 2025 allows you to fail over to Azure SQL Managed Instance and fail back after the disaster is mitigated. SQL Server 2025 enhances this capability with improved monitoring dashboards and health checks.
 
 > [!TIP]
-> For organizations requiring real-time data replication for analytics purposes, consider using [Microsoft Fabric Mirroring](/fabric/database/mirrored-database/overview?azure-portal=true) in conjunction with Azure SQL Managed Instance Link. The link feature focuses on disaster recovery and business continuity, while Fabric Mirroring provides low-latency replication for analytical workloads.
+> For organizations requiring real-time data replication for analytics purposes, consider using [Mirroring in Fabric](/fabric/database/mirrored-database/overview?azure-portal=true) in conjunction with Azure SQL Managed Instance Link. The link feature focuses on disaster recovery and business continuity, while Fabric Mirroring provides low-latency replication for analytical workloads.
 
 ### Hybrid flexibility with Azure SQL Managed Instance link feature
 
@@ -47,11 +47,11 @@ To configure the link feature, follow the same steps regardless of whether you'r
 
 You can use either a wizard in [SQL Server Management Studio](/sql/ssms/sql-server-management-studio-ssms?azure-portal=true) (SSMS) or scripts. The main advantage of using scripts is that they can be automated, which can improve your deployment process. SQL Server 2025 benefits from the latest SSMS enhancements that provide better visibility into link status and replication health.
 
-- Replicate a database by using [Azure SQL Managed Instance link wizard available in SSMS](/azure/azure-sql/managed-instance/managed-instance-link-use-ssms-to-replicate-database).
+- Replicate a database by using [Azure SQL Managed Instance link wizard available in SSMS](/azure/azure-sql/managed-instance/managed-instance-link-use-ssms-to-replicate-database?azure-portal=true).
 
-- Replicate a database by using [T-SQL and PowerShell scripts.](/azure/azure-sql/managed-instance/managed-instance-link-use-scripts-to-replicate-database)
+- Replicate a database by using [T-SQL and PowerShell scripts.](/azure/azure-sql/managed-instance/managed-instance-link-use-scripts-to-replicate-database?azure-portal=true)
 
 There are a few SQL Server features that aren't supported by Azure SQL Managed Instance link. For example, you can't enable the link feature if the functionality that's used on the primary SQL Server database isn't supported on Azure SQL Managed Instance, such as file tables and file streams.
 
-For the full list of supported features and any SQL Server 2025-specific considerations, see [Limitations of Azure SQL Managed Instance link](/azure/azure-sql/managed-instance/managed-instance-link-feature-overview?#limitations).
+For the full list of supported features and any SQL Server 2025-specific considerations, see [Limitations of Azure SQL Managed Instance link](/azure/azure-sql/managed-instance/managed-instance-link-feature-overview?azure-portal=true).
 

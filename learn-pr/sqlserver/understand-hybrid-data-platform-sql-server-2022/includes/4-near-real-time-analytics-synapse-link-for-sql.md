@@ -20,7 +20,7 @@ By mirroring SQL Server 2025 data into Microsoft Fabric, you gain access to an a
 
 - **Power BI integration**: Build real-time dashboards and reports directly on mirrored data
 - **Data lakehouse capabilities**: Combine structured SQL Server data with unstructured data from other sources
-- **Advanced analytics**: Use [Spark](/fabric/data-engineering/spark-overview?azure-portal=true), Python, R, and SQL for data engineering and data science
+- **Advanced analytics**: Use Spark, Python, R, and SQL for data engineering and data science
 - **AI and ML integration**: Leverage [Azure OpenAI](/azure/ai-services/openai/overview?azure-portal=true) and other AI services with your operational data
 
 ### Simplify hybrid architecture
