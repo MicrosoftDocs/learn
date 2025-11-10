@@ -5,7 +5,7 @@ In this exercise, you'll modify the console output from the previous exercise to
 
 In this task, you'll update your code to apply the finishing touches to the reported output. You'll start by including the student's name and adding a header row that includes the column labels. After that, you'll use character escape sequences to add extra padding between the columns of information.
 
-1. In the .NET Editor, locate the Console.WriteLine() statements that are used to display the student's course information.
+1. In the [C# Code Editor](https://microsoftlearning.github.io/c-sharp-minor/), locate the Console.WriteLine() statements that are used to display the student's course information.
 
 1. Create a blank code line above the Console.WriteLine() statements.
 
@@ -23,7 +23,7 @@ In this task, you'll update your code to apply the finishing touches to the repo
 1. On the blank code line that you created, to add a header for course information, enter the following code:
 
     ```csharp
-    Console.WriteLine("Course\t\t\t\tGrade\tCredit Hours");
+    Console.WriteLine("Course\t\t\tGrade\tCredit Hours");
 
     ```
 
@@ -33,9 +33,9 @@ In this task, you'll update your code to apply the finishing touches to the repo
 1. To format your output as aligned columns of text, replace the spaces between words with the `\t` escape sequence as follows:
  
     ```csharp
-    Console.WriteLine($"{course1Name}\t\t\t{course1Grade}\t\t{course1Credit}");
-    Console.WriteLine($"{course2Name}\t\t\t{course2Grade}\t\t{course2Credit}");
-    Console.WriteLine($"{course3Name}\t\t\t{course3Grade}\t\t{course3Credit}");
+    Console.WriteLine($"{course1Name}\t\t{course1Grade}\t\t{course1Credit}");
+    Console.WriteLine($"{course2Name}\t\t{course2Grade}\t\t{course2Credit}");
+    Console.WriteLine($"{course3Name}\t\t{course3Grade}\t\t{course3Credit}");
     Console.WriteLine($"{course4Name}\t{course4Grade}\t\t{course4Credit}");
     Console.WriteLine($"{course5Name}\t\t{course5Grade}\t\t{course5Credit}");
 
@@ -48,7 +48,7 @@ In this task, you'll update your code to apply the finishing touches to the repo
 1. To add padding to the final GPA result output, update the code as follows:
 
     ```csharp
-    Console.WriteLine($"\nFinal GPA:\t\t\t {leadingDigit}.{firstDigit}{secondDigit}");
+    Console.WriteLine($"\nFinal GPA:\t\t{leadingDigit}.{firstDigit}{secondDigit}");
 
     ```
 
@@ -102,18 +102,18 @@ In this task, you'll run the code and verify that the output is correct.
     int secondDigit = (int) (gradePointAverage * 100 ) % 10;
 
     Console.WriteLine($"Student: {studentName}\n");
-    Console.WriteLine("Course\t\t\t\tGrade\tCredit Hours");
+    Console.WriteLine("Course\t\t\tGrade\tCredit Hours");
 
-    Console.WriteLine($"{course1Name}\t\t\t{course1Grade}\t\t{course1Credit}");
-    Console.WriteLine($"{course2Name}\t\t\t{course2Grade}\t\t{course2Credit}");
-    Console.WriteLine($"{course3Name}\t\t\t{course3Grade}\t\t{course3Credit}");
+    Console.WriteLine($"{course1Name}\t\t{course1Grade}\t\t{course1Credit}");
+    Console.WriteLine($"{course2Name}\t\t{course2Grade}\t\t{course2Credit}");
+    Console.WriteLine($"{course3Name}\t\t{course3Grade}\t\t{course3Credit}");
     Console.WriteLine($"{course4Name}\t{course4Grade}\t\t{course4Credit}");
     Console.WriteLine($"{course5Name}\t\t{course5Grade}\t\t{course5Credit}");
-    
-    Console.WriteLine($"\nFinal GPA:\t\t\t {leadingDigit}.{firstDigit}{secondDigit}");
+
+    Console.WriteLine($"\nFinal GPA:\t\t{leadingDigit}.{firstDigit}{secondDigit}");
     ```
 
-1. To run your code and display the formatted output, select **Run**.
+1. To run your code and display the formatted output, select the ▶️ Run button.
 
 1. To verify that your code is working as expected, compare the output of your application with the following output:
 

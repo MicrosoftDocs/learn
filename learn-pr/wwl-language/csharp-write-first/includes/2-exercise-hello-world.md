@@ -7,11 +7,15 @@ In this first hands-on exercise, you'll use C# to print a hallowed programmer's 
 
 There's a long-standing tradition among software developers to print the phrase "Hello World!" to the console output window. As you'll experience, you can learn a lot about programming and the C# programming language from this simple exercise.
 
-### Enter code into the .NET Editor
+### Enter code into the C# Code Editor
 
-The .NET Editor and output console provide a great in-browser experience that's perfect for this tutorial approach. The .NET Editor is located on the right-hand side of this web page. The output console is below it.
+A C# code editor is available to use directly in the browser: [C# Code Editor](https://microsoftlearning.github.io/c-sharp-minor/). This editor provides a lightweight environment for writing, running, and testing C# code without needing to install any software on your local computer.
 
-1. Enter this code exactly as it appears into the .NET Editor on the right:
+1. Open the [C# Code Editor](https://microsoftlearning.github.io/c-sharp-minor/) in a new browser window or tab.
+
+    You can position the browser windows side-by-side so that you can refer to these instructions while you work in the C# Code Editor.
+
+1. Enter this code exactly as it appears into the C# Code Editor:
 
     ```csharp
     Console.WriteLine("Hello World!");
@@ -20,13 +24,13 @@ The .NET Editor and output console provide a great in-browser experience that's 
     You'll see an explanation of how and why it works soon. But first, you should experience it running, and ensure you entered it correctly. To do that, you'll run your code.
 
     > [!NOTE]
-    > You might be tempted to select `Copy` or `Run` and skip all the keystrokes. However, there are benefits to typing code yourself. Entering the code yourself reinforces memory and understanding that will help you gain insights that you wouldn't get otherwise.
+    > You might be tempted to select `Copy` and `Run` and skip all the keystrokes. However, there are benefits to typing code yourself. Entering the code yourself reinforces memory and understanding that will help you gain insights that you wouldn't get otherwise.
 
 ### Run your first code
 
-1. Press the green Run button
+1. Press the ▶️ Run button
 
-    The green Run button performs two tasks:
+    The Run button performs two tasks:
 
     - It compiles your code into an executable format that a computer can understand.
     - It runs your compiled application and, when written correctly, will output `"Hello World!"`.
@@ -52,10 +56,11 @@ console.WriteLine("Hello World!");
 You'd get the following error message:
 
 ```Output
-(1,1): error CS0103: The name 'console' does not exist in the current context
+Error summary:
+  CS0103: The name 'console' does not exist in the current context
 ```
 
-The first part `(1,1)` indicates the line and column where the error occurred. But what does this error message mean?
+What does this error message mean?
 
 C# is a case-sensitive language, meaning that the C# compiler considers the words `console` and `Console` as different as the words `cat` and `dog`. Sometimes, the error message can be a bit misleading. You'll need to understand the true reason why the error exists, and that comes through learning more about C#'s syntax.
 
@@ -68,10 +73,11 @@ Console.WriteLine('Hello World!');
 You would get the following error message:
 
 ```Output
-(1,19): error CS1012: Too many characters in character literal
+Error summary:
+  CS1012: Too many characters in character literal
 ```
 
-Again, in line 1, character 19 points to the culprit. You can use the message as a clue as you investigate the problem. But what does the error message mean? What exactly is a "character literal?" Later, you'll learn more about literals of various data types (including character literals). For now, be careful when you're entering code.
+You can use the message as a clue as you investigate the problem. But what does the error message mean? What exactly is a "character literal?" Later, you'll learn more about literals of various data types (including character literals). For now, be careful when you're entering code.
 
 Fortunately, errors are never permanent. You merely spot the error, fix it, and rerun your code.
 
@@ -115,7 +121,7 @@ In this task, you'll comment out the previous line of code, then add new lines o
     Console.Write("You wrote your first lines of code.");
     ```
 
-1. Press the green Run button again. This time, you should get the following output.
+1. Press the ▶️ Run button again. This time, you should get the following output.
 
     ```Output
     Congratulations! You wrote your first lines of code.
@@ -138,7 +144,7 @@ To print to the output console, but without adding a line feed at the end, you u
     Console.Write("You wrote your first lines of code.");
     ```
 
-1. Press the green Run button again. This time, you should get the following output.
+1. Press the ▶️ Run button again. This time, you should get the following output.
 
     ```Output
     Congratulations!
