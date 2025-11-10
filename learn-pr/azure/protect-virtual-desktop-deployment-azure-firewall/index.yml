@@ -16,7 +16,7 @@ abstract: |
   By the end of this module, you'll be able to:
     - Deploy and configure Azure Firewall to protect outbound network traffic for Azure Virtual Desktop.
 prerequisites: |
-  - An Azure account with an [active subscription](https://azure.microsoft.com/free)
+  - An Azure account with an [active subscription](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn)
   - Knowledge of networking concepts, like virtual networks, virtual network peering, subnets, and IP addressing
   - Familiarity with networking security concepts, like network security groups, firewall, service endpoints
   - For macOS, Linux, iOS, or Android users, a remote desktop client installed, like Microsoft Remote Desktop

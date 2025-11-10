@@ -69,6 +69,5 @@ subjects:
 modules:
 - learn.introduction-to-azure-backup
 - learn.protect-virtual-machines-with-azure-backup
-- learn.incident-response-with-alerting-on-azure
 trophy:
   uid: learn.az-104-monitor-backup-resources.trophy

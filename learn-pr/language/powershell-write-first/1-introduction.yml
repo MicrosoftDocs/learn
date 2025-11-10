@@ -5,8 +5,8 @@ metadata:
   title: Introduction
   description: Begin your software development journey by learning PowerShell.
   ms.date: 10/07/2024
-  author: michaeltlombardi
-  ms.author: mlombardi
+  author: sdwheeler
+  ms.author: sewhee
   ms.topic: unit
   ms.custom:
 durationInMinutes: 1

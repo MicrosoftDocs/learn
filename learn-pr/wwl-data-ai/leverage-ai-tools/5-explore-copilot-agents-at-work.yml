@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.leverage-ai-tools.5-explore-copilot-agents-at-work
+title: "Explore Copilot and agents at work"
+metadata:
+  title: "Explore Copilot and Agents at Work"
+  description: "Discover how Microsoft 365 Copilot agents boost productivity and transform processes with AI. Learn their pivotal role in modern workplaces!"
+  ms.date: 11/03/2025
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/5-explore-copilot-agents-at-work.md)]

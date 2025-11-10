@@ -32,6 +32,8 @@ The modules in this learning path are part of a progression. You follow the Tail
 
 Run a template that sets up your Azure DevOps organization.
 
+[!INCLUDE[important-note-demo-generator](../../shared/includes/important-note-demo-generator.md)]
+
 1. [Get and run the ADOGenerator project](https://github.com/microsoft/AzDevOpsDemoGenerator/blob/main/docs/RunApplication.md) in Visual Studio or the IDE of your choice.
 
 1. When prompted to **Enter the template number from the list of templates**, enter **34** for **Manage release cadence in Azure Pipelines with deployment patterns**, and then press **Enter**.
@@ -244,8 +246,6 @@ To add the variables:
 
 1. In Azure DevOps, go to your **Space Game - web - Deployment patterns** project.
 1. Under **Pipelines**, select **Library**.
-
-    :::image type="content" source="../../create-release-pipeline/media/5-pipelines-library.png" alt-text="Screenshot of Azure Pipelines that shows the Library menu option.":::
 1. Select **+ Variable group**.
 1. Under **Properties**, for the variable group name, enter *Release*.
 1. Under **Variables**, select **+ Add**.

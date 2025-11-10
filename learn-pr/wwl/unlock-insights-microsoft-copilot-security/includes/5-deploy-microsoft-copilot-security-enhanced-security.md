@@ -11,7 +11,7 @@ Get recommendations on next steps to take to get you on your way to maximizing t
 
 ### Subscription
 
-In order to purchase security compute units, you need to have an Azure subscription. For more information, see [Create your Azure free account](https://azure.microsoft.com/free).
+In order to purchase security compute units, you need to have an Azure subscription. For more information, see [Create your Azure free account](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn).
 
 ### Security compute units
 

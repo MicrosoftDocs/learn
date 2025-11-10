@@ -29,6 +29,8 @@ The modules in this learning path form a progression. You follow the Tailspin we
 
 Run a template that sets up your Azure DevOps organization.
 
+[!INCLUDE[important-note-demo-generator](../../shared/includes/important-note-demo-generator.md)]
+
 1. [Get and run the ADOGenerator project](https://github.com/microsoft/AzDevOpsDemoGenerator/blob/main/docs/RunApplication.md) in Visual Studio or the IDE of your choice.
 
 1. When prompted to **Enter the template number from the list of templates**, enter **39** for **Automate Docker container deployments with Azure Pipelines**, then press **Enter**.
@@ -86,8 +88,6 @@ To set up the work item:
 At the end of this module, you'll move the card to the **Done** column after you complete the task.
 
 ## Create the Azure App Service environment
-
-In the [Create a release pipeline with Azure Pipelines](/training/modules/create-release-pipeline?azure-portal=true) module, you created an App Service instance using Azure portal. Although the portal is an excellent tool for exploring Azure's offerings, setting up components like App Service can become cumbersome.
 
 In this module, you'll employ the Azure CLI to launch the resources necessary for deploying and running an App Service instance. You can access the Azure CLI from a terminal or through Visual Studio Code.
 
@@ -241,7 +241,7 @@ In this section, you'll create Bash variables to make the setup process more con
 
 ## Create pipeline variables in Azure Pipelines
 
-In [Create a release pipeline with Azure Pipelines](/training/modules/create-release-pipeline?azure-portal=true), you added a variable to your pipeline that stores the name of your web app in App Service. You'll do the same thing here. In addition, you'll add the name of your Azure Container Registry.
+Here, you'll add a variable to your pipeline that stores the name of your web app in App Service. In addition, you'll add the name of your Azure Container Registry.
 
 You could hard-code these names in your pipeline configuration, but if you define them as variables, your configuration will be more reusable. Plus, if your instance names change, you can update the variables and trigger your pipeline without modifying your configuration.
 

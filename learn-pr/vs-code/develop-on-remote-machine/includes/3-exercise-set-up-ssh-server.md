@@ -8,7 +8,7 @@ We're using Azure in this exercise, but your Linux VM can exist anywhere.
 
 First, you must set the initial configuration for your Linux VM.
 
-1. Navigate to the [Azure portal](https://ms.portal.azure.com/#home) and login to your Azure account. You can create a [free account](https://azure.microsoft.com/free) if you don't currently have one.
+1. Navigate to the [Azure portal](https://ms.portal.azure.com/#home) and login to your Azure account. You can create a [free account](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn) if you don't currently have one.
 1. In the portal menu, select **Create a resource**.
 
     :::image type="content" source="../media/3-create-a-resource.png" alt-text="Screenshot showing the Create a resource action in the Azure portal menu.":::

@@ -17,7 +17,7 @@ abstract: |
   - Grant access to resources.
   - View activity logs of Azure RBAC changes.
 prerequisites: |
-  - An Azure account with an [active subscription](https://azure.microsoft.com/free)
+  - An Azure account with an [active subscription](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn)
   - Knowledge of basic Azure concepts, such as the Azure portal and resource groups
 iconUrl: /training/achievements/secure-azure-resources-with-rbac.svg
 levels: 

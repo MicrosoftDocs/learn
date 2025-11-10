@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.security-copilot-education.create-a-report
+title: How to create a report using Security Copilot
+metadata:
+  title: How To Create A Report Using Security Copilot
+  description: This content is part of the "Microsoft Security Copilot in Education" module.
+  ms.date: 11/06/2025
+  author: Stephanie-Rosenzweig
+  ms.author: v-stephanier
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/7-create-a-report.md)]

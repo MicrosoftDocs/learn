@@ -2,62 +2,70 @@
 uid: learn.wwl.software-composition-analysis
 metadata:
   title: Software Composition Analysis
-  description: "Software Composition Analysis"
-  ms.date: 05/13/2024
-  author: wwlpublish
+  description: "Learn Software Composition Analysis (SCA) to detect vulnerabilities and license compliance issues in open-source dependencies, implement GitHub Dependabot, integrate scanning tools into pipelines, and automate container security scanning."
+  ms.date: 10/22/2025
+  author: LuizMacedo
   ms.author: lumac
   ms.topic: module
   ms.service: azure
-  ai-usage: human-only
+  ai-usage: ai-assisted
 title: Software Composition Analysis
-summary: This module explains Composition Analysis, how to inspect and validate code bases for compliance, integration with security tools, and integration with Azure Pipelines.
+summary: This module explains Software Composition Analysis (SCA) fundamentals, inspecting and validating code bases for compliance, implementing GitHub Dependabot for automated vulnerability detection, integrating SCA tools like Mend (WhiteSource), Snyk, and OWASP Dependency-Check into Azure Pipelines, automating container image scanning, and interpreting security alerts from scanning tools.
 abstract: |
   By the end of this module, you are able to:
 
-  -   Inspect and validate code bases for compliance.
+  -   Understand Software Composition Analysis (SCA) and why it's essential for managing open-source dependencies securely.
 
-  -   Integrate security tools like WhiteSource with Azure DevOps.
+  -   Inspect and validate code bases for license compliance and security vulnerabilities using automated tools.
 
-  -   Implement pipeline security validation.
+  -   Implement GitHub Dependabot to automatically detect vulnerable dependencies and create pull requests for security updates.
 
-  -   Interpret alerts from scanning tools.
+  -   Integrate Software Composition Analysis checks into Azure Pipelines to scan dependencies during build and deployment processes.
 
-  -   Configure GitHub Dependabot alerts and security.
+  -   Examine and configure SCA tools including Mend (WhiteSource), Snyk, OWASP Dependency-Check, and Azure Artifacts upstream sources.
+
+  -   Automate container image scanning to detect vulnerabilities in base images and application dependencies.
+
+  -   Interpret alerts from scanning tools and prioritize remediation based on severity, exploitability, and business impact.
 prerequisites: None
 iconUrl: /training/achievements/5-integrate-license-and-vulnerability-scans.svg
 levels:
-- advanced
+  - advanced
 roles:
-- administrator
-- developer
-- devops-engineer
-- security-engineer
-- security-operations-analyst
-- service-adoption-specialist
-- solution-architect
-- technology-manager
+  - administrator
+  - ai-engineer
+  - data-engineer
+  - developer
+  - devops-engineer
+  - platform-engineer
+  - security-engineer
+  - security-operations-analyst
+  - service-adoption-specialist
+  - solution-architect
+  - startup-founder
+  - technology-manager
 products:
-- azure
-- azure-artifacts
-- azure-boards
-- azure-cloud-services
-- azure-devops
-- azure-pipelines
-- azure-repos
-- azure-test-plans
-- github
+  - azure
+  - azure-artifacts
+  - azure-boards
+  - azure-cloud-services
+  - azure-devops
+  - azure-pipelines
+  - azure-repos
+  - azure-test-plans
+  - github
 subjects:
-- devops
+  - devops
 units:
-- learn.wwl.software-composition-analysis.introduction
-- learn.wwl.software-composition-analysis.inspect-validate-code-bases-for-compliance
-- learn.wwl.software-composition-analysis.explore-software-composition-analysis
-- learn.wwl.software-composition-analysis.implement-github-dependabot-alerts-security-updates
-- learn.wwl.software-composition-analysis.integrate-software-composition-analysis-checks-into-pipelines
-- learn.wwl.software-composition-analysis.examine-tools-for-assess-package-security-license-rate
-- learn.wwl.software-composition-analysis.automate-container-images
-- learn.wwl.software-composition-analysis.interpret-alerts-from-scanner-tools
-- learn.wwl.software-composition-analysis.knowledge-check
-- learn.wwl.software-composition-analysis.summary
+  - learn.wwl.software-composition-analysis.introduction
+  - learn.wwl.software-composition-analysis.inspect-validate-code-bases-for-compliance
+  - learn.wwl.software-composition-analysis.explore-software-composition-analysis
+  - learn.wwl.software-composition-analysis.implement-github-dependabot-alerts-security-updates
+  - learn.wwl.software-composition-analysis.integrate-software-composition-analysis-checks-into-pipelines
+  - learn.wwl.software-composition-analysis.examine-tools-for-assessing-package-security-license-compliance
+  - learn.wwl.software-composition-analysis.automate-container-image-scanning
+  - learn.wwl.software-composition-analysis.interpret-alerts-from-scanner-tools
+  - learn.wwl.software-composition-analysis.knowledge-check
+  - learn.wwl.software-composition-analysis.summary
 badge:
-  uid: learn.wwl.software-composition-analysis.badge
+  uid: learn.wwl.software-composition-analysis.badge

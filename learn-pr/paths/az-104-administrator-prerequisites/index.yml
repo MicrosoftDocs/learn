@@ -66,9 +66,7 @@ products:
 subjects:
 - cloud-computing
 modules:
-- learn.tour-azure-portal-features
 - learn.intro-to-azure-cloud-shell
-- learn.student-evangelism.bash-introduction
 - learn.powershell.intro-to-powershell
 - learn.azure.create-resource-manager-template-vs-code
 trophy:
