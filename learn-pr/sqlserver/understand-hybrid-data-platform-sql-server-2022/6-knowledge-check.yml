@@ -1,15 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.understand-hybrid-data-platform-sql-server-2022.knowledge-check
-title: Module assessment
+title: Knowledge check
 metadata:
-  title: Module assessment
+  title: Knowledge check
   description: "Knowledge check"
   ms.date: 11/3/2025
   author: JulianePadrao
   ms.author: jupadrao
   ms.topic: unit
-  module_assessment: true
-durationInMinutes: 8
+durationInMinutes: 4
 content: |
   [!include[](includes/6-knowledge-check.md)]
 quiz:
