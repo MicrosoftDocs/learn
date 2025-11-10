@@ -37,7 +37,7 @@ quiz:
     - content: "Multiple databases, as long as the database size is less than a certain limit"
       isCorrect: false
       explanation: "Incorrect. Multiple databases aren't supported. However, it's possible to replicate multiple databases in a single SQL Server instance by establishing multiple links."
-  - content: "What is the primary purpose of mirroing in Microsoft Fabric?"
+  - content: "What is the primary purpose of mirroring in Microsoft Fabric?"
     choices:
     - content: "To provide disaster recovery and failover capabilities"
       isCorrect: false

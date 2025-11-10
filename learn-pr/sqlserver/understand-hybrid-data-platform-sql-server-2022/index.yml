@@ -10,6 +10,8 @@ metadata:
   ms.custom:
     - build-2023
   ms.service: azure
+subjects:
+  - databases  
 title: Understand hybrid data platform on SQL Server 2025
 summary: Learn about the cloud connected capabilities of SQL Server 2025 for hybrid data platforms.
 abstract: |
@@ -27,7 +29,9 @@ iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - beginner
 roles:
-- administrator
+  - database-administrator
+  - data-engineer
+  - administrator
 products:
 - sql-server
 units:
