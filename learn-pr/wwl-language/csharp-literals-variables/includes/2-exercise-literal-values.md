@@ -13,12 +13,15 @@ Use the string data type whenever you have alphanumeric words, phrases, or data 
 
 There are many data types in C#. But as you're getting started, you only need to know about five or six data types since they cover most scenarios. Let's display a literal instance of data type to output.
 
-> [!NOTE]
-> You may notice as you begin to work in the code window that it colors certain syntax in different colors to indicate keywords, operators, data types and more. Begin to take notice of the colors. It can help you spot syntax errors as you enter characters, and can help you understand the code more effectively.
+A C# code editor is available to use directly in the browser: [C# Code Editor](https://microsoftlearning.github.io/c-sharp-minor/). This editor provides a lightweight environment for writing, running, and testing C# code without needing to install any software on your local computer.
 
 ### Use character literals
 
 If you only wanted a single alphanumeric character printed to screen, you could create a **char literal** by surrounding one alphanumeric character in single quotes. The term `char` is short for *character*. In C#, this data type is officially named "char", but frequently referred to as a "character".
+
+1. Open the [C# Code Editor](https://microsoftlearning.github.io/c-sharp-minor/) in a new browser window or tab.
+
+    You can position the browser windows side-by-side so that you can refer to these instructions while you work in the C# Code Editor.
 
 1. Add the following line of code in the code editor:
 
@@ -30,7 +33,7 @@ If you only wanted a single alphanumeric character printed to screen, you could 
 
     Notice that the letter `b` is surrounded with single quotation marks `'b'`. Single quotes create a character literal. Recall that using double quotation marks creates a `string` data type.
 
-1. Press the green Run button to run your code. You should see the following result in the output window:
+1. Press the ▶️ Run button to run your code. You should see the following result in the output window:
 
     ```Output
     b
@@ -45,7 +48,7 @@ Console.WriteLine('Hello World!');
 You would get the following error:
 
 ```Output
-(1,19): error CS1012: Too many characters in character literal
+CS1012: Too many characters in character literal
 ```
 
 Notice the single quotation marks surrounding `Hello World!`. When you use single quotation marks, the C# compiler expects a single character. However, in this case, the character literal syntax was used, but 12 characters were supplied instead!
@@ -62,7 +65,7 @@ If you want to display a numeric whole number (no fractions) value in the output
     Console.WriteLine(123);
     ```
 
-1. Press the green Run button to run your code. You should see the following result in the output console:
+1. Press the ▶️ Run button to run your code. You should see the following result in the output console:
 
     ```Output
     123
@@ -90,7 +93,7 @@ Here, precision reflects the number of digits past the decimal that are accurate
 
     To create a `float` literal, append the letter `F` after the number. In this context, the `F` is called a *literal suffix*. The literal suffix tells the compiler you wish to work with a value of `float` type. You can use either a lower-case `f` or upper-case `F` as the literal suffix for a `float`.
 
-1. Press the green Run button to run your code. You should see the following result in the output console:
+1. Press the ▶️ Run button to run your code. You should see the following result in the output console:
 
     ```Output
     0.25
@@ -106,7 +109,7 @@ Here, precision reflects the number of digits past the decimal that are accurate
     
     To create a `double` literal, just enter a decimal number. The compiler defaults to a `double` literal when a decimal number is entered without a literal suffix.
 
-1. Press the green Run button to run your code. You should see the following result in the output window:
+1. Press the ▶️ Run button to run your code. You should see the following result in the output window:
 
     ```Output
     2.625
@@ -121,7 +124,7 @@ Here, precision reflects the number of digits past the decimal that are accurate
     To create a decimal literal, append the letter `m` after the number. In this context, the `m` is called a *literal suffix*. The literal suffix tells the compiler you wish to work with a value of `decimal` type. You can use either a lower-case `m` or upper-case `M` as the literal suffix for a `decimal`.
 
 
-1. Press the green Run button to run your code. You should see the following result in the output console:
+1. Press the ▶️ Run button to run your code. You should see the following result in the output console:
 
     ```Output
     12.39816
@@ -140,7 +143,7 @@ The term `bool` is short for *Boolean*. In C#, they're officially referred to as
     Console.WriteLine(false);
     ```
 
-1. Press the green Run button to run your code. You should see the following result in the output console:
+1. Press the ▶️ Run button to run your code. You should see the following result in the output console:
 
     ```Output
     True

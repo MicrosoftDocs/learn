@@ -5,7 +5,7 @@ In this exercise, you'll calculate the final GPA and modify the console output t
 
 ## Calculate the final GPA
 
-1. In the .NET Editor, locate the Console.WriteLine() statements that are used to display the course information.
+1. In the [C# Code Editor](https://microsoftlearning.github.io/c-sharp-minor/), locate the Console.WriteLine() statements that are used to display the course information.
 
 1. Remove the following code from the previous exercise:
 
@@ -170,7 +170,7 @@ In this task, you'll run the code and verify that the output is correct.
     Console.WriteLine($"Final GPA: {leadingDigit}.{firstDigit}{secondDigit}");
     ```
 
-1. To run your code and display the formatted output, select **Run**.
+1. To run your code and display the formatted output, press the ▶️ Run button.
 
 1. To verify that your code is working as expected, compare the output of your application with the following output:
 
