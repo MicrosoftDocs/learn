@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn-wwl.build-ai-solutions-sql-server.rag-applications
+title: Build retrieval augmented generation applications
+metadata:
+  title: Build retrieval augmented generation applications
+  description: "Learn how to build Retrieval Augmented Generation (RAG) applications in SQL Server 2025."
+  ms.date: 10/20/2025
+  author: JulianePadrao
+  ms.author: jupadrao
+  ms.topic: unit
+azureSandbox: false
+durationInMinutes: 17
+content: |
+  [!include[](includes/5-rag-applications.md)]

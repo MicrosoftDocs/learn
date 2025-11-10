@@ -60293,6 +60293,56 @@
       "source_path_from_root": "/learn-pr/azure/machine-learning-confusion-matrix/index.yml",
       "redirect_url": "https://learn.microsoft.com/training/paths/create-machine-learn-models/",
       "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/optimize-model-performance-roc-auc/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/create-machine-learn-models/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/optimize-model-performance-roc-auc/2-receiver-operator-characteristic-curve.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/create-machine-learn-models/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/optimize-model-performance-roc-auc/3-exercise-evaluate-roc-curves.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/create-machine-learn-models/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/optimize-model-performance-roc-auc/4-compare-optimize-curves.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/create-machine-learn-models/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/optimize-model-performance-roc-auc/5-tune-auc-curves.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/create-machine-learn-models/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/optimize-model-performance-roc-auc/8-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/create-machine-learn-models/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/optimize-model-performance-roc-auc/9-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/create-machine-learn-models/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/optimize-model-performance-roc-auc/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/create-machine-learn-models/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/paths/understand-machine-learning/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/create-machine-learn-models/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/machine-learning-foundations-using-data-science/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/create-machine-learn-models/",
+      "redirect_document_id": false
     }
   ]
 }

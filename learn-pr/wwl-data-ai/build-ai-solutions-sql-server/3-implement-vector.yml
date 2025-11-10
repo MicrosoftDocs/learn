@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn-wwl.build-ai-solutions-sql-server.implement-vector
+title: Implement vector data types and vector search
+metadata:
+  title: Implement vector data types and vector search
+  description: "Learn to implement vector data types and vector search in SQL Server 2025"
+  ms.date: 10/20/2025
+  author: JulianePadrao
+  ms.author: jupadrao
+  ms.topic: unit
+azureSandbox: false
+durationInMinutes: 7
+content: |
+  [!include[](includes/3-implement-vector.md)]

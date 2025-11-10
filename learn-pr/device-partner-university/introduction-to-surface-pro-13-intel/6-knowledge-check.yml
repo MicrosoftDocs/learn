@@ -1,0 +1,84 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.introduction-to-surface-pro-13-intel.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge Check
+  description: This content is part of the "Introduction to Microsoft Surface Pro 13-inch (Intel)" module.
+  ms.date: 11/07/2025
+  author: ozahran7
+  ms.author: v-zahranomar
+  ms.topic: unit
+durationInMinutes: 5
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "What is a key advantage of the Intel Core Ultra (Series 2) processors in the Surface Pro 13-inch (Intel)?"
+    choices:
+        - content: "They enable AI features with a dedicated NPU."
+          isCorrect: true
+          explanation: "Correct. The Intel Core Ultra processors include a dedicated NPU (neural processing unit) that enables AI features and boosts performance."
+        - content: "They provide a detachable keyboard."
+          isCorrect: false
+          explanation: "Incorrect. The detachable keyboard is a hardware accessory, not a processor feature."
+        - content: "They support only ARM-based applications."
+          isCorrect: false
+          explanation: "Incorrect. The device uses x86 architecture, not ARM."
+        - content: "They limit battery efficiency for performance."
+          isCorrect: false
+          explanation: "Incorrect. The processors are designed to optimize both performance and battery efficiency."
+  - content: "Which feature allows Surface Pro 13-inch (Intel) users to authenticate securely using NFC?"
+    choices:
+        - content: "Microsoft Entra ID with FIDO 2.0 standards"
+          isCorrect: true
+          explanation: "Correct. NFC is used to facilitate authentication via Microsoft Entra ID and Microsoft Account using FIDO 2.0 standards."
+        - content: "PixelSense Flow Display"
+          isCorrect: false
+          explanation: "Incorrect. This refers to the device's display technology, not authentication."
+        - content: "Surface Studio Camera"
+          isCorrect: false
+          explanation: "Incorrect. This is used for video and facial recognition, not NFC authentication."
+        - content: "Recall (preview)"
+          isCorrect: false
+          explanation: "Incorrect. Recall (preview) is a productivity feature, not related to NFC authentication."
+  - content: "What is the main function of the 'Click to Do' feature on Surface Pro 13-inch (Intel)?"
+    choices:
+        - content: "It provides contextual actions for text and images on the screen."
+          isCorrect: true
+          explanation: "Correct. 'Click to Do' identifies text and images and offers actionable, context-sensitive options."
+        - content: "It manages device firmware remotely."
+          isCorrect: false
+          explanation: "Incorrect. Device firmware management is handled by DFCI."
+        - content: "It updates the Surface Pro Flex Keyboard firmware."
+          isCorrect: false
+          explanation: "Incorrect. Keyboard firmware updates are managed through the Surface app."
+        - content: "It enables dual-monitor support."
+          isCorrect: false
+          explanation: "Incorrect. Dual-monitor support is provided by hardware ports, not 'Click to Do'."
+  - content: "Which security feature is integrated directly into the CPU of Surface Pro 13-inch (Intel)?"
+    choices:
+        - content: "Microsoft Pluton"
+          isCorrect: true
+          explanation: "Correct. Microsoft Pluton is a hardware-based security chip integrated into the CPU."
+        - content: "Windows Hello camera"
+          isCorrect: false
+          explanation: "Incorrect. This is a camera for facial recognition, not a CPU-integrated security feature."
+        - content: "Surface Connect port"
+          isCorrect: false
+          explanation: "Incorrect. This is a charging and data port."
+        - content: "PixelSense Flow Display"
+          isCorrect: false
+          explanation: "Incorrect. This is the device's display technology."
+  - content: "What is the purpose of the Restyle Image feature in the Microsoft Photos app on Surface Pro 13-inch (Intel)?"
+    choices:
+        - content: "To apply AI-generated styles to photos"
+          isCorrect: true
+          explanation: "Correct. Restyle Image allows users to reimagine their photos with AI-generated styles."
+        - content: "To manage device encryption"
+          isCorrect: false
+          explanation: "Incorrect. Device encryption is managed by BitLocker or Device Encryption."
+        - content: "To authenticate users with facial recognition"
+          isCorrect: false
+          explanation: "Incorrect. Facial recognition is handled by Windows Hello."
+        - content: "To update the operating system"
+          isCorrect: false
+          explanation: "Incorrect. Operating system updates are not related to Restyle Image."
