@@ -19,7 +19,5 @@ Here are resources to help you learn more about SQL Server 2025 hybrid capabilit
 - [Azure Arc-enabled SQL Server documentation](/sql/sql-server/azure-arc/overview)
 - [Mirroring in Fabric for SQL Server](/fabric/database/mirrored-database/overview)
 - [Microsoft Entra ID authentication for SQL Server](/sql/relational-databases/security/authentication-access/azure-ad-authentication-sql-server-overview)
-- [Managed identity support in SQL Server](/sql/relational-databases/security/authentication-access/azure-ad-authentication-sql-server-managed-identities)
-- [Microsoft Purview data governance](/purview/tutorial-data-owner-policies-sql)
 - [Microsoft Defender for Cloud integration](/azure/defender-for-cloud/defender-for-sql-usage)
 - [Join the SQL Server community](https://techcommunity.microsoft.com/category/sql-server/discussions/sql_server)
