@@ -24,13 +24,13 @@ A well-written title immediately communicates both the type of problem (security
 
 ### Description
 
-The description is where the detail lives. A comprehensive issue description should include:
+The description is where the details live. A comprehensive issue description should include the following information:
 
-- **What's happening**: A clear explanation of the problem or requirement
-- **Steps to reproduce**: For bugs, specific actions that trigger the issue
-- **Expected behavior**: What should happen instead
-- **Why it matters**: The impact or importance of addressing this issue
-- **Acceptance criteria**: How to verify when the issue is resolved
+- **What's happening**: A clear explanation of the problem or requirement.
+- **Steps to reproduce**: For bugs, specific actions that trigger the issue.
+- **Expected behavior**: What should happen instead?
+- **Why it matters**: The importance of addressing this issue.
+- **Acceptance criteria**: How to verify when the issue is resolved.
 
 Here's an example of a well-structured security issue description:
 
@@ -47,9 +47,9 @@ If the database is compromised, all user passwords are immediately exposed.
 Passwords should be hashed using a secure algorithm (like bcrypt) with appropriate salt before storage.
 
 **Acceptance criteria:**
-- Implement bcrypt password hashing
-- Verify no plaintext passwords exist in storage
-- Update authentication to validate against hashed passwords
+- Implement bcrypt password hashing.
+- Verify no plaintext passwords exist in storage.
+- Update authentication to validate against hashed passwords.
 ```
 
 A well-written issue is half-fixed. It guides the developer straight to the problem without ambiguity.
@@ -58,11 +58,11 @@ A well-written issue is half-fixed. It guides the developer straight to the prob
 
 The comments section enables team discussion. Team members can:
 
-- Ask clarifying questions
-- Propose potential solutions
-- Share investigation findings
-- Reference related code or issues
-- Document decisions made during resolution
+- Ask clarifying questions.
+- Propose potential solutions.
+- Share investigation findings.
+- Reference related code or issues.
+- Document decisions made during resolution.
 
 Comments create a knowledge trail that helps current and future developers understand both the problem and the reasoning behind the solution.
 
@@ -70,16 +70,16 @@ Comments create a knowledge trail that helps current and future developers under
 
 The assignee is the person responsible for resolving the issue. Having a clear owner ensures accountability and prevents issues from languishing in the backlog.
 
-Best practice: Always assign one primary owner for an issue. If you're the assignee, you're responsible for driving it to resolution. This doesn't mean you work alone – you can collaborate with others – but you own the outcome.
+Best practice: Always assign one primary owner for an issue. If you're the assignee, you're responsible for driving it to resolution. Being the assignee doesn't mean you work alone – you can collaborate with others – but you own the outcome.
 
 ### Labels
 
 Labels categorize and prioritize issues. Common labels include:
 
-- **Type labels**: 'bug', 'enhancement', 'documentation', 'security'
-- **Priority labels**: 'P0-critical', 'P1-high', 'P2-medium', 'P3-low'
-- **Status labels**: 'in-progress', 'blocked', 'needs-review'
-- **Component labels**: 'backend', 'frontend', 'api', 'database'
+- **Type labels**: bug, enhancement, documentation, security.
+- **Priority labels**: P0-critical, P1-high, P2-medium, P3-low.
+- **Status labels**: in-progress, blocked, needs-review.
+- **Component labels**: backend, frontend, API, database.
 
 Labels can be used to filter and sort issues in lists, making it easier to focus on high-priority or security-related work.
 
@@ -87,7 +87,7 @@ For security issues, labels help teams quickly filter and prioritize vulnerabili
 
 ### Milestones
 
-Milestones group related issues toward a common goal, typically a version release or project phase. While not critical for individual issue resolution, milestones help teams coordinate work and track progress toward larger objectives.
+Milestones group related issues toward a common goal. For example, a version release or project phase. While not critical for individual issue resolution, milestones help teams coordinate work and track progress toward larger objectives.
 
 ## Examine the lifecycle of an issue
 
@@ -95,7 +95,7 @@ Issues move through several stages from creation to resolution. Understanding th
 
 ### Stage 1: Creation
 
-Issues are typically created by developers, testers, or users who identify problems or opportunities for improvement. Security issues might be discovered through:
+Issues can be created by developers, testers, or users who identify problems or opportunities for improvement. Security issues might be discovered through:
 
 - Code reviews.
 - Automated security scans.
@@ -119,7 +119,7 @@ High-severity issues, particularly security vulnerabilities, are flagged for imm
 
 ### Stage 3: Investigation and discussion
 
-The assigned developer investigates the issue and may:
+The assigned developer investigates the issue. Developers can complete one or more of the following tasks during their investigation:
 
 - Ask clarifying questions in comments.
 - Document findings from code analysis.
@@ -131,7 +131,7 @@ This discussion phase ensures that everyone understands the problem before imple
 
 ### Stage 4: Implementation
 
-The developer creates a feature branch and implements the fix. This typically involves:
+The developer creates a feature branch and implements the fix. The implementation process typically involves the following tasks:
 
 - Writing or modifying code.
 - Adding or updating tests.
@@ -161,25 +161,25 @@ Using keywords to reference issues creates traceability between the problem and 
 
 ### Stage 6: Closure and verification
 
-When the PR is merged, the issue closes automatically (if properly referenced). If testing reveals the issue isn't fully resolved, it can be reopened for additional work.
+When the PR is merged, the issue closes automatically (if properly referenced). If testing reveals the issue isn't fully resolved, it can be reopened for more work.
 
-Best practice: After closing, verify that the acceptance criteria in the original issue description are met. For security issues, consider additional verification through security testing.
+Best practice: After closing, verify that the acceptance criteria in the original issue description are met. For security issues, consider extra verification through security testing.
 
 ## Manage GitHub issues in Visual Studio Code
 
 Visual Studio Code integrates directly with GitHub Issues through the GitHub Pull Requests extension. This integration allows you to:
 
-- View assigned issues without leaving the editor
-- Create new issues from within VS Code
-- Link code changes to issues as you work
-- Review issue details alongside your code
+- View assigned issues without leaving the editor.
+- Create new issues from within Visual Studio Code.
+- Link code changes to issues as you work.
+- Review issue details alongside your code.
 
-To access GitHub Issues in VS Code:
+To access GitHub Issues in Visual Studio Code:
 
-1. Install the "GitHub Pull Requests and Issues" extension
-1. Sign in to your GitHub account
-1. View issues in the GitHub panel
-1. Filter by assignee, labels, or milestones
+1. Install the "GitHub Pull Requests and Issues" extension.
+1. Sign in to your GitHub account.
+1. View issues in the GitHub panel.
+1. Filter by assignee, labels, or milestones.
 
 This tight integration streamlines your workflow by keeping issue context visible while you code.
 
@@ -189,7 +189,7 @@ Clear issue tracking prevents critical problems from slipping through the cracks
 
 - **Minor issues become major incidents**: A "minor-looking" security issue in the backlog can become a serious incident if attackers discover it first. Security issues in GitHub Issues are visible and traceable – use that visibility as an accountability tool.
 
-- **Lost institutional knowledge**: When issues are poorly documented or discussions happen outside the tracking system, valuable context disappears. Future developers (including you in six months) won't understand why certain decisions were made.
+- **Lost institutional knowledge**: When issues are poorly documented or discussions happen outside the tracking system, valuable context disappears. Future developers (including you in six months) might not understand why certain decisions were made.
 
 - **Delayed responses**: Without clear priority labels and assignees, critical security vulnerabilities might not receive timely attention.
 

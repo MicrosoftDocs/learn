@@ -1,15 +1,15 @@
-Understanding common security vulnerabilities is essential to identifying and resolving code security issues effectively. This unit covers prevalent security issues in code, their impact, and why addressing them promptly is critical for application security.
+Understanding common security vulnerabilities is essential to identifying and resolving code security issues effectively. This unit covers prevalent security issues in code, their effects, and why addressing them promptly is critical for application security.
 
 ## Why focus on security issues?
 
 Security vulnerabilities represent one of the most critical categories of software defects. A single vulnerability can result in:
 
-- **Data breaches**: Exposure of sensitive customer or business data
-- **Financial losses**: Direct costs from breaches, regulatory fines, and remediation expenses
-- **Reputation damage**: Loss of customer trust and business credibility
-- **Operational disruption**: System compromises can halt business operations
+- **Data breaches**: Exposure of sensitive customer or business data.
+- **Financial losses**: Direct costs from breaches, regulatory fines, and remediation expenses.
+- **Reputation damage**: Loss of customer trust and business credibility.
+- **Operational disruption**: System compromises can halt business operations.
 
-Functional bugs may be embarrassing to a developer, but security bugs can have severe consequences for an organization and users. Every developer must be security-conscious, regardless of their role or specialization.
+Functional bugs can be embarrassing to a developer, but security bugs can have severe consequences for an organization and users. Every developer must be security-conscious, regardless of their role or specialization.
 
 ## Open Web Application Security Project (OWASP)
 
@@ -17,8 +17,8 @@ The Open Web Application Security Project (OWASP) is a nonprofit organization fo
 
 The OWASP Top 10 serves as a security baseline for developers and organizations, helping prioritize which vulnerabilities to address first. The rankings shift over time as attack patterns evolve. For example:
 
-- **2017 OWASP Top 10**: Injection flaws held the #1 spot
-- **2021 OWASP Top 10**: Injection moved to #3 as new threats like broken access control emerged
+- **2017 OWASP Top 10**: Injection flaws held the #1 spot.
+- **2021 OWASP Top 10**: Injection moved to #3 as new threats like broken access control emerged.
 
 The OWASP Top 10 reflects real-world attack data, not theoretical concerns. Code vulnerabilities like SQL injection and weak encryption consistently rank among the industry's most critical security concerns.
 
@@ -47,14 +47,14 @@ SELECT * FROM Users WHERE Username = '' OR '1'='1' AND Password = ''
 
 Since `'1'='1'` is always true, this query returns all users, bypassing authentication entirely.
 
-#### Real-world impact
+#### Real-world effects
 
 SQL injection attacks have caused numerous high-profile breaches. Attackers can:
 
-- Bypass authentication mechanisms
-- Extract entire databases containing sensitive information
-- Modify or delete data
-- Execute administrative operations on the database
+- Bypass authentication mechanisms.
+- Extract entire databases containing sensitive information.
+- Modify or delete data.
+- Execute administrative operations on the database.
 
 #### Secure implementation
 
@@ -80,11 +80,11 @@ SQL injection is just one form of injection attack, and developers must be aware
 While SQL injection is most common, other injection vulnerabilities exist:
 
 - **Command injection**: Inserting system commands into application inputs that execute shell commands.
-- **LDAP injection**: Manipulating LDAP queries to access unauthorized directory information.
+- **Lightweight Directory Access Protocol (LDAP) injection**: Manipulating LDAP queries to access unauthorized directory information.
 - **NoSQL injection**: Exploiting NoSQL databases through malicious queries.
 - **XML injection**: Inserting malicious XML content to access or modify data.
 
-**The universal pattern**: Any time you insert untrusted input into a command or query that gets interpreted, you risk injection. The solution pattern is always similar: sanitize, validate, or parameterize to separate code from data.
+**The universal pattern**: Anytime you insert untrusted input into a command or query that gets interpreted, you risk injection. The solution pattern is always similar: sanitize, validate, or parameterize to separate code from data.
 
 ## Weak encryption of sensitive data
 
@@ -131,8 +131,8 @@ bool isValid = BCrypt.Net.BCrypt.Verify(userInput, storedHash);
 
 Secure password hashing requires:
 
-- **Salt**: Random data added to passwords before hashing, preventing rainbow table attacks
-- **Slow algorithm**: Functions like bcrypt, scrypt, or Argon2 are computationally expensive, limiting brute-force attempts to hundreds or thousands per second instead of billions
+- **Salt**: Random data added to passwords before hashing, preventing rainbow table attacks.
+- **Slow algorithm**: Functions like bcrypt, scrypt, or Argon2 are computationally expensive, limiting brute-force attempts to hundreds or thousands per second instead of billions.
 
 ### Encryption of data at rest
 
@@ -191,7 +191,7 @@ logger.LogInformation($"Credit card processed: {cardNumber}");
 logger.LogInformation($"API Key: {apiKey}");
 ```
 
-This exposes sensitive data in logs, which may be accessible to unauthorized users or leaked through log management systems.
+This code exposes sensitive data in logs, which might be accessible to unauthorized users or leaked through log management systems.
 
 #### Secure logging practices
 
@@ -204,9 +204,9 @@ logger.LogInformation($"API call authenticated successfully");
 
 #### Best practices
 
-- Never log passwords, authentication tokens, or API keys
-- Mask or redact sensitive information like credit card numbers or Social Security numbers
-- Log events and outcomes, not sensitive data values
+- Never log passwords, authentication tokens, or API keys.
+- Mask or redact sensitive information like credit card numbers or Social Security numbers.
+- Log events and outcomes, not sensitive data values.
 
 ### Excessive error information disclosure
 
@@ -286,11 +286,11 @@ string content = File.ReadAllText(filePath);
 Secure implementations demonstrate the following defense strategies:
 
 - Use `Path.GetFileName()` to remove directory information.
-- Whitelist allowed files or patterns instead of blacklisting dangerous characters.
+- Allowlist allowed files or patterns instead of blocklisting dangerous characters.
 - Validate that resolved paths remain within intended directories.
 - Implement strict file access permissions at the operating system level.
 
-## Additional security considerations
+## Other security considerations
 
 In addition to the vulnerabilities covered in the previous sections, several other security issues require developer awareness.
 
@@ -313,7 +313,7 @@ Embedding API keys, passwords, or tokens directly in source code exposes them to
 
 ### Resource exhaustion and denial of service
 
-Applications that don't properly manage resources can be exploited by attackers to cause service disruptions or system crashes.
+Attackers often exploit applications that don't properly manage resources. Attacks can cause service disruptions or system crashes.
 
 Poor resource management can enable denial-of-service attacks. Examples include:
 
@@ -342,7 +342,7 @@ Security implementations involving encryption, hashing, and authentication requi
 
 Cryptographic code requires special scrutiny:
 
-- **Look for**: `MD5.Create()`, `SHA1.Create()`, plaintext password storage..
+- **Look for**: `MD5.Create()`, `SHA1.Create()`, plaintext password storage.
 - **Ask**: "Is this cryptographic method still considered secure?"
 - **Consider**: Using bcrypt, scrypt, or Argon2 for passwords; SHA-256 or better for integrity checks.
 
@@ -366,7 +366,7 @@ File handling code needs careful validation:
 - **Ask**: "Can a user escape the intended directory?"
 - **Consider**: Path traversal attacks and directory escape techniques.
 
-### Leverage automated tools
+### Use automated tools
 
 While manual code review is essential, automated tools can efficiently scan large codebases and identify common vulnerability patterns that might be missed during manual inspection.
 
@@ -383,11 +383,11 @@ GitHub Copilot can identify many common security issues when you ask it to analy
 The principle of "shifting left" means addressing security earlier in the development lifecycle:
 
 - **Design phase**: Consider security implications of architectural decisions.
-- **Development phase**: Write secure code from the start, catch issues during code review.
+- **Development phase**: Write secure code from the start. Catch issues during code review.
 - **Testing phase**: Include security testing alongside functional testing.
 - **Deployment phase**: Scan for vulnerabilities before release.
 
-Catching security issues during development is far less expensive than discovering them in production. The cost and impact of fixing vulnerabilities increases exponentially with each stage they progress through.
+Catching security issues during development is far less expensive than discovering them in production. The cost of fixing vulnerabilities increases exponentially with each stage they progress through.
 
 ## Summary
 

@@ -41,9 +41,9 @@ using (SqlCommand command = new SqlCommand(query, connection))
 }
 ```
 
-By writing clearly intended comments that nudge GitHub Copilot toward secure patterns, you leverage the AI's training on millions of code examples to get best-practice implementations by default.
+By writing clearly intended comments that nudge GitHub Copilot toward secure patterns, you apply the AI's training on millions of code examples to get best-practice implementations by default.
 
-You can also use GitHub Copilot's Chat view to explore secure coding practices. For example, if you want help implementing password hashing, you might enter the following prompt in the Chat view:
+You can also use GitHub Copilot's Chat view to explore secure coding practices. For example, if you want help with implementing password hashing, you might enter the following prompt in the Chat view:
 
 ``` plaintext
 How do I hash a password using a secure, industry-standard algorithm with automatic salting?
@@ -80,11 +80,11 @@ Automated code analysis tools work alongside GitHub Copilot to provide comprehen
 
 Combine Copilot with automated code analysis tools:
 
-- **.NET analyzers**: Enforce coding standards and catch common issues
-- **GitHub CodeQL**: Scan for security vulnerabilities in pull requests
-- **Security linters**: Language-specific tools that flag dangerous patterns
+- **.NET analyzers**: Enforce coding standards and catch common issues.
+- **GitHub CodeQL**: Scan for security vulnerabilities in pull requests.
+- **Security linters**: Language-specific tools that flag dangerous patterns.
 
-GitHub Copilot helps you write code that's less likely to trigger these tools' warnings. When you prompt Copilot to use parameterized queries, the code it generates will pass SQL injection checks without requiring changes.
+GitHub Copilot helps you write code that's less likely to trigger these tools' warnings. When you tell GitHub Copilot to use parameterized queries, the suggested code should pass SQL injection checks without requiring changes.
 
 Consider the following workflow integration:
 
@@ -94,7 +94,7 @@ Consider the following workflow integration:
 1. Automated CI/CD pipeline runs comprehensive security scans.
 1. Code review includes both human and automated security checks.
 
-This layered approach catches issues at multiple points, with Copilot helping prevent them at the earliest stage.
+This layered approach catches issues at multiple points. Using GitHub Copilot helps you prevent issues at the earliest stage.
 
 ### Coding standards and team practices
 
@@ -119,7 +119,7 @@ Apply these practices consistently to reduce security vulnerabilities.
 
 Validating all user input before processing is one of the most fundamental security practices for preventing injection attacks and other vulnerabilities.
 
-Every entry point for user data should include validation. Use length limits, format validation, whitelist approaches, type checking, and range validation to prevent buffer overflows, DoS attacks, and malicious input.
+Every entry point for user data should include validation. Use length limits, format validation, allowlist approaches, type checking, and range validation to prevent buffer overflows, DoS attacks, and malicious input.
 
 You can prompt GitHub Copilot to generate validation code. For example, to validate an email address:
 
@@ -139,9 +139,9 @@ Apply minimal necessary permissions throughout your application for database con
 
 Using well-established security libraries reduces the risk of implementation errors in critical security functionality.
 
-Use well-tested, maintained libraries rather than implementing security-critical functionality yourself. Prefer established libraries like Entity Framework for database queries, ASP.NET Identity for authentication, BCrypt.Net for password hashing, and Azure Key Vault SDK for secrets management.
+Use well-tested, maintained libraries rather than implementing security-critical functionality yourself. Choose established libraries like Entity Framework for database queries, ASP.NET Identity for authentication, BCrypt.Net for password hashing, and Azure Key Vault SDK for secrets management.
 
-Prompt GitHub Copilot to use approved libraries. For example: "Implement password hashing using BCrypt.Net library"
+Write prompts that tell GitHub Copilot to use approved libraries. For example: "Implement password hashing using BCrypt.Net library"
 
 ### Testing security requirements
 
@@ -163,15 +163,15 @@ Building security in from the start is faster than retrofitting. Writing secure 
 
 ## Developing a security-first mindset
 
-Cultivating a security-first mindset is essential for all developers. This involves prioritizing security considerations throughout the development process, from design to deployment.
+Cultivating a security-first mindset is essential for all developers. A security-first approach prioritizes security considerations throughout the development process, from design to deployment.
 
-Prevent security issues by consistently applying these principles:
+You can prevent security issues by consistently applying these principles:
 
-- Assume all input is malicious and validate everything
-- Fail securely without exposing data or creating vulnerabilities
-- Use defense in depth with multiple security layers
-- Grant minimum necessary permissions
-- Log security events without including sensitive data
+- Assume all input is malicious and validate everything.
+- Fail securely without exposing data or creating vulnerabilities.
+- Use defense in depth with multiple security layers.
+- Grant minimum necessary permissions.
+- Log security events without including sensitive data.
 
 Use GitHub Copilot to implement these principles consistently by including them in your prompts and comments.
 

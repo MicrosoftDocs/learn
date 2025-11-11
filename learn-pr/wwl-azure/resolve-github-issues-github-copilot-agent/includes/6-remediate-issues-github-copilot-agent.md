@@ -11,12 +11,12 @@ GitHub Copilot's Agent mode works autonomously to execute complex remediation ta
 
 Agent mode capabilities include:
 
-- Editing files with precise code modifications
-- Applying changes across multiple files simultaneously
-- Running tests to verify changes
-- Executing commands based on your instructions
-- Understanding project context and dependencies
-- Maintaining consistency across the codebase
+- Editing files with precise code modifications.
+- Applying changes across multiple files simultaneously.
+- Running tests to verify changes.
+- Executing commands based on your instructions.
+- Understanding project context and dependencies.
+- Maintaining consistency across the codebase.
 
 Agent mode is ideal for implementing multi-step security fixes that require careful handling of dependencies, edge cases, and testing. Agent mode automatically defines the required context and executes the necessary steps to achieve your remediation goals.
 
@@ -30,11 +30,11 @@ Here are key strategies for using Agent mode to remediate security issues:
 
 - **Fix injection vulnerabilities**: Instruct Agent mode to replace string concatenation with parameterized queries or prepared statements.
 
-- **Implement secure encryption**: Have Agent mode upgrade weak hashing algorithms to secure alternatives like bcrypt or Argon2.
+- **Implement secure encryption**: Have Agent mode upgrade weak hashing algorithms using secure alternatives like bcrypt or Argon2.
 
 - **Sanitize logging**: Use Agent mode to remove sensitive data from log statements while maintaining useful diagnostic information.
 
-- **Validate file paths**: Let Agent mode add proper path validation to prevent directory traversal attacks.
+- **Validate file paths**: Let Agent mode add proper path validation that prevents directory traversal attacks.
 
 - **Add input validation**: Have Agent mode implement comprehensive input validation and sanitization.
 
@@ -93,7 +93,7 @@ Ensure you're working in a clean git branch with all existing work committed. Na
 
 ### Step 2: Set up safety measures
 
-Creating baseline tests before making changes provides a safety net to verify that functionality remains intact.
+Create baseline tests before making changes to your code. When code updates are complete, use baseline tests to verify that functionality remains intact.
 
 Before making changes, create tests to verify current behavior.
 
@@ -143,13 +143,13 @@ Agent mode implements path validation using `Path.GetFileName()`, verifies paths
 
 ### Step 7: Validate changes
 
-Testing after each major fix ensures that the vulnerability is actually resolved and that no new issues were introduced.
+Testing after each major fix ensures that the vulnerability is resolved and that no new issues were introduced.
 
 After each major security fix, validate the changes.
 
 Example prompt: "Run all unit tests and create security-specific tests to verify the SQL injection vulnerability is fully fixed."
 
-Agent mode runs existing tests and creates additional security tests that attempt SQL injection attacks to verify the vulnerability is resolved.
+Agent mode runs existing tests and creates other security tests that attempt SQL injection attacks to verify the vulnerability is resolved.
 
 ### Step 8: Review and iterate
 
@@ -202,7 +202,7 @@ Taking these precautions before starting remediation minimizes the risk of losin
 - Always work in a feature branch.
 - Ensure comprehensive test coverage exists.
 - Review the remediation plan from Ask mode analysis.
-- Understand the security vulnerability and its potential impact.
+- Understand the security vulnerability and its potential effects.
 - Back up any critical data or configurations.
 
 ### During remediation
@@ -266,7 +266,7 @@ Visual Studio Code's Source Control view provides an integrated way to review an
     ```
 
     > [!NOTE]
-    > To link your commits to GitHub issues, include the issue number in your commit message using the **Fixes #issue-number** syntax. This automatically closes the issue when the commit is merged.
+    > To link your commits to GitHub issues, include the issue number in your commit message using the **Fixes #issue-number** syntax. This syntax automatically closes the issue when the commit is merged.
 
 1. Select the **Commit** button to commit your changes.
 
@@ -293,4 +293,4 @@ git push origin your-branch-name
 
 ## Summary
 
-Using GitHub Copilot's Agent mode enables developers to efficiently remediate security issues while maintaining code quality and functionality. By combining the analytical insights from Ask mode with Agent mode's execution capabilities, you can systematically address vulnerabilities in your codebase. The key to success is providing clear instructions, maintaining safety practices, thoroughly validating all changes, and ensuring proper documentation. Remember that Agent mode is a powerful assistant that accelerates remediation, but human oversight remains essential for ensuring security fixes are complete, correct, and don't introduce new vulnerabilities.
+Using GitHub Copilot's Agent mode enables developers to efficiently remediate security issues while maintaining code quality and functionality. By combining the analytical insights from Ask mode with Agent mode's execution capabilities, you can systematically address vulnerabilities in your codebase. The key to success is providing clear instructions, maintaining safety practices, thoroughly validating all changes, and ensuring proper documentation. GitHub Copilot's Agent mode is a powerful assistant that accelerates remediation. However, human oversight remains essential to ensuring security fixes are complete, correct, and don't introduce new vulnerabilities.
