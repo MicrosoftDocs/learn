@@ -11,7 +11,7 @@ metadata:
 title: Resolve GitHub issues using GitHub Copilot Agent
 summary: "This module covers how to identify and remediate GitHub issues using GitHub Copilot's Ask and Agent modes. The training focuses on security vulnerabilities such as SQL injection, encryption, logging, and path traversal problems."
 abstract: |
-  By the end of this module, you'll be able to:
+  By the end of this module, you're able to:
     - Describe several common categories of code security vulnerabilities and the associated GitHub issues.
     - Describe the lifecycle of a GitHub issue from creation to resolution.
     - Use GitHub Copilot's Ask mode to analyze the code vulnerabilities associated with a GitHub issue and suggest potential fixes.
