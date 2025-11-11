@@ -40,9 +40,11 @@ Here are effective strategies for using Ask mode to analyze security issues:
 
 ### Ask mode prompts for security analysis
 
-Effective prompts are specific, provide context, and focus on actionable insights. Here are examples of prompts for analyzing security issues:
+Effective prompts are specific, provide context, and focus on actionable insights.
 
 #### Understanding and analysis
+
+These prompts help you understand what code does and identify its security implications.
 
 - "Explain what the selected authentication function does and identify any security concerns."
 - "Analyze the selected code for SQL injection vulnerabilities and explain how they could be exploited."
@@ -51,12 +53,16 @@ Effective prompts are specific, provide context, and focus on actionable insight
 
 #### Vulnerability assessment
 
+Use these prompts to deeply analyze potential exploits and assess the severity of security issues.
+
 - "Identify all the ways an attacker could exploit the selected input validation."
 - "What sensitive information might be exposed through the selected error handling?"
 - "Analyze the selected encryption implementation for weaknesses."
 - "Does the selected code follow the OWASP Top 10 security guidelines? Explain any violations."
 
 #### Solution exploration
+
+These prompts help you evaluate different approaches to fixing security issues and understand their trade-offs.
 
 - "What are the recommended approaches for fixing SQL injection in the selected query?"
 - "Show me secure alternatives to the selected password hashing implementation."
@@ -65,12 +71,16 @@ Effective prompts are specific, provide context, and focus on actionable insight
 
 #### Impact analysis
 
+Use these prompts to understand the potential consequences of security vulnerabilities if they're exploited.
+
 - "What's the potential impact if the selected SQL injection vulnerability is exploited?"
 - "Explain the consequences of storing passwords in plaintext."
 - "What data could be compromised through the selected path traversal vulnerability?"
 - "How serious is the selected logging issue compared to other vulnerabilities in the codebase?"
 
 #### Best practices verification
+
+These prompts help you ensure your code follows industry standards and security guidelines.
 
 - "Does the selected code follow Microsoft's security guidelines for .NET?"
 - "Is the selected encryption implementation using current best practices?"
@@ -83,12 +93,16 @@ GitHub Copilot's analysis quality depends on the context you provide. Follow the
 
 ### Add relevant files and code
 
+Providing comprehensive context helps GitHub Copilot deliver more accurate and relevant security analysis.
+
 - Use the **Add Context** button in the chat interface to include relevant files.
 - Select specific code sections before asking questions to focus the analysis.
 - Include related files that provide context (like configuration files, helper classes, or data models).
 - Reference multiple files when the issue spans across them.
 
 ### Provide clear problem descriptions
+
+Clear context helps GitHub Copilot understand your specific situation and provide more targeted security guidance.
 
 - Describe what you're trying to accomplish.
 - Mention any constraints or requirements (performance considerations, compliance needs).
@@ -101,9 +115,13 @@ Follow this systematic workflow to analyze security issues using Ask mode:
 
 ### Step 1: Open and select the problematic code
 
+The first step in analyzing a security issue is to provide GitHub Copilot with the specific code you want to analyze.
+
 Navigate to the file containing the security issue and select the relevant code section. This focuses GitHub Copilot's analysis on the specific area of concern.
 
 ### Step 2: Ask for an explanation
+
+Begin your analysis by understanding what the code does and confirming that a vulnerability exists.
 
 Start with a broad understanding question to confirm the vulnerability and understand how it could be exploited.
 
@@ -113,6 +131,8 @@ GitHub Copilot will describe how the code works, identify the vulnerability type
 
 ### Step 3: Ask targeted questions about the vulnerability
 
+Once you understand the basic vulnerability, dig deeper to understand all possible attack vectors.
+
 Drill deeper into specific aspects of the security issue.
 
 Example prompt: "What are all the different ways an attacker could exploit this SQL injection vulnerability?"
@@ -120,6 +140,8 @@ Example prompt: "What are all the different ways an attacker could exploit this 
 This helps you understand the full scope of the risk, including authentication bypass, data extraction, data modification, and denial of service possibilities.
 
 ### Step 4: Explore remediation options
+
+Understanding multiple solution approaches helps you choose the most appropriate fix for your specific context.
 
 Ask for solution strategies with pros and cons.
 
@@ -129,6 +151,8 @@ GitHub Copilot can suggest multiple solutions such as parameterized queries, ORM
 
 ### Step 5: Verify edge cases and requirements
 
+Before implementing a fix, ensure you understand all the scenarios and special cases that need to be handled.
+
 Ensure the fix will work in all scenarios by asking about special considerations.
 
 Example prompt: "Are there any edge cases or special considerations I should handle when implementing parameterized queries for this search function?"
@@ -136,6 +160,8 @@ Example prompt: "Are there any edge cases or special considerations I should han
 GitHub Copilot can identify input validation requirements, performance considerations, and business logic concerns you need to address.
 
 ### Step 6: Plan the implementation
+
+The final step before coding is to create a comprehensive plan that guides the implementation process.
 
 Request a comprehensive implementation plan that includes testing requirements.
 
@@ -174,12 +200,16 @@ While GitHub Copilot is knowledgeable, treat its responses as informed guidance 
 
 ### Verify critical security decisions
 
+Always validate security recommendations against authoritative sources and your specific requirements.
+
 - Cross-reference Copilot's advice with official documentation.
 - Consult OWASP guidelines for security best practices.
 - Review Microsoft's security recommendations for .NET.
 - Consider your specific compliance requirements.
 
 ### Recognize GitHub Copilot's limitations
+
+Understanding what GitHub Copilot can and cannot do helps you use it effectively while maintaining appropriate oversight.
 
 GitHub Copilot is a powerful tool, but it has limitations that you need to be aware of.
 
@@ -191,6 +221,8 @@ Consider the following limitations:
 - GitHub Copilot might miss subtle vulnerabilities that require domain expertise.
 
 ### Provide clarifying context
+
+The quality of GitHub Copilot's responses improves significantly when you provide additional context and details.
 
 GitHub Copilot's accuracy improves with better context. If responses seem off-target:
 

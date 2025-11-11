@@ -48,11 +48,15 @@ When using Agent mode to remediate security issues, your prompts should be speci
 
 #### Preparation and safety
 
+These prompts help you establish safety measures before making security changes to your codebase.
+
 - "Before making security fixes, create unit tests that verify the current behavior of the selected functions."
 - "Analyze the selected code for dependencies and ensure fixes maintain all existing functionality."
 - "Create a backup branch and run existing tests before implementing security fixes to the selected code."
 
 #### Basic remediation operations
+
+Use these prompts to address common security vulnerabilities with straightforward fixes.
 
 - "Refactor the selected SQL query to use parameterized queries instead of string concatenation."
 - "Replace the selected MD5 password hashing with bcrypt including proper salt generation."
@@ -61,12 +65,16 @@ When using Agent mode to remediate security issues, your prompts should be speci
 
 #### Advanced remediation patterns
 
+These prompts guide Agent mode through more complex security improvements that involve multiple components or architectural changes.
+
 - "Refactor the selected authentication function to use secure token-based authentication with proper expiration."
 - "Implement comprehensive input validation for the selected user data processing functions."
 - "Replace the selected weak encryption implementation with AES-256 encryption following best practices."
 - "Refactor the selected error handling to provide user-friendly messages while logging detailed errors securely."
 
 #### Quality and validation
+
+Use these prompts to ensure that security fixes meet quality standards and don't introduce regressions.
 
 - "After implementing security fixes, run all tests and verify that functionality remains identical."
 - "Ensure the fixed code follows Microsoft's C# security guidelines and coding conventions."
@@ -79,9 +87,13 @@ Follow this systematic workflow to remediate security issues using Agent mode:
 
 ### Step 1: Prepare your workspace
 
+Starting with a clean workspace ensures you can track changes accurately and roll back if needed.
+
 Ensure you're working in a clean git branch with all existing work committed. Navigate to the file containing the security vulnerability analyzed in Ask mode and have your remediation plan ready to reference.
 
 ### Step 2: Set up safety measures
+
+Creating baseline tests before making changes provides a safety net to verify that functionality remains intact.
 
 Before making changes, create tests to verify current behavior.
 
@@ -91,6 +103,8 @@ Agent mode creates tests that capture current behavior, providing a baseline for
 
 ### Step 3: Start with critical security fixes
 
+Addressing the highest-risk vulnerabilities first ensures that the most dangerous issues are resolved promptly.
+
 Begin with the highest-priority vulnerabilities.
 
 Example prompt: "Refactor the `SearchProducts` method to use parameterized queries instead of string concatenation. Ensure all SQL injection vectors are eliminated."
@@ -98,6 +112,8 @@ Example prompt: "Refactor the `SearchProducts` method to use parameterized queri
 Agent mode analyzes the code, replaces vulnerable string concatenation with parameterized queries, and adds input validation to eliminate the SQL injection vulnerability.
 
 ### Step 4: Implement secure cryptography
+
+Upgrading weak cryptography protects sensitive data like passwords from being compromised even if storage is breached.
 
 Continue with cryptographic improvements.
 
@@ -107,6 +123,8 @@ Agent mode upgrades weak hashing algorithms to secure alternatives like bcrypt, 
 
 ### Step 5: Sanitize logging and error handling
 
+Removing sensitive information from logs prevents data exposure while maintaining the diagnostic capabilities needed for debugging.
+
 Address information disclosure issues.
 
 Example prompt: "Remove sensitive information from logging statements in the authentication module while maintaining diagnostic value."
@@ -114,6 +132,8 @@ Example prompt: "Remove sensitive information from logging statements in the aut
 Agent mode removes sensitive data from logs and replaces detailed error messages with user-friendly alternatives while preserving diagnostic information in secure logs.
 
 ### Step 6: Add path validation
+
+Validating file paths prevents attackers from accessing files outside the intended directory scope.
 
 Implement file path security.
 
@@ -123,6 +143,8 @@ Agent mode implements path validation using `Path.GetFileName()`, verifies paths
 
 ### Step 7: Validate changes
 
+Testing after each major fix ensures that the vulnerability is actually resolved and that no new issues were introduced.
+
 After each major security fix, validate the changes.
 
 Example prompt: "Run all unit tests and create security-specific tests to verify the SQL injection vulnerability is fully fixed."
@@ -130,6 +152,8 @@ Example prompt: "Run all unit tests and create security-specific tests to verify
 Agent mode runs existing tests and creates additional security tests that attempt SQL injection attacks to verify the vulnerability is resolved.
 
 ### Step 8: Review and iterate
+
+Addressing test failures and refining implementations ensures that all requirements are met before considering the remediation complete.
 
 If issues are found, provide specific instructions for refinements.
 
@@ -145,6 +169,8 @@ When using Agent mode for security remediation, always consider security and qua
 
 ### Security best practices
 
+Following these security practices ensures that your fixes are comprehensive and don't introduce new vulnerabilities.
+
 Consider the following security practices when remediating vulnerabilities:
 
 - **Validate thoroughly**: Ensure all input validation is comprehensive and handles edge cases.
@@ -154,6 +180,8 @@ Consider the following security practices when remediating vulnerabilities:
 - **Test extensively**: Include both positive and negative security test cases.
 
 ### Code quality standards
+
+Maintaining code quality alongside security improvements ensures that your codebase remains maintainable and professional.
 
 Maintain high code quality by following these guidelines:
 
@@ -169,6 +197,8 @@ Agent mode is powerful but requires careful oversight.
 
 ### Before remediation
 
+Taking these precautions before starting remediation minimizes the risk of losing work or introducing breaking changes.
+
 - Always work in a feature branch.
 - Ensure comprehensive test coverage exists.
 - Review the remediation plan from Ask mode analysis.
@@ -177,6 +207,8 @@ Agent mode is powerful but requires careful oversight.
 
 ### During remediation
 
+Following these practices during remediation helps you catch and address issues as they arise rather than discovering them later.
+
 - Make incremental changes rather than large transformations.
 - Validate each step before proceeding to the next.
 - Review generated code for correctness and security.
@@ -184,6 +216,8 @@ Agent mode is powerful but requires careful oversight.
 - Monitor for unintended side effects.
 
 ### After remediation
+
+These post-remediation steps verify that your fixes are complete, correct, and ready for deployment.
 
 - Run comprehensive tests including security tests.
 - Perform code review with team members.
@@ -208,6 +242,8 @@ Agent mode accelerates security remediation but doesn't replace the need for car
 Incorporate Agent mode changes into your Git workflow seamlessly using Visual Studio Code's built-in tools.
 
 ### Commit changes using Source Control view
+
+Visual Studio Code's integrated Source Control view streamlines the process of committing and pushing security fixes to your repository.
 
 Visual Studio Code's Source Control view provides an integrated way to review and commit your security fixes:
 

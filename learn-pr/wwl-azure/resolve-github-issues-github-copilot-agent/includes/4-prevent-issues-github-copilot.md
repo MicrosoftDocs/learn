@@ -59,7 +59,9 @@ Using GitHub Copilot can help you implement secure patterns from the outset, red
 
 ### Continuous validation during development
 
-GitHub Copilot can act as a real-time security advisor while you code. You can ask GitHub Copilot questions to validate your approach as you write code. For example, here are some potential security validation prompts:
+GitHub Copilot can act as a real-time security advisor while you code. You can ask GitHub Copilot questions to validate your approach as you write code.
+
+Here are some example prompts that can be used for security validation:
 
 - "Is there a potential security flaw in the selected authentication approach?"
 - "What input validation should I add to the selected file upload function?"
@@ -73,6 +75,8 @@ This real-time validation acts like having a security-conscious code reviewer av
 GitHub Copilot complements other security tools and practices in your development workflow.
 
 ### Static analysis and linters
+
+Automated code analysis tools work alongside GitHub Copilot to provide comprehensive security coverage throughout the development process.
 
 Combine Copilot with automated code analysis tools:
 
@@ -94,6 +98,8 @@ This layered approach catches issues at multiple points, with Copilot helping pr
 
 ### Coding standards and team practices
 
+Consistent security standards across your development team ensure that everyone implements security measures uniformly and effectively.
+
 Establish and enforce secure coding standards:
 
 - Define team guidelines for common security practices.
@@ -111,6 +117,8 @@ Apply these practices consistently to reduce security vulnerabilities.
 
 ### Input validation and sanitization
 
+Validating all user input before processing is one of the most fundamental security practices for preventing injection attacks and other vulnerabilities.
+
 Every entry point for user data should include validation. Use length limits, format validation, whitelist approaches, type checking, and range validation to prevent buffer overflows, DoS attacks, and malicious input.
 
 You can prompt GitHub Copilot to generate validation code. For example, to validate an email address:
@@ -123,15 +131,21 @@ GitHub Copilot might suggest code that checks for null/empty values, verifies le
 
 ### Principle of least privilege
 
+Limiting permissions to only what's necessary reduces the potential damage if a security breach occurs.
+
 Apply minimal necessary permissions throughout your application for database connections, file system access, API access, and user permissions. While GitHub Copilot can't configure infrastructure, it can help you implement proper permission checks in code.
 
 ### Secure library usage
+
+Using well-established security libraries reduces the risk of implementation errors in critical security functionality.
 
 Use well-tested, maintained libraries rather than implementing security-critical functionality yourself. Prefer established libraries like Entity Framework for database queries, ASP.NET Identity for authentication, BCrypt.Net for password hashing, and Azure Key Vault SDK for secrets management.
 
 Prompt GitHub Copilot to use approved libraries. For example: "Implement password hashing using BCrypt.Net library"
 
 ### Testing security requirements
+
+Security tests validate that your protective measures work as intended and catch vulnerabilities before deployment.
 
 Integrate security testing into your development process. Test input validation edge cases, authentication and authorization scenarios, encryption operations, error handling with sensitive data, and permission boundaries.
 
@@ -148,6 +162,8 @@ You can also use GitHub Copilot Chat during manual reviews by asking questions l
 Building security in from the start is faster than retrofitting. Writing secure code initially adds 5-10% development time, while fixing security issues later adds 30-50%, and responding to security incidents can add 200-500% or more. GitHub Copilot accelerates secure development by suggesting appropriate patterns quickly.
 
 ## Developing a security-first mindset
+
+Cultivating a security-first mindset is essential for all developers. This involves prioritizing security considerations throughout the development process, from design to deployment.
 
 Prevent security issues by consistently applying these principles:
 

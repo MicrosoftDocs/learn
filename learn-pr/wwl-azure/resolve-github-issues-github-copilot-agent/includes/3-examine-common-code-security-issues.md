@@ -75,6 +75,8 @@ Parameterized queries separate code from data. The database treats parameter val
 
 ### Other injection types
 
+SQL injection is just one form of injection attack, and developers must be aware of other injection vulnerabilities that can compromise application security.
+
 While SQL injection is most common, other injection vulnerabilities exist:
 
 - **Command injection**: Inserting system commands into application inputs that execute shell commands.
@@ -89,6 +91,8 @@ While SQL injection is most common, other injection vulnerabilities exist:
 Storing or transmitting sensitive data without proper encryption exposes it to unauthorized access. This category includes both inadequate encryption methods and complete lack of encryption.
 
 ### Insecure password storage
+
+Passwords require special protection because they serve as the primary authentication mechanism for most applications.
 
 Storing passwords improperly is a critical vulnerability.
 
@@ -132,6 +136,8 @@ Secure password hashing requires:
 
 ### Encryption of data at rest
 
+Beyond password security, any sensitive data stored on disk or in databases needs protection through proper encryption.
+
 Sensitive data stored without encryption is vulnerable if storage media is compromised.
 
 #### Vulnerable scenario
@@ -172,6 +178,8 @@ Improper logging and error handling can inadvertently expose sensitive informati
 
 ### Logging sensitive data
 
+While logging is essential for debugging and monitoring, it can become a security vulnerability when sensitive information is captured.
+
 Applications must never log sensitive information in plaintext.
 
 #### Dangerous logging practices
@@ -201,6 +209,8 @@ logger.LogInformation($"API call authenticated successfully");
 - Log events and outcomes, not sensitive data values
 
 ### Excessive error information disclosure
+
+Error messages serve an important debugging purpose, but they must be carefully crafted to avoid revealing system internals to potential attackers.
 
 Detailed error messages can reveal system architecture, file paths, database schemas, and other information useful to attackers.
 
@@ -282,13 +292,17 @@ Secure implementations demonstrate the following defense strategies:
 
 ## Additional security considerations
 
-While not detailed in this module's exercise, these issues warrant awareness:
+In addition to the vulnerabilities covered in the previous sections, several other security issues require developer awareness.
 
 ### Cross-site scripting (XSS)
 
-Injecting malicious scripts into web pages viewed by other users. While not applicable to console applications, web developers must validate and encode all user input before displaying it in browsers.
+Cross-site scripting allows attackers to inject malicious code into web applications, potentially compromising user data and sessions.
+
+While not applicable to console applications, web developers must validate and encode all user input before displaying it in browsers.
 
 ### Hard-coded secrets
+
+Credentials and sensitive configuration values embedded directly in source code represent a critical security risk that can expose entire systems.
 
 Embedding API keys, passwords, or tokens directly in source code exposes them to anyone with repository access. Secrets should be:
 
@@ -299,6 +313,8 @@ Embedding API keys, passwords, or tokens directly in source code exposes them to
 
 ### Resource exhaustion and denial of service
 
+Applications that don't properly manage resources can be exploited by attackers to cause service disruptions or system crashes.
+
 Poor resource management can enable denial-of-service attacks. Examples include:
 
 - Reading entire large files into memory (causing out-of-memory errors).
@@ -308,9 +324,11 @@ Poor resource management can enable denial-of-service attacks. Examples include:
 
 ## How to identify security issues in code
 
-Develop a systematic approach to spotting vulnerabilities:
+Identifying security vulnerabilities in code requires a systematic approach.
 
 ### Analyze user input handling
+
+User input represents the primary attack vector for most security vulnerabilities, making it critical to examine how your code processes external data.
 
 Every point where your code accepts user input is a potential entry point for attacks:
 
@@ -320,6 +338,8 @@ Every point where your code accepts user input is a potential entry point for at
 
 ### Review cryptographic operations
 
+Security implementations involving encryption, hashing, and authentication require extra scrutiny because weak cryptography can compromise entire systems.
+
 Cryptographic code requires special scrutiny:
 
 - **Look for**: `MD5.Create()`, `SHA1.Create()`, plaintext password storage..
@@ -327,6 +347,8 @@ Cryptographic code requires special scrutiny:
 - **Consider**: Using bcrypt, scrypt, or Argon2 for passwords; SHA-256 or better for integrity checks.
 
 ### Examine logging statements
+
+Logs can inadvertently become security vulnerabilities when they capture sensitive information that should remain protected.
 
 Scan your codebase for sensitive data in logs:
 
@@ -336,6 +358,8 @@ Scan your codebase for sensitive data in logs:
 
 ### Inspect file operations
 
+File handling code presents unique security challenges because it can expose system resources beyond your application's intended scope.
+
 File handling code needs careful validation:
 
 - **Look for**: `Path.Combine` with user input, file operations based on user-supplied paths.
@@ -343,6 +367,8 @@ File handling code needs careful validation:
 - **Consider**: Path traversal attacks and directory escape techniques.
 
 ### Leverage automated tools
+
+While manual code review is essential, automated tools can efficiently scan large codebases and identify common vulnerability patterns that might be missed during manual inspection.
 
 Combine manual code review with automated analysis:
 
