@@ -60358,6 +60358,46 @@
       "source_path": "learn-pr/paths/machine-learning-foundations-using-data-science/index.yml",
       "redirect_url": "https://learn.microsoft.com/training/paths/create-machine-learn-models/",
       "redirect_document_id": false
-    }
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-translator/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/ai-services/translator/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-translator/2-what-is-translator.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/ai-services/translator/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-translator/3-how-translator-works.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/ai-services/translator/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-translator/4-when-to-use-translator.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/ai-services/translator/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-translator/5-use-translator.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/ai-services/translator/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-translator/6-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/ai-services/translator/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-translator/7-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/ai-services/translator/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-translator/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/ai-services/translator/",
+      "redirect_document_id": false
+    },
   ]
 }
