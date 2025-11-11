@@ -10,7 +10,7 @@ String concatenation is "programmer speak" for simply combining two or more `str
 
 To concatenate two strings together, you use the *string concatenation operator*, which is the plus symbol `+`.
 
-1. Select all of the code in the .NET Editor, and press <kbd>Delete</kbd> or <kbd>Backspace</kbd> to delete it.
+1. Select all of the code you wrote previously in the [C# Code Editor](https://microsoftlearning.github.io/c-sharp-minor/), and press <kbd>Delete</kbd> or <kbd>Backspace</kbd> to delete it.
 
 1. Enter the following code in the code editor:
 

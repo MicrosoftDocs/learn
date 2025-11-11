@@ -7,7 +7,7 @@ In this exercise, you'll use the assignment scores for each student to calculate
 
 In this task, you'll create a variable for each student that will represent the sum of their assignment scores. You'll also display the student's sum along with their name in the console output. Since the assignment scores are represented as Integers, you'll create Integer variables to store the sums.
 
-1. Ensure that you have the .NET Editor open, and that you have the variables instantiated with each student's assignment scores.
+1. Ensure that you have the [C# Code Editor](https://microsoftlearning.github.io/c-sharp-minor/) open, and that you have the variables instantiated with each student's assignment scores.
 
     In the Prepare unit for this Guided project module, the Setup instructions have you copy student assignment scores into the editor. If necessary, go back and complete the Setup instructions.
 
@@ -40,7 +40,7 @@ In this task, you'll create a variable for each student that will represent the 
     > [!NOTE]
     > More advanced developer environments, such as Visual Studio Code, provide tools that enable developers to observe the values of application variables while their code is running. Learning how to use those tools saves professional developers lots of time during development. For now though, you can use `Console.WriteLine()` to help verify that your code is working as expected.
 
-1. In the .NET Editor, to run your code, select the green **Run** button.
+1. In the C# Code Editor, to run your code, select the ▶️ Run button.
 
 1. Notice that you have no problem displaying your integer values, all `0` for now, using the same `WriteLine()` method that displays the string literals (student names).
 
@@ -70,7 +70,7 @@ In this task, you'll create a variable for each student that will represent the 
 
     ```
 
-1. In the .NET Editor, select **Run**.
+1. In the C# Code Editor, select the ▶️ Run button.
 
     Your output should now show that Sophia's sum is equal to `473`. The others will still be `0`. You'll add similar sum calculations for the rest of the students.
 
@@ -127,7 +127,7 @@ In this task, you'll run the code and verify the output is correct.
     Console.WriteLine("Jeong: " + jeongSum);
     ```
 
-1. In the .NET Editor, select **Run**.
+1. In the C# Code Editor, select the ▶️ Run button.
 
 1. Review your output and verify that the sums of the assignment scores are correct:
 
