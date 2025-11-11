@@ -7,6 +7,8 @@ Suppose you've been asked to create a mockup of a command-line tool that will ge
 
 In this exercise, you'll learn different techniques to display special characters and add different types of formatting to the output.
 
+A C# code editor is available to use directly in the browser: [C# Code Editor](https://microsoftlearning.github.io/c-sharp-minor/). This editor provides a lightweight environment for writing, running, and testing C# code without needing to install any software on your local computer.
+
 ### Character escape sequences
 
 An **escape character sequence** is an instruction to the runtime to insert a special character that will affect the output of your string. In C#, the escape character sequence begins with a backslash `\` followed by the character you're escaping. For example, the `\n` sequence will add a new line, and a `\t` sequence will add a tab.
@@ -32,12 +34,13 @@ What if you need to insert a double-quotation mark in a literal string? If you d
 Console.WriteLine("Hello "World"!");
 ```
 
-The .NET Editor will put a red squiggly line under `World`. But if you attempt to run the code anyway, you would see the following output:
+The C# Code Editor will put a red squiggly line under `World`. But if you attempt to run the code anyway, you would see the following output:
 
 ```
-(1,27): error CS1003: Syntax error, ',' expected
-(1,27): error CS0103: The name 'World' does not exist in the current context
-(1,32): error CS1003: Syntax error, ',' expected
+Error summary:
+  CS1003: Syntax error, ',' expected
+  CS0103: The name 'World' does not exist in the current context
+  CS1003: Syntax error, ',' expected
 ```
 
 To handle that situation, use the `\"` escape sequence:
@@ -80,7 +83,7 @@ c:\source\repos
 
 ### Format output using character escape sequences
 
-1. Select all of the code in the .NET Editor, and press <kbd>Delete</kbd> or <kbd>Backspace</kbd> to delete it.
+1. Select all of the code in the C# Code Editor, and press <kbd>Delete</kbd> or <kbd>Backspace</kbd> to delete it.
 
 1. To create the mockup of the command line tool, enter the following code in the editor:
 

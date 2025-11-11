@@ -1,138 +1,114 @@
----
-ms.custom:
-  - build-2023
----
-Azure Synapse Analytics is a powerful cloud-based solution for Enterprise Data Warehousing (EDW), engineered to harness the computing capability of Massively Parallel Processing (MPP) by enabling rapid execution of queries on petabytes of data, making it the ideal platform for large-scale data analytics.
+[Microsoft Fabric](/fabric/get-started/microsoft-fabric-overview?azure-portal=true) is a unified analytics platform that brings together data integration, data engineering, data warehousing, data science, real-time analytics, and business intelligence. For SQL Server 2025, [mirroring in Microsoft Fabric](/fabric/database/mirrored-database/overview?azure-portal=true) provides a hybrid capability that enables near real-time replication of your on-premises or cloud SQL Server data directly into Fabric's [OneLake](/fabric/onelake/onelake-overview?azure-portal=true).
 
-With near real-time analytics capabilities available on SQL Server 2022, you can replicate data to dedicated SQL pools using Azure Synapse Link for SQL.
+Mirroring in Microsoft Fabric represents a modern approach to hybrid analytics, offering integration between your operational databases and analytical workloads without the complexity of traditional ETL processes.
 
-Azure Synapse Link for SQL works like this: the source database writes data into a landing zone, which is then pushed into the target dedicated SQL pool by an ingestion service. This service can run continuously for near-real-time data processing or in schedule mode.
+## Understand mirroring in Microsoft Fabric
 
-The technology running in the backend uses a new change feed processor that has been integrated into the Azure SQL Database and SQL Server 2022 engines to enable this functionality.
+Mirroring in Microsoft Fabric is a low-latency, low-cost replication solution that continuously replicates data from SQL Server into OneLake, Microsoft Fabric's unified data lake. The technology uses [change data capture](/sql/relational-databases/track-changes/about-change-data-capture-sql-server?azure-portal=true) (CDC) mechanisms integrated into SQL Server 2025's engine to efficiently track and replicate data changes.
 
-## Architecture overview
+Key capabilities include near real-time replication with minimal latency (typically within seconds), zero-copy integration where data is stored in OneLake's open [Delta Lake](/azure/databricks/delta/?azure-portal=true) format accessible by all Fabric workloads, and simplified management with no complex ETL pipelines or integration runtimes to configure. The solution is cost-effective with no additional infrastructure costs and automatically handles schema evolution by synchronizing schema changes.
 
-Let's review how Azure Synapse Link for SQL works:
+## Explore the architecture
 
-:::image type="content" source="../media/module-2-real-time-analytics.png" alt-text="Diagram showing how Azure Synapse Analytics Link for SQL Server works.":::
+Mirroring connects your SQL Server 2025 instance to Fabric's unified analytics platform. The Mirroring service monitors your SQL Server for changes using change feed technology integrated into the database engine. Changes are continuously captured and replicated to OneLake, where data is stored in open Delta Lake format.
 
-**1.** Azure Synapse Analytics workspace where you configure Azure Synapse Link.
+Once in OneLake, all Fabric capabilities can access the mirrored data including Power BI for reporting and dashboards, Data Engineering with Spark notebooks and pipelines, Data Warehouse through SQL analytics endpoints, Data Science and Machine Learning workloads, and Real-time Analytics using KQL.
 
-**2.** Dedicated SQL pool as the target database. A dedicated SQL pool is a group of analytical resources in Azure Synapse Analytics workspace.
+## Identify key benefits
 
-**3.** A link service for SQL Server, which is the source SQL Server instance.
+By mirroring SQL Server 2025 data into Microsoft Fabric, you gain access to an analytics ecosystem:
 
-**4.** A link service for the Landing Zone, which serves as the temporary repository for data before it's delivered to the dedicated SQL pool. 
+- **Power BI integration**: Build real-time dashboards and reports directly on mirrored data
+- **Data lakehouse capabilities**: Combine structured SQL Server data with unstructured data from other sources
+- **Advanced analytics**: Use Spark, Python, R, and SQL for data engineering and data science
+- **AI and ML integration**: Leverage [Azure OpenAI](/azure/ai-services/openai/overview?azure-portal=true) and other AI services with your operational data
 
-**5.** The linked connection signals the self-hosted runtime to synchronize data based on the selected tables. These tables are extracted from SQL Server as a snapshot in the form of Parquet files and stored in the landing zone. The ingestion service automatically retrieves these Parquet files from the landing zone and converts them into T-SQL such as `CREATE TABLE` statements. These statements are executed in the SQL dedicated pools to synchronize the data.
+### Simplify hybrid architecture
 
-**6.** The SQL Server engine monitors committed log changes, adds them to the change feed queue, and then transforms them into Parquet files. These files are temporarily stored in the landing zone before being converted into T-SQL statements and added to the SQL dedicated pools for synchronization.
+Fabric Mirroring eliminates many traditional hybrid data challenges. Replication is automatic with no pipelines to build or maintain, and there's no need for separate infrastructure like integration runtimes or [SQL Server Integration Services](/sql/integration-services/sql-server-integration-services?azure-portal=true) (SSIS) packages. Schema changes are detected and applied automatically, and you can leverage Fabric's security model with Microsoft Entra ID integration.
 
-You have the option to configure the steps above through Azure portal or PowerShell.
+The solution minimizes impact on your source SQL Server while providing cost-effective storage optimized for analytics workloads. Analytics workloads don't compete with operational database resources, and Delta Lake provides automatic data optimization and compaction.
 
-### Flexible data replication
+## Compare Mirroring with other hybrid options
 
-With Azure Synapse Link for SQL, you have the flexibility to pause the data replication from the link connection and then resume it as needed. You don't have to worry about data cleanup in the landing zone, as a background thread is responsible for removing committed files within approximately 24 hours, given that the link connection remains running. 
+Understanding when to use different SQL Server 2025 hybrid features helps you choose the right solution:
 
-When the link is stopped then the entire landing zone folder is removed automatically.
+| Feature | Primary Use Case | Latency | Best For |
+|---------|-----------------|---------|----------|
+| **Fabric Mirroring** | Real-time analytics and reporting | Seconds | Modern analytics, Power BI, data science |
+| **Managed Instance Link** | Disaster recovery and migration | Near-synchronous | Business continuity, cloud migration |
 
-## Exercise: Create Azure Synapse Link for SQL Server 2022
+> [!TIP]
+> Many organizations use multiple hybrid features together. For example, use Fabric Mirroring for analytics, Azure SQL Managed Instance Link for disaster recovery, and Azure Arc for unified management.
 
-To run this exercise, make sure you're running SQL Server 2022 with the latest [**AdventureWorks**](/sql/samples/adventureworks-install-configure) database. You will also need a SQL Server user with read access to the source database.
+## Configure mirroring
 
-1. Select your Synapse Analytics workspace or create a new one on Azure portal.
+Before setting up Fabric Mirroring, ensure you have SQL Server 2025 with the database recovery model set to Full or Bulk-logged, an active [Microsoft Fabric capacity](/fabric/enterprise/licenses?azure-portal=true) (F2 or higher recommended), and appropriate permissions including db_owner on the source database and Admin or Contributor role in the Fabric workspace. If SQL Server is on-premises or in a private network, you'll need a self-hosted integration runtime.
 
-    :::image type="content" source="../media/module-2-synapse-link-01.png" alt-text="Screenshot showing the list of Synapse workspace resource on Azure portal.":::
+To set up mirroring, navigate to the Microsoft Fabric portal and select or create a workspace with a Fabric capacity. In your workspace, select **+ New** > **Mirrored SQL Database** and choose **SQL Server** as the source type. Configure the connection with your server name, database name, authentication credentials, and gateway if needed for on-premises servers.
 
-1. On your Synapse workspace **Overview** page, select **Open Synapse Studio**.
-1. On the **Manage** page, select the **SQL pools** tab.
-1. Create a new dedicated SQL pool or select the row for a pre-existing dedicated SQL pool and use its **&#9655;** icon to start it; confirming that you want to resume it when prompted. 
+Select which tables from your database to replicate based on your analytics needs. Configure the mirroring settings including initial snapshot, continuous replication, and review estimated storage requirements. Finally, review the configuration summary and select **Create and start mirroring** to begin the process.
 
-    > [!NOTE]
-    > This dedicated SQL pool is the target where we're going to replicate SQL Server data to.
+Once mirroring is configured, you can monitor replication status through the mirroring dashboard, view replicated data through SQL analytics endpoint or Spark, pause and resume mirroring as needed for maintenance, and benefit from automatic schema synchronization with built-in diagnostics and error reporting.
 
-1. On the **Home** page, select **New**, and then **SQL script**.
+## Access mirrored data in Fabric
 
-    :::image type="content" source="../media/module-2-synapse-link-02.png" alt-text="Screenshot showing the new SQL script option on Synapse Studio.":::
+After your SQL Server 2025 data is mirrored to OneLake, you can:
 
-1. Make sure you're connected on the dedicated SQL pool created, and run the following command to create a master key for your SQL database:
+### Build Power BI reports
 
-    ```sql
-    CREATE MASTER KEY
-    ```
+```powerbi
+// Connect to the SQL analytics endpoint
+let
+    Source = Sql.Database("your-workspace.datawarehouse.fabric.microsoft.com", "DatabaseName")
+in
+    Source
+```
 
-### Create the linked services
+### Query with Spark (Python)
 
-Create the linked service responsible to communicate with your SQL Server 2022.
+```python
+# Access mirrored data using Spark
+df = spark.read.format("delta").load("Tables/YourTableName")
+df.show()
+```
 
-1. Select the **Manage** hub button, and then select **Linked services**.
-1. Select **+ New**, and then select the **SQL Server** component.
-1. In the **New linked service** page, provide the following settings:
-    - **Name**: SQLServerLS
-    - **Description**: Connection to AdventureWorksLT database
-    - **Connect via integration runtime**: 
-        - Select to create a new Self-Hosted integration runtime, and choose **Option 1** to launch and install it on the same server where SQL Server is installed. Skip the installation step if the integration runtime is already installed.
-    - **Server name**: *Select your SQL Server instance name*
-    - **Database name**: AdventureWorksLT
-    - **Authentication type**: SQL authentication
-    - **User name**: *SQL User with read permission*
-    - **Password**: *The password for the SQL account you selected*
+### Use SQL analytics endpoint
 
-    Use the **Test Connection** option to ensure your connection settings are correct before continuing!
+```sql
+-- Query mirrored data using T-SQL
+SELECT 
+    CustomerID,
+    OrderDate,
+    TotalAmount
+FROM MirroredDatabase.Sales.Orders
+WHERE OrderDate >= DATEADD(day, -7, GETDATE())
+```
 
-1. Select **Create**.
+Or use Spark to join SQL Server data with other sources:
 
-1. For the landing zone, you can either use a pre-existing **ADLS Gen2** storage accounts or create a new one. Make sure that you've granted your Azure Synapse workspace managed identity permissions to the Azure Data Lake Storage Gen2 storage account that's used as the landing zone. For more information, see [Grant permissions to a managed identity in an Azure Synapse workspace - Azure Synapse Analytics](/azure/synapse-analytics/security/how-to-grant-workspace-managed-identity-permissions#grant-the-managed-identity-permissions-to-adls-gen2-storage-account).
+```python
+# Join SQL Server data with other lakehouse data
+sql_data = spark.read.format("delta").load("Tables/Customers")
+other_data = spark.read.format("parquet").load("Files/ExternalData")
 
-Next, create the linked service responsible to communicate with your landing zone on Azure Data Lake Storage Gen2.
+joined_data = sql_data.join(other_data, "CustomerID")
+```
 
-1. Select the **Manage** hub button, and then select **Linked services**.
-1. Select **+ New**, and then select the **Azure Data Lake Storage Gen2** component.
-1. Add the new linked service with the following settings:
-    - **Name**: *Provide the name of your preference*
-    - **Authentication type**: System Assigned Managed Identity
-    - **Storage account name**: *Select the storage account you have granted access previously*
-   
-    Use the **Test Connection** option to ensure your connection settings are correct before continuing!
+## Apply best practices
 
+Start small by beginning with critical tables and expand based on success. Consider data volume when planning, as large initial snapshots may take time. Ensure adequate network bandwidth for initial load and ongoing changes, and mirror only tables needed for analytics to optimize storage and performance.
 
-### Create the Azure Synapse Link connection
+For performance optimization, use [partitioning strategies](/sql/relational-databases/partitions/partitioned-tables-and-indexes?azure-portal=true) in SQL Server for better replication performance and ensure proper indexing to improve change tracking efficiency. Monitor replication lag and set up alerts for delays, and schedule intensive operations during off-peak hours.
 
-1. In Synapse Studio, on the **Integrate** page, on the **&#65291;** drop-down menu, select **Link connection**. Then create a new linked connection with the following settings:
-    - **Source type**: SQL Server
-    - **Source linked service**: *The first linked service created responsible to connect to your SQL Server.*
-    - **Source tables**: Select the following tables:
-        - **Sales.SalesPerson**
-        - **Person.EmailAddress**
+Security is critical in hybrid scenarios. Use Microsoft Entra ID for centralized identity management, implement [row-level security](/fabric/data-warehouse/row-level-security?azure-portal=true) policies in Fabric to control data access, ensure TLS/SSL for data transmission, and monitor who accesses mirrored data using Fabric's audit logs. Remember that Fabric Mirroring is one-way replication, so have a plan for source recovery, and document which reports and analytics depend on mirrored data.
 
-        :::image type="content" source="../media/module-2-synapse-link-04.png" alt-text="Screenshot showing the New link connection page.":::
+## Explore common use cases
 
-    > [!NOTE]
-    > Some target tables display an error due to the use of custom data types or because data in the source table is not compatible with the default structure type of *clustered columnstore index*.
+Organizations use Fabric Mirroring to create real-time operational dashboards showing business metrics for sales performance tracking, inventory monitoring, customer service metrics, and manufacturing operations without impacting production databases.
 
-1. Select **Continue**.
-1. In the **Target pool settings**, select the dedicated SQL pool created, and then select **Continue**. 
+The hybrid data lakehouse pattern combines operational SQL Server data with other data sources, merging transactional data with IoT sensor data, integrating on-premises data with cloud-based systems, and creating a unified view across multiple SQL Server instances.
 
-    :::image type="content" source="../media/module-2-synapse-link-05.png" alt-text="Screenshot showing the target pool settings configuration.":::    
+Data scientists leverage Fabric Mirroring for advanced analytics and machine learning, building customer churn prediction models using real-time transaction data, predictive maintenance with current equipment telemetry, fraud detection on near real-time transaction streams, and recommendation engines with up-to-date user behavior.
 
-1. In the **Connection settings**, configure the link connection as follows:
-
-    :::image type="content" source="../media/module-2-synapse-link-06.png" alt-text="Screenshot showing the connection settings configuration.":::
-
-    > [!NOTE]
-    > You can generate a Landing Zone SAS token, selecting **+ Generate token**.
-
-1. With the new Azure Synapse Link connection open, you can update the target table name, distribution type, and structure type.
-
-1. Select **Publish all** to save the new link connection to the service. 
-
-1. Select **Start** to initiate the link connection. This process may take a few minutes to complete.
- 
-    :::image type="content" source="../media/module-2-synapse-link-07.png" alt-text="Screenshot showing the start process of the link connection.":::
-
-    > [!NOTE]
-    > In case of the error *'Some unknown error happened: FileSystem not found.'*, ensure that there's a container in the storage account you designated as the landing zone, with the same name on the **landing zone folder path** when registering the linked service for your landing zone.
-    >
-    > In case of the error *'The database master key is missing.'*, run `DROP MASTER KEY` and `CREATE MASTER KEY` to recreate the master key in the SQL pool, and select **Start** to initiate the link connection again.
-
-After the replication has started, you can navigate to the **Tables** node on the **Data** hub for the dedicated SQL pool and expand it to check the new replicated tables. You can also insert dummy data into **Sales.SalesPerson** or **Person.EmailAddress** at the source, and execute a `SELECT` statement at the destination to confirm if the data has been replicated.
+Organizations also use mirroring as part of cloud migration strategy to test analytics workloads in the cloud while keeping production on-premises, validate performance and costs before full migration, train teams on Fabric capabilities with production-like data, and enable phased migration with continuous validation.
