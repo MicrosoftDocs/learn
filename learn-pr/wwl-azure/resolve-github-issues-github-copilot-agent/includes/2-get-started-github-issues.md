@@ -1,52 +1,200 @@
-Unit 2: Get started with GitHub issues
+*GitHub Issues* is the built-in tracking system for tasks, bugs, and feature requests in GitHub repositories. Before you can effectively resolve issues using GitHub Copilot, you need to understand how to work with GitHub Issues effectively.
 
-Purpose: Make sure learners fully grasp how to use GitHub Issues effectively. Before fixing issues, they need to know how to read and manage them. Even those familiar with GitHub might pick up pro-tips on issue tracking.
+## What are GitHub issues?
 
-## What are GitHub Issues?
+GitHub Issues provides a collaborative workspace where teams track work items, document problems, and plan improvements. Each issue functions as a ticket in a tracking system – it can be assigned to team members, categorized with labels, linked to code changes, and enriched with discussions and documentation.
 
-Define them as the built-in way to track tasks, bugs, and feature requests on GitHub. Explain that each issue is like a ticket in a tracking system – it can be assigned, labeled, linked to code, etc. Use an analogy from experience: “Think of GitHub Issues as a team’s shared to-do list, but much smarter: each item can hold discussions, code references, and metadata to ensure the work gets done and doesn’t fall through the cracks.”
+Think of GitHub Issues as a team's intelligent to-do list. Each item holds discussions, code references, and metadata to ensure work doesn't fall through the cracks. For security-focused work, GitHub Issues provides visibility and traceability that helps teams respond to vulnerabilities systematically.
 
-## Core Components of an Issue
+## Core components of an issue
 
-GitHub issues contain the following core elements:
+Understanding the structure of GitHub Issues helps you read, manage, and resolve them effectively.
 
-- Title: should be a concise summary (e.g., “SQL injection in product search endpoint”).
+### Title
 
-- Description: where the detail lives. Emphasize writing good descriptions: what’s happening, steps to reproduce (if a bug), why it’s important. A lead dev might say, “A well-written issue is half-fixed. It guides the developer straight to the problem.” If possible, show a brief example of a good issue description vs a poor one (perhaps via a quick before/after or just description).
+The title should be a concise, descriptive summary of the issue. Good titles help team members quickly understand the problem at a glance.
 
-- Comments: team discussion happens here. People can clarify the issue, propose solutions, or mention related information.
+Examples of effective issue titles:
 
-- Assignees: who is responsible. Maybe mention in our scenario, these issues are assigned to “you” (the learner) as the developer to fix. As a tip: “Always have one owner for an issue so it doesn’t languish. If you’re the assignee, it’s on you to drive it to resolution.”
+- "SQL injection vulnerability in product search endpoint"
+- "Weak encryption in user password storage"
+- "Path traversal risk in file upload functionality"
 
-- Labels: how issues are categorized (bug, enhancement, security, etc.). In our case, issues have a “security” label likely. Explain that experienced teams tag issues for filtering and prioritization. For example, a “P1” label might mean fix ASAP.
+A well-written title immediately communicates both the type of problem (security vulnerability) and its location (product search endpoint).
 
-- Milestones: batches of issues tied to a goal (like a version release). Not critical for the lab, but mention for completeness that issues can be grouped.
+### Description
 
-## Issue Workflow in Practice
+The description is where the detail lives. A comprehensive issue description should include:
 
-Outline the lifecycle of an issue:
+- **What's happening**: A clear explanation of the problem or requirement
+- **Steps to reproduce**: For bugs, specific actions that trigger the issue
+- **Expected behavior**: What should happen instead
+- **Why it matters**: The impact or importance of addressing this issue
+- **Acceptance criteria**: How to verify when the issue is resolved
 
-1. Creation – often by a developer, tester, or user who notices something. 
+Here's an example of a well-structured security issue description:
 
-    An expert tip: When you create an issue, include context and ideally how to know when it’s resolved. This sets the acceptance criteria.
+``` markdown
+The login authentication function stores user passwords in plaintext in the database.
 
-1. Triage – the team lead or triage person prioritizes it, labels it, maybe assigns it. High-severity ones (like security issues) get flagged to address immediately.
+**Current behavior:**
+Passwords are stored directly as strings without hashing or encryption.
 
-1. Discussion – sometimes the implementer asks questions or records investigation findings in comments.
+**Security impact:**
+If the database is compromised, all user passwords are immediately exposed.
 
-1. Code Fix – a branch is created, code changes made. In GitHub, typically a Pull Request (PR) is opened referencing the issue.
+**Expected behavior:**
+Passwords should be hashed using a secure algorithm (like bcrypt) with appropriate salt before storage.
 
-1. Linking to Commits/PRs – demonstrate that writing “Fixes #123” in a PR or commit ties it to the issue. This is a pro move: it automates closing and creates traceability. Anecdote: “In my early years, I’d fix something but forget to close the issue – and then scramble when someone asked if it was done. Linking commits saves that trouble and documents the fix.”
+**Acceptance criteria:**
+- Implement bcrypt password hashing
+- Verify no plaintext passwords exist in storage
+- Update authentication to validate against hashed passwords
+```
 
-1. Closing – when the PR is merged, the issue is closed. Possibly mention that if testing reveals it’s not actually fixed, the issue can be reopened.
+A well-written issue is half-fixed. It guides the developer straight to the problem without ambiguity.
 
-## Using GitHub Issues in VS Code
+### Comments
 
-Many don’t know you can view and even create issues from VS Code (with the GitHub Pull Requests & Issues extension). Briefly mention it: “VS Code can integrate with GitHub Issues – you can see assigned issues and even create them without leaving your editor. This can streamline your workflow.” The lab doesn’t necessarily require using VS Code’s issue integration, but it’s worth noting as a productivity tip.
+The comments section enables team discussion. Team members can:
 
-Why It Matters (Expert Perspective): Explain that clear issue tracking prevents things from slipping through cracks, especially in security. A lead dev might say, “I’ve seen teams ignore a minor-looking security issue in the backlog, only to regret it later when it became an incident. Treat security issues with urgency – if it’s in GitHub Issues, it’s visible and traceable. Use that visibility to your advantage.” Encourage learners to embrace issue-driven development: fix the issue, close it, move on – it’s satisfying and ensures completeness.
+- Ask clarifying questions
+- Propose potential solutions
+- Share investigation findings
+- Reference related code or issues
+- Document decisions made during resolution
 
-Transition to Copilot: Conclude this unit by bridging to the next: “Now that you know how to navigate issues, it’s time to actually solve them. That’s where GitHub Copilot comes in. Think of Copilot as a colleague who’s read millions of codebases and StackOverflow answers, ready to help you implement solutions. But like any colleague, you have to ask the right questions and review their work. Let’s see what common issues we’re up against and how Copilot will assist.”
+Comments create a knowledge trail that helps current and future developers understand both the problem and the reasoning behind the solution.
 
-By the end of Unit 2, learners should feel comfortable with GitHub Issues and understand their role in the development workflow. This foundational knowledge means when they see the issues in the lab, they’ll know how to read them and use them as a guide for their work.
+### Assignees
 
+The assignee is the person responsible for resolving the issue. Having a clear owner ensures accountability and prevents issues from languishing in the backlog.
+
+Best practice: Always assign one primary owner for an issue. If you're the assignee, you're responsible for driving it to resolution. This doesn't mean you work alone – you can collaborate with others – but you own the outcome.
+
+### Labels
+
+Labels categorize and prioritize issues. Common labels include:
+
+- **Type labels**: 'bug', 'enhancement', 'documentation', 'security'
+- **Priority labels**: 'P0-critical', 'P1-high', 'P2-medium', 'P3-low'
+- **Status labels**: 'in-progress', 'blocked', 'needs-review'
+- **Component labels**: 'backend', 'frontend', 'api', 'database'
+
+Labels can be used to filter and sort issues in lists, making it easier to focus on high-priority or security-related work.
+
+For security issues, labels help teams quickly filter and prioritize vulnerabilities that need immediate attention. A **security** label combined with **P0-critical** signals that the issue requires urgent action.
+
+### Milestones
+
+Milestones group related issues toward a common goal, typically a version release or project phase. While not critical for individual issue resolution, milestones help teams coordinate work and track progress toward larger objectives.
+
+## Examine the lifecycle of an issue
+
+Issues move through several stages from creation to resolution. Understanding this lifecycle helps you manage issues effectively.
+
+### Stage 1: Creation
+
+Issues are typically created by developers, testers, or users who identify problems or opportunities for improvement. Security issues might be discovered through:
+
+- Code reviews.
+- Automated security scans.
+- Penetration testing.
+- User reports.
+- Security audits.
+
+When creating an issue, include sufficient context and acceptance criteria. This sets clear expectations for when the issue is considered resolved.
+
+### Stage 2: Triage
+
+During triage, a team lead or designated person:
+
+- Reviews new issues.
+- Assigns priority levels.
+- Adds appropriate labels.
+- Assigns the issue to a developer.
+- Links related issues or documentation.
+
+High-severity issues, particularly security vulnerabilities, are flagged for immediate attention. Security issues should never sit in a backlog without assessment.
+
+### Stage 3: Investigation and discussion
+
+The assigned developer investigates the issue and may:
+
+- Ask clarifying questions in comments.
+- Document findings from code analysis.
+- Propose potential solutions.
+- Request additional information.
+- Identify related code areas affected.
+
+This discussion phase ensures that everyone understands the problem before implementing a fix.
+
+### Stage 4: Implementation
+
+The developer creates a feature branch and implements the fix. This typically involves:
+
+- Writing or modifying code.
+- Adding or updating tests.
+- Verifying the fix locally.
+- Preparing a pull request (PR).
+
+### Stage 5: Linking commits and pull requests
+
+GitHub automatically connects issues to code changes when you reference them in commit messages or PR descriptions using keywords:
+
+- `Fixes #123`
+- `Closes #123`
+- `Resolves #123`
+
+Example commit message:
+
+``` plaintext
+Fix SQL injection vulnerability in search function
+
+Implement parameterized queries to prevent SQL injection attacks.
+Add input validation for search parameters.
+
+Fixes #42
+```
+
+Using keywords to reference issues creates traceability between the problem and its solution. When the PR is merged, GitHub automatically closes the referenced issue. This automation ensures issues don't remain open after they're fixed and creates a permanent link between the problem description and the code changes that resolved it.
+
+### Stage 6: Closure and verification
+
+When the PR is merged, the issue closes automatically (if properly referenced). If testing reveals the issue isn't fully resolved, it can be reopened for additional work.
+
+Best practice: After closing, verify that the acceptance criteria in the original issue description are met. For security issues, consider additional verification through security testing.
+
+## Manage GitHub issues in Visual Studio Code
+
+Visual Studio Code integrates directly with GitHub Issues through the GitHub Pull Requests extension. This integration allows you to:
+
+- View assigned issues without leaving the editor
+- Create new issues from within VS Code
+- Link code changes to issues as you work
+- Review issue details alongside your code
+
+To access GitHub Issues in VS Code:
+
+1. Install the "GitHub Pull Requests and Issues" extension
+1. Sign in to your GitHub account
+1. View issues in the GitHub panel
+1. Filter by assignee, labels, or milestones
+
+This tight integration streamlines your workflow by keeping issue context visible while you code.
+
+## Why effective issue management matters
+
+Clear issue tracking prevents critical problems from slipping through the cracks, especially in security. Consider these real-world scenarios:
+
+- **Minor issues become major incidents**: A "minor-looking" security issue in the backlog can become a serious incident if attackers discover it first. Security issues in GitHub Issues are visible and traceable – use that visibility as an accountability tool.
+
+- **Lost institutional knowledge**: When issues are poorly documented or discussions happen outside the tracking system, valuable context disappears. Future developers (including you in six months) won't understand why certain decisions were made.
+
+- **Delayed responses**: Without clear priority labels and assignees, critical security vulnerabilities might not receive timely attention.
+
+Embrace issue-driven development: Identify the issue, fix it, verify the fix, close the issue, and move on. This systematic approach ensures completeness and builds confidence in your codebase.
+
+## Summary
+
+GitHub Issues provides the foundation for systematic problem-solving in software development. Understanding how to read, interpret, and manage issues effectively is essential before you can resolve them efficiently.

@@ -1,62 +1,368 @@
-Unit 3: Examine common code security issues
+Understanding common security vulnerabilities is essential to identifying and resolving code security issues effectively. This unit covers prevalent security issues in code, their impact, and why addressing them promptly is critical for application security.
 
-Purpose: Provide background on prevalent security vulnerabilities in code, so learners can recognize and understand the significance of the issues they’ll fix. This unit covers the “what and why” of common bugs, complementing the practical fixes they’ll do later.
+## Why focus on security issues?
 
-## Why Focus on Security Issues?
+Security vulnerabilities represent one of the most critical categories of software defects. A single vulnerability can result in:
 
-Start with a reality check: the majority of serious bug fix efforts in many software teams revolve around security these days – because a single vulnerability can cost millions (breach, reputation loss, etc.). An expert might share: “In my 20 years, I’ve learned that functional bugs embarrass you; security bugs can ruin you.” Emphasize that even if one isn’t a security engineer, every developer must be security-conscious.
+- **Data breaches**: Exposure of sensitive customer or business data
+- **Financial losses**: Direct costs from breaches, regulatory fines, and remediation expenses
+- **Reputation damage**: Loss of customer trust and business credibility
+- **Operational disruption**: System compromises can halt business operations
 
-## OWASP Top 10 (brief intro)
+Functional bugs may be embarrassing to a developer, but security bugs can have severe consequences for an organization and users. Every developer must be security-conscious, regardless of their role or specialization.
 
-Mention that there is an industry-agreed list of top web app risks – the OWASP Top 10[1]. You don’t need to delve deep, but highlight that many issues we discuss fall under those categories. For instance, injection flaws are usually ranked very high (in 2017 OWASP, Injection was #1; in 2021, it’s still in the top 3). This validates that what we cover isn’t hypothetical – it’s literally top-priority stuff in the industry.
+## Open Web Application Security Project (OWASP)
 
-## Vulnerability 1 – Injection (SQL & more)
+The Open Web Application Security Project (OWASP) is a nonprofit organization focused on improving software security. OWASP maintains the widely recognized "OWASP Top 10" - a regularly updated list of the most critical web application security risks based on data from security organizations worldwide.
 
-Explain SQL Injection clearly. Perhaps show a tiny code snippet of bad practice vs good (like sql = "WHERE name = '" + userInput + "'" vs using a parameter). Use the example from ShopEasy: an attacker’s input ' OR '1'='1 turning a query into something else[1]. Also mention other types of injection (NoSQL injection, command injection, etc.) to broaden perspective: “Any time you insert untrusted input into a command or query that gets interpreted, you risk injection. The solution pattern is always similar: sanitize or parameterize to separate code from data[1].” Copilot can help by suggesting parameterized queries, which we’ll see. Signpost: “In the lab, you’ll actually implement a fix for SQL injection with Copilot’s help.”
+The OWASP Top 10 serves as a security baseline for developers and organizations, helping prioritize which vulnerabilities to address first. The rankings shift over time as attack patterns evolve. For example:
 
-## Vulnerability 2 – Weak/No Encryption of Sensitive Data
+- **2017 OWASP Top 10**: Injection flaws held the #1 spot
+- **2021 OWASP Top 10**: Injection moved to #3 as new threats like broken access control emerged
 
-Cover things like storing passwords in plaintext (or unsalted hashes) and transmitting or saving data without encryption. Our lab covers password hashing and file encryption:
+The OWASP Top 10 reflects real-world attack data, not theoretical concerns. Code vulnerabilities like SQL injection and weak encryption consistently rank among the industry's most critical security concerns.
 
-o	Password Storage: Explain why plaintext is bad (if DB is compromised, all passwords are immediately lost). Even hashing with MD5 or SHA1 is insufficient now – GPUs can brute force them quickly. Introduce the concept of salt and slow hashing (bcrypt, PBKDF2) without too much crypto theory, just: “Salt prevents use of precomputed hash tables, and a slow algorithm means an attacker can only test hundreds, not billions, of guesses per second.” Mention real breaches: “LinkedIn 2012 breach happened with unsalted SHA1; attackers cracked millions of passwords. Companies learned from that – you should never be using fast hashes for passwords.”
+## Injection attacks
 
-o	Data at Rest/Transit: If data contains PII or sensitive info, not encrypting it can lead to exposure. Give an example: “Imagine a laptop with customer data files gets stolen. If those files are plaintext, it’s all out in the open. Encrypting them would at least offer protection.” Similarly, mention encryption in transit (TLS) but focus on at rest for our context. In the lab, we encrypt an output file; in real life, one might also use database encryption, etc.
+Injection attacks occur when untrusted data is sent to an interpreter as part of a command or query. The attacker's hostile data tricks the interpreter into executing unintended commands or accessing unauthorized data.
 
-## Vulnerability 3 – Logging and Error Handling Issues
+### SQL injection
 
-Logging sensitive data is a subset of data exposure. Share the Twitter example we alluded to: “In 2018, Twitter discovered it had been logging user passwords in plaintext internally – they had to notify hundreds of millions of users to change passwords. It was a costly reminder that even logs must be treated carefully.” So our motto becomes: Never log secrets or personal data in plain form. Also, error handling can leak info: an exception printout might reveal file paths, server config, etc. That’s why we often sanitize error messages in production. An expert might say, “Clients/users should see friendly, minimal errors. Detailed errors go to secure logs for developers. And even those logs shouldn’t have private data.”
+SQL injection is one of the most dangerous and common injection attacks. It occurs when an application incorporates untrusted input directly into SQL queries without proper validation or parameterization.
 
-## Vulnerability 4 – File Handling Flaws (Path Traversal)
+Consider the following code example:
 
-Explain path traversal in more detail. “Path traversal is when an attacker tricks the system into treating a portion of input as filesystem navigation. Those ../ sequences (or on Windows, maybe C:\) can break out of the intended folder sandbox. If I have a file upload feature and I don’t validate filenames, someone could potentially upload a file to ../web.config and overwrite configuration, or download ../../etc/passwd on a Linux server.” Mention that this is commonly missed by devs who assume “no one would think to do that” – but attackers do. The fix is to sanitize and constrain paths (whitelist allowed directories, strip dangerous substrings, etc.). 
+```csharp
+// DANGEROUS: Concatenating user input directly into SQL
+string query = "SELECT * FROM Users WHERE Username = '" + userInput + "' AND Password = '" + passwordInput + "'";
+SqlCommand command = new SqlCommand(query, connection);
+SqlDataReader reader = command.ExecuteReader();
+```
 
-## Other Notable Issues
+An attacker could enter `' OR '1'='1` as the username input, transforming the query into:
 
-Quickly list a couple of other issues (even if not in lab) just to round out their awareness:
+```sql
+SELECT * FROM Users WHERE Username = '' OR '1'='1' AND Password = ''
+```
 
-o	Cross-Site Scripting (XSS): injecting scripts into web pages (not relevant to our console apps, but web devs must know it).
+Since `'1'='1'` is always true, this query returns all users, bypassing authentication entirely.
 
-o	Hard-coded Secrets: while we removed it from the lab to avoid secret scanning, explain it conceptually: “If you put API keys or passwords in code, anyone with repo access (or a leaked repo) has them. Plus, you can’t rotate them easily. Always externalize secrets to config or vaults.” The learner will cover secret scanning in another module, but a quick mention ties it together.
+#### Real-world impact
 
-o	Memory/Resource Leaks or DoS: e.g., reading a huge file into memory (like our tool did) could crash the app – not a security breach, but an availability issue. Many small things can become big if not handled (like not limiting the number of items a user can request – leading to an intended denial of service).
+SQL injection attacks have caused numerous high-profile breaches. Attackers can:
 
-## How to Spot These Issues
+- Bypass authentication mechanisms
+- Extract entire databases containing sensitive information
+- Modify or delete data
+- Execute administrative operations on the database
 
-Provide some heuristics or patterns:
+#### Secure implementation
 
-o	Look for user input usage – every place you handle input is a checkpoint: “Am I trusting this too much?” If you see input fed into system commands, queries, or critical logic, think injection.
+The secure way to handle SQL queries is to use parameterized queries (also called prepared statements).
 
-o	Look for crypto usage – if you see MD5.Create() or SHA1, that’s a smell. Modern code should be using stronger libs (e.g., SHA256 with salt for integrity, or specialized password hashing). Copilot can actually help flag these; when you asked it why MD5 was an issue, it knew.
+For example:
 
-o	Look at logging and printing – scan for things like .WriteLine(password) or sensitive fields. Often it’s as easy as grepping for certain keywords like “password”, “secret”, “card” in the code.
+```csharp
+// SECURE: Using parameterized queries
+string query = "SELECT * FROM Users WHERE Username = @username AND Password = @password";
+SqlCommand command = new SqlCommand(query, connection);
+command.Parameters.AddWithValue("@username", userInput);
+command.Parameters.AddWithValue("@password", passwordInput);
+SqlDataReader reader = command.ExecuteReader();
+```
 
-o	For file paths – if code opens a file based on input, check if it sanitizes it. Also note functions like Path.Combine vs manual string concat (the latter can be error-prone).
+Parameterized queries separate code from data. The database treats parameter values as data only, never as executable SQL code, preventing injection attacks.
 
-o	Ask tools for help: This is where Copilot and other static analyzers come in. Copilot’s code analysis in Ask mode can identify issues (you experienced that in the lab scenario, asking it about the code). GitHub’s CodeQL or other linters can also flag obvious mistakes. A senior dev would combine personal code reviews with automated checks for best coverage.
+### Other injection types
 
-## Shift Left on Security
+While SQL injection is most common, other injection vulnerabilities exist:
 
-Catching these issues early (during coding or code review) is far better than after deployment. The fact that we’re doing a module on fixing them means something slipped by – ideally, we want to integrate practices to avoid that. Foreshadow that in the next unit (preventing issues) we’ll address this proactive stance.
+- **Command injection**: Inserting system commands into application inputs that execute shell commands.
+- **LDAP injection**: Manipulating LDAP queries to access unauthorized directory information.
+- **NoSQL injection**: Exploiting NoSQL databases through malicious queries.
+- **XML injection**: Inserting malicious XML content to access or modify data.
 
-By the end of Unit 3, the learner should feel more confident in identifying potential security issues and understand why they are critical to fix. In essence, we’ve primed them with the “eyes of an expert” – so when they see such patterns in any code (not just this lab), alarm bells will ring. This theoretical knowledge also reinforces the importance of what they’ll do in the lab: it’s not just to make the error message go away, it’s to protect the application from real threats.
+**The universal pattern**: Any time you insert untrusted input into a command or query that gets interpreted, you risk injection. The solution pattern is always similar: sanitize, validate, or parameterize to separate code from data.
 
+## Weak encryption of sensitive data
+
+Storing or transmitting sensitive data without proper encryption exposes it to unauthorized access. This category includes both inadequate encryption methods and complete lack of encryption.
+
+### Insecure password storage
+
+Storing passwords improperly is a critical vulnerability.
+
+#### Plaintext storage (never acceptable)
+
+```csharp
+// DANGEROUS: Storing passwords in plaintext
+string password = userInput;
+database.SavePassword(username, password);
+```
+
+If the database is compromised, all user passwords are immediately exposed.
+
+#### Weak hashing (insufficient)
+
+```csharp
+// INSUFFICIENT: Using MD5 or SHA1 without salt
+using (MD5 md5 = MD5.Create())
+{
+    byte[] hash = md5.ComputeHash(Encoding.UTF8.GetBytes(password));
+    string hashedPassword = Convert.ToBase64String(hash);
+}
+```
+
+MD5 and SHA1 are cryptographically broken. Modern GPUs can test billions of password combinations per second against these fast hashes. Additionally, without salt, attackers can use precomputed rainbow tables to crack passwords instantly.
+
+#### Secure hashing (recommended)
+
+```csharp
+// SECURE: Using bcrypt with automatic salt generation
+string hashedPassword = BCrypt.Net.BCrypt.HashPassword(password);
+
+// Later, for verification:
+bool isValid = BCrypt.Net.BCrypt.Verify(userInput, storedHash);
+```
+
+Secure password hashing requires:
+
+- **Salt**: Random data added to passwords before hashing, preventing rainbow table attacks
+- **Slow algorithm**: Functions like bcrypt, scrypt, or Argon2 are computationally expensive, limiting brute-force attempts to hundreds or thousands per second instead of billions
+
+### Encryption of data at rest
+
+Sensitive data stored without encryption is vulnerable if storage media is compromised.
+
+#### Vulnerable scenario
+
+```csharp
+// VULNERABLE: Writing sensitive data in plaintext
+File.WriteAllText("customer_data.txt", sensitiveInformation);
+```
+
+If a laptop containing this file is stolen, or if an attacker gains file system access, the data is immediately readable.
+
+#### Secure approach
+
+```csharp
+// SECURE: Encrypting data before storage
+using (Aes aes = Aes.Create())
+{
+    aes.Key = GetEncryptionKey(); // Securely managed key
+    aes.GenerateIV();
+    
+    using (FileStream fileStream = new FileStream("customer_data.enc", FileMode.Create))
+    {
+        fileStream.Write(aes.IV, 0, aes.IV.Length);
+        using (CryptoStream cryptoStream = new CryptoStream(fileStream, aes.CreateEncryptor(), CryptoStreamMode.Write))
+        using (StreamWriter writer = new StreamWriter(cryptoStream))
+        {
+            writer.Write(sensitiveInformation);
+        }
+    }
+}
+```
+
+Proper encryption provides a defense layer even if storage is compromised, assuming encryption keys are properly managed separately.
+
+## Logging and error handling issues
+
+Improper logging and error handling can inadvertently expose sensitive information or system details that aid attackers.
+
+### Logging sensitive data
+
+Applications must never log sensitive information in plaintext.
+
+#### Dangerous logging practices
+
+```csharp
+// DANGEROUS: Logging sensitive information
+logger.LogInformation($"User {username} logged in with password: {password}");
+logger.LogInformation($"Credit card processed: {cardNumber}");
+logger.LogInformation($"API Key: {apiKey}");
+```
+
+This exposes sensitive data in logs, which may be accessible to unauthorized users or leaked through log management systems.
+
+#### Secure logging practices
+
+```csharp
+// SECURE: Logging without sensitive data
+logger.LogInformation($"User {username} logged in successfully");
+logger.LogInformation($"Payment processed for order {orderId}");
+logger.LogInformation($"API call authenticated successfully");
+```
+
+#### Best practices
+
+- Never log passwords, authentication tokens, or API keys
+- Mask or redact sensitive information like credit card numbers or Social Security numbers
+- Log events and outcomes, not sensitive data values
+
+### Excessive error information disclosure
+
+Detailed error messages can reveal system architecture, file paths, database schemas, and other information useful to attackers.
+
+#### Problematic error handling
+
+```csharp
+// PROBLEMATIC: Exposing detailed error information to users
+catch (Exception ex)
+{
+    return $"Error: {ex.Message}\nStack Trace: {ex.StackTrace}\nConnection String: {connectionString}";
+}
+```
+
+This reveals internal system details that attackers can use to craft more sophisticated attacks.
+
+#### Secure error handling
+
+```csharp
+// SECURE: User-friendly messages with detailed internal logging
+catch (Exception ex)
+{
+    logger.LogError(ex, "Failed to process user request");
+    return "An error occurred while processing your request. Please try again or contact support.";
+}
+```
+
+Users receive friendly, minimal error messages while developers get detailed error information through secure logs.
+
+## Path traversal attacks
+
+Path traversal (also called directory traversal) occurs when an application uses user-supplied input to construct file paths without proper validation. Attackers can use special character sequences to access files outside the intended directory.
+
+Consider the following vulnerable code:
+
+```csharp
+// VULNERABLE: Using user input directly in file paths
+string filename = Request.Query["file"];
+string filePath = Path.Combine(@"C:\uploads\", filename);
+string content = File.ReadAllText(filePath);
+```
+
+An attacker could provide input like `../../../Windows/System32/config/SAM` to access sensitive system files, or `../../web.config` to read application configuration containing secrets.
+
+Vulnerable code enables the following attack mechanism:
+
+- `..` sequences navigate up directory levels.
+- Attackers can escape the intended directory sandbox.
+- Access sensitive files, configuration files, or system files.
+- Potentially overwrite critical application files.
+
+Consider the following secure implementation:
+
+```csharp
+// SECURE: Validating and constraining file paths
+string filename = Request.Query["file"];
+
+// Remove path traversal sequences
+filename = Path.GetFileName(filename);
+
+// Construct full path
+string uploadsDirectory = Path.GetFullPath(@"C:\uploads\");
+string filePath = Path.GetFullPath(Path.Combine(uploadsDirectory, filename));
+
+// Verify the resulting path is still within the uploads directory
+if (!filePath.StartsWith(uploadsDirectory))
+{
+    throw new SecurityException("Invalid file path");
+}
+
+string content = File.ReadAllText(filePath);
+```
+
+Secure implementations demonstrate the following defense strategies:
+
+- Use `Path.GetFileName()` to remove directory information.
+- Whitelist allowed files or patterns instead of blacklisting dangerous characters.
+- Validate that resolved paths remain within intended directories.
+- Implement strict file access permissions at the operating system level.
+
+## Additional security considerations
+
+While not detailed in this module's exercise, these issues warrant awareness:
+
+### Cross-site scripting (XSS)
+
+Injecting malicious scripts into web pages viewed by other users. While not applicable to console applications, web developers must validate and encode all user input before displaying it in browsers.
+
+### Hard-coded secrets
+
+Embedding API keys, passwords, or tokens directly in source code exposes them to anyone with repository access. Secrets should be:
+
+- Stored in secure configuration systems or vaults.
+- Never committed to version control.
+- Rotated regularly.
+- Managed with proper access controls.
+
+### Resource exhaustion and denial of service
+
+Poor resource management can enable denial-of-service attacks. Examples include:
+
+- Reading entire large files into memory (causing out-of-memory errors).
+- Not limiting request sizes or frequencies.
+- Inefficient algorithms that consume excessive CPU.
+- Failing to dispose of resources properly.
+
+## How to identify security issues in code
+
+Develop a systematic approach to spotting vulnerabilities:
+
+### Analyze user input handling
+
+Every point where your code accepts user input is a potential entry point for attacks:
+
+- **Look for**: Input used in SQL queries, file paths, system commands, or critical logic.
+- **Ask**: "Am I trusting this input too much?"
+- **Consider**: Injection vulnerabilities, path traversal, command injection.
+
+### Review cryptographic operations
+
+Cryptographic code requires special scrutiny:
+
+- **Look for**: `MD5.Create()`, `SHA1.Create()`, plaintext password storage..
+- **Ask**: "Is this cryptographic method still considered secure?"
+- **Consider**: Using bcrypt, scrypt, or Argon2 for passwords; SHA-256 or better for integrity checks.
+
+### Examine logging statements
+
+Scan your codebase for sensitive data in logs:
+
+- **Look for**: Log statements containing variables named password, secret, token, apiKey, cardNumber.
+- **Ask**: "What information am I exposing in logs?"
+- **Consider**: What happens if these logs are compromised or accidentally exposed?
+
+### Inspect file operations
+
+File handling code needs careful validation:
+
+- **Look for**: `Path.Combine` with user input, file operations based on user-supplied paths.
+- **Ask**: "Can a user escape the intended directory?"
+- **Consider**: Path traversal attacks and directory escape techniques.
+
+### Leverage automated tools
+
+Combine manual code review with automated analysis:
+
+- **Static analysis**: Tools like GitHub CodeQL scan code for known vulnerability patterns.
+- **GitHub Copilot**: Use Ask mode to analyze code sections: "Are there security issues in this code?"
+- **Security linters**: Language-specific tools can flag obvious security mistakes.
+
+GitHub Copilot can identify many common security issues when you ask it to analyze code. It draws on patterns from millions of codebases to recognize vulnerabilities.
+
+## Shift-left security approach
+
+The principle of "shifting left" means addressing security earlier in the development lifecycle:
+
+- **Design phase**: Consider security implications of architectural decisions.
+- **Development phase**: Write secure code from the start, catch issues during code review.
+- **Testing phase**: Include security testing alongside functional testing.
+- **Deployment phase**: Scan for vulnerabilities before release.
+
+Catching security issues during development is far less expensive than discovering them in production. The cost and impact of fixing vulnerabilities increases exponentially with each stage they progress through.
+
+## Summary
+
+Common security vulnerabilities like injection attacks, weak encryption, improper logging, and path traversal represent serious threats to application security. Understanding these vulnerabilities helps you recognize them in code and prioritize their remediation. By combining knowledge of common vulnerability patterns with tools like GitHub Copilot, you can identify and address security issues more effectively.
