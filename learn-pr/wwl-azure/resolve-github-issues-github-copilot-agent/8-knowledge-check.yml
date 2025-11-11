@@ -105,7 +105,7 @@ quiz:
     choices:
     - content: "Because GitHub's terms of service require using Ask mode before Agent mode."
       isCorrect: false
-      explanation: "Incorrect. Using Ask mode before Agent mode is a best practice for effective development, not a terms of service requirement."
+      explanation: "Incorrect. Using Ask mode before Agent mode is a best practice for effective development, not a term of service requirement."
     - content: "To analyze the issue, understand its implications, and formulate a remediation plan before implementing changes."
       isCorrect: true
       explanation: "Correct. Using Ask mode first ensures you understand the vulnerability, explore solution options, and plan systematically before making code changes. This approach ensures refactoring is done thoughtfully and safely."
