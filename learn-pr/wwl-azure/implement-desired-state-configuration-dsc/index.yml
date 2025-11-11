@@ -3,7 +3,7 @@ uid: learn.wwl.implement-desired-state-configuration-dsc
 metadata:
   title: Implement Desired State Configuration (DSC)
   description: "Learn to implement Desired State Configuration (DSC) with Azure Automation, including configuration drift management, DSC configurations, Linux automation, and hybrid management strategies."
-  ms.date: 10/08/2025
+  ms.date: 11/11/2025
   author: LuizMacedo
   ms.author: lumac
   ms.topic: module
@@ -13,29 +13,29 @@ metadata:
   ms.subservice: desired-state-config
   ai-usage: ai-assisted
 title: Implement Desired State Configuration (DSC)
-summary: This module describes **Desired State Configuration (DSC)** and its components for implementation with **Azure Automation**. Learn to manage configuration drift, create DSC configurations, implement DSC for **Linux** environments, and plan for hybrid management scenarios.
+summary: This module describes Desired State Configuration (DSC) and its components for implementation with Azure Automation. Learn to manage configuration drift, create DSC configurations, implement DSC for Linux environments, and plan for hybrid management scenarios.
 abstract: |
   By the end of this module, you're able to:
 
   -   Understand and manage configuration drift in your infrastructure.
 
-  -   Implement **Desired State Configuration (DSC)** with **PowerShell**.
+  -   Implement Desired State Configuration (DSC) with PowerShell.
 
-  -   Describe **Azure Automation State Configuration** and its components.
+  -   Describe Azure Automation State Configuration and its components.
 
   -   Create and manage DSC configuration files.
 
-  -   Implement DSC and **Linux** automation on **Azure**.
+  -   Implement DSC and Linux automation on Azure.
 
   -   Plan for hybrid management with DSC.
 prerequisites: |
-  -   Understanding of **Azure Automation** and automation accounts.
+  -   Understanding of Azure Automation and automation accounts.
 
-  -   Basic knowledge of **PowerShell** scripting.
+  -   Basic knowledge of PowerShell scripting.
 
   -   Familiarity with infrastructure as code concepts.
 
-  -   Experience with **Azure** resources and virtual machines.
+  -   Experience with Azure resources and virtual machines.
 iconUrl: /training/achievements/5-implement-desired-state-configuration-dsc.svg
 levels:
   - advanced
