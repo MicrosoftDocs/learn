@@ -2,9 +2,9 @@
 
 Mirroring in Microsoft Fabric represents a modern approach to hybrid analytics, offering integration between your operational databases and analytical workloads without the complexity of traditional ETL processes.
 
-## Understand mirroring in Microsoft Fabric
+## Discover how mirroring in Fabric works
 
-Mirroring in Microsoft Fabric is a low-latency, low-cost replication solution that continuously replicates data from SQL Server into OneLake, Microsoft Fabric's unified data lake. The technology uses [change data capture](/sql/relational-databases/track-changes/about-change-data-capture-sql-server?azure-portal=true) (CDC) mechanisms integrated into SQL Server 2025's engine to efficiently track and replicate data changes.
+Mirroring in Fabric is a low-latency, low-cost replication solution that continuously replicates data from SQL Server into OneLake, Microsoft Fabric's unified data lake. The technology uses [change data capture](/sql/relational-databases/track-changes/about-change-data-capture-sql-server?azure-portal=true) (CDC) mechanisms integrated into SQL Server 2025's engine to efficiently track and replicate data changes.
 
 Key capabilities include near real-time replication with minimal latency (typically within seconds), zero-copy integration where data is stored in OneLake's open [Delta Lake](/azure/databricks/delta/?azure-portal=true) format accessible by all Fabric workloads, and simplified management with no complex ETL pipelines or integration runtimes to configure. The solution is cost-effective with no additional infrastructure costs and automatically handles schema evolution by synchronizing schema changes.
 
