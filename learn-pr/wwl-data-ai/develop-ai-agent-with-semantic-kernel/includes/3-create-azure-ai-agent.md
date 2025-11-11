@@ -61,7 +61,7 @@ The Microsoft Agent Framework Microsoft Foundry Agent uses the following compone
 
 - **Tools integration** - support for custom functions that extend agent capabilities. Functions are automatically registered and can be called by agents to connect with external APIs and services.
 
-- **Authentication credentials** - supports Azure CLI credentials, service principal authentication, and other Azure identity options for secure access to Azure AI services.
+- **Authentication credentials** - supports Azure CLI credentials, service principal authentication, and other Azure identity options for secure access to Foundry Tools.
 
 - **Thread management** - provides flexible options for thread creation, including automatic thread creation for simple scenarios and explicit thread management for ongoing conversations.
 

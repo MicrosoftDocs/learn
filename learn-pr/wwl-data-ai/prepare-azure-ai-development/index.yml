@@ -17,7 +17,7 @@ summary: "Microsoft Azure offers multiple services that enable developers to bui
 abstract: |
   By the end of this module, you'll be able to:
     - Identify common AI capabilities that you can implement in applications
-    - Describe Azure AI Services and considerations for using them
+    - Describe Foundry Tools and considerations for using them
     - Describe Microsoft Foundry and considerations for using it
     - Identify appropriate developer tools and SDKs for an AI project
     - Describe considerations for responsible AI

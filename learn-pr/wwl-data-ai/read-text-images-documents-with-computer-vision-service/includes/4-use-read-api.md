@@ -1,7 +1,7 @@
 To use Azure Vision for image analysis, including optical character recognition, you must provision an Azure Vision resource in an Azure subscription. The resource can be:
 
-- An **Azure AI Services** multi-service resource (either deployed as part of a Microsoft Foundry hub and project, or as a standalone resource).
-- A **Computer Vision** resource.
+- A **Foundry Tools** resource (either deployed as part of a Microsoft Foundry hub and project, or as a standalone resource).
+- An **Azure Vision** resource.
 
 To use your deployed resource in an application, you must connect to its *endpoint* using either key-based authentication or Microsoft Entra ID authentication. You can find the endpoint for your resource in the Azure portal, or if you're working in a Microsoft Foundry project, in the Microsoft Foundry portal. The endpoint is in the form of a URL, and typically looks something like this:
 

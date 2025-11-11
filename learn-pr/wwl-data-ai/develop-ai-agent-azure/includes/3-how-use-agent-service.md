@@ -33,7 +33,7 @@ Foundry Agent Service is fully managed and designed to help developers build age
 
 At a minimum, you need to create an Azure AI hub with an Azure AI project for your agent. You can add more Azure services as required. You can create the resources using the Microsoft Foundry portal, or you can use [predefined bicep templates](https://github.com/Azure/azure-quickstart-templates/tree/master/quickstarts/microsoft.azure-ai-agent-service) to deploy the resources in your subscription. Two common architectures for Foundry Agent Service solutions are:
 
-- **Basic agent setup**: A minimal configuration that includes Azure AI hub,  Azure AI project, and Azure AI Services resources.
+- **Basic agent setup**: A minimal configuration that includes Azure AI hub, Azure AI project, and Foundry Tools resources.
 
     ![Diagram showing the basic setup of Foundry Agent Service resources.](../media/basic-agent-setup-resources.png)
 

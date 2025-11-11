@@ -26,7 +26,7 @@ To train a facial recognition model with the Face service:
 
 ![Diagram of person groups containing Person records with persisted faces.](../media/person-groups.png)
 
-The trained model is stored in your Face (or Azure AI Services) resource, and can be used by client applications to:
+The trained model is stored in your Face (or Foundry Tools) resource, and can be used by client applications to:
 
 - *Identify* individuals in images.
 - *Verify* the identity of a detected face.

@@ -44,7 +44,7 @@ quiz:
     - content: "It provides a user interface with hubs and projects to organize and test AI services."
       isCorrect: true
       explanation: "Correct."
-    - content: "It limits access to only one Azure AI service at a time."
+    - content: "It limits access to only one Azure service at a time."
       isCorrect: false
       explanation: "Incorrect."
 

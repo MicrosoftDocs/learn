@@ -23,9 +23,9 @@ quiz:
     - content: "Azure Vision"
       isCorrect: false
       explanation: "Incorrect. Azure Vision provides only vision services."
-    - content: "Azure AI Services"
+    - content: "Foundry Tools"
       isCorrect: true
-      explanation: "Correct. Azure AI Services provides multiple services from a single endpoint."
+      explanation: "Correct. Foundry Tools provides multiple services from a single endpoint."
   - content: "You plan to create a simple chat app that uses a generative AI model. What kind of project should you create?"
     choices:
     - content: "Microsoft Foundry project."
@@ -39,9 +39,9 @@ quiz:
       explanation: "Incorrect. An Azure AI Custom Vision project would not help in this scenario."
   - content: "Which SDK enables you to connect to resources in a project?"
     choices:
-    - content: "Azure AI Services SDK"
+    - content: "Foundry Tools SDK"
       isCorrect: false
-      explanation: "Incorrect. Azure AI services often have their own SDKs, and don't rely on connections in a hub."
+      explanation: "Incorrect. Foundry Tools often have their own SDKs, and don't rely on connections in a hub."
     - content: "Semantic Kernel SDK"
       isCorrect: false
       explanation: "Incorrect. The Semantic Kernel SDK is used to build generative AI apps and doesn't rely on connections in a hub."

@@ -1,25 +1,25 @@
-Before you can use the Azure Content Understanding REST API, you need an Azure AI services multi-services resource in your Azure subscription. You can provision this resource in the following ways:
+Before you can use the Azure Content Understanding REST API, you need a Foundry Tools multi-services resource in your Azure subscription. You can provision this resource in the following ways:
 
-- Create an **Azure AI services** resource in the Azure portal.
-- Create a **Microsoft Foundry** hub, which includes an Azure AI services resource by default.
+- Create a **Foundry Tools** resource in the Azure portal.
+- Create a **Microsoft Foundry** hub, which includes a Foundry Tools resource by default.
 
 > [!TIP]
 > Creating a Microsoft Foundry hub enables you to work in a Microsoft Foundry project, in which you can use visual tools to create and manage Azure Content Understanding schemas and analyzers.
 
-After you've provisioned an Azure AI services resource, you need the following information to connect to the Azure Content Understanding REST API from a client application:
+After you've provisioned a Foundry Tools resource, you need the following information to connect to the Azure Content Understanding REST API from a client application:
 
-- The Azure AI services resource *endpoint*
+- The Foundry Tools resource *endpoint*
 - One of the API *keys* associated with the endpoint.
 
 You can obtain these values from the Azure portal, as shown in the following image:
 
-![Screenshot of the Azure AI services settings in the Azure portal.](../media/azure-portal.png)
+![Screenshot of the Foundry Tools settings in the Azure portal.](../media/azure-portal.png)
 
- If you're working within a Microsoft Foundry project, you can find the endpoint and key for the associated Azure AI services resource in the Microsoft Foundry portal, as shown in the following image:
+ If you're working within a Microsoft Foundry project, you can find the endpoint and key for the associated Foundry Tools resource in the Microsoft Foundry portal, as shown in the following image:
 
-![Screenshot of the Azure AI services settings in the Microsoft Foundry portal.](../media/azure-ai-services.png)
+![Screenshot of the Foundry Tools settings in the Microsoft Foundry portal.](../media/azure-ai-services.png)
 
-When working in a Microsoft Foundry project, you can also write code that uses the Microsoft Foundry SDK to connect to the project using Microsoft Entra ID authentication, and retrieve the connection details for the Azure AI services resource; including the endpoint and key.
+When working in a Microsoft Foundry project, you can also write code that uses the Microsoft Foundry SDK to connect to the project using Microsoft Entra ID authentication, and retrieve the connection details for the Foundry Tools resource; including the endpoint and key.
 
 > [!TIP]
 > To learn more about programming with the Microsoft Foundry SDK, complete the **[Develop an AI app with the Microsoft Foundry SDK](/training/modules/ai-foundry-sdk/)** module.

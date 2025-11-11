@@ -2,9 +2,9 @@
 
 The `azure_ai` Extension for Azure Database for PostgreSQL includes access to the Azure Translator, a service that detects the language of text and translates it into other languages. With it, you can translate text between [more than 100 languages](/azure/ai-services/translator/language-support#translation).
 
-## Azure AI Services
+## Foundry Tools
 
-Azure AI services are a set of advanced cloud-based tools and technologies created by Microsoft to enable developers to build intelligent apps and systems without requiring specialized AI or data science skills. These services allow the incorporation of powerful AI capabilities into a wide range of applications, such as natural language processing, machine learning, computer vision, and more. Using Azure AI services, developers can create innovative solutions that enhance user experiences, automate workflows, and improve business operations across various industries.
+Foundry Tools are a set of advanced cloud-based tools and technologies created by Microsoft to enable developers to build intelligent apps and systems without requiring specialized AI or data science skills. These services allow the incorporation of powerful AI capabilities into a wide range of applications, such as natural language processing, machine learning, computer vision, and more. Using Foundry Tools, developers can create innovative solutions that enhance user experiences, automate workflows, and improve business operations across various industries.
 
 ## Azure Translator
 

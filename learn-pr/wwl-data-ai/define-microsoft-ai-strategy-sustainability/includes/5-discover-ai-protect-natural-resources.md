@@ -18,7 +18,7 @@ This task involves analyzing around 350 hours of video footage, **identifying, c
 
 The experts of the Nearshore Habitat Program decided to partner with Microsoft to solve this problem with AI. They found that the best approach was **automated video classification**, using AI models to identify eel grass.
 
-The technical basis for the use case is **Azure AI Services**’ functionalities for image recognition. The video is uploaded to Azure, split into frames, and analyzed by the models included in Azure AI Services. The models are managed, built, and deployed in **Azure Machine Learning**, so the task can be done by any scientist instead of data scientists. Finally, the team uses **Microsoft Power BI** to create reports of the results.
+The technical basis for the use case is **Foundry Tools**’ functionalities for image recognition. The video is uploaded to Azure, split into frames, and analyzed by the models included in Foundry Tools. The models are managed, built, and deployed in **Azure Machine Learning**, so the task can be done by any scientist instead of data scientists. Finally, the team uses **Microsoft Power BI** to create reports of the results.
 
 ## The results
 

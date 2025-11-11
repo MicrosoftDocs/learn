@@ -4,7 +4,7 @@ The enrichment pipeline that is orchestrated by an indexer uses a *skillset* of 
 
 ## Built-in skills
 
-Azure AI Search provides a collection of *built-in* skills that you can include in a skillset for your indexer. Built-in skills include functionality from Azure AI services such as Azure Vision and Azure Language, enabling you to apply enrichments such as:
+Azure AI Search provides a collection of *built-in* skills that you can include in a skillset for your indexer. Built-in skills include functionality from Foundry Tools such as Azure Vision and Azure Language, enabling you to apply enrichments such as:
 
 - Detecting the language that text is written in.
 - Detecting and extracting places, locations, and other entities in the text.
@@ -14,7 +14,7 @@ Azure AI Search provides a collection of *built-in* skills that you can include 
 - Extracting text from images.
 - Generating captions and tags to describe images.
 
-To use the built-in skills, your indexer must have access to an Azure AI services resource. You can use a restricted Azure AI search resource that is included in Azure AI Search (and which is limited to indexing 20 or fewer documents) or you can attach an Azure AI services resource in your Azure subscription (which must be in the same region as your Azure AI Search resource).
+To use the built-in skills, your indexer must have access to a Foundry Tools resource. You can use a restricted Azure AI search resource that is included in Azure AI Search (and which is limited to indexing 20 or fewer documents) or you can attach a Foundry Tools resource in your Azure subscription (which must be in the same region as your Azure AI Search resource).
 
 ## Custom skills
 

@@ -12,11 +12,11 @@ Foundry Content Safety is designed to be used in applications and services to pr
 
 ## Content Safety in Microsoft Foundry
 
-Foundry Content Safety is available as part of [Microsoft Foundry](https://ai.azure.com/explore/contentsafety), a unified platform that enables you to explore many different Azure AI services, including Content Safety.
+Foundry Content Safety is available as part of [Microsoft Foundry](https://ai.azure.com/explore/contentsafety), a unified platform that enables you to explore many different Foundry Tools, including Content Safety.
 
 ![Screenshot of Content Safety Studio in Microsoft Foundry.](../media/ai-studio-content-safety.jpg)
 
-From the [Microsoft Foundry](https://ai.azure.com/) home page, scroll down and select *Explore Azure AI Services*. From here, you can explore Content Safety by selecting **View all Content Safety capabilities**.
+From the [Microsoft Foundry](https://ai.azure.com/) home page, scroll down and select *Explore Foundry Tools*. From here, you can explore Content Safety by selecting **View all Content Safety capabilities**.
 
 Foundry portal enables you to explore and test Content Safety features for yourself. Select the feature you want to try, and then select *Try it out*. You can then use the user interface to test samples or your own material. Select *View code* to generate sample code in C#, Java, or Python. You can then copy and paste the sample code and amend the variables to use your own data.  
 

@@ -1,4 +1,4 @@
-Microsoft Foundry is a platform for AI development on Microsoft Azure. While you *can* provision individual Azure AI services resources and build applications that consume them without it, the project organization, resource management, and AI development capabilities of Microsoft Foundry makes it the recommended way to build all but the most simple solutions.
+Microsoft Foundry is a platform for AI development on Microsoft Azure. While you *can* provision individual Foundry Tools resources and build applications that consume them without it, the project organization, resource management, and AI development capabilities of Microsoft Foundry makes it the recommended way to build all but the most simple solutions.
 
 Microsoft Foundry provides the *Microsoft Foundry portal*, a web-based visual interface for working with AI projects. It also provides the *Microsoft Foundry SDK*, which you can use to build AI solutions programmatically.
 
@@ -10,7 +10,7 @@ In Microsoft Foundry, you manage the resource connections, data, code, and other
 
 ![Diagram of a Foundry project.](../media/foundry-project.png)
 
-*Foundry projects* are associated with a **Microsoft Foundry** resource in an Azure subscription. Foundry projects provide support for Microsoft Foundry models (including OpenAI models), Microsoft Foundry Agent Service, Azure AI services, and tools for evaluation and responsible AI development.
+*Foundry projects* are associated with a **Microsoft Foundry** resource in an Azure subscription. Foundry projects provide support for Microsoft Foundry Models (including OpenAI models), Microsoft Foundry Agent Service, Foundry Tools, and tools for evaluation and responsible AI development.
 
 A Microsoft Foundry resource supports the most common AI development tasks to develop generative AI chat apps and agents. In most cases, using a Foundry project provides the right level of resource centralization and capabilities with a minimal amount of administrative resource management. You can use Microsoft Foundry portal to work in projects that are based in Microsoft Foundry resources, making it easy to add connected resources and manage model and agent deployments.
 

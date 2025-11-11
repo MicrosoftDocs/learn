@@ -1,6 +1,6 @@
 Azure Content Understanding is a generative AI service that you can use to extract insights and data from multiple kinds of content. With Content Understanding, you can quickly build applications that analyze complex data and generate outputs that can be used to automate and optimize processes.
 
-Content Understanding is a component of Azure AI services. To use it, you need to provision an Azure AI services resource in your Azure subscription. You can develop and manage a Content Understanding solution:
+Content Understanding is a component of Foundry Tools. To use it, you need to provision a Foundry Tools resource in your Azure subscription. You can develop and manage a Content Understanding solution:
 
 - In the Microsoft Foundry portal
 - By using the Content Understanding REST API

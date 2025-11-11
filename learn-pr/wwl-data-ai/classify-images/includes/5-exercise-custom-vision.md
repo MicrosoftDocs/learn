@@ -12,4 +12,4 @@ Launch the exercise and follow the instructions.
 When you finish the exercise, don't forget to come back and complete the knowledge check to earn points for completing this module!
 
 > [!TIP]
-> After completing the exercise, if you've finished exploring Azure AI services, delete the Azure resources that you created during the exercise.
+> After completing the exercise, if you've finished exploring Foundry Tools, delete the Azure resources that you created during the exercise.

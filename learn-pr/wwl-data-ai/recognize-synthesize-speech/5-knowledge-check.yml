@@ -23,7 +23,7 @@ quiz:
     - content: "Language"
       isCorrect: false
       explanation: "Incorrect. This resource would support key phrase extraction, but not speech transcription."
-    - content: "Azure AI services"
+    - content: "Foundry Tools"
       isCorrect: true
       explanation: "Correct. This resource would support both the Azure Speech and Azure Language services."
   - content: "You want to use Azure Speech service to build an application that reads incoming email message subjects aloud. Which API should you use?"

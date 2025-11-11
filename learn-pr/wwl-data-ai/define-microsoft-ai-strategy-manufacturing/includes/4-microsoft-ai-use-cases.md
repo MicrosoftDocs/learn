@@ -9,11 +9,11 @@ Microsoft Fabric is a cloud-based platform that enables you to build, deploy, an
 
 Microsoft Fabric has specific AI features for **data analytics** based on Microsoft Power BI and the generative AI of Azure OpenAI Service. It also integrates with Azure Machine Learning for finer management of AI models.
 
-## Azure AI Services
+## Microsoft Foundry
 
-Developing your own AI model from scratch isn’t always the best approach, as it involves building a dataset and training the model, which might be costly and requires certain data science expertise. A wise alternative is to use Azure AI Services, which offers **prebuilt AI models and APIs** that users can easily customize and deploy.
+Developing your own AI model from scratch isn’t always the best approach, as it involves building a dataset and training the model, which might be costly and requires certain data science expertise. A wise alternative is to use Microsoft Foundry, which offers **prebuilt AI models and APIs** that users can easily customize and deploy.
 
-The catalog of Azure AI Services is large, but some are especially pertinent in manufacturing.
+The catalog of Foundry Tools is large, but some are especially pertinent in manufacturing.
 
 * **Azure AI Search**: This platform enables you to retrieve information for your document intelligence applications. It enables you to scan your documentation to quickly find the information you need.
 * **Azure Vision and Custom Vision**: These two services deliver computer vision models, AI models that detect or classify objects of interest in images or video. This technology is key in manufacturing use cases such as anomaly detection.
@@ -21,7 +21,7 @@ The catalog of Azure AI Services is large, but some are especially pertinent in 
 
 ## Azure AI Studio
 
-Among the prebuilt models included in Azure AI Services, Azure OpenAI Service stands out as an especially powerful tool. Many of the latest AI use cases involve **copilot assistants and generative AI solutions**. Azure OpenAI Service is a Microsoft tool to develop these kinds of applications since it enables you to use LLMs such as GPT, Embeddings, DALL-E, and Whisper.
+Among the prebuilt models included in Microsoft Foundry, Azure OpenAI Service stands out as an especially powerful tool. Many of the latest AI use cases involve **copilot assistants and generative AI solutions**. Azure OpenAI Service is a Microsoft tool to develop these kinds of applications since it enables you to use LLMs such as GPT, Embeddings, DALL-E, and Whisper.
 
 These solutions enable you to deliver insights and analytics in a more natural, fluent, conversational way. They can also automatically generate reports, documentation, mail, and so on. Besides, they’re often helpful to streamline the development of traditional AI models. So, you can implement this technology in almost all manufacturing use cases for faster, more efficient results.
 

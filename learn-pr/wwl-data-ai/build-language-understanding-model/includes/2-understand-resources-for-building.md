@@ -9,7 +9,7 @@ For features that require a model for prediction, you'll need to build, train an
 
 First, you'll need to create your Azure Language resource in the [Azure portal](https://portal.azure.com/?azure-portal=true). Then:
 
-1. Search for **Azure AI services**.
+1. Search for **Foundry Tools**.
 1. Find and select **Language Service**.
 1. Select **Create** under the **Language Service**.
 1. Fill out the necessary details, choosing the region closest to you geographically (for best performance) and giving it a unique name.

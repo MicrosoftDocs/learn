@@ -2,7 +2,7 @@ In natural language processing (NLP), **sentiment analysis** and **opinion minin
 
 ## Scenario: Analyzing the sentiment of user property reviews
 
-You're a developer for Margie's Travel, a company whose web and mobile apps connect travelers looking for lodging accommodations with homeowners and property managers willing to rent out their properties. Azure Database for PostgreSQL flexible server database backs these apps. One of the app's features allows renters to submit reviews of the properties they rented. These reviews enable other customers to determine the quality of accommodations and the helpfulness of hosts. You're asked to use Azure AI Services and the `azure_ai` extension to analyze the sentiment of reviews so descriptive labels can be applied as filters within the apps.
+You're a developer for Margie's Travel, a company whose web and mobile apps connect travelers looking for lodging accommodations with homeowners and property managers willing to rent out their properties. Azure Database for PostgreSQL flexible server database backs these apps. One of the app's features allows renters to submit reviews of the properties they rented. These reviews enable other customers to determine the quality of accommodations and the helpfulness of hosts. You're asked to use Foundry Tools and the `azure_ai` extension to analyze the sentiment of reviews so descriptive labels can be applied as filters within the apps.
 
 ## Sentiment analysis: Understanding the big picture
 
@@ -12,9 +12,9 @@ You're a developer for Margie's Travel, a company whose web and mobile apps conn
 
 **Opinion mining** (also known as aspect-based sentiment analysis) takes sentiment analysis to the next level. It is like dissecting opinions under a microscope. Instead of overall sentiment, opinion mining zooms in on specific aspects of the text. For instance, it can tell you if users love the spacious rooms but find the surroundings noisy. This capability provides a deeper understanding of more nuanced sentiments associated with different attributes and is ideal for conducting fine-grained analysis.
 
-## Analyze sentiment with Azure AI Services
+## Analyze sentiment with Foundry Tools
 
-The Azure Language service, part of Azure AI Services, allows you to analyze sentiment and mine opinions from textual data. Incorporating sentiment analysis capabilities into your applications can be accomplished seamlessly using the `azure_ai` extension for the Azure Database for PostgreSQL flexible server.
+The Azure Language service, part of Foundry Tools, allows you to analyze sentiment and mine opinions from textual data. Incorporating sentiment analysis capabilities into your applications can be accomplished seamlessly using the `azure_ai` extension for the Azure Database for PostgreSQL flexible server.
 
 ## Learning objectives
 

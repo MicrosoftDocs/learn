@@ -2,7 +2,7 @@ Microsoft Foundry Agent Service offers a powerful platform for integrating custo
 
 ## Why use custom tools?
 
-Custom tools in Azure AI services can significantly enhance productivity by automating repetitive tasks and streamlining workflows that are specific to your use case. These tools improve accuracy by providing precise and consistent outputs, reducing the likelihood of human error. Additionally, custom tools offer tailored solutions that address specific business needs, enabling organizations to optimize their processes and achieve better outcomes.
+Custom tools significantly enhance productivity by automating repetitive tasks and streamlining workflows that are specific to your use case. These tools improve accuracy by providing precise and consistent outputs, reducing the likelihood of human error. Additionally, custom tools offer tailored solutions that address specific business needs, enabling organizations to optimize their processes and achieve better outcomes.
 
 - **Enhanced productivity**: Automate repetitive tasks and streamline workflows.
 - **Improved accuracy**: Provide precise and consistent outputs, reducing human error.

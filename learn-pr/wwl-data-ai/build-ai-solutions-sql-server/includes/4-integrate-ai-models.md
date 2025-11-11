@@ -120,9 +120,9 @@ WITH (
 
 This approach uses the managed identity assigned to your SQL Server instance for authentication, eliminating the need to manage API keys or passwords. The Azure platform handles credential rotation and access management, reducing security risks and administrative overhead.
 
-## Integrate with Azure AI services
+## Integrate with Foundry Tools
 
-SQL Server 2025 integrates with the full suite of [Azure AI services](/azure/ai-services/what-are-ai-services?azure-portal=true), enabling AI scenarios directly from your database.
+SQL Server 2025 integrates with the full suite of [Foundry Tools](/azure/ai-services/what-are-ai-services?azure-portal=true), enabling AI scenarios directly from your database.
 
 ### Connect to Azure OpenAI Service
 

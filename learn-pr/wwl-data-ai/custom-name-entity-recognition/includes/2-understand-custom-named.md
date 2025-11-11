@@ -1,6 +1,6 @@
 Custom NER is an Azure API service that looks at documents, identifies, and extracts user defined entities. These entities could be anything from names and addresses from bank statements to knowledge mining to improve search results.
 
-Custom NER is part of Azure Language in Azure AI services.
+Custom NER is part of Azure Language in Foundry Tools.
 
 ## Custom vs built-in NER
 

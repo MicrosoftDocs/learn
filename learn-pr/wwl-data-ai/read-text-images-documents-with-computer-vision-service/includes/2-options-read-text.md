@@ -1,4 +1,4 @@
-There are multiple Azure AI services that read text from documents and images, each optimized for results depending on the input and the specific requirements of your application.
+There are multiple Azure services that read text from documents and images, each optimized for results depending on the input and the specific requirements of your application.
 
 ## Azure Vision
 

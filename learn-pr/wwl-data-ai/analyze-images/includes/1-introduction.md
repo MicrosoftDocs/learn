@@ -1,4 +1,4 @@
-Computer Vision is a branch of artificial intelligence (AI) in which software interprets visual input, often from images or video feeds. In Microsoft Azure, you can use the **Azure Vision** service to implement multiple computer vision scenarios, including:
+Computer vision is a branch of artificial intelligence (AI) in which software interprets visual input, often from images or video feeds. In Microsoft Azure, you can use the **Azure Vision** service to implement multiple computer vision scenarios, including:
 
 - Image analysis
 - Optical character recognition (OCR)

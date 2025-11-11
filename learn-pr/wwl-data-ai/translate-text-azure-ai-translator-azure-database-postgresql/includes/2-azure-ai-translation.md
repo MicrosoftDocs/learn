@@ -2,7 +2,7 @@
 
 ## What is the Azure Translator?
 
-The Azure Translator Service is a cloud-based neural machine translation service that is part of the [Azure AI services](/azure/ai-services/what-are-ai-services) family and can be used with any operating system. Translator powers many Microsoft products and services that thousands of businesses worldwide use for language translation and other language-related operations. In this overview, you learn how Translator can enable you to build intelligent, multi-language solutions for your applications across all supported languages.
+The Azure Translator Service is a cloud-based neural machine translation service that is part of the [Foundry Tools](/azure/ai-services/what-are-ai-services) family and can be used with any operating system. Translator powers many Microsoft products and services that thousands of businesses worldwide use for language translation and other language-related operations. In this overview, you learn how Translator can enable you to build intelligent, multi-language solutions for your applications across all supported languages.
 
 ## Supported languages
 

@@ -37,7 +37,7 @@ quiz:
       explanation: "Incorrect. The indexer is a feature of the search service that pulls data into an index."
     - content: "Skillset."
       isCorrect: false
-      explanation: "Incorrect. A skillset is used to enrich an index using Azure AI Services."
+      explanation: "Incorrect. A skillset is used to enrich an index using Foundry Tools."
   - content: "Which response code will require you to implement a backoff strategy?"
     choices:
     - content: "200 and 201."

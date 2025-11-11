@@ -1,4 +1,4 @@
-**Azure Language** is a part of the Azure AI services offerings that can perform advanced natural language processing over unstructured text. Azure Language's text analysis features include:
+**Azure Language** is a part of the Foundry Tools offerings that can perform advanced natural language processing over unstructured text. Azure Language's text analysis features include:
 
 - **Named entity recognition** identifies people, places, events, and more. This feature can also be customized to extract custom categories. 
 - **Entity linking** identifies known entities together with a link to Wikipedia.

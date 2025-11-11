@@ -12,8 +12,8 @@ Components of Microsoft Foundry include:
 |**Component**|**Description**|
 |-|-|
 |**Microsoft Foundry model catalog**|A centralized hub for discovering, comparing, and deploying a wide range of models for generative AI development.| 
-|**Playgrounds**|Ready-to-use environments for quickly testing ideas, trying out models, and exploring Azure AI services.|
-|**Azure AI services**|In Microsoft Foundry portal, you can build, test, see demos, and deploy Azure AI services.|
+|**Playgrounds**|Ready-to-use environments for quickly testing ideas, trying out models, and exploring Foundry Models.|
+|**Foundry Tools**|In Microsoft Foundry portal, you can build, test, see demos, and deploy Foundry Tools.|
 |**Solutions**|You can build agents and customize models in Microsoft Foundry portal.|
 |**Observability**|Ability to monitor usage and performance of your application's models.| 
 

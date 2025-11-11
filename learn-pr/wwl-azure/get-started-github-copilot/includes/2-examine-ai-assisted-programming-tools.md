@@ -2,7 +2,7 @@ AI tools for developers have become increasingly popular in recent years. Compan
 
 To help align AI tools with development tasks and projects, this unit examines the following resources:
 
-- Azure AI services.
+- Foundry Tools.
 - Microsoft Foundry portal.
 - AI Builder.
 - Copilot Studio.
@@ -11,15 +11,15 @@ To help align AI tools with development tasks and projects, this unit examines t
 - ChatGPT.
 - GitHub Copilot.
 
-## Azure AI services
+## Foundry Tools
 
-The Azure AI services are a set of cloud-based services that enable developers to build AI-powered applications without requiring expertise in machine learning. These services cover a wide range of AI capabilities, including speech recognition, natural language processing, computer vision, and decision-making. Azure AI services are designed to be easy to use and integrate with existing applications.
+The Foundry Tools are a set of cloud-based services that enable developers to build AI-powered applications without requiring expertise in machine learning. These services cover a wide range of AI capabilities, including speech recognition, natural language processing, computer vision, and decision-making. Foundry Tools are designed to be easy to use and integrate with existing applications.
 
-Azure Cognitive Services is a subset of Azure AI services that provide prebuilt AI models for common tasks such as text analysis, image recognition, and language translation. These models can be integrated into applications using REST APIs or SDKs.
+Some Foundry Tools provide prebuilt AI models for common tasks such as text analysis, image recognition, and language translation. These models can be integrated into applications using REST APIs or SDKs.
 
-The Azure AI services are best suited for projects that require AI capabilities but lack the resources or expertise to build custom models from scratch. These services help developers add AI features to their applications. This results in improved user experiences.
+The Foundry Tools are best suited for projects that require AI capabilities but lack the resources or expertise to build custom models from scratch. These services help developers add AI features to their applications. This results in improved user experiences.
 
-Azure AI services are intended for:
+Foundry Tools are intended for:
 
 - Developers who want to add AI capabilities to their applications without needing to build custom models.
 - Organizations that need to quickly deploy AI-powered solutions without investing in specialized AI expertise.

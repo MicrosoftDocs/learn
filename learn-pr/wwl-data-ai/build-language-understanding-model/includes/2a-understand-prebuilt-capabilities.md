@@ -26,7 +26,7 @@ PII detection allows you to identify, categorize, and redact information that co
 
 ### Key phrase extraction
 
-Key phrase extraction is a feature that quickly pulls the main concepts out of the provided text. For example, given the text "Text Analytics is one of the features in Azure AI Services.", the service would extract *"Azure AI Services"* and *"Text Analytics"*.
+Key phrase extraction is a feature that quickly pulls the main concepts out of the provided text. For example, given the text "Text Analytics is one of the features in Foundry Tools.", the service would extract *"Foundry Tools"* and *"Text Analytics"*.
 
 ### Sentiment analysis
 

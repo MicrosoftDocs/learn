@@ -31,9 +31,9 @@ quiz:
     - content: "Azure AI Search service with a billable tier."
       isCorrect: true
       explanation: "Correct. Azure AI Search service with a billable tier is required for semantic ranking."
-    - content: "Azure AI services with a billable tier."
+    - content: "Foundry Tools with a billable tier."
       isCorrect: false
-      explanation: "Incorrect. Azure AI services isn't required for semantic ranking."
+      explanation: "Incorrect. Foundry Tools isn't required for semantic ranking."
     - content: "Azure Language service."
       isCorrect: false
       explanation: "Incorrect. Azure Language service isn't required for semantic ranking."

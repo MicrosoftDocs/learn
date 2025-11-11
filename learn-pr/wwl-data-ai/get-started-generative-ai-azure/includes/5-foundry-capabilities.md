@@ -2,11 +2,11 @@ Microsoft Foundry portal provides a user interface based around **hubs** and **p
 
 ![Screenshot of Microsoft Foundry overview page](../media/foundry-overview-page.png) 
 
-When you create an Azure AI Hub, several other resources are created in tandem, including an **Azure AI services** resource. In Microsoft Foundry portal, you can test all kinds of Azure AI services, including Azure Speech, Azure Language, Azure Vision, and Microsoft Foundry Content Safety. 
+When you create an Azure AI Hub, several other resources are created in tandem, including a **Foundry Tools** resource. In Microsoft Foundry portal, you can test all kinds of Foundry Tools, including Azure Speech, Azure Language, Azure Vision, and Microsoft Foundry Content Safety. 
 
-![Screenshot of Azure AI services on Microsoft Foundry portal.](../media/foundry-ai-services-home-page.png)
+![Screenshot of Foundry Tools on Microsoft Foundry portal.](../media/foundry-ai-services-home-page.png)
 
-In addition to demos, Microsoft Foundry portal provides playgrounds to test Azure AI services and other models from the model catalog. 
+In addition to demos, Microsoft Foundry portal provides playgrounds to test Foundry Tools and other models from the model catalog. 
 
 ![Screenshot of playgrounds on Microsoft Foundry portal](../media/foundry-playgrounds-page.png)
 

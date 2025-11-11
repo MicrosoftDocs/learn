@@ -1,4 +1,4 @@
-**Azure Document Intelligence** is one of many *Azure AI Services*, cloud-based artificial intelligence (AI) services with REST APIs and client library SDKs that can be used to build intelligence into your applications. 
+**Azure Document Intelligence** is one of many *Foundry Tools*, cloud-based artificial intelligence (AI) services with REST APIs and client library SDKs that can be used to build intelligence into your applications. 
 
 Azure Document Intelligence uses Optical Character Recognition (OCR) capabilities and deep learning models to extract text, key-value pairs, selection marks, and tables from documents.
 

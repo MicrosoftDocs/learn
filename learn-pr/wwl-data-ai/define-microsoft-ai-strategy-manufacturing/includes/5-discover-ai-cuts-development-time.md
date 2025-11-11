@@ -26,7 +26,7 @@ To build this shared, scalable AI platform, Siemens relied on the Microsoft Azur
 
 The solution offers a customizable template for the entire company. It provides a standard for all data science projects to follow, so it’s easier to reuse assets. The Azure infrastructure ensures easy access to all stakeholders, which also improves cross-team collaboration.
 
-Thanks to Azure AI Services, it includes several standardized AI services. For example, it includes Azure Vision models for quality control that detect damaged devices. Besides, the platform uses the Azure Machine Learning feature to automatically train the AI models. These functionalities improve the performance of all teams and save much time.
+Thanks to Foundry Tools, it includes several standardized AI services. For example, it includes Azure Vision models for quality control that detect damaged devices. Besides, the platform uses the Azure Machine Learning feature to automatically train the AI models. These functionalities improve the performance of all teams and save much time.
 
 ## The results
 

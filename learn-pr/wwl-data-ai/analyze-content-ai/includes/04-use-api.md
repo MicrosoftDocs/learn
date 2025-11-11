@@ -1,6 +1,6 @@
 The Content Understanding REST API provides a programmatic interface that you can use to create, manage, and consume analyzers.
 
-To use the REST API, your client application submits HTTP calls to the Content Understanding endpoint for your Azure AI services resource, passing one of the authorization keys in the header. You can obtain the endpoint and keys in the Azure portal or in the Microsoft Foundry portal. You can also use the Microsoft Foundry API to connect to the project and retrieve the endpoint and key for your Azure AI Services resource programmatically.
+To use the REST API, your client application submits HTTP calls to the Content Understanding endpoint for your Foundry Tools resource, passing one of the authorization keys in the header. You can obtain the endpoint and keys in the Azure portal or in the Microsoft Foundry portal. You can also use the Microsoft Foundry API to connect to the project and retrieve the endpoint and key for your Foundry Tools resource programmatically.
 
 ![Screenshot of the Test analyzer user interface in Microsoft Foundry.](../media/azure-ai-services.png)
 

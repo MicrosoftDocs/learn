@@ -8,4 +8,4 @@ Launch the exercise and follow the instructions.
 [![Button to launch exercise.](../media/launch-exercise.png)](https://go.microsoft.com/fwlink/?linkid=2322136&azure-portal=true)
 
 > [!TIP]
-> After completing the exercise, if you've finished exploring Azure AI services, delete the Azure resources that you created during the exercise.
+> After completing the exercise, if you've finished exploring Foundry Tools, delete the Azure resources that you created during the exercise.

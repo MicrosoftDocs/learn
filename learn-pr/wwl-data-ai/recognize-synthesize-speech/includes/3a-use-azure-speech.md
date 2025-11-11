@@ -14,4 +14,4 @@ You can create Azure Speech projects using **Microsoft Foundry portal's Speech P
 To use Azure Speech in an application, you must create an appropriate resource in your Azure subscription. You can choose to create either of the following types of resource:
 
 - A **Speech** resource - choose this resource type if you only plan to use Azure Speech, or if you want to manage access and billing for the resource separately from other services.
-- An **Azure AI services** resource - choose this resource type if you plan to use Azure Speech in combination with other Azure AI services, and you want to manage access and billing for these services together.
+- A **Foundry Tools** resource - choose this resource type if you plan to use Azure Speech in combination with other Foundry Tools, and you want to manage access and billing for these services together.

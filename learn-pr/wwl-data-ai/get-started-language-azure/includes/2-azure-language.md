@@ -1,4 +1,4 @@
-Core natural language processing (NLP) tasks include: language detection, sentiment analysis, named entity recognition, text classification, translation, and summarization. These tasks are supported by Azure AI services including:
+Core natural language processing (NLP) tasks include: language detection, sentiment analysis, named entity recognition, text classification, translation, and summarization. These tasks are supported by Foundry Tools including:
 
 |**Service**|**Description**|
 |-|-|

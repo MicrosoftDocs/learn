@@ -19,7 +19,7 @@ There are many applications for Azure Vision's *image analysis* and *face* detec
 - Museum archive management - using optical character recognition to preserve information from paper documents. 
 
 > [!NOTE]
-> Many modern vision solutions are built with a combination of capabilities. For example, video analysis capabilities are supported by [*Azure AI Video indexer*](/azure/azure-video-indexer/video-indexer-overview). Azure AI Video indexer is built on several Azure AI services, such as  Face, Translator, Image Analysis, and Speech.  
+> Many modern vision solutions are built with a combination of capabilities. For example, video analysis capabilities are supported by [*Azure AI Video indexer*](/azure/azure-video-indexer/video-indexer-overview). Azure AI Video indexer is built on several Foundry Tools, such as Face, Translator, Image Analysis, and Speech.  
 
 Next, let's take a look at some core Azure Vision Image Analysis capabilities. 
 

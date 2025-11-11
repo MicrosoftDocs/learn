@@ -8,7 +8,7 @@
 
 ## Azure resource for Azure Translator
 
-To use the Azure Translator service, you must provision a resource for it in your Azure subscription. You can provision a single-service Azure Translator resource, or you can use the Text Translation API in a multi-service Azure AI Services resource.
+To use the Azure Translator service, you must provision a resource for it in your Azure subscription. You can provision a single-service Azure Translator resource, or you can use the Text Translation API in a Foundry Tools resource.
 
 After you provision a suitable resource in your Azure subscription, you can use the **location** where you deployed the resource and one of its **subscription keys** to call the Azure Translator APIs from your code. You can call the APIs by submitting requests in JSON format to the REST interface, or by using any of the available programming language-specific SDKs.
 

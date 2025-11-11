@@ -4,7 +4,7 @@ The high-level process for creating a Content Understanding solution includes th
 
 ![Diagram of a sample document being used to create a schema for an analyzer that is consumed by a client application.](../media/analyzer.png)
 
-1. Create an Azure AI services resource.
+1. Create a Foundry Tools resource.
 1. Define a Content Understanding schema for the information to be extracted. This can be based on a content sample and an analyzer template.
 1. Build an analyzer based on the completed schema.
 1. Use the analyzer to extract or generate fields from new content.
@@ -13,11 +13,11 @@ Numerous analyzer templates are provided to help you develop an appropriate anal
 
 ## Creating an analyzer with Microsoft Foundry
 
-While you can provision an Azure AI services resource and develop a complete Content Understanding solution through the REST API, the preferred approach for AI development projects is to use Microsoft Foundry. Specifically, you can use the Microsoft Foundry portal to create a project, define a Content Understanding schema, and build and test an analyzer.
+While you can provision a Foundry Tools resource and develop a complete Content Understanding solution through the REST API, the preferred approach for AI development projects is to use Microsoft Foundry. Specifically, you can use the Microsoft Foundry portal to create a project, define a Content Understanding schema, and build and test an analyzer.
 
 ### Creating a Content Understanding project
 
-In Microsoft Foundry, you can create a project in an existing AI hub, or you can create a new hub as you create the project. In addition to the AI hub itself, creating a hub provisions the Azure resources needed to support one or more projects; including an Azure AI services resource, storage, and a key vault resource to store sensitive details like credentials and keys.
+In Microsoft Foundry, you can create a project in an existing AI hub, or you can create a new hub as you create the project. In addition to the AI hub itself, creating a hub provisions the Azure resources needed to support one or more projects; including a Foundry Tools resource, storage, and a key vault resource to store sensitive details like credentials and keys.
 
 ![Screenshot of the Create new project user interface in Microsoft Foundry.](../media/new-project.png)
 
@@ -46,7 +46,7 @@ You can test the analyzer schema at any time during the development process by r
 
 ### Building an analyzer
 
-When you're satisfied with the performance of your schema, you can build your analyzer. Building an analyzer makes it accessible to client applications through Content Understanding endpoint for the Azure AI services resource associated with your project.
+When you're satisfied with the performance of your schema, you can build your analyzer. Building an analyzer makes it accessible to client applications through Content Understanding endpoint for the Foundry Tools resource associated with your project.
 
 ![Screenshot of the Build analyzer user interface in Microsoft Foundry.](../media/build-analyzer.png)
 

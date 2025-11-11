@@ -28,7 +28,7 @@ The first task in most Microsoft Foundry SDK code is to connect to A Microsoft F
 >
 > - An endpoint for the project itself; which can be used to access project connections, agents, and models in the Microsoft Foundry resource.
 > - An endpoint for Azure OpenAI Service APIs in the project's Microsoft Foundry resource.
-> - An endpoint for Azure AI services APIs (such as Azure Vision and Azure Language) in the Microsoft Foundry resource.
+> - An endpoint for Foundry Tools APIs (such as Azure Vision and Azure Language) in the Microsoft Foundry resource.
 
 You can use the project endpoint in your code to create an **AIProjectClient** object, which provides a programmatic proxy for the project, as shown in this Python example:
 

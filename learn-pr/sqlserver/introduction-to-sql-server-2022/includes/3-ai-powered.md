@@ -17,7 +17,7 @@ The following table describes key AI capabilities in SQL Server 2025:
 | Vector search | Create and query vector embeddings for semantic search and similarity matching | [Vector search](/sql/sql-server/ai/vectors) |
 | Model integration | Run machine learning models within the database engine for real-time scoring | [ML Services overview](/sql/machine-learning/sql-server-machine-learning-services) |
 | T-SQL AI functions | Use built-in functions for text analysis, embedding generation, and model inference | [T-SQL AI reference](/sql/t-sql/functions/ai-functions-transact-sql) |
-| Azure AI connection | Connect to Azure AI services for more capabilities like computer vision and text analysis | [SQL AI samples](https://github.com/Azure-Samples/SQL-AI-samples) |
+| Azure AI connection | Connect to Foundry Tools for more capabilities like computer vision and text analysis | [SQL AI samples](https://github.com/Azure-Samples/SQL-AI-samples) |
 
 > [!TIP]
 > Use the `CREATE EXTERNAL MODEL` statement to register and manage AI models in your database. This provides version control and secure access management for your models.
