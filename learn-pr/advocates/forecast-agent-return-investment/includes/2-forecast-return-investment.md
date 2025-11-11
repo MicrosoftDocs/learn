@@ -133,8 +133,8 @@ Then:
 
 ![A diagram showing showing NPV values over 5 years.](../media/net-present-value-table.png)
 
-The 5-year discounted cash flow impact (NPV) is &#36;19,781.
-Without applying the discount rate, the cash flow impact would be &#36;50,000.
+- The 5-year discounted cash flow impact (NPV) is &#36;19,781.
+- Without applying the discount rate, the cash flow impact would be &#36;50,000.
 
 ### Step 5: Interpret the Result
 
