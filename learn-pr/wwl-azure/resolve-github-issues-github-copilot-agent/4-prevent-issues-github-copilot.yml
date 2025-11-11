@@ -4,10 +4,10 @@ title: Prevent issues using GitHub Copilot
 metadata:
   title: Prevent Issues using GitHub Copilot
   description: "Prevent issues using GitHub Copilot"
-  ms.date: 11/12/2025
+  ms.date: 11/11/2025
   author: chrishowd
   ms.author: cahowd
   ms.topic: unit
-durationInMinutes: 7
+durationInMinutes: 6
 content: |
   [!include[](includes/4-prevent-issues-github-copilot.md)]
