@@ -5,7 +5,7 @@ In this challenge, you'll write code that will combine literal and variable valu
 
 ### Challenge: Display literal and variable values
 
-1. Select all of the code in the .NET Editor then select the <kbd>Delete</kbd> or <kbd>Backspace</kbd> key to delete it.
+1. Select all of the code you wrote previously in the [C# Code Editor](https://microsoftlearning.github.io/c-sharp-minor/) then select the <kbd>Delete</kbd> or <kbd>Backspace</kbd> key to delete it.
 
 1. Store the following values in variables:
 
@@ -19,7 +19,7 @@ In this challenge, you'll write code that will combine literal and variable valu
 
     Finally, you'll combine the variables with literal strings passed into a series of `Console.Write()` commands to form a complete message.
 
-1. Write code in the .NET Editor to display the following message:
+1. Write code in the C# Code Editor to display the following message:
 
     ```Output
     Hello, Bob! You have 3 messages in your inbox. The temperature is 34.4 celsius.

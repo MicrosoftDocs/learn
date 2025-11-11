@@ -4,7 +4,7 @@ title: Exercise - Format the decimal output
 metadata:
   title: Exercise - Format the decimal output
   description: "Exercise - Format the decimal output"
-  ms.date: 03/21/2024
+  ms.date: 11/10/2025
   author: wwlpublish
   ms.author: buzahid
   ms.topic: unit
@@ -13,4 +13,3 @@ metadata:
 durationInMinutes: 10
 content: |
   [!include[](includes/5-exercise-format-decimal-output.md)]
-interactive: csharp
