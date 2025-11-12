@@ -21,13 +21,13 @@ When designing SOAR solutions for an organization, security architects should ev
 
 ### Integration architecture
 
-- **Multi-tenant and cross-workspace deployments** - Design automation that spans multiple Microsoft Sentinel workspaces and tenants, particularly for Managed Security Service Providers (MSSPs) or global enterprises with multiple subsidiaries. Use Azure Lighthouse to enable centralized management while maintaining data sovereignty.
+- **Multitenant and cross-workspace deployments** - Design automation that spans multiple Microsoft Sentinel workspaces and tenants, particularly for Managed Security Service Providers (MSSPs) or global enterprises with multiple subsidiaries. Use Azure Lighthouse to enable centralized management while maintaining data sovereignty.
 - **Unified operations platform** - Plan for Microsoft Sentinel integration with Microsoft Defender portal for cohesive incident management across both Microsoft Sentinel and Microsoft Defender XDR. Starting July 2026, all customers will use Microsoft Sentinel exclusively in the Defender portal.
 - **External system integration** - Consider integration requirements with existing ticketing systems (ServiceNow, Jira), communication platforms (Microsoft Teams, Slack), and third-party security tools through Azure Logic Apps connectors.
 
 ### Playbook architecture decisions
 
-- **Logic Apps hosting model** - Choose between Standard (single-tenant, dedicated resources, better performance, fixed pricing) and Consumption (multi-tenant, pay-per-execution) based on scale, performance requirements, and budget.
+- **Logic Apps hosting model** - Choose between Standard (single-tenant, dedicated resources, better performance, fixed pricing) and Consumption (multitenant, pay-per-execution) based on scale, performance requirements, and budget.
 - **Intellectual property protection** - For MSSPs, determine where playbooks should reside (service provider tenant vs. customer tenant) to protect proprietary automation logic while enabling customer-specific customizations.
 - **Reusability and standardization** - Design playbook libraries that can be deployed across multiple workspaces using templates from Content hub to accelerate deployment and ensure consistency.
 
