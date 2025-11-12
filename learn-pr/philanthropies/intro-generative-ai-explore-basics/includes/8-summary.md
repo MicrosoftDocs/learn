@@ -16,7 +16,6 @@ To continue your learning journey, go to:
 1. Unit 3. [Generative AI. in: Empower educators to explore the potential of artificial intelligence](/training/modules/empower-educators-explore-potential-artificial-intelligence/generative-ai). Publication date unavailable.
 1. Microsoft Education. [Two introductions to generative AI](https://www.youtube.com/watch?v=kKaO80vjZ6k&t=13s&ab_channel=MicrosoftEducation) [Video]. YouTube. Published June 13, 2023.
 1. [What is Deep Learning?](https://azure.microsoft.com/resources/cloud-computing-dictionary/what-is-deep-learning/). Azure. Publication date unavailable.
-1. Unit 2. [Define supervised learning](/training/modules/introduction-to-classical-machine-learning/2-supervised-learning). in: *Build classical machine learning models with supervised learning*. Publication date unavailable.
 1. Demirdag PS. [Natural Language Models](https://www.linkedin.com/learning/what-is-generative-ai/natural-language-models?autoSkip=true&resume=false). in: *What is Generative AI? LinkedIn Learning*. Published March 15, 2023.
 1. Parsons G. [How to use AI image prompts to generate art using DALL-E](https://create.microsoft.com/learn/articles/how-to-image-prompts-dall-e-ai). Microsoft 365. Published May 9, 2023.
 1. Demirdag PS. [Text to Image Application](https://www.linkedin.com/learning/what-is-generative-ai/text-to-image-applications?autoSkip=true&resume=false). in: *What is Generative AI? LinkedIn Learning*. Published March 15, 2023.

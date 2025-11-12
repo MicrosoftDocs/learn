@@ -3,13 +3,13 @@ uid: learn.wwl.create-release-pipeline.explore-build-release-tasks
 title: Explore build and release tasks
 metadata:
   title: Explore build and release tasks
-  description: "Explore build and release tasks"
-  ms.date: 05/28/2024
-  author: wwlpublish
+  description: "Learn about available build and release tasks for automating deployment workflows."
+  ms.date: 10/01/2025
+  author: LuizMacedo
   ms.author: lumac
   ms.topic: unit
   ms.custom:
-  - N/A
+    - N/A
 durationInMinutes: 4
 content: |
-  [!include[](includes/7-explore-build-release-tasks.md)]
+  [!include[](includes/7-explore-build-release-tasks.md)]

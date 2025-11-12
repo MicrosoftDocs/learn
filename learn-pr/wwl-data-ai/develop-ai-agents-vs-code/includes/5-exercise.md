@@ -1,7 +1,7 @@
 If you have an Azure subscription, you can explore the Azure AI Foundry Extension for Visual Studio Code by completing this hands-on exercise. This exercise guides you through creating and deploying an AI agent using the extension.
 
 > [!NOTE]
-> If you don't have an Azure subscription, and you want to explore Azure AI Foundry, you can [sign up for an account](https://azure.microsoft.com/free?azure-portal=true), which includes credits for the first 30 days.
+> If you don't have an Azure subscription, and you want to explore Azure AI Foundry, you can [sign up for an account](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn), which includes credits for the first 30 days.
 
 Launch the exercise and follow the instructions.
 

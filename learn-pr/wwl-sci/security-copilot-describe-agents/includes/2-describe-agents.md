@@ -20,19 +20,25 @@ To effectively use Security Copilot agents, it's essential to understand the ter
 
 ### Agents in Microsoft Security Copilot
 
-You can discover Microsoft Security Copilot agents through the standalone and embedded experiences. Copilot agents are also available from partners.
+You can discover Microsoft Security Copilot agents through the standalone and embedded experiences. Copilot agents are also available from partners. Depending on your role, you can either set them up or access the agent to run it.
 
-To access the full list of available agents, select Agents from the home menu. Copilot displays the list of available Microsoft and partner agents.
+To access the full list of available agents, select Active agents from the home menu. Copilot displays the list of available Microsoft and partner agents.
 
-:::image type="content" source="../media/agents-copilot-v2.png" lightbox="../media/agents-copilot-v2.png"  alt-text="Screen capture of the Agents page in Microsoft Security Copilot. The page displays tiles for all available agents from Microsoft and partners.":::
+> [!NOTE]
+> The list of Microsoft and Partner agents is continually growing. The agents covered in this module represent only a small sample of the available agents.
+
+:::image type="content" source="../media/agents-copilot-v3.png" lightbox="../media/agents-copilot-v3.png"  alt-text="Screen capture of the Agents page in Microsoft Security Copilot. The page displays tiles for all available agents from Microsoft and partners.":::
 
 ### Microsoft Agents
 
-Security Copilot includes agents that are seamlessly integrated with Microsoft security solutions. Microsoft agents include:
+Security Copilot includes agents that are seamlessly integrated with Microsoft security solutions.
 
-- **Threat Intelligence Briefing Agent**: Curates relevant threat intelligence based on an organization's attributes and exposure.
-- **Conditional Access Optimization Agent**: Embedded in Microsoft Entra, the  Conditional Access optimization agent ensures all users are protected by policy. It recommends policies and changes based on best practices aligned with Zero Trust and Microsoft's learnings. In preview, the agent evaluates policies requiring multifactor authentication (MFA), enforces device based controls (device compliance, app protection policies, and Domain Joined Devices), and blocks legacy authentication and device code flow.
-- **Phishing Triage Agent**: Embedded in Microsoft Defender, the Phishing Triage Agent helps security operations analysts to triage and classify user-submitted phishing incidents. The agent operates autonomously, provides a transparent rationale for its classification verdicts in natural language, and continuously learns and improves its accuracy based on feedback provided by analysts.
+- **Threat Intelligence Briefing Agent in Security Copilot**: Available in the standalone experience, the Threat Intelligence Briefing Agent automatically curates relevant and timely threat intelligence based on an organization's unique attributes and threat exposure.
+- **Conditional Access Optimization Agent in Microsoft Entra**: Embedded in Microsoft Entra, the  Conditional Access optimization agent monitors for new users or apps not covered by existing policies, identifies necessary updates to close security gaps, and recommends quick fixes for identity teams to apply with a single click.
+- **Phishing Triage Agent in Microsoft Defender**: Embedded in Microsoft Defender, the Phishing Triage Agent helps security operations analysts to triage and classify user-submitted phishing incidents. The agent operates autonomously, provides a transparent rationale for its classification verdicts in natural language, and continuously learns and improves its accuracy based on feedback provided by analysts.
+- **Vulnerability Remediation Agent in Microsoft Intune**: Embedded in Microsoft Intune, the Vulnerability Remediation Agent helps users identify top vulnerabilities, understand their impact, and get step-by-step remediation guidance to fix vulnerabilities using Intune capabilities.
+- **Security Copilot Agents in Microsoft Purview (preview)**: Embedded in Microsoft Purview, the Data Loss Prevention (DLP), and Insider Risk Management (IRM) alert triage agents provide an agent-managed alert queue where the alerts about the highest risk activities are identified and prioritized. These agents analyze the content and potential intent involved in the activity based on the organization’s chosen parameters and level of risk tolerance.
+- **Access Review Agent**: Configured in Microsoft Entra and available to users in Microsoft Teams, the agent empowers your reviewers to make fast, accurate access decisions. The Access Review Agent delivers insights and recommendations so reviewers can complete their work through a simple conversation, right inside Microsoft Teams.
 
 This list is not all-inclusive.
 

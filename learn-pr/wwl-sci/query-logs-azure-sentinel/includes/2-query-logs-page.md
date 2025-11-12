@@ -7,7 +7,7 @@ In the [Defender portal](https://security.microsoft.com/), select **Investigatio
 For Microsoft Sentinel in the Defender portal, you have several options for running KQL queries. In this unit we cover the two following options:
 
 - Advanced hunting page: The query window allows you to run queries, save queries, run saved queries, create a new alert rule, and export. You can also link a result to an incident. The left side provides a list of tables and related table fields. To run a query, enter the query text and press the run button. Query results appear in the bottom section of the form.
-- Data lake exploration page: To run ad-hoc interactive KQL queries on long-term data,
+- Data lake exploration page: To run ad-hoc interactive KQL queries on long-term data.
 
 1. To use *Advanced hunting*, select **Investigation & response** > **Hunting** > **Advanced hunting**.
 

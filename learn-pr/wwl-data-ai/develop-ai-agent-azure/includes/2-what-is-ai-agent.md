@@ -37,6 +37,36 @@ Customer service agents handle routine inquiries, provide information, and resol
 
 Developer agents help in software development tasks such as code review, bug fixing, and repository management. They can automatically update codebases, suggest improvements, and ensure that coding standards are maintained. GitHub Copilot is a great example of a developer agent.
 
+## Understand security risks of AI Agents
+
+As AI agents become more autonomous and integrated into enterprise systems, they introduce new security considerations that go beyond traditional application threats. Because agents can access sensitive data, make decisions, and act independently, developers and organizations must design with security in mind from the start.
+
+The table below summarizes key security risks to consider when developing or deploying AI agents:
+
+| **Risk Area** | **Description** | **Example / Impact** |
+|----------------|-----------------|----------------------|
+| **Data Leakage and Privacy Exposure** | AI agents often access sensitive business or user data to perform tasks. Without proper controls, they can unintentionally expose or share confidential information. | An agent summarizing internal files accidentally includes private data in a customer-facing chat. |
+| **Prompt Injection and Manipulation Attacks** | Malicious users can craft inputs that override an agent’s intended behavior, tricking it into revealing data or performing unauthorized actions. | A user embeds hidden instructions in a message, causing the agent to leak system credentials. |
+| **Unauthorized Access and Privilege Escalation** | Weak authentication or access controls can let agents—or bad actors controlling them—access data or systems they shouldn’t. | An AI agent connected to a CRM tool performs admin-level actions, like exporting or deleting records. |
+| **Data Poisoning** | Attackers may corrupt training or contextual data, causing the agent to make biased, incorrect, or unsafe decisions. | A poisoned dataset causes a customer support agent to recommend fraudulent or harmful content. |
+| **Supply Chain Vulnerabilities** | Agents often rely on external APIs, plugins, or model endpoints, which expand the attack surface. | A compromised third-party plugin injects malicious code into the agent’s workflow. |
+| **Over-Reliance on Autonomous Actions** | Highly autonomous agents may execute unintended actions if not carefully constrained or validated. | An agent mistakenly sends payments or publishes unverified content. |
+| **Inadequate Auditability and Logging** | Without detailed logging, it’s difficult to trace actions or detect malicious behavior early. | Security teams cannot identify data misuse due to missing or incomplete activity logs. |
+| **Model Inversion and Output Leakage** | Attackers might exploit model outputs to infer sensitive data used during training or prompting. | Repeated queries extract private information that was part of a fine-tuning dataset. |
+
+### Mitigation Strategies
+To reduce these risks, developers should adopt a **security-by-design** approach that includes:
+
+- Enforcing **role-based access controls (RBAC)** and **least privilege** permissions.  
+- Adding **prompt filtering and validation** layers to prevent injection attacks.  
+- Sandboxing or gating sensitive operations behind **human-in-the-loop approvals**.  
+- Maintaining **comprehensive logging and traceability** for all agent actions.  
+- Auditing **third-party dependencies** and integrations regularly.  
+- Continuously retraining and validating models to detect **data drift** or **poisoning attempts**.  
+
+By embedding these practices early in development, organizations can deploy AI agents safely and confidently in real-world environments.
+
+
 > [!TIP]
 > To learn more about GitHub Copilot, explore the [GitHub Copilot fundamentals](/training/paths/copilot/) learning path.
 

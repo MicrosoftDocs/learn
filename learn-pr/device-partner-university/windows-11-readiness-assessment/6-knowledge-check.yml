@@ -1,0 +1,84 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.windows-11-readiness-assessment.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge Check
+  description: This content is part of the "Perform a Windows 11 device readiness assessment" module.
+  ms.date: 10/31/2025
+  author: hhreyes21
+  ms.author: v-homerreyes
+  ms.topic: unit
+durationInMinutes: 5
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "What does a green checkmark in PC Health Check indicate?"
+    choices:
+        - content: "The device needs firmware updates"
+          isCorrect: false
+          explanation: "Incorrect. Firmware updates may be needed for other statuses."
+        - content: "The device meets all Windows 11 requirements"
+          isCorrect: true
+          explanation: "Correct. A green checkmark confirms full eligibility."
+        - content: "The device requires Secure Boot configuration"
+          isCorrect: false
+          explanation: "Incorrect. This is indicated by a yellow exclamation point."
+        - content: "The device can't be upgraded to Windows 11"
+          isCorrect: false
+          explanation: "Incorrect. This is indicated by a red X."
+  - content: "Which tool is used to assess unmanaged devices for Windows 11 readiness?"
+    choices:
+        - content: "Endpoint analytics"
+          isCorrect: false
+          explanation: "Incorrect. This is used for managed devices."
+        - content: "Configuration Manager"
+          isCorrect: false
+          explanation: "Incorrect. It supports managed environments via tenant attach."
+        - content: "PC Health Check"
+          isCorrect: true
+          explanation: "Correct. It evaluates standalone or unmanaged systems."
+        - content: "Windows Update Assistant"
+          isCorrect: false
+          explanation: "Incorrect. It isn't mentioned as a readiness assessment tool."
+  - content: "What is a key reason to upgrade from Windows 10 after end of support?"
+    choices:
+        - content: "Continued security updates and support"
+          isCorrect: true
+          explanation: "Correct. Windows 10 no longer receives updates post-EOS."
+        - content: "New user interface"
+          isCorrect: false
+          explanation: "Incorrect. Not emphasized as a key reason."
+        - content: "Improved gaming performance"
+          isCorrect: false
+          explanation: "Incorrect. Not a primary reason mentioned."
+        - content: "Faster boot times"
+          isCorrect: false
+          explanation: "Incorrect. Not cited as a major upgrade driver."
+  - content: "What does the “Not capable” category in Endpoint Analytics mean?"
+    choices:
+        - content: "The device is already running Windows 11"
+          isCorrect: false
+          explanation: "Incorrect. That is listed in the “Upgraded” category."
+        - content: "The device’s status is unknown"
+          isCorrect: false
+          explanation: "Incorrect. That is listed in the “Unknown” category."
+        - content: "The device doesn’t meet hardware requirements for Windows 11"
+          isCorrect: true
+          explanation: "Correct. “Not capable” means it can’t be upgraded."
+        - content: "The device needs a software update only"
+          isCorrect: false
+          explanation: "Incorrect. Hardware issues are the cause."
+  - content: "What is a minimum RAM requirement for Windows 11?"
+    choices:
+        - content: "2 GB"
+          isCorrect: false
+          explanation: "Incorrect. Below the minimum requirement."
+        - content: "6 GB"
+          isCorrect: false
+          explanation: "Incorrect. More than required but not the minimum."
+        - content: "8 GB"
+          isCorrect: false
+          explanation: "Incorrect. “Above the minimum but not required."
+        - content: "4 GB"
+          isCorrect: true
+          explanation: "Correct. This is the minimum RAM needed."

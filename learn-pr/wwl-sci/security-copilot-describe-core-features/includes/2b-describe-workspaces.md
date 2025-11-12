@@ -1,12 +1,12 @@
 Copilot workspaces are separate work environments within the tenant in which your Copilot instance is operating.
 
-To help you better understand the concept of workspaces, we'll use the analogy of house with multiple rooms. Each room is configured to be optimized for its function and the people that will use that room. When someone enters the house, they might have access to some rooms but not others.
+To help you better understand the concept of workspaces, we use the analogy of house with multiple rooms. Each room is configured to be optimized for its function and the people that use that room. When someone enters the house, they might have access to some rooms but not others.
 
 You can think of Copilot Workspaces fitting into this analogy. A Copilot workspace is analogous to a room in a house. You can also think of the house as analogous to a tenant. In the same way that a house has multiple rooms, the tenant in which Copilot is operating can have multiple workspaces.
 
 Through the tenant-switching capability in Security Copilot, a user can select in which tenant they'll be working. In our analogy, this is a Copilot user getting access to the house. Once the tenant is selected, a Copilot user can access and work in any workspace (room in the house) to which they have access, within the context of their role permissions in that workspace.
 
-:::image type="content" source="../media/workspace-overview.png" lightbox="../media/workspace-overview.png" alt-text="Illustration of a house which is like a tenant and a room in the house is like a workspace in Security Copilot.":::
+:::image type="content" source="../media/workspace-overview.png" lightbox="../media/workspace-overview.png" alt-text="Illustration of a house, which is like a tenant and a room in the house is like a workspace in Security Copilot.":::
 
 There are many benefits to Copilot workspaces.  
 
@@ -23,14 +23,14 @@ You need to be at least a Security Administrator to create new workspaces for yo
 
 There are several entry points for you to create a new workspace:
 
-- From the breadcrumb of the portal
+- From the landing page of the Security Copilot portal
 - From the Manage workspaces section of the Owner settings page
 
 # [From the breadcrumb](#tab/breadcrumb)
-:::image type="content" source="../media/workspace-create.png" lightbox="../media/workspace-create.png" alt-text="A screenshot showing the new workspace option from the breadcrumb.":::
+:::image type="content" source="../media/workspace-create.png" lightbox="../media/workspace-create.png" alt-text="A screenshot showing the new workspace option from the landing page of the Copilot Studio portal.":::
 
 # [Owner settings page](#tab/owner-settings-page)
-:::image type="content" source="../media/workspace-owner-settings.png" lightbox="../media/workspace-owner-settings.png" alt-text="A screenshot showing the new workspace option from the owner settings page.":::
+:::image type="content" source="../media/workspace-owner-settings-v3.png" lightbox="../media/workspace-owner-settings-v3.png" alt-text="A screenshot showing the manage workspace option from the owner settings page.":::
 
 ---
 
@@ -52,7 +52,7 @@ Once the workspace is created and selected, it can be configured with unique set
 
 Decisions and configuration made in plugin settings and role permissions apply specifically to the workspace in which they're being configured.
 
-Decisions and configurations within "owner settings" apply specifically to the workspace that is being configured, with one exception: Audit Logging enablement can only be changed by Security Admins and applies to all workspaces.
+Decisions and configurations within "owner settings" apply specifically to the workspace that's being configured, with one exception: Audit Logging enablement can only be changed by Security Admins and applies to all workspaces.
 
 :::image type="content" source="../media/workspace-audit-logging.png" lightbox="../media/workspace-audit-logging.png" alt-text="Screenshot of owner settings page with logging audit data highlighted.":::
 

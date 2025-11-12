@@ -13,3 +13,4 @@ After completing this module, you’ll be able to:
 - Describe the Threat Intelligence Briefing Agent.
 - Describe the Conditional Access Optimization Agent.
 - Describe the Phishing Triage agent.
+- Describe how Security Copilot supports building your own agents.
