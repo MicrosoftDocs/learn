@@ -59,7 +59,7 @@ Playbooks execute complex, multi-step response and remediation workflows based o
 
 #### Architecture decision: Standard vs. Consumption Logic Apps
 
-| Factor | Standard (Single-tenant) | Consumption (Multi-tenant) |
+| Factor | Standard (Single-tenant) | Consumption (multitenant) |
 |--------|--------------------------|----------------------------|
 | **Pricing model** | Fixed pricing based on hosting plan | Pay-per-execution |
 | **Performance** | Dedicated resources, higher throughput | Shared resources, suitable for variable workloads |
@@ -67,10 +67,10 @@ Playbooks execute complex, multi-step response and remediation workflows based o
 | **Private endpoints** | Supported with access restrictions | Not available |
 | **Multiple workflows** | Can host multiple workflows per resource | One workflow per resource |
 
-Microsoft Sentinel provides pre-built playbooks through the Content hub that address common use cases such as data enrichment, bi-directional synchronization with ticketing systems, orchestration of incident management through communication platforms like Microsoft Teams or Slack, and immediate threat response actions.
+Microsoft Sentinel provides prebuilt playbooks through the Content hub that address common use cases such as data enrichment, bi-directional synchronization with ticketing systems, orchestration of incident management through communication platforms like Microsoft Teams or Slack, and immediate threat response actions.
 
 
-## Multi-tenant and MSSP architectural patterns
+## Multitenant and MSSP architectural patterns
 
 For organizations managing multiple Microsoft Sentinel workspaces across tenants (MSSPs, global enterprises), consider these architectural patterns:
 
@@ -100,8 +100,8 @@ For organizations managing multiple Microsoft Sentinel workspaces across tenants
 - **Start with high-value, low-risk use cases** - Automate repetitive tasks with clear decision criteria before tackling complex scenarios. Focus on use cases with well-defined procedures, minimal variation, and low false-positive rates.
 - **Design for human oversight** - Include approval steps for high-impact actions such as account disablement or network isolation. Automated response should augment and extend analyst capabilities, not replace human judgment.
 - **Plan for scalability** - Design automation that can extend across multiple workspaces and regions as the organization grows. Use standardized naming conventions and deployment templates to facilitate scale.
-- **Leverage existing content** - Use pre-built playbooks and automation rules from Content hub to accelerate deployment. Customize only when necessary to meet specific organizational requirements.
+- **Leverage existing content** - Use prebuilt playbooks and automation rules from Content hub to accelerate deployment. Customize only when necessary to meet specific organizational requirements.
 - **Implement governance** - Define ownership, change management processes, and regular review cycles for automation rules and playbooks. Track automation performance and adjust based on metrics.
 - **Consider compliance requirements** - Ensure automated actions meet regulatory requirements for documentation, approval, and auditability. Maintain audit logs of all automated actions.
-- **Test thoroughly** - Validate automation in non-production environments before deployment. Use time-limited automation during initial rollout to minimize risk.
+- **Test thoroughly** - Validate automation in nonproduction environments before deployment. Use time-limited automation during initial rollout to minimize risk.
 - **Design for reliability** - Implement error handling and notification mechanisms. Ensure automation can gracefully handle failures and provide visibility into issues.

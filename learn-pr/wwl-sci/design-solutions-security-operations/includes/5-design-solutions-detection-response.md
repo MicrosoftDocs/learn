@@ -3,7 +3,7 @@
 
 A **security information and event management (SIEM)** solution is an essential component of effective cybersecurity. SIEM solutions collect, aggregate, normalize, and analyze large volumes of data from organization‑wide applications, devices, servers, identities, and users in near real time. By consolidating this telemetry into a single, unified platform, SIEM solutions provide a comprehensive view of an organization's security posture—empowering security operations centers (SOC) to detect, investigate, hunt, and respond swiftly and effectively.
 
-XDR and SIEM are complementary. XDR delivers deep, coordinated defense across key workloads and automatically remediating threats in those environments, while SIEM casts a wide net to collect and analyze events from any source, providing long‑term analytics, compliance visibility, and historical context. Used together in Microsoft’s unified security operations experience, XDR supplies high‑fidelity, enriched alerts and automatic attack disruption signals; Microsoft Sentinel ingests those alongside broader telemetry (350+ connectors), correlates them, and unifies incidents and entities—accelerating triage, investigation, and response. This synergy is a cornerstone of Microsoft’s unified approach.
+XDR and SIEM are complementary. XDR delivers deep, coordinated defense across key workloads and automatically remediates threats in those environments. SIEM casts a wide net to collect and analyze events from any source, providing long‑term analytics, compliance visibility, and historical context. Used together in Microsoft’s unified security operations experience, XDR supplies high‑fidelity, enriched alerts, and automatic attack disruption signals; Microsoft Sentinel ingests those alongside broader telemetry (350+ connectors), correlates them, and unifies incidents and entities—accelerating triage, investigation, and response. This synergy is a cornerstone of Microsoft’s unified approach.
 
 ### Microsoft Defender XDR
 
@@ -26,7 +26,7 @@ Key capabilities of Microsoft Sentinel include:
 
 - **Comprehensive data collection**: Collect data at scale across users, devices, identities, applications, infrastructure, operational technology, and multiple clouds via 350+ first‑ and third‑party connectors. Centralization plus normalization enables rich correlation, summarization, and advanced analytics.
 - **AI‑ready platform architecture**: The platform unifies SIEM capabilities with a modern data lake, graph reasoning, and MCP for agent workflows—standardizing access patterns and accelerating autonomous actions while keeping defenders in control.
-- **Security data lake (GA)**: The [Microsoft Sentinel data lake](/azure/sentinel/datalake/sentinel-lake-overview) stores a single open‑format (Parquet) copy of security data, decouples storage from compute, mirrors analytics tier data automatically, and supports multi‑modal analytics (KQL queries, scheduled jobs, notebooks, graph and modeling) with cost‑efficient retention—up to 12 years.
+- **Security data lake (GA)**: The [Microsoft Sentinel data lake](/azure/sentinel/datalake/sentinel-lake-overview) stores a single open‑format (Parquet) copy of security data, decouples storage from compute, mirrors analytics tier data automatically, and supports multi‑modal analytics (KQL queries, scheduled jobs, notebooks, graph, and modeling) with cost‑efficient retention—up to 12 years.
 - **Advanced threat detection & response**: Built‑in analytics rules, ML models, threat intelligence enrichment, automatic attack disruption signals (via Defender XDR integration), playbooks, and proactive KQL hunting deliver high‑fidelity detections and faster containment.
 - **SOC efficiency & investigation tools**: Unified incidents, entity pages, investigation graph, hunting notebooks, summarization via Security Copilot, and noise reduction through intelligent alert grouping streamline analyst workflows.
 - **Developer & solution ecosystem**: Content Hub and Security Store support packaging of connectors, analytic rules, hunting queries, playbooks, notebooks, and agents for rapid deployment and extensibility.
@@ -42,7 +42,7 @@ Microsoft Sentinel on its own correlates events across a wide array of systems. 
 
 #### Unified investigation & agentic operations
 
-Sentinel’s evolution into a SIEM and platform enables agentic defense: transforming raw telemetry into a security graph, standardizing access for AI agents, and coordinating autonomous actions while preserving human oversight of strategy and high‑impact investigations.
+Microsoft Sentinel’s evolution into a SIEM and platform enables agentic defense: transforming raw telemetry into a security graph, standardizing access for AI agents, and coordinating autonomous actions while preserving human oversight of strategy and high‑impact investigations.
 
 ### Unified security operations in the Microsoft Defender portal
 
