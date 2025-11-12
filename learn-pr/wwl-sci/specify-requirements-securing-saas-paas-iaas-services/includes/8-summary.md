@@ -1,9 +1,10 @@
 You've learned how to:
 
-*   Specify security baselines for SaaS, PaaS, and IaaS services
-*   Specify security requirements for IoT workloads
-*   Specify security requirements for web workloads
-*   Specify security requirements for containers and container orchestration
+* Specify security baselines for SaaS, PaaS, and IaaS services.
+* Specify security requirements for IoT workloads.
+* Specify security requirements for web workloads.
+* Specify security requirements for containers and container orchestration.
+* Specify security requirements for AI workloads.
 
 ## Learn more with security documentation
 
@@ -13,6 +14,3 @@ You've learned how to:
 - [Best practices for secure PaaS deployments - Microsoft Azure | Microsoft Learn](/azure/security/fundamentals/paas-deployments)
 - [Azure security baseline for App Service | Microsoft Learn](/security/benchmark/azure/baselines/app-service-security-baseline)
 - [Azure security baseline for Azure Kubernetes Service | Microsoft Learn](/security/benchmark/azure/baselines/aks-security-baseline)
-
-> [!NOTE]
-> This module contains AI-generated content
