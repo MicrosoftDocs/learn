@@ -38,7 +38,7 @@ quiz:
     choices:
     - content: To store measurable, quantitative data about a business.
       isCorrect: true
-      explanation: Correct. Fact tables store measurable, quantitative data,such as sales amounts or order quantities.
+      explanation: Correct. Fact tables store measurable, quantitative data, such as sales amounts or order quantities.
     - content: To store descriptive attributes related to data.
       isCorrect: false
       explanation: Incorrect. Descriptive attributes are stored in dimension tables, not fact tables.
