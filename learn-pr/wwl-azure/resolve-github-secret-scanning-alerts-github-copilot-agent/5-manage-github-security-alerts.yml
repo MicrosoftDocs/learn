@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.resolve-github-secret-scanning-alerts-github-copilot-agent.manage-github-security-alerts
+title: Manage GitHub Security Alerts
+metadata:
+  title: Manage GitHub Security Alerts
+  description: "Manage GitHub Security Alerts."
+  ms.date: 11/25/2025
+  author: chrishowd
+  ms.author: cahowd
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/5-manage-github-security-alerts.md)]

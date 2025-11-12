@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.resolve-github-secret-scanning-alerts-github-copilot-agent.resolve-github-security-alerts-github-copilot-agent
+title: Resolve GitHub Security Alerts using GitHub Copilot's Agent mode
+metadata:
+  title: Resolve GitHub Security Alerts using GitHub Copilot's Agent Mode
+  description: "Resolve GitHub Security Alerts using GitHub Copilot's Agent mode."
+  ms.date: 11/25/2025
+  author: chrishowd
+  ms.author: cahowd
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/7-resolve-github-security-alerts-github-copilot-agent.md)]
