@@ -1,5 +1,3 @@
-# Analyze issues using GitHub Copilot's Ask mode
-
 Identifying and understanding security issues is the first step toward resolving them. GitHub Copilot's Ask mode provides an interactive way to analyze code, identify vulnerabilities, and plan remediation strategies.
 
 ## What is Ask mode?
@@ -235,11 +233,11 @@ GitHub Copilot's accuracy improves with better context. If responses seem off-ta
 
 Using Ask mode for security analysis provides several advantages:
 
-- **Rapid assessment**: Get immediate analysis without researching documentation
-- **Comprehensive perspective**: GitHub Copilot considers patterns from millions of codebases
-- **Educational**: Learn security principles through explanations
-- **Planning aid**: Develop implementation strategies before writing code
-- **Risk-free exploration**: Investigate multiple approaches without modifying code
+- **Rapid assessment**: Get immediate analysis without researching documentation.
+- **Comprehensive perspective**: GitHub Copilot considers patterns from millions of codebases.
+- **Educational**: Learn security principles through explanations.
+- **Planning aid**: Develop implementation strategies before writing code.
+- **Risk-free exploration**: Investigate multiple approaches without modifying code.
 
 ## Summary
 

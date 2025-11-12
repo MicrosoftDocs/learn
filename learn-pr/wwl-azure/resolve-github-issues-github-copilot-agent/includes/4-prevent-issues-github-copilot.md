@@ -141,7 +141,7 @@ Using well-established security libraries reduces the risk of implementation err
 
 Use well-tested, maintained libraries rather than implementing security-critical functionality yourself. Choose established libraries like Entity Framework for database queries, ASP.NET Identity for authentication, BCrypt.Net for password hashing, and Azure Key Vault SDK for secrets management.
 
-Write prompts that tell GitHub Copilot to use approved libraries. For example: "Implement password hashing using BCrypt.Net library"
+Write prompts that tell GitHub Copilot to use approved libraries. For example: "Implement password hashing using BCrypt.Net library."
 
 ### Testing security requirements
 
@@ -149,7 +149,7 @@ Security tests validate that your protective measures work as intended and catch
 
 Integrate security testing into your development process. Test input validation edge cases, authentication and authorization scenarios, encryption operations, error handling with sensitive data, and permission boundaries.
 
-You can prompt GitHub Copilot to generate security tests. For example: "Write xUnit tests for the ValidatePath function that verify it prevents directory traversal attacks"
+You can prompt GitHub Copilot to generate security tests. For example: "Write xUnit tests for the ValidatePath function that verify it prevents directory traversal attacks."
 
 ## Using GitHub Copilot in code reviews
 
