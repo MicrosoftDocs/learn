@@ -154,7 +154,7 @@ Microsoft Sentinel is designed with two distinct storage tiers to optimize cost 
 
 #### Data lake
 
-The data lake tier is made possible with the introduction of the [Microsoft Sentinel data lake (preview)](/azure/sentinel/datalake/sentinel-lake-overview). Microsoft Sentinel data lake enables a fully managed, cloud-native, data lake that is purposefully designed for security, inside Microsoft Sentinel.
+The data lake tier is made possible with the introduction of the [Microsoft Sentinel data lake](/azure/sentinel/datalake/sentinel-lake-overview). Microsoft Sentinel data lake enables a fully managed, cloud-native, data lake that is purposefully designed for security, inside Microsoft Sentinel.
 
 Microsoft Sentinel data lake is an opt-in feature. Customers can continue to use the existing analytics tier without any change. If a customer is looking to optimize costs, they can split data across analytics and data lake tiers. Microsoft Sentinel data lake is only available in the Defender portal.
 
