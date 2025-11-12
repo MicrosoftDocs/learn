@@ -1,0 +1,136 @@
+### YamlMime:ModuleUnit
+uid: learn.resolve-github-issues-github-copilot-agent.knowledge-check
+title: Module assessment
+metadata:
+  title: Module Assessment
+  description: Module assessment.
+  ms.date: 11/11/2025
+  author: chrishowd
+  ms.author: cahowd
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is the primary purpose of GitHub Issues in software development?"
+    choices:
+    - content: "To replace all project management tools with a single interface."
+      isCorrect: false
+      explanation: "Incorrect. GitHub Issues complements project management but doesn't replace comprehensive project management tools."
+    - content: "To provide a collaborative workspace for tracking work items, documenting problems, and planning improvements."
+      isCorrect: true
+      explanation: "Correct. GitHub Issues functions as an intelligent tracking system where teams can assign tasks, categorize with labels, link to code changes, and maintain discussions."
+    - content: "To automatically fix all code vulnerabilities without developer intervention."
+      isCorrect: false
+      explanation: "Incorrect. GitHub Issues tracks and documents problems but doesn't automatically fix them."
+  - content: "What is the most critical security risk associated with SQL injection vulnerabilities?"
+    choices:
+    - content: "Slower database query performance."
+      isCorrect: false
+      explanation: "Incorrect. While performance might be affected, the security risks are far more critical than performance issues."
+    - content: "Attackers can bypass authentication, extract databases, modify data, and execute administrative operations."
+      isCorrect: true
+      explanation: "Correct. SQL injection allows attackers to manipulate database queries, potentially compromising the entire system by bypassing security controls and accessing sensitive data."
+    - content: "Database tables become disorganized and require manual reorganization."
+      isCorrect: false
+      explanation: "Incorrect. SQL injection poses security threats, not organizational issues with database tables."
+  - content: "What is the recommended solution for preventing SQL injection attacks?"
+    choices:
+    - content: "Filtering user input to remove suspicious characters."
+      isCorrect: false
+      explanation: "Incorrect. While input filtering can help, it's not as reliable as parameterized queries and can be bypassed."
+    - content: "Using parameterized queries that separate code from data."
+      isCorrect: true
+      explanation: "Correct. Parameterized queries ensure the database treats parameter values as data only, never as executable SQL code, effectively preventing injection attacks."
+    - content: "Limiting the length of user input fields."
+      isCorrect: false
+      explanation: "Incorrect. Input length restrictions don't prevent SQL injection since malicious code can be short."
+  - content: "Why is storing passwords using MD5 or SHA1 hashing considered insecure?"
+    choices:
+    - content: "These algorithms produce hashes that are too long to store efficiently."
+      isCorrect: false
+      explanation: "Incorrect. Hash length isn't the security concern with these algorithms."
+    - content: "They're cryptographically broken and modern GPUs can test billions of password combinations per second against these hashes."
+      isCorrect: true
+      explanation: "Correct. MD5 and SHA1 are fast algorithms that are no longer secure. Modern hardware can crack these hashes quickly, especially without salt. Secure alternatives like bcrypt are computationally expensive by design."
+    - content: "They require too much processing power for modern applications."
+      isCorrect: false
+      explanation: "Incorrect. These algorithms are actually too fast, which is the problem. Secure password hashing should be intentionally slow."
+  - content: "What critical information should be included in a comprehensive GitHub issue description?"
+    choices:
+    - content: "Only the title and assignee name."
+      isCorrect: false
+      explanation: "Incorrect. A comprehensive issue description requires more detail to be useful."
+    - content: "What's happening, steps to reproduce, expected behavior, why it matters, and acceptance criteria."
+      isCorrect: true
+      explanation: "Correct. A well-structured issue description guides developers to understand the problem, its effects, and how to verify issue resolution."
+    - content: "Just a link to the problematic code file."
+      isCorrect: false
+      explanation: "Incorrect. While code references are helpful, they don't provide the context, effects, or acceptance criteria needed."
+  - content: "What is the primary function of GitHub Copilot's Ask mode?"
+    choices:
+    - content: "To automatically fix all code vulnerabilities without developer input."
+      isCorrect: false
+      explanation: "Incorrect. Ask mode provides analysis and guidance but doesn't automatically fix code."
+    - content: "To provide interactive analysis, identify vulnerabilities, and help plan remediation strategies without modifying code."
+      isCorrect: true
+      explanation: "Correct. Ask mode functions like a knowledgeable colleague, providing security-focused guidance, explanations, and suggestions that help you make informed decisions about how to proceed."
+    - content: "To replace all security testing tools in the development pipeline."
+      isCorrect: false
+      explanation: "Incorrect. Ask mode complements security testing but doesn't replace comprehensive security tools."
+  - content: "When using GitHub Copilot's Ask mode to analyze security issues, what makes a prompt effective?"
+    choices:
+    - content: "Being vague to let the AI determine what you need."
+      isCorrect: false
+      explanation: "Incorrect. Vague prompts lead to less accurate and useful responses."
+    - content: "Being specific, providing context, and focusing on actionable insights."
+      isCorrect: true
+      explanation: "Correct. Effective prompts clearly identify what you want to understand, provide necessary context about the code, and ask for practical guidance you can act on."
+    - content: "Using only technical jargon without explanations."
+      isCorrect: false
+      explanation: "Incorrect. While technical terms are appropriate, effective prompts need clarity and context, not just jargon."
+  - content: "What is the key difference between GitHub Copilot's Ask mode and Agent mode?"
+    choices:
+    - content: "Ask mode works with Python while Agent mode works with C#."
+      isCorrect: false
+      explanation: "Incorrect. Both modes work with multiple programming languages."
+    - content: "Ask mode provides guidance and suggestions without modifying code, while Agent mode implements changes directly in your code files."
+      isCorrect: true
+      explanation: "Correct. Ask mode is conversational and provides analysis, while Agent mode autonomously executes complex remediation tasks by editing files, running tests, and applying changes."
+    - content: "Ask mode is for security issues while Agent mode is for feature development."
+      isCorrect: false
+      explanation: "Incorrect. Both modes can be used for various purposes including security issues and feature development."
+  - content: "Why should you always use Ask mode before using Agent mode to fix security vulnerabilities?"
+    choices:
+    - content: "Because GitHub's terms of service require using Ask mode before Agent mode."
+      isCorrect: false
+      explanation: "Incorrect. Using Ask mode before Agent mode is a best practice for effective development, not a term of service requirement."
+    - content: "To analyze the issue, understand its implications, and formulate a remediation plan before implementing changes."
+      isCorrect: true
+      explanation: "Correct. Using Ask mode first ensures you understand the vulnerability, explore solution options, and plan systematically before making code changes. This approach ensures refactoring is done thoughtfully and safely."
+    - content: "Because Agent mode doesn't work without Ask mode running first."
+      isCorrect: false
+      explanation: "Incorrect. Agent mode can run independently, but using Ask mode first is a best practice for better results."
+  - content: "What should Agent mode prompts include when remediating security issues?"
+    choices:
+    - content: "Only the file name and line number to change."
+      isCorrect: false
+      explanation: "Incorrect. Effective prompts need more detail about what changes to make and why."
+    - content: "Specific, actionable instructions with safety considerations and clear expectations."
+      isCorrect: true
+      explanation: "Correct. Agent mode prompts should be specific about what to fix, include safety measures like creating tests first, and clearly describe the desired outcome including security requirements."
+    - content: "Generic requests to 'make the code better.'"
+      isCorrect: false
+      explanation: "Incorrect. Vague prompts produce poor results. Agent mode needs clear, specific instructions to implement effective fixes."
+  - content: "What is a critical safety practice when using Agent mode to remediate security vulnerabilities?"
+    choices:
+    - content: "Work in a feature branch and create baseline tests before making changes."
+      isCorrect: true
+      explanation: "Correct. Working in a separate branch protects your main codebase, and creating tests first provides a safety net to verify that functionality remains intact after security fixes are applied."
+    - content: "Make all changes directly to the production branch for faster deployment."
+      isCorrect: false
+      explanation: "Incorrect. Making changes directly within the production branch is dangerous practice that could break production code. Always use feature branches for development."
+    - content: "Skip testing to speed up the remediation process."
+      isCorrect: false
+      explanation: "Incorrect. Testing is critical to ensure security fixes work correctly and don't introduce new vulnerabilities or break existing functionality."
