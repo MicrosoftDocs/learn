@@ -1,5 +1,3 @@
-# Remediate issues using GitHub Copilot Agent mode
-
 After analyzing security issues using Ask mode, you're ready to implement fixes. GitHub Copilot's Agent mode enables you to execute complex remediation tasks safely while ensuring functionality is preserved and code quality is improved.
 
 > [!NOTE]
