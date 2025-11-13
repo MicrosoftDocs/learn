@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.dpu.modernize-surface-windows-10-end-of-support
+title: Modernize with Surface for Business after Windows 10 end of support
+metadata:
+  title: Modernize With Surface For Business After Windows 10 End Of Support
+  description: Windows 10 support has ended—learn how to move forward with Windows 11 Pro and Surface for Business devices to maintain security, simplify management, and support modern work across your organization.
+  ms.date: 11/12/2025
+  author: hhreyes21
+  ms.author: v-homerreyes
+  ms.topic: module
+  ms.service: surface
+  ms.custom: CW112924-1
+summary: >
+  Windows 10 support has ended—learn how to move forward with Windows 11 Pro and Surface for Business devices to maintain security, simplify management, and support modern work across your organization.
+abstract: |
+ By the end of this module, you'll be able to:
+
+ - Evaluate your current device readiness and upgrade options  
+ - Modernize infrastructure using Surface and Microsoft cloud tools  
+ - Deploy and manage Windows 11 devices efficiently  
+ - Access official Microsoft resources to guide a smooth transition
+
+prerequisites: |
+  - None
+iconUrl: /training/achievements/generic-badge.svg
+ratingEnabled: false
+levels:
+  - beginner
+roles:
+  - business-owner
+  - business-user
+  - administrator
+  - technology-manager
+products:
+  - surface
+units:
+  - learn.dpu.modernize-surface-windows-10-end-of-support.introduction
+  - learn.dpu.modernize-surface-windows-10-end-of-support.understand-windows-10-end-of-support
+  - learn.dpu.modernize-surface-windows-10-end-of-support.assess-upgrade-readiness
+  - learn.dpu.modernize-surface-windows-10-end-of-support.explore-surface-device-options
+  - learn.dpu.modernize-surface-windows-10-end-of-support.transition-modern-devices-with-surface
+  - learn.dpu.modernize-surface-windows-10-end-of-support.summary
+badge:
+  uid: learn.dpu.modernize-surface-windows-10-end-of-support.badge
