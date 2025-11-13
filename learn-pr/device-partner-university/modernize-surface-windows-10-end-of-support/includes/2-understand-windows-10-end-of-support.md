@@ -61,15 +61,15 @@ Key security features include:
 - Smart App Control  
 
 > [!NOTE]  
-> Surface for Business devices ship with Windows 11 Pro and secured-core capabilities out of the box, offering additional protection through chip-to-cloud integration and [DFCI firmware control](https://learn.microsoft.com/autopilot/dfci-management).
+> Surface for Business devices ship with Windows 11 Pro and secured-core capabilities out of the box, offering additional protection through chip-to-cloud integration and [DFCI firmware control](/autopilot/dfci-management).
 
 ## Recommended actions for IT teams
 
 To maintain a secure, efficient, and productive environment, IT leaders should:
 
 - **Upgrade to Windows 11 Pro** to ensure continued security updates, feature improvements, and Microsoft 365 compatibility.  
-- **Assess device eligibility** using tools like [PC Health Check](https://support.microsoft.com/en-us/windows/how-to-use-the-pc-health-check-app-9c8abd9b-03ba-4e67-81ef-36f37caa7844) or [Endpoint Analytics](/intune/analytics/?h) where hardware doesn’t meet Windows 11 standards—consider Surface devices to simplify deployment and enable modern AI experiences.  
-- **Leverage Microsoft deployment resources**, including [Microsoft Intune](https://learn.microsoft.com/intune/intune-service/fundamentals/what-is-intune), [Windows Autopilot](https://learn.microsoft.com/autopilot/overview), and [FastTrack](https://learn.microsoft.com/microsoft-365/fasttrack/introduction#what-is-fasttrack-for-microsoft-365) for guided migration support.
-- **Use temporary bridge solutions** through the [Extended Security Updates](https://learn.microsoft.com/windows/whats-new/extended-security-updates) program for certain editions of Windows 10. This provides temporary protection while transitioning to Windows 11, but it should be used only as a short-term bridge, not a long-term solution.
+- **Assess device eligibility** using tools like [PC Health Check](https://support.microsoft.com/windows/how-to-use-the-pc-health-check-app-9c8abd9b-03ba-4e67-81ef-36f37caa7844) or [Endpoint Analytics](/intune/analytics/?h) where hardware doesn’t meet Windows 11 standards—consider Surface devices to simplify deployment and enable modern AI experiences.  
+- **Leverage Microsoft deployment resources**, including [Microsoft Intune](/mem/intune/fundamentals/what-is-intune), [Windows Autopilot](/autopilot/windows-autopilot), and [FastTrack](/microsoft-365/fasttrack/introduction#what-is-fasttrack-for-microsoft-365) for guided migration support.
+- **Use temporary bridge solutions** through the [Extended Security Updates](/windows/whats-new/extended-security-updates) program for certain editions of Windows 10. This provides temporary protection while transitioning to Windows 11, but it should be used only as a short-term bridge, not a long-term solution.
 
 Windows 10 end of support introduces significant risks for organizations that continue to rely on outdated devices. By upgrading to Windows 11 Pro and modernizing with Surface, IT teams can strengthen security, reduce maintenance costs, and prepare for the future of AI-enabled work. Microsoft provides a range of tools and resources to support this transition, helping organizations move forward with confidence.
