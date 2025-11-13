@@ -20,9 +20,6 @@ The following table highlights key differences between Windows 10 post-EOS and W
 | ❌ Increased vulnerability & compliance risk | ✅ Zero Trust security and hardware-based protection |
 | ❌ Rising maintenance costs | ✅ Simplified management and lower total cost of ownership |
 
-> [!NOTE]  
-> Learn more about the implications of Windows 10 end of support in the [Windows IT Pro Blog](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/plan-for-windows1-windows414).
-
 ## What changes with Windows 11 Pro
 
 Upgrading to Windows 11 Pro provides access to:
