@@ -2,7 +2,7 @@ Windows 10 reached end of support (EOS) on October 14, 2025, meaning it no longe
 
 This module provides IT professionals with a structured approach to planning and executing that transition using Surface for Business. It walks through upgrade paths, deployment strategies, and modernization options designed to strengthen security, improve manageability, and prepare your organization for AI-powered experiences. By learning how to assess readiness, plan upgrades, and deploy Surface with Microsoft cloud tools such as Intune, Autopilot, and Windows Autopatch, IT professionals can accelerate modernization and maintain consistent security and user experiences across their organizations.
 
-## Learning Objectives
+## Learning objectives
 
 By the end of this module, you are able to:
 
