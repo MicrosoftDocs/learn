@@ -1,21 +1,21 @@
 ### YamlMime:Module
 uid: learn.forcast-agent-return-investment
 metadata:
-  title: Calculate and communicate the return on investment (ROI) of AI agents
+  title: Forecast the Return on Investment (ROI) of AI Agents
   description: "AI agents are rapidly transforming how organizations operate, automating tasks, enhancing decision-making, and improving customer experiences. But to scale adoption and secure stakeholder buy-in, it's not enough to showcase innovation; leaders must clearly demonstrate the business value these agents deliver."
   ms.date: 10/1/2025
   author: Orin-Thomas
   ms.author: orthomas
   ms.topic: module-standard-task-based 
   ms.service: artificial-intelligence
-title: Calculate and communicate the return on investment (ROI) of AI agents
+title: Forecast the return on investment (ROI) of AI agents
 summary: "This module introduces you to practical frameworks for quantifying and communicating the ROI of AI agents, even if you don't have a background in finance. Business leaders learn how to evaluate both quantified financial impact and strategic/intangible value, and how to apply these insights to prioritize use cases, build compelling business cases, and guide investment decisions."
 abstract: |
   AI agents are rapidly transforming how organizations operate, automating tasks, enhancing decision-making, and improving customer experiences. But to scale adoption and secure stakeholder buy-in, it's not enough to showcase innovation; leaders must clearly demonstrate the business value these agents deliver.
   
   This module introduces you to practical frameworks for quantifying and communicating the ROI of AI agents, even if you don't have a background in finance. Business leaders learn how to evaluate both quantified financial impact and strategic/intangible value, and how to apply these insights to prioritize use cases, build compelling business cases, and guide investment decisions.
   
-  By the end of this module, you are able to:
+  By the end of this module, you're able to:
   - Quantify the financial impact of AI agents using ROI and net present value (NPV) frameworks.
   - Describe the essentials for forecasting ROI across short- and long-term horizons.
   - Prioritize AI use cases based on financial and strategic value.
@@ -24,7 +24,7 @@ abstract: |
 prerequisites: |
   - "Basic understanding of AI and large language models (LLMs)"
   - "Familiarity with cloud platforms and software lifecycle concepts"
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/forecast-agent-return-investment.svg
 levels: 
   - intermediate
 roles: 

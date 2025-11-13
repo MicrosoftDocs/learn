@@ -8,35 +8,49 @@ No matter which governance approach you choose, there are some good practices it
 
 ## AI governance engagement
 
-The specific processes and policies for your AI governance system depend on whether your company is using third-party systems or developing AI in-house. Based on this factor, we have provided recommendations to help your company govern your AI engagements.
+The specific processes and policies for your AI governance system depend on whether your company is using external systems or developing AI in-house. Based on this factor, we provided recommendations to help your company govern your AI engagements.
 
-#### Engagement with AI systems developers
+### Engage with AI systems developers
 
-For **first-party AI systems**, if your organization also plans to develop AI solutions or integrate AI into your existing products and services, there are some tasks for each team role.
+Your governance processes should reflect how you acquire and build AI capabilities. The following are practical recommendations for two common scenarios—building AI in house and adopting external solutions—with steps you can apply in either case.
 
-Your **ethical governance system** should:
-* Review or provide advice before the release of any new AI system, especially for sensitive use cases.
+**If you’re building AI in house** (developing solutions or integrating AI into your own products and services):
 
-* Ensure employees from all levels of the company feel free to surface ethical concerns before you sell AI or AI-integrated products and services.
+Your governance system should:
 
-* Analyze the case and provide guidance to mitigate the risks if concerns arise while designing, developing, or selling the AI system.
+- Review or advise on new AI projects before launch, especially sensitive use cases.
+- Create clear channels for employees at all levels to raise ethical concerns early.
+- Provide guidance to mitigate risks during design, development, and go to market.
+- Establish processes to monitor deployed systems for model drift, data quality issues, and performance decay.
 
-* Create processes to monitor the AI systems you deploy or sell to detect and mitigate model drift and decay over time.
+Your development teams should:
 
-Your **developers** should:
+- Follow detailed standards and checklists that reflect your organization’s ethical principles.
+- Use technology-specific guidance (such as for facial recognition or generative AI) and document decisions.
 
-* Be given detailed and thorough standard guidance that can help them design and develop AI solutions to reflect your organization’s ethical principles.
+**If you’re adopting external AI solutions** (buying or licensing tools and services):
 
-* Have guidelines and checklists for specific AI technologies, such as face recognition or generative AI.
+- Vet vendors for their responsible AI practices and evidence of controls that align with your principles.
+- Require documentation on data usage, privacy, security, and model evaluation.
+- Define how you'll operate and monitor the solution safely in your environment, for example data access, logging, and escalation.
+- Include your policies and requirements in procurement criteria, contracts, and service level agreements.
 
-For organizations planning on using out-of-the-box **third-party AI systems**, we recommend learning about the third party’s commitment to responsible AI design to ensure it aligns with your own principles.
+**For custom integrations or hybrid approaches** (mixing your own development with external components):
 
-For custom AI solutions, include your principles or standards in your request for proposal. Before deploying any third-party AI solution, create guidelines on how to safely operate and monitor the system. Train employees on these guidelines and ensure they're being followed. Finally, your governance system should ensure the AI system has been rigorously tested.
+- Include your principles and control requirements in requests for proposals and partner agreements.
+- Ensure all components—internal and external—are covered by the same governance checks, testing, and monitoring.
+- Train users and operators on safe usage, data handling, and how to report issues.
 
-#### Engagement with external stakeholders
+**Across all scenarios**:
 
-As the use of AI becomes more common, we consider it a shared responsibility across the public and private sectors to engage with AI responsibly. Collaboration between enterprises, public organizations, governments, and nonprofits is crucial to ensure best practices while maximizing the potential of AI to deliver broad benefits.
+- Maintain a central AI inventory to track where systems run, what they do, and who owns them.
+- Standardize intake, impact assessment, approval gates, and monitoring so you can scale governance consistently.
+- Use automated tools where possible to enforce policies (such as data labeling, access controls, bias checks) and to surface deviations for review.
 
-Organizations can contribute to these collective efforts in many ways. At Microsoft, we have focused on joining industry initiatives, influencing policy, addressing future labor and workplace needs, and considering how our technologies can be used to improve the lives of people around the world. For example, we have joined the **Partnership on AI (PAI)**, a group of researchers, nonprofits, nongovernmental organizations (NGOs), and companies dedicated to ensuring that AI is developed and utilized in a responsible manner.
+### Engage with external stakeholders
 
-Next, let's discover how an AI governance system works in a real company using Microsoft as an example.
+Responsible AI is a shared endeavor that extends beyond your walls. Collaborating with governments, industry groups, nonprofits, and academic partners help raise standards, align expectations, and scale best practices across the ecosystem.
+
+Organizations can contribute in many ways: joining cross industry initiatives, informing policy, and investing in workforce readiness. For example, Microsoft participates in the **Partnership on AI (PAI)**—a coalition of researchers, nonprofits, and companies dedicated to advancing responsible AI. Such collaborations help shape norms, surface emerging risks, and accelerate practical solutions that benefit society.
+
+Next, discover how an AI governance system works in a real company using Microsoft as an example.

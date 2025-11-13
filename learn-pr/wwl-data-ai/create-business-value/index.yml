@@ -1,51 +1,44 @@
 ### YamlMime:Module
 uid: learn.wwl.create-business-value
 metadata:
-  title: Create business value from AI
-  description: "Understand the key elements that make a culture AI-ready and a framework to drive the change needed in your organization for a successful AI strategy."
-  ms.date: 02/13/2025
+  title: "Create Business Value With AI"
+  description: "Learn how to align AI to business strategy and ensure readiness using essential drivers for scalable, impactful, secure adoption."
+  ms.date: 11/04/2025
   author: wwlpublish
   ms.author: rcaper
   ms.topic: module
-  ms.collection: N/A
-  ms.custom:
-  - N/A
-  ms.service: azure-ai-openai
-  ai-usage: human-only
-title: Create business value from AI
-summary: This module is designed to help you plan your AI strategy and adopt an AI-ready culture. It proposes a framework to drive that change in your organization.
+  ms.service: artificial-intelligence
+  ai-usage: ai-assisted
+title: "Create business value with AI"
+summary: Learn to turn AI experiments into dependable drivers of measurable business outcomes.
 abstract: |
-  In this module, you will:
-
-  -   Identify considerations for defining an AI strategy.
-
-  -   Describe key characteristic of an AI-ready organizational culture.
-
-  -   Identify drivers of AI success.
-
-  -   Understand the stages of AI value creation.
+  After completing this module, you will be able to:
+  - Align AI strategies with business priorities to focus on high-impact areas.
+  - Design a scalable and secure foundation for AI deployment.
+  - Accelerate AI adoption through effective tools and methods.
+  - Develop governance strategies to manage risk responsibly.
+  - Integrate organization and culture changes for efficient AI implementation.
 prerequisites: |
-  -   Basic understanding of AI concepts.
-
-  -   Basic understanding of business concepts.
-iconUrl: /training/achievements/create-business-value.svg
+  - None.
+iconUrl: /learn/achievements/create-business-value.svg
 levels:
-- intermediate
+- beginner
 roles:
+- business-leader
 - business-owner
-- business-user
 products:
 - azure
-- dynamics-365
 - m365
 subjects:
 - artificial-intelligence
 - data-management
 units:
 - learn.wwl.create-business-value.introduction
-- learn.wwl.create-business-value.define-ai-strategy-create-business-value
-- learn.wwl.create-business-value.discover-characteristics-foster-ai-ready-culture
-- learn.wwl.create-business-value.discover-ai-success
+- learn.wwl.create-business-value.business-strategy
+- learn.wwl.create-business-value.technology-data-strategy
+- learn.wwl.create-business-value.ai-strategy-experience
+- learn.wwl.create-business-value.organization-culture
+- learn.wwl.create-business-value.ai-governance
 - learn.wwl.create-business-value.knowledge-check
 - learn.wwl.create-business-value.summary
 badge:

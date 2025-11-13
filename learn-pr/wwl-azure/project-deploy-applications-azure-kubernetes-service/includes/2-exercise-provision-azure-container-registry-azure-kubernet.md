@@ -11,7 +11,7 @@ In Exercise 1, you provision Azure Container Registry and Azure Kubernetes Servi
  -  **Task 2**: Create an Azure virtual network and an AKS cluster. You create an Azure virtual network and deploy an AKS cluster including a Windows node pool into that virtual network.
 
 > [!NOTE]
-> To complete this exercise, you need an [Azure subscription](https://azure.microsoft.com/free/).
+> To complete this exercise, you need an [Azure subscription](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn).
 
 [:::image type="content" source="../media/launch-exercise-162c1d6a.png" alt-text="Button to launch exercise.":::
 ](https://go.microsoft.com/fwlink/?linkid=2247331)

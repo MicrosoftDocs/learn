@@ -1,7 +1,7 @@
 In this lab, you will learn how to configure and integrate the Azure Monitor Agent to collect data from Azure virtual machines, Virtual Machine Scale Sets, and Arc-enabled servers, with data collection rules defining which data to collect from the agent and where that data should be sent.
 
 > [!NOTE]
-> To complete this lab, you will need an [Azure subscription](https://azure.microsoft.com/free)
+> To complete this lab, you will need an [Azure subscription](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn)
 
 Launch the exercise and follow the instructions.
 

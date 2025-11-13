@@ -66,7 +66,7 @@ A Microsoft Security Copilot agent is an advanced, AI-powered assistant built in
 
 These agents are designed to learn from feedback, adapt to your organization’s workflows, and operate securely within Microsoft’s Zero Trust framework. See the summary and resources unit for links to more information on Microsoft Security Copilot agents.
 
-:::image type="content" source="../media/agents-list-v2.png" lightbox="../media/agents-list-v2.png" alt-text="A screen capture of the agents page in Microsoft Security Copilot.":::
+:::image type="content" source="../media/active-agents.png" lightbox="../media/active-agents.png" alt-text="A screen capture of the agents page in Microsoft Security Copilot.":::
 
 ***Orchestrator***
 

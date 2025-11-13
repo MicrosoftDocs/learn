@@ -2,7 +2,7 @@
 In this exercise, you’ll learn how to detect and correct fragmentation issues.
 
 > [!NOTE]
-> To complete this exercise, you'll need an [Azure subscription](https://azure.microsoft.com/free?azure-portal=true).
+> To complete this exercise, you'll need an [Azure subscription](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn).
 
 Launch the exercise and follow the instructions.
 

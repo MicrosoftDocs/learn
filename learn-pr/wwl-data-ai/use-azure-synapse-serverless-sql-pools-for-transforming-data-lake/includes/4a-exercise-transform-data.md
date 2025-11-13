@@ -1,7 +1,7 @@
 Now it's your opportunity to use the CREATE EXTERNAL TABLE AS SELECT statement to transform data. In this exercise, you'll use a provided script to provision an Azure Synapse Analytics workspace in your Azure subscription; and then use a serverless SQL pool to transform data from files in a data lake.
 
 > [!NOTE]
-> To complete this lab, you will need an [Azure subscription](https://azure.microsoft.com/free?azure-portal=true) in which you have administrative access.
+> To complete this lab, you will need an [Azure subscription](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn) in which you have administrative access.
 
 Launch the exercise and follow the instructions.
 

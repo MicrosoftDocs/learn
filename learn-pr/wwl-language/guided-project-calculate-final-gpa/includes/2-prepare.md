@@ -33,11 +33,15 @@ Final GPA:          3.35
 
 ## Setup
 
+A C# code editor is available to use directly in the browser: [C# Code Editor](https://microsoftlearning.github.io/c-sharp-minor/). This editor provides a lightweight environment for writing, running, and testing C# code without needing to install any software on your local computer.
+
 Use the following steps to prepare for the Guided project exercises:
 
-1. Open the .NET Editor coding environment.
+1. Open the [C# Code Editor](https://microsoftlearning.github.io/c-sharp-minor/) in a new browser window or tab.
 
-1. Copy and paste the following code into the .NET Editor. These values represent the student's name and course details.
+    You can position the browser windows side-by-side so that you can refer to these instructions while you work in the C# Code Editor.
+
+1. Copy and paste the following code into the C# Code Editor. These values represent the student's name and course details.
 
     ```csharp
     string studentName = "Sophia Johnson";
