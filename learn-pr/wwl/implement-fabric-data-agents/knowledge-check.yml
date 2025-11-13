@@ -51,7 +51,7 @@ quiz:
     - content: "To increase the number of data sources the agent can access."
       isCorrect: false
       explanation: "Incorrect. Example queries don't affect data source access."
-  - content: "When integrating Azure AI Foundry with Microsoft Fabric Data Agents, what is required for secure data access?"
+  - content: "When integrating Microsoft Foundry with Microsoft Fabric Data Agents, what is required for secure data access?"
     choices:
     - content: "Users must have the Azure AI User RBAC role and read access to the agent and its data sources."
       isCorrect: true
