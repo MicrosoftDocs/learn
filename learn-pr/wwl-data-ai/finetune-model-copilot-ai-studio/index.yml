@@ -1,8 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.finetune-model-copilot-ai-studio
 metadata:
-  title: Fine-tune a language model with Azure AI Foundry
-  description: When you want to maximize the consistency in the responses of your language model, you can fine-tune a base model before integrating the model into your chat application. Learn how to fine-tune a language model and then integrate the model with Azure AI Foundry.
+  title: Fine-tune a language model with Microsoft Foundry
+  description: When you want to maximize the consistency in the responses of your language model, you can fine-tune a base model before integrating the model into your chat application. Learn how to fine-tune a language model and then integrate the model with Microsoft Foundry.
   author: madiepev
   ms.author: madiepev
   ms.date: 08/28/2025
@@ -12,13 +12,13 @@ metadata:
   ms.custom: ai-learning-hub
   ms.collection:
     - wwl-ai-copilot
-title: Fine-tune a language model with Azure AI Foundry
-summary: "Train a base language model on a chat-completion task. The model catalog in Azure AI Foundry offers many open-source models that can be fine-tuned for your specific model behavior needs."
+title: Fine-tune a language model with Microsoft Foundry
+summary: "Train a base language model on a chat-completion task. The model catalog in Microsoft Foundry offers many open-source models that can be fine-tuned for your specific model behavior needs."
 abstract: |
   By the end of this module, you'll be able to:
     - Understand when to fine-tune a model.
     - Prepare your data to fine-tune a chat completion model.
-    - Fine-tune a base model in the Azure AI Foundry portal.
+    - Fine-tune a base model in the Microsoft Foundry portal.
 prerequisites: |
   Before starting this module, you should be familiar with fundamental AI concepts and services in Azure.
 iconUrl: /learn/achievements/generic-badge.svg
@@ -43,4 +43,5 @@ units:
 - learn.wwl.finetune-model-copilot-ai-studio.summary
 badge:
   uid: learn.wwl.finetune-model-copilot-ai-studio.badge
+
 

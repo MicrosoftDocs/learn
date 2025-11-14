@@ -4970,7 +4970,7 @@ achievements:
 - uid: learn.chat-completions-badge
   type: badge
   title: Introduction to chat completion
-  summary: This module introduces you to prompt engineering techniques, such as chat completion and system messages, and how to use them in the Azure AI Foundry portal playground.
+  summary: This module introduces you to prompt engineering techniques, such as chat completion and system messages, and how to use them in the Microsoft Foundry portal playground.
   iconUrl: /learn/achievements/generic-badge.svg
 - uid: learn.wwl.examine-iot-hub-message-routing.badge
   type: badge
@@ -5397,8 +5397,8 @@ achievements:
   iconUrl: /training/achievements/generic-trophy.svg
 - uid: learn.wwl.introduction-to-azure-ai-studio.badge
   type: badge
-  title: Introduction to Azure AI Foundry
-  summary: Microsoft Azure offers multiple services that enable developers to build amazing AI-powered solutions. Azure AI Foundry brings these services together in a single unified experience for AI development on the Azure cloud platform.
+  title: Introduction to Microsoft Foundry
+  summary: Microsoft Azure offers multiple services that enable developers to build amazing AI-powered solutions. Microsoft Foundry brings these services together in a single unified experience for AI development on the Azure cloud platform.
   iconUrl: /learn/achievements/generic-badge.svg
 - uid: learn.wwl.prepare-to-develop-ai-solutions-azure.badge
   type: badge
@@ -6173,7 +6173,7 @@ achievements:
 - uid: learn.intro-generative-ai.trophy
   type: trophy
   title: 'Microsoft Azure AI Fundamentals: Generative AI'
-  summary: "Generative AI is a form of artificial intelligence in which models are trained to generate new original content based on natural language input. In other words, you can describe a desired output in normal everyday language, and the model can respond by creating appropriate text, image, code, and more. \n\nTake this learning path to get started with generative AI. In it, you'll learn how to:\n- Understand core concepts of generative AI\n- Prepare for an AI development project\n- Describe considerations and practices for responsible generative AI\n- Build an AI agent using Azure AI Foundry"
+  summary: "Generative AI is a form of artificial intelligence in which models are trained to generate new original content based on natural language input. In other words, you can describe a desired output in normal everyday language, and the model can respond by creating appropriate text, image, code, and more. \n\nTake this learning path to get started with generative AI. In it, you'll learn how to:\n- Understand core concepts of generative AI\n- Prepare for an AI development project\n- Describe considerations and practices for responsible generative AI\n- Build an AI agent using Microsoft Foundry"
   iconUrl: /learn/achievements/generic-badge.svg
 - uid: learn.advocates.azure-functions-and-signalr.badge
   type: trophy
@@ -6303,7 +6303,7 @@ achievements:
 - uid: learn.wwl.develop-ai-solutions-azure-openai.trophy
   type: trophy
   title: Develop Generative AI solutions with Azure OpenAI in Foundry Models
-  summary: Azure OpenAI in Foundry Models provides access to OpenAI's powerful large language models such as GPT and Embeddings models. These models enable various natural language processing (NLP) solutions to understand, converse, and generate content. Users can access the service through REST APIs, SDKs, and Azure AI Foundry.
+  summary: Azure OpenAI in Foundry Models provides access to OpenAI's powerful large language models such as GPT and Embeddings models. These models enable various natural language processing (NLP) solutions to understand, converse, and generate content. Users can access the service through REST APIs, SDKs, and Microsoft Foundry.
   iconUrl: /training/achievements/develop-ai-solutions-azure-openai.svg
 - uid: learn.send-messages-rabbitmq-dotnet-aspire-app.badge
   type: badge
@@ -7276,4 +7276,5 @@ achievements:
   title: Introduction to machine learning
   summary: A high-level overview of machine learning for people with little or no knowledge of computer science and statistics. You'll learn some essential concepts, explore data, and interactively go through the machine learning lifecycle, using Python to train, save, and use a machine learning model, just like in the real world.
   iconUrl: /training/achievements/machine-learning/introduction-to-machine-learning.svg
+
 

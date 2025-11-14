@@ -13,7 +13,7 @@ title: Develop generative AI apps in Azure
 prerequisites: |
   Before starting this module, you should be familiar with fundamental AI concepts and services in Azure. You should also have programming experience.
 summary: |
-  Generative Artificial Intelligence (AI) is becoming more accessible through comprehensive development platforms like Azure AI Foundry. Learn how to build generative AI applications that use language models to chat with your users.
+  Generative Artificial Intelligence (AI) is becoming more accessible through comprehensive development platforms like Microsoft Foundry. Learn how to build generative AI applications that use language models to chat with your users.
 iconUrl: /training/achievements/generic-badge.svg
 levels:
 - intermediate
@@ -37,3 +37,4 @@ modules:
 - learn.wwl.evaluate-models-azure-ai-studio
 trophy:
   uid: learn.wwl.create-custom-copilots-ai-studio.trophy
+

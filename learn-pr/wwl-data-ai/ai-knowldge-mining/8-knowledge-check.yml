@@ -30,9 +30,9 @@ quiz:
     - content: "Azure Functions"
       isCorrect: false
       explanation: "Incorrect. Azure Functions can be used to implement custom skills, but isn't required for built-in skills."
-    - content: "Azure AI services"
+    - content: "Foundry Tools"
       isCorrect: true
-      explanation: "Correct. An Azure AI services resource is required to support built-in skills."
+      explanation: "Correct. A Foundry Tools resource is required to support built-in skills."
     - content: "Azure Cosmos DB"
       isCorrect: false
       explanation: "Incorrect. Azure Cosmos DB could be a data source fo Azure AI Search, but it isn't required for built-in skills."

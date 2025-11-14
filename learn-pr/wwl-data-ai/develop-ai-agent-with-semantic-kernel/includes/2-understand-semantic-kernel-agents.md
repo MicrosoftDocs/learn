@@ -16,11 +16,11 @@ The Microsoft Agent Framework offers different components that can be used indiv
 
 - **Workflow orchestration** - supports sequential workflows, concurrent execution, group chat, and handoff patterns for complex multi-agent collaboration.
 
-The Microsoft Agent Framework helps streamline the creation of agents and allows multiple agents to work together in conversations while including human input. The framework supports different types of agents from multiple providers, including Azure AI Foundry, Azure OpenAI, OpenAI, Microsoft Copilot Studio, and Anthropic agents.
+The Microsoft Agent Framework helps streamline the creation of agents and allows multiple agents to work together in conversations while including human input. The framework supports different types of agents from multiple providers, including Microsoft Foundry, Azure OpenAI, OpenAI, Microsoft Copilot Studio, and Anthropic agents.
 
-### What is an Azure AI Foundry Agent?
+### What Is a Microsoft Foundry Agent?
 
-Azure AI Foundry Agents provide enterprise-level capabilities using the Azure AI Foundry Agent Service. These agents offer advanced features for complex enterprise scenarios. Key benefits include:
+Microsoft Foundry Agents provide enterprise-level capabilities using the Microsoft Foundry Agent Service. These agents offer advanced features for complex enterprise scenarios. Key benefits include:
 
 - **Enterprise-level capabilities** – Built for Azure environments with advanced AI features including code interpreter, function tools integration, and Model Context Protocol (MCP) support.
 
@@ -30,7 +30,7 @@ Azure AI Foundry Agents provide enterprise-level capabilities using the Azure AI
 
 - **Secure enterprise integration** – Enables secure and compliant AI agent development with Azure CLI authentication, RBAC, and customizable storage options.
 
-When you use Azure AI Foundry Agents, you get the full power of enterprise Azure capabilities combined with the features of the Microsoft Agent Framework. These features can help you create robust AI-driven workflows that can scale efficiently across business applications.
+When you use Microsoft Foundry Agents, you get the full power of enterprise Azure capabilities combined with the features of the Microsoft Agent Framework. These features can help you create robust AI-driven workflows that can scale efficiently across business applications.
 
 ### Agent framework core concepts
 
@@ -49,3 +49,4 @@ When you use Azure AI Foundry Agents, you get the full power of enterprise Azure
 - **Authentication methods** - supports multiple authentication methods including Azure CLI credentials, API keys, MSAL for Microsoft business authentication, and role-based access control.
 
 This framework supports autonomous, multi-agent AI behaviors while maintaining a flexible architecture that lets you mix and match agents, tools, and workflows as needed. The design lets you switch between OpenAI, Azure OpenAI, Anthropic, and other providers without changing your code, making it easy to build AI systems—from simple chatbots to complex business solutions.
+

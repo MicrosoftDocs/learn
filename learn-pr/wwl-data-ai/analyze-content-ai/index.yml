@@ -1,8 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.analyze-content-ai
 metadata:
-  title: Create a multimodal analysis solution with Azure AI Content Understanding 
-  description: Use Azure AI Content Understanding for multimodal content analysis and information extraction.
+  title: Create a multimodal analysis solution with Azure Content Understanding 
+  description: Use Azure Content Understanding for multimodal content analysis and information extraction.
   author: wwlpublish
   ms.author: gmalc
   ms.date: 08/28/2025
@@ -11,12 +11,12 @@ metadata:
   ai-usage: ai-assisted
   ms.collection:
     - wwl-ai-copilot
-title: Create a multimodal analysis solution with Azure AI Content Understanding 
-summary: Use Azure AI Content Understanding for multimodal content analysis and information extraction.
+title: Create a multimodal analysis solution with Azure Content Understanding 
+summary: Use Azure Content Understanding for multimodal content analysis and information extraction.
 abstract: |
   After completing this module, you will be able to:
-  - Describe capabilities of Azure AI Content Understanding.
-  - Use Azure AI Content Understanding to build a content analyzer.
+  - Describe capabilities of Azure Content Understanding.
+  - Use Azure Content Understanding to build a content analyzer.
   - Consume a Content Understanding analyzer by using the REST API.
 prerequisites: |
   Before starting this module, you should:

@@ -1,8 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.develop-ai-agents-vs-code
 metadata:
-  title: Develop AI agents with the Azure AI Foundry extension in Visual Studio Code
-  description: Learn how to build, test, and deploy AI agents using the Azure AI Foundry extension in Visual Studio Code.
+  title: Develop AI agents with the Microsoft Foundry extension in Visual Studio Code
+  description: Learn how to build, test, and deploy AI agents using the Microsoft Foundry extension in Visual Studio Code.
   author: buzahid
   ms.author: buzahid
   ms.date: 10/06/2025
@@ -10,8 +10,8 @@ metadata:
   ms.topic: module-standard-task-based
   ai-usage: ai-assisted
   ms.custom: ai-learning-hub
-title: Develop AI agents with the Azure AI Foundry extension in Visual Studio Code
-summary: "Learn how to build, test, and deploy AI agents using the Azure AI Foundry extension in Visual Studio Code."
+title: Develop AI agents with the Microsoft Foundry extension in Visual Studio Code
+summary: "Learn how to build, test, and deploy AI agents using the Microsoft Foundry extension in Visual Studio Code."
 abstract: |
   By the end of this module, you'll be able to:
     - Configure and deploy AI agents using the agent designer
@@ -41,4 +41,5 @@ units:
 - learn.wwl.develop-ai-agents-vs-code.summary
 badge:
   uid: learn.wwl.develop-ai-agents-vs-code.badge
+
 

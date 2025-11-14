@@ -36,12 +36,12 @@ Key capabilities include:
 ### The Next Step in Intelligent Systems
 AI Agent Frameworks elevate automation by creating systems that can **learn, adapt, and act independently**. They represent the next evolution in AI—moving from simple assistance to **autonomous collaboration** and **continuous optimization**.
 
-## Azure AI Foundry Agent Service
+## Microsoft Foundry Agent Service
 
-Azure AI Foundry Agent Service is a managed service in Azure that is designed to provide a framework for creating, managing, and using AI agents within Azure AI Foundry. The service is based on the OpenAI Assistants API but with increased choice of models, data integration, and enterprise security; enabling you to use both the OpenAI SDK and the Azure Foundry SDK to develop agentic solutions.
+Microsoft Foundry Agent Service is a managed service in Azure that is designed to provide a framework for creating, managing, and using AI agents within Microsoft Foundry. The service is based on the OpenAI Assistants API but with increased choice of models, data integration, and enterprise security; enabling you to use both the OpenAI SDK and the Azure Foundry SDK to develop agentic solutions.
 
 > [!TIP]
-> For more information about Foundry Agent Service, see the **[Azure AI Foundry Agent Service documentation](/azure/ai-services/agents/)**.
+> For more information about Foundry Agent Service, see the **[Microsoft Foundry Agent Service documentation](/azure/ai-services/agents/)**.
 
 ## OpenAI Assistants API
 
@@ -96,3 +96,4 @@ With such a wide range of available tools and frameworks, it can be challenging 
 
 > [!NOTE]
 > There's overlap between the capabilities of each agent development solution, and in some cases factors like existing familiarity with tools, programming language preferences, and other considerations will influence the decision.
+

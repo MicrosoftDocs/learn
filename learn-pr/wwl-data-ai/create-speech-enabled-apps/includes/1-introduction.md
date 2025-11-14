@@ -1,5 +1,5 @@
 
-Azure AI Speech provides APIs that you can use to build speech-enabled applications. This includes:
+Azure Speech provides APIs that you can use to build speech-enabled applications. This includes:
 
 - **Speech to text**: An API that enables *speech recognition* in which your application can accept spoken input.
 - **Text to speech**: An API that enables *speech synthesis* in which your application can provide spoken output.
@@ -10,7 +10,7 @@ Azure AI Speech provides APIs that you can use to build speech-enabled applicati
 This module focuses on speech recognition and speech synthesis, which are core capabilities of any speech-enabled application.
 
 > [!NOTE]
-> The code examples in this module are provided in Python, but you can use any of the available Azure AI Speech SDK packages to develop speech-enabled applications in your preferred language. Available SDK packages include:
+> The code examples in this module are provided in Python, but you can use any of the available Azure Speech SDK packages to develop speech-enabled applications in your preferred language. Available SDK packages include:
 >
 > - [azure-cognitiveservices-speech for Python](https://pypi.org/project/azure-cognitiveservices-speech?azure-portal=true)
 > - [Microsoft.CognitiveServices.Speech for Microsoft .NET](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech?azure-portal=true)

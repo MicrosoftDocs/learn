@@ -12,17 +12,17 @@ durationInMinutes: 3
 content: |
 quiz:
   questions:
-  - content: "What are the key steps to create an Azure AI Foundry Agent using the Microsoft Agent Framework?"  
+  - content: "What are the key steps to create a Microsoft Foundry Agent using the Microsoft Agent Framework?"  
     choices:  
       - content: "Deploy a custom AI model before creating an agent definition in the Azure portal."  
         isCorrect: false  
-        explanation: "Incorrect. Azure AI Foundry Agents use existing deployed models and don't require custom model deployment or portal configuration." 
+        explanation: "Incorrect. Microsoft Foundry Agents use existing deployed models and don't require custom model deployment or portal configuration." 
       - content: "Initialize the agent by defining a model in the `AgentThread` constructor."  
         isCorrect: false  
         explanation: "Incorrect. The `ChatAgent` specifies the model through the client, not the thread constructor."   
       - content: "Create an `AzureAIAgentClient`, define a ChatAgent with instructions and tools, and create an `AgentThread` for conversations."  
         isCorrect: true   
-        explanation: "Correct. These components are needed to create a functional Azure AI Foundry Agent that can handle conversations and use tools."  
+        explanation: "Correct. These components are needed to create a functional Microsoft Foundry Agent that can handle conversations and use tools."  
   - content: "Which component in the Microsoft Agent Framework manages conversation state and stores messages?"  
     choices:  
       - content: "AgentThread"  
@@ -33,8 +33,8 @@ quiz:
         explanation: "Incorrect. `ChatAgent` is the main agent class that handles conversations, but AgentThread specifically manages the conversation history and context."  
       - content: "AzureAIAgentClient"  
         isCorrect: false  
-        explanation: "Incorrect. `AzureAIAgentClient` manages the connection to Azure AI Foundry projects but doesn't handle conversation state."  
-  - content: "How do you add custom functionality to an Azure AI Foundry Agent in the Microsoft Agent Framework?"  
+        explanation: "Incorrect. `AzureAIAgentClient` manages the connection to Microsoft Foundry projects but doesn't handle conversation state."  
+  - content: "How do you add custom functionality to a Microsoft Foundry Agent in the Microsoft Agent Framework?"  
     choices:  
       - content: "Configure custom functions in the Azure portal and link them to the agent through connection strings."  
         isCorrect: false  
@@ -45,3 +45,4 @@ quiz:
       - content: "Modify the AI model's architecture to integrate the custom functionality directly."  
         isCorrect: false  
         explanation: "Incorrect. Tools work through function calling and don't require modifications to the AI model itself."
+

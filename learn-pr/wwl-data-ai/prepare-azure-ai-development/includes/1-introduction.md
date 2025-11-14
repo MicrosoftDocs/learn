@@ -2,4 +2,5 @@ The growth in the use of artificial intelligence (AI) in general, and *generativ
 
 Microsoft Azure provides multiple services that you can use to create AI solutions. However, before embarking on an AI application development project, it's useful to consider the available options for services, tools, and frameworks as well as some principles and practices that can help you succeed.
 
-This module explores some of the key considerations for planning an AI development project, and introduces **Azure AI Foundry**; a comprehensive platform for AI development on Microsoft Azure.
+This module explores some of the key considerations for planning an AI development project, and introduces **Microsoft Foundry**; a comprehensive platform for AI development on Microsoft Azure.
+

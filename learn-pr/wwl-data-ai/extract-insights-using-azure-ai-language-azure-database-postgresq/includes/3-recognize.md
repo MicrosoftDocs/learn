@@ -1,4 +1,4 @@
-Named entity recognition is a [capability](/azure/ai-services/language-service/named-entity-recognition/overview) offered by [Azure AI Language](/azure/ai-services/language-service/overview). It identifies and categorizes entities in unstructured text. It supports several [categories](/azure/ai-services/language-service/personally-identifiable-information/concepts/entity-categories) of entity, including people, locations, events, products, organizations, etc.
+Named entity recognition is a [capability](/azure/ai-services/language-service/named-entity-recognition/overview) offered by [Azure Language](/azure/ai-services/language-service/overview). It identifies and categorizes entities in unstructured text. It supports several [categories](/azure/ai-services/language-service/personally-identifiable-information/concepts/entity-categories) of entity, including people, locations, events, products, organizations, etc.
 
 There are several ways to call the [named entity recognition API](/azure/ai-services/language-service/named-entity-recognition/how-to-call). Here, you use the `azure_ai` extension to recognize entities from the text in SQL queries.
 

@@ -1,4 +1,4 @@
-**Azure AI Language** is a part of the Azure AI services offerings that can perform advanced natural language processing over unstructured text. Azure AI Language's text analysis features include:
+**Azure Language** is a part of the Foundry Tools offerings that can perform advanced natural language processing over unstructured text. Azure Language's text analysis features include:
 
 - **Named entity recognition** identifies people, places, events, and more. This feature can also be customized to extract custom categories. 
 - **Entity linking** identifies known entities together with a link to Wikipedia.
@@ -12,7 +12,7 @@ Let's take a closer look at some of these features.
 
 ## Entity recognition and linking
 
-You can provide Azure AI Language with unstructured text and it returns a list of *entities* in the text that it recognizes. An entity is an item of a particular type or a category; and in some cases, subtype, for example: 
+You can provide Azure Language with unstructured text and it returns a list of *entities* in the text that it recognizes. An entity is an item of a particular type or a category; and in some cases, subtype, for example: 
 
 |Type|SubType|Example|
 |---|---|---|
@@ -38,9 +38,9 @@ You can provide Azure AI Language with unstructured text and it returns a list o
 |US-based Phone Number||"(312) 555-0176"|
 |IP Address||"10.0.1.125"|
 
-Azure AI Language also supports *entity linking* to help disambiguate entities by linking to a specific reference. For recognized entities, the service returns a URL for a relevant *Wikipedia* article.
+Azure Language also supports *entity linking* to help disambiguate entities by linking to a specific reference. For recognized entities, the service returns a URL for a relevant *Wikipedia* article.
 
-For example, suppose you use Azure AI Language to detect entities in the following restaurant review extract:
+For example, suppose you use Azure Language to detect entities in the following restaurant review extract:
 
 > "*I ate at the restaurant in Seattle last week.*"
 
@@ -51,7 +51,7 @@ For example, suppose you use Azure AI Language to detect entities in the followi
 
 ## Language detection
 
-You can identify the language in which text is written with Azure AI Language's language detection capability. For each document submitted the service detects:
+You can identify the language in which text is written with Azure Language's language detection capability. For each document submitted the service detects:
 
 - The language name (for example "English").
 - The ISO 6391 language code (for example, "en").
@@ -65,7 +65,7 @@ For example, consider a scenario where you own and operate a restaurant. Custome
 >
 > **Review 3**: "*The croque monsieur avec frites was terrific. Bon appetit!*"
 
-You can use the text analytics capabilities in Azure AI Language to detect the language for each of these reviews; and it might respond with the following results:
+You can use the text analytics capabilities in Azure Language to detect the language for each of these reviews; and it might respond with the following results:
 
 |Document|Language Name| ISO 6391 Code|Score|
 |---|---|---|---|
@@ -75,13 +75,13 @@ You can use the text analytics capabilities in Azure AI Language to detect the l
 
 Notice that the language detected for review 3 is English, despite the text containing a mix of English and French. The language detection service focuses on the ***predominant*** language in the text. The service uses an algorithm to determine the predominant language, such as length of phrases or total amount of text for the language compared to other languages in the text. The predominant language is the value returned, along with the language code. The confidence score might be less than 1 as a result of the mixed language text.
 
-There might be text that is ambiguous in nature, or that has mixed language content. These situations can present a challenge.  An ambiguous content example would be a case where the document contains limited text, or only punctuation.  For example, using Azure AI Language to analyze the text ":-)", results in a value of **unknown** for the language name and the language identifier, and a score of **NaN** (which is used to indicate *not a number*).
+There might be text that is ambiguous in nature, or that has mixed language content. These situations can present a challenge.  An ambiguous content example would be a case where the document contains limited text, or only punctuation.  For example, using Azure Language to analyze the text ":-)", results in a value of **unknown** for the language name and the language identifier, and a score of **NaN** (which is used to indicate *not a number*).
 
 ## Sentiment analysis and opinion mining
 
-The text analytics capabilities in Azure AI Language can evaluate text and return sentiment scores and labels for each sentence. This capability is useful for detecting positive and negative sentiment in social media, customer reviews, discussion forums and more.
+The text analytics capabilities in Azure Language can evaluate text and return sentiment scores and labels for each sentence. This capability is useful for detecting positive and negative sentiment in social media, customer reviews, discussion forums and more.
 
-Azure AI Language uses a prebuilt machine learning classification model to evaluate the text. The service returns  sentiment scores in three categories: positive, neutral, and negative. In each of the categories, a score between 0 and 1 is provided. Scores indicate how likely the provided text is a particular sentiment. One document sentiment is also provided.
+Azure Language uses a prebuilt machine learning classification model to evaluate the text. The service returns  sentiment scores in three categories: positive, neutral, and negative. In each of the categories, a score between 0 and 1 is provided. Scores indicate how likely the provided text is a particular sentiment. One document sentiment is also provided.
 
 For example, the following two restaurant reviews could be analyzed for sentiment:
 
@@ -122,5 +122,5 @@ Key phrase extraction can provide some context to this review by extracting the 
 - ambiance
 - place
 
-Next, let's look at Azure AI Language's conversational AI capabilities.
+Next, let's look at Azure Language's conversational AI capabilities.
 

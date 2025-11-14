@@ -19,7 +19,7 @@ quiz:
   questions:
   - content: "You want Azure Video Indexer to analyze a video. What must you do first?"
     choices:
-    - content: "Use the Azure AI Vision service to extract key frames from the video."
+    - content: "Use the Azure Vision service to extract key frames from the video."
       isCorrect: false
       explanation: "That's incorrect. You don't need to extract frames from the video before analyzing it."
     - content: "Upload the video to Azure Video Indexer and index it."

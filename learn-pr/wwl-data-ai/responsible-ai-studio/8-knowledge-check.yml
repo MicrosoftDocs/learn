@@ -26,7 +26,7 @@ quiz:
     - content: "To evaluate the cost of cloud services required to implement your solution"  
       isCorrect: false  
       explanation: "An AI Impact Assessment typically doesn't include evaluations of cloud service costs."  
-  - content: "What capability of Azure AI Foundry helps mitigate harmful content generation at the Safety System level?"  
+  - content: "What capability of Microsoft Foundry helps mitigate harmful content generation at the Safety System level?"  
     choices:  
     - content: "DALL-E model support"  
       isCorrect: false  
@@ -48,4 +48,5 @@ quiz:
     - content: "To enable you to charge more for the solution"  
       isCorrect: false  
       explanation: "The goal of a phased delivery plan is to reduce potential harm, not to maximize revenue."  
+
 

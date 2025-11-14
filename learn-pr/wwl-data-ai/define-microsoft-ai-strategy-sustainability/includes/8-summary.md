@@ -1,6 +1,6 @@
 The world needs sustainability solutions to build a better future. We must rethink the way we approach many industrial processes to ensure they’re energetically efficient, reduce pollution and waste, and so on. This task involves many sectors, such as farming, manufacturing, land management, and mobility. This module illustrates with real examples that leading organizations are using AI to boost their sustainability initiatives.
 
-Microsoft offers a wide range of AI products and services to enable these sustainability scenarios. Microsoft Cloud for Sustainability is tailored to the sector’s needs, but you can also use Azure Machine Learning and Azure AI Services, among others. The latest generative AI models are also available via Azure OpenAI Services.
+Microsoft offers a wide range of AI products and services to enable these sustainability scenarios. Microsoft Cloud for Sustainability is tailored to the sector’s needs, but you can also use Azure Machine Learning and Microsoft Foundry, among others. The latest generative AI models are also available via Azure OpenAI Services.
 
 Now that you've reviewed this module, you should:
 
@@ -16,7 +16,7 @@ Now that you've reviewed this module, you should:
 * To learn more about Microsoft commitment to responsible AI, visit our [Responsible AI website](https://www.microsoft.com/ai/responsible-ai).
 * To learn more about the models delivered by Azure OpenAI Service, read our [technical documentation on Azure OpenAI Service](/azure/cognitive-services/openai/concepts/models).
 * To learn more about privacy and security in Azure OpenAI Service, read our [legal documentation on Azure OpenAI Service](/legal/cognitive-services/openai/data-privacy).
-* To learn more about all the prebuilt AI models available at Azure AI Services, read our [technical documentation on AI Services](/azure/cognitive-services/).
+* To learn more about all the prebuilt AI models available at Foundry Tools, read our [technical documentation on AI Services](/azure/cognitive-services/).
 * To learn more about the services included in Azure Machine Learning, visit our [Azure Machine Learning website](https://azure.microsoft.com/products/machine-learning/).
 * To learn more about the initiatives within the FarmVibes project, visit the [FarmVibes website](https://www.microsoft.com/research/project/project-farmvibes/).
 * To access the AI models developed within the FarmVibes project, visit the [FarmVibes.AI repository](https://github.com/microsoft/farmvibes-ai).

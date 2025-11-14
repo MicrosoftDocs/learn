@@ -16,9 +16,9 @@ summary: AI gives you the power to unlock insights from your data. In this modul
 abstract: |
   After completing this module, you'll be able to:
   - Identify Azure AI services for information extraction
-  - Describe Azure AI Vision information extraction capabilities
-  - Describe Azure AI Content Understanding information extraction capabilities
-  - Describe Azure AI Document Intelligence information extraction capabilities
+  - Describe Azure Vision information extraction capabilities
+  - Describe Azure Content Understanding information extraction capabilities
+  - Describe Azure Document Intelligence information extraction capabilities
   - Describe Azure AI Search information extraction capabilities
 prerequisites: |
   Before starting this module, you should already have:

@@ -6,7 +6,8 @@ In this module, you learned:
 
 ### Learn more
 
-- [Prompt flow in Azure AI Foundry portal](/azure/ai-foundry/concepts/prompt-flow)
+- [Prompt flow in Microsoft Foundry portal](/azure/ai-foundry/concepts/prompt-flow)
 - [Prompt engineering techniques](/azure/ai-services/openai/concepts/prompt-engineering)
-- [Azure AI Foundry Discord](https://aka.ms/azureaifoundry/discord)
-- [Azure AI Foundry Developer Forum](https://aka.ms/azureaifoundry/forum)
+- [Microsoft Foundry Discord](https://aka.ms/azureaifoundry/discord)
+- [Microsoft Foundry Developer Forum](https://aka.ms/azureaifoundry/forum)
+

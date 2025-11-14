@@ -1,4 +1,4 @@
-When you develop a generative AI app, you need to integrate language models into your application. To be able to use a language model, you need to deploy the model. Let's explore how to deploy language models in the Azure AI Foundry, after first understanding why to deploy a model.
+When you develop a generative AI app, you need to integrate language models into your application. To be able to use a language model, you need to deploy the model. Let's explore how to deploy language models in the Microsoft Foundry, after first understanding why to deploy a model.
 
 ## Why deploy a model?
 
@@ -16,25 +16,27 @@ When a user asks a question:
 1. The endpoint specifies the model that processes the request.
 1. The result is sent back to the app through an API response.
 
-Now that you understand why you want to deploy a model, let's explore the deployment options with Azure AI Foundry.
+Now that you understand why you want to deploy a model, let's explore the deployment options with Microsoft Foundry.
 
-## Deploy a language model with Azure AI Foundry
+## Deploy a language model with Microsoft Foundry
 
-When you deploy a language model with Azure AI Foundry, you have several types available, which depend on the model you want to deploy.
+When you deploy a language model with Microsoft Foundry, you have several types available, which depend on the model you want to deploy.
 
 Deploy options include:
 
-- **Standard deployment**: Models are hosted in the Azure AI Foundry project resource.
-- **Serverless compute**: Models are hosted in Microsoft-managed dedicated serverless endpoints in an Azure AI Foundry hub project.
-- **Managed compute**: Models are hosted in managed virtual machine images in an Azure AI Foundry hub project.
+- **Standard deployment**: Models are hosted in the Microsoft Foundry project resource.
+- **Serverless compute**: Models are hosted in Microsoft-managed dedicated serverless endpoints in a Microsoft Foundry hub project.
+- **Managed compute**: Models are hosted in managed virtual machine images in a Microsoft Foundry hub project.
 
 The associated cost depends on the type of model you deploy, which deployment option you choose, and what you are doing with the model:
 
 | | Standard deployment |  Serverless compute | Managed compute |
 |---------------|----------------------|--------------------------|--------------------|
-| **Supported models** | Azure AI Foundry models (including Azure OpenAI models and Models-as-a-service models) | Foundry Models with pay-as-you-go billing | Open and custom models |
-| **Hosting service** | Azure AI Foundry resource | AI Project resource in a hub | AI Project resource in a hub |
+| **Supported models** | Microsoft Foundry models (including Azure OpenAI models and Models-as-a-service models) | Foundry Models with pay-as-you-go billing | Open and custom models |
+| **Hosting service** | Microsoft Foundry resource | AI Project resource in a hub | AI Project resource in a hub |
 | **Billing basis** | Token-based billing | Token-based billing | Compute-based billing |
 
 > [!NOTE]
 > *Standard deployment* is recommended for most scenarios.
+
+

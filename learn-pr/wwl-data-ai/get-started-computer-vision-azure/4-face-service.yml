@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.get-started-computer-vision.face-service
-title: Understand Azure AI Vision's Face service capabilities
+title: Understand Azure Vision's Face service capabilities
 metadata:
-  title: Understand Azure AI Vision's Face service capabilities
+  title: Understand Azure Vision's Face service capabilities
   description: Understand Azure AI Face service
   author: wwlpublish
   ms.author: sheryang
