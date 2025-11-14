@@ -12,7 +12,7 @@ Imagine you assigned your class a math lesson on fractions using Microsoft Learn
       - Average score: The class average for the assignment.
       - Students needing support: Learners flagged as potentially struggling based on their results or activity patterns.
 
-![A screenshot showing insights on assignments in Microsoft Learning Zone.](/media/insights.png)(/media/insights-expanded.png#lightbox)
+[![A screenshot showing insights on assignments in Microsoft Learning Zone.](/media/insights-inline.png)](/media/insights-expanded.png#lightbox)
 
 3. View detailed reports
 
@@ -20,7 +20,7 @@ Imagine you assigned your class a math lesson on fractions using Microsoft Learn
    - Review their participation, scores, and completed exercises.
    - You can also switch to a per-exercise view to see which questions or tasks most students found challenging.
 
-![A screenshot depicting detailed assignment insights in Microsoft Learning Zone.](/media/detailed-report.png)(/media/detailed-report-expanded.png#lightbox)
+[![A screenshot depicting detailed assignment insights in Microsoft Learning Zone.](/media/detailed-report-inline.png)](/media/detailed-report-expanded.png#lightbox)
 
 4. Invite more learners
 
