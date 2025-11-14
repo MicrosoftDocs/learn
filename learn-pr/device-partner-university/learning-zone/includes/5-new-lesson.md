@@ -8,17 +8,17 @@ Imagine you’re a high school science teacher preparing for a unit on ecosystem
 
    - Navigate to My Lessons and select Create new lesson.
 
-[![A screenshot of the lesson source options available in Microsoft Learning Zone.](/media/create-new-lesson-inline.png)](/media/create-new-lesson-expanded.png#lightbox)
+   [![A screenshot of the lesson source options available in Microsoft Learning Zone.](/media/create-new-lesson-inline.png)](/media/create-new-lesson-expanded.png#lightbox)
 
 2. Choose your lesson source
 
    - **From a file**: Upload your document with relevant teaching content (for example, class notes, handouts, or slides).
 
-[![A screenshot of the option to create a lesson from a file in Microsoft Learning Zone.](/media/from-file-inline.png)](/media/from-file-expanded.png#lightbox)
+   [![A screenshot of the option to create a lesson from a file in Microsoft Learning Zone.](/media/from-file-inline.png)](/media/from-file-expanded.png#lightbox)
 
    - **From the Resource Library**: Search for a topic, then select the content you want to include.
 
-[![A screenshot of the option to create a lesson from the resource library in Microsoft Learning Zone.](/media/from-library-inline.png)](/media/from-library-expanded.png#lightbox)
+   [![A screenshot of the option to create a lesson from the resource library in Microsoft Learning Zone.](/media/from-library-inline.png)](/media/from-library-expanded.png#lightbox)
 
 3. Set the lesson goal
 
@@ -26,12 +26,12 @@ Imagine you’re a high school science teacher preparing for a unit on ecosystem
 
    - Choose the goal of your lesson. Based on your selection, Microsoft Learning Zone generates a set of content slides, practice activities, and quizzes.
 
-[![A screenshot of the option to choose a goal for a lesson in Microsoft Learning Zone.](/media/lesson-goal-inline.png)](/media/lesson-goal-expanded.png#lightbox)
+   [![A screenshot of the option to choose a goal for a lesson in Microsoft Learning Zone.](/media/lesson-goal-inline.png)](/media/lesson-goal-expanded.png#lightbox)
 
    - You can also generate a Kahoot! quiz to engage students interactively.
 
-> [!NOTE]
-> For more details about the technology used to generate lessons, visit [Microsoft Learning Zone-Interactive lesson generation](https://support.microsoft.com/topic/microsoft-learning-zone-interactive-lesson-generation-176b38b8-fe2b-421d-b92c-b14a79da11ac).
+   > [!NOTE]
+   > For more details about the technology used to generate lessons, visit [Microsoft Learning Zone-Interactive lesson generation](https://support.microsoft.com/topic/microsoft-learning-zone-interactive-lesson-generation-176b38b8-fe2b-421d-b92c-b14a79da11ac).
 
 4. Review and adjust
 
@@ -41,14 +41,14 @@ Imagine you’re a high school science teacher preparing for a unit on ecosystem
 
    To learn more about reviewing and editing your lessons, go to [Review and edit your lesson in Microsoft Learning Zone](https://support.microsoft.com/en-us/topic/review-and-edit-your-lesson-in-microsoft-learning-zone-67143592-2b5c-43ab-93f1-9f6f192a04c1).
 
-[![A screenshot depicting editing of a lesson activity in Microsoft Learning Zone.](/media/adjust-lesson-inline.png)](/media/adjust-lesson-expanded.png#lightbox)
+   [![A screenshot depicting editing of a lesson activity in Microsoft Learning Zone.](/media/adjust-lesson-inline.png)](/media/adjust-lesson-expanded.png#lightbox)
 
-4. Save your lesson
+5. Save your lesson
 
    - Once you’re satisfied with the lesson content, select Save.
 
-> [!NOTE]
-> Premade lessons are also available on the Microsoft Learning Zone. It provides access to a comprehensive Content Gallery, enabling you to efficiently locate high-quality, premade lessons from a range of reputable sources. To access the Content Gallery, navigate to the Discover tab.
+   > [!NOTE]
+   > Premade lessons are also available on the Microsoft Learning Zone. It provides access to a comprehensive Content Gallery, enabling you to efficiently locate high-quality, premade lessons from a range of reputable sources. To access the Content Gallery, navigate to the Discover tab.
 
 Now, let’s pretend you also need to assess your students’ understanding of the material in a fun and interactive way. Instead of creating a separate quiz from scratch, you can use Microsoft Learning Zone to generate a Kahoot! quiz directly from your lesson. This allows you to instantly provide students with an engaging review activity that reinforces learning and gives immediate feedback.
 
@@ -58,7 +58,7 @@ The Microsoft Learning Zone application includes the ability to generate Kahoot!
 
 - Choose Kahoot! as your goal: If you select a Kahoot! quiz as the goal of your lesson before generating it, you can connect the generated quiz to your Kahoot account.
 
-[![A screenshot depicting Khoot! quiz as the chosen goal for a lesson in Microsoft Learning Zone.](/media/kahoot-goal-inline.png)](/media/kahoot-goal-expanded.png#lightbox)
+[![A screenshot depicting Kahoot! quiz as the chosen goal for a lesson in Microsoft Learning Zone.](/media/kahoot-goal-inline.png)](/media/kahoot-goal-expanded.png#lightbox)
 
 - Quiz Location: The quiz will "live" in Kahoot, not in Microsoft Learning Zone. Once created, it becomes part of your Kahoot account and is managed there.
 

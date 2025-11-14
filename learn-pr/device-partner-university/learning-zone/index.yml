@@ -35,7 +35,7 @@ products:
   - windows-11
 units:
   - learn.dpu.learning-zone.intro
-  - learn.dpu.learning-zone.msft-learn
+  - learn.dpu.learning-zone.microsoft-learn
   - learn.dpu.learning-zone.activate
   - learn.dpu.learning-zone.personalized-lessons
   - learn.dpu.learning-zone.new-lesson
