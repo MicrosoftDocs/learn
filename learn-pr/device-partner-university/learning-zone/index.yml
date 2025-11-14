@@ -1,0 +1,47 @@
+### YamlMime:Module
+uid: learn.dpu.learning-zone
+title: Getting started with Microsoft Learning Zone
+metadata:
+  title: Getting Started With Microsoft Learning Zone
+  description: This module guides you through downloading Microsoft Learning Zone, generating and editing lessons, assigning activities, and using insights and the Content Gallery to support effective, data-driven teaching.
+  ms.date: 11/14/2025
+  author: Stephanie-Rosenzweig
+  ms.author: v-stephanier
+  ms.topic: module
+  ms.service: microsoft-365-education
+  ms.custom: CE022025-1
+summary: >
+  This module guides you through downloading Microsoft Learning Zone, generating and editing lessons, assigning activities, and using insights and the Content Gallery to support effective, data-driven teaching.
+abstract: |2+
+
+prerequisites: |
+  - A Copilot+ PC device
+  - A Microsoft 365 Education license (A1, A3, or A5)
+  - English language (the app is currently available only in English)
+  - Your IT administrator must enable the product for public preview access
+  - Ability to download and install the app from https://aka.ms/getLZ
+iconUrl: /training/achievements/learning-zone.svg
+ratingEnabled: false
+levels:
+  - beginner
+roles:
+  - administrator
+  - higher-ed-educator
+  - k-12-educator
+  - school-leader
+  - technology-manager
+products:
+  - m365-education
+  - windows-11
+units:
+  - learn.dpu.learning-zone.intro
+  - learn.dpu.learning-zone.msft-learn
+  - learn.dpu.learning-zone.activate
+  - learn.dpu.learning-zone.personalized-lessons
+  - learn.dpu.learning-zone.new-lesson
+  - learn.dpu.learning-zone.assign-manage
+  - learn.dpu.learning-zone.insights
+  - learn.dpu.learning-zone.knowledge-check
+  - learn.dpu.learning-zone.summary
+badge:
+  uid: learn.dpu.learning-zone.badge
