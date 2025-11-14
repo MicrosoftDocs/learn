@@ -19,7 +19,7 @@ Imagine you’re a middle school math teacher who has created a new lesson on fr
 
    - Select Create.
 
-   [![A screenshot depicting the assign lesson option in Microsoft Learning Zone.](/media/assign-lesson-inline.png)](/media/assign-lesson-expanded.png#lightbox)
+   [![A screenshot depicting the assign lesson option in Microsoft Learning Zone.](../media/assign-lesson-inline.png)](../media/assign-lesson-expanded.png#lightbox)
 
 3. Invite learners
 
@@ -27,7 +27,7 @@ Imagine you’re a middle school math teacher who has created a new lesson on fr
    - Share it with your students via email, Teams, or your Learning Management System.
    - Students can access the assignment on any Windows 11 PC and begin working immediately.
 
-   [![A screenshot of the prompt inviting learners to the lesson via Join code or by link in Microsoft Learning Zone.](/media/join-code-inline.png)](/media/join-code-expanded.png#lightbox)
+   [![A screenshot of the prompt inviting learners to the lesson via Join code or by link in Microsoft Learning Zone.](../media/join-code-inline.png)](../media/join-code-expanded.png#lightbox)
 
 4. Track student progress
 
