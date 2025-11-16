@@ -66,7 +66,7 @@ To accomplish this task, we use a *transformer* model. This kind of model consis
 ![Diagram of the Transformer architecture with the encoding and decoding layers.](../media/simplified-transformer-architecture.png)
 
 > [!NOTE]
-> We've greatly simplified the transformer architecture and process in the description and diagram. Don't worry too much about the specific details of how attention works - the key point is that it helps capture linguistic and semantic characteristics of each token based on the contexts in which it's used. If you want a deeper dive into the transformer architecture and how it uses attention, you can read the original *[Attention is all you need](https://arxiv.org/abs/1706.03762&azure-portal=true)* paper.
+> We've greatly simplified the transformer architecture and process in the description and diagram. Don't worry too much about the specific details of how attention works - the key point is that it helps capture linguistic and semantic characteristics of each token based on the contexts in which it's used. If you want a deeper dive into the transformer architecture and how it uses attention, you can read the original *[Attention is all you need](https://arxiv.org/abs/1706.03762)* paper.
 
 ### Initial vectors and positional encoding
 
