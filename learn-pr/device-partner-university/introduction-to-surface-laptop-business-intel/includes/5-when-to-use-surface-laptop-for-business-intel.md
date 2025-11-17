@@ -1,0 +1,9 @@
+:::image type="content" border="true" source="../media/surface-laptop-users.png" alt-text="Photo of top-down view of person walking using Surface Laptop for Business (Intel) 5G version.":::
+
+While many types of users can see value from Surface Laptop for Business (Intel), it is ideal for business professionals, IT decision makers, and knowledge workers.
+
+- **Business Professionals:** Surface Laptop for Business (Intel) is specifically designed for business users. It combines power and portability—making it ideal for professionals who need to work from anywhere with secure access to enterprise tools. Executives, consultants, and analysts who require mobility, fast charging, and dual-monitor support will see utility from this device.
+- **IT Decision Makers:** This device supports Microsoft Entra ID and FIDO 2.0 (Fast Identity Online 2) standards, making it a strong candidate for IT teams deploying secure, manageable devices across distributed workforces. With NFC-based MFA (multi-factor authentication), Windows Autopilot compatibility, and Surface Management Portal integration, Surface Laptop for Business (Intel) is an ideal device for teams that are responsible for device provisioning, security, and compliance.
+- **Knowledge workers:** Business users in roles like financial analyst, HR manager, and operations coordinator who need reliable performance for productivity applications and secure collaboration. Because Surface Laptop for Business (Intel) is optimized for Microsoft 365 and Teams, these users can take advantage of efficient multitasking across spreadsheets, documents, and video calls. Plus, enterprise-grade security and simplified device deployment reduces IT overhead while keeping user data safe.
+
+Whether in scenarios across a distributed workforce, small business, or IT decision maker environment, Surface Laptop for Business (Intel) helps users remain efficient and accomplish their tasks.

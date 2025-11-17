@@ -1,0 +1,41 @@
+### YamlMime:Module
+uid: learn.dpu.introduction-to-surface-laptop-business-intel
+title: Introduction to Microsoft Surface Laptop for Business (Intel)
+metadata:
+  title: Introduction To Microsoft Surface Laptop For Business (Intel)
+  description: 'Explore Microsoft Surface Laptop for Business (Intel), a Copilot+ PC designed for business professionals focused on productivity, security, and performance.'
+  ms.date: 11/17/2025
+  author: ozahran7
+  ms.author: v-zahranomar
+  ms.topic: module
+  ms.service: surface
+summary: >
+ "Discover the Microsoft Surface Laptop for Business (Intel), a Copilot+ PC designed for business professionals focused on productivity, security, and performance."
+abstract: |2+
+  By the end of this module, you'll be able to:    
+  - Evaluate whether Microsoft Surface Laptop for Business (Intel) is appropriate for your business.
+  - Describe how the software and hardware features of Microsoft Surface Laptop for Business (Intel) work to complete tasks more efficiently.
+prerequisites: |
+  - None
+iconUrl: /training/achievements/generic-badge.svg
+ratingEnabled: false
+levels:
+  - beginner
+roles:
+  - administrator
+  - business-leader
+  - business-owner
+  - business-user
+  - technology-manager
+products:
+  - surface
+units:
+  - learn.dpu.introduction-to-surface-laptop-business-intel.introduction
+  - learn.dpu.introduction-to-surface-laptop-business-intel.what-is-microsoft-surface-laptop-for-business-intel
+  - learn.dpu.introduction-to-surface-laptop-business-intel.how-surface-laptop-for-business-works
+  - learn.dpu.introduction-to-surface-laptop-business-intel.how-surface-laptop-for-business-intel-ai-features-work
+  - learn.dpu.introduction-to-surface-laptop-business-intel.when-to-use-surface-laptop-for-business-intel
+  - learn.dpu.introduction-to-surface-laptop-business-intel.knowledge-check
+  - learn.dpu.introduction-to-surface-laptop-business-intel.summary
+badge:
+  uid: learn.dpu.introduction-to-surface-laptop-business-intel.badge
