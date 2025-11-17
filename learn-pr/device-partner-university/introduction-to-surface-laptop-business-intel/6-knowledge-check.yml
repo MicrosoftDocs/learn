@@ -1,0 +1,84 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.introduction-to-surface-laptop-business-intel.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge Check
+  description: This content is part of the "Introduction to Microsoft Surface Laptop for Business (Intel)" module.
+  ms.date: 11/17/2025
+  author: ozahran7
+  ms.author: v-zahranomar
+  ms.topic: unit
+durationInMinutes: 5
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Which processor family powers the Microsoft Surface Laptop for Business (Intel)?"
+    choices:
+        - content: "Intel® Core™ Ultra (Series 2)"
+          isCorrect: true
+          explanation: "Correct. The Surface Laptop for Business (Intel) uses the Intel® Core™ Ultra (Series 2) family, designed for performance and efficiency."
+        - content: "AMD Ryzen 7"
+          isCorrect: false
+          explanation: "Incorrect. The device does not use AMD processors."
+        - content: "Intel® Core™ i5 (10th Gen)"
+          isCorrect: false
+          explanation: "Incorrect. While Intel processors are used, the specific family is Ultra (Series 2), not i5 (10th Gen)."
+        - content: "Apple M2"
+          isCorrect: false
+          explanation: "Incorrect. Apple M2 is used in Apple devices, not Microsoft Surface laptops."
+  - content: "What feature on the Surface Laptop for Business (Intel) helps reduce screen reflections and improve readability for business users on the go?"
+    choices:
+        - content: "OLED display"
+          isCorrect: false
+          explanation: "Incorrect. The module does not mention OLED displays as a feature."
+        - content: "Anti-reflective technology"
+          isCorrect: true
+          explanation: "Correct. Both screen sizes feature anti-reflective technology to minimize reflections and improve readability."
+        - content: "Touchscreen capability"
+          isCorrect: false
+          explanation: "Incorrect. While touchscreens may be present, the anti-reflective coating specifically addresses readability and reflections."
+        - content: "4K resolution"
+          isCorrect: false
+          explanation: "Incorrect. The module does not specify 4K resolution as a feature related to readability or reflections."
+  - content: "Which security feature is unique to the 15” model of the Surface Laptop for Business (Intel)?"
+    choices:
+        - content: "Windows Hello facial recognition"
+          isCorrect: false
+          explanation: "Incorrect. This feature is available on all models."
+        - content: "Smart Card Reader"
+          isCorrect: true
+          explanation: "Correct. Only the 15” model includes a Smart Card Reader for enhanced security."
+        - content: "BitLocker drive encryption"
+          isCorrect: false
+          explanation: "Incorrect. BitLocker is a general security feature, not unique to the 15” model."
+        - content: "TPM 2.0 chip"
+          isCorrect: false
+          explanation: "Incorrect. TPM 2.0 is part of the secured-core PC features, not exclusive to the 15” model."
+  - content: "What is the purpose of the 'Recall (preview)' feature on Surface Laptop for Business (Intel)?"
+    choices:
+        - content: "To optimize video calls with AI effects"
+          isCorrect: false
+          explanation: "Incorrect. This describes Windows Studio Effects, not Recall (preview)."
+        - content: "To provide an explorable timeline to find previously viewed content"
+          isCorrect: true
+          explanation: "Correct. Recall (preview) helps users quickly locate and revisit content seen before on their PC."
+        - content: "To enable fast charging via USB-C"
+          isCorrect: false
+          explanation: "Incorrect. Fast charging is a hardware feature, not related to Recall (preview)."
+        - content: "To manage device firmware remotely"
+          isCorrect: false
+          explanation: "Incorrect. Device Firmware Configuration Interface (DFCI) is used for remote management, not Recall (preview)."
+  - content: "Which connectivity options are available on the Surface Laptop for Business (Intel) 5G model?"
+    choices:
+        - content: "Only physical Nano SIM"
+          isCorrect: false
+          explanation: "Incorrect. The 5G model supports both physical and digital SIM options."
+        - content: "Only digital eSIM"
+          isCorrect: false
+          explanation: "Incorrect. Both types are supported, not just eSIM."
+        - content: "Both physical Nano SIM and digital eSIM"
+          isCorrect: true
+          explanation: "Correct. The device supports seamless connection via either SIM type."
+        - content: "No SIM support"
+          isCorrect: false
+          explanation: "Incorrect. The 5G model is specifically designed for mobile connectivity, including SIM support."
