@@ -4,7 +4,7 @@
 | :---: | :---: |
 | 1 | Surface Connect port |
 | 2 | Nano SIM card tray (Only available on 5G model) |
-| 3 | Headphone jack |
+| 3 | Headphone port |
 | 4 | USB-A port |
 | 5 | USB-C ports |
 | 6 | Front-facing camera |
@@ -12,20 +12,20 @@
 | 8 | Studio mics |
 | 9 | Power button |
 
-Surface Laptop for Business (Intel) is a Copilot+ PC that is ideal for AI applications and business-centric portability. Let's get familiar with the hardware of Surface Laptop for Business (Intel) before you turn it on for the first time.
+Surface Laptop for Business (Intel) is a Copilot+ PC that's ideal for AI applications and business-centric portability. Let's get familiar with the hardware of Surface Laptop for Business (Intel) before you turn it on for the first time.
 
 ## Ports and powering on
 
-Let's start on the left side of the device. Here you will see two USB-C ports that can be utilized for charging in addition to connecting peripherals—such as monitors, portable hard drives, and docking stations. You will also see the headphone jack and USB-A port, which are used for audio devices and other peripherals. On the right side of the device is the Surface Connect port, which can also be used for charging.
+Let's start on the left side of the device. Here you'll see two USB-C ports that can be utilized for charging in addition to connecting peripherals—such as monitors, portable hard drives, and docking stations. You'll also see the headphone port and USB-A port, which are used for audio devices and other peripherals. On the right side of the device is the Surface Connect port, which can also be used for charging.
 
 >[!NOTE]
-> On Surface Laptop for Business (Intel) 15", the MicroSDXC card reader will also be on the right side of the device
+> On Surface Laptop for Business (Intel) 15", the MicroSDXC card reader is on the right side of the device
 
-When you open Surface Laptop for Business (Intel), you will see the power button on the top right corner of the keyboard. On the top of the display, you will see a front facing camera and studio mics to ensure clear video calls. You will also see a secondary camera, this is the Windows Hello camera. This camera enables Surface Laptop for Business (Intel) to support secure sign-in authentication via facial recognition using Windows Hello for Business with Sign-in Security. When set up, your Surface Laptop for Business will scan your face and securely sign into your Surface Laptop for Business (Intel) when you press the power button.
+When you open Surface Laptop for Business (Intel), you'll see the power button on the top right corner of the keyboard. On the top of the display, you'll see a front facing camera and studio mics to ensure clear video calls. You'll also see a secondary camera, this is the Windows Hello camera. This camera enables Surface Laptop for Business (Intel) to support secure sign-in authentication via facial recognition using Windows Hello for Business with Sign-in Security. When set up, your Surface Laptop for Business scans your face and securely sign into your Surface Laptop for Business (Intel) when you press the power button.
 
-After powering Surface Laptop for Business (Intel), it's easy to configure your settings and be ready to work in moments. Start by selecting your language, then connecting to your local network. Once the basics are set up, log in to your Microsoft Account. Doing this allows you to sync files and data across devices. Logging into your account will also automatically sign you into native applications like Microsoft Edge.
+After powering Surface Laptop for Business (Intel), it's easy to configure your settings and be ready to work in moments. Start by selecting your language, then connecting to your local network. Once the basics are set up, sign-in to your Microsoft Account. Doing this allows you to sync files and data across devices. Logging into your account will also automatically sign you into native applications like Microsoft Edge.
 
-After your account is synchronized, you will have the option to set up biometric unlocking through Windows Hello to keep your device secure, importing settings from previous devices with your Microsoft Account backup, and finally setting up privacy settings. And now your Surface Laptop for Business (Intel) is ready to be used.
+After your account is synchronized, you'll have the option to set up biometric unlocking through Windows Hello to keep your device secure, importing settings from previous devices with your Microsoft Account backup, and finally setting up privacy settings. And now your Surface Laptop for Business (Intel) is ready to be used.
 
 To set up Windows Hello follow these steps:
 
@@ -38,7 +38,7 @@ To set up Windows Hello follow these steps:
 
 ## Setting up 5G connectivity
 
-For the 5G variant of Surface Laptop for Business (Intel), it is important to connect to a mobile network for optimal performance. Let's walk through that process now.
+For the 5G variant of Surface Laptop for Business (Intel), it's important to connect to a mobile network for optimal performance. Let's walk through that process now.
 
 There are two ways to connect to cellular data on Surface Laptop for Business (Intel): via eSIM or physical Nano SIM.
 
@@ -47,7 +47,7 @@ eSIM is a digital way to connect to your mobile operator, which allows you to sw
 - Add an eSIM profile to get an internet connection using cellular data
   - Select the **Start** button, then enter **settings**. Select **Settings** > **Network & internet** > **Cellular** > **eSIM profiles**.
   - For **Add an eSIM profile from your mobile operator**, select **Add profile**.
-  - Search for available profiles to connect to. Start by selecting **Search for available profile** > **Next**. When a profile is found, select **Download**. After installation, select **Continue** to find other profiles you might want and repeat the process. Select **Close** when you have downloaded the profiles that you want.
+  - Search for available profiles to connect to. Start by selecting **Search for available profile** > **Next**. When a profile is found, select **Download**. After installation, select **Continue** to find other profiles, you might want and repeat the process. Select **Close** when you have downloaded the profiles that you want.
   - If your mobile operator has provided an activation code, select **Let me enter an activation code I have from my mobile operator** > **Next**.
   - If you have a QR code to scan for the activation code, choose which camera to use on your PC, and then scan the QR code. The code should appear in the corresponding **Activation code box**. Select **Next**. For the dialog box that asks **Do you want to download this profile?**, enter the confirmation code from your mobile operator into the corresponding box, and then select **Download**. Select **Close** after installation.
 - After setting up the eSIM profile, follow these steps to connect to cellular data:
@@ -59,7 +59,7 @@ eSIM is a digital way to connect to your mobile operator, which allows you to sw
   - Select **Network & internet** on the left side of the screen.
   - Under Cellular, select the slider to **Off**.
   - Tap the slider again if you wish to turn cellular connectivity back on.
-- If you have more than one profile installed on your Surface Laptop for Business (Intel) you can switch between profiles to use a different mobile operator and data plan.
+- If you have more than one profile installed on your Surface Laptop for Business (Intel), you can switch between profiles to use a different mobile operator and data plan.
   - Select the **Start** button, then enter **settings**. Select **Settings** > **Network & internet** > **Cellular** > **eSIM profiles**.
   - Under **Profiles for cellular data**, select the profile you want to stop using, and then select **Stop using**.
   - Select **Yes** for **You'll be disconnected from this cellular network. Continue?**
