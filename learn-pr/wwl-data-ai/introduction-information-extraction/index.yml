@@ -13,9 +13,9 @@ title: Introduction to AI-powered information extraction concepts
 summary: AI information extraction enables you to extract data values from documents, images, and other unstructured data sources.
 abstract: |
   After completing this module, you will be able to: 
-  - Understand the key concepts of information extraction
-  - Describe how optical character recognition (OCR) extracts text from images
-  - Explain how form extraction maps extracted text to data fields
+  - Understand the key concepts of information extraction.
+  - Describe how optical character recognition (OCR) extracts text from images.
+  - Explain how form extraction maps extracted text to data fields.
 prerequisites: |
   Before starting this module, you should have a basic understanding of machine learning and computer vision concepts.
 iconUrl: /learn/achievements/form-recognizer-extract-data.svg
