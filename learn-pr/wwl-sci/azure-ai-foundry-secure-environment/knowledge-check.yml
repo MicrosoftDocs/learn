@@ -17,7 +17,7 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "A cloud security engineer needs to control who can create or modify Azure AI Foundry resources. Which configuration establishes these permissions?"
+  - content: "A cloud security engineer needs to control who can create or modify Microsoft Foundry resources. Which configuration establishes these permissions?"
     choices:
     - content: "Microsoft Entra ID role-based access control (RBAC)"
       isCorrect: true
