@@ -1,23 +1,26 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.explore-sql-server-2022-capabilities
 metadata:
-  title: Explore SQL Server 2022 capabilities
-  description: Explore SQL Server 2022 capabilities
-  ms.date: 05/23/2023
-  author: wwlpublish
+  title: Explore SQL Server 2025 capabilities
+  description: Explore SQL Server 2025 capabilities
+  ms.date: 11/10/2025
+  author: JulianePadrao
   ms.author: jupadrao
   ms.topic: learning-path
-title: Explore SQL Server 2022 capabilities
+title: Explore SQL Server 2025 capabilities
 prerequisites: |
   - Basic working knowledge of SQL Server, including deployment, security, query processing, and high availability
-  - Fundamental knowledge of the T-SQL language
+  - Fundamental knowledge of T-SQL language
   - Basic knowledge of Azure concepts, including subscriptions, resource groups, Infrastructure-as-a-Service (IaaS) and Platform-as-a-Service (PaaS)
+  - Basic understanding of AI and machine learning concepts
+  - Familiarity with hybrid cloud architectures
 summary: |
-  Learn about SQL Server 2022 enhancements, including:
-  - Hybrid capabilities with the cloud and on-premises
-  - Performance and data virtualization improvements
-  - Improved security and availability
-  - Enhanced analytics capabilities
+  Learn about SQL Server 2025 enhancements, including:
+  - AI-powered capabilities with vector search and embeddings
+  - Hybrid data platform with cloud and on-premises integration
+  - Data virtualization and PolyBase improvements with S3-compatible object storage
+  - T-SQL enhancements for modern development workflows
+  - Enhanced security, analytics, and performance features
 iconUrl: /training/achievements/generic-trophy.svg
 levels:
 - beginner
@@ -29,6 +32,7 @@ products:
 - sql-server
 modules:
 - learn.introduction-to-sql-server-2022
+- learn-wwl.build-ai-solutions-sql-server
 - learn.wwl.understand-hybrid-data-platform-sql-server-2022
 - learn.sql-server-2022-data-virtualization
 - learn.introduction-sql-server-2022-t-sql-enhancements

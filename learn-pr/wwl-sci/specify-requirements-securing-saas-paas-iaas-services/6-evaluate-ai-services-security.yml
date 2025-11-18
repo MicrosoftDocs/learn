@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.specify-requirements-secure-saas-paas-iaas-services.evaluate-ai-services-security
-title: Evaluate AI Services security
+title: Specify security requirements for AI workloads
 metadata:
-  title: Evaluate AI Services security
-  description: "SC-100 preparatory unit on the topic: Evaluate AI Services security."
-  ms.date: 5/21/2024
+  title: Specify security requirements for AI workloads
+  description: "SC-100 preparatory unit on the topic: Specify security requirements for AI workloads."
+  ms.date: 11/12/2025
   author: ceperezb
   ms.author: ceperezb
   ms.topic: unit

@@ -102,9 +102,6 @@ IT leaders operationalize AI by managing technology infrastructure and delivery.
 - Form cross-functional delivery teams to keep AI projects connected to business goals.
 - Scale MLOps practices to manage the machine learning lifecycle efficiently.
 
-> [!TIP]
-> Learn more about MLOps in [Leverage AI tools and resources for your business.](/training/modules/leverage-ai-tools/6-understand-machine-learning-lifecycle?azure-portal=true)
-
 The function of business users isn't just to deliver insights to data scientists. AI must help them work better and faster. In the next unit, let's see how this goal can be achieved with no-code tools that don't require data science expertise or mediation.
 
 Next, let's explore the potential of putting business users at the center of AI efforts.

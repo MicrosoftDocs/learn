@@ -1,4 +1,19 @@
+The **Agent-to-Agent (A2A) protocol** is a standardized way for AI agents to communicate and collaborate with each other. It defines how agents can share context, invoke each other's capabilities, and exchange information securely. By adhering to the A2A protocol, agents from different vendors or platforms can work together seamlessly, enabling more complex and integrated AI solutions.
+
 Before an A2A agent can participate in multi-agent workflows, it needs to explain what it can do. **Agent Skills** and how other agents or clients can discover those capabilities are exposed through an **Agent Card**.
+
+## Advantages of the Agent-to-Agent (A2A) protocol
+
+The **Agent-to-Agent (A2A) protocol** offers several advantages for AI agent interactions:
+
+- **Enhanced Collaboration:**  
+  A2A enables agents from different vendors and platforms to **share context and work together**, allowing seamless automation across systems that are traditionally disconnected.
+
+- **Flexible Model Selection:**  
+  Each A2A agent can choose which large language model (LLM) to use for handling requests, enabling **optimized or fine-tuned models per agent**, unlike some MCP scenarios that rely on a single LLM connection.
+
+- **Integrated Authentication:**  
+  Authentication is built into the A2A protocol, providing a **robust security framework** for secure agent-to-agent communication.
 
 ## Agent Skills
 

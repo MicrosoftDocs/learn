@@ -65,7 +65,7 @@ DevOps skills are highly valued in the technology industry as organizations incr
 
 ### Why should I take the DevOps learning path?
 
-People in these modules are interested in designing and implementing DevOps processes. Also, they're preparing for the [AZ-400 - Designing and Implementing Microsoft DevOps Solutions](/learn/certifications/exams/az-400) certification exam.
+People in these modules are interested in designing and implementing DevOps processes. Also, they're preparing for the [AZ-400 - Design and Implement Microsoft DevOps Solutions](/learn/certifications/exams/az-400) certification exam.
 
 The certification exam is for DevOps professionals. Combine people, processes, and technologies to continuously deliver valuable products and services that meet end-user needs and business goals. DevOps professionals streamline delivery by optimizing practices, improving communications and collaboration, and creating automation.
 

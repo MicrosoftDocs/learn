@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.modernize-surface-windows-10-end-of-support.understand-windows-10-end-of-support
+title: Understand Windows 10 end of support
+metadata:
+  title: Understand Windows 10 End Of Support
+  description: This content is part of the "Modernize with Surface for Business after Windows 10 end of support" module.
+  ms.date: 11/12/2025
+  author: hhreyes21
+  ms.author: v-homerreyes
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/2-understand-windows-10-end-of-support.md)]

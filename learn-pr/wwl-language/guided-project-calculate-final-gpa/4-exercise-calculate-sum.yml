@@ -4,7 +4,7 @@ title: Exercise - Calculate the sums of credit hours and grade points
 metadata:
   title: Exercise - Calculate the sums of credit hours and grade points
   description: "Exercise - Calculate the sums of credit hours and grade points"
-  ms.date: 03/21/2024
+  ms.date: 11/10/2025
   author: wwlpublish
   ms.author: buzahid
   ms.topic: unit
@@ -13,4 +13,3 @@ metadata:
 durationInMinutes: 10
 content: |
   [!include[](includes/4-exercise-calculate-sum.md)]
-interactive: csharp
