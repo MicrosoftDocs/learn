@@ -16,21 +16,21 @@ quiz:
     choices:
         - content: "Intel Core i7 and AMD Ryzen 7"
           isCorrect: false
-          explanation: "Incorrect. The document specifies Qualcomm Snapdragon processors, not Intel or AMD."
+          explanation: "Incorrect. The document specifies Qualcomm Snapdragon processors, not Intel, or AMD."
         - content: "Qualcomm Snapdragon X Plus and Snapdragon X Elite"
           isCorrect: true
           explanation: "Correct. These are the two processor choices available for Surface Laptop for Business."
         - content: "Apple M2 and Intel Core i5"
           isCorrect: false
-          explanation: "Incorrect. Apple M2 is not used in Surface devices, and Intel Core i5 is not listed for this model."
+          explanation: "Incorrect. Apple M2 isn't used in Surface devices, and Intel Core i5 isn't listed for this model."
         - content: "AMD Ryzen 5 and Intel Xeon"
           isCorrect: false
-          explanation: "Incorrect. These processors are not mentioned as options for this device."
+          explanation: "Incorrect. These processors aren't mentioned as options for this device."
   - content: "What is the primary function of the 'Click to Do' feature on Surface Laptop for Business?"
     choices:
         - content: "Automatically updates all device drivers"
           isCorrect: false
-          explanation: "Incorrect. 'Click to Do' does not update drivers."
+          explanation: "Incorrect. 'Click to Do' doesn't update drivers."
         - content: "Identifies text and images on screen and provides actionable options"
           isCorrect: true
           explanation: "Correct. 'Click to Do' analyzes text and images and offers contextual actions, processed locally for privacy."
@@ -39,7 +39,7 @@ quiz:
           explanation: "Incorrect. Encryption is handled by other security features, not 'Click to Do'."
         - content: "Manages device battery life"
           isCorrect: false
-          explanation: "Incorrect. Battery management is not a function of 'Click to Do'."
+          explanation: "Incorrect. Battery management isn't a function of 'Click to Do'."
   - content: "Which security feature is integrated directly into the CPU of Surface Laptop for Business?"
     choices:
         - content: "Windows Defender"
@@ -72,13 +72,13 @@ quiz:
     choices:
         - content: "Gamers"
           isCorrect: false
-          explanation: "Incorrect. The document does not mention gamers as a target group."
+          explanation: "Incorrect. The document doesn't mention gamers as a target group."
         - content: "Mobile professionals, creative freelancers, and IT decision makers"
           isCorrect: true
           explanation: "Correct. The device is designed for these groups, offering portability, performance, and manageability."
         - content: "Students"
           isCorrect: false
-          explanation: "Incorrect. Students are not specifically highlighted in the document."
+          explanation: "Incorrect. Students aren't highlighted in the document."
         - content: "Healthcare workers"
           isCorrect: false
-          explanation: "Incorrect. Healthcare workers are not mentioned as a primary audience."
+          explanation: "Incorrect. Healthcare workers aren't mentioned as a primary audience."
