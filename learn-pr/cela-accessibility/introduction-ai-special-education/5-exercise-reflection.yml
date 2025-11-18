@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.introduction-ai-special-education.5-exercise-reflection
+title: "Reflect and plan for AI in education"
+metadata:
+  title: "Reflection on AI in Education"
+  description: "Take time to reflect on AI in education. Answer questions about impact, inclusion, privacy, and responsible use to improve student outcomes."
+  ms.date: 11/18/2025
+  author: wwlpublish
+  ms.author: rknapp
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/5-exercise-reflection.md)]

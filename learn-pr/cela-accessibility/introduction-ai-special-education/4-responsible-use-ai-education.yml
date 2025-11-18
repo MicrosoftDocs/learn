@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.introduction-ai-special-education.4-responsible-use-ai-education
+title: "Use AI responsibly in Microsoft 365 classrooms"
+metadata:
+  title: "Responsible AI Use in Education"
+  description: "Learn how to responsibly use AI in classrooms with Microsoft 365 tools by ensuring privacy, transparency, and ethical practices."
+  ms.date: 11/18/2025
+  author: wwlpublish
+  ms.author: rknapp
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/4-responsible-use-ai-education.md)]

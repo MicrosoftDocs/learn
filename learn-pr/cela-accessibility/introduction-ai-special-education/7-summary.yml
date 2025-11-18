@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.introduction-ai-special-education.7-summary
+title: "Summarize AI principles for special education"
+metadata:
+  title: "AI in Special Education: Summary"
+  description: "Explore key AI principles to transform special education with personalized tools, responsible implementation, and ethical practices."
+  ms.date: 11/18/2025
+  author: wwlpublish
+  ms.author: rknapp
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/7-summary.md)]

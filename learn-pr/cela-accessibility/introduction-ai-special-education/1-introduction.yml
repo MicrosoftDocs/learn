@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.introduction-ai-special-education.1-introduction
+title: "Use artificial intelligence in special education"
+metadata:
+  title: "Artificial Intelligence for Education"
+  description: "Explore how AI supports special education, enhances student outcomes, and streamlines workflows while maintaining student-centered care."
+  ms.date: 11/18/2025
+  author: wwlpublish
+  ms.author: rknapp
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/1-introduction.md)]
