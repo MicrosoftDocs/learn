@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.azure-ai-foundry-secure-environment.manage-access-foundry-projects
-title: Manage access within Azure AI Foundry projects
+title: Manage access within Microsoft Foundry projects
 metadata:
-  title: Manage access within Azure AI Foundry projects
-  description: "Manage access within Azure AI Foundry projects."
+  title: Manage access within Microsoft Foundry projects
+  description: "Manage access within Microsoft Foundry projects."
   ms.date: 10/17/2025
   author: wwlpublish
   ms.author: riswinto

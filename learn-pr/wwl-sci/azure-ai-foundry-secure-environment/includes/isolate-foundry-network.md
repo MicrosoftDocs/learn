@@ -1,8 +1,8 @@
 AI workloads in Azure often rely on multiple connected services like storage accounts, compute clusters, data sources, and model endpoints. Without clear network boundaries, these services might unintentionally expose data to the public internet. Network isolation helps keep communication between components private, consistent, and auditable.
 
-**Azure AI Foundry** supports network isolation through **managed virtual networks** and **Private Link**. Together, these features protect data and model traffic while maintaining connectivity to the Azure services your workloads depend on.
+**Microsoft Foundry** supports network isolation through **managed virtual networks** and **Private Link**. Together, these features protect data and model traffic while maintaining connectivity to the Azure services your workloads depend on.
 
-Azure AI Foundry runs in a Microsoft-managed network. You don't need to build a custom network to use the service, but you can still control who can access the Foundry resource and how it connects to other resources. Most organizations focus first on isolating dependent services like **Azure Key Vault** and **Azure Storage**, where model data and secrets are stored and accessed.
+Microsoft Foundry runs in a Microsoft-managed network. You don't need to build a custom network to use the service, but you can still control who can access the Foundry resource and how it connects to other resources. Most organizations focus first on isolating dependent services like **Azure Key Vault** and **Azure Storage**, where model data and secrets are stored and accessed.
 
 ## Secure AI workloads through network isolation
 
@@ -20,7 +20,7 @@ In short, managed virtual networks define who can reach your service, and Privat
 
 ## Configure managed virtual networks
 
-You can configure **Networking** settings in your Azure AI services resource to specify which virtual networks can call the Foundry service. The Foundry resource itself stays in a Microsoft-managed virtual network that can't be joined to your own. These settings define who can reach the Foundry resource and which networks are allowed to connect to it.
+You can configure **Networking** settings in your Foundry resource to specify which virtual networks can call the Foundry service. The Foundry resource itself stays in a Microsoft-managed virtual network that can't be joined to your own. These settings define who can reach the Foundry resource and which networks are allowed to connect to it.
 
 Isolation for data paths happens at the resource level. For example, your **Storage** and **Key Vault** resources should use private endpoints to keep traffic on Azure's private backbone instead of the public internet.
 
@@ -35,13 +35,13 @@ Managed virtual networks and private endpoints reduce exposure without requiring
 > [!TIP]
 > Always configure DNS for your private endpoints so the Foundry service resolves the private IPs correctly.
 
-For configuration guidance, see [Configure Azure AI services virtual networks](/azure/ai-services/cognitive-services-virtual-networks?azure-portal=true).
+For configuration guidance, see [Configure Foundry Tools services virtual networks](/azure/ai-services/cognitive-services-virtual-networks?azure-portal=true).
 
 ## Configure secure connections with Private Link
 
 **Azure Private Link** lets Foundry connect to other Azure services privately by mapping them to private endpoints within your virtual network. This replaces public endpoints with internal addresses that are only reachable from within your environment.
 
-You can use Private Link to connect Azure AI Foundry securely to services like:
+You can use Private Link to connect Microsoft Foundry securely to services like:
 
 - **Azure Storage** for datasets and training outputs
 - **Azure Key Vault** for credentials and encryption keys
@@ -50,9 +50,9 @@ You can use Private Link to connect Azure AI Foundry securely to services like:
 
 Private Link reduces the risk of data exposure by keeping service traffic on Azure's private backbone. It also integrates with **Microsoft Defender for Cloud**, which recommends when private endpoints are missing or misconfigured.
 
-The diagram shows how Azure AI Foundry connects privately through Private Link to services like Azure Storage and Azure Key Vault within an enterprise virtual network.
+The diagram shows how Microsoft Foundry connects privately through Private Link to services like Azure Storage and Azure Key Vault within an enterprise virtual network.
 
-:::image type="content" source="../media/foundry-private-link-diagram.png" alt-text="Diagram showing Azure AI Foundry connecting through Private Link to Storage and Key Vault within an enterprise virtual network." border="false" lightbox="../media/foundry-private-link-diagram.png":::
+:::image type="content" source="../media/foundry-private-link-diagram.png" alt-text="Diagram showing Microsoft Foundry connecting through Private Link to Storage and Key Vault within an enterprise virtual network." border="false" lightbox="../media/foundry-private-link-diagram.png":::
 
 To create a private endpoint for a connected service:
 
