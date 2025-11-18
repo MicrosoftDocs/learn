@@ -12,11 +12,11 @@ metadata:
   ms.collection:
     - wwl-ai-copilot
 title: Analyze images
-summary: With the Azure AI Vision service, you can use pre-trained models to analyze images and extract insights and information from them.
+summary: With the Azure Vision service, you can use pre-trained models to analyze images and extract insights and information from them.
 abstract: |
   After completing this module, you’ll be able to:
-  - Provision an Azure AI Vision resource.
-  - Use the Azure AI Vision SDK to connect to your resource.
+  - Provision an Azure Vision resource.
+  - Use the Azure Vision SDK to connect to your resource.
   - Write code to analyze an image.
 prerequisites: |
   Before starting this module, you should already have:

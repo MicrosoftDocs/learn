@@ -18,9 +18,9 @@ quiz:
   questions:
   - content: "What Azure AI Custom Vision resources should you create in Azure to create a custom vision solution?"
     choices:
-    - content: "A single Computer Vision resource"
+    - content: "A single Azure Vision resource"
       isCorrect: false
-      explanation: "Incorrect. You can't use an Azure AI Computer Vision resource for custom vision models."
+      explanation: "Incorrect. You can't use an Azure Vision resource for custom vision models."
     - content: "A Custom Vision resource for image classification, and another for object detection"
       isCorrect: false
       explanation: "Incorrect. Custom Vision resources aren't specific to image classification and object detection."

@@ -17,7 +17,7 @@ abstract: |
   - Implement A2A strategies to discover and invoke remote agents.
 prerequisites: |
   Before starting this module, you should have:
-  - Experience with deploying generative AI models in Azure AI Foundry.
+  - Experience with deploying generative AI models in Microsoft Foundry.
   - Programming experience.
 iconUrl: /learn/achievements/generic-badge.svg
 levels: 
@@ -42,4 +42,5 @@ units:
 - learn.wwl.discover-agents-with-a2a.summary
 badge:
   uid: learn.wwl.discover-agents-with-a2a.badge
+
 

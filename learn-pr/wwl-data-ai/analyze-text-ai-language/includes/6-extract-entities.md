@@ -12,7 +12,7 @@ Named Entity Recognition identifies entities that are mentioned in the text. Ent
 > [!NOTE]
 > For a full list of categories, see the [documentation](/azure/ai-services/language-service/named-entity-recognition/concepts/named-entity-categories?tabs=ga-api).
 
-Input for entity recognition is similar to input for other Azure AI Language API functions:
+Input for entity recognition is similar to input for other Azure Language API functions:
 
 ```JSON
 {

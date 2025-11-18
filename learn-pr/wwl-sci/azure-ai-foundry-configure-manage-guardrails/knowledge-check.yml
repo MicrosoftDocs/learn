@@ -17,7 +17,7 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "The administrator wants to see how Azure AI Foundry's built-in protections handle potentially harmful or ungrounded content before creating custom configurations. Which workspace feature should they use?"
+  - content: "The administrator wants to see how Microsoft Foundry's built-in protections handle potentially harmful or ungrounded content before creating custom configurations. Which workspace feature should they use?"
     choices:
     - content: "Model catalog"
       isCorrect: false

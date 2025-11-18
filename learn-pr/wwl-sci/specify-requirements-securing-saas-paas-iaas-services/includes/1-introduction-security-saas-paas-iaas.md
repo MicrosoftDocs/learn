@@ -1,14 +1,16 @@
 This module provides an overview of specifying security requirements for Software as a Service (SaaS), Infrastructure as a Service (IaaS) and Platform as a Service (PaaS) security. The module highlights Microsoft cloud security baselines for IoT Hub, App Service, Azure Kubernetes Service (AKS), and guidelines for securing Microsoft Azure OpenAI.
 
-Imagine you're a security engineer at a large multinational corporation. Your company has recently migrated its infrastructure to Azure and is using a mix of IaaS and PaaS services. You're tasked with ensuring the security of these services, but you're unsure where to start. You need to understand the best practices for securing IaaS and PaaS, as well as how to apply Azure's security baselines for IoT Hub, App Service, and AKS. Additionally, your company is exploring the use of Azure OpenAI, and you need to know how to secure it effectively.
+Imagine you're a security engineer at a large multinational corporation. Your company has recently migrated its infrastructure to Azure and is using a mix of IaaS and PaaS services. You're tasked with ensuring the security of these services, but you're unsure where to start. You need to understand the best practices for securing IaaS and PaaS, as well as how to apply Azure's security baselines for IoT Hub, App Service, and AKS. Additionally, your company is exploring the use of Foundry Tools, including Azure OpenAI, so you need to know how to secure AI workloads.
 
 ## Learning objectives
 
 In this module, you learn how to:
 
-* Specify security baselines for SaaS, PaaS, and IaaS services
-* Specify security requirements for web workloads
-* Specify security requirements for containers and container orchestration
+* Specify security baselines for SaaS, PaaS, and IaaS services.
+* Specify security requirements for IoT workloads.
+* Specify security requirements for web workloads.
+* Specify security requirements for containers and container orchestration.
+* Specify security requirements for AI workloads.
 
 The content in the module helps you prepare for the certification exam SC-100: Microsoft Cybersecurity Architect.
 

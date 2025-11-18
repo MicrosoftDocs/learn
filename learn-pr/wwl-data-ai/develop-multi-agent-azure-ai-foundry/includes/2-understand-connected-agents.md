@@ -1,8 +1,8 @@
-As AI solutions become more advanced, managing complex workflows gets harder. A single agent can handle a wide range of tasks, but this approach can become unmanageable as the scope expands. That's why Azure AI Foundry Agent Service lets you connect multiple agents, each with a focused role, to work together in a cohesive system.
+As AI solutions become more advanced, managing complex workflows gets harder. A single agent can handle a wide range of tasks, but this approach can become unmanageable as the scope expands. That's why Microsoft Foundry Agent Service lets you connect multiple agents, each with a focused role, to work together in a cohesive system.
 
 ## What are connected agents?
 
-Connected agents are a feature in the Azure AI Foundry Agent Service that allows you to break large tasks into smaller, specialized roles without building a custom orchestrator or hardcoding routing logic. Instead of relying on one agent to do everything, you can create multiple agents with clearly defined responsibilities that collaborate to accomplish tasks.
+Connected agents are a feature in the Microsoft Foundry Agent Service that allows you to break large tasks into smaller, specialized roles without building a custom orchestrator or hardcoding routing logic. Instead of relying on one agent to do everything, you can create multiple agents with clearly defined responsibilities that collaborate to accomplish tasks.
 
 At the center of this system, there's a main agent that interprets user input and delegates tasks to connected sub-agents. Each sub-agent is designed to perform a specific function, such as to summarize a document, validate a policy, or retrieve data from a knowledge source.
 

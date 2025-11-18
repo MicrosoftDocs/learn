@@ -14,7 +14,7 @@ This Learning Path consists of five lessons:
 ### Learning Path 3 Tips and Tricks
 
 - Ensure speakers and a microphone are connected for using speech features
-- Think of other real-world examples that use NLP, and how they can be developed using Azure AI Language
+- Think of other real-world examples that use NLP, and how they can be developed using Azure Language
 - Prepare one of the custom solutions for demo ahead of time
 
 Demo and lab instructions can be found in the Trainer Prep Guide, in the “Required Materials to prepare for and teach this course” section:

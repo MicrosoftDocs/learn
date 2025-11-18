@@ -15,7 +15,7 @@ durationInMinutes: 2
 quiz:
   title: ""
   questions:
-  - content: "You plan to build an application that uses Azure AI Speech to transcribe audio recordings of phone calls into text, and then submit the transcribed text to Azure AI Language to extract key phrases. You want to manage access and billing for the application services with a single Azure resource. Which type of Azure resource should you create?"
+  - content: "You plan to build an application that uses Azure Speech to transcribe audio recordings of phone calls into text, and then submit the transcribed text to Azure Language to extract key phrases. You want to manage access and billing for the application services with a single Azure resource. Which type of Azure resource should you create?"
     choices:
     - content: "Speech"
       isCorrect: false
@@ -23,10 +23,10 @@ quiz:
     - content: "Language"
       isCorrect: false
       explanation: "Incorrect. This resource would support key phrase extraction, but not speech transcription."
-    - content: "Azure AI services"
+    - content: "Foundry Tools"
       isCorrect: true
-      explanation: "Correct. This resource would support both the Azure AI Speech and Azure AI Language services."
-  - content: "You want to use Azure AI Speech service to build an application that reads incoming email message subjects aloud. Which API should you use?"
+      explanation: "Correct. This resource would support both the Azure Speech and Azure Language services."
+  - content: "You want to use Azure Speech service to build an application that reads incoming email message subjects aloud. Which API should you use?"
     choices:
     - content: "Speech to text"
       isCorrect: false
@@ -37,14 +37,14 @@ quiz:
     - content: "Translator"
       isCorrect: false
       explanation: "Incorrect. The Translator API translates speech from one language to another."
-  - content: "What is the main function of the Azure AI Speech to text API?"
+  - content: "What is the main function of the Azure Speech to text API?"
     choices:
     - content: "It converts text into audible speech."
       isCorrect: false
       explanation: "Incorrect. This is the function of the Text to speech API, not the Speech to text API."
     - content: "It translates speech from one language to another."
       isCorrect: false
-      explanation: "Incorrect. The Azure AI Speech service does not perform language translation."
+      explanation: "Incorrect. The Azure Speech service does not perform language translation."
     - content: "It performs real-time or batch transcription of audio into a text format."
       isCorrect: true
-      explanation: "Correct. The Azure AI Speech to text API transcribes audio into text, either in real-time or in batches."
+      explanation: "Correct. The Azure Speech to text API transcribes audio into text, either in real-time or in batches."

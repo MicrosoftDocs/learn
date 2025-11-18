@@ -18,7 +18,7 @@ abstract: |
   By the end of this module, you'll be able to:
     - Describe core concepts related to AI agents
     - Describe options for agent development
-    - Create and test an agent in the Azure AI Foundry portal
+    - Create and test an agent in the Microsoft Foundry portal
 prerequisites: |
   Before starting this module, you should be familiar with fundamental AI concepts and services in Azure.
 iconUrl: /learn/achievements/generic-badge.svg
@@ -42,4 +42,5 @@ units:
 - learn.wwl.ai-agent-fundamentals.summary
 badge:
   uid: learn.wwl.ai-agent-fundamentals.badge
+
 

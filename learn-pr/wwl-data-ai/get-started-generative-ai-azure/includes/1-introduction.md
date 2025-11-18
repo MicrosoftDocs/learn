@@ -8,7 +8,7 @@ In this module, gain a framework for understanding generative AI applications an
 
 - *Code Generation*: Developers use tools like GitHub Copilot to generate code snippets, suggest functions, and even write entire modules based on natural language prompts, speeding up software development.
 
-- *Image and Video Generation*: Designers and content creators use the latest models in Azure AI Foundry's model catalog to generate visuals for campaigns, storyboards, or concept art—often from just a text description.
+- *Image and Video Generation*: Designers and content creators use the latest models in Microsoft Foundry's model catalog to generate visuals for campaigns, storyboards, or concept art—often from just a text description.
 
 - *Personalized Learning and Tutoring*: Educational platforms use generative AI to create custom quizzes, explanations, and study guides tailored to a student’s learning style and progress.
 

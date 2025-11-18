@@ -14,11 +14,11 @@ durationInMinutes: 3
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "You want to use the Azure AI Vision service to identify the location of individual items in an image. Which of the following features should you retrieve?"
+  - content: "You want to use the Azure Vision service to identify the location of individual items in an image. Which of the following features should you retrieve?"
     choices:
     - content: "Objects"
       isCorrect: true
-      explanation: "Correct. Azure AI Vision returns objects with a bounding box to indicate their location in the image."
+      explanation: "Correct. Azure Vision returns objects with a bounding box to indicate their location in the image."
     - content: "Visual Tags"
       isCorrect: false
       explanation: "Incorrect. Tags indicate metadata terms that are relevant to an image, but not their location."
@@ -36,7 +36,7 @@ quiz:
     - content: "A set of coordinates for each face, defining a rectangular bounding box around the face"
       isCorrect: true
       explanation: "Correct: The locations of detected faces are indicated by coordinates for a rectangular bounding box"
-  - content: "Which of the following is a benefit of using the Azure AI Foundry portal for Azure AI Vision?"
+  - content: "Which of the following is a benefit of using the Microsoft Foundry portal for Azure Vision?"
     choices:
     - content: "It only supports facial recognition features."
       isCorrect: false
@@ -44,6 +44,7 @@ quiz:
     - content: "It provides a user interface with hubs and projects to organize and test AI services."
       isCorrect: true
       explanation: "Correct."
-    - content: "It limits access to only one Azure AI service at a time."
+    - content: "It limits access to only one Azure service at a time."
       isCorrect: false
       explanation: "Incorrect."
+

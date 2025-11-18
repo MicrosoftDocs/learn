@@ -13,9 +13,9 @@ metadata:
 durationInMinutes: 3
 quiz:
   questions:
-  - content: "What configuration values are needed to use the Azure AI Content Understanding REST API?"
+  - content: "What configuration values are needed to use the Azure Content Understanding REST API?"
     choices:
-    - content: "The name of the resource group where the Azure AI service is deployed."
+    - content: "The name of the resource group where the Azure service is deployed."
       isCorrect: false
       explanation: "Incorrect. The resource group name isn't required to use the REST API."
     - content: "The Azure subscription ID and tenant ID."
@@ -26,9 +26,9 @@ quiz:
       explanation: "Correct. The endpoint and key are required to use the REST API."
   - content: "What must be specified when calling the *analyze* method to extract fields from content?"
     choices:
-    - content: "The name of the Azure AI services resource."
+    - content: "The name of the Foundry Tools resource."
       isCorrect: false
-      explanation: "Incorrect. The name of the Azure AI services resource isn't required."
+      explanation: "Incorrect. The name of the Foundry Tools resource isn't required."
     - content: "The name of the analyzer."
       isCorrect: true
       explanation: "Correct. The name of the analyzer is required to extract fields from content."

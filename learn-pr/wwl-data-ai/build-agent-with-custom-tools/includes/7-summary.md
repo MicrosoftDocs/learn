@@ -5,6 +5,7 @@ The techniques learned in this module enable businesses to generate marketing ma
 ## Further reading
 
 - [AI Agents for beginners tool use](https://github.com/microsoft/ai-agents-for-beginners/blob/main/04-tool-use/README.md?azure-portal=true)
-- [Azure AI Foundry Agent Service function calling](/azure/ai-services/agents/how-to/tools/function-calling?azure-portal=true)
+- [Microsoft Foundry Agent Service function calling](/azure/ai-services/agents/how-to/tools/function-calling?azure-portal=true)
 - [Introduction to Azure Functions](/azure/azure-functions/functions-overview?azure-portal=true)
 - [OpenAPI Specification](https://swagger.io/specification/?azure-portal=true)
+

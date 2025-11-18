@@ -3,7 +3,7 @@ uid: learn.wwl.evaluate-models-azure-ai-studio.exercise
 title: Exercise - Evaluate generative AI model performance
 metadata:
   title: Exercise - Evaluate generative AI model performance
-  description: "Evaluate the performance of your generative AI app in the Azure AI Foundry portal."
+  description: "Evaluate the performance of your generative AI app in the Microsoft Foundry portal."
   ms.date: 05/23/2025
   author: madiepev
   ms.author: madiepev
@@ -11,3 +11,4 @@ metadata:
 durationInMinutes: 15
 content: |
   [!include[](includes/5-exercise.md)]
+

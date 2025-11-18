@@ -2,8 +2,8 @@ AI tools for developers have become increasingly popular in recent years. Compan
 
 To help align AI tools with development tasks and projects, this unit examines the following resources:
 
-- Azure AI services.
-- Azure AI Foundry portal.
+- Foundry Tools.
+- Microsoft Foundry portal.
 - AI Builder.
 - Copilot Studio.
 - Semantic Kernel SDK.
@@ -11,29 +11,29 @@ To help align AI tools with development tasks and projects, this unit examines t
 - ChatGPT.
 - GitHub Copilot.
 
-## Azure AI services
+## Foundry Tools
 
-The Azure AI services are a set of cloud-based services that enable developers to build AI-powered applications without requiring expertise in machine learning. These services cover a wide range of AI capabilities, including speech recognition, natural language processing, computer vision, and decision-making. Azure AI services are designed to be easy to use and integrate with existing applications.
+The Foundry Tools are a set of cloud-based services that enable developers to build AI-powered applications without requiring expertise in machine learning. These services cover a wide range of AI capabilities, including speech recognition, natural language processing, computer vision, and decision-making. Foundry Tools are designed to be easy to use and integrate with existing applications.
 
-Azure Cognitive Services is a subset of Azure AI services that provide prebuilt AI models for common tasks such as text analysis, image recognition, and language translation. These models can be integrated into applications using REST APIs or SDKs.
+Some Foundry Tools provide prebuilt AI models for common tasks such as text analysis, image recognition, and language translation. These models can be integrated into applications using REST APIs or SDKs.
 
-The Azure AI services are best suited for projects that require AI capabilities but lack the resources or expertise to build custom models from scratch. These services help developers add AI features to their applications. This results in improved user experiences.
+The Foundry Tools are best suited for projects that require AI capabilities but lack the resources or expertise to build custom models from scratch. These services help developers add AI features to their applications. This results in improved user experiences.
 
-Azure AI services are intended for:
+Foundry Tools are intended for:
 
 - Developers who want to add AI capabilities to their applications without needing to build custom models.
 - Organizations that need to quickly deploy AI-powered solutions without investing in specialized AI expertise.
 - Projects that require common AI capabilities like speech recognition, natural language processing, or computer vision.
 
-## Azure AI Foundry portal
+## Microsoft Foundry portal
 
-Azure AI Foundry portal is a web-based platform that allows developers to build, train, and deploy machine learning models using a visual interface. It provides a range of tools and templates to help developers create AI models without needing to write code. Azure AI Foundry portal supports popular machine learning frameworks like TensorFlow and PyTorch, making it easy to work with existing models.
+Microsoft Foundry portal is a web-based platform that allows developers to build, train, and deploy machine learning models using a visual interface. It provides a range of tools and templates to help developers create AI models without needing to write code. Microsoft Foundry portal supports popular machine learning frameworks like TensorFlow and PyTorch, making it easy to work with existing models.
 
-Azure AI Foundry portal also includes features for data preparation, model training, and model evaluation. Developers can use drag-and-drop tools to create data pipelines, experiment with different algorithms, and monitor model performance. Once a model is trained, it can be deployed as a web service or integrated into an existing application.
+Microsoft Foundry portal also includes features for data preparation, model training, and model evaluation. Developers can use drag-and-drop tools to create data pipelines, experiment with different algorithms, and monitor model performance. Once a model is trained, it can be deployed as a web service or integrated into an existing application.
 
-Azure AI Foundry portal is ideal for developers who want to experiment with machine learning models without needing to write code or manage infrastructure. It provides a user-friendly interface for building and deploying AI models, making it accessible to a wide range of developers.
+Microsoft Foundry portal is ideal for developers who want to experiment with machine learning models without needing to write code or manage infrastructure. It provides a user-friendly interface for building and deploying AI models, making it accessible to a wide range of developers.
 
-Azure AI Foundry portal is intended for:
+Microsoft Foundry portal is intended for:
 
 - Developers who want to experiment with machine learning models without needing to write code.
 - Data scientists who need a platform for building, training, and deploying AI models.
@@ -167,3 +167,4 @@ GitHub Copilot and GitHub Copilot Chat are intended for:
 ## Summary
 
 AI-assisted programming tools cater to a wide range of development needs, from writing and refactoring code to building and deploying machine learning models. AI tools make software development more efficient, accessible, and enjoyable. Whether you're a seasoned developer or just starting out, AI tools can help you take your coding to the next level.
+
