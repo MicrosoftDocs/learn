@@ -1,21 +1,45 @@
-**AI-powered information extraction** and analysis enables organizations to gain actionable insights from data that might otherwise be locked up in documents, images, audio files, or other assets. Insights can come from structured and unstructured content. **Structured content** is information stored in a consistent format. Some examples include invoices, tax forms, and tables. **Unstructured content** is information that isn't in a predefined format. Some examples include emails, audio recordings, images, and videos. 
+::: zone pivot="video"
 
-## Information extraction processes 
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=86f5598a-6f4c-423e-86ab-28325df6e4d4]
 
-In general, information extraction processes follow these steps:
+> [!NOTE]
+> See the **Text and images** tab for more details!
 
-|**Step** | **Description** |
-|-|-|
-| **Source Identification** | Determine where the information resides and if it needs to be digitized.|
-| **Extraction** | Leverages many techniques based on machine learning to understand and extract data from digitized content. |
-| **Transformation & Structuring** | Extracted data is transformed into structured formats like JSON or tables.|
-| **Storage & Integration**| The processed data is then stored in databases, data lakes, or analytics platforms for further use.|
+::: zone-end
 
-Both the type of content and type of insights needed from that content inform which techniques are necessary for information extraction. In this module we will take a look at the extraction of information with AI: 
+::: zone pivot="text"
 
-- From images 
-- From forms
-- From multiple modalities 
-- For knowledge mining 
+Information extraction is a workload that combines multiple AI techniques to extract data from content - often digital documents. A comprehensive information extraction solution involves elements of computer vision to detect text in image-based data; and machine learning, or increasingly generative AI, to semantically map the extracted text to specific data fields.
 
-In many ways, the techniques used for images, forms, multiple modalities, and knowledge mining build upon each other.
+![Diagram of the information extraction process.](../media/information-extraction.png)
+
+1. Text detection and extraction from images using optical character recognition (OCR).
+1. Value identification and mapping from the OCR results to data fields.
+
+For example, an AI-powered expense claim processing solution might automatically extract the relevant fields from receipts to process claims more efficiently.
+
+| Scanned receipt | Extracted data |
+| -- |--|
+| ![Diagram of a receipt.](../media/receipt.png)|<ul><li>**Vendor**: Fourth Coffee</li><li>**Date**: 2024-08-15</li><li>**Subtotal**: $6.48</li><li>**Tax**: $0.49</li><li>**Total Claim**: $6.97</li></ul> |
+
+## Choosing the right approach
+
+When planning an information extraction solution, it's important to consider the requirements and constraints that the system must address. Some key considerations include:
+
+- **Document characteristics**. The documents from which you need to extract data are the basis of the whole solution. Consider factors like:
+    - **Layout consistency**: Standardized forms favor template-based approaches, while a need to process multiple formats and layouts might require a more complex machine learning based solution.
+    - **Volume requirements**: High-volume processing benefits from automated machine learning models that run on optimized system hardware.
+    - **Accuracy requirements**: Critical applications might need human-in-the-loop validation.
+
+- **Technical infrastructure requirements and constraints**. Your solution will require hardware and software infrastructure to run. Consider factors like:
+    - **Security and privacy**: The documents you're processing might contain sensitive or confidential data. Your solution must include adequate measures to secure access to the data and compliance with any industry requirements for storing and processing protected data.
+    - **Processing power**: Deep learning and generative AI models commonly used in information extraction solutions require significant computational resources.
+    - **Latency requirements**: Real-time processing might limit model complexity.
+    - **Scalability needs**: Cloud-based solutions offer better scalability for variable workloads.
+    - **Integration complexity**: Consider API compatibility and data format requirements.
+
+> [!TIP]
+> In many cases, information extraction solutions can be built using software services, such as Microsoft Azure AI Document Intelligence and Microsoft Azure AI Content Understanding. Using services such as these as the foundation for your solution can greatly reduce the development effort required while providing highly scalable, industry-proven performance, accuracy, and integration capabilities.
+
+
+::: zone-end

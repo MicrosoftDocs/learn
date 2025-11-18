@@ -3,16 +3,21 @@ uid: learn.wwl.introduction-information-extraction
 metadata:
   title: Introduction to AI-powered information extraction concepts
   description: "Introduction to AI-powered information extraction concepts"
-  ms.date: 05/29/2025
+  ms.date: 11/18/2025
   author: wwlpublish
-  ms.author: sheryang
+  ms.author: gmalc
   ms.topic: module
   ai-usage: ai-assisted
   ms.service: azure
 title: Introduction to AI-powered information extraction concepts
-summary: Introduction to AI-powered information extraction
-abstract: Learn concepts of information extraction and search. 
-prerequisites: Ability to navigate the Azure portal
+summary: AI information extraction enables you to extract data values from documents, images, and other unstructured data sources.
+abstract: |
+  After completing this module, you will be able to: 
+  - Understand the key concepts of information extraction
+  - Describe how optical character recognition (OCR) extracts text from images
+  - Explain how form extraction maps extracted text to data fields
+prerequisites: |
+  Before starting this module, you should have a basic understanding of machine learning and computer vision concepts.
 iconUrl: /learn/achievements/form-recognizer-extract-data.svg
 levels:
 - beginner
@@ -23,14 +28,14 @@ roles:
 - solution-architect
 - student
 products:
-- ai-services
+- azure-ai-foundry
+subjects:
+- artificial-intelligence
 units:
 - learn.wwl.introduction-information-extraction.introduction
 - learn.wwl.introduction-information-extraction.overview
 - learn.wwl.introduction-information-extraction.vision-extraction
 - learn.wwl.introduction-information-extraction.form-extraction
-- learn.wwl.introduction-information-extraction.multimodal-extraction
-- learn.wwl.introduction-information-extraction.knowledge-mining
 - learn.wwl.introduction-information-extraction.exercise
 - learn.wwl.introduction-information-extraction.knowledge-check
 - learn.wwl.introduction-information-extraction.summary
