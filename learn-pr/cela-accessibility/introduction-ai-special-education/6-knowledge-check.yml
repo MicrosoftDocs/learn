@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.introduction-ai-special-education.6-knowledge-check
-title: "Knowledge Check: AI in Special Education"
+title: "Module assessment"
 metadata:
-  title: "Knowledge Check on AI in Special Education"
+  title: "Module Assessment"
   description: "Test your understanding of AI usage within special education contexts."
   ms.date: 10/12/2023
   author: wwlpublish
@@ -37,8 +37,8 @@ quiz:
       isCorrect: true
       explanation: "Correct. These are effective ways AI can assist special education teachers in their work."
     - content: "Drafting progress reports, analyzing student performance data"
-      isCorrect: true
-      explanation: "Correct. AI helps teachers by generating data insights and simplifying administrative tasks."
+      isCorrect: false
+      explanation: "These are valid ways AI can support teachers, but this choice lists two examples rather than the requested three."
     - content: "Standardizing instruction approaches across all students"
       isCorrect: false
       explanation: "Incorrect. Special education requires personalized approaches, not standardization."
