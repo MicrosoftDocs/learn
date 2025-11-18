@@ -27,14 +27,13 @@ After powering on, Surface Laptop for Business, it's easy to configure your sett
 
 After your account is synchronized, you'll have the option to set up biometric unlocking through Windows Hello to keep your device secure, importing settings from previous devices with your Microsoft Account backup, and finally setting up privacy settings. Now your Surface Laptop for Business is ready to be used.
 
->[!NOTE]
-> To set up Windows Hello follow these steps:
-> Open **Settings**.
-> Then select **Accounts**.
-> Choose **Sign-in options**.
-> Select **Facial recognition (Windows Hello)**.
-> Select **Set up**.
-> Follow on-screen instructions to register facial scan data.
+To set up Windows Hello follow these steps:
+1. Open **Settings**.
+2. Then select **Accounts**.
+3. Choose **Sign-in options**.
+4. Select **Facial recognition (Windows Hello)**.
+5. Select **Set up**.
+6. Follow on-screen instructions to register facial scan data.
 
 ## Using Adaptive touch
 

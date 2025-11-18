@@ -69,10 +69,10 @@ To initiate a search, simply click on the search box and begin typing what you a
 
 Improved Windows search will index and support your searches automatically. You can manage what is indexed and included using the following steps:
 
-- Go to **Settings**.
-- Select **Privacy & Security**.
-- Click on **Searching Windows** to adjust which locations are indexed on your Surface.
-- Turn on **Enhanced** to index your entire PC.
+1. Go to **Settings**.
+2. Select **Privacy & Security**.
+3. Click on **Searching Windows** to adjust which locations are indexed on your Surface.
+4. Turn on **Enhanced** to index your entire PC.
 
 >[!NOTE]
 > It's recommended that you plug in your Surface Laptop for Business for the initial search indexing to get completed, since the process can be taxing to the battery.
