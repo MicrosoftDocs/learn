@@ -23,7 +23,7 @@ To uncover the issues, you need deeper insight into the application's internal l
 
 ## Use tracing to analyze and debug
 
-**Tracing with Azure AI Foundry** provides that deeper insight. Tracing lets you follow the application’s execution step by step. It captures:
+**Tracing with Microsoft Foundry** provides that deeper insight. Tracing lets you follow the application’s execution step by step. It captures:
 
 - The original user input and how the app processes it.
 - Each component in the workflow, from prompt creation to model execution and post-processing.
@@ -32,4 +32,5 @@ To uncover the issues, you need deeper insight into the application's internal l
 
 By analyzing this information, you can troubleshoot, optimize, and improve complex AI systems.
 
-By the end of this module, you're able to trace and debug the execution flow of a generative AI application using Azure AI Foundry.
+By the end of this module, you're able to trace and debug the execution flow of a generative AI application using Microsoft Foundry.
+

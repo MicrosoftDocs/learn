@@ -1,4 +1,4 @@
-The Azure OpenAI Service offers API access to advanced language models such as GPT-4, GPT-4 Turbo with Vision, GPT-3.5-Turbo, and the Embeddings series. These models are flexible, supporting tasks like content generation, summarization, and image understanding. You can access the models through REST APIs, language specific SDKs, or directly via the Azure AI Foundry portal. 
+The Azure OpenAI Service offers API access to advanced language models such as GPT-4, GPT-4 Turbo with Vision, GPT-3.5-Turbo, and the Embeddings series. These models are flexible, supporting tasks like content generation, summarization, and image understanding. You can access the models through REST APIs, language specific SDKs, or directly via the Microsoft Foundry portal. 
 
 ## Security, access control, and ethical AI use
 
@@ -18,3 +18,4 @@ Once you create an Azure OpenAI resource and deploy the desired models within th
 RAG enhances the system's understanding and creation of text by providing improved contextual information to the generative AI model with your own data. Azure OpenAI combined with your own data in vCore-based Azure Cosmos DB for MongoDB produces more accurate and contextually relevant responses.
 
 Using the Azure OpenAI service in your applications allows you to tap into advanced AI features, boosting efficiency and flexibility in your business operations all while adhering to principles of ethical AI usage.
+

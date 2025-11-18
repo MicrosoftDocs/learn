@@ -25,7 +25,7 @@ quiz:
     - content: "An application that monitors AI model performance"
       isCorrect: false
       explanation: "Incorrect."
-  - content: "Which of the following best describes the purpose of the Azure AI Foundry model catalog?"
+  - content: "Which of the following best describes the purpose of the Microsoft Foundry model catalog?"
     choices:
     - content: "It stores user-generated content for Copilot Studio projects."
       isCorrect: false

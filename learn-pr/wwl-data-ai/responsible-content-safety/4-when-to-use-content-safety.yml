@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.responsible-ai-content-safety.when-to-use-content-safety
 
-title: When to use Azure AI Foundry Content Safety
+title: When to use Microsoft Foundry Content Safety
 metadata:
-  title: When to use Azure AI Foundry Content Safety
+  title: When to use Microsoft Foundry Content Safety
   description: There's a need to moderate harmful language in many online situations, including education, e-commerce, and gaming. 
   ms.date: 05/16/2025
   author: ivorb

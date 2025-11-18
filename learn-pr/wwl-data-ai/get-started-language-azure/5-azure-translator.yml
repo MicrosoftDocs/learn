@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.get-started-language-azure.azure-translator
-title: Azure AI Translator capabilities
+title: Azure Translator capabilities
 metadata:
-  title: Azure AI Translator capabilities
-  description: "Azure AI Translator capabilities"
+  title: Azure Translator capabilities
+  description: "Azure Translator capabilities"
   ms.date: 05/22/2025
   author: wwlpublish
   ms.author: sheryang

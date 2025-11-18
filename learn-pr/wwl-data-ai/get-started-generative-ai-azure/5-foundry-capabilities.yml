@@ -1,11 +1,11 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.get-started-generative-ai-azure.foundry-capabilities
-title: Understand Azure AI Foundry capabilities
+title: Understand Microsoft Foundry capabilities
 metadata:
   adobe-target: true
   prefetch-feature-rollout: true
-  title: Understand Azure AI Foundry capabilities
-  description: Understand Azure AI Foundry capabilities
+  title: Understand Microsoft Foundry capabilities
+  description: Understand Microsoft Foundry capabilities
   author: sherzyang
   ms.author: sheryang
   ms.date: 05/26/2025

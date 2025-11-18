@@ -4,7 +4,7 @@ metadata:
   adobe-target: true
   prefetch-feature-rollout: true
   title: Monitor your generative AI application
-  description: Learn how to monitor the performance of your generative AI application using Azure AI Foundry. This module teaches you to track key metrics like latency and token usage to make informed, cost-effective deployment decisions.
+  description: Learn how to monitor the performance of your generative AI application using Microsoft Foundry. This module teaches you to track key metrics like latency and token usage to make informed, cost-effective deployment decisions.
   author: wwlpublish
   ms.author: madiepev
   ms.date: 04/30/2025
@@ -14,12 +14,12 @@ metadata:
     - wwl-ai-copilot
   ms.custom: ai-learning-hub
 title: Monitor your generative AI application
-summary: "Learn how to monitor the performance of your generative AI application using Azure AI Foundry. This module teaches you to track key metrics like latency and token usage to make informed, cost-effective deployment decisions."
+summary: "Learn how to monitor the performance of your generative AI application using Microsoft Foundry. This module teaches you to track key metrics like latency and token usage to make informed, cost-effective deployment decisions."
 abstract: |
   By the end of this module, you'll be able to:
     - Understand why monitoring is essential when moving Gen AI apps toward production readiness.
     - Identify and interpret key performance metrics: latency, throughput, token usage, and error rates.
-    - Use Azure Monitor together with Azure AI Foundry to observe and analyze app behavior.
+    - Use Azure Monitor together with Microsoft Foundry to observe and analyze app behavior.
     - Apply insights to optimize performance, cost, and user experience in Gen AI solutions.
 prerequisites: |
   Before starting this module, you should be familiar with:
@@ -48,4 +48,5 @@ units:
 - learn.wwl.monitor-generative-ai-app.summary
 badge:
   uid: learn.wwl.monitor-generative-ai-app.badge
+
 

@@ -29,7 +29,7 @@ To move from isolated pilots to durable solutions, we help you establish or stre
 
 - **Center of Excellence (CoE)**: For intake, prioritization, reuse, change management, and skills development.
 - **Governance and security guardrails**: Across AI initiatives, custom Large Language Model (LLM) apps, and agents—aligned to your risk posture and Responsible AI principles.
-- **Data and platform landing zones**: Using patterns like Azure AI Foundry and MLOps/LLMOps to make the path from proof of concept to production repeatable.
+- **Data and platform landing zones**: Using patterns like Microsoft Foundry and MLOps/LLMOps to make the path from proof of concept to production repeatable.
 
 These practices reflect Microsoft's five drivers of AI value—business strategy, technology strategy, applied AI experience, organization and culture, and AI governance—so your operating model is anchored to value creation, not just tooling.
 
@@ -42,3 +42,4 @@ Finally, we cohost discovery workshops with your process owners to identify and 
 This isn't theory. You can explore thousands of [public customer stories](https://www.microsoft.com/customers?azure-portal=true) across industries, and we map those proven patterns to your environment. We also bring lessons from Microsoft's own scaled deployments and guidance from the [Cloud Adoption Framework](/azure/cloud-adoption-framework?azure-portal=true) and [Well-Architected](/azure/well-architected/pillars?azure-portal=true) practices—refined through thousands of engagements. Wherever you are on your AI journey, Microsoft provides a repeatable path from use case to production with clear ROI measures, designed to differentiate your business.
 
 Next, let's explore organizing for AI success.
+

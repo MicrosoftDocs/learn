@@ -1,17 +1,17 @@
-**Azure AI Foundry Agent** is a specialized agent within the Microsoft Agent Framework, designed to provide enterprise-level conversational capabilities with seamless tool integration. It automatically handles tool calling, so you don't need to manually parse and invoke functions. The agent also securely manages conversation history using threads, which reduces the work of maintaining state. The Azure AI Foundry Agent supports many built-in tools, including code interpreter, file search, and web search. It also provides integration capabilities for Azure AI Search, Azure Functions, and other Azure services.
+**Microsoft Foundry Agent** is a specialized agent within the Microsoft Agent Framework, designed to provide enterprise-level conversational capabilities with seamless tool integration. It automatically handles tool calling, so you don't need to manually parse and invoke functions. The agent also securely manages conversation history using threads, which reduces the work of maintaining state. The Microsoft Foundry Agent supports many built-in tools, including code interpreter, file search, and web search. It also provides integration capabilities for Azure AI Search, Azure Functions, and other Azure services.
 
-## Creating an Azure AI Foundry Agent
+## Creating a Microsoft Foundry Agent
 
-An Azure AI Foundry Agent includes all the core capabilities you typically need for enterprise AI applications, like function execution, planning, and memory access. This agent acts as a self-contained runtime with enterprise-level features.
+A Microsoft Foundry Agent includes all the core capabilities you typically need for enterprise AI applications, like function execution, planning, and memory access. This agent acts as a self-contained runtime with enterprise-level features.
 
-To use an Azure AI Foundry Agent:
-1. Create an Azure AI Foundry project.
+To use a Microsoft Foundry Agent:
+1. Create a Microsoft Foundry project.
 1. Add the project connection string to your Microsoft Agent Framework application code.
 1. Set up authentication credentials.
 1. Create a `ChatAgent` with an `AzureAIAgentClient`.
 1. Define tools and instructions for your agent.
 
-Here's the code that shows how to create an Azure AI Foundry Agent:
+Here's the code that shows how to create a Microsoft Foundry Agent:
 
 ```python
 from agent_framework import AgentThread, ChatAgent
@@ -49,11 +49,11 @@ first_result = await agent.run(first_query, thread=thread)
 print(f"Agent: {first_result.text}")
 ```
 
-### Azure AI Foundry Agent key components
+### Microsoft Foundry Agent key components
 
-The Microsoft Agent Framework Azure AI Foundry Agent uses the following components to work:
+The Microsoft Agent Framework Microsoft Foundry Agent uses the following components to work:
 
-- **AzureAIAgentClient** - manages the connection to your Azure AI Foundry project. This client lets you access the services and models associated with your project and provides enterprise-level authentication and security features.
+- **AzureAIAgentClient** - manages the connection to your Microsoft Foundry project. This client lets you access the services and models associated with your project and provides enterprise-level authentication and security features.
 
 - **ChatAgent** - the main agent class that combines the client, instructions, and tools to create a working AI agent that can handle conversations and complete tasks.
 
@@ -61,8 +61,9 @@ The Microsoft Agent Framework Azure AI Foundry Agent uses the following componen
 
 - **Tools integration** - support for custom functions that extend agent capabilities. Functions are automatically registered and can be called by agents to connect with external APIs and services.
 
-- **Authentication credentials** - supports Azure CLI credentials, service principal authentication, and other Azure identity options for secure access to Azure AI services.
+- **Authentication credentials** - supports Azure CLI credentials, service principal authentication, and other Azure identity options for secure access to Foundry Tools.
 
 - **Thread management** - provides flexible options for thread creation, including automatic thread creation for simple scenarios and explicit thread management for ongoing conversations.
 
 These components work together to let you create enterprise-level agents with instructions to define their purpose and get responses from AI models while maintaining security, scalability, and conversation context for business applications.
+

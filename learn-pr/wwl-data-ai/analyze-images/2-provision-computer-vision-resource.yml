@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.analyze-images.provision-computer-vision-resource
-title: Provision an Azure AI Vision resource
+title: Provision an Azure Vision resource
 metadata:
-  title: Provision an Azure AI Vision resource
-  description: Provision an Azure AI Vision resource
+  title: Provision an Azure Vision resource
+  description: Provision an Azure Vision resource
   author: wwlpublish
   ms.author: berryivor
   ms.date: 04/30/2025

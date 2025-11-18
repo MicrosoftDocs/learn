@@ -2,13 +2,13 @@ In the Microsoft Agent Framework, tools allow your AI agent to use existing APIs
 
 To enable automatic function calling, tools need to provide details that describe how they work. The function's input, output, and purpose should be described in a way that the AI can understand, otherwise, the AI can't call the function correctly.
 
-## How to use tools with Azure AI Foundry Agent
+## How to use tools with Microsoft Foundry Agent
 
 The Microsoft Agent Framework supports both custom function tools and built-in tools that are ready to use out of the box.
 
 ### Built-in tools
 
-Azure AI Foundry Agents come with several built-in tools that you can use immediately:
+Microsoft Foundry Agents come with several built-in tools that you can use immediately:
 
 - **Code Interpreter** - executes Python code for calculations, data analysis, and more
 - **File Search** - searches through and analyzes documents
@@ -18,7 +18,7 @@ These tools are automatically available and don't require any extra setup.
 
 ### Custom function tools
 
-When creating custom tools for your Azure AI Foundry Agent, you need to understand several key concepts:
+When creating custom tools for your Microsoft Foundry Agent, you need to understand several key concepts:
 
 1. **Function definition and annotations**
     
@@ -44,4 +44,4 @@ When creating custom tools for your Azure AI Foundry Agent, you need to understa
 - **Return meaningful data**: Ensure your functions return data that the AI can effectively use in its responses
 - **Keep functions focused**: Design each tool to handle a specific task rather than trying to do too many things in one function
 
-By following these concepts, you can extend your Azure AI Foundry Agent with both built-in and custom tools, allowing it to interact with APIs and perform advanced tasks. This approach makes your AI more powerful and capable of handling real-world applications efficiently.
+By following these concepts, you can extend your Microsoft Foundry Agent with both built-in and custom tools, allowing it to interact with APIs and perform advanced tasks. This approach makes your AI more powerful and capable of handling real-world applications efficiently.

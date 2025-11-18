@@ -22,7 +22,7 @@ Working closely with **Microsoft Tech for Social Impact** and **Microsoft AI Clo
 
 The first step was to digitalize the registration process and provide multi-language support with Microsoft Power Apps, eliminating error-prone manual data entry and providing offline service in areas without internet connection. This helps Operation Smile operate more efficiently and serve more patients in low-resource areas.
 
-Operation Smile uses Azure AI services to enhance patient care through streamlined medical event tracking and triage. By tying in Azure OpenAI Service, the organization unlocks real-time analysis of event reports and images, revealing performance trends that can help improve patient safety. This data-driven approach empowers Operation Smile to continually refine processes and elevate the overall patient experience.
+Operation Smile uses Foundry Tools to enhance patient care through streamlined medical event tracking and triage. By tying in Azure OpenAI Service, the organization unlocks real-time analysis of event reports and images, revealing performance trends that can help improve patient safety. This data-driven approach empowers Operation Smile to continually refine processes and elevate the overall patient experience.
 
 Microsoft Fabric and OneLake play crucial roles in centralizing data processes and patient record management through a unified Fabric dashboard view. This centralization offers more efficient data querying and analysis, which is essential for making informed decisions quickly.
 

@@ -3,7 +3,7 @@ uid: learn.wwl.detect-analyze-recognize-faces.exercise-identify-faces
 title: Exercise - Detect and analyze faces
 metadata:
   title: Exercise - Detect and analyze faces
-  description: Detect and analyze faces with the Azure AI Vision Face service.
+  description: Detect and analyze faces with the Azure Vision Face service.
   author: wwlpublish
   ms.author: berryivor
   ms.date: 05/03/2025

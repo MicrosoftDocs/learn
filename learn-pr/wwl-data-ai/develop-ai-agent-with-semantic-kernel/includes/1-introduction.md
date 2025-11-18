@@ -1,8 +1,8 @@
 AI agents are transforming how applications interact with users and automate tasks. Unlike traditional programs, AI agents use generative AI to interpret data, make decisions, and complete tasks with minimal human intervention. These agents use large language models to streamline complex workflows, making them ideal for automating business processes. 
 
-Developers can build AI agents using different tools, including the Microsoft Agent Framework. This open-source SDK simplifies the integration of AI models into applications. The Microsoft Agent Framework supports different types of agents from multiple providers, including Azure AI Foundry, Azure OpenAI, OpenAI, Microsoft Copilot Studio, and Anthropic agents. This module focuses on Azure AI Foundry Agents, which provide enterprise-grade capabilities using the Azure AI Foundry Agent Service.
+Developers can build AI agents using different tools, including the Microsoft Agent Framework. This open-source SDK simplifies the integration of AI models into applications. The Microsoft Agent Framework supports different types of agents from multiple providers, including Microsoft Foundry, Azure OpenAI, OpenAI, Microsoft Copilot Studio, and Anthropic agents. This module focuses on Microsoft Foundry Agents, which provide enterprise-grade capabilities using the Microsoft Foundry Agent Service.
 
-Azure AI Foundry Agent Service is a fully managed service that enables developers to securely build, deploy, and scale high-quality extensible AI agents. Using the Foundry Agent Service, developers don't need to manage the underlying compute or storage resources. The Microsoft Agent Framework enables developers to quickly build agents on the Foundry Agent Service, supporting natural language processing and providing access to built-in tools in just a few lines of code.
+Microsoft Foundry Agent Service is a fully managed service that enables developers to securely build, deploy, and scale high-quality extensible AI agents. Using the Foundry Agent Service, developers don't need to manage the underlying compute or storage resources. The Microsoft Agent Framework enables developers to quickly build agents on the Foundry Agent Service, supporting natural language processing and providing access to built-in tools in just a few lines of code.
 
 While Foundry Agent Service provides a powerful foundation for building AI agents, the Microsoft Agent Framework offers more flexibility and scalability. If your solution requires multiple types of agents, using the Microsoft Agent Framework ensures consistency across your implementation. Finally, if you're planning to develop multi-agent solutions, the framework's workflow orchestration features allow you to coordinate collaborative agents efficiently—a topic covered in more detail in a later module.
 
@@ -12,6 +12,7 @@ In this module, you learn about the core features of the Microsoft Agent Framewo
 
 After completing this module, you're able to:
 
-- Use the Microsoft Agent Framework to connect to an Azure AI Foundry project.
-- Create Azure AI Foundry agents using the Microsoft Agent Framework.
+- Use the Microsoft Agent Framework to connect to a Microsoft Foundry project.
+- Create Microsoft Foundry agents using the Microsoft Agent Framework.
 - Integrate tool functions with your AI agent.
+

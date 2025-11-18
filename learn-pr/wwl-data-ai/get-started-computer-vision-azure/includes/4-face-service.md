@@ -1,4 +1,4 @@
-As a product within Azure AI Vision, **Azure AI Face** supports specific use cases such as verifying user identity, liveness detection, touchless access control, and face redaction. Several concepts, including face detection and recognition, are essential to working with Face.
+As a product within Azure Vision, **Azure AI Face** supports specific use cases such as verifying user identity, liveness detection, touchless access control, and face redaction. Several concepts, including face detection and recognition, are essential to working with Face.
 
 ## Facial detection
 
@@ -35,7 +35,7 @@ The Azure AI Face service can return the rectangle coordinates for any human fac
 ## Responsible AI use 
 
 >[!IMPORTANT]
->To support Microsoft's [Responsible AI Standard](https://blogs.microsoft.com/on-the-issues/2022/06/21/microsofts-framework-for-building-ai-systems-responsibly/), Azure AI Face and Azure AI Vision have a [Limited Access policy](https://aka.ms/AAh91ff).
+>To support Microsoft's [Responsible AI Standard](https://blogs.microsoft.com/on-the-issues/2022/06/21/microsofts-framework-for-building-ai-systems-responsibly/), Azure AI Face and Azure Vision have a [Limited Access policy](https://aka.ms/AAh91ff).
 
 Anyone can use the Face service to:
 * Detect the location of faces in an image.
@@ -48,4 +48,4 @@ The Limited Access policy requires customers to [submit an intake form](https://
 * Face identification: the ability to identify named individuals in an image. 
 * Liveness detection: the ability to detect and mitigate instances of recurring content and/or behaviors that indicate a violation of policies (e.g., such as if the input video stream is real or fake).
 
-Next, let's take a look at how you can get started with Azure AI Vision.
+Next, let's take a look at how you can get started with Azure Vision.

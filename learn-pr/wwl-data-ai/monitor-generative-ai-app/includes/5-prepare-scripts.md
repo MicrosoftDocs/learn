@@ -1,10 +1,10 @@
-To generate monitoring data that is captured by Application Insights and visualized in Azure Monitor, you need to run a service you deployed through the Azure AI Foundry.
+To generate monitoring data that is captured by Application Insights and visualized in Azure Monitor, you need to run a service you deployed through the Microsoft Foundry.
 
 A service can simply be a deployed language model, or a deployed generative AI app like an AI assistant or agent.
 
 To integrate monitoring into your code, you need to:
 
-- Use the Azure AI Foundry SDK to **run model inference** and emit telemetry.
+- Use the Microsoft Foundry SDK to **run model inference** and emit telemetry.
 - Use the OpenTelemetry standard to **capture spans** representing each inference call and execution step.
 - Export data automatically to Azure Monitor and store it automatically with Application Insights.
 
@@ -13,9 +13,9 @@ To integrate monitoring into your code, you need to:
 
 ## Run model inference
 
-To begin monitoring your generative AI application, you need to use the [Azure AI Foundry SDK](/azure/ai-foundry/how-to/develop/sdk-overview?tabs=sync&pivots=programming-language-python?azure-portal=true) to run model inference. Model inference could be anything from a single language model completion to a full multi-turn assistant.
+To begin monitoring your generative AI application, you need to use the [Microsoft Foundry SDK](/azure/ai-foundry/how-to/develop/sdk-overview?tabs=sync&pivots=programming-language-python?azure-portal=true) to run model inference. Model inference could be anything from a single language model completion to a full multi-turn assistant.
 
-The Azure AI Foundry SDK allows you to connect with a specific Azure AI hub and project. With Python, this may look like the following code sample:
+The Microsoft Foundry SDK allows you to connect with a specific Azure AI hub and project. With Python, this may look like the following code sample:
 
 ```python
 connection_string = os.getenv('PROJECT_CONNECTION_STRING')
@@ -26,7 +26,7 @@ project = AIProjectClient.from_connection_string(
 )
 ```
 
-After, you can use the Azure AI model inference package (part of the Azure AI Foundry SDK) to interact with a deployed service. For example:
+After, you can use the Azure AI model inference package (part of the Microsoft Foundry SDK) to interact with a deployed service. For example:
 
 ```python
 chat_client = project.inference.get_chat_completions_client()
@@ -89,7 +89,7 @@ with tracer.start_as_current_span("generate_completion") as span:
 
 ## Export data automatically
 
-Finally, you need to ensure you're connecting with your Applications Insights resource to automatically export the generated monitoring data. When you connect an Application Insights resource with your Azure AI Foundry project, you can get the resource through the project:
+Finally, you need to ensure you're connecting with your Applications Insights resource to automatically export the generated monitoring data. When you connect an Application Insights resource with your Microsoft Foundry project, you can get the resource through the project:
 
 ```python
 application_insights_connection_string = project.telemetry.get_connection_string()
@@ -101,3 +101,4 @@ AIInferenceInstrumentor().instrument()
 Using the `AIinferenceInstrumentor` ensures that all AI inference operations performed by `chat_client` are automatically traced and monitored.
 
 Now that you understand how to monitor, let's explore what we can do with the information we track.
+
