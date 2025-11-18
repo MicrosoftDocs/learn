@@ -39,6 +39,6 @@ When planning an information extraction solution, it's important to consider the
     - **Integration complexity**: Consider API compatibility and data format requirements.
 
 > [!TIP]
-> In many cases, information extraction solutions can be built using software services, such as Microsoft Azure AI Document Intelligence and Microsoft Azure AI Content Understanding. Using services such as these as the foundation for your solution can greatly reduce the development effort required while providing highly scalable, industry-proven performance, accuracy, and integration capabilities.
+> In many cases, information extraction solutions can be built using software services, such as Azure Document Intelligence in Microsoft Foundry Tools and Azure Content Understanding in Microsoft Foundry Tools. Using services such as these as the foundation for your solution can greatly reduce the development effort required while providing highly scalable, industry-proven performance, accuracy, and integration capabilities.
 
 ::: zone-end
