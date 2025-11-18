@@ -1,4 +1,4 @@
-Once you understand how each safety control works, the next step is configuring a **content filter** in **Azure AI Foundry**. Content filters are one of the key guardrail components that analyze prompts and responses for potentially harmful, ungrounded, or policy-violating content.
+Once you understand how each safety control works, the next step is configuring a **content filter** in **Microsoft Foundry**. Content filters are one of the key guardrail components that analyze prompts and responses for potentially harmful, ungrounded, or policy-violating content.
 
 The **Guardrails + controls** workspace provides a single place to define how content is reviewed and filtered across AI workloads. The process involves creating a configuration, defining input and output filters, linking them to model deployments, and reviewing settings before deployment.
 
@@ -10,7 +10,7 @@ Start by naming your content filter. A clear, descriptive name makes it easy to 
 
 - Keep naming conventions consistent so configurations can be tracked and updated easily.
 
-   :::image type="content" source="../media/basic-information.png" alt-text="Screenshot showing the Basic information page in Azure AI Foundry with a guardrail name entered." lightbox="../media/basic-information.png":::
+   :::image type="content" source="../media/basic-information.png" alt-text="Screenshot showing the Basic information page in Microsoft Foundry with a guardrail name entered." lightbox="../media/basic-information.png":::
 
 Naming with purpose helps ensure the right protections are applied in the right environments.
 
@@ -70,7 +70,7 @@ After configuration, validation ensures your filters behave as intended. Use the
 - Record results to identify where thresholds or actions like _annotate only_ vs. _annotate and block_, might need adjustment.
 - Confirm that detections appear in logs or activity details to verify audit visibility and traceability.
 
-   :::image type="content" source="../media/test-content-filter.png" alt-text="Screenshot showing the Try it out page in Azure AI Foundry with configured harm category thresholds and a test result marked as allowed." lightbox="../media/test-content-filter.png":::
+   :::image type="content" source="../media/test-content-filter.png" alt-text="Screenshot showing the Try it out page in Microsoft Foundry with configured harm category thresholds and a test result marked as allowed." lightbox="../media/test-content-filter.png":::
 
 Validation helps fine-tune protections, catch configuration gaps, and build assurance that your AI workloads will respond safely under real-world conditions.
 

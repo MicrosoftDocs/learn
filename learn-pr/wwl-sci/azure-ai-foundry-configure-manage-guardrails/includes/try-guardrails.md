@@ -1,12 +1,12 @@
-Before defining custom content filters or blocklists, first evaluate how Azure AI Foundry's **built-in guardrails** perform under different conditions.
+Before defining custom content filters or blocklists, first evaluate how Microsoft Foundry's **built-in guardrails** perform under different conditions.
 The **Try it out** page in the **Guardrails + controls** workspace provides a safe environment to test moderation, Prompt Shields, groundedness detection, and protected-material detection before you apply them to live AI workloads.
 
-:::image type="content" source="../media/try-it-out.png" alt-text="Screenshot showing the Try it out page in Azure AI Foundry with options to test moderation, groundedness, protected material, and Prompt Shields for text and image content." lightbox="../media/try-it-out.png":::
+:::image type="content" source="../media/try-it-out.png" alt-text="Screenshot showing the Try it out page in Microsoft Foundry with options to test moderation, groundedness, protected material, and Prompt Shields for text and image content." lightbox="../media/try-it-out.png":::
 
 ## Evaluate how protections respond to risk
 
 The Try it out page lets you run built-in sample tests or enter your own text, code, or image examples.
-Testing these guardrails helps you understand how Azure AI Foundry identifies and mitigates content-related risks so you can make informed decisions when designing custom controls.
+Testing these guardrails helps you understand how Microsoft Foundry identifies and mitigates content-related risks so you can make informed decisions when designing custom controls.
 
 You can:
 
@@ -39,4 +39,4 @@ Run a few tests in each area and observe how results change as you adjust thresh
 
 Testing built-in guardrails establishes a baseline for responsible model behavior.
 
-By understanding this baseline first, you can design custom blocklists and content filters that extend Azure AI Foundry's protections and strengthen your organization's AI security posture.
+By understanding this baseline first, you can design custom blocklists and content filters that extend Microsoft Foundry's protections and strengthen your organization's AI security posture.
