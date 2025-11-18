@@ -4,7 +4,8 @@ Responsible use means staying in control of the task, keeping student privacy at
 
 1. **Plan:** Choose tasks like creating accessible reading passages or multilingual family updates. Work inside your organization's Microsoft 365 tenant so prompts and outputs are protected by your district's policies. Use general descriptors (e.g., "a fifth-grade student who uses text to speech") rather than personally identifiable information unless your district has approved a tool for PII.
 
-***Tip:***_ Only use AI tools that have been approved by your district._
+> [!TIP]
+> Only use AI tools that have been approved by your district.
 
 1. **Prompt:** Be specific and privacy-preserving. In **Copilot in Word**, you might ask: _"Draft three strengths-based reading goals for a fifth-grade student who benefits from text to speech and decodable texts. Use measurable language and include one example progress measure."_ In **Copilot in Outlook**, try: _"Draft a plain-language email to parents summarizing this week's reading activities (e.g., practicing decodable texts and using text-to-speech tools. Keep to 150 words. Offer translation availability."_ Both prompts give enough context to be useful, without disclosing PII.
 1. **Review:** Keep a human in the loop for all your AI interactions. AI outputs are starting points. Check content for accuracy, bias, and fit. Verify facts, grade-level appropriateness, and alignment with your school's curriculum. Revise and ensure recommendations match your school's policies and intent. For example, a special educator using **Copilot in Word** to draft goal language might notice that the draft overgeneralizes. They refine it to reflect the student's current performance data and accommodations, then add Immersive Reader screenshots to model accessible reading strategies for families.
