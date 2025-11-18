@@ -18,7 +18,7 @@ Upskilling costs include direct expenses (course fees, licenses) and indirect co
 
 ### Tools and enablement platform costs to develop AI agents
 
-Effective collaboration across AI teams requires shared environments, version control, and integrated tooling. Microsoft's Azure AI Foundry
+Effective collaboration across AI teams requires shared environments, version control, and integrated tooling. Microsoft's Microsoft Foundry
 and GitHub Copilot are central to enabling cost-efficient development workflows.
 
 ### Key tooling spend
@@ -26,7 +26,7 @@ and GitHub Copilot are central to enabling cost-efficient development workflows.
 | Tool/platform           | Purpose                                      | Cost drivers                                  |
 |-------------------------|----------------------------------------------|-----------------------------------------------|
 | **GitHub Copilot**      | Code generation, refactoring, documentation.  | Per-user licensing, usage quotas.              |
-| **Azure AI Foundry**    | Model catalog, benchmarking, orchestration.   | Workspace provisioning, compute usage.         |
+| **Microsoft Foundry**    | Model catalog, benchmarking, orchestration.   | Workspace provisioning, compute usage.         |
 | **Microsoft Teams**     | Cross-role communication and coordination.    | Licensing tiers, integration with DevOps.      |
 | **Azure DevOps**        | CI/CD pipelines, version control.             | Storage, build minutes, user license.            |
 
