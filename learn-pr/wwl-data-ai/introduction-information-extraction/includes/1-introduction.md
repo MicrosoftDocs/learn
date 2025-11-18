@@ -66,7 +66,7 @@ Some common examples of information extraction scenarios include:
 
 - **Shipment details**: Tracking numbers, weights, and dimensions.
 - **Address information**: Sender and recipient details, and delivery instructions.
-- **Customs documentation**: Commodity codes, values, and country of origin.
+- **Customs documentation**: Commodity codes, values, and geographical origin.
 
 **Purchase Orders** are commonly processed to extract:
 
