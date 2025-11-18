@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.analyze-text-ai-language.provision-resource
-title: Provision an Azure AI Language resource
+title: Provision an Azure Language resource
 metadata:
-  title: Provision an Azure AI Language resource
-  description: Provision an Azure AI Language resource
+  title: Provision an Azure Language resource
+  description: Provision an Azure Language resource
   author: ivorb
   ms.author: berryivor
   ms.date: 05/12/2025

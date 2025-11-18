@@ -4,9 +4,9 @@ The [**azure_ai extension**](/azure/postgresql/flexible-server/generative-ai-azu
 
 ![Diagram of the azure_ai extension for Azure Database for PostgreSQL.](../media/azure-database-postgresql-azure-ai-extension-diagram.png)
 
-## Azure AI services
+## Foundry Tools
 
-[**Azure AI services**](/azure/ai-services/what-are-ai-services) are a set of advanced cloud-based tools and technologies created by Microsoft to enable you to build intelligent apps and systems without requiring specialized AI or data science skills. These services allow the incorporation of powerful AI capabilities into a wide range of applications, such as natural language processing, machine learning, computer vision, and more. By using Azure AI services, you can create innovative solutions that enhance user experiences, automate workflows, and improve business operations across various industries.
+[**Foundry Tools**](/azure/ai-services/what-are-ai-services) are a set of advanced cloud-based tools and technologies created by Microsoft to enable you to build intelligent apps and systems without requiring specialized AI or data science skills. These services allow the incorporation of powerful AI capabilities into a wide range of applications, such as natural language processing, machine learning, computer vision, and more. By using Foundry Tools, you can create innovative solutions that enhance user experiences, automate workflows, and improve business operations across various industries.
 
 ### Azure OpenAI service
 
@@ -14,9 +14,9 @@ OpenAI is an AI research organization and technology company known for its groun
 
 The [**Azure OpenAI Service**](/azure/ai-services/openai/overview) provides REST API access to OpenAI's powerful language models and is designed to help build GenAI applications using Azure. Exposing a robust suite of artificial intelligence services and models enables you to build innovative applications that use natural language understanding, text generation, and other GenAI capabilities. Azure OpenAI provides access to state-of-the-art generative AI language models capable of understanding context, generating coherent text, and performing translation, summarization, and question-answering tasks. With Azure OpenAI, you can build applications that understand natural language input and respond intelligently.
 
-### Azure AI Language service
+### Azure Language service
 
-The [**Azure AI Language**](/azure/ai-services/language-service/overview) empowers you to build intelligent applications that understand and process natural language. When integrated with an Azure Database for PostgreSQL flexible server instance, these services enhance your database capabilities, allowing you to perform tasks like sentiment analysis, text summarization, and key phrase extraction directly within SQL queries.
+The [**Azure Language**](/azure/ai-services/language-service/overview) empowers you to build intelligent applications that understand and process natural language. When integrated with an Azure Database for PostgreSQL flexible server instance, these services enhance your database capabilities, allowing you to perform tasks like sentiment analysis, text summarization, and key phrase extraction directly within SQL queries.
 
 ## Azure Machine Learning
 
@@ -24,7 +24,7 @@ The [**Azure AI Language**](/azure/ai-services/language-service/overview) empowe
 
 ## Unlock AI-powered applications
 
-Azure AI and Machine Learning services can be seamlessly integrated into your PostgreSQL database using the `azure_ai` extension to help you build highly scalable AI-powered applications. You can use the familiar SQL language and the flexibility of PostgreSQL to create intelligent solutions within your database layer. Azure AI Services provides various capabilities, such as natural language processing, recommendation systems, text summarization, and content generation, which can empower your applications. Azure Machine Learning allows you to build, train, and deploy custom machine learning models, which can be invoked from the `azure_ai` extension to make predictions or generate outputs based on data in your tables.
+Azure AI and Machine Learning services can be seamlessly integrated into your PostgreSQL database using the `azure_ai` extension to help you build highly scalable AI-powered applications. You can use the familiar SQL language and the flexibility of PostgreSQL to create intelligent solutions within your database layer. Foundry Tools provides various capabilities, such as natural language processing, recommendation systems, text summarization, and content generation, which can empower your applications. Azure Machine Learning allows you to build, train, and deploy custom machine learning models, which can be invoked from the `azure_ai` extension to make predictions or generate outputs based on data in your tables.
 
 ## Scenario: Rental property search and recommendations application
 

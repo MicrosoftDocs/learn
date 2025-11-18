@@ -2,7 +2,7 @@
 uid: learn.wwl.get-started-computer-vision
 metadata:
   title: Get started with computer vision in Azure
-  description: Azure AI Vision service enables software engineers to create intelligent solutions that extract information from images; a common task in many artificial intelligence (AI) scenarios. Learn how to use the Azure AI Vision service to analyze images.
+  description: Azure Vision service enables software engineers to create intelligent solutions that extract information from images; a common task in many artificial intelligence (AI) scenarios. Learn how to use the Azure Vision service to analyze images.
   author: wwlpublish
   ms.author: sheryang
   ms.date: 08/28/2025
@@ -12,8 +12,8 @@ metadata:
   ms.collection:
     - wwl-ai-copilot
 title: Get started with computer vision in Azure
-summary: Azure AI Vision service enables software engineers to create intelligent solutions that extract information from images; a common task in many artificial intelligence (AI) scenarios.
-abstract: Learn how to use the Azure AI Vision service to analyze images.
+summary: Azure Vision service enables software engineers to create intelligent solutions that extract information from images; a common task in many artificial intelligence (AI) scenarios.
+abstract: Learn how to use the Azure Vision service to analyze images.
 prerequisites: Ability to navigate the Azure portal
 iconUrl: /training/achievements/read-text-computer-vision.svg
 levels:

@@ -42,7 +42,7 @@ In traditional MLOps, data management is centered around structured and semi-str
 
 LLMOps, however, requires handling **large amounts of unstructured text data**, necessitating more sophisticated data ingestion and preprocessing pipelines.
 
-Azure Databricks, combined with Azure AI Services, allows for the ingestion and processing of large text corpora, enabling the efficient training and fine-tuning of LLMs.
+Azure Databricks, combined with Microsoft Foundry, allows for the ingestion and processing of large text corpora, enabling the efficient training and fine-tuning of LLMs.
 
 ### Fine-tune instead of training from scratch
 
@@ -58,7 +58,7 @@ In traditional MLOps, deployment involves integrating models into production sys
 
 However, in LLMOps, **deployment happens earlier in the lifecycle** because you're working with pretrained models and are focusing on configuring how to call these deployed models. In LLMOps, your deployment strategies differ from traditional MLOps practices.
 
-Azure Databricks offers managed endpoints for deploying LLMs, with built-in monitoring and logging to ensure model performance and reliability in production environments. Alternatively, you can deploy LLMs with Azure OpenAI and Azure AI Services, and then use and configure them in Azure Databricks.
+Azure Databricks offers managed endpoints for deploying LLMs, with built-in monitoring and logging to ensure model performance and reliability in production environments. Alternatively, you can deploy LLMs with Azure OpenAI and Microsoft Foundry, and then use and configure them in Azure Databricks.
 
 ### Secure your system and implement responsible AI
 

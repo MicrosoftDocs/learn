@@ -13,7 +13,7 @@ prerequisites: |
   *   Familiarity with Azure and the Azure portal.
   *   Programming experience.
 summary: |
-  Natural language solutions use language models to interpret the semantic meaning of written or spoken language, and in some cases respond based on that meaning. You can use the Language service to build language models for your applications, and explore Azure AI Foundry to use generative models for speech.
+  Natural language solutions use language models to interpret the semantic meaning of written or spoken language, and in some cases respond based on that meaning. You can use the Language service to build language models for your applications, and explore Microsoft Foundry to use generative models for speech.
 iconUrl: /training/achievements/create-language-solution-azure-cognitive-services.svg
 levels:
 - intermediate
@@ -38,3 +38,4 @@ modules:
 - learn.wwl.develop-voice-live-agent
 trophy:
   uid: learn.wwl.develop-language-solutions-azure-ai.trophy
+

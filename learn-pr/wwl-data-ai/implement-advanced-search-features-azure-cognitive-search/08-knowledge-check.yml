@@ -46,7 +46,7 @@ quiz:
     - content: "Azure Speech Service."
       isCorrect: false
       explanation: "Incorrect. This product is focused on translating speech to text and text to speech services."
-    - content: "Azure AI Services."
+    - content: "Foundry Tools."
       isCorrect: true
-      explanation: "Correct. Azure AI Services provides translation services."
-
+      explanation: "Correct. Foundry Tools provides translation services."
+

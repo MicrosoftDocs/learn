@@ -5,7 +5,7 @@ metadata:
   adobe-target: true
   prefetch-feature-rollout: true
   title: Make informed decisions with trace data analysis
-  description: Learn how to analyze trace data in Azure AI Foundry to identify patterns, make data-driven improvements, and optimize AI application performance and reliability.
+  description: Learn how to analyze trace data in Microsoft Foundry to identify patterns, make data-driven improvements, and optimize AI application performance and reliability.
   author: wwlpublish
   ms.author: madiepev
   ms.date: 08/06/2025
@@ -15,3 +15,4 @@ metadata:
 durationInMinutes: 5
 content: |
   [!include[](includes/6-analyze-trace-data.md)]
+

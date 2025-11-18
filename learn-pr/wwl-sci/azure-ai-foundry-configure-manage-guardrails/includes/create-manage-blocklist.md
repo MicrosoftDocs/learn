@@ -1,6 +1,6 @@
 Blocklists act as a safeguard that prevents sensitive or restricted terms from being used in prompts or model responses.
 
-In **Azure AI Foundry**, you can create and manage custom blocklists from the **Guardrails + controls** workspace and apply them to input or output filters as part of your guardrail configuration.
+In **Microsoft Foundry**, you can create and manage custom blocklists from the **Guardrails + controls** workspace and apply them to input or output filters as part of your guardrail configuration.
 
 These lists help protect data and uphold internal or regulatory requirements by blocking content like:
 
@@ -73,7 +73,7 @@ After configuration, confirm that your blocklist performs as expected. Use the *
 - Adjust entries or detection types (Exact match vs Regex) if results need refinement.
 - Review portal results to ensure that actions like annotations or blocks appear correctly.
 
-:::image type="content" source="../media/test-blocklist.png" alt-text="Screenshot showing a blocked prompt in Azure AI Foundry where a regex in the RestrictedTermsList detects and rejects Admin-Token 9876." lightbox="../media/test-blocklist.png":::
+:::image type="content" source="../media/test-blocklist.png" alt-text="Screenshot showing a blocked prompt in Microsoft Foundry where a regex in the RestrictedTermsList detects and rejects Admin-Token 9876." lightbox="../media/test-blocklist.png":::
 
 Validation is a key assurance step—it confirms that your configuration enforces policy accurately and without unnecessary overblocking.
 Treat this step as both a final check and a learning opportunity to fine-tune your detection logic.

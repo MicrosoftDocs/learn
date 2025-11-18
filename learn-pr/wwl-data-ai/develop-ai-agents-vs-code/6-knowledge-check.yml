@@ -3,7 +3,7 @@ uid: learn.wwl.develop-ai-agents-vs-code.knowledge-check
 title: Module assessment
 metadata:
   title: Module assessment
-  description: Test your knowledge of developing AI agents using the Azure AI Foundry extension in Visual Studio Code.
+  description: Test your knowledge of developing AI agents using the Microsoft Foundry extension in Visual Studio Code.
   author: buzahid
   ms.author: buzahid
   ms.date: 10/06/2025
@@ -13,7 +13,7 @@ durationInMinutes: 3
 content: |
 quiz:
   questions:
-  - content: "When you create a new agent in the Azure AI Foundry extension, what two views are automatically opened?"
+  - content: "When you create a new agent in the Microsoft Foundry extension, what two views are automatically opened?"
     choices:
     - content: "The YAML file and the Playground view"
       isCorrect: false
@@ -35,7 +35,7 @@ quiz:
     - content: "They replace the need for all built-in tools"
       isCorrect: false
       explanation: "Incorrect. MCP servers complement built-in tools rather than replacing them, providing additional standardized tool options."
-  - content: "How does the Azure AI Foundry Agent Service manage conversation sessions when users interact with deployed agents?"
+  - content: "How does the Microsoft Foundry Agent Service manage conversation sessions when users interact with deployed agents?"
     choices:
     - content: "The system creates individual threads for each conversation to manage context and message history"
       isCorrect: true

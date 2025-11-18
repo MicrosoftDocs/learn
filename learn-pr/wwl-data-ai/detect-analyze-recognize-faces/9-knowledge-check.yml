@@ -17,13 +17,13 @@ quiz:
   questions:
   - content: "You need to create a facial recognition solution to identify named employees. Which service should you use?"
     choices:
-    - content: "Azure AI Vision Image Analysis."
+    - content: "Azure Vision Image Analysis."
       isCorrect: false
       explanation: "Incorrect. The Image Analysis service enables you to analyze images, but not to identify faces."
-    - content: "Azure AI Vision Custom Vision."
+    - content: "Azure Vision Custom Vision."
       isCorrect: false
       explanation: "Incorrect. The Custom Vision service enables you to train image classification and object detection models."
-    - content: "Azure AI Vision Face."
+    - content: "Azure Vision Face."
       isCorrect: true
       explanation: "Correct. Use the Face service to create a facial recognition solution."
   - content: "What should you return when analyzing an image to see the spatial points related to facial features?"

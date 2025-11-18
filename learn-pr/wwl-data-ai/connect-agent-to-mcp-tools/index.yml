@@ -18,7 +18,7 @@ abstract: |
   - Build an Azure AI agent that dynamically accesses and calls MCP tools during runtime.
 prerequisites: |
   Before starting this module, you should have:
-  - Experience with deploying generative AI models in Azure AI Foundry.
+  - Experience with deploying generative AI models in Microsoft Foundry.
   - Programming experience.
 iconUrl: /learn/achievements/generic-badge.svg
 levels: 
@@ -44,4 +44,5 @@ units:
 - learn.wwl.connect-agent-to-mcp-tools.summary
 badge:
   uid: learn.wwl.connect-agent-to-mcp-tools.badge
+
 

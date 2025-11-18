@@ -18,6 +18,6 @@ After this module, you should:
 - To learn more about Microsoft commitment to responsible AI, visit our [Responsible AI website](https://www.microsoft.com/ai/responsible-ai).
 - To learn more about how AI in Microsoft 365, read [AI in Microsoft 365](https://aka.ms/everydayai).
 - To learn more about our intelligent business applications, visit our [Dynamics 365 AI homepage](https://dynamics.microsoft.com/ai/overview/).
-- To learn more about all the prebuilt AI models available at Azure AI Services, read our [technical documentation on AI Services](/azure/ai-services/what-are-ai-services).
+- To learn more about all the prebuilt AI models available at Foundry Tools, read our [technical documentation on AI Services](/azure/ai-services/what-are-ai-services).
 - To learn more about the models delivered by Azure OpenAI Service, read our [technical documentation on Azure OpenAI Service](/azure/ai-services/openai/concepts/models).
 - To learn more about privacy and security in Azure OpenAI Service, read our [legal documentation on Azure OpenAI Service](/legal/cognitive-services/openai/data-privacy).

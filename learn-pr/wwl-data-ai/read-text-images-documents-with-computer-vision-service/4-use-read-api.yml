@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.read-text-images-documents-with-computer-vision-service.using-read-api
-title: Read text with Azure AI Vision Image Analysis
+title: Read text with Azure Vision Image Analysis
 metadata:
-  title: Read text with Azure AI Vision Image Analysis
-  description: Use the Read Visual Feature of Azure AI Vision Image Analysis
+  title: Read text with Azure Vision Image Analysis
+  description: Use the Read Visual Feature of Azure Vision Image Analysis
   author: ivorb
   ms.author: berryivor
   ms.date: 05/06/2025

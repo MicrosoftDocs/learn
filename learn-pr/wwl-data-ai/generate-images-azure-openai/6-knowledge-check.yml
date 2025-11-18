@@ -15,7 +15,7 @@ durationInMinutes: 3
 content: |
 quiz:
   questions:
-  - content: "You want to use a model in Azure AI Foundry to generate images. Which model should you use?"
+  - content: "You want to use a model in Microsoft Foundry to generate images. Which model should you use?"
     choices:
     - content: "DALL-E"
       isCorrect: true
@@ -26,7 +26,7 @@ quiz:
     - content: "text-embedding-ada-002"
       isCorrect: false
       explanation: "The text-embedding-ada-002 model is used to generate embeddings (vectors that represent text tokens)."
-  - content: "Which playground in Azure AI Foundry portal should you use to test an image-generation model?"
+  - content: "Which playground in Microsoft Foundry portal should you use to test an image-generation model?"
     choices:
     - content: "Agents"
       isCorrect: false
@@ -49,4 +49,5 @@ quiz:
       isCorrect: false
       explanation: "The size of the desired image is specified in the **size** parameter"
  
+
 

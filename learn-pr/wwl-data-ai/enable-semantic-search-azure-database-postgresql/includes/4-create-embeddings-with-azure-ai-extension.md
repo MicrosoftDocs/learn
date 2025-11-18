@@ -4,7 +4,7 @@ To run a semantic search, you must compare the query embedding with the embeddin
 
 ## Introduction to `azure_ai` and Azure OpenAI
 
-The [Azure Database for PostgreSQL flexible extension for Azure AI](/azure/postgresql/flexible-server/generative-ai-azure-overview) provides user-defined functions to integrate with Azure AI services including [Azure OpenAI](/azure/ai-services/openai/overview) and [Azure Cognitive Services](https://azure.microsoft.com/products/ai-services/cognitive-search/).
+The [Azure Database for PostgreSQL flexible extension for Azure AI](/azure/postgresql/flexible-server/generative-ai-azure-overview) provides user-defined functions to integrate with Microsoft Foundry including [Azure OpenAI](/azure/ai-services/openai/overview) and [Azure AI Search](https://azure.microsoft.com/products/ai-services/cognitive-search/).
 
 The [Azure OpenAI Embeddings API](/azure/ai-services/openai/reference#embeddings) generates an embedding vector of the input text. Use this API to set the embeddings for all items being searched. The `azure_ai` extension's `azure_openai` schema makes it easy to call the API from SQL to generate embeddings, whether to initialize item embeddings or create a query embedding on the fly. These embeddings can then be used to perform vector similarity search, or in other words, semantic search.
 

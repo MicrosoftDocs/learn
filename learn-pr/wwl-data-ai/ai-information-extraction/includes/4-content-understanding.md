@@ -1,4 +1,4 @@
-Azure AI Content Understanding uses state-of-the-art AI models to analyze content in multiple formats, including:
+Azure Content Understanding uses state-of-the-art AI models to analyze content in multiple formats, including:
 
 - Text-based forms and documents
 - Audio
@@ -7,7 +7,7 @@ Azure AI Content Understanding uses state-of-the-art AI models to analyze conten
 
 ## Analyzing forms and documents
 
-Azure AI Content Understanding's document analysis capabilities go beyond simple OCR-based text extraction to include schema-based extraction of fields and their values.
+Azure Content Understanding's document analysis capabilities go beyond simple OCR-based text extraction to include schema-based extraction of fields and their values.
 
 For example, suppose you define a schema that includes the common fields typically found in an invoice, such as:
 
@@ -30,7 +30,7 @@ Now suppose you need to extract this information from the following invoice:
 
 ![Photograph of an invoice.](../media/invoice.png)
 
-Azure AI Content Understanding can apply the invoice schema to your invoice and identify the corresponding fields, even when they're labeled with different names (or not labeled at all). The resulting analysis produces a result like this:
+Azure Content Understanding can apply the invoice schema to your invoice and identify the corresponding fields, even when they're labeled with different names (or not labeled at all). The resulting analysis produces a result like this:
 
 ![Photograph of an analyzed invoice with detected fields highlighted.](../media/analyzed-invoice.png)
 
@@ -64,7 +64,7 @@ For each detected field, the value is extracted from the invoice:
 
 ## Analyzing audio
 
-In addition to text-based documents, Azure AI Content Understanding is capable of analyzing audio files to provide transcriptions, summaries, and other key insights.
+In addition to text-based documents, Azure Content Understanding is capable of analyzing audio files to provide transcriptions, summaries, and other key insights.
 
 Suppose you want to have AI summarize your voice mail. You might define a schema of key insights to extract from each recorded call, like this:
 
@@ -88,7 +88,7 @@ Please call me back on 555-12345 or send me an e-mail at Ava@contoso.com and we'
 Thanks, bye!
 ```
 
-Using Azure AI Content Understanding to analyze the audio recording and apply your schema produces the following results:
+Using Azure Content Understanding to analyze the audio recording and apply your schema produces the following results:
 
 - **Caller**: Ava from Contoso
 - **Message summary**: Ava from Contoso called to follow up on a meeting and mentioned that they can meet the price expectations. She requested a callback or an email to discuss next steps.
@@ -98,7 +98,7 @@ Using Azure AI Content Understanding to analyze the audio recording and apply yo
 
 ## Analyzing images and video
 
-Azure AI Content Understanding supports analysis of images and video to extract information based on a custom schema. For example, you could analyze images of a video conference to extract details of attendance, location, and other information.
+Azure Content Understanding supports analysis of images and video to extract information based on a custom schema. For example, you could analyze images of a video conference to extract details of attendance, location, and other information.
 
 Suppose you defined the following schema for an image taken by a collaborative messaging system that combines in-room attendees and remote attendees on a conference call system:
 
@@ -107,11 +107,11 @@ Suppose you defined the following schema for an image taken by a collaborative m
 - Remote attendees
 - Total attendees
 
-You can use Azure AI Content Understanding to analyze the following still image from the conference room camera:
+You can use Azure Content Understanding to analyze the following still image from the conference room camera:
 
 ![Photograph of a person in a conference room on a call with three remote attendees.](../media/conference-call.jpg)
 
-When applying the preceding schema to this image, Azure AI Content Understanding produces the following results:
+When applying the preceding schema to this image, Azure Content Understanding produces the following results:
 
 - **Location**: Conference room
 - **In-person attendees**: 1

@@ -3,7 +3,7 @@ uid: learn.wwl.finetune-model-copilot-ai-studio.exercise
 title: Exercise - Fine-tune a language model
 metadata:
   title: Exercise - Fine-tune a language model
-  description: Exercise - Fine-tune a language model in the Azure AI Foundry portal.
+  description: Exercise - Fine-tune a language model in the Microsoft Foundry portal.
   author: madiepev
   ms.author: madiepev
   ms.date: 07/15/2025
@@ -13,4 +13,5 @@ metadata:
 durationInMinutes: 60
 content: |
   [!include[](includes/5-exercise.md)]
+
 

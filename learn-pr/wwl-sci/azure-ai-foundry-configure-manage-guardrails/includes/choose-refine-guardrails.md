@@ -1,5 +1,5 @@
 
-Effective security requires more than simply deploying controls. It involves choosing the right ones and validating that they work as intended. In **Azure AI Foundry**, guardrails let you design protections that fit the sensitivity, scale, and purpose of each workload.
+Effective security requires more than simply deploying controls. It involves choosing the right ones and validating that they work as intended. In **Microsoft Foundry**, guardrails let you design protections that fit the sensitivity, scale, and purpose of each workload.
 
 ## Select appropriate controls
 
@@ -30,7 +30,7 @@ Balancing safety and usability helps build trust in your governance model and en
 
 ## Review guardrail effectiveness
 
-Once your guardrails are active, review their performance using the observability data available in Azure AI Foundry.
+Once your guardrails are active, review their performance using the observability data available in Microsoft Foundry.
 Logs and insights show which rules are triggered most often, which content categories are being blocked, and how frequently users encounter annotations or warnings.
 
 Use this information to refine your configurations:
@@ -49,6 +49,6 @@ AI security isn't static. As models, data, and user behavior evolve, guardrail c
 - Review detections in the **Guardrails + controls** workspace for signs of new or emerging risk patterns.
 - Update blocklists, thresholds, and detection settings to respond to new findings or regulatory changes.
 
-**Azure AI Foundry** integrates with **Microsoft Defender for Cloud** to surface **security recommendations** related to your AI resources. These insights highlight platform-level risks like missing diagnostic logs, open network access, or local authentication settings. Addressing them helps ensure that both your AI-layer guardrails and the underlying Azure environment remain secure and compliant.
+**Microsoft Foundry** integrates with **Microsoft Defender for Cloud** to surface **security recommendations** related to your AI resources. These insights highlight platform-level risks like missing diagnostic logs, open network access, or local authentication settings. Addressing them helps ensure that both your AI-layer guardrails and the underlying Azure environment remain secure and compliant.
 
 Maintaining continuous assurance builds confidence that your controls are implemented effectively, measurable over time, and adaptable as risks evolve. By selecting the right mix of guardrails and balancing safety with usability, you create a protection framework that grows with your AI environment and keeps every workload, whether experimental or production, operating securely and in line with your organization's risk posture.
