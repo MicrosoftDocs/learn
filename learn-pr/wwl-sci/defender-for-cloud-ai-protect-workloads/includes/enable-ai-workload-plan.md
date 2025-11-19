@@ -1,4 +1,4 @@
-AI workloads often rely on multiple connected services, including models in Azure AI Foundry, data in Azure Storage or SQL, and compute hosted in containers or virtual machines. Without centralized discovery, it can be difficult to know where these resources exist or how they relate to each other.
+AI workloads often rely on multiple connected services, including models in Microsoft Foundry, data in Azure Storage or SQL, and compute hosted in containers or virtual machines. Without centralized discovery, it can be difficult to know where these resources exist or how they relate to each other.
 
 The **AI workloads plan** in Microsoft Defender for Cloud automatically identifies AI assets across your cloud environments and builds an inventory that shows how data, models, and services connect. This discovery process creates the foundation for assessing and protecting your AI environment.
 
@@ -23,7 +23,7 @@ Before you can review AI-specific insights in Defender for Cloud, you need to ma
 
    :::image type="content" source="../media/enable-ai-workloads-plan.png" alt-text="Screenshot showing the Defender plans page in Microsoft Defender for Cloud with the AI Services plan switched to On." lightbox="../media/enable-ai-workloads-plan.png":::
 
-Once enabled, Defender for Cloud begins discovering AI services such as Azure AI Foundry, Azure OpenAI Service, and Azure Machine Learning. Discovery results typically appear in the **Data & AI security** dashboard within minutes.
+Once enabled, Defender for Cloud begins discovering AI services such as Microsoft Foundry, Azure OpenAI Service, and Azure Machine Learning. Discovery results typically appear in the **Data & AI security** dashboard within minutes.
 
 ### Configure optional AI settings
 
