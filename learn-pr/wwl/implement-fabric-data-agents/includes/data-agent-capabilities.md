@@ -36,7 +36,7 @@ Your data agent can be used both within and outside Microsoft Fabric. Integratio
 
 - **Copilot Studio**: Extend the agent's functionality to custom workflows.
 - **Microsoft Teams**: Support collaborative data discussions.
-- **Azure AI Foundry**: Use AI capabilities for additional scenarios.
+- **Microsoft Foundry**: Use AI capabilities for additional scenarios.
 - **Custom Applications**: Embed the agent into your own tools and platforms.
 
 While both Microsoft Fabric data agents and  Copilot for Microsoft Fabric use generative AI to process and reason over data, there are key differences in their functionality and use cases:
