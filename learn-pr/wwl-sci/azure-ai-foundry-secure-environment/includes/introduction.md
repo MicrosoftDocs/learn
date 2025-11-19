@@ -1,4 +1,4 @@
-As Azure AI Foundry environments grow, different teams often share access to the same resources, credentials, and data connections. Without defined boundaries, these shared environments can create exposure risks or make it difficult to trace who changed what. Strengthening identity controls, securing connection information, and isolating network communication are essential to keeping AI workloads trustworthy and compliant.
+As Microsoft Foundry environments grow, different teams often share access to the same resources, credentials, and data connections. Without defined boundaries, these shared environments can create exposure risks or make it difficult to trace who changed what. Strengthening identity controls, securing connection information, and isolating network communication are essential to keeping AI workloads trustworthy and compliant.
 
 ## Learning objectives
 
