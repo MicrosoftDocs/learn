@@ -1,4 +1,4 @@
-Azure AI Foundry's built-in AgentOps tools enable organizations to efficiently manage and optimize their AI agent investments by offering robust observability, governance, and performance tuning capabilities. These tools provide real-time monitoring, detailed tracing, and evaluation metrics that help developers  assess and improve agent behavior, accuracy, and responsiveness. With secure data access features and support for multi-agent orchestration, the platform ensures agents operate reliably within enterprise compliance frameworks, making it easier to scale intelligent, goal-driven agents across diverse business scenarios.
+Microsoft Foundry's built-in AgentOps tools enable organizations to efficiently manage and optimize their AI agent investments by offering robust observability, governance, and performance tuning capabilities. These tools provide real-time monitoring, detailed tracing, and evaluation metrics that help developers  assess and improve agent behavior, accuracy, and responsiveness. With secure data access features and support for multi-agent orchestration, the platform ensures agents operate reliably within enterprise compliance frameworks, making it easier to scale intelligent, goal-driven agents across diverse business scenarios.
 
 ## Monitor agents with Azure Monitor Application Insights
 
@@ -77,9 +77,9 @@ You have the following export options:
     - Dataset type (actual, amortized, etc.).
 1. In Power BI, connect to exported cost data from storage.
 
-## Continuously evaluate your AI agents in Azure AI Foundry
+## Continuously evaluate your AI agents in Microsoft Foundry
 
-Continuous evaluation in Azure AI Foundry provides **near real-time observability** into the performance, safety, and quality of AI agents. Once enabled, it automatically samples and evaluates agent interactions using built-in metrics and surfaces insights in the **Foundry Observability dashboard**.
+Continuous evaluation in Microsoft Foundry provides **near real-time observability** into the performance, safety, and quality of AI agents. Once enabled, it automatically samples and evaluates agent interactions using built-in metrics and surfaces insights in the **Foundry Observability dashboard**.
 
 Foundry Observability dashboard capabilities include:
 
@@ -110,7 +110,7 @@ Foundry Observability has the following prerequisites:
 
 1. Connect Application Insights.
 
-    1. Navigate to your project in Azure AI Foundry.
+    1. Navigate to your project in Microsoft Foundry.
     1. Select **Monitoring > Application Analytics**.
     1. Connect your **Application Insights** resource.
 
