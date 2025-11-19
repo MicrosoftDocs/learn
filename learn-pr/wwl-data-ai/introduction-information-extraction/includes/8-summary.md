@@ -1,6 +1,21 @@
 
-In this module you learned how modern organizations can process content using AI-powered information extraction. Extracting key information from this content and storing it in structured formats (like databases) is essential but often time-consuming and error-prone. AI-powered information extraction uses machine learning to automate the identification and structuring of data. Generative AI further allows users to define custom fields (like “summary”) and generate values from unstructured content such as emails or videos. All of this extracted data can be used to improve the searchable content in a search index. 
+::: zone pivot="video"
 
-## Learn more
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=c606c888-a6c8-48b0-b100-8206f57baa81]
 
-Apply these concepts in [Get started with AI-powered information extraction in Azure](/training/modules/ai-information-extraction/).
+> [!NOTE]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
+In this module, you learned how organizations can use AI-powered information extraction to process content. Extracting key information from unstructured content and storing it in structured formats, such as databases, is essential but often time-consuming and error-prone. AI-powered information extraction uses techniques like optical character recognition (OCR), text analysis, machine learning, and generative AI to automate the identification and extraction of data.
+
+::: zone-end
+
+> [!TIP]
+> For more information about developing information extraction solutions on Microsoft Azure, see:
+>
+> - **[Azure Document Intelligence in Foundry Tools](https://azure.microsoft.com/products/ai-foundry/tools/document-intelligence?azure-portal=true)**.
+> - **[Azure Content Understanding in Foundry Tools](https://azure.microsoft.com/products/ai-foundry/tools/content-understanding?azure-portal=true)**.

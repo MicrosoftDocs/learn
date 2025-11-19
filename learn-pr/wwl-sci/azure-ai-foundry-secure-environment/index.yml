@@ -1,17 +1,17 @@
 ### YamlMime:Module
 uid: learn.wwl.azure-ai-foundry-secure-environment
 metadata:
-  title: Secure Azure AI Foundry environments
-  description: Secure Azure AI Foundry environments by applying layered protections across identity, secrets, networks, and diagnostics. This module explains how to manage access with Microsoft Entra ID and project roles, protect credentials with Key Vault, and isolate workloads through private network connections. It also covers enabling diagnostic logging to strengthen visibility and auditing. These practices help you build trusted, compliant AI environments that support collaboration safely.
+  title: Secure Microsoft Foundry environments
+  description: Secure Microsoft Foundry environments by applying layered protections across identity, secrets, networks, and diagnostics. This module explains how to manage access with Microsoft Entra ID and project roles, protect credentials with Key Vault, and isolate workloads through private network connections. It also covers enabling diagnostic logging to strengthen visibility and auditing. These practices help you build trusted, compliant AI environments that support collaboration safely.
   ms.date: 10/17/2025
   author: wwlpublish
   ms.author: riswinto
   ms.topic: module
   ai-usage: ai-assisted
   ms.service: azure-ai-foundry
-title: Secure Azure AI Foundry environments
+title: Secure Microsoft Foundry environments
 summary: |
-  To secure Azure AI Foundry environments requires layered protections that control access, safeguard credentials, isolate network communication, and maintain visibility across connected resources.
+  To secure Microsoft Foundry environments requires layered protections that control access, safeguard credentials, isolate network communication, and maintain visibility across connected resources.
   The approach includes defining access boundaries with Microsoft Entra ID and project roles, and integrating Key Vault for secret management. It also uses managed virtual networks, Private Link, and diagnostic logging to maintain privacy, visibility, and compliance.
   These practices create secure, traceable AI environments that support collaboration without compromising protection.
 abstract: |

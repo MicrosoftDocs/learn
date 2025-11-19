@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.azure-ai-foundry-secure-environment.enable-foundry-diagnostics
-title: Enable diagnostic logging in Azure AI Foundry
+title: Enable diagnostic logging in Microsoft Foundry
 metadata:
-  title: Enable diagnostic logging in Azure AI Foundry
-  description: "Enable diagnostic logging in Azure AI Foundry."
+  title: Enable diagnostic logging in Microsoft Foundry
+  description: "Enable diagnostic logging in Microsoft Foundry."
   ms.date: 10/17/2025
   author: wwlpublish
   ms.author: riswinto

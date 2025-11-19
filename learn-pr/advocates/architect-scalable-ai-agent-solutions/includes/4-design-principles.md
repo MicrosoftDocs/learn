@@ -101,7 +101,7 @@ For cost governance, consider the following strategies:
   - This reduces pricing variability and avoids quota-related
     escalations.
 - Control AI Service usage.
-  - Apply policies to Azure AI Foundry, Azure OpenAI, and Azure AI
+  - Apply policies to Microsoft Foundry, Azure OpenAI, and Azure AI
     Search.
   - Limit usage to approved models or endpoints to prevent uncontrolled
     consumption.
@@ -292,7 +292,7 @@ workloads.
 
 ### Commitment plans: cost savings through reservations
 
-Azure AI Foundry Provisioned Throughput reservations allow organizations
+Microsoft Foundry Provisioned Throughput reservations allow organizations
 to prepurchase PTUs for one-month or one-year terms. Key benefits
 include:
 

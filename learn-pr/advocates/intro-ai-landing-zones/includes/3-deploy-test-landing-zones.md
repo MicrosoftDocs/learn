@@ -14,4 +14,4 @@ The Azure landing zone accelerator is the recommended starting point for all cus
 
 ## Deploying the Azure OpenAI Chat Baseline Landing Zone
 
-You can find instructions on how to deploy the Azure OpenAI Chat Baseline Landing Zone on GitHub at the following address: <https://github.com/Azure-Samples/azure-openai-chat-baseline-landing-zone>. Note: This reference landing zone when fully deployed is likely to cost more than $100 a day, based on the costs of Azure DDoS protection and Azure AI Foundry's managed network firewall. The landing zone's GitHub page also provides tools that you can use to remove the example deployment.
+You can find instructions on how to deploy the Azure OpenAI Chat Baseline Landing Zone on GitHub at the following address: <https://github.com/Azure-Samples/azure-openai-chat-baseline-landing-zone>. Note: This reference landing zone when fully deployed is likely to cost more than $100 a day, based on the costs of Azure DDoS protection and Microsoft Foundry's managed network firewall. The landing zone's GitHub page also provides tools that you can use to remove the example deployment.
