@@ -68,4 +68,4 @@ When choosing between Copilot and pro-code, consider:
 
 ## Hybrid Approach
 
-Many organizations benefit from a hybrid strategy, using Copilot tools for quick wins and pro-code platforms for strategic, scalable solutions. Microsoft's ecosystem supports this flexibility, allowing agents built in Copilot Studio to be extended or managed via Azure AI Foundry. Tools like Azure AI Foundry and AI Toolkit make it easy to move from UI to code. In fact, both have playgrounds that extract the code from a prototype built with the UI as a 1-click experience, which creates a template to customize, not a ready to publish application.
+Many organizations benefit from a hybrid strategy, using Copilot tools for quick wins and pro-code platforms for strategic, scalable solutions. Microsoft's ecosystem supports this flexibility, allowing agents built in Copilot Studio to be extended or managed via Microsoft Foundry. Tools like Microsoft Foundry and AI Toolkit make it easy to move from UI to code. In fact, both have playgrounds that extract the code from a prototype built with the UI as a 1-click experience, which creates a template to customize, not a ready to publish application.

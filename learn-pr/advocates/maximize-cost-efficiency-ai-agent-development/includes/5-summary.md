@@ -7,7 +7,7 @@ For more information, see:
 - [Define an AI technology strategy](/azure/cloud-adoption-framework/scenarios/ai/strategy)
 - [Quickstart: Create and deploy an agent](/microsoft-copilot-studio/fundamentals-get-started)
 - [Tour the Visual Studio IDE](/visualstudio/ide/quickstart-ide-orientation)
-- [Quickstart: Get started with Azure AI Foundry (Foundry projects)](/azure/ai-foundry/quickstarts/get-started-code?tabs=azure-ai-foundry)
+- [Quickstart: Get started with Microsoft Foundry (Foundry projects)](/azure/ai-foundry/quickstarts/get-started-code?tabs=azure-ai-foundry)
 - [Get started with GitHub](https://docs.github.com/en/get-started)
 - [Microsoft 365 Copilot extensibility planning guide](/microsoft-365-copilot/extensibility/planning-guide)
 - [Microsoft Copilot Studio adoption guide](https://adoption.microsoft.com/en-gb/ai-agents/copilot-studio/)
