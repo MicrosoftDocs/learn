@@ -2,16 +2,16 @@
 uid: learn.manage-optimize-agent-investment-azure
 metadata:
   title: Manage and Optimize AI Agent Investments on Azure
-  description: Managing and optimizing AI agent investments on Azure is now more streamlined and powerful with the built-in observability capabilities in Azure AI Foundry. These tools provide enterprise-grade observability, governance, and performance optimization capabilities essential for deploying intelligent, goal-driven agents at scale. These tools provide enterprise-grade observability, governance, and performance optimization capabilities essential for deploying intelligent, goal-driven agents at scale.
+  description: Managing and optimizing AI agent investments on Azure is now more streamlined and powerful with the built-in observability capabilities in Microsoft Foundry. These tools provide enterprise-grade observability, governance, and performance optimization capabilities essential for deploying intelligent, goal-driven agents at scale. These tools provide enterprise-grade observability, governance, and performance optimization capabilities essential for deploying intelligent, goal-driven agents at scale.
   ms.date: 10/1/2025
   author: Orin-Thomas
   ms.author: orthomas
   ms.topic: module-standard-task-based # Please don't edit, used for our analytics
   ms.service: artificial-intelligence
 title: Manage and optimize AI agent investments on Azure
-summary: Managing and optimizing AI agent investments on Azure is now more streamlined and powerful with the built-in observability capabilities in Azure AI Foundry. These tools provide enterprise-grade observability, governance, and performance optimization capabilities essential for deploying intelligent, goal-driven agents at scale. These tools provide enterprise-grade observability, governance, and performance optimization capabilities essential for deploying intelligent, goal-driven agents at scale.
+summary: Managing and optimizing AI agent investments on Azure is now more streamlined and powerful with the built-in observability capabilities in Microsoft Foundry. These tools provide enterprise-grade observability, governance, and performance optimization capabilities essential for deploying intelligent, goal-driven agents at scale. These tools provide enterprise-grade observability, governance, and performance optimization capabilities essential for deploying intelligent, goal-driven agents at scale.
 abstract: |
-  Managing and optimizing AI agent investments on Azure is now more streamlined and powerful with the built-in observability capabilities in Azure AI Foundry. These tools provide enterprise-grade observability, governance, and performance optimization capabilities essential for deploying intelligent, goal-driven agents at scale.
+  Managing and optimizing AI agent investments on Azure is now more streamlined and powerful with the built-in observability capabilities in Microsoft Foundry. These tools provide enterprise-grade observability, governance, and performance optimization capabilities essential for deploying intelligent, goal-driven agents at scale.
   
   This module provides you with an understanding of the importance of monitoring AI agent performance and cost, the business impact of inefficiencies and overspending, and Microsoft’s approach to intelligent cost and performance management. You learn for tracking key performance indicators, usage metrics, and behavioral signals to ensure agents are meeting expectations, reducing friction, and operating within budget. This module also introduces tools for cost forecasting, anomaly detection, and lifecycle optimization.
   
