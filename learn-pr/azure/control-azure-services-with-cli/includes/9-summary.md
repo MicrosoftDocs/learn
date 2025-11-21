@@ -9,8 +9,7 @@ resources. Its clean syntax and powerful scripting capabilities make it a valuab
 administrators new to Bash. By automating time-consuming and error-prone tasks, you can reduce
 administrative overhead and improve overall efficiency and quality.
 
-<!-- Cleanup sandbox -->
-[!include[](../../../includes/azure-sandbox-cleanup.md)]
+[!INCLUDE [](../../../includes/azure-optional-exercise-subscription-cleanup.md)]
 
 ## Delete a resource group
 
