@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-event-messaging-azure-managed-redis.coordinate-multiple-subscribers
+title: Choose between broadcast and coordinated distribution
+metadata:
+  title: Choose Between Broadcast and Coordinated Distribution
+  description: Choose between broadcast and coordinated distribution
+  ms.date: 11/28/2025
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: unit
+azureSandbox: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-coordinate-multiple-subscribers.md)]
