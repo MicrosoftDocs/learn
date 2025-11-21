@@ -222,11 +222,11 @@ STRIPE_PUBLISHABLE_KEY=pk_live_your_key_here
 DATABASE_CONNECTION_STRING=Server=your_server;Database=your_db;
 ```
 
-## Other common remediation patterns
+### Other common remediation patterns
 
 Beyond basic configuration access, certain credential types require specialized handling approaches.
 
-### Database connection strings
+#### Database connection strings
 
 GitHub Copilot Agent can refactor database connection strings to use named connections from configuration files.
 
@@ -249,7 +249,7 @@ services.AddDbContext<DataContext>(options =>
         ?? throw new InvalidOperationException("DefaultConnection not configured")));
 ```
 
-### OAuth credentials
+#### OAuth credentials
 
 GitHub Copilot Agent can separate OAuth client IDs and secrets, ensuring that sensitive information is stored securely.
 
@@ -274,7 +274,7 @@ public class OAuthConfiguration
 services.Configure<OAuthConfiguration>(configuration.GetSection("OAuth"));
 ```
 
-### Encryption keys
+#### Encryption keys
 
 GitHub Copilot Agent can implement secure loading of encryption keys from configuration or secure storage.
 

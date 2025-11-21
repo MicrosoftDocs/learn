@@ -2,47 +2,21 @@
 uid: learn.resolve-github-secret-scanning-alerts-github-copilot-agent
 metadata:
   title: Resolve GitHub Secret Scanning alerts using GitHub Copilot Agent
-
-
-
-
-
-
-  description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the module; include relevant search keywords."
-  
-  
-  
-  
-  
-  
-  
+  description: "This module covers how to identify and remediate GitHub Secret Scanning alerts using GitHub Copilot's Ask and Agent modes. The training focuses on detecting hard-coded secrets in source code and implementing secure configuration patterns to replace them." 
   ms.date: 11/25/2025
   author: chrishowd
   ms.author: cahowd
   ms.topic: module-standard-task-based # Please don't edit, used for our analytics
   ms.service: github-copilot
 title: Resolve GitHub Secret Scanning alerts using GitHub Copilot Agent
-
-
-
-
-
-
-
-summary: "TODO 2 sentences, 20-35 words, don't teach or motivate, avoid using 'learn', don't duplicate the title; see https://review.docs.microsoft.com/help/learn/id-guidance-introductory-summaries?branch=main"
+summary: "This module covers how to identify and remediate GitHub Secret Scanning alerts using GitHub Copilot's Ask and Agent modes. The training focuses on detecting hard-coded secrets in source code and implementing secure configuration patterns to replace them."
 abstract: |
   By the end of this module, you'll be able to:
-    - "TODO learning objective 1"
-    - "TODO learning objective 2"
-    - "TODO learning objective 3 (if needed; see https://review.docs.microsoft.com/help/learn/id-guidance-learning-objectives?branch=main)"
-
-
-
-
-
-
-
-
+    - Explain the security risks of hard-coded secrets in source code.
+    - Configure and use GitHub Secret Scanning and push protection.
+    - Navigate and manage secret scanning alerts in GitHub repositories.
+    - Analyze security alerts using GitHub Copilot's Ask mode.
+    - Remediate hard-coded secrets using GitHub Copilot's Agent mode.
 prerequisites: |
   - Experience using GitHub Copilot in Visual Studio Code.
   - Experience developing C# applications.

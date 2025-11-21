@@ -8,62 +8,151 @@ metadata:
   author: chrishowd
   ms.author: cahowd
   ms.topic: unit
-durationInMinutes: 6
+durationInMinutes: 8
 content: |
 quiz:
+  title: "Check your knowledge"
   questions:
-  - content: ""
+  - content: "What makes hard-coded secrets in source code particularly dangerous compared to other security vulnerabilities?"
     choices:
-    - content: ""
+    - content: "They require advanced technical skills to exploit."
+      isCorrect: false
+      explanation: "Incorrect. Hard-coded secrets require no technical skill to exploit—they provide immediate, legitimate access to systems."
+    - content: "They provide immediate and unrestricted access to protected resources without requiring attackers to bypass security measures."
       isCorrect: true
-      explanation: ""
-    - content: ""
+      explanation: "Correct. Unlike exploiting code vulnerabilities, exposed secrets grant instant, legitimate access to systems because they are valid credentials."
+    - content: "They only affect development environments, not production systems."
       isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
+      explanation: "Incorrect. Hard-coded secrets can expose production credentials, databases, payment systems, and other critical resources."
+  - content: "What is the most secure response when a secret has been exposed in source code?"
     choices:
-    - content: ""
+    - content: "Remove the secret from the current code but leave it in Git history."
+      isCorrect: false
+      explanation: "Incorrect. Secrets remaining in Git history are still accessible and represent an ongoing security risk."
+    - content: "Immediately revoke the exposed credential, generate a new one, remove it from code and Git history, and update all applications using it."
       isCorrect: true
-      explanation: ""
-    - content: ""
+      explanation: "Correct. Complete remediation requires rotating the credential, removing it from all code including history, and updating dependent systems."
+    - content: "Add comments warning developers not to use the exposed credential."
       isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
+      explanation: "Incorrect. Comments don't prevent unauthorized access—the credential must be revoked and rotated immediately."
+  - content: "How does GitHub Secret Scanning detect credentials in repositories?"
     choices:
-    - content: ""
+    - content: "By manually reviewing code during pull request reviews."
+      isCorrect: false
+      explanation: "Incorrect. Secret scanning is an automated feature that uses pattern matching, not manual review."
+    - content: "By analyzing files against known secret patterns using regular expressions and validating detected patterns with service providers."
       isCorrect: true
-      explanation: ""
-    - content: ""
+      explanation: "Correct. Secret scanning uses pattern matching for over 200 credential types and partners with service providers to validate detected secrets."
+    - content: "By scanning only new commits and ignoring repository history."
       isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
+      explanation: "Incorrect. Secret scanning analyzes the entire repository history across all branches, not just new commits."
+  - content: "What is the primary difference between GitHub Secret Scanning and push protection?"
     choices:
-    - content: ""
+    - content: "Secret scanning detects credentials already in the repository, while push protection prevents secrets from entering the repository."
       isCorrect: true
-      explanation: ""
-    - content: ""
+      explanation: "Correct. Secret scanning is reactive (finding existing secrets), while push protection is proactive (blocking secrets before they're committed)."
+    - content: "Secret scanning works only on public repositories, while push protection works only on private repositories."
       isCorrect: false
-      explanation: ""
-    - content: ""
+      explanation: "Incorrect. Both features work on public and private repositories, though availability varies by subscription level."
+    - content: "Push protection only detects API keys, while secret scanning detects all credential types."
       isCorrect: false
-      explanation: ""
-  - content: ""
+      explanation: "Incorrect. Both features detect the same credential types; they differ in when detection occurs (pre-commit vs. post-commit)."
+  - content: "When push protection blocks a push, what is the recommended course of action?"
     choices:
-    - content: ""
+    - content: "Request a bypass with a brief justification to proceed quickly."
+      isCorrect: false
+      explanation: "Incorrect. While bypass is possible, the recommended approach is to remove the secret and implement secure storage."
+    - content: "Remove the secret from commits locally, implement secure storage, and push again."
       isCorrect: true
-      explanation: ""
-    - content: ""
+      explanation: "Correct. The secure approach is to remediate the issue locally by removing the secret and using configuration-based access before pushing."
+    - content: "Delete the entire repository and start over."
       isCorrect: false
-      explanation: ""
-    - content: ""
+      explanation: "Incorrect. A developer can remediate the issue locally without deleting the repository by removing the secret from commits."
+  - content: "In the GitHub Security tab, what does the validity status of a secret scanning alert indicate?"
+    choices:
+    - content: "Whether the alert has been reviewed by a security team member."
       isCorrect: false
-      explanation: ""
+      explanation: "Incorrect. Validity status indicates whether the credential itself is active, not whether it has been reviewed."
+    - content: "Whether the detected credential is confirmed active and functional, requiring immediate rotation."
+      isCorrect: true
+      explanation: "Correct. For partner-validated secrets, GitHub indicates if the credential is Valid (active), Invalid (revoked), or Unknown, helping prioritize remediation."
+    - content: "Whether the repository containing the secret is public or private."
+      isCorrect: false
+      explanation: "Incorrect. Validity status refers to the credential's active state, not the repository's visibility."
+  - content: "What is the primary purpose of using GitHub Copilot's Ask mode when analyzing secret scanning alerts?"
+    choices:
+    - content: "To automatically fix all security issues without developer intervention."
+      isCorrect: false
+      explanation: "Incorrect. Ask mode provides analysis and guidance but doesn't modify code files—that's Agent mode's purpose."
+    - content: "To understand why alerts were triggered, assess security implications, and plan remediation strategies before making code changes."
+      isCorrect: true
+      explanation: "Correct. Ask mode functions as a security consultant, explaining exposures, assessing risks, and suggesting remediation approaches without modifying code."
+    - content: "To generate new credentials to replace exposed ones."
+      isCorrect: false
+      explanation: "Incorrect. Ask mode analyzes and plans—it doesn't generate credentials or modify files."
+  - content: "When using GitHub Copilot's Ask mode to analyze an exposed secret, which prompt approach is most effective?"
+    choices:
+    - content: "Asking general questions without selecting any code or providing context."
+      isCorrect: false
+      explanation: "Incorrect. Effective prompts require selecting the specific code containing the secret and providing relevant context."
+    - content: "Selecting the code containing the secret and asking specific questions about the credential type, risk, and remediation options."
+      isCorrect: true
+      explanation: "Correct. Effective prompts select specific code, ask direct questions, and provide context about the environment for accurate analysis."
+    - content: "Only asking about unrelated code to avoid exposing the secret to the AI."
+      isCorrect: false
+      explanation: "Incorrect. Copilot needs to analyze the actual secret-containing code to provide meaningful security guidance."
+  - content: "What is the key difference between GitHub Copilot's Ask mode and Agent mode for secret remediation?"
+    choices:
+    - content: "Ask mode provides analysis and suggestions without modifying code, while Agent mode implements changes directly in code files."
+      isCorrect: true
+      explanation: "Correct. Ask mode is consultative (analyzing and planning), while Agent mode is executive (implementing changes across multiple files)."
+    - content: "Ask mode works only with C# code, while Agent mode supports all programming languages."
+      isCorrect: false
+      explanation: "Incorrect. Both modes support multiple programming languages—they differ in whether they modify code."
+    - content: "Agent mode can only remove secrets, while Ask mode can implement secure storage patterns."
+      isCorrect: false
+      explanation: "Incorrect. Agent mode implements both secret removal and secure storage—Ask mode only provides guidance."
+  - content: "When using GitHub Copilot's Agent mode to remediate secrets, what type of prompt produces the best results?"
+    choices:
+    - content: "Vague requests like 'fix this security issue' without specifics."
+      isCorrect: false
+      explanation: "Incorrect. Agent mode requires specific, actionable prompts that clearly describe the desired remediation approach."
+    - content: "Specific, actionable prompts that describe the desired remediation, such as 'Remove the hard-coded Stripe API key and replace it with environment variable access.'"
+      isCorrect: true
+      explanation: "Correct. Effective Agent mode prompts are specific about what to change, reference selected code, and clearly describe the desired secure pattern."
+    - content: "Multiple conflicting instructions in a single prompt."
+      isCorrect: false
+      explanation: "Incorrect. Clear, focused prompts with a single objective produce better results than conflicting or ambiguous instructions."
+  - content: "According to the remediation workflow, when should a developer rotate exposed credentials?"
+    choices:
+    - content: "After completing all code changes and testing to avoid disrupting development."
+      isCorrect: false
+      explanation: "Incorrect. Exposed credentials must be rotated immediately as the first security step, before any code changes."
+    - content: "Immediately as the first step, before making any code changes, to invalidate the exposed credential."
+      isCorrect: true
+      explanation: "Correct. Credential rotation is the most critical security step and must happen first to prevent exploitation during remediation."
+    - content: "Only if the credential is marked as 'Valid' in the GitHub Security tab."
+      isCorrect: false
+      explanation: "Incorrect. All exposed credentials should be rotated immediately, regardless of their validity status."
+  - content: "Why should a developer use GitHub Copilot's Ask mode before using Agent mode for secret remediation?"
+    choices:
+    - content: "Ask mode is faster and can complete the remediation without Agent mode."
+      isCorrect: false
+      explanation: "Incorrect. Ask mode doesn't modify code—it provides analysis to inform Agent mode's implementation."
+    - content: "To understand the scope of the exposure, analyze dependencies, and formulate a comprehensive remediation plan before making changes."
+      isCorrect: true
+      explanation: "Correct. Ask mode helps developers understand what the secret accesses, identify all dependencies, and plan remediation, ensuring Agent mode's changes are comprehensive."
+    - content: "Ask mode is required for authentication before Agent mode will function."
+      isCorrect: false
+      explanation: "Incorrect. Both modes are available without special authentication—the sequence is about planning before implementation."
+  - content: "What is the purpose of removing secrets from Git history as part of the remediation workflow?"
+    choices:
+    - content: "To improve repository performance by reducing file sizes."
+      isCorrect: false
+      explanation: "Incorrect. Removing secrets from history is about security, not performance—secrets in history remain accessible even after removal from current code."
+    - content: "To ensure the credential is completely eliminated from the repository, as it remains accessible in historical commits even after removal from current code."
+      isCorrect: true
+      explanation: "Correct. Git preserves complete history, so secrets remain discoverable in old commits unless explicitly removed using tools like git-filter-repo."
+    - content: "To automatically revoke the exposed credential on the service provider's platform."
+      isCorrect: false
+      explanation: "Incorrect. Removing from Git history doesn't revoke credentials—they must be manually revoked through the service provider's dashboard."
