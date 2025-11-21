@@ -3,7 +3,7 @@ uid: learn.wwl.implement-event-messaging-azure-managed-redis
 metadata:
   title: Implement Event Messaging with Azure Managed Redis
   description: Learn how to implement event messaging with Azure Cache for Redis and Azure Managed Redis, including pub/sub for real-time notifications and Streams for reliable task processing.
-  ms.date: 11/24/2025
+  ms.date: 11/21/2025
   author: jeffkoms
   ms.author: jeffko
   ms.topic: module-standard-task-based
@@ -39,7 +39,7 @@ units:
 - learn.wwl.implement-event-messaging-azure-managed-redis.redis-pub-sub
 - learn.wwl.implement-event-messaging-azure-managed-redis.redis-streams
 - learn.wwl.implement-event-messaging-azure-managed-redis.coordinate-multiple-subscribers
-- learn.wwl.implement-event-messaging-azure-managed-redis.exercise-publish-events-redis
+- learn.wwl.implement-event-messaging-azure-managed-redis.exercise-publish-subscribe-events-redis
 - learn.wwl.implement-event-messaging-azure-managed-redis.module-assessment
 - learn.wwl.implement-event-messaging-azure-managed-redis.summary
 badge:
