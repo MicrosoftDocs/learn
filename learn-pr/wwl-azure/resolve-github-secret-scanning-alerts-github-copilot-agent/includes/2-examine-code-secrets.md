@@ -10,7 +10,7 @@ Think of secrets as the keys to your application's external services. Just as yo
 
 Different applications require different types of secrets based on their architecture and dependencies. Understanding what constitutes a secret helps you identify them in your codebase.
 
-#### API keys and tokens
+#### API keys
 
 API keys authenticate your application to external services and platforms.
 
@@ -137,7 +137,7 @@ Consider the consequences:
 
 Once a secret is exposed, the damage persists until the credential is rotated (changed). This creates several problems:
 
-- **Git history**: Even if you remove a secret from current code, it remains in the repository's history indefinitely.
+- **Git history**: Even if you remove a secret from current code, it remains in the repository's commit history.
 - **Forked repositories**: In public repositories, others may have forked your code with the secret intact.
 - **Cached or archived versions**: Search engines, archive services, or internal caches may have captured the exposed secret.
 - **Unknown exposure window**: You might not know when the secret was first exposed or who accessed it.
@@ -155,7 +155,7 @@ Many regulatory frameworks explicitly require protecting credentials and sensiti
 
 Exposed secrets can result in failed audits, regulatory fines, and loss of certifications required to operate in certain industries.
 
-### Real-world impact scenarios
+### Real-world scenarios
 
 Understanding how exposed secrets translate to real breaches might help you appreciate the urgency of protecting them.
 
@@ -201,12 +201,14 @@ Protecting secrets requires implementing secure patterns throughout the developm
 
 The fundamental rule: secrets don't belong in source code, configuration files tracked by version control, or client-side code.
 
-Instead, use:
+Instead of hard-coding secrets, implement one of the following approaches:
 
 - Environment variables.
 - Configuration files excluded from version control.
 - Secret management services.
 - Runtime configuration systems.
+
+The following example demonstrates how to use environment variables:
 
 ```csharp
 // SECURE: Reading secret from environment variable

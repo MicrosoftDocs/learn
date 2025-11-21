@@ -1,59 +1,57 @@
-GitHub centralizes all security findings in the Security tab of your repository, providing a unified dashboard for managing secret scanning alerts, code scanning results, dependency vulnerabilities, and other security issues. Understanding how to navigate and manage these alerts enables you to respond effectively to credential exposures.
+GitHub centralizes all security findings in the Security tab of your repository, providing a unified dashboard for managing secret scanning alerts alongside code scanning results and dependency vulnerabilities. Understanding how to navigate and work with these alerts enables you to respond effectively to credential exposures.
 
-## Accessing the Security tab
+## Accessing secret scanning alerts
 
 The Security tab serves as the central hub for all security-related information about your repository.
 
 ### Navigate to security alerts
 
-To access security alerts in your repository:
+To access secret scanning alerts in your repository:
 
 1. Open your repository on GitHub.com.
-1. Select the **Security** tab from the repository navigation menu (alongside Code, Issues, Pull requests).
-1. Review the security overview, which displays summary counts for different alert types.
-1. Select **Secret scanning alerts** to view all detected secrets.
+1. Select the **Security** tab from the repository navigation menu.
+1. Select **Secret scanning** (or **Secret scanning alerts**) to view all detected secrets.
 
 The Security tab provides a comprehensive view of your repository's security posture, making it easy to identify and prioritize issues.
 
 ### Security overview
 
-The security overview dashboard displays:
+The security overview displays:
 
-- **Alert counts by type**: Numbers of secret scanning, code scanning, and Dependabot alerts.
-- **Severity indicators**: Visual indicators showing critical, high, medium, and low severity issues.
-- **Open vs. resolved**: Status of alerts that require attention versus those already addressed.
-- **Trend information**: Recent changes in security posture (new alerts, resolved alerts).
+- **Alert counts by type**: Numbers of secret scanning, code scanning, and Dependabot alerts
+- **Open vs. resolved status**: Issues requiring attention versus those already addressed
+- **Recent changes**: New alerts and recently resolved alerts
 
-This high-level view helps security teams quickly assess repository health and prioritize response efforts.
+This high-level view helps you quickly assess repository security status and prioritize response efforts.
 
 ## Understanding secret scanning alerts
 
-Each secret scanning alert provides detailed information about the detected credential and its context.
+Each secret scanning alert provides detailed information about the detected credential to help you assess and remediate the exposure.
 
 ### Alert components
 
-When you select a secret scanning alert, GitHub displays:
+When you select a secret scanning alert, GitHub displays several key pieces of information.
 
 #### Secret type
 
 The category of credential detected, such as:
 
 - "Azure Storage Account Key"
-- "Stripe API Key"
+- "Stripe API Key"  
 - "AWS Access Key"
 - "GitHub Personal Access Token"
 - "Database Connection String"
 
-The secret type helps you understand which service or system is affected and what actions are necessary (credential rotation, access review, etc.).
+The secret type helps you understand which service is affected and what rotation actions are necessary.
 
 #### Location information
 
 Precise details about where the secret appears:
 
-- **File path**: The complete path to the file containing the secret (e.g., `src/services/PaymentProcessor.cs`).
-- **Line number**: The exact line where the secret is located.
-- **Branch**: The branch where the secret was detected.
-- **Commit**: The specific commit that introduced the secret (includes commit hash and message).
+- **File path**: Complete path to the file containing the secret (e.g., `src/services/PaymentProcessor.cs`)
+- **Line number**: Exact line where the secret is located
+- **Branch**: Branch where the secret was detected
+- **Commit**: Specific commit that introduced the secret (includes commit hash and author)
 
 This information enables you to quickly locate the problematic code and understand when the exposure occurred.
 
@@ -75,114 +73,99 @@ public class PaymentService
 }
 ```
 
-The code snippet provides immediate context about how the secret is used in the application.
+#### Validity status
 
-#### Detection metadata
+For partner-validated secrets, GitHub indicates whether the credential is:
 
-Additional information about the alert:
+- **Valid**: The credential is confirmed active and functional
+- **Invalid**: The credential has been revoked or is no longer active
+- **Unknown**: Validity couldn't be determined
 
-- **Detection date**: When GitHub first identified the secret.
-- **Detection method**: Whether found through historical scanning or push-time detection.
-- **Validation status**: For partner-validated secrets, whether the credential is confirmed active.
-- **Provider notification**: Whether the secret's service provider was notified.
-
-#### Severity and priority
-
-Secret scanning alerts are typically marked as **Critical** because exposed credentials represent immediate security risks. Unlike code vulnerabilities that require specific conditions to exploit, exposed credentials provide direct access to protected resources.
+This status helps you prioritize remediation—valid credentials require immediate rotation.
 
 ### Alert states
 
 Secret scanning alerts can be in several states:
 
-- **Open**: The secret is detected and requires attention.
-- **Resolved**: The secret has been remediated (rotated, removed from code, or otherwise secured).
-- **Dismissed**: The alert has been marked as a false positive or accepted risk.
+- **Open**: The secret is detected and requires attention
+- **Resolved**: The secret has been remediated (rotated and removed from code)
+- **Dismissed**: The alert has been marked as a false positive or accepted risk
 
 Understanding alert states helps you track progress in addressing security issues.
 
 ## Filtering and sorting alerts
 
-As repositories accumulate security findings, filtering and sorting capabilities help you focus on the most important issues.
+When working with multiple alerts, filtering and sorting capabilities help you focus on specific issues.
 
 ### Filter by secret type
 
 Filter alerts to focus on specific credential types:
 
-1. In the secret scanning alerts view, locate the **Filter** options.
-1. Select **Secret type** from the filter menu.
-1. Choose one or more secret types to display (e.g., "AWS Access Key", "Database credentials").
+1. In the secret scanning alerts view, locate the **Filter** options
+1. Select **Secret type** from the filter menu
+1. Choose one or more secret types to display (e.g., "AWS Access Key", "Azure credentials")
 
-This helps when responding to a specific incident (like a compromised AWS account) or conducting focused security reviews.
+This helps when investigating specific types of exposures or conducting focused remediation.
 
 ### Filter by status
 
 View alerts based on their resolution status:
 
-- **Open alerts**: Secrets that require investigation and remediation.
-- **Resolved alerts**: Previously detected secrets that have been addressed.
-- **Dismissed alerts**: Alerts marked as false positives or accepted risks.
+- **Open alerts**: Secrets requiring investigation and remediation
+- **Resolved alerts**: Previously detected secrets that have been addressed  
+- **Dismissed alerts**: Alerts marked as false positives
 
-Filtering by status helps you focus on active issues requiring attention while maintaining visibility into historical security work.
+Filtering by status helps you focus on active issues while maintaining visibility into historical security work.
 
-### Sort alerts
+### Sort and search
 
-Sort the alert list by different criteria:
+Sort the alert list by:
 
-- **Newest first**: See recently detected secrets (default).
-- **Oldest first**: Identify long-standing issues that may have been overlooked.
-- **Secret type**: Group similar credential types together.
+- **Newest first**: Recently detected secrets (default)
+- **Oldest first**: Long-standing issues that may have been overlooked
+- **Secret type**: Group similar credential types together
 
-Sorting helps prioritize remediation efforts based on age, type, or discovery order.
-
-### Search alerts
-
-Use the search functionality to find specific alerts:
-
-- Search by file name or path.
-- Search by commit hash or message.
-- Search by secret type or pattern.
-
-Search is particularly useful in large repositories with many alerts.
+Use the search functionality to find alerts by file name, path, or secret type.
 
 ## Resolving secret scanning alerts
 
-When you've successfully remediated a secret exposure, mark the alert as resolved to track progress and maintain accurate security records.
+When you've successfully remediated a secret exposure, mark the alert as resolved to maintain accurate security records.
 
-### What constitutes resolution?
+### Resolution requirements
 
-An alert should be marked as resolved when you've completed all remediation steps:
+An alert should be marked as resolved when you've completed these remediation steps:
 
-1. **Rotated the credential**: The exposed secret has been revoked and replaced with a new one.
-1. **Removed from code**: The secret is no longer hard-coded in any commits (including history).
-1. **Implemented secure storage**: The credential is now accessed through environment variables, secret management service, or other secure method.
-1. **Verified functionality**: Applications using the rotated credential are functioning correctly.
+1. **Rotated the credential**: The exposed secret has been revoked and replaced with a new one
+1. **Removed from code**: The secret is no longer hard-coded in any commits (including Git history)
+1. **Implemented secure storage**: The credential is now accessed through environment variables or a secret management service
+1. **Verified functionality**: Applications using the rotated credential are functioning correctly
 
-Simply removing a secret from the latest commit isn't sufficient if it remains in Git history where attackers could find it.
+> [!IMPORTANT]
+> Simply removing a secret from the latest commit isn't sufficient if it remains in Git history where it can still be discovered.
 
 ### How to resolve an alert
 
 To mark an alert as resolved:
 
-1. Navigate to the specific alert in the Security tab.
-1. Review the alert details to confirm remediation is complete.
-1. Select the **Resolve** button.
+1. Navigate to the specific alert in the Security tab
+1. Review the alert details to confirm remediation is complete
+1. Select the **Close alert** dropdown
 1. Choose a resolution reason:
-   - **Revoked**: The credential has been rotated and is no longer valid.
-   - **Used in tests**: The secret is test data, not a production credential (consider this carefully).
-1. Optionally add a comment explaining the resolution.
-1. Confirm the resolution.
+   - **Revoked**: The credential has been rotated and is no longer valid
+   - **False positive**: The detection was not an actual secret
+   - **Used in tests**: Test data rather than a production credential
+1. Optionally add a comment explaining the resolution
+1. Confirm the resolution
 
 The alert moves to the resolved state and no longer appears in the open alerts list.
 
 ### Removing secrets from Git history
 
-Because Git preserves complete history, removing a secret from your current code doesn't eliminate the exposure. Attackers can still access historical commits containing the credential.
-
-To fully remediate:
+Because Git preserves complete history, removing a secret from your current code doesn't eliminate the exposure. The credential remains accessible in historical commits.
 
 #### For recent commits (not yet pushed)
 
-Use `git commit --amend` or interactive rebase:
+If you haven't pushed the commits containing the secret:
 
 ```bash
 # Amend the most recent commit
@@ -190,188 +173,107 @@ git add .
 git commit --amend --no-edit
 
 # For older commits, use interactive rebase
-git rebase -i HEAD~5  # Adjust number as needed
+git rebase -i HEAD~5  # Adjust number based on commit depth
 ```
+
+Mark the problematic commits for editing, remove the secret, and continue the rebase.
 
 #### For commits already pushed
 
-Use `git filter-repo` (recommended) or `git filter-branch` to rewrite history:
+For commits already in the remote repository, you need to rewrite history using `git filter-repo` or similar tools:
 
 ```bash
-# Install git-filter-repo if not already available
+# Install git-filter-repo if not available
 pip install git-filter-repo
 
-# Remove a specific file from entire history
-git filter-repo --invert-paths --path path/to/file/with/secret.cs
-
-# Remove a specific string from all files
+# Remove a specific string from all files in history
 git filter-repo --replace-text <(echo "sk_live_51Abc123XYZ==>REDACTED")
 ```
 
-**Warning**: Rewriting history requires force-pushing and affects all collaborators. Coordinate with your team:
+After rewriting history, force-push the changes:
 
 ```bash
 git push --force-with-lease origin main
 ```
 
-All team members must re-clone or carefully reset their local repositories after history rewriting.
+> [!WARNING]
+> Rewriting pushed history affects all collaborators. Coordinate with your team—they'll need to re-clone or carefully reset their local repositories after the force-push.
 
 #### For public repositories
 
 If a secret was exposed in a public repository:
 
-1. Assume the secret is compromised (public repositories are continuously scanned by bots).
-1. Immediately rotate the credential before attempting to remove it from history.
-1. Remove from history to prevent future discovery, but understand the credential may already be captured.
-1. Monitor for unauthorized usage of the credential.
+1. **Immediately rotate** the credential—assume it's already compromised (public repos are continuously scanned)
+1. Remove from Git history to prevent future discovery
+1. Monitor for unauthorized usage of the old credential
 
-## Dismissing false positives
+## Working with false positives
 
-Occasionally, secret scanning detects patterns that aren't actual secrets. Properly handling false positives keeps your alert list clean and focused on real issues.
+Secret scanning occasionally detects patterns that aren't actual secrets. Properly handling false positives keeps your alert list focused on real issues.
 
 ### When to dismiss
 
 Dismiss alerts only when you're certain they're not real secrets:
 
-- **Test data**: Example credentials in test fixtures clearly marked as fake.
-- **Documentation**: Example code snippets showing credential formats without real values.
-- **Pattern coincidence**: Random strings that happen to match secret patterns but aren't credentials.
+- **Test data**: Example credentials in test fixtures clearly marked as fake
+- **Documentation**: Example code snippets showing credential formats without real values
+- **Pattern coincidence**: Random strings that match secret patterns but aren't credentials
 
-Be conservative with dismissals. If there's any doubt whether a detected pattern is a real secret, treat it as real and rotate it.
+> [!CAUTION]
+> Be conservative with dismissals. If there's any doubt whether a detected pattern is real, treat it as a secret and rotate it.
 
-### How to dismiss an alert
+### How to dismiss
 
 To dismiss a false positive:
 
-1. Navigate to the alert in the Security tab.
-1. Review the alert carefully to confirm it's not a real secret.
-1. Select the **Dismiss** button.
-1. Choose a dismissal reason:
-   - **False positive**: Not a real secret, just a pattern coincidence.
-   - **Used in tests**: Test data or fixtures (use carefully).
-   - **Won't fix**: Accepted risk with documented justification (rare).
-1. Add a detailed comment explaining why the alert is dismissed.
-1. Confirm the dismissal.
+1. Navigate to the alert in the Security tab
+1. Review the alert carefully to confirm it's not a real secret
+1. Select **Close alert** and choose **False positive**
+1. Add a detailed comment explaining why it's not a real secret
+1. Confirm the dismissal
 
-The alert moves to the dismissed state and no longer appears in open alerts.
+Always document dismissals with clear justification for future reference and security audits.
 
-### Document dismissals
+Always document dismissals with clear justification for future reference and security audits.
 
-Always include clear justification when dismissing alerts:
+## Best practices for alert management
 
-- Explain why the pattern isn't a real secret.
-- Reference relevant code comments or documentation.
-- Note any verification steps taken.
+Implement these practices to effectively manage secret scanning alerts.
 
-Documentation helps future security reviews and audits understand why certain alerts were dismissed.
+### Respond quickly
 
-## Best practices for ongoing alert management
+When secret scanning detects a credential:
 
-Effective security requires continuous monitoring and systematic response to alerts.
+1. **Assess immediately**: Review the alert to confirm it's a real secret
+1. **Rotate promptly**: Revoke and replace the exposed credential as soon as possible
+1. **Remove from code**: Implement secure storage and remove the hard-coded secret
+1. **Verify remediation**: Ensure applications work correctly with the rotated credential
 
-### Establish a response workflow
+The faster you respond, the smaller the window of opportunity for unauthorized access.
 
-Create a standardized process for handling secret scanning alerts:
+### Prioritize based on risk
 
-1. **Immediate notification**: Configure alerts to notify security teams immediately when secrets are detected.
-1. **Initial assessment**: Within 1 hour, review the alert to confirm it's a real secret and assess the exposure scope.
-1. **Credential rotation**: Within 4 hours, rotate the compromised credential.
-1. **Code remediation**: Within 24 hours, remove the secret from code and implement secure storage.
-1. **Alert resolution**: Mark the alert as resolved once all remediation steps are complete.
+Not all secrets have equal risk. Focus first on:
 
-Adjust these timeframes based on your organization's security requirements and operational constraints.
+- **Valid credentials**: Alerts marked as "Valid" indicate active, functional secrets
+- **Production systems**: Credentials for production environments over development
+- **High-privilege access**: Administrative or elevated-privilege credentials
+- **Public repositories**: Exposures in public repos where the secret is widely accessible
 
-### Make alert review routine
+### Use alerts as learning opportunities
 
-Integrate security alert review into regular development processes:
+When secrets are detected:
 
-- **Daily standup**: Mention new security alerts as part of team status.
-- **Sprint planning**: Allocate time for security remediation work.
-- **Code review**: Check for open alerts affecting files being modified.
-- **Release process**: Ensure no open secret scanning alerts before deploying.
+- Understand how the secret ended up in code
+- Identify gaps in development practices or tooling
+- Share knowledge with your team about secure secret management
+- Update templates and documentation to prevent similar exposures
 
-Regular review prevents alerts from accumulating and becoming overwhelming.
+### Leverage GitHub Copilot
 
-### Prioritize critical alerts
+GitHub Copilot can assist with alert remediation in two ways:
 
-Not all secrets have equal risk. Prioritize remediation based on:
+- **Ask mode**: Analyze alerts, understand exposure scope, and plan remediation strategies
+- **Agent mode**: Implement code changes to remove hard-coded secrets and use secure storage
 
-- **Production vs. development**: Production credentials are highest priority.
-- **Privilege level**: Administrative or high-privilege credentials require immediate action.
-- **Exposure scope**: Public repository exposures are more critical than private repository exposures.
-- **Service criticality**: Secrets for critical business services take precedence.
-
-### Monitor alert trends
-
-Track secret scanning metrics over time:
-
-- **New alerts per week**: Increasing trends may indicate inadequate developer training or tooling.
-- **Resolution time**: How quickly secrets are remediated after detection.
-- **Recurring patterns**: Repeated exposures of similar credential types suggest systemic issues.
-- **Bypass frequency**: High bypass rates for push protection may indicate usability issues.
-
-Use metrics to guide improvements in security practices, developer education, and tooling.
-
-### Implement preventive measures
-
-Use alerts as learning opportunities to prevent future exposures:
-
-- **Developer training**: When secrets are detected, provide targeted training to the responsible developers.
-- **Template updates**: Improve starter templates and documentation to guide secure practices.
-- **Pre-commit hooks**: Deploy local scanning tools that catch secrets before they're committed.
-- **Code review checklists**: Add secret detection to code review criteria.
-
-### Verify remediation effectiveness
-
-After resolving an alert, confirm that the remediation was effective:
-
-- **Test credential rotation**: Verify that applications work with the new credential.
-- **Confirm removal from history**: Check that the secret no longer appears in any branch or commit.
-- **Scan with additional tools**: Use other secret scanning tools to verify GitHub didn't miss related exposures.
-- **Monitor for usage attempts**: Watch for unauthorized attempts to use the exposed credential.
-
-### Maintain documentation
-
-Keep records of secret exposures and remediations:
-
-- **Incident timeline**: Document when secrets were exposed, detected, and remediated.
-- **Lessons learned**: Note what led to the exposure and how to prevent similar incidents.
-- **Process improvements**: Track changes made to development practices based on incidents.
-
-Documentation supports compliance requirements, security audits, and continuous improvement efforts.
-
-## Integrating alerts with other systems
-
-GitHub supports integration with external security and workflow tools.
-
-### Webhook notifications
-
-Configure webhooks to send secret scanning alerts to:
-
-- Security information and event management (SIEM) systems.
-- Incident response platforms.
-- Team communication tools (Slack, Microsoft Teams).
-- Ticketing systems (Jira, ServiceNow).
-
-Webhooks ensure security teams receive immediate notification through their preferred tools.
-
-### API access
-
-Use the GitHub REST API to:
-
-- Programmatically retrieve secret scanning alerts.
-- Update alert status from automated workflows.
-- Generate security reports and dashboards.
-- Integrate with custom security tooling.
-
-API access enables custom automation and integration with organization-specific security platforms.
-
-### Security advisories
-
-For serious exposures that affect users or customers:
-
-- Consider publishing security advisories through GitHub's security advisory feature.
-- Notify affected parties about potential exposure.
-- Provide guidance for users to rotate their credentials.
-
-Transparency about security incidents builds trust and helps users protect themselves.
+The following units explore using GitHub Copilot to streamline the alert resolution process.

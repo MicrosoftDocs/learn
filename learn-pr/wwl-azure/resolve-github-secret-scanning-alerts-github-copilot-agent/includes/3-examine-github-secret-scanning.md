@@ -87,6 +87,7 @@ GitHub's secret scanning detects credentials from over 200 different service pro
 
 #### Databases
 
+- **Azure SQL**: Connection strings with embedded credentials.
 - **MongoDB**: Connection strings with embedded credentials.
 - **PostgreSQL**: Connection strings.
 - **MySQL**: Connection strings.
@@ -108,7 +109,7 @@ Secret scanning uses sophisticated pattern matching to minimize false positives 
 - **Medium-confidence patterns**: Credentials with common formats that may require additional validation.
 - **Context-aware detection**: Analyzes surrounding code to distinguish real credentials from test data or examples.
 
-For example, a GitHub personal access token follows a specific format (`ghp_` followed by 36 alphanumeric characters). This unique pattern allows high-confidence detection with minimal false positives.
+For example, a classic GitHub personal access token follows a specific format (`ghp_` followed by approximately 36 alphanumeric characters). This unique pattern allows high-confidence detection with minimal false positives.
 
 ## Secret scanning availability
 
@@ -143,45 +144,13 @@ Secret scanning also protects GitHub Actions workflows:
 - Detects secrets in workflow logs.
 - Prevents secrets from being inadvertently exposed in Actions output.
 
-## Enabling and configuring secret scanning
+For private repositories, GitHub Actions secret scanning requires GitHub Advanced Security. Public repositories receive this protection automatically.
 
-Repository administrators and organization owners can control secret scanning settings.
+## Enabling secret scanning
 
-### Enable secret scanning for a repository
+For public repositories, secret scanning is enabled by default and requires no configuration.
 
-To enable secret scanning for a private repository:
-
-1. Navigate to the repository on GitHub.com.
-1. Select **Settings** from the repository menu.
-1. Select **Code security and analysis** from the sidebar.
-1. Locate the **Secret scanning** section.
-1. Select **Enable** to activate secret scanning.
-
-Once enabled, GitHub immediately begins scanning the repository's entire history.
-
-### Organization-level configuration
-
-Organization owners can enforce secret scanning across multiple repositories:
-
-1. Navigate to the organization settings.
-1. Select **Code security and analysis**.
-1. Choose options for automatic enablement:
-   - Enable for all new repositories.
-   - Enable for all existing repositories.
-   - Configure policies for repository creation.
-
-This ensures consistent security practices across all organization repositories.
-
-### Configuring notifications
-
-Repository administrators can configure who receives alert notifications:
-
-- Repository administrators (automatic).
-- Organization security team.
-- Custom security contacts.
-- Integration with security information and event management (SIEM) systems.
-
-Notifications ensure that security teams are immediately aware of exposed credentials and can respond quickly.
+For private repositories, secret scanning requires GitHub Advanced Security and must be enabled by repository administrators or organization owners. For detailed instructions on enabling and configuring secret scanning for private repositories, see [GitHub's secret scanning documentation](https://docs.github.com/en/code-security/secret-scanning/configuring-secret-scanning-for-your-repositories).
 
 ## Secret scanning in practice
 
@@ -203,9 +172,13 @@ When secret scanning detects a credential, the typical response workflow include
 1. **Alert generation**: GitHub creates an alert visible in the Security tab.
 1. **Notification**: Security team receives notification via email or webhook.
 1. **Assessment**: Team reviews the alert to confirm it's a genuine secret (not a false positive).
+1. **Validity check**: GitHub indicates whether the secret is "Valid," "Invalid," or "Unknown" to help prioritize remediation.
 1. **Rotation**: Immediately revoke and rotate the exposed credential.
 1. **Remediation**: Remove the secret from code and implement secure storage.
 1. **Resolution**: Close the alert once the credential is rotated and code is fixed.
+
+> [!NOTE]
+> Resolving secret scanning alerts typically requires repository administrator or security manager permissions. Developers with read or write access can view alerts but may need to escalate to security teams for resolution.
 
 ### Reducing false positives
 
@@ -214,7 +187,7 @@ While secret scanning is highly accurate, false positives can occur. Strategies 
 - **Review context**: Check if the detected pattern is test data or an example.
 - **Dismiss as false positive**: Mark alerts that aren't real secrets to keep the alert list clean.
 - **Use test markers**: Comment test credentials clearly to help detection algorithms.
-- **Implement custom patterns**: Configure organization-specific secret patterns.
+- **Implement custom patterns** (GitHub Advanced Security): Organizations can configure custom secret patterns specific to their authentication systems.
 
 ## Performance and impact
 
