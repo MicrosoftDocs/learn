@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn.wwl.implement-data-operations-azure-managed-redis
+metadata:
+  title: Implement Data Operations in Azure Managed Redis
+  description: Learn how to implement data operations in Azure Managed Redis.
+  ms.date: 11/28/2025
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: module-standard-task-based
+  ai-usage: ai-assisted
+  ms.service: azure-managed-redis
+title: Implement data operations in Azure Managed Redis
+summary: Learn how to implement data operations in Azure Managed Redis. This module covers Azure Managed Redis features, client library best practices, and how to store and retrieve data efficiently.
+abstract: |
+  After completing this module, you'll be able to: 
+    - Explain Azure Managed Redis capabilities and caching strategies for high-performance applications
+    - Select appropriate client libraries and apply development best practices for Redis implementations
+    - Implement data operations including storage, retrieval, expiration, and cache invalidation patterns
+prerequisites: |
+  Before beginning this module, you should have:
+  - Programming experience with languages such as Python, JavaScript, or C#.
+  - Basic understanding of Azure services and cloud computing concepts.
+  - Familiarity with caching concepts and cache-aside patterns.
+  - Understanding of data structures (strings, hashes, lists) and key-value storage.
+iconUrl: /learn/achievements/generic-badge.svg
+levels: 
+- intermediate
+roles: 
+- developer
+products: 
+- azure-managed-redis
+subjects: 
+- cache
+- artificial-intelligence
+- data-integration
+units:
+- learn.wwl.implement-data-operations-azure-managed-redis.introduction
+- learn.wwl.implement-data-operations-azure-managed-redis.explore-azure-managed-redis
+- learn.wwl.implement-data-operations-azure-managed-redis.client-libraries-best-practices
+- learn.wwl.implement-data-operations-azure-managed-redis.implement-data-operations
+- learn.wwl.implement-data-operations-azure-managed-redis.exercise-data-operations
+- learn.wwl.implement-data-operations-azure-managed-redis.module-assessment
+- learn.wwl.implement-data-operations-azure-managed-redis.summary
+badge:
+  uid: learn.wwl.implement-data-operations-azure-managed-redis.badge

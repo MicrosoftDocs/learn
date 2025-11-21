@@ -1,0 +1,59 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-data-operations-azure-managed-redis.module-assessment
+title: Module assessment
+metadata:
+  title: Module Assessment
+  description: Module assessment
+  ms.date: 10/7/2025
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: unit
+azureSandbox: false
+durationInMinutes: 5
+content: |
+quiz:
+  questions:
+  - content: "What is the default TLS connection port for Azure Managed Redis?"
+    choices:
+    - content: "10000"
+      isCorrect: true
+      explanation: "Azure Managed Redis uses port 10000 as the default connection port for TLS connections."
+    - content: "6379"
+      isCorrect: false
+      explanation: "Port 6379 is the default non-TLS port for Azure Cache for Redis instances."
+    - content: "6380"
+      isCorrect: false
+      explanation: "Port 6380 is used by Azure Cache for Redis instances, not Azure Managed Redis."
+  - content: "Which Redis command should you avoid using in production environments for iterating over keys?"
+    choices:
+    - content: "KEYS"
+      isCorrect: true
+      explanation: "The KEYS command should be avoided in production because it blocks the server while scanning all keys. Use SCAN instead for non-blocking iteration."
+    - content: "SCAN"
+      isCorrect: false
+      explanation: "SCAN is the recommended command for iterating over keys in production as it's non-blocking."
+    - content: "EXISTS"
+      isCorrect: false
+      explanation: "EXISTS is safe to use in production for checking if specific keys exist."
+  - content: "Which redis-py method sets a key with an expiration time in a single atomic operation?"
+    choices:
+    - content: "`setex()`"
+      isCorrect: true
+      explanation: "The `setex()` method sets a value and expiration time in a single atomic operation, making it efficient and reliable."
+    - content: "`expire()`"
+      isCorrect: false
+      explanation: "The `expire()` method only adds expiration to an existing key; it doesn't set the key value itself."
+    - content: "`set()`"
+      isCorrect: false
+      explanation: "The `set()` method only stores a key-value pair without expiration. You'd need a separate `expire()` call, which isn't atomic."
+  - content: "What does a TTL value of -1 indicate when checking key expiration in Redis?"
+    choices:
+    - content: "Key exists but has no expiration set"
+      isCorrect: true
+      explanation: "A TTL value of -1 means the key exists in Redis but has no expiration time set, so it persists indefinitely."
+    - content: "Key doesn't exist"
+      isCorrect: false
+      explanation: "A TTL value of -2 indicates that the key doesn't exist, not -1."
+    - content: "Key expired 1 second ago"
+      isCorrect: false
+      explanation: "Negative TTL values have special meanings in Redis; they don't represent time in the past."
