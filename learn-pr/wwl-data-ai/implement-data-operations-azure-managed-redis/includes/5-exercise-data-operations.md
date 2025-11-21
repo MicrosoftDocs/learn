@@ -5,7 +5,7 @@ Tasks performed in this exercise:
 1. Download the project starter files
 1. Create an Azure Managed Redis resource
 1. Add code to the starter files to complete the console app
-- Run the console app to perform data operations
+1. Run the console app to perform data operations
 
 This exercise takes approximately **30** minutes to complete.
 
