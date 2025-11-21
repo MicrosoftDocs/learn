@@ -2,9 +2,9 @@ In this exercise, you create an Azure Managed Redis resource and build a Python 
 
 Tasks performed in this exercise:
 
-- Download the project starter files
-- Create an Azure Managed Redis resource
-- Add code to the starter files to complete the console app
+1. Download the project starter files
+1. Create an Azure Managed Redis resource
+1. Add code to the starter files to complete the console app
 - Run the console app to perform data operations
 
 This exercise takes approximately **30** minutes to complete.
