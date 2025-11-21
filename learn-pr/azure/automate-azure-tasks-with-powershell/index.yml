@@ -21,6 +21,9 @@ prerequisites: |
   - Experience with PowerShell
   - Knowledge of basic Azure concepts, such as resource groups and virtual machines
   - Experience managing Azure resources using the Azure portal
+
+  [!INCLUDE [](../../includes/azure-optional-exercise-subscription-prerequisite.md)]
+
 iconUrl: /training/achievements/automate-azure-tasks-with-powershell.svg
 levels: 
 - beginner
