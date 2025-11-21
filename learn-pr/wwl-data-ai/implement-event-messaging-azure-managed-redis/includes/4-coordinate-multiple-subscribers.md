@@ -1,6 +1,6 @@
 When building scalable AI applications with Azure Cache for Redis or Azure Managed Redis, understanding how to coordinate multiple subscribers is crucial for choosing the right architecture. The behavior differs significantly depending on whether you're using pub/sub or Streams, and each approach serves different coordination needs in your AI backend services.
 
-Imagine you have three worker services processing AI inference requests. With pub/sub, if you subscribe all three workers to the same channel, every worker receives every message—creating duplicate processing. This wastes GPU cycles and produces inconsistent results. With Streams consumer groups, each inference request goes to exactly one worker, distributing the workload automatically. Understanding this difference helps you choose the right tool and avoid common scaling pitfalls.
+Imagine you have three worker services processing AI inference requests. With pub/sub, if you subscribe all three workers to the same channel, every worker receives every message—creating duplicate processing. This wastes GPU cycles and produces inconsistent results. With Streams consumer groups, each inference request goes to exactly one worker, distributing the workload automatically. This difference helps you choose the right tool and avoid common scaling pitfalls.
 
 ## Pub/sub: Broadcast to all subscribers
 

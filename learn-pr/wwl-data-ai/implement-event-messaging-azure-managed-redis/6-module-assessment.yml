@@ -4,7 +4,7 @@ title: Module assessment
 metadata:
   title: Module Assessment
   description: Module assessment
-  ms.date: 10/7/2025
+  ms.date: 11/24/2025
   author: jeffkoms
   ms.author: jeffko
   ms.topic: unit
@@ -42,7 +42,7 @@ quiz:
       explanation: "XADD adds a new message to a Stream with auto-generated or specified IDs. It's the fundamental command for putting work items into a Stream queue."
     - content: "LPUSH"
       isCorrect: false
-      explanation: "LPUSH adds items to a List, not a Stream. While both can work as queues, XADD is the command for Streams which provide better consumer group coordination."
+      explanation: "LPUSH adds items to a List, not a Stream. While both can work as queues, XADD is the command for Streams that provide better consumer group coordination."
     - content: "PUBLISH"
       isCorrect: false
       explanation: "PUBLISH sends messages to pub/sub channels. For Streams, use XADD to add messages instead."
