@@ -5,11 +5,11 @@ title: Exercise - Perform data operations in Azure Managed Redis
 metadata:
   title: Exercise - Perform Data Operations in Azure Managed Redis
   description: Exercise - Perform data operations in Azure Managed Redis
-  ms.date: 11/28/2025
+  ms.date: 11/24/2025
   author: jeffkoms
   ms.author: jeffko
   ms.topic: unit
 azureSandbox: false
-durationInMinutes: 45
+durationInMinutes: 30
 content: |
   [!include[](includes/5-exercise-data-operations.md)]

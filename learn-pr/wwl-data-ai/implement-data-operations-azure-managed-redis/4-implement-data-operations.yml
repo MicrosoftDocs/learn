@@ -4,11 +4,11 @@ title: Implement data operations
 metadata:
   title: Implement Data Operations
   description: Implement data operations
-  ms.date: 11/28/2025
+  ms.date: 11/24/2025
   author: jeffkoms
   ms.author: jeffko
   ms.topic: unit
 azureSandbox: false
-durationInMinutes: 5
+durationInMinutes: 10
 content: |
   [!include[](includes/4-implement-data-operations.md)]
