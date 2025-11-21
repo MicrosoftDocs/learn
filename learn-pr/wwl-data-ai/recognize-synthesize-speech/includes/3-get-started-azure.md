@@ -1,4 +1,4 @@
-Microsoft Azure offers speech recognition and synthesis capabilities through **Azure AI Speech** service, which supports many capabilities, including:
+Microsoft Azure offers speech recognition and synthesis capabilities through **Azure Speech** service, which supports many capabilities, including:
 
 - **Speech to text** 
 - **Text to speech** 
@@ -6,7 +6,7 @@ Microsoft Azure offers speech recognition and synthesis capabilities through **A
 
 ## Speech to text
 
-You can use Azure AI Speech to text API to perform real-time or batch transcription of audio into a text format. The audio source for transcription can be a real-time audio stream from a microphone or an audio file.
+You can use Azure Speech to text API to perform real-time or batch transcription of audio into a text format. The audio source for transcription can be a real-time audio stream from a microphone or an audio file.
 
 Azure AI's Speech to text API is based on Microsoft's Universal Language Model.  The data for the model is Microsoft-owned and deployed to Azure.  The model is optimized for two scenarios, conversational and dictation. You can also create and train your own custom models including acoustics, language, and pronunciation if the prebuilt models from Microsoft don't provide what you need.
 
@@ -28,4 +28,4 @@ The service includes multiple predefined voices with support for multiple langua
 
 ## Speech translation
 
-Azure Speech Translation is a feature of the Azure AI Speech service. Azure Speech Translation enables real-time translation of spoken language by taking inputs of audio streams and returning text in a specified language. It works by first converting speech to text using automatic speech recognition (ASR), then translating the recognized text into one or more target languages using machine translation. The service supports a wide range of source and target languages and can deliver translations as text or synthesized speech. Developers can integrate this functionality into applications using REST APIs or SDKs. These applications work well in scenarios like multilingual meetings, live event captioning, or global customer support. 
+Azure Speech Translation is a feature of the Azure Speech service. Azure Speech Translation enables real-time translation of spoken language by taking inputs of audio streams and returning text in a specified language. It works by first converting speech to text using automatic speech recognition (ASR), then translating the recognized text into one or more target languages using machine translation. The service supports a wide range of source and target languages and can deliver translations as text or synthesized speech. Developers can integrate this functionality into applications using REST APIs or SDKs. These applications work well in scenarios like multilingual meetings, live event captioning, or global customer support. 

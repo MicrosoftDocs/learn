@@ -1,4 +1,4 @@
-Azure AI Vision's image analysis capabilities can be used with or without customization. Some of the capabilities that do not require customization include: 
+Azure Vision's image analysis capabilities can be used with or without customization. Some of the capabilities that do not require customization include: 
 
 - Describing an image with captions
 - Detecting common objects in an image
@@ -7,31 +7,31 @@ Azure AI Vision's image analysis capabilities can be used with or without custom
 
 ### Describing an image with captions
 
-Azure AI Vision has the ability to analyze an image, evaluate the objects in it, and generate a human-readable description of the image. For example, consider the following image:
+Azure Vision has the ability to analyze an image, evaluate the objects in it, and generate a human-readable description of the image. For example, consider the following image:
 
 ![Diagram of a person on a skateboard.](../media/skateboard.png)
 
-Azure AI Vision returns the following caption for this image:
+Azure Vision returns the following caption for this image:
 
 *A person jumping on a skateboard*
 
 
 ### Detecting common objects in an image
 
-Azure AI Vision can identify thousands of common objects in images. For example, when used to detect objects in the skateboarder image discussed previously,  Azure AI Vision returns the following predictions:
+Azure Vision can identify thousands of common objects in images. For example, when used to detect objects in the skateboarder image discussed previously,  Azure Vision returns the following predictions:
 
 - *Skateboard (90.40%)*
 - *Person (95.5%)*
 
 The predictions include a *confidence score* that indicates how confident the model is that what it describes is what is actually in the image.
 
-In addition to the detected object labels and their probabilities, Azure AI Vision returns *bounding box* coordinates that indicate the top, left, width, and height of the object detected. You can use these coordinates to determine where in the image each object was detected, like this:
+In addition to the detected object labels and their probabilities, Azure Vision returns *bounding box* coordinates that indicate the top, left, width, and height of the object detected. You can use these coordinates to determine where in the image each object was detected, like this:
 
 ![Diagram of a skateboarder with bounding boxes around detected objects.](../media/bounding-boxes.png)
 
 ### Tagging visual features
 
-Azure AI Vision can suggest *tags* for an image based on its contents. Tags are associated with images as metadata. The tags summarize attributes of the image. You can use tags to index an image along with a set of key terms for a search solution.
+Azure Vision can suggest *tags* for an image based on its contents. Tags are associated with images as metadata. The tags summarize attributes of the image. You can use tags to index an image along with a set of key terms for a search solution.
 
 For example, the tags returned for the skateboarder image (with associated confidence scores) include:
 
@@ -67,11 +67,11 @@ For example, the tags returned for the skateboarder image (with associated confi
 
 ### Optical character recognition
 
-Azure AI Vision service can use optical character recognition (OCR) capabilities to detect text in images. For example, consider the following image of a nutrition label on a product in a grocery store:
+Azure Vision service can use optical character recognition (OCR) capabilities to detect text in images. For example, consider the following image of a nutrition label on a product in a grocery store:
 
 ![Diagram of a nutrition label.](../media/nutrition-label.png)
 
-The Azure AI Vision service can analyze this image and extract the following text:
+The Azure Vision service can analyze this image and extract the following text:
 
 ```
 Nutrition Facts Amount Per Serving
@@ -92,7 +92,7 @@ calorie diet
 
 ## Training custom models
 
-If the built-in models provided by Azure AI Vision don't meet your needs, you can use the service to train a custom model for *image classification* or *object detection*. Azure AI Vision builds custom models on the pre-trained foundation model, meaning that you can train sophisticated models by using relatively few training images.
+If the built-in models provided by Azure Vision don't meet your needs, you can use the service to train a custom model for *image classification* or *object detection*. Azure Vision builds custom models on the pre-trained foundation model, meaning that you can train sophisticated models by using relatively few training images.
 
 ### Image classification
 
@@ -104,11 +104,11 @@ An image classification model is used to predict the category, or *class* of an 
 
 ### Object detection
 
-Object detection models detect and classify objects in an image, returning bounding box coordinates to locate each object. In addition to the built-in object detection capabilities in Azure AI Vision, you can train a custom object detection model with your own images. For example, you could use photographs of fruit to train a model that detects multiple fruits in an image, like this:
+Object detection models detect and classify objects in an image, returning bounding box coordinates to locate each object. In addition to the built-in object detection capabilities in Azure Vision, you can train a custom object detection model with your own images. For example, you could use photographs of fruit to train a model that detects multiple fruits in an image, like this:
 
 ![Diagram of multiple detected fruits in an image.](../media/object-detection.png)
 
 > [!NOTE]
-> Details of how to use Azure AI Vision to train a custom model are beyond the scope of this module. You can find information about custom model training in the **[Azure AI Vision documentation](/azure/ai-services/computer-vision/how-to/model-customization?tabs=python)**.
+> Details of how to use Azure Vision to train a custom model are beyond the scope of this module. You can find information about custom model training in the **[Azure Vision documentation](/azure/ai-services/computer-vision/how-to/model-customization?tabs=python)**.
 
-Next, let's look at capabilities specific to Azure AI Vision's Face service.
+Next, let's look at capabilities specific to Azure Vision's Face service.

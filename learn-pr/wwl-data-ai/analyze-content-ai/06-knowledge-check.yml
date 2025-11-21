@@ -14,18 +14,18 @@ metadata:
 durationInMinutes: 3
 quiz:
   questions:
-  - content: "What kinds of AI solution is Azure AI Content Understanding designed to help you build?"
+  - content: "What kinds of AI solution is Azure Content Understanding designed to help you build?"
     choices:
     - content: "Chatbots that automatically translate between multiple spoken and written languages."
       isCorrect: false
-      explanation: "Incorrect. Azure AI Content Understanding isn't designed to build translation chatbots."
+      explanation: "Incorrect. Azure Content Understanding isn't designed to build translation chatbots."
     - content: "Analyzers that extract information from documents, images, videos, and audio files."
       isCorrect: true
-      explanation: "Correct. Azure AI Content Understanding is designed to build content analyzers."
+      explanation: "Correct. Azure Content Understanding is designed to build content analyzers."
     - content: "Image generators that create visualizations based on descriptions."
       isCorrect: false
-      explanation: "Incorrect. Azure AI Content Understanding is not designed to build image generators."
-  - content: "Which graphical tool should you use to create an Azure AI Content Understanding project?"
+      explanation: "Incorrect. Azure Content Understanding is not designed to build image generators."
+  - content: "Which graphical tool should you use to create an Azure Content Understanding project?"
     choices:
     - content: "Microsoft Visual Studio."
       isCorrect: false
@@ -33,9 +33,9 @@ quiz:
     - content: "Azure Machine Learning studio."
       isCorrect: false
       explanation: "Incorrect. Azure Machine Learning studio isn't a tool for working with Content Understanding projects."
-    - content: "Azure AI Foundry portal."
+    - content: "Microsoft Foundry portal."
       isCorrect: true
-      explanation: "Correct. Azure AI Foundry portal provides a visual interface for creating Content Understanding projects."
+      explanation: "Correct. Microsoft Foundry portal provides a visual interface for creating Content Understanding projects."
   - content: "What should you define for the information you want to extract from content?"
     choices:
     - content: "A schema."
@@ -47,4 +47,5 @@ quiz:
     - content: "A cluster."
       isCorrect: false
       explanation: "Incorrect. You don't need to create a cluster to use Content Understanding."
+
 

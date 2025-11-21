@@ -17,7 +17,7 @@ For more information, see:
 Customer success stories:
 
 - [Fujitsu is revolutionizing sales efficiency with Azure AI Agent Service](https://www.microsoft.com/en/customers/story/21885-fujitsu-azure-ai-foundry)
-- [Atomicwork brings AI agents to service management with Azure AI Foundry](https://www.microsoft.com/en/customers/story/21861-atomicwork-azure-ai-foundry)
-- [YoungWilliams cuts call center response time 99% with Azure AI Foundry Agent Service](https://www.microsoft.com/en/customers/story/23958-young-williams-azure-ai-agent-service)
-- [NTT DATA Transforms Its Enterprise with Agentic AI in Microsoft Fabric, Azure AI Foundry](https://www.microsoft.com/en/customers/story/23654-ntt-data-azure-ai-agent-service)
+- [Atomicwork brings AI agents to service management with Microsoft Foundry](https://www.microsoft.com/en/customers/story/21861-atomicwork-azure-ai-foundry)
+- [YoungWilliams cuts call center response time 99% with Microsoft Foundry Agent Service](https://www.microsoft.com/en/customers/story/23958-young-williams-azure-ai-agent-service)
+- [NTT DATA Transforms Its Enterprise with Agentic AI in Microsoft Fabric, Microsoft Foundry](https://www.microsoft.com/en/customers/story/23654-ntt-data-azure-ai-agent-service)
 - [Carvana builds efficient, seamless customer experience with agent on Azure](https://www.microsoft.com/en/customers/story/23952-carvana-azure-kubernetes-service)

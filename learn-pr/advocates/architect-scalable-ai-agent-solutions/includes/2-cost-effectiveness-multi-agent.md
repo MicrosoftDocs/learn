@@ -53,7 +53,7 @@ Without these controls, enterprises risk hidden costs from drift, duplication, a
 | **Modular monolith** | Lower latency, shared memory, simpler ops        |
 | **Microservices**    | Higher infra cost, better scalability, and isolation |
 
-Hybrid models, where agents run locally or remotely, require careful planning around network costs, security boundaries, and resource allocation. Azure AI Foundry’s Agent Service supports both, with private networking and quota management to optimize spend.
+Hybrid models, where agents run locally or remotely, require careful planning around network costs, security boundaries, and resource allocation. Microsoft Foundry’s Agent Service supports both, with private networking and quota management to optimize spend.
 
 ## Business impact and ROI framing
 

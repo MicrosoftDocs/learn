@@ -1,7 +1,7 @@
 Microsoft offers a flexible developer ecosystem that empowers organizations to build AI agents tailored to their needs, whether through building simple to complex agents with Copilot Studio or using pro-code environments for professional developers. This flexibility is essential for scaling AI across departments and roles, and it directly contributes to cost efficiency by reducing development time, leveraging existing skill sets, and minimizing rework.
 
 The tools listed in this unit aren't exclusive to each other. Many developers will code an agent in VS Code, store the code in a GitHub repository, and store and manage the agent in AI Foundry. There's native integration between the tools. For example, there's an
-Azure AI Foundry extension for VS Code lets you manage models and agents directly from the editor and AI Foundry projects and agents can be versioned and managed through GitHub repositories.
+Microsoft Foundry extension for VS Code lets you manage models and agents directly from the editor and AI Foundry projects and agents can be versioned and managed through GitHub repositories.
 
 ![A diagram comparing Copilot Studio with AI Foundry showing that Copilot Studio is for IT and end users and AI Foundry is for developers.](../media/agent-tools.png)
 
@@ -41,20 +41,20 @@ agent sprawl, compliance, and risk---Microsoft gives you the tools to stay in co
 - IT
 - Makers
 
-## Azure AI Foundry: Create smarter agents
+## Microsoft Foundry: Create smarter agents
 
-Azure AI Foundry is a robust platform to build, test, deploy, scale, manage, and govern agents across the enterprise. It's Microsoft's
+Microsoft Foundry is a robust platform to build, test, deploy, scale, manage, and govern agents across the enterprise. It's Microsoft's
 comprehensive platform for designing, customizing, and managing AI applications and agents at scale.
 
 ![A diagram showing services powered by AI Foundry.](../media/ai-foundry.png)
 
-### What Is Azure AI Foundry?
+### What Is Microsoft Foundry?
 
-Azure AI Foundry is a unified Azure platform-as-a-service offering for enterprise AI operations, model builders, and application development.
+Microsoft Foundry is a unified Azure platform-as-a-service offering for enterprise AI operations, model builders, and application development.
 This foundation combines production-grade infrastructure with friendly interfaces, enabling developers to focus on building applications rather
 than managing infrastructure.
 
-Azure AI Foundry unifies agents, models, and tools under a single management grouping with built-in enterprise-readiness capabilities
+Microsoft Foundry unifies agents, models, and tools under a single management grouping with built-in enterprise-readiness capabilities
 including tracing, monitoring, evaluations, and customizable enterprise setup configurations. The platform provides streamlined management
 through unified Role-based access control (RBAC), networking, and policies under one Azure resource provider namespace.
 
@@ -69,9 +69,9 @@ through unified Role-based access control (RBAC), networking, and policies under
 
 ### How to get started
 
-1. Access Azure AI Foundry.
+1. Access Microsoft Foundry.
 1. Choose your preferred model or bring your own.
-1. Build native agents in Azure AI Foundry, either with a low-code approach (through the UI in the Foundry Portal) or with a code-first approach (by using the Azure AI Foundry SDK/Microsoft Agent Framework with Visual Studio/VS Code and GitHub). 
+1. Build native agents in Microsoft Foundry, either with a low-code approach (through the UI in the Foundry Portal) or with a code-first approach (by using the Microsoft Foundry SDK/Microsoft Agent Framework with Visual Studio/VS Code and GitHub). 
 1. Use built-in tools to monitor performance, manage deployments, and enforce safeguards.
 1. Scale across departments with centralized controls and analytics.
 
@@ -82,7 +82,7 @@ through unified Role-based access control (RBAC), networking, and policies under
 - Governance, compliance, and security
 - Real-time monitoring and analytics
 
-Azure AI Foundry ensures that regardless of how you build your agents, they're backed by a secure, scalable, and cost-efficient platform that supports innovation across your organization.
+Microsoft Foundry ensures that regardless of how you build your agents, they're backed by a secure, scalable, and cost-efficient platform that supports innovation across your organization.
 
 ## Visual Studio and VS Code: Full control for developers
 
@@ -93,7 +93,7 @@ Visual Studio Code (VS Code) is a lightweight, fast, and extensible cross-platfo
 
 Developers can use the **Microsoft 365 Agents Toolkit** and **Microsoft 365 Agents SDK** in Visual Studio to build agents that integrate seamlessly with Microsoft 365 services like Outlook, Teams, and OneDrive. The Agents Toolkit simplifies the setup process and offers templates and tools to accelerate development within the Visual Studio environment. With the Agents SDK, developers can connect agents to Microsoft Graph and use contextual data such as emails, calendars, and documents. These tools together enable the creation of custom copilots that provide personalized assistance, automate workflows, and enhance productivity across Microsoft 365 applications.
 
-Developers can also integrate Azure AI Foundry in Visual Studio and publish agents to Microsoft 365 Copilot. Also, the **AI Toolkit for Visual Studio Code** helps to explore, compare, fine-tune generative AI models using a streamlined, code-first experience. Developers can manage
+Developers can also integrate Microsoft Foundry in Visual Studio and publish agents to Microsoft 365 Copilot. Also, the **AI Toolkit for Visual Studio Code** helps to explore, compare, fine-tune generative AI models using a streamlined, code-first experience. Developers can manage
 models, datasets, and prompts directly within their development workflow.
 
 ### Strategic considerations for cost efficiency

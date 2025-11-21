@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.azure-ai-foundry-configure-manage-guardrails.understand-safety-controls
-title: Understand safety controls in Azure AI Foundry
+title: Understand safety controls in Microsoft Foundry
 metadata:
-  title: Understand safety controls in Azure AI Foundry
-  description: "Understand safety controls in Azure AI Foundry."
+  title: Understand safety controls in Microsoft Foundry
+  description: "Understand safety controls in Microsoft Foundry."
   ms.date: 10/14/2025
   author: wwlpublish
   ms.author: riswinto

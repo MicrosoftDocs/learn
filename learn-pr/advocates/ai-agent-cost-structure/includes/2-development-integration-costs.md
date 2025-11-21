@@ -17,12 +17,12 @@ selection.
 | **Environment tools**       | Azure Machine Learning, CycleCloud, or Databricks for batch scheduling.  |
 | **Model selection**           | Smaller models (for example, Phi, Hugging Face) reduce training time and cost.  |
 | **Transient usage**           | Use spot instances or serverless compute for interruptible workloads.  |
-| **Benchmarking**              | Model benchmark feature in Azure AI Foundry enables model comparison to optimize cost-performance.  |
+| **Benchmarking**              | Model benchmark feature in Microsoft Foundry enables model comparison to optimize cost-performance.  |
 
 ### Strategic considerations to improve cost efficiency
 
 - Use application platform for AI workloads on Azure for orchestrated training with batch endpoints.
-- Benchmark models via Azure AI Foundry to avoid over-provisioning.
+- Benchmark models via Microsoft Foundry to avoid over-provisioning.
 - Avoid full-time GPU usage unless necessary.
 
 ## Testing and evaluation
@@ -34,14 +34,14 @@ experimentation, monitoring statistics, and performance benchmarking.
 
 | Factor                         | Description  |
 |-------------------------------|-----------------------------------------------------------------------------|
-| **Experimentation tools**     | MLflow, Azure AI Foundry  |
+| **Experimentation tools**     | MLflow, Microsoft Foundry  |
 | **Telemetry And monitoring**  | Azure Monitor, App Insights, and logging infrastructure  |
 | **Evaluation pipelines**      | Batch endpoints and traffic mirroring for robust testing  |
 
 ### Strategic considerations to improve cost efficiency
 
 - Use MLflow for reproducibility and collaborative evaluation.
-- Leverage Azure AI Foundry SDK to run local or cloud-based evaluations on small sets of test data.
+- Leverage Microsoft Foundry SDK to run local or cloud-based evaluations on small sets of test data.
 - Monitor inference latency and throughput to avoid noisy neighbor effects.
 
 ## Integration with other systems or APIs
@@ -75,9 +75,9 @@ Hosting determines scalability, reliability, and operational overhead. Azure off
 | Scenario              | Recommended platform                         | Cost strategy                          |
 |----------------------|----------------------------------------------|----------------------------------------|
 | **EDA And prototyping**| Azure Machine Learning compute instances, Azure Databricks       | Transient usage, team-level sharing    |
-| **Training And tuning**| Azure Machine Learning in Azure AI Foundry, CycleCloud                | Batch orchestration, spot pricing      |
+| **Training And tuning**| Azure Machine Learning in Microsoft Foundry, CycleCloud                | Batch orchestration, spot pricing      |
 | **Batch inference**  | Azure Machine Learning batch endpoints, Synapse, Databricks| Parallelization, isolated compute      |
-| **Online inference** | Azure AI Foundry Models, Azure Machine Learning managed endpoints     | Elastic scaling, quota-aware design    |
+| **Online inference** | Microsoft Foundry Models, Azure Machine Learning managed endpoints     | Elastic scaling, quota-aware design    |
 | **Self-hosting**     | AKS or IaaS (Data Science Virtual Machine)   | Predictable latency, isolated node pool|
 
 ### Strategic considerations to improve cost efficiency

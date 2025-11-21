@@ -1,4 +1,4 @@
-In a connected agent solution, success depends on clearly defining the responsibilities of each agent. The central agent is also responsible for how the agents will collaborate. Let's explore how to design a multi-agent program using Azure AI Foundry Agent Service.
+In a connected agent solution, success depends on clearly defining the responsibilities of each agent. The central agent is also responsible for how the agents will collaborate. Let's explore how to design a multi-agent program using Microsoft Foundry Agent Service.
 
 **Main agent responsibilities**
 
@@ -23,7 +23,7 @@ Connected agents should be designed with a single responsibility in mind. This m
 
 1. **Initialize the agents client**
 
-    First, you create a client that connects to your Azure AI Foundry project.
+    First, you create a client that connects to your Microsoft Foundry project.
 
 1. **Create an agent to connect to the main agent**
 

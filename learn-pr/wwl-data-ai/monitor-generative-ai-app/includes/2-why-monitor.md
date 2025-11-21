@@ -2,7 +2,7 @@ When you move from experimentation to production with a generative AI solution, 
 
 ## Explore the importance of deployment configurations
 
-In Azure AI Foundry, like many cloud platforms, deploying a generative AI application means binding it to a **compute resource**. That resource defines the horsepower behind your app: how fast it can respond, how many requests it can handle at once, and ultimately how much it costs to operate.
+In Microsoft Foundry, like many cloud platforms, deploying a generative AI application means binding it to a **compute resource**. That resource defines the horsepower behind your app: how fast it can respond, how many requests it can handle at once, and ultimately how much it costs to operate.
 
 Let’s consider two extremes:
 
@@ -55,3 +55,4 @@ By starting this process with simulated traffic, you can test in a safe, lightwe
 Choosing a deployment option isn't just a checkbox, it's a design decision. The only way to make the right choice *for you*, is to observe your system under real (or simulated) load, and use performance data to guide your next steps.
 
 Next, let's explore *what* to observe in your generative AI solution.
+

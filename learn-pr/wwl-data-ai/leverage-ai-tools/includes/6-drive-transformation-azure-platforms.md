@@ -49,7 +49,7 @@ Building intelligent applications is central to digital transformation. Azure of
 - **Azure OpenAI Service**: Access to powerful language models like GPT and Codex for natural language understanding and generation.
 - **GitHub Copilot**: AI-assisted coding to accelerate development and automate routine tasks.
 - **Azure AI Search**: Intelligent search experiences with semantic ranking, vector search, and RAG capabilities.
-- **Azure AI Document Intelligence**: Extract structured data from documents for automation and decision-making.
+- **Azure Document Intelligence**: Extract structured data from documents for automation and decision-making.
 
 > [!TIP]
 > Use GitHub Copilot to accelerate development and integrate AI into existing workflows.

@@ -19,7 +19,7 @@ abstract: |
 prerequisites: |
   Before starting this module, you should be familiar with:
   - The Azure portal
-  - General functionality of Azure AI Services
+  - General functionality of Foundry Tools
   - General programming technique
 iconUrl: /training/achievements/2-custom-name-entity-recognition.svg
 levels:

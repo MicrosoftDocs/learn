@@ -2,13 +2,13 @@ To start a project with Azure Document Intelligence services, you need an Azure 
 
 ## Subscribe to a resource 
 You can access Azure Document Intelligence services via:
-- An **Azure AI Service resource**: a multi-service subscription key (used across multiple Azure AI Services) 
+- A **Foundry Tools resource**: a subscription key used across multiple Foundry Tools
 
 **OR** 
 - An **Azure Document Intelligence resource**: a single-service subscription key (used only with a specific Azure AI Service) 
  
 >[!NOTE]
->Create an Azure AI Services resource if you plan to access multiple Azure AI services under a single endpoint/key. For Azure Document Intelligence access only, create an Azure Document Intelligence resource. Note that you need a single-service resource if you intend to use Microsoft Entra authentication.
+>Create a Foundry Tools resource if you plan to access multiple Foundry Tools under a single endpoint/key. For Azure Document Intelligence access only, create an Azure Document Intelligence resource. Note that you need a single-service resource if you intend to use Microsoft Entra authentication.
 
 You can subscribe to a service in the Azure portal or with the Azure Command Line Interface (CLI). You can learn more about the CLI commands [here](/cli/azure/cognitiveservices/account#commands).
 

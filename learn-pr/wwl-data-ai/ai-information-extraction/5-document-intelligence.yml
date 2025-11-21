@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.ai-information-extraction.document-intelligence
-title: Extract information from forms with Azure AI Document Intelligence
+title: Extract information from forms with Azure Document Intelligence
 metadata:
-  title: Extract information from forms with Azure AI Document Intelligence
-  description: Use Azure AI Document Intelligence to extract information from forms.
+  title: Extract information from forms with Azure Document Intelligence
+  description: Use Azure Document Intelligence to extract information from forms.
   author: graememalcolm
   ms.author: gmalc
   ms.date: 05/11/2025

@@ -4,10 +4,10 @@ Using the Trail Guide AI Assistant as our example, you explore the practical ste
 
 ## Set up tracing infrastructure
 
-Before you can capture traces, you need to configure the tracing infrastructure. Azure AI Foundry provides built-in tracing capabilities that integrate with Azure Application Insights using OpenTelemetry.
+Before you can capture traces, you need to configure the tracing infrastructure. Microsoft Foundry provides built-in tracing capabilities that integrate with Azure Application Insights using OpenTelemetry.
 
 > [!NOTE]
-> To trace an application, you need an Azure AI Foundry project with an associated Azure Application Insights resource. To learn how to set up monitoring and logging infrastructure for AI applications, explore the [Monitor your generative AI application](/training/modules/monitor-generative-ai-app?azure-portal=true) module.
+> To trace an application, you need a Microsoft Foundry project with an associated Azure Application Insights resource. To learn how to set up monitoring and logging infrastructure for AI applications, explore the [Monitor your generative AI application](/training/modules/monitor-generative-ai-app?azure-portal=true) module.
 
 ### Install required packages
 
@@ -19,7 +19,7 @@ pip install azure-ai-projects azure-monitor-opentelemetry opentelemetry-instrume
 
 These packages provide:
 
-- **azure-ai-projects**: Client to connect to your Azure AI Foundry project.
+- **azure-ai-projects**: Client to connect to your Microsoft Foundry project.
 - **azure-monitor-opentelemetry**: Integration with Azure Application Insights.
 - **opentelemetry-instrumentation-openai-v2**: Automatic tracing for OpenAI SDK calls.
 
@@ -52,7 +52,7 @@ tracer = trace.get_tracer(__name__)
 chat_client = project_client.inference.get_chat_completions_client()
 ```
 
-Once configured, every OpenAI SDK call automatically generates trace data that appears in Azure AI Foundry. However, to trace your business logic, you need to create custom spans.
+Once configured, every OpenAI SDK call automatically generates trace data that appears in Microsoft Foundry. However, to trace your business logic, you need to create custom spans.
 
 ## Create reusable tracing functions
 
@@ -142,7 +142,7 @@ def trail_guide_session(user_preferences):
 
 ## Understanding the trace hierarchy
 
-When you view traces in Azure AI Foundry, you find a hierarchical structure that shows how your application flows:
+When you view traces in Microsoft Foundry, you find a hierarchical structure that shows how your application flows:
 
 - **trail_guide_session** (your main workflow)
   - **recommend_hike** (business logic span)
@@ -157,3 +157,5 @@ Each level provides different insights:
 - **SDK level**: Model performance, token usage, and API errors.
 
 With these basic tracing patterns, you can start monitoring your AI assistant. The next unit covers advanced scenarios like handling multiple model calls, JSON parsing, and error debugging.
+
+

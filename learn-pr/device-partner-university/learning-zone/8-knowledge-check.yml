@@ -1,0 +1,84 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.learning-zone.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge Check
+  description: This content is part of the "Getting started with Microsoft Learning Zone" module.
+  ms.date: 11/14/2025
+  author: Stephanie-Rosenzweig
+  ms.author: v-stephanier
+  ms.topic: unit
+durationInMinutes: 5
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "What type of device is required for educators to use Microsoft Learning Zone?"
+    choices:
+        - content: "Any Windows device"
+          isCorrect: false
+          explanation: "Incorrect. The application requires a Copilot+ PC specifically."
+        - content: "A Copilot+ PC"
+          isCorrect: true
+          explanation: "Correct. Microsoft Learning Zone is designed for Copilot+ PCs."
+        - content: "A mobile device"
+          isCorrect: false
+          explanation: "Incorrect. The app isn't available on mobile devices."
+        - content: "A Chromebook"
+          isCorrect: false
+          explanation: "Incorrect. Chromebooks aren't supported for Microsoft Learning Zone."
+  - content: "Which Microsoft 365 licenses are needed to access Microsoft Learning Zone?"
+    choices:
+        - content: "Microsoft 365 Personal"
+          isCorrect: false
+          explanation: "Incorrect. Personal licenses don't grant access to Learning Zone."
+        - content: "Microsoft 365 Business Standard"
+          isCorrect: false
+          explanation: "Incorrect. Business licenses aren't sufficient for Learning Zone."
+        - content: "Microsoft 365 Education A1, A3, or A5"
+          isCorrect: true
+          explanation: "Correct. These specific education licenses are required."
+        - content: "Any Microsoft account"
+          isCorrect: false
+          explanation: "Incorrect. Only the specified education licenses are supported."
+  - content: "What can educators generate using Microsoft Learning Zone?"
+    choices:
+        - content: "Only text documents"
+          isCorrect: false
+          explanation: "Incorrect. The platform generates interactive lessons, not just text documents."
+        - content: "Personalized lessons and practice slides"
+          isCorrect: true
+          explanation: "Correct. Educators can generate customized lessons and practice content."
+        - content: "Financial reports"
+          isCorrect: false
+          explanation: "Incorrect. Financial reporting isn't a feature of Learning Zone."
+        - content: "Classroom seating charts"
+          isCorrect: false
+          explanation: "Incorrect. Seating charts aren't part of the application."
+  - content: "Where can educators assign and manage lessons in Learning Zone?"
+    choices:
+        - content: "The Discover tab"
+          isCorrect: false
+          explanation: "Incorrect. The Discover tab is used to browse content, not assign lessons."
+        - content: "The Settings menu"
+          isCorrect: false
+          explanation: "Incorrect. Settings doesn't handle lesson assignments."
+        - content: "The My Lessons tab"
+          isCorrect: true
+          explanation: "Correct. Assignments and lesson management are done here."
+        - content: "The Home screen"
+          isCorrect: false
+          explanation: "Incorrect. The Home screen doesn't manage assignments."
+  - content: "What insights can educators view in the Reports tab?"
+    choices:
+        - content: "Change device settings"
+          isCorrect: false
+          explanation: "Incorrect. Device settings aren't managed in the Reports tab."
+        - content: "View insights on student performance and engagement"
+          isCorrect: true
+          explanation: "Correct. The Reports tab shows assignment participation, average scores, and learner support needs."
+        - content: "Purchase more licenses"
+          isCorrect: false
+          explanation: "Incorrect. License purchases aren't handled in the Reports tab."
+        - content: "Chat with Microsoft Support"
+          isCorrect: false
+          explanation: "Incorrect. Support chat isn't part of the Reports tab functionality."

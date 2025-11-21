@@ -1,4 +1,4 @@
-Guardrails in **Azure AI Foundry** combine several safety controls that protect models from harmful, ungrounded, or policy-violating behavior.
+Guardrails in **Microsoft Foundry** combine several safety controls that protect models from harmful, ungrounded, or policy-violating behavior.
 These controls evaluate both the prompts that enter a model and the responses it generates, giving security and operations teams visibility and control over the full interaction flow.
 
 The **Guardrails + controls** workspace brings these protections together so they can be configured, tested, and tuned in one place. Each control addresses a different type of risk, and together they form a layered defense for responsible and secure AI operations.
@@ -7,7 +7,7 @@ You can preview how these controls behave in the **Try it out** section of the w
 
 ## Overview of safety controls
 
-Safety controls in Azure AI Foundry operate on two levels:
+Safety controls in Microsoft Foundry operate on two levels:
 
 - **Input protections** review prompts before they reach the model, detecting and blocking jailbreaks, indirect attacks, or content that violates internal policies.
 - **Output protections** evaluate model responses to prevent the release of unsafe or confidential information.
@@ -36,7 +36,7 @@ Prompt Shields reinforce model boundaries and help prevent malicious or unintend
 
 Each category includes a severity slider that determines how aggressively the filter responds. For example, a _medium blocking_ level stops both moderate and highly severe content, while a _high blocking_ level enforces the strictest control.
 
-Content filters use the same detection technology as **Azure AI Content Safety**, integrated directly into Foundry for real-time evaluation.
+Content filters use the same detection technology as **Microsoft Content Safety**, integrated directly into Foundry for real-time evaluation.
 They help ensure consistent moderation across all model interactions.
 
 ## Blocklists and protected material
@@ -55,6 +55,6 @@ It helps identify fabricated or unverified statements that could lead to misinfo
 
 Because this feature is in preview, behavior and accuracy might evolve as the model improves. Even so, groundedness detection plays an important role in assessing the reliability of model responses before they're shared or deployed.
 
-Azure AI Foundry brings all these safety controls together in one environment, allowing teams to design, test, and validate protections that align with organizational risk posture.
+Microsoft Foundry brings all these safety controls together in one environment, allowing teams to design, test, and validate protections that align with organizational risk posture.
 
 Understanding how each control operates is the foundation for building guardrails that aren't only effective but also verifiable. This ensures that AI systems remain secure, compliant, and trustworthy.

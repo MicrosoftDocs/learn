@@ -21,7 +21,7 @@ abstract: |
 prerequisites: |
   - Experience with SQL Server database development and T-SQL programming.
   - Basic understanding of AI concepts such as embeddings and language models.
-  - Familiarity with Azure services (Azure OpenAI, Azure AI Foundry) is helpful but not required.
+  - Familiarity with Azure services (Azure OpenAI, Microsoft Foundry) is helpful but not required.
   - Understanding of REST APIs and JSON data formats.
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
@@ -43,4 +43,5 @@ units:
 - learn-wwl.build-ai-solutions-sql-server.summary
 badge:
   uid: learn-wwl.build-ai-solutions-sql-server.badge
+
 

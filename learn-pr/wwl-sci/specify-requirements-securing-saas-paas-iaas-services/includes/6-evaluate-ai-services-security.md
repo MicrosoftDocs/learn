@@ -1,33 +1,126 @@
-This unit presents a summary of the Well Architected Framework recommendations for securing Azure Open AI
+This unit presents security architecture guidance for AI workloads and services, including Azure OpenAI in Foundry Models, Microsoft Foundry, Foundry Search, and Foundry Content Safety. As a Security Architect, you design secure AI workloads that protect confidentiality, integrity, and availability while supporting responsible AI practices.
 
-For more information, see [Azure Well-Architected Framework perspective on Azure OpenAI Service](/azure/well-architected/service-guides/azure-openai)
+For comprehensive guidance, see [Azure Well-Architected Framework perspective on Azure OpenAI Service](/azure/well-architected/service-guides/azure-openai).
 
-The purpose of the Security pillar is to provide **confidentiality, integrity, and availability** guarantees to the workload.
+## AI security architecture overview
 
-The [**Security design principles**](/azure/well-architected/security/principles) provide a high-level design strategy for achieving those goals by applying approaches to the technical design around Azure OpenAI.
+AI workloads and services introduce unique security considerations beyond traditional cloud workloads. Design your architecture to address:
 
-### Design checklist
+- **Model security**: Protecting AI models from unauthorized access, theft, or manipulation
+- **Data governance**: Managing sensitive data used for training, fine-tuning, and inference
+- **Prompt security**: Defending against prompt injection, jailbreak attempts, and adversarial inputs
+- **Output validation**: Ensuring AI-generated content meets safety, compliance, and quality standards
+- **Responsible AI**: Implementing transparency, fairness, and accountability controls
 
-Start your design strategy based on the [design review checklist for Security](/azure/security/fundamentals/database-security-checklist) and identify vulnerabilities and controls to improve the security posture. Then, review the [Azure security baseline for Azure OpenAI](/security/benchmark/azure/baselines/azure-openai-security-baseline). Finally, extend the strategy to include more approaches as needed.
+### Defense-in-depth for AI workloads and services
 
-> [!div class="checklist"]
->
-> - **Protect confidentiality**: If you upload training data to Azure OpenAI, use [customer-managed keys](/azure/ai-services/openai/encrypt-data-at-rest#customer-managed-keys-with-azure-key-vault) for data encryption, implement a key-rotation strategy, and [delete training, validation, and training results data](/azure/ai-services/openai/encrypt-data-at-rest#delete-training-validation-and-training-results-data). If you use an external data store for training data, follow security best practices for that store. For example, for Azure Blob Storage, use customer-managed keys for encryption and implement a key-rotation strategy. Use managed identity-based access, implement a network perimeter by using private endpoints, and enable access logs.
->
-> - **Protect confidentiality**: Guard against data exfiltration by limiting the outbound URLs that Azure OpenAI resources can access.
->
-> - **Protect integrity**: Implement access controls to authenticate and authorize user access to the system by using the least-privilege principle and by using individual identities instead of keys.
->
-> - **Protect integrity**: Implement [jailbreak risk detection](/azure/ai-services/content-safety/concepts/jailbreak-detection) to safeguard your language model deployments against prompt injection attacks.
->
-> - **Protect availability**: Use security controls to prevent attacks that might exhaust model usage quotas. You might configure controls to isolate the service on a network. If the service must be accessible from the internet, consider using a gateway to block suspected abuse by using routing or throttling.
+Apply multiple security layers across your AI architecture:
 
-### Recommendations
+| Layer | Security Controls | AI-Specific Application |
+|-------|------------------|------------------------|
+| **Identity & Access** | Microsoft Entra ID, role-based access control (RBAC), Conditional Access, managed identities | Controls who can submit prompts, access models, and retrieve responses. Prevents unauthorized API key usage and ensures accountability for AI interactions. |
+| **Network** | Private endpoints, network isolation, virtual networks, Azure Firewall | Prevents prompt and response data from traversing public internet. Blocks unauthorized exfiltration of training data and model outputs. Restricts AI services to communicate only with approved data sources. |
+| **Data** | Customer-managed keys, data residency, encryption at rest and in transit | Protects sensitive training data, fine-tuned models, and prompt/response pairs. Ensures compliance with data sovereignty requirements for AI workloads. |
+| **Application** | Content filters, Prompt Shields, guardrails, rate limiting | Detects and blocks malicious prompts (jailbreaks, injections). Prevents generation of harmful content. Stops abuse through quota exhaustion attacks. |
+| **Monitoring** | Azure Monitor, diagnostic logs, Microsoft Defender for Cloud | Tracks prompt patterns, detects anomalous AI usage, identifies potential data leakage through model queries, and provides audit trails for compliance. |
+
+## Security design principles for AI
+
+Start your design with the [Azure security baseline for Azure OpenAI](/security/benchmark/azure/baselines/azure-openai-security-baseline) and [Microsoft Foundry security baseline](/security/benchmark/azure/baselines/ai-foundry-security-baseline). The [Security design principles](/azure/well-architected/security/principles) guide your technical approach.
+
+### Plan your security readiness
+
+- **Threat modeling**: Identify AI-specific threats including prompt injection, data leakage, model theft, and adversarial attacks
+- **Compliance requirements**: Understand industry regulations (GDPR, HIPAA, CCPA) and how they apply to AI data processing
+- **Data classification**: Classify training data, prompts, and responses based on sensitivity
+- **Responsible AI**: Align with [Microsoft's Responsible AI principles](/azure/ai-services/responsible-use-of-ai-overview)
+
+### Design to protect confidentiality
+
+- **Data at rest**: Use [customer-managed keys](/azure/ai-services/openai/encrypt-data-at-rest#customer-managed-keys-with-azure-key-vault) for encryption, implement key rotation
+- **Data in transit**: Enforce TLS 1.2+ for all communications
+- **Data residency**: Choose Azure regions that meet data sovereignty requirements
+- **Training data**: Delete training, validation, and training results data after fine-tuning completes
+- **Secrets management**: Store API keys, connection strings, and certificates in Azure Key Vault
+- or application gateway to prevent abuse and manage costs.
+- **Network isolation**: Use [private endpoints](/azure/ai-services/cognitive-services-virtual-networks#use-private-endpoints) to keep traffic off the public internet
+
+### Design to protect integrity
+
+- **Identity-based access**: Use Microsoft Entra ID with RBAC instead of API keys
+- **Least privilege**: Grant minimum permissions needed (e.g., Cognitive Services OpenAI User for inference, Contributor for model management)
+- **Prompt security**: Implement [Prompt Shields](/azure/ai-services/content-safety/concepts/jailbreak-detection) to detect and block jailbreak attempts
+- **Content filtering**: Configure [Azure AI Content Safety](/azure/ai-services/content-safety/overview) to detect harmful content in prompts and responses
+- **Model validation**: Verify model outputs before presenting to users
+- **Audit logging**: Enable diagnostic logs for all AI service operations
+- **Managed identities**: Use [system-assigned or user-assigned managed identities](/azure/ai-services/openai/how-to/managed-identity) to eliminate credential management.
+
+### Design to protect availability
+
+- **Quota management**: Monitor and alert on token usage to prevent quota exhaustion from malicious or misconfigured applications.
+- **Rate limiting**: Implement throttling at the application gateway or API Management layer.
+- **Distributed denial of service (DDoS) protection**: Use Azure DDoS Protection for internet-facing endpoints.
+- **Backup and recovery**: Maintain copies of custom models and training data.
+- **Multi-region deployment**: Design for failover across Azure regions for business-critical.
+
+## AI-specific content safety and security controls
+
+### Content safety and guardrails
+
+[Foundry Content Safety](/azure/ai-services/content-safety/overview) is an AI service that detects harmful user-generated and AI-generated content in applications and services that provides multiple layers of protection.
+
+- **Content filters**: Configure severity thresholds (Low/Medium/High) for harmful content categories. Test with sample prompts to validate behavior.
+- **Prompt Shields**: Enable detection for both user prompt attacks and indirect attacks from documents. Monitor detection rates and adjust sensitivity as needed.
+- **Groundedness detection**: Reduce inaccurate information by validating outputs against source documents.
+- **Protected material detection**: Identify and block generation of copyrighted code or text.
+- **Custom categories API (preview)**: Create and manage your own content categories for enhanced moderation and filtering that matches your specific policies or use cases.
+- **Analyze text/image API**: Scan for potentially harmful content with the Analyze Image API and the Analyze Text API
+- **Custom blocklists**: Create organization-specific term lists to enforce additional policies.
+
+### Content security
+
+When using Microsoft Foundry for AI development:
+
+- Configure private networking for the hub and all connected services (Azure OpenAI, AI Search, Storage, Key Vault)
+- Enable [diagnostic logging](/azure/ai-services/diagnostic-logging) and send to Log Analytics for centralized monitoring
+- Use managed identities for all service-to-service authentication
+- Implement role-based access control at both the hub and project levels
+
+## AI threat scenarios and mitigations
+
+### Prompt injection attacks
+
+**Threat**: Attackers manipulate model behavior through crafted prompts to bypass safety controls or extract sensitive information.
+
+**Mitigations**: Enable Prompt Shields, implement input validation, use system messages to reinforce boundaries, monitor suspicious patterns.
+
+### Data exfiltration
+
+**Threat**: Sensitive training data or organizational information is extracted through model queries.
+
+**Mitigations**: Use private endpoints, implement data loss prevention (DLP) policies, restrict model access to necessary data sources, enable groundedness detection.
+
+### Model theft
+
+**Threat**: Attackers attempt to extract or replicate proprietary fine-tuned models.
+
+**Mitigations**: Use customer-managed keys, implement strong RBAC, enable audit logging, use private endpoints, monitor for anomalous query patterns.
+
+### Quota exhaustion
+
+**Threat**: Malicious actors or bugs consume all available tokens, causing denial of service.
+
+**Mitigations**: Implement rate limiting, set quota alerts, use Azure DDoS Protection, authenticate, and track usage per identity.
+
+## Key recommendations summary
 
 | Recommendation | Benefit |
-|--------|----|
-| **Secure keys**: If your architecture requires Azure OpenAI key-based authentication, store those keys in Azure Key Vault, not in application code. | Separating secrets from code by storing them in Key Vault reduces the chance of leaking secrets. Separation also facilitates central management of secrets, easing responsibilities like key rotation. |
-| **Restrict access**: [Disable public access](/azure/ai-services/openai/how-to/use-your-data-securely#disable-public-network-access) to Azure OpenAI unless your workload requires it. Create [private endpoints](/azure/ai-services/cognitive-services-virtual-networks#use-private-endpoints) if you're connecting from consumers in an Azure virtual network. | Controlling access to Azure OpenAI helps prevent attacks from unauthorized users. Using private endpoints ensures network traffic remains private between the application and the platform. |
-| **Microsoft Entra ID**: Use Microsoft Entra ID for authentication and to authorize access to Azure OpenAI by using role-based access control (RBAC). [Disable local authentication in Azure AI Services](/azure/ai-services/disable-local-auth) and set `disableLocalAuth` to `true`. Grant identities that perform completions or image generation the [Cognitive Services OpenAI User](/azure/ai-services/openai/how-to/role-based-access-control#cognitive-services-openai-user) role. Grant model automation pipelines and ad-hoc data-science access a role like [Cognitive Services OpenAI Contributor](/azure/ai-services/openai/how-to/role-based-access-control#cognitive-services-openai-contributor). | Using Microsoft Entra ID centralizes the identity-management component and eliminates the use of API keys. Using RBAC with Microsoft Entra ID ensures that users or groups have exactly the permissions they need to do their job. This kind of fine-grained access control isn't possible with Azure OpenAI API keys. |
-| **Use customer-managed keys**: [Use customer-managed keys](/azure/ai-services/openai/encrypt-data-at-rest) for fine-tuned models and training data that's uploaded to Azure OpenAI. | Using customer-managed keys gives you greater flexibility to create, rotate, disable, and revoke access controls. |
-| **Protect against jailbreak attacks**: Use [Azure AI Content Safety Studio](https://contentsafety.cognitive.azure.com/) to detect jailbreak risks. | Detect jailbreak attempts to identify and block prompts that try to bypass the safety mechanisms of your Azure OpenAI deployments. |
+|----------------|---------|
+| **Use Microsoft Entra ID with RBAC** | Centralizes identity management, enables fine-grained access control, supports conditional access and MFA |
+| **Implement private endpoints** | Keeps traffic private, reduces attack surface, prevents data exfiltration |
+| **Use customer-managed keys** | Provides control over encryption keys, supports compliance, enables key rotation |
+| **Configure content filters** | Prevents harmful content generation, reduces legal and reputational risk |
+| **Enable Prompt Shields** | Detects and blocks jailbreak attempts and prompt injection attacks |
+| **Deploy Microsoft Foundry securely** | Centralizes AI development with built-in security controls and unified monitoring |
+| **Monitor with Defender for Cloud** | Provides security posture management, threat detection, and AI-specific recommendations |
+| **Implement rate limiting** | Prevents abuse, manages costs, ensures fair resource usage |

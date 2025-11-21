@@ -60358,6 +60358,16 @@
       "source_path": "learn-pr/paths/machine-learning-foundations-using-data-science/index.yml",
       "redirect_url": "https://learn.microsoft.com/training/paths/create-machine-learn-models/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/introduction-information-extraction/5-multimodal-extraction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/introduction-information-extraction/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/introduction-information-extraction/6-knowledge-mining.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/introduction-information-extraction/",
+      "redirect_document_id": false
     }
   ]
 }

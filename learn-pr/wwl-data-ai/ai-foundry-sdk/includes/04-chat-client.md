@@ -1,11 +1,11 @@
 A common scenario in an AI application is to connect to a generative AI model and use *prompts* to engage in a chat-based dialog with it.
 
-While you can use the Azure OpenAI SDK, to connect "directly" to a model using key-based or Microsoft Entra ID authentication; when your model is deployed in an Azure AI Foundry project, you can also use the Azure AI Foundry SDK to retrieve a project client, from which you can then get an authenticated OpenAI chat client for any models deployed in the project's Azure AI Foundry resource. This approach makes it easy to write code that consumes models deployed in your project, switching between them easily by changing the model deployment name parameter.
+While you can use the Azure OpenAI SDK, to connect "directly" to a model using key-based or Microsoft Entra ID authentication; when your model is deployed in a Microsoft Foundry project, you can also use the Microsoft Foundry SDK to retrieve a project client, from which you can then get an authenticated OpenAI chat client for any models deployed in the project's Microsoft Foundry resource. This approach makes it easy to write code that consumes models deployed in your project, switching between them easily by changing the model deployment name parameter.
 
 > [!TIP]
-> You can use the OpenAI chat client provided by an Azure AI Foundry project to chat with any model deployed in the associated Azure AI Foundry resource - even non-OpenAI models, such as Microsoft Phi models.
+> You can use the OpenAI chat client provided by a Microsoft Foundry project to chat with any model deployed in the associated Microsoft Foundry resource - even non-OpenAI models, such as Microsoft Phi models.
 
-The following Python code sample uses the **get_openai_client()** method to get an OpenAI client with which to chat with a model that has been deployed in the project'a Azure AI Foundry resource.
+The following Python code sample uses the **get_openai_client()** method to get an OpenAI client with which to chat with a model that has been deployed in the project's Microsoft Foundry resource.
 
 ```python
 from azure.identity import DefaultAzureCredential
@@ -44,3 +44,5 @@ except Exception as ex:
 > In addition to the **azure-ai-projects** and **azure-identity** packages discussed previously, the sample code shown here assumes that the **openai** package has been installed:
 >
 > `pip install openai`
+
+
