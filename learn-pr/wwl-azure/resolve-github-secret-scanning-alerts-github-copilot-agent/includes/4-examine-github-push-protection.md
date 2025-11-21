@@ -22,9 +22,9 @@ When you push commits to a repository with push protection enabled:
 
 1. **Push rejection**: The push is rejected with an error message showing:
 
-   - Secret type (e.g., "Stripe API Key")
-   - File path and line number
-   - Options for remediation or bypass
+   - Secret type (for example, "Stripe API Key").
+   - File path and line number.
+   - Options for remediation or bypass.
 
 The push rejection occurs before any commits are added to the remote repository, ensuring that the secret never enters the repository's history.
 
@@ -58,11 +58,11 @@ error: failed to push some refs to 'https://github.com/user/repo.git'
 
 Push protection uses the same secret patterns as secret scanning but applies stricter criteria:
 
-- **High-confidence patterns only**: Detects secrets with well-defined, verifiable patterns to minimize false positives
+- **High-confidence patterns only**: Detects secrets with well-defined, verifiable patterns to minimize false positives.
 - **Active validation**: Verifies patterns match legitimate credential formats.
 - **Context analysis**: Considers surrounding code to distinguish real secrets from test data.
 
-This conservative approach focuses on preventing definite credential exposures while allowing lower-confidence patterns to be handled by post-commit secret scanning.
+This conservative approach focuses on preventing definite credential exposures while post-commit secret scanning catches lower-confidence patterns.
 
 ## Push protection availability
 
@@ -72,17 +72,17 @@ Push protection availability varies based on repository visibility and GitHub su
 
 For public repositories:
 
-- **Enabled by default**: All new public repositories automatically have push protection enabled (as of 2024)
-- **Free**: No cost associated with the feature
-- **Globally available**: Works for all users with public repositories
+- **Enabled by default**: All new public repositories automatically have push protection enabled (as of 2024).
+- **Free**: No cost associated with the feature.
+- **Globally available**: Works for all users with public repositories.
 
 ### Private repositories
 
 For private repositories, push protection requires GitHub Advanced Security:
 
-- **GitHub Enterprise Cloud**: Available with Advanced Security license
-- **GitHub Enterprise Server**: Available with Advanced Security license
-- **Organization-level control**: Administrators enable protection at the organization or repository level
+- **GitHub Enterprise Cloud**: Available with Advanced Security license.
+- **GitHub Enterprise Server**: Available with Advanced Security license.
+- **Organization-level control**: Administrators enable protection at the organization or repository level.
 
 For detailed instructions on enabling push protection, see [GitHub's push protection documentation](https://docs.github.com/en/code-security/secret-scanning/push-protection).
 
@@ -96,7 +96,7 @@ When push protection blocks a push, you have three options for resolution.
 
 The secure approach is to remove the secret from your commits:
 
-1. **Identify the secret**: Review the error message to locate the file and line containing the secret
+1. **Identify the secret**: Review the error message to locate the file and line containing the secret.
 
 1. **Remove the secret locally**: Edit the file to remove the hard-coded credential:
 
@@ -133,27 +133,27 @@ This approach ensures no secrets enter the repository history.
 
 ### Bypass protection (use with caution)
 
-In limited circumstances, you may need to bypass push protection. Valid reasons include:
+In limited circumstances, you might need to bypass push protection. Valid reasons include:
 
-- **False positives**: The detected pattern isn't actually a secret (e.g., test data, example documentation)
-- **Already known exposure**: The secret is already exposed elsewhere and rotation is planned separately
-- **Legacy code migration**: Moving existing code with secrets that will be remediated in a separate process
+- **False positives**: The detected pattern isn't actually a secret (for example, test data, example documentation).
+- **Already known exposure**: The secret is already exposed elsewhere and rotation is planned separately.
+- **Legacy code migration**: Moving existing code with secrets (remediating secrets in a separate process).
 
-To bypass push protection, GitHub provides a bypass option when viewing the blocked push error. You'll need to provide justification for the bypass.
+To bypass push protection, GitHub provides a bypass option when viewing the blocked push error. You need to provide justification for the bypass.
 
 > [!IMPORTANT]
-> Bypassing push protection doesn't dismiss the secret scanning alert. The secret is still flagged in the Security tab and requires remediation. Use bypass only when absolutely necessary and ensure bypassed secrets are still rotated and properly secured.
+> Bypassing push protection doesn't dismiss the secret scanning alert. The secret is still flagged in the Security tab and requires remediation. Use bypass only when necessary and ensure bypassed secrets are still rotated and properly secured.
 
 ### Allow the pattern
 
-If your organization has configured allowed patterns (exemptions for test credentials, known safe examples, or specific file paths), the pattern may be automatically permitted. Contact your organization's security team if you believe a pattern should be added to the allowed list.
+If your organization configures allowed patterns (exemptions for test credentials, known safe examples, or specific file paths), the pattern might be permitted automatically. Contact your organization's security team if you believe a pattern should be added to the allowed list.
 
 ## Interaction between secret scanning and push protection
 
 Secret scanning and push protection work together as complementary layers of credential protection:
 
-- **Push protection (proactive)**: Prevents secrets from entering the repository in the first place
-- **Secret scanning (detective)**: Catches secrets that bypass push protection or existed before push protection was enabled
+- **Push protection (proactive)**: Prevents secrets from entering the repository in the first place.
+- **Secret scanning (detective)**: Catches secrets that bypass push protection or existed before push protection was enabled.
 
 ### Common scenarios
 
@@ -188,11 +188,11 @@ Historical secrets require manual cleanup even after enabling push protection:
 
 #### Low-confidence pattern
 
-Ambiguous patterns are handled differently by each feature, providing layered detection:
+Each security feature handles ambiguous patterns differently, providing layered detection:
 
 1. You commit code with an ambiguous pattern.
 1. Push protection allows the push (only blocks high-confidence secrets).
-1. Secret scanning may generate an alert for review.
+1. Secret scanning might generate an alert for review.
 1. You assess whether it's a real secret.
 
 ### Best practices
@@ -206,30 +206,30 @@ To maximize protection effectiveness:
 
 ## Limitations and considerations
 
-Understanding push protection's limitations helps you implement comprehensive security:
+Understanding push protection's limitations can help you implement comprehensive security:
 
 ### Scope limitations
 
 Push protection operates only at push time:
 
 - **No local protection**: Secrets in local commits are undetected until you push.
-- **Pattern-based detection**: Custom or proprietary credential formats unknown to GitHub may not be detected.
+- **Pattern-based detection**: Custom or proprietary credential formats unknown to GitHub might not be detected.
 - **No protection for non-Git workflows**: Doesn't prevent secrets in manual file uploads or API-based repository changes.
 
 ### Workflow impact
 
 Push protection requires immediate action:
 
-- **Blocked pushes must be resolved**: You cannot defer remediation like with post-commit alerts.
-- **Potential workflow disruption**: Developers unfamiliar with secret management may find blocks frustrating.
+- **Blocked pushes must be resolved**: You can't defer remediation like with post-commit alerts.
+- **Potential workflow disruption**: Developers unfamiliar with secret management might find blocks frustrating.
 
 Providing good documentation and training minimizes workflow disruptions while maintaining security.
 
 ### Complementary practices
 
-Use additional tools alongside push protection:
+Use other tools alongside push protection:
 
 - **Pre-commit hooks**: Catch secrets locally before attempting to push.
 - **Environment variable templates**: Provide `.env.example` files showing required variables without actual values.
-- **Secret management libraries**: Use Azure Key Vault SDK, AWS Secrets Manager SDK, or similar tools.
+- **Secret management libraries**: Use Azure Key Vault SDK, Amazon Web Services (AWS) Secrets Manager SDK, or similar tools.
 - **Code review**: Train reviewers to watch for hard-coded credentials.

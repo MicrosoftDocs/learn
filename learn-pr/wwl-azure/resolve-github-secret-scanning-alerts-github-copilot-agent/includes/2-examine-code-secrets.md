@@ -1,4 +1,4 @@
-Modern applications depend on credentials to access databases, APIs, cloud services, and third-party integrations. When developers hard-code these secrets directly in source code, they create a critical security vulnerability that can lead to data breaches, financial losses, and compliance violations.
+Modern applications depend on credentials to access databases, APIs, cloud services, and other external integrations. When developers hard-code these secrets directly in source code, they create a critical security vulnerability that can lead to data breaches, financial losses, and compliance violations.
 
 ## What are code secrets?
 
@@ -17,7 +17,7 @@ API keys authenticate your application to external services and platforms.
 Examples include:
 
 - **Payment gateways**: Stripe API keys, PayPal client secrets, Square access tokens.
-- **Cloud platforms**: Azure subscription keys, AWS access keys and secret access keys, Google Cloud API keys.
+- **Cloud platforms**: Azure subscription keys, Amazon Web Services (AWS) access keys (and secret access keys), and Google Cloud API keys.
 - **Communication services**: SendGrid API keys, Twilio auth tokens, Slack webhooks.
 - **Analytics and monitoring**: Google Analytics tracking IDs, Datadog API keys, Application Insights instrumentation keys.
 
@@ -37,7 +37,7 @@ public class PaymentProcessor
 }
 ```
 
-If this code is committed to a repository, the Stripe key becomes visible to anyone with repository access. In public repositories, it's immediately exposed to the entire internet.
+If this code is committed to a repository, the Stripe key becomes visible to anyone with repository access. In public repositories, the Stripe key is immediately visible to the entire internet.
 
 #### Database connection strings
 
@@ -65,14 +65,14 @@ An attacker with this information could directly access the database, bypass all
 
 #### Private keys and certificates
 
-Private keys for encryption, signing, and SSL/TLS certificates must never appear in source code.
+Private keys for encryption, signing, and TLS certificates must never appear in source code.
 
 Examples include:
 
 - RSA private keys for encryption.
 - SSH private keys for server access.
 - JWT signing keys for token authentication.
-- SSL/TLS certificate private keys.
+- TLS certificate private keys.
 
 ```csharp
 // DANGEROUS: Hard-coded private key
@@ -91,7 +91,7 @@ Types include:
 
 - OAuth client IDs and secrets.
 - Personal access tokens (PATs) for services like GitHub, GitLab.
-- Service principal credentials for Azure Active Directory.
+- Service principal credentials for Microsoft Entra ID.
 - Refresh tokens with long-lived access.
 
 ```csharp
@@ -135,23 +135,22 @@ Consider the consequences:
 
 ### Persistence and difficulty of revocation
 
-Once a secret is exposed, the damage persists until the credential is rotated (changed). This creates several problems:
+Once a secret is exposed, the damage persists until the credential is rotated (changed). There are several problems that complicate revocation:
 
 - **Git history**: Even if you remove a secret from current code, it remains in the repository's commit history.
-- **Forked repositories**: In public repositories, others may have forked your code with the secret intact.
-- **Cached or archived versions**: Search engines, archive services, or internal caches may have captured the exposed secret.
+- **Forked repositories**: In public repositories, other developers can fork your code with the secret intact.
+- **Cached or archived versions**: Search engines, archive services, or internal caches can capture the exposed secret.
 - **Unknown exposure window**: You might not know when the secret was first exposed or who accessed it.
 
-The only secure response to an exposed secret is to immediately revoke it and generate a new one, then update all applications using it. This can be disruptive and time-consuming.
+The only secure response to an exposed secret is to immediately revoke it and generate a new one, then update all applications that use it. Remediation can be disruptive and time-consuming.
 
 ### Compliance and regulatory consequences
 
 Many regulatory frameworks explicitly require protecting credentials and sensitive authentication data:
 
-- **PCI DSS**: Payment Card Industry standards prohibit storing authentication credentials in clear text.
-- **HIPAA**: Healthcare data protection requires safeguarding access credentials.
-- **GDPR**: Data protection regulations require appropriate security measures for credentials.
-- **SOC 2**: Security audits verify that credentials are properly managed and protected.
+- **Payment Card Industry Data Security Standard (PCI DSS)**: Payment Card Industry standards prohibit storing authentication credentials in clear text.
+- **Health Insurance Portability and Accountability Act (HIPAA)**: Healthcare data protection requires safeguarding access credentials.
+- **Service Organization Control 2 (SOC 2)**: Security audits verify that credentials are properly managed and protected.
 
 Exposed secrets can result in failed audits, regulatory fines, and loss of certifications required to operate in certain industries.
 
@@ -169,7 +168,7 @@ A developer commits code to a public GitHub repository with a hard-coded AWS acc
 1. The key must be revoked, breaking all legitimate services using it.
 1. The incident requires security investigation, incident response, and potential legal notifications.
 
-This scenario occurs regularly. GitHub's push protection feature was specifically created to prevent these incidents.
+This scenario occurs regularly. GitHub's push protection feature prevents these incidents.
 
 #### Scenario 2: Database credential exposure
 
@@ -191,7 +190,7 @@ An API key is hard-coded in a mobile application. Security researchers decompile
 1. Enumerate all user data accessible through the API.
 1. The company must revoke the key, forcing all users to update the app.
 
-Mobile and client-side code is particularly vulnerable because attackers can analyze the compiled application at their leisure.
+Mobile and client-side code is vulnerable because attackers can analyze the compiled application at their leisure.
 
 ## Best practices for managing secrets
 
@@ -259,7 +258,7 @@ Separate secrets by environment:
 - Staging: Separate credentials that mirror production permissions.
 - Production: Highest security, monitored access, restricted permissions.
 
-This ensures that compromised development credentials can't affect production systems.
+Separating secrets by environment ensures that compromised development credentials can't affect production systems.
 
 ### Implement least privilege access
 
@@ -280,6 +279,6 @@ Use automated tools to detect secrets in code before they're committed or pushed
 For example, GitHub provides the following tools:
 
 - GitHub Secret Scanning: Automatically scans for known secret patterns.
-- GitHub Push Protection: Blocks commits containing secrets.
+- GitHub Push Protection: Blocks any commits that contain secrets.
 
 These tools act as safety nets, catching secrets that developers accidentally include in code.

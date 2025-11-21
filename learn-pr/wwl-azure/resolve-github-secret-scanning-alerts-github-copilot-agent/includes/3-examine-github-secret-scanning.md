@@ -1,4 +1,4 @@
-GitHub Secret Scanning automatically detects exposed credentials in your repository, helping you discover and remediate security vulnerabilities before attackers can exploit them. Understanding how secret scanning works enables you to leverage this powerful security feature effectively.
+GitHub Secret Scanning automatically detects exposed credentials in your repository, helping you discover and remediate security vulnerabilities before attackers can exploit them. Understanding how secret scanning works enables you to use this powerful security feature effectively.
 
 ## What is GitHub secret scanning?
 
@@ -41,7 +41,7 @@ For many supported secrets, GitHub partners with service providers to validate d
 - Enables automatic revocation of the compromised credential.
 - Reduces false positive alerts.
 
-For example, if secret scanning detects an AWS access key, GitHub can verify with Amazon that the key is valid and active. Amazon receives a notification and can automatically rotate the compromised credential.
+For example, if secret scanning detects an Amazon Web Services (AWS) access key, GitHub can verify with Amazon that the key is valid and active. Amazon receives a notification and can automatically rotate the compromised credential.
 
 ### Historical scanning
 
@@ -99,17 +99,17 @@ GitHub's secret scanning detects credentials from over 200 different service pro
 - **New Relic**: License keys, API keys.
 - **Sentry**: DSN strings with auth tokens.
 
-The full list of supported patterns is maintained by GitHub and continuously expanded as new services and credential types emerge.
+GitHub maintains the full list of supported patterns and continuously expands it as new services and credential types emerge.
 
 ### Pattern detection accuracy
 
 Secret scanning uses sophisticated pattern matching to minimize false positives while ensuring comprehensive detection:
 
 - **High-confidence patterns**: Secrets with unique, verifiable formats (like Stripe keys starting with `sk_live_` or `pk_live_`).
-- **Medium-confidence patterns**: Credentials with common formats that may require additional validation.
+- **Medium-confidence patterns**: Credentials with common formats that might require other validation.
 - **Context-aware detection**: Analyzes surrounding code to distinguish real credentials from test data or examples.
 
-For example, a classic GitHub personal access token follows a specific format (`ghp_` followed by approximately 36 alphanumeric characters). This unique pattern allows high-confidence detection with minimal false positives.
+For example, a classic GitHub personal access token follows a specific format (`ghp_` followed by approximately 36 alphanumeric characters). This access token's unique pattern allows high-confidence detection with minimal false positives.
 
 ## Secret scanning availability
 
@@ -124,7 +124,7 @@ For public repositories, secret scanning is:
 - **Comprehensive**: Includes both historical scanning and push protection.
 - **Globally available**: Works for all users with public repositories.
 
-This ensures that open-source projects benefit from automatic credential protection without requiring configuration or payment.
+These default behaviors ensure that open-source projects benefit from automatic credential protection without requiring configuration or payment.
 
 ### Private repositories
 
@@ -150,7 +150,7 @@ For private repositories, GitHub Actions secret scanning requires GitHub Advance
 
 For public repositories, secret scanning is enabled by default and requires no configuration.
 
-For private repositories, secret scanning requires GitHub Advanced Security and must be enabled by repository administrators or organization owners. For detailed instructions on enabling and configuring secret scanning for private repositories, see [GitHub's secret scanning documentation](https://docs.github.com/en/code-security/secret-scanning/configuring-secret-scanning-for-your-repositories).
+For private repositories, secret scanning requires GitHub Advanced Security. Administrators or organization owners can enable secret scanning for the repository.
 
 ## Secret scanning in practice
 
@@ -178,7 +178,7 @@ When secret scanning detects a credential, the typical response workflow include
 1. **Resolution**: Close the alert once the credential is rotated and code is fixed.
 
 > [!NOTE]
-> Resolving secret scanning alerts typically requires repository administrator or security manager permissions. Developers with read or write access can view alerts but may need to escalate to security teams for resolution.
+> Resolving secret scanning alerts typically requires repository administrator or security manager permissions. Developers with read or write access can view alerts but might need to escalate to security teams for resolution.
 
 ### Reducing false positives
 
@@ -189,7 +189,7 @@ While secret scanning is highly accurate, false positives can occur. Strategies 
 - **Use test markers**: Comment test credentials clearly to help detection algorithms.
 - **Implement custom patterns** (GitHub Advanced Security): Organizations can configure custom secret patterns specific to their authentication systems.
 
-## Performance and impact
+## Performance impact
 
 Secret scanning operates efficiently with minimal impact on repository operations:
 
@@ -202,7 +202,7 @@ Developers experience no workflow interruptions from secret scanning itself, tho
 
 ## Limitations and considerations
 
-Understanding secret scanning's limitations helps you implement complementary security measures:
+Understanding secret scanning's limitations can help you implement complementary security measures:
 
 ### Pattern-based detection
 
@@ -213,11 +213,11 @@ Secret scanning relies on known patterns and can't detect:
 - Secrets split across multiple lines or files.
 - Credentials in binary files or compiled code.
 
-Organizations with custom authentication systems may need additional scanning tools.
+Organizations with custom authentication systems might need other scanning tools.
 
 ### Encrypted repositories
 
-Secret scanning cannot analyze encrypted content:
+Secret scanning can't analyze encrypted content:
 
 - Git-crypt encrypted files.
 - Git LFS objects with encryption.
@@ -233,4 +233,4 @@ Secret scanning operates within repository boundaries:
 - Can't detect secrets in external dependencies or submodules.
 - Limited visibility into secrets in binary dependencies.
 
-Use pre-commit hooks and local scanning tools for additional protection.
+Use precommit hooks and local scanning tools for more protection.

@@ -196,7 +196,7 @@ GitHub Copilot Agent can be used to generate configuration templates and documen
 The following prompts assign documentation tasks to GitHub Copilot Agent:
 
 - "Create an appsettings.template.json file showing required configuration structure without actual secret values."
-- "Add a .env.example file documenting all required environment variables for the application."
+- "Add an ".env.example" file documenting all required environment variables for the application."
 - "Update the README.md to include instructions for configuring API keys and database credentials."
 - "Add code comments explaining how to configure the application's secrets securely."
 
@@ -313,7 +313,11 @@ For credentials with multiple parts (client ID + secret, username + password), e
 
 ### Backward compatibility
 
-If maintaining compatibility during migration, implement fallback logic that checks environment variables if configuration is missing, log warnings when using deprecated methods, and plan a migration timeline to remove fallback code.
+If maintaining compatibility during migration, perform the following actions:
+
+- Implement fallback logic that checks environment variables if configuration is missing.
+- Log warnings when using deprecated methods.
+- Plan a migration timeline to remove fallback code.
 
 ### Testing with secrets
 
@@ -329,21 +333,25 @@ Remediate one type of secret at a time, test after each remediation, and commit 
 
 ### Use appropriate secret storage
 
-Different environments require different approaches: User Secrets or .env files for local development, GitHub Secrets or Azure Pipeline variables for CI/CD, and Azure Key Vault or AWS Secrets Manager for staging/production.
+Different environments require different approaches. For example:
+
+- User Secrets or .env files for local development.
+- GitHub Secrets or Azure Pipeline variables for Continuous Integration/Continuous Deployment (CI/CD).
+- Azure Key Vault for staging/production.
 
 ## Remediation workflow
 
-Use the following step-by-step approach to remediate GitHub secret scanning alerts:
+The following step-by-step approach demonstrates how to remediate GitHub secret scanning alerts:
 
-1. **Rotate credentials immediately**: Log into the service provider's dashboard, revoke the exposed credential, and generate a new secret. This is the most critical security step—exposed credentials must be invalidated before any code changes.
+1. **Rotate credentials immediately**: Sign in to the service provider's dashboard, revoke the exposed credential, and generate a new secret. Rotating credentials is the most critical security step—exposed credentials must be invalidated before any code changes.
 
 2. **Prepare workspace**: Commit or stash all pending changes and create a clean Git branch for remediation.
 
-3. **Analyze dependencies**: Use Ask mode first to understand what the secret accesses, how it's used, and identify all code dependencies (see Preparation and safety prompts).
+3. **Analyze dependencies**: Use GitHub Copilot's Ask mode to analyze how the secret is used, what it accesses, and to identify code dependencies.
 
-4. **Remove hard-coded secrets**: Select the code containing the secret and apply Basic secret removal prompts to replace with environment variable or configuration access.
+4. **Remove hard-coded secrets**: Use detailed prompts to assign tasks to GitHub Copilot's Agent mode. For example, define a task that replaces secrets with environment variables or configuration access.
 
-5. **Implement configuration patterns**: Apply Comprehensive remediation prompts to upgrade to proper dependency injection and configuration systems.
+5. **Implement configuration patterns**: Apply comprehensive remediation prompts to upgrade to proper dependency injection and configuration systems.
 
 6. **Add documentation**: Use Configuration and documentation prompts to create template files (appsettings.template.json, .env.example) and update README with configuration instructions.
 

@@ -23,44 +23,40 @@ Successful analysis with Ask mode depends on clear, specific prompts that provid
 
 Start by confirming what was detected and why it's problematic. Select the code containing the secret and ask direct questions.
 
-#### Effective prompts
+The following prompts help clarify the nature of the exposure:
 
-- Explain why the selected code triggered a secret scanning alert.
-- What type of credential is this, and what service does it access?
-- Analyze the selected database connection string and identify all exposed credentials.
-- Is this a real API key or could it be a false positive?
+- "Explain why the selected code triggered a secret scanning alert."
+- "What type of credential is used in the selected code, and what service does it access?"
+- "Analyze the selected database connection string and identify all exposed credentials."
+- "Does the selection contain a real API key or could it be a false positive?"
 
-#### What Copilot provides
+GitHub Copilot analyzes the selected code and explains:
 
-Copilot analyzes the selected code and explains:
-
-- The specific pattern that triggered the alert (e.g., "matches Stripe's API key format starting with 'sk_live_'").
-- Why it's considered a credential (hard-coded string literal, known service pattern).
-- What service or system the credential accesses.
+- The specific pattern that triggered the alert (for example, "matches Stripe's API key format starting with 'sk_live_'").
+- The type of credential and its characteristics (for example, "hard-coded string literal" or "matches known service pattern").
+- The service or system that the credential accesses.
 - The visibility of the exposure (who can see it).
 
 This confirmation helps you understand whether you're dealing with a genuine secret or a false positive.
 
 ### Assessing the risk
 
-Understand the potential impact to prioritize remediation. Include context about your repository visibility and environment.
-
-#### Effective prompts for assessing risk
+It's important to understand the potential impact and how to prioritize remediation. Include context about your repository visibility and environment.
 
 The following prompts help evaluate the severity of the exposure:
 
-- What could an attacker do with the selected exposed API key?
-- What's the risk level of exposing this database connection string in a public repository?
-- What sensitive data or systems are at risk due to this secret?
-- How severe is this exposure compared to other credential types?
+- "What could an attacker do with the selected exposed API key?"
+- "What's the risk level of exposing this database connection string in a public repository?"
+- "What sensitive data or systems are at risk due to this secret?"
+- "How severe is this exposure compared to other credential types?"
 
-Copilot analyzes the credential type and explains:
+GitHub Copilot analyzes the credential type and explains:
 
 - Specific actions an attacker could perform (financial transactions, data access, system modifications).
 - Categories of risk (financial impact, data breaches, business disruption, compliance violations).
 - Urgency level based on credential type and repository visibility.
 - Immediate actions required (revoke credential, review logs, rotate secrets).
-- Potential compliance implications (PCI DSS, GDPR, etc.).
+- Potential compliance implications, such as Payment Card Industry Data Security Standard (PCI DSS).
 
 This risk assessment helps you prioritize remediation and communicate urgency to stakeholders.
 
@@ -68,16 +64,14 @@ This risk assessment helps you prioritize remediation and communicate urgency to
 
 Analyze how the secret is used to ensure remediation preserves functionality. Use `@workspace` to search across files.
 
-#### Effective prompts understanding context
-
 The following prompts help explore usage context:
 
-- How is the selected API key used in the application?
-- What functions or classes depend on the selected database connection string?
-- `@workspace` Find all code paths that reference this credential.
-- What will break if I remove this hard-coded secret?
+- "How is the selected API key used in the application?"
+- "What functions or classes depend on the selected database connection string?"
+- "`@workspace` Find all code paths that reference this credential."
+- "What breaks if I remove this hard-coded secret?"
 
-Copilot analyzes the workspace and identifies:
+GitHub Copilot analyzes the workspace and identifies:
 
 - All files and locations where the secret is referenced.
 - Methods, classes, or services that depend on the credential.
@@ -92,16 +86,14 @@ This analysis ensures your remediation plan addresses all dependencies and maint
 
 Develop a comprehensive fix strategy. Be specific about your technology stack and environment.
 
-#### Effective prompts for planning remediation
-
 The following prompts help develop a comprehensive fix strategy:
 
-- What's the recommended way to securely store this API key in a .NET application?
-- Create a step-by-step plan for remediating this exposed database credential.
-- How do I migrate from hard-coded secrets to Azure Key Vault?
-- Show me the best practice for managing this credential type in production.
+- "What's the recommended way to securely store this API key in a .NET application?"
+- "Create a step-by-step plan for remediating this exposed database credential."
+- "How do I migrate from hard-coded secrets to Azure Key Vault?"
+- "Show me the best practice for managing this credential type in production."
 
-Copilot recommends secure storage solutions and explains:
+GitHub Copilot recommends secure storage solutions and explains:
 
 - Appropriate secret management approaches for your stack (Azure Key Vault, User Secrets, environment variables).
 - Priority ranking of options (production vs. development environments).
@@ -116,19 +108,17 @@ This guidance provides a clear roadmap for implementing secure secret management
 
 Identify similar problems elsewhere using workspace-wide analysis.
 
-#### Effective prompts for finding related issues
-
 The following prompts help identify similar problems elsewhere in the workspace:
 
-- `@workspace` Search for other hard-coded API keys or connection strings.
-- Are there other credentials in configuration files that need remediation?
-- `@workspace` Find files that contain patterns similar to the selected secret.
-- What other security concerns exist in files that handle external service integration?
+- "`@workspace` Search for other hard-coded API keys or connection strings."
+- "Are there other credentials in configuration files that need remediation?"
+- "`@workspace` Find files that contain patterns similar to the selected secret."
+- "What other security concerns exist in files that handle external service integration?"
 
-Copilot searches the workspace and identifies:
+GitHub Copilot searches the workspace and identifies:
 
 - Other files containing similar credential patterns.
-- Configuration files that might have embedded secrets.
+- Configuration files that might contain hard-coded secrets.
 - Related security concerns in authentication or integration code.
 - Consistent patterns suggesting systematic issues.
 - Recommendations for workspace-wide remediation.
@@ -137,7 +127,7 @@ This comprehensive scan ensures you address all instances of the problem, not ju
 
 ## Providing effective context
 
-GitHub Copilot's analysis quality depends on the context you provide.
+The quality of GitHub Copilot's analysis depends on the context you provide.
 
 ### Add relevant files and code
 
@@ -154,7 +144,7 @@ Providing comprehensive context helps Copilot deliver more accurate analysis:
 
 When asking about a secret scanning alert, include key details from the GitHub alert to provide complete context.
 
-#### Effective prompt structure
+You can use the following structure as a template for your prompts:
 
 ```plaintext
 I have a GitHub secret scanning alert for a [SECRET TYPE] in [FILE PATH] line [NUMBER]. 
@@ -164,7 +154,7 @@ This is a [public/private] repository. I need to understand:
 3. [Specific question about secure storage]
 ```
 
-#### Example
+Here's an example that uses the template:
 
 ```plaintext
 I have a GitHub secret scanning alert for a Stripe API key in src/PaymentProcessor.cs line 15. 
@@ -174,9 +164,7 @@ This is a public repository. I need to understand:
 3. How to implement secure storage without breaking payment processing
 ```
 
-#### What this approach provides
-
-Including specific details helps Copilot:
+Writing clear problem descriptions with specific details helps GitHub Copilot to:
 
 - Understand the exact credential type and location.
 - Assess risk based on repository visibility.
@@ -187,6 +175,8 @@ This structured approach follows GitHub's recommendation to provide context upfr
 
 ## Iterative analysis workflow
 
+GitHub Copilot's Ask mode is most effective when prompts support an iterative approach to analyzing issues and formulating a remediation strategy.
+
 Follow this systematic approach when analyzing secret scanning alerts:
 
 1. Review the alert in GitHub's Security tab and note the secret type, file path, and line number.
@@ -195,19 +185,21 @@ Follow this systematic approach when analyzing secret scanning alerts:
 1. Apply the prompting strategies from earlier sections in sequence: understanding the exposure, assessing the risk, understanding the context, planning remediation, and finding related issues.
 1. Document your findings and remediation plan as you work through the analysis.
 
-## Best practices for Ask mode
+## Best practices for GitHub Copilot's Ask mode
 
-Maximize the effectiveness of your analysis sessions.
+Following best practice guidance can help maximize the effectiveness of your analysis sessions.
 
 ### Start broad, then focus
 
-Begin with general questions, then progressively drill into specifics:
+Begin with general questions, then progressively drill down into specifics.
 
-1. What is this and why is it a problem?
-1. What are the specific risks?
-1. How is it used in the application?
-1. What's the remediation plan?
-1. What related issues exist?
+Consider a scenario that involves analyzing an exposed API key in a selected code snippet:
+
+1. "What does the selected code do and why is it a problem?"
+1. "What are the specific risks associated with the selected code?"
+1. "How is the API key used in the application?"
+1. "Can you outline a remediation plan?"
+1. "Are there any related issues within the codebase?"
 
 ### Document your findings
 
