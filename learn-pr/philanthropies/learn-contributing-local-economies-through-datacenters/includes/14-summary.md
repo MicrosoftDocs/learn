@@ -61,5 +61,4 @@ This module examined the vital role datacenters play in shaping local economies 
 - [Datacenter Knowledge: Beyond CSR: How Data Centers Can Keep Up with Rising ESG Regulations](https://www.datacenterknowledge.com/sustainability/beyond-csr-how-data-centers-can-keep-up-with-rising-esg-regulations)
 - [MilldamPR: Data Center Community Relations](https://milldampr.com/data-center-community-relations/)
 - [Power whips: Why Is Communication Important in Data Centers?](https://powerwhips.com/why-is-communication-important-in-data-centers/)
-- [Vantage: A New Approach to HR: Creating Better Humans in the Workplace](https://blog.vantage-dc.com/2023/05/02/a-new-approach-to-hr-creating-better-humans-in-the-workplace/)
 - [Simmons+Simmons: Top 10 issues for datacenters](https://www.simmons-simmons.com/en/publications/cluuzeox800hyuatcw3kkq0xs/top-10-issues-in-data-centres)
