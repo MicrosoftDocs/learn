@@ -3,7 +3,7 @@ uid: learn.resolve-github-secret-scanning-alerts-github-copilot-agent
 metadata:
   title: Resolve GitHub Secret Scanning alerts using GitHub Copilot Agent
   description: "This module covers how to identify and remediate GitHub Secret Scanning alerts using GitHub Copilot's Ask and Agent modes. The training focuses on detecting hard-coded secrets in source code and implementing secure configuration patterns to replace them." 
-  ms.date: 11/25/2025
+  ms.date: 11/21/2025
   author: chrishowd
   ms.author: cahowd
   ms.topic: module-standard-task-based # Please don't edit, used for our analytics

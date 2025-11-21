@@ -4,10 +4,10 @@ title: Analyze GitHub Security Alerts using GitHub Copilot's Ask mode
 metadata:
   title: Analyze GitHub Security Alerts using GitHub Copilot's Ask Mode
   description: "Analyze GitHub Security Alerts using GitHub Copilot's Ask mode."
-  ms.date: 11/25/2025
+  ms.date: 11/21/2025
   author: chrishowd
   ms.author: cahowd
   ms.topic: unit
-durationInMinutes: 6
+durationInMinutes: 8
 content: |
   [!include[](includes/6-analyze-github-security-alerts-github-copilot-ask.md)]
