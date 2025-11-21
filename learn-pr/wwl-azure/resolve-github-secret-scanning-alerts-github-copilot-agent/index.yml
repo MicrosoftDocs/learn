@@ -1,0 +1,46 @@
+### YamlMime:Module
+uid: learn.resolve-github-secret-scanning-alerts-github-copilot-agent
+metadata:
+  title: Resolve GitHub Secret Scanning alerts using GitHub Copilot Agent
+  description: "This module covers how to identify and remediate GitHub Secret Scanning alerts using GitHub Copilot's Ask and Agent modes. The training focuses on detecting hard-coded secrets in source code and implementing secure configuration patterns to replace them." 
+  ms.date: 11/21/2025
+  author: chrishowd
+  ms.author: cahowd
+  ms.topic: module-standard-task-based # Please don't edit, used for our analytics
+  ms.service: github-copilot
+title: Resolve GitHub Secret Scanning alerts using GitHub Copilot Agent
+summary: "This module covers how to identify and remediate GitHub Secret Scanning alerts using GitHub Copilot's Ask and Agent modes. The training focuses on detecting hard-coded secrets in source code and implementing secure configuration patterns to replace them."
+abstract: |
+  By the end of this module, you're able to:
+    - Explain the security risks of hard-coded secrets in source code.
+    - Configure and use GitHub Secret Scanning and push protection.
+    - Navigate and manage secret scanning alerts in GitHub repositories.
+    - Analyze security alerts using GitHub Copilot's Ask mode.
+    - Remediate hard-coded secrets using GitHub Copilot's Agent mode.
+prerequisites: |
+  - Experience using GitHub Copilot in Visual Studio Code.
+  - Experience developing C# applications.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+  - intermediate
+roles:
+  - developer
+products:
+  - github
+  - vs-code
+subjects:
+  - app-development
+  - productivity
+units:
+- learn.resolve-github-secret-scanning-alerts-github-copilot-agent.introduction
+- learn.resolve-github-secret-scanning-alerts-github-copilot-agent.examine-code-secrets
+- learn.resolve-github-secret-scanning-alerts-github-copilot-agent.examine-github-secret-scanning
+- learn.resolve-github-secret-scanning-alerts-github-copilot-agent.examine-github-push-protection
+- learn.resolve-github-secret-scanning-alerts-github-copilot-agent.manage-github-security-alerts
+- learn.resolve-github-secret-scanning-alerts-github-copilot-agent.analyze-github-security-alerts-github-copilot-ask
+- learn.resolve-github-secret-scanning-alerts-github-copilot-agent.resolve-github-security-alerts-github-copilot-agent
+- learn.resolve-github-secret-scanning-alerts-github-copilot-agent.exercise-resolve-github-security-alerts
+- learn.resolve-github-secret-scanning-alerts-github-copilot-agent.knowledge-check
+- learn.resolve-github-secret-scanning-alerts-github-copilot-agent.summary
+badge:
+  uid: learn.resolve-github-secret-scanning-alerts-github-copilot-agent.badge
