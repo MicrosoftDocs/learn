@@ -15,7 +15,7 @@ Here's how to create a new Azure VM with Azure CLI:
 1. Open Azure Cloud Shell through the Azure portal or by using the **Open Cloud Shell** button located in the top right corner of many Azure CLI code blocks.
 
 1. Use the `az vm create` command to create the VM.
-   - Specify the name of the your resource group. Replace **myResourceGroupName** in the following example with the name of an existing resource group, or the name of the resource group that you created for this exercise.
+   - Specify the name of your resource group. Replace **myResourceGroupName** in the following example with the name of an existing resource group, or the name of the resource group that you created for this exercise.
    - Assign a name to the VM following your organization's naming standards.
    - Choose a location close to you from the list of available Azure locations.
    - Use the Linux image: `Ubuntu2204`.
@@ -115,7 +115,7 @@ Here's how to create a new Azure VM with Azure CLI:
 
 ## Learn about more VM options
 
-When working with Azure resources at the command-line, you aren't using the Azure portal which gives often gives you a pick list of property options. For example, a list of available locations and VM sizes. The Azure CLI has several commands in many of its command groups that provide this information. Here are a few examples for VMs:
+When working with Azure resources at the command-line, you aren't using the Azure portal, which gives often gives you a pick list of property options. For example, a list of available locations and VM sizes. The Azure CLI has several commands in many of its command groups that provide this information. Here are a few examples for VMs:
 
 > [!TIP]
 > The Azure CLI `--output table` format doesn't return 100% of information available, but it often makes large command results easier to read. Use the `--query` parameter to specify the information in which you're most interested.
@@ -202,3 +202,4 @@ When working with Azure resources at the command-line, you aren't using the Azur
 While you executed these commands interactively, a better approach is to write an Azure CLI script. Scripts allow you to reuse the logic for creating or deleting a VM in the future.
 
 In the next unit, let's automate these tasks using an Azure CLI script.
+
