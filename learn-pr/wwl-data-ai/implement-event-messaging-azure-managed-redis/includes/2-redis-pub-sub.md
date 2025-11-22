@@ -176,4 +176,4 @@ async def websocket_endpoint(websocket: WebSocket, client_id: str):
 ## Additional resources
 
 - [Redis Pub/Sub Documentation](https://redis.io/docs/latest/develop/pubsub/) - Official Redis guide to publish/subscribe functionality
-- [Publish/Subscribe Pattern Overview](https://learn.microsoft.com/azure/architecture/patterns/publisher-subscriber) - Microsoft Learn article on the pub/sub pattern in distributed systems
+- [Publish/Subscribe Pattern Overview](/azure/architecture/patterns/publisher-subscriber) - Microsoft Learn article on the pub/sub pattern in distributed systems
