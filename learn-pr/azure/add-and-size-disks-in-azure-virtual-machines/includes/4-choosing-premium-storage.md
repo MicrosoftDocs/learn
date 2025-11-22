@@ -45,7 +45,8 @@ The following table provides a comparison of Ultra disk, Premium SSD, Standard S
 | **Scenario**  | IO-intensive workloads such as [SAP HANA](/azure/sap/workloads/hana-vm-operations-storage), top tier databases (for example, SQL, Oracle), and other transaction-heavy workloads. | Production and performance-sensitive workloads that consistently require low latency and high IOPS and throughput. | Production and performance sensitive workloads. | Web servers, lightly used enterprise applications and dev/test. | Backup data, noncritical, infrequent access. |
 | **Max disk size** | 65,536 GiB | 65,536 GiB |32,767 GiB | 32,767 GiB | 32,767 GiB |
 | **Max throughput** | 4,000 MB/s | 1,200 MB/s | 900 MB/s | 750 MB/s | 500 MB/s |
-| **Max IOPS** | 160,000 | 80,000 | 20,000 | 6,000 | 2,000, 3,000* |
+| **Max IOPS** | 400,000 | 80,000 | 20,000 | 6,000 | 2,000, 3,000* |
+
 | **Usable as OS Disk?** | No | No | Yes | Yes | Yes |
 
 The following sections provide more detail on disk performance.
