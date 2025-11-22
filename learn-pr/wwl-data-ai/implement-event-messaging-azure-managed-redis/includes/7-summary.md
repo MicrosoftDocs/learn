@@ -4,4 +4,4 @@ In this module, you learned about Redis pub/sub messaging for broadcasting event
 
 - [Redis Pub/Sub Documentation](https://redis.io/docs/latest/develop/pubsub/)
 - [Redis Streams Consumer Groups](https://redis.io/docs/latest/develop/data-types/streams/)
-- [Publish/Subscribe Pattern Overview](https://learn.microsoft.com/azure/architecture/patterns/publisher-subscriber)
+- [Publish/Subscribe Pattern Overview](/azure/architecture/patterns/publisher-subscriber)

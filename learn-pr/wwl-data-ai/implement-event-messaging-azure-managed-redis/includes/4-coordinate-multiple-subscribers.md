@@ -396,4 +396,4 @@ async def event_listener_service():
 
 - [Redis Pub/Sub Documentation](https://redis.io/docs/latest/develop/pubsub/) - Official Redis guide to publish/subscribe functionality
 - [Redis Streams Consumer Groups](https://redis.io/docs/latest/develop/data-types/streams/) - Official documentation on coordinated message processing with consumer groups
-- [Publish/Subscribe Pattern Overview](https://learn.microsoft.com/azure/architecture/patterns/publisher-subscriber) - Microsoft Learn article on the pub/sub pattern in distributed systems
+- [Publish/Subscribe Pattern Overview](/azure/architecture/patterns/publisher-subscriber) - Microsoft Learn article on the pub/sub pattern in distributed systems
