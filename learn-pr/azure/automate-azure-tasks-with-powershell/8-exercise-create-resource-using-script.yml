@@ -10,8 +10,8 @@ metadata:
   ms.topic: unit
   ms.custom:
     - devx-track-azurepowershell
-interactive: powershell
-azureSandbox: true
+#interactive: powershell
+#azureSandbox: true
 durationInMinutes: 10
 content: |
   [!include[](includes/8-exercise-create-resource-using-script.md)]

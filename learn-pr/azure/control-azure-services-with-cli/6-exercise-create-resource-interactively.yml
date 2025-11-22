@@ -13,7 +13,7 @@ metadata:
   ms.custom:
     - devx-track-azurecli
 durationInMinutes: 15
-interactive: bash
-azureSandbox: true
+#interactive: bash
+#azureSandbox: true
 content: |
   [!include[](includes/6-exercise-create-resource-interactively.md)]

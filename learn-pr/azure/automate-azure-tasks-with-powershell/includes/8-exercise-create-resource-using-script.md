@@ -9,6 +9,8 @@ terminals, each connected to a separate Linux VM. You must delete the VMs and re
 end of each day so they start fresh every morning. Creating the VMs manually after a long day is
 error-prone, so you need to write a PowerShell script to automate the VM creation process.
 
+[!INCLUDE[](../../../includes/azure-optional-exercise-subscription-note.md)]
+
 ## Write a script to create virtual machines
 
 Follow these steps to write a script in Azure Cloud Shell that automates the creation of virtual
@@ -126,7 +128,7 @@ ellipsis (`...`) context menu at the top-right corner of the editor, or the <kbd
 1. Execute the script using the following command:
 
    ```powershell
-   ./ConferenceDailyReset.ps1 -ResourceGroupName <rgn>[sandbox resource group name]</rgn>
+   ./ConferenceDailyReset.ps1 -ResourceGroupName myResourceGroupName
    ```
 
 1. Wait for completion. The script takes several minutes to complete.
@@ -135,7 +137,7 @@ ellipsis (`...`) context menu at the top-right corner of the editor, or the <kbd
    the resource group:
 
    ```azurepowershell
-   Get-AzVM -ResourceGroupName <rgn>[sandbox resource group name]</rgn>
+   Get-AzVM -ResourceGroupName myResourceGroupName
    ```
 
    You should see three VMs, each with a unique name.
