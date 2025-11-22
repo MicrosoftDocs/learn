@@ -10,7 +10,8 @@ There are five types of disks you can choose when creating a managed disk: Ultra
 
 ### Ultra Disk
 
-Azure Ultra Disks deliver high throughput, high input/output per second (IOPS), and consistent low-latency disk storage for Azure IaaS VMs. Ultra Disks include the ability to dynamically change the performance of the disk without the need to restart your VMs. Ultra disks are suited for data-intensive workloads such as SAP HANA, top tier databases, and transaction-heavy workloads. You can only use Ultra disks as data disks. We recommend using Premium SSDs as OS disks.
+Azure Ultra Disks deliver high throughput, high input/output per second (IOPS), and consistent low-latency disk storage for Azure IaaS VMs. Ultra Disks include the ability to dynamically change the performance of the disk without the need to restart your VMs. Ultra Disks are suited for data-intensive workloads such as SAP HANA, top tier databases, and transaction-heavy workloads. You can only use Ultra Disks as data disks. We recommend using Premium SSDs as OS disks.
+
 
 ### Premium SSD v2
 
