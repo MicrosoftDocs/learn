@@ -4,7 +4,7 @@ title: How Azure Virtual Machine Scale Sets work
 metadata:
   title: How Azure Virtual Machine Scale Sets work
   description: Learn how Azure Virtual Machine Scale Sets work.
-  ms.date: 08/02/2024
+  ms.date: 11/15/2025
   author: Orin-Thomas
   ms.author: orthomas
   ms.reviewer: mimckitt
@@ -12,4 +12,4 @@ metadata:
 durationInMinutes: 10
 content: |
   [!include[](includes/3-how-azure-virtual-machine-scale-sets-work.md)]
-
+
