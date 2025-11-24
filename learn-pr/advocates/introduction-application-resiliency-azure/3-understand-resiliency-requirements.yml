@@ -4,11 +4,11 @@ title: Understand resiliency requirements
 metadata:
   title: Understand resiliency requirements
   description: Understand resiliency requirements in Azure
-  ms.date: 08/14/2024
+  ms.date: 11/15/2025
   author: Orin-Thomas
   ms.author: orthomas
   ms.topic: unit
 durationInMinutes: 17
 content: |
   [!include[](includes/3-understand-resiliency-requirements.md)]
-
+
