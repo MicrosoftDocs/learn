@@ -4,11 +4,11 @@ title: How Azure Site Recovery works
 metadata:
   title: How Azure Site Recovery works
   description: In this unit, you learn more about how Azure Site Recovery works.
-  ms.date: 07/08/2024
+  ms.date: 11/15/2026
   author: orin-thomas
   ms.author: orthomas
   ms.topic: unit
 durationInMinutes: 14
 content: |
   [!include[](includes/3-how-azure-site-recovery-works.md)]
-
+
