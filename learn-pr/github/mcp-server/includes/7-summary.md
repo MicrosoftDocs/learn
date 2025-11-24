@@ -26,6 +26,6 @@ Here are some links to more information on the topics we discussed in this modul
 
 ## Get started with Azure
 
-Choose the Azure account that's right for you. Pay as you go or try Azure free for up to 30 days. [Sign up.](https://azure.microsoft.com/pricing/purchase-options/azure-account?icid=msft_learn)
+Choose the Azure account that's right for you. Pay as you go or try Azure free for up to 30 days. [Sign up.](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn)
 
  
