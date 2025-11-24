@@ -6,8 +6,9 @@ In this module, you learned how to:
 
 ### Learn more
 
-- [Model catalog and collections in Azure AI Foundry portal](/azure/ai-foundry/how-to/model-catalog-overview)
-- [Deploy AI models in Azure AI Foundry portal](/azure/ai-foundry/concepts/deployments-overview)
+- [Model catalog and collections in Microsoft Foundry portal](/azure/ai-foundry/how-to/model-catalog-overview)
+- [Deploy AI models in Microsoft Foundry portal](/azure/ai-foundry/concepts/deployments-overview)
 - [Prompt engineering techniques](/azure/ai-services/openai/concepts/prompt-engineering)
-- [Azure AI Foundry Discord](https://aka.ms/azureaifoundry/discord)
-- [Azure AI Foundry Developer Forum](https://aka.ms/azureaifoundry/forum)
+- [Microsoft Foundry Discord](https://aka.ms/azureaifoundry/discord)
+- [Microsoft Foundry Developer Forum](https://aka.ms/azureaifoundry/forum)
+

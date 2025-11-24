@@ -1,6 +1,6 @@
-Visibility is a key part of securing AI workloads. Even with strict access controls, secret management, and network isolation, you still need a way to verify how your Azure AI Foundry environment behaves over time. Diagnostic logging provides that visibility by recording configuration changes, access events, and resource activity across your environment.
+Visibility is a key part of securing AI workloads. Even with strict access controls, secret management, and network isolation, you still need a way to verify how your Microsoft Foundry environment behaves over time. Diagnostic logging provides that visibility by recording configuration changes, access events, and resource activity across your environment.
 
-**Azure AI Foundry** integrates with **Azure Monitor** and **Azure Log Analytics** to collect and route logs from the services that support your AI workloads. By enabling diagnostic settings, you can send operational and security data to centralized destinations where it can be analyzed, visualized, or correlated with **Defender for Cloud** alerts and recommendations.
+**Microsoft Foundry** integrates with **Azure Monitor** and **Azure Log Analytics** to collect and route logs from the services that support your AI workloads. By enabling diagnostic settings, you can send operational and security data to centralized destinations where it can be analyzed, visualized, or correlated with **Defender for Cloud** alerts and recommendations.
 
 ## Improve visibility with diagnostic logging
 
@@ -15,13 +15,13 @@ Enabling diagnostic logging provides several benefits:
 
 Logs form the evidence base for both proactive monitoring and post-incident investigation.
 
-## Enable diagnostic settings for Azure AI Foundry
+## Enable diagnostic settings for Microsoft Foundry
 
-You can configure diagnostic settings at the **resource** level in Azure AI Foundry. Resource-level diagnostics capture **management operations** such as configuration changes, access actions, and service health events.
+You can configure diagnostic settings at the **resource** level in Microsoft Foundry. Resource-level diagnostics capture **management operations** such as configuration changes, access actions, and service health events.
 
 Some operational logs, like inference requests, come from underlying **Azure Cognitive Services** resources connected to your resource. To get full visibility, enable diagnostics both at the resource level and on those connected services.
 
-1. In the **Azure portal**, open your **Azure AI Foundry** resource.
+1. In the **Azure portal**, open your **Microsoft Foundry** resource.
 1. Select **Diagnostic settings** under **Monitoring**.
 1. Choose **+ Add diagnostic setting**.
 1. Give the setting a clear name, like _FoundryActivityLogs_.
@@ -35,7 +35,7 @@ Some operational logs, like inference requests, come from underlying **Azure Cog
    - **Storage account** for long-term retention
    - **Event Hub** for streaming to external SIEM tools
 
-   :::image type="content" source="../media/foundry-diagnostic-logging-diagram.png" alt-text="Diagram showing Azure AI Foundry resource sending diagnostic logs to Storage, Log Analytics, and Event Hubs for centralized analysis." border="false" lightbox="../media/foundry-diagnostic-logging-diagram.png":::
+   :::image type="content" source="../media/foundry-diagnostic-logging-diagram.png" alt-text="Diagram showing Microsoft Foundry resource sending diagnostic logs to Storage, Log Analytics, and Event Hubs for centralized analysis." border="false" lightbox="../media/foundry-diagnostic-logging-diagram.png":::
 
 Make sure the destination resource is in a region that meets your organization's data residency and retention policies.
 
@@ -43,7 +43,7 @@ For configuration details, see [Create diagnostic settings in the Azure portal](
 
 ## Enable diagnostics for connected resources
 
-Azure AI Foundry depends on several connected services, including **Key Vault**, **Storage**, and **Private Link**. Each produces logs that should be collected separately and routed to the same Log Analytics workspace or SIEM for correlation.
+Microsoft Foundry depends on several connected services, including **Key Vault**, **Storage**, and **Private Link**. Each produces logs that should be collected separately and routed to the same Log Analytics workspace or SIEM for correlation.
 
 Enable diagnostic settings on connected resources to build a complete view of your AI environment:
 
@@ -67,7 +67,7 @@ AzureActivity
 | summarize Count = count() by ActivityStatusValue, Caller, ResourceGroup
 ```
 
-You can also review insights in the **Data and AI security dashboard** in Microsoft Defender for Cloud, which aggregates security recommendations across Azure AI Foundry and related services. This dashboard is part of Defender for Cloud's overall recommendation system rather than a standalone Foundry feature.
+You can also review insights in the **Data and AI security dashboard** in Microsoft Defender for Cloud, which aggregates security recommendations across Microsoft Foundry and related services. This dashboard is part of Defender for Cloud's overall recommendation system rather than a standalone Foundry feature.
 
 Integrating diagnostics with these tools helps keep your AI workloads observable, auditable, and ready for investigation.
 
@@ -83,4 +83,4 @@ Diagnostics are only valuable if the data remains complete, retained, and secure
 
 Consistent retention, access control, and cost management ensure visibility stays both effective and sustainable.
 
-When diagnostics and log routing are in place, your Azure AI Foundry environment becomes fully observable. You can trace actions across users, services, and networks, and respond quickly when issues arise. Combined with RBAC, Key Vault, and network isolation, diagnostic visibility completes your defense-in-depth approach to securing AI workloads.
+When diagnostics and log routing are in place, your Microsoft Foundry environment becomes fully observable. You can trace actions across users, services, and networks, and respond quickly when issues arise. Combined with RBAC, Key Vault, and network isolation, diagnostic visibility completes your defense-in-depth approach to securing AI workloads.

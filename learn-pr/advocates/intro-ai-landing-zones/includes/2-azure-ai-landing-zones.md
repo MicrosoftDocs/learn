@@ -10,8 +10,8 @@ For this architecture, the workload team and platform team need to collaborate o
 
 In the AI chatbot landing zone implementation, the workload team is responsible for the following resources:
 
-- **Azure AI Foundry.** The platform used to build, test, and deploy AI solutions. AI Foundry is used in this architecture to build, test, and deploy the prompt flow orchestration logic for the chat application. In this architecture, Azure AI Foundry provides the managed virtual network for network security.
-- **Managed online endpoints.** These are used as a platform as a service (PaaS) endpoint for the chat UI application, which invokes the prompt flows hosted by Azure AI Foundry.
+- **Microsoft Foundry.** The platform used to build, test, and deploy AI solutions. AI Foundry is used in this architecture to build, test, and deploy the prompt flow orchestration logic for the chat application. In this architecture, Microsoft Foundry provides the managed virtual network for network security.
+- **Managed online endpoints.** These are used as a platform as a service (PaaS) endpoint for the chat UI application, which invokes the prompt flows hosted by Microsoft Foundry.
 - **Azure App Service**. Used to host the web application for the chat UI. In this architecture, App Service has three instances, each in a different Azure zone.
 - **AI Search**. Service that's used in the flows behind chat applications. You can use AI Search to retrieve indexed data that's relevant for user queries.
 - **Azure Storage.** Used to persist the prompt flow source files for prompt flow development.
@@ -33,7 +33,7 @@ In this architecture the workload team is also responsible for maintaining the f
 In this architecture the platform team owns and maintains the following centralized resources which should be pre-provisioned before the deployment of the resources managed by the workload team:
 
 - **Azure Firewall.** Deployed in the hub network is used to route, inspect, and restrict egress traffic. Workload egress traffic goes to the internet, cross-premises destinations, or to other application landing zones.
-- **Azure Bastion.** Deployed in the hub network and provides secure operational access to workload components and also allows secure access to Azure AI Foundry components.
+- **Azure Bastion.** Deployed in the hub network and provides secure operational access to workload components and also allows secure access to Microsoft Foundry components.
 - **Spoke virtual network.** This network hosts the AI application.
 - **User-defined routes (UDRs).** Used to force tunnel network traffic to the hub network.
 - **Azure Policy-based governance constraints and DeployIfNotExists (DINE) policies.** You can apply these policies at the platform team-owned management group level or apply them to the workload's subscription directly.

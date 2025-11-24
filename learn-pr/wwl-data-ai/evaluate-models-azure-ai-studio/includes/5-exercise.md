@@ -1,4 +1,4 @@
-If you have an Azure subscription, you can use Azure AI Foundry portal to evaluate the performance of a generative AI app.
+If you have an Azure subscription, you can use Microsoft Foundry portal to evaluate the performance of a generative AI app.
 
 > [!NOTE]
 > If you don't have an Azure subscription, and you want to explore Azure AI Studio, you can [sign up for an account](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn), which includes credits for the first 30 days.
@@ -6,3 +6,4 @@ If you have an Azure subscription, you can use Azure AI Foundry portal to evalua
 Launch the exercise and follow the instructions.
 
 [![Button to launch exercise.](../media/launch-exercise.png)](https://go.microsoft.com/fwlink/?linkid=2277720&azure-portal=true)
+

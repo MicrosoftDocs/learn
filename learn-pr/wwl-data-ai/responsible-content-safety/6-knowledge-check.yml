@@ -13,7 +13,7 @@ durationInMinutes: 5
 content: |
 quiz:
   questions:
-  - content: "Which feature of Azure AI Foundry Content Safety helps protect large language models from document injection attacks?"
+  - content: "Which feature of Microsoft Foundry Content Safety helps protect large language models from document injection attacks?"
     choices:
     - content: "Prompt Shields"
       isCorrect: true
@@ -68,3 +68,4 @@ quiz:
     - content: "Allowing e-commerce companies to create custom categories for their products and services."
       isCorrect: false
       explanation: "Incorrect. Foundry Content Safety doesn't provide e-commerce functionality."
+

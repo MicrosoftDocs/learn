@@ -34,11 +34,11 @@ data orchestration.
 
 ### PaaS AI key offerings
 
-- **Azure AI Foundry**. Build, test, and deploy enterprise-grade AI agents and applications with integrated tools, model access, and
+- **Microsoft Foundry**. Build, test, and deploy enterprise-grade AI agents and applications with integrated tools, model access, and
   production-ready infrastructure
-  - **Azure AI Foundry Agent Service**. Create, deploy, and manage agents that use large language models and enterprise data to delivercontext-aware, task-oriented assistance.
-  - **Azure AI Foundry Models**. Consume prebuilt models from model providers such as OpenAI, Mistral, and Cohere or fine-tune them
-    within Azure AI Foundry.
+  - **Microsoft Foundry Agent Service**. Create, deploy, and manage agents that use large language models and enterprise data to delivercontext-aware, task-oriented assistance.
+  - **Microsoft Foundry Models**. Consume prebuilt models from model providers such as OpenAI, Mistral, and Cohere or fine-tune them
+    within Microsoft Foundry.
   - **Azure Machine Learning**. Train and deploy ML models with custom data.
 - **Microsoft Fabric**. ML and data workflows in integrated environments.
 - **Microsoft Copilot Studio**. As well as being a SaaS solution, Copilot Studio is also a PaaS solution that allows you to build and

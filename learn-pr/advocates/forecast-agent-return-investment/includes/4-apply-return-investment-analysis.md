@@ -64,7 +64,11 @@ In the optimistic case, we assumed higher adoption and lower development cost, l
 
 This helps illustrate how risk and uncertainty can affect the outcome, and why it's important to test different assumptions before making a final decision.
 
+[![An image showing spreadsheet values for use case two.](../media/use-case-analysis.png)](../media/use-case-analysis.png#lightbox)
+
+[![An image showing result of sensitivity analysis output.](../media/sensitivity-analysis.png)](../media/sensitivity-analysis.png#lightbox)
+
 ### Step 4: Interpret the Results
 
 - Use case 2 shows non-negative financial outcome (NPV) even in a conservative scenario. 
-- To achieve a possitive financial outcome given a development cost of 90,000 dollars, use case 2 will need to generate at least 200,000 dollars in benefits over 5 years.
+- To achieve a positive financial outcome given a development cost of 90,000 dollars, use case 2 will need to generate at least 200,000 dollars in benefits over 5 years.

@@ -1,4 +1,4 @@
-By leveraging Cost Management budgets, Azure AI Foundry quotas, and Azure Monitor alerts, you can build a robust cost governance strategy for AI workloads. These tools empower you to forecast expenses, control
+By leveraging Cost Management budgets, Microsoft Foundry quotas, and Azure Monitor alerts, you can build a robust cost governance strategy for AI workloads. These tools empower you to forecast expenses, control
 usage, and respond to cost anomalies, ultimately improving ROI and operational efficiency.
 
 ## Create and manage budgets in Microsoft Cost Management
@@ -20,9 +20,9 @@ intervention. This disciplined approach to cost tracking not only prevents waste
 - Enables financial accountability across teams.
 - Supports forecasting and planning.
 
-## Create and manage quotas in Azure AI Foundry
+## Create and manage quotas in Microsoft Foundry
 
-Creating and managing quotas in Azure AI Foundry is essential for improving the ROI of AI agents by ensuring controlled and efficient use of compute resources. Azure uses quotas and limits to prevent budget overruns due to fraud and to honor Azure capacity constraints. Quota management also supports scalability by allowing teams to request increases only when justified by performance or business needs. This disciplined approach helps align technical operations with financial goals, ensuring that AI agents deliver value without exceeding budget constraints.
+Creating and managing quotas in Microsoft Foundry is essential for improving the ROI of AI agents by ensuring controlled and efficient use of compute resources. Azure uses quotas and limits to prevent budget overruns due to fraud and to honor Azure capacity constraints. Quota management also supports scalability by allowing teams to request increases only when justified by performance or business needs. This disciplined approach helps align technical operations with financial goals, ensuring that AI agents deliver value without exceeding budget constraints.
 
 ### Steps
 

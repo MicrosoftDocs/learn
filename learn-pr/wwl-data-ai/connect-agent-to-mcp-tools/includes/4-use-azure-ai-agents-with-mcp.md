@@ -1,12 +1,12 @@
-You can enhance your Azure AI Foundry agent by connecting it to Model Context Protocol (MCP) servers. MCP servers provide tools and contextual data that your agent can use to perform tasks, extending its capabilities beyond built-in functions. Azure AI Agent Service includes support for remote MCP servers, allowing your agent to quickly connect to your server and access tools. 
+You can enhance your Microsoft Foundry agent by connecting it to Model Context Protocol (MCP) servers. MCP servers provide tools and contextual data that your agent can use to perform tasks, extending its capabilities beyond built-in functions. Azure AI Agent Service includes support for remote MCP servers, allowing your agent to quickly connect to your server and access tools. 
 
-When you use the Azure AI Foundry Agent Service to connect to your MCP server, you don't need to manually create an MCP client session or add any function tools to your agent. Instead, you create an MCP tool object that connects to your MCP server. Then you add information about the MCP server to the agent thread when invoking a prompt. This also allows you to connect and use different tools from multiple servers depending on your needs.
+When you use the Microsoft Foundry Agent Service to connect to your MCP server, you don't need to manually create an MCP client session or add any function tools to your agent. Instead, you create an MCP tool object that connects to your MCP server. Then you add information about the MCP server to the agent thread when invoking a prompt. This also allows you to connect and use different tools from multiple servers depending on your needs.
 
 ## Integrating remote MCP servers
 
 To connect to an MCP server, you need:
 - A remote MCP server endpoint (for example, https://api.githubcopilot.com/mcp/).
-- An Azure AI Foundry agent configured to use the MCP tool.
+- A Microsoft Foundry agent configured to use the MCP tool.
 
 You can connect to multiple MCP servers by adding them as separate tools, each with:
 - `server_label`: A unique identifier for the MCP server (e.g., GitHub).
@@ -38,3 +38,4 @@ If the model tries to invoke a tool in your MCP server with approval required, y
     - Submit your approval to the agent with call_id by setting approve to true.
 
 MCP integration is a key step toward creating richer, more context-aware AI agents. As the MCP ecosystem grows, you’ll have even more opportunities to bring specialized tools into your workflows and deliver smarter, more dynamic solutions.
+

@@ -1,8 +1,9 @@
-If you have an Azure subscription, you can explore monitoring with Azure AI Foundry for yourself.
+If you have an Azure subscription, you can explore monitoring with Microsoft Foundry for yourself.
 
 > [!NOTE]
-> If you don't have an Azure subscription, and you want to explore Azure AI Foundry, you can [sign up for an account](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn), which includes credits for the first 30 days.
+> If you don't have an Azure subscription, and you want to explore Microsoft Foundry, you can [sign up for an account](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn), which includes credits for the first 30 days.
 
 Launch the exercise and follow the instructions.
 
 [![Button to launch exercise.](../media/launch-exercise.png)](https://go.microsoft.com/fwlink/?linkid=2319718&azure-portal=true)
+

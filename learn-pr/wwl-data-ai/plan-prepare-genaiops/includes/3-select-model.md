@@ -16,11 +16,11 @@ To start answering this question, you need to discover, filter, and deploy a mod
 
 - [**Hugging Face**](https://huggingface.co/models): Vast catalog of open-source models across various domains.
 - [**GitHub**](https://github.com/marketplace/models-github): Access to diverse models via GitHub Marketplace and GitHub Copilot.
-- [**Azure AI Foundry**](https://ai.azure.com/explore/models): Comprehensive catalog with robust tools for deployment.
+- [**Microsoft Foundry**](https://ai.azure.com/explore/models): Comprehensive catalog with robust tools for deployment.
 
-Though you can use each of these catalogs to explore models, the model catalog in Azure AI Foundry makes it easiest to explore and deploy a model to build you prototype, while offering the best selection of models.
+Though you can use each of these catalogs to explore models, the model catalog in Microsoft Foundry makes it easiest to explore and deploy a model to build you prototype, while offering the best selection of models.
 
-Let's explore the models available through Azure AI Foundry model catalog.
+Let's explore the models available through Microsoft Foundry model catalog.
 
 ### Choose between large and small language models
 
@@ -58,9 +58,9 @@ You also need to decide whether to use open-source models or proprietary models,
 
 **Proprietary models** are best for cutting-edge performance and enterprise use. Azure offers models like OpenAI’s GPT-4, Mistral Large, and Cohere Command R+, which deliver industry-leading AI capabilities. These models are ideal for businesses needing enterprise-level security, support, and high accuracy.
 
-**Open-source models** are best for flexibility and cost-efficiency. There are hundreds of open-source models available in the Azure AI Foundry model catalog from Hugging Face, and models from Meta, Databricks, Snowflake, and Nvidia. Open models give developers more control, allowing fine-tuning, customization, and local deployment.
+**Open-source models** are best for flexibility and cost-efficiency. There are hundreds of open-source models available in the Microsoft Foundry model catalog from Hugging Face, and models from Meta, Databricks, Snowflake, and Nvidia. Open models give developers more control, allowing fine-tuning, customization, and local deployment.
 
-Whatever model you choose, you can use the Azure AI Foundry model catalog. Using models through the model catalog meets the key enterprise requirements for usage:
+Whatever model you choose, you can use the Microsoft Foundry model catalog. Using models through the model catalog meets the key enterprise requirements for usage:
 
 - **Data and privacy**: you get to decide what happens with your data.
 - **Security and compliance**: built-in security.
@@ -91,7 +91,7 @@ A fine-tuned model is trained further on a smaller, task-specific dataset to imp
 
 You can evaluate your model performance at different phases, using various evaluation approaches.
 
-When you're exploring models through the Azure AI Foundry model catalog, you can use **model benchmarks** to compare publicly available metrics like coherence and accuracy across models and datasets. These benchmarks can help you in the initial exploration phase, but give little information on how the model would perform in your specific use case.
+When you're exploring models through the Microsoft Foundry model catalog, you can use **model benchmarks** to compare publicly available metrics like coherence and accuracy across models and datasets. These benchmarks can help you in the initial exploration phase, but give little information on how the model would perform in your specific use case.
 
 |Benchmark|Description|
 |---|---|
@@ -108,6 +108,7 @@ When you evaluate a model’s performance, it's common to start with manual eval
 
 You selected a model for your use case and have successfully built a prototype. Now, you need to understand how to scale for real-world workloads.
 
-When you work with Azure AI Foundry, the portal is a great tool to explore models and build your prompts and prototype. When preparing for production, you need to transition to code-first thinking and consider the end-to-end development lifecycle.
+When you work with Microsoft Foundry, the portal is a great tool to explore models and build your prompts and prototype. When preparing for production, you need to transition to code-first thinking and consider the end-to-end development lifecycle.
 
 In the next sections, you learn about the complete end-to-end lifecycle and which tools and frameworks you can use to scale your application.
+

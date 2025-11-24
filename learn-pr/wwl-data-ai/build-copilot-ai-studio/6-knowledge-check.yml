@@ -42,10 +42,11 @@ quiz:
     - content: "Add text files containing the grounding data to the app folder."
       isCorrect: false
       explanation: "Incorrect. You shouldn't include grounding data as text files in the app folder."
-    - content: "You don't need to do anything. Azure AI Foundry automatically grounds all prompts using Bing Search."
+    - content: "You don't need to do anything. Microsoft Foundry automatically grounds all prompts using Bing Search."
       isCorrect: false
-      explanation: "Incorrect. Azure AI Foundry doesn't automatically ground all prompts using Bing Search."
+      explanation: "Incorrect. Microsoft Foundry doesn't automatically ground all prompts using Bing Search."
     - content: "Add index connection details to the OpenAI ChatClient configuration."
       isCorrect: true
       explanation: "Correct. Adding index connection information to the client enables grounding of prompts."
+
 

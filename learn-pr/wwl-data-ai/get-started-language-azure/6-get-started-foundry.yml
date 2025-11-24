@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.get-started-language-azure.get-started-foundry
-title: Get started in Azure AI Foundry
+title: Get started in Microsoft Foundry
 metadata:
-  title: Get started in Azure AI Foundry
-  description: "Get started in Azure AI Foundry"
+  title: Get started in Microsoft Foundry
+  description: "Get started in Microsoft Foundry"
   ms.date: 05/22/2025
   author: wwlpublish
   ms.author: sheryang
@@ -13,3 +13,4 @@ metadata:
 durationInMinutes: 3
 content: |
   [!include[](includes/6-get-started-foundry.md)]
+

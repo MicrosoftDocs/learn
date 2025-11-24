@@ -13,7 +13,7 @@ The following fundamental concepts describe how Fabric data agents work.
 
 **Secure and contextual responses** mean you don’t have to worry about unauthorized access or irrelevant answers. The agent enforces read-only access and respects user permissions, so users only see data they’re allowed to view. This reduces the risk of sharing sensitive information and keeps responses focused on the right context.
 
-**Integration with external systems** extends the agent’s use beyond Fabric. If you need to collaborate in Microsoft Teams or automate workflows with Copilot Studio or Azure AI Foundry, the agent can connect with these tools. This can help with sharing insights and automating tasks across your organization.
+**Integration with external systems** extends the agent’s use beyond Fabric. If you need to collaborate in Microsoft Teams or automate workflows with Copilot Studio or Microsoft Foundry, the agent can connect with these tools. This can help with sharing insights and automating tasks across your organization.
 
 These concepts address common challenges like technical barriers, data silos, and inconsistent terminology and support data-informed decisions.
 

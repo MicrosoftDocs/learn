@@ -34,12 +34,12 @@ quiz:
     - content: "Ripple-aware code editing"
       isCorrect: false
       explanation: "Ripple-aware editing helps maintain consistency across modular codebases, but it doesn't support autonomous task execution or human-in-the-loop collaboration."
-  - content: "Your organization needs to quickly deploy AI agents for customer support and IT helpdesk tasks. The team has limited AI development resources and prefers a low-code approach with built-in security and governance. Which Azure AI Foundry feature best meets these needs?"
+  - content: "Your organization needs to quickly deploy AI agents for customer support and IT helpdesk tasks. The team has limited AI development resources and prefers a low-code approach with built-in security and governance. Which Microsoft Foundry feature best meets these needs?"
     choices:
     - content: "Prebuilt AI agents"
       isCorrect: true
       explanation: "Prebuilt AI agents are ideal for straightforward use cases like customer support and IT helpdesk. They offer low-code customization, rapid deployment, and built-in security and governance features."
-    - content: "Azure AI Foundry SDK client libraries"
+    - content: "Microsoft Foundry SDK client libraries"
       isCorrect: false
       explanation: "The SDK client libraries are designed for programmatic development and integration, which may require more technical expertise than the team possesses."
     - content: "Model catalog access"

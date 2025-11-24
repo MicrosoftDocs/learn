@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.ai-foundry-sdk.azure-ai-foundry-sdk
-title: What is the Azure AI Foundry SDK?
+title: What is the Microsoft Foundry SDK?
 metadata:
-  title: What is the Azure AI Foundry SDK?
-  description: Get started with the Azure AI Foundry SDK.
+  title: What is the Microsoft Foundry SDK?
+  description: Get started with the Microsoft Foundry SDK.
   author: wwlpublish
   ms.author: gmalc
   ms.date: 05/23/2025
@@ -13,4 +13,5 @@ metadata:
 durationInMinutes: 5
 content: |
   [!include[](includes/02-azure-ai-foundry-sdk.md)]
+
 

@@ -1,9 +1,9 @@
 As organizations adopt generative AI, models increasingly interact with sensitive data, internal systems, and external users. Without built-in safeguards, these models can produce unsafe, ungrounded, or policy-violating responses that create reputational and security risks.
 
-**Azure AI Foundry guardrails** help prevent these issues by applying safety and governance controls to model interactions.
+**Microsoft Foundry guardrails** help prevent these issues by applying safety and governance controls to model interactions.
 Guardrails evaluate both user inputs and model outputs to identify risky content before it reaches production systems.
 
-Guardrails in Azure AI Foundry are powered by **Azure AI Content Safety**, which uses advanced moderation models to detect and classify harmful or sensitive content, providing consistent, real-time protection across prompts and responses without separate setup.
+Guardrails in Microsoft Foundry are powered by **Microsoft Content Safety**, which uses advanced moderation models to detect and classify harmful or sensitive content, providing consistent, real-time protection across prompts and responses without separate setup.
 
 When a user submits a prompt that includes unsafe instructions or sensitive data, the guardrails review it in real time. If a policy violation is detected, Foundry can flag or block the request, log the event, and surface it in the portal for analysis.
 
@@ -22,4 +22,4 @@ Together, these capabilities create a controlled operating environment for AI sy
 
 Guardrails also provide a foundation for control verification. Because they operate close to the model layer, they enable real-time evaluation of prompts and responses, allowing teams to test effectiveness, identify policy gaps, and adjust configurations before deployment.
 
-Azure AI Foundry guardrails strengthen the security of AI interactions by keeping data and model behavior within defined safety limits. Understanding what guardrails do and how they integrate into your broader protection strategy is the first step toward building a secure, compliant, and trustworthy AI environment.
+Microsoft Foundry guardrails strengthen the security of AI interactions by keeping data and model behavior within defined safety limits. Understanding what guardrails do and how they integrate into your broader protection strategy is the first step toward building a secure, compliant, and trustworthy AI environment.

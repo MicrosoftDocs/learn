@@ -15,7 +15,7 @@ abstract: |
   In this module, you learn how to:
     - Design and configure Fabric data agents that enable secure conversational access to enterprise data.
     - Curate and optimize data sources, instructions, and example queries for accurate and relevant responses.
-    - Publish, operationalize, and integrate Fabric data agents with downstream experiences like Azure AI Foundry, Power BI, and custom apps.
+    - Publish, operationalize, and integrate Fabric data agents with downstream experiences like Microsoft Foundry, Power BI, and custom apps.
     - Apply governance, permission, and prompting best practices that improve reliability and safeguard data.
 prerequisites: |
   You should be familiar with data analytics and engineering concepts and terminology.

@@ -1,4 +1,4 @@
-Protecting shared AI environments in Azure AI Foundry depends on consistent control across identity, secrets, networks, and diagnostics. When these layers work together, every action can be traced, permissions stay aligned with responsibility, and sensitive data remains protected.
+Protecting shared AI environments in Microsoft Foundry depends on consistent control across identity, secrets, networks, and diagnostics. When these layers work together, every action can be traced, permissions stay aligned with responsibility, and sensitive data remains protected.
 
 In this module, you learned to:
 
@@ -11,8 +11,8 @@ These practices create a secure and transparent foundation for developing and op
 
 ## Resources
 
-- [Role-based access control for Azure AI Foundry](/azure/ai-foundry/concepts/rbac-azure-ai-foundry?azure-portal=true)
-- [Set up an Azure Key Vault connection in Azure AI Foundry (Preview)](/azure/ai-foundry/how-to/set-up-key-vault-connection?azure-portal=true)
-- [How to set up a managed network for Azure AI Foundry hubs](/azure/ai-foundry/how-to/configure-managed-network?azure-portal=true)
-- [How to configure a private link for Azure AI Foundry (Foundry projects)](/azure/ai-foundry/how-to/configure-private-link?azure-portal=true)
+- [Role-based access control for Microsoft Foundry](/azure/ai-foundry/concepts/rbac-azure-ai-foundry?azure-portal=true)
+- [Set up an Azure Key Vault connection in Microsoft Foundry (Preview)](/azure/ai-foundry/how-to/set-up-key-vault-connection?azure-portal=true)
+- [How to set up a managed network for Microsoft Foundry hubs](/azure/ai-foundry/how-to/configure-managed-network?azure-portal=true)
+- [How to configure a private link for Microsoft Foundry (Foundry projects)](/azure/ai-foundry/how-to/configure-private-link?azure-portal=true)
 - [Enable diagnostic logging for Azure AI services](/azure/ai-services/diagnostic-logging?azure-portal=true)

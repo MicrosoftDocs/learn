@@ -5,7 +5,7 @@ You first learned the similarities and differences of SQL Server 2025 from previ
 
 In this module, you also learned how SQL Server 2025 solves challenges for data professionals in the following areas:
 
-- **AI integration**: You learned about built-in vector search capabilities, native AI model integration through T-SQL, and how to use Azure AI Foundry and OpenAI services for intelligent data processing.
+- **AI integration**: You learned about built-in vector search capabilities, native AI model integration through T-SQL, and how to use Microsoft Foundry and OpenAI services for intelligent data processing.
 
 - **Performance and intelligence**: You learned about AI-driven intelligent query processing, enhanced Query Store capabilities, and advanced parameter sensitive plan optimization that improves query performance with minimal configuration.
 
@@ -38,3 +38,4 @@ Consider these next steps:
 - Set up Microsoft Fabric mirroring for your databases
 - Experiment with the new developer tools and Python driver
 - Join the SQL Server community on GitHub and Microsoft Learn
+

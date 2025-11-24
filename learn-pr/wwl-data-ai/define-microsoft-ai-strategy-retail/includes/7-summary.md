@@ -1,6 +1,6 @@
 Retail is a highly competitive industry. Keeping up with market conditions and changing customer preferences is a challenge for most organizations. AI can help retail businesses gain a competitive edge by providing increases in productivity, analytical insights, automation, personalization, and optimization. AI can also help retailers create more engaging and immersive shopping experiences. In this module, we discussed real use cases for you to discover what AI can do for retail.
 
-To implement these scenarios, Microsoft offers AI products and services for all kinds of retail professionals. For specific retail use, you have available Microsoft Cloud for Retail. However, business users can use AI as embedded in Microsoft 365, Dynamics 365, and Microsoft Power BI. For more technically skilled workers, there are AI features in low-code products such as Azure AI Services and Microsoft Power Platform. For more customized AI solutions, you can use Azure Machine Learning. Consider that Microsoft incorporates the latest generative AI in the Copilot versions of their products, such as Microsoft 365 Copilot and Dynamics 365 Copilot. You can work directly with those generative AI models via Azure OpenAI Service.
+To implement these scenarios, Microsoft offers AI products and services for all kinds of retail professionals. For specific retail use, you have available Microsoft Cloud for Retail. However, business users can use AI as embedded in Microsoft 365, Dynamics 365, and Microsoft Power BI. For more technically skilled workers, there are AI features in low-code products such as Microsoft Foundry and Microsoft Power Platform. For more customized AI solutions, you can use Azure Machine Learning. Consider that Microsoft incorporates the latest generative AI in the Copilot versions of their products, such as Microsoft 365 Copilot and Dynamics 365 Copilot. You can work directly with those generative AI models via Azure OpenAI Service.
 
 Now that you reviewed this module, you should be able to:
 
@@ -19,7 +19,7 @@ Now that you reviewed this module, you should be able to:
 * To learn more about our low-code tools in Power Platform, visit our [Power Platform website](https://powerplatform.microsoft.com/).
 * To learn more about the models delivered by Azure OpenAI Service, read our [technical documentation on Azure OpenAI Service](/azure/cognitive-services/openai/concepts/models).
 * To learn more about privacy and security in Azure OpenAI Service, read our [legal documentation on Azure OpenAI Service](/legal/cognitive-services/openai/data-privacy).
-* To learn more about all the prebuilt AI models available at Azure AI Services, read our [technical documentation on AI Services](/azure/cognitive-services/).
+* To learn more about all the prebuilt AI models available at Foundry Tools, read our [technical documentation on Foundry Tools](/azure/cognitive-services/).
 * To learn more about the services included in Azure Machine Learning, visit our [Azure Machine Learning website](https://azure.microsoft.com/products/machine-learning/).
 
 ## References

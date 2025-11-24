@@ -1,4 +1,4 @@
-The [Azure AI Language service](/azure/ai-services/language-service/overview) provides powerful tools and generative AI language models for working with text data. The integrations in the `azure_cognitive` schema of the `azure_ai` extension offer access to this rich set of natural language understanding and processing features accessible directly from the database. The functionalities include sentiment analysis, language detection and translation, key phrase extraction, entity recognition, and text summarization. Here are the key aspects:
+The [Azure Language service](/azure/ai-services/language-service/overview) provides powerful tools and generative AI language models for working with text data. The integrations in the `azure_cognitive` schema of the `azure_ai` extension offer access to this rich set of natural language understanding and processing features accessible directly from the database. The functionalities include sentiment analysis, language detection and translation, key phrase extraction, entity recognition, and text summarization. Here are the key aspects:
 
 **Sentiment analysis** predicts a given text's sentiment (positive, negative, or neutral). It assigns confidence scores to each sentiment label, helping you understand the emotional tone of user-generated content, reviews, or social media posts.
 
@@ -14,7 +14,7 @@ Entity extraction involves identifying entities within the text, such as names, 
 
 ## The `azure_cognitive` schema
 
-The `azure_cognitive` schema within the `azure_ai` extension is designed to facilitate interactions with the Azure AI Language service directly from a PostgreSQL database. The schema includes numerous user-defined functions (UDFs) and composite types.
+The `azure_cognitive` schema within the `azure_ai` extension is designed to facilitate interactions with the Azure Language service directly from a PostgreSQL database. The schema includes numerous user-defined functions (UDFs) and composite types.
 
 ### Functions
 

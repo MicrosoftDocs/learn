@@ -1,0 +1,41 @@
+### YamlMime:Module
+uid: learn.dpu.introduction-to-surface-laptop-business
+title: Introduction to Microsoft Surface Laptop for Business
+metadata:
+  title: Introduction To Microsoft Surface Laptop For Business
+  description: 'Explore Microsoft Surface Laptop for Business, a Copilot+ PC designed for business professionals focused on productivity, security, and performance.'
+  ms.date: 11/18/2025
+  author: ozahran7
+  ms.author: v-zahranomar
+  ms.topic: module
+  ms.service: surface
+summary: >
+ "Discover the Microsoft Surface Laptop for Business, a Copilot+ PC designed for business professionals focused on productivity, security, and performance."
+abstract: |
+  By the end of this module, you'll be able to:    
+  - Evaluate whether Microsoft Surface Laptop for Business is appropriate for your business.
+  - Describe how the software and hardware features of Microsoft Surface Laptop for Business work to complete tasks more efficiently.
+prerequisites: |
+  - None
+iconUrl: /training/achievements/generic-badge.svg
+ratingEnabled: false
+levels:
+  - beginner
+roles:
+  - administrator
+  - business-leader
+  - business-owner
+  - business-user
+  - technology-manager
+products:
+  - surface
+units:
+  - learn.dpu.introduction-to-surface-laptop-business.introduction
+  - learn.dpu.introduction-to-surface-laptop-business.what-is-microsoft-surface-laptop-for-business
+  - learn.dpu.introduction-to-surface-laptop-business.how-surface-laptop-for-business-works
+  - learn.dpu.introduction-to-surface-laptop-business.how-surface-laptop-for-business-ai-features-work
+  - learn.dpu.introduction-to-surface-laptop-business.when-to-use-surface-laptop-for-business
+  - learn.dpu.introduction-to-surface-laptop-business.knowledge-check
+  - learn.dpu.introduction-to-surface-laptop-business.summary
+badge:
+  uid: learn.dpu.introduction-to-surface-laptop-business.badge

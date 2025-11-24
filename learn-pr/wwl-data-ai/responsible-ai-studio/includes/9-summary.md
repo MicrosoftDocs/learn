@@ -8,5 +8,6 @@ Generative AI requires a responsible approach to prevent or mitigate the generat
 ### Learn more
 
 - [Overview of Responsible AI practices for Azure OpenAI models](/legal/cognitive-services/openai/overview)
-- [Azure AI Foundry Discord](https://aka.ms/azureaifoundry/discord)
-- [Azure AI Foundry Developer Forum](https://aka.ms/azureaifoundry/forum)
+- [Microsoft Foundry Discord](https://aka.ms/azureaifoundry/discord)
+- [Microsoft Foundry Developer Forum](https://aka.ms/azureaifoundry/forum)
+

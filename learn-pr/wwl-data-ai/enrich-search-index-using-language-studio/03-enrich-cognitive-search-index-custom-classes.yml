@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.enrich-search-index-using-language-studio.enrich-cognitive-search-index-custom-classes
-title: Enrich a search index in Azure AI Search with custom classes and Azure AI Language
+title: Enrich a search index in Azure AI Search with custom classes and Azure Language
 metadata:
-  title: Enrich a search index in Azure AI Search with custom classes and Azure AI Language
-  description: Enrich a search index in Azure AI Search with custom classes and Azure AI Language.
+  title: Enrich a search index in Azure AI Search with custom classes and Azure Language
+  description: Enrich a search index in Azure AI Search with custom classes and Azure Language.
   author: ivorb
   ms.author: berryivor
   ms.date: 05/02/2025
