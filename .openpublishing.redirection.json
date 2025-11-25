@@ -60408,6 +60408,91 @@
       "source_path": "learn-pr/wwl-data-ai/introduction-information-extraction/6-knowledge-mining.yml",
       "redirect_url": "https://learn.microsoft.com/training/modules/introduction-information-extraction/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/chain-azure-functions-data-using-bindings/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-add-output-binding-storage-queue-vs-code/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/chain-azure-functions-data-using-bindings/2-explore-input-and-output-binding-types-portal-lesson.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-add-output-binding-storage-queue-vs-code/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/chain-azure-functions-data-using-bindings/3-explore-input-and-output-binding-types-portal-lab.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-add-output-binding-storage-queue-vs-code/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/chain-azure-functions-data-using-bindings/4-read-data-with-input-bindings-portal-lesson.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-add-output-binding-storage-queue-vs-code/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/chain-azure-functions-data-using-bindings/5-read-data-with-input-bindings-portal-lab.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-add-output-binding-storage-queue-vs-code/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/chain-azure-functions-data-using-bindings/6-write-data-with-output-bindings-portal-lesson.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-add-output-binding-storage-queue-vs-code/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/chain-azure-functions-data-using-bindings/7-write-data-with-output-bindings-portal-lab.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-add-output-binding-storage-queue-vs-code/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/chain-azure-functions-data-using-bindings/8-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-add-output-binding-storage-queue-vs-code/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/chain-azure-functions-data-using-bindings/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-add-output-binding-storage-queue-vs-code/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-long-running-serverless-workflow-with-durable-functions/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/durable/quickstart-js-vscode/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-long-running-serverless-workflow-with-durable-functions/2-what-is-durable-functions.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/durable/quickstart-js-vscode/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-long-running-serverless-workflow-with-durable-functions/3-design-a-workflow-based-on-durable-functions.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/durable/quickstart-js-vscode/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-long-running-serverless-workflow-with-durable-functions/4-exercise-create-a-workflow-using-durable-functions.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/durable/quickstart-js-vscode/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-long-running-serverless-workflow-with-durable-functions/5-control-long-running-tasks-using-timers.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/durable/quickstart-js-vscode/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-long-running-serverless-workflow-with-durable-functions/6-exercise-add-a-durable-timer-to-manage-a-long-running-task.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/durable/quickstart-js-vscode/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-long-running-serverless-workflow-with-durable-functions/7-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/durable/quickstart-js-vscode/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-long-running-serverless-workflow-with-durable-functions/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/durable/quickstart-js-vscode/",
+      "redirect_document_id": false
     }
   ]
 }
