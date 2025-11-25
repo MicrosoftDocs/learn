@@ -3,7 +3,7 @@ uid: learn.wwl.implement-vector-storage-azure-managed-redis
 metadata:
   title: Implement Vector Storage in Azure Managed Redis
   description: Learn how to implement vector storage and similarity search in Azure Managed Redis.
-  ms.date: 11/28/2025
+  ms.date: 11/23/2025
   author: jeffkoms
   ms.author: jeffko
   ms.topic: module-standard-task-based
