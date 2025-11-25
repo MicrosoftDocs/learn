@@ -60408,6 +60408,41 @@
       "source_path": "learn-pr/wwl-data-ai/introduction-information-extraction/6-knowledge-mining.yml",
       "redirect_url": "https://learn.microsoft.com/training/modules/introduction-information-extraction/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-serverless-api-with-functions-api-management/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-openapi-definition/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-serverless-api-with-functions-api-management/2-import-function-app-api-management.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-openapi-definition/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-serverless-api-with-functions-api-management/3-exercise-import-function-app-api-management.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-openapi-definition/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-serverless-api-with-functions-api-management/4-import-additional-functions-existing-api-gateway.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-openapi-definition/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-serverless-api-with-functions-api-management/5-exercise-import-additional-functions-existing-api-gateway.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-openapi-definition/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-serverless-api-with-functions-api-management/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-openapi-definition/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-serverless-api-with-functions-api-management/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-openapi-definition/",
+      "redirect_document_id": false
     }
   ]
 }
