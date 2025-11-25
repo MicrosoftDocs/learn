@@ -31,7 +31,7 @@ quiz:
         - content: "A Surface Slim Pen accessory"
           isCorrect: false
           explanation: "Incorrect. Accessories are optional, not a prerequisite."
-        - content: "A Microsoft Teams licenses"
+        - content: "A Microsoft Teams license"
           isCorrect: false
           explanation: "Incorrect. Teams is preconfigured but not required for portal access."
         - content: "A Microsoft Intune subscription"
