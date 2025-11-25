@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn.wwl.implement-vector-storage-azure-managed-redis
+metadata:
+  title: Implement Vector Storage in Azure Managed Redis
+  description: Learn how to implement vector storage and similarity search in Azure Managed Redis.
+  ms.date: 11/28/2025
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: module-standard-task-based
+  ai-usage: ai-assisted
+  ms.service: azure-managed-redis
+title: Implement vector storage in Azure Managed Redis
+summary: Learn how to implement vector storage and similarity search in Azure Managed Redis. This module covers creating vector indexes, querying embeddings, choosing vector types and indexing strategies, and selecting optimal data structures for AI applications.
+abstract: |
+  After completing this module, you'll be able to:
+    - Explain how to create vector indexes and query embeddings for similarity search using Redis as a vector database
+    - Choose appropriate vector types, distance metrics, and indexing algorithms based on dataset size and accuracy requirements
+    - Select optimal Redis data structures (Hash vs JSON) for storing vectors with metadata
+    - Build Python applications that index and query high-dimensional embeddings with Azure Managed Redis
+prerequisites: |
+  Before beginning this module, you should have:
+  - Programming experience with languages such as Python, JavaScript, or C#.
+  - Basic understanding of Azure services and cloud computing concepts.
+  - Familiarity with AI embeddings and vector similarity concepts.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- azure-managed-redis
+subjects:
+- cache
+- artificial-intelligence
+- data-integration
+units:
+- learn.wwl.implement-vector-storage-azure-managed-redis.introduction
+- learn.wwl.implement-vector-storage-azure-managed-redis.index-query-vector-data
+- learn.wwl.implement-vector-storage-azure-managed-redis.vector-types-index-strategy
+- learn.wwl.implement-vector-storage-azure-managed-redis.optimize-redis-data-structure
+- learn.wwl.implement-vector-storage-azure-managed-redis.exercise-semantic-search-azure-managed-redis
+- learn.wwl.implement-vector-storage-azure-managed-redis.module-assessment
+- learn.wwl.implement-vector-storage-azure-managed-redis.summary
+badge:
+  uid: learn.wwl.implement-vector-storage-azure-managed-redis.badge
