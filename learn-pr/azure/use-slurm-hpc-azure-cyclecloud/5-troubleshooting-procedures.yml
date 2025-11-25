@@ -4,11 +4,11 @@ title: Conduct common troubleshooting procedures
 metadata:
   title: Conduct common troubleshooting procedures
   description: This content is part of the "Use Slurm for HPC on Azure CycleCloud" module.
-  ms.date: 08/18/2024
+  ms.date: 11/15/2025
   author: Orin-Thomas
   ms.author: orthomas
   ms.topic: unit
 durationInMinutes: 10
 content: |
   [!include[](includes/5-troubleshooting-procedures.md)]
-
+
