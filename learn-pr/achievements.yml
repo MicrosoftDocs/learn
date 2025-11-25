@@ -7235,7 +7235,6 @@ achievements:
   title: Foundations of data science for machine learning
   summary: Machine learning is a powerful, modern way to analyze data and make predictions. Using data science fundamentals, you'll learn the core principles of machine learning and how to use common tools and frameworks to train, evaluate, and use machine learning models.
   iconUrl: /training/achievements/machine-learning/machine-learning-foundations-using-data-science.svg
-
 - uid: learn.machinelearning.optimize-model-performance-roc-auc-dropout.badge
   type: badge
   title: Measure and optimize model performance with ROC and AUC
@@ -7276,5 +7275,8 @@ achievements:
   title: Introduction to machine learning
   summary: A high-level overview of machine learning for people with little or no knowledge of computer science and statistics. You'll learn some essential concepts, explore data, and interactively go through the machine learning lifecycle, using Python to train, save, and use a machine learning model, just like in the real world.
   iconUrl: /training/achievements/machine-learning/introduction-to-machine-learning.svg
-
-
+- uid: learn.azure.intro-to-translator.badge
+  type: badge
+  title: Introduction to Azure AI Translator
+  summary: Azure AI Translator is a cloud-based service that uses AI to reliably translate text and documents between languages in near real time. You can add multilanguage user experiences to your apps in 90 languages and dialects, along with free text translation with any operating system. Translator also has customizable translation models that can better understand industry-specific terminology or pronouns.
+  iconUrl: /training/achievements/intro-to-translator.svg
