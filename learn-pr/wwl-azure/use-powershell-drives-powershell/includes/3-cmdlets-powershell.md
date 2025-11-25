@@ -37,6 +37,6 @@ In addition to the commands for working with PowerShell drive items and item pro
 | **Pop-Location**  | Changes the current location to the location at the top of a location stack. |
 
 > [!NOTE]
-> The **Push-Location** and **Pop-Location** cmdlets are the equivalent of the **pushd** and **popd** commands in the Windows Commamd Prompt (**cmd.exe**) console. In PowerShell, **pushd** and **popd** are aliases for those cmdlets.
+> The **Push-Location** and **Pop-Location** cmdlets are the equivalent of the **pushd** and **popd** commands in the Windows Command Prompt (**cmd.exe**) console. In PowerShell, **pushd** and **popd** are aliases for those cmdlets.
 
 > **Additional reading:** For more information about location stacks, refer to [Push-Location](https://aka.ms/idat4p).
