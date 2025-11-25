@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-vector-storage-azure-managed-redis.vector-types-index-strategy
+title: Choose vector types and indexing strategies
+metadata:
+  title: Choose Vector Types and Indexing Strategies
+  description: Choose vector types and indexing strategies
+  ms.date: 11/23/2025
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: unit
+azureSandbox: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-vector-types-index-strategy.md)]
