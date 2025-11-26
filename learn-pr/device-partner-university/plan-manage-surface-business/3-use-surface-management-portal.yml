@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.plan-manage-surface-business.use-surface-management-portal
+title: Use Surface Management Portal
+metadata:
+  title: Use Surface Management Portal
+  description: This content is part of the "Plan and manage Surface for Business deployments" module.
+  ms.date: 11/25/2025
+  author: hhreyes21
+  ms.author: v-homerreyes
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/3-use-surface-management-portal.md)]

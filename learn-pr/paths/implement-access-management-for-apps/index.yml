@@ -1,13 +1,13 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.implement-access-management-for-apps
 metadata:
-  title: 'SC-300: Implement Access Management for Apps'
-  description: Explore how applications can and should be added to your identity and access solution with application registration in Microsoft Entra ID. Aligned to SC-300 Exam.
+  title: 'Implement access management for apps'
+  description: 'Implement access management for apps'
   ms.date: 10/03/2023
   author: wwlpublish
   ms.author: roberts
   ms.topic: learning-path
-title: 'SC-300: Implement Access Management for Apps'
+title: 'Implement access management for apps'
 prerequisites: |
   None
 summary: |
