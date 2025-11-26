@@ -7280,3 +7280,8 @@ achievements:
   title: Introduction to Azure AI Translator
   summary: Azure AI Translator is a cloud-based service that uses AI to reliably translate text and documents between languages in near real time. You can add multilanguage user experiences to your apps in 90 languages and dialects, along with free text translation with any operating system. Translator also has customizable translation models that can better understand industry-specific terminology or pronouns.
   iconUrl: /training/achievements/intro-to-translator.svg
+- uid: learn.winui-101.badge
+  type: badge
+  title: Build your first Windows App by using WinUI & Windows App SDK
+  summary: Create a Windows app using WinUI 3, Windows App SDK, and Community Toolkit in Visual Studio. Set up the development environment, and build a maintainable, testable, and scalable Windows applications using best practices in software architecture.
+  iconUrl: /learn/achievements/winui-101-badge.svg
