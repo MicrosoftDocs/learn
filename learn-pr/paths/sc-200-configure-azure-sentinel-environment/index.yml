@@ -1,16 +1,16 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.sc-200-configure-your-azure-sentinel-environment
 metadata:
-  title: 'SC-200: Configure your Microsoft Sentinel environment'
-  description: 'SC-200: Configure your Microsoft Sentinel environment'
-  ms.date: 10/14/2024
-  author: wwlpublish
+  title: 'Configure your Microsoft Sentinel environment'
+  description: 'Configure your Microsoft Sentinel environment'
+  ms.date: 11/26/2025
+  author: KenMAG
   ms.author: kelawson
   ms.topic: learning-path
-title: 'SC-200: Configure your Microsoft Sentinel environment'
+title: 'Configure your Microsoft Sentinel environment'
 prerequisites: |
   - Fundamental understanding of Microsoft security, compliance, and identity products
-  - Ability to use KQL in Microsoft Sentinel like you could learn from learning path SC-200: Create queries for Microsoft Sentinel using Kusto Query Language (KQL)
+  - Ability to use KQL in Microsoft Sentinel like you could learn from learning path  Create queries for Microsoft Sentinel using Kusto Query Language (KQL)
 summary: |
   Get started with Microsoft Sentinel by properly configuring the Microsoft Sentinel workspace. This learning path aligns with exam SC-200: Microsoft Security Operations Analyst.
 iconUrl: /training/achievements/configure-your-azure-sentinel-environment.svg
