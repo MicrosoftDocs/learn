@@ -1,13 +1,13 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.sc-200-mitigate-threats-using-microsoft-defender-for-endpoint
 metadata:
-  title: 'SC-200: Mitigate threats using Microsoft Defender for Endpoint'
-  description: 'SC-200: Mitigate threats using Microsoft Defender for Endpoint'
+  title: 'Mitigate threats using Microsoft Defender for Endpoint'
+  description: 'Mitigate threats using Microsoft Defender for Endpoint'
   ms.date: 04/25/2025
   author: KenMAG
   ms.author: kelawson
   ms.topic: learning-path
-title: 'SC-200: Mitigate threats using Microsoft Defender for Endpoint'
+title: 'Mitigate threats using Microsoft Defender for Endpoint'
 prerequisites: |
   - Basic understanding of Microsoft 365
   - Intermediate understanding of Microsoft Windows 10 and 11 devices

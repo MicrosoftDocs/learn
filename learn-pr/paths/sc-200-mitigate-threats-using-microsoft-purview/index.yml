@@ -1,13 +1,13 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.sc-200-mitigate-threats-using-microsoft-purview
 metadata:
-  title: 'SC-200: Mitigate threats using Microsoft Purview'
+  title: 'Mitigate threats using Microsoft Purview'
   description: 'Use Microsoft Purview to discover, classify, and protect sensitive data in your organization. This learning path aligns with exam SC-200: Microsoft Security Operations Analyst.'
   ms.date: 07/01/2025
   author: KenMAG
   ms.author: kelawson
   ms.topic: learning-path
-title: 'SC-200: Mitigate threats using Microsoft Purview'
+title: 'Mitigate threats using Microsoft Purview'
 prerequisites: |
   - Fundamental understanding of Microsoft security, compliance, and identity products
   - Basic understanding of Microsoft Defender XDR
