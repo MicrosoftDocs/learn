@@ -1,14 +1,14 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.sc-200-mitigate-threats-using-microsoft-copilot-for-security
 metadata:
-  title: 'SC-200: Mitigate threats using Microsoft Security Copilot'
-  description: 'SC-200: Mitigate threats using Microsoft Security Copilot'
-  ms.date: 11/25/2024
-  author: wwlpublish
+  title: 'Mitigate threats using Microsoft Security Copilot'
+  description: 'Mitigate threats using Microsoft Security Copilot'
+  ms.date: 11/26/2025
+  author: KenMAG
   ms.author: kelawson
   ms.topic: learning-path
   ms.custom: ai-learning-hub
-title: 'SC-200: Mitigate threats using Microsoft Security Copilot'
+title: 'Mitigate threats using Microsoft Security Copilot'
 prerequisites: |
   - Working knowledge of Microsoft security, compliance, and identity products
   - Working knowledge of security operations and incident response
