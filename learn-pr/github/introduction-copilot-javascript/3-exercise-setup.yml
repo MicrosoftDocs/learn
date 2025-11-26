@@ -6,7 +6,7 @@ metadata:
   description: Enable the GitHub Copilot service and install the extension in Visual Studio Code
   author: abrilurena
   ms.author: orthomas
-  ms.date: 08/12/2024
+  ms.date: 11/15/2025
   ms.update-cycle: 180-days
   ms.topic: unit
   ms.collection:
