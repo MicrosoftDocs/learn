@@ -60410,6 +60410,66 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/windows/winui-101/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/windows/apps/winui/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/winui-101/2-dev-set-up.yml",
+      "redirect_url": "https://learn.microsoft.com/windows/apps/winui/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/winui-101/3-build-view.yml",
+      "redirect_url": "https://learn.microsoft.com/windows/apps/winui/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/winui-101/4-select-random-word.yml",
+      "redirect_url": "https://learn.microsoft.com/windows/apps/winui/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/winui-101/5-add-alphabet-buttons.yml",
+      "redirect_url": "https://learn.microsoft.com/windows/apps/winui/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/winui-101/6-game-play.yml",
+      "redirect_url": "https://learn.microsoft.com/windows/apps/winui/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/winui-101/7-style.yml",
+      "redirect_url": "https://learn.microsoft.com/windows/apps/winui/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/winui-101/8-images.yml",
+      "redirect_url": "https://learn.microsoft.com/windows/apps/winui/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/winui-101/9-navigation.yml",
+      "redirect_url": "https://learn.microsoft.com/windows/apps/winui/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/winui-101/10-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/windows/apps/winui/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/winui-101/11-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/windows/apps/winui/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/winui-101/index.yml",
+      "redirect_url": "https://learn.microsoft.com/windows/apps/winui/",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/azure/logic-apps-and-custom-connectors/1-introduction.yml",
       "redirect_url": "https://learn.microsoft.com/azure/logic-apps/custom-connector-overview",
       "redirect_document_id": false
