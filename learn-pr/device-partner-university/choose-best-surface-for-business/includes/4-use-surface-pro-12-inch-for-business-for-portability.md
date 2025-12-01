@@ -1,4 +1,4 @@
-:::image type="content" border="true" source="../media/surface-pro-12-render.png" alt-text="Image of Microsoft Surface Pro 12-inch for Business.":::
+:::image type="content" border="true" source="../media/surface-pro-12-render.png" alt-text="A photograph of Microsoft Surface Pro 12-inch for Business.":::
 
 For a traveling commercial sales team, having a device that's easy to transport and can function in various conditions is important. These users need a device that can be carried easily with enough performance to execute their daily tasks.
 

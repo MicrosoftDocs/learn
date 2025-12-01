@@ -1,4 +1,4 @@
-:::image type="content" border="true" source="../media/surface-laptop-13-render.png" alt-text="Image of Microsoft Surface Laptop 13-inch for Business.":::
+:::image type="content" border="true" source="../media/surface-laptop-13-render.png" alt-text="A photograph of Microsoft Surface Laptop 13-inch for Business.":::
 
 When considering our scenario of a commercial sales team, there are various worker types that need reliable battery life—such as a frequent traveler, remote worker, or event presenter. These types of users get work done in a wide array of locations where power isn't guaranteed, requiring a device that can execute their tasks and have enough endurance to make it through the workday.
 

@@ -1,4 +1,4 @@
-:::image type="content" border="true" source="../media/surface-lineup-render.png" alt-text="Image of Microsoft Surface for Business devices lineup.":::
+:::image type="content" border="true" source="../media/surface-lineup-render.png" alt-text="A photograph of Microsoft Surface for Business devices lineup.":::
 
 Not all business users have the same needs—some may prioritize portability, while others may value performance above all else. There's a Surface for Business option available for every user. Let's briefly look at the device options and understand their key features and typical users.
 

@@ -1,4 +1,4 @@
-:::image type="content" border="true" source="../media/surface-laptop-business-render.png" alt-text="Image of Microsoft Surface Laptop for Business.":::
+:::image type="content" border="true" source="../media/surface-laptop-business-render.png" alt-text="A photograph of Microsoft Surface Laptop for Business.":::
 
 In our scenario, users who manage the commercial sales team need a device that can support demanding workloads and handle advanced AI features. Managers run complex spreadsheets, participate in video conferences, and use AI-powered tools to maximize their efficiency. They need a device that delivers strong performance and integrates seamlessly with AI experiences.
 
