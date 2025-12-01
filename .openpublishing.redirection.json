@@ -60468,6 +60468,46 @@
       "source_path": "learn-pr/windows/winui-101/index.yml",
       "redirect_url": "https://learn.microsoft.com/windows/apps/winui/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/logic-apps-and-custom-connectors/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/logic-apps/custom-connector-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/logic-apps-and-custom-connectors/2-connectors-for-azure-logic-apps.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/logic-apps/custom-connector-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/logic-apps-and-custom-connectors/3-exercise-setup-a-test-api.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/logic-apps/custom-connector-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/logic-apps-and-custom-connectors/4-access-an-api-with-a-logic-app-custom-connector.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/logic-apps/custom-connector-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/logic-apps-and-custom-connectors/5-exercise-create-and-call-a-logic-apps-custom-connector-that-wraps-an-api.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/logic-apps/custom-connector-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/logic-apps-and-custom-connectors/6-make-your-custom-connector-available-to-the-entire-organization.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/logic-apps/custom-connector-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/logic-apps-and-custom-connectors/7-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/logic-apps/custom-connector-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/logic-apps-and-custom-connectors/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/logic-apps/custom-connector-overview",
+      "redirect_document_id": false
     }
   ]
 }

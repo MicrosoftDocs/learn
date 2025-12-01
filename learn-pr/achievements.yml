@@ -7275,6 +7275,11 @@ achievements:
   title: Introduction to machine learning
   summary: A high-level overview of machine learning for people with little or no knowledge of computer science and statistics. You'll learn some essential concepts, explore data, and interactively go through the machine learning lifecycle, using Python to train, save, and use a machine learning model, just like in the real world.
   iconUrl: /training/achievements/machine-learning/introduction-to-machine-learning.svg
+- uid: learn.azure.logic-apps-and-custom-connectors.badge
+  type: badge
+  title: Call an API from an Azure Logic Apps workflow using a custom connector
+  summary: Call any Web API from a logic app workflow using the custom connector.
+  iconUrl: /training/achievements/logic-apps-and-custom-connectors.svg
 - uid: learn.azure.intro-to-translator.badge
   type: badge
   title: Introduction to Azure AI Translator
