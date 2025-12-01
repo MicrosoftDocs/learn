@@ -29,7 +29,7 @@ Questions to ask when assessing different Surface for Business devices when it c
 
 Considering form factor differences (such as a 2-in-1 vs a laptop), input options (touch vs pen), and accessory compatibility is crucial in determining which Surface for Business device is best for users that prioritize flexibility for their work.
 
-## Battery Life
+## Battery life
 
 For on-the-go professionals, a battery that lasts a full day is a key feature to consider. When deciding on the right Surface for Business for those types of users, having a device that can support mobile work, handles long meetings, and withstands long travel.
 

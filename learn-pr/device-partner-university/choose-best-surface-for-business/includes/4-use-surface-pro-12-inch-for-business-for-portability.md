@@ -1,4 +1,4 @@
-:::image type="content" border="true" source="../media/surface-pro-12-render.png" alt-text="Render of Microsoft Surface Pro 12-inch for Business.":::
+:::image type="content" border="true" source="../media/surface-pro-12-render.png" alt-text="Image of Microsoft Surface Pro 12-inch for Business.":::
 
 For a traveling commercial sales team, having a device that's easy to transport and can function in various conditions is important. These users need a device that can be carried easily with enough performance to execute their daily tasks.
 
@@ -17,7 +17,7 @@ Surface Pro 12-inch still offers similar secure experiences to other Surface for
 
 The combination of enhanced portability and secure experiences makes Surface Pro 12-inch an ideal choice for the users in our scenario of a traveling salesperson.
 
-**Analysis of why other options are suboptimal:** Other Surface for Business devices match the Surface Pro 12-inch in security but have greater weight, reducing portability. ****Surface Laptop devices trade off some portability for a larger display, in addition to lacking the hybrid functionality of a 2-in-1 device and the lack of pen support.
+**Analysis of why other options are suboptimal:** Other Surface for Business devices match the Surface Pro 12-inch in security but have greater weight, reducing portability. Surface Laptop devices trade off some portability for a larger display, in addition to lacking the hybrid functionality of a 2-in-1 device and the lack of pen support.
 
 Surface Pro for Business offers many of the benefits of Surface Pro 12-inch, such as 2-in-1 form factor and pen support. But it's a larger and heavier device, which limits some of its appeal as a travel companion.
 

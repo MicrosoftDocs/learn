@@ -1,4 +1,4 @@
-:::image type="content" border="true" source="../media/surface-pro-business-render.png" alt-text="Render of Microsoft Surface Pro for Business.":::
+:::image type="content" border="true" source="../media/surface-pro-business-render.png" alt-text="Image of Microsoft Surface Pro for Business.":::
 
 In our scenario, you're analyzing what the best device is for a commercial sales team. Consider a manager that works from their desk but also needs to be productive during meetings and at other events. Having a device that offers power and adaptability to different venues is crucial to remaining efficient.
 
