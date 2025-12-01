@@ -7289,4 +7289,4 @@ achievements:
   type: badge
   title: Build your first Windows App by using WinUI & Windows App SDK
   summary: Create a Windows app using WinUI 3, Windows App SDK, and Community Toolkit in Visual Studio. Set up the development environment, and build a maintainable, testable, and scalable Windows applications using best practices in software architecture.
-  iconUrl: /learn/achievements/winui-101-badge.svg
+  iconUrl: /training/achievements/winui-101-badge.svg
