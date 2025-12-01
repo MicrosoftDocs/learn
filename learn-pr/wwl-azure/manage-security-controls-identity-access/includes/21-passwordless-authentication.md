@@ -134,7 +134,7 @@ The following are sample test cases for passwordless authentication with the Aut
 
 ## Plan for and deploy FIDO2-compliant security keys
 
-Enable compatible security keys. Review this article for a list of [FIDO2 security key providers](entra/identity/authentication/concept-fido2-hardware-vendor) that provide keys known to be compatible with the passwordless experience.
+Enable compatible security keys. Review this article for a list of [FIDO2 security key providers](/entra/identity/authentication/concept-fido2-hardware-vendor) that provide keys known to be compatible with the passwordless experience.
 
 ### Plan security key lifecycle
 
