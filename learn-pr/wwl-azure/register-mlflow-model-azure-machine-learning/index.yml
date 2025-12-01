@@ -5,7 +5,7 @@ metadata:
   description: Learn how to register an Mlflow model in Azure Machine Learning.
   author: wwlpublish
   ms.author: madiepev
-  ms.date: 11/06/2024
+  ms.date: 12/01/2025
   ms.service: azure
   ms.topic: module
   ms.collection:
@@ -37,4 +37,4 @@ units:
 - learn.wwl.register-mlflow-model-azure-machine-learning.summary
 badge:
   uid: learn.wwl.register-mlflow-model-azure-machine-learning.badge
-
+

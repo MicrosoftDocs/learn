@@ -6,11 +6,11 @@ metadata:
   description: Learn how to log models with MLflow for easy deployment in Azure Machine Learning.
   author: wwlpublish
   ms.author: madiepev
-  ms.date: 11/06/2024
+  ms.date: 12/01/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
 durationInMinutes: 9
 content: |
   [!include[](includes/2-log-mlflow-model.md)]
-
+
