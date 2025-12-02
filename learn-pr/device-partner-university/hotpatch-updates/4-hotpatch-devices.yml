@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
-uid: learn.dpu.hotpatch-updates.hotpatch-devices
-title: Hotpatch ARM64 devices
+uid: learn.dpu.hotpatch-updates.enable-hotpatch
+title: Enable hotpatch updates
 metadata:
-  title: Hotpatch ARM64 Devices
+  title: Enable Hotpatch Updates
   description: This content is part of the "Hotpatch updates for Windows client devices" module.
   ms.date: 10/07/2025
   author: Stephanie-Rosenzweig
@@ -10,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 3
 content: |
-  [!include[](includes/4-hotpatch-devices.md)]
+  [!include[](includes/4-enable-hotpatch.md)]
