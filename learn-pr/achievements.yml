@@ -7285,6 +7285,16 @@ achievements:
   title: Introduction to Azure AI Translator
   summary: Azure AI Translator is a cloud-based service that uses AI to reliably translate text and documents between languages in near real time. You can add multilanguage user experiences to your apps in 90 languages and dialects, along with free text translation with any operating system. Translator also has customizable translation models that can better understand industry-specific terminology or pronouns.
   iconUrl: /training/achievements/intro-to-translator.svg
+- uid: learn.azure.monitor-github-events-with-a-function-triggered-by-a-webhook.badge
+  type: badge
+  title: Monitor GitHub events by using a webhook with Azure Functions
+  summary: Webhooks offer a lightweight mechanism for your app to be notified by another service when something of interest happens. In this module, you'll learn how to trigger an Azure function with a GitHub webhook and parse the payload for insights.
+  iconUrl: /training/achievements/monitor-github-events-with-a-function-triggered-by-a-webhook.svg
+- uid: learn.develop-test-deploy-azure-functions-with-visual-studio.badge
+  type: badge
+  title: Develop, test, and deploy an Azure Function with Visual Studio
+  summary: Create, test, and deploy Azure Functions using Visual Studio and manage Azure Functions code.
+  iconUrl: /training/achievements/develop-test-deploy-azure-functions-with-visual-studio.svg
 - uid: learn.azure-create-long-running-serverless-workflow-with-durable-functions.badge
   type: badge
   title: Create a long-running serverless workflow with Durable Functions
