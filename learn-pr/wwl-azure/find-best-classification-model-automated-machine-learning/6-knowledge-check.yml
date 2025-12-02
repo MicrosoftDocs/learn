@@ -6,7 +6,7 @@ metadata:
   description: Test your knowledge on how to use automated machine learning to find the best classification model in Azure Machine Learning.
   author: wwlpublish
   ms.author: madiepev
-  ms.date: 07/10/2024
+  ms.date: 12/01/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
@@ -36,4 +36,4 @@ quiz:
     - content: "`off`"
       isCorrect: true
       explanation: "Correct. If you don't want the data to be preprocessed at all, set featurization to be off."
-
+

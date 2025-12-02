@@ -6,11 +6,11 @@ metadata:
   description: Learn what to think about when designing for retraining a model.
   author: wwlpublish
   ms.author: madiepev
-  ms.date: 08/25/2024
+  ms.date: 12/01/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
 durationInMinutes: 7
 content: |
   [!include[](includes/4-design-retraining.md)]
-
+
