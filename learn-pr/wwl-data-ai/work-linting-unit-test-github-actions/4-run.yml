@@ -4,7 +4,7 @@ title: Run linting and unit testing
 metadata:
   title: Run linting and unit testing
   description: "Run linting and unit testing"
-  ms.date: 07/10/2024
+  ms.date: 12/01/2025
   author: wwlpublish
   ms.author: madiepev
   ms.topic: unit
@@ -12,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 6
 content: |
-  [!include[](includes/4-run.md)]
+  [!include[](includes/4-run.md)]

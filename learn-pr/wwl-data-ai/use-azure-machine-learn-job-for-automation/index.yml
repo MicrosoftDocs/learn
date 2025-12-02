@@ -5,7 +5,7 @@ metadata:
   description: MLOps, automation, Machine learning operations
   author: wwlpublish
   ms.author: madiepev
-  ms.date: 07/10/2024
+  ms.date: 12/01/2025
   ms.service: azure-machine-learning
   ms.topic: module-standard-task-based
   ms.collection:
@@ -43,4 +43,4 @@ units:
 - learn.wwl.use-azure-machine-learn-job-for-automation.summary
 badge:
   uid: learn.wwl.use-azure-machine-learning-job-for-automation.badge
-
+
