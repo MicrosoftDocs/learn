@@ -5,6 +5,7 @@ Because these systems are proactive rather than reactive, developers now need sp
 ## From AI Frameworks to AI Agent Frameworks
 
 ### Traditional AI Frameworks: Enhancing Apps with Intelligence
+
 Traditional AI frameworks help developers integrate intelligent capabilities into applications. These frameworks improve performance and user engagement in several key ways:
 
 - **Personalization:**  
@@ -20,6 +21,7 @@ Traditional AI frameworks help developers integrate intelligent capabilities int
   *Example:* Virtual assistants like **Siri** and **Google Assistant** understand voice commands, making device interactions more intuitive.
 
 ### Beyond Traditional AI: The Rise of AI Agent Frameworks
+
 While traditional AI enhances applications, **AI Agent Frameworks** go further by enabling the development of **autonomous, goal-oriented agents**. These agents don't just process data—they **act**, **decide**, and **collaborate** to achieve objectives.
 
 Key capabilities include:
@@ -34,6 +36,7 @@ Key capabilities include:
   Enables agents to perceive context, make decisions based on real-time data, and adapt to changing environments.
 
 ### The Next Step in Intelligent Systems
+
 AI Agent Frameworks elevate automation by creating systems that can **learn, adapt, and act independently**. They represent the next evolution in AI—moving from simple assistance to **autonomous collaboration** and **continuous optimization**.
 
 ## Microsoft Foundry Agent Service
