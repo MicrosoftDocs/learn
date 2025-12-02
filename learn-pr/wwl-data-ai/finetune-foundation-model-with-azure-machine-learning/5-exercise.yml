@@ -4,10 +4,10 @@ title: Exercise - Fine-tune a foundation model
 metadata:
   title: Exercise - Fine-tune a foundation model
   description: "Exercise - Fine-tune a foundation model using the Azure Machine Learning studio."
-  ms.date: 07/25/2024
+  ms.date: 12/01/2025
   author: madiepev
   ms.author: madiepev
   ms.topic: unit
 durationInMinutes: 15
 content: |
-  [!include[](includes/5-exercise.md)]
+  [!include[](includes/5-exercise.md)]

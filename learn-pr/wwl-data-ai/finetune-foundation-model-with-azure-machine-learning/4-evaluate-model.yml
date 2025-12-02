@@ -4,10 +4,10 @@ title: Evaluate, deploy, and test a fine-tuned foundation model
 metadata:
   title: Evaluate, deploy, and test a fine-tuned foundation model
   description: "Evaluate, deploy, and test a fine-tuned foundation model using the Azure Machine Learning studio."
-  ms.date: 07/25/2024
+  ms.date: 12/01/2025
   author: madiepev
   ms.author: madiepev
   ms.topic: unit
 durationInMinutes: 10
 content: |
-  [!include[](includes/4-evaluate-model.md)]
+  [!include[](includes/4-evaluate-model.md)]

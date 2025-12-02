@@ -6,7 +6,7 @@ metadata:
   description: Test your knowledge on how and when to work with different types of compute targets in Azure Machine Learning.
   author: wwlpublish
   ms.author: madiepev
-  ms.date: 07/25/2024
+  ms.date: 12/01/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
@@ -37,4 +37,4 @@ quiz:
     - content: "Maximum number of instances"
       isCorrect: false
       explanation: "Incorrect. You shouldn't change the maximum number of instances when you want the compute cluster to remain available in between pipeline job runs."
-
+

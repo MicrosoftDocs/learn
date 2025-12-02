@@ -6,7 +6,7 @@ metadata:
   description: Knowledge check
   author: wwlpublish
   ms.author: madiepev
-  ms.date: 07/25/2024
+  ms.date: 12/01/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
@@ -41,4 +41,4 @@ quiz:
     - content: "Planning"
       isCorrect: false
       explanation: "Incorrect. Planning should occur before working on the code."
-
+
