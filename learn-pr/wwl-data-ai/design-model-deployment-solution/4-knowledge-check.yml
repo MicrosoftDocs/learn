@@ -6,7 +6,7 @@ metadata:
   description: Exercise - Design a deployment solution
   author: wwlpublish
   ms.author: madiepev
-  ms.date: 07/10/2024
+  ms.date: 12/01/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
@@ -41,4 +41,4 @@ quiz:
     - content: "Local device"
       isCorrect: false
       explanation: "Incorrect. A local device will be too expensive to have running all the time. Containers will be a more cost-effective solution."
-
+
