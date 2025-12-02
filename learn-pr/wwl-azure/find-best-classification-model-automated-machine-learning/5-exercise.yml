@@ -6,7 +6,7 @@ metadata:
   description: Explore how to find the best classification model with automated machine learning using the Python SDK (v2) for Azure Machine Learning through hands-on exercises.
   author: wwlpublish
   ms.author: madiepev
-  ms.date: 07/10/2024
+  ms.date: 12/01/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
@@ -14,4 +14,4 @@ metadata:
 durationInMinutes: 10
 content: |
   [!include[](includes/5-exercise.md)]
-
+

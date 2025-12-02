@@ -3,7 +3,7 @@ A [public IP address](/azure/virtual-network/ip-services/public-ip-addresses) re
 > [!VIDEO https://learn-video.azurefd.net/vod/player?id=8124baac-6dbd-4bc3-97b1-3693b3b465c0]
 
 > [!IMPORTANT]
-> On September 30, 2025, Basic SKU public IPs will be retired. For more information, see the [official announcement](https://azure.microsoft.com/updates?id=upgrade-to-standard-sku-public-ip-addresses-in-azure-by-30-september-2025-basic-sku-will-be-retired).
+> On September 30, 2025, Basic SKU public IPs were retired. For more information, see the [official announcement](https://azure.microsoft.com/updates?id=upgrade-to-standard-sku-public-ip-addresses-in-azure-by-30-september-2025-basic-sku-will-be-retired).
 
 ### Things to consider when associating public IP addresses
 
