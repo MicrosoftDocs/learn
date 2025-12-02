@@ -1,6 +1,6 @@
 Keeping Windows devices up to date is critical for security, but frequent restarts for updates can disrupt productivity. Hotpatch updates provide a solution by allowing IT administrators to apply security patches without requiring a system restart.
 
-Hotpatch updates are security only updates (as opposed to non-security or feature updates) that are available for Windows 11 Enterprise, version 24H2 or later, and 64-bit ARM architecture on devices with AMD or Intel x64 processors. They help maintain protection while minimizing operational disruption.  
+Hotpatch updates are security only updates (as opposed to nonsecurity or feature updates) that are available for Windows 11 Enterprise, version 24H2 or later, and 64-bit ARM architecture on devices with AMD or Intel x64 processors. They help maintain protection while minimizing operational disruption.  
 
 Key benefits of hotpatching include:
 
@@ -32,16 +32,16 @@ Eligible Windows 11 Enterprise devices (version 24H2 and later) managed under th
 
 Devices that get hotpatch updates show different KB numbers and OS builds than devices that get standard cumulative updates. Hotpatch updates apply only security fixes in memory and don’t require a restart, so the system version (OS build) usually stays the same.
 
-Standard cumulative updates include additional changes beyond security fixes, so the system version number increases (the “build” is incremented). Microsoft Intune can track both types of updates using KB numbers and OS versions, ensuring all devices remain compliant with security requirements.
+Standard cumulative updates include other changes beyond security fixes, so the system version number increases (the "build" is incremented). Microsoft Intune can track both types of updates using KB numbers and OS versions, ensuring all devices remain compliant with security requirements.
 
-Devices that aren’t eligible for hotpatching receive standard monthly updates, which include security and non-security fixes and require a restart.
+Devices that aren’t eligible for hotpatching receive standard monthly updates, which include security and nonsecurity fixes and require a restart.
 
 > [!NOTE]
 > A *KB number* is a Knowledge Base ID used by Microsoft to identify a specific update. The *Knowledge Base* is a collection of over 150,000 technical articles, including an update history that catalogs released updates for Windows.
 >
 > Each Windows update—whether it's a security patch, feature update, hotfix, or hotpatch—is associated with a KB (Knowledge Base) ID, like *KB5036980*. This number:
 >
-> - Helps IT admins find detailed information about what's included in the update.
+> - Helps IT admins find detailed information about what's in the update.
 > - Serves as a unique identifier for tracking, auditing, and troubleshooting purposes.
 >
 > To find Windows updates in the Microsoft Knowledge Base, go to [support.microsoft.>com](https://support.microsoft.com) and enter the keyword `"kbwindowsupdate"` in >the search bar.

@@ -25,7 +25,7 @@ To benefit from hotpatch updates, Windows client devices must meet the following
 - **Operating system**: Windows 11 Enterprise (24H2 or later), Windows Server 2022 Azure Edition, Windows Server 2025 Azure Edition/on-prem via Azure Arc. Devices must also be on the latest baseline release version to qualify for hotpatch updates. Microsoft releases baseline updates quarterly as standard cumulative updates. For details, check [Release notes for Hotpatch](/windows/deployment/windows-autopatch/manage/windows-autopatch-hotpatch-updates).  
 - **CPU**: x64 processors (AMD64 or Intel). Hotpatching is also supported on 64-bit ARM devices, with Compiled Hybrid Portable Executable (CHPE) disabled. [Learn more.](https://techcommunity.microsoft.com/blog/windows-itpro-blog/hotpatching-now-available-for-64-bit-arm-architecture/4430949)
 - **Management**: Microsoft Intune to deploy hotpatch updates using a Windows quality update policy with hotpatch enabled.  
-- **Security**: Virtualization-based Security (VBS) must be enabled on the device.  Learn how to enable VBS at scale on the [Windows IT Pro Blog](https://techcommunity.microsoft.com/blog/windows-itpro-blog/hotpatch-readiness-enable-vbs-at-scale/4441652).
+- **Security**: Virtualization-based Security (VBS) must be enabled on the device. Learn how to enable VBS at scale on the [Windows IT Pro Blog](https://techcommunity.microsoft.com/blog/windows-itpro-blog/hotpatch-readiness-enable-vbs-at-scale/4441652).
 
 > [!NOTE]
 > A Windows client device refers to any computer or device that runs a version of the Windows operating system designed for end-users such as Windows 11.
