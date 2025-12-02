@@ -44,13 +44,13 @@ Devices that aren’t eligible for hotpatching receive standard monthly updates,
 > - Helps IT admins find detailed information about what's in the update.
 > - Serves as a unique identifier for tracking, auditing, and troubleshooting purposes.
 >
-> To find Windows updates in the Microsoft Knowledge Base, go to [support.microsoft.>com](https://support.microsoft.com) and enter the keyword `"kbwindowsupdate"` in >the search bar.
+> To find Windows updates in the Microsoft Knowledge Base, go to [support.microsoft.com](https://support.microsoft.com) and enter the keyword `"kbwindowsupdate"` in >the search bar.
 >
 >For easier access, IT admins can also bookmark [Windows release health](/windows/>release-health/) on Microsoft Learn, which provides anchored links to release notes >by Windows version.
 >
 >Hotpatch release notes specifically are located at:
 >
-> - [Windows 11 Enterprise version 25H2 - Hotpatch release notes](https://support.>microsoft.com/topic/>release-notes-for-hotpatch-on-windows-11-enterprise-version-25h2-0bbaa1c7-5070-41ca->a7c9-4ead79602dbf)
-> - [Windows 11 Enterprise version 24H2 - Hotpatch release notes](https://support.>microsoft.com/topic/>release-notes-for-hotpatch-on-windows-11-enterprise-version-24h2-c0906ee6-5e62-498f->bd5a-8f4966349f3c)
+> - [Windows 11 Enterprise version 25H2 - Hotpatch release notes](https://support.microsoft.com/topic/release-notes-for-hotpatch-on-windows-11-enterprise-version-25h2-0bbaa1c7-5070-41ca-a7c9-4ead79602dbf)
+> - [Windows 11 Enterprise version 24H2 - Hotpatch release notes](https://support.microsoft.com/topic/release-notes-for-hotpatch-on-windows-11-enterprise-version-24h2-c0906ee6-5e62-498f-bd5a-8f4966349f3c)
 >
 >They’re also linked from the Hotpatch calendar section of [Windows 11 release information](/windows/release-health/windows11-release-information#windows-11-hotpatch-calendar) on Microsoft Learn, which provides anchored links to release notes by Windows version.
