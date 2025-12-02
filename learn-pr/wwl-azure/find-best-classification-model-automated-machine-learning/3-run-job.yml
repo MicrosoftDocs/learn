@@ -6,7 +6,7 @@ metadata:
   description: Learn how to configure and submit an automated machine learning experiment run with the Python SDK (v2) for Azure Machine Learning.
   author: wwlpublish
   ms.author: madiepev
-  ms.date: 07/10/2024
+  ms.date: 12/01/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
@@ -14,4 +14,4 @@ metadata:
 durationInMinutes: 12
 content: |
   [!include[](includes/3-run-job.md)]
-
+

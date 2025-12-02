@@ -6,7 +6,7 @@ metadata:
   description: Knowledge check
   author: wwlpublish
   ms.author: madiepev
-  ms.date: 07/10/2024
+  ms.date: 12/01/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
@@ -40,4 +40,4 @@ quiz:
     - content: "Check out the repo, sign in to Azure, install CLI and run trigger an Azure Machine Learning job."
       isCorrect: false
       explanation: "Incorrect. You need to install the Machine Learning extension for the CLI to run a job."
-
+

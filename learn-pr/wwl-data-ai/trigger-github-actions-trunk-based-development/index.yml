@@ -3,7 +3,7 @@ uid: learn.wwl.trigger-github-actions-trunk-based-development
 metadata:
   title: Trigger GitHub Actions with feature-based development
   description: Learn how to trigger GitHub Actions with feature-based development to achieve machine learning operations or MLOps.
-  ms.date: 07/25/2024
+  ms.date: 12/01/2025
   ms.update-cycle: 180-days
   author: wwlpublish
   ms.author: madiepev
@@ -43,4 +43,4 @@ units:
 - learn.wwl.trigger-github-actions-trunk-based-development.summary
 badge:
   uid: learn.wwl.trigger-github-actions-trunk-based-development.badge
-
+

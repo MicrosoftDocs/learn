@@ -49,7 +49,7 @@ When you encourage the model to suggest clarifications or extra details can help
 
 When you want the model to generate output in a specific format, you can provide a template or structure in your prompt.
 
-For example, if you're a sports reporting composing a historical article, you can request that the model follow a specific template, which includes headings, bullet points, and data breakdowns.
+For example, if you're a sports reporter composing a historical article, you can request that the model follow a specific template, which includes headings, bullet points, and data breakdowns.
 
 |                  | No template specified | With template specified |
 |------------------|-----------------------|-------------------------|

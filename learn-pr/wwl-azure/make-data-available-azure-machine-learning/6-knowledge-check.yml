@@ -6,7 +6,7 @@ metadata:
   description: Knowledge check
   author: wwlpublish
   ms.author: madiepev
-  ms.date: 07/10/2024
+  ms.date: 12/01/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
@@ -36,4 +36,4 @@ quiz:
     - content: "MLTable"
       isCorrect: true
       explanation: "Correct. MLTable is ideal when the schema changes frequently. Then, you only need to make changes in one location instead of multiple."
-
+
