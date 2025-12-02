@@ -6,7 +6,7 @@ metadata:
   description: Develop locally with Visual Studio Code
   author: wwlpublish
   ms.author: madiepev
-  ms.date: 07/25/2024
+  ms.date: 12/01/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
@@ -15,4 +15,4 @@ labModal: false
 durationInMinutes: 8
 content: |
   [!include[](includes/4-develop-locally-visual-studio-code.md)]
-
+

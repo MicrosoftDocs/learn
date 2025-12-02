@@ -6,11 +6,11 @@ metadata:
   description: Create a data asset
   author: wwlpublish
   ms.author: madiepev
-  ms.date: 07/10/2024
+  ms.date: 12/01/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
 durationInMinutes: 12
 content: |
   [!include[](includes/4-create-data-asset.md)]
-
+

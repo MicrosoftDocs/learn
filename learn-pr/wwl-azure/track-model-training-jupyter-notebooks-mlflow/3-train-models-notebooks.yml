@@ -6,11 +6,11 @@ metadata:
   description: Train and track models in notebooks
   author: wwlpublish
   ms.author: madiepev
-  ms.date: 07/20/2024
+  ms.date: 12/01/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
 durationInMinutes: 10
 content: |
   [!include[](includes/3-train-models-notebooks.md)]
-
+

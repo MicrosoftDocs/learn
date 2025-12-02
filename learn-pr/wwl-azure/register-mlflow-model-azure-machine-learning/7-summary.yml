@@ -6,11 +6,11 @@ metadata:
   description: In this module, you've learned how to log and register models with MLflow.
   author: wwlpublish
   ms.author: madiepev
-  ms.date: 11/06/2024
+  ms.date: 12/01/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
 durationInMinutes: 1
 content: |
   [!include[](includes/7-summary.md)]
-
+

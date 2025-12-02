@@ -6,11 +6,11 @@ metadata:
   description: Explore how to prepare a machine learning model for production through an MLOps architecture.
   author: wwlpublish
   ms.author: madiepev
-  ms.date: 08/25/2024
+  ms.date: 12/01/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
 durationInMinutes: 10
 content: |
   [!include[](includes/2-explore-machine-learning-operations-solution-architecture.md)]
-
+

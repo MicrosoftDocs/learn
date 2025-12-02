@@ -3,7 +3,7 @@ uid: learn.get-started-prompt-flow
 metadata:
   title: Get started with prompt flow to develop Large Language Model (LLM) apps
   description: Get started with prompt flow to develop Large Language Model (LLM) apps.
-  ms.date: 11/30/2023
+  ms.date: 12/01/2025
   ms.update-cycle: 180-days
   author: madiepev
   ms.author: madiepev
@@ -43,4 +43,4 @@ units:
 - learn.get-started-prompt-flow.summary
 badge:
   uid: learn.get-started-prompt-flow.badge
-
+

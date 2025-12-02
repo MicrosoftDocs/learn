@@ -4,7 +4,7 @@ title: Model deployment
 metadata:
   title: Model deployment
   description: "Model deployment"
-  ms.date: 07/10/2024
+  ms.date: 12/01/2025
   author: wwlpublish
   ms.author: madiepev
   ms.topic: unit
@@ -12,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 7
 content: |
-  [!include[](includes/4-model-deployment.md)]
+  [!include[](includes/4-model-deployment.md)]
