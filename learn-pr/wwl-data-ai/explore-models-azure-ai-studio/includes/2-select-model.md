@@ -72,7 +72,7 @@ Now you know the language models that are available to you, you should have an u
 
 ## How do I *select* the best model for my use case?
 
-To select the best language model for you use case, you need to decide on what criteria you're using to filter the models. The criteria are the necessary characteristics you identify for a model. Four characteristics you can consider are:
+To select the best language model for your use case, you need to decide on what criteria you're using to filter the models. The criteria are the necessary characteristics you identify for a model. Four characteristics you can consider are:
 
 - **Task type**: What type of task do you need the model to perform? Does it include the understanding of only text, or also audio, or video, or multiple modalities?
 - **Precision**: Is the base model good enough or do you need a fine-tuned model that is trained on a specific skill or dataset?
