@@ -7285,6 +7285,11 @@ achievements:
   title: Introduction to Azure AI Translator
   summary: Azure AI Translator is a cloud-based service that uses AI to reliably translate text and documents between languages in near real time. You can add multilanguage user experiences to your apps in 90 languages and dialects, along with free text translation with any operating system. Translator also has customizable translation models that can better understand industry-specific terminology or pronouns.
   iconUrl: /training/achievements/intro-to-translator.svg
+- uid: learn.build-serverless-api-with-functions-api-management.badge
+  type: badge
+  title: Expose multiple Azure Function apps as a consistent API by using Azure API Management
+  summary: Combine multiple Azure Functions apps into a unified interface by importing them into a single Azure API Management instance.
+  iconUrl: /training/achievements/build-serverless-api-with-functions-api-management.svg
 - uid: learn.azure.monitor-github-events-with-a-function-triggered-by-a-webhook.badge
   type: badge
   title: Monitor GitHub events by using a webhook with Azure Functions

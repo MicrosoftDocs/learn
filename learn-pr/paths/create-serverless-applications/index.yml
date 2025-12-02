@@ -33,7 +33,6 @@ subjects:
 modules:
 - learn.intro-azure-functions
 - learn.create-serverless-logic-with-functions
-- learn.build-serverless-api-with-functions-api-management
 - learn.student-evangelism.serverless-go
 trophy:
   uid: learn.create-serverless-applications.trophy
