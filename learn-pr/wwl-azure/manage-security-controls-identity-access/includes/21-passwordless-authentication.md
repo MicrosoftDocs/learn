@@ -8,17 +8,17 @@ Microsoft offers the following three passwordless authentication options that in
 
 ## Use the passwordless methods wizard
 
-The [Microsoft Entra admin center](https://entra.microsoft.com/) has a passwordless methods wizard that will help you to select the appropriate method for each of your audiences.
+The [Microsoft Entra admin center](https://entra.microsoft.com/) has a passwordless methods wizard that helps you to select the appropriate method for each of your audiences.
 
 ## Passwordless authentication scenarios
 
-Microsoft's passwordless authentication methods enable many scenarios. Consider your organizational needs, prerequisites, and the capabilities of each authentication method to select your passwordless authentication strategy.
+Microsoft's passwordless authentication methods enable many scenarios. Consider your organizational needs, prerequisites, and the capabilities of each authentication method before you select your passwordless authentication strategy.
 
 The following table lists the passwordless authentication methods by device types.
 
 | **Device types**                                        | **Passwordless authentication method**                   |
 | ------------------------------------------------------- | -------------------------------------------------------- |
-| Dedicated non-windows devices                           | *Microsoft Authenticator* Security keys                  |
+| Dedicated nonwindows devices                           | *Microsoft Authenticator* Security keys                  |
 | Dedicated Windows 10 computers (version 1703 and later) | *Windows Hello for Business* Security keys               |
 | Dedicated Windows 10 computers (before version 1703)    | *Windows Hello for Business* Microsoft Authenticator app |
 | Shared devices: tablets, and mobile devices             | *Microsoft Authenticator* One-time password sign-in      |
@@ -44,14 +44,14 @@ As part of this deployment plan, we recommend that passwordless authentication b
 
 ### Microsoft Authenticator app and security keys
 
-The prerequisites are determined by your selected passwordless authentication methods.
+The prerequisites determine your selected passwordless authentication methods.
 
 | **Prerequisite**                                                                                                                                                                                                                                | **Microsoft Authenticator** | **FIDO2 Security Keys** |
 | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------- | ----------------------- |
 | [Combined registration for Microsoft Entra multifactor authentication and self-service password reset (SSPR)](/entra/identity/authentication/howto-registration-mfa-sspr-combined) is enabled                        | √                           | √                       |
 | [Users can perform Microsoft Entra multifactor authentication](/entra/identity/authentication/howto-mfa-getstarted)                                                                                                  | √                           | √                       |
-| [Users have registered for Microsoft Entra multifactor authentication and SSPR](/entra/identity/authentication/howto-registration-mfa-sspr-combined)                                                                 | √                           | √                       |
-| [Users have registered their mobile devices to Microsoft Entra ID](/entra/identity/devices/overview)                                                                                                                 | √                           |                         |
+| [Users registered for Microsoft Entra multifactor authentication and SSPR](/entra/identity/authentication/howto-registration-mfa-sspr-combined)                                                                 | √                           | √                       |
+| [Users registered their mobile devices to Microsoft Entra ID](/entra/identity/devices/overview)                                                                                                                 | √                           |                         |
 | Windows 10 version 1809 or higher using a supported browser like Microsoft Edge or Mozilla Firefox (version 67 or higher). Microsoft recommends version 1903 or higher for native support.                                                      |                             | √                       |
 | Compatible security keys. Ensure that you're using a [Microsoft-tested and verified FIDO2 security key](/entra/identity/authentication/concept-authentication-passwordless), or other compatible FIDO2 security key. |                             | √                       |
 
@@ -64,15 +64,15 @@ Select Windows Hello for Business and complete the wizard to determine the prere
 :::image type="content" source="../media/passwordless-wizard-select-52e6cad2-b38b6c15.png" alt-text="Screenshot showing the Windows Hello for Business configuration page.":::
 
 
-The wizard will use your inputs to craft a step-by-step plan for you to follow.
+The wizard uses your inputs to craft a step-by-step plan for you to follow.
 
 ## Plan the project
 
-When technology projects fail, it's typically because of mismatched expectations on impact, outcomes, and responsibilities. To avoid these pitfalls, ensure that you're engaging the right stakeholders and that stakeholder roles in the project are well understood.
+When technology projects fail, it's typically because of mismatched expectations on outcomes, and responsibilities. To avoid these pitfalls, ensure that you're engaging the right stakeholders and that stakeholder roles in the project are well understood.
 
 ### Plan a pilot
 
-When you deploy passwordless authentication, you should first enable one or more pilot groups. You can create groups specifically for this purpose. Add the users who will participate in the pilot to the groups. Then, enable new passwordless authentication methods for the selected groups.
+When you deploy passwordless authentication, you should first enable one or more pilot groups. You can create groups specifically for this purpose. Add the users who participate in the pilot to the groups. Then, enable new passwordless authentication methods for the selected groups.
 
 ### Plan communications
 
@@ -91,7 +91,7 @@ Users register their passwordless method as a part of the combined security info
 
 For the first-time user who doesn't have a password, admins can provide a [Temporary Access Passcode](/entra/identity/authentication/howto-authentication-temporary-access-pass) to register their security information in [https://aka.ms/mysecurityinfo](https://aka.ms/mysecurityinfo) . This is a time-limited passcode and satisfies strong authentication requirements. Temporary Access Pass is a per-user process.
 
-This method can also be used for easy recovery when the user has lost or forgotten their authentication factor such as security key or the Authenticator app but needs to sign in to register a new strong authentication method.
+This method can also be used for easy recovery when the user loses or forgets their authentication factor such as security key or the Authenticator app but needs to sign in to register a new strong authentication method.
 
 > [!NOTE]
 > If you can't use the security key or the Authenticator app for some scenarios, multifactor authentication with a username and password along with another registered method can be used as a fallback option.
@@ -102,7 +102,7 @@ Microsoft Authenticator turns any iOS or Android phone into a strong, passwordle
 
 ### Technical considerations
 
-Active Directory Federation Services (AD FS) Integration - When a user enables the Authenticator passwordless credential, authentication for that user defaults to sending a notification for approval. Users in a hybrid tenant are prevented from being directed to AD FS for sign-in unless they select "Use your password instead." This process also bypasses any on-premises Conditional Access policies, and pass-through authentication (PTA) flows. However, if a login\_hint is specified, the user is forwarded to AD FS and bypasses the option to use the passwordless credential. For non-Microsoft 365 applications which use AD FS for authentication, Microsoft Entra Conditional Access policies will not be applied and you will need to set up access control policies within AD FS.
+Active Directory Federation Services (AD FS) Integration - When a user enables the Authenticator passwordless credential, authentication for that user defaults to sending a notification for approval. Users in a hybrid tenant are prevented from being directed to AD FS for sign-in unless they select "Use your password instead." This process also bypasses any on-premises Conditional Access policies, and pass-through authentication (PTA) flows. However, if a login\_hint is specified, the user is forwarded to AD FS and bypasses the option to use the passwordless credential. For non-Microsoft 365 applications that use AD FS for authentication, Microsoft Entra Conditional Access policies won't be applied and you'll need to set up access control policies within AD FS.
 
 MFA server - End users enabled for multifactor authentication through an organization's on-premises MFA server can create and use a single passwordless phone sign-in credential. If the user attempts to upgrade multiple installations (5 or more) of the Authenticator app with the credential, this change may result in an error.
 
@@ -128,13 +128,13 @@ The following are sample test cases for passwordless authentication with the Aut
 
 | **Scenario**                                                                                                                         | **Solution**                                                                                                                                                                                                                                                          |
 | ------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| User cannot perform combined registration.                                                                                           | Ensure [combined registration](/entra/identity/authentication/concept-registration-mfa-sspr-combined) is enabled.                                                                                                                          |
-| User cannot enable phone sign-in authenticator app.                                                                                  | Ensure user is in scope for deployment.                                                                                                                                                                                                                               |
-| User is NOT in scope for passwordless authentication, but is presented with passwordless sign-in option, which they cannot complete. | Occurs when user has enabled phone sign in in the application prior to the policy being created. To enable sign in, add the user to a group of users enabled for passwordless sign-in. To block sign in: have the user remove their credential from that application. |
+| User can't perform combined registration.                                                                                           | Ensure [combined registration](/entra/identity/authentication/concept-registration-mfa-sspr-combined) is enabled.                                                                                                                          |
+| User can't enable phone sign-in authenticator app.                                                                                  | Ensure user is in scope for deployment.                                                                                                                                                                                                                               |
+| User is NOT in scope for passwordless authentication, but is presented with passwordless sign-in option, which they can't complete. | Occurs when user has enabled phone sign in in the application prior to the policy being created. To enable sign in, add the user to a group of users enabled for passwordless sign-in. To block sign in: have the user remove their credential from that application. |
 
 ## Plan for and deploy FIDO2-compliant security keys
 
-Enable compatible security keys. Here is a list of FIDO2 security key providers that provide keys known to be compatible with the passwordless experience.
+Enable compatible security keys. Review this article for a list of [FIDO2 security key providers](/entra/identity/authentication/concept-fido2-hardware-vendor) that provide keys known to be compatible with the passwordless experience.
 
 ### Plan security key lifecycle
 
