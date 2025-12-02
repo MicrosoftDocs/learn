@@ -1,5 +1,9 @@
 Keeping Windows devices up to date is critical for security, but frequent restarts for updates can disrupt productivity. Hotpatch updates provide a solution by allowing IT administrators to apply security patches without requiring a system restart.
 
+>[!IMPORTANT]
+>
+>“Without restarts” is *not* absolute. No restart is required for three out of every four months, but there may still be other reasons a device needs to restart during that timeframe. If everything proceeds according to the planned calendar, every fourth month includes an obligatory restart.
+
 Hotpatch updates are security only updates (as opposed to nonsecurity or feature updates) that are available for Windows 11 Enterprise, version 24H2 or later, and 64-bit ARM architecture on devices with AMD or Intel x64 processors. They help maintain protection while minimizing operational disruption.  
 
 Key benefits of hotpatching include:
