@@ -7275,6 +7275,11 @@ achievements:
   title: Introduction to machine learning
   summary: A high-level overview of machine learning for people with little or no knowledge of computer science and statistics. You'll learn some essential concepts, explore data, and interactively go through the machine learning lifecycle, using Python to train, save, and use a machine learning model, just like in the real world.
   iconUrl: /training/achievements/machine-learning/introduction-to-machine-learning.svg
+- uid: learn.azure.logic-apps-and-custom-connectors.badge
+  type: badge
+  title: Call an API from an Azure Logic Apps workflow using a custom connector
+  summary: Call any Web API from a logic app workflow using the custom connector.
+  iconUrl: /training/achievements/logic-apps-and-custom-connectors.svg
 - uid: learn.azure.intro-to-translator.badge
   type: badge
   title: Introduction to Azure AI Translator
@@ -7290,3 +7295,18 @@ achievements:
   title: Develop, test, and deploy an Azure Function with Visual Studio
   summary: Create, test, and deploy Azure Functions using Visual Studio and manage Azure Functions code.
   iconUrl: /training/achievements/develop-test-deploy-azure-functions-with-visual-studio.svg
+- uid: learn.azure-create-long-running-serverless-workflow-with-durable-functions.badge
+  type: badge
+  title: Create a long-running serverless workflow with Durable Functions
+  summary: Learn how to orchestrate a long-running workflow as a set of activities using Durable Functions.
+  iconUrl: /training/achievements/azure-create-long-running-serverless-workflow-with-durable-functions.svg
+- uid: learn.chain-azure-functions-data-using-input-output-bindings.badge
+  type: badge
+  title: Chain Azure Functions together using input and output bindings
+  summary: Azure Functions makes it easy for your function code to integrate with data and services. Through the power of bindings, you declare the data sources to read and write, and let Azure Functions take care of the rest.
+  iconUrl: /training/achievements/chain-azure-functions-data-using-bindings.svg
+- uid: learn.winui-101.badge
+  type: badge
+  title: Build your first Windows App by using WinUI & Windows App SDK
+  summary: Create a Windows app using WinUI 3, Windows App SDK, and Community Toolkit in Visual Studio. Set up the development environment, and build a maintainable, testable, and scalable Windows applications using best practices in software architecture.
+  iconUrl: /training/achievements/winui-101-badge.svg

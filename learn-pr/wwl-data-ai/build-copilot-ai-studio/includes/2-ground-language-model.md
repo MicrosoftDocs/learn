@@ -18,7 +18,7 @@ Using RAG is a powerful and easy-to-use technique for many cases in which you wa
 
 ## Adding grounding data to an Azure AI project
 
-You can use Microsoft Foundry to build a custom age that uses your own data to ground prompts. Microsoft Foundry supports a range of data connections that you can use to add data to a project, including:
+You can use Microsoft Foundry to build a custom agent that uses your own data to ground prompts. Microsoft Foundry supports a range of data connections that you can use to add data to a project, including:
 
 - Azure Blob Storage
 - Azure Data Lake Storage Gen2

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-vector-storage-azure-managed-redis.exercise-semantic-search-azure-managed-redis
+title: Exercise - Implement semantic search in Azure Managed Redis
+metadata:
+  title: Exercise - Implement Semantic Search in Azure Managed Redis
+  description: Exercise - Implement semantic search in Azure Managed Redis
+  ms.date: 11/23/2025
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: unit
+azureSandbox: false
+durationInMinutes: 40
+content: |
+  [!include[](includes/5-exercise-semantic-search-azure-managed-redis.md)]

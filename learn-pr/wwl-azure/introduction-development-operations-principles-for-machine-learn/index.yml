@@ -5,7 +5,7 @@ metadata:
   description: Learn about DevOps for machine learning, machine learning operations, and MLOps.
   author: wwlpublish
   ms.author: madiepev
-  ms.date: 07/25/2024
+  ms.date: 12/01/2025
   ms.service: azure-machine-learning
   ms.topic: module
   ms.collection:
@@ -42,4 +42,4 @@ units:
 - learn.wwl.introduction-development-operations-principles-for-machine-learn.summary
 badge:
   uid: learn.wwl.introduction-to-devops-principles-for-machine-learning.badge
-
+

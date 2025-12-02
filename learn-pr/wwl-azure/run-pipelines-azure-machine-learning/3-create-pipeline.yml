@@ -6,11 +6,11 @@ metadata:
   description: Create a pipeline
   author: wwlpublish
   ms.author: madiepev
-  ms.date: 07/20/2024
+  ms.date: 12/01/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
 durationInMinutes: 6
 content: |
   [!include[](includes/3-create-pipeline.md)]
-
+

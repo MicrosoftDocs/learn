@@ -4,10 +4,10 @@ title: Explore fine-tuning foundation models in Azure Machine Learning
 metadata:
   title: Explore fine-tuning foundation models in Azure Machine Learning
   description: "Explore fine-tuning foundation models from the model catalog in Azure Machine Learning"
-  ms.date: 07/25/2024
+  ms.date: 12/01/2025
   author: madiepev
   ms.author: madiepev
   ms.topic: unit
 durationInMinutes: 8
 content: |
-  [!include[](includes/3-finetune-model.md)]
+  [!include[](includes/3-finetune-model.md)]

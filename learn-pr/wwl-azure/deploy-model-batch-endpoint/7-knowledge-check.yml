@@ -6,7 +6,7 @@ metadata:
   description: Knowledge check
   author: wwlpublish
   ms.author: madiepev
-  ms.date: 09/10/2024
+  ms.date: 12/01/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
@@ -36,4 +36,4 @@ quiz:
     - content: "The default deployed model."
       isCorrect: true
       explanation: "Correct. The default deployment will be used to do the actual batch scoring when the endpoint is invoked."
-
+

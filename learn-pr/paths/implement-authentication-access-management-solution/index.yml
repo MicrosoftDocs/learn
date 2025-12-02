@@ -1,13 +1,13 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.implement-authentication-access-management-solution
 metadata:
-  title: 'SC-300: Implement an Authentication and Access Management solution'
-  description: Implement and administer your access management using Microsoft Entra ID. Use MFA, Conditional Access, and identity protection to manager your identity solution. Aligned to SC-300 exam.
+  title: 'Implement an authentication and access management solution'
+  description: 'Implement an authentication and access management solution'
   ms.date: 07/23/2024
   author: wwlpublish
   ms.author: roberts
   ms.topic: learning-path
-title: 'SC-300: Implement an Authentication and Access Management solution'
+title: 'Implement an authentication and access management solution'
 prerequisites: |
   None
 summary: |

@@ -33,8 +33,6 @@ subjects:
 modules:
 - learn.intro-azure-functions
 - learn.create-serverless-logic-with-functions
-- learn.chain-azure-functions-data-using-input-output-bindings
-- learn.azure-create-long-running-serverless-workflow-with-durable-functions
 - learn.build-serverless-api-with-functions-api-management
 - learn.student-evangelism.serverless-go
 trophy:
