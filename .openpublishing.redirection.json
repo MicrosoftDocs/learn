@@ -60410,6 +60410,221 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/azure/build-serverless-api-with-functions-api-management/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-openapi-definition/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-serverless-api-with-functions-api-management/2-import-function-app-api-management.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-openapi-definition/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-serverless-api-with-functions-api-management/3-exercise-import-function-app-api-management.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-openapi-definition/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-serverless-api-with-functions-api-management/4-import-additional-functions-existing-api-gateway.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-openapi-definition/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-serverless-api-with-functions-api-management/5-exercise-import-additional-functions-existing-api-gateway.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-openapi-definition/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-serverless-api-with-functions-api-management/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-openapi-definition/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-serverless-api-with-functions-api-management/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-openapi-definition/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/develop-test-deploy-azure-functions-with-visual-studio/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-create-your-first-function-visual-studio/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/develop-test-deploy-azure-functions-with-visual-studio/2-develop-and-test-azure-functions-locally.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-create-your-first-function-visual-studio/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/develop-test-deploy-azure-functions-with-visual-studio/3-exercise-develop-and-test-azure-functions-locally.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-create-your-first-function-visual-studio/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/develop-test-deploy-azure-functions-with-visual-studio/4-publish-azure-functions.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-create-your-first-function-visual-studio/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/develop-test-deploy-azure-functions-with-visual-studio/5-exercise-publish-azure-functions.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-create-your-first-function-visual-studio/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/develop-test-deploy-azure-functions-with-visual-studio/6-unit-test-azure-functions.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-create-your-first-function-visual-studio/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/develop-test-deploy-azure-functions-with-visual-studio/7-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-create-your-first-function-visual-studio/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/develop-test-deploy-azure-functions-with-visual-studio/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-create-your-first-function-visual-studio/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/monitor-github-events-with-a-function-triggered-by-a-webhook/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-bindings-http-webhook-trigger/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/monitor-github-events-with-a-function-triggered-by-a-webhook/2-create-function-triggered-by-webhook.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-bindings-http-webhook-trigger/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/monitor-github-events-with-a-function-triggered-by-a-webhook/3-exercise-create-function-triggered-by-webhook.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-bindings-http-webhook-trigger/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/monitor-github-events-with-a-function-triggered-by-a-webhook/4-setup-webhook-for-github-repo.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-bindings-http-webhook-trigger/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/monitor-github-events-with-a-function-triggered-by-a-webhook/5-exercise-setup-webhook-for-github-repo.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-bindings-http-webhook-trigger/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/monitor-github-events-with-a-function-triggered-by-a-webhook/6-trigger-function-with-github-event.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-bindings-http-webhook-trigger/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/monitor-github-events-with-a-function-triggered-by-a-webhook/7-exercise-trigger-function-with-github-event.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-bindings-http-webhook-trigger/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/monitor-github-events-with-a-function-triggered-by-a-webhook/8-secure-webhook-payloads-with-secret.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-bindings-http-webhook-trigger/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/monitor-github-events-with-a-function-triggered-by-a-webhook/9-exercise-secure-webhook-payloads-with-secret.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-bindings-http-webhook-trigger/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/monitor-github-events-with-a-function-triggered-by-a-webhook/10-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-bindings-http-webhook-trigger/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/monitor-github-events-with-a-function-triggered-by-a-webhook/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-bindings-http-webhook-trigger/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/chain-azure-functions-data-using-bindings/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-add-output-binding-storage-queue-vs-code/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/chain-azure-functions-data-using-bindings/2-explore-input-and-output-binding-types-portal-lesson.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-add-output-binding-storage-queue-vs-code/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/chain-azure-functions-data-using-bindings/3-explore-input-and-output-binding-types-portal-lab.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-add-output-binding-storage-queue-vs-code/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/chain-azure-functions-data-using-bindings/4-read-data-with-input-bindings-portal-lesson.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-add-output-binding-storage-queue-vs-code/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/chain-azure-functions-data-using-bindings/5-read-data-with-input-bindings-portal-lab.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-add-output-binding-storage-queue-vs-code/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/chain-azure-functions-data-using-bindings/6-write-data-with-output-bindings-portal-lesson.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-add-output-binding-storage-queue-vs-code/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/chain-azure-functions-data-using-bindings/7-write-data-with-output-bindings-portal-lab.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-add-output-binding-storage-queue-vs-code/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/chain-azure-functions-data-using-bindings/8-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-add-output-binding-storage-queue-vs-code/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/chain-azure-functions-data-using-bindings/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-add-output-binding-storage-queue-vs-code/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-long-running-serverless-workflow-with-durable-functions/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/durable/quickstart-js-vscode/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-long-running-serverless-workflow-with-durable-functions/2-what-is-durable-functions.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/durable/quickstart-js-vscode/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-long-running-serverless-workflow-with-durable-functions/3-design-a-workflow-based-on-durable-functions.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/durable/quickstart-js-vscode/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-long-running-serverless-workflow-with-durable-functions/4-exercise-create-a-workflow-using-durable-functions.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/durable/quickstart-js-vscode/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-long-running-serverless-workflow-with-durable-functions/5-control-long-running-tasks-using-timers.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/durable/quickstart-js-vscode/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-long-running-serverless-workflow-with-durable-functions/6-exercise-add-a-durable-timer-to-manage-a-long-running-task.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/durable/quickstart-js-vscode/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-long-running-serverless-workflow-with-durable-functions/7-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/durable/quickstart-js-vscode/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-long-running-serverless-workflow-with-durable-functions/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/durable/quickstart-js-vscode/",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/windows/winui-101/1-introduction.yml",
       "redirect_url": "https://learn.microsoft.com/windows/apps/winui/",
       "redirect_document_id": false
