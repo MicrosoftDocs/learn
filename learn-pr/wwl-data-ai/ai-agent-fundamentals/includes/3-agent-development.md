@@ -1,10 +1,14 @@
-AI agents go beyond traditional apps that just respond to what you tell them—they can **act independently**, **make decisions**, and **work together** to get things done. Building these **proactive systems** requires **specialized frameworks and tools**, and there's now a growing ecosystem of solutions to choose from, each suited to different **skill levels** and **use cases**.
+AI agents go beyond traditional apps that just respond to what you tell them—they can reason, act independently, learn, and work together to get things done. Building these proactive systems requires **specialized frameworks and tools**, and there's now a growing ecosystem of solutions to choose from, each suited to different skill levels and use cases.
 
 Let's explore the available options for agent development and learn how to choose the right one for your needs.
 
-## Traditional AI frameworks: Enhancing apps with intelligence
+## From traditional AI frameworks to agentic AI
 
-Traditional AI frameworks help developers **integrate intelligent capabilities** into applications. These frameworks improve **performance** and **user engagement** in several key ways:
+To understand what makes AI agent frameworks different, it helps to first look at what traditional AI frameworks provide.
+
+### Traditional AI frameworks: Enhancing apps with intelligence
+
+Traditional AI frameworks help developers **integrate intelligent capabilities** into applications. These frameworks improve performance and user engagement in several key ways:
 
 - **Personalization:**  
   AI can analyze user behavior and preferences to deliver tailored recommendations and experiences.  
@@ -20,7 +24,7 @@ Traditional AI frameworks help developers **integrate intelligent capabilities**
 
 ### Beyond traditional AI: The rise of AI agent frameworks
 
-While traditional AI enhances applications, **AI Agent Frameworks** go further by enabling the development of **autonomous, goal-oriented agents**. These agents don't just process data—they **act**, **decide**, and **collaborate** to achieve objectives.
+While traditional AI enhances applications, **AI Agent Frameworks** go further by enabling the development of autonomous, goal-oriented agents. These agents don't just process data—they **reason**, **act**, and **learn** to achieve objectives.
 
 Key capabilities include:
 
@@ -35,9 +39,9 @@ Key capabilities include:
 
 ## Choose the right framework for your needs
 
-Now that you understand the difference between traditional AI frameworks and AI agent frameworks, let's explore the **specific tools and services** available for building agents. Microsoft offers several solutions—from **low-code tools** for business users to **full-featured SDKs** for professional developers—each designed for different scenarios and skill levels.
+Now that you understand the difference between traditional AI frameworks and AI agent frameworks, let's explore the **specific tools and services** available for building agents. Microsoft offers several solutions—from low-code tools for business users to full-featured SDKs for professional developers—each designed for different scenarios and skill levels.
 
-### Microsoft Foundry agent service
+### Microsoft Foundry Agent Service
 
 Microsoft Foundry Agent Service is a managed service in Azure that is designed to provide a framework for creating, managing, and using AI agents within Microsoft Foundry. The service is based on the OpenAI Assistants API but with increased choice of models, data integration, and enterprise security; enabling you to use both the OpenAI SDK and the Azure Foundry SDK to develop agentic solutions.
 

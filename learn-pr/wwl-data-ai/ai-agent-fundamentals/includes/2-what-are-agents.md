@@ -26,7 +26,7 @@ The diagram shows the following process:
 
 ## Explore the travel agent's capabilities
 
-In the previous unit, you also learned about a **travel booking agent** that extends this scenario into a **multi-agent solution**. This agent books flights and hotels, then automatically coordinates with the expense agent to submit claims. Here's how the travel agent demonstrates multi-agent coordination:
+In the previous unit, you also learned about a travel booking agent that extends this scenario into a multi-agent solution. This agent books flights and hotels, then automatically coordinates with the expense agent to submit claims. Here's how the travel agent demonstrates multi-agent coordination:
 
 - **Service integration**: Books flights and hotels through external travel service APIs.
 - **Cross-agent communication**: Initiates expense claims through the expense agent with appropriate receipts.
