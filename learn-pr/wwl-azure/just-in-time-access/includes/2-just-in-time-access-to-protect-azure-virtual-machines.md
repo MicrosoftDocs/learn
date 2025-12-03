@@ -4,7 +4,7 @@ Learn how to apply Just in Time (JIT) access to your VMs using the Azure portal:
 - Using Microsoft Defender for Cloud or Azure Virtual Machines
 - Programmatically
 - Via REST API
-see [How to secure your management ports with JIT](/azure/defender-for-cloud/just-in-time-access-usage).
+See [How to secure your management ports with JIT](/azure/defender-for-cloud/just-in-time-access-usage).
 
 ## Why JIT virtual machine access is the solution
 
