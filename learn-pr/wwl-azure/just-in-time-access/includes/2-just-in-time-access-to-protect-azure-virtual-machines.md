@@ -1,5 +1,3 @@
-## The risk of open management ports on a virtual machine
-
 Threat actors actively hunt for accessible machines with open management ports, like **Remote Desktop Protocol (RDP)** or **Secure Shell (SSH)**, using automated scanning tools and brute-force attacks. All of your virtual machines are potential targets for an attack. When a virtual machine is successfully compromised, it's used as the entry point to attack further resources within your environment and can lead to lateral movement across your network.
 
 Learn how to apply Just in Time (JIT) access to your VMs using the Azure portal:

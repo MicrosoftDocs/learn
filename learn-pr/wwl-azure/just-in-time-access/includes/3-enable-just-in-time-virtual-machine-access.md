@@ -125,19 +125,19 @@ You can enable JIT on a VM from the Azure virtual machines pages of the Azure po
 
 4. Under **Just-in-time access**, select **Enable just-in-time**. By default, just-in-time access for the VM uses these settings:
 
- -  Windows machines
-     -  RDP port: 3389
-     -  Maximum allowed access: Three hours
-     -  Allowed source IP addresses: Any
- -  Linux machines
-     -  SSH port: 22
-     -  Maximum allowed access: Three hours
-     -  Allowed source IP addresses: Any
+    -  Windows machines
+        -  RDP port: 3389
+        -  Maximum allowed access: Three hours
+        -  Allowed source IP addresses: Any
+    -  Linux machines
+        -  SSH port: 22
+        -  Maximum allowed access: Three hours
+        -  Allowed source IP addresses: Any
 
 5. To edit any of these values or add more ports to your JIT configuration, use Microsoft Defender for Cloud's just-in-time page:
 
- -  From Defender for Cloud's menu, select **Just-in-time VM access**.<br>
- -  From the Configured tab, right-click on the VM to which you want to add a port, and select **Edit**.<br>
+    - From Defender for Cloud's menu, select **Just-in-time VM access**.<br>
+    - From the Configured tab, right-click on the VM to which you want to add a port, and select **Edit**.<br>
 
 :::image type="content" source="../media/virtual-machine-configuration-page-24446245.png" alt-text="Screenshot showing how to edit the virtual machine from the configuration page.":::
 
@@ -168,7 +168,7 @@ To request access from Azure virtual machines:
 
 To enable just-in-time VM access from PowerShell, use the official Microsoft Defender for Cloud PowerShell cmdlet `Set-AzJitNetworkAccessPolicy`.
 
-**Example** \- Enable just-in-time VM access on a specific VM with the following rules:
+**Example** - Enable just-in-time VM access on a specific VM with the following rules:
 
  -  Close ports 22 and 3389
  -  Set a maximum time window of 3 hours for each so they can be opened per approved request
