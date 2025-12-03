@@ -4,7 +4,7 @@ Code challenges throughout these modules will reinforce what you've learned and 
 
 ### Challenge: Write code in the C# Code Editor to display two messages
 
-1. Select all of the code in the [C# Code Editor](https://microsoftlearning.github.io/c-sharp-minor/), and press <kbd>Delete</kbd> or <kbd>Backspace</kbd> to delete it.
+1. Select all of the code in the [C# Code Editor](https://microsoftlearning.github.io/c-sharp-minor?azure-portal=true), and press <kbd>Delete</kbd> or <kbd>Backspace</kbd> to delete it.
 
 1. Write code that produces the following output:
 

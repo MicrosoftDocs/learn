@@ -11,7 +11,7 @@ In this exercise, you'll declare a variable, assign it a value, retrieve its val
 
 First, let's clear the code you wrote previously and create a variable.
 
-1. Select all of the code in the [C# Code Editor](https://microsoftlearning.github.io/c-sharp-minor/), and press <kbd>Delete</kbd> or <kbd>Backspace</kbd> to delete it.
+1. Select all of the code in the [C# Code Editor](https://microsoftlearning.github.io/c-sharp-minor?azure-portal=true), and press <kbd>Delete</kbd> or <kbd>Backspace</kbd> to delete it.
 
 1. Enter the following code in the code editor:
 
