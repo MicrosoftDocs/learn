@@ -7,7 +7,7 @@ Suppose you've been asked to create a mockup of a command-line tool that will ge
 
 In this exercise, you'll learn different techniques to display special characters and add different types of formatting to the output.
 
-A C# code editor is available to use directly in the browser: [C# Code Editor](https://microsoftlearning.github.io/c-sharp-minor/). This editor provides a lightweight environment for writing, running, and testing C# code without needing to install any software on your local computer.
+A C# code editor is available to use directly in the browser: [C# Code Editor](https://microsoftlearning.github.io/c-sharp-minor?azure-portal=true). This editor provides a lightweight environment for writing, running, and testing C# code without needing to install any software on your local computer.
 
 ### Character escape sequences
 

@@ -13,4 +13,3 @@ metadata:
 durationInMinutes: 6
 content: |
   [!include[](includes/5-implicitly-typed-local-variables.md)]
-interactive: csharp

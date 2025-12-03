@@ -30,7 +30,7 @@ These same techniques can be used for subtraction, multiplication, and more. The
 
 ### Write code to increment and decrement a value
 
-1. Select all of the code you wrote previously in the [C# Code Editor](https://microsoftlearning.github.io/c-sharp-minor/) and press <kbd>Delete</kbd> or <kbd>Backspace</kbd> to delete it.
+1. Select all of the code you wrote previously in the [C# Code Editor](https://microsoftlearning.github.io/c-sharp-minor?azure-portal=true) and press <kbd>Delete</kbd> or <kbd>Backspace</kbd> to delete it.
 
 1. Enter the following code in the C# Code Editor:
 

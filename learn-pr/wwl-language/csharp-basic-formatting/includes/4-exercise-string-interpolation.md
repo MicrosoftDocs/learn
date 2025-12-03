@@ -27,7 +27,7 @@ In the following exercise, you'll rewrite the previous messages using string int
 
 To interpolate two strings together, you create a literal string and prefix the string with the `$` symbol. The literal string should contain at least one set of curly braces `{}` and inside of those characters you use the name of a variable.
 
-1. Select all of the code you wrote previously in the [C# Code Editor](https://microsoftlearning.github.io/c-sharp-minor/), and press <kbd>Delete</kbd> or <kbd>Backspace</kbd> to delete it.
+1. Select all of the code you wrote previously in the [C# Code Editor](https://microsoftlearning.github.io/c-sharp-minor?azure-portal=true), and press <kbd>Delete</kbd> or <kbd>Backspace</kbd> to delete it.
 
 1. Enter the following code in the C# Code Editor:
 
@@ -47,7 +47,7 @@ To interpolate two strings together, you create a literal string and prefix the 
 
 You can perform several interpolation operations in the same line of code.
 
-1. Select all of the code you wrote previously in the [C# Code Editor](https://microsoftlearning.github.io/c-sharp-minor/), and press <kbd>Delete</kbd> or <kbd>Backspace</kbd> to delete it.
+1. Select all of the code you wrote previously in the [C# Code Editor](https://microsoftlearning.github.io/c-sharp-minor?azure-portal=true), and press <kbd>Delete</kbd> or <kbd>Backspace</kbd> to delete it.
 
 1. Enter the following code in the C# Code Editor:
 

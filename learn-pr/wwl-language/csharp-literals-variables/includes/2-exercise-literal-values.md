@@ -13,13 +13,13 @@ Use the string data type whenever you have alphanumeric words, phrases, or data 
 
 There are many data types in C#. But as you're getting started, you only need to know about five or six data types since they cover most scenarios. Let's display a literal instance of data type to output.
 
-A C# code editor is available to use directly in the browser: [C# Code Editor](https://microsoftlearning.github.io/c-sharp-minor/). This editor provides a lightweight environment for writing, running, and testing C# code without needing to install any software on your local computer.
+A C# code editor is available to use directly in the browser: [C# Code Editor](https://microsoftlearning.github.io/c-sharp-minor?azure-portal=true). This editor provides a lightweight environment for writing, running, and testing C# code without needing to install any software on your local computer.
 
 ### Use character literals
 
 If you only wanted a single alphanumeric character printed to screen, you could create a **char literal** by surrounding one alphanumeric character in single quotes. The term `char` is short for *character*. In C#, this data type is officially named "char", but frequently referred to as a "character".
 
-1. Open the [C# Code Editor](https://microsoftlearning.github.io/c-sharp-minor/) in a new browser window or tab.
+1. Open the [C# Code Editor](https://microsoftlearning.github.io/c-sharp-minor?azure-portal=true) in a new browser window or tab.
 
     You can position the browser windows side-by-side so that you can refer to these instructions while you work in the C# Code Editor.
 
