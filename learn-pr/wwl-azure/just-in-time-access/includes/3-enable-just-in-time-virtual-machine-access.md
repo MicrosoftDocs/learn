@@ -139,11 +139,11 @@ You can enable JIT on a VM from the Azure virtual machines pages of the Azure po
     - From Defender for Cloud's menu, select **Just-in-time VM access**.<br>
     - From the Configured tab, right-click on the VM to which you want to add a port, and select **Edit**.<br>
 
-:::image type="content" source="../media/virtual-machine-configuration-page-24446245.png" alt-text="Screenshot showing how to edit the virtual machine from the configuration page.":::
+    :::image type="content" source="../media/virtual-machine-configuration-page-24446245.png" alt-text="Screenshot showing how to edit the virtual machine from the configuration page.":::
 
 
- -  **Under JIT VM access configuration**, you can either edit the existing settings of an already protected port or add a new custom port.
- -  When you've finished editing the ports, select **Save**.<br>
+    -  **Under JIT VM access configuration**, you can either edit the existing settings of an already protected port or add a new custom port.
+    -  When you've finished editing the ports, select **Save**.<br>
 
 #### Request access to a JIT-enabled VM from the Azure virtual machine's connect page
 
