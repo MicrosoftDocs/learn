@@ -46,13 +46,13 @@ Here's how it works:
 
 1. Apply a CNOT operation to the qubit pair. Recall that the control qubit is in a superposition state and the target qubit is in the :::no-loc text="$\\ket{0_t}$"::: state.
 
-    :::no-loc text="$$
+    $$
     \\begin{aligned}
     CNOT \\frac{1}{\\sqrt{2}}(\\ket{0_c}+\\ket{1_c})\\ket{0}_t &= CNOT \\frac{1}{\\sqrt2}(\\ket{0_c 0_t}+\\ket{1_c 0_t})\\\\
     &= \\frac{1}{\\sqrt2}(CNOT \\ket{0_c 0_t} + CNOT \\ket{1_c 0_t})\\\\
     &= \\frac{1}{\\sqrt2}(\\ket{0_c 0_t}+\\ket{1_c 1_t})
     \\end{aligned}
-    $$":::
+    $$
 
 The state :::no-loc text="$\\frac{1}{\\sqrt2}(\\ket{0_c 0_t}+\\ket{1_c 1_t})$"::: is entangled. This particular entangled state is one of the four Bell states, :::no-loc text="$\\ket{\\phi^{+}}$":::.
 
@@ -179,7 +179,7 @@ To create the Bell state :::no-loc text="$\\ket{\\phi^+}$"::: in Q#, follow thes
 
 To create other Bell states, apply additional Pauli :::no-loc text="$X$"::: or :::no-loc text="$Z$"::: operations to the qubits.
 
-For example, to create the Bell state :::no-loc text="$\\ket{\\phi^-}=\\frac1{\\sqrt2}(\\ket{00}-\\ket{11})$, apply the Pauli $Z$ operation to the control qubit after you apply the Hadamard gate, but before you apply CNOT. The :::no-loc text="$Z$"::: operation flips the state :::no-loc text="$\\ket{+}$"::: to $\\ket{-}$":::.
+For example, to create the Bell state :::no-loc text="$\\ket{\\phi^-}=\\frac1{\\sqrt2}(\\ket{00}-\\ket{11})$":::, apply the Pauli $Z$ operation to the control qubit after you apply the Hadamard gate, but before you apply CNOT. The :::no-loc text="$Z$"::: operation flips the state :::no-loc text="$\\ket{+}$"::: to :::no-loc text="$\\ket{-}$":::.
 
 > [!NOTE]
 > The states :::no-loc text="$\\frac{1}{\\sqrt{2}}(\\ket{0}+\\ket{1})$"::: and :::no-loc text="$\\frac{1}{\\sqrt{2}}(\\ket{0} - \\ket{1})$"::: are also known as :::no-loc text="$\\ket{+}$"::: and :::no-loc text="$\\ket{-}$":::, respectively.
@@ -195,15 +195,15 @@ Here's how to create the :::no-loc text="$\\ket{\\phi^-}$"::: state:
 
     :::no-loc text="$$Z \\frac{1}{\\sqrt{2}}(\\ket{0_c} + \\ket{1_c}) = \\frac{1}{\\sqrt{2}}(\\ket{0_c} - \\ket{1_c}) = \\ket{-}_c$$":::
 
-1. Apply the CNOT operation to the control qubit and the target qubit, which is in the :::no-loc text="$\ket{0_t}$"::: state.
+1. Apply the CNOT operation to the control qubit and the target qubit, which is in the :::no-loc text="$\\ket{0_t}$"::: state.
 
-    ":::no-loc text="$$
+    $$
     \\begin{aligned}
     CNOT \\frac{1}{\\sqrt{2}}(\\ket{0_c}-\\ket{1_c})\\ket{0}_t &= CNOT \\frac{1}{\\sqrt2}(\\ket{0_c 0_t}-\\ket{1_c 0_t})\\\\
     &= \\frac{1}{\\sqrt2}(CNOT \\ket{0_c 0_t} - CNOT \\ket{1_c 0_t})\\\\
     &= \\frac{1}{\\sqrt2}(\\ket{0_c 0_t}-\\ket{1_c 1_t})
     \\end{aligned}
-    $$":::
+    $$
 
 To create the :::no-loc text="$\\ket{\\phi^-}$"::: Bell state in Q#, replace the code in the your **Main.qs** with the following code:
 
