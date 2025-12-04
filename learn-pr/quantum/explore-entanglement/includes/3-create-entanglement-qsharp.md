@@ -36,7 +36,7 @@ Suppose that you have a two-qubit system in the state :::no-loc text="$\\ket{00}
 
 Here's how it works:
 
-1. Choose one qubit in the :::no-loc text="$\\ket{00}$"::: state to be the control qubit and the other qubit to be the target qubit. Here, we choose the leftmost qubit to be the control and the rightmost qubit to be the target.
+1. Choose one qubit in the c state to be the control qubit and the other qubit to be the target qubit. Here, we choose the leftmost qubit to be the control and the rightmost qubit to be the target.
 1. Put only the control qubit into an equal superposition state. To do so, apply an H operation to only the control qubit:
 
    :::no-loc text="$$H \\ket{0_c} = \\frac{1}{\\sqrt{2}}(\\ket{0_c} + \\ket{1_c})$$":::
@@ -48,7 +48,7 @@ Here's how it works:
 
     $$
     \\begin{aligned}
-    CNOT \\frac{1}{\\sqrt{2}}(\\ket{0_c}+\\ket{1_c})\\ket{0}_t &= CNOT \\frac{1}{\\sqrt2}(\\ket{0_c 0_t}+\\ket{1_c 0_t})\\\\
+    CNOT \\frac{1}{\\sqrt{2}}(\\ket{0_c}+\\ket{1_c})\\ket{0_t} &= CNOT \\frac{1}{\\sqrt2}(\\ket{0_c 0_t}+\\ket{1_c 0_t})\\\\
     &= \\frac{1}{\\sqrt2}(CNOT \\ket{0_c 0_t} + CNOT \\ket{1_c 0_t})\\\\
     &= \\frac{1}{\\sqrt2}(\\ket{0_c 0_t}+\\ket{1_c 1_t})
     \\end{aligned}
@@ -189,17 +189,17 @@ Here's how to create the :::no-loc text="$\\ket{\\phi^-}$"::: state:
 1. Create two qubits in the state :::no-loc text="$\\ket{00}$":::.
 1. Put the control qubit into a superposition state with the :::no-loc text="$H$"::: operation:
 
-   :::no-loc text="$$H \\ket{0_c} = \\frac{1}{\\sqrt{2}}(\\ket{0_c} + \\ket{1_c}) = \\ket{+}_c$$":::
+   :::no-loc text="$$H \\ket{0_c} = \\frac{1}{\\sqrt{2}}(\\ket{0_c} + \\ket{1_c}) = \\ket{+_c}$$":::
 
 1. Apply the :::no-loc text="$Z$"::: operation to the control qubit.
 
-    :::no-loc text="$$Z \\frac{1}{\\sqrt{2}}(\\ket{0_c} + \\ket{1_c}) = \\frac{1}{\\sqrt{2}}(\\ket{0_c} - \\ket{1_c}) = \\ket{-}_c$$":::
+    :::no-loc text="$$Z \\frac{1}{\\sqrt{2}}(\\ket{0_c} + \\ket{1_c}) = \\frac{1}{\\sqrt{2}}(\\ket{0_c} - \\ket{1_c}) = \\ket{-_c}$$":::
 
 1. Apply the CNOT operation to the control qubit and the target qubit, which is in the :::no-loc text="$\\ket{0_t}$"::: state.
 
     $$
     \\begin{aligned}
-    CNOT \\frac{1}{\\sqrt{2}}(\\ket{0_c}-\\ket{1_c})\\ket{0}_t &= CNOT \\frac{1}{\\sqrt2}(\\ket{0_c 0_t}-\\ket{1_c 0_t})\\\\
+    CNOT \\frac{1}{\\sqrt{2}}(\\ket{0_c}-\\ket{1_c})\\ket{0_t} &= CNOT \\frac{1}{\\sqrt2}(\\ket{0_c 0_t}-\\ket{1_c 0_t})\\\\
     &= \\frac{1}{\\sqrt2}(CNOT \\ket{0_c 0_t} - CNOT \\ket{1_c 0_t})\\\\
     &= \\frac{1}{\\sqrt2}(\\ket{0_c 0_t}-\\ket{1_c 1_t})
     \\end{aligned}
