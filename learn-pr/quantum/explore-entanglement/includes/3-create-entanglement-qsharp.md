@@ -71,19 +71,16 @@ To create a Bell state with Q# code, follow these steps in Visual Studio Code (V
 
 To create the Bell state :::no-loc text="$\\ket{\\phi^+}$"::: in Q#, follow these steps:
 
-1. Import the `Microsoft.Quantum.Diagnostics` namespace from the Q# standard library so that you can use the `DumpMachine` function. This function shows information about the qubit states when you call the function in your code. To import the namespace, copy the following Q# code into your **Main.qs** file:
+1. Import the `Std.Diagnostics` namespace from the Q# standard library so that you can use the `DumpMachine` function. This function shows information about the qubit states when you call the function in your code. To import the namespace, copy the following Q# code into your **Main.qs** file:
 
     ```qsharp
-    import Microsoft.Quantum.Diagnostics.*; // Aka Std.Diagnostics.*;
+    import Std.Diagnostics.*;
     ```
-
-    > [!TIP]
-    > You can use `Std` instead of `Microsoft.Quantum` to import from the standard library. For example, `import Std.Diagnostics.*` is equivalent to `import Microsoft.Quantum.Diagnostics.*`.
 
 1. Create the `Main` operation that returns two `Result` type values, which are the measurement results of the qubits.
 
     ```qsharp
-    import Microsoft.Quantum.Diagnostics.*; // Aka Std.Diagnostics.*;
+    import Std.Diagnostics.*;
 
     operation Main() : (Result, Result) {
         // Your code goes here
@@ -93,7 +90,7 @@ To create the Bell state :::no-loc text="$\\ket{\\phi^+}$"::: in Q#, follow thes
 1. Inside the `Main` operation, allocate two qubits to be entangled, `q1` and `q2`.
 
     ```qsharp
-    import Microsoft.Quantum.Diagnostics.*; // Aka Std.Diagnostics.*;
+    import Std.Diagnostics.*;
 
     operation Main() : (Result, Result) {
         use (q1, q2) = (Qubit(), Qubit());
@@ -103,7 +100,7 @@ To create the Bell state :::no-loc text="$\\ket{\\phi^+}$"::: in Q#, follow thes
 1. Apply the Hadamard gate, `H`, to the control qubit,`q1`. This puts only that qubit into a superposition state. Then apply the CNOT gate, `CNOT`, to both qubits to entangle the two qubits. The first argument to `CNOT` is the control qubit and the second argument is the target qubit.
 
     ```qsharp
-    import Microsoft.Quantum.Diagnostics.*; // Aka Std.Diagnostics.*;
+    import Std.Diagnostics.*; 
 
     operation Main() : (Result, Result) {
         use (q1, q2) = (Qubit(), Qubit());
@@ -116,7 +113,7 @@ To create the Bell state :::no-loc text="$\\ket{\\phi^+}$"::: in Q#, follow thes
 1. Use the `DumpMachine` function to display the state of the qubits after you entangle them. Note that `DumpMachine` doesn't perform a measurement on the qubits, so `DumpMachine` doesn't affect the qubit states.
 
     ```qsharp
-    import Microsoft.Quantum.Diagnostics.*; // Aka Std.Diagnostics.*;
+    import Std.Diagnostics.*;
 
     operation Main() : (Result, Result) {
         use (q1, q2) = (Qubit(), Qubit());
@@ -131,7 +128,7 @@ To create the Bell state :::no-loc text="$\\ket{\\phi^+}$"::: in Q#, follow thes
 1. Use the `M` operation to measure the qubits, and store the results in `m1` and `m2`. Then use the `Reset` operation to reset the qubits.
 
     ```qsharp
-    import Microsoft.Quantum.Diagnostics.*; // Aka Std.Diagnostics.*;
+    import Std.Diagnostics.*;
 
     operation Main() : (Result, Result) {
 
@@ -151,7 +148,7 @@ To create the Bell state :::no-loc text="$\\ket{\\phi^+}$"::: in Q#, follow thes
 1. Return the measurement results of the qubits with the `return` statement. Here is final program in your **Main.qs** file:
 
     ```qsharp
-    import Microsoft.Quantum.Diagnostics.*; // Aka Std.Diagnostics.*;
+    import Std.Diagnostics.*;
 
     operation Main() : (Result, Result) {
         use (q1, q2) = (Qubit(), Qubit());
@@ -208,7 +205,7 @@ Here's how to create the :::no-loc text="$\\ket{\\phi^-}$"::: state:
 To create the :::no-loc text="$\\ket{\\phi^-}$"::: Bell state in Q#, replace the code in the your **Main.qs** with the following code:
 
 ```qsharp
-import Microsoft.Quantum.Diagnostics.*; // Aka Std.Diagnostics.*;
+import Std.Diagnostics.*;
     
 operation Main() : (Result, Result) {
     use (q1, q2) = (Qubit(), Qubit());
