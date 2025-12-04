@@ -13,4 +13,3 @@ metadata:
 durationInMinutes: 10
 content: |
   [!include[](includes/2-exercise-literal-values.md)]
-interactive: csharp

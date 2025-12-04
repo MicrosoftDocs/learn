@@ -5,7 +5,7 @@ In this exercise, you'll calculate the final GPA and modify the console output t
 
 ## Calculate the final GPA
 
-1. In the [C# Code Editor](https://microsoftlearning.github.io/c-sharp-minor/), locate the Console.WriteLine() statements that are used to display the course information.
+1. In the [C# Code Editor](https://microsoftlearning.github.io/c-sharp-minor?azure-portal=true), locate the Console.WriteLine() statements that are used to display the course information.
 
 1. Remove the following code from the previous exercise:
 
