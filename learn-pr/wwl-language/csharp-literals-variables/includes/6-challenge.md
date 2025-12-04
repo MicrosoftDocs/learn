@@ -5,7 +5,7 @@ In this challenge, you'll write code that will combine literal and variable valu
 
 ### Challenge: Display literal and variable values
 
-1. Select all of the code you wrote previously in the [C# Code Editor](https://microsoftlearning.github.io/c-sharp-minor/) then select the <kbd>Delete</kbd> or <kbd>Backspace</kbd> key to delete it.
+1. Select all of the code you wrote previously in the [C# Code Editor](https://microsoftlearning.github.io/c-sharp-minor?azure-portal=true) then select the <kbd>Delete</kbd> or <kbd>Backspace</kbd> key to delete it.
 
 1. Store the following values in variables:
 
