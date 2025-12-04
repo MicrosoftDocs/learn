@@ -7,7 +7,7 @@ In this exercise, you'll use the assignment scores for each student to calculate
 
 In this task, you'll create a variable for each student that will represent the sum of their assignment scores. You'll also display the student's sum along with their name in the console output. Since the assignment scores are represented as Integers, you'll create Integer variables to store the sums.
 
-1. Ensure that you have the [C# Code Editor](https://microsoftlearning.github.io/c-sharp-minor/) open, and that you have the variables instantiated with each student's assignment scores.
+1. Ensure that you have the [C# Code Editor](https://microsoftlearning.github.io/c-sharp-minor?azure-portal=true) open, and that you have the variables instantiated with each student's assignment scores.
 
     In the Prepare unit for this Guided project module, the Setup instructions have you copy student assignment scores into the editor. If necessary, go back and complete the Setup instructions.
 

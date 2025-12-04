@@ -4,7 +4,7 @@ In this exercise, you'll calculate and store the average of the assignment score
 
 In this task, you'll create a variable for each student that can be used to store the average score for their graded assignments.
 
-1. In the [C# Code Editor](https://microsoftlearning.github.io/c-sharp-minor/), locate the `Console.WriteLine()` statements that are used to display each student's summed scores.
+1. In the [C# Code Editor](https://microsoftlearning.github.io/c-sharp-minor?azure-portal=true), locate the `Console.WriteLine()` statements that are used to display each student's summed scores.
 
 1. Create a blank code line above the `Console.WriteLine()` statements.
 
