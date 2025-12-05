@@ -36,7 +36,6 @@ units:
 - learn.get-started-prompt-flow.introduction
 - learn.get-started-prompt-flow.understand-lifecycle
 - learn.get-started-prompt-flow.understand-flows
-- learn.get-started-prompt-flow.connections-runtimes
 - learn.get-started-prompt-flow.variants-monitor
 - learn.get-started-prompt-flow.exercise
 - learn.get-started-prompt-flow.knowledge-check
