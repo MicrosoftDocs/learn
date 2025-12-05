@@ -60813,6 +60813,11 @@
       "source_path": "learn-pr/wwl-data-ai/finetune-foundation-model-with-azure-machine-learning/2-understand-finetune.md",
       "redirect_url": "/training/modules/finetune-model-copilot-ai-studio/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/get-started-prompt-flow/index.md",
+      "redirect_url": "/training/paths/create-custom-copilots-ai-studio/",
+      "redirect_document_id": false
     }
   ]
 }
