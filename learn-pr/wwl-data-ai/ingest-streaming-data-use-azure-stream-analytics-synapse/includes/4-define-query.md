@@ -59,4 +59,4 @@ HAVING COUNT(*) >= 1
 ```
 
 > [!TIP]
-> For more information about common patters for queries, see [Common query patterns in Azure Stream Analytics](/azure/stream-analytics/stream-analytics-stream-analytics-query-patterns?azure-portal=true) in the Azure Stream Analytics documentation.
+> For more information about common patterns for queries, see [Common query patterns in Azure Stream Analytics](/azure/stream-analytics/stream-analytics-stream-analytics-query-patterns?azure-portal=true) in the Azure Stream Analytics documentation.
