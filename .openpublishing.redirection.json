@@ -60778,6 +60778,11 @@
       "source_path": "learn-pr/wwl-data-ai/finetune-foundation-model-with-azure-machine-learning/index.md",
       "redirect_url": "/training/modules/finetune-model-copilot-ai-studio/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/finetune-foundation-model-with-azure-machine-learning/4-evaluate-model.md",
+      "redirect_url": "/training/modules/finetune-model-copilot-ai-studio/",
+      "redirect_document_id": false
     }
   ]
 }
