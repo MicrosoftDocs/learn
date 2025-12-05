@@ -60838,6 +60838,11 @@
       "source_path": "learn-pr/wwl-data-ai/get-started-prompt-flow/7-knowledge-check.md",
       "redirect_url": "/training/paths/create-custom-copilots-ai-studio/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/get-started-prompt-flow/8-summary.md",
+      "redirect_url": "/training/paths/create-custom-copilots-ai-studio/",
+      "redirect_document_id": false
     }
   ]
 }
