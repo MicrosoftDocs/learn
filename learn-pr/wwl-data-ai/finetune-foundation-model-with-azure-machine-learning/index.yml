@@ -34,6 +34,5 @@ subjects: # see subject taxonomy https://review.learn.microsoft.com/help/contrib
   - natural-language-processing
 units:
 - learn.finetune-foundation-model-with-azure-machine-learning.understand-finetune
-- learn.finetune-foundation-model-with-azure-machine-learning.summary
 badge:
   uid: learn.finetune-foundation-model-with-azure-machine-learning.badge
