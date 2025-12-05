@@ -36,7 +36,6 @@ units:
 - learn.get-started-prompt-flow.understand-lifecycle
 - learn.get-started-prompt-flow.understand-flows
 - learn.get-started-prompt-flow.variants-monitor
-- learn.get-started-prompt-flow.knowledge-check
 - learn.get-started-prompt-flow.summary
 badge:
   uid: learn.get-started-prompt-flow.badge
