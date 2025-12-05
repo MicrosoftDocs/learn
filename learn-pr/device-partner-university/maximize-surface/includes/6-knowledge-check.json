@@ -1,0 +1,84 @@
+{
+"questions": [
+{
+"question": "What is the main benefit of using Copilot on a Surface device?",
+"choices": [
+"Faster typing",
+"Streamlined productivity with multimodal inputs",
+"More storage space",
+"Improved battery life"
+],
+"correct_choice": "Streamlined productivity with multimodal inputs",
+"explanations": {
+"Faster typing": "Incorrect. Copilot doesn't directly increase typing speed but it can enhance productivity using AI and multimodal input.",
+"Streamlined productivity with multimodal inputs": "Correct. Copilot on Surface devices improves workflow by integrating Surface Slim Pen, touch, and voice input using Studio Microphone for efficiency.",
+"More storage space": "Incorrect. Copilot doesn't affect device storage.",
+"Improved battery life": "Incorrect. Battery performance is unrelated to Copilot's AI productivity features."
+}
+},
+{
+"question": "Which Surface Copilot+ PC feature helps Copilot respond faster to AI tasks?",
+"choices": [
+"Touchscreen",
+"Studio Microphone",
+"Neural Processing Unit (NPU)",
+"Windows Ink"
+],
+"correct_choice": "Neural Processing Unit (NPU)",
+"explanations": {
+"Touchscreen": "Incorrect. Touchscreen enables interaction but doesn't accelerate AI processing.",
+"Studio Microphone": "Incorrect. The microphone captures audio but doesn't improve AI processing speed.",
+"Neural Processing Unit (NPU)": "Correct. The NPU accelerates AI operations, making Copilot respond faster.",
+"Windows Ink": "Incorrect. Windows Ink supports pen input but doesn't speed up AI computations."
+}
+},
+{
+"question": "How can Copilot help PowerPoint slide creation?",
+"choices": [
+"Generate slides from prompts, rewrite content, summarize information",
+"Only add animations",
+"Change screen resolution",
+"Schedule meetings"
+],
+"correct_choice": "Generate slides from prompts, rewrite content, summarize information",
+"explanations": {
+"Generate slides from prompts, rewrite content, summarize information": "Correct. Copilot can generate slides, restructure content, and summarize information efficiently.",
+"Only add animations": "Incorrect. Copilot does more than just animations.",
+"Change screen resolution": "Incorrect. Copilot doesn't modify display settings.",
+"Schedule meetings": "Incorrect. Copilot assists with content creation, not scheduling."
+}
+},
+{
+"question": "Which Windows Studio Effect is helpful for collaborative meetings?",
+"choices": [
+"Live captions",
+"Screen brightness",
+"File encryption",
+"Power mode"
+],
+"correct_choice": "Live captions",
+"explanations": {
+"Live captions": "Correct. Live captions improve accessibility and understanding during meetings.",
+"Screen brightness": "Incorrect. Adjusting brightness doesn't aid collaboration.",
+"File encryption": "Incorrect. Encryption protects files but doesn't directly help in meetings.",
+"Power mode": "Incorrect. Power mode manages device performance, not meeting clarity."
+}
+},
+{
+"question": "What is a recommended way to interact with Copilot efficiently?",
+"choices": [
+"Use only the keyboard",
+"Combine Surface Slim Pen, touch, and voice commands using Studio Microphone",
+"Dictate long paragraphs without revision",
+"Only click through menus"
+],
+"correct_choice": "Combine Surface Slim Pen, touch, and voice commands using Studio Microphone",
+"explanations": {
+"Use only the keyboard": "Incorrect. Limiting input to the keyboard doesn't take advantage of multimodal efficiency.",
+"Combine Pen, touch, and voice commands": "Correct. Using multiple input methods allows for faster, more intuitive interaction with Copilot.",
+"Dictate long paragraphs without revision": "Incorrect. Copilot benefits from iterative input and refinement, not unedited long dictation.",
+"Only click through menus": "Incorrect. Clicking alone isn't as flexible as using multimodal inputs with Copilot."
+}
+}
+]
+}

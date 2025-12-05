@@ -1,0 +1,43 @@
+### YamlMime:Module
+uid: learn.dpu.surface-microsoft-365
+title: Maximize Microsoft 365 with Surface for Business
+metadata:
+  title: Maximize Microsoft 365 With Surface For Business
+  description: "By the end of this module, you’ll be able to: Use Microsoft 365 Copilot on a Surface device to create a professional presentation efficiently, use Surface features like Surface Slim Pen, touch, and Studio Microphone to streamline content creation, and collaborate using Microsoft 365 apps while making the most of Copilot’s AI capabilities."
+  ms.date: 12/05/2025
+  author: Stephanie-Rosenzweig
+  ms.author: v-stephanier
+  ms.topic: module
+  ms.service: surface
+summary: >
+  In this module, you’ll explore how Copilot and Surface devices can work together, learn how to use Copilot in PowerPoint, and practice collaborating with OneNote while using Surface tools to enhance productivity.
+abstract: |2+
+
+prerequisites: |
+  - A Surface device
+  - Surface Slim Pen
+  - Studio Microphone
+  - Touchscreen capability
+  - A Microsoft 365 subscription
+  -	Sign-in credentials to use Microsoft 365 apps on your Surface device
+iconUrl: /training/achievements/generic-badge.svg
+ratingEnabled: false
+levels:
+  - beginner
+roles:
+  - business-leader
+  - business-owner
+  - business-user
+products:
+  - surface
+  - microsoft-365-copilot
+units:
+  - learn.dpu.surface-microsoft-365.introduction
+  - learn.dpu.surface-microsoft-365.surface-copilot
+  - learn.dpu.surface-microsoft-365.create-presentation
+  - learn.dpu.surface-microsoft-365.surface-features
+  - learn.dpu.surface-microsoft-365.onenote-copilot
+  - learn.dpu.surface-microsoft-365.knowledge-check
+  - learn.dpu.surface-microsoft-365.summary
+badge:
+  uid: learn.dpu.surface-microsoft-365.badge
