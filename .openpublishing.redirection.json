@@ -60903,6 +60903,51 @@
       "source_path": "learn-pr/wwl-data-ai/deploy-azure-databricks-models-azure-machine-learning/5-troubleshoot-model-deployment.md",
       "redirect_url": "/training/paths/use-azure-machine-learning-pipelines-for-automation/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/capture-application-logs-app-service/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/app-service/troubleshoot-diagnostic-logs/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/capture-application-logs-app-service/2-enable-and-configure-app-service-application-logging.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/app-service/troubleshoot-diagnostic-logs/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/capture-application-logs-app-service/3-enable-and-configure-app-service-application-logging-using-the-azure-portal.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/app-service/troubleshoot-diagnostic-logs/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/capture-application-logs-app-service/4-view-live-application-logging-activity-with-the-log-streaming-service.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/app-service/troubleshoot-diagnostic-logs/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/capture-application-logs-app-service/5-view-live-application-logging-activity-with-the-log-streaming-service-using-azure-cli.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/app-service/troubleshoot-diagnostic-logs/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/capture-application-logs-app-service/6-retrieve-application-log-files-from-an-application.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/app-service/troubleshoot-diagnostic-logs/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/capture-application-logs-app-service/7-retrieve-application-log-files-from-an-application-using-azure-cli-and-kudu.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/app-service/troubleshoot-diagnostic-logs/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/capture-application-logs-app-service/8-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/app-service/troubleshoot-diagnostic-logs/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/capture-application-logs-app-service/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/app-service/troubleshoot-diagnostic-logs/",
+      "redirect_document_id": false
     }
   ]
 }

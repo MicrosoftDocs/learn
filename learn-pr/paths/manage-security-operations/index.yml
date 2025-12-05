@@ -32,6 +32,5 @@ modules:
 - learn.azure-security.identify-threats-with-azure-security-center 
 # - learn.azure-security.resolve-threats-with-azure-security-center
 # - learn.azure-security.secure-vms-with-security-center
-- learn.azure.capture-application-logs-app-service
 trophy:
   uid: learn.security.manage-security-operations.trophy
