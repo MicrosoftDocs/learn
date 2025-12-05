@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.design-for-user-identities-profiles
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Design for user identities and profiles
   description: Design for user identities and profiles
   ms.date: 02/10/2023
@@ -48,4 +46,4 @@ units:
 - learn.wwl.design-for-user-identities-profiles.summary
 badge:
   uid: learn.wwl.design-for-user-identities-profiles.badge
-
+

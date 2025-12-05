@@ -1,0 +1,18 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.tracing-generative-ai-app.advanced-tracing
+title: Debug complex workflows with advanced tracing patterns
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Debug complex workflows with advanced tracing patterns
+  description: Debug complex AI workflows using advanced tracing patterns for multiple model calls, error handling, and structured data generation.
+  author: wwlpublish
+  ms.author: madiepev
+  ms.date: 08/06/2025
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 6
+content: |
+  [!include[](includes/5-advanced-tracing.md)]
+

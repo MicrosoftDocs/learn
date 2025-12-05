@@ -2,8 +2,6 @@
 uid: learn.wwl.run-petabyte-level-oss-nosql-databases-with-hdinsight-hbase.describe-apache-hbase
 title: Describe Apache HBase
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Describe Apache HBase
   description: "Describe Apache HBase"
   ms.date: 04/09/2024
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 3
 content: |
-  [!include[](includes/2-describe-apache-hbase.md)]
+  [!include[](includes/2-describe-apache-hbase.md)]

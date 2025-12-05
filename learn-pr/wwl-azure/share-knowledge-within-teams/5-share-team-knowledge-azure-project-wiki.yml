@@ -1,13 +1,11 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.share-knowledge-within-teams.share-team-knowledge-azure-project-wiki
-title: Share team knowledge using Azure Project Wiki
+title: Share team knowledge using Azure project wiki
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Share team knowledge using Azure Project Wiki
-  description: "Share team knowledge using Azure Project Wiki"
-  ms.date: 05/24/2024
-  author: wwlpublish
+  title: Share Team Knowledge Using Azure Project Wiki
+  description: "Hands-on lab exercise to create and configure wikis in Azure DevOps. Practice creating project wikis, adding and editing Markdown content, creating Mermaid diagrams, publishing code repositories as wikis, and managing wiki permissions for effective team documentation."
+  ms.date: 10/21/2025
+  author: LuizMacedo
   ms.author: lumac
   ms.topic: unit
 durationInMinutes: 45

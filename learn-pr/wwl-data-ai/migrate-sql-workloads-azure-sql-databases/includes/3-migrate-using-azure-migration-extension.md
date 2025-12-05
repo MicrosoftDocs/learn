@@ -23,7 +23,7 @@ The steps below highlights the process of migrating to Azure SQL Database using 
 | **Step 2: Assessment results and recommendations** | Assess their readiness for migration. The tool identifies any potential issues that might affect the migration process. Collect performance data from your current database. This data is used to provide recommendations for your Azure SQL setup.|
 | **Step 3: Azure target** | Select an Azure account and your target Azure SQL Database. |
 | **Step 4: Azure Database Migration Service** | Select an existing Azure Database Migration Service, or create a new one. |
-| **Step 5: Data source configuration** | Enter the credentials used to connect to the source from the self-hosted integration runtime. Select the tables to migrate from source to target. Before selecting the tables to migrate, ensure that you've created the database schema from the source to the target using either the dacpac extension, the SQL Database Projects extension in Azure Data Studio, or the DMA. |
+| **Step 5: Data source configuration** | Enter the credentials used to connect to the source from the self-hosted integration runtime. Select the tables to migrate from source to target. Before selecting the tables to migrate, ensure that you've created the database schema from the source to the target using either the dacpac extension, or the SQL Database Projects extension in Azure Data Studio. |
 | **Step 6: Summary** | Review the migration information and start the migration process. |
 
 The Database Migration Service optimizes the migration process by skipping empty tables, even if you select them.

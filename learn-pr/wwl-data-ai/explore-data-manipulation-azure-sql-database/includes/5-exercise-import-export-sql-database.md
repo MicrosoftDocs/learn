@@ -4,7 +4,7 @@ Now it's your chance to integrate REST APIs and Azure Functions to handle data i
 In this exercise, you import data from an external REST endpoint (simulated using Azure Static Web App) and export data using an Azure Function. 
 
 > [!NOTE]
-> To complete this exercise, you will need an [Azure subscription](https://azure.microsoft.com/free?azure-portal=true).
+> To complete this exercise, you will need an [Azure subscription](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn).
 
 Launch the exercise and follow the instructions.
 

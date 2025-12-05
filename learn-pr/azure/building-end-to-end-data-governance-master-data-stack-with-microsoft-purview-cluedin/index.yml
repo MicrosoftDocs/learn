@@ -22,7 +22,7 @@ abstract: |
     - Stream data from CluedIn to ADLS Gen2.
     - Standardize, clean, deduplicate, and enrich your data in CluedIn.
 prerequisites: |
-  - An Azure account with an active subscription. If you don't have one, you can follow [this link to create a free subscription](https://azure.microsoft.com/free/).
+  - An Azure account with an active subscription. If you don't have one, you can follow [this link to create a free subscription](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn).
   - Ability to navigate the Azure portal
   - Familiarity with Azure Data Factory
   - Familiarity with high-level concepts of Microsoft Purview

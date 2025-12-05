@@ -1,6 +1,6 @@
 Consider constructing a wide area network (WAN) using software-defined Azure Virtual WAN networking services.
 
- Contoso, Ltd. is a growing financial services company in London with major offices located throughout the world. Contoso is evaluating the adoption of a global transit network architecture. This network would be used to connect their growing number of distributed offices. It would also address the work-from-home initiatives, and control their cloud-centric modern, global enterprise IT footprint.
+Contoso, Ltd. is a growing financial services company in London with major offices located throughout the world. Contoso is evaluating the adoption of a global transit network architecture. This network would be used to connect their growing number of distributed offices. It would also address the work-from-home initiatives and control their cloud-centric modern, global enterprise IT footprint.
 
 The IT director asked you to evaluate migrating to Azure Virtual WAN. You'll need to determine if the employees can have secure and approved access to the workloads gated behind on-premises devices and Azure services.
 
@@ -23,7 +23,7 @@ To get the best learning experience from this module, you should have:
   - Hubs
   - Switches
   - DNS
-- Beginner-level knowledge of Azure networking services including:
+- Beginner-level knowledge of Azure networking services, including:
   - Virtual networks
   - ExpressRoute
   - Site-to-site VPN

@@ -2,8 +2,6 @@
 uid: learn.azdo.run-non-functional-tests-azure-pipelines.4-plan-load-tests
 title: Plan load tests by using Apache JMeter
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Plan load tests by using Apache JMeter
   description: Plan a strategy for running load tests that use Apache JMeter in Azure Pipelines.
   ms.date: 04/02/2024
@@ -14,4 +12,4 @@ metadata:
 durationInMinutes: 6
 content: |
   [!include[](includes/4-plan-load-tests.md)]
-
+

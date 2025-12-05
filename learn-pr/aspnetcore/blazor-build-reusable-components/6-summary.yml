@@ -3,9 +3,9 @@ uid: learn.blazor-build-reusable-components.summary
 title: Summary
 metadata:
   unitType: summary
-  title: summary
-  description: "This unit summarizes what you've learned about creating Razor class libraries."
-  ms.date: 01/26/2024
+  title: Summary
+  description: "This unit summarizes what you learned about creating Razor class libraries."
+  ms.date: 04/07/2025
   author: csharpfritz
   ms.author: jefritz
   ms.manager: markl

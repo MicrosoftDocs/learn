@@ -2,8 +2,6 @@
 uid: learn.wwl.get-tips-tricks-teach-ai-900-microsoft-azure-ai-fundamentals.explore-best-practices-for-module-1
 title: Explore module best practices for module 1
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Explore module best practices for module 1
   description: Explore module best practices for module 1
   author: wwlpublish
@@ -15,4 +13,4 @@ metadata:
 durationInMinutes: 7
 content: |
   [!include[](includes/4-explore-best-practices-learning-path-1.md)]
-
+

@@ -2,8 +2,6 @@
 uid: learn.azure-spring-cloud-workshop.7-scale-spring-boot-microservices
 title: Learn how to scale Spring Boot microservices
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Scale Spring Boot microservices
   description: Learn how to scale Spring Boot microservices.
   author: judubois
@@ -15,4 +13,4 @@ metadata:
 durationInMinutes: 3
 content: |
   [!include[](includes/7-scale-spring-boot-microservices.md)]
-
+

@@ -75,4 +75,4 @@ How to simulate hand input:
 - Click the **left mouse button** to simulate a pinch gesture.
 - Use the **T/Y** keys to make the hand persistent in the view.
 - Hold the **CTRL** key and move the mouse to rotate the hand.
-- Press and hold the **left shift key** to enable the left hand.
+- Press and hold the **left Shift key** to enable the left hand.

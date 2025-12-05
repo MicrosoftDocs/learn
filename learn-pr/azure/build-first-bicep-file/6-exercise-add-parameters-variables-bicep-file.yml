@@ -1,0 +1,19 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.deploy-azure-resources-bicep.add-parameters-variables-bicep-file
+title: Exercise - Add parameters and variables to your Bicep file
+sandbox: true
+metadata:
+  unitType: exercise
+  title: Exercise - Add parameters and variables to your Bicep file
+  description: Learn how to build reusable Bicep files by using parameters to accept input and variables to store and reuse values within the file.
+  ms.date: 01/31/2025
+  author: mumian
+  ms.author: jgao
+  ms.topic: unit
+  ms.custom:
+    - devx-track-bicep
+  zone_pivot_groups: azure-shell-interface
+durationInMinutes: 7
+content: |
+  [!include[](includes/6-exercise-add-parameters-variables-bicep-file.md)]
+

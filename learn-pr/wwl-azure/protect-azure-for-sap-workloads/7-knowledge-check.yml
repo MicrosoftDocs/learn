@@ -1,15 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.protect-azure-for-sap-workloads.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
   ms.date: 12/10/2021
   author: wwlpublish
   ms.author: eric
   ms.topic: unit
+  module_assessment: true
 azureSandbox: false
 labModal: false
 durationInMinutes: 3
@@ -72,4 +71,4 @@ quiz:
       explanation: "Incorrect. Azure ExpressRoute is not used when  load balancing incoming traffic across redundant servers."
     - content: "When establishing a high-speed dedicated connection into Azure from an on-premises network."
       isCorrect: true
-      explanation: "Correct. Azure ExpressRoute is used when establishing a high-speed dedicated connection into Azure from an on-premises network."
+      explanation: "Correct. Azure ExpressRoute is used when establishing a high-speed dedicated connection into Azure from an on-premises network."

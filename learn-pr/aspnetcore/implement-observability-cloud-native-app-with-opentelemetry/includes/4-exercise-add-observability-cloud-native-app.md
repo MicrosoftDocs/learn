@@ -10,28 +10,29 @@ This step takes several minutes while GitHub creates and configures the codespac
 
 To use **Visual Studio Code**, clone the [https://github.com/MicrosoftDocs/mslearn-dotnet-cloudnative](https://github.com/MicrosoftDocs/mslearn-dotnet-cloudnative) repository to your local machine. Then:
 
-1. Install any [system requiements](https://code.visualstudio.com/docs/devcontainers/containers) to run Dev Container in Visual Studio Code.
-1. Make sure Docker is running. 
-1. In a new Visual Studio Code window open the folder of the cloned repository
+1. Install any [system requirements](https://code.visualstudio.com/docs/devcontainers/containers) to run Dev Container in Visual Studio Code.
+1. Make sure Docker is running.
+1. In a new Visual Studio Code window, open the folder of the cloned repository.
 1. Press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> to open the command palette.
-1. Search: **>Dev Containers: Rebuild and Reopen in Container**
+1. Search: **>Dev Containers: Rebuild and Reopen in Container**.
 1. Select **eShopLite - dotnet-observability** from the drop down. Visual Studio Code creates your development container locally.
+
 ### Add a diagnostic project to the solution
 
 The first step to adding observability to the **:::no-loc text="eShopLite":::** app is to introduce a new diagnostic project to the solution. This project contains all the OpenTelemetry packages and configurations that you'll use to add observability to the app.
 
-1. In the Visual Studio Code command palette, enter **>.NET: Open Solution**.
+1. In the Codespace command palette, enter **>.NET: Open Solution**.
 1. Select **dotnet-observability/eShopLite/eShopLite.sln**.
-1. In the **Solution Explorer**, at the bottom of the **EXPLORER** pane, right-click the **eShopLite** solution and then select **New Project**.
+1. In the **Solution Explorer**, at the bottom of the **EXPLORER** pane, right-click the **eShopLite** solution, and then select **New Project**.
 1. In the **Select a template to create a new .NET project** dialog, select **Class Library (Common, Library)**.
 1. In the **Name** field, enter **Diagnostics**.
-1. In the **Project will be created in** dropdown, select **Default directory**.
+1. In the **Project will be created in** dropdown, ensure the file path directory is */workspaces/mslearn-dotnet-cloudnative/dotnet-observability/eShopLite/*.
 
 ### Add OpenTelemetry packages
 
 Now add the OpenTelemetry packages to the new diagnostic project.
 
-1. By using the **TERMINAL** pane at the bottom of Visual Studio Code, go to the *Diagnostics* project folder:
+1. By using the **TERMINAL** pane at the bottom of Codespace, go to the *Diagnostics* project folder:
 
     ```bash
     cd dotnet-observability/eShopLite/Diagnostics
@@ -69,7 +70,7 @@ Now add the OpenTelemetry packages to the new diagnostic project.
 
 With the OpenTelemetry packages added, you now introduce the code to make use of them.
 
-1. On the **EXPLORER** pane, right-click the *Class1.cs* file and then select **Rename**.
+1. On the **EXPLORER** pane, right-click the *Class1.cs* file, and then select **Rename**.
 1. Rename the file to **DiagnosticServiceCollectionExtensions.cs**.
 1. Replace the code in the file with the following code:
 
@@ -140,11 +141,11 @@ With the OpenTelemetry packages added, you now introduce the code to make use of
         0 Warning(s)
         0 Error(s)
     ```
-    
+
 1. The **Diagnostics** project is now ready to be used by the **Products** service.
-1. On the **EXPLORER** pane, under **SOLUTION EXPLORER**, right-click the **Products** project and then select **Add Project Reference**.
+1. On the **EXPLORER** pane, under **SOLUTION EXPLORER**, right-click the **Products** project, and then select **Add Project Reference**.
 1. Select **Diagnostics**.
-1. On the **EXPLORER** pane, expand the *Products* folder and then select **Program.cs**.
+1. On the **EXPLORER** pane, expand the *Products* folder, and then select **Program.cs**.
 1. Under the code comment `// Add observability code here`, add a call to the Diagnostics method:
 
     ```csharp
@@ -197,7 +198,7 @@ With the OpenTelemetry packages added, you now introduce the code to make use of
 
     :::image type="content" source="../media/eshoplite-products.png" alt-text="A screenshot that shows the Products page in the eShopLite app. The page shows a list of products with a name, description, and price and a button to update the stock." lightbox="../media/eshoplite-products.png":::
 
-1. Select **Update Stock** for several of the products. Then, in the dialog, change the stock value and select **Update**.
+1. Select **Update Stock** for several of the products. Then, in the dialog, change the stock value, and select **Update**.
 
 1. Select the **TERMINAL** tab and scroll through the messages. Note there are messages from OpenTelemetry like:
 

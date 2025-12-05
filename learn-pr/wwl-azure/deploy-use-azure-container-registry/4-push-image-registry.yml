@@ -2,8 +2,6 @@
 uid: learn.wwl.deploy-use-azure-container-registry.push-image-registry
 title: Try-This exercise - Push an image to the registry
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Try-This exercise - Push an image to the registry
   description: "Try-This exercise - Push an image to the registry"
   ms.date: 04/01/2024
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 7
 content: |
-  [!include[](includes/4-push-image-registry.md)]
+  [!include[](includes/4-push-image-registry.md)]

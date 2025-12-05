@@ -2,11 +2,9 @@
 uid: learn.wwl.create-resource-template-for-azure-cosmos-db-sql-api.configure-database-container-resources
 title: Configure database or container resources
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Configure database or container resources
   description: "Configure database or container resources"
-  ms.date: 10/22/2024
+  ms.date: 04/02/2025
   author: wwlpublish
   ms.author: calopez
   ms.topic: unit

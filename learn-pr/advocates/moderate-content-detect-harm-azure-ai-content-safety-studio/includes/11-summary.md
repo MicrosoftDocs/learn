@@ -13,3 +13,5 @@ Azure AI integrates years of AI policy, research, and engineering expertise from
 - [Harm categories in Azure AI Content Safety](/azure/ai-services/content-safety/concepts/harm-categories?tabs=warning)
 - [Prompt Shields](/azure/ai-services/content-safety/concepts/jailbreak-detection)
 - [Groundedness detection](/azure/ai-services/content-safety/concepts/groundedness)
+- [Azure AI Foundry Discord](https://aka.ms/azureaifoundry/discord)
+- [Azure AI Foundry Developer Forum](https://aka.ms/azureaifoundry/forum)

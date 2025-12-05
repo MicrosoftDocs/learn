@@ -2,11 +2,9 @@
 uid: learn.machinelearning.understand-classification-machine-learning.exercise-improve-classification
 title: Exercise - Improving classification models
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Improving classification models
   description: Exercise about improving classification models in machine learning
-  ms.date: 07/20/2024
+  ms.date: 05/12/2025
   author: s-polly
   ms.author: scottpolly
   ms.topic: unit

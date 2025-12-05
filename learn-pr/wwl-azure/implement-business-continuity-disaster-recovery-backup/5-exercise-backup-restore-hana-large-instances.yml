@@ -2,8 +2,6 @@
 uid: learn.wwl.implement-business-continuity-disaster-recovery-backup.backup-restore-of-sap-hana-azure-large-instances
 title: Backup and restore of SAP HANA on Azure (Large Instances)
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Backup and restore of SAP HANA on Azure (Large Instances)
   description: "Backup and restore of SAP HANA on Azure (Large Instances)"
   ms.date: 06/30/2022
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 5
 content: |
-  [!include[](includes/5-exercise-backup-restore-hana-large-instances.md)]
+  [!include[](includes/5-exercise-backup-restore-hana-large-instances.md)]

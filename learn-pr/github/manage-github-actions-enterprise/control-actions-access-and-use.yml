@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.github.manage-github-actions-enterprise.control-actions-access-and-use
+title: Control access and usage of actions in your enterprise
+metadata:
+  title: Control access and usage of actions in your enterprise
+  description: Learn how to manage which GitHub Actions can be used within your enterprise, including configuring allowed actions policies, internal actions, and managing access to marketplace or third-party actions.
+  ms.date: 04/15/2025
+  author: a-a-ron
+  ms.author: aastewar
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/control-actions-access-and-use.md)]

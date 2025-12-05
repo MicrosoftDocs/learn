@@ -2,13 +2,11 @@
 uid: learn.explore-foundation-models-in-model-catalog.explore-foundation-models
 title: Explore foundation models in the model catalog
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Explore foundation models in the model catalog of Azure Machine Learning
   description: Learn about foundation models and explore the available open source models in the model catalog of Azure Machine Learning.
   author: madiepev
   ms.author: madiepev
-  ms.date: 07/25/2024
+  ms.date: 12/01/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot

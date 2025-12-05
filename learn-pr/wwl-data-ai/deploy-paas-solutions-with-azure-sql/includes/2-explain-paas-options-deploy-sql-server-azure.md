@@ -114,3 +114,4 @@ You can initiate a failover either manually by the user or programmatically by t
 ## Failover groups
 
 [Failover groups](/azure/azure-sql/database/failover-group-sql-db?azure-portal=true) are built on top of the technology used in geo-replication but provide a single endpoint for connection. The major reason for using failover groups is that they provide endpoints that can be utilized to route traffic to the appropriate replica. Your application can then connect after a failover without connection string changes.
+

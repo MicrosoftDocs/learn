@@ -4,6 +4,7 @@ metadata:
   title: Deploy your AI Copilot with Azure Kubernetes
   description: "Learn how to deploy an AI copilot app using Docker, Azure Container Resource, and Azure Kubernetes Service."
   ms.date: 11/12/2024
+  ms.update-cycle: 180-days
   author: wwlpublish
   ms.author: buzahid
   ms.topic: module

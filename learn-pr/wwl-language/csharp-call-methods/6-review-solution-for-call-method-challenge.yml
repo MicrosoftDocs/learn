@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.languages.csharp-call-methods.solution
+title: Review the solution to discover and implement a method call challenge activity
+metadata:
+  title: Review the solution to discover and implement a method call challenge activity
+  description: "Review the solution to discover and implement a method call challenge activity"
+  ms.date: 06/16/2025
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-review-solution-for-call-method-challenge.md)]

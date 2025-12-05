@@ -1,12 +1,10 @@
 ### YamlMime:Module
 uid: learn.wwl.train-evaluate-cluster-models
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Train and evaluate clustering models
   description: "Clustering is a type of machine learning that is used to group similar items into clusters."
   ms.collection: TBD
-  ms.date: 09/07/2023
+  ms.date: 10/14/2025
   author: madiepev
   ms.author: madiepev
   ms.topic: module

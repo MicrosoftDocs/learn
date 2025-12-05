@@ -20,7 +20,7 @@ Example scenarios where you could use Azure Policy:
 
 - **Monitoring**
   - Activity logs should be retained for at least one year.
-  - Log Analytics Agent should be enabled for listed virtual machines images.
+  - Azure Monitor Agent should be enabled for listed virtual machines images.
   - An activity log alert should exist for specific Security operations.
 
 - **Backup**

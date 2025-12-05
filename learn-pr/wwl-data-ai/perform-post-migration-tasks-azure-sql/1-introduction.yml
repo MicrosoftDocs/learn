@@ -2,12 +2,10 @@
 uid: learn-wwl.perform-post-migration-tasks-azure-sql.introduction
 title: Introduction
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Introduction
   description: "Introduction"
-  ms.date: 09/14/2023
-  author: wwlpublish
+  ms.date: 8/26/2025
+  author: JulianePadrao
   ms.author: jupadrao
   ms.topic: unit
 durationInMinutes: 1

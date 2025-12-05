@@ -3,7 +3,7 @@
 Examples include:
 
 - An attacker sends an email to users from an account that seems legitimate with malicious links and attachments to capture their credentials, data, and device access.
-- An attacker spoofs SSIDs and IP addresses while using open and inherently insecure TCP/IP protocols to send malicious payloads to victims.
+- An attacker spoofs Service Set Identifiers (SSIDs) and IP addresses while using open and inherently insecure TCP/IP protocols to send malicious payloads to victims.
 
 ## Elements and interactions at risk from spoofing attacks
 
@@ -29,8 +29,8 @@ Examples include:
 Examples include:
 
 - Sending and receiving messages signed with digital signatures to authenticate origin and ensure message integrity.
-- Securing data transmissions with SSL/TLS to encrypt traffic between source and target.
-- The use of unique credentials with expiring tokens, passwords, or multi-factor authentication to help secure user, admin, and service accounts.
+- Securing data transmissions with TLS/SSL to encrypt traffic between source and target.
+- The use of unique credentials with expiring tokens, passwords, or multifactor authentication to help secure user, admin, and service accounts.
 
 ### Common security controls to reduce or eliminate risk
 
@@ -45,7 +45,7 @@ For your system:
 - User Authentication
 - Cookie Authentication
 - Kerberos
-- SSL/TLS
+- TLS/SSL
 - Certificates
 - IPSec
 - Digitally Signed Packets

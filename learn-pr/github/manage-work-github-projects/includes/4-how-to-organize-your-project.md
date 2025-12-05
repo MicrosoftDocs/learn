@@ -83,3 +83,15 @@ Let's walk through how to get your board view up and running.
 Now, you can drag and drop issues and pull requests to the various columns.
 
    :::image type="content" source="../media/4-project-boards.png" alt-text="Screenshot example of a Project board with four columns labeled; no status, todo, in-progress, done.":::
+
+## Project workflows
+
+To automate common actions, GitHub Projects includes built-in workflows that help organize and update project items automatically. 
+
+For example, when a new issue is added to your Project, a default workflow can set its status to "Todo". Here's how to enable a workflow:
+
+1. Open your Project.
+2. Select the **⋯** menu in the top-right and choose **Workflows**.
+3. Select a trigger (e.g., "Item added to project").
+4. Configure values like **Status: Todo**.
+5. Click **Save and turn on workflow**.

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.introduction-to-windows-server-2025.when-to-use-windows-server-2025
+title: When to use Windows Server 2025
+metadata:
+  title: When To Use Windows Server 2025
+  description: This content is part of the "Introduction to Windows Server 2025" module.
+  ms.date: 08/27/2025
+  author: melissawinters
+  ms.author: v-mwinters
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-when-to-use-windows-server-2025.md)]

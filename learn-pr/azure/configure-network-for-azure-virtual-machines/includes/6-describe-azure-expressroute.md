@@ -4,7 +4,7 @@ Here, we'll go beyond connections that run over the internet to dedicated lines 
 
 ## Azure ExpressRoute
 
-Microsoft Azure ExpressRoute enables organizations to extend their on-premises networks into the Microsoft Cloud over a private connection implemented by a connectivity provider. This arrangement means that the connectivity to the Azure datacenters doesn't go over the internet but across a dedicated link. ExpressRoute also facilitates efficient connections with other Microsoft cloud-based services, such as Microsoft 365 and Dynamics 365.
+Microsoft Azure ExpressRoute allows organizations to extend their on-premises networks into the Microsoft Cloud over a private connection implemented by a connectivity provider. This arrangement means that the connectivity to the Azure datacenters doesn't go over the internet but across a dedicated link. ExpressRoute also facilitates efficient connections with other Microsoft cloud-based services, such as Microsoft 365 and Dynamics 365.
 
 Advantages that ExpressRoute provides include:
 
@@ -16,7 +16,7 @@ Advantages that ExpressRoute provides include:
 
 - Highly secure
 
-ExpressRoute brings more benefits, such as:
+ExpressRoute offers more benefits, such as:
 
 - Connectivity to all supported Azure services
 
@@ -32,7 +32,7 @@ Additionally, there's the ExpressRoute premium add-on, which offers benefits suc
 
 ## ExpressRoute connectivity models
 
-Connections into ExpressRoute can be through the following mechanisms:
+You can make connections into ExpressRoute through the following mechanisms:
 
 - IP VPN network (any-to-any)
 
@@ -40,7 +40,7 @@ Connections into ExpressRoute can be through the following mechanisms:
 
 - Point-to-point ethernet connection
 
- ExpressRoute capabilities and features are all identical across all of the above connectivity models.
+ExpressRoute capabilities and features are all identical across all of the above connectivity models.
 
 ### What is layer 3 connectivity?
 
@@ -66,7 +66,7 @@ Azure ExpressRoute uses a combination of ExpressRoute circuits and routing domai
 
 An ExpressRoute circuit is the logical connection between your on-premises infrastructure and the Microsoft Cloud. A connectivity provider implements that connection, although some organizations use multiple connectivity providers for redundancy reasons. Each circuit has a fixed bandwidth of either 50, 100, 200 Mbps or 500 Mbps, or 1 Gbps or 10 Gbps, and each of those circuits map to a connectivity provider and a peering location. In addition, each ExpressRoute circuit has default quotas and limits.
 
-An ExpressRoute circuit isn't equivalent to a network connection or a network device. Each circuit is defined by a GUID, called a _service_ or _s-key_. This s-key provides the connectivity link between Microsoft, your connectivity provider, and your organization - it isn't a cryptographic secret. Each s-key has a one-to-one mapping to an Azure ExpressRoute circuit.
+An ExpressRoute circuit isn't equivalent to a network connection or a network device. Each circuit is defined by a GUID, called a _service_ or _s-key_. This s-key provides the connectivity link between Microsoft, your connectivity provider, and your organization; it isn't a cryptographic secret. Each s-key has a one-to-one mapping to an Azure ExpressRoute circuit.
 
 Each circuit can have up to two peerings, which are a pair of BGP sessions that are configured for redundancy. They are:
 

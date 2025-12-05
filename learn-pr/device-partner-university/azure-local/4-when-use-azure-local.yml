@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.azure-local.when-use-azure-local
+title: When to use Azure Local
+metadata:
+  title: When To Use Azure Local
+  description: This content is part of the "Introduction to Azure Local" module.
+  ms.date: 09/10/2025
+  author: Stephanie-Rosenzweig
+  ms.author: v-stephanier
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-when-use-azure-local.md)]

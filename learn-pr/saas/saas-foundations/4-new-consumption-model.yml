@@ -2,8 +2,6 @@
 uid: learn.saas-foundations.new-consumption-model
 title: SaaS vs. traditional software
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: SaaS vs. traditional software
   description: Learn about the differences between the traditional, transactional license-based software model and SaaS.
   ms.date: 05/28/2024
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 10
 content: |
-  [!include[](includes/4-new-consumption-model.md)]
+  [!include[](includes/4-new-consumption-model.md)]

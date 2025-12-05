@@ -1,0 +1,20 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.detect-objects-images.use-trained-detector
+title: Develop an object detection client application
+metadata:
+  title: Develop an object detection client application
+  description: Use the Azure AI Custom Vision SDK to develop an object detection client application.
+  author: ivorb
+  ms.author: berryivor
+  ms.date: 05/05/2024
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+  zone_pivot_groups: dev-lang-csharp-python
+azureSandbox: false
+sandbox: false
+labModal: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-use-trained-detector.md)]
+

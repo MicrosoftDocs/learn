@@ -2,8 +2,6 @@
 uid: learn.wwl.microsoft-learn-for-educator-program-open-house.what-microsoft-learn-educators
 title: What is Microsoft Learn for Educators?
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: What is Microsoft Learn for Educators?
   description: "What is Microsoft Learn for Educators?"
   ms.date: 07/19/2024
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 5
 content: |
-  [!include[](includes/2-what-microsoft-learn-educators.md)]
+  [!include[](includes/2-what-microsoft-learn-educators.md)]

@@ -2,11 +2,9 @@
 uid: learn.wwl.build-multi-item-transactions-azure-cosmos-db-sql-api.author-stored-procedures
 title: Author Stored procedures
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Author Stored procedures
   description: "Author Stored procedures"
-  ms.date: 10/17/2022
+  ms.date: 04/02/2025
   author: wwlpublish
   ms.author: calopez
   ms.topic: unit

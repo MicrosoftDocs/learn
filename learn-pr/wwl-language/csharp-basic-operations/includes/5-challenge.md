@@ -5,9 +5,9 @@ In this challenge, you'll write code that will use a formula to convert a temper
 
 ### Challenge: Calculate Celsius given the current temperature in Fahrenheit
 
-1. Select all of the code in the .NET Editor, and press <kbd>Delete</kbd> or <kbd>Backspace</kbd> to delete it.
+1. Select all of the code you wrote previously in the [C# Code Editor](https://microsoftlearning.github.io/c-sharp-minor?azure-portal=true) and press <kbd>Delete</kbd> or <kbd>Backspace</kbd> to delete it.
 
-1. Enter the following code in the .NET Editor:
+1. Enter the following code in the C# Code Editor:
 
     ```csharp
     int fahrenheit = 94;

@@ -2,11 +2,15 @@ The **Show-Command** cmdlet opens a window that displays either a list of comman
 
 To display a specific command's parameters, provide the name of the command as the value for the *‑Name* parameter. For example, to open the **Show** **Command Window** with the command used to retrieve an Active Directory user, enter the following command in the console, and then press the Enter key:
 
-`Show-Command –Name Get-ADUser`
+```powershell
+Show-Command –Name Get-ADUser
+```
 
 The *–Name* parameter is positional, so the following command produces the same result:
 
-`Show-Command Get-ADUser`
+```powershell
+Show-Command Get-ADUser
+```
 
 If you select the **Show** **Command Window** option in the ISE, and your cursor is within or immediately next to a command name within the console or scripting pane, the results are the same.
 
@@ -25,7 +29,9 @@ Windows PowerShell provides extensive in-product help for commands. You can acce
 
 For example, to display the help information for the **Get-ChildItem** cmdlet, enter the following command in the console, and then press the Enter key:
 
-`Get-Help Get-ChildItem`
+```powershell
+Get-Help Get-ChildItem
+```
 
 ### Get-Help parameters
 

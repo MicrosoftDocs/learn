@@ -1,13 +1,11 @@
 ### YamlMime:Module
 uid: learn.wwl.build-data-pipeline-azure-synapse-analytics
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Build a data pipeline in Azure Synapse Analytics
+  title: Build a Data Pipeline in Azure Synapse Analytics
   description: "Build pipelines using Azure Synapse Analytics."
-  ms.date: 10/06/2023
-  author: wwlpublish
-  ms.author: jamesh
+  ms.date: 08/21/2025
+  author: weslbo
+  ms.author: wedebols
   ms.topic: module-standard-task-based
   ms.service: azure-synapse-analytics
 title: Build a data pipeline in Azure Synapse Analytics

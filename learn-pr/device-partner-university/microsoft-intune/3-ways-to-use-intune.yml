@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.microsoft-intune.ways-to-use-intune
+title: Ways to use Intune
+metadata:
+  title: Ways To Use Intune
+  description: This content is part of the "Device management with Microsoft Intune" module.
+  ms.date: 09/03/2025
+  author: Stephanie-Rosenzweig
+  ms.author: v-stephanier
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/3-ways-to-use-intune.md)]

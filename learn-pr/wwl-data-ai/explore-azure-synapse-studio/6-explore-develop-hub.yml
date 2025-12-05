@@ -2,8 +2,6 @@
 uid: learn.wwl.explore-azure-synapse-studio.explore-develop-hub
 title: Explore the Develop hub
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Explore the Develop hub
   description: "Explore the Develop hub"
   ms.date: 08/18/2022
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 3
 content: |
-  [!include[](includes/6-explore-develop-hub.md)]
+  [!include[](includes/6-explore-develop-hub.md)]

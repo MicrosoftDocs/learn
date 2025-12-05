@@ -7,9 +7,9 @@ Now that you understand the basics of addition and more importantly, implicit ty
 
 ### Write code to perform addition, subtraction, multiplication, and division with integers
 
-1. Select all of the code in the .NET Editor, and press <kbd>Delete</kbd> or <kbd>Backspace</kbd> to delete it.
+1. Select all of the code you wrote previously in the [C# Code Editor](https://microsoftlearning.github.io/c-sharp-minor?azure-portal=true) and press <kbd>Delete</kbd> or <kbd>Backspace</kbd> to delete it.
 
-1. Enter the following code in the .NET Editor:
+1. Enter the following code in the C# Code Editor:
 
     ```csharp
     int sum = 7 + 5;
@@ -45,7 +45,7 @@ However, the resulting quotient of the division example may not be what you may 
 
 To see division working properly, you need to use a data type that supports fractional digits after the decimal point like `decimal`.
 
-1. Delete the code from the previous steps and enter the following code into the .NET Editor:
+1. Delete the code from the previous steps and enter the following code into the C# Code Editor:
 
     ```csharp
     decimal decimalQuotient = 7.0m / 5;
@@ -71,10 +71,10 @@ decimal decimalQuotient = 7.0m / 5.0m;
 However, the following lines of code won't work (or give inaccurate results):
 
 ```csharp
-int decimalQuotient = 7 / 5.0m;
-int decimalQuotient = 7.0m / 5;
-int decimalQuotient = 7.0m / 5.0m;
-decimal decimalQuotient = 7 / 5;
+int decimalQuotientA = 7 / 5.0m;
+int decimalQuotientB = 7.0m / 5;
+int decimalQuotientC = 7.0m / 5.0m;
+decimal decimalQuotientD = 7 / 5;
 ```
 
 ### Add code to cast results of integer division
@@ -83,7 +83,7 @@ What if you are not working with literal values? In other words, what if you nee
 
 To cast `int` to `decimal`, you add the cast operator before the value. You use the name of the data type surrounded by parentheses in front of the value to cast it. In this case, you would add `(decimal)` before the variables `first` and `second`.
 
-1. Delete the code from the previous steps and enter the following code into the .NET Editor:
+1. Delete the code from the previous steps and enter the following code into the C# Code Editor:
 
     ```csharp
     int first = 7;
@@ -105,7 +105,7 @@ To cast `int` to `decimal`, you add the cast operator before the value. You use 
 
 The modulus operator `%` tells you the remainder of `int` division. What you really learn from this is whether one number is divisible by another. This can be useful during long processing operations when looping through hundreds or thousands of data records and you want to provide feedback to the end user after every 100 data records have been processed.
 
-1. Delete the code from the previous steps and enter the following code into the .NET Editor:
+1. Delete the code from the previous steps and enter the following code into the C# Code Editor:
 
     ```c#
     Console.WriteLine($"Modulus of 200 / 5 : {200 % 5}");
@@ -137,7 +137,7 @@ C# follows the same order as PEMDAS except for exponents. While there's no expon
 
 ### Write code to exercise C#'s order of operations
 
-1. Delete the code from the previous steps and enter the following code into the .NET Editor:
+1. Delete the code from the previous steps and enter the following code into the C# Code Editor:
 
     ```csharp
     int value1 = 3 + 4 * 5;

@@ -12,7 +12,7 @@ You can learn more by reviewing the following documents:
 
 - [Course AZ-800T00: Administering Windows Server Hybrid Core Infrastructure](/training/courses/az-800t00)
 
-- [Course AZ-801T00: Configuring Windows Server Hybrid Advanced Services](https://microsoft-my.sharepoint.com/personal/tonyj_microsoft_com/Documents/Desktop/WSHA - project/Updates/Containers Module update-Vicinius/Course AZ-801T00: Configuring Windows Server Hybrid Advanced Services)
+- [Course AZ-801T00: Configuring Windows Server Hybrid Advanced Services](/training/courses/az-801t00)
 
 - [Introduction to Kubernetes](/learn/modules/intro-to-kubernetes/)
 

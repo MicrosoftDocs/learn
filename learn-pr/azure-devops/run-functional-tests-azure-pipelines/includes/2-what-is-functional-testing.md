@@ -32,7 +32,7 @@ _Nonfunctional tests_ check characteristics like performance and reliability. An
 
 **Tim:** They are, indeed. I need to think about this for a bit. I might want to add some automation to the pipeline too, but I'm not sure what I want to do. What kinds of automated tests can I run?
 
-**Mara:** For now, let's focus on functional testing. It's the kind of testing that Amita does. And it sounds like an area where we want to improve.
+**Mara:** For now, let's focus on functional testing. It's the kind of testing that Amita does, and it sounds like an area where we want to improve.
 
 ## What kinds of functional tests can I run?
 
@@ -47,8 +47,6 @@ _Smoke testing_ verifies the most basic functionality of your application or ser
 For example, say you're developing a website. Your smoke test might use `curl` to verify that the site is reachable and that fetching the home page produces a 200 (OK) HTTP status. If fetching the home page produces another status code, such as 404 (Not Found) or 500 (Internal Server Error), you know that the website isn't working. You also know that there's no reason to run other tests. Instead, you diagnose the error, fix it, and restart your tests.
 
 ### Unit testing
-
-You worked with unit tests in the [Run quality tests in your build pipeline using Azure Pipelines](/training/modules/run-quality-tests-build-pipeline?azure-portal=true) module.
 
 In short, _unit testing_ verifies the most fundamental components of your program or library, such as an individual function or method. You specify one or more inputs along with the expected results. The test runner performs each test and checks to see whether the actual results match the expected results.
 
@@ -88,11 +86,11 @@ In this module, you work with UI tests that are coded by hand. But you can also 
 
 ### Usability testing
 
-_Usability testing_ is a form of manual testing that verifies an application's behavior from the user's perspective. Usability testing is typically done by the team that builds the software.
+_Usability testing_ is a form of manual testing that verifies an application's behavior from the user's perspective. The team that builds the software typically does the usability testing.
 
 Whereas UI testing focuses on whether a feature behaves as expected, usability testing helps verify that the software is intuitive and meets the user's needs. In other words, usability testing helps verify whether the software is "usable."
 
-For example, say you have a website that includes a link to the user's profile. A UI test can verify that the link is present and that it brings up the user's profile when the link is clicked. However, if humans can't easily locate this link, they might become frustrated when they try to access their profile.
+For example, say you have a website that includes a link to the user's profile. A UI test can verify that the link is present and that it brings up the user's profile when the link is selected. However, if humans can't easily locate this link, they might become frustrated when they try to access their profile.
 
 ### User acceptance testing
 
@@ -128,7 +126,7 @@ We've already covered the importance of writing tests. But just to emphasize it,
 
 _Andy looks at Amita._
 
-**Andy:** I know these options are new to you, so do you mind if we pick Selenium? I have some experience with it, and it supports languages I already know. Selenium also will give us automatic support for multiple browsers.
+**Andy:** I know these options are new to you, so do you mind if we pick Selenium? I have some experience with it, and it supports languages I already know. Selenium also gives us automatic support for multiple browsers.
 
 **Amita:** Sure. It's better if one of us has some experience.
 
@@ -149,8 +147,8 @@ Let's join the team as they answer these questions.
 
 **Mara:** Great question. We also have a choice about where we run the tests. We can run them:
 
-* On the agent: either a Microsoft agent or an agent that we host
-* On test infrastructure: either on-premises or in the cloud
+* On the agent: either a Microsoft agent or an agent that we host.
+* On test infrastructure: either on-premises or in the cloud.
 
 Our existing _Test_ stage includes one job. That job deploys the website to App Service from a Linux agent. We can add a second job that runs the UI tests from a Windows agent. The Windows agent that's hosted by Microsoft is already set up to run Selenium tests.
 
@@ -160,9 +158,9 @@ Our existing _Test_ stage includes one job. That job deploys the website to App 
 
 **Mara:** OK. Here's what we're going to do:
 
-* Run Selenium UI tests from a Microsoft-hosted Windows agent
-* Have the tests fetch the web content from the app that's running on App Service, in the _Test_ stage
-* Run the tests on all the browsers that we support
+* Run Selenium UI tests from a Microsoft-hosted Windows agent.
+* Have the tests fetch the web content from the app that's running on App Service, in the _Test_ stage.
+* Run the tests on all the browsers that we support.
 
 **Andy:** I'll work with Amita on this one. Amita, let's meet tomorrow morning. I'd like to do a bit of research before we meet.
 
@@ -181,4 +179,4 @@ Make sure your plan:
 * Defines the metrics you'll use.
 * Defines the KPIs you'll use.
 
-Performance testing needs to be part of your planning, right from the start. If you use a story or Kanban board, you might consider having an area near it where you can plan out your testing strategy. As part of the iteration planning, gaps in the testing strategy should be highlighted. It's also important to work out how you'll monitor performance once the application has been deployed, and not just measure performance before it's released.
+Performance testing needs to be part of your planning, right from the start. If you use a story or Kanban board, you might consider having an area near it where you can plan out your testing strategy. As part of the iteration planning, you should highlight gaps in the testing strategy. It's also important to work out how you'll monitor performance once the application has been deployed, and not just measure performance before it's released.

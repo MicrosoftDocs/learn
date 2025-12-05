@@ -2,8 +2,6 @@
 uid: learn.intro-azure-functions.when-use-azure-functions
 title: When to use Azure Functions
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: When to use Azure Functions
   description: In this unit, you learn when to use Azure Functions
   ms.date: 12/03/2024
@@ -27,4 +25,4 @@ quiz:
         - content: "To run code that needs to run for a reason."
           isCorrect: true
           explanation: "Correct! Azure Functions is event based and the code runs for a reason, when a certain condition is met."
-
+

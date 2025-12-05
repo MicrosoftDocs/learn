@@ -25,7 +25,7 @@ The underlying technology involves training on diverse text corpora, allowing th
 
 In the realm of visual arts, generative AI is making significant strides with the development of **Generative Adversarial Networks** (**GANs**).
 
-GANs consist of two neural networks—a **generator** and a **discriminator—that work in tandem to create realistic images. The generator creates images, while the discriminator evaluates them, leading to the production of increasingly authentic visuals over time. This technology is used to create stunning artwork, realistic human faces, and even design new products.
+GANs consist of two neural networks—a **generator** and a **discriminator**—that work in tandem to create realistic images. The generator creates images, while the discriminator evaluates them, leading to the production of increasingly authentic visuals over time. This technology is used to create stunning artwork, realistic human faces, and even design new products.
 
 The ability to generate high-quality images also finds applications in industries like fashion, where AI designs clothing, and in entertainment, where it creates special effects and virtual characters.
 

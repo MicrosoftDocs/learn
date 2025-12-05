@@ -32,7 +32,7 @@ However, there are several query hints available on SQL Server, which are used f
 
 - **`OPTIMIZE FOR`**—provides instructions to the query optimizer that a particular value for a local variable should be used when a query is compiled and optimized.
 
-- **`USE PLAN`**—the query optimizer will use a query plan specified by the *xml_plan* attribute.
+- **`USE PLAN`**—the query optimizer uses a query plan specified by the *xml_plan* attribute.
 
 - **`RECOMPILE`**—creates a new, temporary plan for the query and discards it immediately after the query is executed.
 
@@ -54,9 +54,9 @@ GO
 
 To learn more about query hints, see [Hints (Transact-SQL)](/sql/t-sql/queries/hints-transact-sql-query).
 
-## Query Store hints (in preview)
+## Query Store hints
 
-The Query Store hints feature in Azure SQL Database provides a simple method for shaping query plans without modifying application code.
+[Query Store hints](/sql/relational-databases/performance/query-store-hints) provides a simple method for shaping query plans without modifying application code.
 
 Query Store hints are useful when the query optimizer doesn't generate an efficient execution plan, and when the developer or DBA can't modify the original query text. In some applications, the query text may be hardcoded or automatically generated.
 
@@ -64,7 +64,7 @@ Query Store hints are useful when the query optimizer doesn't generate an effici
 
 To use Query Store hints, you need to identify the Query Store *query_id* of the query statement you wish to modify through Query Store catalog views, built-in Query Store reports, or Query Performance Insight for Azure SQL Database. Then, execute `sp_query_store_set_hints` with the *query_id* and query hint string you wish to apply to the query.
 
-The example below shows how to obtain the *query_id* for a specific query, and then use it to apply the `RECOMPILE` and `MAXDOP` hints to the query.
+The following example shows how to obtain the `query_id` for a specific query and then use it to apply the `RECOMPILE` and `MAXDOP` hints to the query.
 
 ```sql
 SELECT q.query_id, qt.query_sql_text
@@ -86,8 +86,5 @@ There are a few scenarios where Query Store hints can help with query-level perf
 - Limit the maximum degree of parallelism for a statistic update operation.
 - Use a Hash join instead of a Nested Loops join.
 - Use compatibility level 110 for a specific query while keeping the database at the current compatibility.
-
-> [!NOTE]
-> Query Store hints are also supported by SQL Managed Instance.
 
 For more information about Query Store hints, see [Query Store hints](/sql/relational-databases/performance/query-store-hints).

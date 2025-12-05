@@ -1,7 +1,7 @@
 Azure Container Apps is a fully managed environment that enables you to run microservices and containerized applications on a serverless platform.
 
 > [!IMPORTANT]
-> You will need an Azure account to complete this guided project module. Some fees will be incurred for the resources you use in this module. Make sure to clean up the resources you create in this module to avoid incurring additional costs. If you don't have an Azure subscription, check to see if you're eligible for a [30-day free trial account](https://azure.microsoft.com/free) before you begin.
+> You will need an Azure account to complete this guided project module. Some fees will be incurred for the resources you use in this module. Make sure to clean up the resources you create in this module to avoid incurring additional costs. If you don't have an Azure subscription, check to see if you're eligible for a [30-day free trial account](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn) before you begin.
 
 Suppose you're part of a team that wants use of Azure Container Apps to run containerized cloud-native apps. The team needs to demonstrate that Container Apps meet their business requirements before transitioning away from their existing solution.
 

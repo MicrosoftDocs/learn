@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-ninja-safeguard-remote-work.restrict-sensitive-files-endpoint-data-loss-prevention
+title: Restrict sensitive file activities with Endpoint DLP
+metadata:
+  title: Restrict Sensitive File Activities with Endpoint DLP
+  description: "Restrict sensitive file activities with Endpoint DLP."
+  ms.date: 08/21/2025
+  author: sachow
+  ms.author: sachow
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 9
+content: |
+  [!include[](includes/restrict-sensitive-files-endpoint-data-loss-prevention.md)]

@@ -1,0 +1,62 @@
+### YamlMime:ModuleUnit
+uid: learn.agent-orchestration-patterns.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge Check
+  description: Test your knowledge
+  ms.date: 08/13/2025
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 10
+content: Choose the best response for each question.
+quiz:
+  questions:
+    - content: "An AI workflow involves multiple stages that must happen in a strict order. Each stage's output is needed for the next stage. The process is like a pipeline - for example, first selecting a template, then customizing content, then checking compliance, and finally performing a risk assessment. The stages have clear linear dependencies and you want a deterministic sequence of agents handling each step. Which orchestration pattern is best suited for this scenario?"
+      choices:
+        - content: "Sequential orchestration."
+          isCorrect: true
+          explanation: "This pattern is ideal for a pipeline of dependent steps because it chains agents in a predefined linear order. Each agent's output is passed to the next agent, fitting the scenario where each stage builds on the previous stage's results. The sequence is deterministic (fixed upfront) and ensures step-by-step refinement of the work."
+        - content: "Concurrent orchestration."
+          isCorrect: false
+          explanation: "Concurrent orchestration has all agents run in parallel on the same task. In the scenario, steps must happen one after another (each depends on the previous), so running them simultaneously wouldn't make sense."
+        - content: "Group chat orchestration."
+          isCorrect: false
+          explanation: "Group chat involves agents collaborating through a discussion thread. That overhead isn't necessary here because the process is a straightforward linear pipeline."
+        - content: "Handoff orchestration."
+          isCorrect: false
+          explanation: "Handoff orchestration allows dynamic switching of agents when the appropriate agent isn't known upfront. In this scenario, the order is predetermined."
+        - content: "Magentic orchestration."
+          isCorrect: false
+          explanation: "Magentic is meant for open-ended problems with no set plan. Our scenario has a predetermined process, so magentic orchestration would be inappropriate."
+    - content: "An AI system must analyze the same input from multiple perspectives at the same time to provide a comprehensive result quickly. For example, given a single stock ticker, one agent evaluates financial fundamentals, another analyzes technical chart patterns, a third gauges news sentiment, and a fourth checks ESG factors. All checks should occur simultaneously, and their findings will later be combined into one report. Which orchestration pattern is best suited for this scenario?"
+      choices:
+        - content: "Sequential orchestration."
+          isCorrect: false
+          explanation: "A sequential approach would make each analysis agent run one after the other, which is slower and unnecessary here."
+        - content: "Concurrent orchestration."
+          isCorrect: true
+          explanation: "Concurrent orchestration allows multiple agents to work in parallel on the same overall task. Each specialized agent can perform its analysis concurrently, reducing latency."
+        - content: "Group chat orchestration."
+          isCorrect: false
+          explanation: "Group chat involves agents conversing in a shared thread. This scenario only needs parallel independent analysis, not discussion."
+        - content: "Handoff orchestration."
+          isCorrect: false
+          explanation: "Handoff would mean one agent might pass the task to another in sequence, which conflicts with the requirement of doing work simultaneously."
+        - content: "Magentic orchestration."
+          isCorrect: false
+          explanation: "Magentic orchestration is for complex, open-ended problems where the solution path isn't known upfront. This task is well-defined."
+    - content: "An AI system is tasked with evaluating a complex proposal by weighing different considerations. It employs several specialist AI agents: One focusing on community impact, another on environmental factors, and another on budget feasibility. These agents need to interact with each other's ideas in real-time, challenging, and refining the proposal through discussion. A central chat manager coordinates their turns and keeps the conversation on track. Which orchestration pattern does this scenario exemplify?"
+      choices:
+        - content: "Sequential orchestration."
+          isCorrect: false
+          explanation: "A sequential pipeline isn't suitable here because the agents need to collaborate and iterate, not just hand off a result in one direction."
+        - content: "Concurrent orchestration."
+          isCorrect: false
+          explanation: "Concurrent orchestration would let agents work at the same time but without interaction. This scenario requires real-time exchange of ideas."
+        - content: "Group chat orchestration."
+          isCorrect: true
+          explanation: "In group chat orchestration, multiple agents participate in a shared conversation thread to solve a problem collectively. A chat manager mediates the interaction, matching the described debate and refinement process."
+        - content: "Handoff orchestration."
+          isCorrect: false
+          explanation: "Handoff involves passing control from one agent to another in a chain, not the interactive discussion required here."

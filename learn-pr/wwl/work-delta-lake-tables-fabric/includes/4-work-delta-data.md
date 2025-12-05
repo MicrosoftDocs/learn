@@ -14,7 +14,7 @@ spark.sql("INSERT INTO products VALUES (1, 'Widget', 'Accessories', 2.99)")
 %%sql
 
 UPDATE products
-SET Price = 2.49 WHERE ProductId = 1;
+SET ListPrice = 2.49 WHERE ProductId = 1;
 ```
 
 ## Use the Delta API

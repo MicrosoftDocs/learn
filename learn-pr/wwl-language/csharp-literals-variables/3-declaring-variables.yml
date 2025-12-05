@@ -4,7 +4,7 @@ title: Declare variables
 metadata:
   title: Declare variables
   description: "Declare variables"
-  ms.date: 01/17/2025
+  ms.date: 11/10/2025
   author: wwlpublish
   ms.author: buzahid
   ms.topic: unit
@@ -13,4 +13,3 @@ metadata:
 durationInMinutes: 6
 content: |
   [!include[](includes/3-declaring-variables.md)]
-interactive: csharp

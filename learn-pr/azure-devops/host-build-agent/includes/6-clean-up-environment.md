@@ -7,8 +7,6 @@ You're all done with the tasks for this module. In this unit, we'll help you cle
 
 Here, you'll delete your Azure VM. The easiest way to delete resources is to delete their parent resource group. When you delete a resource group, you delete all resources in that group.
 
-In the [Create a release pipeline with Azure Pipelines](/training/modules/create-release-pipeline?azure-portal=true) module, you managed Azure resources through the Azure portal. Here, you'll tear down your deployment by using the Azure CLI through Azure Cloud Shell. The steps are similar to the steps that you used when you created the resources.
-
 To clean up your resource group:
 
 1. Go to the [Azure portal](https://portal.azure.com?azure-portal=true), and sign in.
@@ -25,7 +23,7 @@ To clean up your resource group:
     When prompted, to confirm the operation, enter `y`.
 
     > [!NOTE]
-    > If you are still signed in to SSH in Cloud Shell window from the previous step, run the `exit` command to exit SSH, then run the `az delete` command.
+    > If you're still signed in to SSH in Cloud Shell window from the previous step, run the `exit` command to exit SSH, then run the `az group delete` command.
 
 1. As an optional step, after the previous command finishes, run the following `az group list` command:
 
@@ -33,7 +31,7 @@ To clean up your resource group:
     az group list --output table
     ```
 
-    You'll see that the resource group `tailspin-space-game-rg` no longer exists.
+    You should see that the resource group `tailspin-space-game-rg` no longer exists.
 
 ## Disable the pipeline or delete your project
 

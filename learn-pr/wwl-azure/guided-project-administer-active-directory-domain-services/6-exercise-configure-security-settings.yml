@@ -2,8 +2,6 @@
 uid: learn.wwl.guided-project-administer-active-directory-domain-services.exercise-configure-security-settings
 title: Exercise - Configure security settings
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Configure security settings
   description: "Exercise - Configure security settings"
   ms.date: 08/16/2024
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 10
 content: |
-  [!include[](includes/6-exercise-configure-security-settings.md)]
+  [!include[](includes/6-exercise-configure-security-settings.md)]

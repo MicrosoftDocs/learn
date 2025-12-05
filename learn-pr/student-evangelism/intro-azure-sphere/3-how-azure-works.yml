@@ -2,8 +2,6 @@
 uid: learn.oxford.intro-azure-sphere.how-azure-sphere-works
 title: How Azure Sphere works
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: How Azure Sphere works
   description: In this section, we provide a high-level explanation of the parts of the product and explain how these parts work together. We also show how the product would work when solving the scenario outlined in the introduction section
   ms.date: 07/20/2024
@@ -13,4 +11,4 @@ metadata:
 durationInMinutes: 6 # dummy number at present
 content: |
   [!include[](includes/3-how-azure-sphere-works.md)]
-
+

@@ -2,13 +2,11 @@
 uid: learn.wwl.create-metadata-objects-azure-synapse-serverless-sql-pools.database-templates
 title: Explore database templates
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Explore database templates
+  title: Explore Database Templates
   description: "Explore database templates"
-  ms.date: 07/25/2024
-  author: wwlpublish
-  ms.author: jamesh
+  ms.date: 08/21/2025
+  author: weslbo
+  ms.author: wedebols
   ms.topic: unit
 azureSandbox: false
 labModal: false

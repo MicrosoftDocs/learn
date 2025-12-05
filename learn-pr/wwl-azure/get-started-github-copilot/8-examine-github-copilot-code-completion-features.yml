@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-started-github-copilot.examine-github-copilot-code-completion-features
+title: Examine GitHub Copilot's code completion features
+metadata:
+  title: Examine GitHub Copilot's code completion features
+  description: "Examine GitHub Copilot's code completion features"
+  ms.date: 06/02/2025
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: unit
+  ms.custom:
+  - N/A
+  - ai-learning-hub
+durationInMinutes: 8
+content: |
+  [!include[](includes/8-examine-github-copilot-code-completion-features.md)]

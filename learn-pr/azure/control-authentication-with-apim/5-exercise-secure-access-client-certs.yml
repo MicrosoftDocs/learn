@@ -5,7 +5,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Exercise - Use client certificates to secure access to an API
   description: In this unit, you create a client certificate and use it to authenticate calls to API Management.
-  ms.date: 06/14/2023
+  ms.date: 03/26/2025
   author: dlepow
   ms.author: danlep
   ms.topic: unit

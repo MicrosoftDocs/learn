@@ -1,0 +1,37 @@
+### YamlMime:LearningPath
+uid: learn.wwl.ai-workloads-governance
+metadata:
+  title: AI workload governance and DLP
+  description: Master the art of safeguarding sensitive data and enforcing governance for AI workloads on Azure. This learning path is crafted for IT and security professionals tasked with maintaining data protection and compliance in AI environments. Discover how to prevent data exfiltration and apply governance policies that ensure consistent, secure AI deployments. Learn to combine technical controls with strategic oversight to create resilient, policy-driven AI architectures that align with organizational and regulatory standards. 
+  ms.date: 07/08/2025
+  author: vrapolinario
+  ms.author: viniap
+  ms.topic: learning-path
+title: AI workload governance and DLP
+prerequisites: |
+  - Experience navigating the Azure portal 
+  - Familiarity with Microsoft Azure Networking 
+  - Basic AI knowledge and familiarity with AI services on Azure 
+summary: |
+  AI workloads require not just performance—but precision in governance and data protection. This learning path guides Cloud Administrators through the essentials of data loss prevention (DLP) and AI policy governance in Azure. You’ll explore techniques to restrict data movement and enforce guardrails using Azure Policy. By the end of these modules, you'll be equipped to implement robust governance strategies that protect sensitive information and ensure responsible use of AI at scale. 
+iconUrl: /training/achievements/generic-trophy.svg
+levels:
+- intermediate
+roles:
+- administrator 
+- auditor 
+- devops-engineer 
+- identity-access-admin 
+- privacy-manager 
+- security-engineer 
+- security-operations-analyst 
+- solution-architect 
+- support-engineer
+products:
+- ai-services
+- azure-machine-learning
+modules:
+- learn.prevent-data-exfiltration-azure-ai-workloads
+- learn.govern-ai-services-azure-policy
+trophy:
+  uid: learn.wwl.ai-workloads-governance.trophy

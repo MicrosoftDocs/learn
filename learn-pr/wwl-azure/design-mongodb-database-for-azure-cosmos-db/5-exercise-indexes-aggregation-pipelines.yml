@@ -2,8 +2,6 @@
 uid: learn.wwl.design-mongodb-database-for-azure-cosmos-db.exercise-indexes-and-aggregation-pipelines
 title: Exercise – Indexes and aggregation pipelines
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise – Indexes and aggregation pipelines
   description: "Exercise – Indexes and aggregation pipelines"
   ms.date: 12/28/2022
@@ -15,4 +13,4 @@ labModal: false
 durationInMinutes: 25
 content: |
   [!include[](includes/5-exercise-indexes-aggregation-pipelines.md)]
-interactive: bash
+interactive: bash

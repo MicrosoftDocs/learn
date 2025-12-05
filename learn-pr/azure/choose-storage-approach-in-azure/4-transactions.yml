@@ -1,8 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.choose-storage-approach-in-azure.4-transactions
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Group multiple operations in a transaction
   description: Group multiple operations in a transaction.
   ms.date: 10/18/2024
@@ -36,4 +34,4 @@ quiz:
     - content: "One order will be processed and use the in-store credit, and the other order won't be processed."
       isCorrect: true
       explanation: "Correct. When the second order determines that the in-store credit has already been used, it will roll back the transaction."
-
+

@@ -3,6 +3,7 @@ uid: learn.philanthropies.explore-generative-ai
 metadata:
   ms.author: anruss
   ms.date: 01/14/2025
+  ms.update-cycle: 180-days
   title: "AI fluency: Explore generative AI"  
   description: Discover the fundamentals of generative AI and how this technology is transforming our approach to creativity and productivity.
   ms.topic: module

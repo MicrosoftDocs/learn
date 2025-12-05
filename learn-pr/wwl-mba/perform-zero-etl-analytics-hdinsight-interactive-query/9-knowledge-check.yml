@@ -2,8 +2,6 @@
 uid: learn.wwl.perform-zero-etl-analytics-hdinsight-interactive-query.9-knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 04/08/2024
@@ -69,4 +67,4 @@ quiz:
       explanation: "The Hive Warehouse Connector can be used for streaming data, but that isn't why it's more efficient and scalable."
     - content: "Because the library loads data from LLAP daemons into Spark executors in parallel"
       isCorrect: true
-      explanation: "The library loads data from LLAP daemons into Spark executors in parallel, which makes the Hive Warehouse Connector efficient and scalable."
+      explanation: "The library loads data from LLAP daemons into Spark executors in parallel, which makes the Hive Warehouse Connector efficient and scalable."

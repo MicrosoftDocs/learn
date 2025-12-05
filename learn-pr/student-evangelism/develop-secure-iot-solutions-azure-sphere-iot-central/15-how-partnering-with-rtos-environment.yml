@@ -2,8 +2,6 @@
 uid: learn.oxford.develop-secure-iot-solutions-for-azure-sphere.how-partnering-with-rtos-environment
 title: How to send Azure RTOS real-time room environment sensor data to IoT Central
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: How to send Azure RTOS real-time room environment sensor data to IoT Central
   description: In this section, send Azure RTOS real-time room environment sensor data to IoT Central
   ms.date: 07/10/2024
@@ -14,4 +12,4 @@ metadata:
 durationInMinutes: 4 # dummy number at present
 content: |
   [!include[](includes/15-how-partnering-with-rtos-environment.md)]
-
+

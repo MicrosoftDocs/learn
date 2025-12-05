@@ -2,8 +2,6 @@
 uid: learn.wwl.translate-speech-speech-service.summary
 title: Summary
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Summary
   description: Summary
   author: wwlpublish
@@ -15,4 +13,4 @@ metadata:
 durationInMinutes: 3
 content: |
   [!include[](includes/7-summary.md)]
-
+

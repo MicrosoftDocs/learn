@@ -1,0 +1,75 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-retention-recovery.knowledge-check
+title: Module assessment
+metadata:
+  title: Module assessment
+  description: "Knowledge check."
+  ms.date: 04/14/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "A company needs to apply different retention periods to HR records, financial reports, and project documentation. The settings must stay with each file as users move or share them. What should they use?"
+    choices:
+    - content: "Retention policies"
+      isCorrect: false
+      explanation: "Incorrect: Retention policies apply at the container level, not to individual files or emails."
+    - content: "Retention labels"
+      isCorrect: true
+      explanation: "Correct: Retention labels apply at the item level and follow the file regardless of location."
+    - content: "Sensitivity labels"
+      isCorrect: false
+      explanation: "Incorrect: Sensitivity labels classify content but don't control retention or deletion."
+
+  - content: "An organization applies multiple retention settings to a SharePoint document. One setting retains content for five years, and another deletes it after three. What happens?"
+    choices:
+    - content: "The file is deleted after three years."
+      isCorrect: false
+      explanation: "Incorrect: Retention always takes precedence over deletion."
+    - content: "The file is retained for five years, then deleted."
+      isCorrect: true
+      explanation: "Correct: The longest retention period applies, and deletion is delayed until retention ends."
+    - content: "The file is retained and never deleted."
+      isCorrect: false
+      explanation: "Incorrect: Retention can expire, and deletion follows once retention ends."
+
+  - content: "A company needs to automatically label content that contains tax ID numbers and retain it for seven years. What should they configure?"
+    choices:
+    - content: "An auto-apply retention label policy with a sensitive info type condition"
+      isCorrect: true
+      explanation: "Correct: Auto-apply policies use conditions like sensitive info types to apply labels automatically."
+    - content: "A manual label policy"
+      isCorrect: false
+      explanation: "Incorrect: Manual labels require users to apply them and don't enforce automatic detection."
+    - content: "A retention policy scoped to all SharePoint sites"
+      isCorrect: false
+      explanation: "Incorrect: Retention policies can't detect specific data patterns like tax ID numbers."
+
+  - content: "A user accidentally deletes a document from their OneDrive. The IT team wants to recover it without restoring the entire drive. What's the simplest option?"
+    choices:
+    - content: "Use the OneDrive Recycle Bin to restore the item"
+      isCorrect: true
+      explanation: "Correct: The OneDrive Recycle Bin allows recovery of individual files without affecting the rest of the drive."
+    - content: "Use file version history in Word"
+      isCorrect: false
+      explanation: "Incorrect: Version history restores earlier versions, not deleted items."
+    - content: "Run a full restore from the OneDrive Restore feature"
+      isCorrect: false
+      explanation: "Incorrect: Full restore is used for large-scale recovery, such as after malware or data corruption."
+
+  - content: "A security team is reviewing recovery practices and notices that file version history isn't enabled for certain sites. What Microsoft 365 feature could help them recover changes if version history is unavailable?"
+    choices:
+    - content: "Retention labels with automatic deletion"
+      isCorrect: false
+      explanation: "Incorrect: Retention labels can preserve or delete content but don't provide versioning."
+    - content: "Preservation Hold Library"
+      isCorrect: false
+      explanation: "Incorrect: This is tied to eDiscovery or holds, not general recovery of changes."
+    - content: "Recycle Bin in SharePoint or OneDrive"
+      isCorrect: true
+      explanation: "Correct: The Recycle Bin provides a fallback for deleted content when version history isn't available."

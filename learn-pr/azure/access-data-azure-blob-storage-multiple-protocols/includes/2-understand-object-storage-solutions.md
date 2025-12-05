@@ -6,15 +6,15 @@ Azure Blob Storage is a service that stores unstructured data in the cloud as bl
 
 Common Blob Storage uses include:
 
-- Providing images or documents directly to a browser
+- Providing images or documents directly to a browser.
 
-- Storing files for distributed access
+- Storing files for distributed access.
 
-- Streaming video and audio
+- Streaming video and audio.
 
-- Storing data for backup and restore, disaster recovery, and archiving
+- Storing data for backup and restore, disaster recovery, and archiving.
 
-- Storing data for analysis by an on-premises or Azure-hosted service
+- Storing data for analysis by an on-premises or Azure-hosted service.
 
 ### Understand hierarchical namespace support in Azure Blob Storage
 
@@ -26,7 +26,7 @@ With a hierarchical namespace enabled on a storage account, you can achieve the 
 
 - **Atomic directory manipulation**: A hierarchical namespace stores objects in a directory hierarchy using a convention of embedding slashes (/) in the object name to denote path segments. You can improve the latency due to atomic directory manipulation, which a hierarchical namespace enables.
 
-- **Familiar interface style**: File systems with a hierarchical namespace are widely accepted by the developer community and are suitable for storage workloads designed for file systems that manipulate directories.
+- **Familiar interface style**: The developer community widely accepts file systems with a hierarchical namespace, and these file systems are suitable for storage workloads designed for directory manipulation.
 
 ## Understand Azure Data Lake Storage Gen2
 
@@ -40,7 +40,7 @@ Data Lake Storage Gen2 allows you to treat the data as if it's stored in an HDFS
 
 ### Security
 
-Data Lake Storage Gen2 supports following authorization mechanisms:
+Data Lake Storage Gen2 supports the following authorization mechanisms:
 
 - Access control lists (ACLs), similar to Portable Operating System Interface for UNIX (POSIX) permissions
 

@@ -1,6 +1,6 @@
 In the previous unit, you implemented resiliency by adding failure-handling code using .NET native resilience extension. However, this change only applies to the service that you changed. Updating a large app with many services would be nontrivial.
 
-Instead of using *code-based* resiliency, this unit uses an approach called *infrastructure-based* resiliency that spans the entire app. You will:
+Instead of using *code-based* resiliency, this unit uses an approach called *infrastructure-based* resiliency that spans the entire app. You'll:
 
 * Redeploy the app without any resiliency into Kubernetes.
 * Deploy Linkerd in your Kubernetes cluster.

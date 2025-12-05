@@ -2,11 +2,9 @@
 uid: learn.azure.stage-deploy-app-service-deployment-slots.6-summary
 title: Summary
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Summary
   description: Summary and cleanup
-  ms.date: 04/11/2023
+  ms.date: 04/22/2025
   author: cephalin
   ms.author: cephalin
   ms.topic: unit

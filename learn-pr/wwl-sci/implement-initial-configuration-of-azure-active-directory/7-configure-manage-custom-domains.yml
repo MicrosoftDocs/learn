@@ -6,12 +6,13 @@ metadata:
   prefetch-feature-rollout: true
   title: Configure and manage custom domains
   description: "Configure and manage custom domains"
-  ms.date: 09/03/2024
+  ms.date: 04/08/2025
   author: wwlpublish
   ms.author: roberts
   ms.topic: unit
   ms.custom:
-  - N/A
+    - sfi-ga-nochange
+    - N/A
 durationInMinutes: 10
 content: |
   [!include[](includes/7-configure-manage-custom-domains.md)]

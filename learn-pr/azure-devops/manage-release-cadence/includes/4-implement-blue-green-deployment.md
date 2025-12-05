@@ -1,6 +1,6 @@
 In [Create a multistage pipeline by using Azure Pipelines](/training/modules/create-multi-stage-pipeline?azure-portal=true), you built a basic deployment pipeline that deploys a web application to Azure App Service in these stages: _Dev_, _Test_, and _Staging_.
 
-Here you add to that workflow by applying the *blue-green* deployment pattern during _Staging_.
+Here you add to that workflow by applying the _blue-green_ deployment pattern during _Staging_.
 
 To do so, you:
 
@@ -12,9 +12,9 @@ To do so, you:
 
 Here you add a deployment slot to the App Service instance that corresponds to _Staging_.
 
-By default, every App Service instance provides a default slot, named *production*. You deployed to the *production* slot when you set up the pipeline in the previous section.
+By default, every App Service instance provides a default slot, named _production_. You deployed to the _production_ slot when you set up the pipeline in the previous section.
 
-An App Service instance can have multiple slots. Here you add a second deployment slot to the App Service instance that corresponds to _Staging_. The deployment slot is named *swap*.
+An App Service instance can have multiple slots. Here you add a second deployment slot to the App Service instance that corresponds to _Staging_. The deployment slot is named _swap_.
 
 To add the slot:
 
@@ -43,7 +43,7 @@ To add the slot:
     tailspin-space-game-web-staging-1234
     ```
 
-1. Run the following command to add a slot named *swap* to your **staging** environment.
+1. Run the following command to add a slot named _swap_ to your **staging** environment.
 
     ```azurecli
     az webapp deployment slot create \
@@ -74,7 +74,7 @@ To add the slot:
 
     :::image type="content" source="../media/4-app-service-default-tailspin.png" alt-text="Screenshot of the default home page in Azure App Service.":::
 
-By default, a deployment slot is accessible from the internet. In practice, you could configure an Azure virtual network that places your *swap* slot in a network that's not routable from the internet but that only your team can access. Your *production* slot would remain reachable from the internet.
+By default, a deployment slot is accessible from the internet. In practice, you could configure an Azure virtual network that places your _swap_ slot in a network that's not routable from the internet but that only your team can access. Your _production_ slot would remain reachable from the internet.
 
 ## Swap deployment slots in Staging
 
@@ -82,7 +82,7 @@ Here you use the [AzureAppServiceManage@0](/azure/devops/pipelines/tasks/deploy/
 
 You can also use this task to start, stop, or delete a slot. Or you can use it to install site extensions or to enable continuous monitoring on App Service.
 
-1. In Visual Studio Code, modify *azure-pipelines.yml* by using this code:
+1. In Visual Studio Code, modify _azure-pipelines.yml_ by using this code:
 
     > [!TIP]
     > You can replace the entire file or just update the part that's highlighted.
@@ -94,17 +94,17 @@ You can also use this task to start, stop, or delete a slot. Or you can use it t
     * The `AzureWebApp@1` task now specifies these values:
         * `deployToSlotOrASE`, when set to `true`, deploys to an existing deployment slot.
         * `resourceGroupName` specifies the name of the resource group. This value is required when `deployToSlotOrASE` is `true`.
-        * `slotName` specifies the name of the deployment slot. Here you deploy to the slot that's named *swap*.
+        * `slotName` specifies the name of the deployment slot. Here you deploy to the slot that's named _swap_.
     * The new task, `AzureAppServiceManage@0`, swaps the deployment slots.
         * `sourceSlot` and `targetSlot` specify the slots to swap.
         * `action` specifies the action to take. Recall that you can use this task to start, stop, or delete a slot. Here, "Swap Slots" specifies to swap the source and target slots.
 
-    This configuration always deploys to the *swap* slot. It then swaps the *production* and *swap* slots. The swap process ensures that *production* points to the more recent deployment.
+    This configuration always deploys to the _swap_ slot. It then swaps the _production_ and _swap_ slots. The swap process ensures that _production_ points to the more recent deployment.
 
-1. In the integrated terminal, add *azure-pipelines.yml* to the index. Commit the changes, and then push the branch up to GitHub.
+1. In the integrated terminal, add _azure-pipelines.yml_ to the index. Commit the changes, and then push the branch up to GitHub.
 
     > [!TIP]
-    > Save *azure-pipelines.yml* before you run these Git commands.
+    > Save _azure-pipelines.yml_ before you run these Git commands.
 
     ```bash
     git add azure-pipelines.yml
@@ -115,7 +115,7 @@ You can also use this task to start, stop, or delete a slot. Or you can use it t
 1. In Azure Pipelines, trace the build through each of the steps.
 
 > [!NOTE]
-> If your run into the following error `...'staging' slot did not respond to http ping. (CODE: 417)` try restarting your app service. If the problem persists, reset auto swap for your slot.
+> If you run into the following error `...'staging' slot did not respond to http ping. (CODE: 417)` try restarting your app service. If the problem persists, reset auto swap for your slot.
 
 1. As an optional step, in a browser, go to the URL that corresponds to each stage.
 

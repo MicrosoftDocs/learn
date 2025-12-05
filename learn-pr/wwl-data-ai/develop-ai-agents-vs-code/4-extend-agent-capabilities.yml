@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.develop-ai-agents-vs-code.extend-agent-capabilities
+title: Extend AI agent capabilities with tools
+metadata:
+  title: Extend AI Agent Capabilities with Tools
+  description: Learn how to extend AI agent capabilities using tools in Visual Studio Code.
+  author: buzahid
+  ms.author: buzahid
+  ms.date: 10/06/2025
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-extend-agent-capabilities.md)]
+

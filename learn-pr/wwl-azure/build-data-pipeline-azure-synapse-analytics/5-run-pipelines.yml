@@ -2,13 +2,11 @@
 uid: learn.wwl.build-data-pipeline-azure-synapse-analytics.run-pipelines
 title: Run a pipeline
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Run a pipeline
+  title: Run a Pipeline
   description: "Run a pipeline"
-  ms.date: 10/06/2023
-  author: wwlpublish
-  ms.author: jamesh
+  ms.date: 08/21/2025
+  author: weslbo
+  ms.author: wedebols
   ms.topic: unit
 durationInMinutes: 5
 content: |

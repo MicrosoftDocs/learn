@@ -2,8 +2,6 @@
 uid: learn.wwl.plan-sap-hana-azure-large-instances-high-availability-disaster-recovery.fail-over-to-site
 title: Fail over to a disaster recovery site
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Fail over to a disaster recovery site
   description: "Fail over to a disaster recovery site"
   ms.date: 12/08/2021
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 5
 content: |
-  [!include[](includes/6-exercise-fail-over-disaster-recovery-site.md)]
+  [!include[](includes/6-exercise-fail-over-disaster-recovery-site.md)]

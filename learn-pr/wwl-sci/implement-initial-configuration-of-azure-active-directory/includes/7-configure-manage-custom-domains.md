@@ -5,22 +5,21 @@ A domain name is a part of the identifier for many Microsoft Entra ID resources:
 When your organization is created, the initial domain name, such as ‘contoso.onmicrosoft.com,’ is also the primary domain name.
 
 > [!IMPORTANT]
-> The person who creates the tenant is automatically the Global administrator for that tenant. The Global administrator can add other administrators to the tenant.
+> The person who creates the tenant is automatically the Global administrator for that tenant. The Global administrator can add other administrators to the tenant. When adding new administrators, always use the principle of least privilege.
 
 The primary domain is the default domain name for a new user when you create a new user. Setting a primary domain name streamlines the process for an administrator to create new users in the portal. To change the primary domain name:
 
-1.  Sign in to the [Azure portal](https://portal.azure.com/) with an account that's a Global Administrator for the organization.
-2.  Select **Microsoft Entra ID.**
-3.  Select **Custom domain names**.
+1. Sign in to the [Azure portal](https://portal.azure.com/) with an account that's an Administrator for the organization.
+2. Select **Microsoft Entra ID.**
+3. Select **Custom domain names**.
     
-    :::image type="content" source="../media/add-custom-domain-b91e0e89-fb1e5c29.png" alt-text="Screenshot of the Add custom user dialog box. Opening the user management page.":::
+   :::image type="content" source="../media/add-custom-domain.png" alt-text="Screenshot of the Add custom user dialog box. Opening the user management page.":::
     
-4.  Select the name of the domain that you want to be the primary domain.
-5.  Select the **Make primary** command. Confirm your choice when prompted.
+4. Select the name of the domain that you want to be the primary domain.
+5. Select the **Make primary** command. Confirm your choice when prompted.
     
-    :::image type="content" source="../media/make-primary-domain-0d2ab135-b7762e52.png" alt-text="Screenshot of the configure domain dialog. You can make a domain name the primary.":::
+   :::image type="content" source="../media/make-primary-domain.png" alt-text="Screenshot of the configure domain dialog. You can make a domain name the primary.":::
     
-
 You can change the primary domain name for your organization to be any verified custom domain that isn't federated. Changing the primary domain for your organization won't change the user name for any existing users.
 
 ## Add custom domain names to your Microsoft Entra organization
@@ -43,9 +42,9 @@ You can delete a custom domain name from your Microsoft Entra ID if your organiz
 
 To delete a custom domain name, you must first ensure that no resources in your organization rely on the domain name. You can't delete a domain name from your organization if:
 
- -  Any user has a user name, email address, or proxy address that includes the domain name.
- -  Any group has an email address or proxy address that includes the domain name.
- -  Any application in your Microsoft Entra ID has an app ID URI that includes the domain name.
+- Any user has a user name, email address, or proxy address that includes the domain name.
+- Any group has an email address or proxy address that includes the domain name.
+- Any application in your Microsoft Entra ID has an app ID URI that includes the domain name.
 
 You must change or delete any such resource in your Microsoft Entra organization before you can delete the custom domain name.
 
@@ -55,16 +54,16 @@ You must change or delete any such resource in your Microsoft Entra organization
 
 To call **ForceDelete** in the Azure portal, you must ensure that there are fewer than 1000 references to the domain name, and any references where Exchange is the provisioning service must be updated or removed in the Exchange Admin Center. Exchange Mail-Enabled Security Groups and distributed lists are included. Also, the **ForceDelete** operation won't succeed if either of the following is true:
 
- -  You purchased a domain via Microsoft 365 domain subscription services
- -  You're a partner administering on behalf of another customer organization
+- You purchased a domain via Microsoft 365 domain subscription services
+- You're a partner administering on behalf of another customer organization
 
 The following actions are performed as part of the **ForceDelete** operation:
 
- -  Renames the UPN, EmailAddress, and ProxyAddress of users with references to the custom domain name to the initial default domain name.
- -  Renames the EmailAddress of groups with references to the custom domain name to the initial default domain name.
- -  Renames the identifierUris of applications with references to the custom domain name to the initial default domain name.
+- Renames the UPN, EmailAddress, and ProxyAddress of users with references to the custom domain name to the initial default domain name.
+- Renames the EmailAddress of groups with references to the custom domain name to the initial default domain name.
+- Renames the identifierUris of applications with references to the custom domain name to the initial default domain name.
 
 An error is returned when:
 
- -  The number of objects to be renamed is greater than 1000
- -  One of the applications to be renamed is a multitenant app
+- The number of objects to be renamed is greater than 1000
+- One of the applications to be renamed is a multitenant app

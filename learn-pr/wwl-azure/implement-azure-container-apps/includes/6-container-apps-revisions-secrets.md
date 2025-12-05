@@ -52,7 +52,7 @@ When you create a container app, secrets are defined using the `--secrets` param
 * The parameter accepts a space-delimited set of name/value pairs.
 * Each pair is delimited by an equals sign (`=`).
 
-In the example below, a connection string to a queue storage account is declared in the `--secrets` parameter. The value for queue-connection-string comes from an environment variable named `$CONNECTION_STRING`.
+In the following example, a connection string to a queue storage account is declared in the `--secrets` parameter. The value for queue-connection-string comes from an environment variable named `$CONNECTION_STRING`.
 
 ```bash
 az containerapp create \
@@ -76,5 +76,6 @@ az containerapp create \
   --secrets "queue-connection-string=$CONNECTIONSTRING" \
   --env-vars "QueueName=myqueue" "ConnectionString=secretref:queue-connection-string"
 ```
+
 
 

@@ -1,28 +1,22 @@
-Microsoft Priva helps organizations simplify and automate privacy management. It protects personal data, reduces privacy risks, and supports compliance workflows with privacy regulations. The Priva suite includes five tools designed to address key privacy needs: **Privacy Assessments**, **Privacy Risk Management**, **Tracker Scanning**, **Consent Management**, and **Subject Rights Request**.
+Microsoft Priva helps organizations simplify and automate privacy management. It protects personal data, reduces privacy risks, and supports compliance workflows with privacy regulations. The Priva suite focuses on two core tools: **Privacy Risk Management** and **Subject Rights Requests**.
 
-:::image type="content" source="../media/priva-suite.png" alt-text="Diagram illustrating the Microsoft Priva suite of products." lightbox= "../media/priva-suite.png":::
+## Why these tools matter
 
-## Privacy assessments
+Managing personal data is often fragmented across teams and systems. Policies might exist, but they're applied inconsistently, and responding to individual rights requests can require significant manual effort. The result is a higher risk of noncompliance and reduced trust from customers.
 
-**Microsoft Priva Privacy Assessments** make it easier to track how personal data is collected, stored, and used across an organization. It automates data discovery and helps document privacy practices, ensuring consistent and responsible data handling. This tool also provides a structured way to review and assess privacy risks, regardless of specific regulatory requirements.
+Imagine a global company that stores customer records across multiple business units. Some teams overshare data internally, while others lack clear processes for responding when customers ask to see or delete their data. Priva provides a structured way to address both challenges without slowing down day-to-day operations.
 
 ## Privacy Risk Management
 
-**Microsoft Priva Privacy Risk Management** gives organizations better visibility into their data and privacy risks. It enables the creation of custom policies to detect and manage potential issues, helping to reduce risks and strengthen data protection. Organizations can quickly identify areas that need attention and apply automated actions to address risks.
+**Privacy Risk Management** gives organizations better visibility into how data is handled and where risks occur. Custom policies detect oversharing, overexposure, or other risky practices. Dashboards provide insights into patterns, and automated actions help remediate issues quickly. The goal is to reduce risk before it escalates into an incident.
 
-## Tracker scanning (preview)
+## Subject rights requests
 
-**Microsoft Priva Tracker Scanning (preview)** simplifies the management of tracking technologies used on websites. It identifies trackers automatically, evaluates their purpose, and provides tools to manage them. This makes it easier to track and control data collection activities and ensure privacy policies are consistently followed.
+**Subject Rights Requests** streamline the process of handling requests to access, update, or delete personal data within Microsoft 365. Instead of relying on manual searches, Priva automates data collection, organizes results, and provides collaboration tools for review. This ensures requests are completed efficiently and consistently, reducing compliance gaps.
 
-## Consent management (preview)
+## Bringing it together
 
-**Microsoft Priva Consent Management (preview)** streamlines the process of tracking and managing consent for personal data use. It provides a centralized platform for creating and applying consent models across regions and systems. Whether data is structured, unstructured, or stored across multiple clouds, Priva simplifies consent management. Organizations can efficiently update and enforce consent policies to reflect changes in business or legal requirements.
-
-## Subject rights request
-
-**Microsoft Priva Subject Rights Request** simplifies how organizations handle requests to access, update, or delete personal data. Managing these requests manually can be time-consuming, but Priva automates much of the process with workflows, analytics, and notifications. It also supports managing data requests across an organization's entire data estate, extending beyond Microsoft 365 environments.
-
-Microsoft Priva offers a comprehensive set of tools for managing privacy and protecting personal data. By automating assessments, risk management, and data requests, it helps organizations build scalable privacy practices while keeping operations running smoothly.
+Together, these tools form the foundation of Microsoft Priva. Privacy Risk Management reduces the likelihood of incidents, while Subject Rights Requests ensure individuals' rights are respected. Both capabilities complement other Microsoft Purview solutions, such as sensitivity labels and data loss prevention, by focusing specifically on protecting personal privacy.
 
 ## Legal disclaimer
 

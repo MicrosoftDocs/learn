@@ -1,15 +1,13 @@
 ### YamlMime:Module
 uid: learn.communication-services-voice-calling-webapp
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   moduleType: standard
   title: Create a voice calling web app with Azure Communication Services
   description: "In this module, you create a basic web app that can be used for voice calling with Azure Communication Services."
-  manager: mkluck
+  manager: chpalm
   ms.date: 07/26/2024
-  author: rmcmurray
-  ms.author: robmcm
+  author: sloanster
+  ms.author: micahvivion
   ms.topic: module
   ms.service: azure-communication-services 
   ms.subservice: calling 
@@ -24,7 +22,7 @@ abstract: |
 prerequisites: |
   - Basic familiarity with JavaScript and Node.js.
   - The LTS (Long Term Support) or latest version of Node.js, including the npm package manager.
-  - An Azure account with an active subscription and a billing address in the United States. [Create an account for free](https://azure.microsoft.com/free/?WT.mc_id=A261C142F).
+  - An Azure account with an active subscription and a billing address in the United States. [Create an account for free](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn).
 iconUrl: /training/achievements/communication-services-voice-calling-web-app.svg
 levels:
   - beginner
@@ -43,4 +41,3 @@ units:
 - learn.communication-services-voice-calling-webapp.summary
 badge:
   uid: learn.communication-services-voice-calling-webapp.badge
-

@@ -2,11 +2,9 @@
 uid: learn.azure.intro-to-azure-vpn-gateway.how-vpn-gateway-works
 title: How Azure VPN Gateway works
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: How Azure VPN Gateway works
   description: Learn how Azure VPN Gateway works and how to implement it in your organization.
-  ms.date: 02/24/2024
+  ms.date: 05/14/2025
   author: Orin-Thomas
   ms.author: orthomas
   ms.custom:

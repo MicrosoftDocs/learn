@@ -2,8 +2,6 @@
 uid: learn.azdo.deploy-kubernetes.4-deploy-kubernetes
 title: Exercise - Deploy a multi-container solution to a Kubernetes cluster
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Deploy a multi-container solution to a Kubernetes cluster
   description: Extend the YAML pipeline to build and deploy a multi-container solution to AKS cluster.
   ms.date: 02/01/2024
@@ -14,4 +12,4 @@ metadata:
 durationInMinutes: 15
 content: |
   [!include[](includes/4-deploy-kubernetes.md)]
-
+

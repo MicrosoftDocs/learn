@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.windows-11-readiness-assessment.review-readiness-data-endpoint-analytics
+title: Review readiness with data in endpoint analytics
+metadata:
+  title: Review Readiness With Data in Endpoint Analytics
+  description: This content is part of the "Perform a Windows 11 device readiness assessment" module.
+  ms.date: 10/31/2025
+  author: hhreyes21
+  ms.author: v-homerreyes
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/5-review-readiness-data-endpoint-analytics.md)]

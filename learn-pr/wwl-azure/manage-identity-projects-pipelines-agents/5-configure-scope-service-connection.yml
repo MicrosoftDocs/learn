@@ -2,8 +2,6 @@
 uid: learn.wwl.manage-identity-projects-pipelines-agents.configure-scope-service-connection
 title: Configure the scope of a service connection
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Configure the scope of a service connection
   description: "Configure the scope of a service connection."
   ms.date: 1/25/2023
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 5
 content: |
-  [!include[](includes/5-configure-scope-service-connection.md)]
+  [!include[](includes/5-configure-scope-service-connection.md)]

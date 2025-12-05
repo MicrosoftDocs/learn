@@ -1,12 +1,12 @@
-The IoT Edge platform works with the cloud to deploy IoT Edge **modules** to your IoT Edge devices. 
+The IoT Edge platform works with the cloud to deploy IoT Edge **modules** to IoT Edge devices. 
 
 ## What is a module?
 
-IoT Edge modules are executable packages implemented as containers.
+IoT Edge modules are executable packages that run as containers.
 
-Through IoT Edge modules, you can deploy cloud workloads to run directly on IoT devices. IoT Edge modules are the smallest computation units managed by IoT Edge. Using IoT Edge modules, you can analyze data on devices instead of the cloud. By moving parts of your workload to the edge, your devices can spend less time sending messages to the cloud and react more quickly to events.
+IoT Edge modules let you deploy cloud workloads to run directly on IoT devices. IoT Edge modules are the smallest computational units managed by IoT Edge. IoT Edge modules let you analyze data on devices instead of in the cloud. Moving parts of your workload to the edge reduces the time devices spend sending messages to the cloud and helps them react more quickly to events.
 
-## What is a pre-built module?
+## What is a prebuilt module?
 
-Pre-built IoT Edge Modules are accessed through the Microsoft Artifact Registry or from third-party publisher container registries.
-The module you deploy simulates a sensor. It sends generated data back to the IoT Hub. You can use the simulated data for development and testing your IoT solution.
+Prebuilt IoT Edge modules are accessed through the Microsoft Artifact Registry or third-party publisher container registries.
+The module simulates a sensor and sends generated data to the IoT Hub. Use the simulated data to develop and test your IoT solution.

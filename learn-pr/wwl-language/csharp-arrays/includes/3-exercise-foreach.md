@@ -36,7 +36,7 @@ Use the `foreach` statement to create a sum of all the items on hand in each bin
 
     1. Use the Open Folder dialog to navigate to, and then open, the **CsharpProjects** folder.
 
-    1. In the Visual Studio Code EXPLORER panel, select **Program.cs**.
+    1. In the Visual Studio Code EXPLORER view, select **Program.cs**.
 
     1. On the Visual Studio Code **Selection** menu, select **Select All**, and then press the Delete key.
 
@@ -126,7 +126,7 @@ Use the `foreach` statement to create a sum of all the items on hand in each bin
 
 1. On the Visual Studio Code **File** menu, click **Save**.
 
-1. In the EXPLORER panel, to open a Terminal at your TestProject folder location, right-click **TestProject**, and then select **Open in Integrated Terminal**.
+1. In the EXPLORER view, to open a Terminal at your TestProject folder location, right-click **TestProject**, and then select **Open in Integrated Terminal**.
 
 1. At the Terminal command prompt, type **dotnet run** and then press Enter.
 

@@ -1,0 +1,32 @@
+﻿Data governance is the discipline of ensuring that data is secure, trustworthy, and usable while meeting compliance requirements. It ensures data is available to the right people and protected from unauthorized use.  
+
+In practice, governance involves four major capabilities:
+
+- **Access control**: defining who can do what with which datasets.  
+- **Auditing**: tracking how data was used, by whom, and when.  
+- **Lineage**: tracing how data flows and transforms through systems.  
+- **Discovery**: making datasets searchable and understandable, so duplication is minimized.  
+
+Unity Catalog is the central governance layer in Azure Databricks. Instead of managing separate permissions for each workspace or tool, Unity Catalog provides a single, consistent model that spans all workspaces in a region. The governance capabilities include:
+
+### Unified permission model
+
+Unity Catalog uses a familiar ANSI SQL `GRANT`/`REVOKE` syntax for access control. Policies can be defined once and applied consistently across data, AI models, dashboards, and files. Permissions cascade down Unity Catalog's object hierarchy:
+
+Metastore → Catalog → Schema → Objects (tables, views, functions, models, volumes)
+
+### Fine-grained security
+
+Permissions can be applied at the catalog, schema, table, view, or column level. Row-level access control can also be enforced using dynamic views or policy-based filters. These mechanisms allow administrators to restrict data visibility so that users only see the rows they're authorized to access, without restructuring the underlying data.
+
+### Centralized management
+
+All securable objects are managed in one place, including tables, views, models, volumes, external locations, and storage credentials. This ensures governance applies consistently, whether data is in Azure Data Lake Storage Gen 2, registered as a Delta table, or coming from an external database.
+
+### Built-in auditing and lineage
+
+Unity Catalog automatically logs access events into system tables, making it easy to audit who accessed which datasets. It also captures lineage across notebooks, SQL queries, jobs, and dashboards, so teams can trace transformations and build trust in the results.
+
+### Federated governance
+
+Unity Catalog extends governance beyond Databricks-managed data by supporting connections to external systems through **connections** and **foreign catalogs**. This allows organizations to apply the same access controls and auditing, even when data stays in place outside of Databricks.  

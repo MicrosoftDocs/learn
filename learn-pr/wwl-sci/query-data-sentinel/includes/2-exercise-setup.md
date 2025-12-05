@@ -1,4 +1,4 @@
-This *query and visualize data* exercise is an optional unit. If you want to perform this exercise, you need access to an Azure subscription where you can create Azure resources. If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?azure-portal=true) before you begin.
+This *query and visualize data* exercise is an optional unit. If you want to perform this exercise, you need access to an Azure subscription where you can create Azure resources. If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn) before you begin.
 
 > [!NOTE]
 > If you choose to perform the exercise in this module, be aware that you might incur costs in your Azure Subscription. To estimate the cost, refer to [Microsoft Sentinel Pricing](https://azure.microsoft.com/pricing/details/azure-sentinel/).
@@ -23,7 +23,7 @@ To deploy the prerequisites for the exercise, perform the following tasks.
    | Workspace Name | Provide a unique name for the Microsoft Sentinel Workspace such as *\<yourName>-sentinel*. |
    | Location | Accept the default value of **[resourceGroup().location]**. |
    | Simplevm Name | Accept the default value of **simple-vm**. |
-   | Simplevm Windows OS Version | Accept the default value of **2016-Datacenter**. |
+   | Simplevm Windows OS Version | Accept the default value of **2022-Datacenter**. |
 
 1. Select **Review + create**, and then select **Create**.
 

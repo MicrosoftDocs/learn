@@ -1,5 +1,3 @@
-
-
 When you enable Enterprise State Roaming, your organization is automatically granted a free, limited-use license for Azure Rights Management protection from Azure Information Protection. This free subscription is limited to encrypting and decrypting enterprise settings and application data synced by Enterprise State Roaming. You must have a paid subscription to use the full capabilities of the Azure Rights Management service.
 
 #### To enable Enterprise State Roaming

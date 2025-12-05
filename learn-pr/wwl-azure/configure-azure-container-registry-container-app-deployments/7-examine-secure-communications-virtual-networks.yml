@@ -2,8 +2,6 @@
 uid: learn.wwl.configure-azure-container-registry-container-app-deployments.examine-secure-communications-virtual-networks
 title: Examine secure communications using virtual networks
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Examine secure communications using virtual networks
   description: "Examine secure communications using virtual networks"
   ms.date: 11/22/2023
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 10
 content: |
-  [!include[](includes/7-examine-secure-communications-virtual-networks.md)]
+  [!include[](includes/7-examine-secure-communications-virtual-networks.md)]

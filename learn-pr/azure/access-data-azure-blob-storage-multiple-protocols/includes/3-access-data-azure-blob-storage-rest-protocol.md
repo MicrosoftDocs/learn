@@ -20,7 +20,7 @@ Azure Data Lake Storage Gen2 allows you to access a data container by using the 
 
 First, establish remote access to services. If you opt to use SSH, you could use the following sample code:
 
-```azurecli 
+```azurecli
 # Connect to the cluster via SSH.
 
 ssh sshuser@clustername-ssh.azurehdinsight.net

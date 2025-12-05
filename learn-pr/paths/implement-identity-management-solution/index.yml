@@ -1,13 +1,13 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.implement-identity-management-solution
 metadata:
-  title: 'SC-300: Implement an identity management solution'
-  description: Learn to create and manage your initial Microsoft Entra implementation and configure the users, groups, and external identities you‘ll use to run your solution. Aligned to SC-300 Exam.
+  title: 'Implement an identity management solution using Microsoft Entra ID'
+  description: Implement an identity management solution using Microsoft Entra ID'
   ms.date: 02/03/2023
   author: wwlpublish
   ms.author: roberts
   ms.topic: learning-path
-title: 'SC-300: Implement an identity management solution'
+title: Implement an identity management solution using Microsoft Entra ID'
 prerequisites: |
   None
 summary: |

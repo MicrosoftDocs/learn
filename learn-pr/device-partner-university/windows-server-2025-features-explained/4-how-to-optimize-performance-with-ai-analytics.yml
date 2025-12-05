@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.windows-server-2025-features-explained.how-to-optimize-performance-with-ai-analytics
+title: How to optimize performance with AI analytics
+metadata:
+  title: How To Optimize Performance With AI Analytics
+  description: This content is part of the "Key features and innovations in Windows Server 2025" module.
+  ms.date: 09/08/2025
+  author: hhreyes21
+  ms.author: v-homerreyes
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-how-to-optimize-performance-with-ai-analytics.md)]

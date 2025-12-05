@@ -8,6 +8,7 @@ metadata:
   author: wwlpublish
   ms.author: roberts
   ms.topic: unit
+  ms.custom: sfi-ga-nochange
 durationInMinutes: 6
 content: |
   [!include[](includes/8-explore-logs-monitor-operations.md)]

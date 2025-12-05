@@ -2,16 +2,14 @@
 uid: learn.wwl.explore-azure-databricks.understand-key-concepts
 title: Understand key concepts
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Understand key concepts
+  title: Understand Key Concepts
   description: "Understand key concepts"
-  ms.date: 08/05/2024
-  author: wwlpublish
-  ms.author: theresai
+  ms.date: 09/12/2025
+  author: weslbo
+  ms.author: wedebols
   ms.topic: unit
 azureSandbox: false
 labModal: false
-durationInMinutes: 3
+durationInMinutes: 7
 content: |
   [!include[](includes/04-key-concepts.md)]

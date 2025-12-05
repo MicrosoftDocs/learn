@@ -6,12 +6,12 @@ To support this new line of business, Fabrikam integrated new capabilities into 
 
 ## Learning objectives
 
-In this module, you will:
+In this module, you'll:
 
 - Identify the properties and benefits of a microservices application.
 - Decompose a monolithic application into a microservices architecture.
 
 ## Prerequisites
 
-- Basic understanding of application and system architecture.
-- Basic knowledge of C#.
+- Basic understanding of application and system architecture
+- Basic knowledge of C#

@@ -1,6 +1,6 @@
-You can create one or more clusters in your Azure Databricks workspace by using the Azure Databricks portal.
+You can create one or more clusters in your Azure Databricks workspace by using the Azure Databricks Workspace UI.
 
-![Screenshot of the Create Cluster interface in the Azure Databricks portal.](../media/create-cluster.png)
+![Screenshot of the Create Cluster interface in the Azure Databricks Workspace UI.](../media/create-cluster.png)
 
 When creating the cluster, you can specify configuration settings, including:
 
@@ -20,11 +20,11 @@ When creating the cluster, you can specify configuration settings, including:
 
 When you create an Azure Databricks workspace, a *Databricks appliance* is deployed as an Azure resource in your subscription. When you create a cluster in the workspace, you specify the types and sizes of the virtual machines (VMs) to use for both the driver and worker nodes, and some other configuration options, but Azure Databricks manages all other aspects of the cluster.
 
-The Databricks appliance is deployed into Azure as a managed resource group within your subscription. This resource group contains the driver and worker VMs for your clusters, along with other required resources, including a virtual network, a security group, and a storage account. All metadata for your cluster, such as scheduled jobs, is stored in an Azure Database with geo-replication for fault tolerance.
+The Databricks appliance is deployed into Azure as a **managed resource group** within your subscription. This resource group contains the driver and worker VMs for your clusters, along with other required resources, including a virtual network, a security group, and a storage account. All metadata for your cluster, such as scheduled jobs, is stored in an Azure Database with geo-replication for fault tolerance.
 
-Internally, Azure Kubernetes Service (AKS) is used to run the Azure Databricks control-plane and data-planes via containers running on the latest generation of Azure hardware (Dv3 VMs), with NvMe SSDs capable of blazing 100us latency on high-performance Azure virtual machines with accelerated networking. Azure Databricks utilizes these features of Azure to further improve Spark performance. After the services within your managed resource group are ready, you can manage the Databricks cluster through the Azure Databricks UI and through features such as auto-scaling and auto-termination.
+Azure Databricks is split into two main planes: the **control plane**, which consists of backend services (for example, the web UI) managed by Microsoft, and the **compute plane**, where your data workloads run. There are two variants of compute: classic compute, which uses your own Azure subscription and virtual network (offering isolation inside your subscription), and serverless compute, which runs within Databricks’ managed environment but still in the same Azure region as your workspace, with network-and-security controls to isolate between customers. Every workspace has a storage account in your subscription that holds system data (notebooks, logs, job metadata), the distributed file system (DBFS), and catalog assets (if you have Unity Catalog enabled), with additional controls for networking, firewalling, and access to ensure security and proper isolation.
 
-![Diagram of Azure Databricks architecture.](../media/azure-databricks-architecture.png)
+![Diagram of Azure Databricks architecture.](../media/architecture-azure.png)
 
 > [!NOTE]
 > You also have the option of attaching your cluster to a *pool* of idle nodes to reduce cluster startup time. For more information, see [Pools](/azure/databricks/clusters/instance-pools/) in the Azure Databricks documentation.

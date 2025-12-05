@@ -2,8 +2,6 @@
 uid: learn.pitch-your-product-prototype.2-develop-your-elevator-pitch
 title: Develop your elevator pitch
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Develop your elevator pitch
   description: This unit teaches you how to develop your elevator pitch.
   author: czhu89
@@ -27,4 +25,4 @@ quiz:
     - content: "At Fabrikam, we strive to build an amazing online fashion platform."
       isCorrect: false
       explanation: "Doesn't provide a why for building the product."
-
+

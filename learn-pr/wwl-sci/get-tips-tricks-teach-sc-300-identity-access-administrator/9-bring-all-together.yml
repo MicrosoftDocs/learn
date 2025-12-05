@@ -2,8 +2,6 @@
 uid: learn.wwl.get-tips-tricks-teach-sc-300-identity-access-administrator.bring-all-together
 title: Bring it all together
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Bring it all together
   description: "Bring it all together"
   ms.date: 11/17/2023
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 1
 content: |
-  [!include[](includes/9-bring-all-together.md)]
+  [!include[](includes/9-bring-all-together.md)]

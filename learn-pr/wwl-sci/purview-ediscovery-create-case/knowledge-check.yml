@@ -1,0 +1,75 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-ediscovery-create-case.knowledge-check
+title: Module assessment
+metadata:
+  title: Module assessment
+  description: "Knowledge check."
+  ms.date: 05/15/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "A compliance officer needs to start an investigation into potential data leaks. What should they do first in Microsoft Purview eDiscovery?"
+    choices:
+    - content: "Run a content search across Microsoft 365."
+      isCorrect: false
+      explanation: "Incorrect: You must first create a case before using search or other investigation tools."
+    - content: "Create a new eDiscovery case."
+      isCorrect: true
+      explanation: "Correct: Cases are required to organize and manage investigation tasks such as search, hold, and review."
+    - content: "Assign users to the Reviewer role group."
+      isCorrect: false
+      explanation: "Incorrect: Role assignment helps manage access, but you need a case before managing investigation tasks."
+
+  - content: "A legal team wants to ensure only certain users can access a case and its contents. What should they do after assigning eDiscovery permissions?"
+    choices:
+    - content: "Add users to the appropriate case under Case settings."
+      isCorrect: true
+      explanation: "Correct: Users must be added to the case after receiving role group permissions to gain access."
+    - content: "Update the compliance portal settings to restrict access."
+      isCorrect: false
+      explanation: "Incorrect: Case access is managed directly in the Microsoft Purview eDiscovery case settings."
+    - content: "Create a new hold policy for each user."
+      isCorrect: false
+      explanation: "Incorrect: Hold policies apply to content, not user access."
+
+  - content: "An organization wants to use review sets, analytics, and OCR in eDiscovery. What licensing requirement must they meet?"
+    choices:
+    - content: "Ensure that all administrators have Premium eDiscovery licenses."
+      isCorrect: false
+      explanation: "Incorrect: Admins don't need a license unless their own data is being investigated."
+    - content: "Assign Premium eDiscovery licenses to users whose data will be reviewed."
+      isCorrect: true
+      explanation: "Correct: Only users whose data is being investigated need Premium licensing for features like review sets and analytics."
+    - content: "Purchase a Microsoft 365 Business Basic subscription."
+      isCorrect: false
+      explanation: "Incorrect: Business Basic doesn't support Premium eDiscovery features."
+
+  - content: "A security analyst wants to include data from shared Teams channels and departed users in their search. What should they do?"
+    choices:
+    - content: "Enable more data sources in the case settings."
+      isCorrect: true
+      explanation: "Correct: Data source settings allow you to include shared channels, unlicensed, and departed users."
+    - content: "Add those users to a new search query manually."
+      isCorrect: false
+      explanation: "Incorrect: These user types are excluded by default unless configured in the case settings."
+    - content: "Create a new review set for each user group."
+      isCorrect: false
+      explanation: "Incorrect: Review sets are for reviewing content, not expanding search scope."
+
+  - content: "A reviewer is overwhelmed with duplicate emails in a large review set. What case setting should be enabled to help streamline their workflow?"
+    choices:
+    - content: "Enable near duplicate and email threading in the Search and analytics settings."
+      isCorrect: true
+      explanation: "Correct: These features help group similar content and email threads to reduce redundancy during review."
+    - content: "Increase the number of data sources included in the case."
+      isCorrect: false
+      explanation: "Incorrect: Including more data sources could increase the review load, not reduce it."
+    - content: "Assign the reviewer to the eDiscovery Administrator role."
+      isCorrect: false
+      explanation: "Incorrect: Changing the user's role won't affect how review content is grouped or processed."

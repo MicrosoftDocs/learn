@@ -1,6 +1,6 @@
-Data security and compliance are critical in today's digital environment. Microsoft Purview Audit provides essential tools to log user and administrator activities, helping organizations protect their data and meet compliance standards.
+Data security and compliance are critical in today's digital environment. Microsoft Purview Audit provides tools to log user and administrator activities, helping organizations protect their data and meet compliance standards.
 
-Consider a network of healthcare facilities that manages a large amount of sensitive patient data daily. Recently, they observed unusual access patterns to their electronic health records (EHR), raising concerns about potential data breaches. Ensuring all access to this data is legitimate and complies with health data protection regulations is crucial.
+Consider a network of healthcare facilities that manages a large amount of sensitive patient data daily. After noticing unusual access patterns to their electronic health records (EHR), they need to confirm all access is authorized and aligns with health data protection regulations. The compliance team turns to Microsoft Purview Audit to strengthen oversight, investigate activity, and support regulatory requirements.
 
 ## Learning objectives
 

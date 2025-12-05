@@ -2,8 +2,6 @@
 uid: learn.improve-reliability-deployment.1-introduction
 title: "Introduction"
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: "Introduction"
   description: "Introduction"
   ms.date: 06/07/2024
@@ -15,4 +13,4 @@ metadata:
 durationInMinutes: 1
 content: |
   [!include[](includes/1-introduction.md)]
-
+

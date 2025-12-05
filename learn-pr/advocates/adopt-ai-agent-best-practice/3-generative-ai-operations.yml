@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.adopt-ai-agent-best-practice.genai-ops
+title: Generative AI operations
+metadata:
+  title: Generative AI Operations
+  description: Learn about Generative AI Operations (GenAI Ops) and how it applies to AI agents.
+  ms.date: 10/1/2025
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/3-generative-ai-operations.md)]

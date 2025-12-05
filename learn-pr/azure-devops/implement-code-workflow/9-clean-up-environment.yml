@@ -2,8 +2,6 @@
 uid: learn.azdo.implement-code-workflow.9-clean-up-environment
 title: Exercise - Clean up your Azure DevOps environment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Clean up your Azure DevOps environment
   description: Clean up your Azure DevOps environment and disable your build pipeline.
   ms.date: 1/21/2025
@@ -14,4 +12,4 @@ metadata:
 durationInMinutes: 7
 content: |
   [!include[](includes/9-clean-up-environment.md)]
-
+

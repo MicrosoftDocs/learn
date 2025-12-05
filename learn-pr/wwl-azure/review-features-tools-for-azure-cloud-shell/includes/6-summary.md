@@ -20,8 +20,6 @@ To learn more, go through the following documents:
 - [Microsoft Graph PowerShell​](/powershell/microsoftgraph/overview)
 
 - [AzureAD​](https://aka.ms/azure-ad-2)
-
-- [MSOnline](https://aka.ms/msonline)
 ​
 - [New-AzVM](https://aka.ms/new-azvm)​
 

@@ -3,12 +3,13 @@ uid: learn.powershell.intro-to-powershell.4-cmdlets
 title: Locate commands
 metadata:
   title: Locate commands
-  description: Learn how locate commands.
-  author: softchris
-  ms.author: chnoring
+  description: Learn how to locate commands.
+  author: sdwheeler
+  ms.author: sewhee
   ms.date: 08/25/2023
   ms.topic: unit
   ms.custom: team=nextgen
 durationInMinutes: 3
 content: |
   [!include[](includes/4-cmdlets.md)]
+

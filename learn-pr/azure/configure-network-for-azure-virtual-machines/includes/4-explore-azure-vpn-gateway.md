@@ -1,16 +1,16 @@
-To integrate your on-premises environment with Azure, you need the ability to create an encrypted connection. You can connect over the internet, or over a dedicated link. Here, we'll look at Azure VPN Gateway, which provides an endpoint for incoming connections from on-premises environments.
+To integrate your on-premises environment with Azure, you need the ability to create an encrypted connection. You can connect over the internet or over a dedicated link. Here, we'll look at Azure VPN Gateway, which provides an endpoint for incoming connections from on-premises environments.
 
 You have set up an Azure virtual network and need to ensure that any data transfers from Azure to your site and between Azure virtual networks are encrypted. You also need to know how to connect virtual networks between regions and subscriptions.
 
 ## What is a VPN gateway?
 
-An Azure virtual network gateway provides an endpoint for incoming connections from on-premises locations to Azure over the Internet. A VPN gateway is a specific type of virtual network gateway that can be an endpoint for encrypted connections. It can also send encrypted traffic between Azure virtual networks over Microsoft's dedicated network that links Azure datacenters in different regions. This configuration enables you to link virtual machines and services in different regions securely.
+An Azure virtual network gateway provides an endpoint for incoming connections from on-premises locations to Azure over the Internet. A VPN gateway is a specific type of virtual network gateway that can be an endpoint for encrypted connections. It can also send encrypted traffic between Azure virtual networks over Microsoft's dedicated network that links Azure datacenters in different regions. This configuration allows you to link virtual machines and services in different regions securely.
 
 Each virtual network can have only one VPN gateway. All connections to that VPN gateway share the available network bandwidth.
 
-Within each virtual network gateway, there are two or more virtual machines (VMs). These VMs have been deployed to a special subnet that you specify, called the _gateway subnet_. They contain routing tables for connections to other networks, along with specific gateway services. These VMs and the gateway subnet are similar to a hardened network device. You don't need to configure these VMs directly, and shouldn't deploy any more resources into the gateway subnet.
+Within each virtual network gateway, there are two or more virtual machines (VMs). These VMs have been deployed to a special subnet that you specify called the _gateway subnet_. They contain routing tables for connections to other networks, along with specific gateway services. These VMs and the gateway subnet are similar to a hardened network device. You don't need to configure these VMs directly, and shouldn't deploy any more resources into the gateway subnet.
 
-Creating a virtual network gateway can take some time to complete, so it's vital that you plan appropriately. When you create a virtual network gateway, the provisioning process generates the gateway VMs and deploys them to the gateway subnet. These VMs will have the settings that you configure on the gateway.
+Creating a virtual network gateway can take some time to complete, so it's vital that you plan appropriately. When you create a virtual network gateway, the provisioning process generates the gateway VMs and deploys them to the gateway subnet. These VMs have the settings that you configure on the gateway.
 
 A key setting is the **_gateway type_**. The gateway type determines the way the gateway functions. For a VPN gateway, the gateway type is "vpn". Options for VPN gateways include:
 
@@ -30,19 +30,19 @@ When you're planning a VPN gateway, there are three architectures to consider:
 - Site to site over the internet
 - Site to site over a dedicated network, such as Azure ExpressRoute
 
-### Planning factors
+### Plan factors
 
 Factors that you need to cover during your planning process include:
 
-- Throughput - Mbps or Gbps
-- Backbone - Internet or private?
+- Throughput: Mbps or Gbps?
+- Backbone: Internet or private?
 - Availability of a public (static) IP address
 - VPN device compatibility
 - Multiple client connections or a site-to-site link?
 - VPN gateway type
 - Azure VPN Gateway SKU
 
-The following table summarizes some of these planning issues. The remaining issues are described later.
+The following table summarizes some of these planning issues. We describe the remaining issues later.
 
 |   | Point to site | Site to site | ExpressRoute |
 |---|---|---|---|
@@ -55,7 +55,7 @@ The following table summarizes some of these planning issues. The remaining issu
 
 ### Gateway SKUs
 
-It's important that you choose the right SKU. If you have set up your VPN gateway with the wrong one, you'll have to take it down, and rebuild the gateway, which can be time consuming. For the latest information about gateway SKUs, including throughput, see [What is VPN Gateway? - Gateway SKUs](/azure/vpn-gateway/vpn-gateway-about-vpngateways#gwsku).
+It's important that you choose the right SKU. If you have set up your VPN gateway with the wrong one, you'll have to take it down and rebuild the gateway, which can be time consuming. For the latest information about gateway SKUs, including throughput, see [Gateway SKUs](/azure/vpn-gateway/vpn-gateway-about-vpngateways#gwsku).
 
 ## Workflow
 
@@ -75,17 +75,11 @@ When designing a cloud connectivity strategy using virtual private networking on
 
 When you design your VPN gateways to connect virtual networks, you must consider the following factors:
 
-- Subnets can't overlap
+- **Subnets can't overlap**: It's vital that a subnet in one location doesn't contain the same address space as in another location.
 
-    It's vital that a subnet in one location doesn't contain the same address space as in another location.
+- **IP addresses must be unique**: You can't have two hosts with the same IP address in different locations, because it will be impossible to route traffic between those two hosts and the network-to-network connection will fail.
 
-- IP addresses must be unique
-
-    You can't have two hosts with the same IP address in different locations, as it will be impossible to route traffic between those two hosts and the network-to-network connection will fail.
-
-- VPN gateways need a gateway subnet called **GatewaySubnet**
-
-    It must have this name for the gateway to work, and it shouldn't contain any other resources.
+- **VPN gateways need a gateway subnet called** **_GatewaySubnet_**: It must have this name for the gateway to work, and it shouldn't contain any other resources.
 
 ### Create an Azure virtual network
 
@@ -95,13 +89,9 @@ Before you create a VPN gateway, you need to create the Azure virtual network.
 
 The type of VPN gateway you create will depend on your architecture. Options are:
 
-- RouteBased
+- **RouteBased**: Route-based VPN devices use any-to-any (wildcard) traffic selectors, and let routing/forwarding tables direct traffic to different IPsec tunnels. Route-based connections are typically built on router platforms where each IPsec tunnel is modeled as a network interface or virtual tunnel interface (VTI).
 
-    Route-based VPN devices use any-to-any (wildcard) traffic selectors, and let routing/forwarding tables direct traffic to different IPsec tunnels. Route-based connections are typically built on router platforms where each IPsec tunnel is modeled as a network interface or virtual tunnel interface (VTI).
-
-- PolicyBased
-
-    Policy-based VPN devices use the combinations of prefixes from both networks to define how traffic is encrypted/decrypted through IPsec tunnels. A policy-based connection is typically built on firewall devices that perform packet filtering. IPsec tunnel encryption and decryption are added to the packet filtering and processing engine.
+- **PolicyBased**: Policy-based VPN devices use the prefix combinations from both networks to define how traffic is encrypted/decrypted through IPsec tunnels. A policy-based connection is typically built on firewall devices that perform packet filtering. IPsec tunnel encryption and decryption are added to the packet filtering and processing engine.
 
 ## Set up a VPN gateway
 
@@ -109,29 +99,29 @@ The steps you need to take will depend on the type of VPN gateway that you're in
 
 1. Create a virtual network.
 
-2. Add a gateway subnet.
+1. Add a gateway subnet.
 
-3. Specify a DNS server (optional).
+1. Specify a DNS server (optional).
 
-4. Create a virtual network gateway.
+1. Create a virtual network gateway.
 
-5. Generate certificates.
+1. Generate certificates.
 
-6. Add the client address pool.
+1. Add the client address pool.
 
-7. Configure the tunnel type.
+1. Configure the tunnel type.
 
-8. Configure the authentication type.
+1. Configure the authentication type.
 
-9. Upload the root certificate public certificate data.
+1. Upload the root certificate public certificate data.
 
-10. Install an exported client certificate.
+1. Install an exported client certificate.
 
-11. Generate and install the VPN client configuration package.
+1. Generate and install the VPN client configuration package.
 
-12. Connect to Azure.
+1. Connect to Azure.
 
-As there are several configuration paths with Azure VPN gateways, each with multiple options, it isn't possible to cover every setup in this course. For more information, see the Additional Resources section.
+As there are several configuration paths with Azure VPN gateways, each with multiple options, it isn't possible to cover every setup in this course. For more information, see the Additional Resources section at the end of this module.
 
 ## Configure the gateway
 

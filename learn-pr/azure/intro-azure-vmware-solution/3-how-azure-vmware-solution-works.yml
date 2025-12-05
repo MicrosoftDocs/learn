@@ -2,11 +2,9 @@
 uid: learn.azure.intro-azure-vmware-solution.how-azure-vmware-solution-works
 title: How Azure VMware Solution works
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: How Azure VMware Solution works
   description: Learn how Azure VMware Solution is set up and how it works on Azure.
-  ms.date: 10/23/2024
+  ms.date: 11/15/2025
   author: Orin-Thomas
   ms.author: orthomas
   ms.topic: unit

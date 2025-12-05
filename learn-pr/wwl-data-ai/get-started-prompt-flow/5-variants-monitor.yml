@@ -2,11 +2,9 @@
 uid: learn.get-started-prompt-flow.variants-monitor
 title: Explore variants and monitoring options
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Explore variants and monitoring options
   description: "Learn about variants and how to monitor within prompt flow."
-  ms.date: 11/30/2023
+  ms.date: 12/01/2025
   author: madiepev
   ms.author: madiepev
   ms.topic: unit

@@ -2,8 +2,6 @@
 uid: learn.wwl.guided-project-azure-files-azure-blobs.exercise2
 title: Exercise - Provide storage for the public website
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Provide storage for the public website
   description: "Exercise -Provide storage for the public website"
   ms.date: 09/02/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 10
 content: |
-  [!include[](includes/3-exercise-public-website-storage.md)]
+  [!include[](includes/3-exercise-public-website-storage.md)]

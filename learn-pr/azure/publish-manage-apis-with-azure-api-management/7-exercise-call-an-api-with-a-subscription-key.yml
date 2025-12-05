@@ -2,8 +2,6 @@
 uid: learn.publish-manage-apis-with-azure-api-management.7-exercise-call-an-api-with-a-subscription-key
 title: Exercise - Call an API with a subscription key
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Call an API with a subscription key
   description: Exercise - Call an API with a subscription key
   ms.date: 12/05/2024
@@ -13,4 +11,4 @@ metadata:
 durationInMinutes: 5
 content: |
   [!include[](includes/7-exercise-call-an-api-with-a-subscription-key.md)]
-
+

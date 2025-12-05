@@ -2,8 +2,6 @@
 uid: learn.wwl.create-azure-cognitive-search-solution.create-data-source
 title: Understand the indexing process
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Understand the indexing process
   description: Understand the indexing process
   author: ivorb
@@ -17,4 +15,4 @@ labModal: false
 durationInMinutes: 5
 content: |
   [!include[](includes/4-indexing-process.md)]
-
+

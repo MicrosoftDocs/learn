@@ -1,7 +1,3 @@
----
-ms.custom:
-  - ignite-2024
----
 The API for GraphQL in Microsoft Fabric supports two types of operations: queries (read) and mutations (write). 
 
 - **Queries:** Allow you to retrieve data from your data sources, making them ideal for read-only operations. This is relevant for data sources exposed via SQL Analytics Endpoints, which are inherently read-only in nature.
@@ -26,4 +22,4 @@ To use the API for GraphQL, your applications can take advantage of saved creden
 
 Alternatively, you can connect to Fabric data sources using single sign-on (SSO) authentication.
 
-The authenticated user in the app calling the GraphQL API must be a workspace member with a **contributor** role in the workspace where both the API and data source items are located. 
+When using single sign-on (SSO) authentication, the authenticated user in the app calling the GraphQL API must have Execute permissions to the GraphQL API and read or write permissions required in the data source of choice, accordingly. Alternatively, the user can be added as workspace member with a **contributor** role in the workspace where both the API and data source items are located, which will give the required access to both items from a single location. 

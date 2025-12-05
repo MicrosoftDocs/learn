@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.manage-optimize-agent-investment-azure
+metadata:
+  title: Manage and Optimize AI Agent Investments on Azure
+  description: Managing and optimizing AI agent investments on Azure is now more streamlined and powerful with the built-in observability capabilities in Microsoft Foundry. These tools provide enterprise-grade observability, governance, and performance optimization capabilities essential for deploying intelligent, goal-driven agents at scale. These tools provide enterprise-grade observability, governance, and performance optimization capabilities essential for deploying intelligent, goal-driven agents at scale.
+  ms.date: 10/1/2025
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: module-standard-task-based # Please don't edit, used for our analytics
+  ms.service: artificial-intelligence
+title: Manage and optimize AI agent investments on Azure
+summary: Managing and optimizing AI agent investments on Azure is now more streamlined and powerful with the built-in observability capabilities in Microsoft Foundry. These tools provide enterprise-grade observability, governance, and performance optimization capabilities essential for deploying intelligent, goal-driven agents at scale. These tools provide enterprise-grade observability, governance, and performance optimization capabilities essential for deploying intelligent, goal-driven agents at scale.
+abstract: |
+  Managing and optimizing AI agent investments on Azure is now more streamlined and powerful with the built-in observability capabilities in Microsoft Foundry. These tools provide enterprise-grade observability, governance, and performance optimization capabilities essential for deploying intelligent, goal-driven agents at scale.
+  
+  This module provides you with an understanding of the importance of monitoring AI agent performance and cost, the business impact of inefficiencies and overspending, and Microsoft’s approach to intelligent cost and performance management. You learn for tracking key performance indicators, usage metrics, and behavioral signals to ensure agents are meeting expectations, reducing friction, and operating within budget. This module also introduces tools for cost forecasting, anomaly detection, and lifecycle optimization.
+  
+  By completing this module, you understand how to:
+  - Monitor and analyze AI Agent usage and performance.
+  - Create budgets, quotas, and alerts.
+  - Optimize spending.
+prerequisites: |
+  - "Basic understanding of AI and large language models (LLMs)"
+  - "Familiarity with cloud platforms and software lifecycle concepts"
+iconUrl: /learn/achievements/manage-optimize-agent-investment-azure.svg
+levels:
+  - intermediate
+roles: 
+  - developer
+products: 
+  - azure-ai-foundry
+  - ai-services
+  - azure-openai
+  - ms-copilot
+subjects: 
+  - artificial-intelligence
+units:
+- learn.manage-optimize-agent-investment-azure.monitor-optimize-agent-use
+- learn.manage-optimize-agent-investment-azure.budget
+- learn.manage-optimize-agent-investment-azure.optimize-spending
+- learn.manage-optimize-agent-investment-azure.knowledge-check
+- learn.manage-optimize-agent-investment-azure.summary
+badge:
+  uid: learn.manage-optimize-agent-investment-azure.badge

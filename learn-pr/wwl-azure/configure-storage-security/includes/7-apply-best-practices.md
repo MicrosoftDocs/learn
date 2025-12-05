@@ -1,30 +1,22 @@
-We reviewed how to create and work with a shared access signature (SAS) and the benefits it can provide to your storage security solution.
+[Storage insights](/azure/storage/common/storage-insights-overview?toc=%2Fazure%2Fstorage%2Fblobs%2Ftoc.json&bc=%2Fazure%2Fstorage%2Fblobs%2Fbreadcrumb%2Ftoc.json) provides comprehensive monitoring of your Azure Storage accounts. Storage Insights delivers a unified view of your Azure Storage services performance, capacity, and availability. 
 
-It's important to understand that when you use a SAS in your application, there can be potential risks.
+:::image type="content" source="../media/storage-insights.png" alt-text="Screenshot of storage insights in the portal." border="false":::
 
-- If a SAS is compromised, anyone who obtains it can access the storage.
+### What are the benefits of Storage insights?
 
-- If a SAS provided to a client application expires and the application is unable to retrieve a new SAS from your service, the application functionality might be hindered.
+- **Detailed Metrics and Logs**. Azure Storage Insights offers detailed metrics, logs, and diagnostic information that enhance visibility into storage operations. This helps in monitoring key performance indicators (KPIs) such as latency, throughput, capacity utilization, and transactions.
 
-Watch this video for more ideas on how to secure your storage. This video is based on [Azure Tips and Tricks #272 Azure Security Best Practices](https://microsoft.github.io/AzureTipsAndTricks/blog/blog/tip272.html).
+- **Enhanced Security and Compliance**. By using Azure Storage Insights, you can ensure enhanced security and compliance. It provides actionable insights and alerts that help in swiftly identifying and resolving security issues.
 
+- **Role-Based Access Control (RBAC)**. Azure Storage Insights integrates with Azure's security features, including role-based access control (RBAC), Microsoft Entra ID, connection strings, and access control list (ACL) permissions. RBAC ensures secure access to your data and resources.
 
-> [!VIDEO https://www.youtube.com/embed/mntOLLNejUo?list=PLLasX02E8BPCNCK8Thcxu-Y-XcBUbhFWC]
+- **Unified View**. It delivers a unified view of your Azure Storage services' performance, capacity, and availability, which is crucial for maintaining the security and efficiency of your storage accounts.
 
+### Security uses for Storage Insights
 
-### Recommendations for managing risks
+- **Real-Time Monitoring**. Azure Storage Insights enables real-time monitoring of storage accounts, allowing you to track usage trends, monitor performance, and set up alerts for any anomalies.
 
-Let's look at some recommendations that can help mitigate risks when working with a SAS.
+- **Security Auditing**. It aids in security auditing by providing comprehensive monitoring and detailed logs, which are essential for ensuring compliance and identifying any security issues.
 
-| Recommendation | Description |
-| --- | --- |
-| **Always use HTTPS for creation and distribution** | If a SAS is passed over HTTP and intercepted, an attacker can intercept and use the SAS. These _man-in-the-middle_ attacks can compromise sensitive data or allow for data corruption by the malicious user. |
-| **Reference stored access policies where possible** | Stored access policies give you the option to revoke permissions without having to regenerate the Azure storage account keys. Set the storage account key expiration date far in the future. |
-| **Set near-term expiry times for an unplanned SAS** | If a SAS is compromised, you can mitigate attacks by limiting the SAS validity to a short time. This practice is important if you can't reference a stored access policy. Near-term expiration times also limit the amount of data that can be written to a blob by limiting the time available to upload to it. |
-| **Require clients automatically renew the SAS** | Require your clients to renew the SAS well before the expiration date. By renewing early, you allow time for retries if the service providing the SAS is unavailable. |
-| **Plan carefully for the SAS start time** | If you set the start time for a SAS to now, then due to clock skew (differences in current time according to different machines), failures might be observed intermittently for the first few minutes. In general, set the start time to at least 15 minutes in the past. Or, don't set a specific start time, which causes the SAS to be valid immediately in all cases. The same conditions generally apply to the expiry time. You might observe up to 15 minutes of clock skew in either direction on any request. For clients that use a REST API version earlier than 2012-02-12, the maximum duration for a SAS that doesn't reference a stored access policy is 1 hour. Any policies that specify a longer term fail. |
-| **Define minimum access permissions for resources** | A security best practice is to provide a user with the minimum required privileges. If a user only needs read access to a single entity, then grant them read access to that single entity, and not read/write/delete access to all entities. This practice also helps lessen the damage if a SAS is compromised because the SAS has less power in the hands of an attacker. |
-| **Understand account billing for usage, including a SAS** | Provide limited permissions to help mitigate the potential actions of malicious users. Read and write permissions can cause billing charges. Use a short-lived SAS to reduce this threat. |
-| **Validate data written by using a SAS** | When a client application writes data to your Azure storage account, keep in mind there can be problems with the data. If your application requires validated or authorized data, validate the data after written, but before used. This practice also protects against corrupt or malicious data being written to your account, either by a user who properly acquired the SAS, or by a user exploiting a leaked SAS. |
-| **Don't assume a SAS is always the correct choice** | In some scenarios, the risks associated with a particular operation against your Azure storage account outweigh the benefits of using a SAS. For such operations, create a middle-tier service that writes to your storage account after performing business rule validation, authentication, and auditing. Also, sometimes it's easier to manage access in other ways. If you want to make all blobs in a container publicly readable, you can make the container Public, rather than providing a SAS to every client for access. |
-| **Monitor your applications with Azure Storage Analytics** | You can use logging and metrics to observe any spike in authentication failures. You might see spikes from an outage in your SAS provider service or to the inadvertent removal of a stored access policy. |
+- **Health Analysis and Optimization**. The tool helps in health analysis and optimization of storage accounts, ensuring security and optimal performance. 
+

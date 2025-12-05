@@ -1,11 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.publish-static-web-app-api-preview-url.1-introduction
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Introduction
   description: Publish an Azure Static Web App
-  ms.date: 12/12/2023
+  ms.date: 06/27/2025
   author: v1212
   ms.author: wujia
   ms.topic: unit

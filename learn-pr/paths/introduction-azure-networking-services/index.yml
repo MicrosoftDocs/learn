@@ -33,6 +33,5 @@ modules:
 - introduction-azure-virtual-wan
 - introduction-azure-firewall
 - introduction-azure-web-application-firewall
-- introduction-azure-ddos-protection
 trophy:
   uid: learn.introduction-azure-networking-services.trophy

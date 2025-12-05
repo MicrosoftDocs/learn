@@ -1,7 +1,4 @@
----
-ms.custom:
-  - ignite-2024
----
+
 In a database, users have access to several capabilities aimed at safeguarding sensitive information. These security measures are capable of securing or masking data from users or roles without proper authorization, ensuring data protection across both the database and the SQL analytics endpoints. This ensures a smooth and secure user experience, with no need for changes to the existing applications.
 
 ## Understand security capabilities
@@ -10,7 +7,7 @@ Users who are often well-versed in the SQL engine and adept at using T-SQL, find
 
 This is because SQL Database in Microsoft Fabric is powered by the same SQL engine they're familiar with, enabling them to perform complex queries and data manipulations. The SQL engine’s wide range of security features further allows for sophisticated security mechanism at the database level.
 
-### [**Workspaces roles**](/fabric/data-warehouse/workspace-roles/?azure-portal=true) 
+### [**Workspaces roles**](/fabric/fundamentals/roles-workspaces?azure-portal=true) 
 
 Designed to provide different levels of access and control within the workspace. You can assign users to the various workspace roles such as **Admin**, **Member**, **Contributor**, and **Viewer**. These roles are crucial for maintaining the security and efficiency of SQL database operations within an organization.
 

@@ -22,4 +22,4 @@ Within each data item, *granular engine permissions* such as Read, ReadData, or 
 
 Compute or granular permissions can be applied within a specific compute engine in Fabric, like the SQL Endpoint or semantic model.
 
-Fabric data items store their data in OneLake. Access to data in the lakehouse can be restricted to specific files or folders using the role-based-access control (RBAC) feature called *OneLake data access controls (preview)*.
+Fabric data items store their data in OneLake. Access to data in the lakehouse can be restricted to specific files or folders using the role-based-access control (RBAC) feature called OneLake data access controls (preview).

@@ -2,9 +2,9 @@
 uid: learn.azure.open-ai-dotnet-text-completions.1-introduction
 title: Introduction
 metadata:
-  title: Introduction to text completions with .NET and Azure OpenAI
+  title: Introduction to Text Completions with .NET and Azure OpenAI
   description: An introduction to text completions using the .NET SDK to access the Azure OpenAI service
-  ms.date: 08/29/2024
+  ms.date: 04/01/2025
   author: codemillmatt
   ms.author: masoucou
   ms.topic: unit

@@ -2,8 +2,6 @@
 uid: learn.wwl.integrate-sql-apache-spark-pools-azure-synapse-analytics.authenticate
 title: Authenticate in Azure Synapse Analytics
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Authenticate in Azure Synapse Analytics
   description: "Authenticate in Azure Synapse Analytics"
   ms.date: 06/08/2022
@@ -18,4 +16,4 @@ labModal: false
 durationInMinutes: 3
 content: |
   [!include[](includes/4-authenticate.md)]
-
+

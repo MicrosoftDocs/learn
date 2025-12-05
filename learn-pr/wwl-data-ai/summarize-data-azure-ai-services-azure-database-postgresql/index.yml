@@ -1,10 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.summarize-data-azure-ai-services-azure-database-postgresql
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Summarize data with Azure AI Services and Azure database for PostgreSQL
-  description: Learn to summarize data with Azure AI Services and Azure database for PostgreSQL.
+  title: Summarize data with Foundry Tools and Azure database for PostgreSQL
+  description: Learn to summarize data with Foundry Tools and Azure database for PostgreSQL.
   author: wwlpublish
   ms.author: calopez
   ms.date: 11/24/2024
@@ -14,14 +12,14 @@ metadata:
   ms.collection:
     - wwl-ai-copilot
   ai-usage: ai-assisted
-title: Summarize data with Azure AI Services and Azure database for PostgreSQL
-summary: This module will examine how Azure AI Services and the Azure AI extension for Azure Database for PostgreSQL - Flexible Server enable Generative AI summarization techniques for condensing complex content into concise summaries.
+title: Summarize data with Foundry Tools and Azure database for PostgreSQL
+summary: This module will examine how Foundry Tools and the Azure AI extension for Azure Database for PostgreSQL - Flexible Server enable Generative AI summarization techniques for condensing complex content into concise summaries.
 abstract: |
-  -   Evaluate the summarization techniques available through Azure AI Services and the azure_ai&nbsp;extension.
+  -   Evaluate the summarization techniques available through Foundry Tools and the azure_ai&nbsp;extension.
 
   -   Examine the differences between extractive, abstractive, and query-focused summarization.
 
-  -   Apply Generative AI summarization techniques to data in a PostgreSQL database to gain practical experience using Azure AI Services and the azure_ai&nbsp;extension for summarization.
+  -   Apply Generative AI summarization techniques to data in a PostgreSQL database to gain practical experience using Foundry Tools and the azure_ai&nbsp;extension for summarization.
 prerequisites: Before starting this module, you should have experience working with PostgreSQL databases, writing SQL queries, and a general understanding of Generative AI concepts.
 iconUrl: /training/achievements/generic-badge.svg
 levels:

@@ -81,7 +81,7 @@ The more important the pitch, the more attention should go into making the desig
 
 ### Make it shareable
 
-If you're pitching at a public event, or one that will be recorded and posted online, put your name, company name, and website URL on every slide. Doing so makes it easier for people to find out more about your company, and to share it with others.
+If you're pitching at a public event or one that will be recorded and posted online, put your name, company name, and website URL on every slide. Doing so makes it easier for people to find out more about your company and share it with others.
 
 ### Display your product
 
@@ -119,7 +119,7 @@ To learn how to use your voice to better convey meaning, view this [TED talk by 
 
 ### Pause at key moments
 
-A deliberate pause can help you to underscore important points. It can also give you and your audience an opportunity to gather your thoughts before moving onto the next point.
+A deliberate pause can help you to underscore important points. It can also give you and your audience an opportunity to gather their thoughts before you move on to the next point.
 
 ### Identify and fix bad habits
 

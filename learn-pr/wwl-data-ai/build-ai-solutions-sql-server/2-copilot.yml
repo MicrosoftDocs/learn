@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn-wwl.build-ai-solutions-sql-server.copilot
+title: Use Copilot in SQL Server Management Studio
+metadata:
+  title: Use Copilot in SQL Server Management Studio
+  description: "Learn how to use Copilot in SQL Server Management Studio"
+  ms.date: 10/20/2025
+  author: JulianePadrao
+  ms.author: jupadrao
+  ms.topic: unit
+azureSandbox: false
+durationInMinutes: 20
+content: |
+  [!include[](includes/2-copilot.md)]

@@ -2,11 +2,9 @@
 uid: learn.azure.intro-to-azure-application-gateway.how-azure-application-gateway-works
 title: How Azure Application Gateway works
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: How Azure Application Gateway works
   description: Learn how Azure Application Gateway works and how to implement it in your organization.
-  ms.date: 01/31/2024
+  ms.date: 05/15/2025
   author: Orin-Thomas
   ms.author: orthomas
   ms.custom: team=cloud_advocates

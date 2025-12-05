@@ -212,7 +212,7 @@ jobs:
 
 ## Checkout
 
-Classic builds implicitly checkout any repository artifacts, but pipelines require you to be more explicit using the checkout keyword:
+YAML pipelines require explicit checkout configuration using the checkout keyword:
 
 - Jobs check out the repo they're contained in automatically unless you specify `checkout: none`.
 - Deployment jobs don't automatically check out the repo, so you'll need to specify checkout: self for deployment jobs if you want access to the YAML file's repo.
@@ -230,7 +230,7 @@ What if your job requires source code in another repository? You'll need to use 
 
 - other repositories
 - pipelines
-- builds (classic builds)
+- builds (pipeline builds)
 - containers (for container jobs)
 - packages
 

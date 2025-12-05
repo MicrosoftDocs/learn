@@ -15,4 +15,4 @@ When you've finished the exercise in GitHub, return here for:
 > You don't need to modify any of the workflow files to complete this exercise. **Altering the contents in this workflow can break the exercise's ability to validate your actions, provide feedback, or grade the results**.
 
 > [!div class="nextstepaction"]
-> [Start the exercise on GitHub](https://github.com/skills/introduction-to-github)
+> [Start the exercise on GitHub](https://github.com/skills-dev/introduction-to-github)

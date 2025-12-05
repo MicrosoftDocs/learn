@@ -91,7 +91,7 @@ For performance purposes, we recommend using MRTK materials instead of the defau
 
     :::image type="content" source="../media/033-touch-cube.png" alt-text="Screenshot of the simulated right hand touching the Near Cube.":::
 
-1. Click the left mouse button (this makes the hand "grab" the cube), then drag the cube around the scene.
+1. Click the **left mouse button** (this makes the hand "grab" the cube), then drag the cube around the scene.
 
     :::image type="content" source="../media/move-cube.gif" alt-text="Screenshot of Move the cube." lightbox="../media/move-cube.gif":::
 
@@ -105,4 +105,4 @@ For performance purposes, we recommend using MRTK materials instead of the defau
 
     :::image type="content" source="../media/035-far-pointer-touches-cube.png" alt-text="Screenshot of the far pointer touching the cube.":::
 
-1. Click the left mouse button (this makes the hand close, taking on what we call the "pinch gesture"), then drag the cube around the scene.
+1. Click the **left mouse button** (this makes the hand close, taking on what we call the "pinch gesture"), then drag the cube around the scene.

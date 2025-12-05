@@ -1,0 +1,53 @@
+### YamlMime:Module
+uid: learn.philanthropies.perfect-cut
+metadata:
+  title: Perfect the Cut - Postproduction and Enhancement with Microsoft Clipchamp
+  description: "Discover how Microsoft Clipchamp streamlines postproduction for animated projects, including AI-powered color grading, transitions, asset integration, and export optimization."
+  ms.date: 4/28/2025
+  author: kariannab-ms
+  ms.author: kbarreto
+  ms.topic: module-intro-to-product
+  ms.service: artificial-intelligence
+title: Perfect the cut - postproduction and enhancement with Microsoft Clipchamp
+
+summary: "Analyze how Microsoft Clipchamp uses AI-driven tools to refine animated projects through color correction, seamless transitions, asset integration, and final video export for multiple platforms."
+
+abstract: |
+  By the end of this module, you can:
+  - Apply AI tools in Clipchamp for postproduction enhancements such as color correction and transition smoothing.
+  - Integrate AI-generated assets into final animation projects.
+  - Optimize animations for export across various digital platforms.
+
+prerequisites: |
+  - Completion of Concept Design and Animation Development modules (recommended)
+  - Basic familiarity with animation timelines and video editing tools
+
+iconUrl: /learn/achievements/generic-badge.svg
+
+levels:
+  - beginner
+
+roles:
+  - student
+  - maker
+  - k-12-educator
+
+products:
+- ms-copilot
+
+subjects:
+  - artificial-intelligence
+
+units:
+- learn.philanthropies.perfect-cut.introduction
+- learn.philanthropies.perfect-cut.video-editing-enhancement-microsoft-clipchamp
+- learn.philanthropies.perfect-cut.video-enhancement-techniques-color-transitions-resizing
+- learn.philanthropies.perfect-cut.integrate-ai-generated-assets-final-animations
+- learn.philanthropies.perfect-cut.import-assets-apply-effects-finalize-animation-projects
+- learn.philanthropies.perfect-cut.final-animation-review-export
+- learn.philanthropies.perfect-cut.exercise
+- learn.philanthropies.perfect-cut.knowledge-check
+- learn.philanthropies.perfect-cut.summary
+
+badge:
+  uid: learn.philanthropies.perfect-cut.badge

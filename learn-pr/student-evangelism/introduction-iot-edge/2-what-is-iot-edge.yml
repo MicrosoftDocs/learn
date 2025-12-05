@@ -2,8 +2,6 @@
 uid: learn.oxford.intro-to-iot-edge.what-is-iot-edge
 title: What is IoT Edge?
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: What is IoT Edge?
   description: What is IoT Edge?
   ms.date: 07/30/2024
@@ -14,4 +12,4 @@ metadata:
 durationInMinutes: 5 # dummy number at present
 content: |
   [!include[](includes/2-what-is-iot-edge.md)]
-
+

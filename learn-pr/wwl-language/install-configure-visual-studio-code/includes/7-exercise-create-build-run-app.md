@@ -60,11 +60,11 @@ To begin, you create a console application in a folder location that's easy to f
 
     This .NET CLI command uses a .NET program template to create a new C# console application project in the specified folder location. The command creates the CsharpProjects and TestProject folders for you, and uses TestProject as the name of your `.csproj` file.
 
-1. In the EXPLORER panel, expand the **CsharpProjects** folder.
+1. In the EXPLORER view, expand the **CsharpProjects** folder.
 
     You should see the TestProject folder and two files, a C# program file named Program.cs and a C# project file named TestProject.csproj. The CLI command uses the folder name when it creates the project file (TestProject.csproj). The Program.cs file is the file containing your C# code.
 
-1. In the EXPLORER panel, to view the C# code in the Editor panel, select **Program.cs**.
+1. In the EXPLORER view, to view the C# code in the Editor panel, select **Program.cs**.
 
     As you can see, the default console application is the iconic “Hello World!” application.
 
@@ -112,7 +112,7 @@ In this task, you use the EXPLORER view to open your code project folder, custom
 
     ![Screenshot showing the dotnet build command entered in the Visual Studio Code terminal panel.](../media/visual-studio-code-terminal-command-dotnet-build.png)
 
-    The `dotnet build` command builds the project and its dependencies into a set of binaries. The binaries include the project's code in Intermediate Language (IL) files with a .dll extension. Depending on the project type and settings, other files may also be included. If you're curious, you can find the TestProject.dll file in the EXPLORER panel at a folder location that's similar to the following path:
+    The `dotnet build` command builds the project and its dependencies into a set of binaries. The binaries include the project's code in Intermediate Language (IL) files with a .dll extension. Depending on the project type and settings, other files may also be included. If you're curious, you can find the TestProject.dll file in the EXPLORER view at a folder location that's similar to the following path:
 
     `C:\Users\someuser\Desktop\CsharpProjects\TestProject\bin\Debug\net7.0\`
 

@@ -1,23 +1,22 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.enrich-search-index-using-language-studio.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: Knowledge check
-  author: wwlpublish
+  author: ivorb
   ms.author: berryivor
-  ms.date: 09/20/2024
+  ms.date: 05/02/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
+  module_assessment: true
 azureSandbox: false
 labModal: false
 durationInMinutes: 3
 quiz:
   questions:
-  - content: "Which of the following features of Azure AI Language can you use out of box without needing to train a model?"
+  - content: "Which of the following features of Azure Language can you use out of box without needing to train a model?"
     choices:
     - content: "Conversational language understanding."
       isCorrect: false
@@ -28,7 +27,7 @@ quiz:
     - content: "Custom text classification."
       isCorrect: false
       explanation: "Incorrect. You need to train a model with the classes you want to identify."
-  - content: "Which step enables an AI Search index to store the enrichments from an Azure AI Language project?"
+  - content: "Which step enables an AI Search index to store the enrichments from an Azure Language project?"
     choices:
     - content: "Update your Azure AI Search solution."
       isCorrect: true

@@ -2,8 +2,6 @@
 uid: learn.wwl.optimize-performance-with-spark-and-delta-live-tables.use-enhanced-autoscaling
 title: Use enhanced autoscaling
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Use enhanced autoscaling
   description: "Use enhanced autoscaling."
   ms.date: 08/06/2024
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 9
 content: |
-  [!include[](includes/05-use-enhanced-autoscaling.md)]
+  [!include[](includes/05-use-enhanced-autoscaling.md)]

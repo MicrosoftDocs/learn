@@ -2,11 +2,9 @@
 uid: learn.quantum.explore-superposition.superposition-quantum-computing
 title: What is superposition in quantum computing?
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: What is superposition in quantum computing?
-  description: Learn how to represent a qubit using the Bloch sphere. 
-  ms.date: 01/22/2025
+  description: Learn how to represent a qubit superposition state with the Bloch sphere. 
+  ms.date: 09/18/2025
   author: azure-quantum-content
   ms.author: quantumdocwriters
   

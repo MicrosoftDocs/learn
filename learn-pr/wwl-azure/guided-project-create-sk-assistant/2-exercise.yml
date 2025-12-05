@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.guided-project-create-sk-assistant.exercise
+title: Exercise - Create a DevOps Assistant with the Semantic Kernel SDK
+metadata:
+  title: Exercise - Create a DevOps Assistant with the Semantic Kernel SDK
+  description: Learn how to build an AI assistant. This unit provides an interactive exercise to develop an example DevOps solution with the Semantic Kernel SDK.
+  ms.date: 04/28/2025
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-exercise.md)]

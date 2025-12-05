@@ -26,7 +26,7 @@ AZ-104: Microsoft Azure Administrator gives students the opportunity to learn a 
 
 - [AZ-104 Exam Page](https://aka.ms/AZ104Exam) 
 
-- [Accessibility Technology and Tools](https://aka.ms/Microsoftaccessibility) 
+- [Accessibility Technology and Tools](https://www.microsoft.com/accessibility) 
 
 - [Microsoft’s Accessibility Commitment](https://aka.ms/MSAccessibilityCommitment) 
 

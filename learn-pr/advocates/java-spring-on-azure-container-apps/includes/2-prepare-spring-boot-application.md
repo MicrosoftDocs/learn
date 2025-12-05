@@ -4,7 +4,7 @@ The Spring PetClinic is a simple web application that manages a list of veterina
 
 ## Prerequisites
 
-- An Azure account. If you don't have one, [create an account for free](https://azure.microsoft.com/free/). You need the `Contributor` or `Owner` permission on the Azure subscription to proceed. For more information, see [Assign Azure roles using the Azure portal](/azure/role-based-access-control/role-assignments-portal).
+- An Azure account. If you don't have one, [create an account for free](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn). You need the `Contributor` or `Owner` permission on the Azure subscription to proceed. For more information, see [Assign Azure roles using the Azure portal](/azure/role-based-access-control/role-assignments-portal).
 - [Git](https://git-scm.com/downloads)
 - [The Azure CLI](/cli/azure/install-azure-cli)
 

@@ -2,8 +2,6 @@
 uid: learn.wwl.configure-virtual-machine-availability.configure-autoscale
 title: Configure autoscale
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Configure autoscale
   description: "Configure autoscaling with Azure Virtual Machine Scale Sets in the Azure portal."
   ms.date: 02/12/2025

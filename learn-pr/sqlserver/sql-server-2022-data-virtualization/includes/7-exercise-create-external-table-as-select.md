@@ -12,7 +12,7 @@ In this exercise, you use CREATE EXTERNAL TABLE AS SELECT (CETAS) to:
 
 ## Prerequisites
 
-- A SQL Server 2022 instance with internet connectivity and the **PolyBase Query Service for External Data** feature installed and enabled as for previous exercises.
+- A SQL Server 2025 instance with internet connectivity and the **PolyBase Query Service for External Data** feature installed and enabled as for previous exercises.
 - The [AdventureWorks2022](/sql/samples/adventureworks-install-configure) sample database restored to your server to use for sample data.
 - An Azure Storage account with a Blob Storage container named `data` created. To create the storage, see [Quickstart: Upload, download, and list blobs with the Azure portal](/azure/storage/blobs/storage-quickstart-blobs-portal).
 - The Azure role-based access control (RBAC) **Storage Blob Data Contributor** role assigned in Azure. For more information, see [Assign an Azure role for access to blob data](/azure/storage/blobs/assign-azure-role-data-access).
@@ -107,7 +107,7 @@ Imagine that you work with a business analytics team that wants to export data o
     GO
     ```
 
-1. Check your Azure Blob Storage in the Azure portal. You should see the following structure created. SQL Server 2022 automatically creates the filename based on how much data it exports and the file format.
+1. Check your Azure Blob Storage in the Azure portal. You should see the following structure created. SQL Server 2025 automatically creates the filename based on how much data it exports and the file format.
 
    :::image type="content" source="../media/parquet-azure-storage.png" alt-text="Screenshot from the Azure portal showing the Parquet file in Azure Storage.":::
 

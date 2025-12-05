@@ -2,11 +2,9 @@
 uid: learn.get-started-prompt-flow.understand-flows
 title: Understand core components and explore flow types
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Understand core components and explore flow types
   description: "Learn about the core components that make a flow and which types of flows you can create."
-  ms.date: 11/30/2023
+  ms.date: 12/01/2025
   author: madiepev
   ms.author: madiepev
   ms.topic: unit

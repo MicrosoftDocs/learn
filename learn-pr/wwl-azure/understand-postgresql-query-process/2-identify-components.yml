@@ -2,8 +2,6 @@
 uid: learn.wwl.understand-postgresql-query-process.identify-components
 title: Identify the query processing components
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Identify the query processing components
   description: "Identify the query processing components."
   ms.date: 05/11/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 7
 content: |
-  [!include[](includes/2-identify-components.md)]
+  [!include[](includes/2-identify-components.md)]

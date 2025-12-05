@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.windows-10-end-of-support-calculator-usage-guide.exercise-how-input-key-data-into-calculator
+title: Exercise – how to input key data into the calculator
+metadata:
+  title: Exercise – How To Input Key Data Into The Calculator
+  description: This content is part of the "Windows 10 EOS Calculator usage guide" module.
+  ms.date: 10/08/2025
+  author: hhreyes21
+  ms.author: v-homerreyes
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/3-exercise-how-input-key-data-into-calculator.md)]

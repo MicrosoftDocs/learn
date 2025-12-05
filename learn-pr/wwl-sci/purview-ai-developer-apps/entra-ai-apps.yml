@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-ai-developer-apps.entra-ai-apps
+title: Apply controls for Microsoft Entra-registered custom AI apps
+metadata:
+  title: Apply Controls for Microsoft Entra-registered Custom AI Apps
+  description: "Apply controls for Microsoft Entra-registered custom AI apps"
+  ms.date: 08/26/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/entra-ai-apps.md)]

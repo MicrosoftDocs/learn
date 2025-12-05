@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.azure-netapp-files.essentials 
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Understand Azure NetApp Files essentials 
   description: Learn about the key parts of Azure NetApp Files, including storage terminology and monitoring strategies, to help you optimize your setup and deployment processes.  
   ms.date: 11/18/2024
@@ -44,4 +42,4 @@ units:
 - learn.azure.azure-netapp-files-essentials.knowledge-check
 - learn.azure.azure-netapp-files-essentials.summary
 badge:
-  uid: learn.azure-netapp-files-essentials.badge
+  uid: learn.azure-netapp-files-essentials.badge

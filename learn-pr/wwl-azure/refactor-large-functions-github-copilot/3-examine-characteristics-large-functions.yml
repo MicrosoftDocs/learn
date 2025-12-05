@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.refactor-large-functions-github-copilot.examine-characteristics-large-functions
+title: Examine the characteristics of large functions
+metadata:
+  title: Examine the Characteristics of Large Functions
+  description: Examine the characteristics of large functions.
+  ms.date: 10/14/2025
+  author: chrishowd
+  ms.author: cahowd
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/3-examine-characteristics-large-functions.md)]

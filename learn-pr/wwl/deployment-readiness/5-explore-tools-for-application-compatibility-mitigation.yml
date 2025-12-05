@@ -4,10 +4,12 @@ title: Explore tools for application compatibility mitigation
 metadata:
   title: Explore tools for application compatibility mitigation
   description: "Explore tools for application compatibility mitigation"
-  ms.date: 04/22/2024
+  ms.date: 05/20/2025
   author: wwlpublish
   ms.author: rstearman
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 4
 content: |
   [!include[](includes/5-explore-tools-for-application-compatibility-mitigation.md)]

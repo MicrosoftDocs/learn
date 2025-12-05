@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.introduction-to-windows-iot.how-windows-iot-works
+title: How Windows IoT works
+metadata:
+  title: How Windows IoT Works
+  description: This content is part of the "Introduction to Windows IoT" module.
+  ms.date: 09/08/2025
+  author: melissawinters
+  ms.author: v-mwinters
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/3-how-windows-iot-works.md)]
+

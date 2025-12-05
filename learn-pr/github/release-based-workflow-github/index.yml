@@ -3,7 +3,7 @@ uid: learn.github.release-based-workflow-github
 metadata:
   title: "Manage software delivery by using a release based workflow on GitHub"
   description: Learn to implement a release based workflow on GitHub using project boards, branches, and releases.
-  ms.date: 12/05/2023
+  ms.date: 05/28/2025
   author: a-a-ron
   ms.author: aastewar
   ms.topic: module
@@ -12,11 +12,11 @@ title: "Manage software delivery by using a release based workflow on GitHub"
 summary: Learn to implement a release based workflow on GitHub using project boards, branches, and releases.
 abstract: |
   In this module, you will:
-  - Build a project board to manage your next release
-  - Create and commit changes on a release branch
-  - Create a Git tag and a release on GitHub
-  - Resolve bugs after a release
-  - Automate and better document your release changes
+  - Build a project board to manage your next release.
+  - Create and commit changes on a release branch.
+  - Create a Git tag and a release on GitHub.
+  - Resolve bugs after a release.
+  - Automate and better document your release changes.
 prerequisites: |
   - A GitHub account
   - The ability to navigate and edit files in GitHub

@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.create-manage-session-host-image
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Create and manage session host image for Azure Virtual Desktop
   description: "A Shared Image Gallery simplifies custom image sharing across your organization. Custom images can be used to bootstrap deployment tasks like preloading applications, application configurations, and other OS configurations."
   ms.date: 08/21/2024
@@ -51,4 +49,4 @@ units:
 - learn.wwl.create-manage-session-host-image.knowledge-check
 - learn.wwl.create-manage-session-host-image.summary
 badge:
-  uid: learn.wwl.create-manage-session-host-image.badge
+  uid: learn.wwl.create-manage-session-host-image.badge

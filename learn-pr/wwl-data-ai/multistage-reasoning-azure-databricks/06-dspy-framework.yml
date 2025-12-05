@@ -2,12 +2,10 @@
 uid: learn.wwl.multistage-reasoning-azure-databricks.dspy-framework
 title: Explore the DSPy framework
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Explore the DSPy framework
   description: "Explore the DSPy framework"
-  ms.date: 03/20/2025
-  author: wwlpublish
+  ms.date: 07/08/2025
+  author: theresa-i
   ms.author: theresai
   ms.topic: unit
 azureSandbox: false

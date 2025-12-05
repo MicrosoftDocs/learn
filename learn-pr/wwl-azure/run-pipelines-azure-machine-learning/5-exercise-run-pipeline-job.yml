@@ -2,13 +2,11 @@
 uid: learn.wwl.run-pipelines-azure-machine-learning.exercise-run-pipeline-job
 title: Exercise - Run a pipeline job
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Run a pipeline job
   description: Exercise - Run a pipeline job
   author: wwlpublish
   ms.author: madiepev
-  ms.date: 07/20/2024
+  ms.date: 12/01/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot

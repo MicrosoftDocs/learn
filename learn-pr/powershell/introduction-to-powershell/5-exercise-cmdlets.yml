@@ -4,13 +4,13 @@ title: Exercise - Locate commands
 metadata:
   title: Exercise - Locate commands
   description: Learn how to locate commands by searching for its verb or noun part.
-  author: softchris
-  ms.author: chnoring
+  author: sdwheeler
+  ms.author: sewhee
   ms.date: 08/25/2023
   ms.topic: unit
   ms.custom: team=nextgen
-azureSandbox: true
-interactive: powershell
+#azureSandbox: true
+#interactive: powershell
 durationInMinutes: 2
 content: |
   [!include[](includes/5-exercise-cmdlets.md)]

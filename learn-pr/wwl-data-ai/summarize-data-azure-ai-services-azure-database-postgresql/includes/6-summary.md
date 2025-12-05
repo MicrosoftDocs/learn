@@ -1,8 +1,8 @@
-Summarization is a powerful technique for condensing lengthy articles, papers, or documents into key sentences and concepts. In this module, you explored the extractive and abstractive summarization methods using the `azure_ai` extension for Azure Database for PostgreSQL - Flexible Server and Azure AI Services.
+Summarization is a powerful technique for condensing lengthy articles, papers, or documents into key sentences and concepts. In this module, you explored the extractive and abstractive summarization methods using the `azure_ai` extension for Azure Database for PostgreSQL - Flexible Server and Foundry Tools.
 
 Now that you have completed this module, you should be better able to:
 
-- Describe and explain the differences between the various summarization techniques accessible through the `azure_ai` extension and Azure AI services.
+- Describe and explain the differences between the various summarization techniques accessible through the `azure_ai` extension and Foundry Tools.
 - Apply generative AI summarization techniques to data in a PostgreSQL database using the `azure_ai` extension.
 
 ## References

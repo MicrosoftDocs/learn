@@ -2,16 +2,17 @@
 uid: learn.oxford.create-image-recognition-with-azure-iot-edge.exercise-install-edge-runtime-linux
 title: Exercise - Install IoT Edge runtime for Linux
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Install IoT Edge runtime for Linux
   description: In this section, we help the learner to how to install edge runtime on Linux computer.
   ms.date: 07/10/2024
   author: leestott
   ms.author: leestott
   ms.topic: unit
-  ms.custom: team=nextgen, linux-related-content
+  ms.custom:
+    - sfi-ropc-nochange
+    - linux-related-content
+    - team=nextgen
 durationInMinutes: 15 # dummy number at present
 content: |
   [!include[](includes/3-exercise-install-edge-runtime-linux.md)]
-
+

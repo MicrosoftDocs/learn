@@ -4,8 +4,8 @@ title: Exercise - Create a Blazor event handler for onclick events
 metadata:
   unitType: Exercise
   title: "Exercise - Create a Blazor event handler for onclick events"
-  description: "Handle the onclick event for an HTML form control using C#"
-  ms.date: 01/09/2025
+  description: "Handle the onclick event for an HTML form control using C#."
+  ms.date: 07/17/2025
   author: csharpfritz
   ms.author: jefritz
   ms.manager: markl

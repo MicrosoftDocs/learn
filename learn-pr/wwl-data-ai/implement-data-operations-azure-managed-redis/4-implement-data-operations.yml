@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-data-operations-azure-managed-redis.implement-data-operations
+title: Implement data operations
+metadata:
+  title: Implement Data Operations
+  description: Implement data operations
+  ms.date: 11/21/2025
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: unit
+azureSandbox: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-implement-data-operations.md)]

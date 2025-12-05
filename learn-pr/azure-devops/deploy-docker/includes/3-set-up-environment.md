@@ -11,7 +11,7 @@ You'll learn how to:
 
 ## Add a user to Azure DevOps
 
-To complete this module, you need your own [Azure subscription](https://azure.microsoft.com/free/?azure-portal=true). You can get started with Azure for free.
+To complete this module, you need your own [Azure subscription](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn). You can get started with Azure for free.
 
 You don't need an Azure subscription to work with Azure DevOps, but in this module you'll use Azure DevOps to deploy to Azure resources. To simplify the process, use the same Microsoft account to sign in to both Azure and Azure DevOps.
 
@@ -27,27 +27,36 @@ The modules in this learning path form a progression. You follow the Tailspin we
 
 ### Run the template
 
-Run a template that sets up your Azure DevOps organization:
+Run a template that sets up your Azure DevOps organization.
 
-> [!div class="nextstepaction"]
-> [Run the template](https://azuredevopsdemogenerator.azurewebsites.net/?x-ms-routing-name=self&name=DeployDockercontainers&azure-portal=true)
+[!INCLUDE[important-note-demo-generator](../../shared/includes/important-note-demo-generator.md)]
 
-From the Azure DevOps Demo Generator site, follow these steps to run the template:
+1. [Get and run the ADOGenerator project](https://github.com/microsoft/AzDevOpsDemoGenerator/blob/main/docs/RunApplication.md) in Visual Studio or the IDE of your choice.
 
-1. Select **Sign In** and accept the usage terms.
+1. When prompted to **Enter the template number from the list of templates**, enter **39** for **Automate Docker container deployments with Azure Pipelines**, then press **Enter**.
 
-1. On the **Create New Project** page, select your Azure DevOps organization. Enter a project name such as *Space Game - web - Docker*.
+1. Choose your authentication method. You can [set up and use a Personal Access Token (PAT)](/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate#create-a-pat) or use device login.
 
-    :::image type="content" source="../media/3-create-new-project.png" alt-text="Screenshot of creating a project through Azure DevOps Demo Generator.":::
+    > [!NOTE]
+    > If you set up a PAT, make sure to authorize the necessary [scopes](/azure/devops/integrate/get-started/authentication/oauth#scopes). For this module, you can use **Full access**, but in a real-world situation, you should ensure you grant only the necessary scopes.
 
-1. Select **Yes, I want to fork this repository** > **Authorize**. If prompted, authorize access to your GitHub account.
+1. Enter your Azure DevOps organization name, then press **Enter**.
 
-    > [!IMPORTANT]
-    > You need to select this option so the template can connect to your GitHub repository. Make sure to select the checkbox even if you've already forked the *Space Game* repository. The template will use your existing fork.
+1. If prompted, enter your Azure DevOps PAT, then press **Enter**.
 
-1. Select **Create Project**.
+1. Enter a project name such as *Space Game - web - Docker*, then press **Enter**.
 
-1. Select **Navigate to project** to go to your project in Azure DevOps.
+1. Once your project is created, go to your Azure DevOps organization in your browser (at `https://dev.azure.com/<your-organization-name>/`) and select the project.
+
+### Fork the repository
+
+If you haven't already, create a fork of the **mslearn-tailspin-spacegame-web-docker** repository.
+
+1. On GitHub, go to the [mslearn-tailspin-spacegame-web-docker](https://github.com/MicrosoftDocs/mslearn-tailspin-spacegame-web-docker) repository.
+
+1. Select **Fork** at the top-right of the screen.
+
+1. Choose your GitHub account as the **Owner**, then select **Create fork**.
 
 > [!IMPORTANT]
 > In this module, the [Clean up your Azure DevOps environment](/training/modules/deploy-docker/5-clean-up-environment?azure-portal=true) page contains important cleanup steps. Cleaning up helps ensure that you don't run out of free build minutes. Be sure to follow the cleanup steps even if you don't complete this module.
@@ -80,14 +89,12 @@ At the end of this module, you'll move the card to the **Done** column after you
 
 ## Create the Azure App Service environment
 
-In the [Create a release pipeline with Azure Pipelines](/training/modules/create-release-pipeline?azure-portal=true) module, you created an App Service instance using Azure portal. Although the portal is an excellent tool for exploring Azure's offerings, setting up components like App Service can become cumbersome.
-
 In this module, you'll employ the Azure CLI to launch the resources necessary for deploying and running an App Service instance. You can access the Azure CLI from a terminal or through Visual Studio Code.
 
 > [!IMPORTANT]
 > You must have your own Azure subscription to complete the exercises in this module.
 
-### Launch Cloud Shell inn Azure portal
+### Launch Cloud Shell in Azure portal
 
 1. Navigate to the [Azure portal](https://portal.azure.com?azure-portal=true) and sign in.
 
@@ -183,7 +190,7 @@ In this section, you'll create Bash variables to make the setup process more con
     The `--sku` argument specifies the B1 plan. This plan runs on the Basic tier. The `--is-linux` argument specifies to use Linux workers.
 
     > [!IMPORTANT]
-    > If the B1 SKU isn't available in your Azure subscription, [choose a different plan](https://azure.microsoft.com/pricing/details/app-service/linux/?azure-portal=true), such as S1 (Standard).
+    > If the B1 SKU isn't available in your Azure subscription, [choose a different plan](https://azure.microsoft.com/pricing/details/app-service/linux/?azure-portal=true) such as S1 (Standard).
 
 1. Run the following `az webapp create` command to create the App Service instance.
 
@@ -234,7 +241,7 @@ In this section, you'll create Bash variables to make the setup process more con
 
 ## Create pipeline variables in Azure Pipelines
 
-In [Create a release pipeline with Azure Pipelines](/training/modules/create-release-pipeline?azure-portal=true), you added a variable to your pipeline that stores the name of your web app in App Service. You'll do the same thing here. In addition, you'll add the name of your Azure Container Registry.
+Here, you'll add a variable to your pipeline that stores the name of your web app in App Service. In addition, you'll add the name of your Azure Container Registry.
 
 You could hard-code these names in your pipeline configuration, but if you define them as variables, your configuration will be more reusable. Plus, if your instance names change, you can update the variables and trigger your pipeline without modifying your configuration.
 
@@ -257,7 +264,7 @@ To add the variables:
     > [!IMPORTANT]
     > Set the name of the App Service instance, not its host name. In this example, you would enter *tailspin-space-game-web-4692* and not *tailspin-space-game-web-4692.azurewebsites.net*.
 
-1. Repeat the process to add another variable named *RegistryName* with the value of your Azure Container Registry login server, such as *tailspinspacegame4692.azurecr.io*.
+1. Repeat the process to add another variable named *RegistryName* with the value of your Azure Container Registry login server, such as *tailspinspacegame4692.azurecr.io*. Select **Save** at the top of the page.
 
 1. Select **Pipeline permissions**, and then select the `+` sign to add a pipeline. Select **mslearn-tailspin-spacegame-web-docker** to give your pipeline permission to access the variable group.
 
@@ -267,7 +274,7 @@ To add the variables:
 
 ## Create required service connections
 
-Here, you'll create a service connection that enables Azure Pipelines to access your Azure subscription. Azure Pipelines uses this service connection to deploy the website to App Service. You created a similar service connection in the previous module. You'll also create a Docker Registry connection to publish your container to the Azure Container Registry.
+Here, you'll create a service connection that allows Azure Pipelines to access your Azure subscription. Azure Pipelines uses this service connection to deploy the website to App Service. You created a similar service connection in the previous module. You'll also create a Docker Registry connection to publish your container to the Azure Container Registry.
 
 > [!IMPORTANT]
 > Ensure that you're signed in to both the Azure portal and Azure DevOps under the same Microsoft account.
@@ -275,8 +282,8 @@ Here, you'll create a service connection that enables Azure Pipelines to access 
 1. In Azure DevOps, go to your **Space Game - web - Docker** project.
 1. From the bottom corner of the page, select **Project settings**.
 1. Under **Pipelines**, select **Service connections**.
-1. Select **New service connection**, then choose **Azure Resource Manager**, then select **Next**.
-1. Near the top of the page, **Service principal (automatic)**. Then select **Next**.
+1. Select **Create service connection**, then choose **Azure Resource Manager**, then select **Next**.
+1. Near the top of the page, **App registration (automatic)**.
 1. Fill in these fields:
 
     | Field                   | Value                                      |
@@ -296,6 +303,7 @@ Here, you'll create a service connection that enables Azure Pipelines to access 
 
 1. Select **New service connection**, then choose **Docker Registry**, then select **Next**.
 1. Near the top of the page, select **Azure Container Registry**.
+1. Select **Service Principal** for the **Authentication Type**.
 1. Fill in these fields:
 
     | Field                     | Value                                        |

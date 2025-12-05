@@ -2,8 +2,6 @@
 uid: learn.azure.azure-netapp-files-performance.recommendations
 title: Performance benchmark test recommendations for Azure NetApp Files 
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: learning-module
   title: Performance benchmark test recommendations for Azure NetApp Files 
   description: Understand benchmark test results and apply that data to improve your performance. 
@@ -13,4 +11,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 6
 content: |
-  [!include[](includes/3-recommendations.md)]
+  [!include[](includes/3-recommendations.md)]

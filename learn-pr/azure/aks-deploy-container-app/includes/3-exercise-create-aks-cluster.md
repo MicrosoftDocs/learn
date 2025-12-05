@@ -72,7 +72,7 @@ AKS supports both Linux and Windows node pools via the Portal or Azure CLI. Howe
     > [!IMPORTANT]
     > We'll run all the scripts with Bash, so if you haven't created a Cloud Shell yet, select *Bash* as the running shell.
 
-1. In the Cloud Shell window, select the **More** icon (**...**), then select **Settings** > **Go to Classic version**.
+1. In the Cloud Shell window, select **Settings** > **Go to Classic version**.
 
 1. Create variables for the configuration values you reuse throughout the exercises.
 

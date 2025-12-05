@@ -2,8 +2,6 @@
 uid: learn.wwl.deploy-manage-active-directory-domain-services-domain-controllers.define-active-directory-domain-services
 title: Define Active Directory Domain Services
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Define Active Directory Domain Services
   description: "Define Active Directory Domain Services"
   ms.date: 06/18/2024
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 10
 content: |
-  [!include[](includes/2-define-active-directory-domain-services.md)]
+  [!include[](includes/2-define-active-directory-domain-services.md)]

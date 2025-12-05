@@ -3,8 +3,6 @@ uid: learn.intro-to-kubernetes.exercise-kubernetes-functionality
 title: Exercise - Explore the functionality of a Kubernetes cluster
 
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Explore the functionality of a Kubernetes cluster
   description: An exercise that explores the functionality of a Kubernetes cluster
   ms.date: 11/13/2024
@@ -16,4 +14,4 @@ metadata:
 durationInMinutes: 15
 content: |
   [!include[](includes/5-exercise-kubernetes-functionality.md)]
-
+

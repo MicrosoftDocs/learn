@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.use-semantic-search.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: Check your knowledge
   author: ivorb
   ms.author: berryivor
@@ -12,6 +10,7 @@ metadata:
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
+  module_assessment: true
 durationInMinutes: 3
 content: |
 quiz:
@@ -32,12 +31,12 @@ quiz:
     - content: "Azure AI Search service with a billable tier."
       isCorrect: true
       explanation: "Correct. Azure AI Search service with a billable tier is required for semantic ranking."
-    - content: "Azure AI services with a billable tier."
+    - content: "Foundry Tools with a billable tier."
       isCorrect: false
-      explanation: "Incorrect. Azure AI services isn't required for semantic ranking."
-    - content: "Azure AI Language service."
+      explanation: "Incorrect. Foundry Tools isn't required for semantic ranking."
+    - content: "Azure Language service."
       isCorrect: false
-      explanation: "Incorrect. Azure AI language service isn't required for semantic ranking."
+      explanation: "Incorrect. Azure Language service isn't required for semantic ranking."
   - content: "What are semantic captions?"
     choices:
     - content: "Verbatim summary sentences from the document."

@@ -2,8 +2,6 @@
 uid: learn.saas-technical-foundations.authentication-and-authorization
 title: Authentication and authorization in SaaS solutions
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Authentication and authorization in SaaS solutions
   description: "In this module, you delve into the concepts of authentication and authorization within SaaS solutions. You gain insights into their practical implementation using the Azure Active Directory identity platform and learn effective strategies for managing identity within a microservices architecture."
   ms.date: 2/9/2024
@@ -13,4 +11,4 @@ metadata:
 durationInMinutes: 10
 content: |
   [!include[](includes/6-authentification-and-authorization.md)]
-
+

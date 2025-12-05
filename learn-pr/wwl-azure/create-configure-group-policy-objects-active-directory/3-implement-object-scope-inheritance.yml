@@ -2,8 +2,6 @@
 uid: learn.wwl.create-configure-group-policy-objects-active-directory.implement-object-scope-inheritance
 title: Implement Group Policy Object scope and inheritance
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Implement Group Policy Object scope and inheritance
   description: "Implement Group Policy Object scope and inheritance"
   ms.date: 09/22/2024
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 10
 content: |
-  [!include[](includes/3-implement-object-scope-inheritance.md)]
+  [!include[](includes/3-implement-object-scope-inheritance.md)]

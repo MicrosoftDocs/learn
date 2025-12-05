@@ -96,7 +96,7 @@ GitHub Pro accounts include all of the features of a GitHub Free account, plus t
 
 ### GitHub Team
 
-GitHub Team is the version of GitHub Pro for organizations. GitHub Team is better than GitHub Free for organizations because it provides increased GitHub Actions minutes and extra GitHub Packages storage.
+GitHub Team is designed for organizations that need enhanced collaboration, security, and workflow management features beyond what’s available in GitHub Free for organizations. While it includes more generous usage limits (like additional GitHub Actions minutes and Packages storage), the real value lies in the advanced features that support teams working together efficiently and securely.
 
 Let's go over the extra features in GitHub Team that help with team collaboration:
 
@@ -111,26 +111,24 @@ Let's go over the extra features in GitHub Team that help with team collaboratio
   - Protected branches
   - Code owners
   - Scheduled reminders
-  - GitHub Pages
-  - Wikis
-- Repository insight graphs for pulse, contributors, traffic, commits, code frequency, network, and forks
-- The option to enable or disable GitHub Codespaces
+  - GitHub Pages and Wikis for documentation and web content
+- Insightful repository graphs (e.g., pulse, contributors, traffic, commits, network)
+- Ability to enable or disable GitHub Codespaces for cloud development
 
 ### GitHub Enterprise
 
-GitHub Enterprise accounts enjoy a greater level of support and extra security, compliance, and deployment controls.
+GitHub Enterprise provides enhanced support, robust security, compliance capabilities, and advanced deployment controls for organizations at scale.
 
-You can create one or more *enterprise accounts* by signing up for the paid GitHub Enterprise product. When you create an enterprise account, you're assigned the role of *enterprise owner*. As an enterprise owner, you can add and remove organizations to and from the enterprise account. You can manage other administrators, enforce security policies across organizations, and so on.
+When you sign up for GitHub Enterprise, you create an enterprise account. As the enterprise owner, you can manage multiple organizations under a single umbrella, control administrator access, and enforce consistent security policies across your entire enterprise.
 
-In addition to the features available with GitHub Team, GitHub Enterprise includes:
+In addition to everything included in GitHub Team, GitHub Enterprise adds:
 
-- GitHub Enterprise Support
-- More security, compliance, and deployment controls
-- Authentication with security assertion markup language (SAML) single sign-on
-- Access provisioning with SAML or System for Cross-domain Identity Management (SCIM)
-- Deployment protection rules with GitHub Actions for private or internal repositories
-GitHub Connect
-- The option to purchase GitHub Advanced Security
+- Dedicated GitHub Enterprise Support
+- Expanded security, compliance, and deployment capabilities
+- Centralized user authentication and management through external identity providers
+- Deployment protection rules for private or internal repositories
+- GitHub Connect, which allows secure sharing of selected data between GitHub Enterprise Server and GitHub Enterprise Cloud—enabling unified contributions, centralized user identity, and greater visibility across environments
+- Option to purchase GitHub Advanced Security for enhanced code and dependency protection
 
 #### GitHub Enterprise options
 
@@ -150,3 +148,9 @@ Here are the extra features of GitHub Enterprise Cloud:
 - A service level agreement for 99.9% monthly uptime
 - Option to centrally manage policy and billing for multiple GitHub.com organizations with an enterprise account
 - Option to provision and manage the user accounts for your developers, by using Enterprise Managed Users
+
+> [!NOTE]
+> GitHub Copilot is not included in any plan by default. However, Copilot Business and Copilot Enterprise can be added to eligible plans.
+
+**Enterprise Managed Users (EMU)**  
+Enterprise Managed Users allow organizations to control identities using their identity provider, enabling central access management and increased security.

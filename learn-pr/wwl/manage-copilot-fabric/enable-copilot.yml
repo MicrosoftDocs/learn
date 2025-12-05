@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-copilot-fabric.enable-copilot
+title: Enable Copilot in Microsoft Fabric
+metadata:
+  title: Enable Copilot in Microsoft Fabric
+  description: "Enable Copilot in Microsoft Fabric"
+  ms.date: 08/18/2025
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/enable-copilot.md)]

@@ -1,15 +1,15 @@
-In this exercise, you'll develop the code that automatically assigns a student's letter grade based on their final numeric score and you'll update the application so that extra credit project scores are factored into the student's final grade. You will begin by writing an `if-elseif-else` construct that can be used to evaluate the student's numeric score and assign the letter grade. Next, you'll examine the application requirements related to extra credit work, and then work your way through the required code updates. The detailed tasks that you'll complete during this exercise are:
+In this exercise, you develop the code that automatically assigns a student's letter grade based on their final numeric score and you update the application so that extra credit project scores are factored into the student's final grade. You begin by writing an `if-elseif-else` construct that can be used to evaluate the student's numeric score and assign the letter grade. Next, you examine the application requirements related to extra credit work, and then work your way through the required code updates. The detailed tasks that you complete during this exercise are:
 
 1. Develop an `if-elseif-else` construct that evaluates the student's score to assign a letter grade. The expression that's evaluated compares the student's numeric score with a range of scores taken from a grading chart provided by the teacher.  
 
-1. Integrate extra credit scores into each student's scores array, and then update the code that's used to calculate the student's numeric score. The `foreach` that's used to sum the student scores will be updated to include an `if` statement that branches the code. The exam scores will be applied to the sum in one branch, and the extra credit scores in the other branch.
+1. Integrate extra credit scores into each student's scores array, and then update the code that's used to calculate the student's numeric score. The `foreach` that's used to sum the student scores will be updated to include an `if` statement that branches the code. The exam scores are applied to the sum in one branch, and the extra credit scores in the other branch.
 
 > [!IMPORTANT]
 > You need to have completed this module's previous Exercise, "Create arrays and foreach loops", before you begin this Exercise.
 
 ## Assign letter grades using an `if-elseif-else` construct
 
-In this task, you'll develop an `if-elseif-else` structure that can be used to assign letter grades based on a calculated numeric score.
+In this task, you develop an `if-elseif-else` structure that can be used to assign letter grades based on a calculated numeric score.
 
 1. Ensure that you have the Program.cs file open in the Visual Studio Code Editor.
 
@@ -43,7 +43,7 @@ In this task, you'll develop an `if-elseif-else` structure that can be used to a
     0  - 59    F
     ```
 
-    Notice that the top row of scores, the values greater than or equal to 97, have a letter grade of "A+". In other words, if a student's final score is >= 97, they'll be assigned a letter grade of "A+".
+    Notice that the top row of scores, the values greater than or equal to 97, have a letter grade of "A+". In other words, if a student's final score is >= 97, they are assigned a letter grade of "A+".
 
 1. To create an `if` statement that assigns `A+` to `currentStudentLetterGrade` when the student's score is greater than or equal to 97, enter the following code:
 
@@ -258,7 +258,7 @@ In this task, you'll develop an `if-elseif-else` structure that can be used to a
 
 1. On the Visual Studio Code **File** menu, click **Save**.
 
-1. In the Visual Studio Code EXPLORER panel, right-click **Starter**, and then select **Open in Integrated Terminal**.
+1. In the Visual Studio Code EXPLORER view, right-click **Starter**, and then select **Open in Integrated Terminal**.
 
 1. At the Terminal command prompt, type **dotnet build** and then press Enter.
 
@@ -532,7 +532,7 @@ In this task, you'll run the application to verify that your code logic is worki
 
 1. Ensure that you've saved your changes to the Program.cs file.
 
-1. In the Visual Studio Code EXPLORER panel, right-click **Starter**, and then select **Open in Integrated Terminal**.
+1. In the Visual Studio Code EXPLORER view, right-click **Starter**, and then select **Open in Integrated Terminal**.
 
 1. At the Terminal command prompt, type **dotnet build** and then press Enter.
 
@@ -610,7 +610,7 @@ In this task, you'll run the application to verify that your code logic is worki
 
 1. On the Visual Studio Code **File** menu, click **Save**.
 
-1. In the Visual Studio Code EXPLORER panel, right-click **Starter**, and then select **Open in Integrated Terminal**.
+1. In the Visual Studio Code EXPLORER view, right-click **Starter**, and then select **Open in Integrated Terminal**.
 
 1. At the Terminal command prompt, type **dotnet build** and then press Enter.
 

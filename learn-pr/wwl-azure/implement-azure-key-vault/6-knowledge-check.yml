@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.implement-azure-key-vault.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
   adobe-target: true
   prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
-  ms.date: 03/12/2024
+  ms.date: 06/27/2025
   author: wwlpublish
   ms.author: jeffko
   ms.topic: unit

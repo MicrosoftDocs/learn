@@ -1,16 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.choose-service-level-azure-netapp-files-hpc-applications.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: knowledge_check
-  title: Knowledge check
+  title: Module assessment
   description: Check your knowledge of Azure NetApp Files.
   ms.date: 06/07/2024
   author: mengruts
   ms.author: mengtsai
   ms.topic: unit
+  module_assessment: true
 durationInMinutes: 3
 quiz:
   questions:
@@ -58,4 +57,4 @@ quiz:
     - content: "Ultra service level with a 100-TiB large volume size."
       isCorrect: false
       explanation: "This configuration meets throughput requirements but the capacity pool cost isn't the lowest."
-
+

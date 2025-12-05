@@ -2,8 +2,6 @@
 uid: learn.monitor-java-azure.exercise-setup
 title: Exercise - sample application environment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: exercise
   title: Exercise - sample application environment
   description: In this exercise, we'll set up the sample application environment
@@ -19,4 +17,4 @@ metadata:
 durationInMinutes: 30
 content: |
   [!include[](includes/3-exercise-setup.md)]
-
+

@@ -2,13 +2,11 @@
 uid: learn.wwl.manage-compare-models-azure-machine-learning.introduction
 title: Introduction
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Introduction
   description: Learn how to implement responsible models with Azure Machine Learning.
   author: wwlpublish
   ms.author: madiepev
-  ms.date: 08/25/2024
+  ms.date: 12/01/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot

@@ -1,13 +1,11 @@
 ### YamlMime:Module
 uid: learn.control-azure-services-with-cli
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Control Azure services with the CLI
   description: Learn the steps to install the Azure CLI locally, create a website, and manage Azure resources using the CLI.
   ms.date: 11/26/2024
-  author: dbradish-microsoft
-  ms.author: dbradish
+  author: mikefrobbins
+  ms.author: mirobb
   ms.topic: module
   ms.service: azure-cli
   ai-usage: ai-assisted
@@ -23,6 +21,9 @@ prerequisites: |
   - Experience with command-line tools
   - Knowledge of basic Azure concepts, such as resource groups and virtual machines
   - Experience managing Azure resources using the Azure portal
+
+  [!INCLUDE [](../../includes/azure-optional-exercise-subscription-prerequisite.md)]
+
 iconUrl: /training/achievements/control-azure-services-with-cli.svg
 levels: 
 - beginner

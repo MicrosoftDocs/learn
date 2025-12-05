@@ -2,8 +2,6 @@
 uid: learn.wwl.plan-sap-hana-azure-large-instances-deployments.explore-routing-azure
 title: Explore SAP HANA on Azure (Large Instances) routing in Azure
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Explore SAP HANA on Azure (Large Instances) routing in Azure
   description: "Explore SAP HANA on Azure (Large Instances) routing in Azure"
   ms.date: 12/08/2021
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 5
 content: |
-  [!include[](includes/7-explore-hana-large-instances-routing-azure.md)]
+  [!include[](includes/7-explore-hana-large-instances-routing-azure.md)]

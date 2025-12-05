@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.challenge-github-copilot-with-sql.introduction-github-copilot-codespaces
+title: Introduction to GitHub Copilot in GitHub Codespaces
+metadata:
+  title: Introduction to GitHub Copilot in GitHub Codespaces
+  description: Learn how to use GitHub Copilot in GitHub Codespaces to enhance your coding experience.
+  ms.date: 06/25/2025
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit 
+durationInMinutes: 7
+content: |
+  [!include[](includes/1-introduction-github-copilot-codespaces.md)]

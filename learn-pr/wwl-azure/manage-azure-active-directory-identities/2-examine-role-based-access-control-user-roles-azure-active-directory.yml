@@ -9,7 +9,8 @@ metadata:
   ms.author: rstearman
   ms.topic: unit
   ms.custom:
-  - N/A
+    - sfi-ga-nochange
+    - N/A
 durationInMinutes: 6
 content: |
   [!include[](includes/2-examine-role-based-access-control-user-roles-azure-active-directory.md)]

@@ -10,7 +10,7 @@ You don't need a full server for your front-end or back-end to configure and mai
 
 Azure Functions serves your route endpoints, doesn't require a full back-end server to configure or maintain, and provides automatic scaling out and scaling in based on demand. These features make Azure Functions a great API partner for your shopping list web app that serves static assets.
 
-Azure Static Web Apps generates a unique URL for your site, which you can find on the *Overview* tab in the portal. The API is available through this same URL by appending */api* to the URL.
+Azure Static Web Apps generates a unique URL for your site, which you can find on the **Overview** tab in the portal. The API is available through this same URL by appending `/api` to the URL.
 
 ### Your shopping list API
 
@@ -25,7 +25,7 @@ Here are the four endpoints that you create:
 | PUT     | `products/:id`  | `api/products/:id` |
 | DELETE  | `products/:id`  | `api/products/:id` |
 
-Notice that your HTTP GET requests route to `api/products`. The *api* prefix is reserved for your API endpoints in the app. You can define any other routes to fit the needs of your site, but *api* always points to the Azure Functions app.
+Notice that your HTTP GET requests route to `api/products`. The `api` prefix is reserved for your API endpoints in the app. You can define any other routes to fit the needs of your site, but `api` always points to the Azure Functions app.
 
 ### Create an API for the web app
 

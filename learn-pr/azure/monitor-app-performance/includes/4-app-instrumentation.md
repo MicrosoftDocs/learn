@@ -5,7 +5,7 @@ At a basic level, "instrumenting" is simply enabling an application to capture t
 
 **Autoinstrumentation** enables telemetry collection through configuration without touching the application's code. Although it's more convenient, it tends to be less configurable. It's also not available in all languages. See [Autoinstrumentation supported environments and languages](/azure/azure-monitor/app/codeless-overview). When autoinstrumentation is available, it's the easiest way to enable Azure Monitor Application Insights.
 
-**Manual instrumentation** is coding against the Application Insights or OpenTelemetry API. In the context of a user, it typically refers to installing a language-specific SDK in an application. This means that you have to manage the updates to the latest package version by yourself. You can use this option if you need to make custom dependency calls or API calls that are not captured by default with autoinstrumentation. There are two options for manual instrumentation:
+**Manual instrumentation** is coding against the Application Insights or OpenTelemetry API. In the context of a user, it typically refers to installing a language-specific SDK in an application. This means that you have to manage the updates to the latest package version by yourself. You can use this option if you need to make custom dependency calls or API calls that aren't captured by default with autoinstrumentation. There are two options for manual instrumentation:
 
 *   [Application Insights SDKs](/azure/azure-monitor/app/asp-net-core)
 *   [Azure Monitor OpenTelemetry Distros](/azure/azure-monitor/app/opentelemetry-enable).
@@ -38,4 +38,5 @@ Some legacy terms in Application Insights are confusing because of the industry 
 | Dependencies | Other Span Types (Client, Internal, etc.) |
 | Operation ID | Trace ID |
 | ID or Operation Parent ID | Span ID |
+
 

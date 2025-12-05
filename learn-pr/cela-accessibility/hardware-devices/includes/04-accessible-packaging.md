@@ -16,12 +16,13 @@ Players might look for visual cues like text or imagery on the box to inform pro
 
 The top panel of the packaging has text and an image of the Surface Adaptive Kit components. When the box is properly oriented for opening, this text and image appear right side up to the user. If the user orients the box differently, the text and image would appear upside down or sideways. This positioning would indicate to the user that they should adjust the box orientation prior to opening.
 
-Players who can't see or use these visual cues to guide correct orientation might accidentally open packaging incorrectly, resulting in dropped or damaged new devices. To create a safer, more accessible experience, consider the following best practices:
+Players who can't see or use these visual cues to guide correct orientation might accidentally open packaging incorrectly, resulting in dropped or damaged new devices. To create a safer and more accessible experience, consider the following best practices:
 
 - Design packaging with accessible visual and structural cues that inform proper opening orientation:
 
   - Visual: Provide larger text and graphics on packaging to ensure more players with low vision can see and use it to guide orientation.
   - Structural: Offer discoverable tactile cues that inform proper unboxing orientation through intentional placement. For example, use break-the-seal labels, closure tabs, or seam lines.
+
 - Create packaging that allows players to open and remove devices safely, regardless of box orientation.
 
 ## Support accessible removal of adhesives and fasteners

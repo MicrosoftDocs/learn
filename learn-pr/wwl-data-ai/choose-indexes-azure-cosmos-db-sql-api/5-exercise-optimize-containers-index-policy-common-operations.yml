@@ -6,10 +6,12 @@ metadata:
   prefetch-feature-rollout: true
   title: Exercise - Optimize an Azure Cosmos DB for NoSQL container's index policy for common operations
   description: "Exercise - Optimize an Azure Cosmos DB for NoSQL container's index policy for common operations"
-  ms.date: 10/28/2024
+  ms.date: 05/07/2025
   author: wwlpublish
   ms.author: calopez
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 15
 content: |
   [!include[](includes/5-exercise-optimize-containers-index-policy-common-operations.md)]

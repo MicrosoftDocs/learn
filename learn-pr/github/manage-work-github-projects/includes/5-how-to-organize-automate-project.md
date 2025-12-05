@@ -27,18 +27,18 @@ To change your Project's visibility:
 
 ### Manage access to your Project
 
-Access to your Project depends on if your Project is an organization-level Project or a personal/user-level Project. Managing access is similar between the two levels.
+Access to your Project depends on if your Project is an organization-owned Project or a personal/user-owned Project. Managing access is similar between the two levels.
 
-Admins of organization-level Projects can manage access for the entire organization, for teams, for individual organization members, and for outside collaborators. Admins of user-level Projects can invite individual collaborators and manage their access.
+Admins of organization-owned Projects can manage access for the entire organization, for teams, for individual organization members, and for outside collaborators. Admins of user-owned Projects can invite individual collaborators and manage their access.
 
-#### Organization-level Project
+#### Organization-owned Project
 
 - **No access**: Only organization owners and users granted individual access can see the Project. Organization owners are also admins for the Project.
 - **Read**: Everyone in the organization can see the Project. Organization owners are also admins for the Project.
 - **Write**: Everyone in the organization can see and edit the Project. Organization owners are also admins for the Project.
 - **Admin**: Everyone in the organization is an admin for the Project.
 
-#### Personal/User-level Project
+#### Personal/User-owned Project
 
 - **Read**: The individual can view the Project.
 - **Write**: The individual can view and edit the Project.
@@ -101,5 +101,17 @@ Here are steps on how to navigate to them:
    - Selecting **Delete project** prompts you to read the warnings, and then type the name of your Project into the text box.
 
    :::image type="content" source="../media/5-danger-zone-options.png" alt-text="Screenshot of the Danger zone section with the option to change visibility, close Project and delete Project with delete Project highlighted.":::
+
+## Converting checklist items to sub-issues
+
+GitHub Projects now supports converting checklist items into sub-issues for better task tracking and hierarchy.
+
+To use this feature:
+
+1. Open any issue that includes a checklist.
+2. Hover over a checklist item and click the **...** (more options) button.
+3. Select **Convert to sub-issue**.
+
+This creates a dedicated issue linked back to the original one, which will also appear in your Projects view for tracking.
 
 Next up, we'll review insights and automation in Projects.

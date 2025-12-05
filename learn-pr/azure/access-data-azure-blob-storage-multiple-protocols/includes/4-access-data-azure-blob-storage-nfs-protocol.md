@@ -35,7 +35,7 @@ Perform the following tasks to enable NFS support in your Azure Blob Storage:
 
 4. Use the following code to mount a container using an NFS 3.0 client. Replace the values for <_nameofthestoraggeaccount_> and <_nameofthecontainer_> with names that correspond to your environment.
 
-    ```
+    ```azurecli
     Sudo mount -o sec=sys,vers=3,nolock,proto=tcp <nameofthestorageaccount>.blob.core.windows.net:/<nameofthestorageaccount>/<nameofthecontainer>  /mnt/blob
     ```
 

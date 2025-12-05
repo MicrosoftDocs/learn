@@ -18,7 +18,7 @@ abstract: |
   - Learn how to connect and query a data warehouse using SQL Server Management Studio.  
 prerequisites: |
   Before starting this module, you should be familiar with the basic principles of data warehousing.
-iconUrl: /training/achievements/generic-badge.svg
+iconUrl: /training/achievements/query-a-data-warehouse-in-microsoft-fabric.svg
 levels:
 - beginner
 roles:

@@ -1,15 +1,13 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.leverage-ai-tools.introduction
-title: Introduction
+uid: learn.wwl.leverage-ai-tools.1-introduction
+title: "Introduction"
 metadata:
-  title: Introduction
-  description: "Introduction"
-  ms.date: 02/13/2025
-  author: Adriamen
+  title: "Introduction"
+  description: "Introduction to leveraging AI tools."
+  ms.date: 11/03/2025
+  author: wwlpublish
   ms.author: rcaper
   ms.topic: unit
-  ms.custom:
-  - N/A
 durationInMinutes: 1
 content: |
   [!include[](includes/1-introduction.md)]

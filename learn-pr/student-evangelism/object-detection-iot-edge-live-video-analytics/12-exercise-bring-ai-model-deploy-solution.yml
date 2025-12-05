@@ -2,8 +2,6 @@
 uid: learn.oxford.object-detection-lva-edge-device.exercise-bring-ai-model-deploy-solution
 title: Exercise - Bring your AI model to deploy a video analytics solution
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Bring your AI model to deploy a video analytics solution
   description: In this section, we help learner bring YOLO model and deploy the solution.
   ms.date: 07/20/2024
@@ -26,4 +24,4 @@ quiz:
       explanation: "It is correct, but this feature is not enough to deploy machine learning models"
     - content: "You can build and deploy your models to your edge device"
       isCorrect: true
-      explanation: "You can bring other modules, such as Cognitive Services containers, custom edge modules built by you with open source machine learning models, or custom models trained with your data"
+      explanation: "You can bring other modules, such as Cognitive Services containers, custom edge modules built by you with open source machine learning models, or custom models trained with your data"

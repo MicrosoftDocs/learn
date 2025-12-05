@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.introduction-to-microsoft-365-business-standard.when-to-use-microsoft-365-business-standard
+title: When to use Microsoft 365 Business Standard
+metadata:
+  title: When To Use Microsoft 365 Business Standard
+  description: This content is part of the "Introduction to Microsoft 365 Business Standard" module.
+  ms.date: 09/16/2025
+  author: melissawinters
+  ms.author: v-mwinters
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-when-to-use-microsoft-365-business-standard.md)]

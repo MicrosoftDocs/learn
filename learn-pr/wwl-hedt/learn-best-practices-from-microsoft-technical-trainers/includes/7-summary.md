@@ -10,7 +10,7 @@ Supplemental resources:
 
 - [Microsoft Learn for Educators](https://aka.ms/msle)  
 
-- [Accessibility Technology & Tools](https://aka.ms/microsoftaccessibility)
+- [Accessibility Technology & Tools](https://www.microsoft.com/accessibility)
 
 - [Microsoft's accessibility commitment](https://aka.ms/MSAccessibilityCommitment) 
 

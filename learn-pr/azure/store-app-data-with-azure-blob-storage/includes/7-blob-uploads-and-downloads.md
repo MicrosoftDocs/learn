@@ -1,5 +1,12 @@
 To interact with individual blobs in Blob Storage, use a `BlobClient` object. You can get a `BlobClient` by requesting it with the blob's name from the `BlobContainerClient` in which the blob is located. `BlobClient` has methods to upload, download, and manage individual blobs in Blob Storage.
 
+[!INCLUDE[](../../../includes/azure-optional-exercise-subscription-note.md)]
+
+[!INCLUDE[](../../../includes/azure-cloud-shell-terminal-note.md)]
+
+> [!NOTE]
+> Throughout this exercise, replace **myResourceGroupName** in the examples with the name of an existing resource group, or the name of the resource group that you created for this exercise.
+
 ## Getting a BlobClient object
 
 ::: zone pivot="csharp"
@@ -146,7 +153,7 @@ Your app is finished. Deploy it and see it work.
     ```azurecli
     az appservice plan create \
     --name blob-exercise-plan \
-    --resource-group "<rgn>[sandbox resource group name]</rgn>" \
+    --resource-group "myResourceGroupName" \
     --sku FREE --location eastus
     ```
 
@@ -154,19 +161,19 @@ Your app is finished. Deploy it and see it work.
     az webapp create \
     --name <your-unique-app-name> \
     --plan blob-exercise-plan \
-    --resource-group "<rgn>[sandbox resource group name]</rgn>"
+    --resource-group "myResourceGroupName"
     ```
 
     ```azurecli
     CONNECTIONSTRING=$(az storage account show-connection-string \
     --name <your-unique-storage-account-name> \
-    --resource-group "<rgn>[sandbox resource group name]</rgn>" \
+    --resource-group "myResourceGroupName" \
     --output tsv)
     ```
 
     ```azurecli
     az webapp config appsettings set \
-    --name <your-unique-app-name> --resource-group "<rgn>[sandbox resource group name]</rgn>" \
+    --name <your-unique-app-name> --resource-group "myResourceGroupName" \
     --settings AzureStorageConfig:ConnectionString=$CONNECTIONSTRING AzureStorageConfig:FileContainerName=files
     ```
 
@@ -184,7 +191,7 @@ Your app is finished. Deploy it and see it work.
     ```azurecli
     az webapp deploy \
     --src-path ../site.zip \
-    --resource-group "<rgn>[sandbox resource group name]</rgn>" \
+    --resource-group "myResourceGroupName" \
     --name <your-unique-app-name>
     ```
 
@@ -258,7 +265,7 @@ Your app is finished. Deploy it and see it work. Use the Maven Plugin for Azure 
 
     ```azurecli
     export AZ_SUBSCRIPTION_ID=$(az account show --query id --output tsv)
-    export AZ_RESOURCE_GROUP="<rgn>[sandbox resource group name]</rgn>"
+    export AZ_RESOURCE_GROUP="myResourceGroupName"
     export AZ_REGION=eastus
     export AZ_APP_NAME=<your-unique-app-name>
     export AZ_PRICING_TIER=F1

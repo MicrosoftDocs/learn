@@ -3,7 +3,7 @@ uid: learn.wwl.give-your-ai-agent-skills
 metadata:
   title: Create Semantic Kernel plugins
   description: "Learn how native functions can accomplish customized tasks with the semantic kernel SDK."
-  ms.date: 01/24/2025
+  ms.date: 05/27/2025
   author: wwlpublish
   ms.author: buzahid
   ms.topic: module
@@ -39,9 +39,8 @@ products:
 units:
 - learn.wwl.give-your-ai-agent-skills.introduction
 - learn.wwl.give-your-ai-agent-skills.understand-native-plugins
-- learn.wwl.give-your-ai-agent-skills.exercise-create-native-plugins
 - learn.wwl.give-your-ai-agent-skills.configure-function-choices
-- learn.wwl.give-your-ai-agent-skills.exercise-configure-available-functions
+- learn.wwl.give-your-ai-agent-skills.exercise-create-plugins
 - learn.wwl.give-your-ai-agent-skills.knowledge-check
 - learn.wwl.give-your-ai-agent-skills.summary
 badge:

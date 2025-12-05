@@ -1,4 +1,4 @@
-In this module, you learned how to manage a successful InnerSource program on GitHub through effective discoverability, guidance, and maintenance.
+In this module, you explored how to build and manage a successful InnerSource program on GitHub through effective discoverability, guidance, and maintenance.
 
 You learned about:
 
@@ -6,12 +6,14 @@ You learned about:
 - Making recommendations about the number of GitHub organizations you should have.
 - Creating discoverable repositories.
 - Creating robust repository READMEs.
-- Using templates for issue requests and pull requests.
+- Using templates for issues and pull requests.
 - Building transparency into repositories.
 - Measuring the success of InnerSource within your organization.
 - Distributing your InnerSource toolkit.
 
-Now that you have an InnerSource program together, learn to [Create an open-source program by using GitHub best practices](/training/modules/create-open-source-program-github/?azure-portal=true).
+Apply these practices to your team projects to strengthen your InnerSource approach.
+
+Now that you have an InnerSource program together, learn to [Create an open-source program by using GitHub best practices](/training/modules/create-open-source-program-github).
 
 ## Learn more
 

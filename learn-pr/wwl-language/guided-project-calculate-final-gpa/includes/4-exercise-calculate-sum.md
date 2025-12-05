@@ -13,7 +13,7 @@ English 101     4		3               12
 
 In this task, you'll create the variables to store values that are needed to calculate the GPA. You'll create a variable to store the sum of the total credit hours for each course, and another variable to store the sum of the grade points the student earned for each course.
 
-1. In the .NET Editor, locate the `Console.WriteLine()` statements that are used to display the course information.
+1. In the [C# Code Editor](https://microsoftlearning.github.io/c-sharp-minor?azure-portal=true), locate the `Console.WriteLine()` statements that are used to display the course information.
 
 1. Create a blank code line above the `Console.WriteLine()` statements.
 
@@ -135,7 +135,7 @@ In this task, you'll run the code and verify that the output is correct.
     Console.WriteLine($"{course5Name} {course5Grade} {course5Credit}");
     ```
 
-1. To run your code and display the current values of `totalGradePoints` and `totalCreditHours`, select **Run**.
+1. To run your code and display the current values of `totalGradePoints` and `totalCreditHours`, press the ▶️ Run button.
 
 1. Verify that your application's output matches the following output:
 

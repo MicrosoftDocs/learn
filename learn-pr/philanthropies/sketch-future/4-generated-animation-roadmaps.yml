@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.sketch-future.generated-animation-roadmaps
+title: AI-generated animation roadmaps
+metadata:
+  title: AI-Generated Animation Roadmaps
+  description: "In this unit, learners review examples of AI-generated animation roadmaps produced with Microsoft Copilot across various genres. Learners explore how structured scene breakdowns, asset lists, and visual styles help streamline the animation planning process. Keywords: AI animation planning, Microsoft Copilot, animation roadmap examples, creative brainstorming with AI."
+
+  ms.date: 4/28/2025
+  author: kariannab-ms
+  ms.author: kbarreto
+  ms.topic: unit
+  
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-generated-animation-roadmaps.md)]

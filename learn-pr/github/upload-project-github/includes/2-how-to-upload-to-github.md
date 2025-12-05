@@ -13,7 +13,7 @@ GitHub exclusively uses **Git**, arguably the best version-control system around
 A large amount of project code is still stored exclusively on developer machines. When you upload to GitHub, you're moving your code to GitHub's cloud platform, where team members can easily access it from anywhere. This change offers a good opportunity to review your team's policy for the kinds of files and data you keep in version control. As a best practice, you should assume that anything you commit to GitHub is potentially compromised. So, be sure not to include sensitive data, such as API keys, passwords, or other files containing comparable information.
 
 > [!NOTE]
-> GitHub offers both public and private repositories, as well as granular access controls for different parts of a repository. This lets you control to whom your projects are visible, as well as what actions a given user can perform.
+> GitHub offers both public and private repositories, and granular access controls for different parts of a repository. This granularity lets you control who your projects are visible to, and what actions a given user can perform.
 
 ### Collaboration
 

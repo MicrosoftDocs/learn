@@ -2,8 +2,6 @@
 uid: learn.wwl.migrate-premises-mongodb-databases-azure-database-mongodb.summary
 title: Summary
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Summary
   description: "Summary"
   ms.date: 02/03/2021
@@ -17,4 +15,4 @@ azureSandbox: false
 durationInMinutes: 1
 content: |
   [!include[](includes/7-summary.md)]
-
+

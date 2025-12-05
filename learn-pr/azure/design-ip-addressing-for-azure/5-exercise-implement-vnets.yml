@@ -1,8 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.design-ip-addressing-for-azure.5-exercise-implement-vnets
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Design and implement IP addressing for Azure virtual networks
   description: Exercise - Design and implement IP addressing for Azure virtual networks
   ms.date: 10/10/2024
@@ -12,8 +10,8 @@ metadata:
   ms.custom: devx-track-azurecli
 title: Exercise - Design and implement IP addressing for Azure virtual networks
 durationInMinutes: 10
-interactive: bash
-azureSandbox: true
+#interactive: bash
+#azureSandbox: true
 content: |
   [!include[](includes/5-exercise-implement-vnets.md)]
 # NOTE: Task validation is failing for learners, so that is disabled for now.
@@ -39,4 +37,4 @@ content: |
 #       type: "Microsoft.Network/virtualNetworks"
 #       name: ResearchVnet
 #   hint: "Make sure you have created the ResearchVnet virtual network."
-
+

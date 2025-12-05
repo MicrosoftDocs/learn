@@ -43,25 +43,11 @@ Follow these steps to migrate logins using the migration extension in Azure Data
 
     :::image type="content" source="../media/2-login-migration-status.png" alt-text="Screenshot showing the login migration status in Azure Data Studio.":::
 
-### Using DMA
-
- As part of login migration, Data Migration Assistant assigns the permissions to securables on the target SQL Server as they exist on the source SQL Server. If the login already exists on the target SQL Server, Data Migration Assistant migrates only the permissions assigned to securables and don't re-create the whole login. Data Migration Assistant makes the best effort to map the login to database users if the login already exists on the target server.
-
-Data Migration Assistant currently doesn’t support:
-
-- Logins associated with a stand-alone security certificate (logins mapped to certificate)
-- A stand-alone asymmetric key (logins mapped to asymmetric key) 
-- Logins mapped to credentials. 
--  By default, Data Migration Assistant selects all the qualified logins to migrate. Optionally, you can select specific logins to migrate1.
-
-> [!NOTE]
-> While the Database Migration Assistant is a useful tool available, we recommend that you use the [Azure Database Migration Service](/azure/dms/dms-overview) for large migrations and enhanced overall experience, which is available as [Azure SQL Migration extension for Azure Data Studio](/azure-data-studio/extensions/azure-sql-migration-extension), or via [Azure Portal](https://aka.ms/dmsazureportal), or through [Azure PowerShell and Azure CLI](/azure/dms/migration-dms-powershell-cli).
-
 ### MoveLogins script
 
 The [MoveLogins script](https://www.microsoft.com/download/details.aspx?id=103111) assists in transferring login information from on-premises SQL Servers to Azure SQL Database or other PaaS offerings.
 
-While Data Migration Assistant (DMA) has the ability to transfer security information and does a full dependency graph to ensure permissions are transferred properly, the *MoveLogins* script provides an extra option. It enables an Active Directory lookup for users, allowing you to obtain their User Principal Name (UPN), a feature currently not supported by DMA.
+The *MoveLogins* script, enables an Active Directory lookup for users, allowing you to obtain their User Principal Name (UPN).
 
 The script, written in PowerShell, generates a T-SQL script that can be applied to the target SQL environment to transfer logins, database users, roles and permissions. It doesn't execute the commands on the target environment. You need to carefully review the generated script output before applying it to the target environment.
 

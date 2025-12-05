@@ -6,7 +6,7 @@ metadata:
   brand: azure
   ms.date: 04/06/2023
   author: sbkuehn
-  ms.author: shkuehn
+  ms.author: robmcm
   ms.topic: learning-path
   ms.contributors:
   - shkuehn-01272022
@@ -34,7 +34,6 @@ modules:
 - learn.azure.intro-azure-vmware-solution
 - learn.deploy-azure-vmware-solution
 - learn.migrate-vmware-workloads-on-premises-azure-vmware-solution
-- learn.azure.deploy-disaster-recovery-vmware-srm-azure-vmware-solution
 - learn.azure.azure-vmware-solution
 - learn.azure-netapp-files-with-vmware-solution
 trophy:

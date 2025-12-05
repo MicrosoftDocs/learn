@@ -2,8 +2,6 @@
 uid: learn.azure.deploy-event-driven-real-time.2-event-driven-example
 title: What is event driven, and how fast is real time?
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: What is event driven, and how fast is real time?
   description: In this unit, we describe the concept of event-driven programming and architectures by example. 
   ms.date: 03/05/2025
@@ -15,4 +13,4 @@ metadata:
 durationInMinutes: 3
 content: |
   [!include[](includes/2-event-driven-example.md)]
-
+

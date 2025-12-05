@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-started-file-input-output.exercise-create-manage-text-files
+title: Exercise - Create and manage text files
+metadata:
+  title: Exercise - Create and manage text files
+  description: "Exercise - Create and manage text files."
+  ms.date: 07/02/2025
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 30
+content: |
+  [!include[](includes/7-exercise-create-manage-text-files.md)]

@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.orchestrate-processes-in-fabric.knowledge-check
+title: Knowledge Check
+metadata:
+  title: Knowledge Check
+  description: "Knowledge check"
+  ms.date: 11/14/2024
+  author: jamesh
+  ms.author: jamesh
+  ms.topic: unit
+  ms.custom:
+  - DP-700
+durationInMinutes: 3
+quiz:
+  title: ""
+  questions:
+  - content: "What is a key feature of Dataflows in Microsoft Fabric?"
+    choices:
+    - content: "Dataflows only support data ingestion from a limited number of sources."
+      isCorrect: false
+      explanation: "Incorrect. Dataflows can ingest data from hundreds of sources."
+    - content: "Dataflows offer a low-code interface to ingest and transform data from numerous sources."
+      isCorrect: true
+      explanation: "Correct. Dataflows provide a low-code interface for data ingestion from various sources and transformation using over 300 data transformations."
+    - content: "Dataflows can't be run manually or on a schedule."
+      isCorrect: false
+      explanation: "Incorrect. Dataflows can be run manually, on a schedule, or as part of a data pipeline."
+  - content: "What is the purpose of a storage event trigger in Fabric Data Factory pipelines?"
+    choices:
+    - content: "To automate data pipelines based on events occurring in storage accounts."
+      isCorrect: true
+      explanation: "Correct. Storage event triggers in Fabric Data Factory pipelines are used to automate data pipelines when specific events occur in storage accounts."
+    - content: "To manually start a data pipeline run."
+      isCorrect: false
+      explanation: "Incorrect. Storage event triggers are used to automate data pipelines based on events, not for manual initiation."
+    - content: "To schedule regular data pipeline runs."
+      isCorrect: false
+      explanation: "Incorrect. While scheduling is a feature of Fabric Data Factory, it isn't the function of storage event triggers."
+  - content: "What is required to build an Eventhouse that contains a KQL database?"
+    choices:
+    - content: "A Microsoft Fabric trial license with the Fabric preview enabled in your tenant."
+      isCorrect: true
+      explanation: "Correct. A Microsoft Fabric trial license with the Fabric preview enabled in your tenant is required to build an Eventhouse that contains a KQL database."
+    - content: "A Microsoft Office 365 subscription."
+      isCorrect: false
+      explanation: "Incorrect. A Microsoft Office 365 subscription alone isn't sufficient to build an Eventhouse with a KQL database."
+    - content: "A Google Cloud trial license with the Fabric previews enabled."
+      isCorrect: false
+      explanation: "Incorrect. Google Cloud trial license isn't required for building an Eventhouse with a KQL database."

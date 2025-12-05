@@ -2,8 +2,6 @@
 uid: learn.azure.azure-cyclecloud-high-performance-computing.summary
 title: Summary
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: summary
   title: Summary
   description: Review what your learned about using Azure CycleCloud for high-performance computing.
@@ -14,4 +12,4 @@ metadata:
 durationInMinutes: 2
 content: |
   [!include[](includes/7-summary.md)]
-
+

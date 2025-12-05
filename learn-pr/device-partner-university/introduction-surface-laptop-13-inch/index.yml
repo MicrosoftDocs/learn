@@ -1,0 +1,40 @@
+### YamlMime:Module
+uid: learn.dpu.introduction-to-surface-laptop-13-inch
+title: Introduction to Microsoft Surface Laptop 13-inch
+metadata:
+  title: Introduction To Microsoft Surface Laptop 13-Inch
+  description: Explore Microsoft Surface Laptop 13-inch, a Copilot+ PC. It's focused on AI-driven productivity, secure enterprise deployment, and flexible hardware-software integration for modern IT environments.
+  ms.date: 09/29/2025
+  author: ozahran7
+  ms.author: v-zahranomar
+  ms.topic: module
+  ms.service: surface
+summary: Discover the 13-inch Microsoft Surface Laptop, a Copilot+ PC designed for AI-powered productivity. It supports secure enterprise deployment and offers seamless hardware and software integration for modern IT environments.
+
+abstract: |
+ By the end of this module, you'll be able to:
+  - Evaluate whether Microsoft Surface Laptop 13-inch is appropriate for your business.
+  - Describe how the software and hardware features of Microsoft Surface Laptop 13-inch work to complete more tasks.
+
+prerequisites: |
+  - None
+iconUrl: /training/achievements/generic-badge.svg
+ratingEnabled: false
+levels:
+  - beginner
+roles:
+  - administrator
+  - business-owner
+  - business-user
+  - technology-manager
+products:
+  - surface
+units:
+  - learn.dpu.introduction-to-surface-laptop-13-inch.introduction
+  - learn.dpu.introduction-to-surface-laptop-13-inch.what-is-microsoft-surface-laptop-13-inch
+  - learn.dpu.introduction-to-surface-laptop-13-inch.how-surface-laptop-13-inch-works
+  - learn.dpu.introduction-to-surface-laptop-13-inch.when-to-use-surface-laptop-13-inch
+  - learn.dpu.introduction-to-surface-laptop-13-inch.knowledge-check
+  - learn.dpu.introduction-to-surface-laptop-13-inch.summary
+badge:
+  uid: learn.dpu.introduction-to-surface-laptop-13-inch.badge

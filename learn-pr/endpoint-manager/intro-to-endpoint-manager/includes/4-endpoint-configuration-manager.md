@@ -8,4 +8,4 @@ You can use Configuration Manager to:
 
 Configuration Manager supports Windows and macOS. The devices you manage with Configuration Manager can run in virtual environments, such as Hyper-V on Windows servers and virtual machines (VM) in Azure. If you run a server as an Azure-based VM, you can install the Configuration Manager client on that server.
 
-[ ![Diagram of Configuration Manager infrastructure.](../media/intro-to-endpoint-manager-03a.png) ](../media/intro-to-endpoint-manager-03a.png#lightbox)
+[![Diagram of Configuration Manager infrastructure.](../media/intro-to-endpoint-manager-03a.png)](../media/intro-to-endpoint-manager-03a.png#lightbox)

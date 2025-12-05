@@ -4,9 +4,8 @@ title: Deploy an Azure Database for MySQL instance
 metadata:
   title: Deploy an Azure Database for MySQL Instance
   description: Shows you how to deploy an Azure Database for MySQL instance.
-  author: KarlErickson
-  ms.author: karler
-  ms.reviewer: yoshioterada
+  author: yoshioterada
+  ms.author: yoterada
   ms.date: 03/16/2025
   ms.topic: unit
   ms.custom:

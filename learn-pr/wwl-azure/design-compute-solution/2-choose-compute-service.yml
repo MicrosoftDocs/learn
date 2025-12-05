@@ -2,9 +2,11 @@
 uid: learn.wwl.design-compute-solution.choose-compute-service
 title: Choose an Azure compute service
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Choose an Azure compute service
   description: "Choose an Azure compute service"
-  ms.date: 12/06/2024
+  ms.date: 05/28/2025
   author: wwlpublish
   ms.author: cynthist
   ms.topic: unit

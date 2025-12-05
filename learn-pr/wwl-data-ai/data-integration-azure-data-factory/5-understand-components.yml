@@ -2,8 +2,6 @@
 uid: learn.wwl.integrate-data-azure-data-factory.understand-components
 title: Understand Azure Data Factory components
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Understand Azure Data Factory components
   description: "Understand Azure Data Factory components"
   ms.date: 06/05/2023
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 7
 content: |
-  [!include[](includes/5-understand-components.md)]
+  [!include[](includes/5-understand-components.md)]

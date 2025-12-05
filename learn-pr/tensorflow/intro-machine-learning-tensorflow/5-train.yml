@@ -4,9 +4,9 @@ title: Train and test the neural network
 metadata:
   title: Train and test the neural network
   description: Learn how to use TensorFlow's automatic differentiation features to train and evaluate a neural network.
-  ms.date: 07/24/2023
-  author: bstollnitz
-  ms.author: bstollnitz
+  ms.date: 10/10/2025
+  author: Orin-Thomas
+  ms.author: orthomas
   ms.topic: unit
   ms.product: learning-tensorflow
   ms.contributors: bstollnitz-08202021

@@ -16,6 +16,5 @@ Here are several resources where you can learn more about Azure Static Web Apps,
 
 - Watch the Video series: [Deploy websites to the cloud with Azure Static Web Apps](https://aka.ms/azure/beginnervideos/learn/swa)
 - Learn how to [Publish an API to Azure Static Web Apps](/training/modules/publish-static-web-app-api-preview-url/)
-- Learn how to [Authenticate users with Azure Static Web Apps](/training/modules/publish-static-web-app-authentication/)
 - [Azure Static Web Apps](/azure/static-web-apps)
 - Use [Angular](https://code.visualstudio.com/docs/nodejs/angular-tutorial), [React](https://code.visualstudio.com/docs/nodejs/reactjs-tutorial), and [Vue](https://code.visualstudio.com/docs/nodejs/vuejs-tutorial) in Visual Studio Code

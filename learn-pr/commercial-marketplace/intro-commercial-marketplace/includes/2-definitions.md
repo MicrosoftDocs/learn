@@ -2,7 +2,7 @@ Following a strategic session with your company's executive leadership, you begi
 
 ## Designed for customers
 
-The commercial marketplace stands as a robust platform that enables both existing and prospective customers to discover, evaluate, purchase, and deploy best-in-class cloud solutions. These cloud solutions are pivotal in propelling digital transformation and fostering innovation within the Microsoft cloud ecosystem. For those who are already part of the cloud ecosystem, the commercial marketplace offers customers an added benefit: the ability to integrate their marketplace purchases with existing Microsoft procurement agreements, simplifying billing through a unified invoice directly from Microsoft.
+The commercial marketplace stands as a robust platform that enables both existing and prospective customers to discover, evaluate, purchase, and deploy best-in-class cloud solutions. These cloud solutions are pivotal in propelling digital transformation and fostering innovation within the Microsoft cloud ecosystem. For customers who are already part of the cloud ecosystem, the commercial marketplace offers an added benefit: the ability to integrate their marketplace purchases with existing Microsoft procurement agreements, simplifying billing through a unified invoice directly from Microsoft.
 
 ## Crafted for partners
 
@@ -35,4 +35,4 @@ Given the global adoption of Microsoft products and services across organization
 
 The prospect of showcasing your products to a vast global audience aligns perfectly with your executive team's directive. However, to capitalize on this opportunity, a deeper understanding of the online stores is essential. Your company's solutions, tailored for diverse customer groups, must find their appropriate niche within the commercial marketplace.
 
-To identify the most fitting online store for your solutions - whether Microsoft AppSource for business applications or Azure Marketplace for IT services - you plan to delve into the commercial marketplace documentation. This provides clarity on how to position your offerings effectively in this expansive ecosystem.
+To identify the most fitting online store for your solutions - whether Microsoft AppSource for business applications or Azure Marketplace for IT services - you plan to delve into the commercial marketplace documentation. This resource should provide clarity on how to position your offerings effectively in this expansive ecosystem.

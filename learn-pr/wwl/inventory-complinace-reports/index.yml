@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.inventory-compliance-reports
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: MD-102 4-Generate inventory and compliance reports
   description: "This module describes how to use Microsoft Endpoint Manager and Power BI to create compliance and custom reports."
   ms.date: 11/23/2023
@@ -40,4 +38,4 @@ units:
 - learn.wwl.inventory-compliance-reports.knowledge-check
 - learn.wwl.inventory-compliance-reports.summary
 badge:
-  uid: learn.wwl.inventory-compliance-reports.badge
+  uid: learn.wwl.inventory-compliance-reports.badge
