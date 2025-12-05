@@ -24,6 +24,5 @@ subjects:
 - machine-learning
 modules:
 - learn.explore-foundation-models-in-model-catalog
-- learn.get-started-prompt-flow
 trophy:
   uid: learn.wwl.work-with-generative-models-azure-machine-learning.trophy
