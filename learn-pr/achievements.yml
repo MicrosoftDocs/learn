@@ -7325,3 +7325,8 @@ achievements:
   title: Train models with scripts in Azure Machine Learning
   summary: To prepare your machine learning workloads for production, you'll work with scripts. Learn how to train models with scripts in Azure Machine Learning.
   iconUrl: /training/achievements/train-models-scripts-azure-machine-learning.svg
+- uid: learn.finetune-foundation-model-with-azure-machine-learning.badge
+  type: badge
+  title: Fine-tune a foundation model with Azure Machine Learning
+  summary: Train a pretrained Large Language Model (LLM) on specific tasks. The model catalog in Azure Machine Learning offers many open source models that can be fine-tuned for your specific task.
+  iconUrl: /learn/achievements/generic-badge.svg
