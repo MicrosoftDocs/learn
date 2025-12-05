@@ -7330,3 +7330,8 @@ achievements:
   title: Fine-tune a foundation model with Azure Machine Learning
   summary: Train a pretrained Large Language Model (LLM) on specific tasks. The model catalog in Azure Machine Learning offers many open source models that can be fine-tuned for your specific task.
   iconUrl: /learn/achievements/generic-badge.svg
+- uid: learn.get-started-prompt-flow.badge
+  type: badge
+  title: Get started with prompt flow to develop Large Language Model (LLM) apps
+  summary: Learn about how to use prompt flow to develop applications that leverage Large Language Models (LLMs).
+  iconUrl: /learn/achievements/generic-badge.svg
