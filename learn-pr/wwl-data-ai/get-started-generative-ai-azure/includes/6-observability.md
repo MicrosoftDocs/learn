@@ -14,4 +14,4 @@ Some evaluators include:
 - *Coherence*: measures logical consistency and flow of responses.
 - *Content safety*: comprehensive assessment of various safety concerns.
 
-Next, let's try out generative AI capabilities in Microsoft Foundry portal.
+Next, let's try out generative AI capabilities in Microsoft Foundry.
