@@ -60858,6 +60858,11 @@
       "source_path": "learn-pr/wwl-data-ai/get-started-prompt-flow/5-variants-monitor.md",
       "redirect_url": "/training/paths/create-custom-copilots-ai-studio/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/deploy-azure-databricks-models-azure-machine-learning/index.md",
+      "redirect_url": "/training/paths/use-azure-machine-learning-pipelines-for-automation/",
+      "redirect_document_id": false
     }
   ]
 }
