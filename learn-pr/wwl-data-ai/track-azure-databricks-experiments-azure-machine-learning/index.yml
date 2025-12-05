@@ -33,7 +33,6 @@ units:
 - learn.wwl.track-azure-databricks-experiments-azure-machine-learning.run
 - learn.wwl.track-azure-databricks-experiments-azure-machine-learning.log-metrics-mlflow
 - learn.wwl.track-azure-databricks-experiments-azure-machine-learning.run-pipelines-azure-databricks-compute
-- learn.wwl.track-azure-databricks-experiments-azure-machine-learning.knowledge-check
 - learn.wwl.track-azure-databricks-experiments-azure-machine-learning.summary
 badge:
   uid: learn.wwl.track-azure-databricks-experiments-azure-machine-learning.badge
