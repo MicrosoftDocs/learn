@@ -60723,6 +60723,11 @@
       "source_path": "learn-pr/azure/logic-apps-and-custom-connectors/index.yml",
       "redirect_url": "https://learn.microsoft.com/azure/logic-apps/custom-connector-overview",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/track-azure-databricks-experiments-azure-machine-learning/index.md",
+      "redirect_url": "/training/paths/use-azure-machine-learning-pipelines-for-automation/",
+      "redirect_document_id": false
     }
   ]
 }
