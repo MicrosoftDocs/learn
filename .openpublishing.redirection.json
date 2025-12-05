@@ -60753,6 +60753,11 @@
       "source_path": "learn-pr/wwl-data-ai/track-azure-databricks-experiments-azure-machine-learning/4-log-metrics-mlflow.md",
       "redirect_url": "/training/paths/use-azure-machine-learning-pipelines-for-automation/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/track-azure-databricks-experiments-azure-machine-learning/3-run-azure-databricks-experiments.md",
+      "redirect_url": "/training/paths/use-azure-machine-learning-pipelines-for-automation/",
+      "redirect_document_id": false
     }
   ]
 }
