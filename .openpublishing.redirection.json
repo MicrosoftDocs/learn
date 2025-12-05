@@ -60878,6 +60878,11 @@
       "source_path": "learn-pr/wwl-data-ai/deploy-azure-databricks-models-azure-machine-learning/6-exercise-deploy-azure-databricks-model.md",
       "redirect_url": "/training/paths/use-azure-machine-learning-pipelines-for-automation/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/deploy-azure-databricks-models-azure-machine-learning/1-introduction.md",
+      "redirect_url": "/training/paths/use-azure-machine-learning-pipelines-for-automation/",
+      "redirect_document_id": false
     }
   ]
 }
