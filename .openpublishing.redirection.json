@@ -60823,6 +60823,11 @@
       "source_path": "learn-pr/wwl-data-ai/get-started-prompt-flow/4-connections-runtimes.md",
       "redirect_url": "/training/paths/create-custom-copilots-ai-studio/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/get-started-prompt-flow/6-exercise.md",
+      "redirect_url": "/training/paths/create-custom-copilots-ai-studio/",
+      "redirect_document_id": false
     }
   ]
 }
