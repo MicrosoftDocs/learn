@@ -60903,6 +60903,41 @@
       "source_path": "learn-pr/wwl-data-ai/deploy-azure-databricks-models-azure-machine-learning/5-troubleshoot-model-deployment.md",
       "redirect_url": "/training/paths/use-azure-machine-learning-pipelines-for-automation/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/dot-net-maui/consume-rest-services-maui/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/dotnet/maui/data-cloud/rest",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/dot-net-maui/consume-rest-services-maui/2-detect-network-connectivity.yml",
+      "redirect_url": "https://learn.microsoft.com/dotnet/maui/data-cloud/rest",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/dot-net-maui/consume-rest-services-maui/3-consume-rest-web-service.yml",
+      "redirect_url": "https://learn.microsoft.com/dotnet/maui/data-cloud/rest",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/dot-net-maui/consume-rest-services-maui/4-use-platform-specific-features.yml",
+      "redirect_url": "https://learn.microsoft.com/dotnet/maui/data-cloud/rest",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/dot-net-maui/consume-rest-services-maui/5-exercise-consume-rest-web-service.yml",
+      "redirect_url": "https://learn.microsoft.com/dotnet/maui/data-cloud/rest",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/dot-net-maui/consume-rest-services-maui/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/dotnet/maui/data-cloud/rest",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/dot-net-maui/consume-rest-services-maui/index.yml",
+      "redirect_url": "https://learn.microsoft.com/dotnet/maui/data-cloud/rest",
+      "redirect_document_id": false
     }
   ]
 }
