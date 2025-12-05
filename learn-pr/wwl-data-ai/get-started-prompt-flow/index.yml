@@ -34,7 +34,6 @@ subjects: # see subject taxonomy https://review.learn.microsoft.com/help/contrib
   - natural-language-processing
 units:
 - learn.get-started-prompt-flow.understand-lifecycle
-- learn.get-started-prompt-flow.understand-flows
 - learn.get-started-prompt-flow.variants-monitor
 badge:
   uid: learn.get-started-prompt-flow.badge
