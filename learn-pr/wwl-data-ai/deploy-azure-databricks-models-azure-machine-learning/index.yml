@@ -34,7 +34,6 @@ subjects:
 units:
 - learn.wwl.deploy-azure-databricks-models-azure-machine-learning.plan-for-deployment-endpoints
 - learn.wwl.deploy-azure-databricks-models-azure-machine-learning.troubleshoot-model-deployment
-- learn.wwl.deploy-azure-databricks-models-azure-machine-learning.knowledge-check
 - learn.wwl.deploy-azure-databricks-models-azure-machine-learning.summary
 badge:
   uid: learn.wwl.deploy-azure-databricks-models-azure-machine-learning.badge
