@@ -35,7 +35,6 @@ subjects: # see subject taxonomy https://review.learn.microsoft.com/help/contrib
 units:
 - learn.finetune-foundation-model-with-azure-machine-learning.introduction
 - learn.finetune-foundation-model-with-azure-machine-learning.understand-finetune
-- learn.finetune-foundation-model-with-azure-machine-learning.finetune-model
 - learn.finetune-foundation-model-with-azure-machine-learning.knowledge-check
 - learn.finetune-foundation-model-with-azure-machine-learning.summary
 badge:
