@@ -60768,6 +60768,11 @@
       "source_path": "learn-pr/wwl-data-ai/track-azure-databricks-experiments-azure-machine-learning/8-summary.md",
       "redirect_url": "/training/paths/use-azure-machine-learning-pipelines-for-automation/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/train-models-scripts-azure-machine-learning/index.md",
+      "redirect_url": "/training/paths/use-azure-machine-learning-pipelines-for-automation/",
+      "redirect_document_id": false
     }
   ]
 }
