@@ -7320,3 +7320,8 @@ achievements:
   title: Track Azure Databricks experiments in Azure Machine Learning
   summary: Azure Machine Learning is a scalable cloud platform for training, deploying, and managing machine learning solutions.
   iconUrl: /training/achievements/track-azure-databricks-experiments-in-azure-machine-learning.svg
+- uid: learn.wwl.train-models-scripts-azure-machine-learning.trophy
+  type: trophy
+  title: Train models with scripts in Azure Machine Learning
+  summary: To prepare your machine learning workloads for production, you'll work with scripts. Learn how to train models with scripts in Azure Machine Learning.
+  iconUrl: /training/achievements/train-models-scripts-azure-machine-learning.svg
