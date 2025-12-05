@@ -35,7 +35,6 @@ units:
 - learn.wwl.deploy-azure-databricks-models-azure-machine-learning.introduction
 - learn.wwl.deploy-azure-databricks-models-azure-machine-learning.describe-considerations-for-model-deployment
 - learn.wwl.deploy-azure-databricks-models-azure-machine-learning.plan-for-deployment-endpoints
-- learn.wwl.deploy-azure-databricks-models-azure-machine-learning.deploy-model-to
 - learn.wwl.deploy-azure-databricks-models-azure-machine-learning.troubleshoot-model-deployment
 - learn.wwl.deploy-azure-databricks-models-azure-machine-learning.exercise-deploy-azure-databricks-model
 - learn.wwl.deploy-azure-databricks-models-azure-machine-learning.knowledge-check
