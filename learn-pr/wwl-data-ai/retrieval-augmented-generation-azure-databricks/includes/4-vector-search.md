@@ -1,49 +1,55 @@
-Imagine searching for something and getting results that understand what you mean, not just what you type. **Vector search** allow you to match user queries to semantically correlated content, rather than exact word matches, drastically improving the user experience.
+After you've chunked your data and converted it into embeddings, you need a way to quickly find the most relevant chunks when users ask the RAG system questions. Vector search makes this possible by finding content based on mathematical similarity between vectors, with similarity search being one of the most powerful applications for RAG systems.
 
-Vector search can be used in applications like **chatbots**, where you want to deliver relevant documents to help answer user's questions. You can also use vector databases to improve the search capabilities of **recommendation engines** that provide personalized, context-aware recommendations to users.
+Imagine searching for something and getting results that understand what you mean, not just what you type. Vector search enables you to find relevant content based on vector similarity, and when used with text embeddings, it can match user queries to semantically related content rather than exact word matches, drastically improving the user experience and making your RAG system much more effective.
 
-## Use similarity search to find relevant data
+## What are vectors?
 
-The main advantage of using vector search is the ability to use **similarity search**, which matches search queries *semantically*.
+Before diving into how vector search works, it's important to understand what vectors are. A vector is simply a list of numbers that represents information in a way computers can process mathematically. Think of vectors like coordinates on a map - just as (latitude, longitude) can represent any location on Earth using two numbers, a vector can represent the meaning of a piece of text using hundreds or thousands of numbers.
 
-Unlike keyword matching, semantic matching enables plain language search queries to deliver relevant results across various types of data, including text, images, and audio. This approach allows for a deeper understanding of the similarities and differences between data, providing more accurate and meaningful search outcomes.
+Text embeddings are a specific type of vector - they are vectors that represent the meaning of text. When you convert text chunks like "dog training tips" into embeddings, you create vectors that might look something like [0.2, -0.1, 0.8, 0.3, ...] with hundreds of dimensions. When two pieces of text have similar meanings, their vectors have similar overall patterns, making them mathematically "close" to each other.
 
-You can achieve vector search with a **vector database** or a **vector library**. Let's explore each of these options, so you can understand which approach best fits your needs.
+This mathematical representation is what makes vector search possible - instead of comparing words directly, you can compare the numerical patterns that represent meaning.
 
-## What is a vector database?
+## How vector search works
 
-A vector database is a database that is optimized to store and retrieve high-dimensional vectors such as **embeddings**.
+Vector search builds on the text embedding process. Here's how it works step by step:
 
-In a Retrieval Augmented Generation (RAG) architecture, contextual information is stored in vectors. Vector databases are designed for efficient storage of vectors used in generative AI applications, which rely on identifying documents or images with similarities.
+1. **Query conversion**: When a user asks a question, your system converts their query into an embedding using the same model you used for your document data chunks.
+2. **Similarity calculation**: The system compares the query embedding to all document chunk embeddings using mathematical similarity measures.
+3. **Ranking and retrieval**: Document chunks are ranked by similarity score, and the top most relevant chunks are retrieved.
+4. **Context assembly**: The retrieved chunks are assembled and sent to the language model along with the user's question.
 
-:::image type="content" source="../media/matched-query.png" alt-text="Screenshot of the model catalog in the Azure AI Studio.":::
+### Understanding similarity search
 
-Vector databases provide a query interface that retrieves vectors that represent documents most similar to a specified query vector.
+Similarity search is the most common application of vector search for RAG systems, using embeddings to match queries semantically. The system compares query embeddings (from user questions) with document chunk embeddings (from your data) to find relevant content. Unlike traditional keyword search that looks for exact word matches, similarity search recognizes relationships between concepts. For example:
 
-Vector databases are optimized for the high-dimensionality of vectors and are specialized, full-fledged databases for unstructured data.
+- **Keyword search** for "canine care" would miss documents about "dog training" or "pet health".
+- **Similarity search** recognizes that "canine," "dog," and "pet" are related concepts and finds relevant content regardless of exact wording.
 
-When you work with Azure Databricks, you can use **Mosaic AI Vector Search** as a vector database to store the vector representations of your data and the metadata. Mosaic AI Vector Search is tightly integrated with your Lakehouse. You can use the API for real-time similarity search, and include filters on the metadata in the query.
+This semantic understanding comes from the embedding model, which learned these relationships during training on large amounts of text data.
 
-> [!Tip]
-> Learn more about the [Mosaic AI Vector Search](/azure/databricks/generative-ai/vector-search?azure-portal=true)
+## Choosing your vector search approach
 
-A vector database like Mosaic AI Vector Search is ideal when you have a large amount of data and you need to persist the vector indices computed in storage. You can take advantage of inherit database properties, like **Create-Read-Update-Delete** (**CRUD**).
+There are two main options for implementing vector search in Azure Databricks: vector databases and vector libraries. Let's explore each of these options.
 
-When your data is mostly static, and you don't expect to update your data that often, a vector library can be a better approach.
+### What is a vector database?
 
-## Use a library to create vector indices
+A vector database is a specialized database optimized to store and retrieve embeddings - those vectors with hundreds or thousands of numbers that represent meaning. Like traditional databases, vector databases use indices (organized structures that speed up searches) to quickly find relevant data, but these vector indices are designed to find mathematically similar vectors rather than exact matches. In RAG applications, vector databases primarily store text embeddings - vectors that represent the semantic meaning of your document chunks - along with metadata about each chunk (like source document, page numbers, or categories).
 
-If you don’t want to integrate with a new database system, you can choose to use a vector library that creates these **vector indices** for you. A vector index is a data structure that holds all necessary information that facilitates the vector search process.
+:::image type="content" source="../media/matched-query.png" alt-text="Diagram of vector space visualization showing both document and query vectors as dots. A relevant document vector is positioned close to the query vector.":::
 
-Typically, a vector index can contain three components:
+This visualization shows how vectors work in practice. Each dot represents a vector - the blue dots are document chunk embeddings stored in the vector database, and the orange dot is a query vector. The image labels "Relevant document" and "Query" indicate vectors that are close together in the mathematical space, showing similarity. When you search, the database finds document vectors nearest to your query vector.
 
-- **Preprocessing**: Optionally, you can choose to normalize your embeddings to reduce the embedding dimensions.
-- **Indexing**: Use an indexing algorithm from a vector library like **Faiss** (**Facebook AI Similarity Search**) to index your embeddings.
-- **Postprocessing**: Quantize or hash your vectors to optimize for search speeds.
+This image illustrates why vector databases are so powerful for RAG: documents with similar meanings are positioned close together in the vector space, making it easy to find relevant content by measuring mathematical distance between vectors.
 
-The advantage of using a vector library like FAISS is that it's sufficient for small and static data, more light-weight, and cost-efficient.
+In Azure Databricks, you can use Mosaic AI Vector Search as a vector database to store the vector representations of your data and metadata. Mosaic AI Vector Search integrates with your Lakehouse data and provides search capabilities for your embeddings, with support for filtering results based on metadata you've stored with your document chunks.
 
-However, the data is stored in-memory (RAM), meaning there's no data replication. There's also no CRUD support, which results in a need to rebuild at every session. You also need to wait for full import to finish before you can query your data.
+Vector databases like Mosaic AI Vector Search can be used when you have large amounts of data and need to store your embeddings persistently for long-term use. Vector databases are well-suited for dynamic data because they support real-time operations - you can add new document chunks, update existing ones, or delete outdated content without rebuilding the entire search system. This makes them ideal for scenarios like knowledge bases that grow over time, document repositories with frequent updates, or applications where multiple users are adding content. They typically provide search capabilities and support filtering on metadata, making them applicable for scenarios where multiple applications need to access the same vector data.
 
-> [!Tip]
-> Explore the [Faiss library documentation](https://faiss.ai/?azure-portal=true).
+### What are vector libraries?
+
+Vector libraries are tools that create vector indices to enable fast similarity search without requiring a separate database system. Think of these indices like a specialized filing system that organizes your embeddings so they can be searched quickly - similar to how a database index speeds up queries, but designed for mathematical similarity searches.
+
+Vector libraries store these indices in memory and provide algorithms to quickly find the most similar vectors to your query. A popular example is FAISS (Facebook AI Similarity Search), which provides various indexing algorithms optimized for different types of vector search scenarios.
+
+Vector libraries can work well when you have smaller datasets where your embeddings can fit in memory, and when your data doesn't change frequently. Since the data is stored in memory, searches can be fast, but you typically need to rebuild the index when you restart your application or add new data.

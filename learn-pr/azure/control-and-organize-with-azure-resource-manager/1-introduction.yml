@@ -2,8 +2,6 @@
 uid: learn.control-and-organize-with-resource-manager.1-introduction
 title: Introduction
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Introduction to resource groups and management in Azure
   description: Introduction to resource groups and management in Azure
   ms.date: 10/29/2024
@@ -13,4 +11,4 @@ metadata:
 durationInMinutes: 2
 content: |
   [!include[](includes/1-introduction.md)]
-
+

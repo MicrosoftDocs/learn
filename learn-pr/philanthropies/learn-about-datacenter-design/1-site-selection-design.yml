@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.learn-about-datacenter-design.site-selection-design
+title: Site selection and design
+metadata:
+  title: Site Selection and Design
+  description: This content is a part of the "Learn about datacenter design, architecture, and infrastructure management" module.
+  ms.date: 05/08/2025
+  author: kiranchandratrey
+  ms.author: elenasim
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+ [!include[](includes/1-site-selection-design.md)]

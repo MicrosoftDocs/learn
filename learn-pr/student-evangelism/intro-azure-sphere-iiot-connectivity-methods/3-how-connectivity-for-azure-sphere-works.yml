@@ -2,8 +2,6 @@
 uid: learn.oxford.industrial-iot-connectivity.how-connectivity-for-azure-sphere-works
 title: How does industrial IoT connectivity for Azure Sphere work?
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: How does industrial IoT connectivity for Azure Sphere work?
   description: In this section, we explain how to solve the problem that described in the scenario with connectivity options.
   ms.date: 06/11/2021
@@ -14,4 +12,4 @@ metadata:
 durationInMinutes: 5 # dummy number at present
 content: |
   [!include[](includes/3-how-connectivity-for-azure-sphere-works.md)]
-
+

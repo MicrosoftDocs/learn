@@ -2,11 +2,9 @@
 uid: learn.azure.intro-azure-vmware-solution.introduction
 title: Introduction
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Introduction
   description: In this unit, you learn about a business problem that you can address by using Azure VMware Solution.
-  ms.date: 10/23/2024
+  ms.date: 11/15/2025
   author: Orin-Thomas
   ms.author: orthomas
   ms.topic: unit

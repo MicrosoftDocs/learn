@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.business-impact-copilot-pc.four-key-areas-emphasis
+title: Four key areas emphasis
+metadata:
+  title: Four Key Areas Emphasis
+  description: This content is part of the "Turbocharge business impact with Copilot+ PC" module.
+  ms.date: 08/04/2025
+  author: ozahran7
+  ms.author: v-zahranomar
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-four-key-areas-emphasis.md)]

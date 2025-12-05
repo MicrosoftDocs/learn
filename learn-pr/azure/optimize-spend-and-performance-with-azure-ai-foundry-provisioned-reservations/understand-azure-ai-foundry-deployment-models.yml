@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.optimize-spend-and-performance-with-azure-ai-foundry-provisioned-reservations.understand-azure-ai-foundry-deployment-models
+title: Understand Azure AI Foundry deployment models
+metadata:
+  title: Understand Azure AI Foundry deployment models
+  description: Provide a description of the various Azure AI Foundry deployment models.
+  ms.date: 08/01/2025
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/understand-azure-ai-foundry-deployment-models.md)]

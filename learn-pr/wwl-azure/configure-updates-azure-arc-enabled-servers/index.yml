@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.configure-updates-azure-arc-enabled-servers
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Configure updates of Azure Arc-enabled servers by using Azure Update Manager
   description: "Update Manager  is a unified service that helps manage and govern updates for all your machines. It allows you to monitor Windows and Linux update compliance across Azure and on-premises from a single dashboard."
   ms.date: 06/13/2024
@@ -43,4 +41,4 @@ units:
 - learn.wwl.configure-updates-azure-arc-enabled-servers.knowledge-check
 - learn.wwl.configure-updates-azure-arc-enabled-servers.summary
 badge:
-  uid: learn.wwl.configure-updates-azure-arc-enabled-servers.badge
+  uid: learn.wwl.configure-updates-azure-arc-enabled-servers.badge

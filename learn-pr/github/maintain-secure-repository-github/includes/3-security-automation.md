@@ -14,7 +14,7 @@ For the list of supported dependency manifests, see [About the dependency graph]
 
 ### Dependabot alerts
 
-Even with a visual dependency graph, it can still be overwhelming to stay on top of the latest security considerations for every dependency a project has. To reduce this overhead, GitHub provides [Dependabot alerts](https://docs.github.com/code-security/dependabot/dependabot-alerts/about-dependabot-alerts#dependabot-alerts-for-vulnerable-dependencies) that watch your dependency graphs for you. It then cross-references target versions with versions on known vulnerability lists. When a risk is discovered, the project is alerted. Input for the analysis comes from [GitHub Security Advisories](https://docs.github.com/code-security/security-advisories/working-with-repository-security-advisories/about-repository-security-advisories#dependabot-alerts-for-published-security-advisories).
+Even with a visual dependency graph, it can still be overwhelming to stay on top of the latest security considerations for every dependency a project has. To reduce this overhead, GitHub provides [Dependabot alerts](https://docs.github.com/code-security/dependabot/dependabot-alerts/about-dependabot-alerts) that watch your dependency graphs for you. It then cross-references target versions with versions on known vulnerability lists. When a risk is discovered, the project is alerted. Input for the analysis comes from [GitHub Security Advisories](https://docs.github.com/code-security/security-advisories/working-with-repository-security-advisories/about-repository-security-advisories#dependabot-alerts-for-published-security-advisories).
 
 ![Screenshot of Dependabot alerts for vulnerable dependencies.](../media/2-dependency-alert.png)
 
@@ -34,7 +34,7 @@ You can enable code-scanning alerts and workflows in the security tab of a GitHu
 
 :::image type="content" source="../media/security-overview.png" alt-text="Screenshot of a list of policies, advisories, and alerts with links to more information.":::
 
-Learn more about [Code scanning and CodeQL](https://docs.github.com/code-security/code-scanning/introduction-to-code-scanning/about-code-scanning#about-code-scanning).
+Learn more about [Code scanning and CodeQL](https://docs.github.com/code-security/code-scanning/introduction-to-code-scanning/about-code-scanning).
 
 ### Secret scanning
 
@@ -42,4 +42,4 @@ Another automated scanning feature within a GitHub repository is secret scanning
 
 When secret scanning detects a set of credentials, GitHub notifies the service provider who issued the secret. The service provider validates the credential. Then, it decides whether they should revoke the secret, issue a new secret, or reach out to you directly. The action depends on the associated risks to you or the service provider.
 
-Learn more about [Secret scanning for public and private repositories](https://docs.github.com/code-security/secret-scanning/about-secret-scanning).
+Learn more about [Secret scanning for public and private repositories](https://docs.github.com/code-security/secret-scanning/introduction/about-secret-scanning).

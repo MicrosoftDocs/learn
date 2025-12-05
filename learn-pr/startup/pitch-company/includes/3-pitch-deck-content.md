@@ -12,7 +12,7 @@ The following outline contains a checklist of key topics that most investors wan
 
 ## Investor pitch deck outline
 
-Use your own judgment, and be sure to address the points that are most relevant for your startup.
+Use your own judgment and be sure to address the points that are most relevant for your startup.
 
 ### Company overview
 
@@ -115,11 +115,11 @@ Use your own judgment, and be sure to address the points that are most relevant 
 
 ### Backup slides
 
-- Produce any slides that address topics you predict are likely to come up as questions, such as financial forecasts, or in-depth competitor analyses.
+- Produce any slides that address topics you predict are likely to come up as questions, such as financial forecasts or in-depth competitor analyses.
 
 ## Task: Create a rough investor pitch deck
 
-Create a rough investor pitch deck by following the preceding outline. This exercise is useful even if you're a long way from being ready to pitch investors. It can help you to think through and articulate the key elements of your business. By sharing the pitch deck with others, such as mentors, you can get valuable feedback and sanity-check your thinking.
+Create a rough investor pitch deck by following the preceding outline. This exercise is useful even if you're a long way from being ready to pitch investors. It can help you to think through and articulate the key elements of your business. By sharing the pitch deck with others, such as mentors, you can get valuable feedback and sanity check your thinking.
 
 > [!TIP]
 > Create the structure of your presentation first, using bullet points to list the key takeaway messages. Next, fill in second-order points or supporting information. When you're happy with the structure, create some PowerPoint slides to match it, rather than the other way around. This approach leads to a much more coherent and naturally flowing presentation.

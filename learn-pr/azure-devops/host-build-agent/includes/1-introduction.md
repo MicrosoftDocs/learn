@@ -17,9 +17,7 @@ After completing this module, you'll be able to:
 
 The modules in this learning path form a progression.
 
-To follow the progression from the beginning, be sure to first complete the [Get started with Azure DevOps](../../../paths/evolve-your-devops-practices/index.yml?azure-portal=true) learning path.
-
-We also recommend you start at the beginning of this learning path, [Build applications with Azure DevOps](../../../paths/build-applications-with-azure-devops/index.yml?azure-portal=true).
+We recommend you start at the beginning of this learning path, [Build applications with Azure DevOps](../../../paths/build-applications-with-azure-devops/index.yml?azure-portal=true).
 
 If you want to go through just this module, you need to set up a development environment on your Windows, macOS, or Linux system. You need:
 
@@ -27,7 +25,7 @@ If you want to go through just this module, you need to set up a development env
 - An Azure subscription
 - A [GitHub](https://github.com/join?azure-portal=true) account
 - [Visual Studio Code](https://code.visualstudio.com?azure-portal=true)
-- [.NET 6.0 SDK](https://dotnet.microsoft.com/download/dotnet/6.0?azure-portal=true)
+- [.NET 8.0 SDK](https://dotnet.microsoft.com/download/dotnet/8.0?azure-portal=true)
 - [Git](https://git-scm.com/downloads?azure-portal=true)
 
 You can get started with Azure DevOps for free.

@@ -2,8 +2,6 @@
 uid: learn.wwl.configure-manage-postgresql.exercise-configure-system-parameter-explore-metadata
 title: Exercise - Configure system parameters and explore metadata with system catalogs and views
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Configure system parameters and explore metadata with system catalogs and views
   description: "Exercise - Configure system parameters and explore metadata with system catalogs and views."
   ms.date: 05/10/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 30
 content: |
-  [!include[](includes/6-exercise-configure-system-parameter-explore-metadata.md)]
+  [!include[](includes/6-exercise-configure-system-parameter-explore-metadata.md)]

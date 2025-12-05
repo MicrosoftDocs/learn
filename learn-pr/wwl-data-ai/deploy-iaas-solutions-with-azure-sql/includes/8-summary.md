@@ -6,3 +6,4 @@ Now that you've reviewed this module, you should be able to:
 - Learn how hybrid scenario works
 - Explore performance and security options available
 - Understand the high availability and disaster recovery options
+

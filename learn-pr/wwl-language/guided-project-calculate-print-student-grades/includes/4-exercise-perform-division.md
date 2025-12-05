@@ -4,7 +4,7 @@ In this exercise, you'll calculate and store the average of the assignment score
 
 In this task, you'll create a variable for each student that can be used to store the average score for their graded assignments.
 
-1. In the .NET Editor, locate the `Console.WriteLine()` statements that are used to display each student's summed scores.
+1. In the [C# Code Editor](https://microsoftlearning.github.io/c-sharp-minor?azure-portal=true), locate the `Console.WriteLine()` statements that are used to display each student's summed scores.
 
 1. Create a blank code line above the `Console.WriteLine()` statements.
 
@@ -96,7 +96,7 @@ In this task, you'll create a variable for each student that can be used to stor
 
     The next step is to include a letter grade for each student based on their total score. Adding the letter grade to the displayed output will be a manual process. 
 
-1. To determine the value of each student's current grade, select **Run**.
+1. To determine the value of each student's current grade, select the ▶️ Run button.
 
     Use the current grade for each student to determine the appropriate letter grade, rounding up or down as necessary.
 
@@ -158,7 +158,7 @@ In this task, you'll run the code and verify that the output is correct.
     Console.WriteLine("Jeong: " + jeongScore + " A");
     ```
 
-1. To run your code and display the student scores with letter grades, select **Run**.
+1. To run your code and display the student scores with letter grades, select the ▶️ Run button.
 
 1. To verify that your code is working as expected, compare the output of your application with the following output:
 

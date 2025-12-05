@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-ninja-safeguard-remote-work.knowledge-check
+title: Module assessment
+metadata:
+  title: Module Assessment
+  description: "Knowledge check."
+  ms.date: 08/21/2025
+  author: sachow
+  ms.author: sachow
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which of these is a primary function of Microsoft Purview Endpoint Data Loss Prevention (DLP) in remote work environments?"
+    choices:
+    - content: "Encrypting all data on the device automatically"
+      isCorrect: false
+    - content: "Blocking all internet access for remote workers"
+      isCorrect: false
+    - content: "Monitoring and controlling endpoint data transfers to prevent unauthorized sharing"
+      isCorrect: true
+
+  - content: "To prevent screenshots of sensitive files, which configuration should be used?"
+    choices:
+    - content: "Assign a sensitivity label that prevents printing"
+      isCorrect: true
+    - content: "Restrict browser access to Microsoft Edge only"
+      isCorrect: false
+    - content: "Enable always-on diagnostics"
+      isCorrect: false
+
+  - content: "Which activity is restricted by endpoint DLP when users attempt it from unmanaged browsers?"
+    choices:
+    - content: "Uploading files to restricted cloud services"
+      isCorrect: true
+    - content: "Copying files to removable USB devices"
+      isCorrect: false
+    - content: "Printing sensitive documents"
+      isCorrect: false
+
+  - content: "Which ongoing practices are recommended for effective Endpoint DLP management in remote work scenarios?"
+    choices:
+    - content: "Monitor activity, investigate incidents, educate users, regularly update policies, and gather feedback"
+      isCorrect: true
+    - content: "Disable all user accounts monthly"
+      isCorrect: false
+    - content: "Allow unrestricted file sharing for better workflow"
+      isCorrect: false

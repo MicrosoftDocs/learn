@@ -1,0 +1,42 @@
+### YamlMime:LearningPath
+uid: learn.maximize-cost-efficiency-ai-agents
+metadata:
+  title: Maximize the Cost Efficiency of AI Agents on Azure
+  description:  Maximize the ROI of AI agent investments by making cost-conscious, informed decisions at every stage. This learning path offers actionable guidance, from identifying high-impact use cases and understanding cost drivers, to forecasting ROI, adopting best practices, designing scalable and effective architectures, and optimizing ongoing investments.  
+  ms.date: 11/01/2025
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: learning-path
+title: Maximize the Cost Efficiency of AI Agents on Azure
+summary: |
+  Maximize the ROI of AI agent investments by making cost-conscious, informed decisions at every stage. This learning path offers actionable guidance, from identifying high-impact use cases and understanding cost drivers, to forecasting ROI, adopting best practices, designing scalable and effective architectures, and optimizing ongoing investments.  
+
+  Whether you're just beginning your AI journey or scaling enterprise adoption, you find practical strategies to build, deploy, and manage AI agents on Azure with confidence. Align innovation with financial discipline to ensure your AI initiatives deliver sustainable value and long-term success. 
+prerequisites: Before starting this module, you should have a basic understanding of AI and large language models (LLMs) and be familiar with cloud platforms and software lifecycle concepts. 
+iconUrl: /training/achievements/maximize-cost-efficiency-ai-agents.svg
+levels:
+- beginner
+- intermediate
+roles:
+- developer
+- administrator
+- solution-architect
+- ai-engineer
+- business-analyst
+- business-user
+- technology-manager
+products:
+- azure
+- azure-ai-foundry
+- azure-monitor
+- microsoft-copilot-studio
+modules:
+- learn.identify-ai-agent-use-case
+- learn.ai-agent-cost-structure
+- learn.forcast-agent-return-investment
+- learn.adopt-ai-agent-best-practice
+- learn.maximize-cost-efficiency-ai-agent-development
+- learn.architect-scalable-t-solutions
+- learn.manage-optimize-agent-investment-azure
+trophy:
+  uid: learn.maximize-cost-efficiency-ai-agents.trophy

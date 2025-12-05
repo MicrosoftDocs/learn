@@ -1,8 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.publish-static-web-app-and-api-dotnet.5-fallback-routes
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Configure fallback routes
   description: Configure fallback routes
   ms.date: 03/04/2025
@@ -18,4 +16,4 @@ title: Configure fallback routes
 durationInMinutes: 2
 content: |
   [!include[](includes/5-fallback-routes.md)]
-
+

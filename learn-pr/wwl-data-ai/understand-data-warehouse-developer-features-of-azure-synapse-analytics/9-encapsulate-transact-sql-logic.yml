@@ -2,8 +2,6 @@
 uid: learn.wwl.understand-data-warehouse-developer-features-of-azure-synapse-analytics.encapsulate-transact-sql-logic-with-stored-procedures
 title: Encapsulate transact-SQL logic with stored procedures
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Encapsulate transact-SQL logic with stored procedures
   description: "Encapsulate transact-SQL logic with stored procedures"
   ms.date: 06/23/2022
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 6
 content: |
-  [!include[](includes/9-encapsulate-transact-sql-logic.md)]
+  [!include[](includes/9-encapsulate-transact-sql-logic.md)]

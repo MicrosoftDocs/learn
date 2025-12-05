@@ -6,7 +6,7 @@ metadata:
   description: Build an Azure function that's triggered by a queue message.
   author: softchris
   ms.author: chnoring
-  ms.date: 07/12/2021
+  ms.date: 09/05/2025
   ms.topic: unit
   ms.custom: team=nextgen
 durationInMinutes: 5

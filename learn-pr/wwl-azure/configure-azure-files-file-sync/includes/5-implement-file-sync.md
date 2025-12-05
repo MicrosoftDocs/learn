@@ -6,7 +6,7 @@ Azure Files offers [soft delete for file shares](/azure/storage/files/storage-fi
 
 Let's take a look at the characteristics of soft delete for Azure Files. 
 
-- Soft delete for file shares is enabled at the file share level. 
+- Soft delete for file shares is enabled at the storage account level.
 
 - Soft delete transitions content to a soft deleted state instead of being permanently erased.
 

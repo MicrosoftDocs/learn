@@ -1,4 +1,4 @@
-Promptbooks in Microsoft Copilot for Security are prebuilt collections of prompts designed to accomplish specific security tasks. They automate repetitive steps for tasks like incident response or investigations, requiring specific inputs such as a code snippet or threat actor name. By incorporating promptbooks, you can streamline your security operations and generate detailed reports quickly.
+Promptbooks in Microsoft Security Copilot are prebuilt collections of prompts designed to accomplish specific security tasks. They automate repetitive steps for tasks like incident response or investigations, requiring specific inputs such as a code snippet or threat actor name. By incorporating promptbooks, you can streamline your security operations and generate detailed reports quickly.
 
 ### How to Use Promptbooks
 
@@ -30,4 +30,4 @@ Promptbooks in Microsoft Copilot for Security are prebuilt collections of prompt
 
 Access all promptbooks in the Promptbook Library by selecting it from the Copilot menu or home page. You can search, filter, and view details about each promptbook, including descriptions, owners, required plugins, and tags. 
 
-For more information, visit the [Microsoft Copilot for Security documentation](/copilot/security/using-promptbooks).
+For more information, visit the [Microsoft Security Copilot documentation](/copilot/security/using-promptbooks).

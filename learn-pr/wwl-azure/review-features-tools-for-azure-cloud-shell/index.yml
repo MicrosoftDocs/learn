@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.review-features-tools-for-azure-cloud-shell
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Review the features and tools for Azure Cloud Shell
   description: "This module covers Azure Cloud Shell and its features."
   ms.date: 10/20/2022
@@ -51,4 +49,4 @@ units:
 - learn.wwl.review-features-tools-for-azure-cloud-shell.summary
 badge:
   uid: learn.wwl.review-features-tools-for-azure-cloud-shell.badge
-
+

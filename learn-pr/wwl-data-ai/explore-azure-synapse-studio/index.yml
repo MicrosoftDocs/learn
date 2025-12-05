@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.explore-azure-synapse-studio
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Explore Azure Synapse Studio
   description: "Explore Azure Synapse Studio"
   ms.date: 08/18/2022
@@ -45,4 +43,4 @@ units:
 - learn.wwl.explore-azure-synapse-studio.summary
 badge:
   uid: learn.wwl.explore-azure-synapse-studio.badge
-
+

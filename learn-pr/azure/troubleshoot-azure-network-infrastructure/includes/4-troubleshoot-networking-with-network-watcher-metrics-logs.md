@@ -2,13 +2,13 @@ If you want to diagnose a problem quickly, you have to understand the informatio
 
 In your engineering company, you want to minimize the time it takes for your staff to diagnose and resolve any network configuration problem. You want to ensure they know which information is available in which logs.
 
-In this module, you'll focus on flow logs, diagnostic logs, and traffic analytics. You'll learn how these tools can help to troubleshoot the Azure network.
+In this module, you focus on flow logs, diagnostic logs, and traffic analytics, learning how these tools can help to troubleshoot the Azure network.
 
 ## Usage and quotas
 
 You can use each Microsoft Azure resource up to its quota. Each subscription has separate quotas, and usage is tracked per subscription. Only one instance of Network Watcher is required per subscription per region. This instance gives you a view of usage and quotas so that you can see if you're at risk of hitting a quota.
 
-To view the usage and quota information, go to **All Services** > **Networking** > **Network Watcher**, and then select **Usage and quotas**. You'll see granular data based on usage and resource location. Data for the following metrics is captured:
+To view the usage and quota information, go to **All Services** > **Networking** > **Network Watcher**, and then select **Usage and quotas**. Here, you see granular data based on usage and resource location. Data for the following metrics is captured:
 
 - Network interfaces
 - Network security groups (NSGs)
@@ -21,7 +21,7 @@ Here's an example that shows usage and quotas in the portal:
 
 ## Logs
 
-Network diagnostic logs provide granular data. You'll use this data to understand connectivity and performance issues better. There are three log display tools in Network Watcher:
+Network diagnostic logs provide granular data that allow you to better understand connectivity and performance issues. There are three log display tools in Network Watcher:
 
 - NSG Flow logs
 - Diagnostic logs
@@ -59,7 +59,7 @@ You can also use open-source tools to analyze your logs, such as Elastic Stack, 
 
 ### Diagnostic logs
 
-In Network Watcher, diagnostic logs are a central place to enable and disable logs for Azure network resources. These resources might include NSGs, public IPs, load balancers, and app gateways. After you've enabled the logs that interest you, you can use the tools to query and view log entries.
+In Network Watcher, diagnostic logs are a central place to enable and disable logs for Azure network resources. These resources might include NSGs, public IPs, load balancers, and app gateways. After you enable the logs that interest you, you can use the tools to query and view log entries.
 
 You can import diagnostic logs into Power BI and other tools to analyze them.
 
@@ -67,7 +67,7 @@ You can import diagnostic logs into Power BI and other tools to analyze them.
 
 To investigate user and app activity across your cloud networks, use traffic analytics.
 
-The tool gives insights into network activity across subscriptions. You can diagnose security threats such as open ports, VMs communicating with known bad networks, and traffic flow patterns. Traffic analytics analyzes NSG flow logs across Azure regions and subscriptions. You can use the data to optimize network performance.
+The tool gives insights into network activity across subscriptions. You can diagnose security threats such as open ports, virtual machines (VMs) communicating with known bad networks, and traffic flow patterns. Traffic analytics analyzes NSG flow logs across Azure regions and subscriptions. You can use the data to optimize network performance.
 
 This tool requires Log Analytics. The Log Analytics workspace must exist in a supported region.
 
@@ -89,7 +89,7 @@ First, check that the VM size is appropriate for the job. Next, enable Azure Dia
 
 Let's assume you have a VM that has been running fine. However, the VM's performance has recently degraded. To identify if you have any resource bottlenecks, you need to review the captured data.
 
-Start with a time range of captured data before, during, and after the reported problem to get an accurate view of performance. These graphs can also be useful for cross-referencing different resource behaviors in the same period. You'll check for:
+Start with a time range of captured data before, during, and after the reported problem to get an accurate view of performance. These graphs can also be useful for cross-referencing different resource behaviors in the same period. You check for:
 
 - CPU bottlenecks
 - Memory bottlenecks
@@ -113,15 +113,15 @@ If you scale up the VM and the CPU is still running at above 95 percent, is app 
 
 #### Memory bottlenecks
 
-You can view the amount of memory that the VM uses. Logs will help you understand the trend and if it maps to the time at which you see issues. You shouldn't have less than 100 MB of available memory at any time. Watch out for the following trends:
+You can view the amount of memory that the VM uses. Logs can help you understand the trend and if it maps to the time at which you see issues. You shouldn't have less than 100 MB of available memory at any time. Watch out for the following trends:
 
-- **Spike up and constant consumption**. High memory utilization might not be the cause of bad performance. Some apps, such as relational database engines, are memory intensive by design. But if there are multiple memory-hungry apps, you might see bad performance because memory contention causes trimming and paging to disk. These processes will cause a negative performance impact.
+- **Spike up and constant consumption**. High memory utilization might not be the cause of bad performance. Some apps, such as relational database engines, are memory intensive by design. But if there are multiple memory-hungry apps, you might see bad performance because memory contention causes trimming and paging to disk. These processes cause a negative performance impact.
 - **Steadily increasing consumption**. This trend might be an app *warming up*. It's common when database engines start up. However, it might also be a sign of a memory leak in an app. 
 - **Page or swap file usage**. Check if you're using the Windows page file heavily, or the Linux swap file, located in /dev/sdb.
 
 To resolve high memory utilization, consider these solutions:
 
-- For immediate relief or page file usage, increase the size of the VM to add memory, and then monitor.
+- Increase the size of the VM to add memory, and then monitor. For immediate relief or excess page file usage.
 - Investigate the issue further. Locate the app or process causing the bottleneck and troubleshoot it. If you know the app, see if you can cap the memory allocation.
 
 #### Disk bottlenecks
@@ -129,7 +129,7 @@ To resolve high memory utilization, consider these solutions:
 Network performance might also be related to the storage subsystem of the VM. You can investigate the storage account for the VM in the portal. To identify issues with storage, look at performance metrics from the storage account diagnostics and the VM diagnostics. Look for key trends when the issues occur within a particular time range.
 
 - To check for Azure Storage timeout, use the metrics **ClientTimeOutError**, **ServerTimeOutError**, **AverageE2ELatency**, **AverageServerLatency**, and **TotalRequests**. If you see values in the **TimeOutError** metrics, an I/O operation took too long and timed out. If you see **AverageServerLatency** increase at the same time as **TimeOutErrors**, it might be a platform issue. Raise a case with Microsoft technical support.
-- To check for Azure Storage throttling, use the storage account metric **ThrottlingError**. If you see throttling, you're hitting the IOPS limit of the account. You can check this problem by investigating the metric **TotalRequests**.
+- To check for Azure Storage throttling, use the storage account metric **ThrottlingError**. If you see throttling, you're hitting the input/output operations per second (IOPS) limit of the account. You can check this problem by investigating the metric **TotalRequests**.
 
 To remediate high disk utilization and latency issues:
 
@@ -138,13 +138,13 @@ To remediate high disk utilization and latency issues:
 
 #### Virtual machine firewall rules that block traffic
 
-To troubleshoot an NSG flow issue, use the Network Watcher IP flow verify tool and NSG flow logging to determine whether an NSG or User Defined Routing (UDR) is interfering with traffic flow.
+To troubleshoot an NSG flow issue, use the Network Watcher tool IP flow verify and NSG flow logging, to determine whether an NSG or User Defined Routing (UDR) is interfering with traffic flow.
 
 Run IP flow verify, and specify the local VM and the remote VM. After you select **Check**, Azure runs a logical test on rules in place. If the result is that access is allowed, use NSG flow logs.
 
 In the portal, go to the NSGs. Under the flow log settings, select **On**. Now try to connect to the VM again. Use Network Watcher traffic analytics to visualize the data. If the result is that access is allowed, there's no NSG rule in the way.
 
-If you've reached this point and still haven't diagnosed the problem, there might be something wrong on the remote VM. Disable the firewall on the remote VM, and then retest connectivity. If you can connect to the remote VM with the firewall disabled, verify the remote firewall settings. Then re-enable the firewall.
+If you reach this point and the problem still isn't diagnosed, there might be something wrong on the remote VM. Disable the firewall on the remote VM, and then retest connectivity. If you can connect to the remote VM with the firewall disabled, verify the remote firewall settings. Then re-enable the firewall.
 
 #### Inability of the front end and back end subnets to communicate
 
@@ -152,4 +152,4 @@ By default, all subnets can communicate in Azure. If two VMs on two subnets can'
 
 If the result is an NSG on the back end subnet blocking all communication, reconfigure that NSG. For security purposes, you must block some communication with the front end because the front end is exposed to the public internet.
 
-By blocking communication to the back end, you limit the amount of exposure in the event of a malware or security attack. However, if the NSG blocks everything, then it's incorrectly configured. Enable the specific protocols and ports that are required.
+By blocking communication to the back end, you limit the amount of exposure if there's a malware or security attack. However, if the NSG blocks everything, then its configuration isn't correct. Enable the specific protocols and ports that are required.

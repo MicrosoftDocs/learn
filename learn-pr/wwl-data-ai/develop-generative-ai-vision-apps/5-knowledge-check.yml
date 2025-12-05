@@ -1,0 +1,48 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.develop-generative-ai-vision-apps.knowledge-check
+title: Module assessment
+metadata:
+  title: Module assessment
+  description: "Check your learning on vision-enabled generative AI."
+  ms.date: 04/29/2025
+  author: gmalc
+  ms.author: gmalc
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+quiz:
+  questions:
+  - content: "Which kind of model can you use to respond to visual input?"
+    choices:
+    - content: "Only OpenAI GPT models"
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "Embedding models"
+      isCorrect: false
+      explanation: Incorrect."
+    - content: "Multimodal models"
+      isCorrect: true
+      explanation: "Correct."
+  - content: "How can you submit a prompt that asks a model to analyze an image?"
+    choices:
+    - content: "Submit one prompt with an image-based message followed by another prompt with a text-based message."
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "Submit a prompt that contains a multi-part user message, containing both text content and image content."
+      isCorrect: true
+      explanation: "Correct."
+    - content: "Submit the image as the system message and the instruction or question as the user message."
+      isCorrect: false
+      explanation: "Incorrect."
+  - content: "How can you include an image in a message?"
+    choices:
+    - content: "As a URL or as binary data"
+      isCorrect: true
+      explanation: "Correct."
+    - content: "Only as a URL"
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "Only as binary data"
+      isCorrect: false
+      explanation: "Incorrect."
+

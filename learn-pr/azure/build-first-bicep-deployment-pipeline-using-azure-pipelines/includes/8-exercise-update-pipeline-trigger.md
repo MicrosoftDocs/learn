@@ -1,4 +1,4 @@
-A colleague asks you to turn on the App Service Always On feature on the company website, so the website app is always running.
+A colleague asks you to turn on the App Service Always On feature on the company website so the website app is always running.
 
 In this exercise, you'll update the pipeline you created to run automatically whenever a file changes on your _main_ branch. You'll use the updated pipeline to deploy the requested configuration change to the website.
 

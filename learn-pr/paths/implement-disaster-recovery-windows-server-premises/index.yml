@@ -36,7 +36,6 @@ modules:
 - learn.wwl.implement-hyper-v-replica
 - learn.wwl.implement-hybrid-backup-recovery-with-windows-server-iaas
 - learn.protect-on-premises-infrastructure-with-azure-site-recovery
-- learn.protect-infrastructure-with-azure-site-recovery
 - learn.protect-virtual-machines-with-azure-backup
 trophy:
   uid: learn.wwl.implement-disaster-recovery-windows-server-premises.trophy

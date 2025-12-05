@@ -2,13 +2,11 @@
 uid: learn.api-management.token
 title: Token management
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Token management
   description: This unit describes how to apply policies to manage tokens in Azure API Management service.
-  author: dlepow
-  ms.author: danlep
-  manager: susanpotter
+  author: softchris
+  ms.author: chnoring
+  manager:
   ms.date: 06/30/2024
   ms.topic: unit
 durationInMinutes: 5

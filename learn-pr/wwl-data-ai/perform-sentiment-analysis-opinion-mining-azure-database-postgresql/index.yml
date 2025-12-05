@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn-wwl.perform-sentiment-analysis-opinion-mining-azure-database-postgresql
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Perform sentiment analysis and opinion mining with Azure Database for PostgreSQL
   description: Learn how to perform sentiment analysis and opinion mining with Azure Database for PostgreSQL.
   author: wwlpublish
@@ -15,7 +13,7 @@ metadata:
     - wwl-ai-copilot
   ai-usage: ai-assisted
 title: Perform sentiment analysis and opinion mining with Azure Database for PostgreSQL
-summary: This module will explore how Azure AI Services and the Azure AI extension for Azure Database for PostgreSQL - Flexible Server enable sentiment analysis and opinion mining to extract valuable insights from textual data.
+summary: This module will explore how Foundry Tools and the Azure AI extension for Azure Database for PostgreSQL - Flexible Server enable sentiment analysis and opinion mining to extract valuable insights from textual data.
 abstract: |
   -   Explore the fundamentals of sentiment analysis and how it can be leveraged to gain insights into user sentiments and emotions.
 

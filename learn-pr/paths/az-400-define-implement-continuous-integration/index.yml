@@ -28,16 +28,12 @@ products:
 subjects:
 - data-engineering
 modules:
-- learn.azdo.create-a-build-pipeline
-- learn.azdo.run-quality-tests-build-pipeline
 - learn.azdo.manage-build-dependencies
 - learn.azdo.host-build-agent
-- learn.azdo.create-release-pipeline
 - learn.azdo.create-multi-stage-pipeline
 - learn.azdo.run-functional-tests-azure-pipelines
 - learn.azdo.run-non-functional-tests-azure-pipelines
 - learn.azdo.manage-release-cadence
-- learn.azure.protect-vm-settings-with-dsc
 - learn.github.github-actions-ci
 trophy:
   uid: az-400-define-implement-continuous-integration.trophy

@@ -1,0 +1,25 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-database.postgresql.basic-sql-join-tables.left-right-join
+title: LEFT and RIGHT JOIN
+metadata:
+  title: LEFT and RIGHT JOIN
+  description: "This unit explains how to use LEFT JOIN and RIGHT JOIN in PostgreSQL to combine data from multiple tables while preserving unmatched rows. It demonstrates how LEFT JOIN retains all rows from the first table and how RIGHT JOIN retains all rows from the second table, using examples from the sales database to highlight their practical use."
+  ms.date: 05/14/2025
+  author: milenak
+  ms.author: mpopovic
+  ms.topic: unit
+###########################################################################
+###
+### If your content is related to a product or service, apply one value from
+### the ms.service allowlist.
+###
+### If your content isn't about a product or service, you can omit the ms.service field.
+###
+### For the list of approved ms.service values, go to
+### https://review.learn.microsoft.com/help/platform/metadata-taxonomies?branch=main#msservice.
+###
+### To request new values, go to
+### https://review.learn.microsoft.com/help/platform/metadata-reporting-taxonomy-requests?branch=main.
+durationInMinutes: 4
+content: |
+  [!include[](includes/4-left-right-join.md)]

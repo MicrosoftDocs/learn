@@ -4,8 +4,8 @@ metadata:
   title: Optimize Azure costs with data analysis in Power BI
   description: Use Power BI to understand where your money is being spent in Azure so you can help your organization to optimize its costs.
   ms.date: 11/11/2024
-  author: bandersmsft
-  ms.author: banders
+  author: tonyafehr
+  ms.author: tfehr
   ms.topic: module
   ms.service: cost-management-billing
 title: Optimize Azure costs with data analysis in Power BI

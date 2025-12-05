@@ -2,8 +2,6 @@
 uid: learn.wwl.microsoft-azure-data-engineering-academic-programs.explore-best-practices-for-module-6
 title: Explore best practices for module 6
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Explore best practices for module 6
   description: "Explore best practices for module 6"
   ms.date: 06/02/2023
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 15
 content: |
-  [!include[](includes/9-explore-best-practices-for-module-6.md)]
+  [!include[](includes/9-explore-best-practices-for-module-6.md)]

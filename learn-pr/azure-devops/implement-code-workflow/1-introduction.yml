@@ -2,8 +2,6 @@
 uid: learn.azdo.implement-code-workflow.1-introduction
 title: Introduction
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Introduction
   description: See what you'll learn and set up your development environment.
   ms.date: 1/21/2025
@@ -14,4 +12,4 @@ metadata:
 durationInMinutes: 2
 content: |
   [!include[](includes/1-introduction.md)]
-
+

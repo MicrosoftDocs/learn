@@ -2,8 +2,6 @@
 uid: learn.improve-sign-in-security-authenticator.exercise.prepare-azure-ad-environment 
 title: Practice preparing your Microsoft Entra environment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: exercise
   title: Practice preparing your Microsoft Entra environment
   description: "Enable remote employees for Microsoft Authenticator and enable a registration campaign to nudge them to set up Microsoft Authenticator when they sign in."
@@ -14,4 +12,4 @@ metadata:
 durationInMinutes: 10
 content: |
   [!include[](includes/3-exercise.md)]
-
+

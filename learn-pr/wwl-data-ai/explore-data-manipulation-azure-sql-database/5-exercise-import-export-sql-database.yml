@@ -1,12 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn-wwl.explore-data-manipulation-azure-sql-database.exercise-import-export-sql-database
-title: 'Exercise: Develop a Data API for Azure SQL Database'
+title: 'Exercise: Import and export data for development in Azure SQL Database'
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: 'Exercise: Develop a Data API for Azure SQL Database'
-  description: "Learn how to develop and deploy a data API for an Azure SQL Database using Azure Static Web Apps."
-  ms.date: 10/1/2024
+  title: 'Exercise: Import and export data for development in Azure SQL Database'
+  description: "Learn how to import and export data for development in Azure SQL Database."
+  ms.date: 5/15/2025
   author: jupadrao
   ms.author: jupadrao
   ms.topic: unit

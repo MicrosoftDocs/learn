@@ -2,8 +2,6 @@
 uid: learn.azdo.manage-build-dependencies.2-plan-build-dependencies-for-your-pipeline
 title: Plan build dependencies for your pipeline
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Plan build dependencies for your pipeline
   description: Share code by using packages and consume the packages in your pipeline
   ms.custom: devdivchpfy22
@@ -39,4 +37,4 @@ quiz:
     - content: "Behind your firewall."
       isCorrect: false
       explanation: "Others won't be able to access packages behind your firewall."
-
+

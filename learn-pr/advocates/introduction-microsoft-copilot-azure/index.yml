@@ -1,0 +1,39 @@
+### YamlMime:Module
+uid: learn.introduction-microsoft-copilot-azure
+metadata:
+  ms.author: viniap
+  author: Orin-Thomas
+  ms.date: 07/03/2025
+  ms.update-cycle: 180-days
+  title: Introduction to Microsoft Copilot in Azure
+  description: Learn how to use Microsoft Copilot in Azure to perform operations tasks, manage access, and enhance productivity.
+  ms.topic: module
+  ms.service: copilot-for-azure
+  ms.collection: ce-advocates-ai-copilot
+title: Introduction to Microsoft Copilot in Azure
+summary: Learn about the functionality of Microsoft Copilot in Azure, including how to access it, perform operations tasks, and manage access.
+abstract: |
+  By the end of this module, you'll be able to:
+  -	Describe Microsoft Copilot in Azure and the functionality it provides.
+  -	Determine whether Microsoft Copilot in Azure meets the needs of your organization.
+  -	Recognize how to use Microsoft Copilot in Azure and its usage with other Azure services.
+prerequisites: |
+  To get the best learning experience from this module, you should have knowledge and experience of:
+  -	Microsoft Azure and cloud services
+  -	AI concepts
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- developer
+products:
+- azure
+units:
+- learn.introduction-microsoft-copilot-azure.introduction-microsoft-copilot-azure
+- learn.introduction-microsoft-copilot-azure.access-microsoft-copilot-azure
+- learn.introduction-microsoft-copilot-azure.perform-operations-tasks-copilot-azure
+- learn.introduction-microsoft-copilot-azure.managing-access-copilot-azure
+- learn.introduction-microsoft-copilot-azure.knowledge-check
+- learn.introduction-microsoft-copilot-azure.summary
+badge:
+  uid: learn.introduction-microsoft-copilot-azure-badge

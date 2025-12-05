@@ -1,32 +1,31 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.query-data-kql-database-microsoft-fabric.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  hidden_question_numbers: ["D436630C_14","D436630C_34","D436630C_55","D436630C_75","D436630C_79","D436630C_83","D436630C_132","D436630C_140","D436630C_144","D436630C_164","D436630C_168","D436630C_172"]
+  ai_generated_module_assessment: true
+  title: Module assessment
   description: "Knowledge check"
-  ms.date: 12/06/2024
-  author: wwlpublish
-  ms.author: gmalc
+  ms.date: 09/10/2025
+  author: theresa-i
+  ms.author: theresai
   ms.topic: unit
-  ms.custom:
-  - N/A
+  module_assessment: true
 durationInMinutes: 3
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "What is an eventhouse?"
+  - content: "What is an Eventhouse?"
     choices:
     - content: "A table that tracks data load events in a data warehouse."
       isCorrect: false
-      explanation: "Incorrect. An eventhouse isn't a table for tracking data warehouse load events."
+      explanation: "Incorrect. An Eventhouse isn't a table for tracking data warehouse load events."
     - content: "A data store for real-time data in KQL databases."
       isCorrect: true
-      explanation: "Correct. An eventhouse is a data store in Microsoft Fabric in which real-time data is stored in KQL databases."
+      explanation: "Correct. An Eventhouse is a data store in Microsoft Fabric in which real-time data is stored in KQL databases."
     - content: "Another name for a lakehouse in Microsoft Fabric."
       isCorrect: false
-      explanation: "Incorrect. An eventhouse isn't another name for a lakehouse in Microsoft Fabric."
+      explanation: "Incorrect. An Eventhouse isn't another name for a lakehouse in Microsoft Fabric."
   - content: "What is the purpose of using the `project` operator in KQL (Kusto Query Language) queries?"
     choices:
     - content: "To apply aggregations such as `count`, `sum`, and `avg`."
@@ -49,3 +48,4 @@ quiz:
     - content: "Write a custom Python script and save it as a Spark job definition"
       isCorrect: false
       explanation: "Incorrect. A Spark job definition doesn't create a parameterized KQL query."
+   

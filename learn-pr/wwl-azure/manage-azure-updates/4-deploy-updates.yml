@@ -2,8 +2,6 @@
 uid: learn.wwl.manage-azure-updates.deploy-updates
 title: Deploy updates
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Deploy updates
   description: "Deploy updates"
   ms.date: 09/24/2020
@@ -13,4 +11,4 @@ metadata:
 azureSandbox: false
 durationInMinutes: 4
 content: |
-  [!include[](includes/4-deploy-updates.md)]
+  [!include[](includes/4-deploy-updates.md)]

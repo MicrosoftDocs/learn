@@ -1,0 +1,47 @@
+### YamlMime:Module
+uid: learn.github.code-reviews-pull-requests-github-copilot
+title: Leveling up code reviews and pull requests with GitHub Copilot
+metadata:
+  title: Leveling Up Code Reviews and Pull Requests with GitHub Copilot
+  description: This module shows how GitHub Copilot supports code reviews with actionable suggestions, auto-fixes, and custom guidelines, while Premium Request Units (PRUs) unlock advanced review capabilities.
+  author: camihmerhar
+  ms.author: camhernandez
+  ms.date: 09/16/2025
+  ms.update-cycle: 180-days
+  ms.service: github
+  ms.topic: module
+summary: This module introduces how GitHub Copilot enhances code reviews by accelerating review cycles, catching issues, and enforcing best practices.
+
+abstract: |
+  By the end of this module, you'll be able to:
+  - Explain how GitHub Copilot streamlines code reviews and pull requests.
+  - Identify the key features Copilot adds to the review process.
+  - Request and interpret Copilot reviews on GitHub.com and understand their limits.
+  - Run Copilot reviews locally in your IDE and apply custom instructions.
+  - Leverage Premium Request Units (PRUs) for deeper, context-rich analysis.
+  - Automate Copilot reviews across repositories with rulesets and status checks.
+  - Apply Copilot's suggestions responsibly, combining them with human judgment and testing.
+prerequisites: |
+  - A GitHub account 
+  - GitHub Copilot enabled on your account (Copilot Pro, Copilot Pro+, Business, or Enterprise plan recommended for full code review features).
+  - Basic familiarity with pull requests and code reviews-creating a PR, leaving comments, and merging changes.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+  - intermediate
+roles:
+  - devops-engineer
+  - administrator
+  - developer
+  - solution-architect
+products:
+  - github
+units:
+  - learn.github.code-reviews-pull-requests-github-copilot.introduction
+  - learn.github.code-reviews-pull-requests-github-copilot.github-copilot-review-process
+  - learn.github.code-reviews-pull-requests-github-copilot.copilot-reviewer-github
+  - learn.github.code-reviews-pull-requests-github-copilot.issues-early-automated-reviews-copilot
+  - learn.github.code-reviews-pull-requests-github-copilot.impact-optimization-premium-request-units
+  - learn.github.code-reviews-pull-requests-github-copilot.exercise-github-copilot-code-review
+  - learn.github.code-reviews-pull-requests-github-copilot.summary
+badge:
+  uid: learn.github.code-reviews-pull-requests-github-copilot.badge

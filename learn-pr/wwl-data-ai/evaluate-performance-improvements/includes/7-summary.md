@@ -1,11 +1,9 @@
-One of the challenges of the DBA’s role is to evaluate the impact of changes they make to code or data structures on a busy, production system. While tuning a single query in isolation offers easy metrics such as elapsed time or logical reads, making minor tweaks on a busy system may require deeper evaluation. 
+In this module, you learned about monitoring server performance using SQL Server's wait statistics, which include resource waits, queue waits, and external waits. You have also learned how to use system views like `sys.dm_os_wait_stats` and `sys.dm_db_wait_stats` to get an overview of server performance and identify potential issues. The module also covered the use of Dynamic Management Views (DMVs) to understand and correlate performance problems with other database events. Additionally, you learned about common wait types and how the Query Store tracks waits associated with specific queries.
 
-Azure SQL is a deeply instrumented software and allows for monitoring at several levels.
+The main takeaways from this module include understanding how to tune T-SQL queries by evaluating and adjusting your indexing strategy. You learned that proper indexing can reduce IOs, improve memory utilization, and ease pressure on IO and storage systems. The module also discussed the importance of column order in indexes and the use of resumable index for large tables. Furthermore, you learned about query hints and their potential impact on database structure and performance. Lastly, the module covered how to optimize Azure SQL performance by identifying whether a performance issue is due to high CPU usage or waiting on a resource, and using appropriate tools and methods to diagnose and resolve these issues.
 
-## Learning objectives:
+## Additional Reading
 
-Now that you've reviewed this module, you should be able to:
-
-- Describe wait statistics
-- Understand important aspects when tuning indexes
-- Explore when to use query hints
+- [Optimizing Azure SQL Performance](/en-us/azure/azure-sql/database/performance-guidance)
+- [Best practices for managing the Query Store](/en-us/sql/relational-databases/performance/manage-the-query-store)
+- [Clustered and nonclustered indexes](/en-us/sql/relational-databases/indexes/clustered-and-nonclustered-indexes-described)

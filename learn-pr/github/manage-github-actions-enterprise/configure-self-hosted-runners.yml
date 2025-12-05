@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.github.manage-github-actions-enterprise.configure-self-hosted-runners
+title: Configure self-hosted runners for enterprise use
+metadata:
+  title: Configure self-hosted runners for enterprise use
+  description: Learn how to set up, manage, and secure self-hosted GitHub Actions runners for enterprise workflows, including labels, proxies, networking, and monitoring strategies.
+  ms.date: 04/15/2025
+  author: a-a-ron
+  ms.author: aastewar
+  ms.topic: unit
+durationInMinutes: 9
+content: |
+  [!include[](includes/configure-self-hosted-runners.md)]

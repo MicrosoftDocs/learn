@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.sketch-future.create-detailed-animation-roadmaps-microsoft-copilot
+title: Create detailed animation roadmaps with Microsoft Copilot
+metadata:
+  title: Create Detailed Animation Roadmaps with Microsoft Copilot
+  description: "In this unit, learners discover how Microsoft Copilot can generate structured animation roadmaps, helping them turn creative ideas into actionable production plans. Learners practice building scene breakdowns, asset lists, and project timelines using AI-driven prompts. Keywords: Microsoft Copilot, animation planning, AI roadmaps, scene breakdowns, asset organization."
+
+  ms.date: 4/28/2025
+  author: kariannab-ms
+  ms.author: kbarreto
+  ms.topic: unit
+  
+durationInMinutes: 15
+content: |
+  [!include[](includes/3-create-detailed-animation-roadmaps-microsoft-copilot.md)]

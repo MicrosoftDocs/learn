@@ -2,8 +2,6 @@
 uid: learn.azure.intro-to-azure-backup.how-azure-backup-works
 title: How Azure Backup works
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: learning-content
   title: How Azure Backup works
   description: Learn how Azure Backup works.
@@ -14,4 +12,4 @@ metadata:
 durationInMinutes: 5
 content: |
   [!include[](includes/3-how-azure-backup-works.md)]
-
+

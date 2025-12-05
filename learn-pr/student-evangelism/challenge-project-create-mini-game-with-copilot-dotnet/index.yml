@@ -4,6 +4,7 @@ metadata:
   title: Challenge project - Build a minigame with GitHub Copilot and .NET
   description: "Demonstrate your ability to analyze, create, and use different methods to develop a console minigame in .NET with GitHub Codespaces and GitHub Copilot."
   ms.date: 01/31/2025
+  ms.update-cycle: 180-days
   author: codemillmatt
   ms.author: masoucou
   ms.custom: team=cloud_advocates

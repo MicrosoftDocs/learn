@@ -1,11 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.publish-static-web-app-api-preview-url.6-exercise-action
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Publish the API with GitHub Actions
-  description: Use a GitHub Action to automatically publish your updated static site and API
-  ms.date: 12/12/2023
+  description: Use a GitHub Action to automatically publish your updated static site and API.
+  ms.date: 06/27/2025
   author: v1212
   ms.author: wujia
   ms.topic: unit

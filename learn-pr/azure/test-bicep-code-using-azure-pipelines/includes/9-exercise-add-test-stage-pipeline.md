@@ -1,4 +1,4 @@
-Your toy company's security team has asked you to verify that your website is accessible only through HTTPS. In this exercise, you'll configure your pipeline to run a smoke test that checks the security team's requirement.
+Your toy company's security team has asked you to verify that your website is accessible only through HTTPS. In this exercise, you'll configure your pipeline to run a smoke test that checks whether the security team's requirement is met.
 
 During the process, you'll:
 
@@ -10,21 +10,21 @@ During the process, you'll:
 
 ## Add a test script
 
-Here, you'll add a test script to verify that the website is accessible when HTTPS is used and not accessible when the nonsecure HTTP protocol is used.
+First, you'll add a test script to verify that the website is accessible when HTTPS is used and not accessible when the nonsecure HTTP protocol is used.
 
-1. In Visual Studio Code, create a new file in the _deploy_ folder named _Website.Tests.ps1_.
+1. In Visual Studio Code, create a new file in the _deploy_ folder. Name the file _Website.Tests.ps1_.
 
-   :::image type="content" source="../media/9-visual-studio-code-website-tests-file.png" alt-text="Screenshot of Visual Studio Code Explorer, with the deploy folder and the test file shown.":::
+   :::image type="content" source="../media/9-visual-studio-code-website-tests-file.png" alt-text="Screenshot of Visual Studio Code Explorer. The deploy folder and the test file are shown.":::
 
 1. Paste the following test code into the file:
 
    :::code language="powershell" source="code/9-test.ps1" :::
 
    This code is a Pester test file. It requires a parameter named `$HostName`. It runs two tests against the host name:
-   - Try to connect to the website over HTTPS. The test passes if the server responds with an HTTP response status code between 200 and 299, which indicates a successful connection.
+   - Try to connect to the website over HTTPS. The test passes if the server responds with an HTTP response status code that's between 200 and 299, which indicates a successful connection.
    - Try to connect to the website over HTTP. The test passes if the server responds with an HTTP response status code of 300 or higher.
 
-   For the purposes of this exercise, it's not important that you understand the details of the test file and how it works. We'll provide links in the summary so you can learn more if you're interested.
+   For the purposes of this exercise, you don't need to understand the details of the test file and how it works. If your'e interested, you can learn more by checking out the resource listed in the module summary.
 
 ## Publish your Bicep file's output as a stage output variable
 
@@ -34,15 +34,15 @@ The test script that you created in the preceding steps requires a host name to 
 
 1. In the **Deploy** stage, update the deployment step to publish the outputs to a variable:
 
-   :::code language="yaml" source="code/9-pipeline.yml" range="71-82" highlight="12" :::
+   :::code language="yaml" source="code/9-pipeline.yml" range="71-82" highlight="11" :::
 
-   Now, your deployment process still uses the same task as it did previously, but the outputs from the deployments are stored in a pipeline variable named `deploymentOutputs`. The output variable is formatted as JSON.
+   Your deployment process still uses the same task as it did previously, but the outputs from the deployments are now stored in a pipeline variable named `deploymentOutputs`. The output variable is formatted as JSON.
 
 1. To convert the JSON-formatted outputs into pipeline variables, add the following script step below the deployment step:
 
    :::code language="yaml" source="code/9-pipeline.yml" range="84-89" :::
 
-   If the deployment completes successfully, the script accesses the value of each output from the Bicep deployment. The script uses the `jq` tool to access the relevant part of the JSON output. Then, the value is published to a stage output variable with the same name as the Bicep deployment output.
+   If the deployment completes successfully, the script accesses the value of each output from the Bicep deployment. The script uses the `jq` tool to access the relevant part of the JSON output. The value is then published to a stage output variable that has the same name as the Bicep deployment output.
 
    > [!NOTE]
    > Pester and jq are both preinstalled on Microsoft-hosted agents for Azure Pipelines. You don't need to do anything special to use them in a script step.
@@ -51,7 +51,7 @@ The test script that you created in the preceding steps requires a host name to 
 
 ## Add a smoke test stage to your pipeline
 
-Now, you can add a smoke test stage that runs your tests.
+You can now add a smoke test stage that runs your tests.
 
 1. At the bottom of the file, add the following definition for the **SmokeTest** stage:
 
@@ -69,9 +69,9 @@ Now, you can add a smoke test stage that runs your tests.
 
    :::code language="yaml" source="code/9-pipeline.yml" range="111-117" :::
 
-   This step takes the test results file that Pester creates and publishes it as pipeline test results. You'll see how the results are displayed shortly.
+   This step takes the test results file that Pester creates and publishes it as pipeline test results. You'll see how the results are displayed soon.
 
-   Notice that the step definition includes `condition: always()`. This condition indicates to Azure Pipelines that it should always publish the test results, even if the preceding step fails. This condition is important because any failing test will cause the test step to fail, and normally the pipeline stops running after a failing step.
+   Notice that the step definition includes `condition: always()`. This condition indicates to Azure Pipelines that it should always publish the test results, even if the preceding step fails. This condition is important because any failed test will cause the test step to fail, and normally the pipeline stops running after a failed step.
 
 1. Save the file.
 
@@ -81,7 +81,7 @@ Now, you can add a smoke test stage that runs your tests.
 
    :::code language="yaml" source="code/9-pipeline.yml" highlight="82-117" :::
 
-   If it doesn't, update it to match this example, and then save it.
+   If you file doesn't look the same, update it to match this example, and then save it.
 
 1. Commit and push your changes to your Git repository by running the following commands in the Visual Studio Code terminal:
 
@@ -93,11 +93,11 @@ Now, you can add a smoke test stage that runs your tests.
 
 ## Run the pipeline and review the test result
 
-1. In your browser, go to your pipeline.
+1. In Azure DevOps, go to your pipeline.
 
 1. Select the most recent run of your pipeline.
 
-   Wait until the pipeline completes the **Lint**, **Validate**, and **Preview** stages. Although Azure Pipelines automatically updates the page with the latest status, it's a good idea to refresh your page occasionally.
+   Wait until the pipeline completes the **Lint**, **Validate**, and **Preview** stages. Although Azure Pipelines automatically updates the page with the latest status, it's a good idea to refresh the page occasionally.
 
 1. Select the **Review** button and then select **Approve**.
 
@@ -105,25 +105,25 @@ Now, you can add a smoke test stage that runs your tests.
 
 1. Notice that the **Deploy** stage finishes successfully. The **SmokeTest** stage finishes with an error.
 
-   :::image type="content" source="../media/9-pipeline-run-stages-smoketest.png" alt-text="Screenshot of the Azure DevOps interface that shows the pipeline run stages. The SmokeTest stage reports failure.":::
+   :::image type="content" source="../media/9-pipeline-run-stages-smoketest.png" alt-text="Screenshot of the Azure DevOps interface that shows the pipeline run stages. The SmokeTest stage reports a failure." lightbox="../media/9-pipeline-run-stages-smoketest.png":::
 
 1. Select the **Tests** tab.
 
-   :::image type="content" source="../media/9-pipeline-run-test-tab.png" alt-text="Screenshot of the Azure DevOps interface that shows the pipeline run, with the Tests tab highlighted.":::
+   :::image type="content" source="../media/9-pipeline-run-test-tab.png" alt-text="Screenshot of the Azure DevOps interface that shows the pipeline run. The Tests tab is highlighted.":::
 
 1. Notice that the test summary shows that two tests ran. One passed and one failed. The test that failed is listed as **Toy Website.Does not serve pages over HTTP**.
 
-   :::image type="content" source="../media/9-pipeline-run-test-results.png" alt-text="Screenshot of the Azure DevOps interface that shows the pipeline run's test results, with the failed test highlighted.":::
+   :::image type="content" source="../media/9-pipeline-run-test-results.png" alt-text="Screenshot of the Azure DevOps interface that shows the pipeline run's test results. The failed test is highlighted.":::
 
-   This text indicates that the website hasn't been correctly configured to meet your security team's requirement.
+   This text indicates that the website isn't correctly configured to meet your security team's requirement.
 
 ## Update the Bicep file
 
-Now that you've identified that your Bicep definition doesn't meet your security team's requirement, you'll fix it.
+Now that you know that your Bicep definition doesn't meet your security team's requirement, you'll fix it.
 
 1. In Visual Studio Code, open the _main.bicep_ file in the _deploy_ folder.
 
-1. Find the definition for the Azure App Service app, and update it to include the `httpsOnly` property in its `properties` area:
+1. Find the definition for the Azure App Service app, and update it to include the `httpsOnly` property in its `properties` section:
 
    :::code language="bicep" source="code/9-fixed.bicep" range="57-76" highlight="6" :::
 
@@ -143,7 +143,7 @@ Now that you've identified that your Bicep definition doesn't meet your security
 
 1. Select the most recent run.
 
-   Wait until the pipeline completes the **Lint**, **Validate**, and **Preview** stages. Although Azure Pipelines automatically updates the page with the latest status, it's a good idea to refresh your page occasionally.
+   Wait until the pipeline completes the **Lint**, **Validate**, and **Preview** stages. Although Azure Pipelines automatically updates the page with the latest status, it's a good idea to refresh the page occasionally.
 
 1. Select the **Preview** stage and review the what-if results again.
 
@@ -153,13 +153,13 @@ Now that you've identified that your Bicep definition doesn't meet your security
 
 1. Go back to the pipeline run.
 
-1. Select the **Review** button, then select **Approve**.
+1. Select the **Review** button, and then select **Approve**.
 
    Wait for the pipeline run to finish.
 
-1. Notice that the entire pipeline finishes successfully, including the **SmokeTest** stage. This success indicates that both tests passed.
+1. Notice that the entire pipeline finishes successfully, including the **SmokeTest** stage. This result indicates that both tests passed.
 
-   :::image type="content" source="../media/9-pipeline-run-success.png" alt-text="Screenshot of the Azure DevOps interface that shows a successful pipeline run.":::
+   :::image type="content" source="../media/9-pipeline-run-success.png" alt-text="Screenshot of the Azure DevOps interface that shows a successful pipeline run." lightbox="../media/9-pipeline-run-success.png":::
 
 ## Clean up the resources
 

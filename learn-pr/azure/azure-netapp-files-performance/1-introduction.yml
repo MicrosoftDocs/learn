@@ -2,8 +2,6 @@
 uid: learn.azure.azure-netapp-files-performance.introduction 
 title: "Introduction: performance considerations for Azure NetApp Files"
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: introduction
   title: "Introduction: performance considerations for Azure NetApp Files"
   description: Understand the different ways throughput is managed for automatic and manual QoS volumes. 
@@ -13,4 +11,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 6
 content: |
-  [!include[](includes/1-introduction.md)]
+  [!include[](includes/1-introduction.md)]

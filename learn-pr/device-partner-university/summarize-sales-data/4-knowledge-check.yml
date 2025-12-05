@@ -1,0 +1,84 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.summarize-sales-data.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge Check
+  description: This content is part of the "Summarize sales data using Copilot in Excel" module.
+  ms.date: 10/10/2025
+  author: melissawinters
+  ms.author: v-mwinters
+  ms.topic: unit
+durationInMinutes: 5
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "What does Copilot in Excel require to interpret data effectively?"
+    choices:
+        - content: "A worksheet with hidden rows"
+          isCorrect: false
+          explanation: "Incorrect. Copilot only summarizes visible data."
+        - content: "A clearly defined table with headers"
+          isCorrect: true
+          explanation: "Correct. Copilot uses headers and structure to interpret data."
+        - content: "A chart with multiple axes"
+          isCorrect: false
+          explanation: "Incorrect. Charts are outputs, not inputs for Copilot."
+        - content: "A formula-heavy spreadsheet"
+          isCorrect: false
+          explanation: "Incorrect. Copilot doesn't rely on formulas to interpret data."
+  - content: "Which prompt type helps Copilot identify performance differences?"
+    choices:
+        - content: "Descriptive prompt"
+          isCorrect: false
+          explanation: "Incorrect. It summarizes data but doesn’t compare performance."
+        - content: "Visual prompt"
+          isCorrect: false
+          explanation: "Incorrect. It creates charts but doesn’t analyze differences."
+        - content: "Comparative prompt"
+          isCorrect: true
+          explanation: "Correct. It highlights above or below average performance."
+        - content: "Diagnostic prompt"
+          isCorrect: false
+          explanation: "Incorrect. It explains causes, not performance differences."
+  - content: "What is a best practice when prompting Copilot in Excel?"
+    choices:
+        - content: "Use vague prompts for broad insights"
+          isCorrect: false
+          explanation: "Incorrect. Vague prompts may produce irrelevant results."
+        - content: "Hide rows to focus analysis"
+          isCorrect: false
+          explanation: "Incorrect. Copilot ignores hidden data."
+        - content: "Refer to specific columns or metrics"
+          isCorrect: true
+          explanation: "Correct. Specific prompts improve relevance and accuracy."
+        - content: "Avoid formatting data as a table"
+          isCorrect: false
+          explanation: "Incorrect. Tables help Copilot interpret data."
+  - content: "How can Copilot help refine insights after an initial summary?"
+    choices:
+        - content: "It deletes previous data"
+          isCorrect: false
+          explanation: "Incorrect. Copilot doesn't delete data."
+        - content: "It resets the worksheet"
+          isCorrect: false
+          explanation: "Incorrect. Copilot maintains context."
+        - content: "It builds on earlier prompts"
+          isCorrect: true
+          explanation: "Correct. Copilot remembers context and refines results."
+        - content: "It replaces formulas with charts"
+          isCorrect: false
+          explanation: "Incorrect. Copilot adds visuals but doesn’t replace formulas."
+  - content: "What must be done before using Copilot in Excel?"
+    choices:
+        - content: "Enable macros"
+          isCorrect: false
+          explanation: "Incorrect. Macros are unrelated to Copilot functionality."
+        - content: "Install a plugin"
+          isCorrect: false
+          explanation: "Incorrect. Copilot is built into Microsoft 365 apps."
+        - content: "Save the file to cloud storage"
+          isCorrect: true
+          explanation: "Correct. Cloud storage is required for Copilot access."
+        - content: "Convert the file to PDF"
+          isCorrect: false
+          explanation: "Incorrect. PDFs aren't compatible with Copilot in Excel."

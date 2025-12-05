@@ -24,9 +24,9 @@ Automated systems and scripts often rely on naming conventions to function corre
 
 In larger organizations, multiple IT teams might manage different segments of the infrastructure. Standardized naming conventions ensure everyone is on the same page, facilitating smoother collaboration and reducing the risk of miscommunication.
 
-## Enhanced use of Microsoft Copilot for Security
+## Enhanced use of Microsoft Security Copilot
 
-Proper naming conventions are crucial for tools like Microsoft Copilot for Security. Clear and consistent device names allow Copilot to accurately correlate data, analyze threats, and provide precise recommendations. For example, when devices are named consistently, Copilot can quickly identify which devices are at risk, making it easier to deploy targeted security measures and streamline threat responses.
+Proper naming conventions are crucial for tools like Microsoft Security Copilot. Clear and consistent device names allow Copilot to accurately correlate data, analyze threats, and provide precise recommendations. For example, when devices are named consistently, Copilot can quickly identify which devices are at risk, making it easier to deploy targeted security measures and streamline threat responses.
 
 **Implementing Naming Conventions**
 

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-manage-records.retention-label-file-plan
+title: Organize retention labels by using file plan
+metadata:
+  title: Organize retention labels by using file plan
+  description: "Organize retention labels by using file plan."
+  ms.date: 06/10/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/retention-label-file-plan.md)]

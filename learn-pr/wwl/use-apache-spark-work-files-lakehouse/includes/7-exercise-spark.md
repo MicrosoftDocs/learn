@@ -1,7 +1,3 @@
----
-ms.custom:
-  - build-2023
----
 Now it's your opportunity to work with Apache Spark in Microsoft Fabric. In this exercise, you'll use a Spark notebook to analyze and visualize data from files in lakehouse.
 
 > [!NOTE]

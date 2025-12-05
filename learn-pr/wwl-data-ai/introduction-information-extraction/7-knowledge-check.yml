@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.introduction-information-extraction.knowledge-check
+title: Module assessment
+metadata:
+  title: Module assessment
+  description: "Knowledge check"
+  ms.date: 11/18/2025
+  author: wwlpublish
+  ms.author: gmalc
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 3
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which of these statements accurately defines AI information extraction?"
+    choices:
+    - content: "Using SQL code to query a database."
+      isCorrect: false
+      explanation: "Incorrect. SQL is used for querying databases, not for AI information extraction."
+    - content: "Copying files from cloud storage to local disks."
+      isCorrect: false
+      explanation: "Incorrect. File transfer isn't AI information extraction."
+    - content: "Analyzing unstructured content to identify and extract relevant fields and values."
+      isCorrect: true
+      explanation: "Correct. AI information extraction involves analyzing unstructured content to identify and extract relevant fields and values."
+  - content: "How is OCR used in the information extraction process?"
+    choices:
+    - content: "Online Content Retrieval (OCR) is used to copy cloud data to a local device for processing."
+      isCorrect: false
+      explanation: "Incorrect. OCR stands for Optical Character Recognition, not Online Content Retrieval."
+    - content: "Optical character recognition (OCR) is used to convert images of text into machine-readable text data."
+      isCorrect: true
+      explanation: "Correct. OCR converts images of text into machine-readable text data, enabling further processing."
+    - content: "Open Conversion Routine (OCR) is a method for converting JSON data into images."
+      isCorrect: false
+      explanation: "Incorrect. OCR stands for Optical Character Recognition, not Open Conversion Routine."
+  - content: "How does generative AI enhance the data extraction process?"
+    choices:
+    - content: "By using semantic language models to accurately match extracted values to data fields."
+      isCorrect: true
+      explanation: "Correct. Generative AI uses semantic language models to understand context and accurately match extracted values to data fields."
+    - content: "By manually coding extraction rules for each document type."
+      isCorrect: false
+      explanation: "Incorrect. Generative AI reduces the need for manual coding by using semantic language models."
+    - content: "By generating new documents from scratch."
+      isCorrect: false
+      explanation: "Incorrect. In the context of information extraction, generative AI is used to improve field matching, not new document creation."

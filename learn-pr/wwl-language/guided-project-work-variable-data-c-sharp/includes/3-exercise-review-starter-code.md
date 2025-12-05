@@ -4,11 +4,11 @@ In this first step of the development process, you review the code provided in t
 
 The Program.cs file contains a preliminary version of the application that you're working on. The code includes features to generate and display the sample data for the application, and it displays a list of menu options that define the main features of the application.
 
-1. Ensure that you have the **GuidedProject** folder (Guided-project-Work-with-variable-data-in-CSharp-main) open in Visual Studio Code.
+1. Ensure that you have the "**GuidedProject**" folder (Guided-project-Work-with-variable-data-in-CSharp-main) open in Visual Studio Code.
 
-    The **Prepare** unit (the previous unit in this module) includes a Setup section that describes the process for downloading the initial starting point for the guided project and opening the folder Visual Studio Code. If necessary, go back and follow the Setup instructions.
+    The "**Prepare**" unit (the previous unit in this module) includes a Setup section that describes the process for downloading the initial starting point for the guided project and opening the folder Visual Studio Code. If necessary, go back and follow the Setup instructions.
 
-1. In the **EXPLORER** view, expand the **Starter** folder, then select **Program.cs**.
+1. In the "**EXPLORER**" view, expand the "**Starter**" folder, then select "**Program.cs**."
 
     When you select the Program.cs file, the file contents open in the main Editor area to the right of the EXPLORER.
 
@@ -41,7 +41,7 @@ The Program.cs file contains a preliminary version of the application that you'r
     > [!NOTE]
     > When reading user entered values with the `Console.ReadLine()` method, it's best to enable a nullable type string using `string?` to avoid the code compiler generating a warning when you build the project.
 
-    The final variable (under comment #3) is the two-dimensional string array named `ourAnimals`.  You initialized the number of rows, defined by maxPets, to 8. The number of characteristics that you're storing initially is six. The six characteristics match the number of string variables that you examined in the sample code, but the number of characteristics needs to expand to add a field for `suggestedDonation`.
+    The final variable (under comment #3) is the two-dimensional string array named `ourAnimals`. You initialized the number of rows, defined by maxPets, to 8. The number of characteristics that you're storing initially is six. The six characteristics match the number of string variables that you examined in the sample code, but the number of characteristics needs to expand to add a field for `suggestedDonation`.
 
 1. Scroll down the Program.cs file to examine the `for` loop that contains a `switch` selection construct within its code block.
 
@@ -173,10 +173,10 @@ The Program.cs file contains a preliminary version of the application that you'r
     > The TERMINAL prompt has to be opened in the start folder and the TERMINAL should look similar to `..\ArrayGuidedProject\starter>`
     
     When the code runs, two menu items are displayed.
-    - Enter "`1`" to test the "List all of our current pet information" output
-    - Enter "`2`" to test the placeholder message "under construction" message
+    - Enter: `1`, to test the "List all of our current pet information" output
+    - Enter: `2`, to test the placeholder message "under construction" message
 
-1. Enter `1` followed by pressing the Enter key to "display all pets".
+1. Enter: `1`, followed by pressing the "Enter" key to "display all pets."
 
 1. Check that all of the pet information displays.
 
@@ -195,11 +195,11 @@ The Program.cs file contains a preliminary version of the application that you'r
 
 1. Press the Enter key to continue and return to the menu.
 
-1. At the menu prompt, enter `2` followed by pressing the Enter key.
+1. At the menu prompt, enter `2` followed by pressing the "Enter" key.
 
     This choice is a place holder for "Display all dogs with a specified characteristic" functionality.
 
-1. Check that the "UNDER CONSTRUCTION" message displays for "Display all dogs with a specified characteristic" selection.
+1. Check that the `UNDER CONSTRUCTION` message displays for `Display all dogs with a specified characteristic` selection.
 
     You should observe the following output:
 

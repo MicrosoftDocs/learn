@@ -15,3 +15,7 @@ By the end of this module, you'll be able to:
  -  Configure objects in Active Directory.
  -  Perform bulk management tasks for user accounts.
  -  Maintain AD DS domain controllers.
+
+## Get help along the way
+
+While you're going through the training on AD DS, you have the chance to interact with an AI-powered chat agent. The AD DS tutor is trained on Windows Server and Active Directory. The tutor can help explain things during the training and help guide you through the tasks during the guided project at the end of the learning path. Launch the [AD DS tutor](https://aka.ms/ADDSAppliedSkillTutor) in a separate window or tab to access the tutor throughout the training and activities.

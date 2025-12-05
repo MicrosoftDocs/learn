@@ -2,8 +2,6 @@
 uid: learn.wwl.deploy-manage-container-app-using-azure-container-apps.exercise-manage-revisions-azure-container-apps
 title: Exercise - Manage revisions in Azure Container Apps
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Manage revisions in Azure Container Apps
   description: "Exercise - Manage revisions in Azure Container Apps"
   ms.date: 10/31/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 10
 content: |
-  [!include[](includes/6-exercise-manage-revisions-azure-container-apps.md)]
+  [!include[](includes/6-exercise-manage-revisions-azure-container-apps.md)]

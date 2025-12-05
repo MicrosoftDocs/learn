@@ -172,7 +172,6 @@ To create the application, you need to create the YAML files to deploy to Kubern
 
     > [!NOTE]
     > Don't forget to add quotes `"` to the environment variables, as the connection string sometimes presents invalid YAML characters.
-    > You might consider using [secrets](/training/modules/aks-secrets-configure-app/) as a secure way to store and retrieve connection string in AKS.
 
 4. Save and close the file.
 5. Apply the back-end API deployment using the `kubectl apply` command.

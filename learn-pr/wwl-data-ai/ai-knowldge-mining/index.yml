@@ -1,0 +1,49 @@
+### YamlMime:Module
+uid: learn.wwl.ai-knowledge-mining
+metadata:
+  title: Create a knowledge mining solution with Azure AI Search
+  description: Unlock the hidden insights in your data with Azure AI Search.
+  author: graememalcolm
+  ms.author: gmalc
+  ms.date: 05/16/2025
+  ai-usage: ai-assisted
+  ms.service: azure-ai-search
+  ms.topic: module-standard-task-based
+  ms.collection:
+    - wwl-ai-copilot
+title: Create a knowledge mining solution with Azure AI Search
+summary: Unlock the hidden insights in your data with Azure AI Search. In this module, you'll learn how to implement a knowledge mining solution that extracts and enriches data, making it searchable and ready for deeper analysis.
+abstract: |
+  After completing this module, you'll be able to:
+  - Implement indexing with Azure AI Search
+  - Use AI skills to enrich data in an index
+  - Search an index to find relevant information
+  - Persist extracted information in a knowledge store
+prerequisites: |
+  Before starting this module, you should already have:
+  - Familiarity with Azure
+  - Some knowledge of AI concepts
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- ai-engineer
+- developer
+products:
+- azure-cognitive-search
+subjects:
+- artificial-intelligence
+units:
+- learn.wwl.ai-knowledge-mining.introduction
+- learn.wwl.ai-knowledge-mining.azure-ai-search
+- learn.wwl.ai-knowledge-mining.indexing
+- learn.wwl.ai-knowledge-mining.ai-skills
+- learn.wwl.ai-knowledge-mining.search-index
+- learn.wwl.ai-knowledge-mining.knowledge-store
+- learn.wwl.ai-knowledge-mining.exercise
+- learn.wwl.ai-knowledge-mining.knowledge-check
+- learn.wwl.ai-knowledge-mining.summary
+# This is the badge for the module.
+badge:
+  uid: learn.wwl.ai-knowledge-mining.badge
+

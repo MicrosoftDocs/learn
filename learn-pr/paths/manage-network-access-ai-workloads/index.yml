@@ -1,0 +1,36 @@
+### YamlMime:LearningPath
+uid: learn.wwl.manage-network-access-ai-workloads
+metadata:
+  title: Manage Network Access for AI workloads
+  description: Strengthen your command over securing network access for AI workloads in Azure. This learning path is tailored for Cloud Administrators and IT professionals looking to enforce precise access controls and ensure isolation of sensitive AI resources. Learn how to implement private endpoints, configure virtual networks, and restrict exposure of Azure AI services and Azure Machine Learning workspaces. Whether you're designing robust hybrid networks or hardening cloud-native architectures, this path empowers you with practical skills to safeguard your AI infrastructure in today's security-first digital landscape. 
+  ms.date: 07/08/2025
+  author: vrapolinario
+  ms.author: viniap
+  ms.topic: learning-path
+title: Manage Network Access for AI workloads
+prerequisites: |
+  - Experience navigating the Azure portal 
+  - Familiarity with Microsoft Azure Networking 
+  - Basic AI knowledge and familiarity with AI services on Azure 
+summary: |
+  Managing AI workloads requires more than just compute and storage—it demands secure and well-architected network access. This learning path equips you with the knowledge to configure virtual network integration, secure access to Azure AI endpoints, and implement network-layer security controls. By the end of these modules, you'll be prepared to design and deploy AI solutions with confidence, minimizing exposure and maximizing control over your networked environments. 
+iconUrl: /training/achievements/generic-trophy.svg
+levels:
+- intermediate
+roles:
+- administrator
+- auditor 
+- devops-engineer 
+- identity-access-admin 
+- privacy-manager 
+- security-engineer 
+- security-operations-analyst 
+- solution-architect 
+- support-engineer
+products:
+- ai-services
+- azure-machine-learning
+modules:
+- learn.restrict-azure-machine-learning-network-traffic
+trophy:
+  uid: learn.wwl.manage-network-access-ai-workloads.trophy

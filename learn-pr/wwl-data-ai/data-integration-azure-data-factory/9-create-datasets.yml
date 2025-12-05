@@ -2,8 +2,6 @@
 uid: learn.wwl.integrate-data-azure-data-factory.create-datasets
 title: Create datasets
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Create datasets
   description: "Create datasets"
   ms.date: 06/05/2023
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 6
 content: |
-  [!include[](includes/9-create-datasets.md)]
+  [!include[](includes/9-create-datasets.md)]

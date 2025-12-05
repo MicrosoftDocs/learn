@@ -21,4 +21,4 @@ After you finish the exercise in GitHub, return here for:
 > **ability to validate your actions, provide feedback, or grade the results**.
 
 > [!div class="nextstepaction"]
-> [Start the exercise on GitHub](https://github.com/skills/review-pull-requests?azure-portal=true)
+> [Start the exercise on GitHub](https://github.com/skills-dev/review-pull-requests?azure-portal=true)

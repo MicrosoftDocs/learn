@@ -2,11 +2,9 @@
 uid: learn.azdo.deploy-docker.2-why-containers
 title: Why are containers important?
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Why are containers important?
   description: Understand the benefits of Docker containers and when to use them.
-  ms.date: 12/05/2023
+  ms.date: 07/07/2025
   author: ramiMSFT
   ms.author: rabououn
   ms.custom: devdivchpfy22, engagement-fy23
@@ -21,7 +19,7 @@ quiz:
     choices:
     - content: "You build mobile apps and want a single mobile container to run across different operating systems."
       isCorrect: true
-      explanation: "Unfortunately, mobile container apps are not supported at this time."
+      explanation: "Unfortunately, mobile container apps aren't supported at this time."
     - content: "Your application has specific dependency requirements and you want to package them along with the app itself for deployment."
       isCorrect: false
       explanation: "With containers, you can ensure your application runs with the exact dependencies it needs because they're included as part of the deployment."

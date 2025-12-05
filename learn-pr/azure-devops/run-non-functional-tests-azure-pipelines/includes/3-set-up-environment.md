@@ -12,7 +12,7 @@ To set up your system, you'll:
 
 ## Add a user to Azure DevOps
 
-To complete this module, you need your own [Azure subscription](https://azure.microsoft.com/free/?azure-portal=true). You can get started with Azure for free.
+To complete this module, you need your own [Azure subscription](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn). You can get started with Azure for free.
 
 Although you don't need an Azure subscription to work with Azure DevOps, in this module you'll use Azure DevOps to deploy to resources that exist in your Azure subscription. To simplify the process, you should use the same Microsoft account to sign in to both your Azure subscription and your Azure DevOps organization.
 
@@ -30,21 +30,34 @@ The modules in this learning path are part of a progression that follows the Tai
 
 Run a template that sets up your Azure DevOps organization.
 
-> [!div class="nextstepaction"]
-> [Run the template](https://azuredevopsdemogenerator.azurewebsites.net/?x-ms-routing-name=self&name=run-non-functional-tests&azure-portal=true)
+[!INCLUDE[important-note-demo-generator](../../shared/includes/important-note-demo-generator.md)]
 
-On the Azure DevOps Demo Generator site, follow these steps to run the template.
+1. [Get and run the ADOGenerator project](https://github.com/microsoft/AzDevOpsDemoGenerator/blob/main/docs/RunApplication.md) in Visual Studio or the IDE of your choice.
 
-1. Select **Sign In** and accept the usage terms.
-1. On the **Create New Project** page, select your Azure DevOps organization, then enter a project name such as *Space Game - web - Nonfunctional tests*.
+1. When prompted to **Enter the template number from the list of templates**, enter **33** for **Run non-functional tests in Azure Pipelines**, then press **Enter**.
 
-    :::image type="content" source="../media/3-create-new-project.png" alt-text="Screenshot for Creating a project through the Azure DevOps Demo Generator.":::
+1. Choose your authentication method. You can [set up and use a Personal Access Token (PAT)](/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate#create-a-pat) or use device login.
 
-1. Select **Yes, I want to fork this repository**, then select **Authorize**.
-1. Select **Create Project**.
+    > [!NOTE]
+    > If you set up a PAT, make sure to authorize the necessary [scopes](/azure/devops/integrate/get-started/authentication/oauth#scopes). For this module, you can use **Full access**, but in a real-world situation, you should ensure you grant only the necessary scopes.
 
-    The template takes a few moments to run.
-1. Select **Navigate to project** to go to your project in Azure DevOps.
+1. Enter your Azure DevOps organization name, then press **Enter**.
+
+1. If prompted, enter your Azure DevOps PAT, then press **Enter**.
+
+1. Enter a project name such as *Space Game - web - Nonfunctional tests*, then press **Enter**.
+
+1. Once your project is created, go to your Azure DevOps organization in your browser (at `https://dev.azure.com/<your-organization-name>/`) and select the project.
+
+### Fork the repository
+
+If you haven't already, create a fork of the **mslearn-tailspin-spacegame-web-deploy** repository.
+
+1. On GitHub, go to the [mslearn-tailspin-spacegame-web-deploy](https://github.com/MicrosoftDocs/mslearn-tailspin-spacegame-web-deploy) repository.
+
+1. Select **Fork** at the top-right of the screen.
+
+1. Choose your GitHub account as the **Owner**, then select **Create fork**.
 
 > [!IMPORTANT]
 > The [Clean up your Azure DevOps environment](/training/modules/run-non-functional-tests-azure-pipelines/6-clean-up-environment?azure-portal=true) page in this module contains important cleanup steps. Cleaning up helps ensure that you don't run out of free build minutes. Be sure to perform the cleanup steps even if you don't complete this module.
@@ -189,8 +202,6 @@ To add the variables:
 
 1. In Azure DevOps, go to your **Space Game - web - Nonfunctional tests** project.
 1. Under **Pipelines**, select **Library**.
-
-    :::image type="content" source="../../create-release-pipeline/media/5-pipelines-library.png" alt-text="Screenshot of Azure Pipelines, showing the Library menu option.":::
 1. Select **+ Variable group**.
 1. For the variable group name, under **Properties**, enter *Release*.
 1. Under **Variables**, select **+ Add**.

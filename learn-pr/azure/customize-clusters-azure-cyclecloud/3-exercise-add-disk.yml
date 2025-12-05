@@ -2,8 +2,6 @@
 uid: learn.azure.customize-clusters-azure-cyclecloud.exercise-add-disk
 title: Exercise - Add a disk to an HPC cluster's scheduler node
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: exercise
   title: Exercise - Add a disk to an HPC cluster's scheduler node
   description: This unit describes the process of adding disks to an HPC cluster's scheduler nodes by using an Azure CycleCloud template.
@@ -11,7 +9,8 @@ metadata:
   author: anhoward
   ms.author: anhoward
   ms.topic: unit
+  ms.custom: sfi-ropc-nochange
 durationInMinutes: 30
 content: |
   [!include[](includes/3-exercise-add-disk.md)]
-
+

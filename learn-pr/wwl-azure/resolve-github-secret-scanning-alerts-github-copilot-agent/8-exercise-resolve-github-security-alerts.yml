@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.resolve-github-secret-scanning-alerts-github-copilot-agent.exercise-resolve-github-security-alerts
+title: Exercise - Resolve GitHub Security Alerts
+metadata:
+  title: Exercise - Resolve GitHub Security Alerts
+  description: "Exercise - Resolve GitHub Security Alerts."
+  ms.date: 11/21/2025
+  author: chrishowd
+  ms.author: cahowd
+  ms.topic: unit
+durationInMinutes: 40
+content: |
+  [!include[](includes/8-exercise-resolve-github-security-alerts.md)]

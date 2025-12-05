@@ -1,4 +1,4 @@
-In this unit, you'll get the new **Tailspin.SpaceGame.Web** code that has the model classes removed. Instead of referencing the models directly, the code will reference them from the package you created in the previous unit.
+In this unit, you get the new **Tailspin.SpaceGame.Web** code that has the model classes removed. Instead of referencing the models directly, the code references them from the package you created in the previous unit.
 
 Here's a list of the steps:
 
@@ -12,7 +12,7 @@ Here's a list of the steps:
 
 Fetch the `models-package` branch from GitHub and check out, or switch to, that branch.
 
-This branch contains the _Space Game_ project you worked with in the previous modules, but the **Models** directory has been removed.
+This branch contains the *Space Game* project you worked with in the previous modules, but the **Models** directory has been removed.
 
 1. Switch to your copy of Visual Studio Code that shows the **Tailspin.SpaceGame.Web** project.
 1. From the terminal, to fetch a branch named `models-package` from the Microsoft repository, run the following `git` commands. Then, switch to that branch.
@@ -32,7 +32,7 @@ This branch contains the _Space Game_ project you worked with in the previous mo
 
     [!code-xml[](code/6-tailspin.spacegame.web.csproj?highlight=2)]
 
-    Be sure to place the `ItemGroup` inside the `Project` node. Your file should resemble this:
+    Be sure to place the `ItemGroup` inside the `Project` node. Your file should resemble this example:
 
     ```xml
     <Project Sdk="Microsoft.NET.Sdk.Web">
@@ -52,13 +52,13 @@ This branch contains the _Space Game_ project you worked with in the previous mo
     </Project>
     ```
 
-1. Modify the version, "1.0.0", to include the pre-release prefix that was generated during the build process. Here's an example:
+1. Modify the version, 1.0.0, to include the prerelease prefix that was generated during the build process. Here's an example:
 
     ```xml
     <PackageReference Include="Tailspin.SpaceGame.Web.Models" Version="1.0.0-CI-20200610-165738" />
     ```
 
-    This references the **Tailspin.SpaceGame.Web.Models** package that you created in Azure Artifacts. Notice the version number, 1.0.0, plus the pre-release suffix. This matches the initial version that you published to Azure Artifacts in the previous unit.
+    This entry references the **Tailspin.SpaceGame.Web.Models** package that you created in Azure Artifacts. Notice the version number, 1.0.0, plus the prerelease suffix. This value matches the initial version that you published to Azure Artifacts in the previous unit.
 
 1. Save the file.
 
@@ -67,7 +67,7 @@ This branch contains the _Space Game_ project you worked with in the previous mo
 
 ## Modify the pipeline configuration
 
-The `models-package` branch provides an initial *azure-pipelines.yml* file. Here, you'll modify the pipeline configuration to pull the **Tailspin.SpaceGame.Web.Models** package from Azure Artifacts.
+The `models-package` branch provides an initial *azure-pipelines.yml* file. Here, you modify the pipeline configuration to pull the **Tailspin.SpaceGame.Web.Models** package from Azure Artifacts.
 
 1. From Visual Studio Code, open *azure-pipelines.yml*.
 

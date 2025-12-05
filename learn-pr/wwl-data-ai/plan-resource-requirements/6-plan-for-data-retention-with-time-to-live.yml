@@ -2,11 +2,9 @@
 uid: learn.wwl.plan-resource-requirements.plan for data retention with time-to-live (TTL)
 title: Plan for data retention with time-to-live (TTL)
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Plan for data retention with time-to-live (TTL)
   description: "Plan for data retention with time-to-live (TTL)"
-  ms.date: 10/23/2024
+  ms.date: 04/02/2025
   author: wwlpublish
   ms.author: calopez
   ms.topic: unit

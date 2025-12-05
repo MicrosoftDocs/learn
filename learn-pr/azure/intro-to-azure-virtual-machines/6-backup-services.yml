@@ -2,8 +2,6 @@
 uid: learn.introduction-to-azure-virtual-machines.6-backup-services
 title: Back up your virtual machines
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Back up your virtual machines
   description: Back up your virtual machines
   ms.date: 05/19/2023
@@ -13,4 +11,4 @@ metadata:
 durationInMinutes: 7
 content: |
   [!include[](includes/6-backup-services.md)]
-
+

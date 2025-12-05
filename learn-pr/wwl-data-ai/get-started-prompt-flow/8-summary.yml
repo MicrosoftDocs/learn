@@ -2,11 +2,9 @@
 uid: learn.get-started-prompt-flow.summary
 title: Summary
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Summary
   description: "Summary of module on introducing retrieval augmented generation (RAG) and how to leverage this with Azure Machine Learning's prompt flow."
-  ms.date: 7/24/2023
+  ms.date: 12/01/2025
   author: madiepev
   ms.author: madiepev
   ms.topic: unit

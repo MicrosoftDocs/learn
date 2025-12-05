@@ -2,8 +2,6 @@
 uid: learn.oxford.void-detection-edge-devices-lva.exercise-install-vision-edge-shell
 title: Exercise - Install Vision Edge Shell
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Install Vision on Edge Solution
   description: In this section, we help learner to install Vision Edge Shell.
   ms.date: 07/20/2024
@@ -37,4 +35,4 @@ quiz:
       explanation: "Azure Resource Manager templates are a JSON document that defines the infrastructure and configuration for your project"
     - content: "Azure Container Registry"
       isCorrect: false
-      explanation: "It stores and manages your private Docker container images and related artifacts"
+      explanation: "It stores and manages your private Docker container images and related artifacts"

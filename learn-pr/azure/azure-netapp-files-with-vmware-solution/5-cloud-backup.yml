@@ -2,8 +2,6 @@
 uid: learn.azure.azure-netapp-files-with-vmware-solution.cloud-backup
 title: Protect VMs using Cloud Backup for Virtual Machines
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: learning-content
   title: Protect VMs using Cloud Backup for Virtual Machines
   description: Learn about the Cloud Backup for Virtual Machines solution to protect your data with Azure NetApp Files and Azure VMware Solution. 
@@ -14,4 +12,4 @@ metadata:
 durationInMinutes: 4
 content: |
   [!include[](includes/5-cloud-backup.md)]
-
+

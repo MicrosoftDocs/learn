@@ -20,8 +20,6 @@ To learn more, go through the following documents:
 - [Install Azure Active Directory PowerShell for Graph​](https://aka.ms/install-azure-active-directory-powershell-for-graph)
 
 - [AzureAD​](https://aka.ms/azure-ad-2)
-
-- [MSOnline](https://aka.ms/msonline)
 ​
 - [New-AzVM](https://aka.ms/new-azvm)​
 

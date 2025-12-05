@@ -12,7 +12,7 @@ MSLE helps institutions and educators by providing these comprehensive resources
 
 ### Why join Microsoft Learn for Educators? 
 
-Educators play a pivotal role in preparing students with real-world technical skills and experiences needed to succeed. Your expertise, coupled with MSLE, give students and faculty valuable technical skills and preparation for Microsoft certifications. New College Lanarkshire is a real world example of how a higher education institution integrated Microsoft curriculum through MSLE. To learn more about how they are providing opportunities for their students to learn valuable skills and certification visit [New College Lanarkshire case study](https://aka.ms/lanarkshireCS)  
+Educators play a pivotal role in preparing students with real-world technical skills and experiences needed to succeed. Your expertise, coupled with MSLE, give students and faculty valuable technical skills and preparation for Microsoft certifications. New College Lanarkshire is a real world example of how a higher education institution integrated Microsoft curriculum through MSLE.
 
 In summary, the Microsoft Learn for Educators program: 
 

@@ -4,8 +4,8 @@ metadata:
   title: Discover commands in PowerShell
   description: PowerShell comes with a built-in help system. Use help to read more about a command, what the command does, and how to call it. Also, if you inspect what a command returns, you can use that information to customize the output, determine what commands are logically grouped, and determine how to use the commands together.
   ms.date: 02/23/2023
-  author: softchris
-  ms.author: chnoring
+  author: sdwheeler
+  ms.author: sewhee
   ms.topic: module
   ms.custom: team=nextgen
 title: Discover commands in PowerShell
@@ -14,6 +14,13 @@ abstract: |
   When you finish this module, you'll be able to:
   - Inspect commands to understand how to call them.
   - Understand what a command returns and customize what it returns. 
+prerequisites: |
+ - Be able to start a terminal.
+ - Understand what PowerShell is. 
+ - Know how to run a command in PowerShell.
+
+  [!INCLUDE [](../../includes/azure-optional-exercise-subscription-prerequisite.md)]
+
 iconUrl: /training/achievements/powershell/discover-commands.svg
 levels:
   - beginner
@@ -22,11 +29,6 @@ roles:
   - student
 products:
   - azure-powershell
-prerequisites: |
- - Be able to start a terminal.
- - Understand what PowerShell is. 
- - Know how to run a command in PowerShell.
-
 units:
   - learn.powershell.discover-commands.1-introduction
   - learn.powershell.discover-commands.2-help

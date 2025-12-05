@@ -1,6 +1,6 @@
-The *model catalog* in Azure AI Foundry provides a central repository of models that you can browse to find the right language model for your particular generative AI use case.
+The *model catalog* in Microsoft Foundry provides a central repository of models that you can browse to find the right language model for your particular generative AI use case.
 
-:::image type="content" source="../media/model-catalog.png" alt-text="Screenshot of the model catalog in Azure AI Foundry portal.":::
+:::image type="content" source="../media/model-catalog.png" alt-text="Screenshot of the model catalog in Microsoft Foundry portal.":::
 
 Selecting a foundation model for your generative AI app is important as it affects how well your app works. To find the best model for your app, you can use a structured approach by asking yourself the following questions:
 
@@ -18,9 +18,9 @@ To start answering this question, you need to discover, filter, and deploy a mod
 
 - [**Hugging Face**](https://huggingface.co/models): Vast catalog of open-source models across various domains.
 - [**GitHub**](https://github.com/marketplace/models-github): Access to diverse models via GitHub Marketplace and GitHub Copilot.
-- [**Azure AI Foundry**](https://ai.azure.com/explore/models): Comprehensive catalog with robust tools for deployment.
+- [**Microsoft Foundry**](https://ai.azure.com/explore/models): Comprehensive catalog with robust tools for deployment.
 
-Though you can use each of these catalogs to explore models, the model catalog in Azure AI Foundry makes it easiest to explore and deploy a model to build you prototype, while offering the best selection of models.
+Though you can use each of these catalogs to explore models, the model catalog in Microsoft Foundry makes it easiest to explore and deploy a model to build your prototype, while offering the best selection of models.
 
 Let's explore some of the options you need to consider when searching for suitable models.
 
@@ -60,9 +60,9 @@ You also need to decide whether to use open-source models or proprietary models,
 
 **Proprietary models** are best for cutting-edge performance and enterprise use. Azure offers models like OpenAI’s GPT-4, Mistral Large, and Cohere Command R+, which deliver industry-leading AI capabilities. These models are ideal for businesses needing enterprise-level security, support, and high accuracy.
 
-**Open-source models** are best for flexibility and cost-efficiency. There are hundreds of open-source models available in the Azure AI Foundry model catalog from Hugging Face, and models from Meta, Databricks, Snowflake, and Nvidia. Open models give developers more control, allowing fine-tuning, customization, and local deployment.
+**Open-source models** are best for flexibility and cost-efficiency. There are hundreds of open-source models available in the Microsoft Foundry model catalog from Hugging Face, and models from Meta, Databricks, Snowflake, and Nvidia. Open models give developers more control, allowing fine-tuning, customization, and local deployment.
 
-Whatever model you choose, you can use the Azure AI Foundry model catalog. Using models through the model catalog meets the key enterprise requirements for usage:
+Whatever model you choose, you can use the Microsoft Foundry model catalog. Using models through the model catalog meets the key enterprise requirements for usage:
 
 - **Data and privacy**: you get to decide what happens with your data.
 - **Security and compliance**: built-in security.
@@ -72,7 +72,7 @@ Now you know the language models that are available to you, you should have an u
 
 ## How do I *select* the best model for my use case?
 
-To select the best language model for you use case, you need to decide on what criteria you're using to filter the models. The criteria are the necessary characteristics you identify for a model. Four characteristics you can consider are:
+To select the best language model for your use case, you need to decide on what criteria you're using to filter the models. The criteria are the necessary characteristics you identify for a model. Four characteristics you can consider are:
 
 - **Task type**: What type of task do you need the model to perform? Does it include the understanding of only text, or also audio, or video, or multiple modalities?
 - **Precision**: Is the base model good enough or do you need a fine-tuned model that is trained on a specific skill or dataset?
@@ -93,7 +93,7 @@ A fine-tuned model is trained further on a smaller, task-specific dataset to imp
 
 You can evaluate your model performance at different phases, using various evaluation approaches.
 
-When you're exploring models through the Azure AI Foundry model catalog, you can use **model benchmarks** to compare publicly available metrics like coherence and accuracy across models and datasets. These benchmarks can help you in the initial exploration phase, but give little information on how the model would perform in your specific use case.
+When you're exploring models through the Microsoft Foundry model catalog, you can use **model benchmarks** to compare publicly available metrics like coherence and accuracy across models and datasets. These benchmarks can help you in the initial exploration phase, but give little information on how the model would perform in your specific use case.
 
 |Benchmark|Description|
 |---|---|
@@ -120,4 +120,5 @@ Considerations for scaling a generative AI solution include:
 - **Prompt management**: How will you orchestrate and optimize prompts to maximize the accuracy and relevance of generated responses?
 - **Model lifecycle**: How will you manage model, data, and code updates as part of an ongoing *Generative AI Operations* (GenAIOps) lifecycle?
 
-Azure AI Foundry provides visual and code-first tools that can help you build and maintain a scalable generative AI solution.
+Microsoft Foundry provides visual and code-first tools that can help you build and maintain a scalable generative AI solution.
+

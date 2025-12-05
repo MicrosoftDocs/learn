@@ -2,8 +2,6 @@
 uid: learn.wwl.introduction-to-azure-data-share.track-monitor-data-sharing
 title: Track and monitor data sharing using Azure Data Share
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Track and monitor data sharing using Azure Data Share
   description: "Track and monitor data sharing using Azure Data Share"
   ms.date: 01/05/2022
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 3
 content: |
-  [!include[](includes/9-track-monitor-data-share.md)]
+  [!include[](includes/9-track-monitor-data-share.md)]

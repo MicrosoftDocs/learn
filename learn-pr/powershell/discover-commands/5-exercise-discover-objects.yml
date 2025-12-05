@@ -4,13 +4,13 @@ title: Exercise - Discover objects
 metadata:
   title: Exercise - Discover objects
   description: In this exercise, learn how to discover what type of object a command returns, so you can find related commands and more.
-  author: ttorble
-  ms.author: chnoring
+  author: sdwheeler
+  ms.author: sewhee
   ms.date: 02/23/2023
   ms.topic: unit
   ms.custom: team=nextgen
-azureSandbox: true
-interactive: powershell
+#azureSandbox: true
+#interactive: powershell
 durationInMinutes: 1
 content: |
   [!include[](includes/5-exercise-discover-objects.md)]

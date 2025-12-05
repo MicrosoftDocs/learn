@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-protect-on-premises-data.information-protection-scanner-prerequisites
+title: Prepare your environment for the Microsoft Purview Information Protection scanner
+metadata:
+  title: Prepare your environment for the Microsoft Purview Information Protection scanner
+  description: "Prepare your environment for the Microsoft Purview Information Protection scanner."
+  ms.date: 04/24/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 8
+content: |
+  [!include[](includes/information-protection-scanner-prerequisites.md)]

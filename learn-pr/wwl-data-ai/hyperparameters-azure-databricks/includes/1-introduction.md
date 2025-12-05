@@ -1,9 +1,16 @@
 
-In machine learning, algorithms are used to train models that predict unknown labels for new data based on correlations between known labels and features found in the training data. Depending on the algorithm used, you may need to specify *hyperparameters* to configure how the model is trained. For example, the logistic regression algorithm uses a *regularization* rate hyperparameter to counteract overfitting; and deep learning neural network models use hyperparameters like *learning rate* to control how weights are adjusted during training.
+In machine learning, models are trained to predict unknown outcomes by learning patterns from labeled training data. The way a model learns is influenced not only by the data itself but also by hyperparameters—settings that control the training process. These aren't learned from the data but are manually set before training begins, for example:
+
+- In logistic regression, the regularization rate helps prevent overfitting by penalizing overly complex models.
+- In neural networks, the learning rate determines how quickly the model updates its weights, affecting both speed and accuracy.
 
 > [!NOTE]
-> Machine Learning is an academic field with its own particular terminology. Data scientists refer to the values determined from the training features as *parameters*, so a different term is required for values that are used to configure training behavior but which are not derived from the training data - hence the term *hyperparameter*.
+> In machine learning terminology, values learned from the data are called parameters. To distinguish them from the values that configure the training process, we use the term hyperparameters.
 
-The hyperparameter values you select for a given algorithm can have a significant effect on the model it trains; so choosing the right hyperparameter values can make the difference between a model that predicts well when used with new data, and a model that doesn't.
+Choosing the right hyperparameters is crucial. Poor choices can lead to models that underperform or fail to generalize to new data. On the other hand, well-tuned hyperparameters can significantly improve a model’s accuracy, robustness, and efficiency.
 
-In Azure Databricks, you can use the **Hyperopt** library to automate hyperparameter tuning; a process in which you repeatedly train and evaluate models using different combinations of hyperparameters until you find the values that work best for your data.
+That’s where hyperparameter tuning comes in—a process of systematically testing different combinations of hyperparameter values to find the best-performing setup for your specific data and task.
+
+In Azure Databricks, you can use the **Optuna** library to automate this process. Optuna intelligently explores the hyperparameter space, training and evaluating models repeatedly until it identifies the most effective configuration. This helps you build models that not only perform well but also generalize better to unseen data.
+
+In Azure Databricks, you can use libraries like **Optuna** or **Ray Tune** for hyperparameter optimization. While both are powerful tools, in this module we focus on **Optuna**. Optuna intelligently explores the hyperparameter space, training and evaluating models repeatedly until it identifies the most effective configuration. This helps you build models that not only perform well but also generalize better to unseen data.

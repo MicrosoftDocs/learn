@@ -2,8 +2,6 @@
 uid: learn.wwl.manage-azure-resources-windows-powershell.manage-azure-virtual-machines-use-commands
 title: Manage Azure virtual machines by using Windows PowerShell commands
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Manage Azure virtual machines by using Windows PowerShell commands
   description: "Manage Azure virtual machines by using Windows PowerShell commands"
   ms.date: 03/22/2024
@@ -16,4 +14,4 @@ labModal: false
 durationInMinutes: 10
 content: |
   [!include[](includes/3-manage-azure-virtual-machines-use-commands.md)]
-
+

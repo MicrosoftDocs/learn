@@ -2,13 +2,11 @@
 uid: learn.wwl.use-azure-synapse-serverless-sql-pools-for-transforming-data-lake.pool-stored-procedures-from-synapse-pipelines
 title: Include a data transformation stored procedure in a pipeline
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Include a data transformation stored procedure in a pipeline
+  title: Include a Data Transformation Stored Procedure in a Pipeline
   description: "Include a data transformation stored procedure in a pipeline"
-  ms.date: 11/16/2023
-  author: wwlpublish
-  ms.author: jamesh
+  ms.date: 08/21/2025
+  author: weslbo
+  ms.author: wedebols
   ms.topic: unit
 azureSandbox: false
 labModal: false

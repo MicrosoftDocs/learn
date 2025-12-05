@@ -2,8 +2,6 @@
 uid: learn.wwl.implement-manage-networking-for-azure-virtual-desktop.analyze-connection-quality-azure-virtual-desktop
 title: Analyze connection quality in Azure Virtual Desktop
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Analyze connection quality in Azure Virtual Desktop
   description: "Analyze connection quality in Azure Virtual Desktop"
   ms.date: 08/22/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 5
 content: |
-  [!include[](includes/3-analyze-connection-quality-azure-virtual-desktop.md)]
+  [!include[](includes/3-analyze-connection-quality-azure-virtual-desktop.md)]

@@ -2,13 +2,11 @@
 uid: learn.wwl.find-best-classification-model-automated-machine-learning.introduction
 title: Introduction
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Introduction
   description: Learn how to find the best classification model by using automated machine learning in Azure Machine Learning with the Python SDK (v2).
   author: wwlpublish
   ms.author: madiepev
-  ms.date: 07/10/2024
+  ms.date: 12/01/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot

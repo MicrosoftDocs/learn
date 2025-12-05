@@ -41,7 +41,6 @@ subjects:
 modules:
 - learn.wwl.audit-security-of-windows-server-iaas-vms
 - learn.wwl.manage-azure-updates
-- learn.wwl.create-implement-application-allowlists-with-adaptive-application-control
 - learn.wwl.configure-bitlocker-disk-encryption-for-windows-iaas-vms
 - learn.wwl.implement-change-tracking-file-integrity-monitoring-for-windows-iaas-vms
 - learn.wwl.implement-windows-server-iaas-vm-network-security

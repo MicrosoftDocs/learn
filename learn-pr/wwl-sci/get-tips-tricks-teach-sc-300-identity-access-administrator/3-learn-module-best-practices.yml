@@ -2,8 +2,6 @@
 uid: learn.wwl.get-tips-tricks-teach-sc-300-identity-access-administrator.learn-module-best-practices
 title: Learn module best practices
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Learn module best practices
   description: "Learn module best practices"
   ms.date: 11/17/2023
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 3
 content: |
-  [!include[](includes/3-learn-module-best-practices.md)]
+  [!include[](includes/3-learn-module-best-practices.md)]

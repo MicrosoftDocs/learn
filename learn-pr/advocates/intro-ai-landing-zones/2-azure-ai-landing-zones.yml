@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-ai-landing-zones.azure-ai-landing-zones
+title: Azure AI Landing Zones
+metadata:
+  title: Azure AI Landing Zones
+  description: Understand how AI applications can use Azure Landing Zones.
+  ms.date: 05/01/2025
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-azure-ai-landing-zones.md)]

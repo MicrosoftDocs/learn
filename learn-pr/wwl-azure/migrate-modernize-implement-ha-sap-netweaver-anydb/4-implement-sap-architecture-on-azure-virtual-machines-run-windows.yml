@@ -2,8 +2,6 @@
 uid: learn.wwl.migrate-modernize-implement-ha-sap-netweaver-anydb.implement-sap-architecture-on-azure-virtual-machines-run-windows
 title: Lab - Implement SAP architecture on Windows Azure Virtual Machines
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Lab - Implement SAP architecture on Windows Azure Virtual Machines
   description: "Lab - Implement SAP architecture on Windows Azure virtual machines"
   ms.date: 01/09/2024
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 150
 content: |
-  [!include[](includes/4-implement-sap-architecture-on-azure-virtual-machines-run-windows.md)]
+  [!include[](includes/4-implement-sap-architecture-on-azure-virtual-machines-run-windows.md)]

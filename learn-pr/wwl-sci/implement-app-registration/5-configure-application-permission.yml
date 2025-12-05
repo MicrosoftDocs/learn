@@ -6,12 +6,14 @@ metadata:
   prefetch-feature-rollout: true
   title: Configure permission for an application
   description: "Configure permission for an application"
-  ms.date: 12/18/2024
+  ms.date: 03/31/2025
   author: wwlpublish
   ms.author: roberts
   ms.topic: unit
   ms.custom:
-  - N/A
+    - sfi-ropc-nochange
+    - N/A
+    - sfi-ga-nochange
 durationInMinutes: 1
 content: |
   [!include[](includes/5-configure-application-permission.md)]

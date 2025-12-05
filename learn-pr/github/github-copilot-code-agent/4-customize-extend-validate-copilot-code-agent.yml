@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.github.github-copilot-code-agent.customize-extend-validate-copilot-code-agent
+title: Customizing, extending, and validating the Copilot coding agent
+metadata:
+  title: Customizing, extending, and validating the Copilot coding agent
+  description: This content is a part of the Accelerate development with GitHub Copilot coding agent.
+  author: camihmerhar
+  ms.author: camhernandez
+  ms.date: 09/22/2025
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-customize-extend-validate-copilot-code-agent.md)]

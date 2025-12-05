@@ -1,10 +1,12 @@
 ### YamlMime:ModuleUnit
 uid: learn-wwl.load-data-into-microsoft-fabric-data-warehouse.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  title: Knowledge check
+  hidden_question_numbers: ["5143C2D0_10","5143C2D0_2","5143C2D0_38","5143C2D0_6","5143C2D0_75","5143C2D0_87","5143C2D0_91","5143C2D0_100","5143C2D0_104","5143C2D0_108","5143C2D0_112","5143C2D0_132"]
+  ai_generated_module_assessment: true
+  title: Module assessment
   description: "Knowledge check"
-  ms.date: 01/10/2025
+  ms.date: 5/15/2025
   author: JulianePadrao
   ms.author: jupadrao
   ms.topic: unit
@@ -12,6 +14,7 @@ metadata:
     - build-2023
     - build-2023-dataai
     - build-2023-fabric 
+  module_assessment: true
 durationInMinutes: 8
 quiz:
   questions:

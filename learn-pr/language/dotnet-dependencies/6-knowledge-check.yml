@@ -1,14 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.dotnet-dependencies.6-knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  title: Knowledge check
+  title: Module assessment
   description: Knowledge check
   ms.date: 10/16/2024
   author: jamesmontemagno
   ms.author: jamont
   ms.manager: markl
   ms.topic: unit
+  module_assessment: true
 durationInMinutes: 1
 content: |
   [!include[](includes/6-knowledge-check.md)]

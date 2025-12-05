@@ -9,6 +9,8 @@ terminals, each connected to a separate Linux VM. You must delete the VMs and re
 end of each day so they start fresh every morning. Creating the VMs manually after a long day is
 error-prone, so you need to write an Azure CLI script to automate the VM creation process.
 
+[!INCLUDE[](../../../includes/azure-optional-exercise-subscription-note.md)]
+
 ## Write a script to create virtual machines
 
 Follow these steps to write a script in Azure Cloud Shell that automates the creation of virtual

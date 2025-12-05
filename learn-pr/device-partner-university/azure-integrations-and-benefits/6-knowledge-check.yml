@@ -1,0 +1,85 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.azure-integrations-and-benefits-in-windows-server-2025.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge Check
+  description: This content is part of the "Azure integrations and benefits in Windows Server 2025" module.
+  ms.date: 09/03/2025
+  author: hhreyes21
+  ms.author: v-homerreyes
+  ms.topic: unit
+durationInMinutes: 5
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "What does Azure Arc enable for Windows Server 2025?"
+    choices:
+        - content: "Migration of workloads to Azure"
+          isCorrect: false
+          explanation: "Incorrect. Azure Arc enables management, not migration."
+        - content: "Centralized management across environments"
+          isCorrect: true
+          explanation: "Correct. Azure Arc centralizes management across on-premises, cloud, and edge environments."
+        - content: "Exclusive use of Azure-native services"
+          isCorrect: false
+          explanation: "Incorrect. Azure Arc allows use of Azure services on non-Azure servers."
+        - content: "Replacement of on-premises servers"
+          isCorrect: false
+          explanation: "Incorrect. Azure Arc enhances management, not replacement."
+  - content: "What is a key benefit of Hotpatching in Windows Server 2025?"
+    choices:
+        - content: "Increases server memory capacity"
+          isCorrect: false
+          explanation: "Incorrect. Hotpatching doesn't affect memory."
+        - content: "Enables real-time failover"
+          isCorrect: false
+          explanation: "Incorrect. That’s a resilience feature, not Hotpatching."
+        - content: "Reduces downtime during updates"
+          isCorrect: true
+          explanation: "Correct. Hotpatching minimizes reboots during updates."
+        - content: "Improves network latency"
+          isCorrect: false
+          explanation: "Incorrect. Hotpatching is unrelated to network performance."
+  - content: "Which Azure service helps enforce compliance across hybrid environments?"
+    choices:
+        - content: "Azure Monitor"
+          isCorrect: false
+          explanation: "Incorrect. It tracks patch status and alerts, not compliance enforcement."
+        - content: "Microsoft Sentinel"
+          isCorrect: false
+          explanation: "Incorrect. It monitors for security threats, not policy enforcement."
+        - content: "Azure Policy"
+          isCorrect: true
+          explanation: "Correct. Azure Policy enforces compliance across environments."
+        - content: "Azure VMware Solution"
+          isCorrect: false
+          explanation: "Incorrect. It supports VMware workloads, not compliance."
+  - content: "How does Azure Hybrid Benefit help organizations?"
+    choices:
+        - content: "Provides free cloud storage"
+          isCorrect: false
+          explanation: "Incorrect. Azure Hybrid Benefit doesn't offer free storage."
+        - content: "Enables automatic patching"
+          isCorrect: false
+          explanation: "Incorrect. That’s related to Hotpatching, not Hybrid Benefit."
+        - content: "Offers AI and HPC support"
+          isCorrect: false
+          explanation: "Incorrect. That’s a general Azure capability, not Hybrid Benefit."
+        - content: "Reduces cloud costs using existing licenses"
+          isCorrect: true
+          explanation: "Correct. It allows reuse of licenses to save costs."
+  - content: "What feature allows consistent app deployment across environments?"
+    choices:
+        - content: "Azure Monitor"
+          isCorrect: false
+          explanation: "Incorrect. It’s used for tracking and alerts, not deployment."
+        - content: "Azure Arc"
+          isCorrect: true
+          explanation: "Correct. Azure Arc enables consistent deployment across platforms."
+        - content: "Azure Sentinel"
+          isCorrect: false
+          explanation: "Incorrect. It’s a SIEM tool for threat detection."
+        - content: "Azure Hybrid Benefit"
+          isCorrect: false
+          explanation: "Incorrect. It’s focused on cost savings, not deployment."
+

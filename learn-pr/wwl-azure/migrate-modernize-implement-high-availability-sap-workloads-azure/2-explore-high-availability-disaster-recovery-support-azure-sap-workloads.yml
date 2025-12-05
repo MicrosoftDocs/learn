@@ -2,8 +2,6 @@
 uid: learn.wwl.migrate-modernize-implement-high-availability-sap-workloads-azure.explore-high-availability-disaster-recovery-support-azure-sap-workloads
 title: Explore high availability and disaster recovery support of Azure for SAP workloads
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Explore high availability and disaster recovery support of Azure for SAP workloads
   description: "Explore the supported options for high availability and disaster recovery of Azure for SAP workloads."
   ms.date: 10/10/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 3
 content: |
-  [!include[](includes/2-explore-high-availability-disaster-recovery-support-azure-sap-workloads.md)]
+  [!include[](includes/2-explore-high-availability-disaster-recovery-support-azure-sap-workloads.md)]

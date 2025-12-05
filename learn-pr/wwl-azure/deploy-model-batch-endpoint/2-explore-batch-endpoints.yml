@@ -2,13 +2,11 @@
 uid: learn.wwl.deploy-model-batch-endpoint.explore-batch-endpoints
 title: Understand and create batch endpoints
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Understand and create batch endpoints
   description: Understand and create batch endpoints
   author: wwlpublish
   ms.author: madiepev
-  ms.date: 09/10/2024
+  ms.date: 12/01/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot

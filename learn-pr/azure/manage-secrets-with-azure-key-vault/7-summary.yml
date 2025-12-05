@@ -2,8 +2,6 @@
 uid: learn.manage-secrets-with-azure-key-vault.7-summary
 title: Summary
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Summary
   description: Summary
   ms.date: 12/12/2024
@@ -51,4 +49,4 @@ quiz:
     - content: It doesn't protect your secrets. Secrets are unprotected once your application loads them.
       isCorrect: true
       explanation: Once an app loads your secrets, they're unprotected. Make sure to not log them, store them, or return them in client responses.  
-
+

@@ -1,8 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.choose-storage-approach-in-azure.2-classify-data
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Classify your data
   description: Classify your data.
   ms.date: 10/18/2024
@@ -39,4 +37,4 @@ quiz:
     - content: "Unstructured"
       isCorrect: true
       explanation: "Correct. A video might have an overall structure, but the data that forms the video itself is unstructured. Unstructured data often is delivered in file format. "
-
+

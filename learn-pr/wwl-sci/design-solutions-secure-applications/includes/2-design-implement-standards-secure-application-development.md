@@ -245,21 +245,35 @@ Bridge to Kubernetes allows you to run and debug code on your development comput
 
 ### Enforce container security with Microsoft Defender for Containers and Azure Policy
 
-Microsoft Defender for Containers is the cloud-native solution for securing your containers.
+Microsoft Defender for Containers is the cloud-native solution for securing your containers. Defender for Containers assists you with four core domains of container security:
+
+- Security Posture Management: Continuously monitors cloud and Kubernetes APIs to discover resources, detect misconfigurations, assess risks, and support advanced threat hunting via Defender for Cloud’s security explorer.
+
+- Vulnerability Assessment: Performs agentless scans of container images, running containers, and Kubernetes nodes. It offers remediation guidance, daily re-scans, and exploitability insights, with signed findings for authenticity.
+
+- Run-Time Threat Protection: Detects threats in Kubernetes environments using Microsoft threat intelligence, maps risks to the MITRE ATT&CK framework, and enables investigation and response through Defender XDR.
+
+- Deployment & Monitoring: Ensures sensors are deployed across Kubernetes clusters, supports standard monitoring tools, and helps manage unmonitored resources efficiently.
 
 ### Manage identities and access with the Microsoft identity platform
 
-The Microsoft identity platform is an evolution of the Azure Active Directory (Azure AD) developer platform. It allows developers to build applications that sign in all Microsoft identities and get tokens to call Microsoft APIs, such as Microsoft Graph, or APIs that developers have built.
+The Microsoft identity platform is a cloud identity service that allows you to build applications your users and customers can sign in to using their Microsoft identities or social accounts. It authorizes access to your own APIs or Microsoft APIs like Microsoft Graph. The identity platform supports developers building single-tenant, line-of-business (LOB) applications, as well as multitenant software-as-a-service (SaaS) applications.
 
-Azure AD B2C provides business-to-customer identity as a service. Your customers use their preferred social, enterprise, or local account identities to get single sign-on access to your applications and APIs.
+The Microsoft identity platform, includes:
 
-Access management for cloud resources is a critical function for any organization that uses the cloud. Azure role-based access control (Azure RBAC) helps you manage who has access to Azure resources, what they can do with those resources, and what areas they can access.
+- OAuth 2.0 and OpenID Connect (OIDC) standard-compliant authentication service: This enables developers to authenticate several identity types, including:
+  - work or school accounts, provisioned through Microsoft Entra ID
+  - External partners, consumers, or business customers by using Microsoft Entra External ID
 
-You can use the Microsoft identity platform to authenticate with the rest of your DevOps tools, including native support within Azure DevOps and integrations with GitHub Enterprise.
+- Open source standards-compliant libraries: Microsoft Authentication Library (MSAL) provides built-in support for Conditional Access scenarios, single sign-on (SSO) experiences for your users, built-in token caching support, and more. MSAL supports the different authorization grants and token flows used in different application types and scenarios.
 
-Currently, an Azure Kubernetes Service (AKS) cluster (specifically, the Kubernetes cloud provider) requires an identity to create additional resources like load balancers and managed disks in Azure. This identity can be either a managed identity or a service principal. If you use a service principal, you must either provide one or AKS creates one on your behalf. If you use managed identity, one will be created for you by AKS automatically. For clusters that use service principals, the service principal must be renewed eventually to keep the cluster working. Managing service principals adds complexity, which is why it's easier to use managed identities instead. The same permission requirements apply for both service principals and managed identities.
+- Microsoft identity platform endpoint: OIDC certified and works with the Microsoft Authentication Libraries (MSAL) or any other standards-compliant library to implement human readable scopes, in accordance with industry standards.
 
-Managed identities are essentially a wrapper around service principals, and make their management simpler.
+- Application management:
+  - Application registration and configuration via Microsoft Entra admin center
+  - Programmatic configuration of your applications through the Microsoft Graph API and PowerShell so you can automate your DevOps tasks.
+
+The Microsoft identity platform offers integration of modern innovations in the identity and security space like passwordless authentication, step-up authentication, and Conditional Access. You don't need to implement such functionality yourself. Applications integrated with the Microsoft identity platform natively take advantage of such innovations.
 
 ### Manage keys and secrets with Azure Key Vault
 

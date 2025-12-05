@@ -4,8 +4,8 @@ metadata:
   title: Analyze and report after reservation purchase
   description: Learn how to analyze and review data about chargebacks and unused reservations.
   ms.date: 10/24/2024
-  author: bandersmsft
-  ms.author: banders
+  author: tonyafehr
+  ms.author: tfehr
   ms.topic: unit
 title: Analyze and report after reservation purchase
 durationInMinutes: 6

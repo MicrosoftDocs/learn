@@ -1,42 +1,41 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.continuous-deployment-for-machine-learning.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: Knowledge check
   author: wwlpublish
   ms.author: madiepev
-  ms.date: 07/10/2024
+  ms.date: 12/01/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
+  module_assessment: true
 azureSandbox: false
 labModal: false
 durationInMinutes: 3
 quiz:
   questions:
-  - content: "A data scientist is experimenting with model training. After some iterations, one model seems suitable for deployment but isn't quite ready for consumption yet. An Azure Pipeline is created to train the model. Which environment should the model be trained in first?"
+  - content: "A data scientist is experimenting with model training. After some iterations, one model seems suitable for deployment but isn't ready for consumption yet. An Azure Pipeline is created to train the model. Which environment should the model be trained in first?"
     choices:
     - content: "Production"
       isCorrect: false
-      explanation: "Incorrect. You should deploy to production when everything has been tested."
-    - content: "Pre-production"
+      explanation: "Incorrect. You should deploy to production after you tested everything."
+    - content: "Preproduction"
       isCorrect: false
-      explanation: "Incorrect. You should deploy the model to pre-production when it's ready for production, but you want to test it before it moves to production."
+      explanation: "Incorrect. You should deploy the model to preproduction when it's ready for production, but you want to test it before it moves to production."
     - content: "Development"
       isCorrect: true
       explanation: "Correct. A safe first step is to train a model in the development environment, triggered by an Azure Pipeline."
-  - content: "How can a machine learning engineer control the movement of a model from development to pre-production?"
+  - content: "How can a machine learning engineer control the movement of a model from development to preproduction?"
     choices:
     - content: "Add a trigger."
       isCorrect: false
       explanation: "Incorrect. A trigger is needed to run a pipeline or workflow."
     - content: "Add an approval check."
       isCorrect: true
-      explanation: "Correct. An approval check will require someone to review a pipeline before it's executed."
-    - content: "Add RBAC."
+      explanation: "Correct. An approval check requires someone to review a pipeline before they execute the pipeline."
+    - content: "Add Role-Based Access Control (RBAC)."
       isCorrect: false
       explanation: "Incorrect. Use RBAC to give access to resources like the Azure Machine Learning pipeline."
 

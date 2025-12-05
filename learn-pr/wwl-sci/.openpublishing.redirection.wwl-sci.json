@@ -228,6 +228,11 @@
         "redirect_document_id": false
       },
       {
+        "source_path_from_root": "/learn-pr/wwl-sci/implement-access-management-for-azure-resources/9-explore-entra-permissions-management-cloudknox.md",
+        "redirect_url": "https://learn.microsoft.com/training/modules/implement-access-management-for-azure-resources/1-introduction/",
+        "redirect_document_id": false
+      },
+      {
         "source_path_from_root": "/learn-pr/wwl-sci/describe-compliance-management-capabilities-microsoft-365/4-describe-compliance-score.md",
         "redirect_url": "https://learn.microsoft.com/training/modules/describe-purview-risk-compliance-governance/4-describe-compliance-manager/",
         "redirect_document_id": false
@@ -311,6 +316,337 @@
       {
         "source_path_from_root": "/learn-pr/paths/purview-implement-manage-dlp-retention/index.yml",
         "redirect_url": "/training/paths/purview-implement-manage-dlp/"
-      } 
+      }, 
+      {
+        "source_path_from_root": "/learn-pr/wwl-sci/design-solutions-secure-privileged-access/5-design-solution-cloud-infrastructure-entitlement-management.yml",
+        "redirect_url": "https://learn.microsoft.com/training/modules/design-solutions-secure-privileged-access/",
+        "redirect_document_id": false
+      },
+      {
+        "source_path_from_root": "/learn-pr/wwl-sci/describe-identity-protection-governance-capabilities/5a-describe-entra-permissions-management.yml",
+        "redirect_url": "https://learn.microsoft.com/training/paths/describe-capabilities-of-microsoft-identity-access/",
+        "redirect_document_id": false
+      },
+      {
+        "source_path_from_root": "/learn-pr/wwl-sci/connect-threat-indicators-to-azure-sentinel/3-connect-threat-intelligence-taxii-connector.yml",
+        "redirect_url": "https://learn.microsoft.com/training/modules/connect-threat-indicators-to-azure-sentinel/4-connect-threat-intelligence-taxii-connector/",
+        "redirect_document_id": false
+      },
+      {
+        "source_path_from_root": "/learn-pr/wwl-sci/connect-threat-indicators-to-azure-sentinel/4-connect-threat-intelligence-platforms-connector.yml",
+        "redirect_url": "https://learn.microsoft.com/training/modules/connect-threat-indicators-to-azure-sentinel/5-connect-threat-intelligence-platforms-connector/",
+        "redirect_document_id": false
+      },
+      {
+        "source_path_from_root": "/learn-pr/wwl-sci/connect-threat-indicators-to-azure-sentinel/5-view-your-threat-indicators.yml",
+        "redirect_url": "https://learn.microsoft.com/training/modules/connect-threat-indicators-to-azure-sentinel/7-view-your-threat-indicators/",
+        "redirect_document_id": false
+      },
+      {
+        "source_path_from_root": "/learn-pr/wwl-sci/connect-threat-indicators-to-azure-sentinel/6-knowledge-check.yml",
+        "redirect_url": "https://learn.microsoft.com/training/modules/connect-threat-indicators-to-azure-sentinel/8-knowledge-check/",
+        "redirect_document_id": false
+      },
+      {
+        "source_path_from_root": "/learn-pr/wwl-sci/connect-threat-indicators-to-azure-sentinel/5-connect-threat-intelligence-platforms-connector.yml",
+        "redirect_url": "https://learn.microsoft.com/training/modules/connect-threat-indicators-to-azure-sentinel/5-connect-threat-intelligence-upload-api-connector/",
+        "redirect_document_id": false
+      },
+      {
+        "source_path_from_root": "/learn-pr/wwl-sci/connect-threat-indicators-to-azure-sentinel/6-connect-threat-intelligence-upload-api-connector.yml",
+        "redirect_url": "https://learn.microsoft.com/training/modules/connect-threat-indicators-to-azure-sentinel/5-connect-threat-intelligence-upload-api-connector/",
+        "redirect_document_id": false
+      },
+      {
+        "source_path_from_root": "/learn-pr/wwl-sci/connect-threat-indicators-to-azure-sentinel/7-view-your-threat-indicators.yml",
+        "redirect_url": "https://learn.microsoft.com/training/modules/connect-threat-indicators-to-azure-sentinel/6-view-your-threat-indicators/",
+        "redirect_document_id": false
+      },
+      {
+        "source_path_from_root": "/learn-pr/wwl-sci/connect-threat-indicators-to-azure-sentinel/8-knowledge-check.yml",
+        "redirect_url": "https://learn.microsoft.com/training/modules/connect-threat-indicators-to-azure-sentinel/7-knowledge-check/",
+        "redirect_document_id": false
+      },
+      {
+        "source_path_from_root": "/learn-pr/wwl-sci/connect-threat-indicators-to-azure-sentinel/9-summary-resources.yml",
+        "redirect_url": "https://learn.microsoft.com/training/modules/connect-threat-indicators-to-azure-sentinel/8-summary-resources/",
+        "redirect_document_id": false
+      },
+      {
+        "source_path_from_root": "/learn-pr/wwl-sci/connect-threat-indicators-to-azure-sentinel/7-summary-resources.yml",
+        "redirect_url": "https://learn.microsoft.com/training/modules/connect-threat-indicators-to-azure-sentinel/9-summary-resources/",
+        "redirect_document_id": false
+      },
+      {
+        "source_path_from_root": "/learn-pr/wwl-sci/connect-azure-assets-to-azure-defender/4-manual-log-analytics-agent-provisioning.yml",
+        "redirect_url": "https://learn.microsoft.com/training/modules/connect-azure-assets-to-azure-defender/4-manual-azure-monitor-agent-provisioning/",
+        "redirect_document_id": false
+      },
+      {
+        "source_path_from_root": "/learn-pr/wwl-sci/configure-siem-security-operations-using-microsoft-sentinel/6-summary.yml",
+        "redirect_url": "https://learn.microsoft.com/training/modules/configure-siem-security-operations-using-microsoft-sentinel/7-summary/",
+        "redirect_document_id": false
+      },
+      {
+        "source_path_from_root": "/learn-pr/wwl-sci/integrate-microsoft-defender-xdr-with-microsoft-sentinel/6-knowledge-check.yml",
+        "redirect_url": "https://learn.microsoft.com/en-us/training/modules/integrate-microsoft-defender-xdr-with-microsoft-sentinel/knowledge-check/",
+        "redirect_document_id": false
+      },
+      {
+        "source_path_from_root": "/learn-pr/wwl-sci/integrate-microsoft-defender-xdr-with-microsoft-sentinel/7-summary.yml",
+        "redirect_url": "https://learn.microsoft.com/training/modules/integrate-microsoft-defender-xdr-with-microsoft-sentinel/summary/",
+        "redirect_document_id": false
+      },
+    {
+      "source_path": "learn-pr/wwl-azure/purview-implement-manage-retention/auto-apply-retention-label.md",
+      "redirect_url": "/training/modules/purview-manage-records/auto-apply-retention-label",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/purview-implement-manage-retention/declare-record.md",
+      "redirect_url": "/training/modules/purview-manage-records/declare-record",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/purview-implement-manage-retention/disposition-review.md",
+      "redirect_url": "/training/modules/purview-manage-records/disposition-review",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/priva-subject-rights-requests/configure-prerequisites-beyond-m365.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/priva-subject-rights-requests/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/priva-subject-rights-requests/create-subject-rights-request-beyond-m365.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/priva-subject-rights-requests/",
+      "redirect_document_id": false
+    },
+
+    {
+    "source_path_from_root": "/learn-pr/wwl-sci/case-study-design-solutions-security-best-practices-priorities/index.md",
+    "redirect_url": "https://learn.microsoft.com/training/paths/sc-100-design-solutions-best-practices-priorities/",
+    "redirect_document_id": false
+    },
+
+    {
+    "source_path_from_root": "/learn-pr/wwl-sci/case-study-design-solutions-security-best-practices-priorities/1-introduction.md",
+    "redirect_url": "https://learn.microsoft.com/training/paths/sc-100-design-solutions-best-practices-priorities/",
+    "redirect_document_id": false
+    },
+
+    {
+    "source_path_from_root": "/learn-pr/wwl-sci/case-study-design-solutions-security-best-practices-priorities/2-case-study-description.md",
+    "redirect_url": "https://learn.microsoft.com/training/paths/sc-100-design-solutions-best-practices-priorities/",
+    "redirect_document_id": false
+    },
+
+    {
+    "source_path_from_root": "/learn-pr/wwl-sci/case-study-design-solutions-security-best-practices-priorities/3-case-study-answers.md",
+    "redirect_url": "https://learn.microsoft.com/training/paths/sc-100-design-solutions-best-practices-priorities/",
+    "redirect_document_id": false
+    },
+
+    {
+    "source_path_from_root": "/learn-pr/wwl-sci/case-study-design-solutions-security-best-practices-priorities/4-conceptual-walkthrough.md",
+    "redirect_url": "https://learn.microsoft.com/training/paths/sc-100-design-solutions-best-practices-priorities/",
+    "redirect_document_id": false
+    },
+
+    {
+    "source_path_from_root": "/learn-pr/wwl-sci/case-study-design-solutions-security-best-practices-priorities/5-technical-walkthrough.md",
+    "redirect_url": "https://learn.microsoft.com/training/paths/sc-100-design-solutions-best-practices-priorities/",
+    "redirect_document_id": false
+    },
+
+    {
+    "source_path_from_root": "/learn-pr/wwl-sci/case-study-design-solutions-security-best-practices-priorities/6-knowledge-check.md",
+    "redirect_url": "https://learn.microsoft.com/training/paths/sc-100-design-solutions-best-practices-priorities/",
+    "redirect_document_id": false
+    },
+
+    {
+    "source_path_from_root": "/learn-pr/wwl-sci/case-study-design-solutions-security-best-practices-priorities/7-summary.md",
+    "redirect_url": "https://learn.microsoft.com/training/paths/sc-100-design-solutions-best-practices-priorities/",
+    "redirect_document_id": false
+    },
+
+    {
+    "source_path_from_root": "/learn-pr/achievements/learn.wwl.case-study-design-solutions-security-best-practices-priorities.badge.yml",
+    "redirect_url": "https://learn.microsoft.com/training/paths/sc-100-design-solutions-best-practices-priorities/",
+    "redirect_document_id": false
+    },
+
+    {
+    "source_path_from_root": "/learn-pr/wwl-sci/case-study-design-security-solutions-infrastructure/index.md",
+    "redirect_url": "https://learn.microsoft.com/training/modules/case-study-endpoints-infrastructure/",
+    "redirect_document_id": false
+    },
+
+
+    {
+    "source_path_from_root": "/learn-pr/wwl-sci/case-study-design-security-solutions-infrastructure/1-introduction.md",
+    "redirect_url": "https://learn.microsoft.com/training/modules/case-study-endpoints-infrastructure/",
+    "redirect_document_id": false
+    },
+
+
+    {
+    "source_path_from_root": "/learn-pr/wwl-sci/case-study-design-security-solutions-infrastructure/2-case-study-description.md",
+    "redirect_url": "https://learn.microsoft.com/training/modules/case-study-endpoints-infrastructure/",
+    "redirect_document_id": false
+    },
+
+
+    {
+    "source_path_from_root": "/learn-pr/wwl-sci/case-study-design-security-solutions-infrastructure/3-case-study-answers.md",
+    "redirect_url": "https://learn.microsoft.com/training/modules/case-study-endpoints-infrastructure/",
+    "redirect_document_id": false
+    },
+
+    {
+    "source_path_from_root": "/learn-pr/wwl-sci/case-study-design-security-solutions-infrastructure/4-conceptual-walkthrough.md",
+    "redirect_url": "https://learn.microsoft.com/training/modules/case-study-endpoints-infrastructure/",
+    "redirect_document_id": false
+    },
+
+    {
+    "source_path_from_root": "/learn-pr/wwl-sci/case-study-design-security-solutions-infrastructure/5-technical-walkthrough.md",
+    "redirect_url": "https://learn.microsoft.com/training/modules/case-study-endpoints-infrastructure/",
+    "redirect_document_id": false
+    },
+
+    {
+    "source_path_from_root": "/learn-pr/wwl-sci/case-study-design-security-solutions-infrastructure/6-knowledge-check.md",
+    "redirect_url": "https://learn.microsoft.com/training/modules/case-study-endpoints-infrastructure/",
+    "redirect_document_id": false
+    },
+
+    {
+    "source_path_from_root": "/learn-pr/wwl-sci/case-study-design-security-solutions-infrastructure/7-summary.md",
+    "redirect_url": "https://learn.microsoft.com/training/modules/case-study-endpoints-infrastructure/",
+    "redirect_document_id": false
+    },
+
+    {
+    "source_path_from_root": "/learn-pr/achievements/learn.wwl.case-study-design-security-solutions-infrastructure.badge.yml",
+    "redirect_url": "https://learn.microsoft.com/training/modules/case-study-endpoints-infrastructure/",
+    "redirect_document_id": false
+    },
+
+    {
+    "source_path_from_root": "/learn-pr/wwl-sci/case-study-design-security-solutions-applications-data/index.md",
+    "redirect_url": "https://learn.microsoft.com/training/modules/case-study-apps-data/",
+    "redirect_document_id": false
+    },
+
+
+    {
+    "source_path_from_root": "/learn-pr/wwl-sci/case-study-design-security-solutions-applications-data/1-introduction.md",
+    "redirect_url": "https://learn.microsoft.com/training/modules/case-study-apps-data/",
+    "redirect_document_id": false
+    },
+
+
+    {
+    "source_path_from_root": "/learn-pr/wwl-sci/case-study-design-security-solutions-applications-data/2-case-study-description.md",
+    "redirect_url": "https://learn.microsoft.com/training/modules/case-study-apps-data/",
+    "redirect_document_id": false
+    },
+
+
+    {
+    "source_path_from_root": "/learn-pr/wwl-sci/case-study-design-security-solutions-applications-data/3-case-study-answers.md",
+    "redirect_url": "https://learn.microsoft.com/training/modules/case-study-apps-data/",
+    "redirect_document_id": false
+    },
+
+
+    {
+    "source_path_from_root": "/learn-pr/wwl-sci/case-study-design-security-solutions-applications-data/4-conceptual-walkthrough.md",
+    "redirect_url": "https://learn.microsoft.com/training/modules/case-study-apps-data/",
+    "redirect_document_id": false
+    },
+
+
+    {
+    "source_path_from_root": "/learn-pr/wwl-sci/case-study-design-security-solutions-applications-data/5-technical-walkthrough.md",
+    "redirect_url": "https://learn.microsoft.com/training/modules/case-study-apps-data/",
+    "redirect_document_id": false
+    },
+
+    {
+    "source_path_from_root": "/learn-pr/wwl-sci/case-study-design-security-solutions-applications-data/6-knowledge-check.md",
+    "redirect_url": "https://learn.microsoft.com/training/modules/case-study-apps-data/",
+    "redirect_document_id": false
+    },
+
+
+    {
+    "source_path_from_root": "/learn-pr/wwl-sci/case-study-design-security-solutions-applications-data/7-summary.md",
+    "redirect_url": "https://learn.microsoft.com/training/modules/case-study-apps-data/",
+    "redirect_document_id": false
+    },
+
+
+    {
+    "source_path_from_root": "/learn-pr/achievements/learn.wwl.case-study-design-security-solutions-applications-data.badge.yml",
+    "redirect_url": "https://learn.microsoft.com/training/modules/case-study-apps-data/",
+    "redirect_document_id": false
+    },
+
+    {
+    "source_path_from_root": "/learn-pr/wwl-sci/case-study-design-security-operations-identity-compliance-capabilities/index.md",
+    "redirect_url": "https://learn.microsoft.com/training/modules/case-study-identity-data-security/",
+    "redirect_document_id": false
+    },
+
+    {
+    "source_path_from_root": "/learn-pr/wwl-sci/case-study-design-security-operations-identity-compliance-capabilities/1-introduction.md",
+    "redirect_url": "https://learn.microsoft.com/training/modules/case-study-identity-data-security/",
+    "redirect_document_id": false
+    },
+
+    {
+    "source_path_from_root": "/learn-pr/wwl-sci/case-study-design-security-operations-identity-compliance-capabilities/2-case-study-description.md",
+    "redirect_url": "https://learn.microsoft.com/training/modules/case-study-identity-data-security/",
+    "redirect_document_id": false
+    },
+
+    {
+    "source_path_from_root": "/learn-pr/wwl-sci/case-study-design-security-operations-identity-compliance-capabilities/3-case-study-answers.md",
+    "redirect_url": "https://learn.microsoft.com/training/modules/case-study-identity-data-security/",
+    "redirect_document_id": false
+    },
+
+    {
+    "source_path_from_root": "/learn-pr/wwl-sci/case-study-design-security-operations-identity-compliance-capabilities/4-conceptual-walkthrough.md",
+    "redirect_url": "https://learn.microsoft.com/training/modules/case-study-identity-data-security/",
+    "redirect_document_id": false
+    },
+
+    {
+    "source_path_from_root": "/learn-pr/wwl-sci/case-study-design-security-operations-identity-compliance-capabilities/5-technical-walkthrough.md",
+    "redirect_url": "https://learn.microsoft.com/training/modules/case-study-identity-data-security/",
+    "redirect_document_id": false
+    },
+
+    {
+    "source_path_from_root": "/learn-pr/wwl-sci/case-study-design-security-operations-identity-compliance-capabilities/6-knowledge-check.md",
+    "redirect_url": "https://learn.microsoft.com/training/modules/case-study-identity-data-security/",
+    "redirect_document_id": false
+    },
+
+    {
+    "source_path_from_root": "/learn-pr/wwl-sci/case-study-design-security-operations-identity-compliance-capabilities/7-summary.md",
+    "redirect_url": "https://learn.microsoft.com/training/modules/case-study-identity-data-security/",
+    "redirect_document_id": false
+    },
+
+    {
+    "source_path_from_root": "/learn-pr/achievements/learn.wwl.case-study-design-security-operations-identity-compliance-capabilities.badge.yml",
+    "redirect_url": "https://learn.microsoft.com/training/modules/case-study-identity-data-security/",
+    "redirect_document_id": false
+    }
     ]
 }

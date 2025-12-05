@@ -4,7 +4,7 @@ title: Learn how it works
 metadata:
   title: Learn how it works
   description: "Learn how it works"
-  ms.date: 04/25/2024
+  ms.date: 11/10/2025
   author: wwlpublish
   ms.author: buzahid
   ms.topic: unit
@@ -25,4 +25,3 @@ quiz:
     - content: "`Console.WriteLine` appends a new line after the output."
       isCorrect: true
       explanation: "Correct! `Console.WriteLine` prints the output on the existing line and appends a new line after it."
-interactive: csharp

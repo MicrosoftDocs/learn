@@ -2,8 +2,6 @@
 uid: learn.wwl.creating-and-configuring-hdinsight-cluster.6-enabling-monitoring-hdinsight-jobs
 title: Enable monitoring of HDInsight jobs.
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Enable monitoring of HDInsight jobs
   description: "Enable monitoring of HDInsight jobs"
   ms.date: 04/05/2024
@@ -15,4 +13,4 @@ labModal: false
 durationInMinutes: 9
 content: |
   [!include[](includes/6-enabling-monitoring-hdinsight-jobs.md)]
-
+

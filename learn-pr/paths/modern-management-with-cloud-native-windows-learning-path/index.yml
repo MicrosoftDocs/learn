@@ -1,0 +1,32 @@
+### YamlMime:LearningPath
+uid: learn.dpu.modern-management-with-cloud-native-windows-accreditation-2025
+title: Modern management with Cloud-native Windows Accreditation 2025
+metadata:
+  title: Modern Management With Cloud-Native Windows Accreditation 2025
+  description: This Learning Path covers cloud-native Windows management using Microsoft Intune, Microsoft Entra ID, and Windows Autopilot. Learn how these tools work together to simplify deployment, identity, and device management.
+  ms.date: 09/09/2025
+  author: melissawinters
+  ms.author: v-mwinters
+  ms.topic: learning-path
+  ms.custom: CC112124
+summary: >
+  Explore the fundamentals of cloud-native Windows management with modules on Microsoft Intune, Windows Autopilot, and Microsoft Entra ID. Discover how these tools work together to simplify device provisioning, identity, and access management.
+prerequisites: None
+iconUrl: /training/achievements/modern-management-with-cloud-native-windows-accreditation-2025.svg
+levels:
+  - beginner
+roles:
+  - administrator
+  - business-owner
+  - business-user
+  - technology-manager
+products:
+  - intune
+  - windows-autopilot
+  - entra-id
+modules:
+  - learn.dpu.introduction-to-entra-id
+  - learn.dpu.windows-autopilot
+  - learn.dpu.microsoft-intune
+trophy:
+  uid: learn.dpu.modern-management-with-cloud-native-windows-accreditation-2025.trophy

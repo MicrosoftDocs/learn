@@ -2,8 +2,6 @@
 uid: learn.azure.troubleshoot-tightly-coupled-hpc-apps.3-knowledge-check-selecting-health-check-tools
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: Knowledge check
   ms.date: 05/29/2024
@@ -48,4 +46,4 @@ quiz:
       explanation: This answer is incorrect. Intel IMP-IMP1 PingPong is used to measure network latency/bandwidth, not VM memory bandwidth.
     - content: Intel MLC.
       isCorrect: true
-      explanation: Correct. Intel Memory Latency Checker is a useful tool to benchmark the maximum memory bandwidth and determine the health of the VM memory.
+      explanation: Correct. Intel Memory Latency Checker is a useful tool to benchmark the maximum memory bandwidth and determine the health of the VM memory.

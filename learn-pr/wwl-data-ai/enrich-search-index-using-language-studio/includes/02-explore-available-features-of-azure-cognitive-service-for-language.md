@@ -1,9 +1,9 @@
 
-Here you'll explore the features Azure AI Language offers and then use the demo-like environment to test a preconfigured sentiment model. You'll then see the steps to create, train and deploy a custom model for conversational language understanding.
+Here you'll explore the features Azure Language offers and then use the demo-like environment to test a preconfigured sentiment model. You'll then see the steps to create, train and deploy a custom model for conversational language understanding.
 
-## Azure AI Language features
+## Azure Language features
 
-Azure AI Language groups its features into the following areas:
+Azure Language groups its features into the following areas:
 
 1. Classify text
 1. Understand questions and conversational language
@@ -11,23 +11,23 @@ Azure AI Language groups its features into the following areas:
 1. Summarize text
 1. Translate text
 
-#### Classify text
+### Classify text
 
 :::image type="content" source="../media/classify-text-services-small.png" lightbox="../media/classify-text-services.png" alt-text="A screenshot showing the text classification capabilities.":::
 
-#### Understand questions and conversational language
+### Understand questions and conversational language
 
 :::image type="content" source="../media/understand-conversational-language-small.png" lightbox="../media/understand-conversational-language.png" alt-text="A screenshot showing question understanding and conversational language capabilities.":::
 
-#### Extract information
+### Extract information
 
 :::image type="content" source="../media/extract-information-services-small.png" lightbox="../media/extract-information-services.png" alt-text="A screenshot of the information extraction capabilities":::
 
-#### Summarize text
+### Summarize text
 
 :::image type="content" source="../media/text-summarize-small.png" lightbox="../media/text-summarize.png" alt-text="A screenshot of text summarization capabilities.":::
 
-#### Translate text
+### Translate text
 
 :::image type="content" source="../media/translate-text-small.png" lightbox="../media/translate-text.png" alt-text="A screenshot showing text translation capabilities.":::
 
@@ -35,16 +35,14 @@ Features can be either preconfigured or customizable. Preconfigured features can
 
 The other features with **\*** and green cogs in their logo need user customization. They require you to train their models so they fit your data better. After you have train them, you deploy and can then use them to power your apps or use the same demo-like testing environment.
 
-
-
-### Test and use preconfigured language features
+## Test and use preconfigured language features
 
 1. Go to the [Language Studio](https://aka.ms/languageStudio) and sign in with your Azure account.
 1. If you haven't got a language resource, create one.
 
     :::image type="content" source="../media/select-sentiment-small.png" alt-text="A screenshot showing selecting analyze sentiment." lightbox="../media/select-sentiment.png":::
 
-1. Scroll down to the classify text section, then select **Analyze sentiment and mine options**.
+1. Go to the classify text section, then select **Analyze sentiment and mine options**.
 1. Scroll down, then select **Service Review (long)**.
 
     :::image type="content" source="../media/analyze-sentiment-demo-environment-small.png" alt-text="A screenshot of the demo-like testing environment." lightbox="../media/analyze-sentiment-demo-environment.png":::
@@ -58,7 +56,7 @@ The other features with **\*** and green cogs in their logo need user customizat
 
 You can see how the sentiment model has identified words that help it calculate an overall positive score. In the sample text, the model returns an **75% positive** result for the whole document.
 
-You can also drill down into individual sentences for more detail. Azure AI Language then gives you guidance for how to use the model in your own apps.
+You can also drill down into individual sentences for more detail. Azure Language then gives you guidance for how to use the model in your own apps.
 
 For example, you can get the same JSON response from the model by using this curl statement in your development environment:
 
@@ -66,13 +64,13 @@ For example, you can get the same JSON response from the model by using this cur
 curl -v -X POST "https://<YOUR_ENDPOINT_HERE>/language/:analyze-text?api-version=2022-05-01" -H "Content-Type: application/json" -H "Ocp-Apim-Subscription-Key: subscription key" --data-ascii "{\"kind\":\"SentimentAnalysis\",\"analysisInput\":{\"documents\":[{\"id\":\"documentId\",\"text\":\"Long waits...BUT FOR GOOD REASON. Some awesome Italian food and great vibes. Contoso Bistro always has live music or events going on to keep you entertained. The food is good enough to keep me entertained though!\n\n        The Contoso Bistro lasagna is a classic! The outdoor back patio is such a vibe, especially in the summer. Great service as well :) Love this place and will be back for more.\",\"language\":\"en\"}]},\"parameters\":{\"opinionMining\":true}}" 
 ```
 
-### Create, train, and deploy a conversation language understanding model
+## Create, train, and deploy a conversation language understanding model
 
-Each of the customizable features in Azure AI Language needs different steps to create the models. In this example, you'll see how to create a conversation language understanding model.
+Each of the customizable features in Azure Language needs different steps to create the models. In this example, you'll see how to create a conversation language understanding model.
 
 Conversational language understanding aims to build a model that predicts intention from conversational text. For example, imagine an email app that you can chat with to send email messages or flag emails. You train the model on sentences like "please add a flag to that email" or "okay, ready to send". These sentences would be translated to intents for `flag email` and `send email`.
 
-To use language understanding you'll need to have an Azure AI Language resource already created in Azure, then you can carry out the following steps in Language Studio:
+To use language understanding you'll need to have an Azure Language resource already created in Azure, then you can carry out the following steps in Language Studio:
 
 1. From the home page, you select **Conversational Language Understanding** in the **Understand questions and conversational language** tab.
 1. Select **+ Create new project**.

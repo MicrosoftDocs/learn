@@ -1,6 +1,6 @@
 In this exercise, you use Pytest to test a function. Then, you find and fix some potential problems with the function that cause failing tests. Looking at failures and using Pytest's rich error reporting is essential to identify and fix problematic tests or bugs in production code.
 
-For this exercise, we use a function called `admin_command()` that accepts a system command as input, and optionally prefixes it with the `sudo` tool. The function has a bug, that you discover by writing tests.
+For this exercise, we use a function called `admin_command()` that accepts a system command as input, and optionally prefixes it with the `sudo` tool. The function has a bug that you discover by writing tests.
 
 ## Step 1 - Add a file with tests for this exercise
 
@@ -38,7 +38,7 @@ For this exercise, we use a function called `admin_command()` that accepts a sys
     ```
 
 > [!NOTE]
-> It isn't common to have tests within the same file as actual code. For simplicity, the examples in this exercise will have actual code in the same file. In real-world Python projects, tests are typically separated by files and directories from the code that they're testing.
+> It isn't common to have tests within the same file as actual code. For simplicity, the examples in this exercise have actual code in the same file. In real-world Python projects, tests are typically separated by files and directories from the code that they're testing.
 
 ## Step 2 - Run the tests and identify the failure
 
@@ -90,7 +90,6 @@ The operation of the lists isn’t being used to return the value. Since it isn'
 
 1. Update the `admin_command()` function to return the list operation so that the modified result is used when requesting a `sudo` command. The updated function should look like this:
 
-
     ```python
     def admin_command(command, sudo=True):
         """
@@ -124,7 +123,7 @@ The operation of the lists isn’t being used to return the value. Since it isn'
     ```
 
 > [!NOTE]
-> Since the function is able to work with more values of different casing, more tests should be added to cover those variations. This would prevent future changes to the function from causing a different (unexpected) behavior.
+> Because the function is able to work with more values of different casing, more tests should be added to cover those variations. This would prevent future changes to the function from causing a different (unexpected) behavior.
 
 ## Step 4 - Add new code with tests
 
@@ -132,7 +131,7 @@ After adding tests in the previous steps, you should feel comfortable making mor
 
 In this case, the `admin_command()` function is trusting blindly that the `command` argument is always a list. Let's improve that by ensuring that an exception with a useful error message gets raised.
 
-1. First, create a test that captures the behavior. Although the function isn't updated yet, try a test-first approach (also known as Test Driven Development or TDD).
+1. First, create a test that captures the behavior. Although the function isn't updated yet, try a test-first approach (also known as *Test Driven Development* or *TDD*).
 
     - Update the *test_exercise.py* file so that it imports `pytest` at the top. This test uses an internal helper from the `pytest` framework:
 
@@ -148,8 +147,7 @@ In this case, the `admin_command()` function is trusting blindly that the `comma
                 admin_command("some command", sudo=True)
     ```
 
-
-2. Run the tests again with Pytest, they should all pass:
+2. Run the tests again with Pytest. They should all pass:
 
     ```bash
     ============================= test session starts ==============================
@@ -198,4 +196,4 @@ At this point you should have a Python test file named *test_exercise.py* that i
 - A `TypeError` exception with a helpful error message in the `admin_command()` function.
 - A `TestAdminCommand()` test class that has a `command()` helper method and three test methods that check the `admin_command()` function.
 
-All tests should be passing with no errors when you run them in the terminal.
+All tests should pass with no errors when you run them in the terminal.

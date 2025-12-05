@@ -9,7 +9,8 @@ metadata:
   ms.author: roberts
   ms.topic: unit
   ms.custom:
-  - N/A
+    - sfi-ga-nochange
+    - N/A
 durationInMinutes: 18
 content: |
   [!include[](includes/2-plan-for-access-reviews.md)]

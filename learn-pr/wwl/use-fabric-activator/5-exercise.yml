@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.use-fabric-activator.exercise
+title: Exercise - Use Activator in Fabric
+metadata:
+  title: Exercise - Use Activator in Fabric
+  description: "Exercise - Use Activator in Fabric"
+  ms.date: 09/12/2025
+  author: theresa-i
+  ms.author: theresai
+  ms.topic: unit
+durationInMinutes: 30
+content: |
+  [!include[](includes/5-exercise.md)]

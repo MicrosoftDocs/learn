@@ -2,8 +2,6 @@
 uid: learn.student-evangelism.predict-flight-delays-with-python.clean-and-prepare-data
 title: Exercise - Clean and prepare data
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Clean and prepare data
   description: Clean and prepare data
   ms.date: 02/25/2019
@@ -16,4 +14,4 @@ metadata:
 durationInMinutes: 10
 content: |
   [!include[](includes/2-clean-and-prepare-data.md)]
-
+

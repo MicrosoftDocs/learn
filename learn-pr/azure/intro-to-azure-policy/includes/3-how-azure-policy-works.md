@@ -8,7 +8,7 @@ Here, we cover some concepts you need to understand in advance to work with Azur
 
 **Definitions:** The definitions are the list of built-in or custom initiatives and policies available to be assigned.
 
-**Assignments:** The assignments are the associations of initiatives or policies with scopes. A scope for Azure Policy could be a Management Group, an Azure Subscription or a Resource Group. All child resources inherit the assignments of the parent resource.
+**Assignments:** The assignments are the associations of initiatives or policies with scopes. A scope for Azure Policy could be a Management Group, an Azure Subscription, or a Resource Group. All child resources inherit the assignments of the parent resource.
 
 **Exemptions:**: The exemptions are used to exempt a resource hierarchically or an individual resource from the evaluation of initiatives or definitions.
 
@@ -18,7 +18,7 @@ Here, we cover some concepts you need to understand in advance to work with Azur
 
 ## Resources covered
 
-Azure policy covers all Azure resources, including Arc-enabled resources. For example, you can extend the coverage of your controls over Windows and Linux physical servers, and virtual machines hosted outside of Azure, on your corporate network, or other cloud providers. Using Azure Policy is free for Azure resources, but there's a fee associated for an Arc resource.
+Azure policy covers all Azure resources, including Arc-enabled resources. For example, you can extend the coverage of your controls over Windows and Linux physical servers, and virtual machines hosted outside of Azure, on your corporate network or other cloud providers. Using Azure Policy is free for Azure resources, but there's a fee associated for an Arc resource.
 
 Azure Arc is a service that allows you to manage resource types hosted outside of Azure. The following resource types are supported:
 
@@ -27,7 +27,7 @@ Azure Arc is a service that allows you to manage resource types hosted outside o
 - Azure data services such as Azure SQL Managed Instance.
 - SQL Server.
 
-You can also provision, resize, delete and manage virtual machines based on VMware vSphere or Azure Stack HCI and enable VM self-service through role-based access.
+You can also provision, resize, delete, and manage virtual machines based on VMware vSphere or Azure Stack HCI. You can enable VM self-service through role-based access.
 
 ## Related services
 

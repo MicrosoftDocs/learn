@@ -8,7 +8,7 @@ The Mixed Reality Toolkit provides a set of tools and components to accelerate y
 
     :::image type="content" source="../media/position-rover-parts.png" alt-text="Screenshot that shows the newly created RoverParts object selected and positioned." lightbox="../media/position-rover-parts.png":::
 
-1. In **Hierarchy**, select all the child objects of the following: **RoverExplorer** > **RoverAssembly** > **RoverModel** > **Parts**. Right-click on them, and select **Duplicate** to create a copy of each of the parts.
+1. In **Hierarchy**, select all the child objects of the following: **RoverExplorer** > **RoverAssembly** > **RoverModel** > **Parts**. Right-click them and select **Duplicate** to create a copy of each of the parts.
 
     :::image type="content" source="../media/duplicate-parts.png" alt-text="Screenshot that shows how to duplicate all the parts selected." lightbox="../media/duplicate-parts.png":::
 

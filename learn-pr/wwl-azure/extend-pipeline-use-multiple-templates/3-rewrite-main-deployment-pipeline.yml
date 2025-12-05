@@ -2,8 +2,6 @@
 uid: learn.wwl.extend-pipeline-use-multiple-templates.rewrite-main-deployment-pipeline
 title: Rewrite the main deployment pipeline
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Rewrite the main deployment pipeline
   description: "Rewrite the main deployment pipeline."
   ms.date: 1/25/2023
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 4
 content: |
-  [!include[](includes/3-rewrite-main-deployment-pipeline.md)]
+  [!include[](includes/3-rewrite-main-deployment-pipeline.md)]

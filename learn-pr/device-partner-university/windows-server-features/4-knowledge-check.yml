@@ -1,0 +1,85 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.windows-server-features.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge Check
+  description: This content is part of the "Key features and innovations in Windows Server 2025" module.
+  ms.date: 08/27/2025
+  author: Stephanie-Rosenzweig
+  ms.author: v-stephanier
+  ms.topic: unit
+durationInMinutes: 5
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Which feature in Windows Server 2025 helps protect hardware, firmware, and the operating system from tampering and unauthorized access?"
+    choices:
+        - content: "Secured-core server"
+          isCorrect: true
+          explanation: "Correct. Secured-core solutions help protect hardware, firmware, and the operating system from tampering and unauthorized access."
+        - content: "Storage replication"
+          isCorrect: false
+          explanation: "Incorrect. Storage replication helps with data redundancy and disaster recovery, not with hardware or firmware protection."
+        - content: "GPU partitioning"
+          isCorrect: false
+          explanation: "Incorrect. GPU partitioning is used for AI and machine learning workloads, not for hardware or firmware protection."
+        - content: "Hotpatching"
+          isCorrect: false
+          explanation: "Incorrect. Hotpatching reduces downtime by applying updates without requiring a reboot."
+  - content: "What is a benefit of hybrid features in Windows Server 2025?"
+    choices:
+        - content: "Integration of cloud advancements into existing server environments"
+          isCorrect: true
+          explanation: "Correct. Hybrid features enable integration of cloud advancements into existing server environments, supporting adaptability and cloud-readiness."
+        - content: "Limiting virtualization to only two virtual machines"
+          isCorrect: false
+          explanation: "Incorrect. The Datacenter edition supports unlimited virtual machines."
+        - content: "Eliminating the need for on-premises infrastructure"
+          isCorrect: false
+          explanation: "Incorrect. Windows Server 2025 is optimized for on-premises infrastructure and hybrid setups."
+        - content: "Disabling remote access capabilities"
+          isCorrect: false
+          explanation: "Incorrect. Windows Server 2025 supports secure remote work, not disables it."
+  - content: "How does Windows Server 2025 help IT teams save time and effort?"
+    choices:
+        - content: "By providing centralized and unified management tools"
+          isCorrect: true
+          explanation: "Correct. Centralized and unified management tools make it easier to oversee both on-premises and hybrid environments, saving IT teams time and effort."
+        - content: "By requiring manual updates for all servers"
+          isCorrect: false
+          explanation: "Incorrect. Windows Server 2025 includes automated patching to reduce manual effort."
+        - content: "By removing support for hybrid environments"
+          isCorrect: false
+          explanation: "Incorrect. The platform supports hybrid environments to increase flexibility."
+        - content: "By limiting automation of routine tasks"
+          isCorrect: false
+          explanation: "Incorrect. Windows Server 2025 automates routine tasks to help IT administrators focus on strategic projects."
+  - content: "Which capability in Windows Server 2025 supports AI and machine learning workloads?"
+    choices:
+        - content: "GPU partitioning"
+          isCorrect: true
+          explanation: "Correct. GPU partitioning enables support for AI and machine learning workloads."
+        - content: "Secured-core server"
+          isCorrect: false
+          explanation: "Incorrect. Secured-core server is focused on security, not AI workload support."
+        - content: "Automated patching"
+          isCorrect: false
+          explanation: "Incorrect. Automated patching is for reducing downtime and improving productivity."
+        - content: "Role-based access controls"
+          isCorrect: false
+          explanation: "Incorrect. Role-based access controls are for secure remote work, not AI workloads."
+  - content: "What do software-defined datacenter technologies in Windows Server 2025 improve?"
+    choices:
+        - content: "Resource allocation and server efficiency"
+          isCorrect: true
+          explanation: "Correct. Software-defined datacenter technologies improve resource allocation and server efficiency, resulting in enhanced performance and reduced operational costs."
+        - content: "Print queue management"
+          isCorrect: false
+          explanation: "Incorrect. Software-defined datacenter technologies are focused on virtualization, compute, storage, and network efficiency—not print services."
+        - content: "Limitation of cloud integration"
+          isCorrect: false
+          explanation: "Incorrect. Windows Server 2025 supports cloud integration through hybrid features."
+        - content: "Reduction of virtualization capabilities"
+          isCorrect: false
+          explanation: "Incorrect. The platform supports efficient virtualization solutions."
+

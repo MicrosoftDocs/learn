@@ -1,13 +1,13 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.plan-implement-identity-governance-strategy
 metadata:
-  title: 'SC-300: Plan and implement an identity governance strategy'
-  description: Design and implement identity governance for your identity solution using entitlement, access reviews, privileged access, and monitoring your Microsoft Entra ID. Aligned to SC-300 exam.
+  title: 'Plan and implement an identity governance strategy'
+  description: 'Plan and implement an identity governance strategy'
   ms.date: 10/30/2023
   author: wwlpublish
   ms.author: roberts
   ms.topic: learning-path
-title: 'SC-300: Plan and implement an identity governance strategy'
+title: 'Plan and implement an identity governance strategy'
 prerequisites: |
   None
 summary: |
@@ -31,6 +31,5 @@ modules:
 - learn.wwl.plan-implement-manage-access-review
 - learn.wwl.plan-implement-privileged-access
 - learn.wwl.monitor-maintain-azure-active-directory
-- learn.permissions-management.explore-features-of-permissions-management
 trophy:
   uid: learn.wwl.plan-implement-identity-governance-strategy.trophy

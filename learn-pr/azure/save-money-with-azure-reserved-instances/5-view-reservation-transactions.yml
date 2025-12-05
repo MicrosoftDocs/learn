@@ -5,8 +5,8 @@ metadata:
   title: View reservation transactions
   description: Learn how to view reservation transactions by using Cost Management + Billing.
   ms.date: 10/24/2024
-  author: bandersmsft
-  ms.author: banders
+  author: tonyafehr
+  ms.author: tfehr
   ms.topic: unit
 title: View reservation transactions
 durationInMinutes: 4

@@ -2,11 +2,9 @@
 uid: learn.azure.intro-to-azure-vpn-gateway.what-is-azure-vpn-gateway
 title: What is Azure VPN Gateway?
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: What is Azure VPN Gateway?
   description: Learn what Azure VPN Gateway does and how your organization can use it.
-  ms.date: 02/24/2024
+  ms.date: 05/14/2025
   author: Orin-Thomas
   ms.author: orthomas
   ms.custom: team=cloud_advocates

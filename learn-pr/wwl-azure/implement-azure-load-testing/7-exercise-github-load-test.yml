@@ -2,8 +2,6 @@
 uid: learn.wwl.implement-azure-load-testing.exercise-github-load-test
 title: 'Exercise - Automate Azure load testing using GitHub Actions '
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Automate Azure load testing using GitHub Actions
   description: "Exercise - Automate Azure load testing using GitHub Actions"
   ms.date: 02/04/2025

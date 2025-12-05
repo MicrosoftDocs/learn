@@ -8,10 +8,12 @@ Reliable apps are:
 
 - Highly available and can run in a healthy state with no significant downtime.
 
-To achieve the desired resilience and high availability, you must first define your requirements.
+In this video, the instructor discusses the importance planning a backup and recovery strategy. 
 
->[!NOTE]
->This module will use the term resiliency as the ability of a system to gracefully handle and recover from failures, both inadvertent and malicious.
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=0e7913e2-993b-4b46-9683-ca3866b56d7f]
+
+> [!NOTE]
+>This module uses the term resiliency as the ability of a system to gracefully handle and recover from failures, both inadvertent and malicious.
 
  
 

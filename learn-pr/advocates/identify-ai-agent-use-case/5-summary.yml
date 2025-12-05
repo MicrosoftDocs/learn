@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.identify-ai-agent-use-case.summary
+title: Summary
+metadata:
+  title: Summary
+  description: Module summary
+  ms.date: 10/1/2025
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/5-summary.md)]

@@ -4,10 +4,12 @@ title: Compare Microsoft identity providers
 metadata:
   title: Compare Microsoft identity providers
   description: "Compare Microsoft identity providers"
-  ms.date: 03/28/2025
+  ms.date: 08/19/2025
   author: wwlpublish
   ms.author: roberts
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 3
 content: |
   [!include[](includes/10-compare-microsoft-identity-providers.md)]

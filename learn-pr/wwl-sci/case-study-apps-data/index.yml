@@ -1,0 +1,48 @@
+### YamlMime:Module
+uid: learn.case-study-apps-data
+metadata:
+  title: "Interactive Case Study: Securing Apps and Data"
+  description: "Apply your cybersecurity architect skills on a real business scenario in the area of securing apps and data. Analyze design requirements, answer conceptual and technical questions and design a solution to meet the business needs."
+  ms.date: 08/05/2025
+  author: wwlpublish
+  ms.author: ceperezb
+  ai-usage: ai-assisted
+  ms.topic: module
+  ms.service: security
+title: "Interactive case study: Securing apps and data"
+summary: "Apply your cybersecurity architect skills on a real business scenario focused on securing apps and data. Analyze design requirements, answer conceptual and technical questions and design a solution to meet the business needs."
+abstract: |
+  In this interactive case study, you:
+  - Explore risks related to application code, CI/CD pipelines, and cloud configuration drift.
+  - Learn how these challenges align with Zero Trust principles and DevSecOps best practices.
+  - Apply architectural reasoning to assess threats and design secure, scalable solutions for multi-cloud environments.
+prerequisites: |
+  -   Experience and knowledge in identity and access, platform protection, security operations, securing data and securing applications.
+  -   Experience with hybrid and cloud implementations.
+iconUrl: /training/achievements/case-study-apps-data.svg
+hidden: false
+levels: 
+  - advanced
+roles:
+  - security-engineer
+  - solution-architect
+products: 
+  - defender-for-cloud
+  - azure-arc
+  - azure-devops
+  - azure-kubernetes-service
+  - azure-container-registry
+  - microsoft-sentinel
+subjects: 
+  - security
+  - cloud-security
+units:
+- learn.case-study-apps-data.introduction
+- learn.case-study-apps-data.interactive-case-study
+- learn.case-study-apps-data.interactive-case-study-highlights
+- learn.case-study-apps-data.knowledge-check
+- learn.case-study-apps-data.summary
+badge:
+  uid: learn.case-study-apps-data.badge
+
+

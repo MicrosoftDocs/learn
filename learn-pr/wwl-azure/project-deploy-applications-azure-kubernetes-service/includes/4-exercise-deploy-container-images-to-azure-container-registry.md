@@ -13,7 +13,7 @@ In Exercise 3, you deploy two container images you created earlier in this lab t
  -  **Task 4: Perform AKS deployments by using YAML manifest files.** You deploy both container images to their namespaces and node pools in the target AKS cluster.
 
 > [!NOTE]
-> To complete this exercise, you need an [Azure subscription](https://azure.microsoft.com/free/).
+> To complete this exercise, you need an [Azure subscription](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn).
 
 [:::image type="content" source="../media/launch-exercise-162c1d6a.png" alt-text="Button to launch exercise.":::
 ](https://go.microsoft.com/fwlink/?linkid=2247298)

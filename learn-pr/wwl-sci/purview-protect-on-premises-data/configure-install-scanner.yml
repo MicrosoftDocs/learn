@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-protect-on-premises-data.configure-install-scanner
+title: Configure and install the Microsoft Purview Information Protection scanner
+metadata:
+  title: Configure and install the Microsoft Purview Information Protection scanner
+  description: "Configure and install the Microsoft Purview Information Protection scanner."
+  ms.date: 04/24/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/configure-install-scanner.md)]

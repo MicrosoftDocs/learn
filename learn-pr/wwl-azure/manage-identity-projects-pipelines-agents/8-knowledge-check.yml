@@ -1,15 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.manage-identity-projects-pipelines-agents.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check."
   ms.date: 1/25/2023
   author: LuizMacedo
   ms.author: lumac
   ms.topic: unit
+  module_assessment: true
 durationInMinutes: 4
 content: |
 quiz:
@@ -46,4 +45,4 @@ quiz:
       explanation: "Correct. Periodically reviewing and updating the permissions and scope of your service connections helps ensure they remain appropriate and secure."
     - content: "Using the same service connection for all pipelines to minimize the number of connections."
       isCorrect: false
-      explanation: "Incorrect. While reducing the number of service connections can minimize the potential attack surface, it's important to ensure that access levels are suitable for all pipelines using the connection. Reusing a connection with overly broad access can increase security risks."
+      explanation: "Incorrect. While reducing the number of service connections can minimize the potential attack surface, it's important to ensure that access levels are suitable for all pipelines using the connection. Reusing a connection with overly broad access can increase security risks."

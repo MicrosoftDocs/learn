@@ -2,8 +2,6 @@
 uid: learn.azdo.manage-build-dependencies.7-push-a-change
 title: Exercise - Push a change to your package
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Push a change to your package
   description: Practice the entire process by pushing a change to the package, and then updating the application to use the new package.
   ms.custom: devdivchpfy22
@@ -14,4 +12,4 @@ metadata:
 durationInMinutes: 8
 content: |
   [!include[](includes/7-push-a-change.md)]
-
+

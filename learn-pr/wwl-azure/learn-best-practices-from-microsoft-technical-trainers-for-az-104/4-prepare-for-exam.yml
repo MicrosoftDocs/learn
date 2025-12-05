@@ -2,8 +2,6 @@
 uid: learn.wwl.learn-best-practices-from-microsoft-technical-trainers-for-az-104.prepare-for-exam
 title: Prepare for the exam
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Prepare for the exam
   description: "Prepare for the exam"
   ms.date: 08/16/2022
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 3
 content: |
-  [!include[](includes/4-prepare-for-exam.md)]
+  [!include[](includes/4-prepare-for-exam.md)]

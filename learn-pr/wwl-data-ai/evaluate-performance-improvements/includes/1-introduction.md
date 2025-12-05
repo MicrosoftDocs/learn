@@ -1,9 +1,7 @@
-One of the challenges of the DBA’s role is to evaluate the changes they make to code or data structures on a busy, production system. While tuning a single query in isolation offers easy metrics such as elapsed time or logical reads, making minor tweaks on a busy system may require deeper evaluation.
+One of the challenges faced by database administrators is evaluating the changes made to code or data structures on a busy production system. While tuning a single query in isolation provides straightforward metrics such as elapsed time or logical reads, making minor adjustments on a busy system requires a more comprehensive evaluation.
 
-## Learning objectives:
+In a production environment, numerous factors can influence the performance of a query or data structure. These include concurrent user activity, system resource utilization, and the overall workload. As a result, you must consider the broader context when assessing the effectiveness of their changes. This involves monitoring system performance over time, analyzing query execution plans, and understanding the interactions between different components of the database.
 
-At the end of this module, you'll be able to:
+Additionally, you need to be aware of potential side effects that may arise from their modifications. For instance, a change that improves the performance of one query might inadvertently degrade the performance of another. Therefore, thorough testing and validation are essential to ensure that any adjustments made don't negatively impact the overall system.
 
-- Describe wait statistics
-- Understand important aspects when tuning indexes
-- Explore when to use query hints
+Ultimately, the goal is to achieve a balance between optimizing individual queries and maintaining the stability and efficiency of the entire production system. By adopting a comprehensive approach to evaluation, you can ensure that their changes lead to meaningful improvements without compromising the overall performance of the database.

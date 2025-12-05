@@ -2,8 +2,6 @@
 uid: learn.improve-search-results-vector-search.understand-embedding
 title: Understand embedding
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Understand embedding
   description: Learn about embeddings
   author: ivorb
@@ -15,4 +13,4 @@ metadata:
 durationInMinutes: 4
 content: |
   [!include[](includes/4-understand-embedding.md)]
-
+

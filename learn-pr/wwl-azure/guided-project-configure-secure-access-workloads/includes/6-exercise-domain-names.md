@@ -18,6 +18,6 @@ Your organization requires workloads to use domain names instead of IP addresses
 Launch the exercise and follow the instructions. When you're done, be sure to return to this page so you can continue learning.
 
 > [!NOTE]
-> To complete this lab you need an [Azure subscription](https://azure.microsoft.com/free/).
+> To complete this lab you need an [Azure subscription](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn).
 
 [![Button to launch exercise.](../media/launch-exercise.png)](https://go.microsoft.com/fwlink/?linkid=2262041)

@@ -2,14 +2,12 @@
 uid: learn.api-management.summary
 title: Summary
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Summary
   description: Summary
   ms.date: 06/30/2024
-  author: dlepow
-  ms.author: danlep
-  manager: susanpotter
+  author: softchris
+  ms.author: chnoring
+  manager:
   ms.topic: unit
 durationInMinutes: 4
 content: |

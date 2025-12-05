@@ -13,6 +13,7 @@ Now that you completed this module, you can:
 - [Understand authentication in Microsoft Security Copilot](/copilot/security/authentication)
 - [Microsoft Security Copilot experiences](/security-copilot/experiences-security-copilot)
 - [Plugins overview Microsoft Security Copilot](/copilot/security/plugin-overview)
+- [Microsoft Security Copilot agents overview](/copilot/security/agents-overview)
 - [Create your own custom plugins](/copilot/security/custom-plugins)
 - [Defender EASM Overview](/azure/external-attack-surface-management/)
 - [Microsoft Security Copilot and Defender EASM](/azure/external-attack-surface-management/easm-copilot)

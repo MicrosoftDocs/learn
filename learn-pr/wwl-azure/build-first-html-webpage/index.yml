@@ -1,12 +1,13 @@
 ### YamlMime:Module
 uid: learn.wwl.build-first-html-webpage
 metadata:
-  title: Build your first HTML webpage
+  title: Build your First HTML Webpage
   description: "Illustrates basic programming techniques using Visual Studio Code to write HTML and CSS."
-  ms.date: 05/08/2024
+  ms.date: 04/25/2025
   author: wwlpublish
   ms.author: eric
   ms.topic: module
+  ms.collection: N/A
   ms.custom:
   - N/A
   ms.service: vs-code
@@ -23,7 +24,7 @@ abstract: |
   -   Create a basic HTML page
 
   -   Make linked lists in HTML
-prerequisites: Basic knowledge of computer terminology.
+prerequisites: '- Basic knowledge of computer terminology.'
 iconUrl: /training/achievements/build-first-html-webpage.svg
 levels:
 - beginner

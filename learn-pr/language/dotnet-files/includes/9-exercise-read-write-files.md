@@ -4,12 +4,12 @@ You're almost finished creating a .NET masterpiece for Tailwind Traders. So far,
 
 In this exercise, you complete the project by reading the .json files, adding up the store totals, and writing the grand total to the *totals.txt* file.
 
-## Add System.Text.Json to the project
+## Add Newtonsoft.Json to the project
 
-1. Using the terminal, add *Json.NET* to the project.
+1. Using the terminal, add *Newtonsoft.Json* to the project.
 
     ```bash
-    dotnet add package System.Text.Json
+    dotnet add package Newtonsoft.Json
     ```
 
 ## Prepare for sales data

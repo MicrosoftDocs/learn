@@ -1,17 +1,20 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.deploy-iaas-solutions-with-azure-sql.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
+  hidden_question_numbers: ["44B252C7_2","44B252C7_26","44B252C7_30","44B252C7_34","44B252C7_38","44B252C7_42","44B252C7_46","44B252C7_6","44B252C7_51","44B252C7_75","44B252C7_79","44B252C7_83","44B252C7_87","44B252C7_91","44B252C7_95","44B252C7_108","44B252C7_112","44B252C7_120","44B252C7_128","44B252C7_132","44B252C7_136","44B252C7_140","44B252C7_144"]
   adobe-target: true
   prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
-  ms.date: 02/18/2025
+  ms.date: 9/12/2025
   author: JulianePadrao
   ms.author: jupadrao
   ms.topic: unit
-azureSandbox: false
-labModal: false
+  ms.custom:
+  - N/A
+  ai_generated_module_assessment: true
+  module_assessment: true
 durationInMinutes: 5
 content: |
   [!include[](includes/7-knowledge-check.md)]

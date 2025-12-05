@@ -2,8 +2,6 @@
 uid: learn.wwl.create-azure-ai-custom-skill.define-custom-skill-schema
 title: Define the custom skill schema
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Define the custom skill schema
   description: "Define the custom skill schema."
   ms.date: 10/23/2024
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 3
 content: |
-  [!include[](includes/2-define-custom-skill-schema.md)]
+  [!include[](includes/2-define-custom-skill-schema.md)]

@@ -3,7 +3,7 @@ The injection category describes instances when an application accepts data as i
 
 Let's consider how your team's application handles input data.
 
-.NET provides built-in capabilities for data annotation and validation. The attributes from `System.ComponentModel.DataAnnotations` namespace can decode your data model to provide the necessary validation functionality. Email, phone, credit card, or date validators are only a few examples of the built-in validators that can spare you the effort of writing and maintaining custom code.
+.NET provides built-in capabilities for data annotation and validation. The attributes from the `System.ComponentModel.DataAnnotations` namespace can decode your data model to provide the necessary validation functionality. Email, phone, credit card, or date validators are only a few examples of the built-in validators that can spare you the effort of writing and maintaining custom code.
 
 ```csharp
 using System.ComponentModel.DataAnnotations; ​
@@ -36,14 +36,14 @@ In absence of user input validation, a malicious actor could supplement a genuin
 SELECT * FROM Users WHERE name = 'a';DROP TABLE users;--
 ```
 
-As a result, the table containing user information is removed from the database. In a similar way, you can craft statements to extract data prior to data table deletion.
+As a result, the table containing user information is removed from the database. In a similar way, you can craft statements to extract data before data table deletion.
 
 ### File input validation
 
 In client-server scenarios, make sure the input is validated on both the client and the server side.
 Additionally, if validation passes on the server, process the form and send a success status code (`200 - OK`). ​However, if validation fails, return a failure status code (`400 - Bad Request`) and the field validation errors. Validation details from the server might give the malicious actor more insights on how your app logic works if they're displayed on the client side.
 
-Input validation also includes the way you handle file uploads. Consider an ASP.NET Blazor component handling user file upload. Checks for correctness before uploading it to Azure Blob Storage include extension and maximum file size inspection, and overriding the supplied filename with a random name.
+Input validation also includes the way you handle file uploads. Consider an ASP.NET Blazor component handling user file uploads. The component checks for correctness before uploading the file to Azure Blob Storage. It includes extension and maximum file size inspection, and overrides the supplied filename with a random name.
 
 ```csharp actor
 <InputFile OnChange = "@LoadFile" />
@@ -82,10 +82,10 @@ Input validation also includes the way you handle file uploads. Consider an ASP.
 
 ### Code review notes
 
-Your team uses Entity Framework Core (Object-Relational Mapping, or ORM) as the glue between the C# code and database. Simply using ORM eliminates the need to write your own SQL queries and prevents SQL injection.
+After your review, you noticed that your team uses Entity Framework Core (Object-Relational Mapping (ORM)) as the glue between the C# code and the database. Simply using ORM eliminates the need to write your own SQL queries and prevents SQL injection.
 
-You've noticed that every user input, uploaded file, or form entry field is always validated. Sanitizing and normalizing user input is a must.
+You also noticed that every user input, uploaded file, or form entry field is always validated. Sanitizing and normalizing user input is a must.
 
-As a golden rule, ensure validation is performed whenever you're processing user input. Never assume any user data input as safe to process until proven otherwise.
+As a golden rule, you should ensure validation is performed whenever you're processing user input. Never assume any user data input as safe to process until proven otherwise.
 
-You decided, as an exercise, to check if your web app is correctly validating user input by typing in `<iframe src="javascript:alert('HACKED')">` into a text input area. If a browser displays an alert, there might be a room for improvement in your validation logic.
+You decided, as an exercise, to check if your web app is correctly validating user input by typing in `<iframe src="javascript:alert('HACKED')">` into a text input area. If a browser displays an alert, there might be room for improvement in your validation logic.

@@ -1,10 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.extract-insights-using-azure-ai-language-azure-database-postgresql
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Extract insights using Azure AI Language and Azure Database for PostgreSQL
-  description: Learn to extract insights using Azure AI Language and Azure Database for PostgreSQL.
+  title: Extract insights using Azure Language and Azure Database for PostgreSQL
+  description: Learn to extract insights using Azure Language and Azure Database for PostgreSQL.
   author: wwlpublish
   ms.author: calopez
   ms.date: 11/24/2024
@@ -14,12 +12,12 @@ metadata:
   ms.collection:
     - wwl-ai-copilot
   ai-usage: human-only
-title: Extract insights using Azure AI Language and Azure Database for PostgreSQL
-summary: This module covers Azure AI Language tools including key phrase extraction, entity recognition, personally identifiable information recognition and redaction, and using Azure Database for PostgreSQL - Flexible Server with Azure AI to access these services.
+title: Extract insights using Azure Language and Azure Database for PostgreSQL
+summary: This module covers Azure Language tools including key phrase extraction, entity recognition, personally identifiable information recognition and redaction, and using Azure Database for PostgreSQL - Flexible Server with Azure AI to access these services.
 abstract: |
   -   Examine the concepts of key phrase extraction, entity recognition, and PII (personally identifiable information recognition) recognition.
 
-  -   Understand the capabilities provided by the azure_ai extension for PostgreSQL to access Azure AI Language.
+  -   Understand the capabilities provided by the azure_ai extension for PostgreSQL to access Azure Language.
 
   -   Install the azure_ai&nbsp;extension in an Azure Database for PostgreSQL - Flexible Server database, and use it to extract key phrases, recognize entities in text, and redact PII.
 prerequisites: Before starting this module, you should have experience working with PostgreSQL databases and writing SQL queries.

@@ -1,0 +1,25 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-database.postgresql.basic-sql-join-tables.natural-and-full-join
+title: NATURAL and FULL JOIN
+metadata:
+  title: NATURAL and FULL JOIN
+  description: "This unit explores the use of FULL OUTER JOIN and NATURAL JOIN in PostgreSQL to combine data from related tables. Learners discover how to retrieve all rows from both tables using FULL OUTER JOIN, and how NATURAL JOIN simplifies joins by automatically matching columns with the same name. Practical examples illustrate when and how to use each join effectively."
+  ms.date: 05/14/2025
+  author: milenak
+  ms.author: mpopovic
+  ms.topic: unit
+###########################################################################
+###
+### If your content is related to a product or service, apply one value from
+### the ms.service allowlist.
+###
+### If your content isn't about a product or service, you can omit the ms.service field.
+###
+### For the list of approved ms.service values, go to
+### https://review.learn.microsoft.com/help/platform/metadata-taxonomies?branch=main#msservice.
+###
+### To request new values, go to
+### https://review.learn.microsoft.com/help/platform/metadata-reporting-taxonomy-requests?branch=main.
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-natural-and-full-join.md)]

@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.wwl.purview-ninja-prevent-data-loss-share-transfer
+metadata:
+  title: Protect Sensitive Data with DLP in Exchange, SharePoint, OneDrive, and Teams
+  description: "Protect sensitive data with DLP in Exchange, SharePoint, OneDrive, and Teams."
+  ms.date: 08/21/2025
+  author: sachow
+  ms.author: sachow
+  ms.topic: module
+  ms.service: purview
+  ai-usage: human-only
+  hidden: true
+title: Protect sensitive data with DLP in Exchange, SharePoint, OneDrive, and Teams
+summary: Preventing data loss through risky sharing or transfers is critical because unauthorized exposure of sensitive information can lead to severe legal, financial, and reputational consequences for organizations. By proactively securing data exchanges, companies protect their clients, maintain compliance with regulations, and reinforce trust in their business operations.
+abstract: |
+  After completing this module, you'll be able to:
+  - Map SITs and labels to DLP locations.
+  - Apply DLP in Exchange Online to prevent external sharing.
+  - Protect files in SharePoint and OneDrive with labels, DLP, and access controls.
+  - Enforce DLP in Teams to safeguard chats, channels, and documents.
+prerequisites: |
+  - Basic knowledge of Microsoft Purview DLP
+  - Familiarity with sensitivity labels and SITs in Purview
+  - Understanding of Exchange Online, SharePoint, OneDrive, and Teams in Microsoft 365
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- risk-practitioner
+products:
+- microsoft-purview
+- m365
+subjects:
+- information-protection-governance
+units:
+- learn.wwl.purview-ninja-prevent-data-loss-share-transfer.introduction
+- learn.wwl.purview-ninja-prevent-data-loss-share-transfer.map-sensitive-information-types-data-loss-prevention-locations
+- learn.wwl.purview-ninja-prevent-data-loss-share-transfer.prevent-sharing-exchange-data-loss-prevention
+- learn.wwl.purview-ninja-prevent-data-loss-share-transfer.protect-sharepoint-onedrive
+- learn.wwl.purview-ninja-prevent-data-loss-share-transfer.protect-chats-files-teams-data-loss-prevention
+- learn.wwl.purview-ninja-prevent-data-loss-share-transfer.knowledge-check
+- learn.wwl.purview-ninja-prevent-data-loss-share-transfer.summary
+badge:
+  uid: learn.wwl.purview-ninja-prevent-data-loss-share-transfer.badge

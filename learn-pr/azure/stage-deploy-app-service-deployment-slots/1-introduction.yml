@@ -2,11 +2,9 @@
 uid: learn.azure.stage-deploy-app-service-deployment-slots.1-introduction
 title: Introduction
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Introduction
   description: Learn about the kind of problems that deployment slots can solve.
-  ms.date: 04/11/2023
+  ms.date: 04/22/2025
   author: cephalin
   ms.author: cephalin
   ms.topic: unit

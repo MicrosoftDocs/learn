@@ -20,9 +20,9 @@ In this module, you will:
 
 - A GitHub account
 - The ability to navigate and edit files in GitHub
-  - For more information about GitHub, see [Introduction to GitHub](https://github.com/skills/introduction-to-github).
+  - For more information about GitHub, see [Introduction to GitHub](https://github.com/skills-dev/introduction-to-github).
 - Basic familiarity with GitHub Actions and workflows
   - If you aren't familiar with workflows, jobs and steps, check out the [Automate development tasks by using GitHub Actions](/training/modules/github-actions-automate-tasks/) module.
 - Basic familiarity with continuous integration using GitHub Actions and workflows
   - If you're unfamiliar with continuous integration using GitHub Actions and workflows, check out [Build continuous integration workflows by using GitHub Actions](/training/modules/github-actions-ci/)
-- An [Azure subscription](https://azure.microsoft.com/free/?azure-portal=true)
+- An [Azure subscription](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn)

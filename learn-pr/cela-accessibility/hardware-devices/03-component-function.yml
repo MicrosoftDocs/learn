@@ -4,7 +4,7 @@ title: Identify component function and device status through accessible channels
 metadata:
   title: Component discoverability and status indicator accessibility
   description: This content is part of the accessibility best practices for gaming hardware module.
-  ms.date: 04/30/2023
+  ms.date: 07/10/2025
   author: kaitlynjones
   ms.author: kaitlynjones
   ms.topic: unit
@@ -14,12 +14,12 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Which of the following approaches should not be used to improve the accessible experience of players with visual disabilities in identifying the function of components on their devices?"
+  - content: "Which of the following approaches shouldn't be used to improve the accessible experience of players with visual disabilities in identifying the function of components on their devices?"
     choices:
     - content: "Increase the size and contrast of the text labels that identify the connection type and that are placed above each port."
       isCorrect: false
       explanation: "Incorrect. This approach should be used to support a player's ability to determine component function. When text labels are visually accessible, players can more readily use this information."
-    - content: "Include distinct tactile indicators for each port type that are easily differentiated by touch."
+    - content: "Include distinct and tactile indicators, differentiated by touch, for each port type."
       isCorrect: false
       explanation: "Incorrect. This approach should be used to provide players without vision a means to identify function through a nonvisual channel."
     - content: "Ship the device with cords preconnected to the device, which eliminates the need for players to identify or insert them at home."

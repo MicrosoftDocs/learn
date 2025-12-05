@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.deploy-message-encryption-microsoft-365.implement-message-encryption
+title: Configure Microsoft Purview Message Encryption
+metadata:
+  title: Configure Microsoft Purview Message Encryption
+  description: "Configure Microsoft Purview Message Encryption."
+  ms.date: 04/30/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/implement-message-encryption.md)]

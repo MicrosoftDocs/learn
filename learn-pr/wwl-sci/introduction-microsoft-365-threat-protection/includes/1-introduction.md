@@ -6,9 +6,10 @@ In the sample attack chain graphic example, see the attacker activity visible to
 :::image type="content" source="../media/defend-attack-chains.png" alt-text="Diagram of Microsoft Defender XDR tools to defend across attack chains.":::
 
 You're a Security Operations Analyst working at a company that is implementing Microsoft Defender XDR solutions.  You need to understand how Extended Detection and Response (XDR) combines signals from:
- - endpoints
- - identity 
- - email
- - applications
+
+- endpoints
+- identity
+- email
+- applications
 
 to detect and mitigate threats.  

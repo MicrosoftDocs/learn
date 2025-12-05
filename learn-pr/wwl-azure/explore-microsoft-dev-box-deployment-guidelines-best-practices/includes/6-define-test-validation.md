@@ -1,0 +1,13 @@
+Before rolling out Microsoft Dev Box organization-wide, it's critical to perform thorough testing and validation. This phase begins with selecting a representative group of developers to conduct pilot testing. These users should validate the provisioning experience, network connectivity, performance, toolset availability across diverse project types and regions, using standard marketplace and custom images, and teams customization.
+
+One of the key things to test is the use of standard VM images from the Azure Marketplace or to build custom images and access them when provisioning the machines from the service. A custom image may contain development tools, SDKs, CLI utilities, and internal services must function properly within the Dev Box environments. This includes testing integrations with Visual Studio, VS Code, Azure DevOps, GitHub, and backend APIs. Custom base images must be validated to confirm that catalog scripts correctly install required components during provisioning.
+
+As a part of provisioning testing and experience, the developers try out both the manual and the automated approaches. Manual provisioning involves using the Azure portal whereas for automated provisioning of Azure resources you can choose from Azure Resource Manager templates, Bicep, or Terraform. Testing phase is a good time to build and test Bicep or Terraform scripts or Azure Resource Manager templates to automate the production scaling of the service once you get to the service rollout phase across your organization.   
+
+Security scenarios should also be tested, such as conditional access policies, role-based access controls, Azure policy enforcement, threat detection via Microsoft Defender, and monitoring via Microsoft Sentinel or other third-party security products.
+
+Performance validation includes benchmarking VM performance for different compute SKUs and evaluating startup times, particularly for geographically dispersed teams. 
+
+Understanding cost controls and management is a key part of this phase and you want to make sure that you fully understand and utilize the hibernation feature to set costs controls on the Dev Box machines to reduce compute costs under certain conditions, such as when the developers disconnect from the machine or by setting scheduled hours of usage for the Dev Box machines.   
+
+It's highly recommended that during the testing and validation phase, you start creating standardized usage, management, and maintenance documentation that can become a key component of a governance framework you can set for utilizing Microsoft Dev Box in your organization. This documentation and the best practices can be used and refined as you move into the next phase of service rollout.

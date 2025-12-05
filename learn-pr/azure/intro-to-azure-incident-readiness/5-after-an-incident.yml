@@ -2,8 +2,6 @@
 uid: learn.intro-to-azure-incident-readiness.after-an-incident
 title: After an incident
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: After an incident
   description: "In this unit, you'll gain insights into the Post Incident Review (PIR) process, allowing you to understand what we have learned, understand impact details, and access recommendations for enhancing your resilience. You'll also discover how to participate in Azure Incident Retrospective livestream events and explore the Service Level Agreement (SLA) process for potential service credits."
   ms.date: 6/25/2023
@@ -45,4 +43,4 @@ quiz:
       isCorrect: false
     - content: "Phoning a friend."
       isCorrect: false
-
+

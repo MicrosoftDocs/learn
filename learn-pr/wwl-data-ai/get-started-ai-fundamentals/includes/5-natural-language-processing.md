@@ -11,7 +11,7 @@ Key points to understand about natural language processing (NLP) include:
     - *Language detection* - identifying the language in which text is written.
 
 > [!NOTE]
-> In this module, we've used the term *natural language processing* (NLP) to describe AI capabilities derive meaning from "ordinary" human language. You might also see this area of AI referred to as *natural language understanding* (NLU).
+> In this module, we've used the term *natural language processing* (NLP) to describe AI capabilities that derive meaning from "ordinary" human language. You might also see this area of AI referred to as *natural language understanding* (NLU).
 
 ## Natural language processing scenarios
 

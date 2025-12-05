@@ -1,32 +1,30 @@
 ### YamlMime:Module
 uid: learn.wwl.build-language-understanding-model
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Build a conversational language understanding model
-  description: The Azure AI conversational language understanding service (CLU) enables you to train an Azure AI Language model that apps can use to extract meaning from natural language.
-  author: wwlpublish
+  description: The Azure AI conversational language understanding service (CLU) enables you to train an Azure Language model that apps can use to extract meaning from natural language.
+  author: ivorb
   ms.author: berryivor
-  ms.date: 08/20/2024
+  ms.date: 08/28/2025
   ms.service: azure-ai-language
   ms.subservice: azure-ai-clu
   ms.topic: module-standard-task-based
+  ai-usage: ai-assisted
   ms.collection:
     - wwl-ai-copilot
 title: Build a conversational language understanding model
-summary: The Azure AI Language conversational language understanding service (CLU) enables you to train a model that apps can use to extract meaning from natural language.
+summary: The Azure Language conversational language understanding service (CLU) enables you to train a model that apps can use to extract meaning from natural language.
 abstract: |
   After completing this module, you'll be able to:
-  - Provision Azure resources for Azure AI Language resource
+  - Provision Azure resources for Azure Language resource
   - Define intents, utterances, and entities
   - Use patterns to differentiate similar utterances
   - Use pre-built entity components
-  - Train, test, publish, and review an Azure AI Language model
+  - Train, test, publish, and review an Azure Language model
 prerequisites: |
   Before starting this module, you should already have:
   *   Familiarity with Azure and the Azure portal.
-  *   Experience programming with C# or Python.
-  If you have no previous programming experience, we recommend you complete the [Take your first steps with C#](/training/paths/csharp-first-steps/) or [Take your first steps with Python](/training/paths/python-first-steps/) learning path first.
+  *   Programming experience.
 iconUrl: /training/achievements/build-language-understanding-model.svg
 levels:
 - intermediate
@@ -35,6 +33,7 @@ roles:
 - developer
 products:
 - ai-services
+- azure-ai-foundry
 subjects:
 - artificial-intelligence
 - cloud-computing

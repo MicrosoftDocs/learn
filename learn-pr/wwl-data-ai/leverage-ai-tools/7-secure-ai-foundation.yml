@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.leverage-ai-tools.7-secure-ai-foundation
+title: "Secure AI for a strong foundation"
+metadata:
+  title: "Secure AI For a Strong Foundation"
+  description: "Learn how to secure AI adoption by mitigating risks with practical governance strategies, ensuring safe, ethical, and compliant innovation."
+  ms.date: 11/03/2025
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: unit
+durationInMinutes: 15
+content: |
+  [!include[](includes/7-secure-ai-foundation.md)]

@@ -4,7 +4,7 @@ title: Server-side request forgery
 metadata:
   title: Server-side request forgery
   description: "OWASP Top 10 for .NET Developers. Server-side request forgery."
-  ms.date: 05/31/2024
+  ms.date: 06/18/2025
   author: obrocki
   ms.author: dawidobrocki
   ms.topic: unit
@@ -16,7 +16,7 @@ content: |
 quiz:
   title: Check your knowledge
   questions:   
-  - content: "Is performing input validation on the client side only considered to be best practice?"
+  - content: "Is it considered to be best practice to perform input validation on the client side only?"
     choices:
     - content: "Yes."
       isCorrect: false

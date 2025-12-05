@@ -3,13 +3,13 @@ uid: learn.intro-commercial-marketplace
 metadata:
   title: Introduction to the Microsoft commercial marketplace 
   description: Learn about the Microsoft commercial marketplace, including Microsoft AppSource, Azure Marketplace, offer types, and Marketplace Rewards.
-  ms.date: 05/15/2024
+  ms.date: 05/21/2025
   author: kristyn0402 
   ms.author: krmaddox
   ms.topic: module
   ms.service: marketplace-customer
 title: Introduction to the Microsoft commercial marketplace
-summary: This module provides an overview of the Microsoft commercial marketplace, including Microsoft AppSource, Azure Marketplace, offer types, and Marketplace Rewards. Gain insights into how these components work together to create a dynamic marketplace ecosystem and how you can leverage them to enhance your business presence and success.
+summary: This module provides an overview of the Microsoft commercial marketplace, including Microsoft AppSource, Azure Marketplace, offer types, and Marketplace Rewards. Gain insights into how these components work together to create a dynamic marketplace ecosystem and how you can use them to enhance your business presence and success.
 abstract: |
   In this module, you will:
   - Develop a basic understanding of the Microsoft commercial marketplace.

@@ -20,7 +20,7 @@ WORKDIR /app
 # Copy the contents of the published app to the container's /app directory
 COPY bin/Release/net6.0/publish/ .
 
-# Expose port 80 to the outside world
+# Document that the application listens on port 80 (does not publish it)
 EXPOSE 80
 
 # Set the command to run when the container starts
@@ -32,7 +32,7 @@ Let's go through each line to see what it does:
 * **`FROM mcr.microsoft.com/dotnet/runtime:6.0`**: This command sets the base image to the .NET 6 runtime, which is needed to run .NET 6 apps.
 * **`WORKDIR /app`**: Sets the working directory to `/app`, which is where app files are copied.
 * **`COPY bin/Release/net6.0/publish/ .`**: Copies the contents of the published app to the container's `/app` directory. We assume that the .NET 6 app is built and published to the `bin/Release/net6.0/publish` directory.
-* **`EXPOSE 80`**: Exposes port 80, which is the default HTTP port, to the outside world. Change this line accordingly if your app listens on a different port. 
+* **`EXPOSE 80`**: Documents what port the application expects. Change this line accordingly if your app listens on a different port. The `EXPOSE` instruction doesn't publish the port to the host machine. To make the application accessible externally, use `docker run -p <host_port>:<container_port>` to specify ports.
 * **`CMD ["dotnet", "MyApp.dll"]`**: The command to run when the container starts. In this case, we're running the dotnet command with the name of our app's DLL file (`MyApp.dll`). Change this line to match your apps name and entry point.
 
 We're not going to cover the Dockerfile file specification. Visit the [Dockerfile reference](https://docs.docker.com/engine/reference/builder/) for more information. Each of these steps creates a cached container image as we build the final container image. These temporary images are layered on top of the previous and presented as single image once all steps complete.

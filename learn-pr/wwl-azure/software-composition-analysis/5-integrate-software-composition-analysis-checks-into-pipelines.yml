@@ -2,14 +2,12 @@
 uid: learn.wwl.software-composition-analysis.integrate-software-composition-analysis-checks-into-pipelines
 title: Integrate software composition analysis checks into pipelines
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Integrate software composition analysis checks into pipelines
-  description: "Integrate software composition analysis checks into pipelines"
-  ms.date: 05/13/2024
-  author: wwlpublish
+  title: Integrate Software Composition Analysis Checks into Pipelines
+  description: "Implement SCA scanning in CI/CD pipelines with pull request validation, build-time checks, quality gates, policy enforcement, and SBOM generation."
+  ms.date: 10/22/2025
+  author: LuizMacedo
   ms.author: lumac
   ms.topic: unit
-durationInMinutes: 4
+durationInMinutes: 9
 content: |
   [!include[](includes/5-integrate-software-composition-analysis-checks-into-pipelines.md)]

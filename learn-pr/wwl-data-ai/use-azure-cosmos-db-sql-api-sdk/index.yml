@@ -3,7 +3,7 @@ uid: learn.wwl.use-azure-cosmos-db-sql-api-sdk
 metadata:
   title: Use the Azure Cosmos DB for NoSQL SDK
   description: "Learn about the Azure Cosmos DB libraries, and then download the libraries to use in a .NET, Python, or JavaScript (Node.JS) application."
-  ms.date: 03/09/2025
+  ms.date: 04/02/2025
   author: wwlpublish
   ms.author: calopez
   ms.topic: module

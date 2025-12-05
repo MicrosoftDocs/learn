@@ -38,7 +38,7 @@ Another user wants to access their organizational email on their personal Androi
 
 ## Microsoft Entra joined devices
 
-Microsoft Entra join is intended for organizations that want to be cloud-first or cloud-only. Any organization can deploy Microsoft Entra joined devices no matter the size or industry. Microsoft Entra join enables access to both cloud and on-premises apps and resources.
+Microsoft Entra joined is intended for organizations that want to be cloud-first or cloud-only. Any organization can deploy Microsoft Entra joined devices no matter the size or industry. Microsoft Entra joined enables access to both cloud and on-premises apps and resources.
 
 | **Microsoft Entra joined** | **Description**                                                                                                          |
 | -------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
@@ -53,13 +53,13 @@ Microsoft Entra joined devices are signed in to using an organizational Microsof
 
 Administrators can secure and further control Microsoft Entra joined devices using Mobile Device Management (MDM) tools like Microsoft Intune or in co-management scenarios using Microsoft Endpoint Configuration Manager. These tools provide a means to enforce organization-required configurations like requiring storage to be encrypted, password complexity, software installations, and software updates. Administrators can make organization applications available to Microsoft Entra joined devices using Configuration Manager.
 
-Microsoft Entra join can be accomplished using self-service options like the Out of Box Experience (OOBE), bulk enrollment, or Windows Autopilot.
+Microsoft Entra joined can be accomplished using self-service options like the Out of Box Experience (OOBE), bulk enrollment, or Windows Autopilot.
 
 Microsoft Entra joined devices can still maintain single sign-on access to on-premises resources when they are on the organization's network. Microsoft Entra joined devices authenticate to on-premises servers like for file, print, and other applications.
 
 ### Scenarios for joined devices
 
-Although Microsoft Entra join is primarily intended for organizations that do not have an on-premises Windows Server Active Directory infrastructure, you can certainly use it in scenarios where:
+Although Microsoft Entra joined is primarily intended for organizations that do not have an on-premises Windows Server Active Directory infrastructure, you can certainly use it in scenarios where:
 
 - You want to transition to cloud-based infrastructure using Microsoft Entra ID and MDM like Intune.
 - You can’t use an on-premises domain join, for example, if you need to get mobile devices such as tablets and phones under control.
@@ -78,7 +78,7 @@ The goal of Microsoft Entra joined devices is to simplify:
 
 :::image type="content" source="../media/azure-active-directory-joined-device.png" alt-text="Diagram of Microsoft Entra joined devices connected to the cloud. A laptop registered to your cloud directory.":::
 
-Microsoft Entra Join can be deployed by using a number of different methods.
+Microsoft Entra Joined can be deployed by using a number of different methods.
 
 ## Hybrid Microsoft Entra joined devices
 

@@ -3,7 +3,7 @@ In this exercise, you create an Azure OpenAI Service resource that enables you t
 > [!NOTE]
 > To complete this exercise, you need the following:
 >
-> - An Azure subscription. [Create one for free](https://azure.microsoft.com/free/ai-services).
+> - An Azure subscription. [Create one for free](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn).
 > - Access to Azure OpenAI in the desired Azure subscription. Currently, access to this service is granted only through applications. Apply for access to Azure OpenAI by completing this form: [https://aka.ms/oai/access](https://aka.ms/oai/access).
 
 ## Provision a resource in the Azure portal

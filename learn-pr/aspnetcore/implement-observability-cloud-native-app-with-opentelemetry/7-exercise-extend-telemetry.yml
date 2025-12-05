@@ -4,7 +4,7 @@ title: Exercise - Extend telemetry in .NET 8
 metadata:
   title: Exercise - Extend telemetry in .NET 8
   description: "Exercise to add a custom metric to a cloud-native application by using OpenTelemetry."
-  ms.date: 12/20/2023
+  ms.date: 05/27/2025
   author: codemillmatt  
   ms.author: masoucou
   ms.topic: unit

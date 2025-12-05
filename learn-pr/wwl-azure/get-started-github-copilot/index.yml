@@ -1,9 +1,9 @@
 ### YamlMime:Module
 uid: learn.wwl.get-started-github-copilot
 metadata:
-  title: Get started with GitHub Copilot
+  title: Get Started with GitHub Copilot
   description: "This module introduces developers to the GitHub Copilot products, the benefits that GitHub Copilot provides to developers, the GitHub Copilot and GitHub Copilot Chat product features, and the GitHub Copilot extensions for Visual Studio Code."
-  ms.date: 03/05/2025
+  ms.date: 06/02/2025
   author: wwlpublish
   ms.author: cahowd
   ms.topic: module-intro-to-product
@@ -27,9 +27,9 @@ abstract: |
 
   -   Configure the GitHub Copilot extensions for Visual Studio Code.
 prerequisites: |
-  -   An active subscription for GitHub Copilot is required for either your personal GitHub account or a GitHub account managed by an organization or enterprise. You can set up a GitHub Copilot Free account or sign up for a subscription to GitHub Copilot Pro trial with a one-time 30-day trial.  For learning, the Copilot Free option with usage limits should be sufficient.
+  -   An active subscription for GitHub Copilot is required for either your personal GitHub account or a GitHub account managed by an organization or enterprise. You can set up a GitHub Copilot Free plan or sign-up for a GitHub Copilot Pro subscription with a one-time 30-day free trial.  For this training, signing up for a GitHub Copilot Free plan is sufficient.
 
-  -   Awareness of the GitHub Copilot free trial conditions: if you choose the free trial offer for GitHub Copilot, a form of payment is requested at sign-up. Charges aren't applied until the trial is over, unless you cancel before the conclusion of the 30-day period.
+  -   Awareness of the GitHub Copilot free trial conditions: if you choose the 30-day free trial offer for GitHub Copilot Pro, a form of payment is requested at sign-up. Charges aren't applied until the trial is over, unless you cancel before the conclusion of the 30-day period.
 iconUrl: /training/achievements/generic-badge.svg
 levels:
 - intermediate
@@ -43,11 +43,16 @@ subjects:
 units:
 - learn.wwl.get-started-github-copilot.introduction
 - learn.wwl.get-started-github-copilot.examine-ai-assisted-programming-tools
-- learn.wwl.get-started-github-copilot.examine-github-copilot-benefits
-- learn.wwl.get-started-github-copilot.exercise-install-github-copilot-extensions-visual-studio-code
-- learn.wwl.get-started-github-copilot.examine-autocomplete-features-github-copilot-extension
-- learn.wwl.get-started-github-copilot.examine-ai-assistance-features-github-copilot-chat-extension
-- learn.wwl.get-started-github-copilot.exercise-configure-github-copilot-extensions-visual-studio-code
+- learn.wwl.get-started-github-copilot.compare-github-copilot-plans
+- learn.wwl.get-started-github-copilot.review-github-copilot-features
+- learn.wwl.get-started-github-copilot.examine-github-copilot-setup-process
+- learn.wwl.get-started-github-copilot.configure-github-copilot-settings-visual-studio-code
+- learn.wwl.get-started-github-copilot.manage-github-copilot-policies-features-extensions
+- learn.wwl.get-started-github-copilot.examine-github-copilot-code-completion-features
+- learn.wwl.get-started-github-copilot.examine-github-copilot-ai-assistance-features
+- learn.wwl.get-started-github-copilot.examine-chat-view-features
+- learn.wwl.get-started-github-copilot.examine-inline-chat-smart-actions-quick-chat
+- learn.wwl.get-started-github-copilot.exercise-examine-github-copilot-settings-interface
 - learn.wwl.get-started-github-copilot.knowledge-check
 - learn.wwl.get-started-github-copilot.summary
 badge:

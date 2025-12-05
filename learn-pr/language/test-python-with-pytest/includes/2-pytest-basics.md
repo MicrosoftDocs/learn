@@ -1,4 +1,4 @@
-Let's get started testing with Pytest. As we mentioned in the previous unit, Pytest is highly configurable and can handle complex test suites. But it doesn't require much to start writing tests. In fact, the easier a framework allows you to write tests, the better. 
+Let's get started testing with Pytest. As we mentioned in the previous unit, Pytest is highly configurable and can handle complex test suites, but it doesn't require much to start writing tests. In fact, the easier a framework allows you to write tests, the better. 
 
 By the end of this section you should have everything you need to start writing your first tests and run them with Pytest.
 
@@ -6,14 +6,14 @@ By the end of this section you should have everything you need to start writing 
 
 Before diving into writing tests, we must cover some of the testing conventions that Pytest relies on.
 
-There aren't hard rules about test files, test directories, or general testing layouts in Python. By knowing these rules, you can take advantage of automatic test discovery and execution without the need for any extra configuration.
+There aren't many hard rules about test files, test directories, or general testing layouts in Python. By knowing these rules, you can take advantage of automatic test discovery and execution without the need for any extra configuration.
 
 ### Tests directory and test files
 
 The main directory for tests is the *tests* directory. You can place this directory at the root level of the project, but it's also not unusual to see it alongside code modules.
 
 > [!NOTE]
-> In this module we'll default to using *tests* at the root of a project.
+> In this module, we'll default to using *tests* at the root of a project.
 
 Let's see how the root of a small Python project named `jformat` looks:
 
@@ -38,7 +38,7 @@ The *tests* directory is at the root of the project with a single test file. In 
 
 ### Test functions
 
-One of the strong arguments for using Pytest is that it allows you to write test functions. Similar to test files, test functions must be prefixed with `test_`. The `test_` prefix ensures that Pytest collects the test and executes it.
+A strong argument for using Pytest is that it allows you to write test functions. Similar to test files, test functions must be prefixed with `test_`. The `test_` prefix ensures that Pytest collects the test and executes it.
 
 Here's what a simple test function looks like:
 
@@ -48,7 +48,7 @@ def test_main():
 ```
 
 > [!NOTE]
-> If you are familiar with `unittest`, it might be surprising to see the use of `assert` in the test function. We cover plain asserts in more detail later, but with Pytest, you get rich failure reporting with plain asserts.
+> If you're familiar with `unittest`, it might be surprising to see the use of `assert` in the test function. We cover plain asserts in more detail later, but with Pytest, you get rich failure reporting with plain asserts.
 
 ### Test classes and test methods
 
@@ -70,15 +70,15 @@ class TestUser:
 
 ## Run tests
 
-Pytest is both a test framework and a test runner. The test runner is an executable in the command line that at a high level can:
+Pytest is both a test framework and a test runner. The test runner is an executable in the command line that (at a high level) can:
 
 - Perform the collection of tests by finding all test files, test classes, and test functions for a test run.
 - Initiate a test run by executing all tests.
-- Keep track of failures, errors, and passing tests. 
+- Keep track of failures, errors, and passing tests.
 - Provide rich reporting at the end of a test run.
 
 > [!NOTE]
-> Since Pytest is an external library it *must* be installed in order to use it.
+> Because Pytest is an external library, it *must* be installed in order to use it.
 
 Given these contents in a *test_main.py* file, we can see how Pytest behaves running the tests:
 
@@ -107,9 +107,9 @@ Behind the scenes, Pytest collects the example test in the test file without any
 
 ### The powerful assert statement
 
-So far, our test examples are all using the plain `assert` call. Usually, in Python, the `assert` statement isn't used for tests because it lacks proper reporting when the assertion fails. Pytest, however, doesn't have this limitation. Behind the scenes, Pytest is enabling the statement to perform rich comparisons without forcing the user to write more code or configure anything.
+So far, our test examples are all using the plain `assert` call. Usually, in Python, the `assert` statement isn't used for tests, because it lacks proper reporting when the assertion fails. Pytest, however, doesn't have this limitation. Behind the scenes, Pytest enables the statement to perform rich comparisons without forcing the user to write more code or configure anything.
 
-By using the plain `assert` statement, you can make use of Python's operators. For example: `>`, `<`, `!=`, `>=`, or `<=`. All of Python's operators are valid. This capability might be the single most crucial feature of Pytest: you aren't required to learn new syntax to write assertions.
+By using the plain `assert` statement, you can make use of Python's operators; for example, `>`, `<`, `!=`, `>=`, or `<=`. All of Python's operators are valid. This capability might be the single most crucial feature of Pytest: you aren't required to learn new syntax to write assertions.
 
 Let's see how that translates when dealing with common comparisons with Python objects. In this case, let's go through the failure report when comparing long strings:
 
@@ -130,7 +130,7 @@ E         ? ^                         +
 test_main.py:4: AssertionError
 ```
 
-Pytest shows useful context around the failure. An incorrect casing at the beginning of the string, and an extra character in a word. But beyond strings, Pytest can help with other objects and data structures. For example, here's how it behaves with lists:
+Pytest shows useful context around the failure: an incorrect casing at the beginning of the string and an extra character in a word. But beyond strings, Pytest can help with other objects and data structures. For example, here's how it behaves with lists:
 
 ```text
 ________________________________ test_lists ________________________________
@@ -193,7 +193,7 @@ E         ...Full output truncated (12 lines hidden), use '-vv' to show
 
 In this test, there are two failures in the dictionary. One is that the `"street"` value is different, and the other one is that `"number"` doesn't match.
 
-Pytest is accurately detecting these differences (even though it's one failure in a single test). Since the dictionaries contain many items, Pytest omits the identical parts and only shows relevant content. Let's see what happens if we make use of the suggested `-vv` flag to increase the verbosity in the output:
+Pytest accurately detects these differences (even though it's one failure in a single test). Because the dictionaries contain many items, Pytest omits the identical parts and only shows relevant content. Let's see what happens if we make use of the suggested `-vv` flag to increase the verbosity in the output:
 
 ```text
 ____________________________ test_dictionaries _____________________________

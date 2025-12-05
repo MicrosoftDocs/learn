@@ -1,8 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.design-ip-addressing-for-azure.3-azure-public-private-ip-addressing
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Public and private IP addressing in Azure
   description: Public and private IP addressing in Azure
   ms.date: 10/10/2024
@@ -38,4 +36,4 @@ quiz:
     - content: "Network interface"
       isCorrect: true 
       explanation: "Correct. An IP address is assigned to a network interface, which is assigned to a virtual machine."
-
+

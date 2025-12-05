@@ -1,4 +1,4 @@
-Unity enables you to place an object in the scene and then scale or rotate it. You can use the *RectTransform* feature to change the position of 2D objects, such as sprites. The *Transform* feature combines the move, rotate, and scale tools.
+Unity allows you to place an object in the scene and then scale or rotate it. You can use the *RectTransform* feature to change the position of 2D objects, such as sprites. The *Transform* feature combines the move, rotate, and scale tools.
 
 ## Parent object
 
@@ -6,7 +6,7 @@ In Unity, objects use a hierarchy system where objects can become *parents* of o
 
 ## Prefab
 
-*Prefabs* are distinct components that allow completely configured game objects to be retained in a project for future use. They are crucial elements used to carry out broad changes across the project. Any edits that you make to a Prefab asset are automatically reflected in all the instances of that Prefab. You can share these Prefabs between scenes or even other projects, without having to reconfigure them. It's a good idea to form Prefabs while you're working in Unity, so you can avoid rework in the future.
+*Prefabs* are distinct components that allow you to retain completely configured game objects in a project for future use. They are crucial elements used to carry out broad changes across the project. Any edits that you make to a Prefab asset are automatically reflected in all the instances of that Prefab. You can share these Prefabs between scenes or even other projects without having to reconfigure them. It's a good idea to form Prefabs while you're working in Unity, so you can avoid rework in the future.
 
 ## Scene Visibility
 

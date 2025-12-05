@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.github.github-copilot-code-agent.exercise-expand-team-copilot-code-agent
+title: Exercise - Expand your team with Copilot coding agent
+metadata:
+  title: Exercise - Expand your team with Copilot coding agent
+  description: This content is a part of the Accelerate development with GitHub Copilot coding agent.
+  author: camihmerhar
+  ms.author: camhernandez
+  ms.date: 09/22/2025
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/6-exercise-expand-team-copilot-code-agent.md)]

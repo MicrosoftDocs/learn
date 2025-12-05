@@ -2,7 +2,7 @@ You added your API to your web app and they're both running locally. Now it's ti
 
 When you created the Azure Static Web Apps instance and asked it to watch your **main** branch, a GitHub Action was generated for you. The GitHub Action listens for changes to your repository's **main** branch, and when it detects a commit or a pull request to **main**, it builds and publishes your app.
 
-You might remember when you created the Azure Static Web Apps resource that you provided the folder location for your API. You provided the default value of *api*. However, since you didn't have an API in the *api* folder at that time, Azure Static Web Apps didn't attempt to publish an API.
+You might remember when you created the Azure Static Web Apps resource that you provided the folder location for your API. You provided the default value of `api`. However, since you didn't have an API in the `api` folder at that time, Azure Static Web Apps didn't attempt to publish an API.
 
 Now, everything changes.
 
@@ -50,11 +50,11 @@ output_location: 'dist' # Built app content directory - optional
 
 ::: zone-end
 
-Your `api_location` is set to the correct value to point to your API in your *api* folder.
+Your `api_location` is set to the correct value to point to your API in your `api` folder.
 
 ## Trigger the GitHub Action
 
-The GitHub Action is ready to build and publish your web app and API once it detects a change to your **main** branch. To trigger the GitHub Action, you could either commit directly or create a pull request to the **main** branch.  Changes that are detected on the **main** branch trigger the GitHub Action to publish the app at the same URL for your live web site.
+The GitHub Action is ready to build and publish your web app and API once it detects a change to your **main** branch. To trigger the GitHub Action, you could either commit directly or create a pull request to the **main** branch. Changes that are detected on the **main** branch trigger the GitHub Action to publish the app at the same URL for your live web site.
 
 ## Preview URLs
 

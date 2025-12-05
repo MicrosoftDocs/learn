@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.introduction-to-entra-id.device-identities
+title: Device identities
+metadata:
+  title: Device Identities
+  description: This content is part of the "Introduction to Microsoft Entra ID" module.
+  ms.date: 08/28/2025
+  author: Stephanie-Rosenzweig
+  ms.author: v-stephanier
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/10-device-identities.md)]

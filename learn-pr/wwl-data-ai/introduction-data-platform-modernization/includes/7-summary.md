@@ -11,5 +11,5 @@ Now that you've reviewed this module, you should be able to:
 ## Learn more
 
 - [Five steps to modernizing your data](https://azure.microsoft.com/resources/five-steps-to-modernizing-your-data/)
-- [Azure TCO calculator](https://azure.microsoft.com/pricing/tco/calculator/)
+- [Azure pricing calculator](https://azure.microsoft.com/pricing/calculator/)
  

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="203px" height="193px" viewBox="0 0 203 193" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 59.1 (86144) - https://sketch.com -->
+    <title>Ignite - Trophies/create-a-windows-virtual-machine-in-azure</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M94.999168,180 C72.0096814,159.695484 51.1433507,133.810825 34.5507866,104.990719 C17.9586386,76.1718636 6.03918083,45.1087705 4.54747351e-13,14.9921785 C29.0261716,5.17926791 61.81196,0 94.9975041,0 C128.18596,0 160.972164,5.17968506 190,14.9930128 C183.961235,45.1062676 172.040945,76.1689436 155.447133,104.990719 C138.852906,133.814579 117.986575,159.698822 94.999168,180 Z" id="path-1"></path>
+        <path d="M50.0001741,100 C22.3857,100 0,77.6142857 0,50 C0,22.3857143 22.3857,0 50.0001741,0 C77.6143,0 100,22.3857143 100,50 C100,77.6142857 77.6143,100 50.0001741,100 Z" id="path-3"></path>
+        <linearGradient x1="50%" y1="100%" x2="50%" y2="0%" id="linearGradient-5">
+            <stop stop-color="#0078D4" offset="0%"></stop>
+            <stop stop-color="#5EA0EF" offset="82%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="100%" x2="50%" y2="0%" id="linearGradient-6">
+            <stop stop-color="#CCCCCC" offset="15%"></stop>
+            <stop stop-color="#707070" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Badges-2.0" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Ignite---Trophies-1" transform="translate(-62.000000, -1141.000000)">
+            <g id="Ignite---Trophies/create-a-windows-virtual-machine-in-azure" transform="translate(113.000000, 1171.000000)">
+                <g id="Create-a-Windows-virtual-machine-in-Azure">
+                    <g id="Plate/Triangle">
+                        <g id="BG" stroke-width="1" fill-rule="evenodd" transform="translate(-45.000000, -25.000000)">
+                            <mask id="mask-2" fill="white">
+                                <use xlink:href="#path-1"></use>
+                            </mask>
+                            <path stroke="#FFFFFF" stroke-width="5" d="M93.3442125,181.873799 C70.1387371,161.37852 49.103568,135.278433 32.3842134,106.2381 C15.6658725,77.200061 3.6447079,45.8832079 -2.4512031,15.4837102 L-2.8834807,13.3279993 L-0.800660806,12.623858 C28.4993688,2.71836387 61.5569742,-2.5 94.9975041,-2.5 C128.440156,-2.5 161.498272,2.71854728 190.80065,12.6246887 L192.8835,13.3288295 L192.451199,15.4845643 C186.355766,45.8804027 174.333882,77.1968445 157.613733,106.238055 C140.893137,135.281414 119.858114,161.381346 96.6540549,181.87386 L94.9991069,183.335416 L93.3442125,181.873799 Z"></path>
+                            <g id="Color-/-Azure" mask="url(#mask-2)" fill="#0078D4">
+                                <rect id="Rectangle" x="0" y="0" width="190" height="180"></rect>
+                            </g>
+                        </g>
+                        <path d="M49.9992265,151.651528 C72.1344595,131.752984 92.2247584,106.631962 108.28056,78.7433381 C124.338503,50.8523136 135.988813,20.8400816 142.105343,-8.33630507 C113.850675,-17.6120479 82.1102712,-22.5 49.9975041,-22.5 C17.8868589,-22.5 -13.8529527,-17.6122375 -42.1053647,-8.33714081 C-35.9884319,20.8427715 -24.3388221,50.8554001 -8.28263022,78.7433543 C7.77200749,106.629121 27.8625217,131.750334 49.9992265,151.651528 Z" id="Inner-Rim" stroke="#000000" stroke-width="5" opacity="0.200000003"></path>
+                        <path d="M50.0001741,100 C22.3857,100 0,77.6142857 0,50 C0,22.3857143 22.3857,0 50.0001741,0 C77.6143,0 100,22.3857143 100,50 C100,77.6142857 77.6143,100 50.0001741,100 Z" id="White" fill="#FFFFFF" fill-rule="evenodd" opacity="0.800000012"></path>
+                    </g>
+                    <g id="Icon">
+                        <mask id="mask-4" fill="white">
+                            <use xlink:href="#path-3"></use>
+                        </mask>
+                        <g id="BG-Mask" opacity="0.800000012"></g>
+                    </g>
+                    <g id="Icon-compute-21-Virtual-Machine" transform="translate(20.000000, 25.000000)" fill-rule="nonzero">
+                        <rect id="Rectangle" fill="url(#linearGradient-5)" x="0" y="0" width="60" height="40" rx="0.6"></rect>
+                        <polygon id="Path" fill="#50E6FF" points="40 14 40 25.3009524 30 31 30 19.6666667"></polygon>
+                        <polygon id="Path" fill="#C3F1FF" points="40 14.4843305 30 20 20 14.4843305 30 9"></polygon>
+                        <polygon id="Path" fill="#9CEBFF" points="30 19.6990476 30 31 20 25.3009524 20 14"></polygon>
+                        <polygon id="Path" fill="#C3F1FF" points="20 25.4685714 30 20 30 31"></polygon>
+                        <polygon id="Path" fill="#9CEBFF" points="40 25.4685714 30 20 30 31"></polygon>
+                        <path d="M41.0332833,52.5442765 C35.0999746,51.5766739 34.8666423,47.1533477 34.8666423,40 L23.1000245,40 C23.1000245,47.1533477 22.9000254,51.5766739 16.9667167,52.5442765 C15.2702739,52.7388859 13.9897083,54.2305598 14,56 L44,56 C44.0102917,54.2305598 42.7297261,52.7388859 41.0332833,52.5442765 Z" id="Path" fill="url(#linearGradient-6)"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

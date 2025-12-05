@@ -4,10 +4,10 @@ Adatum is a new and expanding online commerce store that sells industrial drones
 
 To meet your goals, you need to ensure that the Azure service replicates the functionality that the special hardware currently provides. Important functionality that must be present in the replacement service includes:
 
-- Detect if one of the on-premises servers becomes unavailable so that traffic is no longer directed to it
-- TLS termination functionality to reduce the amount of CPU capacity consumed by encryption and decryption operations
-- Session affinity to ensure that the same back-end pool host always serves a client connection to a web application
-- Security filtering of malicious traffic such as SQL injection and cross site scripting attacks
+- Detect if one of the on-premises servers becomes unavailable so that traffic is no longer directed to it.
+- TLS (Transport Layer Security) termination functionality to reduce the amount of CPU capacity consumed by encryption and decryption operations.
+- Session affinity to ensure that the same back-end pool host always serves a client connection to a web application.
+- Security filtering of malicious traffic such as SQL injection and cross site scripting attacks.
 
 This module explains what Azure Application Gateway does, how it works, and when you should choose to use Azure Application Gateway as a solution to meet your organization’s needs.
 

@@ -7,9 +7,9 @@ You start by understanding the Microsoft Sentinel workspace's architecture. Afte
 After completing this module, you'll be able to:
 
 - Describe Microsoft Sentinel workspace architecture
-- Install Microsoft Sentinel workspace
-- Manage a Microsoft Sentinel workspace
+- Onboard a Microsoft Sentinel workspace to Microsoft Defender
+- Manage a Microsoft Sentinel workspace in Microsoft Defender
 
 ## Prerequisites
 
-Basic experience with Azure services
+Basic experience with Microsoft Defender and Azure services

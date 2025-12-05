@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.understand-azure-active-directory
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Understand Microsoft Entra ID
   description: "This module equips learners to describe Microsoft Entra ID - a cloud-based identity and access management service. They'll compare it with AD DS, understand its role as a directory for cloud services, and learn about its security features. They'll also learn about Microsoft Entra Domain Services."
   ms.date: 05/12/2023
@@ -49,4 +47,4 @@ units:
 - learn.wwl.understand-azure-active-directory.summary
 badge:
   uid: learn.wwl.understand-azure-active-directory.badge
-
+

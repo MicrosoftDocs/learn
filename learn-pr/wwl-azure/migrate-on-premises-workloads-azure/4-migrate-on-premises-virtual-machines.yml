@@ -2,8 +2,6 @@
 uid: learn.wwl.migrate-onpremises-workloads-azure.migrate-onprem-vms
 title: Migrate on-premises virtual machines
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Migrate on-premises virtual machines
   description: "Migrate on-premises virtual machines"
   ms.date: 05/17/2021
@@ -38,4 +36,4 @@ quiz:
       explanation: "Correct. The Recovery Services agent periodically updates replication logs with delta replication changes to an Azure storage account."
     - content: "A Hyper-V VM snapshot is created, and disk changes are tracked using Hyper-V Replica."
       isCorrect: false
-      explanation: "This process happens during the initial replication phase, not during delta replication. The snapshot is deleted before delta replication begins."
+      explanation: "This process happens during the initial replication phase, not during delta replication. The snapshot is deleted before delta replication begins."

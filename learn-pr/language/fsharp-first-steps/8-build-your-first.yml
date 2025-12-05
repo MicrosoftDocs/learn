@@ -4,8 +4,8 @@ title: Exercise - Create your first F# application
 metadata:
   unitType: exercise
   title: "Exercise - Create your first F# application"
-  description: "Create an F# application to print out a message to a text console"
-  ms.date: 02/22/2023
+  description: "Create an F# application to print a message to a text console."
+  ms.date: 03/26/2025
   author: baronfel
   ms.author: chethusk 
   ms.topic: unit

@@ -18,7 +18,7 @@ To use the **Bing Search** trigger in your workflow, you need an API key and API
    | **Resource group** | <*resource-group*> | Select **Create New**, and then create a resource group with a unique name to use across this module. |
    | **Name** | <*Bing-resource*> | Enter unique name for your Bing resource. This example uses **MyBingSearch**. |
    | **Region** | **Global** | Your resource works across multiple Azure regions. |
-   | **Pricing tier** | **F1** | This tier provides 3 calls per second with a limit of 1,000 calls per month. For pricing information, see [Bing Search API pricing](https://www.microsoft.com/bing/apis/pricing). |
+   | **Pricing tier** | **F1** | This tier provides 3 calls per second with a limit of 1,000 calls per month. For pricing information, see [Bing Search API pricing](https://azure.microsoft.com/pricing/details/cognitive-services/bing-entity-search-api/). |
 
 1. When you finish, select **I confirm I have read and understood the notice above.** **>** **Review + create**.
 

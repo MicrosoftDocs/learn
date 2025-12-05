@@ -10,7 +10,7 @@ In this exercise, you'll begin setting up variables needed to calculate a studen
 
 In this task, you'll identify the numeric equivalents for the student's earned letter grade. Then you'll declare variables to store the numeric grade value for each class. The numeric equivalents are represented as whole numbers, so you'll be using the Integer data type to store the values.
 
-1. Ensure that you have the .NET Editor open, and that you have the variables prepared with the student's name, course names, and credit hours.
+1. Ensure that you have the [C# Code Editor](https://microsoftlearning.github.io/c-sharp-minor?azure-portal=true) open, and that you have the variables prepared with the student's name, course names, and credit hours.
 
     In the Prepare unit for this Guided project module, the Setup instructions have you copy student course information into the editor. If necessary, go back and complete the Setup instructions.
 
@@ -64,7 +64,7 @@ In this task, you'll identify the numeric equivalents for the student's earned l
     Console.WriteLine($"{course5Name} {course5Grade}");
     ```
 
-1. In the .NET Editor, to run your code, select the green **Run** button.
+1. In the C# Code Editor, to run your code, press the ▶️ Run button.
 
     Your application's output should match the following output:
 
@@ -96,7 +96,7 @@ In this task, you'll identify the numeric equivalents for the student's earned l
 
 In this task, you'll run the code and verify the output is correct.
 
-1. In the .NET Editor, select **Run**.
+1. In the C# Code Editor, select the ▶️ Run button.
 
 1. Review your output and verify that the course names, grades, and credit hours are all correct:
 

@@ -1,0 +1,53 @@
+### YamlMime:Module
+uid: learn.wwl.purview-ai-understand-risks
+metadata:
+  title: Understand How to Secure AI Data with Microsoft Purview
+  description: "Understand how to secure AI data with Microsoft Purview."
+  ms.date: 08/25/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: module
+  ms.service: purview
+  hidden: false
+title: Understand How to Secure AI Data with Microsoft Purview
+summary: Microsoft Purview helps organizations assess how Microsoft 365 Copilot and other AI tools interact with sensitive data. Using Data Security Posture Management (DSPM) for AI, organizations can evaluate exposure risks, understand which AI tools are in use, and identify how sensitive data is accessed during AI interactions. Audit provides visibility into specific Copilot prompts and responses for compliance and investigation scenarios.
+
+abstract: |
+  After completing this module, you'll be able to:
+  - Explain how Microsoft Purview DSPM for AI supports AI data risk assessment
+  - Identify which AI tools are in use and how they interact with sensitive content
+  - Use DSPM for AI to assess potential data exposure and apply recommended controls
+  - Use Microsoft Purview Audit to review prompts and responses from Microsoft 365 Copilot
+
+prerequisites: |
+  - Familiarity with Microsoft 365 services
+  - Basic understanding of AI tools, including Microsoft 365 Copilot
+  - Knowledge of Microsoft Purview features such as data loss prevention (DLP), sensitivity labels, and auditing
+
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- auditor
+- administrator
+- risk-practitioner
+products:
+- microsoft-purview
+- m365
+subjects:
+- information-protection-governance
+- security
+units:
+- learn.wwl.purview-ai-understand-risks.introduction
+- learn.wwl.purview-ai-understand-risks.understand-ai-risks
+- learn.wwl.purview-ai-understand-risks.understand-purview-ai-protections
+- learn.wwl.purview-ai-understand-risks.compliance-risks-ai
+- learn.wwl.purview-ai-understand-risks.assess-ai-risks
+- learn.wwl.purview-ai-understand-risks.control-ai-sensitive-data
+- learn.wwl.purview-ai-understand-risks.detect-respond-ai-activity
+- learn.wwl.purview-ai-understand-risks.retain-search-copilot
+- learn.wwl.purview-ai-understand-risks.knowledge-check
+- learn.wwl.purview-ai-understand-risks.summary
+
+badge:
+  uid: learn.wwl.purview-ai-understand-risks.badge

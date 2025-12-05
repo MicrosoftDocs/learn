@@ -6,13 +6,12 @@ metadata:
   prefetch-feature-rollout: true
   title: Review write-heavy index patterns
   description: "Review write-heavy index patterns"
-  ms.date: 10/15/2024
+  ms.date: 05/07/2025
   author: wwlpublish
   ms.author: calopez
   ms.topic: unit
-azureSandbox: false
-labModal: false
+  ms.custom:
+  - N/A
 durationInMinutes: 4
 content: |
   [!include[](includes/4-review-write-heavy-index-patterns.md)]
-

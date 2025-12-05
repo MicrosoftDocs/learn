@@ -1,64 +1,26 @@
----
-ms.custom:
-  - build-2023
----
-In this module, you'll learn about SQL Server 2022 scenarios that can be extended to the cloud and understand the advantages of using a hybrid approach to increase productivity and innovation, and how you can connect to Azure for managing disaster recovery, near real-time analytics, and enhancements to authentication.
+You'll learn about SQL Server 2025 scenarios that can be extended to the cloud and understand the advantages of using a hybrid approach to increase productivity and innovation. You'll explore how to connect to Azure for managing disaster recovery, near real-time analytics, data synchronization, and enhanced authentication.
 
-Understanding how SQL Server operates as a hybrid data platform can be valuable in modernizing your data estate, improving scalability and control. Moreover, the hybrid data platform enables you to explore the benefits of cloud computing before fully migrating to Azure, providing a valuable, low-risk opportunity to evaluate performance and reliability metrics before a full commitment.
+Understanding how SQL Server operates as a hybrid data platform helps in modernizing your data estate and improving scalability and control. The hybrid data platform also enables you to explore cloud computing benefits before fully migrating to Azure, providing an opportunity to evaluate performance and reliability before a full commitment.
 
-To leverage a hybrid data platform for SQL Server, you have the flexibility to choose from various options and models, such as:
-
-* Azure SQL Managed Instance Link
-* Azure Arc-enabled SQL Server 
-* Azure Synapse Link for SQL Server
-* Microsoft Entra authentication
-* Microsoft Purview
-
-A cloud connected service can also be adopted in mixed ways, such as storing SQL Server data files on Azure Storage, or used to replace on-premises services such as failing over SQL Server to Azure during a disaster recovery or migration scenario.
-
-SQL Server 2022 connects to the cloud with the following Azure services as seen in the following diagram:
-
-:::image type="content" source="../media/module-2-sql-server-2022-cloud-connected.png" alt-text="Diagram of SQL Server 2022 cloud connected capabilities.":::
+A cloud connected service can also be adopted in different ways, such as storing SQL Server data files on Azure Storage, backing up to S3-compatible storage, or failing over SQL Server to Azure during a disaster recovery or migration scenario.
 
 ### Increased agility and innovation
 
-In order to keep up with the rapid pace of technological advancements, services are requiring substantial amount computing resources due to the ever-increasing volume of data. To address this challenge, a hybrid approach for your data services may provide the agility, and at the same time scalability for your services. Managing and maintaining a disaster recovery site for your data can be a difficult and costly task. Getting started on utilizing business continuity through Azure SQL Managed Instance link can help ease with some of this burden and ease your transition to the cloud.
+To keep up with technological advancements, services require substantial computing resources due to increasing data volumes. A hybrid approach for your data services provides agility and scalability. Managing and maintaining a disaster recovery site for your data can be difficult and costly. Getting started with business continuity through Azure SQL Managed Instance Link, combined with features like Microsoft Fabric Mirroring for real-time data synchronization, can help ease this burden and support your transition to the cloud.
 
-SQL Server may not include every service or capability necessary for specific needs. Hence, there are times where cloud services offer additional capabilities as services to supplement the existing features of SQL Server.
+SQL Server 2025 enhances hybrid capabilities with improved cloud integration options. Features like S3-compatible object storage support for backups, enhanced [Azure Arc](/azure/azure-arc/overview?azure-portal=true) management, and connectivity with [Microsoft Fabric](/fabric/get-started/microsoft-fabric-overview?azure-portal=true) enable organizations to build data platforms that span on-premises and cloud environments.
 
-We'll highlight the hybrid services available on SQL Server 2022 that can help you optimize costs for several workloads, avoid unnecessary infrastructure investments, and increase team agility. Additionally, a hybrid approach can also be adopted by organizations with an outdated on-premises legacy setup that is no longer supported by third-party vendors.
+You'll explore the hybrid services available on SQL Server 2025 that can help you optimize costs for several workloads, avoid unnecessary infrastructure investments, and increase team agility. A hybrid approach can be adopted by organizations with an on-premises legacy setup that is no longer supported by vendors, enabling them to modernize incrementally while maintaining existing investments.
 
 ### Security enhancements
 
-A properly secured hybrid cloud infrastructure can not only provide a safe environment for your services, but also enhance your overall security framework.
+A properly secured hybrid cloud infrastructure can provide a safe environment for your services and enhance your overall security framework.
 
-Security solutions should provide visibility and control over the network, as well as various security options to safeguard hybrid cloud environments. Additionally, compliance and governance are important considerations when it comes to security in certain industries like finance, government, and healthcare.
+Security solutions should provide visibility and control over the network, and various security options to safeguard hybrid cloud environments. Compliance and governance are important considerations when it comes to security in certain industries like finance, government, and healthcare.
 
-For this reason, it is essential to have a security solution that adheres to industry standards and regulations in hybrid cloud environments to ensure data security, confidentiality, and integrity. 
+For this reason, it's essential to have a security solution that adheres to industry standards and regulations in hybrid cloud environments to ensure data security, confidentiality, and integrity. 
 
-Microsoft Entra authentication for SQL Server 2022 is a central authentication repository that supports advanced authentication methods like Microsoft Entra multifactor authentication and Microsoft Entra access token where a company can add an extra layer of security to their authentication process. 
+[Microsoft Entra authentication](/entra/identity/authentication/overview-authentication?azure-portal=true) for SQL Server 2025 is a central authentication repository that supports advanced authentication methods like Microsoft Entra multifactor authentication and Microsoft Entra access tokens, enabling companies to add security to their authentication process. SQL Server 2025 builds upon this foundation with enhanced managed identity support for Azure Arc-enabled instances, providing secure authentication to Azure services.
 
-With a cloud-based central authentication authority like Microsoft Entra ID, you can take advantage of the latest SQL Server security features, while also reducing the risk of security breaches caused by weak or reused passwords.
+With a cloud-based central authentication authority like Microsoft Entra ID, you can take advantage of SQL Server security features while reducing the risk of security breaches caused by weak or reused passwords.
 
-In SQL Server 2022, Microsoft Purview can be used to manage data access policies at scale, simplifying access management and ensuring consistent policies across an organization. Access policies include Data and DevOps types, allowing Microsoft Entra accounts to log into SQL Server and have access to read data or perform specific tasks. Access policies can be deleted or applied across multiple instances for central governance.
-
-**Watch this video** to see the cloud connected capabilities of SQL Server 2022:
-
-> [!VIDEO https://learn-video.azurefd.net/vod/player?show=data-exposed&ep=sql-server-2022-cloud-connected-ep-2-data-exposed]
-
-## Learning objectives
-
-At the end of this module, you will be able to:
-
-- Describe the services that support SQL Server data files in a hybrid platform
-- Describe how Azure Arc-enabled SQL Server works
-- Discover best practices for disaster recovery using Azure SQL Managed Instance
-- Understand how to implement near real time analytics with Azure Synapse Link for SQL Server
-- Explain cloud connected technologies that support security with Microsoft Entra authentication
-- Explore Microsoft Purview access policies for SQL Server
-
-## Prerequisites
-
-- Basic working knowledge of SQL Server, including deployment, security, query processing, and high availability
-- Fundamental knowledge of the T-SQL language
-- Basic knowledge of Azure concepts, including subscriptions, resource groups, Infrastructure-as-a-Service (IaaS) and Platform-as-a-Service (PaaS)

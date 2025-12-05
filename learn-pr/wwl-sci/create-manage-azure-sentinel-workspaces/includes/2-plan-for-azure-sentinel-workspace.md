@@ -12,7 +12,7 @@ The three implementation options:
 
 The single-tenant with a single Microsoft Sentinel workspace is the central repository for logs across all resources within the same tenant.
 
-This workspace receives logs from resources in other regions within the same tenant. Because the log data (when collected) travels across regions and stored in another region, this creates two possible concerns.  First, it can incur a bandwidth cost. Second, if there's a data governance requirement to keep data in a specific region, the single workspace option wouldn't be an implementation option.
+This workspace receives logs from resources in other regions within the same tenant. Because the log data (when collected) travels across regions and stored in another region, this creates two possible concerns. First, it can incur a bandwidth cost. Second, if there's a data governance requirement to keep data in a specific region, the single workspace option wouldn't be an implementation option.
 
 :::image type="content" source="../media/single-tenant-workspace.png" alt-text="Diagram of a Single Tenant Microsoft Sentinel Workspace.":::
 
@@ -51,10 +51,10 @@ TableName
 
 ## Multiple tenant workspaces
 
-If you're required to manage a Microsoft Sentinel workspace, not in your tenant, you implement Multiple tenant workspaces using Azure Lighthouse.  This security configuration grants you access to the tenants.  The tenant configuration within the tenant (regional or multi-regional) is the same consideration as before.
+If you're required to manage a Microsoft Sentinel workspace, not in your tenant, you implement Multiple tenant workspaces using Azure Lighthouse. This security configuration grants you access to the tenants. The tenant configuration within the tenant (regional or multi-regional) is the same consideration as before.
 
 :::image type="content" source="../media/multi-tenant-workspaces.png" alt-text="Diagram of Microsoft Sentinel Multiple tenant Workspaces.":::
 
-## Use the same log analytics workspace as Microsoft Defender for Cloud
+## Use the same log analytics workspace for Microsoft Sentinel and Microsoft Defender for Cloud
 
-Use the same workspace for both Microsoft Sentinel and Microsoft Defender for Cloud, so that all logs collected by Microsoft Defender for Cloud can also be ingested and used by Microsoft Sentinel. The default workspace created by Microsoft Defender for Cloud won't appear as an available workspace for Microsoft Sentinel.
+To streamline security operations, use the same workspace for both Microsoft Sentinel and Microsoft Defender for Cloud. All logs collected by Microsoft Defender for Cloud can also be used by Microsoft Sentinel. The default workspace created by Microsoft Defender for Cloud won't appear as an available workspace for Microsoft Sentinel.

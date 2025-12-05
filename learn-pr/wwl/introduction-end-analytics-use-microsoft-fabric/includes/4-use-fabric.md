@@ -32,7 +32,7 @@ You can manage workspace access through four roles: _admin_, _contributor_, _mem
 
 ## Discover data with OneLake catalog
 
-The OneLake catalog in Microsoft Fabric helps users easily find and access various data sources within their organization. Users explore and connect to data sources, ensuring they have the right data for their needs. Users only see items shared with them. Here are some considerations when using OneLake Hub:
+The OneLake catalog in Microsoft Fabric helps users easily find and access various data sources within their organization. Users explore and connect to data sources, ensuring they have the right data for their needs. Users only see items shared with them. Here are some considerations when using OneLake catalog:
 
 - Narrow results by workspaces or domains (if implemented).
 - Explore default categories to quickly locate relevant data.
@@ -53,4 +53,31 @@ After you create your Fabric enabled workspace, you can start creating items in 
 - **Real-Time Intelligence**: Process, monitor, and analyze streaming data.
 - **Power BI**: Create reports and dashboards to make data-driven decisions.
 
-Fabric integrates capabilities from existing Microsoft tools like Power BI, Azure Synapse Analytics, and Azure Data Factory into a unified platform. Fabric also supports a data mesh architecture, allowing decentralized data ownership while maintaining centralized governance. This eliminates the need for direct Azure resource access, simplifying data workflows.
+Fabric integrates capabilities from existing Microsoft tools like Power BI, Azure Synapse Analytics, and Azure Data Factory into a unified platform. Fabric also supports a data mesh architecture, allowing decentralized data ownership while maintaining centralized governance. This design eliminates the need for direct Azure resource access, simplifying data workflows.
+
+## Enhance productivity with Copilot in Fabric
+
+Microsoft Copilot in Fabric is a generative AI assistant that enhances productivity and accelerates insights across all Fabric workloads. Copilot uses large language models (LLMs) to provide intelligent assistance for data professionals, self-service users, and business users.
+
+### Copilot capabilities across workloads
+
+Copilot provides tailored assistance for each Fabric workload:
+
+- **Data Engineering and Data Science**: Intelligent code completion, automated routine tasks, industry-standard code templates, and contextual code suggestions that adapt to specific tasks. Copilot helps with data preparation, pipeline building, and insight generation.
+
+- **Data Factory**: AI-enhanced toolset supporting both citizen and professional data wranglers with intelligent code generation for data transformation and code explanations for complex tasks.
+
+- **Data Warehouse and SQL Database**: Natural language to SQL conversion, code completion, quick actions, and intelligent insights. Users can describe what they want in plain language, and Copilot generates the appropriate SQL queries.
+
+- **Power BI**: Automatic report generation, summary creation for report pages, synonym generation for better Q&A capabilities, and natural language querying of data. Business users can also use Copilot to extract more insights and chat with the report data.
+
+- **Real-Time Intelligence**: Advanced AI tool that translates natural language questions into Kusto Query Language (KQL) queries, streamlining data analysis for both experienced users and citizen data scientists.
+
+### Enabling Copilot
+
+Administrators must enable Copilot in the **Admin portal > Tenant settings** in the Power BI service.
+
+Copilot helps users work more efficiently by providing AI assistance for common tasks like writing code, generating queries, and creating reports. This support is available to both technical and business users while maintaining organizational security policies.
+
+> [!TIP]
+> For more information, see the [Copilot for Microsoft Fabric and Power BI](/fabric/fundamentals/copilot-faq-fabric) documentation.

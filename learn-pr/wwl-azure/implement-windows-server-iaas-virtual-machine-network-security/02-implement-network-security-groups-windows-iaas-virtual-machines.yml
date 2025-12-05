@@ -4,11 +4,12 @@ title: Implement network security groups and Windows IaaS VMs
 metadata:
   title: Implement network security groups and Windows IaaS VMs
   description: "Implement network security groups and Windows IaaS VMs"
-  ms.date: 12/24/2024
+  ms.date: 07/09/2025
   author: wwlpublish
   ms.author: tonyj
   ms.topic: unit
-azureSandbox: false
+  ms.custom:
+  - N/A
 durationInMinutes: 8
 content: |
   [!include[](includes/02-implement-network-security-groups-windows-iaas-virtual-machines.md)]

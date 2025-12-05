@@ -2,8 +2,8 @@ AI tools for developers have become increasingly popular in recent years. Compan
 
 To help align AI tools with development tasks and projects, this unit examines the following resources:
 
-- Azure AI services.
-- Azure AI Foundry portal.
+- Foundry Tools.
+- Microsoft Foundry portal.
 - AI Builder.
 - Copilot Studio.
 - Semantic Kernel SDK.
@@ -11,29 +11,29 @@ To help align AI tools with development tasks and projects, this unit examines t
 - ChatGPT.
 - GitHub Copilot.
 
-## Azure AI services
+## Foundry Tools
 
-The Azure AI services are a set of cloud-based services that enable developers to build AI-powered applications without requiring expertise in machine learning. These services cover a wide range of AI capabilities, including speech recognition, natural language processing, computer vision, and decision-making. Azure AI services are designed to be easy to use and integrate with existing applications.
+The Foundry Tools are a set of cloud-based services that enable developers to build AI-powered applications without requiring expertise in machine learning. These services cover a wide range of AI capabilities, including speech recognition, natural language processing, computer vision, and decision-making. Foundry Tools are designed to be easy to use and integrate with existing applications.
 
-Azure Cognitive Services is a subset of Azure AI services that provide prebuilt AI models for common tasks such as text analysis, image recognition, and language translation. These models can be integrated into applications using REST APIs or SDKs.
+Some Foundry Tools provide prebuilt AI models for common tasks such as text analysis, image recognition, and language translation. These models can be integrated into applications using REST APIs or SDKs.
 
-The Azure AI services are best suited for projects that require AI capabilities but lack the resources or expertise to build custom models from scratch. These services help developers add AI features to their applications. This results in improved user experiences.
+The Foundry Tools are best suited for projects that require AI capabilities but lack the resources or expertise to build custom models from scratch. These services help developers add AI features to their applications. This results in improved user experiences.
 
-Azure AI services are intended for:
+Foundry Tools are intended for:
 
 - Developers who want to add AI capabilities to their applications without needing to build custom models.
 - Organizations that need to quickly deploy AI-powered solutions without investing in specialized AI expertise.
 - Projects that require common AI capabilities like speech recognition, natural language processing, or computer vision.
 
-## Azure AI Foundry portal
+## Microsoft Foundry portal
 
-Azure AI Foundry portal is a web-based platform that allows developers to build, train, and deploy machine learning models using a visual interface. It provides a range of tools and templates to help developers create AI models without needing to write code. Azure AI Foundry portal supports popular machine learning frameworks like TensorFlow and PyTorch, making it easy to work with existing models.
+Microsoft Foundry portal is a web-based platform that allows developers to build, train, and deploy machine learning models using a visual interface. It provides a range of tools and templates to help developers create AI models without needing to write code. Microsoft Foundry portal supports popular machine learning frameworks like TensorFlow and PyTorch, making it easy to work with existing models.
 
-Azure AI Foundry portal also includes features for data preparation, model training, and model evaluation. Developers can use drag-and-drop tools to create data pipelines, experiment with different algorithms, and monitor model performance. Once a model is trained, it can be deployed as a web service or integrated into an existing application.
+Microsoft Foundry portal also includes features for data preparation, model training, and model evaluation. Developers can use drag-and-drop tools to create data pipelines, experiment with different algorithms, and monitor model performance. Once a model is trained, it can be deployed as a web service or integrated into an existing application.
 
-Azure AI Foundry portal is ideal for developers who want to experiment with machine learning models without needing to write code or manage infrastructure. It provides a user-friendly interface for building and deploying AI models, making it accessible to a wide range of developers.
+Microsoft Foundry portal is ideal for developers who want to experiment with machine learning models without needing to write code or manage infrastructure. It provides a user-friendly interface for building and deploying AI models, making it accessible to a wide range of developers.
 
-Azure AI Foundry portal is intended for:
+Microsoft Foundry portal is intended for:
 
 - Developers who want to experiment with machine learning models without needing to write code.
 - Data scientists who need a platform for building, training, and deploying AI models.
@@ -133,12 +133,12 @@ ChatGPT is intended for:
 
 ## GitHub Copilot tools
 
-GitHub provides a suite of AI-assisted programming tools, including GitHub Copilot and Copilot Chat. GitHub Copilot, powered by OpenAI's Codex, is an AI pair programmer that helps you write code faster and with less effort. Copilot works alongside you directly in your code editor, seamlessly integrating AI into your workflow. It provides intelligent code suggestions and completions based on the context of your code, helping you write code more efficiently and accurately. GitHub Copilot Chat is a chat interface that lets you interact with GitHub Copilot, to ask and receive answers to coding-related questions within GitHub.com and supported IDEs.
+GitHub provides a suite of AI-assisted programming tools, including GitHub Copilot and GitHub Copilot Chat. GitHub Copilot, powered by OpenAI's Codex, is an AI pair programmer that helps you write code faster and with less effort. Copilot works alongside you directly in your code editor, seamlessly integrating AI into your workflow. It provides intelligent code suggestions and completions based on the context of your code, helping you write code more efficiently and accurately. GitHub Copilot Chat is a chat interface that lets you interact with GitHub Copilot, to ask and receive answers to coding-related questions within GitHub.com and supported IDEs.
 
 General support features:
 
-- **Language Support**: Supports multiple programming languages and frameworks, adapting to the code you're working on.
-- **IDE Integration**: Works directly in your code editor, providing suggestions and completions as you write code.
+- **Language support**: Supports multiple programming languages and frameworks, adapting to the code you're working on.
+- **IDE integration**: Works directly in your code editor, providing suggestions and completions as you write code.
 
 GitHub Copilot's autocomplete features:
 
@@ -149,15 +149,15 @@ Copilot suggestions can help you write code faster and with fewer errors, improv
 
 GitHub Copilot Chat's AI assistance features:
 
-- **Chat Interface**: Provides a chat interface for interacting with GitHub Copilot, asking and receiving answers to coding-related questions.
-- **Code Explanation**: Provides explanations for selected code snippets, helping you understand syntax, programming concepts, test cases, debugging, and more, without requiring you to navigate documentation or search online forums.
-- **Documentation Generation**: Generates explanations or documentation for selected code or entire workspaces, helping you understand and document your codebase.
-- **Test Case Generation**: Helps in generating test cases for your code, saving time, and improving code quality.
+- **Chat interface**: Provides a chat interface for interacting with GitHub Copilot, asking and receiving answers to coding-related questions.
+- **Code explanation**: Provides explanations for selected code snippets, helping you understand syntax, programming concepts, test cases, debugging, and more, without requiring you to navigate documentation or search online forums.
+- **Documentation generation**: Generates explanations or documentation for selected code or entire workspaces, helping you understand and document your codebase.
+- **Test case generation**: Helps in generating test cases for your code, saving time, and improving code quality.
 - **Code fixes**: Provides suggestions for refactoring code and fixing common issues, improving code quality and maintainability.
 
 By using AI to assist with coding tasks, GitHub Copilot can help you focus on higher-level design and problem-solving, rather than getting bogged down in syntax and implementation details.
 
-GitHub Copilot and Copilot Chat are intended for:
+GitHub Copilot and GitHub Copilot Chat are intended for:
 
 - Developers who want to write code faster and with fewer errors.
 - Teams that want to improve code quality and consistency across projects.
@@ -167,3 +167,4 @@ GitHub Copilot and Copilot Chat are intended for:
 ## Summary
 
 AI-assisted programming tools cater to a wide range of development needs, from writing and refactoring code to building and deploying machine learning models. AI tools make software development more efficient, accessible, and enjoyable. Whether you're a seasoned developer or just starting out, AI tools can help you take your coding to the next level.
+

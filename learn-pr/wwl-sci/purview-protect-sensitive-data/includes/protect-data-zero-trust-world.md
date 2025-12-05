@@ -1,21 +1,29 @@
-Traditional security models assume that users and devices inside an organization's network are trusted. However, modern threats require a different approach. Zero Trust operates under the principle that every access request could be a potential risk, requiring continuous verification and least-privilege access to minimize security threats.
+Contoso Ltd. continues to expand its cloud usage and AI services. As users access sensitive data from different locations and devices, traditional perimeter-based security models aren't enough to protect that data. Zero Trust provides a more effective approach by assuming that no user, device, or service should automatically be trusted, even inside the corporate network.
 
-## Principles of Zero Trust for data security
+With Zero Trust, security teams verify every access request, apply least privilege, and continuously monitor activity to protect sensitive information.
 
-Zero Trust is built on three core principles that help organizations reduce security risks and maintain control over sensitive data:
+## Traditional security models fall short
 
-- **Verify explicitly**: Every user, device, and access request must be authenticated and authorized before gaining access to data. This includes enforcing strong identity and access management (IAM) controls, such as **multifactor authentication (MFA)** and **conditional access** policies in **Microsoft Entra ID**.
+Older security models focused on protecting the corporate network perimeter. Once users were inside the network, they often had broad access to systems and data. This model no longer works when users work remotely, use personal devices, or collaborate across cloud platforms.
 
-- **Apply least privilege**: Users should only have the minimum level of access required to perform their tasks. **Microsoft Purview Privileged Access Management** helps enforce granular access controls, ensuring that data is only accessible to those who need it.
+Without controls that verify users, devices, and access requests, sensitive data can be exposed even if attackers bypass the perimeter.
 
-- **Assume breach**: Organizations must continuously monitor for threats and respond proactively. **Microsoft Defender for Cloud** and **Microsoft Sentinel** provide real-time monitoring, helping detect suspicious activity and mitigate risks before they escalate.
+## Zero Trust security principles
 
-## How Zero Trust enhances data security
+Zero Trust shifts the security model from assuming trust to always verifying trust. Core principles include:
 
-By following Zero Trust principles, organizations can strengthen their security posture and reduce data exposure risks. This approach ensures that:
+- **Verify explicitly**: Always authenticate users and devices based on all available signals, such as identity, location, device health, and behavior.
+- **Use least privilege access**: Limit users to only the data and resources they need for their roles.
+- **Assume breach**: Design security strategies with the expectation that breaches can happen. Continuous monitoring and risk-based controls help detect and contain incidents early.
 
-- Only verified users and devices can access sensitive data.
-- Access is granted based on risk, not assumed trust.
-- Security teams can detect and respond to threats in real time.
+## Applying Zero Trust to data protection
 
-These principles guide how organizations should **classify**, **label**, and **control access to data**, integrating Microsoft Purview's data protection tools to safeguard information across cloud and hybrid environments.
+Zero Trust applies to more than just network access. It also protects sensitive data across cloud services, endpoints, and AI platforms. Key data protection actions include:
+
+- **Classifying and labeling sensitive data** so policies apply wherever data resides.
+- **Applying encryption and rights management** to control who can view or share sensitive content.
+- **Using data loss prevention (DLP)** policies to prevent unauthorized sharing or transfers of sensitive data.
+- **Using insider risk management** policies to identify potential actions that could lead to data exposure.
+- **Applying AI security controls** to protect sensitive data used in AI applications.
+
+By using Zero Trust principles, organizations protect sensitive data regardless of where users work, what devices they use, or how data moves across services.

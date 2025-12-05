@@ -29,4 +29,4 @@ When you've finished the exercise in GitHub, return here for:
 > - A badge for completing this module.
 ​
 > [!div class="nextstepaction"]
-> [Open the exercise on GitHub](https://github.com/skills/secure-repository-supply-chain)
+> [Open the exercise on GitHub](https://github.com/skills-dev/secure-repository-supply-chain)

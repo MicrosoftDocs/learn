@@ -1,15 +1,13 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.software-composition-analysis.automate-container-images
-title: Automate container scanning, including container images
+uid: learn.wwl.software-composition-analysis.automate-container-image-scanning
+title: Automate container image scanning
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Automate container scanning, including container images
-  description: "Automate container scanning, including container images"
-  ms.date: 05/13/2024
-  author: wwlpublish
+  title: Automate Container Image Scanning
+  description: "Implement automated container scanning for base images, dependencies, and runtime environments with registry, build-time, and runtime scanning."
+  ms.date: 10/22/2025
+  author: LuizMacedo
   ms.author: lumac
   ms.topic: unit
-durationInMinutes: 3
+durationInMinutes: 10
 content: |
   [!include[](includes/7-automate-container-images.md)]

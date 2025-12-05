@@ -2,13 +2,11 @@
 uid: learn.wwl.machine-learning-azure-databricks.understand-machine-learning
 title: Understand principles of machine learning
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Understand principles of machine learning
   description: Understand principles of machine learning
-  author: wwlpublish
-  ms.author: madiepev
-  ms.date: 08/26/2024
+  author: JulianePadrao
+  ms.author: jupadrao
+  ms.date: 4/24/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot

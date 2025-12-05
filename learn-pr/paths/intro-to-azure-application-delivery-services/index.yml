@@ -26,7 +26,6 @@ subjects:
 - cloud-computing
 modules:
 - learn.azure.intro-to-azure-load-balancer
-- learn.distribute-load-with-traffic-manager
 - learn.azure.intro-to-azure-application-gateway
 - learn.intro-to-azure-front-door
 - introduction-azure-web-application-firewall
