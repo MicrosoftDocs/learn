@@ -7315,3 +7315,28 @@ achievements:
   title: Build your first Windows App by using WinUI & Windows App SDK
   summary: Create a Windows app using WinUI 3, Windows App SDK, and Community Toolkit in Visual Studio. Set up the development environment, and build a maintainable, testable, and scalable Windows applications using best practices in software architecture.
   iconUrl: /training/achievements/winui-101-badge.svg
+- uid: learn.wwl.track-azure-databricks-experiments-azure-machine-learning.badge
+  type: badge
+  title: Track Azure Databricks experiments in Azure Machine Learning
+  summary: Azure Machine Learning is a scalable cloud platform for training, deploying, and managing machine learning solutions.
+  iconUrl: /training/achievements/track-azure-databricks-experiments-in-azure-machine-learning.svg
+- uid: learn.wwl.train-models-scripts-azure-machine-learning.trophy
+  type: trophy
+  title: Train models with scripts in Azure Machine Learning
+  summary: To prepare your machine learning workloads for production, you'll work with scripts. Learn how to train models with scripts in Azure Machine Learning.
+  iconUrl: /training/achievements/train-models-scripts-azure-machine-learning.svg
+- uid: learn.finetune-foundation-model-with-azure-machine-learning.badge
+  type: badge
+  title: Fine-tune a foundation model with Azure Machine Learning
+  summary: Train a pretrained Large Language Model (LLM) on specific tasks. The model catalog in Azure Machine Learning offers many open source models that can be fine-tuned for your specific task.
+  iconUrl: /learn/achievements/generic-badge.svg
+- uid: learn.get-started-prompt-flow.badge
+  type: badge
+  title: Get started with prompt flow to develop Large Language Model (LLM) apps
+  summary: Learn about how to use prompt flow to develop applications that leverage Large Language Models (LLMs).
+  iconUrl: /learn/achievements/generic-badge.svg
+- uid: learn.wwl.deploy-azure-databricks-models-azure-machine-learning.badge
+  type: badge
+  title: Deploy Azure Databricks models in Azure Machine Learning
+  summary: You can use Azure Databricks to train machine learning models, and deploy the trained models in Azure Machine Learning endpoints.
+  iconUrl: /training/achievements/deploy-azure-databricks-models-in-azure-machine-learning.svg

@@ -60723,6 +60723,186 @@
       "source_path": "learn-pr/azure/logic-apps-and-custom-connectors/index.yml",
       "redirect_url": "https://learn.microsoft.com/azure/logic-apps/custom-connector-overview",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/track-azure-databricks-experiments-azure-machine-learning/index.md",
+      "redirect_url": "/training/paths/use-azure-machine-learning-pipelines-for-automation/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/track-azure-databricks-experiments-azure-machine-learning/2-describe-azure-machine-learning.md",
+      "redirect_url": "/training/paths/use-azure-machine-learning-pipelines-for-automation/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/track-azure-databricks-experiments-azure-machine-learning/6-exercise-use-azure-databricks.md",
+      "redirect_url": "/training/paths/use-azure-machine-learning-pipelines-for-automation/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/track-azure-databricks-experiments-azure-machine-learning/1-introduction.md",
+      "redirect_url": "/training/paths/use-azure-machine-learning-pipelines-for-automation/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/track-azure-databricks-experiments-azure-machine-learning/7-knowledge-check.md",
+      "redirect_url": "/training/paths/use-azure-machine-learning-pipelines-for-automation/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/track-azure-databricks-experiments-azure-machine-learning/4-log-metrics-mlflow.md",
+      "redirect_url": "/training/paths/use-azure-machine-learning-pipelines-for-automation/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/track-azure-databricks-experiments-azure-machine-learning/3-run-azure-databricks-experiments.md",
+      "redirect_url": "/training/paths/use-azure-machine-learning-pipelines-for-automation/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/track-azure-databricks-experiments-azure-machine-learning/5-run-pipelines-azure-databricks-compute.md",
+      "redirect_url": "/training/paths/use-azure-machine-learning-pipelines-for-automation/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/track-azure-databricks-experiments-azure-machine-learning/8-summary.md",
+      "redirect_url": "/training/paths/use-azure-machine-learning-pipelines-for-automation/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/train-models-scripts-azure-machine-learning/index.md",
+      "redirect_url": "/training/paths/use-azure-machine-learning-pipelines-for-automation/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/finetune-foundation-model-with-azure-machine-learning/index.md",
+      "redirect_url": "/training/modules/finetune-model-copilot-ai-studio/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/finetune-foundation-model-with-azure-machine-learning/4-evaluate-model.md",
+      "redirect_url": "/training/modules/finetune-model-copilot-ai-studio/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/finetune-foundation-model-with-azure-machine-learning/5-exercise.md",
+      "redirect_url": "/training/modules/finetune-model-copilot-ai-studio/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/finetune-foundation-model-with-azure-machine-learning/3-finetune-model.md",
+      "redirect_url": "/training/modules/finetune-model-copilot-ai-studio/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/finetune-foundation-model-with-azure-machine-learning/1-introduction.md",
+      "redirect_url": "/training/modules/finetune-model-copilot-ai-studio/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/finetune-foundation-model-with-azure-machine-learning/6-knowledge-check.md",
+      "redirect_url": "/training/modules/finetune-model-copilot-ai-studio/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/finetune-foundation-model-with-azure-machine-learning/7-summary.md",
+      "redirect_url": "/training/modules/finetune-model-copilot-ai-studio/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/finetune-foundation-model-with-azure-machine-learning/2-understand-finetune.md",
+      "redirect_url": "/training/modules/finetune-model-copilot-ai-studio/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/get-started-prompt-flow/index.md",
+      "redirect_url": "/training/paths/create-custom-copilots-ai-studio/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/get-started-prompt-flow/4-connections-runtimes.md",
+      "redirect_url": "/training/paths/create-custom-copilots-ai-studio/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/get-started-prompt-flow/6-exercise.md",
+      "redirect_url": "/training/paths/create-custom-copilots-ai-studio/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/get-started-prompt-flow/1-introduction.md",
+      "redirect_url": "/training/paths/create-custom-copilots-ai-studio/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/get-started-prompt-flow/7-knowledge-check.md",
+      "redirect_url": "/training/paths/create-custom-copilots-ai-studio/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/get-started-prompt-flow/8-summary.md",
+      "redirect_url": "/training/paths/create-custom-copilots-ai-studio/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/get-started-prompt-flow/3-understand-flows.md",
+      "redirect_url": "/training/paths/create-custom-copilots-ai-studio/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/get-started-prompt-flow/2-understand-lifecycle.md",
+      "redirect_url": "/training/paths/create-custom-copilots-ai-studio/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/get-started-prompt-flow/5-variants-monitor.md",
+      "redirect_url": "/training/paths/create-custom-copilots-ai-studio/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/deploy-azure-databricks-models-azure-machine-learning/index.md",
+      "redirect_url": "/training/paths/use-azure-machine-learning-pipelines-for-automation/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/deploy-azure-databricks-models-azure-machine-learning/4-deploy-model-to-azure-machine-learning.md",
+      "redirect_url": "/training/paths/use-azure-machine-learning-pipelines-for-automation/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/deploy-azure-databricks-models-azure-machine-learning/2-describe-considerations-for-model-deployment.md",
+      "redirect_url": "/training/paths/use-azure-machine-learning-pipelines-for-automation/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/deploy-azure-databricks-models-azure-machine-learning/6-exercise-deploy-azure-databricks-model.md",
+      "redirect_url": "/training/paths/use-azure-machine-learning-pipelines-for-automation/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/deploy-azure-databricks-models-azure-machine-learning/1-introduction.md",
+      "redirect_url": "/training/paths/use-azure-machine-learning-pipelines-for-automation/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/deploy-azure-databricks-models-azure-machine-learning/7-knowledge-check.md",
+      "redirect_url": "/training/paths/use-azure-machine-learning-pipelines-for-automation/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/deploy-azure-databricks-models-azure-machine-learning/3-plan-for-deployment-endpoints.md",
+      "redirect_url": "/training/paths/use-azure-machine-learning-pipelines-for-automation/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/deploy-azure-databricks-models-azure-machine-learning/8-summary.md",
+      "redirect_url": "/training/paths/use-azure-machine-learning-pipelines-for-automation/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/deploy-azure-databricks-models-azure-machine-learning/5-troubleshoot-model-deployment.md",
+      "redirect_url": "/training/paths/use-azure-machine-learning-pipelines-for-automation/",
+      "redirect_document_id": false
     }
   ]
 }
