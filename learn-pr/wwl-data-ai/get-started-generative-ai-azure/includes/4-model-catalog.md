@@ -8,7 +8,7 @@ You can deploy the models from Microsoft Foundry model catalog to an endpoint wi
 
 To choose the model that best fits your needs, you can test out different models in a *playground* setting and utilize *model leaderboards (preview)*. Model leaderboards provide a way to see what models are performing best in different criteria such as quality, cost, and throughput. You can also see graphical comparisons of models based on specific metrics.
 
-![Screenshot of comparison of models in Microsoft Foundry portal.](../media/model-benchmarks-comparision.png)
+![Screenshot of comparison of models in Microsoft Foundry.](../media/model-benchmarks-comparision.png)
 
 Next, let's take a closer look at how to get started with Microsoft Foundry capabilities.
 
