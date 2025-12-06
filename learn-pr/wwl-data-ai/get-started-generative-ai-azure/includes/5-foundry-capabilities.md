@@ -1,16 +1,16 @@
-Microsoft Foundry portal provides a user interface based around **hubs** and **projects**. In general, creating a **hub** provides more comprehensive access to Azure AI and Azure Machine Learning. Within a hub, you can create projects. **Projects** provide more specific access to models and agent development. You can manage your projects from Microsoft Foundry portal's *overview* page. 
+Microsoft Foundry provides a user interface based around **hubs** and **projects**. In general, creating a **hub** provides more comprehensive access to Azure AI and Azure Machine Learning. Within a hub, you can create projects. **Projects** provide more specific access to models and agent development. You can manage your projects from Microsoft Foundry's *overview* page. 
 
 ![Screenshot of Microsoft Foundry overview page](../media/foundry-overview-page.png) 
 
-When you create an Azure AI Hub, several other resources are created in tandem, including a **Foundry Tools** resource. In Microsoft Foundry portal, you can test all kinds of Foundry Tools, including Azure Speech, Azure Language, Azure Vision, and Microsoft Foundry Content Safety. 
+When you create an Azure AI Hub, several other resources are created in tandem, including a **Foundry Tools** resource. In Microsoft Foundry, you can test all kinds of Foundry Tools, including Azure Speech, Azure Language, Azure Vision, and Microsoft Foundry Content Safety. 
 
-![Screenshot of Foundry Tools on Microsoft Foundry portal.](../media/foundry-ai-services-home-page.png)
+![Screenshot of Foundry Tools on Microsoft Foundry.](../media/foundry-ai-services-home-page.png)
 
-In addition to demos, Microsoft Foundry portal provides playgrounds to test Foundry Tools and other models from the model catalog. 
+In addition to demos, Microsoft Foundry provides playgrounds to test Foundry Tools and other models from the model catalog. 
 
-![Screenshot of playgrounds on Microsoft Foundry portal](../media/foundry-playgrounds-page.png)
+![Screenshot of playgrounds on Microsoft Foundry](../media/foundry-playgrounds-page.png)
 
-![Screenshot of the chat playground on Microsoft Foundry portal.](../media/foundry-chat-playground.png)
+![Screenshot of the chat playground on Microsoft Foundry.](../media/foundry-chat-playground.png)
 
 ## Customizing models
 
