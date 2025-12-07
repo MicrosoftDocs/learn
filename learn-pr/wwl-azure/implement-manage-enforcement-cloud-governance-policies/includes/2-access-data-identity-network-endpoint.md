@@ -27,7 +27,7 @@ Additionally, Google Cloud Security Command Center supports a different naming c
 
 GCP implementation and additional context:
 
- -  [Cloud Asset Inventory](https://cloud.google.com/asset-inventory)
+ -  [Cloud Asset Inventory](https://docs.cloud.google.com/asset-inventory/docs)
  -  [Introduction to Cloud Asset Inventory](https://cloud.google.com/asset-inventory/docs/overview)
  -  [Supported asset types in Security Command Center](https://cloud.google.com/security-command-center/docs/supported-asset-types)
 
@@ -1323,7 +1323,7 @@ GCP implementation and additional context:
 
  -  [Google Cloud Command Center overview.](https://cloud.google.com/security-command-center/docs/concepts-security-command-center-overview)
  -  [Google Cloud VM Manager](https://cloud.google.com/compute/docs/vm-manager)
- -  [Google Cloud Deployment Manager:](https://cloud.google.com/deployment-manager/docs/)
+ -  [Google Cloud Deployment Manager:](https://docs.cloud.google.com/deployment-manager/docs)
 
 Customer security stakeholders ([Learn more](/azure/cloud-adoption-framework/organize/cloud-security#security-functions)):
 

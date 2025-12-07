@@ -14,4 +14,4 @@ If you are teaching Microsoft Fundamentals courses, you have two options for get
 
 - Microsoft Learn 
 
-- Microsoft Virtual Training Days which are free, in-depth, virtual training events. These events are offered in a variety of languages and time zones. To register, visit the [Microsoft Events catalog](https://aka.ms/MSEventsCatalog). 
+- Microsoft Virtual Training Days which are free, in-depth, virtual training events. These events are offered in a variety of languages and time zones. To register, visit the [Microsoft Events catalog](https://www.microsoft.com/events). 
