@@ -11,4 +11,4 @@ metadata:
   ai-usage: ai-generated
 durationInMinutes: 6
 content: |
-  [!include[](includes/2-ingest-data-lakeflow-connect.md)]
+  [!include[](includes/2-ingest-data-lake-flow-connect.md)]
