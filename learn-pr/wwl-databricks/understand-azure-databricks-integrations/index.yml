@@ -1,0 +1,49 @@
+### YamlMime:Module
+uid: learn.wwl.understand-azure-databricks-integrations
+metadata:
+  title: Understand Azure Databricks Integrations
+  description: Learn how Azure Databricks integrates with Microsoft tools and services including Fabric, Power BI, VS Code, Power Platform, Copilot Studio, Purview, and Foundry to enable comprehensive data and AI solutions.
+  ms.date: 12/07/2025
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: module
+  ms.service: azure-databricks
+  ai-usage: ai-generated
+title: Understand Azure Databricks Integrations
+summary: Azure Databricks integrates with multiple Microsoft services to provide end-to-end data engineering, analytics, and AI capabilities. This module explores how Azure Databricks works with Microsoft Fabric, Power BI, Visual Studio Code, Power Platform, Copilot Studio, Microsoft Purview, and Microsoft Foundry to enable comprehensive solutions that combine data lakehouse capabilities with business intelligence, application development, and conversational AI.
+abstract: |
+  By the end of this module, you'll be able to:
+  - Understand how Azure Databricks integrates with Microsoft Fabric for bidirectional data access
+  - Describe the integration capabilities between Power BI and Azure Databricks
+  - Explain how the Databricks extension for VS Code enables local development with remote execution
+  - Understand how Power Platform can work with Azure Databricks data
+  - Describe how AI agents in Copilot Studio can access Databricks data
+  - Understand data governance integration with Microsoft Purview
+  - Explain how Microsoft Foundry agents connect with Databricks Genie spaces
+prerequisites: |
+  The following prerequisites should be completed:
+  * Basic understanding of Azure Databricks concepts
+  * Familiarity with Unity Catalog and data governance
+  * Knowledge of Delta Lake tables and SQL warehouses
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+  - intermediate
+roles:
+  - data-engineer
+products:
+  - azure-databricks
+subjects:
+  - data-engineering
+units:
+  - learn.wwl.understand-azure-databricks-integrations.introduction
+  - learn.wwl.understand-azure-databricks-integrations.integration-databricks-microsoft-fabric
+  - learn.wwl.understand-azure-databricks-integrations.integration-databricks-power-bi
+  - learn.wwl.understand-azure-databricks-integrations.integration-databricks-vscode
+  - learn.wwl.understand-azure-databricks-integrations.integration-databricks-power-platform
+  - learn.wwl.understand-azure-databricks-integrations.integration-databricks-copilot-studio
+  - learn.wwl.understand-azure-databricks-integrations.integration-databricks-microsoft-purview
+  - learn.wwl.understand-azure-databricks-integrations.integration-databricks-microsoft-foundry
+  - learn.wwl.understand-azure-databricks-integrations.knowledge-check
+  - learn.wwl.understand-azure-databricks-integrations.summary
+badge:
+  uid: learn.wwl.understand-azure-databricks-integrations.badge
