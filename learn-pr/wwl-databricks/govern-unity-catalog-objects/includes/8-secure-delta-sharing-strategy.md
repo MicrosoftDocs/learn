@@ -181,8 +181,8 @@ Standard table sharing grants recipients access to all rows and columns. When yo
 Attach **custom properties** to recipients that correspond to your data segmentation:
 
 ```sql
--- Set country property for partition filtering
-ALTER RECIPIENT regional_partner SET PROPERTIES ('country' = 'US');
+-- Set country_region property for partition filtering
+ALTER RECIPIENT regional_partner SET PROPERTIES ('country_region' = 'US');
 ```
 
 Create a dynamic view that filters rows based on the recipient's property:
@@ -190,7 +190,7 @@ Create a dynamic view that filters rows based on the recipient's property:
 ```sql
 CREATE VIEW catalog.schema.regional_sales AS
 SELECT * FROM catalog.schema.all_sales
-WHERE region = CURRENT_RECIPIENT('country');
+WHERE region = CURRENT_RECIPIENT('country_region');
 ```
 
 For column-level security, mask sensitive data for recipients who shouldn't see it:
