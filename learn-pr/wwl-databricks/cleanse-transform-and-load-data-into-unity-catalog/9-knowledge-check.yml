@@ -1,0 +1,84 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.cleanse-transform-and-load-data-into-unity-catalog.knowledge-check
+title: Module assessment
+metadata:
+  title: Module assessment
+  description: "Knowledge check"
+  ms.date: 12/07/2025
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+  module_assessment: true
+  ai-usage: ai-generated
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is the purpose of running the ANALYZE TABLE command in Azure Databricks?"
+    choices:
+    - content: "To create a backup of the table before making changes"
+      isCorrect: false
+      explanation: "Incorrect. The ANALYZE TABLE command computes statistics for query optimization and data profiling, not for creating backups."
+    - content: "To compute statistics that help the query optimizer choose efficient execution plans"
+      isCorrect: true
+      explanation: "Correct. The ANALYZE TABLE command collects row counts, column-level metrics like minimum and maximum values, null counts, and distinct value counts that help optimize query performance."
+    - content: "To validate that all data types in the table are correctly defined"
+      isCorrect: false
+      explanation: "Incorrect. ANALYZE TABLE focuses on collecting statistics, not validating data type definitions."
+  - content: "Which data type should be used when storing financial amounts that require exact precision in calculations?"
+    choices:
+    - content: "DOUBLE"
+      isCorrect: false
+      explanation: "Incorrect. DOUBLE uses binary representation and can introduce rounding errors with base-10 values like currency amounts."
+    - content: "DECIMAL(p,s)"
+      isCorrect: true
+      explanation: "Correct. DECIMAL provides exact precision for financial calculations, where p represents total digits and s represents digits after the decimal point."
+    - content: "FLOAT"
+      isCorrect: false
+      explanation: "Incorrect. FLOAT uses approximate binary representation and is unsuitable for financial data requiring exact precision."
+  - content: "Which SQL clause filters duplicate rows directly from a window function result without requiring a subquery?"
+    choices:
+    - content: "WHERE"
+      isCorrect: false
+      explanation: "Incorrect. The WHERE clause filters rows before window functions are applied and cannot reference window function results."
+    - content: "HAVING"
+      isCorrect: false
+      explanation: "Incorrect. The HAVING clause filters grouped aggregation results, not window function results."
+    - content: "QUALIFY"
+      isCorrect: true
+      explanation: "Correct. The QUALIFY clause filters results of window functions directly, making it ideal for identifying duplicate rows by counting occurrences within partitions."
+  - content: "What is the difference between a LEFT SEMI JOIN and a LEFT JOIN?"
+    choices:
+    - content: "LEFT SEMI JOIN returns all columns from both tables while LEFT JOIN returns only left table columns"
+      isCorrect: false
+      explanation: "Incorrect. This description is reversed. LEFT SEMI JOIN returns only left table columns, while LEFT JOIN can return columns from both tables."
+    - content: "LEFT SEMI JOIN returns only left table rows that have matches in the right table, without including right table columns"
+      isCorrect: true
+      explanation: "Correct. LEFT SEMI JOIN acts as a filter, returning rows from the left table that have matching rows in the right table, but only includes columns from the left table."
+    - content: "LEFT SEMI JOIN includes NULL values for non-matching rows while LEFT JOIN excludes them"
+      isCorrect: false
+      explanation: "Incorrect. LEFT JOIN includes NULLs for non-matching right table rows. LEFT SEMI JOIN only returns matching rows without including right table data."
+  - content: "When should a data engineer use the UNPIVOT transformation?"
+    choices:
+    - content: "To convert multiple columns into rows for analysis or normalization"
+      isCorrect: true
+      explanation: "Correct. UNPIVOT transforms wide-format data with multiple columns into a long format with rows, which is useful for normalizing data or preparing it for systems that expect this structure."
+    - content: "To create a summary table with row values displayed as column headers"
+      isCorrect: false
+      explanation: "Incorrect. This describes the PIVOT transformation, which is the opposite of UNPIVOT."
+    - content: "To merge two tables based on matching key columns"
+      isCorrect: false
+      explanation: "Incorrect. Merging tables based on keys is performed using JOIN operations, not UNPIVOT."
+  - content: "Which loading operation should be used to update existing records while inserting new ones in a single statement?"
+    choices:
+    - content: "INSERT INTO with append mode"
+      isCorrect: false
+      explanation: "Incorrect. INSERT INTO only adds new rows and cannot update existing records."
+    - content: "INSERT OVERWRITE"
+      isCorrect: false
+      explanation: "Incorrect. INSERT OVERWRITE replaces data entirely and does not perform targeted updates on matching records."
+    - content: "MERGE INTO"
+      isCorrect: true
+      explanation: "Correct. MERGE INTO performs upsert operations by matching source rows to target rows and applying different actions based on whether a match exists—updating matched rows and inserting unmatched rows."

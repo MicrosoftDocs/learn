@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.cleanse-transform-and-load-data-into-unity-catalog.profile-data-summary-statistics
+title: Profile data
+metadata:
+  title: Profile Data
+  description: Learn how to profile data to generate summary statistics and assess data distributions in Azure Databricks using SQL commands and the data profiling feature.
+  ms.date: 12/07/2025
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+  ai-usage: ai-generated
+durationInMinutes: 6
+content: |
+  [!include[](includes/2-profile-data-summary-statistics.md)]
