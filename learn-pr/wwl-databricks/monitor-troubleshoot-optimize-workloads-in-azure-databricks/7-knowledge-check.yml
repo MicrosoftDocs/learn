@@ -1,0 +1,73 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.monitor-troubleshoot-optimize-workloads-in-azure-databricks.knowledge-check
+title: Module assessment
+metadata:
+  title: Module assessment
+  description: "Knowledge check"
+  ms.date: 12/07/2025
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+  module_assessment: true
+  ai-usage: ai-generated
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What configuration setting automatically shuts down Azure Databricks clusters after a specified period of inactivity?"
+    choices:
+    - content: "Auto-scaling"
+      isCorrect: false
+      explanation: "Incorrect. Auto-scaling dynamically adjusts the number of worker nodes based on workload demand, but it does not shut down clusters."
+    - content: "Auto-termination"
+      isCorrect: true
+      explanation: "Correct. Auto-termination shuts down idle clusters after a specified period of inactivity, preventing costs from accumulating overnight or over weekends."
+    - content: "Budget alerts"
+      isCorrect: false
+      explanation: "Incorrect. Budget alerts notify you when spending approaches or exceeds limits, but they do not automatically stop clusters."
+  - content: "Which Azure Databricks feature allows a data engineer to re-run only the failed tasks and their dependents in a multi-task job?"
+    choices:
+    - content: "Job restart"
+      isCorrect: false
+      explanation: "Incorrect. Restarting a job runs the entire job from the beginning, not just the failed tasks."
+    - content: "Repair run"
+      isCorrect: true
+      explanation: "Correct. The repair run feature allows you to re-run only the unsuccessful tasks and their dependents, saving time and compute resources compared to restarting the entire job."
+    - content: "Task retry"
+      isCorrect: false
+      explanation: "Incorrect. While individual tasks can have retry policies, the repair run feature specifically addresses re-running failed tasks after a job has completed."
+  - content: "In the Spark UI, what pattern indicates data skew in a stage?"
+    choices:
+    - content: "All tasks completing in similar durations"
+      isCorrect: false
+      explanation: "Incorrect. When all tasks complete in similar durations, data is evenly distributed across partitions, indicating no skew."
+    - content: "The maximum task duration is significantly higher than the 75th percentile"
+      isCorrect: true
+      explanation: "Correct. Data skew is indicated when comparing the Max duration to the 75th percentile in the Summary Metrics. If the Max is more than 50% higher than the 75th percentile, you likely have skew."
+    - content: "High CPU utilization across all worker nodes"
+      isCorrect: false
+      explanation: "Incorrect. High CPU utilization indicates compute-intensive work but does not specifically indicate data skew."
+  - content: "What happens when Spark runs out of memory during processing and writes intermediate data to disk?"
+    choices:
+    - content: "Shuffle"
+      isCorrect: false
+      explanation: "Incorrect. Shuffle is the process of moving data between nodes during operations like joins and aggregations, not a memory overflow condition."
+    - content: "Caching"
+      isCorrect: false
+      explanation: "Incorrect. Caching keeps frequently accessed data in memory or on local disks intentionally, not as a result of memory overflow."
+    - content: "Spill"
+      isCorrect: true
+      explanation: "Correct. Spill happens when Spark runs out of memory during processing and writes intermediate data to disk. This disk I/O significantly slows down operations."
+  - content: "Which Azure service receives diagnostic and audit logs when log streaming is configured for Azure Databricks?"
+    choices:
+    - content: "Azure Blob Storage"
+      isCorrect: false
+      explanation: "Incorrect. While Azure Blob Storage can store data, Azure Log Analytics is the destination for centralized log streaming and KQL queries."
+    - content: "Azure Log Analytics"
+      isCorrect: true
+      explanation: "Correct. Log streaming sends diagnostic data from Azure Databricks to Azure Log Analytics in near real-time, enabling powerful KQL queries, alerts, and dashboards."
+    - content: "Azure Event Hubs"
+      isCorrect: false
+      explanation: "Incorrect. Event Hubs is used for streaming event data, but Azure Log Analytics is the destination for Databricks diagnostic log streaming."
