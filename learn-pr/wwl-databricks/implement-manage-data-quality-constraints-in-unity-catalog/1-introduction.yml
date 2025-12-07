@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-manage-data-quality-constraints-in-unity-catalog.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: "Introduction to implementing and managing data quality constraints in Unity Catalog"
+  ms.date: 12/07/2025
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+  ai-usage: ai-generated
+durationInMinutes: 2
+content: |
+  [!include[](includes/introduction.md)]

@@ -1,0 +1,84 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-manage-data-quality-constraints-in-unity-catalog.knowledge-check
+title: Module assessment
+metadata:
+  title: Module assessment
+  description: "Knowledge check"
+  ms.date: 12/07/2025
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+  module_assessment: true
+  ai-usage: ai-generated
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What happens when Delta Lake's schema enforcement encounters a string value that cannot be cast to the target column's integer type?"
+    choices:
+    - content: "The value is automatically converted to NULL"
+      isCorrect: false
+      explanation: "Incorrect. Schema enforcement does not convert incompatible values to NULL. It raises an error when a value cannot be safely cast to the target type."
+    - content: "The write operation raises an error"
+      isCorrect: true
+      explanation: "Correct. When schema enforcement encounters a value that cannot be safely cast to the target data type, Delta Lake raises an error and the write operation fails."
+    - content: "The value is stored as a string in a rescued data column"
+      isCorrect: false
+      explanation: "Incorrect. Schema enforcement does not automatically use a rescued data column. That feature must be explicitly configured with Auto Loader."
+  - content: "Which function should be used to convert values between data types when invalid values should return NULL instead of raising an error?"
+    choices:
+    - content: "cast()"
+      isCorrect: false
+      explanation: "Incorrect. The cast() function raises an error when conversion fails."
+    - content: "convert()"
+      isCorrect: false
+      explanation: "Incorrect. The convert() function is not the standard approach for safe type conversion in Azure Databricks."
+    - content: "try_cast()"
+      isCorrect: true
+      explanation: "Correct. The try_cast() function returns NULL instead of raising an error when the conversion fails, allowing pipelines to continue processing."
+  - content: "What is the purpose of the rescuedDataColumn option when using Auto Loader to handle schema drift?"
+    choices:
+    - content: "To store column names that have been renamed in the source"
+      isCorrect: false
+      explanation: "Incorrect. The rescued data column stores data that does not match the schema, not information about renamed columns."
+    - content: "To capture data that does not match the expected schema without blocking the pipeline"
+      isCorrect: true
+      explanation: "Correct. The rescuedDataColumn stores mismatched data including new columns, type mismatches, and case differences in a JSON column for later review."
+    - content: "To automatically correct data type errors in the source files"
+      isCorrect: false
+      explanation: "Incorrect. The rescued data column preserves the original data rather than attempting to correct it."
+  - content: "What action does the expect_or_drop expectation take when a record violates the defined constraint?"
+    choices:
+    - content: "Logs a warning and writes the record to the target table"
+      isCorrect: false
+      explanation: "Incorrect. This describes the default warn behavior, not expect_or_drop."
+    - content: "Stops the pipeline and rolls back any partial updates"
+      isCorrect: false
+      explanation: "Incorrect. This describes the expect_or_fail behavior."
+    - content: "Removes the record before writing to the target table"
+      isCorrect: true
+      explanation: "Correct. The expect_or_drop expectation filters out records that fail validation before they reach the target table."
+  - content: "Which constraint type should be added to a Delta Lake table to ensure that a price column always contains positive values?"
+    choices:
+    - content: "NOT NULL constraint"
+      isCorrect: false
+      explanation: "Incorrect. A NOT NULL constraint only ensures a value is present, not that it is positive."
+    - content: "CHECK constraint"
+      isCorrect: true
+      explanation: "Correct. A CHECK constraint with a condition like CHECK (price > 0) enforces that values meet specific criteria at write time."
+    - content: "PRIMARY KEY constraint"
+      isCorrect: false
+      explanation: "Incorrect. A PRIMARY KEY constraint ensures uniqueness, not value ranges."
+  - content: "What is the behavior when a Lakeflow Spark Declarative Pipeline has multiple parallel flows and one flow encounters an expect_or_fail expectation violation?"
+    choices:
+    - content: "All flows in the pipeline stop immediately"
+      isCorrect: false
+      explanation: "Incorrect. Pipeline flows operate independently, so failures in one flow do not affect other parallel flows."
+    - content: "Only the flow with the violation stops while other flows continue"
+      isCorrect: true
+      explanation: "Correct. When a pipeline has multiple parallel flows, a failure in one flow does not cause other flows to fail. Each flow operates independently."
+    - content: "The pipeline pauses all flows and waits for manual intervention"
+      isCorrect: false
+      explanation: "Incorrect. Only the affected flow stops; other flows continue processing."
