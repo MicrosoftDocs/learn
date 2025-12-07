@@ -1,0 +1,14 @@
+### YamlMime: ModuleUnit
+uid: learn.wwl.implement-development-lifecycle-processes-in-azure-databricks.deploy-bundle-databricks-cli
+title: Deploy bundle with Databricks CLI
+metadata:
+  title: Deploy Bundle with Databricks CLI
+  description: Learn how to deploy data asset bundles to Azure Databricks using CLI commands, including validation, deployment planning, and troubleshooting common issues.
+  ms.date: 12/07/2025
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+  ai-usage: ai-generated
+durationInMinutes: 6
+content: |
+  [!include[](includes/6-deploy-bundle-databricks-cli.md)]

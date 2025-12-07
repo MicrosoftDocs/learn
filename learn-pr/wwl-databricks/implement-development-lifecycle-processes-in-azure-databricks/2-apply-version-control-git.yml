@@ -1,0 +1,14 @@
+### YamlMime: ModuleUnit
+uid: learn.wwl.implement-development-lifecycle-processes-in-azure-databricks.apply-version-control-git
+title: Apply Git version control best practices
+metadata:
+  title: Apply Git Version Control Best Practices
+  description: Learn how to apply version control best practices using Git folders in Azure Databricks, including cloning repositories, working on branches, committing changes, and keeping your repository organized.
+  ms.date: 12/07/2025
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+  ai-usage: ai-generated
+durationInMinutes: 5
+content: |
+  [!include[](includes/2-apply-version-control-git.md)]

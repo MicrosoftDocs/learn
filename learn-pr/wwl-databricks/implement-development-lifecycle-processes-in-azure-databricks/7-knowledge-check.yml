@@ -1,0 +1,73 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-development-lifecycle-processes-in-azure-databricks.knowledge-check
+title: Module assessment
+metadata:
+  title: Module assessment
+  description: "Knowledge check"
+  ms.date: 12/07/2025
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+  module_assessment: true
+  ai-usage: ai-generated
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is the recommended practice for team collaboration when using Git folders in Azure Databricks?"
+    choices:
+    - content: "All team members should work in a single shared Git folder to minimize conflicts"
+      isCorrect: false
+      explanation: "Incorrect. When multiple users perform Git operations on the same workspace folder, accidental branch switches or conflicts can occur."
+    - content: "Each team member should work in their own Git folder connected to the shared repository"
+      isCorrect: true
+      explanation: "Correct. Each team member should work in their own Git folder connected to the shared repository. This practice prevents accidental branch switches or conflicts that can occur when multiple users perform Git operations on the same workspace folder."
+    - content: "Team members should avoid using Git folders and instead manually copy files between workspaces"
+      isCorrect: false
+      explanation: "Incorrect. Git folders provide integrated version control that enables collaboration through shared branches and coordinated commits."
+  - content: "Which file must exist at the root of a Databricks Asset Bundle project?"
+    choices:
+    - content: "bundle.json"
+      isCorrect: false
+      explanation: "Incorrect. Databricks Asset Bundles use YAML configuration files, not JSON files."
+    - content: "config.yml"
+      isCorrect: false
+      explanation: "Incorrect. The primary configuration file for Databricks Asset Bundles is named databricks.yml."
+    - content: "databricks.yml"
+      isCorrect: true
+      explanation: "Correct. The databricks.yml file must exist at the root of a bundle project. This file establishes the bundle's identity and can reference additional configuration files."
+  - content: "What happens when deploying a Databricks Asset Bundle with mode set to development?"
+    choices:
+    - content: "Resource names are prefixed with the developer username and schedules are paused"
+      isCorrect: true
+      explanation: "Correct. Development mode automatically prefixes resource names with the developer username, pauses all schedules, and enables concurrent job runs to prevent development resources from interfering with production workloads."
+    - content: "Resources are deployed directly to production without any modifications"
+      isCorrect: false
+      explanation: "Incorrect. Development mode applies specific behaviors to simplify testing and prevent interference with production."
+    - content: "All existing resources in the workspace are deleted before deployment"
+      isCorrect: false
+      explanation: "Incorrect. Development mode modifies naming and scheduling behavior but does not delete existing resources."
+  - content: "According to the testing pyramid concept, which test type should make up the largest portion of an effective testing strategy?"
+    choices:
+    - content: "End-to-end tests"
+      isCorrect: false
+      explanation: "Incorrect. End-to-end tests are at the top of the pyramid and should be fewer in number due to their longer execution time."
+    - content: "Integration tests"
+      isCorrect: false
+      explanation: "Incorrect. Integration tests are in the middle of the pyramid. Unit tests form the base and should be the most numerous."
+    - content: "Unit tests"
+      isCorrect: true
+      explanation: "Correct. The testing pyramid concept places unit tests at the base, meaning they should be the most numerous. Unit tests are fast and isolated, allowing teams to build confidence in fundamental code building blocks."
+  - content: "What CLI command should be used to verify bundle configuration before deployment?"
+    choices:
+    - content: "databricks bundle check"
+      isCorrect: false
+      explanation: "Incorrect. The correct command for validating bundle configuration is databricks bundle validate."
+    - content: "databricks bundle validate"
+      isCorrect: true
+      explanation: "Correct. The databricks bundle validate command checks configuration files for syntax errors and completeness before deployment."
+    - content: "databricks bundle test"
+      isCorrect: false
+      explanation: "Incorrect. The databricks bundle test command is not used for configuration validation. Use databricks bundle validate instead."
