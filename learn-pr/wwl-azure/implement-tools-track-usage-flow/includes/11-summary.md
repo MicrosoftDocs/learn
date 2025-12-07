@@ -60,7 +60,7 @@ Explore these official Microsoft Learn resources to deepen your knowledge and ex
 
 - [Integrate Azure Monitor with Azure Pipelines | Microsoft Learn](/azure/azure-monitor/app/continuous-monitoring) - Automate monitoring deployment and configuration
 - [Release gates and approvals in Azure Pipelines | Microsoft Learn](/azure/devops/pipelines/release/approvals/gates) - Implement quality gates based on monitoring data
-- [Monitor pipeline runs with Azure Monitor | Microsoft Learn](/azure/devops/pipelines/integrations/monitor-pipeline-analytics) - Track pipeline performance and reliability
+- [Monitor pipeline runs with Azure Monitor | Microsoft Learn](/azure/devops/pipelines/reports/pipelinereport) - Track pipeline performance and reliability
 
 ### Dashboards and visualization
 
