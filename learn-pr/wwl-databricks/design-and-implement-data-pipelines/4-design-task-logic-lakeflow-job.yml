@@ -11,4 +11,4 @@ metadata:
   ai-usage: ai-generated
 durationInMinutes: 9
 content: |
-  [!include[](includes/4-design-task-logic-lakeflow-job.md)]
+  [!include[](includes/4-design-task-logic-lake-flow-job.md)]

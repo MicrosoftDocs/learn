@@ -11,4 +11,4 @@ metadata:
   ai-usage: ai-generated
 durationInMinutes: 7
 content: |
-  [!include[](includes/7-create-pipeline-lakeflow-declarative.md)]
+  [!include[](includes/7-create-pipeline-lake-flow-declarative.md)]
