@@ -1,0 +1,14 @@
+### YamlMime: ModuleUnit
+uid: learn.wwl.govern-unity-catalog-objects.configure-abac-tags-policies
+title: Configure ABAC with tags and policies
+metadata:
+  title: Configure ABAC with Tags and Policies
+  description: Learn how to configure attribute-based access control (ABAC) using governed tags and policies to implement dynamic, fine-grained access control in Unity Catalog.
+  ms.date: 12/07/2025
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+  ai-usage: ai-generated
+durationInMinutes: 7
+content: |
+  [!include[](includes/3-configure-abac-tags-policies.md)]

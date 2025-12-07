@@ -1,0 +1,48 @@
+### YamlMime:Module
+uid: learn.wwl.govern-unity-catalog-objects
+metadata:
+  title: Govern Unity Catalog Objects
+  description: Learn how to govern data and AI assets in Azure Databricks using Unity Catalog, including access control, data lineage, audit logging, and secure sharing.
+  ms.date: 12/07/2025
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: module
+  ms.service: azure-databricks
+  ai-usage: ai-generated
+title: Govern Unity Catalog Objects
+summary: This module covers essential governance practices in Unity Catalog, enabling you to secure, monitor, and manage your data estate effectively. You will learn how to implement fine-grained access control, track data lineage, configure audit logs, and share data securely.
+abstract: |
+  By the end of this module, you'll be able to:
+  - Create and preserve table and column definitions for better data discovery
+  - Configure attribute-based access control (ABAC) using tags and policies
+  - Implement row filtering and column masking for fine-grained security
+  - Apply data retention policies to manage data lifecycle
+  - Set up and manage data lineage to track data flow
+  - Configure audit logging for compliance and security monitoring
+  - Design a secure Delta Sharing strategy for external data collaboration
+prerequisites: |
+  The following prerequisites should be completed:
+  * Basic understanding of Azure Databricks workspaces and Unity Catalog
+  * Familiarity with SQL and data engineering concepts
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+  - intermediate
+roles:
+  - data-engineer
+products:
+  - azure-databricks
+subjects:
+  - data-engineering
+units:
+  - learn.wwl.govern-unity-catalog-objects.introduction
+  - learn.wwl.govern-unity-catalog-objects.preserve-table-column-definitions
+  - learn.wwl.govern-unity-catalog-objects.configure-abac-tags-policies
+  - learn.wwl.govern-unity-catalog-objects.implement-row-filtering-column-masking
+  - learn.wwl.govern-unity-catalog-objects.apply-data-retention-policies
+  - learn.wwl.govern-unity-catalog-objects.manage-data-lineage-tracking
+  - learn.wwl.govern-unity-catalog-objects.configure-audit-logging
+  - learn.wwl.govern-unity-catalog-objects.secure-delta-sharing-strategy
+  - learn.wwl.govern-unity-catalog-objects.knowledge-check
+  - learn.wwl.govern-unity-catalog-objects.summary
+badge:
+  uid: learn.wwl.govern-unity-catalog-objects.badge
