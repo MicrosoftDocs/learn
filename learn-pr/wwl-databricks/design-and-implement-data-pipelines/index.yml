@@ -1,0 +1,46 @@
+### YamlMime:Module
+uid: learn.wwl.design-and-implement-data-pipelines
+metadata:
+  title: Design and Implement Data Pipelines
+  description: Learn how to design and implement robust data pipelines using Lakehouse architecture principles, medallion architecture, and Lakeflow Declarative Pipelines in Azure Databricks.
+  ms.date: 12/07/2025
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: module
+  ms.service: azure-databricks
+  ai-usage: ai-generated
+title: Design and Implement Data Pipelines
+summary: Learn to design and implement robust data pipelines in Azure Databricks using notebooks and Lakeflow Declarative Pipelines, covering orchestration, error handling, and task logic.
+abstract: |
+  By the end of this module, you'll be able to:
+  * Design the order of operations for data pipelines from ingestion to serving.
+  * Choose between notebooks and Lakeflow Declarative Pipelines based on use cases.
+  * Design task logic, dependencies, and execution patterns for Lakeflow Jobs.
+  * Implement error handling strategies, including retry policies and expectations.
+  * Create data pipelines using both notebooks and Lakeflow Declarative Pipelines.
+prerequisites: |
+  The following prerequisites should be completed:
+  * Basic understanding of Azure Databricks workspaces
+  * Familiarity with Unity Catalog fundamentals and governance concepts
+  * Knowledge of SQL and data organization principles
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+  - intermediate
+roles:
+  - data-engineer
+products:
+  - azure-databricks
+subjects:
+  - data-engineering
+units:
+  - learn.wwl.design-and-implement-data-pipelines.introduction
+  - learn.wwl.design-and-implement-data-pipelines.design-order-operations-pipeline
+  - learn.wwl.design-and-implement-data-pipelines.choose-notebook-vs-lakeflow-pipelines
+  - learn.wwl.design-and-implement-data-pipelines.design-task-logic-lakeflow-job
+  - learn.wwl.design-and-implement-data-pipelines.design-error-handling-pipelines
+  - learn.wwl.design-and-implement-data-pipelines.create-pipeline-notebook-precedence
+  - learn.wwl.design-and-implement-data-pipelines.create-pipeline-lakeflow-declarative
+  - learn.wwl.design-and-implement-data-pipelines.knowledge-check
+  - learn.wwl.design-and-implement-data-pipelines.summary
+badge:
+  uid: learn.wwl.design-and-implement-data-pipelines.badge

@@ -1,0 +1,14 @@
+### YamlMime: ModuleUnit
+uid: learn.wwl.design-and-implement-data-pipelines.create-pipeline-notebook-precedence
+title: Create pipeline with notebook
+metadata:
+  title: Create Pipeline with Notebook
+  description: Learn how to create data pipelines using notebooks in Azure Databricks with task dependencies and precedence constraints in Lakeflow Jobs.
+  ms.date: 12/07/2025
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+  ai-usage: ai-generated
+durationInMinutes: 6
+content: |
+  [!include[](includes/6-create-pipeline-notebook-precedence.md)]
