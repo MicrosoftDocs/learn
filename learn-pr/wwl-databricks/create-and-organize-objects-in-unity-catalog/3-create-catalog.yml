@@ -1,0 +1,14 @@
+### YamlMime: ModuleUnit
+uid: learn.wwl.create-and-organize-objects-in-unity-catalog.create-catalog
+title: Create catalog
+metadata:
+  title: Create Catalog
+  description: Learn how to create catalogs in Unity Catalog to organize data assets and enforce isolation across environments.
+  ms.date: 12/07/2025
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+  ai-usage: ai-generated
+durationInMinutes: 7
+content: |
+  [!include[](includes/3-create-catalog.md)]
