@@ -21,11 +21,11 @@ Starting with unit tests, you build confidence in your code's fundamental buildi
 
 Unit tests focus on testing **individual functions in isolation**. In Azure Databricks, the **pytest** framework provides a powerful way to write and run unit tests for your Python code.
 
-Consider a data transformation function that filters records by country:
+Consider a data transformation function that filters records by country/region:
 
 ```python
-def filter_country(df, country="USA"):
-    return df[df.iso_code == country]
+def filter_country_region(df, country_region="USA"):
+    return df[df.iso_code == country_region]
 ```
 
 To test this function, create a test file that follows pytest **naming conventions**. Files should start with `test_` or end with `_test.py`:
@@ -33,7 +33,7 @@ To test this function, create a test file that follows pytest **naming conventio
 ```python
 import pytest
 import pandas as pd
-from transforms import filter_country
+from transforms import filter_country_region
 
 @pytest.fixture
 def sample_data():
@@ -43,13 +43,13 @@ def sample_data():
         'value': [100, 200, 150, 175]
     })
 
-def test_filter_country_default(sample_data):
-    result = filter_country(sample_data)
+def test_filter_country_region_default(sample_data):
+    result = filter_country_region(sample_data)
     assert len(result) == 2
     assert all(result.iso_code == 'USA')
 
-def test_filter_country_specific(sample_data):
-    result = filter_country(sample_data, country='CAN')
+def test_filter_country_region_specific(sample_data):
+    result = filter_country_region(sample_data, country_region='CAN')
     assert len(result) == 1
     assert result.iloc[0]['value'] == 150
 ```
