@@ -29,22 +29,23 @@ To deploy content between stages, select the stage to deploy to, and then select
 :::image type="content" source="../media/deploy-content.png" alt-text="Screenshot of content deployment interface." :::
 
 ## Use deployment pipelines with Git
-Deployment pipelines can be used with Git branches. This would be used to promote content between development, test, and production environments when content for each environment resides in different Git repositories or branches. 
+Deployment pipelines can be used with Git integration to maintain version control and automate deployments. There are different approaches to combining these tools, depending on your workflow needs.
 
-To use deployment pipelines with Git branches:
+One common approach is to connect only the Development workspace to Git. With this approach, Git integration is used for version control during development, while deployment pipelines handle the promotion of content to Test and Production environments. This avoids potential Git synchronization conflicts when deploying content across multiple stages.
+
+To use deployment pipelines with Git using this approach:
 1. Follow the instructions in the section on this page entitled "Create a deployment pipeline" to create a deployment pipeline and assign each stage to a workspace.
-2. Assign each workspace in the deployment pipeline to a Git repository and branch in **Git integration** in **Workspace settings**.
+2. Connect the Development workspace to a Git repository and branch in **Git integration** in **Workspace settings**. 
 
     :::image type="content" source="../media/connect-git.png" alt-text="Screenshot of workspace to Git provider connection interface." :::
 
-3. Promote content between staging environments using the deploy button in the pipeline as described in the **Deploy content to a pipeline stage** section on this page. This moves content between environments in Fabric but *the Git repository won't be updated until you manually update from the workspace.*
+3. Make your content changes in the Development workspace and commit them to Git using the **Source control** panel.
+
+4. Promote content between staging environments using the deploy button in the pipeline as described in the **Deploy content to a pipeline stage** section on this page. This moves content between environments in Fabric. The deployment pipeline copies content from Development to Test and Production workspaces.
 
     In the image below, the checkmark in the deployment stage box indicates that a data pipeline item exists in all three staging environments of the deployment pipeline *in Fabric* and that the Fabric stages are synchronized.
 
-    :::image type="content" source="../media/pipeline-presync.png" alt-text="Screenshot of pipeline before files are synced with Git." :::
+    :::image type="content" source="../media/pipeline-presync.png" alt-text="Screenshot of deployment pipeline with synchronized stages." :::
 
-    When we select **Source control** from either the Test or Production workspaces that are part of the deployment pipeline, we see that the pipeline hasn't been synchronized with the Git repository.  
-
-    :::image type="content" source="../media/git-not-updated.png" alt-text="Screenshot of workspace showing uncommitted items and showing the source control box where files aren't yet synced with Git." :::
-
-4. To synchronize the repository with the Test workspace, select the **Commit** button in the **Source control** window shown in the preceding image.
+> [!TIP]
+> For more information about different CI/CD workflow options in Fabric, including alternative approaches for combining Git integration with deployment pipelines, see [Choose the best Fabric CI/CD workflow option for you](/fabric/cicd/manage-deployment?azure-portal=true).
