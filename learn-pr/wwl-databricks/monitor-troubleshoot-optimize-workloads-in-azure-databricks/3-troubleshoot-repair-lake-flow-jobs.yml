@@ -11,4 +11,4 @@ metadata:
   ai-usage: ai-generated
 durationInMinutes: 7
 content: |
-  [!include[](includes/3-troubleshoot-repair-lakeflow-jobs.md)]
+  [!include[](includes/3-troubleshoot-repair-lake-flow-jobs.md)]

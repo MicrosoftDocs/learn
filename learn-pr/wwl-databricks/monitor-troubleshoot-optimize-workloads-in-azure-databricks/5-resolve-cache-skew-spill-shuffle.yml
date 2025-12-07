@@ -11,4 +11,4 @@ metadata:
   ai-usage: ai-generated
 durationInMinutes: 7
 content: |
-  [!include[](includes/5-resolve-caching-skewing-spilling-shuffle.md)]
+  [!include[](includes/5-resolve-cache-skew-spill-shuffle.md)]
