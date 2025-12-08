@@ -1,5 +1,6 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.apl-3030-build-ai-app-foundry
+hidden: true
 metadata:
   title: Build a generative AI chat app (AI-3030)
   description: Learn how to build a generative AI chat app using Microsoft Foundry. (AI-3030)
@@ -8,7 +9,7 @@ metadata:
   ms.author: berryivor
   ms.topic: learning-path
   ms.collection: wwl-ai-copilot
-title: Build a generative AI chat app
+title: Build a generative AI chat app (AI-3030)
 prerequisites: |
   Before starting this module, you should be familiar with fundamental AI concepts and services in Azure. You should also have programming experience.
 summary: |
