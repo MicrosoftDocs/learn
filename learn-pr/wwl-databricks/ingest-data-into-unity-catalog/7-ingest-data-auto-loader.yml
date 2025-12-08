@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.ingest-data-into-unity-catalog.ingest-data-auto-loader
+title: Ingest data with Auto Loader
+metadata:
+  title: Ingest Data with Auto Loader
+  description: Learn how to use Auto Loader to incrementally ingest data files from cloud storage into Unity Catalog tables, including configuring file detection modes, schema inference, and monitoring streams.
+  ms.date: 12/07/2025
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+  ai-usage: ai-generated
+durationInMinutes: 6
+content: |
+  [!include[](includes/7-ingest-data-auto-loader.md)]
