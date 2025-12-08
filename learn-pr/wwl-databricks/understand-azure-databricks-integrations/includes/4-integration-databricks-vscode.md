@@ -28,7 +28,7 @@ The Databricks extension simplifies deployment through **Databricks Asset Bundle
 
 Asset Bundles define **Lakeflow Jobs**, **Delta Live Tables pipelines**, and **MLOps Stacks** using configuration files. You specify compute settings, schedule triggers, and task dependencies in YAML format. The extension provides a UI for creating, validating, and deploying these bundles without leaving Visual Studio Code.
 
-:::image type="content" source="../media/bundle-deployment.svg" alt-text="Diagram showing the Azure Databricks VS Code Bundle Deployment capability." border="false" lightbox="../media/bundle-deployment.svg":::
+:::image type="content" source="../media/bundle-deployment.png" alt-text="Diagram showing the Azure Databricks VS Code Bundle Deployment capability." border="false" lightbox="../media/bundle-deployment.png":::
 
 When you're ready to deploy, the extension applies your bundle to a target environment (development, staging, or production). It creates or updates jobs, configures clusters, and sets up permissions according to your specifications. This declarative approach ensures consistent deployments and makes it easier to apply CI/CD patterns to your data engineering workflows.
 

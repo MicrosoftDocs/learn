@@ -51,7 +51,7 @@ Governance teams apply classifications, ownership, and policies consistently acr
 
 ### Lineage for impact analysis and compliance
 
-Lineage enables **impact analysis** by showing which downstream assets depend on source data before making changes. For **compliance**, lineage automatically documents data flows required by regulations like GDPR, transforming manual documentation into an automated process.
+Lineage enables **impact analysis** by showing which downstream assets depend on source data before making changes. For **compliance**, lineage automatically documents data flows required by certain regulations, transforming manual documentation into an automated process.
 
 :::image type="content" source="../media/databricks-purview-integration-example.svg" alt-text="Screenshot of Microsoft Purview integration with Azure Databricks, showing lineage." border="false" lightbox="../media/databricks-purview-integration-example.svg":::
 
