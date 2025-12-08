@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-manage-data-quality-constraints-unity-catalog.implement-schema-enforcement-manage-drift
+title: Enforce schema and manage drift
+metadata:
+  title: Enforce Schema and Manage Drift
+  description: Learn how to implement schema enforcement and manage schema drift in Azure Databricks data pipelines using Delta Lake, Auto Loader, and Lakeflow Spark Declarative Pipelines.
+  ms.date: 12/07/2025
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+  ai-usage: ai-generated
+durationInMinutes: 8
+content: |
+  [!include[](includes/4-implement-schema-enforcement-manage-drift.md)]
