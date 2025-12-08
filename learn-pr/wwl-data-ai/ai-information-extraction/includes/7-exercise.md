@@ -1,6 +1,6 @@
 Now it's your opportunity to explore information extraction in Azure.
 
-In this exercise, you use the Microsoft Foundry portal to explore information extraction techniques.
+In this exercise, you use [Microsoft Foundry](https://ai.azure.com/) to explore information extraction techniques.
 
 > [!NOTE]
 > To complete this lab, you need an **[Azure subscription](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn)** in which you have administrative access.

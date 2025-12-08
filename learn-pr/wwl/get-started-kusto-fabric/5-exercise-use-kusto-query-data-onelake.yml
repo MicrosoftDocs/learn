@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.get-started-kusto-fabric.exercise-use-kusto-query-data-onelake
-title: 'Exercise - Explore Real-Time Intelligence in Fabric'
+title: 'Exercise - Get started with Real-Time Intelligence in Microsoft Fabric'
 metadata:
-  title: 'Exercise - Explore Real-Time Intelligence in Fabric'
-  description: "Exercise - Explore Real-Time Intelligence in Fabric"
-  ms.date: 09/10/2025
+  title: 'Exercise - Get started with Real-Time Intelligence in Microsoft Fabric'
+  description: "Exercise - Get started with Real-Time Intelligence in Microsoft Fabric"
+  ms.date: 12/03/2025
   author: theresa-i
   ms.author: theresai
   ms.topic: unit
