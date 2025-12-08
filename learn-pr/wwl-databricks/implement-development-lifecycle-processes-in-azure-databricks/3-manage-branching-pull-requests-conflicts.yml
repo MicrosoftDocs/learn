@@ -1,0 +1,14 @@
+### YamlMime: ModuleUnit
+uid: learn.wwl.implement-development-lifecycle-processes-azure-databricks.manage-branching-pull-requests-conflicts
+title: Manage branching and pull requests
+metadata:
+  title: Manage Branching and Pull Requests
+  description: Learn how to manage Git branching, pull requests, and conflict resolution in Azure Databricks Git folders for collaborative development workflows.
+  ms.date: 12/07/2025
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+  ai-usage: ai-generated
+durationInMinutes: 6
+content: |
+  [!include[](includes/3-manage-branching-pull-requests-conflicts.md)]
