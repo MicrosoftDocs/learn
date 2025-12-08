@@ -39,7 +39,6 @@ products:
 subjects:
 - it-management-monitoring
 modules:
-- learn.azure.capture-application-logs-app-service
 - learn.control-and-organize-with-resource-manager
 - learn.azure-well-architected-performance-efficiency
 - learn.azure-well-architected-operational-excellence

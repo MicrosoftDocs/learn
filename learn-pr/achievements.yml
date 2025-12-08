@@ -7340,6 +7340,11 @@ achievements:
   title: Deploy Azure Databricks models in Azure Machine Learning
   summary: You can use Azure Databricks to train machine learning models, and deploy the trained models in Azure Machine Learning endpoints.
   iconUrl: /training/achievements/deploy-azure-databricks-models-in-azure-machine-learning.svg
+- uid: learn.azure.capture-application-logs-app-service.badge
+  type: badge
+  title: Capture Web Application Logs with App Service Diagnostics Logging
+  summary: Use application logs in Azure Web Apps for debugging web app code.
+  iconUrl: /training/achievements/capture-application-logs-app-service.svg
 - uid: learn.azure.publish-app-with-maven-plugin-for-azure-web-apps.badge
   type: badge
   title: Develop Java web app on Azure using Maven
