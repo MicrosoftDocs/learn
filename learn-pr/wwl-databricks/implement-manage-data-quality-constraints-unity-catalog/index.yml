@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.wwl.implement-manage-data-quality-constraints-in-unity-catalog
+uid: learn.wwl.implement-manage-data-quality-constraints-unity-catalog
 metadata:
   title: Implement and Manage Data Quality Constraints
   description: Learn how to implement and manage data quality constraints in Azure Databricks using Unity Catalog, including validation checks, schema enforcement, and pipeline expectations.
@@ -9,7 +9,7 @@ metadata:
   ms.topic: module
   ms.service: azure-databricks
   ai-usage: ai-generated
-title: Implement and Manage Data Quality Constraints
+title: Implement and manage data quality constraints
 summary: This module explores strategies for maintaining high data quality in Azure Databricks. You will learn how to implement validation checks, enforce schemas, manage schema drift, and use pipeline expectations to ensure data integrity throughout your data pipelines.
 abstract: |
   By the end of this module, you'll be able to:
@@ -31,12 +31,12 @@ products:
 subjects:
   - data-engineering
 units:
-  - learn.wwl.implement-manage-data-quality-constraints-in-unity-catalog.introduction
-  - learn.wwl.implement-manage-data-quality-constraints-in-unity-catalog.implement-validation-checks
-  - learn.wwl.implement-manage-data-quality-constraints-in-unity-catalog.implement-data-type-checks
-  - learn.wwl.implement-manage-data-quality-constraints-in-unity-catalog.implement-schema-enforcement-manage-drift
-  - learn.wwl.implement-manage-data-quality-constraints-in-unity-catalog.manage-data-quality-pipeline-expectations
-  - learn.wwl.implement-manage-data-quality-constraints-in-unity-catalog.knowledge-check
-  - learn.wwl.implement-manage-data-quality-constraints-in-unity-catalog.summary
+  - learn.wwl.implement-manage-data-quality-constraints-unity-catalog.introduction
+  - learn.wwl.implement-manage-data-quality-constraints-unity-catalog.implement-validation-checks
+  - learn.wwl.implement-manage-data-quality-constraints-unity-catalog.implement-data-type-checks
+  - learn.wwl.implement-manage-data-quality-constraints-unity-catalog.implement-schema-enforcement-manage-drift
+  - learn.wwl.implement-manage-data-quality-constraints-unity-catalog.manage-data-quality-pipeline-expectations
+  - learn.wwl.implement-manage-data-quality-constraints-unity-catalog.knowledge-check
+  - learn.wwl.implement-manage-data-quality-constraints-unity-catalog.summary
 badge:
-  uid: learn.wwl.implement-manage-data-quality-constraints-in-unity-catalog.badge
+  uid: learn.wwl.implement-manage-data-quality-constraints-unity-catalog.badge
