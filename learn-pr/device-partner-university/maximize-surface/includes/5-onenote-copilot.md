@@ -1,10 +1,10 @@
-Your team is brainstorming a project plan. Notes are scattered across sticky notes, emails, and rough drafts. You want to organize them efficiently using Copilot, Surface Slim Pen, and Studio Microphone.
+Your team is brainstorming a project plan. Notes are scattered across sticky notes, emails, and rough drafts. You want to organize them efficiently using Copilot, Surface Slim Pen 2nd Edition, and Studio Microphone.
 
 Before you begin, bring all your rough materials together so Copilot has the full picture.
 
 ### Step 1: Gather notes
 - **Compile your notes:** Gather emails, meeting minutes, screenshots, sticky notes, and rough drafts you’ve collected across devices. You can paste them directly into OneNote or attach them using the Insert menu.
-- **Add handwritten ideas:** Use your Surface Slim Pen to write down reminders, sketch connections, or add questions in the margins. Copilot can read and interpret your handwriting as easily as typed notes.
+- **Add handwritten ideas:** Use your Surface Slim Pen 2nd Edition to write down reminders, sketch connections, or add questions in the margins. Copilot can read and interpret your handwriting as easily as typed notes.
 - **Capture dictated thoughts:** If you think faster than you type, use your Surface Studio Microphone to dictate quick thoughts right into OneNote. Voice Clarity helps ensure your speech is transcribed accurately for Copilot to use later.
 
 ### Step 2: Open OneNote and launch Copilot
@@ -14,13 +14,13 @@ Before you begin, bring all your rough materials together so Copilot has the ful
 4. Begin interacting:
    - **Type your prompt**,  
    - **Use your voice** with the Studio Microphones for hands-free input, or  
-   - **Write a prompt with the Slim Pen**, which OneNote converts to text automatically.
+   - **Write a prompt with the Slim Pen 2nd Edition**, which OneNote converts to text automatically.
 5. Invite collaborators: Share the OneNote page or notebook with teammates so they can coedit in real time as you begin shaping content.
 
 > [!TIP]
 > Surface supports fluid input switching—begin writing with the pen, then jump to voice or touch without losing your flow.
 
-![A photograph of a business professional is seated at their desk using a Surface Slim Pen to work in OneNote on their Surface device.](../media/onenote.jpg)
+![A photograph of a business professional is seated at their desk using a Surface Slim Pen 2nd Edition to work in OneNote on their Surface device.](../media/onenote.jpg)
 
 ### Step 3: Generate a structured outline
 1. Enter a prompt, such as:  
@@ -31,7 +31,7 @@ Before you begin, bring all your rough materials together so Copilot has the ful
    - Clean headings and subheadings  
    - A reorganized, easy-to-read structure
 3. Review Copilot’s outline and:
-   - Use the Slim Pen to circle areas to keep or cross out items you want removed.
+   - Use the Surface Slim Pen 2nd Edition to circle areas to keep or cross out items you want removed.
    - Add margin notes indicating what Copilot should adjust.
    - Tap and drag sections using touch to reorder items.
 
@@ -43,7 +43,7 @@ Before you begin, bring all your rough materials together so Copilot has the ful
    - Suggest due dates  
    - Create a visual or bulleted timeline  
    - Convert scattered items into actionable steps
-3. Use touch or Slim Pen to adjust:
+3. Use touch or Surface Slim Pen 2nd Edition to adjust:
    - Reassign tasks  
    - Add missing deadlines  
    - Mark items as high-priority
@@ -73,14 +73,14 @@ Use Copilot to polish your outline into a ready-to-share artifact.
 > [!TIP]
 > Before entering the call, open Device settings and enable Windows Studio Effects, such as:
    - Automatic framing to stay centered even if you move.
-  - Background blur to remove visual distractions.
+   - Background blur to remove visual distractions.
    - Voice focus / noise suppression to eliminate typing, room noise, or echo.
 
 2. Begin the collaborative review
 
    Once in the meeting, greet the team and briefly set expectations for the review session (for example, "We’ll walk through the outline and timeline and confirm ownership for each task").
 
-   Make sure your Surface Slim Pen and touch controls are ready if you want to annotate the page live during the discussion.
+   Make sure your Surface Slim Pen 2nd Edition and touch controls are ready if you want to annotate the page live during the discussion.
 
 ![A photograph of a business professional greets teammates on a Microsoft Teams call by waving a hand at their Surface device.](../media/teams.jpg)
 
@@ -92,7 +92,7 @@ Use Copilot to polish your outline into a ready-to-share artifact.
 
 4. Review and edit content together
 
-   Walk through each section of the outline, pausing to gather input or confirm decisions. Make live edits using touch or the Surface Slim Pen so everyone can see changes in real time. Allow collaborators to add comments or update tasks simultaneously in OneNote if coauthoring is enabled.
+   Walk through each section of the outline, pausing to gather input or confirm decisions. Make live edits using touch or the Surface Slim Pen 2nd Edition so everyone can see changes in real time. Allow collaborators to add comments or update tasks simultaneously in OneNote if coauthoring is enabled.
 
 5. Finalize outcomes
 

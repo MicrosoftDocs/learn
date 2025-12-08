@@ -11,7 +11,7 @@
 "correct_choice": "Streamlined productivity with multimodal inputs",
 "explanations": {
 "Faster typing": "Incorrect. Copilot doesn't directly increase typing speed but it can enhance productivity using AI and multimodal input.",
-"Streamlined productivity with multimodal inputs": "Correct. Copilot on Surface devices improves workflow by integrating Surface Slim Pen, touch, and voice input using Studio Microphone for efficiency.",
+"Streamlined productivity with multimodal inputs": "Correct. Copilot on Surface devices improves workflow by integrating Surface Slim Pen 2nd Edition, touch, and voice input using Studio Microphone for efficiency.",
 "More storage space": "Incorrect. Copilot doesn't affect device storage.",
 "Improved battery life": "Incorrect. Battery performance is unrelated to Copilot's AI productivity features."
 }
@@ -68,11 +68,11 @@
 "question": "What is a recommended way to interact with Copilot efficiently?",
 "choices": [
 "Use only the keyboard",
-"Combine Surface Slim Pen, touch, and voice commands using Studio Microphone",
+"Combine Surface Slim Pen 2nd Edition, touch, and voice commands using Studio Microphone",
 "Dictate long paragraphs without revision",
 "Only click through menus"
 ],
-"correct_choice": "Combine Surface Slim Pen, touch, and voice commands using Studio Microphone",
+"correct_choice": "Combine Surface Slim Pen 2nd Edition, touch, and voice commands using Studio Microphone",
 "explanations": {
 "Use only the keyboard": "Incorrect. Limiting input to the keyboard doesn't take advantage of multimodal efficiency.",
 "Combine Pen, touch, and voice commands": "Correct. Using multiple input methods allows for faster, more intuitive interaction with Copilot.",
