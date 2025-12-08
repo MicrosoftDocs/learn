@@ -1,0 +1,54 @@
+### YamlMime:Module
+uid: learn.wwl.design-implement-data-modeling-unity-catalog
+metadata:
+  title: Design and Implement Data Modeling
+  description: Learn how to design and implement data modeling strategies in Azure Databricks with Unity Catalog, including ingestion patterns, table formats, partitioning, slowly changing dimensions, and clustering strategies.
+  ms.date: 12/07/2025
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: module
+  ms.service: azure-databricks
+  ai-usage: ai-generated
+title: Design and implement data modeling
+summary: Effective data modeling forms the foundation of a performant and maintainable data platform. This module explores how to design ingestion logic, select appropriate tools and table formats, implement partitioning schemes, manage slowly changing dimensions, choose appropriate data granularity, and optimize table performance through clustering strategies in Azure Databricks with Unity Catalog.
+abstract: |
+  By the end of this module, you'll be able to:
+  - Design data ingestion logic and configure data source connections
+  - Select the appropriate data ingestion tool for your scenario
+  - Choose between Delta Lake, Apache Iceberg, and other table formats
+  - Design and implement effective data partitioning schemes
+  - Select and implement slowly changing dimension types
+  - Design and implement temporal tables for change tracking and auditing
+  - Choose appropriate data granularity for fact and dimension tables
+  - Design and implement clustering strategies for query optimization
+  - Evaluate when to use managed versus external tables
+prerequisites: |
+  The following prerequisites should be completed:
+  * Basic understanding of Azure Databricks workspaces and Unity Catalog
+  * Familiarity with SQL and data warehouse concepts
+  * Knowledge of Delta Lake fundamentals
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+  - intermediate
+roles:
+  - data-engineer
+products:
+  - azure-databricks
+subjects:
+  - data-engineering
+units:
+  - learn.wwl.design-implement-data-modeling-unity-catalog.introduction
+  - learn.wwl.design-implement-data-modeling-unity-catalog.design-data-ingestion-logic
+  - learn.wwl.design-implement-data-modeling-unity-catalog.choose-data-ingestion-tool
+  - learn.wwl.design-implement-data-modeling-unity-catalog.choose-data-table-format
+  - learn.wwl.design-implement-data-modeling-unity-catalog.design-data-partitioning-scheme
+  - learn.wwl.design-implement-data-modeling-unity-catalog.choose-scd-type
+  - learn.wwl.design-implement-data-modeling-unity-catalog.implement-slowly-changing-dimension-type-2
+  - learn.wwl.design-implement-data-modeling-unity-catalog.design-temporal-history-table
+  - learn.wwl.design-implement-data-modeling-unity-catalog.choose-granularity
+  - learn.wwl.design-implement-data-modeling-unity-catalog.choose-managed-vs-unmanaged-tables
+  - learn.wwl.design-implement-data-modeling-unity-catalog.design-clustering-strategy
+  - learn.wwl.design-implement-data-modeling-unity-catalog.knowledge-check
+  - learn.wwl.design-implement-data-modeling-unity-catalog.summary
+badge:
+  uid: learn.wwl.design-implement-data-modeling-unity-catalog.badge
