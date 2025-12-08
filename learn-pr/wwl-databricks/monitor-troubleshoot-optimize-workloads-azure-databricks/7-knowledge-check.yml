@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.monitor-troubleshoot-optimize-workloads-in-azure-databricks.knowledge-check
+uid: learn.wwl.monitor-troubleshoot-optimize-workloads-azure-databricks.knowledge-check
 title: Module assessment
 metadata:
   title: Module assessment
@@ -18,26 +18,26 @@ quiz:
   questions:
   - content: "What configuration setting automatically shuts down Azure Databricks clusters after a specified period of inactivity?"
     choices:
-    - content: "Auto-scaling"
+    - content: "Autoscaling"
       isCorrect: false
-      explanation: "Incorrect. Auto-scaling dynamically adjusts the number of worker nodes based on workload demand, but it does not shut down clusters."
-    - content: "Auto-termination"
+      explanation: "Incorrect. Autoscaling dynamically adjusts the number of worker nodes based on workload demand, but it doesn't shut down clusters."
+    - content: "Autotermination"
       isCorrect: true
-      explanation: "Correct. Auto-termination shuts down idle clusters after a specified period of inactivity, preventing costs from accumulating overnight or over weekends."
+      explanation: "Correct. Autotermination shuts down idle clusters after a specified period of inactivity, preventing costs from accumulating overnight or over weekends."
     - content: "Budget alerts"
       isCorrect: false
-      explanation: "Incorrect. Budget alerts notify you when spending approaches or exceeds limits, but they do not automatically stop clusters."
-  - content: "Which Azure Databricks feature allows a data engineer to re-run only the failed tasks and their dependents in a multi-task job?"
+      explanation: "Incorrect. Budget alerts notify you when spending approaches or exceeds limits, but they don't automatically stop clusters."
+  - content: "Which Azure Databricks feature allows a data engineer to rerun only the failed tasks and their dependents in a multi-task job?"
     choices:
     - content: "Job restart"
       isCorrect: false
       explanation: "Incorrect. Restarting a job runs the entire job from the beginning, not just the failed tasks."
     - content: "Repair run"
       isCorrect: true
-      explanation: "Correct. The repair run feature allows you to re-run only the unsuccessful tasks and their dependents, saving time and compute resources compared to restarting the entire job."
+      explanation: "Correct. The repair run feature allows you to rerun only the unsuccessful tasks and their dependents, saving time and compute resources compared to restarting the entire job."
     - content: "Task retry"
       isCorrect: false
-      explanation: "Incorrect. While individual tasks can have retry policies, the repair run feature specifically addresses re-running failed tasks after a job has completed."
+      explanation: "Incorrect. While individual tasks can have retry policies, the repair run feature specifically addresses rerunning failed tasks after a job has completed."
   - content: "In the Spark UI, what pattern indicates data skew in a stage?"
     choices:
     - content: "All tasks completing in similar durations"
@@ -48,7 +48,7 @@ quiz:
       explanation: "Correct. Data skew is indicated when comparing the Max duration to the 75th percentile in the Summary Metrics. If the Max is more than 50% higher than the 75th percentile, you likely have skew."
     - content: "High CPU utilization across all worker nodes"
       isCorrect: false
-      explanation: "Incorrect. High CPU utilization indicates compute-intensive work but does not specifically indicate data skew."
+      explanation: "Incorrect. High CPU utilization indicates compute-intensive work but doesn't specifically indicate data skew."
   - content: "What happens when Spark runs out of memory during processing and writes intermediate data to disk?"
     choices:
     - content: "Shuffle"

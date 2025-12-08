@@ -96,6 +96,6 @@ Reduce unnecessary shuffle with these approaches:
 
 - **Colocate related data**. If you frequently join two tables on the same key, consider bucketing or partitioning them similarly to minimize shuffle at query time.
 
-The query profile in SQL warehouses visualizes shuffle as **Exchange** nodes in the DAG. Click on these nodes to see metrics like data size and number of partitions exchanged.
+The query profile in SQL warehouses visualizes shuffle as **Exchange** nodes in the DAG. Select these nodes to see metrics like data size and number of partitions exchanged.
 
 By systematically checking for skew and spill in the Spark UI, reviewing shuffle metrics, and understanding your caching behavior, you can diagnose most performance issues and apply targeted fixes.

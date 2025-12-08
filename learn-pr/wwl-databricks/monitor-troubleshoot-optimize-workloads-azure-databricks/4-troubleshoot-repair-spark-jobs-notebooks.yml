@@ -1,6 +1,6 @@
 ### YamlMime: ModuleUnit
-uid: learn.wwl.monitor-troubleshoot-optimize-workloads-in-azure-databricks.troubleshoot-repair-spark-jobs-notebooks
-title: Troubleshoot Spark Jobs and notebooks
+uid: learn.wwl.monitor-troubleshoot-optimize-workloads-azure-databricks.troubleshoot-repair-spark-jobs-notebooks
+title: Troubleshoot Spark jobs and notebooks
 metadata:
   title: Troubleshoot Spark Jobs and Notebooks
   description: Learn how to troubleshoot and repair Apache Spark jobs and notebooks in Azure Databricks, including diagnosing performance issues, resolving resource bottlenecks, and restarting clusters.

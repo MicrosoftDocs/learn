@@ -1,5 +1,5 @@
 ### YamlMime: ModuleUnit
-uid: learn.wwl.monitor-troubleshoot-optimize-workloads-in-azure-databricks.resolve-caching-skewing-spilling-shuffle
+uid: learn.wwl.monitor-troubleshoot-optimize-workloads-azure-databricks.resolve-caching-skewing-spilling-shuffle
 title: Investigate caching, skewing, spilling, shuffle
 metadata:
   title: Investigate Caching, Skewing, Spilling, Shuffle

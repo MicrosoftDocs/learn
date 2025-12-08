@@ -60,7 +60,7 @@ Beyond real-time monitoring, you need visibility into actual spending. Azure Dat
 
 **Tags** propagate from clusters and workspaces to billing records, enabling accurate **chargeback**. Apply tags consistently from the start—you can't add tags retroactively to historical usage. Common tags include business unit, project, and environment (development, staging, production).
 
-> ![NOTE]
+> [!NOTE]
 > You need **account admin permissions** to create and manage budgets. Workspace admins can view budgets but typically cannot create them.
 
 The following example queries help you analyze usage patterns:
