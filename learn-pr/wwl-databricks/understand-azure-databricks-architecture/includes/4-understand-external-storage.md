@@ -8,7 +8,7 @@ A **storage credential** represents an authentication mechanism, such as an Azur
 
 An external location specifies which storage credential to use and which **cloud storage path** to access. This separation between credentials and locations allows one storage credential to be referenced by multiple external locations if they all access storage in the same security boundary.
 
-:::image type="content" source="../media/storage-location-mapping.svg" alt-text="Diagram explaining storage location and credential mapping." border="false" lightbox="../media/storage-location-mapping.svg":::
+:::image type="content" source="../media/storage-location-mapping.png" alt-text="Diagram explaining storage location and credential mapping." border="false" lightbox="../media/storage-location-mapping.png":::
 
 External locations can reference storage in Azure Data Lake Storage containers, AWS S3 buckets (read-only), or Cloudflare R2 buckets. For Azure Databricks workloads, you'll typically use Azure Data Lake Storage containers because they integrate natively with Unity Catalog and support both read and write operations.
 
@@ -47,6 +47,6 @@ By default, an external location is accessible from all workspaces attached to y
 
 **Workspace binding** restricts an external location to designated workspaces. When enabled, users can only access the external location from assigned workspaces, regardless of their Unity Catalog privileges. This creates an additional layer of access control beyond user-level permissions. 
 
-:::image type="content" source="../media/workspace-binding-external-locations.svg" alt-text="Diagram explaining workspace binding for external locations." border="false" lightbox="../media/workspace-binding-external-locations.svg":::
+:::image type="content" source="../media/workspace-binding-external-locations.png" alt-text="Diagram explaining workspace binding for external locations." border="false" lightbox="../media/workspace-binding-external-locations.png":::
 
 Workspace binding is relevant when workspaces represent different environments (production versus development) or when compliance requirements mandate that certain data remains accessible only from specific compute environments. For example, production data can be bound exclusively to production workspaces, preventing access from development environments even for privileged users.

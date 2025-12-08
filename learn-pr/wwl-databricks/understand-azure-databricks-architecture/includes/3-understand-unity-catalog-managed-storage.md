@@ -4,7 +4,7 @@ Your organization likely has data governance policies that require specific type
 
 **Managed storage** in Unity Catalog refers to cloud storage locations where Unity Catalog stores data and metadata files for **managed tables** and **managed volumes**. Tables store structured data in a tabular format, while **volumes** provide governance for nontabular data files such as images, audio files, logs, or any other unstructured data that doesn't fit into a table schema. 
 
-:::image type="content" source="../media/what-is-managed-storage.svg" alt-text="Diagram explaining managed storage." border="false" lightbox="../media/what-is-managed-storage.svg":::
+:::image type="content" source="../media/what-is-managed-storage.png" alt-text="Diagram explaining managed storage." border="false" lightbox="../media/what-is-managed-storage.png":::
 
 When you create a managed table or volume, Unity Catalog handles the complete lifecycle of the data—including where it's stored, how it's organized, and when it's deleted. This differs from **external tables** and volumes, where you manage the data lifecycle in your cloud storage, and Unity Catalog only governs access from Azure Databricks.
 
@@ -16,7 +16,7 @@ Managed storage locations serve two key purposes. First, they provide **physical
 
 Unity Catalog organizes data using a **three-level namespace**: **catalog**, **schema**, and **table**. Managed storage locations can be defined at three corresponding levels in this hierarchy: the **metastore level**, the **catalog level**, and the **schema level**. Each level represents a different scope of data organization and isolation.
 
-:::image type="content" source="../media/data-storage-hierarchy.svg" alt-text="Diagram explaing the Azure Databricks Storage Hierarchy." border="false" lightbox="../media/data-storage-hierarchy.svg":::
+:::image type="content" source="../media/data-storage-hierarchy.png" alt-text="Diagram explaining the Azure Databricks Storage Hierarchy." border="false" lightbox="../media/data-storage-hierarchy.png":::
 
 At the **metastore level**, you can optionally define a default storage location that serves as a fallback for any catalog or schema that doesn't have its own managed storage location. However, new workspaces enabled for Unity Catalog don't automatically include metastore-level storage, and Databricks recommends using **catalog-level storage** instead for better data isolation.
 
@@ -40,7 +40,7 @@ This hierarchy gives you flexibility in how you organize and isolate data. You c
 
 When you define managed storage locations for catalogs or schemas, you specify a cloud storage path that Unity Catalog uses as the **storage root**. However, Unity Catalog doesn't store data directly in this path. Instead, it **automatically adds hashed subdirectories** to ensure each catalog and schema has a unique location, even if multiple objects share the same storage root.
 
-:::image type="content" source="../media/storage-root.svg" alt-text="Diagram explaining storage root and storage location." border="false" lightbox="../media/storage-root.svg":::
+:::image type="content" source="../media/storage-root.png" alt-text="Diagram explaining storage root and storage location." border="false" lightbox="../media/storage-root.png":::
 
 For catalogs, Unity Catalog appends subdirectories in the format `__unitystorage/catalogs/<uuid>`, where `<uuid>` is a unique identifier. For schemas, it uses `__unitystorage/schemas/<uuid>`. The complete path—the storage root plus these automatically generated subdirectories—becomes the **storage location** where managed tables and volumes actually store their data.
 

@@ -15,13 +15,13 @@ When you create a serverless workspace, Azure Databricks automatically provision
 
 Default storage is available exclusively in serverless workspaces.
 
-:::image type="content" source="../media/default-storage.svg" alt-text="Screenshot showing configuration for default storage." border="false" lightbox="../media/default-storage.svg":::
+:::image type="content" source="../media/default-storage.png" alt-text="Screenshot showing configuration for default storage." border="false" lightbox="../media/default-storage.png":::
 
 Serverless workspaces use default storage for three key areas. First, they use it for internal workspace operations and control plane metadata. Second, they store workspace-level files and artifacts there. Third, catalogs you create can use default storage to store managed tables and volumes.
 
 Traditional workspaces can access catalogs stored in default storage, but only when using serverless compute. This means you can share data across workspace types while maintaining the requirement for serverless compute when accessing default storage.
 
-:::image type="content" source="../media/workspace-storage-access.svg" alt-text="Diagram explaining workspace storage access." border="false" lightbox="../media/workspace-storage-access.svg":::
+:::image type="content" source="../media/workspace-storage-access.png" alt-text="Diagram explaining workspace storage access." border="false" lightbox="../media/workspace-storage-access.png":::
 
 ## Default storage benefits and considerations
 

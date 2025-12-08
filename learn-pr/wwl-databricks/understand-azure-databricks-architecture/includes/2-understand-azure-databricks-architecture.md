@@ -14,7 +14,7 @@ Before Unity Catalog, Azure Databricks used the **Hive metastore (legacy)** as a
 
 You create multiple **workspaces** within an account. Workspaces are the collaboration environments where you and your team run compute workloads such as data ingestion, interactive exploration, scheduled jobs, and machine learning training. Each workspace provides an isolated environment for your projects while sharing the same account-level governance.
 
-:::image type="content" source="../media/databricks-account-hierarchy.svg" alt-text="Diagram showing the relationship between account, workspace and catalog." border="false" lightbox="../media/databricks-account-hierarchy.svg":::
+:::image type="content" source="../media/databricks-account-hierarchy.png" alt-text="Diagram showing the relationship between account, workspace and catalog." border="false" lightbox="../media/databricks-account-hierarchy.png":::
 
 This hierarchical approach allows you to separate concerns: manage organization-wide policies at the account level, isolate projects in workspaces, and govern data centrally through Unity Catalog.
 
@@ -26,7 +26,7 @@ The **control plane** includes the backend services that Azure Databricks manage
 
 The **compute plane** is where your data processing happens. Azure Databricks offers two types of compute planes, each designed for different use cases.
 
-:::image type="content" source="../media/databricks-architecture.svg" alt-text="Diagram showing part of the Azure Databricks architecture." border="false" lightbox="../media/databricks-architecture.svg":::
+:::image type="content" source="../media/databricks-architecture.png" alt-text="Diagram showing part of the Azure Databricks architecture." border="false" lightbox="../media/databricks-architecture.png":::
 
 With **serverless compute**, your compute resources run in a serverless compute plane within your Azure Databricks account, not in your Azure subscription. Azure Databricks fully manages the infrastructure, automatically scaling resources based on your workload demands. The serverless compute plane includes network boundaries to isolate workspaces and additional security controls between clusters. This option simplifies operations because you don't need to manage virtual networks or compute resources yourself.
 
@@ -38,7 +38,7 @@ The separation between control and compute planes allows Azure Databricks to man
 
 Each Azure Databricks workspace has an associated **workspace storage account** that resides in your Azure subscription. This storage account serves multiple purposes and contains different types of data.
 
-:::image type="content" source="../media/workspace-storage.svg" alt-text="Diagram showing workspace storage." border="false" lightbox="../media/workspace-storage.svg":::
+:::image type="content" source="../media/workspace-storage.png" alt-text="Diagram showing workspace storage." border="false" lightbox="../media/workspace-storage.png":::
 
 The workspace storage account contains **workspace system data** generated as you use Azure Databricks features. This includes notebook revisions, job run details, command results, and Spark logs. The system uses this data to provide versioning, auditing, and troubleshooting capabilities.
 
