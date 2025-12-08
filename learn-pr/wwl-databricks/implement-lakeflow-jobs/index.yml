@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.wwl.implement-lakeflow-jobs
+metadata:
+  title: Implement Lakeflow Jobs
+  description: Learn how to create, configure, schedule, and monitor Lakeflow Jobs in Azure Databricks to automate your data pipelines.
+  ms.date: 12/07/2025
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: module
+  ms.service: azure-databricks
+  ai-usage: ai-generated
+title: Implement Lakeflow Jobs
+summary: This module guides you through the process of implementing Lakeflow Jobs in Azure Databricks. You will learn how to create jobs, configure triggers and schedules, set up alerts, and manage automatic restarts to ensure reliable data pipeline execution.
+abstract: |
+  By the end of this module, you'll be able to:
+  - Create and configure Lakeflow Jobs with tasks and compute resources
+  - Configure job triggers including table updates and file arrivals
+  - Schedule jobs using intervals and cron expressions
+  - Configure job alerts and notifications for monitoring
+  - Configure automatic restarts and retry policies for reliability
+prerequisites: |
+  The following prerequisites should be completed:
+  * Basic understanding of Azure Databricks workspaces
+  * Familiarity with data engineering concepts
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+  - intermediate
+roles:
+  - data-engineer
+products:
+  - azure-databricks
+subjects:
+  - data-engineering
+units:
+  - learn.wwl.implement-lakeflow-jobs.introduction
+  - learn.wwl.implement-lakeflow-jobs.create-lakeflow-job
+  - learn.wwl.implement-lakeflow-jobs.configure-job-triggers
+  - learn.wwl.implement-lakeflow-jobs.schedule-job
+  - learn.wwl.implement-lakeflow-jobs.configure-job-alerts
+  - learn.wwl.implement-lakeflow-jobs.configure-job-automatic-restarts
+  - learn.wwl.implement-lakeflow-jobs.knowledge-check
+  - learn.wwl.implement-lakeflow-jobs.summary
+badge:
+  uid: learn.wwl.implement-lakeflow-jobs.badge
