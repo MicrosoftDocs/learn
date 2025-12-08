@@ -60903,6 +60903,96 @@
       "source_path": "learn-pr/wwl-data-ai/deploy-azure-databricks-models-azure-machine-learning/5-troubleshoot-model-deployment.md",
       "redirect_url": "/training/paths/use-azure-machine-learning-pipelines-for-automation/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-azure-web-app-with-azure-toolkit-intellij/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/java/toolkit-for-intellij/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-azure-web-app-with-azure-toolkit-intellij/2-create-web-app-intellij.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/java/toolkit-for-intellij/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-azure-web-app-with-azure-toolkit-intellij/3-exercise-create-web-app-intellij.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/java/toolkit-for-intellij/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-azure-web-app-with-azure-toolkit-intellij/4-deploy-web-app-azure.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/java/toolkit-for-intellij/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-azure-web-app-with-azure-toolkit-intellij/5-exercise-deploy-web-app-azure.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/java/toolkit-for-intellij/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-azure-web-app-with-azure-toolkit-intellij/6-manage-deployment-intellij.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/java/toolkit-for-intellij/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-azure-web-app-with-azure-toolkit-intellij/7-exercise-manage-deployment-intellij.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/java/toolkit-for-intellij/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-azure-web-app-with-azure-toolkit-intellij/8-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/java/toolkit-for-intellij/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-azure-web-app-with-azure-toolkit-intellij/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/java/toolkit-for-intellij/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-web-app-with-maven-plugin-for-azure-app-service/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/java/fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-web-app-with-maven-plugin-for-azure-app-service/2-create-java-web-app.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/java/fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-web-app-with-maven-plugin-for-azure-app-service/3-exercise-create-java-web-app.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/java/fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-web-app-with-maven-plugin-for-azure-app-service/4-deploy-web-app-azure.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/java/fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-web-app-with-maven-plugin-for-azure-app-service/5-exercise-deploy-web-app-azure.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/java/fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-web-app-with-maven-plugin-for-azure-app-service/6-exercise-redeploy-web-app-azure.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/java/fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-web-app-with-maven-plugin-for-azure-app-service/7-authenticate-web-app-deployment.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/java/fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-web-app-with-maven-plugin-for-azure-app-service/8-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/java/fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-web-app-with-maven-plugin-for-azure-app-service/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/java/fundamentals/",
+      "redirect_document_id": false
     }
   ]
 }

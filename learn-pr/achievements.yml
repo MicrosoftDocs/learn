@@ -7340,3 +7340,13 @@ achievements:
   title: Deploy Azure Databricks models in Azure Machine Learning
   summary: You can use Azure Databricks to train machine learning models, and deploy the trained models in Azure Machine Learning endpoints.
   iconUrl: /training/achievements/deploy-azure-databricks-models-in-azure-machine-learning.svg
+- uid: learn.azure.publish-app-with-maven-plugin-for-azure-web-apps.badge
+  type: badge
+  title: Develop Java web app on Azure using Maven
+  summary: Use the Maven plugin for Azure App Service to develop a Java web app and deploy the app to Azure.
+  iconUrl: /training/achievements/publish-app-with-maven-plugin-for-azure-web-apps.svg
+- uid: learn.azure.publish-azure-web-app-with-azure-toolkit-intellij.badge
+  type: badge
+  title: Develop Java web app on Azure using IntelliJ
+  summary: In this module, you'll learn to create a web app in IntelliJ and deploy the app to Azure by using Azure Toolkit for IntelliJ.
+  iconUrl: /training/achievements/publish-a-web-app-to-azure-by-using-azure-toolkit-for-intellij.svg
