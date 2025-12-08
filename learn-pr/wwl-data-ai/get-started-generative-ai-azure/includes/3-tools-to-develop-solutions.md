@@ -5,7 +5,7 @@ As a PaaS (platform as a service), Microsoft Foundry gives developers control ov
 ![Screenshot of Microsoft Foundry's sign-in page.](../media/ai-foundry-sign-in-page.png)
 ![Screenshot of Microsoft Foundry.](../media/foundry-home-page.png)
 
-You can use **Microsoft Foundry portal**, a user interface for building, customizing, and managing AI applications and agents—especially those powered by generative AI. 
+You can use **Microsoft Foundry**, a user interface for building, customizing, and managing AI applications and agents—especially those powered by generative AI. 
 
 Components of Microsoft Foundry include: 
 
@@ -13,8 +13,8 @@ Components of Microsoft Foundry include:
 |-|-|
 |**Microsoft Foundry model catalog**|A centralized hub for discovering, comparing, and deploying a wide range of models for generative AI development.| 
 |**Playgrounds**|Ready-to-use environments for quickly testing ideas, trying out models, and exploring Foundry Models.|
-|**Foundry Tools**|In Microsoft Foundry portal, you can build, test, see demos, and deploy Foundry Tools.|
-|**Solutions**|You can build agents and customize models in Microsoft Foundry portal.|
+|**Foundry Tools**|In Microsoft Foundry, you can build, test, see demos, and deploy Foundry Tools.|
+|**Solutions**|You can build agents and customize models in Microsoft Foundry.|
 |**Observability**|Ability to monitor usage and performance of your application's models.| 
 
 >[!NOTE]
