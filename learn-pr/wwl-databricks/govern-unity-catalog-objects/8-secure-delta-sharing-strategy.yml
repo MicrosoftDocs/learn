@@ -1,6 +1,6 @@
 ### YamlMime: ModuleUnit
 uid: learn.wwl.govern-unity-catalog-objects.secure-delta-sharing-strategy
-title: Design secure Delta sharing strategy
+title: Design secure Delta Sharing strategy
 metadata:
   title: Design Secure Delta Sharing Strategy
   description: Learn how to design a secure Delta Sharing strategy in Azure Databricks by choosing the right sharing protocol, implementing access controls, and monitoring sharing activity through audit logs.

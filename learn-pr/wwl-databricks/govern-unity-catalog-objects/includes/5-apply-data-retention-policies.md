@@ -1,4 +1,4 @@
-Every organization faces the challenge of balancing data availability with compliance requirements and storage costs. When you implement **data retention policies** in Azure Databricks, you ensure that data is kept only as long as necessary while remaining accessible for legitimate business needs. This becomes especially critical when regulations like **GDPR** *(General Data Protection Regulation)* and **CCPA** *(California Consumer Privacy Act)* require you to delete personal data upon request.
+Every organization faces the challenge of balancing data availability with compliance requirements and storage costs. When you implement **data retention policies** in Azure Databricks, you ensure that data is kept only as long as necessary while remaining accessible for legitimate business needs. This becomes especially critical when regulations require you to delete personal data upon request.
 
 In this unit, you learn how to configure retention settings, use **VACUUM** to remove obsolete data, handle deletion requests for compliance, and automate maintenance with **predictive optimization**.
 
@@ -49,11 +49,11 @@ When you run VACUUM, Delta Lake identifies files associated with versions older 
 For tables with **deletion vectors** enabled, you must also run `REORG TABLE ... APPLY (PURGE)` after deleting records to permanently remove the underlying data. VACUUM alone doesn't remove data marked for deletion by deletion vectors.
 
 > [!NOTE]
-> **Deletion vectors** are a storage optimization feature you can enable on Delta Lake tables. By default, when a single row in a data file is deleted, the entire Parquet file containing the record must be rewritten. With deletion vectos enabled, it marks rows as deleted without rewriting the entire file. 
+> **Deletion vectors** are a storage optimization feature you can enable on Delta Lake tables. By default, when a single row in a data file is deleted, the entire Parquet file containing the record must be rewritten. With deletion vectors enabled, it marks rows as deleted without rewriting the entire file. 
 
 ## Handle compliance deletion requests
 
-Privacy regulations like **GDPR** and **CCPA** grant individuals the "**right to be forgotten**," requiring you to delete their personal data upon request. Delta Lake's **ACID transactions** make these deletions straightforward.
+Privacy regulations grant individuals the "**right to be forgotten**," requiring you to delete their personal data upon request. Delta Lake's **ACID transactions** make these deletions straightforward.
 
 ### Delete individual records
 
@@ -143,7 +143,7 @@ When implementing storage lifecycle policies with Delta Lake, you must account f
 - **File creation time vs. modification time**: Databricks typically relies on file creation time for lifecycle management. Operations like `UPDATE`, `MERGE`, `DELETE`, and `OPTIMIZE` rewrite Parquet files, which resets their creation time and can delay archival.
 
 - **Querying archived data**:
-  - **Offline tiers (Archive)**: Querying files in offline tiers fails unless they are restored
+  - **Offline tiers (Archive)**: Querying files in offline tiers fails unless they're restored
   - **Online tiers (Cool, Cold)**: Queries succeed but may incur higher access costs if data is frequently accessed.
 
 - **Preventing frequent access**: It can be challenging to ensure users don't accidentally query archived data, which would trigger costly retrieval or failures.
@@ -154,9 +154,9 @@ To overcome these challenges and implement a cost-effective archival strategy:
 
 - **Partition data by date**: Partitioning tables by ingestion date or transaction date makes it easier to identify and manage older data files.
 
-- **Define storage lifecycle policies**: Configure Azure Storage lifecycle management rules to move older files to cool or archive tiers based on their age (e.g., move to Cool after 30 days, Archive after 365 days).
+- **Define storage lifecycle policies**: Configure Azure Storage lifecycle management rules to move older files to cool or archive tiers based on their age (for example, move to Cool after 30 days, Archive after 365 days).
 
-- **Set the `delta.timeUntilArchived` property**: Configure this table property to match your storage lifecycle policy. This informs Databricks that files older than the specified period are archived, preventing the query optimizer from assuming they are immediately available.
+- **Set the `delta.timeUntilArchived` property**: Configure this table property to match your storage lifecycle policy. This informs Databricks that files older than the specified period are archived, preventing the query optimizer from assuming they're immediately available.
   
     ```sql
     ALTER TABLE sales_data 

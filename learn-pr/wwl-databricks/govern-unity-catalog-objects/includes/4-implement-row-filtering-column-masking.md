@@ -5,11 +5,11 @@ When working with sensitive information in a data lakehouse, you need more than 
 
 Both strategies depend on group membership checks, such as `is_account_group_member()`, to determine whether a user should see protected values.
 
-## Row and Column Security
+## Row and column security
 
 Row and column security lets you define rules directly on a table. Two operations are available: **column masking** and **row filtering**.
 
-### Column Masking
+### Column masking
 
 Column masking ensures that sensitive values are hidden unless a user belongs to an authorized group. For example, the `c_phone` column in a **customers** table can be masked with a function:
 
@@ -31,7 +31,7 @@ ALTER TABLE customers
 
 From this point forward, queries against the table return actual phone numbers only to `metastore_admins`. Other users always see `REDACTED PHONE NUMBER`.
 
-### Row Filtering
+### Row filtering
 
 Row filtering removes rows from query results for users who aren't authorized. You define a function that returns `true` only when a row should be visible. For example:
 
@@ -51,7 +51,7 @@ This ensures that non-admins only see rows where `c_nationkey = 21`. Admin users
 
 Together, column masking and row filtering provide a way to enforce restrictions directly on the base table.
 
-## Dynamic Views
+## Dynamic views
 
 An alternative to modifying a table is to create a **dynamic view**. Views allow you to express row and column restrictions in SQL, and every user querying the view automatically sees the appropriate subset of the data.
 
@@ -92,7 +92,7 @@ GRANT SELECT ON VIEW vw_customers TO `account users`;
 
 The underlying table remains untouched, while the view enforces security logic.
 
-## Choosing Between the Two Approaches
+## Choosing between the two approaches
 
 Both approaches achieve fine-grained security, but they differ in scope:
 

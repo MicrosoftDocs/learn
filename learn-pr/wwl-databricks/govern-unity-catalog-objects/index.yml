@@ -9,7 +9,7 @@ metadata:
   ms.topic: module
   ms.service: azure-databricks
   ai-usage: ai-generated
-title: Govern Unity Catalog Objects
+title: Govern Unity Catalog objects
 summary: This module covers essential governance practices in Unity Catalog, enabling you to secure, monitor, and manage your data estate effectively. You will learn how to implement fine-grained access control, track data lineage, configure audit logs, and share data securely.
 abstract: |
   By the end of this module, you'll be able to:
