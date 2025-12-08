@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.cleanse-transform-and-load-data-into-unity-catalog.resolve-duplicate-missing-null-values
+uid: learn.wwl.cleanse-transform-load-data-into-unity-catalog.resolve-duplicate-missing-null-values
 title: Resolve duplicates and nulls
 metadata:
   title: Resolve Duplicates and Nulls

@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.cleanse-transform-and-load-data-into-unity-catalog.transform-data-denormalize-pivot-unpivot
+uid: learn.wwl.cleanse-transform-load-data-into-unity-catalog.transform-data-denormalize-pivot-unpivot
 title: Transform data with denormalization and pivots
 metadata:
   title: Transform Data With Denormalization and Pivots

@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.wwl.cleanse-transform-and-load-data-into-unity-catalog
+uid: learn.wwl.cleanse-transform-load-data-into-unity-catalog
 metadata:
   title: Cleanse, Transform, and Load Data into Unity Catalog
   description: Learn how to cleanse, transform, and load data into Unity Catalog tables in Azure Databricks by profiling data, handling duplicates and nulls, applying transformations, and using various loading strategies.
@@ -35,15 +35,15 @@ products:
 subjects:
   - data-engineering
 units:
-  - learn.wwl.cleanse-transform-and-load-data-into-unity-catalog.introduction
-  - learn.wwl.cleanse-transform-and-load-data-into-unity-catalog.profile-data-summary-statistics
-  - learn.wwl.cleanse-transform-and-load-data-into-unity-catalog.choose-appropriate-column-data-types
-  - learn.wwl.cleanse-transform-and-load-data-into-unity-catalog.resolve-duplicate-missing-null-values
-  - learn.wwl.cleanse-transform-and-load-data-into-unity-catalog.transform-data-filter-group-aggregate
-  - learn.wwl.cleanse-transform-and-load-data-into-unity-catalog.transform-data-join-union-intersect-except
-  - learn.wwl.cleanse-transform-and-load-data-into-unity-catalog.transform-data-denormalize-pivot-unpivot
-  - learn.wwl.cleanse-transform-and-load-data-into-unity-catalog.load-data-merge-insert-append
-  - learn.wwl.cleanse-transform-and-load-data-into-unity-catalog.knowledge-check
-  - learn.wwl.cleanse-transform-and-load-data-into-unity-catalog.summary
+  - learn.wwl.cleanse-transform-load-data-into-unity-catalog.introduction
+  - learn.wwl.cleanse-transform-load-data-into-unity-catalog.profile-data-summary-statistics
+  - learn.wwl.cleanse-transform-load-data-into-unity-catalog.choose-appropriate-column-data-types
+  - learn.wwl.cleanse-transform-load-data-into-unity-catalog.resolve-duplicate-missing-null-values
+  - learn.wwl.cleanse-transform-load-data-into-unity-catalog.transform-data-filter-group-aggregate
+  - learn.wwl.cleanse-transform-load-data-into-unity-catalog.transform-data-join-union-intersect-except
+  - learn.wwl.cleanse-transform-load-data-into-unity-catalog.transform-data-denormalize-pivot-unpivot
+  - learn.wwl.cleanse-transform-load-data-into-unity-catalog.load-data-merge-insert-append
+  - learn.wwl.cleanse-transform-load-data-into-unity-catalog.knowledge-check
+  - learn.wwl.cleanse-transform-load-data-into-unity-catalog.summary
 badge:
-  uid: learn.wwl.cleanse-transform-and-load-data-into-unity-catalog.badge
+  uid: learn.wwl.cleanse-transform-load-data-into-unity-catalog.badge

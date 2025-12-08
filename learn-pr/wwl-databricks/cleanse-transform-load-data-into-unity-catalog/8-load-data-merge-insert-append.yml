@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.cleanse-transform-and-load-data-into-unity-catalog.load-data-merge-insert-append
+uid: learn.wwl.cleanse-transform-load-data-into-unity-catalog.load-data-merge-insert-append
 title: Load data with merge, insert, and append
 metadata:
   title: Load Data With Merge, Insert, and Append

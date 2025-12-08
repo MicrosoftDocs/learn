@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.cleanse-transform-and-load-data-into-unity-catalog.transform-data-join-union-intersect-except
+uid: learn.wwl.cleanse-transform-load-data-into-unity-catalog.transform-data-join-union-intersect-except
 title: Transform data with joins and set operators
 metadata:
   title: Transform Data With Joins and Set Operators
