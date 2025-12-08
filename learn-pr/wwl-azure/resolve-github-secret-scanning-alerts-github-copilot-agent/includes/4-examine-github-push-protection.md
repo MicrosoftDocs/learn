@@ -84,9 +84,7 @@ For private repositories, push protection requires GitHub Advanced Security:
 - **GitHub Enterprise Server**: Available with Advanced Security license.
 - **Organization-level control**: Administrators enable protection at the organization or repository level.
 
-For detailed instructions on enabling push protection, see [GitHub's push protection documentation](https://docs.github.com/en/code-security/secret-scanning/push-protection).
-
-For detailed instructions on enabling push protection, see [GitHub's push protection documentation](https://docs.github.com/en/code-security/secret-scanning/push-protection).
+For detailed instructions on enabling push protection, see [GitHub's push protection documentation](https://docs.github.com/en/code-security/secret-scanning/working-with-secret-scanning-and-push-protection).
 
 ## Handling push protection blocks
 
