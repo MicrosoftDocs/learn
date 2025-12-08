@@ -7345,3 +7345,18 @@ achievements:
   title: Consume REST web services in .NET MAUI apps
   summary: Build a .NET Multi-platform App UI (MAUI) application that consumes a REST web service by using HttpClient and performs basic CRUD operations. In the app, you detect when your device is connected to the internet to provide a good user experience and take advantage of the native networking stacks to get top performance.
   iconUrl: /training/achievements/consume-rest-web-services-dotnet-maui-app.svg
+- uid: learn.azure.capture-application-logs-app-service.badge
+  type: badge
+  title: Capture Web Application Logs with App Service Diagnostics Logging
+  summary: Use application logs in Azure Web Apps for debugging web app code.
+  iconUrl: /training/achievements/capture-application-logs-app-service.svg
+- uid: learn.azure.publish-app-with-maven-plugin-for-azure-web-apps.badge
+  type: badge
+  title: Develop Java web app on Azure using Maven
+  summary: Use the Maven plugin for Azure App Service to develop a Java web app and deploy the app to Azure.
+  iconUrl: /training/achievements/publish-app-with-maven-plugin-for-azure-web-apps.svg
+- uid: learn.azure.publish-azure-web-app-with-azure-toolkit-intellij.badge
+  type: badge
+  title: Develop Java web app on Azure using IntelliJ
+  summary: In this module, you'll learn to create a web app in IntelliJ and deploy the app to Azure by using Azure Toolkit for IntelliJ.
+  iconUrl: /training/achievements/publish-a-web-app-to-azure-by-using-azure-toolkit-for-intellij.svg

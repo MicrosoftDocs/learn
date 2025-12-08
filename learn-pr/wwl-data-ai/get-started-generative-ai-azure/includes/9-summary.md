@@ -1,6 +1,6 @@
 In this module, you learned how generative AI applications are powered by language models that serve as the core logic behind user interactions. These applications often appear as assistants and agents. The applications can be grouped by the level of customization needed for their use. The rest of the module focused on Microsoft Foundry, a unified platform for building generative AI applications. 
 
-You explored generative AI in Microsoft Foundry portal, where users have the ability to build with an extensive model marketplace, test capabilities, deploy, and observe models. You also learned that with Microsoft Foundry, developers can examine Foundry Tools and integrate them into their generative AI applications. 
+You explored generative AI in Microsoft Foundry, where users have the ability to build with an extensive model marketplace, test capabilities, deploy, and observe models. You also learned that with Microsoft Foundry, developers can examine Foundry Tools and integrate them into their generative AI applications. 
 
 ## Learn more 
 

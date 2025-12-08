@@ -60938,6 +60938,141 @@
       "source_path": "learn-pr/dot-net-maui/consume-rest-services-maui/index.yml",
       "redirect_url": "https://learn.microsoft.com/dotnet/maui/data-cloud/rest",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/capture-application-logs-app-service/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/app-service/troubleshoot-diagnostic-logs/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/capture-application-logs-app-service/2-enable-and-configure-app-service-application-logging.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/app-service/troubleshoot-diagnostic-logs/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/capture-application-logs-app-service/3-enable-and-configure-app-service-application-logging-using-the-azure-portal.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/app-service/troubleshoot-diagnostic-logs/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/capture-application-logs-app-service/4-view-live-application-logging-activity-with-the-log-streaming-service.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/app-service/troubleshoot-diagnostic-logs/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/capture-application-logs-app-service/5-view-live-application-logging-activity-with-the-log-streaming-service-using-azure-cli.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/app-service/troubleshoot-diagnostic-logs/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/capture-application-logs-app-service/6-retrieve-application-log-files-from-an-application.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/app-service/troubleshoot-diagnostic-logs/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/capture-application-logs-app-service/7-retrieve-application-log-files-from-an-application-using-azure-cli-and-kudu.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/app-service/troubleshoot-diagnostic-logs/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/capture-application-logs-app-service/8-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/app-service/troubleshoot-diagnostic-logs/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/capture-application-logs-app-service/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/app-service/troubleshoot-diagnostic-logs/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-azure-web-app-with-azure-toolkit-intellij/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/java/toolkit-for-intellij/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-azure-web-app-with-azure-toolkit-intellij/2-create-web-app-intellij.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/java/toolkit-for-intellij/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-azure-web-app-with-azure-toolkit-intellij/3-exercise-create-web-app-intellij.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/java/toolkit-for-intellij/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-azure-web-app-with-azure-toolkit-intellij/4-deploy-web-app-azure.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/java/toolkit-for-intellij/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-azure-web-app-with-azure-toolkit-intellij/5-exercise-deploy-web-app-azure.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/java/toolkit-for-intellij/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-azure-web-app-with-azure-toolkit-intellij/6-manage-deployment-intellij.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/java/toolkit-for-intellij/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-azure-web-app-with-azure-toolkit-intellij/7-exercise-manage-deployment-intellij.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/java/toolkit-for-intellij/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-azure-web-app-with-azure-toolkit-intellij/8-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/java/toolkit-for-intellij/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-azure-web-app-with-azure-toolkit-intellij/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/java/toolkit-for-intellij/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-web-app-with-maven-plugin-for-azure-app-service/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/java/fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-web-app-with-maven-plugin-for-azure-app-service/2-create-java-web-app.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/java/fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-web-app-with-maven-plugin-for-azure-app-service/3-exercise-create-java-web-app.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/java/fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-web-app-with-maven-plugin-for-azure-app-service/4-deploy-web-app-azure.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/java/fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-web-app-with-maven-plugin-for-azure-app-service/5-exercise-deploy-web-app-azure.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/java/fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-web-app-with-maven-plugin-for-azure-app-service/6-exercise-redeploy-web-app-azure.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/java/fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-web-app-with-maven-plugin-for-azure-app-service/7-authenticate-web-app-deployment.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/java/fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-web-app-with-maven-plugin-for-azure-app-service/8-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/java/fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-web-app-with-maven-plugin-for-azure-app-service/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/java/fundamentals/",
+      "redirect_document_id": false
     }
   ]
 }
