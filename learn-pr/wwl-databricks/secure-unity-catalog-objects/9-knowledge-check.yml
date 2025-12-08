@@ -1,0 +1,84 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.secure-unity-catalog-objects.knowledge-check
+title: Module assessment
+metadata:
+  title: Module assessment
+  description: "Knowledge check"
+  ms.date: 12/07/2025
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+  module_assessment: true
+  ai-usage: ai-generated
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is the primary purpose of Unity Catalog during the query lifecycle?"
+    choices:
+    - content: "To store all table data in a centralized location"
+      isCorrect: false
+      explanation: "Incorrect. Unity Catalog manages metadata and security, not the actual table data storage."
+    - content: "To validate permissions and generate scoped temporary access tokens"
+      isCorrect: true
+      explanation: "Correct. Unity Catalog acts as the control plane for security, validating permissions and issuing scoped tokens for authorized data access."
+    - content: "To execute all queries on behalf of users"
+      isCorrect: false
+      explanation: "Incorrect. Queries are executed by compute resources like clusters or SQL warehouses, not Unity Catalog."
+  - content: "Which permission is required to create a new table in a Unity Catalog schema?"
+    choices:
+    - content: "CREATE TABLE on the catalog only"
+      isCorrect: false
+      explanation: "Incorrect. Creating a table requires permissions at multiple levels."
+    - content: "SELECT on the schema and CREATE TABLE on the catalog"
+      isCorrect: false
+      explanation: "Incorrect. SELECT is not sufficient; the correct combination includes USE CATALOG, USE SCHEMA, and CREATE TABLE."
+    - content: "USE CATALOG on the catalog, USE SCHEMA on the schema, and CREATE TABLE on the schema"
+      isCorrect: true
+      explanation: "Correct. Creating a table requires USE CATALOG on the catalog, USE SCHEMA on the schema, and CREATE TABLE on the schema."
+  - content: "What is the primary advantage of Row and Column Security over Dynamic Views?"
+    choices:
+    - content: "Row and Column Security can combine data from multiple tables"
+      isCorrect: false
+      explanation: "Incorrect. Dynamic Views are better suited for combining data from multiple tables."
+    - content: "Row and Column Security minimizes object sprawl by enforcing security at the table level"
+      isCorrect: true
+      explanation: "Correct. Row and Column Security reduces the number of objects to manage by applying masking and filtering functions directly to tables, avoiding the need for multiple views."
+    - content: "Row and Column Security provides read-only access to data"
+      isCorrect: false
+      explanation: "Incorrect. Row and Column Security supports both read and write operations with security enforcement."
+  - content: "What happens when a secret stored in Azure Key Vault is updated?"
+    choices:
+    - content: "All Databricks clusters automatically pick up the new value immediately"
+      isCorrect: false
+      explanation: "Incorrect. Clusters cache secret values and must be restarted to fetch updated values."
+    - content: "The secret scope in Databricks must be recreated to access the new value"
+      isCorrect: false
+      explanation: "Incorrect. The secret scope itself doesn't need to be recreated."
+    - content: "Clusters must be restarted to fetch the updated secret value"
+      isCorrect: true
+      explanation: "Correct. Clusters cache secret values when they start, so you must restart the cluster for it to retrieve the updated value from Azure Key Vault."
+  - content: "Why does Microsoft recommend managed identities over service principals for Unity Catalog storage credentials?"
+    choices:
+    - content: "Managed identities are less expensive than service principals"
+      isCorrect: false
+      explanation: "Incorrect. Cost is not the primary reason for this recommendation."
+    - content: "Managed identities eliminate the need to manage and rotate secrets and can access network-protected storage"
+      isCorrect: true
+      explanation: "Correct. Managed identities remove credential management overhead and can access storage accounts protected by network rules, which service principals cannot."
+    - content: "Managed identities provide faster data access than service principals"
+      isCorrect: false
+      explanation: "Incorrect. Performance is not the primary difference between these authentication methods."
+  - content: "Which Azure role should be assigned to a managed identity to enable Unity Catalog to read and write data in Azure Data Lake Storage?"
+    choices:
+    - content: "Reader"
+      isCorrect: false
+      explanation: "Incorrect. The Reader role provides read-only access to Azure resources metadata, not blob data access."
+    - content: "Storage Blob Data Contributor"
+      isCorrect: true
+      explanation: "Correct. The Storage Blob Data Contributor role provides read and write access to blob data, which is required for Unity Catalog operations."
+    - content: "Contributor"
+      isCorrect: false
+      explanation: "Incorrect. While the Contributor role is powerful, the more specific Storage Blob Data Contributor role is the appropriate choice for blob data access."

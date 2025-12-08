@@ -1,0 +1,48 @@
+### YamlMime:Module
+uid: learn.wwl.secure-unity-catalog-objects
+metadata:
+  title: Secure Unity Catalog Objects
+  description: Learn how to implement comprehensive security for Unity Catalog objects in Azure Databricks, including access control, fine-grained permissions, credential management, and authentication strategies.
+  ms.date: 12/07/2025
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: module
+  ms.service: azure-databricks
+  ai-usage: ai-generated
+title: Secure Unity Catalog objects
+summary: Unity Catalog provides centralized governance and security for data assets in Azure Databricks. This module explores how to secure Unity Catalog objects through access control strategies, fine-grained permissions, credential management, and authentication mechanisms. You'll learn how to implement table and schema-level security, enforce row and column filtering, securely access secrets from Azure Key Vault, and authenticate data access using service principals and managed identities.
+abstract: |
+  By the end of this module, you'll be able to:
+  - Understand the query lifecycle in Unity Catalog and how security is enforced
+  - Implement access control strategies using inherited and explicit permissions
+  - Apply fine-grained access control through row filtering and column masking
+  - Securely access Azure Key Vault secrets in Azure Databricks workflows
+  - Authenticate data access using service principals
+  - Configure managed identities for secure resource access without managing credentials
+prerequisites: |
+  The following prerequisites should be completed:
+  * Basic understanding of Azure Databricks and Unity Catalog concepts
+  * Familiarity with SQL and data access patterns
+  * Knowledge of Microsoft Entra ID and Azure security fundamentals
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+  - intermediate
+roles:
+  - data-engineer
+products:
+  - azure-databricks
+subjects:
+  - data-engineering
+units:
+  - learn.wwl.secure-unity-catalog-objects.introduction
+  - learn.wwl.secure-unity-catalog-objects.understand-query-lifecycle
+  - learn.wwl.secure-unity-catalog-objects.implement-access-control-strategies
+  - learn.wwl.secure-unity-catalog-objects.understand-fine-grained-access-control
+  - learn.wwl.secure-unity-catalog-objects.implement-row-filtering-column-masking
+  - learn.wwl.secure-unity-catalog-objects.access-azure-key-vault
+  - learn.wwl.secure-unity-catalog-objects.authenticate-data-access-service-principals
+  - learn.wwl.secure-unity-catalog-objects.authenticate-resource-access-managed-identities
+  - learn.wwl.secure-unity-catalog-objects.knowledge-check
+  - learn.wwl.secure-unity-catalog-objects.summary
+badge:
+  uid: learn.wwl.secure-unity-catalog-objects.badge
