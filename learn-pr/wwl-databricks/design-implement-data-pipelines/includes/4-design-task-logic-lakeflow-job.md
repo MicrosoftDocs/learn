@@ -84,7 +84,7 @@ regions = ["us-east", "us-west", "eu-central"]
 dbutils.jobs.taskValues.set(key="regions_to_process", value=regions)
 ```
 
-The For each task then references `{{tasks.get_regions.values.regions_to_process}}` and runs its nested task three times—once for each region.
+The **For each** task then references `{{tasks.get_regions.values.regions_to_process}}` and runs its nested task three times—once for each region.
 
 You control concurrency by setting how many iterations can run in parallel. Higher concurrency processes items faster but requires more compute resources.
 

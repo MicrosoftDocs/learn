@@ -1,6 +1,6 @@
 ### YamlMime: ModuleUnit
-uid: learn.wwl.design-and-implement-data-pipelines.design-task-logic-lakeflow-job
-title: Design Lakeflow Job logic
+uid: learn.wwl.design-implement-data-pipelines.design-task-logic-lakeflow-job
+title: Design Lakeflow job logic
 metadata:
   title: Design Lakeflow Job Logic
   description: Learn how to design task logic for Lakeflow Jobs in Azure Databricks, including task dependencies, execution patterns, conditional logic, and parameter configuration.
@@ -11,4 +11,4 @@ metadata:
   ai-usage: ai-generated
 durationInMinutes: 9
 content: |
-  [!include[](includes/4-design-task-logic-lake-flow-job.md)]
+  [!include[](includes/4-design-task-logic-lakeflow-job.md)]

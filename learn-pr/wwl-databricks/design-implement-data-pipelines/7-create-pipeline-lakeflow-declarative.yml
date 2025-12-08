@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.design-and-implement-data-pipelines.create-pipeline-lakeflow-declarative
+uid: learn.wwl.design-implement-data-pipelines.create-pipeline-lakeflow-declarative
 title: Create pipeline with Lakeflow Pipelines
 metadata:
   title: Create Pipeline with Lakeflow Pipelines
@@ -11,4 +11,4 @@ metadata:
   ai-usage: ai-generated
 durationInMinutes: 7
 content: |
-  [!include[](includes/7-create-pipeline-lake-flow-declarative.md)]
+  [!include[](includes/7-create-pipeline-lakeflow-declarative.md)]
