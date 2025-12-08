@@ -9,7 +9,7 @@ metadata:
   ms.topic: module
   ms.service: azure-databricks
   ai-usage: ai-generated
-title: Design and Implement Data Modeling
+title: Design and implement data modeling
 summary: Effective data modeling forms the foundation of a performant and maintainable data platform. This module explores how to design ingestion logic, select appropriate tools and table formats, implement partitioning schemes, manage slowly changing dimensions, choose appropriate data granularity, and optimize table performance through clustering strategies in Azure Databricks with Unity Catalog.
 abstract: |
   By the end of this module, you'll be able to:
