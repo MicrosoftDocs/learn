@@ -137,11 +137,11 @@ User acceptance testing (UAT) involves **stakeholders validating** that your sol
 
 Effective UAT requires careful planning:
 
-1. **Define acceptance criteria** with stakeholders before development begins
-2. **Create a staging environment** that mirrors production
-3. **Prepare test scenarios** that reflect actual business use cases
-4. **Document expected outcomes** for each scenario
-5. **Establish a feedback process** for reporting issues
+- **Define acceptance criteria** with stakeholders before development begins
+- **Create a staging environment** that mirrors production
+- **Prepare test scenarios** that reflect actual business use cases
+- **Document expected outcomes** for each scenario
+- **Establish a feedback process** for reporting issues
 
 UAT often runs in a **staging environment** where business users can interact with the solution using realistic data. Consider creating notebooks that stakeholders can execute to validate specific scenarios:
 

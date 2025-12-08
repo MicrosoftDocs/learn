@@ -1,5 +1,5 @@
 ### YamlMime: ModuleUnit
-uid: learn.wwl.implement-development-lifecycle-processes-in-azure-databricks.configure-package-dabs
+uid: learn.wwl.implement-development-lifecycle-processes-azure-databricks.configure-package-databricks-asset-bundles
 title: Configure and package DABs
 metadata:
   title: Configure and Package DABs
@@ -11,4 +11,4 @@ metadata:
   ai-usage: ai-generated
 durationInMinutes: 6
 content: |
-  [!include[](includes/5-configure-package-dabs.md)]
+  [!include[](includes/5-configure-package-databricks-asset-bundles.md)]
