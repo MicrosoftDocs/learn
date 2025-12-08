@@ -11,4 +11,4 @@ metadata:
   ai-usage: ai-generated
 durationInMinutes: 8
 content: |
-  [!include[](includes/8-ingest-data-lake-flow-declarative-pipelines.md)]
+  [!include[](includes/8-ingest-data-lakeflow-declarative-pipelines.md)]

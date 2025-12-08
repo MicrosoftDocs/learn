@@ -2,7 +2,7 @@
 uid: learn.wwl.ingest-data-into-unity-catalog.ingest-data-lakeflow-connect
 title: Ingest data with Lakeflow Connect
 metadata:
-  title: Ingest Data with Lakeflow Connect
+  title: Ingest Data With Lakeflow Connect
   description: Learn how to ingest data from external sources into Azure Databricks using Lakeflow Connect managed connectors, including configuring pipelines, change data capture, and SCD types.
   ms.date: 12/07/2025
   author: weslbo
@@ -11,4 +11,4 @@ metadata:
   ai-usage: ai-generated
 durationInMinutes: 6
 content: |
-  [!include[](includes/2-ingest-data-lake-flow-connect.md)]
+  [!include[](includes/2-ingest-data-lakeflow-connect.md)]
