@@ -1,0 +1,46 @@
+### YamlMime:Module
+uid: learn.wwl.monitor-troubleshoot-optimize-workloads-azure-databricks
+metadata:
+  title: Monitor, Troubleshoot and Optimize Workloads in Azure Databricks
+  description: Learn how to monitor cluster consumption, troubleshoot job failures, diagnose Spark performance issues, and implement log streaming to Azure Log Analytics for centralized monitoring of Azure Databricks workloads.
+  ms.date: 12/07/2025
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: module
+  ms.service: azure-databricks
+  ai-usage: ai-generated
+title: Monitor, troubleshoot and optimize workloads in Azure Databricks
+summary: Monitoring and optimization are essential for running reliable, cost-effective data workloads in Azure Databricks. This module explores cluster consumption metrics, Lakeflow Jobs troubleshooting, Spark job diagnostics, performance optimization for caching, skew, spill, and shuffle issues, and log streaming to Azure Log Analytics.
+abstract: |
+  By the end of this module, you'll be able to:
+  - Monitor and manage cluster consumption using metrics, auto-termination, and budgets
+  - Troubleshoot and repair failed Lakeflow Jobs using the Jobs UI and repair run feature
+  - Diagnose Spark job failures and resource bottlenecks using the Spark UI and compute metrics
+  - Investigate and resolve caching, data skew, memory spill, and shuffle performance issues
+  - Implement log streaming from Azure Databricks to Azure Log Analytics for centralized monitoring
+prerequisites: |
+  The following prerequisites should be completed:
+  * Basic understanding of Azure Databricks workspaces and clusters
+  * Familiarity with Apache Spark concepts and notebook development
+  * Experience with data engineering fundamentals
+  * Knowledge of Azure portal navigation
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+  - intermediate
+roles:
+  - data-engineer
+products:
+  - azure-databricks
+subjects:
+  - data-engineering
+units:
+  - learn.wwl.monitor-troubleshoot-optimize-workloads-azure-databricks.introduction
+  - learn.wwl.monitor-troubleshoot-optimize-workloads-azure-databricks.monitor-manage-cluster-consumption
+  - learn.wwl.monitor-troubleshoot-optimize-workloads-azure-databricks.troubleshoot-repair-lakeflow-jobs
+  - learn.wwl.monitor-troubleshoot-optimize-workloads-azure-databricks.troubleshoot-repair-spark-jobs-notebooks
+  - learn.wwl.monitor-troubleshoot-optimize-workloads-azure-databricks.resolve-caching-skewing-spilling-shuffle
+  - learn.wwl.monitor-troubleshoot-optimize-workloads-azure-databricks.implement-log-streaming-azure-analytics
+  - learn.wwl.monitor-troubleshoot-optimize-workloads-azure-databricks.knowledge-check
+  - learn.wwl.monitor-troubleshoot-optimize-workloads-azure-databricks.summary
+badge:
+  uid: learn.wwl.monitor-troubleshoot-optimize-workloads-azure-databricks.badge
