@@ -1,12 +1,12 @@
 Making your data discoverable involves more than organizing it into catalogs and schemas. **AI/BI Genie** in Azure Databricks enables business users to explore data through **natural language questions**, but it needs guidance to interpret your organization's terminology and business logic. When you configure AI/BI Genie instructions properly, you transform Unity Catalog metadata into a **knowledge store** that helps both humans and AI systems understand your data.
 
-![Screenshot showing an example of chatting with Genie.](../media/genie-example-chat.png)
+:::image type="content" source="../media/9-genie-example-chat.png" alt-text="Screenshot showing an example of chatting with Genie." lightbox="../media/9-genie-example-chat.png":::
 
 ## Configure the knowledge store
 
 The **knowledge store** is your primary tool for teaching AI/BI Genie about your data. You can customize **metadata** at the **space level** without altering the underlying Unity Catalog objects. This gives you flexibility to refine descriptions and add context specific to how business users interact with the data.
 
-![Diagram showing capabilities of the knowledge store.](../media/knowledge-store.svg)
+:::image type="content" source="../media/9-knowledge-store.png" alt-text="Diagram showing capabilities of the knowledge store." border="false" lightbox="../media/9-knowledge-store.png":::
 
 When you create a Genie space, you start by selecting up to **25 tables or views** from Unity Catalog. These data objects form the foundation of your space. The key is choosing tables that answer a focused set of business questions rather than including everything available. A sales manager might need access to opportunity and account tables, while a logistics manager requires shipment and inventory data. Keep your initial selection small. **Five tables or fewer** works well. Expand only as users request additional data.
 
@@ -58,6 +58,8 @@ You can add up to **100 instructions** total across all types. Each example SQL 
 ## Apply iterative refinement
 
 Configuring AI/BI Genie is an **ongoing process**, not a one-time setup. Start with minimal instructions and expand based on actual user questions and feedback.
+
+:::image type="content" source="../media/9-apply-iterative-refinement.png" alt-text="Diagram explaining how to apply iterative refinement." border="false" lightbox="../media/9-apply-iterative-refinement.png":::
 
 After configuring your initial space, test it yourself by asking questions you expect business users to pose. Review the generated SQL carefully to identify where Genie misinterprets data or business terminology.
 

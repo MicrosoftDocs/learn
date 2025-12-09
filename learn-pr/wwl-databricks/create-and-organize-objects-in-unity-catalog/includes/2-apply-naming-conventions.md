@@ -123,6 +123,8 @@ Individual SQL queries should be named descriptively using patterns like `query_
 
 Successful implementation of naming conventions requires more than technical patterns—you need organizational alignment, documentation, and enforcement mechanisms that make conventions easy to follow and hard to bypass.
 
+:::image type="content" source="../media/2-implement-conventions-across-organization.png" alt-text="Diagram explaining how to implement conventions accross your organization." border="false" lightbox="../media/2-implement-conventions-across-organization.png":::
+
 Start by **documenting your conventions** in a central location accessible to all data team members. Include specific examples, decision criteria, and rationale for each pattern. A documented standard like "Use `{domain}_{layer}` for schema names, where domain is the business area and layer is bronze/silver/gold" removes ambiguity. Provide examples of both correct and incorrect names to illustrate the pattern clearly.
 
 **Control access through Unity Catalog permissions** to limit who can create objects in specific catalogs and schemas. While you can't enforce naming patterns through permissions alone, restricting `CREATE TABLE` and `CREATE SCHEMA` privileges to specific teams helps maintain organizational boundaries. For example, grant the marketing team permissions only to the marketing catalog, reducing the risk of objects being created in the wrong location.

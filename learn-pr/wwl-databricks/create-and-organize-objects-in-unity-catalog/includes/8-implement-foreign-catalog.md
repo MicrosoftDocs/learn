@@ -4,6 +4,8 @@ Your analytics team needs immediate access to customer transaction data stored i
 
 Foreign catalogs extend Unity Catalog's governance to external data systems without requiring data migration. This approach becomes essential when you need to balance operational efficiency with security and compliance requirements.
 
+:::image type="content" source="../media/8-foreign-catalogs-reason.png" alt-text="Diagram explains why implementing foreign catalogs." border="false" lightbox="../media/8-foreign-catalogs-reason.png":::
+
 **Governance and auditability** remain consistent across your data estate. With foreign catalogs, your security team defines access policies once in Unity Catalog, and those policies apply whether users query data in Databricks-managed tables or external databases. Every query against foreign data appears in Unity Catalog's audit logs, providing complete visibility into who accessed what data and when. This centralized governance eliminates the complexity of managing permissions across multiple systems.
 
 **External data access without ETL** accelerates time to insights. You can run proof-of-concept analyses on production databases, create ad hoc reports from live operational systems, or validate data quality before committing to a full migration. The data stays in its original location, avoiding the time and cost of building and maintaining ETL pipelines for exploratory work.
@@ -14,7 +16,7 @@ Foreign catalogs extend Unity Catalog's governance to external data systems with
 
 A **connection** and a **foreign catalog** work together to enable external data access, but they serve different purposes in the architecture. Understanding this relationship is essential before you begin implementation.
 
-![Flowchart showing the progression from External Database → Connection to Foreign Catalog → Synchronize Metadata → Query Access.](../media/foreign-catalog.svg)
+:::image type="content" source="../media/8-understand-foreign-catalogs.png" alt-text="Diagram explaining connections and foreign catalogs." border="false" lightbox="../media/8-understand-foreign-catalogs.png":::
 
 A **connection** stores the technical details needed to reach an external database system. Think of it as a registered credential that specifies where the database lives and how to authenticate to it. The connection contains the JDBC URL, hostname, port, and authentication credentials for systems like PostgreSQL, MySQL, Snowflake, or BigQuery. You create the connection once and can use it to establish multiple foreign catalogs if needed.
 
@@ -91,7 +93,7 @@ This command creates a catalog named `prod_customer_data` that mirrors the `cust
 5. Specify the external database name (for example, `customers`).
 6. Select **Create**.
 
-![Screenshot of the create catalog dialog (with foreign catalog selected).](../media/create-foreign-catalog.png)
+:::image type="content" source="../media/8-create-foreign-catalog.png" alt-text="Screenshot of the create catalog dialog (with foreign catalog selected)." lightbox="../media/8-create-foreign-catalog.png":::
 
 **Metadata synchronization** happens automatically each time you interact with the foreign catalog. When you query `SELECT * FROM prod_customer_data.public.transactions`, Unity Catalog refreshes its view of the external schema structure before executing the query. This ensures you always see current metadata, even if database administrators add new tables or columns in the external system.
 

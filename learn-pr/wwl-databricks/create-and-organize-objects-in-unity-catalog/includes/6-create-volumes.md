@@ -6,7 +6,7 @@ A **volume** is a Unity Catalog object that represents a logical container for f
 
 Volumes sit at the third level of Unity Catalog's namespace structure: `catalog.schema.volume`. Unlike tables that govern structured data, volumes govern files of any format—CSV, JSON, Parquet, images, audio files, or machine learning artifacts.
 
-![Diagram showing Unity Catalog's namespace structure, highlighting Volumes.](../media/volumes.svg)
+:::image type="content" source="../media/6-volumes-definition.png" alt-text="Diagram showing Unity Catalog's namespace structure, highlighting Volumes." border="false" lightbox="../media/6-volumes-definition.png":::
 
 With Unity Catalog's three-layer hierarchy, understanding where volumes fit becomes essential. Volumes handle file-based data governance, providing path-based access to files while maintaining centralized security controls. This separation allows you to manage structured data through tables and unstructured data through volumes, both under the same governance framework.
 
@@ -17,6 +17,8 @@ When you create a volume, you choose between **managed** and **external** volume
 **Managed volumes** offer the simplest approach. Unity Catalog handles storage location and lifecycle management automatically. When you create a managed volume, Databricks stores files in the managed storage location associated with your schema. When you drop a managed volume, Unity Catalog marks the files for deletion after a seven-day retention period.
 
 **External volumes** provide governance for existing cloud storage locations. You specify the storage path when creating the volume, and the files remain in that location throughout the volume's lifecycle. When you drop an external volume, the files remain in cloud storage—only the Unity Catalog registration is removed.
+
+:::image type="content" source="../media/6-choose-between-managed-external-volumes.png" alt-text="Diagram explaining how to choose between managed and external volumes." border="false" lightbox="../media/6-choose-between-managed-external-volumes.png":::
 
 Consider managed volumes when you work exclusively within Databricks and want simplified storage management. Your data engineering pipelines can write files directly to volumes without worrying about underlying storage paths or credentials.
 
@@ -56,7 +58,7 @@ The location must point to a path within an external location that Unity Catalog
 6. For external volumes, select an external location and specify the subdirectory path.
 7. Select **Create**.
 
-![Screenshot of the create volume dialog.](../media/create-volume.png)
+:::image type="content" source="../media/6-create-volume.png" alt-text="Screenshot of the create volume dialog." lightbox="../media/6-create-volume.png":::
 
 After creation, your volume is ready to store files. The volume inherits permissions from its parent schema, though you can grant specific permissions to individual users or groups as needed.
 

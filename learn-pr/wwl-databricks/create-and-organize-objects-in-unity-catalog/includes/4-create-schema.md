@@ -6,14 +6,7 @@ A **schema** is the **second level** in Unity Catalog's **three-layer namespace*
 
 Think of schemas as rooms within the house you built when creating your catalog. Each room serves a specific purpose and contains related items. Your production catalog might contain schemas for `customer_analytics`, `financial_reporting`, and `operations_metrics`, with each schema grouping the tables and views needed for that specific domain.
 
-```txt
-Catalog
-└─ Schema
-   ├─ Tables
-   ├─ Views
-   ├─ Volumes
-   └─ Functions
-```
+:::image type="content" source="../media/4-schema-definition.png" alt-text="Diagram showing a schema in a catalog, along with tables, views, volumes and functions." border="false" lightbox="../media/4-schema-definition.png":::
 
 Schemas provide the organizational structure that makes your data **discoverable** and **manageable**. Instead of hundreds of tables scattered across a single namespace, you group related assets into meaningful categories. This structure helps data engineers find the datasets they need and understand how different data assets relate to each other.
 
@@ -69,7 +62,7 @@ This creates a schema named `customer_analytics` in the `prod_catalog` catalog. 
 4. Enter a schema name and optional description.
 5. Select **Create**.
 
-![Screenshot of the create schema dialog.](../media/create-schema.png)
+:::image type="content" source="../media/4-create-schema.png" alt-text="Screenshot of the create schema dialog." lightbox="../media/4-create-schema.png":::
 
 After creating the schema, you grant privileges to control who can use it and create objects within it. At minimum, users need **USE SCHEMA** permission to see the schema and query its contents. To create tables or views in the schema, users need **CREATE TABLE** or other object-specific permissions.
 
