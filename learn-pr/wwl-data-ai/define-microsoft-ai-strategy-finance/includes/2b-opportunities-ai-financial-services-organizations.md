@@ -17,7 +17,7 @@ These products embed powerful generative AI models that are skillful in text gen
 These AI solutions enable customized interactions based on context and on business information. Here are some applications for FSI:
 
 * **Tailored product recommendations**: Foundry Tools and Microsoft Dynamics 365 Copilot have features for hyper-personalization. It implies your agents can use these products to offer your clients just what they need, but also that your marketing team can launch much more targeted campaigns to boost their impact.
-* **Better virtual assistants**: Many products can help FSI professionals via conversational interfaces. For this purpose, you can use Microsoft Foundry, Dynamics 365 Copilot, Power Virtual Agents, and Power Platform. The resulting virtual assistants provide a more fluid, natural service than earlier generations. You may build these solutions to answer complex questions you’re your customers about financial products and services.
+* **Better virtual assistants**: Many products can help FSI professionals via conversational interfaces. For this purpose, you can use Microsoft Foundry, Dynamics 365 Copilot, Power Virtual Agents, and Power Platform. The resulting virtual assistants provide a more fluid, natural service than earlier generations. You may build these solutions to answer complex questions about financial products and services.
 * **Onboarding and help desks for financial agents**: With Microsoft Foundry, and especially Azure OpenAI Services, you can offer your workers training on internal processes, regulatory standards, and financial products.
 
 ![Photograph showing person looking at a tablet.](../media/2b-interaction.jpg)
