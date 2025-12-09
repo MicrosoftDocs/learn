@@ -2,7 +2,7 @@
 uid: learn.wwl.azure-databricks-data-engineer-setup-configure-environment
 metadata:
   title: Set up and Configure an Azure Databricks Environment
-  description: 
+  description: Build a solid foundation in Azure Databricks by understanding its architecture, integrations, compute options, and data organization capabilities. Learn how Azure Databricks provides a unified platform for data engineering, analytics, and AI workloads in the cloud.
   ms.date: 12/09/2025
   author: weslbo
   ms.author: wedebols
@@ -13,8 +13,6 @@ prerequisites: |
   - Basic understanding of cloud storage concepts
   - Familiarity with SQL and data organization principles
 summary: |
-  Build a solid foundation in Azure Databricks by understanding its architecture, integrations, compute options, and data organization capabilities. Learn how Azure Databricks provides a unified platform for data engineering, analytics, and AI workloads in the cloud.
-
   In this learning path, you'll explore the fundamentals of Azure Databricks and how it fits into the modern data platform ecosystem. You'll start by provisioning workspaces and understanding core workloads, then dive into the architectural concepts that separate control and compute planes. You'll discover how Azure Databricks integrates seamlessly with Microsoft Fabric, Power BI, Visual Studio Code, and other Microsoft services to create comprehensive solutions. You'll learn to select and configure the right compute resources for your workloads, optimizing for both performance and cost. Finally, you'll master Unity Catalog's organizational structure to effectively manage your data assets. By the end, you'll have the foundational knowledge needed to build scalable data solutions on Azure Databricks.
 iconUrl: /training/achievements/generic-trophy.svg
 levels:

@@ -2,7 +2,7 @@
 uid: learn.wwl.azure-databricks-data-engineer-deploy-maintain-data-pipelines-workloads
 metadata:
   title: Deploy and Maintain Data Pipelines and Workloads With Azure Databricks
-  description: 
+  description: Master the complete lifecycle of building, deploying, and maintaining production-ready data pipelines in Azure Databricks—from design and orchestration to monitoring and optimization.
   ms.date: 12/09/2025
   author: weslbo
   ms.author: wedebols
@@ -14,8 +14,6 @@ prerequisites: |
   - Experience with Python programming and notebooks
   - Knowledge of Git version control fundamentals
 summary: |
-    Master the complete lifecycle of building, deploying, and maintaining production-ready data pipelines in Azure Databricks—from design and orchestration to monitoring and optimization.
-    
     By the end of this learning path, you'll be able to:
     
     - Design and implement robust data pipelines using notebooks and Lakeflow Declarative Pipelines

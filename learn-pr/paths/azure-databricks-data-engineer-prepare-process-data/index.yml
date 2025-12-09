@@ -2,7 +2,7 @@
 uid: learn.wwl.azure-databricks-data-engineer-prepare-process-data
 metadata:
   title: Prepare and Process Data with Azure Databricks
-  description: 
+  description: Master the essential skills to build robust, scalable data engineering solutions with Azure Databricks and Unity Catalog. Learn to design effective data models, ingest data from diverse sources, transform raw data into analytics-ready formats, and ensure data quality across your lakehouse architecture.
   ms.date: 12/09/2025
   author: weslbo
   ms.author: wedebols
@@ -13,8 +13,6 @@ prerequisites: |
   - Familiarity with SQL and Python programming
   - Knowledge of fundamental data engineering and data warehouse concepts
 summary: |
-  Master the essential skills to build robust, scalable data engineering solutions with Azure Databricks and Unity Catalog. Learn to design effective data models, ingest data from diverse sources, transform raw data into analytics-ready formats, and ensure data quality across your lakehouse architecture.
-
   In this learning path, you'll learn how to build a data engineering workflow using Azure Databricks and Unity Catalog. Starting with foundational data modeling concepts, you'll design schemas and partitioning strategies optimized for analytical workloads. You'll then explore multiple ingestion patterns—from managed connectors to streaming pipelines—to bring data into your lakehouse. Next, you'll apply transformation techniques to cleanse and reshape data for business use. Finally, you'll implement quality controls to maintain data integrity throughout your pipelines. By the end, you'll have the practical skills to architect and build production-ready data solutions in Unity Catalog.
 iconUrl: /training/achievements/generic-trophy.svg
 levels:
