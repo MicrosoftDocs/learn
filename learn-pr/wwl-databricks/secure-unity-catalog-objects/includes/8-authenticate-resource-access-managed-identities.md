@@ -21,7 +21,7 @@ Storage credentials in Unity Catalog encapsulate the authentication information 
 
 The process begins in the Azure portal where you create an access connector for Azure Databricks. You select the same Azure region as your storage account to minimize latency and avoid cross-region data transfer costs. During creation, you choose whether to enable a system-assigned managed identity or attach user-assigned managed identities. The resource receives a unique identifier in the format `/subscriptions/{subscription-id}/resourceGroups/{resource-group}/providers/Microsoft.Databricks/accessConnectors/{connector-name}`.
 
-:::image type="content" source="../media/create-access-connector-for-azure-databricks.png" alt-text="Screenshot showing the Azure Portal Create an Access Connector for Azure Databricks." border="false" lightbox="../media/create-access-connector-for-azure-databricks.png":::
+:::image type="content" source="../media/create-access-connector-for-azure-databricks.png" alt-text="Screenshot showing the Azure portal Create an Access Connector for Azure Databricks."  lightbox="../media/create-access-connector-for-azure-databricks.png":::
 
 After creating the access connector, you grant the managed identity permissions on your Azure Data Lake Storage account. The **Storage Blob Data Contributor** role provides read and write access to blob data, which is typically what you need for Unity Catalog operations. You assign this role at either the storage account level for broad access or at the container level for more granular control.
 
@@ -29,7 +29,7 @@ For optimal performance, you should also grant the **Storage Queue Data Contribu
 
 With the Azure configuration complete, you create the storage credential in Unity Catalog. In Catalog Explorer, you navigate to the Credentials tab and create a new storage credential. You select **Azure Managed Identity** as the credential type and provide the access connector's resource ID. If you're using a user-assigned managed identity, you also include its resource ID. The storage credential receives a unique name that you reference when creating external locations.
 
-:::image type="content" source="../media/create-new-storage-credential.png" alt-text="Screenshot of Azure Databricks Create a new credential dialog." border="false" lightbox="../media/create-new-storage-credential.png":::
+:::image type="content" source="../media/create-new-storage-credential.png" alt-text="Screenshot of Azure Databricks Create a new credential dialog." lightbox="../media/create-new-storage-credential.png":::
 
 > [!IMPORTANT]
 > To create storage credentials, you need the **CREATE STORAGE CREDENTIAL** privilege on the Unity Catalog metastore. Account admins and metastore admins have this privilege by default. Without this privilege, you can't create new storage credentials but can still use existing ones that you have permissions to access.
