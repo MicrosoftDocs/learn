@@ -60,7 +60,7 @@ Unity Catalog enables partition-level access, but **final row- and column-level 
 
 The filtered query result is returned from the compute resource to the calling user, job, or application.
 
-## How Queries Work with Apache Hive
+## How queries work with Apache Hive
 
 Unity Catalog was designed to streamline governance, but it also maintains compatibility with the legacy Hive metastore. When a workspace is assigned to a Unity Catalog metastore, Hive appears as a special catalog named **hive_metastore**. Tables stored there can still be queried by referencing this catalog in the namespace.
 
