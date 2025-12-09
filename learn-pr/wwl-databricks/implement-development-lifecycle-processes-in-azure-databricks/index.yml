@@ -24,7 +24,7 @@ prerequisites: |
   * Familiarity with Azure Databricks workspaces
   * Experience with Python programming and notebooks
   * Knowledge of data engineering fundamentals
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/azure-databricks.svg
 levels:
   - intermediate
 roles:

@@ -22,7 +22,7 @@ prerequisites: |
   The following prerequisites should be completed:
   * Basic understanding of Azure Databricks workspaces
   * Familiarity with data engineering concepts
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/azure-databricks.svg
 levels:
   - intermediate
 roles:

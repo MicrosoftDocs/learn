@@ -24,7 +24,7 @@ prerequisites: |
   * Basic understanding of cloud storage concepts
   * Familiarity with Azure Databricks workspaces
   * Knowledge of Unity Catalog fundamentals
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/azure-databricks.svg
 levels:
   - intermediate
 roles:

@@ -24,7 +24,7 @@ prerequisites: |
   * Basic understanding of Azure Databricks and Unity Catalog concepts
   * Familiarity with SQL and data access patterns
   * Knowledge of Microsoft Entra ID and Azure security fundamentals
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/azure-databricks.svg
 levels:
   - intermediate
 roles:

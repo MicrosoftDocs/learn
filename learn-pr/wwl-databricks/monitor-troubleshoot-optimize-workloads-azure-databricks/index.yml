@@ -24,7 +24,7 @@ prerequisites: |
   * Familiarity with Apache Spark concepts and notebook development
   * Experience with data engineering fundamentals
   * Knowledge of Azure portal navigation
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/azure-databricks.svg
 levels:
   - intermediate
 roles:

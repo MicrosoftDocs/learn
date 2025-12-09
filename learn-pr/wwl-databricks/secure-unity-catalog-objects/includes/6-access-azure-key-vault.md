@@ -29,7 +29,7 @@ You create the secret scope using a special URL in your Databricks workspace. Na
 
 When you create the scope, you provide a descriptive name and specify who can manage it. The **Manage Principal** setting determines whether only the creator or all workspace users have MANAGE permission on the scope. MANAGE permission allows reading secrets, writing new secrets, and controlling who else can access the scope. Restricting management to the creator requires the Premium plan.
 
-![Screenshot of the Azure Databricks Create Secret Scope feature.](../media/create-secret-scope.png)
+:::image type="content" source="../media/create-secret-scope.png" alt-text="Screenshot of the Azure Databricks Create Secret Scope feature." lightbox="../media/create-secret-scope.png":::
 
 You also need two pieces of information from your Azure Key Vault: the **DNS Name** (for example, `https://databrickskv.vault.azure.net/`) and the **Resource ID** (for example, `/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourcegroups/databricks-rg/providers/Microsoft.KeyVault/vaults/databricksKV`). You can find both values in the **Properties** section of your Key Vault in the Azure portal.
 

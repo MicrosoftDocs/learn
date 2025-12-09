@@ -25,7 +25,7 @@ prerequisites: |
   * Basic understanding of Azure Databricks and Unity Catalog concepts
   * Familiarity with SQL and Python programming
   * Knowledge of data engineering concepts such as data quality and transformations
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/azure-databricks.svg
 levels:
   - intermediate
 roles:

@@ -23,7 +23,7 @@ prerequisites: |
   * Basic understanding of Azure Databricks concepts
   * Familiarity with Unity Catalog and workspace management
   * Knowledge of Spark fundamentals and cluster architecture
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/azure-databricks.svg
 levels:
   - intermediate
 roles:
