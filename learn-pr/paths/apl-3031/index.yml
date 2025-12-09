@@ -2,14 +2,14 @@
 uid: learn.wwl.apl-3031-create-ai-agent-foundry
 hidden: true
 metadata:
-  title: Create an AI agent with Microsoft Foundry (AI-3031)
-  description: Learn how to create an AI agent using Microsoft Foundry. (AI-3031)
+  title: Create an AI agent with Microsoft Foundry
+  description: Learn how to create an AI agent using Microsoft Foundry. (MAS-3031)
   ms.date: 12/08/2025
   author: wwlpublish
   ms.author: berryivor
   ms.topic: learning-path
   ms.collection: wwl-ai-copilot
-title: Create an AI agent with Microsoft Foundry (AI-3031)
+title: Create an AI agent with Microsoft Foundry
 prerequisites: |
   Before starting this module, you should be familiar with fundamental AI concepts and services in Azure. You should also have programming experience.
 summary: |
