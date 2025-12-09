@@ -4,14 +4,7 @@ Your organization's data governance policies require clear separation between **
 
 A **catalog** is the **top-level container** in Unity Catalog's **three-layer namespace**. Think of it as the foundation of your data organization, like building a house before decorating the rooms inside. Every data asset in Unity Catalog exists within this hierarchy: `catalog.schema.table`.
 
-```txt
-Catalog
-└─ Schema
-   ├─ Tables
-   ├─ Views
-   ├─ Volumes
-   └─ Functions
-```
+:::image type="content" source="../media/3-catalog-definition.png" alt-text="Diagram explaining what a catalog is." border="false" lightbox="../media/3-catalog-definition.png":::
 
 Catalogs serve as the primary unit of **data isolation** and organization. Each catalog can have its own **storage location**, **security boundaries**, and **access policies**. This physical separation ensures that your development experiments don't accidentally affect production data, and that sensitive information remains isolated from general-purpose datasets.
 
@@ -48,9 +41,11 @@ This creates a catalog named `dev_catalog` with a descriptive comment. The `IF N
 4. Optionally specify a managed storage location.
 5. Select **Create**.
 
-![Screenshot of the create catalog dialog.](../media/create-catalog.png)
+:::image type="content" source="../media/3-create-catalog.png" alt-text="Screenshot of the create catalog dialog." lightbox="../media/3-create-catalog.png":::
 
 After creating the catalog, you configure **workspace bindings** to control which workspaces can access it. By default, new catalogs are accessible from all workspaces attached to your metastore. For production catalogs, you should restrict access to production workspaces only, ensuring that development environments can't accidentally query or modify production data.
+
+:::image type="content" source="../media/3-catalog-workspace-binding.png" alt-text="Screenshot of the catalog to workspace binding dialog." lightbox="../media/3-catalog-workspace-binding.png":::
 
 ## Configure managed storage
 

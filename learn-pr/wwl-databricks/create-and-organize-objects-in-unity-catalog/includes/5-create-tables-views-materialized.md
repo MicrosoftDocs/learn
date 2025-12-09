@@ -2,7 +2,7 @@ Tables and views form the foundation of your data organization in Unity Catalog.
 
 The following diagram illustrates how tables, views, and materialized views relate to each other and to the underlying data:
 
-![Diagram showing tables, views, and managed views.](../media/tables-views-materialized.svg)
+:::image type="content" source="../media/5-tables-views-materialized.png" alt-text="Diagram showing tables, views, and managed views." border="false" lightbox="../media/5-tables-views-materialized.png":::
 
 ## Create managed tables
 
@@ -200,7 +200,7 @@ Materialized views support two refresh strategies: **incremental** and **full**.
 
 The following diagram shows how materialized views handle different refresh strategies:
 
-![Diagram showing materialized views refresh strategies.](../media/materialized-view.svg)
+:::image type="content" source="../media/5-create-materialized-view.png" alt-text="Diagram showing materialized views refresh strategies." border="false" lightbox="../media/5-create-materialized-view.png":::
 
 To enable row tracking on your source tables:
 
