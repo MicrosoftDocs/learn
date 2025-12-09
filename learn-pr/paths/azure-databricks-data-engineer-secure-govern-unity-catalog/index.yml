@@ -13,6 +13,8 @@ prerequisites: |
   - Familiarity with SQL and data access patterns
   - Knowledge of Microsoft Entra ID and Azure security fundamentals
 summary: |
+  Learn to implement comprehensive security and governance for your data assets in Azure Databricks using Unity Catalog. Master access control strategies, fine-grained permissions, credential management, and governance practices to build a secure and compliant data platform.
+
   In this learning path, you'll learn how to secure and govern your data estate with Unity Catalog. You'll start by implementing robust security controls, including table and schema-level permissions, row filtering, and column masking. You'll discover how to manage credentials securely using Azure Key Vault, service principals, and managed identities. Then, you'll explore governance capabilities such as data lineage tracking, audit logging, and attribute-based access control. Finally, you'll learn to share data securely with external parties using Delta Sharing. By the end, you'll be equipped to build a secure, compliant, and well-governed data platform that meets enterprise requirements.
 iconUrl: /training/achievements/generic-trophy.svg
 levels:

@@ -14,12 +14,14 @@ prerequisites: |
   - Experience with Python programming and notebooks
   - Knowledge of Git version control fundamentals
 summary: |
-    By the end of this learning path, you'll be able to:
-    
-    - Design and implement robust data pipelines using notebooks and Lakeflow Declarative Pipelines
-    - Create and orchestrate Lakeflow Jobs with triggers, schedules, and error handling
-    - Apply version control and deploy pipelines across environments using Git and Databricks Asset Bundles
-    - Monitor, troubleshoot, and optimize data workloads for reliability and performance
+  Master the complete lifecycle of building, deploying, and maintaining production-ready data pipelines in Azure Databricks—from design and orchestration to monitoring and optimization.
+
+  By the end of this learning path, you'll be able to:
+  
+  - Design and implement robust data pipelines using notebooks and Lakeflow Declarative Pipelines
+  - Create and orchestrate Lakeflow Jobs with triggers, schedules, and error handling
+  - Apply version control and deploy pipelines across environments using Git and Databricks Asset Bundles
+  - Monitor, troubleshoot, and optimize data workloads for reliability and performance
 iconUrl: /training/achievements/generic-trophy.svg
 levels:
 - intermediate
