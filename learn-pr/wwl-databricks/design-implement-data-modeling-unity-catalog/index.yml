@@ -27,7 +27,7 @@ prerequisites: |
   * Basic understanding of Azure Databricks workspaces and Unity Catalog
   * Familiarity with SQL and data warehouse concepts
   * Knowledge of Delta Lake fundamentals
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/azure-databricks.svg
 levels:
   - intermediate
 roles:

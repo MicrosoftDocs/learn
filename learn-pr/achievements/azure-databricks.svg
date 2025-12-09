@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 101 101" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;">
+    <g id="Badges">
+        <g id="Data-engineering-with-Azure-Databricks" transform="matrix(1,0,0,1,-160,-320)">
+            <g id="Data-engineering-with-Azure-Databricks-describe-azure-databricks" serif:id="Data-engineering-with-Azure-Databricks/describe-azure-databricks" transform="matrix(1,0,0,1,160,320)">
+                <g id="Badge-Plates-Circle" serif:id="Badge-Plates/Circle">
+                    <g id="BG" transform="matrix(1,0,0,1,2.830189,2.830189)">
+                        <g>
+                            <path id="path-1" d="M94.34,47.17C94.34,73.204 73.204,94.34 47.17,94.34C21.136,94.34 0,73.204 0,47.17C0,21.136 21.136,0 47.17,0C73.204,0 94.34,21.136 94.34,47.17Z"/>
+                            <path d="M95.59,47.17C95.59,73.893 73.893,95.59 47.17,95.59C20.446,95.59 -1.25,73.893 -1.25,47.17C-1.25,20.446 20.446,-1.25 47.17,-1.25C73.893,-1.25 95.59,20.446 95.59,47.17Z" style="fill:none;stroke:rgb(242,241,240);stroke-width:2.5px;"/>
+                        </g>
+                        <defs>
+                            <mask id="Mask">
+                            
+                                <g id="Colors-Azure-BG-Solid-Badges" serif:id="Colors/Azure/BG-Solid-Badges" transform="matrix(1,-0,-0,1,-2.830189,-2.830189)"><image id="_Image2" width="101px" height="101px" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGUAAABlCAAAAABxF3ITAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADIElEQVRoge3aPU/bQBgH8L8dVA9t2gxNlFiqRCrB0sJWEFuZoAWpHQup6LeBoTNQMbcSb0PJQAUL8BUaOrEwFKdSMlA6NC8oTwfbIQl+uTv78VDx34iEfzr7cufc8wD/TzTZfzDyqLa4FH182DRNs2A+BlC3qpZlWeffO7JcUIzZTxZ5xFqfNWIiMotbV16EnauthUxkIvXhsO1P2GkfLqWiGNr8jzDCzum89CzqZvJEzCAiOplUM0Z3xQ0iop0ReSO3di2HELVXc5LIhOfMDYs1IYWUGioIUWNR3NBX1AwiohVdEEmX1RGivbQQ8vQ0CkJUKQogU/VoCFF9KnwkkRGiethoHka8XXYqwc8mFenB32QvcKZFmML9WQ5ASnEhRP5fzwnFb7xXGn6LTU5p7fKL1bt09uxyH6eDHpls0vf3vT4elV7qg9P23G924kWItj2QybgRotsTQJPY40VzfOuVYz5+hGhuAEnFsn4NpuLOYGfBKT3zn5PqeV7qV95zIICr2A8oUxtiUa6zlwDcsbzmQTD0Cj3KGx6ke2ENAIz6AyblT7YJOGOZ5kKQfomu8pYLcS+tAdB/FtgU60kH9ljG+RCYY3CUYT7EubgOwORUzDtFVWGcYkmNpQAAGmA0OBUYLUAH8qwICujulcxJ7I4165xIrQX7jlmcShWOUuVULFdhHcudoqyccyrnQJJvF50yG4JyB46Cr3yKfWn7DbYmdnQmn9432OY3JgT7TXQV7HEpzoV5fyW1s78BuGO5PGJBcGQj7l75mUf50v8n8y9xN4mcKiR0QpLMaU9CJ1cYYTyFu3nrO9vwn5Eq2Tjz/JjxdLQ3cZ70/vUvKy3GpwQVlRI5gYeeSDUB6UocSEhlBCjGUOWphdesEqlYAcWIN02o+pZQJRHQl9WRZYkfqklUeKFcrX4hhQC51dBOiMHIV94BjEhua9sKXQSAXEfEsVxpvzfanOAL1OmcencHgNTSQXinykG0ThUAQGZhM6jrZvPdo8iEHWNm/cKLuFibEesgEu6GGnO6obIAak43VEW0G0r6qd3L45d0Z9ddZPMPUxojWbXrO5oAAAAASUVORK5CYII="/>
+                                </g>
+                            </mask>
+                        </defs>
+                        <g mask="url(#Mask)">
+                            <g id="Rectangle">
+                                <rect id="path-5" x="0" y="0" width="94.34" height="94.34" style="fill:rgb(0,120,212);"/>
+                                <rect id="path-51" serif:id="path-5" x="0" y="0" width="94.34" height="94.34" style="fill:url(#_Linear1);"/>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="Border" transform="matrix(1,0,0,1,2.830189,2.830189)">
+                        <path id="Boarder" d="M47.17,0C73.221,0 94.34,21.119 94.34,47.17C94.34,73.221 73.221,94.34 47.17,94.34C21.119,94.34 0,73.221 0,47.17C0,21.119 21.119,0 47.17,0ZM47.17,3.774C23.203,3.774 3.774,23.203 3.774,47.17C3.774,71.137 23.203,90.566 47.17,90.566C71.137,90.566 90.566,71.137 90.566,47.17C90.566,23.203 71.137,3.774 47.17,3.774Z" style="fill:rgb(0,120,212);fill-rule:nonzero;"/>
+                        <defs>
+                            <mask id="Mask1">
+                            
+                                <g id="Colors-Azure-Border" serif:id="Colors/Azure/Border" transform="matrix(1,-0,-0,1,-2.830189,-2.830189)"><image id="_Image3" width="101px" height="101px" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGUAAABlCAAAAABxF3ITAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAE8ElEQVRoge2a3W8UVRiHf52WbiClCwmk3SmJayA23ih3FoXYkoiUhI8rC60l/AXgJdd8qHAPFLhFUZQiUkSjERT/gZJQ74CL9mzDFpK2yfaDbR8vZrbdpbOzM9uZvSD+rnbOvHOePR9z5pz3faU3R3VhH0i0anwuLor1fjpl27ad2iRpImOMMZmnjxbD4vyU6L6cwUPmcnciIsTGvh+mvRCOpm/0baxcR4Uea+jv+7ih6DpnTEYp215XVJb/69q1/CoodQe+etf9+erPB6PGmGmcG+tt297SuXuNe/ffk3fw55TXjodut0x+29PsZZDsuT7pmjzcUR2jfdB5fvTCJ43lrRr3XBh17G62h2e0DOQBeHLYqmRqHXkCQP5SS0hIxzgA2eM+zVhW4sQEAJmOUJCjcwC5M56j4aXk2RzAbH9wRv15gIUrdpg/1nZ1AeB8fUD75rsAz3eFYUjSrizAULD2bxsBGH4rLERKDwM83hrAdOdLgMGm8BCp6RbAi50VDbe9BDhVcfp6yzoN8KJSa5IjQO6z6hiS1DMDjPiPTf1dIBdu1r+mjhww5DvTzgOsoiWS1ANwzsfgKMCp1UGk0wDlX8+OOWCwyoFfljUIzJbr9pZxYLiqKVyqpmFgvMzSOQA8r+JlXKl0Frjkeas9DwuhlxVv7VqAvOf3ZhC4Eg1Eugrc9Cj/EMiFWoX9ZOeAlR/pun+AM1FBpLPAwxVblwNANvBHq7KSE8D+1wobRoDj0UGkE8DjhtKyY8CTqHajkqTEU+BYadkfwJEoIVIv8HtJycZXMLrqpaVU1hi82uD+liTta5BuR3pMkBZvSw37iikHJd2OFuJUeLDoOjENk4H2d2HUOAnTzoyyJGl3k3R3PmrK/C9SU9cy5ZBi6DCnykNLV1YG5iN87wtKzoNZmrnbgV+jh0i/Adslp8felvQgDsp9SekCJSVpNA7KmFu5LEm2JBMHxbiVv3GUlJSbjoMyNVM6Lqbq47qfMMttSWyKqcMkI21udCitkjKxUdSqwsoftyxpXO4YRS9bTvWWNDfhjlEslOy8Q5GR7NCexSCqs915ZUnKSOvWx0FpXuvOK7ct8XTZ0qLyplEykrbEQWlT0bg8ldQZB6VL0rPChWXi3l1YkhbvSGu6o6d0r5F+XixQ9JNK95oR6aBbtat4drCJKZgq2sHO3ZOaO6OmdK6X7s0tU1ZszyPRioNE3KckVzU58dXo9Fqbk3htvAo18pBE7O1p8/b21MhzVSMvXG08ihF7RzPlAksds9F4em8Bsx+Uvd8fndf6cx+DmnjgVT+0+mjCTMVogppHgFxP9ZCeGeBxpaXKifKcrjbKcyZQlEfa+WLVEauPAphudaJv6fCQ9KPA0TepeQggW2Uk8U7Qz0f9OYCFq9VERc8FjYpK6ncivGeTQR9IfulEeP1expVyo9UTJwLtBRJfuNHq8suKt1ouuZH3I5Uj771u5P1i2Mi7pPabADB6cY9fFsGnF8ccux/fCc+QijMirh/2HKHk4e8KGRF/+y5L/tkd+79eyu64f3/MGDPlZnc027bd1tVVyO4YOTnk6y6qlKnyeV9n8aZqxhgj27bXFpXlH3xTKVOlsjb03vDLuvm+d0PlOgIpsXfAeCHMwN5gu97A2VDvpVO2bafszZKyJmOMyTwLnA0V2v/S2KrxyEMC/+t1/Qff3lHCTs/NcAAAAABJRU5ErkJggg=="/>
+                                </g>
+                            </mask>
+                        </defs>
+                        <g mask="url(#Mask1)">
+                            <rect id="Rectangle1" serif:id="Rectangle" x="0" y="0" width="94.34" height="94.34" style="fill:rgb(39,192,245);"/>
+                        </g>
+                    </g>
+                </g>
+                <g id="Databrick" transform="matrix(1,0,0,1,20,17)">
+                    <g id="Lower" transform="matrix(1,0,0,1,4.477612,23.104478)">
+                        <path id="Rectangle-8" d="M50.833,13.864L50.837,13.862L50.837,23.18L25.418,37.046L25.418,27.733L50.837,13.867L50.833,13.864Z" style="fill:rgb(230,49,24);fill-rule:nonzero;"/>
+                        <path id="Rectangle-81" serif:id="Rectangle-8" d="M0,13.867L25.418,27.733L25.418,37.046L0,23.18L0,13.864L0,13.867Z" style="fill:rgb(204,39,31);fill-rule:nonzero;"/>
+                        <path id="Rectangle-82" serif:id="Rectangle-8" d="M0,13.867L25.418,0L50.837,13.867L25.418,27.733L0,13.867Z" style="fill:url(#_Linear4);fill-rule:nonzero;"/>
+                    </g>
+                    <g id="Top" transform="matrix(1,0,0,1,4.477612,4.477612)">
+                        <path id="Shadow" d="M0,24.613L0,20.376L50.837,20.376L50.837,24.613L25.418,38.479L0,24.613Z" style="fill-opacity:0.09;fill-rule:nonzero;"/>
+                        <path id="Rectangle-83" serif:id="Rectangle-8" d="M50.833,13.864L50.837,13.862L50.837,23.18L25.418,37.046L25.418,27.733L50.837,13.867L50.833,13.864Z" style="fill:rgb(230,49,24);fill-rule:nonzero;"/>
+                        <path id="Rectangle-84" serif:id="Rectangle-8" d="M0,13.867L25.418,27.733L25.418,37.046L0,23.18L0,13.864L0,13.867Z" style="fill:rgb(204,39,31);fill-rule:nonzero;"/>
+                        <path id="Rectangle-85" serif:id="Rectangle-8" d="M0,13.867L25.418,0L50.837,13.867L25.418,27.733L0,13.867Z" style="fill:url(#_Linear5);fill-rule:nonzero;"/>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+    <defs>
+        <linearGradient id="_Linear1" x1="0" y1="0" x2="1" y2="0" gradientUnits="userSpaceOnUse" gradientTransform="matrix(-167.470354,228.875635,-228.875635,-167.470354,73.424512,10.56579)"><stop offset="0" style="stop-color:white;stop-opacity:0.4"/><stop offset="1" style="stop-color:black;stop-opacity:0.2"/></linearGradient>
+        <linearGradient id="_Linear4" x1="0" y1="0" x2="1" y2="0" gradientUnits="userSpaceOnUse" gradientTransform="matrix(0,27.733023,-27.733023,0,25.418385,0)"><stop offset="0" style="stop-color:rgb(251,148,73);stop-opacity:1"/><stop offset="1" style="stop-color:rgb(246,91,35);stop-opacity:1"/></linearGradient>
+        <linearGradient id="_Linear5" x1="0" y1="0" x2="1" y2="0" gradientUnits="userSpaceOnUse" gradientTransform="matrix(0,27.733023,-27.733023,0,25.418385,0)"><stop offset="0" style="stop-color:rgb(251,148,73);stop-opacity:1"/><stop offset="1" style="stop-color:rgb(246,91,35);stop-opacity:1"/></linearGradient>
+    </defs>
+</svg>
