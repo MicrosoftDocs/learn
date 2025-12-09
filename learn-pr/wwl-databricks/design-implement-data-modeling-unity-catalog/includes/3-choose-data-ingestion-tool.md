@@ -4,6 +4,8 @@ When you design data pipelines in Azure Databricks, selecting the right ingestio
 
 Azure Databricks provides multiple ingestion options that span a spectrum from fully managed services to highly customizable frameworks. The tools you choose depend on factors such as your data source type, latency requirements, and how much control you need over the ingestion process.
 
+:::image type="content" source="../media/3-understand-ingestion-tool-landscape.png" alt-text="Diagram showing the ingestion tool landscape." border="false" lightbox="../media/3-understand-ingestion-tool-landscape.png":::
+
 At the most managed end, **Lakeflow Connect** offers turnkey connectors for enterprise applications and databases. These connectors handle authentication, change tracking, error recovery, and schema evolution automatically. At the customizable end, **Spark Structured Streaming** gives you complete control over how data flows through your pipeline, though it requires more development and maintenance effort.
 
 Between these extremes, you find tools like **Auto Loader** for cloud storage files, **COPY INTO** for SQL-based batch loading, and notebook-based approaches using **JDBC/ODBC** connections. Additionally, **Azure Data Factory** serves as an orchestration layer that can coordinate data movement into Databricks from the broader Azure ecosystem.
@@ -16,6 +18,8 @@ Lakeflow Connect represents the modern approach to data ingestion in Azure Datab
 
 **Standard connectors** extend Lakeflow Connect to cloud object storage and message buses. You can ingest data from Amazon S3, Azure Data Lake Storage, or Google Cloud Storage using Auto Loader. For real-time data, standard connectors support Apache Kafka, Google Pub/Sub, and Apache Pulsar.
 
+:::image type="content" source="../media/3-lakeflow-connect.png" alt-text="Diagram explaining lakeflow connect connectors." border="false" lightbox="../media/3-lakeflow-connect.png":::
+
 Consider Lakeflow Connect when you need reliable, low-maintenance ingestion from supported sources. The managed connectors significantly reduce development time and ongoing maintenance compared to custom solutions. However, if your data source isn't supported or you need highly specialized ingestion logic, you might need to explore other options.
 
 ## Auto Loader
@@ -23,6 +27,8 @@ Consider Lakeflow Connect when you need reliable, low-maintenance ingestion from
 Auto Loader provides incremental file processing for data arriving in cloud storage. Rather than scanning entire directories to find new files, Auto Loader efficiently tracks which files have been processed and ingests only new arrivals.
 
 Auto Loader works by maintaining state in a checkpoint location that tracks processed files. When new files land in your cloud storage, Auto Loader discovers them through either directory listing or file notification mode. Directory listing periodically scans for new files, while file notification mode uses cloud-native events for immediate detection.
+
+:::image type="content" source="../media/3-auto-loader.png" alt-text="Diagram explaining how Auto Loader works." border="false" lightbox="../media/3-auto-loader.png":::
 
 Key capabilities of Auto Loader include:
 
@@ -41,6 +47,8 @@ The `COPY INTO` SQL command loads data from cloud storage into Delta tables. Unl
 
 > [!NOTE]
 > The tracking metadata is stored as part of the Delta table's transaction log (the `_delta_log` directory)
+
+:::image type="content" source="../media/3-copy-into.png" alt-text="Diagram explaining how COPY INTO works." border="false" lightbox="../media/3-copy-into.png":::
 
 Common scenarios for `COPY INTO` include one-time data migrations, scheduled batch loads from landing zones, and SQL-first workflows where you prefer declarative syntax over streaming APIs. However, for ongoing incremental ingestion at scale, Auto Loader provides better performance and more robust file discovery.
 
@@ -86,11 +94,15 @@ Understanding ADF's appropriate role is important. Use ADF for:
 - **Initial data landing**: Moving data from Azure sources to cloud storage.
 - **Enterprise integration**: When company policy mandates ADF for data movement.
 
+:::image type="content" source="../media/3-azure-data-factory.png" alt-text="Diagram explaining how Azure Data Factory can be used together with Azure Databricks." border="false" lightbox="../media/3-azure-data-factory.png":::
+
 Avoid using ADF for core ETL transformations inside Databricks. Running transformations through ADF activities introduces unnecessary complexity and performs less efficiently than Databricks-native processing. Let ADF handle data movement into your lakehouse, then use Databricks tools for transformation logic.
 
 ## Apply a decision framework
 
 Selecting an ingestion tool becomes clearer when you evaluate your scenario against key decision criteria. 
+
+:::image type="content" source="../media/3-decision-framework.png" alt-text="Diagram showing decision framework for selecting data loading approach." border="false" lightbox="../media/3-decision-framework.png":::
 
 Start by identifying your data source type, then consider operational requirements and organizational context.
 
