@@ -1,0 +1,36 @@
+### YamlMime:LearningPath
+uid: learn.dpu.surface-for-business-accreditation-2025
+title: Surface for Business Accreditation 2025
+metadata:
+  title: Surface For Business Accreditation 2025
+  description: This Learning Path introduces Surface for Business solutions and how they help organizations thrive. Learn about the latest Surface for Business devices, how to choose the right models for different roles, modernizing confidently after Windows 10 end of support, and planning and managing deployment. This path is deal for IT decision makers, IT administrators, and business leaders guiding device strategy and rollout.
+  ms.date: 12/09/2025
+  author: ozahran7
+  ms.author: v-zahranomar
+  ms.topic: learning-path
+  ms.custom: CB102623
+summary: >
+  Explore how Surface for Business can transform organizations. Learn to choose the right devices, modernize after Windows 10 end of support, and deploy Surface efficiently for secure, productive work.
+prerequisites: None
+iconUrl: /training/achievements/surface-for-business-accreditation-2025.svg
+levels:
+  - beginner
+roles:
+  - administrator
+  - business-owner
+  - business-user
+  - technology-manager
+products:
+  - surface
+modules:
+  - learn.dpu.introduction-to-surface-laptop-13-inch
+  - learn.dpu.surface-business-snapdragon
+  - learn.dpu.introduction-to-surface-pro-12-inch
+  - learn.dpu.introduction-to-surface-pro-13-intel
+  - learn.dpu.introduction-to-surface-laptop-business
+  - learn.dpu.introduction-to-surface-laptop-business-intel
+  - learn.dpu.choose-best-surface-business
+  - learn.dpu.plan-manage-surface-business
+  - learn.dpu.modernize-surface-windows-10-end-of-support
+trophy:
+  uid: learn.dpu.surface-for-business-accreditation-2025.trophy
