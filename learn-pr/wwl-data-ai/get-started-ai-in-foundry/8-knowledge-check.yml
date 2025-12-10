@@ -1,0 +1,48 @@
+### YamlMime:ModuleUnit
+uid: learn.get-started-ai-in-foundry.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "This unit provides a knowledge check to assess your understanding of the concepts covered in the previous units. Test your knowledge of Azure and its capabilities for AI development."
+  ms.date: 12/8/2025
+  author: sherzyang
+  ms.author: sheryang
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+quiz:
+  questions:
+  - content: "Which statement best explains the relationship between AI and ML?"
+    choices:
+    - content: "AI and ML are interchangeable terms; both refer to systems that mimic human intelligence without distinction."
+      isCorrect: false
+      explanation: "AI and ML aren't interchangeable. AI is the broader concept, while ML is one of the primary techniques used to achieve AI."
+    - content: "ML focuses exclusively on generative tasks like creating text and images, whereas AI is limited to decision-making and planning."
+      isCorrect: false
+      explanation: "ML isn't limited to generative tasks. AI also encompasses more than decision-making—it includes perception, reasoning, and language understanding."
+    - content: "AI is the overarching goal of creating systems that exhibit human-like intelligence, while ML is a data-driven method used to achieve AI by learning patterns from data."
+      isCorrect: true
+      explanation: "AI aims to mimic human intelligence, and ML enables AI by using algorithms that learn from data without explicit programming."
+  - content: "What is the primary role of the Integration & Orchestration Layer in the AI application architecture?"
+    choices:
+    - content: "It provides compute resources for running AI workloads"
+      isCorrect: false
+      explanation: "The Compute Layer focuses on providing resources for hosting and executing AI workloads."
+    - content: "It connects models and data with business logic and user interfaces."
+      isCorrect: true
+      explanation: "The Integration & Orchestration Layer ensures smooth connectivity between models, data, and application logic."
+    - content: "It manages the collection, storage, and organization of data."
+      isCorrect: false
+      explanation: "The Data Layer handles data collection and storage, not integration or orchestration."
+  - content: "Which statement best describes how Azure organizes resources and access?"
+    choices:
+    - content: "Azure uses tenants for identity management, subscriptions for billing and service access, resource groups for organizing related resources, and resources as individual services like VMs or databases."
+      isCorrect: true
+      explanation: "The answer accurately reflects Azure’s hierarchy: tenants (identity), subscriptions (billing and access), resource groups (logical containers), and resources (individual services)."
+    - content: "Azure organizes resources only by subscriptions, which contain all services without further grouping or identity management."
+      isCorrect: false
+      explanation: "Subscriptions are part of the hierarchy, but Azure also uses tenants and resource groups for identity and organization."
+    - content: "Azure relies on tenants for compute and storage services, while subscriptions handle networking and application services."
+      isCorrect: false
+      explanation: "Tenants don't provide compute or storage services—they manage identity and access. Compute, storage, networking, and app services are delivered through resources within subscriptions."
+  
