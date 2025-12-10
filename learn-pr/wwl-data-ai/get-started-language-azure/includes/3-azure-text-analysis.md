@@ -59,11 +59,11 @@ You can identify the language in which text is written with Azure Language's lan
 
 For example, consider a scenario where you own and operate a restaurant. Customers can complete surveys and provide feedback on the food, the service, staff, and so on. Suppose you received the following reviews from customers:
 
-> **Review 1**: "*A fantastic place for lunch. The soup was delicious.*"
+> **Review 1**: *":::no-loc text="A fantastic place for lunch. The soup was delicious.":::"*
 >
-> **Review 2**: "*Comida maravillosa y gran servicio.*"
+> **Review 2**: *":::no-loc text="Comida maravillosa y gran servicio.":::"*
 >
-> **Review 3**: "*The croque monsieur avec frites was terrific. Bon appetit!*"
+> **Review 3**: *":::no-loc text="The croque monsieur avec frites was terrific. Bon appetit!":::"*
 
 You can use the text analytics capabilities in Azure Language to detect the language for each of these reviews; and it might respond with the following results:
 
