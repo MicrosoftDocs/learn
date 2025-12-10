@@ -7360,3 +7360,8 @@ achievements:
   title: Develop Java web app on Azure using IntelliJ
   summary: In this module, you'll learn to create a web app in IntelliJ and deploy the app to Azure by using Azure Toolkit for IntelliJ.
   iconUrl: /training/achievements/publish-a-web-app-to-azure-by-using-azure-toolkit-for-intellij.svg
+- uid: learn.intro-to-azure-data-factory.badge
+  type: badge
+  title: Introduction to Azure Data Factory
+  summary: Microsoft Azure Data Factory is a fully managed, serverless data integration service. It enables you to visually integrate data sources with more than 90 built-in, maintenance-free connectors.
+  iconUrl: /training/achievements/intro-to-azure-data-factory.svg
