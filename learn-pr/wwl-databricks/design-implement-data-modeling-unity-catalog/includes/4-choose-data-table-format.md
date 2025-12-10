@@ -6,6 +6,8 @@ Azure Databricks supports multiple storage formats, each designed for different 
 
 Before comparing options, it's important to distinguish between file formats and table formats. A **file format** like Parquet, CSV, or JSON defines how data is physically stored on disk. A **table format** like Delta Lake or Apache Iceberg builds on top of file formats by adding a metadata layer that tracks transactions, schema changes, and data file locations.
 
+:::image type="content" source="../media/4-file-formats-versus-table-formats.png" alt-text="Diagram explaining file formats versus table formats." border="false" lightbox="../media/4-file-formats-versus-table-formats.png":::
+
 Both Delta Lake and Apache Iceberg use Parquet as their underlying file format. The key difference lies in the metadata layer that enables advanced features like ACID transactions, time travel, and schema evolution.
 
 ## How Parquet stores data differently
@@ -15,6 +17,8 @@ Parquet uses **columnar storage** rather than row-based storage. This fundamenta
 In row-based formats like CSV, data is organized by record. Reading a single column requires scanning every row in the file. In columnar formats like Parquet, data for each column is stored together. When a query needs only specific columns, Parquet reads just those columns and skips the rest entirely.
 
 Parquet organizes data into **row groups**, each containing **column chunks**. Every column chunk stores statistics including minimum and maximum values for that data segment. When you execute a query with a filter condition, the query engine checks these statistics first. If the filter value falls outside the min/max range of a row group, the engine skips reading that entire section.
+
+:::image type="content" source="../media/4-parquet-file-layout.png" alt-text="Diagram explaining how parquet stores data differently." border="false" lightbox="../media/4-parquet-file-layout.png":::
 
 This columnar approach provides two optimization techniques that dramatically improve analytics performance:
 
@@ -44,6 +48,10 @@ For most scenarios in Azure Databricks, Delta Lake is the recommended choice. It
 ## Apache Iceberg for cross-platform scenarios
 
 Apache Iceberg is an alternative open table format that Azure Databricks supports for managed and foreign tables. Like Delta Lake, Iceberg provides ACID transactions, schema evolution, and time travel capabilities built on top of Parquet files.
+
+Iceberg's hierarchical and well-defined logical structure makes it highly flexible, supporting scalability and advanced optimizations. It supports manifest pruning, file-Level statistics, hidden partitioning and partition evolution.
+
+:::image type="content" source="../media/4-iceberg-layout.png" alt-text="Diagram explaining Apache Iceberg layout." border="false" lightbox="../media/4-iceberg-layout.png":::
 
 The primary reason to choose Iceberg is **interoperability**. Iceberg is widely adopted across the data ecosystem, including platforms like Snowflake, Amazon Athena, Trino, Apache Spark, and Apache Flink. If your organization runs workloads across multiple platforms that need to read and write the same tables, Iceberg provides a common format all platforms understand.
 

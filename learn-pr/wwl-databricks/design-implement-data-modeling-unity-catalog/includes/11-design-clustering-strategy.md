@@ -8,6 +8,8 @@ Before examining specific clustering techniques, it's important to understand th
 
 For example, if you query sales data for January 2026, and a particular file's statistics show it contains only records from March 2026, the engine skips that file entirely without reading its contents. This optimization happens automatically, but its effectiveness depends on how well your data is organized.
 
+:::image type="content" source="../media/11-understand-data-skipping-fundamentals.png" alt-text="Diagram explaining data skipping fundamentals." border="false" lightbox="../media/11-understand-data-skipping-fundamentals.png":::
+
 Data skipping becomes powerful when **related records are stored together** in the same files. If records for each month are scattered randomly across all files, the engine can't skip any files because each file contains records from every month. Clustering techniques exist to solve exactly this problem.
 
 ## Implement liquid clustering for new tables

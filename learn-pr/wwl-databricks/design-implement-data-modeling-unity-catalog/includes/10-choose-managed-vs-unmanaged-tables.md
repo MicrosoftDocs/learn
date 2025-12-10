@@ -41,6 +41,8 @@ The following table summarizes the key differences between managed and external 
 
 Choosing between managed and external tables depends on your specific requirements. Consider the following factors when making your decision.
 
+:::image type="content" source="../media/10-evaluate-decision-criteria.png" alt-text="Diagram explaining how to evaluate decision criteria." border="false" lightbox="../media/10-evaluate-decision-criteria.png":::
+
 ### Data ownership and lifecycle
 
 If Azure Databricks should fully control the data lifecycle, including automatic cleanup when tables are dropped, use a managed table. This approach simplifies data management and reduces storage costs over time.
