@@ -11,6 +11,8 @@ When your tables exceed **1 TB**, partitioning becomes a valuable optimization t
 > [!IMPORTANT]
 > Each partition should contain at least **1 GB** of data. This guideline helps you avoid over-partitioning, which creates excessive small files and degrades query performance.
 
+:::image type="content" source="../media/5-determine-when-partitioning-applies.png" alt-text="Diagram helping you to determine when partitioning applies." border="false" lightbox="../media/5-determine-when-partitioning-applies.png":::
+
 For very large tables in the hundreds of terabytes range, partitioning delivers even greater benefits. At this scale, partition pruning dramatically reduces the amount of data the query engine needs to process, improving both performance and cost efficiency.
 
 ## Choose effective partition keys
@@ -110,6 +112,8 @@ PARTITIONED BY (transaction_date);
 ## Avoid common partitioning mistakes
 
 Understanding what to avoid is as important as knowing what to do. Several common mistakes can significantly degrade performance and complicate data management.
+
+:::image type="content" source="../media/5-avoid-common-partition-mistakes.png" alt-text="Diagram explaining common partitioning mistakes." border="false" lightbox="../media/5-avoid-common-partition-mistakes.png":::
 
 ### Over-partitioning creates small file problems
 

@@ -16,6 +16,8 @@ Each approach serves different analytical needs. Sales reports that show "curren
 
 **SCD Type 0** represents the simplest approach: never update dimension attributes after the initial insert. The original values remain permanently, regardless of source system changes.
 
+:::image type="content" source="../media/6-slowly-changing-dimension-type-0.png" alt-text="Diagram explaining SCD type 0." border="false" lightbox="../media/6-slowly-changing-dimension-type-0.png":::
+
 This type works well for:
 
 - **True constants**: Birth dates, original registration dates, or founding dates that genuinely never change.
@@ -27,6 +29,8 @@ Type 0 is rarely used in isolation because most dimension attributes do change o
 ## SCD Type 1
 
 **SCD Type 1** overwrites the existing dimension record with new values. When Hank moves from Seattle to Portland, you update his row directly. The dimension table always reflects the current state of the source system.
+
+:::image type="content" source="../media/6-slowly-changing-dimension-type-1.png" alt-text="Diagram explaining SCD type 1." border="false" lightbox="../media/6-slowly-changing-dimension-type-1.png":::
 
 Type 1 is appropriate when:
 

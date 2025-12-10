@@ -8,7 +8,11 @@ In this unit, you explore the key design considerations for data ingestion logic
 
 ### Full extraction
 
-**Full extraction** reads the entire dataset from the source system during each ingestion run. This approach works well when:
+**Full extraction** reads the entire dataset from the source system during each ingestion run. 
+
+:::image type="content" source="../media/2-understand-extraction-types-full.png" alt-text="Diagram explaining full extraction." border="false" lightbox="../media/2-understand-extraction-types-full.png":::
+
+This approach works well when:
 
 - Source systems don't support change tracking
 - Data volumes are small enough to reprocess efficiently
@@ -19,7 +23,11 @@ Full extraction becomes impractical as data volumes grow. Reprocessing millions 
 
 ### Incremental extraction
 
-**Incremental extraction** processes only new or changed records since the last ingestion run. The engine tracks what data has been processed and queries only for updates. This pattern requires:
+**Incremental extraction** processes only new or changed records since the last ingestion run. The engine tracks what data has been processed and queries only for updates. 
+
+:::image type="content" source="../media/2-understand-extraction-types-incremental.png" alt-text="Diagram explaining incremental extraction." border="false" lightbox="../media/2-understand-extraction-types-incremental.png":::
+
+This pattern requires:
 
 - A reliable **change indicator** in the source data (timestamp, sequence number, or version column)
 - **State management** to track the last processed position
@@ -29,7 +37,11 @@ Incremental extraction significantly improves efficiency for large datasets. Ins
 
 ### Streaming extraction
 
-**Streaming extraction** provides **near real-time** data capture through continuous processing. Rather than running on a schedule, streaming jobs remain active and process records as they arrive. Consider streaming when:
+**Streaming extraction** provides **near real-time** data capture through continuous processing. Rather than running on a schedule, streaming jobs remain active and process records as they arrive. 
+
+:::image type="content" source="../media/2-understand-extraction-types-streaming.png" alt-text="Diagram explaining streaming extraction." border="false" lightbox="../media/2-understand-extraction-types-streaming.png":::
+
+Consider streaming when:
 
 - Business processes require data freshness measured in seconds or minutes
 - Source systems publish events to message buses or change feeds
@@ -40,6 +52,8 @@ Streaming extraction requires always-on infrastructure but delivers the lowest l
 ## Design for change data capture
 
 **Change data capture** (CDC) is a specialized extraction pattern that captures individual row-level changes, including inserts, updates, and deletes. CDC differs from simple incremental extraction because it preserves the operation type for each change.
+
+:::image type="content" source="../media/2-design-for-change-data-capture.png" alt-text="Diagram explaining change data capture." border="false" lightbox="../media/2-design-for-change-data-capture.png":::
 
 When designing for CDC, consider how your source system produces change records:
 
@@ -55,6 +69,8 @@ CDC enables use cases that simple incremental extraction can't support. You can 
 ## Identify source file type characteristics
 
 When data arrives as files rather than from transactional systems, the file format influences your ingestion design. Each format has distinct characteristics that affect processing.
+
+:::image type="content" source="../media/2-identify-source-file-type-characteristics.png" alt-text="Diagram explaining source file type characteristics." border="false" lightbox="../media/2-identify-source-file-type-characteristics.png":::
 
 ### Text-based formats
 
@@ -84,7 +100,7 @@ XML and nested JSON files represent hierarchical data that doesn't fit a flat ta
 - Determine whether to flatten the structure or preserve nesting.
 - Account for varying document structures within the same source.
 
-## Configure data source connections
+## Data source connection considerations
 
 Data source configuration defines how Azure Databricks connects to and authenticates with source systems. Your design must address connection security, credential management, and access patterns.
 
@@ -160,6 +176,8 @@ Enterprise applications like Salesforce, ServiceNow, or SAP expose data through 
 ## Apply a requirements-driven design framework
 
 Effective ingestion design starts with analyzing requirements before selecting extraction types or file formats. Use the following repeatable framework to guide your design decisions.
+
+:::image type="content" source="../media/2-apply-requirements-driven-design-framework.png" alt-text="Diagram explaining how to design effective ingestion" border="false" lightbox="../media/2-apply-requirements-driven-design-framework.png":::
 
 ### Step 1: Gather requirements
 

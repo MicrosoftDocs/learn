@@ -8,6 +8,8 @@ Granularity, sometimes called **"grain,"** describes the level of detail that ea
 
 Consider an IoT sensor data scenario. You could design your fact table at different levels of granularity:
 
+:::image type="content" source="../media/9-understand-what-granularity-represents.png" alt-text="Diagram explaining what granularity represents." border="false" lightbox="../media/9-understand-what-granularity-represents.png":::
+
 - **Millisecond-level granularity**: Each row represents a single sensor reading captured at the millisecond level. This captures the most detailed information, including precise timestamps, sensor values, and device identifiers for each measurement.
 
 - **Second aggregated granularity**: Each row represents the average, minimum, or maximum sensor value for a device per second. Individual readings are summarized into per-second statistics.
@@ -58,6 +60,8 @@ When compliance drives your granularity decision, document the requirements clea
 Fact tables benefit most from careful granularity decisions because they typically contain the **largest volumes of data**. The grain of a fact table is determined by the combination of its **dimension keys**.
 
 A sales fact table with dimension keys for date, product, customer, and store has a grain of "one row per product per customer per store per day." Every unique combination of these dimension values creates a distinct row. Adding a time dimension key at the hour level would change the grain to "one row per product per customer per store per hour," significantly increasing row counts.
+
+:::image type="content" source="../media/9-apply-granularity-fact-tables.png" alt-text="Table explaining how adding an hour dimension to a fact table, increases the number of rows." border="false" lightbox="../media/9-apply-granularity-fact-tables.png":::
 
 > [!IMPORTANT]
 > Declare your fact table grain explicitly before adding any columns. The grain statement serves as a contract that guides all subsequent design decisions. For example: "This fact table contains one row per sales order line item."
