@@ -8,7 +8,7 @@ Temporal tables and SCD Type 2 dimensions serve different purposes, though both 
 
 **Temporal (history) tables** capture technical changes for operational needs. When troubleshooting why data loaded incorrectly, you need to see exactly what values existed at each point in time, which files were processed, and when changes occurred. Temporal tables provide this forensic capability automatically.
 
-:::image type="content" source="../media/8-understand-temporal-tables-versus-scd-type-2.png" alt-text="Diagram explaining temporal tables versus SCD Type 2." border="false" lightbox="../media/8-understand-temporal-tables-versus-scd-type-2.png":::
+:::image type="content" source="../media/8-understand-temporal-tables-versus-slowly-changing-dimension-type-2.png" alt-text="Diagram explaining temporal tables versus SCD Type 2." border="false" lightbox="../media/8-understand-temporal-tables-versus-slowly-changing-dimension-type-2.png":::
 
 Consider using temporal tables when you need to:
 
