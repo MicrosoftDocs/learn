@@ -8,12 +8,13 @@ metadata:
   author: sherzyang
   ms.author: sheryang
   ms.date: 10/04/2025
-  ms.service: azure-ai-openai
+  ms.service: azure-ai-foundry
   ms.topic: module-intro-to-product
   ai-usage: ai-assisted
   ms.collection:
     - wwl-ai-copilot
   ms.custom: copilot-learning-hub, ai-learning-hub
+  ms.subservice: azure-ai-foundry-openai
 title: Introduction to generative AI and agents
 summary: "Generative AI powers applications that can create content, answer questions, and assist with tasks. In this module, you'll explore the fundamentals of generative AI, including large language models (LLMs), prompts, and AI agents."
 abstract: |
