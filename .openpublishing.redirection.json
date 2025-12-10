@@ -61073,6 +61073,41 @@
       "source_path": "learn-pr/azure/publish-web-app-with-maven-plugin-for-azure-app-service/index.yml",
       "redirect_url": "https://learn.microsoft.com/azure/developer/java/fundamentals/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-data-factory/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/fabric/data-factory/data-factory-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-data-factory/2-what-is-azure-data-factory.yml",
+      "redirect_url": "https://learn.microsoft.com/fabric/data-factory/data-factory-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-data-factory/3-how-azure-data-factory-works.yml",
+      "redirect_url": "https://learn.microsoft.com/fabric/data-factory/data-factory-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-data-factory/4-when-to-use-azure-data-factory.yml",
+      "redirect_url": "https://learn.microsoft.com/fabric/data-factory/data-factory-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-data-factory/5-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/fabric/data-factory/data-factory-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-data-factory/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/fabric/data-factory/data-factory-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-data-factory/index.yml",
+      "redirect_url": "https://learn.microsoft.com/fabric/data-factory/data-factory-overview",
+      "redirect_document_id": false
     }
   ]
 }
