@@ -18,7 +18,7 @@ Lakeflow Connect represents the modern approach to data ingestion in Azure Datab
 
 **Standard connectors** extend Lakeflow Connect to cloud object storage and message buses. You can ingest data from Amazon S3, Azure Data Lake Storage, or Google Cloud Storage using Auto Loader. For real-time data, standard connectors support Apache Kafka, Google Pub/Sub, and Apache Pulsar.
 
-:::image type="content" source="../media/3-lakeflow-connect.png" alt-text="Diagram explaining lakeflow connect connectors." border="false" lightbox="../media/3-lakeflow-connect.png":::
+:::image type="content" source="../media/3-lakeflow-connect.png" alt-text="Diagram explaining Lakeflow connect connectors." border="false" lightbox="../media/3-lakeflow-connect.png":::
 
 Consider Lakeflow Connect when you need reliable, low-maintenance ingestion from supported sources. The managed connectors significantly reduce development time and ongoing maintenance compared to custom solutions. However, if your data source isn't supported or you need highly specialized ingestion logic, you might need to explore other options.
 

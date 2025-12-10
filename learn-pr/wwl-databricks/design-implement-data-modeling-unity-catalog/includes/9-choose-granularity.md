@@ -61,7 +61,7 @@ Fact tables benefit most from careful granularity decisions because they typical
 
 A sales fact table with dimension keys for date, product, customer, and store has a grain of "one row per product per customer per store per day." Every unique combination of these dimension values creates a distinct row. Adding a time dimension key at the hour level would change the grain to "one row per product per customer per store per hour," significantly increasing row counts.
 
-:::image type="content" source="../media/9-apply-granularity-fact-tables.png" alt-text="Table explaining how adding an hour dimension to a fact table, increases the numer of rows." border="false" lightbox="../media/9-apply-granularity-fact-tables.png":::
+:::image type="content" source="../media/9-apply-granularity-fact-tables.png" alt-text="Table explaining how adding an hour dimension to a fact table, increases the number of rows." border="false" lightbox="../media/9-apply-granularity-fact-tables.png":::
 
 > [!IMPORTANT]
 > Declare your fact table grain explicitly before adding any columns. The grain statement serves as a contract that guides all subsequent design decisions. For example: "This fact table contains one row per sales order line item."
