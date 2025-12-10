@@ -15,7 +15,8 @@ AI applications require compute resources to train and run models. Microsoft pro
 - Azure Functions for serverless, event-driven execution of AI tasks.
 - Containers for scalable and portable deployment of AI models and services. *Azure Container Instances* (ACI) offers lightweight, serverless container execution, perfect for AI workloads needing rapid deployment and simple scaling. *Azure Kubernetes Service* (AKS) is a fully managed Kubernetes service that provides enterprise-level orchestration for AI workloads. 
 
->*Note*: Application programming interfaces (APIs) define the information that is required for one component to use the services of the other. APIs enable software components to communicate securely. 
+> [!NOTE] 
+> Application programming interfaces (APIs) define the information that is required for one component to use the services of the other. APIs enable software components to communicate securely. 
 
 ## Integration & Orchestration Layer
 The integration and orchestration layer connects models and data with business logic and user interfaces. Foundry plays a key role here by offering:
