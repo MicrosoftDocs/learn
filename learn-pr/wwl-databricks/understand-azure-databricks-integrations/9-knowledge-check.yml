@@ -27,7 +27,7 @@ quiz:
     - content: "Fabric creates a complete copy of all Unity Catalog data"
       isCorrect: false
       explanation: "Incorrect. Fabric creates OneLake shortcuts that point to the Delta tables without copying data."
-  - content: "Which authentication method is required when using serverless compute to write data from Databricks to OneLake?"
+  - content: "Which authentication method is required when using serverless compute to write data from Azure Databricks to OneLake?"
     choices:
     - content: "Microsoft Entra credential passthrough"
       isCorrect: false
@@ -59,7 +59,7 @@ quiz:
       explanation: "Correct. Databricks Connect creates a direct connection that allows the Python debugger in Visual Studio Code to control execution on the cluster, enabling breakpoints and variable inspection."
     - content: "By converting all Spark code to local pandas operations"
       isCorrect: false
-      explanation: "Incorrect. The code continues to run on Databricks compute using Spark APIs."
+      explanation: "Incorrect. The code continues to run on Azure Databricks compute using Spark APIs."
   - content: "What protocol does Microsoft Foundry use to connect AI agents with Azure Databricks Genie spaces?"
     choices:
     - content: "GraphQL"

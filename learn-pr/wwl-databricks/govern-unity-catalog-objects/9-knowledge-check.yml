@@ -67,7 +67,7 @@ quiz:
       explanation: "Incorrect. Databricks-to-Databricks sharing requires the recipient to have a Unity Catalog-enabled workspace."
     - content: "Open sharing with token authentication"
       isCorrect: true
-      explanation: "Correct. Open sharing with token authentication allows recipients without Databricks access to consume shared data using the open Delta Sharing protocol."
+      explanation: "Correct. Open sharing with token authentication allows recipients without Azure Databricks access to consume shared data using the open Delta Sharing protocol."
     - content: "OIDC federation with JWT tokens"
       isCorrect: false
       explanation: "Incorrect. OIDC federation is used to exchange tokens for short-lived Databricks OAuth tokens, but still requires integration with the recipient's identity provider."

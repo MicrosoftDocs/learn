@@ -1,6 +1,6 @@
 Power BI provides interactive visualizations and business intelligence capabilities. Integrating Power BI with Azure Databricks allows users to create reports and dashboards from Databricks-managed data. This integration supports multiple user roles, from data engineers to business analysts.
 
-The integration between Azure Databricks and Power BI works through **multiple connection methods**. You can connect Power BI Desktop to your compute resources, publish data directly from Databricks to the Power BI service, or orchestrate semantic model refreshes using Unity Catalog connections. Each method serves different scenarios and supports various authentication options.
+The integration between Azure Databricks and Power BI works through **multiple connection methods**. You can connect Power BI Desktop to your compute resources, publish data directly from Azure Databricks to the Power BI service, or orchestrate semantic model refreshes using Unity Catalog connections. Each method serves different scenarios and supports various authentication options.
 
 :::image type="content" source="../media/databricks-powerbi-integration.svg" alt-text="Diagram explaining the different Azure Databricks and Power BI integrations." border="false" lightbox="../media/databricks-powerbi-integration.svg":::
 
@@ -8,7 +8,7 @@ The integration between Azure Databricks and Power BI works through **multiple c
 
 Power BI Desktop is a Windows-based application that enables you to create interactive reports and dashboards. You can connect Power BI Desktop to both Azure Databricks **clusters** and **Databricks SQL warehouses**. **Use SQL warehouses with DirectQuery mode** for optimized query performance and built-in serverless scaling.
 
-The fastest way to establish a connection is through **Partner Connect**. From the Databricks workspace Marketplace, you select the Power BI tile, choose your compute resource, and download a connection file. This file opens Power BI Desktop with preconfigured connection settings. Alternatively, you can configure the connection manually by entering the **Server Hostname** and **HTTP Path** from your compute resource details.
+The fastest way to establish a connection is through **Partner Connect**. From the Azure Databricks workspace Marketplace, you select the Power BI tile, choose your compute resource, and download a connection file. This file opens Power BI Desktop with preconfigured connection settings. Alternatively, you can configure the connection manually by entering the **Server Hostname** and **HTTP Path** from your compute resource details.
 
 :::image type="content" source="../media/power-bi-desktop-partner-connect.svg" alt-text="Screenshot showing Azure Databricks Marketplace Power BI Desktop integration." border="false" lightbox="../media/power-bi-desktop-partner-connect.svg":::
 
@@ -23,9 +23,9 @@ Power BI Desktop also supports **native SQL queries** for compute-intensive oper
 
 ## Publish to the Power BI service from Azure Databricks
 
-The Power BI service is a cloud-based platform where you share reports and collaborate with your organization. Rather than connecting Power BI to Databricks, you can publish data **from** Databricks directly to the Power BI service. This workflow simplifies the publishing process by initiating it from the Databricks UI.
+The Power BI service is a cloud-based platform where you share reports and collaborate with your organization. Rather than connecting Power BI to Databricks, you can publish data **from** Azure Databricks directly to the Power BI service. This workflow simplifies the publishing process by initiating it from the Azure Databricks UI.
 
-To publish data, you use **Catalog Explorer** in your Databricks workspace. You select a schema or specific tables from Unity Catalog, then choose **Publish to Power BI workspace**. The publishing wizard authenticates you with Microsoft Entra ID and prompts you to select your target Power BI workspace, choose between DirectQuery and Import modes, and configure authentication settings.
+To publish data, you use **Catalog Explorer** in your Azure Databricks workspace. You select a schema or specific tables from Unity Catalog, then choose **Publish to Power BI workspace**. The publishing wizard authenticates you with Microsoft Entra ID and prompts you to select your target Power BI workspace, choose between DirectQuery and Import modes, and configure authentication settings.
 
 :::image type="content" source="../media/power-bi-service-partner-connect.svg" alt-text="Screenshot showing Azure Databricks Marketplace Power BI Service Integration." border="false" lightbox="../media/power-bi-service-partner-connect.svg":::
 
@@ -64,11 +64,11 @@ When upstream data updates complete successfully, the Power BI semantic model au
 
 The choice between integration methods depends on your workflow and requirements. **Use Power BI Desktop connections** when business analysts need to explore data interactively and build reports. Desktop provides a report authoring environment with drag-and-drop visualizations and the flexibility to combine multiple data sources.
 
-**Use publishing from Databricks to Power BI service** when you want to share curated datasets with specific governance and want to initiate sharing from the data engineering side. This method ensures that data engineers control which tables become available in Power BI and can document them with column descriptions that transfer automatically.
+**Use publishing from Azure Databricks to Power BI service** when you want to share curated datasets with specific governance and want to initiate sharing from the data engineering side. This method ensures that data engineers control which tables become available in Power BI and can document them with column descriptions that transfer automatically.
 
 **Orchestrate Power BI updates with data pipelines** when you need to automate semantic model refreshes as part of larger data pipelines. This approach coordinates Power BI updates with upstream data transformations, ensuring that reports refresh only after source data completes processing.
 
-For organizations with private network requirements, Power BI gateways enable secure connectivity without exposing Databricks endpoints publicly. You configure an on-premises or virtual network gateway with your Databricks connection details and authentication credentials. Power BI service routes queries through the gateway, which connects to your private Databricks workspace.
+For organizations with private network requirements, Power BI gateways enable secure connectivity without exposing Azure Databricks endpoints publicly. You configure an on-premises or virtual network gateway with your Azure Databricks connection details and authentication credentials. Power BI service routes queries through the gateway, which connects to your private Azure Databricks workspace.
 
 ## Security and governance considerations
 

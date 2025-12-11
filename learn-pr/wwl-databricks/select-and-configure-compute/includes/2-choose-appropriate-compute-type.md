@@ -4,7 +4,7 @@ Understanding these options helps you match compute resources to your specific n
 
 ## Serverless compute
 
-**Serverless compute** is managed entirely by Azure Databricks. You don't provision or configure infrastructure—Databricks automatically allocates and scales resources based on your workload demands. These resources run in **Databricks' Azure subscription, not yours**, which means no virtual machines or networking components appear in your subscription.
+**Serverless compute** is managed entirely by Azure Databricks. You don't provision or configure infrastructure—Azure Databricks automatically allocates and scales resources based on your workload demands. These resources run in **Databricks' Azure subscription, not yours**, which means no virtual machines or networking components appear in your subscription.
 
 With serverless compute, startup typically takes 2-6 seconds. The platform scales up rapidly when query volume increases and scales down during idle periods to minimize costs. This eliminates the need to estimate capacity or manage cluster configurations.
 
@@ -15,7 +15,7 @@ Serverless compute requires **Unity Catalog** and is available for:
 - **Pipelines**: Lakeflow Spark Declarative Pipelines with on-demand scaling
 - **SQL warehouses**: Optimized SQL query execution with intelligent workload management
 
-Serverless works best for exploratory analysis, ETL pipelines, business intelligence workloads, and scenarios where startup latency matters. The versionless runtime means Databricks automatically applies upgrades, so you always run on the latest features without migration effort.
+Serverless works best for exploratory analysis, ETL pipelines, business intelligence workloads, and scenarios where startup latency matters. The versionless runtime means Azure Databricks automatically applies upgrades, so you always run on the latest features without migration effort.
 
 However, serverless has limitations. You can't use **RDD APIs** (Resilient Distributed Dataset), **R language**, **JAR libraries** in notebooks, or custom Spark configurations. If your workload requires these capabilities, consider classic compute instead.
 
@@ -51,7 +51,7 @@ All SQL warehouse types optimize for SQL execution patterns, but serverless offe
 
 Pools reduce startup time from minutes to under a minute in many cases. You configure the minimum number of idle instances to keep warm and the maximum pool capacity. When clusters release instances, those instances return to the pool for reuse.
 
-You pay for virtual machine costs while instances sit idle in the pool, but not for Databricks compute units. This makes pools cost-effective when you run workloads frequently enough that the reduced startup time justifies the idle infrastructure cost.
+You pay for virtual machine costs while instances sit idle in the pool, but not for Azure Databricks compute units. This makes pools cost-effective when you run workloads frequently enough that the reduced startup time justifies the idle infrastructure cost.
 
 With serverless compute available, pools matter less for most scenarios. Serverless starts faster and scales more efficiently without requiring you to maintain idle capacity. However, pools remain useful when you need classic compute features and want to optimize startup time for frequently run workloads.
 

@@ -4,7 +4,7 @@ Microsoft Purview provides unified data governance across multiple sources, incl
 
 ## How the integration works
 
-The integration uses **metadata synchronization**. Purview reads metadata about databases, tables, columns, and relationships from Databricks without accessing actual data. This metadata is cataloged alongside other sources.
+The integration uses **metadata synchronization**. Purview reads metadata about databases, tables, columns, and relationships from Azure Databricks without accessing actual data. This metadata is cataloged alongside other sources.
 
 The process involves **registration** (establishing the connection and authentication) and **scanning** (extracting metadata at scheduled intervals or on demand).
 
@@ -18,7 +18,7 @@ Purview can scan metadata from both Hive Metastore and Unity Catalog, each offer
 
 Purview scans workspace-scoped Hive metastores to discover databases, tables, views, and column definitions. For external tables, it captures **storage relationships** between logical tables and physical storage locations.
 
-Hive metastore scanning captures **static lineage** from view definitions, showing dependencies between views and underlying tables. This requires a self-hosted integration runtime to connect to Databricks clusters.
+Hive metastore scanning captures **static lineage** from view definitions, showing dependencies between views and underlying tables. This requires a self-hosted integration runtime to connect to Azure Databricks clusters.
 
 > [!NOTE]
 > Hive Metastore scanning does not support incremental scanning. Each scan performs a full extraction, unlike Unity Catalog which supports incremental synchronization.
@@ -43,7 +43,7 @@ Limitations: Only transformations logged by Unity Catalog appear in lineage. Ext
 
 ### Unified data discovery
 
-Integration eliminates catalog fragmentation. Databricks tables appear in Purview alongside other data sources, enabling users to find all relevant data regardless of origin. This reduces duplication and improves collaboration.
+Integration eliminates catalog fragmentation. Azure Databricks tables appear in Purview alongside other data sources, enabling users to find all relevant data regardless of origin. This reduces duplication and improves collaboration.
 
 ### Consistent governance
 

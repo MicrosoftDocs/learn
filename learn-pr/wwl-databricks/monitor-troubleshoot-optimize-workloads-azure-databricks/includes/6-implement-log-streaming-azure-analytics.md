@@ -1,12 +1,12 @@
-When your Databricks environment grows beyond a single workspace, tracking what happens across clusters, jobs, and users becomes a challenge. **Log streaming to Azure Log Analytics** solves this by centralizing all your diagnostic and audit logs in one place, enabling powerful queries, alerts, and dashboards.
+When your Azure Databricks environment grows beyond a single workspace, tracking what happens across clusters, jobs, and users becomes a challenge. **Log streaming to Azure Log Analytics** solves this by centralizing all your diagnostic and audit logs in one place, enabling powerful queries, alerts, and dashboards.
 
 In this unit, you learn how log streaming works, how to query Databricks logs in Azure Log Analytics, and how to create alerts for proactive monitoring.
 
 ## Understand the log streaming architecture
 
-Log streaming sends **diagnostic data** from Azure Databricks to Azure Log Analytics in **near real-time**. This integration uses **Azure diagnostic settings**, which capture events from your Databricks workspace and route them to a Log Analytics workspace.
+Log streaming sends **diagnostic data** from Azure Databricks to Azure Log Analytics in **near real-time**. This integration uses **Azure diagnostic settings**, which capture events from your Azure Databricks workspace and route them to a Log Analytics workspace.
 
-Consider a typical scenario: Your organization runs multiple Databricks workspaces across different teams. Without **centralized logging**, investigating a failed job requires connecting to each workspace individually and searching through scattered logs. With log streaming configured, you query all events from a **single interface**.
+Consider a typical scenario: Your organization runs multiple Azure Databricks workspaces across different teams. Without **centralized logging**, investigating a failed job requires connecting to each workspace individually and searching through scattered logs. With log streaming configured, you query all events from a **single interface**.
 
 The data flow works as follows:
 
@@ -20,9 +20,9 @@ Platform administrators typically configure the diagnostic settings through the 
 > [!NOTE]
 > Diagnostic logs require the **Azure Databricks Premium plan**. Logs typically become available in Log Analytics within **15 minutes** of the event occurring.
 
-## Explore the Databricks log tables
+## Explore the Azure Databricks log tables
 
-Azure Log Analytics organizes Databricks logs into **purpose-specific tables**. Each table captures events from a particular service or feature, making it easier to focus your queries.
+Azure Log Analytics organizes Azure Databricks logs into **purpose-specific tables**. Each table captures events from a particular service or feature, making it easier to focus your queries.
 
 The most commonly used tables include:
 
@@ -49,7 +49,7 @@ Understanding these tables helps you target your queries efficiently. For job-re
 
 ## Query logs with Kusto Query Language
 
-**Kusto Query Language (KQL)** enables you to search, filter, and analyze your Databricks logs. You access Log Analytics by navigating to your workspace in the Azure portal and selecting **Logs** from the sidebar.
+**Kusto Query Language (KQL)** enables you to search, filter, and analyze your Azure Databricks logs. You access Log Analytics by navigating to your workspace in the Azure portal and selecting **Logs** from the sidebar.
 
 Start with a simple query to explore recent job events:
 
@@ -152,4 +152,4 @@ Log streaming transforms troubleshooting from **reactive investigation** to **sy
 
 **Cost attribution**: Combine cluster and job logs with Azure cost data to understand which teams or projects drive consumption.
 
-With logs centralized in Azure Log Analytics, you build comprehensive views of your Databricks environment. This visibility supports both day-to-day operations and long-term planning decisions.
+With logs centralized in Azure Log Analytics, you build comprehensive views of your Azure Databricks environment. This visibility supports both day-to-day operations and long-term planning decisions.

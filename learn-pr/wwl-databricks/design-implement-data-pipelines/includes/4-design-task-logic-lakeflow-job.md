@@ -108,7 +108,7 @@ target_catalog = dbutils.widgets.get("target_catalog")
 spark.sql(f"USE CATALOG {target_catalog}")
 ```
 
-Databricks provides **dynamic value references** that inject runtime context into parameters. For scheduled jobs, `{{job.trigger.time.iso_date}}` provides the trigger date. For backfill runs, `{{backfill.iso_datetime}}` supplies the backfill timestamp.
+Azure Databricks provides **dynamic value references** that inject runtime context into parameters. For scheduled jobs, `{{job.trigger.time.iso_date}}` provides the trigger date. For backfill runs, `{{backfill.iso_datetime}}` supplies the backfill timestamp.
 
 ## Select compute resources for tasks
 

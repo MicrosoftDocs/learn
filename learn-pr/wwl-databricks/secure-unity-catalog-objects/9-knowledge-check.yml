@@ -51,10 +51,10 @@ quiz:
       explanation: "Incorrect. Row and Column Security supports both read and write operations with security enforcement."
   - content: "What happens when a secret stored in Azure Key Vault is updated?"
     choices:
-    - content: "All Databricks clusters automatically pick up the new value immediately"
+    - content: "All Azure Databricks clusters automatically pick up the new value immediately"
       isCorrect: false
       explanation: "Incorrect. Clusters cache secret values and must be restarted to fetch updated values."
-    - content: "The secret scope in Databricks must be recreated to access the new value"
+    - content: "The secret scope in Azure Databricks must be recreated to access the new value"
       isCorrect: false
       explanation: "Incorrect. The secret scope itself doesn't need to be recreated."
     - content: "Clusters must be restarted to fetch the updated secret value"

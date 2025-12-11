@@ -6,7 +6,7 @@ Understanding how to install libraries effectively becomes critical as your data
 
 **Compute-scoped libraries** install on a cluster and become available to all notebooks and jobs that run on that cluster. Unlike **notebook-scoped libraries** that install only for a specific notebook session, compute-scoped libraries persist across cluster restarts and provide a shared environment for all users.
 
-When you install a library at the cluster level, Databricks automatically reinstalls it every time the cluster starts. This behavior ensures consistency—you don't need to manually reinstall dependencies after stopping and restarting a cluster. All notebooks attached to the cluster can import and use the installed packages immediately.
+When you install a library at the cluster level, Azure Databricks automatically reinstalls it every time the cluster starts. This behavior ensures consistency—you don't need to manually reinstall dependencies after stopping and restarting a cluster. All notebooks attached to the cluster can import and use the installed packages immediately.
 
 Compute-scoped libraries support **Python wheels**, **Java JAR files**, and **R packages**. You can install them from package repositories like **PyPI** and **Maven**, or from files stored in **workspace files**, **Unity Catalog volumes**, or cloud object storage. The installation method you choose depends on your library type, cluster access mode, and organizational security requirements.
 
@@ -16,7 +16,7 @@ However, compute-scoped libraries have an important limitation: any library you 
 
 **Package repositories** provide the most common way to install libraries. PyPI hosts Python packages, Maven hosts Java and Scala libraries, and **CRAN** hosts R packages. These repositories automatically handle **dependency resolution** and version management.
 
-To install a library from PyPI, select **PyPI** as the library source and enter the package name. For production workloads, specify an exact version to ensure reproducibility: `pymssql==2.3.9`. Without a version number, Databricks installs the latest available version, which might change between installations and potentially break your code.
+To install a library from PyPI, select **PyPI** as the library source and enter the package name. For production workloads, specify an exact version to ensure reproducibility: `pymssql==2.3.9`. Without a version number, Azure Databricks installs the latest available version, which might change between installations and potentially break your code.
 
 ![Screenshot of Azure Databricks Install library dialog (PyPI).](../media/install-library-python.png)
 
@@ -43,7 +43,7 @@ Unity Catalog volumes offer enhanced security and governance for library storage
 
 [![Screenshot showing a library uploaded to a volume in Unity Catalog.](../media/import-library-unity-catalog-small.png)](../media/import-library-unity-catalog-large.png#lightbox)
 
-Python **requirements.txt files** work with both workspace files and volumes in Databricks Runtime 15.0 and above. These files let you define multiple package dependencies in a single file, making it easier to maintain consistent environments across clusters. Upload the requirements.txt file and install it just like any other library—Databricks automatically installs all listed packages.
+Python **requirements.txt files** work with both workspace files and volumes in Databricks Runtime 15.0 and above. These files let you define multiple package dependencies in a single file, making it easier to maintain consistent environments across clusters. Upload the requirements.txt file and install it just like any other library—Azure Databricks automatically installs all listed packages.
 
 For clusters with standard access mode, you must add library file paths to the allowlist before installation. This applies to both workspace files and volumes, ensuring admins approve the libraries used on shared compute.
 
@@ -65,7 +65,7 @@ Clusters configured with **standard access mode** provide the strongest security
 
 Before installing Maven libraries or JAR files on standard access mode clusters, a **metastore admin** must add them to the allowlist. Maven coordinates go on the allowlist using the format `groupId:artifactId:version`. You can allowlist all versions of a library with `groupId:artifactId`, or all artifacts in a group with just `groupId`. For JAR files stored in volumes or object storage, allowlist the file path or directory path.
 
-Init scripts require separate allowlist entries even if stored in the same location as JAR files. When allowlisting a path, Databricks uses prefix matching—adding `/Volumes/prod-libraries/` to the allowlist permits all files and subdirectories within that location. Include a trailing slash to prevent unintended prefix matches at the directory level.
+Init scripts require separate allowlist entries even if stored in the same location as JAR files. When allowlisting a path, Azure Databricks uses prefix matching—adding `/Volumes/prod-libraries/` to the allowlist permits all files and subdirectories within that location. Include a trailing slash to prevent unintended prefix matches at the directory level.
 
 The allowlist only grants permission to use a path for library or init script installation. You still need appropriate data access permissions. For volumes, the installer identity must have `READ VOLUME` permission. For standard access mode, the cluster owner's identity validates these permissions during library installation.
 

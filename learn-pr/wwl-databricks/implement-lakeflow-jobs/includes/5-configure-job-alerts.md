@@ -63,7 +63,7 @@ To add task notifications:
 
 Task notifications are particularly valuable when your job contains multiple independent tasks. If Task A fails, you receive an immediate notification rather than waiting for the entire job to complete or fail.
 
-By default, Databricks retries failed tasks three times. If you don't want notifications for every retry attempt, select **Mute notifications until the last retry**. This reduces noise while still alerting you when a task ultimately fails.
+By default, Azure Databricks retries failed tasks three times. If you don't want notifications for every retry attempt, select **Mute notifications until the last retry**. This reduces noise while still alerting you when a task ultimately fails.
 
 ## Reduce notification noise
 
@@ -79,7 +79,7 @@ Alert fatigue undermines the value of notifications. When teams receive too many
 
 ## Monitor with HTTP webhooks
 
-When built-in integrations don't meet your needs, HTTP webhooks provide flexibility. Databricks sends a JSON payload to your endpoint when events occur, enabling custom processing, logging, or integration with internal systems.
+When built-in integrations don't meet your needs, HTTP webhooks provide flexibility. Azure Databricks sends a JSON payload to your endpoint when events occur, enabling custom processing, logging, or integration with internal systems.
 
 Webhook payloads include the event type, workspace ID, job information, and run details:
 

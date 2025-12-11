@@ -140,7 +140,7 @@ Lifecycle policies operate at the storage layer, while Delta Lake retention oper
 
 When implementing storage lifecycle policies with Delta Lake, you must account for how Delta Lake manages files:
 
-- **File creation time vs. modification time**: Databricks typically relies on file creation time for lifecycle management. Operations like `UPDATE`, `MERGE`, `DELETE`, and `OPTIMIZE` rewrite Parquet files, which resets their creation time and can delay archival.
+- **File creation time vs. modification time**: Azure Databricks typically relies on file creation time for lifecycle management. Operations like `UPDATE`, `MERGE`, `DELETE`, and `OPTIMIZE` rewrite Parquet files, which resets their creation time and can delay archival.
 
 - **Querying archived data**:
   - **Offline tiers (Archive)**: Querying files in offline tiers fails unless they're restored
@@ -156,7 +156,7 @@ To overcome these challenges and implement a cost-effective archival strategy:
 
 - **Define storage lifecycle policies**: Configure Azure Storage lifecycle management rules to move older files to cool or archive tiers based on their age (for example, move to Cool after 30 days, Archive after 365 days).
 
-- **Set the `delta.timeUntilArchived` property**: Configure this table property to match your storage lifecycle policy. This informs Databricks that files older than the specified period are archived, preventing the query optimizer from assuming they're immediately available.
+- **Set the `delta.timeUntilArchived` property**: Configure this table property to match your storage lifecycle policy. This informs Azure Databricks that files older than the specified period are archived, preventing the query optimizer from assuming they're immediately available.
   
     ```sql
     ALTER TABLE sales_data 
