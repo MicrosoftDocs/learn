@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.wwl.deploy-apps-azure-kubernetes-service
 metadata:
-  title: Deploy applications to Azure Kubernetes Service
+  title: Deploy Applications to Azure Kubernetes Service
   description: Learn how to deploy applications to Azure Kubernetes Service.
   ms.date: 12/11/2025
   author: jeffkoms
@@ -9,8 +9,8 @@ metadata:
   ms.topic: module-standard-task-based
   ai-usage: ai-assisted
   ms.service: azure-kubernetes-service
-title: Deploy applications in Azure Kubernetes Service
-summary: Learn how to deploy applications in Azure Kubernetes Service. This module covers creating deployment manifests, exposing applications with services, and deploying to Azure Kubernetes Service.
+title: Deploy applications to Azure Kubernetes Service
+summary: Learn how to deploy applications to Azure Kubernetes Service. This module covers creating deployment manifests, exposing applications with services, and deploying to Azure Kubernetes Service.
 abstract: |
   After completing this module, you'll be able to:
     - Create Kubernetes deployment manifests
