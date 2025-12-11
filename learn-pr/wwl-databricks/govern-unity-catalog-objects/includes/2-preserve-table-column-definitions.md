@@ -10,11 +10,11 @@ Consider the following example, where we add comments directly to columns as par
 
 ```sql
 CREATE TABLE sales.customers.profiles (
-    customer_id BIGINT COMMENT 'Unique identifier for each customer',
-    email STRING COMMENT 'Customer primary email address',
-    created_date DATE COMMENT 'Date when customer account was created',
-    preferences STRUCT<notifications: BOOLEAN, language: STRING> 
-        COMMENT 'Customer preference settings'
+    customer_id   BIGINT COMMENT 'Unique identifier for each customer',
+    email         STRING COMMENT 'Customer primary email address',
+    created_date  DATE   COMMENT 'Date when customer account was created',
+    preferences   STRUCT<notifications: BOOLEAN, language: STRING> 
+                         COMMENT 'Customer preference settings'
 );
 ```
 
@@ -52,6 +52,8 @@ Unity Catalog can automatically generate comments using AI-powered suggestions. 
 3. Review the suggested comment and select **Accept** or **Edit** to modify it.
 
 For column comments, select **AI generate** above the column list to generate suggestions for all columns.
+
+:::image type="content" source="../media/2-use-ai-generated-comments.png" alt-text="Screenshot of AI-generated comments" lightbox="../media/2-use-ai-generated-comments.png":::
 
 > [!IMPORTANT]
 > **AI-generated comments** are suggestions based on schema analysis. Always review these comments before saving, as AI models might generate inaccurate descriptions. Don't rely on AI comments for data classification tasks like detecting personally identifiable information (PII).

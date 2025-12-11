@@ -9,14 +9,16 @@ In this unit, you learn how to use governed tags and ABAC policies to implement 
 
 Governed tags differ from the standard tags you've already encountered. While standard tags help with organization and discovery, governed tags add enforcement and consistency at the account level. Administrators define governed tags with specific allowed values, and only authorized users can assign them.
 
+:::image type="content" source="../media/3-understand-governed-tags.png" alt-text="Diagram explaining standard and governed tags." border="false" lightbox="../media/3-understand-governed-tags.png":::
+
 Consider the following differences between tag types:
 
-| Aspect | Standard tags | Governed tags |
-|--------|---------------|---------------|
-| Scope | Any key-value pair | Predefined keys and allowed values |
-| Control | Any user with APPLY TAG privilege | Only users with ASSIGN permission |
-| Purpose | Organization and discovery | Policy enforcement and compliance |
-| Visual indicator | None | Lock icon in Catalog Explorer |
+| Aspect           | Standard tags                     | Governed tags                      |
+| ---------------- | --------------------------------- | ---------------------------------- |
+| Scope            | Any key-value pair                | Predefined keys and allowed values |
+| Control          | Any user with APPLY TAG privilege | Only users with ASSIGN permission  |
+| Purpose          | Organization and discovery        | Policy enforcement and compliance  |
+| Visual indicator | None                              | Lock icon in Catalog Explorer      |
 
 Governed tags serve as the foundation for ABAC policies. When you tag a table with `sensitivity=high`, you can then create a policy that masks certain columns for all tables with that tag. This approach scales efficiently because adding the tag to new tables automatically applies the policy.
 
@@ -25,6 +27,8 @@ Governed tags serve as the foundation for ABAC policies. When you tag a table wi
 To create a governed tag, select **Catalog** > **Governance** > **Governed Tags**, then select **Create governed tag**. Enter a tag key, an optional description, and define the allowed values. Only these predefined values can be assigned to objects with this tag key.
 
 For example, you might create a governed tag with key `pii` and allowed values `ssn`, `email`, and `address`. This ensures consistent classification of personally identifiable information across your organization.
+
+:::image type="content" source="../media/3-create-governed-tag.png" alt-text="Screenshot showing the create governed tag dialog box." lightbox="../media/3-create-governed-tag.png":::
 
 > [!NOTE]
 > Tag data is stored as plain text. Don't use tag names or values that contain sensitive information.
@@ -77,6 +81,8 @@ USING COLUMNS (addr);
 This policy applies the `filter_non_eu` function to any table in the `sales` catalog that has a column tagged with `pii=address`. The `analysts` group only sees rows where the function returns `TRUE`.
 
 You can also create policies using Catalog Explorer. Select the catalog or schema, choose the **Policies** tab, and select **New policy**. The visual interface guides you through selecting principals, scope, and conditions.
+
+:::image type="content" source="../media/3-create-policy.png" alt-text="Screenshot for creating policies using Catalog Explorer." lightbox="../media/3-create-policy.png":::
 
 ## Create column mask policies
 
@@ -139,6 +145,8 @@ Policy quotas limit how many policies you can create:
 - 5 policies per table
 
 Only one row filter can apply to any given table, and only one column mask can apply to any given column. If multiple policies would result in multiple filters or masks, Azure Databricks blocks access and throws an error.
+
+:::image type="content" source="../media/3-understand-policy-inheritance-scope.png" alt-text="Diagram explaining policy inheritance and scope." border="false" lightbox="../media/3-understand-policy-inheritance-scope.png":::
 
 > [!IMPORTANT]
 > You must use Databricks Runtime 16.4 or above, or serverless compute, to access tables secured by ABAC policies. Users not subject to the policy can use any runtime.
