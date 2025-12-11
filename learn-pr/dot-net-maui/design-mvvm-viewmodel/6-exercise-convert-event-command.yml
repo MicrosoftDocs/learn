@@ -5,7 +5,7 @@ metadata:
   title: Exercise - Convert an event handler to a command
   description: "Use the MenuItem's command instead of its `Clicked` event."
   ms.date: 01/08/2025
-  author: codemillmatt
+  author: jamesmontemagno
   ms.author: masoucou
   ms.topic: unit
   ms.custom: devx-track-dotnet

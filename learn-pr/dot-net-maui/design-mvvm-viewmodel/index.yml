@@ -4,7 +4,7 @@ metadata:
   title: Design an MVVM viewmodel for .NET MAUI
   description: Discover how the MVVM design pattern can help separate your business logic and user interface code. Learn about how viewmodels are designed and why they're so important.
   ms.date: 01/08/2025
-  author: codemillmatt
+  author: jamesmontemagno
   ms.author: masoucou
   manager: coxford
   ms.topic: module
