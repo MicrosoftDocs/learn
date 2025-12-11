@@ -185,7 +185,7 @@ kubectl describe node <node-name>
 
 ### Service Has No Endpoints
 
-**Symptom**: Service exists but `kubectl describe svc` shows "Endpoints: <none>"
+**Symptom**: Service exists but `kubectl describe svc` shows "Endpoints: \<none>"
 
 **Cause**: No Pods are matching the Service's selector—traffic has nowhere to go.
 
