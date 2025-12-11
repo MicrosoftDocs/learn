@@ -14,15 +14,15 @@ With Unity Catalog's three-layer hierarchy, understanding where volumes fit beco
 
 When you create a volume, you choose between **managed** and **external** volumes. This decision affects where your files are stored and what happens when you delete the volume.
 
-**Managed volumes** offer the simplest approach. Unity Catalog handles storage location and lifecycle management automatically. When you create a managed volume, Databricks stores files in the managed storage location associated with your schema. When you drop a managed volume, Unity Catalog marks the files for deletion after a seven-day retention period.
+**Managed volumes** offer the simplest approach. Unity Catalog handles storage location and lifecycle management automatically. When you create a managed volume, Azure Databricks stores files in the managed storage location associated with your schema. When you drop a managed volume, Unity Catalog marks the files for deletion after a seven-day retention period.
 
 **External volumes** provide governance for existing cloud storage locations. You specify the storage path when creating the volume, and the files remain in that location throughout the volume's lifecycle. When you drop an external volume, the files remain in cloud storage—only the Unity Catalog registration is removed.
 
 :::image type="content" source="../media/6-choose-between-managed-external-volumes.png" alt-text="Diagram explaining how to choose between managed and external volumes." border="false" lightbox="../media/6-choose-between-managed-external-volumes.png":::
 
-Consider managed volumes when you work exclusively within Databricks and want simplified storage management. Your data engineering pipelines can write files directly to volumes without worrying about underlying storage paths or credentials.
+Consider managed volumes when you work exclusively within Azure Databricks and want simplified storage management. Your data engineering pipelines can write files directly to volumes without worrying about underlying storage paths or credentials.
 
-Consider external volumes when you need to share data between Databricks and other systems. Perhaps your machine learning models must be accessed by external applications, or you need to add governance to files already produced by legacy systems. External volumes allow you to maintain existing storage locations while adding Unity Catalog's security controls.
+Consider external volumes when you need to share data between Azure Databricks and other systems. Perhaps your machine learning models must be accessed by external applications, or you need to add governance to files already produced by legacy systems. External volumes allow you to maintain existing storage locations while adding Unity Catalog's security controls.
 
 The technical implementation remains nearly identical regardless of your choice. You access files using the same path format, apply the same permissions, and use the same tools. The main difference lies in storage control and data lifecycle management.
 
@@ -64,7 +64,7 @@ After creation, your volume is ready to store files. The volume inherits permiss
 
 ## Access files in volumes
 
-Once you create a volume, you access files using a standard path format that works across all Databricks tools and languages. The path follows this pattern:
+Once you create a volume, you access files using a standard path format that works across all Azure Databricks tools and languages. The path follows this pattern:
 
 ```txt
 /Volumes/<catalog>/<schema>/<volume>/<path>/<filename>

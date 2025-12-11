@@ -109,7 +109,7 @@ For ingestion scenarios where you're appending raw data, the default `append` mo
 
 ## Control processing with triggers
 
-Triggers determine when and how frequently the streaming engine processes data. Databricks supports several trigger options:
+Triggers determine when and how frequently the streaming engine processes data. Azure Databricks supports several trigger options:
 
 | Trigger | Behavior |
 |---------|----------|

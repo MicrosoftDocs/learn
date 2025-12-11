@@ -4,6 +4,6 @@ Azure Databricks provides comprehensive tools for monitoring and troubleshooting
 
 Performance issues often trace back to common patterns: **data skew** that overloads a few tasks while others sit idle, **memory spill** that forces expensive disk operations, **excessive shuffle** that moves data unnecessarily across the network, or **caching problems** that cause repeated reads from remote storage. Understanding how to investigate these issues using the DAG visualization, Spark UI metrics, and query profiles helps you restore performance efficiently.
 
-For enterprise-scale environments, **log streaming to Azure Log Analytics** centralizes diagnostic and audit data from across your Databricks workspaces. This integration enables powerful KQL queries for troubleshooting, proactive alerting for critical events, and comprehensive visibility into platform operations.
+For enterprise-scale environments, **log streaming to Azure Log Analytics** centralizes diagnostic and audit data from across your Azure Databricks workspaces. This integration enables powerful KQL queries for troubleshooting, proactive alerting for critical events, and comprehensive visibility into platform operations.
 
 Throughout this module, you explore cluster consumption monitoring, Lakeflow Jobs troubleshooting, Spark job diagnostics, performance optimization techniques, and log streaming configuration to build the skills needed to keep your Azure Databricks workloads running reliably and cost-effectively.

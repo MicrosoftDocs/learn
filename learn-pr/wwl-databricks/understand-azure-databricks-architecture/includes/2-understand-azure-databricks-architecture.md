@@ -2,7 +2,7 @@ When you work with Azure Databricks as a data engineer, understanding its archit
 
 Azure Databricks uses a hierarchical structure that organizes resources from the account level down to individual data objects. This structure, combined with the separation between control and compute planes, provides flexibility and security for your data engineering workloads.
 
-## Databricks account hierarchy
+## Azure Databricks account hierarchy
 
 Azure Databricks organizes resources in a hierarchical structure that starts at the account level. The **account** is the top-level construct you use to manage Azure Databricks across your organization. At this level, you manage identity and access, create and configure workspaces, attach Unity Catalog metastores, and oversee billing and policies.
 

@@ -6,9 +6,9 @@ In this unit, you learn how to evaluate sharing protocols, implement security co
 
 Delta Sharing offers two primary protocols, each suited for different recipient scenarios. Your choice affects how authentication works and what assets you can share.
 
-**Databricks-to-Databricks sharing** is the preferred option when recipients have access to a Unity Catalog-enabled Databricks workspace. This protocol handles all security automatically through the platform. Recipients provide their **sharing identifier**—a string containing their metastore's cloud, region, and unique ID—and the connection establishes without token management. You can share tables, views, volumes, notebook files, and AI models through this approach.
+**Databricks-to-Databricks sharing** is the preferred option when recipients have access to a Unity Catalog-enabled Azure Databricks workspace. This protocol handles all security automatically through the platform. Recipients provide their **sharing identifier**—a string containing their metastore's cloud, region, and unique ID—and the connection establishes without token management. You can share tables, views, volumes, notebook files, and AI models through this approach.
 
-**Open sharing** works when recipients use platforms other than Databricks or lack access to Unity Catalog. You manage authentication by generating **bearer tokens** or configuring **OIDC (OpenID Connect) federation**. While more flexible, this approach requires careful token lifecycle management and supports only tabular data.
+**Open sharing** works when recipients use platforms other than Azure Databricks or lack access to Unity Catalog. You manage authentication by generating **bearer tokens** or configuring **OIDC (OpenID Connect) federation**. While more flexible, this approach requires careful token lifecycle management and supports only tabular data.
 
 Consider these factors when selecting your protocol:
 

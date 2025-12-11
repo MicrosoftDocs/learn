@@ -38,9 +38,9 @@ After configuring a task, select **Create task** to add it to your job.
 
 Tasks that run code (notebooks, Python scripts, SQL files) need a source location. You have three options for specifying where your code lives:
 
-**Workspace** stores code directly in your Databricks workspace. Use the file browser to navigate to your notebook or script, then confirm your selection. This option works well for development and simple workflows.
+**Workspace** stores code directly in your Azure Databricks workspace. Use the file browser to navigate to your notebook or script, then confirm your selection. This option works well for development and simple workflows.
 
-**Git provider** connects to a remote repository. You specify the repository URL, branch or tag, and the relative path to your file. All tasks in a job share the same Git reference, ensuring consistent code versions across the workflow. When you use Git, Databricks captures a snapshot of the code at run time, so your job executes against a specific commit.
+**Git provider** connects to a remote repository. You specify the repository URL, branch or tag, and the relative path to your file. All tasks in a job share the same Git reference, ensuring consistent code versions across the workflow. When you use Git, Azure Databricks captures a snapshot of the code at run time, so your job executes against a specific commit.
 
 **DBFS/ADLS** (for Python scripts) allows you to reference files stored in volumes or cloud storage. Provide the full URI, such as `abfss://container@storage.dfs.core.windows.net/path/script.py`.
 
@@ -48,7 +48,7 @@ Tasks that run code (notebooks, Python scripts, SQL files) need a source locatio
 
 Each task needs compute resources to execute. Azure Databricks offers several compute options optimized for different workloads.
 
-**Serverless compute** is the default for supported task types. Databricks manages the infrastructure, so you don't configure cluster settings. Serverless compute reduces operational overhead and scales automatically.
+**Serverless compute** is the default for supported task types. Azure Databricks manages the infrastructure, so you don't configure cluster settings. Serverless compute reduces operational overhead and scales automatically.
 
 **Classic jobs compute** gives you control over cluster configuration. You specify the Spark version, instance types, and autoscaling policies. Use classic compute when you need specific configurations or libraries not supported by serverless.
 

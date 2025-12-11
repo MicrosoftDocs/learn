@@ -1,6 +1,6 @@
 Collaborative development in Azure Databricks relies on effective **version control practices**. When multiple team members work on notebooks and code files simultaneously, you need a structured approach to **isolate changes**, **review code**, and **integrate work** without disrupting production workflows.
 
-Azure Databricks Git folders provide a visual Git client that integrates directly with your workspace. This integration lets you perform common Git operations—branching, committing, and merging—without leaving the Databricks environment.
+Azure Databricks Git folders provide a visual Git client that integrates directly with your workspace. This integration lets you perform common Git operations—branching, committing, and merging—without leaving the Azure Databricks environment.
 
 ## Create and manage branches
 
@@ -45,7 +45,7 @@ If you lack permission to commit directly to **protected branches** like `main`,
 
 A typical collaboration workflow follows these steps:
 
-1. Clone the repository to your Databricks workspace.
+1. Clone the repository to your Azure Databricks workspace.
 2. Create a feature branch from `main`.
 3. Make modifications to notebooks and files.
 4. Commit and push changes to the remote repository.

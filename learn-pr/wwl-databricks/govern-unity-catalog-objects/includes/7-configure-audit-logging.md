@@ -15,7 +15,7 @@ The audit log system table uses a consistent schema that includes the following 
 | `event_time`        | Timestamp when the action occurred                                     |
 | `event_date`        | Calendar date of the action                                            |
 | `user_identity`     | Identity of the user who initiated the action                          |
-| `workspace_id`      | The Databricks workspace in which the audit event took place           |
+| `workspace_id`      | The Azure Databricks workspace in which the audit event took place           |
 | `service_name`      | Service category (for example, `unityCatalog`, `notebook`, `clusters`) |
 | `action_name`       | Specific action performed (for example, `getTable`, `createTable`)     |
 | `request_params`    | Parameters included in the request                                     |

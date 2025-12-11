@@ -109,7 +109,7 @@ You can also navigate directly to a specific resource using the `bundle open` co
 databricks bundle open data_ingestion_job
 ```
 
-This command opens your browser to the resource in the Databricks workspace.
+This command opens your browser to the resource in the Azure Databricks workspace.
 
 ## Troubleshoot common deployment issues
 
@@ -121,7 +121,7 @@ Even with careful preparation, deployments sometimes encounter problems. Here ar
 databricks auth login --host https://adb-1234567890123456.7.azuredatabricks.net
 ```
 
-**Lock conflicts**: When a deployment is in progress, Databricks acquires a **lock** to prevent concurrent modifications. If a previous deployment was interrupted, you might see lock errors. Use the `--force-lock` flag to override.
+**Lock conflicts**: When a deployment is in progress, Azure Databricks acquires a **lock** to prevent concurrent modifications. If a previous deployment was interrupted, you might see lock errors. Use the `--force-lock` flag to override.
 
 ```bash
 databricks bundle deploy --force-lock
