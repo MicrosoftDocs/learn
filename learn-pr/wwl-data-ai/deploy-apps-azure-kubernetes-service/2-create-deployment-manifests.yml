@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.deploy-apps-azure-kubernetes-service.create-deployment-manifests
+title: Create Kubernetes deployment manifests
+metadata:
+  title: Creating Kubernetes Deployment Manifests
+  description: Create Kubernetes deployment manifests
+  ms.date: 12/11/2025
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: unit
+azureSandbox: false
+durationInMinutes: 15
+content: |
+  [!include[](includes/2-create-deployment-manifests.md)]

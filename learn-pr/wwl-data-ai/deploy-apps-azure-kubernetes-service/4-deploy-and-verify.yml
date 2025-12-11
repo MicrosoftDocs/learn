@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.deploy-apps-azure-kubernetes-service.deploy-and-verify
+title: Deploy applications to Azure Kubernetes Services
+metadata:
+  title: Deploy Applications to Azure Kubernetes Services
+  description: Deploy applications to Azure Kubernetes Services
+  ms.date: 12/11/2025
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: unit
+azureSandbox: false
+durationInMinutes: 15
+content: |
+  [!include[](includes/4-deploy-and-verify.md)]
