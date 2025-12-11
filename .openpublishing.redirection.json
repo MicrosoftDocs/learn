@@ -61143,6 +61143,41 @@
       "source_path": "learn-pr/azure/intro-to-azure-ml/index.yml",
       "redirect_url": "https://learn.microsoft.com/azure/machine-learning/overview-what-is-azure-machine-learning?view=azureml-api-2",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/ms-learn-live-migrating-to-the-cloud/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/aspnet/core/overview?view=aspnetcore-10.0",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/ms-learn-live-migrating-to-the-cloud/2-session-1-prep.yml",
+      "redirect_url": "https://learn.microsoft.com/aspnet/core/overview?view=aspnetcore-10.0",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/ms-learn-live-migrating-to-the-cloud/3-session-2-prep.yml",
+      "redirect_url": "https://learn.microsoft.com/aspnet/core/overview?view=aspnetcore-10.0",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/ms-learn-live-migrating-to-the-cloud/4-session-3-prep.yml",
+      "redirect_url": "https://learn.microsoft.com/aspnet/core/overview?view=aspnetcore-10.0",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/ms-learn-live-migrating-to-the-cloud/5-session-4-prep.yml",
+      "redirect_url": "https://learn.microsoft.com/aspnet/core/overview?view=aspnetcore-10.0",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/ms-learn-live-migrating-to-the-cloud/6-session-5-prep.yml",
+      "redirect_url": "https://learn.microsoft.com/aspnet/core/overview?view=aspnetcore-10.0",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/ms-learn-live-migrating-to-the-cloud/index.yml",
+      "redirect_url": "https://learn.microsoft.com/aspnet/core/overview?view=aspnetcore-10.0",
+      "redirect_document_id": false
     }
   ]
 }

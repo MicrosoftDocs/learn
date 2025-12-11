@@ -34,10 +34,10 @@ The most common DDL statements are:
 
 |Statement  | Description |
 |-|-|
-|:::no-loc text="CREATE"::: | Create a new object in the database, such as a table or a view. |
-|:::no-loc text="ALTER"::: |  Modify the structure of an object. For instance, altering a table to add a new column.  |
-|:::no-loc text="DROP"::: | Remove an object from the database. |
-|:::no-loc text="RENAME"::: | Rename an existing object. |
+| `CREATE` | Create a new object in the database, such as a table or a view. |
+| `ALTER` |  Modify the structure of an object. For instance, altering a table to add a new column.  |
+| `DROP` | Remove an object from the database. |
+| `RENAME` | Rename an existing object. |
 
 > [!WARNING]
 > The **DROP** statement is very powerful. When you drop a table, all the rows in that table are lost. Unless you have a backup, you won't be able to retrieve this data. 
@@ -66,9 +66,9 @@ The three main DCL statements are:
 
 | Statement | Description  |
 |-|-|
-| GRANT  | Grant permission to perform specific actions |
-| DENY  | Deny permission to perform specific actions  |
-| REVOKE  | Remove a previously granted permission |
+| `GRANT`  | Grant permission to perform specific actions |
+| `DENY`  | Deny permission to perform specific actions  |
+| `REVOKE`  | Remove a previously granted permission |
 
 For example, the following **GRANT** statement permits a user named *user1* to read, insert, and modify data in the **Product** table.
 
@@ -86,10 +86,10 @@ The four main DML statements are:
 
 | Statement | Description  |
 |-|-|
-| :::no-loc text="SELECT":::  | Read rows from a table |
-| :::no-loc text="INSERT":::  | Insert new rows into a table  |
-| :::no-loc text="UPDATE":::  | Modify data in existing rows |
-| :::no-loc text="DELETE":::  | Delete existing rows |
+| `SELECT`  | Read rows from a table |
+| `INSERT`  | Insert new rows into a table  |
+| `UPDATE`  | Modify data in existing rows |
+| `DELETE`  | Delete existing rows |
 
 The basic form of an **INSERT** statement will insert one row at a time. By default, the **SELECT**, **UPDATE**, and **DELETE** statements are applied to every row in a table. You usually apply a **WHERE** clause with these statements to specify criteria; only rows that match these criteria will be selected, updated, or deleted.
 

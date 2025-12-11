@@ -7370,3 +7370,8 @@ achievements:
   title: Introduction to Azure Machine Learning
   summary: Azure Machine Learning provides an environment to create and manage the end-to-end life cycle of Machine Learning models. Azure Machine Learning's compatibility with open-source frameworks and platforms like PyTorch and TensorFlow makes it an effective all-in-one platform for integrating and handling data and models. Azure Machine Learning is designed for all skill levels, with advanced MLOps features and simple no-code model creation and deployment.
   iconUrl: /training/achievements/intro-to-azure-ml.svg
+- uid:  learn.azure.ms-learn-live.badge
+  type: badge
+  title: Migrate an ASP.NET Core application from an on-premises environment into Azure
+  summary: You're a senior .NET developer working for a VanArsdel Ltd., a real estate business. VanArsdel has an experienced in-house development team and the technology stack is Microsoft's .NET. Interaction with your customers happens through the website that built with ASP.NET Core MVC and SQL Server and it's hosted on-premises. Management plans to expand the business. The expansion will lead to increased numbers of users hitting the current web application. You conclude the expansion plans require to scale-up hardware to handle increased workload and ensure fast response times. Because of high cost related to these investments, you consider a migration of the solution into the cloud. The positive experience with the Microsoft stack in the past makes you feel comfortable moving to Azure as your cloud provider and you expect a smooth transition. Pushing the application to Azure will help mitigate both, the cost and time factor of upgrading the on-premises solution.
+  iconUrl: /training/achievements/generic-badge.svg
