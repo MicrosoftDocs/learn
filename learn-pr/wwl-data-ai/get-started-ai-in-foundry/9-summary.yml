@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.get-started-ai-in-foundry.summary
+title: Summary
+metadata:
+  title: Summary
+  description: "This unit summarizes the key concepts covered in the previous units. Review the main points related to Azure and its capabilities for AI development."
+  ms.date: 12/8/2025
+  author: sherzyang
+  ms.author: sheryang
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/9-summary.md)]
