@@ -6,18 +6,20 @@ In this unit, you learn how to structure task dependencies, choose execution pat
 
 Lakeflow Jobs represent tasks and their relationships as a **Directed Acyclic Graph (DAG)**. Each task in the DAG can depend on one or more upstream tasks, creating a visual map of your workflow's execution order.
 
+:::image type="content" source="../media/4-understand-task-relationships.png" alt-text="Diagram explaining Directed Acyclic Graph in declarative pipelines and jobs." border="false" lightbox="../media/4-understand-task-relationships.png":::
+
 Consider a typical data processing workflow. You might have an ingestion task that loads raw data, followed by transformation tasks that clean and aggregate that data, and finally a task that publishes results. The dependencies between these tasks determine not just the order of execution, but also how failures propagate through your workflow.
 
 When you configure task dependencies, you choose from several dependency conditions:
 
-| Dependency condition | Behavior |
-|---------------------|----------|
-| All succeeded | Runs only when all upstream tasks complete successfully |
-| At least one succeeded | Runs when any upstream task succeeds |
-| None failed | Runs when no upstream tasks failed, even if some are skipped |
-| All done | Runs after all upstream tasks finish, regardless of outcome |
-| At least one failed | Runs only when at least one upstream task fails |
-| All failed | Runs only when all upstream tasks fail |
+| Dependency condition   | Behavior                                                     |
+| ---------------------- | ------------------------------------------------------------ |
+| All succeeded          | Runs only when all upstream tasks complete successfully      |
+| At least one succeeded | Runs when any upstream task succeeds                         |
+| None failed            | Runs when no upstream tasks failed, even if some are skipped |
+| All done               | Runs after all upstream tasks finish, regardless of outcome  |
+| At least one failed    | Runs only when at least one upstream task fails              |
+| All failed             | Runs only when all upstream tasks fail                       |
 
 These conditions give you control over task execution beyond simple sequential ordering. For example, you might configure a cleanup task with **All done** to ensure temporary resources are released regardless of whether earlier tasks succeeded.
 
@@ -27,13 +29,7 @@ Your choice between **serial** and **parallel execution** affects both runtime p
 
 Consider a scenario where you need to process data from three independent sources. If you design these as sequential tasks, your job waits for each source to complete before starting the next. With parallel execution, all three tasks run simultaneously.
 
-```
-Sequential design: Source A → Source B → Source C → Combine (Total: ~30 minutes)
-
-Parallel design:   Source A ─┐
-                   Source B ─┼─→ Combine (Total: ~15 minutes)
-                   Source C ─┘
-```
+:::image type="content" source="../media/4-design-task-execution-patterns.png" alt-text="Diagram showing task execution patterns." border="false" lightbox="../media/4-design-task-execution-patterns.png":::
 
 However, parallel execution requires more compute resources. When designing your task graph, balance parallelism against the compute capacity available in your workspace. Azure Databricks limits concurrent task runs per workspace, so highly parallel jobs might experience queuing during peak usage.
 
@@ -55,6 +51,8 @@ For example, suppose your data quality check produces a count of invalid records
 The condition expression might look like: `{{tasks.quality_check.values.invalid_count}} > 100`
 
 When the condition evaluates to true, tasks configured to depend on the true outcome execute. When false, the alternative path runs instead.
+
+:::image type="content" source="../media/4-add-conditional-logic-task-flows.png" alt-text="Screenshot of Azure Databricks tasks designer, highlighting if/else condition and Run if dependencies." border="false" lightbox="../media/4-add-conditional-logic-task-flows.png":::
 
 ### Run if conditions
 
@@ -86,6 +84,8 @@ dbutils.jobs.taskValues.set(key="regions_to_process", value=regions)
 
 The **For each** task then references `{{tasks.get_regions.values.regions_to_process}}` and runs its nested task three times—once for each region.
 
+:::image type="content" source="../media/4-iterative-processing.png" alt-text="Screenshot showing a For each task, referencing a task value from a preceding task." lightbox="../media/4-iterative-processing.png":::
+
 You control concurrency by setting how many iterations can run in parallel. Higher concurrency processes items faster but requires more compute resources.
 
 ## Configure parameters for flexibility
@@ -114,12 +114,12 @@ Databricks provides **dynamic value references** that inject runtime context int
 
 Each task type has recommended compute options that affect both capability and cost. Your task logic design should account for compute requirements:
 
-| Task type | Recommended compute |
-|-----------|-------------------|
-| Notebooks, Python scripts | Serverless jobs compute |
-| SQL queries and files | Serverless SQL warehouse |
+| Task type                      | Recommended compute         |
+| ------------------------------ | --------------------------- |
+| Notebooks, Python scripts      | Serverless jobs compute     |
+| SQL queries and files          | Serverless SQL warehouse    |
 | Lakeflow Declarative Pipelines | Serverless pipeline compute |
-| JAR and Spark Submit | Classic jobs compute |
+| JAR and Spark Submit           | Classic jobs compute        |
 
 Tasks within the same job can use different compute resources. A common pattern assigns SQL tasks to a SQL warehouse while notebook-based transformations run on jobs compute.
 

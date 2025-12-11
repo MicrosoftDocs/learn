@@ -1,8 +1,10 @@
 Data pipelines often require multiple notebooks to run in a specific sequence. When you build a pipeline using notebooks in Azure Databricks, you configure **task dependencies** that control the execution order. These dependencies ensure that each step completes before dependent steps begin.
 
-## Understand notebook tasks in Lakeflow Jobs
+## Add a notebook task to a Lakeflow Job
 
 A **notebook task** runs a Databricks notebook as part of a job workflow. You specify the notebook path, configure compute resources, and define any parameters the notebook requires. Multiple notebook tasks can be chained together to form a complete data pipeline.
+
+:::image type="content" source="../media/6-add-notebook-task-to-job.png" alt-text="Screenshot showing how to add a notebook task to a Lakeflow Job." lightbox="../media/6-add-notebook-task-to-job.png":::
 
 When you add notebook tasks to a job, each task appears as a node in a **Directed Acyclic Graph (DAG)**. The DAG provides a visual representation of your pipeline's execution flow, showing which tasks run first and which tasks depend on others.
 

@@ -113,6 +113,8 @@ The Lakeflow Pipelines Editor provides an integrated development environment for
 > [!NOTE]
 > The code examples in this unit are **pipeline definitions**, not interactive notebook code. You cannot run these statements directly in a regular notebook. The `pyspark.pipelines` module and streaming table DDL statements are only available within the Lakeflow pipeline runtime. To execute your pipeline code, use the **Dry run** feature to validate, then **run the pipeline** through the Jobs & Pipelines interface.
 
+:::image type="content" source="../media/7-lakeflow-pipeline-editor.png" alt-text="Screenshot of Azure Databricks Lakeflow Pipelines Editor" lightbox="../media/7-lakeflow-pipeline-editor.png":::
+
 The editor supports iterative development through several features:
 
 - **Dry run**: Validates your pipeline code without processing data, allowing you to catch syntax errors and missing dependencies before execution.

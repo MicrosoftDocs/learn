@@ -6,6 +6,8 @@ In this unit, you learn how to design error handling strategies for data pipelin
 
 Error handling in Azure Databricks operates at multiple levels, each addressing different failure scenarios. The platform handles **infrastructure-level issues** like cluster node failures automatically. Your responsibility as a data engineer focuses on **data-level errors** and **application logic failures**.
 
+:::image type="content" source="../media/5-understand-error-handling-responsibilities.png" alt-text="Diagram explaining error handling responsibilities." border="false" lightbox="../media/5-understand-error-handling-responsibilities.png":::
+
 Consider a typical ETL pipeline processing customer transactions. Errors can occur when:
 
 - Source data contains invalid formats or missing required fields
@@ -18,6 +20,8 @@ Each scenario requires a different response. Some errors warrant immediate pipel
 ## Define data quality expectations in declarative pipelines
 
 Lakeflow Declarative Pipelines provides built-in data quality constraints called **expectations**. These constraints validate records as data flows through your pipeline, giving you control over how to handle invalid data.
+
+:::image type="content" source="../media/5-define-data-quality-expectations.png" alt-text="Screenshot of the declarative pipeline editor, highlighting expectations." border="false" lightbox="../media/5-define-data-quality-expectations.png":::
 
 When a record fails validation, three actions determine what happens:
 
@@ -33,6 +37,8 @@ When a record fails validation, three actions determine what happens:
 ## Configure job-level error handling
 
 Lakeflow Jobs provides several mechanisms to handle task failures and ensure pipeline reliability. These settings work together to create resilient workflows.
+
+:::image type="content" source="../media/5-configure-job-level-error-handling.png" alt-text="Screenshot showing how to configure job-level error handling." lightbox="../media/5-configure-job-level-error-handling.png":::
 
 ### Set retry policies
 

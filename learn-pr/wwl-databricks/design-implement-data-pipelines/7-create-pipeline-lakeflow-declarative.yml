@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.design-implement-data-pipelines.create-pipeline-lakeflow-declarative
-title: Create pipeline with Lakeflow Pipelines
+title: Create pipeline with Lakeflow Declarative Pipelines
 metadata:
-  title: Create Pipeline with Lakeflow Pipelines
+  title: Create Pipeline with Lakeflow Declarative Pipelines
   description: Learn how to create data pipelines using Lakeflow Declarative Pipelines in Azure Databricks, including streaming tables, materialized views, and data quality expectations.
   ms.date: 12/07/2025
   author: weslbo

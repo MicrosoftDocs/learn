@@ -6,6 +6,8 @@ Notebooks execute code **step by step**. You control every aspect of data proces
 
 Lakeflow Declarative Pipelines work differently. Instead of specifying **how** to process data, you define **what** you want as the end result. You declare your **streaming tables** and **materialized views**, and the pipeline engine handles **orchestration**, **parallelization**, and **error recovery** automatically.
 
+:::image type="content" source="../media/3-understand-notebook-pipeline-approach.png" alt-text="Diagram explaining the two approaches when it comes to choosing notebooks or Lakeflow Declarative Pipelines." border="false" lightbox="../media/3-understand-notebook-pipeline-approach.png":::
+
 Consider a scenario where you need to ingest sales data, join it with product information, and calculate regional aggregates. With a notebook, you write explicit read, join, and aggregation commands in sequence. With Lakeflow Declarative Pipelines, you define the final tables and their relationships—the system determines the most efficient execution plan.
 
 ## When notebooks fit best
