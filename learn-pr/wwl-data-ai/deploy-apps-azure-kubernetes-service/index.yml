@@ -34,7 +34,7 @@ units:
 - learn.wwl.deploy-apps-azure-kubernetes-service.introduction
 - learn.wwl.deploy-apps-azure-kubernetes-service.create-deployment-manifests
 - learn.wwl.deploy-apps-azure-kubernetes-service.expose-applications
-- learn.wwl.deploy-apps-azure-kubernetes-service.deploy-to-aks
+- learn.wwl.deploy-apps-azure-kubernetes-service.deploy-and-verify
 - learn.wwl.deploy-apps-azure-kubernetes-service.module-assessment
 - learn.wwl.deploy-apps-azure-kubernetes-service.exercise-deploy-ai-api
 - learn.wwl.deploy-apps-azure-kubernetes-service.summary
