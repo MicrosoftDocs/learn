@@ -1,4 +1,4 @@
-You need to monitor the activity of the traffic flowing through your networks. Global Secure Access logs provide many data points you can review to gain insights into your network traffic. There are several specific logs you can get data for Global Secure Access.
+You need to monitor the activity of the traffic flowing through your networks. Global Secure Access logs provide many data points you can review to gain insights into your network traffic. There are several specific logs you can get data from Global Secure Access.
 
 ## Global Secure Access Audit logs (preview)
 
@@ -20,7 +20,7 @@ The Microsoft Entra audit log is a valuable source of information when researchi
 1. Open the Category filter, select at least one of the available options, and select Apply.
 
 ## Traffic logs (preview)
-The Global Secure Access traffic logs provide a summary of the network connections and transactions that are occurring in your environment. These logs look at who accessed what traffic from where, and with what result. The traffic logs provide a snapshot of all connections in your environment and breaks that down into traffic that applies to your traffic forwarding profiles. The logs details provide the traffic type destination, source IP, and more. To better understand those details, it's helpful to look at the three levels of the logs and their relationship to each other.
+The Global Secure Access traffic logs provide a summary of the network connections and transactions that are occurring in your environment. These logs look at who accessed what traffic from where, and with what result. The traffic logs provide a snapshot of all connections in your environment and categorizes traffic that applies to your traffic forwarding profiles. The logs details provide the traffic type destination, source IP, and more. To better understand those details, it's helpful to look at the three levels of the logs and their relationship to each other.
 
 A user accessing a website represents one session, and within that session there could be multiple connections, and within that connection there could be multiple transactions.
 
@@ -68,9 +68,9 @@ To enable the Enriched Microsoft 365 logs:
    - Stream to an event hub.
    - Send to partner solution.
 
-## Log Retention and Storage
-Traffic Logs and Remote Network Health Logs: These logs are retained within the system for 30 days. This duration allows for ample time to review and analyze recent activities and network health status.
+## Log retention and storage
+Traffic logs and remote network health logs: These logs are retained within the system for 30 days. This duration allows for ample time to review and analyze recent activities and network health status.
 
- - Audit Logs: The retention period for Audit Logs varies depending on your Microsoft Entra ID license.
- - Office Logs: Office Logs are maintained for a shorter duration, up to only 24 hours.
+ - Audit logs: The retention period for audit logs varies depending on your Microsoft Entra ID license.
+ - Office logs: Office logs are maintained for a shorter duration, up to only 24 hours.
 
