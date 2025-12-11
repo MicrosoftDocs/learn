@@ -2,6 +2,8 @@
 
 When you design a data pipeline in Azure Databricks, you typically follow a pattern that mirrors the **medallion architecture**: raw data flows through progressively refined layers until it's ready for consumption. This approach ensures that each stage builds on validated, well-structured data from the previous stage.
 
+:::image type="content" source="../media/2-design-order-operations-pipeline.png" alt-text="Diagram explaining the different stages of a medallion architecture." border="false" lightbox="../media/2-design-order-operations-pipeline.png":::
+
 ## Ingest data from source systems
 
 **Data ingestion** is the entry point of your pipeline. At this stage, you focus on capturing data from source systems and preserving it in its original form. The goal is **reliability** and **completeness**—you want to ensure that no data is lost during the transfer.
