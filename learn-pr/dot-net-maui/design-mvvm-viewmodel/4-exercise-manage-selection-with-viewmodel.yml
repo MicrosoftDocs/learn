@@ -5,8 +5,8 @@ metadata:
   title: Exercise - Manage selection by using a viewmodel
   description: "Add code to a viewmodel to help maintain selection state."
   ms.date: 01/08/2025
-  author: adegeo
-  ms.author: adegeo
+  author: codemillmatt
+  ms.author: masoucou
   ms.topic: unit
   ms.custom: devx-track-dotnet
   
