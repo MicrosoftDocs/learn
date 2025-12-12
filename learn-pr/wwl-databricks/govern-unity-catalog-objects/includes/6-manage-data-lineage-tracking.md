@@ -6,6 +6,8 @@ In this unit, you learn how to use Catalog Explorer to view and manage data line
 
 Unity Catalog automatically captures **runtime data lineage** across queries run on Azure Databricks. This lineage tracking works across all languages and captures relationships down to the **column level**. Lineage data includes the notebooks, jobs, and dashboards that interact with your tables.
 
+:::image type="content" source="../media/6-understand-lineage.png" alt-text="Screenshot of Unity Catalog lineage." lightbox="../media/6-understand-lineage.png":::
+
 Consider a scenario where a sales analytics dashboard suddenly shows incorrect revenue figures. With lineage tracking, you can trace back through the data flow to identify which upstream table or transformation caused the issue. This capability transforms troubleshooting from guesswork into a systematic investigation.
 
 Lineage is aggregated across all workspaces attached to a Unity Catalog metastore. When you capture lineage in one workspace, users in other workspaces that share the same metastore can view that lineage information. This **cross-workspace visibility** is particularly valuable for organizations with distributed data teams.
@@ -42,7 +44,7 @@ Beyond table relationships, Catalog Explorer shows which jobs and dashboards con
 
 This information supports impact analysis. Before modifying a table schema, you can identify which downstream jobs and dashboards might be affected.
 
-## Manage table ownership and permissions
+## Manage table ownership
 
 Every securable object in Unity Catalog has an **owner**. The owner has full privileges on the object and can grant permissions to other users. Understanding and managing ownership is essential for governance accountability.
 
@@ -53,6 +55,8 @@ To view or change ownership in Catalog Explorer:
 3. Select the edit icon next to **Owner**.
 4. Search for and select a user, group, or service principal.
 5. Select **Save**.
+
+:::image type="content" source="../media/6-manage-table-ownership.png" alt-text="Screenshot of the set owner dialog." lightbox="../media/6-manage-table-ownership.png":::
 
 Only the current owner or a **metastore admin** can transfer ownership. After transfer, the previous owner loses ownership privileges unless explicitly granted.
 
@@ -74,13 +78,13 @@ DESCRIBE HISTORY sales.customers.orders LIMIT 1;
 
 The history includes detailed information about each operation:
 
-| Column | Description |
-|--------|-------------|
-| `version` | Table version number |
-| `timestamp` | When the operation occurred |
-| `operation` | Type of operation (WRITE, UPDATE, DELETE, MERGE) |
-| `userName` | User who performed the operation |
-| `operationMetrics` | Metrics like rows affected and files modified |
+| Column             | Description                                      |
+| ------------------ | ------------------------------------------------ |
+| `version`          | Table version number                             |
+| `timestamp`        | When the operation occurred                      |
+| `operation`        | Type of operation (WRITE, UPDATE, DELETE, MERGE) |
+| `userName`         | User who performed the operation                 |
+| `operationMetrics` | Metrics like rows affected and files modified    |
 
 This history supports auditing and compliance by providing a complete record of who changed what and when.
 
