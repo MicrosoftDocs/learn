@@ -7340,3 +7340,38 @@ achievements:
   title: Deploy Azure Databricks models in Azure Machine Learning
   summary: You can use Azure Databricks to train machine learning models, and deploy the trained models in Azure Machine Learning endpoints.
   iconUrl: /training/achievements/deploy-azure-databricks-models-in-azure-machine-learning.svg
+- uid: learn.dotnet-maui.consume-rest-services.badge
+  type: badge
+  title: Consume REST web services in .NET MAUI apps
+  summary: Build a .NET Multi-platform App UI (MAUI) application that consumes a REST web service by using HttpClient and performs basic CRUD operations. In the app, you detect when your device is connected to the internet to provide a good user experience and take advantage of the native networking stacks to get top performance.
+  iconUrl: /training/achievements/consume-rest-web-services-dotnet-maui-app.svg
+- uid: learn.azure.capture-application-logs-app-service.badge
+  type: badge
+  title: Capture Web Application Logs with App Service Diagnostics Logging
+  summary: Use application logs in Azure Web Apps for debugging web app code.
+  iconUrl: /training/achievements/capture-application-logs-app-service.svg
+- uid: learn.azure.publish-app-with-maven-plugin-for-azure-web-apps.badge
+  type: badge
+  title: Develop Java web app on Azure using Maven
+  summary: Use the Maven plugin for Azure App Service to develop a Java web app and deploy the app to Azure.
+  iconUrl: /training/achievements/publish-app-with-maven-plugin-for-azure-web-apps.svg
+- uid: learn.azure.publish-azure-web-app-with-azure-toolkit-intellij.badge
+  type: badge
+  title: Develop Java web app on Azure using IntelliJ
+  summary: In this module, you'll learn to create a web app in IntelliJ and deploy the app to Azure by using Azure Toolkit for IntelliJ.
+  iconUrl: /training/achievements/publish-a-web-app-to-azure-by-using-azure-toolkit-for-intellij.svg
+- uid: learn.intro-to-azure-data-factory.badge
+  type: badge
+  title: Introduction to Azure Data Factory
+  summary: Microsoft Azure Data Factory is a fully managed, serverless data integration service. It enables you to visually integrate data sources with more than 90 built-in, maintenance-free connectors.
+  iconUrl: /training/achievements/intro-to-azure-data-factory.svg
+- uid: learn.azure.intro-to-azure-ml.badge
+  type: badge
+  title: Introduction to Azure Machine Learning
+  summary: Azure Machine Learning provides an environment to create and manage the end-to-end life cycle of Machine Learning models. Azure Machine Learning's compatibility with open-source frameworks and platforms like PyTorch and TensorFlow makes it an effective all-in-one platform for integrating and handling data and models. Azure Machine Learning is designed for all skill levels, with advanced MLOps features and simple no-code model creation and deployment.
+  iconUrl: /training/achievements/intro-to-azure-ml.svg
+- uid:  learn.azure.ms-learn-live.badge
+  type: badge
+  title: Migrate an ASP.NET Core application from an on-premises environment into Azure
+  summary: You're a senior .NET developer working for a VanArsdel Ltd., a real estate business. VanArsdel has an experienced in-house development team and the technology stack is Microsoft's .NET. Interaction with your customers happens through the website that built with ASP.NET Core MVC and SQL Server and it's hosted on-premises. Management plans to expand the business. The expansion will lead to increased numbers of users hitting the current web application. You conclude the expansion plans require to scale-up hardware to handle increased workload and ensure fast response times. Because of high cost related to these investments, you consider a migration of the solution into the cloud. The positive experience with the Microsoft stack in the past makes you feel comfortable moving to Azure as your cloud provider and you expect a smooth transition. Pushing the application to Azure will help mitigate both, the cost and time factor of upgrading the on-premises solution.
+  iconUrl: /training/achievements/generic-badge.svg

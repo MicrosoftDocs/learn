@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-started-ai-in-foundry.exercise
+title: Exercise - Explore AI in Microsoft Foundry
+metadata:
+  title: Exercise - Explore AI in Microsoft Foundry
+  description: "This unit provides hands-on experience with Microsoft Foundry. Complete the exercises to reinforce your understanding of the concepts covered in the previous units."
+  ms.date: 12/8/2025
+  author: sherzyang
+  ms.author: sheryang
+  ms.topic: unit
+durationInMinutes: 20
+content: |
+  [!include[](includes/7-exercise.md)]

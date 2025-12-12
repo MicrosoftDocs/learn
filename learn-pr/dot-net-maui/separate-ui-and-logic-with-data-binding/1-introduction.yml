@@ -5,8 +5,8 @@ metadata:
   title: Introduction
   description: Move app logic to objects that are bound to the apps UI. Data bindings can make your code faster to read, easier to maintain, and more testable.
   ms.date: 04/16/2025
-  author: adegeo
-  ms.author: adegeo
+  author: jamesmontemagno
+  ms.author: masoucou
   ms.topic: unit
 durationInMinutes: 2
 content: |

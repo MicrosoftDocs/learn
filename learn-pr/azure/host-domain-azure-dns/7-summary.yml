@@ -5,10 +5,9 @@ metadata:
   title: Summary
   description: Summary
   ms.date: 10/03/2024
-  author: greg-lindsay
-  ms.author: greglin
+  author: kumud
+  ms.author: kumud
   ms.topic: unit
 durationInMinutes: 2
 content: |
   [!include[](includes/7-summary.md)]
-
