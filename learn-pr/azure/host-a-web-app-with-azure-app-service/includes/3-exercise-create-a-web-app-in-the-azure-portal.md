@@ -19,10 +19,10 @@ Sign in to the [Azure portal](https://portal.azure.com?azure-portal=true) using 
     | Setting | Value | Details |
     |---|---|---|
     | **Project Details** |
-    | Subscription | Concierge Subscription | The web app you're creating must belong to a resource group. Here, you select the Azure subscription to which the resource group belongs (or is going to belong, if you're creating it within the wizard). |
-    | Resource Group | Select <rgn>[Sandbox resource group]</rgn> | The resource group to which the web app belongs. All Azure resources must belong to a resource group. |
+    | Subscription | Select your Azure subscription | The web app you're creating must belong to a resource group. Here, you select the Azure subscription to which the resource group belongs. |
+    | Resource Group | Select **Create new** and enter a name like **myResourceGroup** | The resource group to which the web app belongs. All Azure resources must belong to a resource group. |
     | **Instance Details** |
-    | Name | *Enter a unique name* | The name of your web app. This name becomes part of the app's URL: *appname*.azurewebsites.net. The name you choose must be unique among all Azure web apps. |
+    | Name | *Enter a name* | The name of your web app. This name becomes part of the app's URL: *appname*-*hash*.*region*.azurewebsites.net. |
     | Publish | Code | The method you want to use to publish your application. When publishing an application as code, you must also configure **Runtime stack** to prepare App Service resources to run your app. |
     | Runtime stack | .NET 8 (LTS) | The platform on which your application is going to run. Your choice might affect whether you have a choice of operating system - for some runtime stacks, App Service supports only one operating system. |
     | Operating System | Linux | The operating system used on the virtual servers to run your app. |
