@@ -4,11 +4,10 @@ metadata:
   title: Summary
   description: Summary
   ms.date: 04/24/2025
-  author: greg-lindsay
-  ms.author: greglin
+  author: kumud
+  ms.author: kumud
   ms.topic: unit
 title: Summary
 durationInMinutes: 2
 content: |
   [!include[](includes/7-summary.md)]
-
