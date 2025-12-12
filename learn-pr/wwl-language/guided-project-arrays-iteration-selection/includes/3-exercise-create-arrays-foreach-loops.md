@@ -149,7 +149,7 @@ In this task, you review the code that's provided as a Starter project for this 
     The `dotnet run` command instructs the compiler to build your application and then, as long as there were no build errors, it runs your compiled code.
 
     > [!IMPORTANT]
-    > The Starter project targets .NET 8 (in the Starter.csproj file). If you don't have .NET 8 installed, the `dotnet run` command will generate an error. You can either install the .NET 8 SDK (recommended), or you can change the target framework in the Starter.csproj file to align with the version of .NET that you have installed in your environment.
+    > The Starter project targets .NET 10 (in the Starter.csproj file). If you don't have .NET 10 installed, the `dotnet run` command will generate an error. You can either install the .NET 10 SDK (recommended), or you can change the target framework in the Starter.csproj file to align with the version of .NET that you have installed in your environment.
 
 1. Verify that your application produced the following output:
 

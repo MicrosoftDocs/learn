@@ -35,7 +35,7 @@ To install the C# Dev Kit extension for Visual Studio Code, complete the followi
     This extension should install in 30-40 seconds. When the installation is complete, the Install button changes to Installed.
 
     > [!NOTE]
-    > You may see notifications appear when installing the C# Dev Kit extension. Ignore the notification asking you to "log in", and close the notification telling you "The .NET Core SDK cannot be located". You install the .NET SDK in the next unit.
+    > You may see notifications appear when installing the C# Dev Kit extension. Ignore the notification asking you to "log in", and close the notification telling you "The .NET SDK cannot be located". You install the .NET SDK in the next unit.
 
 1. Close the Get Started with C# Dev Kit page in the Editor.
 

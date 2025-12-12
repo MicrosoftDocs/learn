@@ -29,9 +29,9 @@ quiz:
       explanation: "Correct. The name attribute specifies the display name for the configuration. The value assigned to name appears in the controls panel at the top of the RUN AND DEBUG view."
   - content: "A developer is working on a launch configuration. What is the **preLaunchTask** attribute used for?"
     choices:
-    - content: "To specify the path of the application dll or .NET Core host executable to launch."
+    - content: "To specify the path of the application dll or .NET host executable to launch."
       isCorrect: false
-      explanation: "Incorrect. The **program** attribute specifies the path of the application dll or .NET Core host executable to launch."
+      explanation: "Incorrect. The **program** attribute specifies the path of the application dll or .NET host executable to launch."
     - content: "To specify a task to run before debugging your program."
       isCorrect: true
       explanation: "Correct. The **preLaunchTask** attribute specifies a task to run before debugging the program. The task itself can be found in the tasks.json file, which is in the `.vscode` folder along with the launch.json file. Specifying a prelaunch task of **build** runs a `dotnet build` command before launching the application."

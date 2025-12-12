@@ -7,9 +7,9 @@ A code debugger can be used to pause and resume code execution, examine variable
 > [!NOTE]
 > Debugger interaction with the runtime environment is an advanced topic. In addition, understanding how the debugger works behind the scenes isn't a requirement for using the debugger. However, the following description may satisfy your curiosity.
 
-The Visual Studio Code debugger for C# uses the .NET Core runtime to launch and interact with an application. When you start the debugger, it creates a new instance of the runtime and runs the application within that instance. The runtime includes an application programming interface (API), which the debugger uses to attach to the running process (your application).
+The Visual Studio Code debugger for C# uses the .NET runtime to launch and interact with an application. When you start the debugger, it creates a new instance of the runtime and runs the application within that instance. The runtime includes an application programming interface (API), which the debugger uses to attach to the running process (your application).
 
-Once your application is running and the debugger is attached, the debugger communicates with the running process using the .NET Core runtime's debugging APIs and a standard debug protocol. The debugger can interact with the process (the application running within the .NET runtime instance) by setting breakpoints, stepping through code, and inspecting variables. Visual Studio Code's debugger interface enables you to navigate the source code, view call stacks, and evaluate expressions.
+Once your application is running and the debugger is attached, the debugger communicates with the running process using the .NET runtime's debugging APIs and a standard debug protocol. The debugger can interact with the process (the application running within the .NET runtime instance) by setting breakpoints, stepping through code, and inspecting variables. Visual Studio Code's debugger interface enables you to navigate the source code, view call stacks, and evaluate expressions.
 
 The most common way to specify a debug session is a launch configuration in the launch.json file. This approach is the default option enabled by the debugger tools. For example, if you create a C# console application and select **Start Debugging** from the **Run** menu, the debugger uses this approach to launch, attach to, and then interact with your application.
 
@@ -144,7 +144,7 @@ The **Run** menu includes the option to start a debug session.
 
 1. Notice the messages about loading .NET resources and your Debug101 application.
 
-    The first two messages report loading the .NET Core library and then your Debug101 application.
+    The first two messages report loading the .NET library and then your Debug101 application.
 
     ```output
     Loaded 'C:\Program Files\dotnet\shared\Microsoft.NETCore.App\7.0.4\System.Private.CoreLib.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
@@ -183,7 +183,7 @@ During the remainder of this module, you'll use the Visual Studio Code debugger 
 
 Here are a few important things to remember from this unit:
 
-- The Visual Studio Code debugger for C# uses the .NET Core runtime to launch and interact with an application.
+- The Visual Studio Code debugger for C# uses the .NET runtime to launch and interact with an application.
 - The Visual Studio Code **Run** menu has options to start an application with and without the debugger attached.
 - The **Debug toolbar** includes a button to **Stop** a running process.
 - The RUN AND DEBUG view includes an option to start debugging an application.
