@@ -28,7 +28,7 @@ The deployment takes a few minutes, during which time you get status output. Whe
 
 ```output
 Deployment has completed successfully
-You can visit your app at: http://<app-name>-<hash>.<region>.azurewebsites.net
+You can visit your app at: http://<app-name-with-suffix>.azurewebsites.net
 ```
 
 ## Verify the deployment
@@ -59,7 +59,7 @@ When the command finishes running, you see an output message like this:
 
 ```output
 Deployment has completed successfully
-You can visit your app at: http://<app-name>-<hash>.<region>.azurewebsites.net
+You can visit your app at: http://<app-name-with-suffix>.azurewebsites.net
 ```
 
 In a new tab, navigate to the URL in the output. You get the greeting message from your app. You deployed successfully!
