@@ -5,8 +5,8 @@ metadata:
   title: What is Azure DNS?
   description: What is Azure DNS?
   ms.date: 10/03/2024
-  author: greg-lindsay
-  ms.author: greglin
+  author: kumud
+  ms.author: kumud
   ms.topic: unit
 durationInMinutes: 7
 content: |
@@ -47,4 +47,3 @@ quiz:
     - content: SOA
       isCorrect: false
       explanation: The SOA record is the start of authority for your domain. It's used by other DNS servers to resolve your domain.
-

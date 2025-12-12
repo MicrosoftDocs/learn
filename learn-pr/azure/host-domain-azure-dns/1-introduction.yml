@@ -5,10 +5,9 @@ metadata:
   title: Introduction
   description: Learn how to configure Azure DNS to host your Domain Name System (DNS) records for your domains on Azure infrastructure.
   ms.date: 10/03/2024
-  author: greg-lindsay
-  ms.author: greglin
+  author: kumud
+  ms.author: kumud
   ms.topic: unit
 durationInMinutes: 2
 content: |
   [!include[](includes/1-introduction.md)]
-
