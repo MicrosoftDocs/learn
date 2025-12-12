@@ -110,7 +110,7 @@ You learned how to describe the benefits and usage of:
 - [Upstream sources in Azure Artifacts](/azure/devops/artifacts/concepts/upstream-sources) - Guidance on configuring and using upstream sources.
 - [Azure Artifacts credential provider](/azure/devops/artifacts/npm/npmrc) - Setup and configuration for credential providers.
 - [Package retention and deletion](/azure/devops/artifacts/how-to/delete-and-recover-packages) - Managing package lifecycle and storage.
-- [Azure Artifacts REST API](/rest/api/azure/devops/artifacts/) - Programmatic access to Azure Artifacts features.
+- [Azure Artifacts REST API](/rest/api/azure/devops/artifacts/artifact-details) - Programmatic access to Azure Artifacts features.
 
 ### Community and support
 

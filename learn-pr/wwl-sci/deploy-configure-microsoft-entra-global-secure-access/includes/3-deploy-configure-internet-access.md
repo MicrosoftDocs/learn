@@ -6,18 +6,18 @@ There are four main steps for getting Microsoft Entra Internet Access deployed w
 | :--- | :--- |
 | 1. Enable the Microsoft traffic forwarding profile. | With the Microsoft profile enabled, Microsoft Entra Internet Access acquires the traffic going to Microsoft services, like Exchange Online and SharePoint Online. |
 | 2. Install the Global Secure Access Client on end-user devices. | Download and install the client app to capture and control access from the client. |
-| 3. Enable tenant restrictions. | Configure which tenants / organizations are allowed to blocked |
+| 3. Enable tenant restrictions. | Configure which tenants / organizations are allowed or blocked |
 | 4. Enable enhanced Global Secure Access signaling and Conditional Access. | Use Conditional Access and Global Secure Access to prevent attacks. |
 
 ## Enable Microsoft traffic forwarding profile
 
-:::image type="content" source="../media/traffic-profile-enabled.png" alt-text="Screenshot of the Microsoft traffic profile enabled. Enables 3 traffic policies, a conditional access policy, and user - group assignment.":::
+:::image type="content" source="../media/traffic-profile-enabled.png" alt-text="Screenshot of the Microsoft traffic profile enabled. Enables three traffic policies, a conditional access policy, and user - group assignment.":::
 
 1. Sign in to the Microsoft Entra admin center as a Global Secure Access Administrator.
 1. Browse to Global Secure Access > Connect > Traffic forwarding.
 1. Enable the Microsoft traffic profile.
 
-Turns on Microsoft traffic forwarding and create the following configurations in Microsoft Entra:
+Turns on Microsoft traffic forwarding and creates the following configurations in Microsoft Entra:
 
 | Configuration Setup | Description |
 | :--- | :--- |
@@ -25,7 +25,7 @@ Turns on Microsoft traffic forwarding and create the following configurations in
 | Conditional Access Policy | **Linked Conditional Access policies** - Captures all traffic to Microsoft Services, routes to the network policies defined earlier if conditions are met. |
 | User and Group | Specify specific users or groups that this traffic forward applies to. |
 
-Refer to the documentation article for more details - [Enable and manage Microsoft traffic forwarding](/entra/global-secure-access/how-to-manage-microsoft-profile).
+For more information, refer to [Enable and manage Microsoft traffic forwarding](/entra/global-secure-access/how-to-manage-microsoft-profile).
 
 ## Deploy Global Secure Access client for Windows (or Android)
 
@@ -68,14 +68,14 @@ Once you created the tenant restriction policies, you can utilize Global Secure 
 
 #### How it works
 
-:::image type="content" source="../media/tenant-restrictions-flow.png" alt-text="Diagram of the process flow of how tenant restrictions work. Request comes in from a tenant, the tenant is compared to the restriction policy.":::
+:::image type="content" source="../media/tenant-restrictions-flow.png" alt-text="Diagram of the process flow of how tenant restrictions work. Request comes in from a tenant. The tenant is compared to the restriction policy.":::
 
 | Steps | Description |
 | :--- | :--- |
-| 1. | Contoso configures a **tenant restrictions v2 ** policy in their cross-tenant access settings to block all external accounts and external apps. Contoso enforces the policy using Global Secure Access universal tenant restrictions. |
+| 1. | Contoso configures a **tenant restrictions v2** policy in their cross-tenant access settings to block all external accounts and external apps. Contoso enforces the policy using Global Secure Access universal tenant restrictions. |
 | 2. | A user with a Contoso-managed device tries to access a Microsoft Entra integrated app with an unsanctioned external identity. |
 | 3. | Authentication plane protection: Microsoft Entra ID, with Contoso's policy, blocks unsanctioned external accounts from accessing external tenants. |
-| 4. | Data plane protection: If the user again tries to access an external unsanctioned application by copying an authentication response token they obtained outside of Contoso's network and pasting it into the device, are blocked. The token mismatch triggers reauthentication and blocks access. For SharePoint Online, any attempt at anonymously accessing resources is blocked. |
+| 4. | Data plane protection: If the user again tries to access an external unsanctioned application by copying an authentication response token they obtained outside of Contoso's network and pasting it into the device, the user is blocked. The token mismatch triggers reauthentication and blocks access. For SharePoint Online, any attempt at anonymously accessing resources is blocked. |
 
 ## Enable enhanced Global Secure Access signaling and Conditional Access
 Organizations who use Conditional Access along with the Global Secure Access, can prevent malicious access to Microsoft apps, SaaS apps, and private line-of-business (LoB) apps. You can configure multiple conditions to provide defense-in-depth. These conditions might include device compliance, location, and more to provide protection against user identity or token theft. Global Secure Access introduces the concept of a compliant network within Conditional Access. This compliant network check ensures users connect from a verified network connectivity.
@@ -83,19 +83,19 @@ Organizations who use Conditional Access along with the Global Secure Access, ca
 The Global Secure Access Client installed on devices or users behind configured remote networks allows administrators to secure resources behind a compliant network with advanced Conditional Access controls. This compliant network feature makes it easier for administrators to manage and maintain, without having to maintain a list of all of an organization's locations IP addresses. Administrators don't need to push traffic through their organization's VPN egress points to ensure security. Continuous Access Evaluation (CAE) with the compliant network feature is currently supported for SharePoint Online. With CAE, you can enforce defense-in-depth with token theft replay protection.
 
 #### Enable Global Secure Access signaling
-1. Sign into the Microsoft Entra admin center as a Global Secure Access Administrator.
-1. Browse to Global Secure Access > Global settings > Session management Adaptive access.
+1. Sign in to the Microsoft Entra admin center as a Global Secure Access Administrator.
+1. Browse to Global Secure Access > Global settings > Session management > Adaptive access.
 1. Select the toggle to Enable Global Secure Access signaling in Conditional Access.
 1. Browse to Protection > Conditional Access > Named locations.
 
    Confirm you have a location called All Compliant Network locations with location type Network Access. Organizations can optionally mark this location as trusted.
 
 #### Build your Conditional Access policy for networks
-1. Sign into the Microsoft Entra admin center as at least a Conditional Access Administrator.
+1. Sign in to the Microsoft Entra admin center as at least a Conditional Access Administrator.
 1. Browse to Protection > Conditional Access.
 1. Select Create new policy.
 1. Give your policy a name. We recommend that organizations create a meaningful standard for the names of their policies.
-1. Look at Assignments, then select Users or workload identities.
+1. Under Assignments, select Users or workload identities.
    - Under Include, select All users.
    - Under Exclude, select Users and groups and choose your organization's emergency access or break-glass accounts.
 1. Review Target resources > Include, and select Select apps.

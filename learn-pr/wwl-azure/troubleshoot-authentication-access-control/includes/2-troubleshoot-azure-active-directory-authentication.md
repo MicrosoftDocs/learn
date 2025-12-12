@@ -79,7 +79,7 @@ If you're setting up a cloud application such as Office 365, the steps are strai
 
 If you've an application that you've developed in-house, you can register it when you add the application or register it in Enterprise Applications, in the **Microsoft Entra Admin Center**. For more information, see [Quickstart: Add an enterprise application](/azure/active-directory/manage-apps/add-application-portal).
 
-If you want to combine an on-premises application with Microsoft Entra security, you should connect it using [Microsoft Entra application proxy](/azure/active-directory/app-proxy/application-proxy).
+If you want to combine an on-premises application with Microsoft Entra security, you should connect it using [Microsoft Entra application proxy](/entra/identity/app-proxy/overview-what-is-app-proxy).
 
 ### Managing access to apps in Azure
 

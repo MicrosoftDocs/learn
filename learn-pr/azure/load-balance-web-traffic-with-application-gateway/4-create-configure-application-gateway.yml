@@ -4,11 +4,10 @@ metadata:
   title: Application Gateway creation and configuration
   description: Describe how to create and configure Application Gateway
   ms.date: 04/24/2025
-  author: greg-lindsay
-  ms.author: greglin
+  author: kumud
+  ms.author: kumud
   ms.topic: unit
 title: Application Gateway creation and configuration
 durationInMinutes: 10
 content: |
   [!include[](includes/4-create-configure-application-gateway.md)]
-

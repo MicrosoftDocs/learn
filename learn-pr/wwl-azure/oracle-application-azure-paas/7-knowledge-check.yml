@@ -6,7 +6,7 @@ metadata:
   description: Test your knowledge.
   ms.date: 05/01/2024
   author: Randall-Knapp
-  ms.author: cynthist
+  ms.author: askabadi
   ms.topic: unit
   module_assessment: true
 durationInMinutes: 2
@@ -48,4 +48,3 @@ quiz:
     - content: "Remediate issues introduced during the migration by identifying Oracle-specific code and updating it to work with your new database service. "
       isCorrect: true
       explanation: "Correct!"
-
