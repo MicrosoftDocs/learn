@@ -20,7 +20,7 @@ Finally, perform the deployment with `az webapp deploy`. Replace `<your-app-name
 ```bash
 az webapp deploy \
     --src-path site.zip \
-    --resource-group <rgn>[sandbox resource group name]</rgn> \
+    --resource-group <resource-group-name> \
     --name <your-app-name>
 ```
 
@@ -51,7 +51,7 @@ Run the following commands to deploy your Java web app. Replace `<your-app-name>
 cd ~/helloworld/target
 az webapp deploy \
     --src-path helloworld.war \
-    --resource-group <rgn>[sandbox resource group name]</rgn> \
+    --resource-group <resource-group-name> \
     --name <your-app-name>
 ```
 
