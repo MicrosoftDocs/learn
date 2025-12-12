@@ -1,6 +1,6 @@
-You need to monitor the activity of the traffic flowing through your networks. Global Secure Access logs provide many data points you can review to gain insights into your network traffic. There are several specific logs you can get data from Global Secure Access.
+You need to monitor the activity of the traffic flowing through your networks. Global Secure Access logs, provide data points you can review to gain insights into your network traffic.
 
-## Global Secure Access Audit logs (preview)
+## Global Secure Access Audit logs
 
 The Microsoft Entra audit log is a valuable source of information when researching or troubleshooting changes to your Microsoft Entra environment. Changes related to Global Secure Access are captured in the audit logs. Logs have categories, such as filtering policy, forwarding profiles, remote network management, and more.
 
@@ -20,7 +20,7 @@ The Microsoft Entra audit log is a valuable source of information when researchi
 1. Open the Category filter, select at least one of the available options, and select Apply.
 
 ## Traffic logs (preview)
-The Global Secure Access traffic logs provide a summary of the network connections and transactions that are occurring in your environment. These logs look at who accessed what traffic from where, and with what result. The traffic logs provide a snapshot of all connections in your environment and categorizes traffic that applies to your traffic forwarding profiles. The logs details provide the traffic type destination, source IP, and more. To better understand those details, it's helpful to look at the three levels of the logs and their relationship to each other.
+The Global Secure Access traffic logs provide a summary of the network connections and transactions that are occurring in your environment. These logs look at who accessed what traffic from where, and with what result. The traffic logs provide a snapshot of all connections in your environment and categorize traffic. The logs details provide the traffic type destination, source IP, and more. To better understand those details, it's helpful to look at the three levels of the logs and their relationship to each other.
 
 A user accessing a website represents one session, and within that session there could be multiple connections, and within that connection there could be multiple transactions.
 
