@@ -2,9 +2,9 @@
 uid: learn.introduction-ai-azure
 metadata:
   title: "Introduction to AI in Azure"
-  description: This course introduces core concepts related to artificial intelligence (AI), and the services in Microsoft Azure that can be used to create AI solutions. 
+  description: This course introduces core concepts related to artificial intelligence (AI), and the services in Microsoft Azure that can be used to create AI solutions, focusing on Microsoft Foundry. 
   brand: azure
-  ms.date: 08/28/2025
+  ms.date: 12/11/2025
   author: sherzyang
   ms.author: sheryang
   ms.topic: learning-path
@@ -26,6 +26,7 @@ subjects:
   - artificial-intelligence
 modules:
 - learn.wwl.get-started-ai-fundamentals
+- learn.wwl.get-started-ai-in-foundry
 - learn.wwl.fundamentals-machine-learning
 - learn.wwl.design-machine-learning-model-training-solution
 - learn.wwl.fundamentals-generative-ai
