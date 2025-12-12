@@ -16,7 +16,7 @@ Consider the following differences between tag types:
 | Aspect           | Standard tags                     | Governed tags                      |
 | ---------------- | --------------------------------- | ---------------------------------- |
 | Scope            | Any key-value pair                | Predefined keys and allowed values |
-| Control          | Any user with APPLY TAG privilege | Only users with ASSIGN permission  |
+| Control          | Any user with `APPLY TAG` privilege | Only users with `ASSIGN` permission  |
 | Purpose          | Organization and discovery        | Policy enforcement and compliance  |
 | Visual indicator | None                              | Lock icon in Catalog Explorer      |
 

@@ -1,6 +1,6 @@
 Every organization faces the challenge of balancing data availability with compliance requirements and storage costs. When you implement **data retention policies** in Azure Databricks, you ensure that data is kept only as long as necessary while remaining accessible for legitimate business needs. This becomes especially critical when regulations require you to delete personal data upon request.
 
-In this unit, you learn how to configure retention settings, use **VACUUM** to remove obsolete data, handle deletion requests for compliance, and automate maintenance with **predictive optimization**.
+In this unit, you learn how to configure retention settings, use **`VACUUM`** to remove obsolete data, handle deletion requests for compliance, and automate maintenance with **predictive optimization**.
 
 ## Configure Delta Lake retention settings
 
