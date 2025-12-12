@@ -54,4 +54,4 @@ Now that you understand dependency management concepts, you can:
 ### Dependency management best practices
 
 - [Dependency management best practices](/azure/devops/artifacts/concepts/best-practices)
-- [Package versioning in Azure Artifacts](/azure/devops/artifacts/concepts/package-versioning)
+- [Package versioning in Azure Artifacts](/azure/devops/artifacts/artifacts-key-concepts)
