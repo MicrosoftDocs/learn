@@ -9,7 +9,9 @@ In this unit, you learn how to configure retention settings, use **VACUUM** to r
 | Property | Default | Purpose |
 |----------|---------|---------|
 | `delta.logRetentionDuration` | 30 days | Controls how long transaction log history is kept |
-| `delta.deletedFileRetentionDuration` | 7 days | Determines when VACUUM can remove unreferenced data files |
+| `delta.deletedFileRetentionDuration` | 7 days | Determines when `VACUUM` can remove unreferenced data files |
+
+:::image type="content" source="../media/5-understand-data-retention-settings.png" alt-text="Diagram explaining Delta Lake retention settings." border="false" lightbox="../media/5-understand-data-retention-settings.png":::
 
 These settings work together to define your **time travel** capabilities. For example, if you need 30 days of historical data access, you must configure both properties accordingly:
 
@@ -24,7 +26,7 @@ SET TBLPROPERTIES (
 > [!IMPORTANT]
 > Increasing retention duration increases storage costs because more data files are preserved. Before adjusting these settings, evaluate your compliance requirements against storage budget constraints.
 >
-> You must set both of these properties to ensure table history is retained for longer duration for tables with frequent VACUUM operations
+> You must set both of these properties to ensure table history is retained for longer duration for tables with frequent `VACUUM` operations
 
 To view current retention settings for a table, use the following command:
 
@@ -44,9 +46,9 @@ VACUUM sales.customers.transactions;
 VACUUM sales.customers.transactions RETAIN 168 HOURS;
 ```
 
-When you run VACUUM, Delta Lake identifies files associated with versions older than the retention threshold and removes them from storage. After this operation, time travel queries to those older versions fail because the underlying data no longer exists.
+When you run `VACUUM`, Delta Lake identifies files associated with versions older than the retention threshold and removes them from storage. After this operation, time travel queries to those older versions fail because the underlying data no longer exists.
 
-For tables with **deletion vectors** enabled, you must also run `REORG TABLE ... APPLY (PURGE)` after deleting records to permanently remove the underlying data. VACUUM alone doesn't remove data marked for deletion by deletion vectors.
+For tables with **deletion vectors** enabled, you must also run `REORG TABLE ... APPLY (PURGE)` after deleting records to permanently remove the underlying data. `VACUUM` by itself does not remove data that deletion vectors have marked for deletion.
 
 > [!NOTE]
 > **Deletion vectors** are a storage optimization feature you can enable on Delta Lake tables. By default, when a single row in a data file is deleted, the entire Parquet file containing the record must be rewritten. With deletion vectors enabled, it marks rows as deleted without rewriting the entire file. 
@@ -92,11 +94,11 @@ When you delete data in your bronze layer, you must also remove it from silver a
 spark.readStream.option('skipChangeCommits', 'true').table("bronze.users")
 ```
 
-After running deletion operations, execute VACUUM to permanently remove the data files from storage.
+After running deletion operations, execute `VACUUM` to permanently remove the data files from storage.
 
 ## Automate retention with predictive optimization
 
-Manually scheduling VACUUM and OPTIMIZE operations across many tables is time-consuming and error-prone. **Predictive optimization** in Unity Catalog automates these maintenance tasks for managed tables.
+Manually scheduling `VACUUM` and `OPTIMIZE` operations across many tables is time-consuming and error-prone. **Predictive optimization** in Unity Catalog automates these maintenance tasks for managed tables.
 
 When enabled, predictive optimization automatically:
 
@@ -111,7 +113,7 @@ ALTER SCHEMA sales.customers ENABLE PREDICTIVE OPTIMIZATION;
 ```
 
 > [!TIP]
-> Before enabling predictive optimization, set your desired `delta.deletedFileRetentionDuration` on tables that require longer retention periods. The default VACUUM retention is 7 days, which might be shorter than your compliance requirements.
+> Before enabling predictive optimization, set your desired `delta.deletedFileRetentionDuration` on tables that require longer retention periods. The default `VACUUM` retention is 7 days, which might be shorter than your compliance requirements.
 
 To check whether predictive optimization is enabled for a table:
 

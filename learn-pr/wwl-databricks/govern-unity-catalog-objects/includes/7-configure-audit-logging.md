@@ -130,6 +130,8 @@ To enable verbose audit logs:
 3. Select the **Advanced** tab.
 4. Locate **Verbose Audit Logs** and enable the feature.
 
+:::image type="content" source="../media/7-verbose-audit-logs.png" alt-text="Screenshot of the Workspace admin advanced settings." lightbox="../media/7-verbose-audit-logs.png":::
+
 When you enable or disable verbose logging, Azure Databricks logs this configuration change as an auditable event. This creates accountability for who modified the logging configuration and when.
 
 > [!IMPORTANT]
@@ -144,6 +146,8 @@ While the audit log system table provides direct access within Databricks, many 
 - **Azure Log Analytics**: For integration with Azure Monitor and custom dashboards
 
 Platform administrators configure log delivery through the Azure portal. As a data engineer, you should know that logs typically arrive within **15 minutes** of the event occurring. When building monitoring solutions, account for this latency in your alerting thresholds.
+
+:::image type="content" source="../media/7-diagnostic-setting.png" alt-text="Screenshot of Azure portal, showing diagnostic setting for Azure Databricks." lightbox="../media/7-diagnostic-setting.png":::
 
 The combination of the system table for interactive queries and external delivery for operational monitoring provides comprehensive coverage. You can use the system table for ad-hoc investigations while relying on your SIEM platform for continuous security monitoring.
 
