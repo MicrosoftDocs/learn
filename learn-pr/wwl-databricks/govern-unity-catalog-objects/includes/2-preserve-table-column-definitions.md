@@ -53,7 +53,7 @@ Unity Catalog can automatically generate comments using AI-powered suggestions. 
 
 For column comments, select **AI generate** above the column list to generate suggestions for all columns.
 
-:::image type="content" source="../media/2-use-ai-generated-comments.png" alt-text="Screenshot of AI-generated comments" lightbox="../media/2-use-ai-generated-comments.png":::
+:::image type="content" source="../media/2-use-ai-generated-comments.png" alt-text="Screenshot of AI-generated comments." lightbox="../media/2-use-ai-generated-comments.png":::
 
 > [!IMPORTANT]
 > **AI-generated comments** are suggestions based on schema analysis. Always review these comments before saving, as AI models might generate inaccurate descriptions. Don't rely on AI comments for data classification tasks like detecting personally identifiable information (PII).
