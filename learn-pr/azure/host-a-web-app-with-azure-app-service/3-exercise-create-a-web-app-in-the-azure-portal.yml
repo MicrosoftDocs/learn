@@ -4,7 +4,7 @@ title: Exercise - Create a web app in the Azure portal
 metadata:
   title: Exercise - Create a web app in the Azure portal
   description: Exercise - Create a web app in the Azure portal
-  ms.date: 10/3/2024
+  ms.date: 12/12/2025
   author: cephalin
   ms.author: cephalin
   ms.topic: unit
@@ -12,7 +12,6 @@ metadata:
     - devx-track-extended-java
     - devx-track-python
   zone_pivot_groups: dev-lang-csharp-java-node-python
-azureSandbox: true
 durationInMinutes: 5
 content: |
   [!include[](includes/3-exercise-create-a-web-app-in-the-azure-portal.md)]
@@ -24,4 +23,4 @@ content: |
 #   azure:
 #     resource:
 #       type: "Microsoft.Web/sites"
-
+

@@ -34,7 +34,7 @@ The custom authentication extension supports the [on attribute collection submit
 
 1. To ensure the communication between the custom authentication extension and your REST API are secured appropriately, multiple security controls must be applied. The first step is to create or choose an application that Microsoft Entra External ID uses. It uses the OAuth 2.0 client credentials grant flow to secure the call to your API endpoint.
 
-    If this is your first custom authentication extension, see how we have configured our [TokenIssuanceStart event](https://woodgrovedemo.com/help/TokenAugmentation). Since we already configured a custom authentication extension, in **API Authentication**, choose the **Select an existing app registration in this directory** option.
+    If this is your first custom authentication extension, see how we have configured our [TokenIssuanceStart event](https://private.woodgrovedemo.com/help/TokenAugmentation). Since we already configured a custom authentication extension, in **API Authentication**, choose the **Select an existing app registration in this directory** option.
 
     [ ![Screenshot of API Authentication tab of Create new custom extension blade highlighting radio button option titled Select an existing app registration in this directory and Select an application underneath under App registration type.](../media/validate-attributes-collected-during-sign-up/4_inline.png) ](../media/validate-attributes-collected-during-sign-up/4.png#lightbox)
 
@@ -66,7 +66,7 @@ The custom authentication extension supports the [on attribute collection submit
 
 #### 1. Register custom authentication extension application
 
-If this is your first custom authentication extension, [register the custom authentication extension application](https://woodgrovedemo.com/help/TokenAugmentation#graph).
+If this is your first custom authentication extension, [register the custom authentication extension application](https://private.woodgrovedemo.com/help/TokenAugmentation#graph).
 
 #### 2. Register custom authentication extension
 

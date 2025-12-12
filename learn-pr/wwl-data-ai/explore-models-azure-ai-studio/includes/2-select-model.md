@@ -17,7 +17,7 @@ Nowadays we have thousands of language models to choose from. The main challenge
 To start answering this question, you need to discover, filter, and deploy a model. You can explore the available language models through three different catalogs:
 
 - [**Hugging Face**](https://huggingface.co/models): Vast catalog of open-source models across various domains.
-- [**GitHub**](https://github.com/marketplace/models-github): Access to diverse models via GitHub Marketplace and GitHub Copilot.
+- [**GitHub**](https://github.com/features/models): Access to diverse models via GitHub Marketplace and GitHub Copilot.
 - [**Microsoft Foundry**](https://ai.azure.com/explore/models): Comprehensive catalog with robust tools for deployment.
 
 Though you can use each of these catalogs to explore models, the model catalog in Microsoft Foundry makes it easiest to explore and deploy a model to build your prototype, while offering the best selection of models.
