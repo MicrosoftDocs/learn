@@ -14,7 +14,10 @@ abstract: |
   In this module, you will:
   - Configure Azure DNS to host your domain.
 prerequisites: |
-  - Knowledge of networking concepts like name resolution and IP addresses
+  Knowledge of networking concepts like name resolution and IP addresses
+
+  [!INCLUDE [](../../includes/azure-optional-exercise-subscription-prerequisite.md)]
+
 iconUrl: /training/achievements/host-domain-azure-dns.svg
 levels:
 - beginner
