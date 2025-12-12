@@ -5,8 +5,8 @@ metadata:
   title: Data binding with mismatched types
   description: Learn how to data binding between two mismatched property types.
   ms.date: 04/16/2025
-  author: adegeo
-  ms.author: adegeo
+  author: jamesmontemagno
+  ms.author: masoucou
   ms.topic: unit
 durationInMinutes: 10
 content: |
