@@ -26,7 +26,7 @@ GitHub Copilot analyzes your current file, open tabs, and workspace to provide r
 To use GitHub Copilot in SQL Server Management Studio:
 
 1. Ensure you have [SSMS 19.3](/ssms/download-sql-server-management-studio-ssms?azure-portal=true) or later installed
-2. Install the [GitHub Copilot extension](/ssms/github-copilot/install-remove-enable-disable?azure-portal=true) from the Extensions menu
+2. Install the [GitHub Copilot extension](https://docs.github.com/en/copilot/how-tos/set-up/install-copilot-extension) from the Extensions menu
 3. Sign in with your GitHub account that has an active [GitHub Copilot subscription](https://github.com/features/copilot/plans?azure-portal=true)
 4. Configure your preferences in **Tools > Options > GitHub Copilot**
 
