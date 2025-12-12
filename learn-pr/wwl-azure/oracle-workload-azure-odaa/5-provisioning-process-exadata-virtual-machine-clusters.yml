@@ -6,9 +6,8 @@ metadata:
   description: Learn about the provisioning process for Exadata virtual machine clusters.
   ms.date: 05/01/2024
   author: Randall-Knapp
-  ms.author: cynthist
+  ms.author: askabadi
   ms.topic: unit
 durationInMinutes: 3
 content: |
   [!include[](includes/5-provisioning-process-exadata-virtual-machine-clusters.md)]
-
