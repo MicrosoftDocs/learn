@@ -26,7 +26,7 @@ Apply multiple security layers across your AI architecture:
 
 ## Security design principles for AI
 
-Start your design with the [Azure security baseline for Azure OpenAI](/security/benchmark/azure/baselines/azure-openai-security-baseline) and [Microsoft Foundry security baseline](/security/benchmark/azure/baselines/ai-foundry-security-baseline). The [Security design principles](/azure/well-architected/security/principles) guide your technical approach.
+Start your design with the [Azure security baseline for Azure OpenAI](/security/benchmark/azure/baselines/azure-openai-security-baseline) and [Microsoft Foundry security baseline](/security/benchmark/azure/baselines/azure-ai-foundry-security-baseline). The [Security design principles](/azure/well-architected/security/principles) guide your technical approach.
 
 ### Plan your security readiness
 
