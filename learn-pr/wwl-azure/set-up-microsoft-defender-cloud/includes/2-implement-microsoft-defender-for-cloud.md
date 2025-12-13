@@ -31,8 +31,8 @@ Microsoft Defender for Cloud enables you to protect against evolving threats acr
 
 Microsoft Defender for Cloud's features covers the **two broad pillars** of cloud security:
 
-1. **Cloud Security Posture Management (CSPM) - Remediate security issues and watch your security posture improve**
-2. **Cloud Workload Protection (CWP) - Identify unique workload security requirements**
+- **Cloud Security Posture Management (CSPM) - Remediate security issues and watch your security posture improve**
+- **Cloud Workload Protection (CWP) - Identify unique workload security requirements**
 
 ## Protect all of your resources under one roof
 
