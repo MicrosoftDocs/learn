@@ -119,7 +119,7 @@ Questions to consider:
 - Do technology choices comply with organizational security and compliance policies?
 - Are there established patterns for similar functionality that should be followed?
 
-For the document upload feature in Microsoft's environment, verify that Azure Blob Storage is an approved service, that the authentication approach aligns with Microsoft's identity standards, and that the proposed SQL schema follows database naming conventions.
+For the document upload feature in an Azure environment, verify that Azure Blob Storage is an approved service, that the authentication approach aligns with enterprise identity standards (such as using Microsoft Entra ID), and that the proposed SQL schema follows database naming conventions.
 
 ### Validate constitution adherence
 

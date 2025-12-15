@@ -50,7 +50,7 @@ GitHub Spec Kit works across major operating systems, ensuring development teams
 
 **Cross-platform consistency**: GitHub Spec Kit artifacts (Markdown files, prompt templates, and configurations) use platform-independent formats, ensuring specifications and plans work identically across different operating systems.
 
-## Enterprise and Microsoft environment considerations
+## Enterprise environment considerations
 
 Organizations often have specific requirements, policies, and infrastructure that affect development environment configuration:
 

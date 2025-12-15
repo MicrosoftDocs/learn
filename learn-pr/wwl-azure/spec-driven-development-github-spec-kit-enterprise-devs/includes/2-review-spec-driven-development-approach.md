@@ -97,15 +97,15 @@ Adopting Spec-Driven Development provides measurable improvements in code qualit
 
 - **Consistent AI interactions**: Multiple developers using GitHub Copilot with the same specification get consistent code generation results. The spec provides shared context that ensures uniform implementation patterns.
 
-## Spec-Driven Development in Microsoft's context
+## Spec-Driven Development in enterprise context
 
-SDD aligns well with Microsoft's engineering practices and organizational needs.
+SDD aligns well with enterprise engineering practices and organizational needs.
 
-- **Compliance and security**: Microsoft applications must meet strict security, privacy, and regulatory requirements. Specifications can encode these constraints explicitly, ensuring AI-generated code adheres to compliance standards from the start.
+- **Compliance and security**: Enterprise applications must meet strict security, privacy, and regulatory requirements. Specifications can encode these constraints explicitly, ensuring AI-generated code adheres to compliance standards from the start.
 
-- **Architectural standards**: Microsoft established patterns and technology preferences for internal applications. Specifications capture these standards, guiding AI code generation toward approved architectures.
+- **Architectural standards**: Enterprise organizations establish patterns and technology preferences for internal applications. Specifications capture these standards, guiding AI code generation toward approved architectures.
 
-- **Distributed teams**: Teams at Microsoft span global locations and time zones. Specifications provide shared understanding that enables asynchronous collaboration without requiring constant synchronous meetings.
+- **Distributed teams**: Enterprise development teams span global locations and time zones. Specifications provide shared understanding that enables asynchronous collaboration without requiring constant synchronous meetings.
 
 - **Knowledge retention**: When team members transition to other roles, specifications preserve their knowledge and decision-making rationale, reducing institutional knowledge loss.
 
@@ -123,7 +123,7 @@ The document upload feature must meet the following functional and security requ
 - **File size**: Limit uploads to 50 MB per file.
 - **Storage**: Store files in Azure Blob Storage.
 - **Access control**: Only authenticated employees can upload; only the uploading employee can access their files.
-- **Security**: Follow Microsoft's data protection standards.
+- **Security**: Follow enterprise data protection standards.
 - **Audit**: Log all upload activity for compliance.
 - **User experience**: Display upload progress and clear success/error messages.
 
@@ -137,7 +137,7 @@ The existing portal uses:
 - Azure Application Insights for monitoring.
 - Azure Key Vault for secrets management.
 
-Your document upload feature must integrate with this existing architecture and comply with Microsoft's internal security requirements including Microsoft Entra ID authentication, data encryption, audit logging, and accessibility standards.
+Your document upload feature must integrate with this existing architecture and comply with enterprise security requirements including Microsoft Entra ID authentication, data encryption, audit logging, and accessibility standards.
 
 In subsequent units, you write a specification for this feature, clarify requirements through AI-assisted analysis, generate a technical implementation plan, break down the work into tasks, and use GitHub Copilot to generate code from your specification.
 
@@ -149,7 +149,7 @@ Spec-Driven Development follows a defined workflow that separates concerns and c
 
 Before writing any feature specifications, define your project's constitution—the governing principles that apply to all features. This includes architectural standards, security requirements, performance expectations, and coding conventions.
 
-For the employee portal, the constitution might specify requirements like "All APIs must use Microsoft Entra ID authentication," "Data must be encrypted at rest," and "Follow Microsoft's accessibility standards."
+For the employee portal, the constitution might specify requirements like "All APIs must use Microsoft Entra ID authentication," "Data must be encrypted at rest," and "Follow enterprise accessibility standards."
 
 ### Phase 2: Create the specification
 
@@ -320,4 +320,4 @@ The key is adapting SDD's principles to your context rather than viewing it as a
 
 ## Summary
 
-Spec-Driven Development transforms AI-assisted software development from ad-hoc prompting into a structured, documented process that produces better outcomes with less rework. By treating specifications as executable sources of truth, SDD ensures that AI-generated code aligns closely with intended behavior. SDD's core principles include explicit intent, separation of concerns, iterative refinement, and living documentation. These principles address common challenges in unstructured AI-assisted development: context fragmentation, incomplete requirements, missing edge cases, and lack of decision traceability. Adopting SDD provides measurable benefits: reduced defect rates, faster onboarding, improved code review quality, higher AI code generation accuracy, and better stakeholder communication. SDD aligns well with Microsoft's engineering practices, supporting compliance, architectural standards, distributed teams, and knowledge retention.
+Spec-Driven Development transforms AI-assisted software development from ad-hoc prompting into a structured, documented process that produces better outcomes with less rework. By treating specifications as executable sources of truth, SDD ensures that AI-generated code aligns closely with intended behavior. SDD's core principles include explicit intent, separation of concerns, iterative refinement, and living documentation. These principles address common challenges in unstructured AI-assisted development: context fragmentation, incomplete requirements, missing edge cases, and lack of decision traceability. Adopting SDD provides measurable benefits: reduced defect rates, faster onboarding, improved code review quality, higher AI code generation accuracy, and better stakeholder communication. SDD aligns well with engineering practices at most enterprise organizations, supporting compliance, architectural standards, distributed teams, and knowledge retention.

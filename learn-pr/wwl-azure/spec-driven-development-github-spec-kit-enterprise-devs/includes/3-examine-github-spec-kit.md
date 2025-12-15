@@ -178,7 +178,7 @@ GitHub Spec Kit provides agent-specific configurations during initialization. Wh
 
 Each agent receives templates formatted for its specific prompt format. The underlying specification artifacts (spec.md, plan.md, tasks.md) remain identical regardless of which AI assistant you use. This agent-agnostic approach prevents vendor lock-in and allows teams to experiment with different AI tools.
 
-For Microsoft development teams, this flexibility is valuable. You might use GitHub Copilot for frontend development in Visual Studio Code but use a different AI assistant for backend services. GitHub Spec Kit ensures both assistants work from the same specifications.
+For enterprise development teams, this flexibility is valuable. You might use GitHub Copilot for frontend development in Visual Studio Code but use a different AI assistant for backend services. GitHub Spec Kit ensures both assistants work from the same specifications.
 
 ### Template customization
 
@@ -186,7 +186,7 @@ While GitHub Spec Kit provides default templates optimized through research and 
 
 Template files in `.github/prompts/` are markdown files with placeholder variables. You can edit these files to add organization-specific sections. For example, you might customize the spec template to include a "Compliance Requirements" section that prompts for industry-specific compliance needs.
 
-Customization enables GitHub Spec Kit to adapt to Microsoft's internal processes. If you're in part of a team that requires security review sections in all specifications, you can add this section to the spec template. All future specifications generated with `/speckit.specify` automatically include this section.
+Customization enables GitHub Spec Kit to adapt to enterprise processes. If you're in part of a team that requires security review sections in all specifications, you can add this section to the spec template. All future specifications generated with `/speckit.specify` automatically include this section.
 
 ### Environment variables for feature tracking
 

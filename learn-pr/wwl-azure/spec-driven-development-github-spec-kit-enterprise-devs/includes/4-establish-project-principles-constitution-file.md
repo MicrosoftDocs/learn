@@ -16,7 +16,7 @@ The constitution addresses several critical needs:
 
 - **Reduced cognitive load**: Developers don't need to remember every organizational standard while prompting AI. The constitution automates enforcement of policies like "use Azure Key Vault for secrets" or "authenticate via Microsoft Entra ID."
 
-In Microsoft's development environment, constitutions often encode:
+In enterprise development environments, constitutions often encode:
 
 - Security requirements mandated by corporate policies.
 - Performance and scalability targets for enterprise workloads.
@@ -158,10 +158,10 @@ To create a constitution for a new project:
     - Use Azure Blob Storage for all file storage.
     - Authenticate users via Microsoft Entra ID.
     - Support files up to 500 MB.
-    - Scan uploaded files for malware
-    - Follow Microsoft security and privacy guidelines
-    - Use .NET 8 for backend APIs
-    - Implement comprehensive logging
+    - Scan uploaded files for malware.
+    - Follow the security and privacy guidelines adopted by the organization.
+    - Use .NET 8 for backend APIs.
+    - Implement comprehensive logging.
     ```
 
     GitHub Copilot generates a structured `constitution.md` file with sections organized by category:
@@ -175,7 +175,7 @@ To create a constitution for a new project:
     ## Technology Standards
     - Backend: .NET 8+ Web API hosted on Azure App Service
     - Storage: Azure Blob Storage for document persistence
-    - Authentication: Azure Active Directory (Microsoft Entra ID)
+    - Authentication: Microsoft Entra ID (OAuth 2.0 / OpenID Connect)
     
     ## Security Requirements
     - All users must authenticate via Microsoft Entra ID tokens
@@ -194,7 +194,7 @@ To create a constitution for a new project:
     - Asynchronous processing for virus scanning
     
     ## Compliance
-    - Follow Microsoft privacy and security policies
+    - Follow privacy and security policies adopted by the organization
     - Log all upload/download events for audit trail
     - Retain audit logs for 90 days minimum
     ```
@@ -231,23 +231,23 @@ After you create the constitution, GitHub Spec Kit automatically references it d
 
 This integration is why the constitution is so powerful—write principles once, and AI automatically enforces them throughout development.
 
-## Microsoft-specific constitution considerations
+## Enterprise-specific constitution considerations
 
-When creating constitutions for Microsoft internal projects, incorporate these common requirements:
+When creating constitutions for enterprise internal projects, incorporate these common requirements:
 
 - **Azure-first architecture**: Mandate Azure services for hosting, storage, databases, and supporting infrastructure. This requirement aligns with corporate cloud strategy and available tooling.
 
-- **Enterprise authentication**: Require Microsoft Entra ID for authentication and RBAC for authorization. Most Microsoft internal apps integrate with corporate identity systems.
+- **Enterprise authentication**: Require Microsoft Entra ID for authentication and RBAC for authorization. Most enterprise internal apps integrate with corporate identity systems.
 
-- **Security and compliance**: Reference Microsoft security policies, TrustWorthy Computing principles, and applicable compliance frameworks.
+- **Security and compliance**: Reference enterprise security policies, TrustWorthy Computing principles, and applicable compliance frameworks.
 
 - **Monitoring and observability**: Mandate Azure Application Insights or equivalent monitoring solutions. Enterprise applications need comprehensive telemetry for production support.
 
 - **Developer tooling standards**: Specify approved frameworks, libraries, and development practices. For example, require use of approved NuGet packages from internal feeds.
 
-- **Accessibility**: Include WCAG 2.1 Level AA compliance requirements. Microsoft internal tools must be accessible to employees with disabilities.
+- **Accessibility**: Include WCAG 2.1 Level AA compliance requirements. Enterprise internal tools must be accessible to employees with disabilities.
 
-Example Microsoft internal constitution snippet:
+Example enterprise internal constitution snippet:
 
 ```markdown
 # Employee Portal Constitution
@@ -259,28 +259,28 @@ Example Microsoft internal constitution snippet:
 - Secrets stored exclusively in Azure Key Vault
 - Use Azure Front Door for global distribution
 
-## Microsoft Identity Integration
+## Identity Integration
 - Authenticate via Microsoft Entra ID using OAuth 2.0 / OpenID Connect
 - Implement role-based access control using Microsoft Entra ID groups
 - Support multi-factor authentication (MFA)
 - No custom authentication or local user databases
 
 ## Corporate Compliance
-- Follow Microsoft Security Development Lifecycle (SDL) practices
+- Follow enterprise Security Development Lifecycle (SDL) practices
 - Scan all dependencies for known vulnerabilities
-- Implement audit logging per Microsoft retention policies
+- Implement audit logging per enterprise retention policies
 - Support data residency requirements for EU users (GDPR)
 - Accessibility: WCAG 2.1 Level AA minimum
 
 ## Development Standards
-- Backend: .NET 8+ following Microsoft C# conventions
+- Backend: .NET 8+ following coding conventions adopted by the organization
 - Use approved packages from internal NuGet feed
 - Minimum 80% code coverage with unit tests
 - All APIs documented with OpenAPI/Swagger
 - Structured logging using ILogger interface
 ```
 
-By establishing these principles upfront in the Constitution, you ensure every feature built for the employee portal automatically aligns with Microsoft's engineering standards, security requirements, and architectural patterns. The Constitution transforms organizational knowledge into executable constraints that guide AI-assisted development.
+By establishing these principles upfront in the Constitution, you ensure every feature built for the employee portal automatically aligns with enterprise engineering standards, security requirements, and architectural patterns. The Constitution transforms organizational knowledge into executable constraints that guide AI-assisted development.
 
 ## Summary
 

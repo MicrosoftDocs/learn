@@ -8,7 +8,7 @@ This approach represents a mindset shift: writing the spec is as important as wr
 
 Think of the spec as executable documentation. When you modify requirements, you update the spec and regenerate the plan and tasks. The spec version-controlled in Git becomes the authoritative record of what each feature should accomplish.
 
-For Microsoft developers accustomed to agile workflows, the spec serves the same purpose as detailed user stories and acceptance criteria, but with machine-readable structure that AI assistants can consume directly.
+For enterprise developers accustomed to agile workflows, the spec serves the same purpose as detailed user stories and acceptance criteria, but with machine-readable structure that AI assistants can consume directly.
 
 ## Specification structure
 
@@ -309,7 +309,7 @@ Specific requirements enable AI to generate implementations that meet your actua
 
 Define terms once and reuse them throughout the spec. If you call them "documents" in the summary, don't switch to "files" or "attachments" later. Inconsistent terminology confuses both humans and AI.
 
-For Microsoft internal projects, use official product names and terminology from your organization's standards.
+For enterprise internal projects, use official product names and terminology from your organization's standards.
 
 ### Cover error handling explicitly
 

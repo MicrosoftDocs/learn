@@ -16,8 +16,8 @@ The topics covered in this module include:
 
 After completing this module, you'll be able to:
 
-- Explain Spec-Driven Development principles and why they benefit large-scale Microsoft projects (upfront clarity, fewer regressions, easier maintenance).
-- Implement the GitHub Spec Kit and GitHub Copilot in Visual Studio Code to generate project artifacts (specifications, plans, tasks) aligned with Microsoft's internal development standards.
+- Explain Spec-Driven Development principles and why they benefit large-scale enterprise projects (upfront clarity, fewer regressions, easier maintenance).
+- Implement the GitHub Spec Kit and GitHub Copilot in Visual Studio Code to generate project artifacts (specifications, plans, tasks) aligned with enterprise development standards.
 - Apply the GitHub Spec Kit in an Azure-integrated scenario, encoding internal engineering guidelines (security, performance, compliance) in a project "Constitution" and ensuring generated plans adhere to these constraints.
 - Execute a spec-driven workflow to build a new feature, from spec creation through automated code generation and iteration.
 - Describe how to integrate GitHub Spec Kit into team workflows and how to extend it for advanced scenarios (such as multi-agent collaboration and CI/CD integration).
