@@ -1,5 +1,7 @@
 After your team packages a data asset bundle, deploying it to Azure Databricks becomes your next responsibility. The **Databricks CLI** provides a direct path from your local development environment to production workspaces. You control when and where your pipelines, jobs, and other resources go live. Understanding this **deployment workflow** enables you to move code reliably across environments while maintaining consistency.
 
+:::image type="content" source="../media/6-deploy-bundle-databricks-cli.png" alt-text="Diagram explaining the different steps when deploying a bundle with Databricks CLI." border="false" lightbox="../media/6-deploy-bundle-databricks-cli.png":::
+
 ## Validate bundle configuration
 
 Before deploying, confirm that your bundle configuration is **syntactically correct** and complete. The `bundle validate` command checks your configuration files and reports any issues that would prevent successful deployment.

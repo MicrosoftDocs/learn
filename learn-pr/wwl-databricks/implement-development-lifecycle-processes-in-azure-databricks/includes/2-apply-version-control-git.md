@@ -4,6 +4,8 @@ Data engineering projects require systematic tracking of code changes, collabora
 
 Git folders bring version control capabilities into your Azure Databricks workspace through a **visual Git client** and API. This integration lets you perform standard Git operations such as **cloning repositories**, **creating branches**, **committing changes**, and **pushing updates** directly from the workspace interface. You don't need to switch between external tools and your development environment.
 
+:::image type="content" source="../media/2-understand-git-folders-azure-databricks.png" alt-text="Diagram explaining git folders in Azure Databricks." border="false" lightbox="../media/2-understand-git-folders-azure-databricks.png":::
+
 When you create a Git folder, you connect it to a **remote repository** hosted by providers like Azure DevOps, GitHub, GitLab, or Bitbucket. The folder mirrors your repository structure, allowing you to work with notebooks, Python files, SQL scripts, and other supported assets while maintaining version control. All team members can have their own Git folders mapped to the same remote repository, enabling **collaboration through shared branches** and coordinated commits.
 
 > [!TIP]
@@ -22,6 +24,8 @@ To clone a repository:
 5. Provide a name for the folder in your workspace.
 6. Select **Create Git folder**.
 
+:::image type="content" source="../media/2-create-git-folder.png" alt-text="Screenshot of the Create Git folder dialog." lightbox="../media/2-create-git-folder.png":::
+
 After cloning, the repository contents appear in your workspace. You can open notebooks, edit files, and begin development immediately.
 
 ## Pull changes from the remote repository
@@ -33,6 +37,8 @@ To pull changes:
 1. Open the Git dialog.
 2. Select **Pull** to fetch and merge changes from the remote repository.
 3. If conflicts exist between remote changes and your local modifications, resolve them using the **conflict resolution interface**.
+
+:::image type="content" source="../media/2-commit-push.png" alt-text="Screenshot of the git dialog in Azure Databricks." lightbox="../media/2-commit-push.png":::
 
 **Pull regularly**, especially before starting new work, to minimize integration issues. When you pull changes that modify notebook source code, the **notebook state resets**. This means cell outputs, comments, and version history for that notebook clear to reflect the updated content.
 

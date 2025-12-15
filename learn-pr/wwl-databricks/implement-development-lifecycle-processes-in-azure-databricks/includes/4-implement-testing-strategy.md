@@ -6,6 +6,8 @@ In this unit, you learn how to implement a testing strategy that covers **unit t
 
 A well-designed testing strategy follows the **testing pyramid** concept. At the base, you have many fast, isolated unit tests. Moving up, you have fewer integration tests that verify component interactions. At the top, you have a small number of comprehensive end-to-end tests and UAT scenarios.
 
+:::image type="content" source="../media/4-understand-test-pyramid.png" alt-text="Diagram showing the testing pyramid." border="false" lightbox="../media/4-understand-test-pyramid.png":::
+
 This structure exists because different test types serve different purposes:
 
 | Test type             | Purpose                                             | Scope                    | Speed               |
