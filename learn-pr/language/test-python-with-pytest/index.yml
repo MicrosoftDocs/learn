@@ -6,7 +6,7 @@ metadata:
   description: Use Pytest, a popular test framework to write and run tests in Python. Learn about useful patterns, utilities, and helpful reporting that make Pytest a solid choice for testing.
   ms.date: 05/27/2025
   author: alfredodeza
-  ms.author: alfredodeza
+  ms.author: orthomas
   ms.topic: module
   ms.service: azure-python
 title: Testing with Pytest
