@@ -1,5 +1,7 @@
 Collaborative development in Azure Databricks relies on effective **version control practices**. When multiple team members work on notebooks and code files simultaneously, you need a structured approach to **isolate changes**, **review code**, and **integrate work** without disrupting production workflows.
 
+:::image type="content" source="../media/3-manage-branching-pull-requests-conflicts.png" alt-text="Diagram showing how to manage branching, pull requests and conflicts." border="false" lightbox="../media/3-manage-branching-pull-requests-conflicts.png":::
+
 Azure Databricks Git folders provide a visual Git client that integrates directly with your workspace. This integration lets you perform common Git operations—branching, committing, and merging—without leaving the Azure Databricks environment.
 
 ## Create and manage branches
@@ -11,6 +13,8 @@ To create a new branch:
 1. Open the Git dialog by selecting the branch button next to your notebook name.
 2. Select **Create branch** and enter a descriptive name.
 3. Base your branch on the appropriate source branch, typically `main`.
+
+:::image type="content" source="../media/3-create-branch.png" alt-text="Screenshot of the create branch dialog." lightbox="../media/3-create-branch.png":::
 
 Use a **consistent naming convention** for branches to identify work clearly. Common patterns include:
 
