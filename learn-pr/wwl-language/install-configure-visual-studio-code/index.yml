@@ -3,8 +3,8 @@ uid: learn.wwl.install-configure-visual-studio-code
 metadata:
   title: Install and Configure Visual Studio Code
   description: "Learn how to configure Visual Studio Code for C# and how to use this professional IDE to create and run console applications."
-  ms.date: 06/16/2025
-  author: wwlpublish
+  ms.date: 12/15/2025
+  author: ChrisHowd
   ms.author: cahowd
   ms.topic: module
   ms.custom:

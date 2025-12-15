@@ -3,8 +3,8 @@ uid: learn.wwl.challenge-project-arrays-iteration-selection
 metadata:
   title: Challenge Project - Develop foreach and if-elseif-else Structures to Process Array Data in C#
   description: "Demonstrate your ability to update a console app that implements arrays, foreach loops, and if statements in response to a user requested feature update."
-  ms.date: 06/16/2025
-  author: wwlpublish
+  ms.date: 12/15/2025
+  author: ChrisHowd
   ms.author: cahowd
   ms.topic: module-challenge-project
   ms.custom:

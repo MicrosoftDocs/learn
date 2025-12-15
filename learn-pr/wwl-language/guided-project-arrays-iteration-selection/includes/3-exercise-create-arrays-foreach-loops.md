@@ -135,7 +135,7 @@ In this task, you review the code that's provided as a Starter project for this 
     ```txt
     Determining projects to restore...
     All projects are up-to-date for restore.
-    Starter -> C:\Users\someuser\Desktop\GuidedProject\Starter\bin\Debug\net7.0\Starter.dll
+    Starter -> C:\Users\someuser\Desktop\GuidedProject\Starter\bin\Debug\net10.0\Starter.dll
 
     Build succeeded.
         0 Warning(s)
@@ -410,7 +410,7 @@ In this task, you'll run the application to verify that your code logic is worki
     ```txt
     Determining projects to restore...
     All projects are up-to-date for restore.
-    Starter -> C:\Users\someuser\Desktop\GuidedProject\Starter\bin\Debug\net6.0\Starter.dll
+    Starter -> C:\Users\someuser\Desktop\GuidedProject\Starter\bin\6Debug\net10.0\Starter.dll
 
     Build succeeded.
         0 Warning(s)

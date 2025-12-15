@@ -147,8 +147,8 @@ The **Run** menu includes the option to start a debug session.
     The first two messages report loading the .NET library and then your Debug101 application.
 
     ```output
-    Loaded 'C:\Program Files\dotnet\shared\Microsoft.NETCore.App\7.0.4\System.Private.CoreLib.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
-    Loaded 'C:\Users\someuser\Desktop\Debug101\bin\Debug\net7.0\Debug101.dll'. Symbols loaded.
+    Loaded 'C:\Program Files\dotnet\shared\Microsoft.NETCore.App\10.0.0\System.Private.CoreLib.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+    Loaded 'C:\Users\someuser\Desktop\Debug101\bin\Debug\net10.0\Debug101.dll'. Symbols loaded.
     ```
 
     The debugger uses a special instance of the .NET runtime to control the execution of your application and evaluate application state.

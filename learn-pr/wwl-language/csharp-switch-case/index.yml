@@ -3,8 +3,8 @@ uid: learn.languages.csharp-switch-case
 metadata:
   title: Branch the Flow of Code using the switch-case Construct in C#
   description: "Learn how to add branching logic that matches one variable or expression against many possible values."
-  ms.date: 06/17/2025
-  author: wwlpublish
+  ms.date: 12/15/2025
+  author: ChrisHowd
   ms.author: cahowd
   ms.topic: module
   ms.custom:
