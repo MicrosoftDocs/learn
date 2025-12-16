@@ -3,8 +3,8 @@ uid: learn.wwl.challenge-project-develop-branching-looping-structures-c-sharp
 metadata:
   title: Challenge Project - Develop Branching and Looping Structures in C#
   description: "Demonstrate your ability to develop a console app that implements selection and iteration statements to achieve app specifications."
-  ms.date: 06/16/2025
-  author: wwlpublish
+  ms.date: 12/15/2025
+  author: ChrisHowd
   ms.author: cahowd
   ms.topic: module
   ms.custom:

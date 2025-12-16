@@ -52,7 +52,7 @@ You use Visual Studio Code as your development environment, and you test your ap
 Use the following steps to prepare for the guided project exercises.
 
 1. Download a zip file containing the code folders for the guided project.
-    - In a browser, navigate to [Guided-project-Work-with-variable-data-in-CSharp.zip](https://github.com/MicrosoftLearning/Guided-project-Work-with-variable-data-in-CSharp/archive/refs/heads/main.zip) to download the zip file.
+    - In a browser, navigate to [Guided-project-Work-with-variable-data-CSharp.zip](https://github.com/MicrosoftLearning/Guided-project-Work-with-variable-data-CSharp/archive/refs/heads/main.zip) to download the zip file.
 
 1. Unzip the downloaded files locally (or in the sandbox if you aren't using a local dev environment)
     1. On your local machine, navigate to your downloads folder.
@@ -61,11 +61,11 @@ Use the following steps to prepare for the guided project exercises.
     1. Select **Show extracted files when complete**, and then select **Extract**.
     1. Make note of the extracted folder location.
 
-1. Open the extracted **Guided-project-Work-with-variable-data-in-CSharp-main** folder in Visual Studio Code
+1. Open the extracted **Guided-project-Work-with-variable-data-CSharp-main** folder in Visual Studio Code
     1. Open Visual Studio Code locally (or open MS Learn sandbox and open Visual Studio Code if you aren't using a local dev environment)
     1. In Visual Studio Code, on the **File** menu, select **Open Folder**
     1. Navigate to the folder that contains your extracted files. Expand the folder structure to locate the folder named "GuidedProject."
-    1. Select **Guided-project-Work-with-variable-data-in-CSharp-main** and then select **Select Folder**
+    1. Select **Guided-project-Work-with-variable-data-CSharp-main** and then select **Select Folder**
 
         - The Visual Studio Code EXPLORER view should show two subfolders named **Final** and **Starter**.
 
