@@ -31,6 +31,8 @@ Supported system destinations include:
 
 Before you can use system destinations, a workspace administrator must configure them. Navigate to **Admin Settings** and select **Notifications** to create destinations. Each destination requires appropriate credentials—webhook URLs for Slack and Teams, integration keys for PagerDuty.
 
+:::image type="content" source="../media/5-create-new-destination.png" alt-text="Screenshot of the admin notification settings." lightbox="../media/5-create-new-destination.png":::
+
 > [!TIP]
 > Use different credentials for each configured destination. If one third-party endpoint is compromised, you can revoke its access without affecting other notification destinations.
 
@@ -48,6 +50,8 @@ To configure job-level notifications, follow these steps:
 6. Select the event types you want to trigger notifications: **Start**, **Success**, **Failure**, **Duration warning**, or **Streaming backlog**.
 7. Select **Save** when you finish adding notifications.
 
+:::image type="content" source="../media/5-create-job-notification" alt-text="Screenshot showing job notifications dialog." lightbox="../media/5-create-job-notification":::
+
 Job-level notifications apply to the overall job run. However, job-level notifications aren't sent when individual tasks fail and retry. Consider this behavior when designing your notification strategy.
 
 ## Configure task-level notifications
@@ -61,6 +65,8 @@ To add task notifications:
 3. Configure the destination and event types just as you would for job notifications.
 4. Save the task configuration.
 
+:::image type="content" source="../media/5-create-task-notification.png" alt-text="Screenshot showing task-level notifications." lightbox="../media/5-create-task-notification.png":::
+
 Task notifications are particularly valuable when your job contains multiple independent tasks. If Task A fails, you receive an immediate notification rather than waiting for the entire job to complete or fail.
 
 By default, Azure Databricks retries failed tasks three times. If you don't want notifications for every retry attempt, select **Mute notifications until the last retry**. This reduces noise while still alerting you when a task ultimately fails.
@@ -68,6 +74,8 @@ By default, Azure Databricks retries failed tasks three times. If you don't want
 ## Reduce notification noise
 
 Alert fatigue undermines the value of notifications. When teams receive too many alerts, they start ignoring them—including the critical ones. Apply these strategies to keep your alerts meaningful.
+
+:::image type="content" source="../media/5-alert-fatigue.png" alt-text="Diagram explaining alert fatigue." border="false" lightbox="../media/5-alert-fatigue.png":::
 
 **Filter out skipped and canceled runs**: When you cancel a job or a run gets skipped due to concurrent run limits, you might not need a notification. Select **Mute notifications for skipped runs** or **Mute notifications for canceled runs** to suppress these.
 
@@ -102,6 +110,8 @@ If you require specific formatting for notifications, webhooks let you control t
 ## Monitor pipelines in Azure Data Factory
 
 When your Databricks jobs are orchestrated by Azure Data Factory (ADF), you have additional monitoring options. ADF provides visual monitoring in the Azure portal where you can track pipeline runs, activity status, and execution duration.
+
+:::image type="content" source="../media/5-azure-data-factory-pipeline-runs.png" alt-text="Screenshot of Azure Databricks list view for monitoring pipeline runs." lightbox="../media/5-azure-data-factory-pipeline-runs.png":::
 
 ADF also supports creating alerts on metrics such as:
 
