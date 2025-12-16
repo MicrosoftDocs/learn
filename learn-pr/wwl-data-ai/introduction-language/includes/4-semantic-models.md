@@ -21,19 +21,19 @@ For example, consider the following three-dimensional embeddings for some common
 
 |Word|Vector|
 |-|-|
-|:::no-loc text="dog":::|[0.8, 0.6, 0.1]|
-|:::no-loc text="puppy":::|[0.9, 0.7, 0.4]|
-|:::no-loc text="cat":::|[0.7, 0.5, 0.2]|
-|:::no-loc text="kitten":::|[0.8, 0.6, 0.5]|
-|:::no-loc text="young":::|[0.1, 0.1, 0.3]|
-|:::no-loc text="ball":::|[0.3, 0.9, 0.1]|
-|:::no-loc text="tree":::|[0.2, 0.1, 0.9]|
+|`dog`|[0.8, 0.6, 0.1]|
+|`puppy`|[0.9, 0.7, 0.4]|
+|`cat`|[0.7, 0.5, 0.2]|
+|`kitten`|[0.8, 0.6, 0.5]|
+|`young`|[0.1, 0.1, 0.3]|
+|`ball`|[0.3, 0.9, 0.1]|
+|`tree`|[0.2, 0.1, 0.9]|
 
 We can visualize these vectors in three-dimensional space as shown here:
 
-![Diagram of a 3D visualization of word vectors.](../media/word-vectors-3d.png)
+![Diagram of a 3D visualization of word vectors.](../media/vectors.png)
 
-The vectors for :::no-loc text=""dog""::: and :::no-loc text=""cat""::: are similar (both domestic animals), as are :::no-loc text=""puppy""::: and :::no-loc text=""kitten""::: (both young animals). The words :::no-loc text=""tree"":::, :::no-loc text=""young"":::, and :::no-loc text="ball""::: have distinctly different vector orientations, reflecting their different semantic meanings.
+The vectors for `"dog"` and `"cat"` are similar (both domestic animals), as are `"puppy"` and `"kitten"` (both young animals). The words `"tree"`, `"young"`, and `ball"` have distinctly different vector orientations, reflecting their different semantic meanings.
 
 The semantic characteristic encoded in the vectors makes it possible to use vector-based operations that compare words and enable analytical comparisons.
 
@@ -41,7 +41,7 @@ The semantic characteristic encoded in the vectors makes it possible to use vect
 
 Since the orientation of vectors is determined by their dimension values, words with similar semantic meanings tend to have similar orientations. This means you can use calculations such as the *cosine similarity* between vectors to make meaningful comparisons.
 
-For example, to determine the "odd one out" between :::no-loc text=""dog"":::, :::no-loc text=""cat"":::, and :::no-loc text=""tree"":::, you can calculate the cosine similarity between pairs of vectors. The cosine similarity is calculated as:
+For example, to determine the "odd one out" between `"dog"`, `"cat"`, and `"tree"`, you can calculate the cosine similarity between pairs of vectors. The cosine similarity is calculated as:
 
 `cosine_similarity(A, B) = (A · B) / (||A|| * ||B||)`
 
@@ -49,24 +49,24 @@ Where `A · B` is the dot product and `||A||` is the magnitude of vector A.
 
 Calculating similarities between the three words:
 
-- **:::no-loc text="dog":::** [0.8, 0.6, 0.1] and **:::no-loc text="cat":::** [0.7, 0.5, 0.2]:
+- **`dog`** [0.8, 0.6, 0.1] and **`cat`** [0.7, 0.5, 0.2]:
   - Dot product: (0.8 × 0.7) + (0.6 × 0.5) + (0.1 × 0.2) = 0.56 + 0.30 + 0.02 = 0.88
-  - Magnitude of :::no-loc text="dog":::: √(0.8² + 0.6² + 0.1²) = √(0.64 + 0.36 + 0.01) = √1.01 ≈ 1.005
-  - Magnitude of :::no-loc text="cat":::: √(0.7² + 0.5² + 0.2²) = √(0.49 + 0.25 + 0.04) = √0.78 ≈ 0.883
+  - Magnitude of `dog`: √(0.8² + 0.6² + 0.1²) = √(0.64 + 0.36 + 0.01) = √1.01 ≈ 1.005
+  - Magnitude of `cat`: √(0.7² + 0.5² + 0.2²) = √(0.49 + 0.25 + 0.04) = √0.78 ≈ 0.883
   - Cosine similarity: 0.88 / (1.005 × 0.883) ≈ **0.992** (high similarity)
 
-- **:::no-loc text="dog":::** [0.8, 0.6, 0.1] and **:::no-loc text="tree":::** [0.2, 0.1, 0.9]:
+- **`dog`** [0.8, 0.6, 0.1] and **`tree`** [0.2, 0.1, 0.9]:
   - Dot product: (0.8 × 0.2) + (0.6 × 0.1) + (0.1 × 0.9) = 0.16 + 0.06 + 0.09 = 0.31
-  - Magnitude of :::no-loc text="tree":::: √(0.2² + 0.1² + 0.9²) = √(0.04 + 0.01 + 0.81) = √0.86 ≈ 0.927
+  - Magnitude of `tree`: √(0.2² + 0.1² + 0.9²) = √(0.04 + 0.01 + 0.81) = √0.86 ≈ 0.927
   - Cosine similarity: 0.31 / (1.005 × 0.927) ≈ **0.333** (low similarity)
 
-- **:::no-loc text="cat":::** [0.7, 0.5, 0.2] and **:::no-loc text="tree":::** [0.2, 0.1, 0.9]:
+- **`cat`** [0.7, 0.5, 0.2] and **`tree`** [0.2, 0.1, 0.9]:
   - Dot product: (0.7 × 0.2) + (0.5 × 0.1) + (0.2 × 0.9) = 0.14 + 0.05 + 0.18 = 0.37
   - Cosine similarity: 0.37 / (0.883 × 0.927) ≈ **0.452** (low similarity)
 
 ![Diagram of cosine similarity visualization showing dog, cat, and tree vectors.](../media/cosine-similarity.png)
 
-The results show that :::no-loc text=""dog""::: and :::no-loc text=""cat""::: are highly similar (0.992), while :::no-loc text=""tree""::: has lower similarity to both :::no-loc text=""dog""::: (0.333) and :::no-loc text=""cat""::: (0.452). Therefore, **:::no-loc text="tree":::** is clearly the odd one out.
+The results show that `"dog"` and `"cat"` are highly similar (0.992), while `"tree"` has lower similarity to both `"dog"` (0.333) and `"cat"` (0.452). Therefore, **`tree`** is clearly the odd one out.
 
 ### Vector translation through addition and subtraction
 
@@ -74,31 +74,31 @@ You can add or subtract vectors to produce new vector-based results; which can t
 
 For example, using the vectors from earlier:
 
-- **:::no-loc text="dog":::** + **:::no-loc text="young":::** = [0.8, 0.6, 0.1] + [0.1, 0.1, 0.3] = [0.9, 0.7, 0.4] = **:::no-loc text="puppy":::**
-- **:::no-loc text="cat":::** + **:::no-loc text="young":::** = [0.7, 0.5, 0.2] + [0.1, 0.1, 0.3] = [0.8, 0.6, 0.5] = **:::no-loc text="kitten":::**
+- **`dog`** + **`young`** = [0.8, 0.6, 0.1] + [0.1, 0.1, 0.3] = [0.9, 0.7, 0.4] = **`puppy`**
+- **`cat`** + **`young`** = [0.7, 0.5, 0.2] + [0.1, 0.1, 0.3] = [0.8, 0.6, 0.5] = **`kitten`**
 
 ![Diagram of vector addition showing dog + young = puppy and cat + young = kitten.](../media/vector-addition.png)
 
-These operations work because the vector for :::no-loc text=""young""::: encodes the semantic transformation from an adult animal to its young counterpart.
+These operations work because the vector for `"young"` encodes the semantic transformation from an adult animal to its young counterpart.
 
 > [!NOTE]
 > In practice, vector arithmetic rarely produces exact matches; instead, you would search for the word whose vector is *closest* (most similar) to the result.
 
 The arithmetic works in reverse as well:
 
-- **:::no-loc text="puppy":::** - **:::no-loc text="young":::** = [0.9, 0.7, 0.4] - [0.1, 0.1, 0.3] = [0.8, 0.6, 0.1] = **:::no-loc text="dog":::**
-- **:::no-loc text="kitten":::** - **:::no-loc text="young":::** = [0.8, 0.6, 0.5] - [0.1, 0.1, 0.3] = [0.7, 0.5, 0.2] = **:::no-loc text="cat":::**
+- **`puppy`** - **`young`** = [0.9, 0.7, 0.4] - [0.1, 0.1, 0.3] = [0.8, 0.6, 0.1] = **`dog`**
+- **`kitten`** - **`young`** = [0.8, 0.6, 0.5] - [0.1, 0.1, 0.3] = [0.7, 0.5, 0.2] = **`cat`**
 
 ### Analogical reasoning
 
-Vector arithmetic can also answer analogy questions like "*:::no-loc text="puppy":::* is to *:::no-loc text="dog":::* as *:::no-loc text="kitten":::* is to *?*"
+Vector arithmetic can also answer analogy questions like "*`puppy`* is to *`dog`* as *`kitten`* is to *?*"
 
-To solve this, calculate: **:::no-loc text="kitten":::** - **:::no-loc text="puppy":::** + **:::no-loc text="dog":::**
+To solve this, calculate: **`kitten`** - **`puppy`** + **`dog`**
 
 - [0.8, 0.6, 0.5] - [0.9, 0.7, 0.4] + [0.8, 0.6, 0.1]
 - = [-0.1, -0.1, 0.1] + [0.8, 0.6, 0.1]
 - = [0.7, 0.5, 0.2]
-- = **:::no-loc text="cat":::**
+- = **`cat`**
 
 ![Diagram of vector arithmetic showing kitten - puppy + dog = cat.](../media/vector-analogy.png)
 
