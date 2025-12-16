@@ -1,4 +1,4 @@
-Unity Catalog can govern data that lives outside Databricks—whether in cloud storage like Azure Data Lake Storage or in operational databases. This capability solves a common challenge: you have valuable data in multiple systems, and you need to query it without duplicating everything into Databricks.
+Unity Catalog can govern data that lives outside Azure Databricks—whether in cloud storage like Azure Data Lake Storage or in operational databases. This capability solves a common challenge: you have valuable data in multiple systems, and you need to query it without duplicating everything into Azure Databricks.
 
 This unit covers three ways Unity Catalog extends governance to external data:
 
@@ -6,19 +6,19 @@ This unit covers three ways Unity Catalog extends governance to external data:
 - **Lakehouse Federation** – Query operational databases without moving data
 - **Delta Sharing** – Securely share governed datasets with other organizations or workspaces
 
-All three approaches maintain Unity Catalog's governance model: access control, auditing, and lineage tracking work the same whether data lives inside or outside Databricks.
+All three approaches maintain Unity Catalog's governance model: access control, auditing, and lineage tracking work the same whether data lives inside or outside Azure Databricks.
 
 ## Configure storage credentials and external locations
 
-When Databricks interacts with cloud storage, it needs two things: a way to authenticate, and a definition of where the data lives. Platform administrators handle this configuration through **Catalog Explorer**, the central interface for managing all Unity Catalog objects.
+When Azure Databricks interacts with cloud storage, it needs two things: a way to authenticate, and a definition of where the data lives. Platform administrators handle this configuration through **Catalog Explorer**, the central interface for managing all Unity Catalog objects.
 
 ### Storage credentials
 
-A **storage credential** defines how Databricks authenticates to external storage—think of it as the "key" to external data. In Azure environments, the storage credential references an Azure Databricks Access Connector that a Platform Administrator creates in the Azure portal. The Access Connector is an Azure resource with a managed identity that is granted permissions on your Azure storage account. Databricks uses this managed identity to access the storage on behalf of users. Once the Access Connector exists in Azure, you register it in Unity Catalog as a storage credential.
+A **storage credential** defines how Azure Databricks authenticates to external storage—think of it as the "key" to external data. In Azure environments, the storage credential references an Azure Databricks Access Connector that a Platform Administrator creates in the Azure portal. The Access Connector is an Azure resource with a managed identity that is granted permissions on your Azure storage account. Azure Databricks uses this managed identity to access the storage on behalf of users. Once the Access Connector exists in Azure, you register it in Unity Catalog as a storage credential.
 
 To register a storage credential in Catalog Explorer:
 
-1. Navigate to **Catalog Explorer** in your Databricks workspace
+1. Navigate to **Catalog Explorer** in your Azure Databricks workspace
 2. Select on **External data** in the navigation menu
 3. Select **Storage credentials** and select **Create credential**
 4. Provide the resource ID of your Azure Databricks Access Connector
@@ -49,9 +49,9 @@ Once configured, Unity Catalog enforces permissions on the external location and
 
 External storage works well for data files in cloud storage. But what about data in operational databases like SQL Server, or PostgreSQL? Lakehouse Federation enables Unity Catalog to query these systems directly without copying data.
 
-This is valuable when operational systems contain important datasets that you need to combine with Delta tables in Databricks. Rather than extracting, transforming, and loading data into Databricks, you query it where it already lives.
+This is valuable when operational systems contain important datasets that you need to combine with Delta tables in Azure Databricks. Rather than extracting, transforming, and loading data into Azure Databricks, you query it where it already lives.
 
-The federation process begins with a **connection**, which stores the authentication details and endpoint of the external system. Once the connection exists, you create a **foreign catalog** that exposes the schemas and tables from that system inside Unity Catalog. To users, these foreign catalogs behave like native Databricks catalogs—queries can join across internal and external data seamlessly.
+The federation process begins with a **connection**, which stores the authentication details and endpoint of the external system. Once the connection exists, you create a **foreign catalog** that exposes the schemas and tables from that system inside Unity Catalog. To users, these foreign catalogs behave like native Azure Databricks catalogs—queries can join across internal and external data seamlessly.
 
 ### Create connections and foreign catalogs
 
@@ -72,7 +72,7 @@ Platform administrators set up connections and foreign catalogs through Catalog 
 
 :::image type="content" source="../media/create-foreign-catalog.png" alt-text="Screenshot of Databricks Catalog Explorer showing the Create foreign catalog dialog where Platform Admins select a connection and name the foreign catalog that will expose external database schemas and tables." lightbox="../media/create-foreign-catalog.png":::
 
-After the foreign catalog is created, it appears in Catalog Explorer alongside your other catalogs. You can expand it to see the schemas and tables from the external database—for example, a SQL Server foreign catalog might show schemas like `dbo`, `sales`, and `inventory` with their respective tables. All of this external data is now available for queries, subject to the same governance and permissions as internal Databricks data.
+After the foreign catalog is created, it appears in Catalog Explorer alongside your other catalogs. You can expand it to see the schemas and tables from the external database—for example, a SQL Server foreign catalog might show schemas like `dbo`, `sales`, and `inventory` with their respective tables. All of this external data is now available for queries, subject to the same governance and permissions as internal Azure Databricks data.
 
 Once configured, you can query the foreign catalog using standard SQL, joining external database tables with internal Delta tables seamlessly.
 
