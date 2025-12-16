@@ -27,7 +27,7 @@ products:
 subjects:
 - architecture
 modules:
-- learn.create-serverless-logic-with-functions
+#- learn.create-serverless-logic-with-functions
 - learn.azure.route-and-process-data-logic-apps
 #- learn.expose-hybrid-services-with-azure-relay
 trophy:
