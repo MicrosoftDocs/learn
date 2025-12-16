@@ -23,6 +23,8 @@ To create a new job in Azure Databricks:
 3. Enter a descriptive name for your job.
 4. Configure your first task by specifying the **Task name** and selecting the **Type** (such as Notebook, Python script, or SQL).
 
+:::image type="content" source="../media/2-create-lakeflow-job.png" alt-text="Screenshot of the lakeflow editor." lightbox="../media/2-create-lakeflow-job.png":::
+
 The task type determines which configuration options appear. For a notebook task, you specify the notebook path and any parameters. For a SQL task, you select a query and SQL warehouse. The following table summarizes common task types and their configuration requirements:
 
 | Task type     | Key configuration            | Compute options                             |
@@ -43,6 +45,8 @@ Tasks that run code (notebooks, Python scripts, SQL files) need a source locatio
 **Git provider** connects to a remote repository. You specify the repository URL, branch or tag, and the relative path to your file. All tasks in a job share the same Git reference, ensuring consistent code versions across the workflow. When you use Git, Azure Databricks captures a snapshot of the code at run time, so your job executes against a specific commit.
 
 **DBFS/ADLS** (for Python scripts) allows you to reference files stored in volumes or cloud storage. Provide the full URI, such as `abfss://container@storage.dfs.core.windows.net/path/script.py`.
+
+:::image type="content" source="../media/2-configure-lakeflow-task.png" alt-text="Screenshot of the lakeflow editor task configuration." lightbox="../media/2-configure-lakeflow-task.png":::
 
 ## Configure compute resources
 
@@ -93,6 +97,8 @@ To add job parameters:
 
 1. In the **Job details** panel, locate the **Parameters** section.
 2. Select **Add** and enter a key-value pair.
+
+:::image type="content" source="../media/2-add-parameters.png" alt-text="Screenshot of the lakeflow editor add parameter section." lightbox="../media/2-add-parameters.png":::
 
 Tasks access parameters differently based on their type. In notebooks, use `dbutils.widgets.get("parameter_name")` to retrieve parameter values. Python scripts receive parameters as command-line arguments.
 

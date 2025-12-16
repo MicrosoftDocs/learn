@@ -24,7 +24,11 @@ To set a retry policy for a task:
 3. In the task configuration panel, select **+ Add** next to **Retries**
 4. Specify the number of retry attempts and the interval between retries
 
+:::image type="content" source="../media/6-configure-task-level-retry-policy.png" alt-text="Screenshot of the retry policy dialog." lightbox="../media/6-configure-task-level-retry-policy.png":::
+
 The **retry interval** is calculated in milliseconds between the start of the failed run and the subsequent retry run. For example, if you set an interval of 60,000 milliseconds (1 minute) and your task took 30 seconds before failing, the next retry starts 30 seconds after the failure.
+
+:::image type="content" source="../media/6-task-execution-flow.png" alt-text="Diagram explaining task execution flow." border="false" lightbox="../media/6-task-execution-flow.png":::
 
 > [!TIP]
 > Set reasonable retry limits—typically 1 to 3 retries for most workloads. Avoid configuring unlimited retries, as a persistent failure will waste resources without resolving the underlying issue.
@@ -43,11 +47,15 @@ To configure a job to run in continuous mode:
 4. Optionally, select a **Task retry mode**—choose **On failure** to retry failed tasks within a job, or **Never** to only retry at the job level
 5. Select **Save**
 
+:::image type="content" source="../media/6-configure-continuous-job-retry-mode.png" alt-text="Screenshot of the continuous job task retry mode dialog." lightbox="../media/6-configure-continuous-job-retry-mode.png":::
+
 The **exponential backoff algorithm** works as follows:
 
 1. When consecutive failures exceed a threshold, the job waits before the next retry
 2. Each subsequent failure increases the wait period up to a maximum set by the system
 3. If a run completes successfully or runs without failure for a threshold period, the **backoff sequence resets**
+
+:::image type="content" source="../media/6-exponential-backoff-algorithm.png" alt-text="Diagram explaining the exponential backoff pattern." border="false" lightbox="../media/6-exponential-backoff-algorithm.png":::
 
 > [!NOTE]
 > Continuous jobs don't support task dependencies or task-level retry policies in the traditional sense. Instead, set the **Task retry mode** to control whether failed tasks retry before triggering a new job run.
@@ -58,12 +66,16 @@ You can monitor continuous jobs in the exponential backoff state through the **J
 
 A task that hangs indefinitely blocks downstream processing and wastes compute resources. **Timeout thresholds** terminate unresponsive tasks so your job can either retry or fail cleanly.
 
+:::image type="content" source="../media/6-timeout-threshold.png" alt-text="Diagram explaining timout behavior." border="false" lightbox="../media/6-timeout-threshold.png":::
+
 To configure timeout thresholds:
 
 1. In the task configuration panel, select **Metric thresholds**
 2. Select **Run duration** in the **Metric** dropdown
 3. Enter a duration in the **Warning** field to trigger a notification when the task exceeds expected completion time
 4. Enter a duration in the **Timeout** field to terminate the task if it exceeds maximum completion time
+
+:::image type="content" source="../media/6-configure-metric-thresholds.png" alt-text="Screenshot of the metric thresholds dialog." lightbox="../media/6-configure-metric-thresholds.png":::
 
 When a task times out, Azure Databricks sets its status to "Timed Out" and handles it according to your retry policy. If retries remain, the task restarts. If all retries are exhausted, the task fails and any dependent tasks are affected based on your job's dependency configuration.
 

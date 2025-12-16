@@ -6,6 +6,8 @@ In this unit, you learn how to configure event-based triggers that automate your
 
 Lakeflow Jobs supports several trigger types that determine when your jobs run. While scheduled triggers run at fixed times, event-based triggers respond to data changes in your environment.
 
+:::image type="content" source="../media/3-configure-trigger.png" alt-text="Screenshot of the lakeflow job trigger dialog." lightbox="../media/3-configure-trigger.png":::
+
 | Trigger type | Behavior |
 |--------------|----------|
 | **Table update** | Runs when monitored tables receive new data or modifications |
@@ -64,6 +66,8 @@ To configure a file arrival trigger, specify the storage location using the full
 /Volumes/mycatalog/myschema/myvolume/incoming/
 ```
 
+:::image type="content" source="../media/3-configure-file-arrival-trigger.png" alt-text="Screenshot of the lakeflow file arrival trigger dialog." lightbox="../media/3-configure-file-arrival-trigger.png":::
+
 Before creating a file arrival trigger, verify you have:
 
 - A workspace with Unity Catalog enabled
@@ -82,6 +86,8 @@ For production workloads, enable file events on your external location. Without 
 Continuous triggers keep your job running by starting a new run immediately after the previous one completes or fails. This approach suits scenarios requiring near real-time data processing.
 
 When you configure a continuous trigger, your job enters a perpetual cycle: complete a run, start the next run. If a run fails, the trigger still starts a new run, making continuous jobs resilient to transient errors.
+
+:::image type="content" source="../media/3-configure-continuous-trigger.png" alt-text="Screenshot of the lakeflow continuous trigger dialog." lightbox="../media/3-configure-continuous-trigger.png":::
 
 Continuous triggers work well for:
 
