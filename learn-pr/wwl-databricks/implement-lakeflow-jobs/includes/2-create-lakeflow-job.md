@@ -46,7 +46,7 @@ Tasks that run code (notebooks, Python scripts, SQL files) need a source locatio
 
 **DBFS/ADLS** (for Python scripts) allows you to reference files stored in volumes or cloud storage. Provide the full URI, such as `abfss://container@storage.dfs.core.windows.net/path/script.py`.
 
-:::image type="content" source="../media/2-configure-lakeflow-task.png" alt-text="Screenshot of the lakeflow editor task configuration." lightbox="../media/2-configure-lakeflow-task":::
+:::image type="content" source="../media/2-configure-lakeflow-task.png" alt-text="Screenshot of the lakeflow editor task configuration." lightbox="../media/2-configure-lakeflow-task.png":::
 
 ## Configure compute resources
 

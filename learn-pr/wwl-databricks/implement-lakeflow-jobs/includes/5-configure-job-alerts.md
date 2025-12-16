@@ -50,7 +50,7 @@ To configure job-level notifications, follow these steps:
 6. Select the event types you want to trigger notifications: **Start**, **Success**, **Failure**, **Duration warning**, or **Streaming backlog**.
 7. Select **Save** when you finish adding notifications.
 
-:::image type="content" source="../media/5-create-job-notification" alt-text="Screenshot showing job notifications dialog." lightbox="../media/5-create-job-notification":::
+:::image type="content" source="../media/5-create-job-notification.png" alt-text="Screenshot showing job notifications dialog." lightbox="../media/5-create-job-notification.png":::
 
 Job-level notifications apply to the overall job run. However, job-level notifications aren't sent when individual tasks fail and retry. Consider this behavior when designing your notification strategy.
 
