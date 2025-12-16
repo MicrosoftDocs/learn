@@ -4,6 +4,8 @@ When you need to ingest data from multiple sources with automated orchestration,
 
 Lakeflow Declarative Pipelines is a framework for building batch and streaming data pipelines using SQL or Python. You declare the structure of your data transformations, and the pipeline automatically handles orchestration, retries, and incremental processing.
 
+:::image type="content" source="../media/8-understand-lakeflow-declarative-pipelines-ingestion.png" alt-text="Diagram explaining Lakeflow Declarative Pipelines for ingestion." border="false" lightbox="../media/8-understand-lakeflow-declarative-pipelines-ingestion.png":::
+
 For data ingestion, you typically create **streaming tables** as targets. A streaming table is a Delta table with built-in support for streaming data. Each row from the source is processed exactly once, making streaming tables ideal for append-only ingestion workloads where data continuously arrives.
 
 The pipeline framework provides several benefits for ingestion:

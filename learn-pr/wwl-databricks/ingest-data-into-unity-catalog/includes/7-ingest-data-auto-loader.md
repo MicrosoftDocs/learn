@@ -6,6 +6,8 @@ Auto Loader is a Structured Streaming source that monitors a cloud storage locat
 
 When you start an Auto Loader stream, it can process existing files in the directory and then continuously watch for new arrivals. The stream stores progress information in a checkpoint location, which allows it to resume from exactly where it stopped if interrupted.
 
+:::image type="content" source="../media/7-understand-how-auto-loader-works.png" alt-text="Diagram showing how Auto Loader works." border="false" lightbox="../media/7-understand-how-auto-loader-works.png":::
+
 Auto Loader detects new files using one of two modes:
 
 - **Directory listing mode**: Auto Loader periodically lists the input directory to discover new files. This approach requires no additional configuration beyond storage access.
