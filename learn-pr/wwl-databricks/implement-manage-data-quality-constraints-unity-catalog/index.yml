@@ -34,7 +34,7 @@ units:
   - learn.wwl.implement-manage-data-quality-constraints-unity-catalog.introduction
   - learn.wwl.implement-manage-data-quality-constraints-unity-catalog.implement-validation-checks
   - learn.wwl.implement-manage-data-quality-constraints-unity-catalog.implement-data-type-checks
-  - learn.wwl.implement-manage-data-quality-constraints-unity-catalog.implement-schema-enforcement-manage-drift
+  - learn.wwl.implement-manage-data-quality-constraints-unity-catalog.detect-manage-schema-drift
   - learn.wwl.implement-manage-data-quality-constraints-unity-catalog.manage-data-quality-pipeline-expectations
   - learn.wwl.implement-manage-data-quality-constraints-unity-catalog.knowledge-check
   - learn.wwl.implement-manage-data-quality-constraints-unity-catalog.summary

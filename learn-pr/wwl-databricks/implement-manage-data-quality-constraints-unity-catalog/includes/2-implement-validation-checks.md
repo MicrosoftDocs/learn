@@ -6,6 +6,8 @@ In this unit, you learn how to implement validation checks for nullability, data
 
 Azure Databricks provides two primary mechanisms for implementing validation checks: pipeline expectations and table constraints. Each approach serves different scenarios and offers distinct capabilities.
 
+:::image type="content" source="../media/2-understand-validation-approaches.png" alt-text="Diagram explaining validation approaches in Azure Databricks." border="false" lightbox="../media/2-understand-validation-approaches.png":::
+
 **Pipeline expectations** apply validation during data transformations in Lakeflow Spark Declarative Pipelines. Expectations let you warn, drop invalid records, or fail the pipeline when data violates your rules. This approach works well for streaming tables and materialized views where you need real-time quality control.
 
 **Table constraints** enforce rules directly on Delta Lake tables. Constraints reject invalid data at write time, preventing bad records from ever entering your tables. This approach suits batch processing and scenarios requiring strict data integrity guarantees.
@@ -64,13 +66,15 @@ Cardinality validation ensures that columns expected to contain unique values ac
 Pipeline expectations can validate cardinality by checking for conditions that indicate uniqueness issues. For example, you can verify that a Social Security Number appears only once per person:
 
 ```python
+from pyspark.sql.window import Window
+from pyspark.sql.functions import count
+
 @dp.table()
-@dp.expect("unique_ssn_per_person", """
-    ssn IS NOT NULL 
-    AND LENGTH(ssn) = 9
-""")
+@dp.expect("unique_ssn_per_person", "ssn_count = 1")
 def employees():
-    return spark.readStream.table("raw.employees")
+    df = spark.table("raw.employees")
+    w = Window.partitionBy("ssn")
+    return df.withColumn("ssn_count", count("*").over(w))
 ```
 
 For more comprehensive cardinality checks, combine expectations with aggregation logic in your transformation:
