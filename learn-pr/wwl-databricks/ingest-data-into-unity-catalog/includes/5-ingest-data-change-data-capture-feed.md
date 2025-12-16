@@ -4,6 +4,8 @@ When source systems generate millions of transactions daily, reloading entire ta
 
 Change data capture ingestion involves reading a stream of change records from a source system and applying those changes to a target table. Unlike full table reloads, CDC processes only what has changed since the last sync, reducing both processing time and resource consumption.
 
+:::image type="content" source="../media/5-understand-change-data-capture-ingestion-patterns.png" alt-text="Diagram explaining CDC ingestion patterns." border="false" lightbox="../media/5-understand-change-data-capture-ingestion-patterns.png":::
+
 A typical CDC feed contains records with the following structure:
 
 - **Data columns**: The actual values for each field in the source table
@@ -106,5 +108,7 @@ With this configuration, changes to the `last_login` column update the existing 
 Distributed systems often deliver events out of order. A network delay might cause an older update to arrive after a newer one. The AUTO CDC API handles this scenario automatically using the sequence column you specify.
 
 When two updates arrive for the same key, the API compares their sequence values. If the newer update (higher sequence number) has already been applied and an older update arrives late, the API ignores the late-arriving record. This ensures your destination table always reflects the correct final state.
+
+:::image type="content" source="../media/5-handle-out-of-order-events.png" alt-text="Diagram explaining handling out-of-order events." border="false" lightbox="../media/5-handle-out-of-order-events.png":::
 
 Without this built-in handling, you would need to write complex merge logic that checks timestamps, compares versions, and conditionally applies updates. The AUTO CDC API encapsulates all this logic, letting you focus on your business requirements rather than edge case handling.

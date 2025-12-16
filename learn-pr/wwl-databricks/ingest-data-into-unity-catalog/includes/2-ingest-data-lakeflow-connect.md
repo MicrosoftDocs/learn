@@ -4,6 +4,8 @@ Data engineers face a common challenge: getting data from diverse sources into a
 
 Lakeflow Connect is a collection of managed connectors in Azure Databricks that simplify data ingestion from external sources. Rather than writing custom extraction code, you configure pipelines through either a graphical interface or declarative definitions.
 
+:::image type="content" source="../media/2-understand-lakeflow-connect-pipelines.png" alt-text="Diagram explaining Lakeflow Connect pipelines." border="false" lightbox="../media/2-understand-lakeflow-connect-pipelines.png":::
+
 Each pipeline consists of three core components:
 
 - **Connection**: Stores credentials and endpoint information for the source system. You create connections once and reuse them across multiple pipelines.
