@@ -1,4 +1,4 @@
-The specification file (`spec.md`) is the single source of truth for what your feature should do. Writing an effective spec ensures GitHub Copilot generates plans and code that precisely match your requirements. This unit explains how to structure specifications, use GitHub Spec Kit to create them, and refine them through iterative clarification.
+The specification file (`spec.md`) is the single source of truth for what your feature should do. Writing an effective spec ensures GitHub Copilot generates plans and code that precisely match your requirements.
 
 ## The spec as the single source of truth
 
@@ -348,7 +348,7 @@ Before finalizing a spec, verify it doesn't conflict with project principles:
 
 Inconsistencies caught during specification are far cheaper to fix than after implementation.
 
-The completed specification becomes your contract with GitHub Copilot. When you proceed to the planning phase in the next unit, GitHub Copilot references this spec to design technical implementations that precisely match your requirements. The time invested in thorough specification pays dividends throughout development.
+The completed specification becomes your contract with GitHub Copilot. When you proceed to the planning phase, GitHub Copilot references this spec to design technical implementations that precisely match your requirements. The time invested in thorough specification pays dividends throughout development.
 
 ## Summary
 

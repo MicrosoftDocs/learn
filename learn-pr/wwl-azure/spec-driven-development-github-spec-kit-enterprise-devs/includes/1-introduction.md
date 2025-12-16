@@ -1,6 +1,6 @@
-Spec-Driven Development (SDD) is a structured approach to software development that treats specifications as executable sources of truth. With GitHub Spec Kit and AI coding assistants like GitHub Copilot, specifications guide code generation directly, ensuring that implementations match requirements while maintaining consistency across complex projects.
+Spec-Driven Development (SDD) is a structured approach to software development that treats specifications as executable sources of truth rather than throwaway planning documents. When you use SDD with AI coding assistants like GitHub Copilot, the specification guides code generation directly, ensuring the implementation matches your intended behavior from the start.
 
-Imagine you're a developer building a document upload feature for an internal employee dashboard. Rather than iteratively prompting GitHub Copilot with fragmentary instructions and discovering requirements as you go, you use Spec-Driven Development to define clear specifications upfront. GitHub Spec Kit transforms these specifications into technical plans and implementation tasks, which GitHub Copilot then uses to generate aligned, production-ready code.
+Imagine you're a developer building a document upload feature for an internal employee dashboard. Rather than iteratively prompting GitHub Copilot with fragmentary instructions and discovering requirements as you go, you use Spec-Driven Development to define clear specifications upfront. GitHub Spec Kit helps you transform specification files into technical plans and implementation tasks, which GitHub Copilot uses to generate aligned, production-ready code.
 
 The topics covered in this module include:
 

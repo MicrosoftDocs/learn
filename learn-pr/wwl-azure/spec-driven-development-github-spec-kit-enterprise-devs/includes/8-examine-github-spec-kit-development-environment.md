@@ -1,4 +1,4 @@
-GitHub Spec Kit requires a properly configured development environment to support spec-driven development workflows. This unit examines the conceptual framework of the development environment, including required components, supported platforms, and configuration considerations that enable effective use of GitHub Spec Kit with AI-powered coding assistants.
+GitHub Spec Kit requires a properly configured development environment to support spec-driven development workflows. A properly configured environment includes the Specify CLI, AI coding assistants, code editors, and version control systems. Understanding the components, supported configurations, and installation concepts is essential for setting up an effective development environment.
 
 ## Development environment components
 

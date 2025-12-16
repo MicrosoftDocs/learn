@@ -285,8 +285,6 @@ Start with simple features to build familiarity with the workflow. As you gain e
 
 GitHub Spec Kit provides the tooling infrastructure that makes Spec-Driven Development practical with AI coding assistants. By standardizing workflows, providing reusable command patterns, and maintaining specification artifacts in version control, GitHub Spec Kit transforms specification-driven development from theory into daily practice.
 
-The next unit covers environment setup and installation steps for GitHub Spec Kit, preparing your development environment for specification-driven development with GitHub Copilot.
-
 ## Summary
 
 The GitHub Spec Kit is a powerful toolkit that enables Spec-Driven Development by integrating structured workflows, persistent artifacts, and reusable AI command patterns. It transforms how you work with AI coding assistants like GitHub Copilot by providing a systematic approach to turning specifications into working implementations. By using GitHub Spec Kit, you can ensure alignment between requirements and code, maintain traceability of decisions, and enhance collaboration across development teams.

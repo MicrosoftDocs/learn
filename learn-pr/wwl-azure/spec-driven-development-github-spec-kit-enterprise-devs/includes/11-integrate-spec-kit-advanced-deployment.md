@@ -1,4 +1,4 @@
-Spec-Driven Development extends beyond initial feature implementation. Integrating SDD practices into continuous integration and deployment pipelines ensures specifications remain synchronized with production code throughout the software lifecycle. This unit explores advanced integration patterns for enterprise DevOps environments.
+Spec-Driven Development extends beyond initial feature implementation. Integrating SDD practices into continuous integration and deployment pipelines ensures specifications remain synchronized with production code throughout the software lifecycle.
 
 ## Automate specification validation in CI/CD
 
