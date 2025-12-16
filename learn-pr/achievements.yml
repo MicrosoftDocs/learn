@@ -7370,11 +7370,6 @@ achievements:
   title: Introduction to Azure Machine Learning
   summary: Azure Machine Learning provides an environment to create and manage the end-to-end life cycle of Machine Learning models. Azure Machine Learning's compatibility with open-source frameworks and platforms like PyTorch and TensorFlow makes it an effective all-in-one platform for integrating and handling data and models. Azure Machine Learning is designed for all skill levels, with advanced MLOps features and simple no-code model creation and deployment.
   iconUrl: /training/achievements/intro-to-azure-ml.svg
-- uid: learn.azure.route-and-process-data-logic-apps.badge
-  type: badge
-  title: Route and process data automatically using Azure Logic Apps
-  summary: Build an integration workflow using a prebuilt trigger and actions.
-  iconUrl: /training/achievements/route-and-process-data-logic-apps.svg
 - uid:  learn.azure.ms-learn-live.badge
   type: badge
   title: Migrate an ASP.NET Core application from an on-premises environment into Azure
