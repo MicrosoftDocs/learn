@@ -6,7 +6,7 @@ metadata:
   description: Use pytest fixtures to create reusable test helpers. Learn how these fixtures can use other fixtures and automatically clean up after they run.
   ms.date: 4/12/2024
   author: alfredodeza
-  ms.author: alfredodeza
+  ms.author: orthomas
   ms.custom:
     - team=nextgen
     - devx-track-python
