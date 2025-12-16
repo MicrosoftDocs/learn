@@ -1,4 +1,4 @@
-Spec-Driven Development delivers significant value in individual work, but its benefits multiply in team environments. Understanding how to scale SDD practices across multiple developers, coordinate shared artifacts, and establish effective collaboration patterns transforms SDD from a personal productivity tool into a team-wide development methodology.
+Spec-Driven Development (SDD) delivers significant value in individual work, but its benefits multiply in team environments. Understanding how to scale SDD practices across multiple developers, coordinate shared artifacts, and establish effective collaboration patterns transforms SDD from a personal productivity tool into a team-wide development methodology.
 
 ## Understand team collaboration challenges
 

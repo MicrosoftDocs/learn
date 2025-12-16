@@ -212,7 +212,7 @@ You don't need to use all GitHub Spec Kit commands immediately. Start with `/spe
 
 Track metrics that indicate SDD effectiveness:
 
-- **Defect density**: Bugs per thousand lines of code.
+- **Defect density**: Bugs per 1000 lines of code.
 - **Rework rate**: How often do you redo implementation due to changed requirements?
 - **Code review cycle time**: How long from pull request creation to merge?
 - **Onboarding speed**: How quickly do new team members become productive?

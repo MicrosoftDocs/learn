@@ -1,4 +1,4 @@
-GitHub Spec Kit requires a properly configured development environment to support spec-driven development workflows. A properly configured environment includes the Specify CLI, AI coding assistants, code editors, and version control systems. Understanding the components, supported configurations, and installation concepts is essential for setting up an effective development environment.
+GitHub Spec Kit requires a properly configured development environment to support spec-driven development workflows. A properly configured environment includes the Specify CLI, AI coding assistants, code editors, and version control systems. It's important to understand the components that make up the GitHub Spec Kit development environment, the supported configurations, and the installation and initialization concepts.
 
 ## Development environment components
 
@@ -10,7 +10,7 @@ A GitHub Spec Kit development environment consists of several essential componen
 
 - **Code editor with AI integration**: GitHub Spec Kit is designed to work with code editors that support AI coding assistants through chat interfaces and slash commands. Visual Studio Code with GitHub Copilot is the primary supported configuration, though the toolkit supports other AI agents.
 
-- **Version control system**: GitHub Spec Kit artifacts (specification, plan, tasks, and constitution files) are stored as markdown files in version-controlled repositories. Git is the standard version control system, with support for GitHub, GitHub Enterprise Server, and Azure DevOps Repos.
+- **Version control system**: GitHub Spec Kit artifacts (specification, plan, tasks, and constitution files) are stored as markdown files in version-controlled repositories. Git is the standard version control system, with support for GitHub, GitHub Enterprise Server, and Azure Repos.
 
 - **AI coding assistant**: The spec-driven workflow relies on AI models to interpret specifications and generate implementation plans and code. GitHub Copilot is the recommended AI assistant for this training, though GitHub Spec Kit supports multiple AI agents.
 

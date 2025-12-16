@@ -200,7 +200,7 @@ For non-Git workflows or manual feature specification, set the environment varia
 $env:SPECIFY_FEATURE = "001-document-upload"
 ```
 
-This tells GitHub Spec Kit to read and write artifacts in the `features/001-document-upload/` directory regardless of Git branch.
+This setting tells GitHub Spec Kit to read and write artifacts in the `features/001-document-upload/` directory regardless of Git branch.
 
 This feature tracking ensures that when you invoke `/speckit.plan`, the AI reads the correct spec.md file for your current feature rather than mixing specifications from different features.
 
@@ -242,10 +242,10 @@ The AI analyzes your spec and produces a checklist of verification questions:
 
 - "Does every user story have corresponding acceptance criteria?"
 - "Are all error scenarios documented with specific error messages?"
-- "Do non-functional requirements include measurable success criteria?"
+- "Do nonfunctional requirements include measurable success criteria?"
 - "Are all external dependencies explicitly listed?"
 
-You work through the checklist, answering each question. Any "no" answers indicate specification gaps that need addressing.
+You work through the checklist, answering each question. Any "no" answers indicate specification gaps that you need to address.
 
 This self-review process improves specification quality before sharing with stakeholders or proceeding to implementation.
 
@@ -257,13 +257,13 @@ GitHub Spec Kit supports various development scenarios beyond building new featu
 
 For new projects starting from nothing, GitHub Spec Kit excels at transforming high-level product vision into concrete implementation. You begin with `/speckit.constitution` to establish project principles, then use `/speckit.specify` for each feature as you build the application iteratively.
 
-This is GitHub Spec Kit's primary use case—the workflow was designed for 0-to-1 development where you're creating something that doesn't exist yet.
+This scenario is GitHub Spec Kit's primary use case—the workflow was designed for 0-to-1 development where you're creating something that doesn't exist yet.
 
 ### Brownfield enhancement
 
 For existing applications, you can use GitHub Spec Kit to add new features while maintaining consistency with existing codebase. Your constitution documents existing architectural patterns and constraints. New feature specifications reference these established patterns.
 
-When adding document upload to an existing employee portal, your specification acknowledges the existing React frontend, .NET backend, and Azure infrastructure. The plan shows how the new feature integrates with current architecture rather than proposing a completely separate implementation.
+When you're adding the document upload feature to an existing employee portal, your specification acknowledges the existing React frontend, .NET backend, and Azure infrastructure. The plan shows how the new feature integrates with current architecture rather than proposing a separate implementation.
 
 ### Refactoring and modernization
 
