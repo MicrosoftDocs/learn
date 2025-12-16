@@ -25,14 +25,14 @@ When you insert data where `quantity` is a string that represents a number, Delt
 
 ```sql
 -- This succeeds because '100' can be cast to INT
-INSERT INTO inventory VALUES (1, '100', '2024-01-15');
+INSERT INTO inventory VALUES (1, '100', '2026-01-15');
 ```
 
 However, inserting a string that can't be converted to an integer causes the operation to fail:
 
 ```sql
 -- This fails because 'fifty' cannot be cast to INT
-INSERT INTO inventory VALUES (2, 'fifty', '2024-01-15');
+INSERT INTO inventory VALUES (2, 'fifty', '2026-01-15');
 ```
 
 Schema enforcement provides a first line of defense against type mismatches. For more control over how mismatches are handled, you can use explicit casting.

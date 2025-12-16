@@ -6,6 +6,8 @@ With expectations, you specify what valid data looks like using SQL constraints.
 
 Every expectation consists of three parts: a name, a constraint, and an action. Understanding these components helps you design effective data quality checks.
 
+:::image type="content" source="../media/5-define-expectations.png" alt-text="Diagram defines expectations with three components." border="false" lightbox="../media/5-define-expectations.png":::
+
 The **name** identifies the expectation and appears in monitoring dashboards. Choose names that clearly describe what you're validating. For example, `valid_customer_age` communicates the rule's purpose better than `check_1`.
 
 The **constraint** is a SQL Boolean expression that evaluates to true or false for each record. When a record fails the constraint, the expectation triggers. You can use any valid SQL syntax except custom Python functions, external service calls, or subqueries.
@@ -127,6 +129,8 @@ To view expectation metrics:
 2. Select your pipeline by name.
 3. Select a dataset that has expectations defined.
 4. Open the **Data quality** tab in the right sidebar.
+
+:::image type="content" source="../media/5-monitor-expectation-results.png" alt-text="Screenshot of the declarative pipeline editor, highlighting expectations." border="false" lightbox="../media/5-monitor-expectation-results.png":::
 
 The metrics show you how many records passed or failed each expectation during pipeline runs. For `warn` and `drop` actions, you see counts of violations. For `fail` actions, the pipeline stops before metrics are recorded, but error messages include details about the violating record.
 

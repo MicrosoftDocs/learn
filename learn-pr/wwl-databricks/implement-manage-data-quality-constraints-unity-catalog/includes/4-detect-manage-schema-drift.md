@@ -1,36 +1,26 @@
 Data pipelines often receive data from sources that evolve over time. New columns appear, others disappear, and the structure of incoming data changes as business requirements shift. Without proper controls, these changes can silently corrupt your data or break your pipelines entirely.
 
-In this unit, you learn how to enforce schema constraints in Azure Databricks and implement strategies for detecting and managing schema drift in your data engineering workflows.
+In this unit, you learn how to detect and manage schema drift—the structural changes that occur when source systems add, remove, or rename columns over time.
 
-## Understand schema enforcement
+## Recognize schema drift challenges
 
-Schema enforcement is the process of validating that incoming data matches the expected structure of your target table. Delta Lake enforces schema on write by default, which means every write operation validates the data structure before committing changes.
+While data type validation ensures values match expected types (as covered in the previous unit), schema drift addresses a different challenge: the structure of your data changes over time. A source system adds a new `phone_number` column, removes a deprecated `legacy_id` field, or renames `customer_email` to `email_address`. These structural changes happen independently of type validation.
 
-When you insert data into a Delta table, Azure Databricks enforces these rules:
+Delta Lake's schema enforcement blocks structural mismatches by default. When incoming data contains columns not present in the target table, or when required columns are missing, the write operation fails. This fail-fast behavior protects your tables from unexpected structural changes, but you need strategies to handle legitimate schema evolution.
 
-- All columns in the incoming data must exist in the target table
-- The source data must include all columns present in the target table
-- Column names must match (schema enforcement is case-sensitive by default)
+:::image type="content" source="../media/4-recognize-schema-drift-challenges.png" alt-text="Diagram helping you recognize schema drift challenges." border="false" lightbox="../media/4-recognize-schema-drift-challenges.png":::
 
-Consider what happens when you attempt to write data that doesn't match the expected schema:
+Consider a streaming pipeline that processes customer data:
 
 ```sql
--- Target table expects columns: customer_id, name, email
 CREATE TABLE customers (
     customer_id INT,
     name STRING,
     email STRING
 );
-
--- This insert fails because 'phone' column doesn't exist in target
-INSERT INTO customers 
-SELECT customer_id, name, email, phone FROM source_data;
 ```
 
-The operation fails with an error indicating that the column `phone` doesn't exist in the target table. This fail-fast behavior prevents unexpected data from entering your tables.
-
-> [!NOTE]
-> Schema enforcement applies to Delta Lake tables by default. Tables backed by external data sources don't enforce schema automatically.
+When your source system adds a `phone_number` column and starts sending it in the data feed, writes fail because the target table doesn't include this column. Your pipeline stops until you decide how to handle the new field—either by rejecting it, adding it to the table schema, or preserving it for later analysis.
 
 ## Detect and respond to schema drift
 
