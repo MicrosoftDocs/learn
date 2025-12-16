@@ -1,38 +1,127 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=d980b3a3-6119-453c-aa7d-4af40e8bc914]
+
+> [!NOTE]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 As the state of the art for NLP has advanced, the ability to train models that encapsulate the semantic relationship between tokens has led to the emergence of powerful deep learning language models. At the heart of these models is the encoding of language tokens as vectors (multi-valued arrays of numbers) known as *embeddings*.
 
-Vectors represent lines in multidimensional space, describing direction and distance along multiple axes. Overall, the vector describes the direction and distance of the path from origin to end. Semantically similar tokens should result in vectors that have a similar orientation – in other words they point in the same direction. As a simple example, suppose the embeddings for our tokens consist of vectors with three elements, for example:
+This vector-based approach to modeling text became common with techniques like *Word2Vec* and *GloVe*, in which text tokens are represented as dense vectors with multiple dimensions. During model training, the dimension values are assigned to reflect semantic characteristics of each token based on their usage in the training text. The mathematical relationships between the vectors can then be exploited to perform common text analysis tasks more efficiently than older purely statistical techniques. A more recent advancement in this approach is to use a technique called *attention* to consider each token in context, and calculate the influence of the tokens around it. The resulting *contextualized* embeddings, such as those found in the GPT family of models, provide the basis of modern generative AI.
 
-```
-- 4 ("dog"): [10,3,2]
-- 8 ("cat"): [10,3,1]
-- 9 ("puppy") [5,2,1] 
-- 10 ("skateboard"): [-3,3,2]
-```
+## Representing text as vectors
 
-In three-dimensional space, these vectors look like this:
+Vectors represent points in multidimensional space, defined by coordinates along multiple axes. Each vector describes a direction and distance from the origin. Semantically similar tokens should result in vectors that have a similar orientation – in other words they point in similar directions.
 
-![A diagram of tokens plotted on a three-dimensional space.](../media/word-embeddings.png)
+For example, consider the following three-dimensional embeddings for some common words:
 
-The embedding vectors for "dog" and "puppy" describe a path along an almost identical direction, which is also fairly similar to the direction for "cat". The embedding vector for "skateboard" however describes journey in a very different direction.
+|Word|Vector|
+|-|-|
+|:::no-loc text="dog":::|[0.8, 0.6, 0.1]|
+|:::no-loc text="puppy":::|[0.9, 0.7, 0.4]|
+|:::no-loc text="cat":::|[0.7, 0.5, 0.2]|
+|:::no-loc text="kitten":::|[0.8, 0.6, 0.5]|
+|:::no-loc text="young":::|[0.1, 0.1, 0.3]|
+|:::no-loc text="ball":::|[0.3, 0.9, 0.1]|
+|:::no-loc text="tree":::|[0.2, 0.1, 0.9]|
 
-The language models we use in industry are based on these principles but have greater complexity. For example, the vectors used generally have many more dimensions. There are also multiple ways you can calculate appropriate embeddings for a given set of tokens. Different methods result in different predictions from natural language processing models.
+We can visualize these vectors in three-dimensional space as shown here:
 
-A generalized view of most modern natural language processing solutions is shown in the following diagram. A large corpus of raw text is tokenized and used to train language models, which can support many different types of natural language processing task.
+![Diagram of a 3D visualization of word vectors.](../media/word-vectors-3d.png)
 
-![A diagram of the process to tokenize text and train a language model that supports natural language processing tasks.](../media/language-model.png)
+The vectors for :::no-loc text=""dog""::: and :::no-loc text=""cat""::: are similar (both domestic animals), as are :::no-loc text=""puppy""::: and :::no-loc text=""kitten""::: (both young animals). The words :::no-loc text=""tree"":::, :::no-loc text=""young"":::, and :::no-loc text="ball""::: have distinctly different vector orientations, reflecting their different semantic meanings.
 
+The semantic characteristic encoded in the vectors makes it possible to use vector-based operations that compare words and enable analytical comparisons.
 
-## Machine learning for text classification
+### Finding related terms
 
-Another useful text analysis technique is to use a classification algorithm, such as *logistic regression*, to train a machine learning model that classifies text based on a known set of categorizations. A common application of this technique is to train a model that classifies text as *positive* or *negative* in order to perform *sentiment analysis* or *opinion mining*.
+Since the orientation of vectors is determined by their dimension values, words with similar semantic meanings tend to have similar orientations. This means you can use calculations such as the *cosine similarity* between vectors to make meaningful comparisons.
 
-For example, consider the following restaurant reviews, which are already labeled as **0** (*negative*) or **1** (*positive*):
+For example, to determine the "odd one out" between :::no-loc text=""dog"":::, :::no-loc text=""cat"":::, and :::no-loc text=""tree"":::, you can calculate the cosine similarity between pairs of vectors. The cosine similarity is calculated as:
 
-```
-- *The food and service were both great*: 1
-- *A really terrible experience*: 0
-- *Mmm! tasty food and a fun vibe*: 1
-- *Slow service and substandard food*: 0
-```
+`cosine_similarity(A, B) = (A · B) / (||A|| * ||B||)`
 
-With enough labeled reviews, you can train a classification model using the tokenized text as *features* and the sentiment (0 or 1) a *label*. The model will encapsulate a relationship between tokens and sentiment - for example, reviews with tokens for words like `"great"`, `"tasty"`, or `"fun"` are more likely to return a sentiment of **1** (*positive*), while reviews with words like `"terrible"`, `"slow"`, and `"substandard"` are more likely to return **0** (*negative*).
+Where `A · B` is the dot product and `||A||` is the magnitude of vector A.
+
+Calculating similarities between the three words:
+
+- **:::no-loc text="dog":::** [0.8, 0.6, 0.1] and **:::no-loc text="cat":::** [0.7, 0.5, 0.2]:
+  - Dot product: (0.8 × 0.7) + (0.6 × 0.5) + (0.1 × 0.2) = 0.56 + 0.30 + 0.02 = 0.88
+  - Magnitude of :::no-loc text="dog":::: √(0.8² + 0.6² + 0.1²) = √(0.64 + 0.36 + 0.01) = √1.01 ≈ 1.005
+  - Magnitude of :::no-loc text="cat":::: √(0.7² + 0.5² + 0.2²) = √(0.49 + 0.25 + 0.04) = √0.78 ≈ 0.883
+  - Cosine similarity: 0.88 / (1.005 × 0.883) ≈ **0.992** (high similarity)
+
+- **:::no-loc text="dog":::** [0.8, 0.6, 0.1] and **:::no-loc text="tree":::** [0.2, 0.1, 0.9]:
+  - Dot product: (0.8 × 0.2) + (0.6 × 0.1) + (0.1 × 0.9) = 0.16 + 0.06 + 0.09 = 0.31
+  - Magnitude of :::no-loc text="tree":::: √(0.2² + 0.1² + 0.9²) = √(0.04 + 0.01 + 0.81) = √0.86 ≈ 0.927
+  - Cosine similarity: 0.31 / (1.005 × 0.927) ≈ **0.333** (low similarity)
+
+- **:::no-loc text="cat":::** [0.7, 0.5, 0.2] and **:::no-loc text="tree":::** [0.2, 0.1, 0.9]:
+  - Dot product: (0.7 × 0.2) + (0.5 × 0.1) + (0.2 × 0.9) = 0.14 + 0.05 + 0.18 = 0.37
+  - Cosine similarity: 0.37 / (0.883 × 0.927) ≈ **0.452** (low similarity)
+
+![Diagram of cosine similarity visualization showing dog, cat, and tree vectors.](../media/cosine-similarity.png)
+
+The results show that :::no-loc text=""dog""::: and :::no-loc text=""cat""::: are highly similar (0.992), while :::no-loc text=""tree""::: has lower similarity to both :::no-loc text=""dog""::: (0.333) and :::no-loc text=""cat""::: (0.452). Therefore, **:::no-loc text="tree":::** is clearly the odd one out.
+
+### Vector translation through addition and subtraction
+
+You can add or subtract vectors to produce new vector-based results; which can then be used to find tokens with matching vectors. This technique enables intuitive arithmetic-based logic to determine appropriate terms based on linguistic relationships.
+
+For example, using the vectors from earlier:
+
+- **:::no-loc text="dog":::** + **:::no-loc text="young":::** = [0.8, 0.6, 0.1] + [0.1, 0.1, 0.3] = [0.9, 0.7, 0.4] = **:::no-loc text="puppy":::**
+- **:::no-loc text="cat":::** + **:::no-loc text="young":::** = [0.7, 0.5, 0.2] + [0.1, 0.1, 0.3] = [0.8, 0.6, 0.5] = **:::no-loc text="kitten":::**
+
+![Diagram of vector addition showing dog + young = puppy and cat + young = kitten.](../media/vector-addition.png)
+
+These operations work because the vector for :::no-loc text=""young""::: encodes the semantic transformation from an adult animal to its young counterpart.
+
+> [!NOTE]
+> In practice, vector arithmetic rarely produces exact matches; instead, you would search for the word whose vector is *closest* (most similar) to the result.
+
+The arithmetic works in reverse as well:
+
+- **:::no-loc text="puppy":::** - **:::no-loc text="young":::** = [0.9, 0.7, 0.4] - [0.1, 0.1, 0.3] = [0.8, 0.6, 0.1] = **:::no-loc text="dog":::**
+- **:::no-loc text="kitten":::** - **:::no-loc text="young":::** = [0.8, 0.6, 0.5] - [0.1, 0.1, 0.3] = [0.7, 0.5, 0.2] = **:::no-loc text="cat":::**
+
+### Analogical reasoning
+
+Vector arithmetic can also answer analogy questions like "*:::no-loc text="puppy":::* is to *:::no-loc text="dog":::* as *:::no-loc text="kitten":::* is to *?*"
+
+To solve this, calculate: **:::no-loc text="kitten":::** - **:::no-loc text="puppy":::** + **:::no-loc text="dog":::**
+
+- [0.8, 0.6, 0.5] - [0.9, 0.7, 0.4] + [0.8, 0.6, 0.1]
+- = [-0.1, -0.1, 0.1] + [0.8, 0.6, 0.1]
+- = [0.7, 0.5, 0.2]
+- = **:::no-loc text="cat":::**
+
+![Diagram of vector arithmetic showing kitten - puppy + dog = cat.](../media/vector-analogy.png)
+
+These examples demonstrate how vector operations can capture linguistic relationships and enable reasoning about semantic patterns.
+
+## Using semantic models for text analysis
+
+Vector-based semantic models provide powerful capabilities for many common text analysis tasks.
+
+### Text summarization
+
+Semantic embeddings enable *extractive* summarization by identifying sentences with vectors that are most representative of the overall document. By encoding each sentence as a vector (often by averaging or pooling the embeddings of its constituent words), you can calculate which sentences are most central to the document's meaning. These central sentences can be extracted to form a summary that captures the key themes.
+
+### Keyword extraction
+
+Vector similarity can identify the most important terms in a document by comparing each word's embedding to the document's overall semantic representation. Words whose vectors are most similar to the document vector, or most central when considering all word vectors in the document, are likely to be key terms that represent the main topics.
+
+### Named entity recognition
+
+Semantic models can be fine-tuned to recognize named entities (people, organizations, locations, etc.) by learning vector representations that cluster similar entity types together. During inference, the model examines each token's embedding and its context to determine whether it represents a named entity and, if so, what type.
+
+### Text classification
+
+For tasks like sentiment analysis or topic categorization, documents can be represented as aggregate vectors (such as the mean of all word embeddings in the document). These document vectors can then be used as features for machine learning classifiers, or compared directly to class prototype vectors to assign categories. Because semantically similar documents have similar vector orientations, this approach effectively groups related content and distinguishes different categories.
+
+::: zone-end

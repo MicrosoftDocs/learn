@@ -1,22 +1,22 @@
 ### YamlMime:Module
 uid: learn.wwl.introduction-language
 metadata:
-  title: Introduction to natural language processing concepts
-  description: "Natural language processing (NLP) supports applications that can see, hear, speak with, and understand users. In this module you learn about the concepts that make NLP possible."
-  ms.date: 8/29/2025
+  title: Introduction to text analysis concepts
+  description: "Natural language processing (NLP) supports applications that can analyze text to infer semantic meaning."
+  ms.date: 12/16/2025
   ms.update-cycle: 180-days
-  author: wwlpublish
-  ms.author: sheryang
+  author: GraemeMalcolm
+  ms.author: gmalc
   ms.topic: module
   ms.collection: wwl-ai-copilot
   ms.custom:
   - N/A
   ms.service: azure-ai-language
   ai-usage: ai-assisted
-title: Introduction to natural language processing concepts
-summary: Natural language processing (NLP) supports applications that can see, hear, speak with, and understand users. In this module you learn about the concepts that make NLP possible.
-abstract: Explore natural language processing (NLP).
-prerequisites: Ability to navigate the Azure portal
+title: Introduction to text analysis concepts
+summary: Natural language processing (NLP) supports applications that can analyze text to infer semantic meaning.
+abstract: Explore concepts and techniques for text analysis.
+prerequisites: A basic understanding of machine learning and AI concepts.
 iconUrl: /learn/achievements/analyze-text-with-text-analytics-service.svg
 levels:
 - beginner
@@ -27,9 +27,9 @@ roles:
 - solution-architect
 - student
 products:
-- ai-services
+- azure-ai-foundry
 subjects:
-- natural-language-processing
+- artificial-intelligence
 units:
 - learn.wwl.introduction-language.introduction
 - learn.wwl.introduction-language.how-it-works

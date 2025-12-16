@@ -1,30 +1,39 @@
-Some of the earliest techniques used to analyze text with computers involve statistical analysis of a body of text (a *corpus*) to infer some kind of semantic meaning. Put simply, if you can determine the most commonly used words in a given document, you can often get a good idea of what the document is about.
+::: zone pivot="video"
 
-## Tokenization
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=74a44e51-3a04-4a19-8b33-40ee0672c782]
 
-The first step in analyzing a corpus is to break it down into *tokens*. For the sake of simplicity, you can think of each distinct word in the training text as a token, though in reality, tokens can be generated for partial words, or combinations of words and punctuation.
+> [!NOTE]
+> See the **Text and images** tab for more details!
 
-For example, consider this phrase from a famous US presidential speech: `"we choose to go to the moon"`. The phrase can be broken down into the following tokens, with numeric identifiers:
+::: zone-end
 
-```
-1. we 
-2. choose
-3. to
-4. go
-5. the
-6. moon
-```
+::: zone pivot="text"
 
-Notice that `"to"` (token number 3) is used twice in the corpus. The phrase `"we choose to go to the moon"` can be represented by the tokens :::no-loc text="{1,2,3,4,3,5,6}":::.
+The first step in analyzing a body of text (referred to as a *corpus*) is to break it down into *tokens*. For the sake of simplicity, you can think of each distinct word in the text as a token. In reality, tokens can be generated for partial words or combinations of words and punctuation.
 
-We've used a simple example in which tokens are identified for each distinct word in the text. However, consider the following concepts that may apply to tokenization depending on the specific kind of NLP problem you're trying to solve:
+For example, consider this phrase from a famous US presidential speech: :::no-loc text=""We choose to go to the moon"":::. The phrase can be broken down into the following tokens, with numeric identifiers:
 
-|**Concept**|**Description**|
+1. :::no-loc text="We"::: 
+2. :::no-loc text="choose":::
+3. :::no-loc text="to":::
+4. :::no-loc text="go":::
+3. :::no-loc text="to":::
+5. :::no-loc text="the":::
+6. :::no-loc text="moon":::
+
+Notice that :::no-loc text=""to""::: (token number 3) is used twice in the corpus. The phrase :::no-loc text=""We choose to go to the moon""::: can be represented by the tokens.
+
+With each token assigned a discrete value, we can easily count their frequency in the text and use that to determine the most commonly used terms; which might help identify the main subject of the text.
+
+We've used a simple example in which tokens are identified for each distinct word in the text. However, consider the following pre-processing techniques that might apply to tokenization depending on the specific text analysis problem you're trying to solve:
+
+|**Technique**|**Description**|
 |-|-|
-|**Text normalization**| Before generating tokens, you may choose to *normalize* the text by removing punctuation and changing all words to lower case. For analysis that relies purely on word frequency, this approach improves overall performance. However, some semantic meaning may be lost - for example, consider the sentence `"Mr Banks has worked in many banks."`. You may want your analysis to differentiate between the person `"Mr Banks"` and the `"banks"` in which he has worked. You may also want to consider `"banks."` as a separate token to `"banks"` because the inclusion of a period provides the information that the word comes at the end of a sentence|
-|**Stop word removal**| Stop words are words that should be excluded from the analysis. For example, `"the"`, `"a"`, or `"it"` make text easier for people to read but add little semantic meaning. By excluding these words, a text analysis solution may be better able to identify the important words.|
-|**n-grams**| Multi-term phrases such as `"I have"` or `"he walked"`. A single word phrase is a `unigram`, a two-word phrase is a `bi-gram`, a three-word phrase is a `tri-gram`, and so on. By considering words as groups, a machine learning model can make better sense of the text.|
-| **Stemming**| A technique in which algorithms are applied to consolidate words before counting them, so that words with the same root, like `"power"`, `"powered"`, and `"powerful"`, are interpreted as being the same token.|
+|**Text normalization**| Before generating tokens, you might choose to *normalize* the text by removing punctuation and changing all words to lower case. For analysis that relies purely on word frequency, this approach improves overall performance. However, some semantic meaning could be lost - for example, consider the sentence :::no-loc text=""Mr Banks has worked in many banks."":::. You may want your analysis to differentiate between the person :::no-loc text=""Mr Banks""::: and the :::no-loc text=""banks""::: in which he's worked. You might also want to consider :::no-loc text=""banks.""::: as a separate token to :::no-loc text=""banks""::: because the inclusion of a period provides the information that the word comes at the end of a sentence|
+|**Stop word removal**| Stop words are words that should be excluded from the analysis. For example, :::no-loc text=""the", "a"":::, or :::no-loc text=""it""::: make text easier for people to read but add little semantic meaning. By excluding these words, a text analysis solution might be better able to identify the important words.|
+|**N-gram extraction**| Finding multi-term phrases such as :::no-loc text=""artificial intelligence""::: or :::no-loc text=""natural language processing"":::. A single word phrase is a *unigram*, a two-word phrase is a *bigram*, a three-word phrase is a *trigram*, and so on. In many cases, by considering frequently appearing sequences of words as groups, a text analysis algorithm can make better sense of the text.|
+| **Stemming**| A technique used to consolidate words by stripping endings like "s", "ing", "ed", and so on, before counting them; so that words with the same etymological root, like :::no-loc text=""powering"":::, :::no-loc text=""powered"":::, and :::no-loc text=""powerful"":::, are interpreted as being the same token (:::no-loc text=""power"":::).|
+| **Lemmatization** | Another approach to reducing words to their base or dictionary form (called a *lemma*). Unlike stemming, which simply chops off word endings, lemmatization uses linguistic rules and vocabulary to ensure the resulting form is a valid word (for example, :::no-loc text=""running"":::: → :::no-loc text=""run"":::, :::no-loc text=""global""::: → :::no-loc text=""globe"":::).|
+| **Parts of speech (POS) tagging** | Labeling each token with its grammatical category, such as noun, verb, adjective, or adverb. This technique uses linguistic rules and often statistical models to determine the correct tag based on both the token itself and its context within the sentence. |
 
-Next, let's see how statistical techniques enable us to model language.
-
+::: zone-end
