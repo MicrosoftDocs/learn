@@ -44,7 +44,7 @@ This **permission scoping** enables secure group collaboration on workloads that
 
 The following diagram illustrates how to set up dedicated group access:
 
-![Diagram illustrating how to set up dedicated group access.](../media/group-workspace-setup.svg)
+![Diagram illustrating how to set up dedicated group access.](../media/group-workspace-setup.png)
 
 To create a compute resource dedicated to a group, you must enable Unity Catalog on your workspace and use Databricks Runtime 15.4 or above. The assigned group needs `CAN MANAGE` permission on a workspace folder where members can store notebooks, MLflow experiments, and other workspace artifacts used on the group cluster.
 

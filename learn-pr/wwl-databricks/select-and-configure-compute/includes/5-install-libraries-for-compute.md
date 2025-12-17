@@ -77,4 +77,4 @@ To configure the allowlist, metastore admins use Catalog Explorer, selecting the
 
 Different library installation methods suit different scenarios. The following diagram illustrates a decision flow to help you select the appropriate installation approach:
 
-![Diagram showing the different library installation methods.](../media/library-installation.svg)
+![Diagram showing the different library installation methods.](../media/library-installation.png)
