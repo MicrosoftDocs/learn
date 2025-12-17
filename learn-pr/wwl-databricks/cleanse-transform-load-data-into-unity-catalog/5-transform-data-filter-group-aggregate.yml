@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.cleanse-transform-load-data-into-unity-catalog.transform-data-filter-group-aggregate
+title: Transform data with filters and aggregations
+metadata:
+  title: Transform Data With Filters and Aggregations
+  description: Learn how to filter, group, and aggregate data in Azure Databricks using PySpark and SQL to transform raw data into meaningful summaries.
+  ms.date: 12/07/2025
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+  ai-usage: ai-generated
+durationInMinutes: 6
+content: |
+  [!include[](includes/5-transform-data-filter-group-aggregate.md)]

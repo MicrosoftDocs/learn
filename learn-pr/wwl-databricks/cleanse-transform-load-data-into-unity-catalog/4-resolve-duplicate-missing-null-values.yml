@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.cleanse-transform-load-data-into-unity-catalog.resolve-duplicate-missing-null-values
+title: Resolve duplicates and nulls
+metadata:
+  title: Resolve Duplicates and Nulls
+  description: Learn how to identify and resolve duplicate records and handle null or missing values in Azure Databricks using SQL and PySpark approaches.
+  ms.date: 12/07/2025
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+  ai-usage: ai-generated
+durationInMinutes: 7
+content: |
+  [!include[](includes/4-resolve-duplicate-missing-null-values.md)]
