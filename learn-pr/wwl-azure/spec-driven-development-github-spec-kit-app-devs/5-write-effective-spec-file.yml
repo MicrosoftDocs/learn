@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.spec-driven-development-github-spec-kit-microsoft-internal.write-effective-spec-file
+title: Write an effective Spec.md file
+metadata:
+  title: Write an Effective Spec.md File
+  description: "Write an effective Spec.md file."
+  ms.date: 12/12/2025
+  author: chrishowd
+  ms.author: cahowd
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/5-write-effective-spec-file.md)]
