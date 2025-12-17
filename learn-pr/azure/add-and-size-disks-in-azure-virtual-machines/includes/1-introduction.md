@@ -10,7 +10,3 @@ In this module, you'll:
 - Configure and attach virtual hard drives (VHDs) to an existing VM.
 - Determine whether you need premium disks.
 - Resize disks for a VM.
-
-## Prerequisites
-
-None
