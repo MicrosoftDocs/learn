@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.wwl.implement-lakeflow-jobs
 metadata:
-  title: Implement Lakeflow Jobs
+  title: Implement Lakeflow Jobs with Azure Databricks
   description: Learn how to create, configure, schedule, and monitor Lakeflow Jobs in Azure Databricks to automate your data pipelines.
   ms.date: 12/07/2025
   author: weslbo
@@ -9,7 +9,7 @@ metadata:
   ms.topic: module
   ms.service: azure-databricks
   ai-usage: ai-generated
-title: Implement Lakeflow Jobs
+title: Implement Lakeflow Jobs with Azure Databricks
 summary: This module guides you through the process of implementing Lakeflow Jobs in Azure Databricks. You will learn how to create jobs, configure triggers and schedules, set up alerts, and manage automatic restarts to ensure reliable data pipeline execution.
 abstract: |
   By the end of this module, you'll be able to:

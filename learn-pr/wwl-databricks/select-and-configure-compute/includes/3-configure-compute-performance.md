@@ -4,7 +4,7 @@ Configuring compute resources involves balancing performance requirements with c
 
 Compute performance depends on three key factors working together. Each factor influences how efficiently your workload runs and how much it costs.
 
-![Diagram showing the relationship between cores, memory and storage.](../media/cores-memory-storage.svg)
+![Diagram showing the relationship between cores, memory and storage.](../media/cores-memory-storage.png)
 
 **Total executor cores** determine the maximum parallelism available for processing data. More cores allow Spark to process more tasks simultaneously. A cluster with 8 workers, each having 4 cores, provides 32 cores total for parallel processing.
 
@@ -64,7 +64,7 @@ Enable **decommissioning** when using spot instances to reduce task failures. Wh
 
 Instance pools maintain a set of idle instances ready for immediate use, reducing cluster startup time from minutes to seconds.
 
-![Diagram explaining Azure Databricks Instance Pools usage.](../media/instance-pool-management.svg)
+![Diagram explaining Azure Databricks Instance Pools usage.](../media/instance-pool-management.png)
 
 Configure the **minimum idle instances** to match your typical concurrent cluster needs. If you regularly run three notebooks simultaneously, maintain at least three idle instances. These instances remain available even when not in use, providing instant cluster startup.
 

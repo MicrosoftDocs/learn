@@ -4,7 +4,7 @@ Compute features determine the functional capabilities available to your workloa
 
 **Photon** is a query execution engine that replaces traditional Spark components with optimized native code. When you enable Photon, your compute resource uses this accelerated engine for SQL queries and DataFrame operations.
 
-![Diagram showing a decision tree when to use Photon acceleration.](../media/spark-photon-decision.svg)
+![Diagram showing a decision tree when to use Photon acceleration.](../media/spark-photon-decision.png)
 
 With Photon enabled, queries that involve **complex transformations** run faster. Operations like **joins**, **aggregations**, and **scans** across large tables benefit most from Photon's optimization. Workloads that frequently access disk, process wide tables, or repeatedly transform data also see significant performance gains. For example, a data analyst running hourly aggregation queries across millions of rows will experience faster query completion times with Photon enabled.
 
