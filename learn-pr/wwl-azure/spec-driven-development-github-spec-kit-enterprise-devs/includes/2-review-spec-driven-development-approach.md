@@ -1,4 +1,4 @@
-Traditional development often treats code as the ultimate source of truth. Specifications, if written, are created upfront but are seldom maintained once coding begins. Developers who work with AI assistants frequently fall into "vibe coding"—prompting the AI with fragmentary ideas and iterating until something seems right.
+Traditional development often treats code as the ultimate source of truth. The initial specifications provide loose technical guidance and they aren't maintained once coding begins. Developers who work with AI assistants frequently fall into "vibe coding"—prompting the AI with fragmentary ideas and iterating until the solution approximates the initial intent.
 
 Spec-Driven Development (SDD) flips this model. The specification becomes the authoritative definition of what your software should do. Code is generated from the spec, and when requirements change, you update the spec first, then regenerate the implementation. This process creates a living document that evolves with your project, capturing not just what to build, but why—the reasoning behind design decisions.
 
@@ -6,7 +6,7 @@ SDD isn't a return to waterfall methodologies or bureaucratic documentation proc
 
 ## The problem with unstructured AI-assisted development
 
-Without a specification-driven approach, AI-assisted development suffers from several challenges. For example:
+Without a spec-driven approach, AI-assisted development suffers from several challenges. For example:
 
 - **Context fragmentation**: The prompts you submit to GitHub Copilot operate in a specific context. The AI doesn't remember decisions from previous chat sessions, leading to inconsistent code generation across sessions.
 - **Incomplete requirements**: You discover requirements incrementally as you review generated code. This knowledge gap leads to constant rework as new requirements emerge that weren't considered initially.
@@ -88,53 +88,55 @@ SDD aligns well with enterprise engineering practices and organizational needs.
 - **Distributed teams**: Enterprise development teams span global locations and time zones. Specifications provide shared understanding that enables asynchronous collaboration without requiring constant synchronous meetings.
 - **Knowledge retention**: When team members transition to other roles, specifications preserve their knowledge and decision-making rationale, reducing institutional knowledge loss.
 
-## The SDD workflow in practice
+## The Spec-Driven Development workflow in practice
 
-Spec-Driven Development follows a defined workflow that separates concerns and creates verification checkpoints at each phase. Understanding this workflow helps you apply SDD effectively with GitHub Copilot.
+Spec-Driven Development follows a defined workflow that separates concerns and creates verification checkpoints at each phase. Understanding this workflow helps you apply SDD effectively.
+
+The following sections outline each phase of the SDD process. Examples are provided for an employee portal scenario that includes a new document upload feature.
 
 ### Phase 1: Establish project principles
 
-Before writing any feature specifications, define your project's constitution—the governing principles that apply to all features. This includes architectural standards, security requirements, performance expectations, and coding conventions.
+Before writing any specifications, define your project's constitution—the governing principles that apply to the entire codebase. This includes architectural standards, security requirements, performance expectations, and coding conventions.
 
-For the employee portal, the constitution might specify requirements like "All APIs must use Microsoft Entra ID authentication," "Data must be encrypted at rest," and "Follow enterprise accessibility standards."
+For an employee portal, the constitution might specify requirements like "All APIs must use Microsoft Entra ID authentication," "Data must be encrypted at rest," and "Follow enterprise accessibility standards."
 
 ### Phase 2: Create the specification
 
-Document what you want to build using structured specification format. Focus on requirements, user stories, acceptance criteria, and expected behavior. The specification answers "what" questions, not "how" questions.
+Document what you want to build using a structured specification format. Focus on requirements, user stories, acceptance criteria, and expected behavior. The specification answers "what" questions, not "how" questions.
 
-When specifying the document upload feature, you describe user interactions ("Employee selects an upload button, selects a file, then sees a progress indicator"), validation rules ("Reject files over 50 MB"), and success criteria ("File appears in employee's document list within 5 seconds of upload completion").
+If you're specifying the new document upload feature of the employee portal, you describe user interactions ("Employee selects an upload button, selects a file, then sees a progress indicator"), validation rules ("Reject files over 50 MB"), and success criteria ("File appears in employee's document list within 5 seconds of upload completion").
 
 ### Phase 3: Clarify ambiguities
 
 Use AI-assisted analysis to identify gaps in your specification. The AI reviews your spec and asks questions about edge cases, error scenarios, and underspecified requirements.
 
-For document upload, the AI might ask: "What happens if upload fails mid-transfer?", "Should employees receive email notifications?", "How long are uploaded documents retained?" Your answers refine the specification before any code is written.
+For the document upload feature, the AI might ask: "What happens if upload fails mid-transfer?", "Should employees receive email notifications?", "How long are uploaded documents retained?" Your answers refine the specification before any code is written.
 
 ### Phase 4: Generate technical plan
 
 Transform the specification into an implementation plan that includes architecture decisions, technology choices, component design, and implementation sequence. The plan answers "how" questions while respecting the constitution's constraints.
 
-The plan for document upload specifies technical details: "Use Azure Blob Storage for file persistence," "Implement chunked uploads for reliability," "Store metadata in SQL database DocumentMetadata table."
+The implementation plan for the document upload feature specifies technical details: "Use Azure Blob Storage for file persistence," "Implement chunked uploads for reliability," "Store metadata in SQL database DocumentMetadata table."
 
 ### Phase 5: Break down into tasks
 
-Convert the plan into actionable task list. Each task represents a discrete unit of work that can be implemented and tested independently.
+Convert the plan into an actionable task list. Each task represents a discrete unit of work that can be implemented and tested independently.
 
 Document upload tasks might include "Create DocumentMetadata table," "Implement POST /api/documents/upload endpoint," "Add file validation logic," "Build DocumentUpload React component."
 
 ### Phase 6: Implement and verify
 
-Execute tasks systematically, using GitHub Copilot to generate code based on specifications, plans, and tasks. Verify each task's completion before proceeding to the next.
+Execute tasks systematically, using GitHub Copilot to generate code based on specifications, plans, and tasks. Verify each task's completion before proceeding to the next task.
 
-As you implement upload functionality, you test each component—verify the database schema, test the API endpoint with sample files, confirm the React component displays correctly—before moving to the next task.
+As you implement the document upload feature, you test each component—verify the database schema, test the API endpoint with sample files, confirm the React component displays correctly—before moving to the next task.
 
 ### Phase 7: Maintain specifications
 
-As requirements evolve, update specifications first, then regenerate plans and tasks, then update implementation. The specification remains the authoritative source of truth throughout the feature's lifecycle.
+As requirements evolve, update specifications first. Use the updated specifications to regenerate your plan and tasks, then update implementation. The specification remains the authoritative source of truth throughout the feature's lifecycle.
 
-If stakeholders request support for other file types, you update spec.md with new requirements, update plan.md with validation logic changes, update tasks.md with implementation steps, then modify the code.
+If the company decides that the document upload feature needs to support uploading other document types, you update spec.md with new requirements, update plan.md with validation logic changes, update tasks.md with implementation steps, then modify the code.
 
-## Apply SDD effectively
+## Apply Spec-Driven Development effectively
 
 Success with Spec-Driven Development requires understanding when and how to apply its principles.
 
@@ -152,31 +154,31 @@ Success with Spec-Driven Development requires understanding when and how to appl
 
 Spec-Driven Development transforms AI-assisted development from unpredictable prompting into a structured, documented process that produces better outcomes with less rework.
 
-## Compare SDD with traditional development approaches
+## Compare Spec-Driven Development with traditional development approaches
 
 Understanding how Spec-Driven Development differs from other methodologies helps you apply it effectively.
 
-### SDD versus waterfall development
+### Spec-Driven Development versus waterfall development
 
 Traditional waterfall development also emphasizes upfront specification, but with rigid phase separation. In waterfall, you complete all requirements analysis before any design, complete all design before any coding, and so on. Changes discovered during later phases require formal change control processes.
 
 SDD maintains the specification-first principle but embraces iterative refinement. You write specifications before coding, but you can revisit and improve specifications based on implementation discoveries. The specification evolves with your understanding rather than being frozen at project start.
 
-### SDD versus agile development
+### Spec-Driven Development versus agile development
 
 Agile methodologies like Scrum emphasize working software over comprehensive documentation. User stories are lightweight, implementation details emerge through coding, and specifications often exist only in code and tests.
 
 SDD aligns with agile values while adding structured specification artifacts. You still deliver working software iteratively, but each iteration is guided by specifications that capture intent explicitly. This approach prevents the tribal knowledge problem where only developers who built a feature understand its rationale.
 
-### SDD versus test-driven development
+### Spec-Driven Development versus test-driven development
 
 Test-Driven Development (TDD) uses tests as specifications—you write tests before implementation, then write code that makes tests pass. Tests become executable specifications of behavior.
 
 SDD complements TDD rather than replacing it. The specification describes high-level requirements and acceptance criteria. Tests verify that implementation satisfies those requirements. Both serve as specifications at different abstraction levels—specs for human understanding, tests for automated verification.
 
-For document upload, your specification might state "Files over 50 MB must be rejected with appropriate error message." Your TDD tests verify the required behavior: `test_upload_51mb_file_returns_413_error()`. The specification captures the intent. The test verifies the behavior.
+For the document upload example, your specification might state "Files over 50 MB must be rejected with appropriate error message." Your TDD tests verify the required behavior: `test_upload_51mb_file_returns_413_error()`. The specification captures the intent. The test verifies the behavior.
 
-### SDD with AI-assisted development
+### Spec-Driven Development with AI-assisted development
 
 What makes SDD powerful with AI coding assistants is the separation of intent from implementation. You provide the specification to the AI, which generates code that implements that specification. This process is fundamentally different from traditional prompting where you describe both what you want and how to build it in unstructured conversation.
 
@@ -186,40 +188,7 @@ SDD with AI: You have spec.md documenting all requirements, constitution.md defi
 
 The SDD approach provides more complete context, resulting in more accurate AI-generated code.
 
-## Adopt SDD incrementally
-
-Teams don't need to adopt full Spec-Driven Development immediately. You can start small and expand as you gain experience.
-
-### Start with constitution
-
-Begin by creating a constitution that captures existing team standards and architectural principles. This approach requires minimal workflow change—you're just documenting what you already do.
-
-Once the constitution exists, use it in code reviews to verify new code aligns with established standards. The constitution makes implicit team knowledge explicit and accessible.
-
-### Add specifications for new features
-
-For your next new feature, write a specification before coding. Use the SDD specification structure even if you're not yet using GitHub Spec Kit or AI-assisted generation.
-
-Experience how specification-first development clarifies requirements and reduces rework. Measure time spent on the specification versus time saved by having fewer mid-implementation requirements changes.
-
-### Incorporate AI generation gradually
-
-After becoming comfortable with specification writing, introduce AI-assisted code generation. Use GitHub Copilot to generate implementation from your specifications.
-
-You don't need to use all GitHub Spec Kit commands immediately. Start with `/speckit.specify` to generate well-structured specs, then manually write plans and code. As you gain confidence, add `/speckit.plan` and eventually full `/speckit.implement` workflows.
-
-### Measure and adjust
-
-Track metrics that indicate SDD effectiveness:
-
-- **Defect density**: Bugs per 1000 lines of code.
-- **Rework rate**: How often do you redo implementation due to changed requirements?
-- **Code review cycle time**: How long from pull request creation to merge?
-- **Onboarding speed**: How quickly do new team members become productive?
-
-If these metrics improve, SDD is providing value. If not, examine whether specifications are too detailed, too vague, or not being used effectively.
-
-## Recognize when SDD provides the most value
+## Recognize when Spec-Driven Development provides the most value
 
 Spec-Driven Development provides the most benefit in specific contexts. Understanding where it excels helps you apply it appropriately.
 
