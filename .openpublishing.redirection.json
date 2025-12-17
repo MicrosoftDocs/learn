@@ -61178,6 +61178,46 @@
       "source_path": "learn-pr/azure/ms-learn-live-migrating-to-the-cloud/index.yml",
       "redirect_url": "https://learn.microsoft.com/aspnet/core/overview?view=aspnetcore-10.0",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/microservices-architecture/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/architecture/web-apps/app-service/architectures/basic-web-app",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/microservices-architecture/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/architecture/web-apps/app-service/architectures/basic-web-app",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/microservices-architecture/2-monolith-microservices.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/architecture/web-apps/app-service/architectures/basic-web-app",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/microservices-architecture/3-exercise-deploy-monolithic-app.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/architecture/web-apps/app-service/architectures/basic-web-app",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/microservices-architecture/4-monolith-performance.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/architecture/web-apps/app-service/architectures/basic-web-app",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/microservices-architecture/5-analyze-decompose.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/architecture/web-apps/app-service/architectures/basic-web-app",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/microservices-architecture/6-exercise-refactor-microservice.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/architecture/web-apps/app-service/architectures/basic-web-app",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/microservices-architecture/7-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/architecture/web-apps/app-service/architectures/basic-web-app",
+      "redirect_document_id": false
     }
   ]
 }
