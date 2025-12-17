@@ -48,7 +48,6 @@ The following table provides a comparison of Ultra disk, Premium SSD, Standard S
 | **Max throughput** | 10,000 MB/s | 1,200 MB/s | 900 MB/s | 750 MB/s | 500 MB/s |
 
 | **Max IOPS** | 400,000 | 80,000 | 20,000 | 6,000 | 2,000, 3,000* |
-
 | **Usable as OS Disk?** | No | No | Yes | Yes | Yes |
 
 The following sections provide more detail on disk performance.
