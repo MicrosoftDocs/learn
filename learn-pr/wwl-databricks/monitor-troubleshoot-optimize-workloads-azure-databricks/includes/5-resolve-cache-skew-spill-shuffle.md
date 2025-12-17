@@ -90,7 +90,7 @@ spark.conf.set("spark.sql.shuffle.partitions", "auto")
 
 Shuffle moves data between nodes during operations like joins, aggregations, and repartitioning. While sometimes necessary, excessive shuffle is expensive because it involves serializing data, writing to disk, transferring across the network, and deserializing.
 
-:::image type="content" source="../media/5-investigate-shuffle-issues.png" alt-text="Diagram explaining how to investigate shuffle issues" border="false" lightbox="../media/5-investigate-shuffle-issues.png":::
+:::image type="content" source="../media/5-investigate-shuffle-issues.png" alt-text="Diagram explaining how to investigate shuffle issues." border="false" lightbox="../media/5-investigate-shuffle-issues.png":::
 
 In the Spark UI, check the **Shuffle Read** and **Shuffle Write** columns for each stage. Large shuffle values indicate significant data movement. The DAG shows where shuffle operations occur as exchange nodes.
 
