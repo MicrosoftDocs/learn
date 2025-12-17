@@ -7395,3 +7395,8 @@ achievements:
   title: Protect your APIs on Azure API Management
   summary: Use policies in Azure API Management to protect your backend APIs from information exposure and implement throttling to prevent resource exhaustion.
   iconUrl: /training/achievements/protect-apis-on-api-management.svg
+- uid: learn.azdo.host-build-agent.badge
+  type: badge
+  title: Host your own build agent in Azure Pipelines
+  summary: Learn how to use your own build agent when Microsoft-hosted agents don't meet your needs.
+  iconUrl: /training/achievements/azure-devops/host-your-own-build-server-in-your-build-pipeline.svg

@@ -2,6 +2,8 @@ Let's say you underestimated how large some of the uploaded files are and that y
 
 Here, you practice the process you learned about in the previous units.
 
+[!INCLUDE[](../../../includes/azure-optional-exercise-subscription-note.md)]
+
 ## Resize the data disk
 
 To resize a disk, you need the disk's ID or name. In this case, you already know the name—**uploadDataDisk1*—but in case you didn't, or someone else created the disk, you can run `az disk list` to find the name.
