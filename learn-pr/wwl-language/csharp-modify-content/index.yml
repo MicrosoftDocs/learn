@@ -3,9 +3,9 @@ uid: learn.languages.csharp-modify-content
 metadata:
   title: Modify the Content of Strings using built-in String Data Type Methods in C#
   description: "Explore using the built-in string data type methods in C# to modify strings."
-  ms.date: 07/10/2025
-  author: wwlpublish
-  ms.author: eric
+  ms.date: 12/15/2025
+  author: ChrisHowd
+  ms.author: cahowd
   ms.topic: module
   ms.collection: N/A
   ms.custom:

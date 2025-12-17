@@ -8,7 +8,7 @@ Administrative isolation ensures that no single person or workspace has unrestri
 
 | **Role** | **Responsibilities** | **Scope** |
 |-----------|----------------------|------------|
-| **Account Admin** | Manage the Azure Databricks account, including enabling Unity Catalog, user provisioning, and account-level identity management. | Entire Databricks account |
+| **Account Admin** | Manage the Azure Databricks account, including enabling Unity Catalog, user provisioning, and account-level identity management. | Entire Azure Databricks account |
 | **Metastore Admin** | Manage privileges and ownership for all securable objects within a Unity Catalog metastore, such as who can create catalogs or query a table. | Specific metastore |
 
 ## Explore isolation boundary types
@@ -31,7 +31,7 @@ Workspace-to-catalog binding **controls where data is used** by restricting cata
 
 **To implement workspace-to-catalog binding:**
 
-1. In the Databricks workspace, select **Catalog**.
+1. In the Azure Databricks workspace, select **Catalog**.
 2. In the **Catalog** pane, select the catalog you want to bind.
 3. On the **Workspaces** tab, clear the **All workspaces have access** checkbox.
 4. Select **Assign to workspaces** and select the specific workspaces that should have access.

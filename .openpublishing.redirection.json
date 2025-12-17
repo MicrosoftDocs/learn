@@ -61218,6 +61218,96 @@
       "source_path": "learn-pr/azure/microservices-architecture/7-summary.yml",
       "redirect_url": "https://learn.microsoft.com/azure/architecture/web-apps/app-service/architectures/basic-web-app",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/train-model-debug-with-responsible-ai-dashboard-azure-machine-learning/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/machine-learning/concept-responsible-ai-dashboard",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/train-model-debug-with-responsible-ai-dashboard-azure-machine-learning/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/machine-learning/concept-responsible-ai-dashboard",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/train-model-debug-with-responsible-ai-dashboard-azure-machine-learning/2-responsible-ai-dashboard.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/machine-learning/concept-responsible-ai-dashboard",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/train-model-debug-with-responsible-ai-dashboard-azure-machine-learning/3-error-analysis.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/machine-learning/concept-responsible-ai-dashboard",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/train-model-debug-with-responsible-ai-dashboard-azure-machine-learning/4-model-performance-inconsistencies.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/machine-learning/concept-responsible-ai-dashboard",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/train-model-debug-with-responsible-ai-dashboard-azure-machine-learning/5-data-biases.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/machine-learning/concept-responsible-ai-dashboard",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/train-model-debug-with-responsible-ai-dashboard-azure-machine-learning/6-interpret-model.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/machine-learning/concept-responsible-ai-dashboard",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/train-model-debug-with-responsible-ai-dashboard-azure-machine-learning/7-lab-train-debug-model.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/machine-learning/concept-responsible-ai-dashboard",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/train-model-debug-with-responsible-ai-dashboard-azure-machine-learning/8-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/machine-learning/concept-responsible-ai-dashboard",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/train-model-debug-with-responsible-ai-dashboard-azure-machine-learning/9-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/machine-learning/concept-responsible-ai-dashboard",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/host-build-agent/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/agents/agents?view=azure-devops&tabs=yaml%2Cbrowser",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/host-build-agent/2-choose-a-build-agent.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/agents/agents?view=azure-devops&tabs=yaml%2Cbrowser",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/host-build-agent/3-set-up-environment.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/agents/agents?view=azure-devops&tabs=yaml%2Cbrowser",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/host-build-agent/4-create-build-agent.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/agents/agents?view=azure-devops&tabs=yaml%2Cbrowser",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/host-build-agent/5-build-application.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/agents/agents?view=azure-devops&tabs=yaml%2Cbrowser",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/host-build-agent/6-clean-up-environment.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/agents/agents?view=azure-devops&tabs=yaml%2Cbrowser",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/host-build-agent/7-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/agents/agents?view=azure-devops&tabs=yaml%2Cbrowser",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/host-build-agent/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/agents/agents?view=azure-devops&tabs=yaml%2Cbrowser",
+      "redirect_document_id": false
     }
   ]
 }

@@ -3,9 +3,9 @@ uid: learn.languages.csharp-convert-cast
 metadata:
   title: Convert Data Types Using Casting and Conversion Techniques in C#
   description: "Explore using C# techniques for casts and conversions."
-  ms.date: 04/15/2025
-  author: wwlpublish
-  ms.author: eric
+  ms.date: 12/15/2025
+  author: ChrisHowd
+  ms.author: cahowd
   ms.topic: module
   ms.collection: N/A
   ms.custom:

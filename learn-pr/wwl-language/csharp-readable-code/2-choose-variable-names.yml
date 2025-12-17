@@ -5,8 +5,8 @@ metadata:
   title: Choose variable names that follow rules and conventions
   description: "Choose variable names that follow rules and conventions"
   no-loc: ["UserOption", "user Option", "userOption"]
-  ms.date: 06/16/2025
-  author: wwlpublish
+  ms.date: 12/15/2025
+  author: ChrisHowd
   ms.author: cahowd
   ms.topic: unit
   ms.custom:

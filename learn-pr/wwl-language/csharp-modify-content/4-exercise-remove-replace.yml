@@ -4,9 +4,9 @@ title: Exercise - Use the Remove() and Replace() methods
 metadata:
   title: Exercise - Use the Remove() and Replace() methods
   description: "Use the Remove() and Replace() methods to remove and replace characters from a string."
-  ms.date: 07/10/2025
-  author: wwlpublish
-  ms.author: eric
+  ms.date: 12/15/2025
+  author: ChrisHowd
+  ms.author: cahowd
   ms.topic: unit
   ms.custom:
   - N/A

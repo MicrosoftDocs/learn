@@ -1,22 +1,154 @@
-Two important statistical techniques that form the foundation of natural language processing (NLP) include: **Naïve Bayes** and **Term Frequency - Inverse Document Frequency** (**TF-IDF**).
+::: zone pivot="video"
 
-## Understanding Naïve Bayes
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=fd1108ae-61a0-4b39-a277-fcb0be6c5af6]
 
-**Naïve Bayes** is a statistical technique that was first used for email filtering. To learn the difference between spam and not spam, two documents are compared. Naïve Bayes classifiers identify which tokens are correlated with emails labeled as spam. In other words, the technique finds which group of words only occurs in one type of document and not in the other. The group of words is often referred to as **bag-of-words** features.
+> [!NOTE]
+> See the **Text and images** tab for more details!
 
-For example, the words `miracle cure`, `lose weight fast`, and `anti-aging` may appear more frequently in spam emails about dubious health products than your regular emails.
+::: zone-end
 
-Though Naïve Bayes proved to be more effective than simple rule-based models for text classification, it was still relatively rudimentary as only the presence (and not the position) of a word or token was considered.
+::: zone pivot="text"
 
-## Understanding TF-IDF
+Having broken down a text corpus into its constituent tokens, and prepared them for analysis; there are some common statistical analysis techniques you can use to infer meaning from the text.
 
-The **Term Frequency - Inverse Document Frequency** (**TF-IDF**) technique had a similar approach in that it compared the frequency of a word in one document with the frequency of the word in a whole **corpus** of documents. By understanding in which context a word was being used, documents could be classified based on certain topics. TF-IDF is often used for information retrieval, to help understand which relative words or tokens to search for.
+## Frequency Analysis
 
-> [!Note]
-> In the context of NLP, a **corpus** refers to a large and structured collection of text documents that is used for machine learning tasks. Corpora (plural of corpus) serve as essential resources for training, testing, and evaluating various NLP models.
+Perhaps the most obvious way to ascertain the topics discussed in a document is to simply count the number of times each normalized token appears. The assumption is that terms that are used more frequently in the document can help identify the subjects or themes discussed. Put simply, if you can determine the most commonly used words in a given document, you can often get a good idea of what the document is about.
 
-For example, after tokenizing the words in `"we choose to go to the moon"`, you can perform some analysis to count the number of occurrences of each token. The most commonly used words (other than *stop words* such as `"a"`, `"the"`, and so on) can often provide a clue as to the main subject of a text corpus. For example, the most common words in the entire text of the `"go to the moon"` speech we considered previously include `"new"`, `"go"`, `"space"`, and `"moon"`. If we were to tokenize the text as `bi-grams` (word pairs), the most common `bi-gram` in the speech is `"the moon"`. From this information, we can easily surmise that the text is primarily concerned with space travel and going to the moon.
+For example, consider the following text:
 
-Simple frequency analysis in which you simply count the number of occurrences of each token can be an effective way to analyze a single document, but when you need to differentiate across multiple documents within the same corpus, you need a way to determine which tokens are most relevant in each document. *TF-IDF* calculates scores based on how often a word or term appears in one document compared to its more general frequency across the entire collection of documents. Using this technique, a high degree of relevance is assumed for words that appear frequently in a particular document, but relatively infrequently across a wide range of other documents.
+> *`AI in modern business delivers transformative benefits by enhancing efficiency, decision-making, and customer experiences. Businesses can leverage AI to automate repetitive tasks, freeing employees to focus on strategic work, while predictive analytics and machine learning models enable data-driven decisions that improve accuracy and speed. AI-powered tools like Copilot streamline workflows across marketing, finance, and operations, reducing costs and boosting productivity. Additionally, intelligent applications personalize customer interactions, driving engagement and loyalty. By embedding AI into core processes, businesses benefit from the ability to innovate faster, adapt to market changes, and maintain a competitive edge in an increasingly digital economy.`*
 
-Next, let's look at the deep learning techniques used to create today's semantic models.
+After tokenizing, normalizing, and applying lemmatization to the text, the frequency of each term can be counted and tabulated; producing the following partial results:
+
+|Term|Frequency|
+|-|-|
+|`ai`|4|
+|`business`|3|
+|`benefit`|2|
+|`customer`|2|
+|`decision`|2|
+|`market`|2|
+|`ability`|1|
+|`accuracy`|1|
+|...|...|
+
+From these results, the most frequently occurring terms indicate that the text discusses AI and its business benefits.
+
+## Term Frequency - Inverse Document Frequency (TF-IDF)
+
+Simple frequency analysis in which you count the number of occurrences of each token can be an effective way to analyze a single document, but when you need to differentiate across multiple documents within the same corpus, you need a way to determine which tokens are most relevant in each individual document.
+
+For example, consider the following two text samples:
+
+> **Sample A:**
+>
+> *`Microsoft Copilot Studio enables declarative AI agent creation using natural language, prompts, and templates. With this declarative approach, an AI agent is configured rather than programmed: makers define intents, actions, and data connections, then publish the agent to channels. Microsoft Copilot Studio simplifies agent orchestration, governance, and lifecycles so an AI agent can be iterated quickly. Using Microsoft Copilot Studio helps modern businesses deploy Microsoft AI agent solutions fast.`*
+
+> **Sample B:**
+>
+> *`Microsoft Foundry enables code‑based AI agent development with SDKs and APIs. Developers write code to implement agent conversations, tool calling, state management, and custom pipelines. In Microsoft Foundry, engineers can use Python or Microsoft C#, integrate Microsoft AI services, and manage CI/CD to deploy the AI agent. This code-first development model supports extensibility and performance while building Microsoft Foundry AI agent applications.`*
+
+The top three most frequent terms in these samples are shown in the following tables:
+
+**Sample A**:
+
+|Term | Frequency |
+|-|-|
+|`agent`| 6|
+|`ai`| 4|
+|`microsoft`|4|
+
+**Sample B**:
+
+|Term | Frequency |
+|-|-|
+|`microsoft`|5|
+|`agent`| 4|
+|`ai`| 4|
+
+As you can see from the results, the most common words in both samples are the same (`"agent"`, `"Microsoft"`, and `"AI"`). This tells us that both documents cover a similar overall theme, but doesn't help us discriminate between the individual documents. Examining the counts of less frequently used terms might help, but you can easily imagine an analysis of a corpus based on Microsoft's AI documentation, which would result in a large number of terms that are common across all documents; making it hard to determine the specific topics covered in each document.
+
+To address this problem, *Term Frequency - Inverse Document Frequency* (TF-IDF) is a technique that calculates scores based on how often a word or term appears in one document compared to its more general frequency across the entire collection of documents. Using this technique, a high degree of relevance is assumed for words that appear frequently in a particular document, but relatively infrequently across a wide range of other documents. To calculate TF-IDF for terms in an individual document, you can use the following three-step process:
+
+1. **Calculate Term Frequency (TF)**: This is simply how many times a word appears in a document. For example, if the word `"agent"` appears 6 times in a document, then `tf(agent) = 6`.
+
+2. **Calculate Inverse Document Frequency (IDF)**: This checks how common or rare a word is across all documents. If a word appears in every document, it’s not special. The formula used to calculate IDF is `idf(t) = log(N / df(t))` (where `N` is total number of documents and `df(t)` is the number of documents that contain the word `t`)
+
+3. **Combine them to calculate TF-IDF**: Multiply TF and IDF to get the score: `tfidf(t, d) = tf(t, d) * log(N / df(t))`
+
+A high TF-IDF score indicates that a word appears often in one document but rarely in others. A low score indicates that word is common in many documents. In two samples about AI agents, because `"AI"`, `"Microsoft"`, and `"agent"` appear in both samples (`N = 2, df(t) = 2`), their IDF is `log(2/2) = 0`, so they carry no discriminative weight in TF‑IDF. The top three TF-IDF results for the samples are:
+
+**Sample A:**
+
+|Term|TF-IDF|
+|-|-|
+|`copilot`|2.0794|
+|`studio`|2.0794|
+|`declarative`|1.3863|
+
+**Sample B:**
+
+|Term|TF-IDF|
+|-|-|
+|`code`|2.0794|
+|`develop`|2.0794|
+|`foundry`|2.0794|
+
+From these results, it's clearer that sample A is about declarative agent creation with Copilot Studio, while sample B is about code-based agent development with Microsoft Foundry.
+
+## "Bag-of-words" machine learning techniques
+
+*Bag-of-words* is the name given to a feature extraction technique that represents text tokens as a vector of word frequencies or occurrences, ignoring grammar and word order. This representation becomes the input for machine learning algorithms like Naive Bayes, a probabilistic classifier that applies Bayes’ theorem to predict the probable class of a document based on word frequency.
+
+For example, you might use this technique to train a machine learning model that performs email spam filtering. The words `"miracle cure"`, `"lose weight fast"`, and `"anti-aging`` may appear more frequently in spam emails about dubious health products than your regular emails, and a trained model might flag messages containing these words as potential spam.
+
+You can implement *sentiment analysis* by using the same method to classify text by emotional tone. The bag-of-words provides the features, and model uses those features to estimate probabilities and assign sentiment labels like "positive" or "negative".
+
+## TextRank
+
+TextRank is an unsupervised graph-based algorithm that models text as a network of connected *nodes*. For example, each sentence in a document could be considered a node, and the connections (*edges*) between them are scored based on the similarity of the words they contain. TextRank is commonly used to summarize text based on identifying a subset of sentences within a document that best represent its overall subject.
+
+The TextRank algorithm applies the same principle as Google's PageRank algorithm (which ranks web pages based on links between them) to text. The key idea is that a sentence is important if it's similar to many other important sentences. The algorithm works through the following steps:
+
+1. **Build a graph**: Each sentence becomes a node, and edges that connect them are weighted by similarity (often measured using word overlap or cosine similarity between sentence vectors).
+
+2. **Calculate ranks iteratively**: Each node's score is calculated based on the scores of the nodes connected to it. The formula is: `TextRank(Sᵢ) = (1-d) + d * Σ(wⱼᵢ / Σwⱼₖ) * TextRank(Sⱼ)` (where `d` is a damping factor, typically 0.85, `wⱼᵢ` is the weight of the edge from sentence `j` to sentence `i`, and the sum iterates over all sentences connected to `i`).
+
+3. **Extract top-ranked sentences**: After convergence, the sentences with the highest scores are selected as the summary.
+
+For example, consider the following document about cloud computing:
+
+> *`Cloud computing provides on-demand access to computing resources. Computing resources include servers, storage, and networking. Azure is Microsoft's cloud computing platform. Organizations use cloud platforms to reduce infrastructure costs. Cloud computing enables scalability and flexibility.`*
+
+To generate a summary of this document, the TextRank process begins by splitting this document into sentences:
+
+1. *`Cloud computing provides on-demand access to computing resources.`*
+1. *`Computing resources include servers, storage, and networking.`*
+1. *`Azure is Microsoft's cloud computing platform.`*
+1. *`Organizations use cloud platforms to reduce infrastructure costs.`*
+1. *`Cloud computing enables scalability and flexibility.`*
+
+Next, edges are created between sentences with weights based on similarity (word overlap). For this example, the edge weights might be:
+
+- Sentence 1 <-> Sentence 2: 0.5 (shares `"computing resources"`)
+- Sentence 1 <-> Sentence 3: 0.6 (shares `"cloud computing"`)
+- Sentence 1 <-> Sentence 4: 0.2 (shares `"cloud"`)
+- Sentence 1 <-> Sentence 5: 0.7 (shares `"cloud computing"`)
+- Sentence 2 <-> Sentence 3: 0.2 (limited overlap)
+- Sentence 2 <-> Sentence 4: 0.1 (limited overlap)
+- Sentence 2 <-> Sentence 5: 0.1 (shares `"computing"`)
+- Sentence 3 <-> Sentence 4: 0.5 (shares `"cloud platforms"`)
+- Sentence 3 <-> Sentence 5: 0.4 (shares `"cloud computing"`)
+- Sentence 4 <-> Sentence 5: 0.3 (limited overlap)
+
+![Diagram of connected sentence nodes.](../media/text-rank.png)
+
+After calculating TextRank scores iteratively using these weights, sentences 1, 3, and 5 might receive the highest scores because they connect well to other sentences through shared terminology and concepts. These sentences would be selected to form a concise summary: *`"Cloud computing provides on-demand access to computing resources. Azure is Microsoft's cloud computing platform. Cloud computing enables scalability and flexibility."`*
+
+> [!NOTE]
+> Generating a document summary by selecting the most relevant sentences is a form of *extractive* summarization. In this approach, no new text is generated - the summary consists of a subset of the original text. More recent developments in semantic modeling also enable *abstractive* summarization, in which new language that summarizes the key themes of the source document is generated.
+
+TextRank can also be applied at the word level for *keyword extraction*, where words (rather than sentences) become nodes, and edges represent co-occurrence within a fixed window. The highest-ranked words are extracted as key terms representing the document's main topics.
+
+::: zone-end

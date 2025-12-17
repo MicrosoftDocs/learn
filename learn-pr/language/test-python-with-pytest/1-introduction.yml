@@ -6,7 +6,7 @@ metadata:
   description: This module will go through the basics of Pytest, a powerful testing tool for Python. You'll learn to write and run tests, as well as reporting.
   ms.date: 05/27/2025
   author: alfredodeza
-  ms.author: alfredodeza
+  ms.author: orthomas
   ms.custom:
     - team=nextgen
     - devx-track-python

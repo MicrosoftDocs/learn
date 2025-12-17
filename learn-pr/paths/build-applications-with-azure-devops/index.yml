@@ -56,6 +56,5 @@ subjects:
 modules:
 - learn.azdo.implement-code-workflow
 - learn.azdo.manage-build-dependencies
-- learn.azdo.host-build-agent
 trophy:
   uid: learn.azdo.build-applications-with-azure-devops.trophy
