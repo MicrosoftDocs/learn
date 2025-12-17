@@ -35,7 +35,7 @@ To install the C# Dev Kit extension for Visual Studio Code, complete the followi
     This extension should install in 30-40 seconds. When the installation is complete, the Install button changes to Installed.
 
     > [!NOTE]
-    > You may see notifications appear when installing the C# Dev Kit extension. Ignore the notification asking you to "log in", and close the notification telling you "The .NET Core SDK cannot be located". You install the .NET SDK in the next unit.
+    > You may see notifications appear when installing the C# Dev Kit extension. Ignore the notification asking you to "log in", and close the notification telling you "The .NET SDK cannot be located". You install the .NET SDK in the next unit.
 
 1. Close the Get Started with C# Dev Kit page in the Editor.
 
@@ -52,20 +52,6 @@ To install the C# Dev Kit extension for Visual Studio Code, complete the followi
     - **C# - Base language support for C#**.
     - **C# Dev Kit - Official C# extension from Microsoft**.
 
-    The final extension you need is named **IntelliCode for C# Dev Kit**. This extension provides AI-assisted development for the C# Dev Kit.
-
-1. In the **Search Extensions in Marketplace** textbox, enter **C#**
-
-1. In the filtered list of available extensions, select the extension labeled **IntelliCode for C# Dev Kit - AI-assisted development for C# Dev Kit** published by Microsoft.
-
-    ![Screenshot showing Visual Studio Code IntelliCode for C# Dev Kit extension that's published by Microsoft.](../media/visual-studio-code-csharp-intellicode-extension-microsoft.png)
-
-1. To install the extension, select **Install**.
-
-    The Install button changes to Installing. The **IntelliCode for C# Dev Kit** extension should install quickly.
-
-1. Close the IntelliCode for C# Dev Kit page in the Editor.
-
 1. To close the **EXTENSIONS** view, select the **Extensions** icon on the Activity bar.
 
     The **EXTENSIONS** view collapses.
@@ -73,4 +59,3 @@ To install the C# Dev Kit extension for Visual Studio Code, complete the followi
 The C# extensions you installed are the only ones that you need for now.
 
 In the next Unit, you install the .NET SDK.
-
