@@ -114,7 +114,7 @@ In this task, you use the EXPLORER view to open your code project folder, custom
 
     The `dotnet build` command builds the project and its dependencies into a set of binaries. The binaries include the project's code in Intermediate Language (IL) files with a .dll extension. Depending on the project type and settings, other files may also be included. If you're curious, you can find the TestProject.dll file in the EXPLORER view at a folder location that's similar to the following path:
 
-    `C:\Users\someuser\Desktop\CsharpProjects\TestProject\bin\Debug\net7.0\`
+    `C:\Users\someuser\Desktop\CsharpProjects\TestProject\bin\Debug\net10.0\`
 
     > [!NOTE]
     > Your folder path will reflect your account and the folder path to your TestProject folder.

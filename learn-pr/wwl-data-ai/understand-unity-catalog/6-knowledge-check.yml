@@ -18,7 +18,7 @@ quiz:
     choices:
     - content: "To provide distributed computing for big data processing"
       isCorrect: false
-      explanation: "Incorrect. Unity Catalog is not used for distributed computing; that's the role of Apache Spark in Databricks."
+      explanation: "Incorrect. Unity Catalog is not used for distributed computing; that's the role of Apache Spark in Azure Databricks."
     - content: "To provide unified data governance across all workspaces"
       isCorrect: true
       explanation: "Correct. Unity Catalog provides a centralized governance layer that spans all Azure Databricks workspaces, enabling consistent permissions, auditing, and data management."

@@ -3,8 +3,8 @@ uid: learn.wwl.guided-project-arrays-iteration-selection
 metadata:
   title: Guided Project - Develop foreach and if-elseif-else Structures to Process Array Data in C#
   description: "Gain experience developing a console app that implements arrays, foreach loops, and if statements to achieve app specifications."
-  ms.date: 06/16/2025
-  author: wwlpublish
+  ms.date: 12/15/2025
+  author: ChrisHowd
   ms.author: cahowd
   ms.topic: module-guided-project
   ms.collection: N/A
