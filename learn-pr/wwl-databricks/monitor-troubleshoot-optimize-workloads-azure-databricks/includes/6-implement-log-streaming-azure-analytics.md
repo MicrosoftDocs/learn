@@ -15,6 +15,8 @@ The data flow works as follows:
 3. Log Analytics ingests the events into **service-specific tables**.
 4. You query, visualize, and alert on this data using **Kusto Query Language (KQL)**.
 
+:::image type="content" source="../media/6-understand-log-streaming.png" alt-text="Diagram explaining log streaming architecture." border="false" lightbox="../media/6-understand-log-streaming.png":::
+
 Platform administrators typically configure the diagnostic settings through the Azure portal. As a data engineer, you focus on using the logs for monitoring and troubleshooting.
 
 > [!NOTE]

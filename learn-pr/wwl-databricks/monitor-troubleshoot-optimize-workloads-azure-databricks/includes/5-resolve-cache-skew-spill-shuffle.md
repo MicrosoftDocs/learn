@@ -25,6 +25,8 @@ spark.conf.get("spark.databricks.io.cache.enabled")
 
 When investigating caching problems, consider these scenarios:
 
+:::image type="content" source="../media/5-investigate-cache-issues.png" alt-text="Diagram showing how to investigate caching issues." border="false" lightbox="../media/5-investigate-cache-issues.png":::
+
 **Under-caching** means data is read repeatedly from remote storage when it could be served from cache. The Spark UI shows high **Input** values for stages that read the same data multiple times. Enable disk cache and use worker nodes with SSD storage for better performance.
 
 **Over-caching** consumes memory that Spark needs for processing. If you see memory pressure or out-of-memory errors, review whether cached data is actually being reused. Spark cache (using `.cache()` or `.persist()`) requires explicit management, unlike automatic disk caching.
@@ -38,6 +40,8 @@ df.unpersist()
 ## Investigate data skew
 
 Data skew occurs when some partitions contain significantly more data than others. This imbalance causes a few tasks to run much longer than the rest, leaving most cluster resources idle while waiting for slow tasks to complete.
+
+:::image type="content" source="../media/5-investigate-data-skew.png" alt-text="Diagram showing how to investigate data skew." border="false" lightbox="../media/5-investigate-data-skew.png":::
 
 To identify skew in the Spark UI, navigate to the stage's page and scroll to **Summary Metrics**. Compare the **Max** duration to the **75th percentile**. If the Max is more than 50% higher than the 75th percentile, you likely have skew.
 
@@ -63,6 +67,8 @@ spark.conf.get("spark.databricks.optimizer.adaptive.enabled")
 
 Spill happens when Spark runs out of memory during processing and writes intermediate data to disk. This disk I/O significantly slows down operations. Spill commonly occurs during shuffle operations, aggregations, or when partitions are too large.
 
+:::image type="content" source="../media/5-investigate-memory-spill.png" alt-text="Diagram explaining memory spill." border="false" lightbox="../media/5-investigate-memory-spill.png":::
+
 The Spark UI shows spill metrics at the top of each stage's page. Look for **Shuffle Spill (Memory)** and **Shuffle Spill (Disk)** values. Any non-zero spill indicates memory pressure.
 
 To reduce spill:
@@ -83,6 +89,8 @@ spark.conf.set("spark.sql.shuffle.partitions", "auto")
 ## Investigate shuffle issues
 
 Shuffle moves data between nodes during operations like joins, aggregations, and repartitioning. While sometimes necessary, excessive shuffle is expensive because it involves serializing data, writing to disk, transferring across the network, and deserializing.
+
+:::image type="content" source="../media/5-investigate-shuffle-issues.png" alt-text="Diagram explaining how to investigate shuffle issues." border="false" lightbox="../media/5-investigate-shuffle-issues.png":::
 
 In the Spark UI, check the **Shuffle Read** and **Shuffle Write** columns for each stage. Large shuffle values indicate significant data movement. The DAG shows where shuffle operations occur as exchange nodes.
 
