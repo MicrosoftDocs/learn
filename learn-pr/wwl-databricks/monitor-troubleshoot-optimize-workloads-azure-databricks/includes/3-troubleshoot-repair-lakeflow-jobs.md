@@ -25,6 +25,8 @@ To investigate a failed job:
 3. In the **Runs** tab, hover over a failed task (shown in red) to see metadata including start time, end time, status, duration, and error messages.
 4. Select the failed task to open the **Task run details** page with complete output and logs.
 
+:::image type="content" source="../media/3-identify-cause-failure.png" alt-text="Screenshot showing a failed task." lightbox="../media/3-identify-cause-failure.png":::
+
 The matrix view helps you identify patterns. If the same task fails repeatedly, the issue likely relates to that task's code or configuration. If failures appear random across different tasks, you might have a cluster or resource problem.
 
 > [!TIP]
@@ -54,6 +56,8 @@ To repair a failed run:
 4. Optionally, modify task parameters in the dialog. These values override the original settings for this repair run only.
 5. Select **Repair run** to start.
 
+:::image type="content" source="../media/3-repair-failed-task.png" alt-text="Screenshot of the failed task." lightbox="../media/3-repair-failed-task.png":::
+
 After the repair completes, the matrix view adds a new column showing the repaired run results. Tasks that were red (failed) should now appear green (successful).
 
 > [!NOTE]
@@ -66,6 +70,8 @@ Sometimes you need to halt a running job or restart one that's stuck. The Jobs U
 **To stop an active run**: From the **Runs** tab, active runs display a stop button. Select this button to cancel the specific run. You can also select **Cancel runs** or **Cancel all queued runs** from the dropdown menu to stop multiple runs at once.
 
 **To restart continuous jobs**: Continuous jobs that fail repeatedly enter an exponential backoff state, where Azure Databricks waits progressively longer between retry attempts. The **Job details** panel shows the number of consecutive failures and the time until the next retry. Select **Restart run** to cancel the active run, reset the retry period, and immediately start a new run.
+
+:::image type="content" source="../media/3-stop-run.png" alt-text="Screenshot showing how to stop an active run." lightbox="../media/3-stop-run.png":::
 
 Use the stop function when a job consumes excessive resources, processes incorrect data, or needs immediate intervention. Use restart when you've fixed an underlying issue and want to bypass the exponential backoff waiting period.
 

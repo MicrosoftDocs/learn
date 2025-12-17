@@ -9,6 +9,6 @@ metadata:
   ms.author: wedebols
   ms.topic: unit
   ai-usage: ai-generated
-durationInMinutes: 7
+durationInMinutes: 6
 content: |
   [!include[](includes/4-troubleshoot-repair-spark-jobs-notebooks.md)]
