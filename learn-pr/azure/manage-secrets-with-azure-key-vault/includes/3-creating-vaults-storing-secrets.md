@@ -1,3 +1,7 @@
+[!INCLUDE[](../../../includes/azure-optional-exercise-subscription-note.md)]
+
+[!INCLUDE[](../../../includes/azure-optional-exercise-create-resource-group-note.md)]
+
 ## Create Key Vaults for your applications
 
 A best practice is to create a separate vault for each deployment environment of each of your applications, such as development, test, and production. You can use a single vault to store secrets for multiple apps and environments, but the impact of an attacker gaining read access to a vault increases with the number of secrets in the vault.
@@ -21,7 +25,7 @@ To create your vault, run the following command in Azure Cloud Shell. Make sure 
 
 ```azurecli
 az keyvault create \
-    --resource-group "<rgn>[sandbox resource group name]</rgn>" \
+    --resource-group <your-resource-group-name> \
     --location centralus \
     --name <your-unique-vault-name>
 ```
