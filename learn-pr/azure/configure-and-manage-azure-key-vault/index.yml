@@ -17,7 +17,8 @@ abstract: |
   - Manage access to an Azure Key Vault.
   - Explore certificate management with Azure Key Vault.
   - Configure a Hardware Security Module Key-generation solution.
-prerequisites: None
+prerequisites: |
+  [!INCLUDE [](../../includes/azure-optional-exercise-subscription-prerequisite.md)]
 iconUrl: /training/achievements/configure-and-manage-azure-key-vault.svg
 levels:
 - beginner
