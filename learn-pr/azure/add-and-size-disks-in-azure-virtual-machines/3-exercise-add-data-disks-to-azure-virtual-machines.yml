@@ -9,8 +9,8 @@ metadata:
   ms.author: rogarana
   ms.topic: unit
   ms.custom: devx-track-azurecli, linux-related-content
-interactive: bash
-azureSandbox: true
+#interactive: bash
+#azureSandbox: true
 durationInMinutes: 10
 content: |
   [!include[](includes/3-exercise-add-data-disks-to-azure-virtual-machines.md)]
