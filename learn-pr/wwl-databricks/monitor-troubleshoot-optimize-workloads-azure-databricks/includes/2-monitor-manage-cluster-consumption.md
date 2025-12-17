@@ -6,6 +6,8 @@ Unmonitored clusters present real financial risks. A single **idle cluster** run
 
 At the same time, **under-provisioned clusters** create their own problems. Jobs take longer to complete, users experience delays, and critical workflows miss their deadlines. The goal isn't simply to minimize costs—it's to **match resources precisely to workload requirements**.
 
+:::image type="content" source="../media/2-understand-impact-cluster-consumption.png" alt-text="Diagram explaining the impact of cluster consumption." border="false" lightbox="../media/2-understand-impact-cluster-consumption.png":::
+
 Monitoring cluster consumption helps you **identify waste** before it impacts budgets and **spot performance bottlenecks** before they affect business operations. Regular monitoring also establishes **baselines** that help you plan capacity and justify infrastructure decisions.
 
 ## Monitor compute metrics
@@ -20,6 +22,8 @@ The metrics interface displays three categories of data:
 
 **GPU metrics** (available on Databricks Runtime ML 13.3 and later) track specialized compute utilization when running machine learning workloads.
 
+:::image type="content" source="../media/2-cluster-metrics.png" alt-text="Screenshot of Azure Databricks cluster metrics." lightbox="../media/2-cluster-metrics.png":::
+
 You can filter metrics by time range using the date picker, viewing data from the past 30 days. Select individual nodes from the Compute dropdown to investigate specific worker performance, or view aggregated metrics across all nodes to understand overall cluster behavior.
 
 > [!NOTE]
@@ -28,6 +32,8 @@ You can filter metrics by time range using the date picker, viewing data from th
 ## Monitor SQL warehouse performance
 
 SQL warehouses have their own monitoring interface optimized for query analytics. Select a SQL warehouse and then select the **Monitoring** tab to view performance data.
+
+:::image type="content" source="../media/2-warehouse-monitoring-tab.png" alt-text="Screenshot of the Azure Databricks SQL warehouse monitoring tab." lightbox="../media/2-warehouse-monitoring-tab.png":::
 
 **Live statistics** at the top of the page show warehouse status, running queries, queued queries, and current cluster count. These metrics update in real-time and help you quickly assess whether the warehouse is keeping up with demand.
 
@@ -43,6 +49,8 @@ Monitoring reveals patterns; configuration changes act on those patterns. Two ke
 
 **Auto-termination** shuts down idle clusters after a specified period of inactivity. For development environments, **30-60 minutes** is typically appropriate. The cluster terminates when no commands have run for the specified duration, preventing costs from accumulating overnight or over weekends.
 
+:::image type="content" source="../media/2-configure-auto-termination-autoscaling.png" alt-text="Screenshot showing cluster auto-termination and autoscaling settings." lightbox="../media/2-configure-auto-termination-autoscaling.png":::
+
 To configure auto-termination, enable the setting during cluster creation or edit an existing cluster. Enter the number of minutes of inactivity before termination. Keep in mind that a cluster is considered inactive only when all commands—including Spark jobs, Structured Streaming, and JDBC calls—have finished executing.
 
 **Autoscaling** dynamically adjusts the number of worker nodes based on workload demand. Configure **minimum and maximum node counts** based on your workload analysis. The cluster adds workers during intensive processing and removes them during lighter periods, reducing costs by **20-40%** compared to fixed-size clusters.
@@ -55,6 +63,8 @@ To configure auto-termination, enable the setting during cluster creation or edi
 Beyond real-time monitoring, you need visibility into actual spending. Azure Databricks provides several tools for cost tracking.
 
 **Budgets** let you set financial targets and track spending across your account. Configure **email notifications** when spending approaches or exceeds your budget limits. You can apply filters to track spending by team, project, or workspace.
+
+:::image type="content" source="../media/2-create-budget.png" alt-text="Screenshot showing the account console > usage > create budget." lightbox="../media/2-create-budget.png":::
 
 **System tables**, specifically `system.billing.usage`, provide detailed usage data you can query directly. Join this table with `compute.clusters` to identify which cluster owners consume the most **Databricks Units (DBUs)**. Use **custom tags** to attribute costs to specific business units or projects.
 
