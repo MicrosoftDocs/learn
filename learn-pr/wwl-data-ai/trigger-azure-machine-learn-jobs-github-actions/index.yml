@@ -5,7 +5,7 @@ metadata:
   description: MLOps, machine learning operations
   author: wwlpublish
   ms.author: madiepev
-  ms.date: 07/10/2024
+  ms.date: 12/01/2025
   ms.service: azure-machine-learning
   ms.topic: module-standard-task-based
   ms.collection:
@@ -43,4 +43,4 @@ units:
 - learn.wwl.trigger-azure-machine-learn-jobs-github-actions.summary
 badge:
   uid: learn.wwl.trigger-azure-machine-learning-jobs-github-actions.badge
-
+

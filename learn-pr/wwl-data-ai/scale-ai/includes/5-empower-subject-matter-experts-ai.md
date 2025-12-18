@@ -18,14 +18,14 @@ For example:
 
 ## Create AI solutions without code
 
-Prebuilt models like GPT are now integrated into everyday tools—Microsoft 365, Dynamics 365, and Bing—so subject matter experts can start using AI immediately. For more advanced needs, platforms like Microsoft Power Platform and Azure AI Services enable Subject matter experts to create apps, automate processes, and even integrate AI models without writing code.
+Prebuilt models like GPT are now integrated into everyday tools—Microsoft 365, Dynamics 365, and Bing—so subject matter experts can start using AI immediately. For more advanced needs, platforms like Microsoft Power Platform and Microsoft Foundry enable Subject matter experts to create apps, automate processes, and even integrate AI models without writing code.
 
 > [!NOTE]
 > Nearly a third of business users have tried to incorporate prebuilt generative AI models such as GPT in their work routines.
 
-For more complex solutions, business users may want to create their own AI models or integrate a model into an app themselves. With no-code tools and platforms such as those provided by Microsoft Power Platform and Azure AI Services, now business users can add AI capabilities to their apps and automate their workflow regardless of their technical expertise.
+For more complex solutions, business users may want to create their own AI models or integrate a model into an app themselves. With no-code tools and platforms such as those provided by Microsoft Power Platform and Microsoft Foundry, now business users can add AI capabilities to their apps and automate their workflow regardless of their technical expertise.
 
-To explore these capabilities in more depth, see the module [Leverage AI tools and resources for your business](/leverage-ai-tools?azure-portal=true).
+To explore these capabilities in more depth, see the module [Leverage AI tools and resources for your business](/training/modules/leverage-ai-tools).
 
 Empowering subject matter experts with AI isn't just about convenience—it's a strategic advantage. When subject matter experts can apply AI directly, organizations accelerate innovation, reduce dependency on technical teams, and unlock faster time-to-value. This approach turns expertise into impact, enabling your business to adapt quickly, seize new opportunities, and stay ahead in a competitive market.
 

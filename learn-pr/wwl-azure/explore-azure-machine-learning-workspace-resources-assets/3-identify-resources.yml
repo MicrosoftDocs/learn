@@ -6,11 +6,11 @@ metadata:
   description: Identify Azure Machine Learning resources
   author: wwlpublish
   ms.author: madiepev
-  ms.date: 11/19/2024
+  ms.date: 12/01/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
 durationInMinutes: 6
 content: |
   [!include[](includes/3-identify-resources.md)]
-
+

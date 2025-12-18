@@ -1,0 +1,95 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.select-and-configure-compute.knowledge-check
+title: Module assessment
+metadata:
+  title: Module assessment
+  description: "Knowledge check"
+  ms.date: 12/07/2025
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+  module_assessment: true
+  ai-usage: ai-generated
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which compute type provides the fastest startup time and requires minimal management overhead?"
+    choices:
+    - content: "Classic compute with instance pools"
+      isCorrect: false
+      explanation: "Incorrect. Instance pools reduce startup time for classic compute but still require more management than the fastest option."
+    - content: "Serverless compute"
+      isCorrect: true
+      explanation: "Correct. Serverless compute starts in 2-6 seconds and is fully managed, offering the fastest startup with minimal operational overhead."
+    - content: "SQL warehouse in classic mode"
+      isCorrect: false
+      explanation: "Incorrect. Classic SQL warehouses take approximately 4 minutes to start."
+  - content: "What is the primary limitation of serverless compute compared to classic compute?"
+    choices:
+    - content: "Serverless compute cannot use Photon acceleration"
+      isCorrect: false
+      explanation: "Incorrect. Serverless compute supports Photon acceleration."
+    - content: "Serverless compute doesn't support RDD APIs, R language, or JAR libraries"
+      isCorrect: true
+      explanation: "Correct. Serverless compute has limitations with RDD APIs, R language, and JAR libraries. Workloads requiring these features need classic compute with dedicated access mode."
+    - content: "Serverless compute is more expensive than classic compute"
+      isCorrect: false
+      explanation: "Incorrect. Serverless compute scales to zero and typically offers better cost efficiency."
+  - content: "When configuring node types for a workload with large joins and aggregations, which instance type is most appropriate?"
+    choices:
+    - content: "Compute-optimized instances like F-series"
+      isCorrect: false
+      explanation: "Incorrect. Compute-optimized instances suit CPU-intensive workloads but don't provide the memory needed for large joins and aggregations."
+    - content: "Memory-optimized instances like E-series"
+      isCorrect: true
+      explanation: "Correct. Memory-optimized instances provide high memory-to-core ratios, reducing the likelihood of spilling data to disk during large joins and aggregations."
+    - content: "Storage-optimized instances like L-series"
+      isCorrect: false
+      explanation: "Incorrect. Storage-optimized instances provide fast local storage but don't necessarily provide sufficient memory for large in-memory operations."
+  - content: "What permission level allows users to attach notebooks and view metrics but prevents them from starting or stopping compute resources?"
+    choices:
+    - content: "CAN MANAGE"
+      isCorrect: false
+      explanation: "Incorrect. CAN MANAGE provides full control including lifecycle management."
+    - content: "CAN RESTART"
+      isCorrect: false
+      explanation: "Incorrect. CAN RESTART includes the ability to start, stop, and restart compute resources."
+    - content: "CAN ATTACH TO"
+      isCorrect: true
+      explanation: "Correct. CAN ATTACH TO allows users to attach notebooks, view Spark UI, and access metrics without controlling the compute lifecycle."
+  - content: "Which access mode enables secure group collaboration for workloads requiring RDD APIs or R language?"
+    choices:
+    - content: "Standard access mode"
+      isCorrect: false
+      explanation: "Incorrect. Standard access mode doesn't support RDD APIs or R language."
+    - content: "No isolation shared access mode"
+      isCorrect: false
+      explanation: "Incorrect. No isolation shared is legacy and should be avoided for security reasons."
+    - content: "Dedicated access mode with group assignment"
+      isCorrect: true
+      explanation: "Correct. Dedicated access mode assigned to a group enables secure collaboration while supporting RDD APIs, R language, and ML Runtime through automatic permission scoping."
+  - content: "When installing a Maven library on a cluster with standard access mode, what additional step is required?"
+    choices:
+    - content: "The library must be stored in a Unity Catalog volume first"
+      isCorrect: false
+      explanation: "Incorrect. Maven libraries can be installed directly from repositories, but they require a different security step."
+    - content: "A metastore admin must add the Maven coordinates to the allowlist"
+      isCorrect: true
+      explanation: "Correct. Standard access mode requires explicit approval for Maven libraries and JAR files. A metastore admin must add Maven coordinates to the allowlist before installation."
+    - content: "The cluster must be restarted after library installation"
+      isCorrect: false
+      explanation: "Incorrect. While clusters do reinstall libraries on restart, this isn't a specific requirement for standard access mode."
+  - content: "What is the primary advantage of using spot instances for worker nodes in job compute?"
+    choices:
+    - content: "Spot instances provide higher performance than on-demand instances"
+      isCorrect: false
+      explanation: "Incorrect. Spot instances offer the same performance but with cost benefits."
+    - content: "Spot instances cost up to 90% less than on-demand instances"
+      isCorrect: true
+      explanation: "Correct. Spot instances use Azure's excess capacity at significantly reduced costs. Spark's fault tolerance handles potential preemptions automatically."
+    - content: "Spot instances start faster than on-demand instances"
+      isCorrect: false
+      explanation: "Incorrect. Startup time is similar; the main advantage is cost reduction."

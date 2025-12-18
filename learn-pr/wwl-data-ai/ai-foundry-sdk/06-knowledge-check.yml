@@ -14,17 +14,17 @@ metadata:
 durationInMinutes: 3
 quiz:
   questions:
-  - content: "What class in the Azure AI Foundry SDK provides a proxy object for a project?"
+  - content: "What class in the Microsoft Foundry SDK provides a proxy object for a project?"
     choices:
     - content: "ConnectionProperties"
       isCorrect: false
-      explanation: "Incorrect. A ConnectionProperties object isn't a proxy for an Azure AI Foundry project."
+      explanation: "Incorrect. A ConnectionProperties object isn't a proxy for A Microsoft Foundry project."
     - content: "AIProjectClient"
       isCorrect: true
-      explanation: "Correct. An AIProjectClient object is a proxy for an Azure AI Foundry project."
+      explanation: "Correct. An AIProjectClient object is a proxy for A Microsoft Foundry project."
     - content: "ChatCompletionsClient"
       isCorrect: false
-      explanation: "Incorrect. A ChatCompletionsClient object isn't a proxy for an Azure AI Foundry project."
+      explanation: "Incorrect. A ChatCompletionsClient object isn't a proxy for A Microsoft Foundry project."
   - content: "What value is needed to instantiate a AIProjectClient object?"
     choices:
     - content: "The project endpoint."
@@ -36,7 +36,7 @@ quiz:
     - content: "The Azure subscription ID"
       isCorrect: false
       explanation: "Incorrect. You don't need the Azure subscription ID to instantiate a AIProjectClient object"
-  - content: "Which SDK should you use to chat with a model that is deployed in an Azure AI Foundry resource?"
+  - content: "Which SDK should you use to chat with a model that is deployed in A Microsoft Foundry resource?"
     choices:
     - content: "Azure OpenAI"
       isCorrect: true
@@ -44,8 +44,10 @@ quiz:
     - content: "Azure Machine Learning"
       isCorrect: false
       explanation: "Incorrect. You can't use the Azure Machine Learning SDK to chat with an Azure AI model inference model."
-    - content: "Azure AI Language"
+    - content: "Azure Language"
       isCorrect: false
-      explanation: "Incorrect. The Azure AI Language SDK is used to consume Azure AI Language resources, not generative AI models."
+      explanation: "Incorrect. The Azure Language SDK is used to consume Azure Language resources, not generative AI models."
+
+
 
 

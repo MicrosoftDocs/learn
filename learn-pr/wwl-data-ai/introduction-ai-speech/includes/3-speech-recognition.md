@@ -106,7 +106,7 @@ The decoder produces raw text that often requires cleanup before presentation. P
 - **Inverse text normalization:** Convert spoken forms like "three p m" to "3 PM."
 - **Confidence scoring:** Flag low-confidence words for human review in critical applications like medical transcription.
 
-Azure AI Speech returns the final transcription along with metadata like word-level timestamps and confidence scores, enabling your application to highlight uncertain segments or trigger fallback behaviors.
+Azure Speech returns the final transcription along with metadata like word-level timestamps and confidence scores, enabling your application to highlight uncertain segments or trigger fallback behaviors.
 
 ## How the pipeline works together
 

@@ -15,7 +15,7 @@ AI agents are most effective when deployed with clear intent. Microsoft’s **Th
 | Tailor AI to internal workflows        | Extended agents          | Integrate with proprietary data, fine-tune prompts, adapt to existing systems     |
 | Differentiate with unique experiences  | Custom AI solutions      | Build bespoke models, train on domain-specific data, solve niche challenges       |
 
-For example, Fujitsu increased proposal productivity by 67% using Microsoft Azure AI Foundry agents, while Carvana reduced inbound calls per sale by 45% with a custom agent named Sebastian.
+For example, Fujitsu increased proposal productivity by 67% using Microsoft Microsoft Foundry agents, while Carvana reduced inbound calls per sale by 45% with a custom agent named Sebastian.
 
 ## Design for scalability and efficiency
 

@@ -17,7 +17,7 @@ quiz:
     - content: "Azure Monitor Application Insights and Microsoft Cost Management"
       isCorrect: true
       explanation: "Application Insights provides observability into agent behavior and performance, while Microsoft Cost Management offers insights into spending patterns and helps optimize resource allocation—together they support ROI improvement."
-    - content: "Azure Kubernetes Service and Azure AI Foundry SDK"
+    - content: "Azure Kubernetes Service and Microsoft Foundry SDK"
       isCorrect: false
       explanation: "These tools are focused on infrastructure orchestration and agent development, not on monitoring performance or cost trends for ROI optimization."
     - content: "GitHub Copilot and Azure Monitor Metrics Explorer"
@@ -30,10 +30,10 @@ quiz:
     - content: "Azure Monitor Metrics Explorer, GitHub Copilot, and Azure Kubernetes Service"
       isCorrect: false
       explanation: "These tools support performance monitoring and development workflows but don't offer direct budget control, quota management, or alerting for financial oversight."
-    - content: "Azure AI Foundry SDK, Azure Virtual Machines, and Power BI"
+    - content: "Microsoft Foundry SDK, Azure Virtual Machines, and Power BI"
       isCorrect: false
       explanation: "While useful for development and visualization, this combination lacks built-in budget enforcement, quota controls, and real-time alerting needed for proactive cost management."
-  - content: "Your organization is deploying AI agents with consistent workloads and wants to reduce long-term operational costs while maintaining high performance. Which Azure AI Foundry strategy best supports this goal?"
+  - content: "Your organization is deploying AI agents with consistent workloads and wants to reduce long-term operational costs while maintaining high performance. Which Microsoft Foundry strategy best supports this goal?"
     choices:
     - content: "Purchase PTU reservations after estimating throughput needs"
       isCorrect: true

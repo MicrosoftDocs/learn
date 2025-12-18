@@ -3,14 +3,15 @@ uid: learn.wwl.build-copilot-ai-studio.summary
 title: Summary
 metadata:
   title: Summary
-  description: Summary of key learning points on building a custom agent with Azure AI Foundry.
+  description: Summary of key learning points on building a custom agent with Microsoft Foundry.
   author: madiepev
   ms.author: madiepev
-  ms.date: 05/23/2025
+  ms.date: 12/02/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
 durationInMinutes: 1
 content: |
   [!include[](includes/7-summary.md)]
+
 

@@ -14,7 +14,7 @@ durationInMinutes: 3
 quiz:
   title: ""
   questions:
-  - content: "You want to use Azure AI Language to determine the key talking points in a text document. Which feature of the service should you use?"
+  - content: "You want to use Azure Language to determine the key talking points in a text document. Which feature of the service should you use?"
     choices:
     - content: "Sentiment analysis"
       isCorrect: false
@@ -25,7 +25,7 @@ quiz:
     - content: "Entity detection"
       isCorrect: false
       explanation: "Incorrect. Entity detection identifies specific types of entity in the document, not the main talking points."
-  - content: "You use Azure AI Language to perform sentiment analysis on a sentence. The confidence scores .04 positive, .36 neutral, and .60 negative are returned. What do these confidence scores indicate about the sentence sentiment?"
+  - content: "You use Azure Language to perform sentiment analysis on a sentence. The confidence scores .04 positive, .36 neutral, and .60 negative are returned. What do these confidence scores indicate about the sentence sentiment?"
     choices:
     - content: "The document is positive."
       isCorrect: false

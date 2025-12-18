@@ -4,7 +4,7 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: "Knowledge check"
-  ms.date: 05/26/2025
+  ms.date: 12/5/2025
   author: wwlpublish
   ms.author: sheryang
   ms.topic: unit
@@ -25,7 +25,7 @@ quiz:
     - content: "An application that monitors AI model performance"
       isCorrect: false
       explanation: "Incorrect."
-  - content: "Which of the following best describes the purpose of the Azure AI Foundry model catalog?"
+  - content: "Which of the following best describes the purpose of the Microsoft Foundry model catalog?"
     choices:
     - content: "It stores user-generated content for Copilot Studio projects."
       isCorrect: false

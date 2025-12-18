@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn.wwl.select-and-configure-compute
+metadata:
+  title: Select and Configure Compute in Azure Databricks
+  description: Learn how to select and configure appropriate compute resources in Azure Databricks including serverless, classic compute, SQL warehouses, and job clusters. Master performance tuning, access control, and library management.
+  ms.date: 12/07/2025
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: module
+  ms.service: azure-databricks
+  ai-usage: ai-generated
+title: Select and Configure Compute in Azure Databricks
+summary: Azure Databricks provides multiple compute options optimized for different workloads. This module explores how to choose the right compute type, configure performance settings, manage access permissions, and install libraries. You'll learn when to use serverless versus classic compute, how to optimize clusters for cost and performance, and best practices for securing compute resources.
+abstract: |
+  By the end of this module, you'll be able to:
+  - Choose appropriate compute types for different Azure Databricks workloads
+  - Configure compute performance settings including node types, autoscaling, and termination
+  - Enable compute features like Photon acceleration and select appropriate Databricks Runtime versions
+  - Configure compute access permissions and dedicated group access modes
+  - Install and manage libraries on compute resources using various methods
+prerequisites: |
+  The following prerequisites should be completed:
+  * Basic understanding of Azure Databricks concepts
+  * Familiarity with Unity Catalog and workspace management
+  * Knowledge of Spark fundamentals and cluster architecture
+iconUrl: /learn/achievements/azure-databricks.svg
+levels:
+  - intermediate
+roles:
+  - data-engineer
+products:
+  - azure-databricks
+subjects:
+  - data-engineering
+units:
+  - learn.wwl.select-and-configure-compute.introduction
+  - learn.wwl.select-and-configure-compute.choose-appropriate-compute-type
+  - learn.wwl.select-and-configure-compute.configure-compute-performance
+  - learn.wwl.select-and-configure-compute.configure-compute-feature-settings
+  - learn.wwl.select-and-configure-compute.install-libraries-for-compute
+  - learn.wwl.select-and-configure-compute.configure-compute-access-perms
+  - learn.wwl.select-and-configure-compute.knowledge-check
+  - learn.wwl.select-and-configure-compute.summary
+badge:
+  uid: learn.wwl.select-and-configure-compute.badge

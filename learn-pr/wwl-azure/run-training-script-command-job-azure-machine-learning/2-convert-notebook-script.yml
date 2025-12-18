@@ -6,11 +6,11 @@ metadata:
   description: Learn how to get your code production ready.
   author: wwlpublish
   ms.author: madiepev
-  ms.date: 10/27/2023
+  ms.date: 12/01/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
 durationInMinutes: 9
 content: |
   [!include[](includes/2-convert-notebook-script.md)]
-
+

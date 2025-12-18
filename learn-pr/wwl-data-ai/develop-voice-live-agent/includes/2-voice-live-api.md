@@ -14,13 +14,13 @@ Key features include:
 - Built-in noise reduction and echo cancellation.
 
 > [!NOTE]
-> Voice Live API is optimized for Azure AI Foundry resources. We recommend using Azure AI Foundry resources for full feature availability and best Azure AI Foundry integration experience.
+> Voice Live API is optimized for Microsoft Foundry resources. We recommend using Microsoft Foundry resources for full feature availability and best Microsoft Foundry integration experience.
 
 For a table of supported models and regions, visit the [Voice Live API overview](/azure/ai-services/speech-service/voice-live#supported-models-and-regions).
 
 ## Connect to the Voice Live API
 
-The Voice live API supports two authentication methods: Microsoft Entra (keyless) and API key. Microsoft Entra uses token-based authentication for an Azure AI Foundry resource. You apply a retrieved authentication token using a `Bearer` token with the `Authorization` header. 
+The Voice live API supports two authentication methods: Microsoft Entra (keyless) and API key. Microsoft Entra uses token-based authentication for a Microsoft Foundry resource. You apply a retrieved authentication token using a `Bearer` token with the `Authorization` header. 
 
 For the recommended keyless authentication with Microsoft Entra ID, you need to assign the **Cognitive Services User** role to your user account or a managed identity. You generate a token using the Azure CLI or Azure SDKs. The token must be generated with the `https://ai.azure.com/.default` scope, or the legacy `https://cognitiveservices.azure.com/.default` scope. Use the token in the `Authorization` header of the WebSocket connection request, with the format `Bearer <token>`.
 
@@ -137,4 +137,6 @@ Example configuration:
 
 > [!TIP]
 > Use high-resolution video settings for enhanced visual quality in avatar interactions.
+
+
 

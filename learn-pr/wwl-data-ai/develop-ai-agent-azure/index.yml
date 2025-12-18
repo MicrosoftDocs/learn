@@ -1,20 +1,20 @@
 ### YamlMime:Module
 uid: learn.wwl.develop-ai-agent-azure
 metadata:
-  title: Develop an AI agent with Azure AI Foundry Agent Service
-  description: Learn how to start using Azure AI Foundry Agent Service.
+  title: Develop an AI agent with Microsoft Foundry Agent Service
+  description: Learn how to start using Microsoft Foundry Agent Service.
   author: ivorb
   ms.author: berryivor
   ms.date: 08/28/2025
   ms.service: azure-ai-foundry
   ms.topic: module-standard-task-based
   ai-usage: ai-assisted
-title: Develop an AI agent with Azure AI Foundry Agent Service
-summary: This module provides engineers with the skills to begin building agents with Azure AI Foundry Agent Service.
+title: Develop an AI agent with Microsoft Foundry Agent Service
+summary: This module provides engineers with the skills to begin building agents with Microsoft Foundry Agent Service.
 abstract: |
   By the end of this module, you'll be able to:
   - Describe the purpose of AI agents
-  - Explain the key features of Azure AI Foundry Agent Service
+  - Explain the key features of Microsoft Foundry Agent Service
   - Build an agent using the Foundry Agent Service
   - Integrate an agent in the Foundry Agent Service into your own application
 prerequisites: |
@@ -44,3 +44,4 @@ units:
 - learn.wwl.develop-ai-agent-azure.summary
 badge:
   uid: learn.wwl.develop-ai-agent-azure.badge
+

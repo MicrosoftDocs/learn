@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.responsible-ai-content-safety.exercise
-title: Exercise - Implementing Azure AI Foundry Content Safety
+title: Exercise - Implementing Microsoft Foundry Content Safety
 metadata:
-  title: Exercise - Implementing Azure AI Foundry Content Safety
-  description: Practice generating code to implement a prompt shield solution using Azure AI Foundry Content Safety. This exercise includes user prompt and document prompt tests.
+  title: Exercise - Implementing Microsoft Foundry Content Safety
+  description: Practice generating code to implement a prompt shield solution using Microsoft Foundry Content Safety. This exercise includes user prompt and document prompt tests.
   ms.date: 05/16/2025
   author: ivorb
   ms.author: berryivor

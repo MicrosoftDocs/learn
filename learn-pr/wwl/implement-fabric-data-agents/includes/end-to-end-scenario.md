@@ -98,7 +98,7 @@ The published Fabric data agent can be consumed in various platforms, including:
 - **Copilot Studio**
 - **Microsoft Teams**
 - **Power BI Copilot**
-- **Azure AI Foundry**
+- **Microsoft Foundry**
 - **Custom applications via API**
 
 These integrations enable conversational AI, allowing users to query data in natural language and retrieve insights.

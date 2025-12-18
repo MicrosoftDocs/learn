@@ -34,7 +34,6 @@ products:
   - azure-boards
   - azure-cloud-services
   - azure-devops
-  - azure-devops-server
   - azure-pipelines
   - azure-repos
   - azure-test-plans

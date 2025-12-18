@@ -15,7 +15,7 @@ durationInMinutes: 3
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Which of the following types of shared access signatures (SAS) applies to Blob storage only?"
+  - content: "Which of the following types of shared access signatures (SAS) applies to Blob Storage and Data Lake Storage only?"
     choices:
     - content: "Account SAS"
       isCorrect: false

@@ -16,9 +16,9 @@ These products embed powerful generative AI models that are skillful in text gen
 
 These AI solutions enable customized interactions based on context and on business information. Here are some applications for FSI:
 
-* **Tailored product recommendations**: Azure AI Services and Microsoft Dynamics 365 Copilot have features for hyper-personalization. It implies your agents can use these products to offer your clients just what they need, but also that your marketing team can launch much more targeted campaigns to boost their impact.
-* **Better virtual assistants**: Many products can help FSI professionals via conversational interfaces. For this purpose, you can use Azure OpenAI Services, Azure AI Services, Dynamics 365 Copilot, Power Virtual Agents, and Power Platform. The resulting virtual assistants provide a more fluid, natural service than earlier generations. You may build these solutions to answer complex questions you’re your customers about financial products and services.
-* **Onboarding and help desks for financial agents**: With Azure AI Services, and especially Azure OpenAI Services, you can offer your workers training on internal processes, regulatory standards, and financial products.
+* **Tailored product recommendations**: Foundry Tools and Microsoft Dynamics 365 Copilot have features for hyper-personalization. It implies your agents can use these products to offer your clients just what they need, but also that your marketing team can launch much more targeted campaigns to boost their impact.
+* **Better virtual assistants**: Many products can help FSI professionals via conversational interfaces. For this purpose, you can use Microsoft Foundry, Dynamics 365 Copilot, Power Virtual Agents, and Power Platform. The resulting virtual assistants provide a more fluid, natural service than earlier generations. You may build these solutions to answer complex questions about financial products and services.
+* **Onboarding and help desks for financial agents**: With Microsoft Foundry, and especially Azure OpenAI Services, you can offer your workers training on internal processes, regulatory standards, and financial products.
 
 ![Photograph showing person looking at a tablet.](../media/2b-interaction.jpg)
 
@@ -26,7 +26,7 @@ These AI solutions enable customized interactions based on context and on busine
 
 Microsoft AI offers you the tools to automate tasks, so you can spend time on what’s important.
 
-* **Process and organize financial data**: You can have applications that search in large amounts of transaction data, customer feedback, and market trends. This feature is covered in Azure AI Document Intelligence (formerly Form Recognizer), Azure OpenAI Services, and Azure Cognitive Search.
+* **Process and organize financial data**: You can have applications that search in large amounts of transaction data, customer feedback, and market trends. This feature is covered in Azure Document Intelligence (formerly Form Recognizer), Azure OpenAI Services, and Azure Cognitive Search.
 * **Anticipate customer behavior**: Azure Machine Learning, Power BI, and Azure OpenAI Services can do predictive analytics for you, that is, these solutions use past or current data to predict future trends in customer behavior.
 * **Generate full-circle financial reports**: Several Microsoft products, such as OpenAI Services, Microsoft Power BI, and Azure Synapse Analytics, enable you to automatically create these documents for your analysts. They can also analyze customer trends and draft risk assessments.  
 
@@ -40,7 +40,7 @@ These tools are also powerful for analytical tasks.
 * **Financial product development**: Azure OpenAI Services  can power assistants that help FSI experts design data-based, custom products.
 * **Insurance claims analysis**: AI-powered assistants can speed up this task by detecting patterns and anomalies with Azure OpenAI Services.
 * **Underwriting**: Azure OpenAI Services  can also summarize underwriting opportunities, help detect fraud, and predict default.
-* **Contact-center analytics**: You can boost your contact center with Azure AI Services and Microsoft Power BI. These products allow you to transcribe and analyze customer service interactions to identify areas for improvement and uncover emerging customer needs. You can improve your analysis with sentiment analysis, which helps gauging customer satisfaction, product perception, and market sentiments. Besides, these solutions can provide real-time coaching for contact-center staff. You can easily update the contact-center knowledge base by feeding new information to the AI, thus improving responses for customers.
+* **Contact-center analytics**: You can boost your contact center with Microsoft Foundry and Microsoft Power BI. These products allow you to transcribe and analyze customer service interactions to identify areas for improvement and uncover emerging customer needs. You can improve your analysis with sentiment analysis, which helps gauging customer satisfaction, product perception, and market sentiments. Besides, these solutions can provide real-time coaching for contact-center staff. You can easily update the contact-center knowledge base by feeding new information to the AI, thus improving responses for customers.
 
 ![Photograph showing a person looking at a tablet.](../media/2b-data.jpg)
 

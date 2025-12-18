@@ -1,4 +1,4 @@
-Prebuilt models in Azure AI Document Intelligence enable you to extract data from common forms and documents without training your own models.
+Prebuilt models in Azure Document Intelligence enable you to extract data from common forms and documents without training your own models.
 
 In your polling company, polling forms are unique to each survey project, but you also use invoices and receipts to record financial transactions and you have many unstructured documents. You want to know how much work is required to extract names, addresses, amounts, and other information from these documents.
 
@@ -63,26 +63,26 @@ You must also comply with these requirements when you submit a form for analysis
 
 PDF and TIFF files can have any number of pages but, in the standard tier, only the first 2,000 pages are analyzed. In the free tier, only the first two pages are analyzed.
 
-## Try out prebuilt models with Azure AI Document Intelligence Studio
+## Try out prebuilt models with Azure Document Intelligence Studio
 
-Azure AI Document Intelligence is designed as a web service you can call using code in your custom applications. However, it's often helpful to explore the models and how they behave with your forms visually. You can perform such experiments by using [Azure AI Document Intelligence Studio](https://formrecognizer.appliedai.azure.com/studio) and use the experience to help design and write your code.
+Azure Document Intelligence is designed as a web service you can call using code in your custom applications. However, it's often helpful to explore the models and how they behave with your forms visually. You can perform such experiments by using [Azure Document Intelligence Studio](https://formrecognizer.appliedai.azure.com/studio) and use the experience to help design and write your code.
 
-You can choose any of the prebuilt models in Azure AI Document Intelligence Studio. Microsoft provides some sample documents for use with each model or you can add your own documents and analyze them.
+You can choose any of the prebuilt models in Azure Document Intelligence Studio. Microsoft provides some sample documents for use with each model or you can add your own documents and analyze them.
 
-:::image type="content" source="../media/2-studio-business-card-example.png" alt-text="Screenshot showing how to use Azure AI Document Intelligence Studio to explore the business card prebuilt model." lightbox="../media/2-studio-business-card-example.png":::
+:::image type="content" source="../media/2-studio-business-card-example.png" alt-text="Screenshot showing how to use Azure Document Intelligence Studio to explore the business card prebuilt model." lightbox="../media/2-studio-business-card-example.png":::
 
 ## Calling prebuilt models by using APIs
 
-Because Azure AI Document Intelligence implements RESTful web services, you can use web service calls from any language that supports them. However, when you use Microsoft's Azure AI Document Intelligence APIs, security and session management is simplified and you have to write less code.
+Because Azure Document Intelligence implements RESTful web services, you can use web service calls from any language that supports them. However, when you use Microsoft's Azure Document Intelligence APIs, security and session management is simplified and you have to write less code.
 
-Azure AI Document Intelligence is available for:
+Azure Document Intelligence is available for:
 
 - C# and other .NET languages.
 - Java.
 - Python.
 - JavaScript.
 
-Whenever you want to call Azure AI Document Intelligence, you must start by connecting and authenticating with the service in your Azure subscription. To make that connection, you need:
+Whenever you want to call Azure Document Intelligence, you must start by connecting and authenticating with the service in your Azure subscription. To make that connection, you need:
 
 - **The service endpoint.** This value is the URL where the service is published.
 - **The API key.** This value is a unique key that grants access.
@@ -116,5 +116,5 @@ The details you can extract from these results depend on the model you used.
 
 ## Learn more
 
-- [What is Azure AI Document Intelligence?](/azure/ai-services/document-intelligence/overview)
-- [Azure AI Document Intelligence models](/azure/ai-services/document-intelligence/concept-model-overview)
+- [What is Azure Document Intelligence?](/azure/ai-services/document-intelligence/overview)
+- [Azure Document Intelligence models](/azure/ai-services/document-intelligence/concept-model-overview)

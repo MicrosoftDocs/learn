@@ -1,8 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.ai-information-extraction
 metadata:
-  title: Get started with AI-powered information extraction in Azure
-  description: AI gives you the power to unlock insights from your data. In this module, you'll learn how to use Azure AI services to extract information from content.
+  title: Get started with AI-powered information extraction in Microsoft Foundry
+  description: AI gives you the power to unlock insights from your data. In this module, you'll learn how to use Foundry Tools to extract information from content.
   author: graememalcolm
   ms.author: gmalc
   ms.date: 08/28/2025
@@ -11,14 +11,14 @@ metadata:
   ms.topic: module-standard-task-based
   ms.collection:
     - wwl-ai-copilot
-title: Get started with AI-powered information extraction in Azure
-summary: AI gives you the power to unlock insights from your data. In this module, you'll learn how to use Azure AI services to extract information from content.
+title: Get started with AI-powered information extraction in Microsoft Foundry
+summary: AI gives you the power to unlock insights from your data. In this module, you'll learn how to use Foundry Tools to extract information from content.
 abstract: |
   After completing this module, you'll be able to:
-  - Identify Azure AI services for information extraction
-  - Describe Azure AI Vision information extraction capabilities
-  - Describe Azure AI Content Understanding information extraction capabilities
-  - Describe Azure AI Document Intelligence information extraction capabilities
+  - Identify Foundry Tools for information extraction
+  - Describe Azure Vision information extraction capabilities
+  - Describe Azure Content Understanding information extraction capabilities
+  - Describe Azure Document Intelligence information extraction capabilities
   - Describe Azure AI Search information extraction capabilities
 prerequisites: |
   Before starting this module, you should already have:

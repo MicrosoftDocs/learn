@@ -19,7 +19,7 @@ Now that you reviewed this module, you should be able to:
 * To learn more about privacy and security in Azure OpenAI Service, read our [legal documentation on Azure OpenAI Service](/legal/cognitive-services/openai/data-privacy).
 * To learn more about our intelligent business applications, visit our [Dynamics 365 AI homepage](https://dynamics.microsoft.com/ai/overview/).
 * To learn more about our low-code tools in Power Platform, visit our [Power Platform website AI Builder homepage](https://powerapps.microsoft.com/ai-builder/).
-* To learn more about all the prebuilt AI models available at Azure AI Services, read our technical documentation on [AI Services](/azure/ai-services/).
+* To learn more about all the prebuilt AI models available at Foundry Tools, read our technical documentation on [AI Services](/azure/ai-services/).
 
 ## References
 

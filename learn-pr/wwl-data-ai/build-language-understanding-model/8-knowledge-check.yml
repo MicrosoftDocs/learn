@@ -43,11 +43,11 @@ quiz:
     choices:
     - content: "Use Regular Expression entities."
       isCorrect: false
-      explanation: "Incorrect. When a language model needs to detect a common entity, use prebuilt components to have the Azure AI Language service automatically detect the entity."
+      explanation: "Incorrect. When a language model needs to detect a common entity, use prebuilt components to have the Azure Language service automatically detect the entity."
     - content: "Use prebuilt entity components."
       isCorrect: true
-      explanation: "Correct. When a language model needs to detect a common entity, use prebuilt components to have the Azure AI Language service automatically detect the entity."
+      explanation: "Correct. When a language model needs to detect a common entity, use prebuilt components to have the Azure Language service automatically detect the entity."
     - content: "Use Learned entity components."
       isCorrect: false
-      explanation: "Incorrect. When a language model needs to detect a common entity, use prebuilt components to have the Azure AI Language service automatically detect the entity."
+      explanation: "Incorrect. When a language model needs to detect a common entity, use prebuilt components to have the Azure Language service automatically detect the entity."
 

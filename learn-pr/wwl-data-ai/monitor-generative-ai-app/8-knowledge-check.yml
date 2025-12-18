@@ -46,7 +46,8 @@ quiz:
     - content: "Azure AI Inference SDK"
       isCorrect: false
       explanation: "Incorrect. The Inference SDK is used to run model operations, not for monitoring or observability."
-    - content: "Azure AI Foundry SDK"
+    - content: "Microsoft Foundry SDK"
       isCorrect: false
-      explanation: "Incorrect. The Azure AI Foundry SDK manages projects and deployments but doesn’t offer observability tools."
+      explanation: "Incorrect. The Microsoft Foundry SDK manages projects and deployments but doesn’t offer observability tools."
+
 

@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.recognize-synthesize-speech.use-azure-speech
-title: Use Azure AI Speech
+title: Use Azure Speech
 metadata:
-  title: Use Azure AI Speech
-  description: "Use Azure AI Speech"
+  title: Use Azure Speech
+  description: "Use Azure Speech"
   ms.date: 8/15/2025
   author: wwlpublish
   ms.author: sheryang

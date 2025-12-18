@@ -10,8 +10,8 @@ metadata:
   ms.topic: unit
   ms.custom:
     - devx-track-azurecli
-interactive: bash
-azureSandbox: true
+#interactive: bash
+#azureSandbox: true
 durationInMinutes: 7
 content: |
   [!include[](includes/6-exercise-resize-disks.md)]

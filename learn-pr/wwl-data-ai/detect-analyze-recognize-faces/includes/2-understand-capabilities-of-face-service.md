@@ -22,7 +22,7 @@ The Face service provides functionality that you can use for:
 
 ## Face detection and recognition models
 
-The Azure AI Vision Face API is built on face detection and recognition models that have been pre-trained. Multiple versions of these models are available, each with specific strengths and capabilities. For example, newer models exhibit greater accuracy when working with small images; but may not provide the same breadth of facial analysis capabilities. When you use the service in an application, you must select the model you want to use based on your requirements.
+The Azure Vision Face API is built on face detection and recognition models that have been pre-trained. Multiple versions of these models are available, each with specific strengths and capabilities. For example, newer models exhibit greater accuracy when working with small images; but may not provide the same breadth of facial analysis capabilities. When you use the service in an application, you must select the model you want to use based on your requirements.
 
 > [!TIP]
 > For guidance about selecting a *detection* model, see **[Specify a face detection model](/azure/ai-services/computer-vision/how-to/specify-detection-model)**. For guidance about how to select a *recognition* model, see **[Specify a face recognition model](/azure/ai-services/computer-vision/how-to/specify-recognition-model)**.

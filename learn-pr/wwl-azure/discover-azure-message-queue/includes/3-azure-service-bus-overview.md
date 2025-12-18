@@ -9,17 +9,29 @@ Some common messaging scenarios are:
 
 ##  Service Bus tiers
 
-Service Bus offers basic, standard, and premium tiers. The *premium* tier of Service Bus Messaging addresses common customer requests around scale, performance, and availability for mission-critical applications. The premium tier is recommended for production scenarios. Although the feature sets are nearly identical, these two tiers of Service Bus Messaging are designed to serve different use cases. For more information on the available tiers, visit [Service Bus pricing](https://azure.microsoft.com/pricing/details/service-bus/). 
+Service Bus offers three pricing tiers: **Basic**, **Standard**, and **Premium**. Each tier is designed to serve different use cases and requirements.
 
-Some high-level differences between the premium and standard tiers are highlighted in the following table.
+* **Basic tier** - Suited for simple messaging scenarios with low throughput and minimal feature requirements. The basic tier supports only queues (not topics and subscriptions).
 
-| Premium | Standard |
-|--|--|
-| High throughput | Variable throughput |
-| Predictable performance | Variable latency |
-| Fixed pricing | Pay as you go variable pricing |
-| Ability to scale workload up and down | N/A |
-| Message size up to 100 MB | Message size up to 256 KB |
+* **Standard tier** - Recommended for developer/test environments or low throughput scenarios where applications aren't sensitive to throttling. Supports both queues and topics with subscriptions.
+
+* **Premium tier** - Recommended for production scenarios requiring predictable latency and high throughput. Offers resource isolation at the CPU and memory level and advanced features for mission-critical applications.
+
+For more information on the available tiers, visit [Service Bus pricing](https://azure.microsoft.com/pricing/details/service-bus/).
+
+### Tier comparison
+
+| Feature | Basic | Standard | Premium |
+|--|--|--|--|
+| Throughput | Low | Variable | High |
+| Performance | N/A | Variable latency | Predictable performance |
+| Pricing | Pay as you go | Pay as you go variable pricing | Fixed pricing per messaging unit |
+| Scaling | N/A | N/A | Ability to scale workload up and down |
+| Message size | 256 KB | 256 KB | Up to 100 MB |
+| Topics & Subscriptions | Not supported | Supported | Supported |
+| Transactions | Not supported | Supported | Supported |
+| Auto-forwarding | Not supported | Supported | Supported |
+| Message sessions | Supported | Supported | Supported |
 
 
 ## Advanced features
@@ -37,7 +49,7 @@ Service Bus includes advanced features that enable you to solve more complex mes
 | Filtering and actions | Subscribers can define which messages they want to receive from a topic. These messages are specified in the form of one or more named subscription rules. |
 | Autodelete on idle | Autodelete on idle enables you to specify an idle interval after which a queue is automatically deleted. The minimum duration is 5 minutes. |
 | Duplicate detection | An error could cause the client to have a doubt about the outcome of a send operation. Duplicate detection enables the sender to resend the same message, or for the queue or topic to discard any duplicate copies. |
-| Security protocols | Service Bus supports security protocols such as Shared Access Signatures (SAS), Role Based Access Control (RBAC) and Managed identities for Azure resources. |
+| Security protocols | Service Bus supports security protocols such as Shared Access Signatures (SAS), Role Based Access Control (RBAC), and Managed identities for Azure resources. |
 | Geo-disaster recovery | When Azure regions or datacenters experience downtime, Geo-disaster recovery enables data processing to continue operating in a different region or datacenter. |
 | Security | Service Bus supports standard AMQP 1.0 and HTTP/REST protocols. |
 

@@ -14,8 +14,8 @@ metadata:
     - devx-track-js
   zone_pivot_groups: dev-lang-csharp-javascript
 durationInMinutes: 12
-interactive: bash
-azureSandbox: true
+#interactive: bash
+#azureSandbox: true
 content: |
   [!include[](includes/6-configure-deploy-run-azure.md)]
 # NOTE: Task validation is failing for learners, so that is disabled for now.

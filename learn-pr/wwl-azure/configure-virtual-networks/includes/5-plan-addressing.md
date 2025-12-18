@@ -29,4 +29,4 @@ Let's take a closer look at the characteristics of IP addresses.
    - Role-based virtual machines such as Domain Controllers and DNS servers.
 
 > [!TIP]
-> Extend your learning with the [Design an IP addressing schema for your Azure deployment](/training/modules/design-ip-addressing-for-azure/) training module. This module has a sandbox where you can try a practical exercise. 
+> Extend your learning with the [Design an IP addressing schema for your Azure deployment](/training/modules/design-ip-addressing-for-azure/) training module. This module has a practical exercise. 

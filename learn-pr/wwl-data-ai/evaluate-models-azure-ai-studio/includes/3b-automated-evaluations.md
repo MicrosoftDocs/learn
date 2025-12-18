@@ -1,4 +1,4 @@
-Automated evaluations in Azure AI Foundry portal enable you to assess the quality and content safety performance of models, datasets, or prompt flows.
+Automated evaluations in Microsoft Foundry portal enable you to assess the quality and content safety performance of models, datasets, or prompt flows.
 
 ## Evaluation data
 
@@ -12,3 +12,4 @@ Automated evaluation enables you to choose which *evaluators* you want to assess
 
 - **AI Quality**: The quality of your model's responses is measured by using AI models to evaluate them for metrics like *coherence* and *relevance* and by using standard NLP metrics like F1 score, BLEU, METEOR, and ROUGE based on ground truth (in the form of expected response text)
 - **Risk and safety**: evaluators that assess the responses for content safety issues, including violence, hate, sexual content, and content related to self-harm.
+

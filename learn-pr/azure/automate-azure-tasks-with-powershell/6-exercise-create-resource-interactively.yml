@@ -10,8 +10,8 @@ metadata:
   ms.topic: unit
   ms.custom: devx-track-azurepowershell, linux-related-content
 durationInMinutes: 15
-interactive: powershell
-azureSandbox: true
+#interactive: powershell
+#azureSandbox: true
 content: |
   [!include[](includes/6-exercise-create-resource-interactively.md)]
 

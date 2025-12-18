@@ -6,7 +6,7 @@ Each Azure Databricks account has one metastore per Azure region, ensuring that 
 
 ## Understand metastore fundamentals
 
-Before Unity Catalog, each workspace in Databricks had its own Hive metastore, and permissions had to be managed separately.
+Before Unity Catalog, each workspace in Azure Databricks had its own Hive metastore, and permissions had to be managed separately.
 With Unity Catalog, workspaces in the same region share a single metastore. This design centralizes governance while maintaining compliance with regional boundaries—for example, all **East US** workspaces share one metastore, while all **West Europe** workspaces share another.
 
 The metastore serves four key roles:

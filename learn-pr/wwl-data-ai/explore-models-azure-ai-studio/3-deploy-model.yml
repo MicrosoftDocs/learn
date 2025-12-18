@@ -3,11 +3,12 @@ uid: learn.wwl.explore-models-copilot-ai-studio.deploy-model
 title: Deploy a model to an endpoint
 metadata:
   title: Deploy a model to an endpoint
-  description: "Deploy and test a language model in the Azure AI Foundry portal."
-  ms.date: 05/23/2025
+  description: "Deploy and test a language model in the Microsoft Foundry portal."
+  ms.date: 12/01/2025
   author: madiepev
   ms.author: madiepev
   ms.topic: unit
 durationInMinutes: 5
 content: |
   [!include[](includes/3-deploy-model.md)]
+

@@ -4,7 +4,7 @@ In this exercise, you'll modify the console output from the previous exercise to
 
 In this task, you'll update your code to apply the finishing touches to the reported output. You'll start by adding a header row that includes the column labels specified by the teacher. After that, you'll use character escape sequences to add extra padding between the columns of information.
 
-1. In the [C# Code Editor](https://microsoftlearning.github.io/c-sharp-minor/), locate the Console.WriteLine() statements that are used to display each student's current class score and letter grade.
+1. In the [C# Code Editor](https://microsoftlearning.github.io/c-sharp-minor?azure-portal=true), locate the Console.WriteLine() statements that are used to display each student's current class score and letter grade.
 
 1. Create a blank code line above the `Console.WriteLine()` statements.
 

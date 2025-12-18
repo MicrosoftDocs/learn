@@ -60358,6 +60358,956 @@
       "source_path": "learn-pr/paths/machine-learning-foundations-using-data-science/index.yml",
       "redirect_url": "https://learn.microsoft.com/training/paths/create-machine-learn-models/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-translator/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/ai-services/translator/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-translator/2-what-is-translator.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/ai-services/translator/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-translator/3-how-translator-works.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/ai-services/translator/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-translator/4-when-to-use-translator.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/ai-services/translator/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-translator/5-use-translator.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/ai-services/translator/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-translator/6-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/ai-services/translator/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-translator/7-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/ai-services/translator/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-translator/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/ai-services/translator/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/introduction-information-extraction/5-multimodal-extraction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/introduction-information-extraction/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/introduction-information-extraction/6-knowledge-mining.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/introduction-information-extraction/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-serverless-api-with-functions-api-management/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-openapi-definition/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-serverless-api-with-functions-api-management/2-import-function-app-api-management.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-openapi-definition/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-serverless-api-with-functions-api-management/3-exercise-import-function-app-api-management.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-openapi-definition/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-serverless-api-with-functions-api-management/4-import-additional-functions-existing-api-gateway.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-openapi-definition/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-serverless-api-with-functions-api-management/5-exercise-import-additional-functions-existing-api-gateway.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-openapi-definition/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-serverless-api-with-functions-api-management/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-openapi-definition/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-serverless-api-with-functions-api-management/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-openapi-definition/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/develop-test-deploy-azure-functions-with-visual-studio/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-create-your-first-function-visual-studio/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/develop-test-deploy-azure-functions-with-visual-studio/2-develop-and-test-azure-functions-locally.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-create-your-first-function-visual-studio/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/develop-test-deploy-azure-functions-with-visual-studio/3-exercise-develop-and-test-azure-functions-locally.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-create-your-first-function-visual-studio/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/develop-test-deploy-azure-functions-with-visual-studio/4-publish-azure-functions.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-create-your-first-function-visual-studio/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/develop-test-deploy-azure-functions-with-visual-studio/5-exercise-publish-azure-functions.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-create-your-first-function-visual-studio/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/develop-test-deploy-azure-functions-with-visual-studio/6-unit-test-azure-functions.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-create-your-first-function-visual-studio/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/develop-test-deploy-azure-functions-with-visual-studio/7-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-create-your-first-function-visual-studio/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/develop-test-deploy-azure-functions-with-visual-studio/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-create-your-first-function-visual-studio/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/monitor-github-events-with-a-function-triggered-by-a-webhook/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-bindings-http-webhook-trigger/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/monitor-github-events-with-a-function-triggered-by-a-webhook/2-create-function-triggered-by-webhook.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-bindings-http-webhook-trigger/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/monitor-github-events-with-a-function-triggered-by-a-webhook/3-exercise-create-function-triggered-by-webhook.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-bindings-http-webhook-trigger/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/monitor-github-events-with-a-function-triggered-by-a-webhook/4-setup-webhook-for-github-repo.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-bindings-http-webhook-trigger/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/monitor-github-events-with-a-function-triggered-by-a-webhook/5-exercise-setup-webhook-for-github-repo.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-bindings-http-webhook-trigger/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/monitor-github-events-with-a-function-triggered-by-a-webhook/6-trigger-function-with-github-event.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-bindings-http-webhook-trigger/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/monitor-github-events-with-a-function-triggered-by-a-webhook/7-exercise-trigger-function-with-github-event.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-bindings-http-webhook-trigger/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/monitor-github-events-with-a-function-triggered-by-a-webhook/8-secure-webhook-payloads-with-secret.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-bindings-http-webhook-trigger/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/monitor-github-events-with-a-function-triggered-by-a-webhook/9-exercise-secure-webhook-payloads-with-secret.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-bindings-http-webhook-trigger/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/monitor-github-events-with-a-function-triggered-by-a-webhook/10-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-bindings-http-webhook-trigger/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/monitor-github-events-with-a-function-triggered-by-a-webhook/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-bindings-http-webhook-trigger/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/chain-azure-functions-data-using-bindings/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-add-output-binding-storage-queue-vs-code/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/chain-azure-functions-data-using-bindings/2-explore-input-and-output-binding-types-portal-lesson.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-add-output-binding-storage-queue-vs-code/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/chain-azure-functions-data-using-bindings/3-explore-input-and-output-binding-types-portal-lab.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-add-output-binding-storage-queue-vs-code/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/chain-azure-functions-data-using-bindings/4-read-data-with-input-bindings-portal-lesson.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-add-output-binding-storage-queue-vs-code/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/chain-azure-functions-data-using-bindings/5-read-data-with-input-bindings-portal-lab.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-add-output-binding-storage-queue-vs-code/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/chain-azure-functions-data-using-bindings/6-write-data-with-output-bindings-portal-lesson.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-add-output-binding-storage-queue-vs-code/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/chain-azure-functions-data-using-bindings/7-write-data-with-output-bindings-portal-lab.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-add-output-binding-storage-queue-vs-code/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/chain-azure-functions-data-using-bindings/8-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-add-output-binding-storage-queue-vs-code/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/chain-azure-functions-data-using-bindings/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-add-output-binding-storage-queue-vs-code/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-long-running-serverless-workflow-with-durable-functions/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/durable/quickstart-js-vscode/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-long-running-serverless-workflow-with-durable-functions/2-what-is-durable-functions.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/durable/quickstart-js-vscode/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-long-running-serverless-workflow-with-durable-functions/3-design-a-workflow-based-on-durable-functions.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/durable/quickstart-js-vscode/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-long-running-serverless-workflow-with-durable-functions/4-exercise-create-a-workflow-using-durable-functions.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/durable/quickstart-js-vscode/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-long-running-serverless-workflow-with-durable-functions/5-control-long-running-tasks-using-timers.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/durable/quickstart-js-vscode/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-long-running-serverless-workflow-with-durable-functions/6-exercise-add-a-durable-timer-to-manage-a-long-running-task.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/durable/quickstart-js-vscode/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-long-running-serverless-workflow-with-durable-functions/7-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/durable/quickstart-js-vscode/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-long-running-serverless-workflow-with-durable-functions/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/durable/quickstart-js-vscode/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/winui-101/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/windows/apps/winui/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/winui-101/2-dev-set-up.yml",
+      "redirect_url": "https://learn.microsoft.com/windows/apps/winui/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/winui-101/3-build-view.yml",
+      "redirect_url": "https://learn.microsoft.com/windows/apps/winui/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/winui-101/4-select-random-word.yml",
+      "redirect_url": "https://learn.microsoft.com/windows/apps/winui/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/winui-101/5-add-alphabet-buttons.yml",
+      "redirect_url": "https://learn.microsoft.com/windows/apps/winui/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/winui-101/6-game-play.yml",
+      "redirect_url": "https://learn.microsoft.com/windows/apps/winui/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/winui-101/7-style.yml",
+      "redirect_url": "https://learn.microsoft.com/windows/apps/winui/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/winui-101/8-images.yml",
+      "redirect_url": "https://learn.microsoft.com/windows/apps/winui/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/winui-101/9-navigation.yml",
+      "redirect_url": "https://learn.microsoft.com/windows/apps/winui/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/winui-101/10-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/windows/apps/winui/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/winui-101/11-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/windows/apps/winui/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/winui-101/index.yml",
+      "redirect_url": "https://learn.microsoft.com/windows/apps/winui/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/logic-apps-and-custom-connectors/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/logic-apps/custom-connector-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/logic-apps-and-custom-connectors/2-connectors-for-azure-logic-apps.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/logic-apps/custom-connector-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/logic-apps-and-custom-connectors/3-exercise-setup-a-test-api.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/logic-apps/custom-connector-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/logic-apps-and-custom-connectors/4-access-an-api-with-a-logic-app-custom-connector.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/logic-apps/custom-connector-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/logic-apps-and-custom-connectors/5-exercise-create-and-call-a-logic-apps-custom-connector-that-wraps-an-api.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/logic-apps/custom-connector-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/logic-apps-and-custom-connectors/6-make-your-custom-connector-available-to-the-entire-organization.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/logic-apps/custom-connector-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/logic-apps-and-custom-connectors/7-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/logic-apps/custom-connector-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/logic-apps-and-custom-connectors/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/logic-apps/custom-connector-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/track-azure-databricks-experiments-azure-machine-learning/index.md",
+      "redirect_url": "/training/paths/use-azure-machine-learning-pipelines-for-automation/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/track-azure-databricks-experiments-azure-machine-learning/2-describe-azure-machine-learning.md",
+      "redirect_url": "/training/paths/use-azure-machine-learning-pipelines-for-automation/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/track-azure-databricks-experiments-azure-machine-learning/6-exercise-use-azure-databricks.md",
+      "redirect_url": "/training/paths/use-azure-machine-learning-pipelines-for-automation/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/track-azure-databricks-experiments-azure-machine-learning/1-introduction.md",
+      "redirect_url": "/training/paths/use-azure-machine-learning-pipelines-for-automation/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/track-azure-databricks-experiments-azure-machine-learning/7-knowledge-check.md",
+      "redirect_url": "/training/paths/use-azure-machine-learning-pipelines-for-automation/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/track-azure-databricks-experiments-azure-machine-learning/4-log-metrics-mlflow.md",
+      "redirect_url": "/training/paths/use-azure-machine-learning-pipelines-for-automation/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/track-azure-databricks-experiments-azure-machine-learning/3-run-azure-databricks-experiments.md",
+      "redirect_url": "/training/paths/use-azure-machine-learning-pipelines-for-automation/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/track-azure-databricks-experiments-azure-machine-learning/5-run-pipelines-azure-databricks-compute.md",
+      "redirect_url": "/training/paths/use-azure-machine-learning-pipelines-for-automation/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/track-azure-databricks-experiments-azure-machine-learning/8-summary.md",
+      "redirect_url": "/training/paths/use-azure-machine-learning-pipelines-for-automation/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/train-models-scripts-azure-machine-learning/index.md",
+      "redirect_url": "/training/paths/use-azure-machine-learning-pipelines-for-automation/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/finetune-foundation-model-with-azure-machine-learning/index.md",
+      "redirect_url": "/training/modules/finetune-model-copilot-ai-studio/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/finetune-foundation-model-with-azure-machine-learning/4-evaluate-model.md",
+      "redirect_url": "/training/modules/finetune-model-copilot-ai-studio/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/finetune-foundation-model-with-azure-machine-learning/5-exercise.md",
+      "redirect_url": "/training/modules/finetune-model-copilot-ai-studio/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/finetune-foundation-model-with-azure-machine-learning/3-finetune-model.md",
+      "redirect_url": "/training/modules/finetune-model-copilot-ai-studio/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/finetune-foundation-model-with-azure-machine-learning/1-introduction.md",
+      "redirect_url": "/training/modules/finetune-model-copilot-ai-studio/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/finetune-foundation-model-with-azure-machine-learning/6-knowledge-check.md",
+      "redirect_url": "/training/modules/finetune-model-copilot-ai-studio/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/finetune-foundation-model-with-azure-machine-learning/7-summary.md",
+      "redirect_url": "/training/modules/finetune-model-copilot-ai-studio/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/finetune-foundation-model-with-azure-machine-learning/2-understand-finetune.md",
+      "redirect_url": "/training/modules/finetune-model-copilot-ai-studio/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/get-started-prompt-flow/index.md",
+      "redirect_url": "/training/paths/create-custom-copilots-ai-studio/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/get-started-prompt-flow/4-connections-runtimes.md",
+      "redirect_url": "/training/paths/create-custom-copilots-ai-studio/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/get-started-prompt-flow/6-exercise.md",
+      "redirect_url": "/training/paths/create-custom-copilots-ai-studio/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/get-started-prompt-flow/1-introduction.md",
+      "redirect_url": "/training/paths/create-custom-copilots-ai-studio/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/get-started-prompt-flow/7-knowledge-check.md",
+      "redirect_url": "/training/paths/create-custom-copilots-ai-studio/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/get-started-prompt-flow/8-summary.md",
+      "redirect_url": "/training/paths/create-custom-copilots-ai-studio/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/get-started-prompt-flow/3-understand-flows.md",
+      "redirect_url": "/training/paths/create-custom-copilots-ai-studio/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/get-started-prompt-flow/2-understand-lifecycle.md",
+      "redirect_url": "/training/paths/create-custom-copilots-ai-studio/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/get-started-prompt-flow/5-variants-monitor.md",
+      "redirect_url": "/training/paths/create-custom-copilots-ai-studio/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/deploy-azure-databricks-models-azure-machine-learning/index.md",
+      "redirect_url": "/training/paths/use-azure-machine-learning-pipelines-for-automation/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/deploy-azure-databricks-models-azure-machine-learning/4-deploy-model-to-azure-machine-learning.md",
+      "redirect_url": "/training/paths/use-azure-machine-learning-pipelines-for-automation/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/deploy-azure-databricks-models-azure-machine-learning/2-describe-considerations-for-model-deployment.md",
+      "redirect_url": "/training/paths/use-azure-machine-learning-pipelines-for-automation/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/deploy-azure-databricks-models-azure-machine-learning/6-exercise-deploy-azure-databricks-model.md",
+      "redirect_url": "/training/paths/use-azure-machine-learning-pipelines-for-automation/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/deploy-azure-databricks-models-azure-machine-learning/1-introduction.md",
+      "redirect_url": "/training/paths/use-azure-machine-learning-pipelines-for-automation/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/deploy-azure-databricks-models-azure-machine-learning/7-knowledge-check.md",
+      "redirect_url": "/training/paths/use-azure-machine-learning-pipelines-for-automation/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/deploy-azure-databricks-models-azure-machine-learning/3-plan-for-deployment-endpoints.md",
+      "redirect_url": "/training/paths/use-azure-machine-learning-pipelines-for-automation/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/deploy-azure-databricks-models-azure-machine-learning/8-summary.md",
+      "redirect_url": "/training/paths/use-azure-machine-learning-pipelines-for-automation/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/deploy-azure-databricks-models-azure-machine-learning/5-troubleshoot-model-deployment.md",
+      "redirect_url": "/training/paths/use-azure-machine-learning-pipelines-for-automation/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/dot-net-maui/consume-rest-services-maui/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/dotnet/maui/data-cloud/rest",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/dot-net-maui/consume-rest-services-maui/2-detect-network-connectivity.yml",
+      "redirect_url": "https://learn.microsoft.com/dotnet/maui/data-cloud/rest",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/dot-net-maui/consume-rest-services-maui/3-consume-rest-web-service.yml",
+      "redirect_url": "https://learn.microsoft.com/dotnet/maui/data-cloud/rest",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/dot-net-maui/consume-rest-services-maui/4-use-platform-specific-features.yml",
+      "redirect_url": "https://learn.microsoft.com/dotnet/maui/data-cloud/rest",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/dot-net-maui/consume-rest-services-maui/5-exercise-consume-rest-web-service.yml",
+      "redirect_url": "https://learn.microsoft.com/dotnet/maui/data-cloud/rest",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/dot-net-maui/consume-rest-services-maui/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/dotnet/maui/data-cloud/rest",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/dot-net-maui/consume-rest-services-maui/index.yml",
+      "redirect_url": "https://learn.microsoft.com/dotnet/maui/data-cloud/rest",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/capture-application-logs-app-service/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/app-service/troubleshoot-diagnostic-logs/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/capture-application-logs-app-service/2-enable-and-configure-app-service-application-logging.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/app-service/troubleshoot-diagnostic-logs/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/capture-application-logs-app-service/3-enable-and-configure-app-service-application-logging-using-the-azure-portal.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/app-service/troubleshoot-diagnostic-logs/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/capture-application-logs-app-service/4-view-live-application-logging-activity-with-the-log-streaming-service.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/app-service/troubleshoot-diagnostic-logs/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/capture-application-logs-app-service/5-view-live-application-logging-activity-with-the-log-streaming-service-using-azure-cli.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/app-service/troubleshoot-diagnostic-logs/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/capture-application-logs-app-service/6-retrieve-application-log-files-from-an-application.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/app-service/troubleshoot-diagnostic-logs/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/capture-application-logs-app-service/7-retrieve-application-log-files-from-an-application-using-azure-cli-and-kudu.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/app-service/troubleshoot-diagnostic-logs/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/capture-application-logs-app-service/8-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/app-service/troubleshoot-diagnostic-logs/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/capture-application-logs-app-service/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/app-service/troubleshoot-diagnostic-logs/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-azure-web-app-with-azure-toolkit-intellij/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/java/toolkit-for-intellij/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-azure-web-app-with-azure-toolkit-intellij/2-create-web-app-intellij.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/java/toolkit-for-intellij/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-azure-web-app-with-azure-toolkit-intellij/3-exercise-create-web-app-intellij.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/java/toolkit-for-intellij/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-azure-web-app-with-azure-toolkit-intellij/4-deploy-web-app-azure.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/java/toolkit-for-intellij/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-azure-web-app-with-azure-toolkit-intellij/5-exercise-deploy-web-app-azure.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/java/toolkit-for-intellij/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-azure-web-app-with-azure-toolkit-intellij/6-manage-deployment-intellij.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/java/toolkit-for-intellij/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-azure-web-app-with-azure-toolkit-intellij/7-exercise-manage-deployment-intellij.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/java/toolkit-for-intellij/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-azure-web-app-with-azure-toolkit-intellij/8-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/java/toolkit-for-intellij/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-azure-web-app-with-azure-toolkit-intellij/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/java/toolkit-for-intellij/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-web-app-with-maven-plugin-for-azure-app-service/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/java/fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-web-app-with-maven-plugin-for-azure-app-service/2-create-java-web-app.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/java/fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-web-app-with-maven-plugin-for-azure-app-service/3-exercise-create-java-web-app.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/java/fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-web-app-with-maven-plugin-for-azure-app-service/4-deploy-web-app-azure.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/java/fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-web-app-with-maven-plugin-for-azure-app-service/5-exercise-deploy-web-app-azure.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/java/fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-web-app-with-maven-plugin-for-azure-app-service/6-exercise-redeploy-web-app-azure.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/java/fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-web-app-with-maven-plugin-for-azure-app-service/7-authenticate-web-app-deployment.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/java/fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-web-app-with-maven-plugin-for-azure-app-service/8-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/java/fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-web-app-with-maven-plugin-for-azure-app-service/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/java/fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-data-factory/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/fabric/data-factory/data-factory-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-data-factory/2-what-is-azure-data-factory.yml",
+      "redirect_url": "https://learn.microsoft.com/fabric/data-factory/data-factory-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-data-factory/3-how-azure-data-factory-works.yml",
+      "redirect_url": "https://learn.microsoft.com/fabric/data-factory/data-factory-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-data-factory/4-when-to-use-azure-data-factory.yml",
+      "redirect_url": "https://learn.microsoft.com/fabric/data-factory/data-factory-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-data-factory/5-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/fabric/data-factory/data-factory-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-data-factory/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/fabric/data-factory/data-factory-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-data-factory/index.yml",
+      "redirect_url": "https://learn.microsoft.com/fabric/data-factory/data-factory-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-ml/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/machine-learning/overview-what-is-azure-machine-learning?view=azureml-api-2",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-ml/2-what-is-azure-ml.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/machine-learning/overview-what-is-azure-machine-learning?view=azureml-api-2",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-ml/3-how-azure-ml-works.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/machine-learning/overview-what-is-azure-machine-learning?view=azureml-api-2",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-ml/4-when-to-use-azure-ml.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/machine-learning/overview-what-is-azure-machine-learning?view=azureml-api-2",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-ml/5-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/machine-learning/overview-what-is-azure-machine-learning?view=azureml-api-2",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-ml/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/machine-learning/overview-what-is-azure-machine-learning?view=azureml-api-2",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-ml/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/machine-learning/overview-what-is-azure-machine-learning?view=azureml-api-2",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/ms-learn-live-migrating-to-the-cloud/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/aspnet/core/overview?view=aspnetcore-10.0",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/ms-learn-live-migrating-to-the-cloud/2-session-1-prep.yml",
+      "redirect_url": "https://learn.microsoft.com/aspnet/core/overview?view=aspnetcore-10.0",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/ms-learn-live-migrating-to-the-cloud/3-session-2-prep.yml",
+      "redirect_url": "https://learn.microsoft.com/aspnet/core/overview?view=aspnetcore-10.0",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/ms-learn-live-migrating-to-the-cloud/4-session-3-prep.yml",
+      "redirect_url": "https://learn.microsoft.com/aspnet/core/overview?view=aspnetcore-10.0",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/ms-learn-live-migrating-to-the-cloud/5-session-4-prep.yml",
+      "redirect_url": "https://learn.microsoft.com/aspnet/core/overview?view=aspnetcore-10.0",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/ms-learn-live-migrating-to-the-cloud/6-session-5-prep.yml",
+      "redirect_url": "https://learn.microsoft.com/aspnet/core/overview?view=aspnetcore-10.0",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/ms-learn-live-migrating-to-the-cloud/index.yml",
+      "redirect_url": "https://learn.microsoft.com/aspnet/core/overview?view=aspnetcore-10.0",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/microservices-architecture/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/architecture/web-apps/app-service/architectures/basic-web-app",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/microservices-architecture/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/architecture/web-apps/app-service/architectures/basic-web-app",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/microservices-architecture/2-monolith-microservices.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/architecture/web-apps/app-service/architectures/basic-web-app",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/microservices-architecture/3-exercise-deploy-monolithic-app.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/architecture/web-apps/app-service/architectures/basic-web-app",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/microservices-architecture/4-monolith-performance.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/architecture/web-apps/app-service/architectures/basic-web-app",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/microservices-architecture/5-analyze-decompose.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/architecture/web-apps/app-service/architectures/basic-web-app",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/microservices-architecture/6-exercise-refactor-microservice.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/architecture/web-apps/app-service/architectures/basic-web-app",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/microservices-architecture/7-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/architecture/web-apps/app-service/architectures/basic-web-app",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/train-model-debug-with-responsible-ai-dashboard-azure-machine-learning/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/machine-learning/concept-responsible-ai-dashboard",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/train-model-debug-with-responsible-ai-dashboard-azure-machine-learning/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/machine-learning/concept-responsible-ai-dashboard",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/train-model-debug-with-responsible-ai-dashboard-azure-machine-learning/2-responsible-ai-dashboard.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/machine-learning/concept-responsible-ai-dashboard",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/train-model-debug-with-responsible-ai-dashboard-azure-machine-learning/3-error-analysis.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/machine-learning/concept-responsible-ai-dashboard",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/train-model-debug-with-responsible-ai-dashboard-azure-machine-learning/4-model-performance-inconsistencies.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/machine-learning/concept-responsible-ai-dashboard",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/train-model-debug-with-responsible-ai-dashboard-azure-machine-learning/5-data-biases.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/machine-learning/concept-responsible-ai-dashboard",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/train-model-debug-with-responsible-ai-dashboard-azure-machine-learning/6-interpret-model.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/machine-learning/concept-responsible-ai-dashboard",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/train-model-debug-with-responsible-ai-dashboard-azure-machine-learning/7-lab-train-debug-model.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/machine-learning/concept-responsible-ai-dashboard",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/train-model-debug-with-responsible-ai-dashboard-azure-machine-learning/8-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/machine-learning/concept-responsible-ai-dashboard",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/train-model-debug-with-responsible-ai-dashboard-azure-machine-learning/9-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/machine-learning/concept-responsible-ai-dashboard",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/host-build-agent/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/agents/agents?view=azure-devops&tabs=yaml%2Cbrowser",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/host-build-agent/2-choose-a-build-agent.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/agents/agents?view=azure-devops&tabs=yaml%2Cbrowser",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/host-build-agent/3-set-up-environment.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/agents/agents?view=azure-devops&tabs=yaml%2Cbrowser",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/host-build-agent/4-create-build-agent.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/agents/agents?view=azure-devops&tabs=yaml%2Cbrowser",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/host-build-agent/5-build-application.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/agents/agents?view=azure-devops&tabs=yaml%2Cbrowser",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/host-build-agent/6-clean-up-environment.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/agents/agents?view=azure-devops&tabs=yaml%2Cbrowser",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/host-build-agent/7-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/agents/agents?view=azure-devops&tabs=yaml%2Cbrowser",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/host-build-agent/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/agents/agents?view=azure-devops&tabs=yaml%2Cbrowser",
+      "redirect_document_id": false
     }
   ]
 }

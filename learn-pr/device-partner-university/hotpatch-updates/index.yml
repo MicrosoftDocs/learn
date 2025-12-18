@@ -11,7 +11,7 @@ metadata:
   ms.service: windows-11
   ms.custom: CW051525-3
 summary: >
-  This story introduces how Windows hotpatching streamlines the update process by applying security patches without requiring a reboot. It explains how you can configure, deploy, and manage hotpatch updates to keep devices secure with minimal disruption.
+  This module introduces how Windows hotpatching streamlines the update process by applying security patches without requiring a restart. It explains how you can configure, deploy, and manage hotpatch updates to keep devices secure faster and with minimal disruption.
 abstract: |
   By the end of this module, you'll be able to:
   - Configure a Windows quality update policy to enable hotpatching through Windows Autopatch
@@ -35,7 +35,7 @@ units:
   - learn.dpu.hotpatch-updates.introduction
   - learn.dpu.hotpatch-updates.protection-with-less-disruption
   - learn.dpu.hotpatch-updates.update-schedules
-  - learn.dpu.hotpatch-updates.hotpatch-devices
+  - learn.dpu.hotpatch-updates.enable-hotpatch
   - learn.dpu.hotpatch-updates.summary
 badge:
   uid: learn.dpu.hotpatch-updates.badge

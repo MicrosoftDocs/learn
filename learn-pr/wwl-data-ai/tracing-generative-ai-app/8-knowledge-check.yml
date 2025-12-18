@@ -38,7 +38,7 @@ quiz:
     - content: "Trace"
       isCorrect: false
       explanation: "Incorrect. A trace represents the entire journey of a request from start to finish and encompasses multiple spans."
-  - content: "Which Python packages are required to implement tracing in Azure AI Foundry applications?"
+  - content: "Which Python packages are required to implement tracing in Microsoft Foundry applications?"
     choices:
     - content: "`azure-ai-projects`, `azure-monitor-opentelemetry`, and `opentelemetry-instrumentation-openai-v2`"
       isCorrect: true
@@ -48,4 +48,5 @@ quiz:
       explanation: "Incorrect. While these packages are valid Azure packages, they don't provide the specific tracing capabilities needed for AI applications."
     - content: "`azure-openai`, `azure-monitor-opentelemetry`, and `opentelemetry-api`"
       isCorrect: false
-      explanation: "Incorrect. This combination lacks the `azure-ai-projects` package needed for Azure AI Foundry integration."
+      explanation: "Incorrect. This combination lacks the `azure-ai-projects` package needed for Microsoft Foundry integration."
+

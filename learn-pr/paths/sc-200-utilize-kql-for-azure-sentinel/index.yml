@@ -1,13 +1,13 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.sc-200-utilize-kql-for-azure-sentinel
 metadata:
-  title: 'SC-200: Create queries for Microsoft Sentinel using Kusto Query Language (KQL)'
-  description: 'SC-200: Create queries for Microsoft Sentinel using Kusto Query Language (KQL)'
-  ms.date: 02/28/2025
-  author: wwlpublish
+  title: 'Create queries for Microsoft Sentinel using Kusto Query Language (KQL)'
+  description: 'Create queries for Microsoft Sentinel using Kusto Query Language (KQL)'
+  ms.date: 11/26/2025
+  author: KenMAG
   ms.author: kelawson
   ms.topic: learning-path
-title: 'SC-200: Create queries for Microsoft Sentinel using Kusto Query Language (KQL)'
+title: 'Create queries for Microsoft Sentinel using Kusto Query Language (KQL)'
 prerequisites: |
   Basic understanding of scripting concepts.
 summary: |

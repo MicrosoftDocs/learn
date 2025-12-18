@@ -1,0 +1,14 @@
+### YamlMime: ModuleUnit
+uid: learn.wwl.ingest-data-into-unity-catalog.ingest-data-notebooks
+title: Ingest data with notebooks
+metadata:
+  title: Ingest Data with Notebooks
+  description: Learn how to ingest batch and streaming data using notebooks in Azure Databricks, including reading from files, databases, and streaming sources, then writing to Unity Catalog tables.
+  ms.date: 12/07/2025
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+  ai-usage: ai-generated
+durationInMinutes: 7
+content: |
+  [!include[](includes/3-ingest-data-notebooks.md)]

@@ -1,4 +1,4 @@
-As organizations scale their use of Azure AI Foundry workloads, managing
+As organizations scale their use of Microsoft Foundry workloads, managing
 cloud resources across multiple workloads and subscriptions can quickly
 become complex and costly. To ensure your architecture remains secure,
 robust, and cost-effective, it's essential to start with a proven
@@ -10,7 +10,7 @@ specific requirements and serve as blueprints for scalable,
 well-governed AI adoption:
 
 - Azure Landing Zones
-- Baseline Azure AI Foundry Chat Reference Architecture
+- Baseline Microsoft Foundry Chat Reference Architecture
 
 By leveraging these reference architectures, teams can accelerate
 deployment, avoid common pitfalls, and ensure that AI solutions are
@@ -161,9 +161,9 @@ organizations stay within budget while maximizing performance, ensuring
 that cloud investments align with both operational goals and financial
 constraints.
 
-## Baseline Azure AI Foundry chat reference architecture
+## Baseline Microsoft Foundry chat reference architecture
 
-Microsoft's baseline Azure AI Foundry reference architecture is a set
+Microsoft's baseline Microsoft Foundry reference architecture is a set
 of recommendations for building AI-enabled enterprise chat applications.
 Typically, these chat apps have four elements:
 
@@ -177,18 +177,18 @@ Typically, these chat apps have four elements:
 
 - **Language models:** These components reason with data from the
   repositories to build conversational and relevant responses. For
-  example, you may use Azure AI Foundry Models.
+  example, you may use Microsoft Foundry Models.
 
 - **An orchestrator or agent:** This component governs interactions
   between the previous three components and the user. For example, you
-  can use an Azure AI Foundry Agent Service.
+  can use an Microsoft Foundry Agent Service.
 
-The Azure AI Foundry chat reference architecture gives you a baseline
+The Microsoft Foundry chat reference architecture gives you a baseline
 generalized structure for a chat app, which you can trust and adapt to
 your needs. It describes a secure, zone-redundant, highly available app
 deployed to the Azure App Service.
 
-The following diagram shows the Azure AI Foundry chat reference
+The following diagram shows the Microsoft Foundry chat reference
 conceptual architecture.
 
 [![An Architecture diagram of the workload, including select platform subscription resources.](../media/chat-agent-reference-architecture.png)](../media/chat-agent-reference-architecture-big.png#lightbox)

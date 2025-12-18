@@ -1,6 +1,6 @@
 Many online sites encourage users to share their views. People trust other people's feedback about products, services, brands, and more. These comments are often frank, insightful, and seen to be free of marketing bias. But not all content is well intended.
 
-Azure AI Foundry Content Safety is an AI service designed to provide a more comprehensive approach to content moderation. Foundry Content Safety helps organizations to prioritize work for human moderators in a growing number of situations:
+Microsoft Foundry Content Safety is an AI service designed to provide a more comprehensive approach to content moderation. Foundry Content Safety helps organizations to prioritize work for human moderators in a growing number of situations:
 
 ## Education
 
@@ -33,3 +33,4 @@ News websites need to moderate user comments to prevent the spread of misinforma
 ## Other situations
 
 There are many other situations where content needs to be moderated. Foundry Content Safety can be customized to identify problematic language for specific cases.
+

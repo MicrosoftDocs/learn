@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-manage-data-quality-constraints-unity-catalog.detect-manage-schema-drift
+title: Detect and manage schema drift
+metadata:
+  title: Detect and Manage Schema Drift
+  description: Learn how to detect and manage schema drift in Azure Databricks data pipelines using Delta Lake, Auto Loader, schema evolution, and error handling strategies.
+  ms.date: 12/07/2025
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+  ai-usage: ai-generated
+durationInMinutes: 8
+content: |
+  [!include[](includes/4-detect-manage-schema-drift.md)]

@@ -5,13 +5,12 @@ metadata:
   title: Exercise - Create alias records for Azure DNS
   description: Exercise - Create alias records for Azure DNS
   ms.date: 10/03/2024
-  author: greg-lindsay
-  ms.author: greglin
+  author: kumud
+  ms.author: kumud
   ms.topic: unit
   zone_pivot_groups: 
-interactive: bash
-azureSandbox: true
+# interactive: bash
+# azureSandbox: true
 durationInMinutes: 12
 content: |
   [!include[](includes/6-exercise-create-alias-records.md)]
-

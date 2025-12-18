@@ -9,8 +9,7 @@ resources. Its clean syntax and powerful scripting capabilities make it a valuab
 administrators new to PowerShell. By automating time-consuming and error-prone tasks, you can reduce
 administrative overhead and improve overall efficiency and quality.
 
-<!-- Cleanup sandbox -->
-[!include[](../../../includes/azure-sandbox-cleanup.md)]
+[!INCLUDE [](../../../includes/azure-optional-exercise-subscription-cleanup.md)]
 
 Use the `Remove-AzResourceGroup` cmdlet to delete the resource group and all related resources.
 Replace `<resource-group-name>` with the name of the resource group you created:

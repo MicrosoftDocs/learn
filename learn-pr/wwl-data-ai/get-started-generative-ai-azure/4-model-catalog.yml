@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.get-started-generative-ai-azure.model-catalog
-title: Understand Azure AI Foundry's model catalog 
+title: Understand Foundry's model catalog 
 metadata:
   adobe-target: true
   prefetch-feature-rollout: true
-  title: Understand Azure AI Foundry's model catalog
-  description: Understand Azure AI Foundry's model catalog
+  title: Understand Foundry's model catalog
+  description: Understand Foundry's model catalog
   author: sherzyang
   ms.author: sheryang
-  ms.date: 05/26/2025
+  ms.date: 12/5/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot

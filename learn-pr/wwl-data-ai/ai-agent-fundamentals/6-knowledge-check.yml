@@ -6,7 +6,7 @@ metadata:
   description: Test your knowledge of AI agents.
   author: ivorb
   ms.author: berryivor
-  ms.date: 05/23/2025
+  ms.date: 12/02/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
@@ -26,11 +26,11 @@ quiz:
     - content: "A marketplace for off-the-shelf AI software components."
       isCorrect: false
       explanation: "Incorrect. An AI agent isn't a marketplace for off-the-shelf AI software components."
-  - content: "Which AI agent development service offers a choice of generative AI models from multiple vendors in the Azure AI Foundry model catalog?"
+  - content: "Which AI agent development service offers a choice of generative AI models from multiple vendors in the Microsoft Foundry model catalog?"
     choices:
-    - content: "Azure AI Foundry Agent Service"
+    - content: "Microsoft Foundry Agent Service"
       isCorrect: true
-      explanation: "Correct. Azure AI Foundry Agent Service supports many models from the Azure AI Foundry model catalog."
+      explanation: "Correct. Microsoft Foundry Agent Service supports many models from the Microsoft Foundry model catalog."
     - content: "OpenAI Assistants API"
       isCorrect: false
       explanation: "Incorrect. OpenAI Assistants API is restricted to OpenAI models."
@@ -48,4 +48,5 @@ quiz:
     - content: "Knowledge"
       isCorrect: true
       explanation: "Correct. Adding a knowledge source enables an agent to ground prompts with contextual data."
+
 

@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.get-started-language-azure.exercise
-title: Exercise - Analyze text in Azure AI Foundry portal
+title: Exercise - Analyze text in Microsoft Foundry
 metadata:
-  title: Exercise - Analyze text in Azure AI Foundry portal
-  description: "Exercise - Analyze text in Azure AI Foundry portal"
+  title: Exercise - Analyze text in Microsoft Foundry
+  description: "Exercise - Analyze text in Microsoft Foundry"
   ms.date: 05/22/2025
   author: wwlpublish
   ms.author: sheryang
@@ -13,3 +13,4 @@ metadata:
 durationInMinutes: 20
 content: |
   [!include[](includes/7-exercise.md)]
+

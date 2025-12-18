@@ -3,14 +3,15 @@ uid: learn.wwl.build-copilot-ai-studio.exercise
 title: Exercise - Create a generative AI app that uses your own data
 metadata:
   title: Exercise - Create a generative AI app that uses your own data
-  description: Create a generative AI app that uses your own data with the Azure AI Foundry portal.
+  description: Create a generative AI app that uses your own data with the Microsoft Foundry portal.
   author: madiepev
   ms.author: madiepev
-  ms.date: 05/23/2025
+  ms.date: 12/02/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
 durationInMinutes: 45
 content: |
   [!include[](includes/5-exercise.md)]
+
 

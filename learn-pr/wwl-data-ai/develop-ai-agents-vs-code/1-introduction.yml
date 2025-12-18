@@ -3,7 +3,7 @@ uid: learn.wwl.develop-ai-agents-vs-code.introduction
 title: Introduction
 metadata:
   title: Introduction
-  description: Get started with the Azure AI Foundry extension for Visual Studio Code.
+  description: Get started with the Microsoft Foundry extension for Visual Studio Code.
   author: buzahid
   ms.author: buzahid
   ms.date: 10/06/2025
@@ -11,4 +11,5 @@ metadata:
 durationInMinutes: 1
 content: |
   [!include[](includes/1-introduction.md)]
+
 
