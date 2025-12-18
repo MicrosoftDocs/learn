@@ -1,0 +1,48 @@
+### YamlMime:Module
+uid: learn.wwl.purview-data-loss-prevention-understand-plan
+metadata:
+  title: Understand and plan data loss prevention
+  description: Understand and plan data loss prevention.
+  ms.date: 01/06/2026
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: module
+  ai-usage: ai-assisted
+  ms.service: purview
+title: Understand and plan data loss prevention
+summary: |
+  Microsoft Purview and Microsoft Defender XDR help organizations detect potential data loss risks and respond quickly to protect sensitive information. Investigation and response activities include reviewing DLP alerts, applying appropriate remediation actions, and documenting findings in a structured and consistent way.
+abstract: |
+  In this module you learn to:
+  - Investigate DLP alerts in Microsoft Purview and Microsoft Defender XDR
+  - Review alert details, related user activities, and matched events
+  - Apply remediation actions and update alert or incident statuses
+  - Assign ownership, document decisions, and support accountability
+  - Recognize when DLP policies might need adjustments based on investigation outcomes
+prerequisites: |
+  - Basic understanding of Microsoft Purview Data Loss Prevention (DLP) policies
+  - Familiarity with Microsoft Purview portal and Microsoft Defender portal
+  - Awareness of how DLP policies are created and configured
+iconUrl: /training/achievements/respond-to-data-loss-prevention-alerts-in-microsoft-365.svg
+levels:
+- intermediate
+roles:
+- administrator
+- risk-practitioner
+products:
+- m365
+- microsoft-purview
+subjects:
+- threat-protection
+- security
+units:
+- learn.wwl.purview-data-loss-prevention-understand-plan.introduction
+- learn.wwl.purview-data-loss-prevention-understand-plan.introduction-data-loss-prevention
+- learn.wwl.purview-data-loss-prevention-understand-plan.understand-data-loss-prevention-protection
+- learn.wwl.purview-data-loss-prevention-understand-plan.plan-design-policies
+- learn.wwl.purview-data-loss-prevention-understand-plan.understand-deployment-simulation-mode
+- learn.wwl.purview-data-loss-prevention-understand-plan.advanced-data-loss-prevention-controls
+- learn.wwl.purview-data-loss-prevention-understand-plan.knowledge-check
+- learn.wwl.purview-data-loss-prevention-understand-plan.summary
+badge:
+  uid: learn.wwl.purview-data-loss-prevention-understand-plan.badge
