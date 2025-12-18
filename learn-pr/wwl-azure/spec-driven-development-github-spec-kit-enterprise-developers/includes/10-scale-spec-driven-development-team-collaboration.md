@@ -1,4 +1,4 @@
-Spec-Driven Development (SDD) delivers significant value in individual work, but its benefits multiply in team environments. Understanding how to scale SDD practices across multiple developers, coordinate shared artifacts, and establish effective collaboration patterns transforms SDD from a personal productivity tool into a team-wide development methodology.
+Spec-driven development (SDD) delivers significant value in individual work, but its benefits multiply in team environments. Understanding how to scale SDD practices across multiple developers, coordinate shared artifacts, and establish effective collaboration patterns transforms SDD from a personal productivity tool into a team-wide development methodology.
 
 ## Understand team collaboration challenges
 
@@ -6,9 +6,9 @@ Development teams face coordination challenges that individual developers don't 
 
 Traditional development approaches rely on verbal communication, documentation that becomes outdated, and tribal knowledge that exists only in developers' minds. These approaches don't scale well. New team members struggle to get up to speed. Distributed teams across time zones can't rely on synchronous communication. Knowledge silos form when only certain developers understand specific features.
 
-Spec-Driven Development addresses these challenges through explicit, version-controlled artifacts that capture requirements, architectural decisions, and implementation plans. When specs, plans, and tasks exist as files in your repository, they become shared sources of truth accessible to all team members regardless of location or tenure.
+Spec-driven development addresses these challenges through explicit, version-controlled artifacts that capture requirements, architectural decisions, and implementation plans. When specs, plans, and tasks exist as files in your repository, they become shared sources of truth accessible to all team members regardless of location or tenure.
 
-For the document upload feature, imagine three developers working together: one focuses on backend APIs, one on frontend components, and one on database and infrastructure. Without shared artifacts, these developers would need constant meetings to coordinate. With SDD artifacts, they reference the same specification for requirements, the same plan for architecture, and coordinated tasks for their specific responsibilities.
+For the document upload feature, imagine three developers working together: one focuses on back-end APIs, one on front-end components, and one on database and infrastructure. Without shared artifacts, these developers would need constant meetings to coordinate. With SDD artifacts, they reference the same specification for requirements, the same plan for architecture, and coordinated tasks for their specific responsibilities.
 
 ## Establish shared constitution
 
@@ -20,7 +20,7 @@ Create a constitution that captures your team's collective values and constraint
 
 - **Technical Standards:**
   - "All APIs must use RESTful conventions with consistent error handling."
-  - "Frontend components follow the established component library and design system."
+  - "Front-end components follow the established component library and design system."
   - "Database changes require migration scripts following naming convention YYYY-MM-DD-description."
 
 - **Security and Compliance:**
@@ -30,7 +30,7 @@ Create a constitution that captures your team's collective values and constraint
 
 - **Performance Requirements:**
   - "API endpoints must respond within 200 ms for 95th percentile."
-  - "Frontend bundle sizes can't exceed 500KB gzipped."
+  - "Front-end bundle sizes can't exceed 500KB gzipped."
   - "Database queries must use indexes for all filtered columns."
 
 - **Process Expectations:**
@@ -62,9 +62,9 @@ For the document upload feature, the specification review might reveal that anot
 
 ### Coordinate plan decisions
 
-After generating plan.md, share it with affected team members. If the plan proposes database changes, involve database administrators. If it requires new Azure resources, involve infrastructure engineers. If it affects existing APIs, involve the backend team lead.
+After generating plan.md, share it with affected team members. If the plan proposes database changes, involve database administrators. If it requires new Azure resources, involve infrastructure engineers. If it affects existing APIs, involve the back-end team lead.
 
-This coordination ensures plans are technically feasible and politically acceptable. An infrastructure engineer might point out that the plan's proposed Azure Blob Storage tier is too expensive for the expected upload volume. The backend lead might note that the proposed API endpoint design doesn't follow team conventions.
+This coordination ensures plans are technically feasible and politically acceptable. An infrastructure engineer might point out that the plan's proposed Azure Blob Storage tier is too expensive for the expected upload volume. The back-end lead might note that the proposed API endpoint design doesn't follow team conventions.
 
 Incorporate feedback before finalizing the plan. Early communication and coordination help prevent showstopper issues during implementation when changes are more costly.
 
@@ -72,11 +72,11 @@ Incorporate feedback before finalizing the plan. Early communication and coordin
 
 When multiple developers work on the same feature, use the task list to distribute work efficiently. Assign tasks based on team members' expertise and availability.
 
-Backend specialists take API implementation tasks. Frontend experts handle UI component tasks. DevOps engineers address deployment and configuration tasks. This specialization improves implementation quality and speed.
+Back-end specialists take API implementation tasks. Front-end experts handle UI component tasks. DevOps engineers address deployment and configuration tasks. This specialization improves implementation quality and speed.
 
 Document task assignments explicitly in tasks.md or your project management system. Mark each task with the assigned developer's name: "Task: Implement upload endpoint [Assigned: Alex]"
 
-This transparency prevents duplicate work and enables team members to identify dependencies. If your frontend work depends on Alex completing the API endpoint, you know to check in with Alex or adjust your task order.
+This transparency prevents duplicate work and enables team members to identify dependencies. If your front-end work depends on Alex completing the API endpoint, you know to check in with Alex or adjust your task order.
 
 ## Implement effective branching strategies
 
@@ -145,7 +145,7 @@ Constitution violations are more serious than plan deviations because they affec
 
 ## Manage distributed teams effectively
 
-Distributed teams face extra collaboration challenges that Spec-Driven Development specifically addresses.
+Distributed teams face extra collaboration challenges that spec-driven development specifically addresses.
 
 ### Leverage asynchronous documentation
 
@@ -161,12 +161,12 @@ Assign clear ownership for each feature's specification and implementation. One 
 
 For document upload, assign ownership like this:
 
-- **Specification owner**: Developer who writes and maintains spec.md
-- **Backend implementation**: Developer responsible for API endpoints
-- **Frontend implementation**: Developer responsible for UI components
-- **Infrastructure**: Engineer responsible for Azure resource provisioning
+- **Specification owner**: Developer who writes and maintains spec.md.
+- **Back-end implementation**: Developer responsible for API endpoints.
+- **Front-end implementation**: Developer responsible for UI components.
+- **Infrastructure**: Engineer responsible for Azure resource provisioning.
 
-Clear ownership prevents confusion about who should answer questions or make decisions. If the frontend developer has a question about upload UI requirements, they know to ask the specification owner.
+Clear ownership prevents confusion about who should answer questions or make decisions. If the front-end developer has a question about upload UI requirements, they know to ask the specification owner.
 
 ### Use specification reviews as synchronization points
 
@@ -192,7 +192,7 @@ Specification conflicts fall into several categories:
 
 - **Requirement conflicts**: Different stakeholders want incompatible features. Product manager wants simple UI with minimal clicks. Security team wants multi-step verification process.
 
-- **Technical conflicts**: Proposed implementation approaches conflict with each other or with organizational constraints. Frontend team wants to use a new JavaScript framework. Architecture team prohibits unapproved frameworks.
+- **Technical conflicts**: Proposed implementation approaches conflict with each other or with organizational constraints. Front-end team wants to use a new JavaScript framework. Architecture team prohibits unapproved frameworks.
 
 - **Priority conflicts**: Disagreement about which requirements are essential versus optional. Product wants feature richness. Engineering wants minimal complexity for faster delivery.
 
@@ -214,17 +214,17 @@ This documentation shows future developers that the 50-MB limit wasn't arbitrary
 
 ## Enable effective knowledge transfer
 
-Spec-Driven Development facilitates knowledge transfer when team members join, leave, or transition between projects through structured documentation and cross-training practices.
+Spec-driven development facilitates knowledge transfer when team members join, leave, or transition between projects through structured documentation and cross-training practices.
 
 ### Cross-train through specification ownership
 
-Rotate specification ownership periodically to cross-train team members. If one developer always owns frontend specs and another always owns backend specs, neither understands the full stack.
+Rotate specification ownership periodically to cross-train team members. If one developer always owns front-end specs and another always owns back-end specs, neither understands the full stack.
 
-By rotating ownership, team members gain broader context. The backend specialist who writes a frontend specification learns frontend requirements and constraints. This cross-pollination improves collaboration and reduces silos.
+By rotating ownership, team members gain broader context. The back-end specialist who writes a front-end specification learns front-end requirements and constraints. This cross-pollination improves collaboration and reduces silos.
 
 ## Onboard new team members effectively
 
-Spec-Driven Development artifacts dramatically improve onboarding experiences and enable efficient knowledge transfer.
+Spec-driven development artifacts dramatically improve onboarding experiences and enable efficient knowledge transfer.
 
 ### Specification-based learning
 
@@ -232,15 +232,15 @@ New team members can read existing specifications to understand implemented feat
 
 Provide new team members with a reading list:
 
-1. constitution.md - Understand team principles
-2. Key feature specifications - Understand major functionality
-3. Architecture decision records - Understand why certain approaches were chosen
+- constitution.md - Understand team principles.
+- Key feature specifications - Understand major functionality.
+- Architecture decision records - Understand why certain approaches were chosen.
 
 Create an onboarding task list that includes reviewing key specifications for core features. This structured onboarding reduces the time to productivity. New developers grasp project context within days rather than weeks.
 
 ### Learn team patterns through plans
 
-Plans demonstrate your team's architectural patterns and technology choices. New developers studying plan.md files learn how your team structures backend APIs, organizes frontend components, integrates with Azure services, and handles cross-cutting concerns like authentication and error handling.
+Plans demonstrate your team's architectural patterns and technology choices. New developers studying plan.md files learn how your team structures back-end APIs, organizes front-end components, integrates with Azure services, and handles cross-cutting concerns like authentication and error handling.
 
 This pattern learning happens through reading rather than trial-and-error coding and review feedback. New team members arrive at their first implementation task already understanding team conventions.
 
@@ -266,8 +266,8 @@ Large organizations might have a root constitution capturing company-wide standa
 
 ```plaintext
 constitution.md (organization-wide)
-├── team-backend-constitution.md (backend team specifics)
-├── team-frontend-constitution.md (frontend team specifics)
+├── team-back-end-constitution.md (back-end team specifics)
+├── team-front-end-constitution.md (front-end team specifics)
 └── team-mobile-constitution.md (mobile team specifics)
 ```
 
@@ -277,7 +277,7 @@ This hierarchy ensures consistency across teams while allowing appropriate speci
 
 When features from different teams must integrate, specifications should explicitly document the integration contract.
 
-For example, if Team A builds a document upload API and Team B builds a frontend that uses it, Team A's specification should define the API contract (endpoints, request/response formats, error codes). Team B's specification should reference Team A's contract and specify how the frontend consumes it.
+For example, if Team A builds a document upload API and Team B builds a front end that uses it, Team A's specification should define the API contract (endpoints, request/response formats, error codes). Team B's specification should reference Team A's contract and specify how the front end consumes it.
 
 This explicit contract documentation prevents integration surprises and provides clear accountability for API stability.
 
@@ -289,4 +289,4 @@ This pattern works well for large organizations with many stakeholders, though i
 
 ## Summary
 
-Spec-Driven Development scales effectively to team environments through shared constitutions, collaborative specification development, strategic task distribution, and specification-grounded code reviews. Use feature branches to isolate specification and implementation work. Conduct asynchronous specification reviews for distributed teams. Use SDD artifacts for efficient onboarding of new team members. Maintain specifications as living documents that evolve with requirements and serve as objective criteria for code reviews. The structured nature of SDD artifacts reduces coordination overhead while improving team alignment and code quality.
+Spec-driven development scales effectively to team environments through shared constitutions, collaborative specification development, strategic task distribution, and specification-grounded code reviews. Use feature branches to isolate specification and implementation work. Conduct asynchronous specification reviews for distributed teams. Use SDD artifacts for efficient onboarding of new team members. Maintain specifications as living documents that evolve with requirements and serve as objective criteria for code reviews. The structured nature of SDD artifacts reduces coordination overhead while improving team alignment and code quality.

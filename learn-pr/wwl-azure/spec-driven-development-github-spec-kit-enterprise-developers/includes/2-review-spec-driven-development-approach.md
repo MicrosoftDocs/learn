@@ -1,8 +1,8 @@
 Traditional development often treats code as the ultimate source of truth. Specifications served code—they were the scaffolding we built and then discarded once the "real work" of coding began. We wrote Product Requirements Documents (PRDs) to guide development, created design docs to inform implementation, and drew diagrams to visualize architecture. But these documents were always subordinate to the code itself. Code was the source of truth, and as it moved forward, specs rarely kept pace. In traditional development, the code is both the asset (what you're building) and the implementation. If you want to explore different ways to build an app, or create alternative implementations, you have to actually write the code for each approach. In traditional development, you can't prototype or compare multiple solutions without the time and effort of coding them.
 
-## The Spec-Driven Development paradigm
+## The spec-driven development paradigm
 
-Spec-Driven Development (SDD) inverts the code-centric power structure. Specifications don't serve code—code serves specifications. The Product Requirements Document isn't a guide for implementation; it's the source that generates implementation. Technical plans aren't documents that inform coding; they're precise definitions that produce code. This paradigm shift isn't an incremental improvement to how we build software, it's a fundamental rethinking of what drives development.
+Spec-driven development (SDD) inverts the code-centric power structure. Specifications don't serve code—code serves specifications. The Product Requirements Document isn't a guide for implementation; it's the source that generates implementation. Technical plans aren't documents that inform coding; they're precise definitions that produce code. This paradigm shift isn't an incremental improvement to how we build software, it's a fundamental rethinking of what drives development.
 
 The gap between specification and implementation is an ongoing issue. Developers have tried to bridge the gap with better documentation, more detailed requirements, stricter processes. These approaches fail because they accept the gap as inevitable. They try to narrow it but never eliminate it. SDD eliminates the gap by making specifications and their concrete implementation plans born from the specification executable. When specifications and implementation plans generate code, there's no gap—only transformation.
 
@@ -14,7 +14,7 @@ Debugging means fixing specifications and their implementation plans that genera
 
 The development team focuses in on their creativity, experimentation, and their critical thinking.
 
-## The Spec-Driven Development workflow in practice
+## The spec-driven development workflow in practice
 
 The workflow begins with an idea—often vague and incomplete. Through iterative dialogue with AI, this idea becomes a comprehensive PRD. The AI asks clarifying questions, identifies edge cases, and helps define precise acceptance criteria. What might take days of meetings and documentation in traditional development happens in hours of focused specification work. This AI-assisted process transforms the traditional software development life cycle (SDLC)—requirements and design become continuous activities rather than discrete phases. The SDD workflow supports team processes, where team-reviewed specifications are expressed and versioned, created in branches, and merged.
 
@@ -28,7 +28,7 @@ Code generation begins as soon as specifications and their implementation plans 
 
 The feedback loop extends beyond initial development. Production metrics and incidents don't just trigger hotfixes—they update specifications for the next regeneration. Performance bottlenecks become new nonfunctional requirements. Security vulnerabilities become constraints that affect all future generations. This iterative dance between specification, implementation, and operational reality is where true understanding emerges and where the traditional SDLC transforms into a continuous evolution.
 
-## Why Spec-Driven Development matters now
+## Why spec-driven development matters now
 
 Three trends make SDD not just possible but necessary:
 
@@ -42,9 +42,9 @@ SDD can support what-if/simulation experiments: "If we need to reimplement or ch
 
 SDD transforms requirement changes from obstacles into normal workflow. When specifications drive implementation, pivots become systematic regenerations rather than manual rewrites. Change a core requirement in the PRD, and affected implementation plans update automatically. Modify a user story, and corresponding API endpoints regenerate. This transformation isn't just about initial development—it's about maintaining engineering velocity through inevitable changes.
 
-## The core principles of Spec-Driven Development
+## The core principles of spec-driven development
 
-Spec-Driven Development rests on several core principles:
+Spec-driven development rests on several core principles:
 
 - Specifications as the Lingua Franca: The specification becomes the primary artifact. Code becomes its expression in a particular language and framework. Maintaining software means evolving specifications.
 
@@ -58,7 +58,7 @@ Spec-Driven Development rests on several core principles:
 
 - Branching for Exploration: Generate multiple implementation approaches from the same specification to explore different optimization targets—performance, maintainability, user experience, cost.
 
-## Implementation approaches for Spec-Driven Development
+## Implementation approaches for spec-driven development
 
 Today, practicing SDD requires assembling existing tools and maintaining discipline throughout the process. The methodology can be practiced with:
 
@@ -72,4 +72,4 @@ The key is treating specifications as the source of truth, with code as the gene
 
 ## Summary
 
-Spec-Driven Development represents a paradigm shift in how we build software. By elevating specifications to the role of primary artifacts and making code a generated expression of those specifications, SDD eliminates the traditional gap between intent and implementation. This approach uses AI capabilities to automate the translation from specification to code, enabling rapid iteration, systematic alignment, and continuous evolution. As software complexity and change accelerate, SDD offers a structured yet flexible framework for maintaining engineering velocity while fostering creativity and critical thinking among development teams.
+Spec-driven development represents a paradigm shift in how we build software. By elevating specifications to the role of primary artifacts and making code a generated expression of those specifications, SDD eliminates the traditional gap between intent and implementation. This approach uses AI capabilities to automate the translation from specification to code, enabling rapid iteration, systematic alignment, and continuous evolution. As software complexity and change accelerate, SDD offers a structured yet flexible framework for maintaining engineering velocity while fostering creativity and critical thinking among development teams.

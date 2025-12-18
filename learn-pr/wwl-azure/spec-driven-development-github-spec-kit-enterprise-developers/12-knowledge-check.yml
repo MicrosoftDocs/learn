@@ -12,7 +12,7 @@ durationInMinutes: 5
 content: |
 quiz:
   questions:
-  - content: "What is the primary problem that Spec-Driven Development (SDD) solves when working with AI coding assistants?"
+  - content: "What is the primary problem that spec-driven development (SDD) solves when working with AI coding assistants?"
     choices:
     - content: "AI models generate code too slowly for modern development timelines."
       isCorrect: false
@@ -20,10 +20,10 @@ quiz:
     - content: "Context fragmentation across conversations leads to inconsistent implementations."
       isCorrect: true
       explanation: "Correct. SDD addresses context fragmentation by capturing requirements, decisions, and constraints in persistent artifacts that AI can reference consistently across conversations."
-    - content: "AI coding assistants can't generate frontend code effectively."
+    - content: "AI coding assistants can't generate front-end code effectively."
       isCorrect: false
-      explanation: "Incorrect. AI assistants are capable of generating frontend code. SDD addresses structural and consistency issues, not capability limitations."
-  - content: "Which of the following best describes a core principle of Spec-Driven Development (SDD)?"
+      explanation: "Incorrect. AI assistants are capable of generating front-end code. SDD addresses structural and consistency issues, not capability limitations."
+  - content: "Which of the following best describes a core principle of spec-driven development (SDD)?"
     choices:
     - content: "Implementation code should be written before creating specifications."
       isCorrect: false
@@ -56,7 +56,7 @@ quiz:
     - content: "specify init"
       isCorrect: true
       explanation: "Correct. The 'specify init' command creates the project structure for spec-driven development, including prompt templates and artifact files."
-  - content: "What is the primary purpose of the constitution.md file in Spec-Driven Development?"
+  - content: "What is the primary purpose of the constitution.md file in spec-driven development?"
     choices:
     - content: "To provide step-by-step implementation instructions for developers."
       isCorrect: false
@@ -78,7 +78,7 @@ quiz:
     - content: "Database schemas, API endpoints, and deployment instructions."
       isCorrect: false
       explanation: "Incorrect. These items represent implementation details that appear in plans and tasks, not constitutional principles."
-  - content: "What is the relationship between spec.md and plan.md in the Spec-Driven Development (SDD) workflow?"
+  - content: "What is the relationship between spec.md and plan.md in the spec-driven development (SDD) workflow?"
     choices:
     - content: "The spec defines what to build; the plan defines how to build it."
       isCorrect: true
@@ -118,7 +118,7 @@ quiz:
       explanation: "Incorrect. Tasks should be organized logically using dependencies and implementation sequence, not alphabetically."
     - content: "In phases that group related tasks and create natural milestones."
       isCorrect: true
-      explanation: "Correct. Phase-based organization groups related tasks (for example, Foundation, Core Functionality, Frontend, Security, Testing) and creates clear milestones for tracking progress."
+      explanation: "Correct. Phase-based organization groups related tasks (for example, Foundation, Core Functionality, Front end, Security, Testing) and creates clear milestones for tracking progress."
     - content: "By estimated completion time from shortest to longest."
       isCorrect: false
       explanation: "Incorrect. Tasks should be organized using logical dependencies and implementation sequence, not by duration."
@@ -133,7 +133,7 @@ quiz:
     - content: "pip (Python Package Installer)"
       isCorrect: false
       explanation: "Incorrect. While pip works with Python, uv is the recommended tool for Specify CLI installation."
-  - content: "What is a key benefit of maintaining Spec-Driven Development (SDD) artifacts in version control for team collaboration?"
+  - content: "What is a key benefit of maintaining spec-driven development (SDD) artifacts in version control for team collaboration?"
     choices:
     - content: "Artifacts become shared sources of truth accessible to all team members regardless of location."
       isCorrect: true

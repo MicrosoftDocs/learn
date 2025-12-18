@@ -1,4 +1,4 @@
-Spec-Driven Development (SDD) extends beyond initial feature implementation. Integrating SDD practices into continuous integration and deployment pipelines ensures specifications remain synchronized with production code throughout the software lifecycle.
+Spec-driven development (SDD) extends beyond initial feature implementation. Integrating SDD practices into continuous integration and deployment pipelines ensures specifications remain synchronized with production code throughout the software lifecycle.
 
 ## Automate specification validation in CI/CD
 
@@ -156,7 +156,7 @@ gh issue create \
   --title "Implement upload endpoint validation" \
   --body "Task from Phase 2: Add file validation logic (size, type) to DocumentService" \
   --label "feature/document-upload" \
-  --label "backend" \
+  --label "back-end" \
   --assignee developer-username
 ```
 
@@ -329,4 +329,4 @@ This knowledge sharing accelerates SDD adoption across your organization and hel
 
 ## Summary
 
-Integrating Spec-Driven Development into CI/CD pipelines ensures specifications remain synchronized with code throughout the software lifecycle. Automate specification validation, constitution compliance checking, and test coverage verification. Link SDD artifacts to project management tools like Azure Boards or GitHub Issues for complete traceability. Monitor specification-code drift through periodic audits and metrics. Use specifications as deployment gate criteria to ensure production releases meet documented requirements. Establish governance practices including specification owners and regular retrospectives to continuously improve SDD adoption. These advanced integration patterns transform SDD from a development technique into a comprehensive software delivery methodology that maintains alignment from requirements through deployment.
+Integrating spec-driven development into CI/CD pipelines ensures specifications remain synchronized with code throughout the software lifecycle. Automate specification validation, constitution compliance checking, and test coverage verification. Link SDD artifacts to project management tools like Azure Boards or GitHub Issues for complete traceability. Monitor specification-code drift through periodic audits and metrics. Use specifications as deployment gate criteria to ensure production releases meet documented requirements. Establish governance practices including specification owners and regular retrospectives to continuously improve SDD adoption. These advanced integration patterns transform SDD from a development technique into a comprehensive software delivery methodology that maintains alignment from requirements through deployment.

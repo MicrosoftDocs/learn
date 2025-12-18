@@ -34,7 +34,7 @@ For the document upload feature, a typical phase structure might include:
 
     - Set up the Azure Blob Storage connection configuration in appsettings.json.
     - Create the DocumentMetadata table in SQL database with appropriate schema.
-    - Add the Azure.Storage.Blobs NuGet package to the backend project.
+    - Add the Azure.Storage.Blobs NuGet package to the back-end project.
     - Create the DocumentService class that encapsulates storage operations.
     
 - **Phase 2: Core Upload Functionality**
@@ -45,7 +45,7 @@ For the document upload feature, a typical phase structure might include:
     - Save document metadata to database after successful upload.
     - Return upload result with document ID and URL to client.
     
-- **Phase 3: Frontend Implementation**
+- **Phase 3: Front-end Implementation**
 
     - Create DocumentUpload React component with file input.
     - Add file size and type validation in component.
@@ -69,7 +69,7 @@ For the document upload feature, a typical phase structure might include:
     - Document API endpoint in OpenAPI/Swagger.
     - Update user documentation with upload instructions.
 
-This phased approach creates natural milestones. After Phase 2, you have a working but minimal backend. After Phase 3, users can upload files. After Phase 4, the system is secure and production-ready. After Phase 5, everything is tested and documented.
+This phased approach creates natural milestones. After Phase 2, you have a working but minimal back end. After Phase 3, users can upload files. After Phase 4, the system is secure and production-ready. After Phase 5, everything is tested and documented.
 
 ### Task granularity and scope
 
@@ -94,15 +94,15 @@ Here'e and example of an overly prescriptive task: "On line 47 of DocumentsContr
 
 The task order matters. Some tasks must complete before others can begin.
 
-Database schema changes typically come first because backend code depends on schema existence. Backend API endpoints come before frontend components that call those endpoints. Configuration setup precedes code that uses that configuration. Testing comes after the code being tested exists.
+Database schema changes typically come first because back-end code depends on schema existence. Back-end API endpoints come before front-end components that call those endpoints. Configuration setup precedes code that uses that configuration. Testing comes after the code being tested exists.
 
-The task list should sequence work to minimize blocking. If frontend and backend tasks are independent, they can proceed in parallel. If multiple backend endpoints exist, developers could implement the tasks concurrently.
+The task list should sequence work to minimize blocking. If front end and back end tasks are independent, they can proceed in parallel. If multiple back-end endpoints exist, developers could implement the tasks concurrently.
 
 For the document upload feature, the logical sequence ensures:
 
 1. Configuration and database setup happen first (no dependencies).
-1. Backend API implementation follows database setup (depends on schema).
-1. Frontend components follow API implementation (depend on endpoints existing).
+1. Back-end API implementation follows database setup (depends on schema).
+1. Front-end components follow API implementation (depend on endpoints existing).
 1. Security hardening happens after core functionality (depends on code existing).
 1. Testing happens after all implementation (depends on completed code).
 
@@ -136,15 +136,15 @@ Identify these gaps during review and add appropriate tasks before implementatio
 
 ### Assess task order and dependencies
 
-Verify that tasks are sequenced appropriately. Database schema tasks should precede code that accesses those tables. API endpoint tasks should precede frontend components that call those endpoints.
+Verify that tasks are sequenced appropriately. Database schema tasks should precede code that accesses those tables. API endpoint tasks should precede front-end components that call those endpoints.
 
-If you find tasks out of order, resequence them manually. For example, if a frontend task appears before the corresponding backend task, move it to the appropriate phase.
+If you find tasks out of order, resequence them manually. For example, if a front-end task appears before the corresponding back-end task, move it to the appropriate phase.
 
 Consider dependencies between tasks within the same phase. If one task's output is required for another task, ensure the first task appears earlier in the sequence.
 
 ### Validate task granularity
 
-Ensure each task is appropriately scoped. Tasks that are too large ("implement entire backend") should be broken down into smaller, manageable pieces. Tasks that are too small ("add semicolon to line 42") should be combined into more meaningful units.
+Ensure each task is appropriately scoped. Tasks that are too large ("implement entire back end") should be broken down into smaller, manageable pieces. Tasks that are too small ("add semicolon to line 42") should be combined into more meaningful units.
 
 A well-scoped task typically takes a few hours to a day to complete, can be tested independently, and produces demonstrable progress.
 
@@ -177,7 +177,7 @@ If implementation reveals new requirements or better approaches, update tasks.md
 
 ### Distribute tasks among team members
 
-Clear task definitions allow work distribution across multiple developers. The backend team can work on API tasks while the frontend team builds UI components. Database administrators can set up schemas while developers prepare configuration.
+Clear task definitions allow work distribution across multiple developers. The back-end team can work on API tasks while the front-end team builds UI components. Database administrators can set up schemas while developers prepare configuration.
 
 Explicitly calling out task dependencies helps to prevent blocking. If Task B depends on Task A, ensure Task A is assigned and prioritized appropriately. Document completion criteria in tasks to ensure handoffs are clean.
 

@@ -2,7 +2,7 @@ The specification file (`spec.md`) is the single source of truth for what your f
 
 ## The spec as the single source of truth
 
-In Spec-Driven Development, the specification defines exactly what the software should do, and every implementation decision traces back to it. If functionality doesn't appear in the spec, it doesn't appear in the final product unless someone updates the spec and regenerates artifacts.
+In spec-driven development, the specification defines exactly what the software should do, and every implementation decision traces back to it. If functionality doesn't appear in the spec, it doesn't appear in the final product unless someone updates the spec and regenerates artifacts.
 
 This approach represents a mindset shift: writing the spec is as important as writing code. The spec isn't a formality to satisfy project management—it's the artifact that drives AI code generation. Invest the same care in crafting specs as you would in implementing features manually.
 
@@ -151,7 +151,7 @@ For example:
 ### Duplicate filename
 - System allows duplicate filenames by generating unique file IDs
 - User sees original filename in document list
-- Backend uses unique IDs to prevent overwrites
+- Back end uses unique IDs to prevent overwrites
 
 ### Storage capacity limits
 - If Azure Blob Storage quota exceeded, display error: "Upload failed due to storage limit. Contact support."
@@ -286,7 +286,7 @@ Stop when GitHub Copilot has no more questions or only asks about features you w
 
 ## Best practices for specification writing
 
-Writing clear, unambiguous specifications is key to successful Spec-Driven Development.
+Writing clear, unambiguous specifications is key to successful spec-driven development.
 
 ### Be specific and measurable
 
@@ -347,4 +347,4 @@ The completed specification becomes your contract with GitHub Copilot. When you 
 
 ## Summary
 
-Writing effective specifications is foundational to successful Spec-Driven Development. A well-structured spec serves as the single source of truth, guiding AI code generation and ensuring alignment with project principles. By using GitHub Spec Kit's `/speckit.specify` and `/speckit.clarify` commands, you can rapidly create and refine detailed specifications that cover functional behavior, quality attributes, and edge cases. Following best practices in specification writing enhances clarity, reduces ambiguity, and leads to implementations that meet both user needs and enterprise standards.
+Writing effective specifications is foundational to successful spec-driven development. A well-structured spec serves as the single source of truth, guiding AI code generation and ensuring alignment with project principles. By using GitHub Spec Kit's `/speckit.specify` and `/speckit.clarify` commands, you can rapidly create and refine detailed specifications that cover functional behavior, quality attributes, and edge cases. Following best practices in specification writing enhances clarity, reduces ambiguity, and leads to implementations that meet both user needs and enterprise standards.

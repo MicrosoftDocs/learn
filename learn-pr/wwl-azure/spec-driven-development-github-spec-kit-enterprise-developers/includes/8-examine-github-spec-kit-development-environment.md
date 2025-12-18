@@ -34,7 +34,7 @@ One of GitHub Spec Kit's core principles is technology independence—the spec-d
 
 - **Language agnostic**: Specifications describe what to build, not how to build it. You can implement the same specification in .NET, Node.js, Python, Java, or any other language. The tech stack choice happens during the planning phase, not during specification.
 
-- **Framework flexibility**: GitHub Spec Kit supports any framework or library appropriate for your project. Whether building web applications with React, Angular, or Blazor, backend services with Express or ASP.NET Core, or mobile apps with .NET MAUI or React Native, the spec-driven process remains consistent.
+- **Framework flexibility**: GitHub Spec Kit supports any framework or library appropriate for your project. Whether building web applications with React, Angular, or Blazor, back-end services with Express or ASP.NET Core, or mobile apps with .NET MAUI or React Native, the spec-driven process remains consistent.
 
 - **Cloud platform neutrality**: While specifications can include architectural constraints (such as "use Azure services" or "deploy to AWS"), GitHub Spec Kit doesn't enforce specific cloud providers. Organizational standards defined in the constitution file guide cloud platform choices.
 

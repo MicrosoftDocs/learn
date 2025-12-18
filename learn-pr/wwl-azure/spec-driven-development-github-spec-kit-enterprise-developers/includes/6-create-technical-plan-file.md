@@ -4,7 +4,7 @@ A specification defines what you need to build. A technical plan defines how you
 
 The plan.md file serves as your design document. It bridges the gap between high-level requirements in spec.md and the concrete implementation tasks that follow. While the specification remains stable and focused on "what," the plan can evolve as you experiment with different "how" approaches.
 
-This separation of concerns is fundamental to Spec-Driven Development. If you later switch from one technology to another—say, moving from Azure Blob Storage to Azure Files—you update plan.md while spec.md remains largely unchanged. The feature requirements aren't changed; only the implementation approach is changed.
+This separation of concerns is fundamental to spec-driven development. If you later switch from one technology to another—say, moving from Azure Blob Storage to Azure Files—you update plan.md while spec.md remains largely unchanged. The feature requirements aren't changed; only the implementation approach is changed.
 
 For the document upload feature, the specification defines user requirements: file size limits, supported formats, upload feedback, and access controls. The plan translates these requirements into concrete decisions: which Azure storage service to use, how to structure the API, which authentication mechanism to implement, and how to validate files.
 
@@ -16,7 +16,7 @@ Before invoking the command, consider what other context the AI needs. Your exis
 
 For the document upload feature in an internal employee portal scenario, you might provide context like this:
 
-"The existing portal uses a React front end with a .NET 8 Web API backend. We need to integrate the upload feature into this stack. Use Azure Blob Storage for file persistence. Require Microsoft Entra ID authentication for all upload operations. The portal already has a SQL database available for metadata storage."
+"The existing portal uses a React front end with a .NET 8 Web API back end. We need to integrate the upload feature into this stack. Use Azure Blob Storage for file persistence. Require Microsoft Entra ID authentication for all upload operations. The portal already has a SQL database available for metadata storage."
 
 This context guides the AI to generate a plan that fits seamlessly into your existing architecture rather than proposing a greenfield solution that doesn't align with your current stack.
 
@@ -34,7 +34,7 @@ A comprehensive technical plan contains several key sections that collectively d
 
 The architecture overview provides a high-level view of how components interact. For the document upload feature, the architecture might describe:
 
-"Implement a new backend API endpoint `/api/documents/upload` to handle multipart file uploads. The React frontend includes a new DocumentUpload component with a file picker and progress indicator. When a user selects a file, the frontend validates size and type before uploading. The backend receives the file, validates again, stores it in Azure Blob Storage, and records metadata in the SQL database. After successful upload, the frontend refreshes the document list to show the new file."
+"Implement a new back-end API endpoint `/api/documents/upload` to handle multipart file uploads. The React front end includes a new DocumentUpload component with a file picker and progress indicator. When a user selects a file, the front end validates size and type before uploading. The back end receives the file, validates again, stores it in Azure Blob Storage, and records metadata in the SQL database. After successful upload, the front end refreshes the document list to show the new file."
 
 This summary establishes the overall flow without diving into code-level details. It ensures everyone understands the major components and their interactions.
 
@@ -44,8 +44,8 @@ The plan explicitly documents technology choices and rationales. This section pr
 
 Example technology decisions:
 
-- **Backend**: .NET 8 Web API with Azure.Storage.Blobs SDK v12 for blob operations.
-- **Frontend**: React 18 with Ant Design's Upload component for UI consistency.
+- **Back end**: .NET 8 Web API with Azure.Storage.Blobs SDK v12 for blob operations.
+- **Front end**: React 18 with Ant Design's Upload component for UI consistency.
 - **Authentication**: Use existing Microsoft Entra ID token from portal's authentication context.
 - **Storage**: Azure Blob Storage container named `employee-documents`.
 - **Database**: Extend existing SQL database with a DocumentMetadata table (columns: Id, UserId, FileName, BlobUrl, UploadDate, FileSize).
@@ -59,9 +59,9 @@ The plan outlines the order of implementation steps. While not as granular as th
 A typical implementation sequence for the document upload feature:
 
 1. Database schema update: Create DocumentMetadata table with appropriate indexes and constraints.
-1. Backend API development: Implement POST /api/documents/upload endpoint with file validation, blob storage integration, and metadata persistence.
-1. Frontend component creation: Build DocumentUpload component with file selection, client-side validation, and upload progress display.
-1. Integration: Wire the frontend component to the backend API, handle responses, and update the document list.
+1. Back-end API development: Implement POST /api/documents/upload endpoint with file validation, blob storage integration, and metadata persistence.
+1. Front-end component creation: Build DocumentUpload component with file selection, client-side validation, and upload progress display.
+1. Integration: Wire the front-end component to the back-end API, handle responses, and update the document list.
 1. Security hardening: Implement server-side file type validation, size limits, and authentication checks.
 1. Error handling: Add comprehensive error messages for client and server-side failures.
 1. Testing: Create unit tests for API methods and integration tests for the upload flow.
@@ -169,9 +169,9 @@ When you're choosing between multiple viable approaches, document the alternativ
 
 For file storage, you might consider three approaches:
 
-1. **Azure Blob Storage**: Selected for cost-effectiveness, scalability, and integration with existing Azure environment.
-1. **Azure Files**: Rejected due to higher cost for large file storage and unnecessary Server Message Block (SMB) protocol overhead.
-1. **SQL Database FILESTREAM**: Rejected to avoid increasing database size and complexity.
+- **Azure Blob Storage**: Selected for cost-effectiveness, scalability, and integration with existing Azure environment.
+- **Azure Files**: Rejected due to higher cost for large file storage and unnecessary Server Message Block (SMB) protocol overhead.
+- **SQL Database FILESTREAM**: Rejected to avoid increasing database size and complexity.
 
 This documentation prevents future developers from questioning why simpler approaches weren't used. The decision rationale is preserved rather than lost to time.
 

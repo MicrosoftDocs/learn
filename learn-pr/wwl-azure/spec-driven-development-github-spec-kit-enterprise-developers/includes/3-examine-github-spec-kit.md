@@ -1,4 +1,4 @@
-GitHub Spec Kit is an open-source toolkit that enables Spec-Driven Development by integrating specifications with AI coding assistants. GitHub Spec Kit transforms the way you work with tools like GitHub Copilot by providing structured workflows, templates, and commands that turn specifications into executable development artifacts.
+GitHub Spec Kit is an open-source toolkit that enables spec-driven development by integrating specifications with AI coding assistants. GitHub Spec Kit transforms the way you work with tools like GitHub Copilot by providing structured workflows, templates, and commands that turn specifications into executable development artifacts.
 
 ## What is GitHub Spec Kit?
 
@@ -170,7 +170,7 @@ GitHub Spec Kit provides agent-specific configurations during initialization. Wh
 
 Each agent receives templates formatted for its specific prompt format. The underlying specification artifacts (spec.md, plan.md, tasks.md) remain identical regardless of which AI assistant you use. This agent-agnostic approach prevents vendor lock-in and allows teams to experiment with different AI tools.
 
-For enterprise development teams, this flexibility is valuable. You might use GitHub Copilot for frontend development in Visual Studio Code but use a different AI assistant for backend services. GitHub Spec Kit ensures both assistants work from the same specifications.
+For enterprise development teams, this flexibility is valuable. You might use GitHub Copilot for front-end development in Visual Studio Code but use a different AI assistant for back-end services. GitHub Spec Kit ensures both assistants work from the same specifications.
 
 ### Template customization
 
@@ -255,7 +255,7 @@ This scenario is GitHub Spec Kit's primary use case—the workflow was designed 
 
 For existing applications, you can use GitHub Spec Kit to add new features while maintaining consistency with existing codebase. Your constitution documents existing architectural patterns and constraints. New feature specifications reference these established patterns.
 
-When you're adding the document upload feature to an existing employee portal, your specification acknowledges the existing React frontend, .NET backend, and Azure infrastructure. The plan shows how the new feature integrates with current architecture rather than proposing a separate implementation.
+When you're adding the document upload feature to an existing employee portal, your specification acknowledges the existing React front end, .NET back end, and Azure infrastructure. The plan shows how the new feature integrates with current architecture rather than proposing a separate implementation.
 
 ### Refactoring and modernization
 
@@ -271,4 +271,4 @@ You might generate one plan using Azure Blob Storage and another using Azure Fil
 
 ## Summary
 
-The GitHub Spec Kit is a powerful toolkit that enables Spec-Driven Development by integrating structured workflows, persistent artifacts, and reusable AI command patterns. It transforms how you work with AI coding assistants like GitHub Copilot by providing a systematic approach to turning specifications into working implementations. By using GitHub Spec Kit, you can ensure alignment between requirements and code, maintain traceability of decisions, and enhance collaboration across development teams.
+The GitHub Spec Kit is a powerful toolkit that enables spec-driven development by integrating structured workflows, persistent artifacts, and reusable AI command patterns. It transforms how you work with AI coding assistants like GitHub Copilot by providing a systematic approach to turning specifications into working implementations. By using GitHub Spec Kit, you can ensure alignment between requirements and code, maintain traceability of decisions, and enhance collaboration across development teams.

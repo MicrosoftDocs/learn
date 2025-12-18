@@ -1,7 +1,7 @@
 > [!IMPORTANT]
 > To complete this exercise, you need an active GitHub account and a Visual Studio Code environment. If you don't have a GitHub account, you can [sign up](https://github.com/) for a free individual account and use a GitHub Copilot Free plan to complete the exercise. For help with enabling GitHub Copilot in Visual Studio Code, see [Enable GitHub Copilot in Visual Studio Code](https://go.microsoft.com/fwlink/?linkid=2320158&azure-portal=true).
 
-In this exercise, you use a Spec-Driven Development approach with GitHub Spec Kit to implement a new product feature. Tasks include:
+In this exercise, you use a spec-driven development approach with GitHub Spec Kit to implement a new product feature. Tasks include:
 
 1. Import a code repository and initialize GitHub Spec Kit.
 1. Review the code project and GitHub Spec Kit files.

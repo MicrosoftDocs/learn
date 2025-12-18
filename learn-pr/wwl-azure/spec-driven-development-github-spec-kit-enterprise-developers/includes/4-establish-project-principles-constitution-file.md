@@ -2,7 +2,7 @@ The constitution file is the foundation of spec-driven development with GitHub S
 
 ## Purpose of the constitution
 
-In Spec-Driven Development, the constitution (constitution.md) serves as your project's immutable rule set. It documents what must always be true, regardless of which features you build or how requirements evolve.
+In spec-driven development, the constitution (constitution.md) serves as your project's immutable rule set. It documents what must always be true, regardless of which features you build or how requirements evolve.
 
 Think of the constitution as guardrails for AI-assisted development. When GitHub Copilot generates a technical plan or code, it references the constitution to verify proposals comply with your standards. If the constitution states "All data must be encrypted at rest," GitHub Copilot doesn't suggest storing files in plaintext—it automatically incorporates encryption into designs.
 
@@ -22,7 +22,7 @@ In enterprise development environments, constitutions often encode:
 - Performance and scalability targets for enterprise workloads.
 - Technology choices aligned with Azure services and internal tooling.
 - Coding standards and architectural patterns from engineering best practices.
-- Compliance obligations like General Data Protection Regulation (GDPR), accessibility standards, or audit requirements.
+- Compliance obligations such as accessibility standards, personal data protection, and audit requirements.
 
 ## Structure of an effective constitution
 
@@ -42,14 +42,14 @@ The following sections illustrate how to define each category effectively.
 
 Technology standards are used to specify approved technologies, platforms, and frameworks.
 
-For example, the following section mandates Azure services and .NET for backend development:
+For example, the following section mandates Azure services and .NET for back-end development:
 
 ```markdown
 ## Technology Standards
 
 - All cloud resources must be hosted on Microsoft Azure.
-- Backend services use .NET 8 or later.
-- Frontend applications use React or Blazor.
+- Back-end services use .NET 8 or later.
+- Front-end applications use React or Blazor.
 - Database: Azure SQL Database or Cosmos DB (no on-premises SQL Server).
 - Secret management exclusively via Azure Key Vault.
 ```
@@ -120,7 +120,7 @@ For example, the following section captures compliance principles for data handl
 ```markdown
 ## Compliance and Governance
 
-- Comply with GDPR for all user data processing.
+- Comply with local and international standards that protect personal information for all user data processing.
 - Implement audit logging for all data modifications.
 - Support accessibility standards (WCAG 2.1 Level AA).
 - Enable monitoring and alerting via Azure Application Insights.
@@ -175,7 +175,7 @@ Consider the following steps:
 
 The constitution is a living document, but it changes infrequently. Once established, it provides stable guidance across feature development.
 
-## Constitution in the Spec-Driven Development workflow
+## Constitution in the spec-driven development workflow
 
 After you create the constitution, GitHub Spec Kit automatically references it during subsequent workflow phases:
 
@@ -211,31 +211,31 @@ Example enterprise internal constitution snippet:
 # Employee Portal Constitution
 
 ## Azure Platform Standards
-- Host all services on Azure App Service or Azure Container Apps
-- Use Azure Blob Storage for document storage
-- Database: Azure SQL Database or Cosmos DB
-- Secrets stored exclusively in Azure Key Vault
-- Use Azure Front Door for global distribution
+- Host all services on Azure App Service or Azure Container Apps.
+- Use Azure Blob Storage for document storage.
+- Database: Azure SQL Database or Cosmos DB.
+- Secrets stored exclusively in Azure Key Vault.
+- Use Azure Front Door for global distribution.
 
 ## Identity Integration
-- Authenticate via Microsoft Entra ID using OAuth 2.0 / OpenID Connect
-- Implement role-based access control using Microsoft Entra ID groups
-- Support multi-factor authentication (MFA)
-- No custom authentication or local user databases
+- Authenticate via Microsoft Entra ID using OAuth 2.0 / OpenID Connect.
+- Implement role-based access control using Microsoft Entra ID groups.
+- Support multi-factor authentication (MFA).
+- No custom authentication or local user databases.
 
 ## Corporate Compliance
-- Follow enterprise Security Development Lifecycle (SDL) practices
-- Scan all dependencies for known vulnerabilities
-- Implement audit logging per enterprise retention policies
-- Support data residency requirements for EU users (GDPR)
-- Accessibility: WCAG 2.1 Level AA minimum
+- Follow enterprise Security Development Lifecycle (SDL) practices.
+- Scan all dependencies for known vulnerabilities.
+- Implement audit logging per enterprise retention policies.
+- Support data residency requirements for EU users.
+- Accessibility: WCAG 2.1 Level AA minimum.
 
 ## Development Standards
-- Backend: .NET 10 following coding conventions adopted by the organization
-- Use approved packages from internal NuGet feed
-- Minimum 80% code coverage with unit tests
-- All APIs documented with OpenAPI/Swagger
-- Structured logging using ILogger interface
+- Back end: .NET 10 following coding conventions adopted by the organization.
+- Use approved packages from internal NuGet feed.
+- Minimum 80% code coverage with unit tests.
+- All APIs documented with OpenAPI/Swagger.
+- Structured logging using ILogger interface.
 ```
 
 By establishing these principles upfront in the constitution, you ensure every feature built for the employee portal automatically aligns with enterprise engineering standards, security requirements, and architectural patterns. The constitution transforms organizational knowledge into executable constraints that guide AI-assisted development.
