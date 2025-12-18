@@ -1,0 +1,73 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-and-organize-objects-in-unity-catalog.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 12/07/2025
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+  module_assessment: true
+  ai-usage: ai-generated
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is the primary purpose of catalogs in Unity Catalog's three-layer namespace?"
+    choices:
+    - content: "To store actual data files in cloud storage"
+      isCorrect: false
+      explanation: "Incorrect. Catalogs provide the highest level of data isolation and organization but don't directly store data files. Managed storage locations specified for catalogs determine where data files are stored."
+    - content: "To provide the highest level of data isolation and access control"
+      isCorrect: true
+      explanation: "Correct. Catalogs serve as the top-level container in Unity Catalog's hierarchy and provide the primary unit of data isolation, typically mapping to environments or security boundaries."
+    - content: "To group related tables and views within a business domain"
+      isCorrect: false
+      explanation: "Incorrect. While catalogs can be organized by business domain, grouping related tables and views is the primary function of schemas, which exist within catalogs."
+  - content: "What is the key difference between managed and external tables in Unity Catalog?"
+    choices:
+    - content: "External tables can be queried faster than managed tables"
+      isCorrect: false
+      explanation: "Incorrect. Performance isn't the key difference between managed and external tables. The difference lies in data lifecycle management and storage location control."
+    - content: "Managed tables store data in Unity Catalog-controlled locations, while external tables reference data in external storage locations"
+      isCorrect: true
+      explanation: "Correct. When you drop a managed table, Unity Catalog manages the lifecycle of the underlying data files, while dropping an external table only removes metadata and leaves the data files intact."
+    - content: "Managed tables support Delta format only, while external tables support multiple formats"
+      isCorrect: false
+      explanation: "Incorrect. Both managed and external tables can use various data formats including Delta, CSV, and Parquet. The difference is in storage location and lifecycle management."
+  - content: "Which statement best describes materialized views in Unity Catalog?"
+    choices:
+    - content: "Materialized views always provide real-time data because they refresh automatically on every query"
+      isCorrect: false
+      explanation: "Incorrect. Materialized views cache query results and require manual or scheduled refreshes. They provide faster query performance at the cost of potential data staleness."
+    - content: "Materialized views can only be created on external tables stored in Azure Data Lake Storage"
+      isCorrect: false
+      explanation: "Incorrect. Materialized views can be created on various source tables in Unity Catalog. For incremental refresh support, source tables must be Delta tables with row tracking enabled."
+    - content: "Materialized views precompute and cache results to improve query performance for complex aggregations"
+      isCorrect: true
+      explanation: "Correct. Materialized views store precomputed query results as Delta tables, making them faster for frequently accessed complex queries compared to standard views that recalculate on every query."
+  - content: "What is the purpose of foreign catalogs in Unity Catalog?"
+    choices:
+    - content: "To automatically migrate data from external databases into Unity Catalog managed storage"
+      isCorrect: false
+      explanation: "Incorrect. Foreign catalogs provide access to external data in place without moving it. They don't migrate or copy data into Unity Catalog storage."
+    - content: "To enable read-only access to external database systems while maintaining Unity Catalog governance"
+      isCorrect: true
+      explanation: "Correct. Foreign catalogs mirror external databases within Unity Catalog's namespace, allowing you to query data in systems like PostgreSQL or MySQL using standard SQL while applying Unity Catalog's security model."
+    - content: "To create backup copies of Unity Catalog catalogs in external storage for disaster recovery"
+      isCorrect: false
+      explanation: "Incorrect. Foreign catalogs are for accessing external databases, not for backup or disaster recovery of Unity Catalog data."
+  - content: "When configuring AI/BI Genie instructions for a Genie space, what is the recommended approach?"
+    choices:
+    - content: "Add all available tables from Unity Catalog to ensure complete data coverage"
+      isCorrect: false
+      explanation: "Incorrect. The recommended approach is to start with a focused set of tables (five or fewer) that answer specific business questions, then expand based on user needs."
+    - content: "Immediately create 100 SQL example queries to cover all possible user questions"
+      isCorrect: false
+      explanation: "Incorrect. Quality is more important than quantity. Start with essential instructions and add more based on actual user questions and feedback rather than trying to anticipate every possible query upfront."
+    - content: "Start with a small, focused set of tables and expand based on user feedback and actual question patterns"
+      isCorrect: true
+      explanation: "Correct. Best practice is to start with five or fewer tables that serve a specific business purpose, configure metadata and instructions iteratively, and add more tables only as users request additional data."

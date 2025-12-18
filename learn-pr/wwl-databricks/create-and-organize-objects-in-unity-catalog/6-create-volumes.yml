@@ -1,0 +1,14 @@
+### YamlMime: ModuleUnit
+uid: learn.wwl.create-and-organize-objects-in-unity-catalog.create-volumes
+title: Create volumes
+metadata:
+  title: Create Volumes
+  description: Learn how to create and manage volumes in Unity Catalog to store and govern non-tabular files in cloud object storage.
+  ms.date: 12/07/2025
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+  ai-usage: ai-generated
+durationInMinutes: 8
+content: |
+  [!include[](includes/6-create-volumes.md)]

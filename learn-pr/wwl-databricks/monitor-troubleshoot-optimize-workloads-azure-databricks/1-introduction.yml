@@ -1,0 +1,14 @@
+### YamlMime: ModuleUnit
+uid: learn.wwl.monitor-troubleshoot-optimize-workloads-azure-databricks.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: "Introduction to monitoring, troubleshooting, and optimizing workloads in Azure Databricks"
+  ms.date: 12/07/2025
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+  ai-usage: ai-generated
+durationInMinutes: 3
+content: |
+  [!include[](includes/1-introduction.md)]
