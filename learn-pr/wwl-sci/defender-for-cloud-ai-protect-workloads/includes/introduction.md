@@ -19,5 +19,5 @@ In this module, you learn how to:
 Before you begin, you should have:
 
 - Experience managing Microsoft Defender for Cloud plans and Azure configurations
-- Familiarity with Azure AI services such as Azure AI Foundry or Azure Machine Learning
+- Familiarity with Azure AI services such as Microsoft Foundry or Azure Machine Learning
 - A basic understanding of threat detection and incident response in cloud environments
