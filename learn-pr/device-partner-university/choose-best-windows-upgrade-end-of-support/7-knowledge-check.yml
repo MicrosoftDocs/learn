@@ -22,7 +22,7 @@ quiz:
           explanation: "Incorrect. End of support occurred later."
         - content: "November 1, 2025"
           isCorrect: false
-          explanation: "Incorrect. This date is not mentioned in the module."
+          explanation: "Incorrect. This date isn't mentioned in the module."
         - content: "December 31, 2025"
           isCorrect: false
           explanation: "Incorrect. End of support was earlier in October."
@@ -30,7 +30,7 @@ quiz:
     choices:
         - content: "Windows 365 Cloud PC"
           isCorrect: false
-          explanation: "Incorrect. Useful for remote work but may require additional compliance validation."
+          explanation: "Incorrect. Useful for remote work but may require another compliance validation."
         - content: "Windows 10 ESU"
           isCorrect: false
           explanation: "Incorrect. Offers temporary security updates only, not a long-term solution."
@@ -58,13 +58,13 @@ quiz:
     choices:
         - content: "New features and updates"
           isCorrect: false
-          explanation: "Incorrect. ESU does not include new features."
+          explanation: "Incorrect. ESU doesn't include new features."
         - content: "Full technical support"
           isCorrect: false
           explanation: "Incorrect. Support is limited to ESU-related issues."
         - content: "Free compliance audits"
           isCorrect: false
-          explanation: "Incorrect. Compliance audits are not part of ESU."
+          explanation: "Incorrect. Compliance audits aren't part of ESU."
         - content: "Critical security updates only"
           isCorrect: true
           explanation: "Correct. ESU delivers security updates without feature enhancements."
