@@ -129,7 +129,7 @@ For example:
 ### Compliance
 - Audit log records: user ID, filename, timestamp, file size, IP address
 - Audit logs retained for 90 days minimum
-- Support data deletion requests per General Data Protection Regulation (future requirement)
+- Support data deletion requests within the specified timeline
 ```
 
 Nonfunctional requirements ensure AI-generated code meets enterprise quality standards, not just functional correctness.
