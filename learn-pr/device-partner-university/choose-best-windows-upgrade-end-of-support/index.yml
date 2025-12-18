@@ -1,0 +1,48 @@
+### YamlMime:Module
+uid: learn.dpu.choose-best-windows-upgrade-end-of-support
+title: Choose the best Windows upgrade path after Windows 10 end of support
+metadata:
+  title: Choose The Best Windows Upgrade Path After Windows 10 End Of Support
+  description: Learn how to assess and recommend the best Windows upgrade path after Windows 10 end of support using structured decision criteria and real-world scenarios.
+  ms.date: 12/18/2025
+  author: hhreyes21
+  ms.author: v-homerreyes
+  ms.topic: module-choose-best-product
+  ms.service: windows
+summary: >
+  Learn how to assess and recommend the best Windows upgrade path after Windows 10 end of support using structured decision criteria and real-world scenarios.
+abstract: |2+
+
+prerequisites: |
+  By the end of this module, you are able to:
+
+  - Identify the core capabilities and use cases for Windows 11 on new devices, Windows 10 Extended Security Updates (ESU), and Windows 365 Cloud PC.
+  - Analyze organizational scenarios to determine the most appropriate upgrade or mitigation path.
+  - Apply decision criteria such as security, cost, hardware readiness, and cloud adoption.
+  - Recommend the best path forward based on each organization’s technical and business requirements.
+
+
+iconUrl: /training/achievements/generic-badge.svg
+ratingEnabled: false
+levels:
+  - beginner
+roles:
+  - administrator
+  - business-leader
+  - business-owner
+  - business-user
+  - technology-manager
+products:
+  - windows-10
+  - windows-11
+units:
+  - learn.dpu.choose-best-windows-upgrade-end-of-support.introduction
+  - learn.dpu.choose-best-windows-upgrade-end-of-support.identify-upgrade-options
+  - learn.dpu.choose-best-windows-upgrade-end-of-support.analyze-decision-criteria
+  - learn.dpu.choose-best-windows-upgrade-end-of-support.use-windows-11-advanced-security-compliance
+  - learn.dpu.choose-best-windows-upgrade-end-of-support.use-windows-10-extend-security-updates
+  - learn.dpu.choose-best-windows-upgrade-end-of-support.use-windows-365-cloud-pc-secure-remote-access
+  - learn.dpu.choose-best-windows-upgrade-end-of-support.knowledge-check
+  - learn.dpu.choose-best-windows-upgrade-end-of-support.summary
+badge:
+  uid: learn.dpu.choose-best-windows-upgrade-end-of-support.badge

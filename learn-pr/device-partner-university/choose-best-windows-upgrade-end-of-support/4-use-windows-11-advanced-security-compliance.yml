@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.choose-best-windows-upgrade-end-of-support.use-windows-11-advanced-security-compliance
+title: Use Windows 11 advanced security compliance
+metadata:
+  title: Use Windows 11 Advanced Security Compliance
+  description: This content is part of the "Choose the best Windows upgrade path after Windows 10 end of support" module.
+  ms.date: 12/18/2025
+  author: hhreyes21
+  ms.author: v-homerreyes
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/4-use-windows-11-advanced-security-compliance.md)]
