@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.spec-driven-development-github-spec-kit-microsoft-internal.summary
+title: Summary
+metadata:
+  title: Summary
+  description: "Summary."
+  ms.date: 12/12/2025
+  author: chrishowd
+  ms.author: cahowd
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/13-summary.md)]
