@@ -1,0 +1,14 @@
+### YamlMime: ModuleUnit
+uid: learn.wwl.design-implement-data-modeling-unity-catalog.choose-managed-vs-unmanaged-tables
+title: Choose managed vs unmanaged tables
+metadata:
+  title: Choose Managed vs Unmanaged Tables
+  description: Learn how to choose between managed and external (unmanaged) tables in Azure Databricks Unity Catalog based on data ownership, lifecycle, governance, and integration requirements.
+  ms.date: 12/07/2025
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+  ai-usage: ai-generated
+durationInMinutes: 7
+content: |
+  [!include[](includes/10-choose-managed-vs-unmanaged-tables.md)]

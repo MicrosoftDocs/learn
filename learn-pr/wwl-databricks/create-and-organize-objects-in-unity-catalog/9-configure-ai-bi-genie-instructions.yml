@@ -1,0 +1,14 @@
+### YamlMime: ModuleUnit
+uid: learn.wwl.create-and-organize-objects-in-unity-catalog.configure-ai-bi-genie-instructions
+title: Configure AI/BI Genie instructions
+metadata:
+  title: Configure AI/BI Genie Instructions for Data Discovery
+  description: Learn how to configure AI/BI Genie instructions in Azure Databricks to enhance data discoverability through metadata, value sampling, joins, and SQL examples.
+  ms.date: 12/07/2025
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+  ai-usage: ai-generated
+durationInMinutes: 10
+content: |
+  [!include[](includes/9-configure-ai-bi-genie-instructions.md)]

@@ -1,0 +1,49 @@
+### YamlMime:Module
+uid: learn.wwl.create-and-organize-objects-in-unity-catalog
+metadata:
+  title: Create and Organize Objects in Unity Catalog
+  description: Learn how to create and organize catalogs, schemas, tables, views, and volumes in Unity Catalog to build a comprehensive data governance framework with proper naming conventions and AI/BI integration.
+  ms.date: 12/07/2025
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: module
+  ms.service: azure-databricks
+  ai-usage: ai-generated
+title: Create and organize objects in Unity Catalog
+summary: Unity Catalog's three-layer namespace—catalogs, schemas, and objects—provides a flexible foundation for organizing data assets while maintaining centralized governance. This module explores how to create catalogs for environment isolation, organize schemas within those catalogs, and create tables, views, and volumes for structured and unstructured data. You'll learn to implement foreign catalogs for external database access, apply effective naming conventions, and configure AI/BI Genie instructions to enhance data discoverability.
+abstract: |
+  By the end of this module, you'll be able to:
+  - Apply effective naming conventions for Unity Catalog objects
+  - Create catalogs and schemas to organize data assets across environments
+  - Create managed and external tables, views, and volumes in Unity Catalog
+  - Implement DDL operations including functions and stored procedures
+  - Implement foreign catalogs to access external database systems
+  - Configure AI/BI Genie instructions for natural language data discovery
+prerequisites: |
+  The following prerequisites should be completed:
+  * Basic understanding of Azure Databricks workspaces
+  * Familiarity with Unity Catalog fundamentals and governance concepts
+  * Knowledge of SQL and data organization principles
+iconUrl: /learn/achievements/azure-databricks.svg
+levels:
+  - intermediate
+roles:
+  - data-engineer
+products:
+  - azure-databricks
+subjects:
+  - data-engineering
+units:
+  - learn.wwl.create-and-organize-objects-in-unity-catalog.introduction
+  - learn.wwl.create-and-organize-objects-in-unity-catalog.apply-naming-conventions
+  - learn.wwl.create-and-organize-objects-in-unity-catalog.create-catalog
+  - learn.wwl.create-and-organize-objects-in-unity-catalog.create-schema
+  - learn.wwl.create-and-organize-objects-in-unity-catalog.create-tables-views-materialized
+  - learn.wwl.create-and-organize-objects-in-unity-catalog.create-volumes
+  - learn.wwl.create-and-organize-objects-in-unity-catalog.implement-ddl-operations
+  - learn.wwl.create-and-organize-objects-in-unity-catalog.implement-foreign-catalog
+  - learn.wwl.create-and-organize-objects-in-unity-catalog.configure-ai-bi-genie-instructions
+  - learn.wwl.create-and-organize-objects-in-unity-catalog.knowledge-check
+  - learn.wwl.create-and-organize-objects-in-unity-catalog.summary
+badge:
+  uid: learn.wwl.create-and-organize-objects-in-unity-catalog.badge

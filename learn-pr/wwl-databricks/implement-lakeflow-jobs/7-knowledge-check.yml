@@ -1,0 +1,84 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-lakeflow-jobs.knowledge-check
+title: Module assessment
+metadata:
+  title: Module assessment
+  description: "Knowledge check"
+  ms.date: 12/07/2025
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+  module_assessment: true
+  ai-usage: ai-generated
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is the minimum requirement to create a Lakeflow Job in Azure Databricks?"
+    choices:
+    - content: "A task, compute resource, and unique name"
+      isCorrect: true
+      explanation: "Correct. Every job requires at minimum a task containing the logic to run, a compute resource to execute the task, and a unique name to identify the job."
+    - content: "A notebook, schedule, and email notification"
+      isCorrect: false
+      explanation: "Incorrect. While notebooks are a common task type, schedules and notifications are optional configurations, not requirements."
+    - content: "A Git repository, SQL warehouse, and pipeline"
+      isCorrect: false
+      explanation: "Incorrect. Git integration, SQL warehouses, and pipelines are optional features for specific task types, not minimum requirements."
+  - content: "Which trigger type runs a job when monitored Unity Catalog tables receive new data or modifications?"
+    choices:
+    - content: "File arrival trigger"
+      isCorrect: false
+      explanation: "Incorrect. File arrival triggers respond to new files appearing in storage locations, not table updates."
+    - content: "Table update trigger"
+      isCorrect: true
+      explanation: "Correct. Table update triggers monitor Unity Catalog tables and run the job when those tables receive data changes such as inserts, updates, merges, or deletes."
+    - content: "Continuous trigger"
+      isCorrect: false
+      explanation: "Incorrect. Continuous triggers run immediately after the previous run completes, regardless of data changes."
+  - content: "What is the minimum interval between job runs that Azure Databricks enforces for scheduled jobs?"
+    choices:
+    - content: "1 second"
+      isCorrect: false
+      explanation: "Incorrect. Azure Databricks enforces a longer minimum interval to prevent excessive resource consumption."
+    - content: "10 seconds"
+      isCorrect: true
+      explanation: "Correct. Azure Databricks enforces a minimum interval of 10 seconds between job runs, regardless of the configured schedule."
+    - content: "60 seconds"
+      isCorrect: false
+      explanation: "Incorrect. While 60 seconds may be appropriate for many workloads, the platform minimum is lower."
+  - content: "Which cron expression schedules a job to run at 10:15 AM on weekdays only?"
+    choices:
+    - content: "0 15 10 * * ?"
+      isCorrect: false
+      explanation: "Incorrect. This expression runs at 10:15 AM every day, not just weekdays."
+    - content: "0 15 10 ? * MON-FRI"
+      isCorrect: true
+      explanation: "Correct. This cron expression specifies 10:15 AM (0 seconds, 15 minutes, 10 hours) on Monday through Friday."
+    - content: "0 10 15 ? * 1-5"
+      isCorrect: false
+      explanation: "Incorrect. This expression has the hours and minutes reversed and uses numeric day values."
+  - content: "How many system destinations can be configured per event type for job notifications?"
+    choices:
+    - content: "1"
+      isCorrect: false
+      explanation: "Incorrect. Azure Databricks allows multiple system destinations per event type."
+    - content: "3"
+      isCorrect: true
+      explanation: "Correct. For each job or task, up to three system destinations can be configured per event type."
+    - content: "Unlimited"
+      isCorrect: false
+      explanation: "Incorrect. Azure Databricks limits the number to encourage thoughtful notification design."
+  - content: "What retry behavior do continuous jobs use when they encounter failures?"
+    choices:
+    - content: "Immediate retry without delay"
+      isCorrect: false
+      explanation: "Incorrect. Continuous jobs use a backoff strategy to prevent rapid consecutive failures from consuming resources."
+    - content: "Exponential backoff with increasing wait periods"
+      isCorrect: true
+      explanation: "Correct. Continuous jobs use an exponential backoff algorithm that increases wait periods between retry attempts after consecutive failures."
+    - content: "Fixed 5-minute delay between retries"
+      isCorrect: false
+      explanation: "Incorrect. Continuous jobs use exponential backoff, not a fixed delay, to adapt to failure patterns."

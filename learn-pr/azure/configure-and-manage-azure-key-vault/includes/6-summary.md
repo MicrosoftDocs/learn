@@ -7,6 +7,8 @@ In this module, you've learned about several security benefits of AKV:
 - You can avoid mistakes – other than the creation of the vault, the services can be automated.
 - AKV cloud services are available, accessible, and distributed to ensure high reliability for your services.
 
+[!INCLUDE[](../../../includes/azure-optional-exercise-subscription-cleanup.md)]
+
 ## Further reading
 
 Continue learning about Azure Key Vault in the Microsoft Learn module [Manage secrets in your server apps with Azure Key Vault](/training/modules/manage-secrets-with-azure-key-vault/).

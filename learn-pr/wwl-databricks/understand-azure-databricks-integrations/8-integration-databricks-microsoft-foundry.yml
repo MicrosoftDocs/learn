@@ -1,0 +1,14 @@
+### YamlMime: ModuleUnit
+uid: learn.wwl.understand-azure-databricks-integrations.integration-databricks-microsoft-foundry
+title: Understand integration with Microsoft Foundry
+metadata:
+  title: Understand Integration with Microsoft Foundry
+  description: Learn how Azure Databricks integrates with Microsoft Foundry through the Genie MCP connector, enabling AI agents to query enterprise data using natural language.
+  ms.date: 12/07/2025
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+  ai-usage: ai-generated
+durationInMinutes: 9
+content: |
+  [!include[](includes/8-integration-databricks-microsoft-foundry.md)]

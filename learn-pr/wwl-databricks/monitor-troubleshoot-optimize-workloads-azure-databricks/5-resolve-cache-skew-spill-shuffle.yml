@@ -1,0 +1,14 @@
+### YamlMime: ModuleUnit
+uid: learn.wwl.monitor-troubleshoot-optimize-workloads-azure-databricks.resolve-caching-skewing-spilling-shuffle
+title: Investigate caching, skewing, spilling, shuffle
+metadata:
+  title: Investigate Caching, Skewing, Spilling, Shuffle
+  description: Learn how to investigate and resolve caching, skewing, spilling, and shuffle issues in Azure Databricks using the DAG, Spark UI, and query profile.
+  ms.date: 12/07/2025
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+  ai-usage: ai-generated
+durationInMinutes: 7
+content: |
+  [!include[](includes/5-resolve-cache-skew-spill-shuffle.md)]

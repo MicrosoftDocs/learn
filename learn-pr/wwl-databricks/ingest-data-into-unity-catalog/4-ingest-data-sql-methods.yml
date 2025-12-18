@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.ingest-data-into-unity-catalog.ingest-data-sql-methods
+title: Ingest data with SQL methods
+metadata:
+  title: Ingest Data with SQL Methods
+  description: Learn how to ingest data using SQL methods including CREATE TABLE AS SELECT (CTAS), CREATE OR REPLACE TABLE, and COPY INTO in Azure Databricks.
+  ms.date: 12/07/2025
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+  ai-usage: ai-generated
+durationInMinutes: 7
+content: |
+  [!include[](includes/4-ingest-data-sql-methods.md)]

@@ -1,0 +1,14 @@
+### YamlMime: ModuleUnit
+uid: learn.wwl.design-implement-data-modeling-unity-catalog.design-temporal-history-table
+title: Design and implement a temporal (history) table to record changes over time
+metadata:
+  title: Design and Implement a Temporal (History) Table to Record Changes Over Time
+  description: Learn how to design and implement temporal tables in Azure Databricks to track row-level changes for auditing, debugging, and point-in-time queries.
+  ms.date: 12/03/2025
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+  ai-usage: ai-generated
+durationInMinutes: 6
+content: |
+  [!include[](includes/8-design-temporal-history-table.md)]

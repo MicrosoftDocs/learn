@@ -3,7 +3,7 @@ uid: learn.wwl.explore-azure-databricks
 metadata:
   title: Explore Azure Databricks
   description: Explore Azure Databricks
-  ms.date: 09/12/2025
+  ms.date: 12/09/2025
   author: weslbo
   ms.author: wedebols
   ms.topic: module
@@ -18,7 +18,7 @@ abstract: |
   - Describe key concepts of an Azure Databricks solution
 prerequisites: |
   Before starting this module, you should have a fundamental knowledge of data analytics concepts. Consider completing [Azure Data Fundamentals certification](/credentials/certifications/azure-data-fundamentals?azure-portal=true) before starting this module.
-iconUrl: /learn/achievements/describe-azure-databricks.svg
+iconUrl: /learn/achievements/azure-databricks.svg
 levels:
 - intermediate
 roles:
