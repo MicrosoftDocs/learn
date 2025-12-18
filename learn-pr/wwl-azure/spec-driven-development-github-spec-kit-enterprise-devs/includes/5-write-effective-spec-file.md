@@ -18,7 +18,7 @@ GitHub Spec Kit organizes specifications into standardized sections that cover f
 
 A concise description of the feature from an end-user perspective. This section should answer "What does this feature do?" in one or two sentences.
 
-Example for the document upload feature:
+For example:
 
 ```markdown
 ## Summary
@@ -32,7 +32,7 @@ The summary provides high-level context. Someone unfamiliar with the project sho
 
 Brief narrative descriptions of how users interact with the feature. User stories capture intent and value rather than technical implementation.
 
-Example:
+For example:
 
 ```markdown
 ## User Stories
@@ -50,7 +50,7 @@ User stories help AI assistants understand the human motivations behind features
 
 Specific, testable conditions that must be true for the feature to be considered complete. The acceptance criteria form a checklist for verifying implementation.
 
-Example:
+For example:
 
 ```markdown
 ## Acceptance Criteria
@@ -71,7 +71,7 @@ Write acceptance criteria as observable facts. Avoid vague statements like "syst
 
 Detailed descriptions of system behavior. Functional requirements elaborate on how the feature works.
 
-Example:
+For example:
 
 ```markdown
 ## Functional Requirements
@@ -104,9 +104,9 @@ Functional requirements provide enough detail for AI to generate appropriate imp
 
 ### Nonfunctional requirements section
 
-Quality attributes like performance, security, scalability, and compliance. These requirements often reference the Constitution.
+Quality attributes like performance, security, scalability, and compliance. These requirements often reference the constitution.
 
-Example:
+For example:
 
 ```markdown
 ## Non-Functional Requirements
@@ -138,7 +138,7 @@ Nonfunctional requirements ensure AI-generated code meets enterprise quality sta
 
 Unusual scenarios, error conditions, and boundary behaviors. Explicitly documenting edge cases prevents AI from making assumptions.
 
-Example:
+For example:
 
 ```markdown
 ## Edge Cases
@@ -170,7 +170,9 @@ Example:
 
 Thinking through edge cases during specification prevents bugs that would otherwise emerge during implementation or testing.
 
-## Creating specifications with /speckit.specify
+## Create a specification with GitHub Spec Kit
+
+ Writing effective specifications is easier with GitHub Spec Kit's `/speckit.specify` command.
 
 GitHub Spec Kit generates specification drafts based on natural language descriptions, accelerating spec creation while maintaining consistent structure.
 
@@ -178,22 +180,13 @@ GitHub Spec Kit generates specification drafts based on natural language descrip
 
 To create a specification:
 
-1. Open Visual Studio Code with your GitHub Spec Kit project
-1. Open GitHub Copilot Chat (Ctrl+Alt+I)
-1. Run the command:
+1. Open your project in Visual Studio Code.
+1. Open GitHub Copilot Chat, and then run the `/speckit.specify` command with a prompt describing the feature you want to create.
+
+    For example:
 
     ```plaintext
-    /speckit.specify
-    ```
-
-1. GitHub Copilot prompts: "What feature would you like to specify?"
-
-    Provide a clear description including key requirements and constraints:
-
-    ```plaintext
-    Feature: Document Upload
-    
-    Allow employees to upload PDF or DOCX documents through the web dashboard. Files are stored in Azure Blob Storage under the user's account folder. After upload, the file appears in the user's document list. Only users with 'Contributor' role can upload. Maximum file size is 50MB. Show error messages for oversized files or unsupported types. Display upload progress for files larger than 1MB.
+    /speckit.specify Create a new document upload feature. The feature should allow employees to upload PDF or DOCX documents through the web dashboard. Files are stored in Azure Blob Storage under the user's account folder. After upload, the file appears in the user's document list. Only users with 'Contributor' role can upload. Maximum file size is 50MB. Show error messages for oversized files or unsupported types. Display upload progress for files larger than 1MB.
     ```
 
     This description covers:
@@ -210,13 +203,13 @@ GitHub Copilot generates a structured `spec.md` file based on this input, creati
 
 After GitHub Copilot generates the spec, open `spec.md` and verify:
 
-**Completeness**: Does the spec cover all requirements you mentioned? If you specified "only PDF and DOCX," confirm acceptance criteria list those file types.
+- **Completeness**: Does the spec cover all requirements you mentioned? If you specified "only PDF and DOCX," confirm acceptance criteria list those file types.
 
-**Accuracy**: Are details correct? If you said 50-MB limit, verify the spec states 50 MB, not a different value.
+- **Accuracy**: Are details correct? If you said 50-MB limit, verify the spec states 50 MB, not a different value.
 
-**Consistency**: Do different sections align? If summary mentions progress display, acceptance criteria should include it.
+- **Consistency**: Do different sections align? If summary mentions progress display, acceptance criteria should include it.
 
-**Missing elements**: What did GitHub Copilot infer or omit? Review generated requirements to see if the AI made assumptions you disagree with.
+- **Missing elements**: What did GitHub Copilot infer or omit? Review generated requirements to see if the AI made assumptions you disagree with.
 
 The initial spec is a strong starting point but rarely perfect. Expect to refine it through clarification.
 
@@ -276,32 +269,34 @@ Respond to each question with specific decisions:
 
 After you answer, GitHub Copilot updates `spec.md` to incorporate your decisions:
 
-- Acceptance criteria gains: "Users can download previously uploaded documents"
-- Functional requirements add download endpoint specification
-- Edge cases include: "Multiple files with identical names distinguished by upload timestamp"
-- Nonfunctional requirements note: "Virus scanning deferred to future release"
+- Acceptance criteria gains: "Users can download previously uploaded documents."
+- Functional requirements add download endpoint specification.
+- Edge cases include: "Multiple files with identical names distinguished by upload timestamp."
+- Nonfunctional requirements note: "Virus scanning deferred to future release."
 
-### Iterating until complete
+### Iterate until complete
 
 Run `/speckit.clarify` multiple times if needed. Each iteration refines the spec further:
 
-- First pass: Major functionality gaps
-- Second pass: Edge case details
-- Third pass: Fine-tuning nonfunctional requirements
+- First pass: Major functionality gaps.
+- Second pass: Edge case details.
+- Third pass: Fine-tuning nonfunctional requirements.
 
 Stop when GitHub Copilot has no more questions or only asks about features you want to defer.
 
 ## Best practices for specification writing
 
+Writing clear, unambiguous specifications is key to successful Spec-Driven Development.
+
 ### Be specific and measurable
 
 Replace vague terms with precise values:
 
-- Not: "Support large files"
-- Instead: "Support files up to 100 MB"
+- Not: "Support large files."
+- Instead: "Support files up to 50 MB."
 
-- Not: "Fast upload performance"
-- Instead: "Uploads under 5 MB complete within 5 seconds on 10-Mbps connection"
+- Not: "Fast upload performance."
+- Instead: "Uploads under 5 MB complete within 5 seconds on 10-Mbps connection."
 
 Specific requirements enable AI to generate implementations that meet your actual needs.
 
@@ -324,8 +319,8 @@ Explicit error handling prevents AI from implementing generic error messages tha
 
 If a feature requires more than 300 lines to specify, consider splitting it into multiple specs:
 
-- Instead of one "Document Management System" spec
-- Create separate specs: "Document Upload," "Document Download," "Document Sharing," "Document Search"
+- Instead of one "Document Management System" spec.
+- Create separate specs: "Document Upload," "Document Download," "Document Sharing," and "Document Search."
 
 Smaller specs are easier to review, clarify, and implement. They also align with incremental delivery practices.
 
@@ -333,18 +328,18 @@ Smaller specs are easier to review, clarify, and implement. They also align with
 
 Specifications define requirements, not implementations. State what the system should do, not how to code it:
 
-- Spec: "Store uploaded files in Azure Blob Storage"
-- Not in spec: "Use the Azure.Storage.Blobs NuGet package with BlobContainerClient class"
+- Spec: "Store uploaded files in Azure Blob Storage."
+- Not in spec: "Use the Azure.Storage.Blobs NuGet package with BlobContainerClient class."
 
-Implementation decisions belong in the plan phase. However, if the Constitution mandates specific technologies, referencing them in the spec is appropriate.
+Implementation decisions belong in the plan phase. However, if the constitution mandates specific technologies, referencing them in the spec is appropriate.
 
-### Validate against the Constitution
+### Validate against the constitution
 
 Before finalizing a spec, verify it doesn't conflict with project principles:
 
-- Constitution requires Microsoft Entra ID authentication → Spec must specify Microsoft Entra ID, not custom auth
-- Constitution mandates 90-day audit retention → Spec must include audit logging requirements
-- Constitution limits max file size to 500 MB → Spec can't require 1-GB file support
+- Constitution requires Microsoft Entra ID authentication → Spec must specify Microsoft Entra ID, not custom auth.
+- Constitution mandates 90-day audit retention → Spec must include audit logging requirements.
+- Constitution limits max file size to 50 MB → Spec can't require 1-GB file support.
 
 Inconsistencies caught during specification are far cheaper to fix than after implementation.
 

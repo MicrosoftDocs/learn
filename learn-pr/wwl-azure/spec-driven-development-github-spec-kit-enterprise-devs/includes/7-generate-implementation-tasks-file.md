@@ -1,8 +1,8 @@
 Technical plans provide architectural direction, but implementation requires concrete, actionable steps. GitHub Spec Kit's task generation transforms your plan into a structured checklist that guides systematic development and enables progress tracking.
 
-## Understand the purpose of task breakdown
+## Benefits of task breakdown
 
-The tasks.md file converts high-level architectural decisions into specific work items. Each task represents a discrete unit of work that can be implemented, tested, and verified independently. This granular approach prevents overwhelming complexity and provides clear checkpoints throughout the implementation process.
+The `/speckit.tasks` command converts high-level architectural decisions into specific work items in the tasks.md file. Each task represents a discrete unit of work that can be implemented, tested, and verified independently. This granular approach prevents overwhelming complexity and provides clear checkpoints throughout the implementation process.
 
 Task breakdowns serve multiple purposes beyond just organizing work. They help the AI generate focused code for specific objectives rather than attempting to implement entire features in single operations. They create natural verification points where you can test partial implementations before proceeding. They enable accurate progress tracking by showing exactly what's complete and what remains. They facilitate team coordination by making dependencies explicit.
 
@@ -30,44 +30,44 @@ Complex features benefit from phase-based organization. Each phase represents a 
 
 For the document upload feature, a typical phase structure might include:
 
-**Phase 1: Foundation and Configuration**
+- **Phase 1: Foundation and Configuration**
 
-- Set up the Azure Blob Storage connection configuration in appsettings.json.
-- Create the DocumentMetadata table in SQL database with appropriate schema.
-- Add the Azure.Storage.Blobs NuGet package to the backend project.
-- Create the DocumentService class that encapsulates storage operations.
+    - Set up the Azure Blob Storage connection configuration in appsettings.json.
+    - Create the DocumentMetadata table in SQL database with appropriate schema.
+    - Add the Azure.Storage.Blobs NuGet package to the backend project.
+    - Create the DocumentService class that encapsulates storage operations.
+    
+- **Phase 2: Core Upload Functionality**
 
-**Phase 2: Core Upload Functionality**
+    - Implement POST /api/documents/upload endpoint in DocumentsController.
+    - Add file validation logic (size, type) to DocumentService.
+    - Implement blob storage upload method with error handling.
+    - Save document metadata to database after successful upload.
+    - Return upload result with document ID and URL to client.
+    
+- **Phase 3: Frontend Implementation**
 
-- Implement POST /api/documents/upload endpoint in DocumentsController.
-- Add file validation logic (size, type) to DocumentService.
-- Implement blob storage upload method with error handling.
-- Save document metadata to database after successful upload.
-- Return upload result with document ID and URL to client.
+    - Create DocumentUpload React component with file input.
+    - Add file size and type validation in component.
+    - Implement upload progress indicator.
+    - Handle upload success and error responses.
+    - Refresh document list after successful upload.
 
-**Phase 3: Frontend Implementation**
+- **Phase 4: Security and Validation**
 
-- Create DocumentUpload React component with file input.
-- Add file size and type validation in component.
-- Implement upload progress indicator.
-- Handle upload success and error responses.
-- Refresh document list after successful upload.
+    - Add a Microsoft Entra ID authentication check to the upload endpoint.
+    - Implement server-side file type validation using magic numbers.
+    - Add request size limits that prevent DoS attacks.
+    - Validate file extensions against an allowed list.
+    - Add audit logging for upload operations.
 
-**Phase 4: Security and Validation**
+- **Phase 5: Testing and Documentation**
 
-- Add a Microsoft Entra ID authentication check to the upload endpoint.
-- Implement server-side file type validation using magic numbers.
-- Add request size limits that prevent DoS attacks.
-- Validate file extensions against an allowed list.
-- Add audit logging for upload operations.
-
-**Phase 5: Testing and Documentation**
-
-- Write unit tests for DocumentService upload methods.
-- Create integration test for complete upload flow.
-- Add error scenario tests (invalid file type, size exceeded).
-- Document API endpoint in OpenAPI/Swagger.
-- Update user documentation with upload instructions.
+    - Write unit tests for DocumentService upload methods.
+    - Create integration test for complete upload flow.
+    - Add error scenario tests (invalid file type, size exceeded).
+    - Document API endpoint in OpenAPI/Swagger.
+    - Update user documentation with upload instructions.
 
 This phased approach creates natural milestones. After Phase 2, you have a working but minimal backend. After Phase 3, users can upload files. After Phase 4, the system is secure and production-ready. After Phase 5, everything is tested and documented.
 
@@ -108,9 +108,9 @@ For the document upload feature, the logical sequence ensures:
 
 This task sequence allows continuous progress without waiting for unrelated work to complete.
 
-## Review and validate the task list
+## Review and validate the tasks list
 
-Generated task lists require critical review to ensure completeness and correctness.
+The tasks list requires critical review to ensure completeness and correctness.
 
 ### Verify coverage of plan elements
 
@@ -148,145 +148,6 @@ Ensure each task is appropriately scoped. Tasks that are too large ("implement e
 
 A well-scoped task typically takes a few hours to a day to complete, can be tested independently, and produces demonstrable progress.
 
-## Implement features using the task list
-
-The task list guides your implementation workflow. Use it to maintain focus, track progress, and ensure systematic development.
-
-### Work through tasks sequentially
-
-Implement tasks in the order specified in tasks.md. This sequence was designed to build functionality incrementally with each task building on previous work.
-
-As you complete each task, mark it as done in tasks.md. Many developers add checkboxes to task lists for easy tracking:
-
-```markdown
-## Phase 2: Core Upload Functionality
-
-- [x] Implement POST /api/documents/upload endpoint in DocumentsController
-- [x] Add file validation logic (size, type) to DocumentService
-- [ ] Implement blob storage upload method with error handling
-- [ ] Save document metadata to database after successful upload
-- [ ] Return upload result with document ID and URL to client
-```
-
-This visual progress tracking helps you see what's complete and what remains. It also helps when returning to work after interruptions—you immediately see where you left off.
-
-### Use GitHub Copilot for task implementation
-
-For each task, use GitHub Copilot to generate implementation code. Provide task context by referencing the specification, plan, and specific task description.
-
-Example GitHub Copilot prompt for a task:
-
-"Implement the POST /api/documents/upload endpoint according to spec.md and plan.md. The endpoint should accept multipart file uploads, validate file size is under 50 MB and type is PDF or DOCX, upload to Azure Blob Storage using DocumentService, save metadata to SQL database, and return document ID and blob URL."
-
-This detailed prompt gives GitHub Copilot complete context. The AI can generate accurate code that aligns with your architecture because it understands the specific requirements and constraints.
-
-### Verify each task before proceeding
-
-After implementing a task, verify that it works correctly before moving to the next task. This verification step prevents building on faulty foundations.
-
-Verification approaches include:
-
-- **Unit tests**: Write and run tests for the implemented functionality.
-- **Manual testing**: Use tools like Postman to test API endpoints, or browser dev tools to test frontend components.
-- **Code review**: Have a colleague review the implementation.
-- **Specification check**: Confirm the implementation satisfies requirements from spec.md.
-
-For the upload endpoint task, verification might include writing unit tests for validation logic, using Postman to test the endpoint with various file types and sizes, and confirming error messages match specification requirements.
-
-This incremental verification catches issues early. If file validation doesn't work correctly, you fix it before implementing storage upload logic that depends on validation being correct.
-
-### Handle task blockers
-
-If you encounter a blocker that prevents completing a task, document the issue and adjust your approach.
-
-Common blockers include:
-
-- **Missing dependencies**: A task requires infrastructure or resources that don't exist yet.
-- **Technical limitations**: The planned approach isn't technically feasible.
-- **Unclear requirements**: The task description is ambiguous or conflicts with the specification.
-- **External dependencies**: The task requires input from other teams or services.
-
-When blocked, document the issue in tasks.md and communicate with relevant stakeholders. If implementing blob storage upload is blocked because the Azure storage account isn't provisioned, note the issue in tasks.md and contact the infrastructure team.
-
-Don't skip blocked tasks and move forward if later tasks depend on the blocked work. Address blockers before proceeding to maintain implementation integrity.
-
-## Track implementation progress
-
-Effective progress tracking ensures transparency about development status and helps identify potential delays early.
-
-### Update task status regularly
-
-Mark tasks as complete as you finish them. If using a project management system like Azure DevOps Services or GitHub Issues, synchronize task status between tasks.md and the management system.
-
-Regular status updates provide visibility to team members and stakeholders. Product managers can see which features are complete. Other developers can see which shared components are available for their use.
-
-### Communicate progress in standup meetings
-
-Use the task list as your standup meeting reference. Report which tasks you completed since the last standup meeting, which task you're currently working on, and any blockers you're facing.
-
-This task-based reporting is more specific than vague status updates like "working on upload feature." Instead, you can say "Completed API endpoint implementation and validation logic, currently implementing blob storage integration, blocked on Azure storage account provisioning."
-
-### Identify scope creep early
-
-If you're implementing functionality that isn't in tasks.md, you might be contributing to scope creep. Either the task list is incomplete, or you're building something beyond requirements.
-
-Stop and evaluate: Is this new functionality necessary? Should it be added to the specification and task list? Or is it unnecessary work that should be deferred?
-
-For document upload, if you start implementing automatic file compression because you think it would be useful, but it's not in the specification, you're adding scope. Verify with stakeholders whether this feature is desired before investing time in it.
-
-## Refine the task list during implementation
-
-Task lists aren't immutable. As you implement features, you often discover that tasks need adjustment.
-
-### Add missing tasks
-
-If you discover a task that should be included but isn't, add it to tasks.md. Adding the missing tasks keeps the task list accurate and ensures the missing work isn't forgotten.
-
-Example missing task: You implement upload functionality and realize you forgot to plan for file deletion. Add a new task: "Implement DELETE /api/documents/{id} endpoint to allow users to remove uploaded files."
-
-### Split overly large tasks
-
-If a task proves more complex than anticipated, split it into smaller subtasks. Splitting complex tasks helps with progress visibility and prevents a single task from being "in progress" for extended periods.
-
-Example: The task "Implement blob storage upload method with error handling" might split into:
-
-- "Implement basic blob storage upload using Azure SDK"
-- "Add retry logic for transient failures"
-- "Add error handling for storage quota exceeded"
-- "Add error handling for network timeouts"
-
-Properly sized tasks support clear communication and make the work less overwhelming.
-
-### Remove unnecessary tasks
-
-If a task becomes unnecessary due to changed requirements or architecture decisions, remove it from the task list rather than leaving it incomplete indefinitely.
-
-Document why the task was removed: "Task 'Implement localStorage caching' removed because caching strategy changed to use IndexedDB instead." This documentation prevents confusion about why certain tasks were never completed.
-
-A good rule of thumb: if a task takes more than a day to complete, it's probably too large. If a task takes less than 30 minutes, it might be too small (though quick tasks for configuration or setup are acceptable).
-
-## Refine and customize tasks
-
-Task lists are starting points that benefit from customization based on your specific context.
-
-### Add missing tasks
-
-If review reveals missing work, add tasks manually. Since tasks.md is a Markdown file, you can edit it directly.
-
-For example, if the generated list omits performance testing under load, add: "Phase 5: Load test upload endpoint with 100 concurrent requests to verify performance under stress."
-
-### Remove irrelevant tasks
-
-If the generated list includes tasks that don't apply to your context, remove them. Perhaps the AI suggested tasks for a feature you're not implementing in this iteration, or proposed work that's already complete in your codebase.
-
-### Adjust task details
-
-Customize task descriptions to match your team's terminology, coding standards, or specific requirements. If your organization has naming conventions for database tables, update the task descriptions to reference those conventions.
-
-### Reorder for optimal flow
-
-If a different task order makes more sense for your workflow, resequence tasks accordingly. Perhaps your team prefers to build frontend components alongside backend APIs rather than sequentially. Adjust the phases to reflect your preferred development rhythm.
-
 ## Use tasks to guide implementation
 
 Once validated, tasks.md becomes your implementation roadmap.
@@ -320,23 +181,37 @@ Clear task definitions allow work distribution across multiple developers. The b
 
 Explicitly calling out task dependencies helps to prevent blocking. If Task B depends on Task A, ensure Task A is assigned and prioritized appropriately. Document completion criteria in tasks to ensure handoffs are clean.
 
-## Best practices for task management
+## Implement tasks using GitHub Spec Kit
 
-Effective task management requires discipline and consistent practices throughout the development cycle.
+The `/speckit.implement` command uses tasks.md to generate code systematically. Rather than attempting to implement entire features in one pass, the AI works through tasks sequentially. This approach produces more focused, correct code.
 
-### Start with coarse tasks, refine as needed
+You can invoke `/speckit.implement` with a specific task number, a range of tasks, or description of the implementation taken from the tasks.md file. The AI references spec.md, plan.md, and tasks.md to produce code that aligns with the overall architecture and requirements.
 
-Don't obsess over perfect task granularity upfront. Start with reasonable task definitions and refine them as implementation progresses. If a task proves more complex than anticipated, break it into smaller subtasks. If several small tasks always happen together, consider combining them.
+For example, to implement the document upload endpoint, you might enter:
 
-### Include verification steps
+```plaintext
+/speckit.implement Implement the MVP first strategy (Tasks: T001 - T027)
+```
 
-Each task should include implicit or explicit verification criteria. How do you know when the task is truly complete? For example, rather than "Implement upload endpoint," write "Implement upload endpoint and verify it accepts valid files, rejects oversized files, and returns appropriate status codes."
+This command instructs the AI to focus on tasks T001 through T027, generating code that fulfills each task's requirements in sequence.
 
-### Maintain task history
+### Provide assistance during implementation
 
-Keep completed tasks in tasks.md rather than deleting them. Strike through or check off completed items to maintain a historical record of what was accomplished. This history provides valuable context and creates satisfaction seeing progress.
+The AI might require assistance or permission to proceed with certain tasks. For example, if a task requires building or running the app, the AI may prompt for confirmation before proceeding.
 
-## Handle task-related challenges
+In addition, the AI might discover a bug when testing the implementation of a task. Provide detailed information to help diagnose the issue.  You can also provide additional context or clarifications if the AI encounters ambiguities.
+
+When prompted for assistance in the Chat view, a quick response helps to keep implementation moving smoothly.
+
+### Verification checkpoints
+
+After completing an implementation command, verify the results before proceeding. Run the application, execute tests, and confirm that each task is implemented and its objective is achieved. This incremental verification catches issues early when they're easiest to fix.
+
+### Context maintenance across tasks
+
+As you progress through tasks, previously completed work provides context for subsequent tasks. The AI can reference earlier implementations when building related functionality, improving code quality and maintaining architectural consistency.
+
+## Manage task-related challenges
 
 Common challenges arise when managing implementation tasks.
 
@@ -355,22 +230,6 @@ Business needs evolve. When priorities shift, update tasks.md accordingly. Reord
 ### Task ambiguity discovered during implementation
 
 When ambiguity surfaces, pause implementation and seek clarification. Review the specification and plan to understand the original intent. Update the task description with specific, unambiguous language before proceeding.
-
-## Use tasks to drive AI implementation
-
-Beyond human task management, tasks.md guides AI-assisted implementation when using GitHub Spec Kit's implementation phase.
-
-### Task-by-task code generation
-
-The `/speckit.implement` command uses tasks.md to generate code systematically. Rather than attempting to implement entire features in one pass, the AI works through tasks sequentially. This approach produces more focused, correct code.
-
-### Verification checkpoints
-
-After each task's implementation, verify the code before proceeding. Run the application, execute tests, and confirm the task's objective is achieved. This incremental verification catches issues early when they're easiest to fix.
-
-### Context maintenance across tasks
-
-As you progress through tasks, previously completed work provides context for subsequent tasks. The AI can reference earlier implementations when building related functionality, improving code quality and maintaining architectural consistency.
 
 ## Summary
 

@@ -93,9 +93,9 @@ For example, the following section defines performance targets for an API:
 
 Performance requirements guide architectural decisions. If the constitution requires handling large file uploads asynchronously, the plan incorporates background processing.
 
-### Coding standards
+### Code standards and guidelines
 
-Coding standard requirements are used to specify organizational guidelines for code quality.
+Standards and guidelines provide requirements that help to ensure code quality.
 
 For example, the following section outlines coding conventions for a .NET project:
 
@@ -129,77 +129,35 @@ For example, the following section captures compliance principles for data handl
 
 Compliance principles protect your organization from regulatory violations. The constitution ensures these principles aren't forgotten during development.
 
-## Creating the constitution with GitHub Spec Kit
+## Create the constitution with GitHub Spec Kit
 
-GitHub Spec Kit provides tools to help you create and maintain constitution files efficiently.
+GitHub Spec Kit's `/speckit.constitution` command can be used to create or update a constitution file.
 
-### Starting from scratch
+### Existing projects
 
-To create a constitution for a new project:
+When you're working on an existing project that already includes a constitution file, you can update the constitution using the `/speckit.constitution` command. GitHub Copilot reviews the existing constitution and suggests updates based on your codebase. Updates to the GitHub Spec Kit itself can also be reflected in the suggested changes.
 
-1. Open Visual Studio Code with your initialized GitHub Spec Kit project
+When you're adding GitHub Spec Kit to an existing project that doesn't yet have a constitution, you can generate one using the `/speckit.constitution` command in GitHub Copilot Chat. GitHub Copilot reviews the existing codebase and infers project principles and constraints to create an initial `constitution.md` file. If necessary, you can refine the generated constitution to ensure it accurately reflects your project's requirements.
 
-1. Open GitHub Copilot Chat (Ctrl+Alt+I)
+### New projects
 
-1. Run the command:
+When you're starting a new project using GitHub Spec Kit, you can generate a constitution from scratch using the `/speckit.constitution` command in GitHub Copilot Chat.
 
-    ```plaintext
-    /speckit.constitution
-    ```
+To create the constitution for a new project:
 
-1. GitHub Copilot prompts you for project principles and constraints
+1. Open your project in Visual Studio Code and ensure that GitHub Spec Kit is initialized.
 
-1. Describe your requirements in natural language
+1. Open GitHub Copilot Chat, and then run the `/speckit.constitution` command with a natural language description of your project principles and constraints.
 
-    For example, when building the document upload feature for the internal employee portal, you might provide:
+    For example, you might provide the following prompt:
 
     ```plaintext
-    Create a constitution with these principles:
-    - Use Azure Blob Storage for all file storage.
-    - Authenticate users via Microsoft Entra ID.
-    - Support files up to 500 MB.
-    - Scan uploaded files for malware.
-    - Follow the security and privacy guidelines adopted by the organization.
-    - Use .NET 8 for backend APIs.
-    - Implement comprehensive logging.
+    /speckit.constitution Create principles focused on code quality, testing standards, user experience consistency, and performance requirements. Include governance for how these principles should guide technical decisions and implementation choices.
     ```
 
-    GitHub Copilot generates a structured `constitution.md` file with sections organized by category:
+    GitHub Copilot generates a structured `constitution.md` file with sections organized by category.
 
-    ```markdown
-    # Project Constitution
-    
-    ## Overview
-    This Constitution defines immutable principles for the Employee Portal Document Upload feature.
-    
-    ## Technology Standards
-    - Backend: .NET 8+ Web API hosted on Azure App Service
-    - Storage: Azure Blob Storage for document persistence
-    - Authentication: Microsoft Entra ID (OAuth 2.0 / OpenID Connect)
-    
-    ## Security Requirements
-    - All users must authenticate via Microsoft Entra ID tokens
-    - Scan all uploaded files for malware using Azure Defender
-    - Encrypt data at rest in Azure Blob Storage
-    - Encrypt data in transit using HTTPS (TLS 1.2+)
-    
-    ## Functional Constraints
-    - Maximum file size: 500MB
-    - Supported file types: PDF, DOCX, XLSX, PPTX
-    - Upload timeout: 5 minutes for files under 500MB
-    
-    ## Performance Requirements
-    - File upload progress reporting every 10% completion
-    - Support concurrent uploads (up to 5 files per user)
-    - Asynchronous processing for virus scanning
-    
-    ## Compliance
-    - Follow privacy and security policies adopted by the organization
-    - Log all upload/download events for audit trail
-    - Retain audit logs for 90 days minimum
-    ```
-
-### Refining the generated constitution
+### Refine the generated constitution
 
 After GitHub Copilot generates the initial constitution, review and edit it to ensure accuracy.
 
@@ -217,7 +175,7 @@ Consider the following steps:
 
 The constitution is a living document, but it changes infrequently. Once established, it provides stable guidance across feature development.
 
-## Using the constitution in the workflow
+## Constitution in the Spec-Driven Development workflow
 
 After you create the constitution, GitHub Spec Kit automatically references it during subsequent workflow phases:
 
@@ -273,14 +231,14 @@ Example enterprise internal constitution snippet:
 - Accessibility: WCAG 2.1 Level AA minimum
 
 ## Development Standards
-- Backend: .NET 8+ following coding conventions adopted by the organization
+- Backend: .NET 10 following coding conventions adopted by the organization
 - Use approved packages from internal NuGet feed
 - Minimum 80% code coverage with unit tests
 - All APIs documented with OpenAPI/Swagger
 - Structured logging using ILogger interface
 ```
 
-By establishing these principles upfront in the Constitution, you ensure every feature built for the employee portal automatically aligns with enterprise engineering standards, security requirements, and architectural patterns. The Constitution transforms organizational knowledge into executable constraints that guide AI-assisted development.
+By establishing these principles upfront in the constitution, you ensure every feature built for the employee portal automatically aligns with enterprise engineering standards, security requirements, and architectural patterns. The constitution transforms organizational knowledge into executable constraints that guide AI-assisted development.
 
 ## Summary
 

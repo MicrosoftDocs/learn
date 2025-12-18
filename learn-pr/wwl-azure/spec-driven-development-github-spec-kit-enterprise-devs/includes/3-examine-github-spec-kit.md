@@ -2,7 +2,7 @@ GitHub Spec Kit is an open-source toolkit that enables Spec-Driven Development b
 
 ## What is GitHub Spec Kit?
 
-GitHub Spec Kit addresses a fundamental challenge in AI-assisted development: maintaining context and consistency across multiple interactions with coding assistants. Without structure, each prompt to GitHub Copilot operates in isolation, lacking awareness of previous decisions or overall project requirements.
+GitHub Spec Kit addresses a fundamental challenge in AI-assisted development: maintaining context and consistency across multiple interactions with coding assistants. Without structure, each chat session with GitHub Copilot operates in isolation, lacking awareness of previous decisions or overall project requirements.
 
 GitHub Spec Kit provides three essential capabilities:
 
@@ -32,7 +32,7 @@ Or run it directly using `uvx` without permanent installation:
 uvx --from git+https://github.com/github/spec-kit.git specify init
 ```
 
-When you run `specify init` in your project directory, the CLI:
+When you run `specify init` in your project directory, the CLI implements the following steps:
 
 1. Prompts you to select your AI coding assistant (GitHub Copilot, Claude, ChatGPT, or others).
 1. Creates a `.github/prompts/` directory with workflow templates.
@@ -46,47 +46,35 @@ The multi-agent support is significant—GitHub Spec Kit works with GitHub Copil
 
 GitHub Spec Kit uses structured markdown files as primary development artifacts. These files aren't passive documentation—they actively drive AI code generation.
 
-**Constitution (constitution.md)**: Captures project-wide principles, constraints, and non-negotiable requirements. This file encodes organizational standards, security requirements, and architectural decisions that must be honored throughout development.
+The main artifact files are:
 
-Example Constitution content:
+- **Constitution (constitution.md)**: Captures project-wide principles, constraints, and non-negotiable requirements. This file encodes organizational standards, security requirements, and architectural decisions that must be honored throughout development.
 
-```markdown
-# Project Constitution
+- **Specification (spec.md)**: Defines what a specific feature should do. A well-structured spec includes summary, user stories, acceptance criteria, functional requirements, nonfunctional requirements, and edge cases.
 
-## Technology Standards
-- All cloud resources hosted on Azure
-- Use .NET 8+ for backend services
-- Store secrets exclusively in Azure Key Vault
+- **Plan (plan.md)**: Translates the specification into a technical implementation strategy, defining architecture, components, data models, and implementation sequence.
 
-## Security Requirements
-- Authenticate all API requests using Microsoft Entra ID tokens
-- Encrypt all data at rest using AES-256
-- Log no PII in application logs
-```
-
-**Specification (spec.md)**: Defines what a specific feature should do. A well-structured spec includes summary, user stories, acceptance criteria, functional requirements, nonfunctional requirements, and edge cases.
-
-**Plan (plan.md)**: Translates the specification into a technical implementation strategy, defining architecture, components, data models, and implementation sequence.
-
-**Tasks (tasks.md)**: Breaks down the plan into discrete, actionable work items that can be implemented and tested independently.
+- **Tasks (tasks.md)**: Breaks down the plan into discrete, actionable work items that can be implemented and tested independently.
 
 ### Slash commands
 
 GitHub Spec Kit integrates with Visual Studio Code through custom chat commands that trigger specific workflow phases. These commands appear in the GitHub Copilot Chat panel after you initialize GitHub Spec Kit in your project.
 
-**`/speckit.constitution`**: Creates or updates project Constitution based on your principles and constraints.
+The primary commands are:
 
-**`/speckit.specify`**: Generates a detailed specification from your high-level feature description. GitHub Copilot prompts for requirements and produces structured spec.md with all standard sections.
+- **`/speckit.constitution`**: Creates or updates project Constitution based on your principles and constraints.
 
-**`/speckit.clarify`**: Analyzes the current specification and asks questions to identify gaps and ambiguities. You answer each question, and GitHub Copilot updates the spec accordingly.
+- **`/speckit.specify`**: Generates a detailed specification from your high-level feature description. GitHub Copilot prompts for requirements and produces structured spec.md with all standard sections.
 
-**`/speckit.plan`**: Produces a technical implementation plan based on the spec and Constitution. You can provide more context about existing systems or preferred technologies.
+- **`/speckit.clarify`**: Analyzes the current specification and asks questions to identify gaps and ambiguities. You answer each question, and GitHub Copilot updates the spec accordingly.
 
-**`/speckit.tasks`**: Breaks down the implementation plan into discrete tasks organized by phases or components.
+- **`/speckit.plan`**: Produces a technical implementation plan based on the spec and Constitution. You can provide more context about existing systems or preferred technologies.
 
-**`/speckit.implement`**: Guides you through implementing tasks one at a time, generating code for each task.
+- **`/speckit.tasks`**: Breaks down the implementation plan into discrete tasks organized by phases or components.
 
-**`/speckit.analyze`**: Verifies that specs, plans, and tasks are consistent with each other and the Constitution.
+- **`/speckit.implement`**: Guides you through implementing tasks one at a time, generating code for each task.
+
+- **`/speckit.analyze`**: Verifies that specs, plans, and tasks are consistent with each other and the Constitution.
 
 These commands are shortcuts to complex prompts that GitHub Spec Kit has optimized. When you run `/speckit.plan`, for example, the AI is instructed to produce output with specific sections (architecture, data models, Constitution verification) that ensure comprehensive planning. You don't need to be an expert in prompt engineering—GitHub Spec Kit provides the proven patterns.
 
@@ -98,13 +86,13 @@ GitHub Spec Kit integrates into your existing development practices through seve
 
 All GitHub Spec Kit artifacts are plain markdown files stored in your Git repository. This approach provides several advantages:
 
-**Change tracking**: Every modification to specifications, plans, or tasks creates a Git commit. You can review the history of requirement changes, understand why decisions were made, and revert problematic changes.
+- **Change tracking**: Every modification to specifications, plans, or tasks creates a Git commit. You can review the history of requirement changes, understand why decisions were made, and revert problematic changes.
 
-**Branch-based development**: Create feature branches that contain both specification artifacts and implementation code. This approach keeps requirements and implementation synchronized and makes code review comprehensive—reviewers see both what you're building (spec) and how you built it (code).
+- **Branch-based development**: Create feature branches that contain both specification artifacts and implementation code. This approach keeps requirements and implementation synchronized and makes code review comprehensive—reviewers see both what you're building (spec) and how you built it (code).
 
-**Pull request workflows**: When you submit a pull request for a feature, include spec.md, plan.md, and tasks.md alongside code changes. Reviewers verify that implementation matches specifications and that specifications align with project goals.
+- **Pull request workflows**: When you submit a pull request for a feature, include spec.md, plan.md, and tasks.md alongside code changes. Reviewers verify that implementation matches specifications and that specifications align with project goals.
 
-For the document upload feature, your feature branch contains:
+For example, if you're implementing a new feature, your feature branch contains:
 
 - `spec.md` defining upload requirements.
 - `plan.md` describing Azure Blob Storage architecture.
@@ -129,16 +117,20 @@ GitHub Spec Kit organizes artifacts using consistent directory structure:
 ```text
 my-project/
 ├── .github/
-│   └── prompts/          # Command templates
+│   ├── agents/
+│   └── prompts/
 ├── .specify/
-│   ├── constitution.md   # Project principles
-│   └── memory/          # Internal tracking
-├── features/
-│   └── 001-document-upload/
-│       ├── spec.md
+│   ├── memory/
+│   │   └── constitution.md
+│   ├── scripts/
+│   └── templates/
+├── SourceCode/ 
+│   └── ...
+├── specs/
+│   └── 001-document-upload-feature/
 │       ├── plan.md
+│       ├── spec.md
 │       └── tasks.md
-└── src/                 # Implementation code
 ```
 
 This structure separates specification artifacts from implementation code while keeping them in the same repository. Features are numbered sequentially (001, 002, 003) to track development order.
@@ -149,19 +141,19 @@ For teams working on multiple features concurrently, each feature has its own di
 
 GitHub Spec Kit supports iterative development through command chaining. After generating initial specifications, you can refine them progressively:
 
-1. Generate initial spec: `/speckit.specify`
-1. Identify gaps: `/speckit.clarify`
-1. Update spec based on answers
-1. Create implementation plan: `/speckit.plan`
-1. Verify consistency: `/speckit.analyze`
-1. Generate tasks: `/speckit.tasks`
-1. Implement incrementally: `/speckit.implement`
+1. Generate initial spec: `/speckit.specify`.
+1. Identify gaps: `/speckit.clarify`.
+1. Update spec based on answers.
+1. Create implementation plan: `/speckit.plan`.
+1. Verify consistency: `/speckit.analyze`.
+1. Generate tasks: `/speckit.tasks`.
+1. Implement incrementally: `/speckit.implement`.
 
 At any point, if requirements change, you can return to earlier phases, update artifacts, and regenerate downstream artifacts. If a stakeholder changes their mind about file size limits after you generate tasks, you update spec.md, regenerate plan.md to reflect architectural implications, regenerate tasks.md with updated validation steps, then update implementation code.
 
 This flexibility supports real-world development where requirements evolve. The specification-first approach ensures changes propagate systematically rather than being patched into code without updating documentation.
 
-## Understand GitHub Spec Kit's AI agent support
+## GitHub Spec Kit's AI agent support
 
 GitHub Spec Kit supports multiple AI coding assistants beyond GitHub Copilot, enabling teams to use their preferred AI tools while maintaining consistent spec-driven development (SDD) practices.
 
@@ -169,12 +161,12 @@ GitHub Spec Kit supports multiple AI coding assistants beyond GitHub Copilot, en
 
 GitHub Spec Kit provides agent-specific configurations during initialization. When you run `specify init`, you select from supported agents:
 
-- **GitHub Copilot**: Integration through Visual Studio Code chat interface
-- **Claude Code**: Integration through Anthropic's coding assistant
-- **Cursor**: Integration through Cursor's AI features
-- **Windsurf**: Integration through Windsurf coding environment
-- **Amazon Q Developer**: Integration through the Amazon Web Services's coding assistant
-- **And others**: Support for emerging AI coding tools
+- **GitHub Copilot**: Integration through Visual Studio Code chat interface.
+- **Claude Code**: Integration through Anthropic's coding assistant.
+- **Cursor**: Integration through Cursor's AI features.
+- **Windsurf**: Integration through Windsurf coding environment.
+- **Amazon Q Developer**: Integration through the Amazon Web Services's coding assistant.
+- **And others**: Support for emerging AI coding tools.
 
 Each agent receives templates formatted for its specific prompt format. The underlying specification artifacts (spec.md, plan.md, tasks.md) remain identical regardless of which AI assistant you use. This agent-agnostic approach prevents vendor lock-in and allows teams to experiment with different AI tools.
 
@@ -276,14 +268,6 @@ This structured approach to refactoring prevents the common problem of starting 
 For situations where you're exploring multiple potential approaches, use GitHub Spec Kit to generate multiple plans from the same specification. The stable specification represents what you want to achieve, while different plans explore different technical approaches.
 
 You might generate one plan using Azure Blob Storage and another using Azure Files, both from the same upload specification. Implement both, compare results, and choose the better approach based on actual experience rather than assumptions.
-
-## Get started with GitHub Spec Kit
-
-To begin using GitHub Spec Kit in your development workflow, install the Specify CLI and initialize your first project. The toolkit integrates seamlessly with Visual Studio Code and GitHub Copilot, transforming specification-driven development from concept into practice.
-
-Start with simple features to build familiarity with the workflow. As you gain experience with specifications, plans, and tasks, expand to more complex features. The structured approach becomes more valuable as feature complexity increases.
-
-GitHub Spec Kit provides the tooling infrastructure that makes Spec-Driven Development practical with AI coding assistants. By standardizing workflows, providing reusable command patterns, and maintaining specification artifacts in version control, GitHub Spec Kit transforms specification-driven development from theory into daily practice.
 
 ## Summary
 

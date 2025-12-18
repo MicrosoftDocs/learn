@@ -224,6 +224,7 @@ Plans are living documents. When you discover during implementation that an appr
 If you planned to store upload progress in browser localStorage but discover this causes issues in private browsing mode, update the plan to use in-memory state instead. Document why the change was necessary so the reasoning is preserved.
 
 Keep plan.md synchronized with actual implementation. When plan and code diverge, the plan loses value as reference documentation.
+
 - Do the security approaches meet organizational requirements?
 - Is the database schema design following naming conventions?
 
@@ -275,18 +276,6 @@ For instance, if the plan proposes a specific blob container name but your organ
 In team environments, share plan.md for review. A senior developer or architect can validate architectural decisions before implementation begins. This peer review catches issues that automated checks might miss.
 
 Team review also builds shared understanding. When multiple developers work on a feature, reviewing the plan together ensures everyone knows the approach and can identify potential conflicts with other ongoing work.
-
-## Use the plan to guide implementation
-
-Once validated, plan.md becomes your implementation reference. During development, refer back to the plan to ensure you're following the intended approach.
-
-The plan also guides the next phase: generating tasks. GitHub Spec Kit uses plan.md along with spec.md to break down the work into concrete, actionable tasks.
-
-### Plan as living documentation
-
-Like the specification, the plan is a living document. As you implement and discover new requirements or constraints, update plan.md to reflect reality. This process keeps your documentation synchronized with your code.
-
-If during implementation you decide to use a different validation library than planned, update plan.md. Future developers (or AI assistants) referencing the plan need accurate information about the actual implementation.
 
 ## Common planning pitfalls to avoid
 
