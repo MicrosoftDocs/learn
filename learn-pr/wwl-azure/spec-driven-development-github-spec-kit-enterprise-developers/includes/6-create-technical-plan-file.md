@@ -8,24 +8,6 @@ This separation of concerns is fundamental to spec-driven development. If you la
 
 For the document upload feature, the specification defines user requirements: file size limits, supported formats, upload feedback, and access controls. The plan translates these requirements into concrete decisions: which Azure storage service to use, how to structure the API, which authentication mechanism to implement, and how to validate files.
 
-## Generate a plan using /speckit.plan
-
-GitHub Spec Kit generates plans through the `/speckit.plan` command in GitHub Copilot Chat. This command uses both spec.md and constitution.md as inputs to produce a comprehensive technical design.
-
-Before invoking the command, consider what other context the AI needs. Your existing codebase, technology preferences, and infrastructure constraints all influence the plan. Providing this context upfront produces more accurate and actionable results.
-
-For the document upload feature in an internal employee portal scenario, you might provide context like this:
-
-"The existing portal uses a React front end with a .NET 8 Web API back end. We need to integrate the upload feature into this stack. Use Azure Blob Storage for file persistence. Require Microsoft Entra ID authentication for all upload operations. The portal already has a SQL database available for metadata storage."
-
-This context guides the AI to generate a plan that fits seamlessly into your existing architecture rather than proposing a greenfield solution that doesn't align with your current stack.
-
-### Invoke the planning command
-
-Open GitHub Copilot Chat in Visual Studio Code and enter `/speckit.plan`. If the AI requests more information, provide your architectural context. GitHub Copilot processes the specification, constitution, and your extra context to generate plan.md.
-
-The planning phase might take a moment as the AI considers various approaches, checks them against your constitution, and structures the output into a coherent design document.
-
 ## Examine plan structure and content
 
 A comprehensive technical plan contains several key sections that collectively define your implementation approach.
@@ -98,6 +80,24 @@ Example open questions:
 
 Documenting these assumptions and questions prevents scope creep and ensures stakeholders address important decisions before coding begins. If an assumption proves incorrect during implementation, you can update the plan accordingly.
 
+## Generate a plan using /speckit.plan
+
+GitHub Spec Kit generates plans through the `/speckit.plan` command in GitHub Copilot Chat. This command uses both spec.md and constitution.md as inputs to produce a comprehensive technical design.
+
+Before invoking the command, consider what other context the AI needs. Your existing codebase, technology preferences, and infrastructure constraints all influence the plan. Providing this context upfront produces more accurate and actionable results.
+
+For the document upload feature in an internal employee portal scenario, you might provide context like this:
+
+"The existing portal uses a React front end with a .NET 8 Web API back end. We need to integrate the upload feature into this stack. Use Azure Blob Storage for file persistence. Require Microsoft Entra ID authentication for all upload operations. The portal already has a SQL database available for metadata storage."
+
+This context guides the AI to generate a plan that fits seamlessly into your existing architecture rather than proposing a greenfield solution that doesn't align with your current stack.
+
+### Invoke the planning command
+
+Open GitHub Copilot Chat in Visual Studio Code and enter `/speckit.plan`. If the AI requests more information, provide your architectural context. GitHub Copilot processes the specification, constitution, and your extra context to generate plan.md.
+
+The planning phase might take a moment as the AI considers various approaches, checks them against your constitution, and structures the output into a coherent design document.
+
 ## Review and validate the plan
 
 Generating a plan is only the first step. Critical review ensures the plan is accurate, complete, and aligned with your project's needs.
@@ -129,7 +129,7 @@ If your constitution requires "All secrets must be stored in Azure Key Vault" an
 
 Constitution violations discovered during planning are easy to fix. Constitution violations discovered during code review or production deployment are costly and disruptive.
 
-## Refine the plan iteratively
+## Iterate and refine the plan
 
 Plans often require refinement after initial generation. Don't expect perfection on first try. Use GitHub Copilot's clarification capabilities to improve plan quality.
 
@@ -158,6 +158,49 @@ For document upload, confirm the plan includes:
 - **Accessibility**: Does the upload UI meet Web Content Accessibility Guidelines (WCAG) 2.1 AA standards?
 
 If the plan omits any of these considerations, add them explicitly. Nonfunctional requirements frequently become after thoughts during implementation if they're not addressed in planning.
+
+### Assess feasibility and completeness
+
+Evaluate whether the plan provides sufficient guidance for implementation. Plans that are too vague ("Implement file upload") aren't helpful. Plans that are too prescriptive ("Use exactly 47 lines of code") are overly constraining.
+
+The right level of detail provides clear direction without removing all flexibility. The plan should answer:
+
+- What components need to be created or modified?
+- How do these components interact?
+- What technologies and libraries are used?
+- What's the implementation order?
+- What verification steps ensure correctness?
+
+If you can't envision how to implement the feature from the plan, it needs more detail. If the plan feels like it's writing the code for you, it might be too detailed.
+
+### Identify missing elements
+
+Look for gaps in the plan. Common omissions include:
+
+- **Error handling**: How does the system handle network failures, storage errors, or database issues?
+- **Performance considerations**: Are there any concerns about upload speed, concurrent users, or storage limits?
+- **Testing strategy**: What tests need to be written to validate the implementation?
+- **Rollback approach**: If deployment causes issues, how do you revert changes?
+
+Address these gaps by manually editing plan.md or providing more context and regenerating relevant sections.
+
+### Regenerate with refined context
+
+If the initial plan misses the mark, provide more specific context and regenerate. For example, if the plan suggests using a new database but you need to use an existing one, clarify: "Use the existing EmployeePortal database. Add a DocumentMetadata table to this database rather than creating a new one."
+
+Regenerate the plan with `/speckit.plan` incorporating this updated context. The AI adjusts the approach accordingly.
+
+### Manually edit the plan
+
+Since plan.md is a Markdown file, you can edit it directly. If the AI suggests an approach that's 90% correct but needs minor adjustments, edit the file rather than regenerating everything.
+
+For instance, if the plan proposes a specific blob container name but your organization has naming conventions, update the container name in plan.md directly.
+
+### Collaborate with team members
+
+In team environments, share plan.md for review. A senior developer or architect can validate architectural decisions before implementation begins. This peer review catches issues that automated checks might miss.
+
+Team review also builds shared understanding. When multiple developers work on a feature, reviewing the plan together ensures everyone knows the approach and can identify potential conflicts with other ongoing work.
 
 ## Document architectural decisions
 
@@ -202,7 +245,7 @@ For document upload, potential future requirements might include:
 
 If your architecture makes these extensions difficult, consider whether adjusting the initial design is warranted. You don't implement future features now, but you avoid painting yourself into corners that make future changes painful.
 
-## Use the plan to guide implementation
+## Share and maintain the plan during implementation
 
 The plan becomes your reference throughout implementation. Developers should consult the plan regularly to ensure their code aligns with the documented architecture.
 
@@ -230,76 +273,19 @@ Keep plan.md synchronized with actual implementation. When plan and code diverge
 
 If the plan suggests using a database but your existing portal already has one, that's likely overkill. If the plan proposes a technology your team avoids, document why or adjust the plan.
 
-### Assess feasibility and completeness
-
-Evaluate whether the plan provides sufficient guidance for implementation. Plans that are too vague ("Implement file upload") aren't helpful. Plans that are too prescriptive ("Use exactly 47 lines of code") are overly constraining.
-
-The right level of detail provides clear direction without removing all flexibility. The plan should answer:
-
-- What components need to be created or modified?
-- How do these components interact?
-- What technologies and libraries are used?
-- What's the implementation order?
-- What verification steps ensure correctness?
-
-If you can't envision how to implement the feature from the plan, it needs more detail. If the plan feels like it's writing the code for you, it might be too detailed.
-
-### Identify missing elements
-
-Look for gaps in the plan. Common omissions include:
-
-- **Error handling**: How does the system handle network failures, storage errors, or database issues?
-- **Performance considerations**: Are there any concerns about upload speed, concurrent users, or storage limits?
-- **Testing strategy**: What tests need to be written to validate the implementation?
-- **Rollback approach**: If deployment causes issues, how do you revert changes?
-
-Address these gaps by manually editing plan.md or providing more context and regenerating relevant sections.
-
-## Iterate on the plan if needed
-
-Plans aren't set in stone. If review reveals problems, iterate.
-
-### Regenerate with refined context
-
-If the initial plan misses the mark, provide more specific context and regenerate. For example, if the plan suggests using a new database but you need to use an existing one, clarify: "Use the existing EmployeePortal database. Add a DocumentMetadata table to this database rather than creating a new one."
-
-Regenerate the plan with `/speckit.plan` incorporating this updated context. The AI adjusts the approach accordingly.
-
-### Manually edit the plan
-
-Since plan.md is a Markdown file, you can edit it directly. If the AI suggests an approach that's 90% correct but needs minor adjustments, edit the file rather than regenerating everything.
-
-For instance, if the plan proposes a specific blob container name but your organization has naming conventions, update the container name in plan.md directly.
-
-### Collaborate with team members
-
-In team environments, share plan.md for review. A senior developer or architect can validate architectural decisions before implementation begins. This peer review catches issues that automated checks might miss.
-
-Team review also builds shared understanding. When multiple developers work on a feature, reviewing the plan together ensures everyone knows the approach and can identify potential conflicts with other ongoing work.
-
 ## Common planning pitfalls to avoid
 
 Avoid these common mistakes when creating and reviewing plans:
 
-### Skipping the planning phase
+- **Skipping the planning phase**: Jumping directly from specification to code without a plan increases the risk of architectural mistakes. The time invested in planning pays dividends by preventing rework.
 
-Jumping directly from specification to code without a plan increases the risk of architectural mistakes. The time invested in planning pays dividends by preventing rework.
+- **Accepting plans without review**: AI-generated plans are starting points, not final designs. Always review critically and verify against your specific context.
 
-### Accepting plans without review
+- **Over-constraining implementation**: Plans should guide, not dictate every detail. Leave room for developers to make appropriate tactical decisions during implementation.
 
-AI-generated plans are starting points, not final designs. Always review critically and verify against your specific context.
+- **Ignoring constitution conflicts**: If the plan violates constitution principles, address the conflict immediately. Either adjust the plan to comply or update the constitution if the principle needs revision.
 
-### Over-constraining implementation
-
-Plans should guide, not dictate every detail. Leave room for developers to make appropriate tactical decisions during implementation.
-
-### Ignoring constitution conflicts
-
-If the plan violates constitution principles, address the conflict immediately. Either adjust the plan to comply or update the constitution if the principle needs revision.
-
-### Forgetting to update plans
-
-When implementation reveals new information, update plan.md. Stale plans mislead future developers and reduce the value of your documentation.
+- **Forgetting to update plans**: When implementation reveals new information, update plan.md. Stale plans mislead future developers and reduce the value of your documentation.
 
 ## Summary
 

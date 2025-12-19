@@ -8,18 +8,6 @@ Task breakdowns serve multiple purposes beyond just organizing work. They help t
 
 For the document upload feature, the plan describes the overall architecture and technology choices. The task list translates architectural decisions into specific actions: create a database table, implement an API endpoint, build a React component, add validation logic, write tests. Each task is small enough to complete in a reasonable timeframe while large enough to represent meaningful progress.
 
-## Generate tasks using /speckit.tasks
-
-GitHub Spec Kit generates task lists through the `/speckit.tasks` command in GitHub Copilot Chat. This command processes both spec.md and plan.md to produce a comprehensive, ordered list of implementation tasks.
-
-The AI analyzes the specification to understand what needs to be built, reviews the plan to understand the architectural approach, and generates tasks that bridge the gap between these documents and actual code. The resulting tasks.md file contains numbered or bulleted tasks, often organized into phases for complex features.
-
-### Invoke the task generation command
-
-Open GitHub Copilot Chat in Visual Studio Code and enter `/speckit.tasks`. GitHub Copilot processes the specification and plan to generate a structured task list. The generation process typically completes in a few moments, producing a comprehensive breakdown of implementation work.
-
-The task list automatically inherits context from your specification and plan. If the plan specifies "use Azure Blob Storage," the generated tasks include specific steps for configuring blob storage connections, implementing upload logic, and handling storage errors.
-
 ## Examine task structure and organization
 
 A well-structured task list organizes work logically, sequences dependencies appropriately, and provides clear guidance for implementation.
@@ -108,6 +96,18 @@ For the document upload feature, the logical sequence ensures:
 
 This task sequence allows continuous progress without waiting for unrelated work to complete.
 
+## Generate tasks using /speckit.tasks
+
+GitHub Spec Kit generates task lists through the `/speckit.tasks` command in GitHub Copilot Chat. This command processes both spec.md and plan.md to produce a comprehensive, ordered list of implementation tasks.
+
+The AI analyzes the specification to understand what needs to be built, reviews the plan to understand the architectural approach, and generates tasks that bridge the gap between these documents and actual code. The resulting tasks.md file contains numbered or bulleted tasks, often organized into phases for complex features.
+
+### Invoke the task generation command
+
+Open GitHub Copilot Chat in Visual Studio Code and enter `/speckit.tasks`. GitHub Copilot processes the specification and plan to generate a structured task list. The generation process typically completes in a few moments, producing a comprehensive breakdown of implementation work.
+
+The task list automatically inherits context from your specification and plan. If the plan specifies "use Azure Blob Storage," the generated tasks include specific steps for configuring blob storage connections, implementing upload logic, and handling storage errors.
+
 ## Review and validate the tasks list
 
 The tasks list requires critical review to ensure completeness and correctness.
@@ -181,7 +181,7 @@ Clear task definitions allow work distribution across multiple developers. The b
 
 Explicitly calling out task dependencies helps to prevent blocking. If Task B depends on Task A, ensure Task A is assigned and prioritized appropriately. Document completion criteria in tasks to ensure handoffs are clean.
 
-## Implement tasks using GitHub Spec Kit
+## Generate code using /speckit.implement
 
 The `/speckit.implement` command uses tasks.md to generate code systematically. Rather than attempting to implement entire features in one pass, the AI works through tasks sequentially. This approach produces more focused, correct code.
 
@@ -211,7 +211,7 @@ After completing an implementation command, verify the results before proceeding
 
 As you progress through tasks, previously completed work provides context for subsequent tasks. The AI can reference earlier implementations when building related functionality, improving code quality and maintaining architectural consistency.
 
-## Manage task-related challenges
+## Manage task-related challenges during implementation
 
 Common challenges arise when managing implementation tasks.
 

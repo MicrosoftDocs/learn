@@ -1,4 +1,4 @@
-The specification file (`spec.md`) is the single source of truth for what your feature should do. Writing an effective spec ensures GitHub Copilot generates plans and code that precisely match your requirements.
+The specification file (`spec.md`) is the single source of truth for what your feature should do. Writing a precise, complete, and unambiguous spec helps to ensure that your AI agent generates a plan and code that match your requirements.
 
 ## The spec as the single source of truth
 
@@ -113,7 +113,7 @@ For example:
 
 ### Performance
 - File uploads under 5MB complete within 5 seconds on typical network
-- Upload progress updates display with <100ms latency
+- Upload progress updates display with less than 100ms latency
 - Document list refresh completes within 1 second after upload
 
 ### Security
@@ -176,7 +176,7 @@ Thinking through edge cases during specification prevents bugs that would otherw
 
 GitHub Spec Kit generates specification drafts based on natural language descriptions, accelerating spec creation while maintaining consistent structure.
 
-### Invoking the specify command
+### Invoke the specify command
 
 To create a specification:
 
@@ -199,7 +199,7 @@ To create a specification:
 
 GitHub Copilot generates a structured `spec.md` file based on this input, creating sections for summary, acceptance criteria, requirements, and edge cases.
 
-### Reviewing the generated spec
+### Review the generated spec
 
 After GitHub Copilot generates the spec, open `spec.md` and verify:
 
@@ -217,7 +217,9 @@ The initial spec is a strong starting point but rarely perfect. Expect to refine
 
 The `/speckit.clarify` command analyzes your specification and identifies ambiguities, gaps, or assumptions requiring clarification.
 
-### Running clarification
+### Ensure spec clarity
+
+Ambiguities in specifications lead to incorrect implementations. Use `/speckit.clarify` to surface unclear areas.
 
 After generating an initial spec:
 
@@ -251,7 +253,7 @@ After generating an initial spec:
 
 These questions help you to make decisions about aspects that you might have missed initially.
 
-### Answering clarification questions
+### Answer clarification questions
 
 Respond to each question with specific decisions:
 

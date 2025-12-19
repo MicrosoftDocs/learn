@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.spec-driven-development-github-spec-kit-microsoft-internal.create-technical-plan-file
-title: Create a technical plan.md file
+title: Create a detailed technical plan
 metadata:
-  title: Create a Technical Plan.md File
-  description: "Create a technical plan.md file."
+  title: Create a Detailed Technical Plan
+  description: "Create a detailed technical plan."
   ms.date: 12/12/2025
   author: chrishowd
   ms.author: cahowd

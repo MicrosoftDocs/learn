@@ -8,6 +8,6 @@ metadata:
   author: chrishowd
   ms.author: cahowd
   ms.topic: unit
-durationInMinutes: 8
+durationInMinutes: 12
 content: |
   [!include[](includes/3-examine-github-spec-kit.md)]

@@ -78,6 +78,49 @@ The primary commands are:
 
 These commands are shortcuts to complex prompts that GitHub Spec Kit has optimized. When you run `/speckit.plan`, for example, the AI is instructed to produce output with specific sections (architecture, data models, Constitution verification) that ensure comprehensive planning. You don't need to be an expert in prompt engineering—GitHub Spec Kit provides the proven patterns.
 
+## GitHub Spec Kit's AI agent support
+
+GitHub Spec Kit supports multiple AI coding assistants beyond GitHub Copilot, enabling teams to use their preferred AI tools while maintaining consistent spec-driven development (SDD) practices.
+
+### Multi-agent compatibility
+
+GitHub Spec Kit provides agent-specific configurations during initialization. When you run `specify init`, you select from supported agents:
+
+- **GitHub Copilot**: Integration through Visual Studio Code chat interface.
+- **Claude Code**: Integration through Anthropic's coding assistant.
+- **Cursor**: Integration through Cursor's AI features.
+- **Windsurf**: Integration through Windsurf coding environment.
+- **Amazon Q Developer**: Integration through the Amazon Web Services's coding assistant.
+- **And others**: Support for emerging AI coding tools.
+
+Each agent receives templates formatted for its specific prompt format. The underlying specification artifacts (spec.md, plan.md, tasks.md) remain identical regardless of which AI assistant you use. This agent-agnostic approach prevents vendor lock-in and allows teams to experiment with different AI tools.
+
+For enterprise development teams, this flexibility is valuable. You might use GitHub Copilot for front-end development in Visual Studio Code but use a different AI assistant for back-end services. GitHub Spec Kit ensures both assistants work from the same specifications.
+
+### Template customization
+
+While GitHub Spec Kit provides default templates optimized through research and real-world usage, teams can customize templates to match organizational needs.
+
+Template files in `.github/prompts/` are markdown files with placeholder variables. You can edit these files to add organization-specific sections. For example, you might customize the spec template to include a "Compliance Requirements" section that prompts for industry-specific compliance needs.
+
+Customization enables GitHub Spec Kit to adapt to enterprise processes. If you're in part of a team that requires security review sections in all specifications, you can add this section to the spec template. All future specifications generated with `/speckit.specify` automatically include this section.
+
+### Environment variables for feature tracking
+
+GitHub Spec Kit uses environment variables to track which feature you're currently developing. The `SPECIFY_FEATURE` variable indicates the active feature directory.
+
+In Git-based workflows, GitHub Spec Kit infers the feature from your branch name. If you're on branch `feature/document-upload`, GitHub Spec Kit automatically works with the `features/document-upload/` directory.
+
+For non-Git workflows or manual feature specification, set the environment variable explicitly:
+
+```powershell
+$env:SPECIFY_FEATURE = "001-document-upload"
+```
+
+This setting tells GitHub Spec Kit to read and write artifacts in the `features/001-document-upload/` directory regardless of Git branch.
+
+This feature tracking ensures that when you invoke `/speckit.plan`, the AI reads the correct spec.md file for your current feature rather than mixing specifications from different features.
+
 ## Integrate GitHub Spec Kit with Git workflows
 
 GitHub Spec Kit integrates into your existing development practices through several mechanisms.
@@ -102,7 +145,7 @@ For example, if you're implementing a new feature, your feature branch contains:
 
 This complete picture enables thorough review. If a reviewer questions why files are limited to 50 MB, they can reference spec.md and see that this requirement came from stakeholder discussions.
 
-### AI assistant integration
+### AI assistant integration scenario - GitHub Copilot
 
 GitHub Spec Kit works with GitHub Copilot through Visual Studio Code's chat interface. After you run `specify init --ai copilot`, the toolkit configures your workspace to recognize `/speckit.*` commands.
 
@@ -152,49 +195,6 @@ GitHub Spec Kit supports iterative development through command chaining. After g
 At any point, if requirements change, you can return to earlier phases, update artifacts, and regenerate downstream artifacts. If a stakeholder changes their mind about file size limits after you generate tasks, you update spec.md, regenerate plan.md to reflect architectural implications, regenerate tasks.md with updated validation steps, then update implementation code.
 
 This flexibility supports real-world development where requirements evolve. The specification-first approach ensures changes propagate systematically rather than being patched into code without updating documentation.
-
-## GitHub Spec Kit's AI agent support
-
-GitHub Spec Kit supports multiple AI coding assistants beyond GitHub Copilot, enabling teams to use their preferred AI tools while maintaining consistent spec-driven development (SDD) practices.
-
-### Multi-agent compatibility
-
-GitHub Spec Kit provides agent-specific configurations during initialization. When you run `specify init`, you select from supported agents:
-
-- **GitHub Copilot**: Integration through Visual Studio Code chat interface.
-- **Claude Code**: Integration through Anthropic's coding assistant.
-- **Cursor**: Integration through Cursor's AI features.
-- **Windsurf**: Integration through Windsurf coding environment.
-- **Amazon Q Developer**: Integration through the Amazon Web Services's coding assistant.
-- **And others**: Support for emerging AI coding tools.
-
-Each agent receives templates formatted for its specific prompt format. The underlying specification artifacts (spec.md, plan.md, tasks.md) remain identical regardless of which AI assistant you use. This agent-agnostic approach prevents vendor lock-in and allows teams to experiment with different AI tools.
-
-For enterprise development teams, this flexibility is valuable. You might use GitHub Copilot for front-end development in Visual Studio Code but use a different AI assistant for back-end services. GitHub Spec Kit ensures both assistants work from the same specifications.
-
-### Template customization
-
-While GitHub Spec Kit provides default templates optimized through research and real-world usage, teams can customize templates to match organizational needs.
-
-Template files in `.github/prompts/` are markdown files with placeholder variables. You can edit these files to add organization-specific sections. For example, you might customize the spec template to include a "Compliance Requirements" section that prompts for industry-specific compliance needs.
-
-Customization enables GitHub Spec Kit to adapt to enterprise processes. If you're in part of a team that requires security review sections in all specifications, you can add this section to the spec template. All future specifications generated with `/speckit.specify` automatically include this section.
-
-### Environment variables for feature tracking
-
-GitHub Spec Kit uses environment variables to track which feature you're currently developing. The `SPECIFY_FEATURE` variable indicates the active feature directory.
-
-In Git-based workflows, GitHub Spec Kit infers the feature from your branch name. If you're on branch `feature/document-upload`, GitHub Spec Kit automatically works with the `features/document-upload/` directory.
-
-For non-Git workflows or manual feature specification, set the environment variable explicitly:
-
-```powershell
-$env:SPECIFY_FEATURE = "001-document-upload"
-```
-
-This setting tells GitHub Spec Kit to read and write artifacts in the `features/001-document-upload/` directory regardless of Git branch.
-
-This feature tracking ensures that when you invoke `/speckit.plan`, the AI reads the correct spec.md file for your current feature rather than mixing specifications from different features.
 
 ## Leverage GitHub Spec Kit's optional enhancement commands
 
