@@ -5,8 +5,8 @@ metadata:
   description: Create and manage a stateful application with an external storage by using Azure Cosmos DB and Azure Kubernetes Service
   manager: rayoflores
   ms.date: 01/04/2024
-  author: nickomang
-  ms.author: nickoman
+  author: davidsmatlak
+  ms.author: davidsmatlak
   ms.topic: module
   ms.service: azure-kubernetes-service
   ms.custom:
@@ -46,4 +46,4 @@ units:
   - learn.aks-manage-application-state.4-summary
 badge:
   uid: learn.aks-manage-application-state.badge
-
+

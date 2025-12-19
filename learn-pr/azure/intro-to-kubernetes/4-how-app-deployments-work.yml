@@ -6,11 +6,11 @@ metadata:
   title: How Kubernetes works
   description: Learn about the basic Kubernetes deployment options available for applications and some considerations around network and storage configuration.
   ms.date: 11/13/2024
-  author: nickomang
-  ms.author: nickoman
+  author: davidsmatlak
+  ms.author: davidsmatlak
   ms.topic: unit
 
 durationInMinutes: 10
 content: |
   [!include[](includes/4-how-app-deployments-work.md)]
-
+
