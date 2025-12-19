@@ -4,7 +4,7 @@ Microsoft Copilot is an AI-powered assistant for personal and work use. Using Co
 
 For individuals, Copilot is an AI companion that can help you with personal tasks such as finding information on the web, writing content, and generating images.
 
-![Screenshot of Microsoft Copilot.](../media/updated_microsoft-copilot.png)
+![Screenshot of Microsoft Copilot.](../media/microsoft-copilot.png)
 
 ### Microsoft Copilot
 
