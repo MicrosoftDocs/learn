@@ -2,10 +2,10 @@
 uid: learn.wwl.get-started-ai-fundamentals
 metadata:
   title: Introduction to AI concepts
-  description: "Curious about artificial intelligence? Want to understand what all the buzz is about? This module introduces you to the world of AI."
-  ms.date: 02/24/2025
+  description: "Curious about artificial intelligence? Want to understand what the buzz is about? This module introduces you to the world of AI."
+  ms.date: 12/19/2025
   ms.update-cycle: 180-days
-  author: wwlpublish
+  author: GraemeMalcolm
   ms.author: gmalc
   ms.topic: module
   ms.collection: wwl-ai-copilot
@@ -14,8 +14,8 @@ metadata:
   ms.service: azure
   ai-usage: ai-assisted
 title: Introduction to AI concepts
-summary: Curious about artificial intelligence? Want to understand what all the buzz is about? This module introduces you to the world of AI.
-abstract: In this module, you'll learn about the kinds of solutions AI can make possible and considerations for responsible AI practices.
+summary: Curious about artificial intelligence? Want to understand what the buzz is about? This module introduces you to the world of AI.
+abstract: In this module, you learn about the kinds of solutions AI can make possible and considerations for responsible AI practices.
 prerequisites: None
 iconUrl: /training/achievements/get-started-ai-fundamentals.svg
 levels:

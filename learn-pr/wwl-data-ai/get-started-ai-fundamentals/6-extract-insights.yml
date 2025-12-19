@@ -1,16 +1,17 @@
 ### YamlMime:ModuleUnit
 # uid: learn.wwl.get-started-ai-fundamentals.understand-generative-ai
 uid: learn.wwl.get-started-ai-fundamentals.extract-insights
-title: Extract data and insights
+title: Information extraction
 metadata:
-  title: Extract data and insights
-  description: "AI can analyze forms, documents, and other content to extract daa and insights."
-  ms.date: 02/24/2025
-  author: wwlpublish
+  title: Information extraction
+  description: "AI can analyze forms, documents, and other content to extract data and insights."
+  ms.date: 12/19/2025
+  author: GraemeMalcolm
   ms.author: gmalc
   ms.topic: unit
   ms.custom:
   - N/A
+  zone_pivot_groups: video-or-text
 durationInMinutes: 4
 content: |
-  [!include[](includes/6-extract-insights.md)]
+  [!include[](includes/6-extract-insights.md)]
