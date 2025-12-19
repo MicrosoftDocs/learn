@@ -9,7 +9,7 @@
 
 ::: zone pivot="text"
 
-Hopefully, this module has given you an insight into some of the core capabilities of AI, and an intuition into how they work. We've explored many areas of AI, including:
+Hopefully, this module gave you an insight into some of the core capabilities of AI, and an intuition into how they work. We explored many areas of AI, including:
 
 - Generative AI
 - Computer vision
