@@ -14,12 +14,12 @@ Microsoft Copilot is available without subscription for personal use. You can us
 - Using the [**Copilot** pane in Microsoft Edge](https://www.microsoft.com/edge/features/copilot).
 - Downloading the [Microsoft Copilot mobile app](https://www.microsoft.com/microsoft-copilot/for-individuals/copilot-app).
 
-### Microsoft Copilot Pro
+### Microsoft 365 Copilot Chat
 
-Microsoft Copilot Pro is a subscription-based service that offers all the capabilities of Microsoft Copilot with access to the latest AI models and integration with Microsoft 365 applications like Word, Excel, Outlook, and PowerPoint.
+Microsoft 365 Copilot Chat is a subscription-based service that offers all the capabilities of Microsoft Copilot with access to the latest AI models and integration with Microsoft 365 applications like Word, Excel, Outlook, and PowerPoint.
 
 > [!NOTE]
-> To learn more about Microsoft Copilot Pro and compare features and capabilities, see [Microsoft Copilot Pro](https://www.microsoft.com/store/b/copilotpro) in the Microsoft Store web site.
+> To learn more about Microsoft Copilot 365 Chat and compare features and capabilities, see [Microsoft Copilot 365 Chat](https://www.microsoft.com/microsoft-365-copilot/chat).
 
 ## Microsoft 365 Copilot for organizations
 
