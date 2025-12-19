@@ -19,9 +19,9 @@ quiz:
     - content: "Microsoft Copilot"
       isCorrect: false
       explanation: "Incorrect. Microsoft Copilot is a good solution for individuals who need Copilot for personal use."
-    - content: "Microsoft Copilot Pro"
+    - content: "Microsoft 365 Copilot Chat"
       isCorrect: false
-      explanation: "Incorrect. Microsoft Copilot Pro is for individuals who need advanced functionality."
+      explanation: "Incorrect. Microsoft 365 Copilot Chat is for individuals who need advanced functionality."
     - content: "Microsoft 365 Copilot"
       isCorrect: true
       explanation: "Correct. Microsoft 365 Copilot is a great choice to assist employees in an organization."
@@ -36,7 +36,7 @@ quiz:
     - content: "Enter the command 'GO' after your prompt"
       isCorrect: false
       explanation: "Incorrect. Copilot prompts do not require keyword commands."
-  - content: "What should you do if Copilot returns a response that doesn’t fully answer your question?"
+  - content: "What should you do if Copilot returns a response that doesn't fully answer your question?"
     choices:
     - content: "Restart the session and try again. Copilot answers are random."
       isCorrect: false
