@@ -36,6 +36,7 @@ prerequisites: |
   [!INCLUDE [](../../includes/azure-optional-exercise-subscription-prerequisite.md)]
 
 iconUrl: /training/achievements/bicep/deploy-azure-resources-by-using-bicep-files.svg
+hidden: true
 levels:
   - beginner
 roles:
@@ -62,3 +63,4 @@ units:
 - learn.azure.deploy-azure-resources-bicep.summary
 badge:
   uid: learn.azure.deploy-azure-resources-by-using-bicep-files.badge
+
