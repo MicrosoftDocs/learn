@@ -33,6 +33,7 @@ prerequisites: |
   [!INCLUDE [](../../includes/azure-optional-exercise-subscription-prerequisite.md)]
 
 iconUrl: /training/achievements/bicep/bicep-conditions-loops.svg
+hidden: true
 levels:
   - intermediate
 roles:
@@ -59,3 +60,4 @@ units:
 - learn.azure.bicep-conditions-loops.summary
 badge:
   uid: learn.azure.bicep-conditions-loops.badge
+
