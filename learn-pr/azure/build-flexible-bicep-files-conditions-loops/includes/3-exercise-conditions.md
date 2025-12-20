@@ -1,4 +1,6 @@
-[!INCLUDE [Sandbox explanation](../../includes/azure-template-exercise-sandbox-subscription.md)]
+[!INCLUDE[](../../../includes/azure-optional-exercise-subscription-note.md)]
+
+[!INCLUDE[](../../../includes/azure-optional-exercise-create-resource-group-note.md)]
 
 You need to deploy your toy company's resources to a variety of environments, and you want to use parameters and conditions to control what gets deployed to each environment.
 
@@ -127,7 +129,7 @@ Use the Azure portal to inspect the resources that you deploy and to inspect the
 
 1. On the left pane, select **Resource groups**.
 
-1. Select **<rgn>[sandbox resource group name]</rgn>**.
+1. Select your resource group name.
 
 1. In the **Overview** section, you can see that one deployment has succeeded. You can also see that a logical server and a SQL database are deployed, but the storage account for auditing isn't deployed.
 
