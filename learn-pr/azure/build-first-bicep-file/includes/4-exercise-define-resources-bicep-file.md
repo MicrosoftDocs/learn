@@ -45,7 +45,7 @@ During the process, you'll:
 
 ::: zone pivot="cli"
 
-[!INCLUDE [Bootstrapping instructions for first Bicep exercise - CLI](../../includes/azure-template-bicep-exercise-sandbox-deploy-cli.md)]
+[!INCLUDE [Bootstrapping instructions for first Bicep exercise - CLI](../../includes/azure-template-bicep-exercise-nosandbox-deploy-cli.md)]
 
 ### Deploy the Bicep file to Azure
 
@@ -61,7 +61,7 @@ You'll see `Running...` in the terminal.
 
 ::: zone pivot="powershell"
 
-[!INCLUDE [Bootstrapping instructions for first Bicep exercise - PowerShell](../../includes/azure-template-bicep-exercise-sandbox-deploy-powershell.md)]
+[!INCLUDE [Bootstrapping instructions for first Bicep exercise - PowerShell](../../includes/azure-template-bicep-exercise-nosandbox-deploy-powershell.md)]
 
 ### Deploy the Bicep file to Azure
 
@@ -77,10 +77,7 @@ New-AzResourceGroupDeployment -Name main -TemplateFile main.bicep
 
 The first time you deploy a Bicep file, you might want to use the Azure portal to verify that the deployment has finished successfully and to inspect the results.
 
-1. Go to the [Azure portal](https://portal.azure.com?azure-portal=true) and make sure you're in the sandbox subscription:
-
-   1. Select your avatar in the upper-right corner of the page.
-   1. Select **Switch directory**. In the list, choose the **Microsoft Learn Sandbox** directory.
+1. Go to the [Azure portal](https://portal.azure.com?azure-portal=true) and make sure you're in the correct subscription.
 
 1. On the left-side panel, select **Resource groups**.
 
