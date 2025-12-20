@@ -36,6 +36,7 @@ prerequisites: |
   [!INCLUDE [](../../includes/azure-optional-exercise-subscription-prerequisite.md)]
 
 iconUrl: /training/achievements/bicep/build-reusable-bicep-files-parameters.svg
+hidden: true
 levels:
   - intermediate
 roles:
@@ -60,3 +61,4 @@ units:
 - learn.azure.build-reusable-bicep-files-parameters.summary
 badge:
   uid: learn.azure.build-reusable-bicep-files-parameters.badge
+
