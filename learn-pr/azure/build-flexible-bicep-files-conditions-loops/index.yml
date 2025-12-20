@@ -29,6 +29,9 @@ prerequisites: |
   - Either:
     - The latest [Azure CLI](/cli/azure/install-azure-cli) tools installed locally.
     - The latest [Azure PowerShell](/powershell/azure/install-az-ps) installed locally.
+
+  [!INCLUDE [](../../includes/azure-optional-exercise-subscription-prerequisite.md)]
+
 iconUrl: /training/achievements/bicep/bicep-conditions-loops.svg
 levels:
   - intermediate
@@ -56,4 +59,3 @@ units:
 - learn.azure.bicep-conditions-loops.summary
 badge:
   uid: learn.azure.bicep-conditions-loops.badge
-
