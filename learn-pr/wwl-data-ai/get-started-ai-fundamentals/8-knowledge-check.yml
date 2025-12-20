@@ -4,8 +4,8 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: "Knowledge check"
-  ms.date: 02/24/2025
-  author: wwlpublish
+  ms.date: 12/19/2025
+  author: GraemeMalcolm
   ms.author: gmalc
   ms.topic: unit
   ms.custom:
@@ -47,4 +47,4 @@ quiz:
       explanation: "Correct. Speech synthesis is used to convert text into spoken language."
     - content: "Sentiment analysis"
       isCorrect: false
-      explanation: "Incorrect. Sentiment analysis is used to determine the emotional tone of written or spoken language."
+      explanation: "Incorrect. Sentiment analysis is used to determine the emotional tone of written or spoken language."
