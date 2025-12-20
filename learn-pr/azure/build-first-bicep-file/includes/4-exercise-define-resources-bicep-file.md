@@ -1,4 +1,6 @@
-[!INCLUDE [Sandbox explanation](../../includes/azure-template-exercise-sandbox-subscription.md)]
+[!INCLUDE[](../../../includes/azure-optional-exercise-subscription-note.md)]
+
+[!INCLUDE[](../../../includes/azure-optional-exercise-create-resource-group-note.md)]
 
 For your toy-launch website, you decide to first create a proof of concept by creating a basic Bicep file. In this exercise, you'll create a storage account, Azure App Service plan, and app. Later, you'll modify the file to make it more reusable.
 
@@ -82,7 +84,7 @@ The first time you deploy a Bicep file, you might want to use the Azure portal t
 
 1. On the left-side panel, select **Resource groups**.
 
-1. Select **<rgn>[sandbox resource group name]</rgn>**.
+1. Select your resource group name.
 
 1. In **Overview**, you can see that one deployment succeeded. You might need to expand the **Essentials** area to see the deployment.
 
@@ -113,7 +115,7 @@ az deployment group list --output table
 You can also verify the deployment from the command line. To do so, run the following Azure PowerShell command:
 
 ```azurepowershell
-Get-AzResourceGroupDeployment -ResourceGroupName <rgn>[sandbox resource group name]</rgn> | Format-Table
+Get-AzResourceGroupDeployment -ResourceGroupName <your resource group name> | Format-Table
 ```
 
 ::: zone-end
