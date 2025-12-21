@@ -1,0 +1,70 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-apps-azure-kubernetes-service.module-assessment
+title: Module assessment
+metadata:
+  title: Module Assessment
+  description: Module assessment
+  ms.date: 12/16/2025
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: unit
+azureSandbox: false
+durationInMinutes: 5
+content: |
+quiz:
+  questions:
+  - content: "You need to store a database connection string for your application running on AKS. The connection string contains a password and should not be visible in your source code repository. Which Kubernetes resource should you use?"
+    choices:
+    - content: "ConfigMap, because it stores configuration data"
+      isCorrect: false
+      explanation: "ConfigMaps are designed for non-sensitive configuration. While they keep data out of container images, they should not be used for credentials or passwords."
+    - content: "Secret, because it stores sensitive values and keeps credentials out of source control"
+      isCorrect: true
+      explanation: "Secrets are the correct choice for storing sensitive values like connection strings with passwords. They keep credentials out of source control and can be protected with RBAC policies."
+    - content: "PersistentVolumeClaim, because it provides storage for application data"
+      isCorrect: false
+      explanation: "PersistentVolumeClaims provide durable filesystem storage, not a mechanism for storing and injecting credentials into Pods."
+  - content: "Your AI application reads feature flags and service endpoints from environment variables. You want to update these settings without rebuilding your container image. How should you inject these non-sensitive values into your Pods?"
+    choices:
+    - content: "Create a ConfigMap with the settings and reference the keys using configMapKeyRef in the Deployment"
+      isCorrect: true
+      explanation: "ConfigMaps are designed for non-sensitive configuration. Using configMapKeyRef lets you inject values as environment variables and update them without rebuilding images."
+    - content: "Store the values in a Secret and mount it as a volume"
+      isCorrect: false
+      explanation: "While this would work technically, Secrets are intended for sensitive data. ConfigMaps are the appropriate resource for non-sensitive configuration like feature flags."
+    - content: "Hardcode the values in the Deployment manifest and update the manifest when settings change"
+      isCorrect: false
+      explanation: "Hardcoding values in the Deployment manifest couples configuration to the deployment definition. ConfigMaps let you change settings independently of the Deployment."
+  - content: "You create a PersistentVolumeClaim in your AKS cluster. What happens when you apply the PVC manifest?"
+    choices:
+    - content: "You must manually create an Azure Disk in the Azure portal before the PVC can bind"
+      isCorrect: false
+      explanation: "AKS StorageClasses handle dynamic provisioning automatically. You do not need to manually create Azure storage resources."
+    - content: "AKS uses the specified StorageClass to automatically provision Azure storage that backs the PVC"
+      isCorrect: true
+      explanation: "AKS includes pre-configured StorageClasses that dynamically provision Azure Disk or Azure Files resources when you create a PVC. No manual storage creation is required."
+    - content: "The PVC remains unbound until you create a matching PersistentVolume manifest"
+      isCorrect: false
+      explanation: "With dynamic provisioning through StorageClasses, you do not need to manually create PersistentVolume manifests. AKS creates them automatically."
+  - content: "Your application needs to access API keys stored in a Kubernetes Secret. You want to make the keys available as environment variables in the container. Which field should you use in the Deployment manifest to reference the Secret?"
+    choices:
+    - content: "valueFrom with secretKeyRef"
+      isCorrect: true
+      explanation: "The valueFrom field with secretKeyRef is the correct way to inject Secret values as environment variables. This resolves the Secret key at Pod start time."
+    - content: "volumes with secret type"
+      isCorrect: false
+      explanation: "This approach mounts the Secret as files in the container filesystem, not as environment variables. Use this when your application reads secrets from files."
+    - content: "configMapKeyRef pointing to the Secret name"
+      isCorrect: false
+      explanation: "configMapKeyRef is used to reference ConfigMaps, not Secrets. You must use secretKeyRef to reference Secret keys."
+  - content: "You need to decide between mounting a ConfigMap as environment variables or as files. Your application reads a JSON configuration file at startup. Which approach should you choose?"
+    choices:
+    - content: "Mount the ConfigMap as environment variables because all applications can read environment variables"
+      isCorrect: false
+      explanation: "While applications can read environment variables, this approach does not provide a JSON file on disk. The application expects a file, not environment variables."
+    - content: "Mount the ConfigMap as files using a volume so the JSON file appears on disk where the application expects it"
+      isCorrect: true
+      explanation: "When an application expects configuration files on disk, mount the ConfigMap as a volume. Each key becomes a file in the mount directory."
+    - content: "Store the JSON content in a Secret and use secretKeyRef to inject it as an environment variable"
+      isCorrect: false
+      explanation: "This approach does not match the requirement. The application needs a file on disk, not an environment variable. Also, Secrets are for sensitive data, and this appears to be non-sensitive configuration."
