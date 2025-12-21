@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-apps-azure-kubernetes-service.define-configmaps
+title: Define ConfigMaps for application settings
+metadata:
+  title: Define ConfigMaps for Application Settings
+  description: Define ConfigMaps for application settings
+  ms.date: 12/14/2025
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: unit
+azureSandbox: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-define-configmaps.md)]

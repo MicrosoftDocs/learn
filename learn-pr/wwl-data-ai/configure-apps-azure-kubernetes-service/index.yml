@@ -32,8 +32,8 @@ subjects:
 - containers
 units:
 - learn.wwl.configure-apps-azure-kubernetes-service.introduction
-- learn.wwl.configure-apps-azure-kubernetes-service.configmaps
-- learn.wwl.configure-apps-azure-kubernetes-service.secrets
+- learn.wwl.configure-apps-azure-kubernetes-service.define-configmaps
+- learn.wwl.configure-apps-azure-kubernetes-service.implement-secrets
 - learn.wwl.configure-apps-azure-kubernetes-service.persistent-storage
 - learn.wwl.configure-apps-azure-kubernetes-service.exercise-configure-apps
 - learn.wwl.configure-apps-azure-kubernetes-service.module-assessment
