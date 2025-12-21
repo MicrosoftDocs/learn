@@ -1,3 +1,5 @@
+[!INCLUDE[](../../../includes/azure-optional-exercise-subscription-note.md)]
+
 For your toy company, you need to deploy virtual networks in each country/region where you're launching the teddy bear. Your developers have also asked you to give them the fully qualified domain names (FQDNs) of each of the regional Azure SQL logical servers you've deployed. 
 
 In this exercise, you'll add the virtual network and its configuration to your Bicep code, and you'll output the logical server FQDNs.
@@ -108,7 +110,7 @@ After the deployment is finished, you want to verify that new virtual networks a
 
 1. Go to the [Azure portal](https://portal.azure.com?azure-portal=true) and make sure that you're in the sandbox subscription.
 
-1. Select **<rgn>[sandbox resource group name]</rgn>**.
+1. Select your resource group name.
 
 1. Verify that the virtual networks have been deployed to the three Azure locations.
 
@@ -134,7 +136,7 @@ After the deployment is finished, you want to verify that new virtual networks a
 
 1. Go to the [Azure portal](https://portal.azure.com?azure-portal=true) and make sure that you're in the sandbox subscription.
 
-1. Select **<rgn>[sandbox resource group name]</rgn>**.
+1. Select your resource group name.
 
 1. Verify that the virtual networks have been deployed to the three Azure locations.
 
