@@ -1,4 +1,6 @@
-[!INCLUDE [Sandbox explanation](../../includes/azure-template-exercise-sandbox-subscription.md)]
+[!INCLUDE[](../../../includes/azure-optional-exercise-subscription-note.md)]
+
+[!INCLUDE[](../../../includes/azure-optional-exercise-create-resource-group-note.md)]
 
 For your toy-launch website, you decide to first create a proof of concept by creating a basic Bicep file. In this exercise, you'll create a storage account, Azure App Service plan, and app. Later, you'll modify the file to make it more reusable.
 
@@ -43,7 +45,7 @@ During the process, you'll:
 
 ::: zone pivot="cli"
 
-[!INCLUDE [Bootstrapping instructions for first Bicep exercise - CLI](../../includes/azure-template-bicep-exercise-sandbox-deploy-cli.md)]
+[!INCLUDE [Bootstrapping instructions for first Bicep exercise - CLI](../../includes/azure-template-bicep-exercise-nosandbox-deploy-cli.md)]
 
 ### Deploy the Bicep file to Azure
 
@@ -59,7 +61,7 @@ You'll see `Running...` in the terminal.
 
 ::: zone pivot="powershell"
 
-[!INCLUDE [Bootstrapping instructions for first Bicep exercise - PowerShell](../../includes/azure-template-bicep-exercise-sandbox-deploy-powershell.md)]
+[!INCLUDE [Bootstrapping instructions for first Bicep exercise - PowerShell](../../includes/azure-template-bicep-exercise-nosandbox-deploy-powershell.md)]
 
 ### Deploy the Bicep file to Azure
 
@@ -75,14 +77,11 @@ New-AzResourceGroupDeployment -Name main -TemplateFile main.bicep
 
 The first time you deploy a Bicep file, you might want to use the Azure portal to verify that the deployment has finished successfully and to inspect the results.
 
-1. Go to the [Azure portal](https://portal.azure.com?azure-portal=true) and make sure you're in the sandbox subscription:
-
-   1. Select your avatar in the upper-right corner of the page.
-   1. Select **Switch directory**. In the list, choose the **Microsoft Learn Sandbox** directory.
+1. Go to the [Azure portal](https://portal.azure.com?azure-portal=true) and make sure you're in the correct subscription.
 
 1. On the left-side panel, select **Resource groups**.
 
-1. Select **<rgn>[sandbox resource group name]</rgn>**.
+1. Select your resource group name.
 
 1. In **Overview**, you can see that one deployment succeeded. You might need to expand the **Essentials** area to see the deployment.
 
@@ -113,7 +112,7 @@ az deployment group list --output table
 You can also verify the deployment from the command line. To do so, run the following Azure PowerShell command:
 
 ```azurepowershell
-Get-AzResourceGroupDeployment -ResourceGroupName <rgn>[sandbox resource group name]</rgn> | Format-Table
+Get-AzResourceGroupDeployment -ResourceGroupName <your resource group name> | Format-Table
 ```
 
 ::: zone-end
