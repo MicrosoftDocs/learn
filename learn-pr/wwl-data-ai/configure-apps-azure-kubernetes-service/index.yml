@@ -8,7 +8,7 @@ metadata:
   ms.author: jeffko
   ms.topic: module-standard-task-based
   ai-usage: ai-assisted
-  ms.service: azure-managed-redis
+  ms.service: azure-kubernetes-service
 title: Configure applications on AKS
 summary: Learn to externalize configuration, secure sensitive settings, and attach persistent storage using Kubernetes features on AKS.
 abstract: |
