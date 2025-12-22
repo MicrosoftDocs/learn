@@ -1,0 +1,75 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.use-ai-personalize-learning-students-disabilities.knowledge-check
+title: "Module assessment"
+metadata:
+  title: "Module Assessment"
+  description: "Check your knowledge"
+  ms.date: 12/22/2025
+  author: Randall-Knapp
+  ms.author: rknapp
+  ms.topic: unit
+  module_assessment: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/7-knowledge-check.md)]
+quiz:
+  questions:
+  - content: "Which Microsoft tool can help you transform dense text into a plain‑language summary with guiding comprehension questions?"
+    choices:
+    - content: "Immersive Reader"
+      isCorrect: false
+      explanation: "Incorrect. Immersive Reader assists with reading but does not summarize text into plain language with guiding questions."
+    - content: "Copilot in Microsoft 365"
+      isCorrect: true
+      explanation: "Correct. Copilot in Microsoft 365 can generate plain-language summaries and guiding comprehension questions."
+    - content: "Reading Progress"
+      isCorrect: false
+      explanation: "Incorrect. Reading Progress is a tool to assess reading fluency, not to summarize text or create comprehension questions."
+    - content: "Math Assistant"
+      isCorrect: false
+      explanation: "Incorrect. Math Assistant helps with solving math problems, not summarizing or creating text-based comprehension questions."
+    
+  - content: "When using Reading Progress in Teams to support a student with dyslexia, which feature helps break words into syllables?"
+    choices:
+    - content: "Dictation"
+      isCorrect: false
+      explanation: "Incorrect. Dictation provides voice input for text, but does not assist in breaking words into syllables."
+    - content: "Live Captions"
+      isCorrect: false
+      explanation: "Incorrect. Live Captions provide subtitles for audio content, and do not assist in breaking down syllables in text."
+    - content: "Immersive Reader"
+      isCorrect: true
+      explanation: "Correct. Immersive Reader includes features like breaking words into syllables to support reading for students with dyslexia."
+    - content: "Accessibility Checker"
+      isCorrect: false
+      explanation: "Incorrect. Accessibility Checker identifies accessibility issues but does not assist with syllable segmentation."
+
+  - content: "What is the best prompt to use in Copilot for creating differentiated reading passages?"
+    choices:
+    - content: "Summarize this passage in one sentence."
+      isCorrect: false
+      explanation: "Incorrect. While summarizing helps condense information, it doesn't provide differentiated reading passages."
+    - content: "Create three versions of this passage: one at the current reading level, one slightly easier, and one slightly more challenging. Add two comprehension questions focused on decoding accuracy and expression."
+      isCorrect: true
+      explanation: "Correct. This prompt guides Copilot to create differentiated reading passages and accompanying comprehension questions."
+    - content: "Generate a list of vocabulary words."
+      isCorrect: false
+      explanation: "Incorrect. Creating vocabulary lists does not address the need for differentiated reading passages."
+    - content: "Translate this passage into another language."
+      isCorrect: false
+      explanation: "Incorrect. Translating the passage changes the language but does not create differentiated reading levels."
+
+  - content: "Which accessibility feature should you enable when presenting in PowerPoint to support students who are deaf or hard of hearing?"
+    choices:
+    - content: "Dictation"
+      isCorrect: false
+      explanation: "Incorrect. Dictation is for converting speech into text, but does not directly assist students who are deaf or hard of hearing during presentations."
+    - content: "Live Captions"
+      isCorrect: true
+      explanation: "Correct. Live Captions display real-time subtitles during presentations to support students who are deaf or hard of hearing."
+    - content: "Immersive Reader"
+      isCorrect: false
+      explanation: "Incorrect. Immersive Reader assists with reading but is not used to provide live captions during presentations."
+    - content: "Math Assistant"
+      isCorrect: false
+      explanation: "Incorrect. Math Assistant is focused on solving math problems and does not support live captioning for presentations."

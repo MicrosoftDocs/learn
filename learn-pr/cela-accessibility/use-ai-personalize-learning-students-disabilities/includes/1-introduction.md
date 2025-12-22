@@ -1,0 +1,2 @@
+Personalizing learning means tailoring instruction and tools so every student can access content and participate fully. For students with disabilities, this often involves assistive technology and adjustments to how lessons are delivered. In this module, you’ll learn how to use Microsoft tools like Teach in Microsoft 365 Copilot, Immersive Reader, Reading Progress, Math Assistant, PowerPoint Accessibility Checker, Dictation, and Live Captions to personalize learning efficiently and responsibly.
+

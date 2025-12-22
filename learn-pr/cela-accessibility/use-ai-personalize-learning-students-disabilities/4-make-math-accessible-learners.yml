@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.use-ai-personalize-learning-students-disabilities.make-math-accessible-learners
+title: "Make math accessible for all learners"
+metadata:
+  title: "Make Math Accessible for All Learners"
+  description: "Learn how Microsoft tools like Math Assistant and Copilot can help make math accessible for students with dyscalculia or low vision."
+  ms.date: 12/22/2025
+  author: Randall-Knapp
+  ms.author: rknapp
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-make-math-accessible-learners.md)]
