@@ -1,66 +1,71 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.introduction-ai-special-education.6-knowledge-check
+uid: learn.wwl.introduction-ai-special-education.knowledge-check
 title: "Module assessment"
 metadata:
-  title: "Module Assessment"
-  description: "Test your understanding of AI usage within special education contexts."
-  ms.date: 10/12/2023
-  author: Randall-Knapp
+  title: "Knowledge check"
+  description: "Knowledge check"
+  ms.date: 12/22/2025
+  author: wwlpublish
   ms.author: rknapp
   ms.topic: unit
   module_assessment: false
-durationInMinutes: 10
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-knowledge-check.md)]
 quiz:
   questions:
-  - content: "True or False: AI tools can completely replace teacher judgment in creating Individualized Education Programs (IEPs)."
+  - content: "Which best describes the role of AI in special education?"
     choices:
-    - content: "True"
+    - content: "AI replaces teacher decision-making"
       isCorrect: false
-      explanation: "Incorrect. AI is a support tool that augments teacher expertise; teachers must remain the decision-makers."
-    - content: "False"
+      explanation: "Incorrect. AI does not replace teacher decision-making; instead, it complements their work."
+    - content: "AI supports teachers by streamlining tasks and creating inclusive learning environments"
       isCorrect: true
-      explanation: "Correct. AI is a support tool that augments teacher expertise; teachers must remain the decision-makers."
-  - content: "Which Microsoft AI principle emphasizes being open about AI use with families?"
+      explanation: "Correct. AI supports teachers by automating tasks and promoting inclusive education environments."
+    - content: "AI eliminates the need for accessibility tools"
+      isCorrect: false
+      explanation: "Incorrect. AI enhances accessibility tools rather than eliminating the need for them."
+  - content: "What is one example of how AI can help teachers communicate with families?"
     choices:
+    - content: "Drafting multilingual caregiver updates using Microsoft 365 Copilot and Translator"
+      isCorrect: true
+      explanation: "Correct. AI tools like Microsoft 365 Copilot and Translator facilitate drafting multilingual caregiver communication."
+    - content: "Automatically scheduling parent-teacher conferences without teacher input"
+      isCorrect: false
+      explanation: "Incorrect. Effective scheduling involves teacher input to accommodate unique needs."
+    - content: "Sending progress reports without review"
+      isCorrect: false
+      explanation: "Incorrect. AI should assist, but teacher review ensures accurate communication."
+  - content: "Which is a key challenge of using AI in education?"
+    choices:
+    - content: "AI tools are too slow to be useful"
+      isCorrect: false
+      explanation: "Incorrect. While speed may vary, it is not a prominent challenge. Privacy and accuracy are bigger concerns."
+    - content: "Risk of bias, inaccuracies, and privacy violations if outputs are not reviewed"
+      isCorrect: true
+      explanation: "Correct. AI-powered education tools must be reviewed to mitigate risks like bias and privacy violations."
+    - content: "AI cannot generate differentiated materials"
+      isCorrect: false
+      explanation: "Incorrect. AI can help generate differentiated materials based on input parameters."
+  - content: "Which principle is NOT part of Microsoft’s Responsible AI framework?"
+    choices:
+    - content: "Fairness"
+      isCorrect: false
+      explanation: "Incorrect. Fairness is a core principle of Microsoft’s Responsible AI framework."
     - content: "Transparency"
+      isCorrect: false
+      explanation: "Incorrect. Transparency is a vital principle within the Responsible AI framework."
+    - content: "Automation"
       isCorrect: true
-      explanation: "Correct. Transparency ensures families are informed about AI's role in educational processes."
-    - content: "Accountability"
-      isCorrect: false
-      explanation: "Incorrect. While accountability is important, transparency is the principle focusing on openness with families."
-    - content: "Privacy"
-      isCorrect: false
-      explanation: "Incorrect. Privacy pertains to protecting information, not specifically communicating AI usage to families."
-  - content: "Name three ways AI can support special education teachers."
+      explanation: "Correct. Automation is not a principle of Microsoft’s Responsible AI framework; it focuses on fairness and transparency instead."
+  - content: "When drafting prompts for AI tools, what is the best practice to protect student privacy?"
     choices:
-    - content: "Generating differentiated lesson plans, adapting reading levels, providing real-time translation"
+    - content: "Include full student names and detailed personal data"
+      isCorrect: false
+      explanation: "Incorrect. Sharing identifiable student information violates privacy best practices."
+    - content: "Use general descriptors and avoid personally identifiable information"
       isCorrect: true
-      explanation: "Correct. These are effective ways AI can assist special education teachers in their work."
-    - content: "Drafting progress reports, analyzing student performance data"
+      explanation: "Correct. Using vague or non-identifiable descriptors ensures student privacy."
+    - content: "Share prompts publicly for collaboration"
       isCorrect: false
-      explanation: "These are valid ways AI can support teachers, but this choice lists two examples rather than the requested three."
-    - content: "Standardizing instruction approaches across all students"
-      isCorrect: false
-      explanation: "Incorrect. Special education requires personalized approaches, not standardization."
-  - content: "What should you do before sharing AI-generated content with students or families?"
-    choices:
-    - content: "Share content as-is generated by AI tools"
-      isCorrect: false
-      explanation: "Incorrect. Reviewing for accuracy, bias, and alignment with school policies is essential before sharing."
-    - content: "Review it for accuracy, bias, appropriateness, and alignment with school policies; individualize as needed"
-      isCorrect: true
-      explanation: "Correct. This step ensures the content is accurate and suited for the intended audience."
-    - content: "Provide content without considering appropriateness"
-      isCorrect: false
-      explanation: "Incorrect. Ensuring appropriateness and compliance with policies is a critical step."
-  - content: "According to the Center for Democracy and Technology study, what percentage of teachers used AI for IEP/504 development in 2024-2025?"
-    choices:
-    - content: "57%"
-      isCorrect: true
-      explanation: "Correct. The study indicated that 57% of teachers used AI tools for IEP/504 development during 2024-2025."
-    - content: "65%"
-      isCorrect: false
-      explanation: "Incorrect. The percentage was reported at 57%, not 65%."
-    - content: "50%"
-      isCorrect: false
-      explanation: "Incorrect. While AI adoption is notable, the actual percentage was 57%."
+      explanation: "Incorrect. Sharing prompts publicly undermines privacy; information should remain secure."

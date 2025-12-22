@@ -1,21 +1,23 @@
 ### YamlMime:Module
 uid: learn.wwl.introduction-ai-special-education
 metadata:
-  title: "Learn AI in Special Education"
+  title: "Introduction to AI in Special Education"
   description: "Explore practical AI tools to enhance teaching, boost student outcomes, and streamline work in special education environments responsibly."
   ms.date: 11/18/2025
   author: Randall-Knapp
   ms.author: rknapp
   ms.topic: module
   ms.service: microsoft-syntex
-title: "Apply AI tools in special education environments"
+title: "Introduction to AI in Special Education"
 summary: Discover how AI supports educators in special education by improving teaching practices, student outcomes, and workflow efficiency responsibly.
 abstract: |
   After completing this module, you will be able to:
-  - Understand the practical applications of AI in special education.
-  - Identify the benefits and challenges of implementing AI tools.
-  - Develop a framework for responsible AI integration in teaching practices.
-  - Maintain human judgment essential to effective special education teaching.
+  - Describe the role of artificial intelligence (AI) in supporting special education environments.  
+  - Identify key benefits and challenges of implementing AI tools in special education, including time‑saving strategies and the importance of oversight for compliance and privacy.  
+  - Explain how AI can assist with differentiated instruction, multilingual communication, and administrative tasks to enhance student outcomes and teacher effectiveness.  
+  - Apply Microsoft’s Responsible AI Principles to ensure ethical and student‑centered use of AI in the classroom.  
+  - Evaluate AI‑generated outputs for accuracy, fairness, and alignment with individualized education program (IEP) goals and legal requirements.
+
 prerequisites: |
   - Familiarity with special education principles.
   - Basic understanding of educational technology tools.
