@@ -1,0 +1,42 @@
+### YamlMime:Module
+uid: learn.wwl.configure-apps-azure-kubernetes-service
+metadata:
+  title: Configure Applications on AKS
+  description: Externalize configuration, secure sensitive settings, and attach persistent storage for applications running on AKS.
+  ms.date: 12/14/2025
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: module-standard-task-based
+  ai-usage: ai-assisted
+  ms.service: azure-kubernetes-service
+title: Configure applications on AKS
+summary: Learn to externalize configuration, secure sensitive settings, and attach persistent storage using Kubernetes features on AKS.
+abstract: |
+  After completing this module, you'll be able to:
+    - Explain how to externalize app configuration using Kubernetes primitives.
+    - Implement ConfigMaps and inject settings into Pods.
+    - Implement Secrets and consume sensitive values securely.
+    - Attach persistent storage using PersistentVolume and PersistentVolumeClaim.
+prerequisites: |
+  Before beginning this module, you should have:
+  - Programming experience with languages such as Python, JavaScript, or C#.
+  - Basic understanding of Azure services and cloud computing concepts.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- azure-kubernetes-service
+subjects:
+- containers
+units:
+- learn.wwl.configure-apps-azure-kubernetes-service.introduction
+- learn.wwl.configure-apps-azure-kubernetes-service.define-configmaps
+- learn.wwl.configure-apps-azure-kubernetes-service.implement-secrets
+- learn.wwl.configure-apps-azure-kubernetes-service.persistent-storage
+- learn.wwl.configure-apps-azure-kubernetes-service.exercise-configure-apps
+- learn.wwl.configure-apps-azure-kubernetes-service.module-assessment
+- learn.wwl.configure-apps-azure-kubernetes-service.summary
+badge:
+  uid: learn.wwl.configure-apps-azure-kubernetes-service.badge
