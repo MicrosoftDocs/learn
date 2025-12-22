@@ -4,7 +4,7 @@ Responsible use means staying in control of the task, keeping student privacy at
 
 - **Plan:** Choose tasks like creating accessible reading passages or multilingual family updates. Work inside your organization’s Microsoft 365 tenant so prompts and outputs are protected by your district’s policies. Use general descriptors (e.g., “a fifth‑grade student who uses text to speech”) rather than personally identifiable information unless your district has approved a tool for PII.  
   > [!TIP]
-  > Only use AI tools that are approved by your district._
+  > Only use AI tools that are approved by your district.
 
 - **Prompt:** Be specific and privacy‑preserving.  
   - In **Copilot in Word**, you might ask: *“Draft three strengths‑based reading goals for a fifth‑grade student who benefits from text to speech and decodable texts. Use measurable language and include one example progress measure.”*  
