@@ -34,16 +34,20 @@ Instead, let's update the app to have the `MovieDetailPage` read the selected mo
     ```
 
 1. Next, open the *Views\\MoviesListPage.xaml* file.
-1. Locate the `CollectionView` element, and add the `SelectedItem` attribute:
+1. Locate the `CollectionView` element, and add the `SelectedItem` attribute. Also ensure `SelectionMode` is set to `Single`:
 
     ```xaml
-    <CollectionView ItemsSource="{Binding Movies}" SelectedItem="{Binding SelectedMovie, Mode=OneWayToSource}" Margin="10" SelectionMode="Single" ... >
+    <CollectionView ItemsSource="{Binding Movies}" 
+                    SelectedItem="{Binding SelectedMovie, Mode=OneWayToSource}" 
+                    Margin="10" 
+                    SelectionMode="Single"
+                    SelectionChanged="CollectionView_SelectionChanged">
     ```
 
     This attribute binds the selected item of the list to the new property in the viewmodel.
 
 1. Open the code-behind file for the view, *Views\\MoviesListPage.xaml.cs*.
-1. Replace the `CollectionView_SelectionChanged` event handler code with the following code:
+1. Locate the `CollectionView_SelectionChanged` event handler. Replace it with the following code:
 
     ```csharp
     private async void CollectionView_SelectionChanged(object sender, SelectionChangedEventArgs e)

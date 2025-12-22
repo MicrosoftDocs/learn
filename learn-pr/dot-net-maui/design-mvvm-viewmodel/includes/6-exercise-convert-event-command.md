@@ -8,7 +8,7 @@ This project displays a list of movies. Clicking on a movie navigates to a detai
 
 1. Clone or download the [exercise repo](https://github.com/MicrosoftDocs/mslearn-dotnetmaui-mvvm1).
 1. Navigate to the *part6-exercise2* folder and open the *MovieCatalog.sln* solution.
-1. Build and run the project to make sure it works. When the screen is displayed, you should see a list of movies. Right-click on one of the listed movies and the app navigates to a detail page.
+1. Build and run the project to make sure it works. When the screen is displayed, you should see a list of movies. Swipe left on one of the listed movies to reveal the delete action.
 
 ## Examine the code
 
