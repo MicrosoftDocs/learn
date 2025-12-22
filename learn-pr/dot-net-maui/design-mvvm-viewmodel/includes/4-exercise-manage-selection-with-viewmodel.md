@@ -3,7 +3,7 @@ For our exercise, we briefly leave behind the example of the human resources app
 > [!NOTE]
 > This exercise uses `ListView` for educational purposes. In .NET MAUI 10, `ListView` is deprecated and `CollectionView` should be used instead for new applications. The concepts demonstrated in this exercise about viewmodel selection and data binding apply equally to `CollectionView`.
 
-[!include[](../../../includes/dotnet9-sdk-version.md)]
+[!include[](../../../includes/dotnet10-sdk-version.md)]
 
 ## Open the starter solution
 
