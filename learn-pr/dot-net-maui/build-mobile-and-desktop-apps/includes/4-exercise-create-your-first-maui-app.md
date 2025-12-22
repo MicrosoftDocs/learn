@@ -5,7 +5,7 @@ In this exercise, you start to build the .NET MAUI (Multi-platform Application U
 1. Open Visual Studio and create a new solution. This action opens the New Project wizard in Visual Studio.
 
     > [!TIP]
-    > Make sure you have the .NET MAUI workload installed with Visual Studio 2022 v17.12 or later with .NET 10. [More info here.](/dotnet/maui/get-started/installation)
+    > Make sure you have the .NET MAUI workload installed with Visual Studio 2026 or later with .NET 10. [More info here.](/dotnet/maui/get-started/installation)
 
 1. Select the **MAUI** project type, select the **.NET MAUI App** template, and select **Next**.
 
