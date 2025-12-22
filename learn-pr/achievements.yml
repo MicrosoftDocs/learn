@@ -7390,3 +7390,9 @@ achievements:
   title: Host your own build agent in Azure Pipelines
   summary: Learn how to use your own build agent when Microsoft-hosted agents don't meet your needs.
   iconUrl: /training/achievements/azure-devops/host-your-own-build-server-in-your-build-pipeline.svg
+- uid: learn.azure.publish-static-web-app-and-api-dotnet.badge
+  type: badge
+  title: Publish a Blazor WebAssembly app and .NET API with Azure Static Web Apps
+  summary: Automatically deploy and update a Blazor web application and its API from a GitHub repository.
+  iconUrl: /training/achievements/publish-static-web-app-and-api-dotnet.svg
+  

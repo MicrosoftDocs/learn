@@ -61308,6 +61308,71 @@
       "source_path": "learn-pr/azure-devops/host-build-agent/index.yml",
       "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/agents/agents?view=azure-devops&tabs=yaml%2Cbrowser",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-app-service-static-web-app-api-dotnet/index.yml",
+      "redirect_url": "https://learn.microsoft.com/aspnet/core/blazor/host-and-deploy/webassembly/azure-static-web-apps?view=aspnetcore-10.0",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-app-service-static-web-app-api-dotnet/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/aspnet/core/blazor/host-and-deploy/webassembly/azure-static-web-apps?view=aspnetcore-10.0",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-app-service-static-web-app-api-dotnet/2-exercise-get-started.yml",
+      "redirect_url": "https://learn.microsoft.com/aspnet/core/blazor/host-and-deploy/webassembly/azure-static-web-apps?view=aspnetcore-10.0",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-app-service-static-web-app-api-dotnet/3-static-web-apps.yml",
+      "redirect_url": "https://learn.microsoft.com/aspnet/core/blazor/host-and-deploy/webassembly/azure-static-web-apps?view=aspnetcore-10.0",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-app-service-static-web-app-api-dotnet/4-exercise-static-web-apps.yml",
+      "redirect_url": "https://learn.microsoft.com/aspnet/core/blazor/host-and-deploy/webassembly/azure-static-web-apps?view=aspnetcore-10.0",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-app-service-static-web-app-api-dotnet/5-fallback-routes.yml",
+      "redirect_url": "https://learn.microsoft.com/aspnet/core/blazor/host-and-deploy/webassembly/azure-static-web-apps?view=aspnetcore-10.0",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-app-service-static-web-app-api-dotnet/6-exercise-fallback-routes.yml",
+      "redirect_url": "https://learn.microsoft.com/aspnet/core/blazor/host-and-deploy/webassembly/azure-static-web-apps?view=aspnetcore-10.0",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-app-service-static-web-app-api-dotnet/7-build-api.yml",
+      "redirect_url": "https://learn.microsoft.com/aspnet/core/blazor/host-and-deploy/webassembly/azure-static-web-apps?view=aspnetcore-10.0",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-app-service-static-web-app-api-dotnet/8-exercise-function-app.yml",
+      "redirect_url": "https://learn.microsoft.com/aspnet/core/blazor/host-and-deploy/webassembly/azure-static-web-apps?view=aspnetcore-10.0",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-app-service-static-web-app-api-dotnet/9-action.yml",
+      "redirect_url": "https://learn.microsoft.com/aspnet/core/blazor/host-and-deploy/webassembly/azure-static-web-apps?view=aspnetcore-10.0",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-app-service-static-web-app-api-dotnet/10-exercise-action.yml",
+      "redirect_url": "https://learn.microsoft.com/aspnet/core/blazor/host-and-deploy/webassembly/azure-static-web-apps?view=aspnetcore-10.0",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-app-service-static-web-app-api-dotnet/11-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/aspnet/core/blazor/host-and-deploy/webassembly/azure-static-web-apps?view=aspnetcore-10.0",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-app-service-static-web-app-api-dotnet/12-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/aspnet/core/blazor/host-and-deploy/webassembly/azure-static-web-apps?view=aspnetcore-10.0",
+      "redirect_document_id": false
     }
   ]
 }
