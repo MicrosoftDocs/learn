@@ -6,8 +6,6 @@ While this module focused on orchestrating a collection of Docker containers usi
 
 In this module, you worked with a microservices solution using containers. However, there are many ways to implement microservice solutions in Azure using a wide variety of technologies. To learn more, see [Building microservices on Azure](/azure/architecture/microservices/?azure-portal=true).
 
-The microservices solution in this module had been refactored from a larger monolithic application. To learn more about migrating larger applications into smaller services, see [Decompose a monolithic application into a microservices architecture](/training/modules/microservices-architecture/?azure-portal=true).
-
 The microservices solution in this module used various platforms and services, including Docker, Azure Container Registry, and Kubernetes. To learn more about these and related container-centric technologies in Azure, such as Azure Container Instances and App Service, see the [Administer containers in Azure learning path](../../../paths/administer-containers-in-azure/index.yml?azure-portal=true).
 
 ## Learning path summary

@@ -8,7 +8,7 @@ AI applications in Azure typically combine five layers of services:
 - **Retrieval services**: Azure AI Search or vector indexes are used to supply context and keep responses grounded in organizational data.
 - **Application layer**: Web apps, APIs, or copilots connect user input to models and return results.
 - **Data layer**: Storage accounts and databases hold prompts, cached responses, logs, and training or evaluation datasets.
-- **Orchestration and management**: Azure AI Foundry provides tools for building, testing, and operationalizing AI solutions.
+- **Orchestration and management**: Microsoft Foundry provides tools for building, testing, and operationalizing AI solutions.
 
 These components resemble other workloads in Azure. What changes is how sensitive data flows through them and how users interact with the system.
 

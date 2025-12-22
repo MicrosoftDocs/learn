@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.spec-driven-development-github-spec-kit-microsoft-internal.examine-github-spec-kit
+title: Examine the GitHub Spec Kit
+metadata:
+  title: Examine the GitHub Spec Kit
+  description: "Examine the GitHub Spec Kit."
+  ms.date: 12/12/2025
+  author: chrishowd
+  ms.author: cahowd
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/3-examine-github-spec-kit.md)]

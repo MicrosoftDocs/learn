@@ -27,7 +27,7 @@ abstract: |
 prerequisites: |
   Before starting, you should have:
   - Experience managing Microsoft Defender for Cloud plans and Azure configurations
-  - Familiarity with Azure AI services such as Azure AI Foundry, Azure OpenAI, or Azure Machine Learning
+  - Familiarity with Azure AI services such as Microsoft Foundry, Azure OpenAI, or Azure Machine Learning
   - Basic understanding of threat detection, incident response, and cloud security posture management (CSPM)
 
 iconUrl: /training/achievements/generic-badge.svg

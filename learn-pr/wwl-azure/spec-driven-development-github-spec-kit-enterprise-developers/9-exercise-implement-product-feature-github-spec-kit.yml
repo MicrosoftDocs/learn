@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.spec-driven-development-github-spec-kit-microsoft-internal.exercise-implement-product-feature-github-spec-kit
+title: Exercise - Implement a product feature using GitHub Spec Kit
+metadata:
+  title: Exercise - Implement a Product Feature using GitHub Spec Kit
+  description: "Exercise - Implement a product feature using GitHub Spec Kit."
+  ms.date: 12/12/2025
+  author: chrishowd
+  ms.author: cahowd
+  ms.topic: unit
+durationInMinutes: 75
+content: |
+  [!include[](includes/9-exercise-implement-product-feature-github-spec-kit.md)]
