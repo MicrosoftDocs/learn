@@ -225,6 +225,9 @@ public static class PhonewordTranslator
 
     The parameters to `DisplayAlert` are a title, a message, and two strings used for the Accept and Cancel button text. It returns a Boolean indicating whether the Accept button was pressed to dismiss the dialog box.
 
+    > [!NOTE]
+    > Starting with .NET MAUI 10, `DisplayAlert` and `DisplayActionSheet` are deprecated. For new applications, consider using community packages like `CommunityToolkit.Maui.Alerts` for displaying alerts and prompts.
+
     ```csharp
     async void OnCall(object sender, System.EventArgs e)
     {
