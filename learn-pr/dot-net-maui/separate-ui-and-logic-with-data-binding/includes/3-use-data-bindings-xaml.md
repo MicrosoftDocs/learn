@@ -64,7 +64,10 @@ The `Slider.Value` property is bound to the `Label.Rotation` property, but in a 
 
 :::image type="content" source="../media/3-use-data-bindings-xaml/rotate.gif" alt-text="An animated image of a slider control being dragged with a mouse. As the slider moves, a piece of text rotates to match the position of the slider.":::
 
-The typical scenario for binding controls to one another is when a control—usually a collection control such as a `ListView` or `CarouselView`—has a selected item that you want to use as a data source. In the example of a page displaying the weather forecast, you might have a `ListView` present a five-day forecast. When the user selects a day in the list, the details of that weather forecast are displayed in other controls. If the user selects another day, the other controls are again updated with the selected day's details.
+The typical scenario for binding controls to one another is when a control—usually a collection control such as a `CollectionView` or `CarouselView`—has a selected item that you want to use as a data source. In the example of a page displaying the weather forecast, you might have a `CollectionView` present a five-day forecast. When the user selects a day in the list, the details of that weather forecast are displayed in other controls. If the user selects another day, the other controls are again updated with the selected day's details.
+
+> [!NOTE]
+> In .NET MAUI 10, `ListView` is deprecated in favor of `CollectionView`. Use `CollectionView` for displaying lists of data in new applications.
 
 ## Use the same source across multiple bindings
 

@@ -1,5 +1,8 @@
 For our exercise, we briefly leave behind the example of the human resources app. Instead we work with an application that lists movies. The app already has a couple of pages and viewmodels that have some basic bindings. The two pages are a list page and a detail page. We modify the selection logic so that the `ListView` and the detail page use the same viewmodel property.
 
+> [!NOTE]
+> This exercise uses `ListView` for educational purposes. In .NET MAUI 10, `ListView` is deprecated and `CollectionView` should be used instead for new applications. The concepts demonstrated in this exercise about viewmodel selection and data binding apply equally to `CollectionView`.
+
 [!include[](../../../includes/dotnet9-sdk-version.md)]
 
 ## Open the starter solution

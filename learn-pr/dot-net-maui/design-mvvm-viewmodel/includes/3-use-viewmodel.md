@@ -55,6 +55,9 @@ public string Name
 
 You can use a viewmodel at any level where there's a view. A page usually *has* a viewmodel, but so might subviews of the page. One common reason for nested viewmodels is when the page displays a `ListView` on the page. The list has a viewmodel that represents the collection, such as `EmployeeListViewModel`. Each element in the list is an `EmployeeViewModel`.
 
+> [!NOTE]
+> Starting with .NET MAUI 10, `ListView` is deprecated in favor of `CollectionView`. While this content uses `ListView` for illustration, the same viewmodel patterns and concepts apply when using `CollectionView`.
+
 :::image type="content" source="../media/employee-list-viewmodel.png" alt-text="Diagram of an EmployeeListViewModel with several EmployeeViewModel subobjects.":::
 
 It's also common to have a top-level viewmodel that holds data and state for the entire application but isn't associated with any particular page. Such a viewmodel is commonly used for maintaining the "active" item. Consider the `ListView` example that we just described. When the user selects an employee row, that employee represents the *current item*. If the user navigates to a detail page or selects a toolbar button while that row is selected, the action or display should be for that employee. An elegant way of handling this scenario is to have the `ListView.SelectItem` data-bound to a property that the toolbar or detail page can also access. Putting that property on a central viewmodel works well.

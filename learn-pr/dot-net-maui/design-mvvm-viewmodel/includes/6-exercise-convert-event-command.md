@@ -1,5 +1,8 @@
 In this exercise, swap back to the "movie list" app you worked with in the previous exercise. This time, you convert the **Delete** menu's event handler to a command.
 
+> [!NOTE]
+> This exercise uses `ListView` with context actions for educational purposes. In .NET MAUI 10, `ListView` is deprecated and `CollectionView` with `SwipeView` should be used instead for new applications. The command pattern concepts demonstrated in this exercise apply to both controls.
+
 ## Download and run the sample
 
 [!include[](../../../includes/android-windows-path-length-warning-maui.md)]
