@@ -1,5 +1,3 @@
-# Attach persistent storage to an app
-
 AI services sometimes need durable storage for embeddings, cached artifacts, or conversation state. Container filesystems are ephemeral by default. Data is lost when a Pod restarts or moves to a different node. PersistentVolume (PV) and PersistentVolumeClaim (PVC) provide storage that survives Pod restarts and rescheduling. You declare a PVC to request storage with specific capacity and access modes. Kubernetes binds the claim to a PersistentVolume that meets your requirements. Azure provides multiple storage options for AKS including CSI drivers that integrate Azure storage services and Azure Container Storage for container-optimized performance.
 
 This unit focuses on using CSI drivers with standard Kubernetes storage patterns. CSI drivers provision Azure Disk or Azure Files resources through pre-configured StorageClasses.
@@ -75,7 +73,7 @@ spec:
 
 ## Verify persistence
 
-Apply your PVC and Deployment manifests. Use `kubectl describe pvc` to check that the claim is bound to a volume. Use `kubectl get pods` to confirm your Pods are running. To test persistence, write a file to the mount path inside a Pod. Delete the Pod and wait for Kubernetes to create a replacement. Check that the file still exists in the new Pod to confirms that data survives Pod restarts. Before you move to production, run small load tests to verify that I/O performance meets your expectations. These manifests are typically stored in files named *pvc.yaml* (PVC) and *deployment.yaml* (Deployment).
+Apply your PVC and Deployment manifests. Use `kubectl describe pvc` to check that the claim is bound to a volume. Use `kubectl get pods` to confirm your Pods are running. To test persistence, write a file to the mount path inside a Pod. Delete the Pod and wait for Kubernetes to create a replacement. Check that the file still exists in the new Pod to confirm that data survives Pod restarts. Before you move to production, run small load tests to verify that I/O performance meets your expectations. These manifests are typically stored in files named *pvc.yaml* (PVC) and *deployment.yaml* (Deployment).
 
 ```bash
 kubectl apply -f pvc.yaml
