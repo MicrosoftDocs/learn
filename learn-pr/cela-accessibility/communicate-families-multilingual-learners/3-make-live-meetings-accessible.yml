@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.communicate-families-multilingual-learners.make-live-meetings-accessible
+title: "Make live meetings accessible to families"
+metadata:
+  title: "Make Live Meetings Accessible"
+  description: "Learn how to make live meetings inclusive for families by using captions, accessibility features, and follow-up tools to improve engagement."
+  ms.date: 12/22/2025
+  author: Randall-Knapp
+  ms.author: rknapp
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/3-make-live-meetings-accessible.md)]

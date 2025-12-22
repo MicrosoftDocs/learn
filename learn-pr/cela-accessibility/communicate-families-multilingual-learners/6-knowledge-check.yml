@@ -1,0 +1,72 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.communicate-families-multilingual-learners.knowledge-check
+title: "Module assessment"
+metadata:
+  title: "Knowledge check"
+  description: "Knowledge check"
+  ms.date: 12/22/2025
+  author: Randall-Knapp
+  ms.author: rknapp
+  ms.topic: unit
+  module_assessment: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  questions:
+  - content: "Which Microsoft tool enables real‑time translation during live meetings?"
+    choices:
+    - content: "Microsoft Translator"
+      isCorrect: false
+      explanation: "Incorrect. While Microsoft Translator supports translation, it is not integrated into Teams for live captions during meetings."
+    - content: "Microsoft Teams Live Captions"
+      isCorrect: true
+      explanation: "Correct. Microsoft Teams Live Captions provides real-time translation during live meetings."
+    - content: "Copilot in Word"
+      isCorrect: false
+      explanation: "Incorrect. Copilot in Word is not used for live translation in meetings."
+    - content: "Immersive Reader"
+      isCorrect: false
+      explanation: "Incorrect. Immersive Reader focuses on improving accessibility for reading and comprehension, not live meeting translations."
+  - content: "What is the first step to enable Live Captions in a Teams meeting?"
+    choices:
+    - content: "Turn on transcription"
+      isCorrect: false
+      explanation: "Incorrect. Transcription does not enable Live Captions during a Teams meeting."
+    - content: "Select Show live captions under More actions"
+      isCorrect: true
+      explanation: "Correct. This is the first step to enabling Live Captions during a Teams meeting."
+    - content: "Install Teams Premium"
+      isCorrect: false
+      explanation: "Incorrect. Teams Premium might offer additional features but is not required to enable Live Captions."
+    - content: "Share meeting notes"
+      isCorrect: false
+      explanation: "Incorrect. Sharing meeting notes is unrelated to enabling Live Captions."
+  - content: "How can educators use Copilot to rewrite IEP goals to help engage families?"
+    choices:
+    - content: "Make goals shorter"
+      isCorrect: false
+      explanation: "Incorrect. Shortening goals does not necessarily make them more engaging or understandable for families."
+    - content: "Convert goals into plain language"
+      isCorrect: true
+      explanation: "Correct. Using plain language helps make IEP goals more accessible and engaging for families."
+    - content: "Remove all technical details"
+      isCorrect: false
+      explanation: "Incorrect. Removing all technical details may cause the goals to lose their specificity and clarity."
+    - content: "Create legal compliance reports"
+      isCorrect: false
+      explanation: "Incorrect. Legal compliance reports don’t necessarily aid in family engagement regarding IEP goals."
+  - content: "What is a best practice for ensuring caption accuracy?"
+    choices:
+    - content: "Speak quickly"
+      isCorrect: false
+      explanation: "Incorrect. Speaking quickly may reduce caption accuracy due to decreased clarity."
+    - content: "Avoid background noise and overlapping speakers"
+      isCorrect: true
+      explanation: "Correct. Reducing background noise and managing speaker overlap contributes to higher caption accuracy."
+    - content: "Use multiple microphones"
+      isCorrect: false
+      explanation: "Incorrect. Multiple microphones are unnecessary for caption accuracy under normal circumstances."
+    - content: "Skip transcription"
+      isCorrect: false
+      explanation: "Incorrect. Transcription is essential for generating accurate captions."

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.communicate-families-multilingual-learners.summary
+title: "Summary"
+metadata:
+  title: "Connect With Multilingual Families"
+  description: "Learn inclusive strategies to communicate with multilingual families by using translation, accessibility tools, and culturally responsive practices."
+  ms.date: 12/22/2025
+  author: Randall-Knapp
+  ms.author: rknapp
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/7-summary.md)]

@@ -1,0 +1,56 @@
+### YamlMime:Module
+uid: learn.wwl.communicate-families-multilingual-learners
+metadata:
+  title: "Communicate With Multilingual Families"
+  description: "Learn to use AI tools to simplify and translate educational communications, ensuring inclusivity and accessibility for diverse families."
+  ms.date: 12/22/2025
+  author: Randall-Knapp
+  ms.author: rknapp
+  ms.topic: module
+  ms.service: azure-ai-translator
+title: "Communicate with multilingual families using AI tools"
+summary: Build inclusive and clear communication strategies using AI tools for multilingual families and parents with disabilities.
+abstract: |
+  After completing this module, you will be able to:
+  - Identify common barriers to effective communication with families and multilingual learners, including language differences and complex terminology.
+  - Apply AI tools, such as Copilot and Microsoft Translator, to translate and simplify educational documents for families.
+  - Utilize strategies to make both written and live meeting communications accessible and culturally responsive for all families, including those with disabilities.
+  - Evaluate and revise communication to ensure clarity, inclusiveness, and engagement with diverse family communities.
+prerequisites: |
+  - Basic familiarity with Microsoft tools such as Word and Teams.
+  - Knowledge of family engagement practices in educational settings.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- technical-writer
+- k-12-educator
+- ai-engineer
+- technology-manager
+- higher-ed-educator
+products:
+- azure
+- document-intelligence
+- language-service
+- azure-translator-speech
+- m365
+- microsoft-365-copilot-chat
+- microsoft-365-copilot
+subjects:
+- business-applications
+- communication
+- collaboration
+- artificial-intelligence
+- natural-language-processing
+- infrastructure
+- accessibility
+units:
+- learn.wwl.communicate-families-multilingual-learners.introduction
+- learn.wwl.communicate-families-multilingual-learners.translate-simplify-written-communication
+- learn.wwl.communicate-families-multilingual-learners.make-live-meetings-accessible
+- learn.wwl.communicate-families-multilingual-learners.offer-flexible-engagement-options
+- learn.wwl.communicate-families-multilingual-learners.reflection-exercise
+- learn.wwl.communicate-families-multilingual-learners.knowledge-check
+- learn.wwl.communicate-families-multilingual-learners.summary
+badge:
+  uid: learn.wwl.communicate-families-multilingual-learners.badge

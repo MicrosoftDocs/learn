@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.communicate-families-multilingual-learners.reflection-exercise
+title: "Reflect on communication with multilingual families"
+metadata:
+  title: "Reflect on Communication Practices"
+  description: "Learn to improve your communication practices for multilingual families using AI tools. Explore inclusive strategies and document actionable changes."
+  ms.date: 12/22/2025
+  author: Randall-Knapp
+  ms.author: rknapp
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-reflection-exercise.md)]
