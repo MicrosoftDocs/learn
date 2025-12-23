@@ -1,16 +1,16 @@
 ### YamlMime:Module
 uid: learn.wwl.configure-apps-azure-kubernetes-service
 metadata:
-  title: Configure Applications on AKS
-  description: Externalize configuration, secure sensitive settings, and attach persistent storage for applications running on AKS.
+  title: Configure Applications on Azure Kubernetes Service
+  description: Externalize configuration, secure sensitive settings, and attach persistent storage for applications running on Azure Kubernetes Service.
   ms.date: 12/14/2025
   author: jeffkoms
   ms.author: jeffko
   ms.topic: module-standard-task-based
   ai-usage: ai-assisted
   ms.service: azure-kubernetes-service
-title: Configure applications on AKS
-summary: Learn to externalize configuration, secure sensitive settings, and attach persistent storage using Kubernetes features on AKS.
+title: Configure applications on Azure Kubernetes Service
+summary: Learn to externalize configuration, secure sensitive settings, and attach persistent storage using Kubernetes features on Azure Kubernetes Service.
 abstract: |
   After completing this module, you'll be able to:
     - Explain how to externalize app configuration using Kubernetes primitives.
