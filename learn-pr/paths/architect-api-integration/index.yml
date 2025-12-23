@@ -27,9 +27,9 @@ subjects:
 modules:
 - learn.wwl.explore-api-management
 - learn.publish-manage-apis-with-azure-api-management
-- learn.azure.improve-api-performance-with-apim-caching-policy
-- learn.protect-apis-on-api-management
-- learn.control-authentication-with-apim
+#- learn.azure.improve-api-performance-with-apim-caching-policy
+#- learn.protect-apis-on-api-management
+#- learn.control-authentication-with-apim
 - learn.api-management
 trophy:
   uid: learn.architect-api-integration.trophy
