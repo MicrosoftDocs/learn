@@ -1,0 +1,36 @@
+### YamlMime:LearningPath
+uid: learn.wwl.ai-in-special-education
+metadata:
+  title: AI in Special Education
+  description: This course equips special education teachers with practical strategies for using Microsoft AI tools to streamline administrative tasks, personalize learning, and foster inclusive communication—while maintaining professional judgment and oversight.
+  ms.date: 12/22/2025
+  author: Randall-Knapp
+  ms.author: rknapp
+  ms.topic: learning-path
+  ms.service: microsoft-365
+title: AI in Special Education
+summary: |
+  This course equips special education teachers with practical strategies for using Microsoft AI tools to streamline administrative tasks, personalize learning, and foster inclusive communication—while maintaining professional judgment and oversight.
+  
+  By the end of this course, you will be able to:
+  - Explain how AI can be used to create inclusive learning experiences for all students
+  - Demonstrate ways AI can streamline administrative tasks to reduce educator workload
+  - Communicate effectively with families and multilingual learners with the support of AI
+  - Implement AI responsibly with teacher oversight
+prerequisites: None
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- higher-ed-educator
+products:
+- microsoft-365-copilot
+- office-teams
+- office-powerpoint
+- office-onenote
+- office-word
+subjects:
+- artificial-intelligence
+modules:
+- learn.wwl.introduction-ai-special-education
+- learn.philanthropies.apply-responsible-ai-principles
