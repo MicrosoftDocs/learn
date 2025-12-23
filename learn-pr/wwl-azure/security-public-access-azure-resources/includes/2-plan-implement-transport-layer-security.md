@@ -1,6 +1,6 @@
 Transport Layer Security (TLS) is a cryptographic protocol designed to secure communications over networks by providing encryption, authentication, and data integrity. It works by establishing a secure handshake between a client and a server, negotiating cipher suites, and validating certificates issued by trusted Certificate Authorities. This process ensures that sensitive information, such as credentials and application data, is transmitted in an encrypted form, protecting it from interception or tampering during transit. TLS evolved through multiple versions, with TLS 1.2 and TLS 1.3 offering stronger encryption, faster handshakes, and enhanced privacy compared to earlier iterations.
 
-In the context of Azure, TLS plays a critical role in safeguarding data across services like App Service, API Management, Azure Storage, and SQL Database. Azure enforces TLS for all connections to ensure encryption in transit, mitigating risks such as man-in-the-middle attacks. Modern TLS versions (1.2 or higher) are required, Azure aligns with industry security standards and provides features like Perfect Forward Secrecy and authenticated encryption, which enhance resilience against evolving threats. Newer versions of TLS not only protect customer data but also ensures compliance with regulatory requirements, making TLS a foundational component of Azure’s security posture.
+In the context of Azure, TLS plays a critical role in safeguarding data across services like App Service, API Management, Azure Storage, and SQL Database. Azure enforces TLS for all connections to ensure encryption in transit, mitigating risks such as man-in-the-middle attacks. Modern TLS versions (1.2 or higher) are required. Azure aligns with industry security standards and provides features like Perfect Forward Secrecy and authenticated encryption, which enhance resilience against evolving threats. Newer versions of TLS not only protect customer data but also ensure compliance with regulatory requirements, making TLS a foundational component of Azure's security posture.
 
 ## What Transport Layer Security does for your applications
 
@@ -8,11 +8,11 @@ Transport Layer Security (TLS) encrypts data traveling between clients and serve
 
 Modern organizations rely on TLS to:
 
-- **Meet regulatory requirements**: Standards like PCI DSS, HIPAA, and other stadandars mandate encryption for data in transit.
-- **Build customer trust**: Browser security indicators and certificate warnings directly change user confidence.
+- **Meet regulatory requirements**: Standards like PCI DSS, HIPAA, and other standards mandate encryption for data in transit.
+- **Build customer trust**: Browser security indicators and certificate warnings directly build user confidence.
 - **Prevent data breaches**: Unencrypted connections expose credentials, session tokens, and business data to network attackers.
 
-TLS replaces the deprecated Secure Sockets Layer (SSL) protocol. Always configure services to use TLS 1.2 or TLS 1.3—older versions contain known vulnerabilities.
+TLS replaces the deprecated Secure Sockets Layer (SSL) protocol. Always configure services to use TLS 1.2 or higher, with TLS 1.3 recommended for optimal security and performance.
 
 ## Why TLS matters in Azure
 
@@ -42,7 +42,7 @@ Azure App Service provides managed TLS termination with automatic certificate re
 1. In the Azure portal, navigate to your App Service resource.
 2. Under **Settings**, select **Configuration**.
 3. Select the **General settings** tab.
-4. Set **Minimum TLS version** to **1.2** or **1.3**.
+4. Set **Minimum TLS version** to **1.2** or **1.3** (1.3 recommended).
 5. Select **Save** to apply the change.
 
 Clients attempting to connect with older TLS versions receive a connection error, preventing legacy systems from using weak cryptography.
@@ -79,7 +79,7 @@ Azure API Management sits between clients and backend APIs, handling authenticat
 4. Ensure **TLS 1.2** is enabled (TLS 1.3 support depends on your service tier).
 5. Select **Save**.
 
-Preventing clients from negotiating weak protocol versions. Test with your API consumers before disabling TLS 1.1 if you support older mobile apps or legacy systems.
+Setting a minimum TLS version prevents clients from negotiating weak protocol versions. Test with your API consumers before disabling TLS 1.1 if you support older mobile apps or legacy systems.
 
 ### Enforce HTTPS for API endpoints
 
@@ -103,7 +103,7 @@ When API Management calls backend services, verify those connections also use TL
 Verify backed connections to prevent API Management from accepting invalid or expired certificates from backend services, maintaining end-to-end encryption.
 
 > [!TIP]
-> Use Azure Key Vault to store and rotate certificates for both App Service and API Management. You build centralized certificate lifecycle management and simplify compliance reporting.
+> Use Azure Key Vault to store and rotate certificates for both App Service and API Management. A centralized certificate lifecycle management process simplifies compliance reporting.
 
 ## Plan your TLS configuration
 
