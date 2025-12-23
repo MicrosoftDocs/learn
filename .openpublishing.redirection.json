@@ -41866,6 +41866,61 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/azure/route-and-process-data-logic-apps/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/logic-apps/add-trigger-action-workflow",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/route-and-process-data-logic-apps/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/logic-apps/add-trigger-action-workflow",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/route-and-process-data-logic-apps/2-design-logic-apps-for-your-workflows.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/logic-apps/add-trigger-action-workflow",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/route-and-process-data-logic-apps/3-detect-external-event-using-trigger.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/logic-apps/add-trigger-action-workflow",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/route-and-process-data-logic-apps/4-exercise-create-news-tracker.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/logic-apps/add-trigger-action-workflow",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/route-and-process-data-logic-apps/5-execute-an-action.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/logic-apps/add-trigger-action-workflow",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/route-and-process-data-logic-apps/6-exercise-analyze-article-content.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/logic-apps/add-trigger-action-workflow",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/route-and-process-data-logic-apps/7-alter-control-flow-using-control-action.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/logic-apps/add-trigger-action-workflow",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/route-and-process-data-logic-apps/8-exercise-branch-based-on-sentiment.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/logic-apps/add-trigger-action-workflow",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/route-and-process-data-logic-apps/9-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/logic-apps/add-trigger-action-workflow",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/route-and-process-data-logic-apps/10-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/logic-apps/add-trigger-action-workflow",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/paths/introduction-python-space-exploration-nasa/index.yml",
       "redirect_url": "https://learn.microsoft.com/training/browse/",
       "redirect_document_id": false
