@@ -7395,4 +7395,8 @@ achievements:
   title: Publish a Blazor WebAssembly app and .NET API with Azure Static Web Apps
   summary: Automatically deploy and update a Blazor web application and its API from a GitHub repository.
   iconUrl: /training/achievements/publish-static-web-app-and-api-dotnet.svg
-  
+- uid: learn.azure.publish-static-web-app-api-preview-url.badge
+  type: badge
+  title: Publish an API to Azure Static Web Apps
+  summary: Publish an Angular, React, Svelte, or Vue JavaScript app and API with Azure Static Web Apps and Azure Functions. Deploy your code from GitHub to a staging site using preview URLs.
+  iconUrl: /training/achievements/publish-static-web-app-api-preview-url.svg
