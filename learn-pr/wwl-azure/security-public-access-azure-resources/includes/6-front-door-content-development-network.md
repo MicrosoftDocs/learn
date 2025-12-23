@@ -19,7 +19,7 @@ Global delivery scale using Microsoft’s network
 
 Scale out and improve performance of your applications and content using Microsoft’s global Cloud CDN and WAN.
 
-- Use the extensive Microsoft global edge network with edge locations across metro cities worldwide, connected to Azure using a private enterprise-grade WAN to improve latency for apps.
+- Use the extensive Microsoft global edge network with edge locations across cities worldwide, connected to Azure using a private enterprise-grade WAN to improve latency for apps.
 - Accelerate application performance by using Front Door’s anycast network and split TCP connections.
 - Terminate SSL offload at the edge and use integrated certificate management.
 - Natively support end-to-end IPv6 connectivity and the HTTP/2 protocol.
