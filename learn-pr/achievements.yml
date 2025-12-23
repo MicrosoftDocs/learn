@@ -7390,3 +7390,9 @@ achievements:
   title: Host your own build agent in Azure Pipelines
   summary: Learn how to use your own build agent when Microsoft-hosted agents don't meet your needs.
   iconUrl: /training/achievements/azure-devops/host-your-own-build-server-in-your-build-pipeline.svg
+- uid: learn.machinelearning.understand-classification-machine-learning.badge
+  type: badge
+  title: Create and understand classification models in machine learning
+  summary: Classification means assigning items into categories, or can also be thought of automated decision making. Here we introduce classification models through logistic regression, providing you with a stepping-stone toward more complex and exciting classification methods.
+  iconUrl: /training/achievements/machine-learning/understand-classification-machine-learning.svg
+  
