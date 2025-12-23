@@ -20,7 +20,7 @@ By the end of this module, you'll be able to use data binding to present data in
 
 ## Prerequisites
 
-- Visual Studio 2022 with the .NET MAUI workload installed
+- Visual Studio 2026 with the .NET MAUI workload installed
 - Optional: Visual Studio Code with the .NET MAUI Extension and .NET SDK with the .NET MAUI workload installed
 
 [!include[](../../../includes/install-dotnet-maui-workload.md)]

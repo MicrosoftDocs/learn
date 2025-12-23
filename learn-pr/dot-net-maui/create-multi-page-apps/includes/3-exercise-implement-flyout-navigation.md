@@ -2,7 +2,7 @@ In the sample scenario, you have a .NET MAUI app that contains pages for display
 
 In this exercise, you add flyout navigation to the app.
 
-[!include[](../../../includes/dotnet9-sdk-version.md)]
+[!include[](../../../includes/dotnet10-sdk-version.md)]
 
 ## Open the starter solution
 
