@@ -9,7 +9,8 @@ metadata:
   description: Learn about Azure OpenAI managed identity authentication with JavaScript.
   ms.topic: module
   ms.collection: ce-advocates-ai-copilot
-  ms.service: azure-ai-openai
+  ms.service: azure-ai-foundry
+  ms.subservice: azure-ai-foundry-openai
 title: Introduction to Azure OpenAI managed identity authentication with JavaScript
 summary: This module helps you understand how to use a managed identity in JavaScript apps that interact with Azure OpenAI Service.
 abstract: |
