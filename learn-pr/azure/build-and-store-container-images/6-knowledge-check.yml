@@ -4,9 +4,9 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: Azure Container Registry knowledge check.
-  ms.date: 01/07/2025
-  author: tejaswikolli
-  ms.author: tejaswikolli
+  ms.date: 12/23/2025
+  author: davidsmatlak
+  ms.author: davidsmatlak
   ms.topic: unit
 durationInMinutes: 5
 quiz:
@@ -54,4 +54,4 @@ quiz:
     - content: "Place a container registry in every Azure region."
       isCorrect: false
       explanation: "This increases costs and doesn't improve performance."
-
+
