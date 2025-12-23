@@ -5,7 +5,7 @@ In this exercise, you start to build the .NET MAUI (Multi-platform Application U
 1. Open Visual Studio and create a new solution. This action opens the New Project wizard in Visual Studio.
 
     > [!TIP]
-    > Make sure you have the .NET MAUI workload installed with Visual Studio 2022 v17.12 or later with .NET 9. [More info here.](/dotnet/maui/get-started/installation)
+    > Make sure you have the .NET MAUI workload installed with Visual Studio 2026 or later with .NET 10. [More info here.](/dotnet/maui/get-started/installation)
 
 1. Select the **MAUI** project type, select the **.NET MAUI App** template, and select **Next**.
 
@@ -15,7 +15,7 @@ In this exercise, you start to build the .NET MAUI (Multi-platform Application U
 
     :::image type="content" source="../media/4-configure-project.png" alt-text="A screenshot of the Configure your new project dialog box. The user names the project Phoneword and selects a location on their hard drive to store it.":::
 
-1. Select **.NET 9.0 (Standard Term Support)** in the **Framework** drop-down, then select **Create** to create the app.
+1. Select **.NET 10.0 (Standard Term Support)** in the **Framework** drop-down, then select **Create** to create the app.
 
 ## Examine the solution structure
 
@@ -39,7 +39,7 @@ In this exercise, you start to build the .NET MAUI (Multi-platform Application U
 
 ## Build and run the application on Windows
 
-1. In the Visual Studio toolbar, select the **Windows Machine** profile. Select **.net9.0-windows** from the list in the frameworks drop-down list box.
+1. In the Visual Studio toolbar, select the **Windows Machine** profile. Select **.net10.0-windows** from the list in the frameworks drop-down list box.
 
     :::image type="content" source="../media/4-set-startup-profile.png" alt-text="A screenshot of the target runtime dropdown in Visual Studio. The user sets the Windows Machine profile as the startup profile for the solution.":::
 

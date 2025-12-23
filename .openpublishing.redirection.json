@@ -61308,6 +61308,56 @@
       "source_path": "learn-pr/azure-devops/host-build-agent/index.yml",
       "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/agents/agents?view=azure-devops&tabs=yaml%2Cbrowser",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/understand-classification-machine-learning/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/create-machine-learn-models/ ",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/understand-classification-machine-learning/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/create-machine-learn-models/ ",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/understand-classification-machine-learning/2-what-is-classification.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/create-machine-learn-models/ ",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/understand-classification-machine-learning/3-exercise-build-regression-model.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/create-machine-learn-models/ ",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/understand-classification-machine-learning/4-assess-classification.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/create-machine-learn-models/ ",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/understand-classification-machine-learning/5-exercise-assess-regression-model.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/create-machine-learn-models/ ",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/understand-classification-machine-learning/6-improve-classification.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/create-machine-learn-models/ ",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/understand-classification-machine-learning/7-exercise-improve-classification.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/create-machine-learn-models/ ",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/understand-classification-machine-learning/8-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/create-machine-learn-models/ ",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/understand-classification-machine-learning/9-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/create-machine-learn-models/ ",
+      "redirect_document_id": false
     }
   ]
 }
