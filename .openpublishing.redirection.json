@@ -41866,6 +41866,61 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/azure/route-and-process-data-logic-apps/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/logic-apps/add-trigger-action-workflow",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/route-and-process-data-logic-apps/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/logic-apps/add-trigger-action-workflow",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/route-and-process-data-logic-apps/2-design-logic-apps-for-your-workflows.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/logic-apps/add-trigger-action-workflow",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/route-and-process-data-logic-apps/3-detect-external-event-using-trigger.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/logic-apps/add-trigger-action-workflow",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/route-and-process-data-logic-apps/4-exercise-create-news-tracker.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/logic-apps/add-trigger-action-workflow",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/route-and-process-data-logic-apps/5-execute-an-action.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/logic-apps/add-trigger-action-workflow",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/route-and-process-data-logic-apps/6-exercise-analyze-article-content.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/logic-apps/add-trigger-action-workflow",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/route-and-process-data-logic-apps/7-alter-control-flow-using-control-action.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/logic-apps/add-trigger-action-workflow",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/route-and-process-data-logic-apps/8-exercise-branch-based-on-sentiment.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/logic-apps/add-trigger-action-workflow",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/route-and-process-data-logic-apps/9-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/logic-apps/add-trigger-action-workflow",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/route-and-process-data-logic-apps/10-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/logic-apps/add-trigger-action-workflow",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/paths/introduction-python-space-exploration-nasa/index.yml",
       "redirect_url": "https://learn.microsoft.com/training/browse/",
       "redirect_document_id": false
@@ -54798,6 +54853,126 @@
     {
       "source_path": "learn-pr/azure/intro-to-confidential-computing-with-azure-virtual-machines/when-to-use-application-enclaves.yml",
       "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/control-authentication-with-apim/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/api-management/api-management-key-concepts",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/control-authentication-with-apim/1a-understand-apim.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/api-management/api-management-key-concepts",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/control-authentication-with-apim/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/api-management/api-management-key-concepts",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/control-authentication-with-apim/2-create-subscriptions-in-apim.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/api-management/api-management-key-concepts",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/control-authentication-with-apim/3-exercise-create-subscriptions-in-apim.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/api-management/api-management-key-concepts",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/control-authentication-with-apim/4-secure-access-client-certs.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/api-management/api-management-key-concepts",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/control-authentication-with-apim/5-exercise-secure-access-client-certs.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/api-management/api-management-key-concepts",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/control-authentication-with-apim/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/api-management/api-management-key-concepts",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/improve-api-performance-with-apim-caching-policy/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/api-management/api-management-howto-cache",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/improve-api-performance-with-apim-caching-policy/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/api-management/api-management-howto-cache",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/improve-api-performance-with-apim-caching-policy/2-choose-the-right-api-management-policy.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/api-management/api-management-howto-cache",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/improve-api-performance-with-apim-caching-policy/3-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/api-management/api-management-howto-cache",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/improve-api-performance-with-apim-caching-policy/4-configure-a-caching-policy.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/api-management/api-management-howto-cache",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/improve-api-performance-with-apim-caching-policy/5-exercise-configure-a-caching-policy.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/api-management/api-management-howto-cache",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/improve-api-performance-with-apim-caching-policy/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/api-management/api-management-howto-cache",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/protect-apis-on-api-management/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/api-management/transform-api",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/protect-apis-on-api-management/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/api-management/transform-api",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/protect-apis-on-api-management/2-remove-technical-info.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/api-management/transform-api",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/protect-apis-on-api-management/3-exercise-remove-header.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/api-management/transform-api",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/protect-apis-on-api-management/4-hide-url-transformation.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/api-management/transform-api",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/protect-apis-on-api-management/5-exercise-hide-url.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/api-management/transform-api",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/protect-apis-on-api-management/6-rate-limit-policy.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/api-management/transform-api",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/protect-apis-on-api-management/7-exercise-rate-limit-policy.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/api-management/transform-api",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/protect-apis-on-api-management/8-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/api-management/transform-api",
       "redirect_document_id": false
     },
     {
