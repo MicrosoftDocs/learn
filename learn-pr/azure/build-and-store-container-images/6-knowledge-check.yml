@@ -27,7 +27,7 @@ quiz:
     - content: "Build container images without the need for locally installed Docker tools."
       isCorrect: false
       explanation: "Container images can be built in the cloud using Azure Container Registry Build."
-  
+
   - content: "What's the recommended authentication method for Azure Container Registry?"
     choices:
     - content: "Admin account"
@@ -36,13 +36,13 @@ quiz:
     - content: "Username and password"
       isCorrect: false
       explanation: "You can enable an admin account with a username and password, but it isn't the recommended authentication option."
-    - content: "Azure service principal"
+    - content: "Microsoft Entra identities"
       isCorrect: true
-      explanation: "Azure service principals are the recommended authentication method. They provide granular access to container images in Azure Container Registry. For example, you can specify read-only access or full access to the container registry."
+      explanation: "Microsoft Entra identities are the recommended authentication method. They provide role-based permissions to container images in Azure Container Registry. For example, Reader, Contributor, and Owner roles."
     - content: "No authentication"
       isCorrect: false
       explanation: "Azure Container Registry is a private registry and can't be accessed without authentication."
- 
+
   - content: "Let's say you use container images to run compute workloads in multiple regions throughout the world. You plan to enable the geo-replication feature of Azure Container Registry to decrease the time required to provision an instance. In which regions should you configure the Azure Container Registry geo-replication feature?"
     choices:
     - content: "Place a container registry in the region closest to your development team."
@@ -54,4 +54,3 @@ quiz:
     - content: "Place a container registry in every Azure region."
       isCorrect: false
       explanation: "This increases costs and doesn't improve performance."
-
