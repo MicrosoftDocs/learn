@@ -34,3 +34,5 @@ subjects:
 modules:
 - learn.wwl.introduction-ai-special-education
 - learn.philanthropies.apply-responsible-ai-principles
+trophy:
+  uid: learn.wwl.ai-in-special-education.trophy
