@@ -1,6 +1,6 @@
 Azure Storage supports using Microsoft Entra ID to authorize requests to table data. With Microsoft Entra ID, you can use Azure role-based access control (Azure RBAC) to grant permissions to a security principal, which may be a user, group, or application service principal. The security principal is authenticated by Microsoft Entra ID to return an OAuth 2.0 token. The token can then be used to authorize a request against the Table service.
 
-Authorizing requests against Azure Storage with Microsoft Entra ID provides superior security and ease of use over Shared Key authorization. Microsoft recommends using Microsoft Entra authorization with your table applications when possible to assure access with minimum required privileges.
+Authorizing requests against Azure Storage with Microsoft Entra ID provides superior security and ease of use over Shared Key authorization. Microsoft recommends using Microsoft Entra authorization with your table applications whenever possible to ensure access with the minimum required privileges. For applications running in Azure, use managed identities to eliminate the need to store credentials in your code.
 
 Authorization with Microsoft Entra ID is available for all general-purpose uses in all public regions and national clouds. Only storage accounts created with the Azure Resource Manager deployment model support Microsoft Entra authorization.
 
@@ -8,7 +8,7 @@ Authorization with Microsoft Entra ID is available for all general-purpose uses 
 
 When a security principal (a user, group, or application) attempts to access a table resource, the request must be authorized. With Microsoft Entra ID, access to a resource is a two-step process. First, the security principal's identity is authenticated and an OAuth 2.0 token is returned. Next, the token is passed as part of a request to the Table service and used by the service to authorize access to the specified resource.
 
-The authentication step requires that an application request an OAuth 2.0 access token at runtime. If an application is running from within an Azure entity such as an Azure VM, a virtual machine scale set, or an Azure Functions app, it can use a managed identity to access tables.
+The authentication step requires that an application request an OAuth 2.0 access token at runtime. If an application is running from within an Azure entity such as an Azure VM, a virtual machine scale set, or an Azure Functions app, it can use a managed identity to access tables. **Using managed identities is the recommended approach** as it eliminates the need to manage credentials in your application code.
 
 The authorization step requires that one or more Azure roles be assigned to the security principal. Azure Storage provides Azure roles that encompass common sets of permissions for table data. The roles that are assigned to a security principal determine the permissions that that principal will have.
 
@@ -31,15 +31,15 @@ When an Azure role is assigned to a Microsoft Entra security principal, Azure gr
 
 ### Resource scope
 
-Before you assign an Azure RBAC role to a security principal, determine the scope of access that the security principal should have. Best practices dictate that it's always best to grant only the narrowest possible scope. Azure RBAC roles defined at a broader scope are inherited by the resources beneath them.
+Before you assign an Azure RBAC role to a security principal, determine the scope of access that the security principal should have. Always grant only the narrowest possible scope necessary for the security principal to perform their tasks. This follows the principle of least privilege and minimizes security risks. Azure RBAC roles defined at a broader scope are inherited by the resources beneath them.
 
-You can scope access to Azure table resources at the following levels, beginning with the narrowest scope:
+You can scope access to Azure table resources at the following levels, beginning with the narrowest (most restrictive) scope:
 
- -  An individual table . At this scope, a role assignment applies to the specified table.
- -  The storage account. At this scope, a role assignment applies to all tables in the account.
- -  The resource group. At this scope, a role assignment applies to all of the tables in all of the storage accounts in the resource group.
- -  The subscription. At this scope, a role assignment applies to all of the tables in all of the storage accounts in all of the resource groups in the subscription.
- -  A management group. At this scope, a role assignment applies to all of the tables in all of the storage accounts in all of the resource groups in all of the subscriptions in the management group.
+- **An individual table**. At this scope, a role assignment applies to the specified table only.
+- **The storage account**. At this scope, a role assignment applies to all tables in the account.
+- **The resource group**. At this scope, a role assignment applies to all of the tables in all of the storage accounts in the resource group.
+- **The subscription**. At this scope, a role assignment applies to all of the tables in all of the storage accounts in all of the resource groups in the subscription.
+- **A management group**. At this scope, a role assignment applies to all of the tables in all of the storage accounts in all of the resource groups in all of the subscriptions in the management group.
 
 For more information about scope for Azure RBAC role assignments, see [Understand scope for Azure RBAC](/azure/role-based-access-control/scope-overview).
 
@@ -47,14 +47,17 @@ For more information about scope for Azure RBAC role assignments, see [Understan
 
 Azure RBAC provides built-in roles for authorizing access to table data using Microsoft Entra ID and OAuth. Built-in roles that provide permissions to tables in Azure Storage include:
 
- -  [Storage Table Data Contributor](/azure/role-based-access-control/built-in-roles#storage-table-data-contributor): Use to grant read/write/delete permissions to Table storage resources.
- -  [Storage Table Data Reader](/azure/role-based-access-control/built-in-roles#storage-table-data-reader): Use to grant read-only permissions to Table storage resources.
+- **[Storage Table Data Contributor](/azure/role-based-access-control/built-in-roles#storage-table-data-contributor)**: Grants read, write, and delete permissions to Table storage resources. Use this role for applications or users that need to create, modify, or remove table entities.
+- **[Storage Table Data Reader](/azure/role-based-access-control/built-in-roles#storage-table-data-reader)**: Grants read-only permissions to Table storage resources. Use this role for applications or users that only need to query or retrieve table data without modification rights.
 
 To learn how to assign an Azure built-in role to a security principal, see [Assign an Azure role for access to table data](/azure/storage/tables/assign-azure-role-data-access). To learn how to list Azure RBAC roles and their permissions, see [List Azure role definitions](/azure/role-based-access-control/role-definitions-list).
 
 For more information about how built-in roles are defined for Azure Storage, see [Understand role definitions](/azure/role-based-access-control/role-definitions#control-and-data-actions). For information about creating Azure custom roles, see [Azure custom roles](/azure/role-based-access-control/custom-roles).
 
-Only roles explicitly defined for data access permit a security principal to access table data. Built-in roles such as Owner, Contributor, and Storage Account Contributor permit a security principal to manage a storage account, but do not provide access to the table data within that account via Microsoft Entra ID. However, if a role includes Microsoft.Storage/storageAccounts/listKeys/action, then a user to whom that role is assigned can access data in the storage account via Shared Key authorization with the account access keys.
+Only roles explicitly defined for data access permit a security principal to access table data. Built-in roles such as **Owner**, **Contributor**, and **Storage Account Contributor** permit a security principal to manage a storage account, but do not provide access to the table data within that account via Microsoft Entra ID. However, if a role includes **Microsoft.Storage/storageAccounts/listKeys/action**, then a user to whom that role is assigned can access data in the storage account via Shared Key authorization with the account access keys.
+
+>[!NOTE]
+>Roles that include the **listKeys** action provide full access to storage account data via Shared Key. To improve security, consider using custom roles that exclude this action and enforce Microsoft Entra ID-only access.
 
 For detailed information about Azure built-in roles for Azure Storage for both the data services and the management service, see the Storage section in [Azure built-in roles for Azure RBAC](/azure/role-based-access-control/built-in-roles#storage). Additionally, for information about the different types of roles that provide permissions in Azure, see [Azure roles, Microsoft Entra roles, and classic subscription administrator roles](/azure/role-based-access-control/rbac-and-directory-admin-roles).
 
@@ -63,3 +66,17 @@ Azure role assignments may take up to 30 minutes to propagate.
 ### Access permissions for data operations
 
 For details on the permissions required to call specific Table service operations, see [Permissions for calling data operations](/rest/api/storageservices/authorize-with-azure-active-directory#permissions-for-calling-data-operations).
+
+## Best practices for authorizing table access
+
+When implementing Microsoft Entra ID authorization for Azure Table storage, follow these security best practices:
+
+- **Use managed identities**: For applications running in Azure (VMs, App Service, Azure Functions, Container Instances, AKS), always use managed identities instead of service principals with stored credentials. This eliminates the need to manage and rotate secrets.
+- **Implement least privilege**: Assign the most restrictive role that meets requirements. Use **Storage Table Data Reader** for read-only scenarios rather than more permissive roles like **Storage Table Data Contributor**.
+- **Scope assignments appropriately**: Apply role assignments at the table level when possible rather than at the storage account or subscription level. This limits access to only the specific tables that users or applications need.
+- **Avoid Shared Key authorization**: Once you've migrated to Microsoft Entra ID authentication, consider disabling Shared Key authorization at the storage account level to prevent unauthorized access via account keys.
+- **Use custom roles for fine-grained control**: If the built-in roles don't meet your specific requirements, create custom Azure RBAC roles that include only the necessary permissions.
+- **Monitor access**: Enable diagnostic logging and regularly review Azure Monitor logs to track who is accessing your table data and identify any suspicious or unauthorized access attempts.
+- **Apply conditional access policies**: Use Microsoft Entra Conditional Access policies to enforce additional security requirements such as multi-factor authentication, device compliance checks, or location-based restrictions.
+- **Regular access reviews**: Periodically review and audit role assignments to ensure users and applications still require their assigned permissions.
+- **Separate development and production**: Use different storage accounts and role assignments for development and production environments to minimize the risk of accidental data exposure or modification.

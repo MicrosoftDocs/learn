@@ -1,15 +1,15 @@
 Azure Storage supports using Microsoft Entra ID to authorize requests to queue data. With Microsoft Entra ID, you can use Azure role-based access control (Azure RBAC) to grant permissions to a security principal, which may be a user, group, or application service principal. The security principal is authenticated by Microsoft Entra ID to return an OAuth 2.0 token. The token can then be used to authorize a request against the Queue service.
 
-Authorization with Microsoft Entra ID provides superior security and ease of use over Shared Key authorization. Microsoft recommends using Microsoft Entra authorization with your queue applications when possible to assure access with minimum required privileges.
+Authorization with Microsoft Entra ID provides superior security and ease of use over Shared Key authorization. Microsoft recommends using Microsoft Entra authorization with your queue applications whenever possible to ensure access with the minimum required privileges. For applications running in Azure, use managed identities to eliminate the need to store credentials in your code.
 
 Authorization with Microsoft Entra ID is available for all general-purpose storage accounts in all public regions and national clouds. Only storage accounts created with the Azure Resource Manager deployment model support Microsoft Entra authorization.
 
 ## Overview of Microsoft Entra ID for queues
 
-When a security principal (a user, group, or application) attempts to access a queue resource, the request must be authorized, unless it's a queue available for anonymous access. With Microsoft Entra ID, access to a resource is a two-step process:
+When a security principal (a user, group, or application) attempts to access a queue resource, the request must be authorized. With Microsoft Entra ID, access to a resource is a two-step process:
 
-1.  First, the security principal's identity is authenticated and an OAuth 2.0 token is returned. The authentication step requires that an application request an OAuth 2.0 access token at runtime. If an application is running from within an Azure entity such as an Azure VM, a Virtual Machine Scale Set, or an Azure Functions app, it can use a managed identity to access queue data.
-2.  Next, the token is passed as part of a request to the Queue service and used by the service to authorize access to the specified resource. The authorization step requires that one or more Azure RBAC roles be assigned to the security principal making the request.
+- **Authentication**: The security principal's identity is authenticated and an OAuth 2.0 token is returned. The authentication step requires that an application request an OAuth 2.0 access token at runtime. If an application is running from within an Azure entity such as an Azure VM, a Virtual Machine Scale Set, or an Azure Functions app, it can use a managed identity to access queue data. **Using managed identities is the recommended approach** as it eliminates the need to manage credentials.
+- **Authorization**: The token is passed as part of a request to the Queue service and used by the service to authorize access to the specified resource. The authorization step requires that one or more Azure RBAC roles be assigned to the security principal making the request.
 
 ### Use a Microsoft Entra account with portal, PowerShell, or Azure CLI
 
@@ -19,8 +19,8 @@ To learn about how to access data in the Azure portal with a Microsoft Entra acc
 
 To authorize access to Azure Storage with Microsoft Entra ID, you can use one of the following client libraries to acquire an OAuth 2.0 token:
 
- -  The Azure Identity client library is recommended for most development scenarios.<br>
- -  The Microsoft Authentication Library (MSAL) may be suitable for certain advanced scenarios.
+- The Azure Identity client library is recommended for most development scenarios.
+- The Microsoft Authentication Library (MSAL) may be suitable for certain advanced scenarios.
 
 ### Azure Identity client library
 
@@ -28,7 +28,7 @@ The Azure Identity client library simplifies the process of getting an OAuth 2.0
 
 An advantage of the Azure Identity client library is that it enables you to use the same code to acquire the access token whether your application is running in the development environment or in Azure. The Azure Identity client library returns an access token for a security principal. When your code is running in Azure, the security principal may be a managed identity for Azure resources, a service principal, or a user or group. In the development environment, the client library provides an access token for either a user or a service principal for testing purposes.
 
-The access token returned by the Azure Identity client library is encapsulated in a token credential. You can then use the token credential to get a service client object to use in performing authorized operations against Azure Storage. A simple way to get the access token and token credential is to use the **DefaultAzureCredential** class that is provided by the Azure Identity client library. **DefaultAzureCredentia**l attempts to get the token credential by sequentially trying several different credential types. **DefaultAzureCredential** works in both the development environment and in Azure.
+The access token returned by the Azure Identity client library is encapsulated in a token credential. You can then use the token credential to get a service client object to use in performing authorized operations against Azure Storage. A simple way to get the access token and token credential is to use the **DefaultAzureCredential** class that is provided by the Azure Identity client library. **DefaultAzureCredential** attempts to get the token credential by sequentially trying several different credential types. **DefaultAzureCredential** works in both the development environment and in Azure.
 
 The following table points to additional information for authorizing access to data in various scenarios:
 
@@ -59,7 +59,7 @@ You can also provide a resource ID that applies to any storage account, as shown
 
 | **Cloud**                                                    | **Resource ID**              |
 | ------------------------------------------------------------ | ---------------------------- |
-| Azure Global<br>Azure Government<br>Azure China 21Vianet<br> | `https://storage.azure.com/` |
+| Azure Global<br>Azure Government<br>Azure China 21Vianet | `https://storage.azure.com` |
 
 ## Assign Azure roles for access rights
 
@@ -73,26 +73,29 @@ When you create an Azure Storage account, you are not automatically assigned per
 
 ### Resource scope
 
-Before you assign an Azure RBAC role to a security principal, determine the scope of access that the security principal should have. Best practices dictate that it's always best to grant only the narrowest possible scope. Azure RBAC roles defined at a broader scope are inherited by the resources beneath them.
+Before you assign an Azure RBAC role to a security principal, determine the scope of access that the security principal should have. Always grant only the narrowest possible scope necessary for the security principal to perform their tasks. This follows the principle of least privilege and minimizes security risks. Azure RBAC roles defined at a broader scope are inherited by the resources beneath them.
 
-You can scope access to Azure queue resources at the following levels, beginning with the narrowest scope:
+You can scope access to Azure queue resources at the following levels, beginning with the narrowest (most restrictive) scope:
 
- -  An individual queue. At this scope, a role assignment applies to messages in the queue, and to queue properties and metadata.<br>
- -  The storage account. At this scope, a role assignment applies to all queues and their messages.
- -  The resource group. At this scope, a role assignment applies to all of the queues in all of the storage accounts in the resource group.
- -  The subscription. At this scope, a role assignment applies to all of the queues in all of the storage accounts in all of the resource groups in the subscription.
- -  A management group. At this scope, a role assignment applies to all of the queues in all of the storage accounts in all of the resource groups in all of the subscriptions in the management group.
+- **An individual queue**. At this scope, a role assignment applies to messages in the queue, and to queue properties and metadata.
+- **The storage account**. At this scope, a role assignment applies to all queues and their messages.
+- **The resource group**. At this scope, a role assignment applies to all of the queues in all of the storage accounts in the resource group.
+- **The subscription**. At this scope, a role assignment applies to all of the queues in all of the storage accounts in all of the resource groups in the subscription.
+- **A management group**. At this scope, a role assignment applies to all of the queues in all of the storage accounts in all of the resource groups in all of the subscriptions in the management group.
 
 ### Azure built-in roles for queues
 
 Azure RBAC provides several built-in roles for authorizing access to queue data using Microsoft Entra ID and OAuth. Some examples of roles that provide permissions to data resources in Azure Storage include:
 
- -  Storage Queue Data Contributor: Use to grant read/write/delete permissions to Azure queues.<br>
- -  Storage Queue Data Reader: Use to grant read-only permissions to Azure queues.
- -  Storage Queue Data Message Processor: Use to grant peek, retrieve, and delete permissions to messages in Azure Storage queues.
- -  Storage Queue Data Message Sender: Use to grant add permissions to messages in Azure Storage queues.
+- **[Storage Queue Data Contributor](/azure/role-based-access-control/built-in-roles#storage-queue-data-contributor)**: Grants read, write, and delete permissions to Azure queues. Use this role for applications or users that need full access to queue messages.
+- **[Storage Queue Data Reader](/azure/role-based-access-control/built-in-roles#storage-queue-data-reader)**: Grants read-only permissions to Azure queues. Use this role for applications or users that only need to view queue messages without modification rights.
+- **[Storage Queue Data Message Processor](/azure/role-based-access-control/built-in-roles#storage-queue-data-message-processor)**: Grants peek, retrieve, and delete permissions to messages in Azure Storage queues. Use this role for worker applications that process and remove messages from queues.
+- **[Storage Queue Data Message Sender](/azure/role-based-access-control/built-in-roles#storage-queue-data-message-sender)**: Grants add permissions to messages in Azure Storage queues. Use this role for applications that only need to enqueue messages without reading or deleting them.
 
 Only roles explicitly defined for data access permit a security principal to access queue data. Built-in roles such as **Owner**, **Contributor**, and **Storage Account Contributor** permit a security principal to manage a storage account, but don't provide access to the queue data within that account via Microsoft Entra ID. However, if a role includes **Microsoft.Storage/storageAccounts/listKeys/action**, then a user to whom that role is assigned can access data in the storage account via Shared Key authorization with the account access keys.
+
+>[!NOTE]
+> Roles that include the **listKeys** action provide full access to storage account data via Shared Key. To improve security, consider using custom roles that exclude this action and enforce Microsoft Entra ID-only access.
 
 Azure role assignments may take up to 30 minutes to propagate.
 
@@ -100,11 +103,9 @@ Azure role assignments may take up to 30 minutes to propagate.
 
 Access to queue data via the Azure portal, PowerShell, or Azure CLI can be authorized either by using the user's Microsoft Entra account or by using the account access keys (Shared Key authorization).
 
-Authorization with Shared Key is not recommended as it may be less secure. For optimal security, disable authorization via Shared Key for your storage account, as described in Prevent Shared Key authorization for an Azure Storage account.
-
-Use of access keys and connection strings should be limited to initial proof of concept apps or development prototypes that don't access production or sensitive data. Otherwise, the token-based authentication classes available in the Azure SDK should always be preferred when authenticating to Azure resources.
-
-Microsoft recommends that clients use either Microsoft Entra ID or a shared access signature (SAS) to authorize access to data in Azure Storage.
+- **Avoid Shared Key authorization**: Authorization with Shared Key is not recommended as it provides full access to the storage account and doesn't support advanced security features like conditional access. For optimal security, disable authorization via Shared Key for your storage account, as described in [Prevent Shared Key authorization for an Azure Storage account](/azure/storage/common/shared-key-authorization-prevent).
+- **Limit access key usage**: Use of access keys and connection strings should be limited to initial proof of concept apps or development prototypes that don't access production or sensitive data. For production workloads, always use token-based authentication classes available in the Azure SDK.
+- **Prefer Microsoft Entra ID**: Microsoft recommends that clients use Microsoft Entra ID for the most secure authorization method. When delegation is required, use a user delegation SAS for Blob storage secured with Microsoft Entra credentials.
 
 ### Data access from the Azure portal
 
@@ -120,3 +121,22 @@ Azure CLI and PowerShell support signing in with Microsoft Entra credentials. Af
 
  -  [Choose how to authorize access to queue data with Azure CLI](/azure/storage/queues/authorize-data-operations-cli)
  -  [Run PowerShell commands with Microsoft Entra credentials to access queue data](/azure/storage/queues/authorize-data-operations-powershell)
+
+## Best practices for authorizing queue access
+
+When implementing Microsoft Entra ID authorization for Azure Queue storage, follow these security best practices:
+
+- **Use managed identities**: For applications running in Azure (VMs, App Service, Azure Functions, Container Instances, AKS), always use managed identities instead of service principals with stored credentials. This eliminates credential management overhead and improves security.
+- **Implement least privilege**: Assign the most restrictive role that meets requirements:
+  - Use **Storage Queue Data Reader** for applications that only need to view messages
+  - Use **Storage Queue Data Message Sender** for applications that only enqueue messages
+  - Use **Storage Queue Data Message Processor** for worker applications that process and remove messages
+  - Use **Storage Queue Data Contributor** only when full access is required
+- **Scope assignments appropriately**: Apply role assignments at the queue level when possible rather than at the storage account or subscription level. This limits access to only the specific queues that users or applications need.
+- **Disable Shared Key authorization**: Once you've migrated to Microsoft Entra ID authentication, consider disabling Shared Key authorization at the storage account level to prevent unauthorized access via account keys.
+- **Use custom roles for fine-grained control**: If the built-in roles don't meet your specific requirements, create custom Azure RBAC roles with only the necessary permissions.
+- **Monitor access patterns**: Enable diagnostic logging and regularly review Azure Monitor logs to track queue access and identify any suspicious or unauthorized activity.
+- **Apply conditional access policies**: Use Microsoft Entra Conditional Access policies to enforce additional security requirements such as multi-factor authentication, device compliance, or location-based restrictions.
+- **Implement retry logic**: Queue-based applications should implement appropriate retry logic with exponential backoff to handle transient authentication or authorization failures gracefully.
+- **Regular access reviews**: Periodically audit role assignments to ensure users and applications still require their assigned permissions and remove unnecessary access.
+- **Separate environments**: Use different storage accounts and role assignments for development, testing, and production environments to minimize the risk of accidental data exposure or modification.
