@@ -77,6 +77,6 @@ When implementing Microsoft Entra ID authorization for Azure Table storage, foll
 - **Avoid Shared Key authorization**: Once you've migrated to Microsoft Entra ID authentication, consider disabling Shared Key authorization at the storage account level to prevent unauthorized access via account keys.
 - **Use custom roles for fine-grained control**: If the built-in roles don't meet your specific requirements, create custom Azure RBAC roles that include only the necessary permissions.
 - **Monitor access**: Enable diagnostic logging and regularly review Azure Monitor logs to track who is accessing your table data and identify any suspicious or unauthorized access attempts.
-- **Apply conditional access policies**: Use Microsoft Entra Conditional Access policies to enforce additional security requirements such as multi-factor authentication, device compliance checks, or location-based restrictions.
+- **Apply conditional access policies**: Use Microsoft Entra Conditional Access policies to enforce additional security requirements such as multifactor authentication, device compliance checks, or location-based restrictions.
 - **Regular access reviews**: Periodically review and audit role assignments to ensure users and applications still require their assigned permissions.
 - **Separate development and production**: Use different storage accounts and role assignments for development and production environments to minimize the risk of accidental data exposure or modification.

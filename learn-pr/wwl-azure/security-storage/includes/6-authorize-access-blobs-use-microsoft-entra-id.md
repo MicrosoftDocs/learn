@@ -117,7 +117,7 @@ Access to blob data via the Azure portal, PowerShell, or Azure CLI can be author
 
 **Security recommendations**:
 
-- **Avoid Shared Key authorization**: Authorization with Shared Key is not recommended as it provides full access to the storage account and doesn't support advanced security features like conditional access or multi-factor authentication. For optimal security, disable authorization via Shared Key for your storage account, as described in [Prevent Shared Key authorization for an Azure Storage account](/azure/storage/common/shared-key-authorization-prevent).
+- **Avoid Shared Key authorization**: Authorization with Shared Key is not recommended as it provides full access to the storage account and doesn't support advanced security features like conditional access or multifactor authentication. For optimal security, disable authorization via Shared Key for your storage account, as described in [Prevent Shared Key authorization for an Azure Storage account](/azure/storage/common/shared-key-authorization-prevent).
 - **Limit access key usage**: Use of access keys and connection strings should be limited to initial proof of concept apps or development prototypes that don't access production or sensitive data. For production workloads, always use token-based authentication classes available in the Azure SDK.
 - **Prefer Microsoft Entra ID**: Microsoft recommends that clients use Microsoft Entra ID for the most secure authorization method. When direct user access delegation is required, use a user delegation SAS secured with Microsoft Entra credentials rather than an account SAS. For more information, see [Authorize operations for data access](/azure/storage/common/authorize-data-access?toc=/azure/storage/blobs/toc.json&bc=/azure/storage/blobs/breadcrumb/toc.json).
 
@@ -150,4 +150,4 @@ When implementing Microsoft Entra ID authorization for blob storage, follow thes
 - **Disable Shared Key authorization**: Once you've migrated to Microsoft Entra ID authentication, disable Shared Key authorization at the storage account level to prevent unauthorized access via account keys.
 - **Use user delegation SAS**: When you need to provide temporary access, prefer user delegation SAS over account SAS or service SAS, as they're secured with Microsoft Entra credentials.
 - **Monitor access**: Enable diagnostic logging and review Azure Monitor logs regularly to track who is accessing your blob data and identify any suspicious activity.
-- **Apply conditional access**: Use Microsoft Entra Conditional Access policies to enforce additional security requirements such as multi-factor authentication, device compliance, or location-based access controls.
+- **Apply conditional access**: Use Microsoft Entra Conditional Access policies to enforce additional security requirements such as multifactor authentication, device compliance, or location-based access controls.

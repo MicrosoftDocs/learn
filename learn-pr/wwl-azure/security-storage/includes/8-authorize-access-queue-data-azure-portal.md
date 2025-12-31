@@ -136,7 +136,7 @@ When implementing Microsoft Entra ID authorization for Azure Queue storage, foll
 - **Disable Shared Key authorization**: Once you've migrated to Microsoft Entra ID authentication, consider disabling Shared Key authorization at the storage account level to prevent unauthorized access via account keys.
 - **Use custom roles for fine-grained control**: If the built-in roles don't meet your specific requirements, create custom Azure RBAC roles with only the necessary permissions.
 - **Monitor access patterns**: Enable diagnostic logging and regularly review Azure Monitor logs to track queue access and identify any suspicious or unauthorized activity.
-- **Apply conditional access policies**: Use Microsoft Entra Conditional Access policies to enforce additional security requirements such as multi-factor authentication, device compliance, or location-based restrictions.
+- **Apply conditional access policies**: Use Microsoft Entra Conditional Access policies to enforce additional security requirements such as multifactor authentication, device compliance, or location-based restrictions.
 - **Implement retry logic**: Queue-based applications should implement appropriate retry logic with exponential backoff to handle transient authentication or authorization failures gracefully.
 - **Regular access reviews**: Periodically audit role assignments to ensure users and applications still require their assigned permissions and remove unnecessary access.
 - **Separate environments**: Use different storage accounts and role assignments for development, testing, and production environments to minimize the risk of accidental data exposure or modification.

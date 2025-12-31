@@ -99,6 +99,6 @@ When configuring access to Azure Files, follow these security recommendations:
 - **Use appropriate RBAC roles**: Assign the most restrictive role that meets user requirements. Use **Storage File Data Privileged Reader** for read-only access rather than more permissive roles.
 - **Enable default Microsoft Entra authorization**: Configure storage accounts to default to Microsoft Entra ID authentication in the portal to reduce accidental use of account keys.
 - **Leverage managed identities**: For applications running in Azure, use managed identities to access Azure Files without storing credentials.
-- **Implement conditional access**: Use Microsoft Entra Conditional Access policies to enforce additional requirements such as multi-factor authentication or compliant device checks for file access.
+- **Implement conditional access**: Use Microsoft Entra Conditional Access policies to enforce additional requirements such as multifactor authentication or compliant device checks for file access.
 - **Monitor access**: Regularly review Azure Monitor logs to track who is accessing your file shares and identify any unauthorized access attempts.
 - **Consider disabling Shared Key**: If all your scenarios support identity-based authentication, consider disabling Shared Key authorization at the storage account level to prevent its use entirely.
