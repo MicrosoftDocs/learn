@@ -1,6 +1,6 @@
 ::: zone pivot="video"
 
->[!VIDEO https://learn-video.azurefd.net/vod/player?id=bb56bcc7-5903-41c3-b823-8659af6217c1]
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=ba24beec-3ffb-4884-8903-b256a3f4650e]
 
 > [!NOTE]
 > See the **Text and images** tab for more details!
@@ -11,10 +11,10 @@
 
 Hopefully, this module gave you an insight into some of the core capabilities of AI, and an intuition into how they work. We explored many areas of AI, including:
 
-- Generative AI
-- Computer vision
-- Speech
+- Generative AI and agents
 - Natural language processing (NLP) and text analytics
+- Speech
+- Computer vision
 - Information extraction
 - Responsible AI
 
