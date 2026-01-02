@@ -75,7 +75,7 @@ File shares can be used for many common scenarios:
 
 Azure Elastic storage area network (SAN) solves the problem of workload optimization and integration between your large scale databases and performance-intensive mission-critical applications. Elastic SAN is a fully integrated solution that simplifies deploying, scaling, managing, and configuring a SAN, offering high availability.
 
-Elastic SAN is designed for large scale **Input/Output** - intensive workloads and top tier databases such as SQL, MariaDB, and support hosting the workloads on virtual machines, or containers such as Azure Kubernetes Service. Elastic SAN volumes are compatible with a wide variety of compute resources through theInternet Small Computer Systems Interface (iSCSI) protocol. Some other benefits of Elastic SAN include a simplified deployment and management interface. Since you can manage storage for multiple compute resources from a single interface, and cost optimization.
+Elastic SAN is designed for large-scale input/output-intensive workloads and top-tier databases such as SQL and MariaDB, and supports hosting the workloads on virtual machines or containers such as Azure Kubernetes Service. Elastic SAN volumes are compatible with a wide variety of compute resources through the Internet Small Computer Systems Interface (iSCSI) protocol. Other benefits of Elastic SAN include a simplified deployment and management interface, allowing you to manage storage for multiple compute resources from a single interface, and cost optimization through efficient resource utilization.
 
 ## Azure Container Storage
 
@@ -99,7 +99,7 @@ Azure Table Storage is now part of Azure Cosmos DB. In addition to the existing 
 
 ## Disk Storage
 
-An Azure managed disk is a virtual hard disk (VHD). You can think of it like a physical disk in an on-premises server but, virtualized. Azure-managed disks are stored as page blobs, which are a random **Input/Output** storage object in Azure. We call a managed disk 'managed' because it's an abstraction over page blobs, blob containers, and Azure storage accounts. With managed disks, all you have to do is create the disk, and Azure takes care of the rest.
+An Azure managed disk is a virtual hard disk (VHD). You can think of it like a physical disk in an on-premises server but virtualized. Azure managed disks are stored as page blobs, which are a random input/output storage object in Azure. We call a managed disk 'managed' because it's an abstraction over page blobs, blob containers, and Azure storage accounts. With managed disks, all you have to do is create the disk, and Azure takes care of the rest.
 
 ## Azure NetApp Files
 
@@ -109,10 +109,11 @@ Azure NetApp Files is an enterprise-class, high-performance, managed file storag
 
 Every request to Azure Storage must be authorized. Azure Storage supports the following authorization methods:
 
-- Microsoft Entra integration for blob, file, queue, and table data. Azure Storage supports authentication and authorization with Microsoft Entra ID for the Blob, File, Table, and Queue services via Azure role-based access control. Authorizing requests with Microsoft Entra ID is recommended for superior security and easing of use.
-- Identity-based authentication over SMB for Azure Files. Azure Files supports identity-based authorization over SMB (Server Message Block) through either on-premises Microsoft Entra Domain Services, or Microsoft Entra Kerberos (hybrid user accounts only).
-- Authorization with Shared Key. The Azure Storage Blob, Files, Queue, and Table services support authorization with Shared Key. A client using Shared Key authorization passes a header with every request that is signed using the storage account access key. pended to the URI for a storage resource. The security token encapsulates constraints such as permissions and the interval of access.
-- Microsoft Entra Domain Services with Azure NetApp Files. Azure NetApp Files features such as SMB volumes, dual-protocol volumes, and NFSv4.1 Kerberos volumes are used with Microsoft Entra Domain Services.
+- **Microsoft Entra integration for blob, file, queue, and table data.** Azure Storage supports authentication and authorization with Microsoft Entra ID for the Blob, File, Table, and Queue services via Azure role-based access control (RBAC). Authorizing requests with Microsoft Entra ID is recommended for superior security and ease of use over other authorization methods.
+- **Identity-based authentication over SMB for Azure Files.** Azure Files supports identity-based authorization over Server Message Block (SMB) through on-premises Active Directory Domain Services (AD DS), Microsoft Entra Domain Services, or Microsoft Entra Kerberos (for hybrid user accounts).
+- **Authorization with Shared Key.** The Azure Storage Blob, Files, Queue, and Table services support authorization with Shared Key. A client using Shared Key authorization passes a header with every request that is signed using the storage account access key. While supported, Microsoft recommends moving away from Shared Key authorization to more secure methods when possible.
+- **Shared access signatures (SAS).** A shared access signature provides secure delegated access to resources in your storage account. A SAS token is appended to the URI for a storage resource. The security token encapsulates constraints such as permissions and the interval of access.
+- **Microsoft Entra Domain Services with Azure NetApp Files.** Azure NetApp Files features such as SMB volumes, dual-protocol volumes, and NFSv4.1 Kerberos volumes integrate with Microsoft Entra Domain Services for identity-based access control.
 
 ## Encryption
 
@@ -126,7 +127,7 @@ Azure Storage encryption protects and safeguards your data to meet your organiza
 
 The Azure Storage client libraries provide methods for encrypting data from the client library before sending it across the wire and decrypting the response. Data encrypted via client-side encryption uses the Azure Storage encryption process.
 
-Azure NetApp Files data traffic is inherently secure by design, as it doesn't provide a public endpoint and data traffic stays within customer-owned virtual network. Data-in-flight isn't encrypted by default. However, data traffic from an Azure VM (running an **Network File System** or **Server Message Block** client) to Azure NetApp Files is as secure as any other Azure-VM-to-VM traffic. NFSv4.1 and SMB3 data-in-flight encryption can optionally be enabled.
+Azure NetApp Files data traffic is inherently secure by design, as it doesn't provide a public endpoint and data traffic stays within the customer-owned virtual network. Data-in-flight isn't encrypted by default. However, data traffic from an Azure VM (running a Network File System or Server Message Block client) to Azure NetApp Files is as secure as any other Azure-VM-to-VM traffic. NFSv4.1 and SMB3 data-in-flight encryption can optionally be enabled for enhanced security.
 
 ## Redundancy
 

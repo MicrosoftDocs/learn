@@ -7370,6 +7370,11 @@ achievements:
   title: Introduction to Azure Machine Learning
   summary: Azure Machine Learning provides an environment to create and manage the end-to-end life cycle of Machine Learning models. Azure Machine Learning's compatibility with open-source frameworks and platforms like PyTorch and TensorFlow makes it an effective all-in-one platform for integrating and handling data and models. Azure Machine Learning is designed for all skill levels, with advanced MLOps features and simple no-code model creation and deployment.
   iconUrl: /training/achievements/intro-to-azure-ml.svg
+- uid: learn.azure.route-and-process-data-logic-apps.badge
+  type: badge
+  title: Route and process data automatically using Azure Logic Apps
+  summary: Build an integration workflow using a prebuilt trigger and actions.
+  iconUrl: /training/achievements/route-and-process-data-logic-apps.svg
 - uid:  learn.azure.ms-learn-live.badge
   type: badge
   title: Migrate an ASP.NET Core application from an on-premises environment into Azure
@@ -7385,6 +7390,21 @@ achievements:
   title: Train a model and debug it with Responsible AI dashboard
   summary: Learn how to debug an AI model using the Responsible AI dashboard in Azure Machine Learning studio to ensure it performs responsibly and is less harmful.
   iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.control-authentication-with-apim.badge
+  type: badge
+  title: Control access to your APIs with Azure API Management
+  summary: Discover how to protect your APIs from unauthorized use with API keys and client certificate authentication.
+  iconUrl: /training/achievements/control-authentication-with-apim.svg
+- uid: learn.azure.improve-api-performance-with-apim-caching-policy.badge
+  type: badge
+  title: Improve the performance of an API by adding a caching policy in Azure API Management
+  summary: API Management policies are configurable modules that you can add to APIs to change their behaviors. 
+  iconUrl: /training/achievements/improve-api-performance-with-apim-caching-policy.svg
+- uid: learn.protect-apis-on-api-management.badge
+  type: badge
+  title: Protect your APIs on Azure API Management
+  summary: Use policies in Azure API Management to protect your backend APIs from information exposure and implement throttling to prevent resource exhaustion.
+  iconUrl: /training/achievements/protect-apis-on-api-management.svg
 - uid: learn.azdo.host-build-agent.badge
   type: badge
   title: Host your own build agent in Azure Pipelines
@@ -7400,3 +7420,9 @@ achievements:
   title: Publish an API to Azure Static Web Apps
   summary: Publish an Angular, React, Svelte, or Vue JavaScript app and API with Azure Static Web Apps and Azure Functions. Deploy your code from GitHub to a staging site using preview URLs.
   iconUrl: /training/achievements/publish-static-web-app-api-preview-url.svg
+- uid: learn.machinelearning.understand-classification-machine-learning.badge
+  type: badge
+  title: Create and understand classification models in machine learning
+  summary: Classification means assigning items into categories, or can also be thought of automated decision making. Here we introduce classification models through logistic regression, providing you with a stepping-stone toward more complex and exciting classification methods.
+  iconUrl: /training/achievements/machine-learning/understand-classification-machine-learning.svg
+  
