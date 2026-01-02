@@ -9,7 +9,7 @@ There are two main deployment types for Azure App Service:
 
 Azure App Service is a distributed system. The roles that handle incoming HTTP or HTTPS requests are called *front ends*. The roles that host the customer workload are called *workers*. All the roles in an App Service deployment exist in a multitenant network. Because there are many different customers in the same App Service scale unit, you can't connect the App Service network directly to your network.
 
-Instead of connecting the networks, you need features to handle the various aspects of application communication. The features that handle requests to your app can't be used to solve problems when you're making calls from your app. Likewise, the features that solve problems for calls from your app can't be used to solve problems to your app.
+Instead of directly connecting the networks, App Service provides networking features for different aspects of application communication. Inbound features control traffic coming to your app, and outbound features govern connections your app makes to external endpoints. Use inbound features to solve inbound problems and outbound features to solve outbound problems.
 
 | Inbound features | Outbound features |
 |--|--|
@@ -45,7 +45,7 @@ You can find the same information by running the following Azure CLI command in 
 ```bash
 az webapp show \
     --resource-group <group_name> \
-    --name <app_name> \ 
+    --name <app_name> \
     --query outboundIpAddresses \
     --output tsv
 ```
@@ -54,8 +54,8 @@ To find all possible outbound IP addresses for your app, regardless of pricing t
 
 ```bash
 az webapp show \
-    --resource-group <group_name> \ 
-    --name <app_name> \ 
+    --resource-group <group_name> \
+    --name <app_name> \
     --query possibleOutboundIpAddresses \
     --output tsv
 ```
