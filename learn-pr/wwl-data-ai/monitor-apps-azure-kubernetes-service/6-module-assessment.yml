@@ -36,26 +36,26 @@ quiz:
       explanation: "Scaling down and up restarts pods but doesn't explain why the container fails, so it doesn't help you diagnose the problem."
   - content: "A Service that fronts your AI API shows no endpoints, even though the pods appear healthy and ready. Which command helps you confirm whether the Service selectors match pod labels?"
     choices:
-    - content: "kubectl describe service <service-name> -n <namespace>"
+    - content: "`kubectl describe service <service-name> -n <namespace>`"
       isCorrect: true
       explanation: "`kubectl describe service` shows the selector labels and current endpoints, so you can verify whether the Service matches the pods."
-    - content: "kubectl top nodes"
+    - content: "`kubectl top nodes`"
       isCorrect: false
-      explanation: "kubectl top nodes only shows node resource usage and doesn't expose Service selector or endpoint details."
-    - content: "kubectl logs <pod-name> -n <namespace>"
+      explanation: "`kubectl top nodes` only shows node resource usage and doesn't expose Service selector or endpoint details."
+    - content: "`kubectl logs <pod-name> -n <namespace>`"
       isCorrect: false
       explanation: "Pod logs help debug application behavior but don't show how the Service selects pods or why it has no endpoints."
   - content: "You need to debug a new AI endpoint inside the cluster before exposing it externally. You want to send HTTP requests from your development machine directly to the Service. Which command should you use?"
     choices:
-    - content: "kubectl port-forward service/<service-name> 8080:80 -n <namespace>"
+    - content: "`kubectl port-forward service/<service-name> 8080:80 -n <namespace>`"
       isCorrect: true
       explanation: "`kubectl port-forward` from your workstation to the Service lets you send HTTP requests directly to the endpoint inside the cluster."
-    - content: "kubectl get endpoints <service-name> -n <namespace>"
+    - content: "`kubectl get endpoints <service-name> -n <namespace>`"
       isCorrect: false
       explanation: "`kubectl get endpoints` shows which pods back the Service but doesn't forward traffic from your development machine."
-    - content: "kubectl describe node on the node that hosts the pod"
+    - content: "`kubectl describe node` on the node that hosts the pod"
       isCorrect: false
-      explanation: "kubectl describe node focuses on node state and scheduling, not on creating a local tunnel to the Service for HTTP requests."
+      explanation: "`kubectl describe node` focuses on node state and scheduling, not on creating a local tunnel to the Service for HTTP requests."
   - content: "Metrics for a model-serving pod show sustained CPU usage at its configured limit, and users report increased latency. What is the most appropriate next step?"
     choices:
     - content: "Adjust CPU requests and limits or scale out replicas so the pod has enough capacity."
