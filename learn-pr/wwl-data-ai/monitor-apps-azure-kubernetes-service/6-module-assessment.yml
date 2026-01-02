@@ -1,0 +1,69 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.monitor-apps-azure-kubernetes-service.module-assessment
+title: Module assessment
+metadata:
+  title: Module Assessment
+  description: Module assessment
+  ms.date: 12/31/2025
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+quiz:
+  questions:
+  - content: "You receive reports that an AI inference API on Azure Kubernetes Service occasionally returns HTTP 500 errors and higher latency. You want to inspect recent error messages for a specific pod while reproducing the issue. Which approach is most appropriate?"
+    choices:
+    - content: "Use `kubectl logs -f <pod-name> -n <namespace>` while you send test requests to the API."
+      isCorrect: true
+      explanation: "Streaming logs from the specific pod while you reproduce the issue lets you see real-time error messages and stack traces that explain the HTTP 500 errors and latency."
+    - content: "Open Azure Monitor and review only node CPU metrics for the last week."
+      isCorrect: false
+      explanation: "Node CPU metrics alone don't show application-level errors for a specific pod, and a week-long window is too broad for targeted debugging."
+    - content: "Run `kubectl describe node` on all nodes to look for scheduling events."
+      isCorrect: false
+      explanation: "Node describe output focuses on node health and scheduling, not on recent application log messages for a single pod."
+  - content: "A pod that runs a model-serving container is stuck in CrashLoopBackOff. You want to understand why the container exits. What should you do first?"
+    choices:
+    - content: "Run `kubectl describe pod <pod-name> -n <namespace>` and inspect events and container status."
+      isCorrect: true
+      explanation: "`kubectl describe pod` shows recent events and container status, which usually reveal the exit reason, failed probes, or configuration problems causing CrashLoopBackOff."
+    - content: "Immediately delete the pod so Kubernetes recreates it."
+      isCorrect: false
+      explanation: "Deleting the pod without inspecting it first can hide the root cause and usually leads to another CrashLoopBackOff cycle."
+    - content: "Scale the Deployment to zero replicas and then scale it back up."
+      isCorrect: false
+      explanation: "Scaling down and up restarts pods but doesn't explain why the container fails, so it doesn't help you diagnose the problem."
+  - content: "A Service that fronts your AI API shows no endpoints, even though the pods appear healthy and ready. Which command helps you confirm whether the Service selectors match pod labels?"
+    choices:
+    - content: "kubectl describe service <service-name> -n <namespace>"
+      isCorrect: true
+      explanation: "`kubectl describe service` shows the selector labels and current endpoints, so you can verify whether the Service matches the pods."
+    - content: "kubectl top nodes"
+      isCorrect: false
+      explanation: "kubectl top nodes only shows node resource usage and doesn't expose Service selector or endpoint details."
+    - content: "kubectl logs <pod-name> -n <namespace>"
+      isCorrect: false
+      explanation: "Pod logs help debug application behavior but don't show how the Service selects pods or why it has no endpoints."
+  - content: "You need to debug a new AI endpoint inside the cluster before exposing it externally. You want to send HTTP requests from your development machine directly to the Service. Which command should you use?"
+    choices:
+    - content: "kubectl port-forward service/<service-name> 8080:80 -n <namespace>"
+      isCorrect: true
+      explanation: "`kubectl port-forward` from your workstation to the Service lets you send HTTP requests directly to the endpoint inside the cluster."
+    - content: "kubectl get endpoints <service-name> -n <namespace>"
+      isCorrect: false
+      explanation: "`kubectl get endpoints` shows which pods back the Service but doesn't forward traffic from your development machine."
+    - content: "kubectl describe node on the node that hosts the pod"
+      isCorrect: false
+      explanation: "kubectl describe node focuses on node state and scheduling, not on creating a local tunnel to the Service for HTTP requests."
+  - content: "Metrics for a model-serving pod show sustained CPU usage at its configured limit, and users report increased latency. What is the most appropriate next step?"
+    choices:
+    - content: "Adjust CPU requests and limits or scale out replicas so the pod has enough capacity."
+      isCorrect: true
+      explanation: "When a pod consistently hits its CPU limit and latency increases, you typically need to raise CPU resources or add replicas so the workload has more capacity."
+    - content: "Ignore the metrics because the pod is still running."
+      isCorrect: false
+      explanation: "Ignoring sustained high CPU and latency risks breaching performance objectives and causing user-facing issues."
+    - content: "Delete the Service and recreate it with the same configuration."
+      isCorrect: false
+      explanation: "Recreating the Service doesn't address CPU saturation inside the pod and won't resolve the latency problem."
