@@ -205,10 +205,6 @@ AWS guidance: Use the AWS Systems Manager Inventory feature to discover the appl
 
 You can also use an external solution to discover and identify unapproved software.
 
-AWS implementation and extra context:
-
-- [Preventing prohibited applications with AWS Systems Manager and AWS Config](https://aws.amazon.com/blogs/mt/preventing-blacklisted-applications-with-aws-systems-manager-and-aws-config/)
-
 Customer security stakeholders ([Learn more](/azure/cloud-adoption-framework/organize/cloud-security#security-functions)):
 
 - [Infrastructure and endpoint security](/azure/cloud-adoption-framework/organize/cloud-security-infrastructure-endpoint)
