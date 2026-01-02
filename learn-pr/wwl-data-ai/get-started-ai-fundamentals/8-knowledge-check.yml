@@ -20,9 +20,9 @@ quiz:
     - content: "Generative AI uses a language model to create original content in response to a prompt."
       isCorrect: true
       explanation: "Correct. Generative AI uses language models to create new original content."
-    - content: "Generative AI is an older form of AI that is being replaced by machine learning."
+    - content: "Generative AI is an older form of AI that's superseded by machine learning."
       isCorrect: false
-      explanation: "Incorrect. Generative AI is not being replaced by machine learning."
+      explanation: "Incorrect. Generative AI isn't superseded by machine learning."
     - content: "Generative AI is a complex form of AI that can only be used by specialists such as data scientists."
       isCorrect: false
       explanation: "Incorrect. Generative AI is available in many user-friendly applications."
