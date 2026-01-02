@@ -4,7 +4,7 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: "Knowledge check"
-  ms.date: 12/19/2025
+  ms.date: 01/02/2026
   author: GraemeMalcolm
   ms.author: gmalc
   ms.topic: unit
@@ -15,7 +15,7 @@ durationInMinutes: 3
 quiz:
   title: ""
   questions:
-  - content: "Which is the best description of generative AI?"
+  - content: "Which is the most accurate description of generative AI?"
     choices:
     - content: "Generative AI uses a language model to create original content in response to a prompt."
       isCorrect: true
@@ -26,17 +26,17 @@ quiz:
     - content: "Generative AI is a complex form of AI that can only be used by specialists such as data scientists."
       isCorrect: false
       explanation: "Incorrect. Generative AI is available in many user-friendly applications."
-  - content: "A wildlife conservation app uses AI to locate one or more animals in photos. Which computer vision capability is being used?"
+  - content: "What is an AI agent?"
     choices:
-    - content: "Image classification"
+    - content: "A technology professional who builds AI applications."
       isCorrect: false
-      explanation: "Incorrect. Image classification is used to identify the main subject of an image."
-    - content: "Object detection"
+      explanation: "Incorrect. An AI agent is not a technologist."
+    - content: "Anyone who uses AI applications."
+      isCorrect: false
+      explanation: "Incorrect. An AI agent is not just any user of AI applications."
+    - content: "An AI application that can perform tasks on behalf of a user."
       isCorrect: true
-      explanation: "Correct. Object detection is used to identify the location of one or more objects in an image."
-    - content: "Entity extraction"
-      isCorrect: false
-      explanation: "Incorrect. Entity extraction is used to identify and extract specific information from text."
+      explanation: "Correct. An AI agent is an AI application that can perform tasks on behalf of a user."
   - content: "An AI application reads email aloud to a user. Which AI speech capability is being used?"
     choices:
     - content: "Speech recognition"

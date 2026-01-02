@@ -31,9 +31,9 @@ products:
 units:
 - learn.wwl.get-started-ai-fundamentals.introduction-ai
 - learn.wwl.get-started-ai-fundamentals.generative-ai
-- learn.wwl.get-started-ai-fundamentals.computer-vision
-- learn.wwl.get-started-ai-fundamentals.speech
 - learn.wwl.get-started-ai-fundamentals.natural-language-processing
+- learn.wwl.get-started-ai-fundamentals.speech
+- learn.wwl.get-started-ai-fundamentals.computer-vision
 - learn.wwl.get-started-ai-fundamentals.extract-insights
 - learn.wwl.get-started-ai-fundamentals.responsible-ai
 - learn.wwl.get-started-ai-fundamentals.knowledge-check
