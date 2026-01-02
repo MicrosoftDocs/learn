@@ -61485,6 +61485,116 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/azure/publish-app-service-static-web-app-api-dotnet/index.yml",
+      "redirect_url": "https://learn.microsoft.com/aspnet/core/blazor/host-and-deploy/webassembly/azure-static-web-apps?view=aspnetcore-10.0",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-app-service-static-web-app-api-dotnet/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/aspnet/core/blazor/host-and-deploy/webassembly/azure-static-web-apps?view=aspnetcore-10.0",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-app-service-static-web-app-api-dotnet/2-exercise-get-started.yml",
+      "redirect_url": "https://learn.microsoft.com/aspnet/core/blazor/host-and-deploy/webassembly/azure-static-web-apps?view=aspnetcore-10.0",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-app-service-static-web-app-api-dotnet/3-static-web-apps.yml",
+      "redirect_url": "https://learn.microsoft.com/aspnet/core/blazor/host-and-deploy/webassembly/azure-static-web-apps?view=aspnetcore-10.0",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-app-service-static-web-app-api-dotnet/4-exercise-static-web-apps.yml",
+      "redirect_url": "https://learn.microsoft.com/aspnet/core/blazor/host-and-deploy/webassembly/azure-static-web-apps?view=aspnetcore-10.0",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-app-service-static-web-app-api-dotnet/5-fallback-routes.yml",
+      "redirect_url": "https://learn.microsoft.com/aspnet/core/blazor/host-and-deploy/webassembly/azure-static-web-apps?view=aspnetcore-10.0",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-app-service-static-web-app-api-dotnet/6-exercise-fallback-routes.yml",
+      "redirect_url": "https://learn.microsoft.com/aspnet/core/blazor/host-and-deploy/webassembly/azure-static-web-apps?view=aspnetcore-10.0",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-app-service-static-web-app-api-dotnet/7-build-api.yml",
+      "redirect_url": "https://learn.microsoft.com/aspnet/core/blazor/host-and-deploy/webassembly/azure-static-web-apps?view=aspnetcore-10.0",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-app-service-static-web-app-api-dotnet/8-exercise-function-app.yml",
+      "redirect_url": "https://learn.microsoft.com/aspnet/core/blazor/host-and-deploy/webassembly/azure-static-web-apps?view=aspnetcore-10.0",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-app-service-static-web-app-api-dotnet/9-action.yml",
+      "redirect_url": "https://learn.microsoft.com/aspnet/core/blazor/host-and-deploy/webassembly/azure-static-web-apps?view=aspnetcore-10.0",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-app-service-static-web-app-api-dotnet/10-exercise-action.yml",
+      "redirect_url": "https://learn.microsoft.com/aspnet/core/blazor/host-and-deploy/webassembly/azure-static-web-apps?view=aspnetcore-10.0",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-app-service-static-web-app-api-dotnet/11-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/aspnet/core/blazor/host-and-deploy/webassembly/azure-static-web-apps?view=aspnetcore-10.0",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-app-service-static-web-app-api-dotnet/12-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/aspnet/core/blazor/host-and-deploy/webassembly/azure-static-web-apps?view=aspnetcore-10.0",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-static-web-app-api-preview-url/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/static-web-apps/add-api?tabs=vanilla-javascript",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-static-web-app-api-preview-url/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/static-web-apps/add-api?tabs=vanilla-javascript",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-static-web-app-api-preview-url/2-exercise-get-started.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/static-web-apps/add-api?tabs=vanilla-javascript",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-static-web-app-api-preview-url/3-build-api.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/static-web-apps/add-api?tabs=vanilla-javascript",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-static-web-app-api-preview-url/4-exercise-function-app.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/static-web-apps/add-api?tabs=vanilla-javascript",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-static-web-app-api-preview-url/5-action.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/static-web-apps/add-api?tabs=vanilla-javascript",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-static-web-app-api-preview-url/6-exercise-action.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/static-web-apps/add-api?tabs=vanilla-javascript",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-static-web-app-api-preview-url/7-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/static-web-apps/add-api?tabs=vanilla-javascript",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-static-web-app-api-preview-url/8-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/static-web-apps/add-api?tabs=vanilla-javascript",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/azure/understand-classification-machine-learning/index.yml",
       "redirect_url": "https://learn.microsoft.com/training/paths/create-machine-learn-models/ ",
       "redirect_document_id": false
