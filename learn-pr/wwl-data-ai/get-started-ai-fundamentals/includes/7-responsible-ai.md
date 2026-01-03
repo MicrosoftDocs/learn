@@ -1,6 +1,6 @@
 ::: zone pivot="video"
 
->[!VIDEO https://learn-video.azurefd.net/vod/player?id=0b09c5c0-62df-4bc9-b7b1-fe8ee3a9a9ad]
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=373e395b-a17e-4b40-ae2b-e1977ff6859f]
 
 > [!NOTE]
 > See the **Text and images** tab for more details!
@@ -27,7 +27,7 @@ Some example of scenarios where responsible AI practices should be applied inclu
 - An AI-powered college admissions system should be tested to ensure it evaluates all applications fairly, taking into account relevant academic criteria but avoiding unfounded discrimination based on irrelevant demographic factors.
 - An AI-powered robotic solution that uses computer vision to detect objects should avoid unintentional harm or damage. One way to accomplish this goal is to use probability values to determine "confidence" in object identification before interacting with physical objects, and avoid any action if the confidence level is below a specific threshold.
 - A facial identification system used in an airport or other secure area should delete personal images that are used for temporary access as soon as they're no longer required. Additionally, safeguards should prevent the images being made accessible to operators or users who have no need to view them.
-- A web-based chatbot that offers speech-based interaction should also generate text captions to avoid making the system unusable for users with a hearing impairment.
+- An AI agent that offers speech-based interaction should also generate text captions to avoid making the system unusable for users with a hearing impairment.
 - A bank that uses an AI-based loan-approval application should disclose the use of AI, and describe features of the data on which it was trained (without revealing confidential information).
 
 ::: zone-end
