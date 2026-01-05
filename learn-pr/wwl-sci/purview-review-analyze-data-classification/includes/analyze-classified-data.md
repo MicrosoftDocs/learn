@@ -11,19 +11,19 @@ Knowing where sensitive data is stored and how it's accessed helps organizations
 
 To use data explorer, you need the correct permissions in Microsoft Purview.
 
-### Permissions
+### Permissions for explorer access
 
-Access to data explorer is restricted because it exposes sensitive information. This table lists the viewer roles and access levels available in both data explorer and content explorer (classic).
+Access to Data explorer and Content explorer (classic) is restricted because these tools expose classified data. Viewer roles control whether users can see item metadata only or view file contents. While the role groups are specific to each explorer, they follow the same access pattern.
 
-| Role | Access level  |
-|-----|-----|
-| Data Explorer List Viewer | View file metadata and classification labels but not file contents. |
-| Data Explorer Content Viewer | View file contents in addition to metadata. |
-| Content Explorer (classic) List Viewer | View a list of items with classification details. |
-| Content Explorer (classic) Content Viewer | View file contents in addition to metadata. |
+| Role | What the role allows |
+| ----- | ----- |
+| Data Explorer List Viewer | View item metadata and classification details in Data explorer without opening file contents. |
+| Data Explorer Content Viewer | View file contents in addition to metadata in Data explorer. |
+| Content Explorer (classic) List Viewer | View item metadata and classification details in Content explorer (classic) without opening file contents. |
+| Content Explorer (classic) Content Viewer | View file contents in addition to metadata in Content explorer (classic). |
 
 > [!NOTE]
-> Users with a **List Viewer** role can see classification details but can't open or preview file contents. The **Content Viewer** role is required to view file contents.
+> Although these roles are assigned separately for each explorer, the **List Viewer** and **Content Viewer** roles behave the same way across both experiences. Content Viewer access is required to open or preview file contents.
 
 ### Navigate to data explorer
 
@@ -61,15 +61,18 @@ Data explorer provides a unified snapshot of classified items, including:
 
 ## Compare data explorer and content explorer (classic)
 
+Both Data explorer and Content explorer (classic) surface classified and labeled content. Data explorer presents this information through a consolidated, interactive view, while Content explorer (classic) uses a location-based browsing experience.
+
 Content explorer (classic) remains available for organizations that still rely on the older interface. It allows browsing by location to find labeled and classified content but doesn't provide the consolidated or interactive experience available in data explorer.
 
 This table compares data explorer and content explorer (classic) to show how the experiences differ.
 
 | Feature | Data explorer | Content explorer (classic) |
-|-----|-----|-----|
-| Data organization and visibility | Displays sensitivity labels, retention labels, trainable classifiers, and SITs together in one view. | Requires navigating into each location to see details. |
-| Integration with Information Protection Reports | Linked directly from reports for deeper investigation. | Not linked from reports; must be opened manually. |
-| Copilot data visibility | Lists Copilot as a data source when enabled. | Doesn't include Copilot as a data source. |
+| ----- | ----- | ----- |
+| Data organization and visibility | Surfaces sensitivity labels, retention labels, trainable classifiers, and SITs in a unified view. | Surfaces classification details through location-based navigation. |
+| Integration with Information Protection Reports | Accessible directly from reports for deeper investigation. | Accessed separately from reports. |
+| Copilot data visibility | Surfaces Copilot as a data source when enabled. | Doesn't surface Copilot as a data source. |
+
 
 > [!NOTE]
 > Use **Data explorer** for most analysis tasks. Choose **Content explorer (classic)** only when legacy visibility is required.
