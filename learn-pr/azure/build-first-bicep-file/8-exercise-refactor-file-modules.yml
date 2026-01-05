@@ -1,7 +1,7 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.deploy-azure-resources-bicep.refactor-file-modules
 title: Exercise - Refactor your Bicep file to use modules
-sandbox: true
+#sandbox: true
 metadata:
   unitType: exercise
   title: Exercise - Refactor your Bicep file to use modules

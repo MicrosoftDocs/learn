@@ -1,3 +1,5 @@
+[!INCLUDE[](../../../includes/azure-optional-exercise-subscription-note.md)]
+
 So far, your Bicep file has deployed a single Azure SQL logical server, with auditing settings included for your production environment. You now need to deploy multiple logical servers, one for each region where your company is launching its new smart teddy bear. 
 
 In this exercise, you'll extend the Bicep code that you created previously so that you can deploy instances of your databases to multiple Azure regions.
@@ -79,7 +81,7 @@ After the deployment is finished, you want to verify that the new logical server
 
 1. Go to the [Azure portal](https://portal.azure.com?azure-portal=true), and make sure that you're in the sandbox subscription.
 
-1. Select **<rgn>[sandbox resource group name]</rgn>**.
+1. Select your resource group name.
 
 1. Verify that new logical server and database are located in the East US 2 region, which you specified in the `locations` parameter's default value.
 
@@ -132,7 +134,7 @@ Wait for the deployment to finish.
 
 Now that you've redeployed the resources, you want to verify that the additional logical server and database resources have been created in the East Asia region.
 
-1. Return to the [Azure portal](https://portal.azure.com?azure-portal=true) and select the **<rgn>[sandbox resource group name]</rgn>** resource group. If necessary, select **Refresh** to see the newly deployed resources.
+1. Return to the [Azure portal](https://portal.azure.com?azure-portal=true) and select your resource group. If necessary, select **Refresh** to see the newly deployed resources.
 
 1. Verify that the new logical server and database have been deployed in the East Asia region.
 

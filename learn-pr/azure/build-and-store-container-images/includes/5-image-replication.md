@@ -4,7 +4,7 @@ Geo-replication enables a container registry to function as a single registry th
 
 A geo-replicated registry provides the following benefits:
 
-- Use single registry/image/tag names across multiple regions.
+- Use single `registry/image/tag` names across multiple regions.
 - Network-close registry access from regional deployments.
 - No extra egress fees, as images are pulled from a local, replicated registry in the same region as the container host.
 - Single management of a registry across multiple regions.
@@ -13,7 +13,7 @@ A geo-replicated registry provides the following benefits:
 
 1. Replicate your registry to another region using the `az acr replication create` command. In this example, we replicate to the `japaneast` region.
 
-    ```azurecli-interactive
+    ```azurecli
     az acr replication create --registry $ACR_NAME --location japaneast
     ```
 
@@ -32,9 +32,9 @@ A geo-replicated registry provides the following benefits:
     }
     ```
 
-2. View all the container image replicas using the `az acr replication list` command.
+1. View all the container image replicas using the `az acr replication list` command.
 
-    ```azurecli-interactive
+    ```azurecli
     az acr replication list --registry $ACR_NAME --output table
     ```
 
@@ -49,18 +49,17 @@ A geo-replicated registry provides the following benefits:
 
 You can also use the Azure portal to view your container images by navigating to your container registry and selecting **Geo-replications**:
 
-  ![Screenshot of Azure container registry world map showing replicated and available locations.](../media/replication-map-expanded.png)
+:::image type="content" source="../media/replication-map-expanded.png" alt-text="Screenshot of Azure container registry world map showing replicated and available locations.":::
 
 ## Clean up resources
 
-Remove the resources you created in this module to avoid incurring charges. Deleting the resource group also deletes all its associated resources.
+To avoid incurring charges, remove the resources you created in this module. When you delete the resource group, all resources in the resource group are deleted.
 
-1. Navigate to the [Azure Cloud Shell](https://shell.azure.com/bash).
-2. Delete the resource group using the `az group delete` command.
+Delete the resource group using the `az group delete` command.
 
-    ```azurecli-interactive
-    az group delete --name learn-acr-rg --yes --no-wait 
-    ```
+```azurecli
+az group delete --name learn-acr-rg --yes --no-wait
+```
 
 ## Learn more
 
