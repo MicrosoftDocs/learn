@@ -1,44 +1,60 @@
-Application security groups enable you to configure network security as a natural extension of an application's structure, allowing you to group virtual machines and define network security policies based on those groups. You can reuse your security policy at scale without manual maintenance of explicit IP addresses. The platform handles the complexity of explicit IP addresses and multiple rule sets, allowing you to focus on your business logic. To better understand application security groups, consider the following example:
+Application security groups (ASGs) enable you to configure network security as a natural extension of your application's structure. Instead of defining security rules based on explicit IP addresses, you can group virtual machines by their application role and define network security policies based on those groups. This approach simplifies security management and makes rules reusable at scale.
+
+## Benefits of application security groups
+
+- **Simplified management**: Group virtual machines (VMs) by application tier (web, logic, database) rather than managing individual IP addresses
+- **Scalable security**: Apply consistent security policies across multiple VMs without updating rules
+- **Intuitive organization**: Security rules reflect your application architecture
+- **Reduced complexity**: The platform handles IP address management automatically
+
+## Example: Multi-tier application security
+
+Consider a three-tier application with web servers, application servers, and database servers:
 
 :::image type="content" source="../media/application-security-groups-fab4e68f.png" alt-text="Diagram showing an example of Azure Network Security Groups and Application Security Groups.":::
 
+In this example:
+- **NIC1** and **NIC2** are members of the **AsgWeb** application security group (web tier)
+- **NIC3** is a member of the **AsgLogic** application security group (application tier)
+- **NIC4** is a member of the **AsgDb** application security group (database tier)
 
-In the previous picture, *NIC1* and *NIC2* are members of the *AsgWeb* application security group. *NIC3* is a member of the *AsgLogic* application security group. *NIC4* is a member of the *AsgDb* application security group. Though each network interface (NIC) in this example is a member of only one network security group, a network interface can be a member of multiple application security groups, up to the Azure Limits. None of the network interfaces have an associated network security group. *NSG1* is associated to both subnets and contains the following rules:
+Each network interface can be a member of multiple ASGs (up to Azure subscription limits). No NSGs are associated directly with the network interfaces. Instead, **NSG1** is associated with both subnets and contains the following rules:
 
-## Allow-HTTP-Inbound-Internet
+### Allow-HTTP-Inbound-Internet
 
-This rule is needed to allow traffic from the internet to the web servers. Because inbound traffic from the internet is denied by the DenyAllInbound default security rule, no extra rule is needed for the *AsgLogic* or *AsgDb* application security groups.
+This rule allows HTTP traffic from the internet to reach the web tier. The DenyAllInBound default security rule blocks all other inbound traffic from the internet, so no other rules are needed for the AsgLogic or AsgDb groups.
 
 | **Priority** | **Source** | **Source ports** | **Destination** | **Destination ports** | **Protocol** | **Access** |
 | ------------ | ---------- | ---------------- | --------------- | --------------------- | ------------ | ---------- |
 | 100          | Internet   | \*               | AsgWeb          | 80                    | TCP          | Allow      |
 
-## Deny-Database-All
+### Deny-Database-All
 
-Because the AllowVNetInBound default security rule allows all communication between resources in the same virtual network, this rule is needed to deny traffic from all resources.
+This rule blocks all traffic to the database tier by default. It's necessary because the AllowVNetInBound default rule would otherwise allow all resources in the virtual network to communicate with the database.
 
 | **Priority** | **Source** | **Source ports** | **Destination** | **Destination ports** | **Protocol** | **Access** |
 | ------------ | ---------- | ---------------- | --------------- | --------------------- | ------------ | ---------- |
 | 120          | \*         | \*               | AsgDb           | 1433                  | Any          | Deny       |
 
-## Allow-Database-BusinessLogic
+### Allow-Database-BusinessLogic
 
-This rule allows traffic from the *AsgLogic* application security group to the *AsgDb* application security group. The priority for this rule is higher than the priority for the *Deny-Database-All* rule. As a result, this rule is processed before the *Deny-Database-All* rule, so traffic from the *AsgLogic* application security group is allowed, whereas all other traffic is blocked.
+This rule allows traffic from the application logic tier (AsgLogic) to the database tier (AsgDb). The rule has **priority 110**, which is lower than the Deny-Database-All rule (priority 120). Since lower priority numbers are processed first, this rule is evaluated before the deny rule, allowing AsgLogic to access the database while blocking all other traffic.
 
 | **Priority** | **Source** | **Source ports** | **Destination** | **Destination ports** | **Protocol** | **Access** |
 | ------------ | ---------- | ---------------- | --------------- | --------------------- | ------------ | ---------- |
 | 110          | AsgLogic   | \*               | AsgDb           | 1433                  | TCP          | Allow      |
 
-Network interfaces that are members of the application security group apply the rules that specify it as the source or destination. The rules don't affect other network interfaces. If the network interface isn't a member of an application security group, the rule isn't applied to the network interface, even though the network security group is associated to the subnet.
+### How rules apply
 
-Application security groups have the following constraints:
+Only network interfaces that are members of an ASG are affected by rules that specify that ASG as the source or destination. If a network interface isn't a member of an ASG referenced in a rule, the rule doesn't apply to that network interface, even if the NSG is associated with its subnet.
 
- -  There are limits to the number of application security groups you can have in a subscription, and other limits related to application security groups.
- -  All network interfaces assigned to an application security group have to exist in the same virtual network that the first network interface assigned to the application security group is in. For example, if the first network interface assigned to an application security group named *AsgWeb* is in the virtual network named *VNet1*, then all subsequent network interfaces assigned to *ASGWeb* must exist in *VNet1*. You can't add network interfaces from different virtual networks to the same application security group.
- -  If you specify an application security group as the source and destination in a security rule, the network interfaces in both application security groups must exist in the same virtual network.
-    
-    
-     -  An example would be if *AsgLogic* had network interfaces from *VNet1* and *AsgDb* had network interfaces from *VNet2*. In this case, it would be impossible to assign *AsgLogic* as the source and *AsgDb* as the destination in a rule. All network interfaces for both the source and destination application security groups need to exist in the same virtual network.
+## Constraints and considerations
+
+When working with application security groups, keep these limitations in mind:
+
+ -  **Subscription limits**: There are limits to the number of ASGs per subscription. Review Azure subscription limits documentation for current values.
+ -  **Same virtual network requirement**: All network interfaces in an ASG must exist in the same virtual network. For example, if the first NIC assigned to AsgWeb is in VNet1, all subsequent NICs assigned to AsgWeb must also be in VNet1.
+ -  **Cross-ASG rules**: When specifying ASGs as both source and destination in a security rule, all network interfaces in both ASGs must exist in the same virtual network. For example, if AsgLogic has NICs from VNet1 and AsgDb has NICs from VNet2, you can't create a rule with AsgLogic as source and AsgDb as destination.
 
 > [!TIP]
-> To minimize the number of security rules you need, and the need to change the rules, plan out the application security groups you need and create rules using service tags or application security groups, rather than individual IP addresses, or ranges of IP addresses, whenever possible.
+> Plan your ASG structure before implementing security rules. Using ASGs and service tags instead of individual IP addresses or IP ranges minimizes the number of security rules you need to create and maintain. Fewer rules, simplifies management and reduces the likelihood of configuration errors.
