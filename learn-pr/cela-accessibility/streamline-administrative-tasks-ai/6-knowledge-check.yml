@@ -1,0 +1,58 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.streamline-administrative-tasks-ai.knowledge-check
+title: "Module assessment"
+metadata:
+  title: "Knowledge check"
+  description: "Test your understanding of AI in special education with these key questions."
+  ms.date: 01/05/2026
+  author: Randall-Knapp
+  ms.author: rknapp
+  ms.topic: unit
+  module_assessment: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  questions:
+  - content: "You need to create a structured lesson plan with clear objectives, materials, and alignment to standards. Which tool should you use?"
+    choices:
+    - content: "Copilot in Word"
+      isCorrect: false
+      explanation: ""
+    - content: "Copilot in Outlook"
+      isCorrect: false
+      explanation: ""
+    - content: "Teach in the Microsoft 365 Copilot App"
+      isCorrect: true
+      explanation: "Teach is designed for structured, repeatable workflows like lesson plans, rubrics, and templates. It provides guided interfaces grounded in educational standards and prompts you step-by-step through each component."
+    - content: "Microsoft Translator"
+      isCorrect: false
+      explanation: ""
+  - content: "You have raw student performance data and need to draft a nuanced progress note for an IEP update. Which approach is most appropriate?"
+    choices:
+    - content: "Use Teach to generate the progress note from scratch"
+      isCorrect: false
+      explanation: ""
+    - content: "Use Copilot in Word to draft the note, ensuring you remove PII before prompting"
+      isCorrect: true
+      explanation: "Copilot is ideal for individualized writing tasks that require nuanced language and personalization. You should remove any PII before prompting, then use Copilot to help organize and express the information clearly while you maintain oversight for accuracy and compliance."
+    - content: "Copy and paste the raw data directly into the IEP"
+      isCorrect: false
+      explanation: ""
+    - content: "Only write the note manually without AI assistance"
+      isCorrect: false
+      explanation: ""
+  - content: "You're preparing for an IEP meeting and need to create structured notes and then adapt them for family communication. What's the best approach?"
+    choices:
+    - content: "Use only Copilot for all steps"
+      isCorrect: false
+      explanation: ""
+    - content: "Use only Teach for all steps"
+      isCorrect: false
+      explanation: ""
+    - content: "Use Teach for structured notes, then export to Word and use Copilot to rewrite sections in plain language for families"
+      isCorrect: true
+      explanation: "Teach and Copilot complement one another for end-to-end workflows. Teach handles the structure (identifying strengths, areas of need, data summaries), while Copilot handles the personalization (rewriting in plain language, adapting tone for different audiences)."
+    - content: "Manually complete all tasks without AI tools"
+      isCorrect: false
+      explanation: ""

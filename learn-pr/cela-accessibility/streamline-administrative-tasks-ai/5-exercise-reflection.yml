@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.streamline-administrative-tasks-ai.exercise-reflection
+title: "Reflect on streamlining tasks with AI tools"
+metadata:
+  title: "Streamline Tasks with AI Reflection"
+  description: "Reflect on how AI tools like Teach and Copilot can optimize your administrative tasks, improve efficiency, and maintain responsible AI practices."
+  ms.date: 01/05/2026
+  author: Randall-Knapp
+  ms.author: rknapp
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-exercise-reflection.md)]
