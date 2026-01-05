@@ -15,12 +15,12 @@ To use data explorer, you need the correct permissions in Microsoft Purview.
 
 Access to Data explorer and Content explorer (classic) is restricted because these tools expose classified data. Viewer roles control whether users can see item metadata only or view file contents. While the role groups are specific to each explorer, they follow the same access pattern.
 
-| Role | What the role allows |
+| Role group | Access level |
 | ----- | ----- |
-| Data Explorer List Viewer | View item metadata and classification details in Data explorer without opening file contents. |
-| Data Explorer Content Viewer | View file contents in addition to metadata in Data explorer. |
-| Content Explorer (classic) List Viewer | View item metadata and classification details in Content explorer (classic) without opening file contents. |
-| Content Explorer (classic) Content Viewer | View file contents in addition to metadata in Content explorer (classic). |
+| Content Explorer List Viewer | View item metadata and classification details without opening file contents in explorer experiences. |
+| Content Explorer Content Viewer | View file contents in addition to metadata in explorer experiences. |
+
+These role groups include the **Data Classification List Viewer** and **Data Classification Content Viewer** roles, which also apply to Data explorer.
 
 > [!NOTE]
 > Although these roles are assigned separately for each explorer, the **List Viewer** and **Content Viewer** roles behave the same way across both experiences. Content Viewer access is required to open or preview file contents.
@@ -71,8 +71,6 @@ This table compares data explorer and content explorer (classic) to show how the
 | ----- | ----- | ----- |
 | Data organization and visibility | Surfaces sensitivity labels, retention labels, trainable classifiers, and SITs in a unified view. | Surfaces classification details through location-based navigation. |
 | Integration with Information Protection Reports | Accessible directly from reports for deeper investigation. | Accessed separately from reports. |
-| Copilot data visibility | Surfaces Copilot as a data source when enabled. | Doesn't surface Copilot as a data source. |
-
 
 > [!NOTE]
 > Use **Data explorer** for most analysis tasks. Choose **Content explorer (classic)** only when legacy visibility is required.
@@ -88,7 +86,7 @@ Filters in data explorer help you focus on the information that matters most. Yo
 These examples show common filters you can apply in data explorer searches.
 
 | Filter type | Example |
-|-----|-----|
+| ----- | ----- |
 | Site URL | `https://contoso.onmicrosoft.com/sites/finance` |
 | File name | `HR_policy_2024.docx` |
 | File extension | `.pdf`, `.csv`, `.txt` |
