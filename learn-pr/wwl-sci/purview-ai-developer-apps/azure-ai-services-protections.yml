@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.purview-ai-developer-apps.azure-ai-services-protections
-title: Enforce protections in Azure AI services and Azure AI Foundry
+title: Enforce protections in Foundry Tools and Microsoft Foundry
 metadata:
-  title: Enforce Protections in Azure AI Services and Azure AI Foundry
-  description: "Enforce protections in Azure AI services and Azure AI Foundry"
+  title: Enforce Protections in Foundry Tools and Microsoft Foundry
+  description: "Enforce protections in Foundry Tools and Microsoft Foundry"
   ms.date: 08/26/2025
   author: wwlpublish
   ms.author: riswinto
