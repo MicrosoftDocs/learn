@@ -5,7 +5,7 @@ There are several components that make up the Microsoft identity platform:
 * **OAuth 2.0 and OpenID Connect standard-compliant authentication service** enabling developers to authenticate several identity types, including:
 
     * Work or school accounts, provisioned through Microsoft Entra ID
-    * Personal Microsoft account, like Skype, Xbox, and Outlook.com
+    * Personal Microsoft account, like Xbox, and Outlook.com
     * Social or local accounts, by using Azure Active Directory B2C
     * Social or local customer accounts, by using Microsoft Entra External ID
 
