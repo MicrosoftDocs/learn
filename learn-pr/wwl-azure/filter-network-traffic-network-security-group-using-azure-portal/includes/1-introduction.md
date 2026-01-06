@@ -1,23 +1,25 @@
-Network security is a critical aspect of maintaining a secure and reliable infrastructure. Azure provides a powerful tool called Network Security Group (NSG) that allows organizations to filter network traffic and enforce access controls in their cloud environments. In this training module, we will explore how to utilize Azure NSG to enhance network security and protect your resources.
+Network security is fundamental to protecting cloud resources from unauthorized access and threats. Azure Network Security Groups (NSGs) provide a critical layer of defense by filtering network traffic to and from Azure resources within a virtual network. NSGs act as distributed firewalls, allowing you to control traffic flow using security rules based on source, destination, port, and protocol.
+
+In modern cloud environments, implementing defense-in-depth strategies requires multiple layers of security controls. NSGs are one essential component of this approach, working alongside other Azure security services to create comprehensive network protection.
 
 ## Scenario
 
-Imagine your work as a cloud architect for a growing e-commerce company. The company has recently migrated its infrastructure to Microsoft Azure and wants to ensure that network traffic to their resources is secure and restricted to authorized sources. As the responsible architect, you need to implement effective network security measures using Azure NSG.
+You work as a cloud architect for a growing e-commerce company that migrated its infrastructure to Microsoft Azure. The company operates a multi-tier application with web servers, application logic servers, and database servers. Your task is to implement network security controls to ensure that:
+
+- Web servers only accept HTTPS traffic from the internet
+- Application servers only accept traffic from web servers
+- Database servers only accept traffic from application servers
+- All unauthorized traffic is blocked and logged for security analysis
+
+You use Azure Network Security Groups to implement these access controls and establish secure network segmentation.
 
 ## Learning Objectives
 
-By the end of this training module, participants will:
+By the end of this module, you'll be able to:
 
- -  Understand the purpose and benefits of using Azure NSG to filter network traffic.
- -  Learn how to create and configure NSGs to enforce access controls for Azure resources.
- -  Gain insights into how NSGs can be used to allow or deny specific types of traffic based on source, destination, and port.
- -  Understand how to prioritize NSG rules and leverage Azure NSG flow logs for monitoring and troubleshooting.
- -  Recognize the role of NSGs in implementing network security best practices in Azure.
-
-## Goals
-
- -  Enable participants to effectively utilize Azure NSG to filter network traffic and enforce access controls.
- -  Improve participants' understanding of network security concepts in Azure.
- -  Provide participants with hands-on experience in creating and configuring NSGs.
- -  Empower participants to implement network security best practices and restrict unauthorized access to Azure resources.
- -  Enhance participants' ability to monitor and troubleshoot network traffic using NSG flow logs.
+- Create and configure network security groups to filter network traffic in Azure virtual networks
+- Define security rules based on source, destination, port, and protocol to allow or deny specific traffic
+- Understand how NSGs evaluate inbound and outbound traffic using priority-based rules
+- Implement application security groups to simplify security management for multi-tier applications
+- Apply network security best practices using NSGs to protect Azure resources
+- Monitor and troubleshoot network traffic using NSG diagnostic capabilities
