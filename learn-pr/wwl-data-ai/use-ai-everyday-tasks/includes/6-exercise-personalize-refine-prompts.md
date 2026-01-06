@@ -25,7 +25,7 @@ To start, you practice creating personalized prompts using a few fill-in-the-bla
 **Sample prompt**:
 > Copilot, generate a list of **[5 book recommendations]** for **[a beach holiday]** that focus on **[world-building science fiction]**.
 
-The following screenshot is an example of what Copilot might generate. How does it compare to the personalized prompt that you submitted?
+The following screenshot shows the start of what Copilot might generate.
 
 ![Screenshot of the Copilot-generated book list.](../media/06-copilot-book-prompt-results.jpg)
 
