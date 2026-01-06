@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.spec-driven-development-github-spec-kit-microsoft-internal.integrate-spec-kit-advanced-deployment
+title: Integrate GitHub Spec Kit into CI/CD and DevOps practices
+metadata:
+  title: Integrate GitHub Spec Kit into CI/CD and DevOps practices
+  description: "Integrate GitHub Spec Kit into CI/CD and DevOps practices."
+  ms.date: 12/12/2025
+  author: chrishowd
+  ms.author: cahowd
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/11-integrate-spec-kit-advanced-deployment.md)]

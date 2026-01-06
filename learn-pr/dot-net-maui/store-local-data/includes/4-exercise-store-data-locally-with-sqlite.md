@@ -1,6 +1,6 @@
 In this exercise, you use SQLite to store information locally with an application. In the sample scenario, you decided to cache data for the social-media app to improve responsiveness. This exercise creates and uses a local SQLite database for storing information about people. You save the physical database file in local storage.
 
-[!include[](../../../includes/dotnet9-sdk-version.md)]
+[!include[](../../../includes/dotnet10-sdk-version.md)]
 
 ## Open the starter solution
 

@@ -20,9 +20,9 @@ quiz:
   questions:
   - content: "Which of the following statements best describes a key difference between ExpressRoute Direct and ExpressRoute with a service provider?"
     choices:
-    - content: "ExpressRoute Direct provides a direct connection to Microsoft's network through dual 10-Gbps or 100-Gbps ports."
+    - content: "ExpressRoute Direct provides a connection via a service provider's infrastructure."
       isCorrect: false
-      explanation: "Incorrect. ExpressRoute Direct uses dual 10-Gbps or 100-Gbps ports."
+      explanation: "Incorrect. ExpressRoute Direct provides a direct connection to Microsoft."
     - content: "ExpressRoute Direct uses a non-Microsoft service provider."
       isCorrect: false
       explanation: "Incorrect. Microsoft manages ExpressRoute Direct."

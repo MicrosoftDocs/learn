@@ -4,8 +4,8 @@ metadata:
   title: Exercise - Host a new database by using Azure Cosmos DB
   description: Host a new database using Azure Cosmos DB and create a new AKS cluster to save your API changes to the database.
   ms.date: 01/04/2024
-  author: nickomang
-  ms.author: nickoman
+  author: davidsmatlak
+  ms.author: davidsmatlak
   ms.topic: unit
   ms.custom:
     - sfi-ropc-nochange
@@ -40,4 +40,4 @@ content: |
 #           addonProfiles:
 #             httpApplicationRouting:
 #               enabled: true
-
+

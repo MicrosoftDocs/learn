@@ -5,8 +5,8 @@ metadata:
   description: Get acquainted with the Kubernetes open-source container-orchestration system for automating application deployment, scaling, and management.
   manager: rayoflores
   ms.date: 11/13/2024
-  author: nickomang
-  ms.author: nickoman
+  author: davidsmatlak
+  ms.author: davidsmatlak
   ms.topic: module
   ms.service: azure-kubernetes-service
 title: Introduction to Kubernetes
@@ -43,4 +43,4 @@ units:
 - learn.intro-to-kubernetes.exercise-kubernetes-functionality
 - learn.intro-to-kubernetes.when-to-use-kubernetes
 - learn.intro-to-kubernetes.summary
-
+

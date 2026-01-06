@@ -7,7 +7,8 @@ metadata:
   author: wwlpublish
   ms.author: kelawson
   ms.topic: module
-  ms.service: purview-data-loss-prevention
+  ms.service: purview
+  ms.subservice: purview-data-loss-prevention
 title: Respond to data loss prevention alerts using Microsoft 365
 summary: As a Security Operations Analyst, you need to understand compliance related terminology and alerts. Learn how the data loss prevention alerts help in your investigation to find the full scope of the incident.
 abstract: |

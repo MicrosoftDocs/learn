@@ -55,7 +55,7 @@ Our team can also manage which applications to install, update, and remove witho
 
 Docker containers are the default container architecture the Azure containerization services use, and many other cloud platforms also support them.
 
-For instance, you can deploy Docker containers to Azure Container Instances, Azure App Service, and Azure Kubernetes Services. Each of these options provides you with different features and capabilities.
+For instance, you can deploy Docker containers to Azure Container Instances, Azure Container Apps, Azure App Service, and Azure Kubernetes Services. Each of these options provides you with different features and capabilities.
 
 For example, Azure container instances allow you to focus on designing and building your applications without the overhead of managing infrastructure. When you have many containers to orchestrate, Azure Kubernetes service makes it easy to deploy and manage large-scale container deployments.
 
