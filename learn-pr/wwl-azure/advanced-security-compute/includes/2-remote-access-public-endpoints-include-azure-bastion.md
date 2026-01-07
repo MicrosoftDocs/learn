@@ -85,7 +85,7 @@ Azure Bastion supports manual host scaling for Standard and Premium SKUs. You ca
 - **Basic SKU**: 2 fixed instances (40 RDP sessions or 80 SSH sessions)
 - **Standard SKU**: 2-50 configurable instances (up to 1,000 RDP sessions or 2,000 SSH sessions at maximum scale)
 - **Premium SKU**: 2-50 configurable instances (up to 1,000 RDP sessions or 2,000 SSH sessions at maximum scale)
-    - Extra features over Standard SKU are graphicsl session recording, private-only deployment, and integration with Entra PIM.
+    - Extra features over Standard SKU are graphical session recording, private-only deployment, and integration with Microsoft Entra PIM.
 
 Each instance supports approximately 20 concurrent RDP connections and 40 concurrent SSH connections.
 

@@ -46,7 +46,7 @@ There are two levels of access needed to fully operate an AKS cluster:
     - Pull your kubeconfig.
 - Access to the Kubernetes API. This access level controlled by:
     - Kubernetes RBAC (traditionally) or
-    - By integrating Azure RBAC with AKS for kubernetes authorization.
+    - By integrating Azure RBAC with AKS for Kubernetes authorization.
 
 ## Use workload identity
 
