@@ -32,18 +32,18 @@ quiz:
     choices:
     - content: "Rebuild"
       isCorrect: false
-      explanation: "Incorrect. The rebuild strategy rewrites the application."
+      explanation: "Incorrect. Rewrites the application."
     - content: "Replace"
       isCorrect: false
-      explanation: "Incorrect. The replace strategy uses SaaS alternatives rather than migrating the existing workload."
+      explanation: "Incorrect. Uses SaaS alternatives rather than migrating the existing workload."
     - content: "Rehost"
       isCorrect: true
-      explanation: "Correct. Rehosting moves workloads to Azure with the fewest changes and is commonly supported by Azure Migrate."
+      explanation: "Correct. Rehosting moves workloads to Azure with the fewest changes."
   - content: "Which tool should you use when you need to transfer large amounts of data to Azure but your network bandwidth is limited?"
     choices:
     - content: "Azure Migrate"
       isCorrect: false
-      explanation: "Incorrect. Azure Migrate orchestrates migrations but does not physically move large offline data."
+      explanation: "Incorrect. Azure Migrate orchestrates migrations but doesn't physically move large offline data."
     - content: "Azure Data Box"
       isCorrect: true
       explanation: "Correct. Azure Data Box is ideal when network capacity is insufficient for online migration."
