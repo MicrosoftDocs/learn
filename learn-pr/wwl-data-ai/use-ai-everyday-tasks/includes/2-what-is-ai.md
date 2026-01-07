@@ -1,10 +1,11 @@
-AI can simplify everyday tasks and enhance productivity. This unit introduces the basics of AI, including how generative AI creates new content, and how tools like Microsoft Copilot can enhance productivity. You also explore the importance of using AI responsibly to ensure fairness, transparency, and trust.
+AI can simplify everyday tasks and enhance productivity. This unit introduces you to the basics of AI, including how generative AI creates new content, and how tools like Microsoft Copilot can enhance productivity. You also learn about the importance of using AI responsibly to ensure fairness, transparency, and trust.
 
 ## What is AI, and how does it work?
 
-Generative AI focuses on creating new, unique content, based on the input you provide. This input is called **prompting**, which just means asking AI for specific things. Generative AI can even produce creative content, such as writing poems, composing melodies, or designing graphics, based on the patterns and styles it learned from existing data. 
+Artificial intelligence (AI) is technology that can recognize patterns, make predictions, and generate new content based on the information it has learned. When you ask AI to do something—whether that's drafting an email or summarizing a document—you’re giving it a prompt. A prompt is simply an instruction or question.
+Generative AI is a type of AI that creates new content. It can help with everyday tasks, like writing messages or answering questions, and it can also produce creative outputs such as images, stories, or melodies based on patterns it has learned from large sets of data.
 
-People usually interact with generative AI built into a chat application. One example of such an application is [Microsoft Copilot](https://copilot.microsoft.com?azure-portal=true), an AI-powered productivity tool designed to enhance your work experience by providing real-time intelligence and assistance. In other words, it's a smart tool that helps you work better by giving you quick answers and help when you need it.
+Most people use generative AI through a chat-based tool. [Microsoft Copilot](https://copilot.microsoft.com?azure-portal=true) is a chat-based tool that provides smart, real-time assistance to help you complete tasks more quickly and easily.
 
 > [!NOTE]
 > **Behind the scenes**
