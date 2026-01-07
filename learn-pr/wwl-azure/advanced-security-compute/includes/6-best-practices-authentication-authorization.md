@@ -41,14 +41,12 @@ Best practice guidance: Use Azure RBAC to define the minimum required user and g
 
 There are two levels of access needed to fully operate an AKS cluster:
 
-- Access the AKS resource on your Azure subscription.
-- This access level allows you to:
+- Access the AKS resource on your Azure subscription. This access level allows you to:
     - Control scaling or upgrading your cluster using the AKS APIs
     - Pull your kubeconfig.
-- Access to the Kubernetes API.
-- This access level controlled by:
-   - Kubernetes RBAC (traditionally) or
-   - By integrating Azure RBAC with AKS for kubernetes authorization.
+- Access to the Kubernetes API. This access level controlled by:
+    - Kubernetes RBAC (traditionally) or
+    - By integrating Azure RBAC with AKS for kubernetes authorization.
 
 ## Use workload identity
 

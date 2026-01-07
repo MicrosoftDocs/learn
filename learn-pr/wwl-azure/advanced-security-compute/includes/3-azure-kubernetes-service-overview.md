@@ -72,13 +72,13 @@ The following list describes some of the common use cases for AKS, but by no mea
 
 **Networking**
 - Use [Kubenet networking](/azure/aks/concepts-network#kubenet-basic-networking) for simple deployments and [Azure Container Networking Interface (CNI) networking](/azure/aks/concepts-network#azure-cni-advanced-networking) for advanced scenarios.
-- [Bring your own Container Network Interface (CNI)](/azure/aks/use-byo-cni) to use a external CNI plugin.
-- Easily access applications deployed to your clusters using the [application routing add-on with nginx](/azure/aks/app-routing). |
+- [Bring your own Container Network Interface (CNI)](/azure/aks/use-byo-cni) to use an external CNI plugin.
+- Easily access applications deployed to your clusters using the [application routing add-on with nginx](/azure/aks/app-routing).
 
 **Development tooling integration**
 - Develop on AKS with [Helm](/azure/aks/quickstart-helm). 
 - Install the [Kubernetes extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-kubernetes-tools.vscode-kubernetes-tools) to manage your workloads.
-- Apply the features of Istio with the [Istio-based service mesh add-on](/azure/aks/istio-about).|
+- Apply the features of Istio with the [Istio-based service mesh add-on](/azure/aks/istio-about).
 
 ## Get started with AKS
 

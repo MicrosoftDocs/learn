@@ -60,7 +60,7 @@ Azure Policy built-in definitions - Microsoft.ApiManagement:
 | API Management services should use a virtual network                                       | Azure Virtual Network deployment provides enhanced security, isolation and allows you to place your API Management service in a non-internet routable network that you control access to. These networks can then be connected to your on-premises networks using various VPN technologies, which enables access to your backend services within the network and/or on-premises. The developer portal and API gateway can be configured to be accessible either from the Internet or only within the virtual network. | Audit, Deny, Disabled      | 1.0.2               |
 | API Management should disable public network access to the service configuration endpoints | To secure API Management services, restrict access to configuration endpoints like the management API, Git config, and self-hosted gateway setup.                                                                                                                                                                                                                                                                              | AuditIfNotExists, Disabled | 1.0.1               |
 
- **NS-6**: **Deploy web application firewall**
+ ### **NS-6**: **Deploy web application firewall**
 
 Other guidance for NS-6: To protect critical Web/HTTP APIs, configure API Management within a Virtual Network (VNET) in internal mode and configure an Azure Application Gateway. Application Gateway is a PaaS service. It acts as a reverse-proxy and provides L7 load balancing, routing, web application firewall (WAF), and other services. Learn more.
 
@@ -117,7 +117,7 @@ Alternatively, the sign-in/sign-up process can be further customized through del
 
 ### IM-7: Restrict resource access based on conditions
 
-Features: Conditional Access for Data Plane
+Feature: Conditional Access for Data Plane
 
 Description: Data plane access can be controlled using Microsoft Entra Conditional Access policies.
 
@@ -135,7 +135,7 @@ Configuration Guidance: Set up integration of API Management with Azure Key Vaul
 
 ### PA-1: Separate and limit highly privileged/administrative users
 
-**Feature**: Local Admin Accounts
+Feature: Local Admin Accounts
 
 Description: Service has the concept of a local administrative account.
 
@@ -234,7 +234,7 @@ Feature: Azure Resource Logs
 
 Description: Service produces resource logs that can provide enhanced service-specific metrics and logging. The customer can configure these resource logs and send them to their own data sink like a storage account or log analytics workspace.
 
-Configuration Guidance: Enable resource logs for API Management, resource logs provide rich information about operations, and errors that are important for auditing and troubleshooting purposes. Categories of resource logs for API Management include:
+Configuration Guidance: Enable resource logs for API Management. Resource logs provide rich information about operations, and errors that are important for auditing and troubleshooting purposes. Categories of resource logs for API Management include:
 
 - GatewayLogs
 - WebSocketConnectionLogs

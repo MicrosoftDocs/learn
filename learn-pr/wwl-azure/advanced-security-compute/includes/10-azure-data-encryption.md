@@ -23,7 +23,7 @@ In addition to satisfying compliance and regulatory requirements, encryption at 
 
 Microsoft is committed to encryption at rest options across cloud services and giving customers control of encryption keys and logs of key use. Additionally, Microsoft is working towards encrypting all customer data at rest by default.
 
-## Azure Encryption at Rest Components
+## Azure Encryption at Rest components
 
 As described previously, the goal of encryption at rest is that data that is persisted on disk is encrypted with a secret encryption key. To achieve that goal secure key creation, storage, access control, and management of the encryption keys must be provided. Though details might vary, Azure services Encryption at Rest implementations can be described in terms illustrated in the following diagram.
 
@@ -38,7 +38,7 @@ The storage location of the encryption keys and access control to those keys is 
 
 Permissions to use the keys stored in Azure Key Vault, either to manage or to access them for Encryption at Rest encryption and decryption, can be given to Microsoft Entra accounts.
 
-## Envelope Encryption with a Key Hierarchy
+## Envelope encryption with a key hierarchy
 
 More than one encryption key is used in an encryption at rest implementation. Storing an encryption key in Azure Key Vault ensures secure key access and central management of keys. However, service local access to encryption keys is more efficient for bulk encryption and decryption than interacting with Key Vault for every data operation, allowing for stronger encryption and better performance. Limiting the use of a single encryption key decreases the risk that the key is compromised and the cost of re-encryption when a key must be replaced. Azure encryption at rest models uses envelope encryption, where a key encryption key encrypts a data encryption key. This model forms a key hierarchy that is better able to address performance and security requirements:
 
