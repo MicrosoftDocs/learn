@@ -43,32 +43,42 @@ The following list describes some of the common use cases for AKS, but by no mea
 
 ## Features of AKS
 
-The following table lists some of the key features of AKS:
+**Identity and security management**
+- Enforce [regulatory compliance controls using Azure Policy](/azure/aks/security-controls-policy) with built-in guardrails and internet security benchmarks
+- Integrate with [Kubernetes RBAC](/azure/aks/azure-ad-rbac) to limit access to cluster resources.
+- Use [Microsoft Entra ID](/azure/aks/enable-authentication-microsoft-entra-id) to set up Kubernetes access based on existing identity and group membership.
+- Use [workload identity](/azure/aks/workload-identity-overview) to enable pods to authenticate with Azure services using Microsoft Entra
 
-| **Feature**                      | **Description**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
-| -------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Identity and security management | Enforce [regulatory compliance controls using Azure Policy](/azure/aks/security-controls-policy) with built-in guardrails and internet security benchmarks |
-|                                  | Integrate with [Kubernetes RBAC](/azure/aks/azure-ad-rbac) to limit access to cluster resources. |
-|                                  | Use [Microsoft Entra ID](/azure/aks/enable-authentication-microsoft-entra-id) to set up Kubernetes access based on existing identity and group membership. |
-|                                  | Use [workload identity](/azure/aks/workload-identity-overview) to enable pods to authenticate with Azure services using Microsoft Entra | ID.                                                                                                                                                           |
-| Logging and monitoring           | Integrate with [Container Insights](/azure/azure-monitor/containers/kubernetes-monitoring-enable), a feature in Azure Monitor, to monitor the health and performance of your clusters and containerized applications. |
-|                                  | Set up [Network Observability](/azure/aks/network-observability-overview) and [use BYO Prometheus and Grafana](/azure/aks/network-observability-byo-cli) to collect and visualize network traffic data from your clusters.|
-| Streamlined deployments          | Use prebuilt cluster configurations for Kubernetes with [smart defaults](/azure/aks/quotas-skus-regions#cluster-configuration-presets-in-the-azure-portal) |
-|                                  | Autoscale your applications using the [Kubernetes Event Driven Autoscaler (KEDA)](/azure/aks/keda-about). | Use [Draft for AKS](/azure/aks/draft) to ready source code and prepare your applications for production. |
-| Clusters and nodes               | Connect storage to nodes and pods, upgrade cluster components, and use GPUs.|
-|                                  | Create clusters that run multiple node pools to support mixed operating systems and Windows Server containers. |
-|                                  | Configure automatic scaling using the [cluster autoscaler](/azure/aks/cluster-autoscaler) and [horizontal pod autoscaler](/azure/aks/tutorial-kubernetes-scale#autoscale-pods). |
-|                                  | Deploy clusters with [confidential computing nodes](/azure/confidential-computing/confidential-nodes-aks-overview) to allow containers to run in a hardware-based trusted execution environment. |
-|                                  | Use [AKS Automatic](/azure/aks/intro-aks-automatic) for production-ready clusters with managed node pools and automatic resource allocation. |
-| Storage volume support           | Mount static or dynamic storage volumes for persistent data. |
-|                                  | Use [Azure Disks](/azure/aks/azure-disk-csi) for single pod access and [Azure Files](/azure/aks/azure-files-csi) for multiple, concurrent pod access. |
-|                                  | Use [Azure NetApp Files](/azure/aks/azure-netapp-files) for high-performance, high-throughput, and low-latency file shares. |
-| Networking                       | Use [Kubenet networking](/azure/aks/concepts-network#kubenet-basic-networking) for simple deployments and [Azure Container Networking Interface (CNI) networking](/azure/aks/concepts-network#azure-cni-advanced-networking) for advanced scenarios. |
-|                                  | [Bring your own Container Network Interface (CNI)](/azure/aks/use-byo-cni) to use a external CNI plugin. |
-|                                  | Easily access applications deployed to your clusters using the [application routing add-on with nginx](/azure/aks/app-routing). |
-| Development tooling integration  | Develop on AKS with [Helm](/azure/aks/quickstart-helm). |
-|                                  | Install the [Kubernetes extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-kubernetes-tools.vscode-kubernetes-tools) to manage your workloads. |
-|                                  | Apply the features of Istio with the [Istio-based service mesh add-on](/azure/aks/istio-about).|
+**Logging and monitoring**
+- Integrate with [Container Insights](/azure/azure-monitor/containers/kubernetes-monitoring-enable), a feature in Azure Monitor, to monitor the health and performance of your clusters and containerized applications.
+- Set up [Network Observability](/azure/aks/network-observability-overview) and [use BYO Prometheus and Grafana](/azure/aks/network-observability-byo-cli) to collect and visualize network traffic data from your clusters.
+
+**Streamlined deployments**
+- Use prebuilt cluster configurations for Kubernetes with [smart defaults](/azure/aks/quotas-skus-regions#cluster-configuration-presets-in-the-azure-portal).
+- Autoscale your applications using the [Kubernetes Event Driven Autoscaler (KEDA)](/azure/aks/keda-about).
+- Use [Draft for AKS](/azure/aks/draft) to ready source code and prepare your applications for production.
+
+**Clusters and nodes**
+- Connect storage to nodes and pods, upgrade cluster components, and use GPUs.
+- Create clusters that run multiple node pools to support mixed operating systems and Windows Server containers.
+- Configure automatic scaling using the [cluster autoscaler](/azure/aks/cluster-autoscaler) and [horizontal pod autoscaler](/azure/aks/tutorial-kubernetes-scale#autoscale-pods).
+- Deploy clusters with [confidential computing nodes](/azure/confidential-computing/confidential-nodes-aks-overview) to allow containers to run in a hardware-based trusted execution environment.
+- Use [AKS Automatic](/azure/aks/intro-aks-automatic) for production-ready clusters with managed node pools and automatic resource allocation.
+
+**Storage volume support**
+- Mount static or dynamic storage volumes for persistent data.
+- Use [Azure Disks](/azure/aks/azure-disk-csi) for single pod access and [Azure Files](/azure/aks/azure-files-csi) for multiple, concurrent pod access.
+- Use [Azure NetApp Files](/azure/aks/azure-netapp-files) for high-performance, high-throughput, and low-latency file shares.
+
+**Networking**
+- Use [Kubenet networking](/azure/aks/concepts-network#kubenet-basic-networking) for simple deployments and [Azure Container Networking Interface (CNI) networking](/azure/aks/concepts-network#azure-cni-advanced-networking) for advanced scenarios.
+- [Bring your own Container Network Interface (CNI)](/azure/aks/use-byo-cni) to use a external CNI plugin.
+- Easily access applications deployed to your clusters using the [application routing add-on with nginx](/azure/aks/app-routing). |
+
+**Development tooling integration**
+- Develop on AKS with [Helm](/azure/aks/quickstart-helm). 
+- Install the [Kubernetes extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-kubernetes-tools.vscode-kubernetes-tools) to manage your workloads.
+- Apply the features of Istio with the [Istio-based service mesh add-on](/azure/aks/istio-about).|
 
 ## Get started with AKS
 
