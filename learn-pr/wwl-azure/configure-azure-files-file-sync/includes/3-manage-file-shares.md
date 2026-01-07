@@ -28,7 +28,7 @@ SSD file shares are great when you need fast, consistent performance with low la
 
 If you need SMB access, make sure to create your file share inside a storage account. SMB file shares let you pick from several access tiers, including transaction optimized, hot, and cool.
 
-:::image type="content" source="../media/config-classic-fs.png" alt-text="Screenshot of creating a file share with access tier choices.":::
+:::image type="content" source="../media/config-classic-fs.png" alt-text="Screenshot of creating a file share showing access tier choices.":::
 
 When connecting over SMB, don’t forget that traffic uses port 445. Azure provides ready to use scripts for Windows and Linux to help you connect quickly.
 
