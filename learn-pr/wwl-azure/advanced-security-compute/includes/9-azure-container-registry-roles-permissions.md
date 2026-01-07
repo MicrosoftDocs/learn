@@ -20,15 +20,15 @@ Anytime permissions are applied, a best practice is to provide the most limited 
 
 ## CI/CD solutions
 
-When automating docker build commands from CI/CD solutions, you need docker push capabilities. For these headless service scenarios, we recommend assigning the AcrPush role. This role, unlike the broader Contributor role, prevents the account from performing other registry operations or accessing Azure Resource Manager.
+When automating `docker build` commands from CI/CD solutions, you need `docker push` capabilities. For these headless service scenarios, we recommend assigning the **AcrPush** role. This role, unlike the broader **Contributor** role, prevents the account from performing other registry operations or accessing Azure Resource Manager.
 
 ## Container host nodes
 
-Likewise, nodes running your containers need the AcrPull role, but shouldn't require Reader capabilities.
+Likewise, nodes running your containers need the **AcrPull** role, but shouldn't require **Reader** capabilities.
 
 ## Visual Studio Code Docker extension
 
-For tools like the Visual Studio Code Docker extension, extra resource provider access is required to list the available Azure container registries. In this case, provide your users access to the Reader or Contributor role. These roles allow docker pull, docker push, az acr list, az acr build, and other capabilities.
+For tools like the Visual Studio Code Docker extension, extra resource provider access is required to list the available Azure container registries. In this case, provide your users access to the **Reader** or **Contributor** role. These roles allow `docker pull`, `docker push`, `az acr list`, `az acr build`, and other capabilities.
 
 ## Access Resource Manager
 
@@ -40,7 +40,7 @@ The ability to create and delete Azure container registries.
 
 ## Pull image
 
-The ability to docker pull a nonquarantined image, or pull another supported artifact such as a Helm chart, from a registry. Requires authentication with the registry using the authorized identity.
+The ability to `docker pull` a nonquarantined image, or pull another supported artifact such as a Helm chart, from a registry. Requires authentication with the registry using the authorized identity.
 
 ## Delete image data
 
@@ -57,3 +57,11 @@ The ability to sign images is assigned to an automated process, which would use 
 ## Custom roles
 
 As with other Azure resources, you can create custom roles with fine-grained permissions to Azure Container Registry. Then assign the custom roles to users, service principals, or other identities that need to interact with a registry.
+
+## Authentication methods
+
+Azure Container Registry supports multiple authentication methods to complement role-based access control:
+
+- **Microsoft Entra identities** - Recommended for production scenarios. Supports user identities, service principals, and managed identities with role-based permissions.
+- **Repository-scoped permissions** - Create tokens with permissions scoped to specific repositories for fine-grained access control.
+- **Admin account** - Each registry includes an optional admin account with full permissions. The admin account should be disabled in production and is primarily intended for testing purposes.
