@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-started-ai-fundamentals.exercise
+title: Exercise - Explore a simple AI agent
+metadata:
+  title: Exercise - Explore a simple AI agent
+  description: Explore a simple AI agent.
+  author: GraemeMalcolm
+  ms.author: gmalc
+  ms.date: -1/07/2025
+  ms.topic: unit
+durationInMinutes: 15
+content: |
+  [!include[](includes/7b-exercise.md)]
+
