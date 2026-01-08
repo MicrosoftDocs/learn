@@ -5,8 +5,8 @@ metadata:
   title: Module assessment
   description: "Knowledge check"
   ms.date: 01/08/2026
-  author: wedebols
-  ms.author: weslbo
+  author: weslbo
+  ms.author: wedebols
   ms.topic: unit
   module_assessment: true
 azureSandbox: false
@@ -40,3 +40,4 @@ quiz:
     - content: "Lookup-condition"
       isCorrect: false
       explanation: "Incorrect. The Lookup activity, will read or look up a record or table name value from any external source. This output can further be referenced by succeeding activities. However, it is not an example of a branching activity."
+
