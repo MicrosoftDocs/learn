@@ -1,1 +1,15 @@
-Introduction to data loss prevention (DLP)
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-data-loss-prevention-understand-plan.introduction-data-loss-prevention
+title: Introduction to data loss prevention (DLP)
+metadata:
+  title: Introduction to data loss prevention (DLP)
+  description: "Introduction to data loss prevention (DLP)"
+  ms.date: 01/06/2026
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/introduction-data-loss-prevention.md)]

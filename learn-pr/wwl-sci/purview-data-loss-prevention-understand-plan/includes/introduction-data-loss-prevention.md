@@ -42,3 +42,5 @@ DLP can't:
 - Prevent every possible form of misuse
 
 Understanding these boundaries helps set realistic expectations before planning and deploying policies.
+
+With the problem space defined, the next step is understanding how DLP evaluates data and where protection can be applied.

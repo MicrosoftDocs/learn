@@ -21,6 +21,17 @@ The key difference between simulation and enforcement is how policies affect use
 
 Because simulation uses the same logic as enforcement, it provides reliable insight into how a policy behaves once activated.
 
+### How simulation behaves in practice
+
+Simulation behavior varies by workload. For example, policies can evaluate both existing and new content in SharePoint and OneDrive, while other locations evaluate activity as it occurs during the simulation period. Results are retained separately from enforced policy alerts to support review and tuning.
+
+Simulation also runs within defined limits:
+
+- Simulations run for up to **15 days**
+- Results are retained for **30 days**
+
+This allows you to review behavior over time rather than relying on isolated events.
+
 ## What to review before changing policy mode
 
 Before moving a policy from simulation to enforcement, review how it performs across real scenarios. Ask questions like:
@@ -65,3 +76,5 @@ A deliberate rollout typically follows this pattern:
 1. Expand enforcement gradually as policies mature
 
 This approach minimizes disruption while building trust in DLP controls.
+
+In some environments, additional context might further refine enforcement decisions, which is where more advanced DLP controls can become relevant.

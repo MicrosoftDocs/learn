@@ -4,6 +4,8 @@ Understanding this evaluation model is essential before planning policies or dec
 
 ## How DLP evaluates data
 
+:::image type="content" source="../media/data-loss-prevention-decision-flow.png" alt-text="Screenshot showing CopilotInteraction selected under Record types." lightbox="../media/data-loss-prevention-decision-flow.png", border="false":::
+
 DLP evaluates multiple signals together to decide when an action puts data at risk:
 
 - **Content**: The type of data involved, such as sensitive information types or labeled content.
@@ -24,6 +26,8 @@ Rather than thinking in terms of individual products, it's more useful to think 
 - Files accessed or modified on devices
 - Content copied, uploaded, or pasted through browsers
 
+For example, in Microsoft Teams, DLP evaluates chat and channel messages, while files shared in Teams are governed by SharePoint and OneDrive policies.
+
 Policies can span these locations, but protections aren't identical everywhere. Understanding these differences helps avoid assumptions about what DLP enforces in each scenario.
 
 ## How classification influences DLP decisions
@@ -42,3 +46,5 @@ When data is labeled or detected as sensitive, DLP can use that information to d
 DLP is designed to apply consistent policy intent across locations, but enforcement depends on the surface involved. Some actions are easier to control in cloud services, while others require endpoint or browser-based protection.
 
 Recognizing these limits early helps with planning. It prevents assuming that a single policy behaves the same way everywhere and prepares you to design policies that align with how people actually work.
+
+With an understanding of how DLP evaluates content and applies protection across locations, planning becomes a matter of deciding where to focus and how to scope policies intentionally.

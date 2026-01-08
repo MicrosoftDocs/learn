@@ -21,15 +21,47 @@ Some environments present patterns that are harder to address with content-based
 - Scenarios where the same action might be acceptable for one user and risky for another
 - Situations where enforcement decisions depend on recent activity, not just the current action
 
-In these cases, DLP decisions might benefit from awareness of broader risk signals.
+### Applying judgment to common DLP scenarios
+
+Use the tabs to review each scenario and consider whether basic DLP is sufficient or whether added context would improve enforcement decisions.
+
+## [Predictable risk](#tab/predictable-risk)
+
+### Scenario: Predictable data sharing
+
+A finance team regularly shares labeled payroll files with a small group of internal reviewers. The data is consistently classified, and the sharing pattern is stable and well understood.
+
+### Why basic DLP is often sufficient
+
+In this scenario, risk is predictable and largely accidental. Classification and scope provide enough signal to guide enforcement decisions, such as warning or blocking external sharing. Adding behavior-based context is unlikely to improve accuracy and might introduce unnecessary complexity without changing outcomes.
+
+## [Changing risk](#tab/changing-risk)
+
+### Scenario: Behavior changes over time
+
+A user who normally accesses a limited set of sensitive files begins downloading large volumes of data and uploading content to unfamiliar cloud services over a short period of time.
+
+### Why added context might help
+
+Here, risk increases based on recent behavior rather than the data alone. Signal-based controls can adjust enforcement as patterns change, allowing policies to respond when risk rises instead of applying the same restrictions at all times. This helps reduce noise while focusing attention on emerging risk.
+
+## [Role-dependent risk](#tab/role-dependent-risk)
+
+### Scenario: Acceptable use varies by role
+
+The same export action is routine for one team as part of their role, but unusual and unexpected for another team with different responsibilities.
+
+### Why context can refine enforcement
+
+In role-dependent scenarios, identical actions can carry different levels of risk. Adding context allows enforcement decisions to reflect how data is normally used by different groups, reducing false positives while still identifying behavior that falls outside expected patterns.
 
 ## How DLP can work with other signals
 
-In some environments, DLP decisions might benefit from more context, like patterns of risky behavior or recent activity that suggest elevated risk.
+In these situations, content and location alone might not provide enough context to make consistent enforcement decisions.
 
 Capabilities like Adaptive Protection illustrate this model by allowing enforcement to respond dynamically when risk increases, rather than applying the same controls to all users at all times.
 
-This approach adds context, but it also adds complexity.
+This approach is available in specific DLP locations, and is intended for scenarios where added context clearly improves enforcement decisions.
 
 ## Why advanced controls are optional
 
