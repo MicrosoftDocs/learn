@@ -19,14 +19,14 @@ quiz:
     choices:
     - content: "You must publish a pipeline before you can run it in debug mode."
       isCorrect: false
-      explanation: "Incorrect. Pipelines do not need to be published to run in debug mode; debug runs work with unpublished (draft) changes."
+      explanation: "Incorrect. Pipelines don't need to be published to run in debug mode; debug runs work with unpublished (draft) changes."
     - content: "Debug runs only test the published version of a pipeline."
       isCorrect: false
       explanation: "Incorrect. Debug runs test the current draft version of a pipeline, not only the published version."
     - content: "The Debug feature lets you run pipelines with draft changes and optionally set breakpoints for partial testing."
       isCorrect: true
       explanation: "Correct. The Debug feature lets you test a pipeline with draft changes, and you can set breakpoints to run only up to a specific activity."
-    - content: "Debug runs cannot be monitored in the Azure Data Factory UI."
+    - content: "Debug runs can't be monitored in the Azure Data Factory UI."
       isCorrect: false
       explanation: "Incorrect. Debug runs can be monitored directly in the Azure Data Factory monitoring interface."
   - content: "What is an example of a branching activity used in control flows?"
@@ -36,8 +36,9 @@ quiz:
       explanation: "Correct. An example of a branching activity is *The If-condition* activity which is similar to an if-statement provided in programming languages."
     - content: "Until-condition"
       isCorrect: false
-      explanation: "Incorrect. The until activity functionality is similar to a do-until loop used in programming. What it does is running a set of activities (do) in a loop until the condition (until) is met. Therefore it is not an example of a branching activity."
+      explanation: "Incorrect. The until activity functionality is similar to a do-until loop used in programming. What it does is running a set of activities (do) in a loop until the condition (until) is met. Therefore it isn't an example of a branching activity."
     - content: "Lookup-condition"
       isCorrect: false
-      explanation: "Incorrect. The Lookup activity, will read or look up a record or table name value from any external source. This output can further be referenced by succeeding activities. However, it is not an example of a branching activity."
+      explanation: "Incorrect. The Lookup activity will read or look up a record or table name value from any external source. This output can further be referenced by succeeding activities. However, it isn't an example of a branching activity."
+
 
