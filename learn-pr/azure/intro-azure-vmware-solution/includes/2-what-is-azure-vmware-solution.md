@@ -32,7 +32,7 @@ Azure VMware Solution provides a comprehensive VMware environment in Azure. It e
 
 - **Have a single point of support**: Azure VMware Solution is Microsoft developed, operated, and supported. Microsoft is the first and only contact for AVS and VCF, and coordinates support with VMware as required.
 
-- **Leverage your existing VCF lifences**: You work with a single vendor for licensing and resource consumption. Bring your portable VCF subscription to Azure VMware Solution and Microsoft installs, manages, and patches the VMware tech stack.
+- **Leverage your existing VCF licenses**: You work with a single vendor for licensing and resource consumption. Bring your portable VCF subscription to Azure VMware Solution and Microsoft installs, manages, and patches the VMware tech stack.
 
 - **Maximize the value of existing Windows Server and SQL Server licenses**: You can use Azure Hybrid Benefit for both Windows Server and SQL Server to bring existing licenses to Azure and reduce costs.
 
