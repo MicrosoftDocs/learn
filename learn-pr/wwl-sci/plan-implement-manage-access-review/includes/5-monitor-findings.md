@@ -20,11 +20,11 @@ You can start the Access Review process from the notification email or by going 
         > If the Access reviews tile isn't visible, there are no access reviews to perform for that organization and no action is needed at this time.
     4.  Select the **Begin review** link for the access review you want to perform.
 
-Once you have opened the access review, you see the names of users who need to have their access reviewed.
+Once you open the access review, you see the names of users who need to have their access reviewed.
 
 There are two ways that you can approve or deny access:
 
-- You can approve or deny access for one or more users 'manually' by choosing the appropriate action for each user request.
+- You can approve or deny access for one or more users manually by choosing the appropriate action for each user request.
 - You can accept the system recommendations.
 
 ### Approve or deny access for one or more users
@@ -37,15 +37,15 @@ There are two ways that you can approve or deny access:
 2.  Select **Approve** or **Deny**.
     
     > [!NOTE]
-    > If you are unsure, you can select "Don't know" and the user gets to keep their access and your choice is recorded in the audit logs.
+    > If you're unsure, you can select "Don't know" and the user gets to keep their access and your choice is recorded in the audit logs.
 3.  The administrator of the access review can require that you supply a reason in the **Reason** box for your decision.
     
     
-    - Even when a reason is not required. You can still provide a reason for your decision and the information that you include will be available to other reviewers.
-4.  Once you have specified the action to take, select **Save**.
+    - Even when a reason isn't required, you can still provide a reason for your decision and the information that you include is available to other reviewers.
+4.  Once you specify the action to take, select **Save**.
     
     
-    - If a user is denied access, they aren't removed immediately. They are removed when the review period has ended. Or when an administrator stops the review if [Auto apply](/azure/active-directory/governance/complete-access-review) is enabled.
+    - If a user is denied access, they aren't removed immediately. They're removed when the review period ends or when an administrator stops the review if [Auto apply](/azure/active-directory/governance/complete-access-review) is enabled.
     - If there are multiple reviewers, the last submitted response is recorded. Consider an example where an administrator designates two reviewers – Alice and Bob. Alice opens the access review first and approves a user's access request. Before the review period ends, Bob opens the access review and denies access on the same request previously approved by Alice. The last decision denying the access is the response that gets recorded.
 
 ### Approve or deny access based on recommendations
@@ -53,4 +53,4 @@ There are two ways that you can approve or deny access:
 To make access reviews easier and faster for you, we also provide recommendations that you can accept with a single acceptance. The recommendations are generated based on the user's sign-in activity.
 
 1.  In the blue bar at the bottom of the page, select **Accept recommendations**. You see a summary of the recommended actions.
-2.  Select **Ok** to accept the recommendations.
+2.  Select **OK** to accept the recommendations.
