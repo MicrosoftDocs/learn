@@ -25,7 +25,7 @@ quiz:
     - content: "Provides storage for Azure resources"
       isCorrect: false
       explanation: "Incorrect. A network security group doesn't provide storage for Azure resources."
-    - content: "Enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms"
+    - content: "Enables the automation of filtering inbound and outbound network traffic for Azure resources"
       isCorrect: true
       explanation: "Correct. A network security group is used to filter inbound and outbound network traffic to and from Azure resources in an Azure virtual network, helping to deliver secure and stable application hosting platforms."
   - content: "What happens to network traffic that doesn't match any NSG rules?"
@@ -50,7 +50,7 @@ quiz:
     - content: "By automatically applying antivirus software to all virtual machines within a group"
       isCorrect: false
       explanation: "Incorrect because ASGs don't deal with antivirus software; their purpose is to simplify network security management by grouping VMs for security rule application."
-  - content: "A network administrator is planning to minimize the number of security rules and changes needed. They are considering using service tags or application security groups, rather than individual IP addresses or ranges of IP addresses. What should they ensure about the network interfaces in both application security groups?"
+  - content: "A network administrator is planning to minimize the number of security rules and changes needed. They're considering using service tags or application security groups, rather than individual IP addresses or ranges of IP addresses. What should they ensure about the network interfaces in both application security groups?"
     choices:
     - content: "They must exist in different virtual networks"
       isCorrect: false
