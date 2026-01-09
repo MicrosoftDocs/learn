@@ -69,7 +69,7 @@ In your application code, you use the usual logging facilities to send log messa
 
 You can forward platform and application logs to Azure Monitor destinations via Diagnostic Settings.
 
-* In the Azure portal, open your app and select **Monitoring** > **Diagnostic settings**, then add a diagnostic setting to send logs to a Log Analytics workspace, Storage account, or Event Hub.
+* In the Azure portal, open your app and select **Monitoring** > **Diagnostic settings**, then add a diagnostic setting to send logs to a Log Analytics workspace, Storage account, or Event Hubs.
 * Common categories include **AppServiceHTTPLogs** (web server logs) and **AppServiceConsoleLogs** (stdout/stderr). For details, see [Supported resource logs for Microsoft.Web](/azure/app-service/monitor-app-service-reference#supported-resource-logs-for-microsoftweb).
 
 ## Stream logs
