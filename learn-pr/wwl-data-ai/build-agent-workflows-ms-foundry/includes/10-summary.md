@@ -7,4 +7,4 @@ Finally, you learned how to maintain and refine workflows using versioning, note
 By combining these concepts, you now have the knowledge to design workflows that integrate AI agents, control logic, human input, and data transformation into coherent, maintainable systems. This foundation prepares you to implement and experiment with workflows in hands-on scenarios, giving you the skills to build robust automation solutions with confidence.
 
 > [!TIP]
-> For more information about workflows in Microsoft Foundry, refer to the Microsoft Foundry [Create a workflow documentation](azure/ai-foundry/agents/concepts/workflow?azure-portal=true).
+> For more information about workflows in Microsoft Foundry, refer to the Microsoft Foundry [Create a workflow documentation](/azure/ai-foundry/agents/concepts/workflow?azure-portal=true).

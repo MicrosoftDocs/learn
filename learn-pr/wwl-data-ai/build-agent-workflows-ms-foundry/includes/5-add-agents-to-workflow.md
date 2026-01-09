@@ -6,7 +6,7 @@ Agents can be reused across multiple workflows, which encourages modular design.
 
 In addition to generating natural language responses, agents can be configured to return structured output. By defining a response format such as a JSON schema, you ensure that agent output follows a predictable shape. Structured outputs are especially useful when agent responses drive control flow, such as routing logic or variable assignment in later nodes. You can define an agent's output schema in the parameters of the **Details** tab of the **Invoke agent** editor.
 
-:::image type="content" source="../media/invoke-agent-parameters.png" alt-text="Screenshot of the Invoke agent node parameters showing the response schema configuration.":::
+:::image type="content" source="../media/agent-parameters.png" alt-text="Screenshot of the Invoke agent node parameters showing the response schema configuration.":::
 
 Once an agent is added to a workflow, its output can be stored in a variable and referenced throughout the workflow. This allows agents to influence decisions, trigger conditional branches, or provide input to other agents. You can configure variable storage in the **Action settings** of the **Invoke agent** node.
 
