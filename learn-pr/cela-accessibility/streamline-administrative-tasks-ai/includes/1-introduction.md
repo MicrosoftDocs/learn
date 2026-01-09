@@ -1,11 +1,5 @@
-Special education teachers manage substantial administrative responsibilities—from drafting IEP updates to preparing progress notes, coordinating with service providers, and organizing data for meetings. These tasks are essential but time-consuming. AI tools like Copilot and Teach in the Microsoft 365 Copilot App can reduce this burden by helping you draft documents, structure information, and create templates that support consistent workflows.
+Special education teams navigate a wide range of administrative responsibilities, including drafting IEP updates, writing progress notes, coordinating with service providers, preparing documentation for meetings, and organizing data that informs decisions. These tasks are essential, yet they are often time‑intensive and can limit time available for instruction, collaboration, and meaningful student connection.
 
-In this module, you'll learn to use **Teach** and **Copilot** together to streamline administrative tasks. **Teach** provides guided, reusable workflows for tasks that follow predictable structures, such as lesson plans, rubrics, or weekly templates. **Copilot** supports flexible, student-specific writing tasks — refining language, summarizing data, rewriting content for clarity, and adjusting tone for families. Together, they form a powerful system that helps you work more efficiently without sacrificing accuracy, compliance, or the individual needs of students.
+Some educators explore AI tools such as Copilot and Teach in the Microsoft 365 Copilot App to support parts of administrative work that are repetitive, detail‑heavy, or follow familiar patterns. Copilot may be helpful for draft writing, refining language, summarizing information, or adjusting tone for family communication. Teach can support the creation of clear structures for materials used regularly, such as lesson plans, weekly templates, or data‑collection notes.
 
-At the end of this module, you'll be able to:
-
-- Understand how AI tools support administrative efficiency in special education and when to use Teach vs. Copilot.
-- Use Copilot to draft, summarize, refine, and translate individualized documentation.
-- Use Teach to build structured, repeatable workflows for routine administrative tasks like lesson planning, rubrics, and data-collection templates.
-- Combine Teach and Copilot to create complete, efficient workflows that maintain accuracy, compliance, and student-centered practice.
-- Apply responsible AI and prompt-design practices.
+When used thoughtfully, these tools may support existing workflows while keeping accuracy, compliance, and student‑specific needs at the center. Professional judgment remains essential. The purpose of AI support is not to replace educator decision‑making, but to reduce time spent on drafting and organization so educators can focus more fully on teaching, planning, and collaboration with students, families, and colleagues.

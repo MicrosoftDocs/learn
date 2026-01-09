@@ -1,4 +1,13 @@
-Many administrative tasks in special education require nuanced, individualized writing—progress notes, present level updates, family-friendly explanations of student data, and follow-up summaries after meetings. Copilot is ideal for these tasks because it works directly with your documents and data to help refine language, improve clarity, and organize complex information. This section focuses on how to apply Copilot specifically to special education documentation.
+Documentation in special education requires accuracy, clarity, and sensitivity. Whether summarizing observations, preparing present levels, drafting progress notes, or writing follow‑up communication for families, educators often juggle large volumes of information.
 
-To complete an individualized task, start by opening your working document and gathering the student-specific notes or data you want to include. Remember to remove any PII information for privacy. Then ask Copilot to help organize or express the information more clearly—for example: _"Draft a concise progress note using the data below that is appropriate for inclusion in an IEP update."_ Paste in your data, and Copilot will produce a structured draft. You then refine details, ensure accuracy and compliance, and tailor the tone for your audience. This workflow helps you move quickly from raw data to polished, student-centered documentation that still reflects your professional judgment.
+**Copilot** can help by generating a clear initial draft that team members can refine.
 
+Here's an example of how you might use Copilot to help draft progress notes:
+
+1. **Gather raw information** (assessment notes, student work samples, observation logs).
+1. **Prompt Copilot** with what you need and for whom, removing any personal information:
+
+   "Draft a plain language progress note using the data below. Keep strengths visible, align comments to the student's IEP goal, and create a short next step recommendation."
+
+1. **Review** the draft for accuracy, tone, and alignment with professional expectations.
+1. **Revise** to ensure the final output reflects educator expertise and student specific context.

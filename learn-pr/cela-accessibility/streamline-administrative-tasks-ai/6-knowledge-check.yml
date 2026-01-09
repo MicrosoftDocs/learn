@@ -4,55 +4,67 @@ title: "Module assessment"
 metadata:
   title: "Knowledge check"
   description: "Test your understanding of AI in special education with these key questions."
-  ms.date: 01/05/2026
-  author: Randall-Knapp
+  ms.date: 01/09/2026
+  author: wwlpublish
   ms.author: rknapp
   ms.topic: unit
   module_assessment: false
 durationInMinutes: 3
-content: |
-  [!include[](includes/6-knowledge-check.md)]
+content: "Choose the best response for each of the following questions."
 quiz:
   questions:
-  - content: "You need to create a structured lesson plan with clear objectives, materials, and alignment to standards. Which tool should you use?"
+  - content: "Which task is often a good fit for Teach because it benefits from a consistent structure?"
     choices:
-    - content: "Copilot in Word"
-      isCorrect: false
-      explanation: ""
-    - content: "Copilot in Outlook"
-      isCorrect: false
-      explanation: ""
-    - content: "Teach in the Microsoft 365 Copilot App"
+    - content: "Creating a lesson plan or rubric that follows a familiar format"
       isCorrect: true
-      explanation: "Teach is designed for structured, repeatable workflows like lesson plans, rubrics, and templates. It provides guided interfaces grounded in educational standards and prompts you step-by-step through each component."
-    - content: "Microsoft Translator"
+      explanation: "Correct. This task benefits from a consistent structure, making it a good fit for Teach."
+    - content: "Refining the tone of a follow-up email for a specific family"
       isCorrect: false
-      explanation: ""
-  - content: "You have raw student performance data and need to draft a nuanced progress note for an IEP update. Which approach is most appropriate?"
+      explanation: "Incorrect. This task is more suited for Copilot, which specializes in refining and adapting content."
+    - content: "Translating a document into a family's home language"
+      isCorrect: false
+      explanation: "Incorrect. Translation tasks are typically handled by other tools, not Teach."
+  - content: "In which situation is Copilot typically most helpful?"
     choices:
-    - content: "Use Teach to generate the progress note from scratch"
+    - content: "Creating materials that require alignment to instructional standards"
       isCorrect: false
-      explanation: ""
-    - content: "Use Copilot in Word to draft the note, ensuring you remove PII before prompting"
+      explanation: "Incorrect. This task is better suited for Teach, which focuses on structured content creation."
+    - content: "Revising language, summarizing notes, or adapting content for a specific audience"
       isCorrect: true
-      explanation: "Copilot is ideal for individualized writing tasks that require nuanced language and personalization. You should remove any PII before prompting, then use Copilot to help organize and express the information clearly while you maintain oversight for accuracy and compliance."
-    - content: "Copy and paste the raw data directly into the IEP"
+      explanation: "Correct. Copilot excels at refining and adapting content for specific audiences."
+    - content: "Generating reusable templates for recurring documentation"
       isCorrect: false
-      explanation: ""
-    - content: "Only write the note manually without AI assistance"
-      isCorrect: false
-      explanation: ""
-  - content: "You're preparing for an IEP meeting and need to create structured notes and then adapt them for family communication. What's the best approach?"
+      explanation: "Incorrect. While Copilot can assist, this task is more aligned with Teach's capabilities."
+  - content: "How can Teach and Copilot work together during a multistep administrative task?"
     choices:
-    - content: "Use only Copilot for all steps"
+    - content: "Copilot completes the full task independently once Teach is opened"
       isCorrect: false
-      explanation: ""
-    - content: "Use only Teach for all steps"
+      explanation: "Incorrect. Copilot does not complete tasks independently; it supports refinement and communication."
+    - content: "Teach replaces Copilot once content is exported"
       isCorrect: false
-      explanation: ""
-    - content: "Use Teach for structured notes, then export to Word and use Copilot to rewrite sections in plain language for families"
+      explanation: "Incorrect. Teach and Copilot complement each other rather than replacing one another."
+    - content: "Teach organizes required components and Copilot supports refinement and communication"
       isCorrect: true
-      explanation: "Teach and Copilot complement one another for end-to-end workflows. Teach handles the structure (identifying strengths, areas of need, data summaries), while Copilot handles the personalization (rewriting in plain language, adapting tone for different audiences)."
-    - content: "Manually complete all tasks without AI tools"
+      explanation: "Correct. Teach organizes components while Copilot refines and communicates effectively."
+  - content: "What is an example of responsible AI use in special education documentation?"
+    choices:
+    - content: "Reviewing AI-assisted content for accuracy, tone, privacy, and alignment with student needs"
+      isCorrect: true
+      explanation: "Correct. Responsible AI use involves reviewing content to ensure it meets all necessary standards."
+    - content: "Allowing AI tools to determine final instructional or compliance decisions"
       isCorrect: false
-      explanation: ""
+      explanation: "Incorrect. Educators should remain the decision-makers in instructional and compliance matters."
+    - content: "Using AI content without revision to save time"
+      isCorrect: false
+      explanation: "Incorrect. AI content should always be reviewed and revised to ensure quality and appropriateness."
+  - content: "According to this module, what role do AI tools play in administrative work?"
+    choices:
+    - content: "AI tools fully replace manual documentation processes"
+      isCorrect: false
+      explanation: "Incorrect. AI tools support educators but do not replace manual processes entirely."
+    - content: "AI tools support drafting and organization while educators remain decision makers"
+      isCorrect: true
+      explanation: "Correct. AI tools assist with drafting and organization, but educators retain decision-making authority."
+    - content: "AI tools determine which workflows educators should use"
+      isCorrect: false
+      explanation: "Incorrect. Educators decide workflows, with AI tools providing support."
