@@ -4,7 +4,7 @@ Understanding this evaluation model is essential before planning policies or dec
 
 ## How DLP evaluates data
 
-:::image type="content" source="../media/data-loss-prevention-decision-flow.png" alt-text="Screenshot showing CopilotInteraction selected under Record types." lightbox="../media/data-loss-prevention-decision-flow.png", border="false":::
+:::image type="content" border="false" source="../media/data-loss-prevention-decision-flow.png" alt-text="Screenshot showing CopilotInteraction selected under Record types." lightbox="../media/data-loss-prevention-decision-flow.png":::
 
 DLP evaluates multiple signals together to decide when an action puts data at risk:
 
