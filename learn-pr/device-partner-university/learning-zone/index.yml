@@ -45,3 +45,4 @@ units:
   - learn.dpu.learning-zone.summary
 badge:
   uid: learn.dpu.learning-zone.badge
+hidden: true
