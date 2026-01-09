@@ -22,7 +22,7 @@ Copilot Edits is available in Visual Studio Code and JetBrains IDEs. Use Copilot
 
 - Edit mode: Use edit mode when you want more granular control over the edits that Copilot proposes. In edit mode, you choose which files Copilot can make changes to, provide context to Copilot with each iteration, and decide whether or not to accept the suggested edits after each turn.
 
-- Agent mode: Use agent mode when you have a specific task in mind and want to enable Copilot to autonomously edit your code. In agent mode, Copilot determines which files to make changes to, offers code changes and terminal commands to complete the task, and iterates to remediate issues until the original task is complete. Agent mode is only available in Visual Studio Code.
+- Agent mode: Use agent mode when you have a specific task in mind and want to enable Copilot to autonomously edit your code. In agent mode, Copilot determines which files to make changes to, offers code changes and terminal commands to complete the task, and iterates to remediate issues until the original task is complete.
 
 ### GitHub Copilot code review
 
