@@ -2,7 +2,7 @@ Now let's find inspiration for more complex prompts, and discover practical appl
 
 ## Explore ways to use AI at work
 
-[Microsoft 365 Copilot Chat](https://m365.cloud.microsoft/chat) is a shared chat experience within Microsoft 365 Copilot, and is available at no additional cost with eligible Microsoft 365 and Office 365 licenses. With a Microsoft 365 Copilot license, Copilot Chat becomes more powerful by connecting to your work data across Microsoft 365 applications like Teams, Word, Outlook, PowerPoint, and Excel. This helps connect your questions with business information and apps, bringing out important details from the company's data.
+[Microsoft 365 Copilot Chat](https://m365.cloud.microsoft/chat) is a shared chat experience within Microsoft 365 Copilot, and is available with eligible Microsoft 365 and Office 365 licenses. With a Microsoft 365 Copilot license, Copilot Chat becomes more powerful by connecting to your work data across Microsoft 365 applications like Teams, Word, Outlook, PowerPoint, and Excel. This helps connect your questions with business information and apps, bringing out important details from the company's data.
 
 Some common examples include:
 
@@ -14,9 +14,11 @@ Some common examples include:
 > [!NOTE]
 > **AI Agents**, also known as virtual assistants, help you with different tasks based on what you need. They can handle routine tasks like scheduling meetings, managing emails, real-time data analysis, and personalized recommendations. In Microsoft 365, you can now build your own agents to fit your specific needs, making your daily tasks easier and more efficient.
 >
-> To learn more, read [Introducing Copilot agents](https://support.microsoft.com/topic/introducing-copilot-agents-943e563d-602d-40fa-bdd1-dbc83f582466#:~:text=Copilot%20agents%20are%20specialized%20AI,expanding%20their%20reach%20and%20functionality.?azure-portal=true) and watch the short video [Copilots & Agents](https://www.youtube.com/watch?v=oddeD2FTCyE).
+> To learn more, read [Introducing Copilot agents](https://support.microsoft.com/topic/introducing-copilot-agents-943e563d-602d-40fa-bdd1-dbc83f582466#:~:text=Copilot%20agents%20are%20specialized%20AI,expanding%20their%20reach%20and%20functionality.?azure-portal=true).
 
-The real power of Microsoft 365 Copilot comes from the flow of using it across apps. There are many use cases for Copilot in Microsoft 365, including in communications, HR, legal, IT, sales, project management, market research, finance, and more. The [Copilot scenario library](https://adoption.microsoft.com/copilot-scenario-library?azure-portal=true) can help you get started.
+The real power of Microsoft 365 Copilot comes from how it keeps your work flowing—letting you start a task in one app and continue it in another while Copilot stays with you to help at each step.
+
+There are many use cases for Copilot in Microsoft 365, including in communications, HR, legal, IT, sales, project management, market research, finance, and more. The [Copilot scenario library](https://adoption.microsoft.com/copilot-scenario-library?azure-portal=true) can help you get started.
 
 The following table describes one sample functional scenario, **Using Copilot to draft an internal communications post**.
 
