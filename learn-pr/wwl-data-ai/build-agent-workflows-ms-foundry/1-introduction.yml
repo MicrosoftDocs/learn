@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.build-agent-workflows-ms-foundry.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: Get started with building agent-driven workflows using Microsoft Foundry.
+  author: buzahid
+  ms.author: buzahid
+  ms.date: 1/8/2026
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/1-introduction.md)]
+
