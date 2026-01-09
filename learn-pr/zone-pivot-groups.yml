@@ -492,3 +492,13 @@ groups:
       title: Video
     - id: text
       title: Text and images
+- id: device-platform
+  title: Device Platform
+  prompt: Choose your device platform
+  pivots:
+    - id: windows
+      title: Windows
+    - id: ios-ipados
+      title: iOS/iPadOS
+    - id: android
+      title: Android
