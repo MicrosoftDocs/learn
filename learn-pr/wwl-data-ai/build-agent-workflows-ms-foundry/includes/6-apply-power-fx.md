@@ -43,4 +43,4 @@ Power Fx expressions are commonly used in **If/Else** nodes to evaluate conditio
 By using Power Fx formulas throughout a workflow, you create dynamic, data-driven processes that respond intelligently to inputs and agent outputs. This low-code approach empowers you to build complex logic while keeping workflows maintainable and understandable.
 
 > [!TIP]
-> For more information about the Power Fx language, refer to the [Power Fx documentation](/power-platform/power-fx/overview?azure-portal=true).
+> For more information about the Power Fx language, visit the [Power Fx documentation](/power-platform/power-fx/overview?azure-portal=true).
