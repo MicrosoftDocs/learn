@@ -12,7 +12,7 @@ The following table shows the types of logging, the platforms supported, and whe
 
 ## Enable application logging (Windows)
 
-1. To enable application logging for Windows apps in the Azure portal, navigate to your app and select **App Service logs**.
+1. To enable application logging for Windows apps in the Azure portal, navigate to your app and select **Monitoring** > **App Service logs**.
 
 1. Select **On** for either **Application Logging (Filesystem)** or **Application Logging (Blob)**, or both. The **Filesystem** option is for temporary debugging purposes, and turns itself off in 12 hours. The **Blob** option is for long-term logging, and needs a blob storage container to write logs to.
 
@@ -57,23 +57,40 @@ In your application code, you use the usual logging facilities to send log messa
     System.Diagnostics.Trace.TraceError("If you're seeing this, something bad happened");
     ```
 
-    By default, ASP.NET Core uses the `Microsoft.Extensions.Logging.AzureAppServices` logging provider.
+    ASP.NET Core includes the Azure App Service logging provider. Enable it when configuring logging, for example:
 
-* Python applications can use the [OpenCensus package](/azure/azure-monitor/app/opencensus-python) to send logs to the application diagnostics log.
+    ```csharp
+    builder.Logging.AddAzureWebAppDiagnostics();
+    ```
+
+* Python applications should use [OpenTelemetry with Azure Monitor](/azure/azure-monitor/app/opentelemetry-enable) to send logs to the application diagnostics log.
+
+## Send logs to Azure Monitor
+
+You can forward platform and application logs to Azure Monitor destinations via Diagnostic Settings.
+
+* In the Azure portal, open your app and select **Monitoring** > **Diagnostic settings**, then add a diagnostic setting to send logs to a Log Analytics workspace, Storage account, or Event Hub.
+* Common categories include **AppServiceHTTPLogs** (web server logs) and **AppServiceConsoleLogs** (stdout/stderr). For details, see [Supported resource logs for Microsoft.Web](/azure/app-service/monitor-app-service-reference#supported-resource-logs-for-microsoftweb).
 
 ## Stream logs
 
-Before you stream logs in real time, enable the log type that you want. Any information written to files ending in .txt, .log, or .htm that are stored in the `/LogFiles` directory (`d:/home/logfiles`) is streamed by App Service.
+Before you stream logs in real time, enable the log type that you want. Any information written to files ending in .txt, .log, or .htm that are stored in the `/home/LogFiles` directory (Windows: `D:\home\LogFiles`) is streamed by App Service.
 
 > [!NOTE]
 > Some types of logging buffer write to the log file, which can result in out of order events in the stream. For example, an application log entry that occurs when a user visits a page may be displayed in the stream before the corresponding HTTP log entry for the page request.
 
 * Azure portal - To stream logs in the Azure portal, navigate to your app and select **Log stream**.
 
-* Azure CLI - To stream logs live in Cloud Shell, use the following command:
+* Azure CLI - To stream logs live in Cloud Shell, use the following command (note: Cloud Shell may not work for some Linux-based plans; use the local CLI if needed):
 
     ```bash
     az webapp log tail --name appname --resource-group myResourceGroup
+    ```
+
+    To filter specific log types, such as HTTP or application logs, use the `--provider` parameter, for example:
+
+    ```bash
+    az webapp log tail --name appname --resource-group myResourceGroup --provider http
     ```
 
 * Local console - To stream logs in the local console, install Azure CLI and sign in to your account. Once signed in, follow the instructions shown for Azure CLI.
@@ -85,7 +102,10 @@ If you configure the Azure Storage blobs option for a log type, you need a clien
 For logs stored in the App Service file system, the easiest way is to download the ZIP file in the browser at:
 
 * Linux/container apps: `https://<app-name>.scm.azurewebsites.net/api/logs/docker/zip`
-* Windows apps: `https://<app-name>.scm.azurewebsites.net/api/dump`
+* Windows apps: `https://<app-name>.scm.azurewebsites.net/api/logs/zip`
+
+> [!NOTE]
+> The `api/dump` endpoint downloads a full diagnostic dump, not just logs. Use `api/logs/zip` to download only log files.
 
 For Linux/container apps, the ZIP file contains console output logs for both the docker host and the docker container. For a scaled-out app, the ZIP file contains one set of logs for each instance. In the App Service file system, these log files are the contents of the */home/LogFiles* directory.
 
