@@ -4,11 +4,13 @@ Imagine you are teaching fraction addition with unlike denominators to a student
 
 1. Set up in OneNote
    1. Open OneNote and create a new page for the lesson.
-   2. Type or handwrite the fraction problems (e.g., 2/3 + 1/4 and 5/6 + 3/8).
-      > [!TIP]
-> If handwriting, use Ink to Math to convert to digital text for Math Assistant recognition.
+   2. Type or handwrite the fraction problems (e.g., 2/3 + 1/4 and 5/6 + 3/8)
+
+   > [!TIP]
+   > If handwriting, use Ink to Math to convert to digital text for Math Assistant recognition.
 
    3. Ensure Math Assistant is enabled under Settings > Options if you are using it for the first time.
+
 2. Use Math Assistant to show steps
     1. Select the first problem.
     2. Go to Draw > Math (or Insert > Math depending on your version).
