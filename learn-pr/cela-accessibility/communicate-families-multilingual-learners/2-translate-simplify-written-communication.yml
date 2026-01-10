@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.communicate-families-multilingual-learners.translate-simplify-written-communication
-title: "Simplify and translate written communication"
+title: "Translate and simplify written communication"
 metadata:
-  title: "Simplify Written Communication Fast"
+  title: "Translate and Simplify Written Communication"
   description: "Simplify and translate technical content into plain language using AI tools. Ensure clarity, accuracy, and cultural relevance efficiently."
-  ms.date: 12/22/2025
+  ms.date: 1/9/2026
   author: Randall-Knapp
-  ms.author: rknapp
+  ms.author: erzelman
   ms.topic: unit
 durationInMinutes: 3
 content: |

@@ -1,3 +1,5 @@
-- Reflect on your current communication practices with families.
-- How can you integrate AI tools to make communication inclusive for multilingual families and parents with disabilities? What policies must you consider?  
-- Document three changes you would implement (e.g., enabling captions, translating progress reports, creating accessible summaries).
+Take a moment to reflect on how you currently communicate with families.
+
+How might AI tools help you make information more inclusive for multilingual families and for parents with disabilities, all while keeping your professional judgment at the center? Consider any school or district policies that guide the way you use translation, accessibility tools, or AI‑supported communication.
+
+**Action:** Identify three changes you would make to strengthen accessibility and inclusion in your communication practices (for example: enabling captions in meetings, translating progress updates, creating accessible summaries).

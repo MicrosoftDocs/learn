@@ -3,19 +3,19 @@ uid: learn.wwl.communicate-families-multilingual-learners
 metadata:
   title: "Communicate With Multilingual Families"
   description: "Learn to use AI tools to simplify and translate educational communications, ensuring inclusivity and accessibility for diverse families."
-  ms.date: 12/22/2025
+  ms.date: 1/9/2026
   author: Randall-Knapp
-  ms.author: rknapp
+  ms.author: erzelman
   ms.topic: module
   ms.service: azure-ai-translator
 title: "Communicate with multilingual families using AI tools"
 summary: Build inclusive and clear communication strategies using AI tools for multilingual families and parents with disabilities.
 abstract: |
   After completing this module, you will be able to:
-  - Identify common barriers to effective communication with families and multilingual learners, including language differences and complex terminology.
-  - Apply AI tools, such as Copilot and Microsoft Translator, to translate and simplify educational documents for families.
-  - Utilize strategies to make both written and live meeting communications accessible and culturally responsive for all families, including those with disabilities.
-  - Evaluate and revise communication to ensure clarity, inclusiveness, and engagement with diverse family communities.
+  - Recognize the communication barriers families may experience, including language differences and complex educational terminology, and how these affect partnership.
+  - Use AI tools like Copilot and Microsoft Translator to make educational documents clearer and more accessible while keeping educator judgment at the center.
+  - Apply strategies that help both written and live meeting communication feel welcoming, accessible, and culturally responsive for multilingual families and families with disabilities.
+  - Review and refine family communications to ensure they remain clear, inclusive, and supportive of strong engagement across diverse communities.
 prerequisites: |
   - Basic familiarity with Microsoft tools such as Word and Teams.
   - Knowledge of family engagement practices in educational settings.

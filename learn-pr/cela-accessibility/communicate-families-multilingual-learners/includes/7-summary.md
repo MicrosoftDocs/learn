@@ -1,9 +1,5 @@
-Effective communication with families—especially multilingual families and those with disabilities—is essential for building trust and supporting student success.
+Clear and accessible communication with multilingual families and families with disabilities is foundational to trust, collaboration, and student success. This module demonstrates how tools like Microsoft Translator, Copilot, and Microsoft Teams can support your practice by reducing language and accessibility barriers.
 
-Educators learn to:
+Translate and simplify IEPs, progress reports, and other technical documents using Microsoft Translator and Copilot. Use Live Captions in meetings to provide real time translation and create transcripts for accessible follow up communication in Teams. Offer flexible engagement options such as translated notes, asynchronous summaries, and culturally responsive outreach.
 
-- Translate and simplify IEPs and progress reports using Microsoft Translator and Copilot.  
-- Enable Live Captions, provide transcripts, and create accessible follow‑up communication.  
-- Offer flexible engagement through asynchronous summaries, translated notes, and culturally responsive outreach.
-
-By combining translation, plain language, and accessibility practices, educators create inclusive communication strategies that respect families’ time, language, and cultural context.
+By blending translation, plain language, and accessibility practices, educators create communication pathways that respect families' time, language, and cultural context. This reinforces your role as the guide and decision maker, with AI simply supporting your professional judgment.
