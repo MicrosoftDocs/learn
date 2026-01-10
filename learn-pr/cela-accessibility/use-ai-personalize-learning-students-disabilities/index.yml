@@ -3,20 +3,20 @@ uid: learn.wwl.use-ai-personalize-learning-students-disabilities
 metadata:
   title: "Use AI to Personalize Learning for Students with Disabilities"
   description: "Learn how AI tools like Copilot and Immersive Reader optimize learning for students with disabilities. Explore structured, inclusive teaching strategies."
-  ms.date: 12/22/2025
+  ms.date: 01/09/2026
   author: Randall-Knapp
-  ms.author: rknapp
+  ms.author: erzelman
   ms.topic: module
   ms.service: microsoft-copilot
 title: "Use AI to personalize learning for students with disabilities"
 summary: Learn to adapt teaching methods using inclusive digital tools like Copilot, Immersive Reader, and Math Assistant for students with disabilities.
 abstract: |
   After completing this module, you will be able to:
-  - Utilize Copilot to simplify dense text and generate guiding questions.
-  - Personalize reading practices with Immersive Reader and Reading Progress.
-  - Make math concepts accessible using Math Assistant in OneNote.
-  - Create accessible multimedia presentations with PowerPoint.
-  - Integrate inclusive tools to adapt lessons for varied accessibility needs.
+  - Understand how AI tools like Copilot and Immersive Reader can make reading materials more accessible for students with disabilities.
+  - Use Reading Progress and Copilot to create differentiated reading passages and track student fluency and comprehension.
+  - Support math learning by using Math Assistant and accessibility features to provide clear, step‑by‑step explanations.
+  - Create accessible presentations and multimedia using Copilot, Accessibility Assistant, alt text, and live captions.
+  - Identify learning barriers and choose appropriate Microsoft tools to personalize instruction and measure student progress.
 prerequisites: |
   - Basic knowledge of Microsoft 365 tools.
   - Familiarity with general classroom teaching methods.

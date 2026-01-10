@@ -1,23 +1,9 @@
-When presentations include clear structure, alt text, accessible reading order, and captions, more students can engage effectively.
+When presentations are thoughtfully structured with meaningful alt text, clear reading order, and captions, more students can access and engage with the content. Accessibility choices made during lesson preparation help reduce barriers for students with disabilities and support a wider range of learning needs. Microsoft tools in PowerPoint and Teams can support this work by streamlining accessible design while keeping educators in control of instructional intent.
 
-Imagine you're preparing an ecosystem presentation with images and a short video clip.
+Imagine preparing a short ecosystem presentation that includes images and a brief video clip.
 
-### Start with Copilot in PowerPoint
-- Open PowerPoint and use Copilot to draft an outline and generate slides with concise, plain‑language bullet points.
-
-### Run Accessibility Assistant
-- Check for accessibility issues.  
-- Fix reading order.  
-- Replace embedded text with real text.  
-- Add meaningful alt text (e.g., “Food web diagram: arrows show energy flow…”).
-
-### Enable captions
-- Turn on **PowerPoint Live captions** or present in Teams with live captions.
-
-### Add speaker notes
-Include important terms and definitions so students may preview them.
-
-### Prepare accessible recordings and handouts
-- Publish recordings with captions.  
-- Provide accessible handouts using real text instead of images.
-
+- **Start with Copilot in PowerPoint.** Open PowerPoint and use Copilot to draft an initial outline and generate slides with concise, plain‑language bullet points. Educators can review, revise, or adapt the content to ensure it aligns with learning goals and student needs, using the draft as a time‑saving starting point rather than a final product.
+- **Review slides with Accessibility Assistant.** After creating slides, run the Accessibility Checker to identify potential issues. Address these by confirming a logical reading order, replacing text‑embedded images with editable text, and adding alt text that explains the instructional purpose of visuals, such as "Food web diagram showing energy flow from plants to herbivores to carnivores." When automatic alt text is suggested, educators review and adjust it to ensure accuracy and context.
+- **Enable captions to support access during instruction.** When presenting, turn on PowerPoint Live captions or present in Microsoft Teams with live captions enabled. This supports students who are deaf or hard of hearing and benefits learners who process information more effectively with visual reinforcement.
+- **Add speaker notes to support comprehension.** Include key vocabulary and definitions in speaker notes so students can preview concepts ahead of time or reference them after the lesson, supporting comprehension and reducing cognitive load.
+- **Prepare accessible recordings and materials for follow-up.** If sharing a recording or handouts, publish content with captions enabled and provide slide materials that use real text instead of image‑only content. These choices help ensure students can revisit learning materials in formats that work for them.
