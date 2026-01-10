@@ -15,7 +15,7 @@ az containerapp update \
   --image <IMAGE_NAME>
 ```
 
-You can list all revisions associated with your container app with the `az containerapp revision list` command. 
+You can list all revisions associated with your container app with the `az containerapp revision list` command.
 
 ```bash
 az containerapp revision list \
@@ -43,7 +43,7 @@ An updated or deleted secret doesn't automatically affect existing revisions in 
 Before you delete a secret, deploy a new revision that no longer references the old secret. Then deactivate all revisions that reference the secret.
 
 > [!NOTE]
-> Container Apps doesn't support Azure Key Vault integration. Instead, enable managed identity in the container app and use the Key Vault SDK in your app to access secrets.
+> Container Apps supports native Azure Key Vault integration. Enable managed identity in the container app, grant the identity the **Key Vault Secrets User** role, and define secrets as Key Vault references using the secret's URI. Container Apps automatically retrieves and refreshes the secret value.
 
 ### Defining secrets
 
