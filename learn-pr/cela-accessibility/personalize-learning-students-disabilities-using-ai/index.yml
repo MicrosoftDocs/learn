@@ -1,0 +1,48 @@
+### YamlMime:Module
+uid: learn.wwl.use-ai-personalize-learning-students-disabilities
+metadata:
+  title: "Support multilingual and accessible family communication"
+  description: "Educators will learn how to use AI and accessibility tools to personalize learning for students with disabilities."
+  ms.date: 01/09/2026
+  author: Randall-Knapp
+  ms.author: erzelman
+  ms.topic: module
+  ms.service: microsoft-copilot
+title: "Support multilingual and accessible family communication"
+summary: Educators will learn how to use Microsoft AI and accessibility tools to personalize reading, math, and multimedia, reduce learning barriers, support diverse needs, and measure student progress responsibly.
+abstract: |
+  After completing this module, you will be able to:
+  - Understand how AI tools like Copilot and Immersive Reader can make reading materials more accessible for students with disabilities.
+  - Use Reading Progress and Copilot to create differentiated reading passages and track student fluency and comprehension.
+  - Support math learning by using Math Assistant and accessibility features to provide clear, step by step explanations.
+  - Create accessible presentations and multimedia using Copilot, Accessibility Assistant, alt text, and live captions.
+  - Identify learning barriers and choose appropriate Microsoft tools to personalize instruction and measure student progress.
+prerequisites: |
+  - Basic knowledge of Microsoft 365 tools.
+  - Familiarity with general classroom teaching methods.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- k-12-educator
+- school-leader
+products:
+- m365
+- microsoft-365-copilot
+- office-teams
+- office-powerpoint
+- office-word
+subjects:
+- artificial-intelligence
+- generative-ai
+units:
+- learn.wwl.use-ai-personalize-learning-students-disabilities.introduction
+- learn.wwl.use-ai-personalize-learning-students-disabilities.adapt-reading-materials-support-focus-comprehension
+- learn.wwl.use-ai-personalize-learning-students-disabilities.personalize-reading-track-progress
+- learn.wwl.use-ai-personalize-learning-students-disabilities.make-math-accessible-learners
+- learn.wwl.use-ai-personalize-learning-students-disabilities.create-accessible-presentations-multimedia
+- learn.wwl.use-ai-personalize-learning-students-disabilities.reflection-exercise
+- learn.wwl.use-ai-personalize-learning-students-disabilities.knowledge-check
+- learn.wwl.use-ai-personalize-learning-students-disabilities.summary
+badge:
+  uid: learn.wwl.use-ai-personalize-learning-students-disabilities.badge
