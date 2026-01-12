@@ -25,6 +25,8 @@ Some environments present patterns that are harder to address with content-based
 
 Use the tabs to review each scenario and consider whether basic DLP is sufficient or whether added context would improve enforcement decisions.
 
+:::image type="content" border="false" source="../media/risk-patterns.png" alt-text="Screenshot showing CopilotInteraction selected under Record types." lightbox="../media/risk-patterns.png":::
+
 ## [Predictable risk](#tab/predictable-risk)
 
 ### Scenario: Predictable data sharing
