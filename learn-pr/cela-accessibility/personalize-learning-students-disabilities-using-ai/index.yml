@@ -1,14 +1,14 @@
 ### YamlMime:Module
 uid: learn.wwl.use-ai-personalize-learning-students-disabilities
 metadata:
-  title: "Use AI to Personalize Learning for Students with Disabilities"
+  title: "Personalize Learning for Students with Disabilities Using AI"
   description: "Educators will learn how to use AI and accessibility tools to personalize learning for students with disabilities."
   ms.date: 01/09/2026
   author: Randall-Knapp
   ms.author: erzelman
   ms.topic: module
   ms.service: microsoft-copilot
-title: "Use AI to personalize learning for students with disabilities"
+title: "Personalize learning for students with disabilities using AI"
 summary: Educators will learn how to use Microsoft AI and accessibility tools to personalize reading, math, and multimedia, reduce learning barriers, support diverse needs, and measure student progress responsibly.
 abstract: |
   After completing this module, you will be able to:
