@@ -1,0 +1,50 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.prompt-versioning-genaiops.knowledge-check
+title: Module assessment
+metadata:
+  title: Module assessment
+  description: "Knowledge check for prompt versioning module"
+  ms.date: 01/07/2026
+  author: madiepev
+  ms.author: madiepev
+  ms.topic: unit
+  ms.custom:
+  - N/A
+  module_assessment: true
+durationInMinutes: 3
+quiz:
+  title: ""
+  questions:
+  - content: "Why is version control important for AI prompts in production environments?"
+    choices:
+    - content: "It allows you to track changes, roll back problematic prompts, and maintain consistency across deployments."
+      isCorrect: true
+      explanation: "Correct. Version control provides essential capabilities for managing prompt changes safely in production."
+    - content: "It automatically improves prompt performance through machine learning."
+      isCorrect: false
+      explanation: "Incorrect. Version control doesn't automatically improve prompt performance - it provides management capabilities."
+    - content: "It eliminates the need for testing prompts before deployment."
+      isCorrect: false
+      explanation: "Incorrect. Version control complements testing but doesn't replace the need for thorough prompt validation."
+  - content: "Which GitHub repository structure best supports prompt versioning for GenAIOps workflows?"
+    choices:
+    - content: "A single file containing all prompts without any organization"
+      isCorrect: false
+      explanation: "Incorrect. A single unorganized file makes it difficult to manage multiple prompts and their versions."
+    - content: "Organized folders with clear naming conventions, separate files for each prompt, and documentation"
+      isCorrect: true
+      explanation: "Correct. A well-structured repository with clear organization supports better prompt management and collaboration."
+    - content: "Binary files that cannot be easily read or compared"
+      isCorrect: false
+      explanation: "Incorrect. Binary files don't support the transparency and diff capabilities needed for effective version control."
+  - content: "What is the recommended approach for testing prompt changes before production deployment?"
+    choices:
+    - content: "Test directly in production to get real user feedback"
+      isCorrect: false
+      explanation: "Incorrect. Testing directly in production introduces unnecessary risks and potential user impact."
+    - content: "Create a branch, test the prompt changes, document performance differences, and use pull requests for review"
+      isCorrect: true
+      explanation: "Correct. This approach follows software engineering best practices and enables safe prompt iteration."
+    - content: "Make changes without testing since prompts are just text"
+      isCorrect: false
+      explanation: "Incorrect. Prompt changes can significantly impact AI behavior and should always be tested thoroughly."
