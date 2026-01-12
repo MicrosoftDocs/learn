@@ -6,3 +6,4 @@ In this module, you learned how Azure Container Registry (ACR) organizes contain
 - [Tutorial: Build and deploy container images in the cloud with ACR Tasks](/azure/container-registry/container-registry-tutorial-quick-task)
 - [Best practices for Azure Container Registry](/azure/container-registry/container-registry-best-practices)
 - [Recommendations for tagging and versioning container images](/azure/container-registry/container-registry-image-tag-version)
+
