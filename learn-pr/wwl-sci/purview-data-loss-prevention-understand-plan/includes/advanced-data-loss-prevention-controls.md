@@ -55,6 +55,8 @@ The same export action is routine for one team as part of their role, but unusua
 
 In role-dependent scenarios, identical actions can carry different levels of risk. Adding context allows enforcement decisions to reflect how data is normally used by different groups, reducing false positives while still identifying behavior that falls outside expected patterns.
 
+---
+
 ## How DLP can work with other signals
 
 In these situations, content and location alone might not provide enough context to make consistent enforcement decisions.
