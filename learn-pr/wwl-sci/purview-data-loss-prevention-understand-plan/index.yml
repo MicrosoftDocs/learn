@@ -37,7 +37,7 @@ subjects:
 - security
 units:
 - learn.wwl.purview-data-loss-prevention-understand-plan.introduction
-- learn.wwl.purview-data-loss-prevention-understand-plan.introduction-data-loss-prevention
+- learn.wwl.purview-data-loss-prevention-understand-plan.understand-data-loss-prevention
 - learn.wwl.purview-data-loss-prevention-understand-plan.understand-data-loss-prevention-protection
 - learn.wwl.purview-data-loss-prevention-understand-plan.plan-design-policies
 - learn.wwl.purview-data-loss-prevention-understand-plan.understand-deployment-simulation-mode

@@ -45,4 +45,4 @@ DLP can't:
 
 Understanding these boundaries helps set realistic expectations before planning and deploying policies.
 
-With the problem space defined, the next step is understanding how DLP evaluates data and where protection can be applied.
+With the problem space defined, the next step is to understand how DLP evaluates data and where protection can be applied.
