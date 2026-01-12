@@ -2,19 +2,19 @@
 uid: learn.wwl.use-ai-personalize-learning-students-disabilities
 metadata:
   title: "Use AI to Personalize Learning for Students with Disabilities"
-  description: "Learn how AI tools like Copilot and Immersive Reader optimize learning for students with disabilities. Explore structured, inclusive teaching strategies."
+  description: "Educators will learn how to use AI and accessibility tools to personalize learning for students with disabilities."
   ms.date: 01/09/2026
   author: Randall-Knapp
   ms.author: erzelman
   ms.topic: module
   ms.service: microsoft-copilot
 title: "Use AI to personalize learning for students with disabilities"
-summary: Learn to adapt teaching methods using inclusive digital tools like Copilot, Immersive Reader, and Math Assistant for students with disabilities.
+summary: Educators will learn how to use Microsoft AI and accessibility tools to personalize reading, math, and multimedia, reduce learning barriers, support diverse needs, and measure student progress responsibly.
 abstract: |
   After completing this module, you will be able to:
   - Understand how AI tools like Copilot and Immersive Reader can make reading materials more accessible for students with disabilities.
   - Use Reading Progress and Copilot to create differentiated reading passages and track student fluency and comprehension.
-  - Support math learning by using Math Assistant and accessibility features to provide clear, step‑by‑step explanations.
+  - Support math learning by using Math Assistant and accessibility features to provide clear, step by step explanations.
   - Create accessible presentations and multimedia using Copilot, Accessibility Assistant, alt text, and live captions.
   - Identify learning barriers and choose appropriate Microsoft tools to personalize instruction and measure student progress.
 prerequisites: |
@@ -25,28 +25,16 @@ levels:
 - beginner
 roles:
 - k-12-educator
-- higher-ed-educator
-- technology-manager
-- technical-writer
-- student
+- school-leader
 products:
 - m365
 - microsoft-365-copilot
-- microsoft-365-copilot-chat
-- power-platform
-- microsoft-copilot-studio
-- ms-website
-- microsoft-education-center
+- office-teams
+- office-powerpoint
+- office-word
 subjects:
-- infrastructure
-- accessibility
 - artificial-intelligence
-- natural-language-processing
-- machine-learning
-- data-management
-- data-integration
-- business-applications
-- knowledge-management
+- generative-ai
 units:
 - learn.wwl.use-ai-personalize-learning-students-disabilities.introduction
 - learn.wwl.use-ai-personalize-learning-students-disabilities.adapt-reading-materials-support-focus-comprehension
