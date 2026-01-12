@@ -2,21 +2,23 @@
 uid: learn.wwl.streamline-administrative-tasks-ai
 metadata:
   title: "Streamline Administrative Tasks With AI"
-  description: "Learn how AI tools like Teach and Copilot can simplify administrative tasks in special education, improving efficiency and maintaining accuracy."
+  description: "In this module, special educators will learn how and when to use Teach and/or Copilot to streamline administrative tasks, support professional judgment, and maintain accuracy, compliance, and student centered decision making."
   ms.date: 01/05/2026
   author: Randall-Knapp
   ms.author: rknapp
   ms.topic: module
   ms.service: microsoft-365-copilot
 title: "Streamline administrative tasks with AI tools"
-summary: Learn to use Teach and Copilot to simplify administrative tasks in special education while maintaining accuracy, compliance, and student-centered practices.
+summary: Special educators will learn how and when to use Teach and/or Copilot to streamline administrative tasks, support professional judgment, and maintain accuracy, compliance, and student centered decision making.
 abstract: |
   After completing this module, you will be able to:
-  - Understand how AI tools support administrative efficiency in special education and when to use Teach vs. Copilot.
-  - Use Copilot to draft, summarize, refine, and translate individualized documentation.
-  - Use Teach to build structured, repeatable workflows for routine administrative tasks like lesson planning, rubrics, and data-collection templates.
-  - Combine Teach and Copilot to create complete, efficient workflows that maintain accuracy, compliance, and student‑centered practice.
-  - Apply responsible AI and prompt‑design practices.
+  - Explore Teach and Copilot as optional tools for supporting administrative work in special education contexts.
+  - Recognize how AI tools can support administrative efficiency and identify situations where Teach or Copilot may be a better fit based on task needs and educator preferences.
+  - Use Copilot to support drafting, summarizing, refining, or translating individualized documentation, with educator review and oversight.
+  - Use Teach to help create structured, repeatable workflows for routine tasks such as lesson planning, rubrics, and data collection templates, where consistency is helpful.
+  - Combine Teach and Copilot thoughtfully to support complete workflows that prioritize accuracy, compliance, and student-centered practice.
+  - Apply responsible AI principles and prompt design practices to support ethical, transparent, and professional use in administrative tasks.
+
 prerequisites: |
   - Basic familiarity with Microsoft 365 tools.
   - Understanding of special education administrative tasks.
@@ -24,23 +26,17 @@ iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - intermediate
 roles:
-- student
-- k-12-educator
-- higher-ed-educator
 - school-leader
-- service-adoption-specialist
+- k-12-educator
 products:
-- microsoft-365-copilot
-- microsoft-365-copilot-chat
-- microsoft-copilot-studio
-- nuance
 - m365
+- microsoft-365-copilot
+- office-teams
+- office-powerpoint
+- office-word
 subjects:
 - artificial-intelligence
-- machine-learning
 - generative-ai
-- data-management
-- data-analytics
 units:
 - learn.wwl.streamline-administrative-tasks-ai.introduction
 - learn.wwl.streamline-administrative-tasks-ai.draft-refine-individualized-documentation-copilot
