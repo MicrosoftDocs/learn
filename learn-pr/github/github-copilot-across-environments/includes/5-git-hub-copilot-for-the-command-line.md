@@ -31,15 +31,15 @@ copilot
 
 You’ll see a welcome banner and a prompt:
 
-:::image type="content" source="../media/copilot-cli-banner.png" alt-text="Screenshot of copilot interactive mode banner.":::
+:::image type="content" source="../media/copilot-cli-banner.png" alt-text="Screenshot of Copilot interactive mode banner.":::
 
 On first launch, Copilot will ask whether you trust the files in the current folder. Copilot may read, modify, or execute files in this directory during the session, so only proceed in locations you trust. 
 
-:::image type="content" source="../media/copilot-cli-trsut-files.png" alt-text="Screenshot of copilot interactive specify directory.":::
+:::image type="content" source="../media/copilot-cli-trust-files.png" alt-text="Screenshot of Copilot interactive specify directory.":::
 
 You can use the `@` to select a specific file you want to work with as context.
 
-:::image type="content" source="../media/copilot-cli-trsut-files.png" alt-text="Screenshot of copilot interactive specify directory.":::
+:::image type="content" source="../media/copilot-cli-select-file.png" alt-text="Screenshot of selecting a file in copilot interactive mode.":::
 
 Inside an interactive session, you can:
 
@@ -79,38 +79,32 @@ Slash commands are explicit session-control commands. Here are the most common o
 ### 1. Explain a command
 
 ```text
-> /explain git reset --hard HEAD
-```
-
-or simply type:
-
-```text
 > Explain what `git reset --hard HEAD` does
 ```
 
 Copilot will provide a detailed explanation.
 
+:::image type="content" source="../media/copilot-explain-command.png" alt-text="Screenshot of Copilot CLI explaining a command in interactive mode.":::
+
+
 ### 2. Suggest a command
-
-```text
-> /suggest find and delete all .log files in the home directory
-```
-
-or just type:
 
 ```text
 > Find and delete all .log files in my home folder
 ```
 
-Copilot will generate a safe command suggestion.
+Copilot will generate a safe command suggestion, and prompt you to execute it if you're satusfued with its suggestions.
+
+:::image type="content" source="../media/copilot-cli-suggest-command.png" alt-text="Screenshot of Copilot CLI suggesting a command in interactive mode.":::
 
 ### 3. Revise a suggestion
 
-After receiving a suggestion:
+After receiving a suggestion, you can type a follow up prompt to revise the suggested command:
 
 ```text
-> /revise Include only files modified in the last 7 days
+> Include only files modified in the last 7 days
 ```
+:::image type="content" source="../media/copilot-cli-revise-suggestion.png" alt-text="Screenshot of Copilot CLI improving a suggestion based on the follow up prompt.":::
 
 ### 4. Provide feedback
 
@@ -119,8 +113,9 @@ After a response or suggestion:
 ```text
 > /feedback
 ```
+:::image type="content" source="../media/copilot-cli-provide-feedback.png" alt-text="Screenshot of using the /feedack slash command in Copilot CLI interactive mode.":::
 
-Copilot will prompt you to rate the quality or provide comments.
+Copilot will prompt you to choose the kind of feedback you want to send, then navigate you to the appropriate form to complete your feedack.
 
 ### 5. Exit interactive mode
 
