@@ -37,7 +37,7 @@ modules:
 - learn.wwl.develop-ai-agent-with-semantic-kernel
 - learn.wwl.orchestrate-sk-multi-agent-solution
 - learn.wwl.discover-agents-with-a2a
-- learn.wwl.build-agent-workflows-ms-foundry
+- learn.wwl.build-agent-workflows-microsoft-foundry
 trophy:
   uid: learn.wwl.develop-ai-agent-on-azure.trophy
 
