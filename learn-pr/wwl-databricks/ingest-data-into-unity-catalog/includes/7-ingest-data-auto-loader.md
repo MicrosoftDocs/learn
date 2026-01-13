@@ -51,7 +51,7 @@ SELECT * FROM read_files(
 )
 ```
 
-When using `read_files` with streaming tables in Lakeflow Declarative Pipelines, Auto Loader capabilities are automatically enabled. Use the `STREAM` keyword to enable incremental processing:
+When using `read_files` with streaming tables in Lakeflow Spark Declarative Pipelines, Auto Loader capabilities are automatically enabled. Use the `STREAM` keyword to enable incremental processing:
 
 ```sql
 CREATE OR REFRESH STREAMING TABLE bronze_orders
@@ -148,4 +148,4 @@ To access file-level metadata in your ingested data, select the `_metadata` colu
   .select("*", "_metadata.file_path", "_metadata.file_modification_time"))
 ```
 
-Auto Loader integrates seamlessly with Lakeflow Declarative Pipelines, where it handles checkpointing and schema management automatically. In the next unit, you learn how to use Auto Loader within declarative pipeline definitions for end-to-end data ingestion workflows.
+Auto Loader integrates seamlessly with Lakeflow Spark Declarative Pipelines, where it handles checkpointing and schema management automatically. In the next unit, you learn how to use Auto Loader within declarative pipeline definitions for end-to-end data ingestion workflows.
