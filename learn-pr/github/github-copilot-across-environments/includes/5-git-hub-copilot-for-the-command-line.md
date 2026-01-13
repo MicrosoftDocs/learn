@@ -33,21 +33,18 @@ You’ll see a welcome banner and a prompt:
 
 :::image type="content" source="../media/copilot-cli-banner.png" alt-text="Screenshot of copilot interactive mode banner.":::
 
-You can now either:
+On first launch, Copilot will ask whether you trust the files in the current folder. Copilot may read, modify, or execute files in this directory during the session, so only proceed in locations you trust. 
 
-* Type natural language directly:
+:::image type="content" source="../media/copilot-cli-trsut-files.png" alt-text="Screenshot of copilot interactive specify directory.":::
 
-  ```
-  > Explain what `git reset --hard HEAD` does
-  > Find all .log files in my home folder and suggest a deletion command
-  ```
+You can use the `@` to specify a file you want to work with
 
-  :::image type="content" source="../media/copilot-cli-banner.png" alt-text="Screenshot of copilot interactive mode banner.":::
+:::image type="content" source="../media/copilot-cli-trsut-files.png" alt-text="Screenshot of copilot interactive specify directory.":::
 
-  
-You can also use **slash commands** for actions like `/context`, and `/feedback`.
+Inside an interactive session, you can:
 
-  :::image type="content" source="../media/copilot-cli-banner.png" alt-text="Screenshot of copilot interactive mode banner.":::
+* Use **slash commands** (`/command`) to control the session and configure Copilot CLI.
+* Type **natural language prompts** to explain, suggest, or revise commands.
 
 For **one-shot prompts** without entering full interactive mode:
 
@@ -56,20 +53,26 @@ copilot -i "explain brew install git"
 copilot -i "suggest find large files and delete them"
 ```
 
-## Slash Commands
+## Common Slash Commands
 
-Inside interactive mode, Copilot CLI supports several slash commands:
+Slash commands are explicit session-control commands. Here are the most common ones:
 
-| Slash Command        | Description                                           |
-| -------------------- | ----------------------------------------------------- |
-| `/help`              | Show available commands and options                   |
-| `/explain <command>` | Ask Copilot to explain any shell command              |
-| `/suggest <task>`    | Ask Copilot to suggest a shell command for a task     |
-| `/revise`            | Revise the last suggestion based on your instructions |
-| `/feedback`          | Submit feedback on a response or suggestion           |
-| `/exit`              | Exit interactive mode                                 |
+| Slash Command          | Description                                           |         |                       |
+| ---------------------- | ----------------------------------------------------- | ------- | --------------------- |
+| `/help`                | Show available commands and options                   |         |                       |
+| `/explain <command>`   | Ask Copilot to explain any shell command              |         |                       |
+| `/suggest <task>`      | Ask Copilot to suggest a shell command for a task     |         |                       |
+| `/revise`              | Revise the last suggestion based on your instructions |         |                       |
+| `/feedback`            | Submit feedback on a response or suggestion           |         |                       |
+| `/exit`                | Exit interactive mode                                 |         |                       |
+| `/model <model>`       | Select which AI model to use                          |         |                       |
+| `/theme [auto          | dark                                                  | light]` | Change terminal theme |
+| `/skills`              | Manage skills for enhanced capabilities               |         |                       |
+| `/mcp`                 | Manage MCP server configuration                       |         |                       |
+| `/list-dirs`           | Show allowed directories for file operations          |         |                       |
+| `/reset-allowed-tools` | Reset allowed tools list                              |         |                       |
 
-> 💡 **Tip:** You don’t always need a slash command—just typing your request in natural language works perfectly.
+> ⚠️ **Important:** Slash commands cannot be replaced with natural language prompts. They are the only way to control session settings and configuration.
 
 ## Example Workflows
 
@@ -127,17 +130,25 @@ Copilot will prompt you to rate the quality or provide comments.
 
 ## Configuration Options
 
-View or update Copilot CLI settings:
+In Copilot CLI, configuration is handled via:
 
-```bash
-copilot configure
-```
+1. **Slash commands** inside interactive mode
 
-Options include:
+   * `/model` — choose AI model
+   * `/theme` — change terminal theme
+   * `/skills` — manage enhanced capabilities
+   * `/reset-allowed-tools` — reset tools
+   * `/list-dirs` — view allowed directories
+   * `/mcp` — MCP server settings
 
-* **Feedback mechanism**: Use `/feedback` to rate responses.
-* **Data handling**: Opt out of optional usage analytics.
-* **Organizational settings**: Admins can manage CLI capabilities for enterprise users.
+2. **`copilot configure` command** (non-interactive mode)
+
+   ```bash
+   copilot configure
+   ```
+
+   * Lets you set global preferences like default model, theme, or optional usage analytics.
+   * Feedback settings and organizational access can be managed here.
 
 Refer to the [official GitHub Copilot CLI documentation](https://github.com/github/copilot-cli) for full configuration options.
 
