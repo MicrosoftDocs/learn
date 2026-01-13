@@ -16,7 +16,7 @@ abstract: |
   - Implement validation checks for nullability, cardinality, and range constraints
   - Implement data type checks using schema enforcement and explicit casting
   - Enforce schema and manage schema drift using Auto Loader and Delta Lake
-  - Manage data quality using pipeline expectations in Lakeflow Declarative Pipelines
+  - Manage data quality using pipeline expectations in Lakeflow Spark Declarative Pipelines
 prerequisites: |
   The following prerequisites should be completed:
   * Basic understanding of Azure Databricks workspaces and Unity Catalog
