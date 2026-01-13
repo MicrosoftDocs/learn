@@ -3,8 +3,6 @@ Teach can be a helpful option when administrative or planning work follows famil
 
 When using Teach for one of these structured tasks, educators choose the type of material they want to create and respond to prompts for key details, such as learning goals, activities, materials, timing, and standards alignment. After reviewing and adjusting the content, materials can be moved into Word or Teams for collaboration or continued editing. If parts of the document need to be more personalized, such as revising language for a specific group of students or clarifying directions for families, Copilot can be used to support those targeted refinements. This approach allows educators to move between tools in ways that fit their own planning habits while keeping instructional relevance, accuracy, and professional judgment at the center.
 
-:::image type="content" source="../media/draft-lesson-plan.png" alt-text="Screenshot of a form to create a lesson plan in Microsoft Teams, showing required fields for subject, grade level, language, description, standards, and lesson duration." border="true":::
-
 :::image type="content" source="../media/create-lesson-plan.png" alt-text="Screenshot of a draft lesson plan in Microsoft Teams with sections for overview, standards, objectives, and materials. An AI editing panel is visible on the right, with tone and length options and suggestions for improvement." border="true":::
 
 > [!TIP]
