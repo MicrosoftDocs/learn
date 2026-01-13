@@ -1,6 +1,6 @@
-GitHub Copilot isn’t just for IDEs—it’s now a powerful assistant in your terminal. **GitHub Copilot CLI** brings Copilot directly into the command line, where it can explain commands, suggest shell commands from natural language, and help you work safely and interactively with your files and projects.
+GitHub Copilot isn’t just for Integrated Development Environments(IDEs)—it’s now a powerful assistant in your terminal. **GitHub Copilot CLI** brings Copilot directly into the command line, where it can explain commands, suggest shell commands from natural language, and help you work safely and interactively with your files and projects.
 
-Copilot CLI uses GitHub authentication and runs independently from GitHub CLI, though it leverages your existing credentials. Whether you’re new to the command line or an experienced developer, Copilot CLI reduces guesswork and speeds up everyday workflows.
+Copilot CLI uses GitHub authentication and runs independently from GitHub CLI, though it uses your existing credentials. Whether you’re new to the command line or an experienced developer, Copilot CLI reduces guesswork and speeds up everyday workflows.
 
 This unit covers:
 
@@ -29,11 +29,11 @@ Launch Copilot CLI in **interactive mode**:
 copilot
 ```
 
-You’ll see a welcome banner and a prompt:
+It displays see a welcome banner and a prompt:
 
 :::image type="content" source="../media/copilot-cli-banner.png" alt-text="Screenshot of Copilot interactive mode banner.":::
 
-On first launch, Copilot will ask whether you trust the files in the current folder. Copilot may read, modify, or execute files in this directory during the session, so only proceed in locations you trust. 
+On first launch, Copilot asks whether you trust the files in the current folder. Copilot may read, modify, or execute files in this directory during the session, so only proceed in locations you trust. 
 
 :::image type="content" source="../media/copilot-cli-trust-files.png" alt-text="Screenshot of Copilot interactive specify directory.":::
 
@@ -68,7 +68,7 @@ Slash commands are explicit session-control commands. Here are the most common o
 | `/model <model>`       | Select which AI model to use                          |         |                       |
 | `/theme [auto          | dark                                                  | light]` | Change terminal theme |
 | `/skills`              | Manage skills for enhanced capabilities               |         |                       |
-| `/mcp`                 | Manage MCP server configuration                       |         |                       |
+| `/mcp`                 | Manage Model Contect Protocol server configuration                       |         |                       |
 | `/list-dirs`           | Show allowed directories for file operations          |         |                       |
 | `/reset-allowed-tools` | Reset allowed tools list                              |         |                       |
 
@@ -93,18 +93,18 @@ Copilot will provide a detailed explanation.
 > Find and delete all .log files in my home folder
 ```
 
-Copilot will generate a safe command suggestion, and prompt you to execute it if you're satusfued with its suggestions.
+Copilot generates a command suggestion, and prompt you to execute it if you're satisfued with its suggestions.
 
 :::image type="content" source="../media/copilot-cli-suggest-command.png" alt-text="Screenshot of Copilot CLI suggesting a command in interactive mode.":::
 
 ### 3. Revise a suggestion
 
-After receiving a suggestion, you can type a follow up prompt to revise the suggested command:
+After receiving a suggestion, you can type a follow-up prompt to revise the suggested command:
 
 ```text
 > Include only files modified in the last 7 days
 ```
-:::image type="content" source="../media/copilot-cli-revise-suggestion.png" alt-text="Screenshot of Copilot CLI improving a suggestion based on the follow up prompt.":::
+:::image type="content" source="../media/copilot-cli-revise-suggestion.png" alt-text="Screenshot of Copilot CLI improving a suggestion based on the follow-up prompt.":::
 
 ### 4. Provide feedback
 
@@ -115,7 +115,7 @@ After a response or suggestion:
 ```
 :::image type="content" source="../media/copilot-cli-provide-feedback.png" alt-text="Screenshot of using the /feedack slash command in Copilot CLI interactive mode.":::
 
-Copilot will prompt you to choose the kind of feedback you want to send, then navigate you to the appropriate form to complete your feedack.
+Copilot prompts you to choose the kind of feedback you want to send, then navigate you to the appropriate form to complete your feedback.
 
 ### 5. Exit interactive mode
 
@@ -129,12 +129,12 @@ In Copilot CLI, configuration is handled via:
 
 1. **Slash commands** inside interactive mode
 
-   * `/model` — choose AI model
-   * `/theme` — change terminal theme
-   * `/skills` — manage enhanced capabilities
-   * `/reset-allowed-tools` — reset tools
-   * `/list-dirs` — view allowed directories
-   * `/mcp` — MCP server settings
+   * `/model` choose AI model
+   * `/theme` change terminal theme
+   * `/skills` manage enhanced capabilities
+   * `/reset-allowed-tools` reset tools
+   * `/list-dirs` view allowed directories
+   * `/mcp` MCP server settings
 
 2. **`copilot configure` command** (non-interactive mode)
 
