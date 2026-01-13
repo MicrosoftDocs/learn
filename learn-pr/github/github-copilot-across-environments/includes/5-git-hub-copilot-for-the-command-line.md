@@ -86,7 +86,6 @@ Copilot will provide a detailed explanation.
 
 :::image type="content" source="../media/copilot-explain-in-cli.png" alt-text="Screenshot of Copilot CLI explaining a command in interactive mode.":::
 
-
 ### 2. Suggest a command
 
 ```text
