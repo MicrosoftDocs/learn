@@ -1,90 +1,151 @@
-GitHub Copilot isn't just a tool for writing code in your favorite IDE; it’s also a powerful assistant that can help streamline your command-line workflows. By integrating with the GitHub CLI, Copilot can provide explanations for unfamiliar commands, suggest commands based on your needs, and even execute them on your behalf. Whether you're new to the command line or a seasoned user, Copilot can enhance your productivity by offering intelligent suggestions and simplifying complex tasks.
+GitHub Copilot isn’t just for IDEs—it’s now a powerful assistant in your terminal. **GitHub Copilot CLI** brings Copilot directly into the command line, where it can explain commands, suggest shell commands from natural language, and help you work safely and interactively with your files and projects.
+
+Copilot CLI uses GitHub authentication and runs independently from GitHub CLI, though it leverages your existing credentials. Whether you’re new to the command line or an experienced developer, Copilot CLI reduces guesswork and speeds up everyday workflows.
 
 This unit covers:
 
-- Guiding you through the common GitHub Copilot CLI commands,
-- Exploring configuration options enabling you to make the most of GitHub Copilot directly from your terminal. 
+* Installing and running GitHub Copilot CLI
+* Interactive sessions in the terminal
+* Slash commands and natural language input
+* Configuration and options
 
+## Installing and Launching Copilot CLI
 
-## Common commands
-Once you have Copilot set up in the CLI, here are some frequently used commands for interacting with it:
+Install via **Homebrew** on macOS and Linux:
 
-- **Getting command explanations**:
-   - If you're unsure about what a specific command does, you can ask Copilot to explain it. For instance:
+```bash
+brew install copilot-cli
+```
 
-     ```shell
-     gh copilot explain "sudo apt-get"
-     ```
+Or use the **official install script**:
 
-     :::image type="content" source="../media/copilot-explain-in-cli.png" alt-text="Screenshot of copilot explain in cli.":::
+```bash
+curl -fsSL https://gh.io/copilot-install | bash
+```
 
-     This command provides you with a detailed explanation of the provided command.
+Launch Copilot CLI in **interactive mode**:
 
-- **Getting command suggestions**:
-   - Need help with constructing a command? You can ask Copilot to suggest a command based on what you want to accomplish:
-     ```shell
-     gh copilot suggest "Undo the last commit"
-     ```
+```bash
+copilot
+```
 
-     :::image type="content" source="../media/copilot-suggest-in-cli.png" alt-text="Screenshot of copilot suggest in cli.":::
+You’ll see a welcome banner and a prompt:
 
-     Copilot starts an interactive session to clarify your request and suggest the best command.
+:::image type="content" source="../media/copilot-cli-banner.png" alt-text="Screenshot of copilot interactive mode banner.":::
 
-- **Executing suggested commands**:
-After receiving a suggestion, you can choose the `Execute command` option. This copies the command to your clipboard. You can also allow Copilot to execute commands on your behalf only if you configure the `ghcs` alias:
+You can now either:
 
-   ```
-   ghcs suggest "What command to see running docker containers"
-   ```
+* Type natural language directly:
 
-   :::image type="content" source="../media/executing-suggested-command-copilot-suggest-in-cli.png" lightbox="../media/executing-suggested-command-copilot-suggest-in-cli.png" alt-text="Screenshot of executing suggested command copilot suggest in cli.":::
+  ```
+  > Explain what `git reset --hard HEAD` does
+  > Find all .log files in my home folder and suggest a deletion command
+  ```
 
-- **Revise suggested command**:
-   To give GitHub Copilot CLI to rework or revise a command to make it better or more suited to your expectations, use the "Revise command" option along with your feedback.
+  :::image type="content" source="../media/copilot-cli-banner.png" alt-text="Screenshot of copilot interactive mode banner.":::
 
-   :::image type="content" source="../media/revising-suggested-command-copilot-suggest-in-cli.png" alt-text="Screenshot of revising suggested command copilot suggest in cli.":::
+  
+You can also use **slash commands** for actions like `/context`, and `/feedback`.
 
+  :::image type="content" source="../media/copilot-cli-banner.png" alt-text="Screenshot of copilot interactive mode banner.":::
 
-## Configuration options
+For **one-shot prompts** without entering full interactive mode:
 
-To make the most out of Copilot in the CLI, you may want to configure certain settings:
+```bash
+copilot -i "explain brew install git"
+copilot -i "suggest find large files and delete them"
+```
 
-- **Alias Configuration**:
-   If you want Copilot to execute commands on your behalf directly, you need to set up the `ghcs` alias. Using an alias allows you to bypass copying and pasting commands manually, and instead Copilot does it for you.
+## Slash Commands
 
-   To configure the `ghcs` alias, run the following commands:
+Inside interactive mode, Copilot CLI supports several slash commands:
 
-   For bash:
+| Slash Command        | Description                                           |
+| -------------------- | ----------------------------------------------------- |
+| `/help`              | Show available commands and options                   |
+| `/explain <command>` | Ask Copilot to explain any shell command              |
+| `/suggest <task>`    | Ask Copilot to suggest a shell command for a task     |
+| `/revise`            | Revise the last suggestion based on your instructions |
+| `/feedback`          | Submit feedback on a response or suggestion           |
+| `/exit`              | Exit interactive mode                                 |
 
-   ```
-   echo 'eval "$(gh copilot alias -- bash)"' >> ~/.bashrc
-   ```
+> 💡 **Tip:** You don’t always need a slash command—just typing your request in natural language works perfectly.
 
-   For PowerShell:
+## Example Workflows
 
-   ```
-   $GH_COPILOT_PROFILE = Join-Path -Path $(Split-Path -Path $PROFILE -Parent) -ChildPath "gh-copilot.ps1"
-   gh copilot alias -- pwsh | Out-File ( New-Item -Path $GH_COPILOT_PROFILE -Force )
-    echo ". `"$GH_COPILOT_PROFILE`"" >> $PROFILE
-   ```
+### 1. Explain a command
 
-   For Mac terminal or Zsh:
+```text
+> /explain git reset --hard HEAD
+```
 
-   ```
-   echo 'eval "$(gh copilot alias -- zsh)"' >> ~/.zshrc
-   ```
+or simply type:
 
-- **Feedback mechanism**:
-   Copilot encourages user feedback to improve its suggestions. You can rate the quality of a suggestion by selecting the `Rate response` option after Copilot provides you with a command.
+```text
+> Explain what `git reset --hard HEAD` does
+```
 
-   :::image type="content" source="../media/rating-suggested-command-copilot-suggest-in-cli.png" alt-text="Screenshot of rating suggested command copilot suggest in cli.":::
+Copilot will provide a detailed explanation.
 
-- **Organizational settings**:
-   If you're using Copilot within an organization your access to certain features may be governed by your organization's policies. Administrators can enable or disable Copilot's capabilities within the CLI.
+### 2. Suggest a command
 
-   For further customization and detailed configuration so you can optimize Copilot's functionality for your specific needs, refer to the [GitHub documentation](https://docs.github.com/en/copilot).
+```text
+> /suggest find and delete all .log files in the home directory
+```
 
-- **Data handling**:
-   GitHub Copilot CLI doesn't retain your prompts, but it keeps your usage analytics. You can configure whether you want GitHub Copilot to keep and use your usage data to improve the product. Enter the command ` gh copilot config` , select "Optional Usage Analytics", then select "No" if you want to opt out.
+or just type:
 
-   :::image type="content" source="../media/configure-usage-data-setting-in-cli.png" alt-text="Screenshot of configure usage data setting in cli.":::
+```text
+> Find and delete all .log files in my home folder
+```
+
+Copilot will generate a safe command suggestion.
+
+### 3. Revise a suggestion
+
+After receiving a suggestion:
+
+```text
+> /revise Include only files modified in the last 7 days
+```
+
+### 4. Provide feedback
+
+After a response or suggestion:
+
+```text
+> /feedback
+```
+
+Copilot will prompt you to rate the quality or provide comments.
+
+### 5. Exit interactive mode
+
+```text
+> /exit
+```
+
+## Configuration Options
+
+View or update Copilot CLI settings:
+
+```bash
+copilot configure
+```
+
+Options include:
+
+* **Feedback mechanism**: Use `/feedback` to rate responses.
+* **Data handling**: Opt out of optional usage analytics.
+* **Organizational settings**: Admins can manage CLI capabilities for enterprise users.
+
+Refer to the [official GitHub Copilot CLI documentation](https://github.com/github/copilot-cli) for full configuration options.
+
+### Tips for Effective Use
+
+* Use **interactive mode (`copilot`)** for exploratory tasks.
+* Use **one-shot mode (`copilot -i`)** for quick answers.
+* **Natural language input works**—you don’t always need slash commands.
+* Always review commands before execution.
+* Combine Copilot CLI with GitHub CLI (`gh`) for repository and issue management.
+* Use **slash commands** when you want structured actions or feedback.
