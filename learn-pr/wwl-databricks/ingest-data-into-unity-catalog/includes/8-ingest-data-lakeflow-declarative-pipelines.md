@@ -1,10 +1,10 @@
-When you need to ingest data from multiple sources with automated orchestration, schema management, and exactly-once processing guarantees, Lakeflow Declarative Pipelines provides a declarative framework for the entire process. Rather than writing complex imperative code to manage streaming state and dependencies, you define what you want, and the pipeline handles how to execute it.
+When you need to ingest data from multiple sources with automated orchestration, schema management, and exactly-once processing guarantees, Lakeflow Spark Declarative Pipelines provides a declarative framework for the entire process. Rather than writing complex imperative code to manage streaming state and dependencies, you define what you want, and the pipeline handles how to execute it.
 
-## Understand Lakeflow Declarative Pipelines for ingestion
+## Understand Lakeflow Spark Declarative Pipelines for ingestion
 
-Lakeflow Declarative Pipelines is a framework for building batch and streaming data pipelines using SQL or Python. You declare the structure of your data transformations, and the pipeline automatically handles orchestration, retries, and incremental processing.
+Lakeflow Spark Declarative Pipelines is a framework for building batch and streaming data pipelines using SQL or Python. You declare the structure of your data transformations, and the pipeline automatically handles orchestration, retries, and incremental processing.
 
-:::image type="content" source="../media/8-understand-lakeflow-declarative-pipelines-ingestion.png" alt-text="Diagram explaining Lakeflow Declarative Pipelines for ingestion." border="false" lightbox="../media/8-understand-lakeflow-declarative-pipelines-ingestion.png":::
+:::image type="content" source="../media/8-understand-lakeflow-declarative-pipelines-ingestion.png" alt-text="Diagram explaining Lakeflow Spark Declarative Pipelines for ingestion." border="false" lightbox="../media/8-understand-lakeflow-declarative-pipelines-ingestion.png":::
 
 For data ingestion, you typically create **streaming tables** as targets. A streaming table is a Delta table with built-in support for streaming data. Each row from the source is processed exactly once, making streaming tables ideal for append-only ingestion workloads where data continuously arrives.
 
@@ -100,7 +100,7 @@ def orders_east_flow():
 
 ## Ingest from message buses
 
-Lakeflow Declarative Pipelines supports ingestion from message buses like Apache Kafka, Azure Event Hubs, Amazon Kinesis, and Google Pub/Sub. For Azure environments, Event Hubs is commonly used and provides a Kafka-compatible endpoint.
+Lakeflow Spark Declarative Pipelines supports ingestion from message buses like Apache Kafka, Azure Event Hubs, Amazon Kinesis, and Google Pub/Sub. For Azure environments, Event Hubs is commonly used and provides a Kafka-compatible endpoint.
 
 The following example reads from a Kafka topic:
 
@@ -144,7 +144,7 @@ Store sensitive connection information in Azure Databricks secrets rather than h
 
 ## Handle schema inference and evolution
 
-When ingesting semi-structured data like JSON, you often don't know the exact schema in advance. Lakeflow Declarative Pipelines provides automatic schema inference and evolution through the `from_json` function.
+When ingesting semi-structured data like JSON, you often don't know the exact schema in advance. Lakeflow Spark Declarative Pipelines provides automatic schema inference and evolution through the `from_json` function.
 
 ```sql
 CREATE STREAMING TABLE events_parsed AS

@@ -28,7 +28,7 @@ https://mystorageaccount.blob.core.windows.net/mycontainer/mynamespace/myeventhu
 
 ## Scaling to throughput units
 
-Event Hubs traffic is controlled by throughput units. A single throughput unit allows 1 MB per second or 1,000 events per second of ingress and twice that amount of egress. Standard Event Hubs can be configured with 1-20 throughput units, and you can purchase more with a quota increase support request. Usage beyond your purchased throughput units is throttled. Event Hubs Capture copies data directly from the internal Event Hubs storage, bypassing throughput unit egress quotas and saving your egress for other processing readers, such as Stream Analytics or Spark.
+Event Hubs traffic is controlled by throughput units (TUs). Each TU provides up to 1 MB per second of ingress (or roughly 1,000 1‑KB events per second) and up to 2 MB per second of egress (or 4,096 events per second). Standard Event Hubs can be configured with 1-40 throughput units per namespace; you can enable auto-inflate to scale up to a configured maximum or request a higher quota. Usage beyond your purchased TUs is throttled. Event Hubs Capture copies data directly from internal Event Hubs storage, bypassing TU egress and preserving egress for other processing readers, such as Stream Analytics or Spark.
 
 Once configured, Event Hubs Capture runs automatically when you send your first event, and continues running. To make it easier for your downstream processing to know that the process is working, Event Hubs writes empty files when there's no data. This process provides a predictable cadence and marker that can feed your batch processors.
 
