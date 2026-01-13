@@ -13,7 +13,7 @@ The Windows Resiliency Initiative is a Microsoft initiative dedicated to strengt
 **When to use it:**
 Ideal for organizations managing large fleets of devices where downtime impacts productivity, especially in hybrid work environments where IT can't physically access every device
 
-![Icons showing Quick Machine Recovery, Point-in-Time Restore, and Cloud Rebuild recovery options.](../media/windows-recovery-capabilities.svg)
+![Diagram showing Quick Machine Recovery, Point-in-Time Restore, and Cloud Rebuild recovery options.](../media/recovery-capability-use-cases.svg)
 
 **Example use-case:**  
 A global enterprise experiences a widespread boot failure after a critical update. Using Quick Machine Recovery and Intune, IT administrators remotely trigger automated fixes and restore devices without requiring employees to return hardware to the office.
@@ -28,7 +28,7 @@ A global enterprise experiences a widespread boot failure after a critical updat
 - **Point-in-Time Restore:** Rolls back a PC to a previous state without performing a full reimage. This feature saves time and reduces disruption by restoring the system to a known good configuration. Point-in-Time Restore and Intune Recovery require Intune enrollment and proper policy configuration.
 - **Cloud Rebuild:** Enables IT teams to rebuild devices remotely—even if they can't boot. The device downloads installation files and drivers from the cloud, then reinstalls Windows to start fresh. Cloud Rebuild requires network connectivity and access to cloud-based installation files.
 
-![Table of Windows recovery options: Intune Recovery, Point-in-Time Restore, Cloud Rebuild.](../media/table-2.svg)
+![Table of Windows recovery options: Intune Recovery, Point-in-Time Restore, Cloud Rebuild.](../media/windows-recovery-capabilities.svg)
 
 **When to use it:**  
 These features are ideal for organizations with distributed workforces or remote employees where physical access to devices is limited. They help maintain productivity and reduce downtime during incidents such as failed updates or malware infections.

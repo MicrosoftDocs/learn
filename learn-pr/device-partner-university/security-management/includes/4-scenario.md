@@ -24,7 +24,7 @@ To address these challenges, think about some of the features you learned about 
 > - *Consideration:* Passwordless authentication helps reduce phishing and credential theft. Which feature provides that capability?
 > - *Solution:* Windows Hello for Business uses biometrics and passkeys for secure, passwordless sign-in.
 
-![Flowchart mapping challenges like high IT complexity and security risk to potential Windows 11 solutions.](../media/table-3.svg)
+![Flowchart mapping challenges like high IT complexity and security risk to potential Windows 11 solutions.](../media/windows-solutions.svg)
 
 ### Optional challenge
 
