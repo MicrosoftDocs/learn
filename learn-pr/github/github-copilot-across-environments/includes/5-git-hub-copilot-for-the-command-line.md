@@ -9,7 +9,7 @@ This unit covers:
 * Slash commands and natural language input
 * Configuration and options
 
-## Installing and Launching Copilot CLI
+## Installing and launching Copilot CLI
 
 Install via **Homebrew** on macOS and Linux:
 
@@ -53,7 +53,7 @@ copilot -i "explain brew install git"
 copilot -i "suggest find large files and delete them"
 ```
 
-## Common Slash Commands
+## Common slash commands
 
 Slash commands are explicit session-control commands. Here are the most common ones:
 
@@ -74,7 +74,7 @@ Slash commands are explicit session-control commands. Here are the most common o
 
 > Slash commands cannot be replaced with natural language prompts. They are the only way to control session settings and configuration.
 
-## Example Workflows
+## Example workflows
 
 ### 1. Explain a command
 
@@ -92,7 +92,7 @@ Copilot will provide a detailed explanation.
 > Find and delete all .log files in my home folder
 ```
 
-Copilot generates a command suggestion, and prompt you to execute it if you're satisfued with its suggestions.
+Copilot generates a command suggestion, and prompt you to execute it if you're satisfied with its suggestions.
 
 :::image type="content" source="../media/copilot-cli-suggest-command.png" alt-text="Screenshot of Copilot CLI suggesting a command in interactive mode.":::
 
@@ -122,7 +122,7 @@ Copilot prompts you to choose the kind of feedback you want to send, then naviga
 > /exit
 ```
 
-## Configuration Options
+## Configuration options
 
 In Copilot CLI, configuration is handled via:
 
@@ -146,7 +146,7 @@ In Copilot CLI, configuration is handled via:
 
 Refer to the [official GitHub Copilot CLI documentation](https://github.com/github/copilot-cli) for full configuration options.
 
-### Tips for Effective Use
+### Tips for effective use
 
 * Use **interactive mode (`copilot`)** for exploratory tasks.
 * Use **one-shot mode (`copilot -i`)** for quick answers.
