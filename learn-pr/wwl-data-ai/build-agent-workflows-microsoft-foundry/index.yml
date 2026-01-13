@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.wwl.build-agent-workflows-ms-foundry
+uid: learn.wwl.build-agent-workflows-microsoft-foundry
 metadata:
   title: Get started with building agent-driven workflows using Microsoft Foundry
   description: Workflows enable you to orchestrate AI agents and other components to create intelligent applications. Learn how to build and manage workflows using Microsoft Foundry.
@@ -35,17 +35,17 @@ products: # see product taxonomy https://review.learn.microsoft.com/help/contrib
 subjects: # see subject taxonomy https://review.learn.microsoft.com/help/contribute/metadata-taxonomies?branch=main#subject
   - artificial-intelligence
 units:
-- learn.wwl.build-agent-workflows-ms-foundry.introduction
-- learn.wwl.build-agent-workflows-ms-foundry.understand-workflows
-- learn.wwl.build-agent-workflows-ms-foundry.identify-workflow-patterns
-- learn.wwl.build-agent-workflows-ms-foundry.create-workflows-ms-foundry
-- learn.wwl.build-agent-workflows-ms-foundry.add-agents-to-workflow
-- learn.wwl.build-agent-workflows-ms-foundry.apply-power-fx
-- learn.wwl.build-agent-workflows-ms-foundry.maintain-workflows
-- learn.wwl.build-agent-workflows-ms-foundry.exercise
-- learn.wwl.build-agent-workflows-ms-foundry.knowledge-check
-- learn.wwl.build-agent-workflows-ms-foundry.summary
+- learn.wwl.build-agent-workflows-microsoft-foundry.introduction
+- learn.wwl.build-agent-workflows-microsoft-foundry.understand-workflows
+- learn.wwl.build-agent-workflows-microsoft-foundry.identify-workflow-patterns
+- learn.wwl.build-agent-workflows-microsoft-foundry.create-workflows-microsoft-foundry
+- learn.wwl.build-agent-workflows-microsoft-foundry.add-agents-to-workflow
+- learn.wwl.build-agent-workflows-microsoft-foundry.apply-power-fx
+- learn.wwl.build-agent-workflows-microsoft-foundry.maintain-workflows
+- learn.wwl.build-agent-workflows-microsoft-foundry.exercise
+- learn.wwl.build-agent-workflows-microsoft-foundry.knowledge-check
+- learn.wwl.build-agent-workflows-microsoft-foundry.summary
 badge:
-  uid: learn.wwl.build-agent-workflows-ms-foundry.badge
+  uid: learn.wwl.build-agent-workflows-microsoft-foundry.badge
 
 

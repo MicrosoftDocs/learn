@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.build-agent-workflows-ms-foundry.identify-workflow-patterns
-title: Identify workflow patterns
+uid: learn.wwl.build-agent-workflows-microsoft-foundry.identify-workflow-patterns
+title: Identify Workflow Patterns
 metadata:
   title: Identify workflow patterns
   description: Recognize common workflow patterns in Microsoft Foundry.

@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.build-agent-workflows-ms-foundry.add-agents-to-workflow
-title: Add agents to a workflow
+uid: learn.wwl.build-agent-workflows-microsoft-foundry.add-agents-to-workflow
+title: Add Agents to a Workflow
 metadata:
   title: Add agents to a workflow
   description: Learn how to add and configure agents in a workflow in Microsoft Foundry.

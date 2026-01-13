@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.build-agent-workflows-ms-foundry.understand-workflows
-title: Understand workflows
+uid: learn.wwl.build-agent-workflows-microsoft-foundry.understand-workflows
+title: Understand Workflows
 metadata:
   title: Understand workflows
   description: Learn the fundamentals of building agent-driven workflows using Microsoft Foundry.

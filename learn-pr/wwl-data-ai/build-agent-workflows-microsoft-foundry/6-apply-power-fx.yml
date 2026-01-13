@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.build-agent-workflows-ms-foundry.apply-power-fx
-title: Apply Power Fx in workflows
+uid: learn.wwl.build-agent-workflows-microsoft-foundry.apply-power-fx
+title: Apply Power Fx in Workflows
 metadata:
   title: Apply Power Fx in workflows
   description: Learn how to apply Power Fx expressions in workflows in Microsoft Foundry.
