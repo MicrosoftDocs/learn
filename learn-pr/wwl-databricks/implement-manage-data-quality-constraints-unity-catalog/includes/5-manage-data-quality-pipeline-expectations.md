@@ -1,4 +1,4 @@
-Data quality issues can disrupt downstream analytics and erode trust in your data. When invalid records slip into production tables, they might cause report failures, incorrect business decisions, or compliance violations. Pipeline expectations in Lakeflow Declarative Pipelines give you a way to define quality rules that run automatically as data flows through your pipeline.
+Data quality issues can disrupt downstream analytics and erode trust in your data. When invalid records slip into production tables, they might cause report failures, incorrect business decisions, or compliance violations. Pipeline expectations in Lakeflow Spark Declarative Pipelines give you a way to define quality rules that run automatically as data flows through your pipeline.
 
 With expectations, you specify what valid data looks like using SQL constraints. The pipeline then checks every record against these rules and takes the action you configure—logging the issue, dropping the record, or failing the update entirely.
 
@@ -142,6 +142,6 @@ the expectation. Violated expectations: 'temperature_in_valid_range'.
 Input data: '{"id":"TEMP_001","temperature":-500,"timestamp_ms":"1710498600"}'.
 ```
 
-You can also query expectation metrics programmatically through the Lakeflow Declarative Pipelines event log. This approach enables you to build custom dashboards or trigger alerts based on data quality thresholds.
+You can also query expectation metrics programmatically through the Lakeflow Spark Declarative Pipelines event log. This approach enables you to build custom dashboards or trigger alerts based on data quality thresholds.
 
 Understanding when to use expectations sets you up to build pipelines that catch data quality issues before they affect downstream consumers. With the right combination of constraints and actions, you create a reliable data foundation for your analytics workloads.

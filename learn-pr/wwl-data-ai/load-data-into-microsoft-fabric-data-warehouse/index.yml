@@ -4,8 +4,8 @@ metadata:
   title: Load data into a Microsoft Fabric data warehouse
   description: Explore the process of loading data into a warehouse in Microsoft Fabric.
   ms.date: 5/15/2025
-  author: JulianePadrao
-  ms.author: jupadrao
+  author: theresa-i
+  ms.author: theresai
   ms.topic: module-standard-task-based
   ms.service: fabric
   ai-usage: ai-assisted

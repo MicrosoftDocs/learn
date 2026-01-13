@@ -1,0 +1,40 @@
+### YamlMime:LearningPath
+uid: learn.wwl.ai-in-special-education
+metadata:
+  title: AI in Special Education
+  description: This course supports educators in exploring how Microsoft AI tools can be thoughtfully used in special education environments to reduce administrative demands, strengthen accessibility, and support clear communication with families. Throughout the learning path, responsible use of AI, privacy, and transparency are emphasized so educators can determine when and how AI fits into their practice in ways that align with student needs and professional values.
+  ms.date: 12/22/2025
+  author: Randall-Knapp
+  ms.author: rknapp
+  ms.topic: learning-path
+title: AI in special education
+summary: |
+  This course supports educators in exploring how Microsoft AI tools can be thoughtfully used in special education environments to reduce administrative demands, strengthen accessibility, and support clear communication with families. Throughout the learning path, responsible use of AI, privacy, and transparency are emphasized so educators can determine when and how AI fits into their practice in ways that align with student needs and professional values.
+  
+  After completing this learning path, educators will be able to:
+  - Explain how AI tools can support inclusive, accessible learning experiences while keeping educator expertise and decision‑making central.
+  - Identify ways AI can streamline administrative and documentation tasks to reduce educator workload and reclaim time for instruction and collaboration.
+  - Use AI features to communicate clearly and accessibly with families, including multilingual learners.
+  - Apply Microsoft AI tools with professional judgment, educator oversight, and attention to privacy, compliance, and responsible use.
+prerequisites: None
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- higher-ed-educator
+- school-leader
+products:
+- m365
+- microsoft-365-copilot
+- office-teams
+- office-powerpoint
+- office-onenote
+- office-word
+subjects:
+- artificial-intelligence
+- generative-ai
+modules:
+- learn.wwl.introduction-ai-special-education
+- learn.philanthropies.apply-responsible-ai-principles
+trophy:
+  uid: learn.wwl.ai-in-special-education.trophy

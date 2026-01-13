@@ -71,7 +71,7 @@ quiz:
     - content: "The new columns are captured in the _rescued_data column without modifying the schema"
       isCorrect: false
       explanation: "Incorrect. This behavior describes the rescue mode, not the addNewColumns mode."
-  - content: "What is the primary benefit of using explicit flows in Lakeflow Declarative Pipelines to ingest data from multiple sources into a single table?"
+  - content: "What is the primary benefit of using explicit flows in Lakeflow Spark Declarative Pipelines to ingest data from multiple sources into a single table?"
     choices:
     - content: "Explicit flows process data faster than UNION-based approaches"
       isCorrect: false

@@ -12,7 +12,7 @@ Every job requires at minimum:
 - A **compute resource** to execute the task
 - A **unique name** to identify the job
 
-Tasks within a job can execute notebooks, Python scripts, SQL queries, or Lakeflow Declarative Pipelines. You configure each task type differently, but all tasks follow the same pattern: define what to run, specify where to run it, and configure any required parameters.
+Tasks within a job can execute notebooks, Python scripts, SQL queries, or Lakeflow Spark Declarative Pipelines. You configure each task type differently, but all tasks follow the same pattern: define what to run, specify where to run it, and configure any required parameters.
 
 ## Create a job and add tasks
 
