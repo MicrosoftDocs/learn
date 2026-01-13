@@ -37,7 +37,7 @@ On first launch, Copilot will ask whether you trust the files in the current fol
 
 :::image type="content" source="../media/copilot-cli-trsut-files.png" alt-text="Screenshot of copilot interactive specify directory.":::
 
-You can use the `@` to specify a file you want to work with
+You can use the `@` to select a specific file you want to work with as context.
 
 :::image type="content" source="../media/copilot-cli-trsut-files.png" alt-text="Screenshot of copilot interactive specify directory.":::
 
