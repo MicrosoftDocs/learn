@@ -37,12 +37,12 @@ subjects:
 - artificial-intelligence
 - generative-ai
 units:
-- learn.wwl.introduction-ai-special-education.1-introduction
-- learn.wwl.introduction-ai-special-education.2-role-ai-special-education
-- learn.wwl.introduction-ai-special-education.3-benefits-challenges-ai
-- learn.wwl.introduction-ai-special-education.4-responsible-use-ai-education
-- learn.wwl.introduction-ai-special-education.5-exercise-reflection
-- learn.wwl.introduction-ai-special-education.6-knowledge-check
-- learn.wwl.introduction-ai-special-education.7-summary
+- learn.wwl.introduction-ai-special-education.introduction
+- learn.wwl.introduction-ai-special-education.role-ai-special-education
+- learn.wwl.introduction-ai-special-education.benefits-challenges-ai
+- learn.wwl.introduction-ai-special-education.responsible-use-ai-education
+- learn.wwl.introduction-ai-special-education.exercise-reflection
+- learn.wwl.introduction-ai-special-education.knowledge-check
+- learn.wwl.introduction-ai-special-education.summary
 badge:
   uid: learn.wwl.introduction-ai-special-education.badge
