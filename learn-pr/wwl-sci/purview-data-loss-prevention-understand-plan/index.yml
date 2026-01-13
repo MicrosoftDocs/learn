@@ -3,7 +3,7 @@ uid: learn.wwl.purview-data-loss-prevention-understand-plan
 metadata:
   title: Understand and plan data loss prevention
   description: Understand and plan data loss prevention.
-  ms.date: 01/08/2026
+  ms.date: 01/13/2026
   author: wwlpublish
   ms.author: riswinto
   ms.topic: module
@@ -11,21 +11,21 @@ metadata:
   ms.service: purview
 title: Understand and plan data loss prevention
 summary: |
-  Microsoft Purview and Microsoft Defender XDR help organizations detect potential data loss risks and respond quickly to protect sensitive information. Investigation and response activities include reviewing DLP alerts, applying appropriate remediation actions, and documenting findings in a structured and consistent way.
+  Effective data loss prevention (DLP) starts with understanding how risk is evaluated and how protection decisions are applied. This module focuses on the concepts and planning considerations that help organizations design DLP policies that protect sensitive data without disrupting everyday work.
 abstract: |
   In this module you learn to:
-  - Investigate DLP alerts in Microsoft Purview and Microsoft Defender XDR
-  - Review alert details, related user activities, and matched events
-  - Apply remediation actions and update alert or incident statuses
-  - Assign ownership, document decisions, and support accountability
-  - Recognize when DLP policies might need adjustments based on investigation outcomes
+  - Explain what data loss prevention is designed to address and where it fits in a data security strategy
+  - Describe how DLP evaluates content, context, and user actions
+  - Identify where DLP can apply protection and how enforcement differs by location
+  - Plan DLP policies based on risk, scope, and operational considerations
+  - Use simulation mode to validate policy behavior before enforcement
+  - Recognize when advanced DLP controls can improve enforcement decisions
 prerequisites: |
-  - Basic understanding of Microsoft Purview Data Loss Prevention (DLP) policies
-  - Familiarity with Microsoft Purview portal and Microsoft Defender portal
-  - Awareness of how DLP policies are created and configured
-iconUrl: /training/achievements/respond-to-data-loss-prevention-alerts-in-microsoft-365.svg
+  - Familiarity with basic data security concepts
+  - General awareness of Microsoft Purview as a data security platform
+iconUrl: /training/achievements/generic-badge.svg
 levels:
-- intermediate
+- beginner
 roles:
 - administrator
 - risk-practitioner

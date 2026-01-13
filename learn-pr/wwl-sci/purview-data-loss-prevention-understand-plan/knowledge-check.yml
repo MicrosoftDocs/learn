@@ -4,7 +4,7 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: Knowledge check. 
-  ms.date: 01/08/2026
+  ms.date: 01/13/2026
   author: wwlpublish
   ms.author: riswinto
   ms.topic: unit
@@ -12,64 +12,65 @@ metadata:
 durationInMinutes: 5
 content: |
 quiz:
-    title: Check your knowledge
-    questions:
-    - content: "Your company is in the initial stages of planning data loss prevention (DLP) policies. You need to involve multiple departments to ensure comprehensive coverage. Which stakeholders should be included in this process?"
-      choices:
-      - content: "Only the IT department, since they're responsible for implementing and maintaining the DLP policies."
-        isCorrect: false
-        explanation: "Incorrect: Relying only on IT might result in policies that don't cover legal and business needs."
-      - content: "Only the security team, since they're responsible for protecting sensitive data."
-        isCorrect: false
-        explanation: "Correct: The security team plays an important role, but other departments like legal and compliance also provide critical input to ensure data protection and compliance."
-      - content: "IT, security, compliance officers, legal teams, and business unit leaders to make sure that all types of sensitive data and business needs are covered."
-        isCorrect: true
-        explanation: "Correct: Involving stakeholders from multiple departments ensures that DLP policies cover a wide range of business needs, legal requirements, and data types."
+  title: Check your knowledge
+  questions:
 
-    - content: "Your organization is preparing to deploy a new DLP policy to protect sensitive customer data. You want to ensure the policy doesn't disrupt workflows by generating false positives. What should your first step be before fully enforcing the policy?"
-      choices:
-      - content: "Run the policy in simulation mode to evaluate its effectiveness without blocking any actions."
-        isCorrect: true
-        explanation: "Correct: Running the policy in simulation mode lets you see how it performs without affecting workflows, allowing you to adjust the policy if needed before full enforcement."
-      - content: "Turn the policy on immediately to start blocking any sensitive data sharing."
-        isCorrect: false
-        explanation: "Incorrect: Turning the policy on immediately without testing could disrupt workflows with false positives, causing unnecessary blocks."
-      - content: "Only apply the policy to a few key services and enforce it right away."
-        isCorrect: false
-        explanation: "Incorrect: Applying the policy to only a few services without simulation could still lead to unintended blocks and false positives."
+  - content: "An organization wants to reduce data loss during everyday collaboration without assuming malicious intent. Which situation best reflects the type of data loss scenarios data loss prevention (DLP) is most often used to address?"
+    choices:
+    - content: "A user intentionally stealing data for personal gain."
+      isCorrect: false
+      explanation: "Incorrect: DLP applies controls based on policy conditions, but it isn't designed to determine user intent or stop deliberate theft on its own."
+    - content: "Sensitive information being shared accidentally during normal work."
+      isCorrect: true
+      explanation: "Correct: Most data loss occurs accidentally during legitimate work, and DLP helps reduce risk in these common, non-malicious scenarios."
+    - content: "Unauthorized access caused by a misconfigured network firewall."
+      isCorrect: false
+      explanation: "Incorrect: Firewall misconfigurations are access control issues, not data usage scenarios DLP is intended to address."
 
-    - content: "Your company is using a DLP policy created from a  preconfigured template, but you notice it's generating too many false positives for internal communications. What should you do next?"
-      choices:
-      - content: "Delete the policy and create a new custom policy from scratch."
-        isCorrect: false
-        explanation: "Incorrect: Deleting the policy and starting from scratch isn't necessary. Adjusting the policy conditions would be more efficient."
-      - content: "Turn off the policy to prevent any further disruptions to internal workflows."
-        isCorrect: false
-        explanation: "Incorrect: Turning off the policy removes important protections, which could lead to sensitive data being exposed."
-      - content: "Modify the policy to exclude internal domains from being flagged for sensitive data sharing."
-        isCorrect: true
-        explanation: "Correct: Excluding internal domains allows the DLP policy to focus on external sharing of sensitive data while avoiding unnecessary flags for internal communications."
+  - content: "When DLP evaluates whether an action puts data at risk, which combination of signals is most important?"
+    choices:
+    - content: "The sensitivity of the data, the context of the action, and what is being done with the data."
+      isCorrect: true
+      explanation: "Correct: DLP decisions are based on content, context, and action evaluated together."
+    - content: "Where the data is stored and how long it has existed."
+      isCorrect: false
+      explanation: "Incorrect: Storage location and age alone don't determine risk."
+    - content: "The user's department and license level."
+      isCorrect: false
+      explanation: "Incorrect: Organizational details don't directly determine DLP enforcement decisions."
 
-    - content: "Your company is setting up a DLP policy with Adaptive Protection for Microsoft Teams and Exchange. Users with 'Minor Risk' levels need some oversight but shouldn't face harsh restrictions. How should you configure the policy?"
-      choices:
-      - content: "Apply the same DLP rules for 'Minor Risk' users as for 'Elevated Risk' users, to be safe."
-        isCorrect: false
-        explanation: "Incorrect: Treating 'Minor Risk' users the same as 'Elevated Risk' users wouldn't reflect their lower risk level and would impose too many restrictions."
-      - content: "Allow sharing of sensitive data but audit all activities for 'Minor Risk' users."
-        isCorrect: true
-        explanation: "Correct: For 'Minor Risk' users, allowing sensitive data sharing while auditing their activities provides oversight without being overly restrictive."
-      - content: "Block all sensitive data sharing for 'Minor Risk' users to ensure safety."
-        isCorrect: false
-        explanation: "Incorrect: Blocking all sensitive data sharing for minor risk users is unnecessary and too restrictive, which could disrupt their work."
+  - content: "Why should planning DLP policies be treated as a design exercise rather than a configuration task?"
+    choices:
+    - content: "Because DLP policies require custom scripting before they can be enforced."
+      isCorrect: false
+      explanation: "Incorrect: DLP planning isn't about scripting or technical complexity."
+    - content: "Because planning focuses on risk, scope, and how policies affect real work."
+      isCorrect: true
+      explanation: "Correct: Effective DLP planning requires intentional decisions about scope and behavior."
+    - content: "Because policies behave the same way across all locations."
+      isCorrect: false
+      explanation: "Incorrect: Enforcement can differ by location, which makes design decisions important."
 
-    - content: "Your organization has been using the DLP Alerts dashboard to monitor policy violations. You need more detailed insights into how data is being shared, including specific actions like copying or printing sensitive data. What tool would be more appropriate for this task?"
-      choices:
-      - content: "Use Activity Explorer to track detailed user actions and review how sensitive data is being handled across the organization."
-        isCorrect: true
-        explanation: "Correct: Activity Explorer provides more granular details on user actions, such as copying or printing sensitive data, giving you deeper insights than the DLP Alerts Dashboard."
-      - content: "Rely only on DLP Alerts dashboard to manage all activities involving sensitive data."
-        isCorrect: false
-        explanation: "Incorrect: While the DLP Alerts dashboard tracks policy violations, it doesn't provide the detailed activity logs that Activity Explorer does."
-      - content: "Turn off DLP alerts to reduce the number of notifications and focus only on major incidents."
-        isCorrect: false
-        explanation: "Incorrect: Turning off DLP alerts removes your ability to track violations and might cause you to miss critical incidents involving sensitive data."
+  - content: "An organization wants to understand how a DLP policy would behave without interrupting users. What approach best supports this goal?"
+    choices:
+    - content: "Enable the policy with blocking actions for a small pilot group."
+      isCorrect: false
+      explanation: "Incorrect: Blocking actions can still disrupt work, even for a pilot group."
+    - content: "Apply the policy only to low-risk data types."
+      isCorrect: false
+      explanation: "Incorrect: Limiting data types doesn't validate how the policy behaves overall."
+    - content: "Run the policy in simulation mode and review the results."
+      isCorrect: true
+      explanation: "Correct: Simulation mode evaluates policy behavior without enforcing actions."
+
+  - content: "When should advanced DLP controls be considered?"
+    choices:
+    - content: "When basic DLP controls clearly fail to protect any sensitive data."
+      isCorrect: false
+      explanation: "Incorrect: Advanced controls don't replace basic DLP functionality."
+    - content: "When adding behavioral context clearly improves enforcement decisions."
+      isCorrect: true
+      explanation: "Correct: Advanced controls are appropriate when added context improves enforcement accuracy in more complex scenarios."
+    - content: "When an organization wants to enable every available DLP feature."
+      isCorrect: false
+      explanation: "Incorrect: Enabling more controls doesn't automatically improve outcomes."

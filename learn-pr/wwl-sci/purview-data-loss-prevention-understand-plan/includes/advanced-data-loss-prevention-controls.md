@@ -25,7 +25,7 @@ Some environments present patterns that are harder to address with content-based
 
 Use the tabs to review each scenario and consider whether basic DLP is sufficient or whether added context would improve enforcement decisions.
 
-:::image type="content" border="false" source="../media/risk-patterns.png" alt-text="Screenshot showing CopilotInteraction selected under Record types." lightbox="../media/risk-patterns.png":::
+:::image type="content" border="false" source="../media/risk-patterns.png" alt-text="Diagram showing three DLP risk patterns: stable behavior, behavior that changes over time, and role-dependent context." lightbox="../media/risk-patterns.png":::
 
 ## [Predictable risk](#tab/predictable-risk)
 

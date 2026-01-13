@@ -2,7 +2,7 @@ Sensitive data moves constantly across email, collaboration tools, endpoints, br
 
 Traditional security controls struggle with this problem. Network boundaries matter less, data lives in many locations, and sensitive information is often shared with valid business context. Preventing data loss requires understanding **what the data is**, **where it moves**, and **which actions create risk**.
 
-:::image type="content" border="false" source="../media/data-loss-prevention-data-flow.png" alt-text="Screenshot showing CopilotInteraction selected under Record types." lightbox="../media/data-loss-prevention-data-flow.png":::
+:::image type="content" border="false" source="../media/data-loss-prevention-data-flow.png" alt-text="Diagram showing data evaluated at the point of action across email, collaboration, devices, browsers, network, and AI services." lightbox="../media/data-loss-prevention-data-flow.png":::
 
 Data loss prevention (DLP) addresses this challenge by evaluating content and context as data is created, shared, or moved. Instead of focusing only on access, DLP focuses on **the data itself and the action being taken**, which allows organizations to reduce risk without blocking normal work. At a high level, DLP helps organizations detect and respond to risky actions. Decisions are based on what the data is and how it's used.
 
