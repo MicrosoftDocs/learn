@@ -1,6 +1,6 @@
 Real-time conversations can exclude families who speak different languages or parents with disabilities, leading to misunderstandings and disengagement. Inclusive meetings foster collaboration and confidence. Educators should guide families on enabling Live Captions in Microsoft Teams, which must be turned on individually by each participant. 
 
-![Screenshot showing how to turn on live captions option shown within the Teams menu](../media/turn-live-captions.png)
+![Screenshot showing how to turn on live captions option shown within the Teams menu.](../media/turn-live-captions.png)
 
 ## Steps for families during a meeting:
 
