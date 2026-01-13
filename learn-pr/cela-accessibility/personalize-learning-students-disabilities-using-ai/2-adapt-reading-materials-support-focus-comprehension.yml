@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.use-ai-personalize-learning-students-disabilities.adapt-reading-materials-support-focus-comprehension
+title: "Adapt reading materials to support focus and comprehension"
+metadata:
+  title: "Adapt Reading Materials to Support Focus and Comprehension"
+  description: "Learn how to adapt reading materials for students with ADHD and dyslexia. Use Copilot and Immersive Reader to boost accessibility and comprehension."
+  ms.date: 01/09/2026
+  author: Randall-Knapp
+  ms.author: erzelman
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-adapt-reading-materials-support-focus-comprehension.md)]
