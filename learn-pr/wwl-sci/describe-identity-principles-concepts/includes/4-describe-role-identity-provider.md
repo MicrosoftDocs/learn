@@ -3,7 +3,7 @@
 
 With modern authentication, all services, including all authentication services, are supplied by a central identity provider. Information that's used to authenticate the user with the server is stored and managed centrally by the identity provider.
 
-With a central identity provider, organizations can establish authentication and authorization policies, monitor user behavior, identify suspicious activities, and reduce malicious attacks.  
+With a central identity provider, organizations can establish authentication and authorization policies, monitor user behavior, identify suspicious activities, and reduce malicious attacks. 
 
 Watch this video for more information about modern authentication and how it works with a central identity provider.
 
@@ -20,9 +20,9 @@ At a high level:
 
 The server validates the security token through its *trust relationship* with the identity provider. By using the security token and the information that's contained within it, the user or application accesses the required resources on the server. In this scenario, the token and the information it contains is stored and managed by the identity provider. The centralized identity provider is supplying the authentication service.
 
-Microsoft Entra ID is an example of a cloud-based identity provider.  Other examples include Google, Amazon, LinkedIn, and GitHub.
+Microsoft Entra ID is an example of a cloud-based identity provider. Other examples include Google, Amazon, LinkedIn, and GitHub.
 
 ### Single sign-on
 
-Another fundamental capability of an identity provider and “modern authentication” is the support for single sign-on (SSO). With SSO, the user logs in once and that credential is used to access multiple applications or resources.
+Another fundamental capability of an identity provider and "modern authentication" is the support for single sign-on (SSO). With SSO, the user logs in once and that credential is used to access multiple applications or resources.
 SSO can happen within a single identity provider (one sign-in, many apps). When two different identity providers trust each other to authenticate users across boundaries, that's called **federation**.
