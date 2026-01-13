@@ -57,20 +57,20 @@ copilot -i "suggest find large files and delete them"
 
 Slash commands are explicit session-control commands. Here are the most common ones:
 
-| Slash Command          | Description                                           |         |                       |
-| ---------------------- | ----------------------------------------------------- | ------- | --------------------- |
-| `/help`                | Show available commands and options                   |         |                       |
-| `/explain <command>`   | Ask Copilot to explain any shell command              |         |                       |
-| `/suggest <task>`      | Ask Copilot to suggest a shell command for a task     |         |                       |
-| `/revise`              | Revise the last suggestion based on your instructions |         |                       |
-| `/feedback`            | Submit feedback on a response or suggestion           |         |                       |
-| `/exit`                | Exit interactive mode                                 |         |                       |
-| `/model <model>`       | Select which AI model to use                          |         |                       |
-| `/theme [auto          | dark                                                  | light]` | Change terminal theme |
-| `/skills`              | Manage skills for enhanced capabilities               |         |                       |
-| `/mcp`                 | Manage Model Contect Protocol server configuration                       |         |                       |
-| `/list-dirs`           | Show allowed directories for file operations          |         |                       |
-| `/reset-allowed-tools` | Reset allowed tools list                              |         |                       |
+| Slash Command          | Description                                           |
+| ---------------------- | ----------------------------------------------------- |
+| `/help`                | Show available commands and options                   |
+| `/explain <command>`   | Ask Copilot to explain any shell command              |
+| `/suggest <task>`      | Ask Copilot to suggest a shell command for a task     |
+| `/revise`              | Revise the last suggestion based on your instructions |
+| `/feedback`            | Submit feedback on a response or suggestion           |
+| `/exit`                | Exit interactive mode                                 |
+| `/model <model>`       | Select which AI model to use                          |
+| `/theme [auto|dark|light]` | Change terminal theme                             |
+| `/skills`              | Manage skills for enhanced capabilities               |
+| `/mcp`                 | Manage MCP server configuration                        |
+| `/list-dirs`           | Show allowed directories for file operations          |
+| `/reset-allowed-tools` | Reset allowed tools list                              |
 
 > Slash commands cannot be replaced with natural language prompts. They are the only way to control session settings and configuration.
 
@@ -84,7 +84,7 @@ Slash commands are explicit session-control commands. Here are the most common o
 
 Copilot will provide a detailed explanation.
 
-:::image type="content" source="../media/copilot-explain-command.png" alt-text="Screenshot of Copilot CLI explaining a command in interactive mode.":::
+:::image type="content" source="../media/copilot-explain-in-cli.png" alt-text="Screenshot of Copilot CLI explaining a command in interactive mode.":::
 
 
 ### 2. Suggest a command
