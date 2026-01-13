@@ -1,0 +1,48 @@
+### YamlMime:Module
+uid: learn.wwl.purview-data-loss-prevention-create-manage-policies
+metadata:
+  title: Understand and plan data loss prevention
+  description: Understand and plan data loss prevention.
+  ms.date: 01/13/2026
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: module
+  ai-usage: ai-assisted
+  ms.service: purview
+title: Understand and plan data loss prevention
+summary: |
+  Effective data loss prevention (DLP) starts with understanding how risk is evaluated and how protection decisions are applied. This module focuses on the concepts and planning considerations that help organizations design DLP policies that protect sensitive data without disrupting everyday work.
+abstract: |
+  In this module you learn to:
+  - Explain what data loss prevention is designed to address and where it fits in a data security strategy
+  - Describe how DLP evaluates content, context, and user actions
+  - Identify where DLP can apply protection and how enforcement differs by location
+  - Plan DLP policies based on risk, scope, and operational considerations
+  - Use simulation mode to validate policy behavior before enforcement
+  - Recognize when advanced DLP controls can improve enforcement decisions
+prerequisites: |
+  - Familiarity with basic data security concepts
+  - General awareness of Microsoft Purview as a data security platform
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- administrator
+- risk-practitioner
+products:
+- m365
+- microsoft-purview
+subjects:
+- threat-protection
+- security
+units:
+- learn.wwl.purview-data-loss-prevention-create-manage-policies.introduction
+- learn.wwl.purview-data-loss-prevention-create-manage-policies.policy-intent
+- learn.wwl.purview-data-loss-prevention-create-manage-policies.understand-data-loss-prevention-protection
+- learn.wwl.purview-data-loss-prevention-create-manage-policies.plan-design-policies
+- learn.wwl.purview-data-loss-prevention-create-manage-policies.understand-deployment-simulation-mode
+- learn.wwl.purview-data-loss-prevention-create-manage-policies.advanced-data-loss-prevention-controls
+- learn.wwl.purview-data-loss-prevention-create-manage-policies.knowledge-check
+- learn.wwl.purview-data-loss-prevention-create-manage-policies.summary
+badge:
+  uid: learn.wwl.purview-data-loss-prevention-create-manage-policies.badge
