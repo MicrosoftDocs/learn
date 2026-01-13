@@ -12,4 +12,4 @@ In this module, you learned how to:
 - Analyze linked data using Spark.
 - Analyze linked data using Synapse SQL.
 
-To learn more about using Azure Synapse Link to enable analytics scenarios, see [Azure Synapse Link for Azure Cosmos DB: Near real-time analytics use cases](/azure/cosmos-db/synapse-link-use-cases).
+To learn more about using Azure Synapse Link to enable analytics scenarios, see [Azure Synapse Link for Azure Cosmos DB: Near real-time analytics use cases](/azure/cosmos-db/synapse-link).
