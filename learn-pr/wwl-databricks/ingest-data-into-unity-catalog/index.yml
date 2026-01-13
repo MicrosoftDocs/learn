@@ -10,7 +10,7 @@ metadata:
   ms.service: azure-databricks
   ai-usage: ai-generated
 title: Ingest data into Unity Catalog
-summary: Data ingestion is a fundamental capability for any data platform. This module explores the comprehensive set of techniques available in Azure Databricks for loading data into Unity Catalog tables. You'll learn how to use managed connectors with Lakeflow Connect, write custom ingestion code in notebooks, apply SQL commands for batch file loading, process change data capture feeds, configure streaming ingestion from message buses, set up Auto Loader for automatic file detection, and orchestrate ingestion workflows with Lakeflow Declarative Pipelines.
+summary: Data ingestion is a fundamental capability for any data platform. This module explores the comprehensive set of techniques available in Azure Databricks for loading data into Unity Catalog tables. You'll learn how to use managed connectors with Lakeflow Connect, write custom ingestion code in notebooks, apply SQL commands for batch file loading, process change data capture feeds, configure streaming ingestion from message buses, set up Auto Loader for automatic file detection, and orchestrate ingestion workflows with Lakeflow Spark Declarative Pipelines.
 abstract: |
   By the end of this module, you'll be able to:
   - Configure Lakeflow Connect to ingest data from external sources using managed connectors
@@ -19,7 +19,7 @@ abstract: |
   - Process change data capture feeds with the AUTO CDC API
   - Configure Spark Structured Streaming for real-time data ingestion from Kafka and Event Hubs
   - Set up Auto Loader to automatically detect and process new files with schema evolution
-  - Orchestrate data ingestion workflows using Lakeflow Declarative Pipelines
+  - Orchestrate data ingestion workflows using Lakeflow Spark Declarative Pipelines
 prerequisites: |
   The following prerequisites should be completed:
   * Basic understanding of Azure Databricks and Unity Catalog concepts
