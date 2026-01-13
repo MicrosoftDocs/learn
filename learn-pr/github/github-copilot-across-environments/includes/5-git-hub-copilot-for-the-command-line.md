@@ -72,7 +72,7 @@ Slash commands are explicit session-control commands. Here are the most common o
 | `/list-dirs`           | Show allowed directories for file operations          |         |                       |
 | `/reset-allowed-tools` | Reset allowed tools list                              |         |                       |
 
-> ⚠️ **Important:** Slash commands cannot be replaced with natural language prompts. They are the only way to control session settings and configuration.
+> Slash commands cannot be replaced with natural language prompts. They are the only way to control session settings and configuration.
 
 ## Example Workflows
 
