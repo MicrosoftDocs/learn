@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.integrate-ai-services-enrich-applications-intelligent-features-azure-database-postgresql.exercise-perform-inference-azure-machine-learning-azure-database-postgresql
+uid: learn.wwl.integrate-ai-services-enrich-azure-database-postgresql.exercise-perform-inference-azure-machine-learning
 title: Exercise - Perform inference with Azure Machine Learning and Azure Database for PostgreSQL
 metadata:
   title: Exercise - Perform inference with Azure Machine Learning and Azure Database for PostgreSQL
@@ -10,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 20
 content: |
-  [!include[](includes/08-exercise-perform-inference-azure-machine-learning-azure-database-postgresql.md)]
+  [!include[](includes/08-exercise-perform-inference-azure-machine-learning.md)]

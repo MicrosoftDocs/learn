@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.integrate-ai-services-enrich-applications-intelligent-features-azure-database-postgresql.use-azure-machine-learning-inference-azure-database-postgresql
+uid: learn.wwl.integrate-ai-services-enrich-azure-database-postgresql.use-azure-machine-learning-inference-azure-database-postgresql
 title: Use Azure Machine Learning for inference from Azure Database for PostgreSQL
 metadata:
   title: Use Azure Machine Learning for inference from Azure Database for PostgreSQL
