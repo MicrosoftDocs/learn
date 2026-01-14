@@ -2,8 +2,8 @@
 uid: learn.wwl.enhance-endpoint-security-microsoft-intune-copilot
 metadata:
   title: Enhance endpoint security with Microsoft Intune and Microsoft Security Copilot MD-4011
-  description: This learning path will teach you the essentials of Microsoft Intune, advanced threat detection and response with Microsoft Security Copilot, and how to optimize the integration between Intune and Copilot. You'll gain skills in device management, threat protection, and policy enforcement. (MD-4011)
-  ms.date: 06/27/2024
+  description: Learn to secure, manage, and monitor endpoints using Microsoft Intune, Microsoft Defender for Endpoint, and Microsoft Security Copilot. This path covers device onboarding, policy enforcement, compliance, threat protection, and AI-powered incident response for modern organizations. (MD-4011)
+  ms.date: 01/14/2026
   author: wwlpublish
   ms.author: dahans
   ms.topic: learning-path
@@ -15,10 +15,10 @@ prerequisites: |
   - Knowledge of Microsoft Entra ID.
   - Access to Microsoft Intune and Copilot for Security tools for hands-on practice.
 summary: |
-  This learning path will teach you the essentials of Microsoft Intune, advanced threat detection and response with Microsoft Security Copilot, and how to optimize the integration between Intune and Copilot.
+  In this learning path, you will learn how to prepare your environment for device management, enroll and validate devices, configure and secure endpoints, protect data with conditional access, harden security with Defender for Endpoint, and accelerate remediation using Microsoft Security Copilot. Gain hands-on experience with real-world labs and practical scenarios to implement Zero Trust principles and modern endpoint security.
 iconUrl: /training/achievements/copilot-learning-path.svg
 levels:
-- beginner
+- intermediate
 roles:
 - administrator
 - security-engineer
@@ -26,6 +26,12 @@ roles:
 products:
 - intune
 - ms-copilot
+- defender-endpoint
+- entra-id
+- entra-id-protection
+- m365
+- m365-admin-center
+- m365-ems
 subjects:
 - asset-management
 - cloud-computing
@@ -35,8 +41,11 @@ subjects:
 - security
 - threat-protection
 modules:
-- learn.wwl.discover-microsoft-intune-essentials
-- learn.wwl.unlock-insights-microsoft-copilot-security
-- learn.wwl.optimize-microsoft-intune-microsoft-copilot-security-integration
+  - learn.wwl.prepare-microsoft-entra-id-intune-device-management
+  - learn.wwl.enroll-validate-devices-microsoft-intune
+  - learn.wwl.configure-secure-devices-intune-policies
+  - learn.wwl.protect-data-control-access-intune-conditional-access
+  - learn.wwl.harden-endpoints-monitor-security-intune-defender-endpoint
+  - learn.wwl.accelerate-endpoint-remediation-response-security-copilot
 trophy:
   uid: learn.wwl.enhance-endpoint-security-microsoft-intune-copilot.trophy
