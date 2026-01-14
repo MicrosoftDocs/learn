@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.introduction-ai-special-education.benefits-challenges-ai
+title: "The benefits and challenges of AI"
+metadata:
+  title: "The Benefits and Challenges of AI"
+  description: "Explore how AI tools boost efficiency in education while addressing challenges like privacy, legal compliance, and accuracy. Learn more."
+  ms.date: 11/18/2025
+  author: Randall-Knapp
+  ms.author: erzelman
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/3-benefits-challenges-ai.md)]

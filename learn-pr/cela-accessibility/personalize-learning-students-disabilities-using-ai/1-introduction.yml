@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.use-ai-personalize-learning-students-disabilities.introduction
+title: "Introduction"
+metadata:
+  title: "Personalize Learning for Students"
+  description: "Learn how Microsoft tools like Copilot and Immersive Reader can help you tailor instruction for students' needs efficiently and responsibly."
+  ms.date: 01/09/2026
+  author: Randall-Knapp
+  ms.author: erzelman
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/1-introduction.md)]

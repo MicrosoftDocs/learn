@@ -1,7 +1,7 @@
 
-In this module, you learned about authentication and authorization.  You've learned about identity as the new security perimeter and the role of Active Directory. You also looked at the concept of federation to access resources that belong to another organization.
+In this module, you learned about authentication and authorization. You learned about identity as the new security perimeter and the role of Active Directory. You also looked at the concept of federation to access resources that belong to another organization.
 
-Now you've completed this module, you'll be able to:
+Now that you've completed this module, you're able to:
 
 - Understand the difference between authentication and authorization.
 - Describe the concept of identity as a security perimeter.
