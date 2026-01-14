@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.integrate-ai-services-enrich-applications-intelligent-features-azure-database-postgresql.exercise-use-azure-ai-services-azure-database-postgresql
+title: Exercise - Use Azure AI services with Azure Database for PostgreSQL
+metadata:
+  title: Exercise - Use Azure AI services with Azure Database for PostgreSQL
+  description: "Practice summarization, sentiment/opinion mining, key phrase/entity extraction, and translation in Azure Database for PostgreSQL."
+  ms.date: 09/08/2025
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+durationInMinutes: 20
+content: |
+  [!include[](includes/06-exercise-use-azure-ai-services-azure-database-postgresql.md)]

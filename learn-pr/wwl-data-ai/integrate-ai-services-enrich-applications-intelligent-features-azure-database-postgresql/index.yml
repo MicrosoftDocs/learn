@@ -1,0 +1,50 @@
+### YamlMime:Module
+uid: learn.wwl.integrate-ai-services-enrich-applications-intelligent-features-azure-database-postgresql
+metadata:
+  title: Integrate AI Services to enrich your applications with intelligent features in Azure Database for PostgreSQL
+  description: 
+  ms.date: 08/08/2025
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: module
+  ms.service: azure-database-postgresql
+  ai-usage: ai-assisted
+title: Integrate AI Services to enrich your applications with intelligent features in Azure Database for PostgreSQL
+summary: 
+abstract: |
+  By the end of this module, you'll be able to:
+  *   
+  *   
+  *   
+  *   
+  *   
+prerequisites: |
+  *   Ability to write basic SQL queries.
+  *   Comfort with provisioning Azure resources such as Flexible Server and enabling extensions.
+iconUrl: /training/achievements/generic-database.svg
+levels:
+- intermediate
+roles:
+- developer
+- data-engineer
+- solution-architect
+products:
+- azure
+- azure-database-postgresql
+subjects:
+- databases
+- artificial-intelligence
+- cloud-computing
+units:
+- learn.wwl.integrate-ai-services-enrich-applications-intelligent-features-azure-database-postgresql.introduction
+- learn.wwl.integrate-ai-services-enrich-applications-intelligent-features-azure-database-postgresql.summarize-data-azure-ai-services-azure-database-postgresql
+- learn.wwl.integrate-ai-services-enrich-applications-intelligent-features-azure-database-postgresql.perform-sentiment-analysis-opinion-mining-azure-database-postgresql
+- learn.wwl.integrate-ai-services-enrich-applications-intelligent-features-azure-database-postgresql.extract-insights-azure-ai-language-azure-database-postgresql
+- learn.wwl.integrate-ai-services-enrich-applications-intelligent-features-azure-database-postgresql.translate-text-azure-ai-translator-azure-database-postgresql
+- learn.wwl.integrate-ai-services-enrich-applications-intelligent-features-azure-database-postgresql.exercise-use-azure-ai-services-azure-database-postgresql
+- learn.wwl.integrate-ai-services-enrich-applications-intelligent-features-azure-database-postgresql.use-azure-machine-learning-inference-azure-database-postgresql
+- learn.wwl.integrate-ai-services-enrich-applications-intelligent-features-azure-database-postgresql.exercise-perform-inference-azure-machine-learning-azure-database-postgresql
+- learn.wwl.integrate-ai-services-enrich-applications-intelligent-features-azure-database-postgresql.knowledge-check
+- learn.wwl.integrate-ai-services-enrich-applications-intelligent-features-azure-database-postgresql.summary
+badge:
+  uid: learn.wwl.integrate-ai-services-enrich-applications-intelligent-features-azure-database-postgresql.badge
