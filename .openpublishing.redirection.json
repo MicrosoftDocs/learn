@@ -61696,9 +61696,14 @@
     },               
     {
       "source_path": "learn-pr/azure-devops/run-functional-tests-azure-pipelines/index.yml",
-      "redirect_url": "learn-pr/azure-devops/run-functional-tests-azure-pipelines/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/test/test-glossary?view=azure-devops",
       "redirect_document_id": false
     }, 
+    {
+      "source_path": "learn-pr/azure-devops/run-functional-tests-azure-pipelines/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/test/test-glossary?view=azure-devops",
+      "redirect_document_id": false
+    },     
     {
       "source_path": "learn-pr/azure-devops/run-functional-tests-azure-pipelines/2-what-is-functional-testing.yml",
       "redirect_url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/test/test-glossary?view=azure-devops",
