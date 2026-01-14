@@ -16,7 +16,7 @@ abstract: |
   -	Use AI tools like Copilot and Microsoft Translator to make educational documents clearer and more accessible while keeping educator judgment at the center.
   -	Apply strategies that help both written and live meeting communication feel welcoming, accessible, and culturally responsive for multilingual families and families with disabilities.
   -	Review and refine family communications to ensure they remain clear, inclusive, and supportive of strong engagement across diverse communities.
-
+prerequisites: |
   - Basic familiarity with Microsoft tools such as Word and Teams.
   - Knowledge of family engagement practices in educational settings.
 iconUrl: /learn/achievements/generic-badge.svg
