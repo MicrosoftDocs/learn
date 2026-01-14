@@ -1,4 +1,4 @@
-Microsoft Azure Database for PostgreSQL provides built-in integration with Azure AI services, enabling developers to enhance their applications with intelligent features. In this exercise, you will learn how to leverage Azure OpenAI Service to enrich your PostgreSQL database applications.
+Microsoft Azure Database for PostgreSQL provides built-in integration with Azure AI services, enabling developers to enhance their applications with intelligent features. In this exercise, you learn how to use Azure OpenAI Service to enrich your PostgreSQL database applications.
 
 > [!Note]
 >
