@@ -1,0 +1,41 @@
+### YamlMime:Module
+uid: learn.dpu.security-management
+title: Security and management for Windows 11 Pro
+metadata:
+  title: Security And Management For Windows 11 Pro
+  description: In this module, you’ll learn about built-in security and management capabilities in Windows 11. Discover how these capabilities can be applied in real-world scenarios to support secure and manageable device environments.
+  ms.date: 01/13/2026
+  author: Stephanie-Rosenzweig
+  ms.author: v-stephanier
+  ms.topic: module-standard-concept-based
+  ms.service: windows-11
+summary: >
+  In this module, you’ll learn about built-in security and management capabilities in Windows 11. Discover how these capabilities can be applied in real-world scenarios to support secure and manageable device environments.
+abstract: |
+  By the end of this module, you'll be able to:
+  - Identify key security features in Windows 11 Pro.
+  - Describe management capabilities for device provisioning and recovery.
+  - Evaluate how Windows 11 features can address security and management challenges.
+prerequisites: |
+  - None
+iconUrl: /training/achievements/generic-badge.svg
+ratingEnabled: false
+levels:
+  - beginner
+roles:
+  - administrator
+  - business-leader
+  - business-owner
+  - technology-manager
+products:
+  - windows-11
+  - intune
+units:
+  - learn.dpu.security-management.introduction
+  - learn.dpu.security-management.security
+  - learn.dpu.security-management.management
+  - learn.dpu.security-management.scenario
+  - learn.dpu.security-management.knowledge-check
+  - learn.dpu.security-management.summary
+badge:
+  uid: learn.dpu.security-management.badge
