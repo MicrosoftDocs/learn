@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.streamline-administrative-tasks-ai.create-structured-repeatable-workflows-teach
+title: "Create structured, repeatable workflows with Teach"
+metadata:
+  title: "Create structured, repeatable workflows with Teach"
+  description: "Learn how to use Teach to create structured, repeatable workflows for lesson plans, rubrics, and more. Streamline tasks with guided AI tools."
+  ms.date: 01/05/2026
+  author: Randall-Knapp
+  ms.author: rknapp
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/3-create-structured-repeatable-workflows-teach.md)]
