@@ -38,10 +38,12 @@ subjects:
 units:
 - learn.wwl.purview-data-loss-prevention-create-manage-policies.introduction
 - learn.wwl.purview-data-loss-prevention-create-manage-policies.policy-intent
-- learn.wwl.purview-data-loss-prevention-create-manage-policies.understand-data-loss-prevention-protection
-- learn.wwl.purview-data-loss-prevention-create-manage-policies.plan-design-policies
-- learn.wwl.purview-data-loss-prevention-create-manage-policies.understand-deployment-simulation-mode
-- learn.wwl.purview-data-loss-prevention-create-manage-policies.advanced-data-loss-prevention-controls
+- learn.wwl.purview-data-loss-prevention-create-manage-policies.template-custom-policy
+- learn.wwl.purview-data-loss-prevention-create-manage-policies.define-policy-detection
+- learn.wwl.purview-data-loss-prevention-create-manage-policies.policy-scope
+- learn.wwl.purview-data-loss-prevention-create-manage-policies.policy-actions
+- learn.wwl.purview-data-loss-prevention-create-manage-policies.policy-validation
+- learn.wwl.purview-data-loss-prevention-create-manage-policies.adaptive-protection-data-loss-prevention
 - learn.wwl.purview-data-loss-prevention-create-manage-policies.knowledge-check
 - learn.wwl.purview-data-loss-prevention-create-manage-policies.summary
 badge:

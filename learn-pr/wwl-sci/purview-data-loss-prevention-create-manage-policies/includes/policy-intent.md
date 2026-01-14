@@ -8,9 +8,9 @@ A common mistake during policy creation is assuming that stronger enforcement al
 
 Examples of assumptions that cause problems include:
 
-- applying broad scope without understanding how data is used
-- blocking actions that are part of normal business workflows
-- layering multiple restrictive rules to compensate for uncertainty
+- Applying broad scope without understanding how data is used
+- Blocking actions that are part of normal business workflows
+- Layering multiple restrictive rules to compensate for uncertainty
 
 When policies interrupt legitimate work too often, users look for ways around them. That increases risk rather than reducing it.
 
@@ -32,8 +32,8 @@ Most data loss happens during everyday work, not through malicious intent. Polic
 
 When policy behavior aligns with real workflows:
 
-- false positives are reduced
-- users are more likely to understand enforcement decisions
-- policies act as guardrails instead of obstacles
+- False positives are reduced
+- Users are more likely to understand enforcement decisions
+- Policies act as guardrails instead of obstacles
 
 With clear intent and well-defined boundaries, policy creation becomes a deliberate design exercise rather than a trial-and-error configuration task.
