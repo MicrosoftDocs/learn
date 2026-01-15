@@ -12,4 +12,4 @@ azureSandbox: true
 labModal: true
 durationInMinutes: 15
 content: |
-  [!include[](includes/7-exercise-create-database-objects.md)]
+  [!include[](includes/9-exercise-create-database-objects.md)]

@@ -12,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 8
 content: |
-  [!include[](includes/6-design-implement-partitioning.md)]
+  [!include[](includes/8-design-implement-partitioning.md)]

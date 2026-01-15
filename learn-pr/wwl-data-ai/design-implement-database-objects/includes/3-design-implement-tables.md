@@ -1,4 +1,4 @@
-Creating effective tables is the foundation of any database design. Tables structure your data and determine how efficiently your queries can access and modify information.
+Effective table design forms the foundation of any database. Tables structure your data and determine how efficiently your queries access and modify information.
 
 ## Design and create tables
 
@@ -8,9 +8,9 @@ For multidimensional analytics, tables serve as *fact tables* storing measurable
 
 ### Choose appropriate data types
 
-Data types are fundamental decisions that affect your database. The wrong choice can lead to wasted storage, poor performance, data loss, or application errors. Unlike application code that can be easily refactored, changing column data types in production databases often requires table rebuilds, which can mean hours of downtime for large tables.
+Data types are fundamental decisions that affect your database. The wrong choice can lead to wasted storage, poor performance, data loss, or application errors. Unlike application code that you can refactor easily, changing column data types in production databases often requires table rebuilds, which can mean hours of downtime for large tables.
 
-A proper data type selection is mainly important when you're designing the initial schema, as this is the easiest time to get it right. Also, consider data types carefully when:
+Select proper data types when you design the initial schema, as this is the easiest time to get it right. Also, consider data types carefully when:
 
 - You're storing data where precision matters
 - You're working with high-volume tables where storage costs multiply
@@ -28,18 +28,18 @@ Appropriate data types affect storage, performance, and operations:
 | **Binary** | `VARBINARY`, `IMAGE` | varies | For storing binary data like images or documents | `ProfilePhoto VARBINARY(MAX)`, `DocumentContent VARBINARY(MAX)` |
 | **Special** | `UNIQUEIDENTIFIER`, `XML`, `JSON` | 16 bytes, varies, native binary | `UNIQUEIDENTIFIER` for GUIDs, `XML` for XML documents, `JSON` (SQL 2025+) for JSON documents in native binary format | `RowGUID UNIQUEIDENTIFIER`, `Config XML`, `Settings JSON` |
 
-Data type nuances require careful attention. For example, using `FLOAT` for financial data instead of `DECIMAL` may introduce rounding errors that can't be fixed without recalculating every dependent value. A `UNIQUEIDENTIFIER` primary key when `INT` suffices triples your index size and slows every `JOIN` operation. Most of these decisions affect the performance of the database and can determine whether queries run in milliseconds or minutes.
+Data type nuances require careful attention. For example, using `FLOAT` for financial data instead of `DECIMAL` can introduce rounding errors that can't be fixed without recalculating every dependent value. A `UNIQUEIDENTIFIER` primary key when `INT` suffices triples your index size and slows every `JOIN` operation. Most of these decisions affect the performance of the database and can determine whether queries run in milliseconds or minutes.
 
 ### Estimate table size requirements
 
-Table size isn't just about storage costs; it directly impacts your database operations. Backup and restore times, index rebuild durations, and even query performance are all affected by table size. 
+Table size isn't just about storage costs; it directly impacts your database operations. Table size affects backup and restore times, index rebuild durations, and query performance.
 
 >[!IMPORTANT]
 > A poorly designed table that stores 200 bytes per row instead of 100 bytes doubles your storage needs, backup times, and I/O requirements.
 
 Another scenario to plan for table sizing is when you're calculating storage costs for cloud databases, designing for limited disk space, or planning archive strategies. These scenarios all require accurate size estimates to make informed decisions about resources and operations.
 
-For example, a retail company storing 100 million transactions daily with an extra 50 bytes per row wastes 5GB per day—that's 1.8TB annually of unnecessary storage, plus proportional increases in backup time and costs.
+For example, a retail company storing 100 million transactions daily with an extra 50 bytes per row wastes 5 GB per day—that's 1.8TB annually of unnecessary storage, plus proportional increases in backup time and costs.
 
 The following example shows how to estimate the size for the `Employee` table:
 
@@ -84,7 +84,7 @@ This table demonstrates several best practices:
 - **Right-sized columns**: `NVARCHAR(100)` for product names and `NVARCHAR(50)` for categories based on expected data length
 - **Constraints**: `NOT NULL` ensures data quality by preventing missing critical values
 - **Default values**: Automatic values for `StockQuantity` (0) and `LastRestocked` (current UTC time) reduce application code complexity
-- **Efficient primary key**: `IDENTITY` generates sequential keys that cluster efficiently and use minimal storage (4 bytes vs 16 bytes for GUID)
+- **Efficient primary key**: `IDENTITY` generates sequential keys that cluster efficiently and use minimal storage (4-bytes vs 16 bytes for GUID)
 
 ## Design best practices
 
@@ -99,4 +99,4 @@ Apply these key principles when designing and implementing tables to ensure perf
 - **Normalize when appropriate** - Balance normalization with query performance needs
 - **Monitor row and page compression** - Enable compression for large tables to save storage
 
-Most database performance issues stem from poor design decisions made early in development. Oversized data types waste storage and slow queries. Missing or wrong index types create bottlenecks that resource upgrades cannot resolve. Prevent these problems by investing time in proper object design before you create or modify tables. The decisions you make during design—choosing appropriate data types, estimating table sizes, selecting the right index types—have far greater impact on long-term performance and cost than any optimization you can apply later.
+Most database performance issues stem from poor design decisions made early in development. Oversized data types waste storage and slow queries. Missing or wrong index types create bottlenecks that resource upgrades can't resolve. Prevent these problems by investing time in proper object design before you create or modify tables. The decisions you make during design—choosing appropriate data types, estimating table sizes, selecting the right index types—have far greater effect on long-term performance and cost than any optimization you can apply later.

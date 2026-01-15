@@ -12,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 10
 content: |
-  [!include[](includes/3a-design-implement-indexes.md)]
+  [!include[](includes/4-design-implement-indexes.md)]

@@ -12,13 +12,13 @@ You'll explore database object design techniques that apply across Azure SQL Dat
 
 - **Table design and implementation** - Creating tables with appropriate data types, sizes, and structures. Learn how to choose between rowstore and columnstore indexes for your workload, whether you're building a transactional app on Azure SQL Database or an operational analytics database in Fabric.
 
-- **Specialized table types** - Using in-memory tables for high-throughput scenarios in Managed Instance, temporal tables for audit trails across all platforms, external tables for Fabric lakehouse integration, LEDGER tables for compliance-critical applications, and GRAPH tables for complex relationships.
+- **Specialized table types** - Using in-memory tables for high-throughput scenarios in SQL Managed Instance, temporal tables for audit trails across all platforms, external tables for Fabric lakehouse integration, LEDGER tables for compliance-critical applications, and GRAPH tables for complex relationships.
 
 - **Constraints and validation** - Implementing primary keys, foreign keys, unique constraints, CHECK constraints, and DEFAULT values that ensure data integrity whether your database serves a microservice, an enterprise application, or feeds analytics pipelines.
 
 - **Advanced features** - Working with JSON columns for flexible schemas in cloud-native apps, implementing indexes optimized for your platform's query engine, and using SEQUENCE objects for distributed ID generation patterns.
 
-- **Partitioning strategies** - Designing and implementing table and index partitioning for large-scale databases. Essential for Hyperscale databases in Azure SQL Database, multi-TB databases in Managed Instance, and time-series data in Fabric operational databases.
+- **Partitioning strategies** - Designing and implementing table and index partitioning for large-scale databases. Essential for Hyperscale databases in Azure SQL Database, multi-TB databases in SQL Managed Instance, and time-series data in Fabric operational databases.
 
 ## Why this matters
 
