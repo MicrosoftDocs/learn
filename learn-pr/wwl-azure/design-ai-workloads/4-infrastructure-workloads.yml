@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-ai-workloads.infrastructure-workloads
+title: "Design IaaS AI workloads with Azure"
+metadata:
+  title: "Design IaaS AI Workloads"
+  description: "Learn how to design IaaS AI workloads using Azure landing zones for scalable, efficient, and secure AI deployment and management."
+  ms.date: 01/09/2026
+  author: wwlpublish
+  ms.author: cynthist
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/4-infrastructure-workloads.md)]

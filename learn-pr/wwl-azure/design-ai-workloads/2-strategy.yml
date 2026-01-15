@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-ai-workloads.strategy
+title: "Create an AI strategy for Azure workloads"
+metadata:
+  title: "Create an AI Strategy in Azure"
+  description: "Learn how to create an AI strategy using Azure SaaS, PaaS, and IaaS solutions to meet your organization's needs effectively."
+  ms.date: 01/09/2026
+  author: wwlpublish
+  ms.author: cynthist
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/2-strategy.md)]

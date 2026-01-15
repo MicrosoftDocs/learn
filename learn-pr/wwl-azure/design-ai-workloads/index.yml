@@ -1,0 +1,47 @@
+### YamlMime:Module
+uid: learn.wwl.design-ai-workloads
+metadata:
+  title: "Design AI Workloads on Azure"
+  description: "Learn to design AI workloads on Azure using SaaS, PaaS, and IaaS solutions. Align AI strategy with business goals and apply governance best practices."
+  ms.date: 01/09/2026
+  author: wwlpublish
+  ms.author: cynthist
+  ms.topic: module
+  ms.service: azure-ai-services
+  hidden: true
+title: "Design AI workloads on Azure"
+summary: Learn to design AI workloads using SaaS, PaaS, and IaaS solutions while aligning AI strategy with business goals and applying governance best practices.
+abstract: |
+  After completing this module, you'll be able to:
+  - Select SaaS, PaaS, or IaaS AI solutions based on business needs and required levels of control.
+  - Build an AI adoption plan that prioritizes use cases, skills, and delivery timelines.
+  - Design IaaS-based AI architectures by using the best compute, storage, and networking choices.
+  - Design PaaS AI solutions for generative and nongenerative workloads by using secure, scalable services.
+  - Apply AI governance and responsible AI practices across security, cost, data, and operations.
+  - Secure AI workloads by identifying risks, protecting resources and data, and detecting threats.
+  - Manage AI workloads across the lifecycle including deployment, cost, data, and continuity.
+prerequisites: |
+  - Basic understanding of AI concepts and Azure services.
+  - Familiarity with cloud computing models (SaaS, PaaS, IaaS).
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- solution-architect
+products:
+- azure
+subjects:
+- solution-design
+units:
+- learn.wwl.design-ai-workloads.introduction
+- learn.wwl.design-ai-workloads.summary
+- learn.wwl.design-ai-workloads.strategy
+- learn.wwl.design-for-ai-workloads.adoption-plan
+- learn.wwl.design-ai-workloads.infrastructure-workloads
+- learn.wwl.design-ai-workloads.platform-workloads
+- learn.wwl.design-ai-workloads.governance
+- learn.wwl.design-ai-workloads.secure-workloads
+- learn.wwl.design-ai-workloads.manage
+- learn.wwl.design-ai-workloads.knowledge-check
+badge:
+  uid: learn.wwl.design-ai-workloads.badge
