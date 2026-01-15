@@ -110,6 +110,7 @@ Use Structured Streaming to continuously capture changes:
 ```python
 (spark.readStream
     .option("readChangeFeed", "true")
+    .option("ignoreDeletes", "false")
     .table("bronze.sales_transactions")
     .writeStream
     .option("checkpointLocation", "/checkpoints/sales_history")
@@ -117,6 +118,8 @@ Use Structured Streaming to continuously capture changes:
     .toTable("audit.sales_transactions_history")
 )
 ```
+
+The `readChangeFeed` option instructs Spark to read the change data feed, which returns row-level change events including inserts, updates, and deletes. The `ignoreDeletes` option controls whether delete operations are included in the stream. Setting it to `false` ensures that delete records are captured in the history table, providing a complete audit trail of all data changes.
 
 The history table contains every change event with full metadata, enabling queries across the entire lifetime of your data—not just the retention window.
 

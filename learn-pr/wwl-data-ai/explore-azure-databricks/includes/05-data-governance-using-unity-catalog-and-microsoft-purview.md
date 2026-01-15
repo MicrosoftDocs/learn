@@ -1,3 +1,5 @@
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=22222222-2222-2222-8888-8888888888-16]
+
 Data governance is critical for ensuring that data within an organization is managed securely, efficiently, and in compliance with regulations. 
 
 In many organizations, data is distributed across databases, data warehouses, data lakes, and even multiple catalogs. It also exists in diverse formats like Parquet, CSV, and Delta Lake. Beyond structured data in tables, there’s also unstructured data in files, along with other assets such as machine learning models, notebooks, and dashboards that require management and governance. This fragmentation creates silos across sources, formats, and asset types.
@@ -13,6 +15,8 @@ These governance challenges directly affect the value organizations can derive f
 Azure Databricks, combined with Unity Catalog and Microsoft Purview, provides a robust solution for managing and governing data effectively. 
 
 ## Unity Catalog 
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=22222222-2222-2222-8888-8888888888-17]
 
 Unity Catalog provides a centralized way to manage access, discovery, lineage, audit logs, and quality monitoring across data and AI assets within Azure Databricks. It applies consistently across all workspaces in a region.
 
@@ -45,6 +49,8 @@ Unity Catalog provides a complete picture of your data's history. It logs access
 In most accounts, Unity Catalog is enabled by default when you create a workspace. You can get started using Unity Catalog with the default settings. There are optional configurations that you might want to enable, however. 
 
 ## Microsoft Purview
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=22222222-2222-2222-8888-8888888888-18]
 
 Microsoft Purview is a data governance service that lets you manage and oversee data across on-premises systems, multiple clouds, and SaaS platforms. It includes features such as data discovery, classification, lineage tracking, and access governance.
 
