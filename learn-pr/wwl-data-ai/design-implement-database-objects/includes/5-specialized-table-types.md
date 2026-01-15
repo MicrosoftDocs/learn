@@ -1,4 +1,4 @@
-SQL Server support specialized table types designed for specific scenarios and workloads beyond standard disk-based tables. These table types, including [in-memory](https://learn.microsoft.com/sql/relational-databases/in-memory-oltp/overview-and-usage-scenarios?azure-portal=true), [temporal](https://learn.microsoft.com/sql/relational-databases/tables/temporal-tables?azure-portal=true), [external](https://learn.microsoft.com/sql/t-sql/statements/create-external-table-transact-sql?azure-portal=true), [LEDGER](https://learn.microsoft.com/sql/relational-databases/security/ledger/ledger-overview?azure-portal=true), and [GRAPH](https://learn.microsoft.com/sql/relational-databases/graphs/sql-graph-overview?azure-portal=true), solve particular performance, compliance, or architectural challenges that standard tables cannot address efficiently.
+SQL Server support specialized table types designed for specific scenarios and workloads beyond standard disk-based tables. These table types, including [in-memory](/sql/relational-databases/in-memory-oltp/overview-and-usage-scenarios?azure-portal=true), [temporal](/sql/relational-databases/tables/temporal-tables?azure-portal=true), [external](/sql/t-sql/statements/create-external-table-transact-sql?azure-portal=true), [LEDGER](/sql/relational-databases/security/ledger/ledger-overview?azure-portal=true), and [GRAPH](/sql/relational-databases/graphs/sql-graph-overview?azure-portal=true), solve particular performance, compliance, or architectural challenges that standard tables can't address efficiently.
 
 Understanding when and how to use these specialized table types is crucial for designing effective database solutions that meet your application's requirements.
 
@@ -16,13 +16,13 @@ In-memory optimized tables provide significant performance benefits for specific
 - **Caching layer** - Frequently accessed reference data (product catalogs, configurations)
 - **Staging tables** - ETL processes with intensive insert/update operations
 
-For example, an e-commerce site used in-memory tables for shopping cart data, handling 50,000 concurrent carts with sub-millisecond response times, reducing checkout latency by 80%.
+For example, an e-commerce site used in-memory tables for shopping cart data, handling 50,000 concurrent carts with submillisecond response times, reducing checkout latency by 80%.
 
 ### Consider trade-offs
 
 In-memory tables offer substantial performance improvements but come with constraints. Performance gains depend heavily on workload characteristics, with some customers seeing up to 30 times improvement for the right scenarios. However, they're limited by available RAM, don't support LOB data types (`VARCHAR(MAX)`, `NVARCHAR(MAX)`, `VARBINARY(MAX)`), and require more complex migration from disk-based tables. By default, memory-optimized tables are fully durable, meaning all transactions are written to the transaction log on disk just like traditional tables, providing the same ACID guarantees.
 
-[In-memory optimized tables](https://learn.microsoft.com/sql/relational-databases/in-memory-oltp/introduction-to-memory-optimized-tables?azure-portal=true) reside in memory rather than on disk, providing performance improvements for specific scenarios.
+[In-memory optimized tables](/sql/relational-databases/in-memory-oltp/introduction-to-memory-optimized-tables?azure-portal=true) reside in memory rather than on disk, providing performance improvements for specific scenarios.
 
 You can create an in-memory optimized table by using the `MEMORY_OPTIMIZED = ON` option. Here's an example:
 
@@ -53,13 +53,13 @@ Temporal tables serve compliance, troubleshooting, and analytical needs:
 
 Common business scenarios include applications tracking salary changes and promotions, inventory management analyzing stock trends, healthcare maintaining patient record history for compliance, and insurance tracking policy coverage changes for dispute resolution.
 
-### Consider benefits and storage impact
+### Consider temporal table benefits
 
 Temporal tables provide automatic versioning with minimal application changes. They require zero application code changes and offer transparent history tracking. Point-in-time queries use simple syntax, and automatic cleanup manages old history data. However, temporal tables roughly double storage requirements.
 
-[Temporal tables](https://learn.microsoft.com/sql/relational-databases/tables/creating-a-system-versioned-temporal-table?azure-portal=true) automatically maintain a complete history of data changes for auditing and point-in-time analysis.
+[Temporal tables](/sql/relational-databases/tables/creating-a-system-versioned-temporal-table?azure-portal=true) automatically maintain a complete history of data changes for auditing and point-in-time analysis.
 
-You can create a temporal table by using the `SYSTEM_VERSIONING = ON` option. Temporal tables require two additional `DATETIME2` columns to track the validity period of each row version and a `PERIOD FOR SYSTEM_TIME` clause to define which columns track these timestamps. Here's an example:
+You can create a temporal table by using the `SYSTEM_VERSIONING = ON` option. Temporal tables require two extra `DATETIME2` columns to track the validity period of each row version and a `PERIOD FOR SYSTEM_TIME` clause to define which columns track these timestamps. Here's an example:
 
 ```sql
 -- Create temporal table with automatic history tracking
@@ -82,13 +82,13 @@ When you create a temporal table, SQL Server automatically creates a history tab
 
 ## Use external tables
 
-Modern data architectures often have data scattered across data lakes, blob storage, and multiple systems. Traditionally, you'd have to ETL (extract, transform, load) all data into your database before querying it. External tables enable [data virtualization](https://learn.microsoft.com/sql/relational-databases/polybase/polybase-guide?azure-portal=true) to query data where it lives without moving it, saving storage costs and ETL complexity.
+Modern data architectures often have data scattered across data lakes, blob storage, and multiple systems. Traditionally, you'd have to ETL (extract, transform, load) all data into your database before querying it. External tables enable [data virtualization](/sql/relational-databases/polybase/polybase-guide?azure-portal=true) to query data where it lives without moving it, saving storage costs and ETL complexity.
 
 ### Understand when to use external tables
 
 External tables excel at querying data across distributed storage systems:
 
-- **Data lake integration** - Query Parquet/CSV files in [Azure Data Lake Storage](https://learn.microsoft.com/azure/storage/blobs/data-lake-storage-introduction?azure-portal=true) without importing
+- **Data lake integration** - Query Parquet/CSV files in [Azure Data Lake Storage](/azure/storage/blobs/data-lake-storage-introduction?azure-portal=true) without importing
 - **Data exploration** - Analyze raw data before deciding what to import
 - **Cost optimization** - Avoid duplicating data that's already stored elsewhere
 - **Federated queries** - Join database tables with files in external systems
@@ -102,7 +102,7 @@ External tables provide unified querying across sources but have limitations:
 
 - No data movement or storage duplication
 - Often slower than native tables due to network latency, and file parsing
-- Read-only (cannot UPDATE/DELETE in most scenarios)
+- Read-only (can't UPDATE/DELETE in most scenarios)
 - Limited indexing and optimization
 
 You can create an external table by using the `CREATE EXTERNAL TABLE` statement with a data source and file format. Here's an example:
@@ -164,11 +164,11 @@ CREATE TABLE dbo.AuditLog (
 ) WITH (LEDGER = ON, APPEND_ONLY = ON);
 ```
 
-When you create a ledger table, SQL Server automatically adds hidden columns and creates supporting database objects to track the cryptographic chain. Every row modification generates a cryptographic hash that links to previous operations, creating a tamper-evident audit trail. You can verify data integrity using built-in system views like [sys.database_ledger_transactions](https://learn.microsoft.com/sql/relational-databases/system-catalog-views/sys-database-ledger-transactions-transact-sql?azure-portal=true) and procedures such as [sp_verify_database_ledger](https://learn.microsoft.com/sql/relational-databases/system-stored-procedures/sys-sp-verify-database-ledger-transact-sql?azure-portal=true) to validate the cryptographic chain remains unbroken.
+When you create a ledger table, SQL Server automatically adds hidden columns and creates supporting database objects to track the cryptographic chain. Every row modification generates a cryptographic hash that links to previous operations, creating a tamper-evident audit trail. You can verify data integrity using built-in system views like [sys.database_ledger_transactions](/sql/relational-databases/system-catalog-views/sys-database-ledger-transactions-transact-sql?azure-portal=true) and procedures such as [sp_verify_database_ledger](/sql/relational-databases/system-stored-procedures/sys-sp-verify-database-ledger-transact-sql?azure-portal=true) to validate the cryptographic chain remains unbroken.
 
 ## Use graph tables
 
-Relational databases excel at structured data but struggle with highly connected data requiring many JOINs. Finding "friends of friends" or "products related through 3 degrees of categories" becomes complex with traditional tables. [SQL Graph](https://learn.microsoft.com/sql/relational-databases/graphs/sql-graph-architecture?azure-portal=true) capabilities natively model *nodes* (entities) and *edges* (relationships), making complex relationship queries simple and performant.
+Relational databases excel at structured data but struggle with highly connected data requiring many JOINs. Finding "friends of friends" or "products related through 3 degrees of categories" becomes complex with traditional tables. [SQL Graph](/sql/relational-databases/graphs/sql-graph-architecture?azure-portal=true) capabilities natively model *nodes* (entities) and *edges* (relationships), making complex relationship queries simple and performant.
 
 Graph tables simplify relationship modeling but require learning new syntax. They provide intuitive modeling of connected data, simpler queries for relationship traversal, and better performance for multi-hop queries. The flexible schema accommodates evolving relationships. However, graph tables have a learning curve for `MATCH` syntax and perform best for read-heavy relationship queries.
 
@@ -177,7 +177,7 @@ A database can contain multiple node and edge tables that work together to model
 
 
 >[!NOTE]
-> Graph tables are not optimal for every scenario. Avoid them for simple parent-child relationships where foreign keys work fine, primarily transactional data without complex relationships, or highly structured, stable schemas.
+> Graph tables aren't optimal for every scenario. Avoid them for simple parent-child relationships where foreign keys work fine, primarily transactional data without complex relationships, or highly structured, stable schemas.
 
 ### Understand graph table structure
 
@@ -206,4 +206,4 @@ AND Person1.id = 1;
 
 When you create node and edge tables, SQL Server automatically manages the hidden system columns that enable efficient graph traversal queries.
 
-Each specialized table type solves specific problems but comes with architectural trade-offs. In-memory tables require sufficient RAM. Temporal tables double storage requirements. External tables can introduce network latency. Ledger tables prevent data deletion once enabled. Graph tables require learning new syntax. Evaluate these constraints during design, not implementation, as the table type you choose determines performance characteristics and operational procedures that cannot be easily changed later.
+Each specialized table type solves specific problems but comes with architectural trade-offs. In-memory tables require sufficient RAM. Temporal tables double storage requirements. External tables can introduce network latency. Ledger tables prevent data deletion once enabled. Graph tables require learning new syntax. Evaluate these constraints during design, not implementation, as the table type you choose determines performance characteristics and operational procedures that can't be easily changed later.

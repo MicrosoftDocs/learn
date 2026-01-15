@@ -12,9 +12,9 @@ Designing efficient indexes is key to achieving good database and application pe
 
 Rowstore indexes organize data in row format, storing all columns of a row together on the same page, which makes them optimal for transactional workloads that retrieve complete records or perform frequent updates.
 
-[*A clustered index*](https://learn.microsoft.com/sql/relational-databases/indexes/clustered-and-nonclustered-indexes-described?azure-portal=true#clustered) sorts and stores the data rows in the table based on their key values. These key values are the columns included in the index definition. There can be only one clustered index per table, because the data rows themselves can be stored in only one order.
+[*A clustered index*](/sql/relational-databases/indexes/clustered-and-nonclustered-indexes-described?azure-portal=true#clustered) sorts and stores the data rows in the table based on their key values. These key values are the columns included in the index definition. There can be only one clustered index per table, because the data rows themselves can be stored in only one order.
 
-[*A nonclustered index*](https://learn.microsoft.com/sql/relational-databases/indexes/clustered-and-nonclustered-indexes-described?azure-portal=true#nonclustered) has a structure separate from the data rows. A nonclustered index contains the nonclustered index key values and each key value entry has a pointer to the data row that contains the key value. You can create multiple nonclustered indexes on a table or indexed view.
+[*A nonclustered index*](/sql/relational-databases/indexes/clustered-and-nonclustered-indexes-described?azure-portal=true#nonclustered) has a structure separate from the data rows. A nonclustered index contains the nonclustered index key values and each key value entry has a pointer to the data row that contains the key value. You can create multiple nonclustered indexes on a table or indexed view.
 
 ```sql
 -- Create clustered index on primary key (defines physical row order)
@@ -85,7 +85,7 @@ ON Product(Price, StockQuantity, Category, ProductName);
 
 ### Monitor columnstore indexes
 
-You can monitor the health and performance of your columnstore indexes by querying the [`sys.dm_db_column_store_row_group_physical_stats`](https://learn.microsoft.com/sql/relational-databases/system-dynamic-management-views/sys-dm-db-column-store-row-group-physical-stats-transact-sql?azure-portal=true) dynamic management view.
+You can monitor the health and performance of your columnstore indexes by querying the [`sys.dm_db_column_store_row_group_physical_stats`](/sql/relational-databases/system-dynamic-management-views/sys-dm-db-column-store-row-group-physical-stats-transact-sql?azure-portal=true) dynamic management view.
 
 The following query shows rowgroup statistics including state (`COMPRESSED`, `OPEN`, or `CLOSED`), row counts, deleted rows, and storage size. Open rowgroups are still accepting inserts in the deltastore, closed rowgroups are waiting for the tuple-mover to compress them, and compressed rowgroups store data in columnar format. High deleted row counts or many small rowgroups indicate fragmentation that you can resolve with `ALTER INDEX REORGANIZE`.
 
