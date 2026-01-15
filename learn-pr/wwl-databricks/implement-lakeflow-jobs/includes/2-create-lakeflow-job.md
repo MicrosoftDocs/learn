@@ -130,4 +130,28 @@ To configure permissions, navigate to **Jobs & Pipelines**, select your job, ope
 
 When a job runs, it executes with the job owner's permissions or the configured service principal's permissions—not the triggering user's permissions. For production jobs, grant `CAN MANAGE` to the pipeline team, `CAN RUN` to users who need manual execution, and `CAN VIEW` to stakeholders requiring visibility.
 
+## Configure run identity and Unity Catalog access
+
+When your job accesses Unity Catalog objects—such as tables, views, or volumes—the job's **run identity** must have the required Unity Catalog privileges. This is a critical prerequisite before configuring any job that reads from or writes to Unity Catalog-managed data.
+
+The run identity is the principal whose permissions Unity Catalog evaluates during job execution. By default, jobs run as the **job owner** (the user who created the job). For production workloads, you can configure a **service principal** as the run identity to avoid dependency on individual user accounts.
+
+Before creating your job, verify that the run identity has the necessary privileges:
+
+| Operation | Required Unity Catalog privilege |
+| --------- | -------------------------------- |
+| Read from a table | `SELECT` on the table |
+| Write to a table | `MODIFY` on the table |
+| Create tables in a schema | `CREATE TABLE` and `USE SCHEMA` on the schema |
+| Access a volume | `READ VOLUME` or `WRITE VOLUME` on the volume |
+
+To grant privileges to a service principal or user, use SQL commands like:
+
+```sql
+GRANT SELECT, MODIFY ON TABLE catalog.schema.table TO `service-principal-id`;
+GRANT USE SCHEMA ON SCHEMA catalog.schema TO `service-principal-id`;
+```
+
+If the run identity lacks the required privileges, the job fails at runtime with an authorization error—even if the job configuration itself is valid. Always verify Unity Catalog access before scheduling production jobs.
+
 With your job created, tasks configured, dependencies set, and permissions assigned, you're ready to run your workflow. The next step is understanding how to monitor job execution and handle run outcomes.

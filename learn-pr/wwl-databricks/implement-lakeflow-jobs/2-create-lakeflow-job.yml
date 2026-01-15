@@ -4,11 +4,11 @@ title: Create job setup and configuration
 metadata:
   title: Create Job Setup and Configuration
   description: Learn how to create and configure a Lakeflow Job in Azure Databricks, including setting up tasks, selecting compute resources, organizing task dependencies, and configuring job access permissions.
-  ms.date: 01/14/2026
+  ms.date: 01/15/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit
   ai-usage: ai-generated
-durationInMinutes: 9
+durationInMinutes: 11
 content: |
   [!include[](includes/2-create-lakeflow-job.md)]
