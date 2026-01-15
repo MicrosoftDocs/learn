@@ -11,18 +11,20 @@ metadata:
   ms.service: purview
 title: Understand Data Security Investigations
 summary: |
-  Effective data loss prevention (DLP) starts with understanding how risk is evaluated and how protection decisions are applied. This module focuses on the concepts and planning considerations that help organizations design DLP policies that protect sensitive data without disrupting everyday work.
+  Data security investigations help organizations understand data risk beyond activity alone. This module focuses on the concepts that define data security investigations, how they differ from alerts and audit, and when deeper, data-focused investigation adds value to security decisions.
 abstract: |
   In this module you learn to:
-  - Explain what data loss prevention is designed to address and where it fits in a data security strategy
-  - Describe how DLP evaluates content, context, and user actions
-  - Identify where DLP can apply protection and how enforcement differs by location
-  - Plan DLP policies based on risk, scope, and operational considerations
-  - Use simulation mode to validate policy behavior before enforcement
-  - Recognize when advanced DLP controls can improve enforcement decisions
+  - Explain what a data security investigation is and what it's designed to address
+  - Describe why data security investigations are needed alongside alerts, cases, and audit
+  - Distinguish between reactive and proactive investigation approaches
+  - Recognize what data security investigations are and are not designed to replace
+  - Identify when deeper investigation adds value and when simpler paths are sufficient
+  - Understand how data security investigations fit into broader Microsoft security workflows
+
 prerequisites: |
-  - Familiarity with basic data security concepts
-  - General awareness of Microsoft Purview as a data security platform
+  - Familiarity with basic security investigation concepts
+  - General awareness of Microsoft security and data protection tools
+
 iconUrl: /training/achievements/generic-badge.svg
 levels:
 - beginner

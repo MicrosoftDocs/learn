@@ -14,4 +14,4 @@ This foundation prepares you to use data security investigations where confidenc
 
 ## Resources
 
-- [Learn about Data Security Investigations](/purview/data-security-investigations)
+- [Learn about Data Security Investigations](/purview/data-security-investigations?azure-portal=true)
