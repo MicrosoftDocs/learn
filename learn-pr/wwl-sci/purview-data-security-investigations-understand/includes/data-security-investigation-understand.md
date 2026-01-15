@@ -34,6 +34,4 @@ These answers support informed decisions. They help avoid both under-reacting to
 
 **Microsoft Purview Data Security Investigations** provides a dedicated investigation experience for this kind of analysis. It brings together data context, activity signals, and AI-assisted analysis so investigations can focus on **data impact**, not just events.
 
-Rather than replacing existing security tools, it complements them by adding depth where understanding data exposure and sensitivity is critical.
-
-In the next unit, you’ll look at **why organizations need this type of investigation**, and why traditional alert-driven approaches often fall short when sensitive data is involved.
+By centering investigations on data sensitivity and exposure, teams can assess risk more accurately and decide when action is actually required.
