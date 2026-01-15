@@ -41,13 +41,9 @@ units:
 - learn.wwl.purview-data-security-investigations-understand.data-security-investigation-need
 - learn.wwl.purview-data-security-investigations-understand.data-security-investigation-clarification
 - learn.wwl.purview-data-security-investigations-understand.data-security-investigation-differentiation
-
-
-
-- learn.wwl.purview-data-security-investigations-understand.understand-data-loss-prevention-protection
-- learn.wwl.purview-data-security-investigations-understand.plan-design-policies
-- learn.wwl.purview-data-security-investigations-understand.understand-deployment-simulation-mode
-- learn.wwl.purview-data-security-investigations-understand.advanced-data-loss-prevention-controls
+- learn.wwl.purview-data-security-investigations-understand.reactive-proactive-investigations
+- learn.wwl.purview-data-security-investigations-understand.deeper-investigation-value
+- learn.wwl.purview-data-security-investigations-understand.data-security-investigations-integration
 - learn.wwl.purview-data-security-investigations-understand.knowledge-check
 - learn.wwl.purview-data-security-investigations-understand.summary
 badge:

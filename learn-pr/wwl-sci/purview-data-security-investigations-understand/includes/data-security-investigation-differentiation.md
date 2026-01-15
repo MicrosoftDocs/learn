@@ -1,4 +1,4 @@
-Security teams rely on several tools to investigate activity and risk. Each serves a different purpose, and understanding those differences helps determine when a data security investigation is the right choice.
+Security teams use several tools to investigate activity and assess risk. Each serves a distinct purpose. Each serves a different purpose, and understanding those differences helps determine when a data security investigation is the right choice.
 
 Data security investigations don't replace alerts, cases, or audit. They fill a specific gap when decisions depend on understanding **data exposure and sensitivity**, not just activity.
 
@@ -10,7 +10,7 @@ Alerts are designed to surface activity that might require attention. They're ef
 - Policy violations
 - Potential security events
 
-Alerts answer questions such as:
+Alerts answer questions like:
 
 - What happened?
 - Who performed the action?
@@ -52,4 +52,4 @@ This approach is most useful when:
 - Audit logs show behavior without clarifying data sensitivity
 - Decisions require validation before remediation or escalation
 
-By adding data context to investigation workflows, data security investigations help bridge the gap between detection and informed decision-making.
+Now that you understand how data security investigations differ from alerts, cases, and audit, you can look at how investigations can be used in both reactive and proactive ways.
