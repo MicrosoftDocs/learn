@@ -115,4 +115,19 @@ To add tags:
 
 Tags also propagate to job clusters, enabling consistent monitoring and cost attribution across your organization.
 
-With your job created, tasks configured, and dependencies set, you're ready to run your workflow. The next step is understanding how to monitor job execution and handle run outcomes.
+## Configure job access permissions
+
+Job permissions control who can view, run, and manage your Lakeflow Jobs independently from compute permissions. Azure Databricks provides four permission levels:
+
+| Permission level   | Capabilities                                                                                              |
+| ------------------ | --------------------------------------------------------------------------------------------------------- |
+| **CAN VIEW**       | View job configuration, task definitions, and run history                                                 |
+| **CAN RUN**        | Everything in CAN VIEW plus trigger job runs manually                                                     |
+| **CAN MANAGE RUN** | Everything in CAN RUN plus cancel runs, view output, and restart failed runs                              |
+| **CAN MANAGE**     | Everything in CAN MANAGE RUN plus edit configuration, modify tasks, change schedules, and set permissions |
+
+To configure permissions, navigate to **Jobs & Pipelines**, select your job, open the **Permissions** tab, and add users or groups with the appropriate level. Job creators and workspace admins automatically receive `CAN MANAGE` permissions.
+
+When a job runs, it executes with the job owner's permissions or the configured service principal's permissions—not the triggering user's permissions. For production jobs, grant `CAN MANAGE` to the pipeline team, `CAN RUN` to users who need manual execution, and `CAN VIEW` to stakeholders requiring visibility.
+
+With your job created, tasks configured, dependencies set, and permissions assigned, you're ready to run your workflow. The next step is understanding how to monitor job execution and handle run outcomes.
