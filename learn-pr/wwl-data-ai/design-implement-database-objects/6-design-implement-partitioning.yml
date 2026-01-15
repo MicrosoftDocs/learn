@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn-dp-xxx.design-implement-database-objects.design-implement-partitioning
+title: Design and implement partitioning
+metadata:
+  title: Design and implement partitioning
+  description: "Learn how to design and implement partitioning strategies for tables and indexes"
+  ms.date: 01/12/2026
+  author: JulianePadrao
+  ms.author: jupadrao
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 8
+content: |
+  [!include[](includes/6-design-implement-partitioning.md)]

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn-dp-xxx.design-implement-database-objects.design-implement-indexes
+title: Design and implement indexes
+metadata:
+  title: Design and implement indexes
+  description: "Learn how to design and implement rowstore and columnstore indexes for optimal query performance"
+  ms.date: 01/14/2026
+  author: JulianePadrao
+  ms.author: jupadrao
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/3a-design-implement-indexes.md)]

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn-dp-xxx.design-implement-database-objects.exercise-create-database-objects
+title: Exercise - Create and configure database objects
+metadata:
+  title: Exercise - Create and configure database objects
+  description: "Hands-on exercise to create and configure database objects"
+  ms.date: 01/12/2026
+  author: JulianePadrao
+  ms.author: jupadrao
+  ms.topic: unit
+azureSandbox: true
+labModal: true
+durationInMinutes: 15
+content: |
+  [!include[](includes/7-exercise-create-database-objects.md)]

@@ -1,0 +1,61 @@
+### YamlMime:Module
+uid: learn-dp-xxx.design-implement-database-objects
+metadata:
+  title: Design and implement database objects
+  description: "Learn how to design and implement database objects in SQL Server, Azure SQL, and SQL databases in Microsoft Fabric, including tables, indexes, constraints, and specialized table types."
+  ms.date: 01/12/2026
+  author: JulianePadrao
+  ms.author: jupadrao
+  ms.topic: module
+  ms.service: sql
+  ms.subservice: t-sql
+  ms.devlang: tsql
+title: Design and implement database objects in SQL Server
+summary: This module covers designing and implementing various database objects including tables with different data types, specialized table types, indexes, constraints, and partitioning strategies. You'll learn how to create and optimize database objects for modern SQL platforms.
+abstract: |
+  After completing this module, you'll be able to:
+  - Design and implement tables with appropriate data types, sizes, and columns
+  - Implement specialized tables including in-memory, temporal, external, LEDGER, and GRAPH tables
+  - Design and implement JSON columns and indexes
+  - Design and implement database constraints including primary key, foreign key, unique key, CHECK, and DEFAULT
+  - Design and implement SEQUENCES
+  - Design and implement partitioning strategies for tables and indexes
+prerequisites: |
+  Before starting this module, you should have:
+  - Experience writing T-SQL queries
+  - Basic understanding of database concepts
+  - Familiarity with relational database design principles
+iconUrl: /training/achievements/design-implement-database-objects.svg
+levels:
+- intermediate
+- advanced
+roles:
+- data-engineer
+- database-administrator
+- developer
+- solution-architect
+products:
+- sql-server
+- azure-sql-database
+- azure-sql-managed-instance
+- fabric
+subjects:
+- databases
+- data-management
+- data-engineering
+- cloud-computing
+- app-development
+units:
+- learn-dp-xxx.design-implement-database-objects.introduction
+- learn-dp-xxx.design-implement-database-objects.understanding-platform-choices
+- learn-dp-xxx.design-implement-database-objects.design-implement-tables
+- learn-dp-xxx.design-implement-database-objects.design-implement-indexes
+- learn-dp-xxx.design-implement-database-objects.specialized-table-types
+- learn-dp-xxx.design-implement-database-objects.design-implement-constraints
+- learn-dp-xxx.design-implement-database-objects.design-implement-json
+- learn-dp-xxx.design-implement-database-objects.design-implement-partitioning
+- learn-dp-xxx.design-implement-database-objects.exercise-create-database-objects
+- learn-dp-xxx.design-implement-database-objects.knowledge-check
+- learn-dp-xxx.design-implement-database-objects.summary
+badge:
+  uid: learn-dp-xxx.design-implement-database-objects.badge

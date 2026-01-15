@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn-dp-xxx.design-implement-database-objects.specialized-table-types
+title: Implement specialized table types
+metadata:
+  title: Implement specialized table types
+  description: "Learn how to implement in-memory, temporal, external, LEDGER, and GRAPH tables"
+  ms.date: 01/12/2026
+  author: JulianePadrao
+  ms.author: jupadrao
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-specialized-table-types.md)]
