@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.security-management.security
+title: Security
+metadata:
+  title: Security
+  description: This content is part of the "Security and management for Windows 11 Pro" module.
+  ms.date: 01/13/2026
+  author: Stephanie-Rosenzweig
+  ms.author: v-stephanier
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/2-security.md)]
