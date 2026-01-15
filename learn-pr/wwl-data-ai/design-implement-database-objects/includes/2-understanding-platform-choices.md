@@ -38,6 +38,4 @@ The [SQL IaaS Agent extension](/azure/azure-sql/virtual-machines/windows/sql-ser
 
 Intelligent performance features are enabled by default, including [automatic index creation](/azure/azure-sql/database/automatic-tuning-overview?azure-portal=true). The platform also supports AI development with semantic search and retrieval-augmented generation (RAG). Database portability is supported through [SqlPackage](/fabric/database/sql/sqlpackage?azure-portal=true) for .bacpac/.dacpac operations, [Fabric source control](/fabric/cicd/cicd-overview?azure-portal=true) for git integration, and [GraphQL APIs](/fabric/database/sql/graphql-api?azure-portal=true) for modern API interfaces.
 
-[Integration with Power BI](/fabric/database/sql/data-modeling?azure-portal=true), Data Factory, and Data Science notebooks enables end-to-end workflows from operational database through analytics to business intelligence.
-
 Throughout this module, you'll learn techniques applicable across all platforms, with callouts for platform-specific capabilities.
