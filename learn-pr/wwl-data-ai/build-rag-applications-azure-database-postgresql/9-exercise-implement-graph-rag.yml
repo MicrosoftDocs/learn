@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.build-rag-applications-azure-database-postgresql.exercise-implement-graphrag
+title: "Exercise: Implement GraphRAG with Azure Database for PostgreSQL"
+metadata:
+  title: "Exercise: Implement GraphRAG with Azure Database for PostgreSQL"
+  description: "Implement GraphRAG in Azure Database for PostgreSQL, using a knowledge graph to filter results before ranking with embeddings."
+  ms.date: 08/08/2025
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+durationInMinutes: 30
+content: |
+  [!include[](includes/9-exercise-implement-graph-rag.md)]
