@@ -2,7 +2,7 @@ Imagine you’re building an internal assistant that answers employee questions 
 
 ## Why RAG matters
 
-LLMs are trained on vast quantities of text but don’t know your organization’s data or proprietary content. To address this problem, RAG retrieves relevant information from trusted sources you provide, grounding the LLM model’s response. This approach improves accuracy, reduces hallucinations, and ensures answers are based on facts you control.
+LLMs are trained on vast quantities of text but don’t know your organization’s data or proprietary content. To address this problem, RAG retrieves relevant information from trusted sources you provide, grounding the LLM model’s response. This approach improves accuracy, reduces AI-generated responses that might be incorrect, and ensures answers are based on facts you control.
 
 ## How the RAG pipeline works
 

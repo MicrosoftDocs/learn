@@ -13,6 +13,7 @@ Text similarity is good at "this looks like that" answers, but large sets of sim
 When similarity alone isn't enough, **GraphRAG** is a method from *Microsoft Research* that improves RAG by extracting a knowledge graph from your source data and using that structure to supply better context to the Large Language Model (LLM). It has three main steps:
 
 1. **Graph extraction**
+
    In the company policy database example, use the `company_policies` table as the source. Each row becomes a `Policy` node with `policy_id`, `title`, `policy_text`, `department`, and `category` as properties. Create `Entity` nodes from values you already have (one per department and one per category). Optionally add `Entity` nodes for important terms found in `policy_text` (such as "taxi reimbursement" or "airport"). Connect them with edges:
 
    - `(:Policy)-[:BELONGS_TO]->(:Entity {type: 'Department', name: department})`
@@ -37,6 +38,6 @@ Use *GraphRAG* in *Azure Database for PostgreSQL* to keep data and relationships
 
 You can keep reranking inside the database with SQL semantic operators. The `rank()` operator from the `azure_ai` semantic operators lets you rerank top candidates with state of the art models directly in a query, so you can combine semantic ranking with graph scoring without leaving Postgres. As your data grows, pair the graph step with the right vector index. `DiskANN` in *Azure Database for PostgreSQL* supports high dimensional embeddings (up to 16,000 dimensions), faster index builds, and a Product Quantization that can reduce memory and cost while maintaining high accuracy. Reported gains include up to 10× faster performance and about 4× cost savings versus an *HNSW* (Hierarchical Navigable Small Worlds) index.
 
-## Key Takeaways
+## Key takeaways
 
 A similarity-only search often falls short on real questions. *GraphRAG* with *Apache AGE* adds a knowledge graph so the model gets structure and meaning. You extract relationships into an *AGE* graph, keep short summaries on the nodes, and at question time run vector search and an *openCypher* query to see how the candidates connect. In *Azure Database for PostgreSQL*, this process all stays in one place. Tables hold the content, *Apache AGE* manages the graph, `pgvector` pulls likely passages, and a light rerank with simple fusion tightens the order. The result is a smaller, clearer context that points to the right sources and produces answers you can verify.

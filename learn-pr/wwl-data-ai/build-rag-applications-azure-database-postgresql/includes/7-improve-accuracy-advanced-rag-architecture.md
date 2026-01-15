@@ -57,6 +57,6 @@ LIMIT 5;
 > [!TIP]
 > You can run separate keyword and vector queries and rerank the merged set (for example, with Reciprocal Rank Fusion) when you need both signals.
 
-## **Key Takeaways**
+## Key takeaways
 
 Accuracy isn’t just about better models, it’s about better retrieval. Start simple, *good chunking + hybrid search* often delivers big wins. *Advanced patterns* (GraphRAG, hierarchical indexing, agentic workflows) unlock new capabilities for complex environments. It's not just about quick searches, it's about finding the right information efficiently and the methods that can help achieve that.

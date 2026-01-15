@@ -12,13 +12,13 @@ After completing this module, you learn:
 
 Additional Reading:
 
-1. [Azure Database for PostgreSQL Documentation](/azure/postgresql/)  
-1. [pgvector Extension for PostgreSQL](https://github.com/pgvector/pgvector)  
-1. [LangChain Documentation](https://python.langchain.com/en/latest/)  
-1. [Azure OpenAI Service Overview](/azure/cognitive-services/openai/)
-1. [Tutorial: Create a recommendation system with Azure Database for PostgreSQL and Azure OpenAI](/azure/postgresql/flexible-server/generative-ai-semantic-search)
-1. [Introducing the GraphRAG Solution for Azure Database for PostgreSQL](https://techcommunity.microsoft.com/blog/adforpostgresql/introducing-the-graphrag-solution-for-azure-database-for-postgresql/4299871)
-1. [New Generative AI Features in Azure Database for PostgreSQL](https://techcommunity.microsoft.com/blog/adforpostgresql/new-generative-ai-features-in-azure-database-for-postgresql/4414858)
-1. [AGE extension with Azure Database for PostgreSQL](/azure/postgresql/flexible-server/generative-ai-age-overview)
-1. [Large language model end-to-end evaluation](/azure/architecture/ai-ml/guide/rag/rag-llm-evaluation-phase)
-1. [GraphRAG Solution Accelerator for Azure Database for PostgreSQL](https://github.com/Azure-Samples/graphrag-legalcases-postgres/)
+- [Azure Database for PostgreSQL Documentation](/azure/postgresql/)  
+- [pgvector Extension for PostgreSQL](https://github.com/pgvector/pgvector)  
+- [LangChain Documentation](https://python.langchain.com/en/latest/)  
+- [Azure OpenAI Service Overview](/azure/cognitive-services/openai/)
+- [Tutorial: Create a recommendation system with Azure Database for PostgreSQL and Azure OpenAI](/azure/postgresql/flexible-server/generative-ai-semantic-search)
+- [Introducing the GraphRAG Solution for Azure Database for PostgreSQL](https://techcommunity.microsoft.com/blog/adforpostgresql/introducing-the-graphrag-solution-for-azure-database-for-postgresql/4299871)
+- [New Generative AI Features in Azure Database for PostgreSQL](https://techcommunity.microsoft.com/blog/adforpostgresql/new-generative-ai-features-in-azure-database-for-postgresql/4414858)
+- [AGE extension with Azure Database for PostgreSQL](/azure/postgresql/flexible-server/generative-ai-age-overview)
+- [Large language model end-to-end evaluation](/azure/architecture/ai-ml/guide/rag/rag-llm-evaluation-phase)
+- [GraphRAG Solution Accelerator for Azure Database for PostgreSQL](https://github.com/Azure-Samples/graphrag-legalcases-postgres/)

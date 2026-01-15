@@ -113,9 +113,9 @@ def generate_answer(question, chunks):
 
 > [!NOTE]
 > To use *AzureChatOpenAI*:
->> - Pass messages as a list of (role, content) tuples (or message objects).  
->> - Provide Azure settings via env vars and constructor: `AZURE_OPENAI_API_KEY`, `AZURE_OPENAI_ENDPOINT`, and `azure_deployment`, `api_version`.  
->> - Keep `temperature=0` for factual answers. Larger values increase creativity but might reduce accuracy.
+> - Pass messages as a list of (role, content) tuples (or message objects).  
+> - Provide Azure settings via env vars and constructor: `AZURE_OPENAI_API_KEY`, `AZURE_OPENAI_ENDPOINT`, and `azure_deployment`, `api_version`.  
+> - Keep `temperature=0` for factual answers. Larger values increase creativity but might reduce accuracy.
 
 This function is the core of the RAG application, handling the interaction with the language model. Notice how retrieved chunks are formatted and included in the context. Additionally, the system prompt is designed to ensure the model adheres to the context provided and reduces hallucination. Finally, the messages are processed by the language model to generate a response using the *LangChain* **invoke** method. The `invoke` method is called with the formatted messages, and the model's response is returned as natural language text.
 

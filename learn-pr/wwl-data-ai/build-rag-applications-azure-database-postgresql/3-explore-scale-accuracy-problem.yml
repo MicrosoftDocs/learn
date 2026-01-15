@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.build-rag-applications-azure-database-postgresql.explore-scale-accuracy-problem
-title: Explore Information retrieval challenges - scale and accuracy
+title: Explore information retrieval challenges - scale and accuracy
 metadata:
-  title: Explore Information retrieval challenges - scale and accuracy
+  title: Explore information retrieval challenges - scale and accuracy
   description: "Explore how information retrieval balances scale and accuracy, then set a baseline to measure and improve search performance."
   ms.date: 08/08/2025
   author: wwlpublish

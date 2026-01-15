@@ -50,6 +50,6 @@ While measuring *accuracy* isn't as straightforward as measuring for *scale*, yo
 
 As your application grows, reevaluate your application's performance and adjust your RAG pipeline as needed. It's important to monitor both retrieval speed and accuracy over time.
 
-## Key Takeaways
+## Key takeaways
 
 For a Postgres RAG path, you keep the retrieval in the database, start with `pgvector`, and move to the appropriate index as the data set and traffic grows. Add a *Semantic Ranking* pass in SQL if ordering needs to be tighter. Bring in *GraphRAG* to add a short graph step when relationships carry meaning. Evaluate regularly and monitor in production so the system stays both fast and correct as data and usage change.
