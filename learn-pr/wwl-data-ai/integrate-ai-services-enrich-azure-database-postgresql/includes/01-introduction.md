@@ -4,7 +4,7 @@ Imagine a vacation rental company managing thousands of listings and reviews. Th
 
 This module guides you through implementing these intelligent features, showing how to enrich applications with actionable insights and multilingual support, while keeping data secure and accessible.
 
-**In this module, you will learn to:**
+**In this module, you learn:**
 
 - Summarize long property descriptions and guest reviews for quick consumption.
 - Analyze sentiment to uncover satisfaction trends and address issues.
@@ -12,7 +12,7 @@ This module guides you through implementing these intelligent features, showing 
 - Detect and redact sensitive information to ensure privacy and compliance.
 - Translate content to support international guests and hosts.
 
-After completing this module, you’ll be able to:
+After completing this module, you can:
 
 - Apply Azure Language services for text summarization and sentiment analysis.
 - Use key phrase extraction and entity recognition to structure unstructured data.

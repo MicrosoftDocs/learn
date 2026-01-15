@@ -10,6 +10,10 @@ By implementing these features, you can transform unstructured data into structu
 - Safeguard privacy by detecting and redacting Personal Identifiable Information (PII).
 - Translate listings and reviews to reach a broader audience.
 
+## Learn more
+
+For more information about the subjects discussed in this module, refer to the following resources:
+
 [Integrate Azure AI capabilities into Azure Database for PostgreSQL](/azure/postgresql/flexible-server/how-to-integrate-azure-ai)
 [Integrate Azure Database for PostgreSQL with Azure Cognitive Services](/azure/postgresql/flexible-server/generative-ai-azure-cognitive)
 [Gen AI simplified: The azure_ai extension now generally available on Azure Database for PostgreSQL](https://techcommunity.microsoft.com/blog/adforpostgresql/gen-ai-simplified-the-azure-ai-extension-now-generally-available-on-azure-databa/4146139)
