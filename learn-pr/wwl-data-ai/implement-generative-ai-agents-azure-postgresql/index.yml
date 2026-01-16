@@ -1,0 +1,49 @@
+### YamlMime:Module
+uid: learn.wwl.implement-generative-ai-agents-azure-postgresql
+metadata:
+  title: Implement generative AI agents with Azure Database for PostgreSQL
+  description: "Learn to build, integrate, and evaluate generative AI agents using Azure Database for PostgreSQL."
+  ms.date: 10/09/2025
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: module
+  ms.service: azure-database-postgresql
+  ai-usage: ai-assisted
+title: Implement generative AI agents with Azure Database for PostgreSQL
+summary: This module explores how to implement generative AI agents using Azure Database for PostgreSQL. You'll learn about agent architectures, information retrieval techniques, and how to integrate AI agents with Azure services like Azure AI Foundry Agent Service and Model Context Protocol (MCP). The module includes hands-on exercises to build and test an AI agent solution.
+abstract: |
+  By the end of this module, you'll be able to:
+  * Understand agent architectures and frameworks
+  * Apply information retrieval for agents
+  * Implement and integrate agents with Azure services
+  * Build and test an AI agent solution
+  * Assess your knowledge of generative AI agents
+prerequisites: |
+  * Ability to write basic SQL queries
+  * Comfortable with provisioning Azure resources and enabling extensions
+iconUrl: /training/achievements/generic-database.svg
+levels:
+  - intermediate
+roles:
+  - developer
+  - data-engineer
+  - solution-architect
+products:
+  - azure
+  - azure-database-postgresql
+subjects:
+  - databases
+  - artificial-intelligence
+  - cloud-computing
+units:
+  - learn.wwl.implement-generative-ai-agents-azure-postgresql.introduction
+  - learn.wwl.implement-generative-ai-agents-azure-postgresql.understand-ai-agents-azure-database-postgresql
+  - learn.wwl.implement-generative-ai-agents-azure-postgresql.apply-information-retrieval-agents
+  - learn.wwl.implement-generative-ai-agents-azure-postgresql.evaluate-agentic-frameworks-integration-postgresql
+  - learn.wwl.implement-generative-ai-agents-azure-postgresql.implement-ai-agents-foundry-agent-service
+  - learn.wwl.implement-generative-ai-agents-azure-postgresql.exercise-build-ai-agent-foundry-azure-database-postgresql
+  - learn.wwl.implement-generative-ai-agents-azure-postgresql.integrate-ai-agents-mcp-postgresql
+  - learn.wwl.implement-generative-ai-agents-azure-postgresql.knowledge-check
+  - learn.wwl.implement-generative-ai-agents-azure-postgresql.summary
+badge:
+  uid: learn.wwl.implement-generative-ai-agents-azure-postgresql.badge
