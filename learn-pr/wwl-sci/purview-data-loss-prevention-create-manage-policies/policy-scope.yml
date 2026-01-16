@@ -1,1 +1,15 @@
-Scope the policy deliberately
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-data-loss-prevention-create-manage-policies.policy-scope
+title: Scope the policy deliberately
+metadata:
+  title: Scope the policy deliberately
+  description: "Scope the policy deliberately"
+  ms.date: 01/15/2026
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 2
+content: |
+  [!include[](includes/policy-scope.md)]

@@ -1,1 +1,15 @@
-Choose actions that match risk
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-data-loss-prevention-create-manage-policies.policy-actions
+title: Choose actions that match risk
+metadata:
+  title: Choose actions that match risk
+  description: "Choose actions that match risk"
+  ms.date: 01/15/2026
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 2
+content: |
+  [!include[](includes/policy-actions.md)]

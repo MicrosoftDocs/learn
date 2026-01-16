@@ -1,1 +1,15 @@
-Establish policy intent and boundaries
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-data-loss-prevention-create-manage-policies.policy-intent
+title: Establish policy intent and boundaries
+metadata:
+  title: Establish policy intent and boundaries
+  description: "Establish policy intent and boundaries"
+  ms.date: 01/15/2026
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 2
+content: |
+  [!include[](includes/policy-intent.md)]

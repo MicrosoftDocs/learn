@@ -1,1 +1,15 @@
-Validate policies before enforcement
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-data-loss-prevention-create-manage-policies.policy-validation
+title: Validate policies before enforcement
+metadata:
+  title: Validate policies before enforcement
+  description: "Validate policies before enforcement"
+  ms.date: 01/15/2026
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 2
+content: |
+  [!include[](includes/policy-validation.md)]

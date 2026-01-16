@@ -1,1 +1,15 @@
-Decide how to start a policy
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-data-loss-prevention-create-manage-policies.template-custom-policy
+title: Decide how to start a policy
+metadata:
+  title: Decide how to start a policy
+  description: "Decide how to start a policy"
+  ms.date: 01/15/2026
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 2
+content: |
+  [!include[](includes/template-custom-policy.md)]
