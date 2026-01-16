@@ -10,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 30
 content: |
-  includes/06-exercise-build-ai-agent-foundry-azure-database-postgresql.md]
+  [!include[](includes/06-exercise-build-ai-agent-foundry-azure-database-postgresql.md)]

@@ -10,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 5
 content: |
-  includes/05-implement-ai-agents-foundry-agent-service.md]
+  [!include[](includes/05-implement-ai-agents-foundry-agent-service.md)]

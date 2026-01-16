@@ -10,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 5
 content: |
-  includes/04-evaluate-agentic-frameworks-integration-postgresql.md]
+  [!include[](includes/04-evaluate-agentic-frameworks-integration-postgresql.md)]

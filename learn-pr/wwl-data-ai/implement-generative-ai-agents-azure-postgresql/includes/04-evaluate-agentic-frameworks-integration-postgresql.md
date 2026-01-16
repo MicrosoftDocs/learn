@@ -1,5 +1,3 @@
-# Unit 4 – Evaluate agentic frameworks for integration with PostgreSQL
-
 AI agents rely on orchestration frameworks to manage tasks, coordinate tools, and maintain context. These frameworks provide the structure needed to build agents that can reason, retrieve information, and interact with external systems. *Azure Database for PostgreSQL* integrates with several of these frameworks, making it easier to build applications that combine data, logic, and language models.  
 
 ## Identify key frameworks

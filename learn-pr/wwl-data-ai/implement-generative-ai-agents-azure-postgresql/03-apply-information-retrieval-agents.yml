@@ -10,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 5
 content: |
-  includes/03-apply-information-retrieval-agents.md]
+  [!include[](includes/03-apply-information-retrieval-agents.md)]

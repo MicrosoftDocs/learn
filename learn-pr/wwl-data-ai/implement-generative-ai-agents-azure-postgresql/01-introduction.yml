@@ -10,4 +10,5 @@ metadata:
   ms.topic: unit
 durationInMinutes: 1
 content: |
-  includes/01-introduction.md]
+  [!include[](includes/01-introduction.md)]
+  

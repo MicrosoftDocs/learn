@@ -10,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 5
 content: |
-  includes/02-understand-ai-agents-azure-database-postgresql.md]
+  [!include[](includes/02-understand-ai-agents-azure-database-postgresql.md)]

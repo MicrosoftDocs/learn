@@ -10,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 5
 content: |
-  includes/07-integrate-ai-agents-mcp-postgresql.md]
+  [!include[](includes/07-integrate-ai-agents-mcp-postgresql.md)]
