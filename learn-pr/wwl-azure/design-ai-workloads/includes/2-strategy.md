@@ -32,7 +32,7 @@ PaaS solutions are suited for teams that need more control over their AI workflo
 
 - [Azure Container Apps](/azure/container-apps/overview) is a serverless platform that allows you to maintain less infrastructure and save costs while running containerized applications.
 
-- [Azure AI service](/ai-services/what-are-ai-services) helps create applications with customizable APIs and models. Example applications include natural language, speech, and vision processing. 
+- Azure AI service helps create applications with customizable APIs and models. Example applications include natural language, speech, and vision processing. 
 
 ### Build AI models with Azure infrastructure services (IaaS) for maximum control
 

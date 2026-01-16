@@ -10,10 +10,10 @@ Use a skills-and-data readiness framework to objectively evaluate your organizat
 
 | Level | Skills| Data Readiness | Feasible use cases |
 | - | - | - | - |
-| Level 1 | Basic AI concepts, simple prompts| Minimal to enterprise data | Azure quick start projects, Copilot solutions |
-| Level 2 | Model selection, deployment basics, data cleaning| Minimal too small, structured datasets | Analytical AI, generative AI app (no RAG), and simple ML app| 
-| Level 3 | Prompt engineering, preprocessing, chunking| Historical business data available | Generative AI app with RAG, custom ML model, small AI model on Azure VMs |
-| Level 4 | Advanced ML, orchestration, optimization| Large high-quality datasets | Large AI workloads on VMs, AKS, or ACA |
+| 1 | Basic AI concepts, simple prompts| Minimal to enterprise data | Azure quick start projects, Copilot solutions |
+| 2 | Model selection, deployment basics, data cleaning| Minimal too small, structured datasets | Analytical AI, generative AI app (no RAG), and simple ML app| 
+| 3 | Prompt engineering, preprocessing, chunking| Historical business data available | Generative AI app with RAG, custom ML model, small AI model on Azure VMs |
+| 4 | Advanced ML, orchestration, optimization| Large high-quality datasets | Large AI workloads on VMs, AKS, or ACA |
 
 ### Acquire AI skills 
 

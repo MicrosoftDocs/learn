@@ -11,7 +11,7 @@ You don’t need a separate 'AI landing zone' to get started. AI services can be
 :::image type="content" source="../media/virtual-machine-concepts.png" alt-text="Diagram of a virtual machine with platform concepts.":::
 
 
-[AI workloads](/azure/cloud-adoption-framework/scenarios/ai/infrastructure/compute)) rely on specialized virtual machines (VMs) to handle intensive computation, large datasets, and accelerated training or inferencing. When you use curated VM images, such as Data Science Virtual Machines, your team gets started quickly with preinstalled AI tools and frameworks.
+[AI workloads](/azure/cloud-adoption-framework/scenarios/ai/infrastructure/compute) rely on specialized virtual machines (VMs) to handle intensive computation, large datasets, and accelerated training or inferencing. When you use curated VM images, such as Data Science Virtual Machines, your team gets started quickly with preinstalled AI tools and frameworks.
 
 Choosing the right VM size is critical to balancing performance and cost, especially when distinguishing between training and inference workloads. As AI solutions scale, compute orchestration improves efficiency and reproducibility across VM clusters, while containers provide a consistent, portable way to package and run AI workloads across environments.
 
