@@ -7,6 +7,8 @@ metadata:
   author: wwlpublish
   ms.author: calopez
   ms.topic: module
+  ms.service: azure-database-postgresql
+  ai-usage: ai-assisted
 title: Develop PostgreSQL solutions in Visual Studio Code with the PostgreSQL extension and GitHub Copilot
 summary: Learn how to streamline PostgreSQL development using the Visual Studio Code PostgreSQL extension and GitHub Copilot.
 abstract: Learn how GitHub Copilot and the PostgreSQL extension support writing, refining, and troubleshooting SQL in Visual Studio Code.
@@ -23,7 +25,11 @@ roles:
   - data-engineer
 products:
   - azure
-  - azure-postgresql
+  - azure-database-postgresql
+subjects:
+  - databases
+  - artificial-intelligence
+  - cloud-computing
 units:
   - learn.wwl.enhance-postgresql-development-github-copilot-visual-studio-code.introduction
   - learn.wwl.enhance-postgresql-development-github-copilot-visual-studio-code.understand-postgresql-extension
@@ -32,3 +38,5 @@ units:
   - learn.wwl.enhance-postgresql-development-github-copilot-visual-studio-code.exercise-enhance-postgresql-development-github-copilot
   - learn.wwl.enhance-postgresql-development-github-copilot-visual-studio-code.knowledge-check
   - learn.wwl.enhance-postgresql-development-github-copilot-visual-studio-code.summary
+badge:
+  uid: learn.wwl.build-rag-applications-azure-database-postgresql.badge
