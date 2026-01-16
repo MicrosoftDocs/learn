@@ -18,7 +18,7 @@ quiz:
     choices:
     - content: "SaaS, because it provides built-in governance and minimal setup"
       isCorrect: false
-      explanation: "Incorrect. SaaS focuses on ease of use and productivity, not custom or regulated model training."
+      explanation: "Incorrect. SaaS focuses on ease of use and productivity, not model training."
     - content: "PaaS, because it reduces operational overhead while supporting AI workloads"
       isCorrect: false
       explanation: "Incorrect. PaaS reduces infrastructure management but does not provide the level of control required for this scenario."
