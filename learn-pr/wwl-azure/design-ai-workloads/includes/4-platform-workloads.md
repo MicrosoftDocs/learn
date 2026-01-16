@@ -21,7 +21,7 @@ To build effective applications, select resources that ground AI models and deli
 
 In this example, an AI app uses Azure AI Services and Azure Machine Learning to provide a response. 
 
-:::image type="content" source="../media/nongenerative-workflow.png" alt-text="Diagram of a nongenerative workflow.":::
+:::image type="content" source="../media/traditional-workflow.png" alt-text="Diagram of a nongenerative workflow.":::
 
 Select resources that help you build AI workloads with prebuilt or custom solutions. You send data into a model and get results—no grounding step required. You can use prebuilt AI services if you want something simple with no extra compute, or Azure Machine Learning if you need to train or customize a model. Either way, you choose the compute you need, your data source, and any optional processing tools.
 

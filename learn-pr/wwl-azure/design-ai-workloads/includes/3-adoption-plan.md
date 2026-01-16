@@ -8,16 +8,16 @@ An [AI adoption plan](/azure/cloud-adoption-framework/scenarios/ai/plan) helps t
 
 Use a skills-and-data readiness framework to objectively evaluate your organization's current AI capability. This framework helps determine which use cases are feasible based on your maturity level.
 
-| Level| Skills| Data Readiness | Feasible use cases |
+| Level | Skills| Data Readiness | Feasible use cases |
 | - | - | - | - |
-| Level 1| Basic AI concepts, simple prompts| Minimal to enterprise data | Azure quick start projects, Copilot solutions |
-| Level 2| Model selection, deployment basics, data cleaning| Minimal too small, structured datasets | Custom analytical AI, generative AI app (no RAG), custom ML app, model fine tuning | 
-| Level 3| Prompt engineering, preprocessing, chunking| Historical business data available | Generative AI app with RAG, train and deploy an ML model, small AI model on Azure VMs |
-| Level 4| Advanced ML, orchestration, optimization| Large high-quality datasets | Large AI workloads on VMs, AKS, or ACA |
+| Level 1 | Basic AI concepts, simple prompts| Minimal to enterprise data | Azure quick start projects, Copilot solutions |
+| Level 2 | Model selection, deployment basics, data cleaning| Minimal too small, structured datasets | Analytical AI, generative AI app (no RAG), and simple ML app| 
+| Level 3 | Prompt engineering, preprocessing, chunking| Historical business data available | Generative AI app with RAG, custom ML model, small AI model on Azure VMs |
+| Level 4 | Advanced ML, orchestration, optimization| Large high-quality datasets | Large AI workloads on VMs, AKS, or ACA |
 
 ### Acquire AI skills 
 
-Address any skills gaps through training, hiring, or partnerships. Fixing your skill gaps reduces delays and lowers project risk. You can use the [AI learning hub](https://learn.microsoft.com/ai/) platform for free AI training, certifications, and product guidance. 
+Address any skills gaps through training, hiring, or partnerships. Fixing your skill gaps reduces delays and lowers project risk. Microsoft Learn is provides free AI training, certifications, and product guidance. 
 
 ## Access AI resources
 Clear access and licensing planning helps avoid delays, control costs, and stay compliant. Each AI solution has different access needs, so you need to understand them to plan security and budgets correctly.

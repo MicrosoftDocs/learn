@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.design-ai-workloadsplatform-workloads
+uid: learn.wwl.design-ai-workloads.platform-workloads
 title: "Design PaaS AI workloads on Azure"
 metadata:
   title: "Design PaaS AI Workloads on Azure"
@@ -10,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 4
 content: |
-  [!include[](includes/5-platform-workloads.md)]
+  [!include[](includes/4-platform-workloads.md)]

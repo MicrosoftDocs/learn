@@ -9,7 +9,7 @@ Tip: For more information, consider the [Introduction to AI Center of Excellence
 
 ### AI deployment 
 
-Use the deployment model that fits how your org works, usually one Foundry instance per business unit, with separate projects for each use case. Deploy in the correct Azure regions for performance and compliance. Monitor resources with Azure Monitor and manage configurations and costs through the [Foundry Management Center](azure/ai-foundry/control-plane/how-to-manage-compliance-security?view=foundry). Use API Management when multiple apps are deployed.
+Use the deployment model that fits how your org works, usually one Foundry instance per business unit, with separate projects for each use case. Deploy in the correct Azure regions for performance and compliance. Monitor resources with Azure Monitor and manage configurations and costs through the [Foundry Management Center](/azure/ai-foundry/control-plane/how-to-manage-compliance-security). Use API Management when multiple apps are deployed.
 
 ### AI models 
 

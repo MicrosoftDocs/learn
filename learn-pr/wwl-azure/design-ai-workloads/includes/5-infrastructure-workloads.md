@@ -6,28 +6,27 @@ You don’t need a separate 'AI landing zone' to get started. AI services can be
 
 :::image type="content" source="../media/landing-zones.png" alt-text="Diagram of a landing zone with AI workloads.":::
 
-### [Compute (IaaS)](https://learn.microsoft.com/azure/cloud-adoption-framework/scenarios/ai/infrastructure/compute)
+### Compute (IaaS)
 
 :::image type="content" source="../media/virtual-machine-concepts.png" alt-text="Diagram of a virtual machine with platform concepts.":::
 
 
-AI workloads rely on specialized virtual machines (VMs) to handle intensive computation, large datasets, and accelerated training or inferencing. When you use curated VM images, such as Data Science Virtual Machines, your team gets started quickly with preinstalled AI tools and frameworks.
+[AI workloads](/azure/cloud-adoption-framework/scenarios/ai/infrastructure/compute)) rely on specialized virtual machines (VMs) to handle intensive computation, large datasets, and accelerated training or inferencing. When you use curated VM images, such as Data Science Virtual Machines, your team gets started quickly with preinstalled AI tools and frameworks.
 
 Choosing the right VM size is critical to balancing performance and cost, especially when distinguishing between training and inference workloads. As AI solutions scale, compute orchestration improves efficiency and reproducibility across VM clusters, while containers provide a consistent, portable way to package and run AI workloads across environments.
 
-### [Storage (IaaS)](https://learn.microsoft.com/azure/cloud-adoption-framework/scenarios/ai/infrastructure/storage)
+### Storage (IaaS)
 
 :::image type="content" source="../media/storage-concepts-1.png" alt-text="Diagram of a storage account with platform concepts.":::
 
 
-AI workloads demand storage that delivers high throughput and low latency for fast training and inferencing, while also supporting data consistency and versioning across distributed systems. To meet these needs, balance performance, data movement, cost, and service integration.
+AI workloads demand [storage](/azure/cloud-adoption-framework/scenarios/ai/infrastructure/storage) that delivers high throughput and low latency for fast training and inferencing, while also supporting data consistency and versioning across distributed systems. To meet these needs, balance performance, data movement, cost, and service integration.
 
 Use high-performance file storage for hot data actively used during AI jobs to support real-time processing and experimentation. After jobs are completed, move inactive datasets and artifacts to Azure Blob Storage for durable, cost-efficient retention. Apply lifecycle management policies to automatically tier older data to Cool or Archive storage, keeping data accessible while controlling costs.
 
-### [Networking (IaaS)](https://learn.microsoft.com/azure/cloud-adoption-framework/scenarios/ai/platform/networking)
+### Networking (IaaS)
 
 :::image type="content" source="../media/network-concepts.png" alt-text="Diagram of a virtual network with platform concepts.":::
-
 
 AI workloads can move a ton of data, so you want a connection that doesn’t slow everything down. Consider Azure ExpressRoute that gives you a dedicated, high-bandwidth path that keeps data flowing quickly and reliably.
 
