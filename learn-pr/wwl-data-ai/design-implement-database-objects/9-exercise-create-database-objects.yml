@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn-wwl.design-implement-database-objects.exercise-create-database-objects
-title: Exercise - Create and configure database objects
+title: Exercise - Create and maintain database objects
 metadata:
-  title: Exercise - Create and configure database objects
-  description: "Hands-on exercise to create and configure database objects"
+  title: Exercise - Create and maintain database objects
+  description: "Hands-on exercise to create and maintain database objects"
   ms.date: 01/12/2026
   author: JulianePadrao
   ms.author: jupadrao
