@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.design-ai-workloads.secure-workloads
-title: "Secure AI Workloads in Azure"
+title: "Secure AI"
 metadata:
-  title: "Secure AI Workloads in Azure"
+  title: "Secure AI"
   description: "Learn to secure AI workloads by identifying risks, protecting resources, and safeguarding data."
   ms.date: 01/09/2026
   author: wwlpublish

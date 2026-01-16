@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.design-ai-workloads.introduction
-title: "Introduction to AI Workloads Design"
+title: "Introduction"
 metadata:
-  title: "Introduction to AI Workloads Design"
+  title: "Introduction"
   description: "Learn to design AI workloads on Azure, align strategy with goals, and apply best practices for governance, security, and responsible AI."
   ms.date: 01/09/2026
   author: wwlpublish

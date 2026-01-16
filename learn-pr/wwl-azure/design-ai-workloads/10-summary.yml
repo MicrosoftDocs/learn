@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.design-ai-workloads.summary
-title: "Summary of AI Workload Design"
+title: "Summary and resources"
 metadata:
-  title: "Summary of AI Workload Design"
+  title: "Summary and resources"
   description: "Learn how to design Azure AI workloads using SaaS, PaaS, and IaaS services while aligning solutions with business goals and best practices."
   ms.date: 01/09/2026
   author: wwlpublish

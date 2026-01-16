@@ -38,10 +38,10 @@ This table provides a summary of some of the security tools and processes.
 
 | Step| Tools and processes |
 | - | - |
-| Discover AI security risks| MITRE ATLAS, OWASP’s Generative AI guidance, Microsoft Purview |
-| Secure AI resources| Azure Resource Graph Explorer, Microsoft Defender for Cloud, Managed Identities, Azure API Management |
-| Secure AI data| Role based permissions, Azure Private Link, Microsoft Purview Data Loss Prevention, Azure Blob Storage |
-| Detect AI security threats| Microsoft Defender for Cloud’s AI security posture management, incident response plans, escalation paths, monitoring |
+| Discover AI security risks| MITRE ATLAS. OWASP's Generative AI guidance. Microsoft Purview. |
+| Secure AI resources| Azure Resource Graph Explorer. Microsoft Defender for Cloud. Managed Identities. Azure API Management. |
+| Secure AI data| Role based permissions. Azure Private Link. Microsoft Purview Data Loss Prevention. Azure Blob Storage. |
+| Detect AI security threats| Microsoft Defender for Cloud's AI security posture management. Incident response plans. Escalation paths. Monitoring. |
 
 
  

@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.design-ai-workloads.manage
-title: "Manage AI Workloads"
+title: "Manage AI"
 metadata:
-  title: "Manage AI Workloads"
+  title: "Manage AI"
   description: "Learn how to manage AI workloads effectively, including operations, deployment, costs, and business continuity, using Azure tools and best practices."
   ms.date: 01/09/2026
   author: wwlpublish
