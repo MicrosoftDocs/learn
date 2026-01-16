@@ -34,14 +34,14 @@ subjects:
 - solution-design
 units:
 - learn.wwl.design-ai-workloads.introduction
-- learn.wwl.design-ai-workloads.summary
 - learn.wwl.design-ai-workloads.strategy
 - learn.wwl.design-ai-workloads.adoption-plan
-- learn.wwl.design-ai-workloads.infrastructure-workloads
 - learn.wwl.design-ai-workloads.platform-workloads
+- learn.wwl.design-ai-workloads.infrastructure-workloads
 - learn.wwl.design-ai-workloads.governance
 - learn.wwl.design-ai-workloads.secure-workloads
 - learn.wwl.design-ai-workloads.manage
 - learn.wwl.design-ai-workloads.knowledge-check
+- learn.wwl.design-ai-workloads.summary
 badge:
   uid: learn.wwl.design-ai-workloads.badge
