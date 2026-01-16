@@ -17,7 +17,7 @@ Use a skills-and-data readiness framework to objectively evaluate your organizat
 
 Address any skills gaps through training, hiring, or partnerships. Fixing your skill gaps reduces delays and lowers project risk. Microsoft Learn is provides free AI training, certifications, and product guidance. 
 
-## Access AI resources
+### Access AI resources
 Clear access and licensing planning helps avoid delays, control costs, and stay compliant. Each AI solution has different access needs, so you need to understand them to plan security and budgets correctly.
 
 ### Prioritize AI use cases 
