@@ -1,5 +1,3 @@
-## Summary and resources
-
 This module walks you through how to design and run Azure AI workloads by choosing the right blend of SaaS, PaaS, and IaaS services. The content focused on aligning AI solutions with business goals, skills, and governance, while applying security, operations, and responsible AI best practices.
 
 ### Key takeaways

@@ -1,4 +1,3 @@
-
 In this unit, you focus on building an AI strategy. The first step is getting familiar with the main types of AI solutions available in Azure—Software as a Service (SaaS), Platform as a Service (PaaS), and Infrastructure as a Service (IaaS). Once you understand these options, it becomes easier to choose the Azure AI solution that fits your organization’s needs.
 
 ### Adopt Microsoft software AI services (SaaS) for initial outcomes

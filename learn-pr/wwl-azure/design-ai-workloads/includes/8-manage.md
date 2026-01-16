@@ -1,5 +1,3 @@
-## Manage AI
-
 Managing AI operations is about keeping your AI work consistent and reliable. Create an [AI Center of Excellence](/azure/cloud-adoption-framework/scenarios/ai/center-of-excellence) to guide strategy, choose the right framework (MLOps or GenAIOps), and standardize SDKs and APIs. Use sandboxes for safe experimentation and simplify tuning with tools like [Copilot Tuning.](/copilot/microsoft-365/copilot-tuning-overview) 
 
 > [!TIP]

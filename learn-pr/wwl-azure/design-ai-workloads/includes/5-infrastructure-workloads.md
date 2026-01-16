@@ -1,5 +1,3 @@
-## Design IaaS AI Workloads
-
 An Azure landing zone is the recommended way to set up and manage your Azure IaaS environment at scale. It gives your organization a consistent foundation for deploying and operating workloads, including AI.
 
 You don’t need a separate 'AI landing zone' to get started. AI services can be deployed right alongside your other application workloads. From an Azure landing zone perspective, AI is just another workload. A workload that can be governed, secured, and managed with the same architecture, design principles, and tools your platform team already uses.

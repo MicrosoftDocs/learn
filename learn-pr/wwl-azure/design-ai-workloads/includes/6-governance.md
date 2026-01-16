@@ -1,5 +1,3 @@
-## Govern AI
-
 Governing AI is about making sure your organization uses AI safely, responsibly, and in alignment with your existing risk, security, and privacy practices. 
 
 ### Apply AI principles

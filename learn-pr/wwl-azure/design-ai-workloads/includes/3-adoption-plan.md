@@ -1,5 +1,3 @@
-## Plan for AI adoption
-
 An [AI adoption plan](/azure/cloud-adoption-framework/scenarios/ai/plan) helps turn an AI strategy into real, actionable work. It keeps your AI projects aligned with business priorities, helps you think through the skills and resources you need, and makes it easier to plan timelines you can deliver on. 
 
 :::image type="content" source="../media/planning-steps.png" alt-text="Diagram of the planning steps discussed in the text.":::

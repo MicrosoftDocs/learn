@@ -1,5 +1,3 @@
-## Design PaaS AI Workloads
-
 When you're designing AI workloads on Azure PaaS, focus on three things: choose the right compute for generative AI, use the right services for traditional (nongenerative) AI, and secure networking to protect your data and manage access. Together, these considerations help ensure your AI solutions are scalable, secure, and aligned with your workload requirements.
 
 ### Select resources for generative AI

@@ -1,5 +1,3 @@
-## Secure AI
-
 When you build AI solutions in Azure, it’s important to [make security a priority](/azure/cloud-adoption-framework/scenarios/ai/secure) from the very beginning. AI systems create new attack surfaces that traditional security tools don’t fully cover. Follow these basic steps to get started.
 
 :::image type="content" source="../media/security-areas.png" alt-text="Diagram of the main security areas.":::
