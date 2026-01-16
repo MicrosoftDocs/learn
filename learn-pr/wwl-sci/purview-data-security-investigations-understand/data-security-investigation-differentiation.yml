@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-data-security-investigations-understand.data-security-investigation-differentiation
+title: How data security investigations differ from alerts, cases, and audit
+metadata:
+  title: How data security investigations differ from alerts, cases, and audit
+  description: "How data security investigations differ from alerts, cases, and audit"
+  ms.date: 01/15/2026
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/data-security-investigation-differentiation.md)]
