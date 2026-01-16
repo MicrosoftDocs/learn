@@ -49,7 +49,7 @@ Temporal tables serve compliance, troubleshooting, and analytical needs:
 - **Troubleshooting** - Investigating account balances at the time disputed transactions occurred
 - **Trend analysis** - Analyzing how product prices changed over quarters
 - **Data recovery** - Reverting accidental updates without restoring backups
-- **Slowly changing dimensions** - [Data warehouse Type 2 dimensions](fabric/data-factory/slowly-changing-dimension-type-two?azure-portal=true) automated
+- **Slowly changing dimensions** - [Data warehouse Type 2 dimensions](/fabric/data-factory/slowly-changing-dimension-type-two?azure-portal=true) automated
 
 Common business scenarios include applications tracking salary changes and promotions, inventory management analyzing stock trends, healthcare maintaining patient record history for compliance, and insurance tracking policy coverage changes for dispute resolution.
 
