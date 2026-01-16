@@ -149,9 +149,9 @@ App Service resolves the reference and injects the secret value as the `API_KEY`
 
 Key Vault references require:
 
-1. A managed identity enabled on the web app
-1. The managed identity granted access to read secrets from the Key Vault
-1. The Key Vault reference syntax in the app setting value
+- A managed identity enabled on the web app
+- The managed identity granted access to read secrets from the Key Vault
+- The Key Vault reference syntax in the app setting value
 
 References without a version specifier automatically resolve to the latest secret version. When a secret rotates, App Service refreshes resolved values within 24 hours. Any configuration change that triggers an app restart also forces an immediate refetch of referenced secrets.
 
