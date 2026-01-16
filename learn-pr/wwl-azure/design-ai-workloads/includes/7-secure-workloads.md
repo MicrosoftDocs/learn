@@ -30,7 +30,7 @@ Next, build incident response plans tailored to AI. Plans should outline how you
 
 Finally, monitor each AI platform. Different architectures have different risks, so platform-specific monitoring ensures you’re covering all potential attack paths.
 
-### Tool Summary
+### Tool summary
 
 This table provides a summary of some of the security tools and processes. 
 

@@ -6,7 +6,7 @@ When you're designing AI workloads on Azure PaaS, focus on three things: choose 
 
 In this example, Microsoft Foundry orchestrates the answer to a user’s search query. AI Search uses grounding data to provide an answer. 
 
-:::image type="content" source="../media/generative-workflow.png" alt-text="Diagram of a generative workflow.":::
+:::image type="content" source="../media/generative-workflow.png" alt-text="Diagram of a generative workflow." lightbox="../media/generative-workflow.png":::
 
 To build effective applications, select resources that ground AI models and deliver accurate results. Ensure you match the right tools to the type of AI you’re building. For generative AI you’re basically taking a user question, finding the right data to ground the answer, and passing everything through a model. That means you pick a generative AI platform (Foundry or Azure OpenAI), an orchestrator to handle the workflow, something like Azure AI Search to retrieve relevant data, and the place where your data lives, such as Blob Storage.
 
@@ -19,7 +19,7 @@ To build effective applications, select resources that ground AI models and deli
 
 In this example, an AI app uses Azure AI Services and Azure Machine Learning to provide a response. 
 
-:::image type="content" source="../media/traditional-workflow.png" alt-text="Diagram of a nongenerative workflow.":::
+:::image type="content" source="../media/traditional-workflow.png" alt-text="Diagram of a nongenerative workflow." lightbox="../media/traditional-workflow.png":::
 
 Select resources that help you build AI workloads with prebuilt or custom solutions. You send data into a model and get results—no grounding step required. You can use prebuilt AI services if you want something simple with no extra compute, or Azure Machine Learning if you need to train or customize a model. Either way, you choose the compute you need, your data source, and any optional processing tools.
 

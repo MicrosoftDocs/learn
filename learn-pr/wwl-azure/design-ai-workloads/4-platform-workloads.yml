@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.design-ai-workloads.platform-workloads
-title: "Design PaaS AI Workloads"
+title: "Design PaaS AI workloads"
 metadata:
   title: "Design PaaS AI Workloads"
   description: "Learn how to design scalable and secure PaaS AI workloads on Azure, including generative AI, nongenerative AI, and secure networking."

@@ -2,7 +2,7 @@ This module helps you design and implement AI workloads on Azure. You learn how 
 
 :::image type="content" source="../media/strategy-steps.png" alt-text="Diagram of the units in the module.":::
 
-### Learning Objectives
+### Learning objectives
 
 - Select SaaS, PaaS, or IaaS AI solutions based on business needs and required levels of control.
 
