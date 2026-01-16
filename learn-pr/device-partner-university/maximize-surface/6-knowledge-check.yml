@@ -12,73 +12,73 @@ durationInMinutes: 5
 quiz:
   title: Check your knowledge
   questions:
-  - content: "What is the main benefit of using Copilot on a Surface device?"
-    choices:
-        - content: "Faster typing"
+    - content: "Which of these is NOT a Microsoft 365 app?"
+      choices:
+        - content: "Word"
           isCorrect: false
-          explanation: "Incorrect. Copilot doesn't directly increase typing speed but it can enhance productivity using AI and multimodal input."
-        - content: "Streamlined productivity with multimodal inputs"
+          explanation: "Incorrect. Word is a Microsoft 365 app."
+        - content: "Excel"
+          isCorrect: false
+          explanation: "Incorrect. Excel is a Microsoft 365 app."
+        - content: "PowerPoint"
+          isCorrect: false
+          explanation: "Incorrect. PowerPoint is a Microsoft 365 app."
+        - content: "Photos"
           isCorrect: true
-          explanation: "Correct. Copilot on Surface devices improves workflow by integrating Surface Slim Pen, touch, and voice input using Studio Microphone for efficiency."
-        - content: "More storage space"
-          isCorrect: false
-          explanation: "Incorrect. Copilot doesn't affect device storage."
-        - content: "Improved battery life"
-          isCorrect: false
-          explanation: "Incorrect. Battery performance is unrelated to Copilot's AI productivity features."
-  - content: "Which Surface Copilot+ PC feature helps Copilot respond faster to AI tasks?"
-    choices:
+          explanation: "Correct. Photos is a Windows app, not part of Microsoft 365."
+    - content: "Which Surface Copilot+ PC feature can help Copilot respond faster to tasks?"
+      choices:
         - content: "Touchscreen"
           isCorrect: false
-          explanation: "Incorrect. Touchscreen enables interaction but doesn't accelerate AI processing."
+          explanation: "Incorrect. Touchscreen can assist with interaction but doesn't accelerate processing."
         - content: "Studio Microphone"
           isCorrect: false
-          explanation: "Incorrect. The microphone captures audio but doesn't improve AI processing speed."
+          explanation: "Incorrect. The microphone can capture audio but doesn't improve processing speed."
         - content: "Neural Processing Unit (NPU)"
           isCorrect: true
-          explanation: "Correct. The NPU accelerates AI operations, making Copilot respond faster."
+          explanation: "Correct. The NPU can help accelerate operations, helping Copilot respond faster."
         - content: "Windows Ink"
           isCorrect: false
-          explanation: "Incorrect. Windows Ink supports pen input but doesn't speed up AI computations."
-  - content: "How can Copilot help PowerPoint slide creation?"
-    choices:
+          explanation: "Incorrect. Windows Ink supports pen input but doesn't speed up computations."
+    - content: "How can Copilot help with PowerPoint slide creation?"
+      choices:
         - content: "Generate slides from prompts, rewrite content, summarize information"
           isCorrect: true
-          explanation: "Correct. Copilot can generate slides, restructure content, and summarize information efficiently."
+          explanation: "Correct. Copilot in PowerPoint can help generate slides, restructure content, and summarize information efficiently."
         - content: "Only add animations"
           isCorrect: false
-          explanation: "Incorrect. Copilot does more than just animations."
+          explanation: "Incorrect. Copilot in PowerPoint can do more than just add animations."
         - content: "Change screen resolution"
           isCorrect: false
-          explanation: "Incorrect. Copilot doesn't modify display settings."
+          explanation: "Incorrect. Copilot in PowerPoint doesn't modify display settings."
         - content: "Schedule meetings"
           isCorrect: false
-          explanation: "Incorrect. Copilot assists with content creation, not scheduling."
-  - content: "Which Windows Studio Effect is helpful for collaborative meetings?"
-    choices:
+          explanation: "Incorrect. Copilot in PowerPoint assists with content creation, not scheduling."
+    - content: "Which Windows Studio Effect can be most helpful for collaborative meetings?"
+      choices:
         - content: "Live captions"
           isCorrect: true
-          explanation: "Correct. Live captions improve accessibility and understanding during meetings."
+          explanation: "Correct. Live captions is a Windows Studio Effect that can help improve accessibility and understanding during meetings."
         - content: "Screen brightness"
           isCorrect: false
-          explanation: "Incorrect. Adjusting brightness doesn't aid collaboration."
+          explanation: "Incorrect. Brightness affects display but doesn't enhance meeting collaboration."
         - content: "File encryption"
           isCorrect: false
-          explanation: "Incorrect. Encryption protects files but doesn't directly help in meetings."
+          explanation: "Incorrect. Encryption helps protect files but isn't a Windows Studio Effect for meetings."
         - content: "Power mode"
           isCorrect: false
-          explanation: "Incorrect. Power mode manages device performance, not meeting clarity."
-  - content: "What is a recommended way to interact with Copilot efficiently?"
-    choices:
-        - content: "Use only the keyboard"
+          explanation: "Incorrect. Power mode helps manage device performance, not collaborative communication."
+    - content: "What is one recommended way to try interacting with Copilot?"
+      choices:
+        - content: "Use the keyboard as your primary input method"
           isCorrect: false
-          explanation: "Incorrect. Limiting input to the keyboard doesn't take advantage of multimodal efficiency."
-        - content: "Combine Surface Slim Pen, touch, and voice commands using Studio Microphone"
+          explanation: "Incorrect. While the keyboard can be effective, it might not fully take advantage of Copilot’s support for multiple input methods."
+        - content: "Combine Surface Slim Pen 2, touch, and voice commands using Studio Microphone"
           isCorrect: true
-          explanation: ""
-        - content: "Dictate long paragraphs without revision"
+          explanation: "Correct. Using multiple input methods can help create a more flexible and natural way to interact with Copilot."
+        - content: "Dictate long paragraphs with minimal revision"
           isCorrect: false
-          explanation: "Incorrect. Copilot benefits from iterative input and refinement, not unedited long dictation."
-        - content: "Only click through menus"
+          explanation: "Incorrect. Copilot often works best with iterative input and refinement rather than extended, unreviewed dictation."
+        - content: "Rely mainly on clicking through menus"
           isCorrect: false
-          explanation: "Incorrect. Clicking alone isn't as flexible as using multimodal inputs with Copilot."
+          explanation: "Incorrect. Menu-based interaction can work, but combining it with other input methods might offer greater efficiency."
