@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn-dp-xxx.design-implement-database-objects.understanding-platform-choices
+uid: learn-wwl.design-implement-database-objects.understanding-platform-choices
 metadata:
   title: Understand your SQL Server-based platform choices
   description: "Learn about the different Microsoft SQL platforms and how database object design varies across Azure SQL Database, Azure SQL Managed Instance, SQL Server on Azure VMs, and SQL Database in Microsoft Fabric."
