@@ -27,7 +27,7 @@ prerequisites: |
 
 iconUrl: /training/achievements/generic-badge.svg
 levels:
-- beginner
+- intermediate
 roles:
 - administrator
 - risk-practitioner
@@ -41,7 +41,6 @@ units:
 - learn.wwl.purview-data-security-investigations-understand.introduction
 - learn.wwl.purview-data-security-investigations-understand.data-security-investigation-understand
 - learn.wwl.purview-data-security-investigations-understand.data-security-investigation-need
-- learn.wwl.purview-data-security-investigations-understand.data-security-investigation-clarification
 - learn.wwl.purview-data-security-investigations-understand.data-security-investigation-differentiation
 - learn.wwl.purview-data-security-investigations-understand.reactive-proactive-investigations
 - learn.wwl.purview-data-security-investigations-understand.deeper-investigation-value
