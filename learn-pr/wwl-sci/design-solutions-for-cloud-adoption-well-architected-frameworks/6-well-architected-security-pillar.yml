@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-solutions-for-cloud-adoption-well-architected-frameworks.well-architected-security-pillar
+title: Apply the Well-Architected Framework Security pillar
+metadata:
+  title: Apply the Well-Architected Framework Security pillar
+  description: "Learn how to apply the Microsoft Azure Well-Architected Framework Security pillar design principles to protect workloads."
+  ms.date: 01/15/2026
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.topic: unit
+durationInMinutes: 12
+content: |
+  [!include[](includes/6-well-architected-security-pillar.md)]

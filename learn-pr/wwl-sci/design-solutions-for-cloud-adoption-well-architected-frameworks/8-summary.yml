@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-solutions-for-cloud-adoption-well-architected-frameworks.summary
+title: Summary
+metadata:
+  title: Summary
+  description: "Summary of designing security solutions using the Cloud Adoption Framework and Well-Architected Framework."
+  ms.date: 01/15/2026
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/8-summary.md)]

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-solutions-for-cloud-adoption-well-architected-frameworks.design-devsecops-processes
+title: Design DevSecOps processes using Cloud Adoption Framework best practices
+metadata:
+  title: Design DevSecOps processes using Cloud Adoption Framework best practices
+  description: Learn how to design DevSecOps processes that align with Microsoft Cloud Adoption Framework best practices for integrating security throughout the software development lifecycle.
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.date: 01/15/2026
+  ms.topic: unit
+  ms.custom: ai-generated
+durationInMinutes: 12
+content: |
+  [!include[](includes/4-design-devsecops-processes.md)]

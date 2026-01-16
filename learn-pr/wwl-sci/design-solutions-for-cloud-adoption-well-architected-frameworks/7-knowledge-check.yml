@@ -1,0 +1,70 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-solutions-for-cloud-adoption-well-architected-frameworks.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Test your knowledge on designing security solutions using the Cloud Adoption Framework and Well-Architected Framework."
+  ms.date: 01/15/2026
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/7-knowledge-check.md)]
+quiz:
+  questions:
+    - content: "Which Cloud Adoption Framework methodology provides guidance for security posture modernization and incident preparedness?"
+      choices:
+        - content: "The Plan methodology"
+          isCorrect: false
+          explanation: "The Plan methodology focuses on defining your cloud adoption plan and rationalizing your digital estate. The Secure methodology specifically addresses security posture modernization."
+        - content: "The Secure methodology"
+          isCorrect: true
+          explanation: "The Secure methodology provides guidance on security posture modernization, incident preparedness, confidentiality, integrity, and availability assurances aligned with Zero Trust principles."
+        - content: "The Manage methodology"
+          isCorrect: false
+          explanation: "The Manage methodology focuses on operational management practices. The Secure methodology specifically addresses security concerns."
+    - content: "What is the primary purpose of an Azure landing zone?"
+      choices:
+        - content: "To provide a single virtual machine for testing."
+          isCorrect: false
+          explanation: "Azure landing zones are comprehensive environment architectures, not single virtual machines. They provide standardized, scalable foundations for workloads."
+        - content: "To provide a standardized and well-architected foundation for workloads with consistent security, compliance, and operational efficiency."
+          isCorrect: true
+          explanation: "Azure landing zones provide a consistent way to set up and manage your Azure environment at scale, ensuring alignment with security, compliance, and operational efficiency requirements."
+        - content: "To replace the need for Microsoft Entra ID."
+          isCorrect: false
+          explanation: "Azure landing zones work alongside Microsoft Entra ID and include identity and access management as a core design area. They don't replace identity services."
+    - content: "Which Zero Trust principle requires you to limit user access to the minimum needed for their role?"
+      choices:
+        - content: "Verify explicitly"
+          isCorrect: false
+          explanation: "Verify explicitly means always authenticating and authorizing based on all available data points. Least privilege specifically addresses limiting access permissions."
+        - content: "Assume breach"
+          isCorrect: false
+          explanation: "Assume breach means designing systems to limit damage when security controls fail. Least privilege specifically addresses limiting access permissions."
+        - content: "Least privilege access"
+          isCorrect: true
+          explanation: "Least privilege access means granting only the minimum level of access required for users to perform their job functions, limiting potential damage from compromised accounts."
+    - content: "What are the three key activities in the CAF Secure AI guidance for protecting AI workloads?"
+      choices:
+        - content: "Plan, build, and deploy"
+          isCorrect: false
+          explanation: "These are general development activities. The Secure AI guidance specifically focuses on discover risks, protect resources and data, and detect threats."
+        - content: "Discover risks, protect resources and data, and detect threats"
+          isCorrect: true
+          explanation: "The CAF Secure AI guidance organizes AI security around three activities: discovering AI security risks, protecting AI resources and data, and detecting AI security threats."
+        - content: "Monitor, analyze, and report"
+          isCorrect: false
+          explanation: "These are operational activities. The Secure AI guidance specifically focuses on discover risks, protect resources and data, and detect threats."
+    - content: "According to the Well-Architected Framework, what is the CIA triad?"
+      choices:
+        - content: "Cloud, Infrastructure, and Applications"
+          isCorrect: false
+          explanation: "CIA stands for Confidentiality, Integrity, and Availability - the three core security assurance principles, not infrastructure components."
+        - content: "Confidentiality, Integrity, and Availability"
+          isCorrect: true
+          explanation: "The CIA triad represents the three interrelated security principles: protecting privacy (Confidentiality), preventing data corruption (Integrity), and ensuring system accessibility (Availability)."
+        - content: "Compliance, Identity, and Authentication"
+          isCorrect: false
+          explanation: "CIA stands for Confidentiality, Integrity, and Availability - the three core security assurance principles used in security design."
