@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-generative-ai-agents-azure-postgresql.exercise-build-ai-agent-foundry-azure-database-postgresql
+title: Exercise - Build an AI agent with Foundry Agent Service and Azure Database for PostgreSQL
+metadata:
+  title: Exercise - Build an AI agent with Foundry Agent Service and Azure Database for PostgreSQL
+  description: "Practice building an AI agent that uses Foundry Agent Service and Azure Database for PostgreSQL."
+  ms.date: 10/09/2025
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+durationInMinutes: 30
+content: |
+  includes/06-exercise-build-ai-agent-foundry-azure-database-postgresql.md]

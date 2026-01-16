@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-generative-ai-agents-azure-postgresql.apply-information-retrieval-agents
+title: Apply information retrieval for agents
+metadata:
+  title: Apply information retrieval for agents
+  description: "Explore how agents use vector search and semantic operators in Azure Database for PostgreSQL."
+  ms.date: 10/09/2025
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  includes/03-apply-information-retrieval-agents.md]

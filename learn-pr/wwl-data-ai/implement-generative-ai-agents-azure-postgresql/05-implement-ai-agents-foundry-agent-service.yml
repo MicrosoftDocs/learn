@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-generative-ai-agents-azure-postgresql.implement-ai-agents-foundry-agent-service
+title: Implement AI agents with Foundry Agent Service
+metadata:
+  title: Implement AI agents with Foundry Agent Service
+  description: "Build and deploy AI agents using Foundry Agent Service and connect them to PostgreSQL."
+  ms.date: 10/09/2025
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  includes/05-implement-ai-agents-foundry-agent-service.md]

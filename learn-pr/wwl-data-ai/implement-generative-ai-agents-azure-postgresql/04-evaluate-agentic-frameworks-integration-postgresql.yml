@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-generative-ai-agents-azure-postgresql.evaluate-agentic-frameworks-integration-postgresql
+title: Evaluate agentic frameworks for integration with PostgreSQL
+metadata:
+  title: Evaluate agentic frameworks for integration with PostgreSQL
+  description: "Compare frameworks for building and integrating agents with Azure Database for PostgreSQL."
+  ms.date: 10/09/2025
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  includes/04-evaluate-agentic-frameworks-integration-postgresql.md]

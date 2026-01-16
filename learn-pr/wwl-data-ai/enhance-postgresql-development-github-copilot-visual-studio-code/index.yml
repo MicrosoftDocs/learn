@@ -1,0 +1,34 @@
+### YamlMime:Module
+uid: learn.wwl.enhance-postgresql-development-github-copilot-visual-studio-code
+metadata:
+  title: Develop PostgreSQL solutions in Visual Studio Code with the PostgreSQL extension and GitHub Copilot
+  description: Learn how GitHub Copilot and the PostgreSQL extension improve SQL development workflows in Visual Studio Code.
+  ms.date: 12/08/2025
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: module
+title: Develop PostgreSQL solutions in Visual Studio Code with the PostgreSQL extension and GitHub Copilot
+summary: Learn how to streamline PostgreSQL development using the Visual Studio Code PostgreSQL extension and GitHub Copilot.
+abstract: Learn how GitHub Copilot and the PostgreSQL extension support writing, refining, and troubleshooting SQL in Visual Studio Code.
+prerequisites: |
+  - Basic understanding of SQL.
+  - Familiarity with PostgreSQL.
+  - Visual Studio Code installed.
+  - Azure subscription with access to Azure Database for PostgreSQL.
+iconUrl: /learn/wwl/azure-database-postgresql/media/module-icon.svg
+levels:
+  - intermediate
+roles:
+  - developer
+  - data-engineer
+products:
+  - azure
+  - azure-postgresql
+units:
+  - learn.wwl.enhance-postgresql-development-github-copilot-visual-studio-code.introduction
+  - learn.wwl.enhance-postgresql-development-github-copilot-visual-studio-code.understand-postgresql-extension
+  - learn.wwl.enhance-postgresql-development-github-copilot-visual-studio-code.understand-github-copilot-integration
+  - learn.wwl.enhance-postgresql-development-github-copilot-visual-studio-code.generate-refine-queries
+  - learn.wwl.enhance-postgresql-development-github-copilot-visual-studio-code.exercise-enhance-postgresql-development-github-copilot
+  - learn.wwl.enhance-postgresql-development-github-copilot-visual-studio-code.knowledge-check
+  - learn.wwl.enhance-postgresql-development-github-copilot-visual-studio-code.summary
