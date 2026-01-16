@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.build-rag-applications-azure-database-postgresql.enhance-scale-vector-index
+title: Enhance scale with vector indexes
+metadata:
+  title: Enhance scale with vector indexes
+  description: "Explore how vector indexing keeps retrieval fast at scale by choosing index types that balance speed, memory, and relevance."
+  ms.date: 08/08/2025
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/4-enhance-scale-vector-index.md)]
