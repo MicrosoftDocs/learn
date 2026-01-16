@@ -1,5 +1,3 @@
-## Introduction
-
 This module helps you design and implement AI workloads on Azure. You learn how to choose the right mix of SaaS, PaaS, and IaaS solutions. Also how to align AI strategy with business goals, and apply best practices for governance, security, operations, and responsible AI. This module provides an overview of AI strategy, planning, design, governance, security, and management.
 
 :::image type="content" source="../media/strategy-steps.png" alt-text="Diagram of the units in the module.":::
