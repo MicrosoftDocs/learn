@@ -1,1 +1,15 @@
-Adapt DLP enforcement based on risk
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-data-loss-prevention-create-manage-policies.adaptive-protection-data-loss-prevention
+title: Adapt DLP enforcement based on risk
+metadata:
+  title: Adapt DLP enforcement based on risk
+  description: "Adapt DLP enforcement based on risk"
+  ms.date: 01/15/2026
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 2
+content: |
+  [!include[](includes/adaptive-protection-data-loss-prevention.md)]
