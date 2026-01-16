@@ -1,14 +1,10 @@
-Partitioning a table with 2 billion rows spanning 10 years transforms query performance, but only if you choose the right partition key and strategy. A partition key that doesn't align with query patterns means every query scans all partitions, making performance worse than an unpartitioned table. Partitioning on a frequently updated column causes constant partition movement and fragmentation.
+Partitioning decisions are nearly permanent. A poorly chosen partition key makes performance worse than an unpartitioned table, and repartitioning a multi-terabyte table requires rebuilding it entirely with hours of downtime. The partition key and index alignment you choose during design determine whether partitioning improves your system or creates maintenance nightmares you can't easily undo.
 
-Nonaligned indexes prevent fast partition switching, eliminating the operational benefits that justify partitioning complexity. You can't easily change partition strategies after implementation, and repartitioning a multi-terabyte table means rebuilding it entirely, often requiring application downtime measured in hours or days. The partitioning decisions you make during design, including which column to partition on, RANGE LEFT versus RIGHT boundaries, and aligned versus nonaligned indexes, determine whether partitioning improves your system or creates maintenance nightmares that can't be easily undone.
-
-[Table and index partitioning](/sql/relational-databases/partitions/partitioned-tables-and-indexes?azure-portal=true) divides large tables into smaller, more manageable pieces (partitions) while keeping them as a single logical table. Your application sees one table, but the database engine manages multiple physical segments that can be independently maintained, archived, or queried.
-
-For example, a financial services company had a 1.2-TB transactions table where queries filtering by date (90% of queries) scanned the entire table. After implementing monthly partitioning, query performance improved 10-20x through partition elimination, index rebuilds went from 6 hours to 20 minutes per partition, archiving old data reduced from four-hour locks to seconds using partition switching, and storage costs decreased 40% by moving older partitions to cheaper storage.
+[Table partitioning](/sql/relational-databases/partitions/partitioned-tables-and-indexes?azure-portal=true) divides large tables into smaller, more manageable pieces (partitions) while keeping them as a single logical table. Your application sees one table, but the database engine manages multiple physical segments that can be independently maintained, archived, or queried.
 
 ## Understand partitioning concepts
 
-Partitioning involves several key components: a partition function that defines how data is divided, a partition scheme that maps partitions to filegroups, and the partitioning column that determines which partition each row belongs to. Understanding these concepts helps you design an effective partitioning strategy.
+Partitioning involves several key components: a *partition function* that defines how data is divided, a *partition scheme* that maps partitions to filegroups, and the *partitioning column* that determines which partition each row belongs to. Understanding these concepts helps you design an effective partitioning strategy.
 
 ### Evaluate performance and operational benefits
 
@@ -16,28 +12,25 @@ Partitioning provides query performance improvements through partition eliminati
 
 Operational benefits include granular maintenance where you rebuild indexes on the current partition while older partitions remain online, fast archival by switching old partitions to archive tables in seconds through metadata operations, improved availability from maintaining partitions independently, and tiered storage by moving older partitions to cheaper, slower storage.
 
+For example, imagine a financial services company with a 1.2-TB transactions table where queries filtering by date (90% of queries) scan the entire table. After implementing monthly partitioning, query performance improves 10-20x through partition elimination, index rebuilds go from 6 hours to 20 minutes per partition, archiving old data reduces from four-hour locks to seconds using partition switching, and storage costs decrease 40% by moving older partitions to cheaper storage.
+
 ### Understand when to use partitioning
 
-Partitioning works best for specific scenarios:
+The following table shows when partitioning helps versus when it adds unnecessary complexity:
 
-- Large tables where you need to transfer or access subsets of data quickly
-- Queries that frequently filter on the partitioning column (enabling partition elimination)
-- Regular data archival requirements where you can switch partitions out
-- Tables where you want to rebuild indexes on specific partitions without affecting others
-- Scenarios requiring tiered storage where older partitions move to cheaper storage
+| Scenario | Use partitioning? | Why |
+| -------- | ----------------- | --- |
+| Queries filter on a specific column (date, region) 80%+ of the time | Yes | Partition elimination accesses only relevant partitions |
+| Regular archival of old data (monthly, quarterly) | Yes | Switch partitions out in seconds instead of `DELETE` operations |
+| Need to rebuild indexes on recent data only | Yes | Rebuild current partition while older partitions stay online |
+| Large tables (multi-TB) with tiered storage needs | Yes | Move older partitions to cheaper storage |
+| Most queries scan the full table or filter on various columns | No | All partitions scanned—worse performance than unpartitioned |
+| Single-row lookups or small range scans are common | No | Partitioning adds overhead without benefits |
+| No clear column aligns with query patterns | No | Can't choose an effective partition key |
 
-### Avoid partitioning when unnecessary
+### Create partitioning components
 
-Partitioning adds complexity that might not be justified:
-
-- No clear partitioning column that aligns with query patterns
-- Most queries don't filter on the partitioning column (all partitions get scanned)
-- Single-row seeks or small range scans are common (partitioning adds overhead)
-- The table already performs adequately without partitioning
-
-### Create partitioning schemes
-
-Partitioning distributes data across multiple filegroups or partitions:
+The following example shows the three components: partition function, partition scheme, and partitioned table:
 
 ```sql
 -- Create partition function based on date ranges
@@ -62,52 +55,53 @@ CREATE TABLE Orders (
 ) ON PS_OrderDate(OrderDate);
 ```
 
-## Partitioning strategies
+This example creates quarterly partitions for an *Orders* table. The partition function defines four boundary values (January, April, July, October) creating five partitions: one for data before 2024, and four for each quarter of 2024. The partition scheme maps all partitions to the PRIMARY filegroup. The *Orders* table uses the *OrderDate* column as the partition key, which must be included in the primary key for proper index alignment.
 
-**Choosing the right partitioning strategy:**
+## Choose partitioning strategies
 
-The partition key is your most critical decision. Choose poorly, and partitioning hurts more than helps. The ideal partition key appears in the WHERE clause of most queries, creates reasonably balanced partitions, and aligns with your maintenance patterns.
+The partition key is your most important decision. Choose poorly, and partitioning hurts more than helps. The ideal partition key appears in the `WHERE` clause of most queries, creates reasonably balanced partitions, and aligns with your maintenance patterns.
 
-**Key selection criteria:**
+The following key selection criteria help you choose the right partition key:
 
 - **Query patterns**: 80%+ of queries filter by this column
 - **Data distribution**: Even distribution across partitions (no single partition with 90% of data)
 - **Maintenance alignment**: Matches archival/purge patterns (date columns for time-based archival)
 - **Stability**: Value doesn't change after INSERT (avoid partitioning on updateable columns)
 
-### Use range partitioning
+### Understand range partitioning
 
-Range partitioning divides data based on value ranges—most commonly dates. Each partition contains a range of values (January data, February data, etc.). This is the most widely used partitioning strategy, especially for time-series data.
+Range partitioning divides data based on value ranges—most commonly dates. Each partition contains a specific range (January data, February data, etc.). This is the most widely used strategy.
 
-Range partitioning works best for time-series data like orders, logs, and transactions (90% of partitioning scenarios), sequential data like invoice numbers or order IDs that increase over time, numeric ranges such as salary bands or price tiers, and growing datasets where data is continuously added with newer values.
+Here's where range partitioning works best:
 
-Common partition patterns include daily partitions for high-volume systems with millions of rows per day and short retention, weekly partitions for medium volume with 6-12 month retention, monthly partitions as the most common approach balancing partition count and size, quarterly partitions for lower volume with multi-year retention, and yearly partitions for archive scenarios with long-term historical data.
+- Time-series data (orders, logs, transactions)
+- Sequential data (invoice numbers, order IDs)
+- Numeric ranges (salary bands, price tiers)
 
-For example, an e-commerce platform partitions orders monthly where current month queries hit one partition for fast performance, quarterly reports access 3 partitions, and year-end analysis uses 12 partitions but still benefits from elimination of older years.
+The following table shows common partition patterns:
 
-You can create range partitions by defining boundaries in the partition function. Here's an example:
+| Pattern | When to Use |
+| ------- | ----------- |
+| Daily | High-volume systems, short retention |
+| Weekly | Medium volume, 6-12 month retention |
+| Monthly | Most common, balances partition count and size |
+| Quarterly | Lower volume, multi-year retention |
+| Yearly | Archive scenarios, long-term historical data |
+
+For example, an e-commerce platform partitioning orders monthly enables current month queries to hit one partition, quarterly reports to access 3 partitions, and year-end analysis to use 12 partitions while eliminating older years.
+
+You can create range partitions by defining boundaries in the partition function:
 
 ```sql
--- Partition sales data by quarter using RANGE RIGHT
-CREATE PARTITION FUNCTION PF_SalesDate (DATE)
+-- RANGE RIGHT creates 5 partitions: <100000, 100000-199999, 200000-299999, 300000-399999, >=400000
+CREATE PARTITION FUNCTION PF_InvoiceNumber (INT)
     AS RANGE RIGHT FOR VALUES 
-    ('2024-01-01', '2024-04-01', '2024-07-01', '2024-10-01');
-
-CREATE PARTITION SCHEME PS_SalesDate
-    AS PARTITION PF_SalesDate ALL TO ([PRIMARY]);
-
-CREATE TABLE SalesData (
-    SalesID INT NOT NULL,
-    SaleDate DATE NOT NULL,
-    Region NVARCHAR(50),
-    Revenue DECIMAL(12,2),
-    CONSTRAINT PK_SalesData PRIMARY KEY (SalesID, SaleDate)
-) ON PS_SalesDate(SaleDate);
+    (100000, 200000, 300000, 400000);
 ```
 
 ### Partition by categorical values
 
-You can use RANGE partitioning with string or categorical values like regions. The partition function places values based on sort order. This approach works for geographic distribution, multitenant systems, or departmental data where queries frequently filter by category.
+You can use `RANGE` partitioning with string or categorical values like regions. The partition function places values based on sort order. This approach works for geographic distribution, multitenant systems, or departmental data where queries frequently filter by category.
 
 The following example partitions data by region:
 
@@ -129,19 +123,19 @@ CREATE TABLE RegionalData (
 
 ## Implement index partitioning
 
-When you partition a table, indexes can be aligned (partitioned the same way) or nonaligned (different partitioning or not partitioned). When creating a nonclustered index on a partitioned table without specifying a partition scheme, the index is placed in the same partition scheme as the underlying table by default. This choice impacts query performance, maintenance operations, and partition switching capabilities.
+When you partition a table, indexes can be aligned or nonaligned. Aligned indexes use the same partition scheme as the table, while nonaligned indexes use different partitioning or no partitioning. By default, nonclustered indexes on partitioned tables inherit the table's partition scheme.
 
 ### Understand aligned versus nonaligned indexes
 
-Aligned indexes are partitioned using the same partition function as the base table where each index partition corresponds to a table partition. This enables fast partition switching measured in seconds versus hours, simplifies maintenance by rebuilding one partition's table and indexes together, and improves partition elimination in queries.
+**Aligned indexes** use the same partition function as the table. Each index partition matches a table partition, enabling fast partition switching, simplified maintenance, and better partition elimination.
 
-Nonaligned indexes are partitioned differently or not partitioned. Creating and rebuilding nonaligned indexes on tables with more than 1,000 partitions isn't supported and might cause degraded performance or excessive memory consumption. Nonaligned indexes also can't use fast partition switching.
+**Nonaligned indexes** use different partitioning or no partitioning. They can't use partition switching and aren't supported on tables with more than 1,000 partitions.
 
-Use aligned index partitioning when the index and table share the same partition key, you need partition switching for archival, you want to rebuild indexes partition-by-partition, or query patterns align with the partition key.
+Use aligned indexes when you need partition switching for archival, want to rebuild specific partitions independently, or when query patterns filter on the partition key.
 
-For example, a logistics company has Orders partitioned by OrderDate and creates a nonclustered index on CustomerID. By partitioning this index using the same OrderDate scheme (aligned), they can archive old months by switching partitions in seconds, rebuild current month's indexes during business hours, and drop old partitions without locking the entire table.
+For example, imagine an *Orders* table partitioned by *OrderDate* with a nonclustered index on *CustomerID*. Using aligned partitioning with the same *OrderDate* scheme allows archiving old months by switching partitions, rebuilding current indexes independently, and dropping old partitions without affecting the entire table.
 
-You can create partitioned indexes using the same partition scheme as the base table. Here's an example:
+You can create partitioned indexes using the same partition scheme as the base table:
 
 ```sql
 -- Create partitioned non-clustered index
@@ -157,11 +151,11 @@ CREATE NONCLUSTERED COLUMNSTORE INDEX IX_SalesData_CS
 
 ## Manage partition operations
 
-After creating partitioned tables, you need to manage them over time. Common operations include querying partition metadata, adding new partitions as data grows, and removing old partitions during archival. These operations use the `$PARTITION` function and `ALTER PARTITION FUNCTION` statement.
+After creating partitioned tables, you need to manage them over time. Common operations include querying partition metadata, adding new partitions as data grows, and removing old partitions during archival. These operations use the [`$PARTITION`](/sql/t-sql/functions/partition-transact-sql?azure-portal=true) function and [`ALTER PARTITION FUNCTION`](/sql/t-sql/statements/alter-partition-function-transact-sql?azure-portal=true) statement.
 
 ### Query partition information
 
-You can view partition information by using the $PARTITION function. Here's an example:
+You can view partition information by using the `$PARTITION` function. Here's an example:
 
 ```sql
 -- View partition information
@@ -185,6 +179,8 @@ ALTER PARTITION FUNCTION PF_OrderDate()
     SPLIT RANGE ('2024-11-01');
 ```
 
+This statement adds a new boundary value (November 1, 2024) to the partition function, splitting an existing partition into two partitions. The partition containing dates from October through December now becomes two partitions: one for October and another for November through December.
+
 ### Archive and remove partition
 
 You can merge partitions to archive old data by using `ALTER PARTITION FUNCTION` with `MERGE RANGE`. Here's an example:
@@ -197,55 +193,12 @@ ALTER PARTITION FUNCTION PF_OrderDate()
 
 ## Apply partitioning best practices
 
-Following best practices helps you avoid common partitioning mistakes that are difficult to correct after implementation. These guidelines cover partition key selection, index alignment, and monitoring.
+Following best practices helps you avoid common partitioning mistakes that are difficult to correct after implementation:
 
-### 1. Choose appropriate partition key
+- **Align indexes with table partitions**: Use the same partition scheme for tables and indexes to enable partition switching and maintenance
+- **Monitor data distribution**: Check partition statistics regularly to identify imbalanced partitions and verify partition elimination
+- **Automate partition management**: Schedule jobs to add new partitions before reaching boundaries and archive old partitions
+- **Avoid over-partitioning**: Target millions of rows per partition, not thousands—too many partitions create overhead
+- **Include partition key in primary key**: Required for clustered index alignment on the partition scheme
 
-You can choose date columns for time-series data partitioning. Here's an example:
-
-```sql
--- Good: Date partition for time-series data using RANGE RIGHT
-CREATE PARTITION FUNCTION PF_ByMonth (DATE)
-    AS RANGE RIGHT FOR VALUES 
-    ('2024-02-01', '2024-03-01', '2024-04-01');
-```
-
-### 2. Align table and index partitions
-
-You can ensure both table and indexes use the same partition scheme for optimal performance. Here's an example:
-
-```sql
--- Both table and index use same partition scheme
-CREATE TABLE Events (
-    EventID INT NOT NULL,
-    EventDate DATE NOT NULL,
-    EventType NVARCHAR(50),
-    CONSTRAINT PK_Events PRIMARY KEY (EventID, EventDate)
-) ON PS_EventDate(EventDate);
-
-CREATE NONCLUSTERED INDEX IX_Events_Type
-    ON Events(EventType)
-    ON PS_EventDate(EventDate);
-```
-
-### 3. Monitor partition performance
-
-You can check partition statistics to monitor data distribution. Here's an example:
-
-```sql
--- Check partition row distribution
-SELECT 
-    $PARTITION.PF_OrderDate(OrderDate) AS PartitionNumber,
-    MIN(OrderDate) AS MinDate,
-    MAX(OrderDate) AS MaxDate,
-    COUNT(*) AS RowsInPartition
-FROM Orders
-GROUP BY $PARTITION.PF_OrderDate(OrderDate)
-ORDER BY PartitionNumber;
-```
-
-## Evaluate when to use partitioning
-
-Partitioning solves specific performance and operational problems, but it adds complexity that becomes permanent once implemented. Use partitioning when you need to transfer or access subsets of data quickly, queries often filter on the partition key, regular archival or purging is needed, you want to improve concurrency by enabling lock escalation at the partition level (using the `LOCK_ESCALATION` option), or maintenance operations target specific partitions. Avoid partitioning when no clear partitioning column exists, queries span many partitions, or single-row seeks and small range scans are common (partitioning adds overhead for these patterns).
-
-The partition key you choose determines whether partitioning improves or degrades performance. A poorly chosen key means query hit all partitions, making performance worse than unpartitioned tables. Partition boundaries aligned with query patterns enable partition elimination. Nonaligned indexes prevent fast partition switching. These decisions can't be easily changed—repartitioning a multi-terabyte table requires rebuilding it entirely. Design your partitioning strategy during initial schema design based on proven query patterns and operational requirements, not as a reactive fix to performance problems. Partitioning implemented correctly transforms large table management; implemented poorly, it creates operational complexity without performance benefits.
+Partitioning requires careful planning. The partition key and index alignment you choose determine whether you gain performance or create complexity. When implemented correctly, partitioning transforms large table management through faster queries, efficient archival, and simplified maintenance.

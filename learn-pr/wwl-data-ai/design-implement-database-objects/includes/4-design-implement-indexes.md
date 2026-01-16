@@ -87,7 +87,7 @@ ON Product(Price, StockQuantity, Category, ProductName);
 
 You can monitor the health and performance of your columnstore indexes by querying the [`sys.dm_db_column_store_row_group_physical_stats`](/sql/relational-databases/system-dynamic-management-views/sys-dm-db-column-store-row-group-physical-stats-transact-sql?azure-portal=true) dynamic management view.
 
-The following query shows rowgroup statistics including state (`COMPRESSED`, `OPEN`, or `CLOSED`), row counts, deleted rows, and storage size. Open rowgroups are still accepting inserts in the deltastore, closed rowgroups are waiting for the tuple-mover to compress them, and compressed rowgroups store data in columnar format. High deleted row counts or many small rowgroups indicate fragmentation that you can resolve with `ALTER INDEX REORGANIZE`.
+The following query shows rowgroup statistics including state, row counts, deleted rows, and storage size. Open rowgroups are still accepting inserts in the deltastore, closed rowgroups are waiting for the tuple-mover to compress them, and compressed rowgroups store data in columnar format. High deleted row counts or many small rowgroups indicate fragmentation that you can resolve with `ALTER INDEX REORGANIZE`.
 
 ```sql
 -- Check columnstore health

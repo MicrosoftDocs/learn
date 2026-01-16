@@ -1,6 +1,6 @@
 Constraints and sequence objects are design choices that prevent data problems before they happen. A missing foreign key constraint means orphaned records might already exist in your database. Adding sequence objects later to replace identity columns requires changes across all applications. Application code can validate data, but users can bypass it through bulk imports, direct queries, or new applications that skip validation.
 
-Database constraints enforce rules at the engine level, so they always apply. The decisions you make during design, such as which rules to enforce in the database and whether to use identity columns or sequences, affect your data quality for the life of your system.
+Database constraints enforce rules at the engine level, so they always apply. The decisions you make during design, such as which rules to enforce in the database and whether to use identity columns or sequences, affect your data quality for the life of your application.
 
 ## Understand when to use constraints
 
@@ -8,7 +8,7 @@ Data quality problems are expensive. Poor data quality leads to incorrect busine
 
 ### Apply database constraints
 
-Constraints prevent data quality problems before they corrupt your database:
+Constraints prevent data quality problems before they corrupt your database. The following table shows how each constraint type addresses specific data integrity issues:
 
 | Problem | Constraint | Example |
 | ------- | ---------- | ------- |
@@ -24,7 +24,7 @@ Constraints enforce rules at the database engine level, ensuring data quality re
 
 Constraints ensure data quality and consistency at the database level.
 
-### Use Primary Key constraints
+### Use primary key constraints
 
 [*Primary key constraints*](/sql/relational-databases/tables/primary-and-foreign-key-constraints?azure-portal=true#primary-key-constraints) guarantee unique data and enforce entity integrity. When you specify a primary key constraint, the Database Engine automatically creates a unique index for the primary key columns. A table can contain only one primary key constraint, and all columns defined within a primary key constraint must be defined as `NOT NULL`.
 
@@ -37,7 +37,7 @@ CREATE TABLE Customer (
 );
 ```
 
-### Use Foreign Key constraints
+### Use foreign key constraints
 
 [*Foreign key constraints*](/sql/relational-databases/tables/primary-and-foreign-key-constraints?azure-portal=true#referential-integrity) enforce referential integrity by controlling the data that can be stored in the foreign key table. A foreign key constraint prevents changes to data in the primary key table if those changes invalidate the link to data in the foreign key table.
 
@@ -54,7 +54,7 @@ CREATE TABLE Order (
 );
 ```
 
-### Use Unique constraints
+### Use unique constraints
 
 [*Unique constraints*](/sql/relational-databases/tables/unique-constraints-and-check-constraints?azure-portal=true#unique-constraints) ensure no duplicate values are entered in specific columns that don't participate in a primary key. Unlike `PRIMARY KEY` constraints, `UNIQUE` constraints allow for the value `NULL`. However, as with any value participating in a `UNIQUE` constraint, only one null value is allowed per column. The Database Engine automatically creates a unique nonclustered index to enforce the uniqueness requirement.
 
@@ -68,9 +68,9 @@ CREATE TABLE Product (
 );
 ```
 
-### Use CHECK constraints
+### Use check constraints
 
-[*CHECK constraints*](/sql/relational-databases/tables/unique-constraints-and-check-constraints?azure-portal=true#check-constraints) enforce domain integrity by limiting the values accepted by one or more columns. You can create a `CHECK` constraint with any logical expression that returns `TRUE` or `FALSE` based on logical operators. You can apply multiple `CHECK` constraints to a single column or apply a single `CHECK` constraint to multiple columns.
+[*Check constraints*](/sql/relational-databases/tables/unique-constraints-and-check-constraints?azure-portal=true#check-constraints) enforce domain integrity by limiting the values accepted by one or more columns. You can create a `CHECK` constraint with any logical expression that returns `TRUE` or `FALSE` based on logical operators. You can apply multiple `CHECK` constraints to a single column or apply a single `CHECK` constraint to multiple columns.
 
 Because null values evaluate to `UNKNOWN`, their presence in expressions might override a constraint. For example, a constraint `MyColumn = 10` on an `INT` column still allows `NULL` to be inserted because `NULL` doesn't evaluate to `FALSE`.
 
@@ -86,9 +86,9 @@ CREATE TABLE Employee (
 );
 ```
 
-### Use DEFAULT constraints
+### Use default constraints
 
-[*DEFAULT constraints*](/sql/relational-databases/tables/specify-default-values-for-columns?azure-portal=true) provide default values when no value is specified during `INSERT` operations. When working with database projects, it's recommended to create constraints with explicit names rather than allowing system-generated names, which differ across environments.
+[*Default constraints*](/sql/relational-databases/tables/specify-default-values-for-columns?azure-portal=true) provide default values when no value is specified during `INSERT` operations. When working with database projects, it's recommended to create constraints with explicit names rather than allowing system-generated names, which differ across environments.
 
 You can create a DEFAULT constraint by using the `DEFAULT` keyword. Here's an example:
 
@@ -173,4 +173,4 @@ ALTER SEQUENCE OrderNumber RESTART WITH 1000;
 
 This example creates a sequence named `OrderNumber` that starts at 1000, increments by 1, and stops at 999999 without cycling back. The `NEXT VALUE FOR` function retrieves the next available number, either inline during an `INSERT` statement or assigned to a variable before the insert when the application needs to reference the value first. For batch operations that require multiple sequential numbers at once, `sp_sequence_get_range` reserves a block of 100 numbers, returning the first and last values in the range. The `ALTER SEQUENCE` statement resets the sequence back to 1000 when needed.
 
-Constraints and sequence numbers aren't features you add when problems arise. They're architectural decisions that prevent problems from occurring. A missing `CHECK` constraint allows invalid data to corrupt your database silently. Sequence objects introduced later require coordinating changes across all applications. Constraints defined at the database level protect data quality regardless of which application, tool, or script accesses your database. These decisions shape your data integrity guarantees for the life of your application.
+Constraints are architectural decisions that prevent problems before they occur. A missing `CHECK` constraint allows invalid data to corrupt your database silently. Choosing identity columns when you need cross-table numbering forces application-level workarounds. Constraints defined at the database level protect data quality regardless of which application, tool, or script accesses your database. These decisions shape your data integrity guarantees for the life of your application.

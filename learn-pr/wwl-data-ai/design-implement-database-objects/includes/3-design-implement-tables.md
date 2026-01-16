@@ -86,6 +86,9 @@ This table demonstrates several best practices:
 - **Default values**: Automatic values for `StockQuantity` (0) and `LastRestocked` (current UTC time) reduce application code complexity
 - **Efficient primary key**: `IDENTITY` generates sequential keys that cluster efficiently and use minimal storage (4-bytes vs 16 bytes for GUID)
 
+> [!NOTE]
+> This example uses `NVARCHAR` (2 bytes per character) for Unicode support. If your data is ASCII-only, `VARCHAR` (1 byte per character) cuts string storage in half. A `ProductName VARCHAR(100)` uses ~30 bytes vs ~60 bytes for `NVARCHAR(100)` on a 30-character name. On 10 million rows, this saves approximately 300 MB. Use `NVARCHAR` for international data; use `VARCHAR` when storage efficiency matters and data will remain ASCII-only.
+
 ## Design best practices
 
 Apply these key principles when designing and implementing tables to ensure performance and maintainability:

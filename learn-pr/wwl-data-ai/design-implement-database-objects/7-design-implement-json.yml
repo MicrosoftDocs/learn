@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn-dp-xxx.design-implement-database-objects.design-implement-json
-title: Use JSON columns and indexes
+title: Manage JSON columns and indexes
 metadata:
-  title: Use JSON columns and indexes
+  title: Manage JSON columns and indexes
   description: "Learn how to design and implement JSON columns and indexes for semi-structured data"
   ms.date: 01/14/2026
   author: JulianePadrao

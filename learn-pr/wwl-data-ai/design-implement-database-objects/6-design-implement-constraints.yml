@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn-dp-xxx.design-implement-database-objects.design-implement-constraints
-title: Design and implement constraints
+title: Enforce data integrity with constraints
 metadata:
-  title: Design and implement constraints
+  title: Enforce data integrity with constraints
   description: "Learn how to design and implement database constraints including primary key, foreign key, unique, CHECK, and DEFAULT"
   ms.date: 01/14/2026
   author: JulianePadrao
@@ -10,6 +10,6 @@ metadata:
   ms.topic: unit
 azureSandbox: false
 labModal: false
-durationInMinutes: 7
+durationInMinutes: 12
 content: |
   [!include[](includes/6-design-implement-constraints.md)]
