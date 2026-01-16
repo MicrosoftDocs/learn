@@ -6,5 +6,5 @@ Imagine this: You have an important meeting coming up, and you need a polished p
 
 # Disclaimers
 
-1. Microsoft 365 Personal, Family, or Premium subscription required; AI features only available to subscription owner and cannot be shared; usage limits apply. [Learn more](https://go.microsoft.com/fwlink/?linkid=2280151). Minimum age limits may apply to use of AI features. [Details](https://support.microsoft.com/office/frequently-asked-questions-about-copilot-in-microsoft-365-subscriptions-bda0d6e8-346d-41ce-ab1e-f6af6229c462).
+1. Microsoft 365 Personal, Family, or Premium subscription required; AI features only available to subscription owner and can't be shared; usage limits apply. [Learn more](https://go.microsoft.com/fwlink/?linkid=2280151). Minimum age limits may apply to use of AI features. [Details](https://support.microsoft.com/office/frequently-asked-questions-about-copilot-in-microsoft-365-subscriptions-bda0d6e8-346d-41ce-ab1e-f6af6229c462).
 2. Sold separately. Software license required for some features.
