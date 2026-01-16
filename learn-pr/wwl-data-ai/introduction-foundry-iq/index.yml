@@ -1,0 +1,48 @@
+### YamlMime:Module
+uid: learn.wwl.introduction-foundry-iq-knowledge-management
+metadata:
+  title: Build knowledge-enhanced AI agents with Foundry IQ
+  description: Learn how Foundry IQ transforms how AI agents access and reason over organizational data through its unified knowledge layer and Retrieval Augmented Generation (RAG) capabilities. Build a practical agent that leverages enterprise knowledge through Foundry IQ's agentic retrieval engine.
+  ms.date: 01/15/2026
+  author: madiepev
+  ms.author: madiepev
+  ms.topic: module
+  ai-usage: ai-assisted
+  ms.service: azure-ai-foundry
+title: Build knowledge-enhanced AI agents with Foundry IQ
+summary: |
+  Learn how to connect AI agents with enterprise knowledge using Foundry IQ. You'll explore how Retrieval Augmented Generation (RAG) solves the knowledge problem for AI agents, discover how Foundry IQ provides a shared knowledge platform that multiple agents can access, improve retrieval quality through data optimization, and configure agent instructions for consistent, cited responses.
+abstract: |
+  In this module, you:
+  - Explain how RAG solves the knowledge problem by connecting agents to real-time information
+  - Describe how Foundry IQ provides a shared knowledge platform that multiple agents can access
+  - Configure data sources for knowledge bases including Azure AI Search, Blob Storage, SharePoint, and OneLake
+  - Configure agent instructions to control retrieval behavior and ensure consistent citations
+  - Test and monitor agent retrieval to maintain quality in production
+prerequisites: |
+  Before starting this module, you should have:
+  - Basic understanding of Azure cloud services
+  - Familiarity with AI and machine learning concepts
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- ai-engineer
+- developer
+- solution-architect
+products:
+- azure
+- azure-ai-foundry
+subjects:
+- artificial-intelligence
+units:
+- learn.wwl.introduction-foundry-iq.introduction
+- learn.wwl.introduction-foundry-iq.understand-rag
+- learn.wwl.introduction-foundry-iq.foundry-iq
+- learn.wwl.introduction-foundry-iq.data-requirements
+- learn.wwl.introduction-foundry-iq.configure-retrieval
+- learn.wwl.introduction-foundry-iq.exercise
+- learn.wwl.introduction-foundry-iq.knowledge-check
+- learn.wwl.introduction-foundry-iq.summary
+badge:
+  uid: learn.wwl.introduction-foundry-iq-badge
