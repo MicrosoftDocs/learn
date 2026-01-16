@@ -4,12 +4,12 @@ title: Scope the policy deliberately
 metadata:
   title: Scope the policy deliberately
   description: "Scope the policy deliberately"
-  ms.date: 01/15/2026
+  ms.date: 01/16/2026
   author: wwlpublish
   ms.author: riswinto
   ms.topic: unit
 azureSandbox: false
 labModal: false
-durationInMinutes: 2
+durationInMinutes: 5
 content: |
   [!include[](includes/policy-scope.md)]

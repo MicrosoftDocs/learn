@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-data-loss-prevention-create-manage-policies.manage-policies
+title: "Manage DLP policies"
+metadata:
+  title: "Manage DLP policies"
+  description: "Manage DLP policies"
+  ms.date: 01/16/2026
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/manage-policies.md)]

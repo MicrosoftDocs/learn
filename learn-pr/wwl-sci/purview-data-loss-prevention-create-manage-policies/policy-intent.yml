@@ -4,12 +4,12 @@ title: Establish policy intent and boundaries
 metadata:
   title: Establish policy intent and boundaries
   description: "Establish policy intent and boundaries"
-  ms.date: 01/15/2026
+  ms.date: 01/16/2026
   author: wwlpublish
   ms.author: riswinto
   ms.topic: unit
 azureSandbox: false
 labModal: false
-durationInMinutes: 2
+durationInMinutes: 3
 content: |
   [!include[](includes/policy-intent.md)]

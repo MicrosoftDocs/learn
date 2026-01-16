@@ -43,7 +43,9 @@ units:
 - learn.wwl.purview-data-loss-prevention-create-manage-policies.policy-scope
 - learn.wwl.purview-data-loss-prevention-create-manage-policies.policy-actions
 - learn.wwl.purview-data-loss-prevention-create-manage-policies.policy-validation
+- learn.wwl.purview-data-loss-prevention-create-manage-policies.manage-policies
 - learn.wwl.purview-data-loss-prevention-create-manage-policies.adaptive-protection-data-loss-prevention
+- learn.wwl.purview-data-loss-prevention-create-manage-policies.guided-walkthrough-create-policy
 - learn.wwl.purview-data-loss-prevention-create-manage-policies.knowledge-check
 - learn.wwl.purview-data-loss-prevention-create-manage-policies.summary
 badge:
