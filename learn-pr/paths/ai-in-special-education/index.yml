@@ -16,7 +16,10 @@ summary: |
   - Identify ways AI can streamline administrative and documentation tasks to reduce educator workload and reclaim time for instruction and collaboration.
   - Use AI features to communicate clearly and accessibly with families, including multilingual learners.
   - Apply Microsoft AI tools with professional judgment, educator oversight, and attention to privacy, compliance, and responsible use.
-prerequisites: None
+prerequisites: |
+ - Basic familiarity with Microsoft tools such as Word and Teams.
+ - Familiarity with special education principles.
+ - Basic understanding of educational technology tools.
 iconUrl: /training/achievements/generic-trophy.svg
 levels:
 - beginner

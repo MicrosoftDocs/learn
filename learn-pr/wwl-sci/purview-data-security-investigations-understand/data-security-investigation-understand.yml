@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-data-security-investigations-understand.data-security-investigation-understand
+title: What is a data security investigation?
+metadata:
+  title: What is a data security investigation?
+  description: "What is a data security investigation?"
+  ms.date: 01/15/2026
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/data-security-investigation-understand.md)]
