@@ -22,7 +22,7 @@ prerequisites: |
   - Conceptual knowledge of security policies, requirements, Zero Trust architecture, and management of hybrid environments.
   - Working experience with Zero Trust principles, applying security policies, and developing security requirements based on business goals.
 iconUrl: /training/achievements/design-solutions-for-cloud-adoption-well-architected-frameworks.svg
-hidden: false
+hidden: true
 levels:
   - advanced
 roles:
