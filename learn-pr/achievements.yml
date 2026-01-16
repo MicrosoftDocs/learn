@@ -7465,3 +7465,13 @@ achievements:
   title: Automate multi-container Kubernetes deployments with Azure Pipelines
   summary: Deploy multiple containers to an Azure Kubernetes Service cluster with Azure Pipelines.
   iconUrl: /training/achievements/azure-devops/deploy-kubernetes.svg
+- uid: learn.prepare-azure-dev-environment.badge
+  type: badge
+  title: Prepare your development environment for Azure development
+  summary: Set up your local development environment with several popular integrated development environments (IDEs).
+  iconUrl: /training/achievements/prepare-your-dev-environment-for-azure-development.svg
+- uid: learn.azure.app-service-scale-up-scale-out.badge
+  type: badge
+  title: Scale an App Service Web App to Efficiently Meet Demand with App Service Scale Up and Scale Out
+  summary: Respond to periods of increased activity by incrementally increasing the resources available. Then decreasing these resources when activity drops to reduce costs.
+  iconUrl: /training/achievements/app-service-scale-up-scale-out.svg
