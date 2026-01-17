@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.cleanse-transform-load-data-into-unity-catalog.transform-data-denormalize-pivot-unpivot
+title: Transform data with denormalization and pivots
+metadata:
+  title: Transform Data With Denormalization and Pivots
+  description: Learn how to denormalize data for faster queries, pivot rows into columns for cross-tabular analysis, and unpivot columns into rows in Azure Databricks.
+  ms.date: 12/07/2025
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+  ai-usage: ai-generated
+durationInMinutes: 7
+content: |
+  [!include[](includes/7-transform-data-flatten-pivot-unpivot.md)]

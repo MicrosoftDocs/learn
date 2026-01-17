@@ -32,7 +32,11 @@ prerequisites: |
 
     > [!NOTE]
     > Azure CLI automatically installs the Bicep CLI. Azure PowerShell requires a manual installation. For more information, go to [Install Bicep tools](/azure/azure-resource-manager/bicep/install).
+
+  [!INCLUDE [](../../includes/azure-optional-exercise-subscription-prerequisite.md)]
+
 iconUrl: /training/achievements/bicep/deploy-azure-resources-by-using-bicep-files.svg
+hidden: true
 levels:
   - beginner
 roles:

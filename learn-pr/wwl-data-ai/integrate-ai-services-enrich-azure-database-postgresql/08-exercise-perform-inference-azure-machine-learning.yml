@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.integrate-ai-services-enrich-azure-database-postgresql.exercise-perform-inference-azure-machine-learning
+title: Exercise - Perform inference with Azure Machine Learning and Azure Database for PostgreSQL
+metadata:
+  title: Exercise - Perform inference with Azure Machine Learning and Azure Database for PostgreSQL
+  description: "Use Azure Machine Learning from Azure Database for PostgreSQL to invoke endpoints and run real-time predictions on sample data."
+  ms.date: 09/08/2025
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+durationInMinutes: 20
+content: |
+  [!include[](includes/08-exercise-perform-inference-azure-machine-learning.md)]

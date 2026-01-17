@@ -1,5 +1,9 @@
 To get some quick experience with Azure Key Vault, let's create a new Key Vault and do the most basic operation available: store a secret. Creating a vault in the Azure portal requires no initial configuration. Your signed-in user identity is automatically granted the full set of secret management permissions, and you can start adding secrets immediately. Once you have a vault, adding and managing secrets can be done from any Azure administrative interface, including the Azure portal, the Azure CLI, and Azure PowerShell.
 
+[!INCLUDE[](../../../includes/azure-optional-exercise-subscription-note.md)]
+
+[!INCLUDE[](../../../includes/azure-optional-exercise-create-resource-group-note.md)]
+
 ## Create a new Azure Key Vault
 
 Let's start by creating a new Key Vault in the Azure portal.
@@ -17,8 +21,8 @@ Let's start by creating a new Key Vault in the Azure portal.
     | Setting | Value |
     |---|---|
     | **Project details** |
-    | Subscription | From the dropdown, select *Concierge Subscription*. |
-    | Resource group | From the dropdown, select <rgn>[sandbox resource group name]</rgn>. |
+    | Subscription | From the dropdown, select your subscription. |
+    | Resource group | From the dropdown, select your resource group. |
     | **Instance details** |
     | Key vault name | Enter a globally unique name for the new vault. Vault names must be 3-24 characters long and contain only alphanumeric characters and dashes. The exercise uses the example name of *VaultamortDiary* for the new vault.
     | Region | Accept default. |

@@ -17,36 +17,36 @@ content: |
 quiz:
   title: ""
   questions:
-  - content: "Which product satisfies the large data transfer requirement?"
+  - content: "Which Microsoft service provides a unified platform to assess, plan, and migrate on-premises workloads to Azure?"
     choices:
-    - content: "Azure Import/Export service"
-      isCorrect: false
-      explanation: "Incorrect. The Azure Import/Export service requires you to provide your own disks and handle shipping."
-    - content: "Azure Data Box"
+    - content: "Azure Migrate"
       isCorrect: true
-      explanation: "Correct. For Azure Data Box, Microsoft provides the hardware appliance and handles the shipping."
+      explanation: "Correct. Azure Migrate is the central hub for assessing workloads, discovering resources, planning migrations, and selecting the right tools."
+    - content: "Azure Data Box"
+      isCorrect: false
+      explanation: "Incorrect.  Azure Data Box is used only for offline data transfer at large scale—not workload assessment or migration planning."
+    - content: "Azure Database Migration Service"
+      isCorrect: false
+      explanation: "Incorrect. Azure Database Migration Service handles database migrations only, not full workload discovery and assessment."
+  - content: "Which migration strategy is best when an application can be moved to Azure with minimal or no changes?"
+    choices:
+    - content: "Rebuild"
+      isCorrect: false
+      explanation: "Incorrect. Rewrites the application."
+    - content: "Replace"
+      isCorrect: false
+      explanation: "Incorrect. Uses SaaS alternatives rather than migrating the existing workload."
+    - content: "Rehost"
+      isCorrect: true
+      explanation: "Correct. Rehosting moves workloads to Azure with the fewest changes."
+  - content: "Which tool should you use when you need to transfer large amounts of data to Azure but your network bandwidth is limited?"
+    choices:
     - content: "Azure Migrate"
       isCorrect: false
-      explanation: "Incorrect. Azure Migrate is an assessment and migration tool."
-  - content: "What product would you recommend to estimate monthly costs before the migration?"
-    choices:
-    - content: "Microsoft Cost Management"
-      isCorrect: false
-      explanation: "Incorrect. Use Microsoft Cost Management to monitor, optimize, and control your ongoing Azure costs."
-    - content: "Azure Advisor"
-      isCorrect: false
-      explanation: "Incorrect. Azure Advisor helps optimize your Azure resources for high availability, performance, and cost."
-    - content: "Azure TCO Calculator"
+      explanation: "Incorrect. Azure Migrate orchestrates migrations but doesn't physically move large offline data."
+    - content: "Azure Data Box"
       isCorrect: true
-      explanation: "Correct. The Azure TCO Calculator provides an estimate of monthly running costs in Azure, which enables a comparison with on-premises costs."
-  - content: "Which product is ideal for identifying on-premises components?"
-    choices:
-    - content: "Service Map"
-      isCorrect: true
-      explanation: "Correct. Service Map lets you automatically discover applications and their components in your on-premises environment."
-    - content: "Azure Resource Mover"
+      explanation: "Correct. Azure Data Box is ideal when network capacity is insufficient for online migration."
+    - content: "App Service Migration Assistant"
       isCorrect: false
-      explanation: "Incorrect. Azure Resource Mover migrates Azure resources from subscriptions, resource groups, or regions."
-    - content: "Azure Storage Mover"
-      isCorrect: false
-      explanation: "Incorrect. Azure Storage Mover is used for unstructured data."
+      explanation: "Incorrect. App Service Migration Assistant is for web apps only."

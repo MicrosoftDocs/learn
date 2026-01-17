@@ -77,5 +77,5 @@ Now that you understand package management, you can:
 
 ### Best practices
 
-- [Package versioning in Azure Artifacts](/azure/devops/artifacts/concepts/package-versioning) - Versioning strategies.
+- [Package versioning in Azure Artifacts](/azure/devops/artifacts/artifacts-key-concepts) - Versioning strategies.
 - [Best practices for Azure Artifacts](/azure/devops/artifacts/concepts/best-practices) - Recommended practices.

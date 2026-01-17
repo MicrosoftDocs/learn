@@ -3,14 +3,14 @@ uid: learn.dpu.modern-management-with-cloud-native-windows-accreditation-2025
 title: Modern management with Cloud-native Windows Accreditation 2025
 metadata:
   title: Modern Management With Cloud-Native Windows Accreditation 2025
-  description: This Learning Path covers cloud-native Windows management using Microsoft Intune, Microsoft Entra ID, and Windows Autopilot. Learn how these tools work together to simplify deployment, identity, and device management.
+  description: This Learning Path covers cloud-native Windows management using Microsoft Intune, Microsoft Entra ID,  Windows Autopilot, and hotpatch updates. Learn how these tools simplify deployment, identity, and device management, and how hotpatching helps keep Windows devices secure and up to date with minimal disruption.
   ms.date: 09/09/2025
   author: melissawinters
   ms.author: v-mwinters
   ms.topic: learning-path
   ms.custom: CC112124
 summary: >
-  Explore the fundamentals of cloud-native Windows management with modules on Microsoft Intune, Windows Autopilot, and Microsoft Entra ID. Discover how these tools work together to simplify device provisioning, identity, and access management.
+  Explore the fundamentals of cloud-native Windows management with modules on Microsoft Intune, Windows Autopilot, Microsoft Entra ID, and hotpatch updates. Learn how these tools simplify device provisioning, identity, and access management, and how hotpatching helps keep Windows devices secure and up to date with minimal disruption.
 prerequisites: None
 iconUrl: /training/achievements/modern-management-with-cloud-native-windows-accreditation-2025.svg
 levels:
@@ -24,9 +24,11 @@ products:
   - intune
   - windows-autopilot
   - entra-id
+  - windows-11
 modules:
   - learn.dpu.introduction-to-entra-id
   - learn.dpu.windows-autopilot
   - learn.dpu.microsoft-intune
+  - learn.dpu.hotpatch-updates
 trophy:
   uid: learn.dpu.modern-management-with-cloud-native-windows-accreditation-2025.trophy

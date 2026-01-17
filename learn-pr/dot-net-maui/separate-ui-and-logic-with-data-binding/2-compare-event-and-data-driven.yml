@@ -5,8 +5,8 @@ metadata:
   title: Compare an event-driven UI to a data-bound UI
   description: In this unit, you'll compare an event-driven UI to a data-bound UI.
   ms.date: 04/16/2025
-  author: adegeo
-  ms.author: adegeo
+  author: jamesmontemagno
+  ms.author: masoucou
   ms.topic: unit
 durationInMinutes: 6
 content: |

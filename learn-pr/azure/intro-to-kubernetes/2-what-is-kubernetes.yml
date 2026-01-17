@@ -6,11 +6,11 @@ metadata:
   title: What is Kubernetes?
   description: What is Kubernetes?
   ms.date: 11/13/2024
-  author: nickomang
-  ms.author: nickoman
+  author: davidsmatlak
+  ms.author: davidsmatlak
   ms.topic: unit
 
 durationInMinutes: 7
 content: |
   [!include[](includes/2-what-is-kubernetes.md)]
-
+

@@ -4,9 +4,9 @@ title: Add multiple term search support
 metadata:
   title: Add multiple term search support
   description: "Add support for entering multiple search terms at once."
-  ms.date: 04/08/2025
-  author: wwlpublish
-  ms.author: eric
+  ms.date: 12/15/2025
+  author: ChrisHowd
+  ms.author: cahowd
   ms.topic: unit
   ms.custom:
   - N/A

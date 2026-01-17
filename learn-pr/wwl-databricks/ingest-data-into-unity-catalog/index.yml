@@ -1,0 +1,49 @@
+### YamlMime:Module
+uid: learn.wwl.ingest-data-into-unity-catalog
+metadata:
+  title: Ingest Data into Unity Catalog
+  description: Learn how to ingest data from diverse sources into Unity Catalog tables in Azure Databricks using managed connectors, notebooks, SQL commands, streaming, and declarative pipelines.
+  ms.date: 12/07/2025
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: module
+  ms.service: azure-databricks
+  ai-usage: ai-generated
+title: Ingest data into Unity Catalog
+summary: Data ingestion is a fundamental capability for any data platform. This module explores the comprehensive set of techniques available in Azure Databricks for loading data into Unity Catalog tables. You'll learn how to use managed connectors with Lakeflow Connect, write custom ingestion code in notebooks, apply SQL commands for batch file loading, process change data capture feeds, configure streaming ingestion from message buses, set up Auto Loader for automatic file detection, and orchestrate ingestion workflows with Lakeflow Spark Declarative Pipelines.
+abstract: |
+  By the end of this module, you'll be able to:
+  - Configure Lakeflow Connect to ingest data from external sources using managed connectors
+  - Ingest batch and streaming data using notebooks with DataFrames and Structured Streaming
+  - Use SQL commands like COPY INTO and CREATE TABLE AS SELECT for file-based ingestion
+  - Process change data capture feeds with the AUTO CDC API
+  - Configure Spark Structured Streaming for real-time data ingestion from Kafka and Event Hubs
+  - Set up Auto Loader to automatically detect and process new files with schema evolution
+  - Orchestrate data ingestion workflows using Lakeflow Spark Declarative Pipelines
+prerequisites: |
+  The following prerequisites should be completed:
+  * Basic understanding of Azure Databricks and Unity Catalog concepts
+  * Familiarity with SQL and Python programming
+  * Knowledge of data engineering concepts such as batch processing and streaming
+iconUrl: /learn/achievements/azure-databricks.svg
+levels:
+  - intermediate
+roles:
+  - data-engineer
+products:
+  - azure-databricks
+subjects:
+  - data-engineering
+units:
+  - learn.wwl.ingest-data-into-unity-catalog.introduction
+  - learn.wwl.ingest-data-into-unity-catalog.ingest-data-lakeflow-connect
+  - learn.wwl.ingest-data-into-unity-catalog.ingest-data-notebooks
+  - learn.wwl.ingest-data-into-unity-catalog.ingest-data-sql-methods
+  - learn.wwl.ingest-data-into-unity-catalog.ingest-data-cdc-feed
+  - learn.wwl.ingest-data-into-unity-catalog.ingest-data-spark-structured-streaming
+  - learn.wwl.ingest-data-into-unity-catalog.ingest-data-auto-loader
+  - learn.wwl.ingest-data-into-unity-catalog.ingest-data-lakeflow-declarative-pipelines
+  - learn.wwl.ingest-data-into-unity-catalog.knowledge-check
+  - learn.wwl.ingest-data-into-unity-catalog.summary
+badge:
+  uid: learn.wwl.ingest-data-into-unity-catalog.badge

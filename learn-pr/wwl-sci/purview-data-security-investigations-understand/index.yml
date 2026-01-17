@@ -1,0 +1,51 @@
+### YamlMime:Module
+uid: learn.wwl.purview-data-security-investigations-understand
+metadata:
+  title: Understand Data Security Investigations
+  description: Understand Data Security Investigations.
+  ms.date: 01/15/2026
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: module
+  ai-usage: ai-assisted
+  ms.service: purview
+title: Understand Data Security Investigations
+summary: |
+  Data security investigations help organizations understand data risk beyond activity alone. This module focuses on the concepts that define data security investigations, how they differ from alerts and audit, and when deeper, data-focused investigation adds value to security decisions.
+abstract: |
+  In this module you learn to:
+  - Explain what a data security investigation is and what it's designed to address
+  - Describe why data security investigations are needed alongside alerts, cases, and audit
+  - Distinguish between reactive and proactive investigation approaches
+  - Recognize what data security investigations are and are not designed to replace
+  - Identify when deeper investigation adds value and when simpler paths are sufficient
+  - Understand how data security investigations fit into broader Microsoft security workflows
+
+prerequisites: |
+  - Familiarity with basic security investigation concepts
+  - General awareness of Microsoft security and data protection tools
+
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- administrator
+- risk-practitioner
+products:
+- m365
+- microsoft-purview
+subjects:
+- threat-protection
+- security
+units:
+- learn.wwl.purview-data-security-investigations-understand.introduction
+- learn.wwl.purview-data-security-investigations-understand.data-security-investigation-understand
+- learn.wwl.purview-data-security-investigations-understand.data-security-investigation-need
+- learn.wwl.purview-data-security-investigations-understand.data-security-investigation-differentiation
+- learn.wwl.purview-data-security-investigations-understand.reactive-proactive-investigations
+- learn.wwl.purview-data-security-investigations-understand.deeper-investigation-value
+- learn.wwl.purview-data-security-investigations-understand.data-security-investigations-integration
+- learn.wwl.purview-data-security-investigations-understand.knowledge-check
+- learn.wwl.purview-data-security-investigations-understand.summary
+badge:
+  uid: learn.wwl.purview-data-security-investigations-understand.badge

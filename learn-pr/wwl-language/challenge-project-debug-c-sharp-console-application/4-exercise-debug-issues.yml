@@ -4,8 +4,8 @@ title: 'Exercise - Use the Visual Studio Code debugger to isolate and fix logic 
 metadata:
   title: Exercise - Use the Visual Studio Code debugger to isolate and fix logic issues in a C# console application
   description: "Exercise - Use the Visual Studio Code debugger to isolate and fix logic issues in a C# console application"
-  ms.date: 02/22/2024
-  author: wwlpublish
+  ms.date: 12/15/2025
+  author: ChrisHowd
   ms.author: cahowd
   ms.topic: unit
   ms.custom:

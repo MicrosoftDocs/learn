@@ -8,7 +8,7 @@ In this module, you learn to:
 
 - Identify the layers that make up AI workloads in Azure
 - Recognize security risks unique to AI, including prompt injection, data leakage, and model misuse
-- Explain how Azure AI Foundry provides guardrails and observability for AI models
+- Explain how Microsoft Foundry provides guardrails and observability for AI models
 - Describe how Microsoft Defender for Cloud, Microsoft Purview, and Microsoft Entra ID support AI security and governance
 
 ## Prerequisites

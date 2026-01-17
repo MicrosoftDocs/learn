@@ -15,6 +15,6 @@ You've learned how to:
 - [Azure security baseline for Azure Kubernetes Service | Microsoft Learn](/security/benchmark/azure/baselines/aks-security-baseline)
 - [Azure Well-Architected Framework perspective on Azure OpenAI Service](/azure/well-architected/service-guides/azure-openai)
 - [Azure security baseline for Azure OpenAI](/security/benchmark/azure/baselines/azure-openai-security-baseline)
-- [Azure AI Foundry security baseline](/security/benchmark/azure/baselines/ai-foundry-security-baseline)
+- [Azure AI Foundry security baseline](/security/benchmark/azure/baselines/azure-ai-foundry-security-baseline)
 - [Responsible AI practices](/azure/ai-services/responsible-use-of-ai-overview)
 - [Microsoft Defender for Cloud AI workload protection](/azure/defender-for-cloud/ai-threat-protection)

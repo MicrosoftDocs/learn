@@ -6,11 +6,11 @@ metadata:
   title: Introduction
   description: Introduction
   ms.date: 10/09/2024
-  author: rayoef
-  ms.author: rayoflores
+  author: davidsmatlak
+  ms.author: davidsmatlak
   ms.topic: unit
 
 durationInMinutes: 1
 content: |
   [!include[](includes/1-introduction.md)]
-
+

@@ -1,0 +1,14 @@
+### YamlMime: ModuleUnit
+uid: learn.wwl.create-and-organize-objects-in-unity-catalog.create-tables-views-materialized
+title: Create tables and views
+metadata:
+  title: Create Tables and Views
+  description: Learn how to create managed and external tables, standard and dynamic views, and materialized views in Unity Catalog for efficient data organization and query optimization.
+  ms.date: 12/07/2025
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+  ai-usage: ai-generated
+durationInMinutes: 13
+content: |
+  [!include[](includes/5-create-tables-views-materialized.md)]

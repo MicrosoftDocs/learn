@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.store-manage-containers-azure-container-registry.image-storage
+title: Registries, repositories, and artifacts
+metadata:
+  title: Registries, Repositories, and Artifacts
+  description: Registries, repositories, and artifacts
+  ms.date: 01/05/2026
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/2-image-storage.md)]

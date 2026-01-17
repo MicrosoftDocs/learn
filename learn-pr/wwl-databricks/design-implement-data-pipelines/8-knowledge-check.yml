@@ -1,0 +1,84 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-implement-data-pipelines.knowledge-check
+title: Module assessment
+metadata:
+  title: Module assessment
+  description: "Knowledge check"
+  ms.date: 12/07/2025
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+  module_assessment: true
+  ai-usage: ai-generated
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which medallion architecture layer corresponds to the data ingestion stage where raw data is preserved with minimal transformation?"
+    choices:
+    - content: "Gold layer"
+      isCorrect: false
+      explanation: "Incorrect. The gold layer contains highly curated datasets optimized for analytics, reporting, and machine learning."
+    - content: "Silver layer"
+      isCorrect: false
+      explanation: "Incorrect. The silver layer contains validated, cleaned data that serves as a reliable foundation for transformation."
+    - content: "Bronze layer"
+      isCorrect: true
+      explanation: "Correct. The bronze layer stores ingested data with minimal transformation, preserving the raw state for auditing and potential reprocessing."
+  - content: "What is the primary advantage of using Lakeflow Spark Declarative Pipelines over notebooks for production data pipelines?"
+    choices:
+    - content: "Declarative pipelines allow rapid prototyping and cell-by-cell inspection"
+      isCorrect: false
+      explanation: "Incorrect. Notebooks are better suited for rapid prototyping and interactive exploration."
+    - content: "Declarative pipelines automatically handle orchestration, incremental processing, and error recovery"
+      isCorrect: true
+      explanation: "Correct. Lakeflow Spark Declarative Pipelines reduce operational burden by automatically managing orchestration, dependency analysis, incremental processing, and retry logic."
+    - content: "Declarative pipelines support more external library dependencies than notebooks"
+      isCorrect: false
+      explanation: "Incorrect. Notebooks provide more flexibility for installing and using custom Python or Scala packages."
+  - content: "Which dependency condition should a data engineer configure for a cleanup task that must run after all upstream tasks finish, regardless of whether they succeeded or failed?"
+    choices:
+    - content: "All succeeded"
+      isCorrect: false
+      explanation: "Incorrect. All succeeded only runs when all upstream tasks complete successfully."
+    - content: "At least one failed"
+      isCorrect: false
+      explanation: "Incorrect. At least one failed only runs when at least one upstream task fails."
+    - content: "All done"
+      isCorrect: true
+      explanation: "Correct. All done runs after all upstream tasks finish, regardless of their outcome, making it ideal for cleanup operations."
+  - content: "What action does a Lakeflow Declarative Pipeline take when a record fails an expectation configured with ON VIOLATION DROP ROW?"
+    choices:
+    - content: "The pipeline stops immediately and rolls back the transaction"
+      isCorrect: false
+      explanation: "Incorrect. ON VIOLATION FAIL UPDATE causes the pipeline to stop and roll back."
+    - content: "The invalid record is written to the target table and violation metrics are logged"
+      isCorrect: false
+      explanation: "Incorrect. The default EXPECT action retains invalid records and tracks violations."
+    - content: "The invalid record is excluded from the output table"
+      isCorrect: true
+      explanation: "Correct. ON VIOLATION DROP ROW removes invalid records from the target table, preventing bad data from propagating downstream."
+  - content: "What is the purpose of using dbutils.notebook.exit() in a notebook task within a Lakeflow Job?"
+    choices:
+    - content: "To terminate the cluster immediately to reduce costs"
+      isCorrect: false
+      explanation: "Incorrect. dbutils.notebook.exit() signals task completion and communicates results, not cluster termination."
+    - content: "To communicate success or failure results that downstream tasks can use in conditional logic"
+      isCorrect: true
+      explanation: "Correct. dbutils.notebook.exit() allows notebooks to signal their completion status and pass values that downstream tasks can use for conditional execution or reporting."
+    - content: "To automatically trigger a retry of the failed notebook task"
+      isCorrect: false
+      explanation: "Incorrect. Retry policies are configured at the job level, not triggered by dbutils.notebook.exit()."
+  - content: "When should a data engineer choose streaming tables over materialized views in Lakeflow Spark Declarative Pipelines?"
+    choices:
+    - content: "When the transformation requires complex aggregations or joins"
+      isCorrect: false
+      explanation: "Incorrect. Materialized views are better suited for transformations involving aggregations and joins."
+    - content: "When the source data is append-only and requires low-latency processing"
+      isCorrect: true
+      explanation: "Correct. Streaming tables process append-only data with exactly-once semantics, making them ideal for ingesting data from cloud storage or message queues with low latency."
+    - content: "When the source data includes frequent updates and deletes"
+      isCorrect: false
+      explanation: "Incorrect. Materialized views handle updates and deletes in source data more effectively than streaming tables."

@@ -322,7 +322,7 @@ Use Identity-Aware Proxy to establish a central authorization layer for applicat
 
 GCP implementation and additional context:
 
- -  [Enforce uniform MFA to company-owned resources](https://cloud.google.com/identity/solutions/enforce-mfa)
+ -  [Enforce uniform MFA to company-owned resources](https://docs.cloud.google.com/docs/authentication/mfa-requirement)
  -  [Google Advanced Protection Program](https://landing.google.com/advancedprotection/)
  -  [Identity-Aware Proxy overview](https://cloud.google.com/iap/docs/concepts-overview)
 

@@ -9,7 +9,8 @@ metadata:
   description: How to implement role based access control and managed identity authentication to Azure OpenAI with Java.
   ms.topic: module
   ms.collection: ce-advocates-ai-copilot
-  ms.service: azure-ai-openai
+  ms.service: azure-ai-foundry
+  ms.subservice: azure-ai-foundry-openai
 title: Introduction to Azure OpenAI Managed Identity Authentication with Java
 summary:  Understanding how to use managed identity in Java apps that interact with Azure OpenAI.
 abstract: |

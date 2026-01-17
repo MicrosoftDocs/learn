@@ -6,8 +6,8 @@ metadata:
   title: Module assessment
   description: Knowledge check
   ms.date: 11/26/2024
-  author: nickomang
-  ms.author: nickoman
+  author: davidsmatlak
+  ms.author: davidsmatlak
   ms.topic: unit
   module_assessment: true
 
@@ -53,4 +53,4 @@ quiz:
     - content: "Bridge to Kubernetes"
       isCorrect: true
       explanation: "Bridge to Kubernetes allows for the development of code in isolation, and do end-to-end testing with other components without replicating or mocking up dependencies."
-
+

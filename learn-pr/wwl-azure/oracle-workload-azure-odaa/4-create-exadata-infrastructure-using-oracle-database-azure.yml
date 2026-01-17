@@ -6,9 +6,8 @@ metadata:
   description: Learn about the process to create Exadata infrastructure using Oracle Database@Azure.
   ms.date: 05/01/2024
   author: Randall-Knapp
-  ms.author: cynthist
+  ms.author: askabadi
   ms.topic: unit
 durationInMinutes: 5
 content: |
   [!include[](includes/4-create-exadata-infrastructure-using-oracle-database-azure.md)]
-

@@ -20,25 +20,19 @@ There are three main authentications methods that Azure Files supports.
 | Access key | An access key is an older and less flexible option. An Azure storage account has two access keys that can be used when making a request to the storage account, including to Azure Files. Access keys are static and provide full control access to Azure Files. Access keys should be secured and not shared with users, because they bypass all access control restrictions. A best practice is to avoid sharing storage account keys and use identity-based authentication whenever possible. |
 | A Shared Access Signature (SAS) token | SAS is a dynamically generated Uniform Resource Identifier (URI) that's based on the storage access key. SAS provides restricted access rights to an Azure storage account. Restrictions include allowed permissions, start and expiry time, allowed IP addresses from where requests can be sent, and allowed protocols. With Azure Files, a SAS token is only used to provide REST API access from code.|
 
+## Creating SMB Azure file shares (classic)
 
+Classic Azure file shares live inside a storage account, so they follow the same limits as that account. You can choose between two storage tiers: SSD (premium) and HDD (standard).
 
+SSD file shares are great when you need fast, consistent performance with low latency—usually in the single digit milliseconds. HDD shares are more budget friendly and work well for general purpose storage.
 
+If you need SMB access, make sure to create your file share inside a storage account. SMB file shares let you pick from several access tiers, including transaction optimized, hot, and cool.
 
-## Creating SMB Azure file shares
+:::image type="content" source="../media/configure-classic-files.png" alt-text="Screenshot of creating a file share showing access tier choices.":::
 
-There are two important settings that you need to be aware of when creating and configuring SMB Azure file shares.
+When connecting over SMB, don’t forget that traffic uses port 445. Azure provides ready to use scripts for Windows and Linux to help you connect quickly.
 
-- **Open port 445**. SMB communicates over TCP port 445. Make sure port 445 is open. Also, make sure your firewall isn't blocking TCP port 445 from the client machine. If you can't unblock port 445, then a VPN or ExpressRoute connection from on-premises to your Azure network is required, with Azure Files exposed on your internal network using private endpoints.
+> [!Important]
+> [File shares (preview)](/azure/storage/files/create-file-share) are a new top‑level Azure resource that don’t require an Azure storage account. 
 
-- **Enable secure transfer**. The `Secure transfer required` setting enhances the security of your storage account by limiting requests to your storage account from secure connections only. Consider the scenario where you use REST APIs to access your storage account. If you attempt to connect, and secure transfer required is enabled, you must connect by using HTTPS. If you try to connect to your account by using HTTP, and secure transfer required is enabled, the connection is rejected.
-
-## Mount an SMB Azure file share on Windows
-
-You can use Azure file shares seamlessly in Windows and Windows Server. You can connect to your Azure file share with Windows or Windows Server in the Azure portal. Specify the **Drive** where you want to mount the share, and choose the **Authentication method**. The Azure portal supplies you with PowerShell commands to run when you're ready to work with the file share. This video shows you how to mount the SMB file share on Windows. 
-
-> [!VIDEO https://learn-video.azurefd.net/vod/player?id=c057ece1-3ba7-409b-8cee-5492a4ad4ee4]
-
-## Mount SMB Azure file share on Linux
-
-You can also connect to Azure file shares from Linux machines. From your virtual machine page, select **Connect**. SMB Azure file shares can be mounted in Linux distributions by using the CIFS kernel client. File mounting can be done on-demand with the `mount` command or on-boot (persistent) by creating an entry in /etc/fstab.
 

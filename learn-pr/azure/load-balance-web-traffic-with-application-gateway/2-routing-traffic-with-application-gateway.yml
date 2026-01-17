@@ -4,8 +4,8 @@ metadata:
   title: Route traffic with Application Gateway
   description: Explain how Application Gateway routes requests and performs load balancing
   ms.date: 04/24/2025
-  author: greg-lindsay
-  ms.author: greglin
+  author: kumud
+  ms.author: kumud
   ms.topic: unit
 title: Route traffic with Application Gateway
 durationInMinutes: 10
@@ -36,4 +36,3 @@ quiz:
     - content: "Application Gateway follows a round-robin approach, distributing requests to each available server in a backend pool in turn."
       isCorrect: true
       explanation: "Correct!"
-

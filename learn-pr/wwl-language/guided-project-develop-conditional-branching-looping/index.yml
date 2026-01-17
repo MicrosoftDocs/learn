@@ -3,8 +3,8 @@ uid: learn.wwl.guided-project-develop-conditional-branching-looping
 metadata:
   title: Guided Project - Develop Conditional Branching and Looping Structures in C#
   description: "Gain experience developing a console app that implements selection and iteration statements to achieve app specifications."
-  ms.date: 06/16/2025
-  author: wwlpublish
+  ms.date: 12/15/2025
+  author: ChrisHowd
   ms.author: cahowd
   ms.topic: module
   ms.collection: N/A
