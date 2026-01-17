@@ -7425,4 +7425,43 @@ achievements:
   title: Create and understand classification models in machine learning
   summary: Classification means assigning items into categories, or can also be thought of automated decision making. Here we introduce classification models through logistic regression, providing you with a stepping-stone toward more complex and exciting classification methods.
   iconUrl: /training/achievements/machine-learning/understand-classification-machine-learning.svg
-  
+- uid: learn.azdo.deploy-applications-with-azure-devops.trophy
+  type: trophy
+  title: Deploy applications with Azure DevOps learning path
+  summary: Azure DevOps enables you to build, test, and deploy any application to any cloud or on premises. Learn how to configure release pipelines that continuously build, test, and deploy your applications.
+  iconUrl: /training/achievements/azure-devops/deploy-applications-with-azure-devops.svg
+- uid: learn.azdo.create-multi-stage-pipeline.badge
+  type: badge
+  title: Create a Multistage Pipeline by Using Azure Pipelines
+  summary: Design and create a realistic release pipeline that promotes changes to various testing and staging environments.
+  iconUrl: /training/achievements/azure-devops/create-multi-stage-pipeline.svg
+- uid: learn.azdo.run-functional-tests-azure-pipelines.badge
+  type: badge
+  title: Run Functional Tests in Azure Pipelines
+  summary: Run Selenium UI tests, a form of functional testing, in Azure Pipelines.
+  iconUrl: /training/achievements/azure-devops/run-functional-tests-azure-pipelines.svg
+- uid: learn.azdo.run-non-functional-tests-azure-pipelines.badge
+  type: badge
+  title: Run Non-Functional Tests in Azure Pipelines
+  summary: Run automated load tests by using Apache JMeter, a form of nonfunctional testing, in Azure Pipelines.
+  iconUrl: /training/achievements/azure-devops/run-non-functional-tests-azure-pipelines.svg
+- uid: learn.azdo.manage-release-cadence.badge
+  type: badge
+  title: Manage Release Cadence in Azure Pipelines by Using Deployment Patterns
+  summary: Choose and implement a deployment pattern that helps you smoothly roll out new application features to your users.
+  iconUrl: /training/achievements/azure-devops/manage-release-cadence-using-deployment-patterns.svg
+- uid: learn.azdo.deploy-azure-functions.badge
+  type: badge
+  title: Automate Azure Functions deployments with Azure Pipelines
+  summary: Create an Azure DevOps pipeline that builds and deploys an ASP.NET web app and an Azure Function app to Azure.
+  iconUrl: /training/achievements/azure-devops/deploy-azure-functions.svg
+- uid: learn.azdo.deploy-docker.badge
+  type: badge
+  title: Automate Docker Container Deployments with Azure Pipeline
+  summary: Use Azure Pipelines to deploy Docker containers to Azure App Service.
+  iconUrl: /training/achievements/azure-devops/deploy-docker.svg
+- uid: learn.azdo.deploy-kubernetes.badge
+  type: badge
+  title: Automate multi-container Kubernetes deployments with Azure Pipelines
+  summary: Deploy multiple containers to an Azure Kubernetes Service cluster with Azure Pipelines.
+  iconUrl: /training/achievements/azure-devops/deploy-kubernetes.svg

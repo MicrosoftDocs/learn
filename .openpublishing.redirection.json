@@ -61643,6 +61643,286 @@
       "source_path": "learn-pr/azure/understand-classification-machine-learning/9-summary.yml",
       "redirect_url": "https://learn.microsoft.com/training/paths/create-machine-learn-models/ ",
       "redirect_document_id": false
-    }
+    },
+    {
+      "source_path": "learn-pr/paths/deploy-applications-with-azure-devops/index.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/training/browse/",
+      "redirect_document_id": false
+    } ,   
+    {
+      "source_path": "learn-pr/azure-devops/create-multi-stage-pipeline/index.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/process/create-multistage-pipeline",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/create-multi-stage-pipeline/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/process/create-multistage-pipeline",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/create-multi-stage-pipeline/2-design-the-pipeline.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/process/create-multistage-pipeline",
+      "redirect_document_id": false
+    }, 
+    {
+      "source_path": "learn-pr/azure-devops/create-multi-stage-pipeline/3-set-up-environment.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/process/create-multistage-pipeline",
+      "redirect_document_id": false
+    }, 
+    {
+      "source_path": "learn-pr/azure-devops/create-multi-stage-pipeline/4-promote-dev.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/process/create-multistage-pipeline",
+      "redirect_document_id": false
+    }, 
+    {
+      "source_path": "learn-pr/azure-devops/create-multi-stage-pipeline/5-promote-test.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/process/create-multistage-pipeline",
+      "redirect_document_id": false
+    }, 
+    {
+      "source_path": "learn-pr/azure-devops/create-multi-stage-pipeline/6-promote-staging.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/process/create-multistage-pipeline",
+      "redirect_document_id": false
+    },  
+    {
+      "source_path": "learn-pr/azure-devops/create-multi-stage-pipeline/7-clean-up-environment.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/process/create-multistage-pipeline",
+      "redirect_document_id": false
+    }, 
+    {
+      "source_path": "learn-pr/azure-devops/create-multi-stage-pipeline/8-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/process/create-multistage-pipeline",
+      "redirect_document_id": false
+    },               
+    {
+      "source_path": "learn-pr/azure-devops/run-functional-tests-azure-pipelines/index.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/test/test-glossary?view=azure-devops",
+      "redirect_document_id": false
+    }, 
+    {
+      "source_path": "learn-pr/azure-devops/run-functional-tests-azure-pipelines/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/test/test-glossary?view=azure-devops",
+      "redirect_document_id": false
+    },     
+    {
+      "source_path": "learn-pr/azure-devops/run-functional-tests-azure-pipelines/2-what-is-functional-testing.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/test/test-glossary?view=azure-devops",
+      "redirect_document_id": false
+    },  
+    {
+      "source_path": "learn-pr/azure-devops/run-functional-tests-azure-pipelines/3-set-up-environment.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/test/test-glossary?view=azure-devops",
+      "redirect_document_id": false
+    }, 
+    {
+      "source_path": "learn-pr/azure-devops/run-functional-tests-azure-pipelines/4-plan-ui-tests.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/test/test-glossary?view=azure-devops",
+      "redirect_document_id": false
+    }, 
+    {
+      "source_path": "learn-pr/azure-devops/run-functional-tests-azure-pipelines/5-write-ui-tests.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/test/test-glossary?view=azure-devops",
+      "redirect_document_id": false
+    }, 
+    {
+      "source_path": "learn-pr/azure-devops/run-functional-tests-azure-pipelines/6-run-ui-tests.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/test/test-glossary?view=azure-devops",
+      "redirect_document_id": false
+    },  
+    {
+      "source_path": "learn-pr/azure-devops/run-functional-tests-azure-pipelines/7-clean-up-environment.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/test/test-glossary?view=azure-devops",
+      "redirect_document_id": false
+    }, 
+    {
+      "source_path": "learn-pr/azure-devops/run-functional-tests-azure-pipelines/8-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/test/test-glossary?view=azure-devops",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/run-non-functional-tests-azure-pipelines/index.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/test/test-glossary?view=azure-devops",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/run-non-functional-tests-azure-pipelines/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/test/test-glossary?view=azure-devops",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/run-non-functional-tests-azure-pipelines/2-what-is-non-functional-testing.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/test/test-glossary?view=azure-devops",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/run-non-functional-tests-azure-pipelines/3-set-up-environment.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/test/test-glossary?view=azure-devops",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/run-non-functional-tests-azure-pipelines/4-plan-load-tests.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/test/test-glossary?view=azure-devops",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/run-non-functional-tests-azure-pipelines/5-run-load-tests.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/test/test-glossary?view=azure-devops",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/run-non-functional-tests-azure-pipelines/6-clean-up-environment.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/test/test-glossary?view=azure-devops",
+      "redirect_document_id": false
+    },  
+    {
+      "source_path": "learn-pr/azure-devops/run-non-functional-tests-azure-pipelines/7-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/test/test-glossary?view=azure-devops",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/manage-release-cadence/index.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/release/?view=azure-devops",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/manage-release-cadence/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/release/?view=azure-devops",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/manage-release-cadence/2-what-are-deployment-patterns.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/release/?view=azure-devops",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/manage-release-cadence/3-set-up-environment.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/release/?view=azure-devops",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/manage-release-cadence/4-implement-blue-green-deployment.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/release/?view=azure-devops",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/manage-release-cadence/5-push-a-change.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/release/?view=azure-devops",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/manage-release-cadence/6-clean-up-environment.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/release/?view=azure-devops",
+      "redirect_document_id": false
+    },  
+    {
+      "source_path": "learn-pr/azure-devops/manage-release-cadence/7-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/release/?view=azure-devops",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/deploy-azure-functions/index.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/azure-functions/functions-how-to-azure-devops?view=azure-devops&tabs=csharp%2Clinux%2Ccontainer-apps&pivots=v2",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/deploy-azure-functions/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/azure-functions/functions-how-to-azure-devops?view=azure-devops&tabs=csharp%2Clinux%2Ccontainer-apps&pivots=v2",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/deploy-azure-functions/2-what-is-azure-functions.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/azure-functions/functions-how-to-azure-devops?view=azure-devops&tabs=csharp%2Clinux%2Ccontainer-apps&pivots=v2",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/deploy-azure-functions/3-set-up-environment.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/azure-functions/functions-how-to-azure-devops?view=azure-devops&tabs=csharp%2Clinux%2Ccontainer-apps&pivots=v2",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/deploy-azure-functions/4-deploy-azure-function.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/azure-functions/functions-how-to-azure-devops?view=azure-devops&tabs=csharp%2Clinux%2Ccontainer-apps&pivots=v2",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/deploy-azure-functions/5-clean-up-environment.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/azure-functions/functions-how-to-azure-devops?view=azure-devops&tabs=csharp%2Clinux%2Ccontainer-apps&pivots=v2",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/deploy-azure-functions/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/azure-functions/functions-how-to-azure-devops?view=azure-devops&tabs=csharp%2Clinux%2Ccontainer-apps&pivots=v2",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/deploy-docker/index.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/apps/cd/deploy-docker-webapp?view=azure-devops&tabs=java%2Cyaml",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/deploy-docker/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/apps/cd/deploy-docker-webapp?view=azure-devops&tabs=java%2Cyaml",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/deploy-docker/2-why-containers.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/apps/cd/deploy-docker-webapp?view=azure-devops&tabs=java%2Cyaml",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/deploy-docker/3-set-up-environment.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/apps/cd/deploy-docker-webapp?view=azure-devops&tabs=java%2Cyaml",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/deploy-docker/4-deploy-docker.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/apps/cd/deploy-docker-webapp?view=azure-devops&tabs=java%2Cyaml",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/deploy-docker/5-clean-up-environment.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/apps/cd/deploy-docker-webapp?view=azure-devops&tabs=java%2Cyaml",
+      "redirect_document_id": false
+    },  
+    {
+      "source_path": "learn-pr/azure-devops/deploy-docker/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/apps/cd/deploy-docker-webapp?view=azure-devops&tabs=java%2Cyaml",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/deploy-kubernetes/index.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/aks/automated-deployments?view=azure-devops&tabs=generate-dockerfile%2Cexisting-kubernetes-manifests%2Cexpose-ingress",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/deploy-kubernetes/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/aks/automated-deployments?view=azure-devops&tabs=generate-dockerfile%2Cexisting-kubernetes-manifests%2Cexpose-ingress",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/deploy-kubernetes/2-why-container-orchestration.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/aks/automated-deployments?view=azure-devops&tabs=generate-dockerfile%2Cexisting-kubernetes-manifests%2Cexpose-ingress",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/deploy-kubernetes/3-set-up-environment.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/aks/automated-deployments?view=azure-devops&tabs=generate-dockerfile%2Cexisting-kubernetes-manifests%2Cexpose-ingress",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/deploy-kubernetes/4-deploy-kubernetes.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/aks/automated-deployments?view=azure-devops&tabs=generate-dockerfile%2Cexisting-kubernetes-manifests%2Cexpose-ingress",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/deploy-kubernetes/5-clean-up-environment.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/aks/automated-deployments?view=azure-devops&tabs=generate-dockerfile%2Cexisting-kubernetes-manifests%2Cexpose-ingress",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/deploy-kubernetes/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/aks/automated-deployments?view=azure-devops&tabs=generate-dockerfile%2Cexisting-kubernetes-manifests%2Cexpose-ingress",
+      "redirect_document_id": false
+    }                                              
   ]
 }
