@@ -1,0 +1,70 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.deploy-containers-azure-app-service.module-assessment
+title: Module assessment
+metadata:
+  title: Module Assessment
+  description: Module assessment
+  ms.date: 01/13/2026
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: unit
+azureSandbox: false
+durationInMinutes: 5
+content: |
+quiz:
+  questions:
+  - content: "A container image is configured to listen on port 8000. After deploying to App Service, requests to the application return connection errors. What configuration change resolves this issue?"
+    choices:
+    - content: "Set the `WEBSITES_PORT` app setting to 8000."
+      isCorrect: true
+      explanation: "Correct. For custom containers, App Service can automatically route traffic when the container listens on port 80 or 8080. If the container listens on a different port, WEBSITES_PORT tells App Service which port to forward HTTP requests to inside the container."
+    - content: "Modify the Dockerfile to use EXPOSE 80."
+      isCorrect: false
+      explanation: "Incorrect. EXPOSE doesn't change which port the application listens on. Your application still listens on the port it binds to at runtime, and App Service still needs to know which port to forward traffic to."
+    - content: "Enable the HTTP/2 protocol in the platform settings."
+      isCorrect: false
+      explanation: "Incorrect. HTTP/2 affects the protocol used for client connections, not the port routing between App Service and the container."
+  - content: "A document processing application writes output files during processing. After a container restart, the output files are missing. How do you configure App Service to persist these files?"
+    choices:
+    - content: "Set `WEBSITES_ENABLE_APP_SERVICE_STORAGE` to true and write files to the `/home` directory."
+      isCorrect: true
+      explanation: "Correct. This setting enables persistent storage for the /home directory. Files written to /home persist across container restarts and are shared across scaled instances."
+    - content: "Configure a larger container image with more disk space."
+      isCorrect: false
+      explanation: "Incorrect. Container image size doesn't affect persistence. The container file system is ephemeral by default regardless of available space."
+    - content: "Enable always-on to prevent container restarts."
+      isCorrect: false
+      explanation: "Incorrect. Always-on prevents the app from unloading due to inactivity, but containers still restart for deployments, scaling, and platform maintenance. Persistent storage is the correct solution."
+  - content: "A production application requires different API endpoint URLs for staging and production deployment slots. Which configuration approach ensures the staging URL doesn't swap to production during a slot swap?"
+    choices:
+    - content: "Configure the API_ENDPOINT setting as a slot setting."
+      isCorrect: true
+      explanation: "Correct. Slot settings remain with their slot during swap operations. Marking API_ENDPOINT as a slot setting ensures each slot maintains its own endpoint configuration."
+    - content: "Store the API endpoint in the container image for each environment."
+      isCorrect: false
+      explanation: "Incorrect. Hardcoding values in container images requires rebuilding for each environment and loses the benefits of environment-independent deployments."
+    - content: "Use connection strings instead of app settings for the API endpoint."
+      isCorrect: false
+      explanation: "Incorrect. Connection strings swap between slots unless also marked as slot settings. Connection strings are intended for database connections, not API endpoints."
+  - content: "A container starts successfully but health checks are failing, and App Service removes instances from the load balancer. The application has a `/healthz` endpoint that returns HTTP 200. What is the most likely cause?"
+    choices:
+    - content: "The health check path in App Service is configured differently than the application's health endpoint path."
+      isCorrect: true
+      explanation: "Correct. The health check path configured in App Service must match the exact path where your application responds to health requests. A mismatch like /health versus /healthz causes check failures."
+    - content: "Health checks require HTTPS, but the container only serves HTTP."
+      isCorrect: false
+      explanation: "Incorrect. App Service sends health check requests over HTTP to the container. TLS termination happens at the load balancer, so the container receives HTTP requests."
+    - content: "The container needs more memory to handle health check requests."
+      isCorrect: false
+      explanation: "Incorrect. Health check endpoints are typically lightweight. If the endpoint returns 200 successfully when tested directly, the issue is configuration rather than resources."
+  - content: "A developer needs to verify that app settings are correctly injected into a running container. Which diagnostic tool provides this information?"
+    choices:
+    - content: "The Kudu diagnostic console Environment page."
+      isCorrect: true
+      explanation: "Correct. The SCM (Kudu) Environment view (or the /Env endpoint) shows the environment variables that App Service applies to the app, including app settings and system-provided variables."
+    - content: "The log stream in the Azure portal."
+      isCorrect: false
+      explanation: "Incorrect. The log stream shows application output, not environment configuration. Environment variables don't appear in logs unless the application explicitly logs them."
+    - content: "The App Service metrics dashboard."
+      isCorrect: false
+      explanation: "Incorrect. Metrics show performance data like CPU, memory, and request counts. Metrics don't include configuration or environment variable information."
