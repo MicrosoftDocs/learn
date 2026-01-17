@@ -1,4 +1,6 @@
-[!INCLUDE [Sandbox explanation](../../includes/azure-template-exercise-sandbox-subscription.md)]
+[!INCLUDE[](../../../includes/azure-optional-exercise-subscription-note.md)]
+
+[!INCLUDE[](../../../includes/azure-optional-exercise-create-resource-group-note.md)]
 
 As part of the HR application migration, you're creating a Bicep template to deploy Azure resources. In this exercise, you'll create an Azure App Service plan and App Service app. You'll apply decorators to each parameter to ensure that they'll always contain the values you expect.
 
@@ -32,8 +34,6 @@ During the process, you'll do the following tasks:
    > The `uniqueString()` function is useful for creating globally unique resource names. It returns a string that's the same on every deployment to the same resource group, but different when you deploy to different resource groups or subscriptions.
 
    You're also defining variables that construct the names of the Azure App Service plan and App Service app. Their values include some of the parameters you've specified. Parameter values can be overridden by the user who executes the deployment, but the values of the variables can't be overridden.
-
-   [!INCLUDE [Sandbox location note](../../includes/azure-template-bicep-exercise-sandbox-location.md)]
 
 1. In the _main.bicep_ file in Visual Studio Code, add the following code to the bottom of the file:
 
@@ -95,7 +95,7 @@ If it doesn't, either copy the example or adjust your template to match the exam
 
 ::: zone pivot="cli"
 
-[!INCLUDE [Bootstrapping instructions for first Bicep exercise - CLI](../../includes/azure-template-bicep-exercise-sandbox-deploy-cli.md)]
+[!INCLUDE [Bootstrapping instructions for first Bicep exercise - CLI](../../includes/azure-template-bicep-exercise-nosandbox-deploy-cli.md)]
 
 ### Deploy the template to Azure by using the Azure CLI
 
@@ -111,7 +111,7 @@ You'll see ```Running...``` in the terminal.
 
 ::: zone pivot="powershell"
 
-[!INCLUDE [Bootstrapping instructions for first Bicep exercise - PowerShell](../../includes/azure-template-bicep-exercise-sandbox-deploy-powershell.md)]
+[!INCLUDE [Bootstrapping instructions for first Bicep exercise - PowerShell](../../includes/azure-template-bicep-exercise-nosandbox-deploy-powershell.md)]
 
 ### Deploy the template to Azure by using PowerShell
 
@@ -125,14 +125,11 @@ New-AzResourceGroupDeployment -Name main -TemplateFile main.bicep
 
 ## Verify your deployment
 
-1. Go to the [Azure portal](https://portal.azure.com) and make sure you're in the sandbox subscription:
-
-   1. Select your avatar in the upper-right corner of the page.
-   1. Select **Switch directory**. In the list, choose the **Microsoft Learn Sandbox** directory.
+1. Go to the [Azure portal](https://portal.azure.com) and make sure you're in the correct subscription.
 
 1. On the left-side panel, select **Resource groups**.
 
-1. Select **<rgn>[sandbox resource group name]</rgn>**.
+1. Select your resource group name.
 
 1. In **Overview**, you can see that one deployment succeeded.
 

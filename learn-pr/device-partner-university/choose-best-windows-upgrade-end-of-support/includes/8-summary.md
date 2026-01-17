@@ -1,0 +1,5 @@
+In this module, you explored how organizations can approach modernization post Windows 10 end of support by aligning upgrade decisions with security, cost, hardware readiness, cloud adoption, and user experience requirements.
+
+By examining Windows 11 on new devices, Windows 10 ESU, and Windows 365 Cloud PC through real-world scenarios, you saw how each option supports different stages of the transition journey. For many organizations, Windows 11 Pro on new devices offers the best combination of hardware backed security, fully supported operating system, and regulatory compliance. This makes it the best solution for a diverse set of customer needs. Some organizations are positioned to modernize immediately, while others require structured, short-term strategies that reduce risk while planning long-term change.
+
+Understanding these trade-offs enables IT professionals to guide more confident, sustainable decisions that balance near-term operational needs with long-term platform stability.

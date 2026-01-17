@@ -12,73 +12,7 @@ Run the following command to create a new ASP.NET Core Model-View Cotroller (MVC
 dotnet new mvc --name BestBikeApp
 ```
 
-The command creates a new folder named "BestBikeApp" to hold your project.
-
-### Optionally test your web app
-
-You can test your application locally on Azure. To do so, use the following steps:
-
-1. Run the following commands to build and run your web application in the background:
-
-    ```bash
-    cd BestBikeApp
-    dotnet run &
-    ```
-
-    You should get output like the following example:
-
-    ```console
-    [1] <process-number>
-    <username> [ ~/BestBikeApp ]$ Building...
-    warn: Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager[35]
-          No XML encryptor configured. Key {b4a2970c-215c-4eb2-92b4-c28d021158c6} may be persisted to storage in unencrypted form.
-    info: Microsoft.Hosting.Lifetime[14]
-          Now listening on: http://localhost:<port>
-    info: Microsoft.Hosting.Lifetime[0]
-          Application started. Press Ctrl+C to shut down.
-    info: Microsoft.Hosting.Lifetime[0]
-          Hosting environment: Development
-    info: Microsoft.Hosting.Lifetime[0]
-          Content root path: /home/cephas_lin/BestBikeApp
-    ```
-
-    In the output, take note of the values of *&lt;process-number>* and *&lt;port>*.
-
-1. Run the following command to browse to your web application, replacing *&lt;port>* with the port you noted in the last step.
-
-    ```bash
-    curl -kL http://localhost:<port>/
-    ```
-
-    You should see some HTML appear, ending in the following lines:
-
-    ```html
-    <div class="text-center">
-        <h1 class="display-4">Welcome</h1>
-        <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-    </div>
-    
-            </main>
-        </div>
-    
-        <footer b-b5g3qljvtd class="border-top footer text-muted">
-            <div b-b5g3qljvtd class="container">
-                &copy; 2024 - BestBikeApp - <a href="/Home/Privacy">Privacy</a>
-            </div>
-        </footer>
-        <script src="/lib/jquery/dist/jquery.min.js"></script>
-        <script src="/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="/js/site.js?v=hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo"></script>
-        
-    </body>
-    </html>
-    ```
-
-1. Using *&lt;process-number>* that you noted earlier, stop dotnet:
-
-    ```azurecli-interactive
-    kill <process-number>
-    ```
+The command creates a new folder named "BestBikeApp" to hold your project. To test your app locally, you need the .NET SDK installed on your system.
 
 ::: zone-end
 
@@ -152,48 +86,7 @@ A new `package.json` file is created in the current folder. You should find it i
     EOL
     ```
 
-### Optionally test your web app
-
-While you're running the helloworld web app, you can verify it's running locally by opening a second command shell session.
-
-1. From a new browser tab, browse to <https://shell.azure.com/>.
-
-1. From your primary command shell session, run the following commands to start your web application in the background:
-
-    ```bash
-    cd ~/helloworld
-    npm start &
-    ```
-
-    You should get output like the following example:
-
-    ```console
-    [1] <process-number>
-    > helloworld@1.0.0 start
-    > node index.js
-    
-    Server running at http://localhost:1337
-    ```
-
-    In the output, take note of the value of *&lt;process-number>*.
-
-1. In the same Cloud Shell session, run the following command to browse to your web application.
-
-    ```bash
-    curl -kL http://localhost:1337/
-    ```
-
-    You should get the following output:
-
-    ```html
-    <html><body><h1>Hello World!</h1></body></html>
-    ```
-
-1. Using *&lt;process-number>* that you noted earlier, stop node:
-
-    ```azurecli-interactive
-    kill <process-number>
-    ```
+To test your app locally, you need Node.js and npm installed on your system.
 
 ::: zone-end
 
@@ -235,47 +128,6 @@ To create a starter web application, we use the Flask web-application framework.
     pip freeze > requirements.txt
     ```
 
-### Optionally test your web app
-
-You can test your application locally in Azure while it's running.
-
-1. Run the following commands to start your web application in the background:
-
-    ```bash
-    cd ~/BestBikeApp
-    export FLASK_APP=application.py
-    flask run &
-    ```
-
-    You should get output like the following example:
-
-    ```console
-    [1] <process-number>
-     * Serving Flask app 'application.py'
-     * Debug mode: off
-    WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
-     * Running on http://127.0.0.1:5000
-    Press CTRL+C to quit
-    ```
-
-    In the output, take note of the value of *&lt;process-number>*. Since the process is running in the background, you can't quit with CTRL+C. You'll need to stop it with its process number.
-
-1. Run the following command to browse to your web application.
-
-    ```bash
-    curl -kL http://localhost:5000/
-    ```
-
-    You should get the following HTML output:
-
-    ```html
-    <html><body><h1>Hello Best Bike App!</h1></body></html>
-    ```
-
-1. Using *&lt;process-number>* that you noted earlier, stop Flask:
-
-    ```azurecli-interactive
-    kill <process-number>
-    ```
+To test your app locally, you need Python 3 and Flask installed on your system.
 
 ::: zone-end

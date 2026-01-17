@@ -13,6 +13,8 @@ Now, when you want to prepare your resources for the next product launch, you ca
 > [!TIP]
 > In this module, you've only scratched the surface of Bicep's capabilities. Keep following the [Fundamentals of Bicep learning path](xref:learn.bicep-deploy-manage) and our other Bicep learning paths to progress your understanding.
 
+[!INCLUDE[](../../../includes/azure-optional-exercise-subscription-cleanup.md)]
+
 ## References
 
 - [Bicep documentation](/azure/azure-resource-manager/bicep)

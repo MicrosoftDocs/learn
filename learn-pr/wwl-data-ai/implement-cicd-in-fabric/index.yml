@@ -3,7 +3,7 @@ uid: learn-wwl.implement-cicd-in-fabric
 metadata:
   title: Implement Continuous Integration and Continuous Delivery (CI/CD) in Microsoft Fabric
   description: Learn the key concepts and strategies for implementing continuous integration and continuous deployment (CI/CD) in Microsoft Fabric.
-  ms.date: 05/06/2025
+  ms.date: 12/5/2025
   author: wwlpublish
   ms.author: theresai
   ms.topic: module

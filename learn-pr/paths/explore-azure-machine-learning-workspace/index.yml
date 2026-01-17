@@ -3,7 +3,7 @@ uid: learn.wwl.explore-azure-machine-learning-workspace
 metadata:
   title: Explore and configure the Azure Machine Learning workspace
   description: Explore and configure the Azure Machine Learning workspace, its resources and its assets. Explore which developer tools you can use to interact with the workspace, focusing on the CLI and Python SDK v2.
-  ms.date: 09/01/2023
+  ms.date: 12/01/2025
   author: wwlpublish
   ms.author: madiepev
   ms.topic: learning-path

@@ -1,0 +1,14 @@
+### YamlMime: ModuleUnit
+uid: learn.wwl.secure-unity-catalog-objects.authenticate-resource-access-managed-identities
+title: Authenticate resource access with managed identities
+metadata:
+  title: Authenticate Resource Access With Managed Identities
+  description: "Learn how to use Azure managed identities with Unity Catalog to securely authenticate access to Azure Data Lake Storage without managing credentials."
+  ms.date: 12/07/2025
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+  ai-usage: ai-generated
+durationInMinutes: 8
+content: |
+  [!include[](includes/8-authenticate-resource-access-managed-identities.md)]

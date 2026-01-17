@@ -4,7 +4,7 @@ title: What is Azure VMware Solution?
 metadata:
   title: What is Azure VMware Solution?
   description: Learn about what Azure VMware Solution is and what it does.
-  ms.date: 10/23/2024
+  ms.date: 01/05/2026
   author: Orin-Thomas
   ms.author: orthomas
   ms.topic: unit
@@ -39,4 +39,4 @@ quiz:
       isCorrect: true
       explanation: "Correct. Azure NetApp Files supports mounting volumes using SMB or NFS on VMs."
   
-
+

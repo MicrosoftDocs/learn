@@ -1,7 +1,7 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.deploy-azure-resources-bicep.add-parameters-variables-bicep-file
 title: Exercise - Add parameters and variables to your Bicep file
-sandbox: true
+#sandbox: true
 metadata:
   unitType: exercise
   title: Exercise - Add parameters and variables to your Bicep file

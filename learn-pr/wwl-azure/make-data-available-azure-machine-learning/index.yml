@@ -5,7 +5,7 @@ metadata:
   description: Learn about how to connect to data from the Azure Machine Learning workspace. You're introduced to datastores and data assets.
   author: wwlpublish
   ms.author: madiepev
-  ms.date: 07/10/2024
+  ms.date: 12/01/2025
   ms.service: azure-machine-learning
   ms.topic: module-standard-task-based
   ms.collection:
@@ -37,4 +37,4 @@ units:
 - learn.wwl.make-data-available-azure-machine-learning.summary
 badge:
   uid: learn.wwl.make-data-available-azure-machine-learning.badge
-
+

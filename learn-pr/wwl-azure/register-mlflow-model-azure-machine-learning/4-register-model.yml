@@ -6,11 +6,11 @@ metadata:
   description: Learn how to register an MLflow model in Azure Machine Learning.
   author: wwlpublish
   ms.author: madiepev
-  ms.date: 11/06/2024
+  ms.date: 12/01/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
 durationInMinutes: 7
 content: |
   [!include[](includes/4-register-model.md)]
-
+

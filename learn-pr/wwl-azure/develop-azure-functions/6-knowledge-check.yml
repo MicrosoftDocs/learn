@@ -6,7 +6,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Module assessment
   description: "Knowledge check"
-  ms.date: 05/27/2025
+  ms.date: 01/05/2026
   author: wwlpublish
   ms.author: jeffko
   ms.topic: unit
@@ -39,3 +39,14 @@ quiz:
     - content: "Connection value"
       isCorrect: false
       explanation: "Incorrect. A connection value is used to connect your function to other Azure services."
+  - content: "In the Node.js v4 programming model, how are triggers and bindings configured?"
+    choices:
+    - content: "In code using the `@azure/functions` package"
+      isCorrect: true
+      explanation: "Correct. Node.js v4 is code-first; you declare inputs/outputs in code and the runtime generates function.json."
+    - content: "By editing function.json directly in the Azure portal"
+      isCorrect: false
+      explanation: "Incorrect. Editing function.json is for older models like Node.js v3; v4 uses code-first configuration."
+    - content: "By adding entries to host.json"
+      isCorrect: false
+      explanation: "Incorrect. host.json controls host-wide settings, not per-function bindings."

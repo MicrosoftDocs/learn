@@ -29,4 +29,4 @@ Unity Catalog automatically logs access events into system tables, making it eas
 
 ### Federated governance
 
-Unity Catalog extends governance beyond Databricks-managed data by supporting connections to external systems through **connections** and **foreign catalogs**. This allows organizations to apply the same access controls and auditing, even when data stays in place outside of Databricks.  
+Unity Catalog extends governance beyond Azure Databricks-managed data by supporting connections to external systems through **connections** and **foreign catalogs**. This allows organizations to apply the same access controls and auditing, even when data stays in place outside of Azure Databricks.  

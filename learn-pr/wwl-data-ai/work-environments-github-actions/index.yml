@@ -3,7 +3,7 @@ uid: learn.wwl.work-environments-github-actions
 metadata:
   title: Work with environments in GitHub Actions
   description: machine learning operations, MLOps, environments
-  ms.date: 07/10/2024
+  ms.date: 12/01/2025
   author: wwlpublish
   ms.author: madiepev
   ms.topic: module
@@ -42,4 +42,4 @@ units:
 - learn.wwl.work-environments-github-actions.summary
 badge:
   uid: learn.wwl.work-environments-github-actions.badge
-
+

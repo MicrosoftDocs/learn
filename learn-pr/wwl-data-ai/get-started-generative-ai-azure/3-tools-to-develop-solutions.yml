@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.get-started-generative-ai-azure.tools-to-develop-solutions
-title: Understand tools to develop generative AI 
+title: Understand generative AI development in Foundry
 metadata:
   adobe-target: true
   prefetch-feature-rollout: true
-  title: Understand tools to develop generative AI
-  description: Understand tools to develop generative AI
+  title: Understand generative AI development in Foundry
+  description: Understand generative AI development in Foundry
   author: sherzyang
   ms.author: sheryang
-  ms.date: 05/26/2025
+  ms.date: 12/5/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot

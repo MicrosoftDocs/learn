@@ -1,16 +1,24 @@
-In order for computer systems to interpret the subject of a text in a similar way humans do, they use **natural language processing** (NLP), an area within AI that deals with understanding written or spoken language, and responding in kind. *Text analysis* describes NLP processes that extract information from unstructured text.   
+::: zone pivot="video"
 
-Some common NLP text analysis use cases are:
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=9e7cf5af-750f-42a3-8644-a79e993d74cc]
 
-:::image type="content" source="../media/natural-language-processing.png" alt-text="Diagram visualizing six common use cases for natural language processing tasks.":::
+::: zone-end
 
-1. **Speech-to-text and text-to-speech conversion**. For example, generate subtitles for videos.
-1. **Machine translation**. For example, translate text from English to Japanese.
-1. **Text classification**. For example, label an email as spam or not spam.
-1. **Entity extraction**. For example, extract keywords or names from a document.
-1. **Question answering**. For example, provide answers to questions like "What is the capital of France?"
-1. **Text summarization**. For example, generate a short one-paragraph summary from a multi-page document.
+::: zone pivot="text"
 
-Historically, NLP has been challenging as our language is complex and computers find it hard to *understand* text. In this module, you learn how developments in AI and specifically NLP have led to the models we use today.
+Within artificial intelligence (AI), text analysis is a subset of natural language processing (NLP) that enables machines to extract meaning, structure, and insights from unstructured text. Organizations use text analysis to transform customer feedback, support tickets, contracts, and social media posts into actionable intelligence.
 
-Next, let's examine some general principles and common techniques used to perform text analysis and other NLP tasks. 
+Techniques to process and analyze text evolved over many years, from simple statistical calculations based on term-frequency to vector-based language models that encapsulate semantic meaning. Some common use cases for text analysis include:
+
+- **Key term extraction**: Identifying important words and phrases in text, to help determine the topics and themes it discusses.
+- **Entity detection**: Identifying named entities mentioned in text; for example, places, people, dates, and organizations.
+- **Text classification**: Categorizing text documents based on their contents. For example, filtering email as *spam* or *not spam*.
+- **Sentiment analysis**: A particular form of text classification that predicts the *sentiment* of text - for example, categorizing social media posts as *positive*, *neutral*, or *negative*.
+- **Text summarization**: Reducing the volume of text while retaining its salient points. For example, generating a short one-paragraph summary from a multi-page document.
+
+Text analysis is challenging because language is complex, and computers find it hard to understand. Ultimately, all text analysis techniques are based on the requirement to extract *meaning* from natural language text.
+
+::: zone-end
+
+> [!NOTE]
+> We recognize that different people like to learn in different ways. You can choose to complete this module in video-based format or you can read the content as text and images. The text contains greater detail than the videos, so in some cases you might want to refer to it as supplemental material to the video presentation.

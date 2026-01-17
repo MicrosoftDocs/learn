@@ -6,7 +6,7 @@ metadata:
   description: Knowledge check
   author: wwlpublish
   ms.author: madiepev
-  ms.date: 08/25/2024
+  ms.date: 12/01/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
@@ -36,4 +36,4 @@ quiz:
     - content: "Use a mlflow.log_metric() statement to log the AUC value."
       isCorrect: true
       explanation: "Correct. Your script needs to use MLflow to log the primary metric to the run using the same name as specified in the sweep job."
-
+

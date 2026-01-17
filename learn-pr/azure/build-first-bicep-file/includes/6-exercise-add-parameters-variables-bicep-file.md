@@ -1,3 +1,5 @@
+[!INCLUDE[](../../../includes/azure-optional-exercise-subscription-note.md)]
+
 In this exercise, you'll update the Bicep file you previously created so it:\
 
 - Accepts parameters for the resource locations and names.

@@ -5,8 +5,8 @@ metadata:
   description: Learn about the basics of Docker containers, container orchestration with Kubernetes, and managed clusters on Azure Kubernetes Service.
   brand: azure
   ms.date: 5/19/2020
-  author: nickomang
-  ms.author: nickoman
+  author: davidsmatlak
+  ms.author: davidsmatlak
   ms.topic: learning-path
 title: Introduction to Kubernetes on Azure
 summary: |

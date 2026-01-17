@@ -1,3 +1,5 @@
+[!INCLUDE[](../../../includes/azure-optional-exercise-subscription-note.md)]
+
 In this exercise, you'll update the Bicep file you previously created so it uses a module for the Azure App Service resources. Modules help to keep the intention of the main file clearer. You can reuse the App Service module in other Bicep files if you choose to.
 
 During the process, you'll:

@@ -4,11 +4,10 @@ metadata:
   title: Exercise - Test your Application Gateway
   description: Connect to the web app through Application Gateway
   ms.date: 04/24/2025
-  author: greg-lindsay
-  ms.author: greglin
+  author: kumud
+  ms.author: kumud
   ms.topic: unit
 title: Exercise - Test your Application Gateway
 durationInMinutes: 10
 content: |
   [!include[](includes/6-exercise-test-application-gateway.md)]
-

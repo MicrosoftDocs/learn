@@ -1,3 +1,5 @@
+[!INCLUDE[](../../../includes/azure-optional-exercise-subscription-note.md)]
+
 In this exercise, you'll create a parameters file that provides values for the Bicep file that you previously created. In the same parameters file, you'll also add Azure Key Vault references to securely provide sensitive information.
 
 During the process, you'll do the following tasks:

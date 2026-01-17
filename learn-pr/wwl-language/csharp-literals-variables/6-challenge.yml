@@ -13,4 +13,3 @@ metadata:
 durationInMinutes: 6
 content: |
   [!include[](includes/6-challenge.md)]
-interactive: csharp

@@ -5,7 +5,7 @@ metadata:
   description: Design machine learning operations MLOps solution with Azure Machine Learning Python SDK v2.
   author: wwlpublish
   ms.author: madiepev
-  ms.date: 08/25/2024
+  ms.date: 12/01/2025
   ms.service: azure-machine-learning
   ms.topic: module
   ms.custom: ai-learning-hub
@@ -37,4 +37,4 @@ units:
 - learn.wwl.design-machine-learning-operations-solution.summary
 badge:
   uid: learn.wwl.design-machine-learning-operations-solution.badge
-
+

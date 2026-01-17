@@ -62,20 +62,20 @@ Use Visual Studio Code as your development environment, and test your applicatio
 Use the following steps to prepare for the Guided project exercises.
 1. Download a zip file containing the code folders for the challenge project.
     
-    - In a browser, open the link [Challenge-Project-variable-data-in-CSharp-main.zip](https://github.com/MicrosoftLearning/Challenge-project-Work-with-variable-data-in-CSharp/archive/refs/heads/main.zip) to download the zip file (Challenge-Project-variable-data-in-CSharp-main.zip).
+    - In a browser, open the link [Lab Files](https://github.com/MicrosoftLearning/Challenge-project-work-variable-data-CSharp/archive/refs/heads/main.zip) to download the zip file (Challenge-project-work-variable-data-CSharp-main.zip).
 
 1. Unzip the downloaded files locally (or in the sandbox if you aren't using a local dev environment)
 
     1. On your local machine, navigate to your downloads folder
-    1. Right-click the Challenge-Project-variable-data-in-CSharp-main.zip file, and then select **Extract all**
+    1. Right-click the Challenge-project-work-variable-data-CSharp-main.zip file, and then select **Extract all**
     1. Make note of the extracted files location (the location of the root folder)
 
 1. Open the root GuidedProject folder in Visual Studio Code
 
     1. Open Visual Studio Code locally (or open MS Learn sandbox and open Visual Studio Code if you aren't using a local dev environment)
     1. In Visual Studio Code, on the **File** menu, select **Open Folder**
-    1. Navigate to the folder that contains your extracted files, expand the folder structure to locate the folder named "Challenge-Project-variable-data-in-CSharp-main".
-    1. Select **Challenge-Project-variable-data-in-CSharp-main** and then select **Select Folder**
+    1. Navigate to the folder that contains your extracted files, expand the folder structure to locate the folder named "Challenge-project-work-variable-data-CSharp-main".
+    1. Select **Challenge-project-work-variable-data-CSharp-main** and then select **Select Folder**
 
         - The Visual Studio Code EXPLORER view should show two subfolders named **Final** and **Starter**.
 

@@ -1,0 +1,43 @@
+### YamlMime:Module
+uid: learn.wwl.store-manage-containers-azure-container-registry
+metadata:
+  title: Store and Manage Containers in Azure Container Registry
+  description: Learn to store, build, and manage container images using Azure Container Registry for AI applications on Azure.
+  ms.date: 01/05/2026
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: module-standard-task-based
+  ai-usage: ai-assisted
+  ms.service: azure-container-registry
+title: Store and manage containers in Azure Container Registry
+summary: Use Azure Container Registry to store, build, and manage container images for AI applications. Learn the registry hierarchy, build images with ACR Tasks, and implement tagging strategies for reliable deployments.
+abstract: |
+  After completing this module, you'll be able to:
+    - Explain how Azure Container Registry organizes images using registries, repositories, and artifacts
+    - Build and manage container images in the cloud using ACR Tasks
+    - Implement tagging and versioning strategies for reliable container deployments
+    - Use the Azure CLI to manage container images and run ACR quick tasks
+prerequisites: |
+  Before beginning this module, you should have:
+  - Programming experience with languages such as Python, JavaScript, or C#.
+  - Basic understanding of Azure services and cloud computing concepts.
+  - Familiarity with Docker and container concepts.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- azure-container-registry
+subjects:
+- containers
+units:
+- learn.wwl.store-manage-containers-azure-container-registry.introduction
+- learn.wwl.store-manage-containers-azure-container-registry.image-storage
+- learn.wwl.store-manage-containers-azure-container-registry.build-run-acr-tasks
+- learn.wwl.store-manage-containers-azure-container-registry.tag-version-images
+- learn.wwl.store-manage-containers-azure-container-registry.exercise-build-manage-acr-tasks
+- learn.wwl.store-manage-containers-azure-container-registry.module-assessment
+- learn.wwl.store-manage-containers-azure-container-registry.summary
+badge:
+  uid: learn.wwl.store-manage-containers-azure-container-registry.badge

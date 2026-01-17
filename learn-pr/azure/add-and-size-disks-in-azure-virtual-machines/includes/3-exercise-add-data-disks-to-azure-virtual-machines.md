@@ -5,15 +5,21 @@ Your law firm is expanding its case load, and you're tasked with creating a new 
 
 Your goal is to create a Linux VM and attach a new virtual hard disk (VHD) named **uploadDataDisk1** to store the `/uploads` directory.
 
+[!INCLUDE[](../../../includes/azure-optional-exercise-subscription-note.md)]
+
+[!INCLUDE[](../../../includes/azure-optional-exercise-create-resource-group-note.md)]
+
+[!INCLUDE[](../../../includes/azure-cloud-shell-terminal-note.md)]
+
 ## Set Azure CLI default values
 
 The Azure CLI lets you set default values so you don't have to repeat them each time you run a command.
 
 You can specify the default Azure location, or region. This location is where your Azure VM is placed.
 
-Ideally, this location is close to your clients. In this case, select the closest region to you from the locations available to the Azure sandbox.
+Ideally, this location is close to your clients. In this case, select the closest region to you from the locations available in Azure.
 
-[!include[](../../../includes/azure-sandbox-regions-first-mention-note.md)]
+1. Open the [Azure Cloud Shell](https://shell.azure.com/).
 
 1. Run `az configure` to set the default location you want to use. Replace **eastus** with the location you chose in the previous step.
 
@@ -21,12 +27,12 @@ Ideally, this location is close to your clients. In this case, select the closes
     az configure --defaults location=eastus
     ```
 
-    [!include[](../../../includes/azure-cloudshell-copy-paste-tip.md)]
+    [!INCLUDE[](../../../includes/azure-cloudshell-copy-paste-tip.md)]
 
-1. Set the default resource group name to the preconfigured resource group created for you through the Azure sandbox: **<rgn>[sandbox resource group]</rgn>**
+1. Run `az configure` to set the default resource group name. Replace **myResourceGroupName** with the name of an existing resource group, or the name of the resource group that you created for this exercise.
 
     ```azurecli
-    az configure --defaults group="<rgn>[sandbox Resource Group]</rgn>"
+    az configure --defaults group="myResourceGroupName"
     ```
 
 ## Create a Linux VM
@@ -190,6 +196,6 @@ For learning purposes, let's also run a few commands on your VM to verify that t
 
 ## Summary
 
-Here, you created a data disk and attached it to your VM. You used the Custom Script Extension to run a premade Bash script on your VM to make the process more repeatable. The Bash script partitions, formats, and mounts your disk so that your web server can write to it.
+In this exercise, you created a data disk and attached it to your VM. You used the Custom Script Extension to run a premade Bash script on your VM to make the process more repeatable. The Bash script partitions, formats, and mounts your disk so that your web server can write to it.
 
 Now that the data disk on your VM is prepared, let's explore a bit more about the various types of disks you can create. Your primary decision is whether to choose Standard or Premium storage.

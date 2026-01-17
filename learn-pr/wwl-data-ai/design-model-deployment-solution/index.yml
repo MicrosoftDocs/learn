@@ -5,7 +5,7 @@ metadata:
   description: Design a model deployment solution with Azure Machine Learning Python SDK v2
   author: wwlpublish
   ms.author: madiepev
-  ms.date: 07/10/2024
+  ms.date: 12/01/2025
   ms.service: azure-machine-learning
   ms.topic: module
   ms.collection:
@@ -35,4 +35,4 @@ units:
 - learn.wwl.design-model-deployment-solution.summary
 badge:
   uid: learn.wwl.design-model-deployment-solution.badge
-
+

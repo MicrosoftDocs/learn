@@ -4,8 +4,8 @@ metadata:
   title: Get started with data warehouses in Microsoft Fabric
   description: "Understand the key components and design considerations for implementation of data warehouses in Microsoft Fabric."
   ms.date: 5/15/2025
-  author: JulianePadrao
-  ms.author: jupadrao
+  author: theresa-i
+  ms.author: theresai
   ms.topic: module
   ms.service: fabric
   ai-usage: human-only

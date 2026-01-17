@@ -263,7 +263,7 @@ You can initialize an array during declaration just like you would a regular var
     string[] fraudulentOrderIDs = [ "A123", "B456", "C789" ];
     ```
 
-    This example uses the **Collection expression** syntax, which was introduced in C# 12.
+    This example uses the **Collection expression** syntax, which was introduced in C# 12 and is supported in .NET 10.
 
     You may also see an older syntax used to initialize an array.
 

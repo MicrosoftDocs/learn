@@ -70,24 +70,24 @@ quiz:
     - content: "Microsoft Defender for Cloud"
       isCorrect: true
       explanation: "Correct: Microsoft Defender for Cloud provides cloud security posture management (CSPM) and workload protection. It helps engineers assess AI infrastructure, detect threats, and align configurations with best practices."
-    - content: "Azure AI Foundry"
+    - content: "Microsoft Foundry"
       isCorrect: false
-      explanation: "Incorrect: Azure AI Foundry provides guardrails and observability for model operations, not infrastructure posture management."
+      explanation: "Incorrect: Microsoft Foundry provides guardrails and observability for model operations, not infrastructure posture management."
     - content: "Microsoft Purview"
       isCorrect: false
       explanation: "Incorrect: Microsoft Purview focuses on data discovery and classification, not workload posture or threat detection."
 
   - content: "To achieve a complete protection strategy for Contoso's AI assistant, which combination of tools should the engineer use?"
     choices:
-    - content: "Azure AI Foundry and Microsoft Defender for Cloud"
+    - content: "Microsoft Foundry and Microsoft Defender for Cloud"
       isCorrect: false
       explanation: "Incorrect: These tools protect model behavior and infrastructure but not data governance or access."
     - content: "Microsoft Purview and Microsoft Entra ID"
       isCorrect: false
       explanation: "Incorrect: These services address data governance and access control but not workload or model protection."
-    - content: "Azure AI Foundry and Azure AI Search"
+    - content: "Microsoft Foundry and Azure AI Search"
       isCorrect: false
       explanation: "Incorrect: Azure AI Search provides retrieval for contextual responses but not security or governance controls."
-    - content: "Microsoft Purview, Azure AI Foundry, Microsoft Defender for Cloud, and Microsoft Entra ID"
+    - content: "Microsoft Purview, Microsoft Foundry, Microsoft Defender for Cloud, and Microsoft Entra ID"
       isCorrect: true
       explanation: "Correct: Together, these tools provide unified coverage across data governance, model guardrails, workload posture, and identity protection. Microsoft Entra ID enforces access through RBAC and conditional access, while Defender for Cloud extends CSPM to AI workloads."

@@ -1,0 +1,34 @@
+### YamlMime:LearningPath
+uid: learn.wwl.enhance-ai-solutions-azure-managed-redis
+metadata:
+  title: Enhance AI solutions with Azure Managed Redis
+  description: Learn how to use Azure Managed Redis to enhance your AI solutions, including caching strategies, data operations, event messaging, and vector storage.
+  ms.date: 11/26/2005
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: learning-path
+title: Enhance AI solutions with Azure Managed Redis
+prerequisites: |
+  - Programming experience with languages such as Python, JavaScript, or C#.
+  - Knowledge of caching concepts and data structures.
+  - Familiarity with AI embeddings and vector similarity concepts.
+  - Basic understanding of message queuing patterns and when to use them for decoupling services.
+  - Access to Azure Managed Redis and related tools for hands-on practice.
+summary: |
+  Learn how to use Azure Managed Redis to enhance your AI solutions, including caching strategies, data operations, event messaging, and vector storage.
+iconUrl: /training/achievements/generic-trophy.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- azure-managed-redis
+subjects:
+- cache
+- artificial-intelligence
+modules:
+- learn.wwl.implement-data-operations-azure-managed-redis
+- learn.wwl.implement-event-messaging-azure-managed-redis
+- learn.wwl.implement-vector-storage-azure-managed-redis
+trophy:
+  uid: learn.wwl.enhance-ai-solutions-azure-managed-redis.trophy

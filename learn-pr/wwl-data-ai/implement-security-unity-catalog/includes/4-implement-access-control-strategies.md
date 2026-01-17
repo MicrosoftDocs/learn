@@ -82,7 +82,7 @@ Permissions can be revoked in a similar way:
 REVOKE SELECT ON TABLE sales FROM `analysts`;
 ```
 
-These SQL statements can be run from a Databricks notebook, the SQL editor in the workspace, or in Databricks SQL.
+These SQL statements can be run from an Azure Databricks notebook, the SQL editor in the workspace, or in Azure Databricks SQL.
 
 ### Granting Permissions with the Azure Databricks User Interface
 

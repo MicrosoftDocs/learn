@@ -2,11 +2,11 @@ Azure Container Registry (ACR) tasks are a suite of features that:
 
 * Provide cloud-based container image building for platforms like Linux, Windows, and Advanced RISC Machines (Arm).
 * Extend the early parts of an application development cycle to the cloud with on-demand container image builds.
-* Enable automated builds triggered by source code updates, updates to a container's base image, or timers. 
+* Enable automated builds triggered by source code updates, updates to a container's base image, or timers.
 
 ## Task scenarios
 
-ACR Tasks supports several scenarios to build and maintain container images and other artifacts. 
+ACR Tasks supports several scenarios to build and maintain container images and other artifacts.
 
 * **Quick task** - Build and push a single container image to a container registry on-demand, in Azure, without needing a local Docker Engine installation. Think `docker build`, `docker push` in the cloud.
 
@@ -37,7 +37,7 @@ You can set up an ACR task to track a dependency on a base image when it builds 
 
 ## Schedule a task
 
-Optionally schedule a task by setting up one or more timer triggers when you create or update the task. Scheduling a task is useful for running container workloads on a defined schedule, or running maintenance operations or tests on images pushed regularly to your registry. 
+Optionally schedule a task by setting up one or more timer triggers when you create or update the task. Scheduling a task is useful for running container workloads on a defined schedule, or running maintenance operations or tests on images pushed regularly to your registry.
 
 ## Multi-step tasks
 
@@ -52,7 +52,7 @@ Multi-step tasks, defined in a [YAML file](/azure/container-registry/container-r
 
 ## Image platforms
 
-By default, ACR Tasks builds images for the Linux OS and the amd64 architecture. Specify the `--platform` tag to build Windows images or Linux images for other architectures. Specify the OS and optionally a supported architecture in OS/architecture format (for example, `--platform Linux/arm`). For Azure Resource Manager architectures, optionally specify a variant in OS/architecture/variant format (for example, `--platform Linux/arm64/v8`):
+By default, ACR Tasks builds images for the Linux OS and the amd64 architecture. Specify the `--platform` tag to build Windows images or Linux images for other architectures. Specify the OS and optionally a supported architecture in OS/architecture format (for example, `--platform Linux/arm`). For Advanced RISC Machine (ARM) architectures, optionally specify a variant in OS/architecture/variant format (for example, `--platform Linux/arm64/v8`):
 
 | OS | Architecture |
 |---|---|

@@ -4,9 +4,9 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: "Knowledge check"
-  ms.date: 8/15/2025
-  author: wwlpublish
-  ms.author: sheryang
+  ms.date: 12/16/2025
+  author: GraemeMalcolm
+  ms.author: gmalc
   ms.topic: unit
   ms.custom:
   - N/A
@@ -14,7 +14,7 @@ durationInMinutes: 3
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "What is the primary purpose of tokenization in natural language processing (NLP)?"
+  - content: "What is the purpose of tokenization?"
     choices:
     - content: "To translate text into another language."
       isCorrect: false
@@ -25,25 +25,25 @@ quiz:
     - content: "To break down text into smaller units for analysis."
       isCorrect: true
       explanation: "Correct."
-  - content: "Which of the following techniques is used to determine the importance of words in a document within the context of a larger collection of documents?"
+  - content: "Which of the following techniques is used to determine the importance of words in a specific document within the context of a larger collection of documents?"
     choices:
     - content: "Naïve Bayes"
       isCorrect: false
       explanation: "Incorrect. Naïve Bayes calculates the probability of a document belonging to a particular class based on the probabilities of individual words given that class."
     - content: "TF-IDF (Term Frequency-Inverse Document Frequency)"
       isCorrect: true
-      explanation: "Correct. TF-IDF is a technique used to determine the importance of words in a document within the context of a larger collection of documents."
+      explanation: "Correct. TF-IDF is a technique used to determine the importance of words in a specific document within the context of a larger collection of documents."
     - content: " Word2Vec"
       isCorrect: false
       explanation: "Incorrect. Word2Vec is a technique for generating word embeddings, which are dense vector representations of words that capture semantic relationships between words. "
-  - content: "Which of the following best describes the role of embeddings in natural language processing (NLP)?"
+  - content: "Which of the following best describes the role of embedding vectors in natural language processing (NLP)?"
     choices:
-      - content: "They visualize text data in two-dimensional space for easier interpretation."
+      - content: "They duplicate tokens in multiple languages."
         isCorrect: false
-        explanation: "Incorrect."
-      - content: "They summarize large text corpora into short, meaningful sentences." 
+        explanation: "Incorrect. Embedding vectors don't duplicate tokens."
+      - content: "They define stopwords that should be ignored." 
         isCorrect: false
-        explanation: "Incorrect."
-      - content: "They convert language tokens into vectors that capture semantic relationships."
+        explanation: "Incorrect. Embedding vectors don't define stopwords."
+      - content: "They capture semantic token relationships in multiple dimensions."
         isCorrect: true
-        explanation: "Correct."
+        explanation: "Correct. Embedding vectors capture semantic relationships between tokens in multiple dimensions."

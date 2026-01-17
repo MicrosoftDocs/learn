@@ -4,9 +4,9 @@ title: Exercise - Explore Clear() and Resize()
 metadata:
   title: Exercise - Explore Clear() and Resize()
   description: "Explore using Clear() and Resize() to remove the contents of specific elements in an array, and to add or remove elements from an array."
-  ms.date: 11/08/2024
-  author: wwlpublish
-  ms.author: eric
+  ms.date: 12/15/2025
+  author: ChrisHowd
+  ms.author: cahowd
   ms.topic: unit
   ms.custom:
   - N/A

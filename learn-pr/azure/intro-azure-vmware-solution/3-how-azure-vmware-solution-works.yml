@@ -4,7 +4,7 @@ title: How Azure VMware Solution works
 metadata:
   title: How Azure VMware Solution works
   description: Learn how Azure VMware Solution is set up and how it works on Azure.
-  ms.date: 10/23/2024
+  ms.date: 01/05/2026
   author: Orin-Thomas
   ms.author: orthomas
   ms.topic: unit
@@ -50,4 +50,4 @@ quiz:
       isCorrect: false
       explanation: "Incorrect. The CloudAdmin role doesn't have access to, and can't configure, specific management components that Microsoft supports and manages."
   
-
+

@@ -1,0 +1,14 @@
+### YamlMime: ModuleUnit
+uid: learn.wwl.create-and-organize-objects-in-unity-catalog.implement-foreign-catalog
+title: Implement foreign catalog
+metadata:
+  title: Implement Foreign Catalog
+  description: Learn how to implement foreign catalogs in Unity Catalog by configuring connections to external databases for centralized governance and read-only access.
+  ms.date: 12/07/2025
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+  ai-usage: ai-generated
+durationInMinutes: 11
+content: |
+  [!include[](includes/8-implement-foreign-catalog.md)]

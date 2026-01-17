@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.integrate-ai-services-enrich-azure-database-postgresql.extract-insights-azure-language-azure-database-postgresql
+title: Extract insights using Azure Language and Azure Database for PostgreSQL
+metadata:
+  title: Extract insights using Azure Language and Azure Database for PostgreSQL
+  description: "Learn how to extract key phrases, recognize entities, and detect PII in Azure Database for PostgreSQL using Azure Language."
+  ms.date: 09/08/2025
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/04-extract-insights-azure-language-azure-database-postgresql.md)]

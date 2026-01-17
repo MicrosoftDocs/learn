@@ -2,7 +2,9 @@ You successfully created and deployed a web application to Azure App Service.
 
 App Service simplifies managing and controlling your web app in comparison to traditional hosting options. Your App Service Plan can help you reduce the time and effort spent running and managing your web app, and provides advanced cloud features such as autoscaling and Azure DevOps integration.
 
-[!include[](../../../includes/azure-sandbox-cleanup.md)]
+## Clean up resources
+
+When you're finished with the resources you created in this module, you can delete them to avoid incurring charges. In the Azure portal, navigate to your resource group and select **Delete resource group**.
 
 ## Learn More
 
