@@ -25,6 +25,23 @@ Azure landing zones are organized around eight design areas that cybersecurity a
 | **Governance** | Policy enforcement, compliance, and standards |
 | **Platform automation and DevOps** | Infrastructure as code and deployment practices |
 
+## Relationship to the Cloud Adoption Framework
+
+Azure landing zones are a key output of the **Ready methodology** in the Cloud Adoption Framework. While the CAF provides the strategic guidance and methodologies for your cloud journey, landing zones translate that guidance into a concrete, deployable environment.
+
+Think of it this way: the Cloud Adoption Framework tells you *what* to do and *why*, while Azure landing zones give you the *how*—a technical implementation that embeds CAF principles directly into your Azure infrastructure.
+
+The connection spans multiple CAF methodologies:
+
+| CAF Methodology | Landing Zone Relationship |
+| --- | --- |
+| **Ready** | Landing zones are the primary deliverable, preparing your environment for workload deployment |
+| **Govern** | Landing zone governance design area implements CAF governance disciplines through Azure Policy |
+| **Secure** | Landing zone security design area operationalizes CAF Secure methodology guidance, including Zero Trust principles |
+| **Manage** | Landing zone management design area establishes the operational foundation defined in CAF |
+
+This integration means that when you deploy an Azure landing zone, you're automatically implementing the security posture modernization, Zero Trust alignment, and governance controls that the Cloud Adoption Framework recommends. The landing zone becomes the technical realization of your CAF-driven cloud strategy.
+
 ## Security design area
 
 The security design area focuses on implementing comprehensive security controls across your landing zone. Key considerations include:

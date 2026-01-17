@@ -1,5 +1,32 @@
 
-The Microsoft Azure Well-Architected Framework provides architectural best practices across five pillars: Reliability, Security, Cost Optimization, Operational Excellence, and Performance Efficiency. For cybersecurity architects, the Security pillar offers detailed guidance for building workloads that are resilient to attacks and protect organizational assets.
+The Microsoft Azure Well-Architected Framework provides architectural best practices across five pillars: Reliability, Security, Cost Optimization, Operational Excellence, and Performance Efficiency. 
+
+The following diagram gives a high-level overview of the Azure Well-Architected Framework:
+
+:::image type="content" source="../media/waf-diagram-revised.png" alt-text="Diagram of the Well-Architected Framework and supporting elements." lightbox="../media/waf-diagram-revised.png":::
+
+In the center, is the Well-Architected Framework, which includes the five pillars of architectural excellence. Surrounding the Well-Architected Framework are six supporting elements:
+
+- [Azure Well-Architected Review](/assessments/?mode=pre-assessment)
+- [Azure Advisor](/azure/advisor/)
+- [Documentation](/azure/architecture/framework/)
+- [Partners](https://azure.microsoft.com/partners/), [Support](https://azure.microsoft.com/support/options/#support-plans), and Services Offers
+- [Reference Architectures](/azure/architecture/guide/)
+- [Design Principles](/azure/architecture/guide/design-principles/)
+
+For cybersecurity architects, the Security pillar offers detailed guidance for building workloads that are resilient to attacks and protect organizational assets.
+
+## Understanding the Well-Architected Framework
+
+The Well-Architected Framework is Microsoft's guidance for designing and operating high-quality workloads in Azure. While the Cloud Adoption Framework guides your *journey* to the cloud and Azure landing zones provide the *foundation* for your environment, the Well-Architected Framework focuses on *workload excellence*—ensuring each application you build meets quality standards.
+
+These three frameworks work together:
+
+- **Cloud Adoption Framework**: Defines your cloud strategy and adoption approach
+- **Azure landing zones**: Implements a secure, governed environment aligned with CAF principles
+- **Well-Architected Framework**: Guides the design of individual workloads deployed into your landing zones
+
+For cybersecurity architects, this means CAF's Secure methodology shapes your overall security strategy, landing zones enforce baseline security controls, and the Well-Architected Framework's Security pillar guides workload-specific security decisions.
 
 ## Security pillar overview
 

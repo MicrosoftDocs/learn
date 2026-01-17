@@ -8,6 +8,6 @@ metadata:
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: unit
-durationInMinutes: 12
+durationInMinutes: 10
 content: |
   [!include[](includes/6-well-architected-security-pillar.md)]

@@ -22,7 +22,7 @@ Please see [Architect successful workloads on Azure](/shows/azure-essentials-sho
 
 The following diagram gives a high-level overview of the Azure Well-Architected Framework:
 
-![Diagram of the Well-Architected Framework and supporting elements.](/azure/architecture/framework/_images/waf-diagram-revised.png)
+:::image type="content" source="../media/waf-diagram-revised.png" alt-text="Diagram of the Well-Architected Framework that shows the pillars and supporting elements." lightbox="../media/waf-diagram-revised.png":::
 
 In the center, is the Well-Architected Framework, which includes the five pillars of architectural excellence. Surrounding the Well-Architected Framework are six supporting elements:
 
