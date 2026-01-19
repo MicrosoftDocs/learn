@@ -3,7 +3,7 @@ uid: learn.wwl.select-and-configure-compute
 metadata:
   title: Select and Configure Compute in Azure Databricks
   description: Learn how to select and configure appropriate compute resources in Azure Databricks including serverless, classic compute, SQL warehouses, and job clusters. Master performance tuning, access control, and library management.
-  ms.date: 12/07/2025
+  ms.date: 01/14/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: module

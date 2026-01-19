@@ -1,5 +1,7 @@
 Tracking who did what, when, and to which data objects is essential for governance, security, and compliance. When you configure **audit logging** in Azure Databricks, you gain visibility into every significant action across your workspace and account. This visibility helps you meet regulatory requirements, investigate security incidents, and maintain accountability across your data platform.
 
+Unity Catalog audit logging is **configured at the account level** and automatically applies to all workspaces within that account. This account-level configuration ensures consistent audit capture across your entire Databricks environment without requiring per-workspace setup.
+
 In this unit, you learn how to access and query audit logs, understand what events are captured, and use these logs for common governance scenarios.
 
 ## Understand the audit log system table
@@ -139,13 +141,13 @@ When you enable or disable verbose logging, Azure Databricks logs this configura
 
 ## Configure log delivery to external systems
 
-While the audit log system table provides direct access within Databricks, many organizations route logs to external systems for centralized monitoring. Azure Databricks integrates with Azure diagnostic settings to deliver logs to:
+While the audit log system table provides direct access within Databricks, many organizations route logs to external systems for centralized monitoring. Azure Databricks integrates with Azure diagnostic settings to deliver logs to multiple destinations, each optimized for different use cases:
 
-- **Azure Storage accounts**: For long-term archival and batch analysis
-- **Azure Event Hubs**: For real-time streaming to downstream consumers
-- **Azure Log Analytics**: For integration with Azure Monitor and custom dashboards
+- **Azure Log Analytics**: Provides near-real-time ingestion (typically within 15 minutes), centralized storage, and powerful querying using Kusto Query Language (KQL). This makes it ideal for fast analysis, interactive investigations, and building custom dashboards for auditing Unity Catalog access events.
+- **Azure Storage accounts**: Offers low-cost, long-term archival and batch analysis. Best suited for compliance scenarios where logs are accessed infrequently but must be retained for extended periods.
+- **Azure Event Hubs**: Enables real-time streaming to downstream consumers and processing systems. Ideal when you need to integrate audit logs with existing event-driven architectures or SIEM platforms.
 
-Platform administrators configure log delivery through the Azure portal. As a data engineer, you should know that logs typically arrive within **15 minutes** of the event occurring. When building monitoring solutions, account for this latency in your alerting thresholds.
+Platform administrators configure log delivery at the account level through the Azure portal. When building monitoring solutions, account for typical ingestion latency of approximately **15 minutes** in your alerting thresholds.
 
 :::image type="content" source="../media/7-diagnostic-setting.png" alt-text="Screenshot of Azure portal, showing diagnostic setting for Azure Databricks." lightbox="../media/7-diagnostic-setting.png":::
 

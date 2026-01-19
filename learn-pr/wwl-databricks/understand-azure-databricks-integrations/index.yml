@@ -3,7 +3,7 @@ uid: learn.wwl.understand-azure-databricks-integrations
 metadata:
   title: Understand Azure Databricks Integrations
   description: Learn how Azure Databricks integrates with Microsoft tools and services including Fabric, Power BI, VS Code, Power Platform, Copilot Studio, Purview, and Foundry to enable comprehensive data and AI solutions.
-  ms.date: 12/07/2025
+  ms.date: 01/15/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: module

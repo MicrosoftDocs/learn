@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.deploy-containers-azure-app-service.exercise
+title: Exercise - Deploy a container to Azure App Service
+metadata:
+  title: Exercise - Deploy a container to Azure App Service
+  description: Exercise - Deploy a container to Azure App Service
+  ms.date: 01/12/2026
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: unit
+durationInMinutes: 30
+content: |
+  [!include[](includes/6-exercise.md)]
