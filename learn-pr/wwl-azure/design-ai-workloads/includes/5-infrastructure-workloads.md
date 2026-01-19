@@ -32,7 +32,7 @@ It also helps to keep latency as low as possible. Placing your VMs and resources
 
 And if you’re working with multiple GPUs or multiple VMs, fast networking between nodes becomes essential. InfiniBand-enabled Azure VMs make GPU-to-GPU communication super-fast, and tools like Azure Batch can handle the setup for you automatically.
 
-> [!NOTE]
+> [!TIP]
 >  The [Introduction to AI Landing Zones](/training/modules/intro-ai-landing-zones/) training module provides details on Azure landing zones with AI workloads.
 
  
