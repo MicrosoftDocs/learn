@@ -1,18 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.get-started-generative-ai-azure.exercise
-title: Exercise - Explore generative AI in Microsoft Foundry 
+title: Exercise - Get started with generative AI and agents in Microsoft Foundry 
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Exercise - Explore generative AI in Microsoft Foundry
-  description: "Exercise - Explore generative AI in Microsoft Foundry"
-  author: sherzyang
-  ms.author: sheryang
-  ms.date: 12/5/2025
+  title: Exercise - Get started with generative AI and agents in Microsoft Foundry
+  description: "Exercise - Get started with generative AI and agents in Microsoft Foundry"
+  ms.author: gmalc
+  ms.date: 01/19/2026
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
-durationInMinutes: 25
+durationInMinutes: 45
 content: |
   [!include[](includes/7-exercise.md)]
 

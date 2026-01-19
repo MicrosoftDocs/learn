@@ -1,12 +1,11 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.ai-information-extraction.exercise
-title: Exercise - Extract information
+title: Exercise - Get started with information extraction in Microsoft Foundry
 metadata:
-  title: Exercise - Extract information
-  description: Use Azure AI to extract information from content
-  author: graememalcolm
-  ms.author: gmalc
-  ms.date: 05/11/2025
+  title: Exercise - Get started with information extraction in Microsoft Foundry
+  description: Use Microsoft Foundry to extract information from content.
+  ms.author: sheryang
+  ms.date: 01/19/2026
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
