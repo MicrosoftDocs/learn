@@ -1,4 +1,4 @@
->[!VIDEO https://learn-video.azurefd.net/vod/player?id=22222222-2222-2222-8888-8888888888-01]
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=c959967a-8be3-42d8-a78a-a2c54ee1d1c2]
 
 Azure Databricks is a cloud-based data platform that brings together the best of **data engineering, data science, and machine learning** in a single, unified workspace. Built on top of **Apache Spark**, it allows organizations to easily process, analyze, and visualize massive amounts of data in real time.
 
@@ -18,7 +18,7 @@ At its core, Azure Databricks helps organizations:
 
 ## Data Lakehouse
 
->[!VIDEO https://learn-video.azurefd.net/vod/player?id=22222222-2222-2222-8888-8888888888-02]
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=fe88876f-1235-4ce0-ac98-9f0376d61781]
 
 A **data lakehouse** is a data management approach that blends the strengths of both data lakes and data warehouses. It offers scalable storage and processing, allowing organizations to handle diverse workloads—such as machine learning and business intelligence—without relying on separate, disconnected systems. By centralizing data, a lakehouse supports a single source of truth, reduces duplicate costs, and ensures that information stays up to date.
 
