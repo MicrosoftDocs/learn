@@ -29,6 +29,6 @@ Select resources that help you build AI workloads with prebuilt or custom soluti
 
 Keep your AI workloads inside a [secure virtual network](/azure/cloud-adoption-framework/scenarios/ai/platform/networking) and avoid exposing anything to the public internet. Use private endpoints so services like Foundry, Azure AI Services, Storage, Key Vault, and Container Registry all communicate privately over the Azure backbone.
 
-Control traffic tightly. Use a Bastion-connected jump box for safe admin access, restrict outbound traffic to only what your workloads need, and use network security groups to enforce least‑privilege access between resources.
+Control traffic tightly. Use Bastion for admin access, restrict access with private links, rely on solid DNS, and use NSGs to enforce least‑privilege access between resources.
 
 Finally, monitor your environment. Azure Firewall protects and inspects outbound traffic, and Azure Web Application Firewall shields any public-facing AI apps from common attacks, helping you run AI workloads securely and confidently.

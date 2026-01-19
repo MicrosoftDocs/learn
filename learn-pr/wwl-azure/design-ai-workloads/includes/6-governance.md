@@ -23,6 +23,9 @@ Secure your AI environment by limiting access to only what’s necessary. Use ro
 
 Keep AI spending predictable by setting budgets and alerts in [Cost Management](/azure/cost-management-billing/costs/reporting-get-started). Optimize resources with autoscaling, virtual machine (VM) autoshutdown, and approved VM SKUs, and control model costs by choosing the right pricing approach—whether that’s pay-as-you-go, PTUs, or reservations.
 
+> [!TIP]
+> To learn more, consider the [Introduction to cost management for AI workloads](/training/modules/understand-cost-management-ai/) training module.
+
 **Data Governance & Privacy**
 
 Strong data governance starts with clear standards. Decide what data can be used for training and RAG. Protect privacy with techniques like anonymization and data residency controls, and make sure you have solid retention and deletion policies in place. Enable logging and diagnostics so you always have visibility into how data is accessed and used.
@@ -31,7 +34,7 @@ Strong data governance starts with clear standards. Decide what data can be used
 
 Use [Azure Policy](/azure/governance/policy/overview) to consistently enforce deployment and configuration standards across your AI environment. Apply structured tagging for cost tracking and ownership. Use [Microsoft Purview ](/purview/purview)to help secure and govern all your data.
 
-> [!NOTE]
+> [!TIP]
 > To learn more, consider the [Govern AI Services with Azure Policy](/training/modules/govern-ai-azure-policy/) training module. 
 
 **Operations**
