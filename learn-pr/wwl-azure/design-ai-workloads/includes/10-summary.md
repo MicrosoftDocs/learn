@@ -24,6 +24,7 @@ Copilot can assist you in configuring Azure infrastructure solutions. Copilot ca
 
 ### Learn more with Azure documentation
 
-* The [AI adoption - Cloud Adoption Framework](/azure/cloud-adoption-framework/scenarios/ai/) provides a structured process for adopting AI solutions in Azure. 
+* The [AI adoption - Cloud Adoption Framework](/azure/cloud-adoption-framework/scenarios/ai/) provides a structured process for adopting AI solutions in Azure.
+  
 * The [AI Workload Documentation - Microsoft Azure Well-Architected Framework](/azure/well-architected/ai/) focuses on the architectural challenges of designing AI workloads. 
-* The [Responsible AI Principles and Approach](/ai/principles-and-approach) helps you develop AI systems in a way that’s transparent, reliable, and worthy of trust. 
+
