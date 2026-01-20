@@ -43,3 +43,21 @@ There are a few SQL Server features that aren't supported by Azure SQL Managed I
 For the full list of supported features, see [Limitations of Azure SQL Managed Instance link](/azure/azure-sql/managed-instance/managed-instance-link-feature-overview?#limitations).
 
 As we've seen, Azure SQL Managed Instance link feature enables organizations to confidently extend their SQL Server environments to Azure while also benefiting from the scalability, performance, and security features that Azure SQL Managed Instance offers.
+
+## Choosing between migration methods
+
+The choice between Managed Instance link and LRS depends on your specific requirements:
+
+| Consideration | Managed Instance link | Log Replay Service |
+| --- | --- | --- |
+| **Minimum downtime required** | Best choice - cutover in seconds | Longer cutover, especially for Business Critical tier |
+| **Need to read data during migration** | Supported | Not available - database is in restoring state |
+| **SQL Server version** | 2016 and later | 2012 and later |
+| **SQL Server edition** | Enterprise, Standard, Developer | All editions |
+| **Network configuration** | Requires VPN or private endpoint setup | Works with public endpoint by default |
+| **Migration duration** | Unlimited | Maximum 30 days |
+| **Reverse migration needed** | Supported (depends on SQL MI update policy) | Not supported |
+
+For most business-critical workloads targeting either General Purpose or Business Critical SQL Managed Instance, the Managed Instance link provides the best migration experience with minimal downtime.
+
+LRS is well-suited for general purpose workloads where some planned downtime is acceptable, or when migrating from older SQL Server versions or editions not supported by the Managed Instance link.
