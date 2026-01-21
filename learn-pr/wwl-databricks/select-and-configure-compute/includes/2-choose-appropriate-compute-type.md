@@ -98,7 +98,7 @@ Different compute types suit different scenarios. The following table compares k
 
 Start your decision-making process by identifying your workload characteristics. The following diagram illustrates a decision flow to help you select the appropriate compute type:
 
-![Diagram explaining how to choose the right compute type in Azure Databricks.](../media/databricks-compute-selection.svg)
+![Diagram explaining how to choose the right compute type in Azure Databricks.](../media/databricks-compute-selection.png)
 
 Consider these questions:
 
