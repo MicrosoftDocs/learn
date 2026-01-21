@@ -28,4 +28,4 @@ And Copilot can help enhance each Microsoft 365 app:
 - Excel: Analyze data, extract insights, and generate charts.
 - OneNote: Organize notes, create project outlines, and collaborate with others.
 
-*Reflection: Think about tasks where typing slows you down. How might using Surface Slim Pen 2 and voice input with the Studio Microphone help?*
+***Reflection:** Think about tasks where typing slows you down. How might using Surface Slim Pen 2 and voice input with the Studio Microphone help?*
