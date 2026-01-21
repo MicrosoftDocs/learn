@@ -1,11 +1,11 @@
-In this module, we discussed several assessment tools available for migrating databases to Azure. These tools include the Azure SQL Migration extension for Azure Data Studio, and Azure Migrate. 
+In this module, you learned about several assessment tools available for migrating SQL Server databases to Azure. These tools include SQL Server enabled by Azure Arc, Azure Migrate, and Azure Database Migration Service.
 
-The Azure SQL Migration extension for Azure Data Studio offers a convenient and user-friendly interface powered by the latest version of Data Migration Services, allowing users to assess database readiness. Azure Migrate provides a comprehensive solution for assessing and migrating on-premises databases to Azure, offering features such as discovery, assessment, and migration planning. 
+SQL Server enabled by Azure Arc provides an integrated assessment experience directly in the Azure portal, automatically generating migration readiness evaluations once your SQL Server instances are connected. Azure Migrate offers a comprehensive solution for assessing and migrating on-premises databases at scale, providing discovery, assessment, and migration planning capabilities. Azure Database Migration Service delivers assessment and migration functionality through the Azure portal, PowerShell, and Azure CLI.
 
 ## Learn more
 
 For more information on the tools available, see:
 
-- [What is Azure Database Migration Service?](/azure/dms/dms-overview)
-- [Azure SQL Migration extension for Azure Data Studio](/azure/dms/migration-using-azure-data-studio)
+- [SQL Server enabled by Azure Arc - Migration assessment](/sql/sql-server/azure-arc/migration-assessment)
 - [Azure Migrate documentation](/azure/migrate/)
+- [What is Azure Database Migration Service?](/azure/dms/dms-overview)
