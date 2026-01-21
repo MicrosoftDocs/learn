@@ -75,27 +75,7 @@ GitHub Spec Kit provides a command or step for each SDD phase:
 | Tasks | `/speckit.tasks` | tasks.md |
 | Implement | `/speckit.implement` | Source code |
 
-This one-to-one mapping shows that SDD isn't just theory—GitHub Spec Kit operationalizes it into concrete commands and artifacts.
-
-### Constitution: project principles
-
-Before diving into features, you can establish a project constitution that captures organizational standards, security requirements, and architectural decisions that must be honored throughout development. The AI references this constitution when generating plans and code.
-
-### Specify: requirements capture
-
-The `/speckit.specify` command generates a detailed specification from your high-level feature description. GitHub Copilot prompts for requirements and produces a structured spec.md with all standard sections: user stories, acceptance criteria, functional requirements, nonfunctional requirements, and edge cases.
-
-### Plan: technical design
-
-The `/speckit.plan` command produces a technical implementation plan based on the spec and constitution. You can provide context about existing systems or preferred technologies, and the AI produces architecture decisions, technology choices, and implementation sequences.
-
-### Tasks: work breakdown
-
-The `/speckit.tasks` command breaks down the implementation plan into discrete tasks organized by phases or components. Each task is specific enough to implement and verify independently.
-
-### Implement: guided coding
-
-The `/speckit.implement` command guides you through implementing tasks one at a time, generating code for each task while maintaining consistency with the spec and plan.
+This one-to-one mapping shows that SDD isn't just theory—GitHub Spec Kit operationalizes it into concrete commands and artifacts. You'll learn the details of each command and what outputs they produce in the upcoming units.
 
 ## Components included in GitHub Spec Kit
 
@@ -154,4 +134,3 @@ The underlying specification artifacts (spec.md, plan.md, tasks.md) remain ident
 **Open source and extensible:** Organizations can customize templates, contribute improvements, or integrate GitHub Spec Kit with their systems.
 
 GitHub Spec Kit empowers you to accomplish in minutes what might otherwise take days—it's like having an AI project manager guiding your code generation while you focus on what matters: the product requirements and outcomes.
-

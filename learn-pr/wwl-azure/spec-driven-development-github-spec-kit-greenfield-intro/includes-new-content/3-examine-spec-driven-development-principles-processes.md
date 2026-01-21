@@ -20,80 +20,38 @@ This unit was built from the following source content:
   - "Phase-based organization" section
 -->
 
-Spec-driven development (SDD) is built on a core philosophy: specifications drive code, not the other way around. Before you explore the tools and commands that support this methodology, it's important to understand the guiding principles and the four-phase workflow that makes SDD effective.
-
-## Intent-first philosophy
-
-In traditional software development, code is the ultimate source of truth. Developers write specifications, design documents, and diagrams, but these artifacts are often subordinate to the code itself. As code moves forward, specs rarely keep pace. The documentation becomes stale, and the gap between what was intended and what was built widens over time.
-
-SDD inverts this relationship. The specification defines exactly what the software should do, and every implementation decision traces back to it. If functionality doesn't appear in the spec, it doesn't appear in the final product unless someone updates the spec and regenerates the artifacts.
-
-This shift in mindset means that writing the spec is as important as writing code. The spec isn't a formality to satisfy project management—it's the artifact that drives AI-assisted code generation. When you modify requirements, you update the spec and regenerate the plan and tasks. The spec version-controlled in Git becomes the authoritative record of what each feature should accomplish.
-
-This intent-first approach means:
-
-- The specification becomes the primary artifact
-- Code becomes an expression of the spec in a particular language and framework
-- Maintaining software means evolving specifications
-- Debugging means fixing specifications that generate incorrect code
-- Refactoring means restructuring specs for clarity
+Now that you understand what spec-driven development is and why it matters, let's examine the four-phase workflow that puts these principles into practice. This unit provides a high-level overview of each phase—you'll explore the details in a later unit.
 
 ## SDD workflow overview
 
-The SDD workflow transforms an idea into working code through four distinct phases. Each phase builds on the previous one, creating a clear progression from vision to execution.
+The SDD workflow transforms an idea into working code through four distinct phases. Each phase builds on the previous one, creating a clear progression from vision to execution. Think of it as a structured progression where each step has a clear output that feeds into the next.
 
 ### Phase 1: Specify
 
-The workflow begins with an idea—often vague and incomplete. Through iterative dialogue with AI, this idea becomes a comprehensive specification. The AI asks clarifying questions, identifies edge cases, and helps define precise acceptance criteria. What might take days of meetings and documentation in traditional development happens in hours of focused specification work.
-
-The specification defines *what* the software should do, including:
-
-- Feature summaries from an end-user perspective
-- User stories that capture intent and value
-- Specific, testable acceptance criteria
-- Detailed functional requirements
-- Nonfunctional requirements for performance, security, and scalability
-- Edge cases and error handling scenarios
+Define the desired outcome and requirements—focus on **what** the software should do and **why**, not how. The output is a specification document that captures user needs, acceptance criteria, and constraints. This document becomes the authoritative source for all subsequent work.
 
 ### Phase 2: Plan
 
-A specification defines what you need to build. A technical plan defines *how* you build it. The planning phase transforms requirements into executable architecture decisions, ensuring your implementation aligns with both the specification and your project's governing principles.
-
-The plan bridges the gap between high-level requirements and concrete implementation tasks. If you later need to switch technologies—say, moving from one storage service to another—you update the plan while the specification remains largely unchanged. The feature requirements haven't changed; only the implementation approach has changed.
-
-A comprehensive technical plan contains:
-
-- Architecture overview describing how components interact
-- Technology stack and key decisions with rationales
-- Implementation sequence outlining the order of steps
-- Verification that proposed solutions align with project principles
-- Assumptions and open questions that need addressing
+Decide on the technical approach to fulfill the spec—architecture, technology stack, and design constraints. The output is a technical plan that maps each requirement to an implementation strategy. This is where you determine **how** to build what the spec describes.
 
 ### Phase 3: Tasks
 
-Technical plans provide architectural direction, but implementation requires concrete, actionable steps. The tasks phase converts high-level architectural decisions into specific work items.
-
-Each task represents a discrete unit of work that can be implemented, tested, and verified independently. This granular approach prevents overwhelming complexity and provides clear checkpoints throughout the implementation process. Tasks are:
-
-- **Actionable**: The task clearly states what needs to be done
-- **Testable**: You can verify when the task is complete
-- **Independent where possible**: The task can often be completed without waiting for unrelated work
-- **Time-bounded**: A developer can complete the task in a reasonable timeframe
-
-Complex features benefit from phase-based organization, where each phase represents a logical grouping of related tasks that build toward a specific milestone. The task order matters—some tasks must complete before others can begin.
+Break down the spec and plan into actionable, bite-sized development tasks. Each task should be small enough to implement and verify independently. The output is an ordered checklist that guides implementation.
 
 ### Phase 4: Implement
 
-Code generation begins as soon as specifications and their implementation plans are stable enough—but they don't have to be complete. Early generations might be exploratory, testing whether the specification makes sense in practice.
+Write code to complete each task, guided by the spec, plan, and task list. Verify each completed task against the specification before moving on. The output is working, tested code that fulfills the original requirements.
 
-During implementation:
+### Checkpoints between phases
 
-- Domain concepts become data models
-- User stories become API endpoints
-- Acceptance scenarios become tests
-- Tasks are completed systematically with verification at each step
+A key aspect of SDD is that each phase has a validation step before moving forward:
 
-This phase merges development and testing through specification—test scenarios aren't written after code, they're part of the specification that generates both implementation and tests.
+- The spec must be reviewed for completeness before planning
+- The plan must be checked for feasibility before generating tasks
+- Tasks must be verified for coverage before implementation begins
+- Code must be validated against the spec before considering work complete
+
+This structured progression is what gives SDD its reliability.
 
 ## Living artifacts
 
@@ -125,3 +83,5 @@ Throughout this process, consistency validation continuously improves quality. A
 
 The key insight is that humans provide direction and verification, while AI provides draft outputs. This division of labor enables rapid iteration, systematic alignment, and continuous evolution of your software.
 
+> [!TIP]
+> In Unit 5, you'll examine each phase in depth with concrete examples of what specification, plan, and task documents contain. First, you'll see how SDD compares to development methodologies you may already know.

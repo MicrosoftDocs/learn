@@ -116,4 +116,3 @@ SDD isn't always the right tool:
 - **Rapid experimentation:** When you're deliberately trying many small experiments to learn, lighter approaches may be more appropriate.
 
 The key is recognizing SDD as a tool in your toolkit, not a silver bullet for every scenario. For substantial features, complex systems, or team-based development with AI assistance, SDD provides structure and repeatability. For smaller tasks, simpler approaches may suffice.
-

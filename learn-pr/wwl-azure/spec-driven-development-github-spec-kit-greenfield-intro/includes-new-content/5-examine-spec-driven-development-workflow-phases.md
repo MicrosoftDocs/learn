@@ -21,7 +21,9 @@ This unit was built from the following source content:
   - "The spec-driven development workflow in practice" section (workflow flow narrative)
 -->
 
-You've seen an overview of the SDD phases—now let's examine each phase in detail. Understanding the purpose, content, and output of each phase helps you apply SDD effectively to your own projects. Throughout this walkthrough, we'll follow a hypothetical feature—adding document upload capability to an employee portal—to illustrate how each phase builds on the previous one.
+You've seen an overview of the SDD phases—now let's examine each phase in detail. Understanding the purpose, content, and output of each phase helps you apply SDD effectively to your own projects. 
+
+Throughout this walkthrough, we'll follow a hypothetical feature—adding document upload capability to an employee portal—to illustrate how each phase builds on the previous one. This same example will appear when you learn about GitHub Spec Kit commands in Unit 8, showing how the tool automates what we describe here manually.
 
 ## From vision to execution
 
@@ -157,4 +159,3 @@ The end state is a fully implemented feature where the code aligns with a spec, 
 - **Trust:** The documentation accurately reflects reality—unlike many projects where docs drift from code
 
 Writing all these artifacts by hand might sound laborious, but this is exactly why GitHub released Spec Kit—to automate the heavy lifting of creating spec, plan, and tasks using AI. In the next units, you'll learn how Spec Kit facilitates these phases.
-

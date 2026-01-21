@@ -114,25 +114,15 @@ The AI generates a **spec.md** file based on your description.
 
 ### What spec.md contains
 
-A generated specification typically includes these sections:
-
-**Summary:** A concise description of the feature from the user's perspective.
-
-**User stories:** Brief narratives describing how users interact with the feature, capturing intent and value.
+The generated specification includes the standard sections you learned about in Unit 5: summary, user stories, acceptance criteria, functional requirements, nonfunctional requirements, and edge cases. For example, a user story might appear as:
 
 > *As an employee, I want to upload documents to my dashboard so that I can access them from any device.*
 
-**Acceptance criteria:** Specific, testable conditions that must be true for the feature to be complete.
+And acceptance criteria as testable conditions:
 
 > - User can select PDF or DOCX files for upload
 > - Maximum file size is 50 MB
 > - Files larger than 50 MB display an error message
-
-**Functional requirements:** Detailed descriptions of system behavior.
-
-**Nonfunctional requirements:** Quality attributes like performance, security, and scalability.
-
-**Edge cases:** Unusual scenarios and error conditions.
 
 ### Review and refine
 
@@ -159,19 +149,9 @@ The AI generates a **plan.md** file that translates specification requirements i
 
 ### What plan.md contains
 
-A generated plan typically includes:
-
-**Architecture overview:** How components interact—front end, back end, storage, database.
+The generated plan includes the sections covered in Unit 5: architecture overview, technology stack, implementation sequence, constitution verification, and assumptions. The AI translates your specification requirements into technical decisions. For example:
 
 > *Implement a new back-end API endpoint `/api/documents/upload` to handle multipart file uploads. The React front end includes a DocumentUpload component with file picker and progress indicator.*
-
-**Technology stack:** Explicit decisions about languages, frameworks, and services, with rationales.
-
-**Implementation sequence:** The order in which to build components.
-
-**Constitution verification:** Confirmation that proposed solutions align with project principles.
-
-**Assumptions:** Things the plan takes for granted that might need verification.
 
 ### Review and adjust
 
@@ -197,29 +177,19 @@ This command reads the spec and plan to produce a **tasks.md** file—a checklis
 
 ### What tasks.md contains
 
-Tasks are organized into logical phases or components:
+The generated task list reflects the phase-based organization and task characteristics you learned about in Unit 5. Tasks are organized into logical groups:
 
 **Phase 1: Foundation**
 - Set up Azure Blob Storage connection configuration
 - Create DocumentMetadata table in SQL database
-- Add required NuGet packages to the back-end project
 
 **Phase 2: Core Upload Functionality**
 - Implement POST /api/documents/upload endpoint
 - Add file validation logic (size, type)
-- Implement blob storage upload with error handling
-- Save document metadata to database after successful upload
 
 **Phase 3: Front-end Implementation**
-- Create DocumentUpload React component with file input
-- Add client-side file size and type validation
+- Create DocumentUpload React component
 - Implement upload progress indicator
-- Handle upload success and error responses
-
-Each task should be:
-- **Actionable:** Clearly states what to do
-- **Testable:** You can verify when it's complete
-- **Appropriately scoped:** Not too big, not too small
 
 ### Review and verify
 
@@ -309,4 +279,3 @@ Generates quality verification checklists for your specification. Use this for s
 **Know when to re-run vs. edit:** If output is significantly wrong, consider re-running with a better prompt. For minor issues, just edit the file directly.
 
 **Follow the sequence:** Run commands in order—spec before plan, plan before tasks. Each builds on the previous outputs.
-

@@ -212,4 +212,3 @@ To install GitHub Spec Kit:
 4. **Set up your AI tool:** Ensure Visual Studio Code with GitHub Copilot (or your preferred AI assistant) is ready
 
 With these steps complete, you're ready to use GitHub Spec Kit. In the next unit, you'll learn about the specific commands and see what outputs they produce.
-

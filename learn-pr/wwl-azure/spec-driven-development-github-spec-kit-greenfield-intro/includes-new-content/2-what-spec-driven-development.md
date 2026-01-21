@@ -63,4 +63,3 @@ For enterprise teams especially, SDD addresses persistent pain points: miscommun
 
 > [!NOTE]
 > While SDD transforms how we approach development, implementing it effectively requires appropriate tooling. An open-source toolkit called GitHub Spec Kit exists to facilitate this approach—you'll learn about it in upcoming units.
-
