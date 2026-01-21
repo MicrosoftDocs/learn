@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-apps-azure-kubernetes-service.exercise-configure-apps
+title: Exercise - Configure apps on Azure Kubernetes Service
+metadata:
+  title: Exercise - Configure Apps on Azure Kubernetes Service
+  description: Exercise - Configure apps on Azure Kubernetes Service
+  ms.date: 12/14/2025
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: unit
+azureSandbox: false
+durationInMinutes: 30
+content: |
+  [!include[](includes/5-exercise-configure-apps.md)]

@@ -11,7 +11,8 @@ metadata:
   ms.collection:
     - TBD
     - ce-advocates-ai-copilot
-  ms.service: azure-ai-openai
+  ms.service: azure-ai-foundry
+  ms.subservice: azure-ai-foundry-openai
 title: "Create a large language model deployment"
 summary: "This module provides a step-by-step guide on the following subjects: How to provision an Azure OpenAI cloud resource. How to create a deployment for a specific large language model (LLM). How to experiment with different prompts to explore the capabilities of an LLM in various scenarios."
 abstract: |
@@ -39,4 +40,3 @@ units:
 - learn.large-language-model-deployment.summary
 badge:
   uid: learn.module-2-create-an-llm-deployment-badge
-

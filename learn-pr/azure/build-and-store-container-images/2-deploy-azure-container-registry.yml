@@ -3,9 +3,9 @@ uid: learn.azure-container-registry.deploy-acr
 metadata:
   title: Exercise - Deploy an Azure container registry
   description: Deploy an Azure container registry
-  ms.date: 01/07/2025
-  author: tejaswikolli
-  ms.author: tejaswikolli
+  ms.date: 12/23/2025
+  author: davidsmatlak
+  ms.author: davidsmatlak
   ms.topic: unit
 title: Exercise - Deploy an Azure container registry
 durationInMinutes: 5
@@ -19,4 +19,4 @@ content: |
 #     resource:
 #       type: "Microsoft.ContainerRegistry/registries"
 #   hint: "Run the `az acr create` command as shown to create your container registry."
-
+

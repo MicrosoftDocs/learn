@@ -1,6 +1,6 @@
 ::: zone pivot="video"
 
->[!VIDEO https://learn-video.azurefd.net/vod/player?id=fa93cff9-4977-4c1f-b48e-9310a1c71191]
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=dfce25be-30a1-4695-a805-45d139d1d133]
 
 > [!NOTE]
 > See the **Text and images** tab for more details!
@@ -29,7 +29,6 @@ AI speech technology is evolving rapidly to handle challenges like ignoring back
 
 Common uses of AI speech technologies include:
 
-- Personal AI assistants in phones, computers, or household devices with which you interact by talking.
 - AI agents that understand spoken input, perform tasks, and respond with spoken results.
 - Automated transcription of calls or meetings.
 - Automating audio descriptions of video or text.
