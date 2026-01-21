@@ -7,7 +7,7 @@ You have an upcoming leadership meeting, and you need to create a professional p
 3. Launch Copilot:
    - Home Ribbon → Copilot sidebar
 
-![A photograph of a business professional uses the Surface Slim Pen 2 on a Surface device while sitting on a couch.](../media/couch.jpg)
+![A photograph of a business professional using the Surface Slim Pen 2 on a Surface device while sitting on a couch.](../media/couch.jpg)
 
 ### Step 2: Dictate or write your main points
 
@@ -38,4 +38,4 @@ You have an upcoming leadership meeting, and you need to create a professional p
 *“Summarize slide 3 in a single bullet point.”*
 2. Review slides, taking advantage of the high-resolution display to get a clear idea of how they'll present.
 
-***Reflection:** Which combination of Surface Slim Pen 2, and Studio Microphone felt most natural for your workflow? How much faster could you complete a presentation compared to typing everything?*
+***Reflection:** Which combination of Surface Slim Pen 2 and Studio Microphone felt most natural for your workflow? How did completing a presentation this way compare to typing everything?*

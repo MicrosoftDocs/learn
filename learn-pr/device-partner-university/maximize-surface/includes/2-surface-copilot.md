@@ -9,7 +9,7 @@ Surface devices can enhance this experience with flexible input methods: Pen, to
 
 ### How they complement each other
 
-Surface features can make Copilot more intuitive and productive:
+Surface features can help you use Copilot more intuitively:
 
 - Surface Slim Pen 2: Handwrite notes or annotate slides directly; Copilot can help interpret and transform them into polished content.
 - PixelSense touchscreen: Can help you highlight, rearrange, or select content while using Copilot.
@@ -19,7 +19,7 @@ Surface features can make Copilot more intuitive and productive:
 > [!TIP]
 > On your Surface device, you can press Win + H to start dictation. Your spoken words are converted into text in apps like Word, PowerPoint, OneNote, or directly into Copilot’s prompt box.
 
-![A photograph of a business professional uses the Surface Slim Pen 2 on a Surface device at a desk.](../media/write.jpg)
+![A photograph of a business professional using the Surface Slim Pen 2 on a Surface device at a desk.](../media/write.jpg)
 
 And Copilot can help enhance each Microsoft 365 app:
 
@@ -28,4 +28,4 @@ And Copilot can help enhance each Microsoft 365 app:
 - Excel: Analyze data, extract insights, and generate charts.
 - OneNote: Organize notes, create project outlines, and collaborate with others.
 
-*Reflection: Think about tasks where typing slows you down. How might using Surface Slim Pen 2 and voice input with the Studio Microphone help speed up your workflow and reduce fatigue?*
+*Reflection: Think about tasks where typing slows you down. How might using Surface Slim Pen 2 and voice input with the Studio Microphone help?*

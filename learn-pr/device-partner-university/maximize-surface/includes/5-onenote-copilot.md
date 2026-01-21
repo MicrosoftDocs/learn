@@ -6,7 +6,7 @@ Before you begin, bring all your rough materials together, so Copilot has the fu
 
 - **Compile your notes:** Gather emails, meeting minutes, screenshots, sticky notes, and rough drafts you’ve collected across devices. You can paste them directly into OneNote or attach them using the Insert menu.
 - **Add handwritten ideas:** Use your Surface Slim Pen 2 to write down reminders, sketch connections, or add questions in the margins. Copilot can help read and interpret your handwriting as easily as typed notes.
-- **Capture dictated thoughts:** If you think faster than you type, use your Surface Studio Microphone to dictate quick thoughts right into OneNote. Voice Clarity helps ensure your speech is transcribed accurately for Copilot to use later.
+- **Capture dictated thoughts:** If you think faster than you type, you can use your Surface Studio Microphone to dictate your thoughts right into OneNote. Voice Clarity helps ensure your speech is transcribed accurately for Copilot to use later.
 
 ### Step 2: Open OneNote and launch Copilot
 
@@ -17,23 +17,23 @@ Before you begin, bring all your rough materials together, so Copilot has the fu
     1. **Type your prompt**
     1. **Use your voice** with the Studio Microphones for hands-free input
     1. **Write a prompt with the Slim Pen 2**, which OneNote converts to text automatically
-1. Invite collaborators: Share the OneNote page or notebook with teammates so they can co-edit in real time as you begin shaping content.
+5. Invite collaborators: Share the OneNote page or notebook with teammates so they can co-edit in real time as you begin shaping content.
 
 > [!TIP]
-> Surface supports fluid input switching—begin writing with the pen, then jump to voice or touch without losing your flow.
+> Surface supports fluid input switching—begin writing with the pen, then jump to voice or touch.
 
-![A photograph of a business professional is seated at their desk using a Surface Slim Pen 2 to work in OneNote on their Surface device.](../media/onenote.jpg)
+![A photograph of a business professional seated at their desk using a Surface Slim Pen 2 to work in OneNote on their Surface device.](../media/onenote.jpg)
 
 ### Step 3: Generate a structured outline
 
 1. Enter a prompt, such as:  
-   *"Convert these notes into a structured project outline. Group similar items, remove duplicates, and label clear sections."*
+   *"Convert these notes into a structured project outline. Group similar items, remove duplicates, and clearly label sections."*
 2. Copilot can help analyze your pasted notes, handwriting, and dictated text to help create:
    - Logical sections  
    - Grouped ideas  
    - Clean headings and subheadings  
    - A reorganized, easy-to-read structure
-3. Review Copilot’s outline and:
+3. Review Copilot’s output and:
    - Use the Surface Slim Pen 2 to circle areas to keep or cross out items you want removed.
    - Add margin notes indicating what Copilot should adjust.
    - Tap and drag sections using touch to reorder items.
@@ -47,7 +47,7 @@ Before you begin, bring all your rough materials together, so Copilot has the fu
    - Suggest due dates  
    - Create a visual or bulleted timeline  
    - Convert scattered items into actionable steps
-3. Use touch or Surface Slim Pen 2 to adjust:
+3. Use touch or Surface Slim Pen 2 to:
    - Reassign tasks  
    - Add missing deadlines  
    - Mark items as high-priority
@@ -57,7 +57,7 @@ Before you begin, bring all your rough materials together, so Copilot has the fu
 
 ### Step 5: Refine and finalize
 
-Use Copilot to polish your outline into a ready-to-share artifact.
+Use Copilot to polish your outline into ready-to-share content.
 
 Ask Copilot to:
 
@@ -70,7 +70,7 @@ Ask Copilot to:
 ### Step 6: Collaborate on a Microsoft Teams call
 
 > [!TIP]
-> If you're creating the meeting, be sure to enable Facilitator. Facilitator is a meeting assistant in Microsoft Teams that can help keep meetings organized and productive. The Teams admin must allow the Facilitator app in the Teams Admin Center. Loop experiences must also be turned on in your organization. Keep in mind, Facilitator works only in scheduled meetings, not in channel meetings or ad-hoc calls.
+> If you're creating the meeting, be sure to enable Facilitator. Facilitator is a meeting assistant in Microsoft Teams that can help meetings be more organized and productive. The Teams admin must allow the Facilitator app in the Teams Admin Center. Loop experiences must also be turned on in your organization. Keep in mind, Facilitator works only in scheduled meetings, not in channel meetings or ad-hoc calls.
 
 1. Start the call
    1. Open Microsoft Teams on your Surface device.
@@ -81,7 +81,7 @@ Ask Copilot to:
 >
 >- Automatic framing to help you stay centered even if you move.
 >- Background blur to help remove visual distractions.
->- Voice focus / noise suppression to help eliminate typing, room noise, or echo.
+>- Voice focus/noise suppression to help eliminate ambient sounds like typing, room noise, or echo.
 
 2. Begin the collaborative review
 
@@ -89,11 +89,11 @@ Ask Copilot to:
 
    Make sure your Surface Slim Pen 2 and touch controls are ready if you want to annotate the page live during the discussion.
 
-![A photograph of a business professional greets teammates on a Microsoft Teams call by waving a hand at their Surface device.](../media/teams.jpg)
+![A photograph of a business professional greeting teammates on a Microsoft Teams call by waving a hand at their Surface device.](../media/teams.jpg)
 
 3. Share your OneNote workspace
 
-   1. Select Share in Teams → choose the OneNote window or entire desktop.
+   1. Select Share in Teams. Choose the OneNote window or entire desktop.
    2. Navigate to the OneNote page containing your outline, timeline, and action items.
    3. Encourage teammates to follow along in the shared notebook directly if they already have access.
 
@@ -105,10 +105,10 @@ Ask Copilot to:
 5. Finalize outcomes
 
    1. Summarize the decisions made during the call—for example, confirmed deadlines, updated owners, or sections needing follow-up.
-   2. Save and sync the OneNote page so all participants have the latest version instantly.
-   3. End the call knowing everyone is aligned around the final project plan and next steps.
+   2. Save and sync the OneNote page so all participants can have the latest version.
+   3. End the call. Now everyone should be aligned around the final project plan and next steps.
 
 > [!TIP]
 > If Facilitator was enabled, you can refer back to the AI-generated meeting summary and tasks assigned during the call.
 
-***Reflection:** Did using multimodal input make organizing the project faster? Did AI help the Teams meeting run smoothly? How could these tools improve collaboration in your own projects?*
+***Reflection:** Did using multimodal input make organizing the project faster? Did AI help the Teams meeting run smoothly? How might these tools improve collaboration in your own projects?*
