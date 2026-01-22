@@ -2,6 +2,8 @@
 
 Organization and enterprise application workloads have recovery time objective (RTO) and recovery point objective (RPO) requirements. Effective business continuity and disaster recovery (BCDR) design provides platform-level capabilities that meet these requirements. To design BCDR capabilities, capture platform disaster recovery (DR) requirements.
 
+Modern BCDR strategies must address hybrid and multicloud environments where workloads span on-premises datacenters, Azure, and other cloud platforms. This requires unified backup, consistent recovery processes, and coordinated failover capabilities across all environments.
+
 ### Design considerations
 
 Consider the following factors when designing BCDR for application workloads:
@@ -42,6 +44,24 @@ Consider the following factors when designing BCDR for application workloads:
   - Understand the in-country/region guidance for data residency that specifies whether data should be kept within country or regional borders. This guidance affects your design for cross-region replication.
   - Azure regions that reside within the same geography as their enabled set can help with cross-region replication to meet data residency requirements such as tax and law enforcement requirements. For more information, see [Azure cross-region replication](/azure/reliability/cross-region-replication-azure).
 
+- Hybrid and multicloud backup and recovery:
+  - Unified backup management across on-premises, Azure, and other cloud platforms using Azure Backup and Azure Arc.
+  - Consistent protection policies regardless of workload location.
+  - Secure connectivity for backup traffic from hybrid and multicloud environments.
+  - Integration with existing backup infrastructure through Azure Backup Server and System Center Data Protection Manager.
+
+- Ransomware-resilient backup architecture:
+  - Immutable backup storage that can't be deleted or modified during retention period.
+  - Multi-User Authorization (MUA) requiring approval from multiple administrators for critical backup operations.
+  - Air-gapped or offline backup copies for critical systems.
+  - Regular testing of backup restoration procedures, including ransomware recovery scenarios.
+
+- AI and intelligent systems considerations:
+  - Protection and backup of AI model weights, training data, and configuration.
+  - Recovery procedures that account for AI system dependencies and data pipelines.
+  - Validation of AI model integrity after restoration to ensure models haven't been compromised.
+  - Continuity planning for AI-powered business-critical services during recovery operations.
+
 
 ### Design recommendations
 
@@ -58,6 +78,18 @@ The following design practices support BCDR for application workloads:
 - Use Azure-native backup capabilities.
 
   Azure Backup and PaaS-native backup features remove the need for third-party backup software and infrastructure. As with other native features, you can set, audit, and enforce backup configurations with Azure Policy to ensure compliance with organization requirements.
+
+- Implement Azure Arc for hybrid and multicloud management.
+
+  Azure Arc extends Azure management and security capabilities to on-premises, multicloud, and edge environments. Use Azure Arc to enable consistent BCDR policies across all infrastructure, regardless of location. Azure Arc-enabled servers can use Azure Backup for centralized backup management and Azure Site Recovery for disaster recovery orchestration.
+
+- Enable immutable backup vaults for ransomware protection.
+
+  Configure immutable vaults in Azure Backup to prevent backup data deletion or modification for a specified retention period. This protection can't be disabled once enabled, ensuring backups remain secure even if admin credentials are compromised. Combine with Multi-User Authorization (MUA) to require multiple approvals for critical backup operations.
+
+- Integrate AI-powered security operations for enhanced threat detection and response.
+
+  Use Microsoft Security Copilot integration with Microsoft Sentinel and Microsoft Defender XDR to accelerate incident investigation and response. AI capabilities provide incident summarization, guided response recommendations, natural language query generation, and automated analysis of attack patterns. This reduces mean time to detect (MTTD) and mean time to respond (MTTR), critical metrics for minimizing ransomware impact.
 
 - Use multiple regions and peering locations for ExpressRoute connectivity.
 

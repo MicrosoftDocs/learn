@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-resiliency-strategy-common-cyberthreats-like-ransomware.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: "Introduction to the module, Design a resiliency strategy for ransomware and other attacks based on Microsoft Security Best Practices."
+  ms.date: 01/21/2026
+  author: ceperezb
+  ms.author: ceperezb
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/0-introduction.md)]

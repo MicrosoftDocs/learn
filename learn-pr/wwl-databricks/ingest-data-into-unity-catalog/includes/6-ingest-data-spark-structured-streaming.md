@@ -50,7 +50,7 @@ df_stream = (spark.readStream
     .load())
 ```
 
-When reading from Kafka or Event Hubs, you receive a standard schema with `key`, `value`, `topic`, `partition`, `offset`, and `timestamp` columns. The `key` and `value` columns contain binary data, so you typically cast them to string and parse the content:
+When reading from Kafka or Event Hubs through the Kafka-compatible interface, you receive a standard schema with `key`, `value`, `topic`, `partition`, `offset`, and `timestamp` columns. The `key` and `value` columns contain binary data, so you typically cast them to string and parse the content:
 
 ```python
 from pyspark.sql.functions import col, from_json
@@ -66,6 +66,39 @@ parsed_df = (df_stream
     .select(from_json(col("json_value"), schema).alias("data"))
     .select("data.*"))
 ```
+
+### Use the native Event Hubs connector
+
+Azure Databricks also provides a native Event Hubs connector that simplifies authentication and provides direct access to Event Hubs-specific features. This connector uses the `eventhubs` format:
+
+```python
+connection_string = dbutils.secrets.get(scope="eventhubs", key="connection-string")
+
+events = (spark.readStream
+    .format("eventhubs")
+    .option("eventhubs.connectionString", connection_string)
+    .load())
+```
+
+The native Event Hubs connector returns a different schema than the Kafka-compatible interface. The event payload is stored in the `body` column (instead of `value`), along with additional Event Hubs-specific metadata columns:
+
+```python
+# Extract and parse the event payload
+payload = events.selectExpr("CAST(body AS STRING) AS payload")
+```
+
+You can configure additional Event Hubs options such as consumer group and starting position:
+
+```python
+events = (spark.readStream
+    .format("eventhubs")
+    .option("eventhubs.connectionString", connection_string)
+    .option("eventhubs.consumerGroup", "$Default")
+    .option("eventhubs.startingPosition", '{"offset": "-1", "seqNo": -1, "enqueuedTime": null, "isInclusive": true}')
+    .load())
+```
+
+The `startingPosition` option controls where to begin reading events. Use `-1` for the latest events or configure a specific offset, sequence number, or enqueued time for your ingestion needs.
 
 ## Configure checkpoint locations
 
