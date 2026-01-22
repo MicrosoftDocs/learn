@@ -21,7 +21,7 @@ Now that you understand the principles and workflow of spec-driven development, 
 
 GitHub Spec Kit is an open-source toolkit developed by GitHub to facilitate spec-driven development. It's designed to integrate with AI coding assistants like GitHub Copilot and orchestrate the SDD workflow through structured commands, templates, and persistent artifacts.
 
-Think of GitHub Spec Kit as a co-pilot for your co-pilot—it guides the AI through a structured process, ensuring consistent, high-quality output at each phase of development.
+Think of GitHub Spec Kit as a co-pilot for your co-pilot - it guides the AI through a structured process, ensuring consistent, high-quality output at each phase of development.
 
 GitHub Spec Kit addresses a fundamental challenge in AI-assisted development: maintaining context and consistency across multiple interactions with coding assistants. Without structure, each chat session with an AI operates in isolation, lacking awareness of previous decisions or overall project requirements. GitHub Spec Kit solves this by:
 
@@ -31,13 +31,13 @@ GitHub Spec Kit addresses a fundamental challenge in AI-assisted development: ma
 
 - **Providing reusable commands:** Built-in slash commands encapsulate best-practice prompting patterns, so you don't need to craft optimal prompts for each development phase.
 
-Key point: GitHub Spec Kit isn't an AI model itself—it's a framework and CLI that works *with* your chosen AI agent. It helps transform a high-level idea into working code by generating the spec, plan, and tasks with AI, rather than requiring you to write everything manually.
+Key point: GitHub Spec Kit isn't an AI model itself - it's a framework and CLI that works *with* your chosen AI agent. It helps transform a high-level idea into working code by generating the spec, plan, and tasks with AI, rather than requiring you to write everything manually.
 
 ## Core principles of GitHub Spec Kit
 
 GitHub Spec Kit's design directly implements SDD principles:
 
-**Executable specifications:** GitHub Spec Kit makes the spec "executable" by using it to drive code generation through commands. Your specification isn't just documentation—it's the input that produces implementation.
+**Executable specifications:** GitHub Spec Kit makes the spec "executable" by using it to drive code generation through commands. Your specification isn't just documentation - it's the input that produces implementation.
 
 **Structured workflow enforcement:** GitHub Spec Kit guides you through phases in order. You can't effectively implement without first having a spec and plan, because the tool's workflow is designed to build each phase on the previous one.
 
@@ -53,11 +53,11 @@ When starting from scratch with no existing code, you run GitHub Spec Kit on a b
 
 ### Brownfield projects
 
-When adding features to an existing codebase, GitHub Spec Kit can initialize in your existing repository. It can help summarize your codebase's structure and rules into a *project constitution*—a document capturing key existing design decisions that informs plans for new features. This ensures AI-generated code remains consistent with your existing code.
+When adding features to an existing codebase, GitHub Spec Kit can initialize in your existing repository. It can help summarize your codebase's structure and rules into a *project constitution* - a document capturing key existing design decisions that informs plans for new features. This ensures AI-generated code remains consistent with your existing code.
 
 ### Exploratory projects
 
-When you're exploring multiple potential approaches, GitHub Spec Kit can generate multiple plans from the same specification. You can explore different optimization targets—performance, maintainability, or cost—by generating alternative plans and comparing them before choosing an approach.
+When you're exploring multiple potential approaches, GitHub Spec Kit can generate multiple plans from the same specification. You can explore different optimization targets - performance, maintainability, or cost - by generating alternative plans and comparing them before choosing an approach.
 
 ### Refactoring and modernization
 
@@ -75,7 +75,7 @@ GitHub Spec Kit provides a command or step for each SDD phase:
 | Tasks | `/speckit.tasks` | tasks.md |
 | Implement | `/speckit.implement` | Source code |
 
-This one-to-one mapping shows that SDD isn't just theory—GitHub Spec Kit operationalizes it into concrete commands and artifacts. You'll learn the details of each command and what outputs they produce in the upcoming units.
+This one-to-one mapping shows that SDD isn't just theory - GitHub Spec Kit operationalizes it into concrete commands and artifacts. You'll learn the details of each command and what outputs they produce in the upcoming units.
 
 ## Components included in GitHub Spec Kit
 
@@ -93,7 +93,7 @@ The `specify` command-line tool initializes and manages spec-driven projects. Wh
 
 ### Markdown artifact files
 
-GitHub Spec Kit uses structured Markdown files as primary development artifacts. These files aren't passive documentation—they actively drive AI code generation:
+GitHub Spec Kit uses structured Markdown files as primary development artifacts. These files aren't passive documentation - they actively drive AI code generation:
 
 - **constitution.md:** Project-wide principles, constraints, and non-negotiable requirements
 - **spec.md:** Feature requirements, user stories, and acceptance criteria
@@ -125,7 +125,7 @@ The underlying specification artifacts (spec.md, plan.md, tasks.md) remain ident
 
 **Efficiency:** It drafts specs and plans quickly with AI. What might take hours to write from scratch, GitHub Spec Kit can generate in minutes (though you refine it).
 
-**Consistency:** It enforces a consistent format via templates and a consistent approach every time—valuable for teamwork and repeatable processes.
+**Consistency:** It enforces a consistent format via templates and a consistent approach every time - valuable for teamwork and repeatable processes.
 
 **Multi-agent flexibility:** Use the AI environment you prefer (Visual Studio Code with GitHub Copilot, Claude, or others) without changing your workflow.
 
@@ -133,4 +133,4 @@ The underlying specification artifacts (spec.md, plan.md, tasks.md) remain ident
 
 **Open source and extensible:** Organizations can customize templates, contribute improvements, or integrate GitHub Spec Kit with their systems.
 
-GitHub Spec Kit empowers you to accomplish in minutes what might otherwise take days—it's like having an AI project manager guiding your code generation while you focus on what matters: the product requirements and outcomes.
+GitHub Spec Kit empowers you to accomplish in minutes what might otherwise take days - it's like having an AI project manager guiding your code generation while you focus on what matters: the product requirements and outcomes.

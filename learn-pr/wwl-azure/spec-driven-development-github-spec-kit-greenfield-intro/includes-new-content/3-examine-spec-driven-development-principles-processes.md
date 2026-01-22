@@ -20,7 +20,7 @@ This unit was built from the following source content:
   - "Phase-based organization" section
 -->
 
-Now that you understand what spec-driven development is and why it matters, let's examine the four-phase workflow that puts these principles into practice. This unit provides a high-level overview of each phase—you'll explore the details in a later unit.
+Now that you understand what spec-driven development is and why it matters, let's examine the four-phase workflow that puts these principles into practice. This unit provides a high-level overview of each phase - you'll explore the details in a later unit.
 
 ## SDD workflow overview
 
@@ -28,11 +28,11 @@ The SDD workflow transforms an idea into working code through four distinct phas
 
 ### Phase 1: Specify
 
-Define the desired outcome and requirements—focus on **what** the software should do and **why**, not how. The output is a specification document that captures user needs, acceptance criteria, and constraints. This document becomes the authoritative source for all subsequent work.
+Define the desired outcome and requirements - focus on **what** the software should do and **why**, not how. The output is a specification document that captures user needs, acceptance criteria, and constraints. This document becomes the authoritative source for all subsequent work.
 
 ### Phase 2: Plan
 
-Decide on the technical approach to fulfill the spec—architecture, technology stack, and design constraints. The output is a technical plan that maps each requirement to an implementation strategy. This is where you determine **how** to build what the spec describes.
+Decide on the technical approach to fulfill the spec - architecture, technology stack, and design constraints. The output is a technical plan that maps each requirement to an implementation strategy. This is where you determine **how** to build what the spec describes.
 
 ### Phase 3: Tasks
 
@@ -61,7 +61,7 @@ This concept parallels Agile's inspect-and-adapt philosophy, but in SDD, the spe
 
 The feedback loop extends beyond initial development:
 
-- Production metrics and incidents don't just trigger hotfixes—they update specifications for the next regeneration
+- Production metrics and incidents don't just trigger hotfixes - they update specifications for the next regeneration
 - Performance bottlenecks become new nonfunctional requirements
 - Security vulnerabilities become constraints that affect all future generations
 
@@ -69,7 +69,7 @@ This iterative dance between specification, implementation, and operational real
 
 ## SDD and AI collaboration
 
-SDD pairs naturally with AI assistance. The developer's role shifts to **steering**—crafting the spec, setting constraints, and verifying outputs—while the AI's role is to generate detailed artifacts and code from those instructions.
+SDD pairs naturally with AI assistance. The developer's role shifts to **steering** - crafting the spec, setting constraints, and verifying outputs - while the AI's role is to generate detailed artifacts and code from those instructions.
 
 This partnership means developers can work at a higher level of abstraction, focusing on intent and design while trusting the AI to handle boilerplate or repetitive code generation under their guidance. AI assistants can:
 
@@ -79,7 +79,7 @@ This partnership means developers can work at a higher level of abstraction, foc
 - Produce code that implements the specified requirements
 - Analyze specifications for ambiguity, contradictions, and gaps
 
-Throughout this process, consistency validation continuously improves quality. AI analyzes specifications not as a one-time gate, but as an ongoing refinement—catching issues before they become implementation problems.
+Throughout this process, consistency validation continuously improves quality. AI analyzes specifications not as a one-time gate, but as an ongoing refinement - catching issues before they become implementation problems.
 
 The key insight is that humans provide direction and verification, while AI provides draft outputs. This division of labor enables rapid iteration, systematic alignment, and continuous evolution of your software.
 
