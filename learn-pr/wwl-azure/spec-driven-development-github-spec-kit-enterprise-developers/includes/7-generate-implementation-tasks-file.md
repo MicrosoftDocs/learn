@@ -1,4 +1,18 @@
-Technical plans provide architectural direction, but implementation requires concrete, actionable steps. GitHub Spec Kit's task generation transforms your plan into a structured checklist that guides systematic development and enables progress tracking.
+Technical plans provide architectural direction, but implementation requires concrete, actionable steps. This unit covers advanced task generation and management techniques for enterprise scenarios.
+
+## Review task fundamentals
+
+The `/speckit.tasks` command converts high-level architectural decisions into specific work items in the tasks.md file. Each task represents a discrete unit of work that can be implemented, tested, and verified independently.
+
+**Key characteristics of well-scoped tasks:**
+- **Actionable**: Clearly states what needs to be done
+- **Testable**: Verification of completion is straightforward
+- **Independent**: Can be completed without waiting for unrelated work
+- **Time-bounded**: Completable in a reasonable timeframe (hours to a day)
+
+**Phase-based organization:** Complex features benefit from organizing tasks into phases—Foundation, Core Functionality, UI/Integration, Security, and Testing. Each phase represents a logical grouping that builds toward a milestone.
+
+With these fundamentals in mind, let's explore advanced task management techniques for enterprise development.
 
 ## Benefits of task breakdown
 

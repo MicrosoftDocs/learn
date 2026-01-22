@@ -1,4 +1,17 @@
-The specification file (`spec.md`) is the single source of truth for what your feature should do. Writing a precise, complete, and unambiguous spec helps to ensure that your AI agent generates a plan and code that match your requirements.
+The specification file (`spec.md`) is the single source of truth for what your feature should do. This unit covers advanced techniques for writing enterprise-grade specifications.
+
+## Review spec fundamentals
+
+In spec-driven development, the specification defines exactly what the software should do, and every implementation decision traces back to it. A well-structured specification includes:
+
+- **Summary**: Concise description of the feature from an end-user perspective
+- **User stories**: Brief narratives of how users interact with the feature
+- **Acceptance criteria**: Specific, testable conditions that must be true for completion
+- **Functional requirements**: Detailed descriptions of system behavior
+- **Nonfunctional requirements**: Quality attributes like performance, security, and scalability
+- **Edge cases**: Unusual scenarios, error conditions, and boundary behaviors
+
+With these fundamentals in mind, let's explore enterprise-specific considerations for specification writing.
 
 ## The spec as the single source of truth
 
