@@ -12,7 +12,7 @@ durationInMinutes: 10
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "What is the primary characteristic that distinguishes spec-driven development from traditional development approaches?"
+  - content: "What is the primary characteristic that distinguishes spec-driven development (SDD) from traditional development approaches?"
     choices:
     - content: "Code is treated as the ultimate source of truth, and specifications serve as supporting documentation."
       isCorrect: false
@@ -23,7 +23,7 @@ quiz:
     - content: "Developers write code first and then create specifications to document what was built."
       isCorrect: false
       explanation: "Incorrect. This code-first approach is the opposite of SDD, which emphasizes defining specifications before implementation."
-  - content: "According to the module, what happens to specifications in spec-driven development when requirements change?"
+  - content: "What happens to specifications in spec-driven development (SDD) when requirements change?"
     choices:
     - content: "Specifications are treated as static documents that rarely need updates once created."
       isCorrect: false
@@ -34,7 +34,7 @@ quiz:
     - content: "Specifications are updated, and affected implementation plans and code can be regenerated accordingly."
       isCorrect: true
       explanation: "Correct. SDD transforms requirement changes from obstacles into normal workflow. When specifications are updated, implementation plans and code can be systematically regenerated."
-  - content: "What are the four phases of the spec-driven development workflow?"
+  - content: "What are the four phases of the spec-driven development (SDD) workflow?"
     choices:
     - content: "Research, Design, Develop, and Deploy."
       isCorrect: false
@@ -45,7 +45,7 @@ quiz:
     - content: "Requirements, Architecture, Coding, and Testing."
       isCorrect: false
       explanation: "Incorrect. While these are common development activities, they don't match the specific SDD phase terminology."
-  - content: "What distinguishes SDD outputs as 'living artifacts' compared to traditional documentation?"
+  - content: "What distinguishes spec-driven development (SDD) outputs as 'living artifacts' compared to traditional documentation?"
     choices:
     - content: "Living artifacts are stored in version control systems."
       isCorrect: false
@@ -56,7 +56,7 @@ quiz:
     - content: "Living artifacts are automatically generated without human input."
       isCorrect: false
       explanation: "Incorrect. Living artifacts require human oversight and refinement. The 'living' aspect refers to their ability to evolve, not automation."
-  - content: "How does spec-driven development complement Agile methodologies?"
+  - content: "How does spec-driven development (SDD) complement Agile methodologies?"
     choices:
     - content: "SDD replaces Agile practices entirely with a more structured approach."
       isCorrect: false
@@ -67,7 +67,7 @@ quiz:
     - content: "SDD requires comprehensive upfront documentation that conflicts with Agile values."
       isCorrect: false
       explanation: "Incorrect. While SDD emphasizes specifications, these are living documents that evolve, aligning with Agile's embrace of change."
-  - content: "When comparing SDD to Test-Driven Development (TDD), what is a key difference in their approach?"
+  - content: "When comparing  spec-driven development (SDD) to Test-Driven Development (TDD), what is a key difference in their approach?"
     choices:
     - content: "TDD operates at the unit test level, while SDD works at a higher requirements level to describe complete features."
       isCorrect: true
@@ -78,7 +78,7 @@ quiz:
     - content: "SDD produces automated tests while TDD produces specifications."
       isCorrect: false
       explanation: "Incorrect. This reverses the primary artifacts. TDD produces tests; SDD produces specifications that drive implementation."
-  - content: "In the Specify phase of SDD, what does a well-structured specification include?"
+  - content: "In the Specify phase of spec-driven development (SDD), what does a well-structured specification include?"
     choices:
     - content: "Only a high-level summary of the feature with implementation details."
       isCorrect: false
@@ -89,7 +89,7 @@ quiz:
     - content: "Architecture diagrams and technology stack decisions."
       isCorrect: false
       explanation: "Incorrect. Architecture and technology decisions belong in the Plan phase, not the Specify phase."
-  - content: "What is the purpose of the Plan phase in the SDD workflow?"
+  - content: "What is the purpose of the Plan phase in the spec-driven development (SDD) workflow?"
     choices:
     - content: "To define what the software should do and capture user needs."
       isCorrect: false
@@ -107,7 +107,7 @@ quiz:
       explanation: "Incorrect. GitHub Spec Kit isn't an AI model. It's a framework and CLI that works with your chosen AI agent."
     - content: "An open-source toolkit that facilitates spec-driven development by integrating with AI coding assistants."
       isCorrect: true
-      explanation: "Correct. GitHub Spec Kit is an open-source toolkit developed by GitHub that orchestrates the SDD workflow through structured commands, templates, and persistent artifacts."
+      explanation: "Correct. GitHub Spec Kit is an open-source toolkit developed by GitHub that orchestrates the spec-driven development workflow through structured commands, templates, and persistent artifacts."
     - content: "A Visual Studio Code extension that replaces GitHub Copilot."
       isCorrect: false
       explanation: "Incorrect. GitHub Spec Kit works alongside AI assistants like GitHub Copilot, not as a replacement."
