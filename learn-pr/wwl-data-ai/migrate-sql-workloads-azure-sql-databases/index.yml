@@ -5,7 +5,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Migrate SQL Server workloads to Azure SQL Database
   description: "Learn the essentials of Azure SQL Database deployment and migration. Explore its benefits, exclusive features, and migration options while optimizing performance and application connections for a smooth transition to the cloud."
-  ms.date: 08/26/2025
+  ms.date: 01/19/2026
   author: JulianePadrao
   ms.author: jupadrao
   ms.topic: module-standard-task-based
@@ -21,7 +21,7 @@ abstract: |
 
   -   Explore the advantages, capabilities, and migration possibilities offered by Azure SQL Database.
 
-  -   Migrate databases using Azure SQL Migration extension for Azure Data Studio and tracking database migration activities.
+  -   Migrate databases using Azure Database Migration Service with Azure CLI and tracking database migration activities.
 
   -   Use transactional replication as an online method to migrate to Azure SQL Database.
 

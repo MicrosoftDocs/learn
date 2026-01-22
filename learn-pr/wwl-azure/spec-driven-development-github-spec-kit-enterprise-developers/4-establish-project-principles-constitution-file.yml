@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.spec-driven-development-github-spec-kit-microsoft-internal.establish-project-principles-constitution-file
+title: Establish project principles with a constitution.md file
+metadata:
+  title: Establish Project Principles With a Constitution.md File
+  description: "Establish project principles with a constitution.md file."
+  ms.date: 12/12/2025
+  author: chrishowd
+  ms.author: cahowd
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/4-establish-project-principles-constitution-file.md)]

@@ -1,0 +1,84 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.ingest-data-into-unity-catalog.knowledge-check
+title: Module assessment
+metadata:
+  title: Module assessment
+  description: "Knowledge check"
+  ms.date: 12/07/2025
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+  module_assessment: true
+  ai-usage: ai-generated
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is the primary advantage of using Lakeflow Connect for data ingestion compared to writing custom extraction code?"
+    choices:
+    - content: "Lakeflow Connect provides faster query performance on ingested data"
+      isCorrect: false
+      explanation: "Incorrect. Lakeflow Connect focuses on simplifying the ingestion process, not improving query performance after data is loaded."
+    - content: "Lakeflow Connect offers managed connectors that handle change data capture and pipeline orchestration automatically"
+      isCorrect: true
+      explanation: "Correct. Lakeflow Connect provides managed connectors that simplify data ingestion from external sources, automatically handling CDC, scheduling, and pipeline orchestration."
+    - content: "Lakeflow Connect requires fewer Unity Catalog permissions than notebook-based ingestion"
+      isCorrect: false
+      explanation: "Incorrect. Both approaches require appropriate Unity Catalog permissions to write data to destination tables."
+  - content: "Which SQL command should a data engineer use to continuously load new files from cloud storage without reprocessing files that have already been ingested?"
+    choices:
+    - content: "CREATE TABLE AS SELECT with the read_files function"
+      isCorrect: false
+      explanation: "Incorrect. CREATE TABLE AS SELECT creates a new table each time and does not track which files have been processed."
+    - content: "CREATE OR REPLACE TABLE"
+      isCorrect: false
+      explanation: "Incorrect. CREATE OR REPLACE TABLE performs a full table replacement and does not track previously processed files."
+    - content: "COPY INTO"
+      isCorrect: true
+      explanation: "Correct. COPY INTO is idempotent and automatically tracks which files have been loaded, skipping previously processed files in subsequent executions."
+  - content: "What is the purpose of the sequence column in a change data capture (CDC) flow?"
+    choices:
+    - content: "To determine the correct order of changes when records arrive out of order"
+      isCorrect: true
+      explanation: "Correct. The sequence column (typically a timestamp or sequence number) ensures that the AUTO CDC API applies changes in the correct order, even when events arrive out of sequence."
+    - content: "To specify which columns should be included in the destination table"
+      isCorrect: false
+      explanation: "Incorrect. Column selection is controlled by the COLUMNS clause or except_column_list parameter, not the sequence column."
+    - content: "To identify which records should be treated as deletes"
+      isCorrect: false
+      explanation: "Incorrect. Delete identification is handled by the apply_as_deletes parameter or APPLY AS DELETE WHEN clause."
+  - content: "Which trigger mode should be used when a data engineer wants to process all available streaming data and then stop the stream?"
+    choices:
+    - content: "processingTime trigger with a short interval"
+      isCorrect: false
+      explanation: "Incorrect. The processingTime trigger runs continuously at fixed intervals and does not stop after processing available data."
+    - content: "availableNow trigger"
+      isCorrect: true
+      explanation: "Correct. The availableNow trigger processes all unprocessed data since the last checkpoint and then terminates, making it ideal for scheduled incremental batch patterns."
+    - content: "Default trigger with no configuration"
+      isCorrect: false
+      explanation: "Incorrect. The default trigger processes batches continuously as fast as possible and does not stop automatically."
+  - content: "What happens when Auto Loader detects new columns in source files while using the addNewColumns schema evolution mode?"
+    choices:
+    - content: "The stream ignores the new columns and continues processing without changes"
+      isCorrect: false
+      explanation: "Incorrect. The addNewColumns mode actively handles new columns rather than ignoring them."
+    - content: "The stream fails, new columns are added to the schema, and the stream continues with the updated schema on restart"
+      isCorrect: true
+      explanation: "Correct. With addNewColumns mode, the stream fails initially, Auto Loader updates the stored schema to include the new columns, and the stream resumes processing with the evolved schema when restarted."
+    - content: "The new columns are captured in the _rescued_data column without modifying the schema"
+      isCorrect: false
+      explanation: "Incorrect. This behavior describes the rescue mode, not the addNewColumns mode."
+  - content: "What is the primary benefit of using explicit flows in Lakeflow Spark Declarative Pipelines to ingest data from multiple sources into a single table?"
+    choices:
+    - content: "Explicit flows process data faster than UNION-based approaches"
+      isCorrect: false
+      explanation: "Incorrect. The primary benefit is flexibility in managing sources, not processing speed."
+    - content: "Explicit flows allow adding new source flows without modifying existing ones or triggering a full refresh"
+      isCorrect: true
+      explanation: "Correct. Explicit flows enable you to add new data sources independently without affecting existing flows or requiring a full table refresh."
+    - content: "Explicit flows automatically deduplicate records from multiple sources"
+      isCorrect: false
+      explanation: "Incorrect. Deduplication is not automatic; it must be handled separately if needed."

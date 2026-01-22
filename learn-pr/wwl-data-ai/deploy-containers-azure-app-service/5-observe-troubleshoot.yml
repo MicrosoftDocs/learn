@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.deploy-containers-azure-app-service.observe-troubleshoot
+title: Observe and troubleshoot containerized apps
+metadata:
+  title: Observe and Troubleshoot Containerized Apps
+  description: Observe and troubleshoot containerized apps
+  ms.date: 01/12/2026
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-observe-troubleshoot.md)]

@@ -1,0 +1,42 @@
+### YamlMime:LearningPath
+uid: learn.ai-technical-concepts
+metadata:
+  title: AI concepts for developers and technology professionals
+  description: Learn core AI concepts and terminology to help you better understand AI workloads and how to plan AI solutions.
+  brand: azure
+  ms.date: 12/19/2025
+  author: GraemeMalcolm
+  ms.author: gmalc
+  ms.topic: learning-path
+title: AI concepts for developers and technology professionals
+summary: |
+  Learn core AI concepts and terminology, starting with a basic introduction and then diving into common AI workloads like:
+  - Machine learning
+  - Generative AI
+  - Computer vision
+  - Speech
+  - Natural language processing and text analysis
+  - Information extraction
+prerequisites: |
+  Before starting this learning path, you should already have a basic understanding of computing concepts and math.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- ai-engineer
+- developer
+subjects:
+- artificial-intelligence
+products:
+- azure-ai-foundry
+modules:
+- learn.wwl.get-started-ai-fundamentals
+- learn.wwl.fundamentals-machine-learning
+- learn.wwl.fundamentals-generative-ai
+- learn.wwl.introduction-language
+- learn.wwl.introduction-ai-speech
+- learn.wwl.introduction-computer-vision
+- learn.wwl.introduction-information-extraction
+trophy:
+  uid: learn.ai-technical-concepts.trophy
+

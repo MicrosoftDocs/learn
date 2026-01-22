@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.spec-driven-development-github-spec-kit-microsoft-internal.scale-spec-driven-development-team-collaboration
+title: Scale spec-driven development for team collaboration
+metadata:
+  title: Scale Spec-Driven Development for Team Collaboration
+  description: "Scale Spec-Driven Development for team collaboration."
+  ms.date: 12/12/2025
+  author: chrishowd
+  ms.author: cahowd
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/10-scale-spec-driven-development-team-collaboration.md)]

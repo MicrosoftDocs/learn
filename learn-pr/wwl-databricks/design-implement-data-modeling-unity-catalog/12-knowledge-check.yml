@@ -1,0 +1,73 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-implement-data-modeling-unity-catalog.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 12/07/2025
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+  module_assessment: true
+  ai-usage: ai-generated
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which extraction type should a data engineer choose when the source system has a reliable timestamp column and hourly data freshness is sufficient?"
+    choices:
+    - content: "Full extraction"
+      isCorrect: false
+      explanation: "Incorrect. Full extraction reprocesses all data each time, which wastes compute resources when only a small percentage of records change between runs."
+    - content: "Incremental extraction"
+      isCorrect: true
+      explanation: "Correct. Incremental extraction uses timestamp or sequence columns to identify and process only changed records, making it efficient for large datasets with reliable change indicators and relaxed latency requirements."
+    - content: "Streaming extraction"
+      isCorrect: false
+      explanation: "Incorrect. Streaming extraction is designed for real-time or near real-time requirements and typically requires more infrastructure than hourly batch processing needs."
+  - content: "What is the primary advantage of Delta Lake over Parquet as a table format in Azure Databricks?"
+    choices:
+    - content: "Delta Lake provides ACID transactions and time travel capabilities through its transaction log"
+      isCorrect: true
+      explanation: "Correct. Delta Lake extends Parquet files with a transaction log that enables ACID transactions, time travel, schema evolution, and concurrent reads and writes."
+    - content: "Delta Lake offers better columnar storage compression than Parquet"
+      isCorrect: false
+      explanation: "Incorrect. Delta Lake uses Parquet as its underlying file format for data storage, so the compression characteristics are the same."
+    - content: "Delta Lake supports a wider variety of data types than Parquet"
+      isCorrect: false
+      explanation: "Incorrect. Delta Lake uses Parquet for data storage, so data type support is determined by the Parquet format."
+  - content: "When is data partitioning recommended for Delta Lake tables?"
+    choices:
+    - content: "For all tables to ensure consistent query performance"
+      isCorrect: false
+      explanation: "Incorrect. Databricks recommends not partitioning tables containing less than 1 TB of data, as the overhead of managing partition metadata can outweigh performance benefits."
+    - content: "When the table contains more than 1 TB of data and query filters align with partition columns"
+      isCorrect: true
+      explanation: "Correct. Partitioning becomes valuable when tables exceed 1 TB and queries frequently filter on the partition columns, enabling partition pruning to reduce data scans."
+    - content: "Only for tables with high-cardinality columns like customer ID"
+      isCorrect: false
+      explanation: "Incorrect. High-cardinality columns make poor partition keys because they create too many small partitions, which degrades rather than improves performance."
+  - content: "Which SCD type should be selected when historical accuracy is required for sales attribution by customer region?"
+    choices:
+    - content: "SCD Type 1"
+      isCorrect: false
+      explanation: "Incorrect. Type 1 overwrites existing values, which would cause historical sales to be attributed to the customer's current region rather than their region at the time of purchase."
+    - content: "SCD Type 2"
+      isCorrect: true
+      explanation: "Correct. Type 2 preserves complete history by creating new rows for each version, allowing sales to be accurately attributed to the customer's region at the time of each transaction."
+    - content: "SCD Type 3"
+      isCorrect: false
+      explanation: "Incorrect. Type 3 tracks only limited history (previous value) and cannot maintain the complete historical record needed for accurate attribution across all time periods."
+  - content: "What is the key benefit of liquid clustering compared to traditional partitioning in Delta Lake?"
+    choices:
+    - content: "Liquid clustering provides better data compression"
+      isCorrect: false
+      explanation: "Incorrect. Both liquid clustering and partitioning use the same underlying data storage format; the difference lies in data organization and flexibility."
+    - content: "Liquid clustering allows changing clustering keys without rewriting existing data"
+      isCorrect: true
+      explanation: "Correct. Unlike partitioning, liquid clustering allows you to modify your clustering strategy with an ALTER TABLE statement, and only new data written after the change uses the new clustering approach."
+    - content: "Liquid clustering eliminates the need for the OPTIMIZE command"
+      isCorrect: false
+      explanation: "Incorrect. Liquid clustering still requires running OPTIMIZE to apply clustering to data. However, predictive optimization can automate this process for managed tables."

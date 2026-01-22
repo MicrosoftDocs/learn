@@ -10,7 +10,7 @@ metadata:
   ms.topic: unit
   ms.custom:
     - devx-track-azurecli
-interactive: bash
+#interactive: bash
 durationInMinutes: 2
 content: |
   [!include[](includes/9-cleanup.md)]
@@ -50,4 +50,4 @@ quiz:
     - content: "You can pipe the results to a JSON parsing utility and use filtering capability there."
       isCorrect: false
       explanation: "This might work, but it's more complex than using Azure CLI's built-in query support."
-
+

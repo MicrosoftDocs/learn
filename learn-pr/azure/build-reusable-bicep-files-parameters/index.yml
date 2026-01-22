@@ -32,7 +32,11 @@ prerequisites: |
   - One of these command-line shells:
     - The latest [Azure CLI](/cli/azure/install-azure-cli).
     - The latest [Azure PowerShell](/powershell/azure/install-az-ps).
+
+  [!INCLUDE [](../../includes/azure-optional-exercise-subscription-prerequisite.md)]
+
 iconUrl: /training/achievements/bicep/build-reusable-bicep-files-parameters.svg
+hidden: true
 levels:
   - intermediate
 roles:

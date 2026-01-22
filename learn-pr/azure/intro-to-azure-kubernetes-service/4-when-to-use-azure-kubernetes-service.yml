@@ -6,11 +6,11 @@ metadata:
   title: When to use Azure Kubernetes Service
   description: When to use Azure Kubernetes Service
   ms.date: 11/26/2024
-  author: nickomang
-  ms.author: nickoman
+  author: davidsmatlak
+  ms.author: davidsmatlak
   ms.topic: unit
 
 durationInMinutes: 6
 content: |
   [!include[](includes/4-when-to-use-azure-kubernetes-service.md)]
-
+

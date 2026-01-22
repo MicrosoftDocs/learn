@@ -1,0 +1,14 @@
+### YamlMime: ModuleUnit
+uid: learn.wwl.create-and-organize-objects-in-unity-catalog.implement-ddl-operations
+title: Implement DDL operations
+metadata:
+  title: Implement DDL operations
+  description: Learn how to implement Data Definition Language (DDL) operations in Unity Catalog to create functions, procedures, and modify catalogs and tables.
+  ms.date: 12/07/2025
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+  ai-usage: ai-generated
+durationInMinutes: 8
+content: |
+  [!include[](includes/7-implement-data-definition-language-operations.md)]

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.store-manage-containers-azure-container-registry.tag-version-images
+title: Tag and version images
+metadata:
+  title: Tag and Version Images
+  description: Tag and version images
+  ms.date: 01/05/2026
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/4-tag-version-images.md)]

@@ -1,0 +1,14 @@
+### YamlMime: ModuleUnit
+uid: learn.wwl.design-implement-data-modeling-unity-catalog.choose-scd-type
+title: Choose a slowly changing dimension (SCD) type
+metadata:
+  title: Choose a Slowly Changing Dimension (SCD) Type
+  description: Learn how to select the appropriate slowly changing dimension type in Azure Databricks to manage historical data changes in dimension tables, including SCD Types 0, 1, 2, and 3.
+  ms.date: 12/07/2025
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+  ai-usage: ai-generated
+durationInMinutes: 8
+content: |
+  [!include[](includes/6-choose-slowly-changing-dimension-type.md)]

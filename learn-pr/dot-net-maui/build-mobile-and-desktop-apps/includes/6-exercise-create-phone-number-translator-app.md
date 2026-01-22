@@ -221,14 +221,14 @@ public static class PhonewordTranslator
     }
     ```
 
-1. In the `OnCall` method, prompt the user, by using the **Page.DisplayAlert** method, to ask if they'd like to dial the number.
+1. In the `OnCall` method, prompt the user, by using the **Page.DisplayAlertAsync** method, to ask if they'd like to dial the number.
 
-    The parameters to `DisplayAlert` are a title, a message, and two strings used for the Accept and Cancel button text. It returns a Boolean indicating whether the Accept button was pressed to dismiss the dialog box.
+    The parameters to `DisplayAlertAsync` are a title, a message, and two strings used for the Accept and Cancel button text. It returns a Boolean indicating whether the Accept button was pressed to dismiss the dialog box.
 
     ```csharp
     async void OnCall(object sender, System.EventArgs e)
     {
-        if (await this.DisplayAlert(
+        if (await this.DisplayAlertAsync(
             "Dial a Number",
             "Would you like to call " + translatedNumber + "?",
             "Yes",
@@ -260,7 +260,7 @@ public static class PhonewordTranslator
     ```csharp
     async void OnCall(object sender, System.EventArgs e)
     {
-        if (await this.DisplayAlert(
+        if (await this.DisplayAlertAsync(
             "Dial a Number",
             "Would you like to call " + translatedNumber + "?",
             "Yes",
@@ -273,12 +273,12 @@ public static class PhonewordTranslator
             }
             catch (ArgumentNullException)
             {
-                await DisplayAlert("Unable to dial", "Phone number was not valid.", "OK");
+                await DisplayAlertAsync("Unable to dial", "Phone number was not valid.", "OK");
             }
             catch (Exception)
             {
                 // Other error has occurred.
-                await DisplayAlert("Unable to dial", "Phone dialing failed.", "OK");
+                await DisplayAlertAsync("Unable to dial", "Phone dialing failed.", "OK");
             }
         }
     }

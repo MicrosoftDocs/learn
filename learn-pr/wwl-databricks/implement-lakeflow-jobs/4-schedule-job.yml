@@ -1,0 +1,14 @@
+### YamlMime: ModuleUnit
+uid: learn.wwl.implement-lakeflow-jobs.schedule-job
+title: Schedule a job
+metadata:
+  title: Schedule a Job
+  description: Learn how to schedule Lakeflow Jobs in Azure Databricks using simple intervals or advanced cron expressions to automate your data pipelines.
+  ms.date: 01/15/2026
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+  ai-usage: ai-generated
+durationInMinutes: 9
+content: |
+  [!include[](includes/4-schedule-job.md)]

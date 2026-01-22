@@ -1,7 +1,7 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.bicep-conditions-loops.exercise-loops-variables-outputs
 title: Exercise - Use variable and output loops
-sandbox: true
+#sandbox: true
 metadata:
   unitType: exercise
   title: Exercise - Use variable and output loops

@@ -1,0 +1,14 @@
+### YamlMime: ModuleUnit
+uid: learn.wwl.design-implement-data-modeling-unity-catalog.design-data-partitioning-scheme
+title: Design and implement a data partitioning scheme
+metadata:
+  title: Design and Implement a Data Partitioning Scheme
+  description: Learn how to design and implement effective data partitioning schemes in Azure Databricks to optimize query performance and manage large-scale datasets.
+  ms.date: 01/15/2026
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+  ai-usage: ai-generated
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-design-data-partitioning-scheme.md)]

@@ -6,6 +6,8 @@ To deploy some resources only to certain environments, you added conditions to y
 
 Without the conditions and copy loops features, you'd have to maintain and use multiple versions of Bicep files. You'd have to apply every change in your environment to multiple files. Maintaining all these files would entail a great deal of effort and overhead. By using conditions and loops, you were able to create a single file that works for all your regions and environments, ensuring that all your resources are configured identically.
 
+[!INCLUDE[](../../../includes/azure-optional-exercise-subscription-cleanup.md)]
+
 ## Learn more
 
 - [Conditional deployment in Bicep](/azure/azure-resource-manager/bicep/conditional-resource-deployment)

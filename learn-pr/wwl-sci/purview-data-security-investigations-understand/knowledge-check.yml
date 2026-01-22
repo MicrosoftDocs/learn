@@ -1,0 +1,76 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-data-security-investigations-understand.knowledge-check
+title: Module assessment
+metadata:
+  title: Module assessment
+  description: Knowledge check. 
+  ms.date: 01/15/2026
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+  module_assessment: true
+durationInMinutes: 5
+content: |
+quiz:
+  title: Check your knowledge
+  questions:
+
+  - content: "What is the main purpose of a data security investigation?"
+    choices:
+    - content: "To detect suspicious user behavior and generate alerts."
+      isCorrect: false
+      explanation: "Incorrect: Detecting activity and generating alerts is the role of alerting systems, not data security investigations."
+    - content: "To understand what data was involved, how it was used, and what risk it presents."
+      isCorrect: true
+      explanation: "Correct: Data security investigations focus on data context, usage, and risk rather than activity alone."
+    - content: "To replace audit logs and provide a complete record of user actions."
+      isCorrect: false
+      explanation: "Incorrect: Audit logs record activity, but data security investigations don't replace audit functionality."
+
+  - content: "Why do organizations need data security investigations in addition to alerts and logs?"
+    choices:
+    - content: "Because alerts and logs are unreliable in modern environments."
+      isCorrect: false
+      explanation: "Incorrect: Alerts and logs remain essential, but they often lack data context needed for confident decisions."
+    - content: "Because alerts often show activity without confirming whether sensitive data was involved."
+      isCorrect: true
+      explanation: "Correct: Data security investigations address the gap between activity detection and understanding data risk."
+    - content: "Because investigations must always start with data instead of activity."
+      isCorrect: false
+      explanation: "Incorrect: Investigations might start with activity, but data security investigations add data context when it's needed."
+
+  - content: "Which capability is a data security investigation not designed to replace?"
+    choices:
+    - content: "Alerting systems that surface unusual or risky activity."
+      isCorrect: false
+      explanation: "Incorrect: Alerting systems are still required to detect activity that might warrant investigation."
+    - content: "Incident response workflows for containment and remediation."
+      isCorrect: false
+      explanation: "Incorrect: Incident response workflows remain separate and are used to contain and remediate confirmed issues."
+    - content: "Audit logs that provide records of user and system activity."
+      isCorrect: true
+      explanation: "Correct: Data security investigations don't replace audit logs, which are used to review and verify activity over time."
+
+  - content: "What is the difference between reactive and proactive data security investigations?"
+    choices:
+    - content: "Reactive investigations focus on known activity, while proactive investigations assess potential risk before an incident occurs."
+      isCorrect: true
+      explanation: "Correct: Reactive investigations validate risk after activity is identified, while proactive investigations assess risk without waiting for an alert."
+    - content: "Reactive investigations are automated, while proactive investigations require manual review."
+      isCorrect: false
+      explanation: "Incorrect: Both approaches can involve automated signals and manual analysis."
+    - content: "Proactive investigations are only used after a security incident is confirmed."
+      isCorrect: false
+      explanation: "Incorrect: Proactive investigations are used before incidents occur to validate assumptions about risk."
+
+  - content: "When does deeper investigation add the most value?"
+    choices:
+    - content: "When alerts confirm activity but don't provide enough information to assess data sensitivity or exposure."
+      isCorrect: true
+      explanation: "Correct: Deeper investigation is most useful when confidence is needed to understand data risk."
+    - content: "When a quick response is required and the risk is already clear."
+      isCorrect: false
+      explanation: "Incorrect: In clear, time-sensitive situations, simpler investigation paths are often sufficient."
+    - content: "When every alert needs to be fully investigated to avoid missing risk."
+      isCorrect: false
+      explanation: "Incorrect: Investigating everything deeply can waste effort without improving outcomes."

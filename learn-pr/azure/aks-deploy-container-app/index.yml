@@ -6,8 +6,8 @@ metadata:
   ms.published: 07/31/2020
   manager: rayoflores
   ms.date: 01/31/2025
-  author: nickomang
-  ms.author: nickoman
+  author: davidsmatlak
+  ms.author: davidsmatlak
   ms.topic: module
   ms.service: azure-kubernetes-service
 title: Deploy a containerized application on Azure Kubernetes Service
@@ -45,4 +45,4 @@ units:
   - learn.aks-deploy-container-app.6-summary
 badge:
   uid: learn.aks-deploy-container-app.badge
-
+

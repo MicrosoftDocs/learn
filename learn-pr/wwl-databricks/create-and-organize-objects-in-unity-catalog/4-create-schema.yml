@@ -1,0 +1,14 @@
+### YamlMime: ModuleUnit
+uid: learn.wwl.create-and-organize-objects-in-unity-catalog.create-schema
+title: Create schema
+metadata:
+  title: Create Schema
+  description: Learn how to create schemas in Unity Catalog to logically organize data assets within catalogs.
+  ms.date: 12/07/2025
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+  ai-usage: ai-generated
+durationInMinutes: 7
+content: |
+  [!include[](includes/4-create-schema.md)]

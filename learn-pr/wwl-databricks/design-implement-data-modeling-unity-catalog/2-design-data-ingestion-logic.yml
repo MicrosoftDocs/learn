@@ -1,0 +1,14 @@
+### YamlMime: ModuleUnit
+uid: learn.wwl.design-implement-data-modeling-unity-catalog.design-data-ingestion-logic
+title: Design ingestion logic and data source configuration
+metadata:
+  title: Design Ingestion Logic and Data Source Configuration
+  description: Learn how to design data ingestion logic and configure data sources in Azure Databricks, including extraction types, file formats, and connection considerations.
+  ms.date: 12/07/2025
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+  ai-usage: ai-generated
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-design-data-ingestion-logic.md)]

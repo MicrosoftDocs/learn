@@ -1,0 +1,49 @@
+### YamlMime:Module
+uid: learn.wwl.cleanse-transform-load-data-into-unity-catalog
+metadata:
+  title: Cleanse, Transform, and Load Data into Unity Catalog
+  description: Learn how to cleanse, transform, and load data into Unity Catalog tables in Azure Databricks by profiling data, handling duplicates and nulls, applying transformations, and using various loading strategies.
+  ms.date: 01/15/2026
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: module
+  ms.service: azure-databricks
+  ai-usage: ai-generated
+title: Cleanse, transform, and load data into Unity Catalog
+summary: Data engineering requires transforming raw data into clean, well-structured formats ready for analysis. This module explores techniques for profiling data quality, selecting appropriate column types, resolving duplicates and null values, applying filtering and aggregation transformations, combining datasets with joins and set operators, reshaping data through pivoting and denormalization, and loading transformed data using append, overwrite, and merge strategies.
+abstract: |
+  By the end of this module, you'll be able to:
+  - Profile data using SQL commands and data profiling features to assess data quality
+  - Choose appropriate column data types to optimize storage and ensure data integrity
+  - Identify and resolve duplicate, missing, and null values in datasets
+  - Apply filtering, grouping, and aggregation operations to transform data
+  - Combine datasets using joins and set operators like UNION, INTERSECT, and EXCEPT
+  - Reshape data using denormalization, pivot, and unpivot techniques
+  - Load transformed data into Unity Catalog tables using INSERT, MERGE, and overwrite operations
+prerequisites: |
+  The following prerequisites should be completed:
+  * Basic understanding of Azure Databricks and Unity Catalog concepts
+  * Familiarity with SQL and Python programming
+  * Knowledge of data engineering concepts such as data quality and transformations
+iconUrl: /learn/achievements/azure-databricks.svg
+levels:
+  - intermediate
+roles:
+  - data-engineer
+products:
+  - azure-databricks
+subjects:
+  - data-engineering
+units:
+  - learn.wwl.cleanse-transform-load-data-into-unity-catalog.introduction
+  - learn.wwl.cleanse-transform-load-data-into-unity-catalog.profile-data-summary-statistics
+  - learn.wwl.cleanse-transform-load-data-into-unity-catalog.choose-appropriate-column-data-types
+  - learn.wwl.cleanse-transform-load-data-into-unity-catalog.resolve-duplicate-missing-null-values
+  - learn.wwl.cleanse-transform-load-data-into-unity-catalog.transform-data-filter-group-aggregate
+  - learn.wwl.cleanse-transform-load-data-into-unity-catalog.transform-data-join-union-intersect-except
+  - learn.wwl.cleanse-transform-load-data-into-unity-catalog.transform-data-denormalize-pivot-unpivot
+  - learn.wwl.cleanse-transform-load-data-into-unity-catalog.load-data-merge-insert-append
+  - learn.wwl.cleanse-transform-load-data-into-unity-catalog.knowledge-check
+  - learn.wwl.cleanse-transform-load-data-into-unity-catalog.summary
+badge:
+  uid: learn.wwl.cleanse-transform-load-data-into-unity-catalog.badge

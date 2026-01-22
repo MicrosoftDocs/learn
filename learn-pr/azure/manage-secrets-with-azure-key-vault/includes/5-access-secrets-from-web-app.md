@@ -1,5 +1,7 @@
 You know how enabling managed identities for Azure resources creates an identity for your app to use for authentication. Now create an app that uses that identity to access secrets in the vault.
 
+[!INCLUDE[](../../../includes/azure-optional-exercise-subscription-note.md)]
+
 ::: zone pivot="csharp"
 
 ## Read secrets in an ASP.NET Core app

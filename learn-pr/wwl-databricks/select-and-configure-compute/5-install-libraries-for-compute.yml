@@ -1,0 +1,14 @@
+### YamlMime: ModuleUnit
+uid: learn.wwl.select-and-configure-compute.install-libraries-for-compute
+title: Install libraries for compute
+metadata:
+  title: Install Libraries for Compute
+  description: Learn how to install libraries on Azure Databricks compute resources using package repositories, workspace files, Unity Catalog volumes, and init scripts.
+  ms.date: 01/14/2026
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+  ai-usage: ai-generated
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-install-libraries-for-compute.md)]
