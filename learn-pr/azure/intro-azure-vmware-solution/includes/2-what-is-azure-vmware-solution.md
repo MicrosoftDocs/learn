@@ -9,7 +9,7 @@ Microsoft manages Azure VMware Solution to meet performance, availability, secur
 - Operating platform
 - Back-end infrastructure operations 
 
-The VMware vSphere clusters are built from bare-metal Azure hosts. These clusters are deployed and managed through the Azure portal, the Azure CLI, or PowerShell. All provisioned private clouds have the standard supported versions of VMware vCenter Server, vSAN, vSphere, and NSX included and fully licensed. If you choose the service for your company, you can gain elasticity with the ability to add and remove capacity (compute, network, and storage resources) on demand.
+The VMware vSphere clusters are built on dedicated Azure hardware. These clusters are deployed and managed through the Azure portal, the Azure CLI, or PowerShell. All provisioned private clouds use the standard supported versions of VMware vCenter Server, vSAN, vSphere, and NSX when you bring your portable VCF subscription to Azure VMware Solution. If you choose the service for your company, you can gain elasticity with the ability to add and remove capacity (compute, network, and storage resources) on demand.
 
 The following diagram illustrates the relationship between private clouds and networks in Azure, Azure services, and on-premises environments.
 
@@ -30,9 +30,9 @@ Azure VMware Solution provides a comprehensive VMware environment in Azure. It e
 
    You can accelerate migration and minimize downtime by using the latest VMware Hybrid Cloud Extension (HCX) Enterprise functionality for large-scale, live migration from on-premises to Azure.
 
-- **Have a single point of support**: Azure VMware Solution is Microsoft developed, operated, and supported. Microsoft is the first and only contact and coordinates support with VMware as required.
+- **Have a single point of support**: Azure VMware Solution is Microsoft developed, operated, and supported. Microsoft is the first and only contact for AVS and VCF, and coordinates support with VMware as required.
 
-- **Avoid licensing complexity**: You work with a single vendor for licensing and resource consumption. You can track VMware product licensing directly with resource nodes as they're deployed and decommissioned.
+- **Leverage your existing VCF licenses**: You work with a single vendor for licensing and resource consumption. Bring your portable VCF subscription to Azure VMware Solution and Microsoft installs, manages, and patches the VMware tech stack.
 
 - **Maximize the value of existing Windows Server and SQL Server licenses**: You can use Azure Hybrid Benefit for both Windows Server and SQL Server to bring existing licenses to Azure and reduce costs.
 

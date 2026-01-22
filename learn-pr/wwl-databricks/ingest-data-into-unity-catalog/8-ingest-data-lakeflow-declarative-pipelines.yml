@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.ingest-data-into-unity-catalog.ingest-data-lakeflow-declarative-pipelines
-title: Ingest data with Lakeflow Declarative Pipelines
+title: Ingest data with Lakeflow Spark Declarative Pipelines
 metadata:
-  title: Ingest Data with Lakeflow Declarative Pipelines
-  description: Learn how to ingest data into Azure Databricks using Lakeflow Declarative Pipelines, including configuring streaming tables, flows, and handling schema evolution for ingestion from cloud storage and message buses.
+  title: Ingest Data with Lakeflow Spark Declarative Pipelines
+  description: Learn how to ingest data into Azure Databricks using Lakeflow Spark Declarative Pipelines, including configuring streaming tables, flows, and handling schema evolution for ingestion from cloud storage and message buses.
   ms.date: 12/07/2025
   author: weslbo
   ms.author: wedebols

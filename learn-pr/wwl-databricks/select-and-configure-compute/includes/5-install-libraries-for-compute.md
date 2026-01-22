@@ -8,6 +8,9 @@ Understanding how to install libraries effectively becomes critical as your data
 
 When you install a library at the cluster level, Azure Databricks automatically reinstalls it every time the cluster starts. This behavior ensures consistency—you don't need to manually reinstall dependencies after stopping and restarting a cluster. All notebooks attached to the cluster can import and use the installed packages immediately.
 
+> [!NOTE]
+> To install libraries on a cluster, you must have **CAN MANAGE** permission on that cluster. This permission allows you to modify cluster configuration, including adding and removing libraries. Without this permission, you won't be able to access the library installation interface.
+
 Compute-scoped libraries support **Python wheels**, **Java JAR files**, and **R packages**. You can install them from package repositories like **PyPI** and **Maven**, or from files stored in **workspace files**, **Unity Catalog volumes**, or cloud object storage. The installation method you choose depends on your library type, cluster access mode, and organizational security requirements.
 
 However, compute-scoped libraries have an important limitation: any library you install affects every notebook on the cluster. If different teams need conflicting versions of the same library, you'll need separate clusters or notebook-scoped installations to avoid conflicts.
@@ -26,14 +29,16 @@ Maven libraries require **coordinates** in the format `groupId:artifactId:versio
 
 For R packages from CRAN, provide the package name. Unlike Python and Java libraries, CRAN installations always pull the latest version from the configured mirror. To pin specific R package versions, you need to store the package files in workspace files or volumes instead of installing from CRAN.
 
-With clusters configured in **standard access mode**, Maven coordinates and JAR file paths require **allowlist approval** before installation. This security measure ensures admins review and approve libraries that run on shared compute resources.
+With clusters configured in **standard access mode**, Maven coordinates and JAR file paths require **allow list approval** before installation. This security measure ensures admins review and approve libraries that run on shared compute resources.
 
 > [!NOTE]
-> To learn more about configuring and managing allowlists for libraries, see the [documentation](/azure/databricks/data-governance/unity-catalog/manage-privileges/allowlist).
+> To learn more about configuring and managing allow lists for libraries, see the [documentation](/azure/databricks/data-governance/unity-catalog/manage-privileges/allowlist).
 
 ## Install libraries from files
 
 Storing library files in **workspace files** or **Unity Catalog volumes** gives you precise control over which library versions your clusters use. This approach works well when you need libraries not available in public repositories, custom packages you've built internally, or specific versions no longer available from package repositories.
+
+Using workspace files and Unity Catalog volumes for library installation maintains centralized management rather than bypassing security controls with ad-hoc installations like direct pip3 commands or unmanaged custom scripts executed from notebooks. Unity Catalog volumes provide enhanced governance through Unity Catalog's access control model, ensuring that all library installations are tracked with audit logs and protected by fine-grained permissions.
 
 Workspace files provide a convenient location for library storage with a 500 MB file size limit. To install a library from workspace files, upload your wheel, JAR, or requirements.txt file through the workspace Import dialog, then reference it during library installation using a path like `/Workspace/Users/you@example.com/libraries/mypackage-1.0.0-py3-none-any.whl`.
 
@@ -45,7 +50,7 @@ Unity Catalog volumes offer enhanced security and governance for library storage
 
 Python **requirements.txt files** work with both workspace files and volumes in Databricks Runtime 15.0 and above. These files let you define multiple package dependencies in a single file, making it easier to maintain consistent environments across clusters. Upload the requirements.txt file and install it just like any other library—Azure Databricks automatically installs all listed packages.
 
-For clusters with standard access mode, you must add library file paths to the allowlist before installation. This applies to both workspace files and volumes, ensuring admins approve the libraries used on shared compute.
+For clusters with standard access mode, you must add library file paths to the allow list before installation. This applies to both workspace files and volumes, ensuring admins approve the libraries used on shared compute.
 
 ## Use init scripts for advanced configuration
 
@@ -53,7 +58,7 @@ For clusters with standard access mode, you must add library file paths to the a
 
 You might use init scripts to install system packages with `apt-get`, configure environment variables, or set up monitoring agents. For example, an init script could install a specialized database driver that requires system libraries, then configure connection parameters through environment variables. The script runs every time the cluster starts, ensuring your configuration persists across restarts.
 
-Store init scripts in Unity Catalog volumes for clusters running Databricks Runtime 13.3 LTS and above. Create a shell script file, upload it to a volume, then configure the cluster to run the script by specifying its path like `/Volumes/main/engineering/scripts/setup.sh`. For standard access mode, add the init script path to the allowlist before configuring the cluster.
+Store init scripts in Unity Catalog volumes for clusters running Databricks Runtime 13.3 LTS and above. Create a shell script file, upload it to a volume, then configure the cluster to run the script by specifying its path like `/Volumes/main/engineering/scripts/setup.sh`. For standard access mode, add the init script path to the allow list before configuring the cluster.
 
 Init scripts execute sequentially in the order you specify. If any script returns a non-zero exit code, the cluster fails to start. This failure protection prevents clusters from running with incomplete or incorrect configuration. You can troubleshoot failed init scripts by configuring cluster log delivery and examining the init script logs.
 

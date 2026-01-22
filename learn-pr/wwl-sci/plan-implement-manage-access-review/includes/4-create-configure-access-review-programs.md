@@ -6,9 +6,9 @@ You can also create an access review in PowerShell with the `New-MgIdentityGover
 
 The access reviews API in Microsoft Graph enables organizations to audit and attest to the access that identities are assigned to resources in the organization. For example, access to a SharePoint site that contains customer contact information. And by using the access reviews API, organizations can check and attest to access to such groups and by extension, resources.
 
-## Access Review API for a security groups
+## Access Review API for security groups
 
-This learning module doesn't recreate the step by step method to use the API, to get that information see the article - [Review access to security groups using access reviews APIs.](/graph/tutorial-accessreviews-securitygroup)  Here are the high level steps that need to be performed.
+This learning module doesn't recreate the step-by-step method to use the API, to get that information see the article - [Review access to security groups using access reviews APIs.](/graph/tutorial-accessreviews-securitygroup) Here are the high-level steps that need to be performed.
 
 1. Create an access review for the security group
 2. List instances of the access review

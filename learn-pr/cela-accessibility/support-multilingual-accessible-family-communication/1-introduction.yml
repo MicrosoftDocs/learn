@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.support-multilingual-accessible-family-communication.introduction
+title: "Introduction"
+metadata:
+  title: "Introduction"
+  description: "Discover how AI tools simplify communication, translate documents, and foster inclusive engagement for diverse and multilingual families."
+  ms.date: 1/9/2026
+  author: Randall-Knapp
+  ms.author: erzelman
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/1-introduction.md)]

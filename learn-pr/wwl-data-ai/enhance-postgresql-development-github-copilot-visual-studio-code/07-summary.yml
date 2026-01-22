@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.enhance-postgresql-development-github-copilot-visual-studio-code.summary
+title: Summary
+metadata:
+  title: Summary
+  description: Review what you learned about enhancing PostgreSQL development with GitHub Copilot in Visual Studio Code.
+  author: wwlpublish
+  ms.author: calopez
+  ms.date: 12/08/2025
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/07-summary.md)]
+  

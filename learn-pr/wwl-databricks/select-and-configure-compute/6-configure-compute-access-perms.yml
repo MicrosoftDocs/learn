@@ -3,12 +3,12 @@ uid: learn.wwl.select-and-configure-compute.configure-compute-access-perms
 title: Configure compute access
 metadata:
   title: Configure Compute Access
-  description: Learn how to configure access permissions for Azure Databricks compute resources, including permission levels, access modes, and dedicated group access.
-  ms.date: 12/07/2025
+  description: Learn how to configure access permissions for Azure Databricks compute resources, including permission levels, access modes, dedicated group access, and workspace-level entitlements.
+  ms.date: 01/14/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit
   ai-usage: ai-generated
-durationInMinutes: 10
+durationInMinutes: 12
 content: |
   [!include[](includes/6-configure-compute-access-perms.md)]
