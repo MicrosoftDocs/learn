@@ -1,0 +1,37 @@
+### YamlMime:LearningPath
+uid: learn.wwl.implement-container-app-hosting-azure
+metadata:
+  title: Implement Container Application Hosting on Azure
+  description: Learn how to deploy, configure, and troubleshoot containerized applications on Azure.
+  ms.date: 1/19/2026
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: learning-path
+title: Implement container application hosting on Azure
+prerequisites: |
+  - Programming experience with languages such as Python, JavaScript, or C#.
+  - Basic understanding of Azure services and cloud computing concepts.
+  - Familiarity with containerization fundamentals.
+summary: |
+  This learning path guides you through core container hosting workflows on Azure for AI applications and backend services. You start by using Azure Container Registry to store and organize images, build images in the cloud with ACR Tasks, and apply tagging and versioning practices that support reliable deployments.
+
+  You then deploy custom containers to Azure App Service, configure runtime behavior such as ports, startup commands, and persistent storage, and externalize environment-specific configuration using App Service application settings.
+
+  Finally, you use Azure Container Instances to run containers quickly, set environment variables, control restart policies for task-style workloads, and mount Azure Files shares when your container needs shared storage.
+iconUrl: /training/achievements/generic-trophy.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- azure-container-registry
+- azure-app-service
+- azure-container-instances
+subjects:
+- containers
+modules:
+- learn.wwl.store-manage-containers-azure-container-registry
+- learn.wwl.deploy-containers-azure-app-service
+- learn.wwl.create-run-container-images-azure-container-instances
+trophy:
+  uid: learn.wwl.implement-container-app-hosting-azure.trophy

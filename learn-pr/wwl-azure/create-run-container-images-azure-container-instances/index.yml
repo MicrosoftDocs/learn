@@ -5,7 +5,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Run Container Images in Azure Container Instances
   description: "Run container images in Azure Container Instances"
-  ms.date: 06/17/2025
+  ms.date: 01/15/2024
   author: JeffKoMS
   ms.author: jeffko
   ms.topic: module-standard-task-based

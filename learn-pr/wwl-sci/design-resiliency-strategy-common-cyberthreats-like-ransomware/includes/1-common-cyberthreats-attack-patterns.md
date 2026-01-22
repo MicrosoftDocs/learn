@@ -1,26 +1,4 @@
-This module covers common cyberthreats, business resiliency, secure backup and restore configurations, and security update management.
 
-Imagine that you work for a medium-sized company that has recently experienced a ransomware attack. The attack has caused significant damage to the company's systems and data, and the company is struggling to recover. As a cybersecurity architect, you have been tasked with designing a comprehensive backup and restore plan that will help the company recover from future attacks. In this module, you'll learn how to design secure backup and restore configurations using Azure Backup, and how to integrate with Configuration Manager for on-premises resources. You'll also learn how to manage security updates using Update Management and how to support business resiliency in the face of cyberthreats.
-
-The module is divided into four sections: Understanding Cyberthreats, Designing Secure Backup and Restore Configurations, Managing Security Updates, and Supporting Business Resiliency.
-
-## Learning objectives
-
-In this module, you learn how to:
-
-*   Understand common cyberthreats like ransomware.
-*   Understand how to support business resiliency.
-*   Design configurations for secure backup and restore.
-*   Design solutions for managing security updates.
-
-The content in the module helps you prepare for the certification exam SC-100: Microsoft Cybersecurity Architect.
-
-## Prerequisites
-
-- Conceptual knowledge of security policies, requirements, zero trust architecture, and management of hybrid environments
-- Working experience with zero trust strategies, applying security policies, and developing security requirements based on business goals
-
-## Cyberthreats
 
 ### What is the threat landscape?
 
@@ -43,7 +21,7 @@ An attack vector is an entry point or route for an attacker to gain access to a 
 
 Here are some examples of common attack vectors:
 
-- **Email** is perhaps the most common attack vector. Cybercriminals send seemingly legitimate emails that result in users taking action. This might include downloading a file, or selecting a link that will compromise their device.
+- **Email** is perhaps the most common attack vector. Cybercriminals send seemingly legitimate emails that result in users taking action. This might include downloading a file, or selecting a link that will compromise their device. Advanced AI technologies now enable attackers to create highly convincing phishing emails with proper grammar, context-aware content, and personalized details that make detection more difficult.
 -   **Removable media**. An attacker can use media such as USB drives, smart cables, storage cards, and more to compromise a device. For example, attackers might load malicious code into USB devices that are later provided to users as a free gift, or left in public spaces to be found. When they're plugged in, the damage is done.
 -   **Browser**. Attackers can use malicious websites or browser extensions to get users to download malicious software on their devices, or change a user's browser settings. The device can then become compromised, providing an entry point to the wider system or network.
 -   **Cloud services**. Organizations rely more on cloud services for day-to-day business and processes. Attackers can compromise poorly secured resources or services in the cloud. For example, an attacker could compromise an account in a cloud service, and gain control of any resources or services accessible to that account. They could also gain access to another account with even more permissions.
@@ -55,7 +33,7 @@ Any attack that results in someone gaining unauthorized access to devices, servi
 
 Security breaches come in different forms, including the following:
 
-- Social engineering attacks - In social engineering, impersonation attacks happen when an unauthorized user (the attacker), aims to gain the trust of an authorized user by posing as a person of authority to access a system from some nefarious activity. For example, a cybercriminal might pretend to be a support engineer to trick a user into revealing their password to access an organization’s systems.
+- Social engineering attacks - In social engineering, impersonation attacks happen when an unauthorized user (the attacker), aims to gain the trust of an authorized user by posing as a person of authority to access a system from some nefarious activity. For example, a cybercriminal might pretend to be a support engineer to trick a user into revealing their password to access an organization's systems. AI-powered tools enable attackers to create convincing deep fake audio or video, making impersonation attacks more sophisticated and harder to detect.
 - Browser attacks - Whether on a desktop, laptop, or phone, browsers are an important access tool for the internet. Security vulnerabilities in a browser can have a significant impact because of their pervasiveness. 
 - Password attacks - A password attack is when someone attempts to use authentication for a password-protected account to gain unauthorized access to a device or system. Attackers often use software to speed up the process of cracking and guessing passwords. 
 

@@ -1,6 +1,6 @@
 Now it's your chance to migrate a SQL Server database using a few of the tools and features available. 
 
-In this exercise, you learn how to migrate a SQL Server database to Azure SQL Database using the Azure migration extension for Azure Data Studio.
+In this exercise, you learn how to migrate a SQL Server database to Azure SQL Database.
 
 > [!NOTE]
 > To complete this exercise, you need an [Azure subscription](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn).
