@@ -26,14 +26,14 @@ quiz:
     - content: "Can only be associated with a single Azure resource"
       isCorrect: false
       explanation: "Incorrect. The same user-assigned managed identity can be associated with more than one Azure resource."
-  - content: "A client app requests managed identities for an access token for a given resource. Which of the following options is the basis for the token?"
+  - content: "When an Azure resource uses a managed identity to request an access token for a resource, which Microsoft Entra ID identity does the token represent?"
     choices:
-    - content: "Oauth 2.0"
+    - content: "OAuth 2.0"
       isCorrect: false
-      explanation: "Incorrect. Oauth 2.0 is a protocol that can be used to acquire a token, but isn't the basis for the token."
-    - content: "Service principal"
+      explanation: "Incorrect. OAuth 2.0 is the protocol used to request tokens, not the identity represented in the token."
+    - content: "The managed identity’s service principal"
       isCorrect: true
-      explanation: "Correct. The token is based on the managed identities for Azure resources service principal."
-    - content: "Virtual machine"
+      explanation: "Correct. The access token represents the managed identity’s service principal in Microsoft Entra ID."
+    - content: "The virtual machine (or hosting resource) itself"
       isCorrect: false
-      explanation: "Incorrect. The virtual machine may be assigned a managed identity, but isn't the basis for the token."
+      explanation: "Incorrect. The resource can have a managed identity, but the token represents the identity (service principal), not the VM object."

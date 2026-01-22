@@ -22,4 +22,9 @@ Copilot can assist you in configuring Azure infrastructure solutions. Copilot ca
 
 * Summarize best practices for governing, securing, and managing AI workloads on Azure. Include key services and practices for Responsible AI, security, cost management, and operations.
 
- 
+### Learn more with Azure documentation
+
+* The [AI adoption - Cloud Adoption Framework](/azure/cloud-adoption-framework/scenarios/ai/) provides a structured process for adopting AI solutions in Azure.
+  
+* The [AI Workload Documentation - Microsoft Azure Well-Architected Framework](/azure/well-architected/ai/) focuses on the architectural challenges of designing AI workloads. 
+
