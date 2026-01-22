@@ -1,1 +1,0 @@
-In this module, you learned about spec-driven development (SDD) and how to leverage GitHub Spec Kit alongside GitHub Copilot to streamline the software development process on greenfield projects. You explored how defining clear specifications upfront can guide AI-assisted code generation, ensuring that implementations align with intended behaviors from the outset.
