@@ -1,0 +1,168 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.spec-driven-development-github-spec-kit-greenfield-intro.knowledge-check
+title: Module assessment
+metadata:
+  title: Module Assessment
+  description: "Module assessment"
+  ms.date: 01/26/2026
+  author: chrishowd
+  ms.author: cahowd
+  ms.topic: unit
+durationInMinutes: 10
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is the primary characteristic that distinguishes spec-driven development from traditional development approaches?"
+    choices:
+    - content: "Code is treated as the ultimate source of truth, and specifications serve as supporting documentation."
+      isCorrect: false
+      explanation: "Incorrect. This describes traditional development, not spec-driven development. In SDD, the relationship is inverted."
+    - content: "Specifications become the primary artifact that drives implementation, and code becomes an expression of those specifications."
+      isCorrect: true
+      explanation: "Correct. In spec-driven development, specifications are the central source of truth. Code is generated from specifications, eliminating the gap between intent and implementation."
+    - content: "Developers write code first and then create specifications to document what was built."
+      isCorrect: false
+      explanation: "Incorrect. This code-first approach is the opposite of SDD, which emphasizes defining specifications before implementation."
+  - content: "According to the module, what happens to specifications in spec-driven development when requirements change?"
+    choices:
+    - content: "Specifications are treated as static documents that rarely need updates once created."
+      isCorrect: false
+      explanation: "Incorrect. This describes Waterfall-style documentation. SDD specifications are living documents that evolve with the project."
+    - content: "Specifications are discarded and new ones are created from scratch."
+      isCorrect: false
+      explanation: "Incorrect. SDD doesn't require starting over. Specifications are updated, and changes propagate through plan, tasks, and code."
+    - content: "Specifications are updated, and affected implementation plans and code can be regenerated accordingly."
+      isCorrect: true
+      explanation: "Correct. SDD transforms requirement changes from obstacles into normal workflow. When specifications are updated, implementation plans and code can be systematically regenerated."
+  - content: "What are the four phases of the spec-driven development workflow?"
+    choices:
+    - content: "Research, Design, Develop, and Deploy."
+      isCorrect: false
+      explanation: "Incorrect. These phases don't represent the SDD workflow, which has a specific structure for AI-assisted development."
+    - content: "Specify, Plan, Tasks, and Implement."
+      isCorrect: true
+      explanation: "Correct. The SDD workflow progresses through these four phases: define what to build (Specify), determine how to build it (Plan), break it into actionable items (Tasks), and write the code (Implement)."
+    - content: "Requirements, Architecture, Coding, and Testing."
+      isCorrect: false
+      explanation: "Incorrect. While these are common development activities, they don't match the specific SDD phase terminology."
+  - content: "What distinguishes SDD outputs as 'living artifacts' compared to traditional documentation?"
+    choices:
+    - content: "Living artifacts are stored in version control systems."
+      isCorrect: false
+      explanation: "Incorrect. While living artifacts can be stored in version control, this isn't what makes them 'living.' Traditional docs can also be version-controlled."
+    - content: "Living artifacts can evolve as new information emerges, with changes propagating through plan, tasks, and code."
+      isCorrect: true
+      explanation: "Correct. Living artifacts are continuously used, updated, and refined. When requirements change, the spec updates, and those changes flow through to implementation."
+    - content: "Living artifacts are automatically generated without human input."
+      isCorrect: false
+      explanation: "Incorrect. Living artifacts require human oversight and refinement. The 'living' aspect refers to their ability to evolve, not automation."
+  - content: "How does spec-driven development complement Agile methodologies?"
+    choices:
+    - content: "SDD replaces Agile practices entirely with a more structured approach."
+      isCorrect: false
+      explanation: "Incorrect. SDD doesn't replace Agile. The two approaches share common values and can work together effectively."
+    - content: "SDD can operate within Scrum by treating each user story with a micro-cycle of specify, plan, tasks, and implement."
+      isCorrect: true
+      explanation: "Correct. SDD supports agility by making changes easier - update the spec, regenerate plan and tasks, and continue. An Agile team can adopt SDD within each sprint."
+    - content: "SDD requires comprehensive upfront documentation that conflicts with Agile values."
+      isCorrect: false
+      explanation: "Incorrect. While SDD emphasizes specifications, these are living documents that evolve, aligning with Agile's embrace of change."
+  - content: "When comparing SDD to Test-Driven Development (TDD), what is a key difference in their approach?"
+    choices:
+    - content: "TDD operates at the unit test level, while SDD works at a higher requirements level to describe complete features."
+      isCorrect: true
+      explanation: "Correct. TDD drives design through unit tests for individual functions, while SDD uses specifications that describe complete features to drive design and code generation."
+    - content: "TDD and SDD are mutually exclusive approaches that cannot be used together."
+      isCorrect: false
+      explanation: "Incorrect. TDD and SDD can complement each other. You can use SDD for overall direction and still apply TDD within implementation."
+    - content: "SDD produces automated tests while TDD produces specifications."
+      isCorrect: false
+      explanation: "Incorrect. This reverses the primary artifacts. TDD produces tests; SDD produces specifications that drive implementation."
+  - content: "In the Specify phase of SDD, what does a well-structured specification include?"
+    choices:
+    - content: "Only a high-level summary of the feature with implementation details."
+      isCorrect: false
+      explanation: "Incorrect. A specification focuses on what the software should do, not implementation details. It includes multiple sections beyond just a summary."
+    - content: "Summary, user stories, acceptance criteria, functional requirements, nonfunctional requirements, and edge cases."
+      isCorrect: true
+      explanation: "Correct. A well-structured specification includes all these sections to comprehensively define what the software should do without specifying how."
+    - content: "Architecture diagrams and technology stack decisions."
+      isCorrect: false
+      explanation: "Incorrect. Architecture and technology decisions belong in the Plan phase, not the Specify phase."
+  - content: "What is the purpose of the Plan phase in the SDD workflow?"
+    choices:
+    - content: "To define what the software should do and capture user needs."
+      isCorrect: false
+      explanation: "Incorrect. Defining what the software should do is the purpose of the Specify phase, not the Plan phase."
+    - content: "To determine how to build what the spec describes, including architecture decisions and technology choices."
+      isCorrect: true
+      explanation: "Correct. The Plan phase transforms requirements into architecture decisions, technology stack choices, and implementation sequence."
+    - content: "To break down work into actionable development tasks."
+      isCorrect: false
+      explanation: "Incorrect. Breaking down work into actionable tasks is the purpose of the Tasks phase, not the Plan phase."
+  - content: "What is GitHub Spec Kit?"
+    choices:
+    - content: "A proprietary AI model developed by GitHub for code generation."
+      isCorrect: false
+      explanation: "Incorrect. GitHub Spec Kit isn't an AI model. It's a framework and CLI that works with your chosen AI agent."
+    - content: "An open-source toolkit that facilitates spec-driven development by integrating with AI coding assistants."
+      isCorrect: true
+      explanation: "Correct. GitHub Spec Kit is an open-source toolkit developed by GitHub that orchestrates the SDD workflow through structured commands, templates, and persistent artifacts."
+    - content: "A Visual Studio Code extension that replaces GitHub Copilot."
+      isCorrect: false
+      explanation: "Incorrect. GitHub Spec Kit works alongside AI assistants like GitHub Copilot, not as a replacement."
+  - content: "How does GitHub Spec Kit address the challenge of maintaining context across AI chat sessions?"
+    choices:
+    - content: "By storing specifications, plans, and tasks as Markdown files in your repository."
+      isCorrect: true
+      explanation: "Correct. GitHub Spec Kit creates persistent artifacts that maintain context across sessions. The AI can reference these files to understand previous decisions and project requirements."
+    - content: "By replacing the AI's memory with a cloud-based storage system."
+      isCorrect: false
+      explanation: "Incorrect. GitHub Spec Kit uses local Markdown files in your repository, not cloud-based memory replacement."
+    - content: "By limiting AI interactions to a single continuous session."
+      isCorrect: false
+      explanation: "Incorrect. GitHub Spec Kit enables multiple sessions by persisting context in files, not by restricting to single sessions."
+  - content: "What is required to install GitHub Spec Kit's specify CLI tool?"
+    choices:
+    - content: "Only Visual Studio Code with the GitHub Copilot extension."
+      isCorrect: false
+      explanation: "Incorrect. While Visual Studio Code with GitHub Copilot is one supported environment, you also need Python 3.11+, Git, and the uv tool for installation."
+    - content: "Python 3.11 or later, Git, and the uv tool for package management."
+      isCorrect: true
+      explanation: "Correct. These are the core prerequisites. On Windows, you should also use WSL2 since GitHub Spec Kit expects a Unix-like environment."
+    - content: "A paid enterprise license from GitHub."
+      isCorrect: false
+      explanation: "Incorrect. GitHub Spec Kit is open source and doesn't require an enterprise license."
+  - content: "Which AI coding assistants does GitHub Spec Kit support?"
+    choices:
+    - content: "Only GitHub Copilot in Visual Studio Code."
+      isCorrect: false
+      explanation: "Incorrect. GitHub Spec Kit supports multiple AI assistants, not just GitHub Copilot."
+    - content: "Multiple agents including GitHub Copilot, Claude Code, Cursor, Windsurf, and Amazon Q Developer."
+      isCorrect: true
+      explanation: "Correct. GitHub Spec Kit's agent-agnostic approach supports multiple AI coding assistants. The underlying specification artifacts remain identical regardless of which assistant you use."
+    - content: "Only command-line AI tools, not IDE-integrated assistants."
+      isCorrect: false
+      explanation: "Incorrect. GitHub Spec Kit supports both CLI and IDE-integrated AI assistants."
+  - content: "What is the purpose of the constitution.md file generated by the /speckit.constitution command?"
+    choices:
+    - content: "To store the source code for the application's core functionality."
+      isCorrect: false
+      explanation: "Incorrect. The constitution contains project principles and constraints, not source code."
+    - content: "To define project-wide principles, constraints, and non-negotiable requirements that ensure consistency."
+      isCorrect: true
+      explanation: "Correct. The constitution captures technology standards, security requirements, coding conventions, and other principles that the AI uses when generating plans and code."
+    - content: "To list all the tasks required for implementing a feature."
+      isCorrect: false
+      explanation: "Incorrect. Tasks are stored in tasks.md, not constitution.md. The constitution contains guiding principles, not task lists."
+  - content: "What is the recommended sequence for using GitHub Spec Kit commands in a greenfield project?"
+    choices:
+    - content: "Run commands in any order since they are independent of each other."
+      isCorrect: false
+      explanation: "Incorrect. The commands follow a specific sequence where each builds on the outputs of the previous one."
+    - content: "specify init, then /speckit.constitution, /speckit.specify, /speckit.plan, /speckit.tasks, and finally /speckit.implement."
+      isCorrect: true
+      explanation: "Correct. This sequence ensures each phase has the necessary inputs from previous phases. Project initialization comes first, followed by constitution, specification, plan, tasks, and implementation."
+    - content: "Start with /speckit.implement and work backward to /speckit.specify."
+      isCorrect: false
+      explanation: "Incorrect. Implementation comes last, not first. You need specifications, plans, and tasks before you can implement."

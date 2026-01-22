@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn.wwl.spec-driven-development-github-spec-kit-greenfield-intro
+metadata:
+  title: "Get Started with Spec-Driven Development and GitHub Spec Kit"
+  description: "Learn to implement the spec-driven development methodology and GitHub Spec Kit for greenfield applications."
+  ms.date: 01/26/2026
+  author: chrishowd
+  ms.author: cahowd
+  ms.topic: module
+  ms.service: github-copilot
+title: "Get started with spec-driven development and GitHub Spec Kit"
+summary: Learn to implement the spec-driven development methodology and GitHub Spec Kit for greenfield applications.
+abstract: |
+  After completing this module, you're be able to:
+  - Describe the principles and phases of the spec-driven development (SDD) methodology.
+  - Use GitHub Spec Kit commands to create the constitution.md, spec.md, plan.md, and tasks.md files.
+  - Implement a greenfield application from start to finish using GitHub Spec Kit's AI-assisted workflows.
+prerequisites: |
+  - Familiarity with GitHub and GitHub Copilot.
+  - Basic understanding of software development workflows.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+  - beginner
+roles:
+  - developer
+products:
+  - github
+  - vs-code
+subjects:
+  - app-development
+  - productivity
+units:
+- learn.wwl.spec-driven-development-github-spec-kit-greenfield-intro.introduction
+- learn.wwl.spec-driven-development-github-spec-kit-greenfield-intro.what-spec-driven-development
+- learn.wwl.spec-driven-development-github-spec-kit-greenfield-intro.examine-spec-driven-development-principles-processes
+- learn.wwl.spec-driven-development-github-spec-kit-greenfield-intro.compare-spec-driven-development-other-methodologies
+- learn.wwl.spec-driven-development-github-spec-kit-greenfield-intro.examine-spec-driven-development-workflow-phases
+- learn.wwl.spec-driven-development-github-spec-kit-greenfield-intro.introduction-github-spec-kit
+- learn.wwl.spec-driven-development-github-spec-kit-greenfield-intro.examine-github-spec-kit-environment-installation
+- learn.wwl.spec-driven-development-github-spec-kit-greenfield-intro.examine-github-spec-kit-commands-results
+- learn.wwl.spec-driven-development-github-spec-kit-greenfield-intro.exercise-create-greenfield-application-github-spec-kit
+- learn.wwl.spec-driven-development-github-spec-kit-greenfield-intro.knowledge-check
+- learn.wwl.spec-driven-development-github-spec-kit-greenfield-intro.summary
+badge:
+  uid: learn.wwl.spec-driven-development-github-spec-kit-greenfield-intro.badge
