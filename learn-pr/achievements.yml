@@ -7575,3 +7575,8 @@ achievements:
   title: Work with Data Warehouses using Azure Synapse Analytics
   summary: Learn to work with Data Warehouses using Azure Synapse Analytics
   iconUrl: /training/achievements/work-with-data-warehouses-using-azure-synapse-analytics-social.png
+- uid: learn.wwl.describe-verified-id-concepts.badge
+  type: badge 
+  title: Describe Microsoft Entra Verified ID concepts
+  summary: Learn the core concepts of decentralized identities and Microsoft Entra Verified ID.
+  iconUrl: /training/achievements/describe-verified-id-concepts.svg

@@ -722,6 +722,11 @@
     "source_path_from_root": "/learn-pr/wwl-sci/describe-verified-id-concepts/includes/7-summary.md",
     "redirect_url": "https://www.microsoft.com/en-us/security/business/identity-access/microsoft-entra-verified-id",
     "redirect_document_id": false
-    }
+    },
+    {
+		"source_path_from_root": "/learn-pr/achievements/learn-wwl.describe-verified-id-concepts.badge.yml",
+		"redirect_url": "https://www.microsoft.com/en-us/security/business/identity-access/microsoft-entra-verified-id",
+		"redirect_document_id": false
+		}
     ]
 }
