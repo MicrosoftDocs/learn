@@ -652,6 +652,81 @@
     "source_path_from_root": "/learn-pr/wwl-sci/purview-data-security-investigations-understand/data-security-investigation-clarification.md",
     "redirect_url": "https://learn.microsoft.com/training/modules/purview-data-security-investigations-understand/data-security-investigation-differentiation",
     "redirect_document_id": false
+    },
+    {
+    "source_path_from_root": "/learn-pr/wwl-sci/describe-verified-id-concepts/index.yml",
+    "redirect_url": "https://www.microsoft.com/en-us/security/business/identity-access/microsoft-entra-verified-id",
+    "redirect_document_id": false
+    },
+    {
+    "source_path_from_root": "/learn-pr/wwl-sci/describe-verified-id-concepts/1-introduction.yml",
+    "redirect_url": "https://www.microsoft.com/en-us/security/business/identity-access/microsoft-entra-verified-id",
+    "redirect_document_id": false
+    },
+    {
+    "source_path_from_root": "/learn-pr/wwl-sci/describe-verified-id-concepts/includes/1-introduction.md",
+    "redirect_url": "https://www.microsoft.com/en-us/security/business/identity-access/microsoft-entra-verified-id",
+    "redirect_document_id": false
+    },
+    {
+    "source_path_from_root": "/learn-pr/wwl-sci/describe-verified-id-concepts/2-describe-challenges-with-digital-identities-credentials.yml",
+    "redirect_url": "https://www.microsoft.com/en-us/security/business/identity-access/microsoft-entra-verified-id",
+    "redirect_document_id": false
+    },
+    {
+    "source_path_from_root": "/learn-pr/wwl-sci/describe-verified-id-concepts/includes/2-describe-challenges-with-digital-identities-credentials.md",
+    "redirect_url": "https://www.microsoft.com/en-us/security/business/identity-access/microsoft-entra-verified-id",
+    "redirect_document_id": false
+    },
+    {
+    "source_path_from_root": "/learn-pr/wwl-sci/describe-verified-id-concepts/3-describe-decentralized-identifiers.yml",
+    "redirect_url": "https://www.microsoft.com/en-us/security/business/identity-access/microsoft-entra-verified-id",
+    "redirect_document_id": false
+    },
+    {
+    "source_path_from_root": "/learn-pr/wwl-sci/describe-verified-id-concepts/includes/3-describe-decentralized-identifiers.md",
+    "redirect_url": "https://www.microsoft.com/en-us/security/business/identity-access/microsoft-entra-verified-id",
+    "redirect_document_id": false
+    },
+    {
+    "source_path_from_root": "/learn-pr/wwl-sci/describe-verified-id-concepts/4-describe-why-dids-are-different.yml",
+    "redirect_url": "https://www.microsoft.com/en-us/security/business/identity-access/microsoft-entra-verified-id",
+    "redirect_document_id": false
+    },
+    {
+    "source_path_from_root": "/learn-pr/wwl-sci/describe-verified-id-concepts/includes/4-describe-why-dids-are-different.md",
+    "redirect_url": "https://www.microsoft.com/en-us/security/business/identity-access/microsoft-entra-verified-id",
+    "redirect_document_id": false
+    },
+    {
+    "source_path_from_root": "/learn-pr/wwl-sci/describe-verified-id-concepts/5-describe-how-verifiable-credentials-work.yml",
+    "redirect_url": "https://www.microsoft.com/en-us/security/business/identity-access/microsoft-entra-verified-id",
+    "redirect_document_id": false
+    },
+    {
+    "source_path_from_root": "/learn-pr/wwl-sci/describe-verified-id-concepts/includes/5-describe-how-verifiable-credentials-work.md",
+    "redirect_url": "https://www.microsoft.com/en-us/security/business/identity-access/microsoft-entra-verified-id",
+    "redirect_document_id": false
+    },
+    {
+    "source_path_from_root": "/learn-pr/wwl-sci/describe-verified-id-concepts/6-knowledge-check.yml",
+    "redirect_url": "https://www.microsoft.com/en-us/security/business/identity-access/microsoft-entra-verified-id",
+    "redirect_document_id": false
+    },
+    {
+    "source_path_from_root": "/learn-pr/wwl-sci/describe-verified-id-concepts/7-summary.yml",
+    "redirect_url": "https://www.microsoft.com/en-us/security/business/identity-access/microsoft-entra-verified-id",
+    "redirect_document_id": false
+    },
+    {
+    "source_path_from_root": "/learn-pr/wwl-sci/describe-verified-id-concepts/includes/7-summary.md",
+    "redirect_url": "https://www.microsoft.com/en-us/security/business/identity-access/microsoft-entra-verified-id",
+    "redirect_document_id": false
+    },
+    {
+    "source_path_from_root": "/learn-pr/achievements/learn-wwl.describe-verified-id-concepts.badge.yml",
+    "redirect_url": "https://www.microsoft.com/en-us/security/business/identity-access/microsoft-entra-verified-id",
+    "redirect_document_id": false
     }
     ]
 }
