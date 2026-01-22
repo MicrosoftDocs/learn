@@ -3,7 +3,7 @@ uid: learn.wwl.design-resiliency-strategy-common-cyberthreats-like-ransomware
 metadata:
   title: Design a Resiliency Strategy for Ransomware and Other Attacks Based on Microsoft Security Best Practices
   description: "You learn about common cyberthreats like ransomware and what kinds of attack patterns an organization must be prepared for."
-  ms.date: 7/30/2025
+  ms.date: 1/21/2026
   author: ceperezb
   ms.author: ceperezb
   ms.topic: module
@@ -38,6 +38,7 @@ subjects:
   - security
   - cloud-security
 units:
+- learn.wwl.design-resiliency-strategy-common-cyberthreats-like-ransomware.introduction
 - learn.wwl.design-resiliency-strategy-common-cyberthreats-like-ransomware.common-cyberthreats-attack-patterns
 - learn.wwl.design-resiliency-strategy-common-cyberthreats-like-ransomware.support-business-resiliency
 - learn.wwl.design-resiliency-strategy-common-cyberthreats-like-ransomware.ransomware-protection

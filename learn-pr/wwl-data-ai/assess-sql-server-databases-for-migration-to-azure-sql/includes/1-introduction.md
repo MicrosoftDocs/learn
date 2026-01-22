@@ -19,8 +19,8 @@ By the end of this module, you'll be able to:
 
 - Understand common compatibility issues and blockers that may prevent a migration to Azure SQL.
 - Discover the various tools and options available for assessing SQL Server databases for migration purposes.
-- Use the Azure migration extension for Azure Data Studio to assess SQL Server databases.
-- Use the Azure Migrate and other tools to assess SQL Server databases.
+- Use SQL Server enabled by Azure Arc to assess SQL Server instances for migration.
+- Use Azure Migrate to assess SQL Server databases at scale.
 
 ## Prerequisites  
 
