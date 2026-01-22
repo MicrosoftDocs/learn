@@ -62789,6 +62789,11 @@
       "source_path": "learn-pr/azure/intro-azure-functions/5-summary.yml",
       "redirect_url": "https://learn.microsoft.com/en-us/azure/azure-functions/functions-overview",
       "redirect_document_id": false
-    },                                                                                  
+    },
+    {
+      "source_path": "learn-pr/paths/architect-messaging-serverless/index.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/training/browse/",
+      "redirect_document_id": false
+    }                                                                                       
   ]
 }

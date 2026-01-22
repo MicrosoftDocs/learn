@@ -7589,4 +7589,9 @@ achievements:
   type: badge
   title: Introduction to Azure Functions
   summary: Learn how Azure Functions helps you to easily integrate serverless compute resources into your cloud-based solutions. An extensive set of bindings makes it easy for you to connect your code to key Azure services, while built-in support for the most used development languages lets you better use your existing skills.
-  iconUrl: /training/achievements/generic-badge.svg   
+  iconUrl: /training/achievements/generic-badge.svg 
+- uid: learn.architect-messaging-serverless.trophy
+  type: badge
+  title: Architect message brokering and serverless applications in Azure
+  summary: Learn how to create reliable messaging for your applications, and how to take advantage of serverless application services in Azure.
+  iconUrl: /training/achievements/architect-messaging-serverless.svg
