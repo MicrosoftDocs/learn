@@ -2,9 +2,9 @@ Recall that you require embedding vectors stored in a vector database to run a s
 
 ![Diagram of an Azure Database for PostgreSQL flexible server and the extension named "vector." Next to it are four stored vectors with n-dimensions and arbitrary numeric values.](../media/store-vectors.png)
 
-## Introduction to `vector`
+## Introduction to `pgvector`
 
-The open-source [`vector` extension](https://github.com/pgvector/pgvector) provides vector storage, similarity querying, and other vector operations for PostgreSQL. Once enabled, you can create `vector` columns to store embeddings (or other vectors) alongside other columns.
+The open-source [`pgvector` extension](https://github.com/pgvector/pgvector) provides vector storage, similarity querying, and other vector operations for PostgreSQL. Once enabled, you can create `vector` columns to store embeddings (or other vectors) alongside other columns.
 
 ```sql
 /* Enable the extension. */
@@ -75,7 +75,7 @@ UPDATE documents SET embedding = '[1,1,1]' where id = 1;
 
 The `vector` extension provides the `v1 <=> v2` operator to calculate the cosine distance between vectors `v1` and `v2`. The result is a number between 0 and 2, where 0 means "semantically identical" (no distance) and two means "semantically opposite" (maximum distance).
 
-You can see the terms cosine **distance** and **similarity**. Recall that cosine similarity is between -1 and 1, where -1 means "semantically opposite" and 1 means "semantically identical." Note that `similarity = 1 - distance`.
+You can see the terms cosine **distance** and **similarity**. Recall that cosine similarity is between -1 and 1, where -1 means "semantically opposite" and 1 means "semantically identical." So, `similarity = 1 - distance`.
 
 The upshot is that a query ordered by distance ascending returns the least distant (most similar) results first, while a query ordered by similarity descending returns the most similar (least distant) results first.
 

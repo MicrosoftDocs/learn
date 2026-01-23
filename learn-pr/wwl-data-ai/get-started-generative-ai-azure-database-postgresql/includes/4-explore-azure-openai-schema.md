@@ -4,22 +4,35 @@ The `azure_openai` schema installed by the `azure_ai` extension allows you to co
 
 ## Create embeddings
 
-With the `azure_openai` schema, you can call the `create_embeddings()` function, which generates vector embeddings from within the database layer. These embeddings allow efficient storage, indexing, and querying of high-dimensional vectors. The function can take on two forms:
+With the `azure_openai` schema, you can call the `create_embeddings()` function, which generates vector embeddings from within the database layer. These embeddings allow efficient storage, indexing, and querying of high-dimensional vectors. The function can take text input or an array of text values, depending on how many items you want to embed at once.
 
-- `azure_openai.create_embeddings(text,text,integer,boolean,integer,integer)`
-- `azure_openai.create_embeddings(text,text[],integer,integer,boolean,integer,integer)`
+The function requires you to:
 
-The following table describes the arguments expected by the function:
+- specify the embedding deployment name,
+- supply the input text or array of text,
+- let the function return the embedding vector as `vector` or `vector[]`.
 
-| Argument | Type | Default | Description |
-| -------- | ---- | ------- | ----------- |
-| deployment_name | `text` || Name of the embedding model deployment in Azure OpenAI studio. This name typically refers to a deployment of the `text-embeddings-ada-002` model. |
-| input | `text` or `text[]` || Input text (or array of input text) for which vector embeddings are created. |
-| batch_size | `integer` | `100` | Only applies when the `input` argument is an array of `text` values. `batch_size` specifies the number of records from the array to process simultaneously. |
-| timeout_ms | `integer` | `NULL::integer` | Timeout in milliseconds after which the operation is stopped. |
-| throw_on_error | `boolean` | `true` | Flag indicating whether the function should, on error, throw an exception, resulting in a rollback of the wrapping transactions. |
-| max_attempts | `integer` | `1` | Number of times to retry the call to Azure OpenAI service in the event of a failure. |
-| retry_delay_ms | `integer` | `1000` | Amount of time, in milliseconds, to wait before attempting to retry calling the Azure OpenAI service endpoint. |
+Example:
+
+    ```sql
+    SELECT azure_openai.create_embeddings(
+    '{your-deployment-name}',
+    'Sample text to embed'
+    );
+    ```
+
+When passing multiple input values, the function returns an array of vectors:
+
+    ```sql
+    SELECT azure_openai.create_embeddings(
+    '{your-deployment-name}',
+    ARRAY['First text', 'Second text']
+    );
+    ```
+
+The function handles batching internally based on the number of items supplied.
+
+
 
 ## Configure a connection to Azure OpenAI
 

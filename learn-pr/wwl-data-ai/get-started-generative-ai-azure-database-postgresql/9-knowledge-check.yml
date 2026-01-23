@@ -6,7 +6,7 @@ metadata:
   description: Knowledge check
   author: wwlpublish
   ms.author: calopez
-  ms.date: 11/24/2024
+  ms.date: 10/05/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
@@ -22,7 +22,7 @@ quiz:
     - content: "A class of algorithms capable of learning from existing data and producing new content."
       isCorrect: true
       explanation: "Correct. GenAI refers to a class of Artificial Intelligence algorithms that learn from existing multimedia content and generate new content. It can be customized using techniques like prompts and fine-tuning."
-    - content: "A type of database extension for PostgreSQL used for interacting with Microsoft Foundry."
+    - content: "A type of database extension for PostgreSQL used for interacting with Azure AI Services."
       isCorrect: false
       explanation: "Incorrect. This statement isn't accurate; GenAI isn't an extension for PostgreSQL."
     - content: "A security feature that prevents unauthorized access to the database."
@@ -30,7 +30,7 @@ quiz:
       explanation: "Incorrect. GenAI isn't a security feature; it focuses on content generation."
   - content: "What is the purpose of the azure_ai extension in Azure Database for PostgreSQL?"
     choices:
-    - content: "To enhance database security using Foundry Tools."
+    - content: "To enhance database security using Azure AI Services."
       isCorrect: false
       explanation: "Incorrect. While security is essential, the extension's primary purpose isn't related to enhanced security."
     - content: "To enable generative AI language models to be integrated directly within the database."
