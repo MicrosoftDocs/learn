@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-ai-workloads.knowledge-check
+title: "Knowledge check"
+metadata:
+  title: "Knowledge check"
+  description: "Knowledge check"
+  ms.date: 01/09/2026
+  author: wwlpublish
+  ms.author: cynthist
+  ms.topic: unit
+  module_assessment: true
+durationInMinutes: 3
+content: |
+  [!include[](includes/9-knowledge-check.md)]
+quiz:
+  questions:
+  - content: "A healthcare organization is building a custom AI model to analyze MRI images. The solution must meet strict regulatory requirements, support custom operating systems and AI frameworks, and run in a fully isolated environment. The organization is willing to accept higher operational overhead in exchange for maximum control. Which Azure service model should the team choose?"
+    choices:
+    - content: "SaaS, because it provides built-in governance and minimal setup"
+      isCorrect: false
+      explanation: "Incorrect. SaaS focuses on ease of use and productivity, not model training."
+    - content: "PaaS, because it reduces operational overhead while supporting AI workloads"
+      isCorrect: false
+      explanation: "Incorrect. PaaS reduces infrastructure management but does not provide the level of control required for this scenario."
+    - content: "IaaS, because it provides full control over infrastructure, isolation, and compliance"
+      isCorrect: true
+      explanation: "Correct. IaaS is the best choice when workloads require strict isolation, custom configurations, and full infrastructure control—common in regulated industries like healthcare."
+  - content: "An enterprise wants to roll out AI initiatives across multiple departments. Leadership is concerned about skill gaps, data readiness, and investing in AI projects that don't deliver business value. What is the primary purpose of creating an AI adoption plan in this scenario?"
+    choices:
+    - content: "To standardize all AI workloads on a single Azure service model"
+      isCorrect: false
+      explanation: "Incorrect. Forcing all workloads onto one service model limits flexibility and increases risk."
+    - content: "To prioritize AI use cases, assess readiness, and validate solutions"
+      isCorrect: true
+      explanation: "Correct. An AI adoption plan helps reduce risk by ensuring the organization is technically and operationally ready before scaling AI solutions."
+    - content: "To eliminate the need for governance and compliance processes"
+      isCorrect: false
+      explanation: "Incorrect. Adoption plans complement governance—it does not replace it."
+  - content: "A company is building a customer facing AI application with Azure AI services. The solution processes sensitive internal data and must minimize exposure to external threats while meeting enterprise security standards. Which approach best helps secure the AI workload and reduce data exposure risk?"
+    choices:
+    - content: "Deploy AI services with public endpoints for easier access"
+      isCorrect: false
+      explanation: "Incorrect. Public endpoints increase exposure to attacks."
+    - content: "Allow unrestricted access to AI data for faster development"
+      isCorrect: false
+      explanation: "Incorrect. Unrestricted data access significantly increases security and compliance risk."
+    - content: "Use private endpoints, role based access control, and encryption for AI resources and data"
+      isCorrect: true
+      explanation: "Correct. Private networking, identity based access, and encryption protect AI data and services from unauthorized access and reduce attack surface."

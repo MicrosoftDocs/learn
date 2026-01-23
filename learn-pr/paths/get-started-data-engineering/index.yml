@@ -25,6 +25,5 @@ subjects:
 modules:
 - learn.wwl.introduction-data-engineering-azure
 - learn.data-ai.introduction-to-azure-data-lake-storage
-- learn.wwl.introduction-to-azure-synapse-analytics
 trophy:
   uid: learn.data-ai.get-started-data-engineering-trophy.trophy

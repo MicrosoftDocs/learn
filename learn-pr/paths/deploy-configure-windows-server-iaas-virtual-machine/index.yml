@@ -3,9 +3,9 @@ uid: learn.wwl.deploy-configure-windows-server-iaas-vm
 metadata:
   title: Deploy and configure Windows Server IaaS Virtual Machine
   description: In this learning path, you’ll learn how to deploy and configure Azure IaaS Virtual Machine workloads. After completing the learning path, you’ll know how to plan, deploy, and upgrade Windows Server Azure Virtual Machines.
-  ms.date: 01/24/2023
+  ms.date: 01/23/2026
   author: wwlpublish
-  ms.author: tonyj
+  ms.author: robbarefoot
   ms.topic: learning-path
 title: Deploy and configure Windows Server IaaS Virtual Machine
 prerequisites: |

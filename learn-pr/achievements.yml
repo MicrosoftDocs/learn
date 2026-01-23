@@ -7425,4 +7425,158 @@ achievements:
   title: Create and understand classification models in machine learning
   summary: Classification means assigning items into categories, or can also be thought of automated decision making. Here we introduce classification models through logistic regression, providing you with a stepping-stone toward more complex and exciting classification methods.
   iconUrl: /training/achievements/machine-learning/understand-classification-machine-learning.svg
-  
+- uid: learn.azdo.deploy-applications-with-azure-devops.trophy
+  type: trophy
+  title: Deploy applications with Azure DevOps learning path
+  summary: Azure DevOps enables you to build, test, and deploy any application to any cloud or on premises. Learn how to configure release pipelines that continuously build, test, and deploy your applications.
+  iconUrl: /training/achievements/azure-devops/deploy-applications-with-azure-devops.svg
+- uid: learn.azdo.create-multi-stage-pipeline.badge
+  type: badge
+  title: Create a Multistage Pipeline by Using Azure Pipelines
+  summary: Design and create a realistic release pipeline that promotes changes to various testing and staging environments.
+  iconUrl: /training/achievements/azure-devops/create-multi-stage-pipeline.svg
+- uid: learn.azdo.run-functional-tests-azure-pipelines.badge
+  type: badge
+  title: Run Functional Tests in Azure Pipelines
+  summary: Run Selenium UI tests, a form of functional testing, in Azure Pipelines.
+  iconUrl: /training/achievements/azure-devops/run-functional-tests-azure-pipelines.svg
+- uid: learn.azdo.run-non-functional-tests-azure-pipelines.badge
+  type: badge
+  title: Run Non-Functional Tests in Azure Pipelines
+  summary: Run automated load tests by using Apache JMeter, a form of nonfunctional testing, in Azure Pipelines.
+  iconUrl: /training/achievements/azure-devops/run-non-functional-tests-azure-pipelines.svg
+- uid: learn.azdo.manage-release-cadence.badge
+  type: badge
+  title: Manage Release Cadence in Azure Pipelines by Using Deployment Patterns
+  summary: Choose and implement a deployment pattern that helps you smoothly roll out new application features to your users.
+  iconUrl: /training/achievements/azure-devops/manage-release-cadence-using-deployment-patterns.svg
+- uid: learn.azdo.deploy-azure-functions.badge
+  type: badge
+  title: Automate Azure Functions deployments with Azure Pipelines
+  summary: Create an Azure DevOps pipeline that builds and deploys an ASP.NET web app and an Azure Function app to Azure.
+  iconUrl: /training/achievements/azure-devops/deploy-azure-functions.svg
+- uid: learn.azdo.deploy-docker.badge
+  type: badge
+  title: Automate Docker Container Deployments with Azure Pipeline
+  summary: Use Azure Pipelines to deploy Docker containers to Azure App Service.
+  iconUrl: /training/achievements/azure-devops/deploy-docker.svg
+- uid: learn.azdo.deploy-kubernetes.badge
+  type: badge
+  title: Automate multi-container Kubernetes deployments with Azure Pipelines
+  summary: Deploy multiple containers to an Azure Kubernetes Service cluster with Azure Pipelines.
+  iconUrl: /training/achievements/azure-devops/deploy-kubernetes.svg
+- uid: learn.wwl.build-data-analytics-solutions.trophy
+  type: trophy
+  title: Build data analytics solutions using Azure Synapse serverless SQL pools
+  summary: Learn to build data analytics solutions using Azure Synapse serverless SQL pools
+  iconUrl: /training/achievements/build-data-analytics-solutions-social.png
+- uid: learn.wwl.build-data-pipeline-azure-synapse-analytics.badge
+  type: badge
+  title: Build a data pipeline in Azure Synapse Analytics
+  summary: Learn to build a data pipeline in Azure Synapse Analytics
+  iconUrl: /training/achievements/generic-badge-social.png
+- uid: learn.wwl.configure-azure-synapse-link-with-azure-cosmos-db.badge
+  type: badge
+  title: Implement Azure Synapse Link with Azure Cosmos DB
+  summary: Learn to implement Azure Synapse Link with Azure Cosmos DB
+  iconUrl: /training/achievements/configure-azure-synapse-link-with-azure-cosmos-db-social.png
+- uid: learn.wwl.create-metadata-objects-azure-synapse-serverless-sql-pools.badge
+  type: badge
+  title: Create a lake database in Azure Synapse Analytics
+  summary: Learn to create a lake database in Azure Synapse Analytics
+  iconUrl: /training/achievements/create-metadata-objects-in-azure-synapse-serverless-sql-pools-social.png
+- uid: learn.wwl.design-hybrid-transactional-analytical-processing.badge
+  type: badge
+  title: Plan hybrid transactional and analytical processing using Azure Synapse Analytics
+  summary: Learn to plan hybrid transactional and analytical processing using Azure Synapse Analytics
+  iconUrl: /training/achievements/design-a-hybrid-transactional-and-analytical-processing-social.png
+- uid: learn.wwl.design-multidimensional-schema-to-optimize-analytical-workloads.badge
+  type: badge
+  title: Analyze data in a relational data warehouse
+  summary: Learn to analyze data in a relational data warehouse
+  iconUrl: /learn/achievements/azure-synapse-analytics-multi-dimensional-schema-social.png
+- uid: learn.wwl.implement-synapse-link-for-sql.badge
+  type: badge
+  title: Implement Azure Synapse Link for SQL
+  summary: Learn to implement Azure Synapse Link for SQL
+  iconUrl: /training/achievements/implement-synapse-link-for-sql-social.png
+- uid: learn.wwl.introduction-to-azure-synapse-analytics.badge
+  type: badge
+  title: Introduction to Azure Synapse Analytics
+  summary: Get introduced to Azure Synapse Analytics
+  iconUrl: /training/achievements/introduction-to-azure-synapse-analytics-social.png
+- uid: learn.wwl.load-optimize-data-into-relational-data-warehouse.badge
+  type: badge
+  title: Load data into a relational data warehouse
+  summary: Learn to load data into a relational data warehouse
+  iconUrl: /training/achievements/generic-badge-social.png
+- uid: learn.wwl.manage-monitor-data-warehouse-activities.badge
+  type: badge
+  title: Manage and monitor data warehouse activities in Azure Synapse Analytics
+  summary: Learn to manage and monitor data warehouse activities in Azure Synapse Analytics
+  iconUrl: /training/achievements/manage-monitor-data-warehouse-activities-social.png
+- uid: learn.wwl.perform-data-engineering-with-azure-synapse-apache-spark-pools.trophy
+  type: trophy
+  title: Perform data engineering with Azure Synapse Apache Spark Pools
+  summary: Learn to perform data engineering with Azure Synapse Apache Spark Pools
+  iconUrl: /learn/achievements/perform-data-engineering-with-azure-synapse-apache-spark-pools-social.png
+- uid: learn.wwl.query-data-lake-using-azure-synapse-serverless-sql-pools.badge
+  type: badge
+  title: Use Azure Synapse serverless SQL pool to query files in a data lake
+  summary: Learn to use Azure Synapse serverless SQL pool to query files in a data lake
+  iconUrl: /training/achievements/query-data-in-the-lake-using-azure-synapse-serverless-sql-pools-social.png
+- uid: learn.wwl.secure-data-manage-users-azure-synapse-serverless-sql-pools.badge
+  type: badge
+  title: Secure data and manage users in Azure Synapse serverless SQL pools
+  summary: Learn to secure data and manage users in Azure Synapse serverless SQL pools
+  iconUrl: /training/achievements/secure-data-and-manage-users-in-azure-synapse-serverless-sql-pools-social.png
+- uid: learn.wwl.secure-data-warehouse-azure-synapse-analytics.badge
+  type: badge
+  title: Secure a data warehouse in Azure Synapse Analytics
+  summary: Learn to secure a data warehouse in Azure Synapse Analytics
+  iconUrl: /training/achievements/secure-a-data-warehouse-in-azure-synapse-analytics-social.png
+- uid: learn.wwl.transfer-transform-data-azure-synapse-analytics-pipelines.trophy
+  type: trophy
+  title: Transfer and transform data with Azure Synapse Analytics pipelines
+  summary: Learn to transfer and transform data with Azure Synapse Analytics pipelines
+  iconUrl: /training/achievements/generic-trophy-social.png
+- uid: learn.wwl.transform-data-spark-azure-synapse-analytics.badge
+  type: badge
+  title: Transform data with Spark in Azure Synapse Analytics
+  summary: Learn to transform data with Spark in Azure Synapse Analytics
+  iconUrl: /training/achievements/generic-badge-social.png
+- uid: learn.wwl.understand-big-data-engineering-with-apache-spark-azure-synapse-analytics.badge
+  type: badge
+  title: Analyze data with Apache Spark in Azure Synapse Analytics
+  summary: Learn to analyze data with Apache Spark in Azure Synapse Analytics
+  iconUrl: /training/achievements/understand-big-data-engineering-apache-spark-azure-synapse-analytics-social.png
+- uid: learn.wwl.use-azure-synapse-serverless-sql-pools-for-transforming-data-lake.badge
+  type: badge
+  title: Use Azure Synapse serverless SQL pools to transform data in a data lake
+  summary: Learn to use Azure Synapse serverless SQL pools to transform data in a data lake
+  iconUrl: /training/achievements/use-azure-synapse-serverless-sql-pools-for-transforming-the-data-in-the-lake-social.png
+- uid: learn.wwl.use-delta-lake-azure-synapse-analytics.badge
+  type: badge
+  title: Use Delta Lake in Azure Synapse Analytics
+  summary: Learn to use Delta Lake in Azure Synapse Analytics
+  iconUrl: /training/achievements/use-delta-lake-azure-synapse-analytics-social.png
+- uid: learn.wwl.use-spark-notebooks-azure-synapse-pipeline.badge
+  type: badge
+  title: Use Spark Notebooks in an Azure Synapse Pipeline
+  summary: Learn to use Spark Notebooks in an Azure Synapse Pipeline
+  iconUrl: /training/achievements/generic-badge-social.png
+- uid: learn.wwl.work-hybrid-transactional-analytical-processing-solutions.trophy
+  type: trophy
+  title: Work with Hybrid Transactional and Analytical Processing Solutions using Azure Synapse Analytics
+  summary: Learn to work with Hybrid Transactional and Analytical Processing Solutions using Azure Synapse Analytics
+  iconUrl: /training/achievements/work-hybrid-transactional-analytical-processing-solutions-social.png
+- uid: learn.wwl.work-with-data-warehouses-using-azure-synapse-analytics.trophy
+  type: trophy
+  title: Work with Data Warehouses using Azure Synapse Analytics
+  summary: Learn to work with Data Warehouses using Azure Synapse Analytics
+  iconUrl: /training/achievements/work-with-data-warehouses-using-azure-synapse-analytics-social.png
+- uid: learn.wwl.describe-verified-id-concepts.badge
+  type: badge 
+  title: Describe Microsoft Entra Verified ID concepts
+  summary: Learn the core concepts of decentralized identities and Microsoft Entra Verified ID.
+  iconUrl: /training/achievements/generic-badge.svg

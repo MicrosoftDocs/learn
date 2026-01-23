@@ -3,9 +3,9 @@ uid: learn.wwl.manage-persistent-connections-to-remote-computers
 metadata:
   title: Manage persistent connections to remote computers by using Windows PowerShell sessions
   description: "This module explains how to establish and manage persistent connections to remote computers, known as Windows PowerShell sessions or PSSessions."
-  ms.date: 03/21/2024
+  ms.date: 01/23/2026
   author: wwlpublish
-  ms.author: tonyj
+  ms.author: robbarefoot
   ms.topic: module-standard-task-based
   ms.custom:
   - N/A

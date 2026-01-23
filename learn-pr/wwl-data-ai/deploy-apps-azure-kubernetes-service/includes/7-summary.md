@@ -5,4 +5,4 @@ In this module, you learned how to create Kubernetes Deployment manifests. These
 - [Azure Kubernetes Service documentation](/azure/aks/) - Comprehensive AKS guides and best practices
 - [Kubernetes official documentation](https://kubernetes.io/docs/) - Complete Kubernetes reference and concepts
 - [kubectl cheat sheet](https://kubernetes.io/docs/reference/kubectl/cheatsheet/) - Quick reference for kubectl commands
-- [AKS best practices](/azure/aks/operator-best-practices) - Production-ready practices for running applications on AKS
+- [AKS best practices](/azure/aks/best-practices) - Production-ready practices for running applications on AKS

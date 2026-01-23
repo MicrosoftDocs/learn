@@ -21,9 +21,15 @@ Most relational database use cases don't involve storing *n*-dimensional vectors
 
 ![A diagram showing a document and a query going through the OpenAI Embeddings API to become embedding vectors. These vectors are then compared using cosine distance.](../media/cosine-distance.png)
 
+## Vectors
+
+Before we talk about embeddings, it helps to understand what a **vector** is in this context. A vector is just an ordered list of numbers, often written as an array like `[0.12, -0.8, 3.4]`. You can think of a vector as a point or an arrow in an *n*-dimensional space, where each number is a coordinate along one dimension.
+
+In two dimensions, a vector might represent a position on a flat map (x, y). In three dimensions, it could represent a point in physical space (x, y, z). For embeddings, we extend this idea to hundreds or thousands of dimensions. Each dimension encodes some learned property or feature, and together those numbers capture information about the original data. Once text, images, or other data are turned into vectors, you can compare them mathematically to measure how similar or different they are.
+
 ## Embeddings
 
-An **embedding** is a numerical representation of semantics. Embeddings are represented as *n*-dimensional vectors: arrays of *n* numbers. Each dimension represents some semantic quality as determined by the embedding model.
+An **embedding** is a specific type of vector that represents semantics. Embeddings are represented as *n*-dimensional vectors: arrays of *n* numbers. Each dimension represents some semantic quality as determined by the embedding model.
 
 ![A diagram showing "lorem ipsum" input text being sent to the Azure OpenAI embeddings API, resulting in a vector array of numbers.](../media/create-embedding.png)
 
@@ -31,7 +37,7 @@ If two embedding vectors point in similar directions, they represent similar con
 
 Embeddings can be applied to text and any kind of data, such as images or audio. The critical part is transforming data into *n*-dimensional embedding vectors based on some model or function. The numerical similarity of embeddings proxies the semantic similarity of their corresponding data.
 
-The numerical similarity of two *n*-dimensional vectors `v1` and `v2` is given by their [dot product](https://en.wikipedia.org/wiki/Dot_product), written `v1·v2`. To compute the dot product, multiply each dimension's values pair-wise, then sum the result:
+The numerical similarity of two *n*-dimensional vectors `v1` and `v2` gives their [dot product](https://en.wikipedia.org/wiki/Dot_product), written `v1·v2`. To compute the dot product, multiply each dimension's values pair-wise, then sum the result:
 
 ```sql
 dot_product(v1, v2) = SUM(
@@ -45,7 +51,7 @@ dot_product(v1, v2) = SUM(
 
 Because the embeddings are unit vectors (vectors of length one), the dot product is equal to the vectors' [cosine similarity](https://en.wikipedia.org/wiki/Cosine_similarity), a value between -1 (precisely opposite directions) and 1 (exactly the same direction). Vectors with a cosine similarity of zero are orthogonal: semantically unrelated.
 
-You can visualize *n*-dimensional spaces by projecting them to 3-dimensional space using [principal component analysis](https://en.wikipedia.org/wiki/Principal_component_analysis) (PCA). PCA is a standard technique to reduce vector dimensions. The result is a simplified but visualizable projection of the *n*-dimensional space. Rendering your document embeddings this way will show that more similar documents are grouped in clusters while more different documents are further away.
+You can visualize *n*-dimensional spaces by projecting them to three-dimensional space using [principal component analysis](https://en.wikipedia.org/wiki/Principal_component_analysis) (PCA). PCA is a standard technique to reduce vector dimensions. The result is a simplified but visualizable projection of the *n*-dimensional space. Rendering your document embeddings this way shows that more similar documents are grouped in clusters while more different documents are further away.
 
 Given these definitions, performing a semantic search of a query against a collection of document embeddings is straightforward mathematically:
 
@@ -54,7 +60,7 @@ Given these definitions, performing a semantic search of a query against a colle
 1. Sort the dot products, numbers from -1 to 1.
 1. The most relevant (semantically similar) documents have the highest scores, and the least relevant (semantically different) documents have the lowest scores.
 
-While simple mathematically, this isn't a simple or performant query in a relational database. To store and process this kind of vector similarity query, use a **vector database**.
+While simple mathematically, this solution isn't a simple or performant query in a relational database. To store and process this kind of vector similarity query, use a **vector database**.
 
 ## Vector databases
 

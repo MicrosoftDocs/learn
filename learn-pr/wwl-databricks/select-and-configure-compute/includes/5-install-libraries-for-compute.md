@@ -2,6 +2,8 @@ When you run notebooks and jobs on Azure Databricks compute, you often need thir
 
 Understanding how to install libraries effectively becomes critical as your data engineering workflows grow in complexity. You need to know which installation method to use, where to store library files, and how access modes affect your options.
 
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=99e9c9ea-b4e0-4c5d-9e45-ddec74896dc6]
+
 ## Understand compute-scoped libraries
 
 **Compute-scoped libraries** install on a cluster and become available to all notebooks and jobs that run on that cluster. Unlike **notebook-scoped libraries** that install only for a specific notebook session, compute-scoped libraries persist across cluster restarts and provide a shared environment for all users.
@@ -29,14 +31,16 @@ Maven libraries require **coordinates** in the format `groupId:artifactId:versio
 
 For R packages from CRAN, provide the package name. Unlike Python and Java libraries, CRAN installations always pull the latest version from the configured mirror. To pin specific R package versions, you need to store the package files in workspace files or volumes instead of installing from CRAN.
 
-With clusters configured in **standard access mode**, Maven coordinates and JAR file paths require **allowlist approval** before installation. This security measure ensures admins review and approve libraries that run on shared compute resources.
+With clusters configured in **standard access mode**, Maven coordinates and JAR file paths require **`allowlist` approval** before installation. This security measure ensures admins review and approve libraries that run on shared compute resources.
 
 > [!NOTE]
-> To learn more about configuring and managing allowlists for libraries, see the [documentation](/azure/databricks/data-governance/unity-catalog/manage-privileges/allowlist).
+> To learn more about configuring and managing `allowlists` for libraries, see the [documentation](/azure/databricks/data-governance/unity-catalog/manage-privileges/allowlist).
 
 ## Install libraries from files
 
 Storing library files in **workspace files** or **Unity Catalog volumes** gives you precise control over which library versions your clusters use. This approach works well when you need libraries not available in public repositories, custom packages you've built internally, or specific versions no longer available from package repositories.
+
+Using workspace files and Unity Catalog volumes for library installation maintains centralized management rather than bypassing security controls with ad-hoc installations like direct pip3 commands or unmanaged custom scripts executed from notebooks. Unity Catalog volumes provide enhanced governance through Unity Catalog's access control model, ensuring that all library installations are tracked with audit logs and protected by fine-grained permissions.
 
 Workspace files provide a convenient location for library storage with a 500 MB file size limit. To install a library from workspace files, upload your wheel, JAR, or requirements.txt file through the workspace Import dialog, then reference it during library installation using a path like `/Workspace/Users/you@example.com/libraries/mypackage-1.0.0-py3-none-any.whl`.
 
@@ -48,7 +52,7 @@ Unity Catalog volumes offer enhanced security and governance for library storage
 
 Python **requirements.txt files** work with both workspace files and volumes in Databricks Runtime 15.0 and above. These files let you define multiple package dependencies in a single file, making it easier to maintain consistent environments across clusters. Upload the requirements.txt file and install it just like any other library—Azure Databricks automatically installs all listed packages.
 
-For clusters with standard access mode, you must add library file paths to the allowlist before installation. This applies to both workspace files and volumes, ensuring admins approve the libraries used on shared compute.
+For clusters with standard access mode, you must add library file paths to the `allowlist` before installation. This applies to both workspace files and volumes, ensuring admins approve the libraries used on shared compute.
 
 ## Use init scripts for advanced configuration
 
@@ -56,7 +60,7 @@ For clusters with standard access mode, you must add library file paths to the a
 
 You might use init scripts to install system packages with `apt-get`, configure environment variables, or set up monitoring agents. For example, an init script could install a specialized database driver that requires system libraries, then configure connection parameters through environment variables. The script runs every time the cluster starts, ensuring your configuration persists across restarts.
 
-Store init scripts in Unity Catalog volumes for clusters running Databricks Runtime 13.3 LTS and above. Create a shell script file, upload it to a volume, then configure the cluster to run the script by specifying its path like `/Volumes/main/engineering/scripts/setup.sh`. For standard access mode, add the init script path to the allowlist before configuring the cluster.
+Store init scripts in Unity Catalog volumes for clusters running Databricks Runtime 13.3 LTS and above. Create a shell script file, upload it to a volume, then configure the cluster to run the script by specifying its path like `/Volumes/main/engineering/scripts/setup.sh`. For standard access mode, add the init script path to the `allowlist` before configuring the cluster.
 
 Init scripts execute sequentially in the order you specify. If any script returns a non-zero exit code, the cluster fails to start. This failure protection prevents clusters from running with incomplete or incorrect configuration. You can troubleshoot failed init scripts by configuring cluster log delivery and examining the init script logs.
 
@@ -66,13 +70,13 @@ Consider init scripts as a last resort for configuration needs that cluster-scop
 
 Clusters configured with **standard access mode** provide the strongest security and isolation in Azure Databricks. This mode requires explicit approval for libraries and init scripts to prevent unauthorized code execution on shared compute resources.
 
-Before installing Maven libraries or JAR files on standard access mode clusters, a **metastore admin** must add them to the allowlist. Maven coordinates go on the allowlist using the format `groupId:artifactId:version`. You can allowlist all versions of a library with `groupId:artifactId`, or all artifacts in a group with just `groupId`. For JAR files stored in volumes or object storage, allowlist the file path or directory path.
+Before installing Maven libraries or JAR files on standard access mode clusters, a **metastore admin** must add them to the `allowlist`. Maven coordinates go on the `allowlist` using the format `groupId:artifactId:version`. You can `allowlist` all versions of a library with `groupId:artifactId`, or all artifacts in a group with just `groupId`. For JAR files stored in volumes or object storage, `allowlist` the file path or directory path.
 
-Init scripts require separate allowlist entries even if stored in the same location as JAR files. When allowlisting a path, Azure Databricks uses prefix matching—adding `/Volumes/prod-libraries/` to the allowlist permits all files and subdirectories within that location. Include a trailing slash to prevent unintended prefix matches at the directory level.
+Init scripts require separate `allowlist` entries even if stored in the same location as JAR files. When allow listing a path, Azure Databricks uses prefix matching—adding `/Volumes/prod-libraries/` to the `allowlist` permits all files and subdirectories within that location. Include a trailing slash to prevent unintended prefix matches at the directory level.
 
-The allowlist only grants permission to use a path for library or init script installation. You still need appropriate data access permissions. For volumes, the installer identity must have `READ VOLUME` permission. For standard access mode, the cluster owner's identity validates these permissions during library installation.
+The `allowlist` only grants permission to use a path for library or init script installation. You still need appropriate data access permissions. For volumes, the installer identity must have `READ VOLUME` permission. For standard access mode, the cluster owner's identity validates these permissions during library installation.
 
-To configure the allowlist, metastore admins use Catalog Explorer, selecting the metastore settings and navigating to the **Allowed JARs/Init Scripts** section. This centralized control ensures that security teams can review and approve all libraries used across the organization's compute resources, maintaining governance without blocking productivity.
+To configure the `allowlist`, metastore admins use Catalog Explorer, selecting the metastore settings and navigating to the **Allowed JARs/Init Scripts** section. This centralized control ensures that security teams can review and approve all libraries used across the organization's compute resources, maintaining governance without blocking productivity.
 
 ![Screenshot of the Add allowed JARs / Init Scripts / Maven Coordinates dialog box.](../media/allow-list.png)
 
