@@ -2,7 +2,7 @@ Managing access to compute resources protects sensitive data while enabling coll
 
 Proper access configuration prevents unauthorized users from viewing driver logs containing secrets, controls who can consume compute resources, and ensures teams work efficiently without conflicting infrastructure changes. With **Unity Catalog** enabled, you can assign compute resources to entire groups with automatic permission scoping.
 
->[!VIDEO https://learn-video.azurefd.net/vod/player?id=13]
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=9e278d18-d7c4-4f61-9d3a-82ffde775682]
 
 ## Understand compute permission levels
 
