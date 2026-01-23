@@ -7580,3 +7580,18 @@ achievements:
   title: Describe Microsoft Entra Verified ID concepts
   summary: Learn the core concepts of decentralized identities and Microsoft Entra Verified ID.
   iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.powershell.powershell.trophy
+  type: trophy 
+  title: Automate administrative tasks by using PowerShell
+  summary: PowerShell can be used to automate tasks such as user management, CI/CD, managing cloud resources and much more. You'll learn to run commands, how to learn more about PowerShell and additionally to create and run script files.
+  iconUrl: /training/achievements/powershell/powershell.svg
+- uid: learn.powershell.intro-to-powershell.badge
+  type: badge 
+  title: Introduction to PowerShell
+  summary: Learn about the basics of PowerShell, a cross-platform command-line shell and scripting language that's built for task automation and configuration management. Learn what PowerShell is, what it's used for, and how to use it.
+  iconUrl: /training/achievements/powershell/introduction-to-powershell.svg
+- uid: learn.discover-commands.badge
+  type: badge 
+  title: Discover commands in PowerShell
+  summary: PowerShell comes with a built-in help system. Use help to read more about a command, what the command does, and how to call it. Also, if you inspect what a command returns, you can use that information to customize the output, determine what commands are logically grouped, and determine how to use the commands together. 
+  iconUrl: /training/achievements/powershell/discover-commands.svg
