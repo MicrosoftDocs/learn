@@ -3,9 +3,9 @@ uid: learn.wwl.prepare-onpremises-workloads-migration-azure
 metadata:
   title: Prepare on-premises workloads for migration to Azure
   description: "Prepare on-premises workloads for migration to Azure"
-  ms.date: 09/25/2020
+  ms.date: 01/23/2026
   author: wwlpublish
-  ms.author: tonyj
+  ms.author: robbarefoot
   ms.topic: module
   ms.service: azure 
 title: Prepare on-premises workloads for migration to Azure
@@ -40,4 +40,4 @@ units:
 - learn.wwl.prepare-onpremises-workloads-migration-azure.summary
 badge:
   uid: learn.wwl.prepare-onpremises-workloads-migration-azure.badge
-
+
