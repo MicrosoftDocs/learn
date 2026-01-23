@@ -3,9 +3,9 @@ uid: learn.wwl.deploy-manage-azure-iaas-active-directory-domain-controllers-azur
 metadata:
   title: Deploy and manage Azure IaaS Active Directory domain controllers in Azure
   description: "Learn to deploy and manage Azure IaaS Active Directory domain controllers in Azure."
-  ms.date: 06/20/2024
+  ms.date: 01/23/2026
   author: wwlpublish
-  ms.author: tonyj
+  ms.author: robbarefoot
   ms.topic: module-standard-task-based
   ms.custom:
   - N/A
@@ -68,4 +68,4 @@ units:
 - learn.wwl.deploy-manage-azure-iaas-active-directory-domain-controllers-azure.knowledge-check
 - learn.wwl.deploy-manage-azure-iaas-active-directory-domain-controllers-azure.summary
 badge:
-  uid: learn.wwl.deploy-manage-azure-iaas-active-directory-domain-controllers-azure.badge
+  uid: learn.wwl.deploy-manage-azure-iaas-active-directory-domain-controllers-azure.badge

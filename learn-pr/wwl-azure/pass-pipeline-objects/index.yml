@@ -3,9 +3,9 @@ uid: learn.wwl.pass-pipeline-objects
 metadata:
   title: Pass pipeline objects
   description: This module explains how the Windows PowerShell command-line interface passes objects from one command to another in the pipeline.
-  ms.date: 03/22/2024
+  ms.date: 01/23/2026
   author: wwlpublish
-  ms.author: tonyj
+  ms.author: robbarefoot
   ms.topic: module
   ms.custom:
   - N/A

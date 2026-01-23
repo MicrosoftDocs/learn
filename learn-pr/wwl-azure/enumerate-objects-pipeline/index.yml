@@ -3,9 +3,9 @@ uid: learn.wwl.enumerate-objects-pipeline
 metadata:
   title: Enumerate objects in the pipeline
   description: "This module explains how to enumerate objects in the pipeline so that you can work with one object at a time during automation."
-  ms.date: 03/21/2024
+  ms.date: 01/23/2026
   author: wwlpublish
-  ms.author: tonyj
+  ms.author: robbarefoot
   ms.topic: module-standard-task-based
   ms.custom:
   - N/A
