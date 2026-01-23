@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.design-solutions-microsoft-cybersecurity-cloud-security-benchmark.introduction-cloud-security-benchmark
+uid: learn.wwl.design-solutions-microsoft-cybersecurity-cloud-security-benchmark.describe-microsoft-cloud-security-benchmark
 title: Describe the Microsoft Cloud Security Benchmark
 metadata:
   title: Describe the Microsoft Cloud Security Benchmark
@@ -10,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 10
 content: |
-  [!include[](includes/1a-describe-cloud-security-benchmark.md)]
+  [!include[](includes/1a-describe-microsoft-cloud-security-benchmark.md)]
