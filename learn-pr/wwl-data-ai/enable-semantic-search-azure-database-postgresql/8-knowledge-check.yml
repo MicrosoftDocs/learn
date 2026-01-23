@@ -2,20 +2,14 @@
 uid: learn.wwl.enable-semantic-search-azure-database-postgresql.knowledge-check
 title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Module assessment
   description: "Knowledge check"
-  ms.date: 04/23/2025
+  ms.date: 10/24/2025
   author: wwlpublish
   ms.author: calopez
   ms.topic: unit
-  ms.custom:
-  - N/A
   module_assessment: true
 durationInMinutes: 3
-content: |
-  [!include[](includes/8-knowledge-check.md)]
 quiz:
   title: "Check your knowledge"
   questions:
