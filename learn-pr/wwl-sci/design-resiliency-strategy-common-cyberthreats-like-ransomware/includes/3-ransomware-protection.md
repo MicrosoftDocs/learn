@@ -13,7 +13,7 @@ This phase is designed to minimize the monetary incentive from ransomware attack
 - Easier for your organization to recover from an attack without paying the ransom.
 
 >[!Note]
->While restoring many or all enterprise systems is a difficult endeavor, the alternative of paying an attacker for a recovery key they may or may not deliver, and using tools written by the attackers to try to recover systems and data.
+>While restoring many or all enterprise systems is a difficult endeavor, the alternative is paying an attacker for a recovery key they may or may not deliver, and using tools written by the attackers to try to recover systems and data. Don't fall into that trap.
 >
 
 ## Phase 2. Limit the scope of damage
