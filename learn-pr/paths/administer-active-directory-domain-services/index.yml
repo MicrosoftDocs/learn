@@ -3,9 +3,9 @@ uid: learn.wwl.administer-active-directory-domain-services
 metadata:
   title: Administer Active Directory Domain Services AZ-1008
   description: This learning path helps prepare you for the APL-1008 Administer Active Directory Domain Services modern credential. You'll learn how to create, deploy, and maintain an Active Directory Domain Services environment. (AZ-1008)
-  ms.date: 06/20/2024
+  ms.date: 01/23/2026
   author: wwlpublish
-  ms.author: tonyj
+  ms.author: robbarefoot
   ms.topic: learning-path
 title: Administer Active Directory Domain Services
 prerequisites: |

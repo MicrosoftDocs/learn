@@ -3,9 +3,9 @@ uid: learn.wwl.use-advanced-windows-powershell-remoting-techniques
 metadata:
   title: Use advanced Windows PowerShell remoting techniques
   description: "This module covers some useful advanced techniques that help overcome the limitations of basic Windows PowerShell remoting."
-  ms.date: 03/26/2024
+  ms.date: 01/23/2026
   author: wwlpublish
-  ms.author: tonyj
+  ms.author: robbarefoot
   ms.topic: module-standard-task-based
   ms.custom:
   - N/A

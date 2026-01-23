@@ -3,9 +3,9 @@ uid: learn.wwl.implement-windows-server-hybrid-cloud-infrastructure
 metadata:
   title: Implement a Windows Server hybrid cloud infrastructure
   description: You will learn how to address problems relating to the migration of on-premises workloads into Azure. After completing the learning path, you will be able to implement a hybrid Azure infrastructure.
-  ms.date: 09/24/2020
+  ms.date: 01/23/2026
   author: wwlpublish
-  ms.author: tonyj
+  ms.author: robbarefoot
   ms.topic: learning-path
 title: Implement a Windows Server hybrid cloud infrastructure
 prerequisites: |
