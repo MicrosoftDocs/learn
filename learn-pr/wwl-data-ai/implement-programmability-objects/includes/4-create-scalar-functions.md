@@ -1,4 +1,4 @@
-[Scalar functions](/sql/relational-databases/user-defined-functions/user-defined-functions?azure-portal=true) are essential tools in SQL Server that allow you to encapsulate reusable logic and return a single value. You can use them directly in SELECT statements, WHERE clauses, and other [T-SQL](/sql/t-sql/language-reference?azure-portal=true) expressions, making your queries more maintainable and your code more modular.
+[Scalar functions](/sql/relational-databases/user-defined-functions/user-defined-functions?azure-portal=true) are essential tools in SQL Server that allow you to encapsulate reusable logic and return a single value. You can use them directly in `SELECT` statements, `WHERE` clauses, and other [T-SQL](/sql/t-sql/language-reference?azure-portal=true) expressions, making your queries more maintainable and your code more modular.
 
 ## Understand scalar function fundamentals
 
@@ -28,7 +28,7 @@ BEGIN
 END
 ```
 
-The RETURNS clause specifies the data type of the single value the function returns. Within the BEGIN...END block, you write your T-SQL logic and use a RETURN statement to send back the result.
+The `RETURNS` clause specifies the data type of the single value the function returns. Within the `BEGIN...END` block, you write your T-SQL logic and use a `RETURN` statement to send back the result.
 
 For example, you can create a simple function that calculates sales tax:
 
@@ -47,7 +47,7 @@ BEGIN
 END
 ```
 
-This function accepts two parameters and returns the calculated tax amount. You can use this function in any SELECT statement: `SELECT dbo.CalculateSalesTax(100.00, 0.0825)`.
+This function accepts two parameters and returns the calculated tax amount. You can use this function in any `SELECT` statement.
 
 ## Implement scalar functions with business logic
 
@@ -82,15 +82,18 @@ WHERE dbo.GetEmployeeTenure(HireDate) >= 5
 
 This approach ensures consistent tenure calculation throughout your database. If the business rules change, you modify the function once rather than updating multiple queries.
 
+> [!NOTE]
+> This function uses `GETDATE()`, which makes it non-deterministic. Non-deterministic functions can't be used in indexed views or indexes on computed columns. For scenarios requiring determinism, pass the current date as a parameter instead.
+
 ## Apply best practices for scalar functions
 
 When you create scalar functions, several best practices help ensure optimal performance and maintainability. Understanding these practices helps you avoid common pitfalls and create efficient, reliable functions.
 
 First, keep your scalar functions deterministic whenever possible. A deterministic function always returns the same result given the same input parameters. Functions that reference system date/time functions or tables are non-deterministic and may prevent certain query optimizations.
 
-Second, avoid side effects in your functions. Scalar functions shouldn't modify database state or have dependencies on external resources. This restriction exists because SQL Server may execute functions multiple times or in different orders than you expect.
+Also, avoid side effects in your functions. Scalar functions shouldn't modify database state or have dependencies on external resources. This restriction exists because SQL Server may execute functions multiple times or in different orders than you expect.
 
-Third, be mindful of performance implications. When you use a scalar function in a WHERE clause or SELECT list with large tables, SQL Server may execute the function for every row. This can significantly impact query performance. For such scenarios, consider inline table-valued functions as an alternative.
+Lastly, be mindful of performance implications. When you use a scalar function in a `WHERE` clause or `SELECT` list with large tables, SQL Server may execute the function for every row. This can significantly impact query performance. For such scenarios, consider inline table-valued functions as an alternative.
 
 Here's an example of a well-designed scalar function that follows these practices:
 
@@ -119,7 +122,7 @@ This function is deterministic, has no side effects, and performs a straightforw
 
 ## Modify and manage scalar functions
 
-After you create a scalar function, you can modify its definition using the ALTER FUNCTION statement. The ALTER FUNCTION syntax mirrors CREATE FUNCTION but allows you to change the function without dropping and recreating it, which preserves permissions and dependencies.
+After you create a scalar function, you can modify its definition using the `ALTER FUNCTION` statement. The `ALTER FUNCTION` syntax mirrors `CREATE FUNCTION` but allows you to change the function without dropping and recreating it, which preserves permissions and dependencies.
 
 ```sql
 ALTER FUNCTION dbo.CalculateSalesTax
@@ -137,10 +140,10 @@ BEGIN
 END
 ```
 
-To remove a scalar function, you use the DROP FUNCTION statement:
+To remove a scalar function, you use the `DROP FUNCTION` statement:
 
 ```sql
 DROP FUNCTION IF EXISTS dbo.CalculateSalesTax
 ```
 
-The IF EXISTS clause prevents errors if the function doesn't exist, which is useful in deployment scripts. Before dropping a function, verify that no other database objects depend on it by checking system views like sys.sql_expression_dependencies.
+The `IF EXISTS` clause prevents errors if the function doesn't exist, which is useful in deployment scripts. Before dropping a function, verify that no other database objects depend on it by checking system views like `sys.sql_expression_dependencies`.

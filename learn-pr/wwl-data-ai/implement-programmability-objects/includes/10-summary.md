@@ -8,7 +8,7 @@ You learned how to:
 
 - **Develop scalar functions** to create reusable calculations that return single values, making your queries more readable and consistent.
 
-- **Implement table-valued functions** using both inline and multi-statement approaches to return result sets that can be used in FROM clauses like tables.
+- **Implement table-valued functions** using both inline and multi-statement approaches to return result sets that can be used in `FROM` clauses like tables.
 
 - **Configure triggers** to automatically respond to DML operations (`INSERT`, `UPDATE`, `DELETE`) or DDL events, enabling audit logging, data validation, and enforcement of complex business rules.
 

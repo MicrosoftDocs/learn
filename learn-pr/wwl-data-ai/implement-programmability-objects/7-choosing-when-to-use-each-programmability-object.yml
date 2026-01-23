@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.implement-programmability-objects.choosing-when-to-use-each-programmability-object
-title: Choose when to use each programmability object
+title: Choose when to use each option
 metadata:
-  title: Choose When to Use Each Programmability Object
+  title: Choose when to use each option
   description: Learn decision criteria for selecting the appropriate SQL Server programmability object—views, stored procedures, functions, or triggers—based on your specific requirements.
   ms.date: 01/22/2026
   author: JulianePadrao

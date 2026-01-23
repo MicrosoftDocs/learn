@@ -2,11 +2,11 @@
 
 ## Understand stored procedures
 
-A stored procedure is a compiled collection of T-SQL statements that SQL Server stores and executes as a single unit. Unlike ad hoc queries that you send to the server each time, stored procedures are precompiled and optimized, which means they run faster on subsequent executions.
+A stored procedure is a compiled collection of T-SQL statements that SQL Server stores and executes as a single unit. Unlike unplanned queries that you send to the server each time, stored procedures are precompiled and optimized, which means they run faster on subsequent executions.
 
 You use stored procedures to encapsulate complex business logic, enforce data validation rules, and control how applications interact with your database. For example, instead of allowing direct table access, you can create stored procedures that validate input, apply business rules, and log changes before modifying data.
 
-The performance benefits come from query plan caching. With ad hoc queries, SQL Server must parse and optimize each query every time. With stored procedures, the execution plan is cached after the first run, reducing overhead for repeated operations.
+The performance benefits come from query plan caching. With unplanned queries, SQL Server must parse and optimize each query every time. With stored procedures, the execution plan is cached after the first run, reducing overhead for repeated operations.
 
 ## Create basic stored procedures
 
@@ -28,9 +28,9 @@ BEGIN
 END
 ```
 
-The SET NOCOUNT ON statement prevents the message about the number of rows affected from being sent to the client. This reduces network traffic and improves performance, especially when the procedure executes multiple statements.
+The `SET NOCOUNT ON` statement prevents the message about the number of rows affected from being sent to the client. This reduces network traffic and improves performance, especially when the procedure executes multiple statements.
 
-When you create procedures, use the BEGIN and END keywords to clearly define the procedure body. This makes your code more readable and helps prevent errors when adding or modifying logic later.
+When you create procedures, use the `BEGIN` and `END` keywords to clearly define the procedure body. This makes your code more readable and helps prevent errors when adding or modifying logic later.
 
 ## Work with parameters
 
@@ -59,7 +59,7 @@ BEGIN
 END
 ```
 
-Output parameters let you return values to the calling application. You define them using the OUTPUT keyword:
+Output parameters let you return values to the calling application. You define them using the `OUTPUT` keyword:
 
 ```sql
 CREATE PROCEDURE dbo.CalculateOrderTotal
@@ -77,7 +77,7 @@ BEGIN
 END
 ```
 
-When you call a procedure with output parameters, you must declare a variable to receive the value and use the OUTPUT keyword in the EXECUTE statement.
+When you call a procedure with output parameters, you must declare a variable to receive the value and use the `OUTPUT` keyword in the `EXECUTE` statement.
 
 ## Implement error handling
 
@@ -122,15 +122,17 @@ BEGIN
 END
 ```
 
-The TRY block contains your main logic, while the CATCH block handles any errors that occur. You can use system functions like ERROR_MESSAGE(), ERROR_SEVERITY(), and ERROR_STATE() to capture error details and pass them to the calling application.
+The `TRY` block contains your main logic, while the `CATCH` block handles any errors that occur. You can use system functions like `ERROR_MESSAGE()`, `ERROR_SEVERITY()`, and `ERROR_STATE()` to capture error details and pass them to the calling application.
 
-Always check @@TRANCOUNT before rolling back transactions in the CATCH block. This prevents errors if the transaction already completed or was never started.
+Always check `@@TRANCOUNT` before rolling back transactions in the `CATCH` block. This prevents errors if the transaction already completed or was never started.
 
 ## Apply best practices
 
 Following established best practices when you create stored procedures ensures they're maintainable, secure, and performant.
 
-**Use schema-qualified names** for all objects. This eliminates ambiguity and improves performance by avoiding schema resolution overhead:
+### Use schema-qualified names
+
+Use schema-qualified names for all objects. This eliminates ambiguity and improves performance by avoiding schema resolution overhead:
 
 ```sql
 -- Good
@@ -140,7 +142,9 @@ SELECT * FROM dbo.Orders
 SELECT * FROM Orders
 ```
 
-**Implement parameter validation** at the start of your procedure. Fail fast when inputs are invalid rather than processing bad data:
+### Implement parameter validation
+
+Implement parameter validation at the start of your procedure. Fail fast when inputs are invalid rather than processing bad data:
 
 ```sql
 IF @CustomerID IS NULL OR @CustomerID <= 0
@@ -150,7 +154,9 @@ BEGIN
 END
 ```
 
-**Avoid SELECT * in production code**. Explicitly list columns to prevent issues when table structures change and to improve query performance:
+### Avoid `SELECT *`
+
+Avoid `SELECT *` in production code. Explicitly list columns to prevent issues when table structures change and to improve query performance:
 
 ```sql
 -- Good
@@ -160,12 +166,26 @@ SELECT OrderID, CustomerID, OrderDate FROM dbo.Orders
 SELECT * FROM dbo.Orders
 ```
 
-**Use meaningful names** that describe what the procedure does. Include a verb that indicates the operation (Get, Insert, Update, Delete, Calculate):
+### Use meaningful names
+
+Use meaningful names that describe what the procedure does. Include a verb that indicates the operation (Get, Insert, Update, Delete, Calculate):
 
 ```sql
 CREATE PROCEDURE dbo.GetActiveCustomersByRegion
 CREATE PROCEDURE dbo.UpdateCustomerAddress
 CREATE PROCEDURE dbo.DeleteExpiredOrders
+```
+
+### Avoid the `sp_` prefix
+
+Don't use the `sp_` prefix for your stored procedures. SQL Server reserves this prefix for system procedures stored in the `master` database. When you name a procedure with `sp_`, SQL Server first searches `master` before checking the current database, adding unnecessary overhead:
+
+```sql
+-- Good
+CREATE PROCEDURE dbo.GetCustomerOrders
+
+-- Avoid
+CREATE PROCEDURE dbo.sp_GetCustomerOrders
 ```
 
 Building on these practices helps you create stored procedures that your team can understand, maintain, and trust to perform reliably in production environments.

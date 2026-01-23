@@ -6,11 +6,15 @@ When you build database applications, you often need to retrieve filtered or cal
 
 SQL Server provides two types of table-valued functions, each suited for different scenarios.
 
-**Inline table-valued functions** contain a single SELECT statement and return results directly. With inline functions, you don't define the table structure—SQL Server infers it from your SELECT statement. The query optimizer treats inline table-valued functions like views with parameters, often producing better execution plans.
+### Inline table-valued function
 
-**Multi-statement table-valued functions** use a BEGIN...END block and explicitly declare the structure of the returned table. This type gives you more control when you need to execute multiple statements, perform complex calculations, or build the result set iteratively. However, this flexibility comes with a performance trade-off, as the optimizer treats these functions differently.
+Contains a single `SELECT` statement and returns results directly. With inline functions, you don't define the table structure—SQL Server infers it from your `SELECT` statement. The query optimizer treats inline table-valued functions like views with parameters, often producing better execution plans.
 
-The choice between these types depends on your specific requirements. For simple queries with parameters, inline functions provide better performance. When you need procedural logic or multiple steps to build your result set, multi-statement functions become necessary.
+### Multi-statement table-valued function
+
+Uses a `BEGIN...END` block and explicitly declares the structure of the returned table. This type gives you more control when you need to execute multiple statements, perform complex calculations, or build the result set iteratively. However, this flexibility comes with a performance trade-off, as the optimizer treats these functions differently.
+
+The choice between these functions depends on your specific requirements. For simple queries with parameters, inline functions provide better performance. When you need procedural logic or multiple steps to build your result set, multi-statement functions become necessary.
 
 ## Create inline table-valued functions
 
@@ -92,7 +96,7 @@ Notice how you explicitly declare the table variable `@SalesSummary` with specif
 
 Table-valued functions integrate seamlessly into your queries, enabling powerful data retrieval patterns.
 
-You can `JOIN` function results with other tables:
+You can join function results with other tables:
 
 ```sql
 SELECT 
@@ -105,7 +109,7 @@ WHERE s.TotalRevenue > 10000
 ORDER BY s.TotalRevenue DESC;
 ```
 
-The [`CROSS APPLY`](/sql/t-sql/queries/from-transact-sql?azure-portal=true#using-apply) operator calls the function for each row from the Customers table, though in this example, the function parameters are constants. When you pass column values as parameters, CROSS APPLY becomes particularly useful:
+The [`CROSS APPLY`](/sql/t-sql/queries/from-transact-sql?azure-portal=true#using-apply) operator calls the function for each row from the Customers table, though in this example, the function parameters are constants. When you pass column values as parameters, `CROSS APPLY` becomes particularly useful:
 
 ```sql
 SELECT 

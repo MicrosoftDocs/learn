@@ -2,7 +2,7 @@
 
 ## Understand views in SQL Server
 
-A **view** is a virtual table based on a SELECT statement. Unlike physical tables, views don't store data themselves. Instead, they retrieve data from underlying tables each time you query them.
+A **view** is a virtual table based on a `SELECT` statement. Unlike physical tables, views don't store data themselves. Instead, they retrieve data from underlying tables each time you query them.
 
 With views, you can hide the complexity of `JOIN` clauses, calculations, and filters from application code. For example, if your application frequently needs customer orders with product details, you can create a view that uses `JOIN` across the Customers, Orders, and Products tables. Your application then queries a single view instead of writing the same complex `JOIN` repeatedly.
 
@@ -55,7 +55,7 @@ SELECT
 FROM Sales.Orders;
 ```
 
-This view handles the categorization logic in one place. Every query against OrderSummary gets the same calculation without duplicating the CASE expression.
+This view handles the categorization logic in one place. Every query against OrderSummary gets the same calculation without duplicating the `CASE` expression.
 
 ## Apply design considerations
 
@@ -75,7 +75,7 @@ FROM Sales.Customers
 WHERE IsActive = 1;
 ```
 
-Use the WITH CHECK OPTION clause when views will handle data modifications. This option ensures that INSERT and UPDATE statements through the view only affect rows visible in the view:
+Use the `WITH CHECK OPTION` clause when views will handle data modifications. This option ensures that `INSERT` and `UPDATE` statements through the view only affect rows visible in the view:
 
 ```sql
 CREATE VIEW Sales.HighValueOrders
@@ -90,7 +90,7 @@ WHERE TotalAmount > 1000
 WITH CHECK OPTION;
 ```
 
-With this option, you can't insert an order with TotalAmount of 500 through the HighValueOrders view. The database rejects the operation because the new row wouldn't meet the view's WHERE condition.
+With this option, you can't insert an order with TotalAmount of 500 through the HighValueOrders view. The database rejects the operation because the new row wouldn't meet the view's `WHERE` condition.
 
 Keep view definitions focused on a specific purpose. A view that tries to serve multiple purposes often becomes difficult to optimize and understand. Create separate views for different use cases rather than building one complex view.
 

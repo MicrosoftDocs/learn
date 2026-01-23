@@ -2,7 +2,7 @@
 uid: learn.wwl.implement-programmability-objects.create-stored-procedures
 title: Create stored procedures
 metadata:
-  title: Create Stored Procedures
+  title: Create stored procedures
   description: Learn how to create, modify, and implement stored procedures in SQL Server using T-SQL. Understand parameters, error handling, and best practices for encapsulating business logic.
   ms.date: 01/22/2026
   author: JulianePadrao

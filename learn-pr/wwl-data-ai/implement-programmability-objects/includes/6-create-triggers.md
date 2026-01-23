@@ -4,9 +4,9 @@
 
 A trigger responds to data modification or schema changes in your database. When you create a trigger, you specify the event that activates it and the actions it performs.
 
-Triggers execute automatically. Unlike stored procedures that you call explicitly, triggers fire in response to INSERT, UPDATE, DELETE, or DDL statements. This automatic execution makes them powerful for enforcing rules that must apply consistently across all data modifications.
+Triggers execute automatically. Unlike stored procedures that you call explicitly, triggers fire in response to `INSERT`, `UPDATE`, `DELETE`, or DDL statements. This automatic execution makes them powerful for enforcing rules that must apply consistently across all data modifications.
 
-SQL Server supports two main categories of triggers: [**DML (Data Manipulation Language)**](/sql/relational-databases/triggers/dml-triggers?azure-portal=true) triggers and [**DDL (Data Definition Language)**](/sql/relational-databases/triggers/ddl-triggers?azure-portal=true) triggers. DML triggers respond to changes in table data, while DDL triggers respond to schema changes like CREATE, ALTER, or DROP statements.
+SQL Server supports two main categories of triggers: [**DML (Data Manipulation Language)**](/sql/relational-databases/triggers/dml-triggers?azure-portal=true) triggers and [**DDL (Data Definition Language)**](/sql/relational-databases/triggers/ddl-triggers?azure-portal=true) triggers. DML triggers respond to changes in table data, while DDL triggers respond to schema changes like `CREATE`, `ALTER`, or `DROP` statements.
 
 ## Create DML triggers for data modifications
 
@@ -27,7 +27,7 @@ BEGIN
 END;
 ```
 
-**INSTEAD OF** triggers replace the original data modification statement. The trigger code executes instead of the INSERT, UPDATE, or DELETE operation. You use INSTEAD OF triggers to modify views that normally wouldn't accept direct modifications or to implement complex business logic:
+**INSTEAD OF** triggers replace the original data modification statement. The trigger code executes instead of the `INSERT`, `UPDATE`, or `DELETE` operation. You use INSTEAD OF triggers to modify views that normally wouldn't accept direct modifications or to implement complex business logic:
 
 ```sql
 CREATE TRIGGER tr_UpdateOrderView
@@ -43,11 +43,11 @@ BEGIN
 END;
 ```
 
-With DML triggers, you access the **inserted** and **deleted** pseudo-tables. These temporary tables store copies of the affected rows. INSERT operations populate the **inserted** table, DELETE operations populate the **deleted** table, and UPDATE operations populate both tables with old values in **deleted** and new values in **inserted**.
+With DML triggers, you access the **inserted** and **deleted** pseudo-tables. These temporary tables store copies of the affected rows. `INSERT` operations populate the **inserted** table, `DELETE` operations populate the **deleted** table, and `UPDATE` operations populate both tables with old values in **deleted** and new values in **inserted**.
 
 ## Implement triggers for specific events
 
-You specify which data modification events activate your trigger. A single trigger can respond to multiple events by combining INSERT, UPDATE, and DELETE in the trigger definition.
+You specify which data modification events activate your trigger. A single trigger can respond to multiple events by combining `INSERT`, `UPDATE`, and `DELETE` in the trigger definition.
 
 For precise control, you create separate triggers for each operation. This approach simplifies your code and makes your triggers easier to maintain:
 
@@ -68,7 +68,7 @@ BEGIN
 END;
 ```
 
-At the same time, you might combine events when the same logic applies to multiple operations. For example, you could create a single audit trigger that responds to INSERT, UPDATE, and DELETE:
+At the same time, you might combine events when the same logic applies to multiple operations. For example, you could create a single audit trigger that responds to `INSERT`, `UPDATE`, and `DELETE`:
 
 ```sql
 CREATE TRIGGER tr_AuditEmployeeChanges

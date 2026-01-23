@@ -2,7 +2,7 @@
 uid: learn.wwl.implement-programmability-objects.create-scalar-functions
 title: Create scalar functions
 metadata:
-  title: Create Scalar Functions
+  title: Create scalar functions
   description: Learn how to create scalar user-defined functions in SQL Server to encapsulate reusable logic and return single values.
   ms.date: 01/22/2026
   author: JulianePadrao
