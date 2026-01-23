@@ -2,6 +2,8 @@ When you run notebooks and jobs on Azure Databricks compute, you often need thir
 
 Understanding how to install libraries effectively becomes critical as your data engineering workflows grow in complexity. You need to know which installation method to use, where to store library files, and how access modes affect your options.
 
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=99e9c9ea-b4e0-4c5d-9e45-ddec74896dc6]
+
 ## Understand compute-scoped libraries
 
 **Compute-scoped libraries** install on a cluster and become available to all notebooks and jobs that run on that cluster. Unlike **notebook-scoped libraries** that install only for a specific notebook session, compute-scoped libraries persist across cluster restarts and provide a shared environment for all users.

@@ -2,6 +2,8 @@ Managing access to compute resources protects sensitive data while enabling coll
 
 Proper access configuration prevents unauthorized users from viewing driver logs containing secrets, controls who can consume compute resources, and ensures teams work efficiently without conflicting infrastructure changes. With **Unity Catalog** enabled, you can assign compute resources to entire groups with automatic permission scoping.
 
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=13]
+
 ## Understand compute permission levels
 
 Azure Databricks offers **four permission levels** for compute resources, each granting progressively more capabilities. These permissions operate within your workspace and are distinct from Azure subscription-level access controls.
