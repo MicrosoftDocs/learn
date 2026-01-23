@@ -5124,6 +5124,26 @@
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/scale-ai/3-establish-ai-related-roles-responsibilities.yml",
       "redirect_url": "/training/modules/scale-ai/3-organize-ai-success"
+    },
+    {
+      "source_path_from_root": "learn-pr/wwl-data-ai/get-started-generative-ai-azure-database-postgresql/6-examine-azure-machine-learning-schema.yml",
+      "redirect_url": "/training/modules/get-started-generative-ai-azure-database-postgresql",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "learn-pr/wwl-data-ai/get-started-generative-ai-azure-database-postgresql/7-exercise-explore-azure-ai-extension.yml",
+      "redirect_url": "/training/modules/get-started-generative-ai-azure-database-postgresql",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "learn-pr/wwl-data-ai/get-started-generative-ai-azure-database-postgresql/8-knowledge-check.yml",
+      "redirect_url": "/training/modules/get-started-generative-ai-azure-database-postgresql",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "learn-pr/wwl-data-ai/get-started-generative-ai-azure-database-postgresql/9-summary.yml",
+      "redirect_url": "/training/modules/get-started-generative-ai-azure-database-postgresql",
+      "redirect_document_id": false
     }
   ]
 }
