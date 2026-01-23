@@ -4,7 +4,7 @@ title: Configure compute performance
 metadata:
   title: Configure Compute Performance
   description: Learn how to configure Azure Databricks compute performance settings including node types, autoscaling, termination, and instance pools to balance cost and performance.
-  ms.date: 12/07/2025
+  ms.date: 01/23/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit
