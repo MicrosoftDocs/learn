@@ -44,57 +44,57 @@ The following example shows the full flow for sending input to an Azure Machine 
 
 1. Send the input payload
 
-  ```sql
-  SELECT azure_ml.invoke(
-    '{
-      "input_data": {
-        "columns": [
-          "host_is_superhost",
-          "host_has_profile_pic",
-          "host_identity_verified",
-          "neighbourhood_group_cleansed",
-          "zipcode",
-          "property_type",
-          "room_type",
-          "accommodates",
-          "bathrooms",
-          "bedrooms",
-          "beds"
-        ],
-        "index": [0],
-        "data": [
-          ["False","False","False","Central Area","98122","House","Entire home/apt",4,1.5,3,3]
-        ]
-      }
-    }'::jsonb,
-    'rental-price-deployment'
-  ) AS prediction;
-  ```
+    ```sql
+    SELECT azure_ml.invoke(
+        '{
+          "input_data": {
+            "columns": [
+              "host_is_superhost",
+              "host_has_profile_pic",
+              "host_identity_verified",
+              "neighbourhood_group_cleansed",
+              "zipcode",
+              "property_type",
+              "room_type",
+              "accommodates",
+              "bathrooms",
+              "bedrooms",
+              "beds"
+            ],
+            "index": [0],
+            "data": [
+              ["False","False","False","Central Area","98122","House","Entire home/apt",4,1.5,3,3]
+            ]
+          }
+        }'::jsonb,
+        'rental-price-deployment'
+    ) AS prediction;
+    ```
 
-  The result is returned as a `jsonb` value that contains the model’s output. You can extract fields from this result using standard PostgreSQL JSON functions.
+    The result is returned as a `jsonb` value that contains the model's output. You can extract fields from this result using standard PostgreSQL JSON functions.
 
 1. Working with the output
 
-  For example, if the model returns an array of predicted values:
+    For example, if the model returns an array of predicted values:
 
-  ```sql
-  WITH result AS (
-    SELECT azure_ml.invoke(
-      '{
-        "input_data": {
-          "columns": ["neighbourhood","bedrooms","bathrooms"],
-          "index": [0],
-          "data": [["Queen Anne", 2, 1]]
-        }
-      }'::jsonb,
-      'rental-price-deployment'
-    ) AS output
-  )
-  SELECT jsonb_array_elements(output) AS predicted_value
-  FROM result;
-  ```
+    ```sql
+    WITH result AS (
+        SELECT azure_ml.invoke(
+            '{
+              "input_data": {
+                "columns": ["neighbourhood","bedrooms","bathrooms"],
+                "index": [0],
+                "data": [["Queen Anne", 2, 1]]
+              }
+            }'::jsonb,
+            'rental-price-deployment'
+        ) AS output
+    )
+    SELECT jsonb_array_elements(output) AS predicted_value
+    FROM result;
+    ```
 
-  You can incorporate this solution into views, functions, and reporting queries as needed.
+    You can incorporate this solution into views, functions, and reporting queries as needed.
 
 ## Configure a connection to Azure Machine Learning
 

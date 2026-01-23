@@ -8,9 +8,9 @@ With the `azure_openai` schema, you can call the `create_embeddings()` function,
 
 The function requires you to:
 
-- specify the embedding deployment name,
-- supply the input text or array of text,
-- let the function return the embedding vector as `vector` or `vector[]`.
+- Specify the embedding deployment name.
+- Supply the input text or array of text.
+- Let the function return the embedding vector as `vector` or `vector[]`.
 
 Example:
 
