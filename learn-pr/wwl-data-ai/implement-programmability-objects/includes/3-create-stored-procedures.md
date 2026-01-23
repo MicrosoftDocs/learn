@@ -1,5 +1,3 @@
-# Create stored procedures
-
 [Stored procedures](/sql/relational-databases/stored-procedures/stored-procedures-database-engine?azure-portal=true) are one of the most powerful tools in SQL Server for encapsulating business logic and improving application performance. When you create stored procedures, you build reusable code blocks that execute on the server, reducing network traffic and centralizing data access logic.
 
 ## Understand stored procedures

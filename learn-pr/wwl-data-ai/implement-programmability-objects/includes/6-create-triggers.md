@@ -1,5 +1,3 @@
-# Create triggers
-
 [**Triggers**](/sql/relational-databases/triggers/dml-triggers?azure-portal=true) are special stored procedures that automatically execute when specific events occur in your database. You define triggers to maintain data integrity, enforce business rules, and automate database operations without requiring application-level code.
 
 ## Understand trigger fundamentals

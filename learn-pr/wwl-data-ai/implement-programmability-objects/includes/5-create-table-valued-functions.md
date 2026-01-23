@@ -1,5 +1,3 @@
-# Create table-valued functions
-
 [Table-valued functions](/sql/relational-databases/user-defined-functions/user-defined-functions?azure-portal=true#table-valued-functions) let you encapsulate complex query logic into reusable components that return result sets. You can call these functions directly in queries, just like tables or views, making your code more modular and maintainable.
 
 When you build database applications, you often need to retrieve filtered or calculated data sets based on input parameters. Table-valued functions solve this problem by packaging query logic into functions that accept parameters and return tables. Unlike stored procedures, you can use table-valued functions in `JOIN` clauses and `SELECT` statements, giving you the flexibility to treat function results as data sources.

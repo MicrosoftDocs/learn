@@ -1,5 +1,3 @@
-# Create scalar functions
-
 [Scalar functions](/sql/relational-databases/user-defined-functions/user-defined-functions?azure-portal=true) are essential tools in SQL Server that allow you to encapsulate reusable logic and return a single value. You can use them directly in SELECT statements, WHERE clauses, and other [T-SQL](/sql/t-sql/language-reference?azure-portal=true) expressions, making your queries more maintainable and your code more modular.
 
 ## Understand scalar function fundamentals
