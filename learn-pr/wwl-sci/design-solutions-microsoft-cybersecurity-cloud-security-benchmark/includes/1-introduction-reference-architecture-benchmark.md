@@ -1,103 +1,69 @@
-This module covers best practices for cybersecurity capabilities and controls, which are essential to reduce the risk of attackers succeeding.
+In this unit we introduce the Microsoft Cybersecurity Reference Architecture (MCRA). But to explain understand what the MCRA is, it's important to first introduce the Microsoft Security Adoption Framework, as the MCRA is component of the SAF.
 
-## Learning objectives
+## The Microsoft Security Adoption Framework
 
-In this module, you learn how to:
+The Microsoft Security Adoption Framework (SAF) is a comprehensive guide for end-to-end security modernization. It provides a structured approach—from executive strategy to architectural and technical planning—grounded in Zero Trust principles, to help organizations improve their security posture across a hybrid, multicloud environment. Think of SAF as the overarching “playbook” for security transformation, addressing not just technology but also strategy, governance, and processes. [learn.microsoft.com]
 
-- Use Microsoft Cybersecurity Reference Architecture (MCRA) to design more secure solutions.
-- Use Microsoft cloud security benchmark (MCSB) to design more secure solutions.
+Within that framework, the Microsoft Cybersecurity Reference Architecture (MCRA) serves as a key component of SAF. MCRA is essentially the technical blueprint that visualizes how all Microsoft security capabilities and best practices fit together in an end-to-end architecture. It shows how to implement SAF’s guidance at the technical level. In fact, SAF leverages MCRA as the reference model for security architecture — MCRA illustrates the integrated security solutions (identity, devices, apps, infrastructure, etc.) working in concert under Zero Trust. By design, MCRA is part of SAF, helping security teams align their detailed technical architecture with the broader security strategy and Zero Trust approach advocated by SAF. [Microsoft...soft Learn | Learn.Microsoft.com]
 
-The content in the module helps you prepare for the certification exam SC-100: Microsoft Cybersecurity Architect.
+In summary, SAF provides the “why and how” of security modernization (the strategic roadmap and operational guidance), while MCRA provides the “what” (the detailed architecture of security capabilities). Understanding their relationship: SAF sets the vision and process for modernizing security, and MCRA gives you the picture of the end-state architecture to aim for, ensuring that your security program’s execution aligns with Microsoft’s best-practice architecture for cybersecurity. This interplay ensures that as you plan and implement improvements via SAF, you are guided by the MCRA to cover all security domains in a coherent, integrated way. The result is a well-aligned security strategy (via SAF) and architecture (via MCRA) for modern enterprises.
 
-## Prerequisites
+## MCRA
 
-- Conceptual knowledge of security policies, requirements, zero trust architecture, and management of hybrid environments
-- Working experience with zero trust strategies, applying security policies, and developing security requirements based on business goals
+The [Microsoft Cybersecurity Reference Architectures (MCRA)](/security/adoption/mcra) describe Microsoft's cybersecurity capabilities and how they integrate with existing security architectures. The MCRA provides:
 
-## Overview of MCRA
+- **Technical diagrams** showing how Microsoft security capabilities integrate with Microsoft platforms (Microsoft 365 and Azure), third-party applications (ServiceNow, Salesforce), and third-party cloud platforms (AWS, GCP).
+- **Capability descriptions** with ScreenTips that provide brief explanations and links to documentation when viewing in presentation mode.
+- **Best practice guidance** for implementing security capabilities across your enterprise environment.
 
-The [Microsoft Cybersecurity Reference Architectures (MCRA)](/security/cybersecurity-reference-architecture/mcra) are a set of technical diagrams that describe Microsoft’s cybersecurity capabilities. The diagrams describe how Microsoft security capabilities integrate with the following:
+The MCRA helps you understand how Microsoft capabilities work together to help you achieve your end-to-end security goals.
+The MCRA includes:
+- Antipatterns (common mistakes) and best practices
+- Threat trends, attack patterns, and the importance of an end-to-end security approach and ruthlessly prioritizing security work
+- Guidance for successfully adopting an end-to-end security approach using Zero Trust principles 
+- Mapping Microsoft capabilities to Zero Trust standards and organizational roles
+- Guidance on AI Security
+- Detailed diagrams for:
+  - Microsoft cybersecurity capabilities
+  - Zero Trust user access
+  - Security operations (SecOps/SOC)
+  - Operational technology (OT)
+  - Multicloud and cross-platform capabilities
+  - Attack chain coverage
+  - Infrastructure and development Security
+  - Security organizational functions
+- ...and more 
 
-- Microsoft platforms like Microsoft 365 and Microsoft Azure
-- Third party apps like ServiceNow and salesforce
-- Third party platforms like Amazon Web Services (AWS) and Google Cloud Platform (GCP)
+### How organizations apply the MCRA
 
-The MCRA contains diagrams on the following topics:
+Organizations use the MCRA for several purposes. Understanding these use cases helps you get the most value from this resource as a cybersecurity architect.
 
-- Microsoft cybersecurity capabilities
-- Zero Trust and a Zero Trust rapid modernization plan (RaMP)
-- Zero trust user access
-- Security operations
-- Operational technology (OT)
-- Multicloud and cross-platform capabilities
-- Attack chain coverage
-- Azure native security controls
-- Security organizational functions
+#### Define a target security architecture
 
-## Overview of MCSB
+The most common use case is using the MCRA as a starting template for security architecture. Organizations find this architecture useful because it covers capabilities across the modern enterprise estate that now spans on-premises, mobile devices, multiple clouds, and IoT/Operational Technology. You can use the diagrams to help define your target state for cybersecurity capabilities and identify gaps in your current environment.
 
-New services and features are released daily in Azure and other cloud platforms. Developers are rapidly publishing new cloud applications built on these services, and attackers are constantly seeking new ways to exploit misconfigured resources. The cloud moves fast, developers move fast, and attackers also move fast. How do you keep up and make sure that your cloud deployments are secure? How are security practices for cloud systems different from on-premises systems and different between cloud service providers? How do you monitor your workload for consistency across multiple cloud platforms?
+#### Compare and assess existing capabilities
 
-Microsoft has found that using security benchmarks can help you quickly secure cloud deployments. A comprehensive security best practice framework from cloud service providers can give you a starting point for selecting specific security configuration settings in your cloud environment, across multiple service providers and allow you to monitor these configurations using a single pane of glass.
+Use the MCRA as a comparison reference for security capabilities. Compare Microsoft's recommendations with what you already own and have implemented. Many organizations discover they already have access to security technologies they weren't aware of, particularly through existing Microsoft 365 or Azure subscriptions. This assessment helps you maximize your current investments before acquiring new tools.
 
-### Security controls
+#### Learn about Microsoft security capabilities
 
-A control is a high-level description of a recommended feature or activity that needs to be addressed. Controls aren't specific to a technology or implementation. Security control recommendations are applicable to multiple cloud workloads. Each control is numbered and the control's recommendations identify a list of stakeholders that are typically involved in planning, approval, or implementation of the benchmark.
+The MCRA serves as an effective learning tool for understanding Microsoft's security portfolio. When viewing the diagrams in presentation mode, each capability includes a ScreenTip with a short description and a link to documentation for deeper learning. This makes it easy to quickly understand what each component does and how it fits into the overall architecture.
 
-### MCSB control domains/control families
-<!--
-/security/benchmark/azure/overview
--->
-In the MCSB controls are grouped into "families" or "domains". The following table summarizes the security control domains in MCSB:
+#### Identify integration opportunities
 
-| Control Domains | Description |
-|---|---|
-| [Network security (NS)](/security/benchmark/azure/mcsb-network-security) | Network Security covers controls to secure and protect networks, including securing virtual networks, establishing private connections, preventing, and mitigating external attacks, and securing DNS. |
-| [Identity Management (IM)](/security/benchmark/azure/mcsb-identity-management) | Identity Management covers controls to establish a secure identity and access controls using identity and access management systems, including the use of single sign-on, strong authentications, managed identities (and service principals) for applications, conditional access, and account anomalies monitoring. |
-| [Privileged Access (PA)](/security/benchmark/azure/mcsb-privileged-access) | Privileged Access covers controls to protect privileged access to your tenant and resources, including a range of controls to protect your administrative model, administrative accounts, and privileged access workstations against deliberate and inadvertent risk. |
-| [Data Protection (DP)](/security/benchmark/azure/mcsb-data-protection) | Data Protection covers control of data protection at rest, in transit, and via authorized access mechanisms, including discover, classify, protect, and monitor sensitive data assets using access control, encryption, key management and certificate management. |
-| [Asset Management (AM)](/security/benchmark/azure/mcsb-asset-management) | Asset Management covers controls to ensure security visibility and governance over your resources. That includes recommendations on permissions for security personnel, security access to asset inventory, and managing approvals for services and resources (inventory, track, and correct). |
-| [Logging and Threat Detection (LT)](/security/benchmark/azure/mcsb-logging-threat-detection) | Logging and Threat Detection covers controls for detecting threats on cloud, and enabling, collecting, and storing audit logs for cloud services, including enabling detection, investigation, and remediation processes with controls to generate high-quality alerts with native threat detection in cloud services; it also includes collecting logs with a cloud monitoring service, centralizing security analysis with a SIEM, time synchronization, and log retention. |
-| [Incident Response (IR)](/security/benchmark/azure/mcsb-incident-response) | Incident Response covers controls in incident response life cycle - preparation, detection and analysis, containment, and post-incident activities, including using Azure services (such as Microsoft Defender for Cloud and Sentinel) and/or other cloud services to automate the incident response process. |
-| [Posture and Vulnerability Management (PV)](/security/benchmark/azure/mcsb-posture-vulnerability-management) | Posture and Vulnerability Management focuses on controls for assessing and improving cloud security posture, including vulnerability scanning, penetration testing and remediation, as well as security configuration tracking, reporting, and correction in cloud resources. |
-| [Endpoint Security (ES)](/security/benchmark/azure/mcsb-endpoint-security) | Endpoint Security covers controls in endpoint detection and response, including use of endpoint detection and response (EDR) and anti-malware service for endpoints in cloud environments. |
-| [Backup and Recovery (BR)](/security/benchmark/azure/mcsb-backup-recovery) | Backup and Recovery cover controls to ensure that data and configuration backups at the different service tiers are performed, validated, and protected. |
-| [DevOps Security (DS)](/security/benchmark/azure/mcsb-devops-security) | DevOps Security covers the controls related to the security engineering and operations in the DevOps processes, including deployment of critical security checks (such as static application security testing, vulnerability management) prior to the deployment phase to ensure the security throughout the DevOps process; it also includes common topics such as threat modeling and software supply security. |
-| [Governance and Strategy (GS)](/security/benchmark/azure/mcsb-governance-strategy) | Governance and Strategy provide guidance for ensuring a coherent security strategy and documented governance approach to guide and sustain security assurance, including establishing roles and responsibilities for the different cloud security functions, unified technical strategy, and supporting policies and standards. |
+Architects and technical teams use the MCRA to identify how to take advantage of integration points within Microsoft capabilities and with existing security investments. The diagrams show how different security technologies connect and share data, helping you design solutions that maximize the value of integrated security operations.
 
-### Service baselines
+#### Build cybersecurity knowledge
 
-Security baselines are standardized documents for Azure product offerings, describing the available security capabilities and the optimal security configurations to help you strengthen security through improved tooling, tracking, and security features. We currently have service baselines available for Azure only.
+For those new to cybersecurity or preparing for a career change, the MCRA provides a comprehensive overview of modern security architecture. The visual format and organized structure make it easier to understand how different security domains relate to each other and what capabilities are needed for a complete security program.
 
-Security baselines for Azure focus on cloud-centric control areas in Azure environments. These controls are consistent with well-known industry standards such as: Center for Internet Security (CIS) or National Institute for Standards in Technology (NIST). Our baselines provide guidance for the control areas listed in the Microsoft cloud security benchmark v1.
+### Understand AI security considerations
 
-Each baseline consists of the following components:
+As organizations adopt AI technologies, cybersecurity architects must address the unique security challenges that AI introduces. AI security encompasses two related concerns:
 
-- How does a service behave?
-- Which security features are available?
-- What configurations are recommended to secure the service?
+- **Securing AI systems** - Protecting AI models, training data, and AI-powered applications from attacks such as model theft, data poisoning, and prompt injection.
+- **Using AI for security** - Using AI capabilities to enhance threat detection, automate security operations, and improve security posture through tools like Microsoft Security Copilot.
 
-## Implement Microsoft cloud security benchmark
+The MCRA includes content on AI security considerations to help you understand how AI affects your security architecture. For comprehensive guidance on securing AI workloads, see [Security for AI](/security/ai/) and [AI security best practices](/security/ai/secure-ai-best-practices).
 
-- **Plan** your MCSB implementation by reviewing the documentation for the enterprise controls and service-specific baselines to plan your control framework and how it maps to guidance like Center for Internet Security (CIS) Controls, National Institute of Standards and Technology (NIST), and the Payment Card Industry Data Security Standard (PCI-DSS) framework.
-- **Monitor** your compliance with MCSB status (and other control sets) using the Microsoft Defender for Cloud – Regulatory Compliance Dashboard for your multicloud environment.
-- **Establish** guardrails to automate secure configurations and enforce compliance with MCSB (and other requirements in your organization) using features such as Azure Blueprints, Azure Policy, or the equivalent technologies from other cloud platforms.
-
-## Common use cases
-
-Microsoft cloud security benchmark can often be used to address common challenges for customers or service partners who are:
-
-- New to Azure (and other major cloud platforms, such as AWS) and looking for security best practices to ensure a secure deployment of cloud services and your own application workload.
-- Looking to improve security posture of existing cloud deployments to prioritize top risks and mitigations.
-- Using multicloud environments (such as Azure and AWS) and facing challenges in aligning the security control monitoring and evaluation using a single pane of glass.
-- Evaluating the security features/capabilities of Azure (and other major cloud platforms, such as AWS) before onboarding/approving a service(s) into the cloud service catalog.
-- Having to meet compliance requirements in highly regulated industries, such as government, finance, and healthcare. These customers need to ensure their service configurations of Azure and other clouds to meet the security specification defined in framework such as CIS, NIST, or PCI. MCSB provides an efficient approach with the controls already premapped to these industry benchmarks.
-
-## Terminology
-
-The terms "control" and "baseline" are often used in the Microsoft cloud security benchmark documentation. It's important to understand how MCSB uses these terms.
-
-| Term | Description | Example |
-|---|---|---|
-| Control | A control is a high-level description of a feature or activity that needs to be addressed and isn't specific to a technology or implementation. | Data Protection is one of the security control families. Data Protection contains specific actions that must be addressed to help ensure data is protected. |
-| Baseline | A baseline is the implementation of the control on the individual Azure services. Each organization dictates a benchmark recommendation and corresponding configurations are needed in Azure. Note: Today we have service baselines available only for Azure. | The Contoso company looks to enable Azure SQL security features by following the configuration recommended in the Azure SQL security baseline.|

@@ -3,7 +3,7 @@ uid: learn.wwl.design-solutions-microsoft-cybersecurity-cloud-security-benchmark
 metadata:
   title: Design Solutions that Align with the Microsoft Cybersecurity Reference Architecture (MCRA) and Microsoft Cloud Security Benchmark (MCSB)
   description: "You learn about the Microsoft Cybersecurity Reference Architecture (MCRA) and Microsoft Cloud Security Benchmark (MCSB) and how you can use them to design more secure solutions."
-  ms.date: 07/30/2025
+  ms.date: 01/22/2026
   author: ceperezb
   ms.author: ceperezb
   ms.topic: module
@@ -34,7 +34,9 @@ subjects:
   - security
   - cloud-security
 units:
+- learn.wwl.design-solutions-microsoft-cybersecurity-cloud-security-benchmark.introduction
 - learn.wwl.design-solutions-microsoft-cybersecurity-cloud-security-benchmark.introduction-reference-architecture-benchmark
+- learn.wwl.design-solutions-microsoft-cybersecurity-cloud-security-benchmark.describe-microsoft-cloud-security-benchmark
 - learn.wwl.design-solutions-microsoft-cybersecurity-cloud-security-benchmark.design-solutions-best-practices-capabilities-controls
 - learn.wwl.design-solutions-microsoft-cybersecurity-cloud-security-benchmark.design-solutions-best-practices-attack-protection
 - learn.wwl.design-solutions-microsoft-cybersecurity-cloud-security-benchmark.knowledge-check
