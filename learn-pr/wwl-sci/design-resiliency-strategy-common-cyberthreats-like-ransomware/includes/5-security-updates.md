@@ -36,7 +36,7 @@ Update Manager has been redesigned and doesn't depend on Azure Automation or Azu
 
 The following diagram illustrates how Update Manager assesses and applies updates to all Azure machines and Azure Arc-enabled servers for both Windows and Linux.
 
-![Diagram that shows the Update Manager workflow.](../media/update-management-center-overview.png)
+:::image type="content" source="../media/update-management-center-overview.png" alt-text="Diagram that shows the Update Manager workflow." lightbox="../media/update-management-center-overview.png":::
 
 To support management of your Azure VM or non-Azure machine, Update Manager relies on a new [Azure extension](/azure/virtual-machines/extensions/overview) designed to provide the functionality required to interact with the operating system to manage the assessment and application of updates. This extension is automatically installed when you initiate any Update Manager operations, such as **Check for updates**, **Install one-time update**, and **Periodic Assessment** on your machine. The extension supports deployment to Azure VMs or Azure Arc-enabled servers by using the extension framework. The Update Manager extension is installed and managed by using:
 
