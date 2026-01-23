@@ -3,7 +3,7 @@ uid: learn.wwl.describe-azure-identity-access-security
 metadata:
   title: Describe Azure identity, access, and security
   description: "Describe Azure identity, access, and security"
-  ms.date: 10/03/2024
+  ms.date: 01/09/2026
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: module
@@ -56,4 +56,4 @@ units:
 - learn.wwl.describe-azure-identity-access-security.knowledge-check
 - learn.wwl.describe-azure-identity-access-security.summary
 badge:
-  uid: learn.wwl.describe-azure-identity-access-security.badge
+  uid: learn.wwl.describe-azure-identity-access-security.badge
