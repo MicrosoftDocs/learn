@@ -7595,3 +7595,8 @@ achievements:
   title: Manage build dependencies with Azure Artifacts
   summary: Manage your application and the packages it uses across build Pipelines.
   iconUrl: /training/achievements/azure-devops/manage-dependencies-in-your-build-pipeline.svg
+- uid: learn.azdo.build-applications-with-azure-devops.trophy
+  type: trophy 
+  title: Build applications with Azure DevOps learning path
+  summary: Azure DevOps enables you to build, test, and deploy any application to any cloud or on premises. Learn how to configure build pipelines that continuously build, test, and verify your applications.
+  iconUrl: /training/achievements/azure-devops/build-applications-with-azure-devops.svg 

@@ -62876,8 +62876,8 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "",
-      "redirect_url": "https://learn.microsoft.com/en-us/azure/devops/artifacts/start-using-azure-artifacts",
+      "source_path": "learn-pr/paths/build-applications-with-azure-devops/index.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/training/browse/",
       "redirect_document_id": false
     }                                                                                                              
   ]
