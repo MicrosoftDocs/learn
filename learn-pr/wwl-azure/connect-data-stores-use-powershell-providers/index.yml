@@ -3,9 +3,9 @@ uid: learn.wwl.connect-data-stores-use-powershell-providers
 metadata:
   title: Connect with data stores using PowerShell providers
   description: "This module covers PowerShell providers that connect Windows PowerShell to data stores. They offer an easier-to-understand and consistent interface for working with data stores."
-  ms.date: 03/26/2024
+  ms.date: 01/23/2026
   author: wwlpublish
-  ms.author: tonyj
+  ms.author: robbarefoot
   ms.topic: module-standard-task-based
   ms.custom:
   - N/A
