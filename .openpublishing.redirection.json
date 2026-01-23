@@ -62719,6 +62719,46 @@
       "source_path": "learn-pr/azure-devops/deploy-kubernetes/6-summary.yml",
       "redirect_url": "https://learn.microsoft.com/en-us/azure/aks/automated-deployments?view=azure-devops&tabs=generate-dockerfile%2Cexisting-kubernetes-manifests%2Cexpose-ingress",
       "redirect_document_id": false
-    }                                              
+    },
+    {
+      "source_path": "learn-pr/azure/access-data-azure-blob-storage-multiple-protocols/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/data-lake-storage-multi-protocol-access",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/access-data-azure-blob-storage-multiple-protocols/2-understand-object-storage-solutions.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/data-lake-storage-multi-protocol-access",
+      "redirect_document_id": false
+    },                                                       
+    {
+      "source_path": "learn-pr/azure/access-data-azure-blob-storage-multiple-protocols/3-access-data-azure-blob-storage-rest-protocol.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/data-lake-storage-multi-protocol-access",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/access-data-azure-blob-storage-multiple-protocols/4-access-data-azure-blob-storage-nfs-protocol.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/data-lake-storage-multi-protocol-access",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/access-data-azure-blob-storage-multiple-protocols/5-access-data-azure-blob-storage-sftp-protocol.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/data-lake-storage-multi-protocol-access",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/access-data-azure-blob-storage-multiple-protocols/6-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/data-lake-storage-multi-protocol-access",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/access-data-azure-blob-storage-multiple-protocols/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/data-lake-storage-multi-protocol-access",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/access-data-azure-blob-storage-multiple-protocols/7-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/data-lake-storage-multi-protocol-access",
+      "redirect_document_id": false
+    }           
   ]
 }
