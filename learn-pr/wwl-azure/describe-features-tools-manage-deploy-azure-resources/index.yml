@@ -9,7 +9,7 @@ metadata:
   ms.topic: module
   ms.custom:
   - ai-video-concept
-  ms.service: azure-architecture-center
+  ms.service: azure
   ai-usage: ai-assisted
 title: Describe features and tools for managing and deploying Azure resources
 summary: This module covers tools that help you manage your Azure and on-premises resources.
