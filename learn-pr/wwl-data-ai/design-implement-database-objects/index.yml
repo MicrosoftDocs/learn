@@ -25,7 +25,7 @@ prerequisites: |
   - Experience writing T-SQL queries
   - Basic understanding of database concepts
   - Familiarity with relational database design principles
-iconUrl: /training/achievements/design-implement-database-objects.svg
+iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - intermediate
 - advanced
