@@ -67,7 +67,6 @@ subjects:
 - cloud-computing
 modules:
 - learn.intro-to-azure-cloud-shell
-- learn.powershell.intro-to-powershell
 - learn.azure.create-resource-manager-template-vs-code
 trophy:
   uid: learn.az-104-admin-prerequisites.trophy
