@@ -1,8 +1,8 @@
 Creating a data loss prevention policy isn't just a setup task. Each choice made during policy creation determines how data is evaluated, when users are interrupted, and how risk is surfaced to security teams. Small decisions around detection, scope, and actions can lead to very different outcomes, even when the same data is involved.
 
-Many DLP issues stem from policies that were created too quickly or without clear intent. Overly broad detection, unnecessary enforcement, or skipping validation can create noise, disrupt normal work, and reduce trust in the policy itself. Effective DLP policies are intentional, scoped, and validated before enforcement is introduced.
+Many data loss prevention (DLP) issues stem from policies that were created too quickly or without clear intent. Overly broad detection, unnecessary enforcement, or skipping validation can create noise, disrupt normal work, and reduce trust in the policy itself. Those issues often become more visible over time as policies interact, priorities change, and business workflows evolve.
 
-Creating DLP policies in Microsoft Purview requires making deliberate choices about detection, scope, actions, and validation. Understanding how those choices affect policy behavior helps avoid over-enforcement and improves policy outcomes.
+Creating and managing DLP policies in Microsoft Purview requires making deliberate choices about detection, scope, actions, and validation, then revisiting those choices as conditions change. Understanding how those decisions affect policy behavior helps reduce over-enforcement, improve outcomes, and support long-term policy effectiveness.
 
 ## Learning objectives
 

@@ -1,15 +1,15 @@
 ### YamlMime:Module
 uid: learn.wwl.purview-data-loss-prevention-create-manage-policies
 metadata:
-  title: Understand and plan data loss prevention
-  description: Understand and plan data loss prevention.
-  ms.date: 01/15/2026
+  title: Create and manage data loss prevention policies
+  description: Create and manage data loss prevention policies.
+  ms.date: 01/16/2026
   author: wwlpublish
   ms.author: riswinto
   ms.topic: module
   ai-usage: ai-assisted
   ms.service: purview
-title: Understand and plan data loss prevention
+title: Create and manage data loss prevention policies
 summary: |
   Effective data loss prevention (DLP) starts with understanding how risk is evaluated and how protection decisions are applied. This module focuses on the concepts and planning considerations that help organizations design DLP policies that protect sensitive data without disrupting everyday work.
 abstract: |
@@ -25,7 +25,7 @@ prerequisites: |
   - General awareness of Microsoft Purview as a data security platform
 iconUrl: /training/achievements/generic-badge.svg
 levels:
-- beginner
+- intermediate
 roles:
 - administrator
 - risk-practitioner

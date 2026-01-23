@@ -206,3 +206,15 @@ At that point, enforcement can be introduced gradually based on confidence and r
 This walkthrough demonstrated how to create a DLP policy and showed where key design decisions appear in the Microsoft Purview portal.
 
 Understanding how policy type, location, detection, actions, and simulation mode work together helps ensure policies are validated before enforcement and aligned with real-world behavior.
+
+---
+
+## Additional scenarios
+
+This walkthrough focuses on a file-based sharing scenario to show how DLP policy decisions appear during creation.
+
+The Microsoft documentation includes additional guided scenarios that apply the same concepts to other locations and data types. These scenarios are most closely aligned with the topics covered here:
+
+- [Create and deploy data loss prevention policies](/purview/dlp-create-deploy-policy?azure-portal=true)
+- [Help prevent sharing sensitive items via SharePoint and OneDrive with external users](/purview/dlp-create-policy-spo-odb-external?azure-portal=true)
+- [Help prevent sharing credit card numbers through email](/purview/dlp-create-policy-cc-email?azure-portal=true)
