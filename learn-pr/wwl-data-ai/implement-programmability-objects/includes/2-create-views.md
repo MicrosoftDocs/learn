@@ -4,6 +4,8 @@
 
 A **view** is a virtual table based on a `SELECT` statement. Unlike physical tables, views don't store data themselves. Instead, they retrieve data from underlying tables each time you query them.
 
+:::image type="content" source="../media/views.png" alt-text="Diagram showing how a view retrieves data from underlying tables.":::
+
 With views, you can hide the complexity of `JOIN` clauses, calculations, and filters from application code. For example, if your application frequently needs customer orders with product details, you can create a view that uses `JOIN` across the Customers, Orders, and Products tables. Your application then queries a single view instead of writing the same complex `JOIN` repeatedly.
 
 Views also provide a security layer. You can grant users access to specific columns through a view while restricting access to the underlying tables. This approach lets you expose only the data users need without giving them full table access.
