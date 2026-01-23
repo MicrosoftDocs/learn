@@ -17,7 +17,7 @@ Collectively, these are referred to as the threat landscape. Notice that the thr
 
 An attack vector is an entry point or route for an attacker to gain access to a system.
 
-![Diagram showing eight of the most common attack vectors: Email, Social Media, Removable Devices, Browsers, Cloud Services, Insiders, Devices, and Wireless.](/training/wwl-sci/describe-basic-cybersecurity-threats-attacks-mitigations/media/attack-vectors.png)
+:::image type="content" source="../media/attack-vectors.png" alt-text="Diagram showing eight of the most common attack vectors: Email, Social Media, Removable Devices, Browsers, Cloud Services, Insiders, Devices, and Wireless." lightbox="../media/attack-vectors.png":::
 
 Here are some examples of common attack vectors:
 
@@ -41,7 +41,7 @@ Security breaches come in different forms, including the following:
 
 A data breach is when an attacker successfully gains access or control of data. Using the intruder example, this would be similar to that person getting access to, or stealing, vital documents and information inside the building:
 
-![Diagram that shows a thief running from an office building.](/training/wwl-sci/describe-basic-cybersecurity-threats-attacks-mitigations/media/data-breach-v3.png)
+:::image type="content" source="../media/data-breach-v3.png" alt-text="Diagram that shows a thief running from an office building." lightbox="../media/data-breach-v3.png":::
 
 When an attacker achieves a security breach, they'll often want to target data, because it represents vital information. Poor data security can lead to an attacker gaining access and control of data. This can lead to serious consequences for the victim, whether that is a person, organization, or even a government. This is because the victim's data could be abused in many ways. For example, it can be held as ransom or used to cause financial or reputational harm.
 
@@ -51,7 +51,7 @@ An attack chain describes the typical chain of events during an attack that lead
 
 The MCRA includes an attack chain diagram that depicts common techniques related to both external attacks and insider risks, as shown below.
 
-![Diagram of an attack chain M C R A depicting both external attacks and insider risks.](../media/microsoft-cybersecurity-reference-architecture-attack-chain.png)
+:::image type="content" source="../media/microsoft-cybersecurity-reference-architecture-attack-chain.png" alt-text="Diagram of an attack chain M C R A depicting both external attacks and insider risks." lightbox="../media/microsoft-cybersecurity-reference-architecture-attack-chain.png":::
 
 The top portion of this diagram represents common steps seen in many
 external attacks and the Microsoft capabilities that map to each step.

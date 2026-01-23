@@ -1,17 +1,17 @@
 ### YamlMime:Module
 uid: learn.wwl.get-started-generative-ai-azure
 metadata:
-  title: Get started with generative AI in Microsoft Foundry
-  description: "Learn how you can build generative AI applications in Microsoft Foundry. Understand how to use Microsoft Foundry's extensive model marketplace, playgrounds, and evolving features."
+  title: Get started with generative AI and agents in Microsoft Foundry
+  description: "Learn how you can build generative AI applications and agents in Microsoft Foundry. Understand how to use Microsoft Foundry's extensive model marketplace, playgrounds, and evolving features."
   ms.date: 12/5/2025
   author: wwlpublish
   ms.author: sheryang
   ms.service: azure-ai-foundry
   ms.topic: module
   ai-usage: ai-assisted
-title: Get started with generative AI in Microsoft Foundry
-summary: Learn how you can build generative AI applications in Microsoft Foundry. Understand how to use Microsoft Foundry's extensive model marketplace, playgrounds, and evolving features. 
-abstract: Get started with generative AI in Microsoft Foundry
+title: Get started with generative AI and agents in Microsoft Foundry
+summary: Learn how you can build generative AI applications and agents in Microsoft Foundry. Understand how to use Microsoft Foundry's extensive model marketplace, playgrounds, and evolving features. 
+abstract: Get started with generative AI and agents in Microsoft Foundry
 prerequisites: Ability to navigate Azure portal 
 iconUrl: /training/achievements/fundamentals-azure-ai-services.svg
 levels:

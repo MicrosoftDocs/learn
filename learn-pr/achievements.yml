@@ -7595,3 +7595,8 @@ achievements:
   title: Architect message brokering and serverless applications in Azure
   summary: Learn how to create reliable messaging for your applications, and how to take advantage of serverless application services in Azure.
   iconUrl: /training/achievements/architect-messaging-serverless.svg
+- uid: learn.wwl.describe-verified-id-concepts.badge
+  type: badge 
+  title: Describe Microsoft Entra Verified ID concepts
+  summary: Learn the core concepts of decentralized identities and Microsoft Entra Verified ID.
+  iconUrl: /training/achievements/generic-badge.svg
