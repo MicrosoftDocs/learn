@@ -62719,6 +62719,206 @@
       "source_path": "learn-pr/azure-devops/deploy-kubernetes/6-summary.yml",
       "redirect_url": "https://learn.microsoft.com/en-us/azure/aks/automated-deployments?view=azure-devops&tabs=generate-dockerfile%2Cexisting-kubernetes-manifests%2Cexpose-ingress",
       "redirect_document_id": false
-    }                                              
+    },                                              
+    {
+      "source_path": "learn-pr/paths/manage-resources-in-azure/index.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/align-requirements-in-azure/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/describe-cloud-service-types/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/align-requirements-in-azure/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/describe-cloud-service-types/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/align-requirements-in-azure/2-public-private-hybrid.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/describe-cloud-service-types/",
+      "redirect_document_id": false
+    },            
+    {
+      "source_path": "learn-pr/azure/align-requirements-in-azure/3-service-models.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/describe-cloud-service-types/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/align-requirements-in-azure/4-iaas.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/describe-cloud-service-types/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/align-requirements-in-azure/5-paas.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/describe-cloud-service-types/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/align-requirements-in-azure/6-saas.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/describe-cloud-service-types/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/align-requirements-in-azure/7-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/describe-cloud-service-types/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/align-requirements-in-azure/8-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/describe-cloud-service-types/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/automate-azure-tasks-with-powershell/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/intro/azure-developer-create-resources#azure-powershell",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/automate-azure-tasks-with-powershell/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/intro/azure-developer-create-resources#azure-powershell",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/automate-azure-tasks-with-powershell/2-decide-if-azure-powershell-is-right-for-your-tasks.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/intro/azure-developer-create-resources#azure-powershell",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/automate-azure-tasks-with-powershell/3-install-azure-powershell.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/intro/azure-developer-create-resources#azure-powershell",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/automate-azure-tasks-with-powershell/4-exercise-install-azure-powershell.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/intro/azure-developer-create-resources#azure-powershell",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/automate-azure-tasks-with-powershell/5-create-resource-interactively.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/intro/azure-developer-create-resources#azure-powershell",
+      "redirect_document_id": false
+    },    
+    {
+      "source_path": "learn-pr/azure/automate-azure-tasks-with-powershell/6-exercise-create-resource-interactively.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/intro/azure-developer-create-resources#azure-powershell",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/automate-azure-tasks-with-powershell/7-create-resource-using-script.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/intro/azure-developer-create-resources#azure-powershell",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/automate-azure-tasks-with-powershell/8-exercise-create-resource-using-script.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/intro/azure-developer-create-resources#azure-powershell",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/automate-azure-tasks-with-powershell/9-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/intro/azure-developer-create-resources#azure-powershell",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/control-azure-services-with-cli/index.yml",
+      "redirect_url": "https://learn.microsoft.com/cli/azure/get-started-with-azure-cli",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/control-azure-services-with-cli/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/cli/azure/get-started-with-azure-cli",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/control-azure-services-with-cli/2-decide-if-azure-clil-is-right-for-your-tasks.yml",
+      "redirect_url": "https://learn.microsoft.com/cli/azure/get-started-with-azure-cli",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/control-azure-services-with-cli/3-install-azure-cli.yml",
+      "redirect_url": "https://learn.microsoft.com/cli/azure/get-started-with-azure-cli",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/control-azure-services-with-cli/4-exercise-install-azure-cli.yml",
+      "redirect_url": "https://learn.microsoft.com/cli/azure/get-started-with-azure-cli",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/control-azure-services-with-cli/5-create-resource-interactively.yml",
+      "redirect_url": "https://learn.microsoft.com/cli/azure/get-started-with-azure-cli",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/control-azure-services-with-cli/6-exercise-create-resource-interactively.yml",
+      "redirect_url": "https://learn.microsoft.com/cli/azure/get-started-with-azure-cli",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/control-azure-services-with-cli/7-create-resource-using-script.yml",
+      "redirect_url": "https://learn.microsoft.com/cli/azure/get-started-with-azure-cli",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/control-azure-services-with-cli/8-exercise-create-resource-using-script.yml",
+      "redirect_url": "https://learn.microsoft.com/cli/azure/get-started-with-azure-cli",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/control-azure-services-with-cli/9-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/cli/azure/get-started-with-azure-cli",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "",
+      "redirect_url": "",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "",
+      "redirect_url": "",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "",
+      "redirect_url": "",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "",
+      "redirect_url": "",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "",
+      "redirect_url": "",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "",
+      "redirect_url": "",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "",
+      "redirect_url": "",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "",
+      "redirect_url": "",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "",
+      "redirect_url": "",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "",
+      "redirect_url": "",
+      "redirect_document_id": false
+    },                
   ]
 }

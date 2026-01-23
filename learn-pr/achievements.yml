@@ -7580,3 +7580,23 @@ achievements:
   title: Describe Microsoft Entra Verified ID concepts
   summary: Learn the core concepts of decentralized identities and Microsoft Entra Verified ID.
   iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.manage-resources-in-azure.trophy
+  type: trophy 
+  title: Manage resources in Azure learning path
+  summary: Learn how to work with the Azure command line and web portal to create, manage, and control cloud based resources.
+  iconUrl: /training/achievements/manage-resources-in-azure.svg
+- uid: learn.align-requirements-in-azure.badge
+  type: badge 
+  title: Align requirements with cloud types and service models in Azure 
+  summary: Azure supports public, private, and hybrid cloud approaches to deploying cloud resources. Each approach affects several factors, including cost, maintenance requirements, and security.
+  iconUrl: /training/achievements/align-requirements-in-azure.svg
+- uid: learn.automate-azure-tasks-with-powershell.badge
+  type: badge 
+  title: Automate Azure tasks with Azure PowerShell
+  summary: Install Azure PowerShell locally and use it to manage Azure resources.
+  iconUrl: /training/achievements/automate-azure-tasks-with-powershell.svg
+- uid: learn.control-azure-services-with-cli.badge
+  type: badge 
+  title: Control Azure services with the CLI
+  summary: Install the Azure CLI locally and use it to manage Azure resources.
+  iconUrl: /training/achievements/control-azure-services-with-cli.svg
