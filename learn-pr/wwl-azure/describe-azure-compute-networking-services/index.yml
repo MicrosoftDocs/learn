@@ -3,7 +3,7 @@ uid: learn.wwl.describe-azure-compute-networking-services
 metadata:
   title: Describe Azure Compute and Networking Services
   description: "Introduction to Azure compute services (virtual machines, Azure Virtual Desktop, Azure Functions) and networking services (virtual networks, ExpressRoute, DNS, etc.)."
-  ms.date: 08/15/2025
+  ms.date: 01/09/2026
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: module
