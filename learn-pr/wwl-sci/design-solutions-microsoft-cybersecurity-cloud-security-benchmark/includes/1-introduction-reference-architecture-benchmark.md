@@ -1,4 +1,4 @@
-In this unit we introduce the Microsoft Cybersecurity Reference Architecture (MCRA). But to explain understand what the MCRA is, it's important to first introduce the Microsoft Security Adoption Framework, as the MCRA is component of the SAF.
+In this unit we introduce the Microsoft Cybersecurity Reference Architecture (MCRA). But to understand what the MCRA is, it's important to first introduce the Microsoft Security Adoption Framework, as the MCRA is a component of the SAF.
 
 ## The Microsoft Security Adoption Framework
 
