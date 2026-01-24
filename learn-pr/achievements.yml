@@ -7580,3 +7580,8 @@ achievements:
   title: Describe Microsoft Entra Verified ID concepts
   summary: Learn the core concepts of decentralized identities and Microsoft Entra Verified ID.
   iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.build-app-with-scale-sets.badge
+  type: badge 
+  title: Build a scalable application with Virtual Machine Scale Sets
+  summary: Enable your application to automatically adjust to changes in load while minimizing costs with Virtual Machine Scale Sets.
+  iconUrl: /training/achievements/build-scalable-application-with-azure-virtual-machine-scale-sets.svg
