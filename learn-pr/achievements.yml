@@ -7580,3 +7580,18 @@ achievements:
   title: Describe Microsoft Entra Verified ID concepts
   summary: Learn the core concepts of decentralized identities and Microsoft Entra Verified ID.
   iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.security.implement-network-security.trophy
+  type: trophy 
+  title: Implement network security in Azure
+  summary: Learn how to configure, protect, and isolate your networks in Azure.
+  iconUrl: /training/achievements/implement-network-security.svg
+- uid: learn.configure-the-network-for-your-virtual-machines.badge
+  type: badge 
+  title: Configure the Network for Your Virtual Machines
+  summary: Learn how to configure networking in a secure way for your Azure virtual machines.
+  iconUrl: /training/achievements/configure-network-for-azure-virtual-machines.svg
+- uid: learn.troubleshoot-azure-network-infrastructure.badge
+  type: badge 
+  title: Monitor and troubleshoot your end-to-end Azure network infrastructure by using network monitoring tools
+  summary: Use Azure Network Watcher tools, diagnostics, and logs to help find and fix networking issues in your Azure infrastructure.
+  iconUrl: /training/achievements/troubleshoot-azure-network-infrastructure.svg  
