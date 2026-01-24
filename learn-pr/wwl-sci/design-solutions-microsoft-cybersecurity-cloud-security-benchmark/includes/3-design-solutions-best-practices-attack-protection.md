@@ -15,14 +15,14 @@ Insider threats originate from individuals with legitimate access—employees, c
 
 | MCSB Control | Name |
 |---------|------|
-| [PA-1](https://learn.microsoft.com/security/benchmark/azure/mcsb-privileged-access#pa-1-separate-and-limit-highly-privilegedadministrative-users) | Separate and limit highly privileged/administrative users |
-| [PA-7](https://learn.microsoft.com/security/benchmark/azure/mcsb-privileged-access#pa-7-follow-just-enough-administration-least-privilege-principle) | Follow just enough administration (least privilege) principle |
-| [IM-2](https://learn.microsoft.com/security/benchmark/azure/mcsb-identity-management#im-2-protect-identity-and-authentication-systems) | Protect identity and authentication systems |
-| [LT-1](https://learn.microsoft.com/security/benchmark/azure/mcsb-logging-threat-detection#lt-1-enable-threat-detection-capabilities) | Enable threat detection capabilities |
-| [LT-2](https://learn.microsoft.com/security/benchmark/azure/mcsb-logging-threat-detection#lt-2-enable-threat-detection-for-identity-and-access-management) | Enable threat detection for identity and access management |
-| [DP-1](https://learn.microsoft.com/security/benchmark/azure/mcsb-data-protection#dp-1-discover-classify-and-label-sensitive-data) | Discover, classify, and label sensitive data |
-| [DP-2](https://learn.microsoft.com/security/benchmark/azure/mcsb-data-protection#dp-2-monitor-anomalies-and-threats-targeting-sensitive-data) | Monitor anomalies and threats targeting sensitive data |
-| [GS-3](https://learn.microsoft.com/security/benchmark/azure/mcsb-governance-strategy#gs-3-define-and-implement-data-protection-strategy) | Define and implement data protection strategy |
+| [PA-1](/security/benchmark/azure/mcsb-privileged-access#pa-1-separate-and-limit-highly-privilegedadministrative-users) | Separate and limit highly privileged/administrative users |
+| [PA-7](/security/benchmark/azure/mcsb-privileged-access#pa-7-follow-just-enough-administration-least-privilege-principle) | Follow just enough administration (least privilege) principle |
+| [IM-2](/security/benchmark/azure/mcsb-identity-management#im-2-protect-identity-and-authentication-systems) | Protect identity and authentication systems |
+| [LT-1](/security/benchmark/azure/mcsb-logging-threat-detection#lt-1-enable-threat-detection-capabilities) | Enable threat detection capabilities |
+| [LT-2](/security/benchmark/azure/mcsb-logging-threat-detection#lt-2-enable-threat-detection-for-identity-and-access-management) | Enable threat detection for identity and access management |
+| [DP-1](/security/benchmark/azure/mcsb-data-protection#dp-1-discover-classify-and-label-sensitive-data) | Discover, classify, and label sensitive data |
+| [DP-2](/security/benchmark/azure/mcsb-data-protection#dp-2-monitor-anomalies-and-threats-targeting-sensitive-data) | Monitor anomalies and threats targeting sensitive data |
+| [GS-3](/security/benchmark/azure/mcsb-governance-strategy#gs-3-define-and-implement-data-protection-strategy) | Define and implement data protection strategy |
 
 ## 2. External attack protection
 
@@ -36,17 +36,17 @@ External attacks originate from threat actors outside your organization—cyberc
 
 | MCSB Control | Name |
 |---------|------|
-| [NS-1](https://learn.microsoft.com/security/benchmark/azure/mcsb-network-security#ns-1-establish-network-segmentation-boundaries) | Establish network segmentation boundaries |
-| [ES-1](https://learn.microsoft.com/security/benchmark/azure/mcsb-endpoint-security#es-1-use-endpoint-detection-and-response-edr) | Use Endpoint Detection and Response (EDR) |
-| [LT-1](https://learn.microsoft.com/security/benchmark/azure/mcsb-logging-threat-detection#lt-1-enable-threat-detection-capabilities) | Enable threat detection capabilities |
-| [LT-4](https://learn.microsoft.com/security/benchmark/azure/mcsb-logging-threat-detection#lt-4-enable-logging-for-network-security-investigation) | Enable logging for network security investigation |
-| [LT-5](https://learn.microsoft.com/security/benchmark/azure/mcsb-logging-threat-detection#lt-5-centralize-security-log-management-and-analysis) | Centralize security log management and analysis |
-| [IR-1](https://learn.microsoft.com/security/benchmark/azure/mcsb-incident-response#ir-1-preparation--update-incident-response-plan-and-handling-process) | Preparation – update incident response plan and handling process |
-| [IR-2](https://learn.microsoft.com/security/benchmark/azure/mcsb-incident-response#ir-2-preparation--setup-incident-notification) | Preparation – setup incident notification |
-| [IR-3](https://learn.microsoft.com/security/benchmark/azure/mcsb-incident-response#ir-3-detection-and-analysis--create-incidents-based-on-high-quality-alerts) | Detection and analysis – create incidents based on high-quality alerts |
-| [IR-4](https://learn.microsoft.com/security/benchmark/azure/mcsb-incident-response#ir-4-detection-and-analysis--investigate-an-incident) | Detection and analysis – investigate an incident |
-| [IR-6](https://learn.microsoft.com/security/benchmark/azure/mcsb-incident-response#ir-6-containment-eradication-and-recovery--automate-the-incident-handling) | Containment, eradication and recovery – automate the incident handling |
-| [IR-7](https://learn.microsoft.com/security/benchmark/azure/mcsb-incident-response#ir-7-post-incident-activity--conduct-lesson-learned-and-retain-evidence) | Post-incident activity – conduct lessons learned and retain evidence |
+| [NS-1](/security/benchmark/azure/mcsb-network-security#ns-1-establish-network-segmentation-boundaries) | Establish network segmentation boundaries |
+| [ES-1](/security/benchmark/azure/mcsb-endpoint-security#es-1-use-endpoint-detection-and-response-edr) | Use Endpoint Detection and Response (EDR) |
+| [LT-1](/security/benchmark/azure/mcsb-logging-threat-detection#lt-1-enable-threat-detection-capabilities) | Enable threat detection capabilities |
+| [LT-4](/security/benchmark/azure/mcsb-logging-threat-detection#lt-4-enable-logging-for-network-security-investigation) | Enable logging for network security investigation |
+| [LT-5](/security/benchmark/azure/mcsb-logging-threat-detection#lt-5-centralize-security-log-management-and-analysis) | Centralize security log management and analysis |
+| [IR-1](/security/benchmark/azure/mcsb-incident-response#ir-1-preparation--update-incident-response-plan-and-handling-process) | Preparation – update incident response plan and handling process |
+| [IR-2](/security/benchmark/azure/mcsb-incident-response#ir-2-preparation--setup-incident-notification) | Preparation – setup incident notification |
+| [IR-3](/security/benchmark/azure/mcsb-incident-response#ir-3-detection-and-analysis--create-incidents-based-on-high-quality-alerts) | Detection and analysis – create incidents based on high-quality alerts |
+| [IR-4](/security/benchmark/azure/mcsb-incident-response#ir-4-detection-and-analysis--investigate-an-incident) | Detection and analysis – investigate an incident |
+| [IR-6](/security/benchmark/azure/mcsb-incident-response#ir-6-containment-eradication-and-recovery--automate-the-incident-handling) | Containment, eradication, and recovery – automate the incident handling |
+| [IR-7](/security/benchmark/azure/mcsb-incident-response#ir-7-post-incident-activity--conduct-lesson-learned-and-retain-evidence) | Post-incident activity – conduct lessons learned and retain evidence |
 
 ## 3. Supply chain attack protection
 
@@ -59,16 +59,16 @@ Supply chain attacks compromise trusted vendors, software, or services to gain a
 
 | MCSB Control | Name |
 |---------|------|
-| [DS-2](https://learn.microsoft.com/security/benchmark/azure/mcsb-devops-security#ds-2-ensure-software-supply-chain-security) | Ensure software supply chain security |
-| [DS-6](https://learn.microsoft.com/security/benchmark/azure/mcsb-devops-security#ds-6-enforce-security-of-workload-throughout-devops-lifecycle) | Enforce security of workload throughout DevOps lifecycle |
-| [GS-1](https://learn.microsoft.com/security/benchmark/azure/mcsb-governance-strategy#gs-1-align-organization-roles-responsibilities-and-accountabilities) | Align organization roles, responsibilities and accountabilities |
-| [GS-6](https://learn.microsoft.com/security/benchmark/azure/mcsb-governance-strategy#gs-6-define-and-implement-identity-and-privileged-access-strategy) | Define and implement identity and privileged access strategy |
-| [PA-6](https://learn.microsoft.com/security/benchmark/azure/mcsb-privileged-access#pa-6-use-privileged-access-workstations) | Use privileged access workstations |
-| [PA-8](https://learn.microsoft.com/security/benchmark/azure/mcsb-privileged-access#pa-8-determine-access-process-for-cloud-provider-support) | Determine access process for cloud provider support |
-| [IM-7](https://learn.microsoft.com/security/benchmark/azure/mcsb-identity-management#im-7-restrict-resource-access-based-on--conditions) | Restrict resource access based on conditions |
-| [NS-1](https://learn.microsoft.com/security/benchmark/azure/mcsb-network-security#ns-1-establish-network-segmentation-boundaries) | Establish network segmentation boundaries |
-| [NS-2](https://learn.microsoft.com/security/benchmark/azure/mcsb-network-security#ns-2-secure-cloud-native-services-with-network-controls) | Secure cloud native services with network controls |
-| [AM-2](https://learn.microsoft.com/security/benchmark/azure/mcsb-asset-management#am-2-use-only-approved-services) | Use only approved services |
+| [DS-2](/security/benchmark/azure/mcsb-devops-security#ds-2-ensure-software-supply-chain-security) | Ensure software supply chain security |
+| [DS-6](/security/benchmark/azure/mcsb-devops-security#ds-6-enforce-security-of-workload-throughout-devops-lifecycle) | Enforce security of workload throughout DevOps lifecycle |
+| [GS-1](/security/benchmark/azure/mcsb-governance-strategy#gs-1-align-organization-roles-responsibilities-and-accountabilities) | Align organization roles, responsibilities, and accountabilities |
+| [GS-6](/security/benchmark/azure/mcsb-governance-strategy#gs-6-define-and-implement-identity-and-privileged-access-strategy) | Define and implement identity and privileged access strategy |
+| [PA-6](/security/benchmark/azure/mcsb-privileged-access#pa-6-use-privileged-access-workstations) | Use privileged access workstations |
+| [PA-8](/security/benchmark/azure/mcsb-privileged-access#pa-8-determine-access-process-for-cloud-provider-support) | Determine access process for cloud provider support |
+| [IM-7](/security/benchmark/azure/mcsb-identity-management#im-7-restrict-resource-access-based-on--conditions) | Restrict resource access based on conditions |
+| [NS-1](/security/benchmark/azure/mcsb-network-security#ns-1-establish-network-segmentation-boundaries) | Establish network segmentation boundaries |
+| [NS-2](/security/benchmark/azure/mcsb-network-security#ns-2-secure-cloud-native-services-with-network-controls) | Secure cloud native services with network controls |
+| [AM-2](/security/benchmark/azure/mcsb-asset-management#am-2-use-only-approved-services) | Use only approved services |
 
 ## Bringing it all together
 

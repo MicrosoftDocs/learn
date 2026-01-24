@@ -11,10 +11,14 @@ metadata:
   ai-usage: ai-assisted
 title: Design solutions that align with the Microsoft Cybersecurity Reference Architecture (MCRA) and Microsoft cloud security benchmark (MCSB)
 summary: |
-  You learn about the Microsoft Cybersecurity Reference Architecture (MCRA) and Microsoft cloud security benchmark (MCSB) and how you can use them to design more secure solutions.
+  You learn about Microsoft's security frameworks—the Security Adoption Framework (SAF), Microsoft Cybersecurity Reference Architecture (MCRA), and Microsoft Cloud Security Benchmark (MCSB)—and how to use them to design secure solutions that protect against insider threats, external attacks, supply chain compromises, and AI-specific risks.
 abstract: |
   By the end of this module, you're able to:
-    - Understand how to use Microsoft Cybersecurity Reference Architecture (MCRA) and Microsoft cloud security benchmark (MCSB) to design more secure solutions.
+    - Use the Microsoft Cybersecurity Reference Architecture (MCRA) to design more secure solutions.
+    - Use Microsoft Cloud Security Benchmark (MCSB) to design more secure solutions.
+    - Design solutions with best practices for security capabilities and controls.
+    - Design solutions for protecting against insider threats, external attacks, and supply chain attacks.
+    - Design solutions for AI security.
 prerequisites: |
   - Conceptual knowledge of security policies, requirements, Zero Trust architecture, and management of hybrid environments.
   - Working experience with Zero Trust strategies, applying security policies, and developing security requirements based on business goals.

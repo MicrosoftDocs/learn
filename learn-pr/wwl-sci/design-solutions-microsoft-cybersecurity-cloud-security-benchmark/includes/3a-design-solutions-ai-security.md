@@ -14,11 +14,11 @@ AI platform security focuses on protecting the underlying infrastructure, models
 
 | MCSB Control | Name |
 |---------|------|
-| [AI-1](https://learn.microsoft.com/security/benchmark/azure/mcsb-v2-artificial-intelligence-security#ai-1-ensure-use-of-approved-models) | Ensure use of approved models |
-| [DP-1](https://learn.microsoft.com/security/benchmark/azure/mcsb-data-protection#dp-1-discover-classify-and-label-sensitive-data) | Discover, classify, and label sensitive data |
-| [DP-4](https://learn.microsoft.com/security/benchmark/azure/mcsb-data-protection#dp-4-enable-data-at-rest-encryption-by-default) | Enable data at rest encryption by default |
-| [DS-2](https://learn.microsoft.com/security/benchmark/azure/mcsb-devops-security#ds-2-ensure-software-supply-chain-security) | Ensure software supply chain security |
-| [DS-6](https://learn.microsoft.com/security/benchmark/azure/mcsb-devops-security#ds-6-enforce-security-of-workload-throughout-devops-lifecycle) | Enforce security of workload throughout DevOps lifecycle |
+| [AI-1](/security/benchmark/azure/mcsb-v2-artificial-intelligence-security#ai-1-ensure-use-of-approved-models) | Ensure use of approved models |
+| [DP-1](/security/benchmark/azure/mcsb-data-protection#dp-1-discover-classify-and-label-sensitive-data) | Discover, classify, and label sensitive data |
+| [DP-4](/security/benchmark/azure/mcsb-data-protection#dp-4-enable-data-at-rest-encryption-by-default) | Enable data at rest encryption by default |
+| [DS-2](/security/benchmark/azure/mcsb-devops-security#ds-2-ensure-software-supply-chain-security) | Ensure software supply chain security |
+| [DS-6](/security/benchmark/azure/mcsb-devops-security#ds-6-enforce-security-of-workload-throughout-devops-lifecycle) | Enforce security of workload throughout DevOps lifecycle |
 
 ## 2. AI application security
 
@@ -31,10 +31,10 @@ AI application security addresses vulnerabilities in application logic, orchestr
 
 | MCSB Control | Name |
 |---------|------|
-| [AI-2](https://learn.microsoft.com/security/benchmark/azure/mcsb-v2-artificial-intelligence-security#ai-2-implement-multi-layered-content-filtering) | Implement multi-layered content filtering |
-| [AI-3](https://learn.microsoft.com/security/benchmark/azure/mcsb-v2-artificial-intelligence-security#ai-3-adopt-safety-meta-prompts) | Adopt safety meta-prompts |
-| [AI-4](https://learn.microsoft.com/security/benchmark/azure/mcsb-v2-artificial-intelligence-security#ai-4-apply-least-privilege-for-agent-functions) | Apply least privilege for agent functions |
-| [AI-5](https://learn.microsoft.com/security/benchmark/azure/mcsb-v2-artificial-intelligence-security#ai-5-ensure-human-in-the-loop) | Ensure human-in-the-loop |
+| [AI-2](/security/benchmark/azure/mcsb-v2-artificial-intelligence-security#ai-2-implement-multi-layered-content-filtering) | Implement multi-layered content filtering |
+| [AI-3](/security/benchmark/azure/mcsb-v2-artificial-intelligence-security#ai-3-adopt-safety-meta-prompts) | Adopt safety meta-prompts |
+| [AI-4](/security/benchmark/azure/mcsb-v2-artificial-intelligence-security#ai-4-apply-least-privilege-for-agent-functions) | Apply least privilege for agent functions |
+| [AI-5](/security/benchmark/azure/mcsb-v2-artificial-intelligence-security#ai-5-ensure-human-in-the-loop) | Ensure human-in-the-loop |
 
 ## 3. AI monitoring and response
 
@@ -46,9 +46,9 @@ Continuous monitoring and proactive testing are essential to detect AI-specific 
 
 | MCSB Control | Name |
 |---------|------|
-| [AI-6](https://learn.microsoft.com/security/benchmark/azure/mcsb-v2-artificial-intelligence-security#ai-6-establish-monitoring-and-detection) | Establish monitoring and detection |
-| [AI-7](https://learn.microsoft.com/security/benchmark/azure/mcsb-v2-artificial-intelligence-security#ai-7-perform-continuous-ai-red-teaming) | Perform continuous AI red teaming |
-| [LT-1](https://learn.microsoft.com/security/benchmark/azure/mcsb-logging-threat-detection#lt-1-enable-threat-detection-capabilities) | Enable threat detection capabilities |
+| [AI-6](/security/benchmark/azure/mcsb-v2-artificial-intelligence-security#ai-6-establish-monitoring-and-detection) | Establish monitoring and detection |
+| [AI-7](/security/benchmark/azure/mcsb-v2-artificial-intelligence-security#ai-7-perform-continuous-ai-red-teaming) | Perform continuous AI red teaming |
+| [LT-1](/security/benchmark/azure/mcsb-logging-threat-detection#lt-1-enable-threat-detection-capabilities) | Enable threat detection capabilities |
 
 ## Bringing it all together
 
