@@ -4,7 +4,7 @@ An attack chain describes the typical sequence of events during an attack that l
 
 The following best practices and MCSB controls are technology-agnostic security principles. Separate learning paths in the SC-100 training content cover specific Microsoft solutions that can be used to implement these controls.
 
-## 1. Insider threat protection
+### Insider threat protection
 
 Insider threats originate from individuals with legitimate access—employees, contractors, or partners—who intentionally or accidentally cause harm. Key risks include data leaks, intellectual property theft, fraud, and compliance violations. Key practices include:
 
@@ -24,7 +24,7 @@ Insider threats originate from individuals with legitimate access—employees, c
 | [DP-2](/security/benchmark/azure/mcsb-data-protection#dp-2-monitor-anomalies-and-threats-targeting-sensitive-data) | Monitor anomalies and threats targeting sensitive data |
 | [GS-3](/security/benchmark/azure/mcsb-governance-strategy#gs-3-define-and-implement-data-protection-strategy) | Define and implement data protection strategy |
 
-## 2. External attack protection
+### External attack protection
 
 External attacks originate from threat actors outside your organization—cybercriminals, nation-states, or hacktivists. Effective defense requires balanced investments across the full attack lifecycle: identify, protect, detect, respond, and recover. Key practices include:
 
@@ -48,7 +48,7 @@ External attacks originate from threat actors outside your organization—cyberc
 | [IR-6](/security/benchmark/azure/mcsb-incident-response#ir-6-containment-eradication-and-recovery--automate-the-incident-handling) | Containment, eradication, and recovery – automate the incident handling |
 | [IR-7](/security/benchmark/azure/mcsb-incident-response#ir-7-post-incident-activity--conduct-lesson-learned-and-retain-evidence) | Post-incident activity – conduct lessons learned and retain evidence |
 
-## 3. Supply chain attack protection
+### Supply chain attack protection
 
 Supply chain attacks compromise trusted vendors, software, or services to gain access to your environment. These attacks are particularly dangerous because they bypass traditional perimeter defenses. Key practices include:
 

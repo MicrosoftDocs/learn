@@ -4,7 +4,7 @@ The Microsoft Cloud Security Benchmark (MCSB) v2 includes dedicated AI security 
 
 The following best practices and MCSB controls are technology-agnostic security principles. Separate learning paths in the SC-100 training content cover specific Microsoft solutions for AI security.
 
-## 1. AI platform security
+### AI platform security
 
 AI platform security focuses on protecting the underlying infrastructure, models, and training data. Key practices include:
 
@@ -20,7 +20,7 @@ AI platform security focuses on protecting the underlying infrastructure, models
 | [DS-2](/security/benchmark/azure/mcsb-devops-security#ds-2-ensure-software-supply-chain-security) | Ensure software supply chain security |
 | [DS-6](/security/benchmark/azure/mcsb-devops-security#ds-6-enforce-security-of-workload-throughout-devops-lifecycle) | Enforce security of workload throughout DevOps lifecycle |
 
-## 2. AI application security
+### AI application security
 
 AI application security addresses vulnerabilities in application logic, orchestration, and integrations with plugins or external systems. Key practices include:
 
@@ -36,7 +36,7 @@ AI application security addresses vulnerabilities in application logic, orchestr
 | [AI-4](/security/benchmark/azure/mcsb-v2-artificial-intelligence-security#ai-4-apply-least-privilege-for-agent-functions) | Apply least privilege for agent functions |
 | [AI-5](/security/benchmark/azure/mcsb-v2-artificial-intelligence-security#ai-5-ensure-human-in-the-loop) | Ensure human-in-the-loop |
 
-## 3. AI monitoring and response
+### AI monitoring and response
 
 Continuous monitoring and proactive testing are essential to detect AI-specific threats and validate security controls. Key practices include:
 
@@ -50,7 +50,7 @@ Continuous monitoring and proactive testing are essential to detect AI-specific 
 | [AI-7](/security/benchmark/azure/mcsb-v2-artificial-intelligence-security#ai-7-perform-continuous-ai-red-teaming) | Perform continuous AI red teaming |
 | [LT-1](/security/benchmark/azure/mcsb-logging-threat-detection#lt-1-enable-threat-detection-capabilities) | Enable threat detection capabilities |
 
-## Bringing it all together
+### Bringing it all together
 
 AI security builds on your existing security architecture while addressing unique risks. The MCSB v2 AI controls (AI-1 through AI-7) provide a comprehensive framework organized around three pillars:
 

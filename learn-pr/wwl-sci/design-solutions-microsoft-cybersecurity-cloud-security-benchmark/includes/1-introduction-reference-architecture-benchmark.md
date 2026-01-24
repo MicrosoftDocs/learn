@@ -38,25 +38,15 @@ The MCRA includes:
 
 Organizations use the MCRA for several purposes. Understanding these use cases helps you get the most value from this resource as a cybersecurity architect.
 
-#### Define a target security architecture
+- **Define a target security architecture**: The most common use case is using the MCRA as a starting template for security architecture. Organizations find this architecture useful because it covers capabilities across the modern enterprise estate that now spans on-premises, mobile devices, multiple clouds, and IoT/Operational Technology. You can use the diagrams to help define your target state for cybersecurity capabilities and identify gaps in your current environment.
 
-The most common use case is using the MCRA as a starting template for security architecture. Organizations find this architecture useful because it covers capabilities across the modern enterprise estate that now spans on-premises, mobile devices, multiple clouds, and IoT/Operational Technology. You can use the diagrams to help define your target state for cybersecurity capabilities and identify gaps in your current environment.
+- **Compare and assess existing capabilities**: Use the MCRA as a comparison reference for security capabilities. Compare Microsoft's recommendations with what you already own and have implemented. Many organizations discover they already have access to security technologies they weren't aware of, particularly through existing Microsoft 365 or Azure subscriptions. This assessment helps you maximize your current investments before acquiring new tools.
 
-#### Compare and assess existing capabilities
+- **Learn about Microsoft security capabilities**: The MCRA serves as an effective learning tool for understanding Microsoft's security portfolio. When viewing the diagrams in presentation mode, each capability includes a ScreenTip with a short description and a link to documentation for deeper learning. This makes it easy to quickly understand what each component does and how it fits into the overall architecture.
 
-Use the MCRA as a comparison reference for security capabilities. Compare Microsoft's recommendations with what you already own and have implemented. Many organizations discover they already have access to security technologies they weren't aware of, particularly through existing Microsoft 365 or Azure subscriptions. This assessment helps you maximize your current investments before acquiring new tools.
+- **Identify integration opportunities**: Architects and technical teams use the MCRA to identify how to take advantage of integration points within Microsoft capabilities and with existing security investments. The diagrams show how different security technologies connect and share data, helping you design solutions that maximize the value of integrated security operations.
 
-#### Learn about Microsoft security capabilities
-
-The MCRA serves as an effective learning tool for understanding Microsoft's security portfolio. When viewing the diagrams in presentation mode, each capability includes a ScreenTip with a short description and a link to documentation for deeper learning. This makes it easy to quickly understand what each component does and how it fits into the overall architecture.
-
-#### Identify integration opportunities
-
-Architects and technical teams use the MCRA to identify how to take advantage of integration points within Microsoft capabilities and with existing security investments. The diagrams show how different security technologies connect and share data, helping you design solutions that maximize the value of integrated security operations.
-
-#### Build cybersecurity knowledge
-
-For those new to cybersecurity or preparing for a career change, the MCRA provides a comprehensive overview of modern security architecture. The visual format and organized structure make it easier to understand how different security domains relate to each other and what capabilities are needed for a complete security program.
+- **Build cybersecurity knowledge**: For those new to cybersecurity or preparing for a career change, the MCRA provides a comprehensive overview of modern security architecture. The visual format and organized structure make it easier to understand how different security domains relate to each other and what capabilities are needed for a complete security program.
 
 ### Understand AI security considerations
 

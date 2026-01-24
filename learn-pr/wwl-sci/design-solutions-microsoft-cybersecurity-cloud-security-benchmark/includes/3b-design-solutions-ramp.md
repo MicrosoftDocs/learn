@@ -9,7 +9,7 @@ RaMP organizes Zero Trust deployment around two primary objectives: **explicitly
 
 Each RaMP checklist provides deployment objectives with clear accountabilities, implementation guidance, and links to detailed documentation. This structure ensures that Zero Trust implementation involves collaboration across IT, security, and business teams—not just technical changes.
 
-## Initiative 1: Explicitly validate trust for all access requests
+## Explicitly validate trust for all access requests
 
 This initiative establishes identity as the control plane for your security perimeter. The goal is to verify every user, device, application, and network connection before granting access—regardless of whether the request originates from inside or outside your network.
 
@@ -38,7 +38,7 @@ Complete the access validation picture by securing applications and network traf
 - **Use Zero Trust Network Access (ZTNA)**: Replace traditional VPN with application-specific access through solutions like Microsoft Entra application proxy. This limits exposure by providing access only to specific applications rather than entire network segments.
 - **Encrypt all traffic**: Require TLS for all connections, including traffic between internal systems. Don't assume internal network traffic is safe—attackers who gain initial access often move laterally over internal networks.
 
-## Initiative 2: Secure privileged access
+## Secure privileged access
 
 Privileged access represents the highest-value target for attackers. Compromising administrative accounts enables rapid lateral movement, data exfiltration, and ransomware deployment. RaMP provides a dedicated track for securing these critical accounts.
 
@@ -53,7 +53,7 @@ Privileged access represents the highest-value target for attackers. Compromisin
 - **Dedicate workstations for administration**: Privileged accounts should perform administrative tasks only from hardened workstations that are isolated from email, web browsing, and other high-risk activities. This prevents credential theft through phishing and malware on productivity devices.
 - **Implement device-based conditional access**: Require administrative access to originate from compliant, managed devices. Block administrative sign-ins from personal devices or devices that don't meet security baselines.
 
-## Initiative 3: Data protection and ransomware recovery
+## Data protection and ransomware recovery
 
 While not always highlighted in RaMP discussions, data protection and recovery capabilities are essential for resilience. Ransomware attacks specifically target backups to maximize pressure on victims.
 
