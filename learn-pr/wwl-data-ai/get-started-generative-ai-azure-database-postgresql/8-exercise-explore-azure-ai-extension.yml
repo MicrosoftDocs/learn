@@ -10,7 +10,7 @@ metadata:
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
-durationInMinutes: 30
+durationInMinutes: 20
 content: |
   [!include[](includes/8-exercise-explore-azure-ai-extension.md)]
 
