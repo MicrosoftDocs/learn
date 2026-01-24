@@ -7580,3 +7580,23 @@ achievements:
   title: Describe Microsoft Entra Verified ID concepts
   summary: Learn the core concepts of decentralized identities and Microsoft Entra Verified ID.
   iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.bicep-pipelines-azdo.trophy
+  type: trophy 
+  title: Deploy Azure resources by using Bicep and Azure Pipelines
+  summary: Gain all of the benefits of infrastructure as code by using an automated pipeline to deploy your Bicep templates, and integrate other deployment activities with your pipelines. You'll build pipelines using Azure Pipelines.
+  iconUrl: /training/achievements/bicep/bicep-azure-pipelines.svg
+- uid: learn.azure.build-first-bicep-deployment-pipeline-using-azure-pipelines.badge
+  type: badge 
+  title: Build Your First Bicep Deployment Pipeline by Using Azure Pipelines
+  summary: Create an automated pipeline in Azure Pipelines that securely deploys resources to Azure from Bicep code. Configure your pipeline to run on a schedule or when your configuration changes.
+  iconUrl: /training/achievements/bicep/build-first-bicep-deployment-pipeline-using-azure-pipelines.svg
+- uid: learn.azure.authenticate-azure-deployment-pipeline-service-principals.badge
+  type: badge 
+  title: Authenticate your Azure Deployment Pipeline by Using Service Principals
+  summary: Service principals enable your deployment pipelines to authenticate securely with Azure.
+  iconUrl: /training/achievements/bicep/authenticate-azure-deployment-pipeline-service-principals.svg
+- uid: learn.azure.test-bicep-code-using-azure-pipelines.badge
+  type: badge 
+  title: Test Your Bicep Code by Using Azure Pipelines
+  summary: Validate and test Bicep code in your deployment pipeline. You'll use linting, preflight validation, and the what-if operation to validate your Azure changes before you deploy, and you'll test your resources after each deployment.
+  iconUrl: /training/achievements/bicep/test-bicep-code-using-azure-pipelines.svg  
