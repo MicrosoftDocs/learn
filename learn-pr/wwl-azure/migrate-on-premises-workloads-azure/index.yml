@@ -3,9 +3,9 @@ uid: learn.wwl.migrate-onpremises-workloads-azure
 metadata:
   title: Migrate on-premises workloads to Azure
   description: Migrate on-premises workloads to Azure
-  ms.date: 05/17/2021
+  ms.date: 01/23/2026
   author: wwlpublish
-  ms.author: tonyj
+  ms.author: robbarefoot
   ms.topic: module
   ms.service: azure-migrate
 title: Migrate on-premises workloads to Azure
@@ -40,4 +40,4 @@ units:
 - learn.wwl.migrate-onpremises-workloads-azure.summary
 badge:
   uid: learn.wwl.migrate-onpremises-workloads-azure.badge
-
+

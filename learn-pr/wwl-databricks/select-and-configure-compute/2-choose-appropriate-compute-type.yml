@@ -4,7 +4,7 @@ title: Choose an appropriate compute type
 metadata:
   title: Choose an Appropriate Compute Type
   description: Learn how to choose the right compute type for your Azure Databricks workloads, comparing serverless, classic, SQL warehouses, instance pools, and job compute options.
-  ms.date: 01/14/2026
+  ms.date: 01/23/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit
