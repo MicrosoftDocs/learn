@@ -2,8 +2,7 @@ As a Security Architect, you should approach solution design by using Microsoftâ
 
 With this unified strategy in mind, let's break down the key security capability areas and the best practices for each, showing how to apply Zero Trust principles, MCRA's architectural guidance, and MCSB controls in a practical way.
 
->[!NOTE]
-> The following best practices and MCSB controls are technology-agnostic security principles. Separate learning paths in the SC-100 training content cover specific Microsoft solutions (such as Microsoft Entra, Microsoft Defender, Microsoft Sentinel, and Microsoft Purview) that can be used to implement these best practices and controls.
+The following best practices and MCSB controls are technology-agnostic security principles. Separate learning paths in the SC-100 training content cover specific Microsoft solutions (such as Microsoft Entra, Microsoft Defender, Microsoft Sentinel, and Microsoft Purview) that can be used to implement these best practices and controls.
 
 1. **Identity and Privileged Access** - Identity is the foundation of Zero Trust security. A centralized identity provider serves as the policy engine for access decisions. Key practices include:
     - **Centralize identity and enable strong authentication**: Use a single, centralized identity provider. Enforce multifactor authentication (MFA) for all users, block legacy authentication, and use passwordless methods where possible. *MCSB Controls: IM-1 (centralize identity), IM-6 (MFA), IM-7 (conditional access).*
