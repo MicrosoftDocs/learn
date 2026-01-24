@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-solutions-align-cloud-adoption-framework-well-architected-framework.cloud-adoption-framework-secure-ai
+title: Cloud Adoption Framework Secure AI guidance
+metadata:
+  title: Cloud Adoption Framework Secure AI guidance
+  description: "SC-100 preparatory unit on securing AI workloads using Cloud Adoption Framework guidance."
+  ms.date: 01/24/2026
+  author: ceperezb
+  ms.author: ceperezb
+  ms.topic: unit
+  ai-usage: ai-generated
+durationInMinutes: 7
+content: |
+  [!include[](includes/3a-cloud-adoption-framework-secure-ai.md)]

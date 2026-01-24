@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-solutions-align-cloud-adoption-framework-well-architected-framework.design-devsecops-processes
+title: Design DevSecOps processes
+metadata:
+  title: Design DevSecOps processes
+  description: "SC-100 preparatory unit on designing DevSecOps processes that integrate security throughout the software development lifecycle."
+  ms.date: 01/24/2026
+  author: ceperezb
+  ms.author: ceperezb
+  ms.topic: unit
+  ai-usage: ai-generated
+durationInMinutes: 8
+content: |
+  [!include[](includes/8a-design-devsecops-processes.md)]

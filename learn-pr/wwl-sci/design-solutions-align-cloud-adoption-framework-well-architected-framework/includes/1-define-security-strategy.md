@@ -1,16 +1,3 @@
-In this module, you'll learn how to:
-
-- Understand the Cloud Adoption Framework and how it can be used to accelerate and secure an organizations move to the cloud.
-- Understand the Well-Architected Framework and how it can be used to design solutions in the cloud that adhere to sound design principles including security.
-
-The content in the module will help you prepare for the certification exam SC-100: Microsoft Cybersecurity Architect.
-
-## Prerequisites
-
-- Conceptual knowledge of security policies, requirements, zero trust architecture, and management of hybrid environments
-- Working experience with zero trust strategies, applying security policies, and developing security requirements based on business goals
-
-## Define a security strategy
 
 The ultimate objectives for a security organization don't change with adoption of cloud services, but how those objectives are achieved will change. Security teams must still focus on reducing business risk from attacks and work to get confidentiality, integrity, and availability assurances built into all information systems and data.
 

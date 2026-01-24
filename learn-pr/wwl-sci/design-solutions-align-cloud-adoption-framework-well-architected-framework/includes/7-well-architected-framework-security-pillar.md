@@ -73,3 +73,30 @@ We cover the following areas in the security pillar of the Microsoft Azure Well-
 | Information protection and storage | Protecting data at rest is required to maintain confidentiality, integrity, and availability assurances across all workloads. |
 | Network security and containment | Network security has been the traditional linchpin of enterprise security efforts. However, cloud computing has increased the requirement for network perimeters to be more porous and many attackers have mastered the art of attacks on identity system elements (which nearly always bypass network controls). |
 | Security Operations | Security operations maintain and restores the security assurances of the system as live adversaries attack it. The tasks of security operations are described well by the NIST Cybersecurity Framework functions of Detect, Respond, and Recover. |
+
+## Securing AI workloads
+
+AI workloads introduce security challenges that extend beyond traditional application security. The Well-Architected Framework provides dedicated guidance for AI workloads that applies the security pillar's principles to these unique scenarios.
+
+### AI-specific security considerations
+
+AI systems create new attack surfaces that require specialized controls:
+
+- **Prompt injection**: Attackers craft malicious inputs to manipulate AI model behavior, bypass safety controls, or extract unauthorized information. Design input validation and output filtering as defense layers.
+- **Training data protection**: Training datasets often contain sensitive information. Protect data confidentiality during collection, storage, and model training to prevent data leakage through model outputs.
+- **Model integrity**: AI models represent significant intellectual property and operational value. Implement controls to prevent unauthorized access, modification, or theft of model weights and parameters.
+- **Inference security**: AI inference endpoints can leak sensitive information through carefully crafted queries. Monitor for data exfiltration patterns and implement rate limiting and anomaly detection.
+
+### Applying Zero Trust to AI
+
+The security pillar's Zero Trust principles apply directly to AI workloads:
+
+| Zero Trust Principle | AI Application |
+|---------------------|----------------|
+| **Verify explicitly** | Authenticate all requests to AI endpoints; validate input content before processing |
+| **Least privilege** | Restrict model access to authorized users; limit training data exposure to minimum required |
+| **Assume breach** | Implement content filtering on outputs; monitor for prompt injection and jailbreak attempts |
+
+### Responsible AI as a security imperative
+
+Responsible AI principles—fairness, reliability, privacy, inclusiveness, transparency, and accountability—directly support security objectives. An AI system that operates unpredictably or produces harmful outputs represents both an ethical failure and a security risk. Implementing responsible AI guardrails helps ensure AI systems behave within intended boundaries, reducing the risk of exploitation.
