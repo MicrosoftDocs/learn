@@ -12,6 +12,6 @@ metadata:
   ms.topic: unit
   ms.custom:
   - N/A
-durationInMinutes: 1
+durationInMinutes: 30
 content: |
   [!include[](includes/5-exercise-generate-vector-embeddings-with-azure-openai.md)]
