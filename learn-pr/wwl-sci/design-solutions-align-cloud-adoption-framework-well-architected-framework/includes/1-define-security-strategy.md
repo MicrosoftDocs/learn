@@ -1,27 +1,31 @@
 
-The ultimate objectives for a security organization don't change with adoption of cloud services, but how those objectives are achieved will change. Security teams must still focus on reducing business risk from attacks and work to get confidentiality, integrity, and availability assurances built into all information systems and data.
+Before diving into specific frameworks, you need to understand why a deliberate security strategy matters. Cloud adoption changes *how* you achieve security objectives—not *what* those objectives are. Your organization must still protect confidentiality, integrity, and availability. However, the tactics, tools, and team structures that worked on-premises often don't translate directly to cloud environments.
 
-### Modernize your security strategy
+## Why security strategy must evolve
 
-Security teams need to modernize strategies, architectures, and technology as the organization adopts cloud and operates it over time. While the size and number of changes can initially seem daunting, the modernization of the security program allows security to shed some painful burdens associated with legacy approaches. An organization can temporarily operate with legacy strategy and tooling, but this approach is difficult to sustain with the pace of change in cloud and the threat environment:
+Traditional security approaches create friction in cloud adoption. When security teams default to "no" or rely exclusively on network perimeter controls, they face two problems:
 
-- Security teams are likely to be left out of cloud adoption decision making if they take a legacy mindset of "arms-length" security where the answer always starts with "no" (instead of working together with IT and business teams to reduce risk while enabling the business).
-- Security teams will have a difficult time detecting and defending against cloud attacks if they use only legacy on-premises tooling and exclusively adhere to network perimeter-only doctrine for all defenses and monitoring.
+- **Exclusion from decisions**: Business and IT teams bypass security involvement to maintain velocity, leaving security gaps in cloud deployments.
+- **Blind spots**: Legacy tools designed for on-premises environments can't detect cloud-native attack patterns or protect identities across distributed systems.
 
-### Monitor and protect at cloud-scale
+A modern security strategy embraces the shared responsibility model, shifts focus from network perimeters to identity-based controls, and uses cloud-native tools for detection and response.
 
-Defending at cloud-scale is a significant transformation effort, mandating the use of cloud-native detection and automation capabilities, and the introduction of an identity perimeter to help monitor and protect cloud and mobile assets.
+## Two strategic objectives
 
--   The [Microsoft identity platform](/azure/active-directory/develop/v2-overview) helps you incorporate modern authentication and authorization mechanisms into your applications.
--   [Microsoft Sentinel](/azure/sentinel/overview) provides cloud-native security analytics and threat intelligence across your organization, enabling improved threat detection that makes use of large repositories of threat intelligence, and the nearly unlimited processing and storage capabilities of the cloud.
+As a security architect, your cloud security strategy should address two complementary goals:
 
-We recommend that security teams take an agile approach to modernizing security—rapidly modernizing the most critical aspects of the strategy, continuously improving in increments, moving forward.
+| Objective | Focus | Example |
+|-----------|-------|---------|
+| **Security of the cloud** | Protecting cloud resources | Integrate security into cloud service planning and operations |
+| **Security from the cloud** | Using cloud to improve security | Adopt cloud-native security tools like Microsoft Sentinel and Defender for Cloud |
 
-### Security of the cloud and from the cloud
+These objectives aren't sequential—you pursue both simultaneously throughout your cloud journey.
 
-As your organization adopts cloud services, security teams will work toward two main objectives:
+## Frameworks guide strategy execution
 
--   **Security of the cloud** (securing cloud resources): Security should be integrated into the planning and operation of cloud services to ensure that those core security assurances are consistently applied across all resources.
--   **Security from the cloud** (using the cloud to transform security): Security should immediately start planning and thinking about how to use cloud technologies to modernize security tools and processes, particularly natively integrated security tools. Security tools are increasingly being hosted in the cloud—providing capabilities that are difficult or impossible to do in an on-premises environment.
+Defining a security strategy is essential, but executing that strategy requires structured guidance. Microsoft provides two frameworks that translate strategic intent into architectural decisions:
 
-For more information on defining a security strategy, see [Define a security strategy](/azure/cloud-adoption-framework/strategy/define-security-strategy).
+- **Cloud Adoption Framework (CAF)**: Guides your organization's cloud adoption journey, with the Secure methodology addressing security at each phase
+- **Well-Architected Framework (WAF)**: Provides design principles for building secure, reliable workloads
+
+The following units explore these frameworks in detail, showing how they help you operationalize your security strategy across organizational, environmental, and workload scopes.
