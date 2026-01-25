@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.design-solutions-align-cloud-adoption-framework-well-architected-framework.introduction-azure-landing-zones
-title: Introduction to Azure Landing Zones
+title: Understand Azure Landing Zones
 metadata:
-  title: Introduction to Azure Landing Zones
-  description: "SC-100 preparatory unit on the topic: Introduction to Azure Landing Zones."
+  title: Understand Azure Landing Zones
+  description: "Understand Azure Landing Zones."
   ms.date: 01/24/2026
   author: ceperezb
   ms.author: ceperezb
