@@ -94,26 +94,6 @@ Security is a human discipline that requires clear roles and responsibilities. T
 
 As a Security Architect, you work across these teams to ensure security is integrated into designs, decisions are informed by risk, and controls are operationally sustainable.
 
-## Security transformation drivers
-
-Security organizations face two major transformations:
-
-**Security as business risk**: Security has evolved from a purely technical discipline into business risk management. This shift is driven by:
-- Digital transformation increasing the potential attack surface
-- Threat landscape growth fueled by industrialized attack economies with specialized skills and commoditized attack tools
-
-**Platform change**: Security teams are grappling with a technical platform shift to the cloud—comparable to factories moving from private generators to an electrical grid. While teams often have the right foundational skills, they can be overwhelmed by changes to nearly every process and technology.
-
-**Shift in expectations**: Business agility, especially for digital transformation, can quickly unseat market leaders. While security once started with "no" to block projects, the urgency of digital transformation requires a new engagement model: "let's talk about how to stay safe while you do what is needed to stay relevant."
-
-## Guiding lasting transformation
-
-Transforming how business and technology teams view security requires alignment with priorities, processes, and risk frameworks:
-
-- **Culture**: Security must focus on safely meeting the business mission, not impeding it. Security must also become normalized as the internet allows adversaries to attempt attacks at any time. This cultural shift requires improved processes, partnerships, and ongoing leadership support.
-- **Risk ownership**: Accountability for security risk should be assigned to the same roles that own all other risks, freeing security to be a trusted advisor rather than a scapegoat. Security should be responsible for sound, balanced advice communicated in business language, but not held accountable for decisions it doesn't own.
-- **Security talent**: Security talent is in chronic shortage. Organizations should develop and distribute security knowledge and skills by growing security skill sets within existing IT and business teams, and by recruiting diverse skill sets to security teams for fresh perspectives.
-
 ## Bringing it all together
 
 The CAF Secure methodology provides Security Architects with a comprehensive framework for integrating security into cloud adoption. By applying CIA Triad principles and Zero Trust across all CAF phases, you ensure that security isn't an afterthought but a foundational element of your cloud architecture.

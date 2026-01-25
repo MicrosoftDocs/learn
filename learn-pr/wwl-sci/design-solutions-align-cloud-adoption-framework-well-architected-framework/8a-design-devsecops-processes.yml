@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.design-solutions-align-cloud-adoption-framework-well-architected-framework.design-devsecops-processes
-title: Design DevSecOps processes
+title: Design DevSecOps processes that align with best practices of the Cloud Adoption Framework
 metadata:
-  title: Design DevSecOps processes
-  description: "SC-100 preparatory unit on designing DevSecOps processes that integrate security throughout the software development lifecycle."
+  title: Design DevSecOps processes that align with best practices of the Cloud Adoption Framework
+  description: "Design DevSecOps processes that align with best practices of the Cloud Adoption Framework."
   ms.date: 01/24/2026
   author: ceperezb
   ms.author: ceperezb
