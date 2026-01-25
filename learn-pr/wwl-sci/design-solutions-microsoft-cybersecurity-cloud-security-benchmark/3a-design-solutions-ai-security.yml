@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.design-solutions-microsoft-cybersecurity-cloud-security-benchmark.design-solutions-ai-security
-title: Design solutions that align best practice to secure AI solutions
+title: Design AI solutions that align to the Microsoft Cloud Security Benchmark
 metadata:
-  title: Design solutions that align best practice to secure AI solutions
-  description: "SC-100 preparatory content on topic: Design solutions that align best practice to secure AI solutions."
+  title: Design AI solutions that align to the Microsoft Cloud Security Benchmark
+  description: "Design AI solutions that align to the Microsoft Cloud Security Benchmark."
   ms.date: 09/26/2024
   author: ceperezb
   ms.author: ceperezb
