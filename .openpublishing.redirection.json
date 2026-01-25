@@ -62779,6 +62779,51 @@
       "source_path": "learn-pr/azure/app-service-scale-up-scale-out/6-summary.yml",
       "redirect_url": "https://learn.microsoft.com/en-us/azure/app-service/manage-scale-up",
       "redirect_document_id": false
-    }                                                  
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/blazor-build-rich-interactive-components/index.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/blazor-build-rich-interactive-components/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/blazor-build-rich-interactive-components/2-create-user-interfaces-blazor-components.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/blazor-build-rich-interactive-components/3-exercise-use-javascript-libraries-blazor-apps.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/blazor-build-rich-interactive-components/4-improve-app-interactivity-lifecycle-events.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/blazor-build-rich-interactive-components/5-exercise-improve-app-interactivity-lifecycle-events.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/blazor-build-rich-interactive-components/6-reuse-components-creating-templates.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/blazor-build-rich-interactive-components/7-exercise-reuse-components-creating-templates.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/blazor-build-rich-interactive-components/8-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+      "redirect_document_id": false
+    }                                                    
   ]
 }

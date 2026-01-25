@@ -7590,3 +7590,8 @@ achievements:
   title: Describe Microsoft Entra Verified ID concepts
   summary: Learn the core concepts of decentralized identities and Microsoft Entra Verified ID.
   iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.build-interactive-components-blazor-web-apps.badge
+  type: badge
+  title: Build rich interactive components with Blazor web apps
+  summary: Learn how to interoperate Blazor apps with JavaScript code, use templated components, and handle component lifecycle events.
+  iconUrl: /training/achievements/build-interactive-components-blazor-web-apps.svg
