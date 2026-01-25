@@ -35,6 +35,7 @@ subjects:
   - security
   - cloud-security
 units:
+- learn.wwl.design-solutions-align-cloud-adoption-framework-well-architected-framework.introduction
 - learn.wwl.design-solutions-align-cloud-adoption-framework-well-architected-framework.define-security-strategy
 - learn.wwl.design-solutions-align-cloud-adoption-framework-well-architected-framework.introduction-cloud-adoption-framework
 - learn.wwl.design-solutions-align-cloud-adoption-framework-well-architected-framework.cloud-adoption-framework-secure-methodology
