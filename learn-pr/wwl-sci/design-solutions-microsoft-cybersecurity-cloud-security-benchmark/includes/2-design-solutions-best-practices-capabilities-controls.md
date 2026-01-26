@@ -4,7 +4,7 @@ With this unified strategy in mind, let's break down the key security capability
 
 The following best practices and MCSB controls are technology-agnostic security principles. Separate learning paths in the SC-100 training content cover specific Microsoft solutions (such as Microsoft Entra, Microsoft Defender, Microsoft Sentinel, and Microsoft Purview) that can be used to implement these best practices and controls.
 
-### Identity and Privileged Access
+### Identity and privileged Access
 
 Identity is the foundation of Zero Trust security. A centralized identity provider serves as the policy engine for access decisions. Key practices include:
 
@@ -23,7 +23,7 @@ Identity is the foundation of Zero Trust security. A centralized identity provid
 | [PA-3](/security/benchmark/azure/mcsb-privileged-access#pa-3-manage-lifecycle-of-identities-and-entitlements) | Manage lifecycle of identities and entitlements |
 | [PA-8](/security/benchmark/azure/mcsb-privileged-access#pa-8-determine-access-process-for-cloud-provider-support) | Determine access process for cloud provider support |
 
-### Endpoint and Device Security
+### Endpoint and device Security
 
 Zero Trust requires continuous verification of device security posture. Key practices include:
 
@@ -40,7 +40,7 @@ Zero Trust requires continuous verification of device security posture. Key prac
 | [PV-3](/security/benchmark/azure/mcsb-posture-vulnerability-management#pv-3-define-and-establish-secure-configurations-for-compute-resources) | Define and establish secure configurations for compute resources |
 | [PV-5](/security/benchmark/azure/mcsb-posture-vulnerability-management#pv-5-perform-vulnerability-assessments) | Perform vulnerability assessments |
 
-### Network and Infrastructure Security
+### Network and infrastructure Security
 
 Network controls remain essential for defense-in-depth and breach containment. Key practices include:
 
@@ -59,7 +59,7 @@ Network controls remain essential for defense-in-depth and breach containment. K
 | [NS-10](/security/benchmark/azure/mcsb-network-security#ns-10-ensure-domain-name-system-dns-security) | Ensure Domain Name System (DNS) security |
 | [LT-1](/security/benchmark/azure/mcsb-logging-threat-detection#lt-1-enable-threat-detection-capabilities) | Enable threat detection capabilities |
 
-### Application Security and DevOps
+### Application security and DevOps
 
 Applications and DevOps pipelines must be secured to prevent vulnerabilities. Key practices include:
 
@@ -79,7 +79,7 @@ Applications and DevOps pipelines must be secured to prevent vulnerabilities. Ke
 | [DP-3](/security/benchmark/azure/mcsb-data-protection#dp-3-encrypt-sensitive-data-in-transit) | Encrypt sensitive data in transit |
 | [DP-4](/security/benchmark/azure/mcsb-data-protection#dp-4-enable-data-at-rest-encryption-by-default) | Enable data at rest encryption by default |
 
-### Data Protection and Governance
+### Data protection and governance
 
 Security is ultimately about protecting data. Key practices include:
 
@@ -100,7 +100,7 @@ Security is ultimately about protecting data. Key practices include:
 | [BR-1](/security/benchmark/azure/mcsb-backup-recovery#br-1-ensure-regular-automated-backups) | Ensure regular automated backups |
 | [BR-2](/security/benchmark/azure/mcsb-backup-recovery#br-2-protect-backup-and-recovery-data) | Protect backup and recovery data |
 
-### Threat Detection and Response
+### Threat detection and response
 
 Assume breach and build robust detection and response capabilities. Key practices include:
 
@@ -120,7 +120,7 @@ Assume breach and build robust detection and response capabilities. Key practice
 | [IR-5](/security/benchmark/azure/mcsb-incident-response#ir-5-detection-and-analysis--prioritize-incidents) | Detection and analysis – prioritize incidents |
 | [IR-6](/security/benchmark/azure/mcsb-incident-response#ir-6-containment-eradication-and-recovery--automate-the-incident-handling) | Containment, eradication, and recovery – automate the incident handling |
 
-### Security Posture Management and Compliance
+### Security posture management and compliance
 
 Maintain and improve security posture continuously. Key practices include:
 
