@@ -44,7 +44,7 @@ These experiences are designed to feel incremental, not disruptive.
 - **Voice interaction with Microsoft 365 Copilot**  
   Users can brainstorm ideas, draft responses, or prepare meeting content using voice-reducing app switching and manual typing.
 
-Together, these capabilities make AI feel like a natural extension of Windows instead of “one more app to launch.”
+Together, these capabilities make AI feel like a natural extension of Windows instead of "one more app to launch."
 
 > [!IMPORTANT]
 > These AI experiences within Windows—such as Microsoft 365 Copilot File Explorer integration, and voice interactions—are **in preview** and may change.
@@ -64,7 +64,7 @@ For example:
 - **Research and troubleshooting in Edge for Business**  
   AI capabilities in [Microsoft Edge for Business](https://learn.microsoft.com/en-us/deployedge/microsoft-edge-for-business) help synthesize information across multiple tabs while maintaining enterprise security, compliance, and control.
 
-For end users, these same experiences reduce common support requests—such as “where do I find this?” or “how do I get started?”—before a ticket is ever created.
+For end users, these same experiences reduce common support requests—such as "where do I find this?" or "how do I get started?"—before a ticket is ever created.
 
 ## Evolving the Windows platform for agents
 
@@ -75,7 +75,7 @@ Windows includes **native agent infrastructure** designed to help agents operate
 By embedding agent capabilities into core Windows services:
 
 - Copilot and other agents can coordinate tasks across apps, files, and system functions
-- Users receive context-aware assistance based on what they are doing
+- Users receive context-aware assistance based on what they're doing
 - IT teams retain control over what agents are allowed to do and when
 
 Agents become first-class participants in the Windows experience, operating under the same governance and security expectations as other system components.
@@ -88,7 +88,7 @@ All of the AI and agent experiences discussed in this module run on a native AI 
 
 Foundry supports the full AI development lifecycle—from model selection to deployment—and enables workloads to run across **CPUs, GPUs, and NPUs**. This flexibility allows organizations to choose the appropriate execution path based on performance, privacy, and operational requirements.
 
-For IT teams, this means AI capabilities can be introduced into **line-of-business applications** using a standardized platform that aligns with Windows security, identity, and management controls. Rather than treating AI as a separate environment, Foundry integrates AI directly into Windows-based workflows in a way that is predictable, supportable, and scalable.
+For IT teams, this means AI capabilities can be introduced into **line-of-business applications** using a standardized platform that aligns with Windows security, identity, and management controls. Rather than treating AI as a separate environment, Foundry integrates AI directly into Windows-based workflows in a way that's predictable, supportable, and scalable.
 
 ## How Microsoft Foundry on Windows supports IT and developers
 

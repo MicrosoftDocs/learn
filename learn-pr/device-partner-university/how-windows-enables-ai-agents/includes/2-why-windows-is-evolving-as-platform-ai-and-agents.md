@@ -35,13 +35,13 @@ Instead of step-by-step instructions from IT, policies and apps are automaticall
 
 Rather than guessing or searching online, an agent can gather logs, summarize findings, suggest actions, and when permitted, carry out remediation. That means fewer remote sessions and less time in Event Viewer.
 
-The value is not “AI for AI’s sake.” The value is **fewer repetitive tickets, faster remediation, and more consistent user experiences**—while IT maintains control through policy and governance.
+The value isn't “AI for AI’s sake.” The value is **fewer repetitive tickets, faster remediation, and more consistent user experiences**—while IT maintains control through policy and governance.
 
 ## What AI agents are
 
 Before going deeper into how agents show up in Windows, it helps to define what we mean by an **AI agent**.
 
-An AI agent is an AI-powered tool that can **do work on your behalf**, not just answer questions. While [Microsoft 365 Copilot](/copilot/microsoft-365/microsoft-365-copilot-overview) focuses on conversation, guidance, and suggestions, **agents are designed to take action** — always within the permissions and policies your organization sets.
+An AI agent is an AI-powered tool that can **do work on your behalf**, not just answer questions. While [Microsoft 365 Copilot](/copilot/microsoft-365/microsoft-365-copilot-overview) focuses on conversation, guidance, and suggestions, **agents are designed to take action**—always within the permissions and policies your organization sets.
 
 Put simply:
 
@@ -50,7 +50,7 @@ Put simply:
 
 ## How to think about agents
 
-You can think of an AI agent as a **digital teammate**. It can understand intent, reason through multi-step tasks, and take action across apps and services — all while respecting identity, permissions, and organizational policy. Instead of completing every individual step yourself, you describe the outcome you want, and the agent helps carry it out.
+You can think of an AI agent as a **digital teammate**. It can understand intent, reason through multi-step tasks, and take action across apps and services—all while respecting identity, permissions, and organizational policy. Instead of completing every individual step yourself, you describe the outcome you want, and the agent helps carry it out.
 
 ## What agents can assist with
 
@@ -62,7 +62,7 @@ For example, an AI agent could:
 - **Summarize files or folders** to help prepare a brief or report
 - **Guide users through setup or troubleshooting** without a ticket right away
 
-In other words, agents don’t just provide answers — they take action under organizational policy, identity, and consent.
+In other words, agents don’t just provide answers—they take action under organizational policy, identity, and consent.
 
 ## Evolving the Windows platform
 
@@ -78,7 +78,7 @@ This shift means agents aren’t running “off to the side.” They become firs
 
 ## Phases of AI evolution in Windows
 
-:::image type="content" source="../media/evolution-of-ai.svg" alt-text="Three phases of AI evolution showing a human with an assistant, human-led agents, and human-led agent-operated workflows.":::
+:::image type="content" source="../media/evolution-of-ai.svg" alt-text="Infographic showing three phases of AI evolution showing a human with an assistant, human-led agents, and human-led agent-operated workflows.":::
 
 | Phase | Description | What it looks like in practice |
 |-------|-------------|--------------------------------|
@@ -97,7 +97,7 @@ You can:
 - Move on to other tasks while your agents work for you
 
 > [!IMPORTANT]
-> Features and capabilities in this section **labeled as preview** are not final and may change before general availability. Features, timelines, and experiences are subject to change.
+> Features and capabilities in this section **labeled as preview** aren't final and may change before general availability. Features, timelines, and experiences are subject to change.
 
 ## A more secure and resilient foundation
 
@@ -118,7 +118,7 @@ Most IT teams recognize the patterns immediately. A user resets their VPN creden
 
 Traditionally, these situations turn into tickets, remote sessions, and manual investigation. Users search online, wait in queues, and IT walks through the same troubleshooting steps over and over again.
 
-With AI and agent capabilities built directly into Windows, these aren’t simply “support incidents” anymore — they become guided workflows. The device itself can help users diagnose issues, gather relevant context for IT, or even resolve common problems automatically before they hit the help desk.
+With AI and agent capabilities built directly into Windows, these aren’t simply “support incidents” anymore—they become guided workflows. The device itself can help users diagnose issues, gather relevant context for IT, or even resolve common problems automatically before they hit the help desk.
 
 :::image type="content" source="../media/ai-decision-flow.svg" alt-text="Infographic showing traditional AI workflow versus integrated AI in Windows.":::
 
@@ -130,7 +130,7 @@ With AI and agent capabilities built directly into Windows, these aren’t simpl
 | Failed update | Downtime → troubleshooting → sometimes reimage | Recovery guidance with automated rollback options |
 | “What changed recently?” | IT manually checks policy, app installs, and updates | System surfaces recent changes automatically as context |
 
-For example, a salesperson is about to join a customer call and their VPN connection fails. Instead of submitting a ticket and waiting, Windows detects repeated connection errors, launches guided troubleshooting, repairs the profile, and verifies connectivity. The user joins the meeting on time — IT sees the summary afterward instead of an urgent escalation.
+For example, a salesperson is about to join a customer call and their VPN connection fails. Instead of submitting a ticket and waiting, Windows detects repeated connection errors, launches guided troubleshooting, repairs the profile, and verifies connectivity. The user joins the meeting on time—IT sees the summary afterward instead of an urgent escalation.
 
 That’s the difference: not replacing IT but moving routine fixes closer to the user while preserving auditability and control.
 
@@ -166,4 +166,4 @@ List three ways AI agents integrated into Windows could reduce repetitive suppor
 
 Windows is evolving to embed AI into the operating system, reducing friction and enabling smarter workflows. This shift sets the stage for bringing AI and agents into familiar Windows experiences.
 
-Next, we’ll look at **how AI and agents show up in everyday Windows experiences** and what it means to bring assistance directly into familiar surfaces such as the taskbar, File Explorer, and system settings.
+Next, we look at **how AI and agents show up in everyday Windows experiences** and what it means to bring assistance directly into familiar surfaces such as the taskbar, File Explorer, and system settings.

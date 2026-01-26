@@ -12,7 +12,7 @@ Together, these factors help AI move from something that feels experimental to s
 
 ## Understanding the hardware difference
 
-Copilot+ PCs are not simply faster versions of existing devices. They use a different balance of compute resources, with each processor type handling a specific kind of workload.
+Copilot+ PCs aren't faster versions of existing devices. They use a different balance of computer resources, with each processor type handling a specific kind of workload.
 
 :::image type="content" source="../media/understanding-processors-for-ai.svg" alt-text="Infographic titled 'Understanding Processors for AI' comparing CPU, GPU, and NPU roles. The CPU handles general-purpose computing but isn’t optimized for sustained AI workloads. The GPU accelerates graphics and some AI tasks through parallel processing but can be power‑intensive. The NPU provides efficient, low‑power on‑device AI inference using specialized hardware.":::
 
