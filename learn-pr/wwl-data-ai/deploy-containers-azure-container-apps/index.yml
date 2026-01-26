@@ -1,0 +1,48 @@
+### YamlMime:Module
+uid: learn.wwl.deploy-containers-azure-container-apps
+metadata:
+  title: Deploy Containers to Azure Container Apps
+  description: Deploy containerized applications to Azure Container Apps. Configure environments, runtime settings, secrets, registry authentication, and verify deployments with logs and status.
+  ms.date: 01/26/2026
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: module-standard-task-based
+  ai-usage: ai-assisted
+  ms.service: azure-container-apps
+title: Deploy containers to Azure Container Apps
+summary: Deploy containerized applications to Azure Container Apps. Configure environments, runtime settings, secrets, registry authentication, and verify deployments with logs and status.
+abstract: |
+  After completing this module, you'll be able to:
+    - Explain how Azure Container Apps environments affect networking, logging, and isolation.
+    - Deploy a container app using the Azure CLI and using the Azure CLI with a YAML definition.
+    - Configure runtime settings using environment variables and secrets.
+    - Configure image pull authentication for private registries.
+    - Verify container app health using logs, revisions, and replica status.
+prerequisites: |
+  Before beginning this module, you should have:
+  - Programming experience with languages such as Python, JavaScript, or C#.
+  - Basic understanding of Azure services and cloud computing concepts.
+  - Familiarity with Docker and container concepts.
+  - Familiarity with command-line tools including Azure CLI.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- azure-container-apps
+- azure-container-registry
+subjects:
+- containers
+units:
+- learn.wwl.deploy-containers-azure-container-apps.introduction
+- learn.wwl.deploy-containers-azure-container-apps.container-apps-environments
+- learn.wwl.deploy-containers-azure-container-apps.deploy-container-app
+- learn.wwl.deploy-containers-azure-container-apps.configure-runtime
+- learn.wwl.deploy-containers-azure-container-apps.connect-to-registries
+- learn.wwl.deploy-containers-azure-container-apps.verify-deployment
+- learn.wwl.deploy-containers-azure-container-apps.exercise-deploy-backend-api
+- learn.wwl.deploy-containers-azure-container-apps.module-assessment
+- learn.wwl.deploy-containers-azure-container-apps.summary
+badge:
+  uid: learn.wwl.deploy-containers-azure-container-apps.badge
