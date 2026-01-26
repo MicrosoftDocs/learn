@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
-uid: learn.dpu.how-windows-enables-ai-agents.device-based-ai-capabilities-copilot-plus-pcs
-title: Device based AI capabilities Copilot plus PCs
+uid: learn.dpu.how-windows-enables-ai-agents.device-based-ai-capabilities
+title: Device based AI capabilities
 metadata:
-  title: Device Based AI Capabilities Copilot Plus PCs
+  title: Device Based AI Capabilities
   description: This content is part of the "How Windows enables AI and agents" module.
   ms.date: 01/21/2026
   author: hhreyes21
@@ -10,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 5
 content: |
-  [!include[](includes/4-device-based-ai-capabilities-copilot-plus-pcs.md)]
+  [!include[](includes/4-device-based-ai-capabilities.md)]
