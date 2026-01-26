@@ -1,0 +1,38 @@
+### YamlMime:Module
+uid: learn.dpu.how-windows-enables-ai-agents
+title: How Windows enables AI and agents
+metadata:
+  title: How Windows Enables AI And Agents
+  description: Discover how Windows is evolving into a platform for AI and agents by integrating Copilot into familiar experiences, enabling advanced AI on Copilot+ PCs, and creating a secure foundation for people and agents to work together.
+  ms.date: 01/21/2026
+  author: hhreyes21
+  ms.author: v-homerreyes
+  ms.topic: module-standard-concept-based
+  ms.service: windows-11
+summary: >
+  Discover how Windows is evolving into a platform for AI and agents by integrating Copilot into familiar experiences, enabling advanced AI on Copilot+ PCs, and creating a secure foundation for people and agents to work together.
+abstract: |2+
+
+prerequisites: |
+  - None
+iconUrl: /training/achievements/generic-badge.svg
+ratingEnabled: false
+levels:
+  - beginner
+roles:
+  - administrator
+  - business-leader
+  - business-owner
+  - business-user
+  - technology-manager
+products:
+  - windows-11
+units:
+  - learn.dpu.how-windows-enables-ai-agents.introduction
+  - learn.dpu.how-windows-enables-ai-agents.why-windows-is-evolving-as-platform-ai-and-agents
+  - learn.dpu.how-windows-enables-ai-agents.ai-and-agent-integration-across-windows-experiences
+  - learn.dpu.how-windows-enables-ai-agents.device-based-ai-capabilities-copilot-plus-pcs
+  - learn.dpu.how-windows-enables-ai-agents.knowledge-check
+  - learn.dpu.how-windows-enables-ai-agents.summary
+badge:
+  uid: learn.dpu.how-windows-enables-ai-agents.badge
