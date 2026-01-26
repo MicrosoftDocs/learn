@@ -114,7 +114,7 @@ Implement policy-as-code to:
 
 Design pipelines that:
 
-- Validate compliance with regulatory requirements like GDPR and HIPAA
+- Validate compliance with regulatory requirements
 - Generate audit evidence automatically
 - Track security controls and their effectiveness
 

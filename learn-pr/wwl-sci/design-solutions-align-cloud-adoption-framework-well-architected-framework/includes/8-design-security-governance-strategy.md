@@ -155,7 +155,7 @@ Consider an organization deploying a new customer-facing application with AI cap
 
 **CAF provides strategic guidance:**
 - Security objectives prioritize customer data protection
-- Compliance requirements include GDPR and SOC 2
+- Compliance requirements including data protection and system and organization controls
 - Central security team defines data classification standards
 
 **Landing zones provide the foundation:**

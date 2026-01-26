@@ -33,4 +33,4 @@ While your specific implementation might vary, as a result of specific business 
 
 Use this architecture as a starting point. Download the [Visio file](https://github.com/MicrosoftDocs/cloud-adoption-framework/raw/main/docs/ready/enterprise-scale/media/enterprise-scale-architecture.vsdx) and modify it to fit your specific business and technical requirements when planning your landing zone implementation.
 
-[![A reference architecture diagram of an Azure landing zone.](/azure/cloud-adoption-framework/ready/enterprise-scale/media/azure-landing-zone-architecture-diagram-hub-spoke.svg)](/azure/cloud-adoption-framework/ready/enterprise-scale/media/azure-landing-zone-architecture-diagram-hub-spoke.svg#lightbox)
+:::image type="content" source="../media/azure-landing-zone-architecture-diagram-hub-spoke.png" alt-text="A reference architecture diagram of an Azure landing zone." lightbox="../media/azure-landing-zone-architecture-diagram-hub-spoke.png":::

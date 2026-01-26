@@ -65,7 +65,7 @@ Codify roles, communication channels, evidence handling, and decision authority.
 
 ### Confidentiality strategy
 
-When defining a confidentiality strategy, prioritize data privacy and protection with clear business objectives that emphasize compliance with relevant regulations (GDPR, HIPAA, industry standards). Develop a risk management strategy to identify and assess potential risks to data confidentiality. Plan for data loss prevention (DLP) by defining clear data protection objectives and establishing a framework for implementing robust encryption and access controls.
+When defining a confidentiality strategy, prioritize data privacy and protection with clear business objectives that emphasize compliance with relevant regulations. Develop a risk management strategy to identify and assess potential risks to data confidentiality. Plan for data loss prevention (DLP) by defining clear data protection objectives and establishing a framework for implementing robust encryption and access controls.
 
 ### Integrity strategy
 
