@@ -23,8 +23,8 @@ quiz:
       explanation: "Tags like `latest` can move to a different image over time, which reduces traceability and can lead to deploying an unintended artifact."
     - content: "Rebuild the image locally on each environment to ensure the image matches the environment."
       isCorrect: false
-      explanation: "Rebuilding in each environment can produce different artifacts and does not improve traceability. A single, immutable artifact is easier to audit and promote."
-  - content: "A new revision starts but should not receive traffic while you investigate. Which action removes the revision from traffic without deleting it?"
+      explanation: "Rebuilding in each environment can produce different artifacts and doesn't improve traceability. A single, immutable artifact is easier to audit and promote."
+  - content: "A new revision starts but shouldn't receive traffic while you investigate. Which action removes the revision from traffic without deleting it?"
     choices:
     - content: "Run `az containerapp revision deactivate` for the revision."
       isCorrect: true
@@ -42,8 +42,8 @@ quiz:
       explanation: "Probe misconfiguration is a frequent cause of immediate readiness failure, especially during image updates that change ports or routes."
     - content: "The container image is too small to include all required libraries."
       isCorrect: false
-      explanation: "Image size does not directly determine library availability. Missing dependencies show up as application startup errors, not as a general image size issue."
-    - content: "The container app environment cannot route traffic to the public internet."
+      explanation: "Image size doesn't directly determine library availability. Missing dependencies show up as application startup errors, not as a general image size issue."
+    - content: "The container app environment can't route traffic to the public internet."
       isCorrect: false
       explanation: "Outbound routing issues can cause failures for dependency calls, but immediate readiness failures are more commonly due to probe settings or startup behavior."
   - content: "You suspect only one revision has a runtime exception after an update. What is the most effective first step to confirm the problem?"
@@ -61,10 +61,10 @@ quiz:
     choices:
     - content: "Increase the per-replica CPU allocation, and then reassess scaling rules based on throughput."
       isCorrect: true
-      explanation: "CPU throttling indicates the replica does not have enough CPU for its workload. Increasing CPU per replica is a direct fix, and you can then tune scaling for cost and throughput."
+      explanation: "CPU throttling indicates the replica doesn't have enough CPU for its workload. Increasing CPU per replica is a direct fix, and you can then tune scaling for cost and throughput."
     - content: "Deactivate the newest revision to reduce load on the system."
       isCorrect: false
-      explanation: "Deactivation changes which revision receives traffic but does not directly resolve CPU limits if the active revision still runs underprovisioned."
+      explanation: "Deactivation changes which revision receives traffic but doesn't directly resolve CPU limits if the active revision still runs underprovisioned."
     - content: "Switch the image reference from digest to tag."
       isCorrect: false
       explanation: "Image identity affects traceability, not runtime CPU availability."
