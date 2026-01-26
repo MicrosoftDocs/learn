@@ -13,17 +13,17 @@ durationInMinutes: 5
 content: |
 quiz:
   questions:
-  - content: "You are deploying an AI document-processing API that must access a private endpoint and share logs and networking settings across multiple container apps. Which Azure Container Apps resource provides that shared boundary?"
+  - content: "You're deploying an AI document-processing API that must access a private endpoint and share logs and networking settings across multiple container apps. Which Azure Container Apps resource provides that shared boundary?"
     choices:
     - content: "A Container Apps environment"
       isCorrect: true
       explanation: "A Container Apps environment is the shared boundary that groups container apps for networking and observability integration, which helps you manage shared settings for a solution."
     - content: "A Container Apps revision"
       isCorrect: false
-      explanation: "A revision is a versioned snapshot of a single container app's configuration. It does not provide a shared boundary for multiple apps."
+      explanation: "A revision is a versioned snapshot of a single container app's configuration. It doesn't provide a shared boundary for multiple apps."
     - content: "A replica"
       isCorrect: false
-      explanation: "A replica is an instance of a revision that runs your workload. Replicas scale your app, but they do not define shared networking or logging settings across apps."
+      explanation: "A replica is an instance of a revision that runs your workload. Replicas scale your app, but they don't define shared networking or logging settings across apps."
   - content: "You want a consistent, source-controlled deployment for a container app so that configuration is reviewed like code. Which approach best supports that goal?"
     choices:
     - content: "Use `az containerapp create --yaml` and `az containerapp update --yaml` with a YAML file stored in source control"
@@ -31,11 +31,11 @@ quiz:
       explanation: "Using YAML definitions lets you store configuration in source control and apply it consistently across environments using CLI commands."
     - content: "Use `az containerapp update --set-env-vars` for all changes without maintaining a configuration file"
       isCorrect: false
-      explanation: "`--set-env-vars` is useful for incremental updates, but it does not provide a durable, reviewable source of truth for the full app configuration."
+      explanation: "`--set-env-vars` is useful for incremental updates, but it doesn't provide a durable, reviewable source of truth for the full app configuration."
     - content: "Rely on image tags and redeploy with `az containerapp update --image` to apply environment-specific configuration"
       isCorrect: false
-      explanation: "Image tags are not a reliable configuration mechanism. Configuration should be separated from the image and applied through environment variables, secrets, and app settings."
-  - content: "Your container app needs an API key for an embeddings provider. You do not want to store the value in a YAML file. Which pattern should you use?"
+      explanation: "Image tags aren't a reliable configuration mechanism. Configuration should be separated from the image and applied through environment variables, secrets, and app settings."
+  - content: "Your container app needs an API key for an embeddings provider. You don't want to store the value in a YAML file. Which pattern should you use?"
     choices:
     - content: "Store the secret in Container Apps secrets and reference it from an environment variable"
       isCorrect: true
@@ -53,10 +53,10 @@ quiz:
       explanation: "Container Apps uses revisions to version configuration changes. Listing revisions helps you verify which revision is active after an update."
     - content: "Run `az containerapp registry list`"
       isCorrect: false
-      explanation: "Registry configuration helps with image pulls, but it does not show which revision is active after an update."
+      explanation: "Registry configuration helps with image pulls, but it doesn't show which revision is active after an update."
     - content: "Run `az containerapp secret list`"
       isCorrect: false
-      explanation: "Secrets can affect app behavior, but listing secrets does not show which revision is active or which configuration version is running."
+      explanation: "Secrets can affect app behavior, but listing secrets doesn't show which revision is active or which configuration version is running."
   - content: "A container app fails to start after you update the image. You need fast feedback to diagnose the issue. Which command is the best first step?"
     choices:
     - content: "Run `az containerapp logs show`"
