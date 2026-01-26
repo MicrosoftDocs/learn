@@ -61,7 +61,7 @@ Network controls remain essential for defense-in-depth and breach containment. K
 
 ### Application security and DevOps
 
-Applications and DevOps pipelines must be secured to prevent vulnerabilities. Key practices include:
+Applications and Azure pipelines must be secured to prevent vulnerabilities. Key practices include:
 
 - **Secure configuration of cloud services**: Apply security benchmark baseline settings to all cloud services. Use managed identities with least privilege, secure vaults for secrets, and policy enforcement for compliance. *MCSB Controls: PV-2 (secure configurations), AM-2 (managed identities).*
 - **Integrate DevSecOps**: Embed static application security testing (SAST), dependency scanning, and secret scanning in CI/CD (Continuous Integration/Continuous Delivery) pipelines. Enforce code quality gates before deployment. *MCSB Controls: DS-6 (secure DevOps), DS-7 (code scanning).*
