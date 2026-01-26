@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.prompt-versioning-genaiops.exercise
-title: Exercise - Apply prompt versioning
+title: Exercise - Develop prompt and agent versions
 metadata:
-  title: Exercise - Apply prompt versioning
-  description: "Hands-on exercise to practice prompt versioning concepts"
-  ms.date: 01/07/2026
+  title: Exercise - Develop prompt and agent versions
+  description: "Deploy multiple agent versions in Microsoft Foundry and track them using GitHub version control"
+  ms.date: 01/26/2026
   author: madiepev
   ms.author: madiepev
   ms.topic: unit

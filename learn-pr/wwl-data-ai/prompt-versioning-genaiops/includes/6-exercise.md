@@ -1,6 +1,6 @@
-Now it's your turn to apply prompt versioning with Microsoft Foundry.
+Now it's your turn to develop prompt and agent versions.
 
-In this exercise, you create multiple agent versions in Microsoft Foundry and learn how to manage your prompts with GitHub.
+In this exercise, you deploy multiple agent versions in Microsoft Foundry and track them using GitHub version control.
 
 > [!NOTE]
 > To complete this lab, you need an **[Azure subscription](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn)** in which you have administrative access.
