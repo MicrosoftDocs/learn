@@ -3,7 +3,7 @@ uid: learn.wwl.configure-manage-entitlement-microsoft-entra-id
 metadata:
   title: Configure and govern entitlement with Microsoft Entra ID SC-5008
   description: Use Microsoft Entra to manage access by using entitlements, access reviews, privileged access tools, and monitor access events. (SC-5008)
-  ms.date: 06/18/2024
+  ms.date: 01/23/2026
   author: wwlpublish
   ms.author: roberts
   ms.topic: learning-path
@@ -12,7 +12,7 @@ prerequisites: |
   -   Basic Azure administration knowledge.
   -   Ability to create users and groups using Microsoft Entra.
 summary: |
-  Use Microsoft Entra to manage access by using entitlements, access reviews, privileged access tools, and monitor access events.
+  Learn how to configure and govern identity access using Microsoft Entra ID Governance. You implement entitlement management with access packages, configure access reviews to ensure appropriate access, set up privileged access for administrative roles, and monitor identity events to maintain security and compliance.
 iconUrl: /training/achievements/entitlement-and-governance.svg
 levels:
 - intermediate
@@ -21,6 +21,7 @@ roles:
 - identity-access-admin
 products:
 - entra
+- entra-id
 - entra-identity-governance
 subjects:
 - identity-access
