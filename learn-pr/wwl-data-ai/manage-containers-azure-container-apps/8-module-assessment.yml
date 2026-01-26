@@ -1,0 +1,70 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-containers-azure-container-apps.module-assessment
+title: Module assessment
+metadata:
+  title: Module Assessment
+  description: Module assessment
+  ms.date: 01/26/2026
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: unit
+azureSandbox: false
+durationInMinutes: 5
+content: |
+quiz:
+  questions:
+  - content: "You deploy a new image to a production container app. Which approach provides the best traceability and reduces the risk of deploying the wrong artifact?"
+    choices:
+    - content: "Reference the image by digest (for example, `myregistry.azurecr.io/app@sha256:<digest>`) when you update the container app."
+      isCorrect: true
+      explanation: "Digests identify an immutable image, so the deployment always uses the exact artifact you validated and approved."
+    - content: "Reference the image by the `latest` tag to ensure the platform always pulls the most recent build."
+      isCorrect: false
+      explanation: "Tags like `latest` can move to a different image over time, which reduces traceability and can lead to deploying an unintended artifact."
+    - content: "Rebuild the image locally on each environment to ensure the image matches the environment."
+      isCorrect: false
+      explanation: "Rebuilding in each environment can produce different artifacts and does not improve traceability. A single, immutable artifact is easier to audit and promote."
+  - content: "A new revision starts but should not receive traffic while you investigate. Which action removes the revision from traffic without deleting it?"
+    choices:
+    - content: "Run `az containerapp revision deactivate` for the revision."
+      isCorrect: true
+      explanation: "Deactivating a revision stops it from receiving traffic while keeping it available for inspection and later cleanup."
+    - content: "Run `az containerapp revision delete` for the revision."
+      isCorrect: false
+      explanation: "Deleting removes the revision and makes investigation and comparison harder. Deactivation is the safer first step during troubleshooting."
+    - content: "Run `az containerapp stop` for the container app."
+      isCorrect: false
+      explanation: "Stopping the app affects all revisions for the app and is typically too broad when the goal is to isolate one revision."
+  - content: "A revision fails readiness checks immediately after deployment. Which issue is the most common root cause you should validate first?"
+    choices:
+    - content: "The readiness probe targets the wrong port or path for the container’s HTTP server."
+      isCorrect: true
+      explanation: "Probe misconfiguration is a frequent cause of immediate readiness failure, especially during image updates that change ports or routes."
+    - content: "The container image is too small to include all required libraries."
+      isCorrect: false
+      explanation: "Image size does not directly determine library availability. Missing dependencies show up as application startup errors, not as a general image size issue."
+    - content: "The container app environment cannot route traffic to the public internet."
+      isCorrect: false
+      explanation: "Outbound routing issues can cause failures for dependency calls, but immediate readiness failures are more commonly due to probe settings or startup behavior."
+  - content: "You suspect only one revision has a runtime exception after an update. What is the most effective first step to confirm the problem?"
+    choices:
+    - content: "Stream the container app logs and filter by revision while reproducing the request."
+      isCorrect: true
+      explanation: "Logs provide direct evidence of runtime exceptions and help you tie errors to a specific revision and time window."
+    - content: "Delete older revisions to reduce noise in troubleshooting output."
+      isCorrect: false
+      explanation: "Deleting revisions removes rollback options and useful comparison points. Confirm the root cause first, then clean up later."
+    - content: "Increase CPU and memory allocations before investigating."
+      isCorrect: false
+      explanation: "Resource increases can mask symptoms and increase cost. Confirm the failure mode with logs and health status first."
+  - content: "Your AI API experiences high latency and log messages indicate CPU throttling during peak traffic. Which change most directly addresses the throttling?"
+    choices:
+    - content: "Increase the per-replica CPU allocation, and then reassess scaling rules based on throughput."
+      isCorrect: true
+      explanation: "CPU throttling indicates the replica does not have enough CPU for its workload. Increasing CPU per replica is a direct fix, and you can then tune scaling for cost and throughput."
+    - content: "Deactivate the newest revision to reduce load on the system."
+      isCorrect: false
+      explanation: "Deactivation changes which revision receives traffic but does not directly resolve CPU limits if the active revision still runs underprovisioned."
+    - content: "Switch the image reference from digest to tag."
+      isCorrect: false
+      explanation: "Image identity affects traceability, not runtime CPU availability."
