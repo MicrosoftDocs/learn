@@ -62,7 +62,7 @@ For example:
   Voice interaction with Microsoft 365 Copilot allows IT staff to quickly capture ideas, summarize discussions, or prepare responses without breaking concentration.
 
 - **Research and troubleshooting in Edge for Business**  
-  AI capabilities in [Microsoft Edge for Business](https://learn.microsoft.com/en-us/deployedge/microsoft-edge-for-business) help synthesize information across multiple tabs while maintaining enterprise security, compliance, and control.
+  AI capabilities in [Microsoft Edge for Business](/deployedge/microsoft-edge-for-business) help synthesize information across multiple tabs while maintaining enterprise security, compliance, and control.
 
 For end users, these same experiences reduce common support requests—such as "where do I find this?" or "how do I get started?"—before a ticket is ever created.
 
@@ -84,7 +84,7 @@ Agents become first-class participants in the Windows experience, operating unde
 
 All of the AI and agent experiences discussed in this module run on a native AI platform: **Microsoft Foundry on Windows**.
 
-[Microsoft Foundry on Windows](https://learn.microsoft.com/en-us/windows/ai/overview) provides a consistent set of tools that organizations can use to build, deploy, and operate AI solutions directly on Windows. These are the same tools used internally by Microsoft and made available to customers, enabling teams to move from experimentation to production using a shared platform.
+[Microsoft Foundry on Windows](/windows/ai/overview) provides a consistent set of tools that organizations can use to build, deploy, and operate AI solutions directly on Windows. These are the same tools used internally by Microsoft and made available to customers, enabling teams to move from experimentation to production using a shared platform.
 
 Foundry supports the full AI development lifecycle—from model selection to deployment—and enables workloads to run across **CPUs, GPUs, and NPUs**. This flexibility allows organizations to choose the appropriate execution path based on performance, privacy, and operational requirements.
 
