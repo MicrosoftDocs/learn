@@ -11,11 +11,15 @@ metadata:
   ms.service: windows-11
 summary: >
   Discover how Windows is evolving into a platform for AI and agents by integrating Copilot into familiar experiences, enabling advanced AI on Copilot+ PCs, and creating a secure foundation for people and agents to work together.
-abstract: |2+
+abstract: |
+ By the end of this module, you're able to:
 
+ - Explain how AI, agents, and Microsoft 365 Copilot are integrated into familiar Windows experiences
+ - Describe how Copilot+ PCs support advanced on-device AI workloads
+ - Summarize how Windows is evolving into a platform where people and agents work together
 prerequisites: |
   - None
-iconUrl: /training/achievements/generic-badge.svg
+iconUrl: /training/achievements/how-windows-enables-ai-agents.svg
 ratingEnabled: false
 levels:
   - beginner
