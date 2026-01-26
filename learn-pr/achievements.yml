@@ -7585,6 +7585,26 @@ achievements:
   title: Work with Data Warehouses using Azure Synapse Analytics
   summary: Learn to work with Data Warehouses using Azure Synapse Analytics
   iconUrl: /training/achievements/work-with-data-warehouses-using-azure-synapse-analytics-social.png
+- uid: learn.create-serverless-applications.trophy
+  type: trophy
+  title: Create serverless applications
+  summary: Azure Functions enable the creation of event driven, compute-on-demand systems that can be triggered by various external events. Learn how to leverage functions to execute server-side logic and build serverless architectures.
+  iconUrl: /training/achievements/create-serverless-applications.svg
+- uid: learn.create-serverless-logic-with-functions.badge
+  type: badge
+  title: Create serverless logic with Azure Functions
+  summary: Azure Functions allows developers to host business logic that can be executed without managing or provisioning infrastructure. 
+  iconUrl: /training/achievements/create-serverless-logic-with-azure-functions.svg
+- uid: learn.intro-azure-functions.badge
+  type: badge
+  title: Introduction to Azure Functions
+  summary: Learn how Azure Functions helps you to easily integrate serverless compute resources into your cloud-based solutions. An extensive set of bindings makes it easy for you to connect your code to key Azure services, while built-in support for the most used development languages lets you better use your existing skills.
+  iconUrl: /training/achievements/generic-badge.svg 
+- uid: learn.architect-messaging-serverless.trophy
+  type: badge
+  title: Architect message brokering and serverless applications in Azure
+  summary: Learn how to create reliable messaging for your applications, and how to take advantage of serverless application services in Azure.
+  iconUrl: /training/achievements/architect-messaging-serverless.svg
 - uid: learn.wwl.describe-verified-id-concepts.badge
   type: badge 
   title: Describe Microsoft Entra Verified ID concepts

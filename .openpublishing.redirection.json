@@ -62721,6 +62721,81 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/paths/create-serverless-applications/index.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-serverless-logic-with-azure-functions/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-create-function-app-portal",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-serverless-logic-with-azure-functions/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-create-function-app-portal",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-serverless-logic-with-azure-functions/2-decide-if-serverless-computing-is-right-for-your-business-need.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-create-function-app-portal",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-serverless-logic-with-azure-functions/3-create-an-azure-functions-app-in-the-azure-portal.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-create-function-app-portal",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-serverless-logic-with-azure-functions/4-creating-and-executing-an-azure-function.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-create-function-app-portal",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-serverless-logic-with-azure-functions/5-add-logic-to-the-function-app.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-create-function-app-portal",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-serverless-logic-with-azure-functions/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-create-function-app-portal",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-azure-functions/index.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/azure-functions/functions-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-azure-functions/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/azure-functions/functions-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-azure-functions/2-what-azure-functions.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/azure-functions/functions-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-azure-functions/3-how-azure-functions-works.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/azure-functions/functions-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-azure-functions/4-when-use-azure-functions.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/azure-functions/functions-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-azure-functions/5-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/azure-functions/functions-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/architect-messaging-serverless/index.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/training/browse/",
+      "redirect_document_id": false
+    },
+    {                                                                                       
       "source_path": "learn-pr/azure/prepare-your-dev-environment-for-azure-development/index.yml",
       "redirect_url": "https://learn.microsoft.com/en-us/azure/developer/intro/azure-developer-overview",
       "redirect_document_id": false
