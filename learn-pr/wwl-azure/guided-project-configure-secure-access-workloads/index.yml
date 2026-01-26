@@ -3,9 +3,9 @@ uid: learn.wwl.guided-project-configure-secure-access-workloads
 metadata:
   title: Guided Project - Configure secure access to workloads with Azure virtual networking services
   description: "In this module, you practice configuring secure access to workloads using Azure virtual networking. The lab combines both learning and hands-on practice."
-  ms.date: 11/08/2024
+  ms.date: 01/08/2026
   author: wwlpublish
-  ms.author: jileary
+  ms.author: cynthist
   ms.topic: module
   ms.custom:
   - N/A
