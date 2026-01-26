@@ -24,9 +24,7 @@ products:
 subjects:
 - cloud-computing
 modules:
-- learn.prepare-azure-dev-environment
 - learn.host-a-web-application-with-azure-web-apps
 - learn.azure.stage-deploy-app-service-deployment-slots
-- learn.azure.app-service-scale-up-scale-out
 trophy:
   uid: learn.deploy-a-website-with-azure-app-service.trophy
