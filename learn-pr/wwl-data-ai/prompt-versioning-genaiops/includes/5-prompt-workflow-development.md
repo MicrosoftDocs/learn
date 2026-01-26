@@ -4,7 +4,7 @@ In the customer service scenario, the prompt change went directly to production 
 
 Here, you learn how to separate development and production environments, implement pull request reviews for prompt changes, and establish testing practices before deployment.
 
-## Development vs production prompts
+## Development vs. production prompts
 
 Just like software code, prompts need different environments for safe development and reliable production deployment.
 
