@@ -11,7 +11,7 @@ Identity is the foundation of Zero Trust security. A centralized identity provid
 - **Centralize identity and enable strong authentication**: Use a single, centralized identity provider. Enforce multifactor authentication (MFA) for all users, block legacy authentication, and use passwordless methods where possible. *MCSB Controls: IM-1 (centralize identity), IM-6 (MFA), IM-7 (conditional access).*
 - **Apply conditional access policies**: Evaluate every access request in real time based on user role, device compliance, location, and risk signals. Block high-risk sign-ins and enforce device compliance for sensitive apps. *MCSB Controls: IM-7 (conditional access).*
 - **Protect privileged accounts**: Implement least privilege with role-based access control (RBAC), use just-in-time elevation for administrative access, maintain separate admin accounts, and require Privileged Access Workstations (PAWs) for sensitive tasks. *MCSB Controls: PA-1 (protect admin accounts), PA-3 (use PAWs).*
-- **Govern and monitor identities**: Automate identity lifecycle with HR integration, conduct regular access reviews, and monitor sign-in anomalies with identity protection and SIEM solutions. *MCSB Controls: IM-2 (protect identity systems), PA-8 (access review process).*
+- **Govern and monitor identities**: Automate identity lifecycle with HR integration, conduct regular access reviews, and monitor sign-in anomalies with identity protection and security information and event management (SIEM) solutions. *MCSB Controls: IM-2 (protect identity systems), PA-8 (access review process).*
 
 | MCSB Control | Name |
 |---------|------|
@@ -27,7 +27,7 @@ Identity is the foundation of Zero Trust security. A centralized identity provid
 
 Zero Trust requires continuous verification of device security posture. Key practices include:
 
-- **Enroll devices and enforce compliance**: Manage all corporate devices with a mobile device management (MDM) solution using compliance policies (encryption, patching, antivirus). Use compliance signals in conditional access to restrict access from non-compliant devices. *MCSB Controls: ES-1 (endpoint security), ES-2 (anti-malware).*
+- **Enroll devices and enforce compliance**: Manage all corporate devices with a mobile device management (MDM) solution using compliance policies (encryption, patching, antivirus). Use compliance signals in conditional access to restrict access from noncompliant devices. *MCSB Controls: ES-1 (endpoint security), ES-2 (anti-malware).*
 - **Deploy Endpoint Detection and Response (EDR)**: Deploy EDR solutions on all endpoints for threat detection, automated response, and vulnerability management. Enable tamper protection. *MCSB Controls: ES-1 (EDR solution), ES-3 (anti-malware updates).*
 - **Manage updates and vulnerabilities**: Use centralized patch management. Scan for vulnerabilities continuously and enforce application control in high-risk environments. *MCSB Controls: PV-3 (secure configurations), PV-5 (vulnerability assessments).*
 - **Protect BYOD and mobile**: Use mobile application management (MAM) policies for personal devices. Apply conditional access session controls via a cloud access security broker (CASB) to limit data downloads on unmanaged devices. *MCSB Controls: ES-1 (endpoint security).*
@@ -66,7 +66,7 @@ Applications and DevOps pipelines must be secured to prevent vulnerabilities. Ke
 - **Secure configuration of cloud services**: Apply security benchmark baseline settings to all cloud services. Use managed identities with least privilege, secure vaults for secrets, and policy enforcement for compliance. *MCSB Controls: PV-2 (secure configurations), AM-2 (managed identities).*
 - **Integrate DevSecOps**: Embed static application security testing (SAST), dependency scanning, and secret scanning in CI/CD (Continuous Integration/Continuous Delivery) pipelines. Enforce code quality gates before deployment. *MCSB Controls: DS-6 (secure DevOps), DS-7 (code scanning).*
 - **Protect running applications**: Use a CASB for SaaS monitoring, integrate apps with your identity provider for authentication, and use API management with WAF rules. Deploy container security solutions for Kubernetes workloads. *MCSB Controls: DS-2 (application security), AM-5 (restrict app access).*
-- **Secure data in applications**: Enforce data validation, encryption at rest and in transit (TLS 1.2+), and use masking/tokenization for sensitive data in non-prod. *MCSB Controls: DP-3 (encryption in transit), DP-4 (encryption at rest).*
+- **Secure data in applications**: Enforce data validation, encryption at rest and in transit (TLS 1.2+), and use masking/tokenization for sensitive data. *MCSB Controls: DP-3 (encryption in transit), DP-4 (encryption at rest).*
 
 | MCSB Control | Name |
 |---------|------|
@@ -118,7 +118,7 @@ Assume breach and build robust detection and response capabilities. Key practice
 | [IR-2](/security/benchmark/azure/mcsb-incident-response#ir-2-preparation--setup-incident-notification) | Preparation – setup incident notification |
 | [IR-4](/security/benchmark/azure/mcsb-incident-response#ir-4-detection-and-analysis--investigate-an-incident) | Detection and analysis – investigate an incident |
 | [IR-5](/security/benchmark/azure/mcsb-incident-response#ir-5-detection-and-analysis--prioritize-incidents) | Detection and analysis – prioritize incidents |
-| [IR-6](/security/benchmark/azure/mcsb-incident-response#ir-6-containment-eradication-and-recovery--automate-the-incident-handling) | Containment, eradication and recovery – automate the incident handling |
+| [IR-6](/security/benchmark/azure/mcsb-incident-response#ir-6-containment-eradication-and-recovery--automate-the-incident-handling) | Containment, eradication, and recovery – automate the incident handling |
 
 ### Security Posture Management and Compliance
 
@@ -126,16 +126,16 @@ Maintain and improve security posture continuously. Key practices include:
 
 - **Use secure score and posture management**: Monitor security scores and cloud security posture management (CSPM) tools to track posture against best practices. Assign owners to address recommendations. *MCSB Controls: PV-1 (posture assessment).*
 - **Policy-as-code**: Use policy enforcement tools to audit and enforce security configurations. Embed security in Infrastructure as Code (IaC) templates. *MCSB Controls: PV-2 (audit and enforce configurations), GS-7 (policy management).*
-- **Regular audits**: Conduct periodic security reviews and threat modeling updates. Use CIS benchmarks and third-party assessments. *MCSB Controls: GS-1 (security strategy), GS-4 (architecture review).*
+- **Regular audits**: Conduct periodic security reviews and threat modeling updates. Use Center for Internet Security (CIS) benchmarks and third-party assessments. *MCSB Controls: GS-1 (security strategy), GS-4 (architecture review).*
 - **Stay informed**: Track updates to security frameworks and benchmarks. Subscribe to vendor update feeds for new security features and controls. *MCSB Controls: GS-1 (security strategy).*
 
 | MCSB Control | Name |
 |---------|------|
 | [PV-1](/security/benchmark/azure/mcsb-posture-vulnerability-management#pv-1-define-and-establish-secure-configurations) | Define and establish secure configurations |
 | [PV-2](/security/benchmark/azure/mcsb-posture-vulnerability-management#pv-2-audit-and-enforce-secure-configurations) | Audit and enforce secure configurations |
-| [GS-1](/security/benchmark/azure/mcsb-governance-strategy#gs-1-align-organization-roles-responsibilities-and-accountabilities) | Align organization roles, responsibilities and accountabilities |
+| [GS-1](/security/benchmark/azure/mcsb-governance-strategy#gs-1-align-organization-roles-responsibilities-and-accountabilities) | Align organization roles, responsibilities, and accountabilities |
 | [GS-4](/security/benchmark/azure/mcsb-governance-strategy#gs-4-define-and-implement-network-security-strategy) | Define and implement network security strategy |
-| [GS-7](/security/benchmark/azure/mcsb-governance-strategy#gs-7-define-and-implement-logging-threat-detection-and-incident-response-strategy) | Define and implement logging, threat detection and incident response strategy |
+| [GS-7](/security/benchmark/azure/mcsb-governance-strategy#gs-7-define-and-implement-logging-threat-detection-and-incident-response-strategy) | Define and implement logging, threat detection, and incident response strategy |
 
 ## Bringing it all together
 

@@ -1,4 +1,4 @@
-As a Security Architect, you need a practical roadmap for implementing Zero Trust principles quickly. The Zero Trust Rapid Modernization Plan (RaMP) provides prioritized checklists and deployment objectives that help you achieve meaningful security improvements in a short timeframe. Rather than attempting a complete transformation at once, RaMP focuses on high-impact initiatives that reduce risk while building toward a comprehensive Zero Trust architecture.
+As a Security Architect, you need a practical roadmap for implementing Zero Trust principles quickly. A Zero Trust Rapid Modernization Plan (RaMP) provides prioritized checklists and deployment objectives that help you achieve meaningful security improvements in a short timeframe. Rather than attempting a complete transformation at once, RaMP focuses on high-impact initiatives that reduce risk while building toward a comprehensive Zero Trust architecture.
 
 RaMP aligns with the Microsoft Cybersecurity Reference Architecture (MCRA) and Microsoft Cloud Security Benchmark (MCSB) controls you've already learned about. The difference is in the approach: while MCSB provides comprehensive control guidance, RaMP sequences these controls based on attack patterns and real-world impact, helping you prioritize where to start.
 
@@ -27,7 +27,7 @@ Start with identity because it's the most common attack vector. Key deployment o
 Once you've secured identities, extend trust validation to devices. Compromised endpoints provide attackers with access to data and pathways into your environment.
 
 - **Enroll devices in management**: Register all corporate devices with your identity provider and enroll them in mobile device management (MDM). This enables you to enforce compliance policies and use device health as an access decision signal.
-- **Require device compliance for access**: Configure conditional access policies to require device compliance before granting access to sensitive resources. Non-compliant devices should be blocked or limited to web-only access with session controls.
+- **Require device compliance for access**: Configure conditional access policies to require device compliance before granting access to sensitive resources. Noncompliant devices should be blocked or limited to web-only access with session controls.
 - **Deploy endpoint detection and response (EDR)**: Deploy EDR solutions on all endpoints to detect threats, enable rapid response, and feed signals into your security operations.
 
 ### Application and network protection
@@ -63,7 +63,7 @@ While not always highlighted in RaMP discussions, data protection and recovery c
 
 ## Bringing it all together
 
-The Zero Trust Rapid Modernization Plan provides a structured approach to implementing Zero Trust principles based on real-world attack patterns and business impact. By focusing on identity, privileged access, and data protection first, you address the most common and damaging attack vectors.
+A Zero Trust Rapid Modernization Plan provides a structured approach to implementing Zero Trust principles based on real-world attack patterns and business impact. By focusing on identity, privileged access, and data protection first, you address the most common and damaging attack vectors.
 
 RaMP isn't a replacement for comprehensive security architecture—it's a starting point that builds momentum and demonstrates value while you work toward full Zero Trust adoption. The initiatives align with MCSB controls and MCRA capabilities, so the work you do in RaMP contributes directly to your broader security architecture.
 
