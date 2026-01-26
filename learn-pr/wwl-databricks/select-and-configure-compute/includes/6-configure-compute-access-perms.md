@@ -2,6 +2,8 @@ Managing access to compute resources protects sensitive data while enabling coll
 
 Proper access configuration prevents unauthorized users from viewing driver logs containing secrets, controls who can consume compute resources, and ensures teams work efficiently without conflicting infrastructure changes. With **Unity Catalog** enabled, you can assign compute resources to entire groups with automatic permission scoping.
 
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=9e278d18-d7c4-4f61-9d3a-82ffde775682]
+
 ## Understand compute permission levels
 
 Azure Databricks offers **four permission levels** for compute resources, each granting progressively more capabilities. These permissions operate within your workspace and are distinct from Azure subscription-level access controls.
@@ -35,6 +37,24 @@ Select **Add** to grant new permissions. Search for **users** or **groups** by n
 When you modify permissions, changes take effect immediately. Users gain or lose access without requiring a compute restart. This immediate application means you can quickly respond to team changes, onboard new members, or revoke access when someone leaves a project.
 
 Consider granting permissions to **groups** rather than individual users when possible. Group-based permissions simplify management as team membership changes. When someone joins the data engineering team, adding them to the appropriate group automatically grants the correct compute access. Similarly, removing someone from the group revokes their permissions without manual cleanup.
+
+## Manage workspace-level entitlements
+
+Beyond individual compute permissions, Azure Databricks provides **workspace-level entitlements** that control what users can do across the entire workspace. These entitlements differ from compute permissions—they govern user capabilities rather than access to specific resources.
+
+The **unrestricted cluster creation** entitlement allows non-admin users to create clusters without size restrictions. By default, only workspace administrators can create clusters of any size. When you enable this entitlement for a user or group, they gain the ability to provision clusters with any number of worker nodes and any VM configuration, but they still don't receive workspace admin privileges.
+
+This entitlement follows the principle of least privilege by letting you grant cluster creation capabilities without elevating users to full workspace administrators. Users with this entitlement can create compute resources that match their workload requirements but can't perform other administrative functions like managing workspace settings, viewing all users' notebooks, or modifying account-level configurations.
+
+To grant the unrestricted cluster creation entitlement:
+
+1. In your workspace, select **Settings** from the sidebar.
+2. Navigate to **Identity and access** > **Users** or **Groups**.
+3. Locate the user or group you want to grant the entitlement to.
+4. Select the user or group, then find the **Entitlements** section.
+5. Enable the **Allow cluster creation** entitlement.
+
+When designing your access control strategy, consider which users genuinely need unrestricted cluster creation. Data engineers building production pipelines often require this capability, while data analysts might only need access to pre-configured shared clusters. Grant this entitlement to roles and teams rather than individuals when possible to simplify management as your organization grows.
 
 ## Dedicated group access mode
 

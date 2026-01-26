@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.enhance-postgresql-development-github-copilot-visual-studio-code.understand-postgresql-extension
+title: Understand how the PostgreSQL extension supports SQL development
+metadata:
+  title: Understand how the PostgreSQL extension supports SQL development
+  description: Learn how the PostgreSQL extension enables connecting, browsing objects, and running SQL inside Visual Studio Code.
+  author: wwlpublish
+  ms.author: calopez
+  ms.date: 12/08/2025
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/02-understand-postgresql-extension.md)]

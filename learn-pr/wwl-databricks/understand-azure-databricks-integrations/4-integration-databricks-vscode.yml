@@ -4,7 +4,7 @@ title: Understand integration with VS Code
 metadata:
   title: Understand Integration with VS Code
   description: Learn how the Databricks extension for Visual Studio Code enables local development with remote execution, debugging with Databricks Connect, and CI/CD deployment using Asset Bundles.
-  ms.date: 12/07/2025
+  ms.date: 01/15/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit

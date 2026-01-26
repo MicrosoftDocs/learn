@@ -1,0 +1,70 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.streamline-administrative-tasks-ai.knowledge-check
+title: "Module assessment"
+metadata:
+  title: "Knowledge check"
+  description: "Test your understanding of AI in special education with these key questions."
+  ms.date: 01/09/2026
+  author: wwlpublish
+  ms.author: rknapp
+  ms.topic: unit
+  module_assessment: false
+durationInMinutes: 3
+content: "Choose the best response for each of the following questions."
+quiz:
+  questions:
+  - content: "Which task is often a good fit for Teach because it benefits from a consistent structure?"
+    choices:
+    - content: "Creating a lesson plan or rubric that follows a familiar format"
+      isCorrect: true
+      explanation: "Correct. This task benefits from a consistent structure, making it a good fit for Teach."
+    - content: "Refining the tone of a follow-up email for a specific family"
+      isCorrect: false
+      explanation: "Incorrect. This task is more suited for Copilot, which specializes in refining and adapting content."
+    - content: "Translating a document into a family's home language"
+      isCorrect: false
+      explanation: "Incorrect. Translation tasks are typically handled by other tools, not Teach."
+  - content: "In which situation is Copilot typically most helpful?"
+    choices:
+    - content: "Creating materials that require alignment to instructional standards"
+      isCorrect: false
+      explanation: "Incorrect. This task is better suited for Teach, which focuses on structured content creation."
+    - content: "Revising language, summarizing notes, or adapting content for a specific audience"
+      isCorrect: true
+      explanation: "Correct. Copilot excels at refining and adapting content for specific audiences."
+    - content: "Generating reusable templates for recurring documentation"
+      isCorrect: false
+      explanation: "Incorrect. While Copilot can assist, this task is more aligned with Teach's capabilities."
+  - content: "How can Teach and Copilot work together during a multistep administrative task?"
+    choices:
+    - content: "Copilot completes the full task independently once Teach is opened"
+      isCorrect: false
+      explanation: "Incorrect. Copilot does not complete tasks independently; it supports refinement and communication."
+    - content: "Teach replaces Copilot once content is exported"
+      isCorrect: false
+      explanation: "Incorrect. Teach and Copilot complement each other rather than replacing one another."
+    - content: "Teach organizes required components and Copilot supports refinement and communication"
+      isCorrect: true
+      explanation: "Correct. Teach organizes components while Copilot refines and communicates effectively."
+  - content: "What is an example of responsible AI use in special education documentation?"
+    choices:
+    - content: "Reviewing AI-assisted content for accuracy, tone, privacy, and alignment with student needs"
+      isCorrect: true
+      explanation: "Correct. Responsible AI use involves reviewing content to ensure it meets all necessary standards."
+    - content: "Allowing AI tools to determine final instructional or compliance decisions"
+      isCorrect: false
+      explanation: "Incorrect. Educators should remain the decision-makers in instructional and compliance matters."
+    - content: "Using AI content without revision to save time"
+      isCorrect: false
+      explanation: "Incorrect. AI content should always be reviewed and revised to ensure quality and appropriateness."
+  - content: "According to this module, what role do AI tools play in administrative work?"
+    choices:
+    - content: "AI tools fully replace manual documentation processes"
+      isCorrect: false
+      explanation: "Incorrect. AI tools support educators but do not replace manual processes entirely."
+    - content: "AI tools support drafting and organization while educators remain decision makers"
+      isCorrect: true
+      explanation: "Correct. AI tools assist with drafting and organization, but educators retain decision-making authority."
+    - content: "AI tools determine which workflows educators should use"
+      isCorrect: false
+      explanation: "Incorrect. Educators decide workflows, with AI tools providing support."

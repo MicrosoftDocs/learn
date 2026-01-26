@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.introduction-foundry-iq.foundry-iq
+metadata:
+  title: Explore Foundry IQ
+  description: Discover how Foundry IQ provides a managed knowledge platform built on Azure AI Search that eliminates the need to build custom RAG infrastructure for every agent.
+  ms.date: 01/15/2026
+  author: madiepev
+  ms.author: madiepev
+  ms.topic: unit
+title: Explore Foundry IQ
+durationInMinutes: 8
+content: |
+  [!include[](includes/3-foundry-iq.md)]

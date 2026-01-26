@@ -57,6 +57,40 @@ df_filtered = spark.sql("""
 """)
 ```
 
+### Filter null values
+
+Filtering null values requires special handling in Spark DataFrames. Use the `isNull()` and `isNotNull()` functions to identify or exclude null values:
+
+```python
+# Filter rows where order_amount is not null
+df_valid_orders = df.filter(col("order_amount").isNotNull())
+
+# Filter rows where order_amount is null
+df_null_orders = df.filter(col("order_amount").isNull())
+
+# Alternative syntax using column object directly
+df_valid_orders = df.filter(df.order_amount.isNotNull())
+```
+
+> [!IMPORTANT]
+> Using Python's `None` with inequality operators like `!= None` doesn't reliably filter null values in Spark DataFrames. Null comparisons in SQL semantics don't evaluate to true or false—they return null. Always use `isNull()` or `isNotNull()` for correct null handling.
+
+In SQL, use the `IS NULL` or `IS NOT NULL` operators:
+
+```sql
+-- Filter orders with non-null amounts
+SELECT *
+FROM orders
+WHERE order_amount IS NOT NULL;
+```
+
+For comprehensive null handling that removes entire rows containing null values, use the `dropna()` method covered in the unit on resolving duplicate and missing values:
+
+```python
+# Remove rows where order_amount is null
+df_clean = df.dropna(subset=["order_amount"])
+```
+
 ## Group data to organize records
 
 Grouping organizes rows that share common values into categories. This prepares data for aggregation—once grouped, you can calculate statistics for each category.

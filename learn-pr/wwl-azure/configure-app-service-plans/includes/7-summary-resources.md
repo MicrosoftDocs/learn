@@ -27,5 +27,3 @@ Copilot can assist you in configuring Azure infrastructure solutions. Copilot ca
 ## Learn more with self-paced training
 
 - [Scale apps in Azure App Service](/training/modules/scale-apps-app-service/). Learn how autoscale operates in App Service. Learn to identify autoscale factors, enable autoscale, and create autoscale conditions.
-
-- [Scale an App Service web app to efficiently meet demand with App Service scale up and scale out](/training/modules/app-service-scale-up-scale-out/). Learn how to respond to changing demand by incrementally increasing the resources available.
