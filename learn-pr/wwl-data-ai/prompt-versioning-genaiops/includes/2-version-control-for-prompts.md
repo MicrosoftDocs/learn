@@ -33,7 +33,7 @@ Without proper management, predictable failures emerge:
 - **Crisis recovery**: Production breaks, but you can't restore the working version because changes weren't tracked
 - **Lost knowledge**: Months later, you remove "unnecessary" instructions that were critical safety measures
 
-## Evaluate how proper prompt management solves these problems
+## Achieve systematic prompt operations
 
 Version control transforms prompt chaos into systematic operations:
 
@@ -46,6 +46,4 @@ Version control transforms prompt chaos into systematic operations:
 > [!TIP]
 > This systematic approach gives you confidence to iterate quickly while maintaining reliability. Changes become improvements, not risks.
 
-## Implement GitHub for prompt management  
-
-You understand why prompts need version control. In the next unit, you'll learn how to use GitHub to implement proper prompt management. From storing prompts in repositories, to managing changes through pull requests. You explore how familiar GitHub workflows adapt perfectly to prompt versioning needs.
+Now that you understand why version control matters for prompts, you're ready to explore how Microsoft Foundry manages agent versions and how your prompts integrate with agent definitions.
