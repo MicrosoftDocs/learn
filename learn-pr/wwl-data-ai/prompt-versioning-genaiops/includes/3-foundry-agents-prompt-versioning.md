@@ -94,10 +94,10 @@ This approach separates prompt content from deployment code:
 
 When you deploy multiple agent versions, you gain powerful comparison capabilities:
 
-1. **Test identical scenarios** across versions to measure improvement
-2. **Compare responses** to the same user questions
-3. **Identify regressions** where newer versions perform worse
-4. **Document evolution** showing how prompts developed over time
+- **Test identical scenarios** across versions to measure improvement
+- **Compare responses** to the same user questions
+- **Identify regressions** where newer versions perform worse
+- **Document evolution** showing how prompts developed over time
 
 You can switch between deployed agent versions through both the Microsoft Foundry portal and the Python SDK. In the portal, select different versions and observe how the same input produces different outputs. Through the SDK, list all agent versions programmatically to automate comparison workflows. This directly demonstrates prompt impact on behavior.
 
