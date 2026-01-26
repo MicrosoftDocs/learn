@@ -8,14 +8,14 @@ In the following example, two variables are passed to the container when it's cr
 az container create \
     --resource-group myResourceGroup \
     --name mycontainer2 \
-    --image mcr.microsoft.com/azuredocs/aci-wordcount:latest 
+    --image mcr.microsoft.com/azuredocs/aci-wordcount:latest \
     --restart-policy OnFailure \
-    --environment-variables 'NumWords'='5' 'MinLength'='8'\
+    --environment-variables 'NumWords'='5' 'MinLength'='8'
 ```
 
 ## Secure values
 
-Objects with secure values are intended to hold sensitive information like passwords or keys for your application. Using secure values for environment variables is both safer and more flexible than including it in your container's image. 
+Objects with secure values are intended to hold sensitive information like passwords or keys for your application. Using secure values for environment variables is both safer and more flexible than including it in your container's image.
 
 Environment variables with secure values aren't visible in your container's properties. Their values can be accessed only from within the container. For example, container properties viewed in the Azure portal or Azure CLI display only a secure variable's name, not its value.
 

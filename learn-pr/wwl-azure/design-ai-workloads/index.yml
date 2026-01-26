@@ -8,7 +8,7 @@ metadata:
   ms.author: cynthist
   ms.topic: module
   ms.service: azure-ai-services
-  hidden: true
+  hidden: false
 title: "Design AI Workloads on Azure"
 summary: Learn to design AI workloads using SaaS, PaaS, and IaaS solutions while aligning AI strategy with business goals and applying governance best practices.
 abstract: |

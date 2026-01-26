@@ -3,9 +3,9 @@ uid: learn.wwl.configure-bitlocker-disk-encryption-for-windows-iaas-vms
 metadata:
   title: Configure BitLocker disk encryption for Windows IaaS Virtual Machines
   description: "Configure BitLocker disk encryption for Windows IaaS Virtual Machines"
-  ms.date: 01/10/2025
+  ms.date: 01/23/2026
   author: wwlpublish
-  ms.author: tonyj
+  ms.author: robbarefoot
   ms.topic: module
   ms.service: virtual-machines-windows
 title: Configure BitLocker disk encryption for Windows IaaS Virtual Machines

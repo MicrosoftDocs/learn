@@ -3,7 +3,7 @@ uid: learn.wwl.secure-azure-services-workloads-defender-cloud
 metadata:
   title: Secure Azure services and workloads with Microsoft Defender for Cloud regulatory compliance controls SC-5002
   description: Explore network traffic filtering with Network Security Group, set up Microsoft Defender for Cloud, create a Log Analytics workspace, configure Log Analytics agent integration, Azure Key Vault networking, and connect an Azure SQL server using Azure Private Endpoint in the Azure portal. Enhance cloud security effectively. (SC-5002)
-  ms.date: 06/06/2024
+  ms.date: 01/23/2026
   author: wwlpublish
   ms.author: roberts
   ms.topic: learning-path
@@ -11,7 +11,7 @@ title: Secure Azure services and workloads with Microsoft Defender for Cloud reg
 prerequisites: |
   -   None
 summary: |
-  This learning path guides you in securing Azure services and workloads using Microsoft Cloud Security Benchmark controls in Microsoft Defender for Cloud via the Azure portal.&nbsp;
+  Learn how to secure Azure services and workloads using Microsoft Defender for Cloud and regulatory compliance controls. You configure network security, set up monitoring with Log Analytics, implement just-in-time access, and secure connectivity using private endpoints.
 iconUrl: /training/achievements/secure-azure-services-workloads-defender-cloud.svg
 levels:
 - intermediate
@@ -22,6 +22,7 @@ products:
 - azure
 - azure-key-vault
 - azure-log-analytics
+- azure-monitor
 - azure-portal
 - azure-private-link
 - azure-sql-database

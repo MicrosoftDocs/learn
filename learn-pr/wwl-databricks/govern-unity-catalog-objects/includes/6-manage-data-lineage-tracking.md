@@ -10,6 +10,18 @@ Unity Catalog automatically captures **runtime data lineage** across queries run
 
 Consider a scenario where a sales analytics dashboard suddenly shows incorrect revenue figures. With lineage tracking, you can trace back through the data flow to identify which upstream table or transformation caused the issue. This capability transforms troubleshooting from guesswork into a systematic investigation.
 
+### Configure compute to capture lineage
+
+For Unity Catalog to capture lineage automatically, queries must run on **Unity Catalog-enabled compute**. This includes:
+
+- **Compute clusters** configured with Unity Catalog access mode (shared, single user, or serverless)
+- **SQL warehouses** that have Unity Catalog enabled
+- **Jobs** running on Unity Catalog-enabled clusters
+
+When you create a cluster with access to Unity Catalog, the compute automatically captures lineage for all queries that read from or write to Unity Catalog tables. This happens without requiring additional configuration or code changes, making lineage capture seamless and requiring minimal administrative effort.
+
+Clusters that are not Unity Catalog-enabled, or queries that access tables by direct file path instead of catalog names, do not generate lineage data. To ensure comprehensive lineage coverage, configure all production workloads to use Unity Catalog-enabled compute and reference tables using their three-level namespace (`catalog.schema.table`).
+
 Lineage is aggregated across all workspaces attached to a Unity Catalog metastore. When you capture lineage in one workspace, users in other workspaces that share the same metastore can view that lineage information. This **cross-workspace visibility** is particularly valuable for organizations with distributed data teams.
 
 > [!NOTE]

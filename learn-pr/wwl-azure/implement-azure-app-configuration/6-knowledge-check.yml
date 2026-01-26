@@ -23,10 +23,10 @@ quiz:
       explanation: "Correct. Labels in Azure App Configuration are used to create variants of a key and differentiate key-values with the same key."
     - content: "Labels are used to encrypt key-values in App Configuration."
       isCorrect: false
-      explanation: "Incorrect. Labels do not provide encryption. They are used to differentiate key-values with the same key."
+      explanation: "Incorrect. Labels don't provide encryption. They're used to differentiate key-values with the same key."
     - content: "Labels are used to limit the size of key-values in App Configuration."
       isCorrect: false
-      explanation: "Incorrect. Labels do not limit the size of key-values. They are used to differentiate key-values with the same key."
+      explanation: "Incorrect. Labels don't limit the size of key-values. They're used to differentiate key-values with the same key."
   - content: "What is the role of a feature manager in managing application features?"
     choices:
     - content: "A feature manager is a rule for evaluating the state of a feature flag."
@@ -38,14 +38,14 @@ quiz:
     - content: "A feature manager is an application package that handles the lifecycle of all the feature flags in an application."
       isCorrect: true
       explanation: "Correct. A feature manager provides extra functionality, such as caching feature flags and updating their states."
-  - content: "What is the purpose of using customer-managed keys in Azure App Configuration?"
+  - content: "In a Key Vault access policy, which key permissions must you grant to the Azure App Configuration managed identity to enable customer-managed keys?"
     choices:
-    - content: "To enable authentication with Microsoft Entra ID"
-      isCorrect: false
-      explanation: "Incorrect. While a managed identity is used for authentication, it's not the primary purpose of customer-managed keys."
-    - content: "To permanently store the unwrapped encryption key"
-      isCorrect: false
-      explanation: "Incorrect. The unwrapped encryption key is cached within App Configuration for one hour, not stored permanently."
-    - content: "To encrypt sensitive information at rest"
+    - content: "GET, WRAP, and UNWRAP permissions on the Key Vault key"
       isCorrect: true
-      explanation: "Correct. Customer-managed keys are used to encrypt sensitive information in key-value pairs at rest."
+      explanation: "Correct. App Configuration uses its managed identity to access the Key Vault key and wrap/unwrap the store’s encryption key."
+    - content: "GET and LIST permissions on Key Vault secrets"
+      isCorrect: false
+      explanation: "Incorrect. Customer-managed keys use a Key Vault key (not secrets) and require wrap/unwrap operations."
+    - content: "CREATE and DELETE permissions on the Key Vault key"
+      isCorrect: false
+      explanation: "Incorrect. App Configuration doesn’t need to create or delete the key; it needs to wrap and unwrap with an existing key."
