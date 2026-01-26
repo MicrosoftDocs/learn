@@ -120,6 +120,8 @@ Traditionally, these situations turn into tickets, remote sessions, and manual i
 
 With AI and agent capabilities built directly into Windows, these aren’t simply “support incidents” anymore — they become guided workflows. The device itself can help users diagnose issues, gather relevant context for IT, or even resolve common problems automatically before they hit the help desk.
 
+:::image type="content" source="../media/ai-decision-flow.svg" alt-text="Infographic showing traditional AI workflow versus integrated AI in Windows.":::
+
 | Situation | Traditional path | With AI + agents in Windows |
 |----------|------------------|-----------------------------|
 | VPN credentials reset wrong | User loses access → ticket → remote session → manual reset | Agent detects authentication failures and walks the user through the correct reset flow |
