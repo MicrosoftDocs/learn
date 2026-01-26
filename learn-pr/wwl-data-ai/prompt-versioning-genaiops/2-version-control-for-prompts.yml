@@ -1,15 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.prompt-versioning-genaiops.version-control-for-prompts
-title: Apply version control principles to prompts
+title: Apply version control to prompts
 metadata:
-  title: Apply version control principles to prompts
-  description: "Learn to apply version control principles to manage prompts as code assets"
-  ms.date: 01/07/2026
+  title: Apply version control to prompts
+  description: "Learn why prompts need version control and how DevOps practices apply to prompt management"
+  ms.date: 01/26/2026
   author: madiepev
   ms.author: madiepev
   ms.topic: unit
   ms.custom:
   - N/A
-durationInMinutes: 8
+durationInMinutes: 5
 content: |
   [!include[](includes/2-version-control-for-prompts.md)]
