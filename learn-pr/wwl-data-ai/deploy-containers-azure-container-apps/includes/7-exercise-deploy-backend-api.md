@@ -11,7 +11,8 @@ Tasks performed in this exercise:
 
 This exercise takes approximately **30** minutes to complete.
 
->**Important:** Azure Container Registry task runs are temporarily paused from Azure free credits. This exercise requires a Pay-As-You-Go, or another paid plan.
+> [!IMPORTANT]
+> Azure Container Registry task runs are temporarily paused from Azure free credits. This exercise requires a Pay-As-You-Go, or another paid plan.
 
 ## Before you start
 
