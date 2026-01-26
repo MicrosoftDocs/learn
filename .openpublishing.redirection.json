@@ -62794,6 +62794,66 @@
       "source_path": "learn-pr/paths/architect-messaging-serverless/index.yml",
       "redirect_url": "https://learn.microsoft.com/en-us/training/browse/",
       "redirect_document_id": false
-    }                                                                                       
+    },
+    {                                                                                       
+      "source_path": "learn-pr/azure/prepare-your-dev-environment-for-azure-development/index.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/developer/intro/azure-developer-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/prepare-your-dev-environment-for-azure-development/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/developer/intro/azure-developer-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/prepare-your-dev-environment-for-azure-development/2-set-up-dev-environment.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/developer/intro/azure-developer-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/prepare-your-dev-environment-for-azure-development/3-exercise-set-up-dev-environment.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/developer/intro/azure-developer-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/prepare-your-dev-environment-for-azure-development/4-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/developer/intro/azure-developer-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/app-service-scale-up-scale-out/index.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/app-service/manage-scale-up",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/app-service-scale-up-scale-out/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/app-service/manage-scale-up",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/app-service-scale-up-scale-out/2-scale-a-web-app-manually.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/app-service/manage-scale-up",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/app-service-scale-up-scale-out/3-exercise-scale-a-web-app-manually.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/app-service/manage-scale-up",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/app-service-scale-up-scale-out/4-scale-up-a-web-app.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/app-service/manage-scale-up",
+      "redirect_document_id": false
+    }, 
+    {
+      "source_path": "learn-pr/azure/app-service-scale-up-scale-out/5-exercise-scale-up-a-web-app.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/app-service/manage-scale-up",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/app-service-scale-up-scale-out/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/app-service/manage-scale-up",
+      "redirect_document_id": false
+    }                                                  
   ]
 }

@@ -13,7 +13,7 @@ GenAI models apply specific machine learning techniques, such as Transformers an
 
 ## Explore generative AI language models
 
-Generative AI language models are algorithmic powerhouses that process natural language inputs and predict subsequent words in a sentence based on context, enabling them to build coherent responses. They are trained on massive amounts of text data, such as articles, Wikipedia entries, books, and internet resources, which allows them to understand and generate human-like language. 
+Generative AI language models are algorithmic powerhouses that process natural language inputs and predict subsequent words in a sentence based on context, enabling them to build coherent responses. They're trained on massive amounts of text data, such as articles, Wikipedia entries, books, and internet resources, which allows them to understand and generate human-like language. 
 
 These models, often based on deep learning architectures like Transformers, exhibit remarkable natural language understanding and generation capabilities. OpenAI's GPT (Generative Pre Trained), which powers ChatGPT, is an example of a generative AI language model. Essential characteristics of these models include immense scale, with models containing hundreds of millions to trillions of parameters, allowing them to capture complex language patterns.
 
