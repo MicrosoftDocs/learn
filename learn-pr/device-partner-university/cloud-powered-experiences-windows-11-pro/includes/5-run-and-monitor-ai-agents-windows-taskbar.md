@@ -62,9 +62,9 @@ By running these tasks in the cloud, Windows 11 Pro can support complex workflow
 
 Agents in Windows 11 are designed to operate within defined boundaries. Agent experiences are built with:
 
-- clear user visibility
-- controlled permissions
-- and safe execution models
+- Clear user visibility
+- Controlled permissions
+- Safe execution models
 
 This approach helps organizations balance productivity gains with security, compliance, and manageability requirements.
 
