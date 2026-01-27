@@ -18,10 +18,10 @@ The MCSB and WAF Security pillar provide guidance for prioritizing data protecti
 
 The CAF Secure methodology recommends implementing layered controls:
 
-1. **Encryption layer**: Protect data confidentiality through encryption at rest and in transit
-2. **Access control layer**: Limit who can access data through identity and authorization
-3. **Network layer**: Isolate data through private endpoints and network segmentation
-4. **Monitoring layer**: Detect anomalies and threats through logging and alerting
+- **Encryption layer**: Protect data confidentiality through encryption at rest and in transit
+- **Access control layer**: Limit who can access data through identity and authorization
+- **Network layer**: Isolate data through private endpoints and network segmentation
+- **Monitoring layer**: Detect anomalies and threats through logging and alerting
 
 ## MCSB controls for data protection
 
@@ -71,10 +71,10 @@ Key management requires:
 
 When designing encryption at rest:
 
-1. **Identify encryption requirements** based on data classification and compliance needs
-2. **Choose encryption scope** at account, container, or object level
-3. **Determine key management approach** between platform-managed and customer-managed
-4. **Enable infrastructure encryption** for double encryption when required
+- **Identify encryption requirements** based on data classification and compliance needs
+- **Choose encryption scope** at account, container, or object level
+- **Determine key management approach** between platform-managed and customer-managed
+- **Enable infrastructure encryption** for double encryption when required
 
 #### Double encryption
 
@@ -88,10 +88,10 @@ For highly sensitive workloads, implement [double encryption](/azure/security/fu
 
 Design considerations for data in transit:
 
-1. **Enforce HTTPS** for all web traffic and API calls
-2. **Configure minimum TLS version** to 1.2 across all services
-3. **Use private connectivity** through Private Link where possible
-4. **Encrypt within virtual networks** using VPN or ExpressRoute with encryption
+- **Enforce HTTPS** for all web traffic and API calls
+- **Configure minimum TLS version** to 1.2 across all services
+- **Use private connectivity** through Private Link where possible
+- **Encrypt within virtual networks** using VPN or ExpressRoute with encryption
 
 ## Azure Key Vault for key management
 

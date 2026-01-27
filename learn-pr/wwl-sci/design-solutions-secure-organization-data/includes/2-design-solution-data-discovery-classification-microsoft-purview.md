@@ -47,12 +47,12 @@ Be granular and explicit when defining what's in scope for classification. The W
 
 Start with these questions to define your scope:
 
-1. What's the origin of data and information type?
-2. What's the expected restriction based on access (public, regulatory, internal use)?
-3. What's the data footprint—where is it stored and how long should it be retained?
-4. Which architecture components interact with the data?
-5. How does data move through the system?
-6. What information is expected in audit reports?
+- What's the origin of data and information type?
+- What's the expected restriction based on access (public, regulatory, internal use)?
+- What's the data footprint—where is it stored and how long should it be retained?
+- Which architecture components interact with the data?
+- How does data move through the system?
+- What information is expected in audit reports?
 
 ### Designing architecture based on classification labels
 
@@ -97,10 +97,10 @@ The MCRA emphasizes that labels should persist with data as it moves across your
 
 This control requires organizations to:
 
-1. **Establish a data classification scheme** that defines sensitivity levels and handling requirements
-2. **Implement automated discovery** to find sensitive data across cloud and on-premises environments
-3. **Apply sensitivity labels** that persist with data and enable downstream protection
-4. **Maintain data inventories** that track where sensitive data resides
+- **Establish a data classification scheme** that defines sensitivity levels and handling requirements
+- **Implement automated discovery** to find sensitive data across cloud and on-premises environments
+- **Apply sensitivity labels** that persist with data and enable downstream protection
+- **Maintain data inventories** that track where sensitive data resides
 
 ### DP-2: Monitor anomalies and threats targeting sensitive data
 

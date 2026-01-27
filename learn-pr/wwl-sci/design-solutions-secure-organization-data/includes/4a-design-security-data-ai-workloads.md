@@ -50,10 +50,10 @@ Apply Zero Trust principles to AI service access:
 
 When grounding AI responses with organizational data (retrieval-augmented generation):
 
-1. **Data remains in your control**: Azure OpenAI doesn't copy your data; it retrieves from your designated sources
-2. **Access permissions flow through**: Users only receive responses based on data they're authorized to access
-3. **Encryption applies**: Data in Azure AI Search and storage maintains encryption at rest and in transit
-4. **Private connectivity**: Configure private endpoints between Azure OpenAI, AI Search, and storage accounts
+- **Data remains in your control**: Azure OpenAI doesn't copy your data; it retrieves from your designated sources
+- **Access permissions flow through**: Users only receive responses based on data they're authorized to access
+- **Encryption applies**: Data in Azure AI Search and storage maintains encryption at rest and in transit
+- **Private connectivity**: Configure private endpoints between Azure OpenAI, AI Search, and storage accounts
 
 ### Data residency and processing
 

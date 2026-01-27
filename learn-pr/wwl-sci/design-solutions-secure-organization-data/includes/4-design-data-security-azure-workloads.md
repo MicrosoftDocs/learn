@@ -31,10 +31,10 @@ Apply Zero Trust principles consistently across all data services:
 
 When designing security for any Azure data workload, address these questions:
 
-1. **Network access**: Should the service be accessible from the internet, or only through private endpoints?
-2. **Authentication method**: Can you use Microsoft Entra ID, or do legacy requirements mandate other methods?
-3. **Key management**: Are platform-managed keys sufficient, or do regulations require customer-managed keys?
-4. **Threat detection**: What level of monitoring and alerting does the workload require?
+- **Network access**: Should the service be accessible from the internet, or only through private endpoints?
+- **Authentication method**: Can you use Microsoft Entra ID, or do legacy requirements mandate other methods?
+- **Key management**: Are platform-managed keys sufficient, or do regulations require customer-managed keys?
+- **Threat detection**: What level of monitoring and alerting does the workload require?
 
 ## Design security for Azure SQL Database and Azure SQL Managed Instance
 
@@ -54,13 +54,11 @@ Firewalls prevent network access to the server until you explicitly grant access
 
 ### Authentication for Azure SQL
 
-Azure SQL Database and SQL Managed Instance support authentication with Microsoft Entra ID and SQL authentication. SQL Managed Instance additionally supports Windows authentication for Microsoft Entra principals.
+Azure SQL Database and SQL Managed Instance support multiple authentication methods:
 
-| Authentication type | Description | Best practice |
-|---------------------|-------------|---------------|
-| **Microsoft Entra authentication** | Centrally manage identities and permissions of database users along with other Azure services. Supports multifactor authentication, Integrated Windows authentication, and Conditional Access. | Preferred method for all new deployments |
-| **Windows authentication (Kerberos)** | Enables Windows authentication for Azure SQL Managed Instance. Empowers customers to move existing services to the cloud while maintaining a seamless user experience. | Use for hybrid environments with Managed Instance |
-| **SQL authentication** | Authenticate using username and password. | Avoid for new deployments; use only for legacy applications |
+- **Microsoft Entra authentication**: Centrally manage identities and permissions using Microsoft Entra ID. Supports multifactor authentication, Integrated Windows authentication, and Conditional Access. This is the preferred method for all new deployments.
+- **Windows authentication (Kerberos)**: Available for Azure SQL Managed Instance only. Enables Windows authentication for Microsoft Entra principals, allowing customers to move existing services to the cloud while maintaining a seamless user experience.
+- **SQL authentication**: Username and password authentication. Avoid for new deployments; use only for legacy applications that can't support Microsoft Entra authentication.
 
 ### Authorization and access management
 
@@ -96,8 +94,6 @@ Azure SQL provides comprehensive encryption capabilities:
 
 **Advanced Threat Protection**: Analyzes logs to detect unusual behavior and potentially harmful attempts to access or exploit databases:
 
-:::image type="content" source="../media/advanced-threat-detection.png" alt-text="Diagram showing SQL Threat Detection monitoring access to the SQL database for a web app from an external attacker and malicious insider.":::
-
 Advanced Threat Protection creates alerts for:
 
 - SQL injection attempts
@@ -113,32 +109,41 @@ Advanced Threat Protection creates alerts for:
 
 ## Design security for Azure Synapse Analytics
 
-[Azure Synapse Analytics](/azure/synapse-analytics/guidance/security-white-paper-introduction) is a PaaS analytics service that brings together dedicated SQL pools, serverless SQL pools, Apache Spark pools, and data integration pipelines. Azure Synapse implements a multi-layered security architecture for end-to-end protection.
+[Azure Synapse Analytics](/azure/synapse-analytics/guidance/security-white-paper-introduction) is a PaaS analytics service that brings together dedicated SQL pools, serverless SQL pools, Apache Spark pools, and data integration pipelines. Azure Synapse implements a multi-layered security architecture for end-to-end protection of your data.
 
 ### Security layers for Synapse
 
 Azure Synapse implements five security layers:
 
-:::image type="content" source="../media/azure-synapse-security-layers.png" alt-text="Image showing the five layers of Azure Synapse security architecture: Data protection, Access control, Authentication, Network security, and Threat protection.":::
+:::image type="content" source="../media/azure-synapse-security-layers.png" alt-text="Diagram of the five layers of Azure Synapse security architecture: Data protection, Access control, Authentication, Network security, and Threat protection.":::
 
-1. **Data protection**: Identify and classify sensitive data; encrypt data at rest and in motion
-2. **Access control**: Determine a user's right to interact with data using RBAC, row-level security, and column-level security
-3. **Authentication**: Prove the identity of users and applications through Microsoft Entra integration
-4. **Network security**: Isolate network traffic with private endpoints and virtual private networks
-5. **Threat protection**: Identify potential security threats such as unusual access locations, SQL injection attacks, and authentication attacks
+### Data protection
 
-### Component architecture
+Data protection in Synapse covers data classification and encryption:
 
-Each individual component of Azure Synapse provides its own security features:
+- **At rest (storage)**: Azure Storage encryption with SSE and optional CMK
+- **At rest (database)**: TDE with service-managed or customer-managed keys
+- **In transit**: TLS 1.2 with AES-256 encryption
+- **Double encryption**: Infrastructure encryption at storage layer
 
-:::image type="content" source="../media/azure-synapse-components.png" alt-text="Diagram of Azure Synapse components showing dedicated SQL pools, serverless SQL pools, Apache Spark pools, and pipelines.":::
+### Access control
 
-- **Dedicated SQL pools**: Provisioned clusters with enterprise data warehousing capabilities where compute is isolated from storage
-- **Serverless SQL pools**: On-demand clusters that query data directly over customer-managed Azure Storage accounts
-- **Apache Spark pools**: Spark instances provisioned on-demand based on metadata configurations
-- **Pipelines and Data flows**: Logical grouping of activities for data movement and transformation
+Synapse provides granular access controls to determine a user's right to interact with data:
 
-### Network security for Synapse
+- **Synapse RBAC roles**: Manage workspace and resource access
+- **SQL permissions**: Control data access in SQL pools using row-level security and column-level security
+- **Azure RBAC**: Manage control plane access
+- **Data exfiltration protection**: Prevent unauthorized data export to external locations
+
+### Authentication
+
+Prove the identity of users and applications through Microsoft Entra integration:
+
+- **Microsoft Entra authentication**: Centralized identity management with support for multifactor authentication
+- **Managed identities**: Service-to-service authentication without credentials
+- **Service principals**: Application authentication for automated processes
+
+### Network security
 
 Associate your Synapse workspace with a [managed workspace virtual network](/azure/synapse-analytics/security/synapse-workspace-managed-vnet) to:
 
@@ -147,23 +152,13 @@ Associate your Synapse workspace with a [managed workspace virtual network](/azu
 - Ensure network isolation between workspaces for pipelines and Apache Spark workloads
 - Prevent data exfiltration through network controls
 
-### Data encryption in Synapse
+### Threat protection
 
-| Data state | Protection mechanism |
-|------------|---------------------|
-| **At rest (storage)** | Azure Storage encryption with SSE and optional CMK |
-| **At rest (database)** | TDE with service-managed or customer-managed keys |
-| **In transit** | TLS 1.2 with AES-256 encryption |
-| **Double encryption** | Infrastructure encryption at storage layer |
+Identify potential security threats through monitoring and alerting:
 
-### Access control for Synapse
-
-Synapse provides granular access controls:
-
-- **Synapse RBAC roles**: Manage workspace and resource access
-- **SQL permissions**: Control data access in SQL pools
-- **Azure RBAC**: Manage control plane access
-- **Data exfiltration protection**: Prevent unauthorized data export to external locations
+- **Microsoft Defender for SQL**: Detect unusual access locations, SQL injection attacks, and authentication attacks
+- **Auditing**: Track database activities and maintain compliance with security standards
+- **Vulnerability assessment**: Discover and remediate potential security weaknesses
 
 ## Design security for Azure Cosmos DB
 

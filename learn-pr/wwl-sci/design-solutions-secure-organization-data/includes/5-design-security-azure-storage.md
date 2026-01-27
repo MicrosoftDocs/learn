@@ -19,10 +19,10 @@ The MCSB control [NS-2](/azure/cloud-adoption-framework/organize/cloud-security-
 
 When designing network security for Azure Storage:
 
-1. **Disable public blob access** at the storage account level for sensitive data
-2. **Configure private endpoints** for each storage service (blob, file, queue, table)
-3. **Use network security groups** to control traffic to private endpoints
-4. **Implement Azure Firewall** or NVA for centralized traffic inspection
+- **Disable public blob access** at the storage account level for sensitive data
+- **Configure private endpoints** for each storage service (blob, file, queue, table)
+- **Use network security groups** to control traffic to private endpoints
+- **Implement Azure Firewall** or NVA for centralized traffic inspection
 
 ### DNS considerations for private endpoints
 
@@ -99,11 +99,11 @@ Azure Storage supports [data plane RBAC](/azure/storage/blobs/authorize-access-a
 
 When SAS tokens are necessary, follow these best practices:
 
-1. **Use user delegation SAS** backed by Microsoft Entra credentials
-2. **Apply shortest practical validity periods**
-3. **Grant minimum required permissions**
-4. **Use stored access policies** for service SAS management
-5. **Implement secure SAS distribution** mechanisms
+- **Use user delegation SAS** backed by Microsoft Entra credentials
+- **Apply shortest practical validity periods**
+- **Grant minimum required permissions**
+- **Use stored access policies** for service SAS management
+- **Implement secure SAS distribution** mechanisms
 
 ### Blob access tiers and security
 
