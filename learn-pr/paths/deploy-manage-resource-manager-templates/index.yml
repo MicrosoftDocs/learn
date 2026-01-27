@@ -38,7 +38,6 @@ subjects:
 - infrastructure
 modules:
 - learn.azure.create-resource-manager-template-vs-code
-- learn.azure.resource-manager-template-reuse
 - learn.arm-template-test
 - learn.azure.extend-resource-manager-template-deployment-scripts
 trophy:
