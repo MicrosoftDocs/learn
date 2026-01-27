@@ -63059,6 +63059,56 @@
       "source_path": "learn-pr/aspnetcore/blazor-build-rich-interactive-components/8-summary.yml",
       "redirect_url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
       "redirect_document_id": false
-    }                                                    
+    },
+    {
+      "source_path": "learn-pr/azure/modify-azure-resource-manager-template-reuse/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/templates/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/modify-azure-resource-manager-template-reuse/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/templates/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/modify-azure-resource-manager-template-reuse/2-azure-resource-manager-functions.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/templates/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/modify-azure-resource-manager-template-reuse/3-exercise-use-functions-create-expression.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/templates/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/modify-azure-resource-manager-template-reuse/4-azure-resource-manager-variables.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/templates/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/modify-azure-resource-manager-template-reuse/5-exercise-use-variables-store-expressions.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/templates/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/modify-azure-resource-manager-template-reuse/6-azure-resource-manager-tags-parameter-files.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/templates/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/modify-azure-resource-manager-template-reuse/7-exercise-use-tags-parameter-files.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/templates/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/modify-azure-resource-manager-template-reuse/8-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/templates/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/modify-azure-resource-manager-template-reuse/9-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/templates/overview",
+      "redirect_document_id": false
+    }                                                
   ]
 }
