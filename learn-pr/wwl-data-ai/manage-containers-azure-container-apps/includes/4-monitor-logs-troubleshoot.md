@@ -18,7 +18,7 @@ az containerapp logs show \
 
 ## Design logs that support AI troubleshooting
 
-AI services often behave differently for different inputs, and that makes troubleshooting harder if logs do not capture enough context. You want enough detail to debug safely, but you also want to avoid logging sensitive content. A balanced approach is to log identifiers and metadata rather than raw documents or prompts.
+AI services often behave differently for different inputs, and that makes troubleshooting harder if logs don't capture enough context. You want enough detail to debug safely, but you also want to avoid logging sensitive content. A balanced approach is to log identifiers and metadata rather than raw documents or prompts.
 
 Recommended fields to include in application logs:
 
@@ -29,7 +29,7 @@ Recommended fields to include in application logs:
 
 ## Troubleshoot revision-specific failures
 
-Revision failures often fall into a few categories: startup failures, probe failures, configuration errors, or runtime exceptions. Logs help you identify which category you are facing. For example, an app might exit immediately due to a missing environment variable, or it might start successfully but fail readiness probes due to a wrong path.
+Revision failures often fall into a few categories: startup failures, probe failures, configuration errors, or runtime exceptions. Logs help you identify which category you're facing. For example, an app might exit immediately due to a missing environment variable, or it might start successfully but fail readiness probes due to a wrong path.
 
 During an incident, use a workflow that narrows scope quickly:
 

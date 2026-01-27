@@ -5,13 +5,13 @@ Health probes protect your users during rollouts by preventing traffic from reac
 
 ## Understand readiness versus liveness
 
-Readiness answers the question, “Can this replica receive traffic right now?” If readiness fails, the platform should avoid routing requests to that replica. Liveness answers the question, “Is this process healthy enough to keep running?” If liveness fails, the platform restarts the replica.
+Readiness answers the question, "Can this replica receive traffic right now?" If readiness fails, the platform should avoid routing requests to that replica. Liveness answers the question, "Is this process healthy enough to keep running?" If liveness fails, the platform restarts the replica.
 
 In an AI solution, you commonly treat readiness as a guard for model loading and dependency readiness. You treat liveness as a safety valve for deadlocks and runaway memory issues. You tune both probes so they match your real startup and steady-state behavior.
 
 ## Recognize common probe failure causes
 
-Probe failures are frequently configuration issues rather than code issues. When a new revision fails probes, validate the simple causes first so you do not spend time chasing the wrong layer.
+Probe failures are frequently configuration issues rather than code issues. When a new revision fails probes, validate the common causes first so you don't spend time chasing the wrong layer.
 
 Common causes include:
 
@@ -52,7 +52,7 @@ properties:
 
 ## Troubleshoot probe failures during rollout
 
-When probes fail, combine revision status and logs. Revision status tells you whether the platform considers the revision healthy, and logs tell you whether the application started successfully and which endpoint it exposed. You should also confirm that the probe endpoints do not depend on external systems that might be unavailable during an incident.
+When probes fail, combine revision status and logs. Revision status tells you whether the platform considers the revision healthy, and logs tell you whether the application started successfully and which endpoint it exposed. You should also confirm that the probe endpoints don't depend on external systems that might be unavailable during an incident.
 
 If an AI service loads a model at startup, tune `initialDelaySeconds` and `failureThreshold` to give the process enough time to reach a ready state. If you see liveness failures shortly after startup, liveness is likely too aggressive or the process is failing fast due to misconfiguration.
 

@@ -8,7 +8,7 @@ This module focuses on the operational decisions and tools you use to keep Conta
 
 After completing this module, you’ll be able to:
 
-- Update container images and manage revisions safely during development and release cycles, including activation, deactivation, rollback, and cleanup.
+- Update container images and manage revisions safely during development and release cycles, including activation, deactivation, rollback, and clean up.
 - Perform app lifecycle operations, including start, stop, and restart, and diagnose failing revisions.
 - Monitor logs and troubleshoot common revision and runtime issues.
 - Configure liveness and readiness probes and troubleshoot probe failures.

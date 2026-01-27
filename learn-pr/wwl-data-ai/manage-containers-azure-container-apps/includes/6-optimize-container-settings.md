@@ -23,9 +23,9 @@ az containerapp update \
 
 ## Tune scaling for a synchronous API versus a background worker
 
-Scaling strategies differ by workload. A synchronous API often needs stable readiness and predictable latency, so you may choose a minimum replica count to reduce cold starts. A background worker can often tolerate scale-to-zero if it is event-driven and can drain work safely when replicas scale down.
+Scaling strategies differ by workload. A synchronous API often needs stable readiness and predictable latency, so you might choose a minimum replica count to reduce cold starts. A background worker can often tolerate scale-to-zero if it's event-driven and can drain work safely when replicas scale down.
 
-When you adjust scaling, consider the implications for revision rollouts. A rollout that creates a new revision might start new replicas, and if your service has slow warmup, those new replicas can stay unready for longer. Align scaling configuration with probe configuration so rollouts do not appear to fail simply because warmup takes time.
+When you adjust scaling, consider the implications for revision rollouts. A rollout that creates a new revision might start new replicas, and if your service has slow warmup, those new replicas can stay unready for longer. Align scaling configuration with probe configuration so rollouts don't appear to fail simply because warmup takes time.
 
 ## Best practices for cost and performance
 

@@ -5,13 +5,13 @@ Managing the container app lifecycle is a day-two skill that supports both cost 
 
 ## Decide between stop, restart, and scaling to zero
 
-Container Apps supports scaling to zero based on your scaling configuration, which can be appropriate for event-driven services or workloads with intermittent traffic. Stopping an app is different. Stopping is an explicit operational action, and it is useful when you want to guarantee the app does not start replicas while you are mitigating an incident.
+Container Apps supports scaling to zero based on your scaling configuration, which can be appropriate for event-driven services or workloads with intermittent traffic. Stopping an app is different. Stopping is an explicit operational action, and it's useful when you want to guarantee the app doesn't start replicas while you're mitigating an incident.
 
 Restart sits between those two actions. Restart is useful when configuration changes should take effect immediately, or when a process is stuck due to a deadlock or a transient dependency issue. For AI services that load large models at startup, restarting too aggressively can increase cold start frequency, so you should use restart with intent.
 
 ## Start and stop a container app
 
-Starting and stopping are app-level actions. They affect the container app as a whole and therefore can be too broad if the problem is limited to one revision. When you are isolating a single bad release, revision deactivation is often the safer first step.
+Starting and stopping are app-level actions. They affect the container app as a whole and therefore can be too broad if the problem is limited to one revision. When you're isolating a single bad release, revision deactivation is often the safer first step.
 
 ```azurecli
 az containerapp stop \
@@ -27,7 +27,7 @@ az containerapp start \
 
 ## Restart an app to recover from a bad runtime state
 
-Restarting forces replicas to restart and can clear transient failure states. Restart is not a substitute for understanding the root cause. You should pair restart with log inspection so you can determine whether the restart fixed the issue or simply delayed the next failure.
+Restarting forces replicas to restart and can clear transient failure states. Restart isn't a substitute for understanding the root cause. You should pair restart with log inspection so you can determine whether the restart fixed the issue or delayed the next failure.
 
 ```azurecli
 az containerapp restart \
@@ -44,7 +44,7 @@ Common failure patterns to validate:
 - **Image pull failures:** The registry credentials are missing or invalid, or the image reference is incorrect.
 - **Port mismatches:** The container listens on a different port than the Container Apps ingress configuration expects.
 - **Missing configuration:** Environment variables or secrets that the app requires are missing or misnamed.
-- **Probe failures:** Liveness or readiness probes target the wrong path or do not allow enough startup time for model loading.
+- **Probe failures:** Liveness or readiness probes target the wrong path or don't allow enough startup time for model loading.
 - **Resource pressure:** The container starts but is killed due to memory limits or becomes slow due to CPU throttling.
 
 The following query is a useful starting point to compare revision status at a glance.
@@ -59,7 +59,7 @@ az containerapp revision list \
 
 ## Additional resources
 
-Use these links to review how lifecycle actions fit into the broader Container Apps operational model. They are also useful when you build runbooks and want a single place to confirm current CLI syntax.
+Use these links to review how lifecycle actions fit into the broader Container Apps operational model. They're also useful when you build runbooks and want a single place to confirm current CLI syntax.
 
 - [Azure Container Apps manage applications](/azure/container-apps/manage)
 - [Azure Container Apps revisions](/azure/container-apps/revisions)

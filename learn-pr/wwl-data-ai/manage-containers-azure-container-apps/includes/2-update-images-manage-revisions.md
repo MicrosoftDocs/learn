@@ -13,7 +13,7 @@ For AI solutions, traceability matters because you often need to correlate opera
 
 When you update the image for a container app, Container Apps creates a new revision with the updated template. You can then verify the revision’s health before you route traffic to it. This workflow helps you avoid sending production traffic to a revision that fails startup, fails probes, or crashes under load.
 
-The following example updates the image reference. If you are using Azure Container Registry, your image name typically looks like `myregistry.azurecr.io/myapp@sha256:<digest>`.
+The following example updates the image reference. If you're using Azure Container Registry, your image name typically looks like `myregistry.azurecr.io/myapp@sha256:<digest>`.
 
 ```azurecli
 az containerapp update \
@@ -31,7 +31,7 @@ az containerapp show \
   --query properties.template.containers
 ```
 
-## Understand revision modes and what “active” means
+## Understand revision modes and what "active" means
 
 Revision mode determines how many revisions can be active at the same time. Single revision mode keeps only one active revision, which simplifies operations but limits advanced rollout strategies. Multiple revision mode enables canary rollouts and traffic splitting, which is useful when you want to validate a new model version with a small portion of traffic.
 
