@@ -7,7 +7,7 @@ This design reflects Windows' hybrid execution model:
 - **User interaction** happens locally within the Windows interface
 - **Intelligent processing** runs in the cloud when deeper reasoning or broader context is required
 
-:::image type="content" border="true" source="../media/ask-copilot-taskbar-inline.png" alt-text="A diagram showing how Ask Copilot on the Windows 11 Pro taskbar supports natural language prompting, searching, access to Microsoft 365 Copilot, and agents." lightbox="../media/ask-copilot-taskbar-expanded.png":::
+:::image type="content" border="true" source="../media/ask-copilot-taskbar-inline.png" alt-text="A screenshot depicting the Ask Copilot experience on the Windows 11 Pro taskbar" lightbox="../media/ask-copilot-taskbar-expanded.png":::
 
 ## What is Ask Copilot (taskbar experience)?
 

@@ -18,7 +18,7 @@ abstract: |
   - Demonstrate how to initiate and monitor cloud-based work from the Windows taskbar, using Ask Copilot and AI agents to remain productive while tasks run in the background.
 prerequisites: |
   - None
-iconUrl: /training/achievements/generic-badge.svg
+iconUrl: /training/achievements/cloud-powered-experiences-windows-11-pro.svg
 ratingEnabled: false
 levels:
   - beginner
