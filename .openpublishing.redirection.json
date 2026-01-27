@@ -63129,6 +63129,11 @@
       "source_path": "learn-pr/azure/intro-to-azure-bastion/6-summary.yml",
       "redirect_url": "https://learn.microsoft.com/azure/bastion/bastion-overview",
       "redirect_document_id": false
-    }
+    },
+    {
+      "source_path": "learn-pr/paths/secure-application-delivery/index.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/training/browse/",
+      "redirect_document_id": false
+    }    
   ]
 }
