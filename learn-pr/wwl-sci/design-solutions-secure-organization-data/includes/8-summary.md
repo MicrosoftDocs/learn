@@ -41,6 +41,7 @@ Throughout this module, you applied security best practices from:
 
 ## Learn more
 
+- [Architecture strategies for data classification](/azure/well-architected/security/data-classification)
 - [Data protection in MCSB](/security/benchmark/azure/mcsb-data-protection)
 - [Microsoft Purview documentation](/purview/)
 - [Azure Key Vault documentation](/azure/key-vault/)

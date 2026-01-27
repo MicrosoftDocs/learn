@@ -163,32 +163,6 @@ Use immutable storage for:
 - Healthcare records under HIPAA retention rules
 - Legal documents subject to litigation hold
 
-## Design recommendations for Azure Storage security
+## Bringing it together
 
-### Network security
-
-1. **Use private endpoints** for all storage accounts containing sensitive data
-2. **Disable public blob access** at the account level
-3. **Configure minimum TLS 1.2** for all accounts
-4. **Implement Azure Private DNS** for name resolution
-
-### Encryption
-
-1. **Enable infrastructure encryption** for regulated workloads
-2. **Use customer-managed keys** when key control is required
-3. **Configure automatic key rotation** in Key Vault
-4. **Require secure transfer** (HTTPS only)
-
-### Access control
-
-1. **Use Microsoft Entra authentication** with RBAC
-2. **Prefer user delegation SAS** over service or account SAS
-3. **Disable shared key access** when not needed
-4. **Implement just-in-time access** for administrative tasks
-
-### Monitoring
-
-1. **Enable Microsoft Defender for Storage** on all accounts
-2. **Configure diagnostic logging** to Log Analytics
-3. **Set up alerts** for anomalous activity
-4. **Implement malware scanning** for uploaded content
+Securing Azure Storage requires a layered approach across network, identity, encryption, and monitoring. Use private endpoints and disable public blob access for accounts containing sensitive data. Implement Microsoft Entra authentication with RBAC, preferring user delegation SAS over shared keys. Enable infrastructure encryption with customer-managed keys for regulated workloads, and require secure transfer (HTTPS only) with TLS 1.2 minimum. Enable Microsoft Defender for Storage with malware scanning for accounts accepting uploads, and configure diagnostic logging to detect anomalous activity.

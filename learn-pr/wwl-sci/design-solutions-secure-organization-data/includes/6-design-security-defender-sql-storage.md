@@ -2,7 +2,7 @@ Microsoft Defender for Cloud provides workload protection plans specifically des
 
 ## Microsoft Defender for Storage
 
-[Microsoft Defender for Storage](/azure/defender-for-cloud/defender-for-storage-introduction) provides a comprehensive security layer for Azure Storage accounts, detecting unusual and potentially harmful attempts to access or exploit storage resources.
+[Microsoft Defender for Storage](/azure/defender-for-cloud/defender-for-storage-introduction) provides a comprehensive security layer for Azure Storage accounts, detecting unusual and potentially harmful attempts to access or exploit storage resources. This capability supports MCSB control LT-1 (Enable threat detection capabilities).
 
 ### Capabilities overview
 
@@ -16,7 +16,7 @@ Microsoft Defender for Storage includes three core capabilities:
 
 ### Activity monitoring
 
-Activity monitoring analyzes storage account operations to detect:
+Activity monitoring supports MCSB control DP-2 (Monitor anomalies and threats to sensitive data) by analyzing storage account operations to detect:
 
 - **Anomalous access patterns**: Unusual geographic locations or access times
 - **Permission-related anomalies**: Suspicious changes to access configurations
@@ -147,7 +147,7 @@ The MCSB recommends enabling workload protection for all production resources co
 
 ### Alert management
 
-Plan for alert handling:
+Alert management supports MCSB control IR-4 (Detection and analysis). Plan for alert handling:
 
 1. **Define alert routing**: Configure email notifications and webhook integrations
 2. **Establish response procedures**: Document investigation and remediation steps
@@ -171,40 +171,6 @@ Configure workflow automation for:
 - **SQL injection alerts**: Block suspicious IP addresses, notify application owners
 - **Access anomalies**: Require additional verification, initiate investigation
 
-## Design recommendations
+## Bringing it together
 
-### Microsoft Defender for Storage recommendations
-
-1. **Enable subscription-wide** for comprehensive protection
-2. **Configure malware scanning** for storage accounts accepting uploads
-3. **Integrate with sensitive data discovery** for alert prioritization
-4. **Set up Event Grid** for automated malware response
-5. **Review and tune alerts** to reduce false positives
-
-### Microsoft Defender for Databases recommendations
-
-1. **Enable Defender for SQL** on all production databases
-2. **Run regular vulnerability assessments** and track remediation
-3. **Configure alert notifications** for security team
-4. **Integrate with Microsoft Sentinel** for correlation and investigation
-5. **Review threat intelligence** to understand emerging attack patterns
-
-### Cross-service considerations
-
-1. **Unified monitoring**: Use Defender for Cloud dashboard for all data workloads
-2. **Consistent policies**: Apply similar protection levels across data services
-3. **Response playbooks**: Create standardized procedures for common alert types
-4. **Security posture review**: Regular assessment of recommendations and score
-
-## Aligning with MCSB controls
-
-Defender for Storage and Databases support multiple MCSB controls:
-
-| MCSB control | Defender capability |
-|--------------|---------------------|
-| **DP-2**: Monitor anomalies and threats | Activity monitoring, threat detection |
-| **LT-1**: Enable threat detection | Advanced Threat Protection |
-| **IR-4**: Detection and analysis | Security alerts, investigation tools |
-| **PV-5**: Perform vulnerability assessments | SQL vulnerability assessment |
-
-By implementing Defender for Storage and Databases, you establish comprehensive threat detection aligned with Microsoft security best practices and industry frameworks.
+Microsoft Defender for Storage and Defender for Databases provide the threat detection layer for your data security strategy. Enable subscription-wide protection for production resources, configure malware scanning for uploads, and run regular vulnerability assessments. Integrate with Microsoft Sentinel for alert correlation and automated response, establishing consistent procedures for common threats like SQL injection and access anomalies.

@@ -16,6 +16,10 @@ A comprehensive discovery solution must provide visibility across this entire es
 
 ### Classification taxonomy design
 
+Classification taxonomy is a hierarchical depiction of data categorization. There isn't a universal standard for classification—it's driven by your organization's motivation for protecting data. Taxonomy might capture compliance requirements, promised features for workload users, or other criteria driven by business needs.
+
+As a workload owner, rely on your organization to provide a well-defined taxonomy. All workload roles must have a shared understanding of the structure, nomenclature, and definition of the sensitivity levels. Don't define your own classification system that conflicts with organizational standards.
+
 Your classification scheme should:
 
 - **Align with business requirements**: Classifications should reflect how your organization thinks about data sensitivity
@@ -23,14 +27,49 @@ Your classification scheme should:
 - **Enable automation**: Design classifications that can be applied automatically based on content patterns
 - **Scale across the organization**: Use consistent classifications that work for all business units
 
-The WAF Security pillar recommends defining data classifications that enable risk-based controls. Common classification levels include:
+The WAF Security pillar recommends defining data classifications that enable risk-based controls. Example classification labels cover sensitivity levels, information types, and compliance scope:
 
-| Classification | Description | Example controls |
-|----------------|-------------|------------------|
-| **Public** | Information intended for public disclosure | No restrictions |
-| **Internal** | Information for internal business use | Basic access controls |
-| **Confidential** | Sensitive business information | Encryption, restricted access |
-| **Highly Confidential** | Most sensitive data | Strong encryption, audit logging, DLP |
+| Category | Example labels |
+|----------|----------------|
+| **Sensitivity levels** | Public, General, Confidential, Highly Confidential, Secret |
+| **Information types** | Financial, Credit Card, Credentials, Health fields, Intellectual Property, Personal data |
+| **Compliance scope** | HIPAA, PCI, CCPA, SOX |
+
+### Defining classification scope
+
+Be granular and explicit when defining what's in scope for classification. The WAF Security pillar emphasizes that classification should extend beyond primary data stores to related components:
+
+- **Data store granularity**: Classify at the table level or even column level for tabular systems
+- **Backup systems**: Has your highly sensitive data store's backup been classified?
+- **Caching layers**: If you're caching user-sensitive data, is the cache in scope?
+- **Analytical data stores**: How is aggregated or derived data classified?
+- **Preproduction environments**: Do you need to classify data in development and test systems?
+
+Start with these questions to define your scope:
+
+1. What's the origin of data and information type?
+2. What's the expected restriction based on access (public, regulatory, internal use)?
+3. What's the data footprint—where is it stored and how long should it be retained?
+4. Which architecture components interact with the data?
+5. How does data move through the system?
+6. What information is expected in audit reports?
+
+### Designing architecture based on classification labels
+
+Classification should influence your architectural decisions. The WAF Security pillar identifies key areas where classification drives design:
+
+**Segmentation strategy**: Classification labels influence traffic isolation boundaries. Critical flows might require end-to-end TLS, while other traffic can use different encryption standards.
+
+**Encryption choices**: Sensitivity levels affect encryption decisions:
+- Highly sensitive data might require double encryption
+- Different secrets might require varied levels of protection (HSM vs. standard secret stores)
+- Compliance labels dictate protection standards (for example, PCI-DSS mandates FIPS 140-2 Level 3, requiring HSMs)
+
+**Data in use protection**: For the most sensitive classifications, consider confidential computing to protect data during processing.
+
+**Classification persistence**: Classification information should move with the data as it transitions through the system. Data labeled as confidential should be treated as confidential by all components that interact with it—including removing or obfuscating personal data from application logs.
+
+**Reporting and masking**: Classification impacts how data is exposed in reports. Based on information type labels, you might need to apply data masking algorithms for obfuscation. Define which roles should have visibility into raw data versus masked data.
 
 ### Sensitive information type detection
 
@@ -110,18 +149,6 @@ For Azure workloads, [Microsoft Defender for Cloud](/azure/defender-for-cloud/de
 - **Built-in recommendations**: Suggested classifications based on column names and data patterns
 - **Microsoft Purview integration**: Sync classifications with your enterprise labeling strategy
 
-## Design recommendations
+## Bringing it together
 
-When designing your data discovery and classification solution:
-
-1. **Start with data governance goals**: Define what you're trying to protect and why before selecting tools
-
-2. **Implement a unified classification taxonomy**: Use consistent classifications across all data sources and tools
-
-3. **Prioritize automated discovery**: Manual processes don't scale—invest in automated scanning
-
-4. **Integrate with protection mechanisms**: Classification provides value when it triggers protection actions
-
-5. **Plan for multi-cloud and hybrid**: Ensure your solution covers all locations where data resides
-
-6. **Enable monitoring and reporting**: Track classification coverage and identify gaps in your data estate
+Effective data discovery and classification requires a unified organizational taxonomy applied consistently across your data estate. Start by defining what you need to protect and why, then be explicit about scope—extending classification to backups, caches, and analytical stores. Prioritize automated discovery with tools like Microsoft Purview, but validate results through manual verification. Classification provides value when it triggers protection actions, so design your architecture so that labels influence encryption choices, access controls, and segmentation. Build classification maintenance into operations, because stale metadata leads to compliance issues and erroneous risk assessments.

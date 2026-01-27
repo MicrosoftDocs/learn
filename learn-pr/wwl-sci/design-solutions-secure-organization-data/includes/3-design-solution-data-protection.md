@@ -142,16 +142,6 @@ Labels applied through classification can trigger protection:
 - **Watermarking**: Apply visual markings to indicate sensitivity
 - **Expiration**: Set time limits on document access
 
-## Design recommendations
+## Bringing it together
 
-1. **Encrypt by default**: Enable encryption for all data stores even if not explicitly required
-
-2. **Standardize on TLS 1.2+**: Disable all legacy protocols across your environment
-
-3. **Centralize key management**: Use Azure Key Vault for all cryptographic operations
-
-4. **Implement key rotation**: Establish policies for regular key rotation based on compliance requirements
-
-5. **Enable HSM protection**: Use Key Vault HSM for keys protecting the most sensitive data
-
-6. **Document key recovery procedures**: Ensure you can recover from key loss scenarios
+Effective data protection requires a defense-in-depth approach that combines encryption, access controls, network isolation, and monitoring. Encrypt all data by default—both at rest and in transit—using TLS 1.2 or higher and AES-256 encryption. Centralize key management in Azure Key Vault, using HSM protection for the most sensitive workloads and implementing key rotation policies based on compliance requirements. Classification labels should trigger protection actions through DLP policies and Azure Information Protection, ensuring that sensitivity levels drive the appropriate encryption choices and access restrictions throughout your environment.
