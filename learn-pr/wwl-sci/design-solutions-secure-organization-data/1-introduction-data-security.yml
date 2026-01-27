@@ -1,13 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.design-solutions-secure-organization-data.introduction-data-security
-title: Introduction to data security
+title: Data security design principles and frameworks
 metadata:
-  title: Introduction to data security
-  description: "SC-100 preparatory unit on the topic: introduction to data security."
-  ms.date: 3/14/2023
+  title: Data security design principles and frameworks
+  description: "SC-100 preparatory unit on the topic: data security design principles and frameworks."
+  ms.date: 07/25/2025
   author: ceperezb
   ms.author: ceperezb
   ms.topic: unit
+  ai-usage: ai-assisted
 durationInMinutes: 5
 content: |
   [!include[](includes/1-introduction-data-security.md)]

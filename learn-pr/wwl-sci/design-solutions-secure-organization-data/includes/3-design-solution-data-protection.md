@@ -1,117 +1,157 @@
-Data can be categorized by its state:
+After discovering and classifying your data, the next priority is implementing protection mechanisms that mitigate threats. This unit focuses on evaluating encryption solutions for data at rest and in transit, specifying priorities for threat mitigation, and understanding key management with Azure Key Vault.
 
--   **Data at rest**. All information storage objects, containers, and types that exist statically on physical media, whether magnetic or optical disk.
-    
--   **Data in transit**. Data that is being transferred between components, locations, or programs.
-    
+## Specifying priorities for mitigating threats to data
 
-In a cloud solution, a single business transaction can lead to multiple data operations where data moves from one storage medium to another. To provide complete data protection, it must be encrypted on storage volumes and while it's transferred from one point to another.
+The MCSB and WAF Security pillar provide guidance for prioritizing data protection measures. Consider these threats and corresponding mitigations:
 
-## Key points
+### Threat prioritization framework
 
--   Use identity-based storage access controls.
--   Use standard and recommended encryption algorithms.
--   Use only secure hash algorithms (SHA-2 family).
--   Classify your data at rest and use encryption.
--   Encrypt virtual disks.
--   Use an additional key encryption key (KEK) to protect your data encryption key (DEK).
--   Protect data in transit through encrypted network channels (TLS/HTTPS) for all client/server communication. Use TLS 1.2 on Azure.
+| Priority | Threat | Mitigation approach |
+|----------|--------|---------------------|
+| **Critical** | Unauthorized access to sensitive data | Encryption, access controls, authentication |
+| **High** | Data exfiltration | DLP policies, network controls, monitoring |
+| **High** | Man-in-the-middle attacks | TLS 1.2+, certificate management |
+| **Medium** | Accidental exposure | Classification, labeling, policy enforcement |
+| **Medium** | Key compromise | HSM protection, key rotation, separation of duties |
 
-## Azure encryption features
+### Defense in depth for data protection
 
-Azure provides built-in features for data encryption in many layers that participate in data processing. We recommend that for each service, enable the encryption capability. The encryption is handled automatically using Azure-managed keys. This almost requires no user interaction.
+The CAF Secure methodology recommends implementing layered controls:
 
-We recommend implementing identity-based storage access controls. Authentication with a shared key (like a Shared Access Signature) doesn't permit the same flexibility and control as identity-based access control. The leak of a shared key might allow indefinite access to a resource, whereas a role-based access control can be identified and authenticated more strongly.
+1. **Encryption layer**: Protect data confidentiality through encryption at rest and in transit
+2. **Access control layer**: Limit who can access data through identity and authorization
+3. **Network layer**: Isolate data through private endpoints and network segmentation
+4. **Monitoring layer**: Detect anomalies and threats through logging and alerting
 
-### Standard encryption algorithms
+## MCSB controls for data protection
 
-Organizations should not develop and maintain their own encryption algorithms. Avoid using custom encryption algorithms or direct cryptography in your workload. These methods rarely stand up to real world attacks.
+### DP-3: Encrypt sensitive data in transit
 
-Secure standards already exist on the market and should be preferred. If custom implementation is required, developers should use well-established cryptographic algorithms and secure standards. Use Advanced Encryption Standard (AES) as a symmetric block cipher, AES-128, AES-192, and AES-256 are acceptable.
+Data in transit requires protection against interception and tampering:
 
-Developers should use cryptography APIs built into operating systems instead of non-platform cryptography libraries. For .NET, follow the [.NET Cryptography Model](/dotnet/standard/security/cryptography-model).
+- **Enforce TLS 1.2 or higher** for all network communications
+- **Disable legacy protocols** including SSL 3.0, TLS 1.0, and TLS 1.1
+- **Use strong cipher suites** that provide forward secrecy
+- **Implement certificate validation** to prevent man-in-the-middle attacks
 
-We advise using standard and recommended encryption algorithms.
+The WAF recommends treating all data as sensitive when in transit—don't rely on network isolation alone.
 
-For more information, refer to [Choose an algorithm](/dotnet/standard/security/cryptography-model#choose-an-algorithm).
+### DP-4: Enable data at rest encryption by default
 
-### Modern hashing functions
+Azure provides encryption at rest by default for most services:
 
-Applications should use the SHA-2 family of hash algorithms (SHA-256, SHA-384, SHA-512).
+- **Platform-managed keys (PMK)**: Microsoft manages encryption keys automatically
+- **Service-side encryption (SSE)**: Data encrypted before storage, decrypted on retrieval
+- **AES-256 encryption**: Industry-standard algorithm used across Azure services
 
-## Data at rest
+### DP-5: Use customer-managed keys when required
 
-All important data should be classified and encrypted with an encryption standard. Classify and protect all information storage objects. Use encryption to make sure the contents of files cannot be accessed by unauthorized users.
+For regulatory compliance or additional control, implement customer-managed keys (CMK):
 
-Data at rest is encrypted by default in Azure, but is your critical data classified and tagged, or labeled so that it can be audited?
+| Consideration | Platform-managed keys | Customer-managed keys |
+|---------------|----------------------|----------------------|
+| **Key control** | Microsoft | Customer |
+| **Key rotation** | Automatic | Customer responsibility |
+| **Compliance** | Standard | Enhanced for regulated industries |
+| **Complexity** | Low | Higher operational overhead |
+| **Use case** | General workloads | Regulated data, sovereignty requirements |
 
-Your most sensitive data might include business, financial, healthcare, or personal information. Discovering and classifying this data can play a pivotal role in your organization's information protection approach. It can serve as infrastructure for:
+### DP-6: Use a secure key management process
 
--   Helping to meet standards for data privacy and requirements for regulatory compliance.
--   Various security scenarios, such as monitoring (auditing) and alerting on anomalous access to sensitive data.
--   Controlling access to and hardening the security of databases that contain highly sensitive data.
+Key management requires:
 
-**Suggested action**
+- **Centralized key storage**: Use Azure Key Vault rather than storing keys in code or configuration
+- **Least privilege access**: Grant key access only to identities that require it
+- **Key rotation policies**: Rotate keys according to compliance requirements
+- **Audit logging**: Track all key access and operations
 
-Classify your data. Consider using [Data Discovery & Classification](/azure/azure-sql/database/data-discovery-and-classification-overview) in Azure SQL Database.
+## Encryption design considerations
 
-### Data classification
+### Data at rest encryption
 
-A crucial initial exercise for protecting data is to organize it into categories based on certain criteria. The classification criteria can be your business needs, compliance requirements, and the type of data.
+When designing encryption at rest:
 
-Depending on the category, you can protect it through:
+1. **Identify encryption requirements** based on data classification and compliance needs
+2. **Choose encryption scope** at account, container, or object level
+3. **Determine key management approach** between platform-managed and customer-managed
+4. **Enable infrastructure encryption** for double encryption when required
 
--   Standard encryption mechanisms.
--   Enforce security governance through policies.
--   Conduct audits to make sure the security measures are compliant.
+#### Double encryption
 
-One way of classifying data is through the use of tags.
+For highly sensitive workloads, implement [double encryption](/azure/security/fundamentals/double-encryption):
 
-### Encrypt virtual disk files
+- **Service-level encryption**: First layer using the service's encryption capability
+- **Infrastructure encryption**: Second layer at the storage infrastructure level
+- **Different keys**: Each layer uses independent keys and algorithms
 
-There are many options to store files in the cloud. Cloud-native apps typically use Azure Storage. Apps that run on VMs use them to store files. VMs use virtual disk files as virtual storage volumes and exist in a blob storage.
+### Data in transit encryption
 
-Consider a hybrid solution. Files can move from on-premises to the cloud, from the cloud to on-premises, or between services hosted in the cloud. One strategy is to make sure that the files and their contents aren't accessible to unauthorized users. You can use authentication-based access controls to prevent unauthorized downloading of files. However, that is not enough. Have a backup mechanism to secure the virtual disk files in case authentication and authorization or its configuration is compromised. There are several approaches. You can encrypt the virtual disk files. If an attempt is made to mount disk files, the contents of the files cannot be accessed because of the encryption.
+Design considerations for data in transit:
 
-We recommend that you enable virtual disk encryption. For information about how to encrypt Windows VM disks, see [Quickstart: Create and encrypt a Windows VM with the Azure CLI](/azure/virtual-machines/windows/disk-encryption-cli-quickstart).
+1. **Enforce HTTPS** for all web traffic and API calls
+2. **Configure minimum TLS version** to 1.2 across all services
+3. **Use private connectivity** through Private Link where possible
+4. **Encrypt within virtual networks** using VPN or ExpressRoute with encryption
 
-Azure-based virtual disks are stored as files in a Storage account. If no encryption is applied to a virtual disk, and an attacker manages to download a virtual disk image file, it can be mounted and inspected at the attacker's leisure as if they had physical access to the source computer. Encrypting virtual disk files helps prevent attackers from gaining access to the contents of those disk files in the event they are able to download them. Depending on the sensitivity of the information stored on the disk, unencrypted access could represent a critical risk to confidential business data (such as a SQL database) or identity (such as an AD Domain Controller).
+## Azure Key Vault for key management
 
-An example of virtual disk encryption is [Azure Disk Encryption](/azure/security/fundamentals/azure-disk-encryption-vms-vmss).
+[Azure Key Vault](/azure/key-vault/general/overview) provides centralized secrets, key, and certificate management:
 
-Azure Disk Encryption helps protect and safeguard your data to meet your organizational security and compliance commitments. It uses the Bitlocker-feature of Windows (or DM-Crypt on Linux) to provide volume encryption for the OS and data disks of Azure virtual machines (VMs). It is integrated with Azure Key Vault to help you control and manage the disk encryption keys, and secrets.
+### Key Vault capabilities
 
-Virtual machines use virtual disk files as storage volumes and exist in a cloud service provider's blob storage system. These files can be moved from on-premises to cloud systems, from cloud systems to on-premises, or between cloud systems. Due to the mobility of these files, it's recommended that the files and the contents are not accessible to unauthorized users.
+- **Key management**: Create, import, and control cryptographic keys
+- **Secret management**: Securely store and control access to tokens, passwords, and API keys
+- **Certificate management**: Provision, manage, and deploy SSL/TLS certificates
+- **HSM protection**: Store keys in FIPS 140-2 Level 2 or Level 3 validated HSMs
 
-### Use identity-based storage access controls
+### Key Vault design recommendations
 
-There are many ways to control access to data: shared keys, shared signatures, anonymous access, identity provider-based. Use Microsoft Entra ID and role-based access control (RBAC) to grant access. For more information, see [Identity and access management considerations](/azure/architecture/framework/security/design-identity).
+| Recommendation | Rationale |
+|----------------|-----------|
+| **Use separate vaults** for different environments | Isolate production keys from development |
+| **Enable soft delete and purge protection** | Prevent accidental or malicious key deletion |
+| **Use managed identities** for access | Eliminate credential management |
+| **Implement RBAC** over access policies | Provide finer-grained access control |
+| **Enable logging** to Azure Monitor | Track all key operations |
 
-### Use an additional Key Encryption Key (KEK)
+### Infrastructure encryption
 
-Use more than one encryption key in an encryption at rest implementation. Storing an encryption key in Azure Key Vault ensures secure key access and central management of keys.
+For workloads requiring the highest protection:
 
-Use an additional key encryption key (KEK) to protect your data encryption key (DEK).
+- **Azure Storage infrastructure encryption**: Double encryption at the infrastructure layer
+- **Azure SQL TDE with CMK**: Customer-managed keys for transparent data encryption
+- **Azure Disk Encryption**: BitLocker (Windows) or dm-crypt (Linux) for VM disks
 
-**Suggested actions**
+## Microsoft solutions for data protection
 
-Identify unencrypted virtual machines via Microsoft Defender for Cloud or script, and encrypt via Azure Disk Encryption. Ensure all new virtual machines are encrypted by default and regularly monitor for unprotected disks.
+### Microsoft Purview Data Loss Prevention
 
-## Data in transit
+[Microsoft Purview DLP](/purview/dlp-learn-about-dlp) prevents sensitive data from leaving your organization:
 
-Data in transit should be encrypted at all points to ensure data integrity.
+- **Policy-based protection**: Define rules based on sensitive information types
+- **Endpoint DLP**: Protect data on Windows and macOS devices
+- **Cloud DLP**: Protect data in Microsoft 365 services
+- **Integration with labels**: Use sensitivity labels to trigger DLP policies
 
-Protecting data in transit should be an essential part of your data protection strategy. Because data is moving back and forth from many locations, we generally recommend that you always use SSL/TLS protocols to exchange data across different locations.
+### Azure Information Protection
 
-For data moving between your on-premises infrastructure and Azure, consider appropriate safeguards such as HTTPS or VPN. When sending encrypted traffic between an Azure virtual network and an on-premises location over the public internet, use Azure VPN Gateway.
+Labels applied through classification can trigger protection:
 
-Any network communication between client and server where man-in-the-middle attacks can occur, must be encrypted. All website communication should use HTTPS, no matter the perceived sensitivity of transferred data. Man-in-the-middle attacks can occur anywhere on the site, not just login forms.
+- **Encryption**: Automatically encrypt documents based on labels
+- **Access restrictions**: Limit who can open or modify protected content
+- **Watermarking**: Apply visual markings to indicate sensitivity
+- **Expiration**: Set time limits on document access
 
-This mechanism can be applied to use cases such as:
+## Design recommendations
 
--   Web applications and APIs for all communication with clients.
--   Data moving across a service bus from on-premises to the cloud and other way around, or during an input/output process.
+1. **Encrypt by default**: Enable encryption for all data stores even if not explicitly required
 
-In certain architecture styles such as microservices, data must be encrypted during communication between the services.
+2. **Standardize on TLS 1.2+**: Disable all legacy protocols across your environment
 
-All data should be encrypted in transit using a common encryption standard. Determine if all components in the solution are using a consistent standard. There are times when encryption is not possible because of technical limitations, make sure the reason is clear and valid.
+3. **Centralize key management**: Use Azure Key Vault for all cryptographic operations
+
+4. **Implement key rotation**: Establish policies for regular key rotation based on compliance requirements
+
+5. **Enable HSM protection**: Use Key Vault HSM for keys protecting the most sensitive data
+
+6. **Document key recovery procedures**: Ensure you can recover from key loss scenarios
