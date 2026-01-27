@@ -2,11 +2,11 @@ Revision modes in Azure Container Apps determine how your application handles de
 
 ## Understand revisions and scaling
 
-A revision is an immutable snapshot of a container app version. Each time you deploy changes to certain configuration properties, Container Apps creates a new revision. Revisions cannot be modified after creation; to make changes, you deploy a new revision. This immutability provides a reliable rollback target if a new version has problems.
+A revision is an immutable snapshot of a container app version. Each time you deploy changes to certain configuration properties, Container Apps creates a new revision. Revisions can't be modified after creation; to make changes, you deploy a new revision. This immutability provides a reliable rollback target if a new version has problems.
 
-Changes to your container app fall into two categories. Revision-scope changes create a new revision and include modifications to container images, scale rules, environment variables, and other properties in the `template` section of the configuration. Application-scope changes do not create a new revision and include modifications to secrets, ingress settings, and traffic splitting rules.
+Changes to your container app fall into two categories. Revision-scope changes create a new revision and include modifications to container images, scale rules, environment variables, and other properties in the `template` section of the configuration. Application-scope changes don't create a new revision and include modifications to secrets, ingress settings, and traffic splitting rules.
 
-Each active revision can scale independently based on its own scale rules. If you have two active revisions with the same scale rules and split traffic between them, each revision scales based on its share of traffic. This independent scaling means total resource consumption across all revisions may be higher than a single revision would require for the same total traffic.
+Each active revision can scale independently based on its own scale rules. If you have two active revisions with the same scale rules and split traffic between them, each revision scales based on its share of traffic. This independent scaling means total resource consumption across all revisions might be higher than a single revision would require for the same total traffic.
 
 Replicas are instances of a specific revision. When scaling occurs, the platform adds or removes replicas of the affected revision. Multiple revisions can have different replica counts simultaneously, depending on their individual traffic loads and scale rule thresholds.
 
@@ -35,13 +35,13 @@ az containerapp update \
 
 In multiple revision mode, you control which revisions are active and how traffic is distributed among them. New deployments create new revisions, but don't automatically deactivate previous revisions. You decide when to shift traffic and when to deactivate old revisions.
 
-Revisions have two states: active and inactive. Active revisions can receive traffic and scale based on their scale rules. Inactive revisions consume no resources and cannot receive traffic, but remain available for reactivation. Container Apps maintains up to 100 inactive revisions, automatically purging the oldest when you exceed this limit.
+Revisions have two states: active and inactive. Active revisions can receive traffic and scale based on their scale rules. Inactive revisions consume no resources and can't receive traffic, but remain available for reactivation. Container Apps maintains up to 100 inactive revisions, automatically purging the oldest when you exceed this limit.
 
 Multiple revision mode requires more operational attention than single revision mode. You must manage traffic distribution, monitor multiple revisions, and explicitly deactivate revisions when they're no longer needed. This overhead is justified when you need the flexibility of gradual rollouts or traffic splitting.
 
 ## Implement traffic splitting
 
-Traffic splitting distributes incoming requests across active revisions based on percentage weights. You configure traffic weights that total 100 percent, and the platform routes each request to a revision based on these weights. This distribution is probabilistic; individual requests are randomly assigned, so actual percentages may vary slightly from configured values.
+Traffic splitting distributes incoming requests across active revisions based on percentage weights. You configure traffic weights that total 100 percent, and the platform routes each request to a revision based on these weights. This distribution is probabilistic; individual requests are randomly assigned, so actual percentages might vary slightly from configured values.
 
 The following command configures traffic splitting between two revisions, sending 80 percent of traffic to the first version and 20 percent to the second:
 
@@ -68,13 +68,13 @@ Labels work independently of traffic splitting. Traffic to the main application 
 
 ## Scaling considerations with multiple revisions
 
-When multiple revisions are active, each scales independently based on its own scale rules and traffic share. This independence has implications for resource consumption and cost. Two revisions receiving 50 percent traffic each may together consume more resources than a single revision receiving 100 percent traffic, because each revision maintains its own minimum replicas and scales based on its own metrics.
+When multiple revisions are active, each scales independently based on its own scale rules and traffic share. This independence has implications for resource consumption and cost. Two revisions receiving 50 percent traffic each might together consume more resources than a single revision receiving 100 percent traffic, because each revision maintains its own minimum replicas and scales based on its own metrics.
 
-Consider a scenario where you have two revisions with `minReplicas: 1` and split traffic 50/50. Each revision maintains at least one replica, so you have at least two replicas total. If your scale rules would trigger a third replica at full traffic, each revision independently may not trigger scaling because each sees only half the traffic. This behavior can lead to different performance characteristics during traffic transitions.
+Consider a scenario where you have two revisions with `minReplicas: 1` and split traffic 50/50. Each revision maintains at least one replica, so you have at least two replicas total. If your scale rules would trigger a third replica at full traffic, each revision independently might not trigger scaling because each sees only half the traffic. This behavior can lead to different performance characteristics during traffic transitions.
 
 To manage resource consumption during deployments, plan your traffic splitting transitions carefully. Rather than maintaining 50/50 splits for extended periods, move through traffic percentages relatively quickly: deploy, validate with 10 percent traffic, increase to 50 percent briefly, then complete at 100 percent. Deactivate old revisions promptly after completing transitions to free resources.
 
-Monitor each revision separately during traffic splitting. Use Azure Monitor to track replica counts, resource utilization, and error rates per revision. Differences between revisions may indicate problems with the new version that warrant investigation before increasing its traffic share.
+Monitor each revision separately during traffic splitting. Use Azure Monitor to track replica counts, resource utilization, and error rates per revision. Differences between revisions might indicate problems with the new version that warrant investigation before increasing its traffic share.
 
 ## Best practices
 

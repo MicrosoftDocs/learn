@@ -1,4 +1,4 @@
-Event-driven scaling enables your container apps to respond to external signals beyond HTTP traffic. Azure Container Apps integrates with KEDA (Kubernetes Event-driven Autoscaling) to provide scaling based on message queues, event streams, and other Azure services. This capability is essential for applications that process asynchronous workloads where scaling based on request volume alone does not reflect actual work being performed.
+Event-driven scaling enables your container apps to respond to external signals beyond HTTP traffic. Azure Container Apps integrates with KEDA (Kubernetes Event-driven Autoscaling) to provide scaling based on message queues, event streams, and other Azure services. This capability is essential for applications that process asynchronous workloads where scaling based on request volume alone doesn't reflect actual work being performed.
 
 ## Understand KEDA integration
 
@@ -51,7 +51,7 @@ Azure Event Hubs scaling is designed for high-throughput streaming scenarios whe
 
 The metadata parameters for Event Hubs scaling include `consumerGroup`, `unprocessedEventThreshold`, and `checkpointStrategy`. The `unprocessedEventThreshold` sets the number of unprocessed events per partition that triggers scaling. The `checkpointStrategy` specifies how the scaler determines checkpoint positions, with `blobMetadata` being the recommended approach for applications using Azure Blob Storage for checkpointing.
 
-Event Hubs partitions affect the maximum effective replica count. Since each partition can only be read by one consumer at a time within a consumer group, your application cannot benefit from more replicas than partitions. If your Event Hub has 32 partitions, setting `maxReplicas` higher than 32 provides no additional scaling benefit.
+Event Hubs partitions affect the maximum effective replica count. Since each partition can be read by one consumer at a time within a consumer group, your application can't benefit from more replicas than partitions. If your Event Hub has 32 partitions, setting `maxReplicas` higher than 32 provides no additional scaling benefit.
 
 The following YAML configuration demonstrates Event Hubs scaling with checkpoint-based lag monitoring:
 

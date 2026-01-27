@@ -6,13 +6,13 @@ Azure Container Apps supports any ScaledObject-based KEDA scaler, providing acce
 
 When evaluating whether a specific scaler meets your requirements, consider the authentication methods it supports, the metrics it exposes, and how those metrics translate to replica counts. Review the [KEDA scalers documentation](https://keda.sh/docs/scalers/) for detailed specifications of each scaler, including required and optional metadata parameters, supported authentication mechanisms, and example configurations.
 
-Scalers are categorized by their maintainer. Microsoft maintains Azure-native scalers with direct support. Community-maintained scalers receive contributions from the open-source community and may have varying levels of documentation and support. External scalers run as separate components and require additional deployment steps not covered by the built-in Container Apps configuration.
+Scalers are categorized by their maintainer. Microsoft maintains Azure-native scalers with direct support. Community-maintained scalers receive contributions from the open-source community and might have varying levels of documentation and support. External scalers run as separate components and require additional deployment steps not covered by the built-in Container Apps configuration.
 
 ## Configure Apache Kafka scaling
 
 Apache Kafka scaling triggers replica changes based on consumer group lag. The scaler monitors the difference between the latest offset in each partition and the committed offset of your consumer group. When lag accumulates, the scaler increases replica count to process messages faster and reduce the backlog.
 
-The key metadata parameters for Kafka scaling include `bootstrapServers`, `consumerGroup`, `topic`, and `lagThreshold`. The `lagThreshold` parameter sets the lag per partition that triggers scaling. For example, if you set `lagThreshold` to 100 and your consumer group has 500 messages of lag across partitions, the scaler calculates that 5 replicas are needed.
+The key metadata parameters for Kafka scaling include `bootstrapServers`, `consumerGroup`, `topic`, and `lagThreshold`. The `lagThreshold` parameter sets the lag per partition that triggers scaling. For example, if you set `lagThreshold` to 100 and your consumer group has 500 messages of lag across partitions, the scaler calculates that five replicas are needed.
 
 Kafka authentication typically uses SASL mechanisms. You configure credentials as Container Apps secrets and reference them in the scaler authentication settings. The scaler supports SASL/PLAIN, SASL/SCRAM, and TLS authentication depending on your Kafka cluster configuration.
 
@@ -103,17 +103,17 @@ Follow these steps to convert a KEDA scaler specification:
 
 1. Configure scale limits using `--min-replicas` and `--max-replicas`. These correspond to the `minReplicaCount` and `maxReplicaCount` in KEDA ScaledObject specifications.
 
-The Container Apps format differs from native KEDA in several ways. Container Apps doesn't support the full TriggerAuthentication resource type; instead, you reference secrets directly in the scale rule. Some advanced KEDA features like external scalers or custom scaling intervals may not be available or may require different configuration approaches.
+The Container Apps format differs from native KEDA in several ways. Container Apps doesn't support the full TriggerAuthentication resource type; instead, you reference secrets directly in the scale rule. Some advanced KEDA features like external scalers or custom scaling intervals might not be available or might require different configuration approaches.
 
 ## Best practices
 
 - **Start with Azure-native scalers:** Azure Service Bus, Event Hubs, and Storage Queue scalers have first-party support and are maintained by Microsoft. Use these for Azure resources before considering community-maintained alternatives.
 
-- **Test scaler behavior in staging:** Custom scalers may have unexpected polling or threshold behaviors. Validate scaling patterns in a non-production environment before deploying to production. Monitor how quickly scaling responds to load changes and verify that thresholds produce the expected replica counts.
+- **Test scaler behavior in staging:** Custom scalers might have unexpected polling or threshold behaviors. Validate scaling patterns in a non-production environment before deploying to production. Monitor how quickly scaling responds to load changes and verify that thresholds produce the expected replica counts.
 
 - **Combine scheduled and reactive scaling:** Use cron scalers to establish baseline capacity before known peak periods. Add event-driven or HTTP scalers to handle variations and unexpected spikes. This combination ensures capacity is available when needed while still responding to actual demand.
 
-- **Document scaler configurations:** Custom scaler metadata is not self-documenting. Maintain documentation that explains why specific thresholds were chosen, how authentication is configured, and what metrics drive scaling decisions. This documentation helps team members understand and maintain scaling configurations over time.
+- **Document scaler configurations:** Custom scaler metadata isn't self-documenting. Maintain documentation that explains why specific thresholds were chosen, how authentication is configured, and what metrics drive scaling decisions. This documentation helps team members understand and maintain scaling configurations over time.
 
 ## Additional resources
 

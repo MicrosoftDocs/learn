@@ -6,7 +6,7 @@ Azure Container Apps allocates CPU and memory resources per container. You speci
 
 The relationship between CPU and memory follows a constraint: memory must be at least twice the CPU value in GiB. For example, if you allocate 0.5 CPU cores, you must allocate at least 1.0 GiB of memory. This constraint reflects the typical resource balance needed for containerized workloads and simplifies capacity planning.
 
-Resource allocation affects billing directly. Container Apps charges based on vCPU-seconds and GiB-seconds consumed. Larger resource allocations per replica increase per-replica costs, but may reduce the total replica count needed to handle your workload. Finding the right balance requires understanding your application's actual resource requirements under load.
+Resource allocation affects billing directly. Container Apps charges based on vCPU-seconds and GiB-seconds consumed. Larger resource allocations per replica increase per-replica costs, but might reduce the total replica count needed to handle your workload. Finding the right balance requires understanding your application's actual resource requirements under load.
 
 When a replica exceeds its memory limit, the platform terminates and restarts that replica. CPU limits work differently; when a replica exceeds its CPU allocation, the platform throttles the replica rather than terminating it. This difference means memory limits cause hard failures while CPU limits cause performance degradation.
 
@@ -40,11 +40,11 @@ Consumption-only environments use a serverless billing model where you pay only 
 
 Workload profile environments offer additional compute options. The Consumption profile within a Workload profiles environment provides the same serverless billing as Consumption-only environments. Dedicated profiles provision specific VM sizes reserved for your workloads, providing consistent performance and supporting larger resource allocations. Dedicated profiles are required for GPU workloads and scenarios requiring more than 4 cores or 8 GiB memory per container.
 
-For most web APIs and background processing applications, the Consumption plan provides cost efficiency without requiring capacity planning. Choose Dedicated profiles when you need consistent latency (serverless may have higher variability), require GPU compute, need larger resource allocations, or have compliance requirements that mandate dedicated infrastructure.
+For most web APIs and background processing applications, the Consumption plan provides cost efficiency without requiring capacity planning. Choose Dedicated profiles when you need consistent latency (serverless might have higher variability), require GPU compute, need larger resource allocations, or have compliance requirements that mandate dedicated infrastructure.
 
 ## Optimize for cost efficiency
 
-Cost optimization starts with understanding what you're paying for. Container Apps bills for active replicas based on their resource allocation. Replicas that are running but not processing requests incur an idle rate that is lower than the active rate. When replicas scale to zero, you incur no compute charges for that container app.
+Cost optimization starts with understanding what you're paying for. Container Apps bills for active replicas based on their resource allocation. Replicas that are running but not processing requests incur an idle rate that's lower than the active rate. When replicas scale to zero, you incur no compute charges for that container app.
 
 Scale-to-zero is the most effective cost optimization for intermittent workloads. If your application experiences extended idle periods where no requests or messages arrive, configuring zero minimum replicas eliminates cost during those periods. Combine scale-to-zero with event-driven triggers that reliably restart replicas when work arrives.
 
@@ -60,7 +60,7 @@ Allocate sufficient CPU and memory to handle request processing without throttli
 
 Set minimum replicas to eliminate cold start latency for latency-sensitive workloads. When a container app scales from zero, the first request experiences a delay while the platform provisions and starts a replica. For applications where this delay is unacceptable, maintain at least one replica to ensure immediate availability.
 
-Dedicated workload profiles provide more consistent performance than Consumption because resources aren't shared with other tenants. If your application has strict latency requirements or experiences performance variability under the Consumption model, Dedicated profiles may provide the consistency you need.
+Dedicated workload profiles provide more consistent performance than Consumption because resources aren't shared with other tenants. If your application has strict latency requirements or experiences performance variability under the Consumption model, Dedicated profiles might provide the consistency you need.
 
 Monitor resource utilization to identify bottlenecks before they affect users. Azure Monitor provides metrics for CPU and memory utilization across your replicas. Watch for sustained high utilization that indicates resource pressure, or low utilization that suggests over-provisioning.
 
@@ -70,9 +70,9 @@ The relationship between per-replica resources, maximum replica count, and total
 
 Total capacity equals per-replica resources multiplied by maximum replica count. If each replica can handle 100 requests per second with 0.5 cores, and you expect peak load of 2000 requests per second, you need 20 replicas maximum. Setting `--max-replicas 20` with `--cpu 0.5` provides this capacity.
 
-There is a trade-off between replica size and scaling granularity. Larger replicas (more CPU and memory each) mean fewer replicas are needed for the same total capacity, which reduces scaling frequency and overhead. However, larger replicas provide coarser granularity; you might provision more capacity than needed between scaling steps. Smaller replicas scale more precisely but incur more scaling events and management overhead.
+There's a trade-off between replica size and scaling granularity. Larger replicas (more CPU and memory each) mean fewer replicas are needed for the same total capacity, which reduces scaling frequency and overhead. However, larger replicas provide coarser granularity; you might provision more capacity than needed between scaling steps. Smaller replicas scale more precisely but incur more scaling events and management overhead.
 
-The maximum replica count in Azure Container Apps is 1000 per revision. For most applications, you'll hit practical limits based on your workload characteristics before reaching this limit. Ensure your per-replica resources and maximum count together provide sufficient peak capacity for your requirements.
+The maximum replica count in Azure Container Apps is 1000 per revision. For most applications, you hit practical limits based on your workload characteristics before reaching this limit. Ensure your per-replica resources and maximum count together provide sufficient peak capacity for your requirements.
 
 ## Best practices
 
@@ -82,7 +82,7 @@ The maximum replica count in Azure Container Apps is 1000 per revision. For most
 
 - **Monitor actual resource utilization:** Use Azure Monitor to track CPU and memory usage over time. Over-provisioned containers waste money; under-provisioned containers cause performance problems. Regular monitoring helps you tune resource allocation to actual needs.
 
-- **Consider total cost of scaling:** Smaller containers that scale more frequently may incur more scaling overhead and potential request impact during scale operations. Balance per-replica size against scaling responsiveness and your application's ability to handle replica additions and removals gracefully.
+- **Consider total cost of scaling:** Smaller containers that scale more frequently might incur more scaling overhead and potential request impact during scale operations. Balance per-replica size against scaling responsiveness and your application's ability to handle replica additions and removals gracefully.
 
 ## Additional resources
 
