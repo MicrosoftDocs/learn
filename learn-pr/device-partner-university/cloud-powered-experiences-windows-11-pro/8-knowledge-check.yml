@@ -1,0 +1,84 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.cloud-powered-experiences-windows-11-pro.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge Check
+  description: This content is part of the "Cloud-powered experiences on Windows 11 Pro" module.
+  ms.date: 01/27/2026
+  author: melissawinters
+  ms.author: v-mwinters
+  ms.topic: unit
+durationInMinutes: 5
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "What does Microsoft mean when it describes Windows 11 Pro as the “canvas for AI”?"
+    choices:
+        - content: "Windows 11 Pro runs all AI processing locally on the device"
+          isCorrect: false
+          explanation: "Incorrect. Windows 11 Pro uses both local and cloud execution, not only local processing."
+        - content: "Windows 11 Pro provides the user interface where AI-assisted work is initiated and managed"
+          isCorrect: true
+          explanation: "Correct. Windows acts as the surface where users interact with AI-assisted work, while processing may occur locally or in the cloud."
+        - content: "Windows 11 Pro replaces cloud services with on-device AI models"
+          isCorrect: false
+          explanation: "Incorrect. Windows continues to rely on cloud services for many AI capabilities."
+        - content: "Windows 11 Pro requires Copilot+ PCs to support AI experiences"
+          isCorrect: false
+          explanation: "Incorrect. Many cloud-based AI experiences are available even on devices without NPU hardware."
+  - content: "Which type of task is best suited for cloud execution in Windows 11 Pro?"
+    choices:
+        - content: "Multi-step research that requires reasoning across multiple data sources"
+          isCorrect: true
+          explanation: "Correct. Cloud execution supports deeper reasoning, broader data access, and longer-running workflows."
+        - content: "Offline accessibility features"
+          isCorrect: false
+          explanation: "Incorrect. Offline scenarios rely on local processing."
+        - content: "Real-time audio enhancement during a video call"
+          isCorrect: false
+          explanation: "Incorrect. Real-time audio processing benefits from on-device execution."
+        - content: "Instant UI animations and transitions"
+          isCorrect: false
+          explanation: "Incorrect. UI responsiveness depends on local system performance."
+  - content: "Why does Windows 11 Pro use both cloud-based and on-device execution models?"
+    choices:
+        - content: "To ensure all AI features require an internet connection"
+          isCorrect: false
+          explanation: "Incorrect. Many experiences continue to run locally without internet access."
+        - content: "To replace traditional desktop applications"
+          isCorrect: false
+          explanation: "Incorrect. Windows still supports traditional desktop applications."
+        - content: "To balance responsiveness, capability, and scalability based on task needs"
+          isCorrect: true
+          explanation: "Correct. Windows selects the most appropriate execution model depending on the task’s requirements."
+        - content: "To reduce the need for enterprise security controls"
+          isCorrect: false
+          explanation: "Incorrect. Enterprise security and governance remain critical considerations."
+  - content: "What is the primary role of AI agents in Windows 11 Pro?"
+    choices:
+        - content: "To replace Ask Copilot as the main interaction surface"
+          isCorrect: false
+          explanation: "Incorrect. Agents are typically initiated through experiences like Ask Copilot."
+        - content: "To run quick, single-step tasks that must complete instantly"
+          isCorrect: false
+          explanation: "Incorrect. Agents are designed for tasks that take time and may involve multiple steps."
+        - content: "To manage device hardware resources such as the CPU and NPU"
+          isCorrect: false
+          explanation: "Incorrect. Agents do not directly manage hardware resources."
+        - content: "To handle long-running, multi-step tasks using cloud execution"
+          isCorrect: true
+          explanation: "Correct. Agents run longer workflows in the cloud while remaining visible and manageable through the taskbar."
+  - content: "How does the Windows taskbar support cloud-based work in Windows 11 Pro?"
+    choices:
+        - content: "By executing cloud workloads locally on the device"
+          isCorrect: false
+          explanation: "Incorrect. Cloud workloads run in Microsoft’s cloud, not locally."
+        - content: "By hiding background tasks to reduce distractions"
+          isCorrect: false
+          explanation: "Incorrect. Windows emphasizes visibility and transparency for background work."
+        - content: "By acting as a control surface that shows status and progress of cloud-based tasks"
+          isCorrect: true
+          explanation: "Correct. The taskbar surfaces agent activity, progress, and notifications in a familiar system area."
+        - content: "By requiring users to open separate applications to monitor AI work"
+          isCorrect: false
+          explanation: "Incorrect. Windows allows users to monitor cloud-based work directly from the taskbar."

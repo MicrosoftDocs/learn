@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.cloud-powered-experiences-windows-11-pro.understanding-execution-models-windows-11-pro
+title: Understanding execution models in Windows 11 Pro
+metadata:
+  title: Understanding Execution Models In Windows 11 Pro
+  description: This content is part of the "Cloud-powered experiences on Windows 11 Pro" module.
+  ms.date: 01/27/2026
+  author: melissawinters
+  ms.author: v-mwinters
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/3-understanding-execution-models-windows-11-pro.md)]
