@@ -7610,3 +7610,23 @@ achievements:
   title: Describe Microsoft Entra Verified ID concepts
   summary: Learn the core concepts of decentralized identities and Microsoft Entra Verified ID.
   iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.publish-manage-apis-with-azure-api-management.badge
+  type: badge 
+  title: Publish and manage your APIs with Azure API Management
+  summary: Use API management to control who uses your APIs, to enforce usage policies, and to present a professional front-end to developers using the API.
+  iconUrl: /training/achievements/publish-manage-apis-with-azure-api-management.svg
+- uid: learn.azdo.implement-code-workflow.badge
+  type: badge 
+  title: Implement a code workflow in your build pipeline by using Git and GitHub
+  summary: Collaborate with others and merge only the highest quality code.
+  iconUrl: /training/achievements/azure-devops/implement-a-code-workflow-in-your-build-pipeline.svg
+- uid: learn.azdo.manage-build-dependencies.badge
+  type: badge 
+  title: Manage build dependencies with Azure Artifacts
+  summary: Manage your application and the packages it uses across build Pipelines.
+  iconUrl: /training/achievements/azure-devops/manage-dependencies-in-your-build-pipeline.svg
+- uid: learn.azdo.build-applications-with-azure-devops.trophy
+  type: trophy 
+  title: Build applications with Azure DevOps learning path
+  summary: Azure DevOps enables you to build, test, and deploy any application to any cloud or on premises. Learn how to configure build pipelines that continuously build, test, and verify your applications.
+  iconUrl: /training/achievements/azure-devops/build-applications-with-azure-devops.svg 
