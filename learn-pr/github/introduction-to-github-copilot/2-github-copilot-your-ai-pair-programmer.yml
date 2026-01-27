@@ -3,7 +3,7 @@ uid: learn.github.introduction-to-github-copilot.github-copilot-your-ai-pair-pro
 title: GitHub Copilot, your AI pair programmer
 metadata:
   title: GitHub Copilot, your AI pair programmer
-  description: GitHub Copilot, trained on billions of lines of code, turns natural language prompts into coding suggestions across dozens of languages.
+  description: GitHub Copilot uses advanced AI models to help developers turn natural language prompts into code, explanations, refactoring guidance, and fixes across dozens of programming languages.
   author: a-a-ron
   ms.author: aastewar
   ms.date: 09/12/2024
