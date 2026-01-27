@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.purview-data-loss-prevention-create-manage-policies.policy-intent
-title: Establish policy intent and boundaries
+title: Understand how DLP policy decisions fit together
 metadata:
-  title: Establish policy intent and boundaries
-  description: "Establish policy intent and boundaries"
-  ms.date: 01/16/2026
+  title: Understand how DLP policy decisions fit together
+  description: "Understand how DLP policy decisions fit together"
+  ms.date: 01/27/2026
   author: wwlpublish
   ms.author: riswinto
   ms.topic: unit

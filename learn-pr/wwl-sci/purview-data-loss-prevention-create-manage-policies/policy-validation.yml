@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.purview-data-loss-prevention-create-manage-policies.policy-validation
-title: Validate policies before enforcement
+title: Validate policy behavior using simulation mode
 metadata:
-  title: Validate policies before enforcement
-  description: "Validate policies before enforcement"
-  ms.date: 01/16/2026
+  title: Validate policy behavior using simulation mode
+  description: "Validate policy behavior using simulation mode"
+  ms.date: 01/27/2026
   author: wwlpublish
   ms.author: riswinto
   ms.topic: unit

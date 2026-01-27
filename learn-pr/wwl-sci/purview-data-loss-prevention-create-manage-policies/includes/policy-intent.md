@@ -1,6 +1,14 @@
 Effective data loss prevention (DLP) policies start with clarity about what each policy is meant to accomplish. A policy isn't a catch-all control for every data risk. It's a targeted decision tool that responds to specific actions that increase the likelihood of data loss.
 
-Before defining conditions or actions, it’s important to be clear about the role a policy plays in reducing risk. Some policies are meant to prevent clear, high-risk scenarios. Others are designed to provide visibility, guide user behavior, or validate assumptions before enforcement. Being explicit about this role helps prevent policies from becoming overly broad or disruptive.
+Before defining conditions or actions, it's important to be clear about the role a policy plays in reducing risk. Some policies are meant to prevent clear, high-risk scenarios. Others are designed to provide visibility, guide user behavior, or validate assumptions before enforcement. Being explicit about this role helps prevent policies from becoming overly broad or disruptive.
+
+## Understand the DLP policy lifecycle
+
+:::image type="content" source="../media/create-data-loss-prevention-policy-flow.png" alt-text="Diagram illustrating the DLP policy lifecycle, including intent, detection rules, scope, actions, simulation mode, and policy management." lightbox="../media/create-data-loss-prevention-policy-flow.png":::
+
+Creating a DLP policy isn't a single configuration step. It's a sequence of related decisions that shape how protection behaves over time. Those decisions begin with intent, then move through how risk is detected, where the policy applies, how it responds, and how it's validated and adjusted as conditions change.
+
+Clear intent at the start makes later decisions more precise. Detection can focus on meaningful risk, scope can reflect real workflows, and enforcement can be introduced deliberately rather than reactively. Approaching policy creation as a lifecycle helps ensure protection remains effective as data usage and business needs change.
 
 ## Avoid assumptions that lead to over-enforcement
 

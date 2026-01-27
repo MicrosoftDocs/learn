@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.purview-data-loss-prevention-create-manage-policies.template-custom-policy
-title: Decide how to start a policy
+title: Choose a template or create a custom policy
 metadata:
-  title: Decide how to start a policy
-  description: "Decide how to start a policy"
-  ms.date: 01/15/2026
+  title: Choose a template or create a custom policy
+  description: "Choose a template or create a custom policy"
+  ms.date: 01/27/2026
   author: wwlpublish
   ms.author: riswinto
   ms.topic: unit

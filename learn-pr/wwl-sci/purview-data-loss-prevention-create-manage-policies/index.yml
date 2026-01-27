@@ -3,7 +3,7 @@ uid: learn.wwl.purview-data-loss-prevention-create-manage-policies
 metadata:
   title: Create and manage data loss prevention policies
   description: Create and manage data loss prevention policies.
-  ms.date: 01/16/2026
+  ms.date: 01/27/2026
   author: wwlpublish
   ms.author: riswinto
   ms.topic: module
@@ -11,18 +11,21 @@ metadata:
   ms.service: purview
 title: Create and manage data loss prevention policies
 summary: |
-  Effective data loss prevention (DLP) starts with understanding how risk is evaluated and how protection decisions are applied. This module focuses on the concepts and planning considerations that help organizations design DLP policies that protect sensitive data without disrupting everyday work.
+  Effective data loss prevention (DLP) policies are shaped by a series of deliberate decisions rather than individual settings. Clear intent, well-defined detection, appropriate scope, and measured actions determine how policies behave in real workflows. Validation and ongoing adjustment help ensure protection remains effective as risk and usage change.
+
 abstract: |
   In this module you learn to:
-  - Explain what data loss prevention is designed to address and where it fits in a data security strategy
-  - Describe how DLP evaluates content, context, and user actions
-  - Identify where DLP can apply protection and how enforcement differs by location
-  - Plan DLP policies based on risk, scope, and operational considerations
-  - Use simulation mode to validate policy behavior before enforcement
-  - Recognize when advanced DLP controls can improve enforcement decisions
+  - Establish clear intent and boundaries before creating a DLP policy
+  - Decide when to use a template-based policy or create a custom policy
+  - Define detection logic that reflects meaningful data risk
+  - Align policy scope and actions to real business workflows
+  - Validate and refine policy behavior using simulation mode
+  - Manage and adapt DLP policies as risk and usage patterns change
+
 prerequisites: |
-  - Familiarity with basic data security concepts
-  - General awareness of Microsoft Purview as a data security platform
+  - Understanding of what data loss prevention is and the types of risks it addresses
+  - Familiarity with Microsoft Purview as the platform used to create and manage DLP policies
+
 iconUrl: /training/achievements/generic-badge.svg
 levels:
 - intermediate

@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.purview-data-loss-prevention-create-manage-policies.adaptive-protection-data-loss-prevention
-title: Adapt DLP enforcement based on risk
+title: Adjust enforcement dynamically based on risk
 metadata:
-  title: Adapt DLP enforcement based on risk
-  description: "Adapt DLP enforcement based on risk"
-  ms.date: 01/16/2026
+  title: Adjust enforcement dynamically based on risk
+  description: "Adjust enforcement dynamically based on risk"
+  ms.date: 01/27/2026
   author: wwlpublish
   ms.author: riswinto
   ms.topic: unit

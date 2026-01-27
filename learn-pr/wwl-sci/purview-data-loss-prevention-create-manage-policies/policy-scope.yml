@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.purview-data-loss-prevention-create-manage-policies.policy-scope
-title: Scope the policy deliberately
+title: Align policy scope to risk
 metadata:
-  title: Scope the policy deliberately
-  description: "Scope the policy deliberately"
-  ms.date: 01/16/2026
+  title: Align policy scope to risk
+  description: "Align policy scope to risk"
+  ms.date: 01/27/2026
   author: wwlpublish
   ms.author: riswinto
   ms.topic: unit
