@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.scale-containers-azure-container-apps.event-driven-scaling-keda
+title: Implement event-driven scaling with KEDA
+metadata:
+  title: Implement Event-Driven Scaling with KEDA
+  description: Implement event-driven scaling with KEDA in Azure Container Apps
+  ms.date: 01/26/2026
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: unit
+durationInMinutes: 9
+content: |
+  [!include[](includes/3-event-driven-scaling-keda.md)]
