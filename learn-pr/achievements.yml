@@ -7610,3 +7610,23 @@ achievements:
   title: Describe Microsoft Entra Verified ID concepts
   summary: Learn the core concepts of decentralized identities and Microsoft Entra Verified ID.
   iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.introduction-azure-networking-services.trophy
+  type: trophy 
+  title: Introduction to key Azure network security services
+  summary: Learn to protect your network from cyber security attacks with Azure network security services.
+  iconUrl: /training/achievements/introduction-to-azure-networking-services.svg
+- uid: learn.introduction-azure-private-link.badge
+  type: badge 
+  title: Introduction to Azure Private Link
+  summary: Describe how Azure Private Link enables private connectivity to Azure services, including its features, how it works, and its use cases.
+  iconUrl: /training/achievements/introduction-to-azure-private-link.svg
+- uid: learn.introduction-azure-virtual-wan.badge
+  type: badge 
+  title: Introduction to Azure Virtual WAN
+  summary: Consider constructing a wide area network (WAN) using software-defined Azure Virtual WAN networking services.
+  iconUrl: /training/achievements/introduction-to-azure-virtual-wan.svg
+- uid: learn.introduction-azure-web-application-firewall.badge
+  type: badge 
+  title: Introduction to Azure Web Application Firewall
+  summary: Describe how Azure Web Application Firewall protects Azure web applications from common attacks, including the features, how it's deployed, and common use cases.
+  iconUrl: /training/achievements/introduction-to-azure-web-application-firewall.svg
