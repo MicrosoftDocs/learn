@@ -40,7 +40,7 @@ Secured-core PCs provide protection that's useful against sophisticated attacks 
 - Select **Device security**.
 - If your device is a Secure-core PC, it reflects that status on the top of the screen (see below).
 
-:::image type="content" border="true" source="../media/secured-core-pc.png" alt-text="Screenshot showing the Secured-Core PC status in Windows Security settings.":::
+:::image type="content" border="true" source="../media/device-security.png" alt-text="Screenshot showing the Secured-Core PC status in Windows Security settings.":::
 
 On the processor level, Microsoft Pluton is a secure crypto processor built into the CPU (Central Processing Unit) for security at the core to ensure code integrity and the latest protection with updates delivered through Windows Update. Designed by Microsoft, it's designed to provide the Trusted Platform Module (TPM) functionality and deliver other security functionality beyond what's possible with the TPM 2.0 specification. This allows for other Pluton firmware and operating system features to be delivered over time via Windows Update.
 
