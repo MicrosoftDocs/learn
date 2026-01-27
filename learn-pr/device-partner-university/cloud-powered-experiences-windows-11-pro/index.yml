@@ -3,14 +3,14 @@ uid: learn.dpu.cloud-powered-experiences-windows-11-pro
 title: Cloud-powered experiences on Windows 11 Pro
 metadata:
   title: Cloud-Powered Experiences On Windows 11 Pro
-  description: Explore how Windows 11 Pro applies hybrid execution models to balance responsiveness and capability. Understand how cloud-powered experiences such as Copilot and AI agents support complex workflows directly within the Windows interface.
+  description: In this module, you’ll learn how Windows 11 Pro uses hybrid execution models to balance responsiveness and capability, and how cloud-powered experiences like Copilot and AI agents support complex workflows within the Windows interface.
   ms.date: 01/27/2026
   author: melissawinters
   ms.author: v-mwinters
   ms.topic: module-standard-task-based
   ms.service: windows-11
 summary: >
-  Explore how Windows 11 Pro is evolving into a cloud-connected platform designed to support modern work. This module explains how Windows serves as the canvas where users initiate and manage intelligent tasks, while execution occurs locally or in the cloud depending on each task’s needs. You’ll learn how cloud execution enables deeper reasoning, long-running workflows, and access to broader data sources, and how these capabilities are integrated directly into familiar Windows experiences such as the taskbar, Ask Copilot, and AI agents—allowing users to stay productive while work continues in the background.
+  Explore how Windows 11 Pro applies hybrid execution models to balance responsiveness and capability. Understand how cloud-powered experiences such as Copilot and AI agents support complex workflows directly within the Windows interface.
 abstract: |
   By the end of this module, you'll be able to:
   - Describe how Windows 11 Pro uses cloud-based and on-device execution models to support different types of AI-assisted tasks and workflows.
