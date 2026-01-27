@@ -84,6 +84,6 @@ Runtime configuration should reduce risk and simplify operations. You can use th
 
 These resources provide deeper reference material for how Container Apps stores secrets and projects them into your containers at runtime. Use the CLI reference for `az containerapp secret` when you need the exact supported secret formats, including Key Vault references and identity requirements. Use the secrets management article for operational guidance on updates and rotation.
 
-- [Azure CLI: az containerapp secret](/cli/azure/containerapp/secret?view=azure-cli-latest)
-- [Azure CLI: az containerapp](/cli/azure/containerapp?view=azure-cli-latest)
+- [Azure CLI: az containerapp secret](/cli/azure/containerapp/secret)
+- [Azure CLI: az containerapp](/cli/azure/containerapp)
 - [Manage secrets in Azure Container Apps](/azure/container-apps/manage-secrets)

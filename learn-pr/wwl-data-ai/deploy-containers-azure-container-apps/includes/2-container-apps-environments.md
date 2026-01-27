@@ -59,4 +59,4 @@ These resources help you go deeper on how environments shape networking, isolati
 
 - [Azure Container Apps overview](/azure/container-apps/overview)
 - [Quickstart: Deploy your first container app](/azure/container-apps/get-started)
-- [Azure CLI: az containerapp env](/cli/azure/containerapp/env?view=azure-cli-latest)
+- [Azure CLI: az containerapp env](/cli/azure/containerapp/env)

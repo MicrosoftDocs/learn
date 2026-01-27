@@ -6,5 +6,5 @@ These resources help you go deeper on production deployments and day-two operati
 
 - [Azure Container Apps overview](/azure/container-apps/overview)
 - [Quickstart: Deploy your first container app](/azure/container-apps/get-started)
-- [Azure CLI: az containerapp](/cli/azure/containerapp?view=azure-cli-latest)
-- [Azure CLI: az containerapp logs](/cli/azure/containerapp/logs?view=azure-cli-latest)
+- [Azure CLI: az containerapp](/cli/azure/containerapp)
+- [Azure CLI: az containerapp logs](/cli/azure/containerapp/logs)

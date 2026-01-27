@@ -81,6 +81,6 @@ Verification is most effective when it's consistent and repeatable. You can use 
 
 These resources help you go deeper on day-two verification and troubleshooting for Container Apps. Use the CLI reference pages to confirm flags for targeting specific revisions and replicas when you're narrowing down an incident. You can also use these references to build automation that extracts the exact fields you validate in deployment pipelines.
 
-- [Azure CLI: az containerapp logs](/cli/azure/containerapp/logs?view=azure-cli-latest)
-- [Azure CLI: az containerapp revision](/cli/azure/containerapp/revision?view=azure-cli-latest)
-- [Azure CLI: az containerapp replica](/cli/azure/containerapp/replica?view=azure-cli-latest)
+- [Azure CLI: az containerapp logs](/cli/azure/containerapp/logs)
+- [Azure CLI: az containerapp revision](/cli/azure/containerapp/revision)
+- [Azure CLI: az containerapp replica](/cli/azure/containerapp/replica)

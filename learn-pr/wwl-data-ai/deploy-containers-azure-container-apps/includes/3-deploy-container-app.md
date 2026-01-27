@@ -96,5 +96,5 @@ Even when you use these other approaches, the CLI and YAML patterns in this unit
 These resources reinforce how Container Apps deployments work as you move from a first deployment to a repeatable, reviewable workflow. Use the quickstart to compare a minimal deployment to the patterns in this unit. Use the CLI reference to confirm the current flags and to understand how updates create new revisions.
 
 - [Quickstart: Deploy your first container app](/azure/container-apps/get-started)
-- [Azure CLI: az containerapp](/cli/azure/containerapp?view=azure-cli-latest)
+- [Azure CLI: az containerapp](/cli/azure/containerapp)
 - [Revisions in Azure Container Apps](/azure/container-apps/revisions)
