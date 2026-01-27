@@ -13,7 +13,6 @@ metadata:
   ms.custom:
   - N/A
   ms.service: azure-database-postgresql
-  ms.subservice: flexible-server
   ai-usage: human-only
 title: Enable semantic search in Azure Database for PostgreSQL
 summary: This module explores semantic search, embedding vectors, vector similarity, and using Azure Database for PostgreSQL - Flexible Server with PostgreSQL Vector and Azure AI extensions to generate, store, and query rows with semantic search.

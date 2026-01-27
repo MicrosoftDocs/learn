@@ -167,10 +167,14 @@ The same can be said of `bool`. If you need to work with the words `"true"` and 
 It's important to know that these values may look like their string literal equivalents. In other words, you may think these statements are the same:
 
 ```csharp
+// Output: 123
 Console.WriteLine("123");
+// Output: 123
 Console.WriteLine(123);
 
+// Output: true
 Console.WriteLine("true");
+// Output: True
 Console.WriteLine(true);
 ```
 

@@ -8,6 +8,6 @@ metadata:
   author: ceperezb
   ms.author: ceperezb
   ms.topic: unit
-durationInMinutes: 10
+durationInMinutes: 12
 content: |
   [!include[](includes/2-design-solutions-best-practices-capabilities-controls.md)]

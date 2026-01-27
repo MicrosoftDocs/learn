@@ -27,56 +27,59 @@ durationInMinutes: 10
 content: |
 quiz:
   questions:
-    - content: "Which of the following best defines the objective of a cloud reference architecture like Microsoft Cybersecurity Reference Architecture (MCRA) from Microsoft?"
+    - content: "What is the relationship between the Microsoft Security Adoption Framework (SAF) and the Microsoft Cybersecurity Reference Architecture (MCRA)?"
       choices:
-      - content: "To handle all cloud migration projects with the same approach"
+      - content: "SAF and MCRA are independent frameworks that address different security concerns"
         isCorrect: false
-        explanation: "MCRA does provide guidance on cloud migration, but it takes a wider view to provide an end-to-end, interdependent approach to cybersecurity across multiple scenarios, including migration."
-      - content: "To prescribe a set of tools and vendors for building secure clouds"
+        explanation: "SAF and MCRA are designed to work together, not independently. MCRA is a key component of SAF."
+      - content: "MCRA provides the strategic roadmap while SAF provides the technical architecture"
         isCorrect: false
-        explanation: "Although MCRA provides specific tools and vendor selection guidance, its primary role is to provide an interoperable architecture that facilitates effective cybersecurity across different scenarios and technology stacks."
-      - content: "To define a secure cloud architecture that can be implemented anywhere with any technology stack"
+        explanation: "This reverses their relationship. SAF provides the strategic roadmap and operational guidance, while MCRA provides the technical blueprint."
+      - content: "SAF provides the strategic roadmap for security modernization while MCRA serves as the technical blueprint within SAF"
         isCorrect: true
-        explanation: "MCRA is designed to provide security-focused reference architecture guidance that can apply almost anywhere no matter what underlying technologies, workloads, or data types are involved."
-      - content: "To focus only on technical security tips for cloud architects"
+        explanation: "SAF provides the 'why and how' of security modernization (the strategic roadmap), while MCRA provides the 'what' (the detailed architecture of security capabilities) as a component within SAF."
+      - content: "SAF replaces MCRA as the primary security guidance framework"
         isCorrect: false
-        explanation: "MCRA includes technical guidance, but it has much more expansive goals for providing comprehensive security guidance at different levels of abstraction."
-    - content: "What is a key benefit of using best practices, such as those found in the MCRA reference architecture when addressing cloud security concerns?"
+        explanation: "SAF doesn't replace MCRA. Instead, MCRA serves as a key component within SAF, providing the technical architecture that aligns with SAF's strategic guidance."
+    - content: "Which MCSB v2 security domain specifically addresses risks like prompt injection and model theft?"
       choices:
-      - content: "Patterns eliminate the need for detailed security assessment for each individual project"
+      - content: "Data Protection (DP)"
         isCorrect: false
-        explanation: "The use of best practices does cut down the time required for security evaluation, but security assessments should still be carried out to ensure the right pattern is chosen and customized for each project's distinct requirements."
-      - content: "Patterns reduce costs by limiting the number of components, platforms, and architectures that must be secured"
+        explanation: "Data Protection covers data at rest, in transit, and access controls, but doesn't specifically address AI-specific risks like prompt injection."
+      - content: "DevOps Security (DS)"
+        isCorrect: false
+        explanation: "DevOps Security covers security engineering and operations in DevOps processes, but AI-specific risks have their own dedicated domain."
+      - content: "Artificial Intelligence Security (AIS)"
         isCorrect: true
-        explanation: "Using best practices can reduce staffing needs, complexity, and risk exposure, bringing financial benefits that arise from economies of reuse and simplification rather than reducing the number of platforms, components, or architectures alone."
-      - content: "Patterns enable software to adapt to any type of threat in real-time"
+        explanation: "AI Security is a dedicated control domain in MCSB v2 that addresses security considerations specific to AI workloads, including risks like prompt injection, model theft, and adversarial attacks."
+      - content: "Posture and Vulnerability Management (PV)"
         isCorrect: false
-        explanation: "Best practices can help provide for efficient responses to certain classes of arising threats, but they aren't dynamic enough to handle every possible attack vector."
-    - content: "What is the purpose of the Microsoft Cloud Security Benchmark?"
+        explanation: "Posture and Vulnerability Management focuses on assessing and improving cloud security posture, not AI-specific security risks."
+    - content: "What are the three distinct threat categories that a Security Architect must design solutions to protect against?"
       choices:
-      - content: "To provide a set of recommended security configurations and best practices for Microsoft cloud services."
+      - content: "Network attacks, application attacks, and data breaches"
+        isCorrect: false
+        explanation: "While these are valid security concerns, the module organizes threat protection around insider threats, external attacks, and supply chain compromises."
+      - content: "Insider threats, external attacks, and supply chain compromises"
         isCorrect: true
-        explanation: "The Microsoft Cloud Security Benchmark is designed to provide a set of recommended security configurations and best practices for Microsoft cloud services."
-      - content: "To provide a comprehensive list of all possible security threats to Microsoft cloud services."
+        explanation: "These three threat categories require different controls but share common elements rooted in Zero Trust principles. Effective security architecture addresses all three with overlapping controls that create defense in depth."
+      - content: "Phishing attacks, ransomware attacks, and denial-of-service attacks"
         isCorrect: false
-        explanation: "The Microsoft Cloud Security Benchmark isn't a comprehensive list of all possible security threats to Microsoft cloud services. Rather, it provides recommended security configurations and best practices."
-      - content: "To provide a list of all security breaches that occurred in Microsoft cloud services."
+        explanation: "These are specific attack types that fall under the broader category of external attacks, not the three main threat categories discussed in the module."
+      - content: "Identity attacks, endpoint attacks, and cloud attacks"
         isCorrect: false
-        explanation: "The Microsoft Cloud Security Benchmark doesn't provide a list of all security breaches that occurred in Microsoft cloud services."
-      - content: "To provide a tool for testing the vulnerability of Microsoft cloud services to attacks."
-        isCorrect: false
-        explanation: "The Microsoft Cloud Security Benchmark isn't a tool for testing cloud service vulnerabilities."
-    - content: "What is the difference between defensive and detective security controls, as discussed in the Microsoft cloud security benchmark"
+        explanation: "These relate to attack surfaces rather than the three threat categories (insider threats, external attacks, and supply chain compromises) discussed in the module."
+    - content: "According to MCSB v2 AI security controls, what is the purpose of implementing safety meta-prompts?"
       choices:
-        - content: "Detective controls focus on changing user behavior while defensive controls monitor for incidents"
+        - content: "To improve the accuracy of AI model responses"
           isCorrect: false
-          explanation: "This description reverses the meanings of the two types of controls. Defensive controls aim to reduce the likelihood and impact of security incidents while Detective controls aim to address Incidents when they happen (including looking for indicators of compromise like log data)."
-        - content: "Defensive controls proactively prevent security incidents while Detective controls detect and respond to these incidents after they occur"
+          explanation: "Safety meta-prompts aren't primarily about improving response accuracy. They're about guiding AI models toward secure and ethical behavior."
+        - content: "To guide AI models toward intended, secure, and ethical behavior and resist prompt injection attacks"
           isCorrect: true
-          explanation: "This text gives the correct explanation of the differences between the two types of controls as outlined in the 2021 Cloud Security Benchmark."
-        - content: "Detective controls rely on passive monitoring of system logs while defensive controls require active scanning"
+          explanation: "Safety meta-prompts use system instructions to guide AI models toward intended, secure, and ethical behavior. They're designed to prioritize system instructions over user inputs to resist prompt injection attacks."
+        - content: "To reduce the computational cost of running AI models"
           isCorrect: false
-          explanation: "This distinction isn't accurate as both types of controls might necessitate either active surveillance, passive monitoring, or a mix of the two techniques."
-        - content: "Defensive controls rely entirely on preemptive configuration while Detective controls mostly operate via heuristic algorithms"
+          explanation: "Safety meta-prompts are security controls, not performance optimizations. They address security risks like prompt injection."
+        - content: "To enable AI models to learn from user interactions"
           isCorrect: false
-          explanation: "This distinction is also not accurate as both types of control measures take advantage of heuristics and machine learning algorithms when feasible."
+          explanation: "Safety meta-prompts are about security guardrails, not about enabling learning from user interactions."
