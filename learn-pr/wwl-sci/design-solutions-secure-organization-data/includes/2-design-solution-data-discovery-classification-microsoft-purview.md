@@ -23,7 +23,7 @@ As a workload owner, rely on your organization to provide a well-defined taxonom
 Your classification scheme should:
 
 - **Align with business requirements**: Classifications should reflect how your organization thinks about data sensitivity
-- **Support regulatory compliance**: Include classifications that map to GDPR, HIPAA, PCI-DSS, and other relevant regulations
+- **Support regulatory compliance**: Include classifications that map to HIPAA, PCI-DSS, and other relevant regulations
 - **Enable automation**: Design classifications that can be applied automatically based on content patterns
 - **Scale across the organization**: Use consistent classifications that work for all business units
 
