@@ -2,7 +2,7 @@
 uid: learn.wwl.deploy-containers-azure-container-apps
 metadata:
   title: Deploy Containers to Azure Container Apps
-  description: Deploy containerized applications to Azure Container Apps. Configure environments, runtime settings, secrets, registry authentication, and verify deployments with logs and status.
+  description: Create and manage container deployments in Azure Container Apps. Work with environments, runtime configuration, registry authentication, and deployment verification techniques.
   ms.date: 01/26/2026
   author: jeffkoms
   ms.author: jeffko
@@ -10,7 +10,7 @@ metadata:
   ai-usage: ai-assisted
   ms.service: azure-container-apps
 title: Deploy containers to Azure Container Apps
-summary: Deploy containerized applications to Azure Container Apps. Configure environments, runtime settings, secrets, registry authentication, and verify deployments with logs and status.
+summary: Create and manage container deployments in Azure Container Apps. Work with environments, runtime configuration, registry authentication, and deployment verification techniques.
 abstract: |
   After completing this module, you'll be able to:
     - Explain how Azure Container Apps environments affect networking, logging, and isolation.
