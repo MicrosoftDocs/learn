@@ -63059,6 +63059,76 @@
       "source_path": "learn-pr/aspnetcore/blazor-build-rich-interactive-components/8-summary.yml",
       "redirect_url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
       "redirect_document_id": false
-    }                                                    
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-front-door/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/frontdoor/front-door-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-front-door/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/frontdoor/front-door-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-front-door/2-what-is-azure-front-door.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/frontdoor/front-door-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-front-door/3-how-azure-front-door.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/frontdoor/front-door-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-front-door/4-when-to-use-azure-front-door.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/frontdoor/front-door-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-front-door/5-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/frontdoor/front-door-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-front-door/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/frontdoor/front-door-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-bastion/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/bastion/bastion-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-bastion/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/bastion/bastion-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-bastion/2-what-is-azure-bastion.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/bastion/bastion-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-bastion/3-how-azure-bastion-works.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/bastion/bastion-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-bastion/4-when-to-use-azure-bastion.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/bastion/bastion-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-bastion/5-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/bastion/bastion-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-bastion/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/bastion/bastion-overview",
+      "redirect_document_id": false
+    }
   ]
 }
