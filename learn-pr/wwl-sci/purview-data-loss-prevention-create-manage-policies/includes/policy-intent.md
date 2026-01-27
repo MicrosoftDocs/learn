@@ -28,9 +28,9 @@ The same data doesn't always represent the same level of risk. Identical content
 
 Effective policies account for:
 
-- differences in how data is shared
-- variations in audience or destination
-- the intent implied by the action being taken
+- Differences in how data is shared
+- Variations in audience or destination
+- The intent implied by the action being taken
 
 Treating all uses of sensitive data the same leads to unnecessary blocking and missed context.
 
