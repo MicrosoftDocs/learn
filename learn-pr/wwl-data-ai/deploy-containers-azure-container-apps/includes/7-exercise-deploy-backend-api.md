@@ -20,7 +20,7 @@ To complete the exercise, you need:
 
 - An Azure subscription with the permissions to deploy the necessary Azure services. If you don't already have one, you can [sign up for one](https://azure.microsoft.com/).
 - [Visual Studio Code](https://code.visualstudio.com/) on one of the [supported platforms](https://code.visualstudio.com/docs/supporting/requirements#_platforms).
-- The latest version of the [Azure CLI](cli/azure/install-azure-cli).
+- The latest version of the [Azure CLI](/cli/azure/install-azure-cli).
 - Optional - [Python 3.12](https://www.python.org/downloads/) or greater.
 
 ## Get started
