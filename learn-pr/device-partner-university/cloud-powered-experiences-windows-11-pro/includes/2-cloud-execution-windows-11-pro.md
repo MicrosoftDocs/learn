@@ -30,7 +30,7 @@ Common examples of cloud-based services used in Windows 11 Pro include:
 - **Security and identity services**, such as Microsoft Entra ID, which support authentication, access control, and policy enforcement across cloud-connected experiences
 
 | **Cloud service** | **What it provides** | **Simple example** |
-| :---: | :---: | :---: |
+| :--- | :--- | :--- |
 | Microsoft Copilot services | Cloud-based reasoning and natural language understanding | Ask Copilot to summarize a document using cloud models |
 | AI agents | Multi-step, long‑running tasks handled in the cloud | Researcher agent gathers and synthesizes information while you work |
 | Microsoft 365 cloud services | Organizational context and content access | Copilot retrieves relevant emails and files to answer a question |

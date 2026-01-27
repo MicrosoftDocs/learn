@@ -7,10 +7,10 @@ At a high level, Windows supports two primary execution models:
 
 Understanding these execution models helps explain:
 
-- where processing takes place,
-- what types of tasks each model is best suited for,
-- and how Windows blends local and cloud capabilities to support modern workflows.
-- 
+- Where processing takes place
+- What types of tasks each model is best suited for
+- How Windows blends local and cloud capabilities
+
 :::image type="content" border="true" source="../media/cloud-neural-processing-unit-comparison.svg" alt-text="A flowchart showing Windows 11 Pro sending user actions to either cloud AI for reasoning or on-device NPU for fast local tasks.":::
 
 ## Cloud-based execution
@@ -46,7 +46,7 @@ These experiences run directly on the device, minimizing data transfer, and help
 Windows 11 Pro is designed to combine cloud-based and on-device execution, selecting the most appropriate model for each task.
 
 | **Execution model** | **Runs where** | **Best suited for** | **Internet required** | **Power usage** |
-| :---: | :---: | :---: | :---: | :---: |
+| :--- | :--- | :--- | :--- | :--- |
 | Cloud-based | Microsoft cloud | Reasoning, research, synthesis | Yes | Not device-dependent |
 | On-device (NPU) | On the PC | Real-time and system features | No (for supported features) | Optimized for battery |
 

@@ -4,7 +4,7 @@ To support this type of work, Windows 11 Pro uses AI agents that run using cloud
 
 By treating long-running cloud work as a first-class system activity, Windows enables users to stay productive without waiting for tasks to finish or managing separate application windows.
 
-:::image type="content" border="true" source="../media/agents-on-taskbar.png" alt-text="A screenshot showing an agent working on the Windows taskbar.":::
+:::image type="content" border="true" source="../media/agents-on-taskbar-inline.png" alt-text="A screenshot showing an agent working on the Windows taskbar." lightbox="../media/agents-on-taskbar-expanded.png":::
 
 ## What are AI agents in Windows 11?
 
@@ -69,7 +69,7 @@ Agents in Windows 11 are designed to operate within defined boundaries. Agent ex
 This approach helps organizations balance productivity gains with security, compliance, and manageability requirements.
 
 | **Security Area** | **How Windows implements it** | **Why it matters** |
-| :---: | :---: | :---: |
+| :--- | :--- | :--- |
 | **User visibility** | Taskbar indicators, hover summaries, in workspace transparency | Users can see what agents are doing at all times, preventing hidden actions. |
 | **Permission control** | Separate agent accounts, least privilege folder access, secure MCP connectors via Windows On Device Registry | Limits agent access to only what is necessary and ensures controlled integration with apps/tools. |
 | **Safe execution models** | Agent Workspace (isolated environment), policy-controlled runtimes | Protects user workflows and system stability by containing agent actions. |
