@@ -63059,6 +63059,41 @@
       "source_path": "learn-pr/aspnetcore/blazor-build-rich-interactive-components/8-summary.yml",
       "redirect_url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
       "redirect_document_id": false
-    }                                                    
+    },
+    {
+      "source_path": "learn-pr/azure/introduction-to-azure-files/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/files/storage-files-introduction",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/introduction-to-azure-files/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/files/storage-files-introduction",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/introduction-to-azure-files/2-what-is-azure-files.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/files/storage-files-introduction",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/introduction-to-azure-files/3-what-is-azure-file-sync.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/files/storage-files-introduction",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/introduction-to-azure-files/4-identity-and-access-control.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/files/storage-files-introduction",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/introduction-to-azure-files/5-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/files/storage-files-introduction",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/introduction-to-azure-files/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/files/storage-files-introduction",
+      "redirect_document_id": false
+    }                                                                    
   ]
 }

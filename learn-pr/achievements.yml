@@ -7635,3 +7635,8 @@ achievements:
   title: Build applications with Azure DevOps learning path
   summary: Azure DevOps enables you to build, test, and deploy any application to any cloud or on premises. Learn how to configure build pipelines that continuously build, test, and verify your applications.
   iconUrl: /training/achievements/azure-devops/build-applications-with-azure-devops.svg 
+- uid: learn.introduction-to-azure-files-badge
+  type: badge 
+  title: Introduction to Azure Files
+  summary: Azure Files offers fully managed file shares in the cloud that are accessible via the industry standard Server Message Block (SMB) and Network File System (NFS) protocols. It also provides programmatic access via the Azure Files REST API. In this module, you learn how you can meet your storage needs using Azure Files and Azure File Sync.
+  iconUrl: /training/achievements/generic-badge.svg
