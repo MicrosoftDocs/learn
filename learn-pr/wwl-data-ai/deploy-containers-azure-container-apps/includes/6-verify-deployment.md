@@ -1,7 +1,7 @@
 Verification closes the loop between deployment intent and what actually runs in production. For AI services, verification is especially important because startup failures can look like model connectivity problems, missing secrets, or registry authentication errors. In Azure Container Apps, you can verify deployments through logs, revisions, and replica status.
 
 > [!NOTE]
-> Container Apps logs can include console logs from your container and system logs from the platform. These two log types answer different questions, so choose the one that matches the symptom you are investigating.
+> Container Apps logs can include console logs from your container and system logs from the platform. These two log types answer different questions, so choose the one that matches the symptom you're investigating.
 
 ## Confirm app configuration and ingress
 
@@ -15,7 +15,7 @@ az containerapp show -n ai-api -g rg-aca-demo
 
 ## Investigate container logs
 
-Container logs are usually the fastest way to understand why a revision fails. They commonly show errors such as missing environment variables, connection failures, or application crashes. When you are deploying an AI API, logs often show HTTP binding issues, dependency endpoint issues, or authentication failures when calling model providers.
+Container logs are usually the fastest way to understand why a revision fails. They commonly show errors such as missing environment variables, connection failures, or application crashes. When you're deploying an AI API, logs often show HTTP binding issues, dependency endpoint issues, or authentication failures when calling model providers.
 
 You can view recent console logs using `az containerapp logs show`. By default, this command returns a limited number of lines.
 
@@ -55,7 +55,7 @@ az containerapp revision list -n ai-api -g rg-aca-demo --all
 
 ## Check replicas to understand scaling and availability
 
-Replicas are the running instances of a revision. For request-driven AI workloads, replica behavior affects latency and throughput because cold starts and scale-out events can add delay. Listing replicas helps you determine whether the app is running and whether it is scaling as expected.
+Replicas are the running instances of a revision. For request-driven AI workloads, replica behavior affects latency and throughput because cold starts and scale-out events can add delay. Listing replicas helps you determine whether the app is running and whether it's scaling as expected.
 
 You can list replicas for the latest revision, or you can provide a revision name.
 
@@ -70,7 +70,7 @@ az containerapp replica list -n ai-api -g rg-aca-demo \
 
 ## Best practices for verification
 
-Verification is most effective when it is consistent and repeatable. You can use the following practices to reduce time-to-diagnosis for AI services.
+Verification is most effective when it's consistent and repeatable. You can use the following practices to reduce time-to-diagnosis for AI services.
 
 - **Start with logs:** Use `az containerapp logs show` first to capture startup and runtime errors.
 - **Use revisions for rollout validation:** List revisions after updates to confirm a new revision exists and becomes active.
@@ -79,7 +79,7 @@ Verification is most effective when it is consistent and repeatable. You can use
 
 ## Additional resources
 
-These resources help you go deeper on day-two verification and troubleshooting for Container Apps. Use the CLI reference pages to confirm flags for targeting specific revisions and replicas when you are narrowing down an incident. You can also use these references to build automation that extracts the exact fields you validate in deployment pipelines.
+These resources help you go deeper on day-two verification and troubleshooting for Container Apps. Use the CLI reference pages to confirm flags for targeting specific revisions and replicas when you're narrowing down an incident. You can also use these references to build automation that extracts the exact fields you validate in deployment pipelines.
 
 - [Azure CLI: az containerapp logs](/cli/azure/containerapp/logs?view=azure-cli-latest)
 - [Azure CLI: az containerapp revision](/cli/azure/containerapp/revision?view=azure-cli-latest)

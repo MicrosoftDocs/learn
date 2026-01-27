@@ -1,6 +1,6 @@
 AI services often depend on external systems and require many runtime settings. You typically configure endpoints, feature flags, and model selection settings using environment variables. You handle sensitive settings, such as API keys, using secrets and secret references.
 
-## Configure non-sensitive settings with environment variables
+## Configure nonsensitive settings with environment variables
 
 Environment variables are a good fit for non-sensitive configuration like log levels, feature flags, and dependency URLs. This approach keeps container images portable across environments because you can run the same image with different configuration values. For AI workloads, environment variables also help you tune behavior such as request timeouts and batch sizes without rebuilding images.
 
@@ -23,7 +23,7 @@ az containerapp update -n ai-api -g rg-aca-demo \
 
 ## Store sensitive settings as Container Apps secrets
 
-Secrets let you keep sensitive values out of container images and out of source control. This matters for AI services because provider API keys, database credentials, and signing keys rotate regularly. By storing secrets separately, you can rotate secrets without rebuilding or redeploying the image.
+Secrets let you keep sensitive values out of container images and out of source control. Protecting sensitive values matters for AI services because provider API keys, database credentials, and signing keys rotate regularly. By storing secrets separately, you can rotate secrets without rebuilding or redeploying the image.
 
 You can create or update secrets using `az containerapp secret set`. Secrets are provided as `key=value` pairs.
 
@@ -36,7 +36,7 @@ If you need to reference Azure Key Vault, the CLI also supports a Key Vault refe
 
 ## Reference secrets from environment variables
 
-Most application frameworks read configuration from environment variables. Container Apps supports secret references so you can map a secret to an environment variable without exposing the value. This is a common pattern for AI apps that call external model endpoints.
+Most application frameworks read configuration from environment variables. Container Apps supports secret references so you can map a secret to an environment variable without exposing the value, which is a common pattern for AI apps that call external model endpoints.
 
 You reference a secret by setting the environment variable value to `secretref:<secret-name>`. The following example sets `EMBEDDINGS_API_KEY` to the secret value.
 
@@ -76,7 +76,7 @@ az containerapp update -n ai-api -g rg-aca-demo \
 Runtime configuration should reduce risk and simplify operations. You can use the following practices to keep configuration manageable as your AI solution grows.
 
 - **Separate config from images:** Use environment variables and secrets so the same image can run across multiple environments.
-- **Prefer secret references:** Use `secretref:` and `secretRef` so secret values do not appear in YAML files or shell history.
+- **Prefer secret references:** Use `secretref:` and `secretRef` so secret values don't appear in YAML files or shell history.
 - **Rotate secrets intentionally:** Update secrets independently of images so you can respond quickly to credential rotation requirements.
 - **Use YAML for consistency:** Store YAML in source control to reduce drift and make configuration changes reviewable.
 

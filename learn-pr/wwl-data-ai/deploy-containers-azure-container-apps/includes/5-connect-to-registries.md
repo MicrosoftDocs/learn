@@ -5,7 +5,7 @@ Production AI services often run images from private registries. A private regis
 
 ## Understand registry options
 
-When you configure a container app to pull from a private registry, you must provide credentials or an identity that can pull images. The simplest option is username and password, which is useful for quick validation and for registries that do not support Azure-managed identities. For Azure Container Registry, managed identity is often a better fit because it avoids storing long-lived credentials.
+When you configure a container app to pull from a private registry, you must provide credentials or an identity that can pull images. The simplest option is username and password, which is useful for quick validation and for registries that don't support Azure-managed identities. For Azure Container Registry, managed identity is often a better fit because it avoids storing long-lived credentials.
 
 Your choice is a trade-off. Username and password works broadly, but it increases secret management overhead. Managed identity requires Azure role assignments, but it reduces the number of secrets your team must rotate.
 
@@ -22,7 +22,7 @@ az containerapp registry set -n ai-api -g rg-aca-demo \
     --password MyRegistryPassword
 ```
 
-If you are using Azure Container Registry, Azure CLI can sometimes infer credentials if you omit them. You should still prefer an explicit authentication approach in production so behavior is predictable.
+If you're using Azure Container Registry, Azure CLI can sometimes infer credentials if you omit them. You should still prefer an explicit authentication approach in production so behavior is predictable.
 
 ## Configure a registry using managed identity for Azure Container Registry
 
