@@ -62721,6 +62721,166 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/azure/publish-manage-apis-with-azure-api-management/index.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/api-management/import-and-publish",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-manage-apis-with-azure-api-management/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/api-management/import-and-publish",
+      "redirect_document_id": false
+    },   
+    {
+      "source_path": "learn-pr/azure/publish-manage-apis-with-azure-api-management/2-create-an-api-gateway.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/api-management/import-and-publish",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-manage-apis-with-azure-api-management/3-exercise-create-an-api-gateway.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/api-management/import-and-publish",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-manage-apis-with-azure-api-management/4-import-and-publish-an-api.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/api-management/import-and-publish",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-manage-apis-with-azure-api-management/5-exercise-import-and-publish-an-api.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/api-management/import-and-publish",
+      "redirect_document_id": false
+    },   
+    {
+      "source_path": "learn-pr/azure/publish-manage-apis-with-azure-api-management/6-call-an-api-with-a-subscription-key.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/api-management/import-and-publish",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-manage-apis-with-azure-api-management/7-exercise-call-an-api-with-a-subscription-key.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/api-management/import-and-publish",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-manage-apis-with-azure-api-management/8-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/api-management/import-and-publish",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/implement-code-workflow/index.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/devops/user-guide/code-with-git?toc=%2fazure%2fdevops%2fget-started%2ftoc.json&view=azure-devops",
+      "redirect_document_id": false
+    },   
+    {
+      "source_path": "learn-pr/azure-devops/implement-code-workflow/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/devops/user-guide/code-with-git?toc=%2fazure%2fdevops%2fget-started%2ftoc.json&view=azure-devops",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/implement-code-workflow/2-choose-a-code-flow-strategy.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/devops/user-guide/code-with-git?toc=%2fazure%2fdevops%2fget-started%2ftoc.json&view=azure-devops",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/implement-code-workflow/3-set-up-environment.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/devops/user-guide/code-with-git?toc=%2fazure%2fdevops%2fget-started%2ftoc.json&view=azure-devops",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/implement-code-workflow/4-create-pull-request.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/devops/user-guide/code-with-git?toc=%2fazure%2fdevops%2fget-started%2ftoc.json&view=azure-devops",
+      "redirect_document_id": false
+    },   
+    {
+      "source_path": "learn-pr/azure-devops/implement-code-workflow/5-push-a-change.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/devops/user-guide/code-with-git?toc=%2fazure%2fdevops%2fget-started%2ftoc.json&view=azure-devops",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/implement-code-workflow/6-add-build-badge.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/devops/user-guide/code-with-git?toc=%2fazure%2fdevops%2fget-started%2ftoc.json&view=azure-devops",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/implement-code-workflow/7-track-build-history.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/devops/user-guide/code-with-git?toc=%2fazure%2fdevops%2fget-started%2ftoc.json&view=azure-devops",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/implement-code-workflow/8-require-reviewer.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/devops/user-guide/code-with-git?toc=%2fazure%2fdevops%2fget-started%2ftoc.json&view=azure-devops",
+      "redirect_document_id": false
+    },   
+    {
+      "source_path": "learn-pr/azure-devops/implement-code-workflow/9-clean-up-environment.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/devops/user-guide/code-with-git?toc=%2fazure%2fdevops%2fget-started%2ftoc.json&view=azure-devops",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/implement-code-workflow/10-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/devops/user-guide/code-with-git?toc=%2fazure%2fdevops%2fget-started%2ftoc.json&view=azure-devops",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/manage-build-dependencies/index.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/devops/artifacts/start-using-azure-artifacts",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/manage-build-dependencies/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/devops/artifacts/start-using-azure-artifacts",
+      "redirect_document_id": false
+    },   
+    {
+      "source_path": "learn-pr/azure-devops/manage-build-dependencies/2-plan-build-dependencies-for-your-pipeline.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/devops/artifacts/start-using-azure-artifacts",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/manage-build-dependencies/2b-what-is-azure-artifacts.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/devops/artifacts/start-using-azure-artifacts",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/manage-build-dependencies/3-set-up-environment.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/devops/artifacts/start-using-azure-artifacts",
+      "redirect_document_id": false
+    },   
+    {
+      "source_path": "learn-pr/azure-devops/manage-build-dependencies/4-create-feed.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/devops/artifacts/start-using-azure-artifacts",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/manage-build-dependencies/5-create-package-pipeline.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/devops/artifacts/start-using-azure-artifacts",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/manage-build-dependencies/6-consume-package.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/devops/artifacts/start-using-azure-artifacts",
+      "redirect_document_id": false
+    },   
+    {
+      "source_path": "learn-pr/azure-devops/manage-build-dependencies/7-push-a-change.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/devops/artifacts/start-using-azure-artifacts",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/manage-build-dependencies/8-clean-up-environment.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/devops/artifacts/start-using-azure-artifacts",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/manage-build-dependencies/9-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/devops/artifacts/start-using-azure-artifacts",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/build-applications-with-azure-devops/index.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/training/browse/",
+      "redirect_document_id": false
+    },
+    {                                                                                                              
       "source_path": "learn-pr/paths/create-serverless-applications/index.yml",
       "redirect_url": "https://learn.microsoft.com/en-us/training/browse/",
       "redirect_document_id": false
