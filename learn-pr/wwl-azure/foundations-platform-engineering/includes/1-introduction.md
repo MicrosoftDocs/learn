@@ -71,7 +71,4 @@ If you're new to Azure Administration, consider taking the:
 - Free online: [Prerequisites for Azure Administrators](/learn/paths/az-104-administrator-prerequisites/).
 - Instructor-led courses: [AZ-104: Microsoft Azure Administrator](/learn/certifications/courses/az-104t00).
 
-If you're new to Azure Developer, consider taking the:
-
-- Free online: [Create serverless applications](/learn/paths/create-serverless-applications/).
-- Instructor-led courses: [AZ-204: Developing Solutions for Microsoft Azure](/learn/certifications/courses/az-204t00).
+If you're new to Azure Developer, consider taking this instructor-led course: [AZ-204: Developing Solutions for Microsoft Azure](/learn/certifications/courses/az-204t00).
