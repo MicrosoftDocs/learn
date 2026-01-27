@@ -42,7 +42,7 @@ The workflow follows a specific sequence, with each command building on the outp
 
 ## Project initialization
 
-Initialize your project with the `specify init` terminal command. This sets up the necessary directory structure, configuration files, and templates for GitHub Spec Kit to work.
+Initialize your project with the `specify init` terminal command. This command sets up the necessary directory structure, configuration files, and templates for GitHub Spec Kit to work.
 
 ### The specify init command
 
@@ -74,7 +74,7 @@ For an existing project directory, use `--here` to initialize in place:
 specify init --here
 ```
 
-During initialization, you'll be prompted to select your AI coding assistant. Choose the one you plan to use (for this module, that's GitHub Copilot).
+During initialization, you're prompted to select your AI coding assistant. Choose the one you plan to use (for this module, that's GitHub Copilot).
 
 ## Creating the constitution
 
@@ -88,7 +88,7 @@ Before diving into features, establish your project's guiding principles. In you
 /speckit.constitution
 ```
 
-The AI generates a **constitution.md** file that captures project-wide principles, constraints, and requirements. For a greenfield project, this might be a template you fill in with your standards. For a brownfield project, the AI might analyze your existing codebase to suggest conventions.
+The AI generates a **constitution.md** file that captures project-wide principles, constraints, and requirements. For a greenfield project, the information could be provided as inline text or in documentation that outlines your coding standards and guidelines. For a brownfield project, the AI can analyze your existing codebase to suggest coding conventions.
 
 ### What constitution.md contains
 
@@ -143,7 +143,7 @@ Think of it this way: could you hand this spec to a developer (or AI) and have t
 
 ## Creating the technical plan
 
-The technical plan outlines how you'll implement the specification - architecture, technology choices, and implementation sequence.
+The technical plan outlines how you implement the specification - architecture, technology choices, and implementation sequence.
 
 ### The /speckit.plan command
 
@@ -169,7 +169,7 @@ Check that the plan makes sense and aligns with your expectations:
 - Does the architecture address all specification requirements?
 - Is anything from the spec unaddressed in the plan?
 
-If the AI proposed something you don't want (maybe it chose a database you don't prefer), edit the plan. The plan will drive task generation, so it needs to be correct before proceeding.
+If the AI proposed something you don't want (maybe it chose a database you don't prefer), edit the plan. The plan drives task generation, so it needs to be correct before proceeding.
 
 ## Generating the task list
 
@@ -254,11 +254,11 @@ Run tests, manually check behavior, or use whatever verification is appropriate 
 
 ### Keeping artifacts updated
 
-If you discover something during implementation that changes the design - maybe you need a different approach than the plan specified - update your artifacts. Edit plan.md (and spec.md if requirements changed) to reflect reality. This keeps your documentation accurate and useful.
+If you discover something during implementation that changes the design - maybe you need a different approach than the plan specified - update your artifacts. Edit plan.md (and spec.md if requirements changed) to reflect the latest design requirements. This process keeps your documentation accurate and useful.
 
 ## Optional enhancement commands
 
-GitHub Spec Kit provides additional commands for quality and consistency:
+GitHub Spec Kit provides other commands for quality and consistency:
 
 ### /speckit.clarify
 
@@ -276,11 +276,11 @@ Performs cross-artifact consistency checking. It verifies that:
 - Tasks cover all plan elements
 - Everything aligns with the constitution
 
-Run this after generating plan and tasks but before implementing.
+Run this command after generating plan and tasks but before implementing.
 
 ### /speckit.checklist
 
-Generates quality verification checklists for your specification. Use this for self-review before sharing specs with stakeholders.
+Generates quality verification checklists for your specification. Use this command for self-review before sharing specs with stakeholders.
 
 ## Best practices
 
@@ -292,6 +292,10 @@ Generates quality verification checklists for your specification. Use this for s
 
 - **Commit your artifacts:** Save spec.md, plan.md, and tasks.md in your repository alongside code. They're valuable documentation.
 
-- **Know when to re-run vs. edit:** If output is significantly wrong, consider re-running with a better prompt. For minor issues, just edit the file directly.
+- **Know when to re-run vs. edit:** If output is wrong, consider rerunning with a better prompt. For minor issues, just edit the file directly.
 
 - **Follow the sequence:** Run commands in order - spec before plan, plan before tasks. Each builds on the previous outputs.
+
+## Summary
+
+GitHub Spec Kit provides a structured set of commands that operationalize spec-driven development. By following the workflow from project initialization through constitution, specification, planning, task generation, and implementation, you can systematically transform ideas into working software. Each command produces artifacts that guide the next steps, ensuring alignment and quality throughout the process. Optional enhancement commands help clarify requirements and verify consistency, while best practices ensure effective use of AI assistance. With this understanding, you're ready to apply GitHub Spec Kit in your development projects.

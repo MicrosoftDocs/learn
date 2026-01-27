@@ -17,7 +17,7 @@ Source File: includes/3-examine-github-spec-kit.md
 
 In traditional software development, we often treat code as the ultimate source of truth. Specifications serve code - they're the scaffolding we build and then discard once the "real work" of coding begins. We write Product Requirements Documents (PRDs) to guide development, create design docs to inform implementation, and draw diagrams to visualize architecture. But these documents are always subordinate to the code itself. As code moves forward, specs rarely keep pace.
 
-With the rise of powerful AI coding assistants like GitHub Copilot, this code-first approach has evolved into what's often called "vibe coding" - developers provide a high-level prompt and get a chunk of code that "looks right" but may miss the intent or have errors. It's fast, but sometimes misaligned. Each chat session operates in isolation, lacking awareness of previous decisions or overall project requirements.
+With the rise of powerful AI coding assistants like GitHub Copilot, this code-first approach evolved into what we now call "vibe coding." Unfortunately, the vibe coding approach often involves submitting a high-level prompt that returns a chunk of code that "looks right" but might miss the intent or have errors. It can be fast, but sometimes it's misaligned. Each chat session operates in isolation, lacking awareness of previous decisions or overall project requirements.
 
 Spec-driven development (SDD) offers a better approach.
 
@@ -25,11 +25,11 @@ Spec-driven development (SDD) offers a better approach.
 
 Spec-driven development inverts the code-centric power structure. Specifications don't serve code - code serves specifications. The Product Requirements Document isn't a guide for implementation; it's the source that generates implementation. Technical plans aren't documents that inform coding; they're precise definitions that produce code. This paradigm shift isn't an incremental improvement to how we build software, it's a fundamental rethinking of what drives development.
 
-The gap between specification and implementation is an ongoing issue. Developers have tried to bridge the gap with better documentation, more detailed requirements, and stricter processes. These approaches fail because they accept the gap as inevitable. They try to narrow it but never eliminate it. SDD eliminates the gap by making specifications executable. When specifications and implementation plans are used to generate code, there's no gap - only transformation.
+The gap between specification and implementation is an ongoing issue. Developers try to bridge the gap with better documentation, more detailed requirements, and stricter processes. These approaches fail because they accept the gap as inevitable. They try to narrow it but never eliminate it. SDD eliminates the gap by making specifications executable. When specifications and implementation plans are used to generate code, there's no gap - only transformation.
 
 In this new world of AI-assisted development and SDD, maintaining software means evolving specifications. The intent of the development team is expressed in natural language ("intent-driven development"), design assets, core principles, and other guidelines. The language of development moves to a higher level, and code becomes the last-mile output.
 
-Think of it like construction: traditionally, software teams might wing it with minimal plans (vibe coding), but SDD is like creating a detailed blueprint first that the builder (AI) strictly follows. When a developer says "build login feature" without details, an AI might misinterpret requirements. With a precise spec that includes security requirements, authentication flow, and error handling - the AI produces exactly what's needed.
+Think of it like construction: traditionally, software teams might wing it with minimal plans (vibe coding), but SDD is like creating a detailed blueprint first that the builder (AI) strictly follows. When a developer says "build sign in feature" without details, an AI might misinterpret requirements. With a precise spec that includes security requirements, authentication flow, and error handling - the AI produces exactly what's needed.
 
 ## Key features of spec-driven development
 
@@ -61,5 +61,6 @@ SDD transforms requirement changes from obstacles into normal workflow. When spe
 
 For enterprise teams especially, SDD addresses persistent pain points: miscommunications between product and engineering, costly late-stage fixes, documentation that drifts from implementation. By having a solid spec that's continuously referenced and used to generate code, these problems are significantly reduced.
 
-> [!NOTE]
-> While SDD transforms how we approach development, implementing it effectively requires appropriate tooling. An open-source toolkit called GitHub Spec Kit exists to facilitate this approach - you'll learn about it in upcoming units.
+## Summary
+
+Spec-driven development represents a fundamental shift in how we build software. By making specifications the primary artifact that drives code generation, SDD eliminates the gap between intent and implementation. This approach uses AI capabilities to automate the mechanical translation from precise specs to working systems, enabling teams to maintain velocity amid complexity and change. As software development continues to evolve, embracing spec-driven development is crucial for teams aiming to deliver high-quality products efficiently.

@@ -20,7 +20,7 @@ This unit was built from the following source content:
 **Note:** The source module doesn't contain direct methodology comparisons. Content was derived from SDD principles in source materials and structured according to the module outline's comparison framework.
 -->
 
-Understanding how spec-driven development relates to other software development methodologies helps you see where it fits in your existing practices. Rather than replacing what you already know, SDD can complement and enhance established approaches, especially when you're using AI-assisted development tools.
+Understanding how spec-driven development (SDD) relates to other software development methodologies helps you see where it fits in your existing practices. Rather than replacing what you already know, SDD can complement and enhance established approaches, especially when you're using AI-assisted development tools.
 
 ## Methodology comparison overview
 
@@ -43,7 +43,7 @@ Waterfall methodology emphasizes comprehensive upfront planning with requirement
 
 - **Specification lifecycle:** In Waterfall, the requirements document is a phase artifact that's created and then left behind. In SDD, the spec is continuously used and updated; it directly generates implementations rather than being just a phase document.
 
-- **Adaptability:** Waterfall's rigidity makes responding to changes expensive - often requiring formal change control processes. SDD keeps the spec "alive" and revisitable, allowing updates that propagate through plan, tasks, and code.
+- **Adaptability:** Waterfall's rigidity makes responding to changes expensive - often requiring formal change control processes. SDD keeps the spec "alive" and revisable, allowing updates that propagate through plan, tasks, and code.
 
 - **Shared discipline:** SDD retains Waterfall's discipline of upfront thinking and planning, but avoids its rigidity. You still invest time in understanding requirements before coding, but the specification remains a living document that evolves with the project.
 
@@ -51,13 +51,13 @@ Waterfall methodology emphasizes comprehensive upfront planning with requirement
 
 ## SDD vs. Agile/Scrum
 
-Agile methodologies value "working software over comprehensive documentation," which might seem at odds with SDD's specification focus. However, the two approaches share more in common than you might expect.
+Agile methodologies value "working software over comprehensive documentation," which might seem at odds with SDD's specification focus. However, the two approaches share more  than you might expect.
 
 **Key differences:**
 
 - **Documentation philosophy:** Agile often minimizes documentation in favor of direct communication and working code. SDD doesn't mean writing a massive spec and never changing it - rather, any given increment (even within a sprint) starts with a clear spec and plan that can evolve.
 
-- **Iteration scope:** In Scrum, user stories guide work but may lack the precision needed for AI-assisted generation. SDD can operate within Scrum by treating each user story with a micro-cycle (spec, plan, tasks, implement for that story).
+- **Iteration scope:** In Scrum, user stories guide work but might lack the precision needed for AI-assisted generation. SDD can operate within Scrum by treating each user story with a micro-cycle (spec, plan, tasks, implement for that story).
 
 **Where they align:** Both embrace iterative development and expect requirements to change. SDD supports agility by making changes easier - update the spec, regenerate plan and tasks, and continue. This structured approach to change is often faster than ad-hoc mid-sprint pivots without clear documentation.
 
@@ -65,7 +65,7 @@ Agile methodologies value "working software over comprehensive documentation," w
 
 ## SDD vs. Test-Driven Development (TDD)
 
-TDD drives development by writing tests first - you create a failing test, write code to pass it, then refactor. This red-green-refactor cycle guides design at the unit level.
+TDD drives development by writing tests first. You begin by creating a failing test. Then you write code to pass the test. Finally, you refactor the code as needed. This red-green-refactor cycle guides design at the unit level.
 
 **Key differences:**
 
@@ -91,7 +91,7 @@ BDD focuses on user behavior using Given-When-Then scenarios to drive developmen
 
 **Where they align:** Both put requirements first and focus on the "what and why" before implementation. Both emphasize understanding user needs before coding.
 
-**How they complement:** You can integrate BDD-style scenarios into the SDD spec - for example, listing Gherkin scenarios as part of requirements. The AI could use those scenarios to validate the implementation if tests are generated as part of the tasks. This gives you the best of both worlds: precise behavioral specifications and AI-accelerated implementation.
+**How they complement:** You can integrate BDD-style scenarios into the SDD spec - for example, listing Gherkin scenarios as part of requirements. The AI could use those scenarios to validate the implementation if tests are generated as part of the tasks. This combination gives you the best of both worlds: precise behavioral specifications and AI-accelerated implementation.
 
 ## Where SDD shines
 
@@ -111,8 +111,12 @@ SDD isn't always the right tool:
 
 - **Quick prototypes or proofs of concept:** When you're exploring whether something is even possible, a full specification might slow you down.
 
-- **One-off scripts or utilities:** Simple automation tasks may not benefit from the structured SDD approach.
+- **One-off scripts or utilities:** Simple automation tasks might not benefit from the structured SDD approach.
 
-- **Rapid experimentation:** When you're deliberately trying many small experiments to learn, lighter approaches may be more appropriate.
+- **Rapid experimentation:** When you're deliberately trying many small experiments to learn, lighter approaches might be more appropriate.
 
-The key is recognizing SDD as a tool in your toolkit, not a silver bullet for every scenario. For substantial features, complex systems, or team-based development with AI assistance, SDD provides structure and repeatability. For smaller tasks, simpler approaches may suffice.
+The key is recognizing SDD as a tool in your toolkit, not a silver bullet for every scenario. For substantial features, complex systems, or team-based development with AI assistance, SDD provides structure and repeatability. For smaller tasks, simpler approaches might suffice.
+
+## Summary
+
+Spec-driven development offers a structured, adaptable approach that complements and enhances existing methodologies. When you focus on clear specifications, living artifacts, and AI collaboration, SDD provides a reliable framework for building high-quality software in complex scenarios. Understanding when and how to apply SDD alongside other methodologies allows you to use its strengths effectively while maintaining flexibility in your development practices.

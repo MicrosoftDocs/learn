@@ -11,7 +11,7 @@ metadata:
 title: "Get started with spec-driven development and GitHub Spec Kit"
 summary: Learn to implement the spec-driven development methodology and GitHub Spec Kit for greenfield applications.
 abstract: |
-  After completing this module, you're be able to:
+  After completing this module, you're able to:
   - Describe the principles and phases of the spec-driven development (SDD) methodology.
   - Use GitHub Spec Kit commands to create the constitution.md, spec.md, plan.md, and tasks.md files.
   - Implement a greenfield application from start to finish using GitHub Spec Kit's AI-assisted workflows.

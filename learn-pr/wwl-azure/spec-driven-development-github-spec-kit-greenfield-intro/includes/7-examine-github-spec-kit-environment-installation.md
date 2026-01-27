@@ -24,22 +24,26 @@ Before you can use GitHub Spec Kit to practice spec-driven development, you need
 
 ## Prerequisites and system requirements
 
-Before installing GitHub Spec Kit, ensure you have the following:
+Before installing GitHub Spec Kit, ensure your development environment meets the requirements for operating system, software dependencies, and AI coding assistant support.
 
 ### Operating system
 
-- **Linux or macOS:** These are the recommended operating systems
-- **Windows:** Use Windows Subsystem for Linux 2 (WSL2) since GitHub Spec Kit expects a Unix-like environment
+Your development environment must use one of the following operating systems:
+
+- **Linux or macOS:** Fully supported.
+- **Windows:** Fully supported with PowerShell scripts.
 
 ### Required software
 
-- **Python 3.11 or later:** GitHub Spec Kit's CLI is a Python tool
-- **Git:** Required for version control integration and pulling the toolkit
-- **uv tool:** GitHub Spec Kit uses the `uv` (universal virtual environment) tool for installation. If you haven't used `uv` before, it's a modern package manager CLI that can install tools directly from GitHub
+Your development environment must include the following software:
+
+- **Python 3.11 or later:** GitHub Spec Kit's CLI is a Python tool.
+- **Git:** Required for version control integration and pulling the toolkit.
+- **uv tool:** GitHub Spec Kit uses the `uv` tool for package management. The `uv` tool is a modern package manager that can install tools directly from GitHub.
 
 ### AI coding assistant
 
-You need at least one supported AI coding assistant set up and working. GitHub Spec Kit supports:
+Your development environment must have at least one supported AI coding assistant configured and working. GitHub Spec Kit supports:
 
 | Agent | Environment | Slash Command Support |
 |-------|-------------|----------------------|
@@ -47,48 +51,49 @@ You need at least one supported AI coding assistant set up and working. GitHub S
 | Claude Code | CLI / IDE | Yes |
 | Cursor | Cursor IDE | Yes |
 | Windsurf | Windsurf IDE | Yes |
-| Amazon Q Developer | CLI / IDE | Yes |
+| Amazon Q Developer CLI | CLI / IDE | check |
 | Gemini CLI | CLI | Yes |
 | And others | Various | Varies |
 
-For this module and the lab exercise, we use **Visual Studio Code with GitHub Copilot**. Ensure the GitHub Copilot extension is installed, enabled, and you're signed in with an active subscription.
+The lab exercise in this module uses Visual Studio Code with GitHub Copilot.
 
-## Installing the uv tool
+## Install the uv tool
 
-If you don't already have `uv` installed, you can install it using one of these methods:
+You can install the `uv` tool using one of the following methods:
 
-**On macOS and Linux:**
+- **On macOS and Linux:**
 
-```bash
-curl -LsSf https://astral.sh/uv/install.sh | sh
-```
+    ```bash
+    curl -LsSf https://astral.sh/uv/install.sh | sh
+    ```
 
-**On Windows (in PowerShell):**
+- **On Windows (in PowerShell):**
 
-```powershell
-powershell -c "irm https://astral.sh/uv/install.ps1 | iex"
-```
+    ```powershell
+    powershell -c "irm https://astral.sh/uv/install.ps1 | iex"
+    ```
 
 After installation, restart your terminal to ensure `uv` is available in your PATH.
 
-## Installation methods
+## Install Specify CLI
 
-There are two main ways to install GitHub Spec Kit's `specify` CLI tool:
+GitHub Spec Kit uses the `specify` CLI tool to manage specifications and interact with AI coding assistants. There are two main ways to install the `specify` CLI tool.
 
 ### Method 1: Global installation (recommended)
 
-The recommended approach is to install `specify-cli` globally using `uv`. This makes the `specify` command available in any project.
+The recommended approach is to install `specify-cli` globally using `uv`. A global installation makes the `specify` command available in any project.
 
 ```bash
 uv tool install specify-cli --from git+https://github.com/github/spec-kit.git
 ```
 
-**Benefits of global installation:**
+Global installation provides these benefits:
+
 - Available in any project directory
 - Easy to update using `uv tool upgrade specify-cli`
-- No need to re-run installation commands each time
+- No need to rerun installation commands each time
 
-### Method 2: One-time usage (no install)
+### Method 2: One-time usage
 
 If you prefer not to install globally, you can run GitHub Spec Kit directly using `uvx`:
 
@@ -96,7 +101,8 @@ If you prefer not to install globally, you can run GitHub Spec Kit directly usin
 uvx --from git+https://github.com/github/spec-kit.git specify init
 ```
 
-This downloads and runs GitHub Spec Kit for that single invocation. It's useful for:
+One-time usage downloads and runs GitHub Spec Kit for that single invocation. It's useful for:
+
 - Trying out GitHub Spec Kit before committing to installation
 - Running on systems where you can't install globally (like some CI servers)
 
@@ -110,39 +116,41 @@ After installing, verify that GitHub Spec Kit is working correctly:
 specify check
 ```
 
-This command checks for required tools and confirms installation succeeded. It will report:
-- Whether Git is found and configured
-- Whether your AI coding assistant is detected
-- Any missing dependencies or configuration issues
+This command checks for required tools and confirms that installation succeeded. It reports:
+
+- Whether Git is found and configured.
+- Whether your AI coding assistant is detected.
+- Any missing dependencies or configuration issues.
 
 If `specify check` reports issues, address them before proceeding.
 
 ## Setting up Visual Studio Code with GitHub Copilot
 
-For the lab exercise in this module, you'll use Visual Studio Code with GitHub Copilot. Follow these setup steps:
+You can use the following steps to set up Visual Studio Code with GitHub Copilot (for use with GitHub Spec Kit):
 
-### Step 1: Install Visual Studio Code
+1. Install Visual Studio Code.
 
-Download and install Visual Studio Code from [code.visualstudio.com](https://code.visualstudio.com) if you haven't already.
+    Download and install Visual Studio Code from [code.visualstudio.com](https://code.visualstudio.com) if you haven't already.
 
-### Step 2: Install GitHub Copilot extension
+1. Install GitHub Copilot extension.
 
-1. Open Visual Studio Code
-2. Go to the Extensions view (Ctrl+Shift+X or Cmd+Shift+X)
-3. Search for "GitHub Copilot"
-4. Install the GitHub Copilot extension
-5. Sign in with your GitHub account that has an active GitHub Copilot subscription
+    1. Open Visual Studio Code.
+    1. Go to the Extensions view (Ctrl+Shift+X or Cmd+Shift+X).
+    1. Search for "GitHub Copilot."
+    1. Install the GitHub Copilot extension.
+    1. Sign in with your GitHub account that has an active GitHub Copilot subscription.
 
-### Step 3: Verify GitHub Copilot is working
+1. Verify GitHub Copilot is working.
 
-Open a new file and start typing some code. GitHub Copilot should provide inline suggestions. You can also open the GitHub Copilot Chat panel to verify chat functionality is working.
+    Open the GitHub Copilot Chat panel and verify chat functionality is working.
 
-### Step 4: Open the integrated terminal
+1. Open the integrated terminal.
 
-You'll run `specify` commands in Visual Studio Code's integrated terminal:
-1. Open Terminal (Ctrl+` or View → Terminal)
-2. Navigate to your project directory
-3. Run `specify check` to verify everything is configured
+    You can run `specify` commands in Visual Studio Code's integrated terminal:
+
+    1. Open a new Terminal.
+    1. Navigate to your project directory.
+    1. To verify everything is configured, run `specify check`.
 
 ## Installing for other environments
 
@@ -150,65 +158,65 @@ If you're not using Visual Studio Code, the process is similar:
 
 ### Claude Code
 
-1. Install `specify-cli` globally as described above
-2. Open Claude's interface in your project folder
-3. Type slash commands (`/speckit.specify`, etc.) directly in the chat
+1. Install `specify-cli` globally as described previously
+1. Open Claude's interface in your project folder
+1. Type slash commands (`/speckit.specify`, etc.) directly in the chat
 
 ### Cursor
 
-1. Install `specify-cli` globally
-2. Open your project in Cursor
-3. Ensure the AI agent is running
-4. Use slash commands in Cursor's AI chat interface
+1. Install `specify-cli` globally.
+1. Open your project in Cursor.
+1. Ensure the AI agent is running.
+1. Use slash commands in Cursor's AI chat interface.
 
 ### Other AI tools
 
 Most supported AI coding assistants follow the same pattern:
-1. Install the `specify-cli` globally
-2. Open your project in your preferred environment
-3. Use the slash commands in that tool's AI chat interface
 
-Check the GitHub Spec Kit README's "Supported AI Agents" table for any tool-specific considerations.
+1. Install the `specify-cli` globally.
+1. Open your project in your preferred environment.
+1. Use the slash commands in that tool's AI chat interface.
+
+Check the "Supported AI Agents" table in GitHub Spec Kit README file for any tool-specific considerations.
 
 ## Troubleshooting common issues
+
+You might encounter some common issues during installation or setup. The following sections provide solutions for common problems.
 
 ### uv command not found
 
 If `uv` isn't recognized after installation:
-- Close and reopen your terminal
-- Ensure the installation directory is in your PATH
-- On Windows, you may need to restart your computer
 
-### specify command not found
+- Close and reopen your terminal.
+- Ensure the installation directory is in your PATH.
+- On Windows, you might need to restart your computer.
+
+### Specify command not found
 
 If `specify` isn't found after installation:
-- Close and reopen your terminal
-- Check that `~/.local/bin` (or the uv tool bin directory) is in your PATH
-- Try running `uv tool list` to see if specify-cli appears
+
+- Close and reopen your terminal.
+- Check that `~/.local/bin` (or the `uv` tool bin directory) is in your PATH.
+- Try running `uv tool list` to see if specify-cli appears.
 
 ### AI tool not detected
 
 If `specify check` reports your AI tool isn't found:
-- Ensure the AI tool is installed and running
-- For Visual Studio Code with GitHub Copilot, ensure the extension is installed and you're signed in
-- Check that you're running the check from a terminal where the AI tool is accessible
+
+- Ensure the AI tool is installed and running.
+- For Visual Studio Code with GitHub Copilot, ensure the extension is installed and you're signed in.
+- Check that you're running the check from a terminal where the AI tool is accessible.
 
 ### Windows-specific issues
 
 If you're on Windows and experiencing issues:
-- Ensure you're using WSL2 (Windows Subsystem for Linux 2)
-- Run commands from within WSL, not from PowerShell or Command Prompt
-- Install prerequisites (Python, uv, Git) within WSL
+
+- Ensure PowerShell is available (typically preinstalled).
+- Run PowerShell commands in a PowerShell terminal (not Command Prompt).
+- Install prerequisites (Python, uv, Git) for Windows.
 
 For issues beyond these common problems, consult the GitHub Spec Kit README and community resources on the GitHub repository.
 
 ## Summary
 
-To install GitHub Spec Kit:
-
-1. **Install prerequisites:** Python 3.11+, Git, and the uv tool
-2. **Run the install command:** `uv tool install specify-cli --from git+https://github.com/github/spec-kit.git`
-3. **Verify installation:** Run `specify check` to confirm everything is working
-4. **Set up your AI tool:** Ensure Visual Studio Code with GitHub Copilot (or your preferred AI assistant) is ready
-
-With these steps complete, you're ready to use GitHub Spec Kit. In the next unit, you'll learn about the specific commands and see what outputs they produce.
+GitHub Spec Kit supports various development environments and AI coding assistants. Core requirements include Python 3.11+, Git, and the `uv` tool. You can install the `specify` CLI globally or use it one-time via `uvx`. Visual Studio Code with GitHub Copilot is a common setup, but other AI tools are supported as well. Verifying your installation with `specify check` helps ensure everything is configured correctly.
