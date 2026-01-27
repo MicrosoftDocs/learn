@@ -27,6 +27,3 @@ Let's take a closer look at the characteristics of IP addresses.
    - TLS/SSL certificates linked to an IP address.
    - Firewall rules that allow or deny traffic by using IP address ranges.
    - Role-based virtual machines such as Domain Controllers and DNS servers.
-
-> [!TIP]
-> Extend your learning with the [Design an IP addressing schema for your Azure deployment](/training/modules/design-ip-addressing-for-azure/) training module. This module has a practical exercise. 

@@ -62854,6 +62854,141 @@
       "source_path": "learn-pr/azure/app-service-scale-up-scale-out/6-summary.yml",
       "redirect_url": "https://learn.microsoft.com/en-us/azure/app-service/manage-scale-up",
       "redirect_document_id": false
-    }                                                  
+    },
+    {
+      "source_path": "learn-pr/azure/connect-on-premises-network-with-vpn-gateway/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/vpn-gateway/tutorial-create-gateway-portal",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/connect-on-premises-network-with-vpn-gateway/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/vpn-gateway/tutorial-create-gateway-portal",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/connect-on-premises-network-with-vpn-gateway/2-connect-on-premises-networks-to-azure-using-site-to-site-vpn-gateways.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/vpn-gateway/tutorial-create-gateway-portal",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/connect-on-premises-network-with-vpn-gateway/3-exercise-prepare-azure-and-on-premises-vnets-using-azure-cli-commands.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/vpn-gateway/tutorial-create-gateway-portal",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/connect-on-premises-network-with-vpn-gateway/4-exercise-create-a-site-to-site-vpn-gateway-using-azure-cli-commands.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/vpn-gateway/tutorial-create-gateway-portal",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/connect-on-premises-network-with-vpn-gateway/5-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/vpn-gateway/tutorial-create-gateway-portal",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/integrate-vnets-with-vnet-peering/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-network/virtual-network-peering-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/integrate-vnets-with-vnet-peering/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-network/virtual-network-peering-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/integrate-vnets-with-vnet-peering/2-connect-services-using-vnet-peering.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-network/virtual-network-peering-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/integrate-vnets-with-vnet-peering/3-exercise-prepare-vnets-for-peering-using-azure-cli-commands.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-network/virtual-network-peering-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/integrate-vnets-with-vnet-peering/4-exercise-configure-vnet-peering-connections-using-azure-cli-commands.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-network/virtual-network-peering-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/integrate-vnets-with-vnet-peering/5-exercise-verify-vnet-peering.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-network/virtual-network-peering-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/integrate-vnets-with-vnet-peering/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-network/virtual-network-peering-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/design-ip-addressing-for-azure/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-network/ip-services/ip-services-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/design-ip-addressing-for-azure/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-network/ip-services/ip-services-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/design-ip-addressing-for-azure/2-network-ip-addressing-integration.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-network/ip-services/ip-services-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/design-ip-addressing-for-azure/3-azure-public-private-ip-addressing.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-network/ip-services/ip-services-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/design-ip-addressing-for-azure/4-plan-design-ip-addressing.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-network/ip-services/ip-services-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/design-ip-addressing-for-azure/5-exercise-implement-vnets.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-network/ip-services/ip-services-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/design-ip-addressing-for-azure/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-network/ip-services/ip-services-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/improve-app-scalability-resiliency-with-load-balancer/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/load-balancer/quickstart-load-balancer-standard-public-portal",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/improve-app-scalability-resiliency-with-load-balancer/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/load-balancer/quickstart-load-balancer-standard-public-portal",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/improve-app-scalability-resiliency-with-load-balancer/2-load-balancer-features.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/load-balancer/quickstart-load-balancer-standard-public-portal",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/improve-app-scalability-resiliency-with-load-balancer/3-public-load-balancer.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/load-balancer/quickstart-load-balancer-standard-public-portal",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/improve-app-scalability-resiliency-with-load-balancer/4-exercise-configure-public-load-balancer.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/load-balancer/quickstart-load-balancer-standard-public-portal",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/improve-app-scalability-resiliency-with-load-balancer/5-internal-load-balancer.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/load-balancer/quickstart-load-balancer-standard-public-portal",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/improve-app-scalability-resiliency-with-load-balancer/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/load-balancer/quickstart-load-balancer-standard-public-portal",
+      "redirect_document_id": false
+    }                                                                                         
   ]
 }
