@@ -32,11 +32,11 @@ Essentially, *the spec becomes the code's single source of truth*. In SDD, the s
 
 Three trends make SDD not just possible but necessary:
 
-**AI capabilities have crossed a critical threshold**. Natural language specifications can now reliably generate working code. This achievement isn't about replacing developers - it's about amplifying their effectiveness by automating the mechanical translation from specification to implementation. It can amplify exploration and creativity, support "start-over" easily, and support addition, subtraction, and critical thinking.
+- **AI capabilities have crossed a critical threshold**. Natural language specifications can now reliably generate working code. This achievement isn't about replacing developers - it's about amplifying their effectiveness by automating the mechanical translation from specification to implementation. It can amplify exploration and creativity, support "start-over" easily, and support addition, subtraction, and critical thinking.
 
-**Software complexity continues to grow exponentially**. Modern systems integrate dozens of services, frameworks, and dependencies. Keeping all these pieces aligned with original intent through manual processes becomes increasingly difficult. SDD provides systematic alignment through specification-driven generation.
+- **Software complexity continues to grow exponentially**. Modern systems integrate dozens of services, frameworks, and dependencies. Keeping all these pieces aligned with original intent through manual processes becomes increasingly difficult. SDD provides systematic alignment through specification-driven generation.
 
-**The pace of change accelerates**. Requirements shift far more rapidly today than ever before. Pivoting is no longer exceptional - it's expected. Modern product development demands rapid iteration based on user feedback, market conditions, and competitive pressures.
+- **The pace of change accelerates**. Requirements shift far more rapidly today than ever before. Pivoting is no longer exceptional - it's expected. Modern product development demands rapid iteration based on user feedback, market conditions, and competitive pressures.
 
 Traditional development treats requirement changes as disruptions. Each pivot requires manually propagating changes through documentation, design, and code. The result is either slow, careful updates that limit velocity, or fast, reckless changes that accumulate technical debt.
 

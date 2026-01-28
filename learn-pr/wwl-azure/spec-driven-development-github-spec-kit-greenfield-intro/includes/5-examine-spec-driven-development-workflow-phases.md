@@ -22,6 +22,7 @@ A well-structured specification includes several key sections:
 - **User stories:** Brief narrative descriptions of how users interact with the feature. User stories capture intent and value rather than technical implementation.
 
     For example:
+
     - As a user, I want to add RSS feeds by URL so that I can follow my favorite websites.
     - As a user, I want to see unread articles sorted newest-first so that I can catch up on recent content.
 
@@ -96,11 +97,11 @@ This task is specific about what to build, what it accepts, what validations to 
 
 Complex features benefit from organizing tasks into phases:
 
-- **Phase 1 – Foundation:** Set up project structure, create database schema, and add required packages.
-- **Phase 2 – Core functionality:** Implement feed parsing, add URL validation, and implement article storage.
-- **Phase 3 – User interface:** Create feed list view, add article display, and implement read/unread tracking.
-- **Phase 4 – Security:** Add HTML sanitization, implement HTTPS-only feed fetching, and add error handling.
-- **Phase 5 – Testing:** Write unit tests, create integration tests, and document the application.
+1. **Phase 1 – Foundation:** Set up project structure, create database schema, and add required packages.
+1. **Phase 2 – Core functionality:** Implement feed parsing, add URL validation, and implement article storage.
+1. **Phase 3 – User interface:** Create feed list view, add article display, and implement read/unread tracking.
+1. **Phase 4 – Security:** Add HTML sanitization, implement HTTPS-only feed fetching, and add error handling.
+1. **Phase 5 – Testing:** Write unit tests, create integration tests, and document the application.
 
 ### Task dependencies
 
@@ -118,6 +119,8 @@ Before moving to implementation, review tasks against the plan and spec. For exa
 If phases 1-3 are done well, implementation should be straightforward. You can execute tasks one by one with clear guidance.
 
 ### The implementation process
+
+Implementation follows a simple loop:
 
 1. Select the next task from the tasks list.
 1. Write code to implement the task (manually or using AI assistance).

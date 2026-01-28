@@ -17,7 +17,9 @@ The following table summarizes key differences between SDD and other common meth
 
 Waterfall methodology emphasizes comprehensive upfront planning with requirements, design, implementation, testing, and deployment flowing sequentially. A requirements specification is written once at the beginning and often becomes stale as development progresses over months or years.
 
-**Key differences:**
+### Key differences between SDD and Waterfall
+
+There are several important distinctions between Waterfall and SDD:
 
 - **Specification lifecycle:** In Waterfall, the requirements document is a phase artifact that's created and then left behind. In SDD, the spec is continuously used and updated; it directly generates implementations rather than being just a phase document.
 
@@ -31,7 +33,9 @@ Waterfall methodology emphasizes comprehensive upfront planning with requirement
 
 Agile methodologies value "working software over comprehensive documentation," which might seem at odds with SDD's specification focus. However, the two approaches share more  than you might expect.
 
-**Key differences:**
+### Key differences between SDD and Agile/Scrum
+
+There are key distinctions between Agile/Scrum and SDD:
 
 - **Documentation philosophy:** Agile often minimizes documentation in favor of direct communication and working code. SDD doesn't mean writing a massive spec and never changing it - rather, any given increment (even within a sprint) starts with a clear spec and plan that can evolve.
 
@@ -45,7 +49,9 @@ Agile methodologies value "working software over comprehensive documentation," w
 
 TDD drives development by writing tests first. You begin by creating a failing test. Then you write code to pass the test. Finally, you refactor the code as needed. This red-green-refactor cycle guides design at the unit level.
 
-**Key differences:**
+### Key differences between SDD and TDD
+
+There are several important distinctions between TDD and SDD:
 
 - **Level of abstraction:** TDD operates at a low level (unit tests), whereas SDD works at a higher requirements level. TDD tests individual functions; SDD specifications describe complete features.
 
@@ -53,35 +59,43 @@ TDD drives development by writing tests first. You begin by creating a failing t
 
 - **Role of acceptance criteria:** In SDD, the spec itself plays a role similar to a "super-test" by defining acceptance criteria for all functionality. Tasks in SDD function like guides for the AI - each task is small and verifiable, almost like an acceptance test the AI aims to satisfy.
 
-**Where they align:** Both methodologies encourage thinking about outcomes before writing implementation code. Both produce artifacts that can be verified.
+### Where SDD and TDD align
 
-**How they complement:** TDD and SDD aren't mutually exclusive. You can use SDD to produce a clear direction and still use TDD within implementation for code quality. SDD can even generate test specifications as part of the tasks phase, which developers then implement using TDD practices.
+Both methodologies encourage thinking about outcomes before writing implementation code. Both produce artifacts that can be verified.
+
+### How SDD and TDD complement each other
+
+TDD and SDD aren't mutually exclusive. You can use SDD to produce a clear direction and still use TDD within implementation for code quality. SDD can even generate test specifications as part of the tasks phase, which developers then implement using TDD practices.
 
 ## SDD vs. Behavior-Driven Development (BDD)
 
 BDD focuses on user behavior using Given-When-Then scenarios to drive development. These scenarios become automated tests that developers satisfy with code.
 
-**Key differences:**
+### Key differences between SDD and BDD
 
 - **Execution model:** BDD results in automated tests that developers then write code to satisfy. SDD's spec and plan result in tasks and code generated with AI assistance.
 
 - **Artifact focus:** BDD produces executable behavioral scenarios. SDD produces specifications that drive AI-generated implementations.
 
-**Where they align:** Both put requirements first and focus on the "what and why" before implementation. Both emphasize understanding user needs before coding.
+### Where SDD and BDD align
 
-**How they complement:** You can integrate BDD-style scenarios into the SDD spec - for example, listing Gherkin scenarios as part of requirements. The AI could use those scenarios to validate the implementation if tests are generated as part of the tasks. This combination gives you the best of both worlds: precise behavioral specifications and AI-accelerated implementation.
+Both put requirements first and focus on the "what and why" before implementation. Both emphasize understanding user needs before coding.
+
+### How SDD and BDD complement each other
+
+You can integrate BDD-style scenarios into the SDD spec - for example, listing Gherkin scenarios as part of requirements. The AI could use those scenarios to validate the implementation if tests are generated as part of the tasks. This combination gives you the best of both worlds: precise behavioral specifications and AI-accelerated implementation.
 
 ## Where SDD shines
 
 SDD is particularly powerful in specific scenarios:
 
-**Complex projects with clear goals:** When investing time to specify yields significant returns - enterprise systems, mission-critical applications, or projects with regulatory requirements. The upfront investment in specification pays dividends throughout development and maintenance.
+- **Complex projects with clear goals:** When investing time to specify yields significant returns - enterprise systems, mission-critical applications, or projects with regulatory requirements. The upfront investment in specification pays dividends throughout development and maintenance.
 
-**AI-accelerated development:** Teams using AI tools benefit most by structuring their input to the AI. A well-crafted specification gives AI assistants the context they need to generate accurate, useful implementations rather than code that needs extensive correction.
+- **AI-accelerated development:** Teams using AI tools benefit most by structuring their input to the AI. A well-crafted specification gives AI assistants the context they need to generate accurate, useful implementations rather than code that needs extensive correction.
 
-**Cross-team communication:** The spec and plan artifacts serve as clear communication mediums between product managers, developers, and AI agents. Everyone works from the same source of truth, reducing misalignment and rework.
+- **Cross-team communication:** The spec and plan artifacts serve as clear communication mediums between product managers, developers, and AI agents. Everyone works from the same source of truth, reducing misalignment and rework.
 
-**Projects with multiple implementation approaches:** SDD's separation of specification from implementation means you can generate multiple approaches from the same spec - exploring different optimization targets for performance, maintainability, or cost.
+- **Projects with multiple implementation approaches:** SDD's separation of specification from implementation means you can generate multiple approaches from the same spec - exploring different optimization targets for performance, maintainability, or cost.
 
 ## When to use lighter approaches
 

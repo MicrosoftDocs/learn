@@ -1,6 +1,6 @@
 The spec-driven development (SDD) methodology provides a phased approach to software development that emphasizes clarity, structure, and adaptability. By breaking down the development process into four distinct phases—Specify, Plan, Tasks, and Implement—SDD ensures that each step is well-defined and builds upon the previous one. This structured workflow not only enhances communication among stakeholders but also allows for continuous refinement and adaptation of the software being developed.
 
-## SDD workflow overview
+## Workflow phases in spec-driven development
 
 The SDD workflow transforms an idea into working code through four distinct phases. Each phase builds on the previous one, creating a clear progression from vision to execution. Think of it as a structured progression where each step has a clear output that feeds into the next.
 
@@ -31,7 +31,7 @@ A key aspect of SDD is that each phase has a validation step before moving forwa
 
 This structured progression is what gives SDD its reliability.
 
-## Living artifacts
+## Specifications as living artifacts
 
 Unlike static requirements documents that are created once and gradually become outdated, SDD outputs are **living artifacts** that can evolve. The spec might get updated as you learn new information, and then you'd adjust the plan and tasks accordingly.
 

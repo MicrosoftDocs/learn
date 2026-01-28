@@ -98,24 +98,26 @@ The AI generates a **spec.md** file based on your description.
 
 ### What spec.md contains
 
-The generated specification includes the standard sections you learned about in Unit 5: summary, user stories, acceptance criteria, functional requirements, nonfunctional requirements, and edge cases. For example, a user story might appear as:
+The generated specification includes the standard sections you learned about in Unit 5: summary, user stories, acceptance criteria, functional requirements, nonfunctional requirements, and edge cases.
 
-> *As a user, I want to add RSS feeds by URL so that I can follow my favorite websites.*
+User stories describe features from the user's perspective. For example, a user story could be similar to the following example:
 
-And acceptance criteria as testable conditions:
+- *As a user, I want to add RSS feeds by URL so that I can follow my favorite websites.*
 
-> - User can add a feed by entering a valid RSS or Atom URL
-> - Invalid feed URLs display a clear error message
-> - New articles appear after refreshing feeds
+Acceptance criteria define how to verify functionality. For the RSS Feed Reader, acceptance criteria might include:
+
+- User can add a feed by entering a valid RSS or Atom URL.
+- Invalid feed URLs display a clear error message.
+- New articles appear after refreshing feeds.
 
 ### Review and refine
 
 The generated spec is a starting point - the AI's interpretation of your prompt. Your job is to:
 
 1. **Verify completeness:** Does it capture all your requirements?
-2. **Check accuracy:** Is everything correctly understood?
-3. **Add missing details:** Fill in any gaps the AI missed
-4. **Remove incorrect items:** Delete anything that doesn't belong
+1. **Check accuracy:** Is everything correctly understood?
+1. **Add missing details:** Fill in any gaps the AI missed
+1. **Remove incorrect items:** Delete anything that doesn't belong
 
 Think of it this way: could you hand this spec to a developer (or AI) and have them understand exactly what to build? If not, refine it until you can.
 
@@ -137,7 +139,7 @@ The AI generates a **plan.md** file that translates specification requirements i
 
 The generated plan includes the sections covered in Unit 5: architecture overview, technology stack, implementation sequence, constitution verification, and assumptions. The AI translates your specification requirements into technical decisions. For example:
 
-> *Build a .NET application with SQLite for local storage. A FeedService handles RSS/Atom parsing with System.ServiceModel.Syndication. Data access uses Entity Framework Core with a clean repository pattern.*
+- *Build a .NET application with SQLite for local storage. A FeedService handles RSS/Atom parsing with System.ServiceModel.Syndication. Data access uses Entity Framework Core with a clean repository pattern.*
 
 ### Review and adjust
 
@@ -238,15 +240,15 @@ If you discover something during implementation that changes the design - maybe 
 
 GitHub Spec Kit provides other commands for quality and consistency:
 
-### /speckit.clarify
+### The /speckit.clarify command
 
 Analyzes your specification to identify ambiguities and missing details. The AI asks clarifying questions like:
 
-> "The spec mentions refreshing feeds but doesn't specify how often to check for updates. Should there be an automatic refresh interval?"
+- "The spec mentions refreshing feeds but doesn't specify how often to check for updates. Should there be an automatic refresh interval?"
 
 Answer the questions, and the AI updates the spec accordingly.
 
-### /speckit.analyze
+### The /speckit.analyze command
 
 Performs cross-artifact consistency checking. It verifies that:
 
@@ -256,7 +258,7 @@ Performs cross-artifact consistency checking. It verifies that:
 
 Run this command after generating plan and tasks but before implementing.
 
-### /speckit.checklist
+### The /speckit.checklist command
 
 Generates quality verification checklists for your specification. Use this command for self-review before sharing specs with stakeholders.
 
