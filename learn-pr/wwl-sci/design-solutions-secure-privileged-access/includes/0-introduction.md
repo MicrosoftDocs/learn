@@ -11,7 +11,7 @@ Your organization is modernizing its security architecture to align with Zero Tr
 
 You've been asked to design a comprehensive privileged access security strategy that addresses these gaps while enabling administrators to perform their duties efficiently.
 
-## What will you learn?
+## Learning objectives
 
 In this module, you learn how to:
 
