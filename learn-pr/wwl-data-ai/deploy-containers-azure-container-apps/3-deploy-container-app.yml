@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.deploy-containers-azure-container-apps.deploy-container-app
+title: Deploy a container app using the Azure CLI and YAML
+metadata:
+  title: Deploy a Container App Using the Azure CLI and YAML
+  description: Deploy a container app using the Azure CLI and YAML
+  ms.date: 01/26/2026
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/3-deploy-container-app.md)]
