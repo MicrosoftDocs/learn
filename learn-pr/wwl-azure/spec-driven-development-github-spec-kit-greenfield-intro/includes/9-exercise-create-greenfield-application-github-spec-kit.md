@@ -19,14 +19,4 @@ When you finish the exercise, return here for:
 - A summary of what you learned during this module.
 - A badge for completing this module.
 
-
-
-
-
-TODO - update the link below when available
-
-
-
-
-[![Button to launch exercise.](../media/launch-exercise.png)](https://go.microsoft.com/fwlink/?linkid=2345806&azure-portal=true)
-
+[![Button to launch exercise.](../media/launch-exercise.png)](https://go.microsoft.com/fwlink/?linkid=2348630&azure-portal=true)

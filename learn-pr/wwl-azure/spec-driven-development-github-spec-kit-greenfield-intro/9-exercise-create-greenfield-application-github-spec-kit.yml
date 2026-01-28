@@ -8,6 +8,6 @@ metadata:
   author: chrishowd
   ms.author: cahowd
   ms.topic: unit
-durationInMinutes: 55
+durationInMinutes: 60
 content: |
   [!include[](includes/9-exercise-create-greenfield-application-github-spec-kit.md)]
