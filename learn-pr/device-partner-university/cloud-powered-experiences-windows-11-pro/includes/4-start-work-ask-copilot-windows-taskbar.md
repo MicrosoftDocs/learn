@@ -7,7 +7,7 @@ This design reflects Windows' hybrid execution model:
 - **User interaction** happens locally within the Windows interface
 - **Intelligent processing** runs in the cloud when deeper reasoning or broader context is required
 
-:::image type="content" border="true" source="../media/ask-copilot-taskbar-inline.png" alt-text="A screenshot depicting the Ask Copilot experience on the Windows 11 Pro taskbar" lightbox="../media/ask-copilot-taskbar-expanded.png":::
+:::image type="content" border="true" source="../media/ask-copilot-taskbar-inline.png" alt-text="A screenshot depicting the Ask Copilot experience on the Windows 11 Pro taskbar." lightbox="../media/ask-copilot-taskbar-expanded.png":::
 
 ## What is Ask Copilot (taskbar experience)?
 
@@ -65,6 +65,6 @@ Some requests can be completed quickly, while others require extended processing
 
 When an agent is started, the task moves out of the composer, allowing the user to continue their work. The agent begins working in the background, and progress is surfaced on the Windows taskbar.
 
-:::image type="content" border="true" source="../media/agent-works-in-background-flowchart.svg" alt-text="A flowchart showing how Ask Copilot on the taskbar can initiate an agent to work in the background while the user works":::
+:::image type="content" border="true" source="../media/agent-works-in-background-flowchart.svg" alt-text="A flowchart showing how Ask Copilot on the taskbar can initiate an agent to work in the background while the user works.":::
 
 This allows users to continue working locally while longer-running cloud tasks proceed in the background. Windows maintains visibility and control by keeping agent activity accessible from a familiar system interface.

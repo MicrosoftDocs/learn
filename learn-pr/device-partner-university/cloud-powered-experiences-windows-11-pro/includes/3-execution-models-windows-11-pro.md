@@ -30,7 +30,7 @@ Since cloud-based execution runs on continuously updated services, capabilities 
 
 On-device execution runs locally on supported Windows PCs using a Neural Processing Unit (NPU). An NPU is a specialized processor designed to handle AI workloads efficiently without relying on cloud connectivity.
 
-:::image type="content" border="true" source="../media/neural-processing-unit.png" alt-text="A depiction of a Neural Processing Unit, or NPU":::
+:::image type="content" border="true" source="../media/neural-processing-unit.png" alt-text="A depiction of a Neural Processing Unit, or NPU.":::
 
 On-device execution is optimized for scenarios where:
 

@@ -61,7 +61,7 @@ When the agent completes its task, Windows notifies you through the taskbar. In 
 - Select the notification to open the results in the **Microsoft 365 Copilot application**.
 - Review the output provided by the agent.
 
-:::image type="content" border="true" source="../media/agent-taskbar-complete-inline.png" alt-text="A screenshot showing a notification that the Researcher agent has finished its work in the background" lightbox="../media/agent-taskbar-complete-expanded.png":::
+:::image type="content" border="true" source="../media/agent-taskbar-complete-inline.png" alt-text="A screenshot showing a notification that the Researcher agent has finished its work in the background." lightbox="../media/agent-taskbar-complete-expanded.png":::
 
 In this exercise, you began by accessing Copilot directly from the Windows taskbar to ask an initial question and establish context. Because the task required deeper research and synthesis, you then selected a Researcher agent to gather information from approved sources and analyze the topic in more detail.
 

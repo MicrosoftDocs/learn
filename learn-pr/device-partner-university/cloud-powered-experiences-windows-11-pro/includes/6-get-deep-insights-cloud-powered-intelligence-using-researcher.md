@@ -29,7 +29,7 @@ This approach reflects the broader Windows execution model:
 
 By separating interaction from execution, Windows 11 Pro enables users to delegate complex work without disrupting their workflow.
 
-:::image type="content" border="true" source="../media/researcher-agent-steps.svg" alt-text="Diagram showing the steps in using the Researcher agent in Microsoft 365 Copilot":::
+:::image type="content" border="true" source="../media/researcher-agent-steps.svg" alt-text="Diagram showing the steps in using the Researcher agent in Microsoft 365 Copilot.":::
 
 ## When Researcher is most useful
 
