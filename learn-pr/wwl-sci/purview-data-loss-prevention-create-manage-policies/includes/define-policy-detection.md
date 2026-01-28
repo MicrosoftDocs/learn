@@ -1,0 +1,77 @@
+Once you decide how to start a policy, the next step is defining what the policy should detect. Detection choices shape how accurate a policy is, how often it triggers, and how much noise it generates over time.
+
+Good detection isn't about catching everything. It's about identifying the situations that matter most and responding consistently when they occur.
+
+## Ensure detection matches the risk
+
+In Microsoft Purview, detection isn't based on a single signal. Policies evaluate different kinds of signals that describe what the data is, how it's classified, and how it's being used.
+
+These signals generally fall into three categories:
+
+- **Content-based signals** focus on what the data contains, like identifying specific patterns or content types.
+
+  These signals are useful when detection needs to be driven by the data itself rather than prior classification. They work well when patterns, keywords, or content structure matter more than how the data was labeled.
+
+- **Classification-based signals** rely on prior classification decisions, like labels applied by users or automation.
+
+  These signals are useful when protection should follow the data consistently, regardless of where it appears or how it's used.
+
+- **Context-based signals** describe how data is handled, like the action being taken or where the data is sent.
+
+  These signals focus on actions, destinations, and user context, and they help narrow enforcement to situations that actually represent risk.
+
+Effective policies often combine signals from more than one category. Choosing the right mix depends on how reliably data is classified and what behavior the policy is meant to address.
+
+## Combine conditions to improve accuracy
+
+Single detection conditions can work for simple scenarios, but they often lack context. Combining conditions helps narrow enforcement to situations that actually represent risk.
+
+For example, combining content-based detection with:
+
+- A specific action
+- A destination or location
+- A user or group scope
+
+Can significantly reduce unnecessary triggers.
+
+The goal isn't complexity for its own sake. It's clarity. Each condition should contribute meaningfully to the scenario you're trying to address.
+
+## Balance coverage with precision
+
+Broad detection increases coverage, but it also increases the chance of false positives. Narrow detection improves precision, but it can miss edge cases.
+
+Early in policy creation, it's often better to favor clarity over completeness. A policy that triggers reliably in fewer scenarios is easier to validate and refine than one that fires constantly with mixed results.
+
+Detection can always be expanded later. Noise is harder to undo.
+
+## Define what "good enough" detection looks like
+
+Detection doesn't have to be perfect on day one. What matters is whether it reliably identifies the behavior you care about without disrupting normal work.
+
+"Good enough" detection usually means:
+
+- The policy triggers when expected
+- Results are understandable
+- False positives are limited and explainable
+
+This creates a strong foundation for validation and tuning.
+
+## Account for how detection choices affect false positives
+
+Detection decisions made early often determine where false positives appear later. Overly broad conditions, weak context, or reliance on unreliable signals can all contribute to unnecessary enforcement.
+
+Being intentional about detection upfront reduces the need for heavy tuning after deployment.
+
+## Consider scenarios where data is reused or transformed
+
+Some scenarios are more complex than simple sharing or copying. When sensitive data is reused or transformed, detection becomes more important.
+
+This includes workflows where:
+
+- Content is rewritten or summarized
+- Data is combined with other inputs
+- Sensitive information appears in generated responses
+
+In these cases, detection quality matters more than aggressive enforcement. Clear, accurate detection helps ensure policies respond to real risk instead of incidental use.
+
+With detection defined, the next step is deciding where the policy should apply and who it should affect.

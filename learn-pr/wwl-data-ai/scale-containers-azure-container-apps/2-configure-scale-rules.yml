@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.scale-containers-azure-container-apps.configure-scale-rules
+title: Configure scale rules
+metadata:
+  title: Configure Scale Rules
+  description: Configure scale rules for Azure Container Apps
+  ms.date: 01/26/2026
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: unit
+durationInMinutes: 9
+content: |
+  [!include[](includes/2-configure-scale-rules.md)]
