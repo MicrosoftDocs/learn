@@ -22,7 +22,7 @@ Organizations often manage multiple tenants or cloud platforms. Consider:
 
 ### Least-privilege and just-in-time access across tenant and cloud boundaries
 
-Multi-tenant and multicloud environments introduce complexity for just-in-time access that goes beyond single-environment implementations (MCSB PA-2, PA-7):
+Multitenant and multicloud environments introduce complexity for just-in-time access that goes beyond single-environment implementations (MCSB PA-2, PA-7):
 
 - Design approval workflows that account for administrators managing resources in customer tenants they don't own
 - Address time zone and availability challenges when approvers span multiple organizations or geographies
@@ -40,7 +40,7 @@ When administrators operate across multiple tenants or cloud platforms, visibili
 
 ## Azure tenant management with Azure Lighthouse
 
-[Azure Lighthouse](/azure/lighthouse/overview) addresses multi-tenant administration challenges by enabling secure, delegated access to customer Azure resources from a managing tenant.
+[Azure Lighthouse](/azure/lighthouse/overview) addresses multitenant administration challenges by enabling secure, delegated access to customer Azure resources from a managing tenant.
 
 ### How Azure Lighthouse addresses design considerations
 
