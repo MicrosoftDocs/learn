@@ -1,8 +1,6 @@
-When evaluating an access review management solution, you need to understand how to design and configure reviews that meet your organization's governance and compliance requirements. Microsoft Entra access reviews support up to three review stages, in which multiple types of reviewers can determine who still needs access to company resources.
+Privileged access requires ongoing validation. Users change roles, projects end, and business relationships evolve—yet access often persists long after the original justification expires. As a security architect, you need to evaluate access review solutions that can systematically verify whether privileged access remains appropriate.
 
-Access reviews can cover membership in groups or teams, access to applications, assignments to privileged roles, or access package assignments. When review administrators configure the review for automatic application of decisions, at the end of the review period, access is revoked for denied users.
-
-For more information, see [What are access reviews?](/entra/id-governance/access-reviews-overview).
+This unit covers evaluation criteria for access review management solutions and demonstrates how Microsoft Entra access reviews addresses these requirements.
 
 ## Evaluation criteria for access reviews
 
@@ -15,6 +13,14 @@ When evaluating access review solutions, consider these factors:
 | **Automation** | Can decisions be automatically applied, and what safeguards exist to prevent accidental access removal? |
 | **Integration** | Does it integrate with your ticketing, notification, and governance workflows? |
 | **Reporting** | Does it provide audit trails and compliance reports for regulatory requirements? |
+
+## Microsoft Entra access reviews
+
+Microsoft Entra access reviews provides a structured approach to validating access across your organization. Reviews can cover membership in groups or teams, access to applications, assignments to privileged roles, or access package assignments. When review administrators configure automatic application of decisions, access is revoked for denied users at the end of the review period.
+
+Access reviews support up to three review stages, enabling multiple types of reviewers to determine who still needs access to company resources. This multi-stage capability addresses complex compliance scenarios where different stakeholders must validate access in sequence.
+
+For more information, see [What are access reviews?](/entra/id-governance/access-reviews-overview).
 
 ## Use cases for multi-stage reviews
 

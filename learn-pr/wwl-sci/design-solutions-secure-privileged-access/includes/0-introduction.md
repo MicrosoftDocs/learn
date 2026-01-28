@@ -1,4 +1,4 @@
-Privileged accounts are the keys to your organization's most critical systems. Attackers who compromise these accounts can access sensitive data, modify security configurations, and establish persistent access that's difficult to detect. As a security architect, you need to design solutions that protect privileged access across your hybrid and multicloud environment.
+Privileged accounts are the keys to your organization's most critical systems. Attackers who compromise these accounts can access sensitive data, modify security configurations, and establish persistent access that's difficult to detect. As a security architect, you need to design solutions that protect privileged access across your hybrid and multicloud environment. Using Zero Trust principles and Microsoft security frameworks provide guidance as you design those solutions.
 
 ## Scenario
 
@@ -12,9 +12,6 @@ Your organization is modernizing its security architecture to align with Zero Tr
 You've been asked to design a comprehensive privileged access security strategy that addresses these gaps while enabling administrators to perform their duties efficiently.
 
 ## What will you learn?
-
-As a security architect, you need to design security solutions that protect privileged access using Zero Trust principles and Microsoft security frameworks.
-
 
 In this module, you learn how to:
 

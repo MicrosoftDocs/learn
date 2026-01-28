@@ -20,21 +20,23 @@ Organizations often manage multiple tenants or cloud platforms. Consider:
 - Delegation models that maintain customer control while enabling managed services
 - Audit and accountability across tenant boundaries
 
-### Just-in-time and just-enough access
+### Least-privilege and just-in-time access across tenant and cloud boundaries
 
-Privileged access to tenant administration should follow least privilege principles (MCSB PA-2, PA-7):
+Multi-tenant and multicloud environments introduce complexity for just-in-time access that goes beyond single-environment implementations (MCSB PA-2, PA-7):
 
-- Eliminate standing administrative access where possible
-- Implement approval workflows for sensitive administrative operations
-- Define time-bound access windows appropriate to administrative tasks
+- Design approval workflows that account for administrators managing resources in customer tenants they don't own
+- Address time zone and availability challenges when approvers span multiple organizations or geographies
+- Determine how JIT elevation in one tenant or cloud affects access in federated environments
+- Plan for scenarios where emergency access is needed to customer tenants outside normal business hours
 
-### Visibility and monitoring
+### Unified visibility across administrative boundaries
 
-Administrative activities across cloud tenants require comprehensive monitoring:
+When administrators operate across multiple tenants or cloud platforms, visibility requirements expand significantly:
 
-- Centralized logging of administrative actions across all managed tenants
-- Correlation of administrative activities with security events
-- Alerting on anomalous administrative behavior
+- Determine where administrative logs should reside—customer tenants, managing tenants, or both—to meet compliance and sovereignty requirements
+- Design correlation strategies that connect an administrator's identity across federated systems (Microsoft Entra ID to AWS IAM Identity Center to GCP Cloud Identity)
+- Establish how to detect anomalous administrative patterns that span multiple tenants, such as an administrator suddenly accessing resources in tenants they've never managed
+- Define alerting responsibilities when suspicious activity originates from a managing tenant but affects customer resources
 
 ## Azure tenant management with Azure Lighthouse
 

@@ -16,7 +16,7 @@ When designing privileged access device strategies, apply these principles:
 
 A [Privileged Access Workstation (PAW)](/security/privileged-access-workstations/privileged-access-devices) is a hardened workstation configured specifically for sensitive administrative tasks. PAWs protect high-value accounts by providing a trusted device isolated from common attack vectors.
 
-When designing your PAW strategy, consider three device security profiles that progressively increase protection:
+When designing your PAW strategy, consider three device security profiles that progressively increase protection. The table that follows provides recommended guidance, for some security controls, across those profiles:
 
 | Security control | Enterprise | Specialized | Privileged |
 |------------------|:----------:|:-----------:|:----------:|
@@ -79,4 +79,6 @@ For organizations requiring centralized management, Azure Virtual Desktop or Win
 > [!TIP]
 > Combine virtual desktop solutions with physical PAWs for defense in depth. Users connect from a hardened PAW to a managed virtual desktop, providing two layers of isolation from potentially compromised environments.
 
-The combination of hardened endpoints, secure connectivity, and continuous verification creates a privileged access architecture that protects your most sensitive administrative operations.
+## Integrating privileged access components
+
+The components covered in this unit work together to create layered protection. Hardened endpoints (PAWs) ensure administrators work from trusted devices. Secure connectivity solutions (Azure Bastion, virtual desktops) protect the communication channel to target resources. Continuous verification through Conditional Access and PIM validates identity, device health, and authorization at every step. When you design your privileged access architecture, consider how these layers reinforce each other—a weakness in any single layer shouldn't compromise the entire system.

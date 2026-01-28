@@ -62,7 +62,7 @@ The enterprise access model supersedes and replaces the legacy tier model that w
 
 The enterprise access model incorporates these elements as well as full access management requirements of a modern enterprise that spans on-premises, multiple clouds, internal or external user access, and more.
 
-:::image type="content" source="../media/legacy-tier-model-comparison-new.png" alt-text="Diagram showing the complete enterprise access model from old tiers." lightbox="../media/legacy-tier-model-comparison-new.png":::
+:::image type="content" source="../media/legacy-tier-model-comparison-new-v2.png" alt-text="Diagram showing the complete enterprise access model from old tiers." lightbox="../media/legacy-tier-model-comparison-new-v2.png":::
 
 ### Tier 0 scope expansion
 

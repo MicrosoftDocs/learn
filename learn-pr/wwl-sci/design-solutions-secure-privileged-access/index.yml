@@ -44,8 +44,8 @@ units:
 - learn.wwl.design-solutions-secure-privileged-access.design-solution-secure-tenant-administration
 - learn.wwl.design-solutions-secure-privileged-access.design-cloud-infrastructure-entitlement-management
 - learn.wwl.design-solutions-secure-privileged-access.design-solution-privileged-access-workstations-bastion-services
-- learn.wwl.design-solutions-secure-privileged-access.evaluate-security-active-directory-domain-services
 - learn.wwl.design-solutions-secure-privileged-access.evaluate-access-review-management-solution
+- learn.wwl.design-solutions-secure-privileged-access.evaluate-security-active-directory-domain-services
 - learn.wwl.design-solutions-secure-privileged-access.knowledge-check
 - learn.wwl.design-solutions-secure-privileged-access.summary
 badge:

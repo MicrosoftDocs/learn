@@ -6,7 +6,7 @@ This unit establishes architectural principles for identity governance, then exa
 
 When designing identity governance for your organization, apply these principles:
 
-**Minimize standing privileges**: Configure eligible rather than active assignments for administrative roles. Require approval for highly sensitive roles. Use time-bound assignments rather than permanent access.
+**Minimize standing privileges**: Avoid granting permanent administrative access. Instead, require users to request and justify elevated permissions when needed, with access that automatically expires after a defined period.
 
 **Separate administrative accounts**: Ensure administrators use dedicated accounts for privileged tasks, separate from their daily productivity accounts. This separation limits the impact of phishing attacks and credential theft.
 
@@ -40,7 +40,7 @@ The layered controls principle suggests combining protections at multiple levels
 
 **Microsoft Entra PIM** applies protection at the **role level**. You use PIM to manage access to Microsoft Entra roles, Azure resource roles, and role groups. A single role assignment might enable multiple administrative tasks.
 
-**Microsoft Purview PAM** applies protection at the **task level** within Microsoft 365. Users request just-in-time access to complete specific privileged tasks through time-bounded approval workflows. This granular approach enables zero standing privileges for sensitive Microsoft 365 operations.
+[**Microsoft Purview PAM**](/purview/privileged-access-management) applies protection at the **task level** within Microsoft 365. Users request just-in-time access to complete specific privileged tasks through time-bounded approval workflows. This granular approach enables zero standing privileges for sensitive Microsoft 365 operations.
 
 :::image type="content" source="../media/layered-protection.png" alt-text="Diagram showing how PIM and PAM provide layered protection at role and task levels in Microsoft 365.":::
 
