@@ -1,185 +1,80 @@
-This unit discusses the following identity governance solutions:
+As a security architect, you need to evaluate identity governance solutions that protect privileged access while enabling productivity. Microsoft Entra ID Governance helps you answer critical questions: Who should have access to which resources? What are those users doing with that access? Are your controls working effectively?
 
-- Privileged Identity Management (PIM)
-- Privileged Access Management (PAM)
-- Entitlement management
-- Access reviews
+This unit establishes architectural principles for identity governance, then examines how Privileged Identity Management (PIM), Privileged Access Management (PAM), entitlement management, and access reviews address those principles.
 
-## Privileged Identity Management (PIM)
+## Architectural principles for identity governance
 
-Privileged Identity Management (PIM) is a service in Microsoft Entra ID that enables you to manage, control, and monitor access to important resources in your organization. These resources include resources in Microsoft Entra ID, Azure, and other Microsoft Online Services such as Microsoft 365 or Microsoft Intune.
+When designing identity governance for your organization, apply these principles:
 
-### What does it do?
+**Minimize standing privileges**: Configure eligible rather than active assignments for administrative roles. Require approval for highly sensitive roles. Use time-bound assignments rather than permanent access.
 
-Privileged Identity Management provides time-based and approval-based role activation to mitigate the risks of excessive, unnecessary, or misused access permissions on resources that you care about. Here are some of the key features of Privileged Identity Management:
+**Separate administrative accounts**: Ensure administrators use dedicated accounts for privileged tasks, separate from their daily productivity accounts. This separation limits the impact of phishing attacks and credential theft.
 
--   Provide **just-in-time** privileged access to Microsoft Entra ID and Azure resources
--   Assign **time-bound** access to resources using start and end dates
--   Require **approval** to activate privileged roles
--   Enforce **multi-factor authentication** to activate any role
--   Use **justification** to understand why users activate
--   Get **notifications** when privileged roles are activated
--   Conduct **access reviews** to ensure users still need roles
--   Download **audit history** for internal or external audit
--   Prevents removal of the **last active Global Administrator** and **Privileged Role Administrator** role assignments
+**Implement layered controls**: Combine role-level protection with task-level protection. Add access reviews to continuously validate that access remains appropriate.
 
-## Role assignment overview
+**Enable visibility**: Configure notifications for privileged role changes. Download audit history for compliance reporting. Monitor for accounts accumulating excessive privileges.
 
-The PIM role assignments give you a secure way to grant access to resources in your organization. This section describes the assignment process. It includes assign roles to members, activate assignments, approve or deny requests, extend and renew assignments.
+With these principles in mind, let's examine how each governance capability addresses them.
 
-### Assign
+## Evaluate Privileged Identity Management
 
-The assignment process starts by assigning roles to members. To grant access to a resource, the administrator assigns roles to users, groups, service principals, or managed identities. The assignment includes the following data:
+[Privileged Identity Management (PIM)](/entra/id-governance/privileged-identity-management/pim-configure) directly addresses the principle of minimizing standing privileges. Instead of granting permanent administrative access, PIM enables you to manage, control, and monitor access to critical resources across Microsoft Entra ID, Azure, and Microsoft 365.
 
--   The members or owners to assign the role.
--   The scope of the assignment. The scope limits the assigned role to a particular set of resources.
--   The type of the assignment
-    -   **Eligible** assignments require the member of the role to perform an action to use the role. Actions might include activation, or requesting approval from designated approvers.
-    -   **Active** assignments don't require the member to perform any action to use the role. Members assigned as active have the privileges assigned to the role.
--   The duration of the assignment, using start and end dates or permanent. For eligible assignments, the members can activate or requesting approval during the start and end dates. For active assignments, the members can use the assign role during this period of time.
+PIM addresses standing privilege risks through:
 
-### Activate
+- **Just-in-time access**: Users receive privileges only when needed, reducing the attack surface
+- **Time-bound assignments**: Access automatically expires based on configured start and end dates
+- **Approval workflows**: Sensitive role activations require designated approvers
+- **Multifactor authentication enforcement**: Additional verification before role activation
+- **Justification requirements**: Users must document why they need elevated access
+- **Audit trails**: All role activations are logged for compliance and forensic analysis
 
-If users have been made eligible for a role, then they must activate the role assignment before using the role. To activate the role, users select specific activation duration within the maximum (configured by administrators), and the reason for the activation request.
+When designing your PIM implementation, you define two assignment types. **Eligible** assignments require users to perform an action—such as requesting approval or completing MFA—before using the role. **Active** assignments provide immediate access without additional steps. For most privileged roles, eligible assignments provide a stronger security posture.
 
-### Approve or deny
+> [!TIP]
+> Configure notification alerts for privileged role activations. These alerts support the visibility principle by providing early warning when users activate highly privileged roles like Global Administrator or Privileged Role Administrator.
 
-Delegated approvers receive email notifications when a role request is pending their approval. Approvers can view, approve or deny these pending requests in PIM. After the request has been approved, the member can start using the role. For example, if a user or a group was assigned with Contribution role to a resource group, they are able to manage that particular resource group.
+## Compare PIM and Privileged Access Management
 
-### Extend and renew assignments
+The layered controls principle suggests combining protections at multiple levels. Understanding where PIM and Privileged Access Management (PAM) apply helps you design comprehensive protection.
 
-After administrators set up time-bound owner or member assignments, the first question you might ask is what happens if an assignment expires? In this new version, we provide two options for this scenario:
+**Microsoft Entra PIM** applies protection at the **role level**. You use PIM to manage access to Microsoft Entra roles, Azure resource roles, and role groups. A single role assignment might enable multiple administrative tasks.
 
--   **Extend** – When a role assignment nears expiration, the user can use Privileged Identity Management to request an extension for the role assignment
--   **Renew** – When a role assignment has already expired, the user can use Privileged Identity Management to request a renewal for the role assignment
+**Microsoft Purview PAM** applies protection at the **task level** within Microsoft 365. Users request just-in-time access to complete specific privileged tasks through time-bounded approval workflows. This granular approach enables zero standing privileges for sensitive Microsoft 365 operations.
 
-Both user-initiated actions require an approval from a Global Administrator or Privileged Role Administrator. Admins don't need to be in the business of managing assignment expirations. You can just wait for the extension or renewal requests to arrive for simple approval or denial.
+:::image type="content" source="../media/layered-protection.png" alt-text="Diagram showing how PIM and PAM provide layered protection at role and task levels in Microsoft 365.":::
 
-## Privileged Access Management (PAM)
+When you deploy both, you achieve defense in depth: PIM controls who can hold administrative roles, while PAM controls which specific tasks those administrators can perform.
 
-### PAM in AD DS
-<!--
-BEGIN(/microsoft-identity-manager/pam/privileged-identity-management-for-active-directory-domain-services)
--->
-MIM Privileged Access Management (PAM) is a solution that helps organizations restrict privileged access within an existing and isolated Active Directory environment.
+## Evaluate entitlement management
 
-Privileged Access Management accomplishes two goals:
+[Entitlement management](/entra/id-governance/entitlement-management-overview) extends the minimize standing privileges principle beyond administrative roles to general resource access. It addresses the challenge of managing access at scale, particularly when collaborating with external partners.
 
--   Re-establish control over a compromised Active Directory environment by maintaining a separate bastion environment that is known to be unaffected by malicious attacks.
--   Isolate the use of privileged accounts to reduce the risk of those credentials being stolen.
-<!--
-END()
--->
+Organizations struggle when users don't know what access they need or who can approve it. Once granted, access often persists longer than necessary. These challenges multiply with external collaboration—you might not know which partner employees need access, and partners might not understand your resource structure.
 
+Entitlement management introduces **access packages** that bundle related resources together. You define:
 
-### PAM in Office 365
+- Which groups, applications, and SharePoint sites the package includes
+- Which users can request access (internal users, specific partner organizations, or anyone)
+- Required approval workflows and access duration
+- Automatic expiration and recertification requirements
 
-<!--
-BEGIN(/microsoft-365/compliance/privileged-access-management?view=o365-worldwide)
--->
-Microsoft Purview Privileged Access Management allows granular access control over privileged admin tasks in Office 365. It can help protect your organization from breaches that use existing privileged admin accounts with standing access to sensitive data or access to critical configuration settings. Privileged access management requires users to request just-in-time access to complete elevated and privileged tasks through a highly scoped and time-bounded approval workflow. This configuration gives users just-enough-access to perform the task at hand, without risking exposure of sensitive data or critical configuration settings. Enabling privileged access management allows your organization to operate with zero standing privileges and provide a layer of defense against standing administrative access vulnerabilities.
+For architects, the key evaluation criteria include whether entitlement management can automate your current manual provisioning processes and whether access packages align with your business roles and collaboration patterns.
 
-### PAM vs PIM
+## Design access reviews
 
-Privileged access management complements other data and access feature protections within the Microsoft 365 security architecture. Including privileged access management as part of an integrated and layered approach to security provides a security model that maximizes protection of sensitive information and Microsoft 365 configuration settings. As shown in the diagram, privileged access management builds on the protection provided with native encryption of Microsoft 365 data and the role-based access control security model of Microsoft 365 services. When used with [Microsoft Entra Privileged Identity Management](/azure/active-directory/active-directory-privileged-identity-management-configure), these two features provide access control with just-in-time access at different scopes.
+[Access reviews](/entra/id-governance/access-reviews-overview) provide the recertification mechanism that validates whether granted access remains appropriate—directly supporting the visibility and minimize standing privileges principles.
 
-![Diagram that shows layered protection in Microsoft 365.](../media/layered-protection.png)
+Access reviews help you answer these questions:
 
-Privileged access management is defined and scoped at the **task** level, while Microsoft Entra Privileged Identity Management applies protection at the **role** level with the ability to execute multiple tasks. Microsoft Entra Privileged Identity Management primarily allows managing accesses for AD roles and role groups, while Microsoft Purview Privileged Access Management applies only at the task level.
+- Do users still need their current access assignments?
+- Have any privileged roles accumulated excessive members?
+- Are guest accounts being removed when collaboration ends?
+- Can resource owners verify who should access their resources?
 
--   **Enabling privileged access management while already using Microsoft Entra Privileged Identity Management:** Adding privileged access management provides another granular layer of protection and audit capabilities for privileged access to Microsoft 365 data.
-    
--   **Enabling Microsoft Entra Privileged Identity Management while already using Microsoft Purview Privileged Access Management:** Adding Microsoft Entra Privileged Identity Management to Microsoft Purview Privileged Access Management can extend privileged access to data outside of Microsoft 365 that's primarily defined by user roles or identity.
+Within PIM, you can configure access reviews specifically for privileged role assignments. Reviewers—whether administrators, role members themselves, or designated business owners—periodically confirm that assignments remain necessary. Reviews can be one-time or recurring, and you can configure automatic actions when reviews complete.
 
-<!--
-END()
--->
+> [!IMPORTANT]
+> For highly privileged roles like Global Administrator, schedule regular access reviews to ensure only authorized users retain these assignments. Configure reviews to require justification for continued access.
 
-## Entitlement management
-
-<!--
-BEGIN(/azure/active-directory/governance/entitlement-management-overview)
--->
-Entitlement management is an [identity governance](/azure/active-directory/governance/identity-governance-overview) feature that enables organizations to manage identity and access lifecycle at scale, by automating access request workflows, access assignments, reviews, and expiration.
-
-Employees in organizations need access to various groups, applications, and SharePoint Online sites to perform their job. Managing this access is challenging, as requirements change. New applications are added or users need more access rights. This scenario gets more complicated when you collaborate with outside organizations. You may not know who in the other organization needs access to your organization's resources, and they won't know what applications, groups, or sites your organization is using.
-
-Entitlement management can help you more efficiently manage access to groups, applications, and SharePoint Online sites for internal users, and also for users outside your organization who need access to those resources.
-
-<!--[](/azure/active-directory/governance/entitlement-management-overview#why-use-entitlement-management)-->
-
-### Why use entitlement management?
-
-Enterprise organizations often face challenges when managing employee access to resources such as:
-
--   Users may not know what access they should have, and even if they do, they may have difficulty locating the right individuals to approve their access
--   Once users find and receive access to a resource, they may hold on to access longer than is required for business purposes
-
-These problems are compounded for users who need access from another organization, such as external users that are from supply chain organizations or other business partners. For example:
-
--   No one person may know all of the specific individuals in other organization's directories to be able to invite them
--   Even if they were able to invite these users, no one in that organization may remember to manage all of the users' access consistently
-
-<!--
-END()
--->
-
-## Access Reviews
-
-Access reviews in Microsoft Entra ID, part of Microsoft Entra, enable organizations to efficiently manage group memberships, access to enterprise applications, and role assignments. User's access can be reviewed regularly to make sure only the right people have continued access.
-
-### Why are access reviews important?
-
-Microsoft Entra ID enables you to collaborate with users from inside your organization and with external users. Users can join groups, invite guests, connect to cloud apps, and work remotely from their work or personal devices. The convenience of using self-service has led to a need for better access management capabilities.
-
--   As new employees join, how do you ensure they have the access they need to be productive?
--   As people move teams or leave the company, how do you make sure that their old access is removed?
--   Excessive access rights can lead to compromises.
--   Excessive access right may also lead audit findings as they indicate a lack of control over access.
--   You have to proactively engage with resource owners to ensure they regularly review who has access to their resources.
-
-<!--[](/azure/active-directory/governance/access-reviews-overview#when-should-you-use-access-reviews)-->
-
-### When should you use access reviews?
-
-A few of the scenarios when access reviews may be useful are the following:
-
--   **Too many users in privileged roles:** It's a good idea to check how many users have administrative access, how many of them are Global Administrators, and if there are any invited guests or partners that haven't been removed after being assigned to do an administrative task. You can recertify the role assignment users in Microsoft Entra roles such as Global Administrators, or Azure resources roles such as User Access Administrator in the Microsoft Entra Privileged Identity Management (PIM) experience.
--   **When automation is not possible:** You can create rules for dynamic membership on security groups or Microsoft 365 Groups, but what if the HR data isn't in Microsoft Entra ID or if users still need access after leaving the group to train their replacement? You can then create a review on that group to ensure those who still need access should have continued access.
--   **When a group is used for a new purpose:** If you have a group that is going to be synced to Microsoft Entra ID, or if you plan to enable the application Salesforce for everyone in the Sales team group, it would be useful to ask the group owner to review the group membership prior to the group being used in a different risk content.
-
-## Best practices for privileged access management
-
-### Lower exposure of privileged accounts
-
-Securing privileged access is a critical first step to protecting business assets. Minimizing the number of people who have access to secure information or resources reduces the chance of a malicious user getting access, or an authorized user inadvertently affecting a sensitive resource.
-
-Privileged accounts are accounts that administer and manage IT systems. Cyber attackers target these accounts to gain access to an organization’s data and systems. To secure privileged access, you should isolate the accounts and systems from the risk of being exposed to a malicious user.
-
-The following are a few of the best practices found in [Securing privileged access for hybrid and cloud deployments in Microsoft Entra ID](/azure/active-directory/roles/security-planning):
-
-**Best practice**: Manage, control, and monitor access to privileged accounts.   
-
-**Detail**: Turn on Microsoft Entra Privileged Identity Management. After you turn on Privileged Identity Management, you’ll receive notification email messages for privileged access role changes. These notifications provide early warning when other users are added to highly privileged roles in your directory.
-
-**Best practice**: Ensure all critical admin accounts are managed Microsoft Entra accounts.
-
-**Detail**: Remove any consumer accounts from critical admin roles (for example, Microsoft accounts like hotmail.com, live.com, and outlook.com).
-
-**Best practice**: Ensure all critical admin roles have a separate account for administrative tasks in order to avoid phishing and other attacks to compromise administrative privileges.
-
-**Detail**: Create a separate admin account that’s assigned the privileges needed to perform the administrative tasks. Block the use of these administrative accounts for daily productivity tools like Microsoft 365 email or arbitrary web browsing.
-
-**Best practice**: Identify and categorize accounts that are in highly privileged roles.   
-
-**Detail**: After turning on Microsoft Entra Privileged Identity Management, view the users who are in the global administrator, privileged role administrator, and other highly privileged roles. Remove any accounts that are no longer needed in those roles, and categorize the remaining accounts that are assigned to admin roles:
-
-* Individually assigned to administrative users, and can be used for nonadministrative purposes (for example, personal email)
-* Individually assigned to administrative users and designated for administrative purposes only
-* Shared across multiple users
-* For emergency access scenarios
-* For automated scripts
-* For external users
-
-**Best practice**: Implement “just in time” (JIT) access to further lower the exposure time of privileges and increase your visibility into the use of privileged accounts.   
-**Detail**: Microsoft Entra Privileged Identity Management provides this capability.
+The governance capabilities in Microsoft Entra ID work together as part of the identity lifecycle. Entitlement management automates access requests. PIM protects how privileged roles are used. Access reviews validate that access remains appropriate. Together, they enable you to design solutions that balance security with operational efficiency.

@@ -1,4 +1,20 @@
-Microsoft Entra access reviews support up to three review stages, in which multiple types of reviewers engage in determining who still needs access to company resources. These reviews could be for membership in groups or teams, access to applications, assignments to privileged roles, or access package assignments. When review administrators configure the review for automatic application of decisions, at the end of the review period, access is revoked for denied users.
+When evaluating an access review management solution, you need to understand how to design and configure reviews that meet your organization's governance and compliance requirements. Microsoft Entra access reviews support up to three review stages, in which multiple types of reviewers can determine who still needs access to company resources.
+
+Access reviews can cover membership in groups or teams, access to applications, assignments to privileged roles, or access package assignments. When review administrators configure the review for automatic application of decisions, at the end of the review period, access is revoked for denied users.
+
+For more information, see [What are access reviews?](/entra/id-governance/access-reviews-overview).
+
+## Evaluation criteria for access reviews
+
+When evaluating access review solutions, consider these factors:
+
+| Criteria | Questions to evaluate |
+|----------|----------------------|
+| **Scope coverage** | Can the solution review all relevant access types: group memberships, application access, directory roles, Azure resource roles, and access packages? |
+| **Reviewer flexibility** | Does it support multiple reviewer types: managers, group owners, designated reviewers, and self-review? |
+| **Automation** | Can decisions be automatically applied, and what safeguards exist to prevent accidental access removal? |
+| **Integration** | Does it integrate with your ticketing, notification, and governance workflows? |
+| **Reporting** | Does it provide audit trails and compliance reports for regulatory requirements? |
 
 ## Use cases for multi-stage reviews
 
