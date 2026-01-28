@@ -4,17 +4,17 @@ A specification defines what you need to build. A technical plan defines how you
 
 The plan.md file serves as your design document, bridging the gap between high-level requirements in spec.md and the concrete implementation tasks that follow. A comprehensive technical plan contains:
 
-- **Architecture overview**: High-level view of how components interact
-- **Technology stack and key decisions**: Explicit documentation of technology choices with rationales
-- **Implementation sequence**: Logical progression of implementation steps
-- **Constitution verification**: Explicit check that proposed solutions comply with project principles
-- **Assumptions and open questions**: Documentation of assumptions and unresolved questions
+- **Architecture overview**: High-level view of how components interact.
+- **Technology stack and key decisions**: Explicit documentation of technology choices with rationales.
+- **Implementation sequence**: Logical progression of implementation steps.
+- **Constitution verification**: Explicit check that proposed solutions comply with project principles.
+- **Assumptions and open questions**: Documentation of assumptions and unresolved questions.
 
 This separation of concerns is fundamental—specifications remain stable and focused on "what," while plans can evolve as you experiment with different "how" approaches. If you later switch technologies, you update plan.md while spec.md remains largely unchanged.
 
 With these fundamentals in mind, let's explore advanced planning considerations for enterprise development.
 
-## Understand the purpose of a technical plan
+## Examine the purpose of a technical plan
 
 The plan.md file serves as your design document. It bridges the gap between high-level requirements in spec.md and the concrete implementation tasks that follow. While the specification remains stable and focused on "what," the plan can evolve as you experiment with different "how" approaches.
 

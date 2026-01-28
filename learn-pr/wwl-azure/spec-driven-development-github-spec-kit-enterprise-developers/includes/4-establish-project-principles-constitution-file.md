@@ -2,15 +2,14 @@ The constitution is the foundation of spec-driven development with GitHub Spec K
 
 ## Review constitution basics
 
-A constitution file captures non-negotiable principles, constraints, and standards that govern your project. It serves as guardrails for AI-assisted development—when AI generates specs, plans, or code, it references the constitution to verify proposals comply with your standards.
+A constitution file captures non-negotiable principles, constraints, and standards that govern your project. It also serves as a guardrail for AI-assisted development. When the agent generates specs, plans, tasks, or code, it references the constitution to verify proposals comply with your standards.
 
-**Key purposes:**
-- **Consistency enforcement**: Ensures alignment with architectural decisions across long projects and multiple developers
-- **Compliance documentation**: Makes regulatory requirements and security policies explicit and auditable
-- **Institutional knowledge capture**: Preserves hard-won lessons in a form that guides AI code generation
-- **Reduced cognitive load**: Automates enforcement of organizational policies during development
+Key benefits of a well-defined constitution include:
 
-With this foundation in mind, let's explore how to structure constitutions for enterprise development scenarios.
+- **Consistency enforcement**: Ensures alignment with architectural decisions across long projects and multiple developers.
+- **Compliance documentation**: Makes regulatory requirements and security policies explicit and auditable.
+- **Institutional knowledge capture**: Preserves hard-won lessons in a form that guides AI code generation.
+- **Reduced cognitive load**: Automates enforcement of organizational policies during development.
 
 ## Purpose of the constitution
 

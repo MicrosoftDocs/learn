@@ -4,15 +4,16 @@ Technical plans provide architectural direction, but implementation requires con
 
 The `/speckit.tasks` command converts high-level architectural decisions into specific work items in the tasks.md file. Each task represents a discrete unit of work that can be implemented, tested, and verified independently.
 
-**Key characteristics of well-scoped tasks:**
-- **Actionable**: Clearly states what needs to be done
-- **Testable**: Verification of completion is straightforward
-- **Independent**: Can be completed without waiting for unrelated work
-- **Time-bounded**: Completable in a reasonable timeframe (hours to a day)
+Key characteristics of well-scoped tasks:
 
-**Phase-based organization:** Complex features benefit from organizing tasks into phases—Foundation, Core Functionality, UI/Integration, Security, and Testing. Each phase represents a logical grouping that builds toward a milestone.
+- **Actionable**: Clearly states what needs to be done.
+- **Testable**: Verification of completion is straightforward.
+- **Independent**: Can be completed without waiting for unrelated work.
+- **Time-bounded**: Can be completed in a reasonable timeframe (hours to a day).
 
-With these fundamentals in mind, let's explore advanced task management techniques for enterprise development.
+### Phase-based organization
+
+Complex features benefit from organizing tasks into phases. For example: Setup, Foundation, Core Functionality, UI/Integration, Security, and Testing. Each phase represents a logical grouping that builds toward a milestone.
 
 ## Benefits of task breakdown
 
@@ -38,7 +39,7 @@ For the document upload feature, a typical phase structure might include:
     - Create the DocumentMetadata table in SQL database with appropriate schema.
     - Add the Azure.Storage.Blobs NuGet package to the back-end project.
     - Create the DocumentService class that encapsulates storage operations.
-    
+
 - **Phase 2: Core Upload Functionality**
 
     - Implement POST /api/documents/upload endpoint in DocumentsController.
@@ -46,7 +47,7 @@ For the document upload feature, a typical phase structure might include:
     - Implement blob storage upload method with error handling.
     - Save document metadata to database after successful upload.
     - Return upload result with document ID and URL to client.
-    
+
 - **Phase 3: Front-end Implementation**
 
     - Create DocumentUpload React component with file input.
@@ -90,7 +91,7 @@ This task is specific about what to build (an endpoint), what it accepts (multip
 
 Here's an example of an insufficiently scoped task: "Make the upload work." This example provides no actionable guidance about what "work" means or what components are involved.
 
-Here'e and example of an overly prescriptive task: "On line 47 of DocumentsController.cs, add a method named UploadDocument with parameters (IFormFile file, string userId) and implement it using exactly these steps..." This task description removes developer agency and doesn't account for evolving code structure.
+Here's an example of an overly prescriptive task: "On line 47 of DocumentsController.cs, add a method named UploadDocument with parameters (IFormFile file, string userId) and implement it using exactly these steps..." This task description removes developer agency and doesn't account for evolving code structure.
 
 ### Task dependencies and sequencing
 
@@ -211,9 +212,9 @@ This command instructs the AI to focus on tasks T001 through T027, generating co
 
 ### Provide assistance during implementation
 
-The AI might require assistance or permission to proceed with certain tasks. For example, if a task requires building or running the app, the AI may prompt for confirmation before proceeding.
+The AI might require assistance or permission to proceed with certain tasks. For example, if a task requires building or running the app, the AI might prompt for confirmation before proceeding.
 
-In addition, the AI might discover a bug when testing the implementation of a task. Provide detailed information to help diagnose the issue.  You can also provide additional context or clarifications if the AI encounters ambiguities.
+In addition, the AI might discover a bug when testing the implementation of a task. Provide detailed information to help diagnose the issue. You can also provide extra context or clarifications if the AI encounters ambiguities.
 
 When prompted for assistance in the Chat view, a quick response helps to keep implementation moving smoothly.
 

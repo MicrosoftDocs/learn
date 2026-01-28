@@ -4,14 +4,12 @@ The specification file (`spec.md`) is the single source of truth for what your f
 
 In spec-driven development, the specification defines exactly what the software should do, and every implementation decision traces back to it. A well-structured specification includes:
 
-- **Summary**: Concise description of the feature from an end-user perspective
-- **User stories**: Brief narratives of how users interact with the feature
-- **Acceptance criteria**: Specific, testable conditions that must be true for completion
-- **Functional requirements**: Detailed descriptions of system behavior
-- **Nonfunctional requirements**: Quality attributes like performance, security, and scalability
-- **Edge cases**: Unusual scenarios, error conditions, and boundary behaviors
-
-With these fundamentals in mind, let's explore enterprise-specific considerations for specification writing.
+- **Summary**: Concise description of the feature from an end-user perspective.
+- **User stories**: Brief narratives of how users interact with the feature.
+- **Acceptance criteria**: Specific, testable conditions that must be true for completion.
+- **Functional requirements**: Detailed descriptions of system behavior.
+- **Nonfunctional requirements**: Quality attributes like performance, security, and scalability.
+- **Edge cases**: Unusual scenarios, error conditions, and boundary behaviors.
 
 ## The spec as the single source of truth
 

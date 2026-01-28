@@ -4,11 +4,13 @@ GitHub Spec Kit is an open-source toolkit that enables spec-driven development b
 
 GitHub Spec Kit addresses a fundamental challenge in AI-assisted development: maintaining context and consistency across multiple interactions with coding assistants. It provides three essential capabilities:
 
-- **Persistent artifacts**: Specifications, plans, and tasks are stored as Markdown files in your repository
-- **Standardized workflow**: A defined process guides you through specification, planning, task breakdown, and implementation
-- **Reusable commands**: Built-in slash commands encapsulate best-practice prompting patterns
+- **Persistent artifacts**: Specifications, plans, and tasks are stored as Markdown files in your repository.
+- **Standardized workflow**: A defined process guides you through specification, planning, task breakdown, and implementation.
+- **Reusable commands**: Built-in slash commands encapsulate best-practice prompting patterns.
 
-**Core components:**
+### Core components
+
+GitHub Spec Kit implements the following core components:
 
 | Component | Purpose |
 |-----------|---------|
@@ -16,9 +18,9 @@ GitHub Spec Kit addresses a fundamental challenge in AI-assisted development: ma
 | Markdown artifact files | constitution.md, spec.md, plan.md, tasks.md drive development |
 | Slash commands | `/speckit.specify`, `/speckit.plan`, `/speckit.tasks`, `/speckit.implement` |
 
-**Supported AI agents:** GitHub Copilot, Claude Code, Cursor, Windsurf, Amazon Q Developer, and others. Each agent receives templates formatted for its specific prompt format while using the same underlying artifact files.
+### AI agents
 
-This module assumes you understand these basics and focuses on advanced techniques for enterprise development. If you need a detailed introduction to GitHub Spec Kit installation and basic usage, refer to the introductory module on spec-driven development.
+GitHub Spec Kit supports the following AI agents: GitHub Copilot, Claude Code, Cursor, Windsurf, Amazon Q Developer, and others. Each agent receives templates formatted for its specific prompt format while using the same underlying artifact files.
 
 ### Environment variables for feature tracking
 

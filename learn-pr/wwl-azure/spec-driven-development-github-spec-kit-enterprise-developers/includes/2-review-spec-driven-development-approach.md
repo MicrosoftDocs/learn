@@ -4,7 +4,7 @@ Spec-driven development (SDD) represents a fundamental shift in how software is 
 
 In traditional development, code is the source of truth—specifications serve code, often becoming outdated as implementation evolves. SDD inverts this relationship: **specifications become the primary artifact, and code serves specifications**. This paradigm shift enables AI-assisted development that maintains alignment between intent and implementation.
 
-**Core SDD principles to remember:**
+Core SDD principles to remember:
 
 - **Specifications as the primary artifact**: The spec is the central source of truth. Code becomes its expression in a particular language and framework. Maintaining software means evolving specifications, not just patching code.
 
@@ -14,12 +14,12 @@ In traditional development, code is the source of truth—specifications serve c
 
 - **AI-human collaboration**: AI transforms specs to code, but raw AI generation without structure produces chaos. SDD provides that structure through well-defined specifications and implementation plans.
 
-**The four-phase SDD workflow:**
+The four-phase SDD workflow:
 
 1. **Specify**: Define *what* the software should do and *why*—user stories, acceptance criteria, requirements, and edge cases.
-2. **Plan**: Decide *how* to build it—architecture, technology stack, and implementation approach.
-3. **Tasks**: Break down the plan into discrete, actionable development tasks organized by phase.
-4. **Implement**: Write code guided by the spec, plan, and task list, verifying each task against the specification.
+1. **Plan**: Decide *how* to build it—architecture, technology stack, and implementation approach.
+1. **Tasks**: Break down the plan into discrete, actionable development tasks organized by phase.
+1. **Implement**: Write code guided by the spec, plan, and task list, verifying each task against the specification.
 
 Each phase produces artifacts that feed into the next, creating a traceable path from requirements to working code.
 
@@ -33,7 +33,7 @@ Three trends make SDD essential for enterprise teams:
 
 - **Pace of change**: Requirements change rapidly. SDD transforms requirement changes from obstacles into normal workflow—update the spec, and affected artifacts regenerate systematically.
 
-For enterprise developers, SDD offers additional benefits: consistent alignment with organizational standards, auditable documentation of requirements and decisions, and systematic enforcement of security and compliance policies through the specification process.
+For enterprise developers, SDD offers the following benefits: consistent alignment with organizational standards, auditable documentation of requirements and decisions, and systematic enforcement of security and compliance policies through the specification process.
 
 ## Applying SDD in brownfield scenarios
 
