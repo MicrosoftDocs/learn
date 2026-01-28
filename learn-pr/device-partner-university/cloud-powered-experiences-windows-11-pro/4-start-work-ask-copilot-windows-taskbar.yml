@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.cloud-powered-experiences-windows-11-pro.start-work-ask-copilot-windows-taskbar
+title: Start work with Ask Copilot on the Windows taskbar
+metadata:
+  title: Start Work with Ask Copilot on the Windows Taskbar
+  description: This content is part of the "Cloud-powered experiences on Windows 11 Pro" module.
+  ms.date: 01/27/2026
+  author: melissawinters
+  ms.author: v-mwinters
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/4-start-work-ask-copilot-windows-taskbar.md)]
