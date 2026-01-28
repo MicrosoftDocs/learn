@@ -7,7 +7,7 @@ Each phase of the Spec-Driven Development (SDD) workflow plays a crucial role in
 
 Imagine you're building a new application: an RSS Feed Reader that lets users subscribe to feeds, see new articles, and track what they've read. How do you go from this idea to working code using SDD? The answer is a systematic progression through four phases, each producing artifacts that feed into the next.
 
-## Phase 1: Specify (define the "what" and the "why")
+## Phase 1: Specify
 
 The specification defines exactly what the software should do. Every implementation decision traces back to it. If functionality doesn't appear in the spec, it doesn't appear in the final product unless you update the spec.
 
@@ -45,7 +45,7 @@ A well-structured specification includes several key sections:
 
 Writing the spec is as important as writing code. The spec isn't a formality to satisfy project management - it's the artifact that drives AI-assisted code generation. Invest the same care in crafting specs as you would in implementing features manually.
 
-## Phase 2: Plan (define the "how")
+## Phase 2: Plan
 
 A specification defines what you need to build. A technical plan defines *how* you build it. The plan transforms requirements into architecture decisions, ensuring your implementation aligns with both the specification and your project's governing principles.
 
@@ -76,7 +76,7 @@ A plan should include the following elements:
 
 If you later switch technologies - say, moving from SQLite to a different database - you update the plan while the specification remains largely unchanged. The feature requirements don't change; only the implementation approach changes.
 
-## Phase 3: Tasks (break it down)
+## Phase 3: Tasks
 
 Technical plans provide architectural direction, but implementation requires concrete, actionable steps. The tasks phase converts high-level decisions into specific work items.
 
@@ -114,7 +114,7 @@ Before moving to implementation, review tasks against the plan and spec. For exa
 - If a requirement isn't covered by a task, add a corresponding task.
 - If a task isn't associated with the plan or spec, evaluate whether the task is needed.
 
-## Phase 4: Implement (code the solution)
+## Phase 4: Implement
 
 If phases 1-3 are done well, implementation should be straightforward. You can execute tasks one by one with clear guidance.
 

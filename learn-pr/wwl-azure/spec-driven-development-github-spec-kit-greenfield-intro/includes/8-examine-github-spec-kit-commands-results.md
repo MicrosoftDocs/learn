@@ -264,6 +264,8 @@ Generates quality verification checklists for your specification. Use this comma
 
 ## Best practices
 
+There are several best practices to follow when using GitHub Spec Kit:
+
 - **Always review AI outputs:** Don't blindly accept generated content. The AI assists, but you're the domain expert.
 
 - **Communicate clearly in prompts:** The quality of output depends on the quality of input. Include all important requirements and constraints.

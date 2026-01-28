@@ -6,7 +6,7 @@ The topics covered in this module include:
 
 - Understanding what spec-driven development is and why it matters now.
 - Exploring the principles and phases of the SDD workflow.
-- Comparing spec-driven development to other methodologies like Waterfall, Agile, and test-driven development (TDD).
+- Comparing spec-driven development to other methodologies like Waterfall, Agile, and test-driven development.
 - Examining the SDD workflow phases in detail: Specify, Plan, Tasks, and Implement.
 - Introducing GitHub Spec Kit as a toolkit for practicing SDD.
 - Configuring your environment and installing GitHub Spec Kit.
@@ -14,7 +14,7 @@ The topics covered in this module include:
 
 After completing this module, you'll be able to:
 
-- Describe the principles and phases of the spec-driven development (SDD) methodology.
+- Describe the principles and phases of the spec-driven development methodology.
 - Use GitHub Spec Kit commands to create the constitution.md, spec.md, plan.md, and tasks.md files.
 - Implement a greenfield application from start to finish using GitHub Spec Kit's AI-assisted workflows.
 
