@@ -1,25 +1,3 @@
-<!--
-## Content Sources
-
-This unit was built from the following source content:
-
-**Primary Sources:**
-- includes/2-review-spec-driven-development-approach.md
-  - "The shift to spec-driven development" section
-  - "The spec-driven development workflow in practice" section
-  - "The core principles of spec-driven development" section
-  - "Why spec-driven development matters now" section
-
-**Supporting Sources:**
-- includes/5-write-effective-spec-file.md
-  - "The spec as the single source of truth" section (Specify phase details)
-- includes/6-create-technical-plan-file.md
-  - "Understand the purpose of a technical plan" section (Plan phase details)
-- includes/7-generate-implementation-tasks-file.md
-  - "Benefits of task breakdown" section (Tasks phase details)
-  - "Phase-based organization" section
--->
-
 The spec-driven development (SDD) methodology provides a phased approach to software development that emphasizes clarity, structure, and adaptability. By breaking down the development process into four distinct phases—Specify, Plan, Tasks, and Implement—SDD ensures that each step is well-defined and builds upon the previous one. This structured workflow not only enhances communication among stakeholders but also allows for continuous refinement and adaptation of the software being developed.
 
 ## SDD workflow overview

@@ -1,25 +1,3 @@
-<!--
-## Content Sources
-
-This unit was built from the following source content:
-
-**Primary Sources:**
-- includes/3-examine-github-spec-kit.md
-  - "Key components of GitHub Spec Kit" → "Slash commands" section
-  - "Leverage GitHub Spec Kit's optional enhancement commands" section (/speckit.clarify, /speckit.analyze, /speckit.checklist)
-  - "Continuous workflow support" section (command chaining)
-
-**Supporting Sources:**
-- includes/4-establish-project-principles-constitution-file.md
-  - Constitution purpose and structure (for /speckit.constitution context)
-- includes/5-write-effective-spec-file.md
-  - Spec structure and sections (for spec.md output context)
-- includes/6-create-technical-plan-file.md
-  - Plan structure and content (for plan.md output context)
-- includes/7-generate-implementation-tasks-file.md
-  - Task structure and organization (for tasks.md output context)
--->
-
 With GitHub Spec Kit installed, you're ready to use its commands to practice spec-driven development. This unit walks through each command in the workflow, explaining what it does, what output it produces, and how to work with the results. Understanding this process prepares you for the hands-on lab exercise.
 
 ## Command overview

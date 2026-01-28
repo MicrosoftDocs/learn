@@ -1,26 +1,3 @@
-<!--
-## Content Sources
-
-This unit was built from the following source content:
-
-**Primary Sources:**
-- includes/5-write-effective-spec-file.md
-  - "The spec as the single source of truth" section
-  - "Specification structure" section (Summary, User Stories, Acceptance Criteria, Functional Requirements, Nonfunctional Requirements, Edge Cases)
-  
-- includes/6-create-technical-plan-file.md
-  - "Understand the purpose of a technical plan" section
-  - "Examine plan structure and content" section (Architecture overview, Technology stack, Implementation sequence, Constitution verification, Assumptions)
-  
-- includes/7-generate-implementation-tasks-file.md
-  - "Benefits of task breakdown" section
-  - "Examine task structure and organization" section (Phase-based organization, Task granularity, Dependencies)
-  
-**Supporting Sources:**
-- includes/2-review-spec-driven-development-approach.md
-  - "The spec-driven development workflow in practice" section (workflow flow narrative)
--->
-
 Each phase of the Spec-Driven Development (SDD) workflow plays a crucial role in transforming ideas into working software. Developers who understand the purpose, content, and output of each phase can apply SDD effectively to their own projects.
 
 > [!NOTE]

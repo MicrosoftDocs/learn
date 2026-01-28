@@ -72,7 +72,7 @@ quiz:
     - content: "TDD operates at the unit test level, while SDD works at a higher requirements level to describe complete features."
       isCorrect: true
       explanation: "Correct. TDD drives design through unit tests for individual functions, while SDD uses specifications that describe complete features to drive design and code generation."
-    - content: "TDD and SDD are mutually exclusive approaches that cannot be used together."
+    - content: "TDD and SDD are mutually exclusive approaches that can't be used together."
       isCorrect: false
       explanation: "Incorrect. TDD and SDD can complement each other. You can use SDD for overall direction and still apply TDD within implementation."
     - content: "SDD produces automated tests while TDD produces specifications."
@@ -157,7 +157,7 @@ quiz:
       explanation: "Incorrect. Tasks are stored in tasks.md, not constitution.md. The constitution contains guiding principles, not task lists."
   - content: "What is the recommended sequence for using GitHub Spec Kit commands in a greenfield project?"
     choices:
-    - content: "Run commands in any order since they are independent of each other."
+    - content: "Run commands in any order since they're independent of each other."
       isCorrect: false
       explanation: "Incorrect. The commands follow a specific sequence where each builds on the outputs of the previous one."
     - content: "specify init, then /speckit.constitution, /speckit.specify, /speckit.plan, /speckit.tasks, and finally /speckit.implement."

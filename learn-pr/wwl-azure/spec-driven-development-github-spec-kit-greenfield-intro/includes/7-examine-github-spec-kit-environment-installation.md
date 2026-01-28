@@ -1,25 +1,3 @@
-<!--
-## Content Sources
-
-This unit was built from the following source content:
-
-**Primary Sources:**
-- includes/3-examine-github-spec-kit.md
-  - "Key components of GitHub Spec Kit" → "Specify CLI tool" section (installation commands)
-  - "GitHub Spec Kit's AI agent support" → "Multi-agent compatibility" section (supported agents list)
-
-**Supporting Sources:**
-- Module Outline (Unit 7)
-  - Prerequisites and system requirements
-  - Installation methods (global and one-time)
-  - Visual Studio Code setup specifics
-  - Troubleshooting guidance
-
-**External References:**
-- GitHub Spec Kit README (installation instructions, uv tool usage)
-- blog.ovilgroup.com (installation walkthrough, prerequisites)
--->
-
 Before you can use GitHub Spec Kit to practice spec-driven development, you need to set up your environment. This unit covers the prerequisites, installation process, and configuration steps to get GitHub Spec Kit running in your development environment.
 
 ## Prerequisites and system requirements
@@ -89,9 +67,9 @@ uv tool install specify-cli --from git+https://github.com/github/spec-kit.git
 
 Global installation provides these benefits:
 
-- Available in any project directory
-- Easy to update using `uv tool upgrade specify-cli`
-- No need to rerun installation commands each time
+- Available in any project directory.
+- Easy to update using `uv tool upgrade specify-cli`.
+- No need to rerun installation commands each time.
 
 ### Method 2: One-time usage
 
@@ -118,8 +96,8 @@ specify check
 
 This command checks for required tools and confirms that installation succeeded. It reports:
 
-- Whether Git is found and configured.
-- Whether your AI coding assistant is detected.
+- Whether or not Git is found and configured.
+- Whether or not your AI coding assistant is detected.
 - Any missing dependencies or configuration issues.
 
 If `specify check` reports issues, address them before proceeding.

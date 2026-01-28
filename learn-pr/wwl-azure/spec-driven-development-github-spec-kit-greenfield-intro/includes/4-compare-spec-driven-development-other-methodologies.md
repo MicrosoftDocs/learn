@@ -1,25 +1,3 @@
-<!--
-## Content Sources
-
-This unit was built from the following source content:
-
-**Primary Sources:**
-- includes/2-review-spec-driven-development-approach.md
-  - "The shift to spec-driven development" section (SDD core characteristics)
-  - "Why spec-driven development matters now" section (drivers and benefits)
-  - "The core principles of spec-driven development" section
-
-**Supporting Sources:**
-- includes/5-write-effective-spec-file.md
-  - "For enterprise developers accustomed to agile workflows..." (Agile comparison context)
-- includes/7-generate-implementation-tasks-file.md
-  - Task granularity and verification concepts (for TDD comparison)
-- Module Outline
-  - Unit 4 outline requirements (comparison framework and methodology positioning)
-
-**Note:** The source module doesn't contain direct methodology comparisons. Content was derived from SDD principles in source materials and structured according to the module outline's comparison framework.
--->
-
 Understanding how spec-driven development (SDD) relates to other software development methodologies helps you see where it fits in your existing practices. Rather than replacing what you already know, SDD can complement and enhance established approaches, especially when you're using AI-assisted development tools.
 
 ## Methodology comparison overview

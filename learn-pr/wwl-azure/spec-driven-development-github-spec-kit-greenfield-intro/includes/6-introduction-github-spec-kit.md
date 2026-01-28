@@ -1,20 +1,3 @@
-<!--
-## Content Sources
-
-This unit was built from the following source content:
-
-**Primary Sources:**
-- includes/3-examine-github-spec-kit.md
-  - "What is GitHub Spec Kit?" section
-  - "Key components of GitHub Spec Kit" section (Specify CLI, Markdown artifact files, Slash commands)
-  - "GitHub Spec Kit's AI agent support" section (Multi-agent compatibility)
-  - "Integrate GitHub Spec Kit with Git workflows" section (Project structure conventions)
-
-**Supporting Sources:**
-- includes/4-establish-project-principles-constitution-file.md
-  - Constitution concept and purpose (for explaining project constitution)
--->
-
 GitHub Spec Kit is an open-source toolkit that operationalizes spec-driven development (SDD) by providing a structured workflow, persistent artifacts, and AI integration. It guides you through the SDD phases of Specify, Plan, Tasks, and Implement using commands and templates, enabling efficient, consistent, and high-quality software development.
 
 ## What is GitHub Spec Kit?

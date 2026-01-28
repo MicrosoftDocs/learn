@@ -1,20 +1,3 @@
-<!--
-=============================================================================
-CONTENT SOURCE TRACKING
-=============================================================================
-This unit was constructed using content from the following sources:
-
-Source File: includes/2-review-spec-driven-development-approach.md
-  - Section: "The shift to spec-driven development" (paragraphs 1-4)
-  - Section: "Why spec-driven development matters now" (all bullet points)
-  - Section: "The core principles of spec-driven development" (adapted for key features)
-  - Opening paragraph (traditional development context)
-
-Source File: includes/3-examine-github-spec-kit.md
-  - Opening paragraph (context about AI-assisted development challenges)
-=============================================================================
--->
-
 In traditional software development, we often treat code as the ultimate source of truth. Specifications serve code - they're the scaffolding we build and then discard once the "real work" of coding begins. We write Product Requirements Documents (PRDs) to guide development, create design docs to inform implementation, and draw diagrams to visualize architecture. But these documents are always subordinate to the code itself. As code moves forward, specs rarely keep pace.
 
 With the rise of powerful AI coding assistants like GitHub Copilot, this code-first approach evolved into what we now call "vibe coding." Unfortunately, the vibe coding approach often involves submitting a high-level prompt that returns a chunk of code that "looks right" but might miss the intent or have errors. It can be fast, but sometimes it's misaligned. Each chat session operates in isolation, lacking awareness of previous decisions or overall project requirements.
