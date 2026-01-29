@@ -4,7 +4,7 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: "Knowledge check for module on the topic: design solutions for regulatory requirements. Contains AI generated content."
-  ms.date: 3/14/2023
+  ms.date: 01/28/2026
   author: ceperezb
   ms.author: ceperezb
   ms.topic: unit
@@ -12,88 +12,88 @@ metadata:
 durationInMinutes: 5
 ###########################################################################
 ###
-### General guidance (https://review.learn.microsoft.com/learn-docs/docs/id-guidance-knowledge-check)
-###  - Questions are complete sentences ending with a question mark
-###  - No true/false questions
-###  - 3 answers per question
-###  - All answers about the same length
-###  - Numeric answers listed in sorted order
-###  - No "All of the above" and/or "None of the above" as answer choices
-###  - No "Not" or "Except" in questions
-###  - No second person ("you") in the questions or answers
-###  - Provide a meaningful explanation for both correct and incorrect answers
+### General guidance (https://review.learn.microsoft.com/learn-docs/docs/id-guidance-knowledge-check)
+###  - Questions are complete sentences ending with a question mark
+###  - No true/false questions
+###  - 3 answers per question
+###  - All answers about the same length
+###  - Numeric answers listed in sorted order
+###  - No "All of the above" and/or "None of the above" as answer choices
+###  - No "Not" or "Except" in questions
+###  - No second person ("you") in the questions or answers
+###  - Provide a meaningful explanation for both correct and incorrect answers
 ###
 ###########################################################################
 content: |
 quiz:
   questions:
-  - content: What is regulatory compliance?
+  - content: A security architect needs to map Zero Trust principles to regulatory compliance controls. Which Zero Trust pillar maps to the ISO 27001 Annexure A.9.2.2 User Access Provisioning requirement?
     choices:
-    - content: A set of guidelines and standards that organizations must follow to protect sensitive information.
+    - content: Identity pillar with access control management and conditional access policies
       isCorrect: true
-      explanation: Regulatory compliance refers to the set of guidelines and standards that organizations must follow to protect sensitive information, such as personal data, financial information, and health records.
-    - content: A tool used to manage data flow between different systems.
+      explanation: The Identity pillar of Zero Trust directly maps to Access Control Management requirements. ISO 27001 Annexure A.9.2.2 User Access Provisioning requirements are satisfied by implementing identity verification controls like multifactor authentication and conditional access policies.
+    - content: Network pillar with network segmentation and microsegmentation controls
       isCorrect: false
-      explanation: A regulatory compliance isn't a tool used to manage data flow between different systems. It refers to the set of guidelines and standards that organizations must follow to protect sensitive information.
-    - content: A type of security threat that involves gaining unauthorized access to a network.
+      explanation: The Network pillar addresses network security controls, not user access provisioning. User access management requirements map to the Identity pillar of Zero Trust.
+    - content: Data pillar with information classification and sensitivity labels
       isCorrect: false
-      explanation: Regulatory compliance isn't a type of security threat. It refers to the set of guidelines and standards that organizations must follow to protect sensitive information.
-    - content: A method of protecting data from external threats.
+      explanation: The Data pillar addresses information classification requirements like ISO 27001 Annexure 8.2.1, not user access provisioning. User access management requirements map to the Identity pillar.
+    - content: Infrastructure pillar with configuration management and hardening controls
       isCorrect: false
-      explanation: Regulatory compliance isn't a method of protecting data from external threats. It refers to the set of guidelines and standards that organizations must follow to protect sensitive information.
-  - content: What is Microsoft Purview Compliance Manager?
+      explanation: The Infrastructure pillar addresses system configuration and hardening, not user access provisioning. User access management requirements map to the Identity pillar of Zero Trust.
+  - content: An organization needs to assess compliance for AI workloads across Azure and AWS environments. Which combination of Microsoft tools should a security architect recommend?
     choices:
-      - content: A tool for analyzing and managing compliance with regulatory standards.
+      - content: Microsoft Purview Compliance Manager integrated with Microsoft Defender for Cloud for multicloud compliance assessment
         isCorrect: true
-        explanation: Microsoft Purview Compliance Manager is a tool for analyzing and managing compliance with regulatory standards. It provides a unified view of an organization's compliance posture and helps prioritize actions to meet compliance requirements.
-      - content: A tool for managing data flow between different systems.
+        explanation: Compliance Manager integrates with Defender for Cloud to provide centralized compliance assessment across Azure, AWS, and GCP. This combination supports AI-specific regulatory templates like the EU AI Act and provides resource-level compliance data for multicloud environments.
+      - content: Azure Policy standalone deployment with custom policy definitions for each cloud environment
         isCorrect: false
-        explanation: Microsoft Purview Compliance Manager isn't a tool for managing data flow between different systems. It is a tool for analyzing and managing compliance with regulatory standards.
-      - content: A tool for managing access to cloud resources.
+        explanation: Azure Policy alone cannot assess compliance in AWS environments. For multicloud compliance, organizations should use Compliance Manager integrated with Defender for Cloud to monitor compliance across Azure, AWS, and GCP.
+      - content: Microsoft Priva Privacy Risk Management with data overexposure policies across cloud platforms
         isCorrect: false
-        explanation: Microsoft Purview Compliance Manager isn't a tool for managing access to cloud resources. It is a tool for analyzing and managing compliance with regulatory standards.
-      - content: A tool for monitoring network traffic for potential security threats.
+        explanation: Priva focuses on privacy and personal data protection within Microsoft 365, not multicloud infrastructure compliance assessment. Compliance Manager with Defender for Cloud is the recommended solution for multicloud compliance.
+      - content: Microsoft Sentinel with compliance workbooks and automated threat detection rules
         isCorrect: false
-        explanation: Microsoft Purview Compliance Manager isn't a tool for monitoring network traffic for potential security threats. It is a tool for analyzing and managing compliance with regulatory standards.
-  - content: What is Microsoft Priva?
+        explanation: Sentinel is a SIEM/SOAR solution for security operations, not compliance assessment. For multicloud compliance assessment, organizations should use Compliance Manager integrated with Defender for Cloud.
+  - content: What regulatory template in Microsoft Purview Compliance Manager helps organizations assess AI management system requirements?
     choices:
-      - content: A service for managing privacy and data protection compliance.
+      - content: ISO/IEC 42001:2023 for AI management systems
         isCorrect: true
-        explanation: Microsoft Priva is a service for managing privacy and data protection compliance. It helps organizations manage compliance with privacy regulations, by providing tools for data classification, risk assessment, and compliance reporting.
-      - content: A tool for managing access to cloud resources.
+        explanation: ISO/IEC 42001:2023 is the AI management systems standard available in Compliance Manager. It helps organizations assess and implement controls for responsible AI governance, complementing other AI regulations like the EU AI Act and NIST AI RMF.
+      - content: ISO 27001:2022 for information security management
         isCorrect: false
-        explanation: Microsoft Priva isn't a tool for managing access to cloud resources. It is a service for managing privacy and data protection compliance.
-      - content: A tool for monitoring network traffic for potential security threats.
+        explanation: ISO 27001 is an information security management standard, not specific to AI systems. For AI management system requirements, organizations should use the ISO/IEC 42001:2023 template.
+      - content: PCI-DSS 4.0 for payment card data security
         isCorrect: false
-        explanation: Microsoft Priva isn't a tool for monitoring network traffic for potential security threats. It is a service for managing privacy and data protection compliance.
-      - content: A tool for managing data flow between different systems.
+        explanation: PCI-DSS focuses on payment card data security, not AI management. For AI-specific requirements, organizations should use templates like ISO/IEC 42001:2023 or the EU AI Act template.
+      - content: SOC 2 Type 2 for service organization controls
         isCorrect: false
-        explanation: Microsoft Priva isn't a tool for managing data flow between different systems. It is a service for managing privacy and data protection compliance.
-  - content: What is Azure Policy?
+        explanation: SOC 2 addresses service organization controls for security, availability, and confidentiality, not AI-specific requirements. For AI management system requirements, use the ISO/IEC 42001:2023 template.
+  - content: A security architect is designing Azure Policy solutions for regulatory compliance. Which approach aligns with the Cloud Adoption Framework governance model?
     choices:
-      - content: A service for defining and enforcing policies for cloud resources.
+      - content: Assign policy initiatives to management groups with inheritance to child subscriptions for consistent governance enforcement
         isCorrect: true
-        explanation: Azure Policy is a service for defining and enforcing policies for cloud resources. It helps organizations maintain compliance by ensuring that resources in their Azure environment are configured and managed in accordance with company policies, industry standards, and regulatory requirements.
-      - content: A tool for managing access to cloud resources.
+        explanation: The Cloud Adoption Framework recommends using management group hierarchies with policy inheritance for consistent governance. This approach allows centralized policy management while supporting exceptions through scoping and exemptions at lower levels.
+      - content: Deploy individual policy definitions to each subscription without using management groups for granular control
         isCorrect: false
-        explanation: Azure Policy isn't a tool for managing access to cloud resources. It is a service for defining and enforcing policies for cloud resources.
-      - content: A tool for analyzing and managing compliance with regulatory standards.
+        explanation: Individual subscription-level policies without management groups create governance sprawl and inconsistency. The Cloud Adoption Framework recommends management group hierarchies with policy inheritance for scalable governance.
+      - content: Use Azure Blueprints to package policies and role assignments for deployment to subscriptions
         isCorrect: false
-        explanation: Azure Policy isn't a tool for analyzing and managing compliance with regulatory standards. It is a service for defining and enforcing policies for cloud resources.
-      - content: A tool for monitoring network traffic for potential security threats.
+        explanation: Azure Blueprints has been deprecated. For new governance implementations, Microsoft recommends using management group policies, Azure Policy initiatives, and deployment stacks as alternatives.
+      - content: Create custom policy definitions for each compliance requirement without leveraging built-in definitions
         isCorrect: false
-        explanation: Azure Policy isn't a tool for monitoring network traffic for potential security threats. It is a service for defining and enforcing policies for cloud resources.
-  - content: What is the Microsoft Defender for Cloud regulatory compliance dashboard?
+        explanation: Creating only custom policies ignores the extensive library of built-in definitions that map to compliance frameworks like MCSB and CIS. Organizations should use built-in definitions where possible and create custom definitions only for unique requirements.
+  - content: How does Microsoft Defender for Cloud support regulatory compliance assessment for resources hosted in AWS and GCP?
     choices:
-      - content: A tool for monitoring compliance with industry standards and regulatory requirements.
+      - content: By connecting cloud accounts and automatically assigning compliance standards with assessments refreshed every 4 hours
         isCorrect: true
-        explanation: The Microsoft Defender for Cloud regulatory compliance dashboard is a tool for monitoring compliance with industry standards and regulatory requirements. It provides an overview of an organization's compliance posture across different services and workloads, and helps identify potential issues and prioritize remediation efforts.
-      - content: A tool for managing access to cloud resources.
+        explanation: Defender for Cloud supports multicloud compliance by connecting AWS accounts and GCP projects. It automatically assigns default standards (AWS Foundational Best Practices for AWS, GCP Default for GCP) and provides compliance monitoring with a 4-hour refresh interval.
+      - content: By deploying Azure Policy agents to AWS and GCP resources for real-time compliance evaluation
         isCorrect: false
-        explanation: The Microsoft Defender for Cloud regulatory compliance dashboard isn't a tool for managing access to cloud resources. It is a tool for monitoring compliance with industry standards and regulatory requirements.
-      - content: A tool for analyzing and managing compliance with regulatory standards.
+        explanation: Azure Policy doesn't deploy agents to non-Azure clouds. Defender for Cloud uses native connectors and cloud-specific APIs to assess compliance in AWS and GCP environments with periodic evaluations.
+      - content: By requiring manual export of compliance data from AWS and GCP portals for import into Defender for Cloud
         isCorrect: false
-        explanation: The Microsoft Defender for Cloud regulatory compliance dashboard isn't a tool for analyzing and managing compliance with regulatory standards. It is a tool for monitoring compliance with industry standards and regulatory requirements.
-      - content: A tool for managing privacy and data protection compliance.
+        explanation: Defender for Cloud provides automated integration with AWS and GCP through cloud connectors. Manual data export isn't required for multicloud compliance assessment.
+      - content: By synchronizing compliance data only through Microsoft Purview without direct cloud connectivity
         isCorrect: false
-        explanation: The Microsoft Defender for Cloud regulatory compliance dashboard isn't a tool for managing privacy and data protection compliance. It is a tool for monitoring compliance with industry standards and regulatory requirements.
+        explanation: Defender for Cloud directly connects to AWS accounts and GCP projects for compliance assessment. While it integrates with Purview Compliance Manager for centralized tracking, it maintains direct connections for real-time assessment.
