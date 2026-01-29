@@ -8,7 +8,7 @@ Responsibilities shift based on the cloud service model.
 
 **Compliance implication:** Regardless of service model, you're always responsible for your data, endpoints, identity management, and access controls. When a regulation requires "data encryption at rest," you must determine which encryption controls Microsoft provides by default and which you must configure.
 
-:::image type="content" source="../media/shared-responsibility.png" alt-text="Diagram showing the Cloud Adoption Framework governance model." lightbox="../media/shared-responsibility.png":::
+:::image type="content" source="../media/shared-responsibility.png" alt-text="Diagram showing the shared responsibility model." lightbox="../media/shared-responsibility.png":::
 
 ## Apply the Cloud Adoption Framework Govern methodology
 

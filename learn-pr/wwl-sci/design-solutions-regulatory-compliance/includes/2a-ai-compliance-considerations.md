@@ -95,6 +95,6 @@ Beyond providing tools, Microsoft builds AI services with compliance and respons
 
 - **EU AI Act readiness** - Microsoft is committed to compliance with the EU AI Act, strengthened by years of implementing the Responsible AI Standard
 
-- **Transparency documentation** - Microsoft publishes [Transparency Notes](https://learn.microsoft.com/legal/cognitive-services/openai/transparency-note) for AI services that explain how the technology works, its capabilities and limitations, and configuration choices that influence behavior
+- **Transparency documentation** - Microsoft publishes [Transparency Notes](/legal/cognitive-services/openai/transparency-note) for AI services that explain how the technology works, its capabilities and limitations, and configuration choices that influence behavior
 
 When you deploy Microsoft AI services, you inherit compliance benefits from Microsoft's investments. However, you remain responsible for how you configure and use these services within your organization. As AI adoption accelerates, building strong governance foundations now will help you scale compliance as regulations continue to evolve.

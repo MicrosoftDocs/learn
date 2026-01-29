@@ -13,7 +13,7 @@ Azure Policy evaluates resources against business rules defined in JSON format. 
 
 Understanding how these components work together helps you build a policy architecture that enforces compliance requirements consistently across your environment.
 
-:::image type="content" source="../media/policy-overview.png" alt-text="Screenshot of the Azure Policy dashboard on the overview page." lightbox="../media/azure-policy.png":::
+:::image type="content" source="../media/azure-policy-overview.png" alt-text="Screenshot of the Azure Policy dashboard on the overview page." lightbox="../media/azure-policy-overview.png":::
 
 
 ## Designing policy enforcement strategies
