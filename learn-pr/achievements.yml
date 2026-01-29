@@ -7610,6 +7610,11 @@ achievements:
   title: Describe Microsoft Entra Verified ID concepts
   summary: Learn the core concepts of decentralized identities and Microsoft Entra Verified ID.
   iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.azure.access-data-azure-blob-storage-multiple-protocols.badge
+  type: badge 
+  title: Access Data from Azure Blob Storage by Using Multiple Protocols
+  summary: You can access your data from Azure Blob Storage by using different protocols such as representational state transfer (REST), Hadoop Distributed File System (HDFS), Network File System (NFS), and Secure File Transfer Protocol (SFTP).
+  iconUrl: /training/achievements/generic-badge.svg
 - uid: learn.manage-resources-in-azure.trophy
   type: trophy 
   title: Manage resources in Azure learning path
