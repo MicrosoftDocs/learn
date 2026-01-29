@@ -2,14 +2,14 @@
 uid: learn.spec-driven-development-github-spec-kit-microsoft-internal
 metadata:
   title: Implement Spec-Driven Development using the GitHub Spec Kit
-  description: "Apply the Spec-Driven Development approach with GitHub Spec Kit and GitHub Copilot in Visual Studio Code. Training covers the complete workflow from writing AI-consumable specifications to generating code, emphasizing intent-first philosophy with living specifications."
-  ms.date: 12/12/2025
+  description: "Implement the Spec-Driven Development methodology using GitHub Spec Kit and GitHub Copilot in Visual Studio Code. Training covers a brownfield scenario for enterprise developers, emphasizing intent-first philosophy with living specifications."
+  ms.date: 1/28/2026
   author: chrishowd
   ms.author: cahowd
   ms.topic: module-standard-task-based # Please don't edit, used for our analytics
   ms.service: github-copilot
 title: Implement spec-driven development using the GitHub Spec Kit
-summary: "Apply the Spec-Driven Development approach with GitHub Spec Kit and GitHub Copilot in Visual Studio Code. Training covers the complete workflow from writing AI-consumable specifications to generating code, emphasizing intent-first philosophy with living specifications."
+summary: "Implement the Spec-Driven Development methodology using GitHub Spec Kit and GitHub Copilot in Visual Studio Code. Training covers a brownfield scenario for enterprise developers, emphasizing intent-first philosophy with living specifications."
 abstract: |
   By the end of this module, you're able to:
     - Explain Spec-Driven Development principles and why they benefit large-scale enterprise projects (upfront clarity, fewer regressions, easier maintenance).
