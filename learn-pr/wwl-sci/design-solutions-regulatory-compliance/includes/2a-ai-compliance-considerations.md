@@ -68,13 +68,13 @@ AI systems must include safeguards against generating harmful content. Implement
 
 With these compliance areas in mind, consider the following when designing AI compliance solutions:
 
-1. **Integrate AI governance with existing frameworks** - Align AI policies with your corporate governance, data governance, and risk management processes rather than creating separate tracks
+- **Integrate AI governance with existing frameworks** - Align AI policies with your corporate governance, data governance, and risk management processes rather than creating separate tracks
 
-2. **Implement compliance early** - Build compliance controls into AI projects from the start rather than retrofitting them later
+- **Implement compliance early** - Build compliance controls into AI projects from the start rather than retrofitting them later
 
-3. **Plan for regulatory evolution** - AI regulations are rapidly evolving; design flexible governance that can adapt to new requirements
+- **Plan for regulatory evolution** - AI regulations are rapidly evolving; design flexible governance that can adapt to new requirements
 
-4. **Document everything** - Maintain comprehensive records of AI system design, training data, testing results, and operational decisions to support audits and regulatory inquiries
+- **Document everything** - Maintain comprehensive records of AI system design, training data, testing results, and operational decisions to support audits and regulatory inquiries
 
 ## Microsoft tools for AI compliance
 

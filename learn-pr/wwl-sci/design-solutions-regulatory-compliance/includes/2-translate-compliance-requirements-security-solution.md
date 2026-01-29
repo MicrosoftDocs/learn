@@ -118,9 +118,9 @@ Not every resource can meet every policy. Design an exception process that:
 
 Start with a minimum viable governance baseline:
 
-1. **Assign regulatory compliance initiatives** - Enable built-in initiatives in Defender for Cloud that map to your required frameworks (MCSB, PCI-DSS, ISO 27001)
-2. **Create a management group hierarchy** - Organize subscriptions to enable consistent policy application
-3. **Apply foundational policies** - Implement policies for tagging, allowed regions, required encryption, and network security
-4. **Configure monitoring** - Set up compliance dashboards and alerts for policy violations
+- **Assign regulatory compliance initiatives** - Enable built-in initiatives in Defender for Cloud that map to your required frameworks (MCSB, PCI-DSS, ISO 27001)
+- **Create a management group hierarchy** - Organize subscriptions to enable consistent policy application
+- **Apply foundational policies** - Implement policies for tagging, allowed regions, required encryption, and network security
+- **Configure monitoring** - Set up compliance dashboards and alerts for policy violations
 
 This baseline provides immediate visibility into your compliance posture and a foundation for continuous improvement.
