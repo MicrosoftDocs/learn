@@ -10,6 +10,18 @@ Responsibilities shift based on the cloud service model.
 
 :::image type="content" source="../media/shared-responsibility.png" alt-text="Diagram showing the shared responsibility model." lightbox="../media/shared-responsibility.png":::
 
+### Microsoft Compliance resources
+
+To understand what Microsoft covers, use the centralized [Microsoft Compliance site](/compliance/) as your starting point. This site organizes resources into three key areas:
+
+- **Regulatory and industry compliance** - Guidance for meeting specific regulatory requirements like GDPR, DORA (Digital Operational Resilience Act), and industry-specific standards. This includes [Microsoft compliance offerings](/compliance/regulatory/offering-home) that document certifications and attestations across Microsoft services.
+
+- **Service assurance** - Documentation on how Microsoft safeguards your data, organized by topic areas including AI governance, infrastructure security, operations, and governance. This section includes links to SOC reports, ISO certifications, penetration test results, and the [Risk Assessment Guide for Microsoft Cloud](/compliance/assurance/assurance-risk-assessment-guide).
+
+- **Service-specific compliance** - Direct links to compliance documentation for [Azure](/azure/compliance/), [Dynamics 365](/dynamics365/business-central/compliance/compliance-overview), and [Microsoft Purview](/purview/) to help you understand compliance capabilities within each service.
+
+When designing compliance solutions, use these resources to identify which controls Microsoft manages versus which controls you're responsible for implementing.
+
 ## Apply the Cloud Adoption Framework Govern methodology
 
 The [Cloud Adoption Framework Govern methodology](/azure/cloud-adoption-framework/govern/) provides a structured process for translating compliance requirements into enforceable policies. 
