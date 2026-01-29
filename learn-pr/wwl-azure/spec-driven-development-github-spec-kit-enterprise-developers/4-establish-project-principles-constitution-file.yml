@@ -4,10 +4,10 @@ title: Create a constitution with principles, constraints, and standards
 metadata:
   title: Create a Constitution with Principles, Constraints, and Standards
   description: "Create a constitution with principles, constraints, and standards."
-  ms.date: 12/12/2025
+  ms.date: 1/28/2026
   author: chrishowd
   ms.author: cahowd
   ms.topic: unit
-durationInMinutes: 8
+durationInMinutes: 10
 content: |
   [!include[](includes/4-establish-project-principles-constitution-file.md)]

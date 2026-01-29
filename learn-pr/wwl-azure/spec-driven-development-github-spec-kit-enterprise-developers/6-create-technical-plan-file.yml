@@ -4,10 +4,10 @@ title: Create a detailed technical plan
 metadata:
   title: Create a Detailed Technical Plan
   description: "Create a detailed technical plan."
-  ms.date: 12/12/2025
+  ms.date: 1/28/2026
   author: chrishowd
   ms.author: cahowd
   ms.topic: unit
-durationInMinutes: 8
+durationInMinutes: 12
 content: |
   [!include[](includes/6-create-technical-plan-file.md)]

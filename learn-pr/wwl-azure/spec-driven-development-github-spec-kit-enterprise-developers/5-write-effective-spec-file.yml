@@ -4,10 +4,10 @@ title: Generate a clear, precise, and effective spec
 metadata:
   title: Generate a Clear, Precise, and Effective Spec
   description: "Generate a clear, precise, and effective spec."
-  ms.date: 12/12/2025
+  ms.date: 1/28/2026
   author: chrishowd
   ms.author: cahowd
   ms.topic: unit
-durationInMinutes: 8
+durationInMinutes: 14
 content: |
   [!include[](includes/5-write-effective-spec-file.md)]
