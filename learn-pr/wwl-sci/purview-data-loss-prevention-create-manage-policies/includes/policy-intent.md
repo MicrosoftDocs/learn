@@ -44,4 +44,4 @@ When policy behavior aligns with real workflows:
 - Users are more likely to understand enforcement decisions
 - Policies act as guardrails instead of obstacles
 
-With clear intent and well-defined boundaries, policy creation becomes a deliberate design exercise rather than a trial-and-error configuration task.
+Once intent is clear, the next constraint becomes how much control the policy needs from the start.

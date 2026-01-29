@@ -58,4 +58,4 @@ Clear naming helps:
 
 This matters even more as policies grow in number and complexity.
 
-With a clear starting point and well-defined intent, you're ready to move from planning into defining what the policy actually detects.
+The starting point defines how much freedom you have, but detection determines whether the policy actually reflects risk.
