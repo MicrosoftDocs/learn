@@ -62758,7 +62758,497 @@
     {
       "source_path": "learn-pr/azure/access-data-azure-blob-storage-multiple-protocols/7-summary.yml",
       "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/data-lake-storage-multi-protocol-access",
+      "redirect_document_id": false         
+    },                                              
+    {
+      "source_path": "learn-pr/paths/manage-resources-in-azure/index.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/training/browse/",
+      "redirect_document_id": false      
+    },
+    {
+      "source_path": "learn-pr/azure/publish-manage-apis-with-azure-api-management/index.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/api-management/import-and-publish",
       "redirect_document_id": false
-    }           
+    },
+    {
+      "source_path": "learn-pr/azure/publish-manage-apis-with-azure-api-management/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/api-management/import-and-publish",
+      "redirect_document_id": false
+    },   
+    {
+      "source_path": "learn-pr/azure/publish-manage-apis-with-azure-api-management/2-create-an-api-gateway.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/api-management/import-and-publish",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-manage-apis-with-azure-api-management/3-exercise-create-an-api-gateway.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/api-management/import-and-publish",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-manage-apis-with-azure-api-management/4-import-and-publish-an-api.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/api-management/import-and-publish",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-manage-apis-with-azure-api-management/5-exercise-import-and-publish-an-api.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/api-management/import-and-publish",
+      "redirect_document_id": false
+    },   
+    {
+      "source_path": "learn-pr/azure/publish-manage-apis-with-azure-api-management/6-call-an-api-with-a-subscription-key.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/api-management/import-and-publish",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-manage-apis-with-azure-api-management/7-exercise-call-an-api-with-a-subscription-key.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/api-management/import-and-publish",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-manage-apis-with-azure-api-management/8-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/api-management/import-and-publish",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/implement-code-workflow/index.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/devops/user-guide/code-with-git?toc=%2fazure%2fdevops%2fget-started%2ftoc.json&view=azure-devops",
+      "redirect_document_id": false
+    },   
+    {
+      "source_path": "learn-pr/azure-devops/implement-code-workflow/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/devops/user-guide/code-with-git?toc=%2fazure%2fdevops%2fget-started%2ftoc.json&view=azure-devops",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/implement-code-workflow/2-choose-a-code-flow-strategy.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/devops/user-guide/code-with-git?toc=%2fazure%2fdevops%2fget-started%2ftoc.json&view=azure-devops",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/implement-code-workflow/3-set-up-environment.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/devops/user-guide/code-with-git?toc=%2fazure%2fdevops%2fget-started%2ftoc.json&view=azure-devops",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/implement-code-workflow/4-create-pull-request.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/devops/user-guide/code-with-git?toc=%2fazure%2fdevops%2fget-started%2ftoc.json&view=azure-devops",
+      "redirect_document_id": false
+    },   
+    {
+      "source_path": "learn-pr/azure-devops/implement-code-workflow/5-push-a-change.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/devops/user-guide/code-with-git?toc=%2fazure%2fdevops%2fget-started%2ftoc.json&view=azure-devops",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/implement-code-workflow/6-add-build-badge.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/devops/user-guide/code-with-git?toc=%2fazure%2fdevops%2fget-started%2ftoc.json&view=azure-devops",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/implement-code-workflow/7-track-build-history.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/devops/user-guide/code-with-git?toc=%2fazure%2fdevops%2fget-started%2ftoc.json&view=azure-devops",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/implement-code-workflow/8-require-reviewer.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/devops/user-guide/code-with-git?toc=%2fazure%2fdevops%2fget-started%2ftoc.json&view=azure-devops",
+      "redirect_document_id": false
+    },   
+    {
+      "source_path": "learn-pr/azure-devops/implement-code-workflow/9-clean-up-environment.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/devops/user-guide/code-with-git?toc=%2fazure%2fdevops%2fget-started%2ftoc.json&view=azure-devops",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/implement-code-workflow/10-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/devops/user-guide/code-with-git?toc=%2fazure%2fdevops%2fget-started%2ftoc.json&view=azure-devops",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/manage-build-dependencies/index.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/devops/artifacts/start-using-azure-artifacts",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/manage-build-dependencies/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/devops/artifacts/start-using-azure-artifacts",
+      "redirect_document_id": false
+    },   
+    {
+      "source_path": "learn-pr/azure-devops/manage-build-dependencies/2-plan-build-dependencies-for-your-pipeline.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/devops/artifacts/start-using-azure-artifacts",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/manage-build-dependencies/2b-what-is-azure-artifacts.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/devops/artifacts/start-using-azure-artifacts",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/manage-build-dependencies/3-set-up-environment.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/devops/artifacts/start-using-azure-artifacts",
+      "redirect_document_id": false
+    },   
+    {
+      "source_path": "learn-pr/azure-devops/manage-build-dependencies/4-create-feed.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/devops/artifacts/start-using-azure-artifacts",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/manage-build-dependencies/5-create-package-pipeline.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/devops/artifacts/start-using-azure-artifacts",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/manage-build-dependencies/6-consume-package.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/devops/artifacts/start-using-azure-artifacts",
+      "redirect_document_id": false
+    },   
+    {
+      "source_path": "learn-pr/azure-devops/manage-build-dependencies/7-push-a-change.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/devops/artifacts/start-using-azure-artifacts",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/manage-build-dependencies/8-clean-up-environment.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/devops/artifacts/start-using-azure-artifacts",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/manage-build-dependencies/9-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/devops/artifacts/start-using-azure-artifacts",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/build-applications-with-azure-devops/index.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/training/browse/",
+      "redirect_document_id": false
+    },
+    {                                                                                                              
+      "source_path": "learn-pr/paths/create-serverless-applications/index.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/align-requirements-in-azure/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/describe-cloud-service-types/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/align-requirements-in-azure/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/describe-cloud-service-types/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/align-requirements-in-azure/2-public-private-hybrid.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/describe-cloud-service-types/",
+      "redirect_document_id": false
+    },            
+    {
+      "source_path": "learn-pr/azure/align-requirements-in-azure/3-service-models.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/describe-cloud-service-types/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/align-requirements-in-azure/4-iaas.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/describe-cloud-service-types/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/align-requirements-in-azure/5-paas.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/describe-cloud-service-types/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/align-requirements-in-azure/6-saas.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/describe-cloud-service-types/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/align-requirements-in-azure/7-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/describe-cloud-service-types/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/align-requirements-in-azure/8-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/describe-cloud-service-types/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/automate-azure-tasks-with-powershell/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/intro/azure-developer-create-resources#azure-powershell",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/automate-azure-tasks-with-powershell/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/intro/azure-developer-create-resources#azure-powershell",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/automate-azure-tasks-with-powershell/2-decide-if-azure-powershell-is-right-for-your-tasks.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/intro/azure-developer-create-resources#azure-powershell",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/automate-azure-tasks-with-powershell/3-install-azure-powershell.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/intro/azure-developer-create-resources#azure-powershell",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/automate-azure-tasks-with-powershell/4-exercise-install-azure-powershell.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/intro/azure-developer-create-resources#azure-powershell",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/automate-azure-tasks-with-powershell/5-create-resource-interactively.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/intro/azure-developer-create-resources#azure-powershell",
+      "redirect_document_id": false
+    },    
+    {
+      "source_path": "learn-pr/azure/automate-azure-tasks-with-powershell/6-exercise-create-resource-interactively.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/intro/azure-developer-create-resources#azure-powershell",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/automate-azure-tasks-with-powershell/7-create-resource-using-script.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/intro/azure-developer-create-resources#azure-powershell",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/automate-azure-tasks-with-powershell/8-exercise-create-resource-using-script.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/intro/azure-developer-create-resources#azure-powershell",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/automate-azure-tasks-with-powershell/9-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/intro/azure-developer-create-resources#azure-powershell",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/control-azure-services-with-cli/index.yml",
+      "redirect_url": "https://learn.microsoft.com/cli/azure/get-started-with-azure-cli",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/control-azure-services-with-cli/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/cli/azure/get-started-with-azure-cli",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/control-azure-services-with-cli/2-decide-if-azure-clil-is-right-for-your-tasks.yml",
+      "redirect_url": "https://learn.microsoft.com/cli/azure/get-started-with-azure-cli",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/control-azure-services-with-cli/3-install-azure-cli.yml",
+      "redirect_url": "https://learn.microsoft.com/cli/azure/get-started-with-azure-cli",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/control-azure-services-with-cli/4-exercise-install-azure-cli.yml",
+      "redirect_url": "https://learn.microsoft.com/cli/azure/get-started-with-azure-cli",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/control-azure-services-with-cli/5-create-resource-interactively.yml",
+      "redirect_url": "https://learn.microsoft.com/cli/azure/get-started-with-azure-cli",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/control-azure-services-with-cli/6-exercise-create-resource-interactively.yml",
+      "redirect_url": "https://learn.microsoft.com/cli/azure/get-started-with-azure-cli",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/control-azure-services-with-cli/7-create-resource-using-script.yml",
+      "redirect_url": "https://learn.microsoft.com/cli/azure/get-started-with-azure-cli",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/control-azure-services-with-cli/8-exercise-create-resource-using-script.yml",
+      "redirect_url": "https://learn.microsoft.com/cli/azure/get-started-with-azure-cli",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/control-azure-services-with-cli/9-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/cli/azure/get-started-with-azure-cli",
+      "redirect_document_id": false
+    },
+    {             
+      "source_path": "learn-pr/azure/create-serverless-logic-with-azure-functions/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-create-function-app-portal",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-serverless-logic-with-azure-functions/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-create-function-app-portal",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-serverless-logic-with-azure-functions/2-decide-if-serverless-computing-is-right-for-your-business-need.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-create-function-app-portal",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-serverless-logic-with-azure-functions/3-create-an-azure-functions-app-in-the-azure-portal.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-create-function-app-portal",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-serverless-logic-with-azure-functions/4-creating-and-executing-an-azure-function.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-create-function-app-portal",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-serverless-logic-with-azure-functions/5-add-logic-to-the-function-app.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-create-function-app-portal",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-serverless-logic-with-azure-functions/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-create-function-app-portal",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-azure-functions/index.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/azure-functions/functions-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-azure-functions/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/azure-functions/functions-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-azure-functions/2-what-azure-functions.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/azure-functions/functions-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-azure-functions/3-how-azure-functions-works.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/azure-functions/functions-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-azure-functions/4-when-use-azure-functions.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/azure-functions/functions-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-azure-functions/5-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/azure-functions/functions-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/architect-messaging-serverless/index.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/training/browse/",
+      "redirect_document_id": false
+    },
+    {                                                                                       
+      "source_path": "learn-pr/azure/prepare-your-dev-environment-for-azure-development/index.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/developer/intro/azure-developer-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/prepare-your-dev-environment-for-azure-development/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/developer/intro/azure-developer-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/prepare-your-dev-environment-for-azure-development/2-set-up-dev-environment.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/developer/intro/azure-developer-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/prepare-your-dev-environment-for-azure-development/3-exercise-set-up-dev-environment.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/developer/intro/azure-developer-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/prepare-your-dev-environment-for-azure-development/4-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/developer/intro/azure-developer-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/app-service-scale-up-scale-out/index.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/app-service/manage-scale-up",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/app-service-scale-up-scale-out/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/app-service/manage-scale-up",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/app-service-scale-up-scale-out/2-scale-a-web-app-manually.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/app-service/manage-scale-up",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/app-service-scale-up-scale-out/3-exercise-scale-a-web-app-manually.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/app-service/manage-scale-up",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/app-service-scale-up-scale-out/4-scale-up-a-web-app.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/app-service/manage-scale-up",
+      "redirect_document_id": false
+    }, 
+    {
+      "source_path": "learn-pr/azure/app-service-scale-up-scale-out/5-exercise-scale-up-a-web-app.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/app-service/manage-scale-up",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/app-service-scale-up-scale-out/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/app-service/manage-scale-up",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/blazor-build-rich-interactive-components/index.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/blazor-build-rich-interactive-components/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/blazor-build-rich-interactive-components/2-create-user-interfaces-blazor-components.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/blazor-build-rich-interactive-components/3-exercise-use-javascript-libraries-blazor-apps.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/blazor-build-rich-interactive-components/4-improve-app-interactivity-lifecycle-events.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/blazor-build-rich-interactive-components/5-exercise-improve-app-interactivity-lifecycle-events.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/blazor-build-rich-interactive-components/6-reuse-components-creating-templates.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/blazor-build-rich-interactive-components/7-exercise-reuse-components-creating-templates.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/blazor-build-rich-interactive-components/8-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
+      "redirect_document_id": false
+    }                                                    
   ]
 }

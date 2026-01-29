@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.scale-containers-azure-container-apps.keda-scalers-custom-workloads
+title: Apply KEDA scalers for custom workloads
+metadata:
+  title: Apply KEDA Scalers for Custom Workloads
+  description: Apply KEDA scalers for custom workloads in Azure Container Apps
+  ms.date: 01/26/2026
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-keda-scalers-custom-workloads.md)]

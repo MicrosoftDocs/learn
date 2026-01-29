@@ -1,10 +1,21 @@
-The constitution file is the foundation of spec-driven development with GitHub Spec Kit. It captures non-negotiable principles, constraints, and standards that govern your project. By defining these items upfront, you ensure every specification, plan, and implementation adheres to organizational requirements automatically.
+The constitution is the foundation of spec-driven development with GitHub Spec Kit. This unit explores how to create effective constitutions for enterprise development scenarios.
+
+## Review constitution basics
+
+A constitution file captures non-negotiable principles, constraints, and standards that govern your project. It also serves as a guardrail for AI-assisted development. When the agent generates specs, plans, tasks, or code, it references the constitution to verify proposals comply with your standards.
+
+Key benefits of a well-defined constitution include:
+
+- **Consistency enforcement**: Ensures alignment with architectural decisions across long projects and multiple developers.
+- **Compliance documentation**: Makes regulatory requirements and security policies explicit and auditable.
+- **Institutional knowledge capture**: Preserves hard-won lessons in a form that guides AI code generation.
+- **Reduced cognitive load**: Automates enforcement of organizational policies during development.
 
 ## Purpose of the constitution
 
-In spec-driven development, the constitution (constitution.md) serves as your project's immutable rule set. It documents what must always be true, regardless of which features you build or how requirements evolve.
+In spec-driven development, the constitution serves as your project's immutable rule set. It documents what must always be true, regardless of which features you build or how requirements evolve.
 
-Think of the constitution as guardrails for AI-assisted development. When GitHub Copilot generates a technical plan or code, it references the constitution to verify proposals comply with your standards. If the constitution states "All data must be encrypted at rest," GitHub Copilot doesn't suggest storing files in plaintext—it automatically incorporates encryption into designs.
+Think of the constitution as guardrails for AI-assisted development. When AI agent generates a spec, a plan, or code, it references the constitution to verify proposals comply with your standards. If the constitution states "All data must be encrypted at rest," the agent doesn't suggest storing files in plaintext—it automatically incorporates encryption into designs.
 
 The constitution addresses several critical needs:
 

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-data-loss-prevention-create-manage-policies.adaptive-protection-data-loss-prevention
+title: Adjust enforcement dynamically based on risk
+metadata:
+  title: Adjust enforcement dynamically based on risk
+  description: "Adjust enforcement dynamically based on risk"
+  ms.date: 01/27/2026
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/adaptive-protection-data-loss-prevention.md)]

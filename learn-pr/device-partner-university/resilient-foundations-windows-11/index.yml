@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.dpu.resilient-foundations-windows-11
+title: Resilient foundations with Windows 11 Pro
+metadata:
+  title: Resilient Foundations With Windows 11 Pro
+  description: In this module, you'll learn how Windows 11 Pro provides resilient foundations for modern work by enhancing performance, reliability, and security integration.
+  ms.date: 01/26/2026
+  author: ozahran7
+  ms.author: v-zahranomar
+  ms.topic: module
+  ms.service: windows-11
+summary: >
+  Learn how Windows 11 Pro provides resilient foundations for modern work by enhancing performance, reliability, and security integration.
+
+abstract: |
+  By the end of this module, you'll be able to:
+  - Understand the fundamentals of Windows 11 Pro and its resilient features.
+  - Explore performance and reliability enhancements in Windows 11 Pro.
+  - Learn about security integration features that contribute to system resiliency.
+
+prerequisites: |
+  - None
+iconUrl: /training/achievements/resilient-foundations-windows-11.svg
+ratingEnabled: false
+levels:
+  - beginner
+roles:
+  - administrator
+  - business-leader
+  - business-owner
+  - business-user
+  - technology-manager
+products:
+  - windows-11
+units:
+  - learn.dpu.resilient-foundations-windows-11.introduction
+  - learn.dpu.resilient-foundations-windows-11.fundamentals-and-resiliency
+  - learn.dpu.resilient-foundations-windows-11.performance-and-reliability
+  - learn.dpu.resilient-foundations-windows-11.security-integration-for-resiliency
+  - learn.dpu.resilient-foundations-windows-11.real-world-success-with-levi-strauss-co
+  - learn.dpu.resilient-foundations-windows-11.knowledge-check
+  - learn.dpu.resilient-foundations-windows-11.summary
+badge:
+  uid: learn.dpu.resilient-foundations-windows-11.badge

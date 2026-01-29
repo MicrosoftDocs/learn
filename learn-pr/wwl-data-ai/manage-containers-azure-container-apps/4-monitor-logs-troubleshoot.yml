@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-containers-azure-container-apps.monitor-logs-troubleshoot
+title: Monitor logs and troubleshoot issues
+metadata:
+  title: Monitor Logs and Troubleshoot Issues
+  description: Monitor logs and troubleshoot issues
+  ms.date: 01/26/2026
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/4-monitor-logs-troubleshoot.md)]

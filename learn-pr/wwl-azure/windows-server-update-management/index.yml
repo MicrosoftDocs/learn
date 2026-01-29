@@ -3,9 +3,9 @@ uid: learn.wwl.windows-server-update-management
 metadata:
   title: Windows Server update management
   description: "Learn how to use Windows Server Update Services to deploy operating system updates to computers on your network. Select the appropriate deployment option and combine WSUS with Microsoft Azure Update Management to manage server updates."
-  ms.date: 01/15/2025
+  ms.date: 01/23/2026
   author: wwlpublish
-  ms.author: tonyj
+  ms.author: robbarefoot
   ms.topic: module
   ms.service: windows-server
 title: Windows Server update management

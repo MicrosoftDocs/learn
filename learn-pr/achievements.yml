@@ -7465,6 +7465,16 @@ achievements:
   title: Automate multi-container Kubernetes deployments with Azure Pipelines
   summary: Deploy multiple containers to an Azure Kubernetes Service cluster with Azure Pipelines.
   iconUrl: /training/achievements/azure-devops/deploy-kubernetes.svg
+- uid: learn.prepare-azure-dev-environment.badge
+  type: badge
+  title: Prepare your development environment for Azure development
+  summary: Set up your local development environment with several popular integrated development environments (IDEs).
+  iconUrl: /training/achievements/prepare-your-dev-environment-for-azure-development.svg
+- uid: learn.azure.app-service-scale-up-scale-out.badge
+  type: badge
+  title: Scale an App Service Web App to Efficiently Meet Demand with App Service Scale Up and Scale Out
+  summary: Respond to periods of increased activity by incrementally increasing the resources available. Then decreasing these resources when activity drops to reduce costs.
+  iconUrl: /training/achievements/app-service-scale-up-scale-out.svg
 - uid: learn.wwl.build-data-analytics-solutions.trophy
   type: trophy
   title: Build data analytics solutions using Azure Synapse serverless SQL pools
@@ -7575,6 +7585,26 @@ achievements:
   title: Work with Data Warehouses using Azure Synapse Analytics
   summary: Learn to work with Data Warehouses using Azure Synapse Analytics
   iconUrl: /training/achievements/work-with-data-warehouses-using-azure-synapse-analytics-social.png
+- uid: learn.create-serverless-applications.trophy
+  type: trophy
+  title: Create serverless applications
+  summary: Azure Functions enable the creation of event driven, compute-on-demand systems that can be triggered by various external events. Learn how to leverage functions to execute server-side logic and build serverless architectures.
+  iconUrl: /training/achievements/create-serverless-applications.svg
+- uid: learn.create-serverless-logic-with-functions.badge
+  type: badge
+  title: Create serverless logic with Azure Functions
+  summary: Azure Functions allows developers to host business logic that can be executed without managing or provisioning infrastructure. 
+  iconUrl: /training/achievements/create-serverless-logic-with-azure-functions.svg
+- uid: learn.intro-azure-functions.badge
+  type: badge
+  title: Introduction to Azure Functions
+  summary: Learn how Azure Functions helps you to easily integrate serverless compute resources into your cloud-based solutions. An extensive set of bindings makes it easy for you to connect your code to key Azure services, while built-in support for the most used development languages lets you better use your existing skills.
+  iconUrl: /training/achievements/generic-badge.svg 
+- uid: learn.architect-messaging-serverless.trophy
+  type: badge
+  title: Architect message brokering and serverless applications in Azure
+  summary: Learn how to create reliable messaging for your applications, and how to take advantage of serverless application services in Azure.
+  iconUrl: /training/achievements/architect-messaging-serverless.svg
 - uid: learn.wwl.describe-verified-id-concepts.badge
   type: badge 
   title: Describe Microsoft Entra Verified ID concepts
@@ -7585,3 +7615,48 @@ achievements:
   title: Access Data from Azure Blob Storage by Using Multiple Protocols
   summary: You can access your data from Azure Blob Storage by using different protocols such as representational state transfer (REST), Hadoop Distributed File System (HDFS), Network File System (NFS), and Secure File Transfer Protocol (SFTP).
   iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.manage-resources-in-azure.trophy
+  type: trophy 
+  title: Manage resources in Azure learning path
+  summary: Learn how to work with the Azure command line and web portal to create, manage, and control cloud based resources.
+  iconUrl: /training/achievements/manage-resources-in-azure.svg
+- uid: learn.align-requirements-in-azure.badge
+  type: badge 
+  title: Align requirements with cloud types and service models in Azure 
+  summary: Azure supports public, private, and hybrid cloud approaches to deploying cloud resources. Each approach affects several factors, including cost, maintenance requirements, and security.
+  iconUrl: /training/achievements/align-requirements-in-azure.svg
+- uid: learn.automate-azure-tasks-with-powershell.badge
+  type: badge 
+  title: Automate Azure tasks with Azure PowerShell
+  summary: Install Azure PowerShell locally and use it to manage Azure resources.
+  iconUrl: /training/achievements/automate-azure-tasks-with-powershell.svg
+- uid: learn.control-azure-services-with-cli.badge
+  type: badge 
+  title: Control Azure services with the CLI
+  summary: Install the Azure CLI locally and use it to manage Azure resources.
+  iconUrl: /training/achievements/control-azure-services-with-cli.svg
+- uid: learn.build-interactive-components-blazor-web-apps.badge
+  type: badge
+  title: Build rich interactive components with Blazor web apps
+  summary: Learn how to interoperate Blazor apps with JavaScript code, use templated components, and handle component lifecycle events.
+  iconUrl: /training/achievements/build-interactive-components-blazor-web-apps.svg
+- uid: learn.publish-manage-apis-with-azure-api-management.badge
+  type: badge 
+  title: Publish and manage your APIs with Azure API Management
+  summary: Use API management to control who uses your APIs, to enforce usage policies, and to present a professional front-end to developers using the API.
+  iconUrl: /training/achievements/publish-manage-apis-with-azure-api-management.svg
+- uid: learn.azdo.implement-code-workflow.badge
+  type: badge 
+  title: Implement a code workflow in your build pipeline by using Git and GitHub
+  summary: Collaborate with others and merge only the highest quality code.
+  iconUrl: /training/achievements/azure-devops/implement-a-code-workflow-in-your-build-pipeline.svg
+- uid: learn.azdo.manage-build-dependencies.badge
+  type: badge 
+  title: Manage build dependencies with Azure Artifacts
+  summary: Manage your application and the packages it uses across build Pipelines.
+  iconUrl: /training/achievements/azure-devops/manage-dependencies-in-your-build-pipeline.svg
+- uid: learn.azdo.build-applications-with-azure-devops.trophy
+  type: trophy 
+  title: Build applications with Azure DevOps learning path
+  summary: Azure DevOps enables you to build, test, and deploy any application to any cloud or on premises. Learn how to configure build pipelines that continuously build, test, and verify your applications.
+  iconUrl: /training/achievements/azure-devops/build-applications-with-azure-devops.svg 

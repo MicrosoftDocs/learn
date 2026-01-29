@@ -2,16 +2,16 @@
 uid: learn.wwl.implement-identity-management-solution
 metadata:
   title: 'Implement an identity management solution using Microsoft Entra ID'
-  description: Implement an identity management solution using Microsoft Entra ID'
-  ms.date: 02/03/2023
+  description: 'Implement an identity management solution using Microsoft Entra ID'
+  ms.date: 01/23/2026
   author: wwlpublish
   ms.author: roberts
   ms.topic: learning-path
-title: Implement an identity management solution using Microsoft Entra ID'
+title: 'Implement an identity management solution using Microsoft Entra ID'
 prerequisites: |
   None
 summary: |
-  Learn to create and manage your initial Microsoft Entra implementation and configure the users, groups, and external identities you’ll use to run your solution. Aligned to SC-300 Exam.
+  Learn how to implement and configure Microsoft Entra ID for your organization. You set up your initial tenant, create and manage users and groups, configure external identities for collaboration, and implement hybrid identity solutions with Microsoft Entra Connect. Aligned to SC-300 Exam.
 iconUrl: /training/achievements/implement-an-identity-management-solution.svg
 levels:
 - intermediate

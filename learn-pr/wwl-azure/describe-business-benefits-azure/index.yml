@@ -9,7 +9,7 @@ metadata:
   ms.topic: module
   ms.custom:
   - N/A
-  ms.service: azure-architecture-center
+  ms.service: azure
   ai-usage: human-only
 title: Describe the business benefits of Azure
 summary: This module explores various business benefits of Azure, including cost-efficiency, innovation, agility, and security.
@@ -47,4 +47,4 @@ units:
 - learn.wwl.describe-business-benefits-azure.knowledge-check
 - learn.wwl.describe-business-benefits-azure.summary
 badge:
-  uid: learn.wwl.describe-business-benefits-azure.badge
+  uid: learn.wwl.describe-business-benefits-azure.badge
