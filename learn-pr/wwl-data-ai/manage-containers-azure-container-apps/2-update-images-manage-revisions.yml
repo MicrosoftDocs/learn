@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-containers-azure-container-apps.update-images-manage-revisions
+title: Update images and manage revisions safely
+metadata:
+  title: Update Images and Manage Revisions Safely
+  description: Update images and manage revisions safely
+  ms.date: 01/26/2026
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/2-update-images-manage-revisions.md)]

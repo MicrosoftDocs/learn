@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-solutions-align-cloud-adoption-framework-well-architected-framework.cloud-adoption-framework-secure-ai
+title: Design a strategy for secure AI adoption
+metadata:
+  title: Design a strategy for secure AI adoption
+  description: "Design a strategy for secure AI adoption."
+  ms.date: 01/24/2026
+  author: ceperezb
+  ms.author: ceperezb
+  ms.topic: unit
+  ai-usage: ai-generated
+durationInMinutes: 7
+content: |
+  [!include[](includes/3a-cloud-adoption-framework-secure-ai.md)]

@@ -5,9 +5,9 @@ metadata:
   prefetch-feature-rollout: true
   title: Guided Project – Deploy and configure Azure Monitor
   description: "In this module, you practice configuring monitoring of various workloads and infrastructure services using Azure Monitor. The skills validated include deploying and configuring Log Analytics, configuring monitoring for Web apps, monitoring compute and networking services, and configuring alerts."
-  ms.date: 05/19/2025
+  ms.date: 01/23/2026
   author: wwlpublish
-  ms.author: tonyj
+  ms.author: robbarefoot
   ms.topic: module
   ms.custom:
   - N/A
@@ -29,7 +29,7 @@ prerequisites: |
   -   Familiarity with operating systems, networking, servers, and virtualization
 
   -   Experience using the Azure portal and Azure Monitor
-iconUrl: /training/achievements/generic-badge.svg
+iconUrl: /training/achievements/azure-monitor-module.svg
 levels:
 - intermediate
 roles:

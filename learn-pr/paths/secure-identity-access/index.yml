@@ -3,7 +3,7 @@ uid: learn.wwl.secure-identity-access
 metadata:
   title: 'Protect identity and access in Azure'
   description: 'Protect identity and access in Azure'
-  ms.date: 02/12/2025
+  ms.date: 01/23/2026
   author: wwlpublish
   ms.author: roberts
   ms.topic: learning-path
@@ -11,7 +11,7 @@ title: 'Protect identity and access in Azure'
 prerequisites: |
   -   None
 summary: |
-  Master identity and access management in Microsoft Entra ID, securing users, groups, and external identities, implementing authentication and authorization controls, and managing application access and security.
+  Learn how to protect identities and control access using Microsoft Entra ID. You learn to manage users, groups, and external identities, implement authentication and authorization controls, and secure application access across your organization.
 iconUrl: /training/achievements/generic-trophy.svg
 levels:
 - intermediate
@@ -23,7 +23,6 @@ products:
 - entra-id
 - entra-id-protection
 - entra-identity-governance
-- entra-permissions-management
 - entra-verified-id
 subjects:
 - identity-access

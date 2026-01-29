@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-containers-azure-container-apps.exercise-diagnose-fix-failing-deployment
+title: Exercise - Diagnose and fix a failing deployment
+metadata:
+  title: Exercise - Diagnose and Fix a Failing Deployment
+  description: Exercise - Diagnose and fix a failing deployment
+  ms.date: 01/26/2026
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: unit
+durationInMinutes: 30
+content: |
+  [!include[](includes/7-exercise-diagnose-fix-failing-deployment.md)]

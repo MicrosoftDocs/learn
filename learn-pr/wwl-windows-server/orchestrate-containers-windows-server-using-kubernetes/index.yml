@@ -3,9 +3,9 @@ uid: learn.wwl.orchestrate-containers-windows-server-using-kubernetes
 metadata:
   title: Orchestrate containers on Windows Server using Kubernetes
   description: "Orchestrate containers on Windows Server using Kubernetes"
-  ms.date: 02/01/2025
+  ms.date: 01/23/2026
   author: wwlpublish
-  ms.author: tonyj
+  ms.author: robbarefoot
   ms.topic: module
   ms.service: windows-server 
 title: Orchestrate containers on Windows Server using Kubernetes

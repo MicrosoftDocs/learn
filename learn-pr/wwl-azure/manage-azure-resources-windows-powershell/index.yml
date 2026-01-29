@@ -3,9 +3,9 @@ uid: learn.wwl.manage-azure-resources-windows-powershell
 metadata:
   title: Manage Azure resources with Windows PowerShell
   description: "Learn to manage Azure resources with Windows PowerShell."
-  ms.date: 03/22/2024
+  ms.date: 01/23/2026
   author: wwlpublish
-  ms.author: tonyj
+  ms.author: robbarefoot
   ms.topic: module-standard-task-based
   ms.custom:
   - N/A
@@ -64,4 +64,4 @@ units:
 - learn.wwl.manage-azure-resources-windows-powershell.knowledge-check
 - learn.wwl.manage-azure-resources-windows-powershell.summary
 badge:
-  uid: learn.wwl.manage-azure-resources-windows-powershell.badge
+  uid: learn.wwl.manage-azure-resources-windows-powershell.badge
