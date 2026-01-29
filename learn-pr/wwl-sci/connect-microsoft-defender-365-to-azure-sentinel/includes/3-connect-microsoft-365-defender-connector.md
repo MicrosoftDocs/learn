@@ -1,5 +1,3 @@
-## Microsoft Defender XDR integration
-
 The Microsoft Defender extended detection and response (XDR) connector enables you to stream all Microsoft Defender XDR incidents, alerts, and advanced hunting events into Microsoft Sentinel. The connector keeps incidents synchronized between both portals and enriches them with alerts from Microsoft Defender XDR's component services:
 
 - Microsoft Defender for Endpoint
@@ -20,9 +18,9 @@ Connecting the Microsoft Defender XDR connector is a prerequisite for configurin
 
 There are two methods to integrate Microsoft Defender XDR with Microsoft Sentinel:
 
-1. **Defender portal integration**: If you onboard Microsoft Sentinel to the Defender portal and are licensed for Defender XDR, Microsoft Sentinel is automatically connected to Defender XDR. The data connector for Defender XDR is automatically set up for you. This provides a unified security operations experience directly in the Microsoft Defender portal.
+**Defender portal integration**: If you onboard Microsoft Sentinel to the Defender portal and are licensed for Defender XDR, Microsoft Sentinel is automatically connected to Defender XDR. The data connector for Defender XDR is automatically set up for you. This provides a unified security operations experience directly in the Microsoft Defender portal.
 
-2. **Azure portal integration**: If you want to sync Defender XDR data to Microsoft Sentinel in the Azure portal, you must enable the Microsoft Defender XDR connector in Microsoft Sentinel.
+**Azure portal integration**: If you want to sync Defender XDR data to Microsoft Sentinel in the Azure portal, you must enable the Microsoft Defender XDR connector in Microsoft Sentinel.
 
 ## [Defender portal integration](#tab/defender-portal-integration)
 
