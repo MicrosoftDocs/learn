@@ -82,4 +82,4 @@ For example, a policy might apply to browser-based AI tools while allowing appro
 
 Rather than blocking entire categories of activity, deliberate scoping helps ensure policies address risky behavior without preventing acceptable use.
 
-With scope defined, the next step is deciding how the policy should respond when risky activity occurs.
+Once scope is set, enforcement choices determine whether protection guides behavior or disrupts it.

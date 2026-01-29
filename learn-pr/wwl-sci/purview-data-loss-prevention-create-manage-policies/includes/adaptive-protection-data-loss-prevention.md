@@ -59,3 +59,4 @@ Extending DLP with adaptive behavior makes sense when:
 - Static policies no longer scale with real usage patterns
 
 When applied intentionally, risk-based behavior extends DLP capabilities without sacrificing clarity or control.
+
