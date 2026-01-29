@@ -21,7 +21,6 @@ roles:
 products:
 - azure
 - azure-key-vault
-- azure-log-analytics
 - azure-monitor
 - azure-portal
 - azure-private-link
@@ -36,7 +35,6 @@ modules:
 - learn.wwl.examine-defender-cloud-regulatory-compliance-standards
 - learn.wwl.enable-defender-cloud-azure-subscription
 - learn.wwl.filter-network-traffic-network-security-group-using-azure-portal
-- learn.wwl.create-log-analytics-workspace-microsoft-defender-cloud
 - learn.wwl.configure-integrate-analytics-agent-defender-cloud
 - learn.wwl.just-in-time-access
 - learn.wwl.configure-azure-key-vault-networking-settings
