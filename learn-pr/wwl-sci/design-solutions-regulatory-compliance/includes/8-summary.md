@@ -22,6 +22,3 @@ As Contoso's security architect, you now have the knowledge to design a comprehe
 - [Regulatory compliance in Microsoft Defender for Cloud](/azure/defender-for-cloud/regulatory-compliance-dashboard)
 - [Microsoft cloud security benchmark introduction](/security/benchmark/azure/introduction)
 - [Meet regulatory and compliance requirements - Zero Trust](/security/zero-trust/adopt/meet-regulatory-compliance-requirements)
-
-> [!NOTE]
-> This module contains AI-assisted content.
