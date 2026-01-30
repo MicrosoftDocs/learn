@@ -2,17 +2,17 @@
 uid: learn.spec-driven-development-github-spec-kit-microsoft-internal
 metadata:
   title: Implement Spec-Driven Development using the GitHub Spec Kit
-  description: "Implement the Spec-Driven Development methodology using GitHub Spec Kit and GitHub Copilot in Visual Studio Code. Training covers a brownfield scenario for enterprise developers, emphasizing intent-first philosophy with living specifications."
+  description: "Implement the spec-driven development methodology using GitHub Spec Kit and GitHub Copilot in Visual Studio Code. Training covers a brownfield scenario for enterprise developers, emphasizing intent-first philosophy with living specifications."
   ms.date: 1/28/2026
   author: chrishowd
   ms.author: cahowd
   ms.topic: module-standard-task-based # Please don't edit, used for our analytics
   ms.service: github-copilot
 title: Implement spec-driven development using the GitHub Spec Kit
-summary: "Implement the Spec-Driven Development methodology using GitHub Spec Kit and GitHub Copilot in Visual Studio Code. Training covers a brownfield scenario for enterprise developers, emphasizing intent-first philosophy with living specifications."
+summary: "Implement the spec-driven development methodology using GitHub Spec Kit and GitHub Copilot in Visual Studio Code. Training covers a brownfield scenario for enterprise developers, emphasizing intent-first philosophy with living specifications."
 abstract: |
   By the end of this module, you're able to:
-    - Explain Spec-Driven Development principles and why they benefit large-scale enterprise projects (upfront clarity, fewer regressions, easier maintenance).
+    - Explain spec-driven development methodology and why it benefits large-scale enterprise projects (upfront clarity, fewer regressions, easier maintenance).
     - Implement the GitHub Spec Kit and GitHub Copilot in Visual Studio Code to generate project artifacts (specifications, plans, tasks) aligned with enterprise development standards.
     - Apply the GitHub Spec Kit in an Azure-integrated scenario, encoding internal engineering guidelines (security, performance, compliance) in a project "Constitution" and ensuring generated plans adhere to these constraints.
     - Execute a spec-driven workflow to build a new feature, from spec creation through automated code generation and iteration.
@@ -20,6 +20,8 @@ abstract: |
 prerequisites: |
   - Experience using GitHub Copilot in Visual Studio Code.
   - Experience developing applications.
+  - General understanding of spec-driven development is recommended.
+  - Familiarity with GitHub Spec Kit is recommended.
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
   - intermediate

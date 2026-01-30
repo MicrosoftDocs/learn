@@ -10,17 +10,13 @@ The plan.md file serves as your design document, bridging the gap between high-l
 - **Constitution verification**: Explicit check that proposed solutions comply with project principles.
 - **Assumptions and open questions**: Documentation of assumptions and unresolved questions.
 
-This separation of concerns is fundamental—specifications remain stable and focused on "what," while plans can evolve as you experiment with different "how" approaches. If you later switch technologies, you update plan.md while spec.md remains largely unchanged.
-
 With these fundamentals in mind, let's explore advanced planning considerations for enterprise development.
 
-## Examine the purpose of a technical plan
+## Separation of concerns - spec versus plan
 
-The plan.md file serves as your design document. It bridges the gap between high-level requirements in spec.md and the concrete implementation tasks that follow. While the specification remains stable and focused on "what," the plan can evolve as you experiment with different "how" approaches.
+The separation of concerns between specification and technical plan is crucial. While the specification remains stable and focused on "what," the plan can evolve as you experiment with different "how" approaches.
 
-This separation of concerns is fundamental to spec-driven development. If you later switch from one technology to another—say, moving from Azure Blob Storage to Azure Files—you update plan.md while spec.md remains largely unchanged. The feature requirements aren't changed; only the implementation approach is changed.
-
-For the document upload feature, the specification defines user requirements: file size limits, supported formats, upload feedback, and access controls. The plan translates these requirements into concrete decisions: which Azure storage service to use, how to structure the API, which authentication mechanism to implement, and how to validate files.
+Suppose your specification requires a document upload feature for an internal employee portal. The spec defines user requirements: file size limits, supported formats, upload feedback, and access controls. The technical plan translates these requirements into concrete architectural decisions: which Azure storage service to use, how to structure the API, which authentication mechanism to implement, and how to validate files. If you decide to switch from one technology to another, such as moving from Azure Blob Storage to Azure Files, you update plan.md while spec.md remains largely unchanged. The feature requirements aren't changed; only the implementation approach is changed.
 
 ## Examine plan structure and content
 
