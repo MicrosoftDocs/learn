@@ -1,100 +1,82 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.design-solutions-identity-access-management.knowledge-check
-title: Module assessment
+title: Knowledge check
 metadata:
-  title: Module assessment
-  description: "Knowledge check for the module on design solutions for identity and access management."
-  ms.date: 09/26/2024
+  title: Knowledge check
+  description: Knowledge check for identity and access management security design.
+  ms.date: 01/30/2026
   author: ceperezb
   ms.author: ceperezb
   ms.topic: unit
-  module_assessment: true
 durationInMinutes: 5
-###########################################################################
-###
-### General guidance (https://review.learn.microsoft.com/learn-docs/docs/id-guidance-knowledge-check)
-###  - Questions are complete sentences ending with a question mark
-###  - No true/false questions
-###  - 3 answers per question
-###  - All answers about the same length
-###  - Numeric answers listed in sorted order
-###  - No "All of the above" and/or "None of the above" as answer choices
-###  - No "Not" or "Except" in questions
-###  - No second person ("you") in the questions or answers
-###  - Provide a meaningful explanation for both correct and incorrect answers
-###
-###########################################################################
 content: |
+  [!include[](includes/8-knowledge-check.md)]
 quiz:
+  title: Check your knowledge
   questions:
-    - content: "What is Conditional Access in Microsoft Entra ID?"
-      choices:
-        - content: "A feature that allows users to bypass security policies."
-          isCorrect: false
-          explanation: "Conditional Access applies controls based on specific conditions, including user, location, device, and application state. It restricts user access until they have met those conditions."
-          
-        - content: "An identity-based security model that enables customers to control access to applications and resources."
-          isCorrect: true
-          explanation: "Conditional Access grants or denies application access to users by requiring multifactor authentication or blocking access when the specified conditions are not met."
-          
-        - content: "A type of user authentication specific to external identities."
-          isCorrect: false
-          explanation: "Conditional Access is not a type of user authentication but a set of access controls designed to improve security."
-
-        - content: "An automated tool for managing user privileges within an organization."
-          isCorrect: false
-          explanation: "Conditional Access defines user-specific access policies but does not manage user privileges."
-          
-    - content: "What is Continuous Access Evaluation in Microsoft Entra ID?"
-      choices:
-        - content: "A feature that automatically enforces Azure Key Vault key rotation policies."
-          isCorrect: false
-          explanation: "Continuous Access Evaluation constantly evaluates conditions specified in Conditional Access policies, ensuring continued compliance. It has no direct relationship with Key Vault."
-        
-        - content: "A security model designed to control user access to Microsoft Entra ID-managed services."
-          isCorrect: false
-          explanation: "Continuous Access Evaluation is one component of Microsoft's Zero Trust Strategy, which is designed to mitigate risks across all domains, including mobile devices."
-        
-        - content: "A mechanism for enforcing Conditional Access policies in almost real-time."
-          isCorrect: true
-          explanation: "Continuous Access Evaluation evaluates Conditional Access policies every time a request is made, allowing for swift and accurate responses to changes in the access control environment."
-        
-        - content: "A method for detecting rogue devices connecting to a network."
-          isCorrect: false
-          explanation: "Continuous Access Evaluation assesses whether user requests meet the specified conditions set forth in Conditional Access policies, but it does not detect rogue devices connecting to a network."
-    
-    - content: "What is External Identities in Microsoft Entra ID?"
-      choices:
-        - content: "A set of tools for managing conditional access policies for partners and customers."
-          isCorrect: false
-          explanation: "External Identity tools are designed to support B2B scenarios to simplify the management of policies related to guests, partners, and vendors accessing shared resources."
-        
-        - content: "A system for managing user accounts within an organization."
-          isCorrect: false
-          explanation: "External Identities offers the ability to create and manage identities for users outside an organization in order to provide partner and customer access to assigned resources."
-        
-        - content: "A set of tools for managing user accounts and access for non-employees or guests that need to access organizational assets."
-          isCorrect: true
-          explanation: "External identities enable secure collaboration between external users like customers, business partners, or vendors and internal teams while guarding against unauthorized data access."
-        
-        - content: "An automatic threat detection system that detects abnormal behavior patterns in user accounts."
-          isCorrect: false
-          explanation: "External Identities provides capabilities around governance, user access, authentication, and identity protection, but does not include an automatic threat detection system."
-
-    - content: "What is Azure Key Vault?"
-      choices:
-        - content: "A password manager intended for personal use."
-          isCorrect: false
-          explanation: "Azure Key Vault is a cloud-based service that safeguards cryptographic keys and secrets used by cloud apps and services. It is an enterprise-level platform, not a password manager."
-        
-        - content: "A solution for automating data encryption in cloud environments."
-          isCorrect: false
-          explanation: "Azure Key Vault does provide encryption services, but its primary function is to protect cryptographic keys and sensitive information."
-        
-        - content: "A cloud service that stores secrets, such as passwords, connection strings, and API keys."
-          isCorrect: true
-          explanation: "Azure Key Vault provides secure storage for secret data and credentials avoiding the need to embed them in code or configuration file."
-        
-        - content: "A cloud service that manages Active Directories for organizations."
-          isCorrect: false
-          explanation: "Azure Key Vault does not manage Active Directories. It provides key and secret management services for cloud applications and services."  
+  - content: A security architect is designing identity infrastructure for an organization that has on-premises Active Directory and needs to enable single sign-on to Microsoft 365 and Azure resources. Which Microsoft Entra component should they implement?
+    choices:
+    - content: Microsoft Entra External ID
+      isCorrect: false
+      explanation: Microsoft Entra External ID is for external identities such as B2B guests and customers, not for synchronizing internal employee accounts from on-premises Active Directory.
+    - content: Microsoft Entra Domain Services
+      isCorrect: false
+      explanation: Microsoft Entra Domain Services provides managed domain services in Azure but doesn't synchronize on-premises AD with Microsoft Entra ID.
+    - content: Microsoft Entra Connect Sync
+      isCorrect: true
+      explanation: Microsoft Entra Connect Sync synchronizes on-premises Active Directory identities to Microsoft Entra ID, enabling single sign-on to cloud resources while maintaining on-premises AD as the authoritative source.
+  - content: An organization is building a consumer-facing mobile application and needs to provide branded sign-in experiences with self-service registration for millions of users. These users should not appear in the organization's workforce directory. Which Microsoft Entra External ID configuration should the security architect recommend?
+    choices:
+    - content: B2B collaboration in the workforce tenant
+      isCorrect: false
+      explanation: B2B collaboration adds guest users to your workforce directory alongside employees. It's designed for partner collaboration, not consumer-scale applications with millions of users.
+    - content: External tenant with CIAM capabilities
+      isCorrect: true
+      explanation: An external tenant is configured specifically for consumer and business customer scenarios. It isolates customer identities from your workforce directory, supports custom branding, and scales to millions of users.
+    - content: Cross-tenant access settings with automatic redemption
+      isCorrect: false
+      explanation: Cross-tenant access settings control B2B collaboration between Microsoft Entra organizations, not consumer application scenarios requiring self-service registration and custom branding.
+  - content: An organization wants to implement near real-time enforcement of access policy changes and immediate token revocation when user accounts are disabled. Which capability should the security architect recommend?
+    choices:
+    - content: Conditional Access with shorter token lifetimes
+      isCorrect: false
+      explanation: Shorter token lifetimes provide faster enforcement but still leave a gap between policy changes and enforcement. Continuous Access Evaluation provides near real-time enforcement.
+    - content: Continuous Access Evaluation (CAE)
+      isCorrect: true
+      explanation: CAE enables near real-time enforcement when critical events occur, such as account disablement, password changes, or risk elevation, without waiting for token expiration.
+    - content: Microsoft Entra Identity Protection risk policies
+      isCorrect: false
+      explanation: Identity Protection detects risky sign-ins and users but doesn't provide near real-time token revocation for critical events like account disablement.
+  - content: A security architect is validating Conditional Access alignment with Zero Trust. Which of the following represents a violation of Zero Trust principles?
+    choices:
+    - content: MFA required only for users with administrative roles
+      isCorrect: true
+      explanation: Zero Trust's "verify explicitly" principle requires verifying all users, not just administrators. MFA should be required for all users to properly implement Zero Trust.
+    - content: Device compliance required for corporate resource access
+      isCorrect: false
+      explanation: Requiring device compliance supports explicit verification by evaluating device state before granting access, which aligns with Zero Trust principles.
+    - content: Risk-based policies that block access when user risk is elevated
+      isCorrect: false
+      explanation: Risk-based policies support the "assume breach" principle by responding to detected threats, which aligns with Zero Trust.
+  - content: Which Microsoft solution provides threat detection for on-premises Active Directory Domain Services, including detection of credential theft attacks like pass-the-hash and golden ticket attacks?
+    choices:
+    - content: Microsoft Defender for Cloud
+      isCorrect: false
+      explanation: Microsoft Defender for Cloud focuses on cloud workload protection, not on-premises Active Directory threat detection.
+    - content: Microsoft Entra Identity Protection
+      isCorrect: false
+      explanation: Microsoft Entra Identity Protection detects risky sign-ins and users in Microsoft Entra ID, not on-premises Active Directory threats.
+    - content: Microsoft Defender for Identity
+      isCorrect: true
+      explanation: Microsoft Defender for Identity monitors on-premises Active Directory and detects credential theft attacks, lateral movement, and domain dominance attempts.
+  - content: A security architect needs to store cryptographic keys for encrypting data in Azure Storage with customer-managed keys. The organization requires FIPS 140-2 Level 3 compliance and full control over the HSM. Which Azure Key Vault tier should they select?
+    choices:
+    - content: Standard tier with software-protected keys
+      isCorrect: false
+      explanation: Standard tier uses software-protected keys and doesn't meet FIPS 140-2 Level 3 compliance requirements.
+    - content: Premium tier with HSM-protected keys
+      isCorrect: false
+      explanation: Premium tier provides HSM-protected keys with FIPS 140-2 Level 2 compliance, not Level 3.
+    - content: Managed HSM
+      isCorrect: true
+      explanation: Managed HSM provides single-tenant HSM with FIPS 140-2 Level 3 compliance and full customer control over HSM administration.
