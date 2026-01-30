@@ -26,7 +26,7 @@ Conditional Access policies evaluate multiple signals to determine the risk leve
 - **User and group membership** - Who is requesting access
 - **Application being accessed** - What resource is the target
 - **Device state** - Is the device compliant, hybrid joined, or managed
-- **Location** - Where is the request originating (IP ranges, countries, named locations)
+- **Location** - Where is the request originating (IP ranges, countries/regions, named locations)
 - **Client application** - Modern authentication or legacy protocols
 - **Sign-in risk** - Real-time risk assessment from Identity Protection
 - **User risk** - Aggregate risk level based on past behavior

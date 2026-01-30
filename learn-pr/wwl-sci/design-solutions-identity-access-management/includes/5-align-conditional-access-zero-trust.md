@@ -36,7 +36,7 @@ Conditional Access should validate device state before granting access:
 Network location provides context for risk assessment:
 
 - Define named locations for corporate networks and trusted IP ranges
-- Block access from countries where your organization doesn't operate
+- Block access from countries/regions where your organization doesn't operate
 - Require additional controls for access from untrusted networks
 
 ### Application and risk signals
