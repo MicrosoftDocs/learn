@@ -93,4 +93,4 @@ Frequent alerts don't automatically indicate failure. In many cases, they highli
 
 Viewed this way, alerts act as feedback rather than punishment. They help guide thoughtful updates that improve protection while minimizing disruption.
 
-Understanding how to interpret and respond to alerts is the next step in managing DLP effectively.
+When static rules no longer scale with behavior, enforcement needs additional context.

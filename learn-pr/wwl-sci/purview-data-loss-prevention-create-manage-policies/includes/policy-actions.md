@@ -71,4 +71,4 @@ Patterns in justifications can help answer questions like:
 
 Using this feedback helps improve policy quality over time.
 
-With actions defined, the policy is ready to be validated and refined before enforcement.
+Any action choice carries assumptions, and those assumptions need to be tested before enforcement.
