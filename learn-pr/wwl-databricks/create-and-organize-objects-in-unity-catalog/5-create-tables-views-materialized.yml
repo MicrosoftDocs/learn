@@ -4,7 +4,7 @@ title: Create tables and views
 metadata:
   title: Create Tables and Views
   description: Learn how to create managed and external tables, standard and dynamic views, and materialized views in Unity Catalog for efficient data organization and query optimization.
-  ms.date: 12/07/2025
+  ms.date: 01/30/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit

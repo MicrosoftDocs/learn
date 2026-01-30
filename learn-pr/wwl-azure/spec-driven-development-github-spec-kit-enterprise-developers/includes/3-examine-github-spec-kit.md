@@ -1,11 +1,11 @@
-GitHub Spec Kit is an open-source toolkit that enables spec-driven development by integrating specifications with AI coding assistants. Before exploring advanced features, let's review the foundational concepts.
+GitHub Spec Kit is an open-source toolkit that enables spec-driven development (SDD) by integrating specifications with AI coding assistants. Before exploring advanced features, let's review the foundational concepts.
 
 ## Review GitHub Spec Kit basics
 
 GitHub Spec Kit addresses a fundamental challenge in AI-assisted development: maintaining context and consistency across multiple interactions with coding assistants. It provides three essential capabilities:
 
-- **Persistent artifacts**: Specifications, plans, and tasks are stored as Markdown files in your repository.
-- **Standardized workflow**: A defined process guides you through specification, planning, task breakdown, and implementation.
+- **Persistent artifacts**: Specifications, plans, and tasks are stored as markdown files in your repository.
+- **Standardized workflow**: A defined process guides you through the four SDD phases: specification, planning, task breakdown, and implementation.
 - **Reusable commands**: Built-in slash commands encapsulate best-practice prompting patterns.
 
 ### Core components
@@ -14,9 +14,9 @@ GitHub Spec Kit implements the following core components:
 
 | Component | Purpose |
 |-----------|---------|
-| `specify` CLI | Initializes and manages spec-driven projects |
-| Markdown artifact files | constitution.md, spec.md, plan.md, tasks.md drive development |
-| Slash commands | `/speckit.specify`, `/speckit.plan`, `/speckit.tasks`, `/speckit.implement` |
+| `specify` CLI | Initializes and manages spec-driven projects. |
+| Markdown artifact files | `constitution.md`, `spec.md`, `plan.md`, `tasks.md` drive development. |
+| Slash commands | `/speckit.specify`, `/speckit.plan`, `/speckit.tasks`, `/speckit.implement` invoke GitHub Spec Kit workflows. |
 
 ### AI agents
 

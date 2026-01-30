@@ -39,8 +39,8 @@ For enterprise developers, SDD offers the following benefits: consistent alignme
 
 While SDD excels at greenfield development, enterprise developers often work with existing codebases. When adding features to established systems:
 
-- Your **constitution** documents existing architectural patterns and constraints
-- Feature **specifications** acknowledge existing infrastructure and integration points
-- **Plans** show how new features integrate with current architecture rather than proposing isolated implementations
+- Your **constitution** documents existing architectural patterns and constraints.
+- Feature **specifications** acknowledge existing infrastructure and integration points.
+- **Plans** show how new features integrate with current architecture rather than proposing isolated implementations.
 
 This module focuses on applying SDD with GitHub Spec Kit to enhance existing enterprise applications—adding sophisticated features while maintaining consistency with established patterns and organizational standards.

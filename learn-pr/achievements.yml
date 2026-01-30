@@ -7610,6 +7610,21 @@ achievements:
   title: Describe Microsoft Entra Verified ID concepts
   summary: Learn the core concepts of decentralized identities and Microsoft Entra Verified ID.
   iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.powershell.connect-commands.badge
+  type: badge 
+  title: Connect commands into a pipeline
+  summary: In this module, you'll learn how to connect commands into a pipeline. You'll also learn about _filtering left_, _formatting right_, and other important principles. 
+  iconUrl: /training/achievements/powershell/connect-commands.svg
+- uid: learn.languages.powershell-write-first.badge
+  type: badge 
+  title: Write your first PowerShell code
+  summary: In this module, you begin learning the basics of programming by writing and running code in PowerShell.
+  iconUrl: /training/achievements/powershell/powershell-write-first-code.svg
+- uid: learn.powershell.scripting-with-powershell.badge
+  type: badge 
+  title: Introduction to scripting in PowerShell
+  summary: This module introduces you to scripting with PowerShell. It introduces various concepts to help you create script files and make them as robust as possible.
+  iconUrl: /training/achievements/powershell/scripting-with-powershell.svg  
 - uid: learn.azure.access-data-azure-blob-storage-multiple-protocols.badge
   type: badge 
   title: Access Data from Azure Blob Storage by Using Multiple Protocols
