@@ -4,7 +4,7 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: "Knowledge check for module on the topic: design solutions for regulatory requirements. Contains AI generated content."
-  ms.date: 3/14/2023
+  ms.date: 01/28/2026
   author: ceperezb
   ms.author: ceperezb
   ms.topic: unit
@@ -12,88 +12,88 @@ metadata:
 durationInMinutes: 5
 ###########################################################################
 ###
-### General guidance (https://review.learn.microsoft.com/learn-docs/docs/id-guidance-knowledge-check)
-###  - Questions are complete sentences ending with a question mark
-###  - No true/false questions
-###  - 3 answers per question
-###  - All answers about the same length
-###  - Numeric answers listed in sorted order
-###  - No "All of the above" and/or "None of the above" as answer choices
-###  - No "Not" or "Except" in questions
-###  - No second person ("you") in the questions or answers
-###  - Provide a meaningful explanation for both correct and incorrect answers
+### General guidance (https://review.learn.microsoft.com/learn-docs/docs/id-guidance-knowledge-check)
+###  - Questions are complete sentences ending with a question mark
+###  - No true/false questions
+###  - 3 answers per question
+###  - All answers about the same length
+###  - Numeric answers listed in sorted order
+###  - No "All of the above" and/or "None of the above" as answer choices
+###  - No "Not" or "Except" in questions
+###  - No second person ("you") in the questions or answers
+###  - Provide a meaningful explanation for both correct and incorrect answers
 ###
 ###########################################################################
 content: |
 quiz:
   questions:
-  - content: What is regulatory compliance?
+  - content: Which characteristic of AI systems creates unique compliance challenges that traditional software doesn't have?
     choices:
-    - content: A set of guidelines and standards that organizations must follow to protect sensitive information.
+    - content: AI produces probabilistic outputs that can vary for similar inputs, making behavior harder to predict and control
       isCorrect: true
-      explanation: Regulatory compliance refers to the set of guidelines and standards that organizations must follow to protect sensitive information, such as personal data, financial information, and health records.
-    - content: A tool used to manage data flow between different systems.
+      explanation: AI systems differ from traditional software because they produce probabilistic outputs, meaning similar inputs can generate different responses. This variability makes it harder to predict and control system behavior, creating unique compliance challenges around transparency and accountability.
+    - content: AI systems require more storage capacity than traditional applications for deployment
       isCorrect: false
-      explanation: A regulatory compliance isn't a tool used to manage data flow between different systems. It refers to the set of guidelines and standards that organizations must follow to protect sensitive information.
-    - content: A type of security threat that involves gaining unauthorized access to a network.
+      explanation: Storage capacity is an infrastructure consideration, not a compliance challenge unique to AI. The unique compliance challenges stem from AI characteristics like probabilistic outputs, training data dependencies, and opacity.
+    - content: AI applications run exclusively in cloud environments while traditional software runs on-premises
       isCorrect: false
-      explanation: Regulatory compliance isn't a type of security threat. It refers to the set of guidelines and standards that organizations must follow to protect sensitive information.
-    - content: A method of protecting data from external threats.
+      explanation: AI applications can run in cloud, on-premises, or hybrid environments just like traditional software. The unique compliance challenges relate to AI characteristics like probabilistic outputs and training data dependencies.
+    - content: AI systems always require higher network bandwidth than traditional applications
       isCorrect: false
-      explanation: Regulatory compliance isn't a method of protecting data from external threats. It refers to the set of guidelines and standards that organizations must follow to protect sensitive information.
-  - content: What is Microsoft Purview Compliance Manager?
+      explanation: Network bandwidth is an infrastructure consideration, not a compliance challenge unique to AI. The unique compliance challenges stem from AI characteristics like probabilistic outputs, training data dependencies, and system opacity.
+  - content: A security architect is designing privacy solutions using Microsoft Priva. Which Priva capability should be used to detect when personal data is stored in locations with overly broad access permissions?
     choices:
-      - content: A tool for analyzing and managing compliance with regulatory standards.
+      - content: Privacy Risk Management with data overexposure policies
         isCorrect: true
-        explanation: Microsoft Purview Compliance Manager is a tool for analyzing and managing compliance with regulatory standards. It provides a unified view of an organization's compliance posture and helps prioritize actions to meet compliance requirements.
-      - content: A tool for managing data flow between different systems.
+        explanation: Privacy Risk Management data overexposure policies detect when personal data is accessible to more people than necessary. These policies identify content containing personal data that is publicly accessible or shared broadly, then enable remediation through owner notifications or privacy team review.
+      - content: Subject Rights Requests with automated data discovery
         isCorrect: false
-        explanation: Microsoft Purview Compliance Manager isn't a tool for managing data flow between different systems. It is a tool for analyzing and managing compliance with regulatory standards.
-      - content: A tool for managing access to cloud resources.
+        explanation: Subject Rights Requests automates the process of responding to individual data access, deletion, or portability requests. It doesn't detect data overexposure. Use Privacy Risk Management data overexposure policies for that purpose.
+      - content: Privacy Assessments with project evaluation workflows
         isCorrect: false
-        explanation: Microsoft Purview Compliance Manager isn't a tool for managing access to cloud resources. It is a tool for analyzing and managing compliance with regulatory standards.
-      - content: A tool for monitoring network traffic for potential security threats.
+        explanation: Privacy Assessments provides structured workflows to evaluate privacy impact of new projects before implementation. It doesn't detect existing data overexposure. Use Privacy Risk Management data overexposure policies for that purpose.
+      - content: Consent Management with preference tracking
         isCorrect: false
-        explanation: Microsoft Purview Compliance Manager isn't a tool for monitoring network traffic for potential security threats. It is a tool for analyzing and managing compliance with regulatory standards.
-  - content: What is Microsoft Priva?
+        explanation: Consent Management tracks consent status and documents what individuals have consented to. It doesn't detect data overexposure. Use Privacy Risk Management data overexposure policies for that purpose.
+  - content: What regulatory template in Microsoft Purview Compliance Manager helps organizations assess AI management system requirements?
     choices:
-      - content: A service for managing privacy and data protection compliance.
+      - content: ISO/IEC 42001:2023 for AI management systems
         isCorrect: true
-        explanation: Microsoft Priva is a service for managing privacy and data protection compliance. It helps organizations manage compliance with privacy regulations, by providing tools for data classification, risk assessment, and compliance reporting.
-      - content: A tool for managing access to cloud resources.
+        explanation: ISO/IEC 42001:2023 is the AI management systems standard available in Compliance Manager. It helps organizations assess and implement controls for responsible AI governance, complementing other AI regulations like the EU AI Act and NIST AI RMF.
+      - content: ISO 27001:2022 for information security management
         isCorrect: false
-        explanation: Microsoft Priva isn't a tool for managing access to cloud resources. It is a service for managing privacy and data protection compliance.
-      - content: A tool for monitoring network traffic for potential security threats.
+        explanation: ISO 27001 is an information security management standard, not specific to AI systems. For AI management system requirements, organizations should use the ISO/IEC 42001:2023 template.
+      - content: PCI-DSS 4.0 for payment card data security
         isCorrect: false
-        explanation: Microsoft Priva isn't a tool for monitoring network traffic for potential security threats. It is a service for managing privacy and data protection compliance.
-      - content: A tool for managing data flow between different systems.
+        explanation: PCI-DSS focuses on payment card data security, not AI management. For AI-specific requirements, organizations should use templates like ISO/IEC 42001:2023 or the EU AI Act template.
+      - content: SOC 2 Type 2 for service organization controls
         isCorrect: false
-        explanation: Microsoft Priva isn't a tool for managing data flow between different systems. It is a service for managing privacy and data protection compliance.
-  - content: What is Azure Policy?
+        explanation: SOC 2 addresses service organization controls for security, availability, and confidentiality, not AI-specific requirements. For AI management system requirements, use the ISO/IEC 42001:2023 template.
+  - content: A security architect is designing Azure Policy solutions to prevent noncompliant resource configurations. Which policy effect should be used to block deployment of storage accounts without encryption?
     choices:
-      - content: A service for defining and enforcing policies for cloud resources.
+      - content: Deny effect to prevent resource creation or updates that violate the policy
         isCorrect: true
-        explanation: Azure Policy is a service for defining and enforcing policies for cloud resources. It helps organizations maintain compliance by ensuring that resources in their Azure environment are configured and managed in accordance with company policies, industry standards, and regulatory requirements.
-      - content: A tool for managing access to cloud resources.
+        explanation: The Deny effect is a preventive control that blocks noncompliant configurations before deployment. For requirements where noncompliance creates immediate risk, such as unencrypted storage accounts, the Deny effect prevents the violation from occurring.
+      - content: Audit effect to create warning events in the activity log for noncompliant resources
         isCorrect: false
-        explanation: Azure Policy isn't a tool for managing access to cloud resources. It is a service for defining and enforcing policies for cloud resources.
-      - content: A tool for analyzing and managing compliance with regulatory standards.
+        explanation: The Audit effect is a detective control that identifies noncompliant resources without blocking operations. It provides visibility but doesn't prevent noncompliant configurations. Use Deny when you need to block noncompliant deployments.
+      - content: Modify effect to add encryption properties to resources during creation
         isCorrect: false
-        explanation: Azure Policy isn't a tool for analyzing and managing compliance with regulatory standards. It is a service for defining and enforcing policies for cloud resources.
-      - content: A tool for monitoring network traffic for potential security threats.
+        explanation: The Modify effect is a corrective control that adds, updates, or removes resource properties. While useful for some scenarios, when the requirement is to block noncompliant configurations entirely, the Deny effect is the appropriate preventive control.
+      - content: DeployIfNotExists effect to deploy encryption settings when they don't exist
         isCorrect: false
-        explanation: Azure Policy isn't a tool for monitoring network traffic for potential security threats. It is a service for defining and enforcing policies for cloud resources.
-  - content: What is the Microsoft Defender for Cloud regulatory compliance dashboard?
+        explanation: DeployIfNotExists is a corrective control that deploys related resources when they don't exist. It's used for remediation scenarios, not for preventing noncompliant deployments. Use Deny to block noncompliant resource creation.
+  - content: When Microsoft Defender for Cloud is enabled, which security standard is automatically assigned as the default initiative?
     choices:
-      - content: A tool for monitoring compliance with industry standards and regulatory requirements.
+      - content: Microsoft cloud security benchmark (MCSB) v2 with 12 security control domains
         isCorrect: true
-        explanation: The Microsoft Defender for Cloud regulatory compliance dashboard is a tool for monitoring compliance with industry standards and regulatory requirements. It provides an overview of an organization's compliance posture across different services and workloads, and helps identify potential issues and prioritize remediation efforts.
-      - content: A tool for managing access to cloud resources.
+        explanation: When Defender for Cloud is enabled, MCSB v2 is automatically assigned as the default security initiative. It organizes security controls into 12 domains including Network Security, Identity Management, Data Protection, and Artificial Intelligence Security, providing immediate visibility into security posture.
+      - content: PCI-DSS 4.0 for payment card industry compliance
         isCorrect: false
-        explanation: The Microsoft Defender for Cloud regulatory compliance dashboard isn't a tool for managing access to cloud resources. It is a tool for monitoring compliance with industry standards and regulatory requirements.
-      - content: A tool for analyzing and managing compliance with regulatory standards.
+        explanation: PCI-DSS is not assigned by default. It must be explicitly added for organizations that process payment card data. MCSB v2 is the default standard automatically assigned when Defender for Cloud is enabled.
+      - content: ISO 27001:2022 for information security management
         isCorrect: false
-        explanation: The Microsoft Defender for Cloud regulatory compliance dashboard isn't a tool for analyzing and managing compliance with regulatory standards. It is a tool for monitoring compliance with industry standards and regulatory requirements.
-      - content: A tool for managing privacy and data protection compliance.
+        explanation: ISO 27001 is not assigned by default. It must be explicitly added when needed. MCSB v2 is the default standard automatically assigned, which then maps to frameworks including ISO 27001.
+      - content: NIST SP 800-53 for federal information systems
         isCorrect: false
-        explanation: The Microsoft Defender for Cloud regulatory compliance dashboard isn't a tool for managing privacy and data protection compliance. It is a tool for monitoring compliance with industry standards and regulatory requirements.
+        explanation: NIST SP 800-53 is not assigned by default. It must be explicitly added when needed. MCSB v2 is the default standard automatically assigned, which maps to multiple frameworks including NIST SP 800-53.

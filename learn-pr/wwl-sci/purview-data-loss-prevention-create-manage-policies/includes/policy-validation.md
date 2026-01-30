@@ -79,4 +79,4 @@ Once enforced, policies should continue to be reviewed and refined as:
 
 Viewing validation as the beginning of a lifecycle helps keep policies relevant and effective over time.
 
-With validation complete, you can move the policy into enforcement with confidence in how it behaves.
+Validation confirms readiness, but real environments continue to change once enforcement begins.

@@ -74,4 +74,4 @@ This includes workflows where:
 
 In these cases, detection quality matters more than aggressive enforcement. Clear, accurate detection helps ensure policies respond to real risk instead of incidental use.
 
-With detection defined, the next step is deciding where the policy should apply and who it should affect.
+With detection defined, scope becomes the deciding factor for whether those signals create insight or noise.

@@ -211,9 +211,11 @@ Understanding how policy type, location, detection, actions, and simulation mode
 
 ## Additional scenarios
 
-This walkthrough focuses on a file-based sharing scenario to show how DLP policy decisions appear during creation.
+This walkthrough uses a file-sharing scenario to illustrate how DLP policy decisions come together during creation.
 
-The Microsoft documentation includes additional guided scenarios that apply the same concepts to other locations and data types. These scenarios are most closely aligned with the topics covered here:
+The same decision process applies to other locations and data types. Microsoft documentation includes guided scenarios that show how these concepts translate to email, SharePoint, OneDrive, and other common risk patterns.
+
+These scenarios apply the same policy decision patterns in different contexts:
 
 - [Create and deploy data loss prevention policies](/purview/dlp-create-deploy-policy?azure-portal=true)
 - [Help prevent sharing sensitive items via SharePoint and OneDrive with external users](/purview/dlp-create-policy-spo-odb-external?azure-portal=true)

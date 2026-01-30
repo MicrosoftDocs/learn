@@ -1,4 +1,19 @@
-Technical plans provide architectural direction, but implementation requires concrete, actionable steps. GitHub Spec Kit's task generation transforms your plan into a structured checklist that guides systematic development and enables progress tracking.
+Technical plans provide architectural direction, but implementation requires concrete, actionable steps. This unit covers advanced task generation and management techniques for enterprise scenarios.
+
+## Review task fundamentals
+
+The `/speckit.tasks` command converts high-level architectural decisions into specific work items in the tasks.md file. Each task represents a discrete unit of work that can be implemented, tested, and verified independently.
+
+Key characteristics of well-scoped tasks:
+
+- **Actionable**: Clearly states what needs to be done.
+- **Testable**: Verification of completion is straightforward.
+- **Independent**: Can be completed without waiting for unrelated work.
+- **Time-bounded**: Can be completed in a reasonable timeframe (hours to a day).
+
+### Phase-based organization
+
+Complex features benefit from organizing tasks into phases. For example: Setup, Foundation, Core Functionality, UI/Integration, Security, and Testing. Each phase represents a logical grouping that builds toward a milestone.
 
 ## Benefits of task breakdown
 
@@ -7,18 +22,6 @@ The `/speckit.tasks` command converts high-level architectural decisions into sp
 Task breakdowns serve multiple purposes beyond just organizing work. They help the AI generate focused code for specific objectives rather than attempting to implement entire features in single operations. They create natural verification points where you can test partial implementations before proceeding. They enable accurate progress tracking by showing exactly what's complete and what remains. They facilitate team coordination by making dependencies explicit.
 
 For the document upload feature, the plan describes the overall architecture and technology choices. The task list translates architectural decisions into specific actions: create a database table, implement an API endpoint, build a React component, add validation logic, write tests. Each task is small enough to complete in a reasonable timeframe while large enough to represent meaningful progress.
-
-## Generate tasks using /speckit.tasks
-
-GitHub Spec Kit generates task lists through the `/speckit.tasks` command in GitHub Copilot Chat. This command processes both spec.md and plan.md to produce a comprehensive, ordered list of implementation tasks.
-
-The AI analyzes the specification to understand what needs to be built, reviews the plan to understand the architectural approach, and generates tasks that bridge the gap between these documents and actual code. The resulting tasks.md file contains numbered or bulleted tasks, often organized into phases for complex features.
-
-### Invoke the task generation command
-
-Open GitHub Copilot Chat in Visual Studio Code and enter `/speckit.tasks`. GitHub Copilot processes the specification and plan to generate a structured task list. The generation process typically completes in a few moments, producing a comprehensive breakdown of implementation work.
-
-The task list automatically inherits context from your specification and plan. If the plan specifies "use Azure Blob Storage," the generated tasks include specific steps for configuring blob storage connections, implementing upload logic, and handling storage errors.
 
 ## Examine task structure and organization
 
@@ -36,7 +39,7 @@ For the document upload feature, a typical phase structure might include:
     - Create the DocumentMetadata table in SQL database with appropriate schema.
     - Add the Azure.Storage.Blobs NuGet package to the back-end project.
     - Create the DocumentService class that encapsulates storage operations.
-    
+
 - **Phase 2: Core Upload Functionality**
 
     - Implement POST /api/documents/upload endpoint in DocumentsController.
@@ -44,7 +47,7 @@ For the document upload feature, a typical phase structure might include:
     - Implement blob storage upload method with error handling.
     - Save document metadata to database after successful upload.
     - Return upload result with document ID and URL to client.
-    
+
 - **Phase 3: Front-end Implementation**
 
     - Create DocumentUpload React component with file input.
@@ -88,7 +91,7 @@ This task is specific about what to build (an endpoint), what it accepts (multip
 
 Here's an example of an insufficiently scoped task: "Make the upload work." This example provides no actionable guidance about what "work" means or what components are involved.
 
-Here'e and example of an overly prescriptive task: "On line 47 of DocumentsController.cs, add a method named UploadDocument with parameters (IFormFile file, string userId) and implement it using exactly these steps..." This task description removes developer agency and doesn't account for evolving code structure.
+Here's an example of an overly prescriptive task: "On line 47 of DocumentsController.cs, add a method named UploadDocument with parameters (IFormFile file, string userId) and implement it using exactly these steps..." This task description removes developer agency and doesn't account for evolving code structure.
 
 ### Task dependencies and sequencing
 
@@ -107,6 +110,18 @@ For the document upload feature, the logical sequence ensures:
 1. Testing happens after all implementation (depends on completed code).
 
 This task sequence allows continuous progress without waiting for unrelated work to complete.
+
+## Generate tasks using /speckit.tasks
+
+GitHub Spec Kit generates task lists through the `/speckit.tasks` command in GitHub Copilot Chat. This command processes both spec.md and plan.md to produce a comprehensive, ordered list of implementation tasks.
+
+The AI analyzes the specification to understand what needs to be built, reviews the plan to understand the architectural approach, and generates tasks that bridge the gap between these documents and actual code. The resulting tasks.md file contains numbered or bulleted tasks, often organized into phases for complex features.
+
+### Invoke the task generation command
+
+Open GitHub Copilot Chat in Visual Studio Code and enter `/speckit.tasks`. GitHub Copilot processes the specification and plan to generate a structured task list. The generation process typically completes in a few moments, producing a comprehensive breakdown of implementation work.
+
+The task list automatically inherits context from your specification and plan. If the plan specifies "use Azure Blob Storage," the generated tasks include specific steps for configuring blob storage connections, implementing upload logic, and handling storage errors.
 
 ## Review and validate the tasks list
 
@@ -181,7 +196,7 @@ Clear task definitions allow work distribution across multiple developers. The b
 
 Explicitly calling out task dependencies helps to prevent blocking. If Task B depends on Task A, ensure Task A is assigned and prioritized appropriately. Document completion criteria in tasks to ensure handoffs are clean.
 
-## Implement tasks using GitHub Spec Kit
+## Generate code using /speckit.implement
 
 The `/speckit.implement` command uses tasks.md to generate code systematically. Rather than attempting to implement entire features in one pass, the AI works through tasks sequentially. This approach produces more focused, correct code.
 
@@ -197,9 +212,9 @@ This command instructs the AI to focus on tasks T001 through T027, generating co
 
 ### Provide assistance during implementation
 
-The AI might require assistance or permission to proceed with certain tasks. For example, if a task requires building or running the app, the AI may prompt for confirmation before proceeding.
+The AI might require assistance or permission to proceed with certain tasks. For example, if a task requires building or running the app, the AI might prompt for confirmation before proceeding.
 
-In addition, the AI might discover a bug when testing the implementation of a task. Provide detailed information to help diagnose the issue.  You can also provide additional context or clarifications if the AI encounters ambiguities.
+In addition, the AI might discover a bug when testing the implementation of a task. Provide detailed information to help diagnose the issue. You can also provide extra context or clarifications if the AI encounters ambiguities.
 
 When prompted for assistance in the Chat view, a quick response helps to keep implementation moving smoothly.
 
@@ -211,7 +226,7 @@ After completing an implementation command, verify the results before proceeding
 
 As you progress through tasks, previously completed work provides context for subsequent tasks. The AI can reference earlier implementations when building related functionality, improving code quality and maintaining architectural consistency.
 
-## Manage task-related challenges
+## Manage task-related challenges during implementation
 
 Common challenges arise when managing implementation tasks.
 
