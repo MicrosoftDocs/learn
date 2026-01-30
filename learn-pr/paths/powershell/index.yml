@@ -32,6 +32,5 @@ modules:
 - learn.powershell.connect-commands
 - learn.languages.powershell-write-first
 - learn.powershell.scripting-with-powershell
-- learn.automate-azure-tasks-with-powershell
 trophy:
   uid: learn.powershell.powershell.trophy

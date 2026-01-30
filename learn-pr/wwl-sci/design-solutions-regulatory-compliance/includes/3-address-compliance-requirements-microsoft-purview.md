@@ -1,54 +1,114 @@
-[Microsoft Purview Compliance Manager](https://compliance.microsoft.com/compliancemanager) is a feature in the [Microsoft Purview compliance portal](https://go.microsoft.com/fwlink/p/?linkid=2077149) that helps you manage your organization’s multicloud compliance requirements with greater ease and convenience. Compliance Manager can help you throughout your compliance journey, from taking inventory of your data protection risks to managing the complexities of implementing controls, staying current with regulations and certifications, and reporting to auditors.
+Microsoft Purview provides a unified platform for data security, governance, and compliance. As a security architect, you design how Purview solutions work together to address the compliance requirements identified in your governance process—from data protection and privacy to AI governance and audit readiness.
 
-Compliance Manager helps simplify compliance and reduce risk by providing:
+## The Microsoft Purview portfolio
 
--   Pre-built assessments for common industry and regional standards and regulations, or custom assessments to meet your unique compliance needs (available assessments depend on your licensing agreement).
--   Workflow capabilities to help you efficiently complete your risk assessments through a single tool.
--   Detailed step-by-step guidance on suggested improvement actions to help you comply with the standards and regulations that are most relevant for your organization. For actions that are managed by Microsoft, you’ll see implementation details and audit results.
--   A risk-based compliance score to help you understand your compliance posture by measuring your progress in completing improvement actions.
+Microsoft Purview combines multiple solution areas to address compliance requirements across your organization's data estate:
 
-The Compliance Manager overview page shows your current compliance score, helps you see what needs attention, and guides you to key improvement actions. Below is an example of the overview page:
+| Solution Area | Purpose | Key Solutions |
+|--------------|---------|---------------|
+| **Data security** | Protect sensitive data across its lifecycle | Information Protection, Data Loss Prevention, Insider Risk Management |
+| **Data governance** | Manage and catalog data across your estate | Data Map, Unified Catalog |
+| **Data compliance** | Meet regulatory requirements and prepare for audits | Compliance Manager, Audit, eDiscovery, Records Management |
 
-:::image type="content" source="../media/compliance-manager-overview.png" alt-text="Screenshot showing Microsoft Purview Compliance Manager dashboard." lightbox="../media/compliance-manager-overview.png":::
+Understanding how these solutions map to specific compliance requirements helps you design an integrated architecture rather than deploying isolated tools.
 
-## Understanding your compliance score
+:::image type="content" source="../media/purview-compliance-dashboard.png" alt-text="Screenshot of the Microsoft Purview dashboard on the home page." lightbox="../media/purview-compliance-dashboard.png":::
 
-Compliance Manager awards you points for completing improvement actions taken to comply with a regulation, standard, or policy, and combines those points into an overall compliance score. Each action has a different impact on your score depending on the potential risks involved. Your compliance score can help prioritize which action to focus on to improve your overall compliance posture.
 
-Compliance Manager gives you an initial score based on the Microsoft 365 data protection baseline. This baseline is a set of controls that includes key regulations and standards for data protection and general data governance.
+## Addressing data protection requirements
 
-## Key elements: controls, assessments, templates, improvement actions
+Most compliance frameworks require organizations to identify, classify, and protect sensitive data. Purview Information Protection provides the foundation for these requirements.
 
-Compliance Manager uses several data elements to help you manage your compliance activities. As you use Compliance Manager to assign, test, and monitor compliance activities, it’s helpful to have a basic understanding of the key elements: controls, assessments, templates, and improvement actions.
+**Sensitive information types** identify regulated data like payment card numbers, health records, or personal identifiers using built-in patterns or custom definitions. **Trainable classifiers** extend this capability by learning to recognize sensitive content based on examples you provide—useful for organization-specific data like internal financial reports or proprietary designs.
 
-### Controls
+**Sensitivity labels** apply protection based on classification:
 
-A control is a requirement of a regulation, standard, or policy. It defines how you assess and manage system configuration, organizational process, and people responsible for meeting a specific requirement of a regulation, standard, or policy.
+- Encryption that travels with the document regardless of location
+- Access restrictions limiting who can view or edit content
+- Visual markings that remind users of data sensitivity
+- Automatic application based on detected sensitive content
 
-Compliance Manager tracks the following types of controls:
+When designing your labeling strategy, consider:
 
-1.  **Microsoft managed controls**: controls for Microsoft cloud services, which Microsoft is responsible for implementing
-2.  **Your controls**: sometimes referred to as customer managed controls, these are controls implemented and managed by your organization
-3.  **Shared controls**: these are controls that both your organization and Microsoft share responsibility for implementing
+- **Label taxonomy** - Design labels that align with your data classification policy and regulatory requirements
+- **Automatic vs. manual labeling** - Balance user autonomy with consistent protection for high-sensitivity data
+- **Scope and inheritance** - Define how labels apply across files, emails, containers, and schematized data
 
-### Assessments
+## Preventing unauthorized data sharing
 
-An assessment is grouping of controls from a specific regulation, standard, or policy. Completing the actions within an assessment help you meet the requirements of a standard, regulation, or law. For example, you may have an assessment that, when you complete all actions within it, helps to bring your Microsoft 365 settings in line with ISO 27001 requirements.
+Regulations often require controls to prevent unauthorized disclosure of sensitive information. **Microsoft Purview Data Loss Prevention (DLP)** monitors and controls how sensitive data is shared across Microsoft 365 services, endpoints, and cloud apps.
 
-Assessments have several components:
+Design your DLP policies to address specific regulatory requirements:
 
--   **In-scope services**: the specific set of Microsoft services applicable to the assessment
--   **Microsoft managed controls**: controls for Microsoft cloud services, which Microsoft implements on your behalf
--   **Your controls**: sometimes referred to as customer managed controls, these are controls implemented and managed by your organization
--   **Shared controls**: these are controls that both your organization and Microsoft share responsibility for implementing
--   **Assessment score**: shows your progress in achieving total possible points from actions within the assessment that are managed by your organization and by Microsoft
+- **Policy conditions** - Define what sensitive data to protect based on sensitive information types, labels, or content patterns
+- **Policy locations** - Specify where monitoring occurs (Exchange, SharePoint, OneDrive, Teams, endpoints, Defender for Cloud Apps)
+- **Policy actions** - Configure responses from audit-only monitoring to blocking with user override to complete restriction
 
-When creating assessments, you’ll assign them to a group. You can configure groups in whatever way is most logical for your organization. For example, you may group assessments by audit year, region, solution, teams within your organization, or some other way. Once you create groups, you can [filter your Compliance Manager dashboard](/microsoft-365/compliance/compliance-manager-setup?view=o365-worldwide#filtering-your-dashboard-view) to view your score by one or more groups.
+DLP integrates with your sensitivity labels, so protection can follow content based on its classification. This integration is particularly valuable for requirements that mandate different handling based on data sensitivity levels.
 
-### Templates
+## Supporting audit and investigation requirements
 
-Compliance Manager provides templates to help you quickly create assessments. You can modify these templates to create an assessment optimized for your needs. You can also build a custom assessment by creating a template with your own controls and actions. For example, you may want a template to cover an internal business process control, or a regional data protection standard that isn’t covered by one of our 325+ pre-built assessment templates.
+Compliance frameworks require organizations to maintain audit trails and respond to legal or regulatory inquiries. Purview provides several solutions for these requirements:
 
-### Improvement actions
+**Microsoft Purview Audit** captures user and admin activities across Microsoft 365 services. Design your audit strategy to:
 
-Improvement actions help centralize your compliance activities. Each improvement action provides recommended guidance that’s intended to help you align with data protection regulations and standards. Improvement actions can be assigned to users in your organization to perform implementation and testing work. You can also store documentation, notes, and record status updates within the improvement action.
+- Enable appropriate audit logging levels based on regulatory requirements
+- Configure retention periods that meet legal hold obligations
+- Establish processes for searching and exporting audit data for investigations
+
+**Microsoft Purview eDiscovery** helps you identify, preserve, collect, and export content for legal matters. For compliance purposes, design workflows that:
+
+- Create legal holds to preserve relevant content
+- Define search criteria that capture required data without over-collection
+- Export content in formats suitable for regulatory review
+
+**Microsoft Purview Records Management** applies retention and deletion policies to meet recordkeeping requirements. Consider how file plans, retention labels, and disposition reviews align with your regulatory obligations.
+
+## Managing insider risk
+
+Some regulations require controls to detect and respond to insider threats. **Microsoft Purview Insider Risk Management** uses signals from across Microsoft 365 and third-party systems to identify risky user activities.
+
+Design your insider risk program to:
+
+- Define policies aligned with your compliance objectives (data theft, security violations, policy violations)
+- Configure appropriate thresholds that balance detection sensitivity with investigation capacity
+- Integrate with your incident response processes for timely remediation
+
+## Addressing AI compliance requirements
+
+As discussed in the AI compliance considerations unit, organizations deploying AI face specific regulatory requirements around data protection, transparency, and governance. Purview provides capabilities specifically designed for AI scenarios:
+
+**Data Security Posture Management (DSPM)** provides visibility and control for both traditional applications and AI apps. Use DSPM to:
+
+- Discover sensitive data that may be exposed to AI applications
+- Monitor how AI apps access and process organizational data
+- Identify and remediate data security risks before they become compliance issues
+
+**Microsoft Purview for AI** extends data security protections to generative AI experiences:
+
+- Protect data used by Copilot experiences and custom AI agents
+- Apply sensitivity labels to AI-generated content
+- Prevent sensitive data from being shared inappropriately through AI interactions
+
+For organizations subject to AI-specific regulations like the EU AI Act or ISO 42001, **Compliance Manager** provides assessment templates that map Purview controls to these requirements.
+
+## Multicloud compliance with Compliance Manager
+
+Compliance Manager serves as the orchestration layer that brings together compliance data from across your environment. It integrates with Microsoft Defender for Cloud to assess compliance across Azure, AWS, and GCP.
+
+When designing your Compliance Manager implementation:
+
+- **Select relevant regulations** - Choose from over 360 templates including industry standards (PCI-DSS, HIPAA), regional requirements (CCPA, LGPD), and AI governance frameworks (EU AI Act, ISO 42001)
+- **Map controls to solutions** - Identify which Purview solutions address each control requirement
+- **Track improvement actions** - Assign and monitor remediation tasks across your compliance team
+- **Generate evidence** - Use automated assessments and manual documentation to build audit-ready compliance records
+
+## Design considerations for security architects
+
+When designing your Purview implementation for compliance:
+
+- **Start with requirements** - Map regulatory requirements to specific Purview capabilities before deploying solutions
+- **Design for integration** - Plan how Purview solutions work together (labels driving DLP, classification enabling records management)
+- **Automate where possible** - Use automatic classification, policy enforcement, and Defender for Cloud integration to reduce manual effort
+- **Plan for AI** - Include AI data protection in your architecture even if current AI adoption is limited
+- **Enable continuous monitoring** - Configure dashboards and alerts to detect compliance drift early

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-containers-azure-container-apps.health-probes
+title: Configure health probes and troubleshoot failures
+metadata:
+  title: Configure Health Probes and Troubleshoot Failures
+  description: Configure health probes and troubleshoot failures
+  ms.date: 01/26/2026
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/5-health-probes.md)]

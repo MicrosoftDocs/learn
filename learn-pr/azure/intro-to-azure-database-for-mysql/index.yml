@@ -10,7 +10,6 @@ metadata:
   ms.reviewer: maghan
   ms.topic: module-intro-to-product
   ms.service: azure-database-mysql
-  ms.subservice: flexible-server
 title: Introduction to Azure Database for MySQL
 summary: In this module, you'll learn about Azure Database for MySQL, a managed database as a service (DBaaS) offering that can handle mission-critical workloads with predictable performance and dynamic scalability.
 abstract: |
