@@ -6,7 +6,7 @@ This distinction matters. Trust in DSPM depends on understanding where AI assist
 
 DSPM uses AI capabilities like Security Copilot and embedded agents to help analyze information that would otherwise be difficult to interpret manually.
 
-These capabilities operate within the context DSPM already provides. They don't introduce new sources of authority or bypass existing controls. Instead, they help surface insights from posture data, objectives, and signals that are already available.
+These capabilities operate within DSPM’s posture and objectives, rather than alongside them. They don't introduce new sources of authority or bypass existing controls. Instead, they help surface insights from posture data, objectives, and signals that are already available.
 
 AI is used to support understanding, not to decide outcomes.
 
