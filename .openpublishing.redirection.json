@@ -62721,13 +62721,11 @@
       "redirect_document_id": false
     },
     {
-<<<<<<< HEAD
       "source_path": "learn-pr/paths/powershell/index.yml",
       "redirect_url": "https://learn.microsoft.com/en-us/training/browse/",
       "redirect_document_id": false
     },
     {   
-=======
       "source_path": "learn-pr/powershell/connect-commands/index.yml",
       "redirect_url": "https://learn.microsoft.com/powershell/scripting/learn/ps101/04-pipelines",
       "redirect_document_id": false
@@ -62868,7 +62866,6 @@
       "redirect_document_id": false
     },                                                  
     {
->>>>>>> 168a229306fff486f2f865756f7578a85fd2ee65
       "source_path": "learn-pr/azure/access-data-azure-blob-storage-multiple-protocols/index.yml",
       "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/data-lake-storage-multi-protocol-access",
       "redirect_document_id": false
