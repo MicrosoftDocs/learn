@@ -2,6 +2,8 @@ Let's examine how Unity Catalog manages query execution, with particular attenti
 
 ## The query lifecycle in Unity Catalog
 
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=02]
+
 The following diagram illustrates the overall flow of a query as it moves through different components in Unity Catalog.
 
 ![Diagram showing the query lifecycle in Unity Catalog.](../media/query-lifecycle-unity-catalog.png)
@@ -59,6 +61,8 @@ Unity Catalog enforces **row- and column-level filters** on the compute resource
 The filtered query result is returned from the compute resource to the calling user, job, or application.
 
 ## How queries work with Apache Hive
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=03]
 
 Unity Catalog was designed to streamline governance, but it also maintains compatibility with the legacy Hive metastore. When a workspace is assigned to a Unity Catalog metastore, Hive appears as a special catalog named **hive_metastore**. Tables stored there can still be queried by referencing this catalog in the namespace.
 

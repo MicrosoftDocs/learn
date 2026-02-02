@@ -4,7 +4,7 @@ title: Access Azure Key Vault secrets
 metadata:
   title: Access Azure Key Vault Secrets
   description: "Learn how to securely access Azure Key Vault secrets in Azure Databricks workflows using Key Vault-backed secret scopes."
-  ms.date: 12/07/2025
+  ms.date: 02/02/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit
