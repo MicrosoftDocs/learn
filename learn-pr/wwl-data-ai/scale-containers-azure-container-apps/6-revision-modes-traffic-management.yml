@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.scale-containers-azure-container-apps.revision-modes-traffic-management
+title: Choose and apply revision modes
+metadata:
+  title: Choose and Apply Revision Modes
+  description: Choose and apply revision modes in Azure Container Apps
+  ms.date: 01/26/2026
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/6-revision-modes-traffic-management.md)]

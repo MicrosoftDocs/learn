@@ -1,0 +1,51 @@
+### YamlMime:Module
+uid: learn.wwl.prompt-versioning-genaiops
+metadata:
+  title: Manage prompts for agents in Microsoft Foundry with GitHub
+  description: Learn how to manage prompts for agents in Microsoft Foundry using GitHub version control and collaboration features.
+  author: madiepev
+  ms.author: madiepev
+  ms.date: 01/07/2026
+  ms.service: azure-ai-services
+  ms.topic: module-standard-task-based
+  ms.custom: ai-learning-hub
+  ms.collection:
+    - wwl-ai-copilot
+title: Manage prompts for agents in Microsoft Foundry with GitHub
+summary: Learn how to manage AI prompts as versioned assets using GitHub. Apply software engineering best practices to create, test, and promote prompt versions used in Microsoft Foundry as part of a GenAIOps workflow.
+abstract: |
+  By the end of this module, you're able to:
+    - Apply version control principles to manage prompts as code assets.
+    - Understand how prompts integrate with Microsoft Foundry agents and versioning strategies.
+    - Design a GitHub repository structure for prompt versioning and collaboration.
+    - Develop a workflow for testing and deploying prompts safely.
+prerequisites: |
+  Before starting this module, you should be familiar with fundamental generative AI concepts and services in Azure. Consider completing the [Fundamentals of Generative AI](/training/modules/fundamentals-generative-ai/) module first.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+  - intermediate
+roles: 
+  - data-scientist
+  - ai-engineer
+  - devops-engineer
+  - developer
+products: 
+  - azure
+  - ai-services
+  - github
+subjects: 
+  - cloud-computing
+  - artificial-intelligence
+  - machine-learning
+  - devops
+units:
+- learn.wwl.prompt-versioning-genaiops.introduction
+- learn.wwl.prompt-versioning-genaiops.version-control-for-prompts
+- learn.wwl.prompt-versioning-genaiops.foundry-agents-prompt-versioning
+- learn.wwl.prompt-versioning-genaiops.github-repository-structure
+- learn.wwl.prompt-versioning-genaiops.prompt-workflow-development
+- learn.wwl.prompt-versioning-genaiops.exercise
+- learn.wwl.prompt-versioning-genaiops.knowledge-check
+- learn.wwl.prompt-versioning-genaiops.summary
+badge:
+  uid: learn.wwl.prompt-versioning-genaiops.badge

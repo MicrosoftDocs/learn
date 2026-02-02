@@ -1,30 +1,26 @@
-You've learned how to:
+In this module, you learned how to design identity and access management solutions that protect organizational resources while enabling productivity. Security architects must balance strong security controls with usability to create identity solutions that organizations will actually adopt.
 
-- Design cloud, hybrid, and multicloud access strategies.
-- Design a solution for Microsoft Entra ID, part of Microsoft Entra.
-- Design a solution for external identities.
-- Design modern authentication and authorization strategies.
-- Specify requirements to secure Active Directory Domain Services.
-- Design a solution to manage secrets, keys, and certificates.
+You learned how to:
 
-## Learn more with security documentation
+- Design access strategies for cloud, hybrid, and multicloud environments, including secure collaboration with external identities
+- Design modern authentication and authorization strategies aligned with Zero Trust principles
+- Design solutions for securing identity infrastructure, including Active Directory Domain Services and secrets management
 
-- [Azure identity and access management design area - Cloud Adoption Framework](/azure/cloud-adoption-framework/ready/landing-zone/design-area/identity-access)
-- [Identity decision guide](/azure/cloud-adoption-framework/decision-guides/identity/)
-- [What is Microsoft Entra Cloud Sync?](/entra/identity/hybrid/cloud-sync/what-is-cloud-sync)
-- [What is Microsoft Entra Domain Services?](/entra/identity/domain-services/overview)
-- [Microsoft Entra Connect and federation](/entra/identity/hybrid/connect/how-to-connect-fed-whatis)
-- [External Identities in Microsoft Entra ID - Microsoft Entra](/azure/active-directory/external-identities/external-identities-overview)
-- [Continuous access evaluation in Microsoft Entra ID - Microsoft Entra](/azure/active-directory/conditional-access/concept-continuous-access-evaluation)
-- [Conditional Access design principles and dependencies - Azure Architecture Center](/azure/architecture/guide/security/conditional-access-design)
-- [Deploy AD DS in an Azure virtual network - Azure Architecture Center](/azure/architecture/reference-architectures/identity/adds-extend-domain)
-- [Secure Microsoft Entra Domain Services](/azure/active-directory-domain-services/secure-your-domain)
-- [Overview of Key Management in Azure](/azure/security/fundamentals/key-management)
-- [Best practices for using Azure Key Vault](/azure/key-vault/general/best-practices)
-- [What is Azure Key Vault?](/azure/key-vault/general/basic-concepts)
+## Key takeaways
 
-## Learn more with reference architectures
+Identity security requires a comprehensive approach that addresses:
 
-- [Microsoft Entra security for AWS - Azure Architecture Center](/azure/architecture/reference-architectures/aws/aws-azure-ad-security)
+- **Cloud and on-premises integration** - Microsoft Entra Connect Sync enables hybrid scenarios while maintaining security boundaries
+- **External collaboration** - B2B collaboration and CIAM require different tenant configurations and security controls
+- **Adaptive access control** - Conditional Access evaluates multiple signals to enforce appropriate controls based on context and risk
+- **Continuous verification** - CAE and Identity Protection enable real-time response to changing security conditions
+- **Credential protection** - AD DS hardening and Key Vault work together to protect credentials throughout the environment
+- **Zero Trust principles** - All identity solutions should verify explicitly, enforce least privilege, and assume breach
 
+## Learn more
 
+- [Microsoft Entra ID documentation](/entra/identity/)
+- [Microsoft Entra Conditional Access](/entra/identity/conditional-access/)
+- [Microsoft Entra External ID](/entra/external-id/)
+- [Best practices for securing Active Directory](/windows-server/identity/ad-ds/plan/security-best-practices/best-practices-for-securing-active-directory)
+- [Azure Key Vault documentation](/azure/key-vault/)

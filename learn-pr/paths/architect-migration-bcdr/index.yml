@@ -33,6 +33,10 @@ subjects:
 modules:
 - learn.protect-on-premises-infrastructure-with-azure-site-recovery
 - learn.protect-virtual-machines-with-azure-backup
+<<<<<<< HEAD
 - learn.azure.app-service-scale-up-scale-out
+=======
+- learn.build-app-with-scale-sets
+>>>>>>> 42cb617cec6f2700442c0ce2393f680f0b469504
 trophy:
   uid: learn.architect-migration-bcdr.trophy

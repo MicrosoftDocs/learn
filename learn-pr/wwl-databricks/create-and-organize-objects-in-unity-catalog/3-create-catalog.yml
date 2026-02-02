@@ -4,7 +4,7 @@ title: Create catalog
 metadata:
   title: Create Catalog
   description: Learn how to create catalogs in Unity Catalog to organize data assets and enforce isolation across environments.
-  ms.date: 12/07/2025
+  ms.date: 01/30/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit
