@@ -15,7 +15,7 @@ You're developing a Student Grading application that automates the calculation o
 
     - Include extra credit assignment scores in the student's scores array.
     - Extra credit assignments are worth 10% of an exam score (when calculating the final numeric grade).
-    - Add extra credit assignment scores to the student's total exam score before calculating the final numeric grade.
+    - Add extra credit assignment scores to the student's total exam score before calculating the final numeric grade. Rounding errors are acceptable in calculations.
 
 - Your application needs to automatically assign letter grades based on the calculated final score for each student.
 - Your application needs to output/display each student’s name and formatted grade.

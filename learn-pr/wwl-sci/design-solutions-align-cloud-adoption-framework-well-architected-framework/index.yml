@@ -3,7 +3,7 @@ uid: learn.wwl.design-solutions-align-cloud-adoption-framework-well-architected-
 metadata:
   title: Design Security Solutions that Align with the Cloud Adoption Framework (CAF) and Well-Architected Framework (WAF)
   description: "You'll learn about the Cloud Adoption Framework (CAF) and Well-Architected Framework (WAF) and how you can use them to design more secure solutions."
-  ms.date: 07/30/2025
+  ms.date: 01/24/2026
   author: ceperezb
   ms.author: ceperezb
   ms.topic: module
@@ -35,13 +35,17 @@ subjects:
   - security
   - cloud-security
 units:
+- learn.wwl.design-solutions-align-cloud-adoption-framework-well-architected-framework.introduction
 - learn.wwl.design-solutions-align-cloud-adoption-framework-well-architected-framework.define-security-strategy
 - learn.wwl.design-solutions-align-cloud-adoption-framework-well-architected-framework.introduction-cloud-adoption-framework
 - learn.wwl.design-solutions-align-cloud-adoption-framework-well-architected-framework.cloud-adoption-framework-secure-methodology
+- learn.wwl.design-solutions-align-cloud-adoption-framework-well-architected-framework.cloud-adoption-framework-secure-ai
 - learn.wwl.design-solutions-align-cloud-adoption-framework-well-architected-framework.introduction-azure-landing-zones
 - learn.wwl.design-solutions-align-cloud-adoption-framework-well-architected-framework.design-security-with-azure-landing-zones
 - learn.wwl.design-solutions-align-cloud-adoption-framework-well-architected-framework.introduction-well-architected-framework
 - learn.wwl.design-solutions-align-cloud-adoption-framework-well-architected-framework.well-architected-framework-security-pillar
+- learn.wwl.design-solutions-align-cloud-adoption-framework-well-architected-framework.design-security-governance-strategy
+- learn.wwl.design-solutions-align-cloud-adoption-framework-well-architected-framework.design-devsecops-processes
 - learn.wwl.design-solutions-align-cloud-adoption-framework-well-architected-framework.knowledge-check
 - learn.wwl.design-solutions-align-cloud-adoption-framework-well-architected-framework.summary
 badge:
