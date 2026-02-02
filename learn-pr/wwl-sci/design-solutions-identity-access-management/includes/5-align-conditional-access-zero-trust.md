@@ -97,31 +97,36 @@ The assume breach principle acknowledges that compromise can occur and focuses o
 Use this checklist to validate your Conditional Access configuration against Zero Trust requirements:
 
 **Identity controls**
-- [ ] MFA required for all users
-- [ ] Legacy authentication blocked
-- [ ] Risk-based policies enabled
-- [ ] Phishing-resistant authentication for privileged accounts
+
+☐ MFA required for all users<br>
+☐ Legacy authentication blocked<br>
+☐ Risk-based policies enabled<br>
+☐ Phishing-resistant authentication for privileged accounts
 
 **Device controls**
-- [ ] Device compliance required for corporate resource access
-- [ ] Device filters configured for appropriate targeting
-- [ ] Unmanaged device access restricted appropriately
+
+☐ Device compliance required for corporate resource access<br>
+☐ Device filters configured for appropriate targeting<br>
+☐ Unmanaged device access restricted appropriately
 
 **Network controls**
-- [ ] Named locations defined for trusted networks
-- [ ] Geographic restrictions applied
-- [ ] Enhanced controls for external network access
+
+☐ Named locations defined for trusted networks<br>
+☐ Geographic restrictions applied<br>
+☐ Enhanced controls for external network access
 
 **Application controls**
-- [ ] Conditional Access App Control enabled for sensitive applications
-- [ ] Session controls configured appropriately
-- [ ] Application-specific policies for high-value targets
+
+☐ Conditional Access App Control enabled for sensitive applications<br>
+☐ Session controls configured appropriately<br>
+☐ Application-specific policies for high-value targets
 
 **Monitoring and response**
-- [ ] CAE enabled where supported
-- [ ] Identity Protection risk policies active
-- [ ] Sign-in logs monitored
-- [ ] Alerts configured for policy exceptions
+
+☐ CAE enabled where supported<br>
+☐ Identity Protection risk policies active<br>
+☐ Sign-in logs monitored<br>
+☐ Alerts configured for policy exceptions
 
 ## Common misalignments
 

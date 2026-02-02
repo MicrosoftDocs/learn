@@ -24,7 +24,7 @@ External ID addresses two primary scenarios through different tenant configurati
 | **B2B collaboration** | Workforce tenant | Partners, vendors, and contractors accessing your organization's Microsoft 365 apps, SharePoint, Teams, and line-of-business applications |
 | **Customer identity (CIAM)** | External tenant | Consumers and business customers accessing your custom applications with branded sign-in experiences |
 
-:::image type="content" source="../media/external-id-tenant-configurations.png" alt-text="Diagram showing a representation of the two external ID scenarios and the corresponding tenant type. Collaboration with business guests uses a workforce tenant configuration. External facing apps use an external tenant configuration.":::
+:::image type="content" source="../media/external-id-tenant-configurations.png" lightbox="../media/external-id-tenant-configurations.png" alt-text="Diagram showing a representation of the two external ID scenarios and the corresponding tenant type. Collaboration with business guests uses a workforce tenant configuration. External facing apps use an external tenant configuration.":::
 
 ### B2B collaboration in workforce tenants
 
@@ -32,7 +32,7 @@ B2B collaboration enables your workforce to work securely with external business
 
 With B2B collaboration, the partner uses their own identity management solution. You don't manage external accounts, sync accounts, or handle password resets. Guest users authenticate with their home organization or identity provider, while your organization controls resource access through policies. This means B2B guests are subject to your Conditional Access policies, MFA requirements, terms of use, and other security controls—just like your internal users.
 
-:::image type="content" source="../media/b2b-collaboration-overview.png" alt-text="Diagram showing a representation of B2B collaboration.":::
+:::image type="content" source="../media/b2b-collaboration-overview.png" lightbox="../media/b2b-collaboration-overview.png" alt-text="Diagram showing a representation of B2B collaboration.":::
 
 #### Authentication with B2B collaboration
 
@@ -78,7 +78,7 @@ Both organizations must mutually enable B2B direct connect through cross-tenant 
 
 When building applications for consumers or business customers, Microsoft Entra External ID in an external tenant provides customer identity and access management (CIAM) capabilities. This configuration isolates customer identities from your workforce directory.
 
-:::image type="content" source="../media/overview-ciam.png" alt-text="Diagram showing a representation of External ID in an external tenant.":::
+:::image type="content" source="../media/customer-identity-access-management.png" lightbox="../media/customer-identity-access-management.png" alt-text="Diagram showing a representation of External ID in an external tenant.":::
 
 #### External tenant characteristics
 
