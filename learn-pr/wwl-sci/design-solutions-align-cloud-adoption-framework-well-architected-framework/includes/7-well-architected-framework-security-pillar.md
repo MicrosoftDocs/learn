@@ -6,7 +6,7 @@ Security is one of the most important aspects of any architecture. It provides t
 - Integrity
 - Availability
 
-Losing these assurances can negatively affect your business operations and revenue, and your organization's reputation. For the security pillar, we'll discuss key architectural considerations and principles for security and how they apply to Azure.
+Losing these assurances can negatively affect your business operations and revenue, and your organization's reputation. For the security pillar, we discuss key architectural considerations and principles for security and how they apply to Azure.
 
 The security of complex systems depends on understanding the business context, social context, and technical context. As you design your system, cover these areas:
 
@@ -30,7 +30,7 @@ The economies of scale allow cloud provider specialist teams to invest in optimi
 
 Cloud providers must be compliant with the same IT regulatory requirements as the aggregate of all their customers. Providers must develop expertise to defend against the aggregate set of adversaries who attack their customers. As a consequence, the default security posture of applications deployed to the cloud is frequently much better than that of applications hosted on-premises.
 
-**Shared Responsibility Model:** As computing environments move from customer-controlled datacenters to the cloud, the responsibility of security also shifts. Security of the operational environment is now a concern shared by both cloud providers and customers. Organizations can reduce focus on activities that aren't core business competencies by shifting these responsibilities to a cloud service like Azure. Depending on the specific technology choices, some security protections will be built into the particular service, while addressing others will remain the customer's responsibility. To ensure that proper security controls are provided, organizations must carefully evaluate the services and technology choices.
+**Shared Responsibility Model:** As computing environments move from customer-controlled datacenters to the cloud, the responsibility of security also shifts. Security of the operational environment is now a concern shared by both cloud providers and customers. Organizations can reduce focus on activities that aren't core business competencies by shifting these responsibilities to a cloud service like Azure. Depending on the specific technology choices, some security protections are built into the particular service, while addressing others remains the customer's responsibility. To ensure that proper security controls are provided, organizations must carefully evaluate the services and technology choices.
 
 ![Diagram showing shared responsibility and key strategies.](../media/shared-resp-color.png)
 
@@ -65,7 +65,7 @@ We cover the following areas in the security pillar of the Microsoft Azure Well-
 | Security Topic | Description |
 |-------------------|-------------|
 | Security design principles | These principles describe a securely architected system hosted on cloud or on-premises datacenters, or a combination of both. |
-| Governance, risk, and compliance | How is the organization's security going to be monitored, audited, and reported? What types of risks does the organization face while trying to protect identifiable information, Intellectual Property (IP), financial information? Is there specific industry, government, or regulatory requirements that dictate or provide recommendations on criteria that your organization's security controls must meet? |
+| Governance, risk, and compliance | How is the organization's security going to be monitored, audited, and reported? What types of risks does the organization face while trying to protect identifiable information, Intellectual Property (IP), and financial information? Are there specific industry, government, or regulatory requirements that dictate or provide recommendations on criteria that your organization's security controls must meet? |
 | Regulatory compliance | Governments and other organizations frequently publish standards to help define good security practices (due diligence) so that organizations can avoid being negligent in security. |
 | Administration | Administration is the practice of monitoring, maintaining, and operating Information Technology (IT) systems to meet service levels that the business requires. Administration introduces some of the highest impact security risks because performing these tasks requires privileged access to a broad set of these systems and applications. |
 | Applications and services | Applications and the data associated with them ultimately act as the primary store of business value on a cloud platform. |
@@ -73,3 +73,30 @@ We cover the following areas in the security pillar of the Microsoft Azure Well-
 | Information protection and storage | Protecting data at rest is required to maintain confidentiality, integrity, and availability assurances across all workloads. |
 | Network security and containment | Network security has been the traditional linchpin of enterprise security efforts. However, cloud computing has increased the requirement for network perimeters to be more porous and many attackers have mastered the art of attacks on identity system elements (which nearly always bypass network controls). |
 | Security Operations | Security operations maintain and restores the security assurances of the system as live adversaries attack it. The tasks of security operations are described well by the NIST Cybersecurity Framework functions of Detect, Respond, and Recover. |
+
+## Securing AI workloads
+
+AI workloads introduce security challenges that extend beyond traditional application security. The Well-Architected Framework provides dedicated guidance for AI workloads that applies the security pillar's principles to these unique scenarios.
+
+### AI-specific security considerations
+
+AI systems create new attack surfaces that require specialized controls:
+
+- **Prompt injection**: Attackers craft malicious inputs to manipulate AI model behavior, bypass safety controls, or extract unauthorized information. Design input validation and output filtering as defense layers.
+- **Training data protection**: Training datasets often contain sensitive information. Protect data confidentiality during collection, storage, and model training to prevent data leakage through model outputs.
+- **Model integrity**: AI models represent significant intellectual property and operational value. Implement controls to prevent unauthorized access, modification, or theft of model weights and parameters.
+- **Inference security**: AI inference endpoints can leak sensitive information through carefully crafted queries. Monitor for data exfiltration patterns and implement rate limiting and anomaly detection.
+
+### Applying Zero Trust to AI
+
+The security pillar's Zero Trust principles apply directly to AI workloads:
+
+| Zero Trust Principle | AI Application |
+|---------------------|----------------|
+| **Verify explicitly** | Authenticate all requests to AI endpoints; validate input content before processing |
+| **Least privilege** | Restrict model access to authorized users; limit training data exposure to minimum required |
+| **Assume breach** | Implement content filtering on outputs; monitor for prompt injection and jailbreak attempts |
+
+### Responsible AI as a security imperative
+
+Responsible AI principles—fairness, reliability, privacy, inclusiveness, transparency, and accountability—directly support security objectives. An AI system that operates unpredictably or produces harmful outputs represents both an ethical failure and a security risk. Implementing responsible AI guardrails helps ensure AI systems behave within intended boundaries, reducing the risk of exploitation.

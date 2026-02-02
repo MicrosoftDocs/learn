@@ -109,7 +109,6 @@ The response from Microsoft Copilot gives ideas on different tools and services 
 Whether you're building a website, an application or an API there are various tools you can utilize to deploy your solution, be sure to modify the prompt to match your needs. Some more resources you can use to deploy your solution are:
 
 - [Deploy your company website on Azure using Azure Static Web Apps](/training/paths/azure-static-web-apps/?WT.mc_id=academic-114050-bethanycheum)
-- [Deploy your web application with Azure using Azure Web Apps](/training/paths/deploy-a-website-with-azure-app-service/?WT.mc_id=academic-114050-bethanycheum)
 - [Publish your API on Azure](/azure/api-management/import-and-publish?WT.mc_id=academic-114050-bethanycheum)
 - [Configure a virtual dev environment for all your software engineers – GitHub Codespaces.](https://github.com/features/codespaces?WT.mc_id=academic-114050-bethanycheum)
 - [Build a database for your application on Azure.](/azure/developer/javascript/database-developer-guide?tabs=MySQL%2Cazure-cli?WT.mc_id=academic-114050-bethanycheum)

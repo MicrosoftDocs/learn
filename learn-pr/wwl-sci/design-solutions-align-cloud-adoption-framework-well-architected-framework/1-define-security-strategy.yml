@@ -4,10 +4,10 @@ title: Define a security strategy
 metadata:
   title: Define a security strategy
   description: "SC-100 preparatory unit on the topic: Define a security strategy."
-  ms.date: 3/14/2023
+  ms.date: 01/24/2026
   author: ceperezb
   ms.author: ceperezb
   ms.topic: unit
-durationInMinutes: 10
+durationInMinutes: 3
 content: |
   [!include[](includes/1-define-security-strategy.md)]
