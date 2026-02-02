@@ -7610,6 +7610,26 @@ achievements:
   title: Describe Microsoft Entra Verified ID concepts
   summary: Learn the core concepts of decentralized identities and Microsoft Entra Verified ID.
   iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.connect-on-premises-network-with-vpn-gateway.badge
+  type: badge
+  title: Connect your on-premises network to Azure with VPN Gateway
+  summary: VPN Gateway in Azure provides secure connectivity between your on-premises networks and clients.
+  iconUrl: /training/achievements/connect-on-premises-network-with-vpn-gateway.svg
+- uid: learn.integrate-vnets-with-vnet-peering.badge
+  type: badge
+  title: Distribute your services across Azure virtual networks and integrate them by using virtual network peering
+  summary: Use virtual network peering to enable communication across virtual networks in a way that's secure and cost-effective.
+  iconUrl: /training/achievements/integrate-vnets-with-vnet-peering.svg
+- uid: learn.design-ip-addressing-for-azure.badge
+  type: badge
+  title: Design an IP addressing schema for your Azure deployment
+  summary: A good Azure IP addressing schema provides flexibility, room for growth, and integration with on-premises networks. The schema ensures that communication works for deployed resources, minimizes public exposure of systems, and gives the organization flexibility in its network. If not properly designed, systems might not be able to communicate, and more work is required to remediate the issue.
+  iconUrl: /training/achievements/design-ip-addressing-for-azure.svg
+- uid: learn.improve-app-scalability-resiliency-with-load-balancer.badge
+  type: badge
+  title: Improve application scalability and resiliency by using Azure Load Balancer
+  summary: Discuss the different load balancers in Azure and how to choose the right Azure load balancer solution to meet your requirements.
+  iconUrl: /training/achievements/improve-app-scalability-resiliency-with-load-balancer.svg
 - uid: learn.security.implement-network-security.trophy
   type: trophy 
   title: Implement network security in Azure
