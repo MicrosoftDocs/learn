@@ -37,13 +37,13 @@ quiz:
       explanation: "This uses ASC order when the requirement is descending chronological order, and using `<=` would include the last seen row again."
   - content: "You need to insert a user preference record. If the record already exists, you want to update the value without creating a duplicate. Which PostgreSQL clause handles this scenario?"
     choices:
-    - content: "`INSERT ... ON DUPLICATE KEY UPDATE`"
+    - content: "`INSERT INTO table ON DUPLICATE KEY UPDATE`"
       isCorrect: false
       explanation: "`ON DUPLICATE KEY UPDATE` is MySQL syntax. PostgreSQL uses `ON CONFLICT` for upsert operations."
-    - content: "`INSERT ... ON CONFLICT DO UPDATE`"
+    - content: "`INSERT INTO table ON CONFLICT DO UPDATE`"
       isCorrect: true
       explanation: "`ON CONFLICT DO UPDATE` handles unique constraint violations by updating the existing row instead of inserting a duplicate. Use `EXCLUDED` to reference the values that would have been inserted."
-    - content: "`INSERT ... IF NOT EXISTS`"
+    - content: "`INSERT INTO table IF NOT EXISTS`"
       isCorrect: false
       explanation: "PostgreSQL doesn't support `IF NOT EXISTS` for `INSERT` statements. Use `ON CONFLICT DO NOTHING` to skip duplicates, or `ON CONFLICT DO UPDATE` for upserts."
   - content: "Your Python application creates many short-lived database connections to store individual messages during AI inference. What approach should you use to improve performance?"
