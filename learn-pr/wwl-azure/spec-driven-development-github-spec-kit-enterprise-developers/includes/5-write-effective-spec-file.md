@@ -1,11 +1,11 @@
-The specification file (`spec.md`) is the single source of truth for what your feature should do. This unit covers advanced techniques for writing enterprise-grade specifications.
+The specification file (`spec.md`) is the single source of truth for what your software should do. This unit covers advanced techniques for writing enterprise-grade specifications.
 
 ## Review spec fundamentals
 
 In spec-driven development, the specification defines exactly what the software should do, and every implementation decision traces back to it. A well-structured specification includes:
 
-- **Summary**: Concise description of the feature from an end-user perspective.
-- **User stories**: Brief narratives of how users interact with the feature.
+- **Summary**: Concise description of the application (or new feature) from an end-user perspective.
+- **User stories**: Brief narratives of how users interact with the application.
 - **Acceptance criteria**: Specific, testable conditions that must be true for completion.
 - **Functional requirements**: Detailed descriptions of system behavior.
 - **Nonfunctional requirements**: Quality attributes like performance, security, and scalability.
@@ -17,7 +17,7 @@ In spec-driven development, the specification defines exactly what the software 
 
 This approach represents a mindset shift: writing the spec is as important as writing code. The spec isn't a formality to satisfy project management—it's the artifact that drives AI code generation. Invest the same care in crafting specs as you would in implementing features manually.
 
-Think of the spec as executable documentation. When you modify requirements, you update the spec and regenerate the plan and tasks. The spec version-controlled in Git becomes the authoritative record of what each feature should accomplish.
+Think of the spec as executable documentation. When you modify requirements, you update the spec and regenerate the plan and tasks. The spec, which is version-controlled in Git, becomes the authoritative record of what each feature should accomplish.
 
 For enterprise developers accustomed to agile workflows, the spec serves the same purpose as detailed user stories and acceptance criteria, but with machine-readable structure that AI assistants can consume directly.
 

@@ -62721,11 +62721,154 @@
       "redirect_document_id": false
     },
     {
+<<<<<<< HEAD
       "source_path": "learn-pr/paths/powershell/index.yml",
       "redirect_url": "https://learn.microsoft.com/en-us/training/browse/",
       "redirect_document_id": false
     },
     {   
+=======
+      "source_path": "learn-pr/powershell/connect-commands/index.yml",
+      "redirect_url": "https://learn.microsoft.com/powershell/scripting/learn/ps101/04-pipelines",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/powershell/connect-commands/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/powershell/scripting/learn/ps101/04-pipelines",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/powershell/connect-commands/2-select-data.yml",
+      "redirect_url": "https://learn.microsoft.com/powershell/scripting/learn/ps101/04-pipelines",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/powershell/connect-commands/3-exercise-pipeline.yml",
+      "redirect_url": "https://learn.microsoft.com/powershell/scripting/learn/ps101/04-pipelines",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/powershell/connect-commands/4-format.yml",
+      "redirect_url": "https://learn.microsoft.com/powershell/scripting/learn/ps101/04-pipelines",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/powershell/connect-commands/5-exercise-format.yml",
+      "redirect_url": "https://learn.microsoft.com/powershell/scripting/learn/ps101/04-pipelines",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/powershell/connect-commands/6-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/powershell/scripting/learn/ps101/04-pipelines",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/powershell/connect-commands/7-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/powershell/scripting/learn/ps101/04-pipelines",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/powershell-write-first/index.yml",
+      "redirect_url": "https://learn.microsoft.com/powershell/scripting/learn/ps101/01-getting-started",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/powershell-write-first/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/powershell/scripting/learn/ps101/01-getting-started",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/powershell-write-first/2-exercise-hello-world.yml",
+      "redirect_url": "https://learn.microsoft.com/powershell/scripting/learn/ps101/01-getting-started",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/powershell-write-first/3-how-it-works.yml",
+      "redirect_url": "https://learn.microsoft.com/powershell/scripting/learn/ps101/01-getting-started",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/powershell-write-first/4-challenge.yml",
+      "redirect_url": "https://learn.microsoft.com/powershell/scripting/learn/ps101/01-getting-started",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/powershell-write-first/5-solution.yml",
+      "redirect_url": "https://learn.microsoft.com/powershell/scripting/learn/ps101/01-getting-started",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/powershell-write-first/6-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/powershell/scripting/learn/ps101/01-getting-started",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/powershell-write-first/7-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/powershell/scripting/learn/ps101/01-getting-started",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/powershell/script-with-powershell/index.yml",
+      "redirect_url": "https://learn.microsoft.com/powershell/scripting/learn/ps101/01-getting-started",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/powershell/script-with-powershell/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/powershell/scripting/learn/ps101/01-getting-started",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/powershell/script-with-powershell/2-introduction-scripting.yml",
+      "redirect_url": "https://learn.microsoft.com/powershell/scripting/learn/ps101/01-getting-started",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/powershell/script-with-powershell/3-exercise-scripting.yml",
+      "redirect_url": "https://learn.microsoft.com/powershell/scripting/learn/ps101/01-getting-started",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/powershell/script-with-powershell/4-parameters.yml",
+      "redirect_url": "https://learn.microsoft.com/powershell/scripting/learn/ps101/01-getting-started",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/powershell/script-with-powershell/5-exercise-parameters.yml",
+      "redirect_url": "https://learn.microsoft.com/powershell/scripting/learn/ps101/01-getting-started",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/powershell/script-with-powershell/6-flow-control.yml",
+      "redirect_url": "https://learn.microsoft.com/powershell/scripting/learn/ps101/01-getting-started",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/powershell/script-with-powershell/7-exercise-flow-control.yml",
+      "redirect_url": "https://learn.microsoft.com/powershell/scripting/learn/ps101/01-getting-started",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/powershell/script-with-powershell/8-handle-errors.yml",
+      "redirect_url": "https://learn.microsoft.com/powershell/scripting/learn/ps101/01-getting-started",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/powershell/script-with-powershell/9-exercise-handle-errors.yml",
+      "redirect_url": "https://learn.microsoft.com/powershell/scripting/learn/ps101/01-getting-started",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/powershell/script-with-powershell/10-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/powershell/scripting/learn/ps101/01-getting-started",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/powershell/script-with-powershell/11-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/powershell/scripting/learn/ps101/01-getting-started",
+      "redirect_document_id": false
+    },                                                  
+    {
+>>>>>>> 168a229306fff486f2f865756f7578a85fd2ee65
       "source_path": "learn-pr/azure/access-data-azure-blob-storage-multiple-protocols/index.yml",
       "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/data-lake-storage-multi-protocol-access",
       "redirect_document_id": false
@@ -63334,6 +63477,56 @@
       "source_path": "learn-pr/aspnetcore/blazor-build-rich-interactive-components/8-summary.yml",
       "redirect_url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
       "redirect_document_id": false
-    }                                                    
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-arc/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-arc/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-arc/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-arc/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-arc/2-describe-azure-arc.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-arc/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-arc/3-describe-azure-arc-enabled-servers.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-arc/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-arc/4-describe-azure-arc-enabled-kubernetes.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-arc/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-arc/4a-describe-azure-arc-enabled-data-services.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-arc/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-arc/5-azure-policy-and-azure-monitor.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-arc/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-arc/5a-azure-security.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-arc/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-arc/6-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-arc/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-arc/7-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-arc/overview",
+      "redirect_document_id": false
+    }                                                                            
   ]
 }

@@ -407,7 +407,7 @@ You will be using these extra credit scores and the application requirements pro
 1. To create the equation that adds an extra credit score to the sum, enter the following code:
 
     ```csharp
-    // add the extra credit points to the sum - bonus points equal to 10% of an exam score
+    // add the extra credit points to the sum - bonus points equal to 10% of an exam score. rounding errors are acceptable
     sumAssignmentScores += score / 10;    
     ```
 
@@ -472,7 +472,7 @@ You will be using these extra credit scores and the application requirements pro
                 sumAssignmentScores += score;
     
             else
-                // add the extra credit points to the sum - bonus points equal to 10% of an exam score
+                // add the extra credit points to the sum - bonus points equal to 10% of an exam score. rounding errors are acceptable
                 sumAssignmentScores += score / 10;
         }
     

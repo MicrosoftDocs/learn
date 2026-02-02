@@ -2,7 +2,7 @@ Technical plans provide architectural direction, but implementation requires con
 
 ## Review task fundamentals
 
-The `/speckit.tasks` command converts high-level architectural decisions into specific work items in the tasks.md file. Each task represents a discrete unit of work that can be implemented, tested, and verified independently.
+GitHub Spec Kit's `/speckit.tasks` command converts high-level architectural decisions into specific work items in the tasks.md file. Each task represents a discrete unit of work that can be implemented, tested, and verified independently.
 
 Key characteristics of well-scoped tasks:
 
@@ -16,8 +16,6 @@ Key characteristics of well-scoped tasks:
 Complex features benefit from organizing tasks into phases. For example: Setup, Foundation, Core Functionality, UI/Integration, Security, and Testing. Each phase represents a logical grouping that builds toward a milestone.
 
 ## Benefits of task breakdown
-
-The `/speckit.tasks` command converts high-level architectural decisions into specific work items in the tasks.md file. Each task represents a discrete unit of work that can be implemented, tested, and verified independently. This granular approach prevents overwhelming complexity and provides clear checkpoints throughout the implementation process.
 
 Task breakdowns serve multiple purposes beyond just organizing work. They help the AI generate focused code for specific objectives rather than attempting to implement entire features in single operations. They create natural verification points where you can test partial implementations before proceeding. They enable accurate progress tracking by showing exactly what's complete and what remains. They facilitate team coordination by making dependencies explicit.
 
