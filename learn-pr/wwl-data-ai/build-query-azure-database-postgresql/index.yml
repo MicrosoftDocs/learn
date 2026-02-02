@@ -41,7 +41,7 @@ units:
 - learn.wwl.build-query-azure-database-postgresql.query-data
 - learn.wwl.build-query-azure-database-postgresql.integrate-sdks-apps
 - learn.wwl.build-query-azure-database-postgresql.exercise-build-agent-tool-backend
-- learn.wwl.build-query-azure-database-postgresql.module-assessment
+- learn.wwl.build-query-azure-database-postgresql.knowledge-check
 - learn.wwl.build-query-azure-database-postgresql.summary
 badge:
   uid: learn.wwl.build-query-azure-database-postgresql.badge
