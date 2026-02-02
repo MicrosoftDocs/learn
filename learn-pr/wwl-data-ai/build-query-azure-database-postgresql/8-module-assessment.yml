@@ -1,0 +1,70 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.build-query-azure-database-postgresql.module-assessment
+title: Module assessment
+metadata:
+  title: Module Assessment
+  description: Module assessment
+  ms.date: 01/29/2026
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: unit
+azureSandbox: false
+durationInMinutes: 5
+content: "Choose the best answer for each question below."
+quiz:
+  questions:
+  - content: "Your AI application needs to store conversation metadata with varying structures. Some conversations include custom fields like model configuration, while others have user preferences. Which PostgreSQL data type best supports this requirement?"
+    choices:
+    - content: "TEXT"
+      isCorrect: false
+      explanation: "TEXT stores plain character data and doesn't support structured data operations like indexing nested fields or querying by key."
+    - content: "JSONB"
+      isCorrect: true
+      explanation: "JSONB stores JSON data in a binary format that supports indexing and efficient querying. It's ideal when data structure varies between records and you need to query or filter based on nested values."
+    - content: "VARCHAR(MAX)"
+      isCorrect: false
+      explanation: "PostgreSQL doesn't have a `VARCHAR(MAX)` type. `VARCHAR` requires a specific length limit and stores plain character data without structured data support."
+  - content: "Your application uses keyset pagination to retrieve conversation messages. Which clause combination correctly implements keyset pagination for descending chronological order?"
+    choices:
+    - content: "`WHERE created_at < :last_timestamp ORDER BY created_at DESC LIMIT 20 OFFSET 20`"
+      isCorrect: false
+      explanation: "Using OFFSET defeats the purpose of keyset pagination. The benefit of keyset pagination is avoiding OFFSET, which requires scanning all skipped rows."
+    - content: "`WHERE (created_at, id) < (:last_timestamp, :last_id) ORDER BY created_at DESC, id DESC LIMIT 20`"
+      isCorrect: true
+      explanation: "Keyset pagination filters using the last seen values and maintains consistent sort order. Including id handles ties when multiple rows share the same timestamp."
+    - content: "`WHERE created_at <= :last_timestamp ORDER BY created_at ASC LIMIT 20`"
+      isCorrect: false
+      explanation: "This uses ASC order when the requirement is descending chronological order, and using `<=` would include the last seen row again."
+  - content: "You need to insert a user preference record. If the record already exists, you want to update the value without creating a duplicate. Which PostgreSQL clause handles this scenario?"
+    choices:
+    - content: "`INSERT ... ON DUPLICATE KEY UPDATE`"
+      isCorrect: false
+      explanation: "`ON DUPLICATE KEY UPDATE` is MySQL syntax. PostgreSQL uses `ON CONFLICT` for upsert operations."
+    - content: "`INSERT ... ON CONFLICT DO UPDATE`"
+      isCorrect: true
+      explanation: "`ON CONFLICT DO UPDATE` handles unique constraint violations by updating the existing row instead of inserting a duplicate. Use `EXCLUDED` to reference the values that would have been inserted."
+    - content: "`INSERT ... IF NOT EXISTS`"
+      isCorrect: false
+      explanation: "PostgreSQL doesn't support `IF NOT EXISTS` for `INSERT` statements. Use `ON CONFLICT DO NOTHING` to skip duplicates, or `ON CONFLICT DO UPDATE` for upserts."
+  - content: "Your Python application creates many short-lived database connections to store individual messages during AI inference. What approach should you use to improve performance?"
+    choices:
+    - content: "Open a new connection for each message and close it immediately after"
+      isCorrect: false
+      explanation: "Creating new connections for each operation is expensive. Each connection requires network handshakes, authentication, and server-side resource allocation."
+    - content: "Use a ConnectionPool to maintain reusable connections that the application can borrow and return"
+      isCorrect: true
+      explanation: "Connection pools maintain pre-established connections that your application can reuse. This eliminates the overhead of creating new connections for each operation, significantly improving throughput."
+    - content: "Keep a single global connection open for the entire application lifetime"
+      isCorrect: false
+      explanation: "A single connection limits concurrency and creates a single point of failure. If the connection drops, all operations fail until it's recreated."
+  - content: "You're designing a table for AI agent task checkpoints. Tasks have a status that should only be 'pending', 'in_progress', 'completed', or 'failed'. Which constraint enforces this rule at the database level?"
+    choices:
+    - content: "`UNIQUE (status)`"
+      isCorrect: false
+      explanation: "`UNIQUE` ensures no duplicate values across rows. It doesn't restrict what values can be stored, and you'd want multiple tasks to share the same status value."
+    - content: "`CHECK (status IN ('pending', 'in_progress', 'completed', 'failed'))`"
+      isCorrect: true
+      explanation: "`CHECK` constraints validate values against a condition before allowing inserts or updates. This ensures only the specified status values can be stored in the column."
+    - content: "`NOT NULL DEFAULT 'pending'`"
+      isCorrect: false
+      explanation: "`NOT NULL` prevents null values and `DEFAULT` provides a fallback, but neither restricts the column to specific allowed values. You could still insert invalid status values."

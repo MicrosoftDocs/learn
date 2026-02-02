@@ -1,0 +1,47 @@
+### YamlMime:Module
+uid: learn.wwl.build-query-azure-database-postgresql
+metadata:
+  title: Build and Query with Azure Database for PostgreSQL
+  description: Learn how to use Azure Database for PostgreSQL as a data foundation for AI applications, including schema design, SQL queries, and Python integration.
+  ms.date: 01/29/2026
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: module-standard-task-based
+  ai-usage: ai-assisted
+  ms.service: azure-database-postgresql
+title: Build and query with Azure Database for PostgreSQL
+summary: Learn how to use Azure Database for PostgreSQL to build data foundations for AI applications. Design schemas, write efficient queries, and integrate with Python applications using secure authentication.
+abstract: |
+  After completing this module, you'll be able to:
+    - Explain the architecture and key features of Azure Database for PostgreSQL
+    - Establish secure connections to PostgreSQL using Microsoft Entra authentication and TLS
+    - Create and manage database schemas including tables, indexes, and constraints
+    - Write efficient SQL queries for common data operations
+    - Integrate Azure Database for PostgreSQL into applications using Python
+prerequisites: |
+  Before beginning this module, you should have:
+  - Programming experience with Python.
+  - Basic understanding of Azure services and cloud computing concepts.
+  - Familiarity with relational databases and SQL fundamentals.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- azure-database-postgresql
+subjects:
+- databases
+- artificial-intelligence
+units:
+- learn.wwl.build-query-azure-database-postgresql.introduction
+- learn.wwl.build-query-azure-database-postgresql.explore-azure-database-postgresql
+- learn.wwl.build-query-azure-database-postgresql.connect-to-postgresql
+- learn.wwl.build-query-azure-database-postgresql.create-manage-schemas
+- learn.wwl.build-query-azure-database-postgresql.query-data
+- learn.wwl.build-query-azure-database-postgresql.integrate-sdks-apps
+- learn.wwl.build-query-azure-database-postgresql.exercise-build-agent-tool-backend
+- learn.wwl.build-query-azure-database-postgresql.module-assessment
+- learn.wwl.build-query-azure-database-postgresql.summary
+badge:
+  uid: learn.wwl.build-query-azure-database-postgresql.badge
