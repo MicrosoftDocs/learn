@@ -62721,6 +62721,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/paths/bicep-azure-pipelines/index.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/training/browse/",
+      "redirect_document_id": false      
+    },
+    {
       "source_path": "learn-pr/paths/powershell/index.yml",
       "redirect_url": "https://learn.microsoft.com/en-us/training/browse/",
       "redirect_document_id": false
@@ -63076,6 +63081,166 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/azure/build-first-bicep-deployment-pipeline-using-azure-pipelines/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/create-first-pipeline",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-first-bicep-deployment-pipeline-using-azure-pipelines/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/create-first-pipeline",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-first-bicep-deployment-pipeline-using-azure-pipelines/2-understand-azure-pipelines.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/create-first-pipeline",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-first-bicep-deployment-pipeline-using-azure-pipelines/3-exercise-create-run-basic-pipeline.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/create-first-pipeline",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-first-bicep-deployment-pipeline-using-azure-pipelines/4-deploy-bicep-files-pipeline.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/create-first-pipeline",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-first-bicep-deployment-pipeline-using-azure-pipelines/5-exercise-create-service-connection.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/create-first-pipeline",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-first-bicep-deployment-pipeline-using-azure-pipelines/6-exercise-add-bicep-deployment-task-pipeline.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/create-first-pipeline",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-first-bicep-deployment-pipeline-using-azure-pipelines/7-control-pipeline-executes-triggers.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/create-first-pipeline",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-first-bicep-deployment-pipeline-using-azure-pipelines/8-exercise-update-pipeline-trigger.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/create-first-pipeline",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-first-bicep-deployment-pipeline-using-azure-pipelines/9-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/create-first-pipeline",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-first-bicep-deployment-pipeline-using-azure-pipelines/10-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/create-first-pipeline",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/authenticate-azure-deployment-pipeline-service-principals/index.yml",
+      "redirect_url": "https://learn.microsoft.com/power-platform/alm/delegated-deployments-setup",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/authenticate-azure-deployment-pipeline-service-principals/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/power-platform/alm/delegated-deployments-setup",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/authenticate-azure-deployment-pipeline-service-principals/2-understand-service-principals.yml",
+      "redirect_url": "https://learn.microsoft.com/power-platform/alm/delegated-deployments-setup",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/authenticate-azure-deployment-pipeline-service-principals/3-create-service-principal-key.yml",
+      "redirect_url": "https://learn.microsoft.com/power-platform/alm/delegated-deployments-setup",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/authenticate-azure-deployment-pipeline-service-principals/4-exercise-create-service-principal-key.yml",
+      "redirect_url": "https://learn.microsoft.com/power-platform/alm/delegated-deployments-setup",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/authenticate-azure-deployment-pipeline-service-principals/5-grant-service-principal-access-azure.yml",
+      "redirect_url": "https://learn.microsoft.com/power-platform/alm/delegated-deployments-setup",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/authenticate-azure-deployment-pipeline-service-principals/6-exercise-authorize-service-principal-deployments.yml",
+      "redirect_url": "https://learn.microsoft.com/power-platform/alm/delegated-deployments-setup",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/authenticate-azure-deployment-pipeline-service-principals/7-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/power-platform/alm/delegated-deployments-setup",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/authenticate-azure-deployment-pipeline-service-principals/8-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/power-platform/alm/delegated-deployments-setup",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/test-bicep-code-using-azure-pipelines/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/test/test-glossary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/test-bicep-code-using-azure-pipelines/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/test/test-glossary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/test-bicep-code-using-azure-pipelines/2-understand-pipeline-stages.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/test/test-glossary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/test-bicep-code-using-azure-pipelines/3-lint-validate-bicep-code.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/test/test-glossary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/test-bicep-code-using-azure-pipelines/4-exercise-set-up-environment.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/test/test-glossary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/test-bicep-code-using-azure-pipelines/5-exercise-add-lint-validate-stages-pipeline.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/test/test-glossary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/test-bicep-code-using-azure-pipelines/6-preview-approve-deployment.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/test/test-glossary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/test-bicep-code-using-azure-pipelines/7-exercise-add-preview-stage-pipeline.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/test/test-glossary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/test-bicep-code-using-azure-pipelines/8-test-resources-after-deployment.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/test/test-glossary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/test-bicep-code-using-azure-pipelines/9-exercise-add-test-stage-pipeline.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/test/test-glossary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/test-bicep-code-using-azure-pipelines/10-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/test/test-glossary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/test-bicep-code-using-azure-pipelines/11-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/test/test-glossary",
+      "redirect_document_id": false
+    },
+    {                                                                                                  
       "source_path": "learn-pr/powershell/introduction-to-powershell/index.yml",
       "redirect_url": "https://learn.microsoft.com/powershell/scripting/overview",
       "redirect_document_id": false
