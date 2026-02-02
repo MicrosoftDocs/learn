@@ -42,7 +42,7 @@ quiz:
       explanation: "`ON DUPLICATE KEY UPDATE` is MySQL syntax. PostgreSQL uses `ON CONFLICT` for upsert operations."
     - content: "`INSERT INTO table ON CONFLICT DO UPDATE`"
       isCorrect: true
-      explanation: "`ON CONFLICT DO UPDATE` handles unique constraint violations by updating the existing row instead of inserting a duplicate. Use `EXCLUDED` to reference the values that would have been inserted."
+      explanation: "`ON CONFLICT DO UPDATE` handles unique constraint violations by updating the existing row instead of inserting a duplicate. Use `EXCLUDED` to reference the attempted insert values."
     - content: "`INSERT INTO table IF NOT EXISTS`"
       isCorrect: false
       explanation: "PostgreSQL doesn't support `IF NOT EXISTS` for `INSERT` statements. Use `ON CONFLICT DO NOTHING` to skip duplicates, or `ON CONFLICT DO UPDATE` for upserts."
