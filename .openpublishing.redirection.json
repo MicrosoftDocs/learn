@@ -62721,6 +62721,56 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/azure/build-app-with-scale-sets/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machine-scale-sets/flexible-virtual-machine-scale-sets-cli",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-app-with-scale-sets/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machine-scale-sets/flexible-virtual-machine-scale-sets-cli",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-app-with-scale-sets/2-features-benefits-virtual-machine-scale-sets.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machine-scale-sets/flexible-virtual-machine-scale-sets-cli",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-app-with-scale-sets/3-exercise-deploy-scale-set-azure-portal.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machine-scale-sets/flexible-virtual-machine-scale-sets-cli",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-app-with-scale-sets/4-configure-virtual-machine-scale-set.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machine-scale-sets/flexible-virtual-machine-scale-sets-cli",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-app-with-scale-sets/5-exercise-configure-virtual-machine-scale-set.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machine-scale-sets/flexible-virtual-machine-scale-sets-cli",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-app-with-scale-sets/6-install-update-applications-virtual-machine-scale-sets.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machine-scale-sets/flexible-virtual-machine-scale-sets-cli",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-app-with-scale-sets/7-exercise-update-applications-virtual-machine-scale-sets.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machine-scale-sets/flexible-virtual-machine-scale-sets-cli",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-app-with-scale-sets/8-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machine-scale-sets/flexible-virtual-machine-scale-sets-cli",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-app-with-scale-sets/9-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machine-scale-sets/flexible-virtual-machine-scale-sets-cli",
+      "redirect_document_id": false
+    },
+    { 
       "source_path": "learn-pr/paths/bicep-azure-pipelines/index.yml",
       "redirect_url": "https://learn.microsoft.com/en-us/training/browse/",
       "redirect_document_id": false      
