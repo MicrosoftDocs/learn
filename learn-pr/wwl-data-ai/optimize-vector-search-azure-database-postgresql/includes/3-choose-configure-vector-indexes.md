@@ -37,7 +37,7 @@ USING ivfflat (embedding vector_cosine_ops)
 WITH (lists = 1000);
 ```
 
-The `lists` parameter determines how finely the vector space is partitioned. More lists create smaller partitions, which means fewer vectors to search per query but also more risk of missing relevant vectors in adjacent partitions. For datasets up to 100,000 rows, 100 lists is sufficient. For 100,000 to one million rows, use 1,000 lists. For one to ten million rows, use 4,000-10,000 lists. For over ten million rows, use sqrt(rows). For two million products, start with lists between 1,500 and 2,000.
+The `lists` parameter determines how finely the vector space is partitioned. More lists create smaller partitions, which means fewer vectors to search per query but also more risk of missing relevant vectors in adjacent partitions. For datasets up to 100,000 rows, 100 lists are sufficient. For 100,000 to one million rows, use 1,000 lists. For one to ten million rows, use 4,000-10,000 lists. For over ten million rows, use sqrt(rows). For two million products, start with lists between 1,500 and 2,000.
 
 The `ivfflat.probes` parameter controls how many lists are searched per query. Higher values improve recall but increase query time. Start with probes equal to sqrt(lists) and adjust based on measured recall. For 1,000 lists, begin with 30-50 probes. If recall is too low (missing relevant results), increase probes. If queries are too slow, decrease probes. Configure probes with `SET ivfflat.probes = 20;` before executing your vector search.
 

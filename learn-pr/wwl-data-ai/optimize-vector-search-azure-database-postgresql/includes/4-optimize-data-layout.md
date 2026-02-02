@@ -157,7 +157,7 @@ CREATE TABLE user_interactions_2025_01
     FOR VALUES FROM ('2025-01-01') TO ('2025-02-01');
 ```
 
-For multi-tenant applications or product catalogs with natural categories, list or hash partitioning can help. Queries filtered by category scan only the relevant partition, reducing both data scanned and index size.
+For multitenant applications or product catalogs with natural categories, list or hash partitioning can help. Queries filtered by category scan only the relevant partition, reducing both data scanned and index size.
 
 Create indexes on the parent table to automatically create matching indexes on all partitions using `CREATE INDEX ON products USING hnsw (embedding vector_cosine_ops);`. Each partition has its own index, which can be built or rebuilt independently. This is valuable for large datasets where rebuilding a single global index would take hours.
 
