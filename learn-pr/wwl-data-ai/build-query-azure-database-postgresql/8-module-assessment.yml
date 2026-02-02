@@ -10,7 +10,7 @@ metadata:
   ms.topic: unit
 azureSandbox: false
 durationInMinutes: 5
-content: "Choose the best answer for each question below."
+content: |
 quiz:
   questions:
   - content: "Your AI application needs to store conversation metadata with varying structures. Some conversations include custom fields like model configuration, while others have user preferences. Which PostgreSQL data type best supports this requirement?"
@@ -24,17 +24,17 @@ quiz:
     - content: "VARCHAR(MAX)"
       isCorrect: false
       explanation: "PostgreSQL doesn't have a `VARCHAR(MAX)` type. `VARCHAR` requires a specific length limit and stores plain character data without structured data support."
-  - content: "Your application uses keyset pagination to retrieve conversation messages. Which clause combination correctly implements keyset pagination for descending chronological order?"
+  - content: "You insert a new conversation record and need the auto-generated ID immediately to insert related messages. Which PostgreSQL clause retrieves the generated value without a separate query?"
     choices:
-    - content: "`WHERE created_at < :last_timestamp ORDER BY created_at DESC LIMIT 20 OFFSET 20`"
-      isCorrect: false
-      explanation: "Using OFFSET defeats the purpose of keyset pagination. The benefit of keyset pagination is avoiding OFFSET, which requires scanning all skipped rows."
-    - content: "`WHERE (created_at, id) < (:last_timestamp, :last_id) ORDER BY created_at DESC, id DESC LIMIT 20`"
+    - content: "RETURNING"
       isCorrect: true
-      explanation: "Keyset pagination filters using the last seen values and maintains consistent sort order. Including id handles ties when multiple rows share the same timestamp."
-    - content: "`WHERE created_at <= :last_timestamp ORDER BY created_at ASC LIMIT 20`"
+      explanation: "The RETURNING clause retrieves values from inserted, updated, or deleted rows in a single round trip. This is essential for getting auto-generated IDs without a separate SELECT query."
+    - content: "OUTPUT"
       isCorrect: false
-      explanation: "This uses ASC order when the requirement is descending chronological order, and using `<=` would include the last seen row again."
+      explanation: "OUTPUT is SQL Server syntax. PostgreSQL uses RETURNING to retrieve values from data modification statements."
+    - content: "SELECT LAST_INSERT_ID()"
+      isCorrect: false
+      explanation: "LAST_INSERT_ID() is MySQL syntax. PostgreSQL uses the RETURNING clause directly in the INSERT statement."
   - content: "You need to insert a user preference record. If the record already exists, you want to update the value without creating a duplicate. Which PostgreSQL clause handles this scenario?"
     choices:
     - content: "`INSERT INTO table ON DUPLICATE KEY UPDATE`"
