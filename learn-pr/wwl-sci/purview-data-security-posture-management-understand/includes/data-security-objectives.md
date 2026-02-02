@@ -8,6 +8,8 @@ Data security objectives exist to solve that problem.
 
 In data security posture management (DSPM), objectives are the primary way risk is organized and addressed. An objective represents a specific outcome related to data security, like reducing oversharing, limiting exposure, or strengthening protection for sensitive data.
 
+:::image type="content" source="../media/objectives-as-outcomes.png" border="false" alt-text="Diagram showing objectives progressing through assess, identify, recommend, and validate steps over time." lightbox="../media/objectives-as-outcomes.png":::
+
 Objectives aren't checklists or static views. They function as workflows that connect:
 
 - Assessing current posture

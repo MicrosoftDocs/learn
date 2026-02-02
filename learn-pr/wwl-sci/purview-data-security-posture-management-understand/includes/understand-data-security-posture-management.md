@@ -29,10 +29,12 @@ DSPM brings these questions together in one place so you can reason about exposu
 
 DSPM doesn't inspect data or user behavior on its own. It aggregates signals from other Microsoft Purview solutions that already do that work.
 
+:::image type="content" source="../media/posture-aggregation-overview.png" border="false" alt-text="Diagram showing signals from Purview tools flowing into a single data security posture overview." lightbox="../media/posture-aggregation-overview.png":::
+
 Those signals come from areas like:
 
-- **Data Loss Prevention**, which detects risky data handling
 - **Information Protection**, which shows how data is classified and labeled
+- **Data Loss Prevention**, which detects risky data handling
 - **Insider Risk Management**, which highlights risky patterns and behaviors
 - **Audit and activity data**, which provide evidence of how data is used
 - **Investigation tools**, which add context when deeper review is needed
@@ -51,6 +53,6 @@ Keeping this boundary clear is important. DSPM is a starting point for action, n
 
 AI changes how data moves through an organization. Prompts, responses, summaries, and agent workflows create new paths for sensitive information to be shared, reused, or exposed. This activity is often distributed across users, apps, and services, which makes risk harder to see when you look at tools in isolation.
 
-In these environments, posture matters more than individual alerts. You need to understand patterns like oversharing, repeated exposure, or gaps in protection before those patterns lead to incidents. DSPM treats AI interactions as another signal source, not a separate problem to solve in isolation.
+In these environments, posture matters more than individual alerts. Identifying patterns like oversharing, repeated exposure, or gaps in protection helps prevent those patterns from escalating into incidents. DSPM treats AI interactions as another signal source, not a separate problem to solve in isolation.
 
 By focusing on posture, DSPM helps organizations stay ahead of risk in environments where data is constantly in use, not just sitting at rest.
