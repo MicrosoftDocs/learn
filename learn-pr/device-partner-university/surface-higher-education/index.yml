@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn.dpu.surface-higher-education
+title: Empowering higher education with Microsoft Surface
+metadata:
+  title: Empowering Higher Education With Microsoft Surface
+  description: 'Discover how Microsoft Surface devices can transform higher education by enhancing learning experiences, improving educator workflows, and ensuring secure device management for institutions.'
+  ms.date: 02/02/2026
+  author: ozahran7
+  ms.author: v-zahranomar
+  ms.topic: module
+  ms.service: surface
+summary: >
+  Learn how Microsoft Surface devices can transform higher education by enhancing learning experiences, improving educator workflows, and ensuring secure device management for institutions.
+
+abstract: |
+  By the end of this module, you'll be able to:
+  - Understand how Microsoft Surface devices can adapt to modern educational realities.
+  - Explore features that help students stay organized and engaged.
+  - Learn how Surface devices can enhance educator workflows and productivity.
+  - Discover best practices for secure device deployment and management in educational institutions.
+
+prerequisites: |
+  - None
+iconUrl: /training/achievements/surface-higher-education.svg
+ratingEnabled: false
+levels:
+  - beginner
+roles:
+  - administrator
+  - business-leader
+  - business-owner
+  - business-user
+  - technology-manager
+products:
+  - surface
+units:
+  - learn.dpu.surface-higher-education.introduction
+  - learn.dpu.surface-higher-education.adapting-to-modern-educational-realities
+  - learn.dpu.surface-higher-education.keeping-students-organized
+  - learn.dpu.surface-higher-education.enhancing-educator-workflow-with-surface
+  - learn.dpu.surface-higher-education.secure-device-deployment-for-administrators
+  - learn.dpu.surface-higher-education.knowledge-check
+  - learn.dpu.surface-higher-education.summary
+badge:
+  uid: learn.dpu.surface-higher-education.badge
