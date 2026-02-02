@@ -35,7 +35,6 @@ modules:
 - learn.manage-vms-with-azure-cli
 #- learn.scale-and-size-virtual-machines
 #- learn.make-your-virtual-machines-highly-available
-- learn.configure-the-network-for-your-virtual-machines
 - learn.azure.create-resource-manager-template-vs-code
 - learn.add-and-size-disks-in-azure-virtual-machines
 - learn.azure.monitor-azure-vm-using-diagnostic-data

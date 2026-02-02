@@ -62721,6 +62721,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/paths/implement-network-security/index.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/training/browse/",
+      "redirect_document_id": false
+    },
+    {      
       "source_path": "learn-pr/azure/choose-storage-approach-in-azure/index.yml",
       "redirect_url": "https://learn.microsoft.com/azure/storage/common/storage-account-overview",
       "redirect_document_id": false
@@ -63211,6 +63216,86 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/azure/configure-network-for-azure-virtual-machines/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-network/network-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/configure-network-for-azure-virtual-machines/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-network/network-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/configure-network-for-azure-virtual-machines/2-describe-azure-virtual-networking.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-network/network-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/configure-network-for-azure-virtual-machines/3-exercise-create-azure-virtual-network.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-network/network-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/configure-network-for-azure-virtual-machines/4-explore-azure-vpn-gateway.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-network/network-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/configure-network-for-azure-virtual-machines/5-exercise-create-azure-vpn-gateway.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-network/network-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/configure-network-for-azure-virtual-machines/6-describe-azure-expressroute.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-network/network-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/configure-network-for-azure-virtual-machines/7-knowledge-check-azure-expressroute.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-network/network-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/configure-network-for-azure-virtual-machines/8-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-network/network-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/troubleshoot-azure-network-infrastructure/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/networking/monitoring-management/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/troubleshoot-azure-network-infrastructure/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/networking/monitoring-management/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/troubleshoot-azure-network-infrastructure/2-troubleshoot-networking-with-network-watcher.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/networking/monitoring-management/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/troubleshoot-azure-network-infrastructure/3-exercise-troubleshoot-networking-with-network-watcher.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/networking/monitoring-management/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/troubleshoot-azure-network-infrastructure/4-troubleshoot-networking-with-network-watcher-metrics-logs.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/networking/monitoring-management/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/troubleshoot-azure-network-infrastructure/5-exercise-troubleshoot-networking-with-network-watcher-metrics-logs.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/networking/monitoring-management/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/troubleshoot-azure-network-infrastructure/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/networking/monitoring-management/",
+      "redirect_document_id": false
+    },
+    {                                                                                      
       "source_path": "learn-pr/azure/build-first-bicep-deployment-pipeline-using-azure-pipelines/index.yml",
       "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/create-first-pipeline",
       "redirect_document_id": false
