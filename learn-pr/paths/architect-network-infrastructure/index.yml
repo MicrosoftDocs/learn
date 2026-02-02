@@ -32,6 +32,5 @@ modules:
 - learn.secure-and-isolate-with-nsg-and-service-endpoints
 - learn.load-balance-web-traffic-with-application-gateway
 - learn.control-network-traffic-flow-with-routes
-- learn.troubleshoot-azure-network-infrastructure
 trophy:
   uid: learn.architect-network-infrastructure.trophy
