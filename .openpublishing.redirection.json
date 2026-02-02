@@ -62721,6 +62721,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/paths/powershell/index.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/training/browse/",
+      "redirect_document_id": false
+    },
+    {   
       "source_path": "learn-pr/powershell/connect-commands/index.yml",
       "redirect_url": "https://learn.microsoft.com/powershell/scripting/learn/ps101/04-pipelines",
       "redirect_document_id": false
@@ -63071,6 +63076,86 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/powershell/introduction-to-powershell/index.yml",
+      "redirect_url": "https://learn.microsoft.com/powershell/scripting/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/powershell/introduction-to-powershell/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/powershell/scripting/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/powershell/introduction-to-powershell/2-what-is-powershell.yml",
+      "redirect_url": "https://learn.microsoft.com/powershell/scripting/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/powershell/introduction-to-powershell/3-exercise-powershell.yml",
+      "redirect_url": "https://learn.microsoft.com/powershell/scripting/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/powershell/introduction-to-powershell/4-cmdlets.yml",
+      "redirect_url": "https://learn.microsoft.com/powershell/scripting/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/powershell/introduction-to-powershell/5-exercise-cmdlets.yml",
+      "redirect_url": "https://learn.microsoft.com/powershell/scripting/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/powershell/introduction-to-powershell/6-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/powershell/scripting/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/powershell/introduction-to-powershell/7-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/powershell/scripting/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/powershell/discover-commands/index.yml",
+      "redirect_url": "https://learn.microsoft.com/powershell/scripting/learn/ps101/02-help-system",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/powershell/discover-commands/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/powershell/scripting/learn/ps101/02-help-system",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/powershell/discover-commands/2-help.yml",
+      "redirect_url": "https://learn.microsoft.com/powershell/scripting/learn/ps101/02-help-system",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/powershell/discover-commands/3-exercise-help.yml",
+      "redirect_url": "https://learn.microsoft.com/powershell/scripting/learn/ps101/02-help-system",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/powershell/discover-commands/4-discover-objects.yml",
+      "redirect_url": "https://learn.microsoft.com/powershell/scripting/learn/ps101/02-help-system",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/powershell/discover-commands/5-exercise-discover-objects.yml",
+      "redirect_url": "https://learn.microsoft.com/powershell/scripting/learn/ps101/02-help-system",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/powershell/discover-commands/6-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/powershell/scripting/learn/ps101/02-help-system",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/powershell/discover-commands/7-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/powershell/scripting/learn/ps101/02-help-system",
+      "redirect_document_id": false
+    },
+    {                                                                                                              
       "source_path": "learn-pr/azure/align-requirements-in-azure/index.yml",
       "redirect_url": "https://learn.microsoft.com/training/modules/describe-cloud-service-types/",
       "redirect_document_id": false
