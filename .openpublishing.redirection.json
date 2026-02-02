@@ -62721,6 +62721,86 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/azure/choose-storage-approach-in-azure/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/common/storage-account-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/choose-storage-approach-in-azure/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/common/storage-account-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/choose-storage-approach-in-azure/2-classify-data.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/common/storage-account-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/choose-storage-approach-in-azure/3-operations-and-latency.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/common/storage-account-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/choose-storage-approach-in-azure/4-transactions.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/common/storage-account-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/choose-storage-approach-in-azure/5-choose-the-right-azure-service-for-your-data.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/common/storage-account-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/choose-storage-approach-in-azure/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/common/storage-account-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/store-app-data-with-azure-blob-storage/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/common/storage-srp-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/store-app-data-with-azure-blob-storage/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/common/storage-srp-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/store-app-data-with-azure-blob-storage/2-what-are-blobs.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/common/storage-srp-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/store-app-data-with-azure-blob-storage/3-design-organization-strategy.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/common/storage-srp-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/store-app-data-with-azure-blob-storage/4-create-storage-resources.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/common/storage-srp-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/store-app-data-with-azure-blob-storage/5-configure-and-initialize-the-client-library.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/common/storage-srp-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/store-app-data-with-azure-blob-storage/6-getting-blob-references.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/common/storage-srp-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/store-app-data-with-azure-blob-storage/7-blob-uploads-and-downloads.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/common/storage-srp-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/store-app-data-with-azure-blob-storage/8-cleanup-next-steps-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/common/storage-srp-overview",
+      "redirect_document_id": false
+    },
+    {                                                                                  
       "source_path": "learn-pr/azure/build-app-with-scale-sets/index.yml",
       "redirect_url": "https://learn.microsoft.com/azure/virtual-machine-scale-sets/flexible-virtual-machine-scale-sets-cli",
       "redirect_document_id": false
