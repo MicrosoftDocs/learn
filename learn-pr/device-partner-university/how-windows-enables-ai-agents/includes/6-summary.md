@@ -1,0 +1,3 @@
+Windows is evolving from a traditional operating system into a platform where AI and agents work alongside people to simplify everyday tasks. In this module, you learned how intelligence moves beyond isolated apps and into familiar Windows experiences, making assistance available in the flow of work.
+
+You also explored how Copilot and agents integrate into Windows surfaces, and how Copilot+ PCs enable these capabilities through device-based AI and NPUs for fast, secure performance. Together, these advancements create a foundation for adopting AI at scale—combining integrated experiences, AI-ready devices, and built-in governance so organizations can improve efficiency without sacrificing control.

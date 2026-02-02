@@ -1,101 +1,138 @@
-Translating compliance requirements into security solutions requires the following initiatives as part of cloud governance:
+As a security architect, one of your primary responsibilities is translating compliance requirements into implementable security controls. This process requires understanding the regulatory landscape, applying the shared responsibility model, and designing solutions that align with governance frameworks.
 
-1. Define corporate policy that aligns to compliance requirements
-1. Align design with policy
+## Understand the shared responsibility model
 
-## Define corporate policy
+Before designing compliance solutions, you must understand how responsibilities are divided between cloud providers and your organization. The [shared responsibility model](/azure/security/fundamentals/shared-responsibility) defines which security tasks Microsoft handles and which tasks you handle.
 
-After you've analyzed the known risks and related risk tolerances for your organization's cloud transformation journey, set up policy to clearly address those risks. Your policy also defines the necessary steps to remediate the risks where possible.
+Responsibilities shift based on the cloud service model.
 
-### How can corporate IT policy become cloud-ready?
+**Compliance implication:** Regardless of service model, you're always responsible for your data, endpoints, identity management, and access controls. When a regulation requires "data encryption at rest," you must determine which encryption controls Microsoft provides by default and which you must configure.
 
-In traditional governance and incremental governance, corporate policy creates the working definition of governance. Most IT governance actions seek to implement technology that monitors, enforces, operates, and automates corporate policies. Cloud governance is built on similar concepts.
+:::image type="content" source="../media/shared-responsibility.png" alt-text="Diagram showing the shared responsibility model." lightbox="../media/shared-responsibility.png":::
 
-![Diagram that shows corporate governance and governance disciplines.](../media/operational-transformation-govern-large.png)
-*Figure 1: Corporate governance and governance disciplines.*
+### Microsoft Compliance resources
 
-The image illustrates the relationship between business risk, policy and compliance, and monitoring and enforcement mechanisms that need to interact as part of your governance strategy. The Five Disciplines of Cloud Governance let you manage the interactions and realize your strategy.
+To understand what Microsoft covers, use the centralized [Microsoft Compliance site](/compliance/) as your starting point. This site organizes resources into three key areas:
 
-Cloud governance is the product of an ongoing adoption effort, because lasting transformation doesn't happen overnight. If you attempt to deliver complete cloud governance before addressing key corporate policy changes, it seldom produces the desired results. Instead, use an incremental approach.
+- **Regulatory and industry compliance** - Guidance for meeting specific regulatory requirements like GDPR, DORA (Digital Operational Resilience Act), and industry-specific standards. This includes [Microsoft compliance offerings](/compliance/regulatory/offering-home) that document certifications and attestations across Microsoft services.
 
-What's different about a Cloud Adoption Framework is the purchasing cycle that enables authentic transformation. Since it doesn't take large capital to acquire, engineers can begin their experimentation and adoption sooner. In most corporate cultures, eliminating the capital expense barrier to adoption leads to tighter feedback loops, organic growth, and incremental development.
+- **Service assurance** - Documentation on how Microsoft safeguards your data, organized by topic areas including AI governance, infrastructure security, operations, and governance. This section includes links to SOC reports, ISO certifications, penetration test results, and the [Risk Assessment Guide for Microsoft Cloud](/compliance/assurance/assurance-risk-assessment-guide).
 
-The shift to cloud adoption requires a shift in governance. In many organizations, corporate policy transformation supports:
+- **Service-specific compliance** - Direct links to compliance documentation for [Azure](/azure/compliance/), [Dynamics 365](/dynamics365/business-central/compliance/compliance-overview), and [Microsoft Purview](/purview/) to help you understand compliance capabilities within each service.
 
-- Improved governance and higher rates of adherence through incremental policy changes
-- Automated enforcement of those changes
+When designing compliance solutions, use these resources to identify which controls Microsoft manages versus which controls you're responsible for implementing.
 
-The newly defined capabilities that you configure with your cloud service provider power the policy changes.
+## Apply the Cloud Adoption Framework Govern methodology
 
-### Review existing policies
+The [Cloud Adoption Framework Govern methodology](/azure/cloud-adoption-framework/govern/) provides a structured process for translating compliance requirements into enforceable policies. 
 
-As governance is an ongoing process, regularly review your policy with IT staff and stakeholders. You want to ensure that your resources hosted in the cloud maintain compliance with overall corporate goals and requirements. Your understanding of new risks and acceptable tolerance can fuel your review of existing policies. Reviewing your existing policies helps determine the level of governance that's right for your organization.
+:::image type="content" source="../media/cloud-adoption-framework-govern.png" alt-text="Diagram showing the Cloud Adoption Framework governance model." lightbox="../media/cloud-adoption-framework-govern.png":::
 
-### Create cloud policy statements
+This four-step cycle ensures continuous alignment between regulatory requirements and technical controls:
 
-Cloud-based IT policies establish the requirements, standards, and goals that your IT staff and automated systems need to support. Policy decisions are a primary factor in your cloud architecture design and how you'll implement your policy adherence processes.
+#### Step 1: Assess compliance risks
 
-Individual cloud policy statements are guidelines for addressing the specific risks you identify during your risk assessment process. While you can integrate these policies into your wider corporate policy documentation, cloud policy statements explored in the Cloud Adoption Framework guidance tend to be a more concise summary of the risks, and plans to deal with them. Include these pieces of information in each definition:
+The first step in translating compliance requirements is understanding which regulations create risk for your organization. Noncompliance can result in financial penalties, legal action, reputational damage, or loss of ability to operate in certain markets. To assess these risks, identify which regulations apply to your organization based on:
 
-- **Business risk:** A summary of the risk this policy addresses.
-- **Policy statement:** A concise explanation of the policy requirements and goals.
-- **Design or technical guidance:** Actionable recommendations, specifications, or other guidance to support and enforce this policy that IT teams and developers use when designing and building their cloud deployments.
+- **Geography** - Where you operate and where your customers are located
+- **Industry** - Healthcare, financial services, government, or other regulated sectors
+- **Data types** - Personal data, payment card data, protected health information
 
-If you need help with defining your policies, consult the governance disciplines introduced in the governance section overview. The articles for these disciplines include examples of common business risks encountered when moving to the cloud and sample policies to address the risks. For example, see the Cost Management discipline's sample policy definitions.
+For each applicable regulation, document:
 
-### Incremental governance and integrating with existing policy
+- Specific control requirements (for example, "encrypt data in transit using TLS 1.2 or higher")
+- Audit and reporting obligations
+- Penalties for noncompliance
 
-Vet the planned additions to your cloud environment for compliance with existing policy. Update your policy to account for issues not already covered. You should also perform a regular cloud policy review to ensure your cloud policy is up-to-date and in sync with any new corporate policy.
+#### Step 2: Document governance policies
 
-The need to integrate cloud policy with your legacy IT policies depends largely on the maturity of your cloud governance processes and the size of your cloud estate.
+Convert regulatory requirements into clear policy statements. Each policy should include:
 
-## Align design with corporate policy - cloud governance design guides
+- **Business risk** - The regulatory or business risk being addressed
+- **Policy statement** - A clear requirement (for example, "All storage accounts must use customer-managed encryption keys")
+- **Technical guidance** - How to implement the policy in Azure
 
-After you've defined cloud policies based on your identified risks, you'll need to generate actionable guidance that aligns with these policies for your IT staff and developers to refer to. Drafting a cloud governance design guide allows you to specify specific structural, technological, and process choices based on the policy statements you generated for each of the five governance disciplines.
+#### Step 3: Enforce policies with technical controls
 
-A cloud governance design guide should:
+Implement policies using Azure governance tools:
 
-* Establish the architecture choices and design patterns for each of the core infrastructure components of cloud deployments that best meet your policy requirements.
-* Provide a high-level explanation of the technology, tools, and processes that will support these design decisions.
-* Provide platform-specific implementation details that your IT and dev teams can use when creating and deploying cloud-based workloads
-* Focus on the architecture, tools, and features of your chosen platform when making design decision and providing guidance.
+- **Azure Policy** - Define and enforce configuration standards across resources
+- **Management groups** - Apply policies consistently across subscriptions
+- **Microsoft Defender for Cloud** - Monitor compliance posture against regulatory standards
+- **Microsoft Purview** - Govern data across your entire data estate
 
-While cloud design guides should take into account some of the technical details associated with each infrastructure component, they're not meant to be extensive technical documents or specifications. Make sure your guides address your policy statements and clearly state design decisions in a format easy for staff to understand and reference.
+#### Step 4: Monitor and refine
 
-## Implementing resource governance MVP
+Establish continuous monitoring to track compliance status:
 
-A set of global policies and RBAC roles will provide a baseline level of governance enforcement. To meet the cloud governance team's policy requirements, implementing the governance MVP requires completing the following tasks:
+- Use Defender for Cloud's regulatory compliance dashboard to measure adherence
+- Configure alerts for policy violations
+- Review and update policies as regulations change
 
-1.  Identify the Azure Policy definitions needed to enforce business requirements. This might include using built-in definitions and creating new custom definitions. To keep up with the pace of newly released built-in definitions, there's an [Atom feed](https://github.com/Azure/azure-policy/commits/master/built-in-policies.atom) of all the commits for built-in policies, which you can use for an RSS feed. Alternatively, you can check [`AzAdvertizer`](https://www.azadvertizer.net/).
-2.  Create a blueprint definition using these built-in and custom policy and the role assignments required by the governance MVP.
-3.  Apply policies and configuration globally by assigning the blueprint definition to all subscriptions.
+## Map Zero Trust principles to compliance controls
 
-#### Identify policy definitions
+Zero Trust architecture provides a foundation for meeting regulatory requirements. Each principle aligns with common compliance controls:
 
-Azure provides several built-in policies and role definitions that you can assign to any management group, subscription, or resource group. Many common governance requirements can be handled using built-in definitions. However, it's likely that you will also need to create custom policy definitions to handle your specific requirements.
+| Zero Trust Principle | Compliance Application |
+|---------------------|------------------------|
+| **Verify explicitly** | Supports access control requirements (ISO 27001 A.9.2), user authentication mandates (NIST 800-53 IA controls) |
+| **Use least privilege** | Addresses segregation of duties (SOX), role-based access (PCI-DSS 7.1), need-to-know principles |
+| **Assume breach** | Supports incident detection (NIST 800-53 IR controls), logging requirements, breach notification obligations |
 
-Custom policy definitions are saved to either a management group or a subscription and are inherited through the management group hierarchy. If a policy definition's save location is a management group, that policy definition is available to assign to any of that group's child management groups or subscriptions.
+When designing solutions, map each regulatory control to the appropriate Zero Trust pillar:
 
-Since the policies required to support the governance MVP are meant to apply to all current subscriptions, the following business requirements will be implemented using a combination of built-in definitions and custom definitions created in the root management group:
+- **Identity** - Authentication, access provisioning, privileged access management
+- **Devices** - Endpoint compliance, device health verification
+- **Network** - Segmentation, traffic inspection, perimeter controls
+- **Applications** - Secure development, API security, application access
+- **Data** - Classification, encryption, data loss prevention
+- **Infrastructure** - Configuration management, vulnerability management
 
-1.  Restrict the list of available role assignments to a set of built-in Azure roles authorized by your cloud governance team. This requires a custom policy definition.
-2.  Require the following tags on all resources: _Department/Billing Unit_, _Geography_, _Data Classification_, _Criticality_, _SLA_, _Environment_, _Application Archetype_, _Application_, and _Application Owner_. This can be handled using the `Require specified tag` built-in definition.
-3.  Require that the `Application` tag for resources should match the name of the relevant resource group. This can be handled using the `Require tag and its value` built-in definition.
+## Design considerations for compliance solutions
 
-#### Assign Azure Policy and RBAC roles using Azure Blueprints
+When translating requirements into solutions, consider:
 
-Azure policies can be assigned at the resource group, subscription, and management group level, and can be included in Azure Blueprints definitions. Although the policy requirements defined in this governance MVP apply to all current subscriptions, it's very likely that future deployments will require exceptions or alternative policies. As a result, assigning policy using management groups, with all child subscriptions inheriting these assignments, may not be flexible enough to support these scenarios.
+#### Automation vs. manual controls
 
-Azure Blueprints allows consistent assignment of policy and roles, application of Resource Manager templates, and deployment of resource groups across multiple subscriptions. Like policy definitions, blueprint definitions are saved to management groups or subscriptions. The policy definitions are available through inheritance to any children in the management group hierarchy.
+- **Preventive controls** (Azure Policy deny effects) block noncompliant configurations before deployment
+- **Detective controls** (Defender for Cloud assessments) identify existing compliance gaps
+- **Corrective controls** (Policy remediation tasks) automatically fix noncompliant resources
 
-The cloud governance team has decided that enforcement of required Azure Policy and RBAC assignments across subscriptions will be implemented through Azure Blueprints and associated artifacts:
+Automate where possible to reduce human error and enable consistent enforcement at scale.
 
-1.  In the root management group, create a blueprint definition named `governance-baseline`.
-2.  Add the following blueprint artifacts to the blueprint definition:
-    1.  Policy assignments for the custom Azure Policy definitions defined at the management group root.
-    2.  Resource group definitions for any groups required in subscriptions created or governed by the Governance MVP.
-    3.  Standard role assignments required in subscriptions created or governed by the Governance MVP.
-3.  Publish the blueprint definition.
-4.  Assign the `governance-baseline` blueprint definition to all subscriptions.
+#### Evidence collection for audits
 
-See the [Azure Blueprints documentation](/azure/governance/blueprints/overview) for more information on creating and using blueprint definitions.
+Design your solution to automatically capture compliance evidence:
+
+- Enable diagnostic logging on all resources
+- Configure log retention to meet regulatory requirements
+- Use Defender for Cloud export capabilities to generate compliance reports
+- Maintain audit trails for access and configuration changes
+
+#### Multicloud and hybrid considerations
+
+If your organization operates across multiple clouds or maintains on-premises infrastructure:
+
+- Use Microsoft Defender for Cloud's multicloud support to assess compliance across Azure, AWS, and GCP
+- Apply consistent policies using tools that span environments
+- Ensure your compliance monitoring provides a unified view across all platforms
+
+#### Exception management
+
+Not every resource can meet every policy. Design an exception process that:
+
+- Requires documented business justification
+- Includes compensating controls
+- Has defined expiration dates
+- Is tracked and audited
+
+## Implement a compliance baseline
+
+Start with a minimum viable governance baseline:
+
+- **Assign regulatory compliance initiatives** - Enable built-in initiatives in Defender for Cloud that map to your required frameworks (MCSB, PCI-DSS, ISO 27001)
+- **Create a management group hierarchy** - Organize subscriptions to enable consistent policy application
+- **Apply foundational policies** - Implement policies for tagging, allowed regions, required encryption, and network security
+- **Configure monitoring** - Set up compliance dashboards and alerts for policy violations
+
+This baseline provides immediate visibility into your compliance posture and a foundation for continuous improvement.

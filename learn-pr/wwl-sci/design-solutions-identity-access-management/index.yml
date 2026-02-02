@@ -1,9 +1,9 @@
 ### YamlMime:Module
 uid: learn.wwl.design-solutions-identity-access-management
 metadata:
-  title: Design Solutions for Identity and Access Management
-  description: "You learn about various strategies for managing identities and access to resources, including hybrid and multicloud scenarios, external identities, and conditional access."
-  ms.date: 07/30/2025
+  title: Design solutions for identity and access management
+  description: "Learn how to design identity and access management solutions for cloud, hybrid, and multicloud environments, including external identities, Conditional Access, and secrets management."
+  ms.date: 01/30/2026
   author: ceperezb
   ms.author: ceperezb
   ms.topic: module
@@ -11,18 +11,19 @@ metadata:
   ai-usage: ai-assisted
 title: Design solutions for identity and access management
 summary: |
-  You learn about various strategies for managing identities and access to resources, including hybrid and multicloud scenarios, external identities, and conditional access.
+  Design identity and access management solutions that protect organizational resources while enabling productivity. Learn how to design access strategies for different deployment models, enable secure external collaboration, implement modern authentication, and protect identity infrastructure.
 abstract: |
-  By the end of this module, you are able to:
-  -   Design cloud, hybrid and multicloud access strategies
-  -   Design a solution for Azure Active Directory (Azure AD), part of Microsoft Entra
-  -   Design a solution for external identities
-  -   Design modern authentication and authorization strategies
-  -   Specify requirements to secure Active Directory Domain Services
-  -   Design a solution to manage secrets, keys, and certificates
+  By the end of this module, you're able to:
+  - Design access strategies for cloud, hybrid, and multicloud environments
+  - Design a solution for external identities, including B2B collaboration and customer identity
+  - Design modern authentication and authorization strategies
+  - Validate Conditional Access alignment with Zero Trust
+  - Specify requirements for securing Active Directory Domain Services
+  - Design a solution for managing secrets, keys, and certificates
 prerequisites: |
-  - Advanced experience and knowledge in identity and access, platform protection, security operations, securing data, and securing applications.
-  - Experience with hybrid and cloud implementations.
+  - Advanced experience with identity and access concepts including authentication, authorization, and Active Directory
+  - Experience with Microsoft Entra ID, Conditional Access, and Azure Key Vault
+  - Conceptual knowledge of Zero Trust security principles
 iconUrl: /learn/achievements/design-solutions-for-identity-and-access-management.svg
 levels:
 - advanced
@@ -35,9 +36,11 @@ products:
 - defender-for-cloud-apps
 - defender-identity
 - microsoft-sentinel
+- entra-id
 subjects:
   - security
   - cloud-security
+  - identity-access
 units:
 - learn.wwl.design-solutions-identity-access-management.introduction
 - learn.wwl.design-solutions-identity-access-management.design-cloud-hybrid-multi-cloud-access-strategies

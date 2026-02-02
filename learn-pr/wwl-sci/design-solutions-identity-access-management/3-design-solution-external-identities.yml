@@ -3,11 +3,11 @@ uid: learn.wwl.design-solutions-identity-access-management.design-solution-exter
 title: Design a solution for external identities
 metadata:
   title: Design a solution for external identities
-  description: "This is a unit which prepares for the Microsoft Cybersecurity Architect certification on the topic: design a solution for external identities."
-  ms.date: 03/03/2025
+  description: "Design B2B collaboration, customer identity, and decentralized identity solutions using Microsoft Entra External ID."
+  ms.date: 01/30/2026
   author: ceperezb
   ms.author: ceperezb
   ms.topic: unit
-durationInMinutes: 15
+durationInMinutes: 13
 content: |
   [!include[](includes/3-design-solution-external-identities.md)]

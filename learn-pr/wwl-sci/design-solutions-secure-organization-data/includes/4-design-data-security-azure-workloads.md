@@ -1,123 +1,193 @@
-This article outlines the basics of securing the data tier of an application using [Azure SQL Database](/azure/azure-sql/database/sql-database-paas-overview?view=azuresql), [Azure SQL Managed Instance](/azure/azure-sql/managed-instance/sql-managed-instance-paas-overview?view=azuresql), and [Azure Synapse Analytics](/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-overview-what-is). The security strategy described follows the layered defense-in-depth approach as shown in the picture below, and moves from the outside in:
+Azure data workloads including Azure SQL, Azure Synapse Analytics, and Azure Cosmos DB require security architectures that address their unique characteristics and threat models. This unit covers design considerations for securing data in these Azure services, aligned with MCSB controls and security best practices.
 
-![Diagram of layered defense-in-depth. Customer data is encased in layers of network security, access management and threat and information protections.](../media/sql-security-layer.png)
+## Design considerations for securing data in Azure workloads
 
-## Network security
+Before examining individual services, understand the common security patterns that apply across Azure data workloads. These patterns align with the defense-in-depth approach recommended by the WAF Security pillar and MCSB controls.
 
-Microsoft Azure SQL Database, Azure SQL Managed Instance, and Azure Synapse Analytics provide a relational database service for cloud and enterprise applications. To help protect customer data, firewalls prevent network access to the server until access is explicitly granted based on IP address or Azure Virtual network traffic origin.
+### Defense in depth for data services
 
-### IP firewall rules
+Implement multiple security layers to protect your data workloads. The following diagram illustrates the layered defense-in-depth approach, showing how customer data is protected by successive layers of network security, access management, and threat and information protections:
 
-IP firewall rules grant access to databases based on the originating IP address of each request. 
+:::image type="content" source="../media/sql-security-layer.png" alt-text="Diagram of layered defense-in-depth showing customer data encased in layers of network security, access management, and threat and information protections." lightbox="../media/sql-security-layer.png":::
 
-### Virtual network firewall rules
+Each layer provides specific protections:
 
-[Virtual network service endpoints](/azure/virtual-network/virtual-network-service-endpoints-overview) extend your virtual network connectivity over the Azure backbone and enable Azure SQL Database to identify the virtual network subnet that traffic originates from. To allow traffic to reach Azure SQL Database, use the SQL [service tags](/azure/virtual-network/network-security-groups-overview) to allow outbound traffic through Network Security Groups.
+| Layer | Purpose | Common controls |
+|-------|---------|-----------------|
+| **Network security** | Control access paths to data services | Private endpoints, firewalls, VNet integration |
+| **Access management** | Verify and authorize who accesses data | Microsoft Entra authentication, RBAC, row-level security |
+| **Threat protection** | Detect and respond to security threats | Microsoft Defender, auditing, threat detection |
+| **Information protection** | Protect data confidentiality and integrity | TDE, CMK, Always Encrypted, TLS 1.2+ |
 
-[Virtual network rules](/azure/azure-sql/database/vnet-service-endpoint-rule-overview?view=azuresql) enable Azure SQL Database to only accept communications that are sent from selected subnets inside a virtual network.
+### Zero Trust principles for data workloads
 
-## Access management
+Apply Zero Trust principles consistently across all data services:
+
+- **Verify explicitly**: Use Microsoft Entra authentication rather than shared keys or connection strings where possible
+- **Least privilege access**: Grant minimal permissions through RBAC rather than administrative accounts
+- **Assume breach**: Enable threat detection, encrypt all data, and monitor for anomalies
+
+### Common design decisions
+
+When designing security for any Azure data workload, address these questions:
+
+- **Network access**: Should the service be accessible from the internet, or only through private endpoints?
+- **Authentication method**: Can you use Microsoft Entra ID, or do legacy requirements mandate other methods?
+- **Key management**: Are platform-managed keys sufficient, or do regulations require customer-managed keys?
+- **Threat detection**: What level of monitoring and alerting does the workload require?
+
+## Design security for Azure SQL Database and Azure SQL Managed Instance
+
+[Azure SQL Database and Azure SQL Managed Instance](/azure/azure-sql/database/security-overview) provide a relational database service for cloud and enterprise applications with comprehensive security capabilities.
+
+### Network security for Azure SQL
+
+Firewalls prevent network access to the server until you explicitly grant access based on IP address or Azure Virtual network traffic origin.
+
+- **IP firewall rules**: Grant access to databases based on the originating IP address of each request
+- **Virtual network firewall rules**: Use [virtual network service endpoints](/azure/virtual-network/virtual-network-service-endpoints-overview) to allow traffic only from selected subnets inside a virtual network
+- **Private endpoints**: Assign a private IP address from your VNet for complete network isolation through Azure Private Link
+- **Network security perimeter**: Create logical network boundaries around your PaaS resources (preview for Azure SQL Database)
+
+> [!NOTE]
+> Controlling access with firewall rules doesn't apply to SQL Managed Instance. For more information about the networking configuration needed, see [Connecting to a managed instance](/azure/azure-sql/managed-instance/connect-application-instance).
+
+### Authentication for Azure SQL
+
+Azure SQL Database and SQL Managed Instance support multiple authentication methods:
+
+- **Microsoft Entra authentication**: Centrally manage identities and permissions using Microsoft Entra ID. Supports multifactor authentication, Integrated Windows authentication, and Conditional Access. This is the preferred method for all new deployments.
+- **Windows authentication (Kerberos)**: Available for Azure SQL Managed Instance only. Enables Windows authentication for Microsoft Entra principals, allowing customers to move existing services to the cloud while maintaining a seamless user experience.
+- **SQL authentication**: Username and password authentication. Avoid for new deployments; use only for legacy applications that can't support Microsoft Entra authentication.
+
+### Authorization and access management
+
+Manage permissions by adding user accounts to [database roles](/sql/relational-databases/security/authentication-access/database-level-roles) and assigning database-level permissions to those roles. As a best practice, create custom roles when needed and add users to the role with the least privileges required to do their job function.
+
+The following diagram shows how Row-Level Security shields individual rows of a SQL database from access by users through a client app:
+
+:::image type="content" source="../media/row-level-security.png" alt-text="Diagram showing Row-Level Security shielding individual rows of an SQL database from access by users via a client app.":::
+
+Authorization controls include:
+
+- **Server-level roles**: Control administrative access (Azure SQL Managed Instance provides fixed and custom server-level roles)
+- **Database-level roles**: Manage data access permissions
+- **Row-level security**: Control access to rows based on user characteristics or execution context
+- **Column-level permissions**: Restrict access to sensitive columns
+- **Dynamic data masking**: Obfuscate sensitive data for nonprivileged users
+
+### Information protection and encryption
+
+Azure SQL provides comprehensive encryption capabilities:
+
+**Transparent Data Encryption (TDE)**: Adds a layer of security to help protect data at rest from unauthorized or offline access to raw files or backups. In Azure, all newly created databases are encrypted by default with service-managed keys. You can also use [customer-managed keys (CMK)](/azure/azure-sql/database/transparent-data-encryption-byok-overview) stored in Azure Key Vault for greater control.
+
+**Always Encrypted**: Protects sensitive data stored in specific database columns from access by database administrators or other privileged users. The data is always encrypted—decrypted only for processing by client applications with access to the encryption key.
+
+:::image type="content" source="../media/always-encrypted.png" alt-text="Diagram showing the basics of Always Encrypted feature where an SQL database with a lock is only accessed by an app containing a key.":::
+
+**Transport Layer Security (TLS)**: SQL Database, SQL Managed Instance, and Azure Synapse Analytics always enforce TLS encrypted connections. Use TLS 1.2 or higher, and use TDS 8.0 with Strict connection encryption when available.
+
+### Threat protection for Azure SQL
+
+**Auditing**: Tracks database activities and helps maintain compliance with security standards by recording database events to an audit log. Allows you to monitor ongoing database activities and analyze historical activity to identify potential threats.
+
+**Advanced Threat Protection**: Analyzes logs to detect unusual behavior and potentially harmful attempts to access or exploit databases:
+
+Advanced Threat Protection creates alerts for:
+
+- SQL injection attempts
+- Potential data infiltration
+- Brute force attacks
+- Anomalies in access patterns indicating privilege escalations and breached credentials
+
+### Security management
+
+- **Vulnerability assessment**: Discover, track, and help remediate potential database vulnerabilities as part of Microsoft Defender for SQL
+- **Data discovery and classification**: Built-in capabilities for discovering, classifying, and labeling sensitive data in your databases
+- **Microsoft Defender for SQL**: Unified package for advanced SQL security capabilities
+
+## Design security for Azure Synapse Analytics
+
+[Azure Synapse Analytics](/azure/synapse-analytics/guidance/security-white-paper-introduction) is a PaaS analytics service that brings together dedicated SQL pools, serverless SQL pools, Apache Spark pools, and data integration pipelines. Azure Synapse implements a multi-layered security architecture for end-to-end protection of your data.
+
+### Security layers for Synapse
+
+Azure Synapse implements five security layers:
+
+:::image type="content" source="../media/azure-synapse-security-layers.png" alt-text="Diagram of the five layers of Azure Synapse security architecture: Data protection, Access control, Authentication, Network security, and Threat protection.":::
+
+### Data protection
+
+Data protection in Synapse covers data classification and encryption:
+
+- **At rest (storage)**: Azure Storage encryption with SSE and optional CMK
+- **At rest (database)**: TDE with service-managed or customer-managed keys
+- **In transit**: TLS 1.2 with AES-256 encryption
+- **Double encryption**: Infrastructure encryption at storage layer
+
+### Access control
+
+Synapse provides granular access controls to determine a user's right to interact with data:
+
+- **Synapse RBAC roles**: Manage workspace and resource access
+- **SQL permissions**: Control data access in SQL pools using row-level security and column-level security
+- **Azure RBAC**: Manage control plane access
+- **Data exfiltration protection**: Prevent unauthorized data export to external locations
 
 ### Authentication
 
-Authentication is the process of proving the user is who they claim to be. Azure SQL Database and SQL Managed Instance support SQL authentication and Microsoft Entra authentication. SQL Managed instance additionally supports Windows Authentication for Microsoft Entra principals.
+Prove the identity of users and applications through Microsoft Entra integration:
 
-#### SQL authentication
-    
-SQL authentication refers to the authentication of a user when connecting to Azure SQL Database or Azure SQL Managed Instance using username and password. A **server admin** sign-in with a username and password must be specified when the server is being created. Using these credentials, a **server admin** can authenticate to any database on that server or instance as the database owner. After that, other SQL logins and users can be created by the server admin, which enable users to connect using username and password.
-    
-<a name='azure-active-directory-authentication'></a>
+- **Microsoft Entra authentication**: Centralized identity management with support for multifactor authentication
+- **Managed identities**: Service-to-service authentication without credentials
+- **Service principals**: Application authentication for automated processes
 
-#### Microsoft Entra authentication
-    
-Microsoft Entra authentication is a mechanism of connecting to [Azure SQL Database](/azure/azure-sql/database/sql-database-paas-overview?view=azuresql), [Azure SQL Managed Instance](/azure/azure-sql/managed-instance/sql-managed-instance-paas-overview?view=azuresql) and [Azure Synapse Analytics](/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-overview-what-is) by using identities in Microsoft Entra ID. Microsoft Entra authentication allows administrators to centrally manage the identities and permissions of database users along with other Azure services in one central location. This includes the minimization of password storage and enables centralized password rotation policies.
-    
-A server admin called the **Active Directory administrator** must be created to use Microsoft Entra authentication with SQL Database. For more information, see [Connecting to SQL Database By Using Microsoft Entra authentication](/azure/azure-sql/database/authentication-aad-overview?view=azuresql). Microsoft Entra authentication supports both managed and federated accounts. The federated accounts support Windows users and groups for a customer domain federated with Microsoft Entra ID.
-    
-Additional Microsoft Entra authentication options available are [Active Directory Universal Authentication for SQL Server Management Studio](/azure/azure-sql/database/authentication-mfa-ssms-overview?view=azuresql) connections including [multi-factor authentication](/azure/active-directory/authentication/concept-mfa-howitworks) and [Conditional Access](/azure/azure-sql/database/conditional-access-configure?view=azuresql).
-    
-<a name='windows-authentication-for-azure-ad-principals'></a>
+### Network security
 
-#### Windows Authentication for Microsoft Entra Principals
-    
-[Kerberos authentication for Microsoft Entra Principals](/azure/azure-sql/managed-instance/winauth-azuread-overview?view=azuresql) enables Windows Authentication for Azure SQL Managed Instance. Windows Authentication for managed instances empowers customers to move existing services to the cloud while maintaining a seamless user experience and provides the basis for infrastructure modernization.
+Associate your Synapse workspace with a [managed workspace virtual network](/azure/synapse-analytics/security/synapse-workspace-managed-vnet) to:
 
-To enable Windows Authentication for Microsoft Entra principals, you'll turn your Microsoft Entra tenant into an independent Kerberos realm and create an incoming trust in the customer domain. Learn [how Windows Authentication for Azure SQL Managed Instance is implemented with Microsoft Entra ID and Kerberos](/azure/azure-sql/managed-instance/winauth-implementation-aad-kerberos?view=azuresql).
-    
-### Authorization
+- Isolate Spark and integration runtime resources inside the managed workspace virtual network
+- Require managed private endpoints for outbound connections
+- Ensure network isolation between workspaces for pipelines and Apache Spark workloads
+- Prevent data exfiltration through network controls
 
-Authorization refers to controlling access on resources and commands within a database. This is done by assigning permissions to a user within a database in Azure SQL Database or Azure SQL Managed Instance. Permissions are ideally managed by adding user accounts to [database roles](/sql/relational-databases/security/authentication-access/database-level-roles) and assigning database-level permissions to those roles. Alternatively an individual user can also be granted certain [object-level permissions](/sql/relational-databases/security/permissions-database-engine).
+### Threat protection
 
-As a best practice, create custom roles when needed. Add users to the role with the least privileges required to do their job function. Do not assign permissions directly to users. The server admin account is a member of the built-in db_owner role, which has extensive permissions and should only be granted to few users with administrative duties. To further limit the scope of what a user can do, the [EXECUTE AS](/sql/t-sql/statements/execute-as-clause-transact-sql) can be used to specify the execution context of the called module. Following these best practices is also a fundamental step towards Separation of Duties.
+Identify potential security threats through monitoring and alerting:
 
-### Row-level security
+- **Microsoft Defender for SQL**: Detect unusual access locations, SQL injection attacks, and authentication attacks
+- **Auditing**: Track database activities and maintain compliance with security standards
+- **Vulnerability assessment**: Discover and remediate potential security weaknesses
 
-Row-Level Security enables customers to control access to rows in a database table based on the characteristics of the user executing a query (for example, group membership or execution context). Row-Level Security can also be used to implement custom Label-based security concepts. 
+## Design security for Azure Cosmos DB
 
-![Diagram showing that Row-Level Security shields individual rows of a SQL database from access by users via a client app.](../media/azure-database-rls.png)
+[Azure Cosmos DB](/azure/cosmos-db/secure-access-to-data) is a globally distributed, multi-model database service designed for mission-critical applications. While Azure Cosmos DB provides built-in security features, follow best practices to further enhance security.
 
-## Threat protection
+### Network security for Cosmos DB
 
-SQL Database and SQL Managed Instance secure customer data by providing auditing and threat detection capabilities.
+- **Disable public network access and use Private Endpoints only**: Deploy Azure Cosmos DB with a configuration that restricts network access to an Azure-deployed virtual network. Disable public network access for the entire account and use private endpoints exclusively. For more information, see [configure access from private endpoints](/azure/cosmos-db/how-to-configure-private-endpoints).
+- **Enable Network Security Perimeter**: Use Network Security Perimeter (NSP) to restrict access to your Azure Cosmos DB account by defining network boundaries and isolating it from public internet access.
 
-### SQL auditing in Azure Monitor logs and Event Hubs
+### Identity management for Cosmos DB
 
-SQL Database and SQL Managed Instance auditing tracks database activities and helps maintain compliance with security standards by recording database events to an audit log in a customer-owned Azure storage account. Auditing allows users to monitor ongoing database activities, as well as analyze and investigate historical activity to identify potential threats or suspected abuse and security violations. For more information, see Get started with [SQL Database Auditing](/azure/azure-sql/database/auditing-overview?view=azuresql).
+- **Use managed identities**: Eliminate the need to manage credentials by providing an automatically managed identity in Microsoft Entra ID. Use managed identities to securely access Azure Cosmos DB from other Azure services without embedding credentials in your code.
+- **Use Azure control plane RBAC**: Apply Azure role-based access control to define fine-grained permissions for managing Azure Cosmos DB accounts, databases, and containers.
+- **Use native data plane RBAC**: Implement data plane role-based access control to enforce least privilege access for querying, creating, and accessing items within Azure Cosmos DB containers.
+- **Separate identities for data and control plane**: Use distinct Azure identities for control plane and data plane operations to reduce the risk of privilege escalation.
 
-### Advanced Threat Protection
+### Transport and data encryption for Cosmos DB
 
-Advanced Threat Protection is analyzing your logs to detect unusual behavior and potentially harmful attempts to access or exploit databases. Alerts are created for suspicious activities such as SQL injection, potential data infiltration, and brute force attacks or for anomalies in access patterns to catch privilege escalations and breached credentials use. Alerts are viewed from the [Microsoft Defender for Cloud](https://azure.microsoft.com/services/security-center/), where the details of the suspicious activities are provided and recommendations for further investigation given along with actions to mitigate the threat. Advanced Threat Protection can be enabled per server for an additional fee. 
+- **Enforce TLS 1.3**: Secure data in transit with the latest cryptographic protocols, ensuring stronger encryption and improved performance. For more information, see [Minimum TLS enforcement](/azure/cosmos-db/self-serve-minimum-tls-enforcement).
+- **Encrypt data at rest**: Data stored in Azure Cosmos DB is automatically and seamlessly encrypted with keys managed by Microsoft (service-managed keys). For greater control, use [customer-managed keys](/azure/cosmos-db/how-to-setup-customer-managed-keys) stored in Azure Key Vault.
+- **Use Always Encrypted**: Ensure sensitive data is encrypted on the client side before being sent to Azure Cosmos DB, providing an extra layer of security.
 
-![Diagram showing SQL Threat Detection monitoring access to the SQL database for a web app from an external attacker and malicious insider.](../media/azure-database-threat-protection.jpg)
+### Backup and data protection for Cosmos DB
 
-## Information protection and encryption
+- **Enable continuous backup and restore**: Protect your data by enabling continuous backup, which allows you to restore your Azure Cosmos DB account to any point in time within the retention period.
+- **Test backup and recovery procedures**: Regularly test the restoration of databases, containers, and items to verify the effectiveness of backup processes.
 
-### Transport Layer Security (Encryption-in-transit)
+### Threat detection for Cosmos DB
 
-SQL Database, SQL Managed Instance, and Azure Synapse Analytics secure customer data by encrypting data in motion with [Transport Layer Security (TLS)](/windows-server/security/tls/transport-layer-security-protocol).
-
-SQL Database, SQL Managed Instance, and Azure Synapse Analytics enforce encryption (SSL/TLS) at all times for all connections. This ensures all data is encrypted "in transit" between the client and server irrespective of the setting of **Encrypt** or **TrustServerCertificate** in the connection string.
-
-As a best practice, recommend that in the connection string used by the application, you specify an encrypted connection and _**not**_ trust the server certificate. This forces your application to verify the server certificate and thus prevents your application from being vulnerable to man in the middle type attacks.
-
-For example when using the ADO.NET driver this is accomplished via **Encrypt=True** and **TrustServerCertificate=False**. If you obtain your connection string from the Azure portal, it will have the correct settings.
-
-### Transparent Data Encryption (Encryption-at-rest)
-
-[Transparent data encryption (TDE) for SQL Database, SQL Managed Instance, and Azure Synapse Analytics](/azure/azure-sql/database/transparent-data-encryption-tde-overview?view=azuresql) adds a layer of security to help protect data at rest from unauthorized or offline access to raw files or backups. Common scenarios include data center theft or unsecured disposal of hardware or media such as disk drives and backup tapes. TDE encrypts the entire database using an AES encryption algorithm, which doesn't require application developers to make any changes to existing applications.
-
-In Azure, all newly created databases are encrypted by default and the database encryption key is protected by a built-in server certificate. Certificate maintenance and rotation are managed by the service and require no input from the user. Customers who prefer to take control of the encryption keys can manage the keys in [Azure Key Vault](/azure/key-vault/general/security-features).
-
-### Key management with Azure Key Vault
-
-[Bring Your Own Key](/azure/azure-sql/database/transparent-data-encryption-byok-overview?view=azuresql) (BYOK) support for [Transparent Data Encryption](/sql/relational-databases/security/encryption/transparent-data-encryption) (TDE) allows customers to take ownership of key management and rotation using [Azure Key Vault](/azure/key-vault/general/security-features), Azure's cloud-based external key management system. If the database's access to the key vault is revoked, a database cannot be decrypted and read into memory. Azure Key Vault provides a central key management platform, leverages tightly monitored hardware security modules (HSMs), and enables separation of duties between management of keys and data to help meet security compliance requirements.
-
-### Always Encrypted (Encryption-in-use)
-
-![Diagram showing the basics of the Always Encrypted feature. An SQL database with a lock is only accessed by an app containing a key.](../media/azure-database-always-encrypted.png)
-
-[Always Encrypted](/sql/relational-databases/security/encryption/always-encrypted-database-engine) is a feature designed to protect sensitive data stored in specific database columns from access (for example, credit card numbers, national/regional identification numbers, or data on a _need to know_ basis). This includes database administrators or other privileged users who are authorized to access the database to perform management tasks, but have no business need to access the particular data in the encrypted columns. The data is always encrypted, which means the encrypted data is decrypted only for processing by client applications with access to the encryption key. The encryption key is never exposed to SQL Database or SQL Managed Instance and can be stored either in the [Windows Certificate Store](/azure/azure-sql/database/always-encrypted-certificate-store-configure?view=azuresql) or in [Azure Key Vault](/azure/azure-sql/database/always-encrypted-azure-key-vault-configure?view=azuresql).
-
-### Dynamic data masking
-
-![Diagram showing dynamic data masking. A business app sends data to a SQL database which masks the data before sending it back to the business app.](../media/azure-database-dynamic-data-masking.png)
-
-Dynamic data masking limits sensitive data exposure by masking it to non-privileged users. Dynamic data masking automatically discovers potentially sensitive data in Azure SQL Database and SQL Managed Instance and provides actionable recommendations to mask these fields, with minimal impact to the application layer. It works by obfuscating the sensitive data in the result set of a query over designated database fields, while the data in the database is not changed. For more information, see [Get started with SQL Database and SQL Managed Instance dynamic data masking](/azure/azure-sql/database/dynamic-data-masking-overview?view=azuresql).
-
-## Security management
-
-### Vulnerability assessment
-
-[Vulnerability assessment](/azure/defender-for-cloud/sql-azure-vulnerability-assessment-overview) is an easy to configure service that can discover, track, and help remediate potential database vulnerabilities with the goal to proactively improve overall database security. Vulnerability assessment (VA) is part of the Microsoft Defender for SQL offering, which is a unified package for advanced SQL security capabilities. Vulnerability assessment can be accessed and managed via the central Microsoft Defender for SQL portal.
-
-### Data discovery and classification
-
-Data discovery and classification (currently in preview) provides basic capabilities built into Azure SQL Database and SQL Managed Instance for discovering, classifying and labeling the sensitive data in your databases. Discovering and classifying your utmost sensitive data (business/financial, healthcare, personal data, etc.) can play a pivotal role in your organizational Information protection stature. It can serve as infrastructure for:
-
--   Various security scenarios, such as monitoring (auditing) and alerting on anomalous access to sensitive data.
--   Controlling access to, and hardening the security of, databases containing highly sensitive data.
--   Helping meet data privacy standards and regulatory compliance requirements.
-
-### Compliance
-
-In addition to the above features and functionality that can help your application meet various security requirements, Azure SQL Database also participates in regular audits, and has been certified against a number of compliance standards. For more information, see the [Microsoft Azure Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview) where you can find the most current list of SQL Database compliance certifications.
+- **Enable Microsoft Defender for Azure Cosmos DB**: Automatically detect multiple security threats including data exfiltration attempts, potential SQL injection, and anomalous access patterns
+- **Enable resource logs**: Monitor your activity through Azure Monitor or custom diagnostic logs that can be analyzed with Azure Log Analytics
