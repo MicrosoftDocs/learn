@@ -1,5 +1,7 @@
 As a data engineer working with Azure Databricks, you often need to access data stored in Azure Data Lake Storage or other cloud storage services. Service principals provide a secure, automated way to authenticate these data access requests without using personal credentials.
 
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=010c0d72-1c44-481c-badd-755d32322f94]
+
 ## Understanding service principals for data access
 
 A service principal is an identity created for applications and services to access Azure resources. Think of it as an automated user account specifically designed for applications rather than humans.
@@ -83,8 +85,6 @@ When working with service principals for data access, several security practices
 **Never hardcode secrets in notebooks or code**. Client secrets are sensitive credentials that grant access to your data. Always retrieve them from a secure secret store like Azure Key Vault or Databricks secrets. This practice prevents accidental exposure if you share notebooks or commit code to version control.
 
 **Understand that secrets require rotation**. Unlike managed identities, service principal client secrets have expiration dates and must be rotated periodically. As a data engineer, you should be aware that if a secret expires, your data access will fail. Work with your administrators to understand the rotation schedule and know who to contact if authentication suddenly stops working.
-
-**Recognize the limitations of service principals with network-protected storage**. Service principals can't access storage accounts that are protected by virtual network rules or storage firewalls. If your organization uses network isolation for storage, you'll need to use managed identities instead. This limitation is one reason why Microsoft recommends managed identities for Unity Catalog storage credentials.
 
 **Apply the principle of least privilege**. Each service principal should have access only to the specific storage locations and data it needs. If a service principal is compromised, limited permissions reduce the potential impact. When requesting access, specify exactly which storage accounts and containers you need rather than requesting broad permissions.
 

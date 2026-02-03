@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.prompt-versioning-genaiops.summary
+title: Summary
+metadata:
+  title: Summary
+  description: "Summary of prompt versioning for GenAIOps"
+  ms.date: 01/07/2026
+  author: madiepev
+  ms.author: madiepev
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 2
+content: |
+  [!include[](includes/7-summary.md)]

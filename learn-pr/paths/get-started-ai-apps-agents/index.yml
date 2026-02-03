@@ -1,0 +1,39 @@
+### YamlMime:LearningPath
+uid: learn.wwl.get-started-ai-apps-agents
+metadata:
+  title: Get started with AI apps and agents on Azure
+  description: Learn how to get started with AI workloads and solutions in Microsoft Foundry.
+  brand: azure
+  ms.date: 01/21/2026
+  author: sherzyang
+  ms.author: sheryang
+  ms.topic: learning-path
+title: Get started with AI apps and agents on Azure
+summary: |
+  Learn how to get started with AI workloads and solutions in Microsoft Foundry. Start with a basic introduction and then dive into common AI workloads like:
+  - Generative AI and AI agents
+  - Text analysis
+  - Speech
+  - Computer vision
+  - Information extraction
+prerequisites: |
+  Before starting this learning path, you should already have a basic understanding of computing concepts and Python.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- ai-engineer
+- developer
+subjects:
+- artificial-intelligence
+products:
+- azure-ai-foundry
+modules:
+- learn.wwl.get-started-ai-in-foundry
+- learn.wwl.get-started-generative-ai-azure
+- learn.wwl.get-started-language-azure
+- learn.wwl.recognize-synthesize-speech
+- learn.wwl.get-started-computer-vision
+- learn.wwl.ai-information-extraction
+trophy:
+  uid: learn.get-started-ai-apps-agents.trophy

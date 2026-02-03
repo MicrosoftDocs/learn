@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.spec-driven-development-github-spec-kit-greenfield-intro.introduction-github-spec-kit
+title: "What is GitHub Spec Kit?"
+metadata:
+  title: "What is GitHub Spec Kit?"
+  description: "What is GitHub Spec Kit?"
+  ms.date: 01/26/2026
+  author: chrishowd
+  ms.author: cahowd
+  ms.topic: unit
+durationInMinutes: 9
+content: |
+  [!include[](includes/6-introduction-github-spec-kit.md)]

@@ -7465,3 +7465,338 @@ achievements:
   title: Automate multi-container Kubernetes deployments with Azure Pipelines
   summary: Deploy multiple containers to an Azure Kubernetes Service cluster with Azure Pipelines.
   iconUrl: /training/achievements/azure-devops/deploy-kubernetes.svg
+- uid: learn.prepare-azure-dev-environment.badge
+  type: badge
+  title: Prepare your development environment for Azure development
+  summary: Set up your local development environment with several popular integrated development environments (IDEs).
+  iconUrl: /training/achievements/prepare-your-dev-environment-for-azure-development.svg
+- uid: learn.azure.app-service-scale-up-scale-out.badge
+  type: badge
+  title: Scale an App Service Web App to Efficiently Meet Demand with App Service Scale Up and Scale Out
+  summary: Respond to periods of increased activity by incrementally increasing the resources available. Then decreasing these resources when activity drops to reduce costs.
+  iconUrl: /training/achievements/app-service-scale-up-scale-out.svg
+- uid: learn.wwl.build-data-analytics-solutions.trophy
+  type: trophy
+  title: Build data analytics solutions using Azure Synapse serverless SQL pools
+  summary: Learn to build data analytics solutions using Azure Synapse serverless SQL pools
+  iconUrl: /training/achievements/build-data-analytics-solutions-social.png
+- uid: learn.wwl.build-data-pipeline-azure-synapse-analytics.badge
+  type: badge
+  title: Build a data pipeline in Azure Synapse Analytics
+  summary: Learn to build a data pipeline in Azure Synapse Analytics
+  iconUrl: /training/achievements/generic-badge-social.png
+- uid: learn.wwl.configure-azure-synapse-link-with-azure-cosmos-db.badge
+  type: badge
+  title: Implement Azure Synapse Link with Azure Cosmos DB
+  summary: Learn to implement Azure Synapse Link with Azure Cosmos DB
+  iconUrl: /training/achievements/configure-azure-synapse-link-with-azure-cosmos-db-social.png
+- uid: learn.wwl.create-metadata-objects-azure-synapse-serverless-sql-pools.badge
+  type: badge
+  title: Create a lake database in Azure Synapse Analytics
+  summary: Learn to create a lake database in Azure Synapse Analytics
+  iconUrl: /training/achievements/create-metadata-objects-in-azure-synapse-serverless-sql-pools-social.png
+- uid: learn.wwl.design-hybrid-transactional-analytical-processing.badge
+  type: badge
+  title: Plan hybrid transactional and analytical processing using Azure Synapse Analytics
+  summary: Learn to plan hybrid transactional and analytical processing using Azure Synapse Analytics
+  iconUrl: /training/achievements/design-a-hybrid-transactional-and-analytical-processing-social.png
+- uid: learn.wwl.design-multidimensional-schema-to-optimize-analytical-workloads.badge
+  type: badge
+  title: Analyze data in a relational data warehouse
+  summary: Learn to analyze data in a relational data warehouse
+  iconUrl: /learn/achievements/azure-synapse-analytics-multi-dimensional-schema-social.png
+- uid: learn.wwl.implement-synapse-link-for-sql.badge
+  type: badge
+  title: Implement Azure Synapse Link for SQL
+  summary: Learn to implement Azure Synapse Link for SQL
+  iconUrl: /training/achievements/implement-synapse-link-for-sql-social.png
+- uid: learn.wwl.introduction-to-azure-synapse-analytics.badge
+  type: badge
+  title: Introduction to Azure Synapse Analytics
+  summary: Get introduced to Azure Synapse Analytics
+  iconUrl: /training/achievements/introduction-to-azure-synapse-analytics-social.png
+- uid: learn.wwl.load-optimize-data-into-relational-data-warehouse.badge
+  type: badge
+  title: Load data into a relational data warehouse
+  summary: Learn to load data into a relational data warehouse
+  iconUrl: /training/achievements/generic-badge-social.png
+- uid: learn.wwl.manage-monitor-data-warehouse-activities.badge
+  type: badge
+  title: Manage and monitor data warehouse activities in Azure Synapse Analytics
+  summary: Learn to manage and monitor data warehouse activities in Azure Synapse Analytics
+  iconUrl: /training/achievements/manage-monitor-data-warehouse-activities-social.png
+- uid: learn.wwl.perform-data-engineering-with-azure-synapse-apache-spark-pools.trophy
+  type: trophy
+  title: Perform data engineering with Azure Synapse Apache Spark Pools
+  summary: Learn to perform data engineering with Azure Synapse Apache Spark Pools
+  iconUrl: /learn/achievements/perform-data-engineering-with-azure-synapse-apache-spark-pools-social.png
+- uid: learn.wwl.query-data-lake-using-azure-synapse-serverless-sql-pools.badge
+  type: badge
+  title: Use Azure Synapse serverless SQL pool to query files in a data lake
+  summary: Learn to use Azure Synapse serverless SQL pool to query files in a data lake
+  iconUrl: /training/achievements/query-data-in-the-lake-using-azure-synapse-serverless-sql-pools-social.png
+- uid: learn.wwl.secure-data-manage-users-azure-synapse-serverless-sql-pools.badge
+  type: badge
+  title: Secure data and manage users in Azure Synapse serverless SQL pools
+  summary: Learn to secure data and manage users in Azure Synapse serverless SQL pools
+  iconUrl: /training/achievements/secure-data-and-manage-users-in-azure-synapse-serverless-sql-pools-social.png
+- uid: learn.wwl.secure-data-warehouse-azure-synapse-analytics.badge
+  type: badge
+  title: Secure a data warehouse in Azure Synapse Analytics
+  summary: Learn to secure a data warehouse in Azure Synapse Analytics
+  iconUrl: /training/achievements/secure-a-data-warehouse-in-azure-synapse-analytics-social.png
+- uid: learn.wwl.transfer-transform-data-azure-synapse-analytics-pipelines.trophy
+  type: trophy
+  title: Transfer and transform data with Azure Synapse Analytics pipelines
+  summary: Learn to transfer and transform data with Azure Synapse Analytics pipelines
+  iconUrl: /training/achievements/generic-trophy-social.png
+- uid: learn.wwl.transform-data-spark-azure-synapse-analytics.badge
+  type: badge
+  title: Transform data with Spark in Azure Synapse Analytics
+  summary: Learn to transform data with Spark in Azure Synapse Analytics
+  iconUrl: /training/achievements/generic-badge-social.png
+- uid: learn.wwl.understand-big-data-engineering-with-apache-spark-azure-synapse-analytics.badge
+  type: badge
+  title: Analyze data with Apache Spark in Azure Synapse Analytics
+  summary: Learn to analyze data with Apache Spark in Azure Synapse Analytics
+  iconUrl: /training/achievements/understand-big-data-engineering-apache-spark-azure-synapse-analytics-social.png
+- uid: learn.wwl.use-azure-synapse-serverless-sql-pools-for-transforming-data-lake.badge
+  type: badge
+  title: Use Azure Synapse serverless SQL pools to transform data in a data lake
+  summary: Learn to use Azure Synapse serverless SQL pools to transform data in a data lake
+  iconUrl: /training/achievements/use-azure-synapse-serverless-sql-pools-for-transforming-the-data-in-the-lake-social.png
+- uid: learn.wwl.use-delta-lake-azure-synapse-analytics.badge
+  type: badge
+  title: Use Delta Lake in Azure Synapse Analytics
+  summary: Learn to use Delta Lake in Azure Synapse Analytics
+  iconUrl: /training/achievements/use-delta-lake-azure-synapse-analytics-social.png
+- uid: learn.wwl.use-spark-notebooks-azure-synapse-pipeline.badge
+  type: badge
+  title: Use Spark Notebooks in an Azure Synapse Pipeline
+  summary: Learn to use Spark Notebooks in an Azure Synapse Pipeline
+  iconUrl: /training/achievements/generic-badge-social.png
+- uid: learn.wwl.work-hybrid-transactional-analytical-processing-solutions.trophy
+  type: trophy
+  title: Work with Hybrid Transactional and Analytical Processing Solutions using Azure Synapse Analytics
+  summary: Learn to work with Hybrid Transactional and Analytical Processing Solutions using Azure Synapse Analytics
+  iconUrl: /training/achievements/work-hybrid-transactional-analytical-processing-solutions-social.png
+- uid: learn.wwl.work-with-data-warehouses-using-azure-synapse-analytics.trophy
+  type: trophy
+  title: Work with Data Warehouses using Azure Synapse Analytics
+  summary: Learn to work with Data Warehouses using Azure Synapse Analytics
+  iconUrl: /training/achievements/work-with-data-warehouses-using-azure-synapse-analytics-social.png
+- uid: learn.create-serverless-applications.trophy
+  type: trophy
+  title: Create serverless applications
+  summary: Azure Functions enable the creation of event driven, compute-on-demand systems that can be triggered by various external events. Learn how to leverage functions to execute server-side logic and build serverless architectures.
+  iconUrl: /training/achievements/create-serverless-applications.svg
+- uid: learn.create-serverless-logic-with-functions.badge
+  type: badge
+  title: Create serverless logic with Azure Functions
+  summary: Azure Functions allows developers to host business logic that can be executed without managing or provisioning infrastructure. 
+  iconUrl: /training/achievements/create-serverless-logic-with-azure-functions.svg
+- uid: learn.intro-azure-functions.badge
+  type: badge
+  title: Introduction to Azure Functions
+  summary: Learn how Azure Functions helps you to easily integrate serverless compute resources into your cloud-based solutions. An extensive set of bindings makes it easy for you to connect your code to key Azure services, while built-in support for the most used development languages lets you better use your existing skills.
+  iconUrl: /training/achievements/generic-badge.svg 
+- uid: learn.architect-messaging-serverless.trophy
+  type: badge
+  title: Architect message brokering and serverless applications in Azure
+  summary: Learn how to create reliable messaging for your applications, and how to take advantage of serverless application services in Azure.
+  iconUrl: /training/achievements/architect-messaging-serverless.svg
+- uid: learn.wwl.describe-verified-id-concepts.badge
+  type: badge 
+  title: Describe Microsoft Entra Verified ID concepts
+  summary: Learn the core concepts of decentralized identities and Microsoft Entra Verified ID.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.introduction-azure-networking-services.trophy
+  type: trophy 
+  title: Introduction to key Azure network security services
+  summary: Learn to protect your network from cyber security attacks with Azure network security services.
+  iconUrl: /training/achievements/introduction-to-azure-networking-services.svg
+- uid: learn.introduction-azure-private-link.badge
+  type: badge 
+  title: Introduction to Azure Private Link
+  summary: Describe how Azure Private Link enables private connectivity to Azure services, including its features, how it works, and its use cases.
+  iconUrl: /training/achievements/introduction-to-azure-private-link.svg
+- uid: learn.introduction-azure-virtual-wan.badge
+  type: badge 
+  title: Introduction to Azure Virtual WAN
+  summary: Consider constructing a wide area network (WAN) using software-defined Azure Virtual WAN networking services.
+  iconUrl: /training/achievements/introduction-to-azure-virtual-wan.svg
+- uid: learn.introduction-azure-web-application-firewall.badge
+  type: badge 
+  title: Introduction to Azure Web Application Firewall
+  summary: Describe how Azure Web Application Firewall protects Azure web applications from common attacks, including the features, how it's deployed, and common use cases.
+  iconUrl: /training/achievements/introduction-to-azure-web-application-firewall.svg
+- uid: learn.azure.introduction-infrastructure-code-using-bicep.badge
+  type: badge 
+  title: Introduction to infrastructure as code using Bicep
+  summary: Infrastructure as code can help you quickly and confidently scale your cloud deployments. By using Bicep and Azure Resource Manager, you can automate and simplify the provisioning of infrastructure resources.
+  iconUrl: /training/achievements/bicep/introduction-infrastructure-code-using-bicep.svg
+- uid: learn.azure.create-composable-bicep-files-using-modules.badge
+  type: badge 
+  title: Create Composable Bicep Files by Using Modules
+  summary: Design and build reusable modules to simplify your Bicep templates. Compose multiple modules into templates by using parameters and outputs.
+  iconUrl: /training/achievements/bicep/create-composable-bicep-files-using-modules.svg
+- uid: learn.connect-vm-with-azure-bastion.badge
+  type: badge 
+  title: Connect to virtual machines through the Azure portal by using Azure Bastion
+  summary: In this module, you'll evaluate Azure Bastion, deploy Azure Bastion to securely connect to Azure virtual machines directly within the Azure portal to effectively replace an existing jumpbox solution, monitor remote sessions by using diagnostic logs, and manage remote sessions by disconnecting a user session.
+  iconUrl: /training/achievements/connect-vm-with-azure-bastion.svg
+- uid: learn.connect-on-premises-network-with-vpn-gateway.badge
+  type: badge
+  title: Connect your on-premises network to Azure with VPN Gateway
+  summary: VPN Gateway in Azure provides secure connectivity between your on-premises networks and clients.
+  iconUrl: /training/achievements/connect-on-premises-network-with-vpn-gateway.svg
+- uid: learn.integrate-vnets-with-vnet-peering.badge
+  type: badge
+  title: Distribute your services across Azure virtual networks and integrate them by using virtual network peering
+  summary: Use virtual network peering to enable communication across virtual networks in a way that's secure and cost-effective.
+  iconUrl: /training/achievements/integrate-vnets-with-vnet-peering.svg
+- uid: learn.design-ip-addressing-for-azure.badge
+  type: badge
+  title: Design an IP addressing schema for your Azure deployment
+  summary: A good Azure IP addressing schema provides flexibility, room for growth, and integration with on-premises networks. The schema ensures that communication works for deployed resources, minimizes public exposure of systems, and gives the organization flexibility in its network. If not properly designed, systems might not be able to communicate, and more work is required to remediate the issue.
+  iconUrl: /training/achievements/design-ip-addressing-for-azure.svg
+- uid: learn.improve-app-scalability-resiliency-with-load-balancer.badge
+  type: badge
+  title: Improve application scalability and resiliency by using Azure Load Balancer
+  summary: Discuss the different load balancers in Azure and how to choose the right Azure load balancer solution to meet your requirements.
+  iconUrl: /training/achievements/improve-app-scalability-resiliency-with-load-balancer.svg
+- uid: learn.security.implement-network-security.trophy
+  type: trophy 
+  title: Implement network security in Azure
+  summary: Learn how to configure, protect, and isolate your networks in Azure.
+  iconUrl: /training/achievements/implement-network-security.svg
+- uid: learn.configure-the-network-for-your-virtual-machines.badge
+  type: badge 
+  title: Configure the Network for Your Virtual Machines
+  summary: Learn how to configure networking in a secure way for your Azure virtual machines.
+  iconUrl: /training/achievements/configure-network-for-azure-virtual-machines.svg
+- uid: learn.troubleshoot-azure-network-infrastructure.badge
+  type: badge 
+  title: Monitor and troubleshoot your end-to-end Azure network infrastructure by using network monitoring tools
+  summary: Use Azure Network Watcher tools, diagnostics, and logs to help find and fix networking issues in your Azure infrastructure.
+  iconUrl: /training/achievements/troubleshoot-azure-network-infrastructure.svg  
+- uid: learn.choose-storage-approach-in-azure.badge
+  type: badge 
+  title: Choose a data storage approach in Azure
+  summary: Learn how to use Azure Storage, Azure SQL Database, Azure Cosmos DB, or a combination of Azure resources for a performant solution in your business scenario.
+  iconUrl: /training/achievements/choose-storage-approach-in-azure.svg
+- uid: learn.store-app-data-with-azure-blob-storage.badge
+  type: badge 
+  title: Store application data with Azure Blob Storage
+  summary: Build an app that stores user files with Azure Blob Storage.
+  iconUrl: /training/achievements/store-app-data-with-azure-blob-storage.svg
+- uid: learn.build-app-with-scale-sets.badge
+  type: badge 
+  title: Build a scalable application with Virtual Machine Scale Sets
+  summary: Enable your application to automatically adjust to changes in load while minimizing costs with Virtual Machine Scale Sets.
+  iconUrl: /training/achievements/build-scalable-application-with-azure-virtual-machine-scale-sets.svg
+- uid: learn.bicep-pipelines-azdo.trophy
+  type: trophy 
+  title: Deploy Azure resources by using Bicep and Azure Pipelines
+  summary: Gain all of the benefits of infrastructure as code by using an automated pipeline to deploy your Bicep templates, and integrate other deployment activities with your pipelines. You'll build pipelines using Azure Pipelines.
+  iconUrl: /training/achievements/bicep/bicep-azure-pipelines.svg
+- uid: learn.azure.build-first-bicep-deployment-pipeline-using-azure-pipelines.badge
+  type: badge 
+  title: Build Your First Bicep Deployment Pipeline by Using Azure Pipelines
+  summary: Create an automated pipeline in Azure Pipelines that securely deploys resources to Azure from Bicep code. Configure your pipeline to run on a schedule or when your configuration changes.
+  iconUrl: /training/achievements/bicep/build-first-bicep-deployment-pipeline-using-azure-pipelines.svg
+- uid: learn.azure.authenticate-azure-deployment-pipeline-service-principals.badge
+  type: badge 
+  title: Authenticate your Azure Deployment Pipeline by Using Service Principals
+  summary: Service principals enable your deployment pipelines to authenticate securely with Azure.
+  iconUrl: /training/achievements/bicep/authenticate-azure-deployment-pipeline-service-principals.svg
+- uid: learn.azure.test-bicep-code-using-azure-pipelines.badge
+  type: badge 
+  title: Test Your Bicep Code by Using Azure Pipelines
+  summary: Validate and test Bicep code in your deployment pipeline. You'll use linting, preflight validation, and the what-if operation to validate your Azure changes before you deploy, and you'll test your resources after each deployment.
+  iconUrl: /training/achievements/bicep/test-bicep-code-using-azure-pipelines.svg  
+- uid: learn.powershell.powershell.trophy
+  type: trophy 
+  title: Automate administrative tasks by using PowerShell
+  summary: PowerShell can be used to automate tasks such as user management, CI/CD, managing cloud resources and much more. You'll learn to run commands, how to learn more about PowerShell and additionally to create and run script files.
+  iconUrl: /training/achievements/powershell/powershell.svg
+- uid: learn.powershell.intro-to-powershell.badge
+  type: badge 
+  title: Introduction to PowerShell
+  summary: Learn about the basics of PowerShell, a cross-platform command-line shell and scripting language that's built for task automation and configuration management. Learn what PowerShell is, what it's used for, and how to use it.
+  iconUrl: /training/achievements/powershell/introduction-to-powershell.svg
+- uid: learn.discover-commands.badge
+  type: badge 
+  title: Discover commands in PowerShell
+  summary: PowerShell comes with a built-in help system. Use help to read more about a command, what the command does, and how to call it. Also, if you inspect what a command returns, you can use that information to customize the output, determine what commands are logically grouped, and determine how to use the commands together. 
+  iconUrl: /training/achievements/powershell/discover-commands.svg
+- uid: learn.powershell.connect-commands.badge
+  type: badge 
+  title: Connect commands into a pipeline
+  summary: In this module, you'll learn how to connect commands into a pipeline. You'll also learn about _filtering left_, _formatting right_, and other important principles. 
+  iconUrl: /training/achievements/powershell/connect-commands.svg
+- uid: learn.languages.powershell-write-first.badge
+  type: badge 
+  title: Write your first PowerShell code
+  summary: In this module, you begin learning the basics of programming by writing and running code in PowerShell.
+  iconUrl: /training/achievements/powershell/powershell-write-first-code.svg
+- uid: learn.powershell.scripting-with-powershell.badge
+  type: badge 
+  title: Introduction to scripting in PowerShell
+  summary: This module introduces you to scripting with PowerShell. It introduces various concepts to help you create script files and make them as robust as possible.
+  iconUrl: /training/achievements/powershell/scripting-with-powershell.svg  
+- uid: learn.azure.access-data-azure-blob-storage-multiple-protocols.badge
+  type: badge 
+  title: Access Data from Azure Blob Storage by Using Multiple Protocols
+  summary: You can access your data from Azure Blob Storage by using different protocols such as representational state transfer (REST), Hadoop Distributed File System (HDFS), Network File System (NFS), and Secure File Transfer Protocol (SFTP).
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.manage-resources-in-azure.trophy
+  type: trophy 
+  title: Manage resources in Azure learning path
+  summary: Learn how to work with the Azure command line and web portal to create, manage, and control cloud based resources.
+  iconUrl: /training/achievements/manage-resources-in-azure.svg
+- uid: learn.align-requirements-in-azure.badge
+  type: badge 
+  title: Align requirements with cloud types and service models in Azure 
+  summary: Azure supports public, private, and hybrid cloud approaches to deploying cloud resources. Each approach affects several factors, including cost, maintenance requirements, and security.
+  iconUrl: /training/achievements/align-requirements-in-azure.svg
+- uid: learn.automate-azure-tasks-with-powershell.badge
+  type: badge 
+  title: Automate Azure tasks with Azure PowerShell
+  summary: Install Azure PowerShell locally and use it to manage Azure resources.
+  iconUrl: /training/achievements/automate-azure-tasks-with-powershell.svg
+- uid: learn.control-azure-services-with-cli.badge
+  type: badge 
+  title: Control Azure services with the CLI
+  summary: Install the Azure CLI locally and use it to manage Azure resources.
+  iconUrl: /training/achievements/control-azure-services-with-cli.svg
+- uid: learn.build-interactive-components-blazor-web-apps.badge
+  type: badge
+  title: Build rich interactive components with Blazor web apps
+  summary: Learn how to interoperate Blazor apps with JavaScript code, use templated components, and handle component lifecycle events.
+  iconUrl: /training/achievements/build-interactive-components-blazor-web-apps.svg
+- uid: learn.publish-manage-apis-with-azure-api-management.badge
+  type: badge 
+  title: Publish and manage your APIs with Azure API Management
+  summary: Use API management to control who uses your APIs, to enforce usage policies, and to present a professional front-end to developers using the API.
+  iconUrl: /training/achievements/publish-manage-apis-with-azure-api-management.svg
+- uid: learn.azdo.implement-code-workflow.badge
+  type: badge 
+  title: Implement a code workflow in your build pipeline by using Git and GitHub
+  summary: Collaborate with others and merge only the highest quality code.
+  iconUrl: /training/achievements/azure-devops/implement-a-code-workflow-in-your-build-pipeline.svg
+- uid: learn.azdo.manage-build-dependencies.badge
+  type: badge 
+  title: Manage build dependencies with Azure Artifacts
+  summary: Manage your application and the packages it uses across build Pipelines.
+  iconUrl: /training/achievements/azure-devops/manage-dependencies-in-your-build-pipeline.svg
+- uid: learn.azdo.build-applications-with-azure-devops.trophy
+  type: trophy 
+  title: Build applications with Azure DevOps learning path
+  summary: Azure DevOps enables you to build, test, and deploy any application to any cloud or on premises. Learn how to configure build pipelines that continuously build, test, and verify your applications.
+  iconUrl: /training/achievements/azure-devops/build-applications-with-azure-devops.svg 
+- uid: learn.azure.intro-to-azure-arc.badge
+  type: badge 
+  title: Introduction to Azure Arc
+  summary: In this module, you learn how Azure Arc  simplifies governance and management of hybrid environments by delivering a consistent multicloud and on-premises management platform. You learn how Azure Arc provides a centralized approach to managing Windows and Linux servers and Kubernetes clusters that are hosted outside of Azure. You also learn how Azure Arc-enabled data services provides unified management, deployment, and data sovereignty compliance. Finally, you get an idea of how Azure Arc can integrate with other Azure services.
+  iconUrl: /training/achievements/intro-to-azure-arc.svg

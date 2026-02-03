@@ -2,6 +2,8 @@ Let's examine how Unity Catalog manages query execution, with particular attenti
 
 ## The query lifecycle in Unity Catalog
 
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=4611258d-96a2-43d9-aa86-2160e6bd63a7]
+
 The following diagram illustrates the overall flow of a query as it moves through different components in Unity Catalog.
 
 ![Diagram showing the query lifecycle in Unity Catalog.](../media/query-lifecycle-unity-catalog.png)
@@ -48,9 +50,7 @@ Cloud storage returns the requested data to the compute resource. This process i
 
 ### Step 7: Fine-grained filtering
 
-Unity Catalog enables partition-level access, but **final row- and column-level filters** are enforced on the compute resource itself. This ensures that principals only see the exact subset of data they're entitled to access.
-
-- **Partition-level filtering** is enforced during query planning. Unity Catalog determines which partitions of a table a principal is allowed to access and prunes away the rest before data is retrieved from storage. This means that only the authorized portions of data are even scanned, improving both security and performance.
+Unity Catalog enforces **row- and column-level filters** on the compute resource itself. This ensures that principals only see the exact subset of data they're entitled to access.
 
 - **Row-level filtering** introduces conditions that are evaluated at query execution time inside the compute engine. Even though the underlying storage system may return a broader dataset, Unity Catalog ensures that only the rows matching the defined conditions are made visible to the requesting principal. This allows multiple users to query the same table but each receives a personalized, restricted view of the data. A row filter function is basically a predicate (a SQL expression or user-defined function) that is evaluated during query execution. 
 
@@ -61,6 +61,8 @@ Unity Catalog enables partition-level access, but **final row- and column-level 
 The filtered query result is returned from the compute resource to the calling user, job, or application.
 
 ## How queries work with Apache Hive
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=b4559747-622a-417f-9173-fdc908bafa31]
 
 Unity Catalog was designed to streamline governance, but it also maintains compatibility with the legacy Hive metastore. When a workspace is assigned to a Unity Catalog metastore, Hive appears as a special catalog named **hive_metastore**. Tables stored there can still be queried by referencing this catalog in the namespace.
 

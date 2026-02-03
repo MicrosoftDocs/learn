@@ -1,7 +1,7 @@
 Managing AI operations is about keeping your AI work consistent and reliable. Create an [AI Center of Excellence](/azure/cloud-adoption-framework/scenarios/ai/center-of-excellence) to guide strategy, choose the right framework (MLOps or GenAIOps), and standardize SDKs and APIs. Use sandboxes for safe experimentation and simplify tuning with tools like [Copilot Tuning.](/copilot/microsoft-365/copilot-tuning-overview) 
 
 > [!TIP]
-> For more information, consider the [Introduction to AI Center of Excellence](/training/modules/intro-ai-center-excellence/) training module.
+> To learn more, consider the [Introduction to AI Center of Excellence](/training/modules/intro-ai-center-excellence/) training module.
 
 :::image type="content" source="../media/manage-operations.png" alt-text="Diagram of the main management areas.":::
 
@@ -27,3 +27,7 @@ Managing AI data means ensuring its accurate, secure, and compliant. Create and 
 To keep AI services running during disruptions, you need a solid continuity plan that includes constant monitoring, multi-region deployments, and regular disaster-recovery testing. Continuous monitoring helps you catch issues early as models, data, and usage patterns evolve. 
 
 Deploying AI workloads—both generative and traditional—across multiple Azure regions provides redundancy and prevents outages. Use tools like Azure Front Door and Traffic Manager for automatic failovers. Strong version control and automated backups make it easy to restore models, pipelines, and configurations when something goes wrong. 
+
+> [!IMPORTANT]
+> Be sure to document your recovery procedures with clear responsibilities. 
+

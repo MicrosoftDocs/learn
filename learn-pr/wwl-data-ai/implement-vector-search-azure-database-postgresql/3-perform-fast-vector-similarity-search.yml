@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-vector-search-azure-database-postgresql.perform-fast-vector-similarity-search
+title: Perform fast vector similarity search
+metadata:
+  title: Perform Fast Vector Similarity Search
+  description: Perform fast vector similarity search
+  ms.date: 01/29/2026
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: unit
+durationInMinutes: 12
+content: |
+  [!include[](includes/3-perform-fast-vector-similarity-search.md)]

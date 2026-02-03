@@ -3,9 +3,9 @@ uid: learn.wwl.manage-azure-kubernetes-service-azure-stack-hci
 metadata:
   title: Manage Azure Kubernetes Service on Azure Stack HCI
   description: "Manage Azure Kubernetes Service on Azure Stack HCI"
-  ms.date: 06/09/2021
+  ms.date: 01/23/2026
   author: wwlpublish
-  ms.author: tonyj
+  ms.author: robbarefoot
   ms.topic: module
   ms.service: azure-stack-hub
 title: Manage Azure Kubernetes Service on Azure Stack HCI
@@ -54,4 +54,4 @@ units:
 - learn.wwl.manage-azure-kubernetes-service-azure-stack-hci.summary
 badge:
   uid: learn.wwl.manage-azure-kubernetes-service-azure-stack-hci.badge
-
+

@@ -4,10 +4,10 @@ title:  Design solutions for business continuity and disaster recovery (BCDR), i
 metadata:
   title:  Design solutions for business continuity and disaster recovery (BCDR), including secure backup and restore
   description: "Learn how to design solutions for business continuity and disaster recovery (BCDR), including secure backup and restore."
-  ms.date: 5/17/2024
+  ms.date: 01/21/2026
   author: ceperezb
   ms.author: ceperezb
   ms.topic: unit
-durationInMinutes: 10
+durationInMinutes: 7
 content: |
   [!include[](includes/4-configurations-secure-backup-restore.md)]

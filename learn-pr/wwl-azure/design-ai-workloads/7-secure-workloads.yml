@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.design-ai-workloads.secure-workloads
-title: "Secure AI"
+title: "Secure AI workloads"
 metadata:
   title: "Secure AI"
   description: "Learn to secure AI workloads by identifying risks, protecting resources, and safeguarding data."
-  ms.date: 01/09/2026
+  ms.date: 01/26/2026
   author: wwlpublish
   ms.author: cynthist
   ms.topic: unit

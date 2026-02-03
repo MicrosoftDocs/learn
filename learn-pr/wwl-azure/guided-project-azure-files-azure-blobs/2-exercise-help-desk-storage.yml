@@ -4,7 +4,7 @@ title: Exercise - Provide storage for the IT department testing and training
 metadata:
   title: Exercise - Provide storage for the IT department testing and training
   description: "Exercise - Provide storage for the IT department testing and training"
-  ms.date: 09/02/2024
+  ms.date: 01/01/2026
   author: wwlpublish
   ms.author: cynthist
   ms.topic: unit
@@ -12,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 10
 content: |
-  [!include[](includes/2-exercise-help-desk-storage.md)]
+  [!include[](includes/2-exercise-help-desk-storage.md)]

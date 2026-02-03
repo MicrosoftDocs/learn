@@ -1,13 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.design-solutions-identity-access-management.align-conditional-access-zero-trust
-title: Align conditional access and Zero Trust
+title: Validate alignment of Conditional Access policies with a Zero Trust strategy
 metadata:
-  title: Align conditional access and Zero Trust
-  description: "This is a unit which prepares for the Microsoft Cybersecurity Architect certification on the topic: align conditional access and Zero Trust."
-  ms.date: 09/26/2024
+  title: Validate alignment of Conditional Access policies with a Zero Trust strategy
+  description: "Validate that Conditional Access policies enforce Zero Trust principles of explicit verification, least privilege, and assume breach."
+  ms.date: 01/30/2026
   author: ceperezb
   ms.author: ceperezb
   ms.topic: unit
-durationInMinutes: 10
+durationInMinutes: 7
 content: |
   [!include[](includes/5-align-conditional-access-zero-trust.md)]

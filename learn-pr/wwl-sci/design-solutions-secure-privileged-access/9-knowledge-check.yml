@@ -3,8 +3,8 @@ uid: learn.wwl.design-solutions-secure-privileged-access.knowledge-check
 title: Module assessment
 metadata:
   title: Module assessment
-  description: "This is a knowledge check for the module: design solutions for securing privileged access management."
-  ms.date: 3/14/2023
+  description: "Test your knowledge on designing solutions for securing privileged access management."
+  ms.date: 01/27/2026
   author: ceperezb
   ms.author: ceperezb
   ms.topic: unit
@@ -27,59 +27,59 @@ durationInMinutes: 3
 content: |
 quiz:
   questions:
-  - content: "What is the Enterprise access model?"
+  - content: "What is the Enterprise Access Model?"
     choices:
-      - content: "It's a security architecture that leverages multiple layers to protect privileged assets."
+      - content: "A security architecture that organizes access control across control, management, and data/workload planes."
         isCorrect: true
-        explanation: "The Enterprise access model helps organizations control access to resources and minimize security risks by relying on layered security principles and role-based access control."
-      - content: "It's a cloud service from Microsoft that provides identity and access management capabilities."
+        explanation: "The Enterprise Access Model organizes access across three planes (control, management, and data/workload) and helps organizations apply Zero Trust principles to privileged access."
+      - content: "A cloud service from Microsoft that provides identity and access management capabilities."
         isCorrect: false
-        explanation: "The Enterprise access model is a security concept, not a specific product or service from Microsoft."
-      - content: "It's a way of organizing digital assets so that they can be easily accessed and managed by end-users."
+        explanation: "The Enterprise Access Model is a security architecture concept, not a specific product or service from Microsoft."
+      - content: "A way of organizing digital assets so that end-users can easily access and manage them."
         isCorrect: false
-        explanation: "The Enterprise access model is about controlling and limiting access to digital assets, not making them more accessible."
-      - content: "It's a framework for extending IT capabilities by integrating different cloud services together."
+        explanation: "The Enterprise Access Model is about controlling and limiting privileged access to different planes, not making assets more accessible."
+      - content: "A framework for extending IT capabilities by integrating different cloud services together."
         isCorrect: false
-        explanation: "The Enterprise access model is a way of thinking about cybersecurity, not a framework for integrating cloud services."
-  - content: What is Privileged Access Management (PAM)?
+        explanation: "The Enterprise Access Model is a security architecture for privileged access control, not a cloud integration framework."
+  - content: "Which Zero Trust principle is most directly supported by requiring just-in-time activation for privileged roles?"
     choices:
-      - content: A tool used to simplify user provisioning
+      - content: "Verify explicitly"
         isCorrect: false
-        explanation: PAM isn't an identity and access management tool but rather it's focused on reducing the risk of privilege misuse within an organization.
-      - content: An account management tool designed for non-admin users
-        isCorrect: false
-        explanation: PAM is a security feature that minimizes the attack surface against privileged accounts and focuses on preventing privilege misuse.
-      - content: A control layer for managing access to high-risk services and applications
+        explanation: "Verify explicitly relates to authentication and authorization based on all available data points, not time-limited access."
+      - content: "Use least privilege access"
         isCorrect: true
-        explanation: PAM is designed to help minimize organizational risk by providing a control layer that ensures access to high-risk services is granted based on specific criteria such as business justification or time-bound provisioning.
-      - content: A baseline security feature that is enabled by default
+        explanation: "Just-in-time activation directly supports least privilege by ensuring users only have privileged access when needed and for limited durations."
+      - content: "Assume breach"
         isCorrect: false
-        explanation: PAM is an optional feature and must be explicitly enabled in Microsoft Azure-based subscriptions.
-  - content: What is Azure Lighthouse?
+        explanation: "Assume breach relates to minimizing blast radius and segmenting access, though JIT activation does help limit the window of opportunity for attackers."
+      - content: "Defense in depth"
+        isCorrect: false
+        explanation: "Defense in depth is a layered security strategy, not one of the three core Zero Trust principles."
+  - content: "What attack technique involves extracting password hashes from memory and using them to authenticate without knowing the actual password?"
     choices:
-      - content: A tool to manage compliance requirements in Azure
+      - content: "Kerberoasting"
         isCorrect: false
-        explanation: Azure Lighthouse doesn't specifically address compliance requirements. However, its features can help partners better understand their customer's levels of compliance requirements through delegated resource management.
-      - content: A monitoring and alerting service for Azure resources
-        isCorrect: false
-        explanation: Though Azure Lighthouse provides a degree of resource visibility, its main focus is primarily delegated resource management.
-      - content: A centralized management platform for third-party managed services providers
+        explanation: "Kerberoasting involves requesting service tickets and cracking them offline, not extracting password hashes from memory."
+      - content: "Pass-the-hash"
         isCorrect: true
-        explanation: Azure Lighthouse is a unified management platform that enables cross-tenant, multi-service, remote-management scenarios for MSPs and cloud solution providers.
-      - content: A network-level security service that protects Azure virtual networks
+        explanation: "Pass-the-hash attacks extract NTLM password hashes from memory and use them directly for authentication, bypassing the need for the plaintext password."
+      - content: "Golden ticket"
         isCorrect: false
-        explanation: Though it's part of Azure Core Services, Azure Lighthouse doesn't offer any specific network-level security services such as virtual network protection.
-  - content: What are Privileged Access Devices?
+        explanation: "Golden ticket attacks involve forging Kerberos tickets using the KRBTGT account hash, not extracting password hashes from memory."
+      - content: "DCSync"
+        isCorrect: false
+        explanation: "DCSync involves replicating password hashes from domain controllers using replication protocols, not extracting them from memory on compromised systems."
+  - content: "What is the recommended approach for administering AI workloads that access sensitive training data?"
     choices:
-      - content: Any device assigned to a privileged user
+      - content: "Grant permanent access to AI administrators to ensure continuous model training"
         isCorrect: false
-        explanation: A Privileged Access Device is a dedicated workstation designated for administrative tasks that can assist in reducing the risk of clients' credential theft and lateral movement.
-      - content: Devices that are protected by conditional access rules
+        explanation: "Permanent access violates the least privilege principle. AI administrators should use time-limited, just-in-time access for training activities."
+      - content: "Allow AI agents to self-elevate permissions when needed for training tasks"
         isCorrect: false
-        explanation: While conditional access is available as a security mechanism for various client devices, this definition doesn't correspond to Privileged Access Devices.
-      - content: Devices running software that constantly monitors and blocks malicious activities
-        isCorrect: false
-        explanation: Although such activity analyzers exist in endpoint management systems, they are not limited to Privileged Access Devices.
-      - content: Secure workstations used to access sensitive resources
+        explanation: "AI agents shouldn't have the ability to self-elevate permissions. Human oversight and approval workflows should govern permission changes."
+      - content: "Use time-limited, just-in-time access with approval workflows for training activities"
         isCorrect: true
-        explanation: Privileged Access Devices are devices designated for accessing sensitive
+        explanation: "AI model administration should follow the same privileged access principles as other sensitive activities, using JIT access and approval workflows to minimize risk."
+      - content: "Exempt AI workloads from privileged access controls due to their autonomous nature"
+        isCorrect: false
+        explanation: "AI workloads should be subject to the same privileged access controls as other sensitive activities, not exempted from them."

@@ -26,13 +26,13 @@ Use high-performance file storage for hot data actively used during AI jobs to s
 
 :::image type="content" source="../media/network-concepts.png" alt-text="Diagram of a virtual network with platform concepts.":::
 
-AI workloads can move a ton of data, so you want a connection that doesn’t slow everything down. Consider Azure ExpressRoute that gives you a dedicated, high-bandwidth path that keeps data flowing quickly and reliably.
+AI workloads can move a ton of data, so you want a connection that doesn’t slow everything down. Consider Azure ExpressRoute that gives you a dedicated, high-bandwidth path that keeps data flowing quickly and reliably. Bandwidth is crucial for cloud processing of on-premises storage.
 
 It also helps to keep latency as low as possible. Placing your VMs and resources close together—ideally in the same region or in a Proximity Placement Group—cuts down on the travel time for data and makes training jobs run more efficiently.
 
-And if you’re working with multiple GPUs or multiple VMs, fast networking between nodes becomes essential. InfiniBand-enabled Azure VMs make GPU-to-GPU communication super-fast, and tools like Azure Batch can handle the setup for you automatically.
+And if you’re working with multiple GPUs or multiple VMs, fast networking between nodes becomes essential. Consider [high performance networking](/azure/cloud-adoption-framework/scenarios/ai/infrastructure/networking) particularly for GPU-accelerated tasks.
 
-> [!NOTE]
+> [!TIP]
 >  The [Introduction to AI Landing Zones](/training/modules/intro-ai-landing-zones/) training module provides details on Azure landing zones with AI workloads.
 
  

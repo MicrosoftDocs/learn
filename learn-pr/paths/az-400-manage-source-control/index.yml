@@ -38,6 +38,5 @@ modules:
 - learn.github.release-based-workflow-github
 - learn.github.github-actions-ci
 - learn.github.github-actions-cd
-- learn.azdo.implement-code-workflow
 trophy:
   uid: az-400-manage-source-control.trophy

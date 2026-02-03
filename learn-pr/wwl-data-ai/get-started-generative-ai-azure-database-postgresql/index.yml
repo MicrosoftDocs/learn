@@ -7,7 +7,6 @@ metadata:
   ms.author: calopez
   ms.date: 11/24/2024
   ms.service: azure-database-postgresql
-  ms.subservice: flexible-server
   ms.topic: module
   ms.collection:
     - wwl-ai-copilot
@@ -37,10 +36,11 @@ units:
 - learn.wwl.get-started-generative-ai-azure-database-postgresql.describe-azure-ai-extension
 - learn.wwl.get-started-generative-ai-azure-database-postgresql.explore-azure-openai-schema
 - learn.wwl.get-started-generative-ai-azure-database-postgresql.review-azure-cognitive-schema
+- learn.wwl.get-started-generative-ai-azure-database-postgresql.explore-semantic-operators
 - learn.wwl.get-started-generative-ai-azure-database-postgresql.examine-azure-machine-learning-schema
 - learn.wwl.get-started-generative-ai-azure-database-postgresql.exercise-explore-azure-ai-extension
 - learn.wwl.get-started-generative-ai-azure-database-postgresql.knowledge-check
 - learn.wwl.get-started-generative-ai-azure-database-postgresql.summary
 badge:
   uid: learn.wwl.get-started-generative-ai-azure-database-postgresql.badge
-
+

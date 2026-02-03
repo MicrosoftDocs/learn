@@ -3,12 +3,12 @@ uid: learn.wwl.design-ai-workloads
 metadata:
   title: "Design AI Workloads on Azure"
   description: "Learn to design AI workloads on Azure using SaaS, PaaS, and IaaS solutions. Align AI strategy with business goals and apply governance best practices."
-  ms.date: 01/09/2026
+  ms.date: 01/26/2026
   author: wwlpublish
   ms.author: cynthist
   ms.topic: module
   ms.service: azure-ai-services
-  hidden: true
+  hidden: false
 title: "Design AI Workloads on Azure"
 summary: Learn to design AI workloads using SaaS, PaaS, and IaaS solutions while aligning AI strategy with business goals and applying governance best practices.
 abstract: |

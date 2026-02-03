@@ -22,6 +22,8 @@ Lakeflow Connect represents the modern approach to data ingestion in Azure Datab
 
 Consider Lakeflow Connect when you need reliable, low-maintenance ingestion from supported sources. The managed connectors significantly reduce development time and ongoing maintenance compared to custom solutions. However, if your data source isn't supported or you need highly specialized ingestion logic, you might need to explore other options.
 
+Lakeflow Connect supports both **scheduled** ingestion (hourly, daily, weekly) and **on-demand** triggers, making it suitable for regular data refresh cycles and ad hoc loading scenarios.
+
 ## Auto Loader
 
 Auto Loader provides incremental file processing for data arriving in cloud storage. Rather than scanning entire directories to find new files, Auto Loader efficiently tracks which files have been processed and ingests only new arrivals.
@@ -50,7 +52,11 @@ The `COPY INTO` SQL command loads data from cloud storage into Delta tables. Unl
 
 :::image type="content" source="../media/3-copy-into.png" alt-text="Diagram explaining how COPY INTO works." border="false" lightbox="../media/3-copy-into.png":::
 
-Common scenarios for `COPY INTO` include one-time data migrations, scheduled batch loads from landing zones, and SQL-first workflows where you prefer declarative syntax over streaming APIs. However, for ongoing incremental ingestion at scale, Auto Loader provides better performance and more robust file discovery.
+Common scenarios for `COPY INTO` include one-time data migrations, scheduled batch loads from landing zones, and SQL-first workflows where you prefer declarative syntax over streaming APIs. 
+
+Choose `COPY INTO` over Auto Loader when you're performing a one-time batch load of a large dataset. `COPY INTO` provides a simpler configuration model without requiring streaming infrastructure, making it ideal for loading hundreds of gigabytes or even terabytes of data in a single operation. Auto Loader's continuous processing model and checkpoint management add unnecessary complexity when you only need to load data once.
+
+However, for ongoing incremental ingestion at scale, Auto Loader provides better performance and more robust file discovery.
 
 ## Spark Structured Streaming
 
