@@ -7610,6 +7610,41 @@ achievements:
   title: Describe Microsoft Entra Verified ID concepts
   summary: Learn the core concepts of decentralized identities and Microsoft Entra Verified ID.
   iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.introduction-azure-networking-services.trophy
+  type: trophy 
+  title: Introduction to key Azure network security services
+  summary: Learn to protect your network from cyber security attacks with Azure network security services.
+  iconUrl: /training/achievements/introduction-to-azure-networking-services.svg
+- uid: learn.introduction-azure-private-link.badge
+  type: badge 
+  title: Introduction to Azure Private Link
+  summary: Describe how Azure Private Link enables private connectivity to Azure services, including its features, how it works, and its use cases.
+  iconUrl: /training/achievements/introduction-to-azure-private-link.svg
+- uid: learn.introduction-azure-virtual-wan.badge
+  type: badge 
+  title: Introduction to Azure Virtual WAN
+  summary: Consider constructing a wide area network (WAN) using software-defined Azure Virtual WAN networking services.
+  iconUrl: /training/achievements/introduction-to-azure-virtual-wan.svg
+- uid: learn.introduction-azure-web-application-firewall.badge
+  type: badge 
+  title: Introduction to Azure Web Application Firewall
+  summary: Describe how Azure Web Application Firewall protects Azure web applications from common attacks, including the features, how it's deployed, and common use cases.
+  iconUrl: /training/achievements/introduction-to-azure-web-application-firewall.svg
+- uid: learn.azure.introduction-infrastructure-code-using-bicep.badge
+  type: badge 
+  title: Introduction to infrastructure as code using Bicep
+  summary: Infrastructure as code can help you quickly and confidently scale your cloud deployments. By using Bicep and Azure Resource Manager, you can automate and simplify the provisioning of infrastructure resources.
+  iconUrl: /training/achievements/bicep/introduction-infrastructure-code-using-bicep.svg
+- uid: learn.azure.create-composable-bicep-files-using-modules.badge
+  type: badge 
+  title: Create Composable Bicep Files by Using Modules
+  summary: Design and build reusable modules to simplify your Bicep templates. Compose multiple modules into templates by using parameters and outputs.
+  iconUrl: /training/achievements/bicep/create-composable-bicep-files-using-modules.svg
+- uid: learn.connect-vm-with-azure-bastion.badge
+  type: badge 
+  title: Connect to virtual machines through the Azure portal by using Azure Bastion
+  summary: In this module, you'll evaluate Azure Bastion, deploy Azure Bastion to securely connect to Azure virtual machines directly within the Azure portal to effectively replace an existing jumpbox solution, monitor remote sessions by using diagnostic logs, and manage remote sessions by disconnecting a user session.
+  iconUrl: /training/achievements/connect-vm-with-azure-bastion.svg
 - uid: learn.connect-on-premises-network-with-vpn-gateway.badge
   type: badge
   title: Connect your on-premises network to Azure with VPN Gateway
