@@ -59,8 +59,6 @@ Depending on which Surface model you have, you'll see different UEFI settings. T
 
 - **Date and time:** In the Date and time section, you can manually enter a new date and time for your Surface.
 
-:::image type="content" border="true" source="../media/uefi-about.png" alt-text="Screenshot of the About section in Surface UEFI settings.":::
-
 - **About:** When you select About, you'll see regulatory information.
 
 :::image type="content" border="true" source="../media/uefi-exit.png" alt-text="Screenshot of the Exit section in Surface UEFI settings.":::
