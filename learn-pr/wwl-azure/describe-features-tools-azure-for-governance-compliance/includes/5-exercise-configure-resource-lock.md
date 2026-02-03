@@ -4,4 +4,4 @@ Launch the exercise and follow the instructions.
 > [!NOTE]
 > You'll need access to a Microsoft Azure subscription to complete this exercise.
 
-[![Button to launch exercise.](../media/launch-exercise.png)](https://microsoftlearning.github.io/AZ-900-Microsoft-Azure-Fundamentals/Instructions/Labs/08-exercise-configure-resource-lock.html)
+[![Button to launch exercise.](../media/launch-exercise-button.png)](https://microsoftlearning.github.io/AZ-900-Microsoft-Azure-Fundamentals/Instructions/Labs/08-exercise-configure-resource-lock.html)
