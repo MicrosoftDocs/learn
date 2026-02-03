@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-started-with-generative-ai-and-agents.exercise
+title: Exercise - Get started with generative AI and agents in Microsoft Foundry 
+metadata:
+  title: Exercise - Get started with generative AI and agents in Microsoft Foundry
+  description: "Exercise - Get started with generative AI and agents in Microsoft Foundry"
+  author: graememalcolm
+  ms.author: gmalc
+  ms.date: 01/28/2026
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 45
+content: |
+  [!include[](includes/6-exercise.md)]

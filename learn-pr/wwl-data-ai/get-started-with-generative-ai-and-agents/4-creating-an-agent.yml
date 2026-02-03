@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-started-with-generative-ai-and-agents.creating-an-agent
+title: Creating an agent
+metadata:
+  title: Creating an agent
+  description: "Learn how to create a generative AI agent, including examples to understand its capabilities and applications."
+  ms.date: 1/28/2026
+  author: sherzyang
+  ms.author: sheryang
+  ms.topic: unit
+  ms.service: azure
+durationInMinutes: 4
+content: |
+  [!include[](includes/4-creating-an-agent.md)]

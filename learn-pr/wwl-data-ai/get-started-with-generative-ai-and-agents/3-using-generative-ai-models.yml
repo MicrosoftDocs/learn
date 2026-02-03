@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-started-with-generative-ai-and-agents.using-generative-ai-models
+title: Using a generative AI model
+metadata:
+  title: Using a generative AI model
+  description: "Learn how to use a generative AI model, including examples to understand its capabilities and applications."
+  ms.date: 1/28/2026
+  author: sherzyang
+  ms.author: sheryang
+  ms.topic: unit
+  ms.service: azure
+durationInMinutes: 4
+content: |
+  [!include[](includes/3-using-generative-ai-models.md)]
