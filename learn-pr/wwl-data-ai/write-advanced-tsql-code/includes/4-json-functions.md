@@ -32,7 +32,7 @@ CustomerID   CustomerName   OrderTotal
 
 The function navigates the JSON structure using the path expression and returns the value as an `NVARCHAR(4000)` string. You can cast the result to other data types as needed for calculations or comparisons.
 
-**JSON_QUERY()** extracts a JSON object or array (non-scalar values):
+**JSON_QUERY()** extracts a JSON object or array (nonscalar values):
 
 ```sql
 DECLARE @json NVARCHAR(MAX) = N'{
@@ -148,7 +148,7 @@ WITH (
 ```
 
 > [!NOTE]
-> When using `OPENJSON` with `CROSS APPLY`, rows from the main table that have `NULL` or empty JSON values won't appear in the results. Use `OUTER APPLY` if you need to include rows with no JSON data.
+> When using `OPENJSON` with `CROSS APPLY`, rows from the main table that have `NULL` or empty JSON values don't appear in the results. Use `OUTER APPLY` if you need to include rows with no JSON data.
 
 ## Construct JSON with JSON_OBJECT and JSON_ARRAY
 
@@ -438,7 +438,7 @@ CREATE INDEX IX_Products_Price ON Products(ProductPrice);
 Now queries filtering by category and brand, or sorting by price, can use these indexes efficiently.
 
 > [!TIP]
-> For frequently accessed JSON properties, computed columns with indexes can improve query performance by 10x or more compared to parsing JSON at query time. Monitor your query patterns and create computed columns for properties used in `WHERE`, `JOIN`, or `ORDER BY` clauses.
+> For frequently accessed JSON properties, computed columns with indexes can improve query performance compared to parsing JSON at query time. Monitor your query patterns and create computed columns for properties used in `WHERE`, `JOIN`, or `ORDER BY` clauses.
 
 ## Transform relational data to JSON with FOR JSON
 

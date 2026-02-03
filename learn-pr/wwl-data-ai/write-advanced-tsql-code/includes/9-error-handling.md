@@ -14,8 +14,6 @@ Well-designed error handling improves your code in several ways:
 
 - **Graceful degradation**: When one operation fails, error handling lets the rest of your code continue or take alternative action, rather than crashing the entire batch or stored procedure.
 
-In this unit, you'll learn how to implement structured error handling using `TRY...CATCH` blocks, retrieve error information, raise custom errors, and combine error handling with transaction management.
-
 ## Implement T-SQL error handling
 
 T-SQL provides structured error handling through `TRY...CATCH` blocks, similar to exception handling in other programming languages. When an error occurs in the `TRY` block, execution transfers to the `CATCH` block where you can handle the error appropriately:
@@ -38,7 +36,7 @@ SELECT 1/0;  -- Msg 8134: Divide by zero error encountered
 ```
 
 > [!NOTE]
-> `TRY...CATCH` cannot catch all errors. Compilation errors (syntax errors, missing objects) and errors with severity 20 or higher that close the connection cannot be caught within the same session.
+> `TRY...CATCH` can't catch all errors. Compilation errors (syntax errors, missing objects) and errors with severity 20 or higher that close the connection can't be caught within the same session.
 
 ## Retrieve error information
 
@@ -108,7 +106,7 @@ END CATCH;
 ```
 
 > [!TIP]
-> Always log errors before re-raising them. Once you use `THROW` or `RAISERROR`, the error functions return `NULL` if called again.
+> Always log errors before reraising them. Once you use `THROW` or `RAISERROR`, the error functions return `NULL` if called again.
 
 ## Handle transactions with TRY...CATCH
 
@@ -179,7 +177,7 @@ BEGIN
 END;
 ```
 
-`THROW` without parameters re-raises the current error:
+`THROW` without parameters reraises the current error:
 
 ```sql
 BEGIN CATCH

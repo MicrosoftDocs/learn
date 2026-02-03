@@ -7,7 +7,7 @@ In this unit, you'll learn how to use regular expression functions to search, ex
 Regular expressions (regex) use a pattern syntax to describe text patterns. Before you learn SQL Server's functions, review these common regex components:
 
 | Pattern | Description | Example Match |
-|---------|-------------|---------------|
+| ------- | ----------- | ------------- |
 | `.` | Any single character | `a.c` matches "abc", "a1c" |
 | `*` | Zero or more of preceding | `ab*c` matches "ac", "abc", "abbc" |
 | `+` | One or more of preceding | `ab+c` matches "abc", "abbc" but not "ac" |
@@ -15,7 +15,7 @@ Regular expressions (regex) use a pattern syntax to describe text patterns. Befo
 | `^` | Start of string | `^Hello` matches strings starting with "Hello" |
 | `$` | End of string | `world$` matches strings ending with "world" |
 | `[abc]` | Character class | `[aeiou]` matches any vowel |
-| `[^abc]` | Negated class | `[^0-9]` matches non-digits |
+| `[^abc]` | Negated class | `[^0-9]` matches nondigits |
 | `\d` | Digit (0-9) | `\d{3}` matches three digits |
 | `\w` | Word character | `\w+` matches word characters |
 | `{n}` | Exactly n occurrences | `\d{4}` matches exactly four digits |

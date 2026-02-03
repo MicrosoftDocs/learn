@@ -1,7 +1,5 @@
 Some data relationships are naturally represented as networks, including social connections, organizational hierarchies, product recommendations, and fraud detection patterns. While you can model these relationships using foreign keys and joins, graph queries using the `MATCH` operator provide a more intuitive and often more efficient way to traverse connected data.
 
-In this unit, you'll learn how to create graph tables and write queries using the `MATCH` operator. You'll explore how graph patterns simplify complex relationship traversals that would otherwise require multiple self-joins.
-
 ## Visualize graph data structures
 
 Before writing graph queries, it helps to visualize how graph data is organized. Consider a simple social network where people know each other and purchase products:

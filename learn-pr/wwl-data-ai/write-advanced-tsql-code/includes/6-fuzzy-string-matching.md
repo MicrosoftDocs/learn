@@ -1,7 +1,5 @@
 Real-world data rarely matches perfectly. Customer names might be misspelled, addresses abbreviated differently, or product descriptions entered inconsistently. Fuzzy string matching functions help you find records that are similar but not identical, enabling data quality improvements, duplicate detection, and more flexible search capabilities.
 
-In this unit, you'll learn how to use fuzzy string matching functions to find approximate matches in your data. You'll explore edit distance calculations and similarity scoring techniques.
-
 ## Understand string similarity concepts
 
 Fuzzy matching algorithms measure how similar two strings are by calculating the differences between them. Two primary approaches are commonly used:

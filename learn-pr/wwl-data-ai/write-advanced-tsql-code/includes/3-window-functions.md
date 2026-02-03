@@ -1,7 +1,5 @@
 Analytical queries often require calculations that span multiple rows while still returning individual row details. Traditional aggregate functions collapse rows into groups, losing row-level information. Window functions solve this challenge by performing calculations across a set of rows related to the current row, without collapsing the result set.
 
-In this unit, you'll learn how to write queries using window functions in SQL Server, Azure SQL, and SQL databases in Microsoft Fabric. You'll explore ranking functions, aggregate window functions, and analytical functions that support data analysis directly in T-SQL.
-
 ## Understand window function syntax
 
 Window functions calculate values across a "window" of rows defined by the `OVER` clause. Unlike regular aggregate functions, window functions don't group rows into a single output row. Instead, they compute values across related rows while preserving all original rows in the result.
@@ -227,7 +225,7 @@ Frame boundaries can be specified using:
 - `n FOLLOWING`: `n` rows after current row
 - `UNBOUNDED FOLLOWING`: To the partition end
 
-Calculate a moving average over the last 3 orders:
+Calculate a moving average over the last three orders:
 
 ```sql
 SELECT 
@@ -280,7 +278,7 @@ This query creates a centered moving average by including one row before and one
 
 ## Use analytical functions
 
-Analytical functions let you access data from other rows without using self-joins or subqueries. These functions are particularly useful for time-series analysis, trend detection, and comparing current values against historical or future values. Unlike aggregate window functions that compute summaries, analytical functions retrieve specific values from specific rows in the window.
+Analytical functions let you access data from other rows without using self-joins or subqueries. These functions are useful for time-series analysis, trend detection, and comparing current values against historical or future values. Unlike aggregate window functions that compute summaries, analytical functions retrieve specific values from specific rows in the window.
 
 **LAG()** and **LEAD()** access values from previous or subsequent rows:
 
@@ -364,6 +362,6 @@ Touring Tire Tube           4.99        0.0162        0.0243
 Road-150 Red, 62            3578.27     0.9919        1.0
 ```
 
-`PERCENT_RANK()` returns a value between 0 and 1 indicating what percentage of rows have lower values (0 means lowest, 1 means highest). `CUME_DIST()` shows the cumulative distribution, indicating what percentage of rows have values less than or equal to the current row. Use these functions for percentile analysis, identifying outliers, or creating distribution reports.
+`PERCENT_RANK()` returns a value between 0 and 1 indicating what percentage of rows have lower values (0 means lowest, one means highest). `CUME_DIST()` shows the cumulative distribution, indicating what percentage of rows have values less than or equal to the current row. Use these functions for percentile analysis, identifying outliers, or creating distribution reports.
 
 For more information about window functions, see [Window Functions (Transact-SQL)](/sql/t-sql/queries/select-over-clause-transact-sql?azure-portal=true) and [Ranking Functions](/sql/t-sql/functions/ranking-functions-transact-sql?azure-portal=true).

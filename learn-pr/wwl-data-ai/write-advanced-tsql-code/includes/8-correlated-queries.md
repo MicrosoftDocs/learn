@@ -24,7 +24,7 @@ WHERE p1.ListPrice > (
 );
 ```
 
-In the non-correlated example, the subquery calculates a single average price across all products. This value is computed once, and then each product's price is compared against that fixed number.
+In the noncorrelated example, the subquery calculates a single average price across all products. This value is computed once, and then each product's price is compared against that fixed number.
 
 In the correlated example, the subquery references `p1.ProductCategoryID` from the outer query. This creates a dependency: for each product row, the subquery calculates the average price for that specific category. A product in the "Bikes" category is compared against the bikes average, while a product in "Accessories" is compared against the accessories average.
 
@@ -52,7 +52,7 @@ Execution flow for correlated subquery:
 
 Correlated subqueries in the `WHERE` clause enable row-specific filtering conditions that would be impossible with static comparisons. Instead of comparing against a single fixed value, each row is evaluated against a dynamically calculated value based on that row's attributes.
 
-This pattern is particularly useful when you need to identify outliers within groups, find records that exceed their own category's threshold, or apply business rules that vary by context. The following example finds products priced above their category average, meaning a $50 accessory might be flagged as expensive while a $500 bike might not:
+This pattern is useful when you need to identify outliers within groups, find records that exceed their own category's threshold, or apply business rules that vary by context. The following example finds products priced above their category average, meaning a $50 accessory might be flagged as expensive while a $500 bike might not:
 
 ```sql
 SELECT 
@@ -196,7 +196,7 @@ One of the most practical applications of correlated subqueries is finding the t
 
 The correlated subquery examines each row and determines whether it belongs in the top N for its group by checking how many other rows in the same group rank higher. This approach works well when window functions aren't available or when you need complex ranking logic that window functions can't express.
 
-The following query finds the top 3 most expensive products per category by selecting products whose IDs appear in the top 3 for their category:
+The following query finds the top three most expensive products per category by selecting products whose IDs appear in the top 3 for their category:
 
 ```sql
 SELECT 
@@ -271,7 +271,7 @@ The following table summarizes scenarios where correlated subqueries are the pre
 
 | Scenario | Why correlated subqueries work best | Example use case |
 |----------|-------------------------------------|------------------|
-| **Compare against row-specific calculated values** | Each row needs its own dynamically calculated comparison value based on that row's attributes. Joins would require pre-aggregating all possible groups. | Find products priced above their own category's average. A $50 accessory might be expensive for its category while a $500 bike might be cheap for its category. |
+| **Compare against row-specific calculated values** | Each row needs its own dynamically calculated comparison value based on that row's attributes. Joins would require preaggregating all possible groups. | Find products priced above their own category's average. A $50 accessory might be expensive for its category while a $500 bike might be cheap for its category. |
 | **Test for related records with EXISTS/NOT EXISTS** | `EXISTS` is optimized for correlated subqueries and stops searching after finding the first match. More efficient than `IN` for large datasets. | Find customers who have never placed an order, or products that have never been sold. |
 | **Apply dynamic filtering based on current row values** | The filter criteria change based on each row's values, requiring conditions that can't be expressed with static joins. | Find each customer's most recent order that exceeds $500. The "most recent" and "$500 threshold" criteria apply per-customer. |
 | **Retrieve a single related value per row** | You need exactly one value from a related table for each row, with complex selection logic (TOP 1, specific ordering). | Show each employee alongside their most recent performance review score. |
@@ -279,37 +279,37 @@ The following table summarizes scenarios where correlated subqueries are the pre
 
 ### Use joins instead when
 
-Joins are typically a better choice when you need data from multiple tables in your result set. If you're retrieving columns from both a parent and child table, a `JOIN` is cleaner and usually more efficient than embedding a correlated subquery in the `SELECT` clause to fetch each related value separately.
+Joins are typically a better choice when you need data from multiple tables in your result set. If you're retrieving columns from both a parent and child table, a `JOIN` is cleaner and more efficient than embedding a correlated subquery in the `SELECT` clause to fetch each related value separately.
 
 Joins also outperform correlated subqueries when the relationship is straightforward and doesn't require per-row calculations. For simple one-to-many relationships like customers to orders or products to categories, a standard `INNER JOIN` or `LEFT JOIN` lets the optimizer choose the most efficient execution plan without the overhead of repeated subquery evaluation.
 
 ### Use window functions instead when
 
-Window functions are the better choice when you need running totals, rankings, or comparisons across rows within a partition. Functions like `ROW_NUMBER()`, `RANK()`, and `DENSE_RANK()` express ranking logic more clearly and efficiently than correlated subqueries that count how many rows have higher values. The query optimizer can process window functions in a single pass over the data, whereas correlated subqueries may require repeated scans.
+Window functions are the better choice when you need to run totals, rankings, or comparisons across rows within a partition. Functions like `ROW_NUMBER()`, `RANK()`, and `DENSE_RANK()` express ranking logic more clearly and efficiently than correlated subqueries that count how many rows have higher values. The query optimizer can process window functions in a single pass over the data, whereas correlated subqueries might require repeated scans.
 
-Window functions also excel at accessing values from previous or next rows. The `LAG()` and `LEAD()` functions retrieve values from adjacent rows with simple, readable syntax, while the equivalent correlated subquery requires `TOP 1` with complex ordering logic. Unless you need filtering conditions that window functions can't express, prefer the window function approach for consecutive row comparisons.
+Window functions also excel at accessing values from previous or next rows. The `LAG()` and `LEAD()` functions retrieve values from adjacent rows with simple, readable syntax, while the equivalent correlated subquery requires `TOP 1` with complex ordering logic. Unless you need to filter conditions that window functions can't express, prefer the window function approach for consecutive row comparisons.
 
 ### Use CTEs instead when
 
-Common Table Expressions (CTEs) are preferable when you need to reference the same calculated result multiple times in your query. If you're using identical correlated subqueries in multiple places, such as calculating a category average for both display and comparison, the database may execute that subquery repeatedly. A CTE calculates the result once and lets you join to it multiple times.
+Common Table Expressions (CTEs) are preferable when you need to reference the same calculated result multiple times in your query. If you're using identical correlated subqueries in multiple places, such as calculating a category average for both display and comparison, the database might execute that subquery repeatedly. A CTE calculates the result once and lets you join to it multiple times.
 
 CTEs also improve readability for complex queries by breaking the logic into named, logical steps. Instead of nesting correlated subqueries that are hard to follow, you can define intermediate results with meaningful names and then combine them in the final `SELECT`. This approach makes queries easier to understand, debug, and maintain.
 
 ## Performance considerations
 
-Correlated subqueries can impact performance when not optimized correctly. Because the subquery executes once for each row in the outer query, poorly designed correlated queries can result in thousands or millions of subquery executions on large tables.
+Correlated subqueries can affect performance when not optimized correctly. Because the subquery executes once for each row in the outer query, poorly designed correlated queries can result in thousands or millions of subquery executions on large tables.
 
 Follow these guidelines to optimize correlated subquery performance:
 
-- **Create indexes on correlation columns**: Ensure the columns referenced in the subquery's `WHERE` clause that link back to the outer query are indexed. For example, if your subquery filters on `ProductCategoryID`, an index on that column lets the database quickly find matching rows instead of scanning the entire table for each outer row.
+- **Create indexes on correlation columns**: Ensure the columns referenced in the subquery's `WHERE` clause that links back to the outer query are indexed. For example, if your subquery filters on `ProductCategoryID`, an index on that column lets the database quickly find matching rows instead of scanning the entire table for each outer row.
 
 - **Include additional columns in indexes**: If your subquery also filters or aggregates on other columns, consider a composite index. An index on `(ProductCategoryID, ListPrice)` supports both the correlation lookup and price-based filtering or aggregation in a single index seek.
 
 - **Evaluate alternative approaches**: Many correlated subqueries can be rewritten as joins or window functions with better performance. If you're finding the maximum value per group, a window function with `ROW_NUMBER()` often outperforms a correlated subquery that selects `MAX()` for each row.
 
-- **Review execution plans**: Use `SET STATISTICS IO ON` and examine the actual execution plan to understand how the optimizer processes your correlated subquery. The optimizer may transform it into a join internally, or it may execute it row-by-row as written.
+- **Review execution plans**: Use `SET STATISTICS IO ON` and examine the actual execution plan to understand how the optimizer processes your correlated subquery. The optimizer might transform it into a join internally, or it might execute it row-by-row as written.
 
-- **Test with realistic data volumes**: Correlated subqueries that perform well on small test datasets may become slow with production-sized tables. Always benchmark with representative data before deploying to production.
+- **Test with realistic data volumes**: Correlated subqueries that perform well on small test datasets can become slow with production-sized tables. Always benchmark with representative data before deploying to production.
 
 > [!IMPORTANT]
 > Always review execution plans when working with correlated subqueries on large tables. The optimizer may transform them efficiently, but complex correlations might benefit from query rewrites.

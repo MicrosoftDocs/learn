@@ -1,6 +1,4 @@
-When working with complex queries, you often need to break down logic into manageable pieces or reference the same subquery multiple times. Common Table Expressions (CTEs) provide a way to define temporary named result sets that exist only for the duration of a single query, making your code more readable and maintainable.
-
-In this unit, you'll learn how to write CTEs in SQL Server, Azure SQL, and SQL databases in Microsoft Fabric. You'll explore both non-recursive and recursive CTEs, understanding when each approach is appropriate for your data scenarios.
+When working with complex queries, you often need to break down logic into manageable pieces or reference the same subquery multiple times. Common Table Expressions (CTEs) provide a way to define temporary named result sets that exist only during a single query, making your code more readable and maintainable.
 
 ## Understand CTE syntax
 
@@ -28,9 +26,9 @@ CTEs offer several advantages over derived tables and subqueries:
 > [!NOTE]
 > CTEs are temporary result sets that exist only during query execution. Unlike traditional tables, they don't persist beyond the statement that uses them and don't require explicit cleanup.
 
-## Create non-recursive CTEs
+## Create nonrecursive CTEs
 
-Non-recursive CTEs define a result set based on a straightforward query that doesn't reference itself. This pattern is useful for simplifying complex joins, breaking down multi-step calculations, or improving code organization.
+Nonrecursive CTEs define a result set based on a straightforward query that doesn't reference itself. This pattern is useful for simplifying complex joins, breaking down multi-step calculations, or improving code organization.
 
 The following example uses a CTE to calculate sales metrics before joining with product information:
 
@@ -212,7 +210,7 @@ OPTION (MAXRECURSION 366);
 
 ## Use CTEs with data modification statements
 
-CTEs can be used with `INSERT`, `UPDATE`, and `DELETE` statements, not just `SELECT`. This capability is particularly useful when the modification logic requires complex filtering or calculations:
+CTEs can be used with `INSERT`, `UPDATE`, and `DELETE` statements, not just `SELECT`. This capability is useful when the modification logic requires complex filtering or calculations:
 
 ```sql
 -- Update using a CTE to identify target rows
@@ -232,6 +230,6 @@ SET DiscontinuedDate = GETDATE()
 WHERE ProductID IN (SELECT ProductID FROM DiscontinuedProducts);
 ```
 
-This query uses a CTE to identify products that should be marked as discontinued. The CTE finds products where the sell end date is more than two years ago and that haven't appeared in any order details modified within the last year. The `UPDATE` statement then sets the `DiscontinuedDate` for those products. By separating the selection logic into a CTE, the query becomes easier to read and test independently.
+This query uses a CTE to identify products that should be marked as discontinued. The CTE finds products where the sold end date is more than two years ago and that haven't appeared in any order details modified within the last year. The `UPDATE` statement then sets the `DiscontinuedDate` for those products. By separating the selection logic into a CTE, the query becomes easier to read and test independently.
 
 For more information about Common Table Expressions, see [WITH common_table_expression (Transact-SQL)](/sql/t-sql/queries/with-common-table-expression-transact-sql?azure-portal=true) and [Recursive Queries Using Common Table Expressions](/sql/t-sql/queries/with-common-table-expression-transact-sql?azure-portal=true#guidelines-for-defining-and-using-recursive-common-table-expressions).
