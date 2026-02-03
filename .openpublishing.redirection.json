@@ -63811,6 +63811,116 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/paths/introduction-azure-networking-services/index.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-networking/introduction-azure-private-link/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/private-link/private-link-overview",
+      "redirect_document_id": false
+    }, 
+    {
+      "source_path": "learn-pr/azure-networking/introduction-azure-private-link/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/private-link/private-link-overview",
+      "redirect_document_id": false
+    }, 
+    {
+      "source_path": "learn-pr/azure-networking/introduction-azure-private-link/2-what-is-azure-private-link.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/private-link/private-link-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-networking/introduction-azure-private-link/3-how-azure-private-link-works.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/private-link/private-link-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-networking/introduction-azure-private-link/4-when-to-use-azure-private-link.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/private-link/private-link-overview",
+      "redirect_document_id": false
+    }, 
+    {
+      "source_path": "learn-pr/azure-networking/introduction-azure-private-link/5-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/private-link/private-link-overview",
+      "redirect_document_id": false
+    }, 
+    {
+      "source_path": "learn-pr/azure-networking/introduction-azure-private-link/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/private-link/private-link-overview",
+      "redirect_document_id": false
+    }, 
+    {
+      "source_path": "learn-pr/azure-networking/introduction-azure-virtual-wan/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-wan/virtual-wan-about",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-networking/introduction-azure-virtual-wan/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-wan/virtual-wan-about",
+      "redirect_document_id": false
+    }, 
+    {
+      "source_path": "learn-pr/azure-networking/introduction-azure-virtual-wan/2-what-is-azure-virtual-wan.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-wan/virtual-wan-about",
+      "redirect_document_id": false
+    }, 
+    {
+      "source_path": "learn-pr/azure-networking/introduction-azure-virtual-wan/3-how-azure-virtual-wan-works.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-wan/virtual-wan-about",
+      "redirect_document_id": false
+    }, 
+    {
+      "source_path": "learn-pr/azure-networking/introduction-azure-virtual-wan/4-when-to-use-azure-virtual-wan.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-wan/virtual-wan-about",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-networking/introduction-azure-virtual-wan/5-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-wan/virtual-wan-about",
+      "redirect_document_id": false
+    }, 
+    {
+      "source_path": "learn-pr/azure-networking/introduction-azure-virtual-wan/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-wan/virtual-wan-about",
+      "redirect_document_id": false
+    }, 
+    {
+      "source_path": "learn-pr/azure-networking/introduction-azure-web-application-firewall/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/web-application-firewall/overview",
+      "redirect_document_id": false
+    }, 
+    {
+      "source_path": "learn-pr/azure-networking/introduction-azure-web-application-firewall/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/web-application-firewall/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-networking/introduction-azure-web-application-firewall/2-what-is-azure-web-application-firewall.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/web-application-firewall/overview",
+      "redirect_document_id": false
+    }, 
+    {
+      "source_path": "learn-pr/azure-networking/introduction-azure-web-application-firewall/3-how-azure-web-application-firewall-works.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/web-application-firewall/overview",
+      "redirect_document_id": false
+    }, 
+    {
+      "source_path": "learn-pr/azure-networking/introduction-azure-web-application-firewall/4-when-to-use-azure-web-application-firewall.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/web-application-firewall/overview",
+      "redirect_document_id": false
+    }, 
+    {
+      "source_path": "learn-pr/azure-networking/introduction-azure-web-application-firewall/5-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/web-application-firewall/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-networking/introduction-azure-web-application-firewall/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/web-application-firewall/overview",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/azure/introduction-to-infrastructure-as-code-using-bicep/index.yml",
       "redirect_url": "https://learn.microsoft.com/shows/learn-live/iac-and-bicep/",
       "redirect_document_id": false
