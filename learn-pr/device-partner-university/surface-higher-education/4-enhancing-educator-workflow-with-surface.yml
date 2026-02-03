@@ -1,13 +1,13 @@
 ### YamlMime:ModuleUnit
-uid: learn.dpu.surface-higher-education.enhancing-educator-workflow-with-surface
-title: Enhancing educator workflow with Surface
+uid: learn.dpu.surface-higher-education.enhance-educator-workflow-with-surface
+title: Enhance educator workflow with Surface
 metadata:
-  title: Enhancing Educator Workflow With Surface
-  description: This content is part of the "Empowering higher education with Microsoft Surface" module.
+  title: Enhance Educator Workflow With Surface
+  description: This content is part of the "Empower Higher Education With Microsoft Surface" module.
   ms.date: 02/02/2026
   author: ozahran7
   ms.author: v-zahranomar
   ms.topic: unit
 durationInMinutes: 8
 content: |
-  [!include[](includes/4-enhancing-educator-workflow-with-surface.md)]
+  [!include[](includes/4-enhance-educator-workflow-with-surface.md)]

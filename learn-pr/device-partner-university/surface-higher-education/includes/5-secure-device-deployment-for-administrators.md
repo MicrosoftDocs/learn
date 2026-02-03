@@ -9,25 +9,25 @@ With Surface Management Portal, IT administrators can ensure that faculty device
 
 Creating and submitting requests on Surface devices is streamlined and reduces complexity for IT. Follow these steps to submit a request for one or more devices:
 
-- Navigate to **Microsoft Intune** and in the left-hand navigation panel, select **All Services**. Select **Surface Management Portal**.
-- Go to the **Support** tab and select **New Support request**.
-- Using the **Product** dropdown, select the category of your device.
-- Choose the specific **Device model**.
-- Select **Devices** to view a list of eligible devices registered for your tenant.
-- Select the device or multiple devices based on **Device name** and **Serial number** of the device you need support for.
-- Select **Done**, and then select **Next**.
-- Under the **Issue description** step, choose one of the following from the **Category** dropdown:
+1. Navigate to **Microsoft Intune** and in the left-hand navigation panel, select **All Services**. Select **Surface Management Portal**.
+2. Go to the **Support** tab and select **New Support request**.
+3. Using the **Product** dropdown, select the category of your device.
+4. Choose the specific **Device model**.
+5. Select **Devices** to view a list of eligible devices registered for your tenant.
+6. Select the device or multiple devices based on **Device name** and **Serial number** of the device you need support for.
+7. Select **Done**, and then select **Next**.
+8. Under the **Issue description** step, choose one of the following from the **Category** dropdown:
   - Technical support
   - Warranty and service
   - Product safety concern
-- Use the **Description** dropdown to choose the appropriate symptom (for example, Display and Screen).
-- In the **Details** section, provide a clear description of the issue. You may also attach files to help with troubleshooting.
-- Select **Next**,
-- Fill out all required **Contact details**, including your preferred contact method (phone or email).
-- Select **Next** to review your request.
-- Review the **summary** of your support request and select **Submit**.
-- A **Case ID** is generated, and a Microsoft Customer Service Representative will contact you using your preferred method.
-- Track support requests by going to the Surface Management Portal home page and selecting **View all support requests**.
+9. Use the **Description** dropdown to choose the appropriate symptom (for example, Display and Screen).
+10. In the **Details** section, provide a clear description of the issue. You may also attach files to help with troubleshooting.
+11. Select **Next**,
+12. Fill out all required **Contact details**, including your preferred contact method (phone or email).
+13. Select **Next** to review your request.
+14. Review the **summary** of your support request and select **Submit**.
+15. A **Case ID** is generated, and a Microsoft Customer Service Representative will contact you using your preferred method.
+16. Track support requests by going to the Surface Management Portal home page and selecting **View all support requests**.
 
 ## Get insights to proactively monitor and manage Surface devices
 

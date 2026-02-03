@@ -1,8 +1,8 @@
 ### YamlMime:Module
 uid: learn.dpu.surface-higher-education
-title: Empowering higher education with Microsoft Surface
+title: Empower Higher Education With Microsoft Surface
 metadata:
-  title: Empowering Higher Education With Microsoft Surface
+  title: Empower Higher Education With Microsoft Surface
   description: 'Discover how Microsoft Surface devices can transform higher education by enhancing learning experiences, improving educator workflows, and ensuring secure device management for institutions.'
   ms.date: 02/02/2026
   author: ozahran7
@@ -35,9 +35,9 @@ products:
   - surface
 units:
   - learn.dpu.surface-higher-education.introduction
-  - learn.dpu.surface-higher-education.adapting-to-modern-educational-realities
-  - learn.dpu.surface-higher-education.keeping-students-organized
-  - learn.dpu.surface-higher-education.enhancing-educator-workflow-with-surface
+  - learn.dpu.surface-higher-education.adapt-to-modern-educational-realities
+  - learn.dpu.surface-higher-education.keep-students-organized
+  - learn.dpu.surface-higher-education.enhance-educator-workflow-with-surface
   - learn.dpu.surface-higher-education.secure-device-deployment-for-administrators
   - learn.dpu.surface-higher-education.knowledge-check
   - learn.dpu.surface-higher-education.summary

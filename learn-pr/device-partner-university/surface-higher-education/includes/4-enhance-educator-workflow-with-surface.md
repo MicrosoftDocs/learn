@@ -8,17 +8,17 @@ To start your day, you open your email inbox and calendar in Outlook. Upon revie
 
 :::image type="content" border="true" source="../media/outlook-email-summary.gif" alt-text="Animation showing how to summarize an email thread in Outlook using Copilot.":::
 
-- In either classic Outlook or new Outlook, choose the conversation that you want to summarize.
-- Select **Summary by Copilot** (or it might say **Summarize**) at the top of the email thread. Copilot scans the thread to identify key points and create a summary for you.
-- The summary appears at the top of the email and may include numbered citations that, when selected, take you to the corresponding email in the thread.
-- If you're using new Outlook and the email has attachments (PDF, PowerPoint, or Word), you can select **Summarize a file**. Wait for the summaries to be generated, then review them for a quick view of what you've been sent.
+1. In either classic Outlook or new Outlook, choose the conversation that you want to summarize.
+2. Select **Summary by Copilot** (or it might say **Summarize**) at the top of the email thread. Copilot scans the thread to identify key points and create a summary for you.
+3. The summary appears at the top of the email and may include numbered citations that, when selected, take you to the corresponding email in the thread.
+4. If you're using new Outlook and the email has attachments (PDF, PowerPoint, or Word), you can select **Summarize a file**. Wait for the summaries to be generated, then review them for a quick view of what you've been sent.
 
 If you're using Outlook on the web, follow these steps:
 
-- In Outlook on the web, choose the conversation that you want.
-- Select **Summary by Copilot** (or it might say **Summarize**) at the top of the email thread. Copilot scans the thread to identify key points and create a summary for you.
-- The summary appears at the top of the email and may also include numbered citations that, when selected, take you to the corresponding email thread.
-- If the email has attachments (PDF, PowerPoint, or Word), you can select **Summarize a file**. Wait for the summaries to be generated, then review them for a quick view of what you've been sent.
+1. In Outlook on the web, choose the conversation that you want.
+2. Select **Summary by Copilot** (or it might say **Summarize**) at the top of the email thread. Copilot scans the thread to identify key points and create a summary for you.
+3. The summary appears at the top of the email and may also include numbered citations that, when selected, take you to the corresponding email thread.
+4. If the email has attachments (PDF, PowerPoint, or Word), you can select **Summarize a file**. Wait for the summaries to be generated, then review them for a quick view of what you've been sent.
 
 ## Researching and multitasking
 
@@ -26,9 +26,7 @@ After teaching your class, it's time to work on research. In your on-campus offi
 
 To get started, let's get familiar with the port selection on the Surface USB4 Dock:
 
-:::image type="content" border="true" source="../media/surface-dock-side-one.png" alt-text="Diagram of Surface USB4 Dock showing various ports including USB-C and USB-A.":::
-
-:::image type="content" border="true" source="../media/surface-dock-side-two.png" alt-text="Diagram of Surface USB4 Dock showing various ports including USB-C, HDMI, Ethernet, and Security Lock.":::
+:::image type="content" border="true" source="../media/surface-dock.svg" alt-text="Diagram of Surface USB4 Dock showing various ports including USB-C, USB-A, HDMI, and Ethernet.":::
 
 | 1 and 6 | USB-C ports | Connect USB-C accessories, such as external monitors |
 | :---: | :---: | :---: |
@@ -40,19 +38,19 @@ To get started, let's get familiar with the port selection on the Surface USB4 D
 
 Next let's review the steps for setting up your Surface USB4 Dock:
 
-- Plug the AC end of the dock power cord into the power source, then plug the other end into the power port on the dock.
-- If you want to use a wired network connection, connect a network cable to the Ethernet port.
-- Connect your USB computer peripherals to the USB ports.
-- Connect a video cable from your monitor via the USB-C or HDMI port on the back of your Surface USB4 Dock.
-- Connect any essential USB accessories such as a flash drive or audio accessories via the available USB-A and USB-C ports.
+1. Plug the AC end of the dock power cord into the power source, then plug the other end into the power port on the dock.
+2. If you want to use a wired network connection, connect a network cable to the Ethernet port.
+3. Connect your USB computer peripherals to the USB ports.
+4. Connect a video cable from your monitor via the USB-C or HDMI port on the back of your Surface USB4 Dock.
+5. Connect any essential USB accessories such as a flash drive or audio accessories via the available USB-A and USB-C ports.
 
 After your setup is complete, connect the Surface Dock to your Surface Pro. Your device will charge and automatically connect to the accessories and peripherals that are connected to the Surface USB4 Dock. After you've connected your Surface and your external monitors to the dock, you can choose what to display on each screen. Here's how:
 
-- Go to **Start** > **Settings** > **System** > **Display**.
-- Expand **Extend desktop to this display** and choose one of the following options:
-  - **Duplicate desktop on 1 and 2**. This shows your screen on two displays.
-  - **Extend desktop to this display**. Your screen is spread over two screens, and you can drag items between the two screens.
-  - **Show only on __**. Your screen appears on the selected screen, and the other screen is blank.
+1. Go to **Start** > **Settings** > **System** > **Display**.
+2. Expand **Extend desktop to this display** and choose one of the following options:
+  a. **Duplicate desktop on 1 and 2**. This shows your screen on two displays.
+  b. **Extend desktop to this display**. Your screen is spread over two screens, and you can drag items between the two screens.
+  c. **Show only on __**. Your screen appears on the selected screen, and the other screen is blank.
 
 Now that your monitors are set up, you're able to start working on your research. Surface devices feature powerful processors to handle multitasking across multiple applications. To run these simultaneously, a great tool to use is Snap Layouts—allowing you to transition from one app to the next without disrupting your workflow.
 
@@ -77,8 +75,8 @@ After your research, the next part of your day involves jumping on a call to spe
 
 Because your Surface is a Copilot+ PC, you can use Windows Studio Effects to stand out on calls. Windows Studio Effects applies AI models built by Microsoft and compiled for devices with an NPU (Neural Processing Unit) to deliver high-fidelity, battery-friendly AI effects. These reduce the burden on the device CPU and GPU and provide a trusted Microsoft AI experience that scales across the entire Windows ecosystem for any compatible device. Here's how to configure this feature on your Surface:
 
-- Open **Settings** > **Bluetooth & devices** > **Cameras**, then select from the list of Connected cameras and open the settings for that camera.
-- You'll see a preview of your front-facing camera display and the Camera Effects listed under it.
-- Select the Windows Studio Effects that you would like to enable. Some of these have more settings that can be configured. For instance, Background Effects enable you to choose between Standard blur or Portrait blur.
+1. Open **Settings** > **Bluetooth & devices** > **Cameras**, then select from the list of Connected cameras and open the settings for that camera.
+2. You'll see a preview of your front-facing camera display and the Camera Effects listed under it.
+3. Select the Windows Studio Effects that you would like to enable. Some of these have more settings that can be configured. For instance, Background Effects enable you to choose between Standard blur or Portrait blur.
 
 The combination of cutting-edge hardware and AI-driven software on Surface devices empowers educators to do their best work and streamline their repetitive tasks. This frees up more time to focus on teaching their classes and less on administrative work.
