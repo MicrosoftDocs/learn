@@ -6,7 +6,7 @@ Before you begin, bring all your rough materials together, so Copilot has the fu
 
 - **Compile your notes:** Gather emails, meeting minutes, screenshots, sticky notes, and rough drafts you’ve collected across devices. You can paste them directly into OneNote or attach them using the Insert menu.
 - **Add handwritten ideas:** Use your Surface Slim Pen 2 to write down reminders, sketch connections, or add questions in the margins. Copilot can help read and interpret your handwriting as easily as typed notes.
-- **Capture dictated thoughts:** If you think faster than you type, you can use your Surface Studio Microphone to dictate your thoughts right into OneNote. Voice Clarity helps ensure your speech is transcribed accurately for Copilot to use later.
+- **Capture dictated thoughts:** If you think faster than you type, you can use your Surface Studio Microphone to dictate your thoughts right into OneNote. Voice Clarity can help ensure your speech is transcribed accurately for Copilot to use later.
 
 ### Step 2: Open OneNote and launch Copilot
 
@@ -20,7 +20,7 @@ Before you begin, bring all your rough materials together, so Copilot has the fu
 5. Invite collaborators: Share the OneNote page or notebook with teammates so they can co-edit in real time as you begin shaping content.
 
 > [!TIP]
-> Surface supports fluid input switching—begin writing with the pen, then jump to voice or touch.
+> Surface is built to support fluid input switching—begin writing with the pen, then jump to voice or touch.
 
 ![A photograph of a business professional seated at their desk using a Surface Slim Pen 2 to work in OneNote on their Surface device.](../media/onenote.jpg)
 
@@ -57,9 +57,7 @@ Before you begin, bring all your rough materials together, so Copilot has the fu
 
 ### Step 5: Refine and finalize
 
-Use Copilot to polish your outline into ready-to-share content.
-
-Ask Copilot to:
+Use Copilot to help polish your outline into ready-to-share content. Ask it to:
 
   - Simplify the language
   - Remove redundant points
