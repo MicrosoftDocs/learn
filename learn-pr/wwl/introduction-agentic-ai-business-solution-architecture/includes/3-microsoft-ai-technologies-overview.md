@@ -65,9 +65,9 @@ _(Use a layered diagram with Microsoft brand colors in PowerPoint.)_
 
 **References**
 
-- [Azure AI services - Microsoft Learn](https://learn.microsoft.com/en-us/training/modules/prepare-azure-ai-development/3-azure-ai-services)
-- [Tools and SDKs - Microsoft Learn](https://learn.microsoft.com/en-us/training/modules/prepare-azure-ai-development/5-tools-and-sdks)
-- [Explore Copilot solutions - Microsoft Learn](https://learn.microsoft.com/en-us/training/modules/business-value-microsoft-copilot-solutions/2-explore-copilot-solutions)
-- [Microsoft AI](https://www.microsoft.com/en-us/ai)
+- [Azure AI services - Microsoft Learn](/training/modules/prepare-azure-ai-development/3-azure-ai-services)
+- [Tools and SDKs - Microsoft Learn](/training/modules/prepare-azure-ai-development/5-tools-and-sdks)
+- [Explore Copilot solutions - Microsoft Learn](/training/modules/business-value-microsoft-copilot-solutions/2-explore-copilot-solutions)
+- [Microsoft AI](https://www.microsoft.com/ai)
 
 **Discussion Question**<br>How can Copilot solutions improve productivity in business processes? Provide two examples.

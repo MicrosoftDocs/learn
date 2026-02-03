@@ -77,11 +77,11 @@ Leverage **Azure AI** for scalability and compliance.
 
 **References**
 
-- [Explore agents pre-built in Microsoft Copilot Studio](https://www.microsoft.com/en-us/microsoft-copilot/blog/copilot-studio/explore-agents-pre-built-for-you-in-microsoft-copilot-studio/)
-- [Transform work with autonomous agents - Dynamics 365 Blog](https://www.microsoft.com/en-us/dynamics-365/blog/business-leader/2024/10/21/transform-work-with-autonomous-agents-across-your-business-processes/)
-- [Copilot Studio template fundamentals - Microsoft Learn](https://learn.microsoft.com/en-us/microsoft-copilot-studio/template-fundamentals)
-- [Microsoft Adoption Scenario Library](https://adoption.microsoft.com/en-us/scenario-library/)
-- [AI agents in Microsoft 365](https://adoption.microsoft.com/en-us/ai-agents/agents-in-microsoft-365/)
-- [AI overview for Power Apps - Microsoft Learn](https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/ai-overview)
+- [Explore agents pre-built in Microsoft Copilot Studio](https://www.microsoft.com/microsoft-copilot/blog/copilot-studio/explore-agents-pre-built-for-you-in-microsoft-copilot-studio/)
+- [Transform work with autonomous agents - Dynamics 365 Blog](https://www.microsoft.com/dynamics-365/blog/business-leader/2024/10/21/transform-work-with-autonomous-agents-across-your-business-processes/)
+- [Copilot Studio template fundamentals - Microsoft Learn](/microsoft-copilot-studio/template-fundamentals)
+- [Microsoft Adoption Scenario Library](https://adoption.microsoft.com/scenario-library/)
+- [AI agents in Microsoft 365](https://adoption.microsoft.com/ai-agents/agents-in-microsoft-365/)
+- [AI overview for Power Apps - Microsoft Learn](/power-apps/maker/canvas-apps/ai-overview)
 
 **Discussion Question**<br>How can prebuilt AI agents accelerate AI adoption in an organization? Provide two examples.

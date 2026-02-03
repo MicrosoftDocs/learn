@@ -42,7 +42,7 @@ Flow:<br>Business Goals → AI Strategy → Architecture Design → Implementati
 
 ![Diagram showing the AI transformation framework flow from business goals through monitoring and optimization.](../media/ai-framework-flow.png)
 
-[Cloud Adoption Framework for AI](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/ai/)
+[Cloud Adoption Framework for AI](/azure/cloud-adoption-framework/scenarios/ai/)
 
 Best Practices for AI Architects
 
@@ -69,8 +69,8 @@ Leverage Azure AI services for speed and reliability.
 References
 
 - [Azure Data and Architect Handbook](https://info.microsoft.com/ww-landing-Azure-Data-and-Architect-Handbook.html)
-- [Microsoft AI](https://www.microsoft.com/en-us/ai)
-- [Unlock AI value - Microsoft Learn](https://learn.microsoft.com/en-us/training/modules/scale-ai/2-unlock-ai-value)
+- [Microsoft AI](https://www.microsoft.com/ai)
+- [Unlock AI value - Microsoft Learn](/training/modules/scale-ai/2-unlock-ai-value)
 - 
 **Discussion Question:**
 How can architects ensure Responsible AI principles are embedded in enterprise solutions?

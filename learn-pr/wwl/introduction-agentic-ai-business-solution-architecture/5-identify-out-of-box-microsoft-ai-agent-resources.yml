@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.introduction-agentic-ai-business-solution-architecture.identify-oob-microsoft-ai-agent-resources
-title: "Identify OOB Microsoft AI agent resources for business solutions"
+uid: learn.wwl.introduction-agentic-ai-business-solution-architecture.identify-out-of-box-microsoft-ai-agent-resources
+title: "Identify out-of-box Microsoft AI agent resources for business solutions"
 metadata:
-  title: "Identify OOB Microsoft AI Agent Resources"
+  title: "Identify Out-of-Box Microsoft AI Agent Resources"
   description: "Discover out-of-the-box Microsoft AI agent resources to accelerate AI adoption, streamline workflows, and integrate seamlessly with Azure AI."
   ms.date: 02/02/2026
   author: wwlpublish
@@ -10,7 +10,7 @@ metadata:
   ms.topic: unit
 durationInMinutes: 3
 content: |
-  [!include[](includes/5-identify-oob-microsoft-ai-agent-resources.md)]
+  [!include[](includes/5-identify-out-of-box-microsoft-ai-agent-resources.md)]
 quiz:
   questions:
   - content: "Which Microsoft resource provides prebuilt AI agents for business workflows?"

@@ -69,7 +69,7 @@ Leverage **Azure AI** for scalability and compliance.
 
 **References**
 
-- [Microsoft AI tools and practices](https://www.microsoft.com/en-us/ai/tools-practices)
-- [Azure AI training - Microsoft Learn](https://learn.microsoft.com/en-us/training/azure-ai)
+- [Microsoft AI tools and practices](https://www.microsoft.com/ai/tools-practices)
+- [Azure AI training - Microsoft Learn](/training/azure-ai)
 
 **Discussion Question**<br>How can prebuilt AI agents accelerate AI adoption in your organization? Provide two examples.

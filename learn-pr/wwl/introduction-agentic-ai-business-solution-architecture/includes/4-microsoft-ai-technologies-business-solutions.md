@@ -67,7 +67,7 @@ Leverage cloud scalability for enterprise-wide adoption.
 
 **References**
 
-- [Generative AI for productivity - Microsoft Learn](https://learn.microsoft.com/en-us/training/modules/generative-ai-productivity/)
-- [Create business value with AI - Microsoft Learn](https://learn.microsoft.com/en-us/training/modules/create-business-value/)
+- [Generative AI for productivity - Microsoft Learn](/training/modules/generative-ai-productivity/)
+- [Create business value with AI - Microsoft Learn](/training/modules/create-business-value/)
 
 **Discussion Question**<br>How can Copilot solutions improve productivity in business processes? Provide two examples.
