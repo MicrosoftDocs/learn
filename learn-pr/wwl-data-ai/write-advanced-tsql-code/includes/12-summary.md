@@ -25,6 +25,6 @@ You learned how to:
 - [WITH common_table_expression (Transact-SQL)](/sql/t-sql/queries/with-common-table-expression-transact-sql?azure-portal=true)
 - [Window Functions (Transact-SQL)](/sql/t-sql/queries/select-over-clause-transact-sql?azure-portal=true)
 - [JSON data in SQL Server](/sql/relational-databases/json/json-data-sql-server?azure-portal=true)
-- [Regular Expression Functions](/sql/t-sql/functions/regular-expression-functions-transact-sql?azure-portal=true)
+- [Regular expressions](/sql/relational-databases/regular-expressions/overview?azure-portal=true)
 - [Graph processing with SQL Server](/sql/relational-databases/graphs/sql-graph-overview?azure-portal=true)
 - [TRY...CATCH (Transact-SQL)](/sql/t-sql/language-elements/try-catch-transact-sql?azure-portal=true)

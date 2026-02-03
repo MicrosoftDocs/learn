@@ -217,4 +217,4 @@ FROM REGEXP_MATCHES(@text, '\d+\.?\d*');
 > [!IMPORTANT]
 > Regular expression functions are available in SQL Server 2025 and SQL databases in Microsoft Fabric. For earlier SQL Server versions, consider using CLR functions or application-layer processing for complex regex operations.
 
-For more information about regular expression functions, see [Regular Expression Functions](/sql/t-sql/functions/regular-expression-functions-transact-sql?azure-portal=true).
+For more information about regular expression functions, see [Regular expressions](/sql/relational-databases/regular-expressions/overview?azure-portal=true).
