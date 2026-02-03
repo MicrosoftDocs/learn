@@ -84,8 +84,4 @@ Leverage **Azure AI** for scalability and compliance.
 - [AI agents in Microsoft 365](https://adoption.microsoft.com/en-us/ai-agents/agents-in-microsoft-365/)
 - [AI overview for Power Apps - Microsoft Learn](https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/ai-overview)
 
-**Knowledge Check**
-
-**Multiple Choice:**<br>Which Microsoft resource provides prebuilt AI agents for business workflows?<br>a) Azure Machine Learning<br>b) Copilot Studio<br>c) Power BI<br>d) GitHub Copilot<br>**Answer:** b) Copilot Studio
-
-**Discussion Question:**<br>How can prebuilt AI agents accelerate AI adoption in an organization? Provide two examples.
+**Discussion Question**<br>How can prebuilt AI agents accelerate AI adoption in an organization? Provide two examples.

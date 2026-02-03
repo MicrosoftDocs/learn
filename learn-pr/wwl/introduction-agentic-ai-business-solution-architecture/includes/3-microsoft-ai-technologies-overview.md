@@ -70,8 +70,4 @@ _(Use a layered diagram with Microsoft brand colors in PowerPoint.)_
 - [Explore Copilot solutions - Microsoft Learn](https://learn.microsoft.com/en-us/training/modules/business-value-microsoft-copilot-solutions/2-explore-copilot-solutions)
 - [Microsoft AI](https://www.microsoft.com/en-us/ai)
 
-**Knowledge Check**
-
-**Multiple Choice**<br>Which service provides prebuilt APIs for vision and speech?<br>a) Azure Machine Learning<br>b) Cognitive Services<br>c) Microsoft Copilot<br>d) Power BI<br>**Answer:** b) Cognitive Services
-
 **Discussion Question**<br>How can Copilot solutions improve productivity in business processes? Provide two examples.

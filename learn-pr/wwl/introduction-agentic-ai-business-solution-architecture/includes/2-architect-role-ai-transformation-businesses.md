@@ -71,9 +71,6 @@ References
 - [Azure Data and Architect Handbook](https://info.microsoft.com/ww-landing-Azure-Data-and-Architect-Handbook.html)
 - [Microsoft AI](https://www.microsoft.com/en-us/ai)
 - [Unlock AI value - Microsoft Learn](https://learn.microsoft.com/en-us/training/modules/scale-ai/2-unlock-ai-value)
-
-Knowledge Check
-
-Multiple Choice:<br>Which responsibility ensures AI initiatives align with business priorities?<br>a) Integration<br>b) Vision & Roadmap<br>c) Performance Monitoring<br>d) Data Architecture<br>Answer: b) Vision & Roadmap
-
-Discussion Question:<br>How can architects ensure Responsible AI principles are embedded in enterprise solutions?
+- 
+**Discussion Question:**
+How can architects ensure Responsible AI principles are embedded in enterprise solutions?

@@ -11,3 +11,19 @@ metadata:
 durationInMinutes: 3
 content: |
   [!include[](includes/2-architect-role-ai-transformation-businesses.md)]
+quiz:
+  questions:
+  - content: "Which responsibility ensures AI initiatives align with business priorities?"
+    choices:
+    - content: "Integration"
+      isCorrect: false
+      explanation: "Incorrect. Integration connects AI services with enterprise workflows but does not directly ensure alignment with business priorities."
+    - content: "Vision & Roadmap"
+      isCorrect: true
+      explanation: "Correct. Vision & Roadmap defines the AI adoption strategy aligned with business priorities."
+    - content: "Performance Monitoring"
+      isCorrect: false
+      explanation: "Incorrect. Performance Monitoring establishes KPIs and monitors effectiveness, but does not define the alignment with business priorities."
+    - content: "Data Architecture"
+      isCorrect: false
+      explanation: "Incorrect. Data Architecture ensures data readiness and governance, but does not directly align AI initiatives with business priorities."

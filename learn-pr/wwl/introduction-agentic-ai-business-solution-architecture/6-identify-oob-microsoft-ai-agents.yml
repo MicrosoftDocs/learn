@@ -11,3 +11,19 @@ metadata:
 durationInMinutes: 3
 content: |
   [!include[](includes/6-identify-oob-microsoft-ai-agents.md)]
+quiz:
+  questions:
+  - content: "Which Microsoft resource provides prebuilt AI agents for business workflows?"
+    choices:
+    - content: "Azure Machine Learning"
+      isCorrect: false
+      explanation: "Incorrect. Azure Machine Learning is a platform for building custom ML models, not prebuilt AI agents."
+    - content: "Copilot Studio"
+      isCorrect: true
+      explanation: "Correct. Copilot Studio provides prebuilt AI agents and templates for business workflows."
+    - content: "Power BI"
+      isCorrect: false
+      explanation: "Incorrect. Power BI is a business analytics and visualization tool, not a resource for prebuilt AI agents."
+    - content: "GitHub Copilot"
+      isCorrect: false
+      explanation: "Incorrect. GitHub Copilot is an AI coding assistant, not a resource for business workflow agents."

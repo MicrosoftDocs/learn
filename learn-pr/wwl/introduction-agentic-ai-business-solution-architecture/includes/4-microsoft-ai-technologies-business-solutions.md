@@ -70,8 +70,4 @@ Leverage cloud scalability for enterprise-wide adoption.
 - [Generative AI for productivity - Microsoft Learn](https://learn.microsoft.com/en-us/training/modules/generative-ai-productivity/)
 - [Create business value with AI - Microsoft Learn](https://learn.microsoft.com/en-us/training/modules/create-business-value/)
 
-**Knowledge Check**
-
-**Question 1 (Multiple Choice):**<br>Which service provides prebuilt APIs for vision and speech?<br>A) Azure Machine Learning<br>B) Cognitive Services<br>C) Microsoft Copilot<br>D) Power BI<br>**Answer:** B) Cognitive Services
-
-**Question 2 (Discussion):**<br>How can Copilot solutions improve productivity in business processes? Provide two examples.
+**Discussion Question**<br>How can Copilot solutions improve productivity in business processes? Provide two examples.
