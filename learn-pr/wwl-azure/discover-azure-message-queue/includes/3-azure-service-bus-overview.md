@@ -31,7 +31,7 @@ For more information on the available tiers, visit [Service Bus pricing](https:/
 | Topics & Subscriptions | Not supported | Supported | Supported |
 | Transactions | Not supported | Supported | Supported |
 | Auto-forwarding | Not supported | Supported | Supported |
-| Message sessions | Supported | Supported | Supported |
+| Message sessions | Not supported | Supported | Supported |
 
 
 ## Advanced features

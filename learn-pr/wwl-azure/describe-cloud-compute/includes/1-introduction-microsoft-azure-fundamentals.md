@@ -8,7 +8,7 @@ Azure Fundamentals is a series of three learning paths that familiarize you with
 
 Whether you're interested in compute, networking, or storage services; learning about cloud security best practices; or exploring governance and management options, think of Azure Fundamentals as your curated guide to Azure.
 
-Azure Fundamentals includes interactive exercises that give you hands-on experience with Azure. Many exercises provide a temporary Azure portal environment called the sandbox, which allows you to practice creating cloud resources for free at your own pace.
+Azure Fundamentals includes interactive exercises that give you hands-on experience with Azure.
 
 Technical IT experience isn't required; however, having general IT knowledge will help you get the most from your learning experience.
 
