@@ -1,4 +1,4 @@
-**Publishing** an agent promotes it from a saved development asset to a managed Azure resource with a stable endpoint. Once published, you can share the agent with teammates, your organization, or customers—without exposing your Foundry project or source code. You can publish an agent through the Foundry portal, which 
+**Publishing** an agent changes it from a saved development asset to a managed Azure resource with a stable endpoint. A published agent can be shared without exposing the Foundry project or source code. You can publish an agent through the Foundry portal. 
 
 ![Screenshot of publishing agent in the Foundry portal.](../media/publish-agent.png)
 ![Screenshot of agent after it is published in the Foundry portal with the endpoint information.](../media/agent-published.png)

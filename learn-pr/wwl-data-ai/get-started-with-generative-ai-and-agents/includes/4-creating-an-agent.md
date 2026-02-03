@@ -15,7 +15,7 @@ Agents can:
 
 To create an agent in Foundry, you can start by exploring a model or just go straight to agent development. In Foundry portal, creating an agent looks similar at first to testing a model in the playground.  
 
-1. Choose the model your agent uses
+1. Choose the model your agent uses.
 2. Write the system instructions, such as "You're a helpful scheduling assistant who returns answers in concise bullet points."
  
 What sets the agent apart from using the model alone is the addition of tools, which allow the model to act on  information and knowledge, which grounds the model with information. 

@@ -39,7 +39,7 @@ quiz:
     - content: "It lets you test prompts, compare models, and capture working settings that you can reuse in code."
       isCorrect: true
       explanation: " The Playground is described as the easiest way to interact with a deployed model and a bridge to code: you can try prompts, compare models, tune key parameters (temperature, max output tokens, system instructions), and then reuse those same values in your client application."
-    - content: "It deploys the model for you and removes the need to use an API"
+    - content: "It deploys the model for you and removes the need to use an API."
       isCorrect: false
       explanation: "The Playground helps you interact with a deployed model and experiment with prompts and settings, but it doesn’t eliminate the need for an API in an application. When you move to a real app, you still call the deployed model through an endpoint (for example, via the OpenAI-compatible Responses API)."
     - content: "It replaces system instructions by automatically generating the best system prompt for every scenario."
