@@ -4,10 +4,10 @@ title: Design centralized logging and auditing, including Microsoft Purview Audi
 metadata:
   title: Design centralized logging and auditing, including Microsoft Purview Audit 
   description: "SC-100 preparatory unit on the topic: design centralized logging and auditing, including Microsoft Purview Audit."
-  ms.date: 09/26/2024
+  ms.date: 02/02/2026
   author: ceperezb
   ms.author: ceperezb
   ms.topic: unit
-durationInMinutes: 10
+durationInMinutes: 15
 content: |
   [!include[](includes/3-design-centralized-logging-auditing.md)]
