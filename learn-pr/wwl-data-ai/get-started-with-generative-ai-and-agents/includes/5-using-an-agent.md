@@ -3,7 +3,7 @@
 ![Screenshot of publishing agent in the Foundry portal.](../media/publish-agent.png)
 ![Screenshot of agent after it is published in the Foundry portal with the endpoint information.](../media/agent-published.png)
 
-Once you've published an agent, you have a stable endpoint to integrate the agent anywhere. You can use an agent from a client application by using the **Foundry Projects SDK** to connect to the project and call it from a client using the **Project API**.
+Publishing an agent gives you a stable endpoint to integrate the agent in code. You can use an agent from a client application by using the **Foundry Projects SDK** to connect to the project and call it from a client using the **Project API**.
 
 The Project API enables you to:
 - Integrate agents into web apps, bots, or backend workflows
@@ -52,11 +52,11 @@ print(f"Response output: {response.output_text}")
 ```
 
 You can evaluate an agent the same way as a model—testing reasoning steps, tool use, and orchestration quality.
-This is helpful when building multi‑step or tool‑enhanced agents. In production environments, model behavior can drift. Foundry supports continuous evaluation to monitor relevance, safety, accuracy, cost and token efficiency. 
+In production environments, model behavior can drift. Foundry supports continuous evaluation to monitor relevance, safety, accuracy, cost, and token efficiency. 
 
 ## Managing costs  
 
-A Foundry agent itself is free — the real cost comes from what it uses:
+A Foundry agent itself is free; the real cost comes from what it uses, mainly:
 - The models it calls
 - The tools it invokes
 - The data services it connects to
@@ -72,7 +72,7 @@ A Foundry agent itself is free — the real cost comes from what it uses:
 |Deployment settings|For example: pay-as-you-go|
 |External knowledge connections|Fabric, SharePoint, etc.|
 
-The more complex and data-rich your agent, the higher the cost. The cost of using a model is influenced by three variables:
+The more complex and data-rich your agent, the higher the cost. Three of the main cost drivers of a model are:
 
 - Billing model (pay‑as‑you‑go vs. provisioned throughput)
 - Deployment option (Standard, Serverless API, Managed Compute)

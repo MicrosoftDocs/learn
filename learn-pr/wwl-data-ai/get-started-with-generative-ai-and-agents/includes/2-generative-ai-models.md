@@ -67,7 +67,7 @@ Choosing the right model in Foundry starts with understanding **your workload, t
 |**Multimodal**| Phi‑4‑multimodal‑instruct, GPT‑5.x chat multimodal, Mistral‑Large‑3 | Support for images/audio in chat completions|
 
 > [!NOTE]
-> When the use case is well‑defined, instead of choosing a model from the model catalog, you may choose a [**Foundry tool**](https://azure.microsoft.com/en-us/products/ai-foundry/tools/?msockid=2bbfe2e7589c63f40fd5f7ea5c9c654c#Tools). Foundry tools are powered by prebuilt models that provide predictable performance, built‑in compliance, and fast time‑to‑value without custom modeling.  
+> When the use case is well‑defined, instead of choosing a model from the model catalog, you may choose a [**Foundry tool**](https://azure.microsoft.com/products/ai-foundry/tools/?msockid=2bbfe2e7589c63f40fd5f7ea5c9c654c#Tools). Foundry tools are powered by prebuilt models that provide predictable performance, built‑in compliance, and fast time‑to‑value without custom modeling.  
 
 #### Score and compare models in Foundry 
 

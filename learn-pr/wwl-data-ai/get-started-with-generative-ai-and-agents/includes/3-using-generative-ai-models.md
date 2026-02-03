@@ -14,7 +14,7 @@ Unlike the user prompt, which is the end-user request or question (example: Wher
 
 The playground is a useful bridge between Foundry and code. After you test representative prompts, you can use the same system and user prompts and parameter values in your code. The playground provides code that can call your Foundry deployment via the OpenAI‑compatible *Responses* API. The code is essentially what is running when you use the chat interface to configure settings and send user prompts. 
 
-![Screenshot of code example in Foundry portal that is based in the playground.](../media/chat-code.example.png)
+![Screenshot of code example in Foundry portal that is based in the playground.](../media/chat-code-example.png)
 
 You can take the code as a starting point for creating your own chat client. 
 
