@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.write-advanced-tsql-code.4-json-functions
-title: Understand and write queries that include JSON functions
+title: Process JSON data with built-in functions
 metadata:
-  title: Understand and write queries that include JSON functions
+  title: Process JSON data with built-in functions
   description: Learn how to use JSON functions like JSON_OBJECT, JSON_ARRAY, JSON_ARRAYAGG, JSON_CONTAINS, OPENJSON, and JSON_VALUE in SQL Server and Azure SQL.
   ms.date: 01/28/2026
   author: JulianePadrao

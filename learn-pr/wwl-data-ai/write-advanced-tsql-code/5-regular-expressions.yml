@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.write-advanced-tsql-code.5-regular-expressions
-title: Understand and write queries that include regular expressions
+title: Match patterns with regular expressions
 metadata:
-  title: Understand and write queries that include regular expressions
+  title: Match patterns with regular expressions
   description: Learn how to use regular expression functions like REGEXP_LIKE, REGEXP_REPLACE, REGEXP_SUBSTR, REGEXP_INSTR, REGEXP_COUNT, REGEXP_MATCHES, and REGEXP_SPLIT_TO_TABLE.
   ms.date: 01/28/2026
   author: JulianePadrao

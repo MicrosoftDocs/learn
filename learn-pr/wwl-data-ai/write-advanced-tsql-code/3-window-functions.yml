@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.write-advanced-tsql-code.3-window-functions
-title: Understand and write queries that include window functions
+title: Apply window functions for analytics
 metadata:
-  title: Understand and write queries that include window functions
+  title: Apply window functions for analytics
   description: Learn how to use window functions including ranking, aggregate, and analytical functions to perform calculations across related rows in SQL Server and Azure SQL.
   ms.date: 01/28/2026
   author: JulianePadrao

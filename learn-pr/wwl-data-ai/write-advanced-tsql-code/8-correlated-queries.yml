@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.write-advanced-tsql-code.8-correlated-queries
-title: Understand and write correlated queries
+title: Compare rows with correlated subqueries
 metadata:
-  title: Understand and write correlated queries
+  title: Compare rows with correlated subqueries
   description: Learn how to write correlated subqueries in SQL Server and Azure SQL for row-by-row comparisons, existence checks, and per-row calculations.
   ms.date: 01/28/2026
   author: JulianePadrao

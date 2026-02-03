@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.write-advanced-tsql-code.7-graph-queries
-title: Understand and write GRAPH queries that use the MATCH operator
+title: Traverse relationships with graph queries
 metadata:
-  title: Understand and write GRAPH queries that use the MATCH operator
+  title: Traverse relationships with graph queries
   description: Learn how to create node and edge tables and write graph queries using the MATCH operator and SHORTEST_PATH in SQL Server and Azure SQL.
   ms.date: 01/28/2026
   author: JulianePadrao
