@@ -7610,6 +7610,11 @@ achievements:
   title: Describe Microsoft Entra Verified ID concepts
   summary: Learn the core concepts of decentralized identities and Microsoft Entra Verified ID.
   iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.connect-vm-with-azure-bastion.badge
+  type: badge 
+  title: Connect to virtual machines through the Azure portal by using Azure Bastion
+  summary: In this module, you'll evaluate Azure Bastion, deploy Azure Bastion to securely connect to Azure virtual machines directly within the Azure portal to effectively replace an existing jumpbox solution, monitor remote sessions by using diagnostic logs, and manage remote sessions by disconnecting a user session.
+  iconUrl: /training/achievements/connect-vm-with-azure-bastion.svg
 - uid: learn.connect-on-premises-network-with-vpn-gateway.badge
   type: badge
   title: Connect your on-premises network to Azure with VPN Gateway
