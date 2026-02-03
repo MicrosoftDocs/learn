@@ -28,7 +28,7 @@ quiz:
       explanation: "Incorrect. While Azure OpenAI powers some AI features, SSMS uses GitHub Copilot, which is installed through the AI Assistance workload."
     - content: "SQL IntelliSense extension"
       isCorrect: false
-      explanation: "Incorrect. IntelliSense provides code completion but is not an AI assistant. GitHub Copilot provides AI-powered assistance in SSMS."
+      explanation: "Incorrect. IntelliSense provides code completion but isn't an AI assistant. GitHub Copilot provides AI-powered assistance in SSMS."
 
   - content: "What security practice should you follow when using AI-assisted tools with database credentials?"
     choices:
@@ -64,16 +64,16 @@ quiz:
     choices:
     - content: "In the repository root folder"
       isCorrect: false
-      explanation: "Incorrect. The instruction file should be in the .github folder at the repository root, not directly in the root folder."
-    - content: "In the .vscode folder"
+      explanation: "Incorrect. The instruction file should be in the GitHub configuration folder at the repository root, not directly in the root folder."
+    - content: "In the VS Code configuration folder"
       isCorrect: false
-      explanation: "Incorrect. The .vscode folder is for VS Code workspace settings and MCP configuration. Copilot instructions go in the .github folder."
-    - content: "In the .github folder at the repository root"
+      explanation: "Incorrect. The VS Code folder is for workspace settings and MCP configuration. Copilot instructions go in the GitHub configuration folder."
+    - content: "In the GitHub configuration folder at the repository root"
       isCorrect: true
-      explanation: "Correct. The copilot-instructions.md file should be placed in the .github folder at your repository root to apply instructions to all repository users."
+      explanation: "Correct. The copilot-instructions.md file should be placed in the GitHub configuration folder at your repository root to apply instructions to all repository users."
     - content: "In the user's home directory"
       isCorrect: false
-      explanation: "Incorrect. User-level settings are separate from repository instructions. Repository-wide instructions go in the .github folder."
+      explanation: "Incorrect. User-level settings are separate from repository instructions. Repository-wide instructions go in the GitHub configuration folder."
 
   - content: "A team wants to connect their AI assistant to a Fabric Lakehouse. What should they configure?"
     choices:
