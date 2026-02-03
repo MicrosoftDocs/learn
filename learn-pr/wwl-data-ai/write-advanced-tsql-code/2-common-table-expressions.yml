@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.write-advanced-tsql-code.2-common-table-expressions
+title: Understand and write Common Table Expressions (CTEs)
+metadata:
+  title: Understand and write Common Table Expressions (CTEs)
+  description: Learn how to create non-recursive and recursive CTEs in SQL Server and Azure SQL to simplify complex queries and traverse hierarchical data.
+  ms.date: 01/28/2026
+  author: JulianePadrao
+  ms.author: jupadrao
+  ms.topic: unit
+durationInMinutes: 12
+content: |
+  [!include[](includes/2-common-table-expressions.md)]
