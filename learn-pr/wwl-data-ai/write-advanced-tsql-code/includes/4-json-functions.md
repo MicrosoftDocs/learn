@@ -279,7 +279,7 @@ Mountain Bikes  [{"id":771,"name":"Mountain-100 Silver, 38","price":3399.99},{"i
 
 Before extracting values, you may need to validate JSON content or check for specific values. Understanding path modes also helps you handle missing or invalid paths gracefully.
 
-### Understand lax vs strict path modes**
+### Understand lax vs strict path modes
 
 JSON path expressions support two modes that control error handling:
 

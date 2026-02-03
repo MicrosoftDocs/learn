@@ -41,6 +41,9 @@ In this model:
 - **Edges** (arrows) represent relationships between nodes
 - Arrow direction indicates the relationship direction (Alice knows Bob, not necessarily Bob knows Alice)
 
+> [!NOTE]
+> This diagram illustrates graph concepts. The code examples throughout this unit use similar but simplified data to focus on specific features.
+
 ## Understand graph capabilities
 
 The graph feature extends the relational model with dedicated node and edge tables. Nodes represent entities (people, products, locations), while edges represent relationships between them (follows, purchased, located_in).
@@ -269,6 +272,7 @@ Graph tables work directly with regular relational tables and operations:
 
 ```sql
 -- Join graph results with a regular table
+-- Assumes a Departments table exists: CREATE TABLE dbo.Departments (DepartmentName NVARCHAR(50) PRIMARY KEY, DepartmentBudget DECIMAL(12,2));
 SELECT 
     e.Name AS Employee,
     m.Name AS Manager,
@@ -276,7 +280,7 @@ SELECT
 FROM dbo.Person AS e,
      dbo.ReportsTo AS r,
      dbo.Person AS m,
-     dbo.Departments AS d  -- Regular table
+     dbo.Departments AS d  -- Regular relational table
 WHERE MATCH(e-(r)->m)
   AND e.Department = d.DepartmentName;
 

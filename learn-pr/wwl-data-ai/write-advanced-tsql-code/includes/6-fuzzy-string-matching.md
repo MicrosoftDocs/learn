@@ -216,6 +216,6 @@ WHERE FirstName LIKE 'Jo%'
 ```
 
 > [!IMPORTANT]
-> Fuzzy string matching functions like `EDIT_DISTANCE`, `EDIT_DISTANCE_SIMILARITY`, and `JARO_WINKLER_DISTANCE` are available in recent versions of SQL Server and Azure SQL. Check your platform's documentation for feature availability.
+> Fuzzy string matching functions like `EDIT_DISTANCE`, `EDIT_DISTANCE_SIMILARITY`, and `JARO_WINKLER_DISTANCE` are available in SQL Server 2025 and later, Azure SQL Database, and SQL databases in Microsoft Fabric. Check your platform's documentation for specific feature availability.
 
 For more information about fuzzy string matching, see [String Functions](/sql/t-sql/functions/string-functions-transact-sql?azure-portal=true).
