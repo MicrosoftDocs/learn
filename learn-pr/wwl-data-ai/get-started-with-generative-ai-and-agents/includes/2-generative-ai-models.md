@@ -9,7 +9,7 @@ Generative AI and agentic solutions are based on language models. Large language
 
 **Foundry's model catalog** is a central hub for discovering and using a wide selection of generative AI models from an extensive range of providers. In Foundry, you can filter models by source, capabilities, inference tasks, and more. Foundry enables you to understand and compare model capabilities, as well as test and build scalable, secure, responsible AI solutions. 
 
-> ![NOTE]
+> [!NOTE]
 > The Foundry portal has a *classic* user interface (UI) and a *new* UI. Images of the Foundry portal reflect the *new* UI where it's relevant. 
 
 ![Screenshot of Foundry's model catalog with the new UI.](../media/model-catalog-1.png)  
@@ -51,19 +51,14 @@ Choosing the right model in Foundry starts with understanding **your workload, t
 
 #### Select a model by task type 
 
-- **Chat and text generation:** GPT‑5.x, Claude, DeepSeek V3.1, small language models (SLMs) like Phi‑4 or Llama.
-- **Reasoning-intensive tasks:** GPT‑5.x, Claude‑Opus class models (optimized for step-by-step reasoning). 
-- **Coding:** GPT‑5.1‑codex, Claude‑Sonnet for complex agent flows. 
-- **Embeddings / retrieval:** Specialized embedding models (OpenAI, Microsoft, Cohere).
-- **Multimodal (image+text):** GPT‑4o, DeepSeek‑V3.1 multimodal, diffusion models like Black Forest Labs' Flux for image generation. 
-- **Industry or domain-specific tasks:** Domain-tuned models in the catalog (finance, healthcare, legal).
-
 |**Task**|**Recommended model types**|**When to choose**|
 |-|-|-|
-|**Chat**| GPT‑5.x chat, Claude Sonnet/Opus, Mistral‑Large‑3| Strong reasoning, conversation tuning, safety |
+|**Chat**| GPT‑5.x chat, Claude Sonnet/Opus, Mistral‑Large‑3, DeepSeek V3.1, small language models (SLMs) like Phi‑4 or Llama| Strong reasoning, conversation tuning, safety |
+|**Coding**|GPT‑5.1‑codex, Claude‑Sonnet|Support complex agent flows|
 |**Summarization**| GPT‑5.x reasoning models, Claude Opus/Sonnet| Long-context, high-quality compression |
 |**Embeddings**| text‑embedding‑3-small or other embedding models| Built for semantic vector representations |
-|**Multimodal**| Phi‑4‑multimodal‑instruct, GPT‑5.x chat multimodal, Mistral‑Large‑3 | Support for images/audio in chat completions|
+|**Multimodal (imgae+text)**| Phi‑4‑multimodal‑instruct, GPT‑5.x chat multimodal, Mistral‑Large‑3 | Support for images/audio in chat completions|
+|**Industry or domain-specific**|Domain-tuned models in the catalog|Applications specific to an industry such as finance, healthcare, legal|
 
 > [!NOTE]
 > When the use case is well‑defined, instead of choosing a model from the model catalog, you may choose a [**Foundry tool**](https://azure.microsoft.com/products/ai-foundry/tools/?msockid=2bbfe2e7589c63f40fd5f7ea5c9c654c#Tools). Foundry tools are powered by prebuilt models that provide predictable performance, built‑in compliance, and fast time‑to‑value without custom modeling.  
