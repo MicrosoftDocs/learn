@@ -88,7 +88,7 @@ CREATE TABLE dbo.Product (
 CREATE TABLE dbo.Location (
     LocationID INT PRIMARY KEY,
     City NVARCHAR(100) NOT NULL,
-    Country NVARCHAR(100) NOT NULL
+    CountryRegion NVARCHAR(100) NOT NULL
 ) AS NODE;
 ```
 
