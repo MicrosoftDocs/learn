@@ -26,6 +26,5 @@ subjects:
 modules:
 - learn.manage-vms-with-azure-cli
 - learn.azure.create-resource-manager-template-vs-code
-- learn.build-app-with-scale-sets
 trophy:
   uid: learn.architect-compute-infrastructure.trophy

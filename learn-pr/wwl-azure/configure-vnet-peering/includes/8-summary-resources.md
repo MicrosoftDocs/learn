@@ -27,5 +27,3 @@ Copilot can assist you in designing Azure infrastructure solutions. Copilot can 
 ## Learn more with self-paced training
 
 - [Introduction to Azure Virtual Networks](/training/modules/introduction-to-azure-virtual-networks/). Learn how to design and implement core Azure networking infrastructure such as virtual networks, and virtual network peering.
-
-- [Distribute your services across Azure Virtual Networks and integrate them by using Azure Virtual Network peering (sandbox)](/training/modules/integrate-vnets-with-vnet-peering/). Learn how to use virtual network peering to enable communication across virtual networks.

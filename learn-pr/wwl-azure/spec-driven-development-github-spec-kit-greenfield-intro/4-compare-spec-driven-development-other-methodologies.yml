@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.spec-driven-development-github-spec-kit-greenfield-intro.compare-spec-driven-development-other-methodologies
+title: "Compare spec-driven development to other methodologies"
+metadata:
+  title: "Compare Spec-Driven Development to Other Methodologies"
+  description: "Compare Spec-Driven Development to Other Methodologies."
+  ms.date: 01/26/2026
+  author: chrishowd
+  ms.author: cahowd
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-compare-spec-driven-development-other-methodologies.md)]

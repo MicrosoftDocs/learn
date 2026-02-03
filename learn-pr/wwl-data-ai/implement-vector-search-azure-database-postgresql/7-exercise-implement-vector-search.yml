@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-vector-search-azure-database-postgresql.exercise-implement-vector-search
+title: Exercise - Implement vector search on Azure Database for PostgreSQL
+metadata:
+  title: Exercise - Implement Vector Search on Azure Database for PostgreSQL
+  description: Exercise - Implement vector search on Azure Database for PostgreSQL
+  ms.date: 01/29/2026
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: unit
+durationInMinutes: 30
+content: |
+  [!include[](includes/7-exercise-implement-vector-search.md)]

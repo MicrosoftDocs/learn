@@ -1,5 +1,7 @@
 Managed identities provide a secure, automated way to authenticate your Unity Catalog workspaces to storage resources without managing credentials in your code or configuration files.
 
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=5ae8dd80-0efe-494a-b968-1a2e1a452c3d]
+
 As a data engineer, you use managed identities to create **storage credentials** in Unity Catalog. These credentials form the foundation for accessing external data through external tables or reading files directly from cloud storage. Unlike traditional authentication methods that require you to create, store, and rotate secrets, managed identities eliminate credential management overhead while providing enterprise-grade security.
 
 ## Understanding managed identities for Unity Catalog
@@ -7,8 +9,6 @@ As a data engineer, you use managed identities to create **storage credentials**
 Managed identities are Azure resources that provide an identity for your applications when connecting to services that support Microsoft Entra ID authentication. Azure manages the lifecycle of these identities automatically, removing the burden of credential rotation and secret management from your team.
 
 With Unity Catalog, you use managed identities through an **Azure Databricks access connector**. This first-party Azure resource acts as a bridge between your managed identity and your Azure Databricks account. The access connector can contain either a **system-assigned managed identity** that Azure creates automatically, or one or more **user-assigned managed identities** that you create and manage separately.
-
-Managed identities offer significant advantages for data engineering workflows. They allow Unity Catalog to access storage accounts protected by **network rules and firewalls**, which isn't possible with other authentication methods. When your organization uses **VNet injection** for your Azure Databricks workspace, managed identities integrate seamlessly with your network security architecture. They also support **serverless SQL warehouses**, which run in the Azure Databricks subscription rather than your own subscription.
 
 Two primary use cases exist for managed identities in Unity Catalog. First, you use them to connect to the metastore's root storage account where Unity Catalog stores managed tables. Second, you use them to access external storage accounts for reading files or creating external tables. Both scenarios use the same configuration approach but serve different purposes in your data architecture.
 
