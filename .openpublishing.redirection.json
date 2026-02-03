@@ -63811,6 +63811,86 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/azure/introduction-to-infrastructure-as-code-using-bicep/index.yml",
+      "redirect_url": "https://learn.microsoft.com/shows/learn-live/iac-and-bicep/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/introduction-to-infrastructure-as-code-using-bicep/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/shows/learn-live/iac-and-bicep/",
+      "redirect_document_id": false
+    }, 
+    {
+      "source_path": "learn-pr/azure/introduction-to-infrastructure-as-code-using-bicep/2-what-infrastructure-code.yml",
+      "redirect_url": "https://learn.microsoft.com/shows/learn-live/iac-and-bicep/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/introduction-to-infrastructure-as-code-using-bicep/3-what-azure-resource-manager.yml",
+      "redirect_url": "https://learn.microsoft.com/shows/learn-live/iac-and-bicep/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/introduction-to-infrastructure-as-code-using-bicep/4-what-bicep.yml",
+      "redirect_url": "https://learn.microsoft.com/shows/learn-live/iac-and-bicep/",
+      "redirect_document_id": false
+    }, 
+    {
+      "source_path": "learn-pr/azure/introduction-to-infrastructure-as-code-using-bicep/5-how-bicep-works.yml",
+      "redirect_url": "https://learn.microsoft.com/shows/learn-live/iac-and-bicep/",
+      "redirect_document_id": false
+    }, 
+    {
+      "source_path": "learn-pr/azure/introduction-to-infrastructure-as-code-using-bicep/6-when-use-bicep.yml",
+      "redirect_url": "https://learn.microsoft.com/shows/learn-live/iac-and-bicep/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/introduction-to-infrastructure-as-code-using-bicep/7-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/shows/learn-live/iac-and-bicep/",
+      "redirect_document_id": false
+    }, 
+    {
+      "source_path": "learn-pr/azure/introduction-to-infrastructure-as-code-using-bicep/8-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/shows/learn-live/iac-and-bicep/",
+      "redirect_document_id": false
+    }, 
+    {
+      "source_path": "learn-pr/azure/create-composable-bicep-files-using-modules/index.yml",
+      "redirect_url": "https://learn.microsoft.com/shows/learn-live/iac-and-bicep/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-composable-bicep-files-using-modules/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/shows/learn-live/iac-and-bicep/",
+      "redirect_document_id": false
+    }, 
+    {
+      "source_path": "learn-pr/azure/create-composable-bicep-files-using-modules/2-create-use-bicep-modules.yml",
+      "redirect_url": "https://learn.microsoft.com/shows/learn-live/iac-and-bicep/",
+      "redirect_document_id": false
+    }, 
+    {
+      "source_path": "learn-pr/azure/create-composable-bicep-files-using-modules/3-add-parameters-outputs-modules.yml",
+      "redirect_url": "https://learn.microsoft.com/shows/learn-live/iac-and-bicep/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-composable-bicep-files-using-modules/4-exercise-create-use-module.yml",
+      "redirect_url": "https://learn.microsoft.com/shows/learn-live/iac-and-bicep/",
+      "redirect_document_id": false
+    }, 
+    {
+      "source_path": "learn-pr/azure/create-composable-bicep-files-using-modules/5-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/shows/learn-live/iac-and-bicep/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-composable-bicep-files-using-modules/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/shows/learn-live/iac-and-bicep/",
+      "redirect_document_id": false
+    },
+    {                                                                                    
       "source_path": "learn-pr/azure/connect-vm-with-azure-bastion/index.yml",
       "redirect_url": "https://learn.microsoft.com/azure/bastion/vm-about",
       "redirect_document_id": false
