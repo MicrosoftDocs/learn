@@ -1,0 +1,48 @@
+### YamlMime:Module
+uid: learn.wwl.implement-vector-search-azure-database-postgresql
+metadata:
+  title: Implement Vector Search with Azure Database for PostgreSQL
+  description: Learn how to implement vector search in Azure Database for PostgreSQL using the pgvector extension for semantic search, recommendations, and RAG pipelines.
+  ms.date: 01/29/2026
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: module-standard-task-based
+  ai-usage: ai-assisted
+  ms.service: azure-database-postgresql
+title: Implement vector search with Azure Database for PostgreSQL
+summary: Learn how to implement vector search using the pgvector extension in Azure Database for PostgreSQL. Store embeddings, create vector indexes, and build semantic retrieval patterns for AI applications.
+abstract: |
+  After completing this module, you'll be able to:
+    - Store and query vector embeddings using the pgvector extension in Azure Database for PostgreSQL
+    - Execute vector similarity searches using different distance metrics and operators
+    - Create and manage vector indexes to optimize search performance
+    - Implement embedding update and refresh strategies for evolving datasets
+    - Build retrieval patterns that integrate PostgreSQL vector search with RAG pipelines
+prerequisites: |
+  Before beginning this module, you should have:
+  - Programming experience with Python.
+  - Basic understanding of Azure services and cloud computing concepts.
+  - Familiarity with relational databases and SQL fundamentals.
+  - Understanding of machine learning concepts including embeddings and similarity search.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- azure-database-postgresql
+subjects:
+- databases
+- artificial-intelligence
+units:
+- learn.wwl.implement-vector-search-azure-database-postgresql.introduction
+- learn.wwl.implement-vector-search-azure-database-postgresql.store-query-embeddings-pgvector
+- learn.wwl.implement-vector-search-azure-database-postgresql.perform-fast-vector-similarity-search
+- learn.wwl.implement-vector-search-azure-database-postgresql.manage-index-lifecycle-embedding-updates
+- learn.wwl.implement-vector-search-azure-database-postgresql.run-vector-similarity-search-semantic-retrieval
+- learn.wwl.implement-vector-search-azure-database-postgresql.implement-retrieval-patterns-rag-pipelines
+- learn.wwl.implement-vector-search-azure-database-postgresql.exercise-implement-vector-search
+- learn.wwl.implement-vector-search-azure-database-postgresql.knowledge-check
+- learn.wwl.implement-vector-search-azure-database-postgresql.summary
+badge:
+  uid: learn.wwl.implement-vector-search-azure-database-postgresql.badge

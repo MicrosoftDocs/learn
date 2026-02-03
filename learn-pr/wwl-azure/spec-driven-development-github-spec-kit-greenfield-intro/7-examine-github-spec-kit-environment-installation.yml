@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.spec-driven-development-github-spec-kit-greenfield-intro.examine-github-spec-kit-environment-installation
+title: "Set up GitHub Spec Kit in your environment"
+metadata:
+  title: "Set Up GitHub Spec Kit in Your Environment"
+  description: "Set up GitHub Spec Kit in your environment."
+  ms.date: 01/26/2026
+  author: chrishowd
+  ms.author: cahowd
+  ms.topic: unit
+durationInMinutes: 9
+content: |
+  [!include[](includes/7-examine-github-spec-kit-environment-installation.md)]

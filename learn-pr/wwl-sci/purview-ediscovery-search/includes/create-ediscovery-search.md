@@ -1,5 +1,7 @@
 To search for content in Microsoft Purview eDiscovery, you must first create a case. A case provides the workspace where searches, holds, and exports are managed. Creating a search also creates a case, which ensures that access to investigation data is controlled and auditable. This ensures that access to investigation data is controlled and auditable.
 
+To create and run an eDiscovery search, the user account must be assigned the **eDiscovery Manager** or **eDiscovery Administrator** role in Microsoft Purview. These roles determine who can create cases and execute searches.
+
 ## Why cases are required
 
 Every search must be associated with a case. The case model provides:
