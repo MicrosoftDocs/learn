@@ -6,40 +6,12 @@ In this unit, you'll learn how to create graph tables and write queries using th
 
 Before writing graph queries, it helps to visualize how graph data is organized. Consider a simple social network where people know each other and purchase products:
 
-```
-                    GRAPH DATA MODEL
-    ┌─────────────────────────────────────────────────┐
-    │                                                 │
-    │     ┌─────────┐         ┌─────────┐            │
-    │     │  Alice  │─KNOWS──▶│   Bob   │            │
-    │     │(Person) │         │(Person) │            │
-    │     └────┬────┘         └────┬────┘            │
-    │          │                   │                 │
-    │        KNOWS               KNOWS               │
-    │          │                   │                 │
-    │          ▼                   ▼                 │
-    │     ┌─────────┐         ┌─────────┐            │
-    │     │  Carol  │─KNOWS──▶│  David  │            │
-    │     │(Person) │         │(Person) │            │
-    │     └────┬────┘         └─────────┘            │
-    │          │                                     │
-    │      PURCHASED                                 │
-    │          │                                     │
-    │          ▼                                     │
-    │     ┌─────────┐                                │
-    │     │ Laptop  │                                │
-    │     │(Product)│                                │
-    │     └─────────┘                                │
-    │                                                 │
-    │  NODES: Person, Product (entities)             │
-    │  EDGES: KNOWS, PURCHASED (relationships)       │
-    └─────────────────────────────────────────────────┘
-```
+:::image type="content" source="../media/graph-model.png" alt-text="Diagram showing a graph data model with Person and Product nodes connected by KNOWS and PURCHASED edges.":::
 
 In this model:
+
 - **Nodes** (boxes) represent entities like people and products
-- **Edges** (arrows) represent relationships between nodes
-- Arrow direction indicates the relationship direction (Alice knows Bob, not necessarily Bob knows Alice)
+- **Edges** (arrows) represent relationships between nodes. Arrow direction indicates the relationship direction (Alice knows Bob, not necessarily Bob knows Alice).
 
 > [!NOTE]
 > This diagram illustrates graph concepts. The code examples throughout this unit use similar but simplified data to focus on specific features.
