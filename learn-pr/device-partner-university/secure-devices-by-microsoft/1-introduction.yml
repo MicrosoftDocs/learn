@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.secured-devices-by-microsoft.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: This content is part of the "Secure at every layer with Microsoft Surface" module.
+  ms.date: 02/03/2026
+  author: ozahran7
+  ms.author: v-zahranomar
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/1-introduction.md)]
