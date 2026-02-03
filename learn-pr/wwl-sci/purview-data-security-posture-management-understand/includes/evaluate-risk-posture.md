@@ -6,7 +6,7 @@ DSPM doesn't rely on point-in-time checks or one-off scans. It builds its view o
 
 Data environments don't stay still. Files are created, shared, moved, and reused. Access changes. New apps appear. AI accelerates all of this.
 
-DSPM accounts for this by continuously assessing where sensitive data exists and how it's being used. Instead of asking whether a scan ran or a policy fired, DSPM looks at what the environment looks like _now_ and how that picture changes over time.
+DSPM continuously assesses where sensitive data exists and how it’s being used. Instead of asking whether a scan ran or a policy fired, DSPM looks at what the environment looks like _now_ and how that picture changes over time.
 
 This ongoing assessment is what allows DSPM to surface trends and shifts in exposure, not just isolated findings. Posture reflects patterns and conditions over time, not individual events or momentary findings.
 

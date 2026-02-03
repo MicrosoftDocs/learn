@@ -1,1 +1,15 @@
-Where DSPM fits in the broader data security workflow
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-data-security-posture-management-understand.data-security-workflow-fit
+title: Where DSPM fits in the broader data security workflow
+metadata:
+  title: Where DSPM fits in the broader data security workflow
+  description: "Where DSPM fits in the broader data security workflow"
+  ms.date: 02/03/2026
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/data-security-workflow-fit.md)]

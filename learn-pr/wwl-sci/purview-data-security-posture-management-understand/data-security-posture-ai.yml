@@ -1,2 +1,15 @@
-How AI is used inside DSPM
-4
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-data-security-posture-management-understand.data-security-posture-ai
+title: How AI is used inside DSPM
+metadata:
+  title: How AI is used inside DSPM
+  description: "How AI is used inside DSPM"
+  ms.date: 02/03/2026
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/data-security-posture-ai.md)]

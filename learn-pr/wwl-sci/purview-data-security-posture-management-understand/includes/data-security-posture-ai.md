@@ -18,7 +18,7 @@ Within DSPM, AI assists with tasks that benefit from pattern recognition and con
 - Prioritization of risks based on patterns, trends, and scope
 - Analysis that explains why certain risks surface and how they relate to posture
 
-These capabilities help reduce the time spent interpreting data and connecting signals across tools. They don't change what actions are available or how those actions are taken.
+These capabilities reduce the time spent interpreting data and connecting signals across tools. They don't change what actions are available or how those actions are taken.
 
 ## What AI doesn't do
 

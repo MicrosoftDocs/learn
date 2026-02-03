@@ -1,2 +1,15 @@
-How DSPM evaluates data risk and posture
-5
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-data-security-posture-management-understand.evaluate-risk-posture
+title: How DSPM evaluates data risk and posture
+metadata:
+  title: How DSPM evaluates data risk and posture
+  description: "How DSPM evaluates data risk and posture"
+  ms.date: 02/03/2026
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/evaluate-risk-posture.md)]

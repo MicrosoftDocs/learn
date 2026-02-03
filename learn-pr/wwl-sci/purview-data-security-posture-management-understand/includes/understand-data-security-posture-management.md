@@ -23,7 +23,7 @@ At its core, DSPM is built around four questions that need to be answered to sup
 
 These questions sound simple, but answering them consistently across workloads, users, and AI interactions is hard. Data moves. Access changes. New tools and apps appear. AI accelerates all of this.
 
-DSPM brings these questions together in one place so you can reason about exposure and risk across the environment, not just inside a single tool.
+DSPM brings these questions together so you can reason about exposure and risk across the environment, not just within a single tool.
 
 ## How DSPM builds its view of posture
 

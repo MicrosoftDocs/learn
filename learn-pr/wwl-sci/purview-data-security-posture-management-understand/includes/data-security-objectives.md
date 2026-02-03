@@ -10,7 +10,7 @@ In data security posture management (DSPM), objectives are the primary way risk 
 
 :::image type="content" source="../media/objectives-as-outcomes.png" border="false" alt-text="Diagram showing objectives progressing through assess, identify, recommend, and validate steps over time." lightbox="../media/objectives-as-outcomes.png":::
 
-Objectives aren't checklists or static views. They function as workflows that connect:
+Objectives aren’t checklists or static views. They function as workflows that link:
 
 - Assessing current posture
 - Identifying gaps or risks
