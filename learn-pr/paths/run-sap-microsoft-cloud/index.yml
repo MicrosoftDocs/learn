@@ -34,7 +34,6 @@ modules:
 - learn.wwl.innovate-rise-sap-microsoft-cloud
 - learn.wwl.insights-sap-use-unified-analytics-ai-platform
 - learn.wwl.explore-azure-networking-sap-rise
-- introduction-azure-private-link
 - learn.wwl.secure-sap-microsoft-cloud
 trophy:
   uid: learn.wwl.run-sap-microsoft-cloud.trophy

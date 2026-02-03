@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-data-loss-prevention-create-manage-policies.template-custom-policy
+title: Choose a template or create a custom policy
+metadata:
+  title: Choose a template or create a custom policy
+  description: "Choose a template or create a custom policy"
+  ms.date: 01/27/2026
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/template-custom-policy.md)]

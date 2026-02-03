@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.optimize-vector-search-azure-database-postgresql.optimize-data-layout
+title: Optimize data layout
+metadata:
+  title: Optimize Data Layout
+  description: Optimize data layout
+  ms.date: 01/26/2026
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: unit
+durationInMinutes: 14
+content: |
+  [!include[](includes/4-optimize-data-layout.md)]
