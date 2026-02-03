@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.build-query-azure-database-postgresql.explore-azure-database-postgresql
+title: Explore Azure Database for PostgreSQL
+metadata:
+  title: Explore Azure Database for PostgreSQL
+  description: Explore Azure Database for PostgreSQL
+  ms.date: 01/29/2026
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/2-explore-azure-database-postgresql.md)]
