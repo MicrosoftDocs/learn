@@ -13,20 +13,20 @@ durationInMinutes: 5
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Which GitHub Copilot plan includes enterprise-grade security and privacy?"
+  - content: "Which GitHub Copilot plans include enterprise-grade security and privacy features?"
     choices:
     - content: "Pro"
       isCorrect: false
-      explanation: "The Pro plan doesn't include enterprise-grade security and privacy features. It's designed for personal use and lacks the advanced security measures that businesses and enterprises require."
+      explanation: "The Pro plan is for individual users and does not include enterprise-grade security or privacy features. These features are only available in organizational plans."
+    - content: "Business and Enterprise"
+      isCorrect: true
+      explanation: "Both the Business and Enterprise plans include enterprise-grade security and privacy features, such as IP indemnity, organizational public code filters, and compliance support."
     - content: "Business"
       isCorrect: false
-      explanation: "The Business plan does include enterprise-grade security and privacy features, but this isn't the only correct answer."
+      explanation: "The Business plan alone includes enterprise-grade security, but Enterprise also includes it. The question asks for all plans that include these features."
     - content: "Enterprise"
       isCorrect: false
-      explanation: "The Enterprise plan does include enterprise-grade security and privacy features, but this isn't the only correct answer."
-    - content: "Both B and C"
-      isCorrect: true
-      explanation: "Both the Business and Enterprise plans offer enterprise-grade security and privacy features."
+      explanation: "The Enterprise plan alone includes enterprise-grade security, but Business also includes it. The correct answer is both Business and Enterprise."
   - content: "What should you do if GitHub Copilot isn't providing code suggestions?"
     choices:
     - content: "Restart the computer"
