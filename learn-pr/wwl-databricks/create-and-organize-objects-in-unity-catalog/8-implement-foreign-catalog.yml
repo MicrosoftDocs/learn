@@ -4,7 +4,7 @@ title: Implement foreign catalog
 metadata:
   title: Implement Foreign Catalog
   description: Learn how to implement foreign catalogs in Unity Catalog by configuring connections to external databases for centralized governance and read-only access.
-  ms.date: 12/07/2025
+  ms.date: 01/30/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit

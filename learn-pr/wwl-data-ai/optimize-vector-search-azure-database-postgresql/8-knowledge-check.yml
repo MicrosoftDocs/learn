@@ -1,0 +1,70 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.optimize-vector-search-azure-database-postgresql.knowledge-check
+title: Module assessment
+metadata:
+  title: Module Assessment
+  description: Module assessment
+  ms.date: 01/26/2026
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: unit
+azureSandbox: false
+durationInMinutes: 5
+content: "Choose the best response for each of the following questions."
+quiz:
+  questions:
+  - content: "You're tuning PostgreSQL for a vector search workload with 2 million 1536-dimensional embeddings. Queries are slow and you observe a cache hit ratio of 85%. Which configuration change should you prioritize?"
+    choices:
+    - content: "Increase `shared_buffers` to keep more data in the PostgreSQL cache"
+      isCorrect: true
+      explanation: "Correct. A cache hit ratio of 85% indicates that 15% of data page reads require disk access. Increasing `shared_buffers` allows PostgreSQL to cache more vector data and indexes in memory, reducing disk I/O and improving query latency for vector workloads."
+    - content: "Decrease `random_page_cost` to encourage more index scans"
+      isCorrect: false
+      explanation: "Incorrect. While lowering `random_page_cost` encourages index usage, it doesn't address the root cause of the problem. The 85% cache hit ratio indicates insufficient memory caching, not incorrect query planning. The planner settings won't help if the data isn't in cache."
+    - content: "Increase `ivfflat.probes` to search more index partitions"
+      isCorrect: false
+      explanation: "Incorrect. Increasing `ivfflat.probes` improves recall by searching more partitions, but it doesn't address the caching issue. The low cache hit ratio suggests data is being read from disk repeatedly, which is the primary performance bottleneck."
+  - content: "You need to create a vector index for a dataset of 5 million product embeddings that receives frequent batch updates (daily full refresh). Build time must be under 30 minutes. Which index configuration should you choose?"
+    choices:
+    - content: "IVFFlat with lists set to sqrt(rows)"
+      isCorrect: true
+      explanation: "Correct. IVFFlat indexes build faster than HNSW indexes, making them practical for datasets that require frequent rebuilding. For 5 million rows, setting lists to approximately 2,200-2,500 provides good partitioning while keeping build time manageable."
+    - content: "HNSW with m=16 and ef_construction=64"
+      isCorrect: false
+      explanation: "Incorrect. HNSW indexes provide excellent query performance but have long build times that increase more than linearly with data size. For 5 million vectors, an HNSW index typically takes 2-6 hours to build, far exceeding the 30-minute requirement."
+    - content: "HNSW with m=8 and ef_construction=32"
+      isCorrect: false
+      explanation: "Incorrect. Even with reduced parameters, HNSW build times for 5 million vectors would likely exceed the 30-minute target. Lower parameter values also reduce graph quality, potentially defeating the purpose of using HNSW over IVFFlat."
+  - content: "Your filtered vector search query filters by `category_id` and then orders by vector similarity. The query plan shows a sequential scan on the products table. What should you check first?"
+    choices:
+    - content: "Verify that a B-tree index exists on the `category_id` column"
+      isCorrect: true
+      explanation: "Correct. Without a B-tree index on `category_id`, PostgreSQL can't efficiently filter rows before applying vector similarity. Creating the index allows the planner to reduce the candidate set before vector operations, significantly improving performance for filtered queries."
+    - content: "Verify that the vector index uses the same operator class as the query"
+      isCorrect: false
+      explanation: "Incorrect. While operator class matching is important for vector index usage, the sequential scan in this case is likely due to the metadata filter. If there's no efficient way to filter by `category_id`, PostgreSQL might scan the entire table regardless of vector index configuration."
+    - content: "Increase `hnsw.ef_search` to expand the search space"
+      isCorrect: false
+      explanation: "Incorrect. The `hnsw.ef_search` parameter affects recall and speed for HNSW index searches, but it doesn't address why a sequential scan is being used. The problem is that metadata filtering isn't being handled efficiently, which requires a B-tree index on the filter column."
+  - content: "You're implementing connection management for an AI application that makes 500 vector queries per second during peak traffic. Your Azure Database for PostgreSQL instance supports 1,719 max connections. Which approach should you use?"
+    choices:
+    - content: "Enable PgBouncer in transaction mode with a pool size appropriate for your application instances"
+      isCorrect: true
+      explanation: "Correct. PgBouncer in transaction mode multiplexes many client connections across fewer database connections. Clients hold server connections only during transactions, allowing hundreds of concurrent requests to share a smaller pool. This prevents hitting connection limits while maintaining throughput."
+    - content: "Create a new database connection for each query request"
+      isCorrect: false
+      explanation: "Incorrect. Creating connections per request incurs 50-200ms overhead for TCP handshake, TLS negotiation, and authentication on each query. At 500 queries per second, this approach would also quickly exhaust the 1,719 connection limit, causing connection failures."
+    - content: "Enable PgBouncer in session mode to maintain persistent connections"
+      isCorrect: false
+      explanation: "Incorrect. Session mode holds database connections for the entire client session, providing minimal connection reduction. For high-throughput workloads with many concurrent requests, session mode doesn't provide the connection multiplexing benefits needed to stay within limits."
+  - content: "You're scaling a recommendation engine that currently runs on a General Purpose 8 vCore instance. CPU utilization averages 75% and P95 query latency is 150 ms, but you need to achieve sub-50ms latency. What scaling approach should you try first?"
+    choices:
+    - content: "Upgrade to a Memory Optimized tier with more vCores"
+      isCorrect: true
+      explanation: "Correct. High CPU utilization (75%) combined with slow queries suggests compute constraints. Memory Optimized tiers provide more memory per vCore, which helps keep vector indexes cached. More vCores enable parallel query execution. Vertical scaling is simpler to implement and should be tried before adding architectural complexity."
+    - content: "Add read replicas to distribute query load"
+      isCorrect: false
+      explanation: "Incorrect. Read replicas help when total query volume exceeds what one server can handle, but they don't improve single-query latency. Since the problem is that individual queries take 150ms, adding replicas won't reduce that time. You first need to make single queries faster."
+    - content: "Implement application-level caching with Azure Cache for Redis"
+      isCorrect: false
+      explanation: "Incorrect. While caching can reduce database load for repeated queries, recommendation queries typically have high cardinality (many unique query vectors), making cache hit rates low. The primary issue is single-query performance, which requires database-level optimization before considering caching."

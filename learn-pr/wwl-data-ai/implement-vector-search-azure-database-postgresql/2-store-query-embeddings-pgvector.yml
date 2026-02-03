@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-vector-search-azure-database-postgresql.store-query-embeddings-pgvector
+title: Store and query embeddings with pgvector
+metadata:
+  title: Store and Query Embeddings with pgvector
+  description: Store and query embeddings with pgvector
+  ms.date: 01/29/2026
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-store-query-embeddings-pgvector.md)]

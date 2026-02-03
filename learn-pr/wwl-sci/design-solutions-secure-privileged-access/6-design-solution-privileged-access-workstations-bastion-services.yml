@@ -1,13 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.design-solutions-secure-privileged-access.design-solution-privileged-access-workstations-bastion-services
-title: Design a solution for privileged access workstations and bastion services
+title: Design a solution for privileged access workstations and remote access
 metadata:
-  title: Design a solution for privileged access workstations and bastion services
-  description: "This is a unit to prepare for the Microsoft cybersecurity architect certification on the topic: design a solution for privileged access workstations and bastion services."
-  ms.date: 3/15/2023
+  title: Design a solution for privileged access workstations and remote access
+  description: "Learn to design a solution for secure workstations for privileged access, including remote access using Azure Bastion for the SC-100 certification."
+  ms.date: 01/27/2026
   author: ceperezb
   ms.author: ceperezb
   ms.topic: unit
-durationInMinutes: 10
+durationInMinutes: 7
 content: |
   [!include[](includes/6-design-solution-privileged-access-workstations-bastion-services.md)]

@@ -3,7 +3,7 @@ uid: learn.wwl.create-and-organize-objects-in-unity-catalog
 metadata:
   title: Create and Organize Objects in Unity Catalog
   description: Learn how to create and organize catalogs, schemas, tables, views, and volumes in Unity Catalog to build a comprehensive data governance framework with proper naming conventions and AI/BI integration.
-  ms.date: 12/07/2025
+  ms.date: 01/30/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: module

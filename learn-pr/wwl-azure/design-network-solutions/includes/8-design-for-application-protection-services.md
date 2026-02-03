@@ -23,9 +23,6 @@ Azure offers several networking services to help protect your network resources.
 - Integrate with on-premises and peered networks.
 - Restrict traffic to the Microsoft network with no public internet access.
 
-> [!Tip]
-> Learn more with the [Introduction to Azure Private Link](/training/modules/introduction-azure-private-link/) training module. 
-
 ### Azure Firewall
 
 Azure Firewall is a managed, cloud-based network security service that protects your Azure Virtual Network resources. It's a fully stateful firewall as a service with built-in high availability and unrestricted cloud scalability. Azure Firewall uses a static public IP address for your virtual network resources, which allows outside firewalls to identify traffic originating from your virtual network. Azure Firewall provides inbound protection for non-HTTP/S protocols (such as RDP, SSH, and FTP), outbound network-level protection for all ports and protocols, and application-level protection for outbound HTTP/S.
@@ -47,9 +44,6 @@ Azure Firewall is a managed, cloud-based network security service that protects 
 
 - React faster to security threats by centrally patching known vulnerabilities instead of securing individual web apps.
 - Deploy Web Application Firewall with Application Gateway, Front Door, and Content Delivery Network.
-
-> [!Tip]
-> Learn more with the [Introduction to Azure Web Application Firewall](/training/modules/introduction-azure-web-application-firewall/) training module. 
 
 ### Azure virtual network security groups
 

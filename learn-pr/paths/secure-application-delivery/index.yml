@@ -28,8 +28,6 @@ subjects:
 - cloud-security
 modules:
 - learn.intro-to-azure-front-door
-- introduction-azure-web-application-firewall
-- introduction-azure-private-link
 - learn.intro-to-azure-bastion
 trophy:
   uid: learn.secure-application-delivery.trophy
