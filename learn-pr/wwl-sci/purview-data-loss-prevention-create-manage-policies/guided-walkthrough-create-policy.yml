@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-data-loss-prevention-create-manage-policies.guided-walkthrough-create-policy
+title: "Guided walkthrough: Create a DLP policy"
+metadata:
+  title: "Guided Walkthrough: Create a DLP policy"
+  description: "Guided Walkthrough: Create a DLP policy"
+  ms.date: 01/27/2026
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 15
+content: |
+  [!include[](includes/guided-walkthrough-create-policy.md)]

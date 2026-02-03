@@ -4,10 +4,10 @@ title:  Evaluate and validate alignment with regulatory standards and benchmarks
 metadata:
   title:  Evaluate and validate alignment with regulatory standards and benchmarks by using Microsoft Defender for Cloud
   description: "SC-100 preparatory unit on the topic:  Evaluate and validate alignment with regulatory standards and benchmarks by using Microsoft Defender for Cloud."
-  ms.date: 3/15/2023
+  ms.date: 01/28/2026
   author: ceperezb
   ms.author: ceperezb
   ms.topic: unit
-durationInMinutes: 10
+durationInMinutes: 9
 content: |
   [!include[](includes/6-evaluate-infrastructure-compliance-defender-cloud.md)]

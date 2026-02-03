@@ -1,14 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.design-solutions-identity-access-management.design-cloud-hybrid-multi-cloud-access-strategies
-title: Design cloud, hybrid and multicloud access strategies (including Microsoft Entra ID)
+title: Design cloud, hybrid, and multicloud access strategies
 metadata:
-  title: Design cloud, hybrid and multicloud access strategies (including Microsoft Entra ID)
-  description: "This is a unit which prepares for the Microsoft Cybersecurity Architect certification on the topic: design cloud, hybrid and multicloud access strategies."
-  ms.date: 09/26/2024
+  title: Design cloud, hybrid, and multicloud access strategies
+  description: "Design access strategies for SaaS, PaaS, IaaS, hybrid, and multicloud environments using Microsoft Entra ID."
+  ms.date: 01/30/2026
   author: ceperezb
   ms.author: ceperezb
   ms.topic: unit
-  ms.custom: sfi-ga-nochange
-durationInMinutes: 5
+durationInMinutes: 7
 content: |
   [!include[](includes/2-design-cloud-hybrid-multi-cloud-access-strategies.md)]

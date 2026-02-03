@@ -1,5 +1,7 @@
 Your data engineering team needs to store machine learning models, CSV files for ingestion, and image files for analytics workloads. You already organized your data using catalogs and schemas, but you need a governed way to manage these nontabular files in cloud object storage. **Unity Catalog volumes** provide the solution by extending governance to files while maintaining the same security model you use for tables.
 
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=e7ad70bc-91c2-49c8-9cb5-584ffead382a]
+
 ## What are volumes?
 
 A **volume** is a Unity Catalog object that represents a logical container for files stored in cloud object storage. Think of it as the final piece in organizing your data house—after building the foundation with catalogs and organizing the interior with schemas, volumes provide the space to store your raw files.

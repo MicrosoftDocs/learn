@@ -36,14 +36,14 @@ quiz:
     - content: "A single JSON document"
       isCorrect: false
       explanation: "That's incorrect. A data lake is based on a distributed file system, not a single JSON document."
-  - content: "Which of the following Azure services provides capabilities for running data pipelines AND managing analytical data in a data lake or relational data warehouse?"
+  - content: "What is the primary advantage of Apache Spark for big data scenarios?"
     choices:
-    - content: "Azure Stream Analytics"
+    - content: "It stores data in relational tables"
       isCorrect: false
-      explanation: "That's incorrect. Azure Stream Analytics is used to process real-time streams of data."
-    - content: "Azure Synapse Analytics"
+      explanation: "That's incorrect. Apache Spark is a processing framework, not a storage solution for relational tables."
+    - content: "It uses parallel processing and in-memory processing"
       isCorrect: true
-      explanation: "That's correct. Azure Synapse Analytics includes functionality for pipelines, data lakes, and relational data warehouses."
-    - content: "Azure Databricks"
+      explanation: "That's correct. Apache Spark is a parallel processing framework that takes advantage of in-memory processing and distributed file storage."
+    - content: "It only processes structured data"
       isCorrect: false
-      explanation: "That's incorrect. Azure Databricks is primarily an Apache Spark implementation for processing data in a data lake."
+      explanation: "That's incorrect. Apache Spark can process structured, semi-structured, and unstructured data."
