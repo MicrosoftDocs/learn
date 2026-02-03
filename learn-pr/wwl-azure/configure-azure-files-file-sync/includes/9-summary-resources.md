@@ -36,8 +36,6 @@ Copilot can assist you in configuring Azure infrastructure solutions. Copilot ca
   
 ## Learn more with self-paced training
 
-- [Introduction to Azure Files](/training/modules/introduction-to-azure-files/). In this module, you learn how you can meet your storage needs with Azure Files and Azure File Sync.
-
 - [Implement a hybrid file server infrastructure](/training/modules/implement-hybrid-file-server-infrastructure/). In this module, you learn to deploy Azure File Sync and use Storage Migration Services to migrate file servers to Azure.
 
 - [Guided Project - Azure Files and Azure Blobs](/training/modules/guided-project-azure-files-azure-blobs/). In this module, you practice storing business data securely by using Azure Blob Storage and Azure Files. The lab combines both learning and practical experience. 
