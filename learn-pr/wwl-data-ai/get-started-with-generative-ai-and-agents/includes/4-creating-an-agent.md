@@ -15,9 +15,9 @@ Agents can:
 
 To create an agent in Foundry, you can start by exploring a model or just go straight to agent development. In Foundry portal, creating an agent looks similar at first to testing a model in the playground.  
 
-1. Choose the model your agent will use
-2. Write the system instructions, such as "You are a helpful scheduling assistant who returns answers in concise bullet points."
-1. 
+1. Choose the model your agent uses
+2. Write the system instructions, such as "You're a helpful scheduling assistant who returns answers in concise bullet points."
+ 
 What sets the agent apart from using the model alone is the addition of tools, which allow the model to act on  information and knowledge, which grounds the model with information. 
 
 Tools = *actions*.  
@@ -25,7 +25,7 @@ Knowledge = *context*.
 
 #### Add Tools 
 
-**Tools** in Foundry allow a model to perform actions by calling external systems and make the model *agentic* rather than just conversational. They represent **callable capabilities** such as searching the web, querying a database, or using an MCP server. 
+**Tools** in Foundry allow a model to perform actions by calling external systems. They represent **callable capabilities** such as searching the web, querying a database, or using an MCP server. 
 
 When enabled in the model playground, the model can inspect available tools, then call them when relevant to a user request. Examples of tools include: 
 - Code Interpreter (data analysis, file handling)
@@ -37,13 +37,13 @@ Tools allow the model to:
 - Execute workflows
 - Integrate into enterprise systems
 
-In Foundry tools form the basis for action-taking agents. They can be configured centrally using the **Foundry Tool Catalog**, where you can discover and manage tools. 
+In Foundry, tools form the basis for action-taking agents. They can be configured centrally using the **Foundry Tool Catalog**, where you can discover and manage tools. 
 
 #### Add Knowledge
 
 **Knowledge** allows the model to **access and retrieve external content** (your documents, datasets, internal sites) through retrieval-augmented generation (RAG).
 
-Knowledge in Foundry refers to **documents or datasets** provided to the model so it can retrieve highly relevant context during generation. This can include internal PDFs, SharePoint content, Azure Storage files, and multi‑source knowledge bases. 
+Knowledge in Foundry refers to **documents or datasets** provided to the model so it can retrieve highly relevant context during generation. Data can include internal PDFs, SharePoint content, Azure Storage files, and multi‑source knowledge bases. 
 
 In the playground, Foundry uses retrieval pipelines to:
 

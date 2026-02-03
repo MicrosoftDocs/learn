@@ -3,21 +3,20 @@ Generative AI and agentic solutions are based on language models. Large language
 **Microsoft Foundry** provides an integrated environment for discovering, evaluating, deploying, and operating generative AI models. It brings together a rich model catalog, flexible deployment options, and built‑in governance capabilities so teams can build copilots, agents, and AI-powered applications with enterprise confidence.
 
 > [!NOTE] 
-> In order to use Microsoft Foundry, you need an Azure subscription. To utilize Foundry's capabilities, you will need to start by creating a project in Foundry. For more information, review [Get started in Microsoft Foundry](/training/modules/get-started-ai-in-foundry/). 
+> In order to use Microsoft Foundry, you need an Azure subscription. To utilize Foundry's capabilities, start by creating a project in Foundry. For more information, review [Get started in Microsoft Foundry](/training/modules/get-started-ai-in-foundry/). 
 
 ## Discover models in Foundry's model catalog
 
 **Foundry's model catalog** is a central hub for discovering and using a wide selection of generative AI models from an extensive range of providers. In Foundry, you can filter models by source, capabilities, inference tasks, and more. Foundry enables you to understand and compare model capabilities, as well as test and build scalable, secure, responsible AI solutions. 
 
 > ![NOTE]
-> The Foundry portal has a *classic* user interface (UI) and a *new* UI. Images of the Foundry portal reflect the *new* UI where it is relevant. 
+> The Foundry portal has a *classic* user interface (UI) and a *new* UI. Images of the Foundry portal reflect the *new* UI where it's relevant. 
 
 ![Screenshot of Foundry's model catalog with the new UI.](../media/model-catalog-1.png)  
 
 The model catalog offers a broad selection of models including models sold directly by Azure alongside models from partners and open-source communities.
 
-- **Models Sold Directly by Azure**: These models are hosted and supported by Microsoft under Microsoft Product Terms.
-They offer high levels of integration with Azure, enterprise-grade SLAs, pre‑configured security and compliance alignment. Examples often include Microsoft-hosted OpenAI and other partner models made available with provisioning controls.
+- **Models Sold Directly by Azure**: These models are hosted by Microsoft under Microsoft Product Terms. They offer high levels of integration with Azure, enterprise-grade service level agreements (SLAs), preconfigured security, and compliance alignment. 
 
 - **Models from Partners and the Community**: Includes open-source or vendor-hosted models integrated through the catalog. These models support broader experimentation and rapid innovation and are often suitable for specialized or domain‑specific tasks.
 
@@ -31,7 +30,7 @@ Each model entry typically includes:
 
 #### Commonly used model families 
 
-Among the thousand-plus models available in Foundry, there are many grouped by **model family**. a model family refers to a group of related models that share the same underlying architecture or lineage, but differ in size, capability, specialization, or version. 
+Among the thousand-plus models available in Foundry, there are many grouped by **model family**. A model family refers to a group of related models that share the same underlying architecture or lineage, but differ in size, capability, specialization, or version. 
 
 Commonly used model families include: 
  
@@ -39,10 +38,10 @@ Commonly used model families include:
 
 - **Claude Opus 4.5** (Anthropic): When you need a frontier‑level model for sophisticated agents, complex code reasoning, or multi‑step computer‑use tasks. Opus 4.5 is described as Anthropic’s most intelligent model with strong performance across coding, agents, and computer use, and large context/output windows—useful for long specifications, multi-file diffs, or extended research notes. 
 
-- **Mistral Large 3** (Mistral AI): is a state‑of‑the‑art, general‑purpose model ideal for where you want strong quality with efficient throughput—e.g., multilingual drafting, structured business report generation, or mid‑latency agent tasks that balance cost and performance. Mistral Large 3 is a “state‑of‑the‑art” general model and part of the curated Foundry catalog, making it a practical alternative to flagship models when you want high capability with flexible cost/latency trade‑offs.
+- **Mistral Large 3** (Mistral AI): is a state‑of‑the‑art, general‑purpose model ideal for where you want strong quality with efficient throughput. The model does well with multilingual drafting, structured business report generation, or mid‑latency agent tasks that balance cost and performance. Mistral Large 3 is a "state‑of‑the‑art" general model and part of the curated Foundry catalog, making it a practical alternative to flagship models when you want high capability with flexible cost/latency trade‑offs.
 
 >[!NOTE]
-> Registration is currently required for the GPT-5 model family, restricting its availability. All Foundry users can use **GPT‑4.1**, which is ideal for real‑time chat, customer support, and interactive applications that must respond quickly and at scale. It is optimized for speed, efficiency, and low‑latency inference, making it better than reasoning‑heavy models for high‑volume production workloads.
+> Registration is currently required for the GPT-5 model family, restricting its availability. All Foundry users can use **GPT‑4.1**, which is ideal for real‑time chat, customer support, and interactive applications that must respond quickly and at scale. It's optimized for speed, efficiency, and low‑latency inference, making it better than reasoning‑heavy models for high‑volume production workloads.
 
 In Foundry, **foundation models** are large, pretrained models—such as GPT, Claude, Mistral, and others—that provide general language, reasoning, or multimodal capabilities out of the box. These models can be deployed immediately or customized through fine‑tuning, and serve as the base layer for building AI applications. 
 
@@ -52,11 +51,11 @@ Choosing the right model in Foundry starts with understanding **your workload, t
 
 #### Select a model by task type 
 
-- **Chat and text generation:** GPT‑5.x, Claude, DeepSeek V3.1, small models like Phi‑4 or Llama SLMs.
-- **Reasoning-intensive tasks:** GPT‑5.x “thinking modes,” Claude‑Opus class models (optimized for step-by-step reasoning). 
+- **Chat and text generation:** GPT‑5.x, Claude, DeepSeek V3.1, small language models (SLMs) like Phi‑4 or Llama.
+- **Reasoning-intensive tasks:** GPT‑5.x, Claude‑Opus class models (optimized for step-by-step reasoning). 
 - **Coding:** GPT‑5.1‑codex, Claude‑Sonnet for complex agent flows. 
 - **Embeddings / retrieval:** Specialized embedding models (OpenAI, Microsoft, Cohere).
-- **Multimodal (image+text):** GPT‑4o, DeepSeek‑V3.1 multimodal, diffusion models like Black Forest Labs’ Flux for image generation. 
+- **Multimodal (image+text):** GPT‑4o, DeepSeek‑V3.1 multimodal, diffusion models like Black Forest Labs' Flux for image generation. 
 - **Industry or domain-specific tasks:** Domain-tuned models in the catalog (finance, healthcare, legal).
 
 |**Task**|**Recommended model types**|**When to choose**|
@@ -74,43 +73,43 @@ Choosing the right model in Foundry starts with understanding **your workload, t
 Foundry's model catalog includes benchmarking results that show how models perform on standard datasets. Benchmark scores simplify model selection by using consistent evaluation criteria. 
 
 Through the Foundry portal, you can also view: 
-- **Model leaderboards**: leaderboards rank models based on attributes like quality, safety, and throughput. This helps identify the best model for a task (e.g., reasoning, summarization, code generation).
+- **Model leaderboards**: leaderboards rank models based on attributes like quality, safety, and throughput. This helps identify the best model for a task. Examples of tasks include reasoning, summarization, code generation.
 - **Comparisons and filters**: Side‑by‑side model comparison by quality and accuracy, cost, security and compliance, and performance metrics. You can filter by industry, use case, model type, licensing, and more.
 
 ![Screenshot of Foundry's model leaderboard and side-by-side comparisons.](../media/model-leaderboard.png)
 
 A common way you can evaluate is to start in Foundry's model catalog, choose a model, then select *Benchmarks → Try with your own data*. You can try out prompts and see if the responses are as expected. 
 
-There are a variety of ways to score a model in Foundry portal, including *Natural Language Processing (NLP) metrics* and *AI‑assisted quality metrics*. Examples of classic *NLP quality metrics* are: accuracy, precision, recall, and F1.  Examples of *AI‑assisted metrics* include groundedness, relevance, coherence and fluency, and GPT similarity. Choose AI-assisted metrics for qualitative scoring beyond traditional metrics. 
+There are various ways to score a model in Foundry portal, including *Natural Language Processing (NLP) metrics* and *AI‑assisted quality metrics*. Examples of classic *NLP quality metrics* are: accuracy, precision, recall, and F1. Examples of *AI‑assisted metrics* include groundedness, relevance, coherence and fluency, and GPT similarity. Choose AI-assisted metrics for qualitative scoring beyond traditional metrics. 
 
 Safety evaluators can be used help ensure responsible AI output. They scan for harmful or unsafe content, bias and unfairness, violence, self‑harm, or protected‑class harms. Foundry's Evaluator Library offers reusable evaluators for quality scoring, safety scanning, and more.
 
 ## Deploy models in Foundry 
 
-Once you select a model, Foundry provides flexible deployment mechanisms that let you tailor performance, cost, and governance. To **deploy a model** means taking an AI model and making it available for use in production through a stable, scalable, and secure endpoint. Deployment of a configured model turns the model into a service that applications can call—usually through an API. Deploying a configured model helps ensure consistent performance and reliability. It also allows developers to prevent unauthorized or unsafe use. 
+Once you select a model, Foundry provides flexible deployment mechanisms that let you tailor performance, cost, and governance. **Deploying a model** takes an AI model and makes it available for use in production through a stable, scalable, and secure endpoint. Deployment of a configured model turns the model into a service that applications can call—usually through an API. Deploying a configured model helps ensure consistent performance and reliability. It also allows developers to prevent unauthorized or unsafe use. 
 
 Deployment parameters that you can customize in Foundry include: 
 
-- **Deployment type**: such as standard, global batch, and regional provisioned throughput, determine where and how inference is processed in Foundry. These are tied to throughput and data‑processing requirements. 
+- **Deployment type**: such as standard, global batch, and regional provisioned throughput, determine where and how inference is processed in Foundry. Deployment types are tied to throughput and data‑processing requirements. 
 - **Model version**
 - **Tokens per minute (TPM)** rate limit 
 
 > [!NOTE]
 > A **token** is the smallest unit of text or data that a generative AI model can process. Models break input into tokens—such as words, subwords, characters, or punctuation—so they can understand and generate language efficiently.
 
-When you deploy a model you can assign it a *Tokens Per Minute* (TPM) allocation. TPM determines the speed and scale the model can process inputs and the rate‑limit boundaries such as requests per minute (RPM).
+When you deploy a model, you can assign it a *Tokens Per Minute* (TPM) allocation. TPM determines the speed and scale the model can process inputs and the rate‑limit boundaries such as requests per minute (RPM).
 
 Limits differ by model family, for example:
-- High‑end reasoning models (e.g., DeepSeek R1, Grok, large Llama versions) may have high TPM ceilings.
+- High‑end reasoning models (for example: DeepSeek R1, Grok, large Llama versions) may have high TPM ceilings.
 - Specialized or image models often operate under capacity units instead of TPM.
 
-*Throttling*, in a compute context, means intentionally slowing down or limiting how much compute work can happen at one time. It’s a protective mechanism used when a system is close to hitting its processing limits. Instead of letting workloads overwhelm the system (which could cause failures or severe slowdowns), throttling temporarily restricts resource usage so the system can remain stable and responsive. 
+*Throttling*, in a compute context, means intentionally slowing down or limiting how much compute work can happen at one time. It's a protective mechanism used when a system is close to hitting its processing limits. Throttling temporarily restricts resource usage so the system can remain stable and responsive. 
 
 Deployment‑level quotas define how many tokens or requests can be processed before throttling occurs. Larger prompts and higher max output token settings consume more TPM, leading to rate-limit errors if exceeded (covered in throttling description search results). If you see throttling, lower **max tokens** or reduce concurrent requests in code. 
 
 When you deploy a model in Foundry, several things occur:
 - Compute resources are allocated: Foundry assigns the hardware needed to run the model—CPUs, GPUs, memory, networking, and scaling rules.
-- An API endpoint is created: You are able to securely invoke the model through the OpenAI Responses API, validated through management API checks. 
+- An API endpoint is created: You're able to securely invoke the model through the OpenAI Responses API, validated through management API checks. 
 - Configuration (such as model version, response style, safety settings) is locked in
 - Monitoring and logging become active: usage metrics, performance, latency, errors, and costs are tracked
 
