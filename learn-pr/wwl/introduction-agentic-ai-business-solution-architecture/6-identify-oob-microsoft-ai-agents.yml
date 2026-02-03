@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.introduction-agentic-ai-business-solution-architecture.identify-oob-microsoft-ai-agents
+title: "Identify OOB Microsoft AI agents for business"
+metadata:
+  title: "Identify OOB Microsoft AI Agents for Business"
+  description: "Learn how to identify OOB Microsoft AI agents, their role in automation, and best practices for leveraging them effectively in business processes."
+  ms.date: 02/02/2026
+  author: wwlpublish
+  ms.author: rknapp
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-identify-oob-microsoft-ai-agents.md)]
