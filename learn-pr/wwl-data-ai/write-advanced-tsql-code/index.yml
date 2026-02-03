@@ -28,15 +28,23 @@ prerequisites: |
   - A SQL Server 2019+ instance, Azure SQL Database, or Fabric SQL database to practice with
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
-  - intermediate
+- intermediate
 roles:
-  - database-administrator
-  - developer
-  - data-engineer
+- data-engineer
+- database-administrator
+- developer
+- solution-architect
 products:
-  - sql-server
-  - azure-sql-database
-  - fabric
+- sql-server
+- azure-sql-database
+- azure-sql-managed-instance
+- fabric
+subjects:
+- databases
+- data-management
+- data-engineering
+- cloud-computing
+- app-development
 units:
   - learn.write-advanced-tsql-code.1-introduction
   - learn.write-advanced-tsql-code.2-common-table-expressions
