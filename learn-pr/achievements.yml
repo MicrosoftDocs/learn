@@ -7610,6 +7610,16 @@ achievements:
   title: Describe Microsoft Entra Verified ID concepts
   summary: Learn the core concepts of decentralized identities and Microsoft Entra Verified ID.
   iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.azure.introduction-infrastructure-code-using-bicep.badge
+  type: badge 
+  title: Introduction to infrastructure as code using Bicep
+  summary: Infrastructure as code can help you quickly and confidently scale your cloud deployments. By using Bicep and Azure Resource Manager, you can automate and simplify the provisioning of infrastructure resources.
+  iconUrl: /training/achievements/bicep/introduction-infrastructure-code-using-bicep.svg
+- uid: learn.azure.create-composable-bicep-files-using-modules.badge
+  type: badge 
+  title: Create Composable Bicep Files by Using Modules
+  summary: Design and build reusable modules to simplify your Bicep templates. Compose multiple modules into templates by using parameters and outputs.
+  iconUrl: /training/achievements/bicep/create-composable-bicep-files-using-modules.svg
 - uid: learn.connect-vm-with-azure-bastion.badge
   type: badge 
   title: Connect to virtual machines through the Azure portal by using Azure Bastion
