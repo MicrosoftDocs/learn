@@ -51,13 +51,13 @@ Choosing the right model in Foundry starts with understanding **your workload, t
 
 #### Select a model by task type 
 
-|**Task**|**Recommended model types**|**When to choose**|
+|**Task**|**Recommended model types**|**Model details**|
 |-|-|-|
 |**Chat**| GPT‑5.x chat, Claude Sonnet/Opus, Mistral‑Large‑3, DeepSeek V3.1, small language models (SLMs) like Phi‑4 or Llama| Strong reasoning, conversation tuning, safety |
-|**Coding**|GPT‑5.1‑codex, Claude‑Sonnet|Support complex agent flows|
+|**Coding**|GPT‑5.1‑codex, Claude‑Sonnet|Support for complex agent flows|
 |**Summarization**| GPT‑5.x reasoning models, Claude Opus/Sonnet| Long-context, high-quality compression |
 |**Embeddings**| text‑embedding‑3-small or other embedding models| Built for semantic vector representations |
-|**Multimodal (imgae+text)**| Phi‑4‑multimodal‑instruct, GPT‑5.x chat multimodal, Mistral‑Large‑3 | Support for images/audio in chat completions|
+|**Multimodal**| Phi‑4‑multimodal‑instruct, GPT‑5.x chat multimodal, Mistral‑Large‑3 | Support for images, audio, and video in chat completions|
 |**Industry or domain-specific**|Domain-tuned models in the catalog|Applications specific to an industry such as finance, healthcare, legal|
 
 > [!NOTE]
