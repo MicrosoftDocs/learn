@@ -4,7 +4,7 @@ It's no secret that AI is disrupting the technology industry. AI is shaping how 
 
 The addition of AI features to the developer tools that you use and love helps you collaborate, develop, test, and ship your products faster and more efficiently than ever before. GitHub Copilot is a service that provides you with an AI pair programmer that works with all of the popular programming languages.
 
-In recent research, GitHub and Microsoft found that developers experience a significant productivity boost when they use GitHub Copilot to work on real-world projects and tasks. In fact, in the three years since its launch, developers have experienced the following benefits while using GitHub Copilot:
+Recent research by GitHub and Microsoft shows that developers experience measurable productivity gains when using GitHub Copilot on real-world projects and tasks. Since its launch, developers have reported the following benefits while using GitHub Copilot:
 
 - 46% of new code now written by AI
 - 55% faster overall developer productivity
@@ -20,17 +20,55 @@ GitHub Copilot started an AI pair programmer that keeps developers in the flow b
 
 Here are some features of GitHub Copilot that truly make it a modern developer tool. With these features, GitHub Copilot is more than just an editor. It's becoming a readily accessible AI assistant throughout the entire development life cycle.
 
-### Copilot for chat
+### Copilot chat
 
-GitHub Copilot brings a ChatGPT-like chat interface to the editor. The chat interface focuses on developer scenarios and natively integrates with VS Code and Visual Studio. It's deeply embedded in the IDE, and it recognizes what code a developer has typed and what error messages appear. A developer can get in-depth analysis and explanations of what code blocks are intended to do, generate unit tests, and even get proposed fixes to bugs.
+GitHub Copilot includes an interactive chat experience directly inside supported editors (like Visual Studio Code, Visual Studio, and others).
+With chat, you can:
 
-### Copilot for pull requests
+- Ask questions about your code
+- Get explanations of logic or errors
+- Generate tests or documentation
+- Explore how to implement new features
 
-OpenAI's GPT-4 model adds support in GitHub Copilot for AI-powered tags in pull-request descriptions through a GitHub app that organization admins and individual repository owners can install. GitHub Copilot automatically fills out these tags based on the changed code. Developers can then review or modify the suggested descriptions.
+The chat understands your code context and relates responses back to your project.
+
+### Copilot pull request summaries
+
+When you open a pull request, Copilot can automatically generate a summary description of the changes. This helps reviewers understand intent, reduces the work in writing PR text, and improves clarity in collaboration.
+
+### Copilot code review assistance
+
+Copilot can assist in code review workflows by suggesting potential issues to look at, describing changes, pointing out edge cases, and proposing improvements for reviewers. This helps speed up review cycles and reduce manual overhead.
 
 ### Copilot for the CLI
 
-Next to the editor and pull requests, the terminal is the place where developers spend the most time. However, even the most proficient developers need to scroll through many pages to remember the precise syntax of many commands. The GitHub Copilot command-line interface (CLI) can compose commands and loops, and it can throw obscure `find` flags to satisfy your query.
+Next to the editor and pull requests, the terminal is the place where developers spend the most time. However, even the most proficient developers need to scroll through many pages to remember the precise syntax of many commands. The GitHub Copilot command-line interface (CLI) allow you:
+
+- ask for command suggestions, code snippets
+- generate shell scripts
+- understand output or errors
+- generate and improve projects from the CLI
+
+### Copilot Spaces
+
+Copilot Spaces provide a dedicated place to collaborate with AI on a project. In Spaces, you can:
+
+- explore project structure
+- ask high‑level planning questions
+- refine requirements
+- iterate on designs
+
+Spaces offer a context‑rich environment where Copilot retains knowledge of your repository and workflow.
+
+### Copilot coding agent
+
+The Copilot coding agent acts as an autonomous AI assistant. It performs multi-step coding tasks based on your instructions. You can ask it to:
+
+- Generate multiple related files
+- Implement a feature set
+- Build scaffolding from a specification
+
+Copilot executes these tasks under your direction, helping you complete complex workflows faster and stay in the flow.
 
 ## Subscription plans
 

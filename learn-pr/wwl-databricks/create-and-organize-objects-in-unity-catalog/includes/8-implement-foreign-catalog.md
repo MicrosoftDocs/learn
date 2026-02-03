@@ -1,5 +1,7 @@
 Your analytics team needs immediate access to customer transaction data stored in a PostgreSQL database. Moving terabytes of operational data into Azure Databricks for exploratory analysis would take weeks and consume significant resources. At the same time, your organization requires **centralized governance** for all data access, regardless of where the data resides. **Foreign catalogs in Unity Catalog** solve this challenge by enabling you to query external databases directly while maintaining Unity Catalog's access control, lineage tracking, and audit capabilities.
 
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=e9b068cb-1af4-49fb-afa7-9a38557109c5]
+
 ## Why implement foreign catalogs?
 
 Foreign catalogs extend Unity Catalog's governance to external data systems without requiring data migration. This approach becomes essential when you need to balance operational efficiency with security and compliance requirements.
@@ -113,6 +115,8 @@ REFRESH FOREIGN TABLE prod_customer_data.public.transactions;
 Schedule these refresh operations using Lakeflow Jobs to run at intervals that match how frequently your external schema changes. This proactive approach is useful immediately after creating a foreign catalog, when the first query would otherwise trigger a full metadata refresh.
 
 ## Grant access and query foreign data
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=752b978d-6b05-4aac-9076-3676cd726fe5]
 
 Foreign catalogs appear in Unity Catalog alongside your standard catalogs, making them subject to the same permission model. You control access by granting appropriate privileges to users and groups.
 

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-vector-search-azure-database-postgresql.run-vector-similarity-search-semantic-retrieval
+title: Run vector similarity search for semantic retrieval
+metadata:
+  title: Run Vector Similarity Search for Semantic Retrieval
+  description: Run vector similarity search for semantic retrieval
+  ms.date: 01/29/2026
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-run-vector-similarity-search-semantic-retrieval.md)]

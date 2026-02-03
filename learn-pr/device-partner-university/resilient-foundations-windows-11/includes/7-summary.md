@@ -1,0 +1,3 @@
+In this module, you explored how Windows 11 Pro establishes a secure, reliable foundation for modern work. You learned about the fundamentals of performance and reliability—including how Copilot+ PCs use advanced processors to optimize workflows and maximize productivity. The module also covered essential resiliency features such as Hotpatch updates and Windows Autopatch—which streamline device management and minimize disruptions, ensuring business continuity.
+
+You discovered how Windows 11 Pro integrates security at every layer, from hardware-based protection to advanced identity controls. Real-world examples illustrate how organizations can unify global teams, accelerate innovation, and strengthen their security posture by adopting Windows 11 Pro and Copilot+ PCs.

@@ -1,84 +1,91 @@
+As organizations adopt cloud services across SaaS, PaaS, and IaaS models while maintaining on-premises infrastructure, security architects must design identity solutions that provide secure, consistent access across all environments. This unit provides guidance for designing access strategies that span cloud, hybrid, and multicloud scenarios.
 
-In any environment, whether on-premises, hybrid, or cloud-only, IT needs to control which administrators, users, and groups have access to resources. Identity and access management (IAM) services enable you to manage access control in the cloud.
+## Access strategy design considerations
 
-Several options are available for managing identity in a cloud environment. These options vary in cost and complexity. A key factor in structuring your cloud-based identity services is the level of integration required with your existing on-premises identity infrastructure.
+When designing access strategies, consider the level of integration required with existing identity infrastructure:
 
-:::image type="content" source="../media/hybrid-cloud-entra-access-considerations.png" lightbox="../media/hybrid-cloud-entra-access-considerations.png" alt-text="Diagram showing identity options relative to the level of integration required with existing on-premises identity infrastructure.":::
+| Scenario | Characteristics | Design Approach |
+|----------|----------------|-----------------|
+| **Cloud-only** | No on-premises directory; cloud-native workloads | Microsoft Entra ID as the sole identity provider |
+| **Hybrid** | Existing on-premises AD; mix of cloud and on-premises resources | Directory synchronization with Microsoft Entra Connect |
+| **Multicloud** | Resources across Azure, AWS, GCP, and other clouds | Federated identity with Microsoft Entra ID as primary provider |
 
-Microsoft Entra ID provides a cloud, baseline level of access control and identity management for Azure resources, which is standalone and for which there's no integration with an on-premises Active Directory. If your organization's on-premises Active Directory infrastructure has a complex forest structure or customized organizational units (OUs), your cloud-based workloads might require directory synchronization with Microsoft Entra ID for a consistent set of identities, groups, and roles between your on-premises and cloud environments. Additionally, support for applications that depend on legacy authentication mechanisms might require the deployment of Active Directory Domain Services (AD DS) in the cloud.
+Your access strategy should address authentication methods, authorization models, and the principle of least privilege across all environments.
 
-Cloud-based identity management is an iterative process. You could start with a cloud-native solution with a small set of users and corresponding roles for an initial deployment. As your migration matures, you might need to integrate your identity solution using directory synchronization or add domains services as part of your cloud deployments. Revisit your identity strategy in every iteration of your migration process.
 
-## Determine identity integration requirements
+## Designing for SaaS application access
 
-As stated at the beginning of this unit, a key factor in structuring your cloud-based identity services is the level of integration required with your existing on-premises identity infrastructure.
+SaaS applications require secure authentication without exposing credentials to third parties. Design your SaaS access strategy to:
 
-| Question | Cloud baseline | Directory synchronization | Cloud-hosted domain services | Active Directory Federation Services |
-|------|------|------|------|------|
-| Do you currently lack an on-premises directory service? | Yes | No | No | No |
-| Do your workloads need to use a common set of users and groups between the cloud and on-premises environment? | No | Yes | No | No |
-| Do your workloads depend on legacy authentication mechanisms, such as Kerberos or NTLM? | No | No | Yes | Yes |
-| Do you require single sign-on across multiple identity providers? | No | No | No | Yes |
+- **Integrate applications with Microsoft Entra ID** - Use SAML, OAuth 2.0, or OpenID Connect for single sign-on (SSO)
+- **Enforce Conditional Access** - Apply policies based on user risk, device compliance, and location
+- **Implement application governance** - Use Microsoft Defender for Cloud Apps to discover shadow IT and govern sanctioned applications
 
-As part of planning your migration to Azure, you'll need to determine how best to integrate your existing identity management and cloud identity services. The following are common integration scenarios.
+Microsoft Entra ID provides a gallery of pre-integrated applications and supports custom application registration for applications that support modern authentication protocols.
 
-### Cloud baseline
+## Designing for PaaS and IaaS access
 
-Microsoft Entra ID is the native identity and access management (IAM) system for granting users and groups access to management features on the Azure platform. If your organization lacks a significant on-premises identity solution, and you plan to migrate workloads to be compatible with cloud-based authentication mechanisms, you should begin developing your identity infrastructure using Microsoft Entra ID as a base.
+Platform and infrastructure services require both user and workload identity management. Key design considerations include:
 
-Cloud baseline assumptions: Using a purely cloud-native identity infrastructure assumes the following:
+### User access to Azure resources
 
-- Your cloud-based resources will not have dependencies on on-premises directory services or Active Directory servers, or workloads can be modified to remove those dependencies.
-- The application or service workloads being migrated either support authentication mechanisms compatible with Microsoft Entra ID or can be modified easily to support them. Microsoft Entra ID relies on internet-ready authentication mechanisms such as SAML, OAuth, and OpenID Connect. Existing workloads that depend on legacy authentication methods using protocols such as Kerberos or NTLM might need to be refactored before migrating to the cloud using the cloud baseline pattern.
+- Use Microsoft Entra ID for authentication to the Azure portal, CLI, and APIs
+- Implement Azure role-based access control (RBAC) for authorization
+- Apply Conditional Access policies to protect administrative access
+- Use Privileged Identity Management (PIM) for just-in-time privileged access
 
-### Directory synchronization
+### Workload identity access
 
-For organizations with existing on-premises Active Directory infrastructure, directory synchronization is often the best solution for preserving existing user and access management while providing the required IAM capabilities for managing cloud resources. This process continuously replicates directory information between Microsoft Entra ID and on-premises directory services, allowing common credentials for users and a consistent identity, role, and permission system across your entire organization.
+Applications and services need identities to access other resources. Design for:
 
-Directory synchronization assumptions: Using a synchronized identity solution assumes the following:
+- **Managed identities** - Eliminate credential management for Azure resources accessing other Azure services
+- **Workload identity federation** - Enable external workloads (GitHub Actions, Kubernetes) to access Azure resources without storing secrets
+- **Service principals** - Use for automation scenarios requiring explicit credential management
 
-- You need to maintain a common set of user accounts and groups across your cloud and on-premises IT infrastructure.
-- Your on-premises identity services support replication with Microsoft Entra ID.
+## Designing for hybrid environments
 
-One of the solutions Microsoft offers to support directory synchronization, is Microsoft Entra Sync.
+When your organization maintains both on-premises Active Directory and cloud resources, you need directory synchronization to provide a consistent identity experience.
 
-**Microsoft Entra Connect Sync** is designed to meet and accomplish your hybrid identity goals for synchronization of users, groups, and contacts to Microsoft Entra ID. It accomplishes this by using the Microsoft Entra cloud provisioning agent.  
+### Microsoft Entra Connect Sync
 
-:::image type="content" source="../media/microsoft-entra-connect-sync-titled.png" lightbox="../media/microsoft-entra-connect-sync-titled.png" alt-text="Diagram showing on-premises Active Directory and Microsoft Entra, with Entra Connect Sync sitting in th middle and serving as a bridge between the two.":::
+Microsoft Entra Connect Sync synchronizes users, groups, and credentials between on-premises AD and Microsoft Entra ID. Design your synchronization strategy to:
 
-Microsoft Entra Connect Sync provides the following benefits:
+- Determine which objects to synchronize based on organizational structure
+- Choose the appropriate authentication method (password hash sync, pass-through authentication, or federation)
+- Plan for high availability using multiple provisioning agents
 
-- Support for synchronizing to a Microsoft Entra tenant from a multi-forest disconnected Active Directory forest environment: The common scenarios include merger and acquisition. In these cases, the acquired company's AD forests are isolated from the parent company's AD forests. Another scenario involves companies that historically had multiple AD forests.
-- Simplified installation with light-weight provisioning agents: The agents act as a bridge from AD to Microsoft Entra ID, with all the sync configuration managed in the cloud.
-- Multiple provisioning agents can be used to simplify high availability deployments. They're critical for organizations relying upon password hash synchronization from AD to Microsoft Entra ID.
-- Support for large groups with up to 50,000 members.
+Password hash synchronization provides the simplest deployment and enables features like leaked credential detection. Pass-through authentication keeps password validation on-premises, while federation with AD FS supports complex scenarios requiring on-premises policy evaluation.
 
-See [Microsoft Entra Cloud Sync supported topologies and scenarios](/entra/identity/hybrid/cloud-sync/plan-cloud-sync-topologies) for more information.
+### Legacy application support
 
-#### Cloud-hosted domain services
+Some applications require legacy authentication protocols like Kerberos or NTLM. Consider these options for supporting legacy authentication in hybrid environments:
 
-If you have workloads that depend on claims-based authentication using legacy protocols such as Kerberos or NTLM, and those workloads cannot be refactored to accept modern authentication protocols such as SAML or OAuth and OpenID Connect, you might need to migrate some of your domain services to the cloud as part of your cloud deployment.
+- **Microsoft Entra Domain Services** - Provides managed domain services (domain join, group policy, LDAP, Kerberos/NTLM) without deploying domain controllers
+- **Self-managed AD DS in Azure** - Deploy domain controllers in Azure VMs for full control over the directory
 
-This pattern involves deploying virtual machines running Active Directory to your cloud-based virtual networks to provide Active Directory Domain Services (AD DS) for resources in the cloud. Any existing applications and services migrating to your cloud network should be able to use these cloud-hosted directory servers with minor modifications.
+Microsoft Entra Domain Services is appropriate for lift-and-shift scenarios where applications need domain services but don't require direct access to domain controllers.
 
-It's likely that your existing directories and domain services will continue to be used in your on-premises environment. In this scenario, you should also use directory synchronization to provide a common set of users and roles in both the cloud and on-premises environments.
+## Designing for multicloud access
 
-Cloud-hosted domain services assumptions: Performing a directory migration assumes the following:
+Organizations using multiple cloud providers need consistent identity management. Design your multicloud strategy to:
 
-- Your workloads depend on claims-based authentication using protocols like Kerberos or NTLM.
-- Your workload virtual machines need to be domain-joined for management or application of Active Directory group policy purposes.
+- **Federate with Microsoft Entra ID** - Configure AWS, GCP, and other providers to trust Microsoft Entra ID as an identity provider
+- **Use Conditional Access** - Apply consistent access policies regardless of which cloud hosts the resource
+- **Implement cross-cloud governance** - Use Microsoft Entra Permissions Management to discover and remediate excessive permissions across clouds
 
-There are two ways to provide Active Directory Domain Services in the cloud:
-- A self-managed domain that you create and configure using traditional resources such as virtual machines (VMs), Windows Server guest OS, and Active Directory Domain Services (AD DS). You then continue to administer these resources. 
-- A managed domain that you create using Microsoft Entra Domain Services. Microsoft creates and manages the required resources. This simplifies deployment, relative to the self-managed, so would sit to the left of the cloud-hosted domain services shown in the diagram shown
+## Security principles and controls for access strategies
 
-**Microsoft Entra Domain Services**. Microsoft Entra Domain Services provides managed domain services such as domain join, group policy, lightweight directory access protocol (LDAP), and Kerberos/NTLM authentication. You use these domain services without the need to deploy, manage, and patch domain controllers (DCs) in the cloud.
+A Zero Trust approach provides the foundation for your access strategy design. Apply these principles and their corresponding security controls across all environments:
 
-Domain Services integrates with your existing Microsoft Entra tenant. This integration lets users sign in to services and applications connected to the managed domain using their existing credentials. You can also use existing groups and user accounts to secure access to resources. These features provide a smoother lift-and-shift of on-premises resources to Azure.
+| Zero Trust Principle | Security Controls |
+|---------------------|-------------------|
+| **Verify explicitly** | Require phishing-resistant MFA for all users; enforce Conditional Access based on user risk, device compliance, and location; block legacy authentication protocols |
+| **Use least privilege** | Implement Azure RBAC with minimal permissions; use Privileged Identity Management (PIM) for just-in-time privileged access; configure time-limited access for sensitive roles |
+| **Assume breach** | Enable sign-in and audit logs; integrate with Microsoft Sentinel for security monitoring; require compliant or hybrid-joined devices; configure session controls and sign-in frequency |
 
-### Active Directory Federation Services
+Beyond these core principles, consider these additional design guidelines:
 
-Identity federation establishes trust relationships across multiple identity management systems to allow common authentication and authorization capabilities. You can then support single sign-on capabilities across multiple domains within your organization or identity systems managed by your customers or business partners.
-
-Microsoft Entra ID supports federation of on-premises Active Directory domains using [Active Directory Federation Services (AD FS)](/entra/identity/hybrid/connect/how-to-connect-fed-whatis).
-
+- **Consolidate identity providers** - Use Microsoft Entra ID as the primary identity provider across cloud, hybrid, and multicloud environments to simplify governance and ensure consistent policy enforcement
+- **Plan authentication evolution** - Design for phishing-resistant authentication methods like passkeys and certificate-based authentication, even if you can't deploy them immediately
+- **Address legacy systems** - Identify applications that can't use modern authentication and plan appropriate solutions (Microsoft Entra Domain Services, federation, or application proxy)
+- **Enable visibility** - Ensure all authentication events across all environments flow to centralized logging for security monitoring and incident response
