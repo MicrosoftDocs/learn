@@ -8,7 +8,6 @@ metadata:
   author: sherzyang
   ms.author: sheryang
   ms.topic: unit
-  ms.service: azure
 durationInMinutes: 2
 content: |
   [!include[](includes/1-introduction.md)]
