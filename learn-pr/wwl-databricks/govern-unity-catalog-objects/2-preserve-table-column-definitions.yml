@@ -9,6 +9,6 @@ metadata:
   ms.author: wedebols
   ms.topic: unit
   ai-usage: ai-generated
-durationInMinutes: 8
+durationInMinutes: 7
 content: |
   [!include[](includes/2-preserve-table-column-definitions.md)]

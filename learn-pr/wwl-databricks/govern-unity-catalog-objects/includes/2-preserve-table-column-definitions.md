@@ -94,13 +94,6 @@ ALTER TABLE sales.customers.profiles
 UNSET TAGS ('domain');
 ```
 
-### Understand tag inheritance
-
-When you apply tags at the catalog level, all schemas and objects within that catalog automatically inherit those tags. Similarly, tags applied to a schema are inherited by all objects in that schema. This inheritance simplifies governance by allowing you to set organization-wide classifications at higher levels.
-
-> [!NOTE]
-> Tag inheritance applies only at the catalog and schema levels. Tags on individual table columns aren't inherited.
-
 ### Use governed tags
 
 **Governed tags** provide centralized control over tag definitions. With governed tags, administrators define allowed keys and values at the account level, ensuring consistent classification across the organization. Governed tags appear with a lock icon in Catalog Explorer.

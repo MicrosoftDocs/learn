@@ -50,6 +50,9 @@ SET TAGS ('sensitivity' = 'high');
 
 Governed tags applied to catalogs or schemas automatically inherit to all objects within them. This inheritance simplifies governance across large data estates.
 
+> [!NOTE]
+> Tag inheritance applies only at the catalog and schema levels. Tags on individual table columns aren't inherited.
+
 ## Create row filter policies
 
 Row filter policies control which rows users can see based on governed tags. You define a user-defined function (UDF) that returns `TRUE` for rows the user should see and `FALSE` for rows to hide.
