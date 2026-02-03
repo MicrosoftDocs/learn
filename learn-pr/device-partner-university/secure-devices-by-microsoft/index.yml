@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn.dpu.secured-devices-by-microsoft
+title: Secure at every layer with Microsoft Surface
+metadata:
+  title: Secure At Every Layer With Microsoft Surface
+  description: 'Learn how Microsoft Surface devices are designed with security at every layer, from hardware to firmware to software, providing robust protection for your data and privacy.'
+  ms.date: 02/03/2026
+  author: ozahran7
+  ms.author: v-zahranomar
+  ms.topic: module
+  ms.service: surface
+summary: >
+  Explore how Microsoft Surface devices integrate security at every layer, from hardware to firmware to software, ensuring comprehensive protection for your data and privacy.
+
+abstract: |
+  In this module, you'll learn:
+  - How Microsoft Surface devices are built secure from the ground up.
+  - The trusted layers of security integrated into Surface devices.
+  - The built-in security features that protect your data and privacy.
+  - How Surface devices provide ultimate control for IT administrators.
+
+prerequisites: |
+  - None
+iconUrl: /training/achievements/secured-devices-by-microsoft.svg
+ratingEnabled: false
+levels:
+  - beginner
+roles:
+  - administrator
+  - business-leader
+  - business-owner
+  - business-user
+  - technology-manager
+products:
+  - surface
+units:
+  - learn.dpu.secured-devices-by-microsoft.introduction
+  - learn.dpu.secured-devices-by-microsoft.built-secure
+  - learn.dpu.secured-devices-by-microsoft.trusted-at-every-layer
+  - learn.dpu.secured-devices-by-microsoft.built-in-security-features
+  - learn.dpu.secured-devices-by-microsoft.provide-ultimate-control
+  - learn.dpu.secured-devices-by-microsoft.knowledge-check
+  - learn.dpu.secured-devices-by-microsoft.summary
+badge:
+  uid: learn.dpu.secured-devices-by-microsoft.badge
