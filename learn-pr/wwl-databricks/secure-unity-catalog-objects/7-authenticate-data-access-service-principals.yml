@@ -4,7 +4,7 @@ title: Authenticate data access with service principals
 metadata:
   title: Authenticate Data Access With Service Principals
   description: "Learn how to use service principals to authenticate data access in Azure Databricks and Unity Catalog."
-  ms.date: 02/02/2026
+  ms.date: 02/03/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit

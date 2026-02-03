@@ -1,4 +1,4 @@
->[!VIDEO https://learn-video.azurefd.net/vod/player?id=01]
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=53837f53-8349-439b-9d3a-390f0322c07b]
 
 Securing data is fundamental to enterprise data platforms, yet traditional approaches often fragment governance across multiple systems and require constant maintenance. As organizations scale their analytics workloads on Azure Databricks, they need unified security that protects sensitive information while maintaining operational efficiency. **Unity Catalog** addresses this challenge by providing centralized governance for data assets, compute resources, and access controls.
 

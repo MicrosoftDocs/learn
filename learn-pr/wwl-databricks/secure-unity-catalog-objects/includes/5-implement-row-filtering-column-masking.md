@@ -1,4 +1,4 @@
->[!VIDEO https://learn-video.azurefd.net/vod/player?id=07]
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=778d274c-f2bc-474b-94f1-690bd6b46ad5]
 
 When working with sensitive information in a data lakehouse, you need more than just role-based permissions. Unity Catalog allows you to enforce **fine-grained access control** so that different users can query the same tables but see only the data they're allowed to. Two approaches are commonly used, as explained in the previous unit:
 

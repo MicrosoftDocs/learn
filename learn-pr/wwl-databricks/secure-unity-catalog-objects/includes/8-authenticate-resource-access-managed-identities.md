@@ -1,6 +1,6 @@
 Managed identities provide a secure, automated way to authenticate your Unity Catalog workspaces to storage resources without managing credentials in your code or configuration files.
 
->[!VIDEO https://learn-video.azurefd.net/vod/player?id=10]
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=5ae8dd80-0efe-494a-b968-1a2e1a452c3d]
 
 As a data engineer, you use managed identities to create **storage credentials** in Unity Catalog. These credentials form the foundation for accessing external data through external tables or reading files directly from cloud storage. Unlike traditional authentication methods that require you to create, store, and rotate secrets, managed identities eliminate credential management overhead while providing enterprise-grade security.
 
