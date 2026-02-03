@@ -7,6 +7,7 @@ metadata:
   author: JulianePadrao
   ms.author: jupadrao
   ms.topic: module
+  ms.service: sql
   ai-usage: ai-generated
 title: Write advanced T-SQL code
 summary: >-
