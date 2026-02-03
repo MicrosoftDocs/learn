@@ -28,5 +28,3 @@ In the Azure portal, you can check the connectivity status of the virtual networ
 - For deployment with the Azure Resource Manager, the two primary status conditions are **Initiated** and **Connected**. For the classic deployment model, the **Updating** status condition is also used.
 
 - When you create the initial peering _to_ the second (remote) virtual network from the first virtual network, the peering status for the first virtual network is **Initiated**.
-
-- When you create the subsequent peering _from_ the second virtual network to the first virtual network, the peering status for both the first and remote virtual networks is **Connected**. In the Azure portal, you can see the status for the first virtual network change from **Initiated** to **Connected**.

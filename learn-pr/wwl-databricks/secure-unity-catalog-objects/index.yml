@@ -3,7 +3,7 @@ uid: learn.wwl.secure-unity-catalog-objects
 metadata:
   title: Secure Unity Catalog Objects
   description: Learn how to implement comprehensive security for Unity Catalog objects in Azure Databricks, including access control, fine-grained permissions, credential management, and authentication strategies.
-  ms.date: 12/07/2025
+  ms.date: 02/03/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: module
