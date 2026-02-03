@@ -22,8 +22,8 @@ abstract: |
   - Describe how DSPM fits with data loss prevention (DLP), Insider Risk Management, audit, and investigations
 
 prerequisites: |
-  - Familiarity with basic security investigation concepts
-  - General awareness of Microsoft security and data protection tools
+  - Familiarity with basic data security concepts and risk assessment
+  - General awareness of Microsoft Purview security capabilities
 
 iconUrl: /training/achievements/generic-badge.svg
 levels:
