@@ -5,4 +5,4 @@ In this exercise, you practice writing advanced T-SQL code including JSON functi
 
 Launch the exercise and follow the instructions.
 
-[![Button to launch exercise.](../media/launch-exercise.png)](https://microsoftlearning.github.io/mslearn-sql-developer/Instructions/Labs/03-exercise-write-advanced-tsql-code.html?azure-portal=true)
+[![Button to launch exercise.](../media/launch-exercise.png)](https://microsoftlearning.github.io/mslearn-sql-developer/Instructions/Labs/03-write-advanced-tsql-code.html?azure-portal=true)
