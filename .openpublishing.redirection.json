@@ -62721,6 +62721,151 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/paths/implement-network-security/index.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/training/browse/",
+      "redirect_document_id": false
+    },
+    {      
+      "source_path": "learn-pr/azure/choose-storage-approach-in-azure/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/common/storage-account-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/choose-storage-approach-in-azure/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/common/storage-account-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/choose-storage-approach-in-azure/2-classify-data.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/common/storage-account-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/choose-storage-approach-in-azure/3-operations-and-latency.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/common/storage-account-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/choose-storage-approach-in-azure/4-transactions.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/common/storage-account-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/choose-storage-approach-in-azure/5-choose-the-right-azure-service-for-your-data.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/common/storage-account-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/choose-storage-approach-in-azure/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/common/storage-account-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/store-app-data-with-azure-blob-storage/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/common/storage-srp-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/store-app-data-with-azure-blob-storage/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/common/storage-srp-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/store-app-data-with-azure-blob-storage/2-what-are-blobs.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/common/storage-srp-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/store-app-data-with-azure-blob-storage/3-design-organization-strategy.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/common/storage-srp-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/store-app-data-with-azure-blob-storage/4-create-storage-resources.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/common/storage-srp-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/store-app-data-with-azure-blob-storage/5-configure-and-initialize-the-client-library.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/common/storage-srp-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/store-app-data-with-azure-blob-storage/6-getting-blob-references.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/common/storage-srp-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/store-app-data-with-azure-blob-storage/7-blob-uploads-and-downloads.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/common/storage-srp-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/store-app-data-with-azure-blob-storage/8-cleanup-next-steps-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/common/storage-srp-overview",
+      "redirect_document_id": false
+    },
+    {                                                                                  
+      "source_path": "learn-pr/azure/build-app-with-scale-sets/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machine-scale-sets/flexible-virtual-machine-scale-sets-cli",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-app-with-scale-sets/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machine-scale-sets/flexible-virtual-machine-scale-sets-cli",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-app-with-scale-sets/2-features-benefits-virtual-machine-scale-sets.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machine-scale-sets/flexible-virtual-machine-scale-sets-cli",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-app-with-scale-sets/3-exercise-deploy-scale-set-azure-portal.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machine-scale-sets/flexible-virtual-machine-scale-sets-cli",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-app-with-scale-sets/4-configure-virtual-machine-scale-set.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machine-scale-sets/flexible-virtual-machine-scale-sets-cli",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-app-with-scale-sets/5-exercise-configure-virtual-machine-scale-set.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machine-scale-sets/flexible-virtual-machine-scale-sets-cli",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-app-with-scale-sets/6-install-update-applications-virtual-machine-scale-sets.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machine-scale-sets/flexible-virtual-machine-scale-sets-cli",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-app-with-scale-sets/7-exercise-update-applications-virtual-machine-scale-sets.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machine-scale-sets/flexible-virtual-machine-scale-sets-cli",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-app-with-scale-sets/8-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machine-scale-sets/flexible-virtual-machine-scale-sets-cli",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-app-with-scale-sets/9-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machine-scale-sets/flexible-virtual-machine-scale-sets-cli",
+      "redirect_document_id": false
+    },
+    { 
+      "source_path": "learn-pr/paths/bicep-azure-pipelines/index.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/training/browse/",
+      "redirect_document_id": false      
+    },
+    {
+      "source_path": "learn-pr/paths/powershell/index.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/training/browse/",
+      "redirect_document_id": false
+    },
+    {   
       "source_path": "learn-pr/powershell/connect-commands/index.yml",
       "redirect_url": "https://learn.microsoft.com/powershell/scripting/learn/ps101/04-pipelines",
       "redirect_document_id": false
@@ -63071,6 +63216,326 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/azure/configure-network-for-azure-virtual-machines/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-network/network-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/configure-network-for-azure-virtual-machines/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-network/network-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/configure-network-for-azure-virtual-machines/2-describe-azure-virtual-networking.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-network/network-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/configure-network-for-azure-virtual-machines/3-exercise-create-azure-virtual-network.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-network/network-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/configure-network-for-azure-virtual-machines/4-explore-azure-vpn-gateway.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-network/network-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/configure-network-for-azure-virtual-machines/5-exercise-create-azure-vpn-gateway.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-network/network-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/configure-network-for-azure-virtual-machines/6-describe-azure-expressroute.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-network/network-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/configure-network-for-azure-virtual-machines/7-knowledge-check-azure-expressroute.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-network/network-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/configure-network-for-azure-virtual-machines/8-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-network/network-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/troubleshoot-azure-network-infrastructure/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/networking/monitoring-management/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/troubleshoot-azure-network-infrastructure/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/networking/monitoring-management/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/troubleshoot-azure-network-infrastructure/2-troubleshoot-networking-with-network-watcher.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/networking/monitoring-management/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/troubleshoot-azure-network-infrastructure/3-exercise-troubleshoot-networking-with-network-watcher.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/networking/monitoring-management/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/troubleshoot-azure-network-infrastructure/4-troubleshoot-networking-with-network-watcher-metrics-logs.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/networking/monitoring-management/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/troubleshoot-azure-network-infrastructure/5-exercise-troubleshoot-networking-with-network-watcher-metrics-logs.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/networking/monitoring-management/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/troubleshoot-azure-network-infrastructure/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/networking/monitoring-management/",
+      "redirect_document_id": false
+    },
+    {                                                                                      
+      "source_path": "learn-pr/azure/build-first-bicep-deployment-pipeline-using-azure-pipelines/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/create-first-pipeline",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-first-bicep-deployment-pipeline-using-azure-pipelines/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/create-first-pipeline",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-first-bicep-deployment-pipeline-using-azure-pipelines/2-understand-azure-pipelines.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/create-first-pipeline",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-first-bicep-deployment-pipeline-using-azure-pipelines/3-exercise-create-run-basic-pipeline.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/create-first-pipeline",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-first-bicep-deployment-pipeline-using-azure-pipelines/4-deploy-bicep-files-pipeline.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/create-first-pipeline",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-first-bicep-deployment-pipeline-using-azure-pipelines/5-exercise-create-service-connection.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/create-first-pipeline",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-first-bicep-deployment-pipeline-using-azure-pipelines/6-exercise-add-bicep-deployment-task-pipeline.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/create-first-pipeline",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-first-bicep-deployment-pipeline-using-azure-pipelines/7-control-pipeline-executes-triggers.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/create-first-pipeline",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-first-bicep-deployment-pipeline-using-azure-pipelines/8-exercise-update-pipeline-trigger.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/create-first-pipeline",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-first-bicep-deployment-pipeline-using-azure-pipelines/9-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/create-first-pipeline",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-first-bicep-deployment-pipeline-using-azure-pipelines/10-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/create-first-pipeline",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/authenticate-azure-deployment-pipeline-service-principals/index.yml",
+      "redirect_url": "https://learn.microsoft.com/power-platform/alm/delegated-deployments-setup",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/authenticate-azure-deployment-pipeline-service-principals/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/power-platform/alm/delegated-deployments-setup",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/authenticate-azure-deployment-pipeline-service-principals/2-understand-service-principals.yml",
+      "redirect_url": "https://learn.microsoft.com/power-platform/alm/delegated-deployments-setup",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/authenticate-azure-deployment-pipeline-service-principals/3-create-service-principal-key.yml",
+      "redirect_url": "https://learn.microsoft.com/power-platform/alm/delegated-deployments-setup",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/authenticate-azure-deployment-pipeline-service-principals/4-exercise-create-service-principal-key.yml",
+      "redirect_url": "https://learn.microsoft.com/power-platform/alm/delegated-deployments-setup",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/authenticate-azure-deployment-pipeline-service-principals/5-grant-service-principal-access-azure.yml",
+      "redirect_url": "https://learn.microsoft.com/power-platform/alm/delegated-deployments-setup",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/authenticate-azure-deployment-pipeline-service-principals/6-exercise-authorize-service-principal-deployments.yml",
+      "redirect_url": "https://learn.microsoft.com/power-platform/alm/delegated-deployments-setup",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/authenticate-azure-deployment-pipeline-service-principals/7-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/power-platform/alm/delegated-deployments-setup",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/authenticate-azure-deployment-pipeline-service-principals/8-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/power-platform/alm/delegated-deployments-setup",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/test-bicep-code-using-azure-pipelines/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/test/test-glossary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/test-bicep-code-using-azure-pipelines/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/test/test-glossary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/test-bicep-code-using-azure-pipelines/2-understand-pipeline-stages.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/test/test-glossary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/test-bicep-code-using-azure-pipelines/3-lint-validate-bicep-code.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/test/test-glossary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/test-bicep-code-using-azure-pipelines/4-exercise-set-up-environment.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/test/test-glossary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/test-bicep-code-using-azure-pipelines/5-exercise-add-lint-validate-stages-pipeline.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/test/test-glossary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/test-bicep-code-using-azure-pipelines/6-preview-approve-deployment.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/test/test-glossary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/test-bicep-code-using-azure-pipelines/7-exercise-add-preview-stage-pipeline.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/test/test-glossary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/test-bicep-code-using-azure-pipelines/8-test-resources-after-deployment.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/test/test-glossary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/test-bicep-code-using-azure-pipelines/9-exercise-add-test-stage-pipeline.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/test/test-glossary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/test-bicep-code-using-azure-pipelines/10-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/test/test-glossary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/test-bicep-code-using-azure-pipelines/11-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/test/test-glossary",
+      "redirect_document_id": false
+    },
+    {                                                                                                  
+      "source_path": "learn-pr/powershell/introduction-to-powershell/index.yml",
+      "redirect_url": "https://learn.microsoft.com/powershell/scripting/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/powershell/introduction-to-powershell/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/powershell/scripting/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/powershell/introduction-to-powershell/2-what-is-powershell.yml",
+      "redirect_url": "https://learn.microsoft.com/powershell/scripting/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/powershell/introduction-to-powershell/3-exercise-powershell.yml",
+      "redirect_url": "https://learn.microsoft.com/powershell/scripting/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/powershell/introduction-to-powershell/4-cmdlets.yml",
+      "redirect_url": "https://learn.microsoft.com/powershell/scripting/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/powershell/introduction-to-powershell/5-exercise-cmdlets.yml",
+      "redirect_url": "https://learn.microsoft.com/powershell/scripting/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/powershell/introduction-to-powershell/6-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/powershell/scripting/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/powershell/introduction-to-powershell/7-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/powershell/scripting/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/powershell/discover-commands/index.yml",
+      "redirect_url": "https://learn.microsoft.com/powershell/scripting/learn/ps101/02-help-system",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/powershell/discover-commands/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/powershell/scripting/learn/ps101/02-help-system",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/powershell/discover-commands/2-help.yml",
+      "redirect_url": "https://learn.microsoft.com/powershell/scripting/learn/ps101/02-help-system",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/powershell/discover-commands/3-exercise-help.yml",
+      "redirect_url": "https://learn.microsoft.com/powershell/scripting/learn/ps101/02-help-system",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/powershell/discover-commands/4-discover-objects.yml",
+      "redirect_url": "https://learn.microsoft.com/powershell/scripting/learn/ps101/02-help-system",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/powershell/discover-commands/5-exercise-discover-objects.yml",
+      "redirect_url": "https://learn.microsoft.com/powershell/scripting/learn/ps101/02-help-system",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/powershell/discover-commands/6-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/powershell/scripting/learn/ps101/02-help-system",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/powershell/discover-commands/7-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/powershell/scripting/learn/ps101/02-help-system",
+      "redirect_document_id": false
+    },
+    {                                                                                                              
       "source_path": "learn-pr/azure/align-requirements-in-azure/index.yml",
       "redirect_url": "https://learn.microsoft.com/training/modules/describe-cloud-service-types/",
       "redirect_document_id": false
@@ -63346,6 +63811,186 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/azure/connect-vm-with-azure-bastion/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/bastion/vm-about",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/connect-vm-with-azure-bastion/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/bastion/vm-about",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/connect-vm-with-azure-bastion/2-what-is-azure-bastion.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/bastion/vm-about",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/connect-vm-with-azure-bastion/3-how-does-azure-bastion-work.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/bastion/vm-about",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/connect-vm-with-azure-bastion/4-exercise-connect-vm-with-bastion.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/bastion/vm-about",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/connect-vm-with-azure-bastion/5-manage-remote-sessions.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/bastion/vm-about",
+      "redirect_document_id": false
+    }, 
+    {
+      "source_path": "learn-pr/azure/connect-vm-with-azure-bastion/6-exercise-enable-diagnostic-logs-monitor-sessions.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/bastion/vm-about",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/connect-vm-with-azure-bastion/7-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/bastion/vm-about",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/connect-vm-with-azure-bastion/8-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/bastion/vm-about",
+      "redirect_document_id": false
+    },
+    {                                                                       
+      "source_path": "learn-pr/azure/connect-on-premises-network-with-vpn-gateway/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/vpn-gateway/tutorial-create-gateway-portal",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/connect-on-premises-network-with-vpn-gateway/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/vpn-gateway/tutorial-create-gateway-portal",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/connect-on-premises-network-with-vpn-gateway/2-connect-on-premises-networks-to-azure-using-site-to-site-vpn-gateways.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/vpn-gateway/tutorial-create-gateway-portal",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/connect-on-premises-network-with-vpn-gateway/3-exercise-prepare-azure-and-on-premises-vnets-using-azure-cli-commands.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/vpn-gateway/tutorial-create-gateway-portal",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/connect-on-premises-network-with-vpn-gateway/4-exercise-create-a-site-to-site-vpn-gateway-using-azure-cli-commands.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/vpn-gateway/tutorial-create-gateway-portal",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/connect-on-premises-network-with-vpn-gateway/5-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/vpn-gateway/tutorial-create-gateway-portal",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/integrate-vnets-with-vnet-peering/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-network/virtual-network-peering-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/integrate-vnets-with-vnet-peering/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-network/virtual-network-peering-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/integrate-vnets-with-vnet-peering/2-connect-services-using-vnet-peering.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-network/virtual-network-peering-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/integrate-vnets-with-vnet-peering/3-exercise-prepare-vnets-for-peering-using-azure-cli-commands.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-network/virtual-network-peering-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/integrate-vnets-with-vnet-peering/4-exercise-configure-vnet-peering-connections-using-azure-cli-commands.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-network/virtual-network-peering-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/integrate-vnets-with-vnet-peering/5-exercise-verify-vnet-peering.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-network/virtual-network-peering-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/integrate-vnets-with-vnet-peering/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-network/virtual-network-peering-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/design-ip-addressing-for-azure/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-network/ip-services/ip-services-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/design-ip-addressing-for-azure/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-network/ip-services/ip-services-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/design-ip-addressing-for-azure/2-network-ip-addressing-integration.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-network/ip-services/ip-services-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/design-ip-addressing-for-azure/3-azure-public-private-ip-addressing.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-network/ip-services/ip-services-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/design-ip-addressing-for-azure/4-plan-design-ip-addressing.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-network/ip-services/ip-services-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/design-ip-addressing-for-azure/5-exercise-implement-vnets.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-network/ip-services/ip-services-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/design-ip-addressing-for-azure/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-network/ip-services/ip-services-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/improve-app-scalability-resiliency-with-load-balancer/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/load-balancer/quickstart-load-balancer-standard-public-portal",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/improve-app-scalability-resiliency-with-load-balancer/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/load-balancer/quickstart-load-balancer-standard-public-portal",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/improve-app-scalability-resiliency-with-load-balancer/2-load-balancer-features.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/load-balancer/quickstart-load-balancer-standard-public-portal",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/improve-app-scalability-resiliency-with-load-balancer/3-public-load-balancer.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/load-balancer/quickstart-load-balancer-standard-public-portal",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/improve-app-scalability-resiliency-with-load-balancer/4-exercise-configure-public-load-balancer.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/load-balancer/quickstart-load-balancer-standard-public-portal",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/improve-app-scalability-resiliency-with-load-balancer/5-internal-load-balancer.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/load-balancer/quickstart-load-balancer-standard-public-portal",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/improve-app-scalability-resiliency-with-load-balancer/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/load-balancer/quickstart-load-balancer-standard-public-portal",
+      "redirect_document_id": false
+    },
+    {                                                                                         
       "source_path": "learn-pr/aspnetcore/blazor-build-rich-interactive-components/index.yml",
       "redirect_url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
       "redirect_document_id": false

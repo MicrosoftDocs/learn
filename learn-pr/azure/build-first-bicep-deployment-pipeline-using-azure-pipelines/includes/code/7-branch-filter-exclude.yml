@@ -1,6 +1,0 @@
-trigger:
-  branches:
-    include:
-    - '*'
-    exclude:
-    - feature/*
