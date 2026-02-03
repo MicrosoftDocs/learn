@@ -20,11 +20,13 @@ T-SQL provides structured error handling through `TRY...CATCH` blocks, similar t
 
 ```sql
 BEGIN TRY
-    -- Code that might cause an error
-    SELECT 1/0;  -- Division by zero
+    -- TRY block contains code that might cause an error
+    -- If an error occurs here, execution jumps to the CATCH block
+    SELECT 1/0;  -- This causes a division by zero error
 END TRY
 BEGIN CATCH
-    -- Error handling code
+    -- CATCH block handles the error
+    -- This code runs only if an error occurred in the TRY block
     PRINT 'An error occurred';
 END CATCH;
 ```
@@ -40,7 +42,7 @@ SELECT 1/0;  -- Msg 8134: Divide by zero error encountered
 
 ## Retrieve error information
 
-Within the `CATCH` block, SQL Server provides functions to retrieve details about the error that occurred:
+Within the `CATCH` block, SQL Server provides the following functions to retrieve details about the error that occurred:
 
 | Function | Description |
 |----------|-------------|
@@ -51,36 +53,16 @@ Within the `CATCH` block, SQL Server provides functions to retrieve details abou
 | `ERROR_LINE()` | Returns the line number where the error occurred |
 | `ERROR_PROCEDURE()` | Returns the name of the stored procedure or trigger |
 
-Use these functions to log detailed error information:
+The following example demonstrates how to capture error details and log them to a table for later analysis:
 
 ```sql
 BEGIN TRY
-    -- Attempt an operation that will fail
+    -- Attempt an operation that might fail
     INSERT INTO SalesLT.Customer (CustomerID, FirstName, LastName)
-    VALUES (1, 'Test', 'Customer');  -- Duplicate key
+    VALUES (1, 'Test', 'Customer');  -- Duplicate key causes error
 END TRY
 BEGIN CATCH
-    SELECT 
-        ERROR_NUMBER() AS ErrorNumber,
-        ERROR_MESSAGE() AS ErrorMessage,
-        ERROR_SEVERITY() AS ErrorSeverity,
-        ERROR_STATE() AS ErrorState,
-        ERROR_LINE() AS ErrorLine,
-        ERROR_PROCEDURE() AS ErrorProcedure;
-END CATCH;
-```
-
-Create a complete error logging pattern:
-
-```sql
-BEGIN TRY
-    -- Your business logic here
-    UPDATE SalesLT.Product
-    SET ListPrice = ListPrice * 1.10
-    WHERE ProductCategoryID = 999;  -- Non-existent category
-END TRY
-BEGIN CATCH
-    -- Log error to a table
+    -- Log error details to a table using the ERROR_* functions
     INSERT INTO ErrorLog (
         ErrorTime,
         ErrorNumber,
@@ -92,12 +74,12 @@ BEGIN CATCH
     )
     VALUES (
         GETDATE(),
-        ERROR_NUMBER(),
-        ERROR_SEVERITY(),
-        ERROR_STATE(),
-        ISNULL(ERROR_PROCEDURE(), 'Ad hoc query'),
-        ERROR_LINE(),
-        ERROR_MESSAGE()
+        ERROR_NUMBER(),       -- The error number (e.g., 2627 for duplicate key)
+        ERROR_SEVERITY(),     -- Severity level (0-25)
+        ERROR_STATE(),        -- Error state for debugging
+        ISNULL(ERROR_PROCEDURE(), 'Ad hoc query'),  -- NULL if not in a procedure
+        ERROR_LINE(),         -- Line number where error occurred
+        ERROR_MESSAGE()       -- Full error message text
     );
     
     -- Re-raise the error to the calling application
@@ -114,51 +96,55 @@ When errors occur within transactions, you must explicitly roll back uncommitted
 
 ```sql
 BEGIN TRY
+    -- Start a transaction to group multiple operations
     BEGIN TRANSACTION;
     
-    -- First operation
+    -- First operation: update product prices
     UPDATE SalesLT.Product
     SET ListPrice = ListPrice * 1.05
     WHERE ProductCategoryID = 5;
     
-    -- Second operation (might fail)
+    -- Second operation: update order totals
+    -- If this fails, we want to undo the first update too
     UPDATE SalesLT.SalesOrderHeader
     SET TotalDue = TotalDue * 1.05
     WHERE CustomerID = 12345;
     
+    -- Both operations succeeded, make changes permanent
     COMMIT TRANSACTION;
 END TRY
 BEGIN CATCH
-    -- Check if a transaction is active
+    -- Check if a transaction is still active before rolling back
+    -- Some errors auto-rollback, so @@TRANCOUNT might be 0
     IF @@TRANCOUNT > 0
-        ROLLBACK TRANSACTION;
+        ROLLBACK TRANSACTION;  -- Undo all changes from this transaction
     
-    -- Handle or re-raise the error
+    -- Re-raise the error so the caller knows something failed
     THROW;
 END CATCH;
 ```
 
 The `@@TRANCOUNT` check is important because:
+
 - An error might occur before `BEGIN TRANSACTION`
 - Some errors automatically roll back the transaction before reaching `CATCH`
 - Attempting to rollback without an active transaction causes another error
 
 > [!IMPORTANT]
-> Always check `@@TRANCOUNT` before calling `ROLLBACK TRANSACTION` in a `CATCH` block. This prevents the error "ROLLBACK TRANSACTION request has no corresponding BEGIN TRANSACTION."
+> Always check `@@TRANCOUNT` before calling `ROLLBACK TRANSACTION` in a `CATCH` block. This prevents the error *"ROLLBACK TRANSACTION request has no corresponding BEGIN TRANSACTION."*
 
-## Raise custom errors with THROW
+## Raise custom errors with `THROW`
 
 The `THROW` statement raises an exception with a custom error number and message. Use it to signal application-specific error conditions:
 
 ```sql
--- Validate input before processing
 CREATE PROCEDURE ProcessOrder
     @OrderID INT,
     @Quantity INT
 AS
 BEGIN
     BEGIN TRY
-        -- Validation
+        -- Validate input and raise custom errors for invalid data
         IF @Quantity <= 0
             THROW 50001, 'Quantity must be greater than zero.', 1;
         
@@ -172,28 +158,20 @@ BEGIN
         
     END TRY
     BEGIN CATCH
-        THROW;  -- Re-raise to caller
+        -- Log the error before reraising
+        EXEC LogError;
+        
+        -- THROW without parameters reraises the current error
+        THROW;
     END CATCH;
 END;
 ```
 
-`THROW` without parameters reraises the current error:
-
-```sql
-BEGIN CATCH
-    -- Log the error
-    EXEC LogError;
-    
-    -- Re-raise the original error to the caller
-    THROW;
-END CATCH;
-```
-
 Custom error numbers for user-defined errors must be 50000 or higher. The state parameter (1 in the examples) is a user-defined value between 1 and 255 that can help identify where the error was raised.
 
-## Use RAISERROR for formatted messages
+## Use `RAISERROR` for formatted messages
 
-`RAISERROR` provides more formatting options than `THROW`, including printf-style parameter substitution:
+`RAISERROR` provides more formatting options than `THROW`, including printf-style parameter substitution. Including runtime values in error messages makes debugging easier because you can see exactly which data caused the failure without digging through logs or reproducing the issue:
 
 ```sql
 DECLARE @ProductName NVARCHAR(100) = 'Widget Pro';
@@ -213,20 +191,6 @@ BEGIN
 END;
 ```
 
-Create reusable error messages with `sp_addmessage`:
-
-```sql
--- Add a custom message (run once)
-EXEC sp_addmessage 
-    @msgnum = 50003,
-    @severity = 16,
-    @msgtext = 'Cannot delete %s because it has %d dependent records.';
-
--- Use the message
-RAISERROR(50003, 16, 1, 'Customer', 5);
--- Output: Cannot delete Customer because it has 5 dependent records.
-```
-
 > [!NOTE]
 > `THROW` is the recommended approach for new code because it's simpler and always includes a stack trace. Use `RAISERROR` when you need formatted messages or compatibility with existing error handling patterns.
 
@@ -239,19 +203,24 @@ CREATE PROCEDURE OuterProcedure
 AS
 BEGIN
     BEGIN TRY
+        -- Outer procedure owns the transaction
         BEGIN TRANSACTION;
         
-        -- Do some work
+        -- First operation in the outer procedure
         UPDATE SomeTable SET Column1 = 'Value';
         
-        -- Call nested procedure
+        -- Call nested procedure - if it fails, error propagates here
         EXEC InnerProcedure;
         
+        -- All operations succeeded, commit the transaction
         COMMIT TRANSACTION;
     END TRY
     BEGIN CATCH
+        -- Outer procedure handles rollback for all nested calls
         IF @@TRANCOUNT > 0
             ROLLBACK TRANSACTION;
+        
+        -- Propagate error to the application
         THROW;
     END CATCH;
 END;
@@ -261,19 +230,20 @@ CREATE PROCEDURE InnerProcedure
 AS
 BEGIN
     BEGIN TRY
-        -- Inner procedure work
+        -- Inner procedure does its work within the outer's transaction
         UPDATE AnotherTable SET Column2 = 'Value';
     END TRY
     BEGIN CATCH
-        -- Inner procedure doesn't rollback - outer will handle it
-        THROW;
+        -- Don't rollback here - let the outer procedure handle it
+        -- This keeps transaction management in one place
+        THROW;  -- Re-raise error to outer procedure
     END CATCH;
 END;
 ```
 
-## Use XACT_ABORT for automatic rollback
+## Use `XACT_ABORT` for automatic rollback
 
-Setting `XACT_ABORT ON` causes SQL Server to automatically roll back the transaction when any error occurs, even without `TRY...CATCH`:
+You can set `XACT_ABORT ON` to cause SQL Server to automatically roll back the transaction when any error occurs, even without `TRY...CATCH` like this:
 
 ```sql
 SET XACT_ABORT ON;
@@ -285,29 +255,33 @@ BEGIN TRANSACTION;
 COMMIT TRANSACTION;
 ```
 
-Combine `XACT_ABORT` with `TRY...CATCH` for full protection:
+Combining `XACT_ABORT` with `TRY...CATCH` gives you the benefits of both approaches: `XACT_ABORT` guarantees immediate rollback for any error, while `TRY...CATCH` lets you log error details and perform custom cleanup before the error propagates:
 
 ```sql
+-- XACT_ABORT ON ensures automatic rollback on any error
 SET XACT_ABORT ON;
 
 BEGIN TRY
     BEGIN TRANSACTION;
     
-    -- Multiple operations
-    EXEC Procedure1;
-    EXEC Procedure2;
-    EXEC Procedure3;
+    -- Execute multiple procedures as a single unit of work
+    EXEC Procedure1;  -- If any of these fail...
+    EXEC Procedure2;  -- ...XACT_ABORT automatically rolls back...
+    EXEC Procedure3;  -- ...and jumps to the CATCH block
     
+    -- All succeeded, commit the changes
     COMMIT TRANSACTION;
 END TRY
 BEGIN CATCH
-    -- Transaction is already rolled back by XACT_ABORT
-    -- but check anyway for safety
+    -- With XACT_ABORT ON, the transaction is usually already rolled back
+    -- This check handles edge cases where it might still be active
     IF @@TRANCOUNT > 0
         ROLLBACK TRANSACTION;
     
-    -- Log and re-raise
+    -- Log the error details before re-raising
     EXEC LogError;
+    
+    -- Let the caller know an error occurred
     THROW;
 END CATCH;
 ```

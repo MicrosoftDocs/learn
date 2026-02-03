@@ -1,19 +1,21 @@
 Text processing in databases often requires pattern matching that goes beyond what the `LIKE` operator can handle. Regular expressions provide a standardized syntax for complex pattern matching, validation, and text transformation. SQL Server 2025 and SQL databases in Microsoft Fabric include regular expression support through new T-SQL functions.
 
-In this unit, you'll learn how to use regular expression functions to search, extract, replace, and split text data in your T-SQL queries. You'll explore functions that handle common patterns and complex matching scenarios.
+Consider scenarios where `LIKE` falls short: validating email addresses with proper format, extracting phone numbers regardless of formatting variations, finding product codes that follow specific naming conventions, or detecting patterns like consecutive repeated characters. The `LIKE` operator supports only simple wildcards (`%` for any characters, `_` for a single character), which can't express these complex patterns.
+
+Regular expressions solve these limitations by providing a rich pattern language. With regex, you can match specific character ranges, require exact repetition counts, use alternation (match this OR that), and capture portions of matched text for extraction or replacement. Once you learn regex syntax, you can apply it across many programming languages and tools—the patterns you write for SQL Server work similarly in Python, JavaScript, and command-line utilities.
 
 ## Understand regular expression basics
 
-Regular expressions (regex) use a pattern syntax to describe text patterns. Before you learn SQL Server's functions, review these common regex components:
+Regular expressions (regex) use a pattern syntax to describe text patterns. Before you learn SQL Server's functions, let's review these common regex components:
 
 | Pattern | Description | Example Match |
 | ------- | ----------- | ------------- |
-| `.` | Any single character | `a.c` matches "abc", "a1c" |
-| `*` | Zero or more of preceding | `ab*c` matches "ac", "abc", "abbc" |
-| `+` | One or more of preceding | `ab+c` matches "abc", "abbc" but not "ac" |
-| `?` | Zero or one of preceding | `colou?r` matches "color", "colour" |
-| `^` | Start of string | `^Hello` matches strings starting with "Hello" |
-| `$` | End of string | `world$` matches strings ending with "world" |
+| `.` | Any single character | `a.c` matches *"abc"*, *"a1c"* |
+| `*` | Zero or more of preceding | `ab*c` matches *"ac"*, *"abc"*, *"abbc"* |
+| `+` | One or more of preceding | `ab+c` matches *"abc"*, *"abbc"* but not *"ac"* |
+| `?` | Zero or one of preceding | `colou?r` matches *"color"*, *"colour"* |
+| `^` | Start of string | `^Hello` matches strings starting with *"Hello"* |
+| `$` | End of string | `world$` matches strings ending with *"world"* |
 | `[abc]` | Character class | `[aeiou]` matches any vowel |
 | `[^abc]` | Negated class | `[^0-9]` matches nondigits |
 | `\d` | Digit (0-9) | `\d{3}` matches three digits |
@@ -22,7 +24,7 @@ Regular expressions (regex) use a pattern syntax to describe text patterns. Befo
 | `{n,m}` | Between n and m occurrences | `\d{2,4}` matches 2 to 4 digits |
 
 > [!NOTE]
-> SQL Server's regular expression functions use the ECMAScript standard regex syntax. This is the same syntax used in JavaScript and many other programming languages, making patterns portable across technologies.
+> SQL Server's regular expression functions use the *ECMAScript* standard regex syntax. This is the same syntax used in JavaScript and many other programming languages, making patterns portable across technologies.
 
 ## Match patterns with `REGEXP_LIKE`
 
@@ -78,7 +80,7 @@ FROM SalesLT.Customer
 WHERE Phone IS NOT NULL;
 ```
 
-Use capture groups with backreferences:
+The following examples demonstrate how to use capture groups with backreferences:
 
 ```sql
 -- Swap first and last name
@@ -92,7 +94,7 @@ SELECT REGEXP_REPLACE(@card, '\d(?=[\d-]{4,})', '*') AS MaskedCard;
 -- Returns: ****-****-****-9012
 ```
 
-Clean and normalize data:
+The following examples demonstrate how to clean and normalize data:
 
 ```sql
 -- Remove extra whitespace (multiple spaces to single space)
@@ -106,7 +108,7 @@ FROM WebPages;
 
 ## Extract substrings with REGEXP_SUBSTR
 
-`REGEXP_SUBSTR` extracts the portion of a string that matches a regular expression pattern. Use it to pull specific data elements from unstructured text:
+`REGEXP_SUBSTR` extracts the portion of a string that matches a regular expression pattern. Use it to pull specific data elements from unstructured text like the following examples:
 
 ```sql
 -- Extract domain from email address
@@ -123,26 +125,15 @@ SELECT
 FROM SalesLT.Product;
 ```
 
-The function signature includes parameters for occurrence and capture groups:
+The following example demonstrates the function signature, which includes parameters for occurrence and capture groups:
 
 ```sql
 REGEXP_SUBSTR(source, pattern, start_position, occurrence, flags, capture_group)
 ```
 
-Extract multiple matches:
+## Find pattern positions with `REGEXP_INSTR`
 
-```sql
--- Extract first and second words
-DECLARE @text NVARCHAR(100) = 'Hello World from SQL Server';
-SELECT 
-    REGEXP_SUBSTR(@text, '\w+', 1, 1) AS FirstWord,   -- Hello
-    REGEXP_SUBSTR(@text, '\w+', 1, 2) AS SecondWord,  -- World
-    REGEXP_SUBSTR(@text, '\w+', 1, 3) AS ThirdWord;   -- from
-```
-
-## Find pattern positions with REGEXP_INSTR
-
-`REGEXP_INSTR` returns the starting position of a pattern match within a string. Returns 0 if no match is found:
+`REGEXP_INSTR` returns the starting position of a pattern match within a string. Returns 0 if no match is found, like the following examples:
 
 ```sql
 -- Find position of first digit in product number
@@ -160,13 +151,13 @@ FROM SalesLT.Customer
 WHERE EmailAddress IS NOT NULL;
 ```
 
-## Count pattern occurrences with REGEXP_COUNT
+## Count pattern occurrences with `REGEXP_COUNT`
 
-`REGEXP_COUNT` returns the number of times a pattern appears in a string:
+`REGEXP_COUNT` returns the number of times a pattern appears in a string. The following examples illustrate its use:
 
 ```sql
 -- Count words in a description
-SELECT 
+SELECT  
     Name,
     REGEXP_COUNT(Name, '\w+') AS WordCount
 FROM SalesLT.Product;
@@ -183,7 +174,7 @@ FROM SalesLT.Product
 WHERE REGEXP_COUNT(Name, '\d+') > 1;
 ```
 
-## Split strings with REGEXP_SPLIT_TO_TABLE
+## Split strings with `REGEXP_SPLIT_TO_TABLE`
 
 `REGEXP_SPLIT_TO_TABLE` is a table-valued function that splits a string into rows based on a delimiter pattern:
 
@@ -199,7 +190,7 @@ SELECT value AS Fruit
 FROM REGEXP_SPLIT_TO_TABLE(@data, '[,;|]');
 ```
 
-Combine with other queries using `CROSS APPLY`:
+You can combine `REGEXP_SPLIT_TO_TABLE` with other queries using `CROSS APPLY`:
 
 ```sql
 -- Assuming Products table has a Tags column with comma-separated values
@@ -211,7 +202,7 @@ FROM Products AS p
 CROSS APPLY REGEXP_SPLIT_TO_TABLE(p.Tags, ',\s*') AS t;
 ```
 
-## Return all matches with REGEXP_MATCHES
+## Return all matches with `REGEXP_MATCHES`
 
 `REGEXP_MATCHES` is a table-valued function that returns all pattern matches as separate rows:
 

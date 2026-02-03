@@ -6,7 +6,7 @@ Window functions calculate values across a "window" of rows defined by the `OVER
 
 The general syntax for a window function is:
 
-```sql
+```
 function_name(arguments) OVER (
     [PARTITION BY partition_expression]
     [ORDER BY order_expression [ASC | DESC]]
@@ -19,6 +19,8 @@ The `OVER` clause components control how the window is defined:
 - **PARTITION BY**: Divides rows into groups (partitions) for the calculation
 - **ORDER BY**: Determines the logical order of rows within each partition
 - **ROWS/RANGE**: Defines the frame boundaries relative to the current row
+
+The following query demonstrates a simple window function that calculates a running total of order amounts per customer:
 
 ```sql
 SELECT 
@@ -38,7 +40,7 @@ ORDER BY CustomerID, OrderDate;
 
 Ranking functions assign sequential numbers to rows based on their position within a partition. SQL Server provides four ranking functions. Each function handles ties differently:
 
-**ROW_NUMBER()** assigns a unique sequential number to each row, with no duplicates even for tied values:
+**`ROW_NUMBER()`** assigns a unique sequential number to each row, with no duplicates even for tied values:
 
 ```sql
 SELECT 
@@ -49,6 +51,8 @@ SELECT
 FROM SalesLT.Product
 WHERE ListPrice > 0;
 ```
+
+The result set looks like this:
 
 ```
 ProductID   Name                        ListPrice   PriceRank
@@ -61,7 +65,7 @@ ProductID   Name                        ListPrice   PriceRank
 
 This query ranks all products by price from highest to lowest. Each product receives a unique number regardless of whether multiple products share the same price.
 
-**RANK()** assigns the same rank to tied values, then skips numbers to account for the ties:
+**`RANK()`** assigns the same rank to tied values, then skips numbers to account for the ties:
 
 ```sql
 SELECT 
@@ -72,6 +76,8 @@ SELECT
 FROM SalesLT.Product
 WHERE ListPrice > 0;
 ```
+
+The result set looks like this:
 
 ```
 ProductID   Name                        ListPrice   PriceRank
@@ -84,7 +90,7 @@ ProductID   Name                        ListPrice   PriceRank
 
 When two products have identical prices, both receive the same rank. The next product's rank reflects the total number of products ranked higher, creating gaps in the sequence.
 
-**DENSE_RANK()** assigns the same rank to tied values but doesn't skip numbers:
+**`DENSE_RANK()`** assigns the same rank to tied values but doesn't skip numbers:
 
 ```sql
 SELECT 
@@ -95,6 +101,8 @@ SELECT
 FROM SalesLT.Product
 WHERE ListPrice > 0;
 ```
+
+The result set looks like this:
 
 ```
 ProductID   Name                        ListPrice   PriceRank
@@ -107,7 +115,7 @@ ProductID   Name                        ListPrice   PriceRank
 
 Like `RANK()`, tied values share the same rank. However, `DENSE_RANK()` continues with the next consecutive number, so you can use it to count distinct price levels.
 
-**NTILE(n)** distributes rows into a specified number of roughly equal groups:
+**`NTILE(n)`** distributes rows into a specified number of roughly equal groups:
 
 ```sql
 SELECT 
@@ -118,6 +126,8 @@ SELECT
 FROM SalesLT.Product
 WHERE ListPrice > 0;
 ```
+
+The result set looks like this:
 
 ```
 ProductID   Name                          ListPrice   PriceQuartile
@@ -147,6 +157,8 @@ INNER JOIN SalesLT.ProductCategory AS pc
 WHERE p.ListPrice > 0;
 ```
 
+The result set looks like this:
+
 ```
 Category          Product                     ListPrice   CategoryPriceRank
 ---------------   -------------------------   ---------   -----------------
@@ -165,7 +177,7 @@ This query ranks products within each category separately. The ranking restarts 
 
 Standard aggregate functions like `SUM`, `AVG`, `COUNT`, `MIN`, and `MAX` can be used as window functions by adding the `OVER` clause. This allows you to calculate aggregates while retaining individual row details.
 
-Calculate running totals and cumulative aggregates:
+The following query demonstrates how to calculate running totals and cumulative aggregates:
 
 ```sql
 SELECT 
@@ -179,6 +191,8 @@ FROM SalesLT.SalesOrderHeader
 ORDER BY OrderDate, SalesOrderID;
 ```
 
+The result set looks like this:
+
 ```
 SalesOrderID   OrderDate    TotalDue    RunningTotal   RunningAverage   OrderNumber
 ------------   ----------   ---------   ------------   --------------   -----------
@@ -188,33 +202,10 @@ SalesOrderID   OrderDate    TotalDue    RunningTotal   RunningAverage   OrderNum
 71782          2008-06-01   43962.79    87475.308      21868.827        4
 ```
 
-Calculate partition-level aggregates alongside row details:
-
-```sql
-SELECT 
-    CustomerID,
-    SalesOrderID,
-    TotalDue,
-    SUM(TotalDue) OVER (PARTITION BY CustomerID) AS CustomerTotal,
-    TotalDue / SUM(TotalDue) OVER (PARTITION BY CustomerID) * 100 AS PercentOfCustomerTotal,
-    AVG(TotalDue) OVER (PARTITION BY CustomerID) AS CustomerAverage,
-    TotalDue - AVG(TotalDue) OVER (PARTITION BY CustomerID) AS DifferenceFromAverage
-FROM SalesLT.SalesOrderHeader;
-```
-
-```
-CustomerID   SalesOrderID   TotalDue    CustomerTotal   PercentOfCustomerTotal   CustomerAverage   DifferenceFromAverage
-----------   ------------   ---------   -------------   ----------------------   ---------------   ---------------------
-29825        71774          972.785     1059.868        91.78                    529.934           442.851
-29825        71776          87.083      1059.868        8.22                     529.934           -442.851
-29957        71780          42452.65    86415.44        49.12                    43207.72          -755.07
-29957        71782          43962.79    86415.44        50.88                    43207.72          755.07
-```
-
 > [!IMPORTANT]
 > When using aggregate window functions without `ORDER BY` in the `OVER` clause, the function calculates across the entire partition. Adding `ORDER BY` creates a running calculation from the partition start to the current row.
 
-## Define window frames with ROWS and RANGE
+## Define window frames with `ROWS` and `RANGE`
 
 Window frames let you specify exactly which rows relative to the current row should be included in the calculation. The `ROWS` clause counts physical rows, while `RANGE` groups rows with equal values.
 
@@ -225,7 +216,7 @@ Frame boundaries can be specified using:
 - `n FOLLOWING`: `n` rows after current row
 - `UNBOUNDED FOLLOWING`: To the partition end
 
-Calculate a moving average over the last three orders:
+The following query calculates a moving average over the last three orders:
 
 ```sql
 SELECT 
@@ -240,6 +231,8 @@ FROM SalesLT.SalesOrderHeader
 ORDER BY OrderDate;
 ```
 
+The result set looks like this:
+
 ```
 SalesOrderID   OrderDate    TotalDue    MovingAvg3Orders
 ------------   ----------   ---------   ----------------
@@ -251,36 +244,11 @@ SalesOrderID   OrderDate    TotalDue    MovingAvg3Orders
 
 This query calculates a 3-order moving average by including the current row and the two rows before it. For the first row, only one value is available, so the average equals `TotalDue`. By the third row, the window includes all three rows.
 
-Calculate centered moving averages:
-
-```sql
-SELECT 
-    OrderDate,
-    TotalDue,
-    AVG(TotalDue) OVER (
-        ORDER BY OrderDate
-        ROWS BETWEEN 1 PRECEDING AND 1 FOLLOWING
-    ) AS CenteredMovingAvg
-FROM SalesLT.SalesOrderHeader
-ORDER BY OrderDate;
-```
-
-```
-OrderDate    TotalDue    CenteredMovingAvg
-----------   ---------   -----------------
-2008-06-01   972.785     529.934
-2008-06-01   87.083      14504.172
-2008-06-01   42452.65    28834.174
-2008-06-01   43962.79    43207.72
-```
-
-This query creates a centered moving average by including one row before and one row after the current row. Centered averages smooth data by considering values on both sides, which is useful for trend analysis where you want to reduce noise without introducing lag.
-
 ## Use analytical functions
 
 Analytical functions let you access data from other rows without using self-joins or subqueries. These functions are useful for time-series analysis, trend detection, and comparing current values against historical or future values. Unlike aggregate window functions that compute summaries, analytical functions retrieve specific values from specific rows in the window.
 
-**LAG()** and **LEAD()** access values from previous or subsequent rows:
+**`LAG()`** and **`LEAD()`** access values from previous or subsequent rows, like this:
 
 ```sql
 SELECT 
@@ -294,6 +262,8 @@ FROM SalesLT.SalesOrderHeader
 ORDER BY OrderDate;
 ```
 
+The result set looks like this:
+
 ```
 SalesOrderID   OrderDate    TotalDue    PreviousOrderTotal   NextOrderTotal   ChangeFromPrevious
 ------------   ----------   ---------   ------------------   --------------   ------------------
@@ -305,7 +275,7 @@ SalesOrderID   OrderDate    TotalDue    PreviousOrderTotal   NextOrderTotal   Ch
 
 `LAG()` retrieves a value from a previous row, while `LEAD()` retrieves from a following row. The second parameter specifies how many rows to look back or ahead (default is 1), and the third parameter provides a default value when no row exists (such as for the first row with `LAG()`). Use these functions to calculate period-over-period changes, identify trends, or detect anomalies in sequential data.
 
-**FIRST_VALUE()** and **LAST_VALUE()** return values from the first or last row in the frame:
+**`FIRST_VALUE()`** and **`LAST_VALUE()`** return values from the first or last row in the frame:
 
 ```sql
 SELECT 
@@ -325,6 +295,8 @@ SELECT
 FROM SalesLT.Product
 WHERE ListPrice > 0;
 ```
+
+The result set looks like this:
 
 ```
 ProductID   Name                        ListPrice   ProductCategoryID   MostExpensiveInCategory    LeastExpensiveInCategory
@@ -352,6 +324,8 @@ FROM SalesLT.Product
 WHERE ListPrice > 0
 ORDER BY ListPrice;
 ```
+
+The result set looks like this:
 
 ```
 Name                        ListPrice   PercentRank   CumulativeDistribution

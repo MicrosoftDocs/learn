@@ -9,6 +9,7 @@ Fuzzy matching algorithms measure how similar two strings are by calculating the
 **Similarity scores** express the relationship between strings as a percentage or ratio, where higher values indicate greater similarity.
 
 Consider these examples:
+
 - "color" → "colour": edit distance = 1 (insert 'u')
 - "database" → "databaes": edit distance = 2 (swap 'e' and 's')
 - "Microsoft" → "Microsft": edit distance = 1 (delete 'o')
@@ -16,9 +17,11 @@ Consider these examples:
 > [!NOTE]
 > Fuzzy matching is computationally expensive compared to exact matching. Use it strategically, typically on candidate sets that have been pre-filtered using other criteria.
 
-## Calculate edit distance with EDIT_DISTANCE
+## Calculate edit distance with `EDIT_DISTANCE`
 
-The `EDIT_DISTANCE` function returns the Levenshtein distance between two strings, which is the minimum number of edits required to transform one string into the other:
+The `EDIT_DISTANCE` function returns the Levenshtein distance between two strings, which is the minimum number of edits required to transform one string into the other. The goal is to find strings that are similar based on a defined threshold.
+
+The following example demonstrates how to use `EDIT_DISTANCE`:
 
 ```sql
 SELECT 
@@ -28,7 +31,7 @@ SELECT
     EDIT_DISTANCE('hello', 'world') AS Different;         -- Returns 4
 ```
 
-Use `EDIT_DISTANCE` to find records that might be duplicates or matches despite slight variations:
+You can use `EDIT_DISTANCE` to find records that might be duplicates or matches despite slight variations:
 
 ```sql
 -- Find customers with similar names to a search term
@@ -45,7 +48,7 @@ WHERE EDIT_DISTANCE(@searchName, FirstName + ' ' + LastName) <= 3
 ORDER BY EDIT_DISTANCE(@searchName, FirstName + ' ' + LastName);
 ```
 
-Find potential duplicate products:
+Also, you can find potential duplicate products:
 
 ```sql
 -- Find product pairs with similar names
@@ -65,7 +68,7 @@ ORDER BY EDIT_DISTANCE(p1.Name, p2.Name);
 > [!TIP]
 > The maximum meaningful edit distance depends on string length. For short strings (5-10 characters), an edit distance of 1-2 indicates similarity. For longer strings, you might allow distances of 3-5.
 
-## Measure similarity with EDIT_DISTANCE_SIMILARITY
+## Measure similarity with `EDIT_DISTANCE_SIMILARITY`
 
 `EDIT_DISTANCE_SIMILARITY` returns a normalized similarity score between 0 and 100, where 100 represents identical strings. This percentage-based metric is easier to interpret than raw edit distance, especially when comparing strings of different lengths:
 
@@ -77,7 +80,7 @@ SELECT
     EDIT_DISTANCE_SIMILARITY('hello', 'hello') AS Exact;                -- 100
 ```
 
-Use similarity scores to find approximate matches with a threshold:
+You can use similarity scores to find approximate matches with a threshold like the following example:
 
 ```sql
 -- Find products similar to a search term (at least 70% similar)
@@ -92,33 +95,7 @@ WHERE EDIT_DISTANCE_SIMILARITY(@searchTerm, Name) >= 70
 ORDER BY EDIT_DISTANCE_SIMILARITY(@searchTerm, Name) DESC;
 ```
 
-Build a flexible search feature:
-
-```sql
-CREATE PROCEDURE SearchProducts
-    @SearchTerm NVARCHAR(200),
-    @MinSimilarity INT = 60
-AS
-BEGIN
-    SELECT 
-        ProductID,
-        Name,
-        ProductNumber,
-        ListPrice,
-        EDIT_DISTANCE_SIMILARITY(@SearchTerm, Name) AS NameSimilarity,
-        EDIT_DISTANCE_SIMILARITY(@SearchTerm, ProductNumber) AS NumberSimilarity
-    FROM SalesLT.Product
-    WHERE EDIT_DISTANCE_SIMILARITY(@SearchTerm, Name) >= @MinSimilarity
-       OR EDIT_DISTANCE_SIMILARITY(@SearchTerm, ProductNumber) >= @MinSimilarity
-    ORDER BY 
-        GREATEST(
-            EDIT_DISTANCE_SIMILARITY(@SearchTerm, Name),
-            EDIT_DISTANCE_SIMILARITY(@SearchTerm, ProductNumber)
-        ) DESC;
-END;
-```
-
-## Calculate phonetic similarity with JARO_WINKLER_DISTANCE
+## Calculate phonetic similarity with `JARO_WINKLER_DISTANCE`
 
 The Jaro-Winkler algorithm is specifically designed for comparing names and short strings. It gives higher scores to strings that match from the beginning, making it particularly effective for person names where prefixes are more significant:
 
@@ -130,7 +107,9 @@ SELECT
     JARO_WINKLER_DISTANCE('SMITH', 'SMYTH') AS SpellingVar;     -- ~0.96
 ```
 
-The Jaro-Winkler score ranges from 0 to 1, where 1 indicates identical strings. A score above 0.9 typically indicates a strong match for names:
+The Jaro-Winkler score ranges from 0 to 1, where 1 indicates identical strings. A score above 0.9 typically indicates a strong match for names.
+
+The following example finds customers with names similar to a search input:
 
 ```sql
 -- Find customers with names similar to a search
@@ -154,49 +133,16 @@ ORDER BY CombinedScore DESC;
 > [!NOTE]
 > Jaro-Winkler is optimized for short strings like names. For longer strings like addresses or descriptions, `EDIT_DISTANCE_SIMILARITY` often provides better results.
 
-## Combine fuzzy matching approaches
-
-Real-world matching scenarios often benefit from combining multiple fuzzy matching techniques:
-
-```sql
--- Comprehensive customer search combining multiple techniques
-CREATE PROCEDURE FindMatchingCustomers
-    @FirstName NVARCHAR(50),
-    @LastName NVARCHAR(50),
-    @Email NVARCHAR(100) = NULL
-AS
-BEGIN
-    SELECT 
-        CustomerID,
-        FirstName,
-        LastName,
-        EmailAddress,
-        -- Score each field
-        JARO_WINKLER_DISTANCE(@FirstName, FirstName) AS FirstNameJW,
-        JARO_WINKLER_DISTANCE(@LastName, LastName) AS LastNameJW,
-        EDIT_DISTANCE_SIMILARITY(@FirstName, FirstName) AS FirstNameED,
-        EDIT_DISTANCE_SIMILARITY(@LastName, LastName) AS LastNameED,
-        -- Calculate weighted overall score
-        (JARO_WINKLER_DISTANCE(@FirstName, FirstName) * 0.3 +
-         JARO_WINKLER_DISTANCE(@LastName, LastName) * 0.4 +
-         CASE 
-             WHEN @Email IS NOT NULL 
-             THEN EDIT_DISTANCE_SIMILARITY(@Email, EmailAddress) / 100.0 * 0.3
-             ELSE JARO_WINKLER_DISTANCE(@FirstName, FirstName) * 0.3
-         END) AS OverallScore
-    FROM SalesLT.Customer
-    WHERE JARO_WINKLER_DISTANCE(@FirstName, FirstName) > 0.7
-       OR JARO_WINKLER_DISTANCE(@LastName, LastName) > 0.7
-    ORDER BY OverallScore DESC;
-END;
-```
-
 ## Performance considerations
 
-Fuzzy matching functions examine every character in both strings, making them computationally intensive. Follow these best practices:
+Fuzzy matching functions examine every character in both strings, making them computationally intensive. Exact string comparison can stop as soon as characters differ, and indexed lookups use efficient B-tree traversal. In contrast, fuzzy algorithms must calculate similarity scores character by character. For a table with one million rows, an unoptimized fuzzy search might perform one million similarity calculations, each involving dozens of character comparisons.
+
+The key to efficient fuzzy matching is reducing the candidate set before applying the expensive fuzzy functions. Use indexed columns with `LIKE` patterns, exact matches on related fields, or range filters to narrow results first. Only then apply fuzzy matching to the smaller candidate set.
+
+The following examples show this progressive filtering approach:
 
 ```sql
--- Bad: Fuzzy match against entire table
+-- Not good: Fuzzy match against entire table
 SELECT * FROM LargeCustomerTable
 WHERE EDIT_DISTANCE_SIMILARITY('John Smith', FullName) > 70;
 

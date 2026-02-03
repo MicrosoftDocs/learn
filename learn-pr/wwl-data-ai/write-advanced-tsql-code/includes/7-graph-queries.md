@@ -16,9 +16,9 @@ In this model:
 
 ## Understand graph capabilities
 
-The graph feature extends the relational model with dedicated node and edge tables. Nodes represent entities (people, products, locations), while edges represent relationships between them (follows, purchased, located_in).
+The graph capabilities extend the relational model with dedicated node and edge tables. Nodes represent entities such as people, products, and locations. Edges represent relationships between them, such as "knows," "purchased," or "located in."
 
-The key advantage of graph queries is pattern matching. Instead of writing complex multi-way joins, you express the pattern you're looking for using an ASCII-art style syntax:
+The key advantage of graph queries is pattern matching. Instead of writing complex multi-way joins, you express the pattern you're looking for using an ASCII style syntax:
 
 ```sql
 -- Traditional relational approach (multiple joins)
@@ -65,9 +65,12 @@ CREATE TABLE dbo.Location (
 ) AS NODE;
 ```
 
-SQL Server automatically adds a `$node_id` column to node tables that uniquely identifies each node. The system uses this column internally for graph relationships:
+SQL Server automatically adds a `$node_id` column to node tables that uniquely identifies each node. The system uses this column internally for graph relationships.
+
+The following example inserts four people into the Person node table, then queries the table to show both the business columns and the system-generated `$node_id`. Notice that the INSERT statement uses only the user-defined columns. SQL Server generates the `$node_id` automatically for each row:
 
 ```sql
+-- Insert person data using standard INSERT syntax
 INSERT INTO dbo.Person (PersonID, Name, Email, Department)
 VALUES 
     (1, 'Alice Johnson', 'alice@contoso.com', 'Engineering'),
@@ -75,6 +78,7 @@ VALUES
     (3, 'Carol Davis', 'carol@contoso.com', 'Engineering'),
     (4, 'David Lee', 'david@contoso.com', 'Sales');
 
+-- Query shows the system-generated $node_id alongside user columns
 SELECT $node_id, PersonID, Name FROM dbo.Person;
 ```
 
@@ -103,7 +107,7 @@ CREATE TABLE dbo.Knows (
 ) AS EDGE;
 ```
 
-SQL Server automatically adds `$edge_id`, `$from_id`, and `$to_id` columns to edge tables. Insert edges by specifying the `$from_id` and `$to_id` values from the connected nodes:
+SQL Server automatically adds `$edge_id`, `$from_id`, and `$to_id` columns to edge tables. You can insert edges by specifying the `$from_id` and `$to_id` values from the connected nodes, like this:
 
 ```sql
 -- Alice reports to Bob
@@ -126,7 +130,7 @@ SELECT
 > [!TIP]
 > Edge tables can store properties about the relationship itself, like dates, weights, or types. This is useful for temporal analysis or weighted graph algorithms.
 
-## Query graphs with the MATCH clause
+## Query graphs with the `MATCH` clause
 
 The `MATCH` clause uses a pattern syntax to specify the relationships you want to find. The basic pattern uses arrows to show relationship direction:
 
@@ -146,7 +150,7 @@ The arrow direction matters:
 - `(Node1)-(Edge)->(Node2)`: Edge goes from Node1 to Node2
 - `(Node1)<-(Edge)-(Node2)`: Edge goes from Node2 to Node1
 
-Find all people who know Alice:
+The following example finds all people who know Alice:
 
 ```sql
 SELECT 
@@ -161,7 +165,9 @@ WHERE MATCH(Connector-(k)->Target)
 
 ## Traverse multiple relationships
 
-Chain multiple patterns to traverse deeper relationships. Find friends of friends:
+Single-hop queries find direct connections, but graph databases excel at multi-hop traversals. You can chain multiple edge patterns in a single `MATCH` clause to follow paths through several relationships. This capability lets you answer questions like "who are my friends' friends?" or "what products did my colleagues purchase?" without writing complex nested subqueries.
+
+The following example finds friends of friends by chaining two *KNOWS* relationships. The pattern `Person1-(k1)->Person2-(k2)->Person3` starts at Person1, follows one *KNOWS* edge to Person2, then follows another *KNOWS* edge to reach Person3:
 
 ```sql
 -- Find friends of friends (2-hop connections)
@@ -178,7 +184,7 @@ WHERE MATCH(Person1-(k1)->Person2-(k2)->Person3)
   AND Person3.Name <> Person1.Name;  -- Exclude self
 ```
 
-Combine different relationship types:
+You can also combine different relationship types in a single traversal. The following example crosses from *KNOWS* to *PURCHASED* edges to find what products were bought by people that a given person knows:
 
 ```sql
 -- Find products purchased by people in the same department
@@ -198,31 +204,11 @@ WHERE MATCH(p1-(k)->p2-(pu)->prod)
 > [!IMPORTANT]
 > Each edge table alias can only appear once in a single `MATCH` pattern. To traverse the same edge type multiple times, use separate aliases.
 
-## Use SHORTEST_PATH for variable-length traversals
+## Use `SHORTEST_PATH` for variable-length traversals
 
-`SHORTEST_PATH` finds the shortest connection between nodes across a variable number of hops. This is essential for scenarios like finding degrees of separation or shortest routes:
+You can use `SHORTEST_PATH` to find the shortest connection across a variable number of relationships. The `FOR PATH` keyword marks tables that participate in variable-length matching, and quantifiers like `+` (one or more) or `{1,3}` (one to three) control the traversal depth.
 
-```sql
--- Find shortest connection path between two people
-SELECT 
-    StartPerson.Name AS StartPerson,
-    STRING_AGG(ConnectedPerson.Name, ' -> ') 
-        WITHIN GROUP (GRAPH PATH) AS ConnectionPath,
-    LAST_VALUE(ConnectedPerson.Name) 
-        WITHIN GROUP (GRAPH PATH) AS EndPerson,
-    COUNT(ConnectedPerson.Name) 
-        WITHIN GROUP (GRAPH PATH) AS Hops
-FROM dbo.Person AS StartPerson,
-     dbo.Knows FOR PATH AS k,
-     dbo.Person FOR PATH AS ConnectedPerson
-WHERE MATCH(SHORTEST_PATH(StartPerson(-(k)->ConnectedPerson)+))
-  AND StartPerson.Name = 'Alice Johnson'
-  AND LAST_VALUE(ConnectedPerson.Name) WITHIN GROUP (GRAPH PATH) = 'David Lee';
-```
-
-The `FOR PATH` keyword indicates that the table participates in variable-length pattern matching. The `+` modifier means "one or more" traversals.
-
-Find all people within 3 hops of a starting person:
+The following example finds all people reachable from Alice within three hops and counts the distance to each:
 
 ```sql
 SELECT 
@@ -236,138 +222,36 @@ WHERE MATCH(SHORTEST_PATH(StartPerson(-(k)->ReachablePerson){1,3}))
   AND StartPerson.Name = 'Alice Johnson';
 ```
 
-## Combine graph and relational queries
-
-Graph tables work directly with regular relational tables and operations:
-
-```sql
--- Join graph results with a regular table
--- Assumes a Departments table exists: CREATE TABLE dbo.Departments (DepartmentName NVARCHAR(50) PRIMARY KEY, DepartmentBudget DECIMAL(12,2));
-SELECT 
-    e.Name AS Employee,
-    m.Name AS Manager,
-    d.DepartmentBudget
-FROM dbo.Person AS e,
-     dbo.ReportsTo AS r,
-     dbo.Person AS m,
-     dbo.Departments AS d  -- Regular relational table
-WHERE MATCH(e-(r)->m)
-  AND e.Department = d.DepartmentName;
-
--- Use graph patterns in a CTE
-WITH DirectReports AS (
-    SELECT 
-        Manager.PersonID AS ManagerID,
-        Manager.Name AS ManagerName,
-        COUNT(*) AS ReportCount
-    FROM dbo.Person AS Employee,
-         dbo.ReportsTo AS r,
-         dbo.Person AS Manager
-    WHERE MATCH(Employee-(r)->Manager)
-    GROUP BY Manager.PersonID, Manager.Name
-)
-SELECT * FROM DirectReports
-WHERE ReportCount >= 3;
-```
-
 ## Choose between graph and relational approaches
 
 Graph queries aren't always the best choice. Consider these guidelines when deciding between graph and traditional relational approaches:
 
-**Use graph queries when:**
+Use graph queries when:
+
 - Relationships are the primary focus of your queries
 - You need to traverse variable or unknown depths (friends of friends of friends)
 - The data naturally forms a network (social graphs, hierarchies, routes)
 - Query patterns would require many self-joins in relational SQL
 - You're performing path-finding or connectivity analysis
 
-**Use relational queries when:**
+Use relational queries when:
+
 - Relationships are simple and fixed-depth (parent-child with one level)
 - You're primarily filtering and aggregating entity attributes
 - The data model is mostly tabular with few relationships
 - Performance is critical and indexes on foreign keys are sufficient
 - Your team is more familiar with traditional SQL patterns
 
-```sql
--- Relational: Good for simple, fixed-depth relationships
--- Find employees and their direct managers (1 level)
-SELECT e.Name, m.Name AS Manager
-FROM Employees e
-INNER JOIN Employees m ON e.ManagerID = m.EmployeeID;
-
--- Graph: Better for variable-depth or complex traversals
--- Find all people connected to Alice within 5 hops
-SELECT LAST_VALUE(p.Name) WITHIN GROUP (GRAPH PATH) AS Connected
-FROM Person AS Start, Knows FOR PATH AS k, Person FOR PATH AS p
-WHERE MATCH(SHORTEST_PATH(Start(-(k)->p){1,5}))
-  AND Start.Name = 'Alice';
-```
-
 ## Troubleshoot common graph query challenges
 
-Graph queries have unique syntax requirements that can cause errors. Here are common challenges and how to resolve them.
+Graph queries have unique syntax requirements that can cause errors. The following table describes common challenges and how to resolve them.
 
-### Wrong arrow direction
-
-The arrow direction in your `MATCH` pattern must align with how you inserted the edge data. If the arrow points the wrong way, the query returns no results.
-
-```sql
--- WRONG: Arrow direction doesn't match data
-SELECT Employee.Name, Manager.Name
-FROM Person AS Employee, ReportsTo AS r, Person AS Manager
-WHERE MATCH(Employee<-(r)-Manager);  -- Looking for edges TO Employee
-
--- CORRECT: Match the direction edges were inserted
-WHERE MATCH(Employee-(r)->Manager);  -- Edges go FROM Employee TO Manager
-```
-
-Always verify how edges were inserted. If you inserted `$from_id` as Employee and `$to_id` as Manager, the arrow must point from Employee to Manager.
-
-### Reusing edge aliases in the same `MATCH`
-
-Each edge alias can only appear once in a `MATCH` pattern. If you need to traverse the same edge type multiple times, create separate aliases for each traversal.
-
-```sql
--- WRONG: Same edge alias 'k' used twice
-SELECT p1.Name, p3.Name
-FROM Person p1, Knows k, Person p2, Knows k, Person p3
-WHERE MATCH(p1-(k)->p2-(k)->p3);
-
--- CORRECT: Use different aliases for each edge traversal
-FROM Person p1, Knows k1, Person p2, Knows k2, Person p3
-WHERE MATCH(p1-(k1)->p2-(k2)->p3);
-```
-
-### Forgetting `FOR PATH` with `SHORTEST_PATH`
-
-When using `SHORTEST_PATH` for variable-length traversals, you must mark the edge and node tables with `FOR PATH`. Without this keyword, the query fails.
-
-```sql
--- WRONG: Missing FOR PATH keywords
-SELECT ...
-FROM Person AS Start, Knows AS k, Person AS p
-WHERE MATCH(SHORTEST_PATH(Start(-(k)->p)+));
-
--- CORRECT: Add FOR PATH to variable-length tables
-FROM Person AS Start, Knows FOR PATH AS k, Person FOR PATH AS p
-WHERE MATCH(SHORTEST_PATH(Start(-(k)->p)+));
-```
-
-### Missing `$node_id` in edge inserts
-
-Edge tables require the internal `$node_id` values, not your business key columns. Inserting regular column values causes the edge to reference nonexistent nodes.
-
-```sql
--- WRONG: Using regular column values instead of $node_id
-INSERT INTO Knows ($from_id, $to_id)
-VALUES (1, 2);  -- These are PersonID values, not $node_id
-
--- CORRECT: Select the $node_id from the node tables
-INSERT INTO Knows ($from_id, $to_id)
-SELECT 
-    (SELECT $node_id FROM Person WHERE PersonID = 1),
-    (SELECT $node_id FROM Person WHERE PersonID = 2);
-```
+| Challenge | Cause | Solution |
+|-----------|-------|----------|
+| Query returns no results | Arrow direction in `MATCH` pattern doesn't match how edges were inserted | Verify how edges were inserted. If `$from_id` is Employee and `$to_id` is Manager, the arrow must point from Employee to Manager. |
+| Syntax error with repeated edge | Same edge alias used multiple times in one `MATCH` pattern | Create separate aliases for each traversal of the same edge type. |
+| `SHORTEST_PATH` query fails | Edge and node tables not marked with `FOR PATH` | Add `FOR PATH` keyword to all tables participating in variable-length matching. |
+| Edge references nonexistent nodes | Business key columns used instead of `$node_id` values | Use subqueries to select `$node_id` from node tables when inserting edges. |
 
 > [!NOTE]
 > Graph tables and the `MATCH` operator are available in SQL Server 2017 and later, and Azure SQL Database. The `SHORTEST_PATH` function requires SQL Server 2019 or later. Check your platform's documentation for specific feature availability.

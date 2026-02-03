@@ -1,12 +1,12 @@
 Consider a scenario where your e-commerce application stores customer preferences and order metadata as JSON documents. A mobile app sends shopping cart data in JSON format, and your reporting system needs to export product catalogs as JSON for a web API. Working directly with JSON in your database eliminates the need for application-layer transformations and keeps your data processing efficient.
 
-SQL Server, Azure SQL, and SQL databases in Microsoft Fabric provide built-in JSON support that lets you parse, query, create, and transform JSON data directly in T-SQL. In this unit, you'll learn how to use JSON functions to extract values, construct JSON output, aggregate data into JSON arrays, and validate JSON content.
+SQL Server, Azure SQL, and SQL databases in Fabric provide built-in JSON support that lets you parse, query, create, and transform JSON data directly in T-SQL. In this unit, you'll learn how to use JSON functions to extract values, construct JSON output, aggregate data into JSON arrays, and validate JSON content.
 
 ## Extract values with JSON_VALUE and JSON_QUERY
 
 When working with JSON stored in your database, you need to extract specific values for filtering, joining, or displaying. SQL Server provides two functions for this purpose:
 
-**JSON_VALUE()** extracts a scalar value (string, number, boolean) from a JSON string:
+**`JSON_VALUE()`** extracts a scalar value (string, number, boolean) from a JSON string:
 
 ```sql
 DECLARE @json NVARCHAR(MAX) = N'{
@@ -24,6 +24,8 @@ SELECT
     JSON_VALUE(@json, '$.orderTotal') AS OrderTotal;
 ```
 
+The result set will be:
+
 ```
 CustomerID   CustomerName   OrderTotal
 ----------   ------------   ----------
@@ -32,7 +34,7 @@ CustomerID   CustomerName   OrderTotal
 
 The function navigates the JSON structure using the path expression and returns the value as an `NVARCHAR(4000)` string. You can cast the result to other data types as needed for calculations or comparisons.
 
-**JSON_QUERY()** extracts a JSON object or array (nonscalar values):
+**`JSON_QUERY()`** extracts a JSON object or array (nonscalar values):
 
 ```sql
 DECLARE @json NVARCHAR(MAX) = N'{
@@ -51,6 +53,8 @@ SELECT
     JSON_QUERY(@json, '$.items') AS ItemsArray;
 ```
 
+The result set will be:
+
 ```
 CustomerObject                          ItemsArray
 --------------------------------------  ------------------------------------------------
@@ -59,12 +63,14 @@ CustomerObject                          ItemsArray
 
 Unlike `JSON_VALUE()`, `JSON_QUERY()` preserves the JSON structure, returning objects and arrays as valid JSON strings that you can store, pass to other functions, or return to applications.
 
-The path expression uses `$` to represent the root element, with dot notation for nested properties and bracket notation for array elements:
+The path expression uses `$` to represent the root element, with dot notation for nested properties and bracket notation for array elements, like in the following example:
 
 ```sql
 -- Access array elements by index (0-based)
 SELECT JSON_VALUE(@json, '$.items[0].product') AS FirstProduct;
 ```
+
+The result will be:
 
 ```
 FirstProduct
@@ -77,11 +83,11 @@ Array indices start at 0, so `$.items[0]` refers to the first element. Use this 
 > [!TIP]
 > Use `JSON_VALUE()` when you need a scalar value for comparisons or calculations. Use `JSON_QUERY()` when you need to preserve the JSON structure of nested objects or arrays.
 
-## Parse JSON arrays with OPENJSON
+## Parse JSON arrays with `OPENJSON`
 
 `OPENJSON` is a table-valued function that transforms JSON data into a relational rowset. Use this function to join JSON data with relational tables or process array elements individually.
 
-Parse a JSON array into rows with default schema:
+The following query parses a JSON array into rows with default schema:
 
 ```sql
 DECLARE @json NVARCHAR(MAX) = N'[
@@ -93,6 +99,8 @@ DECLARE @json NVARCHAR(MAX) = N'[
 SELECT * FROM OPENJSON(@json);
 ```
 
+The result set will be:
+
 ```
 key   value                                          type
 ---   --------------------------------------------   ----
@@ -103,7 +111,7 @@ key   value                                          type
 
 Without a schema, `OPENJSON` returns three columns: `key` (the array index or property name), `value` (the JSON content), and `type` (a number indicating the JSON data type: 0=null, 1=string, 2=number, 3=boolean, 4=array, 5=object).
 
-Define an explicit schema to extract specific columns with proper data types:
+The following query defines an explicit schema to extract specific columns with proper data types:
 
 ```sql
 SELECT 
@@ -117,6 +125,8 @@ WITH (
     Price DECIMAL(10,2) '$.price'
 );
 ```
+
+The result set will be:
 
 ```
 ProductID   ProductName   Price
@@ -150,11 +160,11 @@ WITH (
 > [!NOTE]
 > When using `OPENJSON` with `CROSS APPLY`, rows from the main table that have `NULL` or empty JSON values don't appear in the results. Use `OUTER APPLY` if you need to include rows with no JSON data.
 
-## Construct JSON with JSON_OBJECT and JSON_ARRAY
+## Construct JSON with `JSON_OBJECT` and `JSON_ARRAY`
 
-SQL Server 2022 and Azure SQL Database introduced `JSON_OBJECT` and `JSON_ARRAY` functions for intuitive JSON construction:
+SQL Server 2022 introduced `JSON_OBJECT` and `JSON_ARRAY` functions for intuitive JSON construction:
 
-**`JSON_OBJECT()`** creates a JSON object from key-value pairs:
+**`JSON_OBJECT()`** creates a JSON object from key-value pairs, the following example shows how to build a JSON object for a product:
 
 ```sql
 SELECT JSON_OBJECT(
@@ -167,6 +177,8 @@ FROM SalesLT.Product
 WHERE ProductID = 680;
 ```
 
+The result will be:
+
 ```
 ProductJson
 ---------------------------------------------------------------------------
@@ -175,7 +187,7 @@ ProductJson
 
 The function automatically handles data type conversion and proper JSON escaping for special characters in string values.
 
-**`JSON_ARRAY()`** creates a JSON array from values:
+**`JSON_ARRAY()`** creates a JSON array from values, the following example builds a JSON array:
 
 ```sql
 SELECT JSON_ARRAY(
@@ -185,6 +197,8 @@ SELECT JSON_ARRAY(
 ) AS Platforms;
 ```
 
+The result will be:
+
 ```
 Platforms
 ---------------------------------------------------------
@@ -193,7 +207,7 @@ Platforms
 
 You can pass column values, variables, or literal values to `JSON_ARRAY()`. The function creates a properly formatted JSON array regardless of the input types.
 
-Combine these functions to build nested JSON structures:
+Then, combine these functions to build nested JSON structures. The following example constructs a complete order JSON object with customer and totals information:
 
 ```sql
 SELECT JSON_OBJECT(
@@ -214,6 +228,8 @@ INNER JOIN SalesLT.Customer AS c
     ON soh.CustomerID = c.CustomerID
 WHERE soh.SalesOrderID = 71774;
 ```
+
+The result will be:
 
 ```
 OrderJson
@@ -238,6 +254,8 @@ INNER JOIN SalesLT.SalesOrderHeader AS soh
 GROUP BY c.CustomerID, c.CompanyName;
 ```
 
+The result will be:
+
 ```
 CustomerID   CompanyName           OrderIds
 ----------   -------------------   ------------------
@@ -247,7 +265,7 @@ CustomerID   CompanyName           OrderIds
 
 The function collects all matching values from the grouped rows and combines them into a single JSON array. This is useful for creating denormalized API responses from normalized database tables.
 
-Combine with `JSON_OBJECT` to create arrays of complex objects:
+You can combine `JSON_ARRAYAGG` with `JSON_OBJECT` to create arrays of complex objects:
 
 ```sql
 SELECT 
@@ -265,6 +283,8 @@ INNER JOIN SalesLT.Product AS p
 GROUP BY pc.ProductCategoryID, pc.Name;
 ```
 
+The following result will be:
+
 ```
 Category        Products
 --------------  --------------------------------------------------------------------------
@@ -277,11 +297,13 @@ Mountain Bikes  [{"id":771,"name":"Mountain-100 Silver, 38","price":3399.99},{"i
 
 ## Validate and check JSON with `JSON_CONTAINS`
 
-Before extracting values, you may need to validate JSON content or check for specific values. Understanding path modes also helps you handle missing or invalid paths gracefully.
+JSON data from external sources can be malformed, missing expected properties, or contain unexpected values. Attempting to extract values from invalid JSON or missing paths can cause query failures or return misleading `NULL` results that mask data problems.
+
+Robust JSON processing requires defensive coding: validate that the JSON is well-formed before parsing it, check that expected paths exist before extracting values, and verify that values match your expectations before using them in business logic. SQL Server provides several functions to help you validate JSON content at each stage of processing.
 
 ### Understand lax vs strict path modes
 
-JSON path expressions support two modes that control error handling:
+You can use JSON path expressions in two modes that control error handling:
 
 ```sql
 DECLARE @json NVARCHAR(MAX) = N'{"name": "Widget", "price": 29.99}';
@@ -293,6 +315,8 @@ SELECT JSON_VALUE(@json, 'lax $.description') AS LaxResult;
 SELECT JSON_VALUE(@json, 'strict $.description') AS StrictResult;
 ```
 
+The result will be:
+
 ```
 LaxResult
 ---------
@@ -303,7 +327,7 @@ NULL
 
 Use `lax` mode (the default) when missing properties are expected and should return `NULL`. Use `strict` mode when missing properties indicate a data problem that should raise an error.
 
-**ISJSON** validates whether a string contains valid JSON:
+**`ISJSON`** validates whether a string contains valid JSON. The following example shows how to use `ISJSON`:
 
 ```sql
 SELECT 
@@ -311,6 +335,8 @@ SELECT
     ISJSON('not valid json') AS InvalidJson,       -- Returns 0
     ISJSON(NULL) AS NullJson;                      -- Returns NULL
 ```
+
+The result will be:
 
 ```
 ValidJson   InvalidJson   NullJson
@@ -320,7 +346,7 @@ ValidJson   InvalidJson   NullJson
 
 Use `ISJSON` in `WHERE` clauses to filter rows with valid JSON, or in `CASE` expressions to handle invalid data gracefully.
 
-**`JSON_PATH_EXISTS`** checks whether a specific path exists in a JSON document:
+**`JSON_PATH_EXISTS`** checks whether a specific path exists in a JSON document, like the following example:
 
 ```sql
 DECLARE @json NVARCHAR(MAX) = N'{"customer": {"name": "Contoso", "tier": "Gold"}}';
@@ -330,6 +356,8 @@ SELECT
     JSON_PATH_EXISTS(@json, '$.customer.email') AS HasEmail;
 ```
 
+The result will be:
+
 ```
 HasName   HasEmail
 -------   --------
@@ -338,7 +366,7 @@ HasName   HasEmail
 
 This function returns 1 if the path exists, 0 if it doesn't. Use it before calling `JSON_VALUE` in strict mode, or to conditionally process JSON with varying structures.
 
-Use `JSON_CONTAINS` to check if a JSON document contains a specific value or object:
+Use `JSON_CONTAINS` to check if a JSON document contains a specific value or object, like the following example:
 
 ```sql
 DECLARE @json NVARCHAR(MAX) = N'{"tags": ["sql", "database", "azure"]}';
@@ -347,6 +375,8 @@ SELECT
     JSON_CONTAINS(@json, '"sql"', '$.tags') AS HasSqlTag,
     JSON_CONTAINS(@json, '"python"', '$.tags') AS HasPythonTag;
 ```
+
+The result will be:
 
 ```
 HasSqlTag   HasPythonTag
@@ -370,7 +400,7 @@ Without optimization, even simple filters require full table scans with JSON par
 
 ### Create computed columns for JSON properties
 
-A computed column automatically extracts a JSON property and makes it available as a regular column:
+A computed column automatically extracts a JSON property and makes it available as a regular column, like the following example:
 
 ```sql
 -- Add a computed column that extracts a JSON property
@@ -383,6 +413,8 @@ FROM Products
 WHERE ProductCategory = 'Electronics';
 ```
 
+The result will be:
+
 ```
 ProductID   ProductName           ProductCategory
 ---------   -------------------   ---------------
@@ -391,7 +423,7 @@ ProductID   ProductName           ProductCategory
 103         HD Monitor            Electronics
 ```
 
-By default, computed columns are virtual. The database calculates the value at query time but can optimize the JSON extraction. For even better performance, you can persist the computed column:
+By default, computed columns are virtual. The database calculates the value at query time but can optimize the JSON extraction. For even better performance, you can persist the computed column like in the following example:
 
 ```sql
 -- Persisted computed column stores the extracted value physically
@@ -457,6 +489,8 @@ WHERE p.ListPrice > 1000
 FOR JSON PATH, ROOT('products');
 ```
 
+The result will be:
+
 ```
 {"products":[{"ProductID":749,"Name":"Road-150 Red, 62","ListPrice":3578.27,"CategoryName":"Road Bikes"},{"ProductID":750,"Name":"Road-150 Red, 44","ListPrice":3578.27,"CategoryName":"Road Bikes"}]}
 ```
@@ -474,6 +508,8 @@ INNER JOIN SalesLT.ProductCategory AS pc
 WHERE p.ProductID = 680
 FOR JSON PATH;
 ```
+
+The result will be:
 
 ```
 [{"product":{"id":680,"name":"HL Road Frame - Black, 58","category":"Road Frames"}}]

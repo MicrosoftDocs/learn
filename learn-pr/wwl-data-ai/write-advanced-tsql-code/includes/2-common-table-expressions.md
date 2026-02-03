@@ -169,34 +169,42 @@ Recursive CTEs excel at generating sequences of numbers or dates without requiri
 -- Generate a sequence of dates for the current month
 WITH DateSequence AS
 (
+    -- Anchor: Get the first day of the current month
     SELECT CAST(DATEADD(MONTH, DATEDIFF(MONTH, 0, GETDATE()), 0) AS DATE) AS DateValue
     
     UNION ALL
     
+    -- Recursive: Add one day until we reach the end of the month
     SELECT DATEADD(DAY, 1, DateValue)
     FROM DateSequence
     WHERE DateValue < EOMONTH(GETDATE())
 )
+-- Output each date with its day name
 SELECT DateValue, DATENAME(WEEKDAY, DateValue) AS DayName
 FROM DateSequence
-OPTION (MAXRECURSION 31);
+OPTION (MAXRECURSION 31);  -- Allow up to 31 iterations (max days in a month)
 ```
 
 You can combine generated sequences with actual data to identify gaps or create summary reports:
 
 ```sql
+-- Generate a numbers table from 1 to 1000
 WITH Numbers AS
 (
+    -- Anchor: Start with 1
     SELECT 1 AS n
     UNION ALL
+    -- Recursive: Increment until we reach 1000
     SELECT n + 1 FROM Numbers WHERE n < 1000
 ),
+-- Convert numbers to dates for the entire year
 DateRange AS
 (
     SELECT DATEADD(DAY, n - 1, '2024-01-01') AS OrderDate
     FROM Numbers
     WHERE DATEADD(DAY, n - 1, '2024-01-01') <= '2024-12-31'
 )
+-- Count orders for each date, showing 0 for dates with no orders
 SELECT 
     dr.OrderDate,
     COALESCE(COUNT(soh.SalesOrderID), 0) AS OrderCount
@@ -205,7 +213,7 @@ LEFT JOIN SalesLT.SalesOrderHeader AS soh
     ON CAST(soh.OrderDate AS DATE) = dr.OrderDate
 GROUP BY dr.OrderDate
 ORDER BY dr.OrderDate
-OPTION (MAXRECURSION 366);
+OPTION (MAXRECURSION 366);  -- Allow up to 366 iterations (leap year)
 ```
 
 ## Use CTEs with data modification statements

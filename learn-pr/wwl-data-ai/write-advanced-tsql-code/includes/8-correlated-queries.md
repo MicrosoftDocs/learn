@@ -28,23 +28,6 @@ In the noncorrelated example, the subquery calculates a single average price acr
 
 In the correlated example, the subquery references `p1.ProductCategoryID` from the outer query. This creates a dependency: for each product row, the subquery calculates the average price for that specific category. A product in the "Bikes" category is compared against the bikes average, while a product in "Accessories" is compared against the accessories average.
 
-```
-Execution flow for correlated subquery:
-┌──────────────────────────────────────────────────────────────┐
-│ Outer query processes Row 1 (Mountain Bike, Category: Bikes) │
-│   → Subquery calculates AVG for Bikes category = $1,500      │
-│   → Compare: $2,000 > $1,500? Yes → Include in results       │
-├──────────────────────────────────────────────────────────────┤
-│ Outer query processes Row 2 (Water Bottle, Category: Access) │
-│   → Subquery calculates AVG for Accessories category = $15   │
-│   → Compare: $10 > $15? No → Exclude from results            │
-├──────────────────────────────────────────────────────────────┤
-│ Outer query processes Row 3 (Road Bike, Category: Bikes)     │
-│   → Subquery calculates AVG for Bikes category = $1,500      │
-│   → Compare: $1,200 > $1,500? No → Exclude from results      │
-└──────────────────────────────────────────────────────────────┘
-```
-
 > [!NOTE]
 > The query optimizer often transforms correlated subqueries into equivalent joins internally. However, understanding the logical correlated behavior helps you write correct queries, even when the physical execution differs.
 
@@ -71,7 +54,9 @@ WHERE p.ListPrice > (
 ORDER BY pc.Name, p.ListPrice DESC;
 ```
 
-You can apply the same pattern to identify customers whose behavior differs from their personal baseline. The following query finds customers who have placed at least one order that exceeds their own average order value, which helps identify unusual purchasing patterns or high-value transactions:
+You can apply the same pattern to identify customers whose behavior differs from their personal baseline. 
+
+The following query finds customers who have placed at least one order that exceeds their own average order value, which helps identify unusual purchasing patterns or high-value transactions:
 
 ```sql
 SELECT DISTINCT
@@ -114,7 +99,9 @@ WHERE NOT EXISTS (
 );
 ```
 
-`EXISTS` becomes even more valuable when you need to check complex conditions that combine multiple criteria. You can add any filtering logic inside the subquery, and the outer query will include only rows where at least one matching related row exists. The following examples demonstrate finding products with high-quantity orders and categories where every product meets a price threshold:
+`EXISTS` becomes even more valuable when you need to check complex conditions that combine multiple criteria. You can add any filtering logic inside the subquery, and the outer query will include only rows where at least one matching related row exists. 
+
+The following examples demonstrate finding products with high-quantity orders and categories where every product meets a price threshold:
 
 ```sql
 -- Find products that have been ordered in quantities greater than 10
@@ -141,7 +128,7 @@ WHERE NOT EXISTS (
 > [!TIP]
 > `EXISTS` typically outperforms `IN` with subqueries, especially when checking for existence in large tables. The optimizer can stop after finding the first match with `EXISTS`, while `IN` may need to retrieve all matching values.
 
-## Calculate values with correlated subqueries in SELECT
+## Calculate values with correlated subqueries in `SELECT`
 
 Correlated subqueries in the `SELECT` clause calculate a separate value for each row in your result set. This pattern lets you include aggregated or derived values from related tables alongside the main row's details, without collapsing the result into groups.
 
@@ -263,37 +250,14 @@ ORDER BY soh.CustomerID, soh.OrderDate;
 
 ## Choose between correlated subqueries and alternatives
 
-Correlated subqueries aren't always the best approach. Understanding when to use them versus joins, window functions, or CTEs helps you write more efficient and maintainable queries.
+Correlated subqueries aren't always the best approach. The following table helps you choose the right technique:
 
-### Use correlated subqueries when
-
-The following table summarizes scenarios where correlated subqueries are the preferred approach:
-
-| Scenario | Why correlated subqueries work best | Example use case |
-|----------|-------------------------------------|------------------|
-| **Compare against row-specific calculated values** | Each row needs its own dynamically calculated comparison value based on that row's attributes. Joins would require preaggregating all possible groups. | Find products priced above their own category's average. A $50 accessory might be expensive for its category while a $500 bike might be cheap for its category. |
-| **Test for related records with EXISTS/NOT EXISTS** | `EXISTS` is optimized for correlated subqueries and stops searching after finding the first match. More efficient than `IN` for large datasets. | Find customers who have never placed an order, or products that have never been sold. |
-| **Apply dynamic filtering based on current row values** | The filter criteria change based on each row's values, requiring conditions that can't be expressed with static joins. | Find each customer's most recent order that exceeds $500. The "most recent" and "$500 threshold" criteria apply per-customer. |
-| **Retrieve a single related value per row** | You need exactly one value from a related table for each row, with complex selection logic (TOP 1, specific ordering). | Show each employee alongside their most recent performance review score. |
-| **Check universal conditions (all/none)** | `NOT EXISTS` elegantly expresses "there are no exceptions" logic that would require awkward outer joins otherwise. | Find categories where ALL products are priced above $100 (no product exists with price ≤ $100). |
-
-### Use joins instead when
-
-Joins are typically a better choice when you need data from multiple tables in your result set. If you're retrieving columns from both a parent and child table, a `JOIN` is cleaner and more efficient than embedding a correlated subquery in the `SELECT` clause to fetch each related value separately.
-
-Joins also outperform correlated subqueries when the relationship is straightforward and doesn't require per-row calculations. For simple one-to-many relationships like customers to orders or products to categories, a standard `INNER JOIN` or `LEFT JOIN` lets the optimizer choose the most efficient execution plan without the overhead of repeated subquery evaluation.
-
-### Use window functions instead when
-
-Window functions are the better choice when you need to run totals, rankings, or comparisons across rows within a partition. Functions like `ROW_NUMBER()`, `RANK()`, and `DENSE_RANK()` express ranking logic more clearly and efficiently than correlated subqueries that count how many rows have higher values. The query optimizer can process window functions in a single pass over the data, whereas correlated subqueries might require repeated scans.
-
-Window functions also excel at accessing values from previous or next rows. The `LAG()` and `LEAD()` functions retrieve values from adjacent rows with simple, readable syntax, while the equivalent correlated subquery requires `TOP 1` with complex ordering logic. Unless you need to filter conditions that window functions can't express, prefer the window function approach for consecutive row comparisons.
-
-### Use CTEs instead when
-
-Common Table Expressions (CTEs) are preferable when you need to reference the same calculated result multiple times in your query. If you're using identical correlated subqueries in multiple places, such as calculating a category average for both display and comparison, the database might execute that subquery repeatedly. A CTE calculates the result once and lets you join to it multiple times.
-
-CTEs also improve readability for complex queries by breaking the logic into named, logical steps. Instead of nesting correlated subqueries that are hard to follow, you can define intermediate results with meaningful names and then combine them in the final `SELECT`. This approach makes queries easier to understand, debug, and maintain.
+| Use this approach | When you need to... |
+|-------------------|---------------------|
+| **Correlated subqueries** | Compare each row against a dynamically calculated value based on that row's attributes, test for existence with `EXISTS`/`NOT EXISTS`, or retrieve exactly one related value per row with complex selection logic. |
+| **Joins** | Retrieve columns from multiple tables, or when relationships are straightforward without per-row calculations. |
+| **Window functions** | Calculate running totals, rankings, or access previous/next rows with `LAG()`/`LEAD()`. More efficient than correlated subqueries for these patterns. |
+| **CTEs** | Reference the same calculated result multiple times, or break complex logic into named, readable steps. |
 
 ## Performance considerations
 
