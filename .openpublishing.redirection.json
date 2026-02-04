@@ -64226,6 +64226,91 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/azure/run-clustered-applications-azure-shared-disks/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/disks-shared",
+      "redirect_document_id": false
+    }, 
+    {
+      "source_path": "learn-pr/azure/run-clustered-applications-azure-shared-disks/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/disks-shared",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/run-clustered-applications-azure-shared-disks/2-define-azure-shared-disks.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/disks-shared",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/run-clustered-applications-azure-shared-disks/3-create-use-azure-shared-disks.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/disks-shared",
+      "redirect_document_id": false
+    }, 
+    {
+      "source_path": "learn-pr/azure/run-clustered-applications-azure-shared-disks/4-identify-benefits-limitations-azure-shared-disks.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/disks-shared",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/run-clustered-applications-azure-shared-disks/5-exercise-deploy-clustered-vms-azure-shared-disks.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/disks-shared",
+      "redirect_document_id": false
+    },  
+    {
+      "source_path": "learn-pr/azure/run-clustered-applications-azure-shared-disks/6-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/disks-shared",
+      "redirect_document_id": false
+    }, 
+    {
+      "source_path": "learn-pr/azure/run-clustered-applications-azure-shared-disks/7-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/disks-shared",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/run-docker-with-azure-container-instances/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/container-instances/container-instances-quickstart",
+      "redirect_document_id": false
+    },  
+    {
+      "source_path": "learn-pr/azure/run-docker-with-azure-container-instances/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/container-instances/container-instances-quickstart",
+      "redirect_document_id": false
+    }, 
+    {
+      "source_path": "learn-pr/azure/run-docker-with-azure-container-instances/2-run-aci.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/container-instances/container-instances-quickstart",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/run-docker-with-azure-container-instances/3-restart-policies.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/container-instances/container-instances-quickstart",
+      "redirect_document_id": false
+    },  
+    {
+      "source_path": "learn-pr/azure/run-docker-with-azure-container-instances/4-use-environment-variables.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/container-instances/container-instances-quickstart",
+      "redirect_document_id": false
+    }, 
+    {
+      "source_path": "learn-pr/azure/run-docker-with-azure-container-instances/5-use-data-volumes.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/container-instances/container-instances-quickstart",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/run-docker-with-azure-container-instances/6-troubleshoot-aci.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/container-instances/container-instances-quickstart",
+      "redirect_document_id": false
+    },  
+    {
+      "source_path": "learn-pr/azure/run-docker-with-azure-container-instances/7-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/container-instances/container-instances-quickstart",
+      "redirect_document_id": false
+    }, 
+    {
+      "source_path": "learn-pr/azure/run-docker-with-azure-container-instances/8-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/container-instances/container-instances-quickstart",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/azure/modify-azure-resource-manager-template-reuse/index.yml",
       "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/templates/overview",
       "redirect_document_id": false

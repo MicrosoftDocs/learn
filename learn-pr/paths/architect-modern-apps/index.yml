@@ -26,7 +26,6 @@ subjects:
 - cloud-computing
 modules:
 - learn.intro-to-containers
-- learn.run-docker-containers-aci
 - learn.azure-container-registry
 - learn.host-a-web-application-with-azure-web-apps
 - learn.intro-to-azure-kubernetes-service
