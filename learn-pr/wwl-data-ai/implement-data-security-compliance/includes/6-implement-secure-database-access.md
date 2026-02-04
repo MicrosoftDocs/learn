@@ -1,4 +1,4 @@
-Secure database access extends beyond granting permissions to the right users. Modern applications require authentication methods that minimize credential exposure while maintaining operational flexibility. Passwordless authentication using Microsoft Entra ID (formerly Azure Active Directory) provides a more secure approach than traditional SQL authentication with usernames and passwords.
+Secure database access extends beyond granting permissions to the right users. Modern applications require authentication methods that minimize credential exposure while maintaining operational flexibility. Passwordless authentication using Microsoft Entra ID provides a more secure approach than traditional SQL authentication with usernames and passwords.
 
 Moving to passwordless authentication eliminates the risks associated with password management, including credential theft, password reuse, and the operational burden of rotating secrets. This unit explores how to implement secure, passwordless database access across SQL Server, Azure SQL, and SQL databases in Microsoft Fabric.
 
@@ -10,11 +10,11 @@ SQL authentication uses a username and password stored in the database. While st
 
 Windows authentication (for on-premises SQL Server) uses Active Directory credentials. Users authenticate to the domain, and SQL Server trusts that authentication. This approach works well for applications running on domain-joined servers.
 
-Microsoft Entra authentication extends identity integration to cloud scenarios. Applications can authenticate using Entra ID credentials, managed identities, or service principals. This method works with Azure SQL Database, Azure SQL Managed Instance, SQL Server 2022+, and SQL databases in Microsoft Fabric.
+Microsoft Entra authentication extends identity integration to cloud scenarios. Applications can authenticate using Microsoft Entra ID credentials, managed identities, or service principals. This method works with Azure SQL Database, Azure SQL Managed Instance, SQL Server 2022+, and SQL databases in Microsoft Fabric.
 
 ## Configure Microsoft Entra authentication
 
-To use Entra authentication with Azure SQL Database, first set an Entra administrator for the logical server:
+To use Microsoft Entra authentication with Azure SQL Database, first set a Microsoft Entra administrator for the logical server:
 
 ```sql
 -- Connect using the Entra admin account, then create database users
@@ -23,7 +23,7 @@ CREATE USER [developer@contoso.com] FROM EXTERNAL PROVIDER;
 CREATE USER [DataAnalystsGroup] FROM EXTERNAL PROVIDER;
 ```
 
-The `FROM EXTERNAL PROVIDER` clause tells SQL to look up the identity in Microsoft Entra ID. You can create users for individual accounts, managed identities, or Entra groups.
+The `FROM EXTERNAL PROVIDER` clause tells SQL to look up the identity in Microsoft Entra ID. You can create users for individual accounts, managed identities, or Microsoft Entra groups.
 
 Grant permissions to these Entra-based users just like SQL users:
 
@@ -32,7 +32,7 @@ ALTER ROLE db_datareader ADD MEMBER [developer@contoso.com];
 ALTER ROLE db_datawriter ADD MEMBER [app-service-identity];
 ```
 
-For SQL Server 2022 and later, enable Entra authentication through server configuration:
+For SQL Server 2022 and later, enable Microsoft Entra authentication through server configuration:
 
 ```sql
 -- Enable Azure AD authentication on SQL Server 2022
@@ -59,7 +59,7 @@ ALTER ROLE db_datareader ADD MEMBER [MyWebApp];
 ALTER ROLE db_datawriter ADD MEMBER [MyWebApp];
 ```
 
-Update your application connection string to use Entra authentication:
+Update your application connection string to use Microsoft Entra authentication:
 
 ```
 Server=myserver.database.windows.net;Database=mydb;Authentication=Active Directory Managed Identity;
@@ -111,9 +111,9 @@ await connection.OpenAsync();
 
 ## Implement contained database users
 
-Contained database users exist only within the database, without requiring a server-level login. This approach simplifies deployment and supports database portability across servers.
+Contained database users exist only within the database, without requiring a server-level sign-in. This approach simplifies deployment and supports database portability across servers.
 
-Create a contained user with a password when Entra authentication isn't available:
+Create a contained user with a password when Microsoft Entra authentication isn't available:
 
 ```sql
 CREATE USER AppUser WITH PASSWORD = 'ComplexPassword123!';
@@ -154,4 +154,4 @@ A secure connection string for Azure SQL with managed identity:
 Server=tcp:myserver.database.windows.net,1433;Database=mydb;Authentication=Active Directory Managed Identity;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;
 ```
 
-For SQL databases in Microsoft Fabric, connections use Entra authentication through the workspace identity. Configure access by adding Entra users or groups to workspace roles, which automatically grants appropriate database permissions.
+For SQL databases in Microsoft Fabric, connections use Microsoft Entra authentication through the workspace identity. Configure access by adding Microsoft Entra users or groups to workspace roles, which automatically grant appropriate database permissions.

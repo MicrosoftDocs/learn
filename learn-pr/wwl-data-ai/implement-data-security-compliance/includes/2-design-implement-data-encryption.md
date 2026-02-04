@@ -8,7 +8,7 @@ Database encryption operates at different layers, each addressing specific secur
 
 :::image type="content" source="../media/encryption.png" alt-text="Diagram comparing three encryption layers: TDE at the database file level, column-level encryption at specific columns, and Always Encrypted with encryption keys held outside the database at the client application level.":::
 
-With TDE enabled, SQL Server automatically encrypts the database files, transaction logs, and backups. The encryption happens transparently to applications, requiring no code changes. TDE uses a database encryption key protected by a certificate stored in the master database.
+With TDE enabled, SQL Server automatically encrypts the database files, transaction logs, and backups. The encryption happens transparently to applications, requiring no code changes. TDE uses a database encryption key protected by a certificate stored in the `master` database.
 
 Unlike TDE, column-level encryption requires you to explicitly encrypt and decrypt data in your T-SQL code or application. This approach gives you granular control over which columns contain sensitive data and who can decrypt them.
 
@@ -16,7 +16,7 @@ Always Encrypted takes a different approach by keeping encryption keys outside t
 
 ## Configure Always Encrypted
 
-Always Encrypted protects sensitive data by ensuring the database engine never processes plaintext values. Client applications hold the encryption keys and perform all encryption and decryption operations. This separation means that even users with administrative access to the database cannot view the protected data.
+Always Encrypted protects sensitive data by ensuring the database engine never processes plaintext values. Client applications hold the encryption keys and perform all encryption and decryption operations. This separation means that even users with administrative access to the database can't view the protected data.
 
 :::image type="content" source="../media/ae-data-flow.png" alt-text="Diagram showing the data flow for Always Encrypted, where client applications encrypt and decrypt data while the database engine only processes ciphertext.":::
 

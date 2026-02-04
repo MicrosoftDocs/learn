@@ -12,7 +12,7 @@ SQL Server Audit uses the Extended Events infrastructure to record activity. You
 
 Azure SQL Database auditing writes to Azure Blob Storage, Log Analytics, or Event Hubs. The managed service handles the audit infrastructure, letting you focus on configuring what to audit rather than managing storage.
 
-SQL databases in Microsoft Fabric use Fabric's activity logging and Microsoft Purview for audit data. The integration with Microsoft 365 compliance tools provides unified auditing across your data estate.
+SQL databases in Microsoft Fabric use Fabric's activity logging and Microsoft Purview for audit data. The integration with Microsoft Purview tools provides unified auditing across your data estate.
 
 ## Configure SQL Server auditing
 
@@ -26,7 +26,7 @@ TO FILE (FILEPATH = 'C:\AuditLogs\', MAXSIZE = 100 MB, MAX_ROLLOVER_FILES = 10)
 WITH (QUEUE_DELAY = 1000, ON_FAILURE = CONTINUE);
 ```
 
-The `QUEUE_DELAY` parameter specifies how many milliseconds to buffer events before writing. Lower values provide more real-time logging but may impact performance. The `ON_FAILURE` setting determines behavior when audit writing fails. Use `SHUTDOWN` for critical compliance scenarios where missing audit records is unacceptable.
+The `QUEUE_DELAY` parameter specifies how many milliseconds to buffer events before writing. Lower values provide more real-time logging but can affect performance. The `ON_FAILURE` setting determines behavior when audit writing fails. Use `SHUTDOWN` for critical compliance scenarios where missing audit records is unacceptable.
 
 Enable the audit:
 
@@ -100,20 +100,24 @@ For more granular control, configure auditing through Azure Policy or ARM templa
 Choose audit actions based on your security and compliance requirements. Common action groups include:
 
 **Authentication events:**
+
 - `SUCCESSFUL_DATABASE_AUTHENTICATION_GROUP` - Successful logins
-- `FAILED_DATABASE_AUTHENTICATION_GROUP` - Failed login attempts
+- `FAILED_DATABASE_AUTHENTICATION_GROUP` - Failed sign-in attempts
 
 **Permission changes:**
+
 - `DATABASE_PERMISSION_CHANGE_GROUP` - Grant, revoke, deny operations
 - `DATABASE_ROLE_MEMBER_CHANGE_GROUP` - Role membership changes
 - `DATABASE_PRINCIPAL_CHANGE_GROUP` - User creation and modification
 
 **Data access:**
+
 - `BATCH_COMPLETED_GROUP` - All completed batches (high volume)
 - `SELECT` on specific objects - Targeted read access monitoring
 - `INSERT`, `UPDATE`, `DELETE` on specific objects - Data modification tracking
 
 **Schema changes:**
+
 - `SCHEMA_OBJECT_CHANGE_GROUP` - Table and object modifications
 - `DATABASE_OBJECT_CHANGE_GROUP` - DDL statements
 
@@ -167,9 +171,9 @@ Audit logs must be protected from tampering and retained according to compliance
 
 For compliance scenarios, consider these retention practices:
 
-- Define retention periods based on regulatory requirements (often 7 years for financial data)
+- Define retention periods based on regulatory requirements (often seven years for financial data)
 - Use immutable storage to prevent log deletion
 - Implement log archival to cold storage for cost management
 - Establish processes for audit log review and alerting
 
-Regular review of audit data helps you identify security issues before they become incidents. Create alerts for failed login attempts, permission changes outside maintenance windows, and unusual data access patterns.
+Regular review of audit data helps you identify security issues before they become incidents. Create alerts for failed sign-in attempts, permission changes outside maintenance windows, and unusual data access patterns.

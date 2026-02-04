@@ -22,7 +22,7 @@ For an Azure SQL Database that needs to call Azure OpenAI, first enable system-a
 SELECT * FROM sys.dm_external_provider_certificate_store;
 ```
 
-Grant the managed identity access to Azure OpenAI in Azure role-based access control (RBAC):
+Grant the managed identity access to Azure OpenAI in Azure role-based access control:
 
 ```powershell
 # Get the managed identity principal ID from Azure SQL
@@ -91,7 +91,7 @@ ALTER ROLE AIFeatureUsers ADD MEMBER [app-service-identity];
 ```
 
 > [!IMPORTANT]
-> Limit which database users can invoke AI endpoints. AI calls often incur costs and may process sensitive data. Use role-based access to control which applications and users can use these features.
+> Limit which database users can invoke AI endpoints. AI calls often incur costs and can process sensitive data. Use role-based access to control which applications and users can use these features.
 
 ## Secure Azure Machine Learning endpoints
 
@@ -169,6 +169,6 @@ ORDER BY CallCount DESC;
 ```
 
 > [!TIP]
-> Set up alerts for unusual AI endpoint usage patterns. Sudden spikes in calls or calls from unexpected principals may indicate compromised credentials or application bugs.
+> Set up alerts for unusual AI endpoint usage patterns. Sudden spikes in calls or calls from unexpected principals can indicate compromised credentials or application bugs.
 
 For SQL databases in Microsoft Fabric, AI endpoint access is managed through workspace permissions and Fabric capacity. Users with appropriate workspace roles can invoke AI features, and usage is tracked through Fabric's monitoring capabilities.

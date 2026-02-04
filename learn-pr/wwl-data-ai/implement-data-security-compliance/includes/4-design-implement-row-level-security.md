@@ -6,19 +6,19 @@ This capability proves valuable when multiple users or tenants share the same ta
 
 Row-Level Security in SQL Server and Azure SQL uses two components working together: security predicates and security policies. Understanding how these components interact helps you design effective RLS implementations.
 
-:::image type="content" source="../media/row-level-security.png" alt-text="Diagram showing Row-Level Security in a multi-tenant database where three users query the same Customers table but each sees only their tenant's rows, filtered by a Security Policy component.":::
+:::image type="content" source="../media/row-level-security.png" alt-text="Diagram showing Row-Level Security in a multitenant database where three users query the same Customers table but each sees only their tenant's rows, filtered by a Security Policy component.":::
 
 A security predicate is an inline table-valued function that returns 1 (true) or 0 (false) for each row. This function receives the current user context and row values as input, then determines whether that user should see the row. The predicate function encapsulates your business logic for data access.
 
 A security policy binds predicate functions to tables and specifies the type of filtering to apply. You can create filter predicates that silently exclude unauthorized rows from query results, or block predicates that prevent unauthorized insert, update, and delete operations.
 
-Filter predicates affect `SELECT`, `UPDATE`, and `DELETE` statements by removing rows the user cannot access. Users don't receive errors; they simply see a filtered result set. Block predicates prevent data modifications that would violate the security rules, raising an error when users attempt unauthorized changes.
+Filter predicates affect `SELECT`, `UPDATE`, and `DELETE` statements by removing rows the user can't access. Users don't receive errors; they see a filtered result set. Block predicates prevent data modifications that would violate the security rules, raising an error when users attempt unauthorized changes.
 
 ## Create filter predicates
 
 Start by creating a predicate function that evaluates row access. The function accepts parameters representing the column values to check and returns a table containing a single row when access is allowed.
 
-Consider a multi-tenant application where each row has a `TenantID` column:
+Consider a multitenant application where each row has a `TenantID` column:
 
 ```sql
 CREATE SCHEMA Security;
@@ -80,7 +80,7 @@ ADD BLOCK PREDICATE Security.fn_SalesRepPredicate(SalesRepID)
 WITH (STATE = ON);
 ```
 
-The block predicates ensure users can only insert or update rows they would be able to see. Without block predicates, a user could potentially insert rows with a different `SalesRepID` and lose access to data they just created.
+The block predicates ensure users can only insert or update rows they would be able to see. Without block predicates, a user could potentially insert rows with a different `SalesRepID` and lose access to data they created.
 
 ## Implement hierarchical access patterns
 
@@ -112,7 +112,7 @@ RETURN
 This recursive common table expression (CTE) builds the complete chain of employees reporting to the current user. The predicate allows access to any row owned by someone in that hierarchy.
 
 > [!NOTE]
-> Recursive predicates can impact query performance on large datasets. Consider caching hierarchy relationships or limiting recursion depth for better performance.
+> Recursive predicates can affect query performance on large datasets. Consider caching hierarchy relationships or limiting recursion depth for better performance.
 
 ## Manage security policies
 

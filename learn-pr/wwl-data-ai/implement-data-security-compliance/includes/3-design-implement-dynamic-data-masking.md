@@ -8,13 +8,13 @@ Dynamic Data Masking supports four masking functions, each designed for differen
 
 :::image type="content" source="../media/masking.png" alt-text="Table showing the four Dynamic Data Masking functions with before and after comparisons: Default shows XXXX, Email shows jXXX@XXXX.com, Random shows random numbers, and Partial shows 206-XXX-XX89.":::
 
-The default masking function replaces the entire value with a fixed string. For string data types, it shows "XXXX" (or fewer X characters for shorter columns). Numeric values display as zero, and date values show 01-01-1900. This function works for any data type and provides complete obfuscation.
+The default masking function replaces the entire value with a fixed string. For string data types, it shows *"XXXX"* (or fewer X characters for shorter columns). Numeric values display as zero, and date values show *"01-01-1900"*. This function works for any data type and provides complete obfuscation.
 
-The email masking function reveals the first character of an email address, replaces the rest with "XXX", and preserves the domain suffix. For example, "john.smith@contoso.com" appears as "jXXX@XXXX.com". This format maintains the appearance of valid email data while protecting the actual address.
+The email masking function reveals the first character of an email address, replaces the rest with "XXX", and preserves the domain suffix. For example, *"john.smith@contoso.com"* appears as *"jXXX@XXXX.com"*. This format maintains the appearance of valid email data while protecting the actual address.
 
 With the random masking function, numeric values display as a random number within a specified range. You define minimum and maximum values, and each query returns a different random value. This approach works well for financial or statistical data where maintaining realistic-looking numbers matters.
 
-The partial masking function (also called custom string masking) gives you precise control over which characters to reveal. You specify a prefix length to show, padding characters to use, and a suffix length to display. For example, masking a phone number might show "206-XXX-XX89".
+The partial masking function (also called custom string masking) gives you precise control over which characters to reveal. You specify a prefix length to show, padding characters to use, and a suffix length to display. For example, masking a phone number might show *"206-XXX-XX89"*.
 
 ## Configure column masks
 
@@ -38,8 +38,8 @@ CREATE TABLE Customers (
 Each column uses a masking function appropriate for its data:
 
 - `Email` uses email masking to preserve the email format
-- `Phone` shows the first 3 digits and last 2 digits
-- `CreditCardNumber` reveals only the last 4 digits
+- `Phone` shows the first 3 digits and last two digits
+- `CreditCardNumber` reveals only the last four digits
 - `Income` displays a random value between 10,000 and 100,000
 - `SSN` uses default masking for complete obfuscation
 
@@ -120,4 +120,4 @@ Consider these scenarios where masking excels:
 > [!NOTE]
 > Dynamic Data Masking in SQL databases in Microsoft Fabric follows the same syntax and behavior as Azure SQL Database. Configure masks using T-SQL statements through the SQL analytics endpoint.
 
-Masking provides an additional layer of defense but shouldn't be your only protection for sensitive data. Use it alongside encryption, Row-Level Security, and proper permission management for comprehensive data protection.
+Masking provides an extra layer of defense but shouldn't be your only protection for sensitive data. Use it alongside encryption, Row-Level Security, and proper permission management for comprehensive data protection.

@@ -6,7 +6,7 @@ Designing effective permission strategies requires understanding the permission 
 
 SQL Server uses a hierarchical permission model where permissions granted at higher levels flow down to lower levels. The hierarchy flows from server to database to schema to individual objects. Understanding this hierarchy helps you grant permissions efficiently without excessive administrative burden.
 
-At the server level, permissions control login management, database creation, and server configuration. Database-level permissions govern actions within a specific database, such as creating tables or managing users. Schema-level permissions apply to all objects within a schema, while object-level permissions target specific tables, views, or procedures.
+At the server level, permissions control sign-in management, database creation, and server configuration. Database-level permissions govern actions within a specific database, such as creating tables or managing users. Schema-level permissions apply to all objects within a schema, while object-level permissions target specific tables, views, or procedures.
 
 When you grant `SELECT` permission on a schema, users can select from all tables and views in that schema, including objects created in the future. This approach simplifies administration compared to granting permissions on each object individually.
 
