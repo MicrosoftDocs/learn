@@ -1,0 +1,47 @@
+### YamlMime:Module
+uid: learn.wwl.get-started-with-generative-ai-and-agents
+metadata:
+  title: Get started with generative AI and agents in Azure
+  description: "Learn how to create and use generative AI models and agents in Foundry."
+  ms.date: 1/28/2026
+  author: sherzyang
+  ms.author: sheryang
+  ai-usage: ai-assisted
+  ms.topic: module
+  ms.collection:
+    - wwl-ai-copilot
+title: Get started with generative AI and agents in Azure
+summary: "Learn how to create and use generative AI models and agents in Foundry."
+abstract: |
+  By the end of this module, you'll be able to:
+  - Describe how an agent encapsulates model behavior using system instructions and tools
+  - Identify the right model for a task using the Foundry model catalog
+  - Deploy a model in the Foundry portal and replicate Playground settings in code
+  - Create and test an agent in the Foundry portal
+  - Use an agent in the Playground to validate prompts and behavior
+  - Call an agent from code using the Foundry Project API
+prerequisites: A basic understanding of machine learning and generative AI concepts.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- ai-engineer
+- data-scientist
+- developer
+- solution-architect
+- student
+products:
+- azure-ai-foundry
+subjects:
+- artificial-intelligence
+units:
+- learn.wwl.get-started-with-generative-ai-and-agents.introduction
+- learn.wwl.get-started-with-generative-ai-and-agents.generative-ai-models
+- learn.wwl.get-started-with-generative-ai-and-agents.using-generative-ai-models
+- learn.wwl.get-started-with-generative-ai-and-agents.creating-an-agent
+- learn.wwl.get-started-with-generative-ai-and-agents.using-an-agent
+- learn.wwl.get-started-with-generative-ai-and-agents.exercise
+- learn.wwl.get-started-with-generative-ai-and-agents.knowledge-check
+- learn.wwl.get-started-with-generative-ai-and-agents.summary
+badge:
+  uid: learn.wwl.get-started-with-generative-ai-and-agents.badge

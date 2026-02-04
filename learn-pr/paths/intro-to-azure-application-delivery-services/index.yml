@@ -27,6 +27,5 @@ subjects:
 modules:
 - learn.azure.intro-to-azure-load-balancer
 - learn.azure.intro-to-azure-application-gateway
-- learn.intro-to-azure-front-door
 trophy:
   uid: learn.intro-to-azure-application-delivery-services.trophy
