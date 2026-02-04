@@ -14,7 +14,7 @@ Adopting a Zero Trust approach across identities, endpoints, infrastructure, and
 
 Modern security operations platforms address this challenge by integrating SIEM, SOAR, XDR, posture management, and AI-assisted capabilities into unified experiences.
 
-:::image type="content" source="../media/provide-integrated-capabilities.png" alt-text="Diagram showing the integrated capabilities of a zero trust approach." lightbox="../media/provide-integrated-capabilities.png":::
+:::image type="content" source="../media/provide-integrated-capabilities.png" alt-text="Diagram showing the integrated capabilities of a Zero Trust approach." lightbox="../media/provide-integrated-capabilities.png":::
 
 ## Security operations functions
 
@@ -41,17 +41,17 @@ To deliver against these outcomes, security operations teams should be structure
 
 Detecting and responding to threats is currently undergoing significant modernization at all levels.
 
--   **Elevation to business risk management:** SOC is growing into a key component of managing business risk for the organization
--   **Metrics and goals:** Tracking SOC effectiveness is evolving from "time to detect" to these key indicators:
-    -   **Responsiveness** via mean time to acknowledge (MTTA).
-    -   **Remediation speed** via mean time to remediate (MTTR).
--   **Technology evolution:** SOC technology is evolving from exclusive use of static analysis of logs in a SIEM to add the use of specialized tooling and sophisticated analysis techniques. This provides deep insights into assets that provide high quality alerts and investigation experience that complement the breadth view of the SIEM. Both types of tooling are increasingly using AI and machine learning, behavior analytics, and integrated threat intelligence to help spot and prioritize anomalous actions that could be a malicious attacker.
--   **Threat hunting:** SOCs are adding hypothesis driven threat hunting to proactively identify advanced attackers and shift noisy alerts out of frontline analyst queues.
--   **Incident management:** Discipline is becoming formalized to coordinate nontechnical elements of incidents with legal, communications, and other teams. **Integration of internal context:** To help prioritize SOC activities such as the relative risk scores of user accounts and devices, sensitivity of data and applications, and key security isolation boundaries to closely defend.
+- **Elevation to business risk management:** SOC is growing into a key component of managing business risk for the organization
+- **Metrics and goals:** Tracking SOC effectiveness is evolving from "time to detect" to these key indicators:
+  - **Responsiveness** via mean time to acknowledge (MTTA).
+  - **Remediation speed** via mean time to remediate (MTTR).
+- **Technology evolution:** SOC technology is evolving from exclusive use of static analysis of logs in a SIEM to add the use of specialized tooling and sophisticated analysis techniques. This provides deep insights into assets that provide high quality alerts and investigation experience that complement the breadth view of the SIEM. Both types of tooling are increasingly using AI and machine learning, behavior analytics, and integrated threat intelligence to help spot and prioritize anomalous actions that could be a malicious attacker.
+- **Threat hunting:** SOCs are adding hypothesis driven threat hunting to proactively identify advanced attackers and shift noisy alerts out of frontline analyst queues.
+- **Incident management:** Discipline is becoming formalized to coordinate nontechnical elements of incidents with legal, communications, and other teams. **Integration of internal context:** To help prioritize SOC activities such as the relative risk scores of user accounts and devices, sensitivity of data and applications, and key security isolation boundaries to closely defend.
 
 ## Team composition and key relationships
 
-As security operations modernizes, the SOC can no longer operate in isolation. Effective threat detection and response requires collaboration across the organization. Security incidents often have legal, regulatory, and business implications that extend beyond technical remediation.
+As security operations modernize, the SOC can no longer operate in isolation. Effective threat detection and response require collaboration across the organization. Security incidents often have legal, regulatory, and business implications that extend beyond technical remediation.
 
 A well-functioning security operations center maintains close relationships with:
 

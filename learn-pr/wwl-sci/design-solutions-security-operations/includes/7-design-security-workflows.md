@@ -91,7 +91,7 @@ Microsoft Security Copilot integrates across security workflows to accelerate an
 | **Response** | Provide step-by-step remediation guidance, generate response playbook recommendations |
 | **Reporting** | Create executive summaries, generate post-incident reports for stakeholders |
 
-When designing workflows, identify where Security Copilot can reduce time-to-resolution. Consider embedding Copilot prompts into standard operating procedures so analysts consistently leverage AI assistance at key decision points.
+When designing workflows, identify where Security Copilot can reduce time-to-resolution. Consider embedding Copilot prompts into standard operating procedures so analysts consistently use AI assistance at key decision points.
 
 ## Architect design recommendations
 
