@@ -9,14 +9,14 @@ Get-Help about*
 To view a specific topic, use:
 
 ```powershell
-Get-Help about_common_parameters
+Get-Help about_CommonParameters
 ```
 
 You can also open the help topic in a separate window or online:
 
 ```powershell
-Get-Help about_common_parameters -ShowWindow
-Get-Help about_common_parameters -Online
+Get-Help about_CommonParameters -ShowWindow
+Get-Help about_CommonParameters -Online
 ```
 
 When you use wildcard characters with the **Get-Help** command, **About** help files will appear in a list when their titles contain a match for your wildcard pattern. Typically, **About** help files will appear last, after any commands whose names also matched your wildcard pattern. You can also use the *‑Category* parameter to specify a search for **About** files.
