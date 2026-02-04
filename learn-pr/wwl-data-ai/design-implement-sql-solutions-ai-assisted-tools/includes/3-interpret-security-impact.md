@@ -1,4 +1,4 @@
-Before enabling AI-assisted tools in your database development environment, you need to understand the security implications. These tools process code, database schemas, and potentially sensitive data patterns, making security awareness essential for responsible adoption.
+Before enabling AI-assisted tools in your database development environment, you need to understand the security implications. GitHub Copilot and Fabric Copilot process code, database schemas, and potentially sensitive data patterns, making security awareness essential for responsible adoption.
 
 ## How AI assistants process your data
 

@@ -30,7 +30,10 @@ Model Context Protocol (MCP) is an open standard that allows AI assistants to co
 
 With MCP configured, when you ask "What columns are in the Customers table?", the assistant can query your database directly rather than relying on whatever code context is visible in your editor. This produces more accurate and reliable suggestions.
 
+:::image type="content" source="../media/data_flow.png" alt-text="Diagram showing Model Context Protocol architecture with GitHub Copilot as the MCP Host connecting through an MCP Client to an MCP Server that accesses a SQL Database.":::
+
 MCP follows a client-server architecture:
+
 - **MCP Host**: Your AI environment (GitHub Copilot, Claude, etc.)
 - **MCP Client**: The protocol client that connects to MCP servers
 - **MCP Server**: A service that exposes specific data sources or tools

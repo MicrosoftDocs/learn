@@ -4,11 +4,13 @@ Custom instruction files provide a way to guide GitHub Copilot's behavior consis
 
 Custom instruction files are markdown documents that contain guidance for GitHub Copilot. When you place these files in specific locations, Copilot includes their contents as context when generating suggestions. This means you can influence how Copilot responds without modifying each prompt.
 
+:::image type="content" source="../media/structure.png" alt-text="Diagram showing a repository folder structure with a .github folder containing copilot-instructions.md and a prompts subfolder with .prompt.md files.":::
+
 There are two main types of instruction files:
 
-**Repository instructions** (`copilot-instructions.md`): Apply to everyone working in a specific repository. Stored in the `.github` folder at the repository root.
+- **Repository instructions** (`copilot-instructions.md`): Apply to everyone working in a specific repository. Stored in the `.github` folder at the repository root.
 
-**Prompt files** (`.prompt.md`): Reusable prompts for specific tasks or scenarios. Stored in the `.github/prompts` folder and can be referenced in chat conversations.
+- **Prompt files** (`.prompt.md`): Reusable prompts for specific tasks or scenarios. Stored in the `.github/prompts` folder and can be referenced in chat conversations.
 
 ## Create a repository instruction file
 
@@ -111,16 +113,18 @@ To use this prompt in VS Code, reference it in the chat panel with the `#` symbo
 
 For enterprise teams, consider these approaches to instruction file management:
 
-**Centralized standards**: Maintain a master instruction file in a shared repository that gets copied or linked to project repositories.
+- **Centralized standards**: Maintain a master instruction file in a shared repository that gets copied or linked to project repositories.
 
-**Layered instructions**: Use organization-level instructions for general standards, with repository-specific additions for project requirements.
+- **Layered instructions**: Use organization-level instructions for general standards, with repository-specific additions for project requirements.
 
-**Version control**: Track instruction file changes in git so you can review how your AI guidance evolves over time.
+- **Version control**: Track instruction file changes in git so you can review how your AI guidance evolves over time.
 
 > [!TIP]
 > Review your instruction files periodically. As your team's practices evolve or as Copilot improves, you might need to adjust your guidance.
 
 ## Best practices for instruction files
+
+To get the most out of custom instruction files, follow these best practices:
 
 **Be specific**: Vague instructions produce vague results. Instead of "use good naming," specify your exact naming pattern.
 

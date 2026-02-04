@@ -25,6 +25,8 @@ SQL Server Management Studio (SSMS) 22 and later versions include native support
 
 After installation, you'll see a GitHub Copilot status icon in the upper-right corner of SSMS. The icon indicates whether Copilot is active, inactive, unavailable, or not installed.
 
+:::image type="content" source="../media/sign-in.png" alt-text="Screenshot showing the GitHub Copilot badge options in SSMS.":::
+
 To sign in and activate Copilot:
 
 1. Select the GitHub Copilot badge in SSMS
@@ -45,6 +47,8 @@ Visual Studio Code provides a flexible environment for database development with
 4. Search for and install the **GitHub Copilot Chat** extension
 5. Sign in to your GitHub account when prompted
 
+:::image type="content" source="../media/github-copilot-extension-vscode.png" alt-text="Screenshot showing the GitHub Copilot extension in Visual Studio Code.":::
+
 For SQL database development, you'll also want the MSSQL extension:
 
 1. In the Extensions view, search for `mssql`
@@ -52,6 +56,8 @@ For SQL database development, you'll also want the MSSQL extension:
 3. Connect to your database using the Connections view
 
 With both Copilot and MSSQL extensions installed, you can start conversations about your database directly in the Copilot Chat panel. Right-click on a connected database and select **Chat with this database** to begin a context-aware conversation.
+
+:::image type="content" source="../media/vscode-chat-database-context-menu.png" alt-text="Screenshot showing the database context menu with the Chat with this database option.":::
 
 ## Enable Fabric Copilot
 
@@ -114,4 +120,4 @@ After enabling AI-assisted tools, verify everything is working correctly:
 > [!NOTE]
 > If Copilot isn't providing contextual suggestions, verify your database connection is active and that your account has the necessary permissions to query schema information.
 
-With GitHub Copilot and Fabric Copilot enabled, you're ready to explore advanced configuration options that customize how these tools behave for your specific workflows.
+With GitHub Copilot and Fabric Copilot enabled, you're ready to explore advanced configuration options that customize how the AI assistants behave for your specific workflows.

@@ -2,17 +2,19 @@ AI-assisted development tools are transforming how database professionals work w
 
 ## What are AI-assisted development tools?
 
-AI-assisted development tools use large language models (LLMs) to help you write, understand, and optimize code. These tools analyze your code context, database schema, and natural language prompts to generate relevant suggestions. For database development on SQL platforms, two primary AI assistants are available:
+AI-assisted development tools use large language models (LLMs) to help you write, understand, and optimize code. AI-assisted tools analyze your code context, database schema, and natural language prompts to generate relevant suggestions. For database development on SQL platforms, two primary AI assistants are available:
 
 - **GitHub Copilot** works directly in your development environment—whether that's Visual Studio Code, Visual Studio, or SQL Server Management Studio (SSMS). It provides code completions, answers questions about your database, and helps you write T-SQL queries by understanding your schema and the patterns you use.
 
 - **Fabric Copilot** is integrated into Microsoft Fabric workspaces and provides AI assistance for data engineering, data science, and analytics workloads. When working with SQL databases in Fabric, Copilot can help you explore data, generate queries, and understand your lakehouse structures.
 
-## How these tools enhance database development
+## How GitHub Copilot and Fabric Copilot enhance database development
 
 Consider a scenario where you need to write a complex query joining multiple tables with specific filtering conditions. Traditionally, you might spend time reviewing table schemas, checking column names and data types, and testing different query approaches. With AI-assisted tools, you can describe what you need in natural language, and the assistant generates a starting query based on your actual database schema.
 
-These tools provide several key capabilities:
+:::image type="content" source="../media/workflow.png" alt-text="Diagram showing the Copilot workflow: write prompt or code, context sent to AI, AI generates suggestion, review and accept.":::
+
+GitHub Copilot and Fabric Copilot provide several key capabilities:
 
 - **Code completion**: As you type T-SQL, the assistant suggests complete statements, column names, and table references based on your connected database
 - **Natural language to SQL**: Describe what you want to retrieve or modify, and the assistant generates the corresponding T-SQL code
@@ -43,4 +45,4 @@ When using AI-assisted tools for database development, you're working with syste
 > [!IMPORTANT]
 > AI-generated code suggestions should always be reviewed before execution, especially for queries that modify data or affect database security. The assistant provides helpful starting points, but you remain responsible for validating that generated code meets your requirements and follows your organization's standards.
 
-Understanding these AI-assisted development tools prepares you to make informed decisions about enabling and configuring them for your database development workflows. The following units guide you through the security considerations, setup process, and advanced configuration options that help you get the most value from these tools.
+Understanding GitHub Copilot and Fabric Copilot prepares you to make informed decisions about enabling and configuring them for your database development workflows. The following units guide you through the security considerations, setup process, and advanced configuration options that help you get the most value from AI-assisted development.
