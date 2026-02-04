@@ -1,6 +1,3 @@
-
-## Learning objectives
-
 Microsoft Foundry Hubs and Projects deliver the governance framework your security team requires. By combining Foundry's centralized policy enforcement with Azure OpenAI Service, Azure Cognitive Services, and Azure Container Registry, you build AI infrastructure that passes enterprise security reviews while maintaining developer agility. This approach eliminates public internet exposure through private endpoints, removes credential sprawl through managed identities, and provides visibility into container vulnerabilities before production deployment.
 
 In this module, you configure a Foundry Hub to enforce security policies across multiple AI projects, integrate Azure OpenAI Service with network isolation and identity controls, and deploy Azure Container Registry with automated vulnerability scanning. By the end, you have production-ready AI infrastructure that satisfies your compliance team and accelerates safe AI adoption across your organization.

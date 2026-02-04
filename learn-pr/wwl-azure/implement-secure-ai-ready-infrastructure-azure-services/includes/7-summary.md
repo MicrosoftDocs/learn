@@ -22,7 +22,4 @@ Expand your secure AI infrastructure by implementing these advanced capabilities
 ## More resources
 
 - [Monitor Azure AI workloads](/azure/ai-services/openai/how-to/monitoring) - Implementation guide for Azure Monitor integration with AI services
-- [Azure AI security baseline](/security/benchmark/azure/baselines/ai-services-security-baseline) - Comprehensive security recommendations for Azure AI deployments
 - [Responsible AI practices](/azure/ai-services/responsible-use-of-ai-overview) - Framework for implementing ethical and compliant AI systems
-
-
