@@ -19,7 +19,7 @@ Get-Help about_CommonParameters -ShowWindow
 Get-Help about_CommonParameters -Online
 ```
 > [!NOTE]
-> For the online version to show, it must have the URI/URL included in the information in the local help files. If the URI/URL is not included in the local version, you will receive an error.
+> For the -Online version to open, it must have the URI/URL included in the information in the local help files. If the URI/URL is not included in the local version, you may receive an error.
 
 When you use wildcard characters with the **Get-Help** command, **About** help files will appear in a list when their titles contain a match for your wildcard pattern. Typically, **About** help files will appear last, after any commands whose names also matched your wildcard pattern. You can also use the *‑Category* parameter to specify a search for **About** files.
 
