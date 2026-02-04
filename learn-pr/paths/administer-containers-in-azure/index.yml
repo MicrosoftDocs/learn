@@ -26,7 +26,6 @@ modules:
 - learn.intro-to-docker-containers
 - learn.intro-to-containers
 - learn.azure-container-registry
-- learn.run-docker-containers-aci
 - learn.intro-to-kubernetes
 - learn.intro-to-azure-kubernetes-service
 #TODO: Add - Orchestrate containerized application (POST-IGNITE)

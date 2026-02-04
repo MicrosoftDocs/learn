@@ -7795,6 +7795,16 @@ achievements:
   title: Build applications with Azure DevOps learning path
   summary: Azure DevOps enables you to build, test, and deploy any application to any cloud or on premises. Learn how to configure build pipelines that continuously build, test, and verify your applications.
   iconUrl: /training/achievements/azure-devops/build-applications-with-azure-devops.svg 
+- uid: learn.azure.run-clustered-applications-azure-shared-disks.badge
+  type: badge 
+  title: Run clustered applications on Azure with shared disks
+  summary: Providing high availability for clustered applications is an important requirement for most organizations. With Microsoft Azure shared disks, you can run clustered or high-availability applications on Azure.
+  iconUrl: /training/achievements/run-clustered-applications-azure-shared-disks.svg
+- uid: learn.run-docker-containers-aci.badge
+  type: badge 
+  title: Run Docker containers with Azure Container Instances
+  summary: Learn how to run containerized apps using Docker containers with Azure Container Instances (ACI).
+  iconUrl: /training/achievements/run-docker-with-azure-container-instances.svg
 - uid: learn.azure.resource-manager-template-reuse.badge
   type: badge 
   title: Deploy to multiple Azure environments by using JSON ARM template features
