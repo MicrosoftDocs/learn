@@ -18,7 +18,7 @@ Always Encrypted takes a different approach by keeping encryption keys outside t
 
 Always Encrypted protects sensitive data by ensuring the database engine never processes plaintext values. Client applications hold the encryption keys and perform all encryption and decryption operations. This separation means that even users with administrative access to the database can't view the protected data.
 
-:::image type="content" source="../media/ae-data-flow.png" alt-text="Diagram showing the data flow for Always Encrypted, where client applications encrypt and decrypt data while the database engine only processes ciphertext.":::
+:::image type="content" source="../media/sql-data-flow.png" alt-text="Diagram showing the data flow for Always Encrypted, where client applications encrypt and decrypt data while the database engine only processes ciphertext.":::
 
 To implement Always Encrypted, you first create a column master key (CMK) that protects the column encryption keys. Store the CMK in a secure key store such as Azure Key Vault, Windows Certificate Store, or a hardware security module.
 
