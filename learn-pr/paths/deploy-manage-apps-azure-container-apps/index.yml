@@ -1,0 +1,31 @@
+### YamlMime:LearningPath
+uid: learn.wwl.deploy-manage-apps-azure-container-apps
+metadata:
+  title: Deploy and Manage Apps on Azure Container Apps
+  description: Learn how to deploy, manage, and scale containerized applications on Azure Container Apps.
+  ms.date: 01/27/2026
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: learning-path
+title: Deploy and manage apps on Azure Container Apps
+prerequisites: |
+  - Basic understanding of Azure services and cloud computing concepts.
+  - Familiarity with container concepts.
+  - Familiarity with command-line tools including Azure CLI.
+summary: |
+  This learning path guides you through the complete lifecycle of running containerized applications on Azure Container Apps. You start by deploying container apps to environments, configuring runtime settings with environment variables and secrets, and setting up registry authentication. You then manage the day-two lifecycle by updating images, managing revisions, monitoring logs, and configuring health probes. Finally, you learn to configure automatic horizontal scaling using HTTP rules, KEDA scalers, and traffic management to optimize performance and cost.
+iconUrl: /training/achievements/generic-trophy.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- azure-container-apps
+subjects:
+- containers
+modules:
+- learn.wwl.deploy-containers-azure-container-apps
+- learn.wwl.manage-containers-azure-container-apps
+- learn.wwl.scale-containers-azure-container-apps
+trophy:
+  uid: learn.wwl.deploy-manage-apps-azure-container-apps.trophy

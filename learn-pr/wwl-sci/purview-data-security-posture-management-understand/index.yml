@@ -1,0 +1,50 @@
+### YamlMime:Module
+uid: learn.wwl.purview-data-security-posture-management-understand
+metadata:
+  title: Understand data security posture management in Microsoft Purview
+  description: Understand data security posture management in Microsoft Purview.
+  ms.date: 02/03/2026
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: module
+  ai-usage: ai-assisted
+  ms.service: purview
+title: Understand data security posture management in Microsoft Purview
+summary: |
+  Data security posture management (DSPM) helps organizations understand where sensitive data is exposed and how risk is distributed across the environment. Data security posture is evaluated over time to reflect changing conditions. Objectives organize risk into outcomes, and DSPM helps guide decisions before controls are configured or investigations are launched.
+
+abstract: |
+  In this module you learn to:
+  - Explain what data security posture management is and the problem it's designed to solve
+  - Describe how data security posture is evaluated using continuous assessment
+  - Explain how data security objectives organize risk into outcome-driven workflows
+  - Understand the role of AI in supporting analysis and prioritization without taking action
+  - Describe how DSPM fits with data loss prevention (DLP), Insider Risk Management, audit, and investigations
+
+prerequisites: |
+  - Familiarity with basic data security concepts and risk assessment
+  - General awareness of Microsoft Purview security capabilities
+
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- administrator
+- risk-practitioner
+products:
+- m365
+- microsoft-purview
+subjects:
+- threat-protection
+- security
+units:
+- learn.wwl.purview-data-security-posture-management-understand.introduction
+- learn.wwl.purview-data-security-posture-management-understand.understand-data-security-posture-management
+- learn.wwl.purview-data-security-posture-management-understand.evaluate-risk-posture
+- learn.wwl.purview-data-security-posture-management-understand.data-security-objectives
+- learn.wwl.purview-data-security-posture-management-understand.data-security-posture-ai
+- learn.wwl.purview-data-security-posture-management-understand.data-security-workflow-fit
+- learn.wwl.purview-data-security-posture-management-understand.knowledge-check
+- learn.wwl.purview-data-security-posture-management-understand.summary
+badge:
+  uid: learn.wwl.purview-data-security-posture-management-understand.badge

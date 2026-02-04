@@ -26,10 +26,10 @@ To onboard and use Microsoft Sentinel in the Microsoft Defender portal, you must
 
 ## Onboard Microsoft Sentinel
 
-To connect a workspace that has Microsoft Sentinel enabled to Defender XDR, complete the following steps:
+How you integrate Defender XDR depends on whether you plan to onboard Microsoft Sentinel to the Defender portal or continue to work in the Azure portal. If you want to sync Defender XDR data to Microsoft Sentinel in the Azure portal, you must enable the Microsoft Defender XDR connector in Microsoft Sentinel. To connect a workspace to Defender XDR, complete the following steps:
 
 > [!IMPORTANT]
-> Before you connect your workspace, make sure you've installed the **Microsoft Defender XDR** solution for Microsoft Sentinel from the **Content hub**. And then, enabled the **Microsoft Defender XDR** data connector to collect incidents and alerts.
+> Before you connect your workspace, make sure you installed the **Microsoft Defender XDR** solution for Microsoft Sentinel from the **Content hub**. And then, enabled the **Microsoft Defender XDR** data connector to collect incidents and alerts.
 
 :::image type="content" source="../media/defender-xdr-connect-sentinel-workspace.png" alt-text="Screen shot of the Get your SIEM and XDR in one place banner message." lightbox="../media/defender-xdr-connect-sentinel-workspace.png":::
 
