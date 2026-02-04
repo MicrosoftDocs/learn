@@ -2,7 +2,7 @@
 uid: learn.wwl.get-started-with-generative-ai-and-agents
 metadata:
   title: Get started with generative AI and agents in Azure
-  description: "Learn how to create and use generative AI models and agents in Foundry."
+  description: "Learn how to use generative AI models and agents with Microsoft Foundry."
   ms.date: 1/28/2026
   author: sherzyang
   ms.author: sheryang
@@ -11,7 +11,7 @@ metadata:
   ms.collection:
     - wwl-ai-copilot
 title: Get started with generative AI and agents in Azure
-summary: "Learn how to create and use generative AI models and agents in Foundry."
+summary: "Learn how to use generative AI models and agents with Microsoft Foundry."
 abstract: |
   By the end of this module, you'll be able to:
   - Describe how an agent encapsulates model behavior using system instructions and tools
