@@ -16,7 +16,7 @@ Both domains are essential for comprehensive security operations:
 - **Infrastructure logs** help you detect attacks on workloads, investigate lateral movement, and understand resource-level threats
 - **Productivity logs** help you detect compromised accounts, investigate data exfiltration, and establish user accountability
 
-Microsoft Sentinel serves as the convergence point, ingesting logs from both domains into a unified Log Analytics workspace. This enables security analysts to correlate an identity-based attack (detected in Entra ID or M365 logs) with subsequent infrastructure activity (detected in Azure or multicloud logs)—providing the complete attack story.
+Microsoft Sentinel serves as the convergence point, ingesting logs from both domains into a unified Log Analytics workspace. This enables security analysts to correlate an identity-based attack (detected in Entra ID or Microsoft 365 logs) with subsequent infrastructure activity (detected in Azure or multicloud logs)—providing the complete attack story.
 
 The rest of this unit covers logging solutions for both domains: Log Analytics workspaces and Microsoft Sentinel for infrastructure data, and Microsoft Purview Audit for productivity data.
 
@@ -36,6 +36,49 @@ The Microsoft Cloud Security Benchmark (MCSB) provides guidance on designing log
 
 ## Microsoft solutions for centralized logging
 
+### Azure Monitor Logs
+
+Azure Monitor Logs is the foundational logging platform that collects and stores log data from Azure resources, on-premises systems, and multicloud environments. Understanding Azure Monitor Logs is essential before designing Microsoft Sentinel solutions, as Sentinel builds on this foundation.
+
+#### Log types in Azure Monitor
+
+| Log type | Description | Collection method |
+|----------|-------------|-------------------|
+| **Resource logs** | Detailed operational data from Azure resources (e.g., Key Vault access, storage operations, database queries) | Diagnostic settings per resource |
+| **Activity logs** | Subscription-level events including resource modifications, service health, and administrative actions | Automatic; use diagnostic settings to send to Log Analytics |
+| **Platform metrics** | Numerical performance data collected automatically from Azure resources | Automatic; use diagnostic settings for additional routing |
+| **Guest OS logs** | Windows events, Syslog, and performance counters from virtual machines | Azure Monitor agent with data collection rules |
+
+#### Diagnostic settings
+
+Diagnostic settings are the configuration mechanism for collecting logs from Azure resources. Each Azure resource requires its own diagnostic setting to send logs to destinations:
+
+- **Log Analytics workspace** - Enables querying with KQL, correlation with other data, and integration with Microsoft Sentinel
+- **Storage account** - Cost-effective archival for compliance requirements
+- **Event hub** - Stream to external SIEM systems or custom applications
+- **Partner solutions** - Send directly to integrated partner monitoring tools
+
+When designing your logging architecture:
+
+- Create diagnostic settings for each resource you need to monitor
+- Select appropriate log categories based on security and compliance requirements
+- Consider using Azure Policy to automatically create diagnostic settings for new resources
+- Use category groups (audit, allLogs) to simplify configuration
+
+> [!TIP]
+> Use Azure Policy with the "Deploy diagnostic settings" effect to automatically configure logging for resources as they're created. This ensures consistent log collection across your environment.
+
+#### Azure Monitor agent for guest logs
+
+For virtual machines and Arc-enabled servers, the Azure Monitor agent collects guest operating system logs using data collection rules (covered in the previous unit for monitoring). From a logging perspective:
+
+- **Windows Event Logs** - Security, Application, System, and custom logs
+- **Syslog** - Linux system and application logs  
+- **Custom text logs** - Application-specific log files
+- **IIS logs** - Web server access and error logs
+
+Data collection rules specify which logs to collect and which Log Analytics workspace to send them to, enabling consistent log collection across hybrid and multicloud environments.
+
 ### Log Analytics workspaces
 
 Log Analytics workspaces serve as the central repository for log data in Microsoft's security architecture. When designing your logging strategy, consider:
@@ -52,7 +95,7 @@ Microsoft Sentinel provides two storage tiers optimized for different use cases:
 
 | Tier | Purpose | Retention | Best for |
 |------|---------|-----------|----------|
-| **Analytics tier** | High-performance querying for real-time analytics, alerting, hunting, and all Microsoft Sentinel features | 30 days default; Microsoft Sentinel solution tables extend to 90 days free; can extend up to 2 years at cost | Primary security data requiring real-time detection and investigation |
+| **Analytics tier** | High-performance querying for real-time analytics, alerting, hunting, and all Microsoft Sentinel features | 30 days default; Microsoft Sentinel solution tables extend to 90 days free; can extend up to two years at cost | Primary security data requiring real-time detection and investigation |
 | **Data lake tier** | Cost-effective long-term storage with scheduled analytics | Up to 12 years | Secondary security data, compliance retention, historical trend analysis |
 
 The analytics tier keeps data in an interactive state for immediate access, while the data lake tier stores data in a cost-effective cold state for long-term retention.
@@ -85,7 +128,7 @@ The data lake provides multiple ways to analyze historical log data:
 | **Search jobs** | Run long-running searches through up to a year of data in a table, sending results to a new Analytics table | Forensic analysis when query timeout is insufficient, searching large datasets for specific events |
 | **Jupyter notebooks** | Use Python-based advanced analytics with machine learning libraries | Machine learning models, complex statistical analysis, custom visualizations |
 
-KQL jobs can promote data from the data lake tier to the analytics tier, enabling investigation of historical events alongside current incidents. This is particularly valuable for zero-day threat detection and retrospective threat hunting.
+KQL jobs can promote data from the data lake tier to the analytics tier, enabling investigation of historical events alongside current incidents. This is valuable for zero-day threat detection and retrospective threat hunting.
 
 > [!TIP]
 > Use KQL jobs for incident investigations, threat intelligence matching, and promoting data from data lake to analytics tier. Use summary rules for recurring aggregations that support detection rules. Use search jobs when you need to scan large datasets for specific events.
@@ -167,7 +210,7 @@ As a cybersecurity architect, workspace topology is a critical design decision f
 | Pattern | When to use | Trade-offs |
 |---------|-------------|------------|
 | **Single workspace** | Need maximum correlation across all log data, smaller organizations | Best visibility, but may not meet data residency or access control requirements |
-| **Separate security and operational workspaces** | Security team requires isolated workspace, different retention needs | Enables dedicated Sentinel workspace with 90-day free retention, but reduces cross-domain correlation |
+| **Separate security and operational workspaces** | Security team requires isolated workspace, different retention needs | Enables dedicated Microsoft Sentinel workspace with 90-day free retention, but reduces cross-domain correlation |
 | **Regional workspaces** | Data sovereignty requirements, geographically distributed operations | Meets compliance, but increases management complexity and limits correlation |
 | **Dedicated cluster** | Ingesting 100+ GB/day, need customer-managed keys or dedicated capacity | Better performance and security, but higher minimum commitment |
 
@@ -179,7 +222,7 @@ For most organizations, combining Azure Monitor operational data and Microsoft S
 
 Use table-level RBAC to restrict access to sensitive security tables if combining workspaces.
 
-### Multi-tenant and MSSP architectures
+### Multitenant and MSSP architectures
 
 Organizations with multiple Azure tenants—including managed security service providers (MSSPs) and large enterprises with subsidiaries—require strategies for centralized logging across tenant boundaries.
 
@@ -202,9 +245,9 @@ Design access control using multiple layers:
 |--------|----------|
 | **Workspace-context access** | SOC analysts who need access to all security data |
 | **Resource-context RBAC** | Application teams who should see only logs for their resources |
-| **Table-level RBAC** | Restrict specific tables (like SecurityEvent) from non-security users |
+| **Table-level RBAC** | Restrict specific tables (like SecurityEvent) from nonsecurity users |
 
-**Resource-context RBAC** is particularly valuable when combining operational and security logs in the same workspace—application owners can query logs for resources they manage without accessing security-sensitive tables.
+**Resource-context RBAC** is valuable when combining operational and security logs in the same workspace—application owners can query logs for resources they manage without accessing security-sensitive tables.
 
 Design recommendation: Place the Microsoft Sentinel workspace in a dedicated subscription to simplify permission isolation from application resource groups.
 
@@ -214,7 +257,7 @@ Design your tiering strategy based on data classification:
 
 | Data classification | Recommended tier | Retention guidance |
 |--------------------|------------------|--------------------|
-| **Primary security data** (alerts, incidents, identity logs) | Analytics tier | 90 days to 2 years depending on investigation needs |
+| **Primary security data** (alerts, incidents, identity logs) | Analytics tier | 90 days to two years depending on investigation needs |
 | **Secondary security data** (firewall logs, proxy logs, NetFlow) | Data lake tier with summary rules | 1-7 years; use summary rules to aggregate into analytics tier |
 | **Compliance/audit data** | Analytics tier mirrored to data lake | Match regulatory requirements (often 7-10 years) |
 | **High-volume, low-value logs** (verbose application logs) | Data lake tier only | Based on compliance; query on-demand with KQL jobs |
@@ -227,10 +270,10 @@ When designing your centralized logging architecture, consider:
 |--------|---------------|
 | **Data ownership** | Assign owners responsible for each log source's access, retention, and processing |
 | **Retention requirements** | Align retention periods with compliance regulations and investigation needs; use data lake tier for long-term retention |
-| **Cost optimization** | Use appropriate storage tiers based on data value and access patterns; leverage commitment tiers for 100+ GB/day |
+| **Cost optimization** | Use appropriate storage tiers based on data value and access patterns; use commitment tiers for 100+ GB/day |
 | **Access control** | Implement table-level RBAC to control access to sensitive log data; use resource-context RBAC for operational data |
 | **Data residency** | Ensure log storage locations meet regulatory requirements; consider regional workspaces if needed |
-| **Integration** | Design for correlation between operational and security logs; plan Purview Audit integration with Sentinel |
+| **Integration** | Design for correlation between operational and security logs; plan Purview Audit integration with Microsoft Sentinel |
 | **Resilience** | Consider log multicasting to secondary workspace for critical data if regional availability is required |
 
 > [!IMPORTANT]

@@ -8,6 +8,6 @@ metadata:
   author: ceperezb
   ms.author: ceperezb
   ms.topic: unit
-durationInMinutes: 12
+durationInMinutes: 11
 content: |
   [!include[](includes/2-design-security-operations-capabilities-hybrid-multicloud-environments.md)]

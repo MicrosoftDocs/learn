@@ -1,6 +1,6 @@
 Organizations operating across hybrid, multicloud, and edge environments face unique challenges in security monitoring. Designing effective monitoring solutions requires a unified approach that extends visibility and control across all environments while optimizing costs and reducing operational complexity.
 
-**Monitoring** focuses on real-time visibility into system health, performance, and security threats. It answers the question "What's happening now?" and enables immediate detection and response. This differs from logging, which focuses on recording events for later analysis, compliance, and forensics.
+**Monitoring** focuses on real-time visibility into system health, performance, and security threats. It answers the question "What's happening now?" and enables immediate detection and response. **Logging** focuses on recording events for later analysis, compliance, and forensics—answering "What happened?" These are complementary capabilities, and monitoring solutions may also provide logging capabilities in support of a unified platform. This unit focuses on the real-time monitoring aspects; the next unit covers logging and auditing in detail, including workspace design and data retention strategies.
 
 ## Design guidance for hybrid and multicloud monitoring
 
@@ -11,8 +11,7 @@ When designing monitoring solutions for hybrid and multicloud environments, cons
 - **Extend governance and operations** using cloud controls that can reach on-premises, multicloud, and edge deployments.
 - **Design for data residency and compliance** requirements that may dictate where monitoring data must be stored.
 
-> [!IMPORTANT]
-> Insufficient capabilities in operation tools can require teams to replicate processes using different cloud controls across platforms. A unified operations approach eliminates these inefficiencies.
+![Diagram that shows how unified operations extends cloud controls to hybrid, multicloud, and edge deployments.](../media/primary-cloud-provider-extended.png)
 
 ## Microsoft solutions for hybrid and multicloud monitoring
 
@@ -29,26 +28,26 @@ Azure Arc extends the Azure platform to manage and govern infrastructure across 
 
 ### Azure Monitor for unified observability
 
-Azure Monitor provides comprehensive monitoring for resources across cloud and on-premises environments:
+Azure Monitor provides comprehensive monitoring for resources across cloud and on-premises environments. While Azure Monitor supports both real-time monitoring and log collection, this section focuses on the monitoring capabilities. Log Analytics workspace design and log retention strategies are covered in the next unit.
 
 | Capability | Description |
 |------------|-------------|
-| **Data collection** | Collect metrics, logs, and traces from Azure, on-premises, and multicloud sources using the Azure Monitor agent |
+| **Metrics** | Collect and analyze numerical performance data from Azure, on-premises, and multicloud sources for real-time visibility |
 | **VM insights** | Monitor operating system performance and discover application components across hybrid machines |
 | **Container insights** | Use Azure Arc-enabled Kubernetes for consistent monitoring of AKS, AWS EKS, and GCP GKE clusters |
-| **Log Analytics** | Centralize logs in workspaces for analysis, alerting, and long-term retention |
+| **Dashboards and workbooks** | Visualize real-time performance metrics and create interactive reports for operational visibility |
 
 The Azure Monitor agent can be deployed to both Azure VMs and Azure Arc-enabled servers, using the same data collection rules across all environments.
 
 ### Data collection rules for hybrid environments
 
-Data collection rules (DCRs) are the foundation of consistent monitoring across hybrid and multicloud environments. DCRs define:
+Data collection rules (DCRs) define what telemetry to collect and where to send it, enabling consistent monitoring across hybrid and multicloud environments. From a monitoring perspective, DCRs enable:
 
-- **What data to collect** - Specify performance counters, Windows events, Syslog, and custom logs
-- **How to transform data** - Filter and transform data before ingestion to reduce costs
-- **Where to send data** - Route data to Log Analytics workspaces, Azure Monitor metrics, or multiple destinations
+- **Consistent telemetry collection** - Apply the same collection configuration to Azure VMs, Arc-enabled servers in AWS/GCP, and on-premises machines
+- **Real-time data routing** - Stream performance counters and security events to Azure Monitor for immediate alerting and visualization
+- **Data transformation** - Filter and transform data before ingestion to focus on security-relevant telemetry
 
-Using DCRs, you can apply the same collection configuration to Azure VMs, Arc-enabled servers in AWS/GCP, and on-premises machines—ensuring consistent telemetry across all environments.
+DCRs ensure that security teams have consistent visibility across all environments, regardless of where resources are hosted.
 
 ### Alerting for hybrid and multicloud resources
 
@@ -57,7 +56,7 @@ Azure Monitor provides alerting capabilities that work consistently across hybri
 | Alert type | Use case |
 |------------|----------|
 | **Metric alerts** | Near-real-time alerts comparing collected values to static or dynamic thresholds using machine learning |
-| **Log query alerts** | Identify issues by analyzing log data across multiple servers using KQL queries |
+| **Log search alerts** | Identify issues by analyzing log data across multiple servers using KQL queries |
 | **Activity log alerts** | Monitor Azure resource operations and service health events |
 
 Alerts can trigger action groups to notify teams, run automation runbooks, or invoke Logic Apps for automated remediation.
@@ -96,28 +95,19 @@ The Microsoft Defender portal provides a unified view of security monitoring dat
 This centralized visibility eliminates the need for security teams to switch between multiple consoles when monitoring hybrid environments, reducing mean time to detect (MTTD) threats.
 
 > [!NOTE]
-> This unit focuses on infrastructure monitoring across hybrid and multicloud environments. Microsoft 365 productivity workloads (email, files, identity, collaboration) have their own monitoring capabilities through Microsoft Defender XDR services, and is covered in [Design solutions for securing Microsoft 365](/training/modules/design-solutions-secure-microsoft-365/). The Defender portal serves as the convergence point where infrastructure and productivity monitoring combine for unified incident correlation and response.
+> This unit focuses on infrastructure monitoring across hybrid and multicloud environments. Microsoft 365 productivity workloads (email, files, identity, collaboration) have their own monitoring capabilities through Microsoft Defender XDR services, and are covered in [Design solutions for securing Microsoft 365](/training/modules/design-solutions-secure-microsoft-365/). The Defender portal serves as the convergence point where infrastructure and productivity monitoring combine for unified incident correlation and response.
 
 ## Architect-level design considerations
 
 ### Workspace architecture decisions
 
-As a cybersecurity architect, one of your key decisions is workspace topology. This decision directly impacts your monitoring effectiveness because:
+As a cybersecurity architect, workspace topology is a key decision that affects both monitoring and logging effectiveness. From a monitoring perspective, consider:
 
 - **Threat correlation** - Security analysts need to correlate events across identities, endpoints, and network traffic. Data in separate workspaces requires cross-workspace queries, which are slower and more complex.
 - **Alert context** - When an alert fires, analysts need surrounding context from related logs. Fragmented workspaces mean analysts may miss critical context during investigations.
 - **Detection rules** - Analytics rules and detection logic work most efficiently when all relevant data sources are in the same workspace.
-- **Cost efficiency** - Commitment tier pricing applies per workspace, so consolidation can reduce costs, but data egress charges may offset savings if sources are geographically dispersed.
 
-Consider these patterns:
-
-| Pattern | When to use | Trade-offs |
-|---------|-------------|------------|
-| **Single workspace** | Small to medium organizations, need for cross-environment correlation | Simplified management, but may not meet data residency requirements |
-| **Regional workspaces** | Data sovereignty requirements, geographically distributed operations | Meets compliance needs, but reduces cross-region correlation |
-| **Workload-specific workspaces** | Strict access control requirements, chargeback models | Granular access control, but increases management overhead |
-
-For most hybrid and multicloud scenarios, a primary workspace with Azure Lighthouse for multi-tenant visibility provides the best balance of centralization and flexibility.
+The next unit covers workspace architecture in more depth, including log retention tiers, cost optimization, and compliance considerations.
 
 ### Agent deployment strategy at scale
 
@@ -142,12 +132,6 @@ Plan for scenarios where monitoring agents may be unavailable:
 - Design network connectivity using VPNs, ExpressRoute, or private endpoints for secure telemetry transfer
 - Use Azure Private Link for Log Analytics workspaces to keep monitoring traffic off the public internet
 - Plan for network latency when determining workspace placement—high latency can affect real-time alerting
-
-### Cost optimization strategies
-
-- Use commitment tiers when consolidating monitoring data to reduce per-GB ingestion costs
-- Consider workspace placement to minimize egress charges
-- Leverage storage tiers appropriately—use analytics tier for real-time detection and data lake tier for long-term retention (covered in detail in the next unit)
 
 ## Design considerations summary
 
