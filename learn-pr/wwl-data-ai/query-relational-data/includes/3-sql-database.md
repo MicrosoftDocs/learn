@@ -7,7 +7,6 @@ You can use any of these tools to query data held in Azure SQL Database:
 - The query editor in the Azure portal
 - The `sqlcmd` utility from the command line or the Azure Cloud Shell
 - SQL Server Management Studio
-- Azure Data Studio
 - SQL Server Data Tools
 
 To use these tools, you first need to establish a connection to the database. You'll require the details of the server to connect to, an Azure SQL Database account (a username and password) that has access to this server, and the name of the database to use on this server. You can find the server name for a database using the Azure portal: go to the page for your database, and on the **Overview** page note the fully qualified server name in the **Server name** field.
@@ -47,39 +46,35 @@ sqlcmd -S <server>.database.windows.net -d <database> -U <username> -P <password
 
 If the sign-in command succeeds, you'll see a `1>` prompt. You can enter SQL commands, then type **GO** on a line by itself to run them.
 
-## Use Azure Data Studio
+## Use SQL Server Management Studio
 
-Azure Data Studio is a graphical utility for creating and running SQL queries from your desktop. For download and installation instructions, visit the [Download and install Azure Data Studio](/sql/azure-data-studio/download-azure-data-studio) page on the Microsoft website.
+SQL Server Management Studio (SSMS) is a graphical utility for creating and running SQL queries from your desktop. For download and installation instructions, visit the [Download SQL Server Management Studio (SSMS)](/sql/ssms/download-sql-server-management-studio-ssms) page on the Microsoft website.
 
-The first time you run Azure Data Studio the **Welcome** page should open. If you don't see the **Welcome** page, select **Help**, and then select **Welcome**. Select **Create a connection** to open the **Connection** pane:
+The first time you run SQL Server Management Studio the **Connect to Server** dialog box should open. If it doesn't appear, you can open it manually by selecting **File** > **Connect Object Explorer**.
 
 1. Fill in the following fields using the server name, user name, and password for your Azure SQL Server:
 
     |Setting  |Description  |
     |---------|---------|
+    |Server type | Database Engine |
     |Server name	     | The fully qualified server name. You can find the server name in the Azure portal, as described earlier. |
-    |Authentication    | SQL Login or Windows Authentication. Unless you're using Microsoft Entra, select SQL Login. |
-    |User name   | The server admin account user name. Specify the user name from the account used to create the server.        |
+    |Authentication    | SQL Server Authentication. Unless you're using Microsoft Entra, select SQL Server Authentication. |
+    |Login   | The server admin account user name. Specify the user name from the account used to create the server.        |
     |Password    | The password you specified when you provisioned the server.  |
-    |Database name   | The name of the database to which you wish to connect. |
-    |Server Group  | If you have many servers, you can create groups to help categorize them. These groups are for convenience in Azure Data Studio, and don't affect the database or server in Azure. |
     
     > [!div class="mx-imgBorder"]
-    > ![Azure Data Studio - Create New Connection](../media/3-new-connection-screen.png)
+    > ![SQL Server Management Studio - Connect to Server](../media/3-sql-sever-management-studio-connect.png)
 
 1. Select **Connect**.
 
-    If your server doesn't have a firewall rule allowing Azure Data Studio to connect, the Create new firewall rule form opens. Complete the form to create a new firewall rule. For details, see [Create a server-level firewall rule using the Azure portal](/azure/azure-sql/database/firewall-create-server-level-portal-quickstart).
+    If your server doesn't have a firewall rule allowing SQL Server Management Studio to connect, you need to create one. For details, see [Create a server-level firewall rule using the Azure portal](/azure/azure-sql/database/firewall-create-server-level-portal-quickstart).
 
-1. After successfully connecting, your server is available in the **SERVERS** sidebar on the **Connections** page. You can now use the **New Query** command to create and run scripts of SQL commands.
-
-    > [!div class="mx-imgBorder"]
-    > ![The **SERVERS** sidebar in Azure Data Studio](../media/3-servers-sidebar.png)
+1. After successfully connecting, your server is available in the **Object Explorer** window. You can expand **Databases** to view your database and its objects. Use the **New Query** button in the toolbar to create and run scripts of SQL commands.
 
 The example below uses Transact-SQL commands to create a new database (CREATE DATABASE and ALTER DATABASE commands are part of the Transact-SQL dialect, and aren't part of standard SQL). The script then creates a new table named Customers, and inserts four rows into this table. Again, the version of the INSERT statement, with four VALUES clauses, is part of the Transact-SQL dialect. The `--` characters start a comment in Transact-SQL. The `[` and `]` characters surround identifiers, such as the name of a table, database, column, or data type. The `N` character in front of a string indicates that the string uses the Unicode character set.
 
 > [!NOTE]
-> You can't create new SQL databases from a connection in Azure Data Studio if you're running SQL Database single database or elastic pools. You can only create new databases in this way if you're using SQL Database managed instance.
+> You can't create new SQL databases from a connection in SQL Server Management Studio if you're running SQL Database single database or elastic pools. You can only create new databases in this way if you're using SQL Database managed instance.
 
 ```SQL
 IF NOT EXISTS (
@@ -124,42 +119,10 @@ VALUES
 GO
 ```
 
-To execute the script, select **Run** on the toolbar. Notifications appear in the MESSAGES pane showing query progress.
+To execute the script, select **Execute** on the toolbar. Notifications appear in the MESSAGES pane showing query progress.
 
 > [!div class="mx-imgBorder"]
-> ![The query pane in Azure Data Studio, showing the results of running a SQL script](../media/3-data-studio-query.png)
-
-## Use SQL Server Management Studio
-
-SQL Server Management Studio is another tool that you can download and run on your desktop. See [Download SQL Server Management Studio (SSMS)](/sql/ssms/download-sql-server-management-studio-ssms) for details.
-
-To connect to a server and database, perform the following steps:
-
-1. Open SQL Server Management Studio.
-
-1. When the **Connect to Server** dialog box appears, enter the following information:
-
-    |Setting | Value  |
-    |---------|---------|---------|
-    |Server type   | **Database engine**        |
-    |Server name	   | The fully qualified server name, from the **Overview** page in the Azure portal        |
-    |Authentication     |SQL Server Authentication | 
-    |Login     |  The user ID of the server admin account used to create the server.        |
-    |Password    |  Server admin account password       |
-      
-    > [!div class="mx-imgBorder"]
-    > ![Connect to SQL Database from SQL Server Management Studio](../media/3-sql-sever-management-studio-connect.png)
-
-1. Select **Connect**. The Object Explorer window opens.
-
-1. To view the database's objects, expand **Databases** and then expand your database node.
-
-1. On the toolbar, select **New Query** to open a query window. 
-
-1. Enter your SQL statements, and then select **Execute** to run queries and retrieve data from the database tables.
-
-    > [!div class="mx-imgBorder"]
-    > ![Run a query in SQL SQL Server Management Studio](../media/3-sql-sever-management-studio-query.png)
+> ![The query pane in SQL Server Management Studio, showing the results of running a SQL script](../media/3-sql-sever-management-studio-query.png)
 
 ## Use SQL Server Data Tools in Visual Studio
 
