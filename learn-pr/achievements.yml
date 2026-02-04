@@ -7610,6 +7610,26 @@ achievements:
   title: Describe Microsoft Entra Verified ID concepts
   summary: Learn the core concepts of decentralized identities and Microsoft Entra Verified ID.
   iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.introduction-azure-networking-services.trophy
+  type: trophy 
+  title: Introduction to key Azure network security services
+  summary: Learn to protect your network from cyber security attacks with Azure network security services.
+  iconUrl: /training/achievements/introduction-to-azure-networking-services.svg
+- uid: learn.introduction-azure-private-link.badge
+  type: badge 
+  title: Introduction to Azure Private Link
+  summary: Describe how Azure Private Link enables private connectivity to Azure services, including its features, how it works, and its use cases.
+  iconUrl: /training/achievements/introduction-to-azure-private-link.svg
+- uid: learn.introduction-azure-virtual-wan.badge
+  type: badge 
+  title: Introduction to Azure Virtual WAN
+  summary: Consider constructing a wide area network (WAN) using software-defined Azure Virtual WAN networking services.
+  iconUrl: /training/achievements/introduction-to-azure-virtual-wan.svg
+- uid: learn.introduction-azure-web-application-firewall.badge
+  type: badge 
+  title: Introduction to Azure Web Application Firewall
+  summary: Describe how Azure Web Application Firewall protects Azure web applications from common attacks, including the features, how it's deployed, and common use cases.
+  iconUrl: /training/achievements/introduction-to-azure-web-application-firewall.svg
 - uid: learn.azure.introduction-infrastructure-code-using-bicep.badge
   type: badge 
   title: Introduction to infrastructure as code using Bicep
@@ -7775,6 +7795,41 @@ achievements:
   title: Build applications with Azure DevOps learning path
   summary: Azure DevOps enables you to build, test, and deploy any application to any cloud or on premises. Learn how to configure build pipelines that continuously build, test, and verify your applications.
   iconUrl: /training/achievements/azure-devops/build-applications-with-azure-devops.svg 
+- uid: learn.azure.run-clustered-applications-azure-shared-disks.badge
+  type: badge 
+  title: Run clustered applications on Azure with shared disks
+  summary: Providing high availability for clustered applications is an important requirement for most organizations. With Microsoft Azure shared disks, you can run clustered or high-availability applications on Azure.
+  iconUrl: /training/achievements/run-clustered-applications-azure-shared-disks.svg
+- uid: learn.run-docker-containers-aci.badge
+  type: badge 
+  title: Run Docker containers with Azure Container Instances
+  summary: Learn how to run containerized apps using Docker containers with Azure Container Instances (ACI).
+  iconUrl: /training/achievements/run-docker-with-azure-container-instances.svg
+- uid: learn.azure.resource-manager-template-reuse.badge
+  type: badge 
+  title: Deploy to multiple Azure environments by using JSON ARM template features
+  summary: Manage multiple Azure environment deployments of your Azure Resource Manager templates by using functions, variables, tags, and parameter files.
+  iconUrl: /training/achievements/modify-azure-resource-manager-template-reuse.svg
+- uid: learn.secure-application-delivery.trophy
+  type: trophy 
+  title: Introduction to Secure Application Delivery with Azure network security
+  summary: Introduction to key Azure network security services for secure application delivery
+  iconUrl: /training/achievements/secure-application-delivery.svg 
+- uid: learn.intro-to-azure-front-door.badge
+  type: badge 
+  title: Introduction to Azure Front Door
+  summary: Describe how Azure Front Door provides a fast, reliable, and secure modern cloud content delivery network. Determine whether Azure Front Door can help you transform your global consumer and enterprise apps into more secure, high-performing, and personalized modern apps.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.intro-to-azure-bastion.badge
+  type: badge 
+  title: Introduction to Azure Bastion
+  summary: Describe how Microsoft Azure can help to reduce the risk of unauthorized access to your cloud-based virtual machines (VMs). Evaluate whether Azure Bastion can help secure administrative access to your VMs.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.introduction-to-azure-files-badge
+  type: badge 
+  title: Introduction to Azure Files
+  summary: Azure Files offers fully managed file shares in the cloud that are accessible via the industry standard Server Message Block (SMB) and Network File System (NFS) protocols. It also provides programmatic access via the Azure Files REST API. In this module, you learn how you can meet your storage needs using Azure Files and Azure File Sync.
+  iconUrl: /training/achievements/generic-badge.svg
 - uid: learn.azure.intro-to-azure-arc.badge
   type: badge 
   title: Introduction to Azure Arc
