@@ -1,3 +1,5 @@
+In this exercise, you’ll use Microsoft Foundry to deploy and explore a generative AI model. You’ll then use the model in an agent that includes knowledge tools to answer user questions.
+
 If you have an Azure subscription, you can explore Microsoft Foundry for yourself.
 
 > [!NOTE]

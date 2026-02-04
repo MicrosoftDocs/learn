@@ -82,4 +82,4 @@ If your workload is spiky, unpredictable, or low volume, use Serverless API (pay
 
 If your workload is steady, high‑volume, or has strict latency needs, use Provisioned Throughput (PTU). PTUs reserve dedicated processing capacity and guarantee predictable latency. PTUs can lead to substantial cost savings for high throughput workloads.
 
-Agentic AI powers cutting edge AI solutions are automating and accelerating business processes every day. With Microsoft Foundry, you can develop scalable secure agents using the latest models and technologies. This module is just the start of your journey.
+Next, use Microsoft Foundry to deploy and explore a generative AI model. 
