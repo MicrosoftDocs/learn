@@ -37,7 +37,7 @@ GitHub Copilot includes several security features that help protect your organiz
 
 **Audit logging**: Organizations using GitHub Enterprise Cloud can track Copilot usage through audit logs, providing visibility into how the tool is being used.
 
-For detailed information about GitHub Copilot's security practices, review the official [GitHub Copilot documentation](https://docs.github.com/en/copilot/customizing-copilot/extending-copilot-chat-with-mcp).
+For detailed information about GitHub Copilot's security practices, review the official [GitHub Copilot in SSMS documentation](/ssms/github-copilot/overview?azure-portal=true).
 
 ## Protecting credentials and connection strings
 

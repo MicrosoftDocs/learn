@@ -1,15 +1,4 @@
-Model Context Protocol (MCP) servers provide AI assistants with direct access to your data sources, enabling more accurate and contextual suggestions. This unit covers how to connect to MCP server endpoints for Microsoft SQL Server, Azure SQL databases, and Fabric Lakehouse environments.
-
-## Understanding MCP server endpoints
-
-An MCP server endpoint is a URL that exposes a data source through the Model Context Protocol. When you configure your AI assistant to connect to an MCP endpoint, it can:
-
-- Query database schemas and metadata
-- Sample data for context (depending on permissions)
-- Execute tools defined by the MCP server
-- Provide suggestions based on your actual data structures
-
-Different MCP servers are available for different Microsoft SQL platforms, each optimized for their respective environments.
+Model Context Protocol (MCP) servers provide AI assistants with direct access to your data sources, enabling more accurate and contextual suggestions. Building on the MCP concepts from the previous units, this unit covers how to connect to MCP server endpoints for Microsoft SQL Server, Azure SQL databases, and Fabric Lakehouse environments.
 
 ## Connect to SQL Server MCP endpoints
 
@@ -17,7 +6,7 @@ For SQL Server and Azure SQL databases, you can use the Data API builder MCP ser
 
 **Using Data API builder:**
 
-Data API builder provides a REST and GraphQL API layer over your database, and it includes MCP support. To set up [SQL MCP servers in VS Code](https://learn.microsoft.com/en-us/azure/data-api-builder/mcp/quickstart-visual-studio-code?azure-portal=true):
+Data API builder provides a REST and GraphQL API layer over your database, and it includes MCP support. To set up [SQL MCP servers in VS Code](/azure/data-api-builder/mcp/quickstart-visual-studio-code?azure-portal=true):
 
 1. Install and configure Data API builder for your database
 2. Enable the MCP endpoint in your Data API builder configuration
@@ -26,14 +15,7 @@ Data API builder provides a REST and GraphQL API layer over your database, and i
 
 **Direct SQL Server connection:**
 
-In VS Code with the MSSQL extension:
-
-1. Connect to your database using the Connections view
-2. Right-click your connected database
-3. Select **Chat with this database**
-4. Grant the MSSQL extension access to GitHub Copilot when prompted
-
-This approach uses the MSSQL extension's built-in integration rather than a separate MCP server, providing schema-aware conversations directly.
+As covered in the earlier unit on enabling GitHub Copilot, you can use the MSSQL extension's built-in integration in VS Code. Right-click your connected database and select **Chat with this database** to start schema-aware conversations without configuring a separate MCP server.
 
 ## Connect to Azure SQL MCP endpoints
 
@@ -126,7 +108,7 @@ MCP servers require authentication to access your data sources. Common authentic
 **API keys**: Some MCP servers support API key authentication. Store keys securely using environment variables or VS Code's input prompts.
 
 > [!IMPORTANT]
-> Never store credentials directly in configuration files that might be committed to source control. Use environment variables, input prompts, or secure credential stores.
+> Never store credentials directly in configuration files that might be committed to source control. Use environment variables, input prompts, or secure credential stores. For more guidance on protecting credentials, see the security considerations covered earlier in this module.
 
 ## Test your MCP connections
 

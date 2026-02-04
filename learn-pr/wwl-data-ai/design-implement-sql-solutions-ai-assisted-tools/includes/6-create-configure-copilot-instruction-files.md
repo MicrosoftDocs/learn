@@ -12,7 +12,7 @@ There are two main types of instruction files:
 
 ## Create a repository instruction file
 
-To [create custom instructions for your repository](https://learn.microsoft.com/en-us/visualstudio/ide/copilot-chat-context?azure-portal=true), follow these steps:
+To [create custom instructions for your repository](/visualstudio/ide/copilot-chat-context?azure-portal=true), follow these steps:
 
 1. Navigate to your repository root folder
 2. Create a `.github` folder if it doesn't exist

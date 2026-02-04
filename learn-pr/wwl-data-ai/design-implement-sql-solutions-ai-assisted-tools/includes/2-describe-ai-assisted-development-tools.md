@@ -24,7 +24,7 @@ These tools provide several key capabilities:
 
 Each Microsoft SQL platform has specific AI integration capabilities:
 
-**SQL Server and Azure SQL Database** are supported through GitHub Copilot in SSMS and Visual Studio Code. You can install the [GitHub Copilot extension in SSMS](https://learn.microsoft.com/en-us/ssms/github-copilot/installation-state?azure-portal=true) to get AI assistance while managing databases, writing queries, and troubleshooting performance issues.
+**SQL Server and Azure SQL Database** are supported through GitHub Copilot in SSMS and Visual Studio Code. You can install the [GitHub Copilot extension in SSMS](/ssms/github-copilot/installation-state?azure-portal=true) to get AI assistance while managing databases, writing queries, and troubleshooting performance issues.
 
 **Azure SQL Managed Instance** also supports GitHub Copilot through the same development tools, allowing you to maintain consistency in your workflow whether you're working with on-premises SQL Server or managed cloud instances.
 
@@ -34,11 +34,11 @@ Each Microsoft SQL platform has specific AI integration capabilities:
 
 Model Context Protocol (MCP) extends AI assistant capabilities by allowing them to connect directly to your data sources. When you configure an MCP server for your SQL database, the AI assistant can query your actual schema, sample data, and metadata to provide more accurate and contextual suggestions.
 
-With MCP, your AI assistant isn't just working with generic SQL knowledge—it understands your specific tables, columns, relationships, and data types. This contextual awareness significantly improves the relevance and accuracy of generated code. You'll learn how to [configure MCP tool options](https://learn.microsoft.com/en-us/azure/data-api-builder/mcp/quickstart-visual-studio-code?azure-portal=true) and connect to MCP server endpoints in later units.
+With MCP, your AI assistant isn't just working with generic SQL knowledge—it understands your specific tables, columns, relationships, and data types. This contextual awareness significantly improves the relevance and accuracy of generated code. You'll learn how to [configure MCP tool options](/azure/data-api-builder/mcp/quickstart-visual-studio-code?azure-portal=true) and connect to MCP server endpoints in later units.
 
 ## Responsible AI considerations
 
-When using AI-assisted tools for database development, you're working with systems that apply [responsible AI principles](https://www.microsoft.com/ai/responsible-ai?azure-portal=true). Both GitHub Copilot and Fabric Copilot are designed with safeguards to help ensure generated code is appropriate and doesn't include harmful content.
+When using AI-assisted tools for database development, you're working with systems that apply [responsible AI principles](/azure/machine-learning/concept-responsible-ai?azure-portal=true). Both GitHub Copilot and Fabric Copilot are designed with safeguards to help ensure generated code is appropriate and doesn't include harmful content.
 
 > [!IMPORTANT]
 > AI-generated code suggestions should always be reviewed before execution, especially for queries that modify data or affect database security. The assistant provides helpful starting points, but you remain responsible for validating that generated code meets your requirements and follows your organization's standards.

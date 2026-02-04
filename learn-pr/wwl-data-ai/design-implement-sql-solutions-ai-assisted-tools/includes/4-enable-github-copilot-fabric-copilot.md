@@ -16,7 +16,7 @@ Before enabling AI-assisted tools, ensure you have the required prerequisites:
 
 ## Enable GitHub Copilot in SQL Server Management Studio
 
-SQL Server Management Studio (SSMS) 22 and later versions include native support for GitHub Copilot. To [install GitHub Copilot in SSMS](https://learn.microsoft.com/en-us/ssms/github-copilot/installation-state?azure-portal=true), follow these steps:
+SQL Server Management Studio (SSMS) 22 and later versions include native support for GitHub Copilot. To [install GitHub Copilot in SSMS](/ssms/github-copilot/installation-state?azure-portal=true), follow these steps:
 
 1. Launch the **Visual Studio Installer** on your machine
 2. Locate your SSMS installation and select **Modify**
@@ -37,7 +37,7 @@ To sign in and activate Copilot:
 
 ## Enable GitHub Copilot in Visual Studio Code
 
-Visual Studio Code provides a flexible environment for database development with the MSSQL extension combined with GitHub Copilot. To [set up GitHub Copilot in VS Code](https://code.visualstudio.com/docs/copilot/setup?azure-portal=true):
+Visual Studio Code provides a flexible environment for database development with the MSSQL extension combined with GitHub Copilot. To [set up GitHub Copilot in VS Code](/sql/tools/visual-studio-code-extensions/github-copilot/overview?azure-portal=true):
 
 1. Open Visual Studio Code
 2. Access the Extensions view (**Ctrl+Shift+X** on Windows/Linux, **Cmd+Shift+X** on macOS)
@@ -101,8 +101,9 @@ After enabling AI-assisted tools, verify everything is working correctly:
 **In VS Code:**
 1. Connect to a database using the MSSQL extension
 2. Open a new `.sql` file
-3. Type a comment describing a query: `-- Get all customers from Seattle`
-4. Press Enter and observe if Copilot suggests relevant SQL
+3. Open the Copilot Chat panel (**Ctrl+Alt+I**)
+4. Type a comment describing a query: `-- Get all customers from Seattle`
+5. Press Enter and observe if Copilot suggests relevant SQL
 
 **In Fabric:**
 1. Open a SQL database in your workspace

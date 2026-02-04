@@ -16,8 +16,8 @@ In this module, you learned how to:
 
 ## Learn more
 
-- [Install GitHub Copilot in SQL Server Management Studio](https://learn.microsoft.com/en-us/ssms/github-copilot/installation-state?azure-portal=true)
-- [Set up GitHub Copilot in VS Code](https://code.visualstudio.com/docs/copilot/setup)
-- [Use SQL MCP servers in VS Code](https://learn.microsoft.com/en-us/azure/data-api-builder/mcp/quickstart-visual-studio-code?azure-portal=true)
-- [Microsoft Fabric MCP Server documentation](https://learn.microsoft.com/en-us/fabric/data-science/data-agent-mcp-server?azure-portal=true)
-- [Responsible AI principles and practices](https://www.microsoft.com/ai/responsible-ai)
+- [Install GitHub Copilot in SQL Server Management Studio](/ssms/github-copilot/installation-state?azure-portal=true)
+- [Set up GitHub Copilot in VS Code](/sql/tools/visual-studio-code-extensions/github-copilot/overview?azure-portal=true)
+- [Use SQL MCP servers in VS Code](/azure/data-api-builder/mcp/quickstart-visual-studio-code?azure-portal=true)
+- [Microsoft Fabric MCP Server documentation](/fabric/data-science/data-agent-mcp-server?azure-portal=true)
+- [Responsible AI principles and practices](/azure/machine-learning/concept-responsible-ai?azure-portal=true)

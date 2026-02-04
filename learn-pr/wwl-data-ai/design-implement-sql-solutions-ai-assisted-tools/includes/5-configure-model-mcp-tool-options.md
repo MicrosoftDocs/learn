@@ -5,7 +5,7 @@ Now that you have GitHub Copilot and Fabric Copilot enabled, you can customize h
 GitHub Copilot supports multiple AI models, each with different capabilities and performance characteristics. You can select which model to use for different scenarios based on your needs.
 
 **Available models typically include:**
-- **GPT-4.1**: Advanced reasoning capabilities, excellent for complex T-SQL generation and database design questions
+- **GPT-4o**: Advanced reasoning capabilities, excellent for complex T-SQL generation and database design questions
 - **Claude models**: Strong at explaining code and providing detailed documentation
 - **Gemini models**: Available in some configurations with different strengths
 
@@ -37,7 +37,7 @@ MCP follows a client-server architecture:
 
 ## Configure MCP tools in GitHub Copilot
 
-GitHub Copilot supports MCP integration through agent mode in VS Code. To [use MCP servers in VS Code](https://learn.microsoft.com/en-us/azure/data-api-builder/mcp/quickstart-visual-studio-code?azure-portal=true):
+GitHub Copilot supports MCP integration through agent mode in VS Code. To [use MCP servers in VS Code](/azure/data-api-builder/mcp/quickstart-visual-studio-code?azure-portal=true):
 
 **Enable Agent Mode:**
 1. Open the Copilot Chat panel in VS Code
@@ -63,7 +63,7 @@ Several MCP server options are available for connecting AI assistants to SQL dat
 
 **Data API builder MCP**: Connects to SQL Server and Azure SQL databases through Data API builder endpoints. This option provides a secure, managed way to expose database metadata to AI assistants.
 
-**Microsoft Fabric MCP Server**: Connects to [Fabric data agents as MCP servers](https://learn.microsoft.com/en-us/fabric/data-science/data-agent-mcp-server?azure-portal=true), enabling AI assistants to query lakehouses, warehouses, and SQL databases within Fabric workspaces.
+**Microsoft Fabric MCP Server**: Connects to [Fabric data agents as MCP servers](/fabric/data-science/data-agent-mcp-server?azure-portal=true), enabling AI assistants to query lakehouses, warehouses, and SQL databases within Fabric workspaces.
 
 **Azure MCP Server**: Provides broader Azure resource integration, including database services.
 
@@ -110,6 +110,6 @@ This approach allows you to use the same data agent from both the Fabric portal 
 **Test configurations**: After changing model or MCP settings, verify the assistant still provides accurate suggestions. Different models might interpret prompts differently.
 
 > [!IMPORTANT]
-> MCP servers establish direct connections to your databases. Ensure your network security policies allow these connections and that authentication is properly configured.
+> MCP servers establish direct connections to your databases. Ensure your network security policies allow these connections and that authentication follows the security best practices covered earlier in this module.
 
 With model selection and MCP tools configured, your AI assistant has the context it needs to provide accurate, database-specific suggestions. The next unit covers how to create custom instruction files that further guide the assistant's behavior.
