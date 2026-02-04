@@ -49,18 +49,22 @@ The MITRE coverage matrix also shows *simulated* coverage—detections that are 
 
 Simulated coverage includes:
 
-- **Analytics rule templates** available in the Content Hub
+- **Analytics rule templates** available in solutions from the Content Hub
 - **Hunting queries** that can be converted to detections
 - **Solution-specific detections** from installed solutions
+
+When you select a specific technique, the details pane shows the number of active detections out of all available detections, helping you identify coverage opportunities.
 
 ### SOC optimization recommendations
 
 Microsoft Sentinel provides SOC optimization recommendations that include:
 
-- **Detection coverage scoring** (High, Medium, Low) for your current coverage
-- **Spider charts** showing coverage across different tactics and techniques
-- **Threat scenario analysis** with recommendations for improving coverage
-- **Active Microsoft Defender products** indication showing available coverage sources
+- **Threat-based coverage optimizations** with scoring (High, Medium, Low) based on the percentage of recommended rules activated
+- **Spider charts** showing coverage across different tactics and techniques for both user-defined and out-of-the-box detections
+- **Threat scenario analysis** with the ability to view full threat scenarios and drill down into specific MITRE ATT&CK techniques
+- **View by threat scenario** toggle on the MITRE ATT&CK page to filter coverage by specific threat scenarios
+- **AI MITRE ATT&CK tagging recommendations** (preview) that use AI to suggest tagging detections with MITRE tactics and techniques
+- **Risk-based recommendations** (preview) for adding controls to address business risks including operational, financial, and compliance risks
 
 ## Using MITRE ATT&CK in security operations
 

@@ -2,6 +2,24 @@ Centralized logging and auditing are fundamental to security operations, providi
 
 **Logging** focuses on recording events for historical analysis, compliance evidence, and forensic investigations. It answers the questions "What happened?" and "Can we prove compliance?" **Auditing** specifically tracks user and administrator activities to establish accountability and meet regulatory requirements. While monitoring (covered in the previous unit) provides real-time visibility, logging ensures you have a durable record of events—sometimes retained for years—to support investigations and demonstrate compliance.
 
+## Understanding security data domains
+
+As a security architect, it's important to understand that security log data comes from two distinct domains that converge in Microsoft Sentinel for unified analysis:
+
+| Domain | What it covers | Primary tools | Log characteristics |
+|--------|---------------|---------------|--------------------|
+| **Infrastructure** | VMs, containers, networks, databases, cloud resources, AI services | Azure Monitor, Defender for Cloud, Azure Activity logs | Agent-based collection, resource-focused, high volume |
+| **Productivity** | Email, files, identity, collaboration, Copilot activities | Microsoft Purview Audit, Defender XDR, Entra ID logs | Service-based collection, user-focused, compliance-critical |
+
+Both domains are essential for comprehensive security operations:
+
+- **Infrastructure logs** help you detect attacks on workloads, investigate lateral movement, and understand resource-level threats
+- **Productivity logs** help you detect compromised accounts, investigate data exfiltration, and establish user accountability
+
+Microsoft Sentinel serves as the convergence point, ingesting logs from both domains into a unified Log Analytics workspace. This enables security analysts to correlate an identity-based attack (detected in Entra ID or M365 logs) with subsequent infrastructure activity (detected in Azure or multicloud logs)—providing the complete attack story.
+
+The rest of this unit covers logging solutions for both domains: Log Analytics workspaces and Microsoft Sentinel for infrastructure data, and Microsoft Purview Audit for productivity data.
+
 ## Design guidance for centralized logging
 
 The Microsoft Cloud Security Benchmark (MCSB) provides guidance on designing logging capabilities:
@@ -48,10 +66,13 @@ The Microsoft Sentinel data lake is a fully managed, cloud-native data lake purp
 - **Open format Parquet data files** for interoperability and extensibility
 - **Single copy of data** mirrored from analytics tier for efficient storage
 - **Separation of storage and compute** for flexibility and cost optimization
-- **Multiple analytics engines** including KQL jobs, Spark notebooks, and graph analytics
+- **Multiple analytics engines** including KQL and Jupyter notebooks
 - **Up to 12 years of retention** for compliance requirements
+- **Activity auditing** tracks data lake activities including data access, job management, and query events
 
 Data in the analytics tier is automatically mirrored to the data lake tier at no extra cost when retention periods match. Organizations can choose to ingest data exclusively into the data lake tier for high-volume, lower-security-value logs.
+
+The data lake's built-in activity audit provides accountability for security operations activities—you can monitor who accessed data, ran notebooks, or created and modified jobs. This auditing is enabled by default and supports compliance requirements for tracking access to security data.
 
 ### Data lake analytics capabilities
 
@@ -60,14 +81,14 @@ The data lake provides multiple ways to analyze historical log data:
 | Capability | Purpose | Best for |
 |------------|---------|----------|
 | **KQL jobs** | Run one-time or scheduled asynchronous queries against data lake data with full KQL support including joins and unions | Incident investigations using historical logs, threat intelligence matching, anomaly detection across months of data |
-| **Summary rules** | Run frequent summarization jobs (every 20 minutes to 24 hours) to aggregate high-volume data | Aggregating network and firewall logs, creating baseline tables for detection |
-| **Search jobs** | Run long-running asynchronous queries to hydrate large volumes of data from a single table | Forensic analysis requiring restoration of archived data |
-| **Spark notebooks** | Use Python-based advanced analytics with Jupyter notebooks | Machine learning models, complex statistical analysis, custom visualizations |
+| **Summary rules** | Run scheduled aggregation jobs (bin sizes from 20 minutes to 24 hours) to precompute data into custom log tables | Aggregating network and firewall logs, creating baseline tables for detection, cost optimization for verbose logs |
+| **Search jobs** | Run long-running searches through up to a year of data in a table, sending results to a new Analytics table | Forensic analysis when query timeout is insufficient, searching large datasets for specific events |
+| **Jupyter notebooks** | Use Python-based advanced analytics with machine learning libraries | Machine learning models, complex statistical analysis, custom visualizations |
 
 KQL jobs can promote data from the data lake tier to the analytics tier, enabling investigation of historical events alongside current incidents. This is particularly valuable for zero-day threat detection and retrospective threat hunting.
 
 > [!TIP]
-> Use KQL jobs for complex queries involving joins across multiple tables. Use summary rules for recurring aggregations. Use search jobs when you need to hydrate large volumes from a single archived table.
+> Use KQL jobs for incident investigations, threat intelligence matching, and promoting data from data lake to analytics tier. Use summary rules for recurring aggregations that support detection rules. Use search jobs when you need to scan large datasets for specific events.
 
 ### Data connectors and data flow
 
@@ -76,6 +97,9 @@ When you onboard to Microsoft Sentinel data lake, your existing data connectors 
 - **Analytics tier only** - For data requiring real-time alerting and hunting
 - **Analytics tier with data lake mirroring** - Default configuration for most security data
 - **Data lake tier only** - For high-volume logs with limited real-time security value
+
+
+:::image type="content" source="../media/data-lake-tiers-data-flow.png" lightbox="../media/data-lake-tiers-data-flow.png" alt-text="A block diagram that depicts the mirroring of data from analytics tier to the data lake tier.":::
 
 ## Microsoft Purview Audit for compliance
 

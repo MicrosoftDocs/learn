@@ -18,7 +18,7 @@ Incident response workflows define how alerts progress from detection through re
 |-------|-------------------------------|
 | **Detection** | Define which alert sources create incidents automatically versus requiring manual review |
 | **Triage** | Design initial assessment criteria—severity validation, false positive identification, scope determination |
-| **Investigation** | Establish standard investigation procedures, evidence collection requirements, and tool usage guidelines |
+| **Investigation** | Establish standard investigation procedures, evidence collection requirements, and tool usage guidelines. Use the investigation graph to visualize entity relationships across the incident. |
 | **Containment** | Define containment actions by incident type and approval requirements for high-impact actions |
 | **Remediation** | Document remediation playbooks for common incident types with rollback procedures |
 | **Recovery** | Establish validation steps to confirm threat elimination before returning to normal operations |
@@ -75,9 +75,11 @@ Threat hunting workflows define how your organization proactively searches for t
 | Stage | Workflow activities |
 |-------|--------------------|
 | **Planning** | Review threat intelligence, identify detection gaps using MITRE ATT&CK coverage, prioritize hunting targets |
-| **Execution** | Run queries, analyze results, document findings with bookmarks, validate hypotheses |
-| **Operationalization** | Convert successful hunts into detection rules, update threat models, brief stakeholders |
+| **Execution** | Run queries, analyze results using UEBA entity pages for deeper context, create bookmarks to preserve relevant findings |
+| **Operationalization** | Convert successful hunts into detection rules, create incidents from validated threats, update threat models |
 | **Measurement** | Track hunting metrics—hypotheses tested, threats discovered, detections created |
+
+Consider using the Microsoft Sentinel **Hunts** capability to manage end-to-end hunting workflows. Hunts lets you define hypotheses, run queries, bookmark results, and track the overall impact of your hunting program in a unified experience.
 
 ## AI-assisted workflow acceleration
 
@@ -85,9 +87,9 @@ Microsoft Security Copilot integrates across security workflows to accelerate an
 
 | Workflow stage | Security Copilot capabilities |
 |----------------|------------------------------|
-| **Incident triage** | Summarize incidents in natural language, identify attack scope, recommend severity adjustments |
-| **Investigation** | Generate investigation queries, explain complex attack chains, correlate related alerts |
-| **Threat hunting** | Create KQL queries from natural language descriptions, suggest hunting hypotheses based on threat intelligence |
+| **Incident triage** | Summarize incidents in natural language, identify attack scope, provide guided response actions with recommended next steps |
+| **Investigation** | Generate investigation queries, analyze scripts and files for malicious behavior, explain complex attack chains, correlate related alerts |
+| **Threat hunting** | Use the Threat Hunting Agent for conversational hunting and multistep investigations, or the query assistant to create KQL queries from natural language descriptions |
 | **Response** | Provide step-by-step remediation guidance, generate response playbook recommendations |
 | **Reporting** | Create executive summaries, generate post-incident reports for stakeholders |
 

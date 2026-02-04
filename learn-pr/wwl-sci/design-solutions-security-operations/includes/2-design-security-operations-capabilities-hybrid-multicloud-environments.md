@@ -95,6 +95,9 @@ The Microsoft Defender portal provides a unified view of security monitoring dat
 
 This centralized visibility eliminates the need for security teams to switch between multiple consoles when monitoring hybrid environments, reducing mean time to detect (MTTD) threats.
 
+> [!NOTE]
+> This unit focuses on infrastructure monitoring across hybrid and multicloud environments. Microsoft 365 productivity workloads (email, files, identity, collaboration) have their own monitoring capabilities through Microsoft Defender XDR services, and is covered in [Design solutions for securing Microsoft 365](/training/modules/design-solutions-secure-microsoft-365/). The Defender portal serves as the convergence point where infrastructure and productivity monitoring combine for unified incident correlation and response.
+
 ## Architect-level design considerations
 
 ### Workspace architecture decisions

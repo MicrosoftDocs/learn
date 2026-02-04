@@ -20,8 +20,8 @@ The Microsoft Defender portal provides a unified SOAR platform that combines Mic
 
 | Capability | Description | Scope |
 |------------|-------------|-------|
-| **Automation rules** | Centrally manage incident handling—tag, assign, close incidents, create tasks, and trigger playbooks | All incidents (Sentinel and Defender XDR) |
-| **Playbooks** | Execute complex, multi-step response workflows using Azure Logic Apps | Triggered from any incident source |
+| **Automation rules** | Centrally manage incident handling—tag, assign, close incidents, create tasks, and trigger playbooks | Incident-trigger rules apply to all incidents (Sentinel and Defender XDR); alert-trigger rules apply only to Sentinel alerts in the Defender portal |
+| **Playbooks** | Execute complex, multi-step response workflows using Azure Logic Apps | Triggered from any incident source; can use incident-trigger or alert-trigger based on the scenario |
 | **Action Center** | Centralized view of all automated and manual remediation actions with approval workflows | Cross-platform visibility |
 
 ### Defender-native automation
@@ -30,14 +30,20 @@ Some SOAR capabilities are built into Defender XDR products and operate automati
 
 | Capability | Description | Applies to |
 |------------|-------------|-----------|
-| **Automated investigation and response (AIR)** | Automatically investigates alerts and takes remediation actions | Defender for Endpoint, Office 365, Identity, Cloud Apps alerts |
-| **Automatic attack disruption** | Contains active attacks at machine speed by isolating compromised assets and blocking lateral movement | High-confidence threats detected by Defender XDR correlation |
+| **Automated investigation and response (AIR)** | Acts as a virtual Tier 1/Tier 2 analyst—automatically investigates alerts, determines verdicts (malicious, suspicious, or no threats found), and takes or recommends remediation actions | Devices (Defender for Endpoint), email and content (Defender for Office 365), identities (Defender for Identity) |
+| **Automatic attack disruption** | Contains active attacks in real-time using high-confidence XDR signals by isolating compromised devices, disabling compromised users, and blocking malicious IP addresses | High-confidence threats including ransomware campaigns and business email compromise detected by Defender XDR correlation |
 
 These Defender-native capabilities complement automation rules and playbooks—they handle immediate, product-specific response while automation rules orchestrate broader workflows.
 
 ## Automation rules
 
-Automation rules serve as the orchestration layer for SOAR operations. In the unified Defender portal, automation rules with incident triggers apply universally across both Microsoft Sentinel and Microsoft Defender XDR incidents.
+Automation rules serve as the orchestration layer for SOAR operations. They support three trigger types:
+
+| Trigger type | When it runs | Use case |
+|--------------|--------------|----------|
+| **Incident created** | When a new incident is created | Initial triage, assignment, and notification |
+| **Incident updated** | When incident status, owner, severity, or other properties change | Escalation, reassignment, synchronization with external systems |
+| **Alert created** | When an alert is created by a Scheduled or NRT analytics rule | Responding to alerts that don't create incidents, or when external logic determines incident creation |
 
 Use automation rules to:
 
@@ -46,6 +52,9 @@ Use automation rules to:
 - **Create incident tasks** for analyst workflows
 - **Trigger playbooks** for complex automation scenarios
 - **Apply time-limited automation** with expiration dates for testing or maintenance
+
+> [!NOTE]
+> In the Defender portal, automation rules with incident triggers run on both Microsoft Sentinel and Defender XDR incidents. Alert-trigger automation rules run only on Microsoft Sentinel alerts. It can take up to 10 minutes from alert triggering to automation rule execution.
 
 ## Playbooks
 
@@ -56,19 +65,25 @@ Playbooks execute complex, multi-step response workflows based on Azure Logic Ap
 - **Scalability** through Standard (single-tenant) or Consumption (multitenant) hosting models
 - **Reusable patterns** for common scenarios like data enrichment, ticketing synchronization, and threat containment
 
+### Playbook use cases
+
+| Use case | Description |
+|----------|-------------|
+| **Enrichment** | Collect data and attach it to an incident so analysts can make better decisions |
+| **Bi-directional sync** | Sync incidents with external ticketing systems (ServiceNow, Jira) automatically |
+| **Orchestration** | Send notifications to Microsoft Teams or Slack channels for incident awareness |
+| **Response** | Take immediate containment actions like isolating devices or blocking users |
+
+### Logic Apps hosting models
+
 | Logic Apps Model | Best for |
 |------------------|----------|
-| **Standard (single-tenant)** | Consistent high-volume scenarios requiring dedicated resources and fixed pricing |
+| **Standard (single-tenant)** | Consistent high-volume scenarios requiring dedicated resources and predictable pricing |
 | **Consumption (multitenant)** | Variable or lower-volume scenarios with pay-per-execution pricing |
 
-### Prebuilt playbooks
+### Prebuilt playbooks and templates
 
-Microsoft Sentinel provides prebuilt playbooks through the Content Hub for common use cases:
-
-- Data enrichment from threat intelligence sources
-- Bi-directional synchronization with ticketing systems (ServiceNow, Jira)
-- Incident notifications through Microsoft Teams or Slack
-- Threat response actions like endpoint isolation via Defender for Endpoint
+Microsoft Sentinel provides playbook templates through Content Hub, the Automation page, and the Microsoft Sentinel GitHub repository. Templates are prebuilt, tested workflows ready for customization—covering the use cases in the previous table. When a new version of a template is published, active playbooks created from that template show an update notification.
 
 ## Design considerations for SOAR architecture
 
@@ -81,6 +96,7 @@ Microsoft Sentinel provides prebuilt playbooks through the Content Hub for commo
 ### Playbook architecture decisions
 
 - **Hosting model**: Choose between Standard and Consumption Logic Apps based on scale, performance requirements, and budget.
+- **Permissions model**: Microsoft Sentinel uses a dedicated service account to run playbooks. Grant the **Microsoft Sentinel Automation Contributor** role to the resource group containing playbooks. This service account approach increases security compared to user-based execution.
 - **Intellectual property protection**: For MSSPs, determine where playbooks reside to protect proprietary automation logic.
 - **Reusability and standardization**: Design playbook libraries that can be deployed across multiple workspaces using Content Hub templates.
 
@@ -111,14 +127,3 @@ Microsoft Sentinel provides prebuilt playbooks through the Content Hub for commo
 - Customer-specific customizations in customer tenants
 - Balances IP protection with flexibility
 - Use cross-workspace analytics rules for unified visibility
-
-## Best practices summary
-
-| Practice | Description |
-|----------|-------------|
-| **Start simple** | Begin with high-value, low-risk automation before tackling complex scenarios |
-| **Human oversight** | Include approval steps for high-impact actions |
-| **Leverage templates** | Use prebuilt playbooks from Content Hub to accelerate deployment |
-| **Implement governance** | Define ownership, change management, and review cycles |
-| **Test thoroughly** | Validate automation in nonproduction environments before deployment |
-| **Design for reliability** | Implement error handling and notification mechanisms |
