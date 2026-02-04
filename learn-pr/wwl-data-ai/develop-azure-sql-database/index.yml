@@ -3,7 +3,7 @@ uid: learn-wwl.develop-azure-sql-database
 metadata:
   title: Develop for Azure SQL Database
   description: "Learn how to create and configure an Azure SQL Database. You'll use SQL Database Projects in VS Code, including installing the extension, importing, and modifying a schema. Additionally, you'll build and deploy database projects in GitHub Actions and Azure Pipelines, and automate and invoke the publishing of a database."
-  ms.date: 08/06/2025
+  ms.date: 02/04/2026
   author: JulianePadrao
   ms.author: jupadrao
   ms.topic: module-standard-task-based

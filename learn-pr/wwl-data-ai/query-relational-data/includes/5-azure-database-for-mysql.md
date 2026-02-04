@@ -1,9 +1,6 @@
 As with PostgreSQL, there are many tools available to connect to MySQL that enable you to create and run scripts of SQL commands. You can use the **mysql** command-line utility, which is also available in the Azure Cloud Shell, or you can use graphical tools from the desktop such as MySQL Workbench. 
 
-In this unit, you'll see how to connect to Azure Database for MySQL using MySQL Workbench. 
-
-> [!NOTE]
-> Currently there are no extensions available for connecting to MySQL from Azure Data Studio.
+In this unit, you'll see how to connect to Azure Database for MySQL using MySQL Workbench.
 
 ## Retrieve connection information for Azure Database for MySQL
 
