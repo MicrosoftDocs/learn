@@ -1,3 +1,5 @@
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=01]
+
 Effective data governance requires more than just controlling access—it demands visibility into your data assets, accountability for how they're used, and enforcement mechanisms that scale with your organization. As data platforms grow in complexity, managing table definitions, tracking data lineage, enforcing retention policies, and sharing data securely become increasingly challenging. **Unity Catalog** in Azure Databricks provides the foundation for comprehensive governance that addresses these challenges through centralized metadata management and policy enforcement.
 
 When you govern Unity Catalog objects, you work across several interconnected capabilities. You document tables and columns with **comments and tags** that help data consumers discover and understand your assets. You implement **attribute-based access control (ABAC)** using governed tags and policies that automatically enforce fine-grained permissions. You configure **data retention policies** using Delta Lake's `VACUUM` and predictive optimization to manage storage costs and meet compliance requirements.

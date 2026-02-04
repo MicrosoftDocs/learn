@@ -2,6 +2,8 @@
 
 In this unit, you learn how to create tables with descriptive comments and tags, and use discovery tools to explore your data assets in Unity Catalog.
 
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=02]
+
 ## Add comments to tables and columns
 
 **Comments** provide human-readable descriptions that help data consumers understand the purpose and content of your data assets. You can add comments to any securable object in Unity Catalog, including catalogs, schemas, tables, views, and columns.
@@ -71,6 +73,8 @@ After adding comments, any user with the `BROWSE` privilege can view them in Cat
 ## Apply tags for organization and discovery
 
 **Tags** are key-value pairs that help you organize and categorize data assets in Unity Catalog. Unlike comments, which provide descriptive text, tags enable structured classification and improve search functionality.
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=03]
     
 ### Add tags using SQL
 
