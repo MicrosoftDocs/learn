@@ -104,7 +104,7 @@ This centralized visibility eliminates the need for security teams to switch bet
 As a cybersecurity architect, workspace topology is a key decision that affects both monitoring and logging effectiveness. From a monitoring perspective, consider:
 
 - **Threat correlation** - Security analysts need to correlate events across identities, endpoints, and network traffic. Data in separate workspaces requires cross-workspace queries, which are slower and more complex.
-- **Alert context** - When an alert fires, analysts need surrounding context from related logs. Fragmented workspaces mean analysts may miss critical context during investigations.
+- **Alert context** - When an alert fires, analysts need the surrounding context from related logs. Fragmented workspaces mean analysts may miss critical context during investigations.
 - **Detection rules** - Analytics rules and detection logic work most efficiently when all relevant data sources are in the same workspace.
 
 The next unit covers workspace architecture in more depth, including log retention tiers, cost optimization, and compliance considerations.
