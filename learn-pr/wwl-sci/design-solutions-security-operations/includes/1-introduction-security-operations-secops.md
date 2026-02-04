@@ -4,7 +4,7 @@ The primary objective of a cloud security operations (SecOps) function is to det
 - Reactively respond to attacks detected by tools
 - Proactively hunt for attacks that slipped past reactive detections
 
-The Microsoft Cybersecurity Reference Architecture (MCRA) provides guidance for designing end-to-end security using Zero Trust principles. The MCRA includes detailed diagrams for security operations (SecOps/SOC), helping organizations plan unified operations across hybrid and multicloud environments.
+[The Microsoft Cybersecurity Reference Architecture (MCRA)](https://aka.ms/MCRA) provides guidance for designing end-to-end security using Zero Trust principles and includes detailed diagrams for security operations (SecOps/SOC), helping organizations plan unified operations across hybrid and multicloud environments.
 
 ## Security operations strategy overview 
 
@@ -17,7 +17,6 @@ Modern security operations platforms address this challenge by integrating SIEM,
 :::image type="content" source="../media/provide-integrated-capabilities.png" alt-text="Diagram showing the integrated capabilities of a Zero Trust approach." lightbox="../media/provide-integrated-capabilities.png":::
 
 ## Security operations functions
-
 
 Security operations teams often focus on three key outcomes:
 
@@ -36,7 +35,6 @@ To deliver against these outcomes, security operations teams should be structure
 
 :::image type="content" source="../media/security-operations-functions.png" alt-text="Diagram that shows security Operations functions (Tiers)." lightbox="../media/security-operations-functions.png":::
 
-
 ## Modernization
 
 Detecting and responding to threats is currently undergoing significant modernization at all levels.
@@ -46,8 +44,10 @@ Detecting and responding to threats is currently undergoing significant moderniz
   - **Responsiveness** via mean time to acknowledge (MTTA).
   - **Remediation speed** via mean time to remediate (MTTR).
 - **Technology evolution:** SOC technology is evolving from exclusive use of static analysis of logs in a SIEM to add the use of specialized tooling and sophisticated analysis techniques. This provides deep insights into assets that provide high quality alerts and investigation experience that complement the breadth view of the SIEM. Both types of tooling are increasingly using AI and machine learning, behavior analytics, and integrated threat intelligence to help spot and prioritize anomalous actions that could be a malicious attacker.
+- **AI-assisted security operations:** Generative AI is transforming how SOC analysts work by accelerating investigation and response. AI copilots help analysts quickly summarize incidents, correlate alerts across data sources, generate investigation queries using natural language, and recommend response actions. This assistance reduces the expertise barrier for junior analysts, helps experienced analysts work faster, and enables teams to handle higher alert volumes without proportional staffing increases.
 - **Threat hunting:** SOCs are adding hypothesis driven threat hunting to proactively identify advanced attackers and shift noisy alerts out of frontline analyst queues.
-- **Incident management:** Discipline is becoming formalized to coordinate nontechnical elements of incidents with legal, communications, and other teams. **Integration of internal context:** To help prioritize SOC activities such as the relative risk scores of user accounts and devices, sensitivity of data and applications, and key security isolation boundaries to closely defend.
+- **Incident management:** Discipline is becoming formalized to coordinate nontechnical elements of incidents with legal, communications, and other teams.
+- **Integration of internal context:** SOCs are incorporating business context to prioritize activities, including relative risk scores of user accounts and devices, sensitivity of data and applications, and key security isolation boundaries to defend.
 
 ## Team composition and key relationships
 

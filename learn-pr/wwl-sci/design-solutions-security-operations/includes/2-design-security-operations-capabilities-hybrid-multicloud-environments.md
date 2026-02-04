@@ -99,7 +99,14 @@ This centralized visibility eliminates the need for security teams to switch bet
 
 ### Workspace architecture decisions
 
-As a cybersecurity architect, one of your key decisions is workspace topology. Consider these patterns:
+As a cybersecurity architect, one of your key decisions is workspace topology. This decision directly impacts your monitoring effectiveness because:
+
+- **Threat correlation** - Security analysts need to correlate events across identities, endpoints, and network traffic. Data in separate workspaces requires cross-workspace queries, which are slower and more complex.
+- **Alert context** - When an alert fires, analysts need surrounding context from related logs. Fragmented workspaces mean analysts may miss critical context during investigations.
+- **Detection rules** - Analytics rules and detection logic work most efficiently when all relevant data sources are in the same workspace.
+- **Cost efficiency** - Commitment tier pricing applies per workspace, so consolidation can reduce costs, but data egress charges may offset savings if sources are geographically dispersed.
+
+Consider these patterns:
 
 | Pattern | When to use | Trade-offs |
 |---------|-------------|------------|
@@ -111,14 +118,13 @@ For most hybrid and multicloud scenarios, a primary workspace with Azure Lightho
 
 ### Agent deployment strategy at scale
 
-Design your agent deployment approach based on environment characteristics:
+Deploying the Azure Monitor agent consistently across hybrid environments ensures complete monitoring coverage. For non-Azure machines, the Azure Arc agent must be installed first to enable Azure Monitor agent deployment. Design your agent deployment approach based on environment characteristics:
 
 - **Azure Policy with remediation tasks** - Automatically deploy Azure Monitor agent to Arc-enabled servers that don't have it installed. Best for enforcing consistent monitoring across large estates.
 - **Defender for Cloud auto-provisioning** - Automatically deploys Arc agent and monitoring extensions to AWS EC2 and GCP VM instances when connectors are configured. Simplifies multicloud onboarding.
-- **Configuration management tools** - Use Ansible, Puppet, or DSC for environments with existing automation. Provides flexibility but requires maintenance.
 
 > [!TIP]
-> Use Azure Resource Graph queries to identify monitoring coverage gaps—resources that are Arc-enabled but missing the Azure Monitor agent or required data collection rules.
+> Use Azure Resource Graph queries to identify monitoring coverage gaps—resources that are Arc-enabled but missing the Azure Monitor agent or required data collection rules. For sample queries, see [Azure Resource Graph sample queries for Azure Arc-enabled servers](/azure/azure-arc/servers/resource-graph-samples).
 
 ### Monitoring coverage and resilience
 

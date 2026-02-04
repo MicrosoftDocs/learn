@@ -1,6 +1,6 @@
-This module covers designing security operations solutions in hybrid, multicloud, and edge environments. You learn about Microsoft's unified security operations platform that combines extended detection and response (XDR), security information and event management (SIEM), and security orchestration, automation, and response (SOAR) capabilities.
+This module covers designing security operations solutions in hybrid and multicloud environments. You learn about Microsoft's unified security operations platform that combines extended detection and response (XDR), security information and event management (SIEM), and security orchestration, automation, and response (SOAR) capabilities.
 
-Imagine you're a security architect in an organization operating across hybrid, multicloud, and edge environments. Your security operations center (SOC) faces challenges managing security consistently across different platforms while controlling costs and analyst workload. This module guides you through designing security operations solutions using Microsoft's unified approach.
+Imagine you're a security architect in an organization operating across hybrid and multicloud environments. Your security operations center (SOC) faces challenges managing security consistently across different platforms while controlling costs and analyst workload. This module guides you through designing security operations solutions using Microsoft's unified approach.
 
 ## Learning objectives
 
