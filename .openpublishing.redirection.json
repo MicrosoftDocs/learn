@@ -64519,6 +64519,46 @@
       "source_path": "learn-pr/azure/intro-to-azure-arc/7-summary.yml",
       "redirect_url": "https://learn.microsoft.com/azure/azure-arc/overview",
       "redirect_document_id": false
-    }                                                                            
+    },
+    {
+      "source_path": "learn-pr/azure/identify-threats-with-azure-security-center/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/defender-for-cloud/defender-for-cloud-introduction",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/identify-threats-with-azure-security-center/2-security-center-tiers.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/defender-for-cloud/defender-for-cloud-introduction",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/identify-threats-with-azure-security-center/3-customize-collection-options.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/defender-for-cloud/defender-for-cloud-introduction",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/identify-threats-with-azure-security-center/4-policy-management.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/defender-for-cloud/defender-for-cloud-introduction",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/identify-threats-with-azure-security-center/5-analyze-recommendations.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/defender-for-cloud/defender-for-cloud-introduction",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/identify-threats-with-azure-security-center/6-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/defender-for-cloud/defender-for-cloud-introduction",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/identify-threats-with-azure-security-center/7-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/defender-for-cloud/defender-for-cloud-introduction",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/identify-threats-with-azure-security-center/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/defender-for-cloud/defender-for-cloud-introduction",
+      "redirect_document_id": false
+    }
   ]
 }

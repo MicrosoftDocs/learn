@@ -7835,3 +7835,8 @@ achievements:
   title: Introduction to Azure Arc
   summary: In this module, you learn how Azure Arc  simplifies governance and management of hybrid environments by delivering a consistent multicloud and on-premises management platform. You learn how Azure Arc provides a centralized approach to managing Windows and Linux servers and Kubernetes clusters that are hosted outside of Azure. You also learn how Azure Arc-enabled data services provides unified management, deployment, and data sovereignty compliance. Finally, you get an idea of how Azure Arc can integrate with other Azure services.
   iconUrl: /training/achievements/intro-to-azure-arc.svg
+- uid: learn.azure-security.identify-threats-with-azure-security-center.badge
+  type: badge 
+  title: Identify security threats with Microsoft Defender for Cloud
+  summary: In this module, you'll discover how to detect and respond to threats with Microsoft Defender for Cloud.
+  iconUrl: /training/achievements/identify-threats-with-azure-security-center.svg
