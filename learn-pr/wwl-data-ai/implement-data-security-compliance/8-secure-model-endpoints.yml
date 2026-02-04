@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.implement-data-security-compliance.8-secure-model-endpoints
+title: Secure model endpoints
+metadata:
+  title: Secure model endpoints, including Managed Identity
+  description: Learn how to secure AI model endpoints using Managed Identity authentication and implement monitoring for endpoint access.
+  ms.date: 02/04/2026
+  author: JulianePadrao
+  ms.author: jupadrao
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/8-secure-model-endpoints.md)]

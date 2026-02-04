@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.implement-data-security-compliance.5-design-implement-object-level-permissions
+title: Design and implement object-level permissions
+metadata:
+  title: Design and implement object-level permissions
+  description: Learn how to implement object-level permissions using roles, schemas, and the principle of least privilege in SQL databases.
+  ms.date: 02/04/2026
+  author: JulianePadrao
+  ms.author: jupadrao
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-design-implement-object-level-permissions.md)]
