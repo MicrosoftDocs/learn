@@ -1,13 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.design-solutions-security-operations.introduction-security-operations-secops
-title: Introduction to Security operations (SecOps)
+title: Describe the function of Security operations (SecOps)
 metadata:
-  title: Introduction to Security operations (SecOps)
-  description: "SC-100 preparatory unit on the topic: Introduction to Security operations (SecOps)."
-  ms.date: 09/26/2024
+  title: Describe the function of Security operations (SecOps)
+  description: "SC-100 preparatory unit on the topic: Describe the function of Security operations (SecOps)."
+  ms.date: 02/02/2026
   author: ceperezb
   ms.author: ceperezb
   ms.topic: unit
-durationInMinutes: 5
+durationInMinutes: 8
 content: |
-  [!include[](includes/1-introduction-security-operations-secops.md)]
+  [!include[](includes/1-introduction-security-operations-secops.md)]
