@@ -6,4 +6,4 @@ Now it's your opportunity to use Azure Stream Analytics and Power BI to create a
 
 Launch the exercise and follow the instructions.
 
-[![Button to launch exercise.](../media/launch-exercise.png)](https://aka.ms/mslearn-stream-powerbi?azure-portal=true)
+[![Button to launch exercise.](../media/launch-exercise.png)](/azure/stream-analytics/no-code-power-bi-tutorial)
