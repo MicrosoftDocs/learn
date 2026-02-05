@@ -1,0 +1,43 @@
+### YamlMime:Module
+uid: learn.wwl.govern-ai-ready-workloads-microsoft-foundry
+metadata:
+  title: "Govern AI Ready Workloads with Microsoft Foundry"
+  description: "Learn to govern AI workloads using Microsoft Foundry by enforcing policy‑driven controls, securing identity access, monitoring compliance, and managing model lifecycle, quotas, and costs through practical, hands‑on exercises."
+  ms.date: 02/02/2026
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: module
+  ms.service: azure
+title: "Govern AI ready workloads with Microsoft Foundry"
+summary: Learn to govern AI workloads using Microsoft Foundry by enforcing policy‑driven controls, securing identity access, monitoring compliance, and managing model lifecycle, quotas, and costs through practical, hands‑on exercises.
+abstract: |
+  After completing this module, you'll be able to:
+  - Configure policy-driven governance controls for AI infrastructure using Microsoft Foundry.
+  - Implement identity and access management strategies for AI workloads.
+  - Establish monitoring and compliance workflows for responsible AI operations.
+  - Evaluate governance patterns that align with enterprise security requirements.
+prerequisites: |
+  - Familiarity with Azure fundamentals, including subscriptions, resource groups, and role‑based access control (RBAC).
+  - Basic understanding of Azure AI services and Microsoft Foundry model deployment concepts.
+  - Awareness of governance, security, and compliance principles such as policies, data residency, and cost management.
+  - Experience navigating the Azure portal to create, configure, and monitor cloud resources.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- administrator
+products:
+- ai-services
+- azure
+subjects:
+- infrastructure
+units:
+- learn.wwl.govern-ai-ready-workloads-microsoft-foundry.introduction
+- learn.wwl.govern-ai-ready-workloads-microsoft-foundry.configure-policy-driven-governance
+- learn.wwl.govern-ai-ready-workloads-microsoft-foundry.implement-identity-access-management
+- learn.wwl.govern-ai-ready-workloads-microsoft-foundry.establish-monitor-compliance-workflows
+- learn.wwl.govern-ai-ready-workloads-microsoft-foundry.exercise-configure-governance-controls
+- learn.wwl.govern-ai-ready-workloads-microsoft-foundry.knowledge-check
+- learn.wwl.govern-ai-ready-workloads-microsoft-foundry.summary
+badge:
+  uid: learn.wwl.govern-ai-ready-workloads-microsoft-foundry.badge
