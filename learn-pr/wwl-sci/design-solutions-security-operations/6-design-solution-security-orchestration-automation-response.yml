@@ -4,11 +4,11 @@ title: Design a solution for security orchestration, automation, and response (S
 metadata:
   title: Design a solution for security orchestration, automation, and response (SOAR)
   description: "SC-100 preparatory unit on the topic: design a solution for security orchestration, automation, and response (SOAR)."
-  ms.date: 3/15/2023
+  ms.date: 02/02/2026
   author: ceperezb
   ms.author: ceperezb
   ms.topic: unit
-durationInMinutes: 10
+durationInMinutes: 9
 content: |
   [!include[](includes/6-design-solution-security-orchestration-automation-response.md)]
-
+

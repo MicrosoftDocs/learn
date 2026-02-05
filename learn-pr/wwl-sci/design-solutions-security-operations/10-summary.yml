@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.design-solutions-security-operations.summary
-title: Summary - Design solutions for security operations
+title: Summary
 metadata:
-  title: Summary - Design solutions for security operations
+  title: Summary
   description: "Summary of the module on the topic: design solutions for security operations."
   ms.date: 09/26/2024
   author: ceperezb
@@ -10,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 3
 content: |
-  [!include[](includes/10-summary.md)]
+  [!include[](includes/10-summary.md)]
