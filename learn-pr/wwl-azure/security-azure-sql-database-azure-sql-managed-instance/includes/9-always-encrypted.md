@@ -85,7 +85,7 @@ The following limitations apply to queries on encrypted columns:
      -  [= (Equals)](/sql/t-sql/language-elements/equals-transact-sql) in point lookup searches.<br>
      -  [IN](/sql/t-sql/language-elements/in-transact-sql).
      -  [SELECT - GROUP BY](/sql/t-sql/queries/select-group-by-transact-sql).
-     -  [DISTINCT](/sql/t-sql/queries/select-transact-sql?view=sql-server-ver16#c-using-distinct-with-select).
+     -  [DISTINCT](/sql/t-sql/queries/select-transact-sql).
  -  No computations on columns encrypted using randomized encryption are allowed.
 
 > [!NOTE]
@@ -119,7 +119,7 @@ Operand type clash: char(11) encrypted with (encryption_type = 'DETERMINISTIC', 
 ```
 
  -  Applications must use query parameters to pass values that correspond to encrypted columns. For example, when inserting data to encrypted columns or filtering by encrypted columns (when using deterministic encryption). Passing literals or T-SQL variables corresponding to encrypted columns isn't supported. For more information specific to a client driver you're using, see [Develop applications using Always Encrypted](/sql/relational-databases/security/encryption/always-encrypted-client-development).
- -  You must use Parameterization for Always Encrypted variables in [Azure Data Studio](/sql/relational-databases/security/encryption/always-encrypted-query-columns-ads?view=sql-server-ver16#parameterization-for-always-encrypted) or [SSMS](/sql/relational-databases/security/encryption/always-encrypted-query-columns-ssms?view=sql-server-ver16#param) to issue queries that pass values corresponding to encrypted columns in these tools. For example, when inserting data to encrypted columns or filtering by encrypted columns (when using deterministic encryption).
+ -  You must use Parameterization for Always Encrypted variables in [Azure Data Studio](/sql/relational-databases/security/encryption/always-encrypted-query-columns-ads) or [SSMS](/sql/relational-databases/security/encryption/always-encrypted-query-columns-ssms) to issue queries that pass values corresponding to encrypted columns in these tools. For example, when inserting data to encrypted columns or filtering by encrypted columns (when using deterministic encryption).
  -  [Table-valued parameters](/sql/relational-databases/tables/use-table-valued-parameters-database-engine) targeting encrypted columns aren't supported.
  -  Queries using the following clauses aren't supported:
     
@@ -131,9 +131,9 @@ Operand type clash: char(11) encrypted with (encryption_type = 'DETERMINISTIC', 
     
     
      -  Columns using one of the following data types: xml, timestamp, rowversion, image, ntext, text, sql\_variant, hierarchyid, geography, geometry, alias, user-defined types.
-     -  [FILESTREAM](/sql/t-sql/statements/create-table-transact-sql?view=sql-server-ver16#filestream) columns
-     -  Columns with the [IDENTITY](/sql/t-sql/statements/create-table-transact-sql?view=sql-server-ver16#identity) property.
-     -  Columns with [ROWGUIDCOL](/sql/t-sql/statements/create-table-transact-sql?view=sql-server-ver16#rowguidcol) property.
+     -  [FILESTREAM](/sql/t-sql/statements/create-table-transact-sql) columns
+     -  Columns with the [IDENTITY](/sql/t-sql/statements/create-table-transact-sql) property.
+     -  Columns with [ROWGUIDCOL](/sql/t-sql/statements/create-table-transact-sql) property.
      -  String (varchar, char, etc.) columns with collations other than [binary-code point (\_BIN2) collations](/sql/relational-databases/collations/collation-and-unicode-support) when using deterministic encryption.
      -  Columns that are keys for clustered and nonclustered indices when using randomized encryption (indices on columns using deterministic encryption are supported).
      -  Columns included in full-text indexes (Always Encrypted doesn't support [Full Text Search](/sql/relational-databases/search/full-text-search)).
@@ -141,7 +141,7 @@ Operand type clash: char(11) encrypted with (encryption_type = 'DETERMINISTIC', 
      -  Columns referenced by computed columns (when the expression does unsupported operations for Always Encrypted).
      -  [Sparse column set](/sql/relational-databases/tables/use-sparse-columns).
      -  Columns referenced by [statistics](/sql/relational-databases/statistics/statistics) when using randomized encryption (deterministic encryption is supported).
-     -  [Partitioning columns](/sql/relational-databases/partitions/partitioned-tables-and-indexes?view=sql-server-ver16#partitioning-column).
+     -  [Partitioning columns](/sql/relational-databases/partitions/partitioned-tables-and-indexes).
      -  Columns with [default constraints](/sql/relational-databases/tables/specify-default-values-for-columns).
      -  Columns referenced by [unique constraints](/sql/relational-databases/tables/create-unique-constraints) when using randomized encryption (deterministic encryption is supported).
      -  Primary key columns when using randomized encryption (deterministic encryption is supported).
@@ -171,7 +171,7 @@ Always Encrypted uses the following Transact-SQL statements, system catalog view
  -  [CREATE COLUMN ENCRYPTION KEY (Transact-SQL)](/sql/t-sql/statements/create-column-encryption-key-transact-sql)
  -  [ALTER COLUMN ENCRYPTION KEY (Transact-SQL)](/sql/t-sql/statements/alter-column-encryption-key-transact-sql)
  -  [DROP COLUMN ENCRYPTION KEY (Transact-SQL)](/sql/t-sql/statements/drop-column-encryption-key-transact-sql)
- -  [CREATE TABLE (ENCRYPTED WITH)](/sql/t-sql/statements/create-table-transact-sql?view=sql-server-ver16#encrypted-with)
+ -  [CREATE TABLE (ENCRYPTED WITH)](/sql/t-sql/statements/create-table-transact-sql)
 
 ### System catalog views and stored procedures
 
