@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.build-agent-workflows-microsoft-foundry.use-workflows-in-code
-title: Use Workflows in Code
+title: Use workflows in code
 metadata:
-  title: Use workflows in code
+  title: Use Workflows in Code
   description: Learn how to invoke and manage workflows programmatically in Microsoft Foundry.
   author: buzahid
   ms.author: buzahid
