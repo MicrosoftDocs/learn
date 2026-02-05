@@ -4,10 +4,10 @@ title: Design integrated posture management and workload protection
 metadata:
   title: Design integrated posture management and workload protection
   description: "SC-100 preparatory unit on the topic: design integrated posture management and workload protection."
-  ms.date: 3/19/2023
+  ms.date: 02/05/2026
   author: ceperezb
   ms.author: ceperezb
   ms.topic: unit
-durationInMinutes: 10
+durationInMinutes: 6
 content: |
   [!include[](includes/3-design-integrated-posture-management-workload-protection.md)]

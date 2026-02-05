@@ -4,10 +4,10 @@ title: Integrate hybrid and multicloud environments with Azure Arc
 metadata:
   title: Integrate hybrid and multicloud environments with Azure Arc
   description: "SC-100 preparatory unit on the topic: Integrate hybrid and multicloud environments with Azure Arc."
-  ms.date: 3/19/2023
+  ms.date: 02/05/2026
   author: ceperezb
   ms.author: ceperezb
   ms.topic: unit
-durationInMinutes: 10
+durationInMinutes: 7
 content: |
   [!include[](includes/7-integrate-hybrid-multi-cloud-environments-azure-arc.md)]
