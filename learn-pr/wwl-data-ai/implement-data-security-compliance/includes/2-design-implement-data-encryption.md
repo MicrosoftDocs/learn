@@ -4,7 +4,7 @@ Understanding when to use each encryption method helps you design security solut
 
 ## Understand encryption layers
 
-Database encryption operates at different layers, each addressing specific security concerns. Transparent Data Encryption (TDE) encrypts data at rest, protecting the physical database files. Column-level encryption targets specific sensitive columns, while Always Encrypted protects data throughout its lifecycle, including during query processing.
+Database encryption operates at different layers, each addressing specific security concerns. [Transparent Data Encryption (TDE)](/sql/relational-databases/security/encryption/transparent-data-encryption?azure-portal=true) encrypts data at rest, protecting the physical database files. [Column-level encryption](/sql/relational-databases/security/encryption/encrypt-a-column-of-data?azure-portal=true) targets specific sensitive columns, while [Always Encrypted](/sql/relational-databases/security/encryption/always-encrypted-database-engine?azure-portal=true) protects data throughout its lifecycle, including during query processing.
 
 :::image type="content" source="../media/encryption.png" alt-text="Diagram comparing three encryption layers: TDE at the database file level, column-level encryption at specific columns, and Always Encrypted with encryption keys held outside the database at the client application level.":::
 

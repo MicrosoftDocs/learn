@@ -1,4 +1,4 @@
-Row-Level Security (RLS) enables you to control access to rows in a database table based on the characteristics of the user executing a query. Unlike table-level permissions that grant or deny access to entire tables, RLS filters rows dynamically so users see only the data they're authorized to access.
+[Row-Level Security (RLS)](/sql/relational-databases/security/row-level-security?azure-portal=true) enables you to control access to rows in a database table based on the characteristics of the user executing a query. Unlike table-level permissions that grant or deny access to entire tables, RLS filters rows dynamically so users see only the data they're authorized to access.
 
 This capability proves valuable when multiple users or tenants share the same tables but should only see their own data. Sales representatives see their own customer records, managers see their team's data, and regional directors see all data for their region. The filtering happens automatically without requiring application code changes.
 
@@ -10,7 +10,7 @@ Row-Level Security in SQL Server and Azure SQL uses two components working toget
 
 A security predicate is an inline table-valued function that returns 1 (true) or 0 (false) for each row. This function receives the current user context and row values as input, then determines whether that user should see the row. The predicate function encapsulates your business logic for data access.
 
-A security policy binds predicate functions to tables and specifies the type of filtering to apply. You can create filter predicates that silently exclude unauthorized rows from query results, or block predicates that prevent unauthorized insert, update, and delete operations.
+A [security policy](/sql/t-sql/statements/create-security-policy-transact-sql?azure-portal=true) binds predicate functions to tables and specifies the type of filtering to apply. You can create filter predicates that silently exclude unauthorized rows from query results, or block predicates that prevent unauthorized insert, update, and delete operations.
 
 Filter predicates affect `SELECT`, `UPDATE`, and `DELETE` statements by removing rows the user can't access. Users don't receive errors; they see a filtered result set. Block predicates prevent data modifications that would violate the security rules, raising an error when users attempt unauthorized changes.
 

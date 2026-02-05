@@ -1,4 +1,4 @@
-Dynamic Data Masking provides a way to limit exposure of sensitive data without changing your application code or the underlying data. When users query masked columns, SQL Server returns obfuscated values based on masking rules you define. The actual data remains unchanged in the database, but unauthorized users see masked values in query results.
+[Dynamic Data Masking](/sql/relational-databases/security/dynamic-data-masking?azure-portal=true) provides a way to limit exposure of sensitive data without changing your application code or the underlying data. When users query masked columns, SQL Server returns obfuscated values based on masking rules you define. The actual data remains unchanged in the database, but unauthorized users see masked values in query results.
 
 This approach works well when you need to protect sensitive information from certain users while allowing others to see the complete data. Database administrators, developers, and support staff can work with production data without exposing actual customer information, credit card numbers, or other sensitive values.
 
@@ -59,7 +59,7 @@ ALTER COLUMN DateOfBirth DROP MASKED;
 
 ## Control mask visibility with permissions
 
-By default, users see masked data unless they have elevated permissions. The `UNMASK` permission controls who can view the actual values behind masks. You can grant this permission at different scopes to implement granular access control.
+By default, users see masked data unless they have elevated permissions. The [`UNMASK` permission](/sql/relational-databases/security/dynamic-data-masking?azure-portal=true) controls who can view the actual values behind masks. You can grant this permission at different scopes to implement granular access control.
 
 To allow a user to see all unmasked data in the database:
 

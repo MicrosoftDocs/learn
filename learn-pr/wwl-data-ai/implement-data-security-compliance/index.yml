@@ -17,8 +17,7 @@ abstract: |
     - Design and implement data encryption using Always Encrypted and column-level encryption
     - Configure Dynamic Data Masking to protect sensitive data
     - Implement Row-Level Security to filter data access based on user context
-    - Design object-level permissions using roles and schemas
-    - Implement secure, passwordless database access using Microsoft Entra ID
+    - Design object-level permissions and implement secure, passwordless database access using Microsoft Entra ID
     - Configure auditing to track database activity
     - Secure model endpoints and API endpoints for modern applications
 prerequisites: |
@@ -42,13 +41,12 @@ units:
   - learn.implement-data-security-compliance.2-design-implement-data-encryption
   - learn.implement-data-security-compliance.3-design-implement-dynamic-data-masking
   - learn.implement-data-security-compliance.4-design-implement-row-level-security
-  - learn.implement-data-security-compliance.5-design-implement-object-level-permissions
-  - learn.implement-data-security-compliance.6-implement-secure-database-access
-  - learn.implement-data-security-compliance.7-implement-auditing
-  - learn.implement-data-security-compliance.8-secure-model-endpoints
-  - learn.implement-data-security-compliance.9-secure-graphql-rest-mcp-endpoints
-  - learn.implement-data-security-compliance.10-exercise-implement-security-features
-  - learn.implement-data-security-compliance.11-knowledge-check
-  - learn.implement-data-security-compliance.12-summary
+  - learn.implement-data-security-compliance.5-design-implement-permissions-secure-access
+  - learn.implement-data-security-compliance.6-implement-auditing
+  - learn.implement-data-security-compliance.7-secure-model-endpoints
+  - learn.implement-data-security-compliance.8-secure-graphql-rest-mcp-endpoints
+  - learn.implement-data-security-compliance.9-exercise-implement-security-features
+  - learn.implement-data-security-compliance.10-knowledge-check
+  - learn.implement-data-security-compliance.11-summary
 badge:
   uid: learn.implement-data-security-compliance.badge

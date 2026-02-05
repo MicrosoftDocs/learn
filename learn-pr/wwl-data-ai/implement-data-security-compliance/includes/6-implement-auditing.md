@@ -8,9 +8,9 @@ Auditing captures database events and writes them to an audit log. The events yo
 
 :::image type="content" source="../media/auditing.png" alt-text="Diagram showing Azure SQL Database sending audit logs to three destinations: Azure Blob Storage for long-term retention, Log Analytics workspace for KQL queries, and Event Hubs for real-time streaming.":::
 
-SQL Server Audit uses the Extended Events infrastructure to record activity. You can write audit records to files, the Windows Security log, or the Windows Application log. This flexibility lets you integrate with existing log management systems.
+[SQL Server Audit](/sql/relational-databases/security/auditing/sql-server-audit-database-engine?azure-portal=true) uses the Extended Events infrastructure to record activity. You can write audit records to files, the Windows Security log, or the Windows Application log. This flexibility lets you integrate with existing log management systems.
 
-Azure SQL Database auditing writes to Azure Blob Storage, Log Analytics, or Event Hubs. The managed service handles the audit infrastructure, letting you focus on configuring what to audit rather than managing storage.
+[Azure SQL Database auditing](/azure/azure-sql/database/auditing-overview?azure-portal=true) writes to Azure Blob Storage, Log Analytics, or Event Hubs. The managed service handles the audit infrastructure, letting you focus on configuring what to audit rather than managing storage.
 
 SQL databases in Microsoft Fabric use Fabric's activity logging and Microsoft Purview for audit data. The integration with Microsoft Purview tools provides unified auditing across your data estate.
 

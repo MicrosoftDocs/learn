@@ -14,7 +14,7 @@ MCP endpoints enable AI models and agents to interact with databases, providing 
 
 ## Secure GraphQL endpoints
 
-Azure SQL Database and SQL databases in Microsoft Fabric support GraphQL through Data API builder and Microsoft Fabric's GraphQL API. Securing these endpoints involves authentication, authorization, and query controls.
+Azure SQL Database and SQL databases in Microsoft Fabric support GraphQL through [Data API builder](/azure/data-api-builder/overview?azure-portal=true) and Microsoft Fabric's GraphQL API. Securing these endpoints involves authentication, authorization, and query controls.
 
 Configure authentication requirements for GraphQL endpoints:
 
@@ -216,7 +216,7 @@ EXECUTE sp_set_firewall_rule
     @end_ip_address = '10.0.0.255';
 ```
 
-Use Private Link or service endpoints to keep traffic on the Microsoft network:
+Use [Private Link](/azure/azure-sql/database/private-endpoint-overview?azure-portal=true) or service endpoints to keep traffic on the Microsoft network:
 
 - Configure virtual network integration for App Services hosting API endpoints
 - Use Private Endpoints for Azure SQL Database

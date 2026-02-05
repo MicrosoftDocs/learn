@@ -34,7 +34,7 @@ New-AzRoleAssignment -ObjectId $sqlIdentity `
     -Scope "/subscriptions/{sub-id}/resourceGroups/{rg}/providers/Microsoft.CognitiveServices/accounts/{aoai-name}"
 ```
 
-Create a database-scoped credential that uses Managed Identity:
+Create a [database-scoped credential](/sql/t-sql/statements/create-database-scoped-credential-transact-sql?azure-portal=true) that uses Managed Identity:
 
 ```sql
 CREATE DATABASE SCOPED CREDENTIAL AzureOpenAICredential
@@ -46,7 +46,7 @@ This credential tells SQL to obtain a token for the Cognitive Services resource 
 
 ## Implement secure endpoint calls
 
-Use external REST endpoint invocation to call AI services securely. Create an external data source that references the AI endpoint:
+Use [external REST endpoint invocation](/sql/relational-databases/system-stored-procedures/sp-invoke-external-rest-endpoint-transact-sql?azure-portal=true) to call AI services securely. Create an external data source that references the AI endpoint:
 
 ```sql
 CREATE EXTERNAL DATA SOURCE AzureOpenAI
