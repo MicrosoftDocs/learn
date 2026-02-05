@@ -1,4 +1,4 @@
->[!VIDEO https://learn-video.azurefd.net/vod/player?id=07]
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=dff93cc3-d88e-4db3-844c-c0aef80e141e]
 
 Understanding where your data comes from, how it transforms, and where it flows is essential for effective data governance. When you set up and manage **data lineage tracking** in Unity Catalog, you gain visibility into data dependencies, ownership, and history. This visibility helps you perform **impact analysis** before making changes, troubleshoot data quality issues, and meet compliance requirements.
 

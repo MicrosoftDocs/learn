@@ -4,7 +4,7 @@ title: Set up and manage data lineage
 metadata:
   title: Set Up and Manage Data Lineage
   description: Learn how to set up and manage data lineage tracking by using Catalog Explorer, including owner, history, dependencies, and lineage in Azure Databricks.
-  ms.date: 02/03/2026
+  ms.date: 02/05/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit

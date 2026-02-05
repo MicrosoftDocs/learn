@@ -1,4 +1,4 @@
->[!VIDEO https://learn-video.azurefd.net/vod/player?id=01]
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=7759ad6f-e9a1-46f4-8aed-25281fba4634]
 
 Effective data governance requires more than just controlling access—it demands visibility into your data assets, accountability for how they're used, and enforcement mechanisms that scale with your organization. As data platforms grow in complexity, managing table definitions, tracking data lineage, enforcing retention policies, and sharing data securely become increasingly challenging. **Unity Catalog** in Azure Databricks provides the foundation for comprehensive governance that addresses these challenges through centralized metadata management and policy enforcement.
 

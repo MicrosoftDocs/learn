@@ -1,4 +1,4 @@
->[!VIDEO https://learn-video.azurefd.net/vod/player?id=10]
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=1e630728-2356-4512-98b4-4edd362a6080]
 
 Sharing data securely with external partners, other teams, or across organizational boundaries requires a deliberate strategy. **Delta Sharing** in Azure Databricks lets you share live data without copying it, while maintaining full control over who accesses what. Designing a secure sharing strategy means choosing the right authentication method, applying appropriate access controls, and establishing monitoring practices that keep your data governance intact.
 
