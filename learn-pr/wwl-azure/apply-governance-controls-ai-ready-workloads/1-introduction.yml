@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.apply-governance-controls-ai-ready-workloads.introduction
+title: "Introduction"
+metadata:
+  title: "Introduction"
+  description: "Introduction."
+  ms.date: 02/02/2026
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/1-introduction.md)]
