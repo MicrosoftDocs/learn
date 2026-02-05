@@ -1,0 +1,48 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-monitoring-ai-ready-infrastructure.knowledge-check
+title: "Module assessment"
+metadata:
+  title: "Knowledge check"
+  description: "Test your understanding of Azure Monitor implementation by answering these scenario-based questions. Consider how you would apply monitoring concepts to real-world infrastructure management challenges."
+  ms.date: 02/02/2026
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: unit
+  module_assessment: false
+durationInMinutes: 5
+content: "Choose the best response for each of the following questions."
+quiz:
+  questions:
+  - content: "Your operations team manages 50 virtual machines running AI training workloads. You need to track memory usage inside the VMs to detect when training processes consume excessive resources. Which metric collection method provides the visibility you require?"
+    choices:
+    - content: "Platform metrics collected automatically by Azure Monitor, which include memory available bytes for all virtual machines"
+      isCorrect: false
+      explanation: "Incorrect. Platform metrics don't include memory usage inside the virtual machine's operating system—they only track resource consumption at the Azure infrastructure level like CPU percentage and disk IOPS."
+    - content: "Guest OS metrics collected by the Azure Diagnostics extension installed on each virtual machine"
+      isCorrect: true
+      explanation: "Correct. Guest OS metrics provide visibility into memory usage and process-level performance counters. The Azure Diagnostics extension must be installed on each VM to collect these metrics."
+    - content: "Custom metrics published from your training application using the Application Insights SDK"
+      isCorrect: false
+      explanation: "Incorrect. Custom metrics would work but require modifying your training application code to publish metrics, adding unnecessary complexity when guest OS metrics provide the needed data automatically once the diagnostics extension is installed."
+  - content: "You create an alert rule that fires when storage account transaction latency exceeds 500 milliseconds. During testing, you notice the alert fires briefly every hour during backup operations, generating notifications your team ignores. How should you reduce alert fatigue while maintaining visibility into genuine latency issues?"
+    choices:
+    - content: "Increase the latency threshold to 1000 milliseconds and reduce the evaluation frequency to 15 minutes"
+      isCorrect: false
+      explanation: "Incorrect. Increasing the threshold to 1000 milliseconds would hide real latency issues that occur between 500-1000ms, potentially missing performance degradation that affects user experience."
+    - content: "Create an alert processing rule that suppresses notifications during the 10-minute backup window each hour"
+      isCorrect: true
+      explanation: "Correct. An alert processing rule with time-based suppression eliminates notifications for expected latency spikes during backups while preserving the alert rule for genuine performance problems outside the backup window."
+    - content: "Disable the alert rule entirely and rely on user reports to detect storage performance problems"
+      isCorrect: false
+      explanation: "Incorrect. Disabling the alert entirely removes proactive monitoring, forcing your team into reactive mode where storage problems surface only after users complain, increasing mean time to detection and business impact."
+  - content: "After receiving an alert about high CPU usage on a virtual machine, you need to identify which process consumed the most resources during the spike. Which Kusto Query Language (KQL) query pattern provides this information?"
+    choices:
+    - content: "Query the AzureDiagnostics table filtering for Level equals 'Error' to find failures that caused the CPU spike"
+      isCorrect: false
+      explanation: "Incorrect. The AzureDiagnostics table contains error logs but doesn't provide process-level performance data—errors might correlate with high CPU but won't tell you which process was responsible."
+    - content: "Query the Perf table filtering for CounterName equals '% Processor Time' and summarize by process name"
+      isCorrect: true
+      explanation: "Correct. Querying the Perf table for processor time counters by process name provides the granular resource consumption data needed to identify which specific process caused the CPU spike."
+    - content: "Query the SecurityEvent table to detect unauthorized access attempts that might have triggered resource-intensive operations"
+      isCorrect: false
+      explanation: "Incorrect. The SecurityEvent table tracks authentication and access events, useful for security investigations but irrelevant for diagnosing resource consumption patterns that cause CPU saturation."
