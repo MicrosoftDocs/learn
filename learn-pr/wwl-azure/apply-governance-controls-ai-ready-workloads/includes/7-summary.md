@@ -1,0 +1,16 @@
+You've successfully implemented governance controls for Contoso Financial Services' AI deployment, transforming scattered AI resources into a governed environment with clear visibility, enforced compliance boundaries, and auditable data flows. When you started, the organization faced common AI governance challenges: AI assets deployed without classification, no enforcement preventing compliance violations, and no way to trace predictions back to training data for regulatory audits. These gaps created measurable risk—potential regulatory fines, security vulnerabilities exposing customer data, and operational overhead managing access controls across hundreds of resources.
+
+Through this module, you configured Microsoft Purview to automatically discover Azure OpenAI Service instances, Azure Machine Learning models, and training datasets across your subscription. The automated classification engine identified sensitive data patterns and applied appropriate sensitivity labels that propagate through the AI lifecycle—from training datasets to deployed models. This asset visibility reduced governance team workload by 40-60% compared to manual inventory processes, while ensuring consistent protection standards across all AI resources.
+
+Building on asset discovery, you implemented Azure Policy guardrails that enforce governance requirements proactively. Your policy definitions prevent AI resource deployments outside approved regions, require customer-managed encryption for sensitive datasets, and automatically configure network isolation for production endpoints. The staged rollout approach—using Audit effect during testing then switching to Deny for production—balanced security requirements with developer productivity. These automated controls eliminated manual approval bottlenecks that previously delayed deployments by days while introducing human error.
+
+Finally, you established data lineage tracking that traces information flows from source systems through preprocessing pipelines, model training jobs, and inference endpoints. Purview's lineage viewer lets you answer critical audit questions in minutes: Which customer records influenced specific predictions? Which models depend on a dataset scheduled for deprecation? How does a schema change propagate through downstream AI services? This lineage visibility supports regulatory compliance, enables rapid incident response when data quality issues occur, and provides evidence of governance controls for external audits.
+
+## Key takeaways
+
+- Microsoft Purview Data Map automates AI asset discovery across subscriptions and applies sensitivity classifications that propagate through the AI lifecycle, eliminating manual inventory overhead
+- Azure Policy enforces governance guardrails at deployment time with configurable effects (Audit, Deny, DeployIfNotExists) that balance compliance requirements with developer productivity
+- Data lineage tracking captures end-to-end data flows automatically, enabling rapid audit responses and impact analysis when changes occur in upstream systems
+- Integrated governance reduces compliance risk by 50-70% while cutting operational overhead through automation that replaces manual review processes
+
+
