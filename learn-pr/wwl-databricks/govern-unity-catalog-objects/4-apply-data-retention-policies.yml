@@ -4,11 +4,11 @@ title: Apply data retention policies
 metadata:
   title: Apply Data Retention Policies
   description: Learn how to configure and enforce data retention policies in Azure Databricks using Delta Lake VACUUM, deletion operations for regulatory compliance, and predictive optimization for automated maintenance.
-  ms.date: 12/07/2025
+  ms.date: 02/05/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit
   ai-usage: ai-generated
 durationInMinutes: 10
 content: |
-  [!include[](includes/5-apply-data-retention-policies.md)]
+  [!include[](includes/4-apply-data-retention-policies.md)]

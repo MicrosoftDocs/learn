@@ -1,3 +1,5 @@
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=a3b03ec4-23e8-4ed5-9928-fd65d021e7ca]
+
 Every organization faces the challenge of balancing data availability with compliance requirements and storage costs. When you implement **data retention policies** in Azure Databricks, you ensure that data is kept only as long as necessary while remaining accessible for legitimate business needs. This becomes especially critical when regulations require you to delete personal data upon request.
 
 In this unit, you learn how to configure retention settings, use **`VACUUM`** to remove obsolete data, handle deletion requests for compliance, and automate maintenance with **predictive optimization**.
@@ -127,6 +129,8 @@ You can monitor predictive optimization operations through the system table `sys
 > Predictive optimization is enabled by default if your account was created on or after November 11, 2024. 
 
 ## Integrate with Azure Storage lifecycle policies
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=8954bdc7-532d-4d10-8a73-826a09dafb32]
 
 For data stored in Azure Blob Storage, you can complement Delta Lake retention with **Azure Storage lifecycle management policies**. These policies automatically transition data to cooler storage tiers or delete blobs based on access patterns and age.
 

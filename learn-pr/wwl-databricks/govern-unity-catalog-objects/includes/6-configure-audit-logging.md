@@ -1,3 +1,5 @@
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=8c5875e6-a71b-4054-af29-2782014dd89d]
+
 Tracking who did what, when, and to which data objects is essential for governance, security, and compliance. When you configure **audit logging** in Azure Databricks, you gain visibility into every significant action across your workspace and account. This visibility helps you meet regulatory requirements, investigate security incidents, and maintain accountability across your data platform.
 
 Unity Catalog audit logging is **configured at the account level** and automatically applies to all workspaces within that account. This account-level configuration ensures consistent audit capture across your entire Databricks environment without requiring per-workspace setup.
@@ -140,6 +142,8 @@ When you enable or disable verbose logging, Azure Databricks logs this configura
 > Verbose logs capture command text, which might include sensitive information such as query parameters or hardcoded values. Ensure your security policies account for this additional data exposure.
 
 ## Configure log delivery to external systems
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=7cd58862-808c-4bbe-affb-53786093261e]
 
 While the audit log system table provides direct access within Databricks, many organizations route logs to external systems for centralized monitoring. Azure Databricks integrates with Azure diagnostic settings to deliver logs to multiple destinations, each optimized for different use cases:
 

@@ -28347,6 +28347,34 @@
       "redirect_url": "/training/browse/?products=azure&terms=iot"
     },
     {
+      "source_path_from_root": "/learn-pr/wwl-databricks/govern-unity-catalog-objects/4-implement-row-filtering-column-masking.yml",
+      "redirect_url": "/training/wwl-databricks/secure-unity-catalog-objects/5-implement-row-filtering-column-masking"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-databricks/govern-unity-catalog-objects/5-apply-data-retention-policies.yml",
+      "redirect_url": "/training/wwl-databricks/govern-unity-catalog-objects/4-apply-data-retention-policies"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-databricks/govern-unity-catalog-objects/6-manage-data-lineage-tracking.yml",
+      "redirect_url": "/training/wwl-databricks/govern-unity-catalog-objects/5-manage-data-lineage-tracking"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-databricks/govern-unity-catalog-objects/7-configure-audit-logging.yml",
+      "redirect_url": "/training/wwl-databricks/govern-unity-catalog-objects/6-configure-audit-logging"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-databricks/govern-unity-catalog-objects/8-secure-delta-sharing-strategy.yml",
+      "redirect_url": "/training/wwl-databricks/govern-unity-catalog-objects/7-secure-delta-sharing-strategy"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-databricks/govern-unity-catalog-objects/9-knowledge-check.yml",
+      "redirect_url": "/training/wwl-databricks/govern-unity-catalog-objects/8-knowledge-check"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-databricks/govern-unity-catalog-objects/10-summary.yml",
+      "redirect_url": "/training/wwl-databricks/govern-unity-catalog-objects/9-summary"
+    },
+    {
       "source_path_from_root": "/learn-pr/azure/cloud-adoption-framework-security/4-security-roles-responsibilities.yml",
       "redirect_url": "/training/modules/cloud-adoption-framework-security/1-introduction"
     },
