@@ -24,7 +24,7 @@ quiz:
     - content: "The private endpoint configuration is blocking managed identity token validation and needs a service endpoint exception rule"
       isCorrect: false
       explanation: "Incorrect. Private endpoints don't interfere with managed identity authentication—tokens are validated through Azure Active Directory, not through network connectivity to the service."
-  - content: "Your compliance team requires that all AI service requests and responses remain within European Azure regions to satisfy GDPR data residency requirements. You've deployed Azure OpenAI Service in West Europe with a private endpoint. Which more configuration ensures complete data residency compliance?"
+  - content: "Your compliance team requires that all AI service requests and responses remain within European Azure regions to satisfy regulatory data residency requirements. You've deployed Azure OpenAI Service in West Europe with a private endpoint. Which more configuration ensures complete data residency compliance?"
     choices:
     - content: "Configure diagnostic settings to send logs to a Log Analytics workspace located in the same West Europe region where the OpenAI service is deployed"
       isCorrect: true
