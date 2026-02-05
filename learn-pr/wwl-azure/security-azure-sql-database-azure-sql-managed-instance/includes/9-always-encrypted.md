@@ -49,7 +49,7 @@ To set up Always Encrypted in your database, you need to:
 - Retrieve plaintext values from encrypted columns
 - Perform supported operations (for example, point lookup searches) on columns using deterministic encryption
  
-S user or an application issuing the query must meet the following prerequisites:
+A user or an application issuing the query must meet the following prerequisites:
 
 - Have access to the column master key protecting the data. Key access is required in addition to the database-level permissions, such as `SELECT` on the table containing the data.
 - Connect to the database with Always Encrypted enabled in the database connection. Most SQL tools and SQL client drivers support enabling Always Encrypted for database connections.
@@ -151,8 +151,8 @@ Operand type clash: char(11) encrypted with (encryption_type = 'DETERMINISTIC', 
      -  Primary key columns on tables that have [change tracking](/sql/relational-databases/track-changes/about-change-tracking-sql-server).
      -  Columns that are masked (using [Dynamic Data Masking](/sql/relational-databases/security/dynamic-data-masking)).
      -  Columns in [stretch database tables](/sql/sql-server/stretch-database/stretch-database). (Tables with columns encrypted with Always Encrypted can be enabled for Stretch.)
- -  > [!IMPORTANT]
-    > Stretch Database is deprecated in SQL Server 2022 (16.x) and Azure SQL Database. This feature will be removed in a future version of the Database Engine. Avoid using this feature in new development work, and plan to modify applications that currently use this feature.
+   > [!IMPORTANT]
+   > Stretch Database is deprecated in SQL Server 2022 (16.x) and Azure SQL Database. This feature will be removed in a future version of the Database Engine. Avoid using this feature in new development work, and plan to modify applications that currently use this feature.
  -  The following features don't work on encrypted columns:
     
     
