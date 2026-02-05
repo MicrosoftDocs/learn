@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.design-solutions-security-posture-management-hybrid-multicloud-environments.introduction-hybrid-multi-cloud-posture-management
-title: Introduction to hybrid and multicloud posture management
+title: Introduction
 metadata:
-  title: Introduction to hybrid and multicloud posture management
+  title: Introduction
   description: "SC-100 preparatory unit on the topic: introduction to hybrid and multicloud posture management."
   ms.date: 02/05/2026
   author: ceperezb

@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.design-solutions-security-posture-management-hybrid-multicloud-environments.design-integrated-posture-management-workload-protection
-title: Design integrated posture management and workload protection
+title: Design integrated posture management and workload protection with Microsoft Defender for Cloud
 metadata:
-  title: Design integrated posture management and workload protection
-  description: "SC-100 preparatory unit on the topic: design integrated posture management and workload protection."
+  title: Design integrated posture management and workload protection with Microsoft Defender for Cloud
+  description: "SC-100 preparatory unit on the topic: design integrated posture management and workload protection with Microsoft Defender for Cloud."
   ms.date: 02/05/2026
   author: ceperezb
   ms.author: ceperezb

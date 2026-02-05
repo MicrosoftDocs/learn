@@ -34,6 +34,8 @@ Secure score is Defender for Cloud's primary metric for evaluating security post
 
 The Cloud Secure Score ranges from 0 to 100, with 100 indicating an optimal security posture. This model provides more accurate prioritization by factoring in contextual risk.
 
+:::image type="content" source="../media/cloud-secure-score.png" alt-text="Screenshot of a the Cloud Secure Score and the Defender CSPM plan." lightbox="../media/cloud-secure-score.png":::
+
 ### How Cloud Secure Score works
 
 The Cloud Secure Score is a risk-based calculation that aggregates open recommendations while factoring in:
@@ -82,7 +84,7 @@ Attack path analysis uses the cloud security graph to identify exploitable paths
 
 Attack paths are prioritized by risk, helping you focus remediation on the issues that pose the greatest threat to your critical assets.
 
-![Screenshot of a conceptualized graph that shows the complexity of security graphing.](../media/security-map.png)
+:::image type="content" source="../media/security-map.png" alt-text="Screenshot of a conceptualized graph that shows the complexity of security graphing." lightbox="../media/security-map.png":::
 
 ### Cloud security explorer
 

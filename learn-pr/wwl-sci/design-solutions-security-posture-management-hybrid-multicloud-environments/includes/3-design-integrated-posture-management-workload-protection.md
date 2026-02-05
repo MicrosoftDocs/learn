@@ -8,6 +8,8 @@ Before making design decisions, understand what Defender for Cloud provides. The
 
 For posture management specifically, you choose between two tiers. Foundational CSPM provides free assessment against MCSB, asset inventory, recommendations, and secure score across Azure, AWS, and GCP. Defender CSPM adds attack path analysis, cloud security explorer, governance workflows, regulatory compliance dashboards, and agentless vulnerability scanning.
 
+**Design consideration**: Defender for Cloud capabilities are progressively integrating into the unified Microsoft Defender portal. This consolidation brings cloud security posture management alongside endpoint, identity, and other security workloads in a single interface. When designing your security operations, plan for teams to work across both the Azure portal and the Defender portal during this transition. The Defender portal provides a unified view of security posture across your entire digital estate, while the Azure portal remains the primary interface for Azure-specific configuration and resource management.
+
 ## Designing for multicloud coverage
 
 Your first design decision involves defining the scope of coverage. Most organizations operate across multiple environments, and your architecture must account for each.
