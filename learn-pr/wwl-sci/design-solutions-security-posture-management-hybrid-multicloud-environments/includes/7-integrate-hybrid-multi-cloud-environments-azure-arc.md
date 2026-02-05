@@ -14,7 +14,7 @@ Azure Arc supports several resource types critical to security posture:
 | VMware vSphere VMs | Arc-enabled VMware | Unified inventory, guest management |
 | AWS EC2, GCP VMs | Multicloud connector | Automated Arc onboarding, Defender integration |
 
-**Design consideration**: Azure Arc is a prerequisite for Defender for Cloud protection on non-Azure resources. Plan Arc deployment as step one of your hybrid security strategy.
+**Design consideration**: Azure Arc is a prerequisite for Defender for Cloud protection on non-Azure resources. Plan Arc deployment as step 1 of your hybrid security strategy.
 
 ## Designing network connectivity for Arc
 
@@ -40,8 +40,8 @@ Individual agent installation doesn't scale for enterprise deployments. Design y
 | Configuration Manager managed | PowerShell scripts or custom task sequences |
 | Ansible managed | Ansible playbooks |
 | VMware vSphere | Arc-enabled VMware with guest management |
-| AWS EC2 instances | Multicloud connector with auto-provisioning |
-| GCP VMs | OS Configuration agent with auto-provisioning |
+| AWS EC2 instances | Multicloud connector with autoprovisioning |
+| GCP VMs | OS Configuration agent with autoprovisioning |
 
 For at-scale deployment, use a service principal rather than interactive authentication. Create a dedicated service principal with the Azure Connected Machine Onboarding role and limit its scope to specific resource groups.
 
@@ -51,9 +51,9 @@ For at-scale deployment, use a service principal rather than interactive authent
 
 The Connected Machine agent supports several security configurations to limit functionality based on your requirements:
 
-**Extension allowlist**: Restrict which extensions can deploy on Arc-enabled servers. Create an allowlist of approved extensions to prevent unauthorized software installation.
+**Extension allowlist**: Restrict which extensions can deploy on Arc-enabled servers. Create an allow list of approved extensions to prevent unauthorized software installation.
 
-**Monitor mode**: Configure agents for monitoring only by restricting to a Microsoft-managed extension allowlist, disabling remote connectivity, and disabling the machine configuration agent. Use when Arc's purpose is purely observability.
+**Monitor mode**: Configure agents for monitoring only by restricting to a Microsoft-managed extension allow list, disabling remote connectivity, and disabling the machine configuration agent. Use when Arc's purpose is purely observability.
 
 **Local agent controls**: The `azcmagent` command-line tool allows local administrators to configure agent behavior, lock down connectivity options, and manage extensions.
 

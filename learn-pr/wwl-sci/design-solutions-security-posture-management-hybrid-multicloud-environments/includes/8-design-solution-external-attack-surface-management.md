@@ -11,7 +11,7 @@ Defender EASM discovers and catalogs:
 | Domains | Primary domains, subdomains, acquired company domains |
 | Hosts | Web servers, mail servers, DNS servers |
 | IP addresses and blocks | Public IP ranges, cloud-hosted IPs |
-| Web pages | Login portals, APIs, forgotten applications |
+| Web pages | Sign-in portals, APIs, forgotten applications |
 | SSL certificates | Certificate chains, expiration status |
 | ASNs and WHOIS data | Network ownership, registration contacts |
 
@@ -49,7 +49,7 @@ Only **Approved Inventory** assets appear in dashboard metrics by default and re
 
 ## Designing integration with Defender for Cloud
 
-Defender for Cloud's CSPM plan includes EASM integration at no additional cost. This integration enables internet-exposure validation by combining outside-in discovery with inside-out configuration assessment.
+Defender for Cloud's CSPM plan includes EASM integration at no extra cost. This integration enables internet-exposure validation by combining outside-in discovery with inside-out configuration assessment.
 
 The integration provides:
 - Correlation between externally discovered assets and internal cloud resources
@@ -79,15 +79,18 @@ Defender EASM data becomes more valuable when integrated with your security oper
 
 ## Using dashboards for prioritization
 
-Defender EASM provides specialized dashboards to prioritize security efforts:
+Defender EASM provides eight dashboards to prioritize security efforts:
 
 | Dashboard | Purpose |
 |-----------|---------|
-| Attack Surface Summary | High-level view of risks by severity (high, medium, low) |
-| Security Posture | CVE exposure, SSL configuration, open ports |
-| GDPR Compliance | Compliance risks for European regulations |
-| OWASP Top 10 | Critical web application security risks |
-| Inventory Changes | New, modified, and removed assets |
+| Overview | Default landing page with key attack surface context |
+| Inventory Changes | New, modified, and removed assets over time |
+| Attack Surface Summary | High-level view of risks by severity (high, medium, low), cloud hosting, IP reputation |
+| Security Posture | CVE exposure, domain configuration, open ports, SSL certificate status |
+| Data Protection Compliance | Compliance risks for data protection requirements on EU-accessible infrastructure |
+| OWASP Top 10 | Critical web application security risks based on OWASP list |
+| CWE Top 25 | Common software weaknesses based on annual MITRE list |
+| CISA Known Exploits | Vulnerabilities with confirmed exploitation by threat actors |
 
 Use the Attack Surface Summary to identify high-severity findings—critical CVEs, compromised infrastructure associations, deprecated technology, or compliance issues. Each insight includes suggested remediation actions.
 
@@ -108,6 +111,6 @@ Defender EASM pricing is based on billable assets—the Approved Inventory asset
 
 **Third-party risk**: Use the Dependency state for assets owned by third parties that support your operations. Track these assets separately from your owned infrastructure while maintaining visibility into their security posture.
 
-**False positives**: Some discovered assets might not belong to your organization despite apparent connections. Use exclusions to prevent these from appearing in future discoveries, and mark observations as non-applicable when CVEs don't affect your specific configuration.
+**False positives**: Some discovered assets might not belong to your organization despite apparent connections. Use exclusions to prevent these from appearing in future discoveries, and mark observations as nonapplicable when CVEs don't affect your specific configuration.
 
 Your external attack surface represents what adversaries see when they scan your organization. Defender EASM provides that attacker's perspective, enabling you to identify and remediate exposures before they become entry points.
