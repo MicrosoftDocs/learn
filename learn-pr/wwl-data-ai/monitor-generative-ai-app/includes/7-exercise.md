@@ -5,5 +5,5 @@ If you have an Azure subscription, you can explore monitoring with Microsoft Fou
 
 Launch the exercise and follow the instructions.
 
-[![Button to launch exercise.](../media/launch-exercise.png)](https://go.microsoft.com/fwlink/?linkid=2319718&azure-portal=true)
+[![Button to launch exercise.](../media/launch-exercise.png)](/training/)
 
