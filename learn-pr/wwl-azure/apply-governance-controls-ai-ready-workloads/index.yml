@@ -1,14 +1,14 @@
 ### YamlMime:Module
 uid: learn.wwl.apply-governance-controls-ai-ready-workloads
 metadata:
-  title: "Apply governance controls to AI ready workloads"
+  title: "Apply governance controls to AI-ready workloads"
   description: "Discover classify AI assets enforce Azure Policy guardrails track data lineage and implement hands‑on governance controls securing compliant auditable AI deployments across infrastructure pipelines and sensitive data workflows."
   ms.date: 02/02/2026
   author: wwlpublish
   ms.author: bradj
   ms.topic: module
   ms.service: azure
-title: "Apply governance controls to AI ready workloads"
+title: "Apply governance controls to AI-ready workloads"
 summary: Discover classify AI assets enforce Azure Policy guardrails track data lineage and implement hands‑on governance controls securing compliant auditable AI deployments across infrastructure pipelines and sensitive data workflows.
 abstract: |
  By the end of this module, you're able to:
