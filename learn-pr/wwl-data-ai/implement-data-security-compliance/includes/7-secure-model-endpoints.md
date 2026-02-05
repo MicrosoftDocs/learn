@@ -1,12 +1,12 @@
 AI-enabled database solutions often expose model endpoints that applications call to generate predictions, embeddings, or other AI-powered responses. Securing these endpoints protects both your AI models and the data they process. Managed Identity provides a secure, credential-free way to authenticate applications to model endpoints.
 
-When applications call Azure OpenAI, Azure Machine Learning, or other AI services from within your database environment, you need to control who can invoke these calls and protect the communication channel. This unit covers strategies for securing model endpoints in SQL Server, Azure SQL, and SQL databases in Microsoft Fabric.
+When applications call Azure OpenAI, Azure Machine Learning, or other AI services from within your database environment, you need to control who can invoke these calls and protect the communication channel. Let's look at strategies for securing model endpoints in SQL Server, Azure SQL, and SQL databases in Microsoft Fabric.
 
 ## Understand model endpoint security concerns
 
 Model endpoints present unique security challenges compared to traditional database operations. These endpoints often process sensitive data, can incur significant costs per call, and may expose intellectual property embedded in fine-tuned models.
 
-Unauthorized access to model endpoints can lead to data exfiltration through carefully crafted prompts, unexpected costs from excessive API calls, and exposure of proprietary model behaviors. Protecting these endpoints requires authentication, authorization, and monitoring.
+What happens if someone gains unauthorized access? They could exfiltrate data through carefully crafted prompts, run up unexpected costs with excessive API calls, or probe your proprietary model behaviors. That's why protecting these endpoints requires authentication, authorization, and monitoring.
 
 In Azure SQL and SQL databases in Microsoft Fabric, you can call external AI services using stored procedures or functions that make HTTP requests. These calls must authenticate to the AI service, typically using API keys or Managed Identity.
 
@@ -14,7 +14,7 @@ In Azure SQL and SQL databases in Microsoft Fabric, you can call external AI ser
 
 Managed Identity eliminates the need to store API keys in your database or application code. Instead, Azure manages the identity credentials automatically, and you grant that identity access to AI services.
 
-For an Azure SQL Database that needs to call Azure OpenAI, first enable system-assigned managed identity:
+For an Azure SQL Database that needs to call Azure OpenAI, start by enabling system-assigned managed identity:
 
 ```sql
 -- The managed identity is enabled in Azure portal or via Azure CLI
@@ -22,7 +22,7 @@ For an Azure SQL Database that needs to call Azure OpenAI, first enable system-a
 SELECT * FROM sys.dm_external_provider_certificate_store;
 ```
 
-Grant the managed identity access to Azure OpenAI in Azure role-based access control:
+Next, grant the managed identity access to Azure OpenAI using Azure role-based access control:
 
 ```powershell
 # Get the managed identity principal ID from Azure SQL
@@ -46,7 +46,7 @@ This credential tells SQL to obtain a token for the Cognitive Services resource 
 
 ## Implement secure endpoint calls
 
-Use [external REST endpoint invocation](/sql/relational-databases/system-stored-procedures/sp-invoke-external-rest-endpoint-transact-sql?azure-portal=true) to call AI services securely. Create an external data source that references the AI endpoint:
+Now let's put it all together. Use [external REST endpoint invocation](/sql/relational-databases/system-stored-procedures/sp-invoke-external-rest-endpoint-transact-sql?azure-portal=true) to call AI services securely. First, create an external data source that references your AI endpoint:
 
 ```sql
 CREATE EXTERNAL DATA SOURCE AzureOpenAI
@@ -57,7 +57,7 @@ WITH (
 );
 ```
 
-Create a stored procedure that calls the AI endpoint:
+Then create a stored procedure that calls the AI endpoint:
 
 ```sql
 CREATE PROCEDURE dbo.GetEmbedding
@@ -97,7 +97,7 @@ ALTER ROLE AIFeatureUsers ADD MEMBER [app-service-identity];
 
 Azure Machine Learning model endpoints follow similar patterns. Configure Managed Identity access and create credentials for authentication.
 
-For real-time inference endpoints:
+Here's how to set up access for real-time inference endpoints:
 
 ```sql
 CREATE DATABASE SCOPED CREDENTIAL AMLCredential
@@ -112,11 +112,11 @@ WITH (
 );
 ```
 
-When calling batch inference endpoints, you typically submit data to storage and trigger a pipeline. Secure the storage access using Managed Identity as well.
+For batch inference endpoints, you typically submit data to storage and trigger a pipeline. Make sure to secure that storage access using Managed Identity.
 
 ## Implement endpoint monitoring
 
-Monitor AI endpoint usage to detect anomalies and control costs:
+You can monitor AI endpoint usage to detect anomalies and keep costs under control. Here's a simple logging approach:
 
 ```sql
 -- Create a logging table for AI calls
@@ -156,7 +156,7 @@ BEGIN
 END;
 ```
 
-Query the log to identify unusual patterns:
+With this logging in place, you can query the log to spot unusual patterns:
 
 ```sql
 -- Find users making excessive AI calls
@@ -171,4 +171,16 @@ ORDER BY CallCount DESC;
 > [!TIP]
 > Set up alerts for unusual AI endpoint usage patterns. Sudden spikes in calls or calls from unexpected principals can indicate compromised credentials or application bugs.
 
-For SQL databases in Microsoft Fabric, AI endpoint access is managed through workspace permissions and Fabric capacity. Users with appropriate workspace roles can invoke AI features, and usage is tracked through Fabric's monitoring capabilities.
+## Secure AI features in Microsoft Fabric
+
+SQL databases in Microsoft Fabric handle AI endpoint access differently than Azure SQL. Instead of database-scoped credentials and Managed Identity, Fabric uses workspace roles and capacity-based access control.
+
+In Fabric, AI capabilities are tied to the workspace. Users with **Contributor** or higher workspace roles can invoke AI features like AI skills and Copilot. Access control happens at the workspace level rather than through database permissions.
+
+To secure AI features in Fabric:
+
+- Assign workspace roles carefully, since they control AI access
+- Monitor usage through Fabric's capacity metrics and activity logs
+- Use Fabric's data protection features to control what data AI features can access
+
+For detailed guidance on configuring AI services in Fabric, see the [Fabric AI documentation](/fabric/data-science/ai-services/ai-services-overview?azure-portal=true).

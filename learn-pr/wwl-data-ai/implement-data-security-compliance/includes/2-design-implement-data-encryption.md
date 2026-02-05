@@ -1,26 +1,28 @@
-Data encryption forms the foundation of database security, protecting sensitive information from unauthorized access even if attackers gain access to the underlying storage. In Microsoft's SQL platforms, you have multiple encryption options designed for different scenarios, from encrypting data at rest to protecting data in use during query processing.
+Data encryption forms the foundation of database security. Even if attackers gain access to your underlying storage, encryption keeps your sensitive information unreadable. Microsoft's SQL platforms offer multiple encryption options, from protecting data at rest to securing data while it's being processed.
 
-Understanding when to use each encryption method helps you design security solutions that balance protection requirements with application performance. This unit explores the encryption technologies available in SQL Server, Azure SQL, and SQL databases in Microsoft Fabric.
+Understanding when to use each method helps you balance protection with performance. Let's explore the encryption technologies available in SQL Server, Azure SQL, and SQL databases in Microsoft Fabric.
 
 ## Understand encryption layers
 
-Database encryption operates at different layers, each addressing specific security concerns. [Transparent Data Encryption (TDE)](/sql/relational-databases/security/encryption/transparent-data-encryption?azure-portal=true) encrypts data at rest, protecting the physical database files. [Column-level encryption](/sql/relational-databases/security/encryption/encrypt-a-column-of-data?azure-portal=true) targets specific sensitive columns, while [Always Encrypted](/sql/relational-databases/security/encryption/always-encrypted-database-engine?azure-portal=true) protects data throughout its lifecycle, including during query processing.
+Database encryption operates at different layers, each solving a specific problem. [Transparent Data Encryption (TDE)](/sql/relational-databases/security/encryption/transparent-data-encryption?azure-portal=true) encrypts data at rest—think of it as protecting your database files on disk. [Column-level encryption](/sql/relational-databases/security/encryption/encrypt-a-column-of-data?azure-portal=true) targets specific sensitive columns, while [Always Encrypted](/sql/relational-databases/security/encryption/always-encrypted-database-engine?azure-portal=true) goes further by protecting data throughout its lifecycle, even during query processing.
 
 :::image type="content" source="../media/encryption.png" alt-text="Diagram comparing three encryption layers: TDE at the database file level, column-level encryption at specific columns, and Always Encrypted with encryption keys held outside the database at the client application level.":::
 
-With TDE enabled, SQL Server automatically encrypts the database files, transaction logs, and backups. The encryption happens transparently to applications, requiring no code changes. TDE uses a database encryption key protected by a certificate stored in the `master` database.
+When you enable TDE, SQL Server automatically encrypts database files, transaction logs, and backups. Your applications don't need any code changes—encryption happens transparently behind the scenes. TDE uses a database encryption key protected by a certificate stored in the `master` database.
 
-Unlike TDE, column-level encryption requires you to explicitly encrypt and decrypt data in your T-SQL code or application. This approach gives you granular control over which columns contain sensitive data and who can decrypt them.
+Column-level encryption works differently. You explicitly encrypt and decrypt data in your T-SQL code or application, giving you granular control over which columns contain sensitive data and who can decrypt them.
 
-Always Encrypted takes a different approach by keeping encryption keys outside the database engine. The database never sees plaintext data, providing protection even from database administrators with high-level access.
+Always Encrypted takes yet another approach by keeping encryption keys outside the database engine entirely. The database never sees your plaintext data, which means even database administrators with high-level access can't view protected information.
 
 ## Configure Always Encrypted
 
-Always Encrypted protects sensitive data by ensuring the database engine never processes plaintext values. Client applications hold the encryption keys and perform all encryption and decryption operations. This separation means that even users with administrative access to the database can't view the protected data.
+Always Encrypted ensures the database engine never processes plaintext values. Your client applications hold the encryption keys and handle all encryption and decryption. This separation means that even someone with administrative access to the database can't view the protected data.
 
 :::image type="content" source="../media/sql-data-flow.png" alt-text="Diagram showing the data flow for Always Encrypted, where client applications encrypt and decrypt data while the database engine only processes ciphertext.":::
 
-To implement Always Encrypted, you first create a column master key (CMK) that protects the column encryption keys. Store the CMK in a secure key store such as Azure Key Vault, Windows Certificate Store, or a hardware security module.
+To get started with Always Encrypted, you first create a column master key (CMK) that protects your column encryption keys. Store the CMK in a secure [key store](/sql/relational-databases/security/encryption/create-and-store-column-master-keys-always-encrypted?azure-portal=true) such as Azure Key Vault, Windows Certificate Store, or a hardware security module.
+
+The following T-SQL statement creates a metadata entry pointing to your key in Azure Key Vault. The actual key material remains in the vault, never stored in the database.
 
 ```sql
 CREATE COLUMN MASTER KEY MyCMK
@@ -29,8 +31,6 @@ WITH (
     KEY_PATH = 'https://mykeyvault.vault.azure.net/keys/MyCMK/abc123'
 );
 ```
-
-This statement creates a metadata entry pointing to your key in Azure Key Vault. The actual key material remains in the vault, never stored in the database.
 
 Next, create a column encryption key (CEK) protected by the column master key:
 
@@ -43,9 +43,9 @@ WITH VALUES (
 );
 ```
 
-The encrypted value contains the CEK encrypted with your CMK. Applications retrieve this encrypted value and use the CMK to decrypt it locally.
+Notice that the CEK itself is stored in encrypted form. When your application needs to work with encrypted data, it retrieves this value and uses the CMK to decrypt it locally.
 
-When creating or altering tables, specify the encryption type for sensitive columns:
+When creating or altering tables, you specify the encryption type for sensitive columns:
 
 ```sql
 CREATE TABLE Employees (
@@ -65,13 +65,13 @@ CREATE TABLE Employees (
 );
 ```
 
-Choose deterministic encryption when you need to perform equality comparisons, joins, or use the column in `WHERE` clauses. Randomized encryption provides stronger security but limits query operations on the encrypted column.
+You have two encryption types to choose from. Use **deterministic** when you need to perform equality comparisons, joins, or filter with `WHERE` clauses—the same plaintext always produces the same ciphertext. Use **randomized** for stronger security when you don't need those query operations.
 
 ## Implement column-level encryption
 
-Column-level encryption using T-SQL functions provides an alternative when you need more control over the encryption process or when Always Encrypted isn't suitable for your scenario. This approach uses symmetric or asymmetric keys stored within the database.
+Column-level encryption using T-SQL functions gives you an alternative when you need more control over the encryption process, or when Always Encrypted isn't the right fit. With this approach, you manage symmetric or asymmetric keys stored within the database.
 
-First, create a database master key and certificate:
+Start by creating a database master key and certificate:
 
 ```sql
 CREATE MASTER KEY ENCRYPTION BY PASSWORD = 'StrongPassword123!';
@@ -113,17 +113,17 @@ FROM CustomerData;
 CLOSE SYMMETRIC KEY SensitiveDataKey;
 ```
 
-This approach requires explicit key management in your code, which adds complexity but also flexibility. You can grant or deny permissions to the symmetric key, controlling exactly which users can decrypt the data.
+Yes, this approach requires more work—you're managing keys explicitly in your code. But that complexity comes with flexibility. You can grant or deny permissions to the symmetric key, giving you precise control over who can decrypt your data.
 
 ## Choose the right encryption approach
 
-Selecting the appropriate encryption method depends on your security requirements and application constraints. Consider these factors when making your decision.
+Which encryption method should you use? It depends on your security requirements and application constraints.
 
-Use TDE when you need to protect data at rest without application changes. TDE works well for compliance requirements that mandate encryption of database files and backups. However, TDE doesn't protect data from users who can connect to the database with appropriate permissions.
+**TDE** is your best choice when you need to protect data at rest without touching your application code. It's great for compliance requirements that mandate encryption of database files and backups. Keep in mind, though, that TDE doesn't protect data from users who can connect to the database with the right permissions.
 
-Choose Always Encrypted when you need to protect data from database administrators or when sensitive data must remain encrypted during query processing. This approach requires client driver support and impacts which operations you can perform on encrypted columns.
+**Always Encrypted** shines when you need to protect data from database administrators, or when sensitive data must stay encrypted even during query processing. The tradeoff? You need client driver support, and you're limited in what operations you can perform on encrypted columns.
 
-Implement column-level encryption when you need granular control over encryption and decryption, or when you must encrypt only specific columns without the overhead of Always Encrypted infrastructure. This method requires more development effort but offers flexibility in key management.
+**Column-level encryption** works well when you need granular control over encryption and decryption, or when you want to encrypt specific columns without the infrastructure overhead of Always Encrypted. It takes more development effort, but you get maximum flexibility in key management.
 
 > [!TIP]
 > You can combine encryption methods. For example, enable TDE for baseline protection of data at rest, then add Always Encrypted for your most sensitive columns.

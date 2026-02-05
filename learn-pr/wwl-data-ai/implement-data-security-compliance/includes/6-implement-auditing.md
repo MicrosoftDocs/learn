@@ -10,15 +10,15 @@ Auditing captures database events and writes them to an audit log. The events yo
 
 [SQL Server Audit](/sql/relational-databases/security/auditing/sql-server-audit-database-engine?azure-portal=true) uses the Extended Events infrastructure to record activity. You can write audit records to files, the Windows Security log, or the Windows Application log. This flexibility lets you integrate with existing log management systems.
 
-[Azure SQL Database auditing](/azure/azure-sql/database/auditing-overview?azure-portal=true) writes to Azure Blob Storage, Log Analytics, or Event Hubs. The managed service handles the audit infrastructure, letting you focus on configuring what to audit rather than managing storage.
+[Azure SQL Database auditing](/azure/azure-sql/database/auditing-overview?azure-portal=true) writes to Azure Blob Storage, Log Analytics, or Event Hubs. The managed service handles the infrastructure, so you can focus on deciding what to audit rather than managing storage.
 
-SQL databases in Microsoft Fabric use Fabric's activity logging and Microsoft Purview for audit data. The integration with Microsoft Purview tools provides unified auditing across your data estate.
+SQL databases in Microsoft Fabric use Fabric's activity logging and Microsoft Purview for audit data. This integration with Microsoft Purview gives you unified auditing across your entire data estate.
 
 ## Configure SQL Server auditing
 
 SQL Server Audit requires creating a server audit object that defines where to write audit records, then creating audit specifications that define what to capture.
 
-Create a server audit that writes to a file:
+Start by creating a server audit that writes to a file:
 
 ```sql
 CREATE SERVER AUDIT SecurityAudit
@@ -28,13 +28,13 @@ WITH (QUEUE_DELAY = 1000, ON_FAILURE = CONTINUE);
 
 The `QUEUE_DELAY` parameter specifies how many milliseconds to buffer events before writing. Lower values provide more real-time logging but can affect performance. The `ON_FAILURE` setting determines behavior when audit writing fails. Use `SHUTDOWN` for critical compliance scenarios where missing audit records is unacceptable.
 
-Enable the audit:
+Now enable the audit:
 
 ```sql
 ALTER SERVER AUDIT SecurityAudit WITH (STATE = ON);
 ```
 
-Create a server audit specification to capture server-level events:
+Next, create a server audit specification to capture server-level events:
 
 ```sql
 CREATE SERVER AUDIT SPECIFICATION ServerAuditSpec
@@ -46,7 +46,7 @@ ADD (DATABASE_PERMISSION_CHANGE_GROUP)
 WITH (STATE = ON);
 ```
 
-Create a database audit specification for database-level events:
+For database-level events, create a database audit specification:
 
 ```sql
 USE MyDatabase;
@@ -66,7 +66,7 @@ This specification audits all data access on the `SensitiveData` table, stored p
 
 Azure SQL Database auditing is configured at the server or database level. Server-level policies apply to all databases on the logical server.
 
-Enable auditing in the Azure portal or using T-SQL:
+You can enable auditing in the Azure portal or using T-SQL:
 
 ```sql
 -- Enable auditing to blob storage (configured in Azure portal)
@@ -75,7 +75,7 @@ ADD (SELECT, INSERT, UPDATE, DELETE ON DATABASE::MyDatabase BY public)
 WITH (STATE = ON);
 ```
 
-For more granular control, configure auditing through Azure Policy or ARM templates. Specify the storage account, retention period, and audit action groups:
+For more granular control, configure auditing through Azure Policy or ARM templates. Here's an example specifying the storage account, retention period, and audit action groups:
 
 ```json
 {
@@ -121,11 +121,12 @@ Choose audit actions based on your security and compliance requirements. Common 
 - `SCHEMA_OBJECT_CHANGE_GROUP` - Table and object modifications
 - `DATABASE_OBJECT_CHANGE_GROUP` - DDL statements
 
-Start with a focused set of audit actions rather than capturing everything. High-volume auditing impacts performance and generates logs that are difficult to analyze.
+> [!IMPORTANT]
+> Start with a focused set of audit actions rather than capturing everything. High-volume auditing impacts performance and generates logs that are difficult to analyze.
 
 ## Query and analyze audit logs
 
-For SQL Server file-based audits, use the `fn_get_audit_file` function:
+For SQL Server file-based audits, use the `fn_get_audit_file` function to query your logs:
 
 ```sql
 SELECT 
@@ -141,7 +142,7 @@ WHERE event_time > DATEADD(day, -7, GETUTCDATE())
 ORDER BY event_time DESC;
 ```
 
-For Azure SQL auditing to Log Analytics, query using KQL:
+If you're using Azure SQL auditing with Log Analytics, you can query using KQL:
 
 ```kusto
 AzureDiagnostics
@@ -156,18 +157,12 @@ This query identifies which users and IP addresses generated the most SELECT que
 
 ## Implement audit retention and protection
 
-Audit logs must be protected from tampering and retained according to compliance requirements:
+Your audit logs need protection from tampering, and you need to retain them according to compliance requirements.
 
-```sql
--- SQL Server: Configure immutable storage for audit files
--- Use Windows file system permissions to prevent deletion
-
--- Azure SQL: Configure storage with immutable blob storage
--- Set retention policies in Azure Storage lifecycle management
-```
+For SQL Server, configure immutable storage for audit files and use Windows file system permissions to prevent deletion. For Azure SQL, configure storage with immutable blob storage and set retention policies in Azure Storage lifecycle management.
 
 > [!IMPORTANT]
-> Store audit logs separately from the databases they monitor. Attackers who compromise a database shouldn't have access to delete or modify the audit trail.
+> Store audit logs separately from the databases they monitor. This ensures that even if attackers compromise a database, they can't tamper with the audit trail.
 
 For compliance scenarios, consider these retention practices:
 

@@ -1,14 +1,14 @@
 Object-level permissions control what actions users can perform on database objects like tables, views, stored procedures, and functions. While Row-Level Security filters data within objects, object-level permissions determine whether a user can access an object at all and what operations they can perform.
 
-A well-designed permission model works hand-in-hand with secure authentication. This unit covers both how to grant the right permissions AND how to ensure users authenticate securely, preferably without passwords.
+A well-designed permission model goes hand-in-hand with secure authentication. This unit covers both: how to grant the right permissions and how to ensure users authenticate securely, preferably without passwords.
 
 ## Understand the permission hierarchy
 
-SQL Server uses a [hierarchical permission model](/sql/relational-databases/security/permissions-hierarchy-database-engine?azure-portal=true) where permissions granted at higher levels flow down to lower levels. The hierarchy flows from server to database to schema to individual objects.
+SQL Server uses a [hierarchical permission model](/sql/relational-databases/security/permissions-hierarchy-database-engine?azure-portal=true) where permissions granted at higher levels flow down to lower levels. Think of it as a cascade: server → database → schema → individual objects.
 
 At the server level, permissions control sign-in management and server configuration. Database-level permissions govern actions within a specific database. Schema-level permissions apply to all objects within a schema, while object-level permissions target specific tables, views, or procedures.
 
-When you grant `SELECT` permission on a schema, users can select from all tables and views in that schema, including objects created in the future:
+Here's a powerful pattern: when you grant `SELECT` permission on a schema, users can select from all tables and views in that schema—including objects created in the future:
 
 ```sql
 -- Grant SELECT on all objects in the Sales schema
@@ -20,7 +20,7 @@ GRANT EXECUTE ON SCHEMA::Reports TO ReportingUsers;
 
 ## Grant and revoke permissions
 
-The [`GRANT`](/sql/t-sql/statements/grant-transact-sql?azure-portal=true) statement gives users specific permissions. The [`REVOKE`](/sql/t-sql/statements/revoke-transact-sql?azure-portal=true) statement removes previously granted permissions, and [`DENY`](/sql/t-sql/statements/deny-transact-sql?azure-portal=true) explicitly blocks permissions, overriding any grants.
+Three statements control permissions: [`GRANT`](/sql/t-sql/statements/grant-transact-sql?azure-portal=true) gives users specific permissions, [`REVOKE`](/sql/t-sql/statements/revoke-transact-sql?azure-portal=true) removes previously granted permissions, and [`DENY`](/sql/t-sql/statements/deny-transact-sql?azure-portal=true) explicitly blocks permissions—overriding any grants.
 
 ```sql
 -- Allow reading data
@@ -36,11 +36,11 @@ DENY SELECT ON dbo.EmployeeSalaries TO HRAssistants;
 REVOKE INSERT ON dbo.Customers FROM CustomerServiceRole;
 ```
 
-The difference between `REVOKE` and `DENY` matters when users have multiple permission sources. Revoking removes one grant but doesn't prevent access through other grants. Denying blocks access regardless of other grants.
+What's the difference between `REVOKE` and `DENY`? It matters when users have multiple permission sources. Revoking removes one grant but doesn't prevent access through other grants. Denying blocks access no matter what other grants exist.
 
 ## Implement role-based access control
 
-Rather than granting permissions directly to users, create [database roles](/sql/relational-databases/security/authentication-access/database-level-roles?azure-portal=true) that represent job functions. Assign permissions to roles, then add users to appropriate roles:
+Instead of granting permissions directly to users, create [database roles](/sql/relational-databases/security/authentication-access/database-level-roles?azure-portal=true) that represent job functions. Assign permissions to roles, then add users to the appropriate roles:
 
 ```sql
 -- Create roles for different job functions
@@ -56,14 +56,14 @@ ALTER ROLE DataReaders ADD MEMBER JohnSmith;
 ALTER ROLE DataWriters ADD MEMBER JaneDoc;
 ```
 
-You can nest roles to create hierarchical permission structures. Adding someone to a parent role automatically gives them all child role permissions.
+You can also nest roles to create hierarchical permission structures—adding someone to a parent role automatically gives them all child role permissions.
 
 > [!TIP]
 > Document your role hierarchy and use a naming convention that makes each role's purpose clear, such as prefixing with the department or function.
 
 ## Apply schema separation for security
 
-[Schemas](/sql/relational-databases/security/authentication-access/create-a-database-schema?azure-portal=true) provide a natural boundary for organizing objects and managing permissions:
+[Schemas](/sql/relational-databases/security/authentication-access/create-a-database-schema?azure-portal=true) provide a natural way to organize objects and manage permissions. Group related objects together, then grant permissions at the schema level:
 
 ```sql
 CREATE SCHEMA Sales AUTHORIZATION dbo;
@@ -80,9 +80,9 @@ GRANT CONTROL ON SCHEMA::HR TO HRAdministrators;
 
 Modern applications should use passwordless authentication whenever possible. [Microsoft Entra authentication](/azure/azure-sql/database/authentication-aad-overview?azure-portal=true) eliminates the risks associated with password management, including credential theft and the operational burden of rotating secrets.
 
-SQL databases support multiple authentication methods. SQL authentication uses a username and password stored in the database—straightforward but risky if credentials are compromised. Microsoft Entra authentication extends identity integration to cloud scenarios, working with Azure SQL Database, Azure SQL Managed Instance, SQL Server 2022+, and SQL databases in Microsoft Fabric.
+SQL databases support multiple authentication methods. SQL authentication uses a username and password stored in the database. It's straightforward, but risky if credentials get compromised. Microsoft Entra authentication extends identity integration to cloud scenarios, working with Azure SQL Database, Azure SQL Managed Instance, SQL Server 2022+, and SQL databases in Microsoft Fabric.
 
-Create database users from Microsoft Entra identities:
+Creating database users from Microsoft Entra identities is simple:
 
 ```sql
 -- Create users for Entra accounts, managed identities, or groups
@@ -97,7 +97,7 @@ ALTER ROLE db_datawriter ADD MEMBER [app-service-identity];
 
 ## Implement managed identity authentication
 
-[Managed identities](/azure/active-directory/managed-identities-azure-resources/overview?azure-portal=true) provide the most secure option for Azure-hosted applications. Azure automatically manages the identity lifecycle, and no credentials exist that could be leaked or stolen.
+[Managed identities](/azure/active-directory/managed-identities-azure-resources/overview?azure-portal=true) are the most secure option for Azure-hosted applications. Azure handles the identity lifecycle automatically, and there are no credentials that could be leaked or stolen.
 
 For an Azure App Service connecting to Azure SQL Database, enable the system-assigned managed identity, then create a database user:
 
@@ -118,9 +118,9 @@ Server=tcp:myserver.database.windows.net,1433;Database=mydb;Authentication=Activ
 
 ## Secure connection strings
 
-Regardless of authentication method, protect your connection strings:
+No matter which authentication method you use, protect your connection strings with these best practices:
 
-- Store connection strings in Azure Key Vault or environment variables, not in code
+- Store them in Azure Key Vault or environment variables, not in code
 - Use managed identities to eliminate credentials from connection strings entirely
 - Enable encrypted connections with `Encrypt=True;TrustServerCertificate=False`
 - Limit network access using firewall rules and private endpoints
@@ -130,7 +130,7 @@ Regardless of authentication method, protect your connection strings:
 
 ## View and audit permissions
 
-Query system views to understand current permission assignments:
+You can query system views to understand current permission assignments:
 
 ```sql
 -- View all permissions for a specific principal
@@ -148,4 +148,4 @@ WHERE prin.name = 'SalesAnalyst';
 SELECT * FROM fn_my_permissions('Sales.Orders', 'OBJECT');
 ```
 
-Regularly audit permission assignments to ensure they align with current job functions. Combine object-level permissions with other security features like Row-Level Security and Dynamic Data Masking for comprehensive data protection.
+Make it a habit to audit permission assignments regularly to ensure they still align with current job functions. And remember, object-level permissions work best when combined with other security features like Row-Level Security and Dynamic Data Masking for comprehensive protection.

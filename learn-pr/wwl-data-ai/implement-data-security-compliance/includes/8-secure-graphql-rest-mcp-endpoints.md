@@ -4,11 +4,11 @@ These endpoints often serve as the primary data access layer for web and mobile 
 
 ## Understand endpoint types and risks
 
-GraphQL endpoints provide flexible query capabilities, allowing clients to request exactly the data they need. This flexibility creates security challenges because clients can construct complex queries that might expose unintended data or consume excessive resources.
+**GraphQL** endpoints provide flexible query capabilities, allowing clients to request exactly the data they need. This flexibility creates security challenges because clients can construct complex queries that might expose unintended data or consume excessive resources.
 
-REST endpoints follow a more structured pattern with predefined resources and operations. Security focuses on authentication, authorization for specific endpoints, and input validation. REST APIs are well understood, with established security patterns.
+**REST** endpoints follow a more structured pattern with predefined resources and operations. Security focuses on authentication, authorization for specific endpoints, and input validation. REST APIs have been around long enough that security patterns are well established.
 
-MCP endpoints enable AI models and agents to interact with databases, providing context and executing actions. These endpoints require careful security consideration because AI systems may attempt operations that human users wouldn't, and prompt injection attacks can manipulate AI behavior.
+**MCP** endpoints enable AI models and agents to interact with databases, providing context and executing actions. These endpoints require careful security consideration because AI systems may attempt operations that human users wouldn't, and prompt injection attacks can manipulate AI behavior.
 
 :::image type="content" source="../media/mcp.png" alt-text="Diagram comparing three API endpoint types connecting to Azure SQL Database: GraphQL for flexible schema-based queries, REST for predefined CRUD operations, and MCP for AI agent interaction, each with authentication and authorization layers.":::
 
@@ -16,7 +16,7 @@ MCP endpoints enable AI models and agents to interact with databases, providing 
 
 Azure SQL Database and SQL databases in Microsoft Fabric support GraphQL through [Data API builder](/azure/data-api-builder/overview?azure-portal=true) and Microsoft Fabric's GraphQL API. Securing these endpoints involves authentication, authorization, and query controls.
 
-Configure authentication requirements for GraphQL endpoints:
+Here's how to configure authentication requirements:
 
 ```json
 {
@@ -38,9 +38,9 @@ Configure authentication requirements for GraphQL endpoints:
 }
 ```
 
-Disable introspection in production to prevent attackers from discovering your schema structure. Introspection queries reveal all available types, fields, and relationships.
+Notice the `allow-introspection: false` setting. Disable introspection in production to prevent attackers from discovering your schema structure. Introspection queries reveal all available types, fields, and relationships.
 
-Implement entity-level permissions to control which roles can access which data:
+Next, implement entity-level permissions to control which roles can access which data:
 
 ```json
 {
@@ -75,14 +75,14 @@ Implement entity-level permissions to control which roles can access which data:
 }
 ```
 
-The field-level permissions ensure that even authenticated users can't access sensitive columns like `InternalNotes` or `CostPrice`.
+See how the `Order` entity excludes sensitive columns like `InternalNotes` and `CostPrice`? Even authenticated users can't access those fields.
 
 > [!TIP]
 > Implement query depth and complexity limits to prevent denial-of-service attacks through deeply nested queries. Data API builder includes built-in protections against excessive query complexity.
 
 ## Secure REST endpoints
 
-REST endpoints in Data API builder or custom implementations require authentication and endpoint-specific authorization:
+REST endpoints in Data API builder or custom implementations need authentication and endpoint-specific authorization. Here's an example:
 
 ```json
 {
@@ -114,7 +114,7 @@ REST endpoints in Data API builder or custom implementations require authenticat
 }
 ```
 
-The database policy filters anonymous access to only public products. Role-based permissions control what actions each role can perform.
+Notice the database policy on anonymous access? It filters results to only public products. Role-based permissions then control what actions each role can perform.
 
 For custom REST endpoints built with stored procedures, implement security at the database level:
 
@@ -142,9 +142,9 @@ END;
 
 ## Secure MCP endpoints
 
-Model Context Protocol endpoints enable AI assistants and agents to interact with your database. These endpoints require additional security considerations because AI systems may process untrusted user input.
+Model Context Protocol endpoints let AI assistants and agents interact with your database. These need extra security attention because AI systems might process untrusted user input.
 
-Configure MCP server authentication:
+Here's how to configure MCP server authentication:
 
 ```json
 {
@@ -165,14 +165,14 @@ Configure MCP server authentication:
 }
 ```
 
-Limit MCP endpoint capabilities to prevent unintended data exposure or modification:
+The key is limiting what MCP endpoints can do:
 
 - Restrict operations to read-only when write access isn't needed
 - Explicitly deny access to tables containing credentials or sensitive configuration
 - Limit result set sizes to prevent data exfiltration through large queries
 - Log all MCP operations for security monitoring
 
-Implement prompt injection defenses by sanitizing inputs:
+You'll also want to implement prompt injection defenses by validating AI-generated queries:
 
 ```sql
 CREATE PROCEDURE mcp.ExecuteQuery

@@ -8,19 +8,19 @@ Dynamic Data Masking supports four masking functions, each designed for differen
 
 :::image type="content" source="../media/masking.png" alt-text="Table showing the four Dynamic Data Masking functions with before and after comparisons: Default shows XXXX, Email shows jXXX@XXXX.com, Random shows random numbers, and Partial shows 206-XXX-XX89.":::
 
-The default masking function replaces the entire value with a fixed string. For string data types, it shows *"XXXX"* (or fewer X characters for shorter columns). Numeric values display as zero, and date values show *"01-01-1900"*. This function works for any data type and provides complete obfuscation.
+The **default** function replaces the entire value with a fixed string. For strings, you see *"XXXX"* (or fewer X characters for shorter columns). Numbers display as zero, and dates show *"01-01-1900"*. Use this when you want complete obfuscation.
 
-The email masking function reveals the first character of an email address, replaces the rest with "XXX", and preserves the domain suffix. For example, *"john.smith@contoso.com"* appears as *"jXXX@XXXX.com"*. This format maintains the appearance of valid email data while protecting the actual address.
+The **email** function reveals just the first character of an email address, replaces the middle with "XXX", and preserves the domain suffix. So *"john.smith@contoso.com"* appears as *"jXXX@XXXX.com"*. The data still looks like a valid email, but the actual address stays hidden.
 
-With the random masking function, numeric values display as a random number within a specified range. You define minimum and maximum values, and each query returns a different random value. This approach works well for financial or statistical data where maintaining realistic-looking numbers matters.
+The **random** function displays numeric values as a random number within a range you specify. Each query returns a different value. This works great for financial or statistical data where you need data that looks genuine.
 
-The partial masking function (also called custom string masking) gives you precise control over which characters to reveal. You specify a prefix length to show, padding characters to use, and a suffix length to display. For example, masking a phone number might show *"206-XXX-XX89"*.
+The **partial** function gives you precise control. You specify how many characters to show at the start, what padding characters to use in the middle, and how many to show at the end. For example, a phone number might appear as *"206-XXX-XX89"*.
 
 ## Configure column masks
 
-You apply masks when creating tables or by altering existing columns. The `MASKED WITH` clause specifies the masking function and any required parameters.
+You apply masks when creating tables or by altering existing columns. The `MASKED WITH` clause specifies which function to use.
 
-You can create a table with masked columns like this:
+Here's a table with several masked columns:
 
 ```sql
 CREATE TABLE Customers (
@@ -35,10 +35,10 @@ CREATE TABLE Customers (
 );
 ```
 
-Each column uses a masking function appropriate for its data:
+Notice how each column uses a different masking function based on what makes sense for that data:
 
 - `Email` uses email masking to preserve the email format
-- `Phone` shows the first 3 digits and last two digits
+- `Phone` shows the first three digits and last two digits
 - `CreditCardNumber` reveals only the last four digits
 - `Income` displays a random value between 10,000 and 100,000
 - `SSN` uses default masking for complete obfuscation
@@ -59,7 +59,7 @@ ALTER COLUMN DateOfBirth DROP MASKED;
 
 ## Control mask visibility with permissions
 
-By default, users see masked data unless they have elevated permissions. The [`UNMASK` permission](/sql/relational-databases/security/dynamic-data-masking?azure-portal=true) controls who can view the actual values behind masks. You can grant this permission at different scopes to implement granular access control.
+By default, users see masked data unless they have elevated permissions. The [`UNMASK` permission](/sql/relational-databases/security/dynamic-data-masking?azure-portal=true#permissions) controls who sees the real values behind the masks.
 
 To allow a user to see all unmasked data in the database:
 
@@ -69,7 +69,7 @@ GRANT UNMASK TO DataAnalyst;
 
 This database-level permission reveals all masked columns to the specified user. However, you might want more granular control, allowing users to unmask only specific tables or columns.
 
-Starting with SQL Server 2022 and Azure SQL Database, you can grant `UNMASK` at the schema, table, or column level:
+Starting with SQL Server 2022, you can grant `UNMASK` at the schema, table, or even column level:
 
 ```sql
 -- Grant unmask on a specific schema
@@ -82,16 +82,16 @@ GRANT UNMASK ON Customers TO CustomerService;
 GRANT UNMASK ON Customers(Phone) TO TelemarketingTeam;
 ```
 
-This granular approach lets you implement the principle of least privilege. Users see only the sensitive data they need for their specific job functions.
+This granular approach helps you follow the principle of least privilege—users see only the sensitive data they actually need for their job.
 
 > [!IMPORTANT]
 > Users with `SELECT` permission on a table combined with `ALTER` permission can potentially bypass masking by modifying the column definition. Carefully manage permissions to prevent users from removing masks.
 
 ## Implement masking strategies
 
-When designing your masking strategy, consider how different user roles interact with your data. Start by identifying which columns contain sensitive information and who legitimately needs to see the actual values.
+When planning your masking strategy, think about how different user roles interact with your data. Which columns contain sensitive information? Who legitimately needs to see the actual values?
 
-Create database roles for different access levels:
+A common pattern is to create database roles for different access levels:
 
 ```sql
 -- Role for users who see masked data
@@ -108,9 +108,9 @@ ALTER ROLE MaskedDataViewers ADD MEMBER SupportStaff;
 ALTER ROLE UnmaskedDataViewers ADD MEMBER ComplianceOfficer;
 ```
 
-Dynamic Data Masking works at the presentation layer, meaning the actual data can still be inferred through certain query patterns. For highly sensitive data requiring complete protection, combine masking with other security measures like encryption or Row-Level Security.
+One thing to keep in mind: Dynamic Data Masking works at the presentation layer, meaning the actual data can still be inferred through certain query patterns. For highly sensitive data requiring complete protection, combine masking with other security measures like encryption or Row-Level Security.
 
-Consider these scenarios where masking excels:
+Consider these scenarios where masking is useful:
 
 - Development and testing environments where teams need realistic data structures without actual customer information
 - Customer service applications where support staff need to verify partial account details
@@ -118,6 +118,6 @@ Consider these scenarios where masking excels:
 - Audit compliance where specific users require full access while others see limited information
 
 > [!NOTE]
-> Dynamic Data Masking in SQL databases in Microsoft Fabric follows the same syntax and behavior as Azure SQL Database. Configure masks using T-SQL statements through the SQL analytics endpoint.
+> Dynamic Data Masking in SQL databases in Microsoft Fabric works the same way as Azure SQL Database. You configure masks using T-SQL through the SQL analytics endpoint.
 
-Masking provides an extra layer of defense but shouldn't be your only protection for sensitive data. Use it alongside encryption, Row-Level Security, and proper permission management for comprehensive data protection.
+Masking adds an important layer of defense, but don't rely on it alone for your most sensitive data. Use it alongside encryption, Row-Level Security, and proper permission management for comprehensive protection.
