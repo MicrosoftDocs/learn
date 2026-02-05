@@ -142,7 +142,7 @@ END;
 
 ## Secure MCP endpoints
 
-Model Context Protocol endpoints let AI assistants and agents interact with your database. These need extra security attention because AI systems might process untrusted user input.
+Model Context Protocol (MCP) endpoints let AI assistants and agents interact with your database. These endpoints need extra security attention because AI systems might process untrusted user input.
 
 Here's how to configure MCP server authentication:
 
@@ -201,7 +201,7 @@ END;
 ```
 
 > [!IMPORTANT]
-> Never trust AI-generated queries without validation. Implement allowlists for permitted tables and operations rather than trying to block malicious patterns.
+> Never trust AI-generated queries without validation. Implement allow lists for permitted tables and operations rather than trying to block malicious patterns.
 
 ## Implement network security
 
