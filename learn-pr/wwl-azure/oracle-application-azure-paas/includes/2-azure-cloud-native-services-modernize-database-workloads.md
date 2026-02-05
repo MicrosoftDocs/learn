@@ -42,12 +42,6 @@ In addition to the choice of core database technology, you consider the various 
 
 - [Microsoft SQL Server Migration Assistant (SSMA) for Oracle](/sql/ssma/oracle/sql-server-migration-assistant-for-oracle-oracletosql) is a tool that helps automate migration tasks, such as migration assessment, schema and SQL syntax conversion, data migration, and migration testing, optimized for Azure SQL.
 
-- [Database Migration Service Pack for Oracle](/azure-data-studio/extensions/database-migration-service-pack-for-oracle) is a set of [Azure Data Studio](/azure-data-studio/) extensions that facilitate the seamless migration of Oracle databases to Azure SQL Database and Azure SQL Managed Instance. It consists of two essential extensions:
-
-    - [Database Migration Assessment for Oracle extension](/azure-data-studio/extensions/database-migration-assessment-for-oracle-extension) helps you assess your Oracle workload for migrating to either Azure SQL or Azure Database for PostgreSQL.
-    
-    - [Database Schema Conversion Toolkit](/azure-data-studio/extensions/dsct/database-schema-conversion-toolkit) helps to automate database schema conversion between different Oracle and Microsoft SQL schema formats.
-
 - [Ora2Pg](https://ora2pg.darold.net/documentation.html#Ora2Pg-usage) is a Perl-based utility that helps migrate Oracle databases to PostgreSQL.
 
 Third-party services, such as the following, can also help you plan and implement migrations:

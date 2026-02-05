@@ -727,6 +727,16 @@
 		"source_path_from_root": "/learn-pr/achievements/learn-wwl.describe-verified-id-concepts.badge.yml",
 		"redirect_url": "https://www.microsoft.com/en-us/security/business/identity-access/microsoft-entra-verified-id",
 		"redirect_document_id": false
-		}
+		},
+    {
+      "source_path_from_root": "/learn-pr/wwl-sci/design-solutions-security-operations/4-design-security-information-event-management-solutions.yml",
+      "redirect_url": "/training/modules/design-solutions-security-operations/design-centralized-logging-auditing",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-sci/design-solutions-security-operations/includes/4-design-security-information-event-management-solutions.md",
+      "redirect_url": "/training/modules/design-solutions-security-operations/design-centralized-logging-auditing",
+      "redirect_document_id": false
+    }
     ]
 }
