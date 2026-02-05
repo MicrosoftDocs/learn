@@ -42,6 +42,7 @@ units:
 - learn.wwl.build-agent-workflows-microsoft-foundry.add-agents-to-workflow
 - learn.wwl.build-agent-workflows-microsoft-foundry.apply-power-fx
 - learn.wwl.build-agent-workflows-microsoft-foundry.maintain-workflows
+- learn.wwl.build-agent-workflows-microsoft-foundry.use-workflows-in-code
 - learn.wwl.build-agent-workflows-microsoft-foundry.exercise
 - learn.wwl.build-agent-workflows-microsoft-foundry.knowledge-check
 - learn.wwl.build-agent-workflows-microsoft-foundry.summary
