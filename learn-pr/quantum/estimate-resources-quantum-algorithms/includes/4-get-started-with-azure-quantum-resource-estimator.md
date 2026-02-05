@@ -1,13 +1,13 @@
-In the previous unit, you learned that the Azure Quantum Resource Estimator takes three main input parameters: the physical qubit parameters, the quantum error correction (QEC) scheme, and the error budget.
+In the previous unit, you learned that the Microsoft Quantum resource estimator takes three main input parameters: the physical qubit parameters, the quantum error correction (QEC) scheme, and the error budget.
 
-Now let's get some practice with the Resource Estimator. In this unit, you use the Resource Estimator to estimate the physical resources requirements for a simple quantum program.
+Now let's get some practice with the resource estimator. In this unit, you use the resource estimator to estimate the physical resources requirements for a simple quantum program.
 
 ## Install the required packages
 
-To use the Resource Estimator, install the latest `qsharp` and `qsharp-widgets` Python packages from the Azure Quantum Development Kit (QDK).  
+To use the resource estimator, install the latest `qdk` Python library with the `jupyter` extra from the Microsoft Quantum Development Kit (QDK).  
 
 ```bash
-python -m pip install --upgrade qsharp qsharp-widgets
+python -m pip install --upgrade "qdk[jupyter]"
 ```
 
 If you haven't already installed the QDK extension for Visual Studio Code (VS Code), then see [Install the QDK Extension](/azure/quantum/install-overview-qdk#install-the-qdk-extension).
@@ -60,13 +60,13 @@ Let's write the quantum algorithm in a Jupyter notebook. To create a Jupyter not
 
 ## Estimate resources for the quantum algorithm
 
-Run the Resource Estimator to estimate the physical resources needed to run the `RandomBit` operation. If you don't specify any parameters, then the Resource Estimator uses the following default parameter values:
+Run the resource estimator to estimate the physical resources needed to run the `RandomBit` operation. If you don't specify any parameters, then the resource estimator uses the following default parameter values:
 
 - `qubit_gate_ns_e3` for the qubit model
 - `surface_code` for the error correction code
 - 0.001 for the error budget
 
-To run the Resource Estimator, follow these steps:
+To run the resource estimator, follow these steps:
 
 1. Add a new cell and copy the following code to that cell:
 
@@ -76,7 +76,7 @@ To run the Resource Estimator, follow these steps:
    EstimateDetails(result)
    ```
 
-   The `qsharp.estimate` function creates a result object that contains information from the Resource Estimator. We pass `result` to the `EstimateDetails` function, which displays a set of tables in dropdowns that contain the output from the Resource Estimator.
+   The `qsharp.estimate` function creates a result object that contains information from the resource estimator. We pass `result` to the `EstimateDetails` function, which displays a set of tables in dropdowns that contain the output from the resource estimator.
 1. Expand the first table, called **Physical resource estimates**. This table shows the runtime, the reliable quantum operations per second, and the number of qubits required to run the algorithm.
 
    | Physical resource estimate | Value       |
@@ -134,15 +134,15 @@ To run the Resource Estimator, follow these steps:
      'estimateType': 'singlePoint'}
      ```
 
-For this algorithm, the Resource Estimator uses the `qubit_gate_ns_e3` qubit model, the `surface_code` error correction code, and 0.001 for the error budget. These are the default values for these parameters because you didn't specify their values when you called the Resource Estimator.
+For this algorithm, the resource estimator uses the `qubit_gate_ns_e3` qubit model, the `surface_code` error correction code, and 0.001 for the error budget. These are the default values for these parameters because you didn't specify their values when you called the resource estimator.
 
 ## Change the default values and estimate the resources again
 
-To run the Estimator with parameter values other than the defaults, specify other values for parameters when you call the Resource Estimator. Let's change the qubit model, the QEC scheme, and the error budget.
+To run the Estimator with parameter values other than the defaults, specify other values for parameters when you call the resource estimator. Let's change the qubit model, the QEC scheme, and the error budget.
 
 ### Change the qubit model
 
-Estimate the cost to run the same algorithm on a Majorana machine. To do this, pass the `qubitParams` parameter with the `name` field set to `qubit_maj_ns_e6` when you call the Resource Estimator.
+Estimate the cost to run the same algorithm on a Majorana machine. To do this, pass the `qubitParams` parameter with the `name` field set to `qubit_maj_ns_e6` when you call the resource estimator.
 
 In a new cell, copy and run the following code:
 
@@ -159,7 +159,7 @@ Expand the dropdowns in the output to explore how the resource costs differ for 
 
 ### Change the QEC scheme
 
-Next, estimate the cost for the same algorithm on a Majorana machine with a Floquet QEC scheme. To do this, pass the `qecScheme` parameter with the `name` field set to `floquet_code` when you call the Resource Estimator.
+Next, estimate the cost for the same algorithm on a Majorana machine with a Floquet QEC scheme. To do this, pass the `qecScheme` parameter with the `name` field set to `floquet_code` when you call the resource estimator.
 
 In a new cell, copy and run the following code:
 
@@ -179,7 +179,7 @@ Expand the dropdowns in the output to explore how the resource costs differ for 
 
 ### Change the error budget
 
-Finally, estimate the cost for the same parameters as your previous estimate, but increase the error budget to 10%. To do this, pass the `errorBudget` parameter with the value set to 0.1 when you call the Resource Estimator.
+Finally, estimate the cost for the same parameters as your previous estimate, but increase the error budget to 10%. To do this, pass the `errorBudget` parameter with the value set to 0.1 when you call the resource estimator.
 
 In a new cell, copy and run the following code:
 
@@ -196,6 +196,6 @@ result_maj = qsharp.estimate("RandomBit()", params={
 EstimateDetails(result_maj)
 ```
 
-Congratulations! You successfully used the Resource Estimator to estimate the physical resources required to run a simple quantum algorithm. You also customized the parameters to see how they affect the resource estimates.
+Congratulations! You successfully used the resource estimator to estimate the physical resources required to run a simple quantum algorithm. You also customized the parameters to see how they affect the resource estimates.
 
 In the next unit, you estimate the resources needed for a much more complex quantum program: Shor's algorithm.

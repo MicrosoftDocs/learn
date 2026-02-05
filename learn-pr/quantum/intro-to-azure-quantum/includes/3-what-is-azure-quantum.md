@@ -1,10 +1,10 @@
 [Azure Quantum](https://azure.microsoft.com/products/quantum/) is the cloud quantum computing service of Azure. The service offers a wide range of quantum hardware, software, and solutions in a single cloud service.
 
-With Azure Quantum and the Azure Quantum Development Kit, you can program your quantum algorithms and then apply your quantum solutions within the existing Azure platform.
+With Azure Quantum and the Microsoft Quantum Development Kit (QDK), you can program your quantum algorithms and then apply your quantum solutions within the existing Azure platform.
 
-## Quantum programming with the Azure Quantum Development Kit
+## Quantum programming with the QDK
 
-Quantum programming is a distinct art from classical programming because of the peculiar nature of qubits. Quantum algorithms require tools and ways of thinking that differ from classical algorithms. The Azure Quantum Development Kit (QDK) is a free open-source software development kit that's built specifically to write and run quantum programs.
+Quantum programming is a distinct art from classical programming because of the peculiar nature of qubits. Quantum algorithms require tools and ways of thinking that differ from classical algorithms. The QDK is a free open-source software development kit that's built specifically to write and run quantum programs.
 
 The QDK includes Q#, a high-level quantum programming language. The Q# language is designed to address the challenges of quantum information processing and is a holistic tool to write entire quantum algorithms, not just quantum circuits.
 
@@ -24,15 +24,15 @@ Here's just some of the benefits that come with the QDK:
 - Choose between different quantum programming languages and packages, such as Q#, OpenQASM, Qiskit, and Cirq.
 - Visualize circuit diagrams with the built-in circuit diagram viewer, and build quantum circuits graphically with the Circuit Editor.
 - Connect to Azure Quantum and run your quantum programs on real quantum hardware or hardware simulators, from providers such as IonQ, PASQAL, Quantinuum, and Rigetti.
-- Estimate the resources that your quantum program requires to run on a real quantum computer with the Azure Quantum Resource Estimator.
+- Estimate the resources that your quantum program requires to run on a real quantum computer with the Microsoft Quantum resource estimator.
 
-## Resource estimation with Azure Quantum
+## Resource estimation in Azure Quantum
 
 In quantum computing, resource estimation is the ability to understand the resources required to run your algorithm, such as the number of qubits, the number of quantum gates, and total processing time. When you understand the number of qubits required for a quantum solution and the differences between qubit technologies, you can prepare and refine your quantum solutions to run on future scaled quantum machines.
 
-Azure Quantum provides a free tool to estimate the resources of your quantum program. The Azure Quantum Resource Estimator allows you to assess architectural decisions, compare qubit technologies, and compare the resources needed to run a given quantum algorithm on different platforms.
+Azure Quantum provides a free tool to estimate the resources of your quantum program. The Microsoft Quantum resource estimator allows you to assess architectural decisions, compare qubit technologies, and compare the resources needed to run a given quantum algorithm on different platforms.
 
-If you want to know more, check out the module [Estimate physical resource requirements for quantum algorithms with the Azure Quantum Resource Estimator](/training/modules/estimate-resources-quantum-algorithms).
+If you want to know more, check out the module [Estimate physical resource requirements for quantum algorithms with the Microsoft Quantum resource estimator](/training/modules/estimate-resources-quantum-algorithms).
 
 ## Quantum hardware providers in Azure Quantum
 
