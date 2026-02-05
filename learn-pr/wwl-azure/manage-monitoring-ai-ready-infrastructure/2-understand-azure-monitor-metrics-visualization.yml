@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-monitoring-ai-ready-infrastructure.understand-azure-monitor-metrics-visualization
+title: "Understand Azure Monitor metrics and visualization"
+metadata:
+  title: "Understand Azure Monitor metrics and visualization"
+  description: "Understand Azure Monitor metrics and visualization"
+  ms.date: 02/02/2026
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: unit
+durationInMinutes: 12
+content: |
+  [!include[](includes/2-understand-azure-monitor-metrics-visualization.md)]
