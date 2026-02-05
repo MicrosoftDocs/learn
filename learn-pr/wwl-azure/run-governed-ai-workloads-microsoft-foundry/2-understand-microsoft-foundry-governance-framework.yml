@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.run-governed-ai-workloads-microsoft-foundry.understand-microsoft-foundry-governance-framework
+title: "Understand Microsoft Foundry governance framework"
+metadata:
+  title: "Understand Microsoft Foundry Governance Framework"
+  description: "Learn and understand Microsoft Foundry governance framework."
+  ms.date: 02/02/2026
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: unit
+durationInMinutes: 12
+content: |
+  [!include[](includes/2-understand-microsoft-foundry-governance-framework.md)]
