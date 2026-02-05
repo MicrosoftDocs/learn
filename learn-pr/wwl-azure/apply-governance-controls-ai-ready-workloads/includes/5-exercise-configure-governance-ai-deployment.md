@@ -24,7 +24,7 @@ Your company is developing a customer engagement platform that supports multilin
 - **Permissions**: To create Azure AI Services resources, you should have the Owner role assigned at the Azure subscription level.
 - Familiarity with Microsoft Defender for Cloud
 
-[!Note]
-You should ensure that Prompt Shields-based alerts for Azure OpenAI content filtering are enabled. Disabling this capability can affect Microsoft Defender for Cloud's ability to monitor and detect corresponding attacks.
+>[!Note]
+>You should ensure that Prompt Shields-based alerts for Azure OpenAI content filtering are enabled. Disabling this capability can affect Microsoft Defender for Cloud's ability to monitor and detect corresponding attacks.
 
 [:::image type="content" source="../media/launch-exercise-button.png" alt-text="Button to launch exercise.":::](https://go.microsoft.com/fwlink/?linkid=2346534)
