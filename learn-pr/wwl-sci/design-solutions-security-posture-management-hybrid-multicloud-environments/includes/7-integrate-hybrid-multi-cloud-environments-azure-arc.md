@@ -81,7 +81,7 @@ Design your resource hierarchy to support security governance:
 
 ## Addressing common design challenges
 
-**Disconnected scenarios**: Arc-enabled servers require periodic connectivity to Azure (at least every 30 days by default). For occasionally-connected scenarios, plan for this requirement. Arc-enabled Kubernetes clusters support GitOps for configuration even during disconnection.
+**Disconnected scenarios**: Arc-enabled servers require periodic connectivity to Azure (at least every 30 days by default). For occasionally connected scenarios, plan for this requirement. Arc-enabled Kubernetes clusters support GitOps for configuration even during disconnection.
 
 **Network segmentation**: If Arc resources exist in restricted network segments, aggregate traffic through proxies or deploy Arc gateway to minimize firewall openings.
 

@@ -34,7 +34,7 @@ Secure score is Defender for Cloud's primary metric for evaluating security post
 
 The Cloud Secure Score ranges from 0 to 100, with 100 indicating an optimal security posture. This model provides more accurate prioritization by factoring in contextual risk.
 
-:::image type="content" source="../media/cloud-secure-score.png" alt-text="Screenshot of a the Cloud Secure Score and the Defender CSPM plan." lightbox="../media/cloud-secure-score.png":::
+:::image type="content" source="../media/cloud-secure-score.png" alt-text="Screenshot of the Cloud Secure Score and the Defender CSPM plan." lightbox="../media/cloud-secure-score.png":::
 
 ### How Cloud Secure Score works
 
