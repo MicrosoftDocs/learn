@@ -64592,6 +64592,11 @@
       "source_path": "learn-pr/azure/identify-threats-with-azure-security-center/index.yml",
       "redirect_url": "https://learn.microsoft.com/azure/defender-for-cloud/defender-for-cloud-introduction",
       "redirect_document_id": false
+    },
+    { 
+      "source_path": "learn-pr/wwl-data-ai/get-started-with-generative-ai-and-agents/5-using-an-agent.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/get-started-with-generative-ai-and-agents/4-creating-an-agent",
+      "redirect_document_id": false
     }
   ]
 }
