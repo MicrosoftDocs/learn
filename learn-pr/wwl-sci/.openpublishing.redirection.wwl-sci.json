@@ -729,7 +729,7 @@
 		"redirect_document_id": false
 		},
     {
-      "source_path_from_root": "/learn-pr/wwl-sci/design-solutions-security-operations/includes/4-design-security-information-event-management-solutions.yml",
+      "source_path_from_root": "/learn-pr/wwl-sci/design-solutions-security-operations/4-design-security-information-event-management-solutions.yml",
       "redirect_url": "/training/modules/design-solutions-security-operations/5-design-solutions-detection-response",
       "redirect_document_id": false
     },
