@@ -9,7 +9,7 @@ metadata:
   author: JulianePadrao
   ms.author: jupadrao
   ms.topic: unit
-  module_assessment: true
+  module_assessment: false
 azureSandbox: false
 labModal: false
 durationInMinutes: 5
