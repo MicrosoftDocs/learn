@@ -8,6 +8,8 @@ metadata:
   author: wwlpublish
   ms.author: bradj
   ms.topic: unit
+  ms.custom: references_regions
 durationInMinutes: 75
 content: |
   [!include[](includes/4-exercise-configure-governance-controls.md)]
+
