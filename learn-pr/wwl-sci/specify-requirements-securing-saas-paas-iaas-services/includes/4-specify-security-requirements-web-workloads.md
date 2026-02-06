@@ -122,7 +122,7 @@ Deployment practices affect the security of production applications.
 
 Specify security requirements for deployment pipelines:
 
-- **Controlled deployment sources**: Deploy code only from controlled and secured DevOps pipelines. Prevent deployment from untrusted sources.
+- **Controlled deployment sources**: Deploy code only from controlled and secured Azure Pipelines. Prevent deployment from untrusted sources.
 - **Code scanning**: Require static application security testing (SAST) and software composition analysis before deployment.
 - **Dependency management**: Scan dependencies for known vulnerabilities and maintain updated packages.
 
