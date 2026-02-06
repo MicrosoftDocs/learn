@@ -71,17 +71,3 @@ quiz:
     - content: "Azure Monitor health probes configured with a 2-second timeout"
       isCorrect: false
       explanation: "Incorrect. Health probes check availability, not response time distribution. You need Application Insights analytics for percentile-based monitoring."
-  - content: "A retail company wants to send inventory notifications when stock levels change in their SQL database. They need subsecond latency and the solution must scale to handle high transaction volumes during sales events. Which change mechanism should they implement?"
-    choices:
-    - content: "Change Data Capture with a polling Azure Function"
-      isCorrect: false
-      explanation: "Incorrect. CDC with polling introduces latency due to the polling interval and can't meet subsecond requirements during high-volume events."
-    - content: "Change Tracking with an Azure Functions SQL trigger binding"
-      isCorrect: false
-      explanation: "Incorrect. While SQL trigger bindings provide near-real-time notifications, they still use polling internally and can't scale as efficiently as streaming for high volumes."
-    - content: "Change Event Streaming integrated with Azure Event Hubs"
-      isCorrect: true
-      explanation: "Correct. Change Event Streaming pushes changes directly to Event Hubs without polling, providing subsecond latency and scaling to millions of events per second."
-    - content: "Azure Logic Apps with the 'When an item is modified' trigger"
-      isCorrect: false
-      explanation: "Incorrect. Logic Apps use polling intervals (typically seconds to minutes) which doesn't meet subsecond latency requirements."
