@@ -29,20 +29,20 @@ quiz:
     - content: "Encrypt the connection string using Base64 encoding before adding it to the configuration"
       isCorrect: false
       explanation: "Incorrect. Base64 encoding isn't encryption and provides no security. Environment variable references with proper secret management are the correct approach."
-  - content: "A development team wants to expose a database view that joins product and category information. They need clients to access this data through REST APIs but prevent any write operations. How should they configure the entity?"
+  - content: "A development team wants to ensure their Data API Builder entity only allows clients to retrieve data, not modify it. Which permission configuration achieves this?"
     choices:
-    - content: "Set the source type to 'view' and configure permissions with only the 'read' action"
+    - content: "Configure permissions with only the 'read' action for the appropriate roles"
       isCorrect: true
-      explanation: "Correct. Setting the type to 'view' and limiting permissions to 'read' ensures the entity only supports read operations through the API."
-    - content: "Set the source type to 'table' and disable POST, PUT, PATCH, and DELETE methods in the REST configuration"
+      explanation: "Correct. Setting permissions to only include the 'read' action restricts the entity to read-only operations, preventing create, update, and delete actions."
+    - content: "Set the source type to 'view' which automatically prevents all write operations"
       isCorrect: false
-      explanation: "Incorrect. While disabling methods works, the source type should accurately reflect the database object type. Using 'view' is the correct approach."
-    - content: "Set the source type to 'view' and set graphql.operation to 'mutation'"
+      explanation: "Incorrect. While views are often read-only, the source type alone doesn't control permissions. You must explicitly configure permissions to restrict actions."
+    - content: "Disable REST and only enable GraphQL with operation set to 'mutation'"
       isCorrect: false
-      explanation: "Incorrect. Setting operation to 'mutation' would indicate write operations, which is the opposite of read-only access. Use 'query' for read-only entities."
-    - content: "Create a stored procedure that wraps the view query and expose it instead"
+      explanation: "Incorrect. Setting operation to 'mutation' indicates write operations, which is the opposite of read-only. Use 'query' for read operations and configure permissions appropriately."
+    - content: "Use the 'anonymous' role which only supports read operations by default"
       isCorrect: false
-      explanation: "Incorrect. Wrapping a view in a stored procedure adds unnecessary complexity. DAB natively supports exposing views as read-only entities."
+      explanation: "Incorrect. The 'anonymous' role doesn't have default permissions. You must explicitly define which actions each role can perform."
   - content: "Your organization is deploying Data API Builder to production and needs to use managed identity for database authentication. Which Azure hosting option supports this requirement while also providing automatic scaling based on request volume?"
     choices:
     - content: "Azure Virtual Machines with autoscale sets"
