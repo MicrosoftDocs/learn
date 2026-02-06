@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.govern-ai-ready-workloads-microsoft-foundry.exercise-configure-governance-controls
+title: "Apply governance controls to AI model lifecycle and resource consumption"
+metadata:
+  title: "Apply Governance Controls to AI Model Lifecycle and Resource Consumption"
+  description: "Learn about apply governance controls to AI Model Lifecycle and Resource Consumption."
+  ms.date: 02/02/2026
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: unit
+durationInMinutes: 45
+content: |
+  [!include[](includes/5-exercise-configure-governance-controls.md)]

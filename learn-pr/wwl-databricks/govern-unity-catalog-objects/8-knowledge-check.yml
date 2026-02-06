@@ -1,0 +1,84 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.govern-unity-catalog-objects.knowledge-check
+title: Module assessment
+metadata:
+  title: Module assessment
+  description: "Knowledge check"
+  ms.date: 02/05/2026
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+  module_assessment: true
+  ai-usage: ai-generated
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is the primary purpose of governed tags in Unity Catalog compared to standard tags?"
+    choices:
+    - content: "Governed tags provide faster search performance than standard tags"
+      isCorrect: false
+      explanation: "Incorrect. Governed tags differ from standard tags primarily in scope and control, not performance."
+    - content: "Governed tags enable policy enforcement with centralized control over allowed values"
+      isCorrect: true
+      explanation: "Correct. Governed tags provide centralized control over tag definitions at the account level, enabling ABAC policy enforcement with consistent classification."
+    - content: "Governed tags can store more characters than standard tags"
+      isCorrect: false
+      explanation: "Incorrect. Both governed and standard tags have the same character limits for keys and values."
+  - content: "Which Delta Lake property determines when the VACUUM command can remove unreferenced data files?"
+    choices:
+    - content: "delta.logRetentionDuration"
+      isCorrect: false
+      explanation: "Incorrect. This property controls how long transaction log history is kept, not when VACUUM can remove files."
+    - content: "delta.deletedFileRetentionDuration"
+      isCorrect: true
+      explanation: "Correct. The delta.deletedFileRetentionDuration property determines when VACUUM can remove unreferenced data files, with a default of 7 days."
+    - content: "delta.vacuumRetentionPeriod"
+      isCorrect: false
+      explanation: "Incorrect. This is not a valid Delta Lake table property."
+  - content: "What type of lineage does Unity Catalog automatically capture for queries run on Azure Databricks?"
+    choices:
+    - content: "Schema-level lineage only"
+      isCorrect: false
+      explanation: "Incorrect. Unity Catalog captures more granular lineage than just schema-level."
+    - content: "Table-level lineage only"
+      isCorrect: false
+      explanation: "Incorrect. Unity Catalog captures lineage at a more granular level than just tables."
+    - content: "Runtime data lineage down to the column level"
+      isCorrect: true
+      explanation: "Correct. Unity Catalog automatically captures runtime data lineage across queries, including column-level dependencies."
+  - content: "How long does Azure Databricks retain audit logs in the system table?"
+    choices:
+    - content: "30 days"
+      isCorrect: false
+      explanation: "Incorrect. Audit logs are retained for a longer period to support security and compliance analysis."
+    - content: "90 days"
+      isCorrect: false
+      explanation: "Incorrect. Audit logs are retained for a longer period than 90 days."
+    - content: "Up to one year"
+      isCorrect: true
+      explanation: "Correct. Azure Databricks retains audit logs for up to one year for security and fraud analysis purposes."
+  - content: "Which Delta Sharing approach should be used when sharing data with recipients who do not have access to Azure Databricks?"
+    choices:
+    - content: "Databricks-to-Databricks sharing with a sharing identifier"
+      isCorrect: false
+      explanation: "Incorrect. Databricks-to-Databricks sharing requires the recipient to have a Unity Catalog-enabled workspace."
+    - content: "Open sharing with token authentication"
+      isCorrect: true
+      explanation: "Correct. Open sharing with token authentication allows recipients without Azure Databricks access to consume shared data using the open Delta Sharing protocol."
+    - content: "OIDC federation with JWT tokens"
+      isCorrect: false
+      explanation: "Incorrect. OIDC federation is used to exchange tokens for short-lived Databricks OAuth tokens, but still requires integration with the recipient's identity provider."
+  - content: "What must be run after deleting records from a Delta table with deletion vectors enabled to permanently remove the underlying data?"
+    choices:
+    - content: "VACUUM command only"
+      isCorrect: false
+      explanation: "Incorrect. VACUUM alone doesn't remove data marked for deletion by deletion vectors."
+    - content: "OPTIMIZE command only"
+      isCorrect: false
+      explanation: "Incorrect. OPTIMIZE improves file layout but doesn't permanently remove data marked by deletion vectors."
+    - content: "REORG TABLE with APPLY (PURGE) followed by VACUUM"
+      isCorrect: true
+      explanation: "Correct. For tables with deletion vectors enabled, you must run REORG TABLE ... APPLY (PURGE) to remove the data, then VACUUM to remove the files from storage."

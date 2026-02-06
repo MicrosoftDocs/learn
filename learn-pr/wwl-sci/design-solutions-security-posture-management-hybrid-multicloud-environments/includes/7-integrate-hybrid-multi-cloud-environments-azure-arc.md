@@ -1,74 +1,92 @@
-Today, companies struggle to control and govern increasingly complex environments that extend across data centers, multiple clouds, and edge. Each environment and cloud possesses its own set of management tools, and new DevOps and ITOps operational models can be hard to implement across resources.
+Azure Arc provides the foundation for extending Azure security capabilities to resources running outside Azure. As a security architect, your design for hybrid and multicloud security depends on how effectively you integrate non-Azure resources with Azure's security tools through Azure Arc.
 
-Azure Arc simplifies governance and management by delivering a consistent multicloud and on-premises management platform.
+## Understanding Azure Arc as the security foundation
 
-Azure Arc provides a centralized, unified way to:
+Azure Arc projects resources from on-premises datacenters, other clouds (AWS, GCP), and edge locations into Azure Resource Manager. Once projected, these resources can use Azure's security services including Defender for Cloud, Azure Policy, and Microsoft Sentinel.
 
--   Manage your entire environment together by projecting your existing non-Azure and/or on-premises resources into Azure Resource Manager.
--   Manage virtual machines, Kubernetes clusters, and databases as if they are running in Azure.
--   Use familiar Azure services and management capabilities, regardless of where they live.
--   Continue using traditional ITOps while introducing DevOps practices to support new cloud native patterns in your environment.
--   Configure custom locations as an abstraction layer on top of Azure Arc-enabled Kubernetes clusters and cluster extensions.
+Azure Arc supports several resource types critical to security posture:
 
-:::image type="content" source="../media/azure-arc-control-plane.png" alt-text="Diagram showing Azure Arc management control plane." lightbox="../media/azure-arc-control-plane.png":::
+| Resource type | Arc capability | Security integration |
+|--------------|----------------|---------------------|
+| Physical and virtual servers | Arc-enabled servers | Defender for Servers, Azure Policy, VM extensions |
+| Kubernetes clusters | Arc-enabled Kubernetes | Defender for Containers, Azure Policy for Kubernetes, GitOps |
+| SQL Server instances | Arc-enabled SQL Server | Defender for SQL, Azure SQL best practices assessment |
+| VMware vSphere VMs | Arc-enabled VMware | Unified inventory, guest management |
+| AWS EC2, GCP VMs | Multicloud connector | Automated Arc onboarding, Defender integration |
 
-Currently, Azure Arc allows you to manage the following resource types hosted outside of Azure:
+**Design consideration**: Azure Arc is a prerequisite for Defender for Cloud protection on non-Azure resources. Plan Arc deployment as step 1 of your hybrid security strategy.
 
--   [Servers](/azure/azure-arc/servers/overview): Manage Windows and Linux physical servers and virtual machines hosted outside of Azure.
--   [Kubernetes clusters](/azure/azure-arc/kubernetes/overview): Attach and configure Kubernetes clusters running anywhere, with multiple supported distributions.
--   [Azure data services](/azure/azure-arc/data/overview): Run Azure data services on-premises, at the edge, and in public clouds using Kubernetes and the infrastructure of your choice. SQL Managed Instance and PostgreSQL (preview) services are currently available.
--   [SQL Server](/sql/sql-server/azure-arc/overview): Extend Azure services to SQL Server instances hosted outside of Azure.
--   Virtual machines (preview): Provision, resize, delete and manage virtual machines based on [VMware vSphere](/azure/azure-arc/vmware-vsphere/overview) or [Azure Stack HCI](/azure-stack/hci/manage/azure-arc-enabled-virtual-machines) and enable VM self-service through role-based access.
-<!--
-[](/azure/azure-arc/overview#key-features-and-benefits)
--->
+## Designing network connectivity for Arc
 
+The Connected Machine agent requires outbound HTTPS connectivity to Azure. Your design must address how agents communicate while meeting security requirements:
 
-## Key features and benefits
+**Direct connection**: Agents connect outbound over port 443 to Azure public endpoints. Suitable when internet access is available and proxy complexity isn't warranted. Configure required URLs in firewalls.
 
-Some of the key scenarios that Azure Arc supports are:
+**Proxy server**: Route agent traffic through existing proxies. All connections remain outbound only. Ensure proxy allows the required Azure endpoints.
 
--   Implement consistent inventory, management, governance, and security for servers across your environment.
--   Configure [Azure VM extensions](/azure/azure-arc/servers/manage-vm-extensions) to use Azure management services to monitor, secure, and update your servers.
--   Manage and govern Kubernetes clusters at scale.
--   Use GitOps to deploy configuration across one or more clusters from Git repositories.
--   Zero-touch compliance and configuration for Kubernetes clusters using Azure Policy.
--   Run [Azure data services](/azure/azure-arc/kubernetes/custom-locations) on any Kubernetes environment as if it runs in Azure (specifically Azure SQL Managed Instance and Azure Database for PostgreSQL server, with benefits such as upgrades, updates, security, and monitoring). Use elastic scale and apply updates without any application downtime, even without continuous connection to Azure.
--   Create [custom locations](/azure/azure-arc/kubernetes/custom-locations) on top of your [Azure Arc-enabled Kubernetes](/azure/azure-arc/kubernetes/overview) clusters, using them as target locations for deploying Azure services instances. Deploy your Azure service cluster extensions for [Azure Arc-enabled data services](/azure/azure-arc/data/create-data-controller-direct-azure-portal), [App services on Azure Arc](/azure/app-service/overview-arc-integration) (including web, function, and logic apps) and [Event Grid on Kubernetes](/azure/event-grid/kubernetes/overview).
--   Perform virtual machine lifecycle and management operations for [VMware vSphere](/azure/azure-arc/vmware-vsphere/overview) and [Azure Stack HCI](/azure-stack/hci/manage/azure-arc-enabled-virtual-machines) environments.
--   A unified experience viewing your Azure Arc-enabled resources, whether you are using the Azure portal, the Azure CLI, Azure PowerShell, or Azure REST API.
+**Azure Arc gateway**: Reduces the number of required endpoints from many to eight for agent connectivity. Simplifies firewall rules and proxy configuration. Requires internet access but minimizes endpoint sprawl.
 
-# Introduction to Azure Arc landing zone accelerator for hybrid and multicloud
+**Private Link**: For environments requiring private connectivity, Arc supports Azure Private Link. Agent traffic routes through ExpressRoute or VPN without traversing the public internet. Requires additional configuration for each extension's endpoints.
 
-Enterprises are currently building and running applications across various ecosystems on-premises, in multiple public clouds, and on the edge. When you're working in these distributed environments, it's critical that you find a way to ensure compliance and manage servers, applications, and data at scale while still maintaining agility.
+**Design consideration**: Don't use Log Analytics gateway as a proxy for the Connected Machine agent—it isn't supported. For monitoring-only scenarios, configure the agent in Monitor mode to restrict capabilities to Azure Monitor functionality.
 
-[Azure landing zones](/azure/cloud-adoption-framework/ready/landing-zone/) provides: A specific architectural approach. Reference architecture. Set of reference implementations that help you prepare your landing zones for mission-critical technology platforms and supported workloads.
+## Planning at-scale deployment
 
-:::image type="content" source="../media/architecture-custom-expanded.svg" alt-text="Diagram showing a conceptual architecture diagram of an Azure landing zone." lightbox="../media/architecture-custom-expanded.svg":::
+Individual agent installation doesn't scale for enterprise deployments. Design your onboarding approach based on existing infrastructure:
 
-_For more information on the design areas labeled A-I in the visual, see [environment design areas](/azure/cloud-adoption-framework/ready/landing-zone/design-areas#environment-design-areas)._
+| Environment | Recommended method |
+|-------------|-------------------|
+| Active Directory domain | Group Policy deployment with service principal |
+| Configuration Manager managed | PowerShell scripts or custom task sequences |
+| Ansible managed | Ansible playbooks |
+| VMware vSphere | Arc-enabled VMware with guest management |
+| AWS EC2 instances | Multicloud connector with autoprovisioning |
+| GCP VMs | OS Configuration agent with autoprovisioning |
 
-Azure landing zones were designed with hybrid and multicloud in mind. To support hybrid and multicloud, the reference architecture requires two additions:
+For at-scale deployment, use a service principal rather than interactive authentication. Create a dedicated service principal with the Azure Connected Machine Onboarding role and limit its scope to specific resource groups.
 
--   **Hybrid and multicloud connectivity:** Understand key network design considerations and recommendations for working with Azure Arc.
--   **Unified operations:** Include Azure Arc-enabled resources to extend your governance and operations support with consistent tooling.
-<!--
-[](/azure/cloud-adoption-framework/scenarios/hybrid/enterprise-scale-landing-zone#why-hybrid)
--->
+**Design consideration**: When connecting Windows or Linux servers with SQL Server installed, the SQL Server instances automatically connect to Arc as well. If this behavior isn't desired, tag servers with `ArcSQLServerExtensionDeployment: Disabled` during onboarding.
 
-## Why hybrid?
+## Designing agent security controls
 
-As organizations adopt modern cloud services and the associated benefits, periods of running services parallel alongside the legacy on-premises infrastructure are inevitable. As your organization further evaluates cloud services or as business requirements dictate, your team might choose to run more than one public cloud service. Operating a distributed heterogeneous estate requires simplified, consolidated management and governance to reduce operational impact.
+The Connected Machine agent supports several security configurations to limit functionality based on your requirements:
 
-Use landing zone concepts introduced as part of the Cloud Adoption Framework guidance to establish patterns for building hybrid architectures and introducing standards for connectivity, governance, and monitoring. This work helps when your strategic intent is to simplify and combine the infrastructure and services following migration projects. Setting standards for management processes and tools removes the need to retrofit workloads after you move them into Azure.
-<!--
-[](/azure/cloud-adoption-framework/scenarios/hybrid/enterprise-scale-landing-zone#prerequisites)
--->
+**Extension allowlist**: Restrict which extensions can deploy on Arc-enabled servers. Create an allow list of approved extensions to prevent unauthorized software installation.
 
-## Prerequisites
+**Monitor mode**: Configure agents for monitoring only by restricting to a Microsoft-managed extension allow list, disabling remote connectivity, and disabling the machine configuration agent. Use when Arc's purpose is purely observability.
 
-It's beneficial to have familiarity with the Azure landing zones. For more information, see the Azure landing zones [overview](/azure/cloud-adoption-framework/ready/landing-zone/) and Azure landing zones [implementation guidance](/azure/cloud-adoption-framework/ready/landing-zone/implementation-options).
+**Local agent controls**: The `azcmagent` command-line tool allows local administrators to configure agent behavior, lock down connectivity options, and manage extensions.
 
-![Diagram that shows Azure Arc high-level architecture.](../media/single-control-plane.png)
+## Integrating Arc with Defender for Cloud
 
-Azure provides various management tools to help you monitor and govern infrastructure and applications at scale. When implementing a hybrid landing zone, be sure to extend the Azure tools to control infrastructure and applications outside of Azure. This approach creates a single management plane and a single view of your entire hybrid estate, which makes monitoring and management at scale as straightforward as possible.
+Once resources connect through Arc, enable Defender for Cloud protection:
+
+**Servers**: Arc-enabled servers appear in Defender for Cloud inventory alongside Azure VMs. Enable Defender for Servers to deploy Microsoft Defender for Endpoint, vulnerability assessment, and just-in-time access.
+
+**Kubernetes**: Arc-enabled Kubernetes clusters integrate with Defender for Containers for runtime threat detection, vulnerability scanning, and security posture assessment. Deploy the Defender sensor and Azure Policy extension.
+
+**SQL Server**: Arc-enabled SQL Server instances integrate with Defender for SQL for threat detection and vulnerability assessment. The Azure extension for SQL Server deploys automatically during Arc onboarding.
+
+**Design consideration**: For multicloud scenarios (AWS, GCP), use Defender for Cloud's native connectors alongside Arc. The connectors autodiscover resources and can automatically provision Arc agents, simplifying deployment.
+
+## Organizing Arc resources for governance
+
+Design your resource hierarchy to support security governance:
+
+**Resource groups**: Create dedicated resource groups for Arc-enabled resources, organized by environment (production, development), location, or business unit. This organization enables Azure Policy assignment at appropriate scope.
+
+**Tagging strategy**: Apply consistent tags for owner, environment, compliance requirements, and cost center. Tags enable filtering in Defender for Cloud and organizing security recommendations.
+
+**Azure Policy**: Assign policies to Arc-enabled servers just like Azure VMs. Use built-in policies for security baselines, or create custom policies for organization-specific requirements. Policies evaluate configuration and can deploy extensions automatically.
+
+## Addressing common design challenges
+
+**Disconnected scenarios**: Arc-enabled servers require periodic connectivity to Azure (at least every 30 days by default). For occasionally connected scenarios, plan for this requirement. Arc-enabled Kubernetes clusters support GitOps for configuration even during disconnection.
+
+**Network segmentation**: If Arc resources exist in restricted network segments, aggregate traffic through proxies or deploy Arc gateway to minimize firewall openings.
+
+**Identity and access**: Arc-enabled resources use managed identity for Azure authentication. The system-assigned managed identity enables secure access to Azure services without credential management.
+
+**Compliance boundaries**: For data residency requirements, Arc metadata stores in the region you specify during onboarding. Ensure this aligns with compliance requirements.
+
+Your Azure Arc design directly determines whether Defender for Cloud, Azure Policy, and Microsoft Sentinel can protect hybrid and multicloud workloads. Prioritize Arc onboarding coverage to maximize your unified security posture.

@@ -4,10 +4,11 @@ title: Generative AI models
 metadata:
   title: Generative AI models
   description: "Learn about generative AI models, their capabilities, and how to use them effectively in various applications."
-  ms.date: 1/28/2026
+  ms.date: 2/5/2026
   author: sherzyang
   ms.author: sheryang
   ms.topic: unit
+  zone_pivot_groups: video-or-text
 durationInMinutes: 6
 content: |
   [!include[](includes/2-generative-ai-models.md)]

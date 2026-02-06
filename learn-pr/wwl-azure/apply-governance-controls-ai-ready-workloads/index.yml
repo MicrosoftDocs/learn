@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.wwl.apply-governance-controls-ai-ready-workloads
+metadata:
+  title: "Apply governance controls to AI-ready workloads"
+  description: "Discover classify AI assets enforce Azure Policy guardrails track data lineage and implement hands‑on governance controls securing compliant auditable AI deployments across infrastructure pipelines and sensitive data workflows."
+  ms.date: 02/02/2026
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: module
+  ms.service: azure
+title: "Apply governance controls to AI-ready workloads"
+summary: Discover classify AI assets enforce Azure Policy guardrails track data lineage and implement hands‑on governance controls securing compliant auditable AI deployments across infrastructure pipelines and sensitive data workflows.
+abstract: |
+ By the end of this module, you're able to:
+  - Configure Microsoft Purview to discover and classify AI infrastructure assets
+  - Implement Azure Policy guardrails for AI resource provisioning and management
+  - Establish data lineage tracking for AI training datasets and model outputs
+  - Monitor AI workload compliance using Microsoft Purview audit logs and reports
+  - Design access controls that protect AI models and sensitive training data
+prerequisites: |
+  - Familiarity with Azure fundamentals, including subscriptions, resource groups, and Azure role-based access control (RBAC)
+  - Basic understanding of Azure AI services and AI workload concepts, such as models, pipelines, and deployments
+  - Awareness of governance, security, and compliance principles, including data residency and policy enforcement
+  - Experience navigating the Azure portal to review resources, policies, and monitoring information
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- administrator
+- ai-engineer
+products:
+- azure
+subjects:
+- infrastructure
+units:
+- learn.wwl.apply-governance-controls-ai-ready-workloads.introduction
+- learn.wwl.apply-governance-controls-ai-ready-workloads.discover-classify-ai-infrastructure-assets
+- learn.wwl.apply-governance-controls-ai-ready-workloads.implement-azure-policy-guardrails-workloads
+- learn.wwl.apply-governance-controls-ai-ready-workloads.establish-data-lineage-track-pipelines
+- learn.wwl.apply-governance-controls-ai-ready-workloads.exercise-configure-governance-ai-deployment
+- learn.wwl.apply-governance-controls-ai-ready-workloads.knowledge-check
+- learn.wwl.apply-governance-controls-ai-ready-workloads.summary
+badge:
+  uid: learn.wwl.apply-governance-controls-ai-ready-workloads.badge

@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=5f4b8cbc-cba8-4394-9130-e167af01d0e3]
+
+> [!NOTE]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 **Agents** are *applications* built with generative AI models. Agentic AI moves beyond one‑off prompts and instead defines a consistent, workflow-like behavior that can be reused across apps, experiences, and services. 
 
 An agent in Microsoft Foundry is a packaged, reusable AI component that brings together three things:
@@ -65,5 +76,63 @@ In the Foundry portal, you can save your model, instructions, and tools as an ag
 
 ![Screenshot of the Foundry portal with the agent saved and open in the playground.](../media/continue-testing-agent.png)
 
-Next, learn how to publish an agent and use it in a client application.
+## Using an agent
 
+You can use an agent from a client application by using the **Foundry Projects SDK** to connect to the project and call it from a client using the **Project API**.
+
+The Project API enables you to:
+- Integrate agents into web apps, bots, or backend workflows
+- Orchestrate multi‑step tasks
+- Pass structured inputs or tool calls
+- Run agents at scale with your Foundry deployments
+
+### Create a client application for an agent
+
+To call the agent programmatically using Foundry’s Project API, you need the `agent-id` of your agent. You can find the `agent-id` in the Playground view of the agent when you select the *code* view and open the *.env variables*.  
+
+![Screenshot of the agent id that can be found with the environment variables.](../media/agent-id.png) 
+
+Let's take a look at a Python code sample to use an agent: 
+
+```python
+# Before running the sample, install the packages:
+#    pip install --pre azure-ai-projects>=2.0.0b1
+#    pip install azure-identity
+
+from azure.identity import DefaultAzureCredential
+from azure.ai.projects import AIProjectClient
+
+myEndpoint = "https://<resource>.services.ai.azure.com/api/projects/<resource-name>"
+
+project_client = AIProjectClient(
+    endpoint=myEndpoint,
+    credential=DefaultAzureCredential(),
+)
+
+myAgent = "learning-agent"
+# Get an existing agent
+agent = project_client.agents.get(agent_name=myAgent)
+print(f"Retrieved agent: {agent.name}")
+
+openai_client = project_client.get_openai_client()
+
+# Reference the agent to get a response
+response = openai_client.responses.create(
+    input=[{"role": "user", "content": "Tell me what you can help with."}],
+    extra_body={"agent": {"name": agent.name, "type": "agent_reference"}},
+)
+
+print(f"Response output: {response.output_text}")
+
+```
+
+### Publishing an agent
+
+**Publishing** an agent changes it from a saved development asset to a managed Azure resource with a stable endpoint. A published agent can be shared without exposing the Foundry project or source code. You can publish an agent through the Foundry portal. 
+
+![Screenshot of publishing agent in the Foundry portal.](../media/publish-agent.png)
+![Screenshot of agent after it is published in the Foundry portal with the endpoint information.](../media/agent-published.png)
+
+Publishing an agent gives you a stable endpoint to integrate the agent into applications. 
+
+::: zone-end
