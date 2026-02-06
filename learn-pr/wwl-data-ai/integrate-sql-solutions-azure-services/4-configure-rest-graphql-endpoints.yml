@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.integrate-sql-solutions-azure-services.4-configure-rest-graphql-endpoints
+title: Configure REST or GraphQL endpoints
+metadata:
+  title: Configure REST or GraphQL endpoints
+  description: Learn how to configure REST and GraphQL endpoints in Data API Builder including URL customization, query parameters, and GraphQL type generation.
+  ms.date: 02/05/2026
+  author: JulianePadrao
+  ms.author: jupadrao
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-configure-rest-graphql-endpoints.md)]

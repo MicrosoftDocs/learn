@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.integrate-sql-solutions-azure-services.6-deploy-data-api-builder-azure-services
+title: Deploy Data API Builder to Azure services
+metadata:
+  title: Deploy Data API Builder to Azure services
+  description: Learn how to deploy Data API Builder to Azure Container Apps, App Service, and Static Web Apps with CI/CD automation.
+  ms.date: 02/05/2026
+  author: JulianePadrao
+  ms.author: jupadrao
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/6-deploy-data-api-builder-azure-services.md)]
