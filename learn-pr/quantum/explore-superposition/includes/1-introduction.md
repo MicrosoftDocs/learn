@@ -16,4 +16,4 @@ By the end of this module, you can:
 
 - Basic knowledge of linear algebra and complex numbers.
 - The latest version of [Visual Studio Code](https://code.visualstudio.com/download).
-- The latest version of the [Azure Quantum Development Kit](https://marketplace.visualstudio.com/items?itemName=quantum.qsharp-lang-vscode) extension. Or, open [Visual Studio Code for the web](https://vscode.dev/quantum), which already includes the Quantum Development Kit extension.
+- The latest version of the [Microsoft Quantum Development Kit](https://marketplace.visualstudio.com/items?itemName=quantum.qsharp-lang-vscode) extension. Or, open [Visual Studio Code for the web](https://vscode.dev/quantum), which already includes the Quantum Development Kit extension.

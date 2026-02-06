@@ -1,4 +1,4 @@
-In the previous unit, you learned how to use the Azure Quantum Resource Estimator and how to explore its output.
+In the previous unit, you learned how to use the Microsoft Quantum resource estimator and how to explore its output.
 
 In this unit, you estimate the resources required to factor a 2,048-bit integer with Shor's algorithm. Shor's factoring algorithm is one of the most well-known quantum algorithms. It offers an exponential speedup over any known classical factoring algorithm.
 
@@ -16,26 +16,26 @@ To create Shor's algorithm in Q#, follow these steps:
 1. Open the **View** menu, and then choose **Command Palette**. An input box appears.
 1. In the input box, enter and choose **Create: New Jupyter Notebook**.
 1. Save the notebook as **ShorRE.ipynb**.
-1. In the first cell, import the `qsharp` package and the `EstimateDetails` function:
+1. In the first cell, import the `qsharp` module and the `EstimateDetails` function from the `qdk.widgets` module:
 
     ```python
-    import qsharp
-    from qsharp_widgets import EstimateDetails
+    from qdk import qsharp
+    from qdk.widgets import EstimateDetails
     ```
 
 1. Add a new cell, and then copy the following Shor's algorithm code into that cell:
 
     ```qsharp
     %%qsharp
-    open Microsoft.Quantum.Arrays;
-    open Microsoft.Quantum.Canon;
-    open Microsoft.Quantum.Convert;
-    open Microsoft.Quantum.Diagnostics;
-    open Microsoft.Quantum.Intrinsic;
-    open Microsoft.Quantum.Math;
-    open Microsoft.Quantum.Measurement;
-    open Microsoft.Quantum.Unstable.Arithmetic;
-    open Microsoft.Quantum.ResourceEstimation;
+    open Std.Arrays;
+    open Std.Canon;
+    open Std.Convert;
+    open Std.Diagnostics;
+    open Std.Intrinsic;
+    open Std.Math;
+    open Std.Measurement;
+    open Std.Unstable.Arithmetic;
+    open Std.ResourceEstimation;
     
     operation RunProgram() : Unit {
         let bitsize = 31;
@@ -95,7 +95,7 @@ To create Shor's algorithm in Q#, follow these steps:
                 H(c);
             } apply {
                 // `BeginEstimateCaching` and `EndEstimateCaching` are the operations
-                // exposed by the Azure Quantum Resource Estimator. These will instruct
+                // exposed by the Microsoft Quantum resource estimator. These will instruct
                 // resource counting such that the if-block will be executed
                 // only once, its resources will be cached, and appended in
                 // every other iteration.
@@ -111,7 +111,7 @@ To create Shor's algorithm in Q#, follow these steps:
         }
     
         // Return all the qubits used for oracles eigenstate back to 0 state
-        // using Microsoft.Quantum.Intrinsic.ResetAll.
+        // using Std.Intrinsic.ResetAll.
         ResetAll(eigenstateRegister);
     
         return frequencyEstimate;
@@ -390,7 +390,7 @@ To create Shor's algorithm in Q#, follow these steps:
 
 ## Estimate the resource requirements for Shor's algorithm
 
-You now have code for Shor's algorithm. Even if you don't understand exactly how the code works, you can still pass the algorithm to the Resource Estimator to gauge how viable it is to run on a quantum computer. To begin, estimate the resources required to run the algorithm with the default values for the Resource Estimator parameters.
+You now have code for Shor's algorithm. Even if you don't understand exactly how the code works, you can still pass the algorithm to the resource estimator to gauge how viable it is to run on a quantum computer. To begin, estimate the resources required to run the algorithm with the default values for the resource estimator parameters.
 
 Add a new cell, and then copy and run the following code in that cell:
 
@@ -400,7 +400,7 @@ result = qsharp.estimate("RunProgram()")
 EstimateDetails(result)
 ```
 
-The `qsharp.estimate` function creates a result object that contains information from the Resource Estimator. We pass `result` to the `EstimateDetails` function, which displays a set of tables in dropdowns that contain the output from the Resource Estimator.
+The `qsharp.estimate` function creates a result object that contains information from the resource estimator. We pass `result` to the `EstimateDetails` function, which displays a set of tables in dropdowns that contain the output from the resource estimator.
 
 For example, expand the **Logical qubit parameters** group to see that the code distance is 21 and the number of physical qubits is 882.
 
@@ -418,23 +418,23 @@ For example, expand the **Logical qubit parameters** group to see that the code 
 
 ### Visualize the space diagram
 
-Some resource considerations that might affect your algorithm design include the distribution of physical qubits and the number of qubits needed for T factories. To visualize this distribution and better understand the algorithm's estimated space requirements, use the `qsharp-widgets` package.
+Some resource considerations that might affect your algorithm design include the distribution of physical qubits and the number of qubits needed for T factories. To visualize this distribution and better understand the algorithm's estimated space requirements, use the `widgets` module.
 
 Add a new cell, and then copy and run the following code in that cell:
 
 ```python
-from qsharp_widgets import SpaceChart
+from qdk.widgets import SpaceChart
 
 SpaceChart(result)
 ```
 
 This implementation of Shor's algorithm requires a total of 829,766 physical qubits to run, 196,686 of which are algorithm qubits and 633,080 of which are T factory qubits.
 
-:::image type="content" source="../media/resource-estimator-diagram-jupyter.png" alt-text="Screenshot showing the space diagram of the Resource Estimator.":::
+:::image type="content" source="../media/resource-estimator-diagram-jupyter.png" alt-text="Screenshot showing the space diagram of the resource estimator.":::
 
 ## Compare resource estimates for different qubit technologies
 
-The Resource Estimator allows you to run multiple configurations of target parameters and compare the results for each configuration. This is useful when you want to compare the cost of different qubit models, QEC schemes, or error budgets.
+The resource estimator allows you to run multiple configurations of target parameters and compare the results for each configuration. This is useful when you want to compare the cost of different qubit models, QEC schemes, or error budgets.
 
 You can also construct a list of estimation parameters with the `EstimatorParams` object. To compare estimates, add a new cell and then copy and run the following code in that cell:
 
@@ -470,7 +470,7 @@ You get a table as output that contains the resource estimates for each model:
 
 ## Extract resource estimates from logical resource counts
 
-When you already know some estimates for an operation, the Resource Estimator allows you to incorporate the known estimates into the overall program cost, which reduces the run time of the Resource Estimator. Use the `LogicalCounts` class to extract the logical resource estimates from precalculated resource estimation values.
+When you already know some estimates for an operation, the resource estimator allows you to incorporate the known estimates into the overall program cost, which reduces the run time of the resource estimator. Use the `LogicalCounts` class to extract the logical resource estimates from precalculated resource estimation values.
 
 Add a new cell, and then copy and run the following code in that cell:
 
