@@ -4,7 +4,9 @@ Good detection isn't about catching everything. It's about identifying the situa
 
 ## Ensure detection matches the risk
 
-In Microsoft Purview, detection isn't based on a single signal. Policies evaluate different kinds of signals that describe what the data is, how it's classified, and how it's being used.
+In Microsoft Purview, detection is defined at the **rule level**, not at the policy level. A data loss prevention (DLP) policy can contain one or more rules, and each rule defines its own detection conditions and response behavior.
+
+When a policy includes multiple rules, those rules are evaluated independently. Each rule determines whether its conditions are met and what action to take when they are.
 
 These signals generally fall into three categories:
 

@@ -4,15 +4,15 @@ Effective policy management focuses on understanding how policies interact, know
 
 ## Understand how multiple DLP policies interact
 
-In Microsoft Purview, DLP policies are evaluated in priority order. When activity matches a policy, the evaluation process starts at the highest-priority policy and works downward.
+In Microsoft Purview, DLP policies are evaluated in **priority order**, starting with the highest-priority policy and moving downward.
 
-In some cases, the **first matching policy determines the enforcement outcome**. If that policy applies an action, lower-priority policies might never be evaluated for the same activity.
+When activity matches a policy, the **first matching policy can determine the enforcement outcome**. If that policy applies an action, lower-priority policies might never be evaluated for the same activity.
 
 This means that:
 
-- Policy order can affect enforcement results
-- Later policies might not apply if an earlier policy already matches
-- The same data can be treated differently depending on which policy is evaluated first
+- Higher-priority policies are evaluated before lower-priority policies
+- The first matching policy can control enforcement
+- Lower-priority policies might not apply, even if they also match the data
 
 For example, a high-priority policy that audits sensitive data sharing might prevent a lower-priority policy from blocking the same action, even if both policies target similar data. Understanding this interaction helps explain why enforcement outcomes don't always align with expectations when multiple policies exist.
 
@@ -20,7 +20,7 @@ For example, a high-priority policy that audits sensitive data sharing might pre
 
 Policy priority doesn't always affect outcomes, but when it does, the impact can be significant.
 
-Priority matters most when:
+Policy priority matters most when:
 
 - Multiple policies apply to the same location
 - Policies target overlapping users or similar data
@@ -28,7 +28,7 @@ Priority matters most when:
 
 In these cases, changing priority can alter which policy controls enforcement without changing detection or scope.
 
-Priority usually matters less when:
+Policy priority usually matters less when:
 
 - Policies are scoped to different locations
 - Policies apply to separate user groups

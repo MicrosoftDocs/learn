@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-ai-governance-ai-ready-infrastructure.microsoft-foundry-governance-capability
+title: "Understand Microsoft Foundry governance capabilities"
+metadata:
+  title: "Understand Microsoft Foundry Governance Capabilities"
+  description: "Learn how Microsoft Foundry centralizes governance for AI infrastructure, ensuring compliance, cost control, and audit readiness across Azure resources."
+  ms.date: 02/02/2026
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: unit
+  ms.custom: references_regions
+durationInMinutes: 13
+content: |
+  [!include[](includes/2-microsoft-foundry-governance-capability.md)]
+

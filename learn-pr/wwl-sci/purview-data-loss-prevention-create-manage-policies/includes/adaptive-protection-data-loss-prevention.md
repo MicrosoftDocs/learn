@@ -42,11 +42,21 @@ For example, a low-risk user might receive a warning for an action, while the sa
 
 ## Understand how adaptive protection fits into DLP
 
-Adaptive protection doesn't replace DLP policies. It builds on existing detection, scope, and actions by adjusting enforcement based on user risk.
+Adaptive Protection doesn't replace DLP policies. It extends them by adjusting enforcement based on user risk.
 
-User risk can change over time as behavior changes. This allows enforcement outcomes to adapt without redefining the policy itself.
+At a high level:
 
-This connection helps explain why enforcement results might vary even when policy rules remain the same.
+- Adaptive Protection is configured **within DLP rules**
+- Detection conditions remain unchanged
+- Enforcement behavior adjusts based on user risk signals
+
+The image shows where Adaptive Protection settings appear within a DLP rule. These settings control how enforcement changes based on user risk, while detection conditions remain the same.
+
+:::image type="content" source="../media/adaptive-protection-conditions.png" alt-text="Screenshot showing the DLP rule conditions pane with Insider risk level for Adaptive Protection and selectable risk levels." lightbox="../media/adaptive-protection-conditions.png":::
+
+User risk can change over time as behavior changes. When risk increases or decreases, the same rule can produce different enforcement outcomes without redefining detection or scope.
+
+This is why a policy might warn a user in one situation and block the same action later, even though the rule itself hasn't changed.
 
 ## Keep complexity aligned with actual risk
 
@@ -59,4 +69,3 @@ Extending DLP with adaptive behavior makes sense when:
 - Static policies no longer scale with real usage patterns
 
 When applied intentionally, risk-based behavior extends DLP capabilities without sacrificing clarity or control.
-

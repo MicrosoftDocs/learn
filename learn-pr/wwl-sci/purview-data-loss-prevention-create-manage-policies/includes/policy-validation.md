@@ -6,6 +6,10 @@ Validation helps ensure policies reduce risk without disrupting normal work. It 
 
 Simulation mode allows a policy to evaluate activity without taking enforcement actions. Instead of blocking activity, the policy records what _would_ have happened.
 
+A DLP policy can be **off**, run in **simulation**, or run in **enforcement**, and the selected mode applies at the policy level, not per rule.
+
+All rules within a policy run under the same mode. You can't simulate one rule while enforcing another.
+
 This makes simulation a design tool, not just a safety check.
 
 Simulation helps you:

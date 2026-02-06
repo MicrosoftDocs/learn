@@ -56,4 +56,19 @@ A common mistake is trying to solve every data loss scenario with a single polic
 
 This approach reduces disruption and builds trust in the controls your organization introduces.
 
+## Design DLP policies as a set of intentional decisions
+
+Planning a DLP policy is about making a series of deliberate design decisions before any configuration begins.
+
+Effective policy design involves deciding:
+
+- **What risk the policy is meant to address**, such as accidental sharing, oversharing, or repeated risky behavior
+- **How that risk should be detected**, using content signals, classification, context, or a combination
+- **Where the policy should apply**, based on locations and workloads where risk actually occurs
+- **Who the policy should affect**, including whether scope should start narrow for validation
+- **How the policy should respond**, ranging from visibility and guidance to enforcement
+- **How behavior should be validated before enforcement**, using simulation to confirm assumptions
+
+These decisions directly shape how DLP policies behave once they're configured and evaluated in Microsoft Purview. When these decisions are implemented, they appear as rule conditions, policy scope, enforcement actions, and policy mode within DLP policies.
+
 Before policies are enforced, they need to be validated in real environments to ensure they reduce risk without disrupting legitimate work.

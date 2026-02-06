@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-ai-governance-ai-ready-infrastructure.exercise-configure-governance-controls
+title: "Exercise: Implement AI workload governance with Microsoft Foundry"
+metadata:
+  title: "Exercise: Implement AI Workload Governance with Microsoft Foundry"
+  description: "Learn how to configure governance controls for AI workloads using Microsoft Foundry and Azure services to ensure compliance and innovation."
+  ms.date: 02/02/2026
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: unit
+  ms.custom: references_regions
+durationInMinutes: 75
+content: |
+  [!include[](includes/4-exercise-configure-governance-controls.md)]
+
