@@ -8,7 +8,18 @@ It's tempting to scope policies broadly across all locations to ensure coverage.
 
 Different locations support different kinds of data movement. Email, collaboration sites, file storage, and endpoints often expose data in different ways.
 
-This view highlights how many locations a single policy can cover, which is why scoping decisions should be intentional.
+In Microsoft Purview, DLP policies can be scoped to locations like:
+
+- Exchange email
+- SharePoint sites
+- OneDrive accounts
+- Microsoft Teams messages
+- Devices through Endpoint DLP
+- Browser-based activity in supported browsers
+
+Available conditions and enforcement actions vary by location, which is why scoping decisions directly affect how a policy behaves.
+
+This page shows how those locations appear during policy creation, with each location scoped independently.
 
 :::image type="content" source="../media/policy-scope-page.png" alt-text="Screenshot of the Microsoft Purview DLP policy location selection page with multiple locations selected." lightbox="../media/policy-scope-page.png":::
 
