@@ -18,7 +18,7 @@ Microsoft Copilot experiences bring these capabilities directly into familiar to
 
 Generative AI accelerates productivity by drafting content, summarizing information, and enabling natural language interaction with data and systems to create original content such as text, images, videos, audio, software code or other forms of data.<br>
 
-**2. Role of Agents in Task Automation**
+## 2. Role of Agents in Task Automation
 
 Agents help organizations streamline and automate tasks that traditionally require manual work.
 
