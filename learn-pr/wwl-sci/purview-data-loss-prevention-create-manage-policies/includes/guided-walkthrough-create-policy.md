@@ -8,6 +8,19 @@ An organization stores sensitive business documents in Microsoft 365 and collabo
 
 The security team wants visibility into risky sharing activity before enforcing restrictions. The goal is to reduce accidental data exposure without disrupting normal work.
 
+### Before creating or managing DLP policies
+
+Creating and managing data loss prevention (DLP) policies depends on having the appropriate Microsoft Purview roles assigned. Role assignment affects which policy options are visible, who can review simulation results and alerts, and who can change enforcement behavior or policy priority. Confirming roles up front helps avoid confusion during policy creation and clarifies administrative responsibilities.
+
+**DLP administration requires one of these roles:**
+
+- **Compliance Administrator**, which provides full administrative access to create, configure, enforce, and manage DLP policies across supported locations
+- **Compliance Data Administrator**, which provides the ability to create and manage DLP policies and review policy results without broader compliance administration permissions
+
+These roles are required to create, edit, and enforce DLP policies. They also allow administrators to review simulation results and alerts, and to manage policy mode, enforcement behavior, and policy priority.
+
+Once the appropriate roles are assigned, policy creation and management decisions can be made consistently in the Microsoft Purview portal.
+
 ### Start a new data loss prevention (DLP) policy
 
 Start by creating a new Data Loss Prevention policy in the Microsoft Purview portal.
