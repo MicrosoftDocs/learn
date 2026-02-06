@@ -1,34 +1,145 @@
-This unit summarizes the [Azure security baseline for App Service](/security/benchmark/azure/baselines/app-service-security-baseline) to assist you in creating new requirements specifications for Web workloads.
+As a security architect, you specify security requirements for web workloads that protect applications from common threats while enabling business functionality. Web applications face unique risks including exploitation of code vulnerabilities, data interception, and distributed denial-of-service attacks.
 
-Please refer to [Introduction to Microsoft Cybersecurity Reference Architecture and cloud security benchmark](/training/modules/design-solutions-microsoft-cybersecurity-cloud-security-benchmark/1-introduction-reference-architecture-benchmark) for more background on Microsoft Cloud Security Benchmark. 
+## Specify network security requirements
 
-In the table below, we have included controls from the full baseline where:
+Network security controls restrict who can access your web applications and how traffic flows to and from them.
 
-* Security controls were *supported* but *not* enabled by default
-* There was explicit guidance which contained action to be taken on the part of the customer
+### Private connectivity
 
-| Area | Control | Feature | Guidance Summary |
-|---|---|---|---|
-| Network security  | NS-1: Establish network segmentation boundaries  | Virtual Network Integration  | Ensure a stable IP for outbound communications towards internet addresses: You can provide a stable outbound IP by using the Virtual Network integration feature. This allows the receiving party to allowlist based on IP, if needed.  |
-|   | NS-2: Secure cloud services with network controls  | Azure Private Link  | Use private endpoints for your Azure Web Apps to allow clients located in your private network to securely access the apps over Private Link. The private endpoint uses an IP address from your Azure VNet address space.  |
-|   | NS-2: Secure cloud services with network controls  | Disable Public Network Access  | Disable Public Network Access' using either service-level IP ACL filtering rules or private endpoints or by setting the publicNetworkAccess property to Disabled in Azure Resource Manager.  |
-|   | NS-5: Deploy DDoS protection  |   | Enable DDoS Protection on the virtual network hosting your App Service's Web Application Firewall. Azure provides DDoS infrastructure  (Basic) protection on its network. For improved intelligent DDoS capabilities, Enable Azure DDoS Protection which learns about normal traffic patterns and can detect unusual behavior. Azure DDoS Protection have two tiers; Network Protection and IP Protection.  |
-|   | NS-6: Deploy web application firewall  |   | Avoid WAF being bypassed for your applications. Make sure the WAF can't be bypassed by locking down access to only the WAF. Use a combination of Access Restrictions, Service Endpoints and Private Endpoints.  |
-| Identity management  | IM-1: Use centralized identity and authentication system |Microsoft Entra authentication Required for Data Plane Access|For authenticated web applications, only use well-known established identity providers to authenticate and authorize user access.|
-|   |   | Local Authentication Methods for Data Plane Access  | Restrict the use of local authentication methods for data plane access. Instead, use Microsoft Entra ID as the default authentication method to control your data plane access.  |
-|   | IM-3: Manage application identities securely and automatically  | Managed Identities  | Use Azure managed identities instead of service principals when possible, which can authenticate to Azure services and resources that support Microsoft Entra authentication. Managed identity credentials are fully managed, rotated, and protected by the platform, avoiding hard-coded credentials in source code or configuration files.  |
-|   | IM-7: Restrict resource access based on conditions  | Conditional Access for Data Plane  | Define the applicable conditions and criteria for Microsoft Entra Conditional Access in the workload.  |
-|   | IM-8: Restrict the exposure of credential and secrets  | Service Credential and Secrets Support Integration and Storage in Azure Key Vault  | Ensure that app secrets and credentials are stored in secure locations such as Azure Key Vault, instead of embedding them into code or configuration files. Use a managed identity on your app to then access credentials, or secrets stored in Key Vault in a secure fashion.  |
-| Privileged access  | PA-8: Determine access process for cloud provider support  | Customer Lockbox  | In support scenarios where Microsoft needs to access your data, use Customer Lockbox to review, then approve or reject each of Microsoft's data access requests.  |
-| Data protection  | DP-3: Encrypt sensitive data in transit  | Data in Transit Encryption  | Use and enforce the default minimum version of TLS v1.2, configured in TLS/SSL settings, for encrypting all information in transit. Also ensure that all HTTP connection requests are redirected to HTTPS.  |
-|   | DP-5: Use customer-managed key option in data at rest encryption when required  | Data at Rest Encryption Using CMK  |  If necessary for regulatory compliance, define the use case and service scope where encryption using customer-managed keys are needed. Enable and implement data at rest encryption using customer-managed key for those services. |
-|   | DP-6: Use a secure key management process  | Key Management in Azure Key Vault  | Use Azure Key Vault to create and control the life cycle of your encryption keys, including key generation, distribution, and storage. Rotate and revoke your keys in Azure Key Vault and your service based on a defined schedule or when there's a key retirement or compromise.   |
-|   | DP-7: Use a secure certificate management process  | Certificate Management in Azure Key Vault  | App Service can be configured with SSL/TLS and other certificates, which can be configured directly on App Service or referenced from Key Vault. To ensure central management of all certificates and secrets, store any certificates used by App Service in Key Vault instead of deploying them locally on App Service directly.  |
-| Asset management  | AM-2: Use only approved services  |   |   |
-|   | AM-4: Limit access to asset management  |   | Isolate systems that process sensitive information. To do so, use separate App Service Plans or App Service Environments and consider the use of different subscriptions or management groups.  |
-| Logging and threat detection  | LT-1: Enable threat detection capabilities  | Microsoft Defender for Service / Product Offering  | Use Microsoft Defender for App Service to identify attacks targeting applications running over App Service.  |
-|   | LT-4: Enable logging for security investigation  | Azure Resource Logs  | Enable resource logs for your web apps on App Service.  |
-| Posture and vulnerability management  | PV-2: Audit and enforce secure configurations  |   | Turn off remote debugging, remote debugging must not be turned on for production workloads as this opens more ports on the service, which increases the attack surface.  |
-|   | PV-7: Conduct regular red team operations  |   | Conduct regular penetration test on your web applications following the penetration testing rules of engagement.  |
-| Backup and recovery  | BR-1: Ensure regular automated backups  | Azure Backup  | Where possible, implement stateless application design to simplify recovery and backup scenarios with App Service. If you really do need to maintain a stateful application, enable the Backup and Restore feature in App Service, which lets you easily create app backups manually or on a schedule.  |
-| DevOps security  | DS-6: Enforce security of workload throughout DevOps lifecycle  |   | Deploy code to App Service from a controlled and trusted environment, like a well-managed and secured DevOps deployment pipeline. This avoids code that wasn't version controlled and verified to be deployed from a malicious host.  |
+Specify requirements to minimize public internet exposure:
+
+- **Private endpoints**: Require Azure Private Link endpoints to route traffic through your virtual network for internal applications. Private endpoints eliminate exposure to the public internet while allowing secure access from corporate networks.
+- **Virtual network integration**: Enable outbound virtual network integration for applications that need to access resources in Azure virtual networks or on-premises networks through VPN or ExpressRoute.
+- **Disable public network access**: When private endpoints provide all necessary connectivity, require that public endpoints be disabled entirely.
+
+### Access restrictions
+
+For applications that require public access, specify controls to limit exposure:
+
+- **IP access restrictions**: Define allow lists of IP addresses and subnets that can access the application. Block all traffic from IP addresses not explicitly permitted.
+- **Service endpoints**: Restrict inbound access to specific subnets in your virtual networks using service endpoints combined with IP access restrictions.
+
+### DDoS and application layer protection
+
+Specify deployment of protective services in front of web applications:
+
+- **Web Application Firewall (WAF)**: Require [Azure WAF](/azure/web-application-firewall/overview) deployed through Azure Front Door or Application Gateway to protect against common exploits like SQL injection, cross-site scripting, and other OWASP Top 10 vulnerabilities.
+- **WAF policy mode**: Deploy WAF policies in detection mode initially to log threats without blocking legitimate traffic. After validating rule effectiveness, require prevention mode for production workloads.
+- **Managed rule sets**: Use Azure-managed rule sets that are automatically updated to protect against new attack signatures, including the Microsoft Threat Intelligence Collection for enhanced coverage.
+- **DDoS Protection**: Enable Azure DDoS Protection on virtual networks hosting web application infrastructure to defend against volumetric attacks.
+
+### WAF bypass prevention
+
+Specify controls to ensure traffic cannot bypass WAF inspection:
+
+- Configure access restrictions on App Service to accept traffic only from your WAF's IP addresses
+- Use private endpoints combined with WAF deployment to ensure all traffic passes through inspection
+- Lock down the application's direct endpoint using service endpoints or IP restrictions
+
+## Specify identity and access requirements
+
+Identity controls determine who can access your web application and with what permissions.
+
+### Application authentication
+
+Specify authentication requirements based on the application's audience:
+
+- **Microsoft Entra authentication**: Require Microsoft Entra ID as the identity provider for corporate applications. Use App Service built-in authentication to handle authentication without custom code.
+- **Conditional Access policies**: Define conditions under which users can access applications, including device compliance, location, and risk level requirements.
+- **Multifactor authentication**: Require MFA for applications accessing sensitive data or performing privileged operations.
+- **Disable local authentication**: Restrict the use of local authentication methods. Require Microsoft Entra ID as the default authentication method for data plane access.
+
+### Application identity
+
+Specify how the application authenticates to other services:
+
+- **Managed identities**: Require managed identities for applications that access Azure resources like Key Vault, SQL Database, or Storage. Managed identities eliminate credentials in code or configuration.
+- **Unique identities per application**: Assign distinct identities to each application to maintain isolation and enable granular access control. Don't share identities across applications.
+
+### Management access
+
+Specify controls for administrative operations:
+
+- **Azure RBAC**: Implement role-based access control for management operations using built-in roles like Web Plan Contributor and Website Contributor.
+- **Least privilege**: Assign the minimum permissions necessary for each administrative role.
+- **Customer Lockbox**: Enable Customer Lockbox to require approval before Microsoft support can access your application data during support scenarios.
+
+## Specify data protection requirements
+
+Data protection requirements ensure confidentiality and integrity of information in transit and at rest.
+
+### Transport security
+
+Specify requirements for encrypting data in transit:
+
+- **HTTPS only**: Require HTTPS-only mode to redirect all HTTP requests to HTTPS. All communication between clients and applications must be encrypted.
+- **Minimum TLS version**: Require TLS 1.2 or higher for all connections. Disable TLS 1.0 and 1.1 which contain known vulnerabilities.
+- **TLS certificates**: Require properly configured TLS/SSL certificates for custom domains. Store certificates in Azure Key Vault for centralized management and automatic renewal.
+- **Mutual TLS**: For B2B scenarios or high-security applications, require client certificate authentication to verify client identity.
+
+### Secret management
+
+Specify requirements for protecting sensitive configuration:
+
+- **Azure Key Vault integration**: Store all secrets, certificates, and encryption keys in Key Vault rather than application settings or code.
+- **Key Vault references**: Use App Service Key Vault references to access secrets securely using managed identities.
+- **No credentials in code**: Prohibit storing credentials, connection strings, or API keys in source code or configuration files checked into version control.
+
+### Customer-managed keys
+
+For regulatory compliance scenarios, specify:
+
+- Requirements for customer-managed encryption keys where needed
+- Key rotation schedules and procedures
+- Key Vault integration for key lifecycle management
+
+## Specify monitoring requirements
+
+Monitoring enables detection and response to security threats.
+
+### Logging
+
+Specify logging requirements for security investigation:
+
+- **Resource logs**: Enable App Service resource logs including HTTP logs, application logs, and failed request traces.
+- **Web server logs**: Capture detailed request information for security analysis.
+- **Azure Monitor integration**: Send logs to Azure Monitor Logs for centralized analysis and long-term retention.
+- **Retention periods**: Define log retention requirements aligned with compliance obligations.
+
+### Threat detection
+
+Specify threat detection capabilities:
+
+- **Microsoft Defender for App Service**: Enable [Microsoft Defender for App Service](/azure/defender-for-cloud/defender-for-app-service-introduction) to identify attacks targeting applications and receive security alerts.
+- **Security alerts**: Configure alerts for abnormal patterns like repeated authentication failures, unusual traffic volumes, or suspicious application behavior.
+- **Application Insights**: Deploy Application Insights for application performance monitoring and anomaly detection.
+
+## Specify secure deployment requirements
+
+Deployment practices affect the security of production applications.
+
+### DevSecOps
+
+Specify security requirements for deployment pipelines:
+
+- **Controlled deployment sources**: Deploy code only from controlled and secured Azure Pipelines. Prevent deployment from untrusted sources.
+- **Code scanning**: Require static application security testing (SAST) and software composition analysis before deployment.
+- **Dependency management**: Scan dependencies for known vulnerabilities and maintain updated packages.
+
+### Configuration
+
+Specify secure configuration requirements:
+
+- **Disable remote debugging**: Remote debugging must be disabled for production workloads to reduce attack surface.
+- **Disable FTP**: Disable FTP access or enforce FTPS-only to prevent unencrypted credential transmission.
+- **Disable basic authentication**: Disable username/password authentication for SCM and FTP endpoints in favor of Microsoft Entra ID authentication.
+
+### Isolation
+
+For high-security workloads, specify:
+
+- Separate App Service Plans for applications processing sensitive data
+- App Service Environment for complete network isolation
+- Separate subscriptions or management groups for security boundary enforcement
+
+Apply the [Azure security baseline for App Service](/security/benchmark/azure/baselines/app-service-security-baseline) to ensure deployments meet Microsoft cloud security benchmark controls.
