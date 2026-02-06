@@ -8,8 +8,8 @@ Your company is building a centralized AI platform on Microsoft Foundry to suppo
 
 :::image type="content" source="../media/company-building-centralized-ai-platform.png" alt-text="Diagram showing a company building a centralized AI platform on Microsoft Foundry.":::
 
-[!Important]
-The exercise involves provisioning a virtual network with two subnets and reviewing the process of a template-based deployment of a Microsoft Foundry standard agent environment with private networking, without the actual implementation of such environment. This is intentional in order to minimize the duration and cost of the exercise. There are more considerations associated with the deprovisioning process, which would further increase the cost and complexity of the implementation tasks. 
+>[!Important]
+> The exercise involves provisioning a virtual network with two subnets and reviewing the process of a template-based deployment of a Microsoft Foundry standard agent environment with private networking, without the actual implementation of such environment. This is intentional in order to minimize the duration and cost of the exercise. There are more considerations associated with the deprovisioning process, which would further increase the cost and complexity of the implementation tasks. 
 
 [:::image type="content" source="../media/launch-exercise-button.png" alt-text="Button to launch exercise.":::](https://go.microsoft.com/fwlink/?linkid=2349800)
 
