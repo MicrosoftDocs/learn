@@ -50,7 +50,7 @@ Review content filter configurations for harmful content categories (hate speech
 
 ### Output validation evaluation
 
-Evaluate groundedness detection configurations for RAG-based applications. Groundedness detection identifies when model outputs contain information not supported by provided source materials, reducing hallucination risks. Verify whether groundedness correction is enabled to automatically align responses with source documents.
+Evaluate groundedness detection configurations for RAG-based applications. Groundedness detection identifies when model outputs contain information not supported by provided source materials, reducing risks of incorrect information. Verify whether groundedness correction is enabled to automatically align responses with source documents.
 
 For applications using AI agents, assess Task Adherence API implementation. This capability detects when tool use by AI agents is misaligned, unintended, or premature, preventing agents from taking unauthorized actions.
 
@@ -76,7 +76,7 @@ Evaluate whether the solution implements human review for critical AI actions, e
 
 ## Evaluate threat protection capabilities
 
-Microsoft Defender for Cloud provides AI-specific security posture management and threat protection. Evaluate whether solutions leverage these capabilities for comprehensive security monitoring. MCSB v2 controls AI-6 and AI-7 address monitoring and continuous red teaming requirements.
+Microsoft Defender for Cloud provides AI-specific security posture management and threat protection. Evaluate whether solutions use these capabilities for comprehensive security monitoring. MCSB v2 controls AI-6 and AI-7 address monitoring and continuous red teaming requirements.
 
 ### AI security posture management
 
@@ -97,13 +97,13 @@ Evaluate alert integration with security operations. Verify that AI security ale
 
 ### Continuous AI red teaming (MCSB AI-7)
 
-Assess whether the organization performs continuous adversarial testing of AI systems. AI red teaming uses tools like PyRIT (Python Risk Identification Tool) and the Azure AI Red Teaming Agent to simulate attacks including prompt injection, jailbreaking, and data poisoning. Evaluate whether red teaming is integrated into CI/CD pipelines for pre-deployment validation and whether test scenarios align with MITRE ATLAS tactics for AI-specific threats.
+Assess whether the organization performs continuous adversarial testing of AI systems. AI red teaming uses tools like PyRIT (Python Risk Identification Tool) and the Azure AI Red Teaming Agent to simulate attacks including prompt injection, jailbreaking, and data poisoning. Evaluate whether red teaming is integrated into CI/CD pipelines for predeployment validation and whether test scenarios align with MITRE ATLAS tactics for AI-specific threats.
 
 ## Evaluate data protection and availability
 
 Assess encryption configurations for data at rest, verifying customer-managed keys where compliance requires key management control. Evaluate data residency configurations to ensure AI services and connected resources (search indexes, storage accounts) meet data sovereignty requirements.
 
-For fine-tuned models, verify data lifecycle policies ensure training data deletion after fine-tuning completes unless retention is specifically required.
+For fine-tuned models, verify data lifecycle policies ensure training data deletion after fine-tuning completes unless retention is required.
 
 Evaluate availability controls including quota monitoring and alerting, rate limiting at API Management, and Azure DDoS Protection for internet-facing deployments.
 
