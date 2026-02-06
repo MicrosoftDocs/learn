@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-secure-ai-ready-infrastructure-azure-services.secure-azure-openai-cognitive-services
+title: "Secure Azure OpenAI and Cognitive Services"
+metadata:
+  title: "Secure Azure OpenAI Service and Cognitive Services"
+  description: "Learn how to secure Azure OpenAI Service and Cognitive Services with managed identities, private endpoints, and content filtering for compliance."
+  ms.date: 02/04/2026
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: unit
+durationInMinutes: 13
+content: |
+  [!include[](includes/3-secure-azure-openai-cognitive-services.md)]
