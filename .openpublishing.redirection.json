@@ -176,6 +176,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/paths/windows-11-pro-accreditation-2025/index.yml",
+      "redirect_url": "/training/paths/windows-11-pro-accreditation-2026",
+      "redirect_document_id": false
+    },
+    {
       "source_path_from_root": "/learn-pr/azure/deploy-java-spring-boot-app-service-mysql/3-exercise-build.yml",
       "redirect_url": "https://learn.microsoft.com/azure/app-service/tutorial-java-spring-cosmosdb",
       "redirect_document_id": false
@@ -28345,6 +28350,34 @@
     {
       "source_path_from_root": "/learn-pr/wwl-azure/monitor-troubleshoot-adt/8-summary.md",
       "redirect_url": "/training/browse/?products=azure&terms=iot"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-databricks/govern-unity-catalog-objects/4-implement-row-filtering-column-masking.yml",
+      "redirect_url": "/training/wwl-databricks/secure-unity-catalog-objects/5-implement-row-filtering-column-masking"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-databricks/govern-unity-catalog-objects/5-apply-data-retention-policies.yml",
+      "redirect_url": "/training/wwl-databricks/govern-unity-catalog-objects/4-apply-data-retention-policies"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-databricks/govern-unity-catalog-objects/6-manage-data-lineage-tracking.yml",
+      "redirect_url": "/training/wwl-databricks/govern-unity-catalog-objects/5-manage-data-lineage-tracking"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-databricks/govern-unity-catalog-objects/7-configure-audit-logging.yml",
+      "redirect_url": "/training/wwl-databricks/govern-unity-catalog-objects/6-configure-audit-logging"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-databricks/govern-unity-catalog-objects/8-secure-delta-sharing-strategy.yml",
+      "redirect_url": "/training/wwl-databricks/govern-unity-catalog-objects/7-secure-delta-sharing-strategy"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-databricks/govern-unity-catalog-objects/9-knowledge-check.yml",
+      "redirect_url": "/training/wwl-databricks/govern-unity-catalog-objects/8-knowledge-check"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-databricks/govern-unity-catalog-objects/10-summary.yml",
+      "redirect_url": "/training/wwl-databricks/govern-unity-catalog-objects/9-summary"
     },
     {
       "source_path_from_root": "/learn-pr/azure/cloud-adoption-framework-security/4-security-roles-responsibilities.yml",
@@ -64519,6 +64552,51 @@
       "source_path": "learn-pr/azure/intro-to-azure-arc/7-summary.yml",
       "redirect_url": "https://learn.microsoft.com/azure/azure-arc/overview",
       "redirect_document_id": false
-    }                                                                            
+    },
+    {
+      "source_path": "learn-pr/azure/identify-threats-with-azure-security-center/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/defender-for-cloud/defender-for-cloud-introduction",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/identify-threats-with-azure-security-center/2-security-center-tiers.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/defender-for-cloud/defender-for-cloud-introduction",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/identify-threats-with-azure-security-center/3-customize-collection-options.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/defender-for-cloud/defender-for-cloud-introduction",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/identify-threats-with-azure-security-center/4-policy-management.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/defender-for-cloud/defender-for-cloud-introduction",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/identify-threats-with-azure-security-center/5-analyze-recommendations.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/defender-for-cloud/defender-for-cloud-introduction",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/identify-threats-with-azure-security-center/6-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/defender-for-cloud/defender-for-cloud-introduction",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/identify-threats-with-azure-security-center/7-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/defender-for-cloud/defender-for-cloud-introduction",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/identify-threats-with-azure-security-center/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/defender-for-cloud/defender-for-cloud-introduction",
+      "redirect_document_id": false
+    },
+    { 
+      "source_path": "learn-pr/wwl-data-ai/get-started-with-generative-ai-and-agents/5-using-an-agent.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/get-started-with-generative-ai-and-agents/4-creating-an-agent",
+      "redirect_document_id": false
+    }
   ]
 }

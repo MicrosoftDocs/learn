@@ -55,7 +55,7 @@ The Basic page includes basic information about the DCR.
 
 ## Add resources
 
-The Resources page allows you to add VMs to be associated with the DCR. Select + Add resources to select resources. The Azure Monitor agent will automatically be installed on any resources that don't already have it, and a [data collection rule association (DCRA)](/azure/azure-monitor/essentials/data-collection-rule-overview#data-collection-rule-associations-dcra) is created between the machine and the agent.
+The Resources page allows you to add VMs to be associated with the DCR. Select + Add resources to select resources. The Azure Monitor agent will automatically be installed on any resources that don't already have it, and a [data collection rule association (DCRA)](/azure/azure-monitor/essentials/data-collection-rule-overview#data-collection-rule-associations-dcra) is created between the machine and the DCR.
 
 > [!IMPORTANT]
 > The portal enables system-assigned managed identity on the target resources, along with existing user-assigned identities, if there are any. For existing applications, unless you specify the user-assigned identity in the request, the machine defaults to using system-assigned identity instead.

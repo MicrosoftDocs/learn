@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=3dcbc522-beb9-4890-9e75-d8086bba1c2e]
+
+> [!NOTE]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 The easiest way to interact with a deployed model is to use the model playground in the Foundry portal. You can use the **Foundry Playgrounds** to try prompts, compare models, and capture working settings before you write any code.
 
 ![Screenshot of the Foundry playgrounds.](../media/model-playground-example.png)
@@ -72,3 +83,5 @@ When you use a generative AI model on its own:
 - You call the model via the **OpenAI Responses API**
 
 Next, learn how to create an agent in Foundry.
+
+::: zone-end

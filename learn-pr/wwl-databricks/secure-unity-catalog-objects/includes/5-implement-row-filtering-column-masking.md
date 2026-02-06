@@ -101,4 +101,6 @@ Both approaches achieve fine-grained security, but they differ in scope:
 - **Row and Column Security** is embedded at the table level and guarantees that restrictions apply everywhere the table is used.
 - **Dynamic Views** provide flexibility: you can create multiple views with different rules for different audiences, while keeping the base table unrestricted.
 
+:::image type="content" source="../media/choose-between-approaches.png" alt-text="Diagram helping you choose between the two approaches." border="false" lightbox="../media/choose-between-approaches.png":::
+
 In practice, you use table-level controls when you need strict enforcement, and dynamic views when you want adaptable, shareable abstractions.

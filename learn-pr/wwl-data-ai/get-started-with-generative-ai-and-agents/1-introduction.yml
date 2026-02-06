@@ -4,10 +4,11 @@ title: Introduction
 metadata:
   title: Introduction
   description: "Learn about generative AI agents, their capabilities, and how to use them effectively in various applications."
-  ms.date: 1/28/2026
+  ms.date: 2/5/2026
   author: sherzyang
   ms.author: sheryang
   ms.topic: unit
+  zone_pivot_groups: video-or-text
 durationInMinutes: 2
 content: |
   [!include[](includes/1-introduction.md)]

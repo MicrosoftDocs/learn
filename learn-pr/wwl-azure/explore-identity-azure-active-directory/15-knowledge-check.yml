@@ -20,7 +20,7 @@ quiz:
     choices:
     - content: "Verify explicitly - Least privilege - Assume breach"
       isCorrect: true
-      explanation: "Correct. Build your systems where you're always verifying the identity. Only grant the permissions needed to do the job. And assume there has been a breach."
+      explanation: "Correct. Build your systems where you're always verifying the identity. Only grant the permissions needed to do the job. And assume a breach occurred."
     - content: "Verify explicitly - Least privilege - Conditional access"
       isCorrect: false
       explanation: "Incorrect. Conditional access is a tool to help implement Zero Trust within your identity solutions using Microsoft Entra ID."
@@ -40,10 +40,10 @@ quiz:
       explanation: "Incorrect. Microsoft Entra ID is an example of a centralized identity system."
   - content: "What is claims-based authentication?"
     choices:
-    - content: "When a user signs in, Microsoft Entra ID creates and sends an ID token that contains a set of claims about the user."
+    - content: "When a user signs in, Microsoft Entra ID creates and sends an Access token that contains a set of claims about the user."
       isCorrect: true
-      explanation: "Correct. A Jason web token is used to establish a user's identity and the services they want to access."
-    - content: "When a user doesn't need to sign in, but sends a claim directly to a cloud resource to access it.  The claim is in the form of a Jason Web Token, and provides the user sign-in information."
+      explanation: "Correct. A JSON web token is used to establish a user's identity and the services they want to access."
+    - content: "When a user doesn't need to sign in, but sends a claim directly to a cloud resource to access it. The claim is in the form of a JSON Web Token, and provides the user sign-in information."
       isCorrect: false
       explanation: "Incorrect. Claims-based authentication issues the token after the user is verified."
     - content: "When a user signs in, Microsoft Entra ID writes every access privilege the user has into a token and shares it with each application."

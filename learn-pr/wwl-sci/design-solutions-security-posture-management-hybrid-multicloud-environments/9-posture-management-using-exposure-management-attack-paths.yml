@@ -4,10 +4,10 @@ title: Posture management using Exposure management attack paths
 metadata:
   title: Posture management using Exposure management attack paths
   description: "SC-100 preparatory unit on the topic: Posture management using Exposure management attack paths."
-  ms.date: 5/20/2024
+  ms.date: 02/05/2026
   author: ceperezb
   ms.author: ceperezb
   ms.topic: unit
-durationInMinutes: 10
+durationInMinutes: 9
 content: |
   [!include[](includes/9-posture-management-using-exposure-management-attack-paths.md)]

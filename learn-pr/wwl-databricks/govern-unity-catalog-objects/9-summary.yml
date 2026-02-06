@@ -1,0 +1,14 @@
+### YamlMime: ModuleUnit
+uid: learn.wwl.govern-unity-catalog-objects.summary
+title: Summary
+metadata:
+  title: Summary
+  description: "Summary"
+  ms.date: 02/05/2026
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+  ai-usage: ai-generated
+durationInMinutes: 2
+content: |
+  [!include[](includes/9-summary.md)]
