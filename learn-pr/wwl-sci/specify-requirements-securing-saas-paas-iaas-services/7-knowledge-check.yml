@@ -4,12 +4,12 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: "Knowledge check for module on the topic: specify requirements for securing SaaS, PaaS and IaaS services."
-  ms.date: 09/26/2024
+  ms.date: 02/06/2026
   author: ceperezb
   ms.author: ceperezb
   ms.topic: unit
   module_assessment: true
-durationInMinutes: 10
+durationInMinutes: 3
 ###########################################################################
 ###
 ### General guidance (https://review.learn.microsoft.com/learn-docs/docs/id-guidance-knowledge-check)
