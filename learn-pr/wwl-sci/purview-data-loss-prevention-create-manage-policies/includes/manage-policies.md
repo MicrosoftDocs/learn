@@ -20,7 +20,7 @@ For example, a high-priority policy that audits sensitive data sharing might pre
 
 Policy priority doesn't always affect outcomes, but when it does, the impact can be significant.
 
-Policy priority matters most when::
+Policy priority matters most when:
 
 - Multiple policies apply to the same location
 - Policies target overlapping users or similar data
