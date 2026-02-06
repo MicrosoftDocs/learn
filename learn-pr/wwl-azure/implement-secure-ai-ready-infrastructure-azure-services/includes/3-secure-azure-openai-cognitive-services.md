@@ -45,12 +45,8 @@ This architecture delivers measurable outcomes: 100% elimination of credential-b
 
 *Secure authentication and network access flow for Azure AI services showing managed identity as primary authentication path with private endpoint connectivity and content filtering*
 
-
-
 ## Additional resources
 
 - [Configure managed identities for Azure OpenAI](/azure/ai-services/openai/how-to/managed-identity) - Implementation guide for passwordless authentication
 - [Azure OpenAI Service content filtering](/azure/ai-services/openai/concepts/content-filter) - Documentation on harm categories and custom filters
 - [Configure private endpoints for Azure AI services](/azure/ai-services/cognitive-services-virtual-networks) - Network isolation configuration steps
-
-## Enhancement suggestions
