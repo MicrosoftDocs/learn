@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.apply-governance-controls-ai-ready-workloads.exercise-configure-governance-ai-deployment
+title: "Enable threat protection for AI services"
+metadata:
+  title: "Enable threat protection for AI services"
+  description: "Enable threat protection for AI services."
+  ms.date: 02/02/2026
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: unit
+durationInMinutes: 18
+content: |
+  [!include[](includes/5-exercise-configure-governance-ai-deployment.md)]

@@ -4,10 +4,10 @@ title: Design cloud workload protection with Microsoft Defender for Cloud
 metadata:
   title: Design cloud workload protection with Microsoft Defender for Cloud
   description: "SC-100 preparatory unit on the topic: design cloud workload protection with Microsoft Defender for Cloud."
-  ms.date: 3/19/2023
+  ms.date: 02/05/2026
   author: ceperezb
   ms.author: ceperezb
   ms.topic: unit
-durationInMinutes: 10
+durationInMinutes: 8
 content: |
   [!include[](includes/6-design-cloud-workload-protection-microsoft-defender-cloud.md)]
