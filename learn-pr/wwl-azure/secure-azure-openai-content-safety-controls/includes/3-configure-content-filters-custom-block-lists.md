@@ -21,7 +21,7 @@ Beyond category-based severity filtering, custom blocklists provide exact-match 
 
 You create blocklists as shared resources within your Azure OpenAI account, then associate them with one or more deployments. Each blocklist supports up to 10,000 terms with exact matching or wildcard patterns. For example, adding "competitor" blocks "CompetitorBrand," "competitor-product," and any variation containing that prefix. Blocklists operate independently from content filters—even if a prompt receives safe severity scores across all categories, blocked terms trigger immediate rejection with a 400 error response. This layered approach ensures both broad content safety and precise policy enforcement coexist.
 
-:::image type="content" source="../media/create-blocklists-shared-resources.png" alt-text="Diagram showing how blocklists operate independently from content filters.":::
+:::image type="content" source="../media/create-block-lists-shared-resources.png" alt-text="Diagram showing how blocklists operate independently from content filters.":::
 
 Building on this concept, blocklists excel at preventing leakage of confidential information. Suppose your organization uses internal code names for unreleased products or maintains lists of regulated terminology that requires special handling. Adding these terms to a blocklist ensures they never appear in Azure OpenAI responses, regardless of what prompts users submit or how models attempt to generate them. Compliance officers typically maintain these lists, updating them as new confidential projects launch or regulatory requirements change. The Azure portal supports bulk CSV import for initial blocklist population and REST API updates for programmatic lifecycle management.
 
