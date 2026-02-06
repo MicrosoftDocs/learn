@@ -19,7 +19,7 @@ To create Shor's algorithm in Q#, follow these steps:
 1. In the first cell, import the `qsharp` module and the `EstimateDetails` function from the `qdk.widgets` module:
 
     ```python
-    import qdk import qsharp
+    from qdk import qsharp
     from qdk.widgets import EstimateDetails
     ```
 
