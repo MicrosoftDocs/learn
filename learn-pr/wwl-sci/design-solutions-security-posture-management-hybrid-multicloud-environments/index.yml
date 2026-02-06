@@ -3,7 +3,7 @@ uid: learn.wwl.design-solutions-security-posture-management-hybrid-multicloud-en
 metadata:
   title: Design Solutions for Security Posture Management in Hybrid and Multicloud Environments
   description: "You learn how to design security posture management solutions that integrate into hybrid and multicloud scenarios using capabilities in Microsoft Defender for Cloud, Azure Arc, and Microsoft Cloud Security Benchmark (MCSB)."
-  ms.date: 07/30/2025
+  ms.date: 02/05/2026
   author: ceperezb
   ms.author: ceperezb
   ms.topic: module
@@ -40,7 +40,6 @@ units:
 - learn.wwl.design-solutions-security-posture-management-hybrid-multicloud-environments.evaluate-security-posture-microsoft-cloud-security-benchmark
 - learn.wwl.design-solutions-security-posture-management-hybrid-multicloud-environments.design-integrated-posture-management-workload-protection
 - learn.wwl.design-solutions-security-posture-management-hybrid-multicloud-environments.evaluate-security-posture-microsoft-defender-cloud
-- learn.wwl.design-solutions-security-posture-management-hybrid-multicloud-environments.evaluate-security-posture-secure-scores
 - learn.wwl.design-solutions-security-posture-management-hybrid-multicloud-environments.design-cloud-workload-protection-microsoft-defender-cloud
 - learn.wwl.design-solutions-security-posture-management-hybrid-multicloud-environments.integrate-hybrid-multi-cloud-environments-azure-arc
 - learn.wwl.design-solutions-security-posture-management-hybrid-multicloud-environments.design-solution-external-attack-surface-management

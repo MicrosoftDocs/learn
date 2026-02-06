@@ -1,13 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.specify-requirements-secure-saas-paas-iaas-services.summary
-title: Summary - Specify requirements for securing SaaS, PaaS, and IaaS services
+title: Summary
 metadata:
-  title: Summary - Specify requirements for securing SaaS, PaaS, and IaaS services
-  description: "Summary of the SC-100 preparatory module on the topic: specify requirements for securing SaaS, PaaS, and IaaS services."
-  ms.date: 09/26/2024
+  title: Summary
+  description: "Summary for the module: Specify requirements for securing SaaS, PaaS, and IaaS services."
+  ms.date: 02/06/2026
   author: ceperezb
   ms.author: ceperezb
   ms.topic: unit
-durationInMinutes: 10
+durationInMinutes: 2
 content: |
   [!include[](includes/8-summary.md)]

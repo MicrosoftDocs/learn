@@ -730,12 +730,17 @@
 		},
     {
       "source_path_from_root": "/learn-pr/wwl-sci/design-solutions-security-operations/4-design-security-information-event-management-solutions.yml",
-      "redirect_url": "/training/modules/design-solutions-security-operations/design-centralized-logging-auditing",
+      "redirect_url": "/training/modules/design-solutions-security-operations/5-design-solutions-detection-response",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/learn-pr/wwl-sci/design-solutions-security-operations/includes/4-design-security-information-event-management-solutions.md",
-      "redirect_url": "/training/modules/design-solutions-security-operations/design-centralized-logging-auditing",
+      "redirect_url": "/training/modules/design-solutions-security-operations/5-design-solutions-detection-response",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-sci/design-solutions-security-posture-management-hybrid-multicloud-environments/5-evaluate-security-posture-secure-scores.yml",
+      "redirect_url": "/training/modules/design-solutions-security-posture-management-hybrid-multicloud-environments/4-evaluate-security-posture-microsoft-defender-cloud",
       "redirect_document_id": false
     }
     ]

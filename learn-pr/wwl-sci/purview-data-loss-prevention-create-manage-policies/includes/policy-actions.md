@@ -6,14 +6,14 @@ Choosing the right action is about aligning protection with business tolerance. 
 
 Data loss prevention (DLP) policies can take different actions when conditions are met. Each action represents a different balance between visibility, guidance, and restriction.
 
-Common action patterns include:
+In Microsoft Purview, these actions generally fall into a few enforcement categories:
 
-- Auditing activity to understand behavior without interruption
-- Warning users when an action might introduce risk
-- Blocking actions while allowing users to override with justification
-- Blocking actions outright when risk is unacceptable
+- **Audit**, where activity is logged without interrupting users
+- **Warn**, where users receive guidance but can continue their action
+- **Block with override**, where users can proceed with justification
+- **Block**, where the action is prevented entirely
 
-No single action is correct for every scenario. The right choice depends on the likelihood of risk and the consequences of disruption.
+Not every enforcement category is available in every location. Available actions depend on where the policy applies and the type of activity being evaluated. Actions are configured at the **rule level**, not at the policy level, so each rule defines its own enforcement behavior.
 
 ## Match actions to business tolerance
 

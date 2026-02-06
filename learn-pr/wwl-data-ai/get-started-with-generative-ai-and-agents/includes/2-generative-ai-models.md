@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=7c40837e-776e-4097-89b0-fd224f1c6005]
+
+> [!NOTE]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Generative AI and agentic solutions are based on language models. Large language models (LLMs) form the foundation of  generative AI solutions that can provide a wide variety of responses. Today, a broad range of models exist that serve different needs. For example, the AI capabilities in a lightweight phone application may run best on a small language model, while a government application may require a domain-specialized model. 
 
 **Microsoft Foundry** provides an integrated environment for discovering, evaluating, deploying, and operating generative AI models. It brings together a rich model catalog, flexible deployment options, and built‑in governance capabilities so teams can build copilots, agents, and AI-powered applications with enterprise confidence.
@@ -109,3 +120,5 @@ When you deploy a model in Foundry, several things occur:
 - Monitoring and logging become active: usage metrics, performance, latency, errors, and costs are tracked
 
 Next, learn how to configure these models in the Foundry portal playground and use them in a client application.
+
+::: zone-end

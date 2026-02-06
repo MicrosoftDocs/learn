@@ -1,9 +1,5 @@
 Access to groups and applications for employees and guests changes over time. To reduce the risk associated with stale access assignments, administrators can use Microsoft Entra ID to create access reviews for group members or application access. If you need to routinely review access, you can also create recurring access reviews.
 
-**Watch this video to learn more about how to deploy and create access reviews.**
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4MAkF]
-
 ## Prerequisites
 
 - Microsoft Entra ID Premium P2
@@ -72,8 +68,8 @@ Access to groups and applications for employees and guests changes over time. To
     Use the Action to apply on denied **guest** users to specify what happens to guest users if they're denied.
     
     
-    - **Remove user’s membership from the resource** removes denied user’s access to the group or application being reviewed, they'll still be able to sign-in to the tenant.
-    - **Block user from signing in for 30 days, then remove user from the tenant** blocks the denied users from signing in to the tenant, regardless if they have access to other resources. If there was a mistake or if an admin decides to re-enable one’s access, they can do so within 30 days after the user is disabled. If there's no action taken on the disabled users, they are deleted from the tenant.
+    - **Remove user’s membership from the resource** removes denied user’s access to the group or application being reviewed. Tenant sign-in continues to work.
+    - **Block user from signing in for 30 days, then remove user from the tenant** blocks the denied users from signing in to the tenant, regardless if they have access to other resources. If there was a mistake or if an admin decides to re-enable one’s access, they can do so within 30 days after the user is disabled. If there's no action taken on the disabled user accounts, they're deleted from the tenant.
     - Action to apply on denied guest users isn't configurable on reviews scoped to more than guest users. It's also not configurable for reviews of all Microsoft 365 groups with guest users. When not configurable, the default option of removing user's membership from the resource is used on denied users.
 13. In **Enable review decision helpers** choose whether you would like your reviewer to receive recommendations during the review process.
     
@@ -95,14 +91,14 @@ Access to groups and applications for employees and guests changes over time. To
 
 ## Start the access review
 
-Once you've specified the settings for an access review, select **Start**. The access review appears in your list with an indicator of its status.
+Once you specified the settings for an access review, select **Start**. The access review appears in your list with an indicator of its status.
 
 :::image type="content" source="../media/access-reviews-list.png" alt-text="Screenshot of the List of access reviews and their status. Review the status of each item.":::
 
 
 By default, Microsoft Entra ID sends an email to reviewers shortly after the review starts. If you choose not to have Microsoft Entra ID send the email, be sure to inform the reviewers that an access review is waiting for them to complete. You can show them the instructions for how to review access to groups or applications. If your review is for guests to review their own access, show them the instructions for how to review access for yourself to groups or applications.
 
-If you've assigned guests as reviewers and they haven't accepted the invite, they don't receive an email from access reviews because they must first accept the invitation.
+If you assigned guests as reviewers and they haven't accepted the invite, they don't receive an email from access reviews because they must first accept the invitation.
 
 ## Access review status table
 
@@ -111,10 +107,10 @@ If you've assigned guests as reviewers and they haven't accepted the invite, the
 | NotStarted     | Review was created, user discovery is waiting to start.                                                                                                      |
 | Initializing   | User discovery is in progress to identify all users who are part of the review.                                                                              |
 | Starting       | Review is starting. If email notifications are enabled, emails are being sent to reviewers.                                                                  |
-| InProgress     | Review has started. If email notifications are enabled, emails have been sent to reviewers. Reviewers can submit decisions until the due date.               |
+| InProgress     | Review started. If email notifications are enabled, emails are sent to reviewers. Reviewers can submit decisions until the due date.               |
 | Completing     | Review is being completed, and emails are being sent to the review owner.                                                                                    |
 | Auto-Reviewing | Review is in a system reviewing stage. The system is recording decisions for users who weren't reviewed based on recommendations or preconfigured decisions. |
-| Auto-Reviewed  | Decisions have been recorded by the system for all users who weren't reviewed. Review is ready to proceed to **Applying** if Auto-Apply is enabled.          |
+| Auto-Reviewed  | Decisions are recorded by the system for all users who weren't reviewed. Review is ready to proceed to **Applying** if Auto-Apply is enabled.          |
 | Applying       | There will be no change in access for users who were approved.                                                                                               |
 | Applied        | Denied users, if any, have been removed from the resource or directory.                                                                                      |
 | Failed         | Review couldn't progress. This error could be related to the deletion of the tenant, a change in licenses, or other internal tenant changes.                |

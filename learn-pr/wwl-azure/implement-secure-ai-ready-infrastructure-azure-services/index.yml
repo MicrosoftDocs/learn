@@ -1,0 +1,53 @@
+### YamlMime:Module
+uid: learn.wwl.implement-secure-ai-ready-infrastructure-azure-services
+metadata:
+  title: "1-Implement Secure AI-ready Infrastructure with Azure Services"
+  description: "This course explains how to design secure AI platforms using Microsoft Foundry, applying centralized governance, managed identities, private networking, Azure OpenAI security controls, and container image protection to ensure compliant, production‑ready AI workloads across enterprise environments."
+  ms.date: 02/04/2026
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: module
+  ms.service: azure
+title: "1-Implement secure AI-ready infrastructure with Azure services"
+summary: This course explains how to design secure AI platforms using Microsoft Foundry, applying centralized governance, managed identities, private networking, Azure OpenAI security controls, and container image protection to ensure compliant, production‑ready AI workloads across enterprise environments.
+abstract: |
+  After completing this module, you will be able to:
+  - Configure Microsoft Foundry Hubs and Projects for secure AI development environments
+  - Implement Azure OpenAI Service and Cognitive Services with enterprise security controls
+  - Secure AI container images and deployments using Azure Container Registry
+  - Apply network isolation and identity governance to protect AI infrastructure
+prerequisites: |
+  - Azure fundamentals including resource groups, virtual networks, and identity management
+  - Basic AI and machine learning concepts
+  - Container fundamentals and Docker basics
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- security-engineer
+- administrator
+- database-administrator
+- data-scientist
+- security-operations-analyst
+products:
+- azure
+- azure-openai
+- azure-container-registry
+- azure-ai-foundry
+- azure-machine-learning
+subjects:
+- security
+- cloud-security
+- infrastructure
+- information-protection-governance
+- artificial-intelligence
+units:
+- learn.wwl.implement-secure-ai-ready-infrastructure-azure-services.introduction
+- learn.wwl.implement-secure-ai-ready-infrastructure-azure-services.understand-microsoft-foundry-security-architecture
+- learn.wwl.implement-secure-ai-ready-infrastructure-azure-services.secure-azure-openai-cognitive-services
+- learn.wwl.implement-secure-ai-ready-infrastructure-azure-services.secure-ai-container-images-azure-container
+- learn.wwl.implement-secure-ai-ready-infrastructure-azure-services.exercise-configure-secure-ai-infrastructure
+- learn.wwl.implement-secure-ai-ready-infrastructure-azure-services.knowledge-check
+- learn.wwl.implement-secure-ai-ready-infrastructure-azure-services.summary
+badge:
+  uid: learn.wwl.implement-secure-ai-ready-infrastructure-azure-services.badge

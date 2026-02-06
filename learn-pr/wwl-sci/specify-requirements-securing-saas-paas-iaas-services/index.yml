@@ -3,7 +3,7 @@ uid: learn.wwl.specify-requirements-secure-saas-paas-iaas-services
 metadata:
   title: Specify Requirements for Securing SaaS, PaaS, and IaaS Services
   description: "You learn how to analyze security requirements for different cloud offerings (SaaS, PaaS, and IaaS), IoT workloads, web workloads, containers, and AI workloads."
-  ms.date: 11/12/2025
+  ms.date: 02/06/2026
   author: ceperezb
   ms.author: ceperezb
   ms.topic: module
