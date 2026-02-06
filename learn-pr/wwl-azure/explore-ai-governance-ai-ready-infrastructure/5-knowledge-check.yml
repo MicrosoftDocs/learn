@@ -8,6 +8,7 @@ metadata:
   author: wwlpublish
   ms.author: bradj
   ms.topic: unit
+  ms.custom: references_regions
   module_assessment: true
 durationInMinutes: 3
 content: "Choose the best response for each of the following questions."
@@ -46,3 +47,4 @@ quiz:
     - content: "Transition budget alerts from notification-only mode to automated response mode that scales down or stops existing AI resources when spending reaches 90% of the monthly limit, preserving budget while maintaining deployed services"
       isCorrect: false
       explanation: "The third option addresses existing resources but doesn't prevent new high-cost deployments, and automatically stopping production AI services could cause service disruptions."
+
