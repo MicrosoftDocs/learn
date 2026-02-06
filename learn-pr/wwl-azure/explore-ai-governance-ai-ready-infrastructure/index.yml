@@ -7,6 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: bradj
   ms.topic: module
+  ms.custom: references_regions
   ms.service: azure
 title: "Explore AI governance for AI ready infrastructure"
 summary: Learn how to govern AI workloads using Microsoft Foundry by enforcing policies, managing costs, ensuring compliance, and applying responsible AI guardrails through hands‑on governance scenarios and exercises.
