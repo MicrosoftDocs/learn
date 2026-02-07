@@ -3,7 +3,7 @@ Congratulations!
 In this module, you learned:
 
 - What resource estimation is.
-- How to customize the input parameters for an Azure Quantum Resource Estimator job.
+- How to customize the input parameters for an Microsoft Quantum resource estimator job.
 - How to estimate the resources of a quantum algorithm.
 - How to compare different qubit technologies and architectures.
 
@@ -18,8 +18,8 @@ Now that you understand resource estimation, you can do experiments to deepen yo
 
 ## Learn more
 
-To learn more about the Resource Estimator, check out these resources:
+To learn more about the resource estimator, check out these resources:
 
-- The [Resource Estimator sample gallery](https://github.com/microsoft/qdk/tree/main/samples/estimation) for more resource estimation sample notebooks
-- [Introduction to the Azure Quantum Resource Estimator](/azure/quantum/intro-to-resource-estimation)
-- [How to run multiple configurations of target parameters with the Resource Estimator](/azure/quantum/resource-estimator-batching).
+- The [resource estimator sample gallery](https://github.com/microsoft/qdk/tree/main/samples/estimation) for more resource estimation sample notebooks
+- [Introduction to the Microsoft Quantum resource estimator](/azure/quantum/intro-to-resource-estimation)
+- [How to run multiple configurations of target parameters with the resource estimator](/azure/quantum/resource-estimator-batching).

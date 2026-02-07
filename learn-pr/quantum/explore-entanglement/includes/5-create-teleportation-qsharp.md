@@ -16,9 +16,9 @@ To get started with your teleportation program, follow these steps:
 To import the libraries that contain the Q# operations and functions that you need to write your program, copy the following code into your **Main.qs** file:
 
 ```qsharp
-import Microsoft.Quantum.Diagnostics.*; // Aka Std.Diagnostics.*;
-import Microsoft.Quantum.Intrinsic.*; // Aka Std.Intrinsic.*;
-import Microsoft.Quantum.Measurement.*; // Aka Std.Measurement.*;
+import Std.Diagnostics.*;
+import Std.Intrinsic.*;
+import Std.Measurement.*;
 ```
 
 ### Define the `Teleport` operation
@@ -158,9 +158,9 @@ The complete program contains the `Teleport` operation, the `SetToPlus` and `Set
 
     ```qsharp
     /// This Q# program implements quantum teleportation
-    import Microsoft.Quantum.Diagnostics.*;
-    import Microsoft.Quantum.Intrinsic.*;
-    import Microsoft.Quantum.Measurement.*;
+    import Std.Diagnostics.*;
+    import Std.Intrinsic.*;
+    import Std.Measurement.*;
 
     operation Main() : Result[] {
         // Allocate the message and bob qubits.

@@ -17,7 +17,7 @@ Quantum mechanics is like the underlying operating system of our universe, and d
 
 ## Resource estimation
 
-The Azure Quantum Resource Estimator helps you prepare for the future of quantum computing by providing a way to estimate the resources required to run your quantum programs on scaled quantum computers. Resource estimation helps you answer questions such as, what hardware resources do I need? How many physical and logical qubits do I need, and what type of qubit? How long does my program take to run? How do the required resources compare among different qubit technologies?
+The Microsoft Quantum resource estimator helps you prepare for the future of quantum computing by providing a way to estimate the resources required to run your quantum programs on scaled quantum computers. Resource estimation helps you answer questions such as, what hardware resources do I need? How many physical and logical qubits do I need, and what type of qubit? How long does my program take to run? How do the required resources compare among different qubit technologies?
 
 With resource estimation, you can refine your quantum algorithms and build solutions that take advantage of scaled quantum computers when they become available.
 
