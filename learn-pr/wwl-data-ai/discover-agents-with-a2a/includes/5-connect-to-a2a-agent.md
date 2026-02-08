@@ -19,7 +19,7 @@ There are two main types of requests a client can make:
 - **Non-Streaming Requests:** The client sends a message and waits for a complete response. This type of request is suitable for simple interactions or when a single response is expected.
 - **Streaming Requests:** The client sends a message and receives responses incrementally as the agent processes the request. This type of request is useful for long-running tasks or when you want to update the user in real-time.
 
-In both cases, requests usually include a `role` (fo example, user) and the message content. More complex agents may return **task objects** instead of immediate messages, allowing for task tracking or cancellation.
+In both cases, requests usually include a `role` (for example, user) and the message content. More complex agents may return **task objects** instead of immediate messages, allowing for task tracking or cancellation.
 
 ## Handle the agent response
 
