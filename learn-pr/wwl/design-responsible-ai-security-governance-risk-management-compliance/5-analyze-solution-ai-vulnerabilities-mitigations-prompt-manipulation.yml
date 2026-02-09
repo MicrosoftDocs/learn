@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-responsible-ai-security-governance-risk-management-compliance.analyze-solution-ai-vulnerabilities-mitigations-prompt-manipulation
+title: "Analyze AI vulnerabilities and mitigations for prompt manipulation"
+metadata:
+  title: "Analyze AI Vulnerabilities and Mitigations for Prompt Manipulation"
+  description: "Learn to identify AI vulnerabilities, including prompt manipulation, and apply mitigations to secure models, data, and workflows effectively."
+  ms.date: 02/09/2026
+  author: pabloMS
+  ms.author: taeldin
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/5-analyze-solution-ai-vulnerabilities-mitigations-prompt-manipulation.md)]

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-responsible-ai-security-governance-risk-management-compliance.design-model-security
+title: "Design model security for responsible AI"
+metadata:
+  title: "Design Model Security for Responsible AI"
+  description: "Learn how to design model security for responsible AI using identity governance, threat protection, access control, and continuous monitoring."
+  ms.date: 02/09/2026
+  author: pabloMS
+  ms.author: taeldin
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-design-model-security.md)]

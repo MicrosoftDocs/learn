@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-responsible-ai-security-governance-risk-management-compliance.review-solution-adherence-responsible-ai-principles
+title: "Review solution adherence to Responsible AI principles"
+metadata:
+  title: "Review Solution Adherence to Responsible AI Principles"
+  description: "Learn how to evaluate AI solutions for adherence to Responsible AI principles, ensuring safety, compliance, transparency, and effective governance."
+  ms.date: 02/09/2026
+  author: pabloMS
+  ms.author: taeldin
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/6-review-solution-adherence-responsible-ai-principles.md)]
