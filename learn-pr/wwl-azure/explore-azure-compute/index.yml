@@ -4,8 +4,8 @@ metadata:
   title: Explore Azure for SAP compute
   description: "This module explores the design of scalable, performant, and resilient compute components for SAP deployments in Azure. Prepare for Exam AZ-120 Planning and Administering Microsoft Azure for SAP Workloads."
   ms.date: 12/23/2024
-  author: wwlpublish
-  ms.author: eric
+  author: bradjoseph
+  ms.author: bradj
   ms.topic: module
   ms.collection: N/A
   ms.custom:
