@@ -39,13 +39,12 @@ units:
   - learn.integrate-sql-solutions-azure-services.1-introduction
   - learn.integrate-sql-solutions-azure-services.2-create-configuration-files-data-api-builder
   - learn.integrate-sql-solutions-azure-services.3-define-entities-rest-graphql
-  - learn.integrate-sql-solutions-azure-services.4-configure-rest-graphql-endpoints
-  - learn.integrate-sql-solutions-azure-services.5-expose-database-objects-stored-procedures-views
-  - learn.integrate-sql-solutions-azure-services.6-deploy-data-api-builder-azure-services
-  - learn.integrate-sql-solutions-azure-services.7-recommend-azure-monitor-configurations
-  - learn.integrate-sql-solutions-azure-services.8-handle-changes-event-driven-patterns
-  - learn.integrate-sql-solutions-azure-services.9-exercise-data-api-builder
-  - learn.integrate-sql-solutions-azure-services.10-knowledge-check
-  - learn.integrate-sql-solutions-azure-services.11-summary
+  - learn.integrate-sql-solutions-azure-services.4-expose-database-objects-stored-procedures-views
+  - learn.integrate-sql-solutions-azure-services.5-deploy-data-api-builder-azure-services
+  - learn.integrate-sql-solutions-azure-services.6-recommend-azure-monitor-configurations
+  - learn.integrate-sql-solutions-azure-services.7-handle-changes-event-driven-patterns
+  - learn.integrate-sql-solutions-azure-services.8-exercise-data-api-builder
+  - learn.integrate-sql-solutions-azure-services.9-knowledge-check
+  - learn.integrate-sql-solutions-azure-services.10-summary
 badge:
   uid: learn.integrate-sql-solutions-azure-services.badge

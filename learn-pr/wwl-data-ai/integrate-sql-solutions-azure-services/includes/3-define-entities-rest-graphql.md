@@ -216,3 +216,97 @@ query {
 ```
 
 The `cardinality` property indicates whether the relationship returns one item or many. Use `one` for many-to-one relationships (product to category) and `many` for one-to-many relationships (category to products).
+
+## Understand REST endpoint generation
+
+When you define an entity, DAB automatically creates REST endpoints following standard conventions. Each entity gets a base URL path, and HTTP verbs map to CRUD operations.
+
+For an entity named `Product` with the default configuration:
+
+| HTTP Method | URL Pattern | Operation |
+|-------------|-------------|-----------|
+| GET | `/api/Product` | List all products (paginated) |
+| GET | `/api/Product/id/123` | Get product with ID 123 |
+| POST | `/api/Product` | Create a new product |
+| PUT | `/api/Product/id/123` | Update or create product 123 |
+| PATCH | `/api/Product/id/123` | Partially update product 123 |
+| DELETE | `/api/Product/id/123` | Delete product 123 |
+
+The `/id/` segment in URLs indicates a primary key lookup. For composite keys, chain multiple key segments: `/api/OrderDetail/orderId/100/productId/50`.
+
+## Customize REST endpoint paths
+
+You can modify the default URL patterns through entity configuration. The `rest` section controls REST-specific behavior:
+
+```json
+"Product": {
+  "source": { "object": "dbo.Products", "type": "table" },
+  "rest": {
+    "enabled": true,
+    "path": "/products",
+    "methods": {
+      "get": true,
+      "post": true,
+      "put": false,
+      "patch": true,
+      "delete": true
+    }
+  },
+  "permissions": [...]
+}
+```
+
+The `path` property changes the URL from `/api/Product` to `/api/products`. This setting is useful when you want lowercase, plural endpoint names that differ from your entity names.
+
+The `methods` object lets you enable or disable specific HTTP verbs. In this example, `PUT` is disabled, which prevents full record replacement while still allowing `PATCH` for partial updates. This configuration pattern protects against accidental data loss from clients that might send incomplete records.
+
+> [!TIP]
+> Disabling methods at the endpoint level provides defense in depth. Even if permissions allow an action, disabling the method prevents it entirely.
+
+## Set up GraphQL endpoint configuration
+
+GraphQL operates through a single endpoint, typically at `/graphql`. All queries, mutations, and subscriptions go through this endpoint, with the request body specifying the operation.
+
+```json
+"runtime": {
+  "graphql": {
+    "enabled": true,
+    "path": "/graphql",
+    "allow-introspection": true,
+    "depth-limit": 8,
+    "multiple-mutations": {
+      "create": { "enabled": true }
+    }
+  }
+}
+```
+
+The `allow-introspection` setting controls whether clients can query the GraphQL schema itself. During development, introspection helps tools like GraphiQL and Apollo Studio understand your API. In production, consider disabling it to hide implementation details.
+
+The `depth-limit` setting prevents overly complex nested queries that could strain your database. A depth of 8 allows reasonable relationship traversal while blocking potential abuse through deeply nested queries.
+
+## Configure GraphQL-specific entity settings
+
+Each entity can have GraphQL-specific configuration that differs from REST:
+
+```json
+"Product": {
+  "source": { "object": "dbo.Products", "type": "table" },
+  "graphql": {
+    "enabled": true,
+    "type": {
+      "singular": "product",
+      "plural": "products"
+    },
+    "operation": "query"
+  },
+  "rest": {
+    "enabled": true
+  },
+  "permissions": [...]
+}
+```
+
+The `type` property customizes the GraphQL type names. By default, DAB uses the entity name, but you can specify different singular and plural forms.
+
+The `operation` property determines where mutations appear. Use `query` for read-only entities (like views) or `mutation` for entities that support write operations.

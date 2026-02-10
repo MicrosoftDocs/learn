@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.integrate-sql-solutions-azure-services.5-expose-database-objects-stored-procedures-views
+uid: learn.integrate-sql-solutions-azure-services.4-expose-database-objects-stored-procedures-views
 title: Expose database objects, stored procedures, and views
 metadata:
   title: Expose database objects, stored procedures, and views
@@ -10,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 12
 content: |
-  [!include[](includes/5-expose-database-objects-stored-procedures-views.md)]
+  [!include[](includes/4-expose-database-objects-stored-procedures-views.md)]

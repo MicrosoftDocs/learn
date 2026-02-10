@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.integrate-sql-solutions-azure-services.9-exercise-data-api-builder
+uid: learn.integrate-sql-solutions-azure-services.8-exercise-data-api-builder
 title: Exercise - Configure Data API Builder for a product catalog
 metadata:
   title: Exercise - Configure Data API Builder for a product catalog
@@ -10,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 30
 content: |
-  [!include[](includes/9-exercise-data-api-builder.md)]
+  [!include[](includes/8-exercise-data-api-builder.md)]

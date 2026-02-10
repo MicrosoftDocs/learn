@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.integrate-sql-solutions-azure-services.8-handle-changes-event-driven-patterns
+uid: learn.integrate-sql-solutions-azure-services.7-handle-changes-event-driven-patterns
 title: Handle changes with event-driven patterns
 metadata:
   title: Handle changes with event-driven patterns
@@ -10,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 12
 content: |
-  [!include[](includes/8-handle-changes-event-driven-patterns.md)]
+  [!include[](includes/7-handle-changes-event-driven-patterns.md)]

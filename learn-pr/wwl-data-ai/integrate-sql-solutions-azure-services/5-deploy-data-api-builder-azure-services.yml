@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.integrate-sql-solutions-azure-services.6-deploy-data-api-builder-azure-services
+uid: learn.integrate-sql-solutions-azure-services.5-deploy-data-api-builder-azure-services
 title: Deploy Data API Builder to Azure services
 metadata:
   title: Deploy Data API Builder to Azure services
@@ -10,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 10
 content: |
-  [!include[](includes/6-deploy-data-api-builder-azure-services.md)]
+  [!include[](includes/5-deploy-data-api-builder-azure-services.md)]
