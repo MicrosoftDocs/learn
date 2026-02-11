@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.design-implement-sql-solutions-ai-assisted-tools.5-configure-model-mcp-tool-options
+uid: learn.design-implement-sql-solutions-ai-assisted-tools.configure-model-mcp-tool-options
 title: Configure model and Model Context Protocol (MCP) tool options in a GitHub Copilot or Fabric Copilot chat session
 metadata:
   title: Configure model and MCP tool options in Copilot chat sessions

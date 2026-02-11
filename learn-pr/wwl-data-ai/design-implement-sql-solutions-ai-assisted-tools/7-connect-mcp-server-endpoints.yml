@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.design-implement-sql-solutions-ai-assisted-tools.7-connect-mcp-server-endpoints
+uid: learn.design-implement-sql-solutions-ai-assisted-tools.connect-mcp-server-endpoints
 title: Connect to MCP server endpoints, including Microsoft SQL Server and Fabric Lakehouse
 metadata:
   title: Connect to MCP server endpoints for SQL Server and Fabric Lakehouse
