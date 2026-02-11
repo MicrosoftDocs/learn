@@ -47,17 +47,17 @@ subjects:
 - cloud-computing
 - app-development
 units:
-  - learn.write-advanced-tsql-code.1-introduction
-  - learn.write-advanced-tsql-code.2-common-table-expressions
-  - learn.write-advanced-tsql-code.3-window-functions
-  - learn.write-advanced-tsql-code.4-json-functions
-  - learn.write-advanced-tsql-code.5-regular-expressions
-  - learn.write-advanced-tsql-code.6-fuzzy-string-matching
-  - learn.write-advanced-tsql-code.7-graph-queries
-  - learn.write-advanced-tsql-code.8-correlated-queries
-  - learn.write-advanced-tsql-code.9-error-handling
-  - learn.write-advanced-tsql-code.10-exercise-write-advanced-tsql-code
-  - learn.write-advanced-tsql-code.11-knowledge-check
-  - learn.write-advanced-tsql-code.12-summary
+  - learn.write-advanced-tsql-code.introduction
+  - learn.write-advanced-tsql-code.common-table-expressions
+  - learn.write-advanced-tsql-code.window-functions
+  - learn.write-advanced-tsql-code.json-functions
+  - learn.write-advanced-tsql-code.regular-expressions
+  - learn.write-advanced-tsql-code.fuzzy-string-matching
+  - learn.write-advanced-tsql-code.graph-queries
+  - learn.write-advanced-tsql-code.correlated-queries
+  - learn.write-advanced-tsql-code.error-handling
+  - learn.write-advanced-tsql-code.exercise-write-advanced-tsql-code
+  - learn.write-advanced-tsql-code.knowledge-check
+  - learn.write-advanced-tsql-code.summary
 badge:
   uid: learn.write-advanced-tsql-code.badge

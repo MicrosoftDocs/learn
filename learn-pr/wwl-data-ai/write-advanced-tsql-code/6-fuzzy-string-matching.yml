@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.write-advanced-tsql-code.6-fuzzy-string-matching
+uid: learn.write-advanced-tsql-code.fuzzy-string-matching
 title: Find approximate matches with fuzzy string functions
 metadata:
   title: Find approximate matches with fuzzy string functions

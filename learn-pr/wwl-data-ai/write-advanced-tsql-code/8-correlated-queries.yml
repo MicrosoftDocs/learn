@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.write-advanced-tsql-code.8-correlated-queries
+uid: learn.write-advanced-tsql-code.correlated-queries
 title: Compare rows with correlated subqueries
 metadata:
   title: Compare rows with correlated subqueries
