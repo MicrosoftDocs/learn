@@ -166,7 +166,7 @@ Rerun eval suites nightly/weekly against **golden sets**; store timeseries for a
 ## 7) Checklists you can paste into your runbooks
 
 ### Go/NoGo before production
-
+```
 <input type="checkbox" disabled> Data contract approved; asset tagged and discoverable.
 
 <input type="checkbox" disabled> Sensitivity labels/DLP rules applied; connectors approved.
@@ -178,15 +178,15 @@ Rerun eval suites nightly/weekly against **golden sets**; store timeseries for a
 <input type="checkbox" disabled> Residency decision recorded; crossregion toggle reviewed.
 
 <input type="checkbox" disabled> Dashboards, budgets, alerts, and rollback validated in PreProd.
-
+```
 ### Retirement
-
+```
 <input type="checkbox" disabled> Consumers notified; cutover plan executed.
 
 <input type="checkbox" disabled> Snapshots archived/deleted per retention; access revoked.
 
 <input type="checkbox" disabled> Audit and lineage preserved; catalog updated.
-
+```
 ## 8) Professional visuals you can reuse (textbased)
 
 AI Data ALM lifecycle (condensed)<br>Plan → Ingest/Prepare → Develop/Evaluate → Stage/Approve → Deploy/Serve → Operate/Monitor → Evolve/Retire
@@ -202,5 +202,6 @@ Data flow with controls<br>Source systems → Curated store (labels/lineage) →
 <https://dialzara.com/blog/ai-data-lifecycle-management-complete-guide-2024>
 
 [https://learn.microsoft.com/fabric/governance/data-governance-overview](/fabric/governance/data-governance-overview)
+
 
 [https://learn.microsoft.com/azure/architecture/guide/responsible-ai/data](/azure/architecture/guide/responsible-ai/data)
