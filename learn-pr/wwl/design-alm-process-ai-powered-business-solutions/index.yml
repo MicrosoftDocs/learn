@@ -7,7 +7,7 @@ metadata:
   author: msdavidram
   ms.author: taeldin
   ms.topic: module
-  ms.service: ai
+  ms.service: azure-ai-services
 title: "Design ALM process for AI-powered business solutions"
 summary: Learn to design ALM processes for AI solutions, ensuring governance, security, and consistency across environments.
 abstract: |
@@ -26,9 +26,9 @@ roles:
 products:
 - microsoft-copilot-studio
 - dynamics-365
-- azure-ai
+- azure-ai-foundry
 subjects:
-- application-lifecycle-management
+- application-management
 - artificial-intelligence
 units:
 - learn.wwl.design-alm-process-ai-powered-business-solutions.introduction
