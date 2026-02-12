@@ -1,0 +1,29 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-alm-process-ai-powered-business-solutions.knowledge-check
+title: "Module assessment"
+metadata:
+  title: "Knowledge check"
+  description: "Knowledge check"
+  ms.date: 02/12/2026
+  author: msdavidram
+  ms.author: taeldin
+  ms.topic: unit
+  module_assessment: false
+durationInMinutes: 3
+content: "Choose the best response for each of the following questions."
+quiz:
+  questions:
+  - content: "Which dataset is most ready for promotion to Production in an AI ALM process?"
+    choices:
+    - content: "The latest Dev extract with broad sample coverage"
+      isCorrect: false
+      explanation: "Incorrect. Dev extracts are not production-ready."
+    - content: "A Test dataset that looks balanced but has partial lineage"
+      isCorrect: false
+      explanation: "Incorrect. Partial lineage is insufficient for production."
+    - content: "An immutable, versioned dataset with sensitivity labels and full lineage that passed evaluation gates"
+      isCorrect: true
+      explanation: "Correct. Production requires a frozen, versioned, fully traced dataset that has cleared quality, safety, and compliance gates."
+    - content: "Any dataset that delivers acceptable latency in a pilot"
+      isCorrect: false
+      explanation: "Incorrect. Latency alone is insufficient for production readiness."

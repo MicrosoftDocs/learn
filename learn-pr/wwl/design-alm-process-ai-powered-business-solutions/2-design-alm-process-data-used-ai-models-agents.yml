@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-alm-process-ai-powered-business-solutions.design-alm-process-data-used-ai-models-agents
+title: "Design an ALM process for data used in AI models and agents"
+metadata:
+  title: "Design an ALM Process for Data Used in AI Models and Agents"
+  description: "Learn to design an ALM process for data powering AI models and agents. Ensure governance, compliance, and scalability across environments."
+  ms.date: 02/12/2026
+  author: msdavidram
+  ms.author: taeldin
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-design-alm-process-data-used-ai-models-agents.md)]

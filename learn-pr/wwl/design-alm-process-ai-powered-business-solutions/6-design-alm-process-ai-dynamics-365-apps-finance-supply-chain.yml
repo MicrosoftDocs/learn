@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-alm-process-ai-powered-business-solutions.design-alm-process-ai-dynamics-365-apps-finance-supply-chain
+title: "Design an ALM process for AI in Dynamics 365 Finance and Supply Chain"
+metadata:
+  title: "Design an ALM Process for AI in Dynamics 365"
+  description: "Learn how to design an ALM process for AI in Dynamics 365 Finance and Supply Chain to ensure data quality, compliance, and operational reliability."
+  ms.date: 02/12/2026
+  author: msdavidram
+  ms.author: taeldin
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/6-design-alm-process-ai-dynamics-365-apps-finance-supply-chain.md)]

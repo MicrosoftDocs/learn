@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-alm-process-ai-powered-business-solutions.design-alm-process-copilot-studio-agents-connectors-actions
+title: "Design an ALM process for Copilot Studio agents, connectors, and actions"
+metadata:
+  title: "Design an ALM Process for Copilot Studio Agents, Connectors, and Actions"
+  description: "Learn to design an ALM process for Copilot Studio agents, connectors, and actions. Ensure governance, scalability, and compliance across environments."
+  ms.date: 02/12/2026
+  author: msdavidram
+  ms.author: taeldin
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/3-design-alm-process-copilot-studio-agents-connectors-actions.md)]
