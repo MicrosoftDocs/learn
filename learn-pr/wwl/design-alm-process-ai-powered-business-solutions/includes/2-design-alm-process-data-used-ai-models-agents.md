@@ -166,27 +166,27 @@ Rerun eval suites nightly/weekly against **golden sets**; store timeseries for a
 ## 7) Checklists you can paste into your runbooks
 
 ### Go/NoGo before production
-```
-<input type="checkbox" disabled> Data contract approved; asset tagged and discoverable.
 
-<input type="checkbox" disabled> Sensitivity labels/DLP rules applied; connectors approved.
+<`input` type="checkbox" disabled> Data contract approved; asset tagged and discoverable.
 
-<input type="checkbox" disabled> Lineage graph current; dataset snapshot **immutable** and versioned.
+<`input` type="checkbox" disabled> Sensitivity labels/DLP rules applied; connectors approved.
 
-<input type="checkbox" disabled> Evaluation thresholds met; safety risks mitigated.
+<`input` type="checkbox" disabled> Lineage graph current; dataset snapshot **immutable** and versioned.
 
-<input type="checkbox" disabled> Residency decision recorded; crossregion toggle reviewed.
+<`input` type="checkbox" disabled> Evaluation thresholds met; safety risks mitigated.
 
-<input type="checkbox" disabled> Dashboards, budgets, alerts, and rollback validated in PreProd.
-```
+<`input` type="checkbox" disabled> Residency decision recorded; crossregion toggle reviewed.
+
+<`input` type="checkbox" disabled> Dashboards, budgets, alerts, and rollback validated in PreProd.
+
 ### Retirement
-```
-<input type="checkbox" disabled> Consumers notified; cutover plan executed.
 
-<input type="checkbox" disabled> Snapshots archived/deleted per retention; access revoked.
+<`input` type="checkbox" disabled> Consumers notified; cutover plan executed.
 
-<input type="checkbox" disabled> Audit and lineage preserved; catalog updated.
-```
+<`input` type="checkbox" disabled> Snapshots archived/deleted per retention; access revoked.
+
+<`input` type="checkbox" disabled> Audit and lineage preserved; catalog updated.
+
 ## 8) Professional visuals you can reuse (textbased)
 
 AI Data ALM lifecycle (condensed)<br>Plan → Ingest/Prepare → Develop/Evaluate → Stage/Approve → Deploy/Serve → Operate/Monitor → Evolve/Retire
@@ -205,3 +205,4 @@ Data flow with controls<br>Source systems → Curated store (labels/lineage) →
 
 
 [https://learn.microsoft.com/azure/architecture/guide/responsible-ai/data](/azure/architecture/guide/responsible-ai/data)
+
