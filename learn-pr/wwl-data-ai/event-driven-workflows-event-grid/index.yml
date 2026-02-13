@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.wwl.event-driven-workflows-event-grid
+metadata:
+  title: Develop Event-Driven AI Workflows with Azure Event Grid
+  description: Learn how to build event-driven AI workflows using Azure Event Grid to route events from sources to handlers with low latency, configure delivery policies, and publish custom events.
+  ms.date: 02/13/2026
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: module-standard-task-based
+  ai-usage: ai-assisted
+  ms.service: azure-event-grid
+title: Develop event-driven AI workflows with Azure Event Grid
+summary: Build reactive AI architectures using Azure Event Grid to route events from sources to handlers with low latency and high reliability. Learn to configure event subscriptions, design CloudEvents, implement delivery policies, and publish custom events from AI applications.
+abstract: |
+  After completing this module, you'll be able to:
+    - Explain how Azure Event Grid enables event-driven patterns in AI solutions and identify the core components (topics, event subscriptions, and event handlers) that form an event-routing architecture.
+    - Design events using the CloudEvents schema for AI operations, define custom event types, and configure event subscriptions with filters that route events based on type, subject, or data attributes.
+    - Configure delivery and retry policies to handle transient failures in AI pipelines, set dead-letter destinations for undeliverable events, and monitor delivery outcomes.
+    - Publish custom events from AI applications to signal completed inferences, model updates, or pipeline stage transitions using the Event Grid SDK and REST API.
+prerequisites: |
+  Before beginning this module, you should have:
+  - Programming experience with languages such as Python, JavaScript, or C#.
+  - Basic understanding of Azure services and cloud computing concepts.
+  - Familiarity with distributed systems concepts and event-driven architectures.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- azure-event-grid
+subjects:
+- custom-app-development
+units:
+- learn.wwl.event-driven-workflows-event-grid.introduction
+- learn.wwl.event-driven-workflows-event-grid.understand-event-grid-concepts
+- learn.wwl.event-driven-workflows-event-grid.event-schemas-properties
+- learn.wwl.event-driven-workflows-event-grid.delivery-retry-policies
+- learn.wwl.event-driven-workflows-event-grid.publish-custom-events
+- learn.wwl.event-driven-workflows-event-grid.exercise-publish-receive-events
+- learn.wwl.event-driven-workflows-event-grid.knowledge-check
+- learn.wwl.event-driven-workflows-event-grid.summary
+badge:
+  uid: learn.wwl.event-driven-workflows-event-grid.badge
