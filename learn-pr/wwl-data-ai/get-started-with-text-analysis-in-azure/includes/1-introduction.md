@@ -8,7 +8,7 @@
 
 In this module, you explore how to use AI to make sense of text in documents and other written assets. 
 
-Text processing and analysis is possible through **natural language processing (NLP)**. NLP enables machines to understand, interpret, and respond to human language. The goal of NLP is to analyze and extract meaning or structure from existing text.
+Text processing and analysis are possible through **natural language processing (NLP)**. NLP enables machines to understand, interpret, and respond to human language. The goal of NLP is to analyze and extract meaning or structure from existing text.
 
 **Text analysis** is the process of automatically examining written text to extract useful information—such as sentiment, keywords, entities, or topics. Text analysis relies on NLP  to turn unstructured text into meaningful insights.
 

@@ -36,7 +36,7 @@ pip install azure-ai-textanalytics
 ```
 
 In the code editor, we can create one text file, and one Python file which contains application code. 
-![Screenshot of Visual Studio Code with a text file open.](../media/python-sdk-text-analysis-0.png)
+![Screenshot of Visual Studio Code with a text file open.](../media/python-sdk-document-example.png)
 
 At the start of the application code, import the SDK. 
 
@@ -45,15 +45,15 @@ from azure.ai.textanalytics import TextAnalyticsClient
 from azure.core.credentials import AzureKeyCredential
 ```
 
-![Screenshot of Visual Studio Code with a Python file open with a focus on the client object created.](../media/python-sdk-text-analysis-1.png)
+![Screenshot of Visual Studio Code with a Python file open with a focus on the client object created.](../media/python-sdk-client-example.png)
 
 Then we use our Language resource endpoint and key to create an authenticated **client object**, the tool your code uses to communicate with a service. The client object knows the service's endpoint, carries credentials (like keys or tokens), exposes methods (for example: `analyze_sentiment()`), and handles sending requests and receiving responses under the hood.
 
 We use the client's methods to call Azure Language functions. For example, we can extract key phrases with `client.extract_key_phrases()`, recognize entities with the function `client.recognize_entities()`, and analyze sentiment with `client.analyze_sentiment()`. To generate a summary, we need to use an asynchronous technique to begin the summarization task and retrieve the results. 
-![Screenshot of Visual Studio Code with a Python file open with a focus on the text analysis functions.](../media/python-sdk-text-analysis-2.png)
+![Screenshot of Visual Studio Code with a Python file open with a focus on the text analysis functions.](../media/python-sdk-text-analysis-example.png)
 
 We can display the results of the analysis by running the application code in the terminal with the command `python <file_name>.py`. When we run the app, it uses Azure Language in our Foundry resource to perform each of the tasks. 
-![Screenshot of Visual Studio Code with the terminal open with a focus on the results.](../media/python-sdk-text-analysis-3.png)
+![Screenshot of Visual Studio Code with the terminal open with a focus on the results.](../media/python-sdk-results.png)
 
 ## Examples of code to use with the Azure Language Python SDK 
 
