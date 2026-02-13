@@ -38,6 +38,8 @@ A common mistake is assuming that restricting management access is enough. An id
 
 Management plane and data plane permissions are evaluated independently. An identity might have access in one plane but not the other.
 
+Because these planes control different categories of actions, failures have different consequences. Management plane misconfigurations alter how AI resources are structured, deployed, or governed. Data plane misconfigurations affect how models are invoked and what data they can process or expose.
+
 This separation affects:
 
 - How you design role assignments
@@ -51,4 +53,4 @@ Was this action performed through the management plane or the data plane?
 
 That distinction shapes both risk assessment and remediation.
 
-Understanding these two planes prepares you to design access intentionally rather than granting broad permissions that span configuration and runtime activity.
+Understanding these two planes allows you to design access intentionally rather than granting broad permissions that span configuration and runtime activity. That foundation makes it possible to examine how requests are authenticated and validated.

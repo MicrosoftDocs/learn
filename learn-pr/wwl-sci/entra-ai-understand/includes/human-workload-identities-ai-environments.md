@@ -2,7 +2,7 @@ AI endpoints don't distinguish between human and application requests at runtime
 
 For security design, the type of identity matters.
 
-Understanding the differences between **human**, **application**, and **managed** identities helps you assign permissions correctly and reduce risk.
+Understanding the differences between **human**, **application**, and **managed identities** helps you assign permissions correctly and reduce risk.
 
 ## Human identities
 
@@ -22,7 +22,7 @@ Overassigning permissions to user accounts increases risk, particularly in the m
 
 ## Application identities
 
-Application identities represent software rather than people. In Microsoft Entra ID, these are typically implemented as service principals associated with application registrations.
+Application identities represent software rather than people. In Microsoft Entra ID, these are typically implemented as service principals associated with application registrations. An application registration defines the application globally, while a service principal represents that application as a security identity within a specific tenant.
 
 They're used when software calls an AI endpoint directly. Examples include:
 
@@ -66,4 +66,4 @@ Each identity type introduces different security considerations:
 
 The identity type you choose affects the potential blast radius if that identity is compromised.
 
-Understanding these distinctions allows you to design access intentionally rather than defaulting to broad or convenient configurations.
+Understanding these distinctions allows you to design access intentionally rather than defaulting to broad or convenient configurations. The next step is defining what those identities are actually permitted to do and where those permissions apply.

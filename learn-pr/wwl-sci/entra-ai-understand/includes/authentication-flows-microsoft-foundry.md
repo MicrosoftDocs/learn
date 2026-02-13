@@ -1,4 +1,4 @@
-Understanding that identity governs access isn't enough. You also need to understand how an identity proves who it's when calling an AI endpoint.
+Understanding that identity governs access isn't enough. You also need to understand how an identity proves who it is when calling an AI endpoint.
 
 Every request to an AI endpoint must include valid authentication credentials. Microsoft Foundry relies on industry-standard OAuth 2.0 flows and Microsoft Entra ID to issue and validate access tokens.
 
@@ -20,6 +20,8 @@ That token represents the authenticated identity. It contains claims about:
 - Token lifetime
 
 The caller includes the access token in requests to the AI endpoint. The service validates the token before processing the request.
+
+For example, a web application that calls an AI endpoint uses its service principal to request a token from Microsoft Entra ID. If authentication succeeds, Microsoft Entra issues an access token. The application includes that token in its request, and the AI endpoint validates it before processing the prompt.
 
 If the token is invalid, expired, or improperly scoped, the request fails before reaching the model.
 
@@ -57,4 +59,4 @@ Only after successful authentication and authorization does the service process 
 
 This flow ensures that every AI interaction in Microsoft Foundry is tied to a verified identity and evaluated against assigned permissions.
 
-Understanding this sequence prepares you to analyze authentication failures, token misuse, and access control misconfigurations in AI environments.
+Understanding this sequence prepares you to analyze authentication failures, token misuse, and access control misconfigurations in AI environments. It also clarifies how different identity types authenticate and why that distinction matters.

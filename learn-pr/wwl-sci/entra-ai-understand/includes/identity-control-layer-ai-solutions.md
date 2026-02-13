@@ -45,4 +45,4 @@ Identity is present at every stage:
 
 Security platforms like Microsoft Defender for Cloud rely on identity context to evaluate risk and surface misconfigurations. Without a clear identity architecture, posture insights lack meaningful context.
 
-Understanding how identity governs AI access is the foundation for designing secure AI workloads. Every subsequent decision about access, roles, conditions, and enforcement builds on this layer.
+Secure AI access rests on four elements: identity, authentication, authorization, and scope. Each layer builds on the previous one. When identity design is sound, these layers work together to create predictable and enforceable access boundaries.
