@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.spec-driven-development-github-spec-kit-greenfield-intro.knowledge-check
+title: Module assessment
+metadata:
+  title: Module Assessment
+  description: "Module assessment"
+  ms.date: 01/26/2026
+  author: chrishowd
+  ms.author: cahowd
+  ms.topic: unit
+durationInMinutes: 10
+quiz:
+  title: "Check your knowledge"
+  questions:

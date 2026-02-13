@@ -1,0 +1,42 @@
+### YamlMime:Module
+uid: learn.wwl.spec-driven-development-github-spec-kit-greenfield-intro
+metadata:
+  title: "Get Started with Spec-Driven Development and GitHub Spec Kit"
+  description: "Learn to implement the spec-driven development methodology and GitHub Spec Kit for greenfield applications."
+  ms.date: 01/26/2026
+  author: chrishowd
+  ms.author: cahowd
+  ms.topic: module
+  ms.service: github-copilot
+title: "Get started with spec-driven development and GitHub Spec Kit"
+summary: Learn to implement the spec-driven development methodology and GitHub Spec Kit for greenfield applications.
+abstract: |
+  After completing this module, you're able to:
+  - Describe the principles and phases of the spec-driven development (SDD) methodology.
+  - Use GitHub Spec Kit commands to create the constitution.md, spec.md, plan.md, and tasks.md files.
+  - Implement a greenfield application from start to finish using GitHub Spec Kit's AI-assisted workflows.
+prerequisites: |
+  - Familiarity with GitHub and GitHub Copilot.
+  - Basic understanding of software development workflows.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+  - beginner
+roles:
+  - developer
+products:
+  - github
+  - vs-code
+subjects:
+  - app-development
+  - productivity
+units:
+- learn.wwl.develop-ai-enabled-apps-using-github-copilot-sdk.introduction
+- learn.wwl.develop-ai-enabled-apps-using-github-copilot-sdk.what-ai-agent
+- learn.wwl.develop-ai-enabled-apps-using-github-copilot-sdk.what-github-copilot-sdk
+- learn.wwl.develop-ai-enabled-apps-using-github-copilot-sdk.examine-ai-agent-use-cases
+- learn.wwl.develop-ai-enabled-apps-using-github-copilot-sdk.design-ai-agents
+- learn.wwl.develop-ai-enabled-apps-using-github-copilot-sdk.implement-ai-agents-github-copilot-sdk
+- learn.wwl.develop-ai-enabled-apps-using-github-copilot-sdk.adapt-extend-ai-agents
+- learn.wwl.develop-ai-enabled-apps-using-github-copilot-sdk.exercise-integrate-ai-agent-github-copilot-sdk
+- learn.wwl.develop-ai-enabled-apps-using-github-copilot-sdk.knowledge-check
+- learn.wwl.develop-ai-enabled-apps-using-github-copilot-sdk.summary
