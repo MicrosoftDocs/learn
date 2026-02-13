@@ -1,0 +1,54 @@
+### YamlMime:Module
+uid: learn.wwl.monitor-analyze-tune-ai-agents
+metadata:
+  title: "Monitor, Analyze, and Tune AI Agents"
+  description: "Learn to monitor, analyze, and tune AI agents for reliability, performance, and continuous improvement in enterprise environments."
+  ms.date: 02/13/2026
+  author: msdavidram
+  ms.author: taeldin
+  ms.topic: module
+  ms.service: microsoft-365-copilot
+title: "Monitor, analyze, and tune AI agents"
+summary: Learn to ensure AI agents operate reliably, deliver high-quality outcomes, and continuously improve in enterprise environments.
+abstract: |
+  After completing this module, you will be able to:
+  - Establish monitoring frameworks for AI agents.
+  - Leverage industry tools and processes for observability.
+  - Analyze backlogs and user feedback for actionable insights.
+  - Apply AI-based diagnostic and tuning methods.
+  - Monitor performance and metrics to optimize agent workflows.
+prerequisites: |
+  - Familiarity with AI agent workflows and enterprise environments.
+  - Basic understanding of monitoring tools and governance standards.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- solution-architect
+- data-engineer
+- devops-engineer
+- security-engineer
+- support-engineer
+products:
+- azure
+- microsoft-365-copilot
+- microsoft-365-copilot-chat
+- real-time-analytics
+- m365
+subjects:
+- data-analytics
+- data-integration
+- data-engineering
+- it-management-monitoring
+- devops
+units:
+- learn.wwl.M08.introduction
+- learn.wwl.M08.recommend-process-tools-monitoring-agents
+- learn.wwl.M08.analyze-backlog-user-feedback-ai-agent-usage
+- learn.wwl.M08.apply-aibased-tools-analyze-identify-issues-perform-tuning
+- learn.wwl.M08.monitor-agent-performance-metrics
+- learn.wwl.M08.interpret-telemetry-data-performance-model-tuning
+- learn.wwl.M08.knowledge-check
+- learn.wwl.M08.module-summary
+badge:
+  uid: learn.wwl.monitor-analyze-tune-ai-agents.badge
