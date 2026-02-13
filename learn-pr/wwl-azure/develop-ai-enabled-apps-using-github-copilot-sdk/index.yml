@@ -1,26 +1,27 @@
 ### YamlMime:Module
-uid: learn.wwl.spec-driven-development-github-spec-kit-greenfield-intro
+uid: learn.wwl.develop-ai-enabled-apps-using-github-copilot-sdk
 metadata:
-  title: "Get Started with Spec-Driven Development and GitHub Spec Kit"
-  description: "Learn to implement the spec-driven development methodology and GitHub Spec Kit for greenfield applications."
-  ms.date: 01/26/2026
+  title: "Develop AI-Enabled Apps using the GitHub Copilot SDK"
+  description: "This module covers how to develop AI-enabled applications using the GitHub Copilot SDK. You install the SDK, explore its features, and build AI agents that can be integrated into your applications to automate tasks and enhance functionality."
+  ms.date: 02/13/2026
   author: chrishowd
   ms.author: cahowd
   ms.topic: module
   ms.service: github-copilot
-title: "Get started with spec-driven development and GitHub Spec Kit"
-summary: Learn to implement the spec-driven development methodology and GitHub Spec Kit for greenfield applications.
+title: "Develop AI-enabled apps using the GitHub Copilot SDK"
+summary: This module covers how to develop AI-enabled applications using the GitHub Copilot SDK. You install the SDK, explore its features, and build AI agents that can be integrated into your applications to automate tasks and enhance functionality.
 abstract: |
   After completing this module, you're able to:
-  - Describe the principles and phases of the spec-driven development (SDD) methodology.
-  - Use GitHub Spec Kit commands to create the constitution.md, spec.md, plan.md, and tasks.md files.
-  - Implement a greenfield application from start to finish using GitHub Spec Kit's AI-assisted workflows.
+  - Explain what AI agents are and how they differ from chatbots and automation scripts.
+  - Describe the architecture and key features of the GitHub Copilot SDK.
+  - Design an AI agent system with tools, memory, and guardrails.
+  - Implement an AI agent using the GitHub Copilot SDK with custom tool definitions.
 prerequisites: |
-  - Familiarity with GitHub and GitHub Copilot.
-  - Basic understanding of software development workflows.
+  - Experience using GitHub Copilot in Visual Studio Code.
+  - Experience developing C# applications.
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
-  - beginner
+  - intermediate
 roles:
   - developer
 products:
