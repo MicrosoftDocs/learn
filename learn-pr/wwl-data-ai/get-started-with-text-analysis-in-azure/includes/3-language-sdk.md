@@ -17,7 +17,7 @@ When you create a Language resource, Azure creates an *endpoint* for Azure Langu
 When you run your application code, your application sends a request, or call, to the endpoint. The call can be sent using the REST API or SDK. The service returns a response, such as key phrases detected, in a format known as JSON. 
 
 >[!NOTE]
->You can review foundational material on [applications and using endpoints here](/training/modules/get-started-with-ai-in-azure/5-endpoints?pivots=text).
+>You can review foundational material on [applications and using endpoints here](/training/modules/get-started-with-ai-in-azure/5-endpoints?pivots=text?azure-portal=true).
 
 The **Azure Language SDK** is a set of programming libraries that let your application talk to Azure’s Language Services. You would use the SDK when writing applications in **Python**, **JavaScript**, **C#**, or **Java**.
 
