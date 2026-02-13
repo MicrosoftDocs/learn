@@ -34,5 +34,5 @@ Select the **Launch Exercise** button to open the exercise instructions in a new
 
 <br/>
 
-<a href="https://go.microsoft.com/fwlink/?linkid=2346339" target="_blank">
+<a href="https://go.microsoft.com/fwlink/?linkid=2352235" target="_blank">
     <img src="../media/launch-exercise.png" alt="Button to launch exercise.">
