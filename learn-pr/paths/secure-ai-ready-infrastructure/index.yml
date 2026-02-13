@@ -1,0 +1,33 @@
+### YamlMime:LearningPath
+uid: learn.wwl.secure-ai-ready-infrastructure
+metadata:
+  title: Secure AI-Ready Infrastructure
+  description: This course teaches how to build production‑ready AI infrastructure using Microsoft Foundry Hubs and Projects, applying enterprise security controls, network isolation, managed identities, and container governance to enable compliant, scalable AI development across organizations.
+  ms.date: 02/12/2026
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: learning-path
+title: Secure AI-ready infrastructure
+prerequisites: |
+  - Azure fundamentals including resource groups, virtual networks, and identity management.
+  - Basic AI and machine learning concepts.
+  - Container fundamentals and Docker basics.
+summary: |
+ This course teaches how to build production‑ready AI infrastructure using Microsoft Foundry Hubs and Projects, applying enterprise security controls, network isolation, managed identities, and container governance to enable compliant, scalable AI development across organizations.
+iconUrl: /training/achievements/generic-trophy.svg
+levels:
+- intermediate
+roles:
+- administrator
+products:
+- azure
+subjects:
+- artificial-intelligence
+- infrastructure
+modules:
+- learn.wwl.implement-secure-ai-ready-infrastructure-azure-services
+- learn.wwl.secure-azure-openai-content-safety-controls
+- learn.wwl.implement-identity-based-security-azure-machine-learning
+- learn.wwl.implement-security-controls-azure-ai-ready-infrastructure
+trophy:
+  uid: learn.wwl.secure-ai-ready-infrastructure.trophy

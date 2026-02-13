@@ -3,7 +3,7 @@ uid: learn.wwl.design-implement-data-modeling-unity-catalog
 metadata:
   title: Design and Implement Data Modeling with Azure Databricks
   description: Learn how to design and implement data modeling strategies in Azure Databricks with Unity Catalog, including ingestion patterns, table formats, partitioning, slowly changing dimensions, and clustering strategies.
-  ms.date: 01/15/2026
+  ms.date: 02/10/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: module

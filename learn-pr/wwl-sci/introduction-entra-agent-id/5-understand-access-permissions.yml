@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.introduction-entra-agent-id.understand-access-permissions
+title: Understand access and permissions
+metadata:
+  title: Understand access and permissions
+  description: "Learn about the roles required to manage agent identities, how permission inheritance works, and security restrictions for agent identities."
+  ms.date: 02/09/2026
+  author: wwlpublish
+  ms.author: roberts
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-understand-access-permissions.md)]

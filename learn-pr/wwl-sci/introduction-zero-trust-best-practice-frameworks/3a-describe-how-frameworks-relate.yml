@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.introduction-zero-trust-best-practice-frameworks.describe-how-frameworks-relate
+title: Describe how the frameworks relate to each other
+metadata:
+  title: Describe How the Frameworks Relate to Each Other
+  description: "Learn how CAF, WAF, MCRA, MCSB, and the Zero Trust adoption framework work together as a comprehensive system for cybersecurity."
+  ms.date: 02/11/2026
+  author: ceperezb
+  ms.author: ceperezb
+  ms.topic: unit
+  ai-usage: ai-generated
+durationInMinutes: 5
+content: |
+  [!include[](includes/3a-describe-how-frameworks-relate.md)]

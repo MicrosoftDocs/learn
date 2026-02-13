@@ -1,104 +1,104 @@
-<!--
-TODO: Reference other module once published
-For an overview of how Defender for cloud integrates posture management and workload protections, see Design integrated security posture management and workload protection solutions in hybrid and multicloud environments.
--->
-Defender for cloud has workload protections in 7 main areas:
+While cloud security posture management identifies misconfigurations before attackers exploit them, cloud workload protection (CWP) detects and responds to active threats against running workloads. As a security architect, you design a workload protection strategy that provides appropriate coverage without creating operational burden or unnecessary cost.
 
-- Servers
-- Storage
-- Databases
-- Containers
-- Application infrastructure
-- Alerts
-- Incidents
+## Understanding workload protection in Defender for Cloud
 
-We will highlight three of those capabilities in this article.
+Defender for Cloud provides workload protection through plans targeting specific resource types. Unlike CSPM which assesses configuration state, these plans monitor runtime behavior to detect threats like malware execution, suspicious network connections, and exploitation attempts.
 
-## Server workload protections
+The key design principle: enable protection plans based on workloads present in your environment and their risk profile. Not every workload requires every protection.
 
-Microsoft Defender for Servers extends protection to your Windows and Linux machines that run in Azure, Amazon Web Services (AWS), Google Cloud Platform (GCP), and on-premises. Defender for Servers integrates with Microsoft Defender for Endpoint to provide endpoint detection and response (EDR) and other threat protection features.
+## Mapping protection plans to workloads
 
-### Deployment overview
+| Workload type | Defender plan | What it protects |
+|--------------|---------------|------------------|
+| Virtual machines and servers | Defender for Servers | Windows and Linux machines in Azure, AWS, GCP, and on-premises via Azure Arc |
+| Containers | Defender for Containers | Kubernetes clusters, container registries, images, and cluster nodes |
+| SQL databases | Defender for SQL | Azure SQL Database, SQL Managed Instance, and SQL Server on machines |
+| Open-source databases | Defender for open-source relational databases | Azure Database for PostgreSQL, MySQL, and MariaDB |
+| Azure Cosmos DB | Defender for Azure Cosmos DB | Azure Cosmos DB accounts |
+| Storage accounts | Defender for Storage | Blob storage, Azure Files, and Azure Data Lake Storage Gen2 |
+| App Service | Defender for App Service | Web apps, API apps, and function apps |
+| APIs | Defender for APIs | APIs published in Azure API Management |
+| Key Vault | Defender for Key Vault | Azure Key Vault secrets, keys, and certificates |
+| Resource Manager | Defender for Resource Manager | Azure Resource Manager control plane activity |
+| AI workloads | Defender for AI Services | Azure OpenAI and other Azure AI services |
 
-The following table summarizes the Defender for Servers deployment process:
+## Designing server protection
 
-1. Foundational CSPM:
-    - There are no charges when you use foundational CSPM with no plans enabled.
-    - AWS/GCP machines don't need to be set up with Azure Arc for foundational CSPM. On-premises machines do. 
-    - A couple of foundational recommendations rely on agents:
-        - Antimalware/endpoint protection (Log Analytics agent or Azure Monitor agent)
-        - OS baselines recommendations (Log Analytics agent or Azure Monitor agent and Guest configuration extension)
-        - System updates recommendation (Log Analytics agent)
-1. Start protecting resources:
-    - When you open Defender for Cloud in the portal, it starts protecting resources with free foundational CSPM assessments and recommendations.
-    - Defender for Cloud creates a default Log Analytics workspace with the `SecurityCenterFree` solution enabled.
-    - Recommendations start appearing in the portal.
-1. Enable defender for servers:
-    - When you enable a paid plan, Defender for Cloud enables the security solution on its default workspace.
-    - Enable Defender for Servers plan I (subscription only) or Plan 2 (subscription and workspace).
-    - After enabling a plan, decide how you want to install agents and extensions on Azure VMS in the subscription/workgroup.
-    - By default, auto-provisioning is enabled for some extensions.
-1. Protect AWS/GCP machines:
-    - For a Defender for Servers deployment, you set up a connector, turn off plans you don't need, configure auto-provisioning settings, authenticate to AWS/GCP, and deploy the settings. 
-    - Auto-provisioning includes the agents used by Defender for Cloud and the Azure Connected Machine agent for onboarding to Azure with Azure Arc. 
-    - AINS uses a CloudFormation template. 
-    - GCP uses a Cloud Shell template. 
-    - Recommendations start appearing in the portal. 
-1. Protect on-premises servers:
-    - Onboard them as Azure Arc machines and deploy agents with auto-provisioning. 
+Server protection requires the most architectural decisions. Defender for Servers offers two plans:
 
--   Learn more about [foundational cloud security posture management (CSPM)](/azure/defender-for-cloud/concept-cloud-security-posture-management#defender-cspm-plan-options).
--   Learn more about [Azure Arc](/azure/azure-arc/) onboarding.
+| Capability | Plan 1 | Plan 2 |
+|-----------|--------|--------|
+| Defender for Endpoint integration (EDR) | Yes | Yes |
+| Defender for Endpoint license included | Yes | Yes |
+| Vulnerability assessment (agent-based) | Yes | Yes |
+| Agentless scanning (vulnerabilities, secrets, malware) | No | Yes |
+| Just-in-time VM access | No | Yes |
+| File integrity monitoring | No | Yes |
+| OS configuration assessment (MCSB baselines) | No | Yes |
+| OS system updates assessment | No | Yes |
+| Defender for DNS alerts | No | Yes |
+| Premium Defender Vulnerability Management features | No | Yes |
 
-When you enable [Microsoft Defender for Servers](/azure/defender-for-cloud/defender-for-servers-introduction) on an Azure subscription or a connected AWS account, all of the connected machines will be protected by Defender for Servers. You can enable Microsoft Defender for Servers at the Log Analytics workspace level, but only servers reporting to that workspace will be protected and billed and those servers won't receive some benefits, such as Microsoft Defender for Endpoint, vulnerability assessment, and just-in-time VM access.
+**Plan selection**: Choose Plan 1 for EDR integration and agent-based vulnerability scanning. Choose Plan 2 for agentless scanning, just-in-time access, file integrity monitoring, or premium vulnerability management features. Consider Plan 2 for production servers and Plan 1 for development environments.
 
-## Application workload protections
+**Coverage scope**: Enable at the subscription level for simplest management. Plan 1 can enable at the resource level; Plan 2 requires subscription-level enablement. For multicloud and on-premises servers, deploy Azure Arc for full functionality.
 
-**Microsoft Defender for App Service** uses the scale of the cloud to identify attacks targeting applications running over App Service. Attackers probe web applications to find and exploit weaknesses. Before being routed to specific environments, requests to applications running in Azure go through several gateways, where they're inspected and logged. This data is then used to identify exploits and attackers, and to learn new patterns that will be used later.
+## Designing container protection
 
-When you enable Microsoft Defender for App Service, you immediately benefit from the following services offered by this Defender plan:
+Container protection addresses security across five domains: posture management (agentless cluster discovery and configuration assessment), vulnerability assessment (image scanning in registries and running containers), runtime threat protection (60+ Kubernetes-aware analytics mapped to MITRE ATT&CK), software supply chain protection (gated deployment blocking risky images), and deployment monitoring.
 
--   **Secure** - Defender for App Service assesses the resources covered by your App Service plan and generates security recommendations based on its findings. Use the detailed instructions in these recommendations to harden your App Service resources.
-    
--   **Detect** - Defender for App Service detects a multitude of threats to your App Service resources by monitoring:
-    
-    -   the VM instance in which your App Service is running, and its management interface
-    -   the requests and responses sent to and from your App Service apps
-    -   the underlying sandboxes and VMs
-    -   App Service internal logs - available thanks to the visibility that Azure has as a cloud provider
+**Design consideration**: Agentless capabilities provide discovery and vulnerability assessment without components. The Defender sensor (a DaemonSet on Kubernetes nodes) enables runtime threat protection. Plan sensor deployment alongside Arc onboarding for clusters outside Azure.
 
-As a cloud-native solution, Defender for App Service can identify attack methodologies applying to multiple targets. For example, from a single host it would be difficult to identify a distributed attack from a small subset of IPs, crawling to similar endpoints on multiple hosts.
+## Designing database protection
 
-The log data and the infrastructure together can tell the story: from a new attack circulating in the wild to compromises in customer machines. Therefore, even if Microsoft Defender for App Service is deployed after a web app has been exploited, it might be able to detect ongoing attacks.
+Database protection monitors queries and access patterns without impacting performance.
 
-### What threats can Defender for App Service detect?
+**Defender for SQL** detects anomalous query patterns, SQL injection attacks, brute force attempts, and unusual access locations. Protection covers Azure SQL Database, SQL Managed Instance, and SQL Server virtual machines. For SQL Server outside Azure, deploy Azure Arc-enabled SQL Server for full integration.
 
-#### Threats by MITRE ATT&CK tactics
+**Defender for open-source relational databases** monitors PostgreSQL, MySQL, and MariaDB workloads. **Defender for Azure Cosmos DB** detects SQL injection, known malicious actors, and suspicious access patterns.
 
-Defender for Cloud monitors for many threats to your App Service resources. The alerts cover almost the complete list of MITRE ATT&CK tactics from pre-attack to command and control.
+**Design consideration**: For SQL Server running on-premises or in other clouds, plan Azure Arc deployment as a prerequisite for Defender for SQL integration. Azure-native databases require no additional components.
 
--   **Pre-attack threats** - Defender for Cloud can detect the execution of multiple types of vulnerability scanners that attackers frequently use to probe applications for weaknesses.
-    
--   **Initial access threats** - [Microsoft Threat Intelligence](https://www.microsoft.com/security/business/siem-and-xdr/microsoft-defender-threat-intelligence) powers these alerts that include triggering an alert when a known malicious IP address connects to your Azure App Service FTP interface.
-    
--   **Execution threats** - Defender for Cloud can detect attempts to run high privilege commands, Linux commands on a Windows App Service, fileless attack behavior, digital currency mining tools, and many other suspicious and malicious code execution activities.
+## Designing storage protection
 
-## Database workload protections
+Defender for Storage provides activity monitoring (detecting unusual access patterns and data exfiltration), malware scanning (near real-time scanning of uploaded files), and sensitive data threat detection (monitoring for breach attempts on sensitive data).
 
-Microsoft Defender for SQL servers detects anomalous activities indicating unusual and potentially harmful attempts to access or exploit databases on the SQL server.
+**Design consideration**: Pricing is per storage account plus per-gigabyte for malware scanning. Configure scanning caps to control costs. Enable at subscription level to automatically cover new storage accounts.
 
-You'll see alerts when there are suspicious database activities, potential vulnerabilities, or SQL injection attacks, and anomalous database access and query patterns.
+## Designing application and infrastructure protection
 
-Microsoft Defender for SQL servers on machines extends the protections for your Azure-native SQL servers to fully support hybrid environments and protect SQL servers hosted in Azure, multicloud environments, and even on-premises machines:
+**Defender for App Service** monitors web applications for attacks including vulnerability scanning attempts, malicious IP connections, and suspicious execution patterns. Enable for all production web applications exposed to the internet.
 
--   [SQL Server on Virtual Machines](https://azure.microsoft.com/services/virtual-machines/sql-server/)
-    
--   On-premises SQL servers:
-    
-   -   [Azure Arc-enabled SQL Server](/sql/sql-server/azure-arc/overview)
-   -   [SQL Server running on Windows machines without Azure Arc](/azure/azure-monitor/agents/agent-windows)
-        
--   Multicloud SQL servers:
-    
-    -   [Connect your AWS accounts to Microsoft Defender for Cloud](/azure/defender-for-cloud/quickstart-onboard-aws)
-    -   [Connect your GCP project to Microsoft Defender for Cloud](/azure/defender-for-cloud/quickstart-onboard-gcp)
+**Defender for APIs** protects APIs in Azure API Management, identifying posture issues like unauthenticated endpoints and detecting suspicious usage patterns. Prioritize APIs handling sensitive data.
+
+**Defender for Key Vault** detects unusual access attempts to secrets, keys, and certificates. Compromised vaults can enable broader breaches.
+
+**Defender for Resource Manager** monitors control plane operations for suspicious activity like persistence techniques or lateral movement. Both Key Vault and Resource Manager protection operate at subscription level with no additional configuration.
+
+**Defender for AI Services** protects Azure OpenAI and other AI resources, detecting prompt injection attacks and unusual usage patterns. Enable for subscriptions with AI deployments processing sensitive data.
+
+**Design consideration**: Key Vault and Resource Manager protection are foundational controls with minimal overhead - consider enabling these broadly across all production subscriptions. App Service, APIs, and AI Services protection should align with where those workloads exist.
+
+## Prioritizing protection based on risk
+
+**High priority** - Enable full protection for:
+- Production servers processing customer data
+- Databases containing PII
+- Customer-facing containers and applications
+- Storage accounts receiving external uploads
+- Workloads subject to compliance requirements
+
+**Medium priority**: Internal business applications, development environments with production data copies, shared infrastructure.
+
+**Lower priority**: Isolated test environments with synthetic data, temporary workloads, resources with existing protection tools.
+
+## Integration with security operations
+
+Your design must address how alerts flow to security operations:
+
+- **Alert routing**: Defender for Cloud integrates with Microsoft Defender XDR for unified incident management
+- **SIEM integration**: Export alerts to Microsoft Sentinel, Event Hubs, or Log Analytics
+- **Workflow automation**: Use Logic Apps for immediate responses like VM isolation or credential rotation
+- **Suppression rules**: Create rules for known false positives to reduce alert fatigue
+
+The combination of CSPM and workload protection creates defense in depth: posture management reduces attack surface by fixing misconfigurations, while workload protection detects and responds when attackers exploit remaining vulnerabilities.

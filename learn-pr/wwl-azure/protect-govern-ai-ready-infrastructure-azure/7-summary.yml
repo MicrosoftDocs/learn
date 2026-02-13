@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.protect-govern-ai-ready-infrastructure-azure.summary
+title: "Summary"
+metadata:
+  title: "Summary"
+  description: "Summary."
+  ms.date: 02/03/2026
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/7-summary.md)]

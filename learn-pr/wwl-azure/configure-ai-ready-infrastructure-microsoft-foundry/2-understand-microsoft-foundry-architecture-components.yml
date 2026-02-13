@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-ai-ready-infrastructure-microsoft-foundry.understand-microsoft-foundry-architecture-components
+title: "Understand Microsoft Foundry architecture components"
+metadata:
+  title: "Understand Microsoft Foundry Architecture Components"
+  description: "Learn how Microsoft Foundry's three-tier architecture balances governance and autonomy for AI projects with shared resources and security policies."
+  ms.date: 02/02/2026
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: unit
+  ms.custom: references_regions
+durationInMinutes: 9
+content: |
+  [!include[](includes/2-understand-microsoft-foundry-architecture-components.md)]

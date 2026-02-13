@@ -28,6 +28,5 @@ subjects:
 modules:
 - learn.azure.intro-to-azure-vpn-gateway
 - learn.azure.intro-to-azure-expressroute
-- introduction-azure-virtual-wan
 trophy:
   uid: learn.intro-to-azure-hybrid-connectivity-services.trophy

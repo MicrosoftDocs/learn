@@ -1,3 +1,5 @@
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=778d274c-f2bc-474b-94f1-690bd6b46ad5]
+
 When working with sensitive information in a data lakehouse, you need more than just role-based permissions. Unity Catalog allows you to enforce **fine-grained access control** so that different users can query the same tables but see only the data they're allowed to. Two approaches are commonly used, as explained in the previous unit:
 
 - **Row and Column Security** – restricts which rows and columns a user can see at the table level.
@@ -98,5 +100,7 @@ Both approaches achieve fine-grained security, but they differ in scope:
 
 - **Row and Column Security** is embedded at the table level and guarantees that restrictions apply everywhere the table is used.
 - **Dynamic Views** provide flexibility: you can create multiple views with different rules for different audiences, while keeping the base table unrestricted.
+
+:::image type="content" source="../media/choose-between-approaches.png" alt-text="Diagram helping you choose between the two approaches." border="false" lightbox="../media/choose-between-approaches.png":::
 
 In practice, you use table-level controls when you need strict enforcement, and dynamic views when you want adaptable, shareable abstractions.

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.introduction-zero-trust-best-practice-frameworks.describe-frameworks
+title: Describe the frameworks
+metadata:
+  title: Describe the Frameworks
+  description: "Learn about the Cloud Adoption Framework, the Azure Well-Architected Framework, the Microsoft Cybersecurity Reference Architectures, and the Microsoft cloud security benchmark."
+  ms.date: 02/11/2026
+  author: ceperezb
+  ms.author: ceperezb
+  ms.topic: unit
+  ai-usage: ai-generated
+durationInMinutes: 6
+content: |
+  [!include[](includes/2a-describe-frameworks.md)]

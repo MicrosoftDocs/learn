@@ -1,22 +1,27 @@
-In this module, you have learned about the Zero Trust approach to security and how it is required to keep up with threats, changes to cloud platforms, and changes in business models responding to a rapidly evolving world. The Microsoft Zero Trust approach to security is based on three principles: assume breach, verify explicitly, and least privilege. A Zero Trust approach should extend throughout the entire digital estate and serve as an integrated security philosophy and end-to-end strategy. This is done by implementing Zero Trust controls and technologies across six foundational elements.
+In this module, you learned about the concept of Zero Trust and the best practice frameworks that Microsoft provides for cybersecurity architects.
 
-The main takeaways from this module are that Zero Trust is a major transformation of a security program, and it is critical to start with the most impactful items that get you the most security and productivity increases with the least amount of time and resources. The Zero Trust Rapid Modernization Plan (RaMP) is included in the Microsoft Cybersecurity Reference Architecture (MCRA) and provides best practices that help you prioritize your security modernization. The Zero Trust RaMP aligns to the recommended security modernization initiatives, including secure identities and access, data security and governance, risk, compliance (GRC), modern security operations, infrastructure and development security, and operational technology (OT) and Internet of Things (IoT) security.
+You explored how best practices help you avoid common security antipatterns, and how cybersecurity architects integrate these practices into architecture, policy, and organizational processes. You learned that Zero Trust is a security strategy built on three guiding principles: verify explicitly, use least privilege access, and assume breach. These principles are applied across six technology pillars—identities, endpoints, data, applications, infrastructure, and network—tied together by visibility, automation, and orchestration.
+
+You also examined four key frameworks: the Cloud Adoption Framework (CAF) for guiding cloud adoption, the Azure Well-Architected Framework (WAF) for improving workload quality, the Microsoft Cybersecurity Reference Architectures (MCRA) for end-to-end security architecture, and the Microsoft cloud security benchmark (MCSB) for prescriptive security controls. You learned how the Zero Trust adoption framework provides a phased, business-driven approach to implementing Zero Trust, and how the Rapid Modernization Plan (RaMP) helps you prioritize quick wins.
+
+Finally, you explored how these frameworks relate to each other. They operate at different levels—from strategy and architecture to workload design and specific controls—and are designed to work together as a comprehensive system.
 
 ## Learning objectives
 
 In this module, you learned how to:
 
-- Use best practices as a cybersecurity architect.
-- Understand the concept of Zero Trust and how it can be used to modernize an organization's cybersecurity.
-- Understand when to use different best practice frameworks like MCRA, CAF and WAF.
+- Describe common security antipatterns and the role of best practices for cybersecurity architects.
+- Describe the concept of Zero Trust and its guiding principles.
+- Describe the purpose and scope of CAF, WAF, MCRA, and MCSB.
+- Describe the Zero Trust adoption framework and the approach to rapid modernization.
+- Describe how the different best practice frameworks relate to each other.
 
-## Learn more with security documentation
+## Learn more
 
-- [Zero Trust Rapid Modernization Plan](/security/zero-trust/zero-trust-ramp-overview)
-- [Visibility, automation, and orchestration with Zero Trust](/security/zero-trust/deploy/visibility-automation-orchestration)
-- [Securing identity with Zero Trust](/security/zero-trust/deploy/identity)
-- [Secure applications with Zero Trust](/security/zero-trust/deploy/applications)
-- [Secure data with Zero Trust](/security/zero-trust/deploy/data)
-- [Secure endpoints with Zero Trust](/security/zero-trust/deploy/endpoints)
-- [Securing infrastructure with Zero Trust](/security/zero-trust/deploy/infrastructure)
-- [Secure networks with Zero Trust](/security/zero-trust/deploy/networks)
+- [What is Zero Trust?](/security/zero-trust/zero-trust-overview)
+- [Zero Trust deployment for technology pillars](/security/zero-trust/deploy/overview)
+- [Zero Trust adoption framework overview](/security/zero-trust/adopt/zero-trust-adoption-overview)
+- [Microsoft Cybersecurity Reference Architectures](/security/cybersecurity-reference-architecture/mcra)
+- [Introduction to the Microsoft cloud security benchmark](/security/benchmark/azure/introduction)
+- [What is the Microsoft Cloud Adoption Framework?](/azure/cloud-adoption-framework/overview)
+- [What is the Azure Well-Architected Framework?](/azure/well-architected/what-is-well-architected-framework)

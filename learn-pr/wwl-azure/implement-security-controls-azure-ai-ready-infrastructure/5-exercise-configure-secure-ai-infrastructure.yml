@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-security-controls-azure-ai-ready-infrastructure.exercise-configure-secure-ai-infrastructure
+title: "Exercise: Configure secure AI infrastructure in Azure"
+metadata:
+  title: "Exercise: Configure Secure AI Infrastructure in Azure"
+  description: "Learn how to configure secure AI infrastructure in Azure using role-based access control and Azure Policy for enhanced governance and security."
+  ms.date: 02/09/2026
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: unit
+durationInMinutes: 12
+content: |
+  [!include[](includes/5-exercise-configure-secure-ai-infrastructure.md)]

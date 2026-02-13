@@ -1,42 +1,78 @@
-## Evaluate solutions that use Microsoft Entra Internet Access as a secure web gateway
+Microsoft Entra Internet Access is one of two components of Microsoft's Security Service Edge (SSE) solution, collectively called Global Secure Access. Where traditional secure web gateways rely on network topology to enforce policy, Internet Access ties enforcement directly to identity. This identity-centric approach means the same filtering and access controls follow users whether they work from the office, from home, or from a branch location.
 
-Microsoft Entra Internet Access provides an identity-centric Secure Web Gateway (SWG) solution for Software as a Service (SaaS) applications and other Internet traffic. It protects users, devices, and data from the Internet's wide threat landscape with best-in-class security controls and visibility through Traffic Logs.
+Internet Access operates through two traffic forwarding profiles. The **Internet access profile** routes general internet and SaaS traffic through the service for web content filtering and threat protection. The **Microsoft traffic profile** routes traffic to Microsoft 365 services—Exchange Online, SharePoint Online, OneDrive, Teams, and Microsoft 365 Common—for optimized security and performance. As a security architect, you evaluate both profiles to determine how each addresses your organization's access control, data protection, and compliance requirements.
 
-### Web content filtering
+## Evaluate Internet Access as a secure web gateway
 
-The key introductory feature for Microsoft Entra Internet Access for all apps is **Web content filtering**. This feature provides granular access control for web categories and Fully Qualified Domain Names (FQDNs). By explicitly blocking known inappropriate, malicious, or unsafe sites, you protect your users and their devices from any Internet connection whether they're remote or within the corporate network.
+A secure web gateway (SWG) inspects outbound traffic and enforces policies that block access to malicious, unsafe, or inappropriate destinations. Microsoft Entra Internet Access provides SWG capabilities through web content filtering, which gives you granular control based on web categories and fully qualified domain names (FQDNs).
 
-Web content filtering is implemented using filtering policies, which are grouped into security profiles, which can be linked to Conditional Access policies. To learn more about Conditional Access, see [Microsoft Entra Conditional Access](/azure/active-directory/conditional-access/).
+When traffic reaches Microsoft's Security Service Edge, the service inspects it in two ways. For unencrypted HTTP traffic, it evaluates the full URL. For HTTPS traffic encrypted with TLS, it uses the Server Name Indication (SNI) to determine the destination. This dual approach ensures coverage across both encrypted and unencrypted connections.
 
+What distinguishes Internet Access from network-based SWG solutions is the policy delivery model. You create **web content filtering policies** that define which categories or FQDNs to allow or block, group those policies into **security profiles**, and then link the security profiles to **Conditional Access policies**. This architecture means filtering decisions aren't just based on network location—they incorporate user identity, device compliance, risk level, and session context.
 
-### Security profiles
+### Design the policy hierarchy
 
-Security profiles are objects you use to group filtering policies and deliver them through user aware Conditional Access policies. For instance, to block all **News** websites except for `msn.com` for user `angie@contoso.com` you create two web filtering policies and add them to a security profile. You then take the security profile and link it to a Conditional Access policy assigned to `angie@contoso.com`.
+Within a security profile, you assign each filtering policy a unique priority number. Priority 100 is the highest, and 65,000 is the lowest. The service evaluates policies in priority order and stops at the first match, similar to traditional firewall rule processing. As a best practice, space priorities by increments of 100 to give yourself room for future insertions.
 
-```
-"Security Profile for Angie"       <---- the security profile
-    Allow msn.com at priority 100  <---- higher priority filtering policies
-    Block News at priority 200     <---- lower priority filtering policy
-```
+When multiple Conditional Access policies match a request, the service processes all matching security profiles in their priority order. This layered evaluation lets you build targeted policies for specific user groups while maintaining broad protection across the organization.
 
-### Policy processing logic
-Within a security profile, policies are enforced according to priority ordering with 100 being the highest priority and 65,000 being the lowest priority (similar to traditional firewall logic). As a best practice, add spacing of about 100 between priorities to allow for policy flexibility in the future.
+> [!IMPORTANT]
+> The **baseline security profile** applies to all internet traffic routed through the service, even without a linked Conditional Access policy. It acts as a catch-all at the lowest priority in the policy stack. Use it to define your organization's default blocking rules—for example, blocking known malicious categories—while using higher-priority profiles for role-specific exceptions.
 
-Once you link a security profile to a Conditional Access (CA) policy, if multiple CA policies match, both security profiles are processed in priority ordering of the matching security profiles.
+### Integration with Conditional Access
 
+The connection between security profiles and Conditional Access is central to the design. When you create a Conditional Access policy, you target **All internet resources with Global Secure Access** as the resource and select a security profile under session controls. This approach lets you apply different filtering policies based on conditions such as:
 
-## Evaluate solutions that use Microsoft Entra Internet Access to access Microsoft 365, including cross-tenant configurations
+- **User or group membership.** Stricter policies for contractors or guest accounts, more permissive policies for specific roles.
+- **Device compliance.** Require managed or compliant devices before allowing access to certain web categories.
+- **Risk level.** Block high-risk web categories when the user or sign-in risk is elevated.
 
-Solutions in this area rely on Microsoft Entra Internet Access for Microsoft Traffic. This is essentially a traffic forwarding profile that enables Microsoft Entra Internet Access to acquire traffic going to Microsoft services, including Microsoft 365.
+New security profile assignments can take 60 to 90 minutes to propagate because the security profile identifier is embedded in the access token. Changes to existing security profiles take effect more quickly.
 
-The Microsoft profile manages the following policy groups:
+## Evaluate Internet Access for Microsoft 365
 
-- Exchange Online
-- SharePoint Online and OneDrive
-- Microsoft 365 Common and Office Online (only Microsoft Entra ID and Microsoft Graph)
+The Microsoft traffic profile provides a separate forwarding path dedicated to Microsoft 365 services. Unlike the general internet access profile, this profile uses a prepopulated set of FQDNs and IP address ranges organized into policy groups: Exchange Online, SharePoint Online and OneDrive, Microsoft Teams, and Microsoft 365 Common and Office Online.
 
-For more information, see the following resources:
+You can forward or bypass traffic for each policy group individually. For example, you might forward Exchange Online and SharePoint traffic through the service while bypassing Microsoft Teams if latency-sensitive real-time media requires a direct path. When you set a rule to bypass in the Microsoft traffic profile, the internet access profile doesn't acquire that traffic either—it goes directly out through the client's local network path.
 
-- [Microsoft Entra Internet Access for Microsoft Traffic](/entra/global-secure-access/how-to-manage-microsoft-profile).
-- [Configure cross-tenant access settings for B2B collaboration](/entra/external-id/cross-tenant-access-settings-b2b-collaboration).
-- [Microsoft's Security Service Edge solution deployment guide for Microsoft Entra Internet Access for Microsoft Traffic proof of concept](/entra/architecture/sse-deployment-guide-microsoft-traffic).
+### Source IP restoration
+
+When traffic flows through any cloud proxy, the destination service sees the proxy's egress IP address instead of the user's actual IP. This creates a problem for organizations that rely on IP-based Conditional Access policies or need accurate location data in sign-in logs.
+
+Source IP restoration solves this by securely communicating the user's original egress IP address to Microsoft Entra ID and Microsoft Graph. With this feature enabled, your organization can:
+
+- Continue enforcing IP-based location policies in Conditional Access.
+- Improve the accuracy of risk detections in Microsoft Entra ID Protection.
+- Record accurate source IP addresses in sign-in and audit logs for investigations.
+
+### Compliant network check
+
+The compliant network check is a Conditional Access condition that verifies whether a user connects through the Global Secure Access service for your tenant. This check introduces two levels of protection:
+
+- **Authentication plane.** At sign-in, Microsoft Entra ID denies requests from devices not connected to your compliant network. This blocks token theft and replay attacks where an adversary tries to use stolen refresh tokens from outside your network.
+- **Data plane.** For services that support Continuous Access Evaluation (CAE), such as Microsoft Graph, stolen access tokens replayed from outside the compliant network are rejected in near-real time.
+
+Unlike IP-based named locations, the compliant network check doesn't require you to maintain lists of egress IP addresses. The Global Secure Access client or remote network connectivity establishes the compliant network relationship automatically.
+
+## Protect against cross-tenant data exfiltration
+
+Organizations that collaborate with external partners face the risk that users on corporate devices sign in to unauthorized external tenants and exfiltrate data. **Universal tenant restrictions**, built on the tenant restrictions v2 policy, address this risk at both the authentication and data planes.
+
+When you enable universal tenant restrictions, Global Secure Access tags all Microsoft Entra ID and Microsoft Graph traffic with your tenant restrictions v2 policy information. This tagging works across all operating systems, browsers, and device form factors—without requiring proxy server configurations.
+
+Tenant restrictions v2 operates through cross-tenant access settings. You define which external tenants and applications are allowed and block everything else. There are two enforcement points:
+
+| Enforcement point | Protection |
+|---|---|
+| **Authentication plane** | Blocks users from authenticating to unauthorized external tenants at sign-in time. Works with all Microsoft Entra-integrated apps, including third-party apps. |
+| **Data plane** | Prevents replayed tokens from unauthorized tenants. If someone obtains a Microsoft Graph access token on an unmanaged device and brings it into your environment, the token is rejected. |
+
+From a design perspective, evaluate universal tenant restrictions when your organization needs to prevent data exfiltration through external Microsoft 365 tenants or personal Microsoft accounts. The feature requires the Microsoft traffic profile to be enabled and the Global Secure Access client deployed or remote network connectivity configured.
+
+## Design recommendations
+
+- **Enable both traffic profiles** for comprehensive coverage. The internet access profile doesn't include destinations covered by the Microsoft traffic profile.
+- **Define a baseline security profile** that blocks known malicious and inappropriate web categories for all users, then layer role-specific exceptions through additional security profiles linked to Conditional Access.
+- **Enable source IP restoration** to maintain accurate location data for Conditional Access policies, risk detection, and audit logs.
+- **Require the compliant network check** for all Microsoft Entra-integrated applications to mitigate token theft and replay attacks.
+- **Deploy universal tenant restrictions** alongside tenant restrictions v2 to prevent data exfiltration to unauthorized external tenants. Test with a small group before enforcing broadly.

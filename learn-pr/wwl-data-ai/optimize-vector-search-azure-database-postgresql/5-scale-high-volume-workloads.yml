@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.optimize-vector-search-azure-database-postgresql.scale-high-volume-workloads
+title: Scale for high-volume workloads
+metadata:
+  title: Scale for High-Volume Workloads
+  description: Scale for high-volume workloads
+  ms.date: 01/26/2026
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: unit
+durationInMinutes: 12
+content: |
+  [!include[](includes/5-scale-high-volume-workloads.md)]

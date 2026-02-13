@@ -5144,6 +5144,18 @@
       "source_path_from_root": "/learn-pr/wwl-data-ai/get-started-generative-ai-azure-database-postgresql/9-summary.yml",
       "redirect_url": "/training/modules/get-started-generative-ai-azure-database-postgresql",
       "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/build-agent-workflows-microsoft-foundry/8-exercise.yml",
+      "redirect_url": "/training/modules/build-agent-workflows-microsoft-foundry/9-exercise"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/build-agent-workflows-microsoft-foundry/9-knowledge-check.yml",
+      "redirect_url": "/training/modules/build-agent-workflows-microsoft-foundry/10-knowledge-check"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/build-agent-workflows-microsoft-foundry/10-summary.yml",
+      "redirect_url": "/training/modules/build-agent-workflows-microsoft-foundry/11-summary"
     }
   ]
 }

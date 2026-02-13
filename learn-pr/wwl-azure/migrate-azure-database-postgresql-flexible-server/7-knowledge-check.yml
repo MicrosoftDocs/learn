@@ -47,6 +47,6 @@ quiz:
     - content: "pg_dumpall."
       isCorrect: false
       explanation: "Incorrect. This is used to export server config and databases to a file."
-    - content: "Azure Data Studio with Azure PostgreSQL migration extension."
+    - content: "Azure Database for PostgreSQL Flexible Server - migration feature."
       isCorrect: true
-      explanation: "Correct. There's a dedicated extension in ADS, which allows you to generate a rich report on potential migration blockers for PostgreSQL databases."
+      explanation: "Correct. The migration feature within Azure Database for PostgreSQL Flexible Server validates databases before migration and identifies potential blockers."

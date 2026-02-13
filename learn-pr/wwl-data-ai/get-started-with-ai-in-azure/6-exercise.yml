@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-started-with-ai-in-azure.exercise
+title: Exercise - Get started with Microsoft Foundry
+metadata:
+  title: Exercise - Get started with Microsoft Foundry
+  description: "This unit provides hands-on experience with Microsoft Foundry. Complete the exercises to reinforce your understanding of the concepts covered in the previous units."
+  ms.date: 02/03/2026
+  author: graememalcolm
+  ms.author: gmalc
+  ms.topic: unit
+durationInMinutes: 35
+content: |
+  [!include[](includes/6-exercise.md)]

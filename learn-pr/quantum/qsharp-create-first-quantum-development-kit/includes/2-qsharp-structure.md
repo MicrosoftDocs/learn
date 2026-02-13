@@ -34,37 +34,10 @@ For example, the `MeasureOneQubit` operation returns a `Result` type value. The 
 
 ## Quantum libraries
 
-Q# comes with several libraries that contain functions and operations to help you write quantum programs. To call a function or operation from a library, use the `import` keyword and specify the library's namespace. For example, to use the `Message` function from the `Microsoft.Quantum.Intrinsic` namespace in the standard quantum library, use the following code:
+Q# comes with several libraries that contain functions and operations to help you write quantum programs. To call a function or operation from a library, use the `import` keyword and specify the library's namespace. For example, to use the `Message` function from the `Std.Intrinsic` namespace in the standard quantum library, use the following code:
 
 ```qsharp
-// import all functions and operations from Microsoft.Quantum.Intrinsic 
-import Microsoft.Quantum.Intrinsic.*;
-
-operation Main() : Unit {
-    // call the Message function from Microsoft.Quantum.Intrinsic
-    Message("Hello quantum world!");
-}
-```
-
-The asterisk means that you import all of the functions from the `Microsoft.Quantum.Intrinsic` namespace. Alternatively, you can import only the `Message` function:
-
-```qsharp
-// import only the Message function from Microsoft.Quantum.Intrinsic 
-import Microsoft.Quantum.Intrinsic.Message;
-
-operation Main() : Unit {
-    // call the Message function from Microsoft.Quantum.Intrinsic
-    Message("Hello quantum world!");
-}
-```
-
-> [!NOTE]
-> In Q#, the `Unit` type means that the function or operation doesn't return a value. For more information about types in Q#, see [Type System](https://learn.microsoft.com/azure/quantum/user-guide/language/typesystem/).
-
-You can import namespaces in the standard library with `Std` instead of `Microsoft.Quantum`. For example, the following code imports all functions and operations from the `Microsoft.Quantum.Intrinsic` namespace:
-
-```qsharp
-// import everything from Std.Intrinsic (Microsoft.Quantum.Intrinsic)
+// import all functions and operations from Std.Intrinsic 
 import Std.Intrinsic.*;
 
 operation Main() : Unit {
@@ -72,6 +45,21 @@ operation Main() : Unit {
     Message("Hello quantum world!");
 }
 ```
+
+The asterisk means that you import all of the functions from the `Std.Intrinsic` namespace. Alternatively, you can import only the `Message` function:
+
+```qsharp
+// import only the Message function from Std.Intrinsic 
+import Std.Intrinsic.Message;
+
+operation Main() : Unit {
+    // call the Message function from Std.Intrinsic
+    Message("Hello quantum world!");
+}
+```
+
+> [!NOTE]
+> In Q#, the `Unit` type means that the function or operation doesn't return a value. For more information about types in Q#, see [Type System](https://learn.microsoft.com/azure/quantum/user-guide/language/typesystem/).
 
 To explore the Q# standard library, see the [API reference](https://learn.microsoft.com/qsharp/api/qsharp-lang/).
 

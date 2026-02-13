@@ -16,16 +16,38 @@ To help ensure that your organization remains compliant with legal requirements,
 
 GitHub Copilot can help minimize potential code overlap by identifying and filtering out code suggestions that match publicly available code. This feature is essential for maintaining the originality and security of your codebase. It can reduce the risk of incorporating nonsecure or noncompliant code into your projects.
 
-To block suggestions that match public code:
+### Key distinctions
 
-1. On the upper-right corner of any page on GitHub, select your profile photo, and then select **Your enterprises** or **Your organizations**.
+| Scope | Who can manage | What it controls | Notes |
+|-------|----------------|----------------|-------|
+| **Organization (Business/Enterprise plans)** | Admins | Public Code filter for all members; required for IP indemnity | Organization admins can block suggestions matching public code for all members. This is required to activate Intellectual Property Indemnity. |
+| **Personal account (Free, Pro, Pro+) – individually paid** | Individual user | Toggle to Allow or Block suggestions matching public code | Users who purchase their own Copilot license can fully control this setting in their personal account under **Copilot → Features → Privacy**. |
+| **Personal account (Free, Pro, Pro+) – org-provided** | Individual user | Toggle to Allow or Block suggestions matching public code | If your seat is assigned by an organization, the toggle may be **locked** and will reflect the organization’s policy. |
 
-1. Next to the enterprise or organization, select **Settings**.
+### Managing the organizational public code filter
 
-1. On the left sidebar, select **Copilot**.
+For organizations on **Business or Enterprise plans**, admins can control whether Copilot blocks suggestions that match public code. This is important for compliance and to enable IP indemnity.
 
-1. Under **Suggestions**, select **Matching public code** on the dropdown menu, and then select **Block**.
+**Steps for organization admins:**
 
-1. To confirm your new settings, select **Save**.
+1. In the upper-right corner of GitHub, click your **profile picture**, then select **Your enterprises** or **Your organizations**.
+2. Next to the enterprise or organization you want to configure, click **Settings**.
+3. In the left sidebar, click **Copilot** under **Code, planning, and automation**.
+4. Click **Features**, then scroll to the **Privacy** section.
+5. Locate **Suggestions matching public code** and choose the desired option (e.g., **Block** to prevent matching suggestions across the organization).
+6. Click **Save** to apply the changes.
+
+
+### Managing public code suggestions for personal users
+
+If you are paying for your own Copilot license (Free, Pro, or Pro+), you can control suggestions matching public code directly in your account.
+
+**Steps for personal license holders:**
+
+1. In the upper-right corner of GitHub, click your **profile picture**, then select **Settings**.
+2. In the left sidebar, click **Copilot** under **Code, planning, and automation**.
+3. Click **Features**, then scroll to the **Privacy** section.
+4. Locate **Suggestions matching public code** and toggle between **Allow** or **Block** according to your preference.
+5. Your choice will immediately affect the suggestions Copilot provides in your personal environment.
 
 Now let's explore managing content exclusion from an internal lens.

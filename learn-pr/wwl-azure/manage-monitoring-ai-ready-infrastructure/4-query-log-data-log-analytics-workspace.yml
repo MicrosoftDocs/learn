@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-monitoring-ai-ready-infrastructure.query-log-data-log-analytics-workspace
+title: "Query log data in Log Analytics Workspace"
+metadata:
+  title: "Query log data in Log Analytics Workspace"
+  description: "Query log data in Log Analytics Workspace"
+  ms.date: 02/02/2026
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: unit
+durationInMinutes: 11
+content: |
+  [!include[](includes/4-query-log-data-log-analytics-workspace.md)]

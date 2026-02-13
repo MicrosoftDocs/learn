@@ -2,6 +2,8 @@
 
 In this unit, you learn how to create tables with descriptive comments and tags, and use discovery tools to explore your data assets in Unity Catalog.
 
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=4dcfda01-41a5-403a-a5ad-badfd736e74c]
+
 ## Add comments to tables and columns
 
 **Comments** provide human-readable descriptions that help data consumers understand the purpose and content of your data assets. You can add comments to any securable object in Unity Catalog, including catalogs, schemas, tables, views, and columns.
@@ -71,6 +73,8 @@ After adding comments, any user with the `BROWSE` privilege can view them in Cat
 ## Apply tags for organization and discovery
 
 **Tags** are key-value pairs that help you organize and categorize data assets in Unity Catalog. Unlike comments, which provide descriptive text, tags enable structured classification and improve search functionality.
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=7f00114e-2681-48ea-a6dc-f59b73cf6d01]
     
 ### Add tags using SQL
 
@@ -93,13 +97,6 @@ To remove tags, use `UNSET TAGS`:
 ALTER TABLE sales.customers.profiles
 UNSET TAGS ('domain');
 ```
-
-### Understand tag inheritance
-
-When you apply tags at the catalog level, all schemas and objects within that catalog automatically inherit those tags. Similarly, tags applied to a schema are inherited by all objects in that schema. This inheritance simplifies governance by allowing you to set organization-wide classifications at higher levels.
-
-> [!NOTE]
-> Tag inheritance applies only at the catalog and schema levels. Tags on individual table columns aren't inherited.
 
 ### Use governed tags
 

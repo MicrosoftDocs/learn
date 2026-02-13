@@ -4,10 +4,10 @@ title: Design solutions with best practices for capabilities and controls
 metadata:
   title: Design solutions with best practices for capabilities and controls
   description: "SC-100 preparatory content on topic: Design solutions with best practices for capabilities and controls."
-  ms.date: 09/26/2024
+  ms.date: 02/07/2026
   author: ceperezb
   ms.author: ceperezb
   ms.topic: unit
-durationInMinutes: 13
+durationInMinutes: 14
 content: |
   [!include[](includes/2-design-solutions-best-practices-capabilities-controls.md)]

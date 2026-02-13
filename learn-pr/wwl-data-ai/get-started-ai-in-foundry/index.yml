@@ -1,14 +1,14 @@
 ### YamlMime:Module
 uid: learn.wwl.get-started-ai-in-foundry
 metadata:
-  title: Get started in Microsoft Foundry
+  title: (AI-900) Get started with Microsoft Foundry
   description: "This module introduces Microsoft Foundry and its capabilities for building AI solutions. Explore the key features and benefits of using Azure for AI development."
   ms.date: 12/8/2025
   author: sherzyang
   ms.author: sheryang
   ms.topic: module-concept
   ms.service: azure-ai-foundry
-title: Get started in Microsoft Foundry
+title: (AI-900) Get started with Microsoft Foundry
 summary: "In this module you'll learn how Microsoft enables you to build AI with the latest technology, securely, and at scale."
 abstract: Get started with AI in Microsoft Foundry
 prerequisites: Ability to navigate the Azure portal

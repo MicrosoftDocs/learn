@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.wwl.get-started-language-azure
 metadata:
-  title: Get started with text analysis in Microsoft Foundry
+  title: (AI-900) Get started with natural language processing in Microsoft Foundry
   description: "Explore Azure Language's text analysis features, which include sentiment analysis, key phrase extraction, named entity recognition, and language detection."
   ms.date: 08/28/2025
   ms.update-cycle: 180-days
@@ -13,7 +13,7 @@ metadata:
   - N/A
   ms.service: azure-ai-language
   ai-usage: ai-assisted
-title: Get started with text analysis in Microsoft Foundry
+title: (AI-900) Get started with natural language processing in Microsoft Foundry
 summary: Explore Azure Language's text analysis features, which include sentiment analysis, key phrase extraction, named entity recognition, and language detection.
 abstract: Learn how to use Azure Language for text analysis
 prerequisites: Ability to navigate the Azure portal
