@@ -52,13 +52,8 @@ Key phrase extraction can provide some context to this review by extracting the 
 - waiter
 
 In the classic Foundry portal, you can test out Azure Language's key phrase extraction feature in the Language Playground. 
- 
-:::image
-type: content
-source: ../media/playground-key-phrases.png
-alt-text: Screenshot of the Language playground's key phrase extraction capability.
-lightbox: ../media/playground-key-phrases.png
-:::
+
+![Screenshot of the Language playground's key phrase extraction capability.](../media/playground-key-phrases.png) 
 
 #### Entity recognition and linking
 
@@ -91,12 +86,7 @@ You can provide Azure Language with unstructured text and it returns a list of *
 
 In the classic Foundry portal, you can test out Azure Language's named entity recognition feature in the Language Playground. 
 
-:::image
-type: content
-source: ../media/playground-named-entities.png
-alt-text: Screenshot of the Language playground's named entity recognition capability.
-lightbox: ../media/playground-named-entities.png
-:::
+![Screenshot of the Language playground's named entity recognition capability.](../media/playground-named-entities.png)
 
 Azure Language also supports **entity linking** to help disambiguate entities by linking to a specific reference. For recognized entities, the service returns a URL for a relevant *Wikipedia* article.
 
@@ -137,12 +127,7 @@ The service would provide sentence analysis for each of the sentences. Each sent
 
 In classic Foundry portal, you can test out Azure Language's sentiment analysis capability in the Language Playground. 
 
-:::image
-type: content
-source: ../media/playground-sentiment.png
-alt-text: Screenshot of the Language playground's sentiment capability.
-lightbox: ../media/playground-sentiment.png
-:::
+![Screenshot of the Language playground's sentiment capability.](../media/playground-sentiment.png)
 
 #### Summarization 
 
@@ -164,12 +149,7 @@ The individual experienced an exceptional dining experience at the Foundry diner
 
 In classic Foundry portal, you can test out Azure Language's summarization capability in the Language Playground. 
 
-:::image
-type: content
-source: ../media/playground-summarize.png
-alt-text: Screenshot of the Language playground's summarization capability.
-lightbox: ../media/playground-summarize.png
-:::
+![Screenshot of the Language playground's summarization capability.](../media/playground-summarize.png)
 
 Next, let's learn how to get started with the Azure Language software development kit (SDK) to build a lightweight application.
 

@@ -16,6 +16,8 @@ A **MCP server** gives an agent access to tools, data, or actions that the agent
 
 You can access the Azure Language MCP server and other Foundry Tools in the *new* Foundry portal. 
 
+![Screenshot of the Azure Language MCP server description page in the new Foundry portal.](../media/azure-language-mcp-details.png)
+
 :::image
 type: content
 source: ../media/azure-language-mcp-details.png
@@ -26,6 +28,8 @@ lightbox: ../media/azure-language-mcp-details.png
 ## Use the Azure Language MCP Server in Foundry portal 
 
 You can start out in the *new* Foundry portal by deploying a model and saving it in the Foundry playground as an agent. 
+
+![Screenshot of the agent in the Foundry playground.](../media/agent-playground.png)
 
 :::image
 type: content
@@ -39,6 +43,8 @@ lightbox: ../media/agent-playground.png
 
 You can add tools, such as **Azure Language in Foundry Tools**, to your agent in the Foundry playground.
 
+![Screenshot of the tool browser open in the playground and the Azure Language in Foundry Tools selected.](../media/add-tool-to-agent.png)
+
 :::image
 type: content
 source: ../media/add-tool-to-agent.png
@@ -47,6 +53,8 @@ lightbox: ../media/add-tool-to-agent.png
 :::
 
 To connect to the Azure Language MCP server, you need to configure your connection with your *Foundry resource name*. Once you've connected the MCP server to an agent as a tool, you can use prompts to instruct the agent to use the tool to analyze text. The ability to use  Azure Language as a tool in an agent helps you build agentic solutions that make sense of text documents. 
+
+![Screenshot of Azure Language in Foundry Tools used in the Foundry playground.](../media/language-agent-response.png)
 
 :::image
 type: content
