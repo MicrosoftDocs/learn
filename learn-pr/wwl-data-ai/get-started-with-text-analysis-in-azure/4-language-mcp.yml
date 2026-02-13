@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.get-started-with-text-analysis-in-azure.language-mcp
-title: Using the Azure Language MCP
+title: Azure Language MCP
 metadata:
-  title: Using the Azure Language MCP
+  title: Azure Language MCP
   description: "Learn how to use the Azure Language MCP to connect agents to text analysis capabilities."
   ms.date: 02/10/2026
   author: wwlpublish
