@@ -41,3 +41,5 @@ units:
 - learn.wwl.develop-ai-enabled-apps-using-github-copilot-sdk.exercise-integrate-ai-agent-github-copilot-sdk
 - learn.wwl.develop-ai-enabled-apps-using-github-copilot-sdk.knowledge-check
 - learn.wwl.develop-ai-enabled-apps-using-github-copilot-sdk.summary
+badge:
+  uid: learn.develop-ai-enabled-apps-using-github-copilot-sdk.badge
