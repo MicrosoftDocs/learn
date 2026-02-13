@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.evaluate-costs-benefits-ai-powered-business-solution.create-roi-analysis-proposed-ai-solution-business-process
+title: "Create ROI analysis for a proposed AI solution"
+metadata:
+  title: "Create ROI Analysis for a Proposed AI Solution"
+  description: "Learn how to create a structured ROI analysis for an AI solution, balancing benefits against costs to evaluate its impact on a business process."
+  ms.date: 02/13/2026
+  author: pabloMS
+  ms.author: taeldin
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/3-create-roi-analysis-proposed-ai-solution-business-process.md)]
