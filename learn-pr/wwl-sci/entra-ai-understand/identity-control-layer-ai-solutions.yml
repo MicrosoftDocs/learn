@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.entra-ai-understand.identity-control-layer-ai-solutions
+title: Identity as the control layer for AI solutions
+metadata:
+  title: Identity as the control layer for AI solutions
+  description: "Identity as the control layer for AI solutions."
+  ms.date: 2/13/2026
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/identity-control-layer-ai-solutions.md)]
