@@ -35,13 +35,13 @@ First, we might want to extract the keywords and phrases used in some text, whic
 
 For example, you might receive a review such as:
 
-> "*I had a fantastic meal at the Foundry diner in Seattle on Saturday. The mushroom risotto was perfectly prepared, and really tasty. Our waiter, Pete, was friendly and efficient; and gave us a great recommendation for a dessert (strawberry cheesecake). I'd definitely recommend this place for a casual dinner.*"
+> "*I had a fantastic meal at the diner in Seattle on Saturday. The mushroom risotto was perfectly prepared, and really tasty. Our waiter, Pete, was friendly and efficient; and gave us a great recommendation for a dessert (strawberry cheesecake). I'd definitely recommend this place for a casual dinner.*"
 
 Key phrase extraction can provide some context to this review by extracting the following phrases:
 - casual dinner
 - dessert
 - fantastic meal
-- Foundry diner
+- diner
 - great recommendation
 - mushroom risotto
 - Pete
@@ -53,7 +53,7 @@ Key phrase extraction can provide some context to this review by extracting the 
 
 In the classic Foundry portal, you can test out Azure Language's key phrase extraction feature in the Language Playground. 
 
-![Screenshot of the Language playground's key phrase extraction capability.](../media/playground-key-phrases.png) 
+:::image type="content" source="../media/playground-key-phrases.png" alt-text="Screenshot of the Language playground's key phrase extraction capability." lightbox="../media/playground-key-phrases.png":::
 
 #### Entity recognition and linking
 
@@ -80,8 +80,6 @@ You can provide Azure Language with unstructured text and it returns a list of *
 |DateTime|TimeRange|"6pm to 7pm"|
 |DateTime|Duration|"1 minute and 45 seconds"|
 |DateTime|Set|"every Tuesday"|
-|URL||"`https://www.bing.com`"|
-|Email||"`support@microsoft.com`"|
 |US-based Phone Number||"(312) 555-0176"|
 
 In the classic Foundry portal, you can test out Azure Language's named entity recognition feature in the Language Playground. 
@@ -109,7 +107,7 @@ Azure Language returns sentiment scores in three categories: positive, neutral, 
 
 We could analyze the sentiment of our restaurant review: 
 
-> "*I had a fantastic meal at the Foundry diner in Seattle on Saturday. The mushroom risotto was perfectly prepared, and really tasty. Our waiter, Pete, was friendly and efficient; and gave us a great recommendation for a dessert (strawberry cheesecake). I'd definitely recommend this place for a casual dinner.*"
+> "*I had a fantastic meal at the diner in Seattle on Saturday. The mushroom risotto was perfectly prepared, and really tasty. Our waiter, Pete, was friendly and efficient; and gave us a great recommendation for a dessert (strawberry cheesecake). I'd definitely recommend this place for a casual dinner.*"
 
 The sentiment score for the  review might be: 
 
@@ -135,17 +133,17 @@ With **text summarization**, we can generate both *extractive* summaries that in
 
 Given the example text: 
 
-> "*I had a fantastic meal at the Foundry diner in Seattle on Saturday. The mushroom risotto was perfectly prepared, and really tasty. Our waiter, Pete, was friendly and efficient; and gave us a great recommendation for a dessert (strawberry cheesecake). I'd definitely recommend this place for a casual dinner.*" 
+> "*I had a fantastic meal at the diner in Seattle on Saturday. The mushroom risotto was perfectly prepared, and really tasty. Our waiter, Pete, was friendly and efficient; and gave us a great recommendation for a dessert (strawberry cheesecake). I'd definitely recommend this place for a casual dinner.*" 
 
 We could extract an:
 
 **Extractive summary**
-- (Rank score: 100%) I had a fantastic meal at the Foundry diner in Seattle on Saturday.
+- (Rank score: 100%) I had a fantastic meal at the diner in Seattle on Saturday.
 - (Rank score: 52%) The mushroom risotto was perfectly prepared, and really tasty.
 - (Rank score: 63%) I'd definitely recommend this place for a casual dinner.
 
 **Abstractive summary**
-The individual experienced an exceptional dining experience at the Foundry diner in Seattle, highlighting the delectable mushroom risotto as a standout dish. They appreciated the friendly and efficient service provided by the waiter, Pete, who also offered a highly recommended dessert option—strawberry cheesecake. The overall ambiance and food quality were such that the diner was deemed suitable for a casual dinner. The positive review underscores the diner's ability to deliver a satisfying meal, paired with commendable customer service, making it a recommended destination for future dining in the area. The summary encapsulates the main points of enjoyment and recommendation without redundant details from the original document.
+The individual experienced an exceptional dining experience at the diner in Seattle, highlighting the delectable mushroom risotto as a standout dish. They appreciated the friendly and efficient service provided by the waiter, Pete, who also offered a highly recommended dessert option—strawberry cheesecake. The overall ambiance and food quality were such that the diner was deemed suitable for a casual dinner. The positive review underscores the diner's ability to deliver a satisfying meal, paired with commendable customer service, making it a recommended destination for future dining in the area. The summary encapsulates the main points of enjoyment and recommendation without redundant details from the original document.
 
 In classic Foundry portal, you can test out Azure Language's summarization capability in the Language Playground. 
 
