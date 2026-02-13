@@ -1,3 +1,5 @@
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=fb14f62e-fac1-42f5-86ef-96a823f93551]
+
 Unity Catalog uses a privilege model to control access to securable objects such as catalogs, schemas, tables, and views. Grants define *who* (the principal, such as a group or user) can perform *what action* (a privilege like SELECT, MODIFY, or CREATE) on *which object* (such as a table). Privileges can be assigned explicitly at each level of containment or inherited from higher levels like schemas or catalogs. Understanding these patterns is key to designing secure and maintainable permission structures.
 
 On Azure, a Unity Catalog **metastore** is a top-level container for all securable objects and is tightly integrated with Azure Databricks workspaces:
@@ -122,6 +124,8 @@ SHOW GRANTS `finance-team` ON TABLE sales.reporting.monthly_revenue;
 When reviewing privileges, remember that **inherited grants** might not appear in the output for the specific table. If a user has SELECT granted at the schema or catalog level, that privilege applies to the table through inheritance, but SHOW GRANTS on the table itself might not display it. To get a complete picture, check grants at all levels of the hierarchy.
 
 ## Understand Access Control Lists (ACLs)
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=d318328a-1f99-4b2f-8376-93cf315b8797]
 
 Access Control Lists (ACLs) are the backbone of Unity Catalog’s authorization model: they explicitly associate a *principal* with a *privilege* on a *securable object*. To understand how ACLs work, we can break down those three pieces—privileges, securables, principals—and then see how they interact in a typical grant.
 

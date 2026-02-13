@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-resilient-ai-ready-infrastructure.configure-microsoft-foundry-hubs-region
+title: "Configure Microsoft Foundry hubs for multi-region resilience"
+metadata:
+  title: "Configure Microsoft Foundry hubs for multi-region resilience"
+  description: "Configure Microsoft Foundry hubs for multi-region resilience."
+  ms.date: 02/03/2026
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: unit
+durationInMinutes: 12
+content: |
+  [!include[](includes/2-configure-microsoft-foundry-hubs-region.md)]

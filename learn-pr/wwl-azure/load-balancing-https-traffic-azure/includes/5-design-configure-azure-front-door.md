@@ -43,6 +43,3 @@ This diagram shows a user request processed by Azure Front Door.
     -  Paths (for example, /*, /users/*, /file.gif)
 - **Response codes**. Azure Front Door response codes help clients understand the purpose of the redirect. You can set the protocol used for redirection. The most common use case of the redirect feature is to set HTTP to HTTPS redirection.
 - **Health probes**. Front Door periodically sends a synthetic HTTP/HTTPS request to each of your configured backends. Front Door then uses these responses from the probe to determine the "best" backend resources to route your client requests.
-
-> [!TIP]
-> Learn more about Azure Front Door check out the [Introduction to Azure Front Door](/training/modules/intro-to-azure-front-door/) module.

@@ -1,3 +1,5 @@
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=28a735cf-13d1-4aba-955c-2a1ce4846a21]
+
 When you create tables in Azure Databricks, you face a fundamental decision that affects data lifecycle management, governance, and operational flexibility. Understanding the differences between **managed tables** and **external tables** (sometimes called unmanaged tables) helps you choose the right approach for each scenario in your data platform.
 
 In this unit, you learn how to distinguish between managed and external tables, and explore the factors that guide your choice.

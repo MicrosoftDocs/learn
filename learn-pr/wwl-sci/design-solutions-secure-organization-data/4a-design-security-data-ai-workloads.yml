@@ -8,7 +8,7 @@ metadata:
   author: ceperezb
   ms.author: ceperezb
   ms.topic: unit
-  ai-usage: ai-assisted
-durationInMinutes: 8
+  ai-usage: ai-generated
+durationInMinutes: 9
 content: |
   [!include[](includes/4a-design-security-data-ai-workloads.md)]

@@ -14,6 +14,15 @@ Let’s explore each of these areas—and what they mean for your organization.
 
 Microsoft 365 Copilot is more than an AI-powered assistant—it’s the hub for intelligent work. Copilot brings advanced AI capabilities into the apps and experiences people use every day, helping individuals and teams boost productivity, creativity, and decision-making. It’s where users interact with AI and agents seamlessly in the flow of work.
 
+> [!NOTE]
+> **Behind the scenes**: 
+> 
+> Microsoft 365 Copilot works by combining secure access to your work data with intelligence that understands context and priorities. This behind‑the‑scenes foundation helps Copilot surface relevant information, connect related work, and provide more useful responses across Microsoft 365 apps. There are two key components that make this possible:
+> 
+> - **[Microsoft Graph](/graph/overview)** securely connects your Microsoft 365 data—such as emails, files, meetings, chats, and people—across apps and services. Graph enforces permissions and access rules, ensuring Copilot can only use information you are already allowed to see.
+> 
+> - **[Work IQ](https://www.microsoft.com/en-us/microsoft-365/blog/2025/11/18/microsoft-ignite-2025-copilot-and-agents-built-to-power-the-frontier-firm/?msockid=13b554c0ff596ffe0cbe4226fb596127#microsoft-365-copilot-with-work-iq-ai-built-for-work)** is the intelligence layer behind Microsoft 365 Copilot. It builds on Microsoft Graph data to understand context, remember work patterns, and connect related information across your work. Work IQ helps Copilot prioritize what is relevant, understand how work actually gets done, and provide more personalized, timely assistance.
+
 ### Key AI capabilities for productivity
 
 There are several key AI capabilities to help your organization be more productive.

@@ -1,9 +1,19 @@
-You've learned how to:
+As a security architect designing security operations for hybrid and multicloud environments, you now have the knowledge to build a unified security operations strategy using Microsoft's integrated platform. You can design monitoring, logging, detection, and response capabilities that scale across Azure, AWS, GCP, and on-premises infrastructure while optimizing costs and analyst efficiency.
+
+## Key takeaways
+
+- **Unified operations platform**: The Microsoft Defender portal consolidates SIEM, SOAR, and XDR capabilities into a single interface, reducing tool sprawl and enabling correlated incident management across all environments.
+- **Data tiering strategy**: Use Microsoft Sentinel's analytics tier for real-time detection (30-day default retention) and data lake tier for long-term retention (up to 12 years), balancing cost with investigative needs.
+- **Automation boundaries**: Design SOAR automation that starts with high-value, low-risk use cases and includes human oversight for high-impact actions like account disablement or network isolation.
+- **Coverage-driven detection**: Use MITRE ATT&CK matrices (Enterprise, Cloud, Mobile, ICS) to evaluate and improve threat detection coverage systematically, including ATLAS for AI workload protection.
+
+## Learning objectives
+
+You learned how to:
 
 - Design security operations capabilities in hybrid and multicloud environments
 - Design centralized logging and auditing
-- Design Security Information and Event Management (SIEM) solutions
-- Design a solution for detection and response that includes Extended Detection and Response (XDR)
+- Design a solution for detection and response that includes extended detection and response (XDR) and security information and event management (SIEM)
 - Design a solution for security orchestration, automation, and response (SOAR)
 - Design security workflows
 - Design and evaluate threat detection with the MITRE ATT&CK framework

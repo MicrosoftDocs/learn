@@ -29,6 +29,3 @@ The rules that Azure Web Application Firewall uses to detect and block common vu
 - **Session fixation**. An attacker exploits a web app vulnerability that allows the attacker to obtain a valid session ID.
 - **SQL injection protection**. In a web form field, the attacker inserts (or "injects") text specially configured to trick the server into running SQL commands.
 - **Protocol attackers**. An attacker inserts specially configured text into an HTTP/HTTPS request header. 
-
-> [!TIP]
-> Learn more about the Web Application Firewall in the [Introduction to Azure Web Application Firewall](/training/modules/introduction-azure-web-application-firewall/) module.

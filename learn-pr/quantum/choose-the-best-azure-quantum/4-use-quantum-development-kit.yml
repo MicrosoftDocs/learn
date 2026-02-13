@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.quantum.choose-the-best-azure-quantum.use-qdk
-title: Exercise - Use the Quantum Development Kit to run a quantum program
+title: Exercise - Use the Microsoft Quantum Development Kit to run a quantum program
 metadata:
-  title: Exercise - Use the Quantum Development Kit to run a quantum program
-  description: Use the Quantum Development Kit to run a quantum program
+  title: Exercise - Use the Microsoft Quantum Development Kit to run a quantum program
+  description: Use the Microsoft Quantum Development Kit to run a quantum program
   ms.date: 09/15/2025
   author: azure-quantum-content
   ms.author: quantumdocwriters

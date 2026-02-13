@@ -1,0 +1,74 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.understand-fabric-iq-fundamentals.knowledge-check
+title: Module assessment
+metadata:
+  hidden_question_numbers: ["A0348922_22","A0348922_34","A0348922_51","A0348922_55","A0348922_59","A0348922_67","A0348922_83","A0348922_87"]
+  title: Module assessment
+  module_assessment: true
+  description: "Check your knowledge of Microsoft Fabric IQ fundamentals"
+  ms.date: 02/02/2026
+  author: theresa-i
+  ms.author: theresai
+  ms.topic: unit
+  ai-usage: ai-generated
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What are the three core concepts that make up an ontology in Fabric IQ?"
+    choices:
+    - content: "Tables, columns, and foreign keys"
+      isCorrect: false
+      explanation: "Incorrect. These are relational database concepts. Ontology uses things (entity types), facts (properties), and connections (relationships)."
+    - content: "Things (entity types), facts (properties), and connections (relationships)"
+      isCorrect: true
+      explanation: "Correct. An ontology is made up of the things in your environment (entity types), their facts (properties), and the ways they connect (relationships)."
+    - content: "Lakehouses, warehouses, and semantic models"
+      isCorrect: false
+      explanation: "Incorrect. These are data storage and modeling options in Fabric. Ontology uses entity types, properties, and relationships."
+  - content: "What is the primary role of a Fabric data agent?"
+    choices:
+    - content: "To move data from lakehouses to warehouses"
+      isCorrect: false
+      explanation: "Incorrect. Data agents don't move data. They enable natural language queries across data sources."
+    - content: "To visualize relationships between entities in a graph"
+      isCorrect: false
+      explanation: "Incorrect. This is the role of Graph in Microsoft Fabric, not the data agent."
+    - content: "To process natural language questions and generate queries grounded in ontology definitions"
+      isCorrect: true
+      explanation: "Correct. Data agents use Azure OpenAI to process natural language questions, identify relevant data sources, and generate appropriate queries (SQL, DAX, or KQL) based on ontology vocabulary."
+  - content: "How does data binding in ontology modeling differ from traditional ETL processes?"
+    choices:
+    - content: "Data binding copies data into a centralized warehouse, while ETL leaves data in place"
+      isCorrect: false
+      explanation: "Incorrect. This is reversed. ETL copies data into warehouses, while data binding creates a semantic layer without copying data."
+    - content: "Data binding creates a semantic layer that references data in place, while ETL copies and transforms data into a warehouse"
+      isCorrect: true
+      explanation: "Correct. Data binding connects ontology definitions to existing data sources in OneLake without copying data, unlike ETL which extracts, transforms, and loads data into a centralized warehouse."
+    - content: "Data binding and ETL are the same process with different names"
+      isCorrect: false
+      explanation: "Incorrect. Data binding creates a semantic layer without moving data, while ETL physically copies and transforms data into a warehouse."
+  - content: "Which Fabric IQ component uses GQL (Graph Query Language) for querying?"
+    choices:
+    - content: "Ontology items"
+      isCorrect: false
+      explanation: "Incorrect. While ontology items integrate with Graph, they use NL2Ontology queries and federated query execution."
+    - content: "Data agents"
+      isCorrect: false
+      explanation: "Incorrect. Data agents generate SQL, DAX, or KQL queries depending on the data source."
+    - content: "Graph in Microsoft Fabric"
+      isCorrect: true
+      explanation: "Correct. Graph in Microsoft Fabric uses GQL (Graph Query Language), an international standard for graph queries, to traverse relationships and analyze connected data."
+  - content: "What makes entity types different from traditional database tables?"
+    choices:
+    - content: "Entity types are tied to specific databases and schemas"
+      isCorrect: false
+      explanation: "Incorrect. This describes database tables. Entity types exist independently of any particular data source."
+    - content: "Entity types are reusable logical models that exist independently of any storage system"
+      isCorrect: true
+      explanation: "Correct. Entity types are reusable logical models elevated above any single table, allowing the same concept to be bound to multiple data sources while maintaining consistent business meaning."
+    - content: "Entity types can only contain static data, not time-series data"
+      isCorrect: false
+      explanation: "Incorrect. Entity types support both static data bindings and time-series data bindings from eventhouse streams."

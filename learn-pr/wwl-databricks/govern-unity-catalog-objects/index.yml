@@ -3,7 +3,7 @@ uid: learn.wwl.govern-unity-catalog-objects
 metadata:
   title: Govern Unity Catalog Objects
   description: Learn how to govern data and AI assets in Azure Databricks using Unity Catalog, including access control, data lineage, audit logging, and secure sharing.
-  ms.date: 01/15/2026
+  ms.date: 02/05/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: module
@@ -15,7 +15,6 @@ abstract: |
   By the end of this module, you'll be able to:
   - Create and preserve table and column definitions for better data discovery
   - Configure attribute-based access control (ABAC) using tags and policies
-  - Implement row filtering and column masking for fine-grained security
   - Apply data retention policies to manage data lifecycle
   - Set up and manage data lineage to track data flow
   - Configure audit logging for compliance and security monitoring
@@ -37,7 +36,6 @@ units:
   - learn.wwl.govern-unity-catalog-objects.introduction
   - learn.wwl.govern-unity-catalog-objects.preserve-table-column-definitions
   - learn.wwl.govern-unity-catalog-objects.configure-abac-tags-policies
-  - learn.wwl.govern-unity-catalog-objects.implement-row-filtering-column-masking
   - learn.wwl.govern-unity-catalog-objects.apply-data-retention-policies
   - learn.wwl.govern-unity-catalog-objects.manage-data-lineage-tracking
   - learn.wwl.govern-unity-catalog-objects.configure-audit-logging

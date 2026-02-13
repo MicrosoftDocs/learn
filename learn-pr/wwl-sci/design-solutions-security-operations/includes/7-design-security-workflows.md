@@ -1,74 +1,104 @@
-This unit will discuss solutions for:
+Security workflows define how your organization responds to threats, hunts for adversaries, and manages incidents through their lifecycle. Designing effective workflows requires balancing automation with human expertise, establishing clear responsibilities, and integrating tools across your security operations platform.
 
-1. Incident management and response
-1. Threat intelligence
-1. Threat hunting
+## Incident response workflow design
 
-## Incident management and response
+Incident response workflows define how alerts progress from detection through resolution. Effective design considers the full incident lifecycle and aligns with your organization's risk tolerance and operational maturity.
 
-The Microsoft Defender portal brings together a unified set of security services to reduce your exposure to security threats, improve your organizational security posture, detect security threats, and investigate and respond to breaches. These services collect and produce signals that are displayed in the portal. The two main kinds of signals are:
+### Workflow design principles
 
-- Alerts: Signals that result from various threat detection activities. 
+- **Tiered response model**: Design escalation paths between SOC tiers (L1 triage, L2 investigation, L3 advanced analysis) with clear handoff criteria
+- **Time-based SLAs**: Define response time targets by incident severity that align with business impact
+- **Automation boundaries**: Identify which response actions can be automated versus those requiring human judgment
+- **Documentation requirements**: Specify what evidence and notes analysts must capture at each workflow stage
+- **Post-incident review**: Include structured lessons-learned processes that feed back into detection and response improvements
 
-- Incidents: Containers that include collections of related alerts and tell the full story of an attack.
+### Designing the incident lifecycle
 
-The correlation engines and algorithms in the Microsoft Defender portal automatically aggregate and correlate related alerts together to form incidents that represent these larger attack stories.
+| Phase | Workflow design considerations |
+|-------|-------------------------------|
+| **Detection** | Define which alert sources create incidents automatically versus requiring manual review |
+| **Triage** | Design initial assessment criteria—severity validation, false positive identification, scope determination |
+| **Investigation** | Establish standard investigation procedures, evidence collection requirements, and tool usage guidelines. Use the investigation graph to visualize entity relationships across the incident. |
+| **Containment** | Define containment actions by incident type and approval requirements for high-impact actions |
+| **Remediation** | Document remediation playbooks for common incident types with rollback procedures |
+| **Recovery** | Establish validation steps to confirm threat elimination before returning to normal operations |
+| **Post-incident** | Design review processes that capture metrics, lessons learned, and detection improvements |
 
-The Microsoft Defender portal includes tools and methods to automate or otherwise assist in the triage, investigation, and resolution of incidents. These tools are presented in the following table:
+### Incident management considerations
 
-| Tool/Method | Description |
-| ----------- | ----------- |
-| [Manage](/defender-xdr/manage-incidents) and [investigate](/defender-xdr/investigate-incidents) incidents | Incident management tasks happen throughout all stages of the incident lifecycle and help to optimize the time spent in your incident workflow and more quickly contain and address threats. For example, during the triage phase, tasks include assigning an owner, severity, and adding tags. Make sure that you prioritize your incidents according to severity and then work through them to investigate. The Microsoft Defender portal presents correlated alerts, assets, investigations, and evidence from across all your assets into an incident to give you a comprehensive look into the entire breadth of an attack, including the incident graph showing the attack's scope and how it spread. Use advanced hunting to search for threats, and get ahead of emerging threats with threat analytics. |
-| [Split incidents into tasks](/defender-xdr/split-incidents-into-tasks) | Use tasks in the Microsoft Defender portal to investigate and resolve incidents collaboratively across your operations teams. Managing incidents with tasks helps to improve efficiency in incident response and ensure accountability for investigation outcomes. |
-| [Automatically investigate and resolve alerts](/defender-xdr/m365d-autoir) | If enabled to do so, Microsoft Defender XDR can automatically investigate and resolve alerts from Microsoft 365 and Entra ID sources through automation and artificial intelligence. |
-| [Configure automatic attack disruption actions](/defender-xdr/automatic-attack-disruption) | Use high-confidence signals collected from Microsoft Defender XDR and Microsoft Sentinel to automatically disrupt active attacks at machine speed, containing the threat and limiting the impact. |
-| [Configure Microsoft Sentinel automation rules](/azure/sentinel/automate-incident-handling-with-automation-rules) | Use automation rules to automate triage, assignment, and management of incidents, regardless of their source. Help your team's efficiency even more by configuring your rules to apply tags to incidents based on their content, suppress noisy (false positive) incidents, and close resolved incidents that meet the appropriate criteria, specifying a reason and adding comments. |
-| [Proactively hunt with advanced hunting](/defender-xdr/advanced-hunting-overview) | Use Kusto Query Language (KQL) to proactively inspect events in your network by querying the logs collected in the Defender portal. Advanced hunting supports a guided mode for users looking for the convenience of a query builder. |
-| [Harness AI with Microsoft Copilot for Security](/defender-xdr/security-copilot-in-microsoft-365-defender) | Add AI to support analysts with complex and time-consuming daily workflows. For example, Microsoft Copilot for Security can help with end-to-end incident investigation and response by providing clearly described attack stories, step-by-step actionable remediation guidance and incident activity summarized reports, natural language KQL hunting, and expert code analysis&mdash;optimizing on SOC efficiency across data from all sources. <br><br>This capability is in addition to the other AI-based functionality that Microsoft Sentinel brings to the unified platform, in the areas of user and entity behavior analytics, anomaly detection, multi-stage threat detection, and more. |
+| Factor | Design recommendation |
+|--------|----------------------|
+| **Ownership model** | Define whether incidents are owned by individuals or teams, and how handoffs occur across shifts |
+| **Collaboration** | Design how analysts collaborate during complex incidents—use incident tasks to divide work |
+| **External communication** | Establish templates and approval workflows for communicating with stakeholders during incidents |
+| **Metrics tracking** | Define KPIs (mean time to detect, respond, resolve) and how they're captured in workflows |
 
-## Threat intelligence
+## Threat intelligence workflow design
 
-Cyber threat intelligence (CTI) is information describing existing or potential threats to systems and users. This intelligence takes many forms, from written reports detailing a particular threat actor's motivations, infrastructure, and techniques, to specific observations of IP addresses, domains, file hashes, and other artifacts associated with known cyber threats. CTI is used by organizations to provide essential context to unusual activity, so security personnel can quickly take action to protect their people, information, and assets. CTI can be sourced from many places, such as open-source data feeds, threat intelligence-sharing communities, commercial intelligence feeds, and local intelligence gathered in the course of security investigations within an organization.
+Threat intelligence workflows define how your organization consumes, processes, and operationalizes threat data. Effective design ensures intelligence reaches the right teams in actionable formats.
 
-For security information and event management (SIEM) solutions like Microsoft Sentinel, the most common forms of CTI are threat indicators, also known as Indicators of Compromise (IoC) or Indicators of Attack (IoA). Threat indicators are data that associate observed artifacts such as URLs, file hashes, or IP addresses with known threat activity such as phishing, botnets, or malware. This form of threat intelligence is often called tactical threat intelligence because it can be applied to security products and automation in large scale to detect potential threats to an organization and protect against them. In Microsoft Sentinel, you can use threat indicators to help detect malicious activity observed in your environment and provide context to security investigators to help inform response decisions
+### Intelligence lifecycle workflow
 
-Integrate threat intelligence (TI) into Microsoft Sentinel through the following activities:
+| Stage | Workflow design considerations |
+|-------|-------------------------------|
+| **Collection** | Define sources (commercial feeds, open-source, industry ISACs, government sharing) and ingestion frequency |
+| **Processing** | Design normalization and deduplication processes to ensure consistent indicator formats |
+| **Analysis** | Establish procedures for validating indicator relevance to your environment and prioritizing high-confidence indicators |
+| **Dissemination** | Define how intelligence reaches detection systems (automatic rule updates) versus analyst briefings |
+| **Feedback** | Create processes for analysts to report indicator accuracy and detection effectiveness |
 
-- Import threat intelligence into Microsoft Sentinel by enabling data connectors to various TI platforms and feeds.
+### Integration with security operations
 
-- View imported threat intelligence using queries or advanced search.
+| Integration point | Design recommendation |
+|-------------------|----------------------|
+| **Detection rules** | Automate indicator-based detection rule creation with expiration dates matching indicator confidence decay |
+| **Alert enrichment** | Design workflows that automatically enrich alerts with related threat intelligence context |
+| **Hunting hypotheses** | Establish processes for threat intelligence to inform proactive hunting priorities |
+| **Incident context** | Define how threat actor profiles and campaign information are surfaced during investigation |
 
-- Detect threats and generate security alerts and incidents using the built-in Analytics rule templates based on your imported threat intelligence.
+## Threat hunting workflow design
 
-- Visualize key information about your imported threat intelligence in Microsoft Sentinel with the Threat Intelligence workbook.
+Threat hunting workflows define how your organization proactively searches for threats that evade automated detection. Effective hunting programs balance structured methodologies with analyst creativity.
 
-Microsoft enriches all imported threat intelligence indicators with GeoLocation and WhoIs data, which is displayed together with other indicator details.
+### Hunting program design
 
-Threat Intelligence also provides useful context within other Microsoft Sentinel experiences such as Hunting and Notebooks.
+| Component | Design considerations |
+|-----------|----------------------|
+| **Hypothesis development** | Establish processes for generating hunting hypotheses from threat intelligence, incident patterns, and detection gaps |
+| **Hunting cadence** | Define regular hunting schedules (weekly, monthly) balanced with reactive hunting triggered by threat intelligence |
+| **Data access** | Ensure hunters have access to relevant data sources including long-term retention for historical analysis |
+| **Documentation standards** | Require structured documentation of hypotheses, queries, findings, and recommendations |
+| **Knowledge sharing** | Design processes for hunters to share techniques and findings across the team |
 
-## Hunting in the Microsoft Defender portal
+### Hunting workflow stages
 
-The Defender portal provides effective hunting tools for every stage of threat hunting with unified security operations services.
+| Stage | Workflow activities |
+|-------|--------------------|
+| **Planning** | Review threat intelligence, identify detection gaps using MITRE ATT&CK coverage, prioritize hunting targets |
+| **Execution** | Run queries, analyze results using UEBA entity pages for deeper context, create bookmarks to preserve relevant findings |
+| **Operationalization** | Convert successful hunts into detection rules, create incidents from validated threats, update threat models |
+| **Measurement** | Track hunting metrics—hypotheses tested, threats discovered, detections created |
 
-| Hunting tool | Description |
-|---|---|
-|[Advanced hunting](/defender-xdr/advanced-hunting-microsoft-defender) | View and query data sources available from Defender portal services and share queries with your team. Use all your existing Microsoft Sentinel workspace content, including queries and functions. |
-|[Microsoft Sentinel hunting](/azure/sentinel/hunting) | Hunt for security threats across data sources. Use specialized search and query tools like **hunts**, **bookmarks, and **livestream**. |
-|[Go hunt](/defender-xdr/advanced-hunting-go-hunt) | Quickly pivot an investigation to entities found within an incident. |
-|[Hunts](/azure/sentinel/hunts) | An end-to-end, proactive threat hunting process with collaboration features. |
-|[Bookmarks](/azure/sentinel/bookmarks) | Preserve queries and their results, adding notes and contextual observations.|
-|[Livestream](/azure/sentinel/livestream) | Start an interactive hunting session and use any Log Analytics query. |
-|[Hunting with summary rules](/azure/sentinel/summary-rules#quickly-find-a-malicious-ip-address-in-your-network-traffic) | Use summary rules to save costs hunting for threats in verbose logs.|
-|[MITRE ATT&CK map](/azure/sentinel/mitre-coverage#use-the-mitre-attck-framework-in-analytics-rules-and-incidents) | When creating a new hunting query, select specific tactics and techniques to apply.|
-|[Restore historical data](/azure/sentinel/restore) | Restore data from archived logs to use in high performing queries. |
-|[Search large data sets](/azure/sentinel/search-jobs?tabs=defender-portal) | Search for specific events in logs up to seven years ago using KQL. |
-|[Infrastructure chaining](/defender/threat-intelligence/infrastructure-chaining) | Hunt for new connections between threat actors, group similar attack activity and substantiate assumptions.|
-|[Threat explorer](/defender-office-365/threat-explorer-threat-hunting) | Hunt for specialized threats related to email. |
+Consider using the Microsoft Sentinel **Hunts** capability to manage end-to-end hunting workflows. Hunts lets you define hypotheses, run queries, bookmark results, and track the overall impact of your hunting program in a unified experience.
 
-The following table describes how you can make the most of the Defender portal's hunting tools across all stages of threat hunting:
+## AI-assisted workflow acceleration
 
-| Hunting stage | Hunting tools |
-| --- | --- |
-| **Proactive** - Find the weak areas in your environment before threat actors do. Detect suspicious activity extra early. | - Regularly conduct end-to-end **hunts** to proactively seek out undetected threats and malicious behaviors, validate hypotheses, and act on findings by creating new detections, incidents, or threat intelligence.<br><br> - Use the **MITRE ATT&CK map** to identify detection gaps, and then run predefined hunting queries for highlighted techniques.<br><br> - Insert new threat intelligence into proven queries to tune detections and confirm if a compromise is in process.<br><br> - Take proactive steps to build and test queries against data from new or updated sources.<br><br> - Use **advanced hunting** to find early-stage attacks or threats that don't have alerts. |
-| **Reactive** - Use hunting tools during an active investigation. | - Use **livestream** to run specific queries at consistent intervals to actively monitor events.<br><br> - Quickly pivot on incidents with the **Go hunt** button to search broadly for suspicious entities found during an investigation.<br><br> - Use **Security Copilot in advanced hunting** to generate queries at machine speed and scale. |
-| **Post incident** - Improve coverage and insights to prevent similar incidents from recurring. | - Turn successful hunting queries into new **analytics and detection rules**, or refine existing ones.<br><br> - **Restore historical data** and **search large datasets** for specialized hunting as part of full incident investigations. |
+Microsoft Security Copilot integrates across security workflows to accelerate analyst activities:
+
+| Workflow stage | Security Copilot capabilities |
+|----------------|------------------------------|
+| **Incident triage** | Summarize incidents in natural language, identify attack scope, provide guided response actions with recommended next steps |
+| **Investigation** | Generate investigation queries, analyze scripts and files for malicious behavior, explain complex attack chains, correlate related alerts |
+| **Threat hunting** | Use the Threat Hunting Agent for conversational hunting and multistep investigations, or the query assistant to create KQL queries from natural language descriptions |
+| **Response** | Provide step-by-step remediation guidance, generate response playbook recommendations |
+| **Reporting** | Create executive summaries, generate post-incident reports for stakeholders |
+
+When designing workflows, identify where Security Copilot can reduce time-to-resolution. Consider embedding Copilot prompts into standard operating procedures so analysts consistently use AI assistance at key decision points.
+
+## Architect design recommendations
+
+| Workflow | Architect considerations |
+|----------|------------------------|
+| **Incident response** | Design tiered response models with clear escalation criteria, define automation boundaries based on action impact, establish metrics that measure workflow effectiveness |
+| **Threat intelligence** | Design intelligence workflows that connect collection through operationalization, ensure feedback loops improve indicator quality over time |
+| **Threat hunting** | Balance structured hunting programs with flexibility for analyst-driven exploration, design processes that convert hunting insights into improved detection coverage |

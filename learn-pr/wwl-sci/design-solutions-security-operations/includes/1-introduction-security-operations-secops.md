@@ -1,48 +1,22 @@
-This module covers the topic of designing security operations solutions in hybrid, multicloud, and edge environments, focusing on Microsoft's solutions for cloud security, extended detection and response (XDR), and Security Information and Event Management (SIEM).
 
-Imagine you're a cybersecurity architect in a large organization that operates in a hybrid, multicloud, and edge environments. You're facing challenges in managing operations consistently across different cloud providers, which is leading to increased costs and strain on your team. You also need to enhance your organization's security posture by implementing advanced cybersecurity solutions and automating incident response processes. This module guides you through the process of implementing unified operations and enhancing security using Microsoft's solutions.
-
-## Learning objectives
-
-In this module, you learn how to:
-
-- Design security operations capabilities in hybrid and multicloud environments
-- Design centralized logging and auditing
-- Design Security Information and Event Management (SIEM) solutions
-- Design a solution for detection and response that includes Extended Detection and Response (XDR)
-- Design a solution for security orchestration, automation, and response (SOAR)
-- Design security workflows
-- Design and evaluate threat detection with the MITRE ATT&CK framework
-
-The content in the module helps you prepare for the certification exam SC-100: Microsoft Cybersecurity Architect.
-
-## Prerequisites
-
-- Advanced experience and knowledge in identity and access, platform protection, security operations, securing data, and securing applications.
-- Experience with hybrid and cloud implementations.
-
-## Introduction to security operations (SecOps)
-
-The main objective of a cloud security operations (SecOps) function is to detect, respond to, and recover from active attacks on enterprise assets.
-
-As SecOps matures, security operations should:
+The primary objective of a cloud security operations (SecOps) function is to detect, respond to, and recover from active attacks on enterprise assets. As SecOps matures, security operations should:
 
 - Reactively respond to attacks detected by tools
 - Proactively hunt for attacks that slipped past reactive detections
 
-## Security Operations strategy overview 
+[The Microsoft Cybersecurity Reference Architecture (MCRA)](https://aka.ms/MCRA) provides guidance for designing end-to-end security using Zero Trust principles and includes detailed diagrams for security operations (SecOps/SOC), helping organizations plan unified operations across hybrid and multicloud environments.
 
-One of the significant changes in perspectives that are a hallmark of a Zero Trust security framework is moving away from trust-by-default toward trust-by-exception. However, this still requires a reliable way to establish trust once trust is needed. Since you no longer assume that requests are trustworthy, establishing a means to attest to the trustworthiness of the request is critical to proving its point-in-time trustworthiness. This attestation requires gaining visibility into the activities on and around the request. 
+## Security operations strategy overview 
 
-All these investments increase your visibility, which gives you better data for making trust decisions. However, adopting a Zero Trust approach in other areas like identities, endpoints, infrastructure, and networks, increases the number of incidents Security Operation Center (SOC) analysts need to mitigate.
+A Zero Trust security framework moves away from trust-by-default toward trust-by-exception. This approach requires reliable mechanisms to establish trust when needed. Since you no longer assume requests are trustworthy, establishing means to attest to the trustworthiness of each request is critical. This attestation requires gaining visibility into the activities on and around the request. 
 
-![Diagram showing the integrated capabilities of a zero trust approach.](../media/provide-integrated-capabilities.png)
+Adopting a Zero Trust approach across identities, endpoints, infrastructure, and networks increases the number of signals and alerts that Security Operation Center (SOC) analysts must process. An integrated capability is essential to manage this influx of data, defend against threats, and validate trust in transactions.
 
-With each of these individual areas generating its relevant alerts, an integrated capability is needed to manage the resulting influx of data to better defend against threats and validate trust in a transaction.
+Modern security operations platforms address this challenge by integrating SIEM, SOAR, XDR, posture management, and AI-assisted capabilities into unified experiences.
+
+:::image type="content" source="../media/provide-integrated-capabilities.png" alt-text="Diagram showing the integrated capabilities of a Zero Trust approach." lightbox="../media/provide-integrated-capabilities.png":::
 
 ## Security operations functions
-
-:::image type="content" source="../media/security-operations-functions.png" alt-text="Diagram that shows security Operations functions (Tiers)." lightbox="../media/security-operations-functions.png":::
 
 Security operations teams often focus on three key outcomes:
 
@@ -59,33 +33,35 @@ To deliver against these outcomes, security operations teams should be structure
 - **Investigation (tier 2):** Focused on incidents that require further investigation, often requiring correlation of data points from multiple sources. This investigation tier looks to provide repeatable solutions to issues escalated to them. It then enables tier 1 to resolve later recurrences of that issue type. Tier 2 also responds to alerts against business critical systems, to reflect the severity of the risk and the need to act quickly.
 - **Hunt (tier 3):** Focused primarily on proactive hunting for highly sophisticated attack processes and developing guidance to the wider teams for maturing security controls as a result. The tier 3 team also acts as an escalation point for major incidents in to support forensic analysis and response.
 
-<!-- 
-[](/azure/cloud-adoption-framework/organize/cloud-security-operations-center#modernization)
--->
+:::image type="content" source="../media/security-operations-functions.png" alt-text="Diagram that shows security Operations functions (Tiers)." lightbox="../media/security-operations-functions.png":::
+
 ## Modernization
 
 Detecting and responding to threats is currently undergoing significant modernization at all levels.
 
--   **Elevation to business risk management:** SOC is growing into a key component of managing business risk for the organization
--   **Metrics and goals:** Tracking SOC effectiveness is evolving from "time to detect" to these key indicators:
-    -   **Responsiveness** via mean time to acknowledge (MTTA).
-    -   **Remediation speed** via mean time to remediate (MTTR).
--   **Technology evolution:** SOC technology is evolving from exclusive use of static analysis of logs in a SIEM to add the use of specialized tooling and sophisticated analysis techniques. This provides deep insights into assets that provide high quality alerts and investigation experience that complement the breadth view of the SIEM. Both types of tooling are increasingly using AI and machine learning, behavior analytics, and integrated threat intelligence to help spot and prioritize anomalous actions that could be a malicious attacker.
--   **Threat hunting:** SOCs are adding hypothesis driven threat hunting to proactively identify advanced attackers and shift noisy alerts out of frontline analyst queues.
--   **Incident management:** Discipline is becoming formalized to coordinate nontechnical elements of incidents with legal, communications, and other teams. **Integration of internal context:** To help prioritize SOC activities such as the relative risk scores of user accounts and devices, sensitivity of data and applications, and key security isolation boundaries to closely defend.
-<!--
-[](/azure/cloud-adoption-framework/organize/cloud-security-operations-center#team-composition-and-key-relationships)
--->
+- **Elevation to business risk management:** SOC is growing into a key component of managing business risk for the organization
+- **Metrics and goals:** Tracking SOC effectiveness is evolving from "time to detect" to these key indicators:
+  - **Responsiveness** via mean time to acknowledge (MTTA).
+  - **Remediation speed** via mean time to remediate (MTTR).
+- **Technology evolution:** SOC technology is evolving from exclusive use of static analysis of logs in a SIEM to add the use of specialized tooling and sophisticated analysis techniques. This provides deep insights into assets that provide high quality alerts and investigation experience that complement the breadth view of the SIEM. Both types of tooling are increasingly using AI and machine learning, behavior analytics, and integrated threat intelligence to help spot and prioritize anomalous actions that could be a malicious attacker.
+- **AI-assisted security operations:** Generative AI is transforming how SOC analysts work by accelerating investigation and response. AI copilots help analysts quickly summarize incidents, correlate alerts across data sources, generate investigation queries using natural language, and recommend response actions. This assistance reduces the expertise barrier for junior analysts, helps experienced analysts work faster, and enables teams to handle higher alert volumes without proportional staffing increases.
+- **Threat hunting:** SOCs are adding hypothesis driven threat hunting to proactively identify advanced attackers and shift noisy alerts out of frontline analyst queues.
+- **Incident management:** Discipline is becoming formalized to coordinate nontechnical elements of incidents with legal, communications, and other teams.
+- **Integration of internal context:** SOCs are incorporating business context to prioritize activities, including relative risk scores of user accounts and devices, sensitivity of data and applications, and key security isolation boundaries to defend.
 
 ## Team composition and key relationships
 
-The cloud security operations center is commonly made up of the following types of roles.
+As security operations modernize, the SOC can no longer operate in isolation. Effective threat detection and response require collaboration across the organization. Security incidents often have legal, regulatory, and business implications that extend beyond technical remediation.
 
--   IT operations (close regular contact)
--   Threat intelligence
--   Security architecture
--   Insider risk program
--   Legal and human resources
--   Communications teams
--   Risk organization (if present)
--   Industry specific associations, communities, and vendors (before incident occurs)
+A well-functioning security operations center maintains close relationships with:
+
+- **IT operations:** For coordinated response actions and infrastructure visibility
+- **Threat intelligence:** To inform detection priorities and understand adversary tactics
+- **Security architecture:** To translate incident learnings into improved security controls
+- **Insider risk program:** For investigations involving potential internal threats
+- **Legal and human resources:** To address compliance requirements and employee-related incidents
+- **Communications teams:** For coordinated messaging during significant security events
+- **Risk organization:** To align security priorities with enterprise risk management
+- **Industry associations and vendors:** To share threat intelligence and learn from peer experiences
+
+Building these relationships before an incident occurs ensures faster, more coordinated response when attacks happen.

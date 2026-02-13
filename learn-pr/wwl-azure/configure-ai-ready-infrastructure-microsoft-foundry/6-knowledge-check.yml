@@ -1,0 +1,38 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-ai-ready-infrastructure-microsoft-foundry.knowledge-check
+title: "Module assessment"
+metadata:
+  title: "Knowledge check"
+  description: "Test your understanding of Microsoft Foundry infrastructure configuration by applying concepts to realistic scenarios. These questions assess your ability to make architectural decisions about hub design, connection strategies, and RBAC assignments rather than memorizing portal navigation steps. Consider the organizational context, compliance requirements, and cost implications when selecting your answers."
+  ms.date: 02/02/2026
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: unit
+  ms.custom: references_regions
+  module_assessment: false
+durationInMinutes: 7
+content: "Choose the best response for each of the following questions."
+quiz:
+  questions:
+  - content: "Your organization runs 12 AI projects across three departments: Sales (4 projects), Marketing (5 projects), and Support (3 projects). The CFO requires monthly cost reports showing AI spending per department for chargeback purposes. Projects within each department share common Azure AI Search indexes but need isolated Azure OpenAI deployments due to different prompt engineering approaches. What connection strategy optimizes costs while enabling accurate department-level cost tracking?"
+    choices:
+    - content: "Create department-specific hubs (Sales Hub, Marketing Hub, Support Hub), establish hub-level Azure AI Search connections for shared indexes, and use project-level Azure OpenAI connections tagged with department cost centers"
+      isCorrect: true
+      explanation: "Department-specific hubs with mixed connection levels provide the optimal balance. Option A correctly establishes hub boundaries aligned with cost allocation requirements (departments) while using hub-level connections for shared services (search) and project-level connections for isolated services (OpenAI). Each department's hub aggregates costs for shared infrastructure, while project-level tags enable fine-grained tracking of dedicated resources. Microsoft Cost Management automatically groups spending by hub (department-level) and by project tags (application-level)."
+    - content: "Create environment-based hubs (Production Hub, Development Hub), establish all connections at hub level including both Azure AI Search and Azure OpenAI, then use Azure tags on projects to track department spending"
+      isCorrect: false
+      explanation: "Option B fails because environment-based hubs don't align with the CFO's requirement for department-level reporting—all production projects across departments would aggregate into one cost bucket."
+    - content: "Create one enterprise hub with all connections at hub level, rely on Microsoft Cost Management's resource-level spending reports to manually allocate costs per department each month"
+      isCorrect: false
+      explanation: "Option C requires manual cost allocation effort every month and risks errors when teams deploy resources outside the standard pattern."
+  - content: "A junior team member attempts to connect to a hub's shared Azure AI Search service from a new project and receives error 'AuthorizationFailed: The client does not have authorization to perform action 'Microsoft.Search/searchServices/read''. The hub's managed identity has Search Index Data Reader role on the search service, and the team member holds Cognitive Services Contributor role on the hub. What is the most likely cause and appropriate solution?"
+    choices:
+    - content: "The team member needs the Search Service Contributor role assigned directly on the Azure AI Search service; add this role assignment to resolve access issues"
+      isCorrect: false
+      explanation: "The first option is incorrect because individual users don't need direct RBAC roles on the search service—they access it through the hub's inherited connection using the hub's managed identity."
+    - content: "The project was created before the hub-level search connection was established, so it didn't inherit the connection; recreate the project to reinitialize connection inheritance"
+      isCorrect: true
+      explanation: "Connection inheritance only occurs at project creation time—projects don't automatically discover connections added to the hub after they already exist. Option B correctly identifies that the project needs to be recreated to inherit the new hub-level connection. When you create a project in a hub, Microsoft Foundry copies the hub's connection metadata into the project's configuration. Connections added later don't automatically propagate to existing projects."
+    - content: "The hub's managed identity role assignment hasn't propagated yet; wait 10-15 minutes for Azure RBAC replication, then retry the search operation"
+      isCorrect: false
+      explanation: "The third option misdiagnoses the problem: the error message indicates missing authorization at the search service level, not RBAC propagation delays which would show different error patterns."

@@ -45,26 +45,15 @@ These reviews help ensure that enforcement decisions are based on evidence, not 
 
 ## Using alerts and activity insights to validate policy behavior
 
-Simulation results appear through alerts and activity insights. These views show where and how a policy would have applied.
+Simulation results surface through alerts and activity insights, which together show where and how a policy would have applied. Alerts highlight individual events that meet policy conditions, while activity insights help reveal broader patterns across users, locations, and actions.
 
-Use this data to:
-
-- Identify false positives
-- Understand patterns of risky behavior
-- See where enforcement might interrupt legitimate workflows
-
-Using this data to refine scope and actions improves accuracy before enforcement begins.
+Reviewing both views helps clarify whether detections align with real risk or reflect normal business activity. This context is essential for understanding where enforcement might interrupt legitimate workflows and where policy logic needs refinement before actions are applied.
 
 ## Common rollout mistakes and how to avoid them
 
-Several issues appear consistently in rushed deployments:
+Problems often arise when policies are enforced before there's enough evidence to understand their effect. Broad scoping, early blocking, or treating simulation as optional can lead to false positives, user frustration, and reduced trust in DLP controls.
 
-- Enforcing policies without first observing real behavior
-- Applying broad scope without piloting
-- Blocking actions before users understand expectations
-- Treating simulation as optional rather than foundational
-
-Avoiding these mistakes leads to smoother adoption and more effective protection.
+A more deliberate approach uses simulation to observe real behavior first, adjust scope and actions based on that evidence, and introduce enforcement only when confidence is high. This reduces disruption while keeping protection aligned with actual risk.
 
 ## A recommended rollout approach
 

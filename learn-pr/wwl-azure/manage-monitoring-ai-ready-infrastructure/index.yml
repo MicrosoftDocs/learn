@@ -1,0 +1,42 @@
+### YamlMime:Module
+uid: learn.wwl.manage-monitoring-ai-ready-infrastructure
+metadata:
+  title: "Manage monitoring for AI-Ready Infrastructure"
+  description: "This module covers Azure Monitor fundamentals, including metrics collection, dashboards, alert and processing rules, and KQL-based log queries. Together, these capabilities enable faster root-cause analysis and improve operational reliability."
+  ms.date: 02/02/2026
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: module
+  ms.service: azure
+title: "Manage monitoring for AI-Ready Infrastructure"
+summary: This module covers Azure Monitor fundamentals, including metrics collection, dashboards, alert and processing rules, and KQL-based log queries. Together, these capabilities enable faster root-cause analysis and improve operational reliability.
+abstract: |
+  By the end of this module, you're able to:
+  - Explain how Azure Monitor and Log Analytics Workspace support infrastructure management
+  - Configure metrics collection and visualization for Azure resources
+  - Implement alert rules and processing rules to respond to infrastructure events.
+  - Query log data to diagnose infrastructure issues
+prerequisites: |
+  - Basic Azure Knowledge: Familiarity with Azure services, resource groups, and subscription management.
+  - Networking and Storage Fundamentals: Understanding of virtual networks, storage accounts, and security principles.
+  - AI and Compute Concepts: Awareness of AI workload requirements and experience with virtual machines or containerized environments.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- administrator
+products:
+- azure
+subjects:
+- artificial-intelligence
+- infrastructure
+units:
+- learn.wwl.manage-monitoring-ai-ready-infrastructure.introduction
+- learn.wwl.manage-monitoring-ai-ready-infrastructure.understand-azure-monitor-metrics-visualization
+- learn.wwl.manage-monitoring-ai-ready-infrastructure.configure-alerts-alert-processing-rules
+- learn.wwl.manage-monitoring-ai-ready-infrastructure.query-log-data-log-analytics-workspace
+- learn.wwl.manage-monitoring-ai-ready-infrastructure.exercise-configure-monitoring-azure-infrastructure
+- learn.wwl.manage-monitoring-ai-ready-infrastructure.knowledge-check
+- learn.wwl.manage-monitoring-ai-ready-infrastructure.summary
+badge:
+  uid: learn.wwl.manage-monitoring-ai-ready-infrastructure.badge

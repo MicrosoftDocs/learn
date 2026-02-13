@@ -3,7 +3,7 @@ uid: learn.wwl.design-solutions-identity-access-management
 metadata:
   title: Design solutions for identity and access management
   description: "Learn how to design identity and access management solutions for cloud, hybrid, and multicloud environments, including external identities, Conditional Access, and secrets management."
-  ms.date: 01/30/2026
+  ms.date: 02/07/2026
   author: ceperezb
   ms.author: ceperezb
   ms.topic: module
@@ -14,7 +14,8 @@ summary: |
   Design identity and access management solutions that protect organizational resources while enabling productivity. Learn how to design access strategies for different deployment models, enable secure external collaboration, implement modern authentication, and protect identity infrastructure.
 abstract: |
   By the end of this module, you're able to:
-  - Design access strategies for cloud, hybrid, and multicloud environments
+  - Design access strategies for SaaS, PaaS, IaaS, hybrid, and multicloud resources using identity, networking, and application controls
+  - Design a solution for Microsoft Entra ID, including hybrid and multicloud environments
   - Design a solution for external identities, including B2B collaboration and customer identity
   - Design modern authentication and authorization strategies
   - Validate Conditional Access alignment with Zero Trust
@@ -44,6 +45,7 @@ subjects:
 units:
 - learn.wwl.design-solutions-identity-access-management.introduction
 - learn.wwl.design-solutions-identity-access-management.design-cloud-hybrid-multi-cloud-access-strategies
+- learn.wwl.design-solutions-identity-access-management.design-solution-entra-hybrid-multicloud
 - learn.wwl.design-solutions-identity-access-management.design-solution-external-identities
 - learn.wwl.design-solutions-identity-access-management.design-modern-authentication-authorization-strategies
 - learn.wwl.design-solutions-identity-access-management.align-conditional-access-zero-trust

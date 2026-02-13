@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.quantum.qsharp-create-first-quantum-development-kit
 metadata:
-  title: Create your first Q# program with the Azure Quantum Development Kit
+  title: Create your first Q# program with the Microsoft Quantum Development Kit
   description: Get started with Q# programming by building a quantum random number generator.
   ms.date: 09/16/2025
   author: azure-quantum-content
@@ -10,12 +10,12 @@ metadata:
   ms.topic: module
   ms.service: azure-quantum
   ms.subservice: qdk
-title: Create your first Q# program with the Quantum Development Kit
+title: Create your first Q# program with the Microsoft Quantum Development Kit
 summary: Get started with Q# programming by building a quantum random number generator.
 abstract: |
   By the end of this module, you can:
   - Allocate qubits and apply quantum operations to them in Q#.
-  - Create a Q# program with the Quantum Development Kit.
+  - Create a Q# program with the Microsoft Quantum Development Kit.
   - Explain how Q# programs are structured.
 
   During this module, you'll:
@@ -28,8 +28,8 @@ abstract: |
 prerequisites: |
   - A basic understanding of quantum computing concepts.
   - Basic knowledge of regular programming concepts.
-  - The latest version of [Visual Studio Code](https://code.visualstudio.com/download) or open [VS Code on the Web](https://vscode.dev/).
-  - The latest version of the [Azure Quantum Development Kit](https://marketplace.visualstudio.com/items?itemName=quantum.qsharp-lang-vscode) extension. 
+  - The latest version of [Visual Studio Code](https://code.visualstudio.com/download) or open [VS Code for the Web](https://vscode.dev/).
+  - The latest version of the [Microsoft Quantum Development Kit](https://marketplace.visualstudio.com/items?itemName=quantum.qsharp-lang-vscode) extension. 
 iconUrl: /training/achievements/quantum/qsharp-create-first-quantum-development-kit.svg
 levels:
 - beginner

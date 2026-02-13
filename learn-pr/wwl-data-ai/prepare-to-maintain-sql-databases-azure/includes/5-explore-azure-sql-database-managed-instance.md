@@ -63,8 +63,6 @@ In general, migrating to SQL Managed Instance is often simple given the large se
 
 - [**Log Replay Service**](/azure/azure-sql/managed-instance/log-replay-service-overview?azure-portal=true). It's an online migration option, and used when you need more control of your database migration project.
 
-- [**Azure SQL Migration extension for Azure Data Studio**](/sql/azure-data-studio/extensions/azure-sql-migration-extension?azure-portal=true). It's a tool that helps you prepare for migrating your SQL Server databases to Azure. It uses the latest version of Azure Data Migration Service (DMS) to assess your readiness for migration, recommend the best Azure resources for your needs, and execute the migration. It’s ideal for small to medium-sized databases and supports online migration to SQL Managed Instance.
-
 - [**Managed Instance link.**](/azure/azure-sql/managed-instance/managed-instance-link-feature-overview?azure-portal=true). The Managed Instance link, using distributed availability groups, securely extends your data estate by replicating data almost instantly (online) between any hosted SQL Server and Azure SQL Managed Instance, and vice versa.
 
 - [**Native backup and restore**](/azure/azure-sql/managed-instance/restore-sample-database-quickstart?azure-portal=true). Backup and restore are a simple migration method favored by many SQL Server professionals. It's the easiest migration option for customers who can provide full database backups to Azure Storage.
