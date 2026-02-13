@@ -6,7 +6,7 @@ This unit equips solution architects with the knowledge and methods required to 
 
 ## 1. Understanding AI Analysis and Tuning
 
-AIbased agents operate in dynamic business environments. Their performance depends on model quality, data condition, workflow orchestration, and user behavior patterns. Effective tuning requires visibility into all layers of the agent's operation.
+AI based agents operate in dynamic business environments. Their performance depends on model quality, data condition, workflow orchestration, and user behavior patterns. Effective tuning requires visibility into all layers of the agent's operation.
 
 ### Key Analysis Domains
 
@@ -42,7 +42,7 @@ User Behavior → Telemetry & Logs → Issue Categorization → Root Cause Analy
 
 **Governance Interference** - DLP blocking, sensitivity labels, restricted actions.
 
-## 3. Using AIBased Tools to Analyze Agent Behavior
+## 3. Using AI Based Tools to Analyze Agent Behavior
 
 Solution architects rely on structured telemetry to uncover insights.
 
@@ -160,5 +160,6 @@ Monitor → Analyze → Tune → Validate → Release → Monitor
 [https://learn.microsoft.com/en-us/microsoft-copilot-studio/admin-logging-copilot-studio](/microsoft-copilot-studio/admin-logging-copilot-studio)
 
 [https://learn.microsoft.com/en-us/microsoft-copilot-studio/analytics-improve-agent-health](/microsoft-copilot-studio/analytics-improve-agent-health)
+
 
 [https://learn.microsoft.com/en-us/microsoft-copilot-studio/analytics-overview](/microsoft-copilot-studio/analytics-overview)
