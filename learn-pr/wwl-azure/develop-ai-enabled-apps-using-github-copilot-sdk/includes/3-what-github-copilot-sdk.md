@@ -4,7 +4,7 @@ The GitHub Copilot SDK is a multi-platform toolkit (currently in Technical Previ
 
 Building a full-featured AI agent from the ground up is complex. You need to handle conversation state management across turns, decide when to call which external API, ensure the AI's responses stay within boundaries, manage multiple AI models for different tasks, and implement safety measures. Building agentic workflows from scratch means you've essentially built a mini platform before you even get to your business logic.
 
-The Copilot SDK removes that complexity by providing a pre-built, production-tested agent engine. The SDK handles authentication, model management, chat sessions, and streaming. You focus on what gets built on top of those building blocks—your domain-specific tools and business logic.
+The Copilot SDK removes that complexity by providing a prebuilt, production-tested agent engine. The SDK handles authentication, model management, chat sessions, and streaming. You focus on what gets built on top of those building blocks—your domain-specific tools and business logic.
 
 ## Architecture overview
 
@@ -35,7 +35,7 @@ The SDK provides several built-in capabilities that simplify building AI agents.
 
 ### Production-grade agent loop
 
-The SDK provides the same proven execution loop that powers GitHub Copilot CLI. This loop manages multi-turn conversations, calls tools, and iterates until the task is complete. You don't need to code the planning and orchestration logic.
+The SDK provides the same proven execution loop that powers GitHub Copilot CLI. This execution loop manages multi-turn conversations, calls tools, and iterates until the task is complete. You don't need to code the planning and orchestration logic.
 
 ### Tool orchestration
 
@@ -111,7 +111,7 @@ The SDK uses an event-driven communication model. When you send a message to a s
 - **SessionErrorEvent**: An error occurred during processing.
 - **ToolExecutionStartEvent** and **ToolExecutionCompleteEvent**: A tool was invoked.
 
-You subscribe to these events to capture the agent's responses and handle errors. For non-streaming scenarios, use `AssistantMessageEvent` to collect the full response. For streaming scenarios (like showing a typing indicator in a chat UI), use `AssistantMessageDeltaEvent` to render tokens as they arrive.
+You subscribe to these events to capture the agent's responses and handle errors. For nonstreaming scenarios, use `AssistantMessageEvent` to collect the full response. For streaming scenarios (like showing a typing indicator in a chat UI), use `AssistantMessageDeltaEvent` to render tokens as they arrive.
 
 ### Session hooks
 

@@ -2,13 +2,13 @@ The implementation patterns from the previous unit apply to every agent you buil
 
 ## Customer-facing agents
 
-Agents that interact directly with end users—such as customer support or sales assistants—require additional attention to conversation quality, personalization, and privacy.
+Agents that interact directly with end users—such as customer support or sales assistants—require extra attention to conversation quality, personalization, and privacy.
 
 ### Conversation quality
 
 The system prompt is your primary tool for controlling how the agent communicates. Define the desired tone, style, and response length:
 
-- **Tone and style**: Include guidelines like "Respond in a friendly and professional manner" or "Use simple language and avoid technical jargon." For a support agent, an empathetic tone works well. For a sales assistant, a more informative tone may be appropriate.
+- **Tone and style**: Include guidelines like "Respond in a friendly and professional manner" or "Use simple language and avoid technical jargon." For a support agent, an empathetic tone works well. For a sales assistant, a more informative tone might be appropriate.
 - **Clarifying questions**: Instruct the agent to ask for clarification when a request is ambiguous rather than guessing. For example: "If the user's request is unclear, ask a polite clarifying question before taking action."
 - **Response length**: Guide the agent to keep responses concise: "Keep responses under three sentences unless the user asks for more detail."
 
@@ -19,15 +19,15 @@ These guidelines can be refined iteratively. Test conversation flows with the ag
 Customer-facing agents often access personal data like order history and account details. Balance personalization with privacy protection:
 
 - **User context injection**: When a session starts, inject relevant user information through the system prompt or initial context. For example, include the user's name, account tier, and recent order history so the agent can provide personalized service.
-- **Privacy instructions**: Add explicit rules to the system prompt: "Only discuss the account data of the logged-in user. Do not reveal internal reference codes or sensitive system information."
+- **Privacy instructions**: Add explicit rules to the system prompt: "Only discuss the account data of the logged-in user. Don't reveal internal reference codes or sensitive system information."
 - **Data minimization in tools**: If a tool retrieves sensitive information (like a full address), filter the response in the tool handler to return only what the agent needs (like the shipping city).
 
 ### Knowledge integration
 
-Support and sales agents often need access to product information, FAQs, or policy documents that go beyond the AI model's training data. The **Retrieval-Augmented Generation (RAG)** pattern addresses this by giving the agent a search tool:
+Support and sales agents often need access to product information, FAQs, or policy documents that go beyond the AI model's training data. The **Retrieval-Augmented Generation (RAG)** pattern addresses this requirement by giving the agent a search tool:
 
 - Define a tool like `search_knowledge_base(query)` that queries your documentation or FAQ system.
-- Instruct the agent through the system prompt to use this tool when answering product or policy questions.
+- Instruct the agent (through the system prompt) to use this tool when answering product or policy questions.
 - Keep the knowledge base current to avoid outdated responses.
 
 This approach grounds the agent's answers in your actual documentation rather than relying on the model's training data, which reduces inaccurate responses.
@@ -58,7 +58,7 @@ Unlike interactive agents, back-office agents are often started by events or sch
 
 - **Scheduled tasks**: A cron job or scheduled service creates a Copilot SDK session, provides context (like "perform the daily invoice reconciliation"), and lets the agent execute.
 - **Event-driven**: A monitoring alert or webhook triggers session creation and sends the event details as input. Each event typically gets its own session to prevent context mixing.
-- **Stateless execution**: Process each task or event in an independent session. This avoids carry-over confusion between unrelated operations.
+- **Stateless execution**: Process each task or event in an independent session. This approach avoids carry-over confusion between unrelated operations.
 
 ### Enterprise system integration
 
@@ -66,7 +66,7 @@ Back-office agents interact heavily with APIs and databases. Build robustness in
 
 - **Retries and timeouts**: Implement retry logic with exponential backoff in tool handlers that call external systems.
 - **Transaction safety**: If the agent performs multiple related writes, consider using a single tool that handles the full transaction atomically, rather than separate tools for each step.
-- **Least-privilege access**: Use service accounts with minimal permissions for the agent's API calls. This limits the impact of unexpected behavior.
+- **Least-privilege access**: Use service accounts with minimal permissions for the agent's API calls. This limits the effect of unexpected behavior.
 - **Audit logging**: Log every action the agent takes, including which tool was called, what parameters were passed, and what result was returned. Include an identifier that marks the action as agent-initiated.
 
 ### Human oversight

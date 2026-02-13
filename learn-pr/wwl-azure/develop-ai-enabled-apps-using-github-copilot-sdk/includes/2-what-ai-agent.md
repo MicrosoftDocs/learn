@@ -1,14 +1,14 @@
-An AI agent is a goal-driven AI entity that can reason, take actions, and adapt autonomously in pursuit of an objective. Unlike a simple chatbot that only responds to user queries with pre-scripted answers, an AI agent can make decisions, use tools or APIs, and maintain memory of context to achieve a goal without step-by-step human guidance. In essence, chatbots respond to individual queries; AI agents pursue goals through multi-step reasoning and action.
+An AI agent is a goal-driven AI entity that can reason, take actions, and adapt autonomously in pursuit of an objective. Unlike a simple chatbot that only responds to user queries with prescripted answers, an AI agent can make decisions, use tools or APIs, and maintain memory of context to achieve a goal without step-by-step human guidance. In essence, chatbots respond to individual queries; AI agents pursue goals through multi-step reasoning and action.
 
 ## How AI agents differ from chatbots
 
-A traditional chatbot might answer "What's my account balance?" with information from a database. An AI agent, on the other hand, could not only fetch your balance but also proactively alert you if it detects unusual spending, or even execute tasks like transferring funds or scheduling a meeting with your financial advisor. The agent reasons about your goal (managing your finances) rather than just reacting to a single question.
+A traditional chatbot might answer "What's my account balance?" with information from a database. An AI agent, on the other hand, could fetch your balance and proactively alert you if it detects unusual spending. The agent could even execute tasks like transferring funds or scheduling a meeting with your financial advisor. Agents are able to comprehend your goal (managing your finances) rather than just reacting to a single question.
 
 The key distinction is that chatbots follow predetermined conversational paths, while agents dynamically plan and execute multi-step workflows to achieve an outcome.
 
 ## Key capabilities of AI agents
 
-Modern AI agents are powered by advanced AI models (often large language models, or LLMs) and are defined by several core abilities that distinguish them from basic automation:
+Modern AI agents are powered by advanced AI models, often large language models (LLMs), and provide several core abilities that distinguish them from basic automation:
 
 - **Reasoning and planning**: Agents use AI models to interpret requests, break them into steps, and decide what actions to take. Rather than following a fixed script, they formulate plans based on the current situation.
 
@@ -18,7 +18,7 @@ Modern AI agents are powered by advanced AI models (often large language models,
 
 - **Iterative execution**: Agents operate in a loop of reasoning and acting. They reason about what to do next, take an action (like calling a tool), observe the result, and then decide whether to take another action or provide a final response. This loop continues until the agent's goal is accomplished or it reaches a stopping condition.
 
-These capabilities let an AI agent operate with a degree of independence. The agent uses its AI reasoning to decide *what* needs to be done, it acts by calling tools or issuing commands to do it, and it iterates by checking outcomes and refining its plan as needed.
+These capabilities let an AI agent operate with a degree of independence. Agents use AI reasoning to decide *what* needs to be done. With a plan in place, agents call tools or issue commands to complete the defined tasks. Once the tasks are complete, agents check their outcomes, refine their plan as needed, and iterate until they achieve the desired result. This cycle of reasoning, acting, and observing is what enables agents to handle complex, multi-step goals that go beyond simple question-answering.
 
 ## How AI agents compare to automation scripts
 
@@ -36,14 +36,14 @@ AI agents are most effective in scenarios where tasks:
 - Involve multiple steps or decisions.
 - Benefit from automation with minimal human oversight.
 
-If a task is straightforward and single-step (like "show latest sales figures"), a simple query or bot may suffice. But if it's complex (like "find all customers who overpaid and initiate refunds" or "monitor my servers and fix issues"), an agent is more suitable because it can handle the decision process and execution.
+If a task is straightforward and single-step (like "show latest sales figures"), a simple query or bot might suffice. But if it's complex (like "find all customers who overpaid and initiate refunds" or "monitor my servers and fix issues"), an agent is more suitable because it can handle the decision process and execution.
 
 The following table compares the capabilities of chatbots, automation scripts, and AI agents:
 
 | Capability | Chatbot | Automation script | AI agent |
 |---|---|---|---|
 | **Input handling** | Responds to specific queries | Follows predefined triggers | Interprets open-ended requests |
-| **Decision making** | Pre-scripted paths | Hard-coded rules | AI-driven reasoning |
+| **Decision making** | Prescripted paths | Hard-coded rules | AI-driven reasoning |
 | **Tool use** | Limited or none | Fixed integrations | Dynamic tool selection |
 | **Multi-step tasks** | Limited | Sequential only | Adaptive, iterative |
 | **Error handling** | Falls back to default | Stops or retries | Reasons about alternatives |

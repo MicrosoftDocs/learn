@@ -1,8 +1,8 @@
-This unit covers the core implementation patterns for building an AI agent using the GitHub Copilot SDK. These patterns apply to any agent scenario and form the foundation for the lab exercise that follows. The code examples use C# and .NET, which is the platform used in the exercise.
+This unit covers the core implementation patterns for building an AI agent using the GitHub Copilot SDK. These patterns apply to any agent scenario. The code examples use C# and .NET, which is the platform used in the module exercise.
 
 ## Set up the Copilot SDK client
 
-The first step is creating a `CopilotClient` instance that manages the connection to the Copilot CLI server. Typically, you register this as a singleton service in your application.
+The first step is creating a `CopilotClient` instance that manages the connection to the Copilot CLI server. Typically, you register the client as a singleton service in your application.
 
 ### Install required packages
 
@@ -33,7 +33,7 @@ After creating the client, start it:
 await client.StartAsync();
 ```
 
-This establishes the connection to the CLI server and prepares the client for session creation.
+This code establishes the connection to the CLI server and prepares the client for session creation.
 
 ## Define agent tools
 
@@ -93,8 +93,8 @@ var tools = new List<AIFunction>
 Each `AIFunctionFactory.Create` call takes three arguments:
 
 1. **A lambda function** that wraps your service method, with `[Description]` attributes on each parameter.
-2. **A tool name** that the AI model uses to reference the tool.
-3. **A description** that helps the model understand when to call the tool.
+1. **A tool name** that the AI model uses to reference the tool.
+1. **A description** that helps the model understand when to call the tool.
 
 The `[Description]` attributes on parameters are important—they tell the AI model what each parameter represents, which helps the model provide accurate values when calling the tool.
 
@@ -181,8 +181,8 @@ session.On(evt =>
 
 Each event type serves a specific purpose:
 
-- **AssistantMessageEvent**: Contains a portion of the agent's response text. You accumulate these to build the full response.
-- **SessionIdleEvent**: Signals that the agent finished processing, including all tool calls. This is when you know the response is complete.
+- **AssistantMessageEvent**: Contains a portion of the agent's response text. You accumulate these message pieces to build the full response.
+- **SessionIdleEvent**: Signals that the agent finished processing, including all tool calls. This event indicates that the response is complete.
 - **SessionErrorEvent**: Indicates an error occurred during processing. The `Data.Message` property contains the error description.
 
 ### Send a message and await the response
@@ -236,13 +236,13 @@ Use the `SessionErrorEvent` to catch errors during agent processing. You can als
 
 ### Timeouts
 
-Always set a timeout when awaiting responses. The example above uses `WaitAsync(TimeSpan.FromSeconds(30))` to prevent indefinite waiting if the agent encounters an unexpected issue.
+Always set a timeout when awaiting responses. The previous example uses `WaitAsync(TimeSpan.FromSeconds(30))` to prevent indefinite waiting if the agent encounters an unexpected issue.
 
 ## System prompt design
 
 The system prompt is one of the most important configuration decisions. It defines who the agent is, what it can do, and how it should behave. A well-structured system prompt typically includes:
 
-- **Role definition**: What the agent represents (for example, "You are a customer support agent for ContosoShop").
+- **Role definition**: What the agent represents (for example, "You're a customer support agent for ContosoShop").
 - **Capabilities**: What tools are available and what they do.
 - **Workflow guidance**: How the agent should approach tasks (for example, "Always verify order details before processing a return").
 - **Rules and constraints**: Boundaries the agent must follow (for example, "Only discuss order-related topics" or "Escalate refund requests over $100").

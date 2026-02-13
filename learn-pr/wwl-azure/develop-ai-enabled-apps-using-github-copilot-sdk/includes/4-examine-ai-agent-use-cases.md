@@ -6,9 +6,9 @@ An online retail company deploys an AI agent to handle customer support and orde
 
 ### How it works
 
-The agent connects to the company's backend APIs through registered tools. It has tools for looking up orders, creating return requests, issuing refunds, and sending customer communications. When a customer says, "My order arrived damaged, what can I do?", the agent verifies the order details through an API call, then responds with both empathy and action: "I've initiated a return for you and scheduled a courier pickup for tomorrow. You'll be refunded to your original payment method."
+The agent connects to the company's backend APIs through registered tools. It has tools for looking up orders, creating return requests, issuing refunds, and sending customer communications. When a customer says, "My order arrived damaged, what can I do?", the agent verifies the order details through an API call, then responds with both empathy and action: "I've initiated a return for you and scheduled a courier pickup for tomorrow. You'll receive a refund that's applied to your original payment method."
 
-If the agent encounters a request outside its capability (like a complex policy dispute), it escalates to a human support representative and provides all the context it gathered during the conversation.
+If the agent encounters a request outside its capability (like a complex policy dispute), it escalates to a human support representative and provides the context it gathered during the conversation.
 
 ### Why it matters
 
@@ -27,7 +27,7 @@ This approach automates the time-consuming parts of sales—research, data entry
 
 ## Finance and accounting automation agent
 
-An enterprise finance department uses an AI agent to handle routine financial operations: invoice processing, expense reconciliation, and transaction matching. Each day, the agent processes incoming invoices by extracting relevant data (vendor name, amounts, due dates), then cross-references them against purchase orders in the ERP system.
+An enterprise finance department uses an AI agent to handle routine financial operations: invoice processing, expense reconciliation, and transaction matching. Each day, the agent processes incoming invoices by extracting relevant data (vendor name, amounts, due dates), then cross-references them against purchase orders in the enterprise resource planning (ERP) system.
 
 If the invoice matches the purchase order within acceptable variance thresholds, the agent approves it for payment. When the agent detects discrepancies—like an invoice amount that exceeds the purchase order by more than the allowed tolerance—it flags the issue and routes it to a human accountant with a detailed explanation.
 
@@ -45,7 +45,7 @@ This type of agent helps reduce both stockouts (lost sales) and excess inventory
 
 A technology company uses an AI agent as a first responder to system alerts and incidents. When a monitoring alert fires (such as high CPU usage on a database server), the agent investigates by running diagnostic scripts, analyzing logs, and attempting known remediation steps.
 
-For example, if the agent detects a long-running query causing high CPU, it can terminate the query and verify that performance returns to normal. If it resolves the issue, it logs the actions taken and closes the incident. If the issue persists after exhausting its troubleshooting steps, the agent escalates to a human engineer with all the diagnostic context it gathered.
+For example, if the agent detects a long-running query causing high CPU, it can terminate the query and verify that performance returns to normal. If it resolves the issue, it logs the actions taken and closes the incident. If the issue persists after exhausting its troubleshooting steps, the agent escalates to a human engineer with the diagnostic context it gathered.
 
 This agent is particularly valuable for its speed—it can begin investigating within seconds of an alert, rather than the minutes it takes for a human to notice and respond. Initial deployments typically restrict the agent to safe, reversible actions (like restarting services or clearing temp files) and require human approval for riskier operations.
 
