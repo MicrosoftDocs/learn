@@ -8,8 +8,6 @@ metadata:
   author: sherzyang
   ms.author: sheryang
   ms.topic: unit
-  ms.custom:
-  - N/A
 durationInMinutes: 20
 content: |
   [!include[](includes/5-exercise.md)]
