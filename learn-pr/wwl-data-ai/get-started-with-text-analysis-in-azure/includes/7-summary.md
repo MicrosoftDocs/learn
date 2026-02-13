@@ -12,7 +12,7 @@ Throughout the module, you explored how to integrate Azure Language directly int
 
 Use the links below to learn more: 
 
-- [View the Azure Text Analytics client library for Python](python/api/overview/azure/ai-textanalytics-readme?view=azure-python)
+- [View the Azure Text Analytics client library](/python/api/overview/azure/ai-textanalytics-readme)
 - [Read about about Azure Language in Foundry Tools](/azure/ai-services/language-service/overview)
 
 ::: zone-end

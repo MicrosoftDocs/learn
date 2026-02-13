@@ -6,7 +6,7 @@
 
 ::: zone pivot="text"
 
-A Foundry resource and project is sufficient for using Azure Language in Foundry portal, but you will need an additional *Language resource* to use the Azure Language SDK. You can create a Language resource in the Azure portal, or programmatically in a [command line interface (CLI)](/cli/azure/get-started-with-azure-cli?view=azure-cli-latest).  
+A Foundry resource and project is sufficient for using Azure Language in Foundry portal, but you will need an additional *Language resource* to use the Azure Language SDK. You can create a Language resource in the Azure portal, or programmatically in a command line interface (CLI).  
 
 ![Screenshot of the Azure portal with the marketplace open to the Language resource.](../media/azure-portal-create-resource.png)
 

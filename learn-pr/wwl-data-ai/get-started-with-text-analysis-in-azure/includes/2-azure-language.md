@@ -53,7 +53,7 @@ Key phrase extraction can provide some context to this review by extracting the 
 
 In the classic Foundry portal, you can test out Azure Language's key phrase extraction feature in the Language Playground. 
  
-![Screenshot of the Language playground's named entity recognition capability.](../media/playground-key-phrases.png)
+![Screenshot of the Language playground's key phrase extraction capability.](../media/playground-key-phrases.png)
 
 #### Entity recognition and linking
 
