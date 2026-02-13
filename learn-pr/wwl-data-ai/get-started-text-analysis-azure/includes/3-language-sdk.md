@@ -78,7 +78,7 @@ client = TextAnalyticsClient(endpoint=endpoint, credential=AzureKeyCredential(ke
 #### Key phrase extraction 
 
 ```python
-text = "I had a fantastic meal at the Foundry diner in Seattle on Saturday. The mushroom risotto was perfectly prepared, and really tasty. Our waiter, Pete, was friendly and efficient; and gave us a great recommendation for a dessert (strawberry cheesecake). I'd definitely recommend this place for a casual dinner."
+text = "I had a fantastic meal at the diner in Seattle on Saturday. The mushroom risotto was perfectly prepared, and really tasty. Our waiter, Pete, was friendly and efficient; and gave us a great recommendation for a dessert (strawberry cheesecake). I'd definitely recommend this place for a casual dinner."
 
 result = client.extract_key_phrases([text])[0]
 
@@ -90,7 +90,7 @@ for phrase in result.key_phrases:
 #### Entity extraction 
 
 ```python
-text = "I had a fantastic meal at the Foundry diner in Seattle on Saturday. The mushroom risotto was perfectly prepared, and really tasty. Our waiter, Pete, was friendly and efficient; and gave us a great recommendation for a dessert (strawberry cheesecake). I'd definitely recommend this place for a casual dinner."
+text = "I had a fantastic meal at the diner in Seattle on Saturday. The mushroom risotto was perfectly prepared, and really tasty. Our waiter, Pete, was friendly and efficient; and gave us a great recommendation for a dessert (strawberry cheesecake). I'd definitely recommend this place for a casual dinner."
 
 result = client.recognize_entities([text])[0]
 
@@ -101,7 +101,7 @@ for entity in result.entities:
 #### Sentiment analysis
 
 ```python
-text = "I had a fantastic meal at the Foundry diner in Seattle on Saturday. The mushroom risotto was perfectly prepared, and really tasty. Our waiter, Pete, was friendly and efficient; and gave us a great recommendation for a dessert (strawberry cheesecake). I'd definitely recommend this place for a casual dinner."
+text = "I had a fantastic meal at the diner in Seattle on Saturday. The mushroom risotto was perfectly prepared, and really tasty. Our waiter, Pete, was friendly and efficient; and gave us a great recommendation for a dessert (strawberry cheesecake). I'd definitely recommend this place for a casual dinner."
 
 result = client.analyze_sentiment([text])[0]
 
@@ -117,7 +117,7 @@ In the Python SDK, **extractive summarization** is done as a long‑running acti
 from azure.ai.textanalytics import ExtractiveSummaryAction
 
 text = (
-    "I had a fantastic meal at the Foundry diner in Seattle on Saturday. The mushroom risotto was perfectly prepared, and really tasty. Our waiter, Pete, was friendly and efficient; and gave us a great recommendation for a dessert (strawberry cheesecake). I'd definitely recommend this place for a casual dinner."
+    "I had a fantastic meal at the diner in Seattle on Saturday. The mushroom risotto was perfectly prepared, and really tasty. Our waiter, Pete, was friendly and efficient; and gave us a great recommendation for a dessert (strawberry cheesecake). I'd definitely recommend this place for a casual dinner."
 )
 
 poller = client.begin_analyze_actions(
