@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.develop-ai-agents-azure-vs-code.exercise
+title: Exercise - Build and deploy an AI agent
+metadata:
+  title: Exercise - Build and Deploy an AI Agent
+  description: Hands-on exercise to build, configure, test, and deploy an AI agent.
+  ms.date: 02/12/2026
+  author: ivorb
+  ms.author: berryivor
+  ms.topic: unit
+  ai-usage: ai-generated
+durationInMinutes: 30
+content: |
+  [!include[](includes/9-exercise.md)]

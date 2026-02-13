@@ -1,5 +1,5 @@
 ---
-description: Creates a learn unit based on the provided requirementsm by orchestrating multiple subagents.
+description: Creates a learn unit based on the provided requirements by orchestrating multiple subagents.
 model: Claude Sonnet 4.5 (copilot)
 tools:
   ['edit', 'search', 'runTasks', 'microsoft_docs_mcp/*', 'fetch', 'github.vscode-pull-request-github/issue_fetch', 'todos', 'shell', 'synthesia/crt-video', 'synthesia/get-video']
