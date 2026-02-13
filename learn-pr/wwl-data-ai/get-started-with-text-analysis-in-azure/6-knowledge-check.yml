@@ -25,7 +25,7 @@ quiz:
     - content: "Entity detection"
       isCorrect: false
       explanation: "Incorrect. Entity detection identifies specific types of entity in the document, not the main talking points."
-  - content: "You use Azure Language to perform sentiment analysis on a sentence. The confidence scores .04 positive, .36 neutral, and .60 negative are returned. What do these confidence scores indicate about the sentence sentiment?"
+  - content: "You use Azure Language to perform sentiment analysis on a sentence. The confidence scores 0.04 positive, 0.36 neutral, and 0.60 negative are returned. What do these confidence scores indicate about the sentence sentiment?"
     choices:
     - content: "The document is positive."
       isCorrect: false
@@ -35,7 +35,7 @@ quiz:
       explanation: "Incorrect. The sentiment is most likely the type with the highest confidence score."
     - content: "The document is negative."
       isCorrect: true
-      explanation: "Correct. The sentiment is most likely the type with the highest confidence score, in this case .6 negative."
+      explanation: "Correct. The sentiment is most likely the type with the highest confidence score, in this case 0.60 negative."
   - content: "What is the purpose of the client object in the Azure Language SDK?"
     choices:
     - content: "It stores the application's user interface settings."
@@ -44,17 +44,17 @@ quiz:
     - content: "It helps application code communicate with the Azure Language service."
       isCorrect: true
       explanation: "The client object is the tool your code uses to communicate with a service, holding the endpoint, credentials, and providing methods to interact with the service."
-    - content: "To store the text you want to analyze."
+    - content: "The client object stores the text that needs to be analyzed."
       isCorrect: false
-      explanation: "Incorrect. The client object does not store the text; it is used to communicate with the Azure Language service."
-  - content: "What is the main purpose of the Azure Language MCP server"
+      explanation: "Incorrect. The client object doesn't store the text; it's used to communicate with the Azure Language service."
+  - content: "What is the main purpose of the Azure Language MCP server?"
     choices:
     - content: "To automatically generate website layouts for an agent."
       isCorrect: false
-      explanation: "Incorrect. The MCP server does not generate website layouts; it provides a way for agents to access external tools and services."
+      explanation: "Incorrect. The MCP server doesn't generate website layouts; it provides a way for agents to access external tools and services."
     - content: "To replace all generative AI models inside an agent."
       isCorrect: false
-      explanation: "Incorrect. The MCP server does not replace generative AI models; it provides a way for agents to access external tools and services."
+      explanation: "Incorrect. The MCP server doesn't replace generative AI models; it provides a way for agents to access external tools and services."
     - content: "To expose Azure Language capabilities to agents through the Model Context Protocol."
       isCorrect: true
       explanation: "Correct. The MCP server allows agents to access Azure Language capabilities in a structured way through the Model Context Protocol."
