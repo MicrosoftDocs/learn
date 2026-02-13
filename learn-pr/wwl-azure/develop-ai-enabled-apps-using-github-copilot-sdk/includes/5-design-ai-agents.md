@@ -74,4 +74,3 @@ When designing an agent to build with the Copilot SDK, focus on three areas:
 - **Policies**: What rules must the agent follow? Encode these as system prompt instructions, tool handler validations, or session hook logic.
 
 You also need to plan for failure modes. If a tool call fails, should the agent retry, try an alternative approach, or escalate? These decisions can be encoded in the system prompt ("if a tool returns an error, inform the user and offer alternatives") or handled programmatically in error-handling hooks.
-

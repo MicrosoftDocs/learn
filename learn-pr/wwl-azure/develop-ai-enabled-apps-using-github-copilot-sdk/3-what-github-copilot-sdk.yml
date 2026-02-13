@@ -8,6 +8,6 @@ metadata:
   author: chrishowd
   ms.author: cahowd
   ms.topic: unit
-durationInMinutes: 10
+durationInMinutes: 8
 content: |
   [!include[](includes/3-what-github-copilot-sdk.md)]

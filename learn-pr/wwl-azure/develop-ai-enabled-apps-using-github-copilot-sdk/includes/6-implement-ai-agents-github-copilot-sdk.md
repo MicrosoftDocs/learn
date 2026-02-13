@@ -277,4 +277,3 @@ session.On(evt =>
 ```
 
 The `DeltaContent` property contains the incremental text fragment. Streaming provides a more responsive experience because users see the response as it forms, rather than waiting for the model to generate the entire message.
-

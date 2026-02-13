@@ -8,6 +8,6 @@ metadata:
   author: chrishowd
   ms.author: cahowd
   ms.topic: unit
-durationInMinutes: 6
+durationInMinutes: 4
 content: |
   [!include[](includes/2-what-ai-agent.md)]
