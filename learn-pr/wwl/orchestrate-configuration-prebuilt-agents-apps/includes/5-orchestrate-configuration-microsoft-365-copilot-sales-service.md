@@ -210,4 +210,4 @@ Lower manual rework on AI-generated content.
 
 ## References
 
-- [Generative AI for productivity - Microsoft Learn](/training/modules/generative-ai-productivity/)
+- [Configure Copilot in Dynamics 365 Customer Service](/training/modules/configure-copilot/)
