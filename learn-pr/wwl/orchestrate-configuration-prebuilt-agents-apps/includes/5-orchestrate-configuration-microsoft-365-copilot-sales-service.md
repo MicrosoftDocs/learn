@@ -190,7 +190,7 @@ Reduction in email and meeting preparation time.
 
 Increased speed from lead to opportunity qualification.
 
-Higher proposal quality consistencys.
+Higher proposal quality consistency.
 
 ### Service KPIs
 
@@ -210,4 +210,4 @@ Lower manual rework on AI-generated content.
 
 ## References
 
-- https://learn.microsoft.com/training/modules/configure-copilot
+- [Generative AI for productivity - Microsoft Learn](/training/modules/generative-ai-productivity/)
