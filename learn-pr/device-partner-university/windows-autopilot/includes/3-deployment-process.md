@@ -76,7 +76,7 @@ Windows Autopilot registered devices aren't the same as Microsoft Intune managed
 
 *Devices > Windows | Windows devices*
 
-Windows Autopilot registration is an assignment of a device to an Intune tenant with the intent to manage t with that tenant once provisioning is complete. Intune enrollment is actual active control and management of the device.
+Windows Autopilot registration is an assignment of a device to an Intune tenant with the intent to manage it with that tenant once provisioning is complete. Intune enrollment is actual active control and management of the device.
 
 ![A photograph of a young man working at a desk in an office on a laptop.](../media/working.png)
 
