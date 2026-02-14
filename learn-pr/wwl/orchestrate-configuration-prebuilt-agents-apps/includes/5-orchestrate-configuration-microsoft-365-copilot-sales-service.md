@@ -190,7 +190,7 @@ Reduction in email and meeting preparation time.
 
 Increased speed from lead to opportunity qualification.
 
-Higher proposal quality consistency.
+Higher proposal quality consistencys.
 
 ### Service KPIs
 
