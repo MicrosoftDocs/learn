@@ -44,7 +44,7 @@ Existing Windows installations can be transformed by Autopilot into “business-
 
 - Simplified image management: Eliminates the need to maintain custom operating system images and drivers for each device model.
 - Remote reset capabilities: Enables IT administrators to resolve device issues remotely without requiring physical access.
-- Automatic updates: In Autopilot deployments that use Intune’s Enrollment Status Page (ESP), monthly security (quality) updates can be installed during Windows OOBE when enabled via the ESP setting “Install Windows quality updates (might restart the device).” Feature updates aren’t supported for installation during OOBE.
+- Automatic updates: In Autopilot deployments that use Intune’s Enrollment Status Page (ESP), monthly security (quality) updates can be installed during Windows out-of-the-box experience (OOBE) when enabled via the ESP setting “Install Windows quality updates (might restart the device).” Feature updates aren’t supported for installation during OOBE.
 
 ## End-users experience
 
