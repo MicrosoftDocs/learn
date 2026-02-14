@@ -49,3 +49,7 @@ The following table compares the capabilities of chatbots, automation scripts, a
 | **Error handling** | Falls back to default | Stops or retries | Reasons about alternatives |
 
 AI agents combine the language understanding of chatbots with the action-oriented power of automation scripts, amplified by AI's ability to reason and adapt.
+
+## Summary
+
+AI agents are autonomous AI entities that can reason, plan, and take actions to achieve complex goals. They differ from chatbots in their ability to handle multi-step tasks, use tools, and maintain context. AI agents are ideal for scenarios that require integration across systems, decision-making, and iterative execution. Frameworks like ReAct and RAG enable these capabilities by combining reasoning with tool use and retrieval of external information. When designed with appropriate guardrails, AI agents can deliver significant business value while operating safely and effectively.

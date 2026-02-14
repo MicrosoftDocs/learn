@@ -1,6 +1,6 @@
 This unit covers the core implementation patterns for building an AI agent using the GitHub Copilot SDK. These patterns apply to any agent scenario. The code examples use C# and .NET, which is the platform used in the module exercise.
 
-## Set up the Copilot SDK client
+## Set up the GitHub Copilot SDK client
 
 The first step is creating a `CopilotClient` instance that manages the connection to the Copilot CLI server. Typically, you register the client as a singleton service in your application.
 
@@ -37,7 +37,7 @@ This code establishes the connection to the CLI server and prepares the client f
 
 ## Define agent tools
 
-Tools give the agent the ability to interact with your application's backend services. In the Copilot SDK for .NET, you define tools using `AIFunctionFactory.Create` from the `Microsoft.Extensions.AI` package.
+Tools give the agent the ability to interact with your application's backend services. In the GitHub Copilot SDK for .NET, you define tools using `AIFunctionFactory.Create` from the `Microsoft.Extensions.AI` package.
 
 ### Create a tool service
 
@@ -149,7 +149,7 @@ var session = await client.CreateSessionAsync(config);
 
 ## Handle responses with events
 
-The Copilot SDK uses an event-driven model for communication. After sending a message, you subscribe to events to receive responses and detect when processing is complete.
+The GitHub Copilot SDK uses an event-driven model for communication. After sending a message, you subscribe to events to receive responses and detect when processing is complete.
 
 ### Subscribe to session events
 
@@ -277,3 +277,7 @@ session.On(evt =>
 ```
 
 The `DeltaContent` property contains the incremental text fragment. Streaming provides a more responsive experience because users see the response as it forms, rather than waiting for the model to generate the entire message.
+
+## Summary
+
+The GitHub Copilot SDK provides a powerful framework for implementing AI agents that can reason, use tools, and maintain context. By defining your agent's capabilities through tools, configuring sessions with clear system prompts, and handling responses with events, you can build sophisticated agents that deliver real business value. Robust error handling and thoughtful prompt design are critical to ensuring your agent operates reliably and effectively in production scenarios. In the next unit, you'll see how to apply these implementation patterns to build a sample customer support agent using the GitHub Copilot SDK.

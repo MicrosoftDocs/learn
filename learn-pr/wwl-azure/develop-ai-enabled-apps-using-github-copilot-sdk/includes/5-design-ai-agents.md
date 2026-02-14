@@ -26,7 +26,7 @@ The GitHub Copilot SDK provides this planner as a built-in feature. The SDK's ag
 
 Unlike a stateless API call, agents maintain contextual memory throughout a session. The agent's *awareness* includes conversation history, tool outputs, and any data retrieved during previous steps. Memory is what enables coherence: when a user says "actually, it was the wrong color," the agent knows that "it" refers to the item discussed earlier.
 
-The Copilot SDK manages short-term memory automatically by tracking conversation history within a session. For sessions that might exceed the model's context window, the SDK's infinite sessions feature compacts older context to prevent token overflow while preserving essential information.
+The GitHub Copilot SDK manages short-term memory automatically by tracking conversation history within a session. For sessions that might exceed the model's context window, the SDK's infinite sessions feature compacts older context to prevent token overflow while preserving essential information.
 
 ### Policies and guardrails
 
@@ -37,7 +37,7 @@ Because AI agents take autonomous actions, you need constraints to ensure they o
 - **Safety filters**: Instruct the agent (through the system prompt) to stay within its domain and avoid revealing internal information.
 - **Fallback and escalation**: Design what happens when the agent can't resolve a request. This guardrail typically means handing off to a human with the context the agent gathered.
 
-In the Copilot SDK, guardrails come from three sources: the tools you expose (which inherently limit what the agent can do), the system prompt (which guides behavior), and code-level controls in your tool handlers and session hooks.
+In the GitHub Copilot SDK, guardrails come from three sources: the tools you expose (which inherently limit what the agent can do), the system prompt (which guides behavior), and code-level controls in your tool handlers and session hooks.
 
 ## Agent workflow in practice
 
@@ -65,12 +65,16 @@ Consider how an e-commerce return agent handles a request:
 
 The agent used two tools and reasoned through multiple steps, but from the user's perspective, it was a single smooth interaction.
 
-## Design decisions for the Copilot SDK
+## Design decisions for the GitHub Copilot SDK
 
-When designing an agent to build with the Copilot SDK, focus on three areas:
+When designing an agent to build with the GitHub Copilot SDK, focus on three areas:
 
 - **Context**: What information does the agent need at the start of each session? The context typically includes a system prompt that defines the agent's role and behavior guidelines, plus any user-specific data that enables personalized responses.
 - **Tools**: What actions should the agent be able to take? Define each tool with a clear name, description, and parameter schema. Implement the business logic in the tool handler.
 - **Policies**: What rules must the agent follow? Encode policies as system prompt instructions, tool handler validations, or session hook logic.
 
 You also need to plan for failure modes. If a tool call fails, should the agent retry, try an alternative approach, or escalate? These decisions can be encoded in the system prompt ("if a tool returns an error, inform the user and offer alternatives") or handled programmatically in error-handling hooks.
+
+## Summary
+
+Designing an AI agent involves defining its reasoning capabilities, the tools it can use, how it maintains context, and the guardrails that ensure safe operation. The GitHub Copilot SDK provides a powerful framework for building agents with these components. By carefully designing the system prompt, selecting appropriate tools, and implementing policies, you can create agents that deliver real business value while operating within defined boundaries. In the next unit, you'll see how to apply these design principles in practice by building a sample agent with the GitHub Copilot SDK.

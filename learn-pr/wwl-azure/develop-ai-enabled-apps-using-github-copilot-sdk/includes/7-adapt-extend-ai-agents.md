@@ -56,7 +56,7 @@ In enterprise processes, predictable behavior is critical:
 
 Unlike interactive agents, back-office agents are often started by events or schedules rather than user input:
 
-- **Scheduled tasks**: A cron job or scheduled service creates a Copilot SDK session, provides context (like "perform the daily invoice reconciliation"), and lets the agent execute.
+- **Scheduled tasks**: A cron job or scheduled service creates a GitHub Copilot SDK session, provides context (like "perform the daily invoice reconciliation"), and lets the agent execute.
 - **Event-driven**: A monitoring alert or webhook triggers session creation and sends the event details as input. Each event typically gets its own session to prevent context mixing.
 - **Stateless execution**: Process each task or event in an independent session. This approach avoids carry-over confusion between unrelated operations.
 
@@ -66,7 +66,7 @@ Back-office agents interact heavily with APIs and databases. Build robustness in
 
 - **Retries and timeouts**: Implement retry logic with exponential backoff in tool handlers that call external systems.
 - **Transaction safety**: If the agent performs multiple related writes, consider using a single tool that handles the full transaction atomically, rather than separate tools for each step.
-- **Least-privilege access**: Use service accounts with minimal permissions for the agent's API calls. This limits the effect of unexpected behavior.
+- **Least-privilege access**: Use service accounts with minimal permissions for the agent's API calls. This approach limits the effect of unexpected behavior.
 - **Audit logging**: Log every action the agent takes, including which tool was called, what parameters were passed, and what result was returned. Include an identifier that marks the action as agent-initiated.
 
 ### Human oversight
@@ -84,3 +84,7 @@ When agents run frequently or process large volumes, consider:
 - **Model selection**: Use a faster, less expensive model for routine tasks and reserve more capable models for complex reasoning. The SDK lets you configure the model per session.
 - **Batch processing**: If an agent needs to process many items, frame the work within a single session rather than creating a separate session for each item.
 - **Multi-agent patterns**: For complex workflows, consider splitting responsibilities across multiple sessions with different configurations and tool sets. One agent might handle analysis while another handles execution, with your application orchestrating between them.
+
+## Summary
+
+Adapting your AI agent for different deployment scenarios involves tailoring its conversation style, tool set, and operational patterns to fit the use case. Customer-facing agents prioritize conversational quality and personalization while maintaining privacy, whereas back-office agents focus on reliability, integration, and autonomous operation. By designing your agent with these considerations in mind, you can maximize its effectiveness and business value in any context. In the next unit, you'll see how to implement these adaptations in practice using the GitHub Copilot SDK.

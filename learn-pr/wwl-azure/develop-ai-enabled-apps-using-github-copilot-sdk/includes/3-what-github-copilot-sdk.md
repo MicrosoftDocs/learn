@@ -4,7 +4,7 @@ The GitHub Copilot SDK is a multi-platform toolkit (currently in Technical Previ
 
 Building a full-featured AI agent from the ground up is complex. You need to handle conversation state management across turns, decide when to call which external API, ensure the AI's responses stay within boundaries, manage multiple AI models for different tasks, and implement safety measures. Building agentic workflows from scratch means you've essentially built a mini platform before you even get to your business logic.
 
-The Copilot SDK removes that complexity by providing a prebuilt, production-tested agent engine. The SDK handles authentication, model management, chat sessions, and streaming. You focus on what gets built on top of those building blocks—your domain-specific tools and business logic.
+The GitHub Copilot SDK removes that complexity by providing a prebuilt, production-tested agent engine. The SDK handles authentication, model management, chat sessions, and streaming. You focus on what gets built on top of those building blocks—your domain-specific tools and business logic.
 
 ## Architecture overview
 
@@ -49,7 +49,7 @@ The SDK isn't tied to one AI model. It supports multiple AI models and allows dy
 
 ### Real-time streaming
 
-The SDK supports streaming responses, meaning as the AI generates output, you can stream it to your app. For example, you can stream tokens to show a typing indicator or partial answer in a chat UI. This makes the experience more interactive and responsive.
+The SDK supports streaming responses, meaning as the AI generates output, you can stream it to your app. For example, you can stream tokens to show a typing indicator or partial answer in a chat UI. This behavior makes the experience more interactive and responsive.
 
 ### Authentication and security
 
@@ -135,3 +135,7 @@ To use the GitHub Copilot SDK in a .NET application, your environment needs:
 - A GitHub account with an active Copilot subscription (or your own API keys for BYOK).
 - The `GitHub.Copilot.SDK` NuGet package.
 - The `Microsoft.Extensions.AI` NuGet package (for defining tools using `AIFunctionFactory`).
+
+## Summary
+
+The GitHub Copilot SDK provides a powerful, production-ready platform for building AI agents in your applications. By abstracting away the complexities of agent orchestration, tool integration, and context management, the SDK lets you focus on defining your agent's capabilities and business logic. With support for multiple languages, real-time streaming, and flexible authentication options, the GitHub Copilot SDK is a versatile choice for adding AI agent functionality to a wide range of applications.

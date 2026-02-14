@@ -4,7 +4,7 @@ You examined real-world scenarios where AI agents provide business value, from e
 
 The main takeaway from this module is that the GitHub Copilot SDK handles the complex infrastructure of agent orchestration—session management, tool calling, context tracking, and model communication—so you can focus on defining the tools and business logic that make your agent useful.
 
-You can apply this knowledge to build AI agents for your own applications. Start by identifying a workflow in your organization that involves multiple steps, data lookups, and decision making. Define the tools the agent would need, write a focused system prompt, and use the Copilot SDK to bring the agent to life.
+You can apply this knowledge to build AI agents for your own applications. Start by identifying a workflow in your organization that involves multiple steps, data lookups, and decision making. Define the tools the agent would need, write a focused system prompt, and use the GitHub Copilot SDK to bring the agent to life.
 
 ## Learn more
 
