@@ -4,8 +4,8 @@ metadata:
   title: "Orchestrate Configuration of Prebuilt Agents and Apps"
   description: "Learn to orchestrate, configure, and extend AI-driven experiences in Dynamics 365 and Microsoft 365 Copilot for finance, supply chain, and customer service."
   ms.date: 02/13/2026
-  author: wwlpublish
-  ms.author: v-davidram
+  author: msdavidram
+  ms.author: taeldin
   ms.topic: module
   ms.service: dynamics-365
 title: "Orchestrate configuration of prebuilt agents and apps"
