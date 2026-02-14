@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.orchestrate-configuration-prebuilt-agents-apps.propose-microsoft-365-agents-business-scenarios
+title: "Propose Microsoft 365 agents for business scenarios"
+metadata:
+  title: "Propose Microsoft 365 Agents for Business Scenarios"
+  description: "Learn how to propose Microsoft 365 agents tailored to business scenarios, ensuring alignment, compliance, and measurable outcomes."
+  ms.date: 02/13/2026
+  author: msdavidram
+  ms.author: taeldin
+  ms.topic: unit
+durationInMinutes: 13
+content: |
+  [!include[](includes/4-propose-microsoft-365-agents-business-scenarios.md)]
