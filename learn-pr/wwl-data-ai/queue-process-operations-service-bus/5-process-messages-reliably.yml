@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.queue-process-operations-service-bus.process-messages-reliably
+title: Process messages reliably
+metadata:
+  title: Process Messages Reliably
+  description: Process messages reliably
+  ms.date: 06/26/2025
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: unit
+durationInMinutes: 12
+content: |
+  [!include[](includes/5-process-messages-reliably.md)]
