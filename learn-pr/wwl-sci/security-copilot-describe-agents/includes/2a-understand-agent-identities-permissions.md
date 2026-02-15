@@ -31,10 +31,10 @@ This option lets the agent use an existing user's credentials. The agent inherit
 
 An AI agent can use its identity to:
 
-- **Access web services** — Request access tokens from Microsoft Entra to call Microsoft Graph, organization-built services, or third-party APIs.
-- **Autonomous access** — Act independently using rights assigned directly to the agent identity, including Microsoft Graph permissions, Azure RBAC roles, and Microsoft Entra directory roles.
-- **Delegated access** — Act on behalf of a human user, using rights the user controls and delegates.
-- **Authenticate incoming messages** — Accept and validate requests from other clients, users, or agents using Microsoft Entra access tokens.
+- **Access web services**—Request access tokens from Microsoft Entra to call Microsoft Graph, organization-built services, or non-Microsoft APIs.
+- **Autonomous access**—Act independently using rights assigned directly to the agent identity, including Microsoft Graph permissions, Azure role-based access control (RBAC) roles, and Microsoft Entra directory roles.
+- **Delegated access**—Act on behalf of a human user, using rights the user controls and delegates.
+- **Authenticate incoming messages**—Accept and validate requests from other clients, users, or agents using Microsoft Entra access tokens.
 
 ### Permissions for agents
 
@@ -46,8 +46,8 @@ When an agent identity is created, the required permissions are assigned automat
 
 RBAC determines who can view and manage agent outputs in Security Copilot. The Security Copilot platform defines two roles:
 
-- **Security Copilot owner** — Set up agents, manage settings, assign permissions, and perform all platform tasks. Build, test, and publish agents at workspace scope.
-- **Security Copilot contributor** — Run agents, create sessions, and interact with agent outputs. Build, test, and publish agents at user scope.
+- **Security Copilot owner**—Set up agents, manage settings, assign permissions, and perform all platform tasks. Build, test, and publish agents at workspace scope.
+- **Security Copilot contributor**—Run agents, create sessions, and interact with agent outputs. Build, test, and publish agents at user scope.
 
 These roles are managed within Security Copilot and are separate from Microsoft Entra ID roles. They control platform access only and don't grant access to security data by themselves. The data an agent can access is still governed by the user's existing Microsoft Entra and Azure RBAC roles—Security Copilot never exceeds the access a user already has.
 

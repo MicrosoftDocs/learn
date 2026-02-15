@@ -1,7 +1,7 @@
 Security Copilot agents in Microsoft Intune are AI-powered assistants that enhance enterprise endpoint security. They automate tasks for endpoint protection, threat intelligence, and device configuration, helping IT teams quickly address vulnerabilities, policy gaps, and emerging threats. Each agent is tailored to a specific use case and operates within the Microsoft Intune admin center.
 
 > [!NOTE]
-> This unit is designed to provide a high-level overview of the Security Copilot agents in Microsoft Intune. For additional information, refer to training that relates to Microsoft Intune.
+> The list of Security Copilot agents in Microsoft Intune is continually growing. This unit is designed to provide a high-level overview of a few of the Security Copilot agents in Microsoft Intune. For more information, see training that relates to Microsoft Intune.
 
 ### Microsoft Security Copilot agents in Microsoft Intune
 
@@ -14,7 +14,7 @@ The [Vulnerability Remediation Agent](https://learn.microsoft.com/intune/agents/
 | Attribute | Description |
 |-----------|-------------|
 | **Identity** | Runs under the identity and permissions of the admin account used during setup. Agent authentication expires after 90 days and must be renewed. |
-| **License** | Microsoft Intune Plan 1, Microsoft Security Copilot with sufficient SCUs, and Microsoft Defender Vulnerability Management (provided by Defender for Endpoint P2 or Defender Vulnerability Management Standalone). |
+| **License** | Microsoft Intune Plan 1, Microsoft Security Copilot with sufficient security compute units (SCUs), and Microsoft Defender Vulnerability Management (provided by Defender for Endpoint P2 or Defender Vulnerability Management Standalone). |
 | **Plugins** | Microsoft Intune and Microsoft Defender. |
 | **Products** | Security Copilot, Microsoft Intune, and Microsoft Defender Vulnerability Management. |
 | **Role-based access** | **Set up**: Security Copilot Owner, Intune Read Only Operator (or custom role with Managed apps/read, Mobile apps/read, Device configurations/read), and Defender Security Reader. **Use**: Security Copilot Contributor and Intune Read Only Operator (or equivalent). |
@@ -30,7 +30,7 @@ The [Change Review Agent](https://learn.microsoft.com/intune/agents/change-revie
 | **License** | Microsoft Intune Plan 1, Microsoft Entra ID P2, Microsoft Defender Vulnerability Management, and Microsoft Security Copilot with sufficient SCUs. |
 | **Plugins** | Microsoft Intune, Microsoft Entra, Microsoft Defender XDR, and Microsoft Threat Intelligence. |
 | **Products** | Security Copilot, Microsoft Intune, Microsoft Entra ID, and Microsoft Defender. |
-| **Role-based access** | **Set up**: Security Copilot Owner, Entra Intune Administrator, Entra Security Reader, Entra/Identity risky user (read), and Defender Security Reader (Unified RBAC) or equivalent. **Use**: Security Copilot Contributor, Intune Read Only Operator (or equivalent), and the same Entra and Defender roles. |
+| **Role-based access** | **Set up**: Security Copilot Owner, Microsoft Entra Intune Administrator, Microsoft Entra Security Reader, Entra/Identity risky user (read), and Defender Security Reader (Unified role-based access control (RBAC)) or equivalent. **Use**: Security Copilot Contributor, Intune Read Only Operator (or equivalent), and the same Microsoft Entra and Defender roles. |
 | **Trigger** | Manually started by an admin. |
 
 #### Device Offboarding Agent
@@ -43,7 +43,7 @@ The [Device Offboarding Agent](https://learn.microsoft.com/intune/agents/device-
 | **License** | Microsoft Intune Plan 1 and Microsoft Security Copilot with sufficient SCUs. |
 | **Plugins** | Microsoft Intune. |
 | **Products** | Security Copilot, Microsoft Intune, and Microsoft Entra ID. |
-| **Role-based access** | **Set up**: Security Copilot Owner, Intune Read Only Operator (or custom role with Audit data/Read and Organization/Read), and Entra Security Reader (or custom role with Microsoft.Directory/Devices/Standard/Read). **Use**: Security Copilot Contributor with the same Intune and Entra roles. To take offboarding actions, the Entra Disable devices permission is also required. |
+| **Role-based access** | **Set up**: Security Copilot Owner, Intune Read Only Operator (or custom role with Audit data/Read and Organization/Read), and Microsoft Entra Security Reader (or custom role with Microsoft.Directory/Devices/Standard/Read). **Use**: Security Copilot Contributor with the same Intune and Microsoft Entra roles. To take offboarding actions, the Microsoft Entra Disable devices permission is also required. |
 | **Trigger** | Manually started by an admin. |
 
 #### Policy Configuration Agent

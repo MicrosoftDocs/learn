@@ -137,12 +137,12 @@ The iterative development process allows continuous refinement through conversat
 - Direct deployment capabilities
 - Support for iterative development through conversational input
 
-MCP tools are perfect for developers who want to build agents within their familiar development environment while leveraging AI assistance throughout the creation process.
+MCP tools are perfect for developers who want to build agents within their familiar development environment while using AI assistance throughout the creation process.
 
 **What you do:**
 
 - Use natural language prompts within your IDE to describe agent intent
-- Leverage MCP tools to automatically discover relevant Security Copilot capabilities
+- Use MCP tools to automatically discover relevant Security Copilot capabilities
 - Generate and iterate on agent YAML files through conversational AI assistance
 - Deploy agents directly to Security Copilot from your development environment
 - Test and refine agents through continuous feedback loops

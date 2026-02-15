@@ -2,7 +2,10 @@ Microsoft Security Copilot includes agents embedded in the Microsoft Defender po
 
 
 > [!NOTE]
-> This unit is designed to provide a high-level overview of the Security Copilot agents in Microsoft Defender, which are focused on SOC tasks. For additional information related to the SOC tasks, such as threat hunting, threat detection, etc. refer to [Defend against cyberthreats with Microsoft's security operations platform](/training/courses/sc-200t00).
+> The list of Security Copilot agents in Microsoft Entra is continually growing. This unit is designed to provide a high-level overview of a few of the Security Copilot agents in Microsoft Entra. Fo more information, refer to training that relates to Microsoft Entra.
+
+> [!NOTE]
+> The list of Security Copilot agents in Microsoft Defender is continually growing. This unit is designed to provide a high-level overview of just a few of the Security Copilot agents in Microsoft Defender. For more information related to agents in Microsoft Defender and focused on SOC tasks, see [Defend against cyberthreats with Microsoft's security operations platform](/training/courses/sc-200t00).
 > 
 ### Microsoft Security Copilot agents in Microsoft Defender
 
@@ -38,7 +41,7 @@ The [Threat Intelligence Briefing Agent](https://learn.microsoft.com/defender-xd
 
 #### Threat Hunting Agent
 
-The [Threat Hunting Agent](https://learn.microsoft.com/defender-xdr/advanced-hunting-security-copilot-threat-hunting-agent) enables you to investigate threats using natural language from start to finish. It not only generates KQL queries but also interprets results, surfaces insights, and guides you through full hunting sessions. These capabilities empower you to hunt threats faster, more accurately, and with greater confidence.
+The [Threat Hunting Agent](https://learn.microsoft.com/defender-xdr/advanced-hunting-security-copilot-threat-hunting-agent) enables you to investigate threats using natural language from start to finish. It not only generates Kusto Query Language (KQL) queries but also interprets results, surfaces insights, and guides you through full hunting sessions. These capabilities empower you to hunt threats faster, more accurately, and with greater confidence.
 
 #### Dynamic Threat Detection Agent
 

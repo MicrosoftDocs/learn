@@ -3,7 +3,7 @@ Microsoft Entra agents can automate many identity and access management operatio
 Microsoft Entra agents analyze your identity environment, apply best practices, and take automated actions to improve your identity and access security posture and operational efficiency. They integrate directly with Microsoft Entra services, using your organization’s identity data and configuration to provide contextual, actionable insights.
 
 > [!NOTE]
-> This unit is designed to provide a high-level overview of the Security Copilot agents in Microsoft Entra. For additional information, refer to training that relates to Microsoft Entra.
+> The list of Security Copilot agents in Microsoft Entra is continually growing. This unit is designed to provide a high-level overview of a few of the Security Copilot agents in Microsoft Entra. Fo more information, refer to training that relates to Microsoft Entra.
 
 ### What are Microsoft Entra agents?
 
@@ -46,7 +46,7 @@ The [Access Review Agent](https://learn.microsoft.com/entra/id-governance/access
 
 | Attribute | Description |
 |-----------|-------------|
-| **Identity** | A unique agent identity for authorization is created when the agent is turned on. The agent uses this identity to scan your tenant for active access reviews, gather additional insights, and save its recommendations. Final decisions, submitted through the Microsoft Teams conversation, use the reviewer’s identity. |
+| **Identity** | A unique agent identity for authorization is created when the agent is turned on. The agent uses this identity to scan your tenant for active access reviews, gather insights, and save its recommendations. Final decisions, submitted through the Microsoft Teams conversation, use the reviewer’s identity. |
 | **Licenses** | Microsoft Entra ID Governance or Microsoft Entra Suite. |
 | **Plugins** | Microsoft Entra (mandatory). |
 | **Products** | ID Governance Access Reviews. |
