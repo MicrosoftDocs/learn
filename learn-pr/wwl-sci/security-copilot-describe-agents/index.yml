@@ -5,7 +5,7 @@ metadata:
   description: Describe Microsoft Security Copilot agents.
   author: wwlpublish
   ms.author: ceperezb
-  ms.date: 11/03/2025
+  ms.date: 02/15/2026
   ms.service: security-copilot
   ai-usage: ai-assisted
   ms.topic: module-standard-task-based
@@ -41,11 +41,14 @@ subjects: # see subject taxonomy https://review.learn.microsoft.com/help/contrib
 units:
 - learn.security-copilot-describe-agents.introduction
 - learn.security-copilot-describe-agents.describe-agents
+- learn.security-copilot-describe-agents.understand-agent-identities-permissions
 - learn.security-copilot-describe-agents.describe-threat-intelligence-briefing-agent
 - learn.security-copilot-describe-agents.explore-threat-intelligence-briefing-agent
 - learn.security-copilot-describe-agents.describe-conditional-access-optimization-agent  
 - learn.security-copilot-describe-agents.explore-conditional-access-optimization-agent
 - learn.security-copilot-describe-agents.describe-phishing-triage-agent
+- learn.security-copilot-describe-agents.describe-purview-agents
+- learn.security-copilot-describe-agents.describe-intune-agents
 - learn.security-copilot-describe-agents.build-agents
 - learn.security-copilot-describe-agents.module-assessment
 - learn.security-copilot-describe-agents.summary
