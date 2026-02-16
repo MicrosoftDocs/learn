@@ -42,6 +42,8 @@ The Natural Language Agent Creation method allows you to build agents simply by 
 - Engage in a conversational workflow where Security Copilot asks clarifying questions
 - Review and approve the automatically generated agent configuration
 - Select **View agent configuration** to transition to the agent builder, where you finalize your agent
+- Once the agent is configured, select **Test**, enter any inputs your agent requires, then select **Run test**.
+- Provide any necessary updates, based on the outcome of the test, then when your tests are complete, publish your agent.
 
 
 # [Build agent](#tab/build-agent)
@@ -52,6 +54,9 @@ The Natural Language Agent Creation method allows you to build agents simply by 
 
 # [Agent details](#tab/agent-details)
 :::image type="content" source="../media/agent-details.png" lightbox="../media/agent-details.png" alt-text="Screenshot showing the details of the agent built using natural language.":::
+
+# [Test](#tab/test)
+:::image type="content" source="../media/test-agent.png" lightbox="../media/test-agent.png" alt-text="Screenshot showing the test window for your agent.":::
 
 ---
 
