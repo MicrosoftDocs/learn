@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.build-backends-azure-functions.set-up-local-development-environment
+title: Set up the local development environment for Functions
+metadata:
+  title: Set Up the Local Development Environment for Functions
+  description: Set up the local development environment for Functions
+  ms.date: 02/13/2026
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: unit
+durationInMinutes: 11
+content: |
+  [!include[](includes/3-set-up-local-development-environment.md)]
