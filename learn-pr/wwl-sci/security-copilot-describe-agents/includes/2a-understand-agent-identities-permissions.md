@@ -54,12 +54,3 @@ These roles are managed within Security Copilot and are separate from Microsoft 
 ### Partner agent permissions
 
 Setting up a partner-built agent that accesses Microsoft product data (such as Microsoft Intune, Microsoft Entra, Microsoft Sentinel, or Microsoft Defender) requires a Global Administrator to approve the required permissions. After approval, Security Copilot owners and contributors can complete the agent setup. Agents that don't access Microsoft product data don't require this approval.
-
-### References
-
-- [Microsoft Security Copilot agents](https://learn.microsoft.com/copilot/security/agents-security-copilot)
-- [What are agent identities?](https://learn.microsoft.com/entra/agent-id/identity-platform/what-is-agent-id)
-- [Understand authentication in Microsoft Security Copilot](https://learn.microsoft.com/copilot/security/authentication)
-- [Manage Security Copilot agents](https://learn.microsoft.com/copilot/security/agents-manage)
-- [Conditional Access Optimization Agent settings - Identity and permissions](https://learn.microsoft.com/entra/security-copilot/conditional-access-agent-optimization-settings#identity-and-permissions)
-- [Microsoft Security Copilot agent development overview](https://learn.microsoft.com/copilot/security/developer/custom-agent-overview)

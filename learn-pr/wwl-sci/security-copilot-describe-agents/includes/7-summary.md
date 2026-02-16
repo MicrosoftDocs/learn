@@ -21,10 +21,14 @@ After completing this module, you're able to:
 
 Learn more:
 
-- [Microsoft Security Copilot agents](/copilot/security/agents-security-copilot)
 - [Microsoft Security Copilot agents overview](/copilot/security/agents-overview)
+- [Microsoft Security Copilot agents](/copilot/security/agents-security-copilot)
+- [Manage Security Copilot agents](/copilot/security/agents-manage)
+- [What are agent identities?](/entra/agent-id/identity-platform/what-is-agent-id)
+- [Understand authentication in Microsoft Security Copilot](/copilot/security/authentication)
 - [Microsoft Security Copilot agents in Microsoft Entra](/entra/fundamentals/agents)
 - [Microsoft Security Copilot agents in Microsoft Defender](/defender-xdr/security-copilot-agents-defender)
 - [Microsoft Security Copilot agents in Microsoft Purview](/purview/copilot-in-purview-agents)
 - [Microsoft Security Copilot agents in Microsoft Intune](/intune/agents/agents-overview)
 - [Build your own agents in Security Copilot](/copilot/security/developer/build-agent-natural-language)
+- [Microsoft Security Copilot agent development overview](/copilot/security/developer/custom-agent-overview)
