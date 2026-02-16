@@ -13,7 +13,7 @@ The following Microsoft Security Copilot agents are available in the Microsoft D
 
 #### Phishing Triage Agent
 
-The [Phishing Triage Agent](https://learn.microsoft.com/defender-xdr/phishing-triage-agent) helps security operations analysts triage and classify user-submitted phishing incidents. The agent operates autonomously, provides a transparent rationale for its classification verdicts in natural language, and continuously learns and improves its accuracy based on feedback from analysts.
+The [Phishing Triage Agent](/defender-xdr/phishing-triage-agent) helps security operations analysts triage and classify user-submitted phishing incidents. The agent operates autonomously, provides a transparent rationale for its classification verdicts in natural language, and continuously learns and improves its accuracy based on feedback from analysts.
 
 | Attribute | Description |
 |-----------|-------------|
@@ -27,7 +27,7 @@ The [Phishing Triage Agent](https://learn.microsoft.com/defender-xdr/phishing-tr
 
 #### Threat Intelligence Briefing Agent
 
-The [Threat Intelligence Briefing Agent](https://learn.microsoft.com/defender-xdr/threat-intel-briefing-agent-defender) provides security operations teams with regular, customized threat intelligence briefings. The agent autonomously gathers and synthesizes relevant threat intelligence data from various sources, delivering concise and actionable insights to help analysts stay informed about emerging threats and trends.
+The [Threat Intelligence Briefing Agent](/defender-xdr/threat-intel-briefing-agent-defender) provides security operations teams with regular, customized threat intelligence briefings. The agent autonomously gathers and synthesizes relevant threat intelligence data from various sources, delivering concise and actionable insights to help analysts stay informed about emerging threats and trends.
 
 | Attribute | Description |
 |-----------|-------------|
@@ -41,9 +41,9 @@ The [Threat Intelligence Briefing Agent](https://learn.microsoft.com/defender-xd
 
 #### Threat Hunting Agent
 
-The [Threat Hunting Agent](https://learn.microsoft.com/defender-xdr/advanced-hunting-security-copilot-threat-hunting-agent) enables you to investigate threats using natural language from start to finish. It not only generates Kusto Query Language (KQL) queries but also interprets results, surfaces insights, and guides you through full hunting sessions. These capabilities empower you to hunt threats faster, more accurately, and with greater confidence.
+The [Threat Hunting Agent](/defender-xdr/advanced-hunting-security-copilot-threat-hunting-agent) enables you to investigate threats using natural language from start to finish. It not only generates Kusto Query Language (KQL) queries but also interprets results, surfaces insights, and guides you through full hunting sessions. These capabilities empower you to hunt threats faster, more accurately, and with greater confidence.
 
 #### Dynamic Threat Detection Agent
 
-The [Dynamic Threat Detection Agent](https://learn.microsoft.com/defender-xdr/dynamic-threat-detection-agent) in the Defender portal is an always-on, adaptive backend service that uncovers hidden threats across Defender and Microsoft Sentinel environments. It uses AI to identify gaps and uncover false negatives by correlating alerts, events, anomalies, and threat intelligence. When the agent identifies a gap, it generates a dynamic alert with the full context in the alert details, including natural language explanations, mapped MITRE ATT&CK techniques, and tailored remediation steps.
+The [Dynamic Threat Detection Agent](/defender-xdr/dynamic-threat-detection-agent) in the Defender portal is an always-on, adaptive backend service that uncovers hidden threats across Defender and Microsoft Sentinel environments. It uses AI to identify gaps and uncover false negatives by correlating alerts, events, anomalies, and threat intelligence. When the agent identifies a gap, it generates a dynamic alert with the full context in the alert details, including natural language explanations, mapped MITRE ATT&CK techniques, and tailored remediation steps.
 

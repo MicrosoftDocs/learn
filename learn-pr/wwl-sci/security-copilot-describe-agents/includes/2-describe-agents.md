@@ -35,32 +35,32 @@ Security Copilot includes agents that are seamlessly integrated with Microsoft s
 
 #### Agents in the standalone experience
 
-- **[Threat Intelligence Briefing Agent](https://learn.microsoft.com/copilot/security/threat-intel-briefing-agent)**: Automatically curates relevant and timely threat intelligence based on an organization’s unique attributes and threat exposure.
+- **[Threat Intelligence Briefing Agent](/copilot/security/threat-intel-briefing-agent)**: Automatically curates relevant and timely threat intelligence based on an organization’s unique attributes and threat exposure.
 
 #### Agents embedded in Microsoft Entra
 
 - **[Conditional Access Optimization Agent](https://aka.ms/EntraAgent)**: Monitors for new users or apps not covered by existing policies, identifies necessary updates to close security gaps, and recommends quick fixes for identity teams to apply with a single click.
-- **[Access Review Agent](https://learn.microsoft.com/entra/id-governance/access-review-agent)**: Configured in Microsoft Entra and available in Microsoft Teams, the agent delivers insights and recommendations so reviewers can make fast, accurate access decisions through a simple conversation.
+- **[Access Review Agent](/entra/id-governance/access-review-agent)**: Configured in Microsoft Entra and available in Microsoft Teams, the agent delivers insights and recommendations so reviewers can make fast, accurate access decisions through a simple conversation.
 
 #### Agents embedded in Microsoft Defender
 
-- **[Phishing Triage Agent](https://learn.microsoft.com/defender-xdr/phishing-triage-agent)**: Helps security operations analysts triage and classify user-submitted phishing incidents autonomously, providing transparent rationale for classification verdicts in natural language.
-- **[Threat Intelligence Briefing Agent](https://learn.microsoft.com/defender-xdr/threat-intel-briefing-agent-defender)**: Also available in the Defender portal, this agent gathers and synthesizes threat intelligence data to deliver concise and actionable insights to security operations teams.
-- **[Threat Hunting Agent](https://learn.microsoft.com/defender-xdr/advanced-hunting-security-copilot-threat-hunting-agent)**: Enables threat hunting using natural language, generates KQL queries, interprets results, and guides analysts through full hunting sessions.
-- **[Dynamic Threat Detection Agent (preview)](https://learn.microsoft.com/defender-xdr/dynamic-threat-detection-agent)**: An always-on adaptive service that uncovers hidden threats across Defender and Microsoft Sentinel environments by correlating alerts, events, and threat intelligence.
+- **[Phishing Triage Agent](/defender-xdr/phishing-triage-agent)**: Helps security operations analysts triage and classify user-submitted phishing incidents autonomously, providing transparent rationale for classification verdicts in natural language.
+- **[Threat Intelligence Briefing Agent](/defender-xdr/threat-intel-briefing-agent-defender)**: Also available in the Defender portal, this agent gathers and synthesizes threat intelligence data to deliver concise and actionable insights to security operations teams.
+- **[Threat Hunting Agent](/defender-xdr/advanced-hunting-security-copilot-threat-hunting-agent)**: Enables threat hunting using natural language, generates KQL queries, interprets results, and guides analysts through full hunting sessions.
+- **[Dynamic Threat Detection Agent (preview)](/defender-xdr/dynamic-threat-detection-agent)**: An always-on adaptive service that uncovers hidden threats across Defender and Microsoft Sentinel environments by correlating alerts, events, and threat intelligence.
 
 #### Agents embedded in Microsoft Purview (preview)
 
-- **[Alert Triage Agent in Data Loss Prevention](https://learn.microsoft.com/purview/copilot-in-purview-agents)**: Evaluates DLP alerts based on sensitivity risk, exfiltration risk, and policy risk, then sorts them into prioritized categories.
-- **[Triage Agent in Insider Risk Management](https://learn.microsoft.com/purview/copilot-in-purview-agents)**: Evaluates IRM alerts based on user risk, file risk, and activity risk, then sorts them into prioritized categories.
-- **[Data Security Posture Management Agent](https://learn.microsoft.com/purview/copilot-in-purview-posture-agent-get-started)**: Helps identify and address data security posture risks by providing proactive insights and recommendations.
+- **[Alert Triage Agent in Data Loss Prevention](/purview/copilot-in-purview-agents)**: Evaluates DLP alerts based on sensitivity risk, exfiltration risk, and policy risk, then sorts them into prioritized categories.
+- **[Triage Agent in Insider Risk Management](/purview/copilot-in-purview-agents)**: Evaluates IRM alerts based on user risk, file risk, and activity risk, then sorts them into prioritized categories.
+- **[Data Security Posture Management Agent](/purview/copilot-in-purview-posture-agent-get-started)**: Helps identify and address data security posture risks by providing proactive insights and recommendations.
 
 #### Agents embedded in Microsoft Intune
 
-- **[Vulnerability Remediation Agent](https://learn.microsoft.com/intune/agents/vulnerability-remediation-agent)**: Uses Defender data to identify vulnerabilities on managed devices, prioritize remediation, and provide step-by-step guidance.
-- **[Change Review Agent](https://learn.microsoft.com/intune/agents/change-review-agent)**: Evaluates the effect of Multi Admin Approval requests in Intune and makes recommendations for actions to take.
-- **[Device Offboarding Agent](https://learn.microsoft.com/intune/agents/device-offboarding-agent)**: Identifies stale or misaligned devices across Intune and Microsoft Entra ID, providing actionable insights before offboarding.
-- **[Policy Configuration Agent](https://learn.microsoft.com/intune/agents/policy-configuration-agent)**: Converts plain-language documents and industry baselines into recommended Intune settings and policies.
+- **[Vulnerability Remediation Agent](/intune/agents/vulnerability-remediation-agent)**: Uses Defender data to identify vulnerabilities on managed devices, prioritize remediation, and provide step-by-step guidance.
+- **[Change Review Agent](/intune/agents/change-review-agent)**: Evaluates the effect of Multi Admin Approval requests in Intune and makes recommendations for actions to take.
+- **[Device Offboarding Agent](/intune/agents/device-offboarding-agent)**: Identifies stale or misaligned devices across Intune and Microsoft Entra ID, providing actionable insights before offboarding.
+- **[Policy Configuration Agent](/intune/agents/policy-configuration-agent)**: Converts plain-language documents and industry baselines into recommended Intune settings and policies.
 
 ### Partner agents
 

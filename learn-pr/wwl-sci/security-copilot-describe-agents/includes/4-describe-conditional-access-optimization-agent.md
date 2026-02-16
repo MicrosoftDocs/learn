@@ -29,7 +29,7 @@ The following agents are currently available for Microsoft Entra. Due to the fas
 
 #### Conditional Access Optimization Agent
 
-The [Conditional Access Optimization Agent](https://learn.microsoft.com/entra/security-copilot/conditional-access-agent-optimization) ensures comprehensive user protection by analyzing your Conditional Access policies and recommending improvements. The agent evaluates your current policy configuration against Microsoft best practices and Zero Trust principles.
+The [Conditional Access Optimization Agent](/entra/security-copilot/conditional-access-agent-optimization) ensures comprehensive user protection by analyzing your Conditional Access policies and recommending improvements. The agent evaluates your current policy configuration against Microsoft best practices and Zero Trust principles.
 
 | Attribute | Description |
 |-----------|-------------|
@@ -42,7 +42,7 @@ The [Conditional Access Optimization Agent](https://learn.microsoft.com/entra/se
 
 #### Access Review Agent
 
-The [Access Review Agent](https://learn.microsoft.com/entra/id-governance/access-review-agent) with Microsoft Entra ID Governance empowers reviewers to make fast and accurate access decisions. It delivers insights and recommendations so reviewers can complete their work through a simple conversation, right inside Microsoft Teams.
+The [Access Review Agent](/entra/id-governance/access-review-agent) with Microsoft Entra ID Governance empowers reviewers to make fast and accurate access decisions. It delivers insights and recommendations so reviewers can complete their work through a simple conversation, right inside Microsoft Teams.
 
 | Attribute | Description |
 |-----------|-------------|
@@ -55,7 +55,7 @@ The [Access Review Agent](https://learn.microsoft.com/entra/id-governance/access
 
 #### Identity Risk Management Agent (preview)
 
-The [Identity Risk Management Agent](https://learn.microsoft.com/entra/id-protection/identity-risk-management-agent-get-started) in Microsoft Entra ID Protection helps administrators investigate potential risks, learn about potential effects, and take decisive action to protect their organization’s critical assets.
+The [Identity Risk Management Agent](/entra/id-protection/identity-risk-management-agent-get-started) in Microsoft Entra ID Protection helps administrators investigate potential risks, learn about potential effects, and take decisive action to protect their organization's critical assets.
 
 | Attribute | Description |
 |-----------|-------------|

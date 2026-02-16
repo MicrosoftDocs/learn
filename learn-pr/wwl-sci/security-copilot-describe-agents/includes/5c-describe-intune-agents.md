@@ -9,7 +9,7 @@ The following Microsoft Security Copilot agents are available in Microsoft Intun
 
 #### Vulnerability Remediation Agent
 
-The [Vulnerability Remediation Agent](https://learn.microsoft.com/intune/agents/vulnerability-remediation-agent) uses data from Microsoft Defender Vulnerability Management to identify Common Vulnerabilities and Exposures (CVEs) on managed devices. The results are prioritized for remediation and include step-by-step instructions to guide you in using Intune to remediate the threat.
+The [Vulnerability Remediation Agent](/intune/agents/vulnerability-remediation-agent) uses data from Microsoft Defender Vulnerability Management to identify Common Vulnerabilities and Exposures (CVEs) on managed devices. The results are prioritized for remediation and include step-by-step instructions to guide you in using Intune to remediate the threat.
 
 | Attribute | Description |
 |-----------|-------------|
@@ -22,7 +22,7 @@ The [Vulnerability Remediation Agent](https://learn.microsoft.com/intune/agents/
 
 #### Change Review Agent
 
-The [Change Review Agent](https://learn.microsoft.com/intune/agents/change-review-agent) evaluates Multi Admin Approval requests for PowerShell scripts on Windows devices. It aggregates signals from Microsoft Defender Vulnerability Management, Microsoft Entra ID, and Microsoft Intune to provide risk-based recommendations and contextual insights that help administrators make informed decisions about whether to approve or deny requests.
+The [Change Review Agent](/intune/agents/change-review-agent) evaluates Multi Admin Approval requests for PowerShell scripts on Windows devices. It aggregates signals from Microsoft Defender Vulnerability Management, Microsoft Entra ID, and Microsoft Intune to provide risk-based recommendations and contextual insights that help administrators make informed decisions about whether to approve or deny requests.
 
 | Attribute | Description |
 |-----------|-------------|
@@ -35,7 +35,7 @@ The [Change Review Agent](https://learn.microsoft.com/intune/agents/change-revie
 
 #### Device Offboarding Agent
 
-The [Device Offboarding Agent](https://learn.microsoft.com/intune/agents/device-offboarding-agent) identifies stale or misaligned devices across Intune and Microsoft Entra ID. It provides actionable insights and requires admin approval before offboarding any devices. The agent complements existing Intune automation by surfacing insights and handling ambiguous cases where automated cleanup may not suffice.
+The [Device Offboarding Agent](/intune/agents/device-offboarding-agent) identifies stale or misaligned devices across Intune and Microsoft Entra ID. It provides actionable insights and requires admin approval before offboarding any devices. The agent complements existing Intune automation by surfacing insights and handling ambiguous cases where automated cleanup may not suffice.
 
 | Attribute | Description |
 |-----------|-------------|
@@ -48,7 +48,7 @@ The [Device Offboarding Agent](https://learn.microsoft.com/intune/agents/device-
 
 #### Policy Configuration Agent
 
-The [Policy Configuration Agent](https://learn.microsoft.com/intune/agents/policy-configuration-agent) converts plain-language documents and industry baselines into recommended Intune settings and policies. Admins can upload compliance standards or organizational security policies, and the agent identifies relevant Intune settings catalog settings, recommends values, and guides the creation of configuration profiles.
+The [Policy Configuration Agent](/intune/agents/policy-configuration-agent) converts plain-language documents and industry baselines into recommended Intune settings and policies. Admins can upload compliance standards or organizational security policies, and the agent identifies relevant Intune settings catalog settings, recommends values, and guides the creation of configuration profiles.
 
 | Attribute | Description |
 |-----------|-------------|

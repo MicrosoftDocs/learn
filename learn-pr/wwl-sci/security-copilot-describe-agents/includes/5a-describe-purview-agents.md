@@ -9,7 +9,7 @@ The following Microsoft Security Copilot agents are available in Microsoft Purvi
 
 #### Triage Agent in Insider Risk Management
 
-The [Triage Agent in Insider Risk Management](https://learn.microsoft.com/purview/copilot-in-purview-agents) helps security teams by evaluating alerts based on user risk, file risk, and activity risk. The agent then sorts the triaged alerts into categories that are presented in the insider risk management solution on the **Alerts** tab.
+The [Triage Agent in Insider Risk Management](/purview/copilot-in-purview-agents) helps security teams by evaluating alerts based on user risk, file risk, and activity risk. The agent then sorts the triaged alerts into categories that are presented in the insider risk management solution on the **Alerts** tab.
 
 | Attribute | Description |
 |-----------|-------------|
@@ -23,7 +23,7 @@ The [Triage Agent in Insider Risk Management](https://learn.microsoft.com/purvie
 
 #### Alert Triage Agent in Data Loss Prevention (preview)
 
-The [Alert Triage Agent in Data Loss Prevention](https://learn.microsoft.com/purview/copilot-in-purview-agents) helps security teams by evaluating alerts based on the sensitivity risk, exfiltration risk, and policy risk. The agent then sorts the triaged alerts into categories that are presented in the DLP solution on the **Alerts** page.
+The [Alert Triage Agent in Data Loss Prevention](/purview/copilot-in-purview-agents) helps security teams by evaluating alerts based on the sensitivity risk, exfiltration risk, and policy risk. The agent then sorts the triaged alerts into categories that are presented in the DLP solution on the **Alerts** page.
 
 | Attribute | Description |
 |-----------|-------------|
