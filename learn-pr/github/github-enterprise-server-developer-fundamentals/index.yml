@@ -1,6 +1,6 @@
 ### YamlMime:Module
 uid: learn.github.github-enterprise-server-developer-fundamentals
-title: GitHub Enterprise Server Fundamentals for Developers
+title: GitHub Enterprise Server fundamentals for developers
 metadata:
   title: GitHub Enterprise Server Fundamentals for Developers
   description: Overview of GitHub Enterprise Server (GHES) and its self-managed GitHub experience for secure or regulated environments.

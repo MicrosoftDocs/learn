@@ -8,7 +8,7 @@ Understanding these fundamentals helps you work effectively, predictably, and co
 
 ## Learn more
 
-- GitHub Enterprise Server 3.19 documentation: https://docs.github.com/en/enterprise-server@3.19
-- GHES release notes: https://docs.github.com/en/enterprise-server/release-notes
-- GitHub Connect overview: https://docs.github.com/en/enterprise-server/admin/github-connect
-- GitHub Actions on GHES: https://docs.github.com/en/enterprise-server/actions
+- [GitHub Enterprise Server 3.19 documentation](https://docs.github.com/en/enterprise-server@3.19)
+- [GHES release notes](https://docs.github.com/en/enterprise-server/release-notes)
+- [GitHub Connect overview](https://docs.github.com/en/enterprise-server/admin/github-connect)
+- [GitHub Actions on GHES](https://docs.github.com/en/enterprise-server/actions)

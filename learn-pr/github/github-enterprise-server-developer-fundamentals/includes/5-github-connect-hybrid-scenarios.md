@@ -10,7 +10,7 @@ Many organizations choose GitHub Enterprise Server (GHES) to meet strict data co
 
 - What to expect as a developer when GitHub Connect is enabled
 
-### What is GitHub connect?
+### What is GitHub Connect?
 
 GitHub Connect creates a secure link between GitHub Enterprise Server and GitHub Enterprise Cloud. When enabled by administrators, it allows specific features and data to be shared across both environments.
 
