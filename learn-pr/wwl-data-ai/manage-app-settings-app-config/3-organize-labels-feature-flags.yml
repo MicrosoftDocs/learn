@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-app-settings-app-config.organize-labels-feature-flags
+title: Organize settings with labels and feature flags
+metadata:
+  title: Organize Settings with Labels and Feature Flags
+  description: Organize settings with labels and feature flags
+  ms.date: 02/17/2026
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-organize-labels-feature-flags.md)]
