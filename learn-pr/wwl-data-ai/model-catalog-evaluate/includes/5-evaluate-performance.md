@@ -149,7 +149,7 @@ When scores are lower than required, consider:
 - **RAG integration**: Adding retrieval capabilities to ground responses in your data
 - **Fine-tuning**: Training the model on your specific domain (if supported)
 
-Each of of these steps grow in complexity (and sometimes cost), so take that into consideration when planning improvements.
+Each of these steps grow in complexity (and sometimes cost), so take that into consideration when planning improvements.
 
 When safety metrics show concerns:
 - **Content filters**: Implementing Azure AI Content Safety services
