@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.integrate-foundry-agent-with-m365.understand-publishing-options
+title: Understand Foundry agent publishing options
+metadata:
+  title: Understand Foundry agent publishing options
+  description: Learn about the different approaches for publishing Microsoft Foundry agents to Microsoft Teams and Microsoft 365 Copilot.
+  ms.date: 02/17/2026
+  author: ivorb
+  ms.author: berryivor
+  ms.topic: unit
+  ai-usage: ai-generated
+durationInMinutes: 8
+content: |
+  [!include[](includes/2-understand-publishing-options.md)]
