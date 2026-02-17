@@ -116,7 +116,7 @@ For example, let's say you want to develop a lightweight app that automatically 
 
 Say you have an audio file containing a voicemail recording. To transcribe the message, start by specifying the endpoint and key and the audio source you want to transcribe. Then  use a `SpeechRecognizer` object to perform the transcription, before displaying the results. 
 
-:::image type="content" source="../media/speech-to-text-python" alt-text="Screenshot of speech-to-text python code in Visual Studio Code." lightbox="../media/speech-to-text-python":::
+:::image type="content" source="../media/speech-to-text-python.png" alt-text="Screenshot of speech-to-text python code in Visual Studio Code." lightbox="../media/speech-to-text-python.png":::
 
 Once you run the code, you can see the transcription text. 
 
