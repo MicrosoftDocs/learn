@@ -16,7 +16,7 @@ From a user interface perspective, GHES looks familiar. However, the developer e
 
 - Your organization is responsible for provisioning, scaling, patching, and maintaining these runners.
 
-- If runners are offline or outdated, workflows will fail-no automatic fall back.
+- If runners are offline or outdated, workflows will fail-no automatic fall-back.
 
 - Network restrictions are common; proxies or mirrors may be needed for external access.
 
@@ -48,4 +48,6 @@ Developers should verify availability before relying on cloud-first workflows.
 
 Key takeaway: The GHES developer experience is shaped by self-managed infrastructure-automation, integrations, and even "available features" can depend on what is deployed, licensed, and enabled in your environment.
 
-Now that you've seen how GHES can differ in everyday development workflows, the next unit introduces GitHub Connect and hybrid scenarios that can extend GHES with selected GitHub.com capabilities.
+Now that you've seen how GHES can differ in everyday development workflows, you're ready for the next step.
+
+The next unit introduces GitHub Connect and hybrid scenarios that extend GHES with selected GitHub.com capabilities.
