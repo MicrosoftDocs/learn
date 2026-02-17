@@ -50,7 +50,7 @@ You can explore *VoiceLive* in a playground in Foundry portal. The Foundry playg
 
 :::image type="content" source="../media/voice-live-playground.png" alt-text="Screenshot of voice live in the Foundry playground." lightbox="../media/voice-live-playground.png":::
 
-## Using VoiceLive in an application
+## Using Voice Live in an application
 
 To develop a custom app that uses the agent, we need to write some code. To create an application in Python, you need the `azure-ai-voicelive` package. 
 
@@ -59,6 +59,7 @@ The package can be installed in the Visual Studio Code *terminal* using:
 ```bash
 pip install azure-ai-voicelive
 ```
+
 >[!NOTE]
 > You also need to install `pyaudio`, `python-dotenv`, and `azure-identity` in order to run your Voice Live application.
 
