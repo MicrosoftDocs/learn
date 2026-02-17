@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.wwl.manage-app-secrets-key-vault
+metadata:
+  title: Manage Application Secrets with Azure Key Vault
+  description: Learn how to use Azure Key Vault to store, retrieve, version, rotate, and cache secrets in AI application code using the Python Azure SDK.
+  ms.date: 02/17/2026
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: module-standard-task-based
+  ai-usage: ai-assisted
+  ms.service: azure-key-vault
+title: Manage application secrets with Azure Key Vault
+summary: |
+  Learn how to use Azure Key Vault to store, retrieve, and manage secrets in AI solutions on Azure. This module covers vault organization, SDK-based secret retrieval with managed identity, secret versioning and rotation strategies, and caching patterns that reduce API calls while maintaining credential freshness.
+abstract: |
+  After completing this module, you'll be able to:
+    - Explain how Azure Key Vault stores and organizes secrets, keys, and certificates, and identify when to use each object type in an AI solution.
+    - Retrieve secrets programmatically using Azure SDK client libraries with managed identity authentication.
+    - Handle secret versioning and rotation in application code to support zero-downtime credential updates.
+    - Implement caching strategies that reduce Key Vault API calls while maintaining security and freshness guarantees.
+prerequisites: |
+  Before beginning this module, you should have:
+  - Programming experience with languages such as Python, JavaScript, or C#.
+  - Basic understanding of Azure services and cloud computing concepts.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- azure-key-vault
+subjects:
+- security
+units:
+- learn.wwl.manage-app-secrets-key-vault.introduction
+- learn.wwl.manage-app-secrets-key-vault.store-organize-secrets
+- learn.wwl.manage-app-secrets-key-vault.retrieve-secrets-sdk
+- learn.wwl.manage-app-secrets-key-vault.handle-versioning-rotation
+- learn.wwl.manage-app-secrets-key-vault.implement-caching-strategies
+- learn.wwl.manage-app-secrets-key-vault.exercise-manage-secrets
+- learn.wwl.manage-app-secrets-key-vault.knowledge-check
+- learn.wwl.manage-app-secrets-key-vault.summary
+badge:
+  uid: learn.wwl.manage-app-secrets-key-vault.badge
