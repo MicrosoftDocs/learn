@@ -16,7 +16,7 @@ From a user interface perspective, GHES looks familiar. However, the developer e
 
 - Your organization is responsible for provisioning, scaling, patching, and maintaining these runners.
 
-- If runners are offline or outdated, workflows will fail-no automatic fallback.
+- If runners are offline or outdated, workflows will fail-no automatic fall back.
 
 - Network restrictions are common; proxies or mirrors may be needed for external access.
 
@@ -26,7 +26,7 @@ From a user interface perspective, GHES looks familiar. However, the developer e
 
 - GitHub Packages (npm, Docker, etc.) are available and hosted internally in GHES.
 
-- Advanced Security features (e.g. code scanning, secret scanning) are supported with proper licensing.
+- Advanced Security features (for example, code scanning, secret scanning) are supported with proper licensing.
 
 - These features often require manual setup-such as installing scanning engines or enabling secret detection-though from a developer perspective, the enablement process is no different than on GitHub Enterprise Cloud (GHEC).
 
@@ -34,9 +34,9 @@ From a user interface perspective, GHES looks familiar. However, the developer e
 
 ### Unsupported or limited features
 
-- GitHub Codespaces is not supported as of GHES 3.19.
+- GitHub Codespaces isn't supported as of GHES 3.19.
 
-- GitHub Copilot is not supported on GHES. Copilot can be used as a standalone feature within supported IDEs, but Copilot features are not available on the GHES web interface, and functionality may be further limited in environments with restricted internet access.
+- GitHub Copilot isn't supported on GHES. Copilot can be used as a standalone feature within supported IDEs, but Copilot features aren't available on the GHES web interface, and functionality may be further limited in environments with restricted internet access.
 
 - Accessing the library of public GitHub Actions directly from GitHub.com requires GitHub Connect. Without it, Actions must be manually synced to your local instance.
 
@@ -46,6 +46,6 @@ From a user interface perspective, GHES looks familiar. However, the developer e
 
 Developers should verify availability before relying on cloud-first workflows.
 
-Key takeaway: The GHES developer experience is shaped by self-managed infrastructure-automation, integrations, and even “available features” can depend on what is deployed, licensed, and enabled in your environment.
+Key takeaway: The GHES developer experience is shaped by self-managed infrastructure-automation, integrations, and even "available features" can depend on what is deployed, licensed, and enabled in your environment.
 
 Now that you've seen how GHES can differ in everyday development workflows, the next unit introduces GitHub Connect and hybrid scenarios that can extend GHES with selected GitHub.com capabilities.

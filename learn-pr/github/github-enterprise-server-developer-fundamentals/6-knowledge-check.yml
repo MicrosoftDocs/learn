@@ -15,13 +15,13 @@ quiz:
   questions:
   - content: "What is a defining characteristic of GitHub Enterprise Server (GHES)?"
     choices:
-    - content: "It is a fully managed Software as a Service (SaaS) platform hosted by GitHub."
+    - content: "It's a fully managed Software as a Service (SaaS) platform hosted by GitHub."
       isCorrect: false
-      explanation: "Incorrect. GitHub Enterprise Server is not a SaaS platform hosted by GitHub."
+      explanation: "Incorrect. GitHub Enterprise Server isn't an SaaS platform hosted by GitHub."
     - content: "It automatically updates with new features as soon as they are released."
       isCorrect: false
-      explanation: "Incorrect. GitHub Enterprise Server follows a scheduled release cycle and does not update automatically with every new feature."
-    - content: "It is self-hosted and managed by the customer."
+      explanation: "Incorrect. GitHub Enterprise Server follows a scheduled release cycle and doesn't update automatically with every new feature."
+    - content: "It's self-hosted and managed by the customer."
       isCorrect: true
       explanation: "Correct. GitHub Enterprise Server is deployed on infrastructure owned and managed by the customer, providing full control over data and operations."
     - content: "It only supports public repositories."
@@ -35,23 +35,23 @@ quiz:
     - content: "GHES follows a quarterly release cadence."
       isCorrect: true
       explanation: "Correct. GitHub Enterprise Server uses a structured quarterly release cycle to ensure stability for self-managed environments."
-    - content: "GHES does not support modern development workflows."
+    - content: "GHES doesn't support modern development workflows."
       isCorrect: false
       explanation: "Incorrect. GitHub Enterprise Server supports modern development workflows."
     - content: "GHES updates are controlled by individual developers."
       isCorrect: false
       explanation: "Incorrect. Updates are managed through official enterprise releases."
-  - content: "Which GitHub feature is not supported on GitHub Enterprise Server?"
+  - content: "Which GitHub feature isn't supported on GitHub Enterprise Server?"
     choices:
     - content: "Pull requests."
       isCorrect: false
       explanation: "Incorrect. Pull requests are supported on GitHub Enterprise Server."
     - content: "GitHub Actions."
       isCorrect: false
-      explanation: "Incorrect. GitHub Actions is supported on GitHub Enterprise Server."
+      explanation: "Incorrect. GitHub Actions are supported on GitHub Enterprise Server."
     - content: "GitHub Codespaces."
       isCorrect: true
-      explanation: "Correct. GitHub Codespaces is a cloud-only feature and is not available on GitHub Enterprise Server."
+      explanation: "Correct. GitHub Codespaces is a cloud-only feature and isn't available on GitHub Enterprise Server."
     - content: "Issues."
       isCorrect: false
       explanation: "Incorrect. Issues are supported on GitHub Enterprise Server."
@@ -68,4 +68,4 @@ quiz:
       explanation: "Incorrect. Features cannot be manually enabled if they are not included in the deployed version."
     - content: "Switch to a public repository so the feature becomes available."
       isCorrect: false
-      explanation: "Incorrect. Repository visibility does not affect feature availability in GHES."
+      explanation: "Incorrect. Repository visibility doesn't affect feature availability in GHES."
