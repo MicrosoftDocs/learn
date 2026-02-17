@@ -8,8 +8,7 @@ metadata:
   author: wwlpublish
   ms.author: sheryang
   ms.topic: unit
-  ms.custom:
-  - N/A
+  zone_pivot_groups: video-or-text
 durationInMinutes: 8
 content: |
   [!include[](includes/2-speech-recognition.md)]
