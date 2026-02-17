@@ -25,7 +25,7 @@ Quality benchmarks use datasets such as:
 
 Benchmark scores are normalized indexes ranging from zero to one, where higher values indicate better performance.
 
-:::image type="content" source="../media/model-leaderboard.png" alt-text="Screenshot of model leaderboard in Microsoft Foundry portal." lightbox="../media/model-benchmarks.png":::
+:::image type="content" source="../media/model-leaderboard.png" alt-text="Screenshot of model leaderboard in Microsoft Foundry portal." lightbox="../media/model-leaderboard.png":::
 
 ## Safety and risk benchmarks
 
