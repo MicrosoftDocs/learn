@@ -3,7 +3,7 @@
 Optimization experiments require systematic organization to track which changes were tested and what results they produced. Git-based workflows enable you to test agent variants safely, document evaluation results, and compare experiments to identify which configuration performs best.
 
 | Step | Action |
-|------|--------|
+| ------ | -------- |
 | 1. **Create branch** | Create experiment branch for each variant |
 | 2. **Add test prompts** | Store test prompts in experiment folder |
 | 3. **Run evaluation script** | Deploy agent version, run test prompts, capture responses |
@@ -16,7 +16,7 @@ Each optimization experiment lives in its own branch, keeping experimental chang
 
 With the Adventure Works Trail Guide Agent, you create experiment branches to test different variants:
 
-```
+```text
 main                              # Production baseline (prompt v1)
 experiment/prompt-v2-concise      # Test shorter, more focused prompt
 experiment/prompt-v2-detailed     # Test enhanced prompt with examples
@@ -30,7 +30,7 @@ When an experiment proves successful through evaluation, you merge it to main. F
 
 Each experiment branch organizes files in a consistent structure that separates code, prompts, and evaluation data:
 
-```
+```text
 adventure-works-agent/
 ├── agent.py                                    # Agent creation script
 ├── run-agent.py                                # Script to run agent with test prompts
@@ -70,7 +70,7 @@ The script captures agent responses from the API and saves them to `agent-respon
 Review the agent responses captured in `agent-responses.json`. For quick manual testing, a best practice is to choose three to five evaluation criteria that matter most for your use case, plus an optional open field for additional comments. Create an `evaluation.csv` file with these columns to match the portal's export format:
 
 | Test Prompt | Agent Response | Intent Resolution | Relevance | Groundedness | Comments |
-|-------------|----------------|-------------------|-----------|--------------|----------|
+| ------------- | ---------------- | ------------------- | ----------- | -------------- | ---------- |
 | scottish-highlands-march | For hiking in the Scottish Highlands in March... | 5 | 5 | 4 | Excellent gear recommendations |
 | family-london-trails | For easy trails near London with teenagers... | 4 | 4 | 5 | Good beginner advice |
 | five-day-backpacking | For a five-day backpacking trip... | 5 | 5 | 5 | Comprehensive list |
@@ -89,7 +89,7 @@ After completing evaluations across multiple experiment branches, use your CSV d
 For the Adventure Works experiments, you might document your comparison:
 
 | Experiment Branch | Key Observations | Meets Criteria? |
-|-------------------|------------------|-----------------|
+| ------------------- | ------------------ | ------------------ |
 | main (baseline) | Solid responses, some verbosity | Yes (4.2 avg) |
 | prompt-v2-concise | Maintains quality, more focused | Yes (4.4 avg) |
 | gpt4o-mini-model | Lower quality on complex prompts | No (4.1 avg, below 4.2 threshold) |

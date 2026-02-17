@@ -20,7 +20,7 @@ For the Adventure Works Trail Guide Agent, create a rubric for each evaluation c
 **Intent Resolution Rubric (1-5 scale):**
 
 | Score | Definition | Example Response |
-|-------|------------|------------------|
+| ------- | ------------ | -------------------- |
 | 5 | Fully addresses user's need with complete information | User asks about March Scotland hiking gear; agent recommends waterproof layers, specifies materials, suggests Adventure Works products |
 | 4 | Addresses core need with minor gaps | User asks about Scotland gear; agent recommends waterproof items but doesn't specify materials or products |
 | 3 | Partially addresses need, missing key information | User asks about Scotland gear; agent mentions waterproofing generically without specific recommendations |
@@ -35,17 +35,17 @@ Human evaluator training ensures all team members interpret rubrics consistently
 
 Select five to eight agent responses that span your score range—include clear examples of scores 5, 3, and 1, plus ambiguous responses that fall between levels. For Adventure Works, you might include responses to the "Scottish Highlands March gear" test prompt that demonstrate different quality levels. Present each response to your evaluation team without revealing the intended score. Format the calibration set as simple text blocks:
 
-**Low-performing response**
+### Low-performing response
 
-```
+```text
 Test Prompt: What gear do I need for hiking in the Scottish Highlands in March?
 
 Agent Response: The Scottish Highlands feature beautiful terrain with mountains, lochs, and glens. Popular trails include the West Highland Way and routes around Ben Nevis. March is considered shoulder season with fewer tourists than summer months. The landscape offers stunning views and diverse wildlife including red deer and golden eagles.
 ```
 
-**High-performing response**
+### High-performing response
 
-```
+```text
 Test Prompt: What gear do I need for hiking in the Scottish Highlands in March?
 
 Agent Response: For March hiking in the Scottish Highlands, you need waterproof and windproof outer layers since conditions are wet and windy. Look for jackets with Gore-Tex or similar waterproof-breathable materials. Adventure Works offers the StormShield jacket (rated to 20,000mm waterproof) and TrailGuard pants perfect for these conditions. Also bring insulating mid-layers like fleece, moisture-wicking base layers, waterproof hiking boots, gloves, and a warm hat. March temperatures range 2-8°C with frequent rain and possible snow at higher elevations.
@@ -62,7 +62,7 @@ Inter-rater reliability measures how consistently human evaluators score the sam
 To test inter-rater reliability, have multiple human evaluators independently score the same set of agent responses—perhaps 10-15 responses from a recent experiment. Calculate agreement: count how often human evaluators assign the same score or scores within one point. For Adventure Works with three human evaluators scoring 10 responses across three metrics (30 total scoring opportunities), agreement might look like:
 
 | Agreement Level | Count | Percentage |
-|-----------------|-------|------------|
+| ------------------ | ------- | ------------ |
 | Exact agreement (all human evaluators assign same score) | 18 | 60% |
 | Within 1 point (all scores within 1-point range) | 10 | 33% |
 | Divergent (scores differ by 2+ points) | 2 | 7% |

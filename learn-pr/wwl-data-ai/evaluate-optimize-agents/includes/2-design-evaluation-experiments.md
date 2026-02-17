@@ -3,10 +3,10 @@
 Optimizing AI agents requires more than making changes and hoping they work better. Effective optimization depends on structured experiments that compare agent variants objectively, measuring quality improvements, cost impacts, and performance characteristics. Consider Adventure Works, an outdoor adventure company managing a Trail Guide Agent that helps customers plan hiking trips with trail recommendations, accommodation bookings, and gear suggestions. The team wants to reduce operational costs by switching from GPT-4 to GPT-4 mini, but they need to verify that quality doesn't degrade below their 4.2/5.0 customer satisfaction target and response times remain under 30 seconds. Here, you learn how to design evaluation experiments by defining metrics, selecting variants to test, and creating systematic testing approaches.
 
 | Design component | What to include | Why it matters |
-|------------------|-----------------|----------------|
-| **Evaluation Metrics** | **Quality**: Intent Resolution, Relevance, Groundedness<br>**Cost**: Token usage, model pricing<br>**Performance**: Response time, time-to-first-token | Objective measurement of quality, operational costs, and user experience |
-| **Variants to Test** | Baseline version<br>Prompt variations<br>Model alternatives (GPT-4, GPT-4 mini)<br>Agent configuration changes (max_tokens, streaming) | Controlled comparison reveals which changes improve performance across all three dimensions |
-| **Testing Approach** | Test prompts covering diverse use cases<br>Success criteria and thresholds<br>Comparison methodology<br>Documentation for reproducibility | Systematic testing ensures reliable results and enables team collaboration |
+| ------------------ | ----------------- | ---------------- |
+| **Evaluation Metrics** | **Quality**: Intent Resolution, Relevance, Groundedness **Cost**: Token usage, model pricing **Performance**: Response time, time-to-first-token | Objective measurement of quality, operational costs, and user experience |
+| **Variants to Test** | Baseline version Prompt variations Model alternatives (GPT-4, GPT-4 mini) Agent configuration changes (max_tokens, streaming) | Controlled comparison reveals which changes improve performance across all three dimensions |
+| **Testing Approach** | Test prompts covering diverse use cases Success criteria and thresholds Comparison methodology Documentation for reproducibility | Systematic testing ensures reliable results and enables team collaboration |
 
 ## Define evaluation metrics
 
@@ -79,10 +79,10 @@ Including five to 10 diverse test prompts provides sufficient coverage for manua
 Success criteria establish what constitutes acceptable performance before you run experiments. Setting thresholds in advance prevents rationalizing disappointing results. Adventure Works defines success thresholds across all three optimization dimensions:
 
 | Dimension | Success threshold | Business rationale |
-|-----------|------------------|-------------------|
-| **Quality** | Average 4.2+ (five-point scale)<br>Minimum 3.5 per response | Aligns with customer satisfaction targets; prevents trust erosion |
+| ----------- | ------------------- | --------------------- |
+| **Quality** | Average 4.2+ (five-point scale) Minimum 3.5 per response | Aligns with customer satisfaction targets; prevents trust erosion |
 | **Cost** | 60% expense reduction | Achieves operational efficiency goals while maintaining 85% resolution rate |
-| **Performance** | Average response time <30 seconds<br>Time-to-first-token <2 seconds (streaming) | Ensures acceptable user experience for real-time interactions |
+| **Performance** | Average response time <30 seconds Time-to-first-token <2 seconds (streaming) | Ensures acceptable user experience for real-time interactions |
 
 Business requirements influence these thresholds: customer-facing agents handling trip planning need higher quality standards and faster response times than internal tools.
 
