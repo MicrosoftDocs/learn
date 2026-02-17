@@ -95,7 +95,7 @@ For example, suppose you create an app that vocalizes text messages. In the code
 
 First, connect to the endpoint for Azure Speech. Then, create a `SpeechSynthesizer` object. Then application processes  the text file containing the message and uses the `SpeechSynthesizer` object to generate the spoken audio. 
 
-:::image type="content" source="../media/text-to-speech-python.png" alt-text="Screenshot of text-to-speech in the Foundry playground." lightbox="../media/text-to-speech-python.png":::
+:::image type="content" source="../media/text-to-speech-python.png" alt-text="Screenshot of text-to-speech Python code." lightbox="../media/text-to-speech-python.png":::
 
 When you run the application, it will take the text and return an audio output of the message.
 
