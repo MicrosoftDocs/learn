@@ -8,7 +8,7 @@ metadata:
   author: ivorb
   ms.author: berryivor
   ms.topic: unit
-  ai-usage: ai-generated
+  ai-usage: ai-assisted
 durationInMinutes: 3
 content: |
   [!include[](includes/1-introduction.md)]
