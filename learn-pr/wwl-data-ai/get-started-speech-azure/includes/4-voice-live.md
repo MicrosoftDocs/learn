@@ -44,7 +44,7 @@ Azure speech-to-speech solutions utilize:
 - **Foundry Tools or MCP servers** which can expose speech as callable tools so agents don’t manage SDKs or APIs directly.
 
 >[!NOTE]
-> The **Azure Speech in Foundry Tools MCP server** exposes speech-to-text and text-to-speech as callable tools, allowing AI agents to work with spoken language without directly managing Azure Speech APIs. the Azure Speech MCP server makes it easier to build voice‑enabled AI agents that can listen, think, and speak.
+> The **Azure Speech in Foundry Tools MCP server** exposes speech-to-text and text-to-speech as callable tools, allowing AI agents to work with spoken language without directly managing Azure Speech APIs. The Azure Speech MCP server makes it easier to build voice‑enabled AI agents that can listen, think, and speak.
 
 You can explore *VoiceLive* in a playground in Foundry portal. The Foundry playground includes some preconfigured voice samples that you can try out, or you can create a new solution of your own. When you create a solution, importantly, you need to choose a generative AI model for your agent to use. Azure Speech Voice Live uses the generative AI model *alongside* its own acoustic models to have a live conversation with the user. You can configure many settings in the playground. For example, you can enable proactive engagement, so the agent can initiate conversations. 
 
