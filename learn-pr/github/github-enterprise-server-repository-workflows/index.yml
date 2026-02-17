@@ -13,7 +13,7 @@ metadata:
 summary: GHES collaboration is shaped by enterprise controls like repository governance, branch protection, and required reviews, helping teams balance productivity with compliance.
 
 abstract: |
-  By the end of this module, you will be able to:
+  By the end of this module, you'll be able to:
   - Create and manage repositories within enterprise governance boundaries
   - Work within branch protection and pull request policies correctly
   - Collaborate efficiently using pull requests and code review workflows on GHES
