@@ -4,10 +4,10 @@ title: Manage GitHub Security Alerts
 metadata:
   title: Manage GitHub Security Alerts
   description: "Manage GitHub Security Alerts."
-  ms.date: 11/21/2025
+  ms.date: 02/16/2026
   author: chrishowd
   ms.author: cahowd
   ms.topic: unit
 durationInMinutes: 8
 content: |
-  [!include[](includes/5-manage-github-security-alerts.md)]
+  [!include[](includes/6-manage-github-security-alerts.md)]
