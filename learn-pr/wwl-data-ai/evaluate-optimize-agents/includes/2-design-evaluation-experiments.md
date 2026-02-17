@@ -30,14 +30,14 @@ Every experiment needs objective measures that reveal whether changes improve or
 
 
 > [!TIP]
-> For detailed specification of each evaluator including required inputs, scoring ranges, and implementation guidance, learn more through the [evaluators reference](https://learn.microsoft.com/azure/ai-foundry/concepts/built-in-evaluators?view=foundry).
+> For detailed specification of each evaluator including required inputs, scoring ranges, and implementation guidance, learn more through the [evaluators reference](/azure/ai-foundry/concepts/built-in-evaluators).
 
-**Cost** metrics quantify the operational expense of running your agent. Token usage measures the number of input and output tokens the model processes for each request. Model pricing converts token counts into actual costs based on the model's rate structure. For GPT-4, you might pay $30 per million tokens, while GPT-4 mini costs $7.50 per million tokens. With these metrics, you can calculate that processing 800 tokens with GPT-4 costs approximately $0.024 per request, while the same request with GPT-4 mini costs $0.006—a 75% reduction. At Adventure Works' scale of handling thousands of customer inquiries daily, this difference impacts their operational efficiency goals significantly. Current pricing details for all models are available at [Microsoft Foundry pricing](https://azure.microsoft.com/pricing/details/microsoft-foundry/).
+**Cost** metrics quantify the operational expense of running your agent. Token usage measures the number of input and output tokens the model processes for each request. Model pricing converts token counts into actual costs based on the model's rate structure. For GPT-4, you might pay $30 per million tokens, while GPT-4 mini costs $7.50 per million tokens. With these metrics, you can calculate that processing 800 tokens with GPT-4 costs approximately $0.024 per request, while the same request with GPT-4 mini costs $0.006—a 75% reduction. At Adventure Works' scale of handling thousands of customer inquiries daily, this difference impacts their operational efficiency goals significantly. Current pricing details for all models are available at [Microsoft Foundry pricing](https://azure.microsoft.com/pricing/details/microsoft-foundry).
 
 **Performance** metrics measure response speed and user experience. End-to-end response time captures how long customers wait for complete answers—critical for real-time interactions where Adventure Works targets 30-second average responses. For applications using streaming, time-to-first-token measures perceived responsiveness: how quickly users see the agent start generating a response. A shorter time-to-first-token creates better user experience even when total response time remains the same. Model selection significantly affects these metrics—GPT-4 mini typically responds faster than GPT-4, while prompt length and generation size (controlled by `max_tokens`) directly influence response time.
 
 > [!TIP]
-> Learn more about optimization techniques for [performance and latency](https://learn.microsoft.com/azure/ai-foundry/openai/how-to/latency?view=foundry).
+> Learn more about optimization techniques for [performance and latency](/azure/ai-foundry/openai/how-to/latency).
 
 ## Select variants to test
 
