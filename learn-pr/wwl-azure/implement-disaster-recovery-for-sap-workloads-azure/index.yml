@@ -4,8 +4,8 @@ metadata:
   title: Implement disaster recovery for SAP workloads in Azure
   description: "This module explores disaster recovery support of Azure for SAP workloads, including deployments within single and multiple Azure regions, multi-tier SAP NetWeaver app deployment in Azure, and Azure services, such as Active Directory and DNS. Prepare for Exam AZ-120 Planning and Administering Microsoft Azure for SAP Workloads."
   ms.date: 12/23/2024
-  author: wwlpublish
-  ms.author: eric
+  author: bradjoseph
+  ms.author: bradj
   ms.topic: module
   ms.custom:
   - N/A

@@ -4,7 +4,7 @@ title: Choose a data table format
 metadata:
   title: Choose a Data Table Format
   description: Learn how to select the appropriate data table format in Azure Databricks, including Delta Lake, Apache Iceberg, Parquet, CSV, and JSON based on performance, transaction requirements, and interoperability needs.
-  ms.date: 12/07/2025
+  ms.date: 02/10/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit

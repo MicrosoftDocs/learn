@@ -4,11 +4,11 @@ title: Design data security for Azure workloads
 metadata:
   title: Design data security for Azure workloads
   description: "SC-100 preparatory unit on the topic: design data security for Azure workloads."
-  ms.date: 07/25/2025
+  ms.date: 01/26/2026
   author: ceperezb
   ms.author: ceperezb
   ms.topic: unit
-  ai-usage: ai-assisted
-durationInMinutes: 12
+  ai-usage: ai-generated
+durationInMinutes: 14
 content: |
   [!include[](includes/4-design-data-security-azure-workloads.md)]

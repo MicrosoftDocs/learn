@@ -16,7 +16,7 @@ You apply these principles across seven technology pillars: **identities**, **en
 
 When you design Zero Trust solutions, you work across pillars simultaneously. For example, an effective Conditional Access policy integrates signals from identities (user risk), endpoints (device compliance), and applications (sensitivity level) to make a single access decision. No pillar operates in isolation—the identity team can only make so much progress before coordinating with the endpoints team.
 
-## The RaMP approach to rapid modernization
+## The Zero Trust RaMP approach to rapid modernization
 
 The Zero Trust adoption framework organizes rapid modernization around a lifecycle with five phases:
 
@@ -92,6 +92,6 @@ A rapid modernization plan is only effective if you can measure its impact. Micr
 
 Supplement in-product dashboards with the customizable tracking tools Microsoft provides for the adoption framework. Report on metrics such as mean time to recover (MTTR), percentage of compliant accounts and devices, incident growth rate, and the number of privileged accounts meeting security requirements. Regular reporting creates accountability and demonstrates value to business leaders.
 
-## Connecting RaMP to your broader security architecture
+## Connecting a Zero Trust RaMP to your broader security architecture
 
-The work you do through the Zero Trust rapid modernization plan feeds directly into the broader security architecture you've been designing throughout this module. The adoption framework includes additional business scenarios—securing remote and hybrid work, identifying and protecting sensitive data, preventing or reducing business damage from a breach, and meeting compliance requirements—that each address different aspects of your digital estate. Together with MCRA's architectural guidance and MCSB's comprehensive controls, RaMP gives you the prioritization strategy to deliver immediate, measurable security improvements while making steady progress toward a comprehensive Zero Trust posture.
+The work you do through a Zero Trust rapid modernization plan feeds directly into the broader security architecture you've been designing throughout this module. The adoption framework includes additional business scenarios—securing remote and hybrid work, identifying and protecting sensitive data, preventing or reducing business damage from a breach, and meeting compliance requirements—that each address different aspects of your digital estate. Together with MCRA's architectural guidance and MCSB's comprehensive controls, RaMP gives you the prioritization strategy to deliver immediate, measurable security improvements while making steady progress toward a comprehensive Zero Trust posture.

@@ -4,7 +4,7 @@ title: Choose a data ingestion tool
 metadata:
   title: Choose a Data Ingestion Tool
   description: Learn how to select the appropriate data ingestion tool in Azure Databricks, including Lakeflow Connect, Auto Loader, COPY INTO, Spark Structured Streaming, JDBC/ODBC, and Azure Data Factory.
-  ms.date: 01/15/2026
+  ms.date: 02/10/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit

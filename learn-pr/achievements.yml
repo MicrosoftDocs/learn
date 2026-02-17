@@ -40,11 +40,6 @@ achievements:
   title: Implement message-based communication workflows with Azure Service Bus
   summary: Write C# code in a custom application that sends and receives messages using Azure Service Bus topics and queues.
   iconUrl: /training/achievements/implement-message-workflows-with-service-bus.svg
-- uid: learn.intro-to-azure-data-explorer.badge
-  type: badge
-  title: Introduction to Azure Data Explorer
-  summary: Learn to describe the ingestion, query, visualization, and data management features that Azure Data Explorer provides to help you make sense of the data flowing into your business.
-  iconUrl: /training/achievements/intro-to-azure-data-explorer.svg
 - uid: learn.azure.intro-to-azure-monitor.badge
   type: badge
   title: Introduction to Azure Monitor
@@ -85,11 +80,6 @@ achievements:
   title: Write multi-table queries by using Kusto Query Language
   summary: Write advanced queries in Kusto Query Language and gain deeper insights by combining data from several tables. Learn how to use the table-level operators `lookup`, `join`, `union`, and `materialize`, and the new aggregation functions `arg_min` and `arg_max`. Also, learn how to communicate these results visually in charts.
   iconUrl: /training/achievements/multi-table-queries-with-kusto-query-language.svg
-- uid: learn.write-first-query-kusto-query-language.badge
-  type: badge
-  title: Write your first query with Kusto Query Language
-  summary: Learn how to write simple queries in Kusto Query Language (KQL) by using the operators take, project, count, where, and sort. 
-  iconUrl: /training/achievements/write-first-query-kusto-query-language.svg 
 - uid: learn.send-crop-weather-alerts.badge
   type: badge
   title: Use Twilio and Azure Maps to receive text message weather alerts 

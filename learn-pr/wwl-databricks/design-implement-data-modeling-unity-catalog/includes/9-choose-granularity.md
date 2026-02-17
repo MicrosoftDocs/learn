@@ -1,3 +1,5 @@
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=330312e0-2d63-4624-9b91-c459c7b97e00]
+
 **Granularity** is one of the most critical design decisions you make when building a data model. It defines the **level of detail** captured in your tables and directly affects **storage costs**, **query performance**, and the **analytical questions** you can answer. As a data engineer, understanding granularity helps you design tables that meet business requirements while maintaining efficient operations.
 
 This unit explains what granularity means in the context of dimensional modeling and how to evaluate different granularity options based on your organization's requirements.
