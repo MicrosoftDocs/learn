@@ -74,23 +74,23 @@ Your organization may have specific naming conventions and rules, but this flow 
 
    - If your organization prefers rebase:
 
-    ```bash
+     ```bash
     
-    git fetch origin
+     git fetch origin
     
-    git rebase origin/main
+     git rebase origin/main
     
-    ```
+     ```
 
    - If your organization prefers merge:
 
-    ```bash
+     ```bash
     
-    git fetch origin
+     git fetch origin
     
-    git merge origin/main
+     git merge origin/main
     
-    ```
+     ```
 
 Use the strategy your team standardizes on, since branch protection settings (and review expectations) often assume a particular workflow.
 
