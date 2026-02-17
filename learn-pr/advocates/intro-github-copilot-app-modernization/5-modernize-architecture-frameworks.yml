@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.introduction-github-app-modernization.modernizing-architecture-frameworks
+uid: learn.introduction-github-app-modernization.modernize-architecture-frameworks
 title: Modernizing architecture and frameworks
 metadata:
   title: Modernizing Architecture and Frameworks
@@ -10,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 4
 content: |
-  [!include[](includes/5-modernizing-architecture-frameworks.md)]
+  [!include[](includes/5-modernize-architecture-frameworks.md)]
