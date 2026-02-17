@@ -3,7 +3,7 @@ uid: learn.introduction-github-app-modernization.modernize-architecture-framewor
 title: Modernizing architecture and frameworks
 metadata:
   title: Modernizing Architecture and Frameworks
-  description: Learn how to use GitHub Copilot to modernize application architecture and frameworks, including migrating to microservices, adopting cloud-native technologies, and ensuring compatibility with modern development practices.
+  description: Learn how to use GitHub Copilot to modernize application architecture and frameworks.
   ms.date: 02/17/2026
   author: Orin-Thomas
   ms.author: orthomas
