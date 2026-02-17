@@ -15,8 +15,6 @@ summary: |
   Azure Copilot is an AI-driven cloud assistant that helps you perform operations tasks in Azure. Azure Copilot includes six specialized agents, which assist you with managing and maintaining your Azure workloads. 
   In this module, you get an overview of each of the agents available in Azure Copilot and how you can use them to perform common Azure operations tasks more efficiently.
 abstract: | 
-  Azure Copilot is an AI-driven cloud assistant that helps you perform operations tasks in Azure. Azure Copilot includes six specialized agents, which assist you with managing and maintaining your Azure workloads. 
-  In this module, you get an overview of each of the agents available in Azure Copilot and how you can use them to perform common Azure operations tasks more efficiently. 
   By completing this module, you learn about the functionality of the following Azure Copilot agents:
   -	Deployment agent
   -	Migration agent

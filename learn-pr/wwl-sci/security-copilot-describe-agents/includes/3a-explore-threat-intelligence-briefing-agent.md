@@ -1,4 +1,4 @@
-In this exercise, you explore the Threat Intelligence Briefing Agent in Security Copilot.
+In this exercise, you explore the Threat Intelligence Briefing Agent in the standalone experience of Security Copilot.
 
 > [!NOTE]
 >The environment for this exercise is a simulation generated from the product. As a limited simulation, links on a page may not be enabled and text-based inputs that fall outside of the specified script may not be supported. A pop-up message displays stating, "This feature is not available within the simulation." When this occurs, select OK and continue the exercise steps.
