@@ -30,7 +30,7 @@ roles:
 products:
 - azure-app-configuration
 subjects:
-- cache
+- application-management
 units:
 - learn.wwl.manage-app-settings-app-config.introduction
 - learn.wwl.manage-app-settings-app-config.connect-app-configuration
