@@ -1,6 +1,6 @@
 From a user interface perspective, GHES looks familiar. However, the developer experience differs in meaningful ways, particularly around automation, integrations, and tooling.
 
-### In this unit, you’ll learn
+### In this unit, you'll learn
 
 - How GitHub Actions works on GHES
 
@@ -48,4 +48,4 @@ Developers should verify availability before relying on cloud-first workflows.
 
 Key takeaway: The GHES developer experience is shaped by self-managed infrastructure-automation, integrations, and even “available features” can depend on what is deployed, licensed, and enabled in your environment.
 
-Now that you’ve seen how GHES can differ in everyday development workflows, the next unit introduces GitHub Connect and hybrid scenarios that can extend GHES with selected GitHub.com capabilities.
+Now that you've seen how GHES can differ in everyday development workflows, the next unit introduces GitHub Connect and hybrid scenarios that can extend GHES with selected GitHub.com capabilities.

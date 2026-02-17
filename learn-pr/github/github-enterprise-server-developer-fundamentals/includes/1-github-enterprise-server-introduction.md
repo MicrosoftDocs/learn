@@ -8,7 +8,7 @@ This infrastructure may be on-premises, in a private cloud, or hosted with a sup
 
 - Why enterprises choose self-hosted GitHub deployments
 
-- What “self-managed” means for developers and platform teams
+- What "self-managed" means for developers and platform teams
 
 - How GHES fits into regulated and security-sensitive environments
 
@@ -54,16 +54,16 @@ Developer takeaway: GHES prioritizes control and predictability over speed of fe
 In a self-managed GitHub Enterprise Server environment, responsibility for operating GitHub shifts from GitHub to the customer.
 
 - Platform team ownership
- Platform teams manage installation, upgrades, security patching, backups, monitoring, and availability of the GHES instance.
+  Platform teams manage installation, upgrades, security patching, backups, monitoring, and availability of the GHES instance.
 
 - Developer dependencies on platform teams
- Developers rely on internal teams for enabling features, configuring integrations, and resolving infrastructure-related issues.
+  Developers rely on internal teams for enabling features, configuring integrations, and resolving infrastructure-related issues.
 
 - Infrastructure-driven limitations
- Some capabilities-such as GitHub-hosted runners or cloud-native services-are unavailable, requiring developers to adapt workflows.
+  Some capabilities-such as GitHub-hosted runners or cloud-native services-are unavailable, requiring developers to adapt workflows.
 
 - Operational awareness
- Developers must be aware of system constraints, maintenance windows, and version differences that affect day-to-day work.
+  Developers must be aware of system constraints, maintenance windows, and version differences that affect day-to-day work.
 
 ### How GHES fits into regulated and security-sensitive environments
 
