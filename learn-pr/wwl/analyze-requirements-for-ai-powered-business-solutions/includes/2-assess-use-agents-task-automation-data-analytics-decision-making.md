@@ -2,13 +2,10 @@
 
 By the end of this unit, learners will be able to:
 
-Explain how AI agents support **task automation**, **data analytics**, and **decision-making**.
-
-Describe how **Microsoft Copilot experiences** enhance productivity across workflows.
-
-Identify how **generative AI** unlocks productivity and supports responsible decision-making.
-
-Assess scenarios where agents add measurable value for enterprise environments.
+- Explain how AI agents support **task automation**, **data analytics**, and **decision-making**.
+- Describe how **Microsoft Copilot experiences** enhance productivity across workflows.
+- Identify how **generative AI** unlocks productivity and supports responsible decision-making.
+- Assess scenarios where agents add measurable value for enterprise environments.
 
 ## 1. Introduction
 
@@ -34,7 +31,7 @@ Triggering multi-step processes (approvals, notifications, content generation).
 
 These capabilities reduce cognitive load and help teams focus on strategic, not repetitive, work.<br>
 
-**Chart: Examples of Agent-Driven Task Automation**
+**Examples of Agent-Driven Task Automation**
 
 | **Task Area** | **How Agents Help** | **Tools** |
 |---|---|---|
@@ -61,7 +58,7 @@ Copilot experiences help employees make sense of data without requiring advanced
 
 **Visual Diagram: AI Agents in the Analytics Workflow**
 
-User Question → AI Agent → Data Retrieval → Insight Generation → Recommended Actions
+:::image type="content" source="../media/ai-agents-analytics-workflow.png" alt-text="Diagram showing how AI agents integrate into the analytics workflow, from data ingestion through insight generation and decision support.":::
 
 ## 4. Agents in Decision-Making
 
@@ -100,15 +97,3 @@ Use these links as the primary sources for this unit:
 **Explore Copilot Experiences**<br>[Explore Copilot Experiences](/training/modules/business-value-microsoft-copilot-solutions/3-explore-copilot-experiences) 
 
 **Unlock Productivity with Generative AI - Microsoft Learn**<br>[Unlock Productivity with Generative AI](/training/modules/generative-ai-productivity/)
-
-**Knowledge Check**
-
-**1. Multiple Choice**
-
-**Which of the following is a key benefit of using AI agents for data analytics?**<br>A. They replace the need for all BI tools<br>B. They translate natural language questions into insights<br>C. They eliminate the need for data governance<br>D. They require manual configuration for every dataset
-
-**Correct Answer: B**
-
-**2. Open Reflection / Discussion**
-
-**How could AI agents improve decision-making in your team's current processes? Provide an example.**

@@ -2,13 +2,10 @@
 
 After completing this unit, learners will be able to:
 
-Evaluate the quality of grounding data across five dimensions: **accuracy, relevance, timeliness, cleanliness, availability**.
-
-Explain why grounding is essential for reliable AI agent behavior.
-
-Identify data sources appropriate for grounding AI using Microsoft 365 and Copilot Studio.
-
-Apply best practices when preparing and validating grounding data.
+- Evaluate the quality of grounding data across five dimensions: **accuracy, relevance, timeliness, cleanliness, availability**.
+- Explain why grounding is essential for reliable AI agent behavior.
+- Identify data sources appropriate for grounding AI using Microsoft 365 and Copilot Studio.
+- Apply best practices when preparing and validating grounding data.
 
 ## 1. Understanding Grounding in AI Agents
 
@@ -20,67 +17,73 @@ To support advanced grounding, the **Copilot Retrieval API** retrieves relevant 
 
 ## 2. The Five Dimensions of Grounding Data Quality
 
-## 2.1 Accuracy
+### 2.1 Accuracy
 
 Data should reflect real, verifiable facts. Inaccurate content leads to incorrect or harmful agent outputs.<br>AI agents must use **trusted and validated datasets** during retrieval to avoid generating incorrect responses. 
 
 **Indicators of accuracy:**
 
-Verified by SMEs
+- Verified by SMEs
 
-Matched to authoritative sources
+- Matched to authoritative sources
 
-Free from errors or outdated assumptions
+- Free from errors or outdated assumptions
 
-## 2.2 Relevance
+### 2.2 Relevance
 
-Grounding data must match the **intended use case** of the agent.<br>When data is irrelevant, semantic search may retrieve conceptually similar—but contextually wrong—content.<br>
+Grounding data must match the **intended use case** of the agent.
+
+When data is irrelevant, semantic search may retrieve conceptually similar—but contextually wrong—content.
 
 Relevance ensures the model surfaces information aligned with the user's scenario, workflow, or business domain.
 
-## 2.3 Timeliness
+### 2.3 Timeliness
 
-AI outputs degrade when data is stale.<br>The **semantic index** in Microsoft 365 continuously updates as content changes, ensuring the grounding layer reflects the latest documents, conversations, and knowledge.<br>
+AI outputs degrade when data is stale.
+
+The **semantic index** in Microsoft 365 continuously updates as content changes, ensuring the grounding layer reflects the latest documents, conversations, and knowledge.
 
 Timeliness includes:
 
-Modified dates
+- Modified dates
 
-Seasonal or compliance-related updates
+- Seasonal or compliance-related updates
 
-Data refresh schedules
+- Data refresh schedules
 
-## 2.4 Cleanliness
+### 2.4 Cleanliness
 
-Clean data reduces noise and increases retrieval precision. 
+Clean data reduces noise and increases retrieval precision.
 
-Data Pollution in AI refers to the degradation of data quality that negatively impacts the performance and reliability of AI systems. 
+Data Pollution in AI refers to the degradation of data quality that negatively impacts the performance and reliability of AI systems.
 
-<br>Cleaner data improves embedding quality and helps the agent retrieve the most appropriate content.
+Cleaner data improves embedding quality and helps the agent retrieve the most appropriate content.
 
 Clean data characteristics:
 
-Clear structure
+- Clear structure
 
-No duplicates
+- No duplicates
 
-Minimal irrelevant metadata
+- Minimal irrelevant metadata
 
-Stable formatting and predictable layout
+- Stable formatting and predictable layout
 
-## 2.5 Availability
+### 2.5 Availability
 
-Agents can only ground responses from **data the user has access to**.<br>The Retrieval API respects permissions and will not return content beyond a user's access scope.<br>
+Agents can only ground responses from **data the user has access to**.
+
+The Retrieval API respects permissions and will not return content beyond a user's access scope.
 
 Availability depends on:
 
-Storage in SharePoint/OneDrive or connected systems
+- Storage in SharePoint/OneDrive or connected systems
 
-Proper indexing in Microsoft Graph
+- Proper indexing in Microsoft Graph
 
-Clear access controls
+- Clear access controls
 
-## 3. Chart: Dimensions of Grounding Data Quality
+## 3. Dimensions of Grounding Data Quality
 
 | **Dimension** | **Definition** | **Impact on Agent Performance** |
 |---|---|---|
@@ -92,7 +95,7 @@ Clear access controls
 
 ## 4. Diagram: How Microsoft Copilot Grounds AI Responses
 
-  _Diagram grounded in documentation describing semantic index + Retrieval API pipeline._<br>
+  _Diagram grounded in documentation describing semantic index + Retrieval API pipeline.
 
 ## 5. Best Practices for Reviewing Grounding Data
 
@@ -117,19 +120,3 @@ _Semantic indexing for Microsoft 365 Copilot_<br>[Semantic indexing for Microsof
 _Microsoft 365 Copilot Retrieval API_<br>[Microsoft 365 Copilot Retrieval API](/microsoft-365-copilot/extensibility/api/ai-services/retrieval/copilotroot-retrieval)
 
 _Manage Grounding With Bing in Microsoft Foundry and Azure_<br>[Manage Grounding With Bing](/azure/ai-foundry/agents/how-to/manage-grounding-with-bing)
-
-**Knowledge Check**
-
-**1. Multiple Choice**
-
-Which grounding data dimension ensures the model retrieves information aligned with the intended business scenario?
-
-A. Cleanliness<br>B. Availability<br>C. Relevance<br>D. Timeliness
-
-**Correct Answer: C. Relevance**
-
-**2. Discussion Question**
-
-What would happen if you do not take grounding into consideration in your AI strategy?
-
-How might poor data timeliness impact an AI agent that relies on policy or compliance documents?<br>Provide examples from your organization's workflows

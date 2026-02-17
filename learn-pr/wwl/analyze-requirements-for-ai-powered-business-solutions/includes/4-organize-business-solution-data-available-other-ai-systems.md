@@ -2,13 +2,10 @@
 
 By the end of this unit, learners will be able to:
 
-Explain why wellorganized business solution data is essential for AI readiness.
-
-Identify architectural components that enable AI agents and AI systems to consume organizational data.
-
-Apply best practices for structuring, storing, indexing, and exposing data so AI systems can use it reliably.
-
-Understand how the Azure platform, Microsoft databases, and data architecture patterns support enterprise AI scenarios.
+- Explain why wellorganized business solution data is essential for AI readiness.
+- Identify architectural components that enable AI agents and AI systems to consume organizational data.
+- Apply best practices for structuring, storing, indexing, and exposing data so AI systems can use it reliably.
+- Understand how the Azure platform, Microsoft databases, and data architecture patterns support enterprise AI scenarios.
 
 ## 1. Introduction
 
@@ -16,15 +13,15 @@ AI systems—whether Copilot, autonomous agents, or custom-built AI applications
 
 Organizing business solution data is not only a technical requirement but a business imperative. When data is structured correctly, it becomes available for:
 
-Copilot for Microsoft 365
+- Copilot for Microsoft 365
 
-AI agents built in Copilot Studio
+- AI agents built in Copilot Studio
 
-Custom AI apps built with Azure AI
+- Custom AI apps built with Azure AI
 
-Retrievalaugmented generation (RAG) pipelines
+- Retrievalaugmented generation (RAG) pipelines
 
-Analytics and automation solutions
+- Analytics and automation solutions
 
 Retrieval-Augmented Generation (REG) is an architecture that separates prototypes from trustworthy systems. A RAG pipeline is the system that performs all the steps required to make RAG work in a production environment, handling the data ingestion, streaming, cleaning, chunking, embedding, indexing, retrieval, prompt assembly, orchestration, and monitoring that allow an LLM to use retrieved context when generating an answer There are several advantages of leveraging RAG pipelines:
 
@@ -36,7 +33,7 @@ This unit explains how to organize your business data to become **usable, discov
 
 ## 2. Key Concepts for Organizing AIReady Data
 
-## 2.1 Drive Transformation with Azure Data & AI Platforms
+### 2.1 Drive Transformation with Azure Data & AI Platforms
 
 _(From: Leverage AI tools - Drive Transformation on Azure)_
 
@@ -50,7 +47,7 @@ Azure provides the foundational components necessary to **centralize, transform,
 
 **Interoperability**: APIs, event hubs, and data streaming allow multiple AI systems to use the same data.
 
-**Chart - Azure Data Estate for AI**
+**Azure Data Estate for AI**
 
 | **Layer** | **Purpose** |
 |---|---|
@@ -59,7 +56,7 @@ Azure provides the foundational components necessary to **centralize, transform,
 | **Intelligence Layer (Search + Vector Index)** | Enable grounding, retrieval, semantic search |
 | **AI Apps + Agents** | Copilot, custom RAG apps, autonomous agents |
 
-## 2.2 Data Architecture for AI Agents Across the Organization
+### 2.2 Data Architecture for AI Agents Across the Organization
 
 _(From: Data architecture for AI agents across your organization - Cloud Adoption Framework)_
 
@@ -77,7 +74,7 @@ Microsoft's Cloud Adoption Framework defines how to design a **data architecture
 
 **Visual Diagram - AI Agent Data Architecture**
 
-## 2.3 Make Databases AIReady
+### 2.3 Make Databases AIReady
 
 _(From: Building intelligent AI apps with Microsoft databases)_
 
@@ -93,13 +90,13 @@ Microsoft database technologies provide builtin intelligence for AI:
 
 Use cases:
 
-Storing embeddings for RAG apps
+- Storing embeddings for RAG apps
 
-Managing structured and unstructured content
+- Managing structured and unstructured content
 
-Supporting real-time AI agent decisions
+- Supporting real-time AI agent decisions
 
-Performing high-volume transactions required by autonomous agents
+- Performing high-volume transactions required by autonomous agents
 
 ## 3. Best Practices for Organizing Business Data for AI Systems
 
@@ -119,27 +116,27 @@ Microsoft 365 Copilot requires semantic indexing for grounding content correctly
 
 Expose data through:
 
-APIs
+- APIs
 
-Search indexes
+- Search indexes
 
-RAG pipelines
+- RAG pipelines
 
-Graph connectors
+- Graph connectors
 
-SQL endpoints
+- SQL endpoints
 
 **✔ 5. Implement governance early**
 
 Use Purview for:
 
-Access policies
+- Access policies
 
-Sensitivity labels
+- Sensitivity labels
 
-Lineage
+- Lineage
 
-Data quality rules
+- Data quality rules
 
 **✔ 6. Keep data authoritative & updated**
 
@@ -154,17 +151,3 @@ Use these links for this unit:
 [Building intelligent AI apps with Microsoft databases](https://techcommunity.microsoft.com/blog/azuredatablog/building-intelligent-ai-apps-with-microsoft-databases/4413833)
 
 [Data architecture for AI agents](/azure/cloud-adoption-framework/ai-agents/data-architecture-plan) 
-
-**5. Knowledge Check**
-
-**Question 1 — Multiple Choice**
-
-Which component ensures AI agents can retrieve and interpret enterprise data accurately?
-
-A. User interface customization<br>B. Semantic indexing<br>C. Microsoft Teams channels<br>D. Email distribution lists
-
-**Correct Answer: B. Semantic indexing**
-
-**Question 2 — Open Discussion**
-
-Your team wants to deploy an AI agent that answers policy and process questions.<br>What types of data must be collected and categorized first? What risks exist if the data is not governed?
