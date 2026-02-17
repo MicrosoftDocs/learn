@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.develop-ai-agents-azure-vs-code.test-deploy-integrate
+title: Test, deploy, and integrate agents
+metadata:
+  title: Test, Deploy, and Integrate Agents
+  description: Learn how to test agents, deploy to production, and integrate them into applications.
+  ms.date: 02/12/2026
+  author: ivorb
+  ms.author: berryivor
+  ms.topic: unit
+  ai-usage: ai-generated
+durationInMinutes: 10
+content: |
+  [!include[](includes/8-test-deploy-integrate.md)]

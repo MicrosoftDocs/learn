@@ -4,11 +4,11 @@ title: Evaluate solutions for data discovery and classification
 metadata:
   title: Evaluate solutions for data discovery and classification
   description: "SC-100 preparatory unit on the topic: Evaluate solutions for data discovery and classification."
-  ms.date: 07/25/2025
+  ms.date: 01/26/2026
   author: ceperezb
   ms.author: ceperezb
   ms.topic: unit
-  ai-usage: ai-assisted
+  ai-usage: ai-generated
 durationInMinutes: 10
 content: |
   [!include[](includes/2-design-solution-data-discovery-classification-microsoft-purview.md)]

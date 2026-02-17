@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.develop-ai-agents-azure-vs-code.understand-ai-agents-foundry
+title: Understand AI agents and Microsoft Foundry Agent Service
+metadata:
+  title: Understand AI Agents and Microsoft Foundry Agent Service
+  description: Learn about AI agents, their capabilities, use cases, and the features of Microsoft Foundry Agent Service.
+  ms.date: 02/12/2026
+  author: ivorb
+  ms.author: berryivor
+  ms.topic: unit
+  ai-usage: ai-generated
+durationInMinutes: 8
+content: |
+  [!include[](includes/2-understand-ai-agents-foundry.md)]

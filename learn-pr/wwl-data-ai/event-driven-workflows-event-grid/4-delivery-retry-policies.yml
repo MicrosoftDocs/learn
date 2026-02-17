@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.event-driven-workflows-event-grid.delivery-retry-policies
+title: Configure delivery and retry policies for reliable event processing
+metadata:
+  title: Configure Delivery and Retry Policies for Reliable Event Processing
+  description: Learn how to configure Event Grid delivery and retry behavior to handle transient failures in AI pipelines.
+  ms.date: 02/13/2026
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: unit
+durationInMinutes: 12
+content: |
+  [!include[](includes/4-delivery-retry-policies.md)]

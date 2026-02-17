@@ -1,0 +1,8 @@
+In this module, you learned how Azure Service Bus provides enterprise-grade messaging capabilities that decouple AI application components and ensure reliable delivery of inference requests. You explored the core concepts of namespaces, queues, and topics with subscriptions. You also explored how messaging patterns like load leveling, competing consumers, and temporal decoupling address common AI architecture challenges such as variable inference latency and traffic spikes. You learned how to choose between queues for single-consumer processing and topics with subscriptions for fan-out workflows where multiple services react to the same event. You examined how to structure messages for AI workloads by serializing prompts and model parameters as JSON payloads. You also learned how to include correlation IDs for end-to-end request tracking and apply the claim-check pattern when payloads exceed message size limits. Finally, you learned how to process messages reliably using peek-lock receive mode and settle messages with complete, abandon, and dead-letter operations. You also explored how to handle poison messages through max delivery count and monitor the dead-letter queue to detect systemic processing failures.
+
+## Additional resources
+
+- [Azure Service Bus documentation](/azure/service-bus-messaging/)
+- [Azure Service Bus Python SDK samples](https://github.com/Azure/azure-sdk-for-python/tree/main/sdk/servicebus/azure-servicebus/samples)
+- [Service Bus best practices for performance improvements](/azure/service-bus-messaging/service-bus-performance-improvements)
+- [Claim-check pattern](/azure/architecture/patterns/claim-check)

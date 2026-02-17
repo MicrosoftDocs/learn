@@ -3,7 +3,7 @@ uid: learn.wwl.ingest-data-into-unity-catalog
 metadata:
   title: Ingest Data into Unity Catalog
   description: Learn how to ingest data from diverse sources into Unity Catalog tables in Azure Databricks using managed connectors, notebooks, SQL commands, streaming, and declarative pipelines.
-  ms.date: 12/07/2025
+  ms.date: 02/16/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: module
