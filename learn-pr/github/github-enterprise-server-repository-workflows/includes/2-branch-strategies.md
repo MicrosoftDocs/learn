@@ -26,7 +26,7 @@ Strict branching rules help organizations reduce the risk of unreviewed or unsta
 
 For developers, this discipline can initially feel restrictive. Over time, however, it provides clarity and predictability, especially in large teams where uncontrolled branching quickly leads to confusion.
 
-### Step-by-Step: Create a feature branch and keep it up to date
+### Step-by-step: Create a feature branch and keep it up to date
 
 Your organization may have specific naming conventions and rules, but this flow is a common baseline for working safely with a protected default branch.
 

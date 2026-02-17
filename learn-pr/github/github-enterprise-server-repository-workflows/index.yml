@@ -1,6 +1,6 @@
 ### YamlMime:Module
 uid: learn.github.github-enterprise-server-repository-workflows
-title: GitHub Enterprise Server Fundamentals for Developers
+title: GitHub Enterprise Server fundamentals for developers
 metadata:
   title: GitHub Enterprise Server Fundamentals for Developers
   description: Overview of collaboration on GitHub Enterprise Server (GHES), focusing on governance, branch policies, and pull request workflows.

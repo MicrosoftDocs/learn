@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.github.github-enterprise-server-repository-workflows.pull-request-review
-title: Pull Requests and Code Review on GHES
+title: Pull requests and code review on GHES
 metadata:
   title: Pull Requests and Code Review on GHES
   description: This content is a part of the Repositories, Branching & Collaboration on GitHub Enterprise Server module.

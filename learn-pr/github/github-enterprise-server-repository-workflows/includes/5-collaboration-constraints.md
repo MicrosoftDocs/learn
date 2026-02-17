@@ -20,7 +20,7 @@ In self-managed environments, platform and DevOps teams are responsible for the 
 
 Effective collaboration includes understanding platform constraints, communicating requirements early, and treating platform teams as partners in the development process rather than external service providers.
 
-### Step-by-Step: Diagnose a failing check or workflow (high-level)
+### Step-by-step: Diagnose a failing check or workflow (high-level)
 
 When a required check fails or stays pending, use a methodical approach before escalating.
 

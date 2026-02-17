@@ -36,7 +36,7 @@ Reviewers on GHES play an active role in maintaining quality and compliance. The
 
 Because approvals may carry formal accountability, reviewers should be confident in the changes they approve. This reinforces trust in the collaboration process and the stability of protected branches.
 
-### Step-by-Step: Open a pull request and request review
+### Step-by-step: Open a pull request and request review
 
 Exact steps vary by organization, but this flow works in most GHES environments.
 

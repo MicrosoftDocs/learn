@@ -37,7 +37,7 @@ To further support consistency, many organizations rely on repository templates.
 
 Before creating a new repository on GHES, developers should check whether approved templates exist and follow organizational guidance. Using the correct template is often the fastest path to getting started.
 
-### Step-by-Step: Confirm you're in the right repository and understand its standards
+### Step-by-step: Confirm you're in the right repository and understand its standards
 
 If you are joining an existing project, start by verifying you're working in the correct organization and repository, and identify any standards the repository expects you to follow.
 

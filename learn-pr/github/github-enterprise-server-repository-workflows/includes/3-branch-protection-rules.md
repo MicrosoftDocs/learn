@@ -16,7 +16,7 @@ Additional protections may prevent force pushes, restrict who can merge changes,
 
 Organizations may also require review from code owners for specific paths, require conversations to be resolved before merging, enforce a specific merge method (such as squash merging), or require a linear commit history. Some enterprises also restrict who can push to protected branches, even through pull requests, to ensure only approved roles can complete merges.
 
-## Repository rulesets: Policy at Scale
+## Repository rulesets: Policy at scale
 
 In addition to traditional branch protection rules, GitHub Enterprise Server supports repository rulesets. Rulesets allow administrators to enforce policies across multiple branches or repositories from a centralized location.
 
@@ -44,7 +44,7 @@ Planning for these steps reduces last-minute delays.
 
 If merging is blocked, use the pull request details to identify exactly which requirement is unmet (for example, missing approvals, unresolved conversations, or failing status checks) before escalating to others.
 
-## Branch queue (Merge queue) for stable integration
+## Branch queue (merge queue) for stable integration
 
 In high-activity repositories, pull requests that pass checks individually can still break the default branch when merged concurrently. Branch queue (merge queue) reduces this risk by validating pull requests in merge order.
 
