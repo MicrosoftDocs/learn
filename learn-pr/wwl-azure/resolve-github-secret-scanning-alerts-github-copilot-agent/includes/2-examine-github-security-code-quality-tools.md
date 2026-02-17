@@ -125,46 +125,48 @@ Security overview provides a centralized dashboard to review the overall securit
 
 ## GitHub security tools by plan availability
 
-The following table summarizes GitHub's security and code quality tools and the GitHub plans required to use them.
+The following table summarizes GitHub's security and code quality tools, the minimum GitHub plan required to use them, and whether the GitHub Secret Protection or GitHub Code Security add-on is needed.
 
-| Tool | All plans (public repos) | All plans (private repos) | GitHub Secret Protection | GitHub Code Security |
-|---|---|---|---|---|
-| **Supply chain security** | | | | |
-| Dependency graph | &#x2705; | &#x2705; | &mdash; | &mdash; |
-| Software Bill of Materials (SBOM) | &#x2705; | &#x2705; | &mdash; | &mdash; |
-| GitHub Advisory Database | &#x2705; | &#x2705; | &mdash; | &mdash; |
-| Dependabot alerts and security updates | &#x2705; | &#x2705; | &mdash; | &mdash; |
-| Dependabot version updates | &#x2705; | &#x2705; | &mdash; | &mdash; |
-| Dependency review | &#x2705; | &mdash; | &mdash; | &#x2705; |
-| Custom auto-triage rules for Dependabot | &#x2705; | &mdash; | &mdash; | &#x2705; |
-| **Secret security** | | | | |
-| Secret scanning alerts for partners | &#x2705; | &mdash; | &mdash; | &mdash; |
-| Push protection for users | &#x2705; | &mdash; | &mdash; | &mdash; |
-| Secret scanning alerts for users | &#x2705; | &mdash; | &#x2705; | &mdash; |
-| Push protection (repository-level) | &#x2705; | &mdash; | &#x2705; | &mdash; |
-| Copilot secret scanning | &mdash; | &mdash; | &#x2705; | &mdash; |
-| Delegated bypass for push protection | &mdash; | &mdash; | &#x2705; | &mdash; |
-| Custom patterns for secret scanning | &mdash; | &mdash; | &#x2705; | &mdash; |
-| **Code security** | | | | |
-| Code scanning | &#x2705; | &mdash; | &mdash; | &#x2705; |
-| CodeQL CLI | &#x2705; | &mdash; | &mdash; | &#x2705; |
-| Copilot Autofix for code scanning | &#x2705; | &mdash; | &mdash; | &#x2705; |
-| Security campaigns | &mdash; | &mdash; | &mdash; | &#x2705; |
-| **Code quality** | | | | |
-| GitHub Code Quality | &mdash; | &mdash; | &mdash; | &#x2705; \* |
-| **General security** | | | | |
-| Security policy | &#x2705; | &#x2705; | &mdash; | &mdash; |
-| Security advisories | &#x2705; | &#x2705; | &mdash; | &mdash; |
-| Repository rulesets | &#x2705; | &#x2705; | &mdash; | &mdash; |
-| Artifact attestations | &#x2705; | &#x2705; \*\* | &mdash; | &mdash; |
-| Security overview | &mdash; | &mdash; | &#x2705; | &#x2705; |
+> [!NOTE]
+> GitHub Secret Protection and GitHub Code Security are paid add-on products that can be purchased by organizations on **GitHub Team** and **GitHub Enterprise Cloud** plans. Many features included in these add-on products are also available for free on public repositories, as indicated in the table below.
 
-\* GitHub Code Quality requires GitHub Team or GitHub Enterprise Cloud (currently in public preview).
+| Tool | Minimum GitHub plan | Public repos | Private repos | GitHub Secret Protection | GitHub Code Security |
+|---|---|---|---|---|---|
+| **Supply chain security** | | | | | |
+| Dependency graph | All plans | &#x2705; | &#x2705; | &mdash; | &mdash; |
+| Software Bill of Materials (SBOM) | All plans | &#x2705; | &#x2705; | &mdash; | &mdash; |
+| GitHub Advisory Database | All plans | &#x2705; | &#x2705; | &mdash; | &mdash; |
+| Dependabot alerts and security updates | All plans | &#x2705; | &#x2705; | &mdash; | &mdash; |
+| Dependabot version updates | All plans | &#x2705; | &#x2705; | &mdash; | &mdash; |
+| Dependency review | All plans (public) / GitHub Team (private) | &#x2705; | &mdash; | &mdash; | &#x2705; |
+| Custom auto-triage rules for Dependabot | All plans (public) / GitHub Team (private) | &#x2705; | &mdash; | &mdash; | &#x2705; |
+| **Secret security** | | | | | |
+| Secret scanning alerts for partners | All plans | &#x2705; | &mdash; | &mdash; | &mdash; |
+| Push protection for users | All plans | &#x2705; | &mdash; | &mdash; | &mdash; |
+| Secret scanning alerts for users | All plans (public) / GitHub Team (private) | &#x2705; | &mdash; | &#x2705; | &mdash; |
+| Push protection (repository-level) | All plans (public) / GitHub Team (private) | &#x2705; | &mdash; | &#x2705; | &mdash; |
+| Copilot secret scanning | GitHub Team | &mdash; | &mdash; | &#x2705; | &mdash; |
+| Delegated bypass for push protection | GitHub Team | &mdash; | &mdash; | &#x2705; | &mdash; |
+| Custom patterns for secret scanning | GitHub Team | &mdash; | &mdash; | &#x2705; | &mdash; |
+| **Code security** | | | | | |
+| Code scanning | All plans (public) / GitHub Team (private) | &#x2705; | &mdash; | &mdash; | &#x2705; |
+| CodeQL CLI | All plans (public) / GitHub Team (private) | &#x2705; | &mdash; | &mdash; | &#x2705; |
+| Copilot Autofix for code scanning | All plans (public) / GitHub Team (private) | &#x2705; | &mdash; | &mdash; | &#x2705; |
+| Security campaigns | GitHub Team | &mdash; | &mdash; | &mdash; | &#x2705; |
+| **Code quality** | | | | | |
+| GitHub Code Quality | GitHub Team \* | &mdash; | &mdash; | &mdash; | &#x2705; |
+| **General security** | | | | | |
+| Security policy | All plans | &#x2705; | &#x2705; | &mdash; | &mdash; |
+| Security advisories | All plans | &#x2705; | &#x2705; | &mdash; | &mdash; |
+| Repository rulesets | All plans | &#x2705; | &#x2705; | &mdash; | &mdash; |
+| Artifact attestations | All plans (public) / GitHub Enterprise Cloud (private) | &#x2705; | &#x2705; \*\* | &mdash; | &mdash; |
+| Security overview | GitHub Team | &mdash; | &mdash; | &#x2705; | &#x2705; |
+
+\* GitHub Code Quality is currently in public preview.
 
 \*\* Artifact attestations for private repositories require GitHub Enterprise Cloud.
 
-> [!NOTE]
-> GitHub Secret Protection and GitHub Code Security are paid add-on products available for organizations on GitHub Team and GitHub Enterprise Cloud plans. Many features included in these products are also available for free on public repositories, as indicated in the table above.
+In the table above, "All plans" means the tool is available at no extra cost on every GitHub plan, including the free plans (GitHub Free for personal accounts and GitHub Free for organizations). "GitHub Team" means the minimum required plan is GitHub Team or GitHub Enterprise Cloud, both of which are paid plans that also support purchasing the GitHub Secret Protection and GitHub Code Security add-on products. Detailed pricing information is available from GitHub.
 
 ## How GitHub's security tools work together
 
