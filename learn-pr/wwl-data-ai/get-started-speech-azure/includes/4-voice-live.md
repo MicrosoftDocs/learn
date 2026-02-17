@@ -15,7 +15,7 @@ Speech‑to‑speech enables systems to:
 - Understand or transform what was said
 - Respond with *synthetic speech*
 
-Speech‑to‑speech combines speech‑to‑text and text‑to‑speech into a single conversational experience. Speech‑to‑speech is usually built as a pipeline of speech and language capabilities. The pipeline completes: 
+Speech‑to‑speech combines speech‑to‑text and text‑to‑speech into a single conversational experience. Speech‑to‑speech is built as a pipeline of speech and language capabilities. The pipeline completes: 
 
 1. **Speech‑to‑Text**: Converting the user’s spoken audio into text.
 2. **Processing or reasoning**: Analyzing, translating, and summarizing the text, or used by an AI agent to decide what to say next.
@@ -33,9 +33,9 @@ Common speech‑to‑speech scenarios include:
 
 Azure Speech includes a **VoiceLive Service** which makes it easier to build conversational agents. The **Voice Live API** lets applications have real‑time voice conversations. It allows a voice agent to listen to someone speaking and respond with spoken audio quickly and naturally.
 
-Instead of building and connecting many separate pieces—like speech‑to‑text, AI reasoning, and text‑to‑speech—the Voice Live API combines everything into one service. This makes it easier and faster for developers to create voice‑based experiences.
+Instead of building and connecting many separate pieces—like speech‑to‑text, AI reasoning, and text‑to‑speech—the Voice Live API combines everything into one service. The Voice Live API makes it easier and faster for developers to create voice‑based experiences.
 
-*VoiceLive* is fully managed by Azure, which means you don’t need to set up or maintain the backend systems yourself. When you send audio into VoiceLive, it sends back spoken responses. VoiceLive can also return visuals, such as avatars, and trigger actions when needed. Azure handles the models and infrastructure behind the scenes, so you can focus on building the voice experience.
+Azure fully manages *VoiceLive*, which means you don’t need to set up or maintain the backend systems yourself. When you send audio into VoiceLive, it sends back spoken responses. VoiceLive can also return visuals, such as avatars, and trigger actions when needed. Azure handles the models and infrastructure behind the scenes, so you can focus on building the voice experience.
 
 Azure speech-to-speech solutions utilize: 
 
@@ -44,9 +44,9 @@ Azure speech-to-speech solutions utilize:
 - **Foundry Tools or MCP servers** which can expose speech as callable tools so agents don’t manage SDKs or APIs directly.
 
 >[!NOTE]
-> The **Azure Speech in Foundry Tools MCP server** exposes speech-to-text and text-to-speech as callable tools, allowing AI agents to work with spoken language without directly managing Azure Speech APIs. This makes it easier to build voice‑enabled AI agents that can listen, think, and speak.
+> The **Azure Speech in Foundry Tools MCP server** exposes speech-to-text and text-to-speech as callable tools, allowing AI agents to work with spoken language without directly managing Azure Speech APIs. the Azure Speech MCP server makes it easier to build voice‑enabled AI agents that can listen, think, and speak.
 
-You can explore *VoiceLive* in a playground in Foundry portal. The Foundry playground includes some pre-configured voice samples that you can try out, or you can create a new solution of your own. When you create a solution,importantly, you need to choose a generative AI model for your agent to use. Azure Speech Voice Live uses the generative AI model *alongside* its own acoustic models to have a live conversation with the user. In the playground, you can also configure additional settings, like enabling proactive engagement, so the agent can initiate conversations. 
+You can explore *VoiceLive* in a playground in Foundry portal. The Foundry playground includes some preconfigured voice samples that you can try out, or you can create a new solution of your own. When you create a solution, importantly, you need to choose a generative AI model for your agent to use. Azure Speech Voice Live uses the generative AI model *alongside* its own acoustic models to have a live conversation with the user. You can configure many settings in the playground. For example, you can enable proactive engagement, so the agent can initiate conversations. 
 
 :::image type="content" source="../media/voice-live-playground.png" alt-text="Screenshot of voice live in the Foundry playground." lightbox="../media/voice-live-playground.png":::
 

@@ -6,7 +6,7 @@
 
 ::: zone pivot="text"
 
-**Speech recognition** is an AI capability that enables apps and agents to respond to spoken input. It's often called **speech-to-text (STT)**. Speech recognition takes the spoken word and converts it into data, usually text. Speech-to-text software typically uses multiple models, including:
+**Speech recognition**, often called **speech-to-text (STT)**, is an AI capability that enables apps and agents to respond to spoken input. Speech recognition takes the spoken word and converts it into data, usually text. Speech-to-text software typically uses multiple models, including:
 
 - An *acoustic* model that converts the audio into phonemes (representations of specific sounds).
 - A *language* model that maps phonemes to words.
@@ -28,7 +28,7 @@ In the playground, you can either upload an audio file or  record yourself speak
 
 :::image type="content" source="../media/speech-to-text-playground.png" alt-text="Screenshot of speech-to-text in the Foundry playground." lightbox="../media/speech-to-text-playground.png":::
 
-The playground in the Foundry portal is a great place to experiment with Azure Speech, but to use speech-to-text in an application, we will need to write some code. 
+The playground in the Foundry portal is a great place to experiment with Azure Speech, but to use speech-to-text in an application, we need to write some code. 
 
 ## Using the Azure speech-to-text SDK 
 
@@ -110,15 +110,13 @@ speech_recognizer.stop_continuous_recognition()
 ```
 
 #### Client app example
-For example, let's say you want to develop a simple app that automatically transcribes voicemail messages. In the code editor, we have one audio file, and one Python file which contains application code. 
+For example, let's say you want to develop a lightweight app that automatically transcribes voicemail messages. In the code editor, we have one audio file, and one Python file, which contains application code. 
 
 ![Screenshot of Visual Studio Code with an audio file open.](../media/audio-file-in-vs-code.png)
 
-In the audio file, you might have a recorded message, like this: "Hi this is Emma, calling to confirm your appointment for tomorrow. We’ll see you at 11am. If you need to reschedule call me at 555-123-4567 thanks". 
+Say you have an audio file containing a voicemail recording. To transcribe the message, start by specifying the endpoint and key and the audio source you want to transcribe. Then  use a `SpeechRecognizer` object to perform the transcription, before displaying the results. 
 
-To transcribe this message, start by specifying the endpoint and key and the audio source you want to transcribe. Then  use a `SpeechRecognizer` object to perform the transcription, before displaying the results. 
-
-:::image type="content" source="../media/speech-to-text-python" alt-text="Screenshot of speech-to-text python code in visual studio code." lightbox="../media/speech-to-text-python":::
+:::image type="content" source="../media/speech-to-text-python" alt-text="Screenshot of speech-to-text python code in Visual Studio Code." lightbox="../media/speech-to-text-python":::
 
 Once you run the code, you can see the transcription text. 
 

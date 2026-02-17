@@ -6,22 +6,25 @@
 
 ::: zone pivot="text"
 
-**Speech synthesis** is concerned with vocalizing data, usually by converting text to speech. Speech synthesis is often called **text-to-speech (TTS)**, is the process of generating audible speech from a text-based source. 
+**Speech synthesis**, often called **text-to-speech (TTS)**, is concerned with vocalizing data, usually by converting text to speech. Speech synthesis usually generates audible speech from a text-based source. 
 
 A text-to-speech solution typically requires the following information:
 
 - The text to be spoken
 - The voice to be used to vocalize the speech
 
-To synthesize speech, the system typically *tokenizes* the text to break it down into individual words, and assigns phonetic sounds to each word. It then breaks the phonetic transcription into *prosodic* units (such as phrases, clauses, or sentences) to create phonemes that will be converted to audio format. These phonemes are then synthesized as audio and can be assigned a particular voice, speaking rate, pitch, and volume.
+To synthesize speech, the system typically *tokenizes* the text to break it down into individual words, and assigns phonetic sounds to each word. It then breaks the phonetic transcription into *prosodic* units (such as phrases, clauses, or sentences). The system creates phonemes from the prosodic units. These phonemes are then synthesized as audio and can be assigned a particular voice, speaking rate, pitch, and volume.
 
-You can use the output of speech synthesis for many purposes, including generating spoken responses to user input, reading messages aloud, and broadcasting announcements. 
+You can use the output of speech synthesis for many purposes, such as:
+- Generating spoken responses to user input.
+- Reading messages aloud.
+- Broadcasting announcements.
 
 ## Azure Speech - Text to Speech
 
 Azure Speech includes a **text-to-speech API** that we can explore in the Microsoft Foundry portal. 
 
-The text-to-speech API enables you to convert text input to audible speech, which can either be played directly through a computer speaker or written to an audio file. The service includes multiple predefined voices with support for multiple languages and regional pronunciation, including *neural* voices that leverage *neural networks* to overcome common limitations in speech synthesis with regard to intonation, resulting in a more natural sounding voice. You can also develop custom voices and use them with the text to speech API.
+The text-to-speech API enables you to convert text input to audible speech, which can either be played directly through a computer speaker or written to an audio file. The service includes multiple predefined voices with support for multiple languages and regional pronunciation, including *neural* voices that use *neural networks*. Neural voices can overcome common limitations in speech synthesis such as issues with intonation, resulting in a more natural sounding voice. You can also develop custom voices and use them with the text to speech API.
 
 In the *new Microsoft Foundry portal*, we can explore Azure Speech's text-to-speech capabilities in the *Foundry playground*. In the *Azure Speech - Text to Speech* Foundry playground, you can choose a synthetic voice from the available selection. You can also adjust some parameters to control the delivery of the audio, such as speed and pitch. The audio output is generated from the synthesized text. 
 
@@ -37,14 +40,14 @@ The SDK lets your application:
 - Generate spoken audio using neural voices
 - Play or save the audio to speakers or an audio file
 
-The SDK handles authentication, network communication, audio formatting, and playback so you can focus on your app’s experience. 
+The SDK handles authentication, network communication, audio formatting, and play back so you can focus on your app’s experience. 
 
 ## Developing an application
 
 The text-to-speech SDK is typically used in:
 
 - **Client applications** to convert text to speech and play it immediately (for example, a desktop or mobile app)
-- **Backend services**: to generate audio files for later playback (for example, IVR systems or learning platforms)
+- **Backend services**: to generate audio files for later play back 
  
 After you install the Python SDK, you can create and run your program. Consider the following Python code. When you run it: 
 
@@ -90,11 +93,11 @@ For example, suppose you create an app that vocalizes text messages. In the code
 
 ![Screenshot of text file in Visual Studio code.](../media/text-file-in-vs-code.png)
 
-First, connect to the endpoint for Azure Speech. Then, create a `SpeechSynthesizer` object. Then application processes  the text file containing the message and use the `SpeechSynthesizer` object to generate the spoken audio. 
+First, connect to the endpoint for Azure Speech. Then, create a `SpeechSynthesizer` object. Then application processes  the text file containing the message and uses the `SpeechSynthesizer` object to generate the spoken audio. 
 
 :::image type="content" source="../media/text-to-speech-python.png" alt-text="Screenshot of text-to-speech in the Foundry playground." lightbox="../media/text-to-speech-python.png":::
 
-Let’s run the app and see it in action. The app returns the following audio: "Hi, this is an automated message from Contoso to let you know your order is ready for collection. You can call us at 555-765-4321 if you have any questions". The text is synthesized into audio, using the configured synthetic voice.  
+When you run the application, it will take the text and return an audio output of the message.
 
 ![Screenshot of results of text to speech python script.](../media/text-to-speech-result.png)
 

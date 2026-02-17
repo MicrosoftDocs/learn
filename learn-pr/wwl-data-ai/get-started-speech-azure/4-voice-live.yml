@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.get-started-with-speech-in-azure.voice-live
-title: Voice live
+title: Creating a speech-capable agent
 metadata:
-  title: Voice live
-  description: "Voice live"
+  title: Creating a speech-capable agent
+  description: "Creating a speech-capable agent."
   ms.date: 02/13/2026
   author: wwlpublish
   ms.author: sheryang
