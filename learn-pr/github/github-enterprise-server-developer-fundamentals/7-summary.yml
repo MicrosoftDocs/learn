@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.github.github-enterprise-server-developer-fundamentals.summary
+title: Summary
+metadata:
+  unitType: summary
+  title: Summary
+  description: 
+  ms.date: 02/16/2026
+  author: camihmerhar
+  ms.author: camhernandez
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/7-summary.md)]
