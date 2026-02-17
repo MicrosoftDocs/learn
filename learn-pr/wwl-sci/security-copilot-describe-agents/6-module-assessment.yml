@@ -6,12 +6,12 @@ metadata:
   description: Describe Microsoft Security Copilot agents.
   author: wwlpublish
   ms.author: ceperezb
-  ms.date: 05/08/2025
+  ms.date: 02/15/2026
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
   ai_generated_module_assessment: false
-durationInMinutes: 2
+durationInMinutes: 5
 
 content: |
   [!include[](includes/6-module-assessment.md)]
@@ -20,63 +20,63 @@ quiz:
   title: Check your knowledge
   questions:
 
-  - content: What is the primary purpose of agents in Microsoft Security Copilot?
+  - content: During agent setup in Microsoft Security Copilot, an administrator needs to choose an identity for the agent. What is the benefit of creating an agent identity using Microsoft Entra Agent ID, compared to connecting an existing user account?
     choices:
-      - content: To replace Microsoft Defender and Microsoft Entra.
+      - content: An agent identity inherits the user's full set of permissions, ensuring broader access to resources.
         isCorrect: false
-        explanation: "Incorrect. Agents integrate with Microsoft Defender and Microsoft Entra to enhance their functionality, not replace them."
-      - content: To automate and optimize security operations.
+        explanation: "Incorrect. Connecting an existing user account inherits the user's permissions. An agent identity is a dedicated identity with scoped, right-sized access specifically for the agent."
+      - content: An agent identity provides a dedicated identity with scoped access that is easier to manage and retire independently of user accounts.
         isCorrect: true
-        explanation: "Correct. Agents are specialized tools designed to streamline security workflows by automating tasks and providing insights."
-      - content: To manage organizational permissions for all users.
+        explanation: "Correct. Agent identities created through Microsoft Entra Agent ID provide unique identification for AI agents, keeping access scoped and secure, and can be managed and retired without affecting user accounts."
+      - content: An agent identity eliminates the need for any permissions or role-based access controls on the agent.
         isCorrect: false
-        explanation: "Incorrect. While permissions are important for agent functionality, managing organizational permissions is not their primary purpose."
+        explanation: "Incorrect. Agent identities still require appropriate permissions and role-based access controls. The benefit is that access is scoped specifically to the agent's tasks."
 
-  - content: Which of the following describes how plugins extend the capabilities of agents in Microsoft Security Copilot?
+  - content: A security administrator wants to ensure that new users and applications in the organization are covered by appropriate Conditional Access policies. Which Microsoft Entra agent should they use?
     choices:
-      - content: Plugins replace agents to perform specialized tasks.
+      - content: Access Review Agent
         isCorrect: false
-        explanation: "Incorrect. Plugins do not replace agents; they complement them by extending their capabilities."
-      - content: Plugins are used exclusively for managing permissions within the environment.
+        explanation: "Incorrect. The Access Review Agent helps reviewers make access decisions during access reviews. It does not monitor Conditional Access policy coverage for new users and applications."
+      - content: Identity Risk Management Agent
         isCorrect: false
-        explanation: "Incorrect. While permissions are important, plugins are primarily used to expand agent functionality rather than manage permissions."
-      - content: Plugins allow agents to connect with external systems and analyze additional data sources.
+        explanation: "Incorrect. The Identity Risk Management Agent helps investigate potential identity risks. It does not focus on Conditional Access policy optimization."
+      - content: Conditional Access Optimization Agent
         isCorrect: true
-        explanation: "Correct. Plugins enhance agent functionality by enabling integration with external services and expanding their analytical capabilities."
+        explanation: "Correct. The Conditional Access Optimization Agent monitors for new users or applications not covered by existing Conditional Access policies, identifies gaps, and recommends improvements aligned with best practices and Zero Trust principles."
 
-  - content: Which component of a Security Copilot agent determines when an action should be initiated?
+  - content: A security operations team needs to triage a high volume of user-reported phishing emails. Which Security Copilot agent in Microsoft Defender is designed for this scenario?
     choices:
-      - content: Plugins
+      - content: Dynamic Threat Detection Agent
         isCorrect: false
-        explanation: "Incorrect. Plugins extend the agent's capabilities but do not determine when actions are initiated."
-      - content: Triggers
-        isCorrect: true
-        explanation: "Correct. Triggers are events or conditions that initiate an agent's actions, such as a scheduled interval or manual activation."
-      - content: Permissions
+        explanation: "Incorrect. The Dynamic Threat Detection Agent is an always-on service that uncovers hidden threats by correlating alerts, events, and threat intelligence. It is not designed for triaging user-reported phishing emails."
+      - content: Threat Hunting Agent
         isCorrect: false
-        explanation: "Incorrect. Permissions define what the agent is authorized to access or perform, not when actions are initiated."
-
-  - content: A security engineer wants to classify and triage user-reported phishing emails. Which Microsoft Defender agent should they use?
-    choices:
-      - content: Microsoft Defender XDR
-        isCorrect: false
-        explanation: "Incorrect. Microsoft Defender XDR is a broader tool for extended detection and response, not specifically for phishing email triage."
-      - content: Threat Intelligence Briefing Agent
-        isCorrect: false
-        explanation: "Incorrect. The Threat Intelligence Briefing Agent focuses on gathering and analyzing threat intelligence, not phishing email classification."
+        explanation: "Incorrect. The Threat Hunting Agent enables investigation using natural language and KQL queries. It is not specifically designed for classifying user-reported phishing incidents."
       - content: Phishing Triage Agent
         isCorrect: true
-        explanation: "Correct. The Phishing Triage Agent is specifically designed to classify and triage user-reported phishing incidents, helping reduce false positives and prioritize threats."
+        explanation: "Correct. The Phishing Triage Agent autonomously triages and classifies user-submitted phishing incidents, provides transparent rationale for its verdicts, and continuously improves based on analyst feedback."
 
-  - content: What is the primary function of the intelligence briefing agent in Microsoft Security Copilot?
+  - content: Which Microsoft Purview agent helps security teams evaluate insider risk management alerts based on user risk, file risk, and activity risk?
     choices:
-      - content: To monitor network traffic for suspicious activity.
+      - content: Alert Triage Agent in Data Loss Prevention
         isCorrect: false
-        explanation: "Incorrect. While monitoring network traffic is a security task, it is not the specific role of the intelligence briefing agent."
-      - content: To automate threat intelligence gathering and reporting.
+        explanation: "Incorrect. The Alert Triage Agent in Data Loss Prevention evaluates DLP alerts based on sensitivity risk, exfiltration risk, and policy risk, not insider risk management alerts."
+      - content: Triage Agent in Insider Risk Management
         isCorrect: true
-        explanation: "Correct. The intelligence briefing agent automates the process of collecting, analyzing, and correlating threat data to streamline threat intelligence reporting."
-      - content: To manage user permissions within Microsoft Defender.
+        explanation: "Correct. The Triage Agent in Insider Risk Management evaluates alerts based on user risk, file risk, and activity risk, and sorts them into categories for the security team to review."
+      - content: Conditional Access Optimization Agent
         isCorrect: false
-        explanation: "Incorrect. Managing user permissions is not the primary function of the intelligence briefing agent; its focus is on threat intelligence gathering and reporting."
+        explanation: "Incorrect. The Conditional Access Optimization Agent is a Microsoft Entra agent that monitors and optimizes Conditional Access policies. It does not evaluate insider risk management alerts."
+
+  - content: A developer wants to build a custom security agent using a conversational approach without writing code. Which method in Security Copilot best supports this?
+    choices:
+      - content: YAML Upload method
+        isCorrect: false
+        explanation: "Incorrect. The YAML Upload method requires creating a YAML manifest file, which is a code-first approach suited for developers who prefer programmatic control."
+      - content: Natural Language Agent Creation (NL2Agent)
+        isCorrect: true
+        explanation: "Correct. NL2Agent allows you to build agents by describing what you want in conversational language, without requiring technical expertise. Security Copilot generates the agent configuration based on your natural language descriptions."
+      - content: Model Context Protocol (MCP) tools
+        isCorrect: false
+        explanation: "Incorrect. MCP tools integrate with development environments like Visual Studio Code and are designed for developers who want to build agents within an IDE, rather than a no-code conversational experience."
 

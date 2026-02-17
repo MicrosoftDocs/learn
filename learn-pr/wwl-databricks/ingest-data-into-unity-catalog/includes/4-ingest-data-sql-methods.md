@@ -1,3 +1,5 @@
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=30e7bb65-edc2-42f8-96f2-00344ef4eb10]
+
 SQL commands provide a declarative approach to data ingestion in Azure Databricks. If you're already comfortable with SQL syntax, these methods let you create and populate tables without writing procedural code. The three primary SQL ingestion techniques—`CREATE TABLE AS SELECT (CTAS)`, `CREATE OR REPLACE TABLE`, and `COPY INTO`—each address different ingestion scenarios while maintaining full compatibility with Unity Catalog.
 
 ## Create tables from queries with CTAS
@@ -51,15 +53,10 @@ GROUP BY report_date;
 
 Unlike dropping and recreating a table, `CREATE OR REPLACE` maintains the table's metadata and permissions. Downstream users and applications continue to access the table without reconfiguration.
 
-You can also use this command to define a table with an explicit schema and populate it from files:
+You can also use this command to load data directly from files. The schema is automatically inferred from the query results:
 
 ```sql
-CREATE OR REPLACE TABLE catalog.schema.products (
-    product_id INT,
-    product_name STRING,
-    category STRING,
-    price DECIMAL(10, 2)
-) AS
+CREATE OR REPLACE TABLE catalog.schema.products AS
 SELECT * FROM read_files(
     '/Volumes/catalog/schema/volume/products.csv',
     format => 'csv',

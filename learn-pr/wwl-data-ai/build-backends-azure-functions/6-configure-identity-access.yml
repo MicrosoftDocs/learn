@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.build-backends-azure-functions.configure-identity-access
+title: Configure identity and access for Functions
+metadata:
+  title: Configure Identity and Access for Functions
+  description: Configure identity and access for Functions
+  ms.date: 02/13/2026
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: unit
+durationInMinutes: 14
+content: |
+  [!include[](includes/6-configure-identity-access.md)]

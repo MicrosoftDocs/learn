@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.event-driven-workflows-event-grid.publish-custom-events
+title: Publish custom events from AI applications
+metadata:
+  title: Publish Custom Events from AI Applications
+  description: Learn how to publish custom events from AI applications to Event Grid custom topics using the SDK and REST API.
+  ms.date: 02/13/2026
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: unit
+durationInMinutes: 12
+content: |
+  [!include[](includes/5-publish-custom-events.md)]
