@@ -2,29 +2,23 @@
 
 Design a defenseindepth approach for autonomous and semiautonomous agents that operate across Microsoft clouds. You'll translate business and compliance requirements into identity, access, data protection, observability, and threatprotection controls. You'll also define how agents authenticate, what they can do, what they can see, and how their behavior is monitored and governed at scale.
 
-By the end of this unit, solution architects will be able to:
+### By the end of this unit, solution architects will be able to:
 
-Map agent personas to leastprivilege roles and scopes using Azure rolebased access control and managed identities.
+- Map agent personas to leastprivilege roles and scopes using Azure rolebased access control and managed identities.
 
-Select secure authentication and authorization patterns for agents, tools, and backend services.
+- Select secure authentication and authorization patterns for agents, tools, and backend services.
 
-Apply data governance controls (DLP, sensitivity labels, and data residency) to constrain agent knowledge and outputs.
+- Apply data governance controls (DLP, sensitivity labels, and data residency) to constrain agent knowledge and outputs.
 
-Establish organizationwide observability for agent behavior, usage, and cost.
+- Establish organizationwide observability for agent behavior, usage, and cost.
 
-Integrate AIspecific threat protection, red teaming, and incident response into the agent lifecycle.
+- Integrate AIspecific threat protection, red teaming, and incident response into the agent lifecycle.
 
-Standardize development and interoperability choices to reduce risk and improve maintainability.
-
-## Audience and prerequisites
-
-Audience: Solution architects, security architects, platform owners, and senior makers building or governing AI agents.
-
-Prerequisites: Working knowledge of Microsoft Entra ID, Azure RBAC, Azure monitoring, data governance concepts, and Copilot Studio administration.
+- Standardize development and interoperability choices to reduce risk and improve maintainability.
 
 ## Key concepts and decisions
 
-### 1) Identity and access design
+### 1. Identity and access design
 
 **Goal:** Every agent, tool, and pipeline has a firstclass identity, clear ownership, and leastprivilege access.
 
@@ -46,9 +40,9 @@ Distinct roles for Maker, Publisher, Environment Admin, and Security Admin.
 
 Require approvals for publishing to production and for changes to highrisk capabilities (for example, actions that modify data).
 
-Visual 1 — RBAC design matrix (copy to slide)<br>Create a table with rows for _Agent runtime_, _Maker_, _Publisher_, _Environment admin_, _Security admin_.<br>Columns: _Primary platform scope_, _Azure roles_, _Copilot Studio roles/permissions_, _Notes_.<br>Fill with your tenant's specific role names and scopes. Color cells to highlight leastprivilege vs. exception.
+:::image type="content" source="../media/role-based-access-control.png" alt-text="RBAC design matrix.":::
 
-## 2) Data governance and protection
+## 2. Data governance and protection
 
 **Goal:** Agents use only the right data, in the right places, for the right duration.
 
@@ -72,9 +66,9 @@ Define retention windows for logs, agent memories, and training data. Automate p
 
 Disclose AI involvement and data usage to users and stakeholders. Provide data deletion mechanisms.
 
-Visual 2 — Data flow and residency map<br>Diagram sources (SharePoint, Dataverse, Azure storage), agent runtime, observability/log sinks, and longterm archives.<br>Annotate each node with region, label/DLP posture, and retention.
+:::image type="content" source="../media/data-flow-and-residency-map.png" alt-text="Data flow and residency map.":::
 
-## 3) Observability and cost governance
+## 3. Observability and cost governance
 
 **Goal:** Make agent actions auditable and costs predictable.
 
@@ -94,9 +88,9 @@ Tag resources by agent and cost center. Track token and API consumption.
 
 Set alerts for spend thresholds and anomalous usage.
 
-Visual 3 — Observability blueprint<br>A swimlane chart showing agent → logging pipeline → dashboards → alerting/response.<br>Lanes: Runtime, Telemetry, Cost Management, SOC.
+:::image type="content" source="../media/observability-blueprint.png" alt-text="Observability blueprint.":::
 
-## 4) Threat protection and assurance
+## 4. Threat protection and assurance
 
 **Goal:** Reduce the blast radius of adversarial input and modelspecific risks.
 
@@ -118,7 +112,7 @@ Define how to disable an agent quickly, preserve logs, notify stakeholders, and 
 
 Rehearse drills for critical agents.
 
-## 5) Development and interoperability standards
+## 5. Development and interoperability standards
 
 **Goal:** Standardize how agents connect to tools, data, and each other.
 
@@ -140,7 +134,7 @@ Provide safe maker spaces via environment routing. Separate dev/test from produc
 
 Version artifacts, enforce approvals, and use automated checks for security posture before publish.
 
-Visual 4 — Fourlayer control model<br>Stack diagram with layers: _Data governance and compliance_ → _Agent observability_ → _Agent security_ → _Agent development_.<br>Under each layer, list the specific controls you enable in your tenant.
+:::image type="content" source="../media/four-layer-control-model.png" alt-text="Four layer control model.":::
 
 ## Implementation guide (stepbystep)
 
@@ -208,7 +202,7 @@ Identify proactive alerting for emerging potential threats
 
 ☐ Incident response runbook tested.
 
-## Classroom activity (30-45 minutes)
+## Practice (30-45 minutes)
 
 **Scenario:** A customer wants a helpdesk triage agent that reads ticket data, summarizes trends, and updates knowledge articles.
 

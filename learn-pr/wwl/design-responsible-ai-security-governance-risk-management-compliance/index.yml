@@ -21,25 +21,21 @@ prerequisites: |
   - Working knowledge of Microsoft Entra ID, Azure RBAC, Azure monitoring, data governance concepts, and Copilot Studio administration.
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
-- intermediate
+- advanced
 roles:
-- security-engineer
-- developer
 - solution-architect
-- database-administrator
-- administrator
 products:
-- azure
-- azure-ai-foundry
-- azure-devops
-- azure-cloud-services
-- azure-lab-services
+- microsoft-365-copilot
+- microsoft-365-copilot-chat
+- power-platform
+- microsoft-copilot-studio
+- dynamics-365
 subjects:
-- security
-- cloud-security
-- information-protection-governance
-- identity-access
+- generative-ai
+- data-analytics
 - data-management
+- data-engineering
+- data-integration
 units:
 - learn.wwl.design-responsible-ai-security-governance-risk-management-compliance.introduction
 - learn.wwl.design-responsible-ai-security-governance-risk-management-compliance.design-security-agents
