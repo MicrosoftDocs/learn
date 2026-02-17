@@ -4,10 +4,10 @@ title: Examine GitHub Push Protection
 metadata:
   title: Examine GitHub Push Protection
   description: "Examine GitHub Push Protection."
-  ms.date: 11/21/2025
+  ms.date: 02/16/2026
   author: chrishowd
   ms.author: cahowd
   ms.topic: unit
 durationInMinutes: 7
 content: |
-  [!include[](includes/4-examine-github-push-protection.md)]
+  [!include[](includes/5-examine-github-push-protection.md)]
