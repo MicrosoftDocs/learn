@@ -11,6 +11,8 @@ In AI environments, identity isn't just about signing in to a portal. It defines
 
 Small gaps between identity type, role assignment, and scope can quietly expand the blast radius. Those gaps often surface only during an incident or investigation.
 
+Identity architecture for AI workloads begins with patterns that apply across deployment and runtime scenarios. Agent-based identity models follow the same foundational principles, with additional considerations layered on top.
+
 ## Learning objectives
 
 By the end of this module, you'll be able to:
@@ -18,7 +20,7 @@ By the end of this module, you'll be able to:
 - Explain identity as the control layer for AI solutions in Azure
 - Distinguish between management plane and data plane access in AI workloads
 - Describe authentication flows used by AI endpoints integrated with Microsoft Entra ID
-- Distinguish between human and workload identities
+- Distinguish between human, application, and workload identities
 - Interpret role assignments and scope boundaries across AI resources
 - Recognize common identity design patterns that increase AI risk
 
