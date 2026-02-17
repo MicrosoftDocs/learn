@@ -120,7 +120,9 @@ When evaluation completes, access results from the **Evaluation** page. The dash
 
 **Per-sample details** let you drill into individual test cases to see specific scores and understand why certain responses scored high or low. This granular view helps you identify patterns in failures or successes.
 
-**Comparison views** when you've run multiple evaluations let you compare performance across model versions, prompt variations, or configuration changes. Tracking improvements or regressions guides your development decisions.
+**Comparison views** when you've run multiple evaluations let you compare performance across model versions, prompt variations, or configuration changes. Select two or more evaluation runs and choose **Compare** to generate side-by-side comparison views. The comparison uses statistical t-testing to provide sensitive and reliable results. You can set a baseline run and view statistical significance with color-coded cells indicating improvements, degradations, or inconclusive changes. Tracking improvements or regressions guides your development decisions.
+
+**Human feedback** is available in the detailed results table where you can select thumbs up or thumbs down icons as you review results. This feature lets you log which instances were approved or flagged as incorrect by human reviewers, particularly useful when automated severity labels might not align with your organization's standards.
 
 Select **Learn more about metrics** within the dashboard for detailed definitions, formulas, and interpretation guidance for each metric.
 

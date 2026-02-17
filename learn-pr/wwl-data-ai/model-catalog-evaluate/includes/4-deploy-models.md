@@ -6,55 +6,54 @@ After selecting a model from the catalog, you deploy it to create an accessible 
 
 Microsoft Foundry supports several deployment types, each offering different characteristics for data residency, scaling, and billing:
 
-**Serverless API** deployments provide a pay-per-call model where you're billed based on token usage. This option requires minimal configuration and scales automatically. It's ideal for applications with variable or unpredictable traffic patterns. Some models require Azure Marketplace subscriptions when using serverless deployment.
+**Standard deployment in Foundry resources** is the preferred deployment option, offering the widest range of capabilities including regional, data zone, or global processing. It supports both standard token-based billing and provisioned throughput units (PTU) for reserved capacity. Flagship models in the catalog support this deployment type. Standard deployments provide content filtering, custom content filtering, and keyless authentication options.
 
-**Provisioned** deployments reserve dedicated capacity for consistent, high-volume workloads. You pay for reserved throughput rather than per-token, making costs predictable for applications with steady traffic. This option is best for production applications requiring specific throughput guarantees and consistent latency.
+**Serverless API** deployments provide a pay-per-call model where you're billed based on token usage. This option requires minimal configuration and scales automatically. It's ideal for applications with variable or unpredictable traffic patterns. Available only in AI Hub resources, serverless deployments support regional processing and pay-as-you-go billing. Some models require Azure Marketplace subscriptions when using serverless deployment.
 
-**Managed compute** deployments run models on Azure virtual machines that you configure and manage. You select the VM SKU and instance count, giving you control over the compute resources. Billing combines both hosting costs (VM charges) and inference costs (token processing). This option suits scenarios requiring specific hardware configurations or custom environments.
+**Managed compute** deployments run models on Azure virtual machines that you configure and manage. You select the VM SKU and instance count, giving you control over compute resources. Billing is on a per-minute basis for compute core hours. This option is required for Hugging Face models, NVIDIA NIMs, industry-specific models, Databricks models, and custom models.
 
 **Batch** deployments handle cost-optimized processing jobs where latency isn't critical. Submit large batches of requests that process asynchronously. While playground testing isn't available for batch deployments, they offer significant cost savings for non-interactive workloads.
 
-Each model in the catalog indicates which deployment types it supports. Review these options on the model card before beginning deployment.
+Each model in the catalog indicates which deployment types it supports. The portal may automatically select the best deployment option based on your environment and model requirements. Standard deployments in Foundry resources should be used whenever possible for maximum capabilities.
 
 ## Deploy a model
 
 To deploy a model from the Microsoft Foundry portal:
 
-First, navigate to the model you selected in the **Model catalog**. Open the model card to review its specifications and supported deployment types.
+First, navigate to the model you selected in the **Model catalog**. From the Foundry portal homepage, select **Discover** in the navigation, then **Models** in the left pane. Open the model card to review its specifications and supported deployment types.
 
-Select **Use this model** to open the deployment wizard. This button appears prominently on the model card.
+Select **Deploy** to begin the deployment process. You can choose:
+- **Default settings** to deploy quickly with recommended configurations
+- **Custom settings** to customize your deployment options
 
 If the model requires an Azure Marketplace subscription (common for models from partners and the community), you see terms of use. Review these terms and select **Agree and Proceed** to accept them. Models sold directly by Azure, such as Azure OpenAI models like GPT-4o-mini, don't require marketplace subscriptions.
 
 Configure your deployment settings:
 - **Deployment name**: By default, the system uses the model name. You can modify this to create meaningful names for multiple deployments of the same model. During inference, your code uses this deployment name in the `model` parameter to route requests.
-- **Deployment type**: Select from the available options (serverless API, provisioned, managed compute, or batch) based on your requirements and the model's supported types.
-- **Connected AI resource**: The portal automatically selects your project's Foundry resource. Select **Customize** if you need to change this connection. For serverless API deployments, ensure your project and resource are in a supported region for the model.
+- **Deployment type**: The portal automatically selects the appropriate deployment type based on the model and your environment. Each model supports different deployment types providing different data residency or throughput guarantees.
 
 For managed compute deployments, you also configure:
 - **Virtual machine SKU**: Choose from supported VM types. You need Azure Machine Learning compute quota for the selected SKU in your subscription.
 - **Instance count**: Specify how many instances to deploy for load distribution and redundancy.
 
-If you don't have dedicated quota for managed compute, you can use shared quota by selecting the appropriate checkbox. Shared quota deployments are automatically deleted after 168 hours.
-
-After configuring all settings, select **Deploy**. The deployment process begins, and the portal displays the deployment details page. When deployment completes, your model is ready for use.
+After configuring all settings, select **Deploy**. When deployment completes, you land on the Foundry Playground where you can interactively test the model. Verify that the deployment status shows **Succeeded** in your deployment list.
 
 ## Manage deployed models
 
-After deployment, you manage your models from the **Models + Endpoints** section in the Microsoft Foundry portal. This section displays all model deployments grouped by resource.
+After deployment, you manage your models from the **Build** section in the Microsoft Foundry portal. Select **Build** in the navigation, then **Models** in the left pane to see the list of deployments in your resource.
 
 From the deployment list, select a specific model to view its details:
 - Deployment configuration and status
 - Endpoint URL for API access
 - Authentication keys or tokens
 - Monitoring and usage metrics
-- Option to delete or modify the deployment
+- Option to adjust deployment settings or delete the deployment
 
 The deployment details page provides the information your applications need to connect to and use the model.
 
 ## Test in the playground
 
-The Microsoft Foundry portal includes interactive playgrounds where you test deployed models immediately, without writing code. From your model's deployment page, select **Open in playground** to launch the chat interface.
+The Microsoft Foundry portal includes interactive playgrounds where you test deployed models immediately, without writing code. After deployment completes, you automatically land in the playground, or you can select a deployment from your models list to open the playground.
 
 The playground pre-selects your deployment, so you can start testing immediately. In the chat interface:
 
@@ -70,7 +69,7 @@ Adjust system messages to guide model behavior. System messages set context, ton
 
 Modify parameters like temperature (creativity vs. consistency), max tokens (response length limits), and top-p (nucleus sampling) to fine-tune generation behavior.
 
-Use **View code** to see examples of how to call your deployed model programmatically. The code samples show authentication, endpoint configuration, and request formatting in languages like Python, C#, and JavaScript. You can copy these samples directly into your application.
+Select the **Code** tab to see examples of how to call your deployed model programmatically. The code samples show authentication, endpoint configuration, and request formatting in languages like Python, C#, and JavaScript. You can copy these samples directly into your application.
 
 The playground serves as your development environment for prompt engineering and testing before integrating the model into your application.
 

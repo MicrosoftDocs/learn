@@ -2,7 +2,7 @@ The model catalog in Microsoft Foundry portal serves as your central hub for dis
 
 ## Access the model catalog
 
-You access the model catalog from the Microsoft Foundry portal at [ai.azure.com](https://ai.azure.com). After signing in and selecting your project, choose **Model catalog** from the left navigation pane. The catalog displays model cards showing key information about each model, including the provider, capabilities, and deployment options.
+You access the model catalog from the Microsoft Foundry portal at [ai.azure.com](https://ai.azure.com). After signing in and selecting your project, choose **Discover** from the top navigation. The catalog displays model cards showing key information about each model, including the provider, capabilities, and deployment options.
 
 :::image type="content" source="../media/model-catalog.png" alt-text="Screenshot of the model catalog in Microsoft Foundry portal.":::
 
@@ -16,15 +16,7 @@ The model catalog provides several filters to help you narrow your search:
 
 **Capabilities** filters highlight unique model features. You can filter for reasoning capabilities (complex problem-solving), tool calling (API and function integration), or multimodal processing (text, images, audio).
 
-**Deployment options** filters help you find models that support your preferred deployment type:
-- Serverless API for pay-per-call flexibility
-- Provisioned deployment for consistent, high-volume workloads
-- Managed compute for virtual machine-based hosting
-- Batch processing for cost-optimized, non-latency-sensitive jobs
-
 **Inference tasks** and **Fine-tune tasks** filters let you find models suited for specific activities like text generation, summarization, translation, or entity extraction.
-
-**License** filters help you identify models that align with your organization's licensing requirements and usage policies.
 
 ## Understand model types
 
@@ -40,7 +32,7 @@ As you explore the catalog, you encounter different categories of models designe
 
 Most language models in the catalog are **chat completion** models designed to generate coherent, contextually appropriate text responses. These models power conversational interfaces and content generation applications.
 
-For scenarios requiring higher performance in complex tasks like mathematics, coding, science, strategy, and logistics, **reasoning models** like DeepSeek-R1 provide enhanced problem-solving capabilities. These models can break down complex problems and show their reasoning process.
+For scenarios requiring higher performance in complex tasks like mathematics, coding, science, strategy, and logistics, **reasoning models** like Claude Opus 4.6 provide enhanced problem-solving capabilities. These models can break down complex problems and show their reasoning process.
 
 ### Multimodal models
 

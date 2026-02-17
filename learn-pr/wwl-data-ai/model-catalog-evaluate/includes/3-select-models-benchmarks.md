@@ -4,7 +4,7 @@ Before deploying a model, you want to understand how it performs across differen
 
 You can explore benchmarks in two ways within the Microsoft Foundry portal:
 
-From the **model catalog**, select **Browse leaderboards** to see comparative rankings across all available models. This view helps you identify top-performing models for specific metrics or scenarios.
+From the **model catalog**, select **Go to leaderboard** to see comparative rankings across all available models. This view helps you identify top-performing models for specific metrics or scenarios. The leaderboard displays top models ranked by quality, safety, estimated cost, and throughput.
 
 For detailed benchmarks on a specific model, open its model card and select the **Benchmarks** tab. This view shows how the individual model performs across various metrics and datasets, with comparison charts placing it relative to similar models.
 
@@ -12,21 +12,20 @@ For detailed benchmarks on a specific model, open its model card and select the 
 
 Quality benchmarks assess how well a model generates accurate, coherent, and contextually appropriate responses. These metrics use public datasets and standardized evaluation methods to ensure consistency.
 
-**Accuracy** measures whether model-generated text matches correct answers according to the dataset. The result is binary: one if the generated text matches exactly, zero otherwise. High accuracy indicates the model reliably produces correct factual responses.
+The **Quality index** provides a high-level overview by averaging accuracy scores across multiple benchmark datasets that measure reasoning, knowledge, question answering, mathematical capabilities, and coding skills. Higher quality index values indicate stronger overall performance across general-purpose language tasks.
 
-**Coherence** evaluates whether model output flows smoothly and resembles human-like language. A coherent response maintains logical structure and clear relationships between ideas, making it easy for users to follow and understand.
+Quality benchmarks use datasets such as:
+- **Arena-Hard** - adversarial question answering
+- **BIG-Bench Hard** - reasoning capabilities
+- **GPQA** - graduate-level multi-discipline questions
+- **HumanEval+** and **MBPP+** - code generation tasks
+- **MATH** - mathematical reasoning
+- **MMLU-Pro** - general knowledge assessment
+- **IFEval** - instruction following
 
-**Fluency** assesses grammatical correctness, syntactic structure, and appropriate vocabulary usage. Fluent responses sound natural and linguistically correct, avoiding awkward phrasing or grammatical errors.
+Benchmark scores are normalized indexes ranging from zero to one, where higher values indicate better performance.
 
-**GPT similarity** quantifies semantic similarity between ground truth sentences and model predictions. This metric considers meaning rather than exact wording, allowing for paraphrasing while penalizing responses that miss key concepts.
-
-Additional NLP metrics you might encounter include:
-- **BLEU** (Bilingual Evaluation Understudy) - commonly used for translation tasks
-- **METEOR** (Metric for Evaluation of Translation with Explicit Ordering) - accounts for synonyms and paraphrasing
-- **ROUGE** (Recall-Oriented Understudy for Gisting Evaluation) - emphasizes recall for summarization tasks
-- **F1-score** - measures shared words between generated and ground truth answers
-
-:::image type="content" source="../media/model-benchmarks.png" alt-text="Screenshot of model benchmarks in Microsoft Foundry portal." lightbox="../media/model-benchmarks.png":::
+:::image type="content" source="../media/model-leaderboard.png" alt-text="Screenshot of model leaderboard in Microsoft Foundry portal." lightbox="../media/model-benchmarks.png":::
 
 ## Safety and risk benchmarks
 
@@ -34,15 +33,16 @@ Safety metrics ensure models don't generate harmful, biased, or inappropriate co
 
 Microsoft Foundry evaluates models across multiple safety dimensions:
 
-**Content harm defect rate** measures the percentage of instances where output exceeds a severity threshold (default is Medium) for categories including:
-- Self-harm-related content
-- Hateful and unfair content
-- Violent content
-- Sexual content
+**Harmful behavior detection** uses the HarmBench benchmark to measure how well models resist generating unsafe content. The evaluation calculates **Attack Success Rate (ASR)**, where lower values indicate safer, more robust models. HarmBench tests three functional areas:
+- **Standard harmful behaviors** - cybercrime, illegal activities, general harm
+- **Contextually harmful behaviors** - misinformation, harassment, bullying  
+- **Copyright violations** - reproducing copyrighted material
 
-**Protected material** detection identifies whether models reproduce copyrighted or proprietary content. The defect rate calculates the percentage of instances where output contains protected material.
+**Toxic content detection** uses the ToxiGen dataset to measure how well models identify adversarial and implicit hate speech. Higher F1 scores indicate better detection performance across references to minority groups.
 
-**Indirect attack** (jailbreak) resistance measures how well models maintain safety guardrails when users attempt to manipulate them into generating harmful content through indirect prompting techniques.
+**Sensitive domain knowledge** uses the WMDP (Weapons of Mass Destruction Proxy) benchmark to measure model knowledge in biosecurity, cybersecurity, and chemical security. Higher WMDP scores indicate more knowledge of potentially dangerous capabilities.
+
+Safety scores help you understand model robustness, especially important for customer-facing applications where harmful output poses significant concerns.
 
 ## Cost benchmarks
 
@@ -73,15 +73,23 @@ Performance metrics measure how quickly and efficiently models respond to reques
 - **Total tokens per second (TTPS)** - combined input and output tokens processed per second
 - **Time between tokens** - interval between receiving consecutive tokens
 
-High-throughput, low-latency models provide better user experiences in interactive applications. For batch processing jobs where speed matters less than cost, you can prioritize other factors.
+The leaderboard summarizes performance using mean time to first token (lower is better) and mean generated tokens per second (higher is better). High-throughput, low-latency models provide better user experiences in interactive applications. For batch processing jobs where speed matters less than cost, you can prioritize other factors.
 
-## Use leaderboards and comparison charts
+## Use leaderboards and comparison features
 
-The **Browse leaderboards** feature lets you view top models for specific metrics. You can filter leaderboards by scenario (such as question answering or summarization) to find models optimized for your use case.
+The model leaderboard lets you view top models for specific metrics. You can sort by quality, safety, estimated cost, and throughput to identify models that best match your requirements.
 
-**Trade-off charts** display two metrics simultaneously, such as quality versus cost or latency versus throughput. These visualizations help you find the optimal balance for your requirements. A model that's slightly less accurate but significantly faster or cheaper might better serve your needs.
+**Scenario leaderboards** help you find models optimized for specific use cases like reasoning, coding, math, question answering, or groundedness. If your application maps to a particular scenario, start with the relevant scenario leaderboard rather than relying solely on overall quality index.
 
-**Comparison tables** show detailed results for each metric across multiple models, making it easy to see exact numbers and compare candidates side by side.
+**Trade-off charts** display two metrics simultaneously, such as quality versus cost or quality versus throughput. These visualizations help you find the optimal balance for your requirements. Use the dropdown to compare quality against cost, throughput, or safety. Models closer to the top-right corner of the chart perform well on both metrics. A model that's slightly less accurate but significantly faster or cheaper might better serve your needs.
+
+**Side-by-side comparison** lets you select two or three models from the leaderboard and compare them across multiple dimensions:
+- Performance benchmarks (quality, safety, throughput)
+- Model details (context window, training data, supported languages)
+- Supported endpoints (deployment options)
+- Feature support (function calling, structured output, vision)
+
+Select models by checking boxes next to their names, then choose **Compare** to open the detailed comparison view.
 
 ## Evaluate with your own data
 
