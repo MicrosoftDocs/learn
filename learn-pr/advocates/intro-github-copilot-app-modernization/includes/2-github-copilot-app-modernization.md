@@ -27,7 +27,7 @@ GitHub Copilot app modernization supersedes the free .NET Upgrade Assistant exte
 | **Code language** | C# only. |
 | **Migration targets** | Azure SQL DB, Azure Blob Storage, Azure Service Bus, Microsoft Entra ID, Azure Key Vault, and more. |
 
-The modernization agent can migrate Python applications from Semantic Kernel or AutoGen to the Microsoft Agent Framework. This is triggered through the extension sidebar or detected automatically when the project is opened. Other Python modernization scenarios may be supported in future. 
+The modernization agent can migrate Python applications from Semantic Kernel or AutoGen to the Microsoft Agent Framework. This is triggered through the extension sidebar or detected automatically when the project is opened.
 
 The modernization agent can also containerize applications by generating Dockerfiles and building container images and deploy applications to existing or new Azure resources.
 
