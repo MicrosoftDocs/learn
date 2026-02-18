@@ -5,7 +5,7 @@ metadata:
   description: Workflows enable you to orchestrate AI agents and other components to create intelligent applications. Learn how to build and manage workflows using Microsoft Foundry.
   author: buzahid
   ms.author: buzahid
-  ms.date: 1/8/2026
+  ms.date: 2/18/2026
   ms.service: azure-ai-foundry
   ms.topic: module-standard-task-based
   ai-usage: ai-assisted
