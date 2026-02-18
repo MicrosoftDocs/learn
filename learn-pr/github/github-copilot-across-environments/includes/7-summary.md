@@ -17,5 +17,5 @@ With the completion of this module, you now have the knowledge to:
 
 ## Provide feedback
 
-Use this [issue form](https://github.com/githubpartners/microsoft-learn/issues/new/choose) to provide content feedback or suggested changes for this Microsoft Learn module. GitHub maintains this content and a team member will triage the request. Thank you for taking the time to improve our content!
+Use this [issue form](https://github.com/githubpartners/microsoft-learn/issues/new/choose) to provide content feedback or suggested changes for this Microsoft Learn module. GitHub maintains this content and a member of the team will triage the request. Thank you for taking the time to improve our content!
 
