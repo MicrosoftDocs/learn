@@ -88,7 +88,7 @@ Harden the environment where AI models operate to reduce attack surfaces.
 
 ### Model Hardening Blueprint
 
-:::image type="content" source="../media/model-hardining-blueprint.png" alt-text="Modeling hardening blue print.":::
+:::image type="content" source="../media/model-blue-print.png" alt-text="Modeling hardhening blue print.":::
 
 ## 5. Threat detection and response
 
