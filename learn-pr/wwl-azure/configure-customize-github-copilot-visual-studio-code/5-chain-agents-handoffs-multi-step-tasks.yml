@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-customize-github-copilot-visual-studio-code.chain-agents-handoffs-multi-step-tasks
+title: "Chain agents with handoffs for multi-step tasks"
+metadata:
+  title: "Chain agents with handoffs for multi-step tasks"
+  description: "Chain agents with handoffs for multi-step tasks."
+  ms.date: 02/17/2026
+  author: chrishowd
+  ms.author: cahowd
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/5-chain-agents-handoffs-multi-step-tasks.md)]

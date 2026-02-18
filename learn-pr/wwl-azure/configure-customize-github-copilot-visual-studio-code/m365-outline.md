@@ -14,7 +14,7 @@ After completing this module, learners are able to:
 - Configure and use agent handoffs (chaining) to orchestrate multi-step development workflows (for example, handing off from a planning agent to an implementation agent, then to a review agent) with Copilot Chat.
 - Implement a real-world scenario in C# by defining custom instructions and chaining multiple custom agents to collaboratively complete a coding task.
 
-## Unit 1: Introduction
+## Unit 1: Introduction (1-introduction.md)
 
 **Standard module introduction unit (developed using AI tools after creating content units).**
 
@@ -26,19 +26,19 @@ Overview of Module Topics: Briefly outline how the module will cover:
 
 Relevance to Learners: Emphasize that the module is designed for developers already familiar with Copilot Chat in Visual Studio Code, aiming to boost their productivity with advanced features. Explain that these capabilities (custom instructions and agent chaining) can significantly streamline common 2026 developer workflows by embedding team knowledge and multi-step automation into the coding process.
 
-## Unit 2: Why customize GitHub Copilot?
+## Unit 2: Examine the benefits of customizing GitHub Copilot (2-examine-benefits-customize-github-copilot.md)
 
 Purpose: Introduce the value of customizing GitHub Copilot in Visual Studio Code for improved alignment with project needs and modern development workflows.
 
-### Examine the benefits of Customization
+### Examine the benefits of customization
 
 Discuss how out-of-the-box Copilot suggestions may not fully adhere to a team’s unique coding standards or project requirements. Explain that by providing custom instructions and creating custom agents, developers can guide Copilot to produce more relevant, accurate, and context-aware output. For example, a team might have specific architectural patterns, naming conventions, or security practices that they want Copilot to follow. Customization allows embedding this knowledge directly into the AI’s suggestions.
 
-### Modern AI-Assisted Workflows (2026)
+### Modern AI-assisted workflows
 
 Highlight that software development in 2026 often involves AI “co-pilots” in various roles. Developers use AI not just for code completion, but also for planning tasks, automating tests, reviewing code, and more. Tailoring Copilot ensures these AI assistants understand project context and can take on specialized tasks effectively. For instance, a “Planner” agent could help break down a feature into tasks, while an “Implementer” agent focuses on writing code that adheres to project guidelines. Chaining these agents allows for seamless transitions between different stages of development, improving efficiency and consistency.
 
-### Key Takeaway
+### Summary
 
 Customizing Copilot allows developers to infuse project-specific knowledge into AI suggestions and leverage multiple AI “agents” in a coordinated way, enabling AI-assisted development from planning to coding to testing and review.
 
@@ -47,23 +47,23 @@ Customizing Copilot allows developers to infuse project-specific knowledge into 
 - [Customize AI in Visual Studio Code – Visual Studio Code Docs](https://code.visualstudio.com/docs/copilot/customization/overview)
 - [About customizing GitHub Copilot responses – GitHub Docs](https://docs.github.com/en/copilot/concepts/prompting/response-customization)
 
-## Unit 3: Using Repository Instruction Files to Customize Copilot Responses
+## Unit 3: Customize GitHub Copilot responses using instruction files (3-customize-copilot-responses-instruction-files.md)
 
 Purpose: Teach learners how to use custom instruction files in a repository to adjust and guide GitHub Copilot’s suggestions (particularly in VS Code’s Copilot Chat), aligning AI output with project standards and requirements.
 
-### “Always-On” Custom Instructions
+### “Always-On” custom instructions
 
 Introduce the concept of repository-level instructions. Explain how adding a Markdown file named .github/copilot-instructions.md at the root of a repository (or workspace) provides Copilot with additional context and rules for all suggestions in that project. These instructions act as always-on guidelines – for example, “Always use our team’s coding style and naming conventions”. They are automatically included in every Copilot Chat prompt within that workspace. This means that whenever a developer interacts with Copilot Chat, the model will consider these instructions to generate responses that better fit the project’s standards and practices. For instance, if the instruction file specifies “Use PascalCase for class names and camelCase for methods,” Copilot will attempt to follow these conventions in its suggestions. This can help reduce the amount of manual editing needed to align AI-generated code with team guidelines, improving efficiency and consistency across the codebase.
 
-### Path-Specific Instructions
+### Path-specific instructions
 
 Describe the option of using path or file-specific instruction files (multiple *.instructions.md files under a .github/instructions/ directory). These files include a special YAML applyTo frontmatter that specifies which files or file patterns they apply to17 18. For instance, a file named database.instructions.md with applyTo: "DataAccess/**/*.cs" can contain rules that only apply to C# files in the DataAccess folder (e.g., “Use repository pattern for data access classes”). Such path-specific instructions are automatically merged with the repository-wide instructions when relevant.
 
-### Organization-Level Instructions (Overview)
+### Organization-level instructions (Overview)
 
 Mention that enterprises can define organization-wide instructions (applied across multiple repos). For example, a shared coding standard could be enforced by an org-level instruction profile so that all projects start with the same guidelines21. This ensures consistency across teams.
 
-### How to Create Instruction Files
+### How to create instruction files
 
 Provide a brief step-by-step on creating these files:
 
@@ -75,7 +75,7 @@ Provide a brief step-by-step on creating these files:
 
 1. **Verification**: Explain how to confirm that Copilot is using your instructions. For instance, in Copilot Chat, the “References” section of a response will list the source of any custom instructions applied (you should see your copilot-instructions.md file cited there when it’s influencing answers)31. If the instructions aren’t being picked up, ensure the feature is enabled in settings and the file path/naming is correct.
 
-### Benefits of Custom Instructions
+### Benefits of custom instructions
 
 Emphasize how repository-level instructions can align AI output with team conventions and reduce editing overhead. Examples: Reinforcing naming patterns (e.g., “private C# fields must start with _ underscore)33, enforcing certain library or framework usage, specifying desired code comment styles, or reminding Copilot of project-specific context and constraints (like architecture decisions, security policies, or performance considerations). Path-specific instructions allow for even more targeted guidance, ensuring that suggestions are relevant to the specific area of the codebase (e.g., different rules for frontend vs. backend code). This can lead to more accurate and useful suggestions, improving developer efficiency and code quality.
 
@@ -83,7 +83,7 @@ Emphasize how repository-level instructions can align AI output with team conven
 
 Note that custom instructions do not affect inline autocomplete suggestions (the basic single-line or inline completion) – they apply to Copilot Chat and other high-level requests, not the low-level auto-complete engine36. Also, advise keeping instructions concise and relevant: large, unfocused instruction files might lead to diluted or unpredictable results37. 
 
-### Outcome
+### Summary
 
 Learners understand how to configure .github instruction files and the impact on Copilot’s chat responses. They should be able to create both a global repository instruction file and optional path-specific instruction files to customize Copilot’s behavior for their project.
 
@@ -92,15 +92,15 @@ Learners understand how to configure .github instruction files and the impact on
 - [Use custom instructions in Visual Studio Code – Visual Studio Code Docs](https://code.visualstudio.com/docs/copilot/customization/custom-instructions)
 - [5 tips for writing better custom instructions for Copilot – The GitHub Blog](https://github.blog/ai-and-ml/github-copilot/5-tips-for-writing-better-custom-instructions-for-copilot/)
 
-## Unit 4: Creating Custom GitHub Copilot Agents in Visual Studio Code
+## Unit 4: Create custom GitHub Copilot agents in Visual Studio Code
 
 Purpose: Explain what GitHub Copilot custom agents are and guide learners through creating and using their own custom agents in VS Code’s Copilot Chat. This unit covers defining an agent’s persona, tools, and behavior using the .agent.md file format.
 
-### What Are Custom Agents?
+### What are custom GitHub Copilot agents?
 
 Introduce custom agents as specialized AI assistants (chat “personas”) that developers can configure for particular roles or workflows in Visual Studio Code. A custom agent encapsulates a set of instructions and tool permissions. When activated, it steers Copilot’s behavior to act as a specific kind of expert. For example, you might have an agent acting as a “Security Reviewer” to find vulnerabilities, or a “Test Writer” agent focusing on generating unit tests. Custom agents were introduced as an advanced feature (formerly called “custom chat modes”) to give developers more control and are available in Visual Studio Code as of version 1.106 (and in other IDEs in public preview).
 
-### How Custom Agents Work
+### Examine how custom agents work
 
 Explain that a custom agent is defined by a Markdown file with a .agent.md extension. Visual Studio Code automatically loads any .agent.md files in your workspace’s .github/agents folder (or in your user profile) as new agents in the Copilot Chat interface. Each agent file consists of:
 
@@ -108,15 +108,15 @@ Explain that a custom agent is defined by a Markdown file with a .agent.md exten
 
 - A body: where you write the agent’s instructions and context in Markdown (similar to writing a prompt). This content will be prepended to every user prompt whenever that custom agent is selected in Copilot Chat. The body might include guidelines or even step-by-step approaches that the agent should follow. For example, the Security Reviewer agent’s file might contain text like: “You are a senior security engineer. Analyze the user’s code for common security vulnerabilities (e.g., SQL injection, XSS) and suggest safe improvements.”.
 
-### Defining Agent Capabilities with Tools
+### Define agent capabilities with tools
 
 Describe how custom agents can be restricted or empowered with certain tools. In the .agent.md frontmatter, the tools list controls what the AI can do – e.g., read, edit, search, execute (shell), etc.51. By tailoring tools, you can ensure an agent only performs relevant actions. Example: A Planning agent might only need read and search tools (to gather information without editing code), whereas an Implementation agent would have edit capabilities to modify code files. If no tools are specified, an agent defaults to having all standard tools, but often it’s safer to limit them for focused behavior.
 
-### Built-in vs. Custom Agents
+### Built-in vs. custom agents
 
 Note that VS Code comes with some built-in agents (such as a default “Copilot” agent and specialized ones like “🤖 Plan” for planning code, “🤖 Fix Vulnerabilities,” etc.). Custom agents allow you to go further, creating your own roles. For instance, you could craft an agent called “Database Optimizer” that has guidelines about SQL best practices and permits only safe read-only analysis tools. Custom agents appear in the Copilot Chat’s agent dropdown alongside the built-ins, and can be selected anytime to switch the AI’s mode.
 
-### Steps to Create a Custom Agent
+### Steps to create a custom agent
 
 Provide a high-level procedure (which the learners will practice in the lab):
 
@@ -130,7 +130,7 @@ Provide a high-level procedure (which the learners will practice in the lab):
 
 1. Save and activate: Save the file. The custom agent should now appear in the Copilot Chat agents menu (if user-invokable is true, which it is by default). Learners can now select this agent and start asking it to perform its specialized task.
 
-### Examples of Custom Agents
+### Examples of custom agents
 
 Provide a couple of concrete examples to solidify understanding:
 
@@ -145,15 +145,15 @@ Outcome: Learners grasp how to define custom Copilot agents in Visual Studio Cod
 - [About custom agents – GitHub Docs](https://docs.github.com/en/copilot/concepts/agents/coding-agent/about-custom-agents)
 - [Your first custom agent – GitHub Docs](https://docs.github.com/en/copilot/tutorials/customization-library/custom-agents/your-first-custom-agent)
 
-## Unit 5: Chaining Agents with Handoffs for Multi-Step Tasks
+## Unit 5: Chain agents with handoffs for multi-step tasks
 
 Purpose: Explain agent handoffs – how to connect multiple custom (or built-in) agents in sequence – and illustrate using them to tackle complex, multi-step development tasks. Learners will understand how to configure handoffs in an agent’s definition and see example use cases of chained agents working together.
 
-### What Are Handoffs?
+### What are handoffs?
 
 Handoffs allow one agent to suggest the next step with another agent, carrying over context. In VS Code’s Copilot Chat, when an agent finishes its response, it can present a button (a suggested “next action”) that, when clicked, automatically switches the chat to a target agent and (optionally) pre-fills a prompt to continue the workflow70 71. This enables a guided chain of agents, each handling a step of a larger process, with the developer’s oversight at each transition. For example, a Planner agent could produce a design plan and then offer a “Start Implementation” button that hands off to an Implementation agent, which would receive the plan as context and a prompt like “Now implement the plan above.” The developer can review the plan and click the button when ready to move to coding. This creates a structured multi-agent workflow that can be more efficient and organized than trying to do everything in one agent or manually switching contexts.
 
-### Configuring Handoffs
+### Configuring handoffs
 
 Demonstrate how to set up a handoff in a custom agent’s file by adding a handoffs section to the YAML frontmatter.
 
@@ -181,11 +181,11 @@ handoffs:
 
 This would cause a “Start Implementation” button to appear after the planner agent writes out a plan. When clicked, Copilot Chat switches to the Implementation agent, carries over the conversation (including the plan text), and pre-fills “Now implement the plan outlined above.” as the user’s next question. The developer can then hit enter to have the Implementation agent start coding according to the plan.
 
-### Reviewing and Accepting Handoffs
+### Reviewing and accepting handoffs
 
 Note that handoffs always involve an explicit user action (clicking the button) unless configured with send: true. This ensures the developer stays in control of moving to the next step. Emphasize that each agent in the chain will operate within its defined tool and instruction set, which provides guardrails at each step (e.g., a planning agent that cannot edit code, a coding agent that doesn’t have internet access, etc.). This structured approach can make multi-step processes more reliable by breaking them into discrete phases with appropriate tools.
 
-### Common Multi-Step Workflows (2026)
+### Common multi-step workflows
 
 Provide examples of development scenarios where chaining Copilot agents can boost productivity:
 
@@ -201,7 +201,7 @@ Provide examples of development scenarios where chaining Copilot agents can boos
 
 These scenarios reflect how 2026 developers leverage AI agents collaboratively – for instance, delegating a sequence of tasks (plan → code → test → review) to different specialized AI helpers while supervising each step. The result is a more efficient workflow where repetitive or complex tasks are handled by the AI, freeing the developer to focus on decision-making and verification.
 
-### Outcome
+### Summary
 
 Learners understand how to define and use handoffs in custom agent files to enable multi-step workflows. They can identify scenarios in their own work that might benefit from agent chaining, and they know how to implement such patterns in Copilot Chat.
 
@@ -234,11 +234,11 @@ Configure a C# project to use custom Copilot instructions and create two or more
 - Auto-Debugging
 - Refactoring or Upgrading
 
-### Lab Outcomes
+### Lab outcomes
 
 Learners will gain hands-on experience in creating custom Copilot configuration files and agents, and orchestrating them to handle realistic development tasks in C#.
 
-## Unit 7: Knowledge Check
+## Unit 7: Knowledge check
 
 - Multiple-choice questions to assess understanding of:
   - Custom instruction files
