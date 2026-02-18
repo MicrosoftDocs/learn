@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.integrate-foundry-agent-with-m365.access-m365-data-work-iq
+uid: learn.wwl.integrate-foundry-agent-with-m365.access-m365-data-workiq
 title: Access M365 data with Work IQ
 metadata:
   title: Access Microsoft 365 data with Work IQ
@@ -11,4 +11,4 @@ metadata:
   ai-usage: ai-assisted
 durationInMinutes: 8
 content: |
-  [!include[](includes/5-access-m365-data-work-iq.md)]
+  [!include[](includes/5-access-m365-data-workiq.md)]
