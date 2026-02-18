@@ -4,4 +4,5 @@ By connecting your agent to an MCP server, you can dynamically discover and regi
 
 > [!TIP]
 > To learn more about MCP, see the **[Model Context Protocol User Guide](https://modelcontextprotocol.io/introduction)**.
+>
 > To learn more about using Microsoft Foundry Agent Service with MCP, visit **[Connect to Model Context Protocol servers](/azure/ai-foundry/agents/how-to/tools/model-context-protocol?view=foundry&preserve-view=true&pivots=python)**.

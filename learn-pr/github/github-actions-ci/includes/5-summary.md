@@ -38,3 +38,7 @@ Here are some links to more information on the subjects described in this module
 - [Pass data between jobs in a workflow](https://docs.github.com/actions/guides/storing-workflow-data-as-artifacts#passing-data-between-jobs-in-a-workflow)
 - [Enable debug logging](https://docs.github.com/actions/managing-workflow-runs/enabling-debug-logging#enabling-step-debug-logging)
 - [Use workflow run logs](https://docs.github.com/actions/managing-workflow-runs/using-workflow-run-logs#searching-logs)
+
+## Provide feedback
+
+Use this [issue form](https://github.com/githubpartners/microsoft-learn/issues/new/choose) to provide content feedback or suggested changes for this Microsoft Learn module. GitHub maintains this content and a team member will triage the request. Thank you for taking the time to improve our content!
