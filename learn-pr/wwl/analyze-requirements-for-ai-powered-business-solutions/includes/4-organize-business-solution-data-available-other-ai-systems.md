@@ -26,7 +26,9 @@ Organizing business solution data is not only a technical requirement but a busi
 Retrieval-Augmented Generation (REG) is an architecture that separates prototypes from trustworthy systems. A RAG pipeline is the system that performs all the steps required to make RAG work in a production environment, handling the data ingestion, streaming, cleaning, chunking, embedding, indexing, retrieval, prompt assembly, orchestration, and monitoring that allow an LLM to use retrieved context when generating an answer There are several advantages of leveraging RAG pipelines:
 
 - Empowering LLM solutions with real-time data access
+
 - Preserving data privacy
+
 - Mitigating LLM hallucinations
 
 This unit explains how to organize your business data to become **usable, discoverable, secure, and optimized for AI consumption across the organization**.
@@ -146,8 +148,8 @@ Timeliness is essential—AI systems must reference the latest information.
 
 Use these links for this unit:
 
-[Drive Transformation with Azure Platforms](/training/modules/leverage-ai-tools/6-drive-transformation-azure-platforms)
+- [Drive Transformation with Azure Platforms](/training/modules/leverage-ai-tools/6-drive-transformation-azure-platforms)
 
-[Building intelligent AI apps with Microsoft databases](https://techcommunity.microsoft.com/blog/azuredatablog/building-intelligent-ai-apps-with-microsoft-databases/4413833)
+- [Building intelligent AI apps with Microsoft databases](https://techcommunity.microsoft.com/blog/azuredatablog/building-intelligent-ai-apps-with-microsoft-databases/4413833)
 
-[Data architecture for AI agents](/azure/cloud-adoption-framework/ai-agents/data-architecture-plan) 
+- [Data architecture for AI agents](/azure/cloud-adoption-framework/ai-agents/data-architecture-plan) 
