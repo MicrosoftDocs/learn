@@ -1,4 +1,3 @@
-# Apply evaluation rubrics for consistent scoring
 
 Manual evaluation provides essential quality insights that automated metrics can't capture, but multiple human evaluators often score the same response differently without clear guidance. When three Adventure Works team members evaluate the same Trail Guide Agent response, one rates it 5 for Intent Resolution while another rates it 3—not because the response quality changed, but because they interpret the scoring criteria differently. Inconsistent evaluation undermines optimization decisions, making it impossible to determine whether quality improved or human evaluators judged responses more leniently. Here, you learn how to create evaluation consistency through rubrics, rater training with calibration examples, and inter-rater reliability testing.
 
@@ -19,7 +18,7 @@ For the Adventure Works Trail Guide Agent, create a rubric for each evaluation c
 
 **Intent Resolution Rubric (1-5 scale):**
 
-| Score | Definition | Example Response |
+| Score | Definition | Example response |
 | ------- | ------------ | -------------------- |
 | 5 | Fully addresses user's need with complete information | User asks about March Scotland hiking gear; agent recommends waterproof layers, specifies materials, suggests Adventure Works products |
 | 4 | Addresses core need with minor gaps | User asks about Scotland gear; agent recommends waterproof items but doesn't specify materials or products |
@@ -35,7 +34,7 @@ Human evaluator training ensures all team members interpret rubrics consistently
 
 Select five to eight agent responses that span your score range—include clear examples of scores 5, 3, and 1, plus ambiguous responses that fall between levels. For Adventure Works, you might include responses to the "Scottish Highlands March gear" test prompt that demonstrate different quality levels. Present each response to your evaluation team without revealing the intended score. Format the calibration set as simple text blocks:
 
-### Low-performing response
+**Low-performing response**
 
 ```text
 Test Prompt: What gear do I need for hiking in the Scottish Highlands in March?
@@ -43,7 +42,7 @@ Test Prompt: What gear do I need for hiking in the Scottish Highlands in March?
 Agent Response: The Scottish Highlands feature beautiful terrain with mountains, lochs, and glens. Popular trails include the West Highland Way and routes around Ben Nevis. March is considered shoulder season with fewer tourists than summer months. The landscape offers stunning views and diverse wildlife including red deer and golden eagles.
 ```
 
-### High-performing response
+**High-performing response**
 
 ```text
 Test Prompt: What gear do I need for hiking in the Scottish Highlands in March?

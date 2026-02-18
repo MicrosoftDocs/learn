@@ -1,4 +1,3 @@
-# Exercise - Evaluate and compare AI agent versions
 
 In this exercise, you evaluate two prompt versions of the Trail Guide Agent and create a Version Comparison Decision Document that justifies which version to promote to production based on quality scores and cost analysis.
 
@@ -13,4 +12,4 @@ Throughout this exercise, you:
 
 Launch the exercise and follow the instructions.
 
-[![Button to launch exercise.](../media/launch-exercise.png)](PLACEHOLDER - Create link at: https://akalinkmanager.trafficmanager.net/am/redirection/home?options=host:go.microsoft.com)
+[![Button to launch exercise.](../media/launch-exercise.png)](https://go.microsoft.com/fwlink/?linkid=2352696)

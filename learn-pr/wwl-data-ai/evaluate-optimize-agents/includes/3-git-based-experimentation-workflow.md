@@ -1,14 +1,11 @@
-# Apply git-based workflows to optimization experiments
 
 Optimization experiments require systematic organization to track which changes were tested and what results they produced. Git-based workflows enable you to test agent variants safely, document evaluation results, and compare experiments to identify which configuration performs best.
 
-| Step | Action |
-| ------ | -------- |
-| 1. **Create branch** | Create experiment branch for each variant |
-| 2. **Add test prompts** | Store test prompts in experiment folder |
-| 3. **Run evaluation script** | Deploy agent version, run test prompts, capture responses |
-| 4. **Score responses** | Manually evaluate responses for quality metrics |
-| 5. **Compare and decide** | Review results across branches, merge successful experiments |
+1. **Create branch**: Create experiment branch for each variant
+2. **Add test prompts**: Store test prompts in experiment folder
+3. **Run evaluation script**: Deploy agent version, run test prompts, capture responses
+4. **Score responses**: Manually evaluate responses for quality metrics
+5. **Compare and decide**: Review results across branches, merge successful experiments
 
 ## Create experiment branches
 
@@ -88,7 +85,7 @@ After completing evaluations across multiple experiment branches, use your CSV d
 
 For the Adventure Works experiments, you might document your comparison:
 
-| Experiment Branch | Key Observations | Meets Criteria? |
+| Experiment branch | Key observations | Meets criteria? |
 | ------------------- | ------------------ | ------------------ |
 | main (baseline) | Solid responses, some verbosity | Yes (4.2 avg) |
 | prompt-v2-concise | Maintains quality, more focused | Yes (4.4 avg) |
