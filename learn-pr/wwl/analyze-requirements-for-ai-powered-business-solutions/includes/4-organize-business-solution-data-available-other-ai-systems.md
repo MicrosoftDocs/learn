@@ -62,17 +62,17 @@ _(From: Data architecture for AI agents across your organization - Cloud Adoptio
 
 Microsoft's Cloud Adoption Framework defines how to design a **data architecture optimized for AI agents**:
 
-**Centralized knowledge sources**: SharePoint, OneDrive, Dataverse, Azure Storage.
+- **Centralized knowledge sources**: SharePoint, OneDrive, Dataverse, Azure Storage.
 
-**Semantic indexing**: Converts enterprise content into semantic representations for grounding.
+- **Semantic indexing**: Converts enterprise content into semantic representations for grounding.
 
-**Data governance layer**: Rolebased access, sensitivity labels, Microsoft Purview.
+- **Data governance layer**: Rolebased access, sensitivity labels, Microsoft Purview.
 
-**APIs and connectors**: Ensure AI agents can access structured and unstructured data.
+- **APIs and connectors**: Ensure AI agents can access structured and unstructured data.
 
-**RAGready architecture**: Vector stores, embedding models, retrieval pipelines.
+- **RAGready architecture**: Vector stores, embedding models, retrieval pipelines.
 
-**Visual Diagram - AI Agent Data Architecture**
+- **Visual Diagram - AI Agent Data Architecture**
 
 ### 2.3 Make Databases AIReady
 
@@ -80,13 +80,13 @@ _(From: Building intelligent AI apps with Microsoft databases)_
 
 Microsoft database technologies provide builtin intelligence for AI:
 
-**Azure SQL** - supports vector data, semantic search, JSON storage.
+- **Azure SQL** - supports vector data, semantic search, JSON storage.
 
-**Cosmos DB** - low latency for AI-driven apps, native vector search capability.
+- **Cosmos DB** - low latency for AI-driven apps, native vector search capability.
 
-**PostgreSQL on Azure** - supports ML extensions and embeddings.
+- **PostgreSQL on Azure** - supports ML extensions and embeddings.
 
-**Fabric** - provides a unified analytics platform for AI workloads.
+- **Fabric** - provides a unified analytics platform for AI workloads.
 
 Use cases:
 
