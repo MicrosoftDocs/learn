@@ -39,15 +39,15 @@ _(From: Leverage AI tools - Drive Transformation on Azure)_
 
 Azure provides the foundational components necessary to **centralize, transform, and govern data** before AI systems consume it.Key concepts include:
 
-**Unified data estate**: Consolidate data from apps, logs, CRM, ERP, operations, and documents.
+- **Unified data estate**: Consolidate data from apps, logs, CRM, ERP, operations, and documents.
 
-**Modern data services**: Azure Cosmos DB, Azure SQL, Azure PostgreSQL, Fabric Lakehouse.
+- **Modern data services**: Azure Cosmos DB, Azure SQL, Azure PostgreSQL, Fabric Lakehouse.
 
-**Intelligence layers**: Azure AI Search, semantic ranking, embeddings, vector search.
+- **Intelligence layers**: Azure AI Search, semantic ranking, embeddings, vector search.
 
-**Interoperability**: APIs, event hubs, and data streaming allow multiple AI systems to use the same data.
+- **Interoperability**: APIs, event hubs, and data streaming allow multiple AI systems to use the same data.
 
-**Azure Data Estate for AI**
+**Azure Data Estate for AI:**
 
 | **Layer** | **Purpose** |
 |---|---|

@@ -9,11 +9,13 @@ After completing this unit, learners will be able to:
 
 ## 1. Understanding Grounding in AI Agents
 
-Grounding ensures that an AI agent responds using **trusted, domainspecific organizational data**, increasing accuracy and reducing hallucinations.<br>Microsoft Copilot and Copilot Studio use **semantic indexing** to map enterprise content across Microsoft Graph into rich lexical and semantic representations. This enables more contextually precise retrieval.<br>
+Grounding ensures that an AI agent responds using **trusted, domainspecific organizational data**, increasing accuracy and reducing hallucinations.
 
-AI systems must be connected to **approved, accesscontrolled data** so they produce trustworthy outcomes that respect organizational security boundaries.<br>
+Microsoft Copilot and Copilot Studio use **semantic indexing** to map enterprise content across Microsoft Graph into rich lexical and semantic representations. This enables more contextually precise retrieval.
 
-To support advanced grounding, the **Copilot Retrieval API** retrieves relevant text passages from SharePoint, OneDrive, and connected sources, honoring user permissions.<br>
+AI systems must be connected to **approved, accesscontrolled data** so they produce trustworthy outcomes that respect organizational security boundaries.
+
+To support advanced grounding, the **Copilot Retrieval API** retrieves relevant text passages from SharePoint, OneDrive, and connected sources, honoring user permissions.
 
 ## 2. The Five Dimensions of Grounding Data Quality
 
@@ -43,7 +45,7 @@ AI outputs degrade when data is stale.
 
 The **semantic index** in Microsoft 365 continuously updates as content changes, ensuring the grounding layer reflects the latest documents, conversations, and knowledge.
 
-Timeliness includes:
+**Timeliness includes:**
 
 - Modified dates
 
@@ -59,7 +61,7 @@ Data Pollution in AI refers to the degradation of data quality that negatively i
 
 Cleaner data improves embedding quality and helps the agent retrieve the most appropriate content.
 
-Clean data characteristics:
+**Clean data characteristics:**
 
 - Clear structure
 
@@ -75,7 +77,7 @@ Agents can only ground responses from **data the user has access to**.
 
 The Retrieval API respects permissions and will not return content beyond a user's access scope.
 
-Availability depends on:
+**Availability depends on:**
 
 - Storage in SharePoint/OneDrive or connected systems
 
@@ -95,19 +97,19 @@ Availability depends on:
 
 ## 4. Diagram: How Microsoft Copilot Grounds AI Responses
 
-  _Diagram grounded in documentation describing semantic index + Retrieval API pipeline.
+:::image type="content" source="../media/copilot-grounds-ai-responses.png" alt-text="Diagram showing how Microsoft Copilot grounds AI responses using the semantic index and Retrieval API pipeline.":::
 
 ## 5. Best Practices for Reviewing Grounding Data
 
-**Evaluate content quality before upload**: remove outdated or conflicting information.
+1. **Evaluate content quality before upload**: remove outdated or conflicting information.
 
-**Store authoritative content in SharePoint or OneDrive** so it becomes part of the semantic index.
+2. **Store authoritative content in SharePoint or OneDrive** so it becomes part of the semantic index.
 
-**Ensure consistent formatting** to improve data cleanliness and retrieval precision.
+3. **Ensure consistent formatting** to improve data cleanliness and retrieval precision.
 
-**Review permissions regularly** so agents ground from valid data sources only.
+4. **Review permissions regularly** so agents ground from valid data sources only.
 
-**Collaborate with domain SMEs** to validate accuracy and contextual fit.
+5. **Collaborate with domain SMEs** to validate accuracy and contextual fit.
 
 **References**
 

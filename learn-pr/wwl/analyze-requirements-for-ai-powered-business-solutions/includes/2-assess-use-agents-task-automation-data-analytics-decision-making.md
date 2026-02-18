@@ -19,17 +19,17 @@ Generative AI accelerates productivity by drafting content, summarizing informat
 
 Agents help organizations streamline and automate tasks that traditionally require manual work.
 
-**Key Capabilities**
+**Key Capabilities:**
 
-Drafting documents, emails, or responses based on context.
+- Drafting documents, emails, or responses based on context.
 
-Summarizing large volumes of data—emails, meetings, chats.
+- Summarizing large volumes of data—emails, meetings, chats.
 
-Automating workflows through technologies such as Microsoft 365, Copilot Studio, Azure Foundry, and Power Platform. 
+- Automating workflows through technologies such as Microsoft 365, Copilot Studio, Azure Foundry, and Power Platform. 
 
-Triggering multi-step processes (approvals, notifications, content generation).
+- Triggering multi-step processes (approvals, notifications, content generation).
 
-These capabilities reduce cognitive load and help teams focus on strategic, not repetitive, work.<br>
+- These capabilities reduce cognitive load and help teams focus on strategic, not repetitive, work.
 
 **Examples of Agent-Driven Task Automation**
 
@@ -44,17 +44,17 @@ These capabilities reduce cognitive load and help teams focus on strategic, not 
 
 AI agents simplify and accelerate data analysis by converting natural language questions into insightful answers.
 
-**Core Agent Capabilities**
+**Core Agent Capabilities:**
 
-Summarizing complex datasets into actionable insights
+- Summarizing complex datasets into actionable insights
 
-Identifying trends, outliers, and patterns
+- Identifying trends, outliers, and patterns
 
-Generating visualizations on demand
+- Generating visualizations on demand
 
-Interpreting dashboards and suggesting next-step actions
+- Interpreting dashboards and suggesting next-step actions
 
-Copilot experiences help employees make sense of data without requiring advanced analytics skills.
+- Copilot experiences help employees make sense of data without requiring advanced analytics skills.
 
 **Visual Diagram: AI Agents in the Analytics Workflow**
 
@@ -64,31 +64,31 @@ Copilot experiences help employees make sense of data without requiring advanced
 
 Agents support strategic and operational decisions through:
 
-**AI-Supported Decision Inputs**
+**AI-Supported Decision Inputs:**
 
-Scenario recommendations based on historical data
+- Scenario recommendations based on historical data
 
-Risk identification through pattern recognition
+- Risk identification through pattern recognition
 
-Summaries of business context from documents, meetings, and datasets
+- Summaries of business context from documents, meetings, and datasets
 
-Recommendations backed by enterprise knowledge
+- Recommendations backed by enterprise knowledge
 
-Generative AI enables leaders to explore alternatives, evaluate impacts, and move faster with confidence.<br>
+- Generative AI enables leaders to explore alternatives, evaluate impacts, and move faster with confidence.<br>
 
 ## 5. Best Practices for Using AI Agents
 
-**Start with the business outcome** you want to improve.
+1. **Start with the business outcome** you want to improve.
 
-**Use agent automation** to reduce repetitive work, not replace critical thinking.
+2. **Use agent automation** to reduce repetitive work, not replace critical thinking.
 
-**Maintain responsible AI principles**— Fairness, Reliability and Safety, Privacy and Security, Inclusiveness, Transparency, Accountability.
+3. **Maintain responsible AI principles**— Fairness, Reliability and Safety, Privacy and Security, Inclusiveness, Transparency, Accountability.
 
-**Monitor performance** and refine prompts, workflows, and data inputs.
+4. **Monitor performance** and refine prompts, workflows, and data inputs.
 
-**Empower teams** with training to use Copilot effectively.
+5. **Empower teams** with training to use Copilot effectively.
 
-These principles reinforce reliable, secure AI adoption at scale.<br>
+These principles reinforce reliable, secure AI adoption at scale.
 
 **References**
 
