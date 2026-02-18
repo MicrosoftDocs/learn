@@ -70,7 +70,7 @@ Agents must follow defined boundaries regarding which data they can access, stor
 
 - Use sensitivity labels to **track and govern information movement** throughout agent responses.
 
-:::image type="content" source="data-governance-layering.png" alt-text="Diagram: Data governance layering":::
+:::image type="content" source="../media/data-governance-layering.png" alt-text="Diagram: Data governance layering":::
 
 ## 4. Observability, Monitoring & Cost Governance
 
