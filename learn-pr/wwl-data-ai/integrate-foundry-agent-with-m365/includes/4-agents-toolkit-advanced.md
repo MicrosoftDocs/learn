@@ -1,17 +1,15 @@
 For most scenarios, publishing directly from the Foundry portal is the simplest path to get your agents into Microsoft Teams and Microsoft 365 Copilot. However, some complex enterprise scenarios require additional control over the integration layer. The Microsoft 365 Agents Toolkit provides an alternative approach for these situations.
 
+This unit covers the Agents Toolkit from a high level perspective. Follow the links to documentation at the end for a deeper explanation.
+
 > [!NOTE]
 > This unit covers an advanced topic. If you're getting started with Foundry agent integration, you can skip this unit and return later if you encounter scenarios that require the Agents Toolkit approach.
 
 ## When to consider the Agents Toolkit
 
-The Microsoft 365 Agents Toolkit is a suite of development tools available as extensions for Visual Studio Code and Visual Studio. Consider using it when you need:
+The Microsoft 365 Agents Toolkit is a suite of development tools available as extensions for Visual Studio Code and Visual Studio. Consider using it when your agent requires custom single sign-on (SSO) configuration beyond the default Entra ID setup, or when you need to add middleware logic for custom processing, logging, or transformation between Teams and your Foundry agent.
 
-- **Custom single sign-on (SSO)**: Your agent requires specific SSO configuration that goes beyond the default Entra ID setup
-- **Middleware logic**: You need to add custom processing, logging, or transformation between Teams and your Foundry agent
-- **Multi-environment deployment**: You require separate development, staging, and production configurations with controlled promotion between environments
-- **Advanced debugging**: You need detailed tracing and debugging capabilities beyond what the Foundry portal provides
-- **CI/CD integration**: Your organization requires automated deployment pipelines through GitHub Actions or Azure DevOps
+The toolkit is also valuable for organizations that require multi-environment deployment with separate development, staging, and production configurations. It provides advanced debugging capabilities with detailed tracing beyond what the Foundry portal offers, and integrates with CI/CD pipelines through GitHub Actions or Azure DevOps.
 
 ## How the Agents Toolkit approach works
 
@@ -21,53 +19,17 @@ Instead of publishing directly from Foundry, you create a proxy application usin
 Teams/Copilot → Proxy App (Agents Toolkit) → Foundry Agent
 ```
 
-This proxy application:
-
-1. Receives messages from Teams or Copilot through Azure Bot Service
-2. Processes the message through any custom middleware you've configured
-3. Forwards the request to your Foundry agent
-4. Returns the agent's response through the same path
-
-The proxy approach gives you control over every step of the message flow, but adds complexity to your deployment.
+This proxy application receives messages from Teams or Copilot through Azure Bot Service, processes them through any custom middleware you've configured, forwards the request to your Foundry agent, and returns the response through the same path. The proxy approach gives you control over every step of the message flow, but adds complexity to your deployment.
 
 ## Getting started with the Agents Toolkit
 
-If you determine the Agents Toolkit is right for your scenario, here's an overview of the setup process:
+If you determine the Agents Toolkit is right for your scenario, here's an overview of the setup process.
 
-### Install the extension
+Start by installing the Microsoft 365 Agents Toolkit extension from the Visual Studio Code marketplace. Once installed, open the extension panel and select **Create a New Agent/App**, then choose **Custom Engine Agent** as the project type. The wizard guides you through configuration options including your AI model source.
 
-1. Open Visual Studio Code.
-2. Navigate to the Extensions marketplace.
-3. Search for "Microsoft 365 Agents Toolkit" and install it.
+The project template creates scaffolding for a standalone agent. To connect to an existing Foundry agent, configure the project to call your Foundry agent's endpoint, set up authentication using the agent's credentials, and implement any middleware logic you need.
 
-### Create a custom engine agent project
-
-1. Open the Agents Toolkit extension panel in VS Code.
-2. Select **Create a New Agent/App**.
-3. Choose **Custom Engine Agent** as the project type.
-4. Follow the prompts to configure your project, including selecting your AI model source.
-
-### Connect to your Foundry agent
-
-The project template creates scaffolding for a standalone agent. To connect to an existing Foundry agent:
-
-1. Configure the project to call your Foundry agent's endpoint.
-2. Set up authentication using the Foundry agent's credentials.
-3. Implement any middleware logic you need.
-
-### Test locally
-
-The Agents Toolkit includes the **Microsoft 365 Agents Playground**, a local testing environment that simulates Teams:
-
-1. Run the project in debug mode.
-2. The playground opens in your browser.
-3. Send test messages to verify the connection to your Foundry agent.
-
-### Deploy and publish
-
-1. Use the toolkit to provision Azure resources.
-2. Deploy your proxy application.
-3. Register the application in Teams.
+The Agents Toolkit includes the **Microsoft 365 Agents Playground**, a local testing environment that simulates Teams. Run your project in debug mode to open the playground in your browser, where you can send test messages to verify the connection works correctly. Once testing is complete, use the toolkit to provision Azure resources, deploy your proxy application, and register it in Teams.
 
 ## Comparison summary
 

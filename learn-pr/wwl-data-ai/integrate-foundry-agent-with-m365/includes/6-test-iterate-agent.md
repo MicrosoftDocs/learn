@@ -1,69 +1,17 @@
-Testing is essential throughout the agent development and publishing lifecycle. Different testing environments serve different purposes, from rapid iteration during development to validation after deployment. Understanding when and how to use each testing approach helps you deliver reliable agents to your users.
+After publishing your agent using the steps in the previous units, ongoing testing and monitoring help ensure your agent performs reliably for users. This unit focuses on post-deployment testing strategies, troubleshooting common issues, and monitoring your agent over time.
 
-## Testing in the Foundry playground
+## Testing beyond the Foundry playground
 
-The Foundry portal includes an integrated playground for testing your agents during development. This environment is your primary tool for rapid iteration before publishing.
+The Foundry playground is valuable for development testing, but it doesn't simulate the full published experience. After publishing, test your agent in Microsoft Teams to verify:
 
-### Using the playground effectively
-
-The playground provides a chat interface where you can:
-
-- Send messages to your agent and review responses
-- Test different types of user inputs to check agent behavior
-- Verify that instructions produce the intended responses
-- Check that configured tools are invoked correctly
-
-When testing in the playground:
-
-1. **Test typical scenarios**: Start with the most common questions your users will ask.
-2. **Test edge cases**: Try unusual inputs, misspellings, and off-topic questions.
-3. **Test tool invocations**: If your agent uses tools, verify they're called appropriately and return expected results.
-4. **Review response quality**: Check that responses are accurate, appropriate in tone, and correctly formatted.
-
-### Limitations of the playground
-
-The Foundry playground tests your agent in isolation. It doesn't simulate:
-
-- The Teams or Copilot user interface
-- Authentication flows users experience
-- Network conditions between Teams and your agent
-- The published agent identity and its permissions
-
-You need additional testing after publishing to verify the full integrated experience.
-
-## Testing in Microsoft Teams
-
-After publishing your agent, test it directly in Microsoft Teams to verify the complete integration.
-
-### Upload the publishing package
-
-If you downloaded the publishing package:
-
-1. Open Microsoft Teams.
-2. Go to **Apps** > **Manage your apps** > **Upload an app**.
-3. Select **Upload a custom app** and choose your `.zip` file.
-4. Wait for Teams to install the agent.
-
-### Verification checklist
-
-When testing your published agent in Teams, verify:
-
-| Area | What to check |
-|------|---------------|
-| **Basic responses** | Agent responds to messages correctly |
-| **Response times** | Responses arrive within acceptable timeframes |
-| **Tool functionality** | Tools configured in Foundry work after publishing |
-| **Permissions** | Agent can access resources it needs (if using tools with Azure resources) |
-| **Error handling** | Agent handles errors gracefully without exposing technical details |
-| **Conversation flow** | Multi-turn conversations maintain context appropriately |
+- The Teams user interface renders responses correctly
+- Authentication flows work as expected
+- Response times are acceptable in production
+- The published agent identity has necessary permissions
 
 ### Testing with multiple users
 
-If possible, have colleagues test your agent to discover issues you might miss:
-
-- Different users may phrase questions differently
-- Fresh perspectives identify confusing responses
-- Testing across different Teams clients (desktop, web, mobile) reveals platform-specific issues
+Have colleagues test your agent to discover issues you might miss. Different users phrase questions differently, and fresh perspectives identify confusing responses. Testing across different Teams clients (desktop, web, mobile) can also reveal platform-specific issues.
 
 ## Common troubleshooting scenarios
 
@@ -148,13 +96,7 @@ Establish channels for users to report issues:
 
 ## Iterating on your agent
 
-When you need to update your published agent:
-
-1. Make changes in the Foundry portal.
-2. Test thoroughly in the Foundry playground.
-3. Republish to create an updated package.
-4. Deploy the updated package to Teams.
-5. For organization scope, updates may require re-approval depending on your tenant's policies.
+When testing reveals issues or you receive user feedback, update your agent in the Foundry portal and republish following the same process covered in the publishing unit. For organization scope deployments, check your tenant's policies to determine if updates require re-approval.
 
 > [!TIP]
 > Keep a testing checklist specific to your agent. Document the key scenarios you test before each release to ensure consistent quality.

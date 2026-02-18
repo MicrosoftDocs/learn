@@ -106,7 +106,7 @@ workiq accept-eula
 
 To use Work IQ, you need:
 
-- Node.js installed on your machine
+- Node.js installed on your machine (if using the CLI locally)
 - A Microsoft 365 subscription with a Copilot license
 - Administrative consent for the Work IQ application in your Microsoft Entra tenant
 
@@ -130,33 +130,38 @@ When you query Work IQ, it accesses data through Microsoft Graph with your authe
 
 ## Using Work IQ with agent development
 
-During agent development, Work IQ helps you understand the context your users work in. Common scenarios include:
+Work IQ helps you understand the context your users work in during agent development. You can interact with Work IQ through either the CLI or the MCP server, depending on your workflow.
 
-### Finding project context
+### CLI approach
 
-When implementing a feature, retrieve related discussions:
+The CLI is useful for quick, ad-hoc queries during development. Run the `workiq ask` command directly from your terminal:
 
 ```bash
+# Find project context
 workiq ask -q "What were the key decisions in last week's architecture review meeting?"
-```
 
-### Understanding requirements
-
-Pull requirements from specification documents:
-
-```bash
+# Understand requirements from documents
 workiq ask -q "Summarize the requirements in the user portal spec document"
-```
 
-### Checking team communications
-
-Review recent team discussions about a topic:
-
-```bash
+# Check team communications
 workiq ask -q "What has the engineering team discussed about the API changes?"
 ```
 
-These capabilities help you build agents that understand your organization's terminology, priorities, and communication patterns, resulting in more effective and contextually aware responses.
+The CLI approach works well for scripts, one-off queries, or when you need quick answers without opening an IDE.
+
+### MCP server approach
+
+When Work IQ runs as an MCP server, your AI assistant can access the same Microsoft 365 data automatically. Instead of running CLI commands, you interact naturally with your AI assistant, which calls Work IQ tools behind the scenes.
+
+For example, in VS Code with GitHub Copilot configured to use Work IQ:
+
+- Ask Copilot: "What requirements did Sarah share about the authentication feature?"
+- Copilot uses Work IQ's MCP tools to query your Microsoft 365 data
+- You receive the answer in the chat without running any commands
+
+The MCP approach integrates workplace context seamlessly into your development workflow. Your AI assistant decides when to query Work IQ based on your questions, making the experience feel natural rather than requiring explicit commands.
+
+Both approaches access the same underlying data with the same permissions. Choose the CLI for scripting and quick terminal queries, or the MCP server for integrated AI assistant experiences.
 
 > [!NOTE]
 > Work IQ is currently in public preview. Features and APIs may change as the product evolves.

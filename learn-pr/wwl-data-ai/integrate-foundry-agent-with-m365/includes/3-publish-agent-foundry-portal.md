@@ -76,7 +76,7 @@ Select the distribution scope for your agent:
 - **Shared scope**: Agent appears under "Your agents" in the store. Available immediately. Best for testing and small teams.
 - **Organization scope**: Agent appears under "Built by your org" in the store. Requires admin approval. Best for production deployments.
 
-### Step 6: Prepare and download the package
+### Step 6: Prepare and optionally download the package
 
 1. Select **Prepare Agent** to start packaging your agent.
 2. Wait for the packaging process to complete (typically 1-2 minutes).
