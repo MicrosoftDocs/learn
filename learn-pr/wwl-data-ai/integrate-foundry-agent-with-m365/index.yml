@@ -32,7 +32,6 @@ products:
   - azure-ai-foundry
   - azure-ai-foundry-agent-service
   - microsoft-365-copilot
-  - microsoft-teams
 subjects:
   - artificial-intelligence
 units:
