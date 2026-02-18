@@ -7833,7 +7833,7 @@ achievements:
 - uid: learn.build-workflows-with-logic-apps.trophy
   type: trophy
   title: Automate business processes with integration workflows in Azure Logic Apps
-  summary: Business processes often work with data flowing through various sources, such as cloud services, apps, and on-premises systems.
+  summary: Learn how to automate business processes that work with data flowing through various sources.
   iconUrl: /training/achievements/build-workflows-with-logic-apps.svg
 - uid: learn.azure-security.identify-threats-with-azure-security-center.badge
   type: badge 
