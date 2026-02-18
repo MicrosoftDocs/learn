@@ -1,12 +1,11 @@
-# Design evaluation experiments for AI agents
 
 Optimizing AI agents requires more than making changes and hoping they work better. Effective optimization depends on structured experiments that compare agent variants objectively, measuring quality improvements, cost impacts, and performance characteristics. Consider Adventure Works, an outdoor adventure company managing a Trail Guide Agent that helps customers plan hiking trips with trail recommendations, accommodation bookings, and gear suggestions. The team wants to reduce operational costs by switching from GPT-4 to GPT-4 mini, but they need to verify that quality doesn't degrade below their 4.2/5.0 customer satisfaction target and response times remain under 30 seconds. Here, you learn how to design evaluation experiments by defining metrics, selecting variants to test, and creating systematic testing approaches.
 
-| Design component | What to include | Why it matters |
-| ------------------ | ----------------- | ---------------- |
-| **Evaluation Metrics** | **Quality**: Intent Resolution, Relevance, Groundedness **Cost**: Token usage, model pricing **Performance**: Response time, time-to-first-token | Objective measurement of quality, operational costs, and user experience |
-| **Variants to Test** | Baseline version Prompt variations Model alternatives (GPT-4, GPT-4 mini) Agent configuration changes (max_tokens, streaming) | Controlled comparison reveals which changes improve performance across all three dimensions |
-| **Testing Approach** | Test prompts covering diverse use cases Success criteria and thresholds Comparison methodology Documentation for reproducibility | Systematic testing ensures reliable results and enables team collaboration |
+**Evaluation metrics** measure objective quality (Intent Resolution, Relevance, Groundedness), cost (token usage, model pricing), and performance (response time, time-to-first-token).
+
+**Variants to test** include baseline version, prompt variations, model alternatives (GPT-4, GPT-4 mini), and agent configuration changes (max_tokens, streaming) to reveal which changes improve performance across all three dimensions.
+
+**Testing approach** encompasses test prompts covering diverse use cases, success criteria and thresholds, comparison methodology, and documentation for reproducibility to ensure reliable results and team collaboration.
 
 ## Define evaluation metrics
 
@@ -32,7 +31,7 @@ Every experiment needs objective measures that reveal whether changes improve or
 > [!TIP]
 > For detailed specification of each evaluator including required inputs, scoring ranges, and implementation guidance, learn more through the [evaluators reference](/azure/ai-foundry/concepts/built-in-evaluators).
 
-**Cost** metrics quantify the operational expense of running your agent. Token usage measures the number of input and output tokens the model processes for each request. Model pricing converts token counts into actual costs based on the model's rate structure. For GPT-4, you might pay $30 per million tokens, while GPT-4 mini costs $7.50 per million tokens. With these metrics, you can calculate that processing 800 tokens with GPT-4 costs approximately $0.024 per request, while the same request with GPT-4 mini costs $0.006—a 75% reduction. At Adventure Works' scale of handling thousands of customer inquiries daily, this difference impacts their operational efficiency goals significantly. Current pricing details for all models are available at [Microsoft Foundry pricing](https://azure.microsoft.com/pricing/details/microsoft-foundry).
+**Cost** metrics quantify the operational expense of running your agent. Token usage measures the number of input and output tokens the model processes for each request. Model pricing converts token counts into actual costs based on the model's rate structure. For GPT-4, you might pay 30 per million tokens, while GPT-4 mini costs 7.50 per million tokens. With these metrics, you can calculate that processing 800 tokens with GPT-4 costs approximately 0.024 per request, while the same request with GPT-4 mini costs 0.006—a 75% reduction. At Adventure Works' scale of handling thousands of customer inquiries daily, this difference impacts their operational efficiency goals significantly. Current pricing details for all models are available at [Microsoft Foundry pricing](https://azure.microsoft.com/pricing/details/microsoft-foundry).
 
 **Performance** metrics measure response speed and user experience. End-to-end response time captures how long customers wait for complete answers—critical for real-time interactions where Adventure Works targets 30-second average responses. For applications using streaming, time-to-first-token measures perceived responsiveness: how quickly users see the agent start generating a response. A shorter time-to-first-token creates better user experience even when total response time remains the same. Model selection significantly affects these metrics—GPT-4 mini typically responds faster than GPT-4, while prompt length and generation size (controlled by `max_tokens`) directly influence response time.
 
@@ -78,11 +77,9 @@ Including five to 10 diverse test prompts provides sufficient coverage for manua
 
 Success criteria establish what constitutes acceptable performance before you run experiments. Setting thresholds in advance prevents rationalizing disappointing results. Adventure Works defines success thresholds across all three optimization dimensions:
 
-| Dimension | Success threshold | Business rationale |
-| ----------- | ------------------- | --------------------- |
-| **Quality** | Average 4.2+ (five-point scale) Minimum 3.5 per response | Aligns with customer satisfaction targets; prevents trust erosion |
-| **Cost** | 60% expense reduction | Achieves operational efficiency goals while maintaining 85% resolution rate |
-| **Performance** | Average response time <30 seconds Time-to-first-token <2 seconds (streaming) | Ensures acceptable user experience for real-time interactions |
+- **Quality**: Average 4.2+ (five-point scale), minimum 3.5 per response to align with customer satisfaction targets and prevent trust erosion
+- **Cost**: 60% expense reduction to achieve operational efficiency goals while maintaining 85% resolution rate
+- **Performance**: Average response time <30 seconds, time-to-first-token <2 seconds (streaming) to ensure acceptable user experience for real-time interactions
 
 Business requirements influence these thresholds: customer-facing agents handling trip planning need higher quality standards and faster response times than internal tools.
 
