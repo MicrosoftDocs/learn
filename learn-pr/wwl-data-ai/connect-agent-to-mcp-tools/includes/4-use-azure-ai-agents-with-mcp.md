@@ -8,34 +8,29 @@ To connect to an MCP server, you need:
 - A remote MCP server endpoint (for example, https://api.githubcopilot.com/mcp/).
 - A Microsoft Foundry agent configured to use the MCP tool.
 
-You can connect to multiple MCP servers by adding them as separate tools, each with:
+You can connect to multiple MCP servers by adding them to your agent as separate tools. Each `MCPTool` can include the following parameters:
 - `server_label`: A unique identifier for the MCP server (e.g., GitHub).
 - `server_url`: The MCP server’s URL.
 - `allowed_tools` (optional): A list of specific tools the agent is allowed to access.
+- `require_approval` (optional): A boolean that determines whether tool invocations require human approval. If set to true, the agent will pause and wait for approval before invoking any tools on the MCP server.
 
 The MCP tool also supports custom headers, which let you pass:
 - Authentication keys (API keys, OAuth tokens).
 - Other required headers for the MCP server.
 
-    - These headers are included in `tool_resources` during each run and are not stored between runs.
-
 ## Invoking tools
 
 When using the Azure MCP Tool object, you don't need to wrap function tools or invoke `session.call_tool`. Instead, the tools are automatically invoked when necessary during an agent run. To automatically invoke MCP tools:
 
-- Create the `McpTool` object with the server label and url.
+- Create the `MCPTool` object with the server label and url.
 - Use `update_headers` to apply any headers required by the server.
-- Use the `set_approval_mode` to  determine whether approval is required. Supported values are:
+- Use the `require_approval` parameter to determine whether approval is required. Supported values are:
     - `always`: A developer needs to provide approval for every call. If you don't provide a value, this one is the default.
     - `never`: No approval is required.
-- Create a `ToolSet` object and add the `McpTool` object
-- Create an agent run and specify the `toolset` property
-- When the run completes, you should see the results of any invoked tools in the response.
+- Create an agent and add the `MCPTool` object to its tools list
+- Invoke a prompt on the agent, you should see the results of any invoked tools in the response.
 
-If the model tries to invoke a tool in your MCP server with approval required, you get a run status of requires_action. 
-    - In the `requires_action` field, you can get more details on which tool in the MCP server is called and any arguments to be passed.
-    - Review the tool and arguments so that you can make an informed decision for approval.
-    - Submit your approval to the agent with call_id by setting approve to true.
+If the model tries to invoke a tool in your MCP server with approval required, you get an `mcp_approval_request` in the agent response. This includes information about which tool is being invoked, and you can use this information to decide whether to approve the request. To approve, you send a follow-up message with the `mcp_approval_response` object, which includes an `approval_request_id` value and an `approve` boolean.
 
 MCP integration is a key step toward creating richer, more context-aware AI agents. As the MCP ecosystem grows, you’ll have even more opportunities to bring specialized tools into your workflows and deliver smarter, more dynamic solutions.
 
