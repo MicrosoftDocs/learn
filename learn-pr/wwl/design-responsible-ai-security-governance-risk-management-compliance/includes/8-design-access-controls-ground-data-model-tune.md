@@ -10,49 +10,31 @@ Grounding data is the authoritative information used to produce reliable model r
 
 ### Key Design Principles
 
-**Least privilege by default** - Allow the minimum necessary access for each role, agent, model, or service.
+- **Least privilege by default:** Allow the minimum necessary access for each role, agent, model, or service.
 
-**Rolealigned data partitions** - Separate grounding data by function (e.g., customer support, finance, engineering).
+- **Rolealigned data partitions:** Separate grounding data by function (e.g., customer support, finance, engineering).
 
-**Clear ownership and stewardship** - Assign accountable stakeholders who govern quality and security of each data domain.
+- **Clear ownership and stewardship:** Assign accountable stakeholders who govern quality and security of each data domain.
 
-**Auditability** - All access events and data retrieval operations must be logged and reviewable.
+- **Auditability:** All access events and data retrieval operations must be logged and reviewable.
 
-### Recommended Architecture Visual (TextBased)
+### Recommended Architecture
 
-[User / Agent Identity]
-
-        │
-
- RBAC / Managed Identity
-
-        │
-
-[Grounding Data Gateway]
-
-  │     │      │
-
-Finance HR  Product Docs
-
-  │     │      │
-
-  Enforced Access Boundaries
+:::image type="content" source="../media/recommended-architecture.png" alt-text="Recommended Architecture Diagram.":::
 
 ## 2. Securing Grounding Data Retrieval Workflows
 
 AI systems retrieve grounding data during search, retrievalaugmented generation (RAG), or context assembly. Each retrieval mechanism must enforce:
 
-**Connectorlevel authorization** restricting which data types the model can query
+- **Connectorlevel authorization:** restricting which data types the model can query
 
-**Structured query filtering** preventing models from accessing disallowed fields
+- **Structured query filtering:** preventing models from accessing disallowed fields
 
-**DLP and sensitivity labeling** applied across all data stores
+- **DLP and sensitivity labeling:** applied across all data stores
 
-**Regionaligned access rules** ensuring data residency adherence
+- **Regionaligned access rules:** ensuring data residency adherence
 
-**Professional Visual: Retrieval Access Flow**
-
-Prompt → Policy Check → Search Index → Sanitization Layer → Model Context Injection
+- **Retrieval Access Flow:** Prompt → Policy Check → Search Index → Sanitization Layer → Model Context Injection
 
 ## 3. Access Controls for Model Tuning
 
@@ -60,29 +42,19 @@ Modeltuning operations—evaluation, supervised finetuning, or reinforcement lea
 
 ### Model Tuning Access Requirements
 
-Segregated environments for **development, evaluation, and production**
+- Segregated environments for **development, evaluation, and production**
 
-Approval workflows for introducing new training datasets
+- Approval workflows for introducing new training datasets
 
-Verified data lineage and documentation of tuning datasets
+- Verified data lineage and documentation of tuning datasets
 
-Security scanning of all tuning inputs
+- Security scanning of all tuning inputs
 
-Restricted ability to promote new tuned models into production
+- Restricted ability to promote new tuned models into production
 
-### Model Tuning Role Matrix (TextBased)
+### Model Tuning Role Matrix
 
-Role                 | Permissions
-
-------------------------------------------------------
-
-ML Engineer          | View training data, run tuning jobs
-
-Solution Architect   | Approve datasets, review tuning results
-
-Security Admin       | Validate compliance, enforce policies
-
-Ops Engineer         | Deploy approved tuned models
+:::image type="content" source="../media/model-tuning-role-matrix.png" alt-text="Model Tuning Role Matrix.":::
 
 ## 4. Designing Guardrails for Grounding Data and Tuning Inputs
 
@@ -90,17 +62,17 @@ Guardrails protect both users and the system by preventing unsafe or noncomplian
 
 ### Examples of Guardrails
 
-Blocklists for prohibited document types
+- Blocklists for prohibited document types
 
-Sanitization pipelines removing PII or contractual data
+- Sanitization pipelines removing PII or contractual data
 
-Automated reviews validating safety and policy alignment
+- Automated reviews validating safety and policy alignment
 
-Alerting and anomaly detection for unusual data access or tuning patterns
+- Alerting and anomaly detection for unusual data access or tuning patterns
 
-### Visual: Guardrail Enforcement Model
+### Guardrail Enforcement Model
 
-[Raw Data] → [Validation Rules] → [Sanitization] → [Approved Dataset]
+:::image type="content" source="../media/guardrail-enforcement-model.png" alt-text="Guardrail Enforcement Model.":::
 
 ## 5. Operational Monitoring and Compliance Enforcement
 
@@ -108,18 +80,18 @@ Continuous monitoring ensures access controls work as intended.
 
 ### Operational Controls
 
-Logging for prompt activity, tuning actions, and retrievalbased access
+- Logging for prompt activity, tuning actions, and retrievalbased access
 
-Periodic reviews of RBAC assignments
+- Periodic reviews of RBAC assignments
 
-Automated anomaly alerts for abnormal retrieval patterns
+- Automated anomaly alerts for abnormal retrieval patterns
 
-Governance dashboards tracking how grounding data is used
+- Governance dashboards tracking how grounding data is used
 
 ## References
 
-[https://learn.microsoft.com/en-us/training/modules/embrace-responsible-ai-principles-practices/7-put-responsible-ai-frameworks](/training/modules/embrace-responsible-ai-principles-practices/7-put-responsible-ai-frameworks)
+- [https://learn.microsoft.com/en-us/training/modules/embrace-responsible-ai-principles-practices/7-put-responsible-ai-frameworks](/training/modules/embrace-responsible-ai-principles-practices/7-put-responsible-ai-frameworks)
 
-[https://learn.microsoft.com/en-us/training/modules/build-copilot-ai-studio/3-search-data](/training/modules/build-copilot-ai-studio/3-search-data)
+- [https://learn.microsoft.com/en-us/training/modules/build-copilot-ai-studio/3-search-data](/training/modules/build-copilot-ai-studio/3-search-data)
 
-[https://learn.microsoft.com/en-us/azure/well-architected/ai/grounding-data-design](/azure/well-architected/ai/grounding-data-design)
+- [https://learn.microsoft.com/en-us/azure/well-architected/ai/grounding-data-design](/azure/well-architected/ai/grounding-data-design)
