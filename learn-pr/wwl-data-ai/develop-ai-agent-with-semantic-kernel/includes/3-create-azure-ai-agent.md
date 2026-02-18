@@ -8,46 +8,10 @@ To use a Microsoft Foundry Agent:
 1. Create a Microsoft Foundry project.
 1. Add the project connection string to your Microsoft Agent Framework application code.
 1. Set up authentication credentials.
-1. Create a `ChatAgent` with an `AzureAIAgentClient`.
-1. Define tools and instructions for your agent.
+1. Connect to your project client with the `AzureAIAgentClient` class.
+1. Create an `Agent` instance with the client, instructions, and tools you want to use.
 
-Here's the code that shows how to create a Microsoft Foundry Agent:
-
-```python
-from agent_framework import AgentThread, ChatAgent
-from agent_framework.azure import AzureAIAgentClient
-from azure.identity.aio import AzureCliCredential
-
-def get_weather(
-    location: Annotated[str, Field(description="The location to get the weather for.")],
-) -> str:
-    """Get the weather for a given location."""
-    return f"The weather in {location} is sunny with a high of 25°C."
-
-# Create a ChatAgent with Azure AI client
-async with (
-    AzureCliCredential() as credential,
-    ChatAgent(
-        chat_client=AzureAIAgentClient(async_credential=credential),
-        instructions="You are a helpful weather agent.",
-        tools=get_weather,
-    ) as agent,
-):
-    # Agent is now ready to use
-```
-
-Once your agent is created, you can create a thread to interact with your agent and get responses to your questions. For example:
-
-```python
-# Create the agent thread for ongoing conversation
-thread = agent.get_new_thread()
-
-# Ask questions and get responses
-first_query = "What's the weather like in Seattle?"
-print(f"User: {first_query}")
-first_result = await agent.run(first_query, thread=thread)
-print(f"Agent: {first_result.text}")
-```
+Once your agent is created, you can create a conversation session to interact with your agent and get responses to your questions. 
 
 ### Microsoft Foundry Agent key components
 
@@ -55,9 +19,9 @@ The Microsoft Agent Framework Microsoft Foundry Agent uses the following compone
 
 - **AzureAIAgentClient** - manages the connection to your Microsoft Foundry project. This client lets you access the services and models associated with your project and provides enterprise-level authentication and security features.
 
-- **ChatAgent** - the main agent class that combines the client, instructions, and tools to create a working AI agent that can handle conversations and complete tasks.
+- **Agent** - the main agent class that combines the client, instructions, and tools to create a working AI agent that can handle conversations and complete tasks.
 
-- **AgentThread** - automatically keeps track of conversation history between agents and users, and manages the conversation state. You can create new threads or reuse existing ones to maintain context across interactions.
+- **AgentSession** - automatically keeps track of conversation history between agents and users, and manages the conversation state. You can create new threads or reuse existing ones to maintain context across interactions.
 
 - **Tools integration** - support for custom functions that extend agent capabilities. Functions are automatically registered and can be called by agents to connect with external APIs and services.
 
