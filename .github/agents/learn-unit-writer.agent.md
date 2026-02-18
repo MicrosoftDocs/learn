@@ -82,7 +82,7 @@ The learning unit introduction states what learners will learn and puts it in a 
 - **Length**: 2-4 sentences
 - **No heading**: The introduction starts immediately without a heading
 - **Components**:
-  1. **Topic sentence**: Orient the learner to the main concept
+  1. **Topic sentence**: Introduce the learner to the main concept
   2. **Scenario connection**: Link to a concrete, real-world example that aligns with the module's overall scenario
   3. **Prose table of contents**: Preview what the learner will cover in this unit
 
