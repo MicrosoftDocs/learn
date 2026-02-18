@@ -22,7 +22,7 @@ A handoff entry includes the following fields:
 
 - **send**: A boolean value that controls whether the prompt is submitted automatically. When set to `false` (the default), the prompt is pre-filled in the chat input for the developer to review and edit before sending. When set to `true`, the prompt is submitted immediately, and the target agent begins working right away.
 
-- **model**: An optional field that specifies a particular AI model to use when the handoff executes. This is useful when different stages of a workflow benefit from different model capabilities.
+- **model**: An optional field that specifies a particular AI model to use when the handoff executes. The format is `Model Name (vendor)`, such as `GPT-4.1 (OpenAI)` or `Claude Sonnet 4 (Anthropic)`. This is useful when different stages of a workflow benefit from different model capabilities—for example, using a reasoning model for planning and a faster model for implementation.
 
 The following YAML snippet shows a Planner agent configured with a handoff to an Implementer agent:
 
@@ -83,6 +83,19 @@ Use a Planning agent to analyze an existing codebase and outline a refactoring o
 > [!NOTE]
 > These workflows reflect how development teams can delegate a sequence of tasks—plan, code, test, review—to different specialized AI helpers while supervising each step. The result is a more efficient workflow where repetitive or complex tasks are handled by the AI, freeing the developer to focus on decision-making and verification.
 
+## Agent execution environments
+
+By default, custom agents run on the client (inside VS Code). However, agents can also be configured to run in the cloud by setting `target: cloud` in the agent's YAML frontmatter. Cloud agents execute remotely and are better suited for long-running tasks—such as building an entire feature or running a comprehensive test suite—that would otherwise keep your local VS Code instance occupied. Background agents are a related concept: they run independently without blocking the chat interface, allowing you to continue working while the agent processes a task.
+
+## Copilot hooks
+
+Copilot hooks are a preview feature that lets you run custom commands automatically at specific points in the Copilot workflow. Hooks are defined in your VS Code settings (not in agent files) and trigger before or after specific events, such as before Copilot saves a file or after it runs a terminal command. For example, you can configure a hook to run a linter automatically after Copilot edits a file, ensuring that AI-generated code always meets your formatting standards before being saved.
+
+Hooks extend the automation capabilities of multi-agent workflows by adding lifecycle-based actions that complement the agent's own instructions and tools.
+
+> [!NOTE]
+> Hooks are a preview feature and their configuration format may change. They are configured in VS Code settings under `github.copilot.chat.hooks` and support events like `postSaveFile`, `preRunTerminalCommand`, and `postRunTerminalCommand`.
+
 ## Summary
 
-Handoffs connect multiple custom agents into guided sequential workflows, enabling multi-step development tasks where each agent handles a specific phase. By configuring handoffs in the YAML frontmatter of agent files, you can create chains that transition from planning to implementation, implementation to review, or any other sequence that matches your team's development process. Each handoff keeps the developer in control, with the option to review and approve before proceeding to the next step.
+Handoffs connect multiple custom agents into guided sequential workflows, enabling multi-step development tasks where each agent handles a specific phase. By configuring handoffs in the YAML frontmatter of agent files, you can create chains that transition from planning to implementation, implementation to review, or any other sequence that matches your team's development process. Each handoff keeps the developer in control, with the option to review and approve before proceeding to the next step. Additional capabilities like cloud agents, background execution, and Copilot hooks extend these workflows with remote processing and lifecycle automation.

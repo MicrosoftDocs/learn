@@ -4,14 +4,15 @@ Imagine you're a developer on a team that maintains a large C# application. Your
 
 The topics covered in this module include:
 
-- Using repository-based custom instructions to influence Copilot's coding style and guidelines.
+- Using repository-based custom instructions and prompt files to influence Copilot's coding style and guidelines.
 - Defining and using custom Copilot agents for specialized tasks such as planning, coding, and testing.
+- Configuring subagents, agent skills, and organization-level agents.
 - Chaining agents through handoffs to accomplish multi-step development scenarios.
 
 After completing this module, you'll be able to:
 
-- Customize Copilot's responses using repository-based instruction files to enforce project-specific coding styles, best practices, and guidelines.
-- Create custom GitHub Copilot agents in Visual Studio Code with tailored instructions and tool permissions.
+- Customize Copilot's responses using instruction files and prompt files to enforce project-specific coding styles, best practices, and guidelines.
+- Create custom GitHub Copilot agents in Visual Studio Code with tailored instructions, tool permissions, and subagent configurations.
 - Configure and use agent handoffs to orchestrate multi-step development workflows.
 - Implement a real-world scenario by defining custom instructions and chaining multiple custom agents to collaboratively complete a coding task.
 

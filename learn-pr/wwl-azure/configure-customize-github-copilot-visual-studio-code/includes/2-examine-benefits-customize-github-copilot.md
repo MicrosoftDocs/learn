@@ -4,11 +4,15 @@ GitHub Copilot provides helpful code suggestions and chat responses right away, 
 
 Out-of-the-box, Copilot generates suggestions based on its general training data and the immediate code context. While this produces useful results for many common tasks, it can miss project-specific nuances. For example, your team might enforce specific architectural patterns like the repository pattern for data access, require particular naming conventions such as prefixing private fields with an underscore, or follow security practices that mandate input validation on every API endpoint. Without customization, Copilot doesn't know about these requirements and may generate code that needs significant manual editing to meet your standards.
 
-Customization addresses this challenge through two complementary approaches:
+Customization addresses this challenge through several complementary approaches:
 
 - **Custom instruction files**: Markdown files stored in your repository that provide Copilot with always-on guidelines. These files describe your coding standards, preferred libraries, naming conventions, and other project-specific rules. Copilot reads these instructions and incorporates them into every chat response, producing suggestions that are aligned with your team's expectations from the start.
 
+- **Prompt files**: Reusable prompt templates (`.prompt.md` files) that you can invoke as slash commands in Copilot Chat. While instruction files shape how Copilot responds, prompt files define what to ask—standardizing common tasks like generating tests, creating documentation, or performing code reviews so they run consistently across your team.
+
 - **Custom agents**: Specialized AI personas that you define for particular development roles. Each agent has its own set of instructions, tool permissions, and behavioral guidelines. For instance, a "Planner" agent can focus on analyzing requirements and producing implementation plans without editing code, while an "Implementer" agent can focus on writing code that follows your project's guidelines. Agents give you fine-grained control over how Copilot behaves in different stages of your workflow.
+
+- **Agent skills**: Structured descriptions of specific capabilities or expertise areas (defined in `SKILL.md` files) that agents can draw on to provide specialized knowledge. Skills complement agent instructions by exposing metadata about what an agent knows and can do.
 
 Together, these features allow you to guide Copilot toward producing output that matches your team's conventions, reducing the editing overhead and improving consistency across your codebase.
 

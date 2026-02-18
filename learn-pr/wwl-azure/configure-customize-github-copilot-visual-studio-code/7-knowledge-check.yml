@@ -78,3 +78,25 @@ quiz:
     - content: "The handoff is disabled and the agent cannot transition to the target agent."
       isCorrect: false
       explanation: "Incorrect. The `send: false` setting doesn't disable the handoff. It simply requires the developer to manually submit the pre-filled prompt rather than having it sent automatically."
+  - content: "What is the purpose of a `.prompt.md` file in the `.github/prompts/` folder?"
+    choices:
+    - content: "It defines a custom agent persona with specific tool permissions."
+      isCorrect: false
+      explanation: "Incorrect. Custom agent personas are defined in `.agent.md` files, not `.prompt.md` files."
+    - content: "It provides a reusable prompt template that can be invoked as a slash command in Copilot Chat to run a common task consistently."
+      isCorrect: true
+      explanation: "Correct. Prompt files (`.prompt.md`) are reusable prompt templates with optional YAML frontmatter and variable placeholders. Once created, they appear as slash commands in Copilot Chat, allowing the team to standardize common tasks like generating tests or producing documentation."
+    - content: "It configures which AI model Copilot uses for all chat interactions in the workspace."
+      isCorrect: false
+      explanation: "Incorrect. Prompt files define reusable prompt templates, not model configuration. Model preferences can be set per-agent or per-prompt using the `model` frontmatter field."
+  - content: "How do subagents differ from handoffs in custom agent workflows?"
+    choices:
+    - content: "Subagents and handoffs are different names for the same feature."
+      isCorrect: false
+      explanation: "Incorrect. Subagents and handoffs are distinct mechanisms. Subagents are invoked programmatically within an agent's response, while handoffs transfer control to the user to approve a transition."
+    - content: "Subagents are invoked automatically within an agent's processing and return results to the calling agent, while handoffs transfer control to the user to approve a transition to another agent."
+      isCorrect: true
+      explanation: "Correct. Subagents are called programmatically by the parent agent during its response processing—the result flows back to the calling agent automatically. Handoffs, by contrast, present a button to the user who decides whether to transition to the next agent."
+    - content: "Subagents can only run in the cloud, while handoffs run locally in VS Code."
+      isCorrect: false
+      explanation: "Incorrect. Both subagents and handoffs can run in either the client or the cloud, depending on the agent's `target` configuration."

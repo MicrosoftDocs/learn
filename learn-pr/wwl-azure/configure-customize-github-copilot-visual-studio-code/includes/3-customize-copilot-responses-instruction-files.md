@@ -8,8 +8,11 @@ For example, if your `.github/copilot-instructions.md` file specifies "Use Pasca
 
 The instructions are written in natural language using Markdown formatting. Each guideline can be its own bullet point or paragraph. Whitespace between instructions is ignored when sent to the model, so you can format the file for readability without affecting how Copilot processes it.
 
+> [!TIP]
+> You can use the `/init` slash command in Copilot Chat to automatically generate a `copilot-instructions.md` file for your project. Copilot analyzes your workspace and produces a starter instruction file tailored to your project's language, framework, and structure.
+
 > [!NOTE]
-> VS Code also supports `AGENTS.md` files as always-on instructions. An `AGENTS.md` file placed in the root of your workspace works similarly to `copilot-instructions.md` and is useful when you work with multiple AI agents and want a single set of instructions recognized by all of them.
+> VS Code also supports `AGENTS.md` and `CLAUDE.md` files as always-on instructions. An `AGENTS.md` file placed in the root of your workspace works similarly to `copilot-instructions.md` and is useful when you work with multiple AI agents and want a single set of instructions recognized by all of them. `CLAUDE.md` files follow the same pattern and are recognized by Copilot in VS Code. Additionally, nested `AGENTS.md` files can be placed in subdirectories to provide context-specific instructions that apply only when Copilot operates on files within that directory or its children.
 
 ## Path-specific instructions
 
@@ -32,7 +35,13 @@ applyTo: 'src/Backend/**/*.cs'
 - Include XML documentation comments on all public methods.
 ```
 
-The `applyTo` field accepts glob patterns. Common patterns include `**/*.cs` to match all C# files, `src/Frontend/**/*.ts` to match TypeScript files in a specific directory, or `**/Tests/**/*.cs` to match test files across the project. When a file's path matches an `applyTo` pattern, Copilot automatically includes those instructions alongside the general repository instructions.
+The YAML frontmatter supports the following fields:
+
+- **applyTo**: A glob pattern that determines which files trigger the instructions. Common patterns include `**/*.cs` to match all C# files, `src/Frontend/**/*.ts` to match TypeScript files in a specific directory, or `**/Tests/**/*.cs` to match test files across the project. When a file's path matches an `applyTo` pattern, Copilot automatically includes those instructions alongside the general repository instructions.
+
+- **description**: A natural language description of what the instructions cover. Copilot uses this field for semantic matching—when you ask a question in chat, Copilot evaluates the description to determine whether the instructions are relevant to the current context, even if no file matching the `applyTo` pattern is open. For example, a description of "Guidelines for database migration scripts" helps Copilot include those instructions when you ask about database migrations.
+
+- **name**: A display name for the instruction set that appears in the Chat Instructions menu and diagnostics view.
 
 ## Organization-level instructions
 
@@ -41,7 +50,14 @@ For enterprises that maintain coding standards across multiple repositories, Git
 In Visual Studio Code, organization-level instructions are automatically detected when you're signed in to a GitHub account that has access to an organization with custom instructions configured. These instructions appear alongside your personal and workspace instructions in the Chat Instructions menu.
 
 > [!NOTE]
-> Personal instructions take the highest priority, followed by repository instructions, and then organization instructions. When multiple types of custom instructions exist, they're all provided to the AI, but higher-priority instructions take precedence when conflicts occur.
+> When multiple types of custom instructions exist, Copilot includes all of them but follows a priority order when resolving conflicts. The full instruction priority chain, from highest to lowest, is:
+> 1. Instructions entered manually in the Chat Instructions menu or pinned to the conversation.
+> 1. `.instructions.md` files (path-specific instructions).
+> 1. `.github/copilot-instructions.md` (repository-wide instructions).
+> 1. `AGENTS.md` or `CLAUDE.md` files.
+> 1. Organization-level instructions configured by a GitHub organization administrator.
+>
+> Higher-priority instructions take precedence when conflicts occur.
 
 ## How to create instruction files
 
@@ -95,6 +111,69 @@ Repository-level instructions align AI output with team conventions and reduce t
 
 Path-specific instructions allow for even more targeted guidance. Different rules can apply to frontend versus backend code, test files versus production code, or specific modules with unique requirements. This granularity ensures that suggestions are relevant to the specific area of the codebase the developer is working in.
 
+## Tips for writing effective instructions
+
+Well-crafted instructions produce significantly better results. Here are tips for getting the most out of custom instruction files:
+
+- **Explain the reasoning behind rules**. Instead of just "prefix private fields with `_`," write "Prefix private fields with `_` to distinguish them from parameters and local variables at a glance." When Copilot understands why a rule exists, it applies the rule more consistently and can extend the principle to similar situations.
+
+- **Include short code examples**. Pair guidelines with brief code snippets showing the expected pattern. For instance, follow "Use the factory pattern for complex object creation" with a two-line example. Concrete examples reduce ambiguity.
+
+- **Focus on non-obvious rules**. Don't repeat what linters and formatters already enforce. Instead, document the conventions that only your team knows—like which libraries to prefer, which patterns to follow for error handling, or which architectural boundaries exist between modules.
+
+- **Keep instructions concise and specific**. Overly long or vague instruction files dilute Copilot's attention. Each instruction should express one clear rule. Remove instructions that overlap or contradict each other.
+
+- **Separate concerns using path-specific files**. Use `.instructions.md` files with `applyTo` patterns to keep backend and frontend rules separate, test logic distinct from production code, and infrastructure scripts isolated from application code.
+
+## Prompt files
+
+In addition to instruction files that provide always-on context, Visual Studio Code supports **prompt files**—reusable prompt templates stored as `.prompt.md` files that you can invoke as slash commands in Copilot Chat.
+
+While instruction files shape how Copilot responds, prompt files define what to ask. A prompt file contains a pre-written prompt—with optional variable placeholders—that you can run on demand to execute a common task consistently. For example, you might create a prompt file that generates a code review checklist, creates a unit test for the current file, or produces API documentation in a specific format.
+
+### How prompt files work
+
+Prompt files use the `.prompt.md` extension and can be stored in the `.github/prompts/` folder of your workspace (shared with your team through version control) or in your VS Code user profile (personal, available across all workspaces). Each file contains an optional YAML frontmatter header and a Markdown body with the prompt text.
+
+The following example shows a prompt file that generates unit tests:
+
+```markdown
+---
+description: 'Generate unit tests for the current file'
+agent: 'copilot'
+tools: ['search', 'read']
+---
+# Generate Unit Tests
+
+Analyze the code in the active file and generate comprehensive unit tests.
+
+For each public method or function:
+1. Write a test for the expected behavior (happy path).
+2. Write tests for edge cases and error conditions.
+3. Use the project's existing test framework and naming conventions.
+
+Output the tests as a complete, runnable test file.
+```
+
+The YAML frontmatter for prompt files supports these fields:
+
+| Field | Description |
+|---|---|
+| `description` | A natural language description of what the prompt does. Appears in the slash command picker. |
+| `name` | An optional display name. If omitted, the filename is used. |
+| `agent` | The agent that should handle the prompt (for example, `copilot`). |
+| `model` | An optional model preference for this prompt. |
+| `tools` | Tools the prompt should have access to when executed. |
+
+### Using prompt files
+
+Once created, prompt files appear as slash commands in the Copilot Chat input. Type `/` followed by the prompt file's name (without the `.prompt.md` extension) to select and run it. For example, a file named `generate-tests.prompt.md` becomes the `/generate-tests` command.
+
+Prompt files support variable placeholders using the `${variable}` syntax. The variable `${file}` refers to the currently active file, and `${selection}` refers to the current text selection. You can also define custom variables that prompt the user for input when the prompt file is executed.
+
+> [!NOTE]
+> To enable prompt files, verify that the `chat.promptFiles` setting is turned on in VS Code. When enabled, your `.prompt.md` files are automatically detected and registered as available slash commands.
+
 ## Limitations
 
 Custom instruction files have a few important limitations to keep in mind:
@@ -107,4 +186,4 @@ Custom instruction files have a few important limitations to keep in mind:
 
 ## Summary
 
-Custom instruction files provide a structured way to guide Copilot's behavior at the repository, path, and organization levels. By creating a `.github/copilot-instructions.md` file for project-wide standards and optional `.instructions.md` files for path-specific rules, you can align AI-generated suggestions with your team's coding conventions. This reduces manual corrections, improves code consistency, and embeds your team's knowledge directly into the development workflow.
+Custom instruction files and prompt files provide a structured way to guide Copilot's behavior at the repository, path, and organization levels. By creating a `.github/copilot-instructions.md` file for project-wide standards, optional `.instructions.md` files for path-specific rules, and `.prompt.md` files for reusable prompt templates, you can align AI-generated suggestions with your team's coding conventions. Writing effective instructions—with reasoning, examples, and focused scope—maximizes the value of these customization features. Together, these tools reduce manual corrections, improve code consistency, and embed your team's knowledge directly into the development workflow.
