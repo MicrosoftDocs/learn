@@ -3,16 +3,16 @@ lab:
     title: 'Exercise - Configure and customize GitHub Copilot in Visual Studio Code'
     description: 'Learn how to configure a C# project to use custom Copilot instructions and create custom agents that collaborate through handoffs.'
     level: 300
-    duration: 45 minutes
+    duration: 50 minutes
 ---
 
 # Configure and customize GitHub Copilot in Visual Studio Code
 
 GitHub Copilot provides powerful AI-assisted coding out of the box, but its true potential emerges when you customize it to match your team's specific workflows and project requirements. By providing custom instructions and creating specialized agents, you can transform GitHub Copilot from a general-purpose assistant into a set of tailored AI collaborators that understand your codebase, follow your conventions, and handle multi-step development tasks.
 
-In this exercise, you configure a C# Web API project to use custom Copilot instructions and create custom agents that collaborate through handoffs to complete a development task end-to-end.
+In this exercise, you configure the ContosoInventory C# Web API project to use custom Copilot instructions and create custom agents that collaborate through handoffs to complete a development task end-to-end.
 
-This exercise should take approximately **45** minutes to complete.
+This exercise should take approximately **50** minutes to complete.
 
 > **IMPORTANT**: To complete this exercise, you must provide your own GitHub account and GitHub Copilot subscription. If you don't have a GitHub account, you can <a href="https://github.com/" target="_blank">sign up</a> for a free individual account and use a GitHub Copilot Free plan to complete the exercise. If you have access to a GitHub Copilot Pro, GitHub Copilot Pro+, GitHub Copilot Business, or GitHub Copilot Enterprise subscription from within your lab environment, you can use your existing GitHub Copilot subscription to complete this exercise.
 
@@ -27,17 +27,25 @@ Your lab environment MUST include the following resources:
 
 ## Exercise scenario
 
-You're a software developer working for a consulting firm. The firm developed a C# Web API project for a client that manages product inventory. The client has specific coding standards, architectural patterns, and review processes. You're tasked with using GitHub Copilot to accelerate development while ensuring that all code adheres to these standards.
+You're a software developer working for a consulting firm. The firm developed the ContosoInventory web application (a Blazor WebAssembly application with an ASP.NET Core backend) for Contoso's IT department. The application manages inventory categories for tracking equipment used across the organization. The client has specific coding standards, architectural patterns, and review processes, and they've asked you to add a Product Inventory management feature so individual products can be tracked within each category.
 
-You intend to use the following approach:
+You decide to use GitHub Copilot's customization features to accelerate development while ensuring that all code adheres to the client's standards:
 
-- Create custom instruction files that embed the client's coding standards into Copilot's behavior so that all AI-generated code follows the established conventions.
-- Define custom agents for specific development roles—a "Planner" that designs implementation plans, an "Implementer" that writes code, and a "Reviewer" that checks code quality.
-- Chain these agents together using handoffs to create a structured multi-step workflow from planning through implementation to review.
+1. Create custom instruction files that embed the client's coding standards into Copilot's behavior so that all AI-generated code follows the established conventions.
+1. Define custom agents for specific development roles—a "Planner" that designs implementation plans, an "Implementer" that writes code, and a "Reviewer" that checks code quality.
+1. Chain these agents together using handoffs to create a structured multi-step workflow from planning through implementation to review.
+
+The ContosoInventory application uses a three-project architecture:
+
+- **ContosoInventory.Server**: ASP.NET Core Web API with Entity Framework Core, Identity authentication, and SQLite.
+- **ContosoInventory.Client**: Blazor WebAssembly SPA that runs in the browser and calls the server API.
+- **ContosoInventory.Shared**: Shared class library containing models, DTOs, and enums.
+
+For the purposes of this lab exercise, you can test the application using two user accounts (Mateo Gomez and Megan Bowen). Mateo has the Admin role and can perform all CRUD operations on categories. Megan has the Viewer role and can only view categories.
 
 This exercise includes the following tasks:
 
-1. Set up a C# project and configure the development environment.
+1. Review features of the ContosoInventory application.
 1. Create repository-level custom instructions to enforce coding standards.
 1. Create path-specific instruction files for targeted guidance.
 1. Create a reusable prompt file for a common task.
@@ -46,13 +54,53 @@ This exercise includes the following tasks:
 1. Define a "Reviewer" custom agent for code quality checks.
 1. Run the chained agents workflow to complete a development task end-to-end.
 
-## Set up a C# project and configure the development environment
+## Review features of the ContosoInventory application
 
-In this task, you create a new C# Web API project, initialize a Git repository, and open it in Visual Studio Code with GitHub Copilot enabled.
+Before adding Copilot customization files, you need to become familiar with the existing application features.
 
 Use the following steps to complete this task:
 
-1. Open a terminal window (Command Prompt, PowerShell, or Terminal), and then navigate to the location where you want to create the project.
+1. Open a browser window and navigate to GitHub.com.
+
+    You can log in to your GitHub account using the following URL: <a href="https://github.com/login" target="_blank">GitHub login</a>.
+
+1. Sign in to your GitHub account, and then open your repositories tab.
+
+    You can open your repositories tab by clicking on your profile icon in the top-right corner, then selecting **Repositories**.
+
+1. On the Repositories tab, select the **New** button.
+
+1. Under the **Create a new repository** section, select **Import a repository**.
+
+1. On the **Import your project to GitHub** page, under **Your source repository details**, enter the following URL for the source repository:
+
+    ```plaintext
+    https://github.com/MicrosoftLearning/copilot-customization-starter-app
+    ```
+
+1. Under the **Your new repository details** section, in the **Owner** dropdown, select your GitHub username.
+
+1. In the **Repository name** field, enter **ContosoInventory**
+
+    GitHub automatically checks the availability of the repository name. If this name is already taken, append a unique suffix (for example, your initials or a random number) to the repository name to make it unique.
+
+1. To create a private repository, select **Private**, and then select **Begin import**.
+
+    GitHub uses the import process to create the new repository in your account.
+
+    > **NOTE**: It can take a minute or two for the import process to finish. Wait for the import process to complete.
+
+    GitHub displays a progress indicator and notifies you when the import is complete.
+
+1. Once the import is complete, open your new repository.
+
+    A link to your repository should be displayed. Your repository should be located at: `https://github.com/YOUR-USERNAME/ContosoInventory`.
+
+1. On your ContosoInventory repository page, select the **Code** button, and then copy the HTTPS URL.
+
+    The URL should be similar to: `https://github.com/YOUR-USERNAME/ContosoInventory.git`
+
+1. Open a terminal window in your development environment, and then navigate to the location where you want to create the local clone of the repository.
 
     For example:
 
@@ -62,44 +110,130 @@ Use the following steps to complete this task:
 
     Replace `C:\TrainingProjects` with your preferred location. You can use any directory where you have write permissions, and you can create a new folder location if needed.
 
-1. To create a new C# Web API project, enter the following commands:
+1. To clone your ContosoInventory repository, enter the following command:
+
+    Be sure to replace `YOUR-USERNAME` with your actual GitHub username before running the command.
 
     ```powershell
-    dotnet new webapi -n ContosoInventoryApi --use-controllers
-    cd ContosoInventoryApi
+    git clone https://github.com/YOUR-USERNAME/ContosoInventory.git
     ```
 
-    This creates a new ASP.NET Core Web API project with a controller-based structure. The project includes a sample `WeatherForecast` controller that you'll replace with inventory-related features.
+    You might be prompted to authenticate using your GitHub credentials during the clone operation. You can authenticate using your browser.
 
-1. To initialize a Git repository for the project, enter the following command:
-
-    ```powershell
-    git init
-    ```
-
-1. To open the project in Visual Studio Code, enter the following command:
+1. To navigate into your ContosoInventory directory and open it in Visual Studio Code, enter the following commands:
 
     ```powershell
+    cd ContosoInventory
     code .
     ```
 
 1. Take a moment to review the project structure.
 
-    Use Visual Studio Code's EXPLORER view to review the project files. You should see a structure similar to the following:
+    Use Visual Studio Code's EXPLORER view to expand the project folders. You should see a folder structure similar to the following:
 
     ```plaintext
-    ContosoInventoryApi/
-    ├── Controllers/
-    │   └── WeatherForecastController.cs
-    ├── Properties/
-    │   └── launchSettings.json
-    ├── appsettings.json
-    ├── appsettings.Development.json
-    ├── ContosoInventoryApi.csproj
-    ├── ContosoInventoryApi.http
-    ├── Program.cs
-    └── WeatherForecast.cs
+    ContosoInventory/
+    ├── ContosoInventory.Server/
+    │   ├── Controllers/
+    │   │   ├── AuthController.cs
+    │   │   └── CategoriesController.cs
+    │   ├── Data/
+    │   │   ├── InventoryContext.cs
+    │   │   └── DbInitializer.cs
+    │   ├── Models/
+    │   │   └── Category.cs
+    │   ├── Services/
+    │   │   ├── ICategoryService.cs
+    │   │   └── CategoryService.cs
+    │   └── Program.cs
+    ├── ContosoInventory.Client/
+    │   ├── Pages/
+    │   │   ├── Home.razor
+    │   │   ├── Login.razor
+    │   │   └── Categories.razor
+    │   └── Services/
+    │       └── CategoryApiService.cs
+    ├── ContosoInventory.Shared/
+    │   └── DTOs/
+    │       ├── CategoryResponseDto.cs
+    │       ├── CreateCategoryDto.cs
+    │       └── UpdateCategoryDto.cs
+    └── ContosoInventory.sln
     ```
+
+1. Open the **ContosoInventory.Server/Program.cs** file and review the application configuration.
+
+    Notice the following key configuration areas:
+
+    - Entity Framework Core with SQLite for data access
+    - ASP.NET Core Identity for authentication with cookie-based sessions
+    - Service registrations for `ICategoryService`
+    - Database seeding via `DbInitializer.InitializeAsync` at startup
+    - CORS, rate limiting, CSRF protection, and security headers middleware
+
+1. Open the **ContosoInventory.Server/Controllers/CategoriesController.cs** file and note the existing API endpoints.
+
+    The categories controller provides the following endpoints:
+
+    - `GetCategories`: Gets all categories ordered by display order
+    - `GetCategory`: Gets a specific category by ID
+    - `CreateCategory`: Creates a new category (Admin only)
+    - `UpdateCategory`: Updates an existing category (Admin only)
+    - `DeleteCategory`: Deletes a category (Admin only)
+    - `ToggleActive`: Toggles the active status of a category (Admin only)
+
+1. Open the **ContosoInventory.Server/Services/CategoryService.cs** file and review the service implementation.
+
+    Notice the patterns used: async/await for all database operations, DTO mapping, structured logging, input validation, and error handling with try-catch blocks. The Copilot agents will reference these patterns when creating a Product feature later in the exercise.
+
+1. Open a terminal in the **ContosoInventory.Server** directory and build the solution.
+
+    ```powershell
+    cd ContosoInventory.Server
+    dotnet build
+    ```
+
+    > **IMPORTANT**: The project uses .NET 8 by default. If you have the .NET 9 or .NET 10 SDK installed, but not .NET 8, you need to update the project to target the version of .NET that you have installed. For AI assistance with updating to a later version of .NET, open the GitHub Copilot Chat view and ask GitHub Copilot to update your project files to the version of .NET that you have installed in your environment.
+
+    The build should complete successfully without errors (there might be warnings).
+
+1. Start the server application.
+
+    ```powershell
+    dotnet run
+    ```
+
+    > **NOTE**: The first time you run the application, it may take a little extra time to apply database migrations and seed the database with sample data. You should see console output indicating that the database has been initialized and seeded. You should also see a message that the server starts listening on `http://localhost:5240`.
+
+1. Open a browser and navigate to `http://localhost:5240`.
+
+    The application should open to the ContosoInventory login page.
+
+1. Sign in using the Admin demo credentials.
+
+    Enter `mateo@contoso.com` for the email and `Password123!` for the password, and then select **Sign in**.
+
+1. Verify that the Home page displays category statistics.
+
+    You should see a welcome message and statistics showing 8 total categories, 7 active, and 1 inactive.
+
+1. Navigate to the **Categories** page and verify that all 8 categories are listed.
+
+    You should see categories like Laptops & Desktops, Monitors & Displays, Networking Equipment, and others. As an Admin, you should also see Add, Edit, Delete, and Toggle Active action buttons.
+
+1. Log out and sign in with the Viewer credentials.
+
+    Enter `megan@contoso.com` for the email and `Password123!` for the password.
+
+1. Navigate to the **Categories** page and verify that Admin-only action buttons (Add, Edit, Delete, Toggle Active) are not visible.
+
+    As a Viewer, Megan can see the category list but cannot modify data.
+
+1. Log out from the application.
+
+1. To stop the application, return to the Visual Studio Code integrated terminal where the server is running, and then press **Ctrl+C**.
+
+    > **NOTE**: You can leave the terminal open for the next task.
 
 1. Verify that GitHub Copilot is active in Visual Studio Code.
 
@@ -108,16 +242,6 @@ Use the following steps to complete this task:
 1. Open the Copilot Chat view by selecting the Chat icon in the Activity Bar, or by pressing **Ctrl+Alt+I**.
 
     Verify that Copilot Chat opens successfully. You'll use Copilot Chat extensively throughout this exercise.
-
-1. Build the project to verify that everything compiles correctly.
-
-    Open a terminal in VS Code (**Terminal > New Terminal**) and enter:
-
-    ```powershell
-    dotnet build
-    ```
-
-    The build should complete successfully without errors.
 
 ## Create repository-level custom instructions to enforce coding standards
 
@@ -246,7 +370,7 @@ Use the following steps to complete this task:
 
 1. Verify that the path-specific instructions are active.
 
-    Open one of the controller files (for example, **Controllers/WeatherForecastController.cs**) and then open the Copilot Chat view. Right-click in the Chat view and select **Diagnostics** to inspect the loaded instruction files.
+    Open the **ContosoInventory.Server/Controllers/CategoriesController.cs** file in the editor, and then open the Copilot Chat view. Right-click in the Chat view and select **Diagnostics** to inspect the loaded instruction files.
 
     You should see both `copilot-instructions.md` (repository-wide) and `controllers.instructions.md` (path-specific for controllers) listed as active instructions.
 
@@ -293,13 +417,13 @@ Use the following steps to complete this task:
 
 1. Test the prompt file.
 
-    Open the **Controllers/WeatherForecastController.cs** file, then in Copilot Chat, enter:
+    Open the **ContosoInventory.Server/Controllers/CategoriesController.cs** file in the editor, then in Copilot Chat, enter:
 
     ```plaintext
     /generate-api-docs
     ```
 
-    Copilot should analyze the WeatherForecast controller and produce formatted API documentation for its endpoints. This demonstrates how prompt files standardize common tasks across the team.
+    Copilot should analyze the CategoriesController and produce formatted API documentation for all six endpoints (GET all, GET by ID, POST, PUT, DELETE, and toggle-active). This demonstrates how prompt files standardize common tasks across the team and shows meaningful output because the existing controller has multiple endpoints with different HTTP methods, authorization levels, and response types.
 
 ## Define a "Planner" custom agent with read-only tools
 
@@ -362,10 +486,10 @@ Use the following steps to complete this task:
 1. Test the Planner agent by entering the following prompt:
 
     ```plaintext
-    Analyze the project structure and describe the current architecture, including any existing models, services, and controllers.
+    Analyze the project structure and describe the current architecture, including any existing models, services, and controllers. Identify the patterns used in the Category feature implementation.
     ```
 
-    The Planner agent should use the `search` and `read` tools to examine the project files and provide an overview of the current architecture. Since the agent only has read-only tools, it won't attempt to modify any files.
+    The Planner agent should use the `search` and `read` tools to examine the project files and provide a detailed overview of the current architecture. It should identify the Category model, CategoryService, CategoriesController, the DTO pattern, dependency injection setup, and the overall three-project architecture. Since the agent only has read-only tools, it won't attempt to modify any files.
 
 1. Switch back to the default Copilot agent by opening the agents dropdown and selecting **Copilot**.
 
@@ -492,27 +616,32 @@ Use the following steps to complete this task:
 1. Enter the following prompt to request a feature plan:
 
     ```plaintext
-    I need to add a Product Inventory management feature to this Web API. The feature should support:
-    - A Product model with: Id (int), Name (string), Sku (string), Description (string), Price (decimal), StockQuantity (int), Category (string), CreatedDate (DateTime), LastUpdatedDate (DateTime).
-    - CRUD operations for products (Create, Read by ID, Read all with filtering by category, Update, Delete).
+    I need to add a Product Inventory management feature to this Web API, following the same patterns used by the existing Category feature. The feature should support:
+    - A Product model with: Id (int), Name (string), Sku (string), Description (string), Price (decimal), StockQuantity (int), CategoryId (int, foreign key to Category), CreatedDate (DateTime), LastUpdatedDate (DateTime).
+    - CRUD operations for products (Create, Read by ID, Read all with optional filtering by CategoryId, Update, Delete).
     - A restock endpoint that increases the StockQuantity for a specific product.
     - Input validation on all create/update operations.
-    - The project should use an in-memory list for data storage (no database required for this exercise).
+    - Authorization: Admin role required for create, update, delete, and restock operations. All authenticated users can read.
+    - Use Entity Framework Core with the existing SQLite database (add Product to the DbContext and create a migration).
+    - Follow the same service interface, DTO, and controller patterns used in the Category feature.
     ```
 
-    The Planner agent should search the existing codebase to understand the current structure and then produce a detailed implementation plan. The plan should include the files to create, implementation steps, model definitions, service interfaces, controller endpoints, and dependency injection registrations.
+    The Planner agent should search the existing codebase, analyze the Category implementation patterns (model, DTOs, service interface, service implementation, controller), and produce a detailed implementation plan that mirrors the established architecture.
 
 1. Review the plan produced by the Planner agent.
 
     Verify that the plan:
 
-    - Lists all files to be created (models, DTOs, interfaces, services, controllers).
+    - Lists all files to be created (Product model, Product DTOs, IProductService interface, ProductService implementation, ProductsController).
     - Follows the naming conventions from your custom instructions (PascalCase, underscore prefix for private fields).
-    - Uses the repository pattern / service layer pattern as specified in your instructions.
+    - Uses the same service layer pattern established in the existing CategoryService.
     - Includes DTOs for API payloads rather than exposing entities directly.
+    - Recognizes the CategoryId foreign key relationship between Product and Category.
     - Specifies dependency injection registrations in Program.cs.
+    - Includes a migration step for adding the Product table to the SQLite database.
+    - Mentions authorization requirements (Admin-only for write operations).
 
-    > **NOTE**: If the plan doesn't align with your custom instructions, you can ask the Planner to revise it. For example: "Revise the plan to use DTOs for all API request and response types, as required by our coding standards."
+    > **NOTE**: If the plan doesn't align with your custom instructions or the existing Category patterns, you can ask the Planner to revise it. For example: "Revise the plan to follow the same DTO patterns used in the Category feature, including separate CreateProductDto, UpdateProductDto, and ProductResponseDto types."
 
 1. When you're satisfied with the plan, select the **Start Implementation** handoff button.
 
@@ -532,12 +661,16 @@ Use the following steps to complete this task:
 
     The Implementer should have created files similar to the following (exact names and locations may vary based on the plan):
 
-    - **Models/Product.cs**: The product entity.
-    - **DTOs/ProductDto.cs** (or similar): DTOs for create, update, and response payloads.
-    - **Services/IProductService.cs**: The service interface.
-    - **Services/ProductService.cs**: The service implementation with in-memory data storage.
-    - **Controllers/ProductsController.cs**: The API controller with CRUD and restock endpoints.
-    - Updated **Program.cs**: Service registration via dependency injection.
+    - **ContosoInventory.Server/Models/Product.cs**: The product entity with CategoryId foreign key.
+    - **ContosoInventory.Shared/DTOs/ProductResponseDto.cs** (or similar): Response DTO.
+    - **ContosoInventory.Shared/DTOs/CreateProductDto.cs** (or similar): Creation DTO with validation attributes.
+    - **ContosoInventory.Shared/DTOs/UpdateProductDto.cs** (or similar): Update DTO with validation attributes.
+    - **ContosoInventory.Server/Services/IProductService.cs**: The service interface.
+    - **ContosoInventory.Server/Services/ProductService.cs**: The service implementation using EF Core.
+    - **ContosoInventory.Server/Controllers/ProductsController.cs**: The API controller with CRUD, restock, and authorization.
+    - Updated **ContosoInventory.Server/Data/InventoryContext.cs**: Added `DbSet<Product>` and model configuration.
+    - Updated **ContosoInventory.Server/Program.cs**: Service registration via dependency injection.
+    - A new EF Core migration for the Product table.
 
 1. Build the project to verify that the generated code compiles.
 
@@ -562,13 +695,15 @@ Use the following steps to complete this task:
     The review should check that:
 
     - Naming conventions match the custom instructions (PascalCase for public members, underscore prefix for private fields).
-    - The service layer pattern is followed with proper interface/implementation separation.
+    - The service layer pattern is followed consistently with the existing CategoryService (interface/implementation separation).
     - DTOs are used for API payloads instead of entities.
     - Error handling includes try-catch blocks and proper HTTP status codes.
     - XML documentation comments are present on public methods.
     - Input validation is implemented on create/update operations.
+    - Authorization attributes are applied correctly (Admin-only for write operations).
+    - The CategoryId foreign key relationship is properly configured.
 
-    > **NOTE**: The Reviewer may identify issues that the Implementer missed. This is expected and demonstrates the value of having specialized agents review each other's work.
+    > **NOTE**: The Reviewer may identify issues that the Implementer missed. This is expected and demonstrates the value of having specialized agents review each other's work. The Reviewer can compare the new Product code directly against the existing Category implementation for consistency.
 
 1. If the Reviewer identifies issues, select the **Fix Issues** handoff button.
 
@@ -588,10 +723,10 @@ Use the following steps to complete this task:
     dotnet run
     ```
 
-    Open a browser and navigate to the Swagger UI (typically at `http://localhost:<port>/swagger`). You can test the CRUD endpoints:
+    Open a browser and navigate to the Swagger UI at `http://localhost:5240/swagger`. You can test the new Product endpoints alongside the existing Category endpoints. First, use **POST /api/auth/login** with `mateo@contoso.com` / `Password123!` to authenticate as the Admin user, then test:
 
-    - **POST /api/products**: Create a new product with a JSON body.
-    - **GET /api/products**: List all products (try filtering by category if supported).
+    - **POST /api/products**: Create a new product with a JSON body. Use a valid `CategoryId` from the existing categories (e.g., 1 for "Laptops & Desktops").
+    - **GET /api/products**: List all products (try filtering by CategoryId if supported).
     - **GET /api/products/{id}**: Get a specific product.
     - **PUT /api/products/{id}**: Update a product.
     - **DELETE /api/products/{id}**: Delete a product.
@@ -601,14 +736,15 @@ Use the following steps to complete this task:
 
 ## Summary
 
-In this exercise, you successfully configured and customized GitHub Copilot in Visual Studio Code for a C# Web API project. You:
+In this exercise, you successfully configured and customized GitHub Copilot in Visual Studio Code for the ContosoInventory C# Web API project. You:
 
+- **Imported and reviewed the ContosoInventory starter application** to understand the existing three-project architecture (Server, Client, Shared), Category feature implementation, and security configuration with role-based authorization.
 - **Created repository-level custom instructions** (`.github/copilot-instructions.md`) that embed your team's coding standards—naming conventions, architecture patterns, error handling, and documentation requirements—into every Copilot Chat interaction.
 - **Created path-specific instruction files** (`.github/instructions/*.instructions.md`) that provide targeted guidance for controllers and services, using `applyTo` glob patterns to match specific file locations.
-- **Created a reusable prompt file** (`.github/prompts/generate-api-docs.prompt.md`) that standardizes API documentation generation as a slash command.
+- **Created a reusable prompt file** (`.github/prompts/generate-api-docs.prompt.md`) that standardizes API documentation generation as a slash command, and tested it against the existing CategoriesController.
 - **Defined three custom agents** (Planner, Implementer, and Reviewer) with tailored instructions, tool permissions, and behavioral guidelines for each development role.
 - **Configured handoffs** between agents to create a structured Planning → Implementation → Review workflow with developer oversight at each transition.
-- **Ran the complete chained workflow** to add a Product Inventory feature end-to-end, demonstrating how the agents collaborate while following the project's coding standards.
+- **Ran the complete chained workflow** to add a Product Inventory feature end-to-end, using the existing Category feature as a reference architecture. The agents collaborated to create a Product model with a CategoryId foreign key, DTOs, service interface and implementation, and a controller with authorization—all following the project's established coding standards.
 
 This pattern—embedding team knowledge in instruction files and orchestrating specialized agents through handoffs—is applicable to any development project. You can adapt these techniques for other scenarios such as Test-Driven Development (Test Writer → Implementer), debugging workflows (Debugger → Patcher → Tester), or migration projects (Analyzer → Upgrader → Reviewer).
 
@@ -618,3 +754,4 @@ Now that you've finished the exercise, take a minute to clean up your environmen
 
 - Stop the application if it's still running (press **Ctrl+C** in the terminal).
 - Optionally archive or delete the project directory.
+- If you created a private ContosoInventory repository in your GitHub account, you can delete it by going to the repository **Settings** tab and selecting **Delete this repository** at the bottom of the page.
