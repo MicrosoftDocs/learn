@@ -10,19 +10,19 @@ Strong model security begins with strong identity foundations. AI models, endpoi
 
 ### Use managed identities
 
-Assign a **managed identity** to each model endpoint and Foundry workload.
+- Assign a **managed identity** to each model endpoint and Foundry workload.
 
-Remove all secrets, static keys, or embedded credentials from pipelines.
+- Remove all secrets, static keys, or embedded credentials from pipelines.
 
-Enforce an identity lifecycle with rotation, disablement, and review.
+- Enforce an identity lifecycle with rotation, disablement, and review.
 
 ### Role-based access control
 
-Restrict permissions using **least privilege**.
+- Restrict permissions using **least privilege**.
 
-Grant access based on the model's function, not developer convenience.
+- Grant access based on the model's function, not developer convenience.
 
-Use **resourcescoped roles** for training, deployment, and inferencing operations.
+- Use **resourcescoped roles** for training, deployment, and inferencing operations.
 
 ## 2. Authorization and access boundaries
 
@@ -30,25 +30,19 @@ Solution architects help define the boundaries around what models can access, pr
 
 ### Segregate development and production
 
-Separate inference endpoints for dev, test, and prod.
+- Separate inference endpoints for dev, test, and prod.
 
-Apply tighter RBAC and approval workflows in production environments.
+- Apply tighter RBAC and approval workflows in production environments.
 
 ### Limit privileged access
 
-Restrict model modification, retraining, and redeployment rights.
+- Restrict model modification, retraining, and redeployment rights.
 
-Require multistep approvals for sensitive model updates.
+- Require multistep approvals for sensitive model updates.
 
-### Example visual for PPT: Access Boundary Diagram
+### Access Boundary Diagram
 
-**Diagram:**<br>Three layers showing
-
-**Identity Control Layer** (Managed identity, RBAC scopes)
-
-**Model Execution Layer** (Inference endpoint, Foundry runtime)
-
-**Data Boundary Layer** (Approved data sources, redacted output filters)
+:::image type="content" source="../media/access-boundary-diagram.png" alt-text="Identity control, model execution, and data boundary.":::
 
 ## 3. Protect data used by models
 
@@ -56,21 +50,21 @@ Models interact with sensitive information through training data, memory stores,
 
 ### Data minimization
 
-Use the minimum data required for the model's purpose.
+- Use the minimum data required for the model's purpose.
 
-Redact sensitive fields (PII, secrets, financial identifiers) during preprocessing.
+- Redact sensitive fields (PII, secrets, financial identifiers) during preprocessing.
 
 ### Encryption and residency
 
-Ensure all data—input, output, and intermediate artifacts—is encrypted at rest and in transit.
+- Ensure all data—input, output, and intermediate artifacts—is encrypted at rest and in transit.
 
-Deploy models in regions that meet your **data residency** and compliance requirements.
+- Deploy models in regions that meet your **data residency** and compliance requirements.
 
 ### DLP enforcement
 
-Apply DLP rules to prevent sensitive data from being returned in model responses.
+- Apply DLP rules to prevent sensitive data from being returned in model responses.
 
-Implement filters to block harmful or restricted outputs.
+- Implement filters to block harmful or restricted outputs.
 
 ## 4. Harden AI workloads
 
@@ -78,23 +72,23 @@ Harden the environment where AI models operate to reduce attack surfaces.
 
 ### Model infrastructure hardening
 
-Use isolated networks or private endpoints.
+- Use isolated networks or private endpoints.
 
-Enforce secure build pipelines for training artifacts.
+- Enforce secure build pipelines for training artifacts.
 
-Block inbound public traffic unless explicitly required.
+- Block inbound public traffic unless explicitly required.
 
 ### Model drift and poisoning safeguards
 
-Track data lineage for all training sources.
+- Track data lineage for all training sources.
 
-Validate newly introduced data before using it in retraining pipelines.
+- Validate newly introduced data before using it in retraining pipelines.
 
-Automate anomaly detection in model behavior and output patterns.
+- Automate anomaly detection in model behavior and output patterns.
 
-### Example visual for PPT: Model Hardening Blueprint
+### Model Hardening Blueprint
 
-**Diagram:**<br>Boxes for: Secure compute → Private endpoints → Threat protection → Validation pipeline → Monitoring and drift detection.
+:::image type="content" source="../media/model-hardining-blueprint.png" alt-text="Modeling hardening blue print.":::
 
 ## 5. Threat detection and response
 
@@ -102,23 +96,23 @@ Model security is strengthened with continuous threat detection and realtime mon
 
 ### Threat protection
 
-Enable AIspecific threat detection for prompt injection, unauthorized access attempts, and unusual inference patterns.
+- Enable AIspecific threat detection for prompt injection, unauthorized access attempts, and unusual inference patterns.
 
-Use automated scanning to identify insecure default settings and misconfigurations.
+- Use automated scanning to identify insecure default settings and misconfigurations.
 
 ### Logging and monitoring
 
-Collect logs for identity access, model operations, system events, and output anomalies.
+- Collect logs for identity access, model operations, system events, and output anomalies.
 
-Route security alerts to SOC workflows for triage and escalation.
+- Route security alerts to SOC workflows for triage and escalation.
 
 ### Incident response for AI models
 
-Predefine steps to disable a compromised model endpoint.
+- Predefine steps to disable a compromised model endpoint.
 
-Preserve inference logs and model artifacts for forensic analysis.
+- Preserve inference logs and model artifacts for forensic analysis.
 
-Establish rollback procedures for restoring prior model versions.
+- Establish rollback procedures for restoring prior model versions.
 
 ## 6. Governance and lifecycle controls
 
@@ -126,22 +120,22 @@ Strong governance ensures models remain secure throughout their lifecycle.
 
 ### Policydriven model management
 
-Mandate approval checkpoints for model deployment, retraining, and version promotion.
+- Mandate approval checkpoints for model deployment, retraining, and version promotion.
 
-Require documentation for model purpose, training data, parameters, and risk profile.
+- Require documentation for model purpose, training data, parameters, and risk profile.
 
 ### Lifecycle governance
 
-Assign retention requirements for training data, logs, and memory stores.
+- Assign retention requirements for training data, logs, and memory stores.
 
-Review and retire outdated models that no longer meet security or quality standards.
+- Review and retire outdated models that no longer meet security or quality standards.
 
-### Example visual for PPT: Model Governance Lifecycle
+### Model Governance Lifecycle
 
-**Diagram:**<br>Create → Review → Approve → Deploy → Monitor → Update/Retire<br>Circular lifecycle model with required controls at each step.
+:::image type="content" source="../media/model-governance-lifecycle.png" alt-text="Model governance lifecycle.":::
 
 ## References
 
-[https://learn.microsoft.com/en-us/training/paths/defender-for-cloud-ai-foundry-protect/](/training/paths/defender-for-cloud-ai-foundry-protect/)
+- [https://learn.microsoft.com/en-us/training/paths/defender-for-cloud-ai-foundry-protect/](/training/paths/defender-for-cloud-ai-foundry-protect/)
 
-[https://learn.microsoft.com/en-us/training/paths/manage-iam-for-ai-workloads-on-azure/?sharingId=6F81B482FD5357F5](/training/paths/manage-iam-for-ai-workloads-on-azure/)
+- [https://learn.microsoft.com/en-us/training/paths/manage-iam-for-ai-workloads-on-azure/?sharingId=6F81B482FD5357F5](/training/paths/manage-iam-for-ai-workloads-on-azure/)
