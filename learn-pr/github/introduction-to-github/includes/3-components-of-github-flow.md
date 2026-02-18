@@ -84,6 +84,9 @@ Now that we know the basics of GitHub we can walk through the GitHub flow and it
 
 ## Git flow
 
+:::image type="content" source="../media/nvie-git-flow.png" alt-text="Screenshot showing a visual representation of the GitHub flow in a linear format that includes a new branch, commits, pull request, and merging the changes back to main in that order." border="false":::
+
+
 While GitHub Flow is a lightweight workflow designed for continuous delivery, **Git flow** is a more structured branching model often used in release-driven environments. Git flow has been around longer than GitHub Flow, and you may still see the term **`master`** used instead of **`main`** as the default branch.
 
 ### Git flow Branch Types
