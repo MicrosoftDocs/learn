@@ -24,15 +24,15 @@ _Task Automation, Analytics, and Decision-Making:_
 
 _Grounding Data for Reliable AI:_
 
-- Grounding ensures AI agents use trusted, domain-specific data, increasing accuracy and reducing hallucinations (confidently incorrect answers).
+- Grounding ensures AI agents use trusted, domain-specific data, increasing accuracy and reducing inaccurate (confidently incorrect answers).
 
 Five dimensions of grounding data quality:
 
-1. Accuracy: Data is correct and verified.
-2. Relevance: Data matches the intended use case.
-3. Timeliness: Data is current and up to date.
-4. Cleanliness: Data is structured and free from noise.
-5. Availability: Data is accessible and indexable per user permissions.
+- Accuracy: Data is correct and verified.
+- Relevance: Data matches the intended use case.
+- Timeliness: Data is current and up to date.
+- Cleanliness: Data is structured and free from noise.
+- Availability: Data is accessible and indexable per user permissions.
 
 Technologies like semantic indexing and the Copilot Retrieval API support precise, permissioned data retrieval.
 

@@ -94,6 +94,6 @@ These principles reinforce reliable, secure AI adoption at scale.
 
 Use these links as the primary sources for this unit:
 
-- **Explore Copilot Experiences**[Explore Copilot Experiences](/training/modules/business-value-microsoft-copilot-solutions/3-explore-copilot-experiences) 
+- [Explore Copilot Experiences](/training/modules/business-value-microsoft-copilot-solutions/3-explore-copilot-experiences)
 
-- **Unlock Productivity with Generative AI - Microsoft Learn**[Unlock Productivity with Generative AI](/training/modules/generative-ai-productivity/)
+- [Unlock Productivity with Generative AI](/training/modules/generative-ai-productivity/)

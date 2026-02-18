@@ -9,11 +9,11 @@ After completing this unit, learners will be able to:
 
 ## 1. Understanding Grounding in AI Agents
 
-Grounding ensures that an AI agent responds using **trusted, domainspecific organizational data**, increasing accuracy and reducing hallucinations.
+Grounding ensures that an AI agent responds using **trusted, domain-specific organizational data**, increasing accuracy and reducing inaccurate information.
 
 Microsoft Copilot and Copilot Studio use **semantic indexing** to map enterprise content across Microsoft Graph into rich lexical and semantic representations. This enables more contextually precise retrieval.
 
-AI systems must be connected to **approved, accesscontrolled data** so they produce trustworthy outcomes that respect organizational security boundaries.
+AI systems must be connected to **approved, access-controlled data** so they produce trustworthy outcomes that respect organizational security boundaries.
 
 To support advanced grounding, the **Copilot Retrieval API** retrieves relevant text passages from SharePoint, OneDrive, and connected sources, honoring user permissions.
 
@@ -89,7 +89,7 @@ The Retrieval API respects permissions and will not return content beyond a user
 
 | **Dimension** | **Definition** | **Impact on Agent Performance** |
 |---|---|---|
-| **Accuracy** | Data is correct and verified | Reduces hallucinations and misinformation |
+| **Accuracy** | Data is correct and verified | Reduces inaccurate information and misinformation |
 | **Relevance** | Data aligns to the task/intent | Ensures responses match the intended scenario |
 | **Timeliness** | Data is current and up to date | Keeps outputs aligned with latest policies or info |
 | **Cleanliness** | Data is structured and free of noise | Improves retrieval precision |
@@ -101,24 +101,24 @@ The Retrieval API respects permissions and will not return content beyond a user
 
 ## 5. Best Practices for Reviewing Grounding Data
 
-1. **Evaluate content quality before upload**: remove outdated or conflicting information.
+- **Evaluate content quality before upload**: remove outdated or conflicting information.
 
-2. **Store authoritative content in SharePoint or OneDrive** so it becomes part of the semantic index.
+- **Store authoritative content in SharePoint or OneDrive** so it becomes part of the semantic index.
 
-3. **Ensure consistent formatting** to improve data cleanliness and retrieval precision.
+- **Ensure consistent formatting** to improve data cleanliness and retrieval precision.
 
-4. **Review permissions regularly** so agents ground from valid data sources only.
+- **Review permissions regularly** so agents ground from valid data sources only.
 
-5. **Collaborate with domain SMEs** to validate accuracy and contextual fit.
+- **Collaborate with domain SMEs** to validate accuracy and contextual fit.
 
 **References**
 
-_Add knowledge to ground an agent - Copilot Studio_<br>[Add knowledge to ground an agent](/training/modules/agents-copilot-studio-online-workshop/add-knowledge)
+- [Add knowledge to ground an agent](/training/modules/agents-copilot-studio-online-workshop/add-knowledge)
 
-_Ground AI using trusted data_<br>[Ground AI using trusted data](/training/modules/build-effective-generative-ai-solutions-organization/3-ground-ai-using-trusted-data)
+- [Ground AI using trusted data](/training/modules/build-effective-generative-ai-solutions-organization/3-ground-ai-using-trusted-data)
 
-_Semantic indexing for Microsoft 365 Copilot_<br>[Semantic indexing for Microsoft 365 Copilot](/microsoftsearch/semantic-index-for-copilot)
+- [Semantic indexing for Microsoft 365 Copilot](/microsoftsearch/semantic-index-for-copilot)
 
-_Microsoft 365 Copilot Retrieval API_<br>[Microsoft 365 Copilot Retrieval API](/microsoft-365-copilot/extensibility/api/ai-services/retrieval/copilotroot-retrieval)
+- [Microsoft 365 Copilot Retrieval API](/microsoft-365-copilot/extensibility/api/ai-services/retrieval/copilotroot-retrieval)
 
-_Manage Grounding With Bing in Microsoft Foundry and Azure_<br>[Manage Grounding With Bing](/azure/ai-foundry/agents/how-to/manage-grounding-with-bing)
+- [Manage Grounding With Bing in Microsoft Foundry and Azure](/azure/ai-foundry/agents/how-to/manage-grounding-with-bing)

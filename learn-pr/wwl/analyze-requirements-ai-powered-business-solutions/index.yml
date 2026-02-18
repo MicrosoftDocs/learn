@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.wwl.analyze-requirements-for-ai-powered-business-solutions
+uid: learn.wwl.analyze-requirements-ai-powered-business-solutions
 metadata:
   title: "Analyze Requirements for AI-Powered Business Solutions"
   description: "Learn to analyze, design, and implement AI-powered business solutions using agents, generative AI, and Microsoft Copilot for productivity."
@@ -39,11 +39,11 @@ subjects:
 - data-engineering
 - data-integration
 units:
-- learn.wwl.analyze-requirements-for-ai-powered-business-solutions.introduction
-- learn.wwl.analyze-requirements-for-ai-powered-business-solutions.assess-use-agents-task-automation-data-analytics-decision-making
-- learn.wwl.analyze-requirements-for-ai-powered-business-solutions.review-data-grounding-accuracy-relevance-timeliness-cleanliness-availability
-- learn.wwl.analyze-requirements-for-ai-powered-business-solutions.organize-business-solution-data-available-other-ai-systems
-- learn.wwl.analyze-requirements-for-ai-powered-business-solutions.knowledge-check
-- learn.wwl.analyze-requirements-for-ai-powered-business-solutions.summary
+- learn.wwl.analyze-requirements-ai-powered-business-solutions.introduction
+- learn.wwl.analyze-requirements-ai-powered-business-solutions.assess-use-agents-task-automation-data-analytics-decision-making
+- learn.wwl.analyze-requirements-ai-powered-business-solutions.review-data-grounding-accuracy-relevance-timeliness-cleanliness-availability
+- learn.wwl.analyze-requirements-ai-powered-business-solutions.organize-business-solution-data-available-other-ai-systems
+- learn.wwl.analyze-requirements-ai-powered-business-solutions.knowledge-check
+- learn.wwl.analyze-requirements-ai-powered-business-solutions.summary
 badge:
-  uid: learn.wwl.analyze-requirements-for-ai-powered-business-solutions.badge
+  uid: learn.wwl.analyze-requirements-ai-powered-business-solutions.badge
