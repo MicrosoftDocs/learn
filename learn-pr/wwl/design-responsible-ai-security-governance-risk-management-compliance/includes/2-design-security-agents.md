@@ -1,6 +1,6 @@
 ## Overview
 
-Design a defenseindepth approach for autonomous and semiautonomous agents that operate across Microsoft clouds. You'll translate business and compliance requirements into identity, access, data protection, observability, and threatprotection controls. You'll also define how agents authenticate, what they can do, what they can see, and how their behavior is monitored and governed at scale.
+Design a defense in depth approach for autonomous and semiautonomous agents that operate across Microsoft clouds. You'll translate business and compliance requirements into identity, access, data protection, observability, and threatprotection controls. You'll also define how agents authenticate, what they can do, what they can see, and how their behavior is monitored and governed at scale.
 
 ### By the end of this unit, solution architects will be able to:
 
@@ -136,71 +136,71 @@ Version artifacts, enforce approvals, and use automated checks for security post
 
 :::image type="content" source="../media/four-layer-control-model.png" alt-text="Four layer control model.":::
 
-## Implementation guide (stepbystep)
+## Implementation guide (step by step)
 
 **Establish identities and access**
 
-Create managed identities per agent per environment.
+- Create managed identities per agent per environment.
 
-Assign leastprivilege Azure roles to the identities at the narrowest scope.
+- Assign leastprivilege Azure roles to the identities at the narrowest scope.
 
-Define maker/publisher/admin role mappings and access review cadence.
+- Define maker/publisher/admin role mappings and access review cadence.
 
 **Harden data access**
 
-Inventory knowledge sources and classify sensitivity.
+- Inventory knowledge sources and classify sensitivity.
 
-Apply DLP and sensitivity labels; restrict risky connectors and HTTP calls.
+- Apply DLP and sensitivity labels; restrict risky connectors and HTTP calls.
 
-Configure data residency and retention for knowledge, logs, and memory.
+- Configure data residency and retention for knowledge, logs, and memory.
 
 **Stand up observability**
 
-Route logs to a central workspace; enable application telemetry for prompts, tool calls, and errors.
+- Route logs to a central workspace; enable application telemetry for prompts, tool calls, and errors.
 
-Build dashboards for quality, safety, and cost; configure alerts for anomalies and budget thresholds.
+- Build dashboards for quality, safety, and cost; configure alerts for anomalies and budget thresholds.
 
 **Enable threat protection and testing**
 
-Turn on AIaware threat protections and content safety checks.
+- Turn on AIaware threat protections and content safety checks.
 
-Schedule red team assessments; track findings to closure before production release.
+- Schedule red team assessments; track findings to closure before production release.
 
 **Govern environments and releases**
 
-Use environment routing to separate dev/test/prod.
+- Use environment routing to separate dev/test/prod.
 
-Require peer review and approver signoff to publish; block publishing if mandatory checks fail.
+- Require peer review and approver signoff to publish; block publishing if mandatory checks fail.
 
 **Prepare incident response**
 
-Document disable/rollback steps, comms templates, and evidence preservation.
+- Document disable/rollback steps, comms templates, and evidence preservation.
 
-Run tabletop exercises for highimpact agents.
+- Run tabletop exercises for highimpact agents.
 
-Identify proactive alerting for emerging potential threats
+- Identify proactive alerting for emerging potential threats
 
 ## Design checklist (use in reviews)
 
-☐ Agent identities exist for each environment; owners recorded.
+- [ ] Agent identities exist for each environment; owners recorded.
 
-☐ Managed identities used; no embedded secrets.
+- [ ] Managed identities used; no embedded secrets.
 
-☐ Role assignments scoped minimally; access reviews scheduled.
+- [ ] Role assignments scoped minimally; access reviews scheduled.
 
-☐ DLP policies active; sensitivity labels applied to knowledge sources.
+- [ ] DLP policies active; sensitivity labels applied to knowledge sources.
 
-☐ Data residency and retention configured; purge jobs implemented.
+- [ ] Data residency and retention configured; purge jobs implemented.
 
-☐ Centralized logging, dashboards, and spend alerts in place.
+- [ ] Centralized logging, dashboards, and spend alerts in place.
 
-☐ AIspecific threat protection and output moderation enabled.
+- [ ] AIspecific threat protection and output moderation enabled.
 
-☐ Red team performed; open risks addressed.
+- [ ] Red team performed; open risks addressed.
 
-☐ MCP/A2A usage documented; allowed external endpoints approved.
+- [ ] MCP/A2A usage documented; allowed external endpoints approved.
 
-☐ Incident response runbook tested.
+- [ ] Incident response runbook tested.
 
 ## Practice (30-45 minutes)
 
@@ -208,15 +208,15 @@ Identify proactive alerting for emerging potential threats
 
 **Tasks:**
 
-Propose identities, roles, and scopes for the agent, tools, and pipelines.
+1. Propose identities, roles, and scopes for the agent, tools, and pipelines.
 
-Sketch the data boundary (what corp systems it can read/write, labels, DLP).
+2. Sketch the data boundary (what corp systems it can read/write, labels, DLP).
 
-Define observability signals and cost thresholds.
+3. Define observability signals and cost thresholds.
 
-List preprod red team tests and release gates.
+4. List preprod red team tests and release gates.
 
-Outline the incident response plan for a data leakage event.
+5. Outline the incident response plan for a data leakage event.
 
 **Deliverable:** A onepage architecture decision record (ADR) plus the RBAC matrix.
 
