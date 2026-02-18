@@ -60,4 +60,4 @@ This approach saves development time and relies on proven practices used in simi
 
 - During the initial migration to App Service, the team removes all custom instrumentation code by using Application Insights autoinstrumentation.
 
-- They also take advantage of other App Service functions like autoscaling, Azure Key Vault integration, and zonal redundancy.
+- They also take advantage of other App Service functions like autoscaling, Azure Key Vault integration, and zone redundancy.
