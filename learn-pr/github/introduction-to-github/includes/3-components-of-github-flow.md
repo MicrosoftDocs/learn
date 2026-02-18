@@ -89,6 +89,7 @@ While GitHub Flow is a lightweight workflow designed for continuous delivery, **
 Below is a diagram by Vincent Driessen, known by his nickname nvie, through his blog nvie.com. Here, nvie depicts the details of the Git flow. 
 
 :::image type="content" source="../media/nvie-git-flow.png" alt-text="Nvie's diagram of a Git branching model showing feature branches, a develop branch, release branches, hotfixes, and the master branch over time. Colored commit nodes and arrows illustrate how features are merged into develop, how release branches are created for version 1.0, how bug fixes flow back into develop, and how hotfixes are applied directly to master. Tags mark releases 0.1, 0.2, and 1.0." border="false":::
+
 *Image credit: Vincent Driessen, https://nvie.com/posts/a-successful-git-branching-model/*
 
 ### Git flow Branch Types
