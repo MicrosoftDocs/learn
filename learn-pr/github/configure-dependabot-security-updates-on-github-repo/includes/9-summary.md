@@ -46,3 +46,9 @@ Use these links to learn more about the information we covered in this module:
 - [The dependency-review-action](https://github.com/actions/dependency-review-action)
 - [GitHub Action: Dependency Review](https://github.com/marketplace/actions/dependency-review)
 - [Review dependency changes in a pull request](https://docs.github.com/pull-requests/collaborating-with-pull-requests/reviewing-changes-in-pull-requests/reviewing-dependency-changes-in-a-pull-request)
+
+
+## Provide feedback
+
+Use this [issue form](https://github.com/githubpartners/microsoft-learn/issues/new/choose) to provide content feedback or suggested changes for this Microsoft Learn module. GitHub maintains this content and a team member will triage the request. Thank you for taking the time to improve our content!
+
