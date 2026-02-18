@@ -1,180 +1,156 @@
+## Overview
+
 Audit trails are essential for maintaining trust, compliance, and operational integrity across AIdriven systems. Solution architects must design mechanisms that provide full visibility into _who_ made changes, _what_ changes occurred, and _when_ modifications happened across models, data sources, prompts, configuration objects, and agent workflows.
 
 This unit provides patterns for building robust auditing capabilities across Azure AI Foundry, model lifecycles, and data governance processes.
 
 ## 1. Purpose of audit trails in AI systems
 
-Audit trails help organizations:
+### Audit trails help organizations:
 
-Track changes to model versions, parameters, training datasets, and evaluation results.
+- Track changes to model versions, parameters, training datasets, and evaluation results.
 
-Diagnose issues, anomalies, and regressions.
+- Diagnose issues, anomalies, and regressions.
 
-Meet regulatory expectations around transparency and accountability.
+- Meet regulatory expectations around transparency and accountability.
 
-Support investigations during incidents and security reviews.
+- Support investigations during incidents and security reviews.
 
-Strengthen operational governance by enabling approvals, rollbacks, and lifecycle controls.
+- Strengthen operational governance by enabling approvals, rollbacks, and lifecycle controls.
 
-A welldesigned audit system is continuous, immutable, and integrated into the AI platform's control plane.
+- A welldesigned audit system is continuous, immutable, and integrated into the AI platform's control plane.
 
 ## 2. Audit trail requirements for model changes
 
 ### Model lifecycle events that must be audited
 
-Registration of new model versions
+- Registration of new model versions
 
-Tuning operations such as finetuning, parameter updates, or evaluation runs
+- Tuning operations such as finetuning, parameter updates, or evaluation runs
 
-Promotion of models between dev/test/prod environments
+- Promotion of models between dev/test/prod environments
 
-Rollbacks to previous versions
+- Rollbacks to previous versions
 
-Deployment actions, endpoint configuration, scaling changes
+- Deployment actions, endpoint configuration, scaling changes
 
-Access attempts to model assets, including unauthorized requests
+- Access attempts to model assets, including unauthorized requests
 
 ### Recommended architectural attributes
 
-Immutable logs
+- Immutable logs
 
-Timestamped change records
+- Timestamped change records
 
-Rolebased attribution (linked to identity provider)
+- Rolebased attribution (linked to identity provider)
 
-JSONstructured logs for machine parsing
+- JSONstructured logs for machine parsing
 
-Separation of duties and approval logging
+- Separation of duties and approval logging
 
 ## 3. Audit trail requirements for data changes
 
-Grounding data, training data, memory stores, semantic indexes, and application logs are core inputs into generative systems. You must audit:
+Grounding data, training data, memory stores, semantic indexes, and application logs are core inputs into generative systems. 
 
-Data ingestion events
+### You must audit:
 
-Schema changes
+- Data ingestion events
 
-Data refresh cycles
+- Schema changes
 
-Sensitivity label changes
+- Data refresh cycles
 
-Sanitization or filtering applied
+- Sensitivity label changes
 
-Data movement across regions
+- Sanitization or filtering applied
 
-Access attempts and approvals
+- Data movement across regions
 
-Architects must ensure logs capture _metadata_, not _content_, to avoid unnecessary exposure of sensitive information.
+- Access attempts and approvals
+
+- Architects must ensure logs capture _metadata_, not _content_, to avoid unnecessary exposure of sensitive information.
 
 ## 4. Azure AI Foundry controlplane auditing
 
-Azure AI Foundry provides a centralized control plane for model registration, environment configuration, agent deployment, and diagnostic logging.<br>Key audit features include:
+Azure AI Foundry provides a centralized control plane for model registration, environment configuration, agent deployment, and diagnostic logging.
 
-### Foundry Activity Logs
+### Key audit features include:
+
+#### Foundry Activity Logs
 
 Track administrative actions across workspaces, registries, and deployments. Logs support export to:
 
-Azure Monitor
+- Azure Monitor
 
-Log Analytics
+- Log Analytics
 
-SIEM tools (such as Sentinel)
+- SIEM tools (such as Sentinel)
 
-### Foundry Diagnostics and Tracing
+#### Foundry Diagnostics and Tracing
 
 Diagnostics provide traceability of execution across:
 
-Model calls
+- Model calls
 
-Pipeline activities
+- Pipeline activities
 
-Tool interactions
+- Tool interactions
 
-Failures, latency spikes, or unexpected behavior
-
-### Professional Visual (Textbased Diagram)
-
-+-----------------------------+
-
-|    Foundry Control Plane    |
-
-+-----------------------------+
-
-     | Activity Logs
-
-     | Diagnostics
-
-     v
-
-+-----------------------------+
-
-|  Azure Monitor / Sentinel   |
-
-+-----------------------------+
-
-     | Insights | Alerts
-
-     v
-
-+-----------------------------+
-
-|  Audit Dashboards & Review  |
-
-+-----------------------------+
+- Failures, latency spikes, or unexpected behavior
 
 ## 5. Designing audit pipelines with tracing
 
 Tracing allows architects to follow execution paths and debug generative AI behaviors. When integrated into audit trails, tracing provides:
 
-Endtoend visibility of model inference
+- Endtoend visibility of model inference
 
-Identification of performance bottlenecks
+- Identification of performance bottlenecks
 
-Attribution of requests to model versions
+- Attribution of requests to model versions
 
-Correlation of user actions to model activity
+- Correlation of user actions to model activity
 
-Detection of unusual patterns (loops, excessive token spikes, cascading failures)
+- Detection of unusual patterns (loops, excessive token spikes, cascading failures)
 
 ### Recommended tracing fields
 
-Correlation ID
+- Correlation ID
 
-Model version
+- Model version
 
-Input metadata (nonsensitive)
+- Input metadata (nonsensitive)
 
-Prompt category or classification
+- Prompt category or classification
 
-Response latency
+- Response latency
 
-Downstream tool usage logs
+- Downstream tool usage logs
 
-Safety evaluation outcomes
+- Safety evaluation outcomes
 
 ## 6. Designing auditready processes
 
 ### Governance workflows to include
 
-**Approval workflows** for promoting new model versions
+- **Approval workflows** for promoting new model versions
 
-**Mandatory logging** for all model tuning operations
+- **Mandatory logging** for all model tuning operations
 
-**Periodic audit reviews** for drift detection
+- **Periodic audit reviews** for drift detection
 
-**Automated evidence collection** for compliance reporting
+- **Automated evidence collection** for compliance reporting
 
-**Immutable storage** of audit logs
+- **Immutable storage** of audit logs
 
 ### Retention policies
 
 Define retention requirements with Legal, Compliance, and Information Security teams.<br>Common patterns:
 
-90 days for lowrisk workloads
+- 90 days for lowrisk workloads
 
-12-24 months for regulated workloads
+- 12-24 months for regulated workloads
 
-Indefinite retention for incidentrelated archives
+- Indefinite retention for incidentrelated archives
 
 ## 7. Professional Visual — Audit Trail Architecture
 
@@ -252,8 +228,8 @@ Indefinite retention for incidentrelated archives
 
 ## References
 
-[https://learn.microsoft.com/en-us/azure/ai-foundry/control-plane/overview?view=foundry](/azure/ai-foundry/control-plane/overview)
+- [https://learn.microsoft.com/en-us/azure/ai-foundry/control-plane/overview?view=foundry](/azure/ai-foundry/control-plane/overview)
 
-[https://learn.microsoft.com/en-us/training/modules/tracing-generative-ai-app/](/training/modules/tracing-generative-ai-app/)
+- [https://learn.microsoft.com/en-us/training/modules/tracing-generative-ai-app/](/training/modules/tracing-generative-ai-app/)
 
-[https://learn.microsoft.com/en-us/training/modules/azure-ai-foundry-secure-environment/enable-foundry-diagnostics](/training/modules/azure-ai-foundry-secure-environment/enable-foundry-diagnostics)
+- [https://learn.microsoft.com/en-us/training/modules/azure-ai-foundry-secure-environment/enable-foundry-diagnostics](/training/modules/azure-ai-foundry-secure-environment/enable-foundry-diagnostics)
