@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-github-app-modernization.modernization-workflow-works
+title: How the modernization workflow works
+metadata:
+  title: How the Modernization Workflow Works
+  description: Learn how GitHub Copilot can assist in app modernization efforts, including refactoring legacy code and modernizing architecture and frameworks.
+  ms.date: 02/17/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 9
+content: |
+  [!include[](includes/3-modernization-workflow-works.md)]

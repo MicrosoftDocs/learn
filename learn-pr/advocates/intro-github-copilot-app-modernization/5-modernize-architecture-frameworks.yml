@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-github-app-modernization.modernize-architecture-frameworks
+title: Modernizing architecture and frameworks
+metadata:
+  title: Modernizing Architecture and Frameworks
+  description: Learn how to use GitHub Copilot to modernize application architecture and frameworks.
+  ms.date: 02/17/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/5-modernize-architecture-frameworks.md)]
