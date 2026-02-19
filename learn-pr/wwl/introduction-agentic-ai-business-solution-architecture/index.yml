@@ -25,20 +25,16 @@ prerequisites: |
   - Familiarity with enterprise IT environments.
   - Awareness of business strategy and organizational goals.
 iconUrl: /learn/achievements/generic-badge.svg
-levels: 
+levels:
 - advanced
 roles:
-- database-administrator
-- developer
-- administrator
 - solution-architect
-- technology-manager
 products:
 - microsoft-365-copilot
-- m365
 - microsoft-365-copilot-chat
 - power-platform
 - microsoft-copilot-studio
+- dynamics-365
 subjects:
 - generative-ai
 - data-analytics
