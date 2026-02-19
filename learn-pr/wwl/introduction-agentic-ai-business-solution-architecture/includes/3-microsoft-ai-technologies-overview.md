@@ -1,4 +1,4 @@
-### Learning Objectives
+### Learning objectives
 
 By the end of this unit, learners will be able to:
 
@@ -12,9 +12,9 @@ By the end of this unit, learners will be able to:
 
 Microsoft AI technologies empower organizations to build intelligent solutions that enhance productivity, improve decision-making, and deliver measurable business value. This unit introduces key Azure AI services, development tools, and Copilot solutions that integrate AI into everyday workflows.
 
-### Core Components of Microsoft AI Technologies
+### Core components of Microsoft AI technologies
 
-**Azure AI Services**:
+**Azure AI services**
 
 - **Cognitive Services**: Prebuilt APIs for Vision, Speech, Language, and Decision.
 
@@ -24,7 +24,7 @@ Microsoft AI technologies empower organizations to build intelligent solutions t
 
 - **Azure Foundry:** A platform designed to develop, deploy, and management of AI applications and agents.
 
-**Tools and SDKs**:
+**Tools and SDKs**
 
 - **Azure Machine Learning Studio**: Visual interface for model development and deployment.
 
@@ -32,7 +32,7 @@ Microsoft AI technologies empower organizations to build intelligent solutions t
 
 - **CLI and REST APIs**: For automation and integration with enterprise workflows.
 
-**Microsoft Copilot Solutions**
+**Microsoft Copilot solutions**
 
 - Embedded AI in **Microsoft 365** and **Dynamics 365**.
 
@@ -42,11 +42,11 @@ Microsoft AI technologies empower organizations to build intelligent solutions t
 
 - Microsoft 365, Copilot Studio, and Azure Foundry for native AI throughout an organization.
 
-**Microsoft AI Ecosystem**
+**Microsoft AI ecosystem**
 
 :::image type="content" source="../media/microsoft-ai-agent-ecosystem.png" alt-text="Diagram showing the Microsoft AI agent ecosystem and its key components.":::
 
-**Key Components**
+**Key components**
 
 | **Component** | **Purpose** |
 |---|---|
@@ -55,7 +55,7 @@ Microsoft AI technologies empower organizations to build intelligent solutions t
 | **Azure OpenAI Service** | Generative AI for text and creativity |
 | **Copilot Solutions** | Embedded AI for productivity |
 
-**References**:
+**References**
 
 - [Azure AI services - Microsoft Learn](/training/modules/prepare-azure-ai-development/3-azure-ai-services)
 - [Tools and SDKs - Microsoft Learn](/training/modules/prepare-azure-ai-development/5-tools-and-sdks)

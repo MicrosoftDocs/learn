@@ -1,4 +1,4 @@
-### Learning Objectives
+### Learning objectives
 
 By the end of this unit, learners will be able to:
 
@@ -14,15 +14,15 @@ Microsoft provides a range of **out-of-the-box AI agent resources** designed to 
 
 Out-of-the-box AI agents reduce development time, ensure compliance with best practices, and enable scalability across enterprise environments.
 
-### Key Components of OOB AI Agent Resources
+### Key components of OOB AI agent resources
 
-**1. Prebuilt AI Agents**
+**Prebuilt AI agents**
 
 - Available through **Microsoft Copilot Studio** and integrated into **Dynamics 365** and **Microsoft 365**.
 
 - Designed for common business scenarios such as customer service, sales automation, and workflow optimization.
 
-**2. AI Tools and Practices**
+**AI tools and practices**
 
 - **Azure AI Services**: Vision, Speech, Language, and Decision APIs.
 
@@ -30,7 +30,7 @@ Out-of-the-box AI agents reduce development time, ensure compliance with best pr
 
 - **OpenAI Service**: Access generative AI for natural language tasks.
 
-**3. Templates and Scenario Libraries**
+**Templates and scenario libraries**
 
 - Ready-to-use templates for creating custom agents.
 
@@ -38,7 +38,7 @@ Out-of-the-box AI agents reduce development time, ensure compliance with best pr
 
 :::image type="content" source="../media/microsoft-ai-agent-ecosystem.png" alt-text="Diagram showing the Microsoft AI agent ecosystem with prebuilt agents, Azure AI services, and scenario libraries.":::
 
-**OOB AI Agent Resources**
+**OOB AI agent resources**
 
 | **Resource** | **Purpose** |
 |---|---|
@@ -47,7 +47,7 @@ Out-of-the-box AI agents reduce development time, ensure compliance with best pr
 | **Azure AI Services** | Vision, Speech, Language, Decision capabilities |
 | **Scenario Library** | Best practices and adoption guides |
 
-**Best Practices**
+**Best practices**
 
 - Start with **business outcomes** before selecting tools.
 
@@ -57,7 +57,7 @@ Out-of-the-box AI agents reduce development time, ensure compliance with best pr
 
 - Use **Azure AI** for scalability and compliance.
 
-**References**:
+**References**
 
 - [Microsoft AI tools and practices](https://www.microsoft.com/ai/tools-practices)
 - [Azure AI training - Microsoft Learn](/training/azure-ai)

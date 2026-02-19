@@ -1,4 +1,4 @@
-**Agentic AI Business Solution Architecture**
+## Agentic AI business solution architecture
 
 AI transformation is more than a technology upgrade—it's a strategic shift that significantly impacts business processes, people, and organizational culture. In this evolving landscape, architects play a pivotal role in ensuring AI solutions deliver measurable business value while maintaining compliance, scalability, and security.
 

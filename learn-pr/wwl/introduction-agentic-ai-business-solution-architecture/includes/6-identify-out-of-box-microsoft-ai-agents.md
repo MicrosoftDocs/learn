@@ -1,4 +1,4 @@
-### Learning Objectives
+### Learning objectives
 
 By the end of this unit, learners will be able to:
 
@@ -14,9 +14,9 @@ By the end of this unit, learners will be able to:
 
 Microsoft provides **Out-of-the-Box (OOB) AI Agents** to help organizations quickly integrate AI into their workflows without starting from scratch. These agents are designed to automate common business processes, improve efficiency, and ensure compliance with responsible AI principles.
 
-### Core Concepts
+### Core concepts
 
-**What Are OOB AI Agents?**
+**What are OOB AI agents**
 
 - Prebuilt AI agents and templates available in **Microsoft Copilot Studio** and **Microsoft 365**
 
@@ -36,7 +36,7 @@ Microsoft provides **Out-of-the-Box (OOB) AI Agents** to help organizations quic
 
 - **Compliance:** Align with Microsoft's Responsible AI standards.
 
-**Key Resources**
+**Key resources**
 
 - **Copilot Studio:** Explore prebuilt agents and customize them for your needs.
 
@@ -44,7 +44,7 @@ Microsoft provides **Out-of-the-Box (OOB) AI Agents** to help organizations quic
 
 - **Scenario Library:** Access adoption guides and best practices for enterprise AI.
 
-**Best Practices**
+**Best practices**
 
 - Start with **business outcomes** before selecting tools.
 
@@ -54,7 +54,7 @@ Microsoft provides **Out-of-the-Box (OOB) AI Agents** to help organizations quic
 
 - Use **Azure AI** for scalability and compliance.
 
-**References**:
+## References
 
 - [Explore agents prebuilt in Microsoft Copilot Studio](https://www.microsoft.com/microsoft-copilot/blog/copilot-studio/explore-agents-prebuilt-for-you-in-microsoft-copilot-studio/)
 - [Transform work with autonomous agents - Dynamics 365 Blog](https://www.microsoft.com/dynamics-365/blog/business-leader/2024/10/21/transform-work-with-autonomous-agents-across-your-business-processes/)

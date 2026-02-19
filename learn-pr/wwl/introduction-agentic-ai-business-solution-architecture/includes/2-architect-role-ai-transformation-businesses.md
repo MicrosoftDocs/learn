@@ -1,4 +1,4 @@
-### Learning Objectives
+### Learning objectives
 
 By the end of this unit, learners will be able to:
 
@@ -14,7 +14,7 @@ By the end of this unit, learners will be able to:
 
 AI transformation is more than a technology upgrade—it's a strategic shift that impacts processes, people, and culture. Architects play a pivotal role in ensuring AI solutions deliver measurable business value while maintaining compliance, scalability, and security.
 
-### Architect's Role in AI Transformation
+### Architect's role in AI transformation
 
 Architects bridge the gap between business strategy and technical implementation. Their responsibilities include:
 
@@ -26,7 +26,7 @@ Architects bridge the gap between business strategy and technical implementation
 
 - Scalability: Design solutions that grow with business needs.
 
-**AI Architect Responsibilities**
+**AI architect responsibilities**
 
 | **Responsibility** | **Description** |
 |---|---|
@@ -36,7 +36,7 @@ Architects bridge the gap between business strategy and technical implementation
 | **Security & Ethics** | Implement responsible AI principles |
 | **Performance Monitoring** | Establish KPIs and monitor effectiveness |
 
-**AI Transformation Framework**
+**AI transformation framework**
 
 Flow: Business Goals → AI Strategy → Architecture Design → Implementation → Monitoring & Optimization
 
@@ -44,7 +44,7 @@ Flow: Business Goals → AI Strategy → Architecture Design → Implementation 
 
 [Cloud Adoption Framework for AI](/azure/cloud-adoption-framework/scenarios/ai/)
 
-**Best Practices for AI Architects:**
+**Best practices for AI architects**
 
 - Start with business outcomes—focus on measurable impact.
 
@@ -56,7 +56,7 @@ Flow: Business Goals → AI Strategy → Architecture Design → Implementation 
 
 - Use Azure AI services for speed and reliability.
 
-**Scaling AI Across the Enterprise**:
+**Scaling AI across the enterprise**
 
 - **Automation:** Streamline deployment and monitoring.
 
@@ -66,7 +66,7 @@ Flow: Business Goals → AI Strategy → Architecture Design → Implementation 
 
 - **User training**: Enable a culture of continuous user learning
 
-**References**:
+**References**
 
 - [Azure Data and Architect Handbook](https://info.microsoft.com/ww-landing-Azure-Data-and-Architect-Handbook.html)
 - [Microsoft AI](https://www.microsoft.com/ai)
