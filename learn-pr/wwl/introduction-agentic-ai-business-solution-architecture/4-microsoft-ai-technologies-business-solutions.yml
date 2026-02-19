@@ -11,19 +11,3 @@ metadata:
 durationInMinutes: 3
 content: |
   [!include[](includes/4-microsoft-ai-technologies-business-solutions.md)]
-quiz:
-  questions:
-  - content: "Which service provides prebuilt APIs for vision and speech?"
-    choices:
-    - content: "Azure Machine Learning"
-      isCorrect: false
-      explanation: "Incorrect. Azure Machine Learning is a platform for building, training, and deploying machine learning models, not prebuilt APIs."
-    - content: "Cognitive Services"
-      isCorrect: true
-      explanation: "Correct. Cognitive Services provides prebuilt APIs for Vision, Speech, Language, and Decision."
-    - content: "Microsoft Copilot"
-      isCorrect: false
-      explanation: "Incorrect. Microsoft Copilot is an embedded AI solution for productivity, not a service for prebuilt APIs."
-    - content: "Power BI"
-      isCorrect: false
-      explanation: "Incorrect. Power BI is a business analytics tool, not a service for prebuilt AI APIs."

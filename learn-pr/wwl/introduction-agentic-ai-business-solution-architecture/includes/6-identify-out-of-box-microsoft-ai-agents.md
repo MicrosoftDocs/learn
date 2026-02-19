@@ -1,81 +1,60 @@
-**Learning Objectives**
+### Learning Objectives
 
 By the end of this unit, learners will be able to:
 
-Explain what OOB Microsoft AI Agents are and their role in business process automation.
+- Explain what OOB Microsoft AI Agents are and their role in business process automation.
 
-Identify pre-built AI agents available in Microsoft Copilot Studio.
+- Identify pre-built AI agents available in Microsoft Copilot Studio.
 
-Understand how templates and scenario libraries accelerate AI adoption.
+- Understand how templates and scenario libraries accelerate AI adoption.
 
-Explore best practices for leveraging AI agents responsibly and effectively.
+- Explore best practices for leveraging AI agents responsibly and effectively.
 
-**Introduction**
+### Introduction
 
 Microsoft provides **Out-of-the-Box (OOB) AI Agents** to help organizations quickly integrate AI into their workflows without starting from scratch. These agents are designed to automate common business processes, improve efficiency, and ensure compliance with responsible AI principles.
 
-**Core Concepts**
+### Core Concepts
 
 **What Are OOB AI Agents?**
 
-Pre-built AI agents and templates available in **Microsoft Copilot Studio** and** Microsoft 365**
+- Pre-built AI agents and templates available in **Microsoft Copilot Studio** and** Microsoft 365**
 
-Designed for common scenarios such as: 
+- Designed for common scenarios such as: 
 
-Customer service automation.
+- Customer service automation.
 
-Workflow optimization.
+- Workflow optimization.
 
-Data-driven decision-making.
+- Data-driven decision-making.
 
 **Benefits**
 
-**Faster Deployment:** Reduce development time with ready-to-use agents.
+- **Faster Deployment:** Reduce development time with ready-to-use agents.
 
-**Scalability:** Built to integrate with Microsoft 365 and Dynamics 365.
+- **Scalability:** Built to integrate with Microsoft 365 and Dynamics 365.
 
-**Compliance:** Align with Microsoft's Responsible AI standards.
+- **Compliance:** Align with Microsoft's Responsible AI standards.
 
 **Key Resources**
 
-**Copilot Studio:** Explore pre-built agents and customize them for your needs.
+- **Copilot Studio:** Explore pre-built agents and customize them for your needs.
 
-**Templates:** Use template fundamentals to create tailored AI solutions.
+- **Templates:** Use template fundamentals to create tailored AI solutions.
 
-**Scenario Library:** Access adoption guides and best practices for enterprise AI.
-
-**Visual Diagram**
-
-**Microsoft AI Agent Ecosystem**
-
-Top Layer: Copilot Solutions (Microsoft 365, Dynamics 365, Power Platform)
-
-Middle Layer: Prebuilt AI Agents & Templates
-
-Bottom Layer: Azure AI Services & Tools
-
-_(Use a layered diagram with Microsoft brand colors in PowerPoint for classroom delivery.)_
-
-**Chart: OOB AI Agent Resources**
-
-| **Resource** | **Purpose** |
-|---|---|
-| **Prebuilt Agents** | Automate common business workflows |
-| **Copilot Studio** | Customize and deploy AI agents |
-| **Azure AI Services** | Vision, Speech, Language, Decision-making capabilities |
-| **Scenario Library** | Best practices and adoption guides |
+- **Scenario Library:** Access adoption guides and best practices for enterprise AI.
 
 **Best Practices**
 
-Start with **business outcomes** before selecting tools.
+- Start with **business outcomes** before selecting tools.
 
-Use **prebuilt agents** for quick deployment.
+- Use **prebuilt agents** for quick deployment.
 
-Ensure **Responsible AI principles** (Fairness, Reliability and Safety, Privacy and Security, Inclusiveness, Transparency, Accountability).
+- Ensure **Responsible AI principles** (Fairness, Reliability and Safety, Privacy and Security, Inclusiveness, Transparency, Accountability).
 
-Leverage **Azure AI** for scalability and compliance.
+- Leverage **Azure AI** for scalability and compliance.
 
-**References**
+**References**:
 
 - [Explore agents pre-built in Microsoft Copilot Studio](https://www.microsoft.com/microsoft-copilot/blog/copilot-studio/explore-agents-pre-built-for-you-in-microsoft-copilot-studio/)
 - [Transform work with autonomous agents - Dynamics 365 Blog](https://www.microsoft.com/dynamics-365/blog/business-leader/2024/10/21/transform-work-with-autonomous-agents-across-your-business-processes/)
@@ -83,5 +62,3 @@ Leverage **Azure AI** for scalability and compliance.
 - [Microsoft Adoption Scenario Library](https://adoption.microsoft.com/scenario-library/)
 - [AI agents in Microsoft 365](https://adoption.microsoft.com/ai-agents/agents-in-microsoft-365/)
 - [AI overview for Power Apps - Microsoft Learn](/power-apps/maker/canvas-apps/ai-overview)
-
-**Discussion Question**<br>How can prebuilt AI agents accelerate AI adoption in an organization? Provide two examples.

@@ -2,53 +2,43 @@
 
 By the end of this unit, learners will be able to:
 
-Identify core Microsoft AI technologies and their role in business solutions.
+- Identify core Microsoft AI technologies and their role in business solutions.
 
-Explain how AI technologies create business value.
+- Explain how AI technologies create business value.
 
-Understand how generative AI unlocks productivity in enterprise environments.
+- Understand how generative AI unlocks productivity in enterprise environments.
 
-**Introduction**
+### Introduction
 
 Microsoft AI technologies empower organizations to innovate, automate, and scale business processes. From Azure AI services to Copilot solutions, these tools help businesses deliver measurable outcomes, improve decision-making, and enhance productivity.
 
-**Core Components of Microsoft AI Technologies**
+### Core Components of Microsoft AI Technologies
 
 **1. Azure AI Services**
 
-**Cognitive Services:** Prebuilt APIs for vision, speech, language, and decision-making.
+- **Cognitive Services:** Prebuilt APIs for vision, speech, language, and decision-making.
 
-**Azure Machine Learning:** Tools for building, training, and deploying machine learning models.
+- **Azure Machine Learning:** Tools for building, training, and deploying machine learning models.
 
-**Azure OpenAI Service:** Access advanced generative AI models for natural language and creative tasks.
+- **Azure OpenAI Service:** Access advanced generative AI models for natural language and creative tasks.
 
 **2. Generative AI for Productivity**
 
-Automates repetitive tasks.
+- Automates repetitive tasks.
 
-Generates content and insights.
+- Generates content and insights.
 
-Enhances collaboration across teams.
+- Enhances collaboration across teams.
 
 **3. AI Business Solutions**
 
-Embedded AI in Microsoft 365 and Dynamics 365.
+- Embedded AI in Microsoft 365 and Dynamics 365.
 
-Copilot solutions streamline workflows and improve efficiency.
+- Copilot solutions streamline workflows and improve efficiency.
 
-**Visual Diagram**
+:::image type="content" source="../media/microsoft-ai-agent-ecosystem.png" alt-text="Diagram showing the Microsoft AI agent ecosystem with Copilot solutions, Azure AI services, and tools and SDKs.":::
 
-**Microsoft AI Ecosystem**
-
-[Top Layer] Copilot Solutions (Microsoft 365, Dynamics 365)
-
-[Middle Layer] Azure AI Services (Cognitive Services, OpenAI, Machine Learning)
-
-[Bottom Layer] Tools & SDKs (Azure ML Studio, APIs, SDKs)
-
-_(Use a layered diagram with Microsoft brand colors in PowerPoint.)_
-
-**Chart: Key Components**
+**Key Components**
 
 | **Component** | **Purpose** |
 |---|---|
@@ -59,15 +49,13 @@ _(Use a layered diagram with Microsoft brand colors in PowerPoint.)_
 
 **Best Practices for Business Value**
 
-Start with measurable business outcomes.
+- Start with measurable business outcomes.
 
-Implement with AI responsibly in mind (Fairness, Reliability and Safety, Privacy and Security, Inclusiveness, Transparency, Accountability ).
+- Implement with AI responsibly in mind (Fairness, Reliability and Safety, Privacy and Security, Inclusiveness, Transparency, Accountability ).
 
-Leverage cloud scalability for enterprise-wide adoption.
+- Leverage cloud scalability for enterprise-wide adoption.
 
-**References**
+**References**:
 
 - [Generative AI for productivity - Microsoft Learn](/training/modules/generative-ai-productivity/)
 - [Create business value with AI - Microsoft Learn](/training/modules/create-business-value/)
-
-**Discussion Question**<br>How can Copilot solutions improve productivity in business processes? Provide two examples.
