@@ -21,16 +21,21 @@ prerequisites: |
   - Basic understanding of ROI and TCO principles.
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
-- intermediate
+- advanced
 roles:
-- solution-architect
-- business-owner
-products:
-- microsoft-copilot-studio
-- azure
-subjects:
-- artificial-intelligence
-- productivity
+- solution-architect 
+products: 
+- microsoft-365-copilot 
+- microsoft-365-copilot-chat 
+- power-platform 
+- microsoft-copilot-studio 
+- dynamics-365 
+subjects: 
+- generative-ai 
+- data-analytics 
+- data-management 
+- data-engineering 
+- data-integration 
 units:
 - learn.wwl.evaluate-costs-benefits-ai-powered-business-solution.introduction
 - learn.wwl.evaluate-costs-benefits-ai-powered-business-solution.roi-criteria-ai-powered-business-solution-including-total-cost-ownership
