@@ -7825,6 +7825,16 @@ achievements:
   title: Introduction to Azure Arc
   summary: In this module, you learn how Azure Arc  simplifies governance and management of hybrid environments by delivering a consistent multicloud and on-premises management platform. You learn how Azure Arc provides a centralized approach to managing Windows and Linux servers and Kubernetes clusters that are hosted outside of Azure. You also learn how Azure Arc-enabled data services provides unified management, deployment, and data sovereignty compliance. Finally, you get an idea of how Azure Arc can integrate with other Azure services.
   iconUrl: /training/achievements/intro-to-azure-arc.svg
+- uid: learn.azure-intro-to-logic-apps.badge
+  type: badge 
+  title: Introduction to Azure Logic Apps
+  summary: Get a high-level overview about Azure Logic Apps and the business processes that you can implement and automate.
+  iconUrl: /training/achievements/intro-to-logic-apps.svg
+- uid: learn.build-workflows-with-logic-apps.trophy
+  type: trophy
+  title: Automate business processes with integration workflows in Azure Logic Apps
+  summary: Learn how to automate business processes that work with data flowing through various sources.
+  iconUrl: /training/achievements/build-workflows-with-logic-apps.svg
 - uid: learn.azure-security.identify-threats-with-azure-security-center.badge
   type: badge 
   title: Identify security threats with Microsoft Defender for Cloud

@@ -3,7 +3,7 @@ uid: learn.wwl.implement-manage-data-quality-constraints-unity-catalog
 metadata:
   title: Implement and Manage Data Quality Constraints with Azure Databricks
   description: Learn how to implement and manage data quality constraints in Azure Databricks using Unity Catalog, including validation checks, schema enforcement, and pipeline expectations.
-  ms.date: 12/07/2025
+  ms.date: 02/19/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: module

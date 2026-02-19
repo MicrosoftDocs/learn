@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-app-secrets-key-vault.implement-caching-strategies
+title: Implement caching strategies to reduce Key Vault calls
+metadata:
+  title: Implement Caching Strategies to Reduce Key Vault Calls
+  description: Implement caching strategies to reduce Key Vault calls
+  ms.date: 02/17/2026
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: unit
+durationInMinutes: 12
+content: |
+  [!include[](includes/5-implement-caching-strategies.md)]

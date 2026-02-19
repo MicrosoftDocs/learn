@@ -31,7 +31,7 @@ roles:
 products:
 - defender-for-cloud
 - azure
-- azure-ai-foundry
+- microsoft-foundry
 - entra-id
 subjects:
 - security

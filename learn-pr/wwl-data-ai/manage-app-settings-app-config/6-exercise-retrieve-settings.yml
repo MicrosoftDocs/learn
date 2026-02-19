@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-app-settings-app-config.exercise-retrieve-settings
+title: Exercise - Retrieve settings and secrets from Azure App Configuration
+metadata:
+  title: Exercise - Retrieve Settings and Secrets from Azure App Configuration
+  description: Exercise - Retrieve settings and secrets from Azure App Configuration
+  ms.date: 02/17/2026
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: unit
+durationInMinutes: 30
+content: |
+  [!include[](includes/6-exercise-retrieve-settings.md)]

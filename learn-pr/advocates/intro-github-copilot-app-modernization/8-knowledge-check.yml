@@ -1,0 +1,98 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-github-app-modernization.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge Check
+  description: Check your knowledge.
+  ms.date: 02/17/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 11
+content: Choose the best response for each question.
+quiz:
+  questions:
+    - content: "Which of the following best describes GitHub Copilot app modernization?"
+      choices:
+        - content: "A general-purpose code completion tool that suggests code as you type."
+          isCorrect: false
+          explanation: "This describes the standard GitHub Copilot autocompletion feature, not the specialized app modernization agent."
+        - content: "A specialized agent that provides structured, end-to-end workflows for upgrading and migrating Java and .NET applications."
+          isCorrect: true
+          explanation: "GitHub Copilot app modernization is a dedicated AI agent (built on Copilot's agent mode) that guides developers through a comprehensive modernization process (including assessment, planning, code transformation, build validation, and deployment) for Java and .NET apps."
+        - content: "A tool that only generates Dockerfiles for containerization."
+          isCorrect: false
+          explanation: "While containerization (for example, generating Dockerfiles) is part of its capabilities, the app modernization agent does more than that, offering a full suite of upgrade and migration workflows beyond just creating Dockerfiles."
+        - content: "A portfolio assessment tool for scanning enterprise applications."
+          isCorrect: false
+          explanation: "The app modernization agent isn't merely a scanning or portfolio assessment tool; it focuses on actively upgrading and migrating applications through structured workflows, rather than just scanning them."
+    - content: "What happens during the assessment stage of the modernization workflow?"
+      choices:
+        - content: "The agent immediately starts modifying code."
+          isCorrect: false
+          explanation: "The assessment stage doesn't involve changing code. At this point, the agent is just analyzing the application; it only modifies code in later stages."
+        - content: "The agent analyzes the project's code, configuration, and dependencies, and generates a report identifying breaking changes, compatibility issues, and upgrade scope."
+          isCorrect: true
+          explanation: "In the assessment stage, the agent inspects your codebase (including configurations and dependencies) and produces a report highlighting breaking changes, compatibility issues, and the scope of required upgrades. This happens before any code modifications, allowing you to review and plan next steps."
+        - content: "The agent deploys the application to Azure."
+          isCorrect: false
+          explanation: "Deployment to Azure isn't part of the assessment stage. Assessment is focused on analysis and planning. Deployment occurs later, after code has been upgraded and tested."
+        - content: "The agent deletes all deprecated code."
+          isCorrect: false
+          explanation: "The agent doesn't delete any code during assessment. It identifies outdated or problematic elements and notes them in a report. Actual code changes happen during later execution/transformation stages."
+    - content: "What are predefined tasks in GitHub Copilot app modernization?"
+      choices:
+        - content: "Tasks that require the developer to manually write every line of migration code."
+          isCorrect: false
+          explanation: "Predefined tasks are meant to automate migration steps using AI and known patterns, so the developer doesn't have to write all migration code manually."
+        - content: "Expert-encoded migration patterns for common Azure scenarios (such as migrating from MSMQ to Azure Service Bus) that the agent applies automatically."
+          isCorrect: true
+          explanation: "Predefined tasks are expert-designed migration patterns for frequent Azure modernization scenarios (for example, updating code to move from MSMQ to Azure Service Bus). The agent uses these tasks to apply best-practice code changes consistently and automatically. Developers can also create custom tasks based on prior migrations."
+        - content: "Generic Copilot code suggestions based on comments."
+          isCorrect: false
+          explanation: "Generic inline code suggestions from Copilot aren't the same as predefined tasks. Predefined tasks are guided migration actions encoded with expert knowledge for common scenarios, rather than on-the-fly suggestions."
+        - content: "Tasks that can only be created by Microsoft engineers."
+          isCorrect: false
+          explanation: "While many predefined tasks are provided out-of-the-box, developers can also create custom tasks. It's not limited to Microsoft engineers."
+    - content: "After accepting the agent's code transformations, what should you do next?"
+      choices:
+        - content: "Consider the task done since the agent's output is always correct."
+          isCorrect: false
+          explanation: "You shouldn't assume the job is finished. The agent's output isn't guaranteed to be perfect, so verification is necessary."
+        - content: "Review the changes, run tests, and verify behavior before merging to production."
+          isCorrect: true
+          explanation: "After code transformations and automated checks, you should manually review changes, run your test suite, and confirm the application behaves correctly before merging into production."
+        - content: "Immediately deploy to production."
+          isCorrect: false
+          explanation: "Deploying without thorough testing and review can introduce regressions or unexpected issues in production."
+        - content: "Delete the assessment and plan files to save space."
+          isCorrect: false
+          explanation: "There's no need to delete assessment and plan files. They can be valuable references and aren't part of the modernization workflow to remove."
+    - content: "Which of the following is a supported way to interact with GitHub Copilot app modernization?"
+      choices:
+        - content: "Writing inline code comments and waiting for Copilot autocomplete suggestions."
+          isCorrect: false
+          explanation: "This describes the basic Copilot code completion feature, not the dedicated app modernization tool."
+        - content: "Using the extension sidebar in VS Code, typing @modernize in Visual Studio's Copilot Chat, or running natural-language prompts in Copilot CLI."
+          isCorrect: true
+          explanation: "GitHub Copilot app modernization can be accessed via the VS Code extension (sidebar UI), invoked in Visual Studio Copilot Chat with @modernize, or run through Copilot CLI using natural-language commands."
+        - content: "Sending an email to Microsoft support with your source code."
+          isCorrect: false
+          explanation: "The tool is intended to be used within developer environments and CLI tools, not by emailing code to support."
+        - content: "Uploading a ZIP file of your project to an Azure portal."
+          isCorrect: false
+          explanation: "This isn't a supported interaction method. The app modernization agent is used through tools like VS Code, Visual Studio, or CLI."
+    - content: "Which languages does GitHub Copilot app modernization currently support?"
+      choices:
+        - content: "Java only."
+          isCorrect: false
+          explanation: "It supports more than just Java, including .NET scenarios and specific Python migration support."
+        - content: "Java, .NET (C#), and Python (for Agent Framework migration), plus language-agnostic containerization and deployment."
+          isCorrect: true
+          explanation: "It's focused on Java and .NET (C#) upgrade/migration scenarios, supports Python for a specific Agent Framework migration scenario, and also provides language-agnostic containerization and deployment tasks."
+        - content: "All programming languages equally."
+          isCorrect: false
+          explanation: "Support isn't equal across all languages; advanced capabilities are focused on specific languages and scenarios."
+        - content: "Only languages that run on Azure."
+          isCorrect: false
+          explanation: "Support isn't defined as 'all Azure-supported languages.' It targets specific languages (notably Java and .NET, plus a Python migration scenario) while offering some language-agnostic tasks."
