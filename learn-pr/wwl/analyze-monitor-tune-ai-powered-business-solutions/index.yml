@@ -24,23 +24,23 @@ iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - intermediate
 roles:
+- database-administrator
+- developer
+- administrator
 - solution-architect
-- data-engineer
-- devops-engineer
-- security-engineer
-- support-engineer
+- technology-manager
 products:
-- azure
 - microsoft-365-copilot
-- microsoft-365-copilot-chat
-- real-time-analytics
 - m365
+- microsoft-365-copilot-chat
+- power-platform
+- microsoft-copilot-studio
 subjects:
+- generative-ai
 - data-analytics
-- data-integration
+- data-management
 - data-engineering
-- it-management-monitoring
-- devops
+- data-integration
 units:
 - learn.wwl.M08.introduction
 - learn.wwl.M08.recommend-process-tools-monitoring-agents
