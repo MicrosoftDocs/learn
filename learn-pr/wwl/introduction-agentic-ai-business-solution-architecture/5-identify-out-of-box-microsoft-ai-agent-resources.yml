@@ -5,8 +5,9 @@ metadata:
   title: "Identify Out-of-Box Microsoft AI Agent Resources"
   description: "Discover out-of-the-box Microsoft AI agent resources to accelerate AI adoption, streamline workflows, and integrate seamlessly with Azure AI."
   ms.date: 02/02/2026
-  author: wwlpublish
-  ms.author: rknapp
+  author: Randall-Knapp
+  ms.author: taeldin
+  ai-usage: ai-assisted
   ms.topic: unit
 durationInMinutes: 3
 content: |

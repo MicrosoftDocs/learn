@@ -5,8 +5,9 @@ metadata:
   title: "Introduction"
   description: "Discover the role of architects in AI transformation, aligning AI solutions with business goals while ensuring scalability, compliance, and value."
   ms.date: 02/02/2026
-  author: wwlpublish
-  ms.author: rknapp
+  author: Randall-Knapp
+  ms.author: taeldin
+  ai-usage: ai-assisted
   ms.topic: unit
 durationInMinutes: 3
 content: |

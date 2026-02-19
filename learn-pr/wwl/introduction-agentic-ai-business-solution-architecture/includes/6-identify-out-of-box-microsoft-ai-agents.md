@@ -18,7 +18,7 @@ Microsoft provides **Out-of-the-Box (OOB) AI Agents** to help organizations quic
 
 **What Are OOB AI Agents?**
 
-- Prebuilt AI agents and templates available in **Microsoft Copilot Studio** and** Microsoft 365**
+- Prebuilt AI agents and templates available in **Microsoft Copilot Studio** and **Microsoft 365**
 
 - Designed for common scenarios such as: 
 

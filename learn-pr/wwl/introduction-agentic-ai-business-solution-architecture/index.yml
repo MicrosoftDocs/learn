@@ -4,8 +4,9 @@ metadata:
   title: "Introduction to Agentic AI Business Solutions"
   description: "Learn how to align AI solutions with business goals, scale AI adoption, and use Microsoft AI technologies for enterprise success."
   ms.date: 02/02/2026
-  author: wwlpublish
-  ms.author: rknapp
+  author: Randall-Knapp
+  ms.author: taeldin
+  ai-usage: ai-assisted
   ms.topic: module
   ms.service: copilot-studio
 title: "Introduction to agentic AI business solutions"

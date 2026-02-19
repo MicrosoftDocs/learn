@@ -5,8 +5,9 @@ metadata:
   title: "Identify Out-of-Box Microsoft AI Agents for Business"
   description: "Learn how to identify out-of-box Microsoft AI agents, their role in automation, and best practices for using them effectively in business processes."
   ms.date: 02/02/2026
-  author: wwlpublish
-  ms.author: rknapp
+  author: Randall-Knapp
+  ms.author: taeldin
+  ai-usage: ai-assisted
   ms.topic: unit
 durationInMinutes: 3
 content: |
