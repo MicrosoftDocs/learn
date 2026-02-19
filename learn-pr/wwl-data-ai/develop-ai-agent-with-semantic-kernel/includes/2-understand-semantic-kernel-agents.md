@@ -6,13 +6,15 @@ AI Agents can be developed using many different tools and platforms, including t
 
 The Microsoft Agent Framework offers different components that can be used individually or combined.
 
-- **Chat clients** - provide abstractions for connecting to AI services from different providers under a common interface. Supported providers include Azure OpenAI, OpenAI, Anthropic, and more through the `BaseChatClient` abstraction.
+- **Agents** - provides a consistent interface and enables different features like multi-agent orchestration. Out of the box, agents support function calling, multi-turn conversations with chat history, service-provided tools, structured outputs, and streaming responses.
+
+- **Chat providers** - provide abstractions for connecting to AI services from different providers under a common interface. Supported providers include Azure OpenAI, OpenAI, Anthropic, Copilot, and more through the `BaseAgent` abstraction.
 
 - **Function tools** - containers for custom functions that extend agent capabilities. Agents can automatically invoke functions to integrate with external APIs and services.
 
 - **Built-in tools** - prebuilt capabilities including Code Interpreter for Python execution, File Search for document analysis, and Web Search for internet access.
 
-- **Conversation management** - structured message system with roles (USER, ASSISTANT, SYSTEM, TOOL) and `AgentThread` for persistent conversation context across interactions.
+- **Conversation management** - structured message system with roles (USER, ASSISTANT, SYSTEM, TOOL) and `AgentSession` for persistent conversation context across interactions.
 
 - **Workflow orchestration** - supports sequential workflows, concurrent execution, group chat, and handoff patterns for complex multi-agent collaboration.
 
@@ -36,7 +38,7 @@ When you use Microsoft Foundry Agents, you get the full power of enterprise Azur
 
 - **BaseAgent** - the foundation for all agents with consistent methods, providing a unified interface across all agent types.
 
-- **Agent threads** - manage persistent conversation context and store conversation history across sessions using the `AgentThread` class.
+- **Agent session** - manage persistent conversation context and store conversation history across sessions using the `AgentSession` class.
 
 - **Chat messages** - organized structure for agent communication using role-based messaging (USER, ASSISTANT, SYSTEM, TOOL) that enables smooth communication and integration.
 
