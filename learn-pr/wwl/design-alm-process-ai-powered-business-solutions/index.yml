@@ -22,14 +22,23 @@ iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - intermediate
 roles:
+- database-administrator
+- developer
+- administrator
 - solution-architect
+- technology-manager
 products:
+- microsoft-365-copilot
+- m365
+- microsoft-365-copilot-chat
+- power-platform
 - microsoft-copilot-studio
-- dynamics-365
-- azure-ai-foundry
 subjects:
-- application-management
-- artificial-intelligence
+- generative-ai
+- data-analytics
+- data-management
+- data-engineering
+- data-integration
 units:
 - learn.wwl.design-alm-process-ai-powered-business-solutions.introduction
 - learn.wwl.design-alm-process-ai-powered-business-solutions.design-alm-process-data-used-ai-models-agents
