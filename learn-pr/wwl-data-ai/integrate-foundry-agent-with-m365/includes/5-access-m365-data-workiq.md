@@ -164,4 +164,4 @@ The MCP approach integrates workplace context seamlessly into your development w
 Both approaches access the same underlying data with the same permissions. Choose the CLI for scripting and quick terminal queries, or the MCP server for integrated AI assistant experiences.
 
 > [!NOTE]
-> Work IQ is currently in public preview. Features and APIs may change as the product evolves.
+> Work IQ is currently in preview. Features and APIs may change as the product evolves.

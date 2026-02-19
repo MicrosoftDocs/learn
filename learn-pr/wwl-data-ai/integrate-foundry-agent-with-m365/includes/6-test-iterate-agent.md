@@ -24,7 +24,7 @@ When issues arise, these common scenarios and resolutions can help:
 - Bot Service configuration is incorrect
 - Network issues between Teams and your agent
 
-**Resolution steps:**
+**Resolution:**
 1. Verify the Bot Service resource exists in the Azure portal.
 2. Check Bot Service logs for errors.
 3. Confirm the agent is published and the package was uploaded correctly.
