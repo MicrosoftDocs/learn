@@ -64413,6 +64413,46 @@
       "redirect_url": "https://learn.microsoft.com/azure/storage/files/storage-files-introduction",
       "redirect_document_id": false
     },
+    {
+      "source_path": "learn-pr/paths/build-workflows-with-logic-apps/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/logic-apps/logic-apps-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-logic-apps/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/logic-apps/logic-apps-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-logic-apps/2-what-is-logic-apps.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/logic-apps/logic-apps-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-logic-apps/3-how-logic-apps-works.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/logic-apps/logic-apps-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-logic-apps/4-when-to-use-logic-apps.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/logic-apps/logic-apps-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-logic-apps/5-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/logic-apps/logic-apps-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-logic-apps/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/logic-apps/logic-apps-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-logic-apps/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/logic-apps/logic-apps-overview",
+      "redirect_document_id": false
+    },
     {                                                                    
       "source_path": "learn-pr/azure/intro-to-azure-arc/index.yml",
       "redirect_url": "https://learn.microsoft.com/azure/azure-arc/overview",
