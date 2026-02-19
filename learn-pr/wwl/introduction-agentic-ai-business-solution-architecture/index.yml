@@ -2,12 +2,11 @@
 uid: learn.wwl.introduction-agentic-ai-business-solution-architecture
 metadata:
   title: "Introduction to Agentic AI Business Solutions"
-  description: "Learn how to align AI solutions with business goals, scale AI adoption, and leverage Microsoft AI technologies for enterprise success."
+  description: "Learn how to align AI solutions with business goals, scale AI adoption, and use Microsoft AI technologies for enterprise success."
   ms.date: 02/02/2026
   author: wwlpublish
   ms.author: rknapp
   ms.topic: module
-  ms.service: azure-ai-services
 title: "Introduction to agentic AI business solutions"
 summary: Learn to align AI solutions with business goals and scale AI adoption using Microsoft technologies.
 abstract: |
@@ -25,26 +24,26 @@ prerequisites: |
   - Familiarity with enterprise IT environments.
   - Awareness of business strategy and organizational goals.
 iconUrl: /learn/achievements/generic-badge.svg
-levels:
-- intermediate
+levels: 
+- advanced
 roles:
-- solution-architect
 - database-administrator
-- devops-engineer
-- business-leader
-- data-scientist
+- developer
+- administrator
+- solution-architect
+- technology-manager
 products:
-- azure
-- microsoft-copilot-studio
 - microsoft-365-copilot
+- m365
 - microsoft-365-copilot-chat
 - power-platform
+- microsoft-copilot-studio
 subjects:
-- automation
-- machine-learning
 - generative-ai
-- artificial-intelligence
-- business-applications
+- data-analytics
+- data-management
+- data-engineering
+- data-integration
 units:
 - learn.wwl.introduction-agentic-ai-business-solution-architecture.introduction
 - learn.wwl.introduction-agentic-ai-business-solution-architecture.architect-role-ai-transformation-businesses

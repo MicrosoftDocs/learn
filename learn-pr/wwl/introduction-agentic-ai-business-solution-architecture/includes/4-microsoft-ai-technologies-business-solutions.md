@@ -53,7 +53,7 @@ Microsoft AI technologies empower organizations to innovate, automate, and scale
 
 - Implement with AI responsibly in mind (Fairness, Reliability and Safety, Privacy and Security, Inclusiveness, Transparency, Accountability ).
 
-- Leverage cloud scalability for enterprise-wide adoption.
+- Use cloud scalability for enterprise-wide adoption.
 
 **References**:
 

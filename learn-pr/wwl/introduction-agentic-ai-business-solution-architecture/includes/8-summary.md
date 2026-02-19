@@ -32,7 +32,7 @@ _Best Practices for Scaling AI:_
 - Adopt modular and flexible design principles for scalability.
 - Prioritize responsible AI to ensure compliance and trust.
 - Foster collaboration among stakeholders, including data scientists, developers, and business leaders.
-- Leverage Microsoft Azure AI services for speed, reliability, and enterprise-wide adoption.
+- Use Microsoft Azure AI services for speed, reliability, and enterprise-wide adoption.
 
 _Overview of Microsoft AI Technologies:_
 

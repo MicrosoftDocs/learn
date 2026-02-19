@@ -6,7 +6,7 @@ By the end of this unit, learners will be able to:
 
 - Understand how these resources accelerate AI adoption and integration.
 
-- Explore tools and practices for leveraging AI agents effectively.
+- Explore tools and practices for using AI agents effectively.
 
 ### Introduction
 
@@ -55,7 +55,7 @@ Out-of-the-box AI agents reduce development time, ensure compliance with best pr
 
 - Ensure **responsible AI principles** (Fairness, Reliability and Safety, Privacy and Security, Inclusiveness, Transparency, Accountability.).
 
-- Leverage **Azure AI** for scalability and compliance.
+- Use **Azure AI** for scalability and compliance.
 
 **References**:
 

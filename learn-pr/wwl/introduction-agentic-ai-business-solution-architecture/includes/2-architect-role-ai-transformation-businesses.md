@@ -54,7 +54,7 @@ Flow: Business Goals → AI Strategy → Architecture Design → Implementation 
 
 - Collaborate across teams—data scientists, developers, and business leaders.
 
-- Leverage Azure AI services for speed and reliability.
+- Use Azure AI services for speed and reliability.
 
 **Scaling AI Across the Enterprise**:
 

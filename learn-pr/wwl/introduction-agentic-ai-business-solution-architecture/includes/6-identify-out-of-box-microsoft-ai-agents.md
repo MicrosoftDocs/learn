@@ -4,11 +4,11 @@ By the end of this unit, learners will be able to:
 
 - Explain what OOB Microsoft AI Agents are and their role in business process automation.
 
-- Identify pre-built AI agents available in Microsoft Copilot Studio.
+- Identify prebuilt AI agents available in Microsoft Copilot Studio.
 
 - Understand how templates and scenario libraries accelerate AI adoption.
 
-- Explore best practices for leveraging AI agents responsibly and effectively.
+- Explore best practices for using AI agents responsibly and effectively.
 
 ### Introduction
 
@@ -18,7 +18,7 @@ Microsoft provides **Out-of-the-Box (OOB) AI Agents** to help organizations quic
 
 **What Are OOB AI Agents?**
 
-- Pre-built AI agents and templates available in **Microsoft Copilot Studio** and** Microsoft 365**
+- Prebuilt AI agents and templates available in **Microsoft Copilot Studio** and** Microsoft 365**
 
 - Designed for common scenarios such as: 
 
@@ -38,7 +38,7 @@ Microsoft provides **Out-of-the-Box (OOB) AI Agents** to help organizations quic
 
 **Key Resources**
 
-- **Copilot Studio:** Explore pre-built agents and customize them for your needs.
+- **Copilot Studio:** Explore prebuilt agents and customize them for your needs.
 
 - **Templates:** Use template fundamentals to create tailored AI solutions.
 
@@ -52,11 +52,11 @@ Microsoft provides **Out-of-the-Box (OOB) AI Agents** to help organizations quic
 
 - Ensure **Responsible AI principles** (Fairness, Reliability and Safety, Privacy and Security, Inclusiveness, Transparency, Accountability).
 
-- Leverage **Azure AI** for scalability and compliance.
+- Use **Azure AI** for scalability and compliance.
 
 **References**:
 
-- [Explore agents pre-built in Microsoft Copilot Studio](https://www.microsoft.com/microsoft-copilot/blog/copilot-studio/explore-agents-pre-built-for-you-in-microsoft-copilot-studio/)
+- [Explore agents prebuilt in Microsoft Copilot Studio](https://www.microsoft.com/microsoft-copilot/blog/copilot-studio/explore-agents-prebuilt-for-you-in-microsoft-copilot-studio/)
 - [Transform work with autonomous agents - Dynamics 365 Blog](https://www.microsoft.com/dynamics-365/blog/business-leader/2024/10/21/transform-work-with-autonomous-agents-across-your-business-processes/)
 - [Copilot Studio template fundamentals - Microsoft Learn](/microsoft-copilot-studio/template-fundamentals)
 - [Microsoft Adoption Scenario Library](https://adoption.microsoft.com/scenario-library/)
