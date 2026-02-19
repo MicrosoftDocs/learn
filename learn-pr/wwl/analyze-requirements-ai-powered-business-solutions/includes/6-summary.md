@@ -24,7 +24,7 @@ _Task Automation, Analytics, and Decision-Making:_
 
 _Grounding Data for Reliable AI:_
 
-- Grounding ensures AI agents use trusted, domain-specific data, increasing accuracy and reducing inaccurate (confidently incorrect answers).
+- Grounding ensures AI agents use trusted, domain-specific data, increasing accuracy and reducing inaccurate information (confidently incorrect answers).
 
 Five dimensions of grounding data quality:
 
