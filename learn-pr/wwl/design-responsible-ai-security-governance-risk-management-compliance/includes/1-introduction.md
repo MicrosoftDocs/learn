@@ -1,4 +1,8 @@
-Modern AI agents operate across complex cloud environments where security, compliance, and responsible design are essential. This module introduces the foundational concepts solution architects must apply when designing safe and trustworthy agentbased systems. It focuses on building AI experiences that protect data, respect organizational policies, and uphold responsible AI expectations throughout the solution lifecycle.
+## Overview
+
+Modern AI agents operate across complex cloud environments where security, compliance, and responsible design are essential. This module introduces the foundational concepts solution architects must apply when designing safe and trustworthy agentbased systems.
+
+It focuses on building AI experiences that protect data, respect organizational policies, and uphold responsible AI expectations throughout the solution lifecycle.
 
 You will explore how identity, access control, data governance, model security, and observability work together to create a defenseindepth posture for autonomous and semiautonomous agents. The module highlights how to translate business and compliance requirements into practical technical controls that regulate what agents can access, how they behave, and how their actions are monitored.
 

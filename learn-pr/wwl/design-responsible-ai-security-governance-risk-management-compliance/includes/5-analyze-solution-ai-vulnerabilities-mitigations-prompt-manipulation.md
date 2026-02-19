@@ -112,10 +112,6 @@ Models may respond unpredictably when encountering ambiguous, adversarial, or se
 
 - Reviewing access logs for anomalous elevation attempts.
 
-#### RBAC Boundary Diagram
-
-:::image type="content" source="../media/rbac-boundary-diagram.png" alt-text="RBAC Boundary Diagram.":::
-
 ### 5. Agent and workflow-level vulnerabilities
 
 #### AI agents that automate tasks increase risk through:

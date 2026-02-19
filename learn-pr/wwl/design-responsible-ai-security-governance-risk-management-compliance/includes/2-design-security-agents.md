@@ -182,25 +182,25 @@ Version artifacts, enforce approvals, and use automated checks for security post
 
 ## Design checklist (use in reviews)
 
-- [ ] Agent identities exist for each environment; owners recorded.
+- Agent identities exist for each environment; owners recorded.
 
-- [ ] Managed identities used; no embedded secrets.
+- Managed identities used; no embedded secrets.
 
-- [ ] Role assignments scoped minimally; access reviews scheduled.
+- Role assignments scoped minimally; access reviews scheduled.
 
-- [ ] DLP policies active; sensitivity labels applied to knowledge sources.
+- DLP policies active; sensitivity labels applied to knowledge sources.
 
-- [ ] Data residency and retention configured; purge jobs implemented.
+- Data residency and retention configured; purge jobs implemented.
 
-- [ ] Centralized logging, dashboards, and spend alerts in place.
+- Centralized logging, dashboards, and spend alerts in place.
 
-- [ ] AIspecific threat protection and output moderation enabled.
+- AIspecific threat protection and output moderation enabled.
 
-- [ ] Red team performed; open risks addressed.
+- Red team performed; open risks addressed.
 
-- [ ] MCP/A2A usage documented; allowed external endpoints approved.
+- MCP/A2A usage documented; allowed external endpoints approved.
 
-- [ ] Incident response runbook tested.
+- Incident response runbook tested.
 
 ## Practice (30-45 minutes)
 
@@ -222,10 +222,10 @@ Version artifacts, enforce approvals, and use automated checks for security post
 
 ## References
 
-[https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ai-agents/governance-security-across-organization](/azure/cloud-adoption-framework/ai-agents/governance-security-across-organization)
+- [https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ai-agents/governance-security-across-organization](/azure/cloud-adoption-framework/ai-agents/governance-security-across-organization)
 
-[https://learn.microsoft.com/en-us/training/modules/perform-admin-tasks-microsoft-365-copilot-agents/7-examine-agent-approval-governance](/training/modules/perform-admin-tasks-microsoft-365-copilot-agents/7-examine-agent-approval-governance)
+- [https://learn.microsoft.com/en-us/training/modules/perform-admin-tasks-microsoft-365-copilot-agents/7-examine-agent-approval-governance](/training/modules/perform-admin-tasks-microsoft-365-copilot-agents/7-examine-agent-approval-governance)
 
-[https://learn.microsoft.com/en-us/microsoft-copilot-studio/security-and-governance](/microsoft-copilot-studio/security-and-governance)
+- [https://learn.microsoft.com/en-us/microsoft-copilot-studio/security-and-governance](/microsoft-copilot-studio/security-and-governance)
 
-[https://learn.microsoft.com/en-us/training/paths/manage-iam-for-ai-workloads-on-azure/?sharingId=6F81B482FD5357F5](/training/paths/manage-iam-for-ai-workloads-on-azure/)
+- [https://learn.microsoft.com/en-us/training/paths/manage-iam-for-ai-workloads-on-azure/?sharingId=6F81B482FD5357F5](/training/paths/manage-iam-for-ai-workloads-on-azure/)
