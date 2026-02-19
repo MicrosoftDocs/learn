@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.wwl.integrate-foundry-agent-with-m365
 metadata:
-  title: Integrate your agent with M365
+  title: Integrate your agent with Microsoft 365
   description: Learn how to publish Microsoft Foundry agents to Microsoft Teams and Microsoft 365 Copilot, access workplace data with Work IQ, and test your integrated agents.
   author: ivorb
   ms.author: berryivor
@@ -9,7 +9,7 @@ metadata:
   ms.service: azure-ai-foundry
   ms.topic: module-standard-task-based
   ai-usage: ai-assisted
-title: Integrate your agent with M365
+title: Integrate your agent with Microsoft 365
 summary: Learn how to publish Microsoft Foundry agents to Microsoft Teams and Microsoft 365 Copilot, access workplace data with Work IQ, and test your integrated agents.
 abstract: |
   By the end of this module, you'll be able to:

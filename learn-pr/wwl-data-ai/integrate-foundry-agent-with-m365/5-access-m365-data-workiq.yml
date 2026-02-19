@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.integrate-foundry-agent-with-m365.access-m365-data-workiq
-title: Access M365 data with Work IQ
+title: Access Microsoft 365 data with Work IQ
 metadata:
   title: Access Microsoft 365 data with Work IQ
   description: Learn how to use Microsoft Work IQ to provide your Foundry agents with access to Microsoft 365 data like emails, meetings, and documents.

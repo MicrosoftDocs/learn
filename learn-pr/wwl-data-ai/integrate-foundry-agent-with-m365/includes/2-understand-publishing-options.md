@@ -12,9 +12,9 @@ The Agent Application acts as a routing layer. When you publish a new agent vers
 
 ## Publishing to Microsoft 365
 
-The primary focus of this module is Microsoft 365 integration, which enables your agent to appear within Teams and Copilot. Publishing to M365:
+The primary focus of this module is Microsoft 365 integration, which enables your agent to appear within Teams and Copilot. Publishing to Microsoft 365:
 
-- Creates an Azure Bot Service resource that routes messages between M365 and your agent
+- Creates an Azure Bot Service resource that routes messages between Microsoft 365 and your agent
 - Generates a Microsoft 365 publishing package for distribution
 - Registers a Microsoft Entra ID application for authentication
 - Makes your agent discoverable in the Teams agent store
@@ -45,7 +45,7 @@ When publishing to Microsoft 365, you choose between two distribution scopes:
 
 ## Other publishing channels
 
-While this module focuses on M365, Foundry agents can also publish to:
+While this module focuses on Microsoft 365, Foundry agents can also publish to:
 
 - **Web application preview**: Browser-based interface for demos and stakeholder testing
 - **Stable API endpoint**: REST API for embedding in custom applications
@@ -65,7 +65,7 @@ If your agent uses tools that connect to services like Azure AI Search, grant th
 
 ## Prerequisites for publishing
 
-Before publishing an agent to M365, ensure you have:
+Before publishing an agent to Microsoft 365, ensure you have:
 
 - **Azure AI Project Manager** role on your Foundry project
 - **Azure AI User** role on the agent application scope
