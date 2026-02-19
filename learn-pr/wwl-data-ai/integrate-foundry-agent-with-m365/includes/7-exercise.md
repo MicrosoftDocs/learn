@@ -5,4 +5,8 @@ If you have an Azure subscription, you can explore publishing a Foundry agent to
 
 Launch the exercise and follow the instructions.
 
-[![Button to launch exercise.](../media/launch-exercise.png)](https://go.microsoft.com/fwlink/?linkid=2347700&azure-portal=true)
+[![Button to launch exercise.](../media/launch-exercise.png)](https://go.microsoft.com/fwlink/?linkid=2352775&azure-portal=true)
+
+If you have Work IQ access and want to build an app that connects and provides work insight, you can follow this link for an optional Work IQ exercise.
+
+[![Button to launch exercise.](../media/launch-exercise.png)](https://go.microsoft.com/fwlink/?linkid=2352591&azure-portal=true)
