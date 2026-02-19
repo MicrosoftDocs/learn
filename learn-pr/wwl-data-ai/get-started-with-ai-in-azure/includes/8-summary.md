@@ -10,6 +10,8 @@ In this module, you learned about the main parts and best practices for getting 
 
 In this module, we've introduced Azure, Microsoft's cloud service for global scale software applications, and learned about Microsoft Foundry, a platform for building AI apps and agents on Azure. With this foundational knowledge, you can start to explore how to use Foundry to deploy and work with generative AI models, develop agents, and integrate AI capabilities like speech and computer vision.
 
+::: zone-end
+
 Use the links below to learn more.
 
 - [Explore the latest Foundry portal has to offer](/azure/ai-foundry/what-is-foundry?view=foundry#microsoft-foundry-new)
@@ -17,4 +19,3 @@ Use the links below to learn more.
 - [Learn more about Foundry's Agent Service](/azure/ai-foundry/agents/overview?view=foundry)
 - [Learn more about Foundry Models' REST API](/azure/ai-foundry/openai/reference?view=foundry-classic)
 
-::: zone-end
