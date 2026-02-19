@@ -1,52 +1,52 @@
 ### Overview
 
-AIpowered business solutions—whether Copilot Studio agents, Microsoft 365 Copilot extensions, or custom AI workflows—require rigorous ROI evaluation. Solution architects must define ROI criteria that capture **financial impact**, **productivity gains**, **risk reduction**, and **total cost of ownership (TCO)** across the AI lifecycle.
+AI-powered business solutions whether Copilot Studio agents, Microsoft 365 Copilot extensions, or custom AI workflows, require rigorous ROI evaluation. Solution architects must define ROI criteria that capture **financial impact**, **productivity gains**, **risk reduction**, and **total cost of ownership (TCO)** across the AI lifecycle.
 
 ### This unit equips learners to:
 
-Identify ROI drivers for AI workloads
+- Identify ROI drivers for AI workloads
 
-Evaluate TCO across development, deployment, and operations
+- Evaluate TCO across development, deployment, and operations
 
-Use Copilot Studio's ROI analytics to quantify savings
+- Use Copilot Studio's ROI analytics to quantify savings
 
-Apply structured ROI frameworks to prioritize AI investments
+- Apply structured ROI frameworks to prioritize AI investments
 
 ### By the end of this unit, learners will be able to:
 
-Identify ROI categories relevant to AIpowered business solutions
+- Identify ROI categories relevant to AI-powered business solutions
 
-Evaluate TCO using Microsoft's AI agent coststructure model
+- Evaluate TCO using Microsoft's AI agent coststructure model
 
-Use Copilot Studio's ROI analytics to forecast and measure value
+- Use Copilot Studio's ROI analytics to forecast and measure value
 
-Apply ROI frameworks to real business scenarios
+- Apply ROI frameworks to real business scenarios
 
-Communicate ROI findings to business and finance stakeholders
+- Communicate ROI findings to business and finance stakeholders
 
 ### 1. Why ROI Criteria Matter for AI Solutions
 
 #### AI adoption often fails when organizations:
 
-Overestimate productivity gains
+- Overestimate productivity gains
 
-Underestimate operational and maintenance costs
+- Underestimate operational and maintenance costs
 
-Lack clear measurement frameworks
+- Lack clear measurement frameworks
 
-Cannot articulate business value to leadership
+- Cannot articulate business value to leadership
 
 #### Microsoft's ROI guidance emphasizes that AI ROI must be:
 
-Measurable
+- Measurable
 
-Repeatable
+- Repeatable
 
-Aligned to business outcomes
+- Aligned to business outcomes
 
-Grounded in real usage analytics
+- Grounded in real usage analytics
 
-### 2. Core ROI Categories for AIPowered Solutions
+### 2. Core ROI Categories for AI-Powered Solutions
 
 ROI spans **quantitative** and **qualitative** dimensions
 
@@ -54,75 +54,75 @@ ROI spans **quantitative** and **qualitative** dimensions
 
 Examples:
 
-Time saved per task
+- Time saved per task
 
-Reduction in manual data entry
+- Reduction in manual data entry
 
-Faster case resolution
+- Faster case resolution
 
-Automated summarization or classification
+- Automated summarization or classification
 
 #### Copilot Studio ROI analytics supports:
 
-Time saved per session
+- Time saved per session
 
-Task automation rate
+- Task automation rate
 
-User adoption metrics
+- User adoption metrics
 
 #### B. Cost Savings
 
 ##### Examples:
 
-Reduced labor hours
+- Reduced labor hours
 
-Lower operational overhead
+- Lower operational overhead
 
-Decreased support ticket volume
+- Decreased support ticket volume
 
-Reduced manual review or compliance workload
+- Reduced manual review or compliance workload
 
 #### Copilot Studio's ROI dashboard estimates:
 
-Cost savings per automated task
+- Cost savings per automated task
 
-Cost savings per user
+- Cost savings per user
 
-Aggregate savings over time
+- Aggregate savings over time
 
 #### C. Revenue Impact
 
 ##### Examples:
 
-Increased sales conversion
+- Increased sales conversion
 
-Faster lead qualification
+- Faster lead qualification
 
-Improved customer retention
+- Improved customer retention
 
-Upsell/crosssell recommendations
+- Upsell/crosssell recommendations
 
 #### D. Risk Reduction
 
 ##### Examples:
 
-Fewer compliance violations
+- Fewer compliance violations
 
-Reduced error rates
+- Reduced error rates
 
-Improved data consistency
+- Improved data consistency
 
-Lower operational risk
+- Lower operational risk
 
 #### E. Strategic & Innovation Value
 
 ##### Examples:
 
-New business models
+- New business models
 
-Enhanced customer experience
+- Enhanced customer experience
 
-Competitive differentiation
+- Competitive differentiation
 
 ### 3. Total Cost of Ownership (TCO) for AI Solutions
 
@@ -130,85 +130,85 @@ Total cost of ownership (TCO) and return on investment (ROI) sit next to each ot
 
 #### A. Development Costs
 
-Data preparation
+- Data preparation
 
-Prompt engineering
+- Prompt engineering
 
-Agent design and testing
+- Agent design and testing
 
-Integration with business systems
+- Integration with business systems
 
 #### B. Deployment Costs
 
-Infrastructure provisioning
+- Infrastructure provisioning
 
-Licensing
+- Licensing
 
-Security and compliance setup
+- Security and compliance setup
 
-API usage costs
+- API usage costs
 
 #### C. Operational Costs
 
-Monitoring and evaluation
+- Monitoring and evaluation
 
-Model retraining
+- Model retraining
 
-Prompt library maintenance
+- Prompt library maintenance
 
-Support and troubleshooting
+- Support and troubleshooting
 
-User training and adoption programs
+- User training and adoption programs
 
 #### D. Change Management Costs
 
-Skilling and enablement
+- Skilling and enablement
 
-Communication and rollout
+- Communication and rollout
 
-Business process redesign
+- Business process redesign
 
 #### E. Decommissioning Costs
 
-Retiring outdated models
+- Retiring outdated models
 
-Migrating to new architectures
+- Migrating to new architectures
 
 ### 4. Using Copilot Studio ROI Analytics
 
-Copilot Studio's ROI analytics (2025 Wave 1) provides:
+Copilot Studio's ROI analytics provides:
 
 #### A. Usage Metrics
 
-Total sessions
+- Total sessions
 
-Active users
+- Active users
 
-Session duration
+- Session duration
 
 #### B. Automation Metrics
 
-Completion rate
+- Completion rate
 
-Abandonment rate
+- Abandonment rate
 
-Task success rate
+- Task success rate
 
 #### C. Cost Savings Metrics
 
-Estimated time saved
+- Estimated time saved
 
-Estimated cost savings per task
+- Estimated cost savings per task
 
-Reduction in manual workload
+- Reduction in manual workload
 
 #### D. Quality Metrics
 
-Feedback scores
+- Feedback scores
 
-Error rates
+- Error rates
 
-Escalation frequency
+- Escalation frequency
 
 These metrics help quantify both **productivity gains** and **operational efficiency**.
 
@@ -218,71 +218,71 @@ These metrics help quantify both **productivity gains** and **operational effici
 
 ##### Examples:
 
-Reduce call handling time by 20%
+- Reduce call handling time by 20%
 
-Automate 40% of manual data entry
+- Automate 40% of manual data entry
 
-Improve sales forecasting accuracy
+- Improve sales forecasting accuracy
 
 #### Step 2 — Identify ROI Drivers
 
-Productivity
+- Productivity
 
-Cost savings
+- Cost savings
 
-Revenue impact
+- Revenue impact
 
-Risk reduction
+- Risk reduction
 
 #### Step 3 — Calculate TCO
 
-Include development, deployment, and operational costs.
+- Include development, deployment, and operational costs.
 
 #### Step 4 — Quantify Benefits
 
 #### Use:
 
-Copilot Studio analytics
+- Copilot Studio analytics
 
-Timeandmotion studies
+- Timeandmotion studies
 
-Business process KPIs
+- Business process KPIs
 
 #### Step 5 — Compare Benefits vs. TCO
 
 Calculate:
 
-Payback period
+- Payback period
 
-Net present value (NPV)
+- Net present value (NPV)
 
-Costbenefit ratio
+- Costbenefit ratio
 
-Annualized ROI
+- Annualized ROI
 
 #### Step 6 — Validate with Stakeholders
 
-Finance
+- Finance
 
-Operations
+- Operations
 
-Business owners
+- Business owners
 
-AI CoE
+- AI CoE
 
 ### 6. Professional Visuals (TextBased)
 
-**Visual 1 — ROI Categories**
+**ROI Categories**
 
-Productivity | Cost Savings | Revenue Impact | Risk Reduction | Strategic Value 
+:::image type="content" source="../media/return-categories.png" alt-text="An example of alt text for an image.":::
 
-**Visual 2 — TCO Structure**
+**TCO Structure**
 
-Development → Deployment → Operations → Change Management → Decommissioning 
+:::image type="content" source="../media/cost-structure.png" alt-text="TCO Structure.":::
 
-**Visual 3 — ROI Evaluation Flow**
+**ROI Evaluation Flow**
 
-Define Outcomes → Identify Drivers → Calculate TCO → Quantify Benefits → Compare → Validate 
+:::image type="content" source="../media/return-eval.png" alt-text="ROI Evaluation Flow.":::
 
 ### References
 

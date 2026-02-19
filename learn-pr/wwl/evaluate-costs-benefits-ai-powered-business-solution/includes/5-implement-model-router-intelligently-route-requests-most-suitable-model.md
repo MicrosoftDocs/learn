@@ -4,17 +4,17 @@ Modern AI applications often rely on multiple models—generalpurpose LLMs, smal
 
 This unit equips solution architects to design, configure, and operationalize a model router that optimizes cost, latency, accuracy, and reliability across AI workloads.
 
-By the end of this unit, learners will be able to:
+#### By the end of this unit, learners will be able to:
 
-Explain the purpose and value of a model router
+- Explain the purpose and value of a model router
 
-Identify routing criteria (task type, cost, latency, domain specificity)
+- Identify routing criteria (task type, cost, latency, domain specificity)
 
-Configure routing rules in Azure AI Foundry
+- Configure routing rules in Azure AI Foundry
 
-Integrate a model router into AI agents and applications
+- Integrate a model router into AI agents and applications
 
-Evaluate routing performance and optimize model selection
+- Evaluate routing performance and optimize model selection
 
 ### 1. Understanding the Model Router in Azure AI Foundry
 
@@ -22,53 +22,53 @@ Azure AI Foundry's model router provides:
 
 #### A. A Single Unified Endpoint
 
-One endpoint for multiple models
+- One endpoint for multiple models
 
-Simplifies application integration
+- Simplifies application integration
 
-Reduces code complexity
+- Reduces code complexity
 
 #### B. Intelligent Routing
 
-Routes requests based on:
+- Routes requests based on:
 
-Task type
+- Task type
 
-Model capabilities
+- Model capabilities
 
-Cost constraints
+- Cost constraints
 
-Latency requirements
+- Latency requirements
 
-Custom rules
+- Custom rules
 
 #### C. Dynamic Model Selection
 
 Supports:
 
-Azure OpenAI models
+- Azure OpenAI models
 
-Finetuned models
+- Finetuned models
 
-Custom models
+- Custom models
 
-Multiple versions of the same model
+- Multiple versions of the same model
 
-Specific third-party models (e.g. Grok, DeepSeek, Claude, etc)
+- Specific third-party models (e.g. Grok, DeepSeek, Claude, etc)
 
-Specific Open-Source & OSS-Aligned Models (e.g. gpt-oss-120b, Llama-4-Maverik)
+- Specific Open-Source & OSS-Aligned Models (e.g. gpt-oss-120b, Llama-4-Maverik)
 
 :::image type="content" source="../media/model-family-chart.png" alt-text="AI Model family table.":::
 
 #### D. Centralized Governance
 
-Versioning
+- Versioning
 
-Monitoring
+- Monitoring
 
-Usage analytics
+- Usage analytics
 
-Safety and compliance controls
+- Safety and compliance controls
 
 ### 2. Why Model Routing Matters
 
@@ -76,81 +76,83 @@ Model routing enables organizations to:
 
 #### Optimize Cost
 
-Use SLMs for simple tasks
+- Use SLMs for simple tasks
 
-Use LLMs only when needed
+- Use LLMs only when needed
 
-Reduce token consumption
+- Reduce token consumption
 
 #### Improve Performance
 
-Route lowlatency tasks to faster models
+- Route lowlatency tasks to faster models
 
-Use specialized models for domainspecific tasks
+- Use specialized models for domainspecific tasks
 
 #### Increase Reliability
 
-Failover to backup models
+- Failover to backup models
 
-Automatically switch to newer model versions
+- Automatically switch to newer model versions
 
 #### Support Hybrid AI Strategies
 
-Combine foundation models, finetuned models, and custom models
+- Combine foundation models, finetuned models, and custom models
 
-Align with "build, buy, or both" AI transformation strategies
+- Align with "build, buy, or both" AI transformation strategies
 
 ### 3. Routing Criteria for Selecting the Most Suitable Model
 
-Azure AI Foundry supports rulebased and metadatabased routing. Key criteria include:
+Azure AI Foundry supports rulebased and metadatabased routing. 
+
+**Key criteria include:**
 
 #### A. Task Type
 
-Summarization
+- Summarization
 
-Classification
+- Classification
 
-Extraction
+- Extraction
 
-Reasoning
+- Reasoning
 
-Conversation
+- Conversation
 
 #### B. Complexity
 
-Simple → SLM
+- Simple → SLM
 
-Moderate → Finetuned model
+- Moderate → Finetuned model
 
-Complex → LLM
+- Complex → LLM
 
 #### C. Cost Sensitivity
 
-Highvolume tasks → SLM
+- Highvolume tasks → SLM
 
-Highvalue tasks → LLM
+- Highvalue tasks → LLM
 
 :::image type="content" source="../media/cost-constraint-chart.png" alt-text="AI cost constraint table.":::
 
 #### D. Latency Requirements
 
-Realtime → SLM
+- Realtime → SLM
 
-Batch → LLM
+- Batch → LLM
 
 :::image type="content" source="../media/latency-requirement-chart.png" alt-text="AI latency requirements table.":::
 
 #### E. Domain Specificity
 
-Industryspecific → Finetuned model
+- Industryspecific → Finetuned model
 
-General → Foundation model
+- General → Foundation model
 
 :::image type="content" source="../media/domain-need-chart.png" alt-text="AI domain needs table.":::
 
 #### F. Safety & Compliance
 
-Sensitive workflows → Moderation + domaintuned model
+- Sensitive workflows → Moderation + domaintuned model
 
 :::image type="content" source="../media/risk-level-chart.png" alt-text="AI risk level table.":::
 
@@ -166,87 +168,73 @@ Azure AI Foundry supports:
 
 Examples:
 
-"If task = classification → use SLM"
+- "If task = classification → use SLM"
 
-"If domain = finance → use finetuned model"
+- "If domain = finance → use finetuned model"
 
 #### B. Weighted Routing
 
-Distribute traffic across models
+- Distribute traffic across models
 
-Useful for A/B testing and gradual rollout
+- Useful for A/B testing and gradual rollout
 
 #### C. Fallback Routing
 
-Automatically route to backup model if primary fails
+- Automatically route to backup model if primary fails
 
 #### D. VersionBased Routing
 
-Route to latest stable version
+- Route to latest stable version
 
-Route specific traffic to experimental versions
+- Route specific traffic to experimental versions
 
 ### 5. Implementing the Model Router
 
 **Step 1 — Define the Routing Strategy**
 
-Costoptimized
+- Costoptimized
 
-Performanceoptimized
+- Performanceoptimized
 
-Accuracyoptimized
+- Accuracyoptimized
 
-Hybrid
+- Hybrid
 
 **Step 2 — Register Models**
 
-Foundation models
+- Foundation models
 
-Finetuned models
+- Finetuned models
 
-Custom models
+- Custom models
 
 **Step 3 — Configure Routing Rules**
 
-Rulebased
+- Rulebased
 
-Weighted
+- Weighted
 
-Fallback
+- Fallback
 
 **Step 4 — Integrate with Applications**
 
-AI agents
+- AI agents
 
-Copilot extensions
+- Copilot extensions
 
-Backend services
+- Backend services
 
-Multiagent systems
+- Multiagent systems
 
 **Step 5 — Monitor and Optimize**
 
-Latency
+- Latency
 
-Cost
+- Cost
 
-Accuracy
+- Accuracy
 
-Model usage distribution
-
-### 6. Professional Visuals (TextBased)
-
-Visual 1 — Model Router Architecture
-
-Request ↓ Model Router ↓ Routing Rules → Selected Model ↓ Response 
-
-Visual 2 — Routing Decision Matrix
-
-Task Complexity | Domain Specificity | Latency | Cost Sensitivity → Model Choice 
-
-Visual 3 — Routing Rule Types
-
-Static Rules | Weighted Routing | Fallback Routing | Version Routing 
+- Model usage distribution
 
 ### References
 
