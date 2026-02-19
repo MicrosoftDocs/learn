@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.analyze-requirements-ai-powered-business-solutions.organize-business-solution-data-available-other-ai-systems
+title: "Organize business solution data for AI systems"
+metadata:
+  title: "Organize Business Solution Data for AI Systems"
+  description: "Learn how to organize business solution data to ensure it's usable, secure, and optimized for AI systems like Copilot and custom AI applications."
+  ms.date: 02/04/2026
+  author: Randall-Knapp
+  ms.author: taeldin
+  ms.topic: unit
+  ai-usage: ai-assisted
+durationInMinutes: 6
+content: |
+  [!include[](includes/4-organize-business-solution-data-available-other-ai-systems.md)]
