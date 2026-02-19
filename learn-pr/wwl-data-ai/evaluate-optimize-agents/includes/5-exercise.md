@@ -3,7 +3,7 @@ In this exercise, you evaluate two prompt versions of the Trail Guide Agent and 
 
 Throughout this exercise, you:
 
-- Design evaluation experiments using git branches to manage and compare prompt versions
+- Design evaluation experiments using Git branches to manage and compare prompt versions
 - Manually evaluate AI agent responses against structured quality criteria (Intent Resolution, Relevance, Groundedness)
 - Compare agent versions across test scenarios to identify quality differences and cost trade-offs
 

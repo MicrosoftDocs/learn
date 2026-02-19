@@ -5,7 +5,7 @@ You've learned how to optimize AI agents through structured evaluation that tran
 
 Effective optimization depends on clear metrics that measure quality, cost, and performance. Quality metrics like Intent Resolution, Relevance, and Groundedness reveal whether agents serve user needs effectively. Cost metrics quantify token usage and operational expenses, enabling you to calculate the financial impact of model changes. Performance metrics measure response times that directly affect user experience. Together, these metrics provide objective criteria for comparing agent variants.
 
-## Organize experiments with git-based workflows
+## Organize experiments with Git-based workflows
 
 Git-based workflows bring engineering discipline to agent optimization. You create one branch per experiment variant, isolating specific changes like prompt modifications or model switches. Each branch maintains test prompts, evaluation scripts, and documented results. This structured approach lets you test changes safely, compare experiments systematically, and merge successful optimizations to production with confidence.
 

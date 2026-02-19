@@ -2,7 +2,7 @@
 uid: learn.wwl.evaluate-optimize-agents
 metadata:
   title: Evaluate and optimize AI agents through structured experiments
-  description: Learn how to evaluate and optimize AI agents systematically through structured experiments that measure quality, cost, and performance. Design evaluation metrics, apply git-based workflows, create consistent scoring rubrics, and make evidence-based optimization decisions.
+  description: Learn how to evaluate and optimize AI agents systematically through structured experiments that measure quality, cost, and performance. Design evaluation metrics, apply Git-based workflows, create consistent scoring rubrics, and make evidence-based optimization decisions.
   ms.date: 02/17/2026
   author: madiepev
   ms.author: madiepev
@@ -11,17 +11,17 @@ metadata:
   ms.service: azure-ai-foundry
 title: Evaluate and optimize AI agents through structured experiments
 summary: |
-  Learn how to optimize AI agents through structured evaluation that transforms guesswork into evidence-based engineering decisions. You'll explore how to design evaluation experiments with clear metrics for quality, cost, and performance; organize experiments using git-based workflows; create evaluation rubrics for consistent scoring; and compare results to make informed optimization decisions.
+  Learn how to optimize AI agents through structured evaluation that transforms guesswork into evidence-based engineering decisions. You'll explore how to design evaluation experiments with clear metrics for quality, cost, and performance; organize experiments using Git-based workflows; create evaluation rubrics for consistent scoring; and compare results to make informed optimization decisions.
 abstract: |
   In this module, you:
   - Design evaluation experiments with clear metrics for quality, cost, and performance
-  - Apply git-based workflows to organize and compare agent variants systematically
+  - Apply Git-based workflows to organize and compare agent variants systematically
   - Create evaluation rubrics that ensure consistent scoring across human evaluators
   - Compare experiment results to make evidence-based optimization decisions
 prerequisites: |
   Before starting this module, you should have:
   - Basic understanding of AI agents and large language models
-  - Familiarity with git version control workflows
+  - Familiarity with Git version control workflows
   - Experience with Microsoft Azure AI Foundry or similar AI development platforms
 iconUrl: /training/achievements/generic-badge.svg
 levels:

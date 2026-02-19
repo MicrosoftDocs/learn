@@ -91,7 +91,7 @@ For the Adventure Works experiments, you might document your comparison:
 | prompt-v2-concise | Maintains quality, more focused | Yes (4.4 avg) |
 | gpt4o-mini-model | Lower quality on complex prompts | No (4.1 avg, below 4.2 threshold) |
 
-If `prompt-v2-concise` meets your quality threshold and improves conciseness, use git to merge the winning experiment:
+If `prompt-v2-concise` meets your quality threshold and improves conciseness, use Git to merge the winning experiment:
 
 ```bash
 git checkout main
@@ -102,4 +102,4 @@ git push origin main --tags
 
 For experiments that don't meet criteria, document why before deciding whether to keep or delete the branch: "gpt4o-mini-model: Quality dropped below 4.2 threshold on complex trip planning prompts. Not recommended for production."
 
-With git workflows established for organizing experiments, you're ready to execute the actual evaluations by running agents against test prompts and systematically scoring the results.
+With Git workflows established for organizing experiments, you're ready to execute the actual evaluations by running agents against test prompts and systematically scoring the results.

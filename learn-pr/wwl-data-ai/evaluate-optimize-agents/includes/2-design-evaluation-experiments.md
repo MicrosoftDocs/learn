@@ -65,21 +65,21 @@ Representative test prompts cover the spectrum of real-world usage. For the Adve
 
 - **Digital nomads planning weekend hikes**: "I'm hiking in the Scottish Highlands in March, what waterproof gear do I need from Adventure Works?"
 - **Families preparing for their first outdoor adventure**: "We're taking our teenagers on easy trails near London next month, what basic equipment should we buy or rent?"
-- **Experienced hikers planning extended trips**: "I need a complete gear list for five-day backpacking trip in moderate terrain with variable weather"
+- **Experienced hikers planning extended trips**: "I need a complete gear list for five-day backpacking trip in moderate terrain with variable weather."
 
 Edge cases test how the agent handles challenging situations:
 
 - **Ambiguous requests**: "What should I pack for hiking?"
-- **Incomplete trip details**: "I need gear for Scotland"
+- **Incomplete trip details**: "I need gear for Scotland."
 - **Last-minute gear changes**: "Can I swap my camping equipment rental for different sizes?"
 
 Including five to 10 diverse test prompts provides sufficient coverage for manual testing and smoke tests while remaining practical for human evaluation. Each test prompt captures the user query, expected information needs, and ideal response characteristics.
 
 Success criteria establish what constitutes acceptable performance before you run experiments. Setting thresholds in advance prevents rationalizing disappointing results. Adventure Works defines success thresholds across all three optimization dimensions:
 
-- **Quality**: Average 4.2+ (five-point scale), minimum 3.5 per response to align with customer satisfaction targets and prevent trust erosion
-- **Cost**: 60% expense reduction to achieve operational efficiency goals while maintaining 85% resolution rate
-- **Performance**: Average response time <30 seconds, time-to-first-token <2 seconds (streaming) to ensure acceptable user experience for real-time interactions
+- **Quality**: Average 4.2+ (five-point scale), minimum 3.5 per response to align with customer satisfaction targets and prevent trust erosion.
+- **Cost**: 60% expense reduction to achieve operational efficiency goals while maintaining 85% resolution rate.
+- **Performance**: Average response time <30 seconds, time-to-first-token <2 seconds (streaming) to ensure acceptable user experience for real-time interactions.
 
 Business requirements influence these thresholds: customer-facing agents handling trip planning need higher quality standards and faster response times than internal tools.
 

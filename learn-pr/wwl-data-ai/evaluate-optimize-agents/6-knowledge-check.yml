@@ -3,7 +3,7 @@ uid: learn.wwl.evaluate-optimize-agents.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: "Test your understanding of agent evaluation experiments, git-based workflows, and evaluation rubrics."
+  description: "Test your understanding of agent evaluation experiments, Git-based workflows, and evaluation rubrics."
   ms.date: 02/17/2026
   author: madiepev
   ms.author: madiepev
@@ -17,11 +17,11 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "What is the primary reason for organizing agent optimization experiments into separate git branches?"
+  - content: "What is the primary reason for organizing agent optimization experiments into separate Git branches?"
     choices:
     - content: "To enable parallel development by multiple team members simultaneously"
       isCorrect: false
-      explanation: "Incorrect: While git supports parallel development, the primary reason for separate experiment branches is controlled comparison, not collaboration."
+      explanation: "Incorrect: While Git supports parallel development, the primary reason for separate experiment branches is controlled comparison, not collaboration."
     - content: "To isolate specific changes and attribute performance differences to individual modifications"
       isCorrect: true
       explanation: "Correct: Separate branches enable controlled comparison by testing one change at a time, making it clear which modification caused observed performance differences."
