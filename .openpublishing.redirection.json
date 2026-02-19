@@ -64547,6 +64547,46 @@
       "source_path": "learn-pr/wwl-data-ai/get-started-with-generative-ai-and-agents/5-using-an-agent.yml",
       "redirect_url": "https://learn.microsoft.com/training/modules/get-started-with-generative-ai-and-agents/4-creating-an-agent",
       "redirect_document_id": false
-    }
+    },
+    { 
+      "source_path": "learn-pr/paths/deploy-a-website-with-azure-app-service/index.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/app-service/deploy-staging-slots?tabs=portal",
+      "redirect_document_id": false
+    },
+    { 
+      "source_path": "learn-pr/azure/stage-deploy-app-service-deployment-slots/index.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/app-service/deploy-staging-slots?tabs=portal",
+      "redirect_document_id": false
+    },
+    { 
+      "source_path": "learn-pr/azure/stage-deploy-app-service-deployment-slots/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/app-service/deploy-staging-slots?tabs=portal",
+      "redirect_document_id": false
+    },  
+    { 
+      "source_path": "learn-pr/azure/stage-deploy-app-service-deployment-slots/2-create-deployment-slots.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/app-service/deploy-staging-slots?tabs=portal",
+      "redirect_document_id": false
+    },
+    { 
+      "source_path": "learn-pr/azure/stage-deploy-app-service-deployment-slots/3-exercise-create-deployment-slots.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/app-service/deploy-staging-slots?tabs=portal",
+      "redirect_document_id": false
+    },
+    { 
+      "source_path": "learn-pr/azure/stage-deploy-app-service-deployment-slots/4-deploy-a-web-app-by-swapping-deployment-slots.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/app-service/deploy-staging-slots?tabs=portal",
+      "redirect_document_id": false
+    },
+    { 
+      "source_path": "learn-pr/azure/stage-deploy-app-service-deployment-slots/5-exercise-deploy-a-web-app-by-using-deployment-slots.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/app-service/deploy-staging-slots?tabs=portal",
+      "redirect_document_id": false
+    },  
+    { 
+      "source_path": "https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/stage-deploy-app-service-deployment-slots/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/app-service/deploy-staging-slots?tabs=portal",
+      "redirect_document_id": false
+    }                    
   ]
 }
