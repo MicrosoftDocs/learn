@@ -305,9 +305,25 @@ In this task, you create a `.github/copilot-instructions.md` file that provides 
 
 Use the following steps to complete this task:
 
-1. In Visual Studio Code's EXPLORER view, right-click the root folder of your project and select **New Folder**.
+1. Before creating custom instructions manually, try the `/init` shortcut to see what Copilot generates automatically.
 
-1. Name the folder **.github**.
+    Open the Copilot Chat view and enter the following command:
+
+    ```plaintext
+    /init
+    ```
+
+    Copilot analyzes your workspace—detecting the C# language, ASP.NET Core framework, Entity Framework Core, and the project structure—and generates a starter `copilot-instructions.md` file tailored to what it finds.
+
+1. Review the generated instructions.
+
+    Examine the content that `/init` produced. Notice that Copilot infers general best practices for the detected technology stack, but it doesn't know about the client's specific coding standards, such as the underscore prefix for private fields, the repository pattern requirement, or the xUnit testing conventions. The `/init` command is a useful starting point, but you'll replace it with manually crafted instructions that reflect the client's exact requirements.
+
+1. Delete the generated file so you can create one from scratch.
+
+    If `/init` created a `.github/copilot-instructions.md` file, delete it. If `/init` also created the `.github` folder, you can keep the folder—you'll use it in the next step.
+
+1. In Visual Studio Code's EXPLORER view, create a **.github** folder in the root of your project if one doesn't already exist.
 
     > **NOTE**: The folder name must start with a period. This is a convention used by GitHub for configuration files and is the standard location for Copilot instruction files.
 
@@ -371,6 +387,8 @@ Use the following steps to complete this task:
     ```
 
     Copilot should mention the repository pattern as specified in your custom instructions.
+
+    > **NOTE**: VS Code also recognizes `AGENTS.md` and `CLAUDE.md` files as always-on instructions. An `AGENTS.md` file placed in the root of your workspace works similarly to `copilot-instructions.md` and is useful when you work with multiple AI tools and want a single set of instructions recognized by all of them. Additionally, nested `AGENTS.md` files can be placed in subdirectories to provide context-specific instructions that apply only when Copilot operates on files within that directory or its children. For this exercise, you use the `.github/copilot-instructions.md` convention, which is the standard approach for GitHub Copilot customization.
 
 ## Create path-specific instruction files for targeted guidance
 
@@ -447,11 +465,12 @@ Use the following steps to complete this task:
     ```markdown
     ---
     description: 'Generate API documentation for the active controller file'
+    agent: 'copilot'
     tools: ['search', 'read']
     ---
     # Generate API Documentation
 
-    Analyze the controller in the active file and generate comprehensive API documentation.
+    Analyze the controller in ${file} and generate comprehensive API documentation.
 
     For each endpoint in the controller:
     1. List the HTTP method and route.
@@ -462,6 +481,10 @@ Use the following steps to complete this task:
 
     Format the output as a Markdown document suitable for a developer wiki.
     ```
+
+    The `${file}` syntax is a **prompt file variable** that automatically resolves to the file currently open in the editor. When you run this prompt with a controller file open, Copilot receives the full contents of that file as context. Prompt files also support `${selection}` (the currently selected text) and custom variables that prompt the user for input when the prompt is executed.
+
+    The `agent` field in the frontmatter specifies which agent handles the prompt when the slash command is invoked. Here it's set to `copilot` (the default agent), but you could set it to a custom agent name—for example, after creating the Reviewer agent later in this exercise, you could change this to `agent: 'reviewer'` to have documentation generated through the Reviewer's lens. The frontmatter also supports an optional `model` field for specifying a preferred AI model.
 
 1. Save the file.
 
@@ -480,6 +503,10 @@ Use the following steps to complete this task:
     ```
 
     Copilot should analyze the CategoriesController and produce formatted API documentation for all six endpoints (GET all, GET by ID, POST, PUT, DELETE, and toggle-active). This demonstrates how prompt files standardize common tasks across the team and shows meaningful output because the existing controller has multiple endpoints with different HTTP methods, authorization levels, and response types.
+
+1. Verify that the `${file}` variable resolved correctly.
+
+    In the Copilot Chat response, the documentation should specifically reference `CategoriesController.cs` — the file you had open in the editor. The `${file}` variable provided the controller's contents as context to the prompt. If you close all editor tabs and run `/generate-api-docs` again, Copilot won't have a specific controller to analyze and will produce a more generic or less accurate response, demonstrating that the variable provides meaningful context.
 
 ## Define a "Planner" custom agent with read-only tools
 
@@ -501,6 +528,10 @@ Use the following steps to complete this task:
       - label: Start Implementation
         agent: implementer
         prompt: "Implement the plan outlined above. Follow the project's custom instructions for coding standards. Create all necessary files including models, DTOs, services, interfaces, and controllers."
+        send: false
+      - label: Write Tests First
+        agent: implementer
+        prompt: "Before implementing the feature, write unit tests based on the plan outlined above. Use xUnit and Moq following the project's testing conventions. Create test classes that cover the service methods and controller actions described in the plan. Do not implement the production code yet—only the tests."
         send: false
     ---
     # Planner
@@ -538,6 +569,10 @@ Use the following steps to complete this task:
 1. Select the **planner** agent.
 
     Notice that the chat input placeholder text changes to "Analyzes feature requirements and generates implementation plans without writing code" — this is the description you defined in the agent's frontmatter.
+
+    > **NOTE**: The Planner agent defines **two handoffs**: "Start Implementation" and "Write Tests First." Both target the implementer agent but with different prompts—one for writing production code and one for writing tests first. This gives you the flexibility to choose your development approach (implementation-first or test-driven) after reviewing the plan. You'll see both handoff buttons appear after the Planner produces a response in a later task.
+
+    > **TIP**: Each handoff entry also supports an optional `model` field that specifies a different AI model for that stage of the workflow. The format is `model: "Model Name (vendor)"` (for example, `model: "GPT-4.1 (OpenAI)"` or `model: "Claude Sonnet 4 (Anthropic)"`). This is useful when different workflow stages benefit from different model capabilities—for instance, using a reasoning model for planning and a faster model for implementation. The available models depend on your Copilot subscription.
 
 1. Test the Planner agent by entering the following prompt:
 
@@ -598,7 +633,7 @@ Use the following steps to complete this task:
 
     Open the Copilot Chat agents dropdown. You should now see both **planner** and **implementer** listed.
 
-    Notice that the Planner agent includes a "Start Implementation" handoff button. This handoff is configured to switch to the Implementer agent when selected, carrying over the conversation context.
+    Notice that the Planner agent includes two handoff buttons: **"Start Implementation"** and **"Write Tests First."** Both handoffs target the Implementer agent but with different prompts. The "Start Implementation" handoff directs the Implementer to write production code, while "Write Tests First" directs it to write unit tests before any production code. This demonstrates how a single agent can offer **multiple handoffs** that let the developer choose the appropriate next step based on the situation.
 
 ## Define a "Reviewer" custom agent for code quality checks
 
@@ -661,6 +696,10 @@ Use the following steps to complete this task:
 
     Each handoff uses `send: false`, which means the prompt is pre-filled for you to review and edit before submitting. This keeps you in control at every step of the workflow.
 
+    > **NOTE**: The `send` field controls whether the handoff prompt is submitted automatically. When set to `false` (the default), the prompt is pre-filled in the chat input for you to review and optionally edit before sending. When set to `true`, the prompt is submitted immediately and the target agent begins working right away without waiting for your approval. All handoffs in this exercise use `send: false` to keep you in control at each transition. In fully automated pipelines where you trust the agent chain to operate without supervision, `send: true` can streamline the workflow—but it removes the human-in-the-loop checkpoint.
+
+    > **NOTE**: By default, custom agents run on the client (inside VS Code). For long-running tasks—such as building an entire feature or running a comprehensive test suite—you can set `target: cloud` in the agent's YAML frontmatter to run the agent remotely. Cloud agents free your local VS Code instance while the agent processes in the background. Background agents are a related concept: they run independently without blocking the chat interface, allowing you to continue working while the agent completes its task. The available execution environments depend on your Copilot subscription.
+
 ## Run the chained agents workflow to complete a development task end-to-end
 
 In this task, you run the full Planning → Implementation → Review workflow using your custom agents to add a new inventory management feature to the project. This demonstrates how chaining agents creates a structured, multi-step development process.
@@ -701,11 +740,13 @@ Use the following steps to complete this task:
 
 1. When you're satisfied with the plan, select the **Start Implementation** handoff button.
 
-    This button appears at the end of the Planner agent's response. When you select it, Copilot Chat:
+    You should see two handoff buttons at the end of the Planner's response: **"Start Implementation"** and **"Write Tests First."** Select **"Start Implementation"** to proceed with the implementation-first approach. When you select it, Copilot Chat:
 
     - Switches to the **implementer** agent.
     - Carries over the conversation history, including the full plan.
     - Pre-fills the prompt text: "Implement the plan outlined above..."
+
+    > **NOTE**: The "Write Tests First" button is available if you prefer a test-driven development approach. It sends a different prompt to the Implementer that focuses on creating unit tests before production code. For this exercise, you'll use "Start Implementation" to proceed with the main workflow.
 
 1. Review the pre-filled prompt and select **Send** (or press **Enter**) to submit it.
 
@@ -797,11 +838,11 @@ Use the following steps to complete this task:
 In this exercise, you successfully configured and customized GitHub Copilot in Visual Studio Code for the ContosoInventory C# Web API project. You:
 
 - **Imported and reviewed the ContosoInventory starter application** to understand the existing three-project architecture (Server, Client, Shared), Category feature implementation, and security configuration with role-based authorization.
-- **Created repository-level custom instructions** (`.github/copilot-instructions.md`) that embed your team's coding standards—naming conventions, architecture patterns, error handling, and documentation requirements—into every Copilot Chat interaction.
+- **Explored the `/init` shortcut** to auto-generate a starter instruction file, then **created repository-level custom instructions** (`.github/copilot-instructions.md`) with the client's specific coding standards—naming conventions, architecture patterns, error handling, and documentation requirements—embedded into every Copilot Chat interaction.
 - **Created path-specific instruction files** (`.github/instructions/*.instructions.md`) that provide targeted guidance for controllers and services, using `applyTo` glob patterns to match specific file locations.
-- **Created a reusable prompt file** (`.github/prompts/generate-api-docs.prompt.md`) that standardizes API documentation generation as a slash command, and tested it against the existing CategoriesController.
+- **Created a reusable prompt file** (`.github/prompts/generate-api-docs.prompt.md`) that standardizes API documentation generation as a slash command, using the `${file}` variable to pass the active editor file as context, and tested it against the existing CategoriesController.
 - **Defined three custom agents** (Planner, Implementer, and Reviewer) with tailored instructions, tool permissions, and behavioral guidelines for each development role.
-- **Configured handoffs** between agents to create a structured Planning → Implementation → Review workflow with developer oversight at each transition.
+- **Configured handoffs** between agents—including **multiple handoffs** on the Planner agent offering both implementation-first and test-first paths—to create a structured Planning → Implementation → Review workflow with developer oversight at each transition.
 - **Ran the complete chained workflow** to add a Product Inventory feature end-to-end, using the existing Category feature as a reference architecture. The agents collaborated to create a Product model with a CategoryId foreign key, DTOs, service interface and implementation, and a controller with authorization—all following the project's established coding standards.
 
 This pattern—embedding team knowledge in instruction files and orchestrating specialized agents through handoffs—is applicable to any development project. You can adapt these techniques for other scenarios such as Test-Driven Development (Test Writer → Implementer), debugging workflows (Debugger → Patcher → Tester), or migration projects (Analyzer → Upgrader → Reviewer).

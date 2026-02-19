@@ -1,4 +1,4 @@
-GitHub Copilot provides helpful code suggestions and chat responses right away, but default suggestions don't automatically align with your team's unique coding standards, architectural decisions, or project-specific requirements. Customizing Copilot bridges this gap by embedding your team's knowledge directly into the AI's behavior, producing more relevant, accurate, and context-aware output.
+GitHub Copilot provides helpful code suggestions and chat responses right away, but default suggestions don't automatically align with your team's unique coding standards, architectural decisions, or project-specific requirements. Customizing GitHub Copilot bridges this gap by embedding your team's knowledge directly into the AI's behavior, producing more relevant, accurate, and context-aware output.
 
 ## Examine the benefits of customization
 
