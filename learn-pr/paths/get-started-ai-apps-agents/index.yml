@@ -32,5 +32,6 @@ modules:
 - learn.wwl.get-started-with-ai-in-azure
 - learn.wwl.get-started-with-generative-ai-and-agents
 - learn.wwl.get-started-with-text-analysis-in-azure
+- learn.wwl.get-started-with-speech-in-azure
 trophy:
   uid: learn.get-started-ai-apps-agents.trophy

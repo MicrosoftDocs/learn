@@ -21,3 +21,7 @@ Here are some links to more information about the subjects we discussed in this 
 - [Release Drafter app](https://github.com/apps/release-drafter?azure-portal=true)
 - [Git cherry-pick documentation](https://git-scm.com/docs/git-cherry-pick?azure-portal=true)
 - [Semantic Versioning 2.0.0](https://semver.org/?azure-portal=true)
+
+## Provide feedback
+
+Use this [issue form](https://github.com/githubpartners/microsoft-learn/issues/new/choose) to provide content feedback or suggested changes for this Microsoft Learn module. GitHub maintains this content and a team member will triage the request. Thank you for taking the time to improve our content!

@@ -10,9 +10,9 @@ This module explains how AI applications and agents can interpret written inform
 
 Throughout the module, you explored how to integrate Azure Language directly into your own applications using the Azure Language SDK, enabling programmatic access to these text analysis features. You also learned how to extend AI agents with Azure Language capabilities by connecting them to the Azure Language MCP server, allowing agents to perform language tasks as part of their automated workflows.
 
+::: zone-end
+
 Use the links below to learn more: 
 
 - [View the Azure Text Analytics client library](/python/api/overview/azure/ai-textanalytics-readme)
 - [Read about about Azure Language in Foundry Tools](/azure/ai-services/language-service/overview)
-
-::: zone-end
