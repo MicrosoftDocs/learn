@@ -1,0 +1,36 @@
+### YamlMime:Module
+uid: learn.wwl.get-started-with-ai-in-azure
+metadata:
+  title: Get started with AI in Azure
+  description: "This module introduces Azure and its capabilities for building AI solutions. Explore the key features and benefits of using Microsoft Foundry for AI development."
+  ms.date: 02/03/2026
+  author: sherzyang
+  ms.author: sheryang
+  ms.topic: module-concept
+  ms.service: azure-ai-foundry
+title: Get started with AI in Azure
+summary: "Learn how Microsoft enables you to build AI with the latest technology, securely, and at scale."
+abstract: Get started with AI in Azure
+prerequisites: Ability to navigate the Azure portal
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- ai-engineer
+- data-scientist
+- developer
+- solution-architect
+- student
+products:
+- azure-ai-foundry
+units:
+- learn.wwl.get-started-with-ai-in-azure.introduction
+- learn.wwl.get-started-with-ai-in-azure.what-is-azure
+- learn.wwl.get-started-with-ai-in-azure.develop-ai-apps
+- learn.wwl.get-started-with-ai-in-azure.microsoft-foundry
+- learn.wwl.get-started-with-ai-in-azure.endpoints
+- learn.wwl.get-started-with-ai-in-azure.exercise
+- learn.wwl.get-started-with-ai-in-azure.knowledge-check
+- learn.wwl.get-started-with-ai-in-azure.summary
+badge:
+  uid: learn.wwl.get-started-with-ai-in-azure.badge

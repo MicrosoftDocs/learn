@@ -4,10 +4,10 @@ title: Design solutions that align to a Zero Trust rapid modernization plan
 metadata:
   title: Design solutions that align to a Zero Trust rapid modernization plan
   description: "SC-100 preparatory content on topic: Design solutions that align to a Zero Trust rapid modernization plan (RaMP)."
-  ms.date: 01/23/2026
+  ms.date: 02/07/2026
   author: ceperezb
   ms.author: ceperezb
   ms.topic: unit
-durationInMinutes: 7
+durationInMinutes: 11
 content: |
   [!include[](includes/3b-design-solutions-rapid-modernization-plan.md)]

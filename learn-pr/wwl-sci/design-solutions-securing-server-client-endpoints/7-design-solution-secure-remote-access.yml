@@ -3,11 +3,11 @@ uid: learn.wwl.design-solutions-securing-server-client-endpoints.design-solution
 title: Design a solution for secure remote access 
 metadata:
   title: Design a solution for secure remote access 
-  description: "SC-100 preparatory unit on the topic: Design a solution for secure remote access."
-  ms.date: 3/15/2023
+  description: Learn how to design secure remote access to virtual machines in Azure landing zones using Azure Bastion, just-in-time access, and hybrid connectivity options.
+  ms.date: 02/07/2026
   author: ceperezb
   ms.author: ceperezb
   ms.topic: unit
-durationInMinutes: 10
+durationInMinutes: 8
 content: |
   [!include[](includes/7-design-solution-secure-remote-access.md)]

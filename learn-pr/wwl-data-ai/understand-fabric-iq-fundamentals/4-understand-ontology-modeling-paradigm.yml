@@ -1,0 +1,14 @@
+### YamlMime: ModuleUnit
+uid: learn.wwl.understand-fabric-iq-fundamentals.understand-ontology-modeling-paradigm
+title: Understand the ontology modeling paradigm
+metadata:
+  title: Understand the Ontology Modeling Paradigm
+  description: Learn how ontology modeling differs from traditional analytical data modeling by starting with business concepts and relationships rather than designing tables for specific use cases.
+  ms.date: 02/09/2026
+  author: theresa-i
+  ms.author: theresai
+  ms.topic: unit
+  ai-usage: ai-generated
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-understand-ontology-modeling-paradigm.md)]

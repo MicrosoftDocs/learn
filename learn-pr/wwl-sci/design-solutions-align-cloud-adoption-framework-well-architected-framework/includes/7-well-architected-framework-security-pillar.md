@@ -32,7 +32,7 @@ Cloud providers must be compliant with the same IT regulatory requirements as th
 
 **Shared Responsibility Model:** As computing environments move from customer-controlled datacenters to the cloud, the responsibility of security also shifts. Security of the operational environment is now a concern shared by both cloud providers and customers. Organizations can reduce focus on activities that aren't core business competencies by shifting these responsibilities to a cloud service like Azure. Depending on the specific technology choices, some security protections are built into the particular service, while addressing others remains the customer's responsibility. To ensure that proper security controls are provided, organizations must carefully evaluate the services and technology choices.
 
-![Diagram showing shared responsibility and key strategies.](../media/shared-resp-color.png)
+:::image type="content" source="../media/shared-responsibility-model.png" alt-text="Diagram showing shared responsibility and key strategies." lightbox="../media/shared-responsibility-model.png":::
 
 **Shared Responsibility and Key Strategies:**
 

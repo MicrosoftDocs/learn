@@ -3,11 +3,11 @@ uid: learn.wwl.design-solutions-secure-microsoft-365.evaluate-data-security-comp
 title:  Evaluate data security and compliance controls in Microsoft Copilot for Microsoft 365 services
 metadata:
   title:  Evaluate data security and compliance controls in Microsoft Copilot for Microsoft 365 services
-  description: "SC-100 preparatory unit on the topic: Evaluate data security and compliance controls in Microsoft Copilot for Microsoft 365 services."
-  ms.date: 5/21/2024
+  description: "Evaluate data security and compliance controls for Microsoft 365 Copilot, including sensitivity labels, DLP, Insider Risk Management, auditing, eDiscovery, retention, and DSPM for AI."
+  ms.date: 02/09/2026
   author: ceperezb
   ms.author: ceperezb
   ms.topic: unit
-durationInMinutes: 10
+durationInMinutes: 9
 content: |
   [!include[](includes/5-evaluate-data-security-compliance-copilot.md)]

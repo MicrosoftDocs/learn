@@ -1,13 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.design-solutions-identity-access-management.design-cloud-hybrid-multi-cloud-access-strategies
-title: Design cloud, hybrid, and multicloud access strategies
+title: Design a solution for access to SaaS, PaaS, IaaS, hybrid, and multicloud resources
 metadata:
-  title: Design cloud, hybrid, and multicloud access strategies
-  description: "Design access strategies for SaaS, PaaS, IaaS, hybrid, and multicloud environments using Microsoft Entra ID."
-  ms.date: 01/30/2026
+  title: Design a solution for access to SaaS, PaaS, IaaS, hybrid, and multicloud resources
+  description: "Design access strategies for SaaS, PaaS, IaaS, hybrid, and multicloud resources using identity, networking, and application controls."
+  ms.date: 02/07/2026
   author: ceperezb
   ms.author: ceperezb
   ms.topic: unit
-durationInMinutes: 7
+durationInMinutes: 8
 content: |
   [!include[](includes/2-design-cloud-hybrid-multi-cloud-access-strategies.md)]

@@ -1,13 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.design-solutions-security-posture-management-hybrid-multicloud-environments.summary
-title: Summary - Design solutions for security posture management in hybrid and multicloud environments
+title: Summary
 metadata:
-  title: Summary - Design solutions for security posture management in hybrid and multicloud environments
+  title: Summary
   description: "Summary of the module on the topic: design solutions for security posture management in hybrid and multicloud environments."
-  ms.date: 3/14/2023
+  ms.date: 02/05/2026
   author: ceperezb
   ms.author: ceperezb
   ms.topic: unit
-durationInMinutes: 3
+durationInMinutes: 2
 content: |
   [!include[](includes/11-summary.md)]

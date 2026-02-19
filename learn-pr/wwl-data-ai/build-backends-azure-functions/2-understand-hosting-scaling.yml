@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.build-backends-azure-functions.understand-hosting-scaling
+title: Understand Azure Functions hosting and scaling for AI workloads
+metadata:
+  title: Understand Azure Functions Hosting and Scaling for AI Workloads
+  description: Understand Azure Functions hosting and scaling for AI workloads
+  ms.date: 02/13/2026
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: unit
+durationInMinutes: 12
+content: |
+  [!include[](includes/2-understand-hosting-scaling.md)]

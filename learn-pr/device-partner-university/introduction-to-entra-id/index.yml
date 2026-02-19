@@ -39,7 +39,7 @@ units:
   - learn.dpu.introduction-to-entra-id.recommendations
   - learn.dpu.introduction-to-entra-id.security-defaults
   - learn.dpu.introduction-to-entra-id.identity-secure-score
-  - learn.dpu.introduction-to-entra-id.entra-id-autopilot
+  - learn.dpu.introduction-to-entra-id.tenant-id
   - learn.dpu.introduction-to-entra-id.device-identities
   - learn.dpu.introduction-to-entra-id.how-use-entra-id
   - learn.dpu.introduction-to-entra-id.knowledge-check

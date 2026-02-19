@@ -26,3 +26,7 @@ For more information on Responsible AI, check out these resources:
 
 - [Microsoft Responsible AI Transparency Report](https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/msc/documents/presentations/CSR/Responsible-AI-Transparency-Report-2024.pdf)
 - [Responsible AI at Microsoft](https://www.microsoft.com/ai/responsible-ai)
+
+## Provide feedback
+
+Use this [issue form](https://github.com/githubpartners/microsoft-learn/issues/new/choose) to provide content feedback or suggested changes for this Microsoft Learn module. GitHub maintains this content and a team member will triage the request. Thank you for taking the time to improve our content!

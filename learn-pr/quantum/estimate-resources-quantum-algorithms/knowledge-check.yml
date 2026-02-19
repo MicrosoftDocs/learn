@@ -30,27 +30,27 @@ quiz:
       isCorrect: true
       explanation: "Correct. With resource estimation, you can understand how many qubits you need, how long a quantum algorithm takes to run, and which qubit technologies are better to solve a specific problem."
 
-  - content: 'The Azure Quantum Resource Estimator takes a physical qubit model, `qubitParams`, as a target parameter. Which of the following statements is true?'
+  - content: 'The Microsoft Quantum resource estimator takes a physical qubit model, `qubitParams`, as a target parameter. Which of the following statements is true?'
     choices:
     - content: 'You can pick from six predefined qubit models, and each of their values can be updated. You can modify existing models and create new ones.'
       isCorrect: true
-      explanation: 'Correct. The Resource Estimator provides four gate-based and two Majorana-based qubit models. You can customize the models by specifying the name of the qubit model and updating any of the values.'
+      explanation: 'Correct. The resource estimator provides four gate-based and two Majorana-based qubit models. You can customize the models by specifying the name of the qubit model and updating any of the values.'
     - content: 'You can pick from two predefined qubit models, the surface code and the Floquet code.'
       isCorrect: false
-      explanation: 'The Resource Estimator provides four gate-based and two Majorana-based qubit models. Surface and Floquet code are QEC codes.'
+      explanation: 'The resource estimator provides four gate-based and two Majorana-based qubit models. Surface and Floquet code are QEC codes.'
     - content: "You can pick from six predefined qubit models, but you can't customize their parameters."
       isCorrect: false
       explanation: 'You can customize the predefined qubit models by specifying the name of the qubit model and updating any of the values.'
       
-  - content: 'The Resource Estimator evaluates the resource estimates for a quantum algorithm. What is the output of the Resource Estimator?'
+  - content: 'The resource estimator evaluates the resource estimates for a quantum algorithm. What is the output of the resource estimator?'
     choices:
-    - content: 'The Resource Estimator outputs the estimated economic cost of running the algorithm and its runtime.'
+    - content: 'The resource estimator outputs the estimated economic cost of running the algorithm and its runtime.'
       isCorrect: false
-      explanation: "The Resource Estimator doesn't estimate how much money an algorithm would cost to run."
-    - content: "The Resource Estimator outputs the number of physical qubits and the runtime of a quantum algorithm for each of the quantum hardware providers that are available in Azure Quantum."
+      explanation: "The resource estimator doesn't estimate how much money an algorithm would cost to run."
+    - content: "The resource estimator outputs the number of physical qubits and the runtime of a quantum algorithm for each of the quantum hardware providers that are available in Azure Quantum."
       isCorrect: false
-      explanation: "The Resource Estimator doesn't compare quantum hardware providers."
-    - content: "The Resource Estimator outputs physical and logical estimates, such as the number of rotation gates, number of qubits, QEC estimates, T factory parameters, and total runtime."
+      explanation: "The resource estimator doesn't compare quantum hardware providers."
+    - content: "The resource estimator outputs physical and logical estimates, such as the number of rotation gates, number of qubits, QEC estimates, T factory parameters, and total runtime."
       isCorrect: true
-      explanation: "Correct. The Resource Estimator computes pre-layout and post-layout logical and physical estimations for a given qubit technology and error correction scheme."
+      explanation: "Correct. The resource estimator computes pre-layout and post-layout logical and physical estimations for a given qubit technology and error correction scheme."
 

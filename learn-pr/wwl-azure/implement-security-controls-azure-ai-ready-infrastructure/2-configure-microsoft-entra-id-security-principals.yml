@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-security-controls-azure-ai-ready-infrastructure.configure-microsoft-entra-id-security-principals
+title: "Configure Microsoft Entra ID security principals"
+metadata:
+  title: "Configure Microsoft Entra ID Security Principals"
+  description: "Learn how to configure Microsoft Entra ID security principals to manage access for users, groups, and services in Azure AI environments."
+  ms.date: 02/09/2026
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: unit
+durationInMinutes: 12
+content: |
+  [!include[](includes/2-configure-microsoft-entra-id-security-principals.md)]

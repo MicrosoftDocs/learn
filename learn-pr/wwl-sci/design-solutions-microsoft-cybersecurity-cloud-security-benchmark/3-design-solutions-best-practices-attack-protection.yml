@@ -4,10 +4,10 @@ title: Design solutions with best practices for protecting against insider, exte
 metadata:
   title: Design solutions with best practices for protecting against insider, external, and supply chain attacks
   description: "SC-100 preparatory content on topic: Design solutions with best practices for protecting against insider, external, and supply chain attacks."
-  ms.date: 09/26/2024
+  ms.date: 02/07/2026
   author: ceperezb
   ms.author: ceperezb
   ms.topic: unit
-durationInMinutes: 9
+durationInMinutes: 8
 content: |
   [!include[](includes/3-design-solutions-best-practices-attack-protection.md)]

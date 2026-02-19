@@ -1,6 +1,6 @@
 Single sign-on (SSO) enables users to authenticate once and gain access to multiple applications without repeated credential entry. This approach simplifies access and reduces password fatigue, contributing to improved security and user efficiency.
 
-Multifactor authentication (MFA) enhances security by requiring two or more verification factors during sign-in. For example, users may be prompted to provide both a password and a biometric identifier or a time-based code from an authenticator application. MFA mitigates risks associated with compromised credentials by enforcing additional verification steps.
+Multifactor authentication (MFA) enhances security by requiring two or more verification factors during sign-in. For example, users might enter a password and then confirm the sign-in using the Microsoft Authenticator app on their smartphone or a FIDO2 security key, or a biometric factor such as a fingerprint or facial recognition. MFA helps reduce the risk of compromised credentials by requiring additional verification beyond a username and password.
 
 Microsoft Entra ID supports passwordless authentication through alternative methods such as biometrics via Windows Hello for Business, time-based codes from the Microsoft Authenticator app, and FIDO2 security keys. These methods reduce reliance on passwords and lower the risk of credential theft.
 

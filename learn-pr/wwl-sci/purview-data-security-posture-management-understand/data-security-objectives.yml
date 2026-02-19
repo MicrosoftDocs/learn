@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-data-security-posture-management-understand.data-security-objectives
+title: Data security objectives as the organizing model
+metadata:
+  title: Data security objectives as the organizing model
+  description: "Data security objectives as the organizing model"
+  ms.date: 02/03/2026
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/data-security-objectives.md)]

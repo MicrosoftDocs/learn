@@ -8,7 +8,18 @@ It's tempting to scope policies broadly across all locations to ensure coverage.
 
 Different locations support different kinds of data movement. Email, collaboration sites, file storage, and endpoints often expose data in different ways.
 
-This view highlights how many locations a single policy can cover, which is why scoping decisions should be intentional.
+In Microsoft Purview, DLP policies can be scoped to locations like:
+
+- Exchange email
+- SharePoint sites
+- OneDrive accounts
+- Microsoft Teams messages
+- Devices through Endpoint DLP
+- Browser-based activity in supported browsers
+
+Available conditions and enforcement actions vary by location, which is why scoping decisions directly affect how a policy behaves.
+
+This page shows how those locations appear during policy creation, with each location scoped independently.
 
 :::image type="content" source="../media/policy-scope-page.png" alt-text="Screenshot of the Microsoft Purview DLP policy location selection page with multiple locations selected." lightbox="../media/policy-scope-page.png":::
 
@@ -19,6 +30,8 @@ Effective scoping starts by asking:
 - Where enforcement would provide meaningful protection
 
 Scoping to the locations that matter most reduces noise and makes results easier to interpret.
+
+In practice, overly broad scope often shows up as alerts across many unrelated workflows or locations. When results span activities that don't share a common risk pattern, scope is usually too wide to interpret meaningfully.
 
 ## Scope users, groups, and workloads intentionally
 
@@ -34,13 +47,13 @@ Starting with a narrower scope makes it easier to understand policy behavior bef
 
 ## Use pilot scopes to validate assumptions
 
-Pilot scoping isn't just a rollout tactic. It's a design tool.
-
-Applying a policy to a limited group allows you to:
+Pilot scoping helps shape policy design. Applying a policy to a limited group allows you to:
 
 - Confirm detection behaves as expected
 - Observe real usage patterns
 - Identify unexpected enforcement outcomes
+
+A pilot scope has usually done its job when results are predictable and understandable, even if they aren't perfect. If alerts consistently reflect the scenarios you expected, expanding scope becomes a design choice rather than a guess.
 
 Pilot scopes are most effective when paired with simulation, allowing you to evaluate results before enforcing restrictions more broadly.
 
@@ -54,6 +67,8 @@ Exclusions can help:
 - Prevent duplicate alerts
 - Reduce friction in low-risk scenarios
 
+Exclusions that repeat across multiple policies often indicate a shared low-risk workflow rather than a detection problem.
+
 Clear inclusion and exclusion patterns keep policies focused on the behavior you actually want to address.
 
 ## Avoid overly broad scope
@@ -65,6 +80,8 @@ When a policy applies everywhere and to everyone:
 - Results are harder to interpret
 - False positives increase
 - User trust in enforcement decreases
+
+Broad scope isn't always a mistake. Scope can be intentionally broad when enforcement outcomes are consistent and well understood. Problems arise when scope is broad by default rather than by design.
 
 Effective policies balance coverage with precision. Expanding scope should be a deliberate decision, not a default.
 

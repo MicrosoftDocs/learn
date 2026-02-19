@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.wwl.recognize-synthesize-speech
 metadata:
-  title: Get started with speech in Microsoft Foundry
+  title: (AI-900) Get started with speech in Microsoft Foundry
   description: "Learn how to use Azure Speech in Foundry Tools to recognize and synthesize speech."
   ms.date: 8/28/2025
   ms.update-cycle: 180-days
@@ -13,7 +13,7 @@ metadata:
   - N/A
   ms.service: azure-ai-speech
   ai-usage: ai-assisted
-title: Get started with speech in Microsoft Foundry
+title: (AI-900) Get started with speech in Microsoft Foundry
 summary: Learn how to recognize and synthesize speech by using Azure Speech in Foundry Tools.
 abstract: |
   In this module you will:

@@ -4,8 +4,8 @@ metadata:
   title: Migrate very large databases (VLDB) to Azure for SAP
   description: "This module explores migration of databases over 20 TB, considered very large databases, and the required techniques and procedures to achieve a migration from on-premises to Azure within an acceptable downtime and with minimized risk. Prepare for Exam AZ-120 Planning and Administering Microsoft Azure for SAP Workloads."
   ms.date: 08/01/2024
-  author: wwlpublish
-  ms.author: eric
+  author: bradjoseph
+  ms.author: bradj
   ms.topic: module
   ms.custom:
   - N/A
@@ -50,4 +50,4 @@ units:
 - learn.wwl.migrate-very-large-databases-vldb-to-azure.knowledge-check
 - learn.wwl.migrate-very-large-databases-vldb-to-azure.summary
 badge:
-  uid: learn.wwl.migrate-very-large-databases-vldb-to-azure.badge
+  uid: learn.wwl.migrate-very-large-databases-vldb-to-azure.badge

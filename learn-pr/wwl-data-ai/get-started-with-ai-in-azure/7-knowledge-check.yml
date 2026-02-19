@@ -1,0 +1,61 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-started-with-ai-in-azure.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "This unit provides a knowledge check to assess your understanding of the concepts covered in the previous units. Test your knowledge of Azure and its capabilities for AI development."
+  ms.date: 02/03/2026
+  author: sherzyang
+  ms.author: sheryang
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+quiz:
+  questions:
+  - content: "Which statement best explains the relationship between AI and ML?"
+    choices:
+    - content: "AI and ML are interchangeable terms; both refer to systems that mimic human intelligence without distinction."
+      isCorrect: false
+      explanation: "AI and ML aren't interchangeable. AI is the broader concept, while ML is one of the primary techniques used to achieve AI."
+    - content: "ML focuses exclusively on generative tasks like creating text and images, whereas AI is limited to decision-making and planning."
+      isCorrect: false
+      explanation: "ML isn't limited to generative tasks. AI also encompasses more than decision-making—it includes perception, reasoning, and language understanding."
+    - content: "AI is the overarching goal of creating systems that exhibit human-like intelligence, while ML is a data-driven method used to achieve AI by learning patterns from data."
+      isCorrect: true
+      explanation: "AI aims to mimic human intelligence, and ML enables AI by using algorithms that learn from data without explicit programming."
+  - content: "How does Microsoft Foundry relate to Azure?"
+    choices:
+    - content: "Foundry is built on top of Azure and uses Azure resources such as compute, networking, identity, and security to host and operate AI applications."
+      isCorrect: true
+      explanation: "Foundry is an enterprise-grade platform built on Azure, using Azure’s compute, networking, identity (Entra ID), security, and resource management. You can't run Foundry without Azure."
+    - content: "Foundry runs independently from Azure and doesn't require Azure resources to deploy models or agents."
+      isCorrect: false
+      explanation: "Foundry doesn't operate independently—its deployments, security, and hosting all rely on Azure resource infrastructure."
+    - content: "Foundry replaces Azure services entirely, serving as a standalone cloud platform for running AI workloads."
+      isCorrect: false
+      explanation: "Foundry doesn't replace Azure; it extends Azure specifically for AI agents and applications."
+  - content: "Which statement best describes how keys, secrets, and endpoints work together in an Azure‑based AI application?"
+    choices:
+    - content: "The key is the location where model responses are stored, and the endpoint retrieves those responses from Azure Key Vault."
+      isCorrect: false
+      explanation: "Keys don't store model responses, and endpoints don't retrieve data from Key Vault. Key Vault stores secrets, not model outputs."
+    - content: "The endpoint stores sensitive values for an AI application, and the key determines how much data the endpoint can return."
+      isCorrect: false
+      explanation: "Endpoints don't store secrets. They expose model deployments. Keys don't determine “how much data” is returned—they authenticate access."
+    - content: "The endpoint is a URL for calling a deployed model, and the key (stored as a secret in Azure Key Vault) authenticates the request made to that endpoint."
+      isCorrect: true
+      explanation: "An endpoint is the URL used to call a deployed model. A key is a type of secret that authenticates the request. Keys and secrets should be stored in Azure Key Vault, not in code. The application retrieves the secret at runtime and uses it to securely call the endpoint."
+  - content: "Which statement best describes a client application in the context of an AI solution built with Foundry?"
+    choices:
+    - content: "A client application is the environment that hosts the model, runs inference, and returns results."
+      isCorrect: false
+      explanation: "This describes the server or model deployment, not the client."
+    - content: "A client application is a program the user interacts with—such as a web app or mobile app—that sends requests to a model endpoint and displays the response."
+      isCorrect: true
+      explanation: "A client application is the user-facing program (web, mobile, desktop, CLI) that collects input, sends it to the model endpoint, and shows the result."
+    - content: "A client application is a standalone Azure service that automatically generates API keys for model deployments."
+      isCorrect: false
+      explanation: "Client apps don't generate keys; keys come from Azure/Foundry resources."
+
+  
+  

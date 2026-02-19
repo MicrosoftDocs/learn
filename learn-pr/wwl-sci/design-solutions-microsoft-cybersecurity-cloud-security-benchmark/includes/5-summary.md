@@ -31,3 +31,8 @@ In this module, you learned how to:
 - [MCSB v2 AI Security Controls](/security/benchmark/azure/mcsb-ai-security)
 - [Security for AI](/security/ai/)
 - [Zero Trust Rapid Modernization Plan](/security/zero-trust/zero-trust-ramp-overview)
+- [What is Zero Trust?](/security/zero-trust/zero-trust-overview)
+- [Zero Trust adoption framework overview](/security/zero-trust/adopt/zero-trust-adoption-overview)
+- [Rapidly modernize your security posture](/security/zero-trust/adopt/rapidly-modernize-security-posture)
+- [Zero Trust deployment for technology pillars](/security/zero-trust/deploy/overview)
+- [Securing identity with Zero Trust](/security/zero-trust/deploy/identity)

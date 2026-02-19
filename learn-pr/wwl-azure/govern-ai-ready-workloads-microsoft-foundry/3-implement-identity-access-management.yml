@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.govern-ai-ready-workloads-microsoft-foundry.implement-identity-access-management
+title: "Implement identity and access management for AI workloads"
+metadata:
+  title: "Implement Identity and Access Management for AI Workloads"
+  description: "Learn about implement identity and access management for AI workloads."
+  ms.date: 02/02/2026
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: unit
+durationInMinutes: 11
+content: |
+  [!include[](includes/3-implement-identity-access-management.md)]

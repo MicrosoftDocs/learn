@@ -1,0 +1,46 @@
+### YamlMime:Module
+uid: learn.wwl.implement-vector-search-azure-cosmos-db
+metadata:
+  title: Implement Vector Search on Azure Cosmos DB for NoSQL
+  description: Learn how to implement vector search capabilities in Azure Cosmos DB for NoSQL to build AI applications that perform semantic similarity queries.
+  ms.date: 02/05/2026
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: module-standard-task-based
+  ai-usage: ai-assisted
+  ms.service: azure-cosmos-db
+title: Implement vector search on Azure Cosmos DB for NoSQL
+summary: Learn how to store vector embeddings, execute similarity queries using the VectorDistance function, combine vector search with metadata filters and hybrid search, and use the change feed to keep embeddings synchronized.
+abstract: |
+  After completing this module, you'll be able to:
+    - Store and retrieve vector embeddings in Azure Cosmos DB containers with properly configured vector policies
+    - Execute vector similarity queries using the VectorDistance function to find semantically similar documents
+    - Combine vector search with metadata filters and full-text search using hybrid queries
+    - Implement change feed processing to automatically refresh embeddings when source documents change
+prerequisites: |
+  Before beginning this module, you should have:
+  - Programming experience with languages such as Python, JavaScript, or C#
+  - Understanding of Azure Cosmos DB for NoSQL containers, items, and indexing policies
+  - Familiarity with vector embeddings and their role in AI applications
+  - Experience calling embedding APIs such as Azure OpenAI
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- azure-cosmos-db
+subjects:
+- databases
+- artificial-intelligence
+units:
+- learn.wwl.implement-vector-search-azure-cosmos-db.introduction
+- learn.wwl.implement-vector-search-azure-cosmos-db.store-retrieve-embeddings
+- learn.wwl.implement-vector-search-azure-cosmos-db.execute-vector-similarity-queries
+- learn.wwl.implement-vector-search-azure-cosmos-db.combine-vector-metadata-filtering
+- learn.wwl.implement-vector-search-azure-cosmos-db.change-feed-trigger-embedding-refresh
+- learn.wwl.implement-vector-search-azure-cosmos-db.exercise-build-semantic-search
+- learn.wwl.implement-vector-search-azure-cosmos-db.knowledge-check
+- learn.wwl.implement-vector-search-azure-cosmos-db.summary
+badge:
+  uid: learn.wwl.implement-vector-search-azure-cosmos-db.badge

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.protect-govern-ai-ready-infrastructure-azure.implement-responsible-safeguards-content-filter
+title: "Implement responsible AI safeguards and content filtering"
+metadata:
+  title: "Implement responsible AI safeguards and content filtering"
+  description: "Implement responsible AI safeguards and content filtering."
+  ms.date: 02/03/2026
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: unit
+durationInMinutes: 12
+content: |
+  [!include[](includes/4-implement-responsible-safeguards-content-filter.md)]

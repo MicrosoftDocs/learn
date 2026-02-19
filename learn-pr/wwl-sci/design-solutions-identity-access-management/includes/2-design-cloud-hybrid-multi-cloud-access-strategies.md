@@ -1,91 +1,103 @@
-As organizations adopt cloud services across SaaS, PaaS, and IaaS models while maintaining on-premises infrastructure, security architects must design identity solutions that provide secure, consistent access across all environments. This unit provides guidance for designing access strategies that span cloud, hybrid, and multicloud scenarios.
+Organizations today operate across SaaS, PaaS, IaaS, hybrid, and multicloud environments. Securing access to resources in these diverse environments requires a coordinated strategy that addresses three control planes: identity, networking, and application controls. This unit helps you design access solutions that apply Zero Trust principles across all deployment models.
 
-## Access strategy design considerations
+## Design considerations for access across deployment models
 
-When designing access strategies, consider the level of integration required with existing identity infrastructure:
+Each deployment model presents distinct access challenges. Your access strategy should address how users and workloads authenticate, how network traffic reaches resources, and how applications enforce authorization.
 
-| Scenario | Characteristics | Design Approach |
-|----------|----------------|-----------------|
-| **Cloud-only** | No on-premises directory; cloud-native workloads | Microsoft Entra ID as the sole identity provider |
-| **Hybrid** | Existing on-premises AD; mix of cloud and on-premises resources | Directory synchronization with Microsoft Entra Connect |
-| **Multicloud** | Resources across Azure, AWS, GCP, and other clouds | Federated identity with Microsoft Entra ID as primary provider |
+| Deployment model | Identity controls | Networking controls | Application controls |
+|-----------------|-------------------|--------------------|--------------------|
+| **SaaS** | SSO federation, Conditional Access | Secure Web Gateway, tenant restrictions | Cloud Access Security Broker (CASB), app consent policies |
+| **PaaS** | Managed identities, RBAC | Private endpoints, VNet integration | API authentication, token validation |
+| **IaaS** | Entra ID authentication, PIM | NSGs, Azure Firewall, Private Link | Application Proxy, host-based controls |
+| **Hybrid/on-premises** | Directory synchronization, federation | VPN/ExpressRoute, Private Access | Application Proxy, Kerberos constrained delegation |
+| **Multicloud** | Federated identity, workload identity federation | Cross-cloud network peering, Internet Access | Conditional Access across cloud providers |
 
-Your access strategy should address authentication methods, authorization models, and the principle of least privilege across all environments.
+## Identity controls
 
+Identity controls determine who or what can access resources and under what conditions.
 
-## Designing for SaaS application access
+### User identity
 
-SaaS applications require secure authentication without exposing credentials to third parties. Design your SaaS access strategy to:
+Use Microsoft Entra ID as the primary identity provider across all environments. Key design decisions include:
 
-- **Integrate applications with Microsoft Entra ID** - Use SAML, OAuth 2.0, or OpenID Connect for single sign-on (SSO)
-- **Enforce Conditional Access** - Apply policies based on user risk, device compliance, and location
-- **Implement application governance** - Use Microsoft Defender for Cloud Apps to discover shadow IT and govern sanctioned applications
+- **Single sign-on (SSO)** for SaaS applications using SAML, OAuth 2.0, or OpenID Connect. Microsoft Entra ID provides a gallery of preintegrated applications and supports custom app registrations.
+- **Azure role-based access control (RBAC)** for authorization to PaaS and IaaS resources. Assign roles at the narrowest scope necessary.
+- **Privileged Identity Management (PIM)** for just-in-time access to sensitive roles, reducing standing administrative privileges.
+- **Conditional Access** policies that evaluate signals like user risk, device compliance, location, and application sensitivity before granting access.
 
-Microsoft Entra ID provides a gallery of pre-integrated applications and supports custom application registration for applications that support modern authentication protocols.
+### Workload identity
 
-## Designing for PaaS and IaaS access
+Applications, services, and automation pipelines also need identities. Design for:
 
-Platform and infrastructure services require both user and workload identity management. Key design considerations include:
+- **Managed identities** to eliminate credential management for Azure resources that access other Azure services.
+- **Workload identity federation** to enable external workloads, such as GitHub Actions or Kubernetes pods, to access Azure resources without storing secrets.
+- **Service principals with certificates** for automation scenarios that require explicit credential management. Avoid long-lived client secrets.
 
-### User access to Azure resources
+## Networking controls
 
-- Use Microsoft Entra ID for authentication to the Azure portal, CLI, and APIs
-- Implement Azure role-based access control (RBAC) for authorization
-- Apply Conditional Access policies to protect administrative access
-- Use Privileged Identity Management (PIM) for just-in-time privileged access
+Networking controls determine how traffic flows between users, devices, and resources. Microsoft Entra's Security Service Edge (SSE) solution, called Global Secure Access, provides identity-aware network security.
 
-### Workload identity access
+### Microsoft Entra Internet Access
 
-Applications and services need identities to access other resources. Design for:
+Microsoft Entra Internet Access is an identity-based Secure Web Gateway (SWG) that protects access to SaaS applications and internet destinations. Use it to:
 
-- **Managed identities** - Eliminate credential management for Azure resources accessing other Azure services
-- **Workload identity federation** - Enable external workloads (GitHub Actions, Kubernetes) to access Azure resources without storing secrets
-- **Service principals** - Use for automation scenarios requiring explicit credential management
+- Apply web content filtering based on categories or fully qualified domain names (FQDNs).
+- Enforce Conditional Access policies for internet traffic, even for destinations not federated with Microsoft Entra ID.
+- Enable universal tenant restrictions to prevent data exfiltration to unauthorized tenants or personal accounts.
 
-## Designing for hybrid environments
+### Microsoft Entra Private Access
 
-When your organization maintains both on-premises Active Directory and cloud resources, you need directory synchronization to provide a consistent identity experience.
+Microsoft Entra Private Access replaces traditional VPNs with Zero Trust Network Access (ZTNA). Use it to:
 
-### Microsoft Entra Connect Sync
+- Provide per-app access to on-premises and IaaS-hosted private applications based on Conditional Access policies.
+- Eliminate broad network access by routing only authorized traffic to specific applications.
+- Secure access across hybrid and multicloud environments without requiring users to connect to corporate networks.
 
-Microsoft Entra Connect Sync synchronizes users, groups, and credentials between on-premises AD and Microsoft Entra ID. Design your synchronization strategy to:
+### Additional network controls
 
-- Determine which objects to synchronize based on organizational structure
-- Choose the appropriate authentication method (password hash sync, pass-through authentication, or federation)
-- Plan for high availability using multiple provisioning agents
+For PaaS and IaaS resources, layer network controls alongside identity controls:
 
-Password hash synchronization provides the simplest deployment and enables features like leaked credential detection. Pass-through authentication keeps password validation on-premises, while federation with AD FS supports complex scenarios requiring on-premises policy evaluation.
+- **Azure Private Link and private endpoints** to ensure traffic to PaaS services stays on the Microsoft backbone network.
+- **Network security groups (NSGs)** and **Azure Firewall** to limit inbound and outbound traffic for IaaS workloads.
+- **ExpressRoute or site-to-site VPN** for dedicated connectivity between on-premises networks and Azure.
 
-### Legacy application support
+## Application controls
 
-Some applications require legacy authentication protocols like Kerberos or NTLM. Consider these options for supporting legacy authentication in hybrid environments:
+Application controls govern what apps users can access and how those apps handle data.
 
-- **Microsoft Entra Domain Services** - Provides managed domain services (domain join, group policy, LDAP, Kerberos/NTLM) without deploying domain controllers
-- **Self-managed AD DS in Azure** - Deploy domain controllers in Azure VMs for full control over the directory
+### Microsoft Defender for Cloud Apps
 
-Microsoft Entra Domain Services is appropriate for lift-and-shift scenarios where applications need domain services but don't require direct access to domain controllers.
+Microsoft Defender for Cloud Apps provides CASB capabilities to secure SaaS usage. Use it to:
 
-## Designing for multicloud access
+- Discover shadow IT by identifying unsanctioned SaaS applications in use.
+- Apply session controls that restrict downloads, uploads, or copy/paste actions based on Conditional Access policies.
+- Monitor and govern sanctioned applications with real-time activity policies.
 
-Organizations using multiple cloud providers need consistent identity management. Design your multicloud strategy to:
+### Microsoft Entra Application Proxy
 
-- **Federate with Microsoft Entra ID** - Configure AWS, GCP, and other providers to trust Microsoft Entra ID as an identity provider
-- **Use Conditional Access** - Apply consistent access policies regardless of which cloud hosts the resource
-- **Implement cross-cloud governance** - Use Microsoft Entra Permissions Management to discover and remediate excessive permissions across clouds
+For on-premises web applications that can't be exposed directly to the internet, Application Proxy provides secure remote access. It integrates with Conditional Access to enforce MFA and device compliance checks for legacy web applications without modifying the application code.
 
-## Security principles and controls for access strategies
+### Application consent and permissions
 
-A Zero Trust approach provides the foundation for your access strategy design. Apply these principles and their corresponding security controls across all environments:
+Control which applications users can consent to by configuring app consent policies in Microsoft Entra ID. For applications that request high-privilege permissions, require admin consent to prevent users from inadvertently granting broad access to organizational data.
 
-| Zero Trust Principle | Security Controls |
-|---------------------|-------------------|
-| **Verify explicitly** | Require phishing-resistant MFA for all users; enforce Conditional Access based on user risk, device compliance, and location; block legacy authentication protocols |
-| **Use least privilege** | Implement Azure RBAC with minimal permissions; use Privileged Identity Management (PIM) for just-in-time privileged access; configure time-limited access for sensitive roles |
-| **Assume breach** | Enable sign-in and audit logs; integrate with Microsoft Sentinel for security monitoring; require compliant or hybrid-joined devices; configure session controls and sign-in frequency |
+## Access strategy for multicloud environments
 
-Beyond these core principles, consider these additional design guidelines:
+When resources span multiple cloud providers, establish Microsoft Entra ID as the central identity provider:
 
-- **Consolidate identity providers** - Use Microsoft Entra ID as the primary identity provider across cloud, hybrid, and multicloud environments to simplify governance and ensure consistent policy enforcement
-- **Plan authentication evolution** - Design for phishing-resistant authentication methods like passkeys and certificate-based authentication, even if you can't deploy them immediately
-- **Address legacy systems** - Identify applications that can't use modern authentication and plan appropriate solutions (Microsoft Entra Domain Services, federation, or application proxy)
-- **Enable visibility** - Ensure all authentication events across all environments flow to centralized logging for security monitoring and incident response
+- **Federate AWS accounts** with Microsoft Entra ID through AWS IAM Identity Center for SSO and automated user lifecycle management.
+- **Federate Google Cloud** projects by configuring Google as a service provider that trusts Microsoft Entra ID for authentication.
+- **Use Conditional Access** to enforce consistent authentication policies regardless of which cloud provider hosts the resource, requiring MFA, device compliance, and risk evaluation for every sign-in.
+- **Monitor cross-cloud permissions** using Microsoft Defender for Cloud to identify overprovisioned identities and enforce least privilege across Azure, AWS, and GCP.
+
+## Apply Zero Trust principles across all environments
+
+A Zero Trust approach provides the foundation for your access strategy. Apply these principles across all control planes:
+
+| Principle | How to apply |
+|-----------|-------------|
+| **Verify explicitly** | Require phishing-resistant MFA; enforce Conditional Access based on risk, device, and location; block legacy authentication |
+| **Use least privilege** | Implement RBAC with minimal permissions; use PIM for just-in-time access; right-size workload identity permissions |
+| **Assume breach** | Route traffic through Global Secure Access for inspection; integrate authentication events with Microsoft Sentinel; configure session controls and sign-in frequency |
+
+When you design your access strategy, ensure all authentication events across all environments flow to centralized logging for security monitoring and incident response.

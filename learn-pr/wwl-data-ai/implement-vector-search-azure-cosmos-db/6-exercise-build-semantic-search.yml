@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-vector-search-azure-cosmos-db.exercise-build-semantic-search
+title: Exercise - Build a semantic search application with Azure Cosmos DB for NoSQL
+metadata:
+  title: Exercise - Build a Semantic Search Application with Azure Cosmos DB for NoSQL
+  description: Exercise - Build a semantic search application with Azure Cosmos DB for NoSQL
+  ms.date: 02/05/2026
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: unit
+durationInMinutes: 30
+content: |
+  [!include[](includes/6-exercise-build-semantic-search.md)]

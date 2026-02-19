@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-vector-search-azure-cosmos-db.change-feed-trigger-embedding-refresh
+title: Use the change feed to trigger embedding refresh
+metadata:
+  title: Use the Change Feed to Trigger Embedding Refresh
+  description: Use the change feed to trigger embedding refresh
+  ms.date: 02/05/2026
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: unit
+durationInMinutes: 12
+content: |
+  [!include[](includes/5-change-feed-trigger-embedding-refresh.md)]

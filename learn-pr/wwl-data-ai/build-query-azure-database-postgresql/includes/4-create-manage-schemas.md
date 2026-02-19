@@ -89,7 +89,7 @@ CREATE INDEX idx_messages_conversation_created ON messages(conversation_id, crea
 
 The order of columns in a composite index matters. The index can satisfy queries that filter on the leading columns but not queries that filter only on trailing columns.
 
-Indexes improve read performance but come with costs. Every index consumes disk space and adds overhead to inserts, updates, and deletes. For AI applications that write frequently (storing every message, for example), be selective about which indexes you create. Monitor query performance and add indexes when you identify slow queries that would benefit. Advanced indexing strategies, including GIN indexes for JSONB, partial indexes, and vector indexes, are covered in the "Optimize performance, indexing, and scaling" module.
+Indexes improve read performance but come with costs. Every index consumes disk space and adds overhead to inserts, updates, and deletes. For AI applications that write frequently (storing every message, for example), be selective about which indexes you create. Monitor query performance and add indexes when you identify slow queries that would benefit. For information on optimizing vector indexes, visit [Optimize vector search in Azure Database for PostgreSQL](/training/modules/optimize-vector-search-azure-database-postgresql/).
 
 ## Schema management commands
 
