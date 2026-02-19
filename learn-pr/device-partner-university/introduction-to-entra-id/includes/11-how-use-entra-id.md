@@ -53,7 +53,7 @@ For more information, refer to the documentation on [member and guest users](/en
 
 ## Directions for groups
 
-Microsoft Entra groups are used to manage collections of users who require the same access permissions to organizational resources, such as restricted applications and services. Group-based access management allows resource owners or Entra directory administrators to assign a consistent set of permissions to all members of a group.
+Microsoft Entra groups can include users or devices and are used to simplify access and management. For users, groups allow administrators or resource owners to assign consistent access permissions to organizational resources, such as applications and services. For devices, groups are primarily used to target policies from tools like Microsoft Intune, Microsoft Defender for Endpoint (MDE), or Microsoft Purview. User groups can also be used to target management policies, just like device groups.
 
 Administrators can also delegate group membership management to designated individuals, such as department managers or help desk personnel. These delegated users can add or remove group members as needed.
 

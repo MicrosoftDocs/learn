@@ -24,3 +24,7 @@ To avoid consuming all your monthly GitHub Codespaces time, it's important to de
 * [Introduction to GitHub Copilot](/training/modules/introduction-to-github-copilot/?WT.mc_id=academic-105774-abrilu)
 * [Code with GitHub Codespaces](/training/modules/code-with-github-codespaces/?WT.mc_id=academic-105774-abrilu)
 * [Visual Studio Code (YouTube)](https://www.youtube.com/@code/playlists)
+
+## Provide feedback
+
+Use this [issue form](https://github.com/githubpartners/microsoft-learn/issues/new/choose) to provide content feedback or suggested changes for this Microsoft Learn module. GitHub maintains this content and a team member will triage the request. Thank you for taking the time to improve our content!

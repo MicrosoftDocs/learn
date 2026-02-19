@@ -1,9 +1,9 @@
-In this unit, you learn how to use the Azure Quantum Development Kit (QDK) extension for Visual Studio Code (VS Code) to create and run Q# programs in a local development environment. You also learn how to connect to your Azure Quantum workspace and run your programs on the quantum computers and simulators of the providers that you selected for your quantum workspace.
+In this unit, you learn how to use the Microsoft Quantum Development Kit (QDK) extension for Visual Studio Code (VS Code) to create and run Q# programs in a local development environment. You also learn how to connect to your Azure Quantum workspace and run your programs on the quantum computers and simulators of the providers that you selected for your quantum workspace.
 
 ## Install the required tools
 
 1. Install [VS Code](https://code.visualstudio.com/).
-1. Install the [Azure Quantum Development Kit](https://marketplace.visualstudio.com/items?itemName=quantum.qsharp-lang-vscode) extension. Or, open [VS Code on the Web](https://vscode.dev/quantum), which already includes the QDK extension.
+1. Install the [Microsoft Quantum Development Kit](https://marketplace.visualstudio.com/items?itemName=quantum.qsharp-lang-vscode) extension. Or, open [VS Code for the Web](https://vscode.dev/quantum), which already includes the QDK extension.
 1. To run your programs on real hardware, you need an Azure subscription and an Azure Quantum workspace. If you don't have an Azure account, then create a [free account](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn&?WT.mc_id=academic-15963-cxa) before you begin.
 
 ## Create and run a Q# program in VS Code
@@ -61,12 +61,12 @@ You can connect to your Azure Quantum workspace from VS Code and submit your Q# 
 1. In the **QUANTUM WORKSPACES** menu, expand the **Jobs** dropdown under your workspace and hover over your job. This displays timestamps and the job status for your job.
 1. To view your job results as a histogram, choose the histogram icon next to the job name. To download your job results as text, choose the text icon next to the job name.
 
-## Create an Azure Quantum notebook
+## Create a Microsoft Quantum notebook
 
 The QDK allows you to create Jupyter notebooks in VS Code. You can write Q#, Python, and OpenQASM code in Jupyter notebooks, and run the code on the quantum computers and simulators of the providers that you selected for your Azure Quantum workspace.
 
 To create a Jupyter notebook that connects to Azure Quantum in VS Code, follow these steps:
 
 1. In VS Code, open the **View** menu and choose **Command Palette**.
-1. Enter **QDK: Create an Azure Quantum notebook**.
+1. Enter **QDK: Create a Microsoft Quantum notebook**.
 1. A Jupyter notebook opens in a new tab. The notebook includes code cells that import the required packages for the sample, connect to the Azure Quantum service, and run a Q# program.

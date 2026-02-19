@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.develop-ai-enabled-apps-using-github-copilot-sdk.what-ai-agent
+title: "What is an AI agent?"
+metadata:
+  title: "What is an AI Agent?"
+  description: "What is an AI agent?"
+  ms.date: 02/13/2026
+  author: chrishowd
+  ms.author: cahowd
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/2-what-ai-agent.md)]

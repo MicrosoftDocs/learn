@@ -1,316 +1,148 @@
-This unit summarizes the [Azure security baseline for Windows Virtual Machines](/security/benchmark/azure/baselines/virtual-machines-windows-security-baseline) by providing the first five controls in each of the following nine areas:
+As a security architect, you specify the security requirements that guide how your organization protects servers across diverse environments. This includes servers running different operating systems, deployed on-premises, in Azure, or across multicloud environments. Your requirements must address the unique security characteristics of each platform while maintaining a consistent security posture.
 
--   [Network Security](/security/benchmark/azure/baselines/virtual-machines-windows-security-baseline#network-security)
--   [Logging and Monitoring](/security/benchmark/azure/baselines/virtual-machines-windows-security-baseline#logging-and-monitoring)
--   [Identity and Access Control](/security/benchmark/azure/baselines/virtual-machines-windows-security-baseline#identity-and-access-control)
--   [Data Protection](/security/benchmark/azure/baselines/virtual-machines-windows-security-baseline#data-protection)
--   [Vulnerability Management](/security/benchmark/azure/baselines/virtual-machines-windows-security-baseline#vulnerability-management)
--   [Inventory and Asset Management](/security/benchmark/azure/baselines/virtual-machines-windows-security-baseline#inventory-and-asset-management)
--   [Secure Configuration](/security/benchmark/azure/baselines/virtual-machines-windows-security-baseline#secure-configuration)
--   [Malware Defense](/security/benchmark/azure/baselines/virtual-machines-windows-security-baseline#malware-defense)
--   [Data Recovery](/security/benchmark/azure/baselines/virtual-machines-windows-security-baseline#data-recovery)
+## Framework for specifying server security requirements
 
-## Network Security
+When specifying server security requirements, organize them into categories that map to common security frameworks and regulatory standards. This approach ensures comprehensive coverage and simplifies compliance reporting.
 
-### 1.1: Protect Azure resources within virtual networks
+**Core requirement categories**
 
-**Guidance**: When you create an Azure virtual machine (VM), you must create a virtual network (virtual network) or use an existing virtual network and configure the VM with a subnet. Ensure that all deployed subnets have a Network Security Group applied with network access controls specific to your applications trusted ports and sources.
+- **Identity and access management**: Authentication methods, privileged access controls, service account management
+- **Network security**: Traffic filtering, segmentation, exposure reduction
+- **Data protection**: Encryption at rest and in transit, key management
+- **Vulnerability management**: Scanning, patching, remediation timelines
+- **Security monitoring**: Logging, alerting, threat detection
+- **Configuration management**: Hardening baselines, drift detection
 
-Alternatively, if you have a specific use case for a centralized firewall, Azure Firewall can also be used to meet those requirements.
+For each category, specify requirements that are measurable and auditable. For example, instead of "servers should be patched regularly," specify "critical security patches must be applied within 14 days of release, with emergency patches applied within 48 hours."
 
-**Responsibility**: Customer
+### MCSB Endpoint Security controls
 
-### 1.2: Monitor and log the configuration and traffic of virtual networks, subnets, and network interfaces
+The Microsoft Cloud Security Benchmark (MCSB) provides a structured framework for endpoint security requirements. The Endpoint Security (ES) domain defines three controls specific to servers and other endpoints:
 
-**Guidance**: Use the Microsoft Defender for Cloud to identify and follow network protection recommendations to help secure your Azure Virtual Machine (VM) resources in Azure. Enable NSG flow logs and send logs into a Storage Account for traffic audit for the VMs for unusual activity.
+| Control | Requirement | Implementation guidance |
+| --- | --- | --- |
+| ES-1 | Use Endpoint Detection and Response (EDR) | Deploy EDR solutions like Microsoft Defender for Endpoint to detect, investigate, and respond to advanced threats on servers |
+| ES-2 | Use modern anti-malware software | Require anti-malware solutions that provide real-time protection, behavior monitoring, and integration with cloud-based threat intelligence |
+| ES-3 | Ensure anti-malware software and signatures are updated | Configure automatic updates for anti-malware definitions and engines; specify maximum acceptable age for signatures |
 
-**Responsibility**: Customer
+These controls apply across Windows and Linux servers in Azure, AWS, GCP, and on-premises environments. Microsoft Defender for Servers implements ES-1 and ES-2 through its integration with Defender for Endpoint. For detailed implementation guidance, see [Endpoint security controls in MCSB](/security/benchmark/azure/mcsb-endpoint-security).
 
-### 1.3: Protect critical web applications
+## Platform-specific considerations
 
-**Guidance**: If using your virtual machine (VM) to host web applications, use a network security group (NSG) on the VM's subnet to limit what network traffic, ports and protocols are allowed to communicate. Follow a least privileged network approach when configuring your NSGs to only allow required traffic to your application.
+Different operating systems have distinct security models, and your requirements must account for these differences.
 
-You can also deploy Azure Web Application Firewall (WAF) in front of critical web applications for extra inspection of incoming traffic. Enable Diagnostic Setting for WAF and ingest logs into a Storage Account, Event Hubs, or Log Analytics Workspace.
+### Windows Server requirements
 
-**Responsibility**: Customer
+Windows Server environments require specific attention to:
 
-### 1.4: Deny communications with known-malicious IP addresses
+- **Active Directory integration**: Specify requirements for domain membership, Group Policy application, and Kerberos authentication configuration
+- **Windows Defender Antivirus**: Require real-time protection, cloud-delivered protection, and automatic sample submission for threat analysis
+- **Local administrator accounts**: Mandate the use of Windows LAPS (Local Administrator Password Solution) for unique, rotating local admin passwords
+- **SMB security**: Require SMB encryption and disable legacy SMB versions (SMBv1)
+- **BitLocker**: Specify encryption requirements for OS and data volumes
 
-**Guidance**: Enable Distributed Denial of Service (DDoS) Standard protection on the Virtual Networks to guard against DDoS attacks. Using Microsoft Defender for Cloud Integrated Threat Intelligence, you can monitor communications with known malicious IP addresses. Configure appropriately Azure Firewall on each of your Virtual Network segments, with Threat Intelligence enabled and configured to "Alert and deny" for malicious network traffic.
+### Linux server requirements
 
-You can use Microsoft Defender for Cloud's Just In Time Network access to limit exposure of Windows Virtual Machines to the approved IP addresses for a limited period. Also, use Microsoft Defender for Cloud Adaptive Network Hardening to recommend NSG configurations that limit ports and source IPs based on actual traffic and threat intelligence.
+Linux security requirements vary by distribution but should address:
 
-**Responsibility**: Customer
+- **SSH hardening**: Require key-based authentication, disable root sign-in, and limit SSH access to specific users or groups
+- **SELinux or AppArmor**: Specify mandatory access control requirements based on your distribution (SELinux for RHEL-based distributions, AppArmor for Ubuntu/SUSE)
+- **Firewall configuration**: Require firewall or iptables rules that implement least-privilege network access
+- **Package management**: Specify approved repositories and require signed packages
+- **File system permissions**: Define requirements for sensitive file permissions and the use of access control lists (ACLs)
 
-### 1.5: Record network packets
+## Deployment environment requirements
 
-**Guidance**: You can record NSG flow logs into a storage account to generate flow records for your Azure Virtual Machines. When investigating anomalous activity, you could enable Network Watcher packet capture so that network traffic can be reviewed for unusual and unexpected activity.
+Server security requirements vary based on where servers are deployed. Your specifications must address each environment in your organization's infrastructure.
 
-**Responsibility**: Customer
+### Azure virtual machines
 
-## Logging and Monitoring
+For Azure-hosted servers, use platform capabilities in your requirements:
 
-### 2.1: Use approved time synchronization sources
+- **Microsoft Defender for Servers**: Require either Plan 1 or Plan 2 based on protection needs. Plan 1 provides Defender for Endpoint integration for EDR capabilities. Plan 2 adds agentless scanning, file integrity monitoring, and just-in-time VM access.
+- **Network security groups**: Require NSGs on all subnets with rules that follow least-privilege principles
+- **Azure Bastion**: Require Azure Bastion for administrative access instead of exposing RDP/SSH ports
+- **Managed identities**: Require managed identities for Azure resource access instead of stored credentials
+- **Disk encryption**: Require Azure Disk Encryption or server-side encryption with customer-managed keys
 
-**Guidance**: Microsoft maintains time sources for Azure resources, however, you can manage the time synchronization settings for your Windows Virtual Machines.
+### Multicloud environments (AWS and GCP)
 
-**Responsibility**: Microsoft
+For servers in AWS or GCP, specify how to integrate with your security management:
 
-### 2.2: Configure central security log management
+- **Azure Arc onboarding**: Require all non-Azure servers to connect through Azure Arc for centralized management
+- **Connector configuration**: Specify whether to connect at the organization/account level or individual project/account level
+- **Defender for Servers coverage**: Extend Microsoft Defender for Servers protection to EC2 instances and Compute Engine VMs
+- **Compliance standards**: Apply consistent standards across clouds—AWS Foundational Security Best Practices, GCP CIS benchmarks, and MCSB all map to common controls
 
-**Guidance**: The Microsoft Defender for Cloud provides Security Event log monitoring for windows Virtual Machines. Given the volume of data that the security event log generates, it isn't stored by default.
+### On-premises and hybrid servers
 
-**Responsibility**: Customer
+On-premises servers require additional considerations:
 
-### 2.3: Enable audit logging for Azure resources
+- **Azure Arc deployment**: Require the Azure Connected Machine agent on all servers to enable cloud-based management
+- **Network connectivity**: Specify required endpoints for Azure Arc, Defender for Cloud, and any extensions
+- **Proxy configuration**: Define proxy requirements for servers without direct internet access
+- **Update management**: Integrate with Azure Update Manager for centralized patching across hybrid environments
 
-**Guidance**: Activity logs can be used to audit operations and actions performed on virtual machine resources. The activity log contains all write operations (PUT, POST, DELETE) for your resources except read operations (GET). Activity logs can be used to find an error when troubleshooting or to monitor how a user in your organization modified a resource.
+## Specifying threat protection requirements
 
-Enable the collection of guest OS diagnostic data by deploying the diagnostic extension on your Virtual Machines (VM). You can use the diagnostics extension to collect diagnostic data like application logs or performance counters from an Azure virtual machine.
+Beyond baseline security, specify requirements for active threat protection:
 
-For advanced visibility of the applications and services supported by your virtual machines you can enable both Azure Monitor for VMs and Application insights. With Application Insights, you can monitor your application and capture telemetry such as HTTP requests, exceptions, etc. so you can correlate issues between the VMs and your application.
+**Endpoint detection and response (EDR)**
 
-Additionally, enable Azure Monitor for access to your audit and activity logs, which includes event source, date, user, timestamp, source addresses, destination addresses, and other useful elements.
+Require Microsoft Defender for Endpoint on all servers. Specify that alerts above a defined severity level must be investigated within a specific timeframe.
 
-**Responsibility**: Customer
+**Vulnerability scanning**
 
-### 2.4: Collect security logs from operating systems
+Specify scanning frequency and remediation timelines:
 
-**Guidance**: Use Microsoft Defender for Cloud to provide Security Event log monitoring for Azure Virtual Machines. Given the volume of data that the security event log generates, it isn't stored by default.
+- Critical vulnerabilities: Remediate within seven days
+- High vulnerabilities: Remediate within 30 days
+- Medium vulnerabilities: Remediate within 90 days
 
-If your organization would like to retain the security event log data from the virtual machine, it can be stored within a Log Analytics Workspace at the desired data collection tier configured within Microsoft Defender for Cloud.
+**File integrity monitoring**
 
-**Responsibility**: Customer
+For servers processing sensitive data, require monitoring of critical system files and configuration files with alerts on unauthorized changes.
 
-### 2.5: Configure security log storage retention
+**Security alerts**
 
-**Guidance**: Ensure that any storage accounts or Log Analytics workspaces used for storing virtual machine logs has the log retention period set according to your organization's compliance regulations.
+Define requirements for alert routing, escalation procedures, and integration with your security operations center (SOC) or SIEM solution.
 
-**Responsibility**: Customer
+## Compliance and regulatory requirements
 
-## Identity and Access Control
+Your server security requirements must address applicable regulations:
 
-### 3.1: Maintain an inventory of administrative accounts
+| Regulation | Key server requirements |
+| --- | --- |
+| **PCI-DSS** | Quarterly vulnerability scans, file integrity monitoring, strong cryptography, audit logging |
+| **HIPAA** | Access controls, audit controls, encryption, automatic sign out |
+| **SOC 2** | Logical access controls, system monitoring, change management, encryption |
+| **ISO 27001** | Asset management, access control, cryptography, operations security |
 
-**Guidance**: While Microsoft Entra ID is the recommended method to administrate user access, Azure Virtual Machines can have local accounts. Both local and domain accounts should be reviewed and managed, normally with a minimum footprint. In addition, use Azure Privileged Identity Management for administrative accounts used to access the virtual machines resources.
+Map your specific requirements to control frameworks to demonstrate compliance. The Microsoft Cloud Security Benchmark provides mappings to these common standards that simplify this alignment.
 
-**Responsibility**: Customer
+## Design decision: Defender for Servers plan selection
 
-### 3.2: Change default passwords where applicable
+When specifying Defender for Servers requirements, choose the appropriate plan based on workload criticality:
 
-**Guidance**: Windows Virtual Machines and Microsoft Entra ID don't have the concept of default passwords. Customer responsible for non-Microsoft applications and marketplace services that can use default passwords.
+| Consideration | Plan 1 | Plan 2 |
+| --- | --- | --- |
+| **Best for** | Standard workloads requiring EDR | Critical workloads requiring comprehensive protection |
+| **Defender for Endpoint** | ✓ Included | ✓ Included |
+| **Vulnerability assessment** | Basic | Premium (Defender Vulnerability Management) |
+| **Agentless scanning** | Not available | ✓ Software inventory, secrets, malware |
+| **Just-in-time VM access** | Not available | ✓ Reduces attack surface |
+| **File integrity monitoring** | Not available | ✓ Detects unauthorized changes |
 
-**Responsibility**: Customer
+For most organizations, specify Plan 1 as the baseline requirement for all servers, with Plan 2 required for servers that process sensitive data, are internet-facing, or are otherwise deemed critical.
 
-### 3.3: Use dedicated administrative accounts
+## Documentation requirements
 
-**Guidance**: Create standard operating procedures around the use of dedicated administrative accounts that have access to your virtual machines. Use Microsoft Defender for Cloud identity and access management to monitor the number of administrative accounts. Any administrator accounts used to access Azure Virtual Machine resources can also be managed by Azure Privileged Identity Management (PIM). Azure Privileged Identity Management provides several options such as Just in Time elevation, requiring multifactor authentication before assuming a role, and delegation options so that permissions are only available for specific time frames and require an approver.
+Your server security specification should include:
 
-**Responsibility**: Customer
+- **Scope definition**: Which servers are covered, organized by criticality tier
+- **Requirement statements**: Clear, measurable requirements for each security category
+- **Exception process**: How to request and document exceptions with compensating controls
+- **Verification methods**: How compliance with each requirement will be assessed
+- **Review cadence**: How often requirements are reviewed and updated (recommend annually or after significant changes)
 
-<a name='34-use-azure-active-directory-single-sign-on-sso'></a>
-
-### 3.4: Use Microsoft Entra single sign-on (SSO)
-
-**Guidance**: Wherever possible, customer to use SSO with Microsoft Entra rather than configuring individual stand-alone credentials per-service. Use Microsoft Defender for Cloud Identity and Access Management recommendations.
-
-**Responsibility**: Customer
-
-<a name='35-use-multi-factor-authentication-for-all-azure-active-directory-based-access'></a>
-
-### 3.5: Use multifactor authentication for all Microsoft Entra ID-based access
-
-**Guidance**: Enable Microsoft Entra multifactor authentication and follow Microsoft Defender for Cloud Identity and Access Management recommendations.
-
-**Responsibility**: Customer
-
-## Data Protection
-
-### 4.1: Maintain an inventory of sensitive Information
-
-**Guidance**: Use Tags to help tracking Azure virtual machines that store or process sensitive information.
-
-**Responsibility**: Customer
-
-### 4.2: Isolate systems storing or processing sensitive information
-
-**Guidance**: Implement separate subscriptions and/or management groups for development, test, and production. Resources should be separated by virtual network/subnet, tagged appropriately, and secured within a network security group (NSG) or by an Azure Firewall. For Virtual Machines storing or processing sensitive data, implement policy and procedure(s) to turn them off when not in use.
-
-**Responsibility**: Customer
-
-### 4.3: Monitor and block unauthorized transfer of sensitive information
-
-**Guidance**: Implement non-Microsoft solution on network perimeters that monitors for unauthorized transfer of sensitive information and blocks such transfers while alerting information security professionals.
-
-Microsoft treats all customer content as sensitive to guard against customer data loss and exposure on the platforms that it manages. To ensure customer data within Azure remains secure, Microsoft has implemented and maintains a suite of robust data protection controls and capabilities.
-
-**Responsibility**: Customer
-
-### 4.4: Encrypt all sensitive information in transit
-
-**Guidance**: Data in transit to, from, and between Virtual Machines (VM) that are running Windows is encrypted in different ways, depending on the nature of the connection such as when connecting to a VM in an RDP or SSH session.
-
-Microsoft uses the Transport Layer Security (TLS) protocol to protect data when it's traveling between the cloud services and customers.
-
-**Responsibility**: Shared
-
-### 4.5: Use an active discovery tool to identify sensitive data
-
-**Guidance**: Use a non-Microsoft active discovery tool to identify all sensitive information stored, processed, or transmitted by the organization's technology systems, including those located onsite or at a remote service provider and update the organization's sensitive information inventory.
-
-**Responsibility**: Customer
-
-## Vulnerability Management
-
-### 5.1: Run automated vulnerability scanning tools
-
-**Guidance**: Follow recommendations from Microsoft Defender for Cloud on performing vulnerability assessments on your Azure Virtual Machines. Use Azure Security (recommended) or non-Microsoft solution for performing vulnerability assessments for your virtual machines.
-
-**Responsibility**: Customer
-
-### 5.2: Deploy automated operating system patch management solution
-
-**Guidance**: Use the Azure Update Management solution to manage updates and patches for your virtual machines. Update Management relies on the locally configured update repository to patch supported Windows systems. Tools like System Center Updates Publisher (Updates Publisher) allow you to publish custom updates into Windows Server Update Services (WSUS). This scenario allows Update Management to patch machines that use Configuration Manager as their update repository with non-Microsoft software.
-
-**Responsibility**: Customer
-
-### 5.3: Deploy automated patch management solution for non-Microsoft software titles
-
-**Guidance**: You can use a non-Microsoft patch management solution. You can use the Azure Update Management solution to manage updates and patches for your virtual machines. Update Management relies on the locally configured update repository to patch supported Windows systems. Tools like System Center Updates Publisher (Updates Publisher) allow you to publish custom updates into Windows Server Update Services (WSUS). This scenario allows Update Management to patch machines that use Configuration Manager as their update repository with non-Microsoft software.
-
-**Responsibility**: Customer
-
-### 5.4: Compare back-to-back vulnerability scans
-
-**Guidance**: Export scan results at consistent intervals and compare the results to verify that vulnerabilities have been remediated. When using vulnerability management recommendation suggested by Microsoft Defender for Cloud, customer can pivot into the selected solution's portal to view historical scan data.
-
-**Responsibility**: Customer
-
-### 5.5: Use a risk-rating process to prioritize the remediation of discovered vulnerabilities
-
-**Guidance**: Use the default risk ratings (Secure Score) provided by Microsoft Defender for Cloud.
-
-**Responsibility**: Customer
-
-## Inventory and Asset Management
-
-### 6.1: Use automated asset discovery solution
-
-**Guidance**: Use Azure Resource Graph to query and discover all resources (including Virtual machines) within your subscriptions. Ensure you have appropriate (read) permissions in your tenant and are able to enumerate all Azure subscriptions and resources within your subscriptions.
-
-**Responsibility**: Customer
-
-### 6.2: Maintain asset metadata
-
-**Guidance**: Apply tags to Azure resources giving metadata to logically organize them according to a taxonomy.
-
-**Responsibility**: Customer
-
-### 6.3: Delete unauthorized Azure resources
-
-**Guidance**: Use tagging, management groups, and separate subscriptions, where appropriate, to organize and track virtual machines and related resources. Reconcile inventory regularly and ensure unauthorized resources are deleted from the subscription in a timely manner.
-
-**Responsibility**: Customer
-
-### 6.4: Define and maintain inventory of approved Azure resources
-
-**Guidance**: You should create an inventory of approved Azure resources and approved software for your compute resources. You can also use Adaptive application controls, a feature of Microsoft Defender for Cloud to help you define a set of applications that are allowed to run on configured groups of machines. This feature is available for both Azure and non-Azure Windows (all versions, classic, or Azure Resource Manager) and Linux machines.
-
-**Responsibility**: Customer
-
-### 6.5: Monitor for unapproved Azure resources
-
-**Guidance**: Use Azure policy to put restrictions on the type of resources that can be created in customer subscription(s) using the following built-in policy definitions:
-
--   Not allowed resource types
--   Allowed resource types
-
-In addition, use the Azure Resource Graph to query/discover resources within the subscription(s). This can help in high security-based environments, such as those with Storage accounts.
-
-**Responsibility**: Customer
-
-## Secure Configuration
-
-### 7.1: Establish secure configurations for all Azure resources
-
-**Guidance**: Use Azure Policy or Microsoft Defender for Cloud to maintain security configurations for all Azure Resources. Also, Azure Resource Manager has the ability to export the template in JavaScript Object Notation (JSON), which should be reviewed to ensure that the configurations meet / exceed the security requirements for your company.
-
-**Responsibility**: Customer
-
-### 7.2: Establish secure operating system configurations
-
-**Guidance**: Use Microsoft Defender for Cloud recommendation [Remediate Vulnerabilities in Security Configurations on your Virtual Machines] to maintain security configurations on all compute resources.
-
-**Responsibility**: Customer
-
-### 7.3: Maintain secure Azure resource configurations
-
-**Guidance**: Use Azure Resource Manager templates and Azure Policies to securely configure Azure resources associated with the Virtual machines. Azure Resource Manager templates are JSON-based files used to deploy Virtual machines along with Azure resources. Custom templates need to be maintained. Microsoft performs the maintenance on the base templates. Use Azure policy [deny] and [deploy if not exist] to enforce secure settings across your Azure resources.
-
-**Responsibility**: Customer
-
-### 7.4: Maintain secure operating system configurations
-
-**Guidance**: There are several options for maintaining a secure configuration for Azure Virtual Machines(VM) for deployment:
-
-- Azure Resource Manager templates: These are JSON-based files used to deploy a VM from the Azure portal. Custom templates need to be maintained. Microsoft performs the maintenance on the base templates.
-- Custom Virtual hard disk (VHD): In some circumstances it can be required to have custom VHD files used such as when dealing with complex environments that can't be managed through other means.
-- Azure Automation State Configuration: Once the base OS is deployed, this can be used for more granular control of the settings, and enforced through the automation framework.
-
-For most scenarios, the Microsoft base VM templates combined with the Azure Automation Desired State Configuration can assist in meeting and maintaining the security requirements.
-
-**Responsibility**: Customer
-
-### 7.5: Securely store configuration of Azure resources
-
-**Guidance**: Use Azure Repos to securely store and manage your code like custom Azure policies, Azure Resource Manager templates, Desired State Configuration scripts etc. To access the resources you manage in Azure DevOps, such as your code, builds, and work tracking, you must have permissions for those specific resources. Most permissions are granted through built-in security groups as described in Permissions and access. You can grant or deny permissions to specific users, built-in security groups, or groups defined in Microsoft Entra ID if integrated with Azure DevOps, or Active Directory if integrated with TFS.
-
-**Responsibility**: Customer
-
-## Malware Defense
-
-### 8.1: Use centrally managed anti-malware software
-
-**Guidance**: Use Microsoft Antimalware for Azure Windows Virtual machines to continuously monitor and defend your resources.
-
-**Responsibility**: Customer
-
-### 8.2: Pre-scan files to be uploaded to non-compute Azure resources
-
-**Guidance**: Pre-scan any files being uploaded to non-compute Azure resources, such as App Service, Data Lake Storage, Blob Storage, etc. Use Azure Defender for Storage to detect malware uploaded to storage accounts.
-
-**Responsibility**: Customer
-
-### 8.3: Ensure anti-malware software and signatures are updated
-
-**Guidance**: When deployed, Microsoft Antimalware for Azure will automatically install the latest signature, platform, and engine updates by default. Follow recommendations in Microsoft Defender for Cloud: "Compute & Apps" to ensure all endpoints are up to date with the latest signatures. The Windows OS can be further protected with additional security to limit the risk of virus or malware-based attacks with the Microsoft Defender Advanced Threat Protection service that integrates with Microsoft Defender for Cloud.
-
-**Responsibility**: Customer
-
-## Data Recovery
-
-### 9.1: Ensure regular automated back-ups
-
-**Guidance**: Enable Azure Backup and configure the Azure Virtual machines (VM), as well as the desired frequency and retention period for automatic backups.
-
-**Responsibility**: Customer
-
-### 9.2: Perform complete system backups and backup any customer-managed keys
-
-**Guidance**: Create snapshots of your Azure virtual machines or the managed disks attached to those instances using PowerShell or REST APIs. Back up any customer-managed keys within Azure Key Vault.
-
-Enable Azure Backup and target Azure Virtual Machines (VM), as well as the desired frequency and retention periods. This includes complete system state backup. If you are using Azure disk encryption, Azure VM backup automatically handles the backup of customer-managed keys.
-
-**Responsibility**: Customer
-
-### 9.3: Validate all backups including customer-managed keys
-
-**Guidance**: Ensure ability to periodically perform data restoration of content within Azure Backup. If necessary, test restoring content to an isolated virtual network or subscription. Customer to test restoration of backed up customer-managed keys.
-
-If you are using Azure disk encryption, you can restore the Azure VM with the disk encryption keys. When using disk encryption, you can restore the Azure VM with the disk encryption keys.
-
-**Responsibility**: Customer
-
-### 9.4: Ensure protection of backups and customer-managed keys
-
-**Guidance**: When you back up Azure managed disks with Azure Backup, VMs are encrypted at rest with Storage Service Encryption (SSE). Azure Backup can also back up Azure VMs that are encrypted by using Azure Disk Encryption. Azure Disk Encryption integrates with BitLocker encryption keys (BEKs), which are safeguarded in a key vault as secrets. Azure Disk Encryption also integrates with Azure Key Vault key encryption keys (KEKs). Enable Soft-Delete in Key Vault to protect keys against accidental or malicious deletion.
+This structured approach ensures your server security requirements are comprehensive, actionable, and aligned with your organization's risk tolerance and regulatory obligations.

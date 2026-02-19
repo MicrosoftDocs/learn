@@ -1,6 +1,6 @@
 Congratulations! You successfully created your first Q# program.
 
-The Quantum Development Kit (QDK) provides you with everything you need to start writing your own quantum algorithms.
+The Microsoft Quantum Development Kit (QDK) provides you with everything you need to start writing your own quantum algorithms.
 
 You covered a lot in this module. Here's some of the key concepts that you learned:
 

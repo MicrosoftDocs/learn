@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-github-app-modernization.app-modernization-case-study
+title: App modernization case study
+metadata:
+  title: App Modernization Case Study
+  description: Learn how GitHub Copilot can assist in app modernization efforts, including refactoring legacy code and modernizing architecture and frameworks.
+  ms.date: 02/17/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/6-app-modernization-case-study.md)]

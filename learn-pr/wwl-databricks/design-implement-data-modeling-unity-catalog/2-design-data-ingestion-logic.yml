@@ -4,7 +4,7 @@ title: Design ingestion logic and data source configuration
 metadata:
   title: Design Ingestion Logic and Data Source Configuration
   description: Learn how to design data ingestion logic and configure data sources in Azure Databricks, including extraction types, file formats, and connection considerations.
-  ms.date: 12/07/2025
+  ms.date: 02/10/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit

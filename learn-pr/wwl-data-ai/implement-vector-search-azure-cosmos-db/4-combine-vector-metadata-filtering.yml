@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-vector-search-azure-cosmos-db.combine-vector-metadata-filtering
+title: Combine vector similarity results with metadata filtering
+metadata:
+  title: Combine Vector Similarity Results with Metadata Filtering
+  description: Combine vector similarity results with metadata filtering
+  ms.date: 02/05/2026
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-combine-vector-metadata-filtering.md)]

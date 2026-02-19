@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-azure-copilot-agents.resiliency-agent
+title: Resiliency agent
+metadata:
+  title: Resiliency Agent
+  description: Understand how to use the Resiliency Agent to automate and streamline your Azure resource resiliency, ensuring consistency and efficiency in your operations tasks.
+  ms.date: 02/13/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/5-resiliency-agent.md)]

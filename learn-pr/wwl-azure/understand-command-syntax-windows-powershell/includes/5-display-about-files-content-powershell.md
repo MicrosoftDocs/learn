@@ -9,17 +9,19 @@ Get-Help about*
 To view a specific topic, use:
 
 ```powershell
-Get-Help about_common_parameters
+Get-Help about_CommonParameters
 ```
 
 You can also open the help topic in a separate window or online:
 
 ```powershell
-Get-Help about_common_parameters -ShowWindow
-Get-Help about_common_parameters -Online
+Get-Help about_CommonParameters -ShowWindow
+Get-Help about_CommonParameters -Online
 ```
+> [!NOTE]
+> For the -Online version to open, it must have the URI/URL included in the information in the local help files. If the URI/URL isn't included in the local version, you may receive an error.
 
-When you use wildcard characters with the **Get-Help** command, **About** help files will appear in a list when their titles contain a match for your wildcard pattern. Typically, **About** help files will appear last, after any commands whose names also matched your wildcard pattern. You can also use the *‑Category* parameter to specify a search for **About** files.
+When you use wildcard characters with the **Get-Help** command, **About** help files appear in a list when their titles contain a match for your wildcard pattern. Typically, **About** help files will appear last, after any commands whose names also matched your wildcard pattern. You can also use the *‑Category* parameter to specify a search for **About** files.
 
 > [!NOTE] 
 > For much of this course, you'll need to refer to **About** files for additional documentation. You must review these files frequently to discover the steps and techniques you need to complete lab exercises.

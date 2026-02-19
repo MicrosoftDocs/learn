@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.secure-azure-openai-content-safety-controls.understand-azure-ai-content-safety-architecture
+title: "Understand Azure AI content safety architecture"
+metadata:
+  title: "Understand Azure AI Content Safety Architecture"
+  description: "Learn how Azure AI Content Safety protects applications by analyzing prompts and responses in real-time to block harmful content effectively."
+  ms.date: 02/04/2026
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: unit
+durationInMinutes: 12
+content: |
+  [!include[](includes/2-understand-azure-ai-content-safety-architecture.md)]

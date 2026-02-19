@@ -1,0 +1,41 @@
+### YamlMime:Module
+uid: learn.wwl.manage-secure-ai-ready-infrastructure
+metadata:
+  title: "Manage secure AI-Ready Infrastructure"
+  description: "This module shows how to secure AI agents using Azure RBAC and Microsoft Entra ID managed identities, eliminating stored credentials while enforcing least‑privilege access. It then demonstrates deploying Azure Cosmos DB for NoSQL as a scalable, compliant conversation store optimized for agent workloads."
+  ms.date: 02/02/2026
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: module
+  ms.service: azure
+title: "Manage secure AI-ready infrastructure"
+summary: This module shows how to secure AI agents using Azure RBAC and Microsoft Entra ID managed identities, eliminating stored credentials while enforcing least‑privilege access. It then demonstrates deploying Azure Cosmos DB for NoSQL as a scalable, compliant conversation store optimized for agent workloads.
+abstract: |
+ After completing this module, you'll be able to:  
+  - Configure Azure RBAC role assignments to enforce least-privilege access for AI infrastructure components.
+  - Implement system-assigned managed identities to enable keyless authentication between Azure services.
+  - Deploy and configure Azure Cosmos DB for NoSQL as a conversation and metadata store for AI agents.
+  - Evaluate security and governance considerations for production AI workloads on Azure.
+prerequisites: |
+  - Foundational Azure Skills: Understanding of Azure services, resource groups, and subscription management.
+  - Networking and Security Basics: Familiarity with virtual networks, identity management, and compliance principles.
+  - AI and Compute Fundamentals: Awareness of AI workload requirements and experience with virtual machines or containerized environments.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- administrator
+products:
+- azure
+subjects:
+- cloud-computing
+units:
+- learn.wwl.manage-secure-ai-ready-infrastructure.introduction
+- learn.wwl.manage-secure-ai-ready-infrastructure.configure-azure-rbac-infrastructure-components
+- learn.wwl.manage-secure-ai-ready-infrastructure.implement-keyless-authentication-microsoft
+- learn.wwl.manage-secure-ai-ready-infrastructure.deploy-azure-cosmos-agent
+- learn.wwl.manage-secure-ai-ready-infrastructure.exercise-configure-secure-infrastructure-azure
+- learn.wwl.manage-secure-ai-ready-infrastructure.knowledge-check
+- learn.wwl.manage-secure-ai-ready-infrastructure.summary
+badge:
+  uid: learn.wwl.manage-secure-ai-ready-infrastructure.badge

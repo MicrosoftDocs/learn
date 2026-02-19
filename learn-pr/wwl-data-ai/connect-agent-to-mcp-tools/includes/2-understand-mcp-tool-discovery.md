@@ -1,8 +1,8 @@
 As AI agents become more capable, the range of tools and services they can access also grows. However, registering new tools, managing, updating, and integrating them can quickly become complex and time-consuming. Dynamic tool discovery helps solve this problem by enabling agents to find and use tools automatically at runtime.
 
-## Advantages of the Microsoft Connector Protocol for AI agents
+## Advantages of the Model Context Protocol for AI agents
 
-The Microsoft Connector Protocol (MCP) provides several benefits that enhance the capabilities and flexibility of AI agents:
+The Model Context Protocol (MCP) provides several benefits that enhance the capabilities and flexibility of AI agents:
 
 - **Dynamic Tool Discovery:**  
   AI agents can automatically receive a list of available tools from a server, along with descriptions of their functions. Unlike traditional APIs, which often require manual coding for each integration and updates whenever the API changes, MCP enables an **“integrate once”** approach that improves adaptability and reduces maintenance.

@@ -1,8 +1,8 @@
 ### YamlMime:Module
 uid: learn.quantum.estimate-resources-quantum-algorithms
 metadata:
-  title: Estimate physical resource requirements for quantum algorithms with the Azure Quantum Resource Estimator
-  description: Learn how to get started with Azure Quantum Resource Estimator.
+  title: Estimate physical resource requirements for quantum algorithms with the Microsoft Quantum resource estimator
+  description: Learn how to get started with Microsoft Quantum resource estimator.
   ms.date: 09/22/2025
   author: azure-quantum-content
   ms.author: quantumdocwriters
@@ -10,20 +10,20 @@ metadata:
   ms.topic: module
   ms.service: azure-quantum
   ms.subservice: qdk
-title: Estimate physical resource requirements for quantum algorithms with the Azure Quantum Resource Estimator
-summary: Learn why resource estimation is crucial in the development of quantum computing, and learn how to use the Azure Quantum Resource Estimator. 
+title: Estimate physical resource requirements for quantum algorithms with the Microsoft Quantum resource estimator
+summary: Learn why resource estimation is crucial in the development of quantum computing, and learn how to use the Microsoft Quantum resource estimator. 
 abstract: |
   By the end of this module, you can:
-  - Explain what the Azure Quantum Resource Estimator is.
-  - Define the target parameters of the Resource Estimator.
-  - Use the Resource Estimator to estimate the resource requirements to run a quantum algorithm.
+  - Explain what the Microsoft Quantum resource estimator is.
+  - Define the target parameters of the resource estimator.
+  - Use the resource estimator to estimate the resource requirements to run a quantum algorithm.
   In this module, you:
   - Learn what resource estimation is and why it's important.
-  - Explore the Azure Quantum Resource Estimator.
+  - Explore the Microsoft Quantum resource estimator.
   - Estimate the resources requirements to run an algorithm for practical quantum advantage.
 prerequisites: |
-  - The latest version of [Visual Studio Code](https://code.visualstudio.com/download) or open [VS Code on the Web](https://vscode.dev/)
-  - The latest version of the [Azure Quantum Development Kit](https://marketplace.visualstudio.com/items?itemName=quantum.qsharp-lang-vscode) extension
+  - The latest version of [Visual Studio Code](https://code.visualstudio.com/download) or open [VS Code for the Web](https://vscode.dev/)
+  - The latest version of the [Microsoft Quantum Development Kit](https://marketplace.visualstudio.com/items?itemName=quantum.qsharp-lang-vscode) extension
   - A Python environment with [Python and Pip](https://apps.microsoft.com/detail/9NRWMJP3717K) installed
   - VS Code with [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python) and [Jupyter](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter) extensions installed
 iconUrl: /training/achievements/quantum/azure-quantum-resource-estimator.svg

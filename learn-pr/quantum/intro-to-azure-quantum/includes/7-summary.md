@@ -4,6 +4,6 @@ Quantum computing could help us solve some of the greatest challenges of our tim
 Now that you know about the Azure Quantum service and what it offers, you know that it's possible to start your quantum computing journey today with Azure Quantum. Azure Quantum is an open, flexible, and future-proofed cloud ecosystem for quantum computing. Azure Quantum provides a diverse set of quantum computing solutions and technologies, such as:
 
 - Access to diverse quantum hardware devices and simulators.
-- The Quantum Development Kit, with support for quantum programming languages like Q# and OpenQASM.
-- A Resource Estimator to help you estimate the resources needed to run your quantum programs.
+- The Microsoft Quantum Development Kit, with support for quantum programming languages like Q# and OpenQASM.
+- A resource estimator to help you estimate the resources needed to run your quantum programs.
 - Copilot to help you write and understand your quantum programs.

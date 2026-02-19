@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.build-backends-azure-functions.exercise-create-mcp-server
+title: Exercise - Create an MCP server with Azure Functions
+metadata:
+  title: Exercise - Create an MCP Server with Azure Functions
+  description: Exercise - Create an MCP server with Azure Functions
+  ms.date: 02/13/2026
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: unit
+durationInMinutes: 25
+content: |
+  [!include[](includes/7-exercise-create-mcp-server.md)]

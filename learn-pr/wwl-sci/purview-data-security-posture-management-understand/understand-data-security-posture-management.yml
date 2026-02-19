@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-data-security-posture-management-understand.understand-data-security-posture-management
+title: Understand the role of data security posture management (DSPM)
+metadata:
+  title: Understand the role of data security posture management (DSPM)
+  description: "Understand the role of data security posture management (DSPM)"
+  ms.date: 02/03/2026
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/understand-data-security-posture-management.md)]

@@ -1,0 +1,43 @@
+### YamlMime:Module
+uid: learn.wwl.configure-ai-ready-infrastructure-microsoft-foundry
+metadata:
+  title: "Configure AI-Ready Infrastructure with Microsoft Foundry"
+  description: "Microsoft Foundry uses a hub-and-project architecture to centralize governance, security, and shared resources while enabling team autonomy. Hub-level connections, identities, and policies reduce cost, complexity, and duplication, supporting scalable, secure, enterprise-ready AI deployments."
+  ms.date: 02/02/2026
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: module
+  ms.service: azure
+title: "Configure AI-ready infrastructure with Microsoft Foundry"
+summary: Microsoft Foundry uses a hub-and-project architecture to centralize governance, security, and shared resources while enabling team autonomy. Hub-level connections, identities, and policies reduce cost, complexity, and duplication, supporting scalable, secure, enterprise-ready AI deployments.
+abstract: |
+  After completing this module, you will be able to:
+  - Configure Microsoft Foundry hubs with appropriate governance and security settings
+  - Create and organize AI projects within hubs to support team collaboration
+  - Establish connected resources including Azure AI Search for shared infrastructure
+  - Implement hub-level shared connections to optimize resource utilization across projects
+prerequisites: |
+  - Azure Subscription: Learners need an active Azure subscription.
+  - Intermediate Technical Skills: Prior knowledge of OpenAI concepts, AI Search service, and Python programming is required for building and integrating AI solutions.
+  - Familiarity with Azure Services: Understanding Azure App Services, storage accounts, and deployment practices is essential for creating and hosting AI applications securely.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- administrator
+products:
+- azure
+- azure-ai-foundry
+subjects:
+- artificial-intelligence
+- infrastructure
+units:
+- learn.wwl.configure-ai-ready-infrastructure-microsoft-foundry.introduction
+- learn.wwl.configure-ai-ready-infrastructure-microsoft-foundry.understand-microsoft-foundry-architecture-components
+- learn.wwl.configure-ai-ready-infrastructure-microsoft-foundry.configure-hubs-organize-projects
+- learn.wwl.configure-ai-ready-infrastructure-microsoft-foundry.implement-hub-level-shared-connections-azure
+- learn.wwl.configure-ai-ready-infrastructure-microsoft-foundry.exercise-provision-microsoft-foundry-infrastructure
+- learn.wwl.configure-ai-ready-infrastructure-microsoft-foundry.knowledge-check
+- learn.wwl.configure-ai-ready-infrastructure-microsoft-foundry.summary
+badge:
+  uid: learn.wwl.configure-ai-ready-infrastructure-microsoft-foundry.badge

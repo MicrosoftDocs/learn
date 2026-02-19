@@ -28,3 +28,7 @@ Here are some links to more information on the topics we discussed in this modul
 - [Using a proxy server with self-hosted runners](https://docs.github.com/actions/hosting-your-own-runners/using-a-proxy-server-with-self-hosted-runners)
 - [Using GitHub Actions with an IP allowlist](https://docs.github.com/organizations/keeping-your-organization-secure/managing-allowed-ip-addresses-for-your-organization#using-github-actions-with-an-ip-allow-list)
 - [Monitoring and troubleshooting self-hosted runners](https://docs.github.com/actions/hosting-your-own-runners/managing-self-hosted-runners/monitoring-and-troubleshooting-self-hosted-runners)
+
+## Provide feedback
+
+Use this [issue form](https://github.com/githubpartners/microsoft-learn/issues/new/choose) to provide content feedback or suggested changes for this Microsoft Learn module. GitHub maintains this content and a team member will triage the request. Thank you for taking the time to improve our content!

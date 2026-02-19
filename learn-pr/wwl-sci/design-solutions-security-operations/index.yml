@@ -3,7 +3,7 @@ uid: learn.wwl.design-solutions-security-operations
 metadata:
   title: Design Solutions for Security Operations
   description: "You learn techniques to design security operations capabilities including logging, auditing, Security Information, and Event Management (SIEM), Security Orchestration and Automated Response (SOAR), and security workflows."
-  ms.date: 11/11/2025
+  ms.date: 02/02/2026
   author: ceperezb
   ms.author: ceperezb
   ms.topic: module
@@ -40,10 +40,10 @@ subjects:
   - security
   - cloud-security
 units:
+- learn.wwl.design-solutions-security-operations.introduction
 - learn.wwl.design-solutions-security-operations.introduction-security-operations-secops
 - learn.wwl.design-solutions-security-operations.design-security-operations-capabilities-hybrid-multicloud-environments
 - learn.wwl.design-solutions-security-operations.design-centralized-logging-auditing
-- learn.wwl.design-solutions-security-operations.design-security-information-event-management-solutions
 - learn.wwl.design-solutions-security-operations.design-solutions-detection-response
 - learn.wwl.design-solutions-security-operations.design-solution-security-orchestration-automation-response
 - learn.wwl.design-solutions-security-operations.design-security-workflows

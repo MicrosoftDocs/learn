@@ -6,14 +6,14 @@ Choosing the right action is about aligning protection with business tolerance. 
 
 Data loss prevention (DLP) policies can take different actions when conditions are met. Each action represents a different balance between visibility, guidance, and restriction.
 
-Common action patterns include:
+In Microsoft Purview, these actions generally fall into a few enforcement categories:
 
-- Auditing activity to understand behavior without interruption
-- Warning users when an action might introduce risk
-- Blocking actions while allowing users to override with justification
-- Blocking actions outright when risk is unacceptable
+- **Audit**, where activity is logged without interrupting users
+- **Warn**, where users receive guidance but can continue their action
+- **Block with override**, where users can proceed with justification
+- **Block**, where the action is prevented entirely
 
-No single action is correct for every scenario. The right choice depends on the likelihood of risk and the consequences of disruption.
+Not every enforcement category is available in every location. Available actions depend on where the policy applies and the type of activity being evaluated. Actions are configured at the **rule level**, not at the policy level, so each rule defines its own enforcement behavior.
 
 ## Match actions to business tolerance
 
@@ -32,6 +32,8 @@ Higher-risk scenarios might justify:
 - Consistent enforcement across users and locations
 
 For many scenarios, starting with nonenforcing actions and validating behavior through simulation helps confirm assumptions before stronger enforcement is applied.
+
+Warning actions are often more effective than blocking when the goal is behavior change rather than prevention. If users consistently adjust their behavior after seeing guidance, stronger enforcement may not be necessary.
 
 ## Use policy tips and notifications as guidance
 
@@ -57,7 +59,7 @@ Overrides are most effective when:
 - Justification is required and reviewed
 - Override patterns are used to refine detection and scope
 
-If most users override a policy, it's often a signal that the policy doesn't align with real workflows.
+If most users override a policy, it's often a signal that the policy doesn't align with real workflows. Isolated overrides, by contrast, are usually expected. Repeated overrides tied to the same workflow are a stronger signal that action choice needs adjustment.
 
 ## Pay attention to what override justifications reveal
 
@@ -68,6 +70,8 @@ Patterns in justifications can help answer questions like:
 - Are users encountering the policy during normal work?
 - Is the policy triggering in unexpected scenarios?
 - Does the action match the actual level of risk?
+
+Override justifications that repeat the same explanation often point to legitimate work being interrupted. Varied or unclear justifications are more likely to indicate detection or scope issues rather than action choice.
 
 Using this feedback helps improve policy quality over time.
 

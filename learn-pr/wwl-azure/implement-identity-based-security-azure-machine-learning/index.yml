@@ -1,0 +1,55 @@
+### YamlMime:Module
+uid: learn.wwl.implement-identity-based-security-azure-machine-learning
+metadata:
+  title: "Implement identity-based security for Azure Machine Learning workspaces"
+  description: "This course teaches how to govern AI platforms using Microsoft Entra and Azure Machine Learning, covering security groups, Conditional Access, managed identities, enterprise application integration, and audit logging to continuously monitor, enforce, and improve identity‑centric security for AI workloads."
+  ms.date: 02/05/2026
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: module
+  ms.service: azure-machine-learning
+title: "Implement identity-based security for Azure Machine Learning workspaces"
+summary: This course teaches how to govern AI platforms using Microsoft Entra and Azure Machine Learning, covering security groups, Conditional Access, managed identities, enterprise application integration, and audit logging to continuously monitor, enforce, and improve identity‑centric security for AI workloads.
+abstract: |
+  After completing this module, you will be able to:
+  - Configure Microsoft Entra security groups to organize AI team members and enforce least-privilege access
+  - Implement Conditional Access policies that protect Azure Machine Learning workspace access
+  - Integrate enterprise applications with Azure Machine Learning using service principals and managed identities
+  - Evaluate security posture and access patterns for AI infrastructure using Microsoft Entra audit logs
+prerequisites: |
+  - Familiarity with Azure Machine Learning workspace concepts and basic RBAC roles
+  - Understanding of Microsoft Entra ID fundamentals including users, groups, and authentication
+  - Experience navigating the Azure portal and configuring Azure resources
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- administrator
+- data-scientist
+- data-analyst
+- database-administrator
+- business-analyst
+products:
+- azure
+- azure-rbac
+- azure-policy
+- azure-managed-applications
+- azure-information-protection
+subjects:
+- security
+- cloud-security
+- information-protection-governance
+- identity-access
+- data-management
+units:
+- learn.wwl.implement-identity-based-security-azure-machine-learning.introduction
+- learn.wwl.implement-identity-based-security-azure-machine-learning.configure-microsoft-entra-security-groups
+- learn.wwl.implement-identity-based-security-azure-machine-learning.implement-conditional-access-policies-azure
+- learn.wwl.implement-identity-based-security-azure-machine-learning.integrate-enterprise-applications-azure
+- learn.wwl.implement-identity-based-security-azure-machine-learning.evaluate-security-posture-microsoft-entra
+- learn.wwl.implement-identity-based-security-azure-machine-learning.exercise-configure-secure-access-azure-machine
+- learn.wwl.implement-identity-based-security-azure-machine-learning.knowledge-check
+- learn.wwl.implement-identity-based-security-azure-machine-learning.summary
+
+badge:
+  uid: learn.wwl.implement-identity-based-security-azure-machine-learning.badge

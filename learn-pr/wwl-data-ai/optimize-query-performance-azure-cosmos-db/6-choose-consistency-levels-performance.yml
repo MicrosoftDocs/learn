@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.optimize-query-performance-azure-cosmos-db.choose-consistency-levels-performance
+title: Choose consistency levels for optimal performance
+metadata:
+  title: Choose Consistency Levels for Optimal Performance
+  description: Choose consistency levels for optimal performance
+  ms.date: 02/05/2026
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: unit
+durationInMinutes: 11
+content: |
+  [!include[](includes/6-choose-consistency-levels-performance.md)]

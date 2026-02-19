@@ -4,6 +4,8 @@ For example, an alert might show a file was downloaded. An activity-based invest
 
 A data security investigation exists to close that gap.
 
+
+
 ## How data security investigations differ from activity-based investigation
 
 Traditional security investigation often starts with activity. An alert fires, a user performs an action, or a signal indicates something unusual. From there, the investigation focuses on timelines, indicators, and behavior.

@@ -11,7 +11,7 @@ metadata:
   ms.service: azure-quantum
   ms.subservice: core
 title: Introduction to quantum computing with Azure Quantum
-summary: What makes quantum computing so special? Learn about the qubit, the building block of a quantum computer, and how Azure Quantum can help you write quantum algorithms with the Quantum Development Kit and Q# programming language.
+summary: What makes quantum computing so special? Learn about the qubit, the building block of a quantum computer, and how you can write quantum algorithms with the Microsoft Quantum Development Kit and Q# programming language to run quantum programs on Azure Quantum.
 abstract: |
   By the end of this module, you can:
   - Tell the difference between a classical computer and a quantum computer.
@@ -23,7 +23,7 @@ abstract: |
   - Learn the concept of a qubit.
   - Review the building blocks of a quantum computer.
   - Learn about the component and application domains for Azure Quantum.
-  - Learn about the Quantum Development Kit and the Q# programming language.
+  - Learn about the Microsoft Quantum Development Kit and the Q# programming language.
   - Review the applications and case studies for quantum computing.
 prerequisites: |
   - Basic knowledge of the Azure ecosystem.

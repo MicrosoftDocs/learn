@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-started-with-ai-in-azure.develop-ai-apps
+title: Developing AI apps on Azure
+metadata:
+  title: Developing AI apps on Azure
+  description: "This unit covers the essential components that make up an AI application on Azure."
+  ms.date: 02/03/2026
+  author: sherzyang
+  ms.author: sheryang
+  ms.topic: unit
+  zone_pivot_groups: video-or-text
+durationInMinutes: 4
+content: |
+  [!include[](includes/3-develop-ai-apps.md)]

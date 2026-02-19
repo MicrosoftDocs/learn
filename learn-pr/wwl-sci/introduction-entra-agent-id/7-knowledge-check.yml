@@ -1,0 +1,112 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.introduction-entra-agent-id.knowledge-check
+title: Knowledge check
+metadata:
+  title: Module Assessment
+  description: "Module assessment"
+  ms.date: 02/09/2026
+  author: wwlpublish
+  ms.author: roberts
+  ms.topic: unit
+durationInMinutes: 5
+quiz:
+  title: Module Assessment
+  questions:
+  - content: "Which two components make up the Microsoft Entra Agent ID platform?"
+    choices:
+    - content: "Agent identities and service principals"
+      isCorrect: false
+      explanation: "Sorry, that's incorrect. Service principals are a separate identity type, not a component of the Agent ID platform."
+    - content: "Agent identities and agent identity blueprints"
+      isCorrect: true
+      explanation: "That's correct. The Microsoft Entra Agent ID platform consists of agent identities and agent identity blueprints."
+    - content: "Agent users and managed identities"
+      isCorrect: false
+      explanation: "Sorry, that's incorrect. Agent users are an optional component, and managed identities are a separate identity type."
+    - content: "Service principals and managed identities"
+      isCorrect: false
+      explanation: "Sorry, that's incorrect. These are separate identity types, not components of the Agent ID platform."
+  - content: "What is the primary difference between agent identities and service principals in credential management?"
+    choices:
+    - content: "Agent identities use passwords while service principals use certificates"
+      isCorrect: false
+      explanation: "Sorry, that's incorrect. Agent identities don't use passwords or certificates directly."
+    - content: "Service principals can't have credentials while agent identities can"
+      isCorrect: false
+      explanation: "Sorry, that's incorrect. Service principals can have their own credentials."
+    - content: "Agent identities rely on parent blueprint credentials while service principals manage their own credentials"
+      isCorrect: true
+      explanation: "That's correct. Agent identities inherit credentials from their parent blueprint, while service principals manage their own credentials independently."
+    - content: "Agent identities and service principals use the same credential management approach"
+      isCorrect: false
+      explanation: "Sorry, that's incorrect. They have different credential management approaches."
+  - content: "Which Microsoft product automatically creates a shared agent identity when you create your first agent in a project, and then creates a distinct identity when you publish the agent?"
+    choices:
+    - content: "Microsoft Copilot Studio"
+      isCorrect: false
+      explanation: "Sorry, that's incorrect. Microsoft Copilot Studio assigns agent identities when enabled at the environment level, but doesn't use the shared/distinct identity pattern."
+    - content: "Microsoft Foundry"
+      isCorrect: true
+      explanation: "That's correct. Microsoft Foundry creates a shared agent identity for development and a distinct identity when you publish the agent."
+    - content: "Azure App Service"
+      isCorrect: false
+      explanation: "Sorry, that's incorrect. Azure App Service requires developers to manually create blueprints and agent identities."
+    - content: "Microsoft Teams"
+      isCorrect: false
+      explanation: "Sorry, that's incorrect. Microsoft Teams requires developers to manually configure agent identity blueprints in the Developer Portal."
+  - content: "Which roles are required to view and manage agent identities in the Microsoft Entra admin center?"
+    choices:
+    - content: "Global Administrator or User Administrator"
+      isCorrect: false
+      explanation: "Sorry, that's incorrect. While Global Administrator has access, User Administrator is not the recommended role for agent identity management."
+    - content: "Agent ID Administrator or Cloud Application Administrator"
+      isCorrect: true
+      explanation: "That's correct. Agent ID Administrator or Cloud Application Administrator are the recommended roles for managing agent identities."
+    - content: "Security Administrator or Compliance Administrator"
+      isCorrect: false
+      explanation: "Sorry, that's incorrect. These roles don't have the required permissions for agent identity management."
+    - content: "Application Developer or Service Support Administrator"
+      isCorrect: false
+      explanation: "Sorry, that's incorrect. These roles don't have the required permissions for agent identity management."
+  - content: "What happens to RBAC permissions when you publish an agent in Microsoft Foundry?"
+    choices:
+    - content: "They automatically transfer to the new distinct identity"
+      isCorrect: false
+      explanation: "Sorry, that's incorrect. RBAC permissions don't automatically transfer when publishing an agent."
+    - content: "They must be manually reassigned to the new agent identity"
+      isCorrect: true
+      explanation: "That's correct. When you publish an agent, RBAC permissions must be manually reassigned to the new distinct agent identity."
+    - content: "They're duplicated across both the shared and distinct identities"
+      isCorrect: false
+      explanation: "Sorry, that's incorrect. Permissions aren't automatically duplicated between identities."
+    - content: "They're removed for security reasons"
+      isCorrect: false
+      explanation: "Sorry, that's incorrect. Permissions aren't removed; they simply don't transfer automatically."
+  - content: "Which high-privilege Microsoft Entra roles can be assigned to agent identities?"
+    choices:
+    - content: "Global Administrator, Privileged Role Administrator, and User Administrator"
+      isCorrect: false
+      explanation: "Sorry, that's incorrect. These high-privilege roles cannot be assigned to agent identities."
+    - content: "None - these roles are blocked from agent identities"
+      isCorrect: true
+      explanation: "That's correct. High-privilege Microsoft Entra roles like Global Administrator, Privileged Role Administrator, and User Administrator are blocked from being assigned to agent identities for security reasons."
+    - content: "Only Global Administrator"
+      isCorrect: false
+      explanation: "Sorry, that's incorrect. Global Administrator cannot be assigned to agent identities."
+    - content: "All roles can be assigned to agent identities"
+      isCorrect: false
+      explanation: "Sorry, that's incorrect. High-privilege roles are blocked from agent identities."
+  - content: "What is the primary purpose of using Microsoft Graph APIs with agent identities?"
+    choices:
+    - content: "To create user interfaces for agent management"
+      isCorrect: false
+      explanation: "Sorry, that's incorrect. Microsoft Graph APIs aren't primarily for creating user interfaces."
+    - content: "To replace the Microsoft Entra admin center"
+      isCorrect: false
+      explanation: "Sorry, that's incorrect. Microsoft Graph APIs complement rather than replace the admin center."
+    - content: "To programmatically query, manage, and automate agent identity operations"
+      isCorrect: true
+      explanation: "That's correct. Microsoft Graph APIs enable programmatic querying, management, and automation of agent identity operations at scale."
+    - content: "To store agent identity data in external systems"
+      isCorrect: false
+      explanation: "Sorry, that's incorrect. Microsoft Graph APIs are for interacting with Microsoft Entra data, not storing it externally."
