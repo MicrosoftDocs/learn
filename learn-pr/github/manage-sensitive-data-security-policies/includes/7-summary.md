@@ -42,3 +42,7 @@ This module explained how to create a new GitHub repository in a way that limits
 - [Cloning a repository](https://docs.github.com/repositories/creating-and-managing-repositories/cloning-a-repository)
 - [About Releases](https://docs.github.com/repositories/releasing-projects-on-github/about-releases)
 - [GitHub Community Guidelines](https://docs.github.com/site-policy/github-terms/github-community-guidelines)
+
+## Provide feedback
+
+Use this [issue form](https://github.com/githubpartners/microsoft-learn/issues/new/choose) to provide content feedback or suggested changes for this Microsoft Learn module. GitHub maintains this content and a team member will triage the request. Thank you for taking the time to improve our content!

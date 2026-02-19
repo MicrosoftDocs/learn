@@ -1,3 +1,5 @@
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=c4b9d1b5-a8a3-4613-82ed-4cb86b99db03]
+
 After you transform and cleanse data, the final step in your pipeline is loading it into target tables. Azure Databricks provides three core loading strategies: **append**, **overwrite**, and **merge**. Each strategy serves different use cases, and choosing the right one depends on how your source data relates to existing records.
 
 ![Diagram explaining the difference between INSERT INTO, OVERWRITE and MERGE.](../media/8-load-data-merge-insert-append.png)
