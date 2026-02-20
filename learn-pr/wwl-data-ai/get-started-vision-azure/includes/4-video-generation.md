@@ -51,8 +51,8 @@ Asynchronous means you:
 
 Video generation times are often 1–5 minutes, depending on settings. In order to run an asynchronous job using the Foundry REST interface, you need: 
 
-1. An **Azure OpenAI / Foundry resource** in a supported region and a **Sora deployment** (you deploy Sora from Foundry's Models + endpoints). 
-2. An authorization method: **API key** or **Microsoft Entra ID**
+- An **Azure OpenAI / Foundry resource** in a supported region and a **Sora deployment** (you deploy Sora from Foundry's Models + endpoints). 
+- An authorization method: **API key** or **Microsoft Entra ID**
 
 Let's take a look at using the **Azure OpenAI v1 API** with the Sora 2 model. 
 
