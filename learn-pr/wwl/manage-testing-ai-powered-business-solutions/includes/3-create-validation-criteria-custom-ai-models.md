@@ -1,6 +1,6 @@
 ## Overview
 
-This unit teaches solution architects how to design robust validation criteria for custom AI models used in enterprise environments. You will establish performance, quality, safety, and operational benchmarks to ensure that models behave predictably, meet business goals, align with compliance requirements, and operate effectively across changing data, workloads, and user interactions.
+This unit teaches solution architects how to design robust validation criteria for custom AI models used in enterprise environments. You'll establish performance, quality, safety, and operational benchmarks to ensure that models behave predictably, meet business goals, align with compliance requirements, and operate effectively across changing data, workloads, and user interactions.
 
 Validation criteria help architects consistently confirm that a model is:
 

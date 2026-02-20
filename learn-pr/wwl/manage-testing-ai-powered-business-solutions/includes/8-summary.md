@@ -6,12 +6,12 @@ The module reinforces the importance of scalable and governed testing strategies
 
 ## Key Takeaways
 
-AI systems require **new testing practices** due to probabilistic outputs and dynamic data dependency.
+- AI systems require **new testing practices** due to probabilistic outputs and dynamic data dependency.
 
-Effective validation covers **performance, quality, safety, grounding, and operational behavior**.
+- Effective validation covers **performance, quality, safety, grounding, and operational behavior**.
 
-Testing must evaluate **agents, prompts, custom models, and multi-app business processes**.
+- Testing must evaluate **agents, prompts, custom models, and multi-app business processes**.
 
-Copilot can **accelerate test creation**, improve coverage, and standardize templates when guided by clear prompts.
+- Copilot can **accelerate test creation**, improve coverage, and standardize templates when guided by clear prompts.
 
-Solution architects apply **governance, metrics, and repeatable frameworks** to keep AI solutions reliable throughout their lifecycle.
+- Solution architects apply **governance, metrics, and repeatable frameworks** to keep AI solutions reliable throughout their lifecycle.

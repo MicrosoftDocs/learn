@@ -1,6 +1,6 @@
 ## Overview
 
-This unit teaches solution architects how to design and implement a structured and repeatable process for testing AI agents before production deployment. Testing ensures that agents operate reliably, meet business requirements, and behave predictably across diverse scenarios. You will define key performance metrics, establish standardized test plans, and recommend measurement strategies to validate agent quality, usability, and compliance.
+This unit teaches solution architects how to design and implement a structured and repeatable process for testing AI agents before production deployment. Testing ensures that agents operate reliably, meet business requirements, and behave predictably across diverse scenarios. You'll define key performance metrics, establish standardized test plans, and recommend measurement strategies to validate agent quality, usability, and compliance.
 
 ## 1. Testing Framework for AI Agents
 
