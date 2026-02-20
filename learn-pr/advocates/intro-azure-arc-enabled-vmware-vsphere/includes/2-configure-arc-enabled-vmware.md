@@ -1,6 +1,6 @@
 Connecting your VMware vCenter Server instance to Azure Arc enables you to start using the Azure Arc-enabled VMware vSphere features. You make this connection with a helper script that deploys the Azure Arc resource bridge virtual appliance in your vCenter environment. Once deployed, the script then installs a VMware cluster extension to provide a continuous connection between vCenter Server and Azure Arc.
 
-Prior to performing these steps, you need access to an Microsoft Entra account that has the Owner, Contributor, or Azure Arc VMware Private Clouds Onboarding role to a resource group in the target subscription. The vCenter server you want to connect also needs to meet the following requirements:
+Prior to performing these steps, you need access to a Microsoft Entra account that has the Owner, Contributor, or Azure Arc VMware Private Clouds Onboarding role to a resource group in the target subscription. The vCenter server you want to connect also needs to meet the following requirements:
 
 - vCenter Server version 7 or 8.
 - A virtual network that can provide internet access, directly or through a proxy. It must also be possible for VMs on this network to communicate with the vCenter server on TCP port (usually 443).
@@ -117,7 +117,7 @@ To make resources in your Azure VMware Solution private cloud enabled for Azure,
 
 The enable action starts a deployment and creates a resource in Azure, creating representative objects in Azure for your VMware vSphere resources. It allows you to manage who can access those resources through Role-based access control granularly.
 
-## Roles and Permissions
+## Roles and permissions
 
 You assign permissions to resources in Azure by adding security principals to role based access control roles. The Built-in Roles for Azure Arc-enabled VMware vSphere include
 
