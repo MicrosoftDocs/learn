@@ -1,6 +1,6 @@
-This module equips solution architects with the knowledge and frameworks required to ensure that AIpowered business agents operate reliably, deliver highquality outcomes, and continuously improve in production environments. You developed an understanding of how to analyze agent behavior, monitor performance and usage, interpret telemetry signals, and apply tuning strategies that align with enterprise governance and business goals.
+This module equips solution architects with the knowledge and frameworks required to ensure that AIpowered business agents operate reliably, deliver high-quality outcomes, and continuously improve in production environments. You analyze agent behavior and monitor performance and usage. You interpret telemetry signals and apply tuning strategies that support enterprise goals.
 
-The module emphasized datadriven decisionmaking, structured analysis methods, and observability practices that help architects diagnose issues early, optimize performance, and maintain compliance across AI ecosystems.
+The module emphasized data driven decision making, structured analysis methods, and observability practices that help architects diagnose issues early, optimize performance, and maintain compliance across AI ecosystems.
 
 ## Key Takeaways
 
@@ -10,7 +10,7 @@ Effective monitoring spans multiple layers: operational health, performance, qua
 
 A strong monitoring operating model includes defined roles, standardized metrics, log review cadence, and clear expectations for agent behavior.
 
-Guardrails and thresholdbased alerts help detect anomalies, prevent misuse, and maintain governance alignment.
+Guardrails and threshold based alerts help detect anomalies, prevent misuse, and maintain governance alignment.
 
 ### 2. Enterprise Tools Enable Deep Observability
 
@@ -28,7 +28,7 @@ Categorizing backlog items into domains like accuracy, knowledge, performance, U
 
 User feedback—volume, severity, sentiment, and friction points—provides critical signals for improvement planning.
 
-Conversation transcripts reveal root causes that are not always visible in raw telemetry.
+Conversation transcripts reveal root causes that aren't always visible in raw telemetry.
 
 ### 4. Telemetry and Diagnostics Reveal Root Causes
 
@@ -42,24 +42,25 @@ Knowledge tuning: update, restructure, or remove outdated content.
 
 Behavioral tuning: clarify orchestration steps, refine prompts, and introduce fallback logic.
 
-Performance tuning: optimize workflows, reduce unnecessary actions, fix connector or dependency bottlenecks.
+Performance tuning: optimize workflows, reduce unnecessary actions, fix connector, or dependency bottlenecks.
 
-Governancealigned tuning ensures that DLP, permissions, and sensitivity rules remain intact.
+Governance aligned tuning ensures that DLP, permissions, and sensitivity rules remain intact.
 
-### 6. Performance and UserCentered Metrics Track Effectiveness
+### 6. Performance and User Centered Metrics Track Effectiveness
 
 Core operational metrics: latency, throughput, error rate, and resource utilization.
 
 Quality metrics: accuracy, knowledge coverage, and action effectiveness.
 
-Usercentered metrics: satisfaction, abandonment rate, and task completion rate (the best indicator of user success).
+User centered metrics: satisfaction, abandonment rate, and task completion rate (the best indicator of user success).
 
-Monitoring model and drift indicators ensures models remain reliable over time.
+Monitoring model and drift indicators ensure models remain reliable over time.
 
 ### 7. Continuous Improvement Is an Ongoing Lifecycle
 
 AI agents require an iterative approach: monitor → analyze → tune → validate → release → monitor again.
 
 Regular updates to knowledge content, workflows, guardrails, and orchestration refine agent behavior.
+
 
 Insights from telemetry and transcripts feed into improvement cycles and stakeholder communication.
