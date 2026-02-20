@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.wwl.analyze-telemetry-logs-metrics
+metadata:
+  title: Analyze App Telemetry with Logs and Metrics
+  description: Query, visualize, and act on application telemetry collected in Application Insights to detect failures, identify performance trends, and maintain operational visibility for AI solutions on Azure.
+  ms.date: 02/19/2026
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: module-standard-task-based
+  ai-usage: ai-assisted
+  ms.service: azure-monitor
+  ms.subservice: application-insights
+title: Analyze app telemetry with logs and metrics
+summary: Learn to write KQL queries against Application Insights logs, explore error patterns and performance trends, build dashboards and workbooks for ongoing visibility, and configure alerts to detect failures and anomalies in AI solutions on Azure.
+abstract: |
+  After completing this module, you'll be able to:
+    - Write KQL queries to retrieve and analyze application telemetry from Application Insights.
+    - Explore log data to identify error patterns, performance bottlenecks, and trends in application behavior.
+    - Build Azure dashboards that display key telemetry metrics and log query results for operational monitoring.
+    - Create Azure Monitor Workbooks for interactive, parameter-driven telemetry analysis.
+    - Configure alert rules that detect application failures, performance degradation, and anomalies.
+prerequisites: |
+  Before beginning this module, you should have:
+  - Basic understanding of Azure services and the Azure portal.
+  - Familiarity with application monitoring concepts such as logs, metrics, and distributed tracing.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- azure-monitor
+units:
+- learn.wwl.analyze-telemetry-logs-metrics.introduction
+- learn.wwl.analyze-telemetry-logs-metrics.write-basic-kql-queries
+- learn.wwl.analyze-telemetry-logs-metrics.explore-logs-errors-performance
+- learn.wwl.analyze-telemetry-logs-metrics.build-dashboards-app-telemetry
+- learn.wwl.analyze-telemetry-logs-metrics.create-workbooks-interactive-analysis
+- learn.wwl.analyze-telemetry-logs-metrics.set-alerts-app-failures-anomalies
+- learn.wwl.analyze-telemetry-logs-metrics.exercise-query-logs-kql
+- learn.wwl.analyze-telemetry-logs-metrics.knowledge-check
+- learn.wwl.analyze-telemetry-logs-metrics.summary
+badge:
+  uid: learn.wwl.analyze-telemetry-logs-metrics.badge
