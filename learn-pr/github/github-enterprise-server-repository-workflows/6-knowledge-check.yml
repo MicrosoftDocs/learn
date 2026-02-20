@@ -1,0 +1,85 @@
+### YamlMime:ModuleUnit
+uid: learn.github.github-enterprise-server-repository-workflows.knowledge-check
+title: Knowledge check
+metadata:
+  unitType: knowledge-check
+  title: Knowledge Check
+  description: Knowledge check for the Repositories, Branching & Collaboration on GitHub Enterprise Server module.
+  ms.date: 02/16/2026
+  author: camihmerhar
+  ms.author: camhernandez
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+quiz:
+  questions:
+  - content: "Why do enterprises commonly restrict direct pushes to the default branch?"
+    choices:
+    - content: "To reduce repository size."
+      isCorrect: false
+      explanation: "Incorrect. Restricting direct pushes is intended to enforce governance processes rather than manage repository size."
+    - content: "To enforce review, testing, and auditability."
+      isCorrect: true
+      explanation: "Correct. Protected default branches ensure changes go through pull requests with reviews, automated checks, and auditable history."
+    - content: "To limit developer access."
+      isCorrect: false
+      explanation: "Incorrect. The goal is governance and quality control, not restricting legitimate collaboration."
+    - content: "Because GHES does not support direct pushes."
+      isCorrect: false
+      explanation: "Incorrect. GHES supports direct pushes, but organizations often restrict them through branch protection policies."
+  - content: "What is the primary purpose of branch protection rules?"
+    choices:
+    - content: "Improve UI performance."
+      isCorrect: false
+      explanation: "Incorrect. Branch protection rules focus on governance and merge requirements rather than performance."
+    - content: "Enforce collaboration and governance policies."
+      isCorrect: true
+      explanation: "Correct. Branch protection rules define required conditions such as approvals, status checks, and pull request workflows before merging."
+    - content: "Automatically resolve merge conflicts."
+      isCorrect: false
+      explanation: "Incorrect. Merge conflicts must be resolved manually or through supported workflows."
+    - content: "Replace pull requests."
+      isCorrect: false
+      explanation: "Incorrect. Branch protection rules typically require pull requests rather than replace them."
+  - content: "Why are pull requests especially important in GHES environments?"
+    choices:
+    - content: "They reduce storage usage."
+      isCorrect: false
+      explanation: "Incorrect. Pull requests are primarily used for collaboration and governance, not storage optimization."
+    - content: "They enable GitHub Actions."
+      isCorrect: false
+      explanation: "Incorrect. GitHub Actions can run independently of pull request usage."
+    - content: "They provide collaboration, control, and traceability."
+      isCorrect: true
+      explanation: "Correct. Pull requests capture discussions, reviews, automated checks, and merge decisions, supporting enterprise traceability."
+    - content: "They eliminate the need for documentation."
+      isCorrect: false
+      explanation: "Incorrect. Documentation remains important alongside pull request workflows."
+  - content: "Your pull request has an approval, but the merge option is disabled because a required status check is failing. What should you do first?"
+    choices:
+    - content: "Push directly to the protected branch to bypass the pull request."
+      isCorrect: false
+      explanation: "Incorrect. Protected branches prevent bypassing required checks."
+    - content: "Ask a teammate to merge it without fixing the check."
+      isCorrect: false
+      explanation: "Incorrect. Required status checks must pass before merging."
+    - content: "Investigate and fix the failing check, then re-run validation."
+      isCorrect: true
+      explanation: "Correct. Required status checks must succeed before the pull request meets merge requirements."
+    - content: "Delete and recreate the branch."
+      isCorrect: false
+      explanation: "Incorrect. Recreating the branch does not resolve failing validation checks."
+  - content: "A pull request modifies a directory that requires review from code owners, but no code owner has approved it. What is the most likely next step?"
+    choices:
+    - content: "Merge anyway because at least one reviewer approved."
+      isCorrect: false
+      explanation: "Incorrect. Required CODEOWNERS approvals must be satisfied before merging."
+    - content: "Request review from the required code owners and wait for approval."
+      isCorrect: true
+      explanation: "Correct. When CODEOWNERS reviews are required, designated owners must approve changes affecting their paths."
+    - content: "Convert the pull request to a draft and merge immediately."
+      isCorrect: false
+      explanation: "Incorrect. Draft status does not bypass review requirements."
+    - content: "Delete the branch protection rule."
+      isCorrect: false
+      explanation: "Incorrect. Branch protection rules enforce governance policies and should not be removed to bypass requirements."
