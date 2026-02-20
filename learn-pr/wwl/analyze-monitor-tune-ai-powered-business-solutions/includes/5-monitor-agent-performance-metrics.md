@@ -156,9 +156,9 @@ Reconfigure environment or connector settings.
 
 Apply versioning and rollback strategies for safety.
 
-## 6. Architecture Visuals
+## 6. Architecture
 
-### AI Agent Performance Pipeline (TextOnly Diagram)
+### AI Agent Performance Pipeline 
 
 User Input
 

@@ -2,7 +2,7 @@ This module is designed to empower solution architects with the foundational kno
 
 AI-powered agents are transforming business operations by automating workflows, enhancing decision-making, and enabling new forms of user interaction. However, their success depends on robust monitoring, structured analysis, and systematic tuning practices. Solution architects play a pivotal role in defining strategies that guarantee agents operate predictably, deliver high-quality outcomes, and comply with organizational governance standards.
 
-## Throughout this module, you will learn to:
+## Throughout this module, you will learn about:
 
 - **Establish Monitoring Frameworks**: Understand multi-layered monitoring requirements, including operational health, performance metrics, quality assurance, usage insights, and risk management.
 - **Leverage Industry Tools and Processes**: Explore recommended monitoring tools such as Azure Monitor, Microsoft 365 Admin Analytics, Copilot analytics dashboards, Power Platform Admin Center, and enterprise observability platforms. Learn how to design resilient monitoring models, configure guardrails, set alerts, and conduct regular quality evaluations.

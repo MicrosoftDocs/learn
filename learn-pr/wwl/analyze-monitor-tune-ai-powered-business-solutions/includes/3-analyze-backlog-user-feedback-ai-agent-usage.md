@@ -66,41 +66,22 @@ Use a structured, repeatable model to elevate analysis to a solutionarchitecture
 
 **Governance and Compliance**: Guardrail triggers, DLP conflicts, restricted actions
 
-#### Professional Visual - Backlog Categorization Table (Text Format)
+#### Backlog Categorization Table
 
-+----------------------+------------------------------------------+
-
-| Category             | Example Backlog Items                    |
-
-+----------------------+------------------------------------------+
-
-| Accuracy             | Misinterpreted queries; missing context  |
-
-| Knowledge            | Outdated docs; missing domain articles   |
-
-| Performance          | High latency; connector throttling       |
-
-| UX                   | Confusing flows; unclear instructions    |
-
-| Integration          | API failures; broken actions             |
-
-| Governance           | Data access blocked; DLP alerts          |
-
-+---------------------------------------------------------------+
+| Category | Example Backlog Items |
+| --- | --- |
+| Accuracy | Misinterpreted queries; missing context |
+| Knowledge | Outdated docs; missing domain articles |
+| Performance | High latency; connector throttling |
+| UX | Confusing flows; unclear instructions |
+| Integration | API failures; broken actions |
+| Governance | Data access blocked; DLP alerts |
 
 ### 2.2 Prioritize by Impact and Effort
 
 Use a matrix to classify items based on business impact and required effort.
 
-#### Textbased Impact/Effort Matrix
-
-High Impact / Low Effort     → Priority 1 (Immediate action)
-
-High Impact / High Effort    → Priority 2 (Plan and schedule)
-
-Low Impact / Low Effort      → Priority 3 (Optimize when possible)
-
-Low Impact / High Effort     → Priority 4 (Defer; reassess later)
+:::image type="content" source="../media/impact-effort-prioritization-matrix.png" alt-text="Impact effort prioritization matrix":::
 
 ### 2.3 Leverage User Feedback Signals
 
@@ -116,9 +97,10 @@ Missed expectations versus business workflows
 
 Suggestions for improving agent guidance
 
-#### Professional Visual - User Feedback Funnel
+#### User Feedback Funnel
 
-User Input → Categorization → Pattern Detection → Impact Scoring → Action Plan
+:::image type="content" source="../media/user-feedback-funnel.png" alt-text="User feedback funnel":::
+
 
 ## 3. Using Conversation Transcripts to Identify Patterns
 
@@ -144,24 +126,6 @@ Identify training or knowledge updates needed
 
 Recommend guardrail adjustments or action limits
 
-### Transcript Analysis Diagram (Text)
-
-Transcript Logs
-
-    ↓
-
-Intent Mapping
-
-    ↓
-
-Error/Failure Pattern Detection
-
-    ↓
-
-Knowledge or Flow Adjustment
-
-    ↓
-
 Agent Improvement Plan
 
 ## 4. Monitoring Agent Usage and Behavior
@@ -186,21 +150,13 @@ Data access denials
 
 Performance and latency
 
-### TextBased Agent Health Summary Table
+### Agent Health Summary Table
 
-+----------------------+------------+--------------+---------------+
-
-| Agent                | Success %  | Avg Response | Issues Logged |
-
-+----------------------+------------+--------------+---------------+
-
-| Finance Assistant    | 96%        | 2.1 sec      | 8             |
-
-| Supply Chain Helper  | 91%        | 2.8 sec      | 14            |
-
-| Analytics Coach      | 88%        | 3.2 sec      | 21            |
-
-+-----------------------------------------------------------------+
+| Agent | Success % | Avg Response | Issues Logged |
+| --- | --- | --- | --- |
+| Finance Assistant | 96% | 2.1 sec | 8 |
+| Supply Chain Helper | 91% | 2.8 sec | 14 |
+| Analytics Coach | 88% | 3.2 sec | 21 |
 
 ## 5. Closing the Loop: Turning Insights into Action
 
@@ -246,29 +202,6 @@ Risks or compliance issues
 
 Expected outcomes
 
-## 6. Sample Architecture View - Backlog and Feedback Flow
-
-Backlog & Feedback Intake
-
-        ↓
-
-Analysis & Categorization
-
-        ↓
-
-Architectural Review & Prioritization
-
-        ↓
-
-Improvement Design & Development
-
-        ↓
-
-Deployment & Validation
-
-        ↓
-
-Monitoring & Continuous Improvement
 
 ## References
 

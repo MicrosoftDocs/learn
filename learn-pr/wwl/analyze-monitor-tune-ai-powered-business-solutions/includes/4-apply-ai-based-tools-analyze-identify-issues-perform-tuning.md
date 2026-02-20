@@ -26,9 +26,8 @@ A structured workflow ensures consistency and helps isolate root causes faster.
 
 ### Tuning Workflow (Text Diagram)
 
-User Behavior → Telemetry & Logs → Issue Categorization → Root Cause Analysis
+:::image type="content" source="../media/tuning-workflow.png" alt-text="Tuning workflow":::
 
-→ Tuning Actions → Validation → Deployment → Continuous Monitoring
 
 ### Common Root Cause Categories
 
@@ -133,27 +132,15 @@ Align agent capabilities with enterprise compliance requirements.
 
 Ensure logging and auditing remain intact after changes.
 
-## 6. Operational Visualization Examples
-
 ### AI Issue Mapping Chart (TextBased)
 
-Issue Theme → Potential Cause → Required Tuning
-
-----------------------------------------------
-
-Incorrect responses → Knowledge gap → Add/update content  
-
-Slow execution → Workflow complexity → Optimize steps  
-
-Blocked actions → Governance → Adjust roles/labels  
-
-Unexpected behavior → Model logic → Refine agent instructions  
-
-Frequent restarts → Integration failures → Correct API/connector settings
-
-**AI Continuous Improvement Loop (Text Diagram)**
-
-Monitor → Analyze → Tune → Validate → Release → Monitor
+| Issue Theme | Potential Cause | Required Tuning |
+| --- | --- | --- |
+| Incorrect responses | Knowledge gap | Add/update content |
+| Slow execution | Workflow complexity | Optimize steps |
+| Blocked actions | Governance | Adjust roles/labels |
+| Unexpected behavior | Model logic | Refine agent instructions |
+| Frequent restarts | Integration failures | Correct API/connector settings |
 
 ## References
 

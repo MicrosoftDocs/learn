@@ -18,33 +18,9 @@ You will explore monitoring processes, recommended tools, observability patterns
 
 **Risk, Compliance, and Security**<br>Guardrail violations, sensitivedata handling, suspicious activity spikes, adherence to organizational policies.
 
-### Professional Visual: AI Agent Monitoring Layers (Text Diagram)
+### AI Agent Monitoring Layers
 
-+--------------------------------------------------------+
-
-|                 User Interaction Layer                 |
-
-|        (Usage metrics, satisfaction feedback)          |
-
-+--------------------------------------------------------+
-
-|                 Agent Behavior Layer                   |
-
-|   (Quality checks, reasoning success, output review)   |
-
-+--------------------------------------------------------+
-
-|            Observability & Telemetry Layer             |
-
-| (Logs, traces, metrics, alerts, analytics dashboards)  |
-
-+--------------------------------------------------------+
-
-|                 Platform Infrastructure                |
-
-|   (Capacity, performance, throttling, availability)    |
-
-+--------------------------------------------------------+
+:::image type="content" source="../media/ai-agent-monitoring-layers.png" alt-text="AI agent monitoring layers":::
 
 ## 2. Recommended Processes for Monitoring AI Agents
 
@@ -184,23 +160,18 @@ Drift detection visualizations
 
 Compliance trend reports
 
-#### Example Visual (Text-Based): Agent Health Summary
+#### Example: Agent Health Summary
 
-Agent Name | Success Rate | Avg. Response Time | Errors Today | Usage Trend
-
------------|--------------|--------------------|--------------|-------------------
-
-Sales Helper | 98% | 1.8 sec | 3 | ↑ Increasing
-
-Ops Agent | 92% | 2.5 sec | 17 | → Steady
-
-Finance Advisor | 86% | 3.2 sec | 28 | ↓ Decreasing
+| Agent Name | Success Rate | Avg. Response Time | Errors Today | Usage Trend |
+| --- | --- | --- | --- | --- |
+| Sales Helper | 98% | 1.8 sec | 3 | ↑ Increasing |
+| Ops Agent | 92% | 2.5 sec | 17 | → Steady |
+| Finance Advisor | 86% | 3.2 sec | 28 | ↓ Decreasing |
 
 ### 4. Designing an Enterprise Monitoring Architecture for Agents
 
-#### Text Diagram
+:::image type="content" source="../media/designing-enterprise-monitoring-architecture-for-agents.png" alt-text="Designing enterprise monitoring architecture for AI agents":::
 
-User Prompts → Agent Actions → Logs → Telemetry Storage → Dashboards & Alerts → Governance Review → Continuous Improvement
 
 #### Best Practices
 

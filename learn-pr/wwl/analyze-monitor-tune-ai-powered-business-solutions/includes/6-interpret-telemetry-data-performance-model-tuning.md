@@ -52,21 +52,15 @@ Solution architects should focus on **patterns**, not isolated events.
 
 **High token usage**<br>Suggests verbose outputs, unclear prompts, or an overly complex workflow.
 
-### Visual: Performance Signal Map (TextBased Chart)
+### Performance Signal Map 
 
-Signal Type           | Possible Cause                 | Architect Action
-
----------------------------------------------------------------------------
-
-Latency Increase      | Model overload, connector lag  | Optimize workflow, cache data
-
-High Token Usage      | Verbose outputs                | Adjust prompt patterns
-
-Error Spike           | Integration/API failure        | Validate dependencies
-
-Quality Drop          | Model drift, missing context   | Update knowledge sources
-
-Guardrail Triggers    | Policy conflict                | Adjust governance rules
+| Signal Type | Possible Cause | Architect Action |
+| --- | --- | --- |
+| Latency Increase | Model overload, connector lag | Optimize workflow, cache data |
+| High Token Usage | Verbose outputs | Adjust prompt patterns |
+| Error Spike | Integration/API failure | Validate dependencies |
+| Quality Drop | Model drift, missing context | Update knowledge sources |
+| Guardrail Triggers | Policy conflict | Adjust governance rules |
 
 ## 3. Model Tuning Guidance
 
@@ -100,13 +94,10 @@ A consistent workflow helps isolate issues quickly.
 
 **Validate Improvements**<br>Compare beforeandafter telemetry patterns to ensure successful tuning.
 
-## 5. Visual: Architecture Flow of Telemetry Analysis
+## 5. Architecture Flow of Telemetry Analysis
 
-_(Textbased diagram suitable for Word)_
+:::image type="content" source="../media/architecture-flow-telemetry-analysis.png" alt-text="Architecture Flow of Telemetry Analysis":::
 
-User Input → AI Processing → Telemetry Collection → Analytics Dashboards →  
-
-Architect Interpretation → Tuning Actions → Redeployment → Continuous Monitoring
 
 ## 6. Performance KPIs for AI Systems
 
