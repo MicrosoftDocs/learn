@@ -47,12 +47,12 @@ quiz:
       explanation: "You need to provide the deployment name of the model, not the Foundry resource name, when making API calls to generate images."
   - content: "Why is video generation with Sora models in Microsoft Foundry handled as an asynchronous job?"
     choices:
-    - content: "Because, video generation requires user interaction during rendering."
+    - content: "Because video generation requires user interaction during rendering."
       isCorrect: false
       explanation: "Video generation doesn't require user interaction during rendering."
-    - content: "Because, the REST API doesn't support synchronous requests."
+    - content: "Because the REST API doesn't support synchronous requests."
       isCorrect: false
       explanation: "REST APIs absolutely can be synchronous. In this content, the reason given for async is workload duration and compute cost, not that it's not possible to process synchronously."
-    - content: "Because, video generation is resource‑intensive and takes time to complete."
+    - content: "Because video generation is resource‑intensive and takes time to complete."
       isCorrect: true
       explanation: "Video generation is computationally intensive and can take several minutes to complete. For this reason, Foundry runs video generation as an asynchronous process where you create a job, poll for its status, and download the video once it's finished."
