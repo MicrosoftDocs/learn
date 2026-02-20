@@ -18,5 +18,5 @@ To learn more, check out the links below.
 
 - Try out a [quickstart from the documentation to use images in your AI chats](/azure/ai-foundry/openai/gpt-v-quickstart). 
 - Learn more about [vision-enabled chat models](/azure/ai-foundry/openai/how-to/gpt-with-vision). 
-- Learn more about [how to use Azure OpenAI image generation models](/azure/ai-foundry/openai/how-to/dall-e?view=foundry&preserve-view=true&tabs=gpt-image-1).
-- Learn more about [video generation with Sora](/azure/ai-foundry/openai/concepts/video-generation?view=foundry&tabs=python-entra).
+- Learn more about [how to use Azure OpenAI image generation models](/azure/ai-foundry/openai/how-to/dall-e).
+- Learn more about [video generation with Sora](/azure/ai-foundry/openai/concepts/video-generation).
