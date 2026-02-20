@@ -13,15 +13,15 @@ durationInMinutes: 3
 content: "Choose the best response for each of the following questions."
 quiz:
   questions:
-  - content: "Which statement best explains why traditional software testing is not sufficient for AI-powered business solutions?"
+  - content: "Which statement best explains why traditional software testing isn't sufficient for AI-powered business solutions?"
     choices:
     - content: "AI solutions require more UI automation than traditional apps."
       isCorrect: false
-      explanation: "Incorrect. While UI automation may be part of testing, it does not address the unique challenges of AI systems."
+      explanation: "Incorrect. While UI automation may be part of testing, it doesn't address the unique challenges of AI systems."
     - content: "AI outputs are probabilistic and can vary based on context, data, and input phrasing."
       isCorrect: true
-      explanation: "Correct. AI models produce probabilistic, context-dependent outputs. Two similar inputs can generate different results depending on data grounding, prompt variations, or system state. This variability requires new testing approaches that validate behavior patterns, safety, guardrails, grounding integrity, and consistency—areas traditional deterministic software testing does not fully cover."
-    - content: "AI systems do not require validation of compliance or safety."
+      explanation: "Correct. AI models produce probabilistic, context-dependent outputs. Two similar inputs can generate different results depending on data grounding, prompt variations, or system state. This variability requires new testing approaches that validate behavior patterns, safety, guardrails, grounding integrity, and consistency—areas traditional deterministic software testing doesn't fully cover."
+    - content: "AI systems don't require validation of compliance or safety."
       isCorrect: false
       explanation: "Incorrect. AI systems often require rigorous validation for compliance and safety, especially in regulated industries."
     - content: "AI solutions only need to be tested once before deployment."
@@ -31,10 +31,10 @@ quiz:
     choices:
     - content: "Length of the conversation"
       isCorrect: false
-      explanation: "Incorrect. Conversation length does not measure the quality or alignment of AI outputs with business outcomes."
+      explanation: "Incorrect. Conversation length doesn't measure the quality or alignment of AI outputs with business outcomes."
     - content: "Number of users interacting with the AI"
       isCorrect: false
-      explanation: "Incorrect. While user engagement is important, it does not directly validate the accuracy or relevance of AI outputs."
+      explanation: "Incorrect. While user engagement is important, it doesn't directly validate the accuracy or relevance of AI outputs."
     - content: "Accuracy and relevance of the AI's responses"
       isCorrect: true
       explanation: "Correct. To ensure an AI solution is delivering value, you must confirm that the outputs are accurate, relevant, and aligned with business intent. This directly validates whether the AI is producing correct insights or actions that support real business workflows."
@@ -49,9 +49,9 @@ quiz:
     - content: "Because AI output quality depends on consistent, trusted, and well-timed input data from across integrated systems."
       isCorrect: true
       explanation: "Correct. AI decisions depend on data flowing across multiple apps. Workflow orchestration can break when one app changes, data may be duplicated or transformed, and AI output quality relies on consistent, trusted, well-timed input data. Testing must validate the entire business process to ensure accurate outputs."
-    - content: "Because testing individual apps is not possible with AI solutions."
+    - content: "Because testing individual apps isn't possible with AI solutions."
       isCorrect: false
-      explanation: "Incorrect. Individual app testing is still possible, but it does not validate the end-to-end behavior of AI solutions that span multiple systems."
-    - content: "Because Dynamics 365 apps cannot share data without manual intervention."
+      explanation: "Incorrect. Individual app testing is still possible, but it doesn't validate the end-to-end behavior of AI solutions that span multiple systems."
+    - content: "Because Dynamics 365 apps can't share data without manual intervention."
       isCorrect: false
       explanation: "Incorrect. Dynamics 365 apps integrate through connectors, data sync, and automations. The challenge is validating that these integrations work correctly for AI-driven workflows."

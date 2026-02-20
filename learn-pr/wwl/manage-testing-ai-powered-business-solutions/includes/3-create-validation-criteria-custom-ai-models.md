@@ -57,7 +57,7 @@ Below are key metrics that must be included in the evaluation of custom AI Model
 
 ## 3. Define Qualitative Validation Criteria
 
-Qualitative evaluation helps architects identify nuanced issues that numeric metrics cannot capture.
+Qualitative evaluation helps architects identify nuanced issues that numeric metrics can't capture.
 
 ### Criteria Examples
 

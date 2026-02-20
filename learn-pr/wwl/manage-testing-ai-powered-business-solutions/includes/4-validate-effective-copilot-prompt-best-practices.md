@@ -44,7 +44,7 @@ Solution architects validate prompts not as one-off instructions, but as **repea
 
 - **Validate constraints** Tone, length, format, exclusions, role, audience.
 
-- **Evaluate for safety** Ensure the prompt cannot unintentionally trigger sensitive or restricted actions.
+- **Evaluate for safety** Ensure the prompt can't unintentionally trigger sensitive or restricted actions.
 
 - **Run multi-scenario testing** Validate prompt quality across multiple phrasings and user types.
 
