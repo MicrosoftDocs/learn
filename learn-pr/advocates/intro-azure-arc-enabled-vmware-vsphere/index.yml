@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.azure-arc-enabled-vmware-vsphere
+uid: learn.azure-arc-enabled-vmware
 metadata:
   ms.author: orthomas
   author: Orin-Thomas
@@ -28,10 +28,10 @@ roles:
 products:
 - azure
 units:
-- learn.azure-arc-enabled-vmware-vsphere.azure-arc-enabled-vmware-vsphere
-- learn.azure-arc-enabled-vmware-vsphere.configure-arc-enabled-vmware-vsphere
-- learn.azure-arc-enabled-vmware-vsphere.azure-arc-enabled-vmware-vm-operations
-- learn.azure-arc-enabled-vmware-vsphere.knowledge-check
-- learn.azure-arc-enabled-vmware-vsphere.summary
+- learn.azure-arc-enabled-vmware.azure-arc-enabled-vmware
+- learn.azure-arc-enabled-vmware.configure-arc-enabled-vmware
+- learn.azure-arc-enabled-vmware.azure-arc-enabled-vmware-vm-operations
+- learn.azure-arc-enabled-vmware.knowledge-check
+- learn.azure-arc-enabled-vmware.summary
 badge:
-  uid: learn.azure-arc-enabled-vmware-vsphere-badge
+  uid: learn.azure-arc-enabled-vmware-badge
