@@ -1,8 +1,8 @@
 ## Overview
 
-This unit teaches solution architects how to design and implement a performancemonitoring strategy for AI agents across enterprise environments. You will learn how to evaluate operational health, quality, usage trends, and compliance signals using AIbased analysis tools and structured observability practices. This includes establishing key performance metrics, interpreting telemetry, identifying anomalies, and applying continuous tuning methods.
+This unit teaches solution architects how to design and implement a performance monitoring strategy for AI agents across enterprise environments. You'll learn how to evaluate operational health, quality, usage trends, and compliance signals using AIbased analysis tools and structured observability practices. This approach includes establishing key performance metrics, interpreting telemetry, identifying anomalies, and applying continuous tuning methods.
 
-Solution architects are responsible for ensuring that agents perform reliably at scale, align with business outcomes, and meet governance expectations. This unit provides a repeatable monitoring framework that supports highconfidence deployment, optimization, and lifecycle management.
+Solution architects are responsible for ensuring that agents perform reliably at scale, align with business outcomes, and meet governance expectations. This unit provides a repeatable monitoring framework that supports high confidence deployment, optimization, and lifecycle management.
 
 ## 1. Foundations of Agent Performance Monitoring
 
@@ -62,7 +62,7 @@ Solution architects should define and track a baseline set of performance indica
 - Power Platforms Admin Center
 - Third-party, Foundry-like solutions
 
-Every organization will have a different tool set and not everything will be Microsoft specific. So architects will need to analyze the below components regardless of the platform toolsets in an organization. 
+Every organization has a different tool set and not everything is Microsoft specific. So architects need to analyze the below components regardless of the platform toolsets in an organization. 
 
 ### 3.1 Observability Tools (General)
 
@@ -74,7 +74,7 @@ System logs
 
 Execution traces
 
-Triggerbased run logs
+Trigger based run logs
 
 Exception events
 
@@ -86,9 +86,9 @@ User interaction logs
 
 Conversation transcripts
 
-Intentrecognition patterns
+Intent recognition patterns
 
-Featureusage signals
+Feature usage signals
 
 #### Analytics Dashboards
 
@@ -106,7 +106,7 @@ Quality indicators
 
 ## 4. Monitoring Model Performance for Generative AI
 
-Even when agent logic is stable, modeldriven behavior can shift over time. Architects should monitor:
+Even when agent logic is stable, model-driven behavior can shift over time. Architects should monitor:
 
 ### Model Drift
 
@@ -114,7 +114,7 @@ Shifts in response patterns
 
 Declining accuracy in recurring tasks
 
-Increased hallucination or offtopic responses
+Increased hallucination or off topic responses
 
 ### Token Consumption
 
@@ -211,5 +211,6 @@ Continuous Monitoring Loop
 [https://learn.microsoft.com/en-us/microsoft-copilot-studio/analytics-overview](/microsoft-copilot-studio/analytics-overview)
 
 [https://learn.microsoft.com/en-us/training/modules/monitor-generative-ai-app/](/training/modules/monitor-generative-ai-app/)
+
 
 [https://learn.microsoft.com/en-us/training/modules/monitor-azure-machine-learning/](/training/modules/monitor-azure-machine-learning/)
