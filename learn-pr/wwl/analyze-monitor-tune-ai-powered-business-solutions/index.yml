@@ -11,9 +11,9 @@ metadata:
 title: "Monitor, analyze, and tune AI agents"
 summary: Learn to ensure AI agents operate reliably, deliver high-quality outcomes, and continuously improve in enterprise environments.
 abstract: |
-  After completing this module, you will be able to:
+  After completing this module, you'll be able to:
   - Establish monitoring frameworks for AI agents.
-  - Leverage industry tools and processes for observability.
+  - Apply industry tools and processes for observability.
   - Analyze backlogs and user feedback for actionable insights.
   - Apply AI-based diagnostic and tuning methods.
   - Monitor performance and metrics to optimize agent workflows.
