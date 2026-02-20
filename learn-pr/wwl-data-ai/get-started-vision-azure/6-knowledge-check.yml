@@ -27,14 +27,14 @@ quiz:
     choices:
     - content: "By sending text prompts through the OpenAI Responses API using a deployed image model"
       isCorrect: true
-      explanation: "Image generation models in Foundry can be accessed programmatically using the OpenAI Responses API (or image generation APIs), where developers submit text prompts and retrieve generated images."
+      explanation: " Developers can submit text prompts and retrieve generated images from Foundry models using the OpenAI Responses API."
     - content: "By uploading images through the Foundry Playground UI."
       isCorrect: false
       explanation: "The Foundry Playground UI is for interacting with models, not for programmatically generating images."
     - content: "By calling the GPT-4.1 model endpoint."
       isCorrect: false
-      explanation: "GPT-4.1 is a multimodal GPT model that can process text and images together. It cannot generate images."
-  - content: "When generating images programmatically using the OpenAI Python SDK with Microsoft Foundry, which value should be passed as the model parameter in the request?"
+      explanation: "GPT-4.1 is a multimodal model that can process text and images together. It can't generate images."
+  - content: "When you generate images programmatically using the OpenAI Python SDK with Microsoft Foundry, which value should you pass as the model parameter in the request?"
     choices:
     - content: "The original base model name (for example, gpt-image-1.5)."
       isCorrect: false
@@ -47,12 +47,12 @@ quiz:
       explanation: "You need to provide the deployment name of the model, not the Foundry resource name, when making API calls to generate images."
   - content: "Why is video generation with Sora models in Microsoft Foundry handled as an asynchronous job?"
     choices:
-    - content: "Because video generation requires user interaction during rendering."
+    - content: "Because, video generation requires user interaction during rendering."
       isCorrect: false
-      explanation: "Video generation does not require user interaction during rendering."
-    - content: "Because the REST API does not support synchronous requests."
+      explanation: "Video generation doesn't require user interaction during rendering."
+    - content: "Because, the REST API doesn't support synchronous requests."
       isCorrect: false
       explanation: "REST APIs absolutely can be synchronous. In this content, the reason given for async is workload duration and compute cost, not that it's not possible to process synchronously."
-    - content: "Because video generation is resource‑intensive and takes time to complete"
+    - content: "Because, video generation is resource‑intensive and takes time to complete."
       isCorrect: true
-      explanation: "Video generation is computationally intensive and can take several minutes to complete. For this reason, Foundry runs video generation as an asynchronous process where you create a job, poll for its status, and download the video once it is finished."
+      explanation: "Video generation is computationally intensive and can take several minutes to complete. For this reason, Foundry runs video generation as an asynchronous process where you create a job, poll for its status, and download the video once it's finished."
