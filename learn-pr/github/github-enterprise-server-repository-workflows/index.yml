@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.github.github-enterprise-server-repository-workflows
+title: GitHub Enterprise Server fundamentals for developers
+metadata:
+  title: GitHub Enterprise Server Fundamentals for Developers
+  description: Overview of collaboration on GitHub Enterprise Server (GHES), focusing on governance, branch policies, and pull request workflows.
+  author: camihmerhar
+  ms.author: camhernandez
+  ms.date: 02/16/2026
+  ms.update-cycle: 180-days
+  ms.service: github
+  ms.topic: module
+summary: GHES collaboration is shaped by enterprise controls like repository governance, branch protection, and required reviews, helping teams balance productivity with compliance.
+
+abstract: |
+  By the end of this module, you'll be able to:
+  - Create and manage repositories within enterprise governance boundaries
+  - Work within branch protection and pull request policies correctly
+  - Collaborate efficiently using pull requests and code review workflows on GHES
+
+prerequisites: None
+
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+  - intermediate
+roles:
+  - devops-engineer
+  - administrator
+  - developer
+  - student
+products:
+  - github
+subjects:
+  - data-integration
+units:
+  - learn.github.github-enterprise-server-repository-workflows.repository-creation-organization
+  - learn.github.github-enterprise-server-repository-workflows.branch-strategies
+  - learn.github.github-enterprise-server-repository-workflows.branch-protection-rules
+  - learn.github.github-enterprise-server-repository-workflows.pull-request-review
+  - learn.github.github-enterprise-server-repository-workflows.collaboration-constraints
+  - learn.github.github-enterprise-server-repository-workflows.knowledge-check
+  - learn.github.github-enterprise-server-repository-workflows.summary
+badge:
+  uid: learn.github.github-enterprise-server-repository-workflows.badge
