@@ -16,11 +16,11 @@ For most new projects, Microsoft recommends starting with the **GPT‑Image‑1 
 
 Common examples of image generation models in Foundry include: 
 
-- **GPT‑Image‑1.5**: GPT‑Image‑1.5 is the **latest and most advanced image generation model** available in Microsoft Foundry. It is designed for high‑fidelity, enterprise‑grade image creation and editing, with strong prompt alignment and improved consistency across iterations. The model supports **text‑to‑image**, **image‑to‑image**, and **precise image editing (inpainting)**, making it well suited for branding, marketing, and design workflows where visual accuracy matters.
+- **GPT‑Image‑1.5**: GPT‑Image‑1.5 is the latest and most advanced image generation model available in Microsoft Foundry. It's designed for high‑fidelity, enterprise‑grade image creation and editing, with strong prompt alignment and improved consistency across iterations. The model supports *text‑to‑image*, *image‑to‑image*, and precise image editing, making it well suited for branding, marketing, and design workflows where visual accuracy matters.
 
-- **GPT‑Image‑1**: GPT‑Image‑1 is a powerful, general‑purpose image generation model that builds on the capabilities of earlier DALL·E models. It supports **text‑to‑image generation**, **image variations**, and **inpainting**, and is commonly used for creative applications, prototyping, and visual content generation. GPT‑Image‑1 is widely supported across Foundry tools and APIs, including the Responses API and agent tools. 
+- **GPT‑Image‑1**: GPT‑Image‑1 is a powerful, general‑purpose image generation model that builds on the capabilities of earlier DALL-E models. It supports *text‑to‑image generation*, image variations, and precise image editing. It's commonly used for creative applications, prototyping, and visual content generation. GPT‑Image‑1 is widely supported across Foundry tools and APIs, including the Responses API and agent tools. 
 
-- **GPT‑Image‑1‑Mini**: GPT‑Image‑1‑Mini is a **lighter‑weight and more cost‑efficient** version of GPT‑Image‑1. It supports the same core image generation tasks but is optimized for scenarios where **lower latency or reduced cost** is more important than maximum visual fidelity. This model is a good choice for experimentation, internal tools, or high‑volume image generation.
+- **GPT‑Image‑1‑Mini**: GPT‑Image‑1‑Mini is a lighter‑weight and more cost‑efficient version of GPT‑Image‑1. It supports the same core image generation tasks but is optimized for scenarios where lower latency or reduced cost is more important than maximum visual fidelity. This model is a good choice for experimentation, internal tools, or high‑volume image generation.
 
 All of these image generation models can be:
 
@@ -29,11 +29,11 @@ All of these image generation models can be:
 - Accessed programmatically using the **OpenAI Responses API** or image generation APIs
 
 >[!NOTE]
->You can also access third-party image generation models in Foundry. For example, *FLUX* is a family of open‑source image generation models created by Black Forest Labs. They are designed to produce high‑quality, photorealistic, and stylistically flexible images from text prompts. 
+>You can also access third-party image generation models in Foundry. For example, *FLUX* is a family of open‑source image generation models created by Black Forest Labs. They're designed to produce high‑quality, photorealistic, and stylistically flexible images from text prompts. 
 
 #### Image generation in the Foundry playground 
 
-In this case, I’ve deployed such a model, and in the Foundry portal playground, I can describe the image that I want to create. And after a few minutes, an image matching my description is generated. 
+You can deploy a vision-enabled model and test it in the Foundry portal playground. To test the model, you can describe the image that you want to create. And after a few minutes, an image matching your description is generated. 
 
 ![Screenshot of image generation in the Foundry playground.](../media/image-generation-playground.png)
 
@@ -41,9 +41,11 @@ In this case, I’ve deployed such a model, and in the Foundry portal playground
 
 ## Using the OpenAI Python SDK for image generation
 
-To build an application that uses an image generation model like this, you can write code that uses the OpenAI API’s images class to submit a prompt and retrieve the generated image. The ability to dynamically generate original images from descriptions can be immensely valuable in scenarios that include media, publishing, and content creation. 
+You can write code to build an application that uses an image generation model using Azure OpenAI API's images class. The OpenAI images class in the **OpenAI Python SDK** lets you generate new images and edit existing images. You can use the OpenAI Python SDK by calling the OpenAI Images API endpoint through a Python interface.
 
-To generate images with the OpenAI Python SDK you need: 
+The ability to dynamically generate original images from descriptions can be immensely valuable in scenarios that include media, publishing, and content creation. 
+
+To generate images with the OpenAI Python SDK, you need: 
 
 - **A Foundry resource**
 - A **vision‑capable model deployed** (the deployment name is what you pass as `MODEL_NAME`) 

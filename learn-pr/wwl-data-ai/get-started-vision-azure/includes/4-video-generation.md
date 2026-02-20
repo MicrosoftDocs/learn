@@ -22,7 +22,7 @@ Typical uses:
 - Short animations from text descriptions
 - Visual prototyping for creative workflows
 
-**Sora 2 — public preview**: **Sora 2** is the **next‑generation video generation model** in Foundry and represents a significant upgrade over Sora 1. It supports multiple modalities, including: **Text → video**, **Image → video**, **Video → video (remix)**. Sora 2 also introduces **audio generation**, improved realism, and remixing capabilities that allow targeted edits instead of regenerating an entire video. It is available via the Azure OpenAI **v1 API** and the Foundry Video Playground, with built‑in Responsible AI safeguards. 
+**Sora 2 (public preview)**: **Sora 2** is the **next‑generation video generation model** in Foundry and represents a significant upgrade over Sora 1. It supports multiple modalities, including: **Text → video**, **Image → video**, **Video → video (remix)**. Sora 2 also introduces **audio generation**, improved realism, and remixing capabilities that allow targeted edits instead of regenerating an entire video. It's available via the Azure OpenAI **v1 API** and the Foundry Video Playground, with built‑in Responsible AI safeguards. 
 
 Typical uses:
 - Marketing and promotional videos
@@ -34,7 +34,7 @@ Typical uses:
 
 #### Video generation in the Foundry playground
 
-Once you've deployed an appropriate video generation model, you can test it in the Foundry portal playground. In the playground, you can also specify parameters like video dimensions and duration. 
+Once you deploy an appropriate video generation model, you can test it in the Foundry portal playground. In the playground, you can also specify parameters like video dimensions and duration. 
 
 Your prompts to the video generation model should include a description of the content in the desired video. After a few minutes, the model produces a video.
 
@@ -64,7 +64,7 @@ The Sora 2 API provides distinct endpoints for:
 
 #### 1. Create a video job 
 
-In the example below, the script starts an **async render job** and returns a response that includes a **video id** to poll.
+In the example, the script starts an **async render job** and returns a response that includes a **video id** to poll.
 
 > **Base URL pattern (v1)**:  
 > `https://YOUR-RESOURCE-NAME.openai.azure.com/openai/v1/` 
@@ -83,7 +83,7 @@ curl -X POST "https://YOUR-RESOURCE-NAME.openai.azure.com/openai/v1/videos" \
 
 #### 2. Poll job status until completed
 
-In the example below, the script polls the endpoint until the job reaches `completed` (or `failed`).
+In the example, the script polls the endpoint until the job reaches `completed` (or `failed`).
 
 ```bash
 curl -X GET "https://YOUR-RESOURCE-NAME.openai.azure.com/openai/v1/videos/{video_id}" \

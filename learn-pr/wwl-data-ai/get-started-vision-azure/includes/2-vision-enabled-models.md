@@ -6,7 +6,7 @@
 
 ::: zone pivot="text"
 
-Increasingly, new AI models are multimodal. In other words, they support multiple kinds of input data, including images as well as text. **Multimodal models** are AI models that can understand and work with more than one type of data at the same time, such as text, images, audio, or video. For instance, the multimodal model could describe an image in natural language or answer a question about a photo.
+Increasingly, new AI models are multimodal. In other words, they support multiple kinds of input data, including images and text. **Multimodal models** are AI models that can understand and work with more than one type of data at the same time, such as text, images, audio, or video. For instance, the multimodal model could describe an image in natural language or answer a question about a photo.
 
 Multimodal models are commonly used as part of:
 
@@ -36,9 +36,9 @@ For example, vision‑enabled GPT models in Foundry can:
  
 Foundry's model catalog contains many multimodal models including:
 
-- **GPT‑4.1 / GPT‑4.1‑mini / GPT‑4.1‑nano**: These general‑purpose multimodal GPT models can process text and images together. They are commonly used for image description and visual question answering, document and screenshot analysis, and chart and diagram interpretation.
+- **GPT‑4.1 / GPT‑4.1‑mini / GPT‑4.1‑nano**: These general‑purpose multimodal GPT models can process text and images together. They're commonly used for image description and visual question answering, document and screenshot analysis, and chart and diagram interpretation.
 
-- **GPT‑5 series (for example, GPT‑5.1, GPT‑5.2)**: The GPT‑5 family available in Foundry includes advanced multimodal models designed for enterprise and agentic scenarios. These models support multimodal inputs (including text and images), structured outputs and tool use, large‑context reasoning across modalities. The GPT-5 series models are typically used in production‑grade AI agents and complex multimodal applications.
+- **GPT‑5 series (for example, GPT‑5.1, GPT‑5.2)**: The GPT‑5 family available in Foundry includes advanced multimodal models designed for enterprise and agentic scenarios. These models support multimodal inputs (including text and images), structured outputs, and tool use, large‑context reasoning across modalities. The GPT-5 series models are typically used in production‑grade AI agents and complex multimodal applications.
 
 Foundry also hosts partner‑provided multimodal models in its model catalog, including models from providers such as Anthropic and others that support text and image understanding. 
 
@@ -59,7 +59,7 @@ Once validated, the same capabilities can be accessed programmatically using API
 
 ## Using the Azure OpenAI API for image analysis
 
-When moving from the playground to code, images are submitted as part of a *multimodal request* using the **OpenAI Responses API** in Foundry. The OpenAI Responses API is designed for agentic apps and supports native multimodal inputs (including images). 
+In order to develop an application, you need to move from the Foundry playground to code. In a code editor, you can write your application code using the **OpenAI Responses API** in Foundry. The OpenAI Responses API is designed for agentic apps and supports native multimodal inputs (including images).
 
 At a high level:
 
@@ -69,14 +69,14 @@ At a high level:
 
 Conceptually, the prompt structure looks like:
 
-- A text instruction (for example, *“What objects are visible in this image?”*)
+- A text instruction (for example, *What objects are visible in this image?*)
 - One or more image inputs attached to the same request
 
 This approach allows developers to build applications where users upload images and ask questions about them in real time.  
 
 ## Using the Azure OpenAI Python SDK 
 
-You can use a Microsoft Foundry (Azure OpenAI) resource with the OpenAI API to perform image analysis—including sending images in prompts and getting text responses—by using the Responses API with a vision‑capable model deployment. 
+You can use a Microsoft Foundry resource with the OpenAI API to perform image analysis—including sending images in prompts and getting text responses—by using the Responses API with a vision‑capable model deployment. 
 
 The Python SDK can be installed in the Visual Studio Code *terminal* using: 
 
@@ -84,12 +84,12 @@ The Python SDK can be installed in the Visual Studio Code *terminal* using:
 pip install openai
 ```
 
-In the code editor, we can create one Python file which contains application code. Importantly, you need your **Foundry resource** *key* and *endpoint*, and the *name of your deployed model*. 
+In the code editor, we can create one Python file, which contains application code. Importantly, you need your **Foundry resource** *key* and *endpoint*, and the *name of your deployed model*. 
 
 >[!NOTE]
 >When you deploy a model in Foundry, it has a *base* or *original* name, and an original **deployment name** you give it. Foundry hosts the deployed model (for example, GPT‑class models with vision) and provides you with an endpoint. 
 
-In the code example below, you create the *client*, point it to your endpoint, and pass your *model deployment name* (the name you gave the model) as the `MODEL_NAME`.
+In the code example, you create the *client*, point it to your endpoint, and pass your *model deployment name* (the name you gave the model) as the `MODEL_NAME`.
 
 ```python
 import os
@@ -134,7 +134,7 @@ Then you can write application code that uses the OpenAI API to connect to your 
 
 :::image type="content" source="../media/vision-analysis-python.png" alt-text="Screenshot of Visual Studio Code with a python file containing application code for image analysis." lightbox="../media/vision-analysis-python.png":::
 
-The application code needs to load the image data and get a natural language prompt from a user. To submit the input to the model, you need to create a multi-part message that includes both the image and text data. The model will then respond with appropriate output based on both the text and image in the prompt. 
+The application code needs to load the image data and get a natural language prompt from a user. To submit the input to the model, you need to create a multi-part message that includes both the image and text data. The model can respond with an appropriate output based on both the text and image in the prompt. 
 
 :::image type="content" source="../media/image-analysis-result-vs-code.png" alt-text="Screenshot of Visual Studio Code with the result of the image analysis." lightbox="../media/image-analysis-result-vs-code.png":::
 
