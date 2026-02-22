@@ -36,13 +36,13 @@ Typical uses:
 
 Once you deploy an appropriate video generation model, you can test it in the Foundry portal playground. In the playground, you can also specify parameters like video dimensions and duration. 
 
-:::image type="content" source="../media/sora-playground.png" alt-text="Screenshot of the Sora model in the Foundry Playground with parameters and a prompt." lightbox="../media/sora-playground.png":::
+:::image type="content" source="../media/video-prompt-playground.png" alt-text="Screenshot of the Sora model in the Foundry Playground with parameters and a prompt." lightbox="../media/video-prompt-playground.png":::
 
 Your prompts to the video generation model should include a description of the content in the desired video. After a few minutes, the model produces a video.
 
 You can take a look at the sample code in the playground. 
 
-:::image type="content" source="../media/sora-code-sample-playground.png" alt-text="Screenshot of the Sora model in the Foundry Playground with sample code." lightbox="../media/sora-code-sample-playground.png":::
+:::image type="content" source="../media/video-code-sample-playground.png" alt-text="Screenshot of the Sora model in the Foundry Playground with sample code." lightbox="../media/video-code-sample-playground.png":::
 
 The sample code uses the REST Interface for video generation. 
 
