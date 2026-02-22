@@ -18,19 +18,20 @@ Start by choosing Microsoft Foundry evaluators that align with your human evalua
 
 | Evaluator | Measures | Best for |
 |-----------|----------|----------|
-| Groundedness | Factual accuracy based on sources | Checking if responses stick to provided information |
+| Intent Resolution | How fully the response addresses user's need | Ensuring the agent completes the user's task |
 | Relevance | How well response addresses the question | Ensuring answers are on-topic |
-| Coherence | Logical flow and structure | Evaluating response organization |
-| Fluency | Language quality and naturalness | Assessing readability |
-| Similarity | Match to expected ground truth | Comparing against reference answers |
+| Groundedness | Factual accuracy based on sources | Checking if responses stick to provided information |
+
+> [!TIP]
+> This table shows a subset of commonly used evaluators. For detailed specification of all available evaluators including required inputs, scoring ranges, and implementation guidance, learn more through the [evaluators reference](/azure/ai-foundry/concepts/built-in-evaluators).
 
 **Map your criteria to evaluators:**
 
 For Adventure Works, human evaluators assess:
 
-- Trail accuracy → **Groundedness** + **Relevance**
-- Response completeness → **Relevance** + **Coherence**
-- Clarity → **Coherence** + **Fluency**
+- Intent Resolution → **Intent Resolution**
+- Relevance → **Relevance**
+- Groundedness → **Groundedness**
 
 **Add essential evaluators beyond human criteria:**
 
@@ -39,9 +40,9 @@ You can include evaluators that humans don't shadow-rate but are critical for sa
 ```python
 evaluators = {
     # Shadow-rated against human judgment
-    'groundedness': GroundednessEvaluator(),
+    'intent_resolution': IntentResolutionEvaluator(),
     'relevance': RelevanceEvaluator(),
-    'coherence': CoherenceEvaluator(),
+    'groundedness': GroundednessEvaluator(),
     
     # Essential safety checks (not shadow-rated)
     'content_safety': ContentSafetyEvaluator(),
@@ -50,7 +51,7 @@ evaluators = {
 ```
 
 > [!NOTE]
-> Safety and compliance evaluators serve as gates regardless of human evaluation. A response can score well on human-validated dimensions but still fail on content safety, blocking deployment.
+> Safety and compliance evaluators can serve as gates regardless of human evaluation. A response can score well on human-validated dimensions but still fail on content safety, blocking deployment.
 
 ## Run shadow rating
 
@@ -70,14 +71,14 @@ from scipy.stats import pearsonr
 # Compare scores
 df = pd.DataFrame({
     'response_id': response_ids,
-    'human_accuracy_score': human_scores,
-    'automated_groundedness': groundedness_scores
+    'human_intent_resolution_score': human_scores,
+    'automated_intent_resolution': intent_resolution_scores
 })
 
 # Calculate correlation
 correlation, p_value = pearsonr(
-    df['human_accuracy_score'], 
-    df['automated_groundedness']
+    df['human_intent_resolution_score'], 
+    df['automated_intent_resolution']
 )
 
 print(f"Correlation: {correlation:.2f}")
@@ -91,7 +92,7 @@ print(f"Correlation: {correlation:.2f}")
 | 0.5-0.7 | Moderate alignment | Investigate and refine |
 | < 0.5 | Weak alignment | Major adjustments needed |
 
-Adventure Works targets 0.75 correlation between their accuracy criteria and automated groundedness scores before trusting automation for deployment decisions.
+Adventure Works targets 0.75 correlation between their human evaluation scores and automated evaluator scores before trusting automation for deployment decisions.
 
 ## Monitor alignment over time
 

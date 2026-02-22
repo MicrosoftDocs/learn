@@ -1,385 +1,197 @@
-Batch evaluation enables systematic quality assessment by running multiple evaluators across entire test datasets, providing comprehensive metrics and identifying patterns in system performance.
+Cloud evaluations enable systematic quality assessment by running multiple evaluators across entire test datasets in Microsoft Foundry. This eliminates the need to manage local compute infrastructure and supports large-scale automated testing workflows.
 
-In the Adventure Works scenario, the team needs to evaluate 500 test examples against multiple criteria (trail accuracy, safety information, response helpfulness) to compare GPT-4 and GPT-4 mini performance. Running evaluations manually or individually takes hours. Batch evaluation with Python scripts completes this work in minutes, enabling quick, objective model comparison.
-
-Here, you learn how to implement batch evaluations using Python scripts with Microsoft Foundry, process evaluation results systematically, and interpret metrics to guide quality improvements.
-
-| Batch Evaluation Component | Purpose | Implementation |
-|----------------------------|---------|----------------|
-| Test data loading | Prepare inputs for evaluation | Read JSONL, CSV, or Parquet files |
-| Model inference | Generate responses to evaluate | Azure AI Foundry SDK batch inference |
-| Evaluator execution | Score generated responses | Apply multiple evaluators in parallel |
-| Results aggregation | Summarize evaluation metrics | Calculate statistics, identify patterns |
-
-## Set up the Azure AI Foundry SDK for evaluation
-
-Microsoft Foundry provides Python SDK capabilities for both generating responses and running evaluations programmatically. Setting up the SDK requires authentication and configuration of your Foundry project.
-
-**Install required packages**:
-
-```bash
-pip install azure-ai-inference azure-ai-evaluation azure-identity
-```
-
-**Configure authentication and project connection**:
-
-```python
-from azure.ai.inference import ChatCompletionsClient
-from azure.ai.evaluation import evaluate
-from azure.identity import DefaultAzureCredential
-import os
-
-# Set up authentication
-credential = DefaultAzureCredential()
-
-# Configure Foundry project
-project_config = {
-    'subscription_id': os.getenv('AZURE_SUBSCRIPTION_ID'),
-    'resource_group': os.getenv('AZURE_RESOURCE_GROUP'),
-    'project_name': os.getenv('FOUNDRY_PROJECT_NAME')
-}
-
-# Initialize inference client
-inference_client = ChatCompletionsClient(
-    endpoint=os.getenv('AZURE_INFERENCE_ENDPOINT'),
-    credential=credential
-)
-```
+Adventure Works needs to evaluate 500 test examples against multiple quality criteria to validate their prompt update before deployment. Cloud evaluation with the Foundry SDK completes this work efficiently, running evaluators in parallel and storing results for analysis.
 
 > [!NOTE]
-> Use environment variables or Azure Key Vault for credentials rather than hardcoding values. This keeps secrets secure and enables configuration across environments.
+> Cloud evaluation requires the Microsoft Foundry SDK (`azure-ai-projects>=2.0.0b1`) and authentication with `DefaultAzureCredential()`. The SDK provides an OpenAI-compatible client through `project_client.get_openai_client()` for evaluation operations.
 
-## Load and prepare test datasets
+## Define data schema and evaluators
 
-Batch evaluation requires loading your test dataset and structuring it for systematic processing. Common formats include JSONL (JSON Lines), CSV, or Parquet.
+Cloud evaluation needs to understand your data structure before running evaluators. You define this through a **data source config** that describes the fields in your JSONL dataset and specifies which evaluators to run.
 
-**Load test data from JSONL**:
+**Why you need a data schema:**
 
-```python
-import json
-import pandas as pd
-
-def load_test_data(file_path: str) -> pd.DataFrame:
-    """Load test dataset from JSONL file"""
-    test_examples = []
-    
-    with open(file_path, 'r') as f:
-        for line in f:
-            example = json.loads(line)
-            test_examples.append(example)
-    
-    return pd.DataFrame(test_examples)
-
-# Load test dataset
-test_df = load_test_data('data/test_dataset_v1.1.jsonl')
-print(f"Loaded {len(test_df)} test examples")
-```
-
-**Prepare data structure for evaluation**:
+The data schema tells the evaluation service what fields exist in your dataset and which ones are required. This enables validation before execution and helps the service allocate the right resources. Think of it as a contract between your data and the evaluation service.
 
 ```python
-# Ensure required fields exist
-required_fields = ['id', 'query', 'category']
-missing_fields = [field for field in required_fields if field not in test_df.columns]
+from openai.types.eval_create_params import DataSourceConfigCustom
 
-if missing_fields:
-    raise ValueError(f"Test data missing required fields: {missing_fields}")
-
-# Add optional fields with defaults
-if 'context' not in test_df.columns:
-    test_df['context'] = None
-
-if 'ground_truth' not in test_df.columns:
-    test_df['ground_truth'] = None
-
-print(test_df.head())
-```
-
-**Example test data structure**:
-
-```json
-{"id": "trail_001", "query": "What are good day hikes for beginners?", "context": "Customer is new to hiking with moderate fitness", "ground_truth": null, "category": "trail_recommendations"}
-{"id": "accom_002", "query": "Where should I stay for a multi-day hike?", "context": "Customer planning 3-day trip in summer", "ground_truth": null, "category": "accommodation_booking"}
-```
-
-## Generate responses for evaluation
-
-Before evaluating response quality, you need to generate responses from your AI system. Batch inference generates responses for all test examples efficiently.
-
-**Implement batch response generation**:
-
-```python
-from typing import List, Dict
-import time
-
-def generate_responses_batch(
-    client: ChatCompletionsClient,
-    queries: List[str],
-    system_prompt: str,
-    contexts: List[str] = None,
-    batch_size: int = 10
-) -> List[Dict]:
-    """Generate responses for multiple queries in batches"""
-    
-    responses = []
-    
-    for i in range(0, len(queries), batch_size):
-        batch_queries = queries[i:i + batch_size]
-        batch_contexts = contexts[i:i + batch_size] if contexts else [None] * len(batch_queries)
-        
-        for query, context in zip(batch_queries, batch_contexts):
-            # Build messages
-            messages = [{"role": "system", "content": system_prompt}]
-            
-            if context:
-                messages.append({"role": "user", "content": f"Context: {context}"})
-            
-            messages.append({"role": "user", "content": query})
-            
-            # Generate response
-            try:
-                result = client.complete(messages=messages, temperature=0.7)
-                response_text = result.choices[0].message.content
-                
-                responses.append({
-                    'response': response_text,
-                    'model': result.model,
-                    'finish_reason': result.choices[0].finish_reason
-                })
-            except Exception as e:
-                responses.append({
-                    'response': None,
-                    'error': str(e)
-                })
-            
-            # Rate limiting delay
-            time.sleep(0.1)
-    
-    return responses
-
-# Generate responses for test dataset
-system_prompt = """You are a Trail Guide AI assistant for Adventure Works. Provide helpful 
-trail recommendations and trip planning advice while always including appropriate safety information."""
-
-responses = generate_responses_batch(
-    client=inference_client,
-    queries=test_df['query'].tolist(),
-    system_prompt=system_prompt,
-    contexts=test_df['context'].tolist()
-)
-
-# Add responses to dataframe
-test_df['response'] = [r['response'] for r in responses]
-```
-
-> [!TIP]
-> Cache generated responses when running multiple evaluation iterations. Response generation takes longer than evaluation, so separating these steps saves time during evaluator tuning.
-
-## Run evaluations using Microsoft Foundry evaluators
-
-Microsoft Foundry provides built-in evaluators that assess various quality dimensions. Running multiple evaluators provides comprehensive quality assessment.
-
-**Configure and run built-in evaluators**:
-
-```python
-from azure.ai.evaluation import (
-    GroundednessEvaluator,
-    RelevanceEvaluator,
-    CoherenceEvaluator,
-    FluencyEvaluator
-)
-
-# Initialize evaluators
-evaluators = {
-    'groundedness': GroundednessEvaluator(credential=credential),
-    'relevance': RelevanceEvaluator(credential=credential),
-    'coherence': CoherenceEvaluator(credential=credential),
-    'fluency': FluencyEvaluator(credential=credential)
-}
-
-# Run evaluation
-evaluation_results = evaluate(
-    data=test_df,
-    evaluators=evaluators,
-    azure_ai_project=project_config
-)
-
-# Extract scores
-for evaluator_name, scores in evaluation_results.items():
-    test_df[f'{evaluator_name}_score'] = scores
-```
-
-**Implement custom evaluators**:
-
-```python
-from azure.ai.evaluation import EvaluatorBase
-
-class SafetyInformationEvaluator(EvaluatorBase):
-    """Custom evaluator for safety information completeness"""
-    
-    def __init__(self):
-        self.required_elements = [
-            'weather',
-            'difficulty',
-            'prepare',
-            'duration',
-            'distance'
-        ]
-    
-    def evaluate(self, response: str, query: str = None) -> Dict:
-        """Evaluate safety information quality"""
-        response_lower = response.lower()
-        
-        # Count required elements
-        elements_found = sum(
-            1 for element in self.required_elements 
-            if element in response_lower
-        )
-        
-        # Calculate score (1-5 scale)
-        score = min(5, max(1, elements_found + 1))
-        
-        # Determine severity
-        if score >= 4:
-            severity = 'complete'
-        elif score >= 3:
-            severity = 'needs_improvement'
-        else:
-            severity = 'incomplete'
-        
-        return {
-            'safety_information_score': score,
-            'elements_found': elements_found,
-            'total_required': len(self.required_elements),
-            'severity': severity,
-            'reasoning': f"Found {elements_found} of {len(self.required_elements)} required safety elements"
-        }
-
-# Use custom evaluator
-safety_evaluator = SafetyInformationEvaluator()
-test_df['safety_information_results'] = test_df.apply(
-    lambda row: safety_evaluator.evaluate(row['response'], row['query']),
-    axis=1
-)
-
-# Extract scores from custom evaluator results
-test_df['safety_information_score'] = test_df['safety_information_results'].apply(
-    lambda x: x['safety_information_score']
-)
-```
-
-## Aggregate and analyze evaluation results
-
-After running evaluations, aggregating results reveals overall system performance and identifies patterns requiring attention.
-
-**Calculate summary statistics**:
-
-```python
-# Overall statistics
-summary_stats = {
-    'total_examples': len(test_df),
-    'mean_scores': {
-        'groundedness': test_df['groundedness_score'].mean(),
-        'relevance': test_df['relevance_score'].mean(),
-        'coherence': test_df['coherence_score'].mean(),
-        'fluency': test_df['fluency_score'].mean(),
-        'safety_information': test_df['safety_information_score'].mean()
+data_source_config = DataSourceConfigCustom(
+    type="custom",
+    item_schema={
+        "type": "object",
+        "properties": {
+            "query": {"type": "string"},
+            "response": {"type": "string"},
+            "context": {"type": "string"},
+            "ground_truth": {"type": "string"},
+        },
+        "required": ["query", "response"],  # Only these fields must be present
     },
-    'score_distributions': {
-        'groundedness': test_df['groundedness_score'].value_counts().to_dict(),
-        'relevance': test_df['relevance_score'].value_counts().to_dict()
-    }
-}
-
-print(f"Evaluation Summary:")
-for metric, score in summary_stats['mean_scores'].items():
-    print(f"  {metric}: {score:.2f}")
+)
 ```
 
-**Analyze performance by category**:
+**Configure evaluators with data mappings:**
+
+After defining your data schema, you specify which evaluators to run and how they access your data. The `testing_criteria` list contains your evaluator configurations—each entry defines one evaluator to execute against your dataset.
+
+Each evaluator in `testing_criteria` specifies:
+
+- **Evaluator name**: The built-in evaluator to use (for example, `builtin.intent_resolution`)
+- **Initialization parameters**: Configuration like which model deployment to use for AI-assisted evaluation
+- **Data mapping**: How to connect your dataset fields to evaluator parameters using `{{item.field}}` syntax
+
+Data mapping is critical—it tells each evaluator where to find its required inputs. The `{{item.field}}` syntax references fields from your JSONL dataset.
 
 ```python
-# Category breakdown
-category_performance = test_df.groupby('category').agg({
-    'groundedness_score': ['mean', 'std', 'min'],
-    'relevance_score': ['mean', 'std', 'min'],
-    'safety_information_score': ['mean', 'std', 'min']
-}).round(2)
-
-print("\nPerformance by Category:")
-print(category_performance)
-
-# Identify low-performing categories
-low_performers = category_performance[
-    (category_performance[('groundedness_score', 'mean')] < 3.5) |
-    (category_performance[('relevance_score', 'mean')] < 3.5)
+testing_criteria = [
+    {
+        "type": "azure_ai_evaluator",
+        "name": "intent_resolution",  # Your name for this evaluator in results
+        "evaluator_name": "builtin.intent_resolution",  # The built-in evaluator to use
+        "initialization_parameters": {
+            "deployment_name": model_deployment_name  # Which model to use for evaluation
+        },
+        "data_mapping": {
+            "query": "{{item.query}}",  # Map dataset's "query" field to evaluator's "query" parameter
+            "response": "{{item.response}}",  # Map dataset's "response" field to evaluator's "response" parameter
+        },
+    },
+    {
+        "type": "azure_ai_evaluator",
+        "name": "groundedness",
+        "evaluator_name": "builtin.groundedness",
+        "initialization_parameters": {
+            "deployment_name": model_deployment_name
+        },
+        "data_mapping": {
+            "query": "{{item.query}}",
+            "response": "{{item.response}}",
+            "context": "{{item.context}}",  # Groundedness needs context to verify claims
+        },
+    },
 ]
-
-print("\nCategories needing attention:")
-print(low_performers)
-```
-
-**Identify failing examples**:
-
-```python
-# Define failure criteria
-failure_threshold = 3.0
-
-failures = test_df[
-    (test_df['groundedness_score'] < failure_threshold) |
-    (test_df['relevance_score'] < failure_threshold) |
-    (test_df['safety_information_score'] < failure_threshold)
-]
-
-print(f"\nFound {len(failures)} failing examples ({len(failures)/len(test_df)*100:.1f}%)")
-
-# Export failures for review
-failures[['id', 'query', 'response', 'groundedness_score', 'relevance_score', 'safety_information_score']].to_csv(
-    'evaluation_failures.csv',
-    index=False
-)
-```
-
-## Generate evaluation reports
-
-Comprehensive reports communicate evaluation results to stakeholders and guide improvement decisions.
-
-**Create structured evaluation report**:
-
-```python
-import json
-from datetime import datetime
-
-evaluation_report = {
-    'metadata': {
-        'timestamp': datetime.now().isoformat(),
-        'test_dataset': 'test_dataset_v1.1.jsonl',
-        'model_version': 'gpt-4',
-        'prompt_version': 'v2.3',
-        'total_examples': len(test_df)
-    },
-    'summary_metrics': summary_stats['mean_scores'],
-    'category_breakdown': category_performance.to_dict(),
-    'failure_analysis': {
-        'total_failures': len(failures),
-        'failure_rate': len(failures) / len(test_df),
-        'common_failure_categories': failures['category'].value_counts().head().to_dict()
-    },
-    'recommendations': []
-}
-
-# Add recommendations based on results
-if evaluation_report['summary_metrics']['safety_information'] < 4.0:
-    evaluation_report['recommendations'].append(
-        "Safety information scores below target (4.0). Consider strengthening system prompt with explicit safety information requirements."
-    )
-
-# Save report
-with open(f'evaluation_report_{datetime.now().strftime("%Y%m%d_%H%M%S")}.json', 'w') as f:
-    json.dump(evaluation_report, f, indent=2)
 ```
 
 > [!IMPORTANT]
-> Store evaluation results with versioned test data and model configurations to enable historical comparison and regression detection.
+> Field names in `data_mapping` are case-sensitive and must match your JSONL dataset exactly. If your dataset has "Question" (capitalized) but you specify `"{{item.question}}"` (lowercase), the evaluation fails. Always verify field names match between your data schema and data mapping.
 
-Now that you understand how to implement batch evaluations with Python, you're ready to learn how to integrate these evaluation workflows into GitHub Actions for automated quality assurance on every code change.
+## Create evaluation definition and run
+
+Cloud evaluation separates the **evaluation definition** (what to evaluate and how) from **evaluation runs** (executing against specific datasets). This separation enables reuse—define evaluation criteria once, then run multiple times against different datasets or versions.
+
+**Create evaluation definition:**
+
+The evaluation definition is your reusable template. It combines your data schema with testing criteria but doesn't reference any specific dataset yet.
+
+```python
+# Create the evaluation definition
+eval_object = client.evals.create(
+    name="adventure-works-prompt-evaluation",
+    data_source_config=data_source_config,
+    testing_criteria=testing_criteria,
+)
+
+print(f"Created evaluation: {eval_object.id}")
+```
+
+**Create evaluation run:**
+
+An evaluation run executes your evaluation definition against a specific dataset. You reference the uploaded dataset by its ID (from the previous unit).
+
+```python
+from openai.types.evals.create_eval_jsonl_run_data_source_param import (
+    CreateEvalJSONLRunDataSourceParam,
+    SourceFileID,
+)
+
+# Create a run using the uploaded dataset
+eval_run = client.evals.runs.create(
+    eval_id=eval_object.id,
+    name="prompt-v2-evaluation",
+    data_source=CreateEvalJSONLRunDataSourceParam(
+        type="jsonl",
+        source=SourceFileID(
+            type="file_id",
+            id=data_id,  # Dataset ID from upload
+        ),
+    ),
+)
+
+print(f"Started evaluation run: {eval_run.id}")
+print(f"Status: {eval_run.status}")
+```
+
+**What happens during execution:**
+
+When you create a run, the evaluation service:
+
+1. Loads your dataset from cloud storage
+2. Validates data against your schema
+3. Distributes evaluation work across evaluators in parallel
+4. Stores results in your Foundry project
+5. Generates a web-based report for visualization
+
+> [!TIP]
+> Evaluation runs are asynchronous and can take several minutes for large datasets. The service handles retries, rate limiting, and parallel execution automatically. Poll the run status to know when results are ready.
+
+## Poll for completion and retrieve results
+
+Evaluation runs execute asynchronously in the cloud. You need to poll the run status until completion before retrieving results.
+
+**Why polling is necessary:**
+
+Large datasets with multiple evaluators can take several minutes to complete. The evaluation service distributes work across parallel workers, handles rate limiting with model deployments, and retries failed requests automatically. Polling lets your script wait efficiently without blocking on network calls.
+
+```python
+import time
+
+while True:
+    run = client.evals.runs.retrieve(
+        run_id=eval_run.id,
+        eval_id=eval_object.id
+    )
+    if run.status in ("completed", "failed"):
+        break
+    time.sleep(5)  # Check every 5 seconds
+    print("Waiting for evaluation run to complete...")
+
+print(f"Evaluation completed with status: {run.status}")
+```
+
+> [!IMPORTANT]
+> **Handling failures**: If `run.status` is "failed", check the error details in the run object. Common failures include insufficient model quota, invalid data mappings, or dataset access issues. The evaluation service provides detailed error messages to help diagnose problems.
+
+**Retrieve detailed results:**
+
+Once complete, retrieve the scored results for each item in your dataset:
+
+```python
+# Get detailed results for each item
+output_items = list(
+    client.evals.runs.output_items.list(
+        run_id=run.id,
+        eval_id=eval_object.id
+    )
+)
+
+print(f"Retrieved {len(output_items)} evaluation results")
+print(f"View detailed report: {run.report_url}")
+```
+
+**Understanding evaluator output:**
+
+All evaluators return a standardized schema for each evaluated item:
+
+- **Label**: Binary "pass" or "fail" label, similar to a unit test's output—use this for quick comparisons across evaluators
+- **Score**: Score from the evaluator's natural scale (1-5 for quality evaluators, 0-7 for safety evaluators, 0-1 for similarity metrics)
+- **Threshold**: Default threshold that determines pass/fail from the score (you can override this)
+- **Reason**: Explanation for the score (for LLM-judge evaluators only)
+- **Details**: Optional additional information for debugging (for some evaluators like tool_call_accuracy)
+
+For aggregate results across your entire dataset, access `run.result_counts` for overall pass/fail counts and `run.per_testing_criteria_results` for per-evaluator breakdowns.
+
+> [!TIP]
+> Use the `report_url` to view results in the Foundry portal with filtering, sorting, and visualization tools. For CI/CD workflows, parse `output_items` programmatically to enforce quality gates.
+
+Now that you understand how to run cloud evaluations with the Foundry SDK, you're ready to learn how to integrate these evaluation workflows into GitHub Actions for automated quality assurance on every code change.

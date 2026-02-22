@@ -18,8 +18,3 @@ You implemented batch evaluation workflows using Python scripts with Microsoft F
 
 - **GitHub Actions create quality gates**: Integrating evaluations into pull request workflows ensures every prompt change undergoes validation before merging, catching regressions early and maintaining production quality.
 
-## Additional resources
-
-- [Azure AI Foundry evaluation documentation](https://learn.microsoft.com/azure/ai-foundry/how-to/develop/cloud-evaluation?view=foundry&tabs=python)
-- [GitHub Actions for Azure AI Foundry evaluation](https://learn.microsoft.com/azure/ai-foundry/how-to/evaluation-github-action?view=foundry&tabs=foundry-project)
-- [Responsible AI evaluation best practices](https://learn.microsoft.com/azure/ai-services/openai/concepts/content-filter)

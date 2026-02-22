@@ -12,12 +12,12 @@ metadata:
   ms.collection:
     - wwl-ai-copilot
 title: Automate AI evaluations with Microsoft Foundry and GitHub Actions
-summary: Learn how to implement automated evaluations for AI agent responses using Microsoft Foundry evaluators, create synthetic test datasets, run batch evaluations with Python scripts, and integrate evaluation workflows into GitHub Actions for continuous quality assurance.
+summary: Learn how to implement automated evaluations for AI agent responses using Microsoft Foundry evaluators, create evaluation datasets from production data and synthetic generation, run batch evaluations with Python scripts, and integrate evaluation workflows into GitHub Actions for continuous quality assurance.
 abstract: |
   By the end of this module, you're able to:
     - Explain why automated evaluations complement human evaluations in AI quality assurance.
     - Select evaluators that align with human evaluation criteria for validation.
-    - Create synthetic test datasets with appropriate composition for comprehensive evaluation.
+    - Create evaluation datasets with appropriate composition for comprehensive testing.
     - Implement batch evaluations using Python scripts with Microsoft Foundry.
     - Integrate automated evaluation workflows into GitHub Actions for continuous testing.
 prerequisites: |
