@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.automated-evaluation-genaiops.create-synthetic-test-data
+uid: learn.wwl.automated-evaluation-genaiops.create-evaluation-data
 title: Create evaluation datasets
 metadata:
   title: Create evaluation datasets
@@ -12,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 10
 content: |
-  [!include[](includes/4-create-synthetic-test-data.md)]
+  [!include[](includes/4-create-evaluation-data.md)]

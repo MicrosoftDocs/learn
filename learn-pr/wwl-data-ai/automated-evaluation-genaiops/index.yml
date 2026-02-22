@@ -43,7 +43,7 @@ units:
 - learn.wwl.automated-evaluation-genaiops.introduction
 - learn.wwl.automated-evaluation-genaiops.why-automated-evaluations
 - learn.wwl.automated-evaluation-genaiops.align-evaluators-human-criteria
-- learn.wwl.automated-evaluation-genaiops.create-synthetic-test-data
+- learn.wwl.automated-evaluation-genaiops.create-evaluation-data
 - learn.wwl.automated-evaluation-genaiops.batch-evaluations-python
 - learn.wwl.automated-evaluation-genaiops.github-actions-workflow
 - learn.wwl.automated-evaluation-genaiops.exercise
