@@ -1,6 +1,6 @@
 Indexes are data structures that accelerate data retrieval by creating optimized lookup paths to table rows. Without indexes, the database engine must scan every row in a table to find matching records, a full table scan that becomes prohibitively slow as tables grow.
 
-An index works like a book's index: instead of reading every page to find a article, you consult the index to jump directly to relevant pages. The database uses indexes similarly, converting potentially millions of row comparisons into a handful of efficient lookups.
+An index works like a book's index: instead of reading every page to find an article, you consult the index to jump directly to relevant pages. The database uses indexes similarly, converting potentially millions of row comparisons into a handful of efficient lookups.
 
 However, indexes consume storage space and slow down `INSERT`, `UPDATE`, and `DELETE` operations because the database must maintain the index structure alongside the data. This trade-off makes index selection a critical design decision that directly impacts both query performance and write throughput.
 
