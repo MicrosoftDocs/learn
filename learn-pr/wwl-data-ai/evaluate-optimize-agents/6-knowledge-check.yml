@@ -1,0 +1,54 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.evaluate-optimize-agents.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Test your understanding of agent evaluation experiments, Git-based workflows, and evaluation rubrics."
+  ms.date: 02/17/2026
+  author: madiepev
+  ms.author: madiepev
+  ms.topic: unit
+  ai-usage: ai-generated  
+  module_assessment: true
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+content: |
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is the primary reason for organizing agent optimization experiments into separate Git branches?"
+    choices:
+    - content: "To enable parallel development by multiple team members simultaneously"
+      isCorrect: false
+      explanation: "Incorrect: While Git supports parallel development, the primary reason for separate experiment branches is controlled comparison, not collaboration."
+    - content: "To isolate specific changes and attribute performance differences to individual modifications"
+      isCorrect: true
+      explanation: "Correct: Separate branches enable controlled comparison by testing one change at a time, making it clear which modification caused observed performance differences."
+    - content: "To comply with regulatory requirements for version control"
+      isCorrect: false
+      explanation: "Incorrect: Regulatory compliance may require version control, but the primary reason for experiment branches is systematic testing and comparison."
+
+  - content: "Adventure Works evaluates their Trail Guide Agent using Intent Resolution scores. Three evaluators score the same response as 5, 3, and 2. What does this indicate?"
+    choices:
+    - content: "The response quality is inconsistent and needs improvement"
+      isCorrect: false
+      explanation: "Incorrect: The divergent scores reveal inconsistent evaluation between human evaluators, not necessarily poor response quality."
+    - content: "The evaluation rubric lacks sufficient detail and evaluators need calibration training"
+      isCorrect: true
+      explanation: "Correct: Divergent scores (differing by 2+ points) indicate evaluators interpret scoring criteria differently, requiring more detailed rubrics and calibration exercises."
+    - content: "The average score of 3.3 indicates the response meets the minimum quality threshold"
+      isCorrect: false
+      explanation: "Incorrect: While averaging scores is one approach, the divergence reveals an evaluation consistency problem that must be addressed first."
+
+  - content: "Your experiment shows GPT-4 mini reduces costs by 75% while maintaining an average quality score of 4.1 (threshold: 4.2) and improving response time from 32 to 18 seconds. What should you do?"
+    choices:
+    - content: "Immediately deploy GPT-4 mini to production since it meets two of three success criteria"
+      isCorrect: false
+      explanation: "Incorrect: The variant fails to meet the quality threshold (4.1 vs 4.2 required), which could erode customer trust despite cost and performance benefits."
+    - content: "Document the trade-offs and seek business stakeholder input on whether cost savings justify the quality reduction"
+      isCorrect: true
+      explanation: "Correct: Evidence-based optimization requires balancing multiple dimensions. When a variant improves some metrics but fails others, business judgment determines acceptable trade-offs."
+    - content: "Reject GPT-4 mini and continue using GPT-4 without further testing"
+      isCorrect: false
+      explanation: "Incorrect: While the variant didn't meet all criteria, rejecting it without exploring prompt optimizations or other improvements that might close the quality gap wastes valuable data."
