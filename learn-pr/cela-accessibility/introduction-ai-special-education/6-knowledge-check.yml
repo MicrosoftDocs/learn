@@ -1,0 +1,70 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.introduction-ai-special-education.knowledge-check
+title: "Module assessment"
+metadata:
+  title: "Knowledge check"
+  description: "Knowledge check"
+  ms.date: 01/09/2026
+  author: Randall-Knapp
+  ms.author: erzelman
+  ms.topic: unit
+  module_assessment: false
+durationInMinutes: 2
+content: "Choose the best response for each of the following questions."
+quiz:
+  questions:
+  - content: "Which best describes the role of AI in special education?"
+    choices:
+    - content: "AI replaces teacher decision-making"
+      isCorrect: false
+      explanation: "Incorrect. AI does not replace teacher decision-making but rather supports their efforts."
+    - content: "AI supports teachers by streamlining tasks and creating inclusive learning environments"
+      isCorrect: true
+      explanation: "Correct. AI helps teachers by automating tasks and fostering inclusive education."
+    - content: "AI eliminates the need for accessibility tools"
+      isCorrect: false
+      explanation: "Incorrect. AI complements accessibility tools rather than eliminating their need."
+  - content: "What is one example of how AI can help teachers communicate with families?"
+    choices:
+    - content: "Drafting multilingual caregiver updates using Microsoft 365 Copilot and Translator"
+      isCorrect: true
+      explanation: "Correct. AI tools like Microsoft 365 Copilot and Translator assist in creating multilingual updates for caregivers."
+    - content: "Automatically scheduling parent-teacher conferences without teacher input"
+      isCorrect: false
+      explanation: "Incorrect. AI does not replace teacher involvement in scheduling conferences."
+    - content: "Sending progress reports without review"
+      isCorrect: false
+      explanation: "Incorrect. Teachers should always review progress reports before sending them."
+  - content: "Which is a key challenge of using AI in education?"
+    choices:
+    - content: "AI tools are too slow to be useful"
+      isCorrect: false
+      explanation: "Incorrect. AI tools are designed to be efficient and fast."
+    - content: "Risk of bias, inaccuracies, and privacy violations if outputs are not reviewed"
+      isCorrect: true
+      explanation: "Correct. AI outputs must be reviewed to mitigate risks of bias, inaccuracies, and privacy concerns."
+    - content: "AI cannot generate differentiated materials"
+      isCorrect: false
+      explanation: "Incorrect. AI can generate differentiated materials tailored to diverse learning needs."
+  - content: "Which principle is NOT part of Microsoft's Responsible AI framework?"
+    choices:
+    - content: "Fairness"
+      isCorrect: false
+      explanation: "Incorrect. Fairness is a key principle of Microsoft's Responsible AI framework."
+    - content: "Transparency"
+      isCorrect: false
+      explanation: "Incorrect. Transparency is a core principle of Microsoft's Responsible AI framework."
+    - content: "Automation"
+      isCorrect: true
+      explanation: "Correct. Automation is not listed as a principle in Microsoft's Responsible AI framework."
+  - content: "When drafting prompts for AI tools, what is the best practice to protect student privacy?"
+    choices:
+    - content: "Include full student names and detailed personal data"
+      isCorrect: false
+      explanation: "Incorrect. Including full names and personal data violates privacy best practices."
+    - content: "Use general descriptors and avoid personally identifiable information"
+      isCorrect: true
+      explanation: "Correct. Using general descriptors and avoiding personal data protects student privacy."
+    - content: "Share prompts publicly for collaboration"
+      isCorrect: false
+      explanation: "Incorrect. Sharing prompts publicly may expose sensitive information and compromise privacy."

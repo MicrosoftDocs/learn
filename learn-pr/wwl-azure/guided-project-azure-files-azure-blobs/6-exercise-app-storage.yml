@@ -4,7 +4,7 @@ title: Exercise - Provide storage for a new company app
 metadata:
   title: Exercise - Provide storage for a new company app
   description: "Exercise - Provide storage for a new company app"
-  ms.date: 09/02/2024
+  ms.date: 01/01/2026
   author: wwlpublish
   ms.author: cynthist
   ms.topic: unit
@@ -12,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 15
 content: |
-  [!include[](includes/6-exercise-app-storage.md)]
+  [!include[](includes/6-exercise-app-storage.md)]

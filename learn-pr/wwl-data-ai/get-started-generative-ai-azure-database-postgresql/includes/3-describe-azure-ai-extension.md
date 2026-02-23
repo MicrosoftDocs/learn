@@ -1,16 +1,16 @@
-The [azure_ai extension](/azure/postgresql/flexible-server/generative-ai-azure-overview) is a powerful tool created by the Microsoft Postgres team that provides seamless integration between your Azure Database for PostgreSQL flexible server instance and various Foundry Tools. This integration streamlines the development process and enables you to incorporate AI features into your applications effortlessly.
+The [azure_ai extension](/azure/postgresql/flexible-server/generative-ai-azure-overview) is a powerful tool created by the Microsoft Postgres team that provides seamless integration between your Azure Database for PostgreSQL flexible server instance and various Azure AI Services. This integration streamlines the development process and enables you to incorporate AI features into your applications effortlessly.
 
-You can access Foundry Tools such as natural language processing, text analytics, and generative AI language models from your SQL queries using a simple function call. This extension allows you to use the power of Azure AI and Machine Learning to add advanced analytics and insights to your applications without leaving your PostgreSQL database.
+You can access Azure AI Services such as natural language processing, text analytics, and generative AI language models from your SQL queries using a simple function call. This extension allows you to use the power of Azure AI and Machine Learning to add advanced analytics and insights to your applications without leaving your PostgreSQL database.
 
-The extension makes it easy to integrate Azure OpenAI, Microsoft Foundry, and Azure Machine Learning into your database. Overall, the `azure_ai` extension is a game-changer for developers looking to add generative AI features to their applications. Its rich capabilities and seamless integration with Azure AI and Machine Learning services simplify the development process and enable you to build advanced AI applications directly within your PostgreSQL database.
+The extension makes it easy to integrate Azure OpenAI, Azure AI Services, and Azure Machine Learning into your database. Overall, the `azure_ai` extension is a game-changer for developers looking to add generative AI features to their applications. Its rich capabilities and seamless integration with Azure AI and Machine Learning services simplify the development process and enable you to build advanced AI applications directly within your PostgreSQL database.
 
 ## What is the azure_ai extension?
 
-The `azure_ai` extension provides a comprehensive suite of tools that can enhance the functionality of a PostgreSQL database by integrating Azure AI and Machine Learning Services. With the `azure_ai` extension, you can seamlessly incorporate generative AI capabilities into your database. This extension enables you to create new content based on existing information. These tools include a collection of schemas, user-defined functions (UDFs), and composite types that can be seamlessly integrated into any PostgreSQL database. When you use the power of Foundry Tools, you can benefit from advanced analytics, machine learning, and other AI-driven capabilities to gain deeper insights and make better decisions. With the `azure_ai` extension, PostgreSQL, you can unlock a whole new level of functionality and performance. The extension provides three primary service integrations:
+The `azure_ai` extension provides a comprehensive suite of tools that can enhance the functionality of a PostgreSQL database by integrating Azure AI and Machine Learning Services. With the `azure_ai` extension, you can seamlessly incorporate generative AI capabilities into your database. This extension enables you to create new content based on existing information. These tools include a collection of schemas, user-defined functions (UDFs), and composite types that can be seamlessly integrated into any PostgreSQL database. When you use the power of Azure AI Services, you can benefit from advanced analytics, machine learning, and other AI-driven capabilities to gain deeper insights and make better decisions. With the `azure_ai` extension, PostgreSQL, you can unlock a whole new level of functionality and performance. The extension provides three primary service integrations:
 
-### Foundry Tools
+### Azure AI Services
 
-The extension allows your database to call into various [Foundry Tools](/azure/ai-services/what-are-ai-services) to extract insights from data, such as text summarization, translation, and entity extraction. These services simplify the development process, making integrating AI features into your applications more accessible.
+The extension allows your database to call into various [Azure AI Services](/azure/ai-services/what-are-ai-services) to extract insights from data, such as text summarization, translation, and entity extraction. These services simplify the development process, making integrating AI features into your applications more accessible.
 
 ### Azure OpenAI
 
@@ -44,11 +44,11 @@ Once installed, the extension creates four schemas within the database:
 
 ## Configuring the extension
 
-The extension creates the `azure_ai.settings` table, which is crucial in configuring and managing the extension settings. The table securely hosts endpoint and key settings related to the Foundry Tools you integrate into your database. To configure the extension, provide the necessary endpoints and API keys for authentication.
+The extension creates the `azure_ai.settings` table, which is crucial in configuring and managing the extension settings. The table securely hosts endpoint and key settings related to the Azure AI Services you integrate into your database. To configure the extension, provide the necessary endpoints and API keys for authentication.
 
 1. **Setting values**:
 
-   - The `azure_ai.set_setting()` function allows you to **set** various configuration values for Foundry Tools. You can assign values to specific keys using this function.
+   - The `azure_ai.set_setting()` function allows you to **set** various configuration values for Azure AI services. You can assign values to specific keys using this function.
    - For example, you can set the **Azure OpenAI endpoint** and provide the corresponding **subscription key** using the following commands:
 
     ```sql
@@ -75,7 +75,7 @@ Users who need to manage service keys used by the extension require the `azure_a
 
 ## How does the azure_ai extension work?
 
-Here's a quick example of how easy it is to use the `azure_ai` extension within an Azure Database for PostgreSQL flexible server:
+Here's a quick example of how easy it's to use the `azure_ai` extension within an Azure Database for PostgreSQL flexible server:
 
 - **Generating embeddings**: You can create embeddings by calling a user-defined function (UDF) inline from SQL. For example:
 

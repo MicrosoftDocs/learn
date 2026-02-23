@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.optimize-query-performance-azure-cosmos-db.reduce-ru-costs-strategic-indexing
+title: Reduce RU costs with strategic indexing
+metadata:
+  title: Reduce RU Costs with Strategic Indexing
+  description: Reduce RU costs with strategic indexing
+  ms.date: 02/05/2026
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: unit
+durationInMinutes: 12
+content: |
+  [!include[](includes/5-reduce-ru-costs-strategic-indexing.md)]

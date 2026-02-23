@@ -1,0 +1,48 @@
+### YamlMime:Module
+uid: learn.wwl.optimize-vector-search-azure-database-postgresql
+metadata:
+  title: Optimize Vector Search in Azure Database for PostgreSQL
+  description: Tune pgvector configuration, select vector indexes, design efficient data layouts, and scale Azure Database for PostgreSQL for high-performance AI workloads.
+  ms.date: 01/26/2026
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: module-standard-task-based
+  ai-usage: ai-assisted
+  ms.service: azure-database-postgresql
+title: Optimize vector search in Azure Database for PostgreSQL
+summary: Learn how to optimize vector search performance in Azure Database for PostgreSQL using pgvector. Tune configuration parameters, select and configure vector indexes, design efficient data layouts, scale for high-volume workloads, and implement connection pooling for AI applications.
+abstract: |
+  After completing this module, you'll be able to:
+    - Tune PostgreSQL and pgvector configuration parameters to optimize query latency and memory usage for AI workloads
+    - Select and configure the appropriate vector index type based on dataset size, query patterns, and accuracy requirements
+    - Design data layouts that optimize vector storage and metadata filtering performance
+    - Scale Azure Database for PostgreSQL to handle high-volume vector workloads
+    - Implement connection pooling and session management strategies for AI applications
+prerequisites: |
+  Before beginning this module, you should have:
+  - Programming experience with Python.
+  - Basic understanding of Azure services and cloud computing concepts.
+  - Familiarity with relational databases and SQL fundamentals.
+  - Understanding of machine learning concepts including embeddings and similarity search.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- azure-database-postgresql
+subjects:
+- databases
+- artificial-intelligence
+units:
+- learn.wwl.optimize-vector-search-azure-database-postgresql.introduction
+- learn.wwl.optimize-vector-search-azure-database-postgresql.tune-postgresql-pgvector
+- learn.wwl.optimize-vector-search-azure-database-postgresql.choose-configure-vector-indexes
+- learn.wwl.optimize-vector-search-azure-database-postgresql.optimize-data-layout
+- learn.wwl.optimize-vector-search-azure-database-postgresql.scale-high-volume-workloads
+- learn.wwl.optimize-vector-search-azure-database-postgresql.connection-optimization
+- learn.wwl.optimize-vector-search-azure-database-postgresql.exercise-optimize-vector-search
+- learn.wwl.optimize-vector-search-azure-database-postgresql.knowledge-check
+- learn.wwl.optimize-vector-search-azure-database-postgresql.summary
+badge:
+  uid: learn.wwl.optimize-vector-search-azure-database-postgresql.badge

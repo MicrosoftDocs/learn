@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.deploy-containers-azure-container-apps.verify-deployment
+title: Verify deployments with logs and status
+metadata:
+  title: Verify Deployments With Logs and Status
+  description: Verify deployments with logs and status
+  ms.date: 01/26/2026
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/6-verify-deployment.md)]

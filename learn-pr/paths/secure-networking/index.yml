@@ -3,15 +3,15 @@ uid: learn.wwl.secure-networking
 metadata:
   title: 'Protect network infrastructure in Azure'
   description: 'Protect network infrastructure in Azure'
-  ms.date: 03/12/2024
+  ms.date: 01/23/2026
   author: wwlpublish
   ms.author: roberts
   ms.topic: learning-path
 title: 'Protect network infrastructure in Azure'
 prerequisites: |
-  It is beneficial to have a solid infrastructure background in networking and servers.
+  It's beneficial to have a solid infrastructure background in networking and servers.
 summary: |
-  Master the intricacies of securing Azure networks, encompassing virtual networks, encryption, firewall setup, private access, and DDoS protection, with this comprehensive training.
+  Learn how to secure your Azure network infrastructure using virtual networks, firewalls, encryption, and DDoS protection. You configure private and public access controls to protect your resources from threats.
 iconUrl: /training/achievements/generic-trophy.svg
 levels:
 - intermediate

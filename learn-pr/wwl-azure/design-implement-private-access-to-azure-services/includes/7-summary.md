@@ -22,7 +22,6 @@ Copilot can assist you in configuring Azure infrastructure solutions. Copilot ca
 Use these resources to discover more.
 
  - [Secure and isolate access to Azure resources by using network security groups and service endpoints](/training/modules/secure-and-isolate-with-nsg-and-service-endpoints/). Learn how network security groups and service endpoints help you secure your virtual machines and Azure services from unauthorized network access.
- - [Introduction to Azure Private Link](/training/modules/introduction-azure-private-link/). Learn how  Azure Private Link enables private connectivity to Azure services, including its features, how it works, and its use cases.
  - [Introduction to Azure DNS](/training/modules/intro-to-azure-dns/). This module explains what Azure DNS does, how it works, and when you should choose to use Azure DNS as a solution to meet your organization’s needs.
  - [Design and implement private access to Azure Services](/training/modules/design-implement-private-access-to-azure-services/). Learn to design and implement private access to Azure Services with Azure Private Link, and virtual network service endpoints.
  - [Intro to Azure DNS Private Resolver](/training/modules/intro-to-azure-dns-private-resolver/). This module introduces you to Azure DNS Private Resolver and describes its characteristics, capabilities, and use cases.

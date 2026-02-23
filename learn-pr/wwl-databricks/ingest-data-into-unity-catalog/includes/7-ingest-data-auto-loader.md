@@ -1,3 +1,5 @@
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=40a715a4-2791-465f-8ce4-726c6679048e]
+
 When new data files arrive continuously in cloud storage, you need an efficient way to process them without manually tracking which files have been ingested. **Auto Loader** solves this challenge by automatically detecting and ingesting new files as they appear, providing exactly-once guarantees without requiring you to manage state or checkpoints manually.
 
 ## Understand how Auto Loader works
@@ -51,7 +53,7 @@ SELECT * FROM read_files(
 )
 ```
 
-When using `read_files` with streaming tables in Lakeflow Declarative Pipelines, Auto Loader capabilities are automatically enabled. Use the `STREAM` keyword to enable incremental processing:
+When using `read_files` with streaming tables in Lakeflow Spark Declarative Pipelines, Auto Loader capabilities are automatically enabled. Use the `STREAM` keyword to enable incremental processing:
 
 ```sql
 CREATE OR REFRESH STREAMING TABLE bronze_orders
@@ -148,4 +150,4 @@ To access file-level metadata in your ingested data, select the `_metadata` colu
   .select("*", "_metadata.file_path", "_metadata.file_modification_time"))
 ```
 
-Auto Loader integrates seamlessly with Lakeflow Declarative Pipelines, where it handles checkpointing and schema management automatically. In the next unit, you learn how to use Auto Loader within declarative pipeline definitions for end-to-end data ingestion workflows.
+Auto Loader integrates seamlessly with Lakeflow Spark Declarative Pipelines, where it handles checkpointing and schema management automatically. In the next unit, you learn how to use Auto Loader within declarative pipeline definitions for end-to-end data ingestion workflows.

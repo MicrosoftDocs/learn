@@ -1,14 +1,14 @@
-When you build data pipelines in Azure Databricks, you have two primary approaches: **notebooks** with procedural code and **Lakeflow Declarative Pipelines**. Each approach serves different needs, and understanding when to use each helps you deliver maintainable, efficient data solutions.
+When you build data pipelines in Azure Databricks, you have two primary approaches: **notebooks** with procedural code and **Lakeflow Spark Declarative Pipelines**. Each approach serves different needs, and understanding when to use each helps you deliver maintainable, efficient data solutions.
 
 ## Understand the two approaches
 
 Notebooks execute code **step by step**. You control every aspect of data processing—from reading sources to writing outputs. This **procedural approach** gives you full control over execution flow, error handling, and optimization decisions.
 
-Lakeflow Declarative Pipelines work differently. Instead of specifying **how** to process data, you define **what** you want as the end result. You declare your **streaming tables** and **materialized views**, and the pipeline engine handles **orchestration**, **parallelization**, and **error recovery** automatically.
+Lakeflow Spark Declarative Pipelines work differently. Instead of specifying **how** to process data, you define **what** you want as the end result. You declare your **streaming tables** and **materialized views**, and the pipeline engine handles **orchestration**, **parallelization**, and **error recovery** automatically.
 
-:::image type="content" source="../media/3-understand-notebook-pipeline-approach.png" alt-text="Diagram explaining the two approaches when it comes to choosing notebooks or Lakeflow Declarative Pipelines." border="false" lightbox="../media/3-understand-notebook-pipeline-approach.png":::
+:::image type="content" source="../media/3-understand-notebook-pipeline-approach.png" alt-text="Diagram explaining the two approaches when it comes to choosing notebooks or Lakeflow Spark Declarative Pipelines." border="false" lightbox="../media/3-understand-notebook-pipeline-approach.png":::
 
-Consider a scenario where you need to ingest sales data, join it with product information, and calculate regional aggregates. With a notebook, you write explicit read, join, and aggregation commands in sequence. With Lakeflow Declarative Pipelines, you define the final tables and their relationships—the system determines the most efficient execution plan.
+Consider a scenario where you need to ingest sales data, join it with product information, and calculate regional aggregates. With a notebook, you write explicit read, join, and aggregation commands in sequence. With Lakeflow Spark Declarative Pipelines, you define the final tables and their relationships—the system determines the most efficient execution plan.
 
 ## When notebooks fit best
 
@@ -22,9 +22,9 @@ Notebooks excel in scenarios requiring **flexibility** and **detailed control**.
 
 **Fine-grained performance tuning**. When you need to manually control **partitioning**, **caching strategies**, or specific **Spark configurations**, notebooks give you direct access to these optimizations.
 
-## When Lakeflow Declarative Pipelines fit best
+## When Lakeflow Spark Declarative Pipelines fit best
 
-Lakeflow Declarative Pipelines simplify **production data pipelines** by handling operational complexity automatically. Choose this approach when your pipeline needs:
+Lakeflow Spark Declarative Pipelines simplify **production data pipelines** by handling operational complexity automatically. Choose this approach when your pipeline needs:
 
 **Standardized ETL patterns**. For common ingestion and transformation workflows—reading from cloud storage, applying **schema evolution**, maintaining **slowly changing dimensions**—the declarative approach reduces thousands of lines of code to a few statements.
 
@@ -32,7 +32,7 @@ Lakeflow Declarative Pipelines simplify **production data pipelines** by handlin
 
 **Automatic dependency management**. The pipeline engine analyzes relationships between your tables and determines the correct **execution order**. When source data updates, the engine refreshes only the **affected downstream tables**.
 
-**Operational visibility**. Lakeflow Declarative Pipelines provide **lineage tracking**, **execution graphs**, and **monitoring dashboards** without additional configuration. Operations teams can trace data from source to target and troubleshoot issues faster.
+**Operational visibility**. Lakeflow Spark Declarative Pipelines provide **lineage tracking**, **execution graphs**, and **monitoring dashboards** without additional configuration. Operations teams can trace data from source to target and troubleshoot issues faster.
 
 ## Compare the approaches
 
@@ -57,8 +57,8 @@ Start by evaluating your specific requirements. Ask these questions:
 - What level of **operational monitoring** does your team need?
 - Who maintains this pipeline—**seasoned developers** or a broader team with varied skills?
 
-For production pipelines with standard ingestion and transformation patterns, Lakeflow Declarative Pipelines **reduce operational burden** and **improve maintainability**. You spend less time writing orchestration code and more time defining business logic.
+For production pipelines with standard ingestion and transformation patterns, Lakeflow Spark Declarative Pipelines **reduce operational burden** and **improve maintainability**. You spend less time writing orchestration code and more time defining business logic.
 
 For exploratory work, complex integrations, or pipelines requiring extensive customization, notebooks provide the **flexibility** you need. You can always refactor successful notebook prototypes into declarative pipelines once the logic stabilizes.
 
-Many teams use **both approaches together**. Notebooks handle custom preprocessing or machine learning model training, while Lakeflow Declarative Pipelines manage the core ETL workflow. This **hybrid approach** lets you use each tool where it performs best.
+Many teams use **both approaches together**. Notebooks handle custom preprocessing or machine learning model training, while Lakeflow Spark Declarative Pipelines manage the core ETL workflow. This **hybrid approach** lets you use each tool where it performs best.

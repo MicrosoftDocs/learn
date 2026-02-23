@@ -1,0 +1,69 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.build-query-azure-cosmos-db.knowledge-check
+title: Module assessment
+metadata:
+  title: Module Assessment
+  description: Module assessment
+  ms.date: 02/05/2026
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: unit
+durationInMinutes: 5
+content: "Choose the best response for each of the following questions."
+quiz:
+  questions:
+  - content: "A developer is designing a container for an AI application that stores user interaction logs. Each document includes a userId property. The application frequently retrieves all logs for a specific user. Which partition key selection provides the best performance for this access pattern?"
+    choices:
+    - content: "Use userId as the partition key"
+      isCorrect: true
+      explanation: "Using userId as the partition key groups all documents for a single user together in the same logical partition. This enables single-partition queries when filtering by user, providing the lowest latency and RU cost for the application's primary access pattern."
+    - content: "Use a timestamp property as the partition key"
+      isCorrect: false
+      explanation: "Using timestamp creates partitions based on time, which doesn't align with the access pattern of retrieving logs by user. This would require cross-partition queries to gather all logs for a specific user, increasing latency and RU consumption."
+    - content: "Use a boolean isProcessed property as the partition key"
+      isCorrect: false
+      explanation: "Using a boolean property creates only two logical partitions, severely limiting scalability. This low-cardinality partition key creates hot partitions and doesn't support efficient queries by user."
+  - content: "An AI application caches model inference results in Azure Cosmos DB. The application periodically recomputes results and needs to store them regardless of whether a cached entry already exists. Which SDK method handles this requirement most effectively?"
+    choices:
+    - content: "Use create_item() to insert the item"
+      isCorrect: false
+      explanation: "The create_item() method fails with a conflict error (HTTP 409) if an item with the same ID and partition key already exists. For a caching scenario where entries might already exist, create_item() would require additional error handling to detect and handle duplicates."
+    - content: "Use replace_item() to update the item"
+      isCorrect: false
+      explanation: "The replace_item() method requires the item to already exist and fails if it doesn't. For a caching scenario where the entry might not yet exist, replace_item() would fail on the first write for any new cache key."
+    - content: "Use upsert_item() to insert or replace the item"
+      isCorrect: true
+      explanation: "The upsert_item() method inserts a new item if it doesn't exist or replaces the existing item with the same ID and partition key. This simplifies update logic when you don't need to know whether the item existed previously, making it ideal for caching scenarios where results are periodically recomputed."
+  - content: "An AI application stores product recommendations with document IDs in the format product-{id}. The application needs to retrieve a specific recommendation by its known ID and category. Which method provides the most efficient retrieval?"
+    choices:
+    - content: "Use query_items() with a WHERE clause filtering by ID"
+      isCorrect: false
+      explanation: "While queries can retrieve items by ID, they consume more RUs than point reads because Azure Cosmos DB must parse and execute the query. Point reads are more efficient when you have both the ID and partition key."
+    - content: "Use read_item() with the item ID and partition key"
+      isCorrect: true
+      explanation: "Point reads using read_item() retrieve a single item by ID and partition key with the lowest possible latency and RU cost (approximately 1 RU for a 1-KB item). This is the most efficient method when you know both values."
+    - content: "Use query_items() with enable_cross_partition_query=True"
+      isCorrect: false
+      explanation: "Cross-partition queries fan out to all partitions, consuming more RUs than necessary. When you know the partition key, always use it to route requests to a single partition or use a point read."
+  - content: "A developer is building a search feature that accepts user-provided filter values. The feature filters products by category and maximum price. What is the primary reason to use parameterized queries instead of string concatenation?"
+    choices:
+    - content: "Parameterized queries prevent injection attacks and enable query plan caching"
+      isCorrect: true
+      explanation: "Parameters separate query structure from values, preventing malicious input from modifying query logic. Additionally, Azure Cosmos DB can cache and reuse execution plans for parameterized queries, improving performance for repeated queries with different values."
+    - content: "Parameterized queries automatically convert data types"
+      isCorrect: false
+      explanation: "While the SDK handles type serialization, the primary benefits of parameterization are security (preventing injection) and performance (query plan caching). Type conversion isn't the main reason to use parameters."
+    - content: "Parameterized queries run faster than queries with literal values"
+      isCorrect: false
+      explanation: "Individual query execution speed is similar regardless of whether values are parameterized or literal. The performance benefit comes from query plan caching across multiple executions, not from faster single-query execution."
+  - content: "A data analyst notices that queries filtering products by price range consume more RUs than expected. The container uses categoryId as the partition key. Which optimization would most effectively reduce RU consumption?"
+    choices:
+    - content: "Remove the ORDER BY clause from the query"
+      isCorrect: false
+      explanation: "While ORDER BY adds some overhead, removing it might break application functionality. The more significant optimization is ensuring queries route to single partitions when possible, which has a larger impact on RU consumption."
+    - content: "Increase the container's provisioned throughput"
+      isCorrect: false
+      explanation: "Increasing throughput provides more capacity but doesn't reduce the RU cost of individual queries. The query still consumes the same RUs; you're just provisioning more capacity. Optimizing the query to use single-partition routing actually reduces per-query cost."
+    - content: "Add the partition key (categoryId) to the WHERE clause to enable single-partition routing"
+      isCorrect: true
+      explanation: "Including the partition key in the filter routes the query to a specific partition instead of fanning out to all partitions. Single-partition queries consume fewer RUs because they don't require coordination across multiple physical partitions."

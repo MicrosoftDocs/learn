@@ -1,0 +1,55 @@
+### YamlMime:Module
+uid: learn.wwl.purview-data-loss-prevention-create-manage-policies
+metadata:
+  title: Create and manage data loss prevention policies
+  description: Create and manage data loss prevention policies.
+  ms.date: 01/27/2026
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: module
+  ai-usage: ai-assisted
+  ms.service: purview
+title: Create and manage data loss prevention policies
+summary: |
+  Effective data loss prevention (DLP) policies are shaped by a series of deliberate decisions rather than individual settings. Clear intent, well-defined detection, appropriate scope, and measured actions determine how policies behave in real workflows. Validation and ongoing adjustment help ensure protection remains effective as risk and usage change.
+
+abstract: |
+  In this module you learn to:
+  - Establish clear intent and boundaries before creating a DLP policy
+  - Decide when to use a template-based policy or create a custom policy
+  - Define detection logic that reflects meaningful data risk
+  - Align policy scope and actions to real business workflows
+  - Validate and refine policy behavior using simulation mode
+  - Manage and adapt DLP policies as risk and usage patterns change
+
+prerequisites: |
+  - Understanding of what data loss prevention is and the types of risks it addresses
+  - Familiarity with Microsoft Purview as the platform used to create and manage DLP policies
+
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- administrator
+- risk-practitioner
+products:
+- m365
+- microsoft-purview
+subjects:
+- threat-protection
+- security
+units:
+- learn.wwl.purview-data-loss-prevention-create-manage-policies.introduction
+- learn.wwl.purview-data-loss-prevention-create-manage-policies.policy-intent
+- learn.wwl.purview-data-loss-prevention-create-manage-policies.template-custom-policy
+- learn.wwl.purview-data-loss-prevention-create-manage-policies.define-policy-detection
+- learn.wwl.purview-data-loss-prevention-create-manage-policies.policy-scope
+- learn.wwl.purview-data-loss-prevention-create-manage-policies.policy-actions
+- learn.wwl.purview-data-loss-prevention-create-manage-policies.policy-validation
+- learn.wwl.purview-data-loss-prevention-create-manage-policies.manage-policies
+- learn.wwl.purview-data-loss-prevention-create-manage-policies.adaptive-protection-data-loss-prevention
+- learn.wwl.purview-data-loss-prevention-create-manage-policies.guided-walkthrough-create-policy
+- learn.wwl.purview-data-loss-prevention-create-manage-policies.knowledge-check
+- learn.wwl.purview-data-loss-prevention-create-manage-policies.summary
+badge:
+  uid: learn.wwl.purview-data-loss-prevention-create-manage-policies.badge

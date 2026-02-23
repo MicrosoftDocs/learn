@@ -1,13 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.design-solutions-securing-server-client-endpoints.summary
-title: Summary - Design solutions for securing server and client endpoints
+title: Summary
 metadata:
-  title: Summary - Design solutions for securing server and client endpoints
-  description: "Summary of the module on the topic: design solutions for securing server and client endpoints."
-  ms.date: 09/26/2024
+  title: Summary
+  description: "Summary of Design Solutions for Securing Server and Client Endpoints."
+  ms.date: 02/07/2026
   author: ceperezb
   ms.author: ceperezb
   ms.topic: unit
-durationInMinutes: 10
+durationInMinutes: 2
 content: |
   [!include[](includes/10-summary.md)]

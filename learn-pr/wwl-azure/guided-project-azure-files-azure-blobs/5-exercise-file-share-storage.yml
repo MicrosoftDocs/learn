@@ -4,7 +4,7 @@ title: Exercise - Provide shared file storage for the company offices
 metadata:
   title: Exercise - Provide shared file storage for the company offices
   description: "Exercise - Provide shared file storage for the company offices"
-  ms.date: 09/02/2024
+  ms.date: 01/01/2026
   author: wwlpublish
   ms.author: cynthist
   ms.topic: unit
@@ -12,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 10
 content: |
-  [!include[](includes/5-exercise-file-share-storage.md)]
+  [!include[](includes/5-exercise-file-share-storage.md)]

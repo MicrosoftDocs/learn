@@ -1,0 +1,42 @@
+### YamlMime:Module
+uid: learn.dpu.introduction-to-arm-surface
+title: Introduction to Arm on Microsoft Surface
+metadata:
+  title: Introduction To Arm On Microsoft Surface
+  description: 'Learn how Arm on Microsoft Surface enables modern business productivity. This module introduces the ARM processor architecture on Surface devices and explains how it delivers long battery life, efficient performance, and broad app compatibility.'
+  ms.date: 02/17/2026
+  author: ozahran7
+  ms.author: v-zahranomar
+  ms.topic: module
+  ms.service: surface
+summary: >
+  Explore how Arm on Microsoft Surface devices delivers long battery life, efficient performance, and broad app compatibility, enabling modern business productivity.
+
+abstract: |
+  In this module, you'll learn:
+  - What Arm on Microsoft Surface is and how it differs from traditional x86 architecture.
+  - How Surface devices with ARM processors work to provide efficient performance and long battery life.
+  - When to use Surface devices with Arm for your business needs.
+prerequisites: |
+  - None
+iconUrl: /training/achievements/introduction-to-arm-surface.svg
+ratingEnabled: false
+levels:
+  - beginner
+roles:
+  - administrator
+  - business-leader
+  - business-owner
+  - business-user
+  - technology-manager
+products:
+  - surface
+units:
+  - learn.dpu.introduction-to-arm-surface.introduction
+  - learn.dpu.introduction-to-arm-surface.what-is-arm-on-microsoft-surface
+  - learn.dpu.introduction-to-arm-surface.how-surface-with-arm-works
+  - learn.dpu.introduction-to-arm-surface.when-to-use-surface-with-arm
+  - learn.dpu.introduction-to-arm-surface.knowledge-check
+  - learn.dpu.introduction-to-arm-surface.summary
+badge:
+  uid: learn.dpu.introduction-to-arm-surface.badge

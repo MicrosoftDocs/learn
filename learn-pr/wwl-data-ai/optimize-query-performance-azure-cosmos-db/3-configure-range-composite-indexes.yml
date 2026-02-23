@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.optimize-query-performance-azure-cosmos-db.configure-range-composite-indexes
+title: Configure range and composite indexes
+metadata:
+  title: Configure Range and Composite Indexes
+  description: Configure range and composite indexes
+  ms.date: 02/05/2026
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: unit
+durationInMinutes: 12
+content: |
+  [!include[](includes/3-configure-range-composite-indexes.md)]

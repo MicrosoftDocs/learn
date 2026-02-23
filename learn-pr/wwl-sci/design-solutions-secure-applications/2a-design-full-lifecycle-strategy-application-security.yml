@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-solutions-secure-applications.design-full-lifecycle-strategy-application-security
+title: Design a full lifecycle strategy for application security
+metadata:
+  title: Design a full lifecycle strategy for application security
+  description: "SC-100 preparatory unit on this topic: design a full lifecycle strategy for application security."
+  ms.date: 02/10/2026
+  author: ceperezb
+  ms.author: ceperezb
+  ms.topic: unit
+  ai-usage: ai-assisted
+durationInMinutes: 8
+content: |
+  [!include[](includes/2a-design-full-lifecycle-strategy-application-security.md)]

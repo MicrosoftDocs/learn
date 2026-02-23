@@ -4,7 +4,7 @@ title: Design and implement a temporal (history) table to record changes over ti
 metadata:
   title: Design and Implement a Temporal (History) Table to Record Changes Over Time
   description: Learn how to design and implement temporal tables in Azure Databricks to track row-level changes for auditing, debugging, and point-in-time queries.
-  ms.date: 12/03/2025
+  ms.date: 02/10/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit

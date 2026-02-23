@@ -12,6 +12,6 @@ Here are some links to more information about the articles we discussed in this 
 - [Automating migration with GitHub Actions Importer](https://docs.github.com/en/actions/migrating-to-github-actions/automating-migration-with-github-actions-importer)
 - [GitHub Actions Importer labs](https://github.com/actions/importer-labs/tree/main#readme)
 
-## How to provide feedback ✍️
+## Provide feedback
 
-If you have content feedback or suggested changes for a Microsoft Learn module, use the [MS Learn Module Update Request](https://github.com/githubpartners/microsoft-learn/issues/new/choose) issue form to provide that feedback. A team member will triage the request. Thank you for taking the time to improve our content!
+Use this [issue form](https://github.com/githubpartners/microsoft-learn/issues/new/choose) to provide content feedback or suggested changes for this Microsoft Learn module. GitHub maintains this content and a team member will triage the request. Thank you for taking the time to improve our content!

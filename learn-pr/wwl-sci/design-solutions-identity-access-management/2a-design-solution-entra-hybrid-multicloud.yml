@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-solutions-identity-access-management.design-solution-entra-hybrid-multicloud
+title: Design a solution for Microsoft Entra ID, including hybrid and multicloud environments
+metadata:
+  title: Design a solution for Microsoft Entra ID, including hybrid and multicloud environments
+  description: "Design a Microsoft Entra ID solution for hybrid and multicloud environments, including directory synchronization, authentication methods, and multicloud federation."
+  ms.date: 02/07/2026
+  author: ceperezb
+  ms.author: ceperezb
+  ms.topic: unit
+  ai-usage: ai-generated
+durationInMinutes: 9
+content: |
+  [!include[](includes/2a-design-solution-entra-hybrid-multicloud.md)]

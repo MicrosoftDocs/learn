@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-data-loss-prevention-understand-plan.understand-data-loss-prevention
+title: Understand the role of data loss prevention (DLP)
+metadata:
+  title: Understand the role of data loss prevention (DLP)
+  description: "Understand the role of data loss prevention (DLP)"
+  ms.date: 01/13/2026
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/understand-data-loss-prevention.md)]

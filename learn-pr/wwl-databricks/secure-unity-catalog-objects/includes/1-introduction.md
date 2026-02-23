@@ -1,3 +1,5 @@
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=53837f53-8349-439b-9d3a-390f0322c07b]
+
 Securing data is fundamental to enterprise data platforms, yet traditional approaches often fragment governance across multiple systems and require constant maintenance. As organizations scale their analytics workloads on Azure Databricks, they need unified security that protects sensitive information while maintaining operational efficiency. **Unity Catalog** addresses this challenge by providing centralized governance for data assets, compute resources, and access controls.
 
 When you work with Unity Catalog, security operates at multiple layers. You control who can access catalogs, schemas, and tables through **granular permissions**. You enforce **row-level and column-level restrictions** to ensure users see only the data they're authorized to view. You authenticate data access through **service principals** or **managed identities**, eliminating hardcoded credentials from your code. You retrieve sensitive configuration values from **Azure Key Vault** without exposing secrets in notebooks or job configurations.

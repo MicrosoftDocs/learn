@@ -3,7 +3,7 @@ uid: learn.wwl.perform-basic-azure-management-tasks
 metadata:
   title: Perform basic Azure Management Tasks (Security and Monitoring)
   description: Perform basic Azure Management Tasks (Security and Monitoring)
-  ms.date: 04/02/2025
+  ms.date: 01/23/2026
   author: wwlpublish
   ms.author: roberts
   ms.topic: learning-path
@@ -11,7 +11,7 @@ title: Perform basic Azure Management Tasks (Security and Monitoring)
 prerequisites: |
   Prior knowledge of cloud concepts, Azure services, and basic security and monitoring principles, such as those covered in Course AZ-900T00-A: Microsoft Azure Fundamentals.
 summary: |
-  Perform essential Azure security and monitoring tasks by enabling Microsoft Defender for Cloud, reviewing security recommendations, managing keys and secrets, configuring firewall policies, and modifying monitoring settings in Log Analytics to enhance cloud security and compliance.
+  Learn essential Azure security and monitoring tasks. You enable Microsoft Defender for Cloud, review security recommendations, manage keys and secrets in Azure Key Vault, configure Azure Firewall policies, and set up Log Analytics workspaces to enhance your cloud security and compliance posture.
 iconUrl: /training/achievements/generic-trophy.svg
 levels:
 - intermediate

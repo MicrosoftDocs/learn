@@ -27,14 +27,14 @@ quiz:
     - content: "Bronze layer"
       isCorrect: true
       explanation: "Correct. The bronze layer stores ingested data with minimal transformation, preserving the raw state for auditing and potential reprocessing."
-  - content: "What is the primary advantage of using Lakeflow Declarative Pipelines over notebooks for production data pipelines?"
+  - content: "What is the primary advantage of using Lakeflow Spark Declarative Pipelines over notebooks for production data pipelines?"
     choices:
     - content: "Declarative pipelines allow rapid prototyping and cell-by-cell inspection"
       isCorrect: false
       explanation: "Incorrect. Notebooks are better suited for rapid prototyping and interactive exploration."
     - content: "Declarative pipelines automatically handle orchestration, incremental processing, and error recovery"
       isCorrect: true
-      explanation: "Correct. Lakeflow Declarative Pipelines reduce operational burden by automatically managing orchestration, dependency analysis, incremental processing, and retry logic."
+      explanation: "Correct. Lakeflow Spark Declarative Pipelines reduce operational burden by automatically managing orchestration, dependency analysis, incremental processing, and retry logic."
     - content: "Declarative pipelines support more external library dependencies than notebooks"
       isCorrect: false
       explanation: "Incorrect. Notebooks provide more flexibility for installing and using custom Python or Scala packages."
@@ -71,7 +71,7 @@ quiz:
     - content: "To automatically trigger a retry of the failed notebook task"
       isCorrect: false
       explanation: "Incorrect. Retry policies are configured at the job level, not triggered by dbutils.notebook.exit()."
-  - content: "When should a data engineer choose streaming tables over materialized views in Lakeflow Declarative Pipelines?"
+  - content: "When should a data engineer choose streaming tables over materialized views in Lakeflow Spark Declarative Pipelines?"
     choices:
     - content: "When the transformation requires complex aggregations or joins"
       isCorrect: false

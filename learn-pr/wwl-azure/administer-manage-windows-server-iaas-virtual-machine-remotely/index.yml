@@ -3,9 +3,9 @@ uid: learn.wwl.administer-manage-windows-server-iaas-vm-remotely
 metadata:
   title: Administer and manage Windows Server IaaS Virtual Machine remotely
   description: "Administer and manage Windows Server IaaS Virtual Machine remotely"
-  ms.date: 01/20/2025
+  ms.date: 01/23/2026
   author: wwlpublish
-  ms.author: tonyj
+  ms.author: robbarefoot
   ms.topic: module
   ms.service: windows-server
 title: Administer and manage Windows Server IaaS Virtual Machine remotely

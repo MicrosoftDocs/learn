@@ -1,191 +1,150 @@
-This unit addresses a few specific strategies for modern authentication:
+Modern authentication moves beyond traditional username and password to provide adaptive, context-aware access control. As a security architect, you design authentication and authorization strategies that balance security requirements with user productivity while supporting Zero Trust principles.
 
-- Conditional access
-- Continuous access evaluation
-- Threat intelligence integration
-- Risk scoring
+## Core components of modern authentication
 
-## Conditional Access
+Modern authentication in Microsoft Entra ID builds on several foundational capabilities:
 
-Users can access your organization's resources by using various devices and apps from anywhere. As an IT admin, you want to make sure that these devices meet your standards for security and compliance. Just focusing on who can access a resource isn't sufficient anymore.
+| Component | Function |
+|-----------|----------|
+| **Conditional Access** | Policy engine that evaluates signals and enforces access decisions |
+| **Continuous Access Evaluation** | Near real-time enforcement of policy changes and critical events |
+| **Microsoft Entra Identity Protection** | Risk detection and automated response to suspicious sign-ins |
+| **Protected actions** | Additional verification for sensitive operations |
 
-To balance security and productivity, you need to think about how a resource is accessed before you can make a decision about access control. With Microsoft Entra Conditional Access, you can address this requirement. With Conditional Access, you can make automated access control decisions based on conditions for accessing your cloud apps.
+These components work together to create a layered authentication strategy that adapts to changing risk conditions.
 
-**Best practice**: Manage and control access to corporate resources.  
+## Designing Conditional Access policies
 
-**Detail**: Configure common Microsoft Entra Conditional Access policies based on a group, location, and application sensitivity for SaaS apps and Microsoft Entra ID–connected apps.
+Conditional Access is the Zero Trust policy engine that evaluates every access request against defined conditions and enforces appropriate controls before granting access to apps and data.
 
-**Best practice**: Block legacy authentication protocols.
+:::image type="content" source="../media/risk-based-conditional-access-diagram.png" alt-text="Diagram that shows a conceptual risk-based Conditional Access policy.":::
 
-**Detail**: Attackers exploit weaknesses in older protocols every day, particularly for password spray attacks. Configure Conditional Access to block legacy protocols.
+### Signal evaluation
 
-## Continuous access evaluation
-<!--
-BEGIN(/azure/active-directory/conditional-access/concept-continuous-access-evaluation)
--->
-Token expiration and refresh are a standard mechanism in the industry. When a client application like Outlook connects to a service like Exchange Online, the API requests are authorized using OAuth 2.0 access tokens. By default, access tokens are valid for one hour, when they expire the client is redirected to Microsoft Entra ID to refresh them. That refresh period provides an opportunity to reevaluate policies for user access. For example: we might choose not to refresh the token because of a Conditional Access policy, or because the user has been disabled in the directory. 
+Conditional Access policies evaluate multiple signals to determine the risk level of each access attempt:
 
-Customers have expressed concerns about the lag between when conditions change for a user, and when policy changes are enforced. Microsoft Entra ID has experimented with the "blunt object" approach of reduced token lifetimes but found they can degrade user experiences and reliability without eliminating risks.
+- **User and group membership** - Who is requesting access
+- **Application being accessed** - What resource is the target
+- **Device state** - Is the device compliant, hybrid joined, or managed
+- **Location** - Where is the request originating (IP ranges, countries/regions, named locations)
+- **Client application** - Modern authentication or legacy protocols
+- **Sign-in risk** - Real-time risk assessment from Identity Protection
+- **User risk** - Aggregate risk level based on past behavior
 
-Timely response to policy violations or security issues really requires a "conversation" between the token issuer (Microsoft Entra ID), and the relying party (enlightened app). This two-way conversation gives us two important capabilities. The relying party can see when properties change, like network location, and tell the token issuer. It also gives the token issuer a way to tell the relying party to stop respecting tokens for a given user because of account compromise, disablement, or other concerns. The mechanism for this conversation is continuous access evaluation (CAE). The goal for critical event evaluation is for response to be near real time, but latency of up to 15 minutes may be observed because of event propagation time; however, IP locations policy enforcement is instant.
+### Access controls
 
-The initial implementation of continuous access evaluation focuses on Exchange, Teams, and SharePoint Online.
+Based on signal evaluation, policies can enforce controls:
 
-Continuous access evaluation is available in Azure Government tenants (GCC High and DOD) for Exchange Online.
+- **Block access** - Deny the request entirely
+- **Grant access with conditions** - Require MFA, compliant device, approved app, or password change
+- **Session controls** - Limit session duration, enforce app-enforced restrictions, or use Conditional Access App Control
 
-### Key benefits
+### Policy design patterns
 
-- User termination or password change/reset: User session revocation is enforced in near real time.
-- Network location change: Conditional Access location policies are enforced in near real time.
-- Token export to a machine outside of a trusted network can be prevented with Conditional Access location policies.
+Design your Conditional Access policies using these patterns:
 
-## Scenarios 
+- **Baseline policies** - Apply to all users and applications (require MFA for all users, block legacy authentication)
+- **Application-specific policies** - Enhanced protection for sensitive applications
+- **Risk-based policies** - Respond dynamically to elevated sign-in or user risk
+- **Location-based policies** - Different requirements for trusted versus untrusted networks
+- **Device-based policies** - Require managed or compliant devices for accessing corporate data
 
-There are two scenarios that make up continuous access evaluation, critical event evaluation and Conditional Access policy evaluation.
+## Continuous Access Evaluation (CAE)
 
-### Critical event evaluation
+Traditional token-based authentication grants access for the token lifetime, even if conditions change. CAE enables near real-time enforcement when:
 
-Continuous access evaluation is implemented by enabling services, like Exchange Online, SharePoint Online, and Teams, to subscribe to critical Microsoft Entra events. Those events can then be evaluated and enforced near real time. Critical event evaluation doesn't rely on Conditional Access policies so it's available in any tenant. The following events are currently evaluated:
+- User account is disabled or deleted
+- Password is changed or reset
+- MFA is enabled for the user
+- Administrator explicitly revokes tokens
+- User risk level becomes elevated
 
-- User Account is deleted or disabled
-- Password for a user is changed or reset
-- Multifactor Authentication is enabled for the user
-- Administrator explicitly revokes all refresh tokens for a user
-- High user risk detected by Microsoft Entra ID Protection
+### CAE design considerations
 
-This process enables the scenario where users lose access to organizational SharePoint Online files, email, calendar, or tasks, and Teams from Microsoft 365 client apps within minutes after a critical event. 
+- **Critical event evaluation** - Microsoft Entra ID notifies resource providers when critical events occur
+- **Conditional Access policy evaluation** - Resource providers can request policy re-evaluation for long-lived sessions
+- **Token lifetime** - CAE-enabled tokens can have extended lifetimes (up to 28 hours) while maintaining security through continuous evaluation
+- **Application support** - Ensure applications support CAE for full benefit
 
-### Conditional Access policy evaluation
+CAE provides stronger security guarantees than short token lifetimes alone and improves user experience by reducing unnecessary reauthentication.
 
-Exchange Online, SharePoint Online, Teams, and MS Graph can synchronize key Conditional Access policies for evaluation within the service itself.
+## Risk-based access with Identity Protection
 
-This process enables the scenario where users lose access to organizational files, email, calendar, or tasks from Microsoft 365 client apps or SharePoint Online immediately after network location changes.
-
-| | Outlook Web | Outlook Win32 | Outlook iOS | Outlook Android | Outlook Mac |
-| :--- | :---: | :---: | :---: | :---: | :---: |
-| **SharePoint Online** | Supported | Supported | Supported | Supported | Supported |
-| **Exchange Online** | Supported | Supported | Supported | Supported | Supported |
-
-| | Office web apps | Office Win32 apps | Office for iOS | Office for Android | Office for Mac |
-| :--- | :---: | :---: | :---: | :---: | :---: |
-| **SharePoint Online** | Not Supported \* | Supported | Supported | Supported | Supported |
-| **Exchange Online** | Not Supported | Supported | Supported | Supported | Supported |
-
-| | OneDrive web | OneDrive Win32 | OneDrive iOS | OneDrive Android | OneDrive Mac |
-| :--- | :---: | :---: | :---: | :---: | :---: |
-| **SharePoint Online** | Supported | Not Supported | Supported | Supported | Not Supported |
-
-| | Teams web | Teams Win32 | Teams iOS | Teams Android | Teams Mac |
-| :--- | :---: | :---: | :---: | :---: | :---: |
-| **Teams Service** | Partially supported | Partially supported | Partially supported | Partially supported | Partially supported |
-| **SharePoint Online** | Partially supported | Partially supported | Partially supported | Partially supported | Partially supported |
-| **Exchange Online** | Partially supported | Partially supported | Partially supported | Partially supported | Partially supported |
-
-## Microsoft Entra Identity Protection
-
-Identity Protection allows organizations to accomplish three key tasks:
-
--   [Automate the detection and remediation of identity-based risks](/azure/active-directory/identity-protection/howto-identity-protection-configure-risk-policies).
--   [Investigate risks](/azure/active-directory/identity-protection/howto-identity-protection-investigate-risk) using data in the portal.
--   [Export risk detection data to other tools](/azure/active-directory/identity-protection/howto-export-risk-data).
+Microsoft Entra Identity Protection analyzes signals to detect suspicious sign-ins and compromised accounts.
 
 [![Diagram showing how Identity Protection conceptually works.](../media/identity-protection-overview.png)](../media/identity-protection-overview.png#lightbox)
 
-Identity Protection uses the learnings Microsoft has acquired from their position in organizations with Microsoft Entra ID, the consumer space with Microsoft Accounts, and in gaming with Xbox to protect your users. Microsoft analyses trillions of signals per day to identify and protect customers from threats.
+### Risk types
 
-The signals generated by and fed to Identity Protection, can be further fed into tools like Conditional Access to make access decisions, or fed back to a security information and event management (SIEM) tool for further investigation.
+| Risk Type | Description | Examples |
+|-----------|-------------|----------|
+| **Sign-in risk** | Probability that the sign-in isn't authorized | Atypical travel, anonymous IP, malware-linked IP |
+| **User risk** | Probability that the user's identity is compromised | Leaked credentials, threat intelligence indicators |
 
-### Detect risk
+### Risk-based policy design
 
-Identity Protection detects [risks](/azure/active-directory/identity-protection/concept-identity-protection-risks) of many types, including:
+Configure Conditional Access policies to respond to risk levels:
 
--   Anonymous IP address use
--   Atypical travel
--   Malware linked IP address
--   Unfamiliar sign-in properties
--   Leaked credentials
--   Password spray
--   and more...
+- **Low risk** - Allow access with standard controls
+- **Medium risk** - Require MFA or additional verification
+- **High risk** - Block access or require password change and MFA
 
-The risk signals can trigger remediation efforts such as requiring: perform multifactor authentication, reset their password using self-service password reset, or block access until an administrator takes action.
+Enable automated remediation to allow users to self-service when triggered by risk-based policies, such as registering for MFA or performing password reset.
 
-More detail on these and other risks including how or when they're calculated can be found in the article, [What is risk](/azure/active-directory/identity-protection/concept-identity-protection-risks).
+### Investigation and remediation
 
-### Investigate risk
+Security architects should also plan for:
 
-Administrators can review detections and take manual action on them if needed. There are three key reports that administrators use for investigations in Identity Protection:
-
--   Risky users
--   Risky sign-ins
--   Risk detections
-
-More information can be found in the article, [How To: Investigate risk](/azure/active-directory/identity-protection/howto-identity-protection-investigate-risk).
-
-#### Risk levels
-
-Identity Protection categorizes risk into tiers: low, medium, and high.
-
-Microsoft doesn't provide specific details about how risk is calculated. Each level of risk brings higher confidence that the user or sign-in is compromised. For example, something like one instance of unfamiliar sign-in properties for a user might not be as threatening as leaked credentials for another user.
-
-> [!NOTE]
-> Risk-based policies can be created in Identity protection as well, but it is recommended to do so with Conditional Access policies.
-
-## Risk-based conditional access policies
-
-Access control policies can be applied to protect organizations when a sign-in or user is detected to be at risk. Such policies are called **risk-based policies**. 
-
-Microsoft Entra Conditional Access offers two risk conditions: **Sign-in risk** and **User risk**. Organizations can create risk-based Conditional Access policies by configuring these two risk conditions and choosing an access control method. During each sign-in, Identity Protection sends the detected risk levels to Conditional Access, and the risk-based policies apply if the policy conditions are satisfied.
-
-![Diagram that shows a conceptual risk-based Conditional Access policy.](../media/risk-based-conditional-access-diagram.png)
-
-The following diagram shows an example of enforcing a policy that requires multifactor authentication when the sign-in risk level is medium or high.
-  
-![Diagram that shows a conceptual risk-based Conditional Access policy with self-remediation.](../media/risk-based-conditional-access-policy-example.png)
-
-The example above also demonstrates a main benefit of a risk-based policy: **automatic risk remediation**. When a user successfully completes the required access control, like a secure password change, their risk is remediated. That sign-in session and user account isn't at risk, and no action is needed from the administrator. 
-
-Allowing users to self-remediate using this process reduces the risk investigation and remediation burden on the administrators while protecting your organizations from security compromises. More information about risk remediation can be found in the article, Remediate risks and unblock users.
-
-### Sign-in risk-based Conditional Access policy
-
-During each sign-in, Identity Protection analyzes hundreds of signals in real-time and calculates a sign-in risk level that represents the probability that the given authentication request isn't authorized. This risk level then gets sent to Conditional Access, where the organization's configured policies are evaluated. Administrators can configure sign-in risk-based Conditional Access policies to enforce access controls based on sign-in risk, including requirements such as:
-
-- Block access
-- Allow access
-- Require multifactor authentication
-
-If risks are detected on a sign-in, users can perform the required access control such as multifactor authentication to self-remediate and close the risky sign-in event to prevent unnecessary noise for administrators.
-
-### User risk-based Conditional Access policy
-
-Identity Protection analyzes signals about user accounts and calculates a risk score based on the probability that the user has been compromised. If a user has risky sign-in behavior, or their credentials have been leaked, Identity Protection uses these signals to calculate the user risk level. Administrators can configure user risk-based Conditional Access policies to enforce access controls based on user risk, including requirements such as: 
-
-- Block access
-- Allow access but require a secure password change.
-
-A secure password change remediates the user risk and close the risky user event to prevent unnecessary noise for administrators.
+- Risk detection review and investigation workflows
+- Integration with security operations through the risky users and sign-ins reports
+- Custom detections using Identity Protection APIs
 
 ## Protected actions
 
-Protected actions in Microsoft Entra ID are permissions that have been assigned Conditional Access policies. When a user attempts to perform a protected action, they must first satisfy the Conditional Access policies assigned to the required permissions. For example, to allow administrators to update Conditional Access policies, you can require that they first satisfy the Phishing-resistant MFA policy.
+Some operations are sensitive enough to require additional verification even for authenticated users. Protected actions add a layer of authentication step-up for specific administrative or sensitive operations.
 
-### Why use protected actions?
+### Use cases for protected actions
 
-You use protected actions when you want to add an additional layer of protection. Protected actions can be applied to permissions that require strong Conditional Access policy protection, independent of the role being used or how the user was given the permission. Because the policy enforcement occurs at the time the user attempts to perform the protected action and not during user sign-in or rule activation, users are prompted only when needed.
+- Modifying Conditional Access policies
+- Changing tenant settings
+- Accessing highly privileged resources
+- Performing sensitive data operations
 
-### What policies are typically used with protected actions?
+Configure protected actions through authentication context in Conditional Access to require reauthentication or specific authentication methods before allowing sensitive operations.
 
-We recommend using multifactor authentication on all accounts, especially accounts with privileged roles. Protected actions can be used to require additional security. Here are some common stronger Conditional Access policies.
+## Authentication method design
 
-- Stronger MFA authentication strengths, such as [Passwordless MFA](/entra/identity/authentication/concept-authentication-strengths#built-in-authentication-strengths) or [Phishing-resistant MFA](/entra/identity/authentication/concept-authentication-strengths#built-in-authentication-strengths),  
-- Privileged access workstations, by using Conditional Access policy [device filters](/entra/identity/conditional-access/concept-condition-filters-for-devices).
-- Shorter session timeouts, by using Conditional Access [sign-in frequency session controls](/entra/identity/conditional-access/concept-session-lifetime#user-sign-in-frequency).
+Select authentication methods based on security and usability requirements:
 
-### What permissions can be used with protected actions?
+| Method | Security Level | User Experience |
+|--------|---------------|-----------------|
+| **Passkeys (FIDO2)** | Highest | Passwordless, phishing-resistant |
+| **Windows Hello for Business** | Highest | Passwordless, device-bound |
+| **Microsoft Authenticator (passwordless)** | High | Passwordless, phone-based |
+| **Microsoft Authenticator (push notification)** | Medium-High | MFA, phone-based |
+| **SMS/Voice** | Medium | Legacy, fallback only |
+| **Password** | Low | Should be combined with MFA |
 
-Conditional Access policies can be applied to limited set of permissions. You can use protected actions in the following areas:
+Plan to move toward phishing-resistant authentication methods and phase out less secure options where possible.
 
-- Conditional Access policy management
-- Cross-tenant access settings management
-- Custom rules that define network locations
-- Protected action management
+## Microsoft Entra solutions for modern authentication
+
+The following capabilities support your authentication strategy:
+
+- **Microsoft Entra Conditional Access** - Policy-based adaptive access control
+- **Microsoft Entra Identity Protection** - Risk detection and automated response
+- **Continuous Access Evaluation** - Near real-time policy enforcement
+- **Authentication methods policy** - Control available authentication methods
+- **Authentication strengths** - Define which authentication methods satisfy policy requirements
+- **Named locations** - Define trusted and untrusted network locations
+
+## Design considerations for security architects
+
+When designing modern authentication strategies:
+
+- **Start with secure defaults** - Use security defaults for basic protection; move to Conditional Access for customization
+- **Implement policy as code** - Manage Conditional Access policies through templates and version control
+- **Plan for break-glass** - Create emergency access accounts excluded from Conditional Access policies
+- **Test before deployment** - Use report-only mode to evaluate policy impact
+- **Monitor and iterate** - Review sign-in logs and Conditional Access insights to refine policies
+- **Consider user experience** - Balance security requirements with productivity to drive adoption

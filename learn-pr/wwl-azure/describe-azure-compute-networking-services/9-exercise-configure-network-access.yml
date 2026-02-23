@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.describe-azure-compute-networking-services.exercise-configure-network-access
-title: Exercise - Configure network access
+title: Exercise - Create an Azure Virtual Machine and Configure network access
 metadata:
-  title: Exercise - Configure network access
-  description: "Exercise - Configure network access"
+  title: Exercise - Create an Azure Virtual Machine and Configure network access
+  description: "Exercise to configure a virtual machine as a web host and host a website."
   ms.date: 09/20/2024
   author: wwlpublish
   ms.author: robbarefoot

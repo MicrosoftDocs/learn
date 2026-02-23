@@ -9,3 +9,7 @@ Here are some links to more information about code scanning:
 - [Learn more about using SARIF files with Code Scanning](https://docs.github.com/code-security/code-scanning/integrating-with-code-scanning/sarif-support-for-code-scanning)
 - [Troubleshooting code scanning](https://docs.github.com//code-security/code-scanning/troubleshooting-code-scanning)
 - [REST API endpoints for code scanning](https://docs.github.com/rest/code-scanning/code-scanning)
+
+## Provide feedback
+
+Use this [issue form](https://github.com/githubpartners/microsoft-learn/issues/new/choose) to provide content feedback or suggested changes for this Microsoft Learn module. GitHub maintains this content and a team member will triage the request. Thank you for taking the time to improve our content!

@@ -3,9 +3,9 @@ uid: learn.wwl.implement-windows-server-iaas-vm-security
 metadata:
   title: Implement Windows Server IaaS VM Security
   description: This learning path deals with securing your Azure resources. After completing the learning path, you’ll be able to determine if your Azure IaaS workloads have any security vulnerabilities, and remediate those potential security vulnerabilities.
-  ms.date: 09/02/2020
+  ms.date: 01/23/2026
   author: wwlpublish
-  ms.author: tonyj
+  ms.author: robbarefoot
   ms.topic: learning-path
 title: Implement Windows Server IaaS VM Security
 prerequisites: |

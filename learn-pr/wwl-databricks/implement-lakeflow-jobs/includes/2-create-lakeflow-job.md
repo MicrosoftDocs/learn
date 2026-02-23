@@ -12,7 +12,7 @@ Every job requires at minimum:
 - A **compute resource** to execute the task
 - A **unique name** to identify the job
 
-Tasks within a job can execute notebooks, Python scripts, SQL queries, or Lakeflow Declarative Pipelines. You configure each task type differently, but all tasks follow the same pattern: define what to run, specify where to run it, and configure any required parameters.
+Tasks within a job can execute notebooks, Python scripts, SQL queries, or Lakeflow Spark Declarative Pipelines. You configure each task type differently, but all tasks follow the same pattern: define what to run, specify where to run it, and configure any required parameters.
 
 ## Create a job and add tasks
 
@@ -115,4 +115,43 @@ To add tags:
 
 Tags also propagate to job clusters, enabling consistent monitoring and cost attribution across your organization.
 
-With your job created, tasks configured, and dependencies set, you're ready to run your workflow. The next step is understanding how to monitor job execution and handle run outcomes.
+## Configure job access permissions
+
+Job permissions control who can view, run, and manage your Lakeflow Jobs independently from compute permissions. Azure Databricks provides four permission levels:
+
+| Permission level   | Capabilities                                                                                              |
+| ------------------ | --------------------------------------------------------------------------------------------------------- |
+| **CAN VIEW**       | View job configuration, task definitions, and run history                                                 |
+| **CAN RUN**        | Everything in CAN VIEW plus trigger job runs manually                                                     |
+| **CAN MANAGE RUN** | Everything in CAN RUN plus cancel runs, view output, and restart failed runs                              |
+| **CAN MANAGE**     | Everything in CAN MANAGE RUN plus edit configuration, modify tasks, change schedules, and set permissions |
+
+To configure permissions, navigate to **Jobs & Pipelines**, select your job, open the **Permissions** tab, and add users or groups with the appropriate level. Job creators and workspace admins automatically receive `CAN MANAGE` permissions.
+
+When a job runs, it executes with the job owner's permissions or the configured service principal's permissions—not the triggering user's permissions. For production jobs, grant `CAN MANAGE` to the pipeline team, `CAN RUN` to users who need manual execution, and `CAN VIEW` to stakeholders requiring visibility.
+
+## Configure run identity and Unity Catalog access
+
+When your job accesses Unity Catalog objects—such as tables, views, or volumes—the job's **run identity** must have the required Unity Catalog privileges. This is a critical prerequisite before configuring any job that reads from or writes to Unity Catalog-managed data.
+
+The run identity is the principal whose permissions Unity Catalog evaluates during job execution. By default, jobs run as the **job owner** (the user who created the job). For production workloads, you can configure a **service principal** as the run identity to avoid dependency on individual user accounts.
+
+Before creating your job, verify that the run identity has the necessary privileges:
+
+| Operation | Required Unity Catalog privilege |
+| --------- | -------------------------------- |
+| Read from a table | `SELECT` on the table |
+| Write to a table | `MODIFY` on the table |
+| Create tables in a schema | `CREATE TABLE` and `USE SCHEMA` on the schema |
+| Access a volume | `READ VOLUME` or `WRITE VOLUME` on the volume |
+
+To grant privileges to a service principal or user, use SQL commands like:
+
+```sql
+GRANT SELECT, MODIFY ON TABLE catalog.schema.table TO `service-principal-id`;
+GRANT USE SCHEMA ON SCHEMA catalog.schema TO `service-principal-id`;
+```
+
+If the run identity lacks the required privileges, the job fails at runtime with an authorization error—even if the job configuration itself is valid. Always verify Unity Catalog access before scheduling production jobs.
+
+With your job created, tasks configured, dependencies set, and permissions assigned, you're ready to run your workflow. The next step is understanding how to monitor job execution and handle run outcomes.

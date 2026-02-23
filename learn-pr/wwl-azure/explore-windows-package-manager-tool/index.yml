@@ -3,9 +3,9 @@ uid: learn.wwl.explore-windows-package-manager-tool
 metadata:
   title: Explore the Windows Package Manager tool
   description: "Streamline the installation and maintenance of software on your computer by using Windows Package Manager. Explain the front-end components and commands, the Windows Package Manager repository, and how to contribute to the repository."
-  ms.date: 12/08/2021
+  ms.date: 01/23/2026
   author: wwlpublish
-  ms.author: tonyj
+  ms.author: robbarefoot
   ms.topic: module
   ms.service: dev-environment
   ms.subservice: package-manager

@@ -1,58 +1,133 @@
-Managing devices is a significant part of any endpoint management strategy and solution. Organizations have to manage laptops, tablets, mobile phones, wearables, and more. It can be a large task, especially if you're not sure where to start.
+When designing security for an organization's endpoint environment, security architects must address the unique challenges that mobile devices and client workstations present. These devices operate in diverse environments, connect to multiple networks, and access corporate data both inside and outside organizational boundaries.
 
-Enter Microsoft Intune. Intune is a cloud-based service that can control devices through policy, including security policies. For more information on Intune and its benefits, go to [What is Microsoft Intune?](/mem/intune/fundamentals/what-is-intune).
+## Establish a requirements framework
 
-The goal of any organization that's managing devices is to secure devices and the data they access. This task includes organization owned devices and personally owned devices that access your organization resources.
+Security requirements for mobile devices and clients should address three fundamental areas:
 
-From a service perspective, Intune uses Microsoft Entra ID for device storage and permissions. Using the [Microsoft Intune admin center](/mem/intune/fundamentals/tutorial-walkthrough-endpoint-manager), you can manage device tasks and policies in a central location designed for endpoint management.
+- **Endpoint protection**: Detection and response capabilities for threats targeting the device
+- **Hardening**: Configuration settings that reduce the attack surface
+- **Data protection**: Controls that prevent unauthorized access to and leakage of corporate data
 
-This article discusses concepts and features you should consider when managing your devices.
+Your requirements should align with the Microsoft Cloud Security Benchmark Endpoint Security (ES) domain, which applies equally to mobile endpoints and client workstations. The same core controls—ES-1 (endpoint detection and response), ES-2 (modern anti-malware), and ES-3 (software updates)—form the foundation for mobile and client security.
 
-## Manage organization owned and personal devices
+## Differentiate ownership models
 
-Many organizations allow personally owned devices to access organization resources, including email, attend meetings, and so on. There are different options available and these options depend on how strict your organization is.
+Device ownership significantly affects security architecture decisions. Corporate-owned devices allow full management control, while bring-your-own-device (BYOD) scenarios require balancing security with user privacy.
 
-You can require personal devices be enrolled in your organization's device management services. On these personal devices, your admins can deploy policies, set rules, configure device features, and more. Or, you can use app protection policies that focus on protecting app data, such as Outlook, Teams, and Sharepoint. You can also use a combination of device enrollment and app protection policies.
+**Corporate-owned devices** support:
 
-For organization owned devices, they should be fully managed by your organization, and receive policies that enforce rules and protect data.
+- Full device enrollment with complete configuration management
+- Hardware-level restrictions and encryption enforcement
+- Mandatory security baseline deployment
+- Remote wipe of entire device contents
 
-## Use your existing devices and use new devices
+**Personal devices (BYOD)** require a different approach:
 
-You can manage new devices and existing devices. Intune supports Android, iOS/iPadOS, Linux, macOS, and Windows devices.
+- App-level protection without device enrollment (MAM-only)
+- Containerization of corporate data within managed apps
+- Selective wipe that removes only corporate data
+- Privacy boundaries that prevent access to personal content
 
-There are some things you should know. For example, if existing devices are managed by another MDM provider, they may need to be factory reset. If the devices are using an older OS version, they may not be supported.
+For corporate devices, use mobile device management (MDM) enrollment to enforce security policies at the device level. For BYOD scenarios, mobile application management (MAM) policies protect corporate data without requiring device enrollment.
 
-If your organization is investing in new devices, then it's recommended to start with a cloud approach using Intune.
+## Define mobile threat protection requirements
 
-## Check the compliance health of your devices
+Mobile devices face threats including malicious apps, network attacks, and operating system vulnerabilities. Microsoft Defender for Endpoint provides mobile threat defense (MTD) capabilities that integrate with device compliance evaluation.
 
-Device compliance is a significant part of managing devices. Your organization will want to set password/PIN rules and check for security features on these devices. You'll want to know which devices don't meet your rules. This task is where compliance comes in.
+Key protection capabilities to require:
 
-You can create compliance policies that block simple passwords, require a firewall, set the minimum OS version, and more. You can use these policies and built-in reporting to see non-compliant devices and see the non-compliant settings on these devices. This information gives you an idea of the overall health of the devices accessing your organization resources.
+| Capability | iOS | Android | Purpose |
+| --- | --- | --- | --- |
+| Web protection | ✓ | ✓ | Block access to malicious websites and phishing attempts |
+| Network protection | ✓ | ✓ | Detect rogue networks and certificate-based attacks |
+| Jailbreak detection | ✓ | — | Identify devices with bypassed security controls |
+| Root detection | — | ✓ | Identify devices with elevated privileges |
+| Malware scanning | — | ✓ | Detect malicious applications at install time |
+| Vulnerability assessment | ✓ | ✓ | Identify operating system and app vulnerabilities |
 
-Conditional access is a feature of Microsoft Entra ID. With conditional access, you can enforce compliance. For example, if a device doesn't meet your compliance rules, then you can block access to organization resources, including Outlook, SharePoint, Teams, and more. Conditional access helps your organization secure your data and protect your devices.
+Integrate MTD signals with conditional access policies to block compromised devices from accessing corporate resources. Set a maximum threat level threshold—when a device exceeds this level, access is automatically blocked until the threat is resolved.
 
-## Control device features and assign policies to device groups
+## Specify app protection requirements
 
-All devices have features that you can control and manage using policies. For example, you can block the built-in camera, allow Bluetooth pairing, manage the power button, and more.
+App protection policies create a security boundary around corporate data within applications. These policies apply regardless of device enrollment status, making them essential for BYOD scenarios.
 
-For many organizations, it's common to create device groups. Device groups are Microsoft Entra groups that only include devices. They don't include user identities.
+Configure data protection requirements:
 
-When you have device groups, you create policies that focus on the device experience or task, like running a single app or scanning bar codes. You can also create policies that include settings that you want to always be on the device, regardless of who's using the device.
+- **Block copy-paste** between managed and unmanaged apps
+- **Require encryption** for data stored by managed apps
+- **Block screen capture** to prevent data leakage
+- **Require PIN or biometric** authentication to access managed apps
+- **Block backup** of managed app data to unmanaged cloud services
 
-You can group devices by OS platform, by function, by location, and anything else you prefer.
+For enhanced security, implement a tiered app protection framework:
 
-Device groups can also include devices that are shared with many users or aren't associated with a specific user. These dedicated or kiosk devices are typically used by front line workers and can also be managed by Intune.
+- **Level 1 (Basic)**: PIN access, data encryption, selective wipe
+- **Level 2 (Enhanced)**: Block copy-paste, require minimum OS version, block jailbroken/rooted devices
+- **Level 3 (High)**: Block screen capture, require MTD integration, block unmanaged keyboards
 
-When the groups are ready, you can assign your policies to these device groups.
+## Configure Windows client security baselines
 
-## Secure your devices
+Windows client workstations require comprehensive hardening beyond endpoint protection. Security baselines provide a standardized set of configurations aligned with Microsoft security recommendations.
 
-To help secure your devices, you can install antivirus, scan & react to malicious activity, and enable security features.
+Specify these baseline categories in your requirements:
 
-In Intune, some common security tasks include:
+**Authentication and access control**
 
--   **Integrate with Mobile Threat Defense** (MTD) partners to help protect organization owned devices and personally owned devices. These MTD services scan the devices and can help remediate vulnerabilities. The MTD partners support different platforms, including Android, iOS/iPadOS, macOS, and Windows.    
--   **Use Security Baselines** on your Windows devices. Security baselines are pre-configured settings that you can deploy to your devices. These baseline settings focus on security at a granular level and can also be changed to meet any organization specific requirements. If you're not sure where to start, then look at Security Baselines and the built-in guided scenarios.
--   **Manage software updates, encrypt hard disks, configure built-in firewalls**, and more using built-in policy settings. You can also use Windows Autopatch for automatic patching of Windows, including Windows quality updates and Windows feature updates.
--   **Manage devices remotely** using the Intune admin center. You can remotely lock, restart, locate a lost device, restore a device to its factory settings, and more. These tasks are helpful if a device is lost or stolen, or if you're remotely troubleshooting a device.
+- Require Windows Hello for Business or hardware security keys
+- Configure 14-character minimum password length
+- Set account lockout after failed attempts
+- Enable Credential Guard with UEFI lock
+
+**Attack surface reduction**
+
+- Block executable content from email and webmail clients
+- Block untrusted and unsigned processes running from USB
+- Enable Virtualization Based Security with Secure Boot
+- Configure Windows Defender Application Control policies
+
+**Network protection**
+
+- Block SMB v1
+- Require SMB signing for all communications
+- Disable multicast name resolution (LLMNR)
+- Block connection to non-domain networks when domain-connected
+
+**Endpoint protection**
+
+- Enable Microsoft Defender Antivirus real-time protection
+- Configure cloud-delivered protection with high blocking level
+- Enable tamper protection to prevent security setting changes
+- Deploy Microsoft Defender for Endpoint for EDR capabilities
+
+## Integrate with conditional access
+
+Conditional access policies provide the enforcement mechanism for device compliance requirements. Configure policies that evaluate device health before granting access to corporate resources.
+
+Key integration points:
+
+- **Compliance state**: Block access from devices that fail compliance policy evaluation
+- **Risk level**: Block or require additional authentication for devices with elevated risk signals
+- **App protection**: Require approved client apps with protection policies applied
+- **Device filters**: Apply different policies based on device platform, ownership, or enrollment status
+
+For mobile devices, require both device compliance (if enrolled) and app protection policies. This dual-layer approach protects data even if device management is bypassed.
+
+## Design considerations for architects
+
+When specifying mobile and client security requirements, consider:
+
+**Enrollment strategy**
+
+Determine which scenarios require full device enrollment versus app-only protection. Corporate devices typically need MDM for comprehensive control, while BYOD may only need MAM.
+
+**Platform coverage**
+
+Ensure requirements address iOS, Android, Windows, and macOS clients. Each platform has different security capabilities and management tools.
+
+**User experience**
+
+Balance security requirements with productivity impact. Overly restrictive policies drive users toward shadow IT alternatives.
+
+**Compliance dependencies**
+
+Some industries require specific data protection controls. Validate that your requirements meet regulatory obligations for data handling on mobile devices.

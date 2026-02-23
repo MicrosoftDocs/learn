@@ -1,13 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.design-solutions-align-cloud-adoption-framework-well-architected-framework.design-security-with-azure-landing-zones
-title: Design security with Azure Landing Zones
+title: Design security with Azure landing zones
 metadata:
-  title: Design security with Azure Landing Zones
-  description: "SC-100 preparatory unit on the topic: Design security with Azure Landing Zones."
-  ms.date: 3/15/2023
+  title: Design security with Azure landing zones
+  description: "Learn how to design solutions for implementing and governing security using Azure landing zones."
+  ms.date: 01/24/2026
   author: ceperezb
   ms.author: ceperezb
   ms.topic: unit
-durationInMinutes: 10
+  ai-usage: ai-assisted
+durationInMinutes: 7
 content: |
   [!include[](includes/5-design-security-with-azure-landing-zones.md)]

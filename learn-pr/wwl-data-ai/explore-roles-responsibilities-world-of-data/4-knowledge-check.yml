@@ -2,6 +2,7 @@
 uid: learn.wwl.explore-roles-responsibilities-world-of-data.knowledge-check
 title: Module assessment
 metadata:
+  hidden_question_numbers: ["6618D5D4_30"]
   ai_generated_module_assessment: true
   title: Module assessment
   description: "Knowledge check"
@@ -25,7 +26,7 @@ quiz:
       explanation: "Correct. Database Administrators back up the database and restore it when data is lost or corrupted."
     - content: "Creating dashboards and reports"
       isCorrect: false
-      explanation: "Incorrect. Database Administrators do not create dashboards and reports. They're generally created by a data analyst."
+      explanation: "Incorrect. Database Administrators don't create dashboards and reports. They're generally created by a data analyst."
     - content: "Creating pipelines to process data in a data lake"
       isCorrect: false
       explanation: "Incorrect. Data Engineers generally build data pipelines."
@@ -44,7 +45,7 @@ quiz:
     choices:
     - content: "Azure SQL Database"
       isCorrect: false
-      explanation: "Incorrect. Azure SQL Database is not a SaaS service for analytics."
+      explanation: "Incorrect. Azure SQL Database isn't a SaaS service for analytics."
     - content: "Azure Databricks"
       isCorrect: false
       explanation: "Incorrect. Azure Databricks is a PaaS service, not a SaaS solution."

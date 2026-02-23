@@ -1,5 +1,0 @@
-trigger:
-  branches:
-    include:
-    - main
-    - release/*

@@ -19,7 +19,7 @@ Each scenario requires a different response. Some errors warrant immediate pipel
 
 ## Define data quality expectations in declarative pipelines
 
-Lakeflow Declarative Pipelines provides built-in data quality constraints called **expectations**. These constraints validate records as data flows through your pipeline, giving you control over how to handle invalid data.
+Lakeflow Spark Declarative Pipelines provides built-in data quality constraints called **expectations**. These constraints validate records as data flows through your pipeline, giving you control over how to handle invalid data.
 
 :::image type="content" source="../media/5-define-data-quality-expectations.png" alt-text="Screenshot of the declarative pipeline editor, highlighting expectations." border="false" lightbox="../media/5-define-data-quality-expectations.png":::
 

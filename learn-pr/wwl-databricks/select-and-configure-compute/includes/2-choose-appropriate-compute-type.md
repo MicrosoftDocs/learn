@@ -4,6 +4,8 @@ Understanding these options helps you match compute resources to your specific n
 
 ## Serverless compute
 
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=5a6895d9-b264-4f25-a054-e533c73cd9d1]
+
 **Serverless compute** is managed entirely by Azure Databricks. You don't provision or configure infrastructure—Azure Databricks automatically allocates and scales resources based on your workload demands. These resources run in **Databricks' Azure subscription, not yours**, which means no virtual machines or networking components appear in your subscription.
 
 With serverless compute, startup typically takes 2-6 seconds. The platform scales up rapidly when query volume increases and scales down during idle periods to minimize costs. This eliminates the need to estimate capacity or manage cluster configurations.
@@ -21,6 +23,8 @@ However, serverless has limitations. You can't use **RDD APIs** (Resilient Distr
 
 ## Classic compute
 
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=8dca13af-6084-412b-ac4d-7c391769c661]
+
 **Classic compute** gives you full control over cluster configuration. You create, size, and manage compute resources that run directly in **your Azure subscription**, giving you visibility and control over the underlying infrastructure.
 
 Classic compute supports two access modes that determine how users interact with the cluster:
@@ -29,11 +33,21 @@ Classic compute supports two access modes that determine how users interact with
 
 **Dedicated access mode** assigns the cluster exclusively to a single user or group. With dedicated access, you get full machine-level privileges, which you need for RDD APIs, GPU workloads, R language support, or custom container environments.
 
+Beyond access modes, classic compute offers different **cluster modes** that determine the cluster architecture:
+
+**Multi-node clusters** consist of one driver node and one or more worker nodes. The driver coordinates execution while workers perform distributed computations in parallel. This architecture enables horizontal scaling—you can add worker nodes to process larger datasets or increase parallelism. Multi-node clusters work well for production workloads that process large volumes of data or require high throughput.
+
+**Single-node clusters** contain only a driver node with no worker nodes. All computation happens on the driver, which means workloads can't distribute across multiple machines. Single-node clusters suit specific scenarios like lightweight exploration, small dataset analysis, or machine learning experimentation where shuffle overhead would exceed the benefits of distribution. They're particularly useful for ML workflows with frameworks like scikit-learn that don't inherently distribute across nodes, or when testing notebooks with small data samples.
+
+Keep in mind that single-node clusters have architectural limitations. They can't scale horizontally to handle increased load, and all processing relies on the resources of a single machine. For workloads requiring distributed processing, parallel task execution across large datasets, or fault tolerance through redundancy, use multi-node clusters instead.
+
 Classic compute offers flexibility but requires more management. You configure instance types, autoscaling rules, and runtime versions. Startup time typically ranges from 3-7 minutes depending on cluster size. Unlike serverless, you select and manage the Databricks Runtime version yourself—choosing when to upgrade from one version to another (for example, from Runtime 13.3 LTS to 14.3 LTS). While underlying OS and security updates can be automated, runtime version changes require manual selection.
 
 This compute type fits workloads that need features unavailable in serverless, require precise control over infrastructure, or have compliance requirements for resource isolation.
 
 ## SQL warehouses
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=e3c301e1-13bc-4c84-a9b2-e82c1571ac15]
 
 **SQL warehouses** are compute resources optimized specifically for SQL queries, analytics, and business intelligence. They come in three types, each with different performance characteristics.
 
@@ -47,6 +61,8 @@ All SQL warehouse types optimize for SQL execution patterns, but serverless offe
 
 ## Instance pools
 
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=3404841b-a2f1-440d-8f94-abe101227b73]
+
 **Instance pools** maintain a set of idle virtual machine instances ready for immediate use. When you create a cluster from a pool, startup time decreases because Databricks allocates instances from the pool instead of requesting new ones from Azure.
 
 Pools reduce startup time from minutes to under a minute in many cases. You configure the minimum number of idle instances to keep warm and the maximum pool capacity. When clusters release instances, those instances return to the pool for reuse.
@@ -58,6 +74,8 @@ With serverless compute available, pools matter less for most scenarios. Serverl
 Configure pools with spot instances for worker nodes to reduce costs, but use on-demand instances for driver nodes to maintain reliability.
 
 ## Job compute
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=051cb3b1-3282-4c0a-b5f7-5eb583f401fe]
 
 **Job compute** refers to clusters optimized for automated workflows rather than interactive development. You configure job compute through cluster policies that enforce best practices for production workloads.
 
@@ -71,6 +89,8 @@ With classic job compute, you can use optimized settings like autoscaling and **
 The Job Compute policy in Azure Databricks offers a template for creating production-ready job clusters with sensible defaults. It enforces the latest LTS (Long Term Support) runtime version and other reliability settings.
 
 ## Compare compute types
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=b0f5251c-2ebe-4dfc-942f-5e3e4252990c]
 
 Different compute types suit different scenarios. The following table compares key characteristics to help you make informed decisions:
 
@@ -90,7 +110,7 @@ Different compute types suit different scenarios. The following table compares k
 
 Start your decision-making process by identifying your workload characteristics. The following diagram illustrates a decision flow to help you select the appropriate compute type:
 
-![Diagram explaining how to choose the right compute type in Azure Databricks.](../media/databricks-compute-selection.svg)
+![Diagram explaining how to choose the right compute type in Azure Databricks.](../media/databricks-compute-selection.png)
 
 Consider these questions:
 

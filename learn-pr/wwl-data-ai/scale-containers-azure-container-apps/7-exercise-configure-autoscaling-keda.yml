@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.scale-containers-azure-container-apps.exercise-configure-autoscaling-keda
+title: Exercise - Configure autoscaling using KEDA triggers
+metadata:
+  title: Exercise - Configure Autoscaling Using KEDA Triggers
+  description: Exercise - Configure autoscaling using KEDA triggers
+  ms.date: 01/26/2026
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: unit
+durationInMinutes: 30
+content: |
+  [!include[](includes/7-exercise-configure-autoscaling-keda.md)]

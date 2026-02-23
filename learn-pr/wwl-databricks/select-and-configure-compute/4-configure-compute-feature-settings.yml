@@ -4,7 +4,7 @@ title: Configure compute features
 metadata:
   title: Configure Compute Features
   description: Learn how to configure Azure Databricks compute features including Photon acceleration, Databricks runtime versions, and machine learning environments for optimal workload performance.
-  ms.date: 12/07/2025
+  ms.date: 01/23/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit

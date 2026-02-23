@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.deploy-containers-azure-app-service.configure-settings
+title: Configure application settings
+metadata:
+  title: Configure Application Settings
+  description: Configure application settings
+  ms.date: 01/12/2026
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/4-configure-settings.md)]

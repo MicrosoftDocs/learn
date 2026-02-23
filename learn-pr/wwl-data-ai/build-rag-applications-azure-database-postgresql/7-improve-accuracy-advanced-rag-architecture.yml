@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.build-rag-applications-azure-database-postgresql.improve-accuracy-advanced-rag-architecture
+title: Improve accuracy with advanced RAG architectures
+metadata:
+  title: Improve accuracy with advanced RAG architectures
+  description: "Improve accuracy with advanced RAG architectures."
+  ms.date: 08/08/2025
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/7-improve-accuracy-advanced-rag-architecture.md)]

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-secure-ai-ready-infrastructure.exercise-configure-secure-infrastructure-azure
+title: "Configure secure infrastructure Azure"
+metadata:
+  title: "Configure secure infrastructure Azure"
+  description: "Configure Secure Infrastructure Azure."
+  ms.date: 02/02/2026
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: unit
+durationInMinutes: 50
+content: |
+  [!include[](includes/5-exercise-configure-secure-infrastructure-azure.md)]

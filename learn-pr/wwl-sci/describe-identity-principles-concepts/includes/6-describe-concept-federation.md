@@ -8,8 +8,8 @@ The simplified way to think about this federation scenario is as follows:
 - The website, in domain A, uses the authentication services of Identity Provider A (IdP-A).
 - The user, in domain B, authenticates with Identity Provider B (IdP-B).
 - IdP-A has a trust relationship configured with IdP-B.
-- When the user, who wants to access the website, provides his/her credentials to the website, the website trusts the user and allows access.   This access is allowed because of the trust that is already established between the two identity providers.
+- When the user wants to access the website, the website relies on the trust relationship with the identity provider to accept the user's authentication from IdP-B.
 
 With federation, trust isn't always bidirectional.  Although IdP-A may trust IdP-B and allow the user in domain B to access the website in domain A, the opposite isn't true, unless that trust relationship is configured.
 
-A common example of federation in practice is when a user logs in to a third-party site with their social media account, such as X.  In this scenario, X is an identity provider, and the third-party site might be using a different identity provider, such as Microsoft Entra ID. There's a trust relationship between Microsoft Entra ID and X.
+A common example of federation in practice is when a user signs in to an application using an account from a different organization (B2B collaboration) or a social identity provider (for example, Google). In these scenarios, different identity providers establish trust so the application can accept the user's sign-in.

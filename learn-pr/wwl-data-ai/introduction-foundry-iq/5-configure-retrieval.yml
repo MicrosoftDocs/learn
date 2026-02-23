@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.introduction-foundry-iq.configure-retrieval
+metadata:
+  title: Configure retrieval with Foundry IQ
+  description: Learn how to configure agent instructions to control retrieval behavior, test different query types, and ensure consistent citation and grounding in production.
+  ms.date: 01/15/2026
+  author: madiepev
+  ms.author: madiepev
+  ms.topic: unit
+  ai-usage: ai-generated
+title: Configure retrieval with Foundry IQ
+durationInMinutes: 8
+content: |
+  [!include[](includes/5-configure-retrieval.md)]

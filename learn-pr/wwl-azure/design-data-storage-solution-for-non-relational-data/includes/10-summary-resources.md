@@ -33,5 +33,3 @@ Copilot can assist you in designing Azure infrastructure solutions. Copilot can 
 ### Learn more with self-paced training
 
 - Configure [Azure Blob Storage](/training/modules/configure-blob-storage/).
-
-- Choose a [data storage approach in Azure](/training/modules/choose-storage-approach-in-azure/).

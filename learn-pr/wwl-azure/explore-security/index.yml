@@ -10,7 +10,7 @@ metadata:
   ms.collection: N/A
   ms.custom:
   - N/A
-  ms.service: azure-architecture-center
+  ms.service: azure
   ai-usage: human-only
 title: Explore security
 summary: Surveys computer security and how people and computers are identified on computer networks. It surveys historical and modern security features.
@@ -47,4 +47,4 @@ units:
 - learn.wwl.explore-security.knowledge-check
 - learn.wwl.explore-security.summary
 badge:
-  uid: learn.wwl.security.badge
+  uid: learn.wwl.security.badge

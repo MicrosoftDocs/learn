@@ -1,3 +1,5 @@
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=5c876d18-dc54-41e5-a8db-12a6e0b7fd41]
+
 Attribute-based access control (ABAC) provides a flexible, scalable approach to data governance in Unity Catalog. Instead of managing individual permissions for every table and user combination, you define policies based on attributes. When you tag data assets with meaningful classifications, ABAC policies automatically enforce the right access controls.
 
 > [!IMPORTANT]
@@ -49,6 +51,9 @@ SET TAGS ('sensitivity' = 'high');
 ```
 
 Governed tags applied to catalogs or schemas automatically inherit to all objects within them. This inheritance simplifies governance across large data estates.
+
+> [!NOTE]
+> Tag inheritance applies only at the catalog and schema levels. Tags on individual table columns aren't inherited.
 
 ## Create row filter policies
 

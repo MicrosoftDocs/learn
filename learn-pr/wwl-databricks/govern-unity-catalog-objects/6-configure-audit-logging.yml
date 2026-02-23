@@ -1,0 +1,14 @@
+### YamlMime: ModuleUnit
+uid: learn.wwl.govern-unity-catalog-objects.configure-audit-logging
+title: Configure audit logging
+metadata:
+  title: Configure Audit Logging
+  description: Learn how to configure and query audit logs in Azure Databricks to track user activity, investigate security incidents, and meet compliance requirements using Unity Catalog.
+  ms.date: 02/05/2026
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+  ai-usage: ai-generated
+durationInMinutes: 9
+content: |
+  [!include[](includes/6-configure-audit-logging.md)]

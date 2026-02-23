@@ -1,0 +1,42 @@
+### YamlMime:Module
+uid: learn.wwl.run-governed-ai-workloads-microsoft-foundry
+metadata:
+  title: "Run Governed AI Workloads with Microsoft Foundry"
+  description: "Implement enterprise AI governance with Microsoft Foundry by understanding the governance framework, configuring policy‑driven controls, enforcing quotas and safeguards, and applying hands‑on exercises to balance compliance, security, cost management, and innovation."
+  ms.date: 02/02/2026
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: module
+  ms.service: azure
+title: "Run governed AI workloads with Microsoft Foundry"
+summary: Implement enterprise AI governance with Microsoft Foundry by understanding the governance framework, configuring policy‑driven controls, enforcing quotas and safeguards, and applying hands‑on exercises to balance compliance, security, cost management, and innovation.
+abstract: |
+  After completing this module, you’ll be able to:
+  - **Configure secure AI infrastructure access** by assigning least‑privilege RBAC roles and enabling managed identities. 
+  - **Deploy and optimize Cosmos DB for AI conversations** using scalable partition keys and time‑to‑live (TTL) policies. 
+  - **Implement production‑ready AI infrastructure** that meets security audit requirements and supports global‑scale deployments.
+prerequisites: |
+  - Familiarity with Azure fundamentals, including subscriptions, resource groups, and Azure Policy.
+  - Basic knowledge of AI workloads and services used in Microsoft Foundry or Azure AI.
+  - Understanding of governance concepts such as compliance, data residency, and cost controls.
+  - Experience navigating the Azure portal and reviewing resource configurations.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- administrator
+- ai-engineer
+products:
+- azure
+- azure-ai-foundry
+subjects:
+- infrastructure
+units:
+- learn.wwl.run-governed-ai-workloads-microsoft-foundry.introduction
+- learn.wwl.run-governed-ai-workloads-microsoft-foundry.understand-microsoft-foundry-governance-framework
+- learn.wwl.run-governed-ai-workloads-microsoft-foundry.configure-governance-policies-controls
+- learn.wwl.run-governed-ai-workloads-microsoft-foundry.exercise-implement-governance-policies
+- learn.wwl.run-governed-ai-workloads-microsoft-foundry.knowledge-check
+- learn.wwl.run-governed-ai-workloads-microsoft-foundry.summary
+badge:
+  uid: learn.wwl.run-governed-ai-workloads-microsoft-foundry.badge

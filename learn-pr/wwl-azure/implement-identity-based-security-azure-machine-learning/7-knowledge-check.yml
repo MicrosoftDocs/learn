@@ -1,0 +1,48 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-identity-based-security-azure-machine-learning.knowledge-check
+title: "Module assessment"
+metadata:
+  title: "Knowledge check"
+  description: "Knowledge check"
+  ms.date: 02/05/2026
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: unit
+  module_assessment: false
+durationInMinutes: 7
+content: "Choose the best response for each of the following questions."
+quiz:
+  questions:
+  - content: "Your data science team includes 15 full-time employees and 8 contractors from a partner firm. The contractors need temporary access to a development Azure Machine Learning workspace for a 3-month project, but they should automatically lose access when the project ends. Security policy prohibits contractors from accessing production workspaces. Which approach best implements these requirements with minimal ongoing administration?"
+    choices:
+    - content: "Create a security group named Project-Contractors with dynamic membership rules based on employeeType and department attributes, assign it Reader role on the dev workspace only, and set the group's expiration policy to 90 days"
+      isCorrect: true
+      explanation: "Dynamic group membership with employeeType filtering and automatic expiration provides the required temporary access with zero manual intervention when the project ends. This approach also ensures contractors can't access production by limiting role assignment scope to dev workspace only. The second option requires manual tracking and removal, which introduces operational risk and doesn't prevent production access. The third option uses service principals incorrectly—these are for applications, not human users—and grants excessive permissions (Contributor instead of Reader) while complicating authentication unnecessarily."
+    - content: "Add all contractors individually to the existing Data Scientists group with Reader role on both dev and production workspaces, then schedule a calendar reminder to manually remove them after three months"
+      isCorrect: false
+      explanation: "This option requires manual tracking and removal, which introduces operational risk and doesn't prevent production access."
+    - content: "Create service principals for each contractor with certificate-based authentication and Contributor role on all workspaces, storing certificates in Azure Key Vault with 90-day expiration"
+      isCorrect: false
+      explanation: "This option uses service principals incorrectly—these are for applications, not human users—and grants excessive permissions (Contributor instead of Reader) while complicating authentication unnecessarily."
+  - content: "Your security team reports suspicious activity: a data scientist's account authenticated to Azure Machine Learning studio from three different countries/regions within 2 hours, which is physically impossible. The affected user confirms their password hasn't been shared. You need to prevent this type of attack while minimizing impact on legitimate users who travel frequently for conferences. Which Conditional Access policy configuration best addresses this threat?"
+    choices:
+    - content: "Create a policy requiring compliant device plus MFA for all Azure Machine Learning access from any location, with session sign-in frequency set to 1 hour to force frequent reauthentication"
+      isCorrect: false
+      explanation: "This option creates excessive friction—hourly reauthentication disrupts long-running training jobs and doesn't specifically address the geographic impossibility threat."
+    - content: "Block all Azure Machine Learning access from locations outside your company's home country/region, with no exceptions, and require VPN connectivity for international travelers"
+      isCorrect: false
+      explanation: "This option completely prevents legitimate international collaboration and conference attendance, contradicting business requirements while creating VPN performance bottlenecks."
+    - content: "Implement risk-based sign-in policy that requires MFA for medium and high-risk authentications, combined with Impossible Travel anomaly detection that automatically blocks suspicious sign-ins pending security review"
+      isCorrect: true
+      explanation: "Risk-based Conditional Access uses Azure's machine learning to detect anomalous sign-in patterns like Impossible Travel (same account from geographically distant locations in short timeframes) and applies controls dynamically. Legitimate users traveling normally complete standard MFA, while suspicious patterns trigger automatic blocks and security team alerts."
+  - content: "Your ML engineering team built an automated training pipeline that runs nightly to retrain models with updated data. The pipeline needs to authenticate to Azure Machine Learning, read training data from Azure Data Lake, write models to the model registry, and log metrics to Azure Monitor. The team initially used a service principal with client secret, but your security audit flagged this as noncompliant due to static credential storage in the CI/CD tool. Which authentication approach best meets compliance requirements while maintaining automation reliability?"
+    choices:
+    - content: "Enable system-assigned managed identity on the Azure Machine Learning compute cluster running the pipeline, then assign it custom RBAC roles with read permissions on Data Lake, write permissions on model registry, and metrics contributor permissions on Monitor workspace"
+      isCorrect: true
+      explanation: "System-assigned managed identity eliminates credential storage entirely—Azure handles authentication transparently for resources running on that compute cluster. Custom RBAC roles implement least-privilege by granting only the specific permissions each pipeline task requires, reducing attack surface if the identity is compromised."
+    - content: "Generate an X.509 certificate for the existing service principal, store it in Azure Key Vault with restrictive access policies, and modify pipeline code to retrieve the certificate at runtime for authentication"
+      isCorrect: false
+      explanation: "This option improves on client secrets through certificate authentication but still requires credential storage and retrieval code, adding complexity without achieving credential-free authentication available through managed identity."
+    - content: "Create user-assigned managed identity with Owner role on the entire Azure subscription to ensure it has permissions for all current and future pipeline requirements"
+      isCorrect: false
+      explanation: "This option violates least-privilege by granting excessive Owner permissions at subscription scope—the pipeline doesn't need ability to delete resources or modify security settings, and user-assigned identity adds management overhead compared to system-assigned for single-resource scenarios."

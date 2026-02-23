@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.scale-containers-azure-container-apps.compute-resources-performance-cost
+title: Select compute resources for performance and cost
+metadata:
+  title: Select Compute Resources for Performance and Cost
+  description: Select compute resources for performance and cost in Azure Container Apps
+  ms.date: 01/26/2026
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: unit
+durationInMinutes: 9
+content: |
+  [!include[](includes/5-compute-resources-performance-cost.md)]

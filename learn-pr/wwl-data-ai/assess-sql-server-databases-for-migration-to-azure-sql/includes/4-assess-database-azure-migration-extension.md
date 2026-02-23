@@ -1,76 +1,120 @@
+SQL Server enabled by Azure Arc provides an integrated migration assessment experience that simplifies the process of evaluating your SQL Server instances for migration to Azure. This feature automatically generates assessments without requiring additional tools or downloads.
 
-When using Azure migration extension for Azure Data Studio, users can choose between online or offline migration based on the Azure target selected. They can also configure a self-hosted integration runtime to access backup files from the source SQL Server instance in their on-premises environment. 
+## What is SQL Server enabled by Azure Arc?
 
-The extension also provides a secure and improved user experience for migrating Transparent Data Encryption (TDE) databases and SQL Server and Windows logins to Azure SQL.
+[SQL Server enabled by Azure Arc](/sql/sql-server/azure-arc/overview) extends Azure management capabilities to SQL Server instances hosted anywhere—on-premises, in your datacenter, at the edge, or in multicloud environments. Once connected to Azure Arc, your SQL Server instances gain access to Azure services, including automatic migration assessments.
 
-## Install Azure migration extension for Azure Data Studio
+The assessment feature provides:
 
-As a prerequisite, you need to install [Azure Data Studio](/sql/azure-data-studio/download-azure-data-studio) first. The extension is available in Azure Data Studio marketplace.
+- **Automatic readiness evaluation**: Identifies compatibility issues and migration blockers
+- **Azure SQL recommendations**: Suggests the optimal Azure SQL deployment option (SQL Database, SQL Managed Instance, or SQL Server on Azure VM)
+- **Right-sizing guidance**: Recommends appropriate service tiers and configurations
+- **Cost estimation**: Provides monthly cost projections for running in Azure
+- **Continuous monitoring**: Assessments can be refreshed as your environment changes
 
-:::image type="content" border="false" source="../media/4-install-migration-extension.png" alt-text="Screenshot of the Azure migration extension for Azure Data Studio available in the marketplace.":::
+## Review prerequisites
 
-To install the migration extension, follow these steps:
+Before you can assess SQL Server instances using Azure Arc, ensure you have:
 
-1. Open the extensions manager in Azure Data Studio.
-1. Search for ***Azure SQL Migration*** and select the extension.
-1. Install the extension. Once you install it, you'll find the Azure SQL Migration extension in the list of installed extensions.
-1. Connect to a SQL Server instance in Azure Data Studio.
-1. Right-click on the instance name and select **Manage** to access the dashboard and the landing page of the Azure SQL Migration extension.
+- SQL Server 2012 or later installed on a Windows-based system
+- Azure subscription with appropriate permissions
+- Network connectivity to Azure services
+- Azure Extension for SQL Server version 1.1.2594.118 or later
 
-    ![Animated GIF of the Azure migration extension for Azure Data Studio installation.](../media/4-install-migration-extension-data-studio.gif)
+## Connect SQL Server to Azure Arc
 
-It's recommended to test the assessment process in your development or test environments before running it against production databases.
+To enable assessment capabilities, you first need to connect your SQL Server instances to Azure Arc.
 
-## Performance and sizing recommendations
+### Automatic connection
 
-Beyond compatibility, the extension provides:
+We recommend using the automatic connection method for at-scale deployments:
 
-- Performance baseline analysis
-- Sizing recommendations for target Azure resources
-- Cost estimation for different deployment options
-- Right-sizing guidance based on current workload patterns
+- **Configure automatic connection**: Set up Azure Connected Machine agent with the SQL Server extension enabled
+- **Deploy using your preferred method**:
+  - [Group Policy](/sql/sql-server/azure-arc/automatically-connect#group-policy)
+  - [Configuration Manager](/sql/sql-server/azure-arc/automatically-connect#configuration-manager)
+  - [Azure Policy](/sql/sql-server/azure-arc/automatically-connect#azure-policy)
+  - [PowerShell script](/sql/sql-server/azure-arc/automatically-connect#powershell)
 
-## Assess database readiness
+## Access migration assessments
 
-The migration extension performs detailed evaluation of the source SQL Server instance by executing multiple rules to identify critical issues that must be addressed before migrating your SQL Server database to Azure SQL.
+Once your SQL Server instance is connected to Azure Arc and the extension is installed, assessments are automatically generated.
 
-An Azure account isn't required for assessments or SKU recommendations. Not requiring an Azure account for assessments or SKU recommendations has the benefit of enabling users to evaluate the readiness and cost of migrating their databases to Azure without the need to commit to creating an Azure account. This saves time and effort for users who are still in the decision-making process.
+To view assessment results:
 
-:::image type="content" border="false" source="../media/4-assessment-page.png" alt-text="Screenshot of the assessment results page for the migration extension wizard.":::
+1. In the Azure portal, navigate to your SQL Server enabled by Azure Arc resource
+2. In the left navigation menu, under **Migration**, select **Assessments**
+3. Review the assessment dashboard, which displays:
+   - **Migration readiness**: Overall readiness status for migration to Azure
+   - **Recommended target**: Suggested Azure SQL deployment option
+   - **Compatibility issues**: List of blockers and warnings
+   - **Feature parity**: Comparison of feature availability across Azure SQL targets
+   - **Cost estimation**: Projected monthly costs for recommended configuration
 
-As we can see, several Azure SQL targets are available for selection, and the results are automatically updated based on your choice. This feature helps you identify any potential roadblocks and determine if another target option may be more suitable for your environment.
+:::image type="content" source="../media/4-arc-assessment-overview.png" alt-text="Screenshot of SQL Server enabled by Azure Arc migration assessment overview page." lightbox="../media/4-arc-assessment-overview.png":::
 
-You can also save the assessment report, this generates a JSON file containing all the main properties about your database, and also the assessment results. Additionally, you can use the JSON file to programmatically extract specific data or information for further analysis or processing.
+## Understanding assessment results
 
-## Right-sized SKU recommendations
+The assessment provides detailed information organized into several categories:
 
-The extension also provides recommended compute and storage configuration for your Azure SQL target based on the performance data collected from your source SQL instance, whether it's on-premises or in another cloud environment. This feature helps ensure that the Azure SQL target meets the needs of your workload.
+- **Ready**: No blockers identified; migration can proceed
+- **Ready with conditions**: Minor issues that can be addressed post-migration
+- **Not ready**: Critical blockers that must be resolved before migration
 
-:::image type="content" border="false" source="../media/4-architecture-diagram-recommendation.png" alt-text="Screenshot of the Azure recommendation architecture.":::
+### Review compatibility issues
 
-While the Azure recommendations feature doesn't provide price estimates due to the fluctuating nature of pricing, there are alternative methods to obtain price estimates. You can access the [**Azure Pricing Calculator**](https://azure.microsoft.com/pricing/calculator/), or generate a SQL assessment within **Azure Migrate** to gather accurate price estimates. These options allow you to make informed decisions by considering the specific pricing details relevant to your scenario.
+The assessment identifies issues in two categories:
 
-:::image type="content" border="false" source="../media/4-sku-recommendations.png" alt-text="Screenshot of the Azure recommendation sidebar featuring configurations about where the performance data will be saved.":::
+- **Migration blockers**: Features or configurations not supported in the target Azure SQL platform that must be resolved before migration
+- **Warnings**: Features that work differently or have limitations in Azure SQL
 
-As we can see, once you initiate the Azure Migration extension wizard, you have the option to select **Get Azure recommendation** to enable performance data collection. 
+For each issue, the assessment provides:
 
-> [!IMPORTANT]
-> We collect performance data from all databases on a specific instance simultaneously, and the same data can be used multiple times for migrating different source databases.
+- Description of the incompatibility
+- Affected database objects
+- Recommended remediation steps
+- Documentation links for more information
 
-## Assessment automation
+### Azure SQL deployment recommendations
 
-In addition to running the assessment and Azure recommendation steps through the migration extension wizard, you can run them in either PowerShell or Azure CLI to perform these tasks at scale.
+Based on your SQL Server configuration and workload characteristics, the assessment recommends one of three Azure SQL deployment options:
 
-For example, to run the assessment on a sample SQL server database with the assessment report being saved in output folder in C drive, in PowerShell.
+- **Azure SQL Database**: For most modern cloud applications
+- **Azure SQL Managed Instance**: For near 100% SQL Server compatibility
+- **SQL Server on Azure Virtual Machines**: For maximum compatibility and OS-level access
 
-```
-Get-AzDataMigrationAssessment -ConnectionString "Data Source=localhost;Initial Catalog=AdventureWorks;Integrated Security=True" -OutputFolder C:\Output -Overwrite
-```
+### Right-sizing and cost estimation
 
-Alternatively, you can perform the same task using Azure CLI.
+The assessment provides:
 
-```
-az datamigration get-assessment --connection-string "Data Source=localhost;Initial Catalog=AdventureWorks;Integrated Security=True" --output-folder "C:\Output" --overwrite
-```
+- **Recommended service tier**: Based on your workload requirements
+- **Compute recommendations**: vCores or DTUs needed
+- **Storage recommendations**: Database and log storage requirements
+- **Monthly cost estimate**: Projected costs for the recommended configuration
 
-To learn more about the Azure migration extension PowerShell and Azure CLI commands available, refer to the following links: [PowerShell module for data migration extension](/powershell/module/az.datamigration) and [Azure CLI for data migration extension](/cli/azure/datamigration).
+> [!NOTE]
+> Cost estimates are based on list prices and may vary based on your specific Azure agreement, region, and reserved capacity purchases.
+
+## Implement best practices
+
+When using SQL Server enabled by Azure Arc for migration assessment:
+
+- **Enable automatic connection**: Use Azure Policy or Group Policy to automatically onboard SQL Server instances at scale
+- **Regular assessment refreshes**: Schedule periodic assessment refreshes to track changes
+- **Address blockers early**: Review and resolve migration blockers before planning migration timelines
+- **Compare targets**: Evaluate assessment results for all three Azure SQL deployment options to choose the best fit
+- **Verify pricing**: Use the Azure Pricing Calculator to verify cost estimates based on your specific Azure agreement
+- **Plan remediation**: Create a remediation plan for identified issues before migrating
+- **Test in non-production**: Validate the assessment process in development or test environments first
+
+## Next steps
+
+After completing your assessment with SQL Server enabled by Azure Arc:
+
+- Review and remediate any identified compatibility issues
+- Compare recommendations across different Azure SQL deployment options
+- Validate cost estimates and obtain budget approval
+- Plan your migration approach based on assessment insights
+- Proceed with migration using [Azure Database Migration Service](/azure/dms/dms-overview) or other migration tools
+
+For complete automation scenarios, refer to the [Azure Arc for SQL Server documentation](/sql/sql-server/azure-arc/overview).

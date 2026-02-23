@@ -22,7 +22,6 @@ products:
 subjects:
 - infrastructure
 modules:
-- learn.choose-storage-approach-in-azure
 - learn.create-azure-storage-account
 - learn.upload-download-and-manage-data-with-azure-storage-explorer
 - learn.azure.secure-azure-storage-account

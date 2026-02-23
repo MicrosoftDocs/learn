@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-data-loss-prevention-understand-plan.understand-data-loss-prevention-protection
+title: Understand how DLP applies protection
+metadata:
+  title: Understand how DLP applies protection
+  description: "Understand how DLP applies protection"
+  ms.date: 01/13/2026
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/understand-data-loss-prevention-protection.md)]

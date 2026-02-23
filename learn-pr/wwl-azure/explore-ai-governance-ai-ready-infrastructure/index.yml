@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.wwl.explore-ai-governance-ai-ready-infrastructure
+metadata:
+  title: "Explore AI Governance for AI Ready Infrastructure"
+  description: "Learn how to govern AI workloads using Microsoft Foundry by enforcing policies, managing costs, ensuring compliance, and applying responsible AI guardrails through hands‑on governance scenarios and exercises."
+  ms.date: 02/02/2026
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: module
+  ms.custom: references_regions
+  ms.service: azure
+title: "Explore AI governance for AI ready infrastructure"
+summary: Learn how to govern AI workloads using Microsoft Foundry by enforcing policies, managing costs, ensuring compliance, and applying responsible AI guardrails through hands‑on governance scenarios and exercises.
+abstract: |
+  By the end of this module, you're able to:
+  - Explain how Microsoft Foundry supports AI infrastructure governance and compliance requirements.
+  - Configure governance policies and controls for AI workloads using Microsoft Foundry.
+  - Implement monitoring and auditing strategies that track AI resource usage and cost.
+  - Evaluate responsible AI practices and establish guardrails for production deployments.
+prerequisites: |
+  - Familiarity with Azure fundamentals, including subscriptions, resource groups, and role-based access control (RBAC).
+  - Basic understanding of AI workloads using Azure AI services or Microsoft Foundry.
+  - Experience navigating and configuring resources in the Azure portal.
+  - Awareness of governance, security, or compliance concepts, such as policies, data residency, or cost management.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- administrator
+- ai-engineer
+products:
+- azure
+- azure-ai-foundry
+subjects:
+- infrastructure
+units:
+- learn.wwl.explore-ai-governance-ai-ready-infrastructure.introduction
+- learn.wwl.explore-ai-governance-ai-ready-infrastructure.microsoft-foundry-governance-capability
+- learn.wwl.explore-ai-governance-ai-ready-infrastructure.configure-governance-policy-workloads
+- learn.wwl.explore-ai-governance-ai-ready-infrastructure.exercise-configure-governance-controls
+- learn.wwl.explore-ai-governance-ai-ready-infrastructure.knowledge-check
+- learn.wwl.explore-ai-governance-ai-ready-infrastructure.summary
+badge:
+  uid: learn.wwl.explore-ai-governance-ai-ready-infrastructure.badge

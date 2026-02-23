@@ -2,6 +2,9 @@ This module covers the topic of Microsoft Sentinel's integration into the Micros
 
 Imagine you're a security Operations Manager in a large multinational corporation. You're tasked with streamlining your team's operations and enhancing their hunting capabilities. Your team currently uses multiple tools for different tasks, which often lead to complexity and errors. You also want to enable automatic attack disruption for your SAP applications and provide unified entity pages for devices, users, IP addresses, and Azure resources. The solution lies in integrating Microsoft Sentinel into the Microsoft Defender portal.
 
+> [!NOTE]
+> If you onboard Microsoft Sentinel to the Defender portal and are licensed for Defender XDR, Microsoft Sentinel is automatically connected to Defender XDR. The data connector for Defender XDR is automatically set up for you.
+
 The topics covered in this module include:
 
 - Understanding the Integration of Microsoft Sentinel and Defender XDR in the Defender Portal

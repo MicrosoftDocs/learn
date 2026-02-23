@@ -28,6 +28,7 @@ subjects:
 - natural-language-processing
 modules:
 - learn.wwl.plan-prepare-genaiops
+- learn.wwl.prompt-versioning-genaiops
 - learn.evaluate-generative-ai-apps
 - learn.wwl.monitor-generative-ai-app
 - learn.wwl.tracing-generative-ai-app

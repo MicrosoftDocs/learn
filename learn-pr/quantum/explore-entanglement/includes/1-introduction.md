@@ -14,7 +14,7 @@ By the end of this module, you can:
 - Basic understanding of quantum computing concepts.
 - Knowledge of linear algebra and Dirac notation.
 - The latest version of [Visual Studio Code](https://code.visualstudio.com/download).
-- The latest version of the [Quantum Development Kit](https://marketplace.visualstudio.com/items?itemName=quantum.qsharp-lang-vscode) extension. Or, open [VS Code on the Web](https://vscode.dev/quantum), which already includes the Quantum Development Kit extension.
+- The latest version of the [Microsoft Quantum Development Kit](https://marketplace.visualstudio.com/items?itemName=quantum.qsharp-lang-vscode) extension. Or, open [VS Code for the Web](https://vscode.dev/quantum), which already includes the Quantum Development Kit extension.
 
 ## Recommended learning
 

@@ -211,4 +211,4 @@ kubectl describe svc inference-api-service
 
 - [kubectl Command Reference](https://kubernetes.io/docs/reference/kubectl/overview/) - Complete kubectl command documentation
 - [Kubernetes Troubleshooting Guide](https://kubernetes.io/docs/tasks/debug-application-cluster/debug-application/) - Debugging applications in Kubernetes
-- [AKS Best Practices](/azure/aks/operator-best-practices) - Production readiness practices for AKS
+- [AKS Best Practices](/azure/aks/best-practices) - Production readiness practices for AKS

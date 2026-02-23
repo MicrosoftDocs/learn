@@ -9,7 +9,6 @@ metadata:
   ms.reviewer: maghan
   ms.topic: module-intro-to-product
   ms.service: azure-database-mysql
-  ms.subservice: flexible-server
 title: "Implement Azure Database for MySQL Flexible Server features that support mission-critical workloads"
 summary: |
   Azure Database for MySQL - Flexible Server provides features for security, business continuity, disaster recovery, and performance to support mission critical workloads. In this module, you’ll configure these features. 

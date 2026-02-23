@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.instrument-app-opentelemetry.exercise-instrument-app-opentelemetry
+title: Exercise - Instrument an app with the OpenTelemetry SDK
+metadata:
+  title: Exercise - Instrument an App with the OpenTelemetry SDK
+  description: Exercise - Instrument an app with the OpenTelemetry SDK
+  ms.date: 02/19/2026
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: unit
+durationInMinutes: 25
+content: |
+  [!include[](includes/7-exercise-instrument-app-opentelemetry.md)]

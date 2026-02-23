@@ -50,7 +50,7 @@ Devices that aren’t eligible for hotpatching receive standard monthly updates,
 >
 > To find Windows updates in the Microsoft Knowledge Base, go to [support.microsoft.com](https://support.microsoft.com) and enter the keyword `"kbwindowsupdate"` in >the search bar.
 >
->For easier access, IT admins can also bookmark [Windows release health](/windows/>release-health/) on Microsoft Learn, which provides anchored links to release notes >by Windows version.
+>For easier access, IT admins can also bookmark [Windows release health](/windows/release-health/) on Microsoft Learn, which provides anchored links to release notes >by Windows version.
 >
 >Hotpatch release notes specifically are located at:
 >

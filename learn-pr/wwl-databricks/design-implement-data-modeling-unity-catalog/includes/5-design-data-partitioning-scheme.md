@@ -1,3 +1,5 @@
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=bc55c60e-d4b9-4e0f-b753-08c7077b7a2e]
+
 Data partitioning directly affects how efficiently your queries run and how much compute resources you consume. When you partition a table, you divide data into discrete segments based on column values, allowing the query engine to read only relevant portions of your dataset. This approach, called **partition pruning**, can dramatically reduce data scans when filters align with partition boundaries.
 
 Consider a retail company processing millions of daily sales transactions. Analysts frequently query data by date ranges to generate weekly reports, compare month-over-month trends, and analyze seasonal patterns. Without partitioning, every query scans the entire transaction history. With proper partitioning by date, queries for a specific week touch only a fraction of the stored files.
@@ -134,4 +136,19 @@ Plan your partitioning strategy carefully before loading data at scale. Consider
 ### Document partitioning decisions
 
 Record your partition key choices and the reasoning behind them. This documentation helps team members understand query optimization opportunities and prevents accidental changes that could impact performance. Include information about expected partition sizes, query patterns that benefit from the scheme, and any constraints that influenced your decisions.
+
+## Consider liquid clustering as an alternative
+
+When you encounter partitioning challenges—especially with **high-cardinality columns** like timestamps or when query patterns are **uncertain**—liquid clustering provides a modern alternative. Unlike traditional partitioning, liquid clustering offers:
+
+- Flexibility to adjust optimization strategies without rewriting data
+- Automatic maintenance as tables grow
+- Reduced partition management overhead
+
+Liquid clustering is the **recommended approach** for new tables where partitioning constraints would limit performance or create excessive maintenance burden. It's particularly effective for tables that exceed 1 TB and require filtering on columns that would create too many partitions using traditional approaches.
+
+> [!NOTE]
+> Liquid clustering is not compatible with partitioned tables. Choose one approach based on your requirements when designing new tables.
+
+For implementation details, syntax, and optimization strategies, refer to the **Design and implement a clustering strategy** unit later in this module.
 

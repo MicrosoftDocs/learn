@@ -3,9 +3,9 @@ uid: learn.wwl.implement-manage-active-directory-certificate-services
 metadata:
   title: Implement and manage Active Directory Certificate Services
   description: "Implement and manage Active Directory Certificate Services"
-  ms.date: 06/11/2024
+  ms.date: 01/23/2026
   author: wwlpublish
-  ms.author: tonyj
+  ms.author: robbarefoot
   ms.topic: module
   ms.service: azure
 title: Implement and manage Active Directory Certificate Services
@@ -52,4 +52,4 @@ units:
 - learn.wwl.implement-manage-active-directory-certificate-services.knowledge-check
 - learn.wwl.implement-manage-active-directory-certificate-services.summary
 badge:
-  uid: learn.wwl.implement-manage-active-directory-certificate-services.badge
+  uid: learn.wwl.implement-manage-active-directory-certificate-services.badge

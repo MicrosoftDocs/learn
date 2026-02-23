@@ -6,7 +6,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Module assessment
   description: "Knowledge check"
-  ms.date: 06/17/2025
+  ms.date: 01/15/2024
   author: wwlpublish
   ms.author: jeffko
   ms.topic: unit
@@ -17,29 +17,29 @@ durationInMinutes: 3
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Which of the following methods is recommended when deploying a multi-container group that includes only containers?"
+  - content: "When your deployment includes only container instances, which approach is recommended for deploying a multi-container group?"
     choices:
-    - content: "Azure Resource Management template"
+    - content: "Azure Resource Manager template"
       isCorrect: false
       explanation: "Incorrect. Due to the YAML format's more concise nature, a YAML file is recommended when your deployment includes only container instances."
     - content: "YAML file"
       isCorrect: true
       explanation: "Correct. Due to the YAML format's more concise nature, a YAML file is recommended when your deployment includes only container instances."
-    - content: "`az container creates` command"
+    - content: "Azure portal"
       isCorrect: false
-      explanation: "Incorrect. This command isn't specific to this scenario."
+      explanation: "Incorrect. This module recommends using a YAML file (or a Resource Manager template) for multi-container group deployments."
   - content: "What is the purpose of a restart policy in Azure Container Instances?"
     choices:
     - content: "To charge customers more for compute resources used while the container is running."
       isCorrect: false
-      explanation: "Incorrect. The restart policy is not related to charging customers more for compute resources."
+      explanation: "Incorrect. The restart policy isn't related to charging customers more for compute resources."
     - content: "To ensure that containers are never restarted, even if the process fails."
       isCorrect: false
       explanation: "Incorrect. The `Never` restart policy ensures that containers are run at most once, but it doesn't allow for restarting on failure."
     - content: "To specify when and how containers should be restarted, based on the desired behavior."
       isCorrect: true
       explanation: "Correct. The restart policy allows you to specify when and how containers should be restarted, based on the desired behavior. This can help optimize resource usage and ensure that tasks are completed successfully."
-  - content: "If you want to mount multiple volumes, what options are at your disposal for deployment?"
+  - content: "If you want to mount multiple volumes, what options are available for deployment?"
     choices:
     - content: "YAML file only"
       isCorrect: false
@@ -47,6 +47,28 @@ quiz:
     - content: "Azure Resource Manager template and YAML file"
       isCorrect: true
       explanation: "Correct. To mount multiple volumes in a container instance, you must deploy using an Azure Resource Manager template or a YAML file."
-    - content: "Azure Resource Manager template and PowerShell"
+    - content: "Azure portal only"
       isCorrect: false
-      explanation: "While Azure Resource Manager templates are a viable option, you can't use PowerShell commands to directly mount multiple volumes."
+      explanation: "Incorrect. The module explains that mounting multiple volumes requires a template-based approach such as a YAML file or an Azure Resource Manager template."
+  - content: "When you need to pass a secret as an environment variable in Azure Container Instances, which option is supported?"
+    choices:
+    - content: "Define the variable in a YAML file by using `secureValue`"
+      isCorrect: true
+      explanation: "Correct. Azure Container Instances supports secure environment variables in YAML by using the `secureValue` property."
+    - content: "Define the variable by using `--environment-variables` and expect the value to be visible in `az container show` output"
+      isCorrect: false
+      explanation: "Incorrect. Secure environment variable values aren't shown in container properties output. The secure value is accessible only from within the container."
+    - content: "Bake the secret into the container image and retrieve it from the file system at runtime"
+      isCorrect: false
+      explanation: "Incorrect. Baking secrets into an image isn't a recommended approach because it increases the chance of accidental disclosure and makes rotation harder."
+  - content: "Which statement about mounting an Azure Files share in Azure Container Instances is correct?"
+    choices:
+    - content: "You can mount Azure Files shares only to Linux containers"
+      isCorrect: true
+      explanation: "Correct. Azure Container Instances supports mounting Azure Files shares only for Linux containers."
+    - content: "You can mount Azure Files shares to Windows containers"
+      isCorrect: false
+      explanation: "Incorrect. This module notes that Azure Files share mounting in Azure Container Instances is supported only for Linux containers."
+    - content: "You can mount Azure Files over SMB by using managed identity"
+      isCorrect: false
+      explanation: "Incorrect. Azure Storage doesn't support SMB mounting of an Azure file share by using managed identity in this scenario."

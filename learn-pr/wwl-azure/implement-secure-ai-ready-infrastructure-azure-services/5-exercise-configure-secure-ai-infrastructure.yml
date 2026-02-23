@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-secure-ai-ready-infrastructure-azure-services.exercise-configure-secure-ai-infrastructure
+title: "Configure secure AI infrastructure in Azure"
+metadata:
+  title: "Configure Secure AI Infrastructure in Azure"
+  description: "Learn how to configure secure AI infrastructure in Azure using private networking, managed connectivity, and customer-managed keys for compliance."
+  ms.date: 02/04/2026
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: unit
+durationInMinutes: 12
+content: |
+  [!include[](includes/5-exercise-configure-secure-ai-infrastructure.md)]

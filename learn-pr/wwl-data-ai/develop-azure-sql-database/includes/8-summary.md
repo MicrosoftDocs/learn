@@ -5,6 +5,6 @@ One of the main takeaways from this module include understanding the importance 
 ### Additional reading
 
 - [Azure SQL Database Overview](/azure/azure-sql/database/sql-database-paas-overview?azure-portal=true)
-- [Getting started with the SQL Database Projects extension](/azure-data-studio/extensions/sql-database-project-extension-getting-started?azure-portal=true)
+- [SQL Server Development with Visual Studio Code](/sql/tools/visual-studio-code/sql-server-develop-use-vscode?azure-portal=true)
 - [Data-tier Application Component (DAC)](/sql/relational-databases/data-tier-applications/data-tier-applications?azure-portal=true)
 - [Azure DevOps Documentation](/azure/devops?azure-portal=true)

@@ -2,34 +2,114 @@ If you can afford to take the database offline while you migrate to Azure, you h
 
 In our bicycle manufacturing scenario, the HR database is considered business-critical but is rarely used at weekends. You've planned to execute an offline migration between Friday evening and Monday morning, but you want to assess the best migration method.
 
-It's assumed that all pre-migration checks have been done with the [Azure SQL migration extension for Azure Data Studio](/sql/azure-data-studio/extensions/azure-sql-migration-extension) or [Azure Migrate](/azure/migrate/migrate-services-overview). This process ensures that feature and compatibility issues are addressed.
+It's assumed that all pre-migration checks have been done with [Azure Migrate](/azure/migrate/migrate-services-overview). This process ensures that feature and compatibility issues are addressed.
 
-## Migrate using the Azure SQL migration extension for Azure Data Studio
+## Migrate using Azure Database Migration Service with Azure CLI
 
-Azure SQL migration extension for Azure Data Studio is a tool that helps you prepare for migrating your SQL Server databases to Azure. It assesses your readiness for migration, recommends the best Azure resources for your needs, and facilitates the migration process. We suggest using the extension for databases that are small to medium in size.
+[Azure Database Migration Service](/azure/dms/dms-overview) is a fully managed service designed to enable seamless migrations from multiple database sources to Azure data platforms with minimal downtime. You can use Azure CLI or PowerShell to automate database migrations, making it ideal for migrating databases at scale.
 
-:::image type="content" border="false" source="../media/3-migration-extension-architecture.png" alt-text="Screenshot of the Azure SQL migration extension for Azure Data Studio architecture.":::
+The Azure CLI `az datamigration` extension provides commands to create and manage database migrations to Azure SQL Database. This approach is particularly useful for:
 
-Azure SQL migration extension uses the latest version of Data Migration Services and includes an advanced assessment feature that can evaluate whether your SQL Server databases are ready to be migrated to Azure SQL.
+- Automating migrations as part of CI/CD pipelines
+- Migrating multiple databases at scale
+- Scripting repeatable migration processes
 
-Additionally, you can migrate multiple SQL Server databases by using Azure SQL migration extension at no charge.
+### Prerequisites
 
-The steps below highlights the process of migrating to Azure SQL Database using the Azure SQL Migration extension for Azure Data Studio.
+Before starting the migration, ensure you have:
 
-| Step | Description |
-|------|-------------|
-| **Setup** | Install Azure Data Studio and the Azure SQL Migration extension. Open Azure Data Studio and start the Migrate to Azure SQL Migration wizard. This wizard guides you through the migration process. |
-| **Step 1: Databases for assessment** | Choose the databases you want to migrate. |
-| **Step 2: Assessment results and recommendations** | Assess their readiness for migration. The tool identifies any potential issues that might affect the migration process. Collect performance data from your current database. This data is used to provide recommendations for your Azure SQL setup.|
-| **Step 3: Azure target** | Select an Azure account and your target Azure SQL Database. |
-| **Step 4: Azure Database Migration Service** | Select an existing Azure Database Migration Service, or create a new one. |
-| **Step 5: Data source configuration** | Enter the credentials used to connect to the source from the self-hosted integration runtime. Select the tables to migrate from source to target. Before selecting the tables to migrate, ensure that you've created the database schema from the source to the target using either the dacpac extension, or the SQL Database Projects extension in Azure Data Studio. |
-| **Step 6: Summary** | Review the migration information and start the migration process. |
+1. **Azure CLI installed** with the `datamigration` extension
+2. **Azure Database Migration Service** created in your subscription
+3. **Target Azure SQL Database** provisioned with the schema already deployed
+4. **Self-hosted integration runtime** configured for connectivity to your source SQL Server
+
+To install the Azure CLI datamigration extension, run:
+
+```azurecli
+az extension add --name datamigration
+```
+
+### Create the Database Migration Service
+
+First, create an Azure Database Migration Service to orchestrate your migration activities:
+
+```azurecli
+# Create the Azure Database Migration Service
+az datamigration sql-service create \
+    --resource-group "<YourResourceGroup>" \              # Name of your Azure resource group
+    --sql-migration-service-name "<YourMigrationService>" \  # Name for the migration service
+    --location "<YourLocation>"                            # Azure region (e.g., eastus2, westus)
+```
+
+### Migrate the database schema
+
+Before migrating data, you need to migrate the database schema from the source to the target. Use the `az datamigration sql-server-schema` command:
+
+```azurecli
+# Migrate schema from source to target database
+az datamigration sql-server-schema \
+    --action "MigrateSchema" \
+    --src-sql-connection-str "Server=<YourSourceServer>;Initial Catalog=<YourSourceDB>;User ID=<YourSourceUser>;Password=<YourSourcePassword>" \
+    --tgt-sql-connection-str "Server=<YourTargetServer>.database.windows.net;Initial Catalog=<YourTargetDB>;User ID=<YourTargetUser>;Password=<YourTargetPassword>"
+```
+
+### Start the database migration
+
+Create a new database migration to copy data from the source to target:
+
+```azurecli
+# Create a database migration to Azure SQL Database
+az datamigration sql-db create \
+    --resource-group "<YourResourceGroup>" \            # Name of your Azure resource group
+    --sqldb-instance-name "<YourTargetServer>" \        # Name of the target Azure SQL Database server
+    --target-db-name "<YourTargetDB>" \                 # Name of the target database
+    --source-database-name "<YourSourceDB>" \           # Name of the source database
+    --source-sql-connection authentication="SqlAuthentication" \
+        data-source="<YourSourceServer>" \              # Source SQL Server hostname or IP
+        user-name="<YourSourceUser>" \                  # Source SQL Server username
+        password="<YourSourcePassword>" \               # Source SQL Server password
+        encrypt-connection=true \
+        trust-server-certificate=true \
+    --target-sql-connection authentication="SqlAuthentication" \
+        data-source="<YourTargetServer>.database.windows.net" \  # Target Azure SQL Database server
+        user-name="<YourTargetUser>" \                  # Target database username
+        password="<YourTargetPassword>" \               # Target database password
+        encrypt-connection=true \
+        trust-server-certificate=true \
+    --scope "/subscriptions/<YourSubscription>/resourceGroups/<YourResourceGroup>/providers/Microsoft.Sql/servers/<YourTargetServer>" \
+    --migration-service "/subscriptions/<YourSubscription>/resourceGroups/<YourResourceGroup>/providers/Microsoft.DataMigration/sqlMigrationServices/<YourMigrationService>"
+```
+
+### Migrate specific tables
+
+To migrate only specific tables, use the `--table-list` parameter:
+
+```azurecli
+# Create a database migration for specific tables
+az datamigration sql-db create \
+    --resource-group "<YourResourceGroup>" \
+    --sqldb-instance-name "<YourTargetServer>" \
+    --target-db-name "<YourTargetDB>" \
+    --source-database-name "<YourSourceDB>" \
+    --source-sql-connection authentication="SqlAuthentication" \
+        data-source="<YourSourceServer>" \
+        user-name="<YourSourceUser>" \
+        password="<YourSourcePassword>" \
+        encrypt-connection=true \
+        trust-server-certificate=true \
+    --target-sql-connection authentication="SqlAuthentication" \
+        data-source="<YourTargetServer>.database.windows.net" \
+        user-name="<YourTargetUser>" \
+        password="<YourTargetPassword>" \
+        encrypt-connection=true \
+        trust-server-certificate=true \
+    --table-list "[Person].[Person]" "[Person].[EmailAddress]" "[Sales].[Customer]" \  # Specify tables to migrate
+    --scope "/subscriptions/<YourSubscription>/resourceGroups/<YourResourceGroup>/providers/Microsoft.Sql/servers/<YourTargetServer>" \
+    --migration-service "/subscriptions/<YourSubscription>/resourceGroups/<YourResourceGroup>/providers/Microsoft.DataMigration/sqlMigrationServices/<YourMigrationService>"
+```
 
 The Database Migration Service optimizes the migration process by skipping empty tables, even if you select them.
 
-> [!IMPORTANT]
-> Currently, Azure SQL Database does not support the migration of table names containing double-byte characters. As a workaround, you can temporarily rename these tables prior to migration and then revert them to their original names once the migration is complete.
 
 ### Migration status
 
@@ -45,98 +125,120 @@ There are a few statuses that keep you updated on the progress of the migration.
 
 - **Succeeded**: All data is copied and the indexes are rebuilt.
 
-## Performance considerations
+## Monitor migration using Azure CLI
 
-Migration speed heavily depends on the target Azure SQL Database SKU and the self-hosted Integration Runtime host. We strongly recommend that you scale up your Azure SQL Database compute resources before initiating the migration process for an optimal migration experience. 
+You can check the status of your migration using the `az datamigration sql-db show` command:
 
-When deciding for the server to install the self-hosted integration runtime, make sure this machine can handle the cpu and memory load of the data copy operation.
+```azurecli
+# Check the status of the database migration
+az datamigration sql-db show \
+    --resource-group "<YourResourceGroup>" \
+    --sqldb-instance-name "<YourTargetServer>" \
+    --target-db-name "<YourTargetDB>" \
+    --expand "MigrationStatusDetails"                   # Include detailed migration status
+```
 
-Azure SQL Database migration can be slow with a large volume of tables due to the time Azure Data Factory (ADF) takes to start activities, even for small tables.
+This command returns detailed information about the migration, including the current status and any errors encountered.
 
-Tables with large blob columns may fail to migrate due to timeout.
+### Wait for migration completion
 
-We recommend up to 10 concurrent database migrations per self-hosted integration runtime on a single computer. Scale out the self-hosted runtime or create separate instances on different computers to increase the concurrent database migrations. 
+You can use the `wait` command to pause script execution until the migration completes:
 
-## Monitor migration
+```azurecli
+# Wait for the migration to complete before continuing
+az datamigration sql-db wait \
+    --resource-group "<YourResourceGroup>" \
+    --sqldb-instance-name "<YourTargetServer>" \
+    --target-db-name "<YourTargetDB>" \
+    --created                                           # Wait until migration is created/completed
+```
 
-Once you've started the database migration, you can monitor the progress in Azure Data Studio. You can also track the progress in the Azure portal under the Azure Database Migration Service resource.
+### Cancel a migration
 
-### Monitor migration from Azure Data Studio
+If you need to stop an in-progress migration:
 
-Under **Database migration status**, you can track migrations that are in progress, completed, and failed (if any), or you can view all database migrations.
+```azurecli
+# Cancel an in-progress migration
+az datamigration sql-db cancel \
+    --resource-group "<YourResourceGroup>" \
+    --sqldb-instance-name "<YourTargetServer>" \
+    --target-db-name "<YourTargetDB>" \
+    --migration-operation-id "<YourMigrationOperationId>"  # ID from the migration operation
+```
 
-1. Select **Database migrations in progress** in the migration dashboard to view ongoing migrations. 
+## Monitor migration from the Azure portal
 
-    :::image type="content" border="false" source="../media/3-data-migration-dashboard.png" alt-text="Screenshot of the migration dashboard on the Azure migration extension for Azure Data Studio.":::
+You can also monitor the migration activity using Azure Database Migration Service in the Azure portal.
 
-1. Select the database name to get further details.
-
-    :::image type="content" border="false" source="../media/3-dashboard-details.png" alt-text="Screenshot of the migration details on the Azure migration extension for Azure Data Studio.":::
-
-1. The **Migration status** property will change to **Completing**, then to **Succeeded** after the migration is completed.
-
-    :::image type="content" border="false" source="../media/3-dashboard-migration-status.png" alt-text="Screenshot of the migration details on the Azure migration extension for Azure Data Studio showing a completed migration.":::
-
-### Monitor migration from the Azure portal
-
-Alternatively, you can also monitor the migration activity using Azure Database Migration Service. 
-
-To monitor your database migration, you would typically go to the Azure portal and find your instance of the Database Migration Service. Once you've located the service, you can view its instance overview. Select **Monitor migrations** to access detailed information about your ongoing database migration.
+To monitor your database migration, go to the Azure portal and find your instance of the Database Migration Service. Once you've located the service, you can view its instance overview. Select **Monitor migrations** to access detailed information about your ongoing database migration.
 
 :::image type="content" border="false" source="../media/3-database-migration-service-azure-portal.png" alt-text="Screenshot of the monitoring page in Azure Database Migration Services in Azure portal.":::
 
 After the migration status is **Succeeded**, navigate to the target server, and validate the target database. Check the database schema and data.
 
-## Migrate at scale
+## Performance considerations
 
-You can also perform an offline migration of the database from SQL Server on-premises to an Azure SQL Database by using either PowerShell or Azure CLI.
+Migration speed heavily depends on the target Azure SQL Database SKU and the self-hosted Integration Runtime host. We strongly recommend that you scale up your Azure SQL Database compute resources before initiating the migration process for an optimal migration experience.
+
+When deciding on the server to install the self-hosted integration runtime, make sure this machine can handle the CPU and memory load of the data copy operation.
+
+Azure SQL Database migration can be slow with a large volume of tables due to the time Azure Data Factory (ADF) takes to start activities, even for small tables.
+
+Tables with large blob columns may fail to migrate due to timeout.
+
+We recommend up to 10 concurrent database migrations per self-hosted integration runtime on a single computer. Scale out the self-hosted runtime or create separate instances on different computers to increase the concurrent database migrations.
+
+## Migrate at scale using PowerShell
+
+You can also perform an offline migration of the database from SQL Server on-premises to an Azure SQL Database by using PowerShell.
 
 The following example migrates the *AdventureWorks* database to Azure SQL Database.
 
 ```powershell
+# Set up secure credentials for source and target connections
+$sourcePass = ConvertTo-SecureString "<YourSourcePassword>" -AsPlainText -Force
+$targetPass = ConvertTo-SecureString "<YourTargetPassword>" -AsPlainText -Force
 
-$sourcePass = ConvertTo-SecureString "password" -AsPlainText -Force
-$targetPass = ConvertTo-SecureString "password" -AsPlainText -Force
-
+# Start the database migration to Azure SQL Database
 New-AzDataMigrationToSqlDb `
--ResourceGroupName MyGroup `
--SqlDbInstanceName myserver `
--Kind "SqlDb" `
--TargetDbName AdventureWorks `
--SourceDatabaseName AdventureWorks `
--SourceSqlConnectionAuthentication SQLAuthentication `
--SourceSqlConnectionDataSource myserver.microsoft.com `
--SourceSqlConnectionUserName user `
--SourceSqlConnectionPassword $sourcePass `
--Scope "/subscriptions/MySubscriptionID/resourceGroups/MyGroup/providers/Microsoft.Sql/servers/myserver" `
--TargetSqlConnectionAuthentication SQLAuthentication `
--TargetSqlConnectionDataSource myserver.database.windows.net `
--TargetSqlConnectionUserName user `
--TargetSqlConnectionPassword $targetPass `
--MigrationService "/subscriptions/MySubscriptionID/resourceGroups/MyGroup/providers/Microsoft.DataMigration/SqlMigrationServices/MyService"
+    -ResourceGroupName "<YourResourceGroup>" `              # Name of your Azure resource group
+    -SqlDbInstanceName "<YourTargetServer>" `               # Name of the target Azure SQL Database server
+    -Kind "SqlDb" `
+    -TargetDbName "<YourTargetDB>" `                        # Name of the target database
+    -SourceDatabaseName "<YourSourceDB>" `                  # Name of the source database
+    -SourceSqlConnectionAuthentication SQLAuthentication `
+    -SourceSqlConnectionDataSource "<YourSourceServer>" `   # Source SQL Server hostname or IP
+    -SourceSqlConnectionUserName "<YourSourceUser>" `       # Source SQL Server username
+    -SourceSqlConnectionPassword $sourcePass `
+    -Scope "/subscriptions/<YourSubscription>/resourceGroups/<YourResourceGroup>/providers/Microsoft.Sql/servers/<YourTargetServer>" `
+    -TargetSqlConnectionAuthentication SQLAuthentication `
+    -TargetSqlConnectionDataSource "<YourTargetServer>.database.windows.net" `
+    -TargetSqlConnectionUserName "<YourTargetUser>" `       # Target database username
+    -TargetSqlConnectionPassword $targetPass `
+    -MigrationService "/subscriptions/<YourSubscription>/resourceGroups/<YourResourceGroup>/providers/Microsoft.DataMigration/SqlMigrationServices/<YourMigrationService>"
 ```
 
 The following example migrates a subset of tables from the *AdventureWorks* database.
 
 ```powershell
-
+# Migrate specific tables from source to target database
 New-AzDataMigrationToSqlDb `
--ResourceGroupName MyGroup `
--SqlDbInstanceName myserver `
--Kind "SqlDb" `
--TargetDbName AdventureWorks `
--SourceDatabaseName AdventureWorks `
--SourceSqlConnectionAuthentication SQLAuthentication `
--SourceSqlConnectionDataSource myserver.microsoft.com `
--SourceSqlConnectionUserName user `
--SourceSqlConnectionPassword $sourcePass `
--Scope "/subscriptions/MySubscriptionID/resourceGroups/MyGroup/providers/Microsoft.Sql/servers/myserver" `
--TargetSqlConnectionAuthentication SQLAuthentication `
--TargetSqlConnectionDataSource myserver.database.windows.net `
--TargetSqlConnectionUserName user `
--TargetSqlConnectionPassword $targetPass `
--TableList "[Person].[Person]", "[Person].[EmailAddress]" `
--MigrationService "/subscriptions/MySubscriptionID/resourceGroups/MyGroup/providers/Microsoft.DataMigration/SqlMigrationServices/MyService"
+    -ResourceGroupName "<YourResourceGroup>" `
+    -SqlDbInstanceName "<YourTargetServer>" `
+    -Kind "SqlDb" `
+    -TargetDbName "<YourTargetDB>" `
+    -SourceDatabaseName "<YourSourceDB>" `
+    -SourceSqlConnectionAuthentication SQLAuthentication `
+    -SourceSqlConnectionDataSource "<YourSourceServer>" `
+    -SourceSqlConnectionUserName "<YourSourceUser>" `
+    -SourceSqlConnectionPassword $sourcePass `
+    -Scope "/subscriptions/<YourSubscription>/resourceGroups/<YourResourceGroup>/providers/Microsoft.Sql/servers/<YourTargetServer>" `
+    -TargetSqlConnectionAuthentication SQLAuthentication `
+    -TargetSqlConnectionDataSource "<YourTargetServer>.database.windows.net" `
+    -TargetSqlConnectionUserName "<YourTargetUser>" `
+    -TargetSqlConnectionPassword $targetPass `
+    -TableList "[Person].[Person]", "[Person].[EmailAddress]" `  # Specify tables to migrate
+    -MigrationService "/subscriptions/<YourSubscription>/resourceGroups/<YourResourceGroup>/providers/Microsoft.DataMigration/SqlMigrationServices/<YourMigrationService>"
 ```
 
-To learn more about the Azure migration extension PowerShell and Azure CLI commands available, refer to the following links: [PowerShell module for data migration extension](/powershell/module/az.datamigration) and [Azure CLI for data migration extension](/cli/azure/datamigration).
+To learn more about database migration commands, refer to the following links: [PowerShell module for data migration](/powershell/module/az.datamigration) and [Azure CLI for data migration](/cli/azure/datamigration).

@@ -2,9 +2,9 @@ By default, Azure Container Instances are stateless. If the container crashes or
 
 ## Limitations
 
-* You can only mount Azure Files shares to Linux containers. 
+* You can only mount Azure Files shares to Linux containers.
 * Azure file share volume mount requires the Linux container run as *root*.
-* Azure File share volume mounts are limited to CIFS support.
+* Azure file share volume mounts are limited to CIFS support.
 
 ## Deploy container and mount volume
 
@@ -60,7 +60,7 @@ properties:
   volumes:
   - name: filesharevolume
     azureFile:
-      sharename: acishare
+      shareName: acishare
       storageAccountName: <Storage account name>
       storageAccountKey: <Storage account key>
 tags: {}
@@ -70,7 +70,7 @@ type: Microsoft.ContainerInstance/containerGroups
 
 To mount multiple volumes in a container instance, you must deploy using an Azure Resource Manager template or a YAML file. To use a template or YAML file, provide the share details and define the volumes by populating the `volumes` array in the `properties` section of the template.
 
-For example, if you created two Azure Files shares named *share1* and *share2* in storage account *myStorageAccount*, the `volumes` array in a Resource Manager template would appear similar to the following:
+For example, if you created two Azure Files shares named *share1* and *share2* in storage account *myStorageAccount*, the `volumes` array in a Resource Manager template would appear similar to the following example:
 
 ```json
 "volumes": [{

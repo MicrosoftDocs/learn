@@ -7,7 +7,7 @@ Several migration tools provide the database assessment feature, which involves 
 
 Migration tools can identify breaking changes, behavior changes, and deprecated features. You can use these tools to check against a migration target without having to have that target installed anywhere. This allows you to quickly assess a database to see the impact of migrating without any initial setup or licensing cost.
 
-An example of an incompatibility that may prevent migration to Azure SQL Database is the use of cross-database queries. Cross-database queries aren't supported in Azure SQL Database. Migration tools such as the **Azure SQL migration extension for Azure Data Studio** can help you identify this and other compatibility issues and blockers that may prevent a migration.
+An example of an incompatibility that may prevent migration to Azure SQL Database is the use of cross-database queries. Cross-database queries aren't supported in Azure SQL Database. Migration tools such as **SQL Server enabled by Azure Arc** and **Azure Migrate** can help you identify this and other compatibility issues and blockers that may prevent a migration.
 
 You can run the assessment on one or more databases and on one or more instances. The size of each selected database affects the time it takes to run the assessment.
 

@@ -3,9 +3,9 @@ uid: learn.wwl.understand-windows-powershell-pipeline
 metadata:
   title: Understand the Windows PowerShell pipeline
   description: "This module explains about the Windows PowerShell pipeline and some basic techniques for running multiple commands in it."
-  ms.date: 03/26/2024
+  ms.date: 01/23/2026
   author: wwlpublish
-  ms.author: tonyj
+  ms.author: robbarefoot
   ms.topic: module-standard-task-based
   ms.custom:
   - N/A
