@@ -50,13 +50,13 @@ quiz:
       explanation: Incorrect. The parameter doesn't delete responses.
   - content: Which package must you install to use the Microsoft Foundry SDK in Python?
     choices:
-    - content: azure-foundry
+    - content: Package `azure-foundry`
       isCorrect: false
       explanation: Incorrect. This package doesn't exist.
-    - content: azure-ai-projects
+    - content: Package `azure-ai-projects`
       isCorrect: true
-      explanation: Correct. The azure-ai-projects package provides the Microsoft Foundry SDK for Python.
-    - content: microsoft-foundry-sdk
+      explanation: Correct. The `azure-ai-projects` package provides the Microsoft Foundry SDK for Python.
+    - content: Package `microsoft-foundry-sdk`
       isCorrect: false
       explanation: Incorrect. This package doesn't exist.
   - content: What advantage does the Responses API offer over traditional chat completions?
@@ -70,14 +70,3 @@ quiz:
     - content: It requires less authentication configuration
       isCorrect: false
       explanation: Incorrect. Both APIs require the same authentication approach.
-  - content: What feature in the Chat playground helps you transition from experimentation to development?
-    choices:
-    - content: The Code button that generates SDK samples based on your playground session
-      isCorrect: true
-      explanation: Correct. The Code button provides pre-populated code samples in multiple languages that you can use as a starting point for your application.
-    - content: The ability to save your chat history
-      isCorrect: false
-      explanation: Incorrect. While you can work with chat history, the Code button is specifically designed to help you generate implementation code.
-    - content: The automatic deployment of models
-      isCorrect: false
-      explanation: Incorrect. The playground doesn't automatically deploy models; it helps you test and generate code samples.
