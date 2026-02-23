@@ -101,16 +101,18 @@ Prepare your landing zone design with automated management and monitoring:
 
 ## Adopt secure development and platform practices
 
-The Secure methodology's adoption guidance covers security posture modernization. Adoption is the broadest phase for DevSecOps, addressing how you implement security controls across development workflows, platform infrastructure, CI/CD pipelines, and incident response.
+Adoption is the broadest phase for DevSecOps. The Secure methodology's adoption guidance addresses how you implement security controls across development workflows, platform infrastructure, CI/CD pipelines, and incident response.
 
-### Shift-left security and posture modernization
+### Posture modernization
 
-The adoption guidance recommends three practices that apply to DevSecOps:
+Security posture modernization starts with establishing baselines and automating controls:
 
 - **Operationalize your security baseline**: Apply the baseline established during planning as the standard against which all development environments and pipeline configurations are measured. Use security posture scoring tools to track progress and generate actionable recommendations.
 - **Embrace automation**: Use IaC tools with declarative templates integrated into CI/CD pipelines for infrastructure deployments, testing, monitoring, and scaling. Automation reduces the risk of human error and improves consistency across environments.
 
-The Secure methodology also describes a "shift left" approach that moves security from end-of-development auditing to continuous integration throughout the lifecycle:
+### Shift-left security
+
+The shift-left approach moves security from end-of-development auditing to continuous integration throughout the lifecycle:
 
 | Traditional approach | Shift-left approach |
 | --- | --- |
@@ -123,7 +125,7 @@ Shifting left produces more robust code and resolves problems early when they're
 
 ### Secure the DevOps platform
 
-The adoption guidance extends to securing the DevOps platform itself, because a compromised platform undermines all other security controls.
+A compromised DevOps platform undermines all other security controls, so platform hardening is a critical part of adoption.
 
 - **Apply least-privilege access**: Use RBAC through a centralized identity provider, entitlement management for time-bound developer access, and just-in-time privileged access for platform administrator roles. Manage platform role assignments through centralized identity group memberships.
 - **Protect code and environments**: Restrict repository access with security groups, set branch permissions, and require code reviews from security-aware reviewers before merging to protected branches. Consider disabling permission inheritance to prevent unintended access escalation.
@@ -131,7 +133,7 @@ The adoption guidance extends to securing the DevOps platform itself, because a 
 
 ### Implement CI/CD pipeline security controls
 
-The adoption guidance, reinforced by the Microsoft Cloud Security Benchmark (MCSB), defines security controls for CI/CD pipelines. Design your pipelines to implement these controls at each stage:
+The Microsoft Cloud Security Benchmark (MCSB) defines security controls for CI/CD pipelines. Design your pipelines to implement these controls at each stage:
 
 - **Static application security testing (SAST)**: Integrate source code analysis, binary analysis, and credential scanning tools as gating controls that prevent vulnerable packages from committing, building, or deploying.
 - **Dynamic application security testing (DAST)**: Integrate runtime application testing and automated penetration testing into your CI/CD workflow.
@@ -142,7 +144,7 @@ Use deployment management features to manage cloud resources as a single cohesiv
 
 ### Prepare for incidents
 
-The adoption guidance addresses incident preparedness as part of infrastructure and application security. A well-designed DevSecOps process includes built-in capabilities for detecting, responding to, and recovering from security incidents:
+A well-designed DevSecOps process includes built-in capabilities for detecting, responding to, and recovering from security incidents:
 
 - **Threat detection**: Implement extended detection and response (XDR) and SIEM solutions integrated with your DevOps toolchain. XDR solutions provide automated investigation and response functionality that reduces response time.
 - **Vulnerability management**: Use the patch management and monitoring tools established during readiness for risk-based assessment, prioritization, and remediation.
@@ -172,12 +174,9 @@ The governance guidance also recommends automated compliance monitoring that pro
 
 ## Sustain security across DevSecOps operations
 
-The Secure methodology's management guidance ensures that the security controls adopted and governed in earlier phases remain effective over time. Design DevSecOps processes that support ongoing improvement:
+The Secure methodology's management guidance ensures that the security controls adopted and governed in earlier phases remain effective over time. Design DevSecOps processes that support ongoing improvement. Examples include:
 
-- **Security review board**: Create a board with representatives from development, operations, and security teams that continuously reviews projects, mandates security controls, and identifies improvement areas.
 - **Vulnerability management**: Integrate vulnerability findings directly into development backlogs so that remediation follows standard sprint workflows and risk scores are continuously tracked.
 - **Threat intelligence integration**: Use the MITRE ATT&CK knowledge base to develop threat models and inform security testing. Feed incident retrospectives and threat intelligence into backlog refinement so that posture changes align with live adversary behaviors.
 - **Security metrics**: Track metrics like mean time to detect (MTTD), secure score trends, and security coverage. Use these metrics to drive backlog prioritization and demonstrate security improvement to stakeholders.
-- **Threat hunting and detection engineering**: Adopt an "assume breach" mindset. Threat hunting uses hypothesis-based analysis to discover breaches, while detection engineering develops specialized mechanisms for novel attacks targeting development infrastructure and CI/CD pipelines.
 - **System integrity monitoring**: Enforce infrastructure changes only through IaC and approved deployment protocols. Investigate changes outside approved protocols immediately.
-- **Continuous education**: Conduct ongoing training in threat detection, incident response, and availability. Run regular security drills, including tabletop exercises that test incident response within a Zero Trust framework.
