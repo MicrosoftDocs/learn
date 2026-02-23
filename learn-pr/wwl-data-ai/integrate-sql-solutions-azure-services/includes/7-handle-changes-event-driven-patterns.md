@@ -1,6 +1,6 @@
 Modern applications often need to respond to database changes in real time. When a customer places an order, updates their profile, or when inventory levels change, downstream systems need notification. SQL Server and Azure SQL provide several mechanisms for capturing and streaming these changes, each with different characteristics for latency, throughput, and implementation complexity.
 
-Data API Builder integrates with these change mechanisms through Azure Functions SQL trigger bindings and Azure Logic Apps connectors. Understanding when to use each approach helps you build responsive, event-driven architectures that react to data changes efficiently.
+Data API Builder integrates with these change mechanisms through Azure Functions SQL trigger bindings. Understanding when to use each approach helps you build responsive, event-driven architectures that react to data changes efficiently.
 
 ## Understand change capture mechanisms
 
@@ -115,26 +115,6 @@ Configure the connection string in your function app settings:
 > [!IMPORTANT]
 > The SQL trigger binding requires Change Tracking, not CDC. If you need CDC's historical capabilities alongside real-time triggers, enable both features on your tables.
 
-## Implement Azure Logic Apps for workflow automation
-
-[Azure Logic Apps SQL connector](/azure/connectors/connectors-create-api-sqlazure?azure-portal=true) provides low-code automation for database change scenarios. Logic Apps excel at orchestrating multi-step workflows that involve external systems like email, Teams, or other APIs.
-
-Create a Logic App that triggers when rows are modified:
-
-1. Add the **When an item is modified** trigger
-2. Configure the connection to your database
-3. Select the table to monitor
-4. Set the polling interval
-
-The trigger checks for changes at your specified interval and starts a workflow run for each modified row. Add subsequent actions to:
-
-- Send notification emails
-- Post messages to Teams channels
-- Call external APIs or webhooks
-- Update other databases or systems
-
-Logic Apps handle retry logic and error handling automatically. For complex scenarios, use parallel branches to perform multiple actions simultaneously or conditional branches to route based on data values.
-
 ## Stream changes with Change Event Streaming
 
 For high-throughput scenarios where polling latency is unacceptable, Change Event Streaming pushes changes directly to Azure Event Hubs. This approach eliminates polling delays and scales to millions of events per second.
@@ -168,22 +148,20 @@ The Event Hubs message contains:
 
 Selecting the appropriate change mechanism depends on your requirements:
 
-**Use CDC when:**
+Use **CDC** when:
+
 - You need complete before-and-after values
 - Compliance requires historical change records
 - Batch synchronization is acceptable
 
-**Use Change Tracking with Functions when:**
+Use **change tracking** with Functions when:
+
 - You need real-time response to changes
 - You only need current values, not history
 - You're building event-driven microservices
 
-**Use Azure Logic Apps when:**
-- Workflows involve multiple external systems
-- Low-code development is preferred
-- Polling latency of seconds to minutes is acceptable
+Use **change event streaming** when:
 
-**Use Change Event Streaming when:**
 - You need sub-second latency
 - High transaction volumes require streaming
 - You're building real-time analytics pipelines

@@ -9,9 +9,9 @@ In this module, you learn how to:
 - Define entities with field mappings, caching, pagination, and filtering
 - Configure REST and GraphQL endpoints for different client needs
 - Expose views, stored procedures, and define GraphQL relationships
-- Deploy Data API Builder to Azure Container Apps, App Service, or Static Web Apps
+- Explore deployment options for Data API Builder, including Azure Container Apps, App Service, and Static Web Apps
 - Set up Azure Monitor with Application Insights for API observability
-- Handle database changes using Change Data Capture, Azure Functions, and Logic Apps
+- Handle database changes using Change Data Capture, Azure Functions, and Change Event Streaming
 
 ## Prerequisites
 

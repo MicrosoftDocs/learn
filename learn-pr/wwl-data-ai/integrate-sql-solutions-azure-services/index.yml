@@ -18,9 +18,9 @@ abstract: |
     - Define entities for REST and GraphQL with field mappings, caching, and relationships
     - Configure REST and GraphQL endpoints with custom paths and operations
     - Expose database views, stored procedures, and GraphQL relationships
-    - Deploy Data API Builder to Azure Container Apps, App Service, or Static Web Apps
+    - Explore deployment options for Data API Builder, including Azure Container Apps, App Service, and Static Web Apps
     - Set up Azure Monitor configurations with Application Insights and Log Analytics
-    - Handle database changes using Change Data Capture, Azure Functions, and Logic Apps
+    - Handle database changes using Change Data Capture, Azure Functions, and Change Event Streaming
 prerequisites: |
   - Experience with SQL Server, Azure SQL Database, or SQL databases in Microsoft Fabric
   - Familiarity with T-SQL for creating tables, views, and stored procedures

@@ -4,9 +4,9 @@ In this module, you learned how to:
 - Define entities for tables with field mappings, caching, pagination, and filtering capabilities
 - Configure REST and GraphQL endpoints with customized paths and enabled operations
 - Expose views as read-only entities and stored procedures for custom operations
-- Deploy Data API Builder to Azure Container Apps, App Service, and Static Web Apps
+- Explore deployment options for Data API Builder, including Azure Container Apps, App Service, and Static Web Apps
 - Set up Azure Monitor with Application Insights for request telemetry and database performance tracking
-- Implement change capture patterns using CDC, Change Tracking, Azure Functions triggers, and Logic Apps
+- Implement change capture patterns using CDC, Change Tracking, Azure Functions triggers, and Change Event Streaming
 
 ## Key takeaways
 

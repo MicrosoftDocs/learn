@@ -2,6 +2,23 @@ Entities are the core building blocks of Data API Builder. Each entity maps to a
 
 Building on the configuration file you created, the `entities` section is where you specify the tables, views, and other database objects that DAB exposes. You configure each entity with source mappings, field customizations, and relationship definitions that shape your API surface.
 
+The examples throughout this unit use the following sample database tables. Keep these definitions in mind as you work through each configuration:
+
+```sql
+CREATE TABLE dbo.Categories (
+    CategoryID INT PRIMARY KEY,
+    CategoryName NVARCHAR(50) NOT NULL
+);
+
+CREATE TABLE dbo.Products (
+    ProductID INT PRIMARY KEY,
+    ProductName NVARCHAR(100) NOT NULL,
+    UnitPrice DECIMAL(10, 2) NOT NULL,
+    UnitsInStock INT NOT NULL,
+    CategoryID INT FOREIGN KEY REFERENCES dbo.Categories(CategoryID)
+);
+```
+
 ## Map database objects to entities
 
 An entity definition starts with a name and a source reference. The entity name becomes the identifier used in API endpoints and GraphQL queries, while the source points to the actual database object.
