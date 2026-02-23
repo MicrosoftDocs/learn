@@ -1,4 +1,4 @@
-DevSecOps (Development, Security, and Operations) integrates security practices into every phase of the software development lifecycle. The Cloud Adoption Framework (CAF) Secure methodology provides structured guidance across six phases — strategy, plan, ready, adopt, govern, and manage — that maps directly to DevSecOps process design and aligns with the Microsoft Cloud Security Benchmark (MCSB) for specific technical controls. As a cybersecurity architect, you use these best practices to embed security from the earliest stages of development through deployment and operations.
+DevSecOps (Development, Security, and Operations) integrates security practices into every phase of the software development lifecycle. The Cloud Adoption Framework (CAF) Secure methodology provides structured guidance across six phases—strategy, plan, ready, adopt, govern, and manage—that maps directly to DevSecOps process design and aligns with the Microsoft Cloud Security Benchmark (MCSB) for specific technical controls. As a cybersecurity architect, you use these best practices to embed security from the earliest stages of development through deployment and operations.
 
 ## How the CAF Secure methodology supports DevSecOps
 
@@ -36,7 +36,7 @@ By establishing these principles at the strategy level, you create a consistent 
 
 ### Define integrity and automation commitments
 
-The Secure methodology's integrity strategy emphasizes automation for policy management, data classification, infrastructure deployments, and update management. When you commit to automation as a strategic objective, you set the expectation that manual security gates are replaced by automated controls embedded in CI/CD pipelines — including automated code scanning, compliance checks, deployment validation, and incident response.
+The Secure methodology's integrity strategy emphasizes automation for policy management, data classification, infrastructure deployments, and update management. When you commit to automation as a strategic objective, you set the expectation that manual security gates are replaced by automated controls embedded in CI/CD pipelines—including automated code scanning, compliance checks, deployment validation, and incident response.
 
 The security sustainment strategy establishes continuous improvement as an organizational commitment, ensuring that DevSecOps processes include feedback loops, metrics tracking, and regular posture reviews rather than treating security as a one-time implementation.
 
@@ -73,13 +73,13 @@ Before adopting new DevSecOps controls, the Secure methodology recommends unders
 
 ## Ready the cloud foundation for secure development
 
-The Secure methodology's Ready guidance centers on building your cloud foundation through Azure landing zones — the secure, scalable, modular design pattern that serves as the starting point for implementation. This phase bridges planning and adoption by establishing the foundational infrastructure, identity, and integrity mechanisms that DevSecOps controls depend on.
+The Secure methodology's Ready guidance centers on building your cloud foundation through Azure landing zones—the secure, scalable, modular design pattern that serves as the starting point for implementation. This phase bridges planning and adoption by establishing the foundational infrastructure, identity, and integrity mechanisms that DevSecOps controls depend on.
 
 ### Build the foundation with Azure landing zones
 
 The Ready guidance positions Azure landing zones as the primary mechanism for preparing your secure cloud estate:
 
-- **Standardized architecture**: Landing zones separate domains — such as development, staging, and production — into governed environments with consistent security controls, ensuring that build agents, deployment pipelines, and developer workstations operate with appropriate isolation.
+- **Standardized architecture**: Landing zones separate domains—such as development, staging, and production—into governed environments with consistent security controls, ensuring that build agents, deployment pipelines, and developer workstations operate with appropriate isolation.
 - **Infrastructure as code deployment**: Deploy landing zones through IaC in CI/CD pipelines, applying the same safe deployment practices used for software deployments.
 - **Landing zone accelerators**: Use prepackaged, workload-specific deployments for services like Azure Kubernetes Service (AKS) and Azure API Management as security-compliant starting points.
 - **Design area coverage**: Even if you don't adopt a full enterprise landing zone, understand the design areas (identity, networking, governance, security, and others) and implement controls for each area.
