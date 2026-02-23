@@ -36,7 +36,7 @@ Each Microsoft SQL platform has specific AI integration capabilities:
 
 Model Context Protocol (MCP) extends AI assistant capabilities by allowing them to connect directly to your data sources. When you configure an MCP server for your SQL database, the AI assistant can query your actual schema, sample data, and metadata to provide more accurate and contextual suggestions.
 
-With MCP, your AI assistant isn't just working with generic SQL knowledge—it understands your specific tables, columns, relationships, and data types. This contextual awareness significantly improves the relevance and accuracy of generated code. You'll learn how to [configure MCP tool options](/azure/data-api-builder/mcp/quickstart-visual-studio-code?azure-portal=true) and connect to MCP server endpoints in later units.
+With MCP, your AI assistant isn't just working with generic SQL knowledge—it understands your specific tables, columns, relationships, and data types. This contextual awareness significantly improves the relevance and accuracy of generated code. You'll learn how to [configure MCP tool options](/sql/mcp/?azure-portal=true) and connect to MCP server endpoints in later units.
 
 ## Responsible AI considerations
 

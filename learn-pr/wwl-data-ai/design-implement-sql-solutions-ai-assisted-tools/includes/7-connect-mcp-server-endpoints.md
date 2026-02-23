@@ -2,14 +2,14 @@ Model Context Protocol (MCP) servers provide AI assistants with direct access to
 
 ## Connect to SQL Server MCP endpoints
 
-For SQL Server and Azure SQL databases, you can use the Data API builder MCP server or configure direct connections through supported tools.
+For SQL Server and Azure SQL databases, you can use the [SQL MCP Server](/sql/mcp/?azure-portal=true) or configure direct connections through supported tools.
 
-**Using Data API builder:**
+**Using SQL MCP Server:**
 
-Data API builder provides a REST and GraphQL API layer over your database, and it includes MCP support. To set up [SQL MCP servers in VS Code](/azure/data-api-builder/mcp/quickstart-visual-studio-code?azure-portal=true):
+SQL MCP Server is Microsoft's open-source solution built on Data API builder that enables AI agents to interact with SQL databases. To set up [SQL MCP servers in VS Code](/azure/data-api-builder/mcp/quickstart-visual-studio-code?azure-portal=true):
 
-1. Install and configure Data API builder for your database
-2. Enable the MCP endpoint in your Data API builder configuration
+1. Install and configure SQL MCP Server for your database
+2. Enable the MCP endpoint in your SQL MCP Server configuration
 3. Note the MCP endpoint URL (typically ending in `/mcp`)
 4. Add the server to VS Code using the MCP: Add Server command
 

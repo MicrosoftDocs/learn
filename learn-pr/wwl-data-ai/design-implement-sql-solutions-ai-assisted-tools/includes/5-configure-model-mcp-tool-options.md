@@ -5,7 +5,7 @@ Now that you have GitHub Copilot and Fabric Copilot enabled, you can customize h
 GitHub Copilot supports multiple AI models, each with different capabilities and performance characteristics. You can select which model to use for different scenarios based on your needs.
 
 **Available models typically include:**
-- **GPT-4o**: Advanced reasoning capabilities, excellent for complex T-SQL generation and database design questions
+- **GPT**: Advanced reasoning capabilities, excellent for complex T-SQL generation and database design questions
 - **Claude models**: Strong at explaining code and providing detailed documentation
 - **Gemini models**: Available in some configurations with different strengths
 
@@ -64,7 +64,7 @@ When MCP tools are configured, you'll see them listed when you click the tools i
 
 Several MCP server options are available for connecting AI assistants to SQL databases:
 
-**Data API builder MCP**: Connects to SQL Server and Azure SQL databases through Data API builder endpoints. This option provides a secure, managed way to expose database metadata to AI assistants.
+**SQL MCP Server**: Connects to SQL Server and Azure SQL databases using Microsoft's open-source solution built on Data API builder. This option provides a secure, managed way to expose database metadata to AI assistants.
 
 **Microsoft Fabric MCP Server**: Connects to [Fabric data agents as MCP servers](/fabric/data-science/data-agent-mcp-server?azure-portal=true), enabling AI assistants to query lakehouses, warehouses, and SQL databases within Fabric workspaces.
 
