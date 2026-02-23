@@ -36,11 +36,23 @@ Typical uses:
 
 Once you deploy an appropriate video generation model, you can test it in the Foundry portal playground. In the playground, you can also specify parameters like video dimensions and duration. 
 
+:::image type="content" source="../media/video-prompt-playground.png" alt-text="Screenshot of the Sora model in the Foundry Playground with parameters and a prompt." lightbox="../media/video-prompt-playground.png":::
+
 Your prompts to the video generation model should include a description of the content in the desired video. After a few minutes, the model produces a video.
+
+You can take a look at the sample code in the playground. 
+
+:::image type="content" source="../media/video-code-sample-playground.png" alt-text="Screenshot of the Sora model in the Foundry Playground with sample code." lightbox="../media/video-code-sample-playground.png":::
+
+The sample code uses the REST Interface for video generation. 
 
 ## Using the REST Interface for video generation 
 
 You can use the **Foundry REST interface** to *request* a video generation job and *retrieve* the finished MP4 *programmatically*. Programmatic video generation enables you to automate the video generation process. 
+
+>[!NOTE]
+> A REST API (Representational State Transfer API) is a web interface that lets programs communicate using HTTP. An SDK as a developer-friendly toolkit built on top of that interface. You can always work with the underlying REST API, especially if an SDK in the programming language you are familiar with does not exist. 
+> You can use **curl** (short for Client URL) to call, or talk to, the REST API. Curl is a command line tool used to send and receive data over the internet. At its core, curl: makes HTTP requests (and other protocols), sends data to a server, and receives and prints the server’s response. 
 
 Video generation is resource‑intensive and typically runs as an **asynchronous job**. 
 
@@ -66,8 +78,8 @@ The Sora 2 API provides distinct endpoints for:
 
 In the example, the script starts an **async render job** and returns a response that includes a **video id** to poll.
 
-> **Base URL pattern (v1)**:  
-> `https://YOUR-RESOURCE-NAME.openai.azure.com/openai/v1/` 
+>[!NOTE]
+> **Bash** is a command line shell and scripting language. Curl is a command that you run inside Bash. 
 
 ```bash
 curl -X POST "https://YOUR-RESOURCE-NAME.openai.azure.com/openai/v1/videos" \
