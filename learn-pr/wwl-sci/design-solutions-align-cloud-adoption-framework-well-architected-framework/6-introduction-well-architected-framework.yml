@@ -8,6 +8,6 @@ metadata:
   author: ceperezb
   ms.author: ceperezb
   ms.topic: unit
-durationInMinutes: 5
+durationInMinutes: 6
 content: |
   [!include[](includes/6-introduction-well-architected-framework.md)]
