@@ -64584,7 +64584,7 @@
       "redirect_document_id": false
     },  
     { 
-      "source_path": "https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/stage-deploy-app-service-deployment-slots/6-summary.yml",
+      "source_path": "learn-pr/azure/stage-deploy-app-service-deployment-slots/includes/6-summary.md",
       "redirect_url": "https://learn.microsoft.com/en-us/azure/app-service/deploy-staging-slots?tabs=portal",
       "redirect_document_id": false
     }                    
