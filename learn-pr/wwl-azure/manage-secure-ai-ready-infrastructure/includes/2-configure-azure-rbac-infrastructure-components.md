@@ -1,6 +1,6 @@
 This video summarizes the key concepts on the page. 
 
-> [!VIDEO https://learn-video.azurefd.net/vod/player?id=e3ba4d38-da59-4b80-9595-9ef2421ffae4]
+> [!VIDEO [https://learn-video.azurefd.net/vod/player?id=22a59131-bbfb-495e-9ba8-b6c1a2591d2a]
 
 When Contoso's development team first deployed their AI agents, they granted every service account Contributor permissions at the subscription level. This approach delivered fast deployment velocity during the prototype phase, but it also gave agents the ability to delete production databases, modify network security rules, and access resources across unrelated projects. Security audits revealed that over-privileged access increased the blast radius of potential breaches by 300%, turning what should have been isolated incidents into organization-wide security events.
 
