@@ -1,4 +1,4 @@
-Cloud evaluations enable systematic quality assessment by running multiple evaluators across entire test datasets in Microsoft Foundry. This eliminates the need to manage local compute infrastructure and supports large-scale automated testing workflows.
+Cloud evaluations enable systematic quality assessment by running multiple evaluators across entire test datasets in Microsoft Foundry. These automated evaluations eliminate the need to manage local compute infrastructure and support large-scale automated testing workflows.
 
 Adventure Works needs to evaluate 500 test examples against multiple quality criteria to validate their prompt update before deployment. Cloud evaluation with the Foundry SDK completes this work efficiently, running evaluators in parallel and storing results for analysis.
 
@@ -7,11 +7,11 @@ Adventure Works needs to evaluate 500 test examples against multiple quality cri
 
 ## Define data schema and evaluators
 
-Cloud evaluation needs to understand your data structure before running evaluators. You define this through a **data source config** that describes the fields in your JSONL dataset and specifies which evaluators to run.
+Cloud evaluation needs to understand your data structure before running evaluators. You define this structure through a **data source config** that describes the fields in your JSONL dataset and specifies which evaluators to run.
 
 **Why you need a data schema:**
 
-The data schema tells the evaluation service what fields exist in your dataset and which ones are required. This enables validation before execution and helps the service allocate the right resources. Think of it as a contract between your data and the evaluation service.
+The data schema tells the evaluation service what fields exist in your dataset and which ones are required. The data schema enables validation before execution and helps the service allocate the right resources. Think of it as a contract between your data and the evaluation service.
 
 ```python
 from openai.types.eval_create_params import DataSourceConfigCustom
@@ -183,7 +183,7 @@ print(f"View detailed report: {run.report_url}")
 
 All evaluators return a standardized schema for each evaluated item:
 
-- **Label**: Binary "pass" or "fail" label, similar to a unit test's output—use this for quick comparisons across evaluators
+- **Label**: Binary "pass" or "fail" label, similar to a unit test's output—use the label for quick comparisons across evaluators
 - **Score**: Score from the evaluator's natural scale (1-5 for quality evaluators, 0-7 for safety evaluators, 0-1 for similarity metrics)
 - **Threshold**: Default threshold that determines pass/fail from the score (you can override this)
 - **Reason**: Explanation for the score (for LLM-judge evaluators only)
@@ -194,4 +194,4 @@ For aggregate results across your entire dataset, access `run.result_counts` for
 > [!TIP]
 > Use the `report_url` to view results in the Foundry portal with filtering, sorting, and visualization tools. For CI/CD workflows, parse `output_items` programmatically to enforce quality gates.
 
-Now that you understand how to run cloud evaluations with the Foundry SDK, you're ready to learn how to integrate these evaluation workflows into GitHub Actions for automated quality assurance on every code change.
+In the next unit, you learn how to integrate these evaluation workflows into GitHub Actions to automate quality assurance on every code change.
