@@ -2,21 +2,20 @@ Now that you have GitHub Copilot and Fabric Copilot enabled, you can customize h
 
 ## Understanding model selection
 
-GitHub Copilot supports multiple AI models, each with different capabilities and performance characteristics. You can select which model to use for different scenarios based on your needs.
+GitHub Copilot supports multiple AI models, each with different capabilities and performance characteristics. You can select which model to use for different scenarios based on your needs. Available models typically include:
 
-**Available models typically include:**
 - **GPT**: Advanced reasoning capabilities, excellent for complex T-SQL generation and database design questions
 - **Claude models**: Strong at explaining code and providing detailed documentation
 - **Gemini models**: Available in some configurations with different strengths
 
-To change models in a Copilot chat session:
+To change models in a Copilot chat session in **SSMS**:
 
-**In SSMS:**
 1. Open the Copilot Chat window
 2. Look for the model selector dropdown at the top of the chat
 3. Select the model you want to use for your current session
 
-**In VS Code:**
+To change models in a Copilot chat session in **VS Code**:
+
 1. Open the Copilot Chat panel (**Ctrl+Alt+I**)
 2. Use the model picker in the chat interface
 3. Switch models as needed for different tasks
@@ -42,18 +41,27 @@ MCP follows a client-server architecture:
 
 GitHub Copilot supports MCP integration through agent mode in VS Code. To [use MCP servers in VS Code](/azure/data-api-builder/mcp/quickstart-visual-studio-code?azure-portal=true):
 
-**Enable Agent Mode:**
+### Enable agent mode
+
+Agent mode allows GitHub Copilot to use external tools, including MCP servers, to gather context and perform actions on your behalf.
+
 1. Open the Copilot Chat panel in VS Code
 2. Look for the mode selector (Ask, Edit, or Agent)
 3. Switch to **Agent** mode to access MCP tools
 
-**Add an MCP Server:**
+### Add an MCP Server
+
+You can add MCP servers to your VS Code workspace using the Command Palette or by manually editing the configuration file.
+
 1. Open the Command Palette (**Ctrl+Shift+P**)
 2. Type **MCP: Add Server** and select it
 3. Choose the server type (HTTP or Stdio)
 4. Enter the server URL or configuration
 
-**Manage MCP Tools:**
+### Manage MCP Tools
+
+Once MCP servers are added, you can control which tools are active for each chat session.
+
 1. In Agent mode, select the tools icon in the chat panel
 2. View available MCP servers and their tools
 3. Enable or disable specific tools as needed
@@ -64,11 +72,11 @@ When MCP tools are configured, you'll see them listed when you click the tools i
 
 Several MCP server options are available for connecting AI assistants to SQL databases:
 
-**SQL MCP Server**: Connects to SQL Server and Azure SQL databases using Microsoft's open-source solution built on Data API builder. This option provides a secure, managed way to expose database metadata to AI assistants.
+- **SQL MCP Server**: Connects to SQL Server and Azure SQL databases using Microsoft's open-source solution built on Data API builder. This option provides a secure, managed way to expose database metadata to AI assistants.
 
-**Microsoft Fabric MCP Server**: Connects to [Fabric data agents as MCP servers](/fabric/data-science/data-agent-mcp-server?azure-portal=true), enabling AI assistants to query lakehouses, warehouses, and SQL databases within Fabric workspaces.
+- **Microsoft Fabric MCP Server**: Connects to [Fabric data agents as MCP servers](/fabric/data-science/data-agent-mcp-server?azure-portal=true), enabling AI assistants to query lakehouses, warehouses, and SQL databases within Fabric workspaces.
 
-**Azure MCP Server**: Provides broader Azure resource integration, including database services.
+- **Azure MCP Server**: Provides broader Azure resource integration, including database services.
 
 To configure a SQL MCP server in VS Code:
 
@@ -104,13 +112,13 @@ This approach allows you to use the same data agent from both the Fabric portal 
 
 ## Best practices for model and MCP configuration
 
-**Start with defaults**: Begin with default model and MCP settings, then adjust based on your experience. Not every scenario requires the most advanced configuration.
+- **Start with defaults**: Begin with default model and MCP settings, then adjust based on your experience. Not every scenario requires the most advanced configuration.
 
-**Match models to tasks**: Use more capable models for complex design decisions, simpler models for routine code completion.
+- **Match models to tasks**: Use more capable models for complex design decisions, simpler models for routine code completion.
 
-**Limit MCP scope**: Configure MCP connections with least-privilege access. If your AI workflow only needs schema information, don't grant data read permissions.
+- **Limit MCP scope**: Configure MCP connections with least-privilege access. If your AI workflow only needs schema information, don't grant data read permissions.
 
-**Test configurations**: After changing model or MCP settings, verify the assistant still provides accurate suggestions. Different models might interpret prompts differently.
+- **Test configurations**: After changing model or MCP settings, verify the assistant still provides accurate suggestions. Different models might interpret prompts differently.
 
 > [!IMPORTANT]
 > MCP servers establish direct connections to your databases. Ensure your network security policies allow these connections and that authentication follows the security best practices covered earlier in this module.
