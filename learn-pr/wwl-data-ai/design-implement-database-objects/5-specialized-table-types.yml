@@ -4,7 +4,7 @@ title: Use specialized table types
 metadata:
   title: Use specialized table types
   description: "Learn how to implement in-memory, temporal, external, LEDGER, and GRAPH tables"
-  ms.date: 01/12/2026
+  ms.date: 02/24/2026
   author: JulianePadrao
   ms.author: jupadrao
   ms.topic: unit

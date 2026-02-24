@@ -4,7 +4,7 @@ title: Partition tables for scale
 metadata:
   title: Partition tables for scale
   description: "Learn how to design and implement partitioning strategies for tables and indexes"
-  ms.date: 01/12/2026
+  ms.date: 02/24/2026
   author: JulianePadrao
   ms.author: jupadrao
   ms.topic: unit
