@@ -27,6 +27,8 @@ MCP offers:
 
 :::image type="content" source="../media/model-context-protocol-architecture.png" alt-text="Diagram showing the interaction between MCP clients and servers across local and internet environments." lightbox="../media/model-context-protocol-architecture.png":::
 
+*Image by Mark Roy, Amit Arora, Eashan Kaushik, Madhur Prashant, and Andy Palmer, from ['Harness the power of MCP servers with Amazon Bedrock Agents'](https://aws.amazon.com/blogs/machine-learning/harness-the-power-of-mcp-servers-with-amazon-bedrock-agents/)*
+
 The above diagram illustrates three common ways that an MCP Client (such as Claude, an IDE, or another tool) can interact with MCP Servers and the services they connect to. Each path shows a different type of communication, depending on whether the resources are local or remote.
 
 #### Local communication with local data (top path)

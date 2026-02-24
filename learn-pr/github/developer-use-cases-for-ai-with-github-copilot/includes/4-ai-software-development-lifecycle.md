@@ -4,6 +4,8 @@ GitHub Copilot's capabilities extend beyond individual coding tasks, influencing
  
 :::image type="content" source="../media/the-software-development-life-cycle.png" alt-text="The Software Development Life Cycle.":::
 
+*Image by Akinrefon Shedrack Tobiloba, from ['Understanding the Software Development Life Cycle (SDLC)'](https://codewithshedrack.substack.com/p/understanding-the-software-development/)*
+
 Let's examine how GitHub Copilot can positively impact each stage of the SDLC:
 
 ### Requirement analysis
