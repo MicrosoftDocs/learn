@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.optimize-vector-search-azure-database-postgresql.exercise-optimize-vector-search
+title: Exercise - Optimize vector search performance in Azure Database for PostgreSQL
+metadata:
+  title: Exercise - Optimize Vector Search Performance in Azure Database for PostgreSQL
+  description: Exercise - Optimize vector search performance in Azure Database for PostgreSQL
+  ms.date: 01/26/2026
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: unit
+durationInMinutes: 30
+content: |
+  [!include[](includes/7-exercise-optimize-vector-search.md)]

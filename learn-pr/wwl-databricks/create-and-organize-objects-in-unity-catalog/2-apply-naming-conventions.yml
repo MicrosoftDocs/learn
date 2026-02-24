@@ -4,7 +4,7 @@ title: Apply naming conventions
 metadata:
   title: Apply Naming Conventions for Unity Catalog Objects
   description: Learn how to apply effective naming conventions for Azure Databricks Unity Catalog objects to support governance, discoverability, and team collaboration across environments.
-  ms.date: 12/07/2025
+  ms.date: 01/30/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit

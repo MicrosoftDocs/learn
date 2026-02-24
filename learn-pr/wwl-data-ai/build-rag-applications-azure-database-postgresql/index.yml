@@ -1,0 +1,52 @@
+### YamlMime:Module
+uid: learn.wwl.build-rag-applications-azure-database-postgresql
+metadata:
+  title: Build RAG applications with Azure Database for PostgreSQL
+  description: Learn how to implement Retrieval Augmented Generation (RAG) on Azure Database for PostgreSQL using Azure AI and vector (pgvector) extensions. Build a Python-based application and explore advanced options like GraphRAG.
+  ms.date: 08/08/2025
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: module
+  ms.service: azure-database-postgresql
+  ai-usage: ai-assisted
+title: Build RAG applications with Azure Database for PostgreSQL
+summary: Learn how to implement Retrieval Augmented Generation (RAG) on Azure Database for PostgreSQL, integrate Azure AI for embeddings, and build scalable, accurate AI-powered applications.
+abstract: |
+  By the end of this module, you'll be able to:
+  *   Explain the RAG pattern and its benefits for grounding large language models.
+  *   Map RAG pipeline stages to Azure Database for PostgreSQL features and extensions.
+  *   Build a basic RAG application using PostgreSQL and Python.
+  *   Enhance performance and accuracy with indexing strategies and semantic re-ranking.
+  *   Explore advanced RAG patterns, including GraphRAG for multi-hop reasoning.
+prerequisites: |
+  *   Ability to write basic SQL queries.
+  *   Familiarity with Python application development.
+  *   Comfort with provisioning Azure resources such as Flexible Server and enabling extensions.
+iconUrl: /training/achievements/generic-database.svg
+levels:
+- intermediate
+roles:
+- developer
+- data-engineer
+- solution-architect
+products:
+- azure
+- azure-database-postgresql
+subjects:
+- databases
+- artificial-intelligence
+- cloud-computing
+units:
+- learn.wwl.build-rag-applications-azure-database-postgresql.introduction
+- learn.wwl.build-rag-applications-azure-database-postgresql.understand-rag-patterns-azure-database-postgresql
+- learn.wwl.build-rag-applications-azure-database-postgresql.explore-scale-accuracy-problem
+- learn.wwl.build-rag-applications-azure-database-postgresql.enhance-scale-vector-index
+- learn.wwl.build-rag-applications-azure-database-postgresql.build-rag-application-postgresql-python
+- learn.wwl.build-rag-applications-azure-database-postgresql.exercise-build-rag-application-postgresql-python
+- learn.wwl.build-rag-applications-azure-database-postgresql.improve-accuracy-advanced-rag-architecture
+- learn.wwl.build-rag-applications-azure-database-postgresql.explore-graphrag
+- learn.wwl.build-rag-applications-azure-database-postgresql.exercise-implement-graphrag
+- learn.wwl.build-rag-applications-azure-database-postgresql.knowledge-check
+- learn.wwl.build-rag-applications-azure-database-postgresql.summary
+badge:
+  uid: learn.wwl.build-rag-applications-azure-database-postgresql.badge

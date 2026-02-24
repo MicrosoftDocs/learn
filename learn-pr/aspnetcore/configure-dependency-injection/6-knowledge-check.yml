@@ -6,7 +6,7 @@ metadata:
   description: Knowledge check for ASP.NET Core dependency injection.
   ms.date: 11/7/2024
   author: CamSoper
-  ms.author: casoper
+  ms.author: daroth
   ms.topic: unit
   module_assessment: true
 durationInMinutes: 5

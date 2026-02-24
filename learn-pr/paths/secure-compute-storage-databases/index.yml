@@ -3,7 +3,7 @@ uid: learn.wwl.secure-compute-storage-databases
 metadata:
   title: 'Protect compute, storage, and databases'
   description: 'Protect compute, storage, and databases'
-  ms.date: 03/12/2024
+  ms.date: 01/23/2026
   author: wwlpublish
   ms.author: roberts
   ms.topic: learning-path
@@ -11,7 +11,7 @@ title: 'Protect compute, storage, and databases'
 prerequisites: |
   None
 summary: |
-  Master the art of securing Azure compute resources, storage, and databases, including advanced security measures, encryption, access control, and database protection.
+  Learn how to protect your Azure compute resources, storage accounts, and databases. You implement encryption, configure access controls, and apply security best practices to safeguard your data.
 iconUrl: /training/achievements/generic-trophy.svg
 levels:
 - intermediate

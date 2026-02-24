@@ -5,7 +5,7 @@ metadata:
   description: Describe Microsoft Security Copilot agents.
   author: wwlpublish
   ms.author: ceperezb
-  ms.date: 11/03/2025
+  ms.date: 02/15/2026
   ms.service: security-copilot
   ai-usage: ai-assisted
   ms.topic: module-standard-task-based
@@ -18,9 +18,10 @@ summary: |
 abstract: |
   By the end of this module, you're able to:
   - Describe the role and functionality of Microsoft Security Copilot agents in automating security workflows.
-  - Describe the Threat Intelligence Briefing Agent.
-  - Describe the Conditional Access Optimization Agent.
-  - Describe the Phishing Triage agent.
+  - Describe agent identities and permissions in Microsoft Security Copilot.
+  - Describe the Threat Intelligence Briefing Agent in the Security Copilot standalone experience.
+  - Describe Security Copilot agents in Microsoft Entra, Microsoft Defender, Microsoft Purview, and Microsoft Intune.
+  - Describe how Security Copilot supports building your own agents.
 prerequisites: |
   - Working knowledge of security operations and incident response
   - Working knowledge of Microsoft security products and services
@@ -41,11 +42,14 @@ subjects: # see subject taxonomy https://review.learn.microsoft.com/help/contrib
 units:
 - learn.security-copilot-describe-agents.introduction
 - learn.security-copilot-describe-agents.describe-agents
+- learn.security-copilot-describe-agents.understand-agent-identities-permissions
 - learn.security-copilot-describe-agents.describe-threat-intelligence-briefing-agent
 - learn.security-copilot-describe-agents.explore-threat-intelligence-briefing-agent
 - learn.security-copilot-describe-agents.describe-conditional-access-optimization-agent  
 - learn.security-copilot-describe-agents.explore-conditional-access-optimization-agent
 - learn.security-copilot-describe-agents.describe-phishing-triage-agent
+- learn.security-copilot-describe-agents.describe-purview-agents
+- learn.security-copilot-describe-agents.describe-intune-agents
 - learn.security-copilot-describe-agents.build-agents
 - learn.security-copilot-describe-agents.module-assessment
 - learn.security-copilot-describe-agents.summary

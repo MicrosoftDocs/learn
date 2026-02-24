@@ -3,11 +3,11 @@ uid: learn.wwl.design-solutions-identity-access-management.design-modern-authent
 title: Design modern authentication and authorization strategies
 metadata:
   title: Design modern authentication and authorization strategies
-  description: "This is a unit which prepares for the Microsoft Cybersecurity Architect certification on the topic: design modern authentication and authorization strategies."
-  ms.date: 09/26/2024
+  description: "Design authentication strategies using Conditional Access, CAE, Identity Protection, and protected actions."
+  ms.date: 01/30/2026
   author: ceperezb
   ms.author: ceperezb
   ms.topic: unit
-durationInMinutes: 10
+durationInMinutes: 8
 content: |
   [!include[](includes/4-design-modern-authentication-authorization-strategies.md)]

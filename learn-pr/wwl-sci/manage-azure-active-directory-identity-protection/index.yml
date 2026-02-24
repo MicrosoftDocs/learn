@@ -50,6 +50,7 @@ units:
 - learn.wwl.manage-azure-active-directory-identity-protection.monitor-investigate-remediate-elevated-risky-users
 - learn.wwl.manage-azure-active-directory-identity-protection.implement-security-workload-identities
 - learn.wwl.manage-azure-active-directory-identity-protection.explore-microsoft-defender-identity
+- learn.wwl.manage-azure-active-directory-identity-protection.identity-risk-management-agent
 - learn.wwl.manage-azure-active-directory-identity-protection.knowledge-check
 - learn.wwl.manage-azure-active-directory-identity-protection.summary-resources
 badge:

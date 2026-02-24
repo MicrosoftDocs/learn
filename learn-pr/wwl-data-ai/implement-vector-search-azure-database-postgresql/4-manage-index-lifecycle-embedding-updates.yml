@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-vector-search-azure-database-postgresql.manage-index-lifecycle-embedding-updates
+title: Manage index lifecycle and embedding updates
+metadata:
+  title: Manage Index Lifecycle and Embedding Updates
+  description: Manage index lifecycle and embedding updates
+  ms.date: 01/29/2026
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-manage-index-lifecycle-embedding-updates.md)]

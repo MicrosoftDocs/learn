@@ -28,3 +28,8 @@ Here are some links to more detailed information on the topics we discussed in t
 - [Adding a security policy to your repository](https://docs.github.com/code-security/getting-started/adding-a-security-policy-to-your-repository)
 
 - [Authenticating with a GitHub App on behalf of a user](https://docs.github.com/apps/building-github-apps/identifying-and-authorizing-users-for-github-apps)
+
+## Provide feedback
+
+Use this [issue form](https://github.com/githubpartners/microsoft-learn/issues/new/choose) to provide content feedback or suggested changes for this Microsoft Learn module. GitHub maintains this content and a team member will triage the request. Thank you for taking the time to improve our content!
+

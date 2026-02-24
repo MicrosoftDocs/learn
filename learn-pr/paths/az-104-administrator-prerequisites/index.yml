@@ -3,7 +3,7 @@ uid: learn.az104-admin-prerequisites
 metadata:
   title: 'AZ-104: Prerequisites for Azure administrators'
   description: 'AZ-104: Prerequisites for Azure administrators'
-  ms.date: 12/30/2024
+  ms.date: 01/26/2026
   author: wwlpublish
   ms.author: cynthist
   ms.topic: learning-path
@@ -67,7 +67,6 @@ subjects:
 - cloud-computing
 modules:
 - learn.intro-to-azure-cloud-shell
-- learn.powershell.intro-to-powershell
 - learn.azure.create-resource-manager-template-vs-code
 trophy:
   uid: learn.az-104-admin-prerequisites.trophy

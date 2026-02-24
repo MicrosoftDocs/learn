@@ -30,7 +30,5 @@ subjects:
 modules:
 - introduction-azure-firewall
 - learn.intro-to-azure-firewall-manager
-- introduction-azure-virtual-wan
-- introduction-azure-private-link
 trophy:
   uid: learn.secure-networking-infrastructure.trophy

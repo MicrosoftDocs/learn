@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.store-manage-containers-azure-container-registry.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: Introduction
+  ms.date: 01/05/2026
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/1-introduction.md)]

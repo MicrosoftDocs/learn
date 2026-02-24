@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.prompt-versioning-genaiops.foundry-agents-prompt-versioning
+title: Understand Microsoft Foundry agents and prompt versioning
+metadata:
+  title: Understand Microsoft Foundry agents and prompt versioning
+  description: "Learn how prompts integrate with Microsoft Foundry agent definitions and how to version agents using Git tags"
+  ms.date: 01/26/2026
+  author: madiepev
+  ms.author: madiepev
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 7
+content: |
+  [!include[](includes/3-foundry-agents-prompt-versioning.md)]

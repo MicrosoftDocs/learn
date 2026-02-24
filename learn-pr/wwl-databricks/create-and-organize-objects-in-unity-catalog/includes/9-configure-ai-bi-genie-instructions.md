@@ -1,3 +1,5 @@
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=1e17e69d-6fe2-432d-bcfc-7e9588577e9b]
+
 Making your data discoverable involves more than organizing it into catalogs and schemas. **AI/BI Genie** in Azure Databricks enables business users to explore data through **natural language questions**, but it needs guidance to interpret your organization's terminology and business logic. When you configure AI/BI Genie instructions properly, you transform Unity Catalog metadata into a **knowledge store** that helps both humans and AI systems understand your data.
 
 :::image type="content" source="../media/9-genie-example-chat.png" alt-text="Screenshot showing an example of chatting with Genie." lightbox="../media/9-genie-example-chat.png":::

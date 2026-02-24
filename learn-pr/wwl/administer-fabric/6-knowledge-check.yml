@@ -3,8 +3,9 @@ uid: learn.wwl.administer-fabric.knowledge-check
 title: Module assessment
 metadata:
   title: Module assessment
+  ai_generated_module_assessment: true
   description: "Knowledge check"
-  ms.date: 05/09/2025
+  ms.date: 01/27/2026
   author: wwlpublish
   ms.author: theresai
   ms.topic: unit

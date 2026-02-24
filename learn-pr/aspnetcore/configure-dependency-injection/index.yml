@@ -5,7 +5,7 @@ metadata:
   description: "Understand and implement dependency injection in an ASP.NET Core app. Use ASP.NET Core's built-in service container to manage dependencies. Register services with the service container."
   ms.date: 11/7/2024
   author: camsoper
-  ms.author: casoper
+  ms.author: daroth
   ms.topic: module
   ms.service: aspnet-core
   ai-usage: ai-assisted

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-monitoring-ai-ready-infrastructure.exercise-configure-monitoring-azure-infrastructure
+title: "Configure Monitoring Azure Infrastructure"
+metadata:
+  title: "Configure Monitoring Azure Infrastructure"
+  description: "Configure Monitoring Azure Infrastructure"
+  ms.date: 02/02/2026
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: unit
+durationInMinutes: 60
+content: |
+  [!include[](includes/5-exercise-configure-monitoring-azure-infrastructure.md)]

@@ -1,0 +1,47 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.build-rag-applications-azure-database-postgresql.knowledge-check
+title: Module assessment
+metadata:
+  title: Module assessment
+  description: "Knowledge check"
+  ms.date: 08/15/2025
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+durationInMinutes: 5
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: What does GraphRAG add to a standard RAG pipeline?
+    choices:
+    - content: A replacement for vector search that removes embeddings
+      isCorrect: false
+      explanation: Incorrect. GraphRAG complements vectors; it doesn't remove them.
+    - content: A knowledge graph so retrieval can follow relationships before ranking with embeddings
+      isCorrect: true
+      explanation: Correct. Graph structure guides what to retrieve.
+    - content: A new fine-tuned model trained on policies
+      isCorrect: false
+      explanation: Incorrect. GraphRAG changes retrieval, not model training.
+  - content: When results are combined from vector and keyword searches, what simple method helps merge rankings?
+    choices:
+    - content: L2 normalization of all vectors
+      isCorrect: false
+      explanation: Incorrect. That's a vector scaling step, not a rank merger.
+    - content: Cross join of both result sets
+      isCorrect: false
+      explanation: Incorrect. A cross join doesn't merge rankings meaningfully.
+    - content: Reciprocal Rank Fusion
+      isCorrect: true
+      explanation: Correct. It blends lists without heavy tuning.
+  - content: What SQL statement is useful to check timing and confirm a vector index is used?
+    choices:
+    - content: DESCRIBE TABLE on the target relation
+      isCorrect: false
+      explanation: Incorrect. That only shows schema details.
+    - content: EXPLAIN (ANALYZE, BUFFERS) followed by the query
+      isCorrect: true
+      explanation: Correct. It shows the plan and actual work done.
+    - content: VACUUM ANALYZE on the database
+      isCorrect: false
+      explanation: Incorrect. It updates stats but doesn't display a plan.

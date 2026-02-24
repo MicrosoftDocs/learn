@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-containers-azure-container-apps.optimize-container-settings
+title: Optimize container resources and scaling
+metadata:
+  title: Optimize Container Resources and Scaling
+  description: Optimize container resources and scaling
+  ms.date: 01/26/2026
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/6-optimize-container-settings.md)]

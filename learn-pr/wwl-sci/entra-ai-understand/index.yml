@@ -1,0 +1,57 @@
+### YamlMime:Module
+uid: learn.wwl.entra-ai-understand
+metadata:
+  title: Understand identity architecture for AI workloads
+  description: Explore how Microsoft Entra ID defines who can deploy, invoke, and manage AI workloads in Azure through identity types, authentication flows, and role scope decisions.
+  ms.date: 02/13/2026
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: module
+  ai-usage: ai-assisted
+  ms.service: entra-id
+title: Understand identity architecture for AI workloads
+
+summary: |
+  Identity architecture defines who can deploy, invoke, and manage AI workloads in Azure. Microsoft Entra ID governs access across management and data planes, authentication flows establish trust boundaries for AI endpoints, and role scope decisions determine blast radius. Identity types, role assignments, and scope boundaries shape AI security outcomes long before enforcement controls are applied.
+
+abstract: |
+  In this module, you learn to:
+  - Explain identity as the control layer for AI workloads in Azure
+  - Distinguish between management plane and data plane access in AI environments
+  - Describe authentication flows used by AI endpoints integrated with Microsoft Entra ID
+  - Differentiate between human, application, and managed identities
+  - Evaluate how role assignments and scope hierarchy affect blast radius
+  - Identify common identity design patterns that introduce AI security risk
+
+prerequisites: |
+  Before starting, you should have:
+  - Experience working with Microsoft Entra ID and Azure role-based access control (RBAC)
+  - Familiarity with Azure resource hierarchy, including subscriptions and resource groups
+  - Basic understanding of how AI workloads expose endpoints for model deployment and invocation
+  - Experience managing identity and access in cloud environments
+
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- security-engineer
+- identity-access-admin
+products:
+- azure
+- entra-id
+subjects:
+- security
+- cloud-security
+- identity-access
+units:
+- learn.wwl.entra-ai-understand.introduction
+- learn.wwl.entra-ai-understand.identity-control-layer-ai-solutions
+- learn.wwl.entra-ai-understand.management-data-plane-ai-workloads
+- learn.wwl.entra-ai-understand.authentication-flows-microsoft-foundry
+- learn.wwl.entra-ai-understand.human-workload-identities-ai-environments
+- learn.wwl.entra-ai-understand.role-scope-ai-environments
+- learn.wwl.entra-ai-understand.common-identity-misconfigurations-ai
+- learn.wwl.entra-ai-understand.knowledge-check
+- learn.wwl.entra-ai-understand.summary
+badge:
+  uid: learn.wwl.entra-ai-understand.badge

@@ -34,7 +34,7 @@ You can clone the GitHub repository you created by following these steps.
 
 In Visual Studio Code, set up a new database project and save the project in the same folder where you cloned the GitHub repository.
 
-For more information about creating a Database Project in Visual Studio Code, see [Getting started with the SQL Database Projects extension](/azure-data-studio/extensions/sql-database-project-extension-getting-started?azure-portal=true).
+For more information about creating a Database Project in Visual Studio Code, see [SQL Server Development with Visual Studio Code](/sql/tools/visual-studio-code/sql-server-develop-use-vscode?azure-portal=true).
 
 Once you created your database project, add code to modify your Azure SQL Database. Then commit them back to your GitHub repository to ensure they're tracked and integrated into your version control system.
 
@@ -85,7 +85,7 @@ You can now build your YAML file. For detailed syntax and guidelines, refer to t
 
 ## Azure SQL Database deployment with Azure DevOps Services
 
-You can also deploy updates to an Azure SQL Database using Azure DevOps Services. To get started, you'll need an Azure DevOps Services account, a version control system (such as Azure Repos or GitHub), and Visual Studio Code with the [SQL Database extension](/azure-data-studio/extensions/sql-database-project-extension-getting-started?azure-portal=true) installed.
+You can also deploy updates to an Azure SQL Database using Azure DevOps Services. To get started, you'll need an Azure DevOps Services account, a version control system (such as Azure Repos or GitHub), and Visual Studio Code with the [SQL Database extension](/sql/tools/visual-studio-code/sql-server-develop-use-vscode?azure-portal=true) installed.
 
 Azure DevOps Services includes Azure Pipelines, which automatically build, test, and deploy code. By using Azure Pipelines, you can support continuous integration and continuous deployment (CI/CD) of Azure SQL Database modifications within your project. This integration ensures that your database changes are consistently and reliably applied.
 

@@ -1,0 +1,50 @@
+### YamlMime:Module
+uid: learn.github.github-enterprise-server-developer-fundamentals
+title: GitHub Enterprise Server fundamentals for developers
+metadata:
+  title: GitHub Enterprise Server Fundamentals for Developers
+  description: Overview of GitHub Enterprise Server (GHES) and its self-managed GitHub experience for secure or regulated environments.
+  author: camihmerhar
+  ms.author: camhernandez
+  ms.date: 02/16/2026
+  ms.update-cycle: 180-days
+  ms.service: github
+  ms.topic: module
+summary: GHES brings core GitHub features to on-premises infrastructure, enabling full control over data and operations with a familiar developer workflow.
+
+abstract: |
+  By the end of this module, you will be able to:
+  - Explain what GitHub Enterprise Server is and why organizations choose it
+  - Compare GitHub Enterprise Server with GitHub Enterprise Cloud
+  - Identify feature differences and availability gaps across platforms
+  - Understand GHES release cadence and version-specific behavior
+  - Adjust development workflows and expectations when working on GHES
+
+prerequisites: |
+  Before starting this learning path, you should be familiar with:
+  - Basic Git concepts (clone, commit, push, pull)
+  - The purpose of repositories, branches, and pull requests
+  - Basic web-based navigation in GitHub (browsing repositories and viewing pull requests)
+
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+  - intermediate
+roles:
+  - devops-engineer
+  - administrator
+  - developer
+  - student
+products:
+  - github
+subjects:
+  - data-integration
+units:
+  - learn.github.github-enterprise-server-developer-fundamentals.github-enterprise-server-introduction
+  - learn.github.github-enterprise-server-developer-fundamentals.github-enterprise-server-cloud-differences
+  - learn.github.github-enterprise-server-developer-fundamentals.release-cadence-version-management
+  - learn.github.github-enterprise-server-developer-fundamentals.github-enterprise-server-developer-experience
+  - learn.github.github-enterprise-server-developer-fundamentals.github-connect-hybrid-scenarios
+  - learn.github.github-enterprise-server-developer-fundamentals.knowledge-check
+  - learn.github.github-enterprise-server-developer-fundamentals.summary
+badge:
+  uid: learn.github.github-enterprise-server-developer-fundamentals.badge

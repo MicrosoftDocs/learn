@@ -10,7 +10,7 @@ So, the question is, how long does it take to run a quantum algorithm that break
 
 The truth is that the resources you need to run a quantum algorithm on a future scaled quantum computer vary for different computational scenarios. Factors that affect resource requirements include the type of qubit, the error correction scheme, and other architecture design choices.
 
-The Azure Quantum Resource Estimator is a tool that helps you estimate the resources you need to run a quantum algorithm for a future scaled quantum computer. For example, the Resource Estimator can estimate the resources needed to break a particular encryption algorithm.
+The Microsoft Quantum resource estimator is a tool that helps you estimate the resources you need to run a quantum algorithm for a future scaled quantum computer. For example, the resource estimator can estimate the resources needed to break a particular encryption algorithm.
 
 The following diagram shows the estimated runtime and number of qubits needed to break different encryption algorithms for different qubit types. Here are the components of the diagram:
 
@@ -21,12 +21,12 @@ The following diagram shows the estimated runtime and number of qubits needed to
 
 :::image type="content" source="../media/resource-estimation-crypto.png" alt-text="Diagram showing the number of qubits and runtime required to break different encryption algorithms for different qubit types.":::
 
-The diagram shows that the number of qubits and runtime needed to break the Advanced Encryption Standard (AES) encryption algorithm is significantly higher than for the Elliptic Curve and RSA algorithms. The diagram also shows that the resources needed to break all three encryption algorithms are higher for superconducting qubits than for topological qubits. If you want to know more about the diagram, see [Analyze cryptographic protocols with the Resource Estimator](/azure/quantum/resource-estimator-quantum-safe-planning).
+The diagram shows that the number of qubits and runtime needed to break the Advanced Encryption Standard (AES) encryption algorithm is significantly higher than for the Elliptic Curve and RSA algorithms. The diagram also shows that the resources needed to break all three encryption algorithms are higher for superconducting qubits than for topological qubits. If you want to know more about the diagram, see [Analyze cryptographic protocols with the resource estimator](/azure/quantum/resource-estimator-quantum-safe-planning).
 
-With this in mind, the Resource Estimator helps you analyze the impact of quantum computing on the security of some classical encryption methods, and prepare for a quantum-safe future.
+With this in mind, the resource estimator helps you analyze the impact of quantum computing on the security of some classical encryption methods, and prepare for a quantum-safe future.
 
 ## Why is resource estimation important in quantum computing?
 
 It's important to understand the impact of hardware architecture design choices and quantum error correction schemes for specific applications. Resource estimation allows you to answer several questions. For example, how large does a quantum computer need to be to achieve practical quantum advantage? How long does the computation take? Are some qubit technologies better suited than others for the problem that you want to solve? What are the best architecture choices in the hardware and software stacks to support scaled quantum computation?
 
-The Resource Estimator helps you understand how many qubits are needed to run an application, how long the application will take to run, and which qubit technologies are better suited to solve a specific problem. When you understand these requirements, you're able to prepare and refine quantum solutions to run on future, scaled quantum machines.
+The resource estimator helps you understand how many qubits are needed to run an application, how long the application will take to run, and which qubit technologies are better suited to solve a specific problem. When you understand these requirements, you're able to prepare and refine quantum solutions to run on future, scaled quantum machines.

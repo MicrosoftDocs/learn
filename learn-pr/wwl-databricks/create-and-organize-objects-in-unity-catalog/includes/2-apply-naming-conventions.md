@@ -2,6 +2,8 @@ Naming conventions are fundamental to effective data governance in Azure Databri
 
 ## Understand Unity Catalog naming requirements
 
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=f26ca1fc-1218-4f52-b998-1e7a9c642af1]
+
 Unity Catalog imposes specific technical constraints on object names that you must follow when designing your naming conventions. These constraints ensure compatibility across the platform while supporting international characters and diverse organizational needs.
 
 All Unity Catalog object names are limited to 255 characters and are stored in lowercase, regardless of how you create them. This means `SalesData`, `salesdata`, and `SALESDATA` all resolve to the same object. When you reference objects in queries, Unity Catalog performs case-insensitive matching, simplifying query syntax while maintaining consistency.
@@ -11,6 +13,8 @@ Certain characters are prohibited in object names. You can't use periods (`.`), 
 Column names follow different rules. Unity Catalog preserves the casing you specify for column names, though queries remain case-insensitive. You can use special characters in column names by enclosing them in backticks, giving you flexibility for descriptive field names while maintaining query simplicity.
 
 ## Apply naming patterns for data organization
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=5beb1979-3ec1-4bf9-9104-e6db204d4391]
 
 Effective naming patterns balance descriptiveness with brevity, helping your team understand data purpose without creating unwieldy identifiers. The three-level namespace structure of Unity Catalog—`catalog.schema.table`—provides natural boundaries for applying meaningful conventions.
 
@@ -80,6 +84,8 @@ For **external sharing scenarios**, choose catalog names that are meaningful to 
 
 ## Apply naming conventions for compute and development resources
 
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=40f8d028-dc75-4ed1-86dd-cc1ab75cf0b7]
+
 Beyond data objects, consistent naming conventions for compute resources, development artifacts, and operational components help you navigate the Azure Databricks workspace efficiently and maintain clear ownership boundaries.
 
 ### Clusters
@@ -90,7 +96,7 @@ Name clusters according to their purpose and environment to make resource alloca
 
 Structure job names using the pattern `job_{layer}_{purpose}` to align with your data transformation pipeline. Examples include `job_bronze_orders_ingestion`, `job_silver_orders_transformation`, and `job_gold_sales_aggregation`. This naming pattern makes dependencies between jobs immediately visible and helps you trace data lineage across the medallion architecture.
 
-For Lakeflow Declarative Pipelines pipelines, use the prefix `pipe_` followed by the data domain or purpose: `pipe_orders_processing`, `pipe_customer_data_cleaning`. 
+For Lakeflow Spark Declarative Pipelines pipelines, use the prefix `pipe_` followed by the data domain or purpose: `pipe_orders_processing`, `pipe_customer_data_cleaning`. 
 
 Name streaming pipelines to include both source and target, following patterns like `stream_{source}_to_{target}`. Examples such as `stream_kafka_to_bronze` and `stream_iot_sensor_data` make data flow explicit without requiring pipeline documentation. This convention is especially valuable when managing multiple concurrent streaming workloads.
 

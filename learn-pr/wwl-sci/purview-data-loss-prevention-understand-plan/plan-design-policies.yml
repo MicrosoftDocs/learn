@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-data-loss-prevention-understand-plan.plan-design-policies
+title: Plan and design DLP policies
+metadata:
+  title: Plan and design DLP policies
+  description: "Plan and design DLP policies"
+  ms.date: 01/13/2026
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/plan-design-policies.md)]

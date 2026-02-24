@@ -35,7 +35,7 @@ There are two common ways to deploy a multi-container group: use a Resource Mana
 
 ## Resource allocation
 
-Azure Container Instances allocates resources such as CPUs, memory, and optionally GPUs (preview) to a container group by adding the resource requests of the instances in the group. If you create a container group with two instances, each requesting one CPU, then the container group is allocated two CPUs.
+Azure Container Instances allocates resources such as CPUs and memory to a container group by adding the resource requests of the instances in the group. If you create a container group with two instances, each requesting one CPU, then the container group is allocated two CPUs.
 
 ## Networking
 

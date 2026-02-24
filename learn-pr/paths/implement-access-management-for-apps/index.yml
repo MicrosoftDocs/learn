@@ -3,7 +3,7 @@ uid: learn.wwl.implement-access-management-for-apps
 metadata:
   title: 'Implement access management for apps'
   description: 'Implement access management for apps'
-  ms.date: 10/03/2023
+  ms.date: 01/23/2026
   author: wwlpublish
   ms.author: roberts
   ms.topic: learning-path
@@ -11,7 +11,7 @@ title: 'Implement access management for apps'
 prerequisites: |
   None
 summary: |
-  Explore how applications can and should be added to your identity and access solution with application registration in Microsoft Entra ID. Aligned to SC-300 Exam.
+  Learn to integrate and manage applications with Microsoft Entra ID. You learn to plan and implement single sign-on (SSO) for enterprise apps, register custom applications, and monitor application access to ensure secure and efficient identity management. Aligned to SC-300 Exam.
 iconUrl: /training/achievements/implement-access-management-for-apps.svg
 levels:
 - intermediate
@@ -20,6 +20,7 @@ roles:
 - security-engineer
 products:
 - azure
+- entra
 - entra-id
 subjects:
 - identity-access

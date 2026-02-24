@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-solutions-align-cloud-adoption-framework-well-architected-framework.design-security-governance-strategy
+title: Design a security and governance strategy
+metadata:
+  title: Design a security and governance strategy
+  description: "Learn how to combine the Cloud Adoption Framework and Well-Architected Framework to design comprehensive security and governance strategies for Azure environments."
+  ms.date: 01/24/2026
+  author: ceperezb
+  ms.author: ceperezb
+  ms.topic: unit
+  ai-usage: ai-generated
+durationInMinutes: 8
+content: |
+  [!include[](includes/8-design-security-governance-strategy.md)]

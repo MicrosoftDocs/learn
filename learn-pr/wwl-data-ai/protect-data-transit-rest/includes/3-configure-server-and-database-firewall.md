@@ -25,7 +25,7 @@ Database-level firewall rules are configured through T-SQL only using the `sp_se
 
 Upon connection, Azure SQL Database first checks for a database-level firewall rule corresponding to the database name specified in the connection string. If no such rule exists, the firewall then checks the server-level IP firewall rules. Server-level IP firewall rules apply to all databases on the server. If a matching rule is found at either level, the connection is established.
 
-If neither exist and the user is connecting through SQL Server Management Studio or Azure Data Studio, they'll be prompted to create a firewall rule.
+If neither exist and the user is connecting through SQL Server Management Studio, they'll be prompted to create a firewall rule.
 
 :::image type="content" source="../media/module-33-security-final-15.png" alt-text="New Firewall Rule Screen from SQL Server Management Studio.":::
 

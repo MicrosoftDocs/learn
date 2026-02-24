@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.design-solutions-align-cloud-adoption-framework-well-architected-framework.well-architected-framework-security-pillar
-title: The Well-Architected Framework security pillar
+title: Understand the Well-Architected Framework security pillar
 metadata:
-  title: The Well-Architected Framework security pillar
-  description: "SC-100 preparatory unit on the topic: The Well-Architected Framework security pillar."
-  ms.date: 3/15/2023
+  title: Understand the Well-Architected Framework security pillar
+  description: "Understand the Well-Architected Framework security pillar."
+  ms.date: 01/24/2026
   author: ceperezb
   ms.author: ceperezb
   ms.topic: unit

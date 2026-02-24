@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-solutions-secure-privileged-access.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: "Introduction to designing solutions for securing privileged access using Zero Trust principles and Microsoft security frameworks."
+  ms.date: 01/28/2026
+  author: ceperezb
+  ms.author: ceperezb
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/0-introduction.md)]

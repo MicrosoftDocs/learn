@@ -1,19 +1,19 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.accelerate-app-development-using-github-copilot
 metadata:
-  title: Accelerate app development by using GitHub Copilot
-  description: Learn how to accelerate app development by using GitHub Copilot and GitHub Copilot Chat in a Visual Studio Code environment.&nbsp;AZ-2007
-  ms.date: 05/26/2025
-  author: wwlpublish
+  title: Get Started with AI-Assisted Development
+  description: Learn how to accelerate app development by using GitHub Copilot Chat in a Visual Studio Code environment. AZ-2007
+  ms.date: 02/12/2026
+  author: chrishowd
   ms.author: cahowd
   ms.topic: learning-path
-title: Accelerate app development by using GitHub Copilot
+title: Get started with AI-assisted development
 prerequisites: |
-  -   An active subscription for GitHub Copilot&nbsp;is required&nbsp;for either a personal GitHub account or a GitHub account managed by an organization or enterprise.
+  -   An active subscription for GitHub Copilot is required for either a personal GitHub account or a GitHub account managed by an organization or enterprise.
   -   One or more years of code development experience is recommended.
   -   Some experience developing C# applications in Visual Studio Code with the C# Dev Kit extension is recommended.
 summary: |
-  Learn how to accelerate app development by using GitHub Copilot and GitHub Copilot Chat in a Visual Studio Code environment.
+  Learn how to accelerate app development by using GitHub Copilot Chat in a Visual Studio Code environment.
 iconUrl: /training/achievements/generic-trophy.svg
 levels:
 - intermediate

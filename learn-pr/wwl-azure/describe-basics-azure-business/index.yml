@@ -9,7 +9,7 @@ metadata:
   ms.topic: module
   ms.custom:
   - N/A
-  ms.service: azure-architecture-center
+  ms.service: azure
   ai-usage: human-only
 title: Describe the basics of Azure for business
 summary: This module describes what the cloud is and what Microsoft Azure is, and how businesses can grow and transform with Azure.
@@ -40,4 +40,4 @@ units:
 - learn.wwl.describe-basics-azure-business.knowledge-check
 - learn.wwl.describe-basics-azure-business.summary
 badge:
-  uid: learn.wwl.describe-basics-azure-business.badge
+  uid: learn.wwl.describe-basics-azure-business.badge

@@ -17,8 +17,17 @@ In this module, you learned how to:
 - [Protect against ransomware](/security/compass/protect-against-ransomware)
 - [Backup cloud and on-premises workloads to cloud](/azure/backup/guidance-best-practices)
 - [Security features to help protect hybrid backups that use Azure Backup](/azure/backup/backup-azure-security-feature)
-- [Update Management overview](/azure/automation/update-management/overview)
+- [Immutability for Azure Backup](/azure/backup/backup-azure-immutable-vault-concept)
+- [Multi-User Authorization for Azure Backup](/azure/backup/multi-user-authorization-concept)
+- [Securing privileged access](/security/privileged-access-workstations/overview)
+- [Azure Update Manager overview](/azure/update-manager/overview)
+- [Azure Arc overview](/azure/azure-arc/overview)
+- [Design for business continuity and disaster recovery](/azure/cloud-adoption-framework/ready/landing-zone/design-area/management-business-continuity-disaster-recovery)
+- [Microsoft Security Copilot](/security-copilot/microsoft-security-copilot)
+- [Microsoft Copilot in Microsoft Defender XDR](/defender-xdr/security-copilot-in-microsoft-365-defender)
+- [Microsoft Sentinel AI capabilities](/azure/sentinel/ai-capabilities)
 
 ## Learn more with reference architectures
 
-- [Azure Automation update management](/azure/architecture/hybrid/azure-update-mgmt)
+- [Backup and disaster recovery for Azure applications](/azure/architecture/framework/resiliency/backup-and-recovery)
+- [Azure enterprise cloud file share](/azure/architecture/hybrid/azure-files-private)

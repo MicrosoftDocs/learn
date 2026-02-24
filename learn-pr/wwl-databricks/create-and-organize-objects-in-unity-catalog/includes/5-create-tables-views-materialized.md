@@ -6,6 +6,8 @@ The following diagram illustrates how tables, views, and materialized views rela
 
 ## Create managed tables
 
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=7e619936-76af-490b-ab68-2cf265352f95]
+
 Managed tables are the default table type in Unity Catalog. When you create a managed table, Azure Databricks manages both the table metadata and the underlying data files. This management includes automatic storage optimization, lifecycle management, and clean up when you drop the table.
 
 To create a managed table, use the `CREATE TABLE` statement with column definitions. Unity Catalog uses a three-level namespace (`catalog.schema.table`), so you can either specify the full path or set your current catalog and schema context using `USE CATALOG` and `USE SCHEMA` statements. The following example creates a managed table for storing sales transactions:
@@ -101,6 +103,8 @@ While these constraints don't enforce referential integrity at write time, they 
 
 ## Create external tables
 
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=6747479b-fb02-4d75-b547-693d8b4bce10]
+
 External tables reference data stored in external storage systems while registering metadata in Unity Catalog. Unlike managed tables, dropping an external table only removes the metadata—the underlying data files remain in their original location. This separation makes external tables useful when you need to access data managed by other systems or when you want to share data across multiple workspaces.
 
 To create an external table, specify a `LOCATION` clause pointing to your data. The location must be protected by an external location configured in Unity Catalog. The following example creates an external table over CSV files:
@@ -118,6 +122,8 @@ OPTIONS (
 External tables work best when you need to query data in its original format without moving it, or when multiple systems need access to the same data. However, you lose some benefits of managed tables, such as automatic cleanup and certain Delta Lake optimizations. For new data pipelines, prefer managed tables unless you have a specific requirement for external storage.
 
 ## Create standard views
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=6d1501bd-1888-4a36-9f19-7e154176c491]
 
 Views provide a virtual layer over your tables, defined by a query that executes each time you access the view. Standard views don't store data—they compute results on demand by running the underlying query. This design makes views ideal for simplifying complex joins, encapsulating business logic, or providing consistent interfaces to frequently accessed data.
 
@@ -180,6 +186,8 @@ WHERE
 Dynamic views require SQL warehouses, standard access mode compute, or dedicated access mode compute on Databricks Runtime 15.4 LTS or above. These security controls ensure sensitive data remains protected while still enabling broad access to analytics. Without dynamic views, you would need to create separate tables or views for each access level, increasing maintenance overhead.
 
 ## Create materialized views
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=e597ca63-e30c-48e2-bc2f-57cd1cd4b899]
 
 Materialized views precompute and cache query results, storing them as a Delta table. Unlike standard views that recalculate results on every query, materialized views return cached data, making them significantly faster for complex aggregations and frequently accessed queries. You refresh materialized views manually or on a schedule to reflect changes in underlying data.
 

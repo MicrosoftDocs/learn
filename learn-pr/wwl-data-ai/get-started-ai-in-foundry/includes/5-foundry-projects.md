@@ -34,7 +34,7 @@ Part of what an API does is to handle authentication. Whenever a request is made
 
 The endpoint describes how to reach the AI service resource instance that you want to use, in a similar way to the way a URL identifies a web site. When you view the endpoint for your resource, it looks something like:
 
-https://cognitiveservices48.cognitiveservices.azure.com/
+`https://cognitiveservices48.cognitiveservices.azure.com/`
 
 The resource key protects the privacy of your resource. To ensure your key is always secure, it can be changed periodically. 
 

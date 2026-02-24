@@ -1,0 +1,1 @@
+This module focused on how Windows 11 security and management features are used in organizational scenarios. It highlighted the capabilities available in Windows 11 and how they can support common operational needs. You should now have a practical understanding of what these features do and where they fit into the IT environment at a high level.

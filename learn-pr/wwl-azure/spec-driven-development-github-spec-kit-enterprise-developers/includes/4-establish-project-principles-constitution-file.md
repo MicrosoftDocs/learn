@@ -1,20 +1,29 @@
-The constitution file is the foundation of spec-driven development with GitHub Spec Kit. It captures non-negotiable principles, constraints, and standards that govern your project. By defining these items upfront, you ensure every specification, plan, and implementation adheres to organizational requirements automatically.
+The constitution is the foundation of spec-driven development with GitHub Spec Kit. This unit explores how to create effective constitutions for enterprise development scenarios.
+
+## Review constitution basics
+
+A constitution file captures non-negotiable principles, constraints, and standards that govern your project. It also serves as a guardrail for AI-assisted development. When the agent generates specs, plans, tasks, or code, it references the constitution to verify proposals comply with your standards.
+
+Key benefits of a well-defined constitution include:
+
+- **Consistency enforcement**: Ensures alignment with architectural decisions across long projects and multiple developers.
+- **Compliance documentation**: Makes regulatory requirements and security policies explicit and auditable.
+- **Institutional knowledge capture**: Preserves hard-won lessons in a form that guides AI code generation.
+- **Reduced cognitive load**: Automates enforcement of organizational policies during development.
 
 ## Purpose of the constitution
 
-In spec-driven development, the constitution (constitution.md) serves as your project's immutable rule set. It documents what must always be true, regardless of which features you build or how requirements evolve.
+The benefits of a well-defined constitution become powerful in practice through automatic enforcement. If the constitution states "All data must be encrypted at rest," the AI agent doesn't suggest storing files in plaintext—it automatically incorporates encryption into designs. When you generate a specification for file uploads, the plan includes Azure Storage encryption configuration. When you generate the code, your implementation uses encrypted storage services.
 
-Think of the constitution as guardrails for AI-assisted development. When GitHub Copilot generates a technical plan or code, it references the constitution to verify proposals comply with your standards. If the constitution states "All data must be encrypted at rest," GitHub Copilot doesn't suggest storing files in plaintext—it automatically incorporates encryption into designs.
+Consider how each benefit manifests in real development scenarios:
 
-The constitution addresses several critical needs:
+- **Consistency enforcement**: Projects spanning months or involving multiple developers can drift from architectural decisions. Without a constitution, one developer might use local file storage while another uses Azure Blob Storage for similar features. The constitution prevents this drift by encoding standards that AI assistants always reference, ensuring uniform technology choices across all features.
 
-- **Consistency enforcement**: Projects spanning months or involving multiple developers can drift from architectural decisions. The constitution ensures alignment by encoding standards that AI assistants always reference.
+- **Compliance documentation**: Regulatory requirements, security policies, and internal governance rules must be followed. The constitution makes requirements explicit, creating an auditable record of how you enforce compliance. When an auditor asks "How do you ensure personal data isn't logged?", you point to the constitution requirement and show that all generated code respects this constraint.
 
-- **Compliance documentation**: Regulatory requirements, security policies, and internal governance rules must be followed. The constitution makes requirements explicit, creating an auditable record of how you enforce compliance.
+- **Institutional knowledge capture**: Experienced architects and security teams make decisions based on hard-won lessons—like discovering that certain API patterns cause performance issues or that specific authentication flows create security vulnerabilities. The constitution preserves this wisdom in a form that guides AI code generation, preventing new team members from repeatedly rediscovering the same constraints.
 
-- **Institutional knowledge capture**: Experienced architects and security teams make decisions based on hard-won lessons. The constitution preserves this wisdom in a form that guides AI code generation, preventing repeatedly rediscovering the same constraints.
-
-- **Reduced cognitive load**: Developers don't need to remember every organizational standard while prompting AI. The constitution automates enforcement of policies like "use Azure Key Vault for secrets" or "authenticate via Microsoft Entra ID."
+- **Reduced cognitive load**: Developers don't need to remember every organizational standard while prompting AI. The constitution automates enforcement of policies like "use Azure Key Vault for secrets" or "authenticate via Microsoft Entra ID." Instead of manually checking each generated plan against a checklist of requirements, the AI incorporates them automatically.
 
 In enterprise development environments, constitutions often encode:
 

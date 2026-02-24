@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.github.github-enterprise-server-repository-workflows.summary
+title: Summary
+metadata:
+  unitType: summary
+  title: Summary
+  description: This content is a part of the Repositories, Branching & Collaboration on GitHub Enterprise Server module.
+  ms.date: 02/16/2026
+  author: camihmerhar
+  ms.author: camhernandez
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/7-summary.md)]

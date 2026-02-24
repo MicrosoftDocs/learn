@@ -1,0 +1,84 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.security-management.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge Check
+  description: This content is part of the "Security and management for Windows 11 Pro" module.
+  ms.date: 01/13/2026
+  author: Stephanie-Rosenzweig
+  ms.author: v-stephanier
+  ms.topic: unit
+durationInMinutes: 5
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Which feature applies updates without reboot?"
+    choices:
+        - content: "Cloud Rebuild"
+          isCorrect: false
+          explanation: "Incorrect. Cloud Rebuild is used to rebuild a device using installation files from the cloud."
+        - content: "Hotpatch"
+          isCorrect: true
+          explanation: "Correct. Hotpatch applies updates without requiring a reboot."
+        - content: "Autopatch"
+          isCorrect: false
+          explanation: "Incorrect. Autopatch is used to manage updates but doesn't apply them without reboot."
+        - content: "Intune Recovery"
+          isCorrect: false
+          explanation: "Incorrect. Intune Recovery isn't described as applying updates without reboot."
+  - content: "What does post-quantum cryptography protect against?"
+    choices:
+        - content: "Malware infections"
+          isCorrect: false
+          explanation: "Incorrect. Post-quantum cryptography isn't related to malware protection."
+        - content: "Future quantum attacks on encryption"
+          isCorrect: true
+          explanation: "Correct. It protects against future quantum attacks on encryption."
+        - content: "Credential theft"
+          isCorrect: false
+          explanation: "Incorrect. Credential theft isn't addressed by post-quantum cryptography."
+        - content: "Phishing attempts"
+          isCorrect: false
+          explanation: "Incorrect. Phishing protection isn't the purpose of post-quantum cryptography."
+  - content: "Which Intune feature allows rolling back a PC to a previous state?"
+    choices:
+        - content: "Cloud Rebuild"
+          isCorrect: false
+          explanation: "Incorrect. Cloud Rebuild reinstalls Windows using cloud-based installation files."
+        - content: "Autopatch"
+          isCorrect: false
+          explanation: "Incorrect. Autopatch manages updates, not rollbacks."
+        - content: "Point-in-Time Restore"
+          isCorrect: true
+          explanation: "Correct. Point-in-Time Restore allows rolling back a PC to a previous state."
+        - content: "Quick Machine Recovery"
+          isCorrect: false
+          explanation: "Incorrect. Quick Machine Recovery isn't described as a rollback feature."
+  - content: "Which Windows 11 Pro feature allows IT administrators to remotely rebuild a device by downloading installation files from the cloud, even if the device can't boot?"
+    choices:
+        - content: "Point-in-Time Restore"
+          isCorrect: false
+          explanation: "Incorrect. This feature restores a device to a previous state, not a full rebuild."
+        - content: "Quick Machine Recovery"
+          isCorrect: false
+          explanation: "Incorrect. This isn't described as rebuilding a device using cloud installation files."
+        - content: "Windows Autopatch"
+          isCorrect: false
+          explanation: "Incorrect. Autopatch manages updates but doesn't rebuild devices."
+        - content: "Cloud Rebuild"
+          isCorrect: true
+          explanation: "Correct. Cloud Rebuild allows remote rebuilding of a device using cloud-based installation files."
+  - content: "Which feature replaces passwords with biometrics and passkeys?"
+    choices:
+        - content: "Microsoft Pluton"
+          isCorrect: false
+          explanation: "Incorrect. Pluton is a security processor, not a password replacement feature."
+        - content: "BitLocker"
+          isCorrect: false
+          explanation: "Incorrect. BitLocker encrypts data but doesn't replace passwords."
+        - content: "Autopatch"
+          isCorrect: false
+          explanation: "Incorrect. Autopatch manages updates, not authentication."
+        - content: "Windows Hello for Business"
+          isCorrect: true
+          explanation: "Correct. Windows Hello for Business replaces passwords with biometrics and passkeys."

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.protect-govern-ai-ready-infrastructure-azure.configure-policies-access-controls
+title: "Configure policies and access controls for AI workloads"
+metadata:
+  title: "Configure policies and access controls for AI workloads"
+  description: "Configure policies and access controls for AI workloads."
+  ms.date: 02/03/2026
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: unit
+durationInMinutes: 12
+content: |
+  [!include[](includes/3-configure-policies-access-controls.md)]

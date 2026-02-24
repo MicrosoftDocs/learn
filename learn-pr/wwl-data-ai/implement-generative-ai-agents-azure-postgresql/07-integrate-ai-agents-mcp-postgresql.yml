@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-generative-ai-agents-azure-postgresql.integrate-ai-agents-mcp-postgresql
+title: Integrate AI agents with MCP and PostgreSQL
+metadata:
+  title: Integrate AI agents with MCP and PostgreSQL
+  description: "Learn how to connect AI agents to tools and data using MCP and Azure Database for PostgreSQL."
+  ms.date: 10/09/2025
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/07-integrate-ai-agents-mcp-postgresql.md)]

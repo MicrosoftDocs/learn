@@ -2,6 +2,8 @@ Compute features determine the functional capabilities available to your workloa
 
 ## Enable Photon acceleration
 
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=b0d7b320-44d9-43cd-b7fd-f56b2bdf17fd]
+
 **Photon** is a query execution engine that replaces traditional Spark components with optimized native code. When you enable Photon, your compute resource uses this accelerated engine for SQL queries and DataFrame operations.
 
 ![Diagram showing a decision tree when to use Photon acceleration.](../media/spark-photon-decision.png)

@@ -1,0 +1,48 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-secure-ai-ready-infrastructure-azure-services.knowledge-check
+title: "Module assessment"
+metadata:
+  title: "Knowledge check"
+  description: "Knowledge check"
+  ms.date: 02/03/2026
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: unit
+  module_assessment: false
+durationInMinutes: 5
+content: "Choose the best response for each of the following questions."
+quiz:
+  questions:
+  - content: "Your fraud detection team reports that their Azure OpenAI Service calls are failing with authentication errors after you configured managed identity. The team's application runs in an Azure Kubernetes Service pod and previously used API keys stored in Kubernetes secrets. What is the most likely cause of the authentication failure?"
+    choices:
+    - content: "The AKS pod identity needs the Cognitive Services OpenAI User role assigned at the Azure OpenAI Service scope through Azure RBAC"
+      isCorrect: true
+      explanation: "Managed identities require explicit RBAC role assignments to access Azure services. The pod identity must have the Cognitive Services OpenAI User role assigned on the target OpenAI Service instance. The second option is incorrect because managed identities fully support authentication from AKS pods through Azure AD Pod Identity or workload identity. The third option is incorrect because private endpoints don't interfere with managed identity authentication—tokens are validated through Azure Active Directory, not through network connectivity to the service."
+    - content: "Managed identities can't authenticate to Azure OpenAI Service from AKS pods and require API keys stored in Azure Key Vault instead"
+      isCorrect: false
+      explanation: "Incorrect. Managed identities fully support authentication from AKS pods through Azure AD Pod Identity or workload identity."
+    - content: "The private endpoint configuration is blocking managed identity token validation and needs a service endpoint exception rule"
+      isCorrect: false
+      explanation: "Incorrect. Private endpoints don't interfere with managed identity authentication—tokens are validated through Azure Active Directory, not through network connectivity to the service."
+  - content: "Your compliance team requires that all AI service requests and responses remain within European Azure regions to satisfy regulatory data residency requirements. You've deployed Azure OpenAI Service in West Europe with a private endpoint. Which more configuration ensures complete data residency compliance?"
+    choices:
+    - content: "Configure diagnostic settings to send logs to a Log Analytics workspace located in the same West Europe region where the OpenAI service is deployed"
+      isCorrect: true
+      explanation: "Diagnostic logs contain request metadata and potentially sensitive information that must stay within the same region to maintain complete data residency. Storing logs in a West Europe Log Analytics workspace ensures all data processing and storage occurs within the compliant region."
+    - content: "Enable content filtering with geo-fencing rules that block requests originating from IP addresses outside the European Economic Area"
+      isCorrect: false
+      explanation: "Incorrect. Content filtering doesn't control request geography—private endpoints and virtual network routing control network paths, not IP-based geo-fencing."
+    - content: "Deploy geo-replication for the OpenAI service to North Europe region to provide automatic failover while maintaining European data residency"
+      isCorrect: false
+      explanation: "Incorrect. Azure OpenAI Service doesn't support geo-replication; you would deploy separate OpenAI instances per region rather than replicating a single instance."
+  - content: "Your security team discovered a critical CVE in the TensorFlow library used by your fraud detection model container. Microsoft Defender for Containers identified the vulnerability, but your deployment pipeline still allows the vulnerable image to deploy to production. What configuration change prevents deployment of containers with critical vulnerabilities?"
+    choices:
+    - content: "Implement Azure Policy with a custom policy definition that denies AKS pod deployments when the source container image has unresolved critical or high severity CVEs"
+      isCorrect: true
+      explanation: "Azure Policy provides enforcement at deployment time by evaluating container image security scan results and denying deployments that violate policy rules. Custom policy definitions can query Defender's vulnerability assessments and block AKS deployments when critical CVEs exist."
+    - content: "Enable content trust on Azure Container Registry to require digital signatures, which automatically block images with security vulnerabilities from being pulled"
+      isCorrect: false
+      explanation: "Incorrect. Content trust verifies publisher identity and image integrity, not vulnerability status—a signed image can still contain vulnerable libraries."
+    - content: "Configure Microsoft Defender to automatically quarantine vulnerable images by moving them to a separate repository with restricted pull permissions"
+      isCorrect: false
+      explanation: "Incorrect. Defender identifies vulnerabilities but doesn't automatically quarantine images; you must implement separate processes or policies to enforce deployment restrictions based on scan results."

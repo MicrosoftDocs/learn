@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-data-security-investigations-understand.deeper-investigation-value
+title: When deeper investigation adds value
+metadata:
+  title: When deeper investigation adds value
+  description: "When deeper investigation adds value"
+  ms.date: 01/15/2026
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/deeper-investigation-value.md)]

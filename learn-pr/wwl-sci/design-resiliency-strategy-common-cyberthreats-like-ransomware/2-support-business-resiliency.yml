@@ -4,10 +4,10 @@ title: Support business resiliency
 metadata:
   title: Support business resiliency
   description: "Learn how to support business resiliency."
-  ms.date: 09/26/2024
+  ms.date: 01/21/2026
   author: ceperezb
   ms.author: ceperezb
   ms.topic: unit
-durationInMinutes: 10
+durationInMinutes: 7
 content: |
   [!include[](includes/2-support-business-resiliency.md)]

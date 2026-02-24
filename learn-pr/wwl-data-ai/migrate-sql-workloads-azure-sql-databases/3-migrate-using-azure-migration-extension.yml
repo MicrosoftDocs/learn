@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
 uid: learn-wwl.migrate-sql-workloads-azure-sql-databases.migrate-using-azure-migration-extension
-title: Use Azure SQL migration extension to migrate to Azure SQL Database
+title: Use Azure Database Migration Service to migrate to Azure SQL Database
 metadata:
   adobe-target: true
   prefetch-feature-rollout: true
-  title: Use Azure SQL migration extension to migrate to Azure SQL Database
-  description: "Learn how to use Azure SQL migration extension for Azure Data Studio to migrate to Azure SQL Database."
-  ms.date: 08/26/2025
+  title: Use Azure Database Migration Service to migrate to Azure SQL Database
+  description: "Learn how to use Azure Database Migration Service to migrate to Azure SQL Database."
+  ms.date: 01/19/2026
   author: JulianePadrao
   ms.author: jupadrao
   ms.topic: unit

@@ -19,3 +19,7 @@ Review the following links for more details about the information covered in thi
 - [GitHub API documentation on System for Cross-domain Identity Management (SCIM)](https://docs.github.com/en/rest/reference/scim)
 - [About SCIM](https://docs.github.com/en/enterprise-cloud@latest/organizations/managing-saml-single-sign-on-for-your-organization/about-scim-for-organizations)
 - [AuditEntry interface](https://docs.github.com/en/enterprise-server@3.1/graphql/reference/interfaces#auditentry)
+
+## Provide feedback
+
+Use this [issue form](https://github.com/githubpartners/microsoft-learn/issues/new/choose) to provide content feedback or suggested changes for this Microsoft Learn module. GitHub maintains this content and a team member will triage the request. Thank you for taking the time to improve our content!

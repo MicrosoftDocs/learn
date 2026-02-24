@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-solutions-regulatory-compliance.ai-compliance-considerations
+title: AI compliance considerations
+metadata:
+  title: AI compliance considerations
+  description: "SC-100 preparatory unit on the topic: compliance considerations for AI technologies including EU AI Act, ISO 42001, and NIST AI RMF."
+  ms.date: 01/29/2026
+  author: ceperezb
+  ms.author: ceperezb
+  ms.topic: unit
+  ai-usage: ai-assisted
+durationInMinutes: 7
+content: |
+  [!include[](includes/2a-ai-compliance-considerations.md)]

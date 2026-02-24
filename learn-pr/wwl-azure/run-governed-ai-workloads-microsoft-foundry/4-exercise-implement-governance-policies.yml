@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.run-governed-ai-workloads-microsoft-foundry.exercise-implement-governance-policies
+title: "Exercise: Configure quotas and rate limits for Microsoft Foundry model deployments"
+metadata:
+  title: "Exercise: Configure Quotas and Rate Limits for Microsoft Foundry Model Deployments"
+  description: "Learn how to configure Quotas and Rate Limits for Microsoft Foundry Model Deployments."
+  ms.date: 02/02/2026
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: unit
+durationInMinutes: 13
+content: |
+  [!include[](includes/4-exercise-implement-governance-policies.md)]

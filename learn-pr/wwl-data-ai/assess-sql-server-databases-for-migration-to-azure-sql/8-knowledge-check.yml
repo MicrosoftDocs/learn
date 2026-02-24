@@ -4,7 +4,7 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: "Knowledge check"
-  ms.date: 9/12/2025
+  ms.date: 1/19/2026
   author: JulianePadrao
   ms.author: jupadrao
   ms.topic: unit
@@ -24,17 +24,17 @@ quiz:
     - content: "Estimating the time required for migration."
       isCorrect: false
       explanation: "Incorrect. The main focus of the assessment is on identifying compatibility issues, deprecated features, and behavior changes that may affect the migration process. While estimating the time required for migration is important, it isn't the primary focus of assessing databases."
-  - content: "What are the options for running the assessment and Azure recommendation steps at scale?"
+  - content: "What are the options for running SQL Server migration assessments at scale?"
     choices:
     - content: "PowerShell and Azure CLI."
       isCorrect: true
-      explanation: "Correct. The assessment and Azure recommendation steps can be run at scale using PowerShell or Azure CLI. These command-line interfaces allow for automation and performing these tasks on multiple databases or instances."
-    - content: "Azure Data Studio."
+      explanation: "Correct. Migration assessments can be run at scale using PowerShell or Azure CLI. These command-line interfaces allow for automation and performing these tasks on multiple databases or instances."
+    - content: "SQL Server Management Studio (SSMS) only."
       isCorrect: false
-      explanation: "Incorrect. Azure Data Studio isn't relevant tool for this specific task."
+      explanation: "Incorrect. While SSMS is a valuable tool for database management, it doesn't provide the automation capabilities needed for at-scale migration assessments across multiple instances."
     - content: "Azure portal and Azure Storage Explorer."
       isCorrect: false
-      explanation: "Incorrect. Azure portal and Azure Storage Explorer aren't relevant tools for this specific task."
+      explanation: "Incorrect. While Azure portal can be used for assessments through Azure Migrate and Azure Database Migration Service, Azure Storage Explorer isn't a relevant tool for migration assessments."
   - content: "What factors are considered when calculating the estimated monthly cost for Azure SQL Database using the Azure SQL Assessment tool?"
     choices:
     - content: "Database size, compute size, and storage size."

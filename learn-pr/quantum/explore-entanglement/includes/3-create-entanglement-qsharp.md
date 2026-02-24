@@ -1,6 +1,6 @@
 In the previous unit, you learned about the concept of quantum entanglement and Bell states.
 
-In this unit, you use the Azure Quantum Development Kit (QDK) to write Q# code that creates entangled Bell states between two qubits. To create your first Bell state, you apply two quantum operations: the Hadamard operation and the Controlled-NOT (CNOT) operation.
+In this unit, you use the Microsoft Quantum Development Kit (QDK) to write Q# code that creates entangled Bell states between two qubits. To create your first Bell state, you apply two quantum operations: the Hadamard operation and the Controlled-NOT (CNOT) operation.
 
 First, let's understand how these operations work and why they create entangled states.
 

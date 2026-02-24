@@ -3,7 +3,7 @@ uid: learn.wwl.design-solutions-network-security
 metadata:
   title: Design Solutions for Network Security
   description: "You learn how to design secure network solutions using techniques like network segmentation, traffic filtering, network monitoring, and posture management."
-  ms.date: 07/30/2025
+  ms.date: 02/07/2026
   author: ceperezb
   ms.author: ceperezb
   ms.topic: module
@@ -14,10 +14,13 @@ summary: |
   You learn how to design secure network solutions using techniques like network segmentation, traffic filtering, network monitoring, and posture management.
 abstract: |
   By the end of this module, you're able to:
+  - Evaluate network designs to align with security requirements and best practices
   - Design solutions for network segmentation
   - Design solutions for filtering traffic with network security groups
-  - Design solutions for network posture measurement
+  - Design solutions for network posture management
   - Design solutions for network monitoring
+  - Evaluate solutions that use Microsoft Entra Internet Access
+  - Evaluate solutions that use Microsoft Entra Private Access
 prerequisites: |
   -   Advanced experience and knowledge in identity and access, platform protection, security operations, securing data, and securing applications.
   -  Experience with hybrid and cloud implementations.
@@ -38,6 +41,7 @@ subjects:
   - cloud-security
 units:
 - learn.wwl.design-solutions-network-security.introduction
+- learn.wwl.design-solutions-network-security.evaluate-network-designs-best-practices
 - learn.wwl.design-solutions-network-security.design-solutions-network-segmentation
 - learn.wwl.design-solutions-network-security.design-solutions-traffic-filtering-network-security-groups
 - learn.wwl.design-solutions-network-security.design-solutions-network-posture-management

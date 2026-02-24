@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.store-manage-containers-azure-container-registry.exercise-build-manage-acr-tasks
+title: Exercise - Build and manage a container image with ACR Tasks
+metadata:
+  title: Exercise - Build and Manage a Container Image with ACR Tasks
+  description: Exercise - Build and manage a container image with ACR Tasks
+  ms.date: 01/05/2026
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: unit
+durationInMinutes: 30
+content: |
+  [!include[](includes/5-exercise-build-manage-acr-tasks.md)]

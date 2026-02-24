@@ -1,23 +1,24 @@
-You've learned:
+In this module, you learned how to design security solutions that address regulatory compliance requirements across multicloud environments.
 
-- How to interpret and translate regulatory requirements into technical solutions.
-- How to use capabilities found in Microsoft Purview, Microsoft Priva, and Defender for Cloud for compliance.
+You learned how to:
 
-## Learn more with security documentation
+- Translate compliance requirements into security solutions using Zero Trust principles and the Cloud Adoption Framework Govern methodology
+- Identify compliance considerations for AI deployments, including emerging regulations like the EU AI Act and ISO 42001
+- Design solutions using Microsoft Purview to address data protection, audit, and compliance requirements
+- Design privacy solutions using Microsoft Priva for risk management and subject rights requests
+- Design Azure Policy solutions that enforce compliance through preventive, detective, and corrective controls
+- Evaluate compliance posture across Azure, AWS, and GCP using Microsoft Defender for Cloud
+
+As Contoso's security architect, you now have the knowledge to design a comprehensive compliance strategy that addresses financial services regulations, healthcare requirements, AI governance, and privacy obligations across your multicloud environment.
+
+## Learn more
 
 - [Introduction to regulatory compliance - Cloud Adoption Framework](/azure/cloud-adoption-framework/govern/policy-compliance/regulatory-compliance)
-- [Security Baseline discipline overview - Cloud Adoption Framework](/azure/cloud-adoption-framework/govern/security-baseline/)
-- [Microsoft Purview Compliance Manager - Microsoft Purview (compliance)](/microsoft-365/compliance/compliance-manager?view=o365-worldwide)
-- [Learn about Microsoft Priva - Microsoft Priva](/privacy/priva/priva-overview)
-- [Overview of Azure Policy - Azure Policy](/azure/governance/policy/overview)
-- [Remediate non-compliant resources - Azure Policy](/azure/governance/policy/how-to/remediate-resources?tabs=azure-portal)
-- [Tutorial: Regulatory compliance checks - Microsoft Defender for Cloud](/azure/defender-for-cloud/regulatory-compliance-dashboard)
-- [Defender for Cloud Planning and Operations Guide](/azure/defender-for-cloud/defender-for-cloud-planning-and-operations-guide)
-
-
-## Learn more with reference architectures
-
-- [Data management across Azure Data Lake with Microsoft Purview - Azure Architecture Center](/azure/architecture/solution-ideas/articles/azure-purview-data-lake-estate-architecture)
-
-> [!Note]
-> This module contains AI-generated content.
+- [Cloud Adoption Framework Govern methodology](/azure/cloud-adoption-framework/govern/)
+- [Microsoft Purview Compliance Manager](/purview/compliance-manager)
+- [Multicloud support in Compliance Manager](/purview/compliance-manager-multicloud)
+- [Learn about Microsoft Priva](/privacy/priva/priva-overview)
+- [Overview of Azure Policy](/azure/governance/policy/overview)
+- [Regulatory compliance in Microsoft Defender for Cloud](/azure/defender-for-cloud/regulatory-compliance-dashboard)
+- [Microsoft cloud security benchmark introduction](/security/benchmark/azure/introduction)
+- [Meet regulatory and compliance requirements - Zero Trust](/security/zero-trust/adopt/meet-regulatory-compliance-requirements)

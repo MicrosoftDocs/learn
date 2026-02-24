@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.build-query-azure-database-postgresql.create-manage-schemas
+title: Create and manage schemas
+metadata:
+  title: Create and Manage Schemas
+  description: Create and manage schemas
+  ms.date: 01/29/2026
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-create-manage-schemas.md)]

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.streamline-administrative-tasks-ai.draft-refine-individualized-documentation-copilot
+title: "Draft and refine individualized documentation with Copilot"
+metadata:
+  title: "Draft and refine individualized documentation with Copilot"
+  description: "Learn how to use Copilot to draft and refine individualized special education documentation, improving clarity and organization efficiently."
+  ms.date: 01/05/2026
+  author: Randall-Knapp
+  ms.author: rknapp
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-draft-refine-individualized-documentation-copilot.md)]

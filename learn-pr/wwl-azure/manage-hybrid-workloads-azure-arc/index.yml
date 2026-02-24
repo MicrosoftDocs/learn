@@ -3,9 +3,9 @@ uid: learn.wwl.manage-hybrid-workloads-with-azure-arc
 metadata:
   title: Manage hybrid workloads with Azure Arc
   description: "Manage hybrid workloads with Azure Arc"
-  ms.date: 01/15/2025
+  ms.date: 01/23/2026
   author: wwlpublish
-  ms.author: tonyj
+  ms.author: robbarefoot
   ms.topic: module
   ms.service: azure-arc
 title: Manage hybrid workloads with Azure Arc
@@ -53,4 +53,4 @@ units:
 - learn.wwl.manage-hybrid-workloads-with-azure-arc.summary
 badge:
   uid: learn.wwl.manage-hybrid-workloads-with-azure-arc.badge
-
+

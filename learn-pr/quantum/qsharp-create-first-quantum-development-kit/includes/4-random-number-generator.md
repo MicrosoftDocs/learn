@@ -44,7 +44,7 @@ Here, you expand on the `Main.qs` file from the previous lesson to build your ra
 
 ### Import the required libraries
 
-First, import the namespaces from the Q# standard library that contain the functions and operations that you need to write your program. The Q# compiler loads many common functions and operations automatically. But for the quantum random number generator, you need some additional functions and operations from two Q# namespaces: `Microsoft.Quantum.Math` and `Microsoft.Quantum.Convert`.
+First, import the namespaces from the Q# standard library that contain the functions and operations that you need to write your program. The Q# compiler loads many common functions and operations automatically. But for the quantum random number generator, you need some additional functions and operations from two Q# namespaces: `Std.Math` and `Std.Convert`.
 
 Copy and paste the following `import` directives at the beginning of your `Main.qs` file:
 
@@ -52,9 +52,6 @@ Copy and paste the following `import` directives at the beginning of your `Main.
 import Std.Convert.*;
 import Std.Math.*;
 ```
-
-> [!NOTE]
-> You can use `Std` instead of `Microsoft.Quantum` to import functions and operations from the standard library.
 
 ### Rename the `Main` operation to `GenerateRandomBit`
 

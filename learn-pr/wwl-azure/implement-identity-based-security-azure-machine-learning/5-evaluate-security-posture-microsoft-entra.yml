@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-identity-based-security-azure-machine-learning.evaluate-security-posture-microsoft-entra
+title: "Evaluate security posture using Microsoft Entra audit logs"
+metadata:
+  title: "Evaluate Security Posture Using Microsoft Entra Audit Logs"
+  description: "Learn how to evaluate security posture using Microsoft Entra audit logs to validate controls, detect anomalies, and ensure compliance."
+  ms.date: 02/05/2026
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-evaluate-security-posture-microsoft-entra.md)]

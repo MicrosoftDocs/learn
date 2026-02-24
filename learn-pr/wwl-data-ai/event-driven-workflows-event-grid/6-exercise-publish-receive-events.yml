@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.event-driven-workflows-event-grid.exercise-publish-receive-events
+title: Exercise - Publish and receive events with Azure Event Grid
+metadata:
+  title: Exercise - Publish and Receive Events with Azure Event Grid
+  description: Hands-on exercise to create an Event Grid custom topic, publish custom events, configure filtered subscriptions, and verify event delivery.
+  ms.date: 02/13/2026
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: unit
+durationInMinutes: 30
+content: |
+  [!include[](includes/6-exercise-publish-receive-events.md)]

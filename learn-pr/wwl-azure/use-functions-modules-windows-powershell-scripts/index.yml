@@ -3,9 +3,9 @@ uid: learn.wwl.use-functions-modules-windows-powershell-scripts
 metadata:
   title: Use functions and modules in Windows PowerShell scripts
   description: This module covers how to create modules and functions in Windows PowerShell scripts.
-  ms.date: 07/03/2023
+  ms.date: 01/23/2026
   author: wwlpublish
-  ms.author: tonyj
+  ms.author: robbarefoot
   ms.topic: module
   ms.service: azure
 title: Use functions and modules in Windows PowerShell scripts
@@ -52,4 +52,4 @@ units:
 - learn.wwl.use-functions-modules-windows-powershell-scripts.summary
 badge:
   uid: learn.wwl.use-functions-modules-windows-powershell-scripts.badge
-
+

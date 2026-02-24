@@ -4,12 +4,12 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: "Knowledge check for module on the topic: design solutions for securing server and client endpoints."
-  ms.date: 09/26/2024
+  ms.date: 02/07/2026
   author: ceperezb
   ms.author: ceperezb
   ms.topic: unit
   module_assessment: true
-durationInMinutes: 10
+durationInMinutes: 5
 ###########################################################################
 ###
 ### General guidance (https://review.learn.microsoft.com/learn-docs/docs/id-guidance-knowledge-check)
@@ -45,30 +45,30 @@ quiz:
       choices:
         - content: "Firewall management"
           isCorrect: false
-          explanation: "Defender for IoT provides threat protection, vulnerability management, and configuration management for IoT devices, but does not include firewall management."
+          explanation: "Defender for IoT provides threat protection, vulnerability management, and configuration management for IoT devices, but doesn't include firewall management."
         - content: "Anti-malware protection"
           isCorrect: true
           explanation: "Defender for IoT provides threat protection, vulnerability management, and configuration management for IoT devices, including anti-malware protection."
         - content: "Web filtering"
           isCorrect: false
-          explanation: "Defender for IoT provides threat protection, vulnerability management, and configuration management for IoT devices, but does not include web filtering."
+          explanation: "Defender for IoT provides threat protection, vulnerability management, and configuration management for IoT devices, but doesn't include web filtering."
         - content: "Email filtering"
           isCorrect: false
-          explanation: "Defender for IoT provides threat protection, vulnerability management, and configuration management for IoT devices, but does not include email filtering."
+          explanation: "Defender for IoT provides threat protection, vulnerability management, and configuration management for IoT devices, but doesn't include email filtering."
     - content: "What are Windows security baselines in Intune?"
       choices:
         - content: "Templates that define a set of security configurations that can be applied to devices."
           isCorrect: true
           explanation: "Windows security baselines in Intune are templates that define a set of security configurations that can be applied to devices, helping to ensure that they meet organizational security requirements."
-        - content: "Windows operating system images that have been pre-configured for security."
+        - content: "Windows operating system images that have been preconfigured for security."
           isCorrect: false
           explanation: "Windows security baselines in Intune are templates that define a set of security configurations that can be applied to devices, helping to ensure that they meet organizational security requirements."
         - content: "A set of default security configurations that are applied to all Windows devices in an organization."
           isCorrect: false
-          explanation: "Windows security baselines in Intune are templates that define a set of security configurations that can be applied to devices, but they are not applied by default to all Windows devices in an organization."
+          explanation: "Windows security baselines in Intune are templates that define a set of security configurations that can be applied to devices, but they aren't applied by default to all Windows devices in an organization."
         - content: "A set of security configurations that are only applicable to Windows servers."
           isCorrect: false
-          explanation: "Windows security baselines in Intune are templates that define a set of security configurations that can be applied to devices, but they are not applied by default to all Windows devices in an organization."
+          explanation: "Windows security baselines in Intune are templates that define a set of security configurations that can be applied to devices, but they aren't applied by default to all Windows devices in an organization."
     - content: "What is Microsoft Defender for IoT?"
       choices:
         - content: "An endpoint security solution for Windows devices."
@@ -76,7 +76,7 @@ quiz:
           explanation: "Microsoft Defender for IoT is a cloud-based security solution for Internet of Things (IoT) devices that helps protect against cyber threats."
         - content: "An endpoint security solution for Mac devices."
           isCorrect: false
-          explanation: "Microsoft Defender for IoT is not an endpoint security solution for Mac devices, but rather a cloud-based security solution for Internet of Things (IoT) devices that helps protect against cyber threats."
+          explanation: "Microsoft Defender for IoT isn't an endpoint security solution for Mac devices, but rather a cloud-based security solution for Internet of Things (IoT) devices that helps protect against cyber threats."
         - content: "A cloud-based security solution for Internet of Things (IoT) devices."
           isCorrect: true
           explanation: "Microsoft Defender for IoT is a cloud-based security solution for Internet of Things (IoT) devices that helps protect against cyber threats."

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.deploy-containers-azure-app-service.configure-runtime
+title: Configure container runtime behavior
+metadata:
+  title: Configure Container Runtime Behavior
+  description: Configure container runtime behavior
+  ms.date: 01/12/2026
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/3-configure-runtime.md)]

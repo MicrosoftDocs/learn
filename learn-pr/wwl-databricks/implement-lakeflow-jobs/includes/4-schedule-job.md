@@ -85,6 +85,45 @@ Consider these factors when choosing a time zone:
 > [!TIP]
 > For jobs that must run at exact intervals regardless of local time changes, always use UTC.
 
+## Control concurrent job runs
+
+When scheduled jobs take longer than expected, a new run might start before the previous one finishes. This overlap can cause data corruption, duplicate processing, or resource contention. Azure Databricks provides concurrency settings to control this behavior.
+
+### Configure maximum concurrent runs
+
+The **Maximum concurrent runs** setting limits how many instances of the same job can execute simultaneously. By default, jobs allow multiple concurrent runs. For jobs that must not overlap—such as those writing to the same tables—set this value to **1**.
+
+To configure maximum concurrent runs:
+
+1. Open your job in the **Jobs & Pipelines** workspace UI.
+2. In the **Job details** panel, locate the **Maximum concurrent runs** setting.
+3. Set the value to control how many runs can execute at once.
+
+When a new run is triggered but the maximum concurrent runs limit is reached, Azure Databricks must decide what to do with the incoming run.
+
+### Configure queue behavior for overlapping runs
+
+When concurrent runs exceed your configured limit, you choose how the scheduler handles the new run:
+
+| Behavior | Description | Use case |
+|----------|-------------|----------|
+| **Queue the run** | The new run waits until a slot becomes available, then executes | Jobs that must eventually run—no triggers should be missed |
+| **Cancel the run** | The new run is immediately canceled | Jobs where stale triggers are not valuable |
+| **Skip the run** | Similar to cancel—the run doesn't execute | Jobs where missing occasional runs is acceptable |
+
+For most data pipelines, **queue the run** ensures that all scheduled executions eventually complete. This approach prevents data gaps when a job occasionally runs longer than its schedule interval.
+
+Consider a job scheduled to run every hour. If a run takes 75 minutes to complete, the next scheduled trigger arrives while the job is still running. With concurrency set to 1 and queue enabled:
+
+1. The first run continues processing.
+2. The second run enters the queue.
+3. When the first run completes, the queued run starts immediately.
+
+This pattern ensures sequential, non-overlapping execution while preserving all scheduled runs.
+
+> [!NOTE]
+> Queued runs consume no compute resources while waiting. They only start when a concurrent slot becomes available.
+
 ## Scheduling considerations for production workloads
 
 The Azure Databricks job scheduler handles most scenarios reliably, but it's not designed for low-latency requirements. Network conditions or cloud service issues can occasionally delay job starts by several minutes. When service recovers, scheduled jobs run immediately.

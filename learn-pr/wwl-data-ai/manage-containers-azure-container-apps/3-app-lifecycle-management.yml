@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-containers-azure-container-apps.app-lifecycle-management
+title: Manage the container app lifecycle
+metadata:
+  title: Manage the Container App Lifecycle
+  description: Manage the container app lifecycle
+  ms.date: 01/26/2026
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/3-app-lifecycle-management.md)]

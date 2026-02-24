@@ -1,3 +1,5 @@
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=c62275dd-5317-463b-9c0c-cf02262d736e]
+
 Every Azure Databricks workload runs on compute resources, but choosing the wrong compute type or configuration leads to unnecessary costs, poor performance, or blocked functionality. **Serverless compute** starts in seconds but doesn't support RDD APIs. **Classic compute** offers complete flexibility but requires more management overhead. **SQL warehouses** excel at analytical queries while **job clusters** optimize for automated workflows. Understanding these differences helps you match compute to workload requirements.
 
 Beyond selecting a compute type, configuration decisions shape how your workload performs. **Node types** determine processing capacity and memory availability. **Autoscaling** balances cost and responsiveness. **Access permissions** control who can use compute resources while **library installations** provide the dependencies your code needs. Each configuration choice affects multiple dimensions—performance, cost, security, and operational complexity.

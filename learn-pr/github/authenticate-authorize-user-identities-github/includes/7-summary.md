@@ -20,3 +20,8 @@ Here are some links to more detailed information on the topics we discussed in t
 - [Authorizing a personal access token for use with SAML single sign-on - GitHub Docs](https://docs.github.com/enterprise-cloud@latest/authentication/authenticating-with-saml-single-sign-on/authorizing-a-personal-access-token-for-use-with-saml-single-sign-on)
 - [Authorizing an SSH key for use with SAML single sign-on - GitHub Docs](https://docs.github.com/enterprise-cloud@latest/authentication/authenticating-with-saml-single-sign-on/authorizing-an-ssh-key-for-use-with-saml-single-sign-on)
 - [Synchronizing a team with an identity provider - GitHub Docs](https://docs.github.com/enterprise-cloud@latest/organizations/organizing-members-into-teams/synchronizing-a-team-with-an-identity-provider-group)
+
+## Provide feedback
+
+Use this [issue form](https://github.com/githubpartners/microsoft-learn/issues/new/choose) to provide content feedback or suggested changes for this Microsoft Learn module. GitHub maintains this content and a team member will triage the request. Thank you for taking the time to improve our content!
+
