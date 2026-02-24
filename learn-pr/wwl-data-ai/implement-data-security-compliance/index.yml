@@ -3,7 +3,7 @@ uid: learn.implement-data-security-compliance
 metadata:
   title: Implement data security and compliance with SQL
   description: Learn how to implement data security and compliance features in SQL Server, Azure SQL, and SQL databases in Microsoft Fabric, including encryption, masking, Row-Level Security, and auditing.
-  ms.date: 02/04/2026
+  ms.date: 02/24/2026
   author: JulianePadrao
   ms.author: jupadrao
   ms.topic: module
