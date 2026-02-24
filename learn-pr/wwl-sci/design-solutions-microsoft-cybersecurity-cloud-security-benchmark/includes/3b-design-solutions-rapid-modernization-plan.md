@@ -16,7 +16,7 @@ You apply these principles across seven technology pillars: **identities**, **en
 
 When you design Zero Trust solutions, you work across pillars simultaneously. For example, an effective Conditional Access policy integrates signals from identities (user risk), endpoints (device compliance), and applications (sensitivity level) to make a single access decision. No pillar operates in isolation—the identity team can only make so much progress before coordinating with the endpoints team.
 
-## The Zero Trust RaMP approach to rapid modernization
+## The Zero Trust approach to rapid modernization (Zero Trust RaMP)
 
 The Zero Trust adoption framework organizes rapid modernization around a lifecycle with five phases:
 
