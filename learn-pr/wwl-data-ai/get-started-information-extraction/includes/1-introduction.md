@@ -17,9 +17,9 @@ Examples of information extraction scenarios include:
 
 Azure Content Understanding extracts structured data from multiple content types including: 
 
-- **Documents & images:**: such as PDFs, forms, invoices, receipts, contracts
-- **Audio:**: such as recordings or calls
-- **Video:**: such as video of meetings or other media files 
+- **Documents & images**: such as PDFs, forms, invoices, receipts, contracts
+- **Audio**: such as recordings or calls
+- **Video**: such as video of meetings or other media files 
 
 Azure Content Understanding's AI-powered information extraction automates the process of turning unstructured content into machine‑readable data that can be searched and analyzed. Next, learn how to extract structured data from unstructured documents and forms.
 
