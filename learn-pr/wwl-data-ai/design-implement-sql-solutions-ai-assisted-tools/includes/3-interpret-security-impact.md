@@ -21,7 +21,7 @@ Your organization might have specific policies about AI tool usage, especially w
 
 **Data classification**: Does your database contain personally identifiable information (PII), financial records, healthcare data, or other regulated information? Some organizations restrict AI tool usage for databases containing sensitive data classifications.
 
-**Compliance requirements**: Are you subject to GDPR, HIPAA, SOC 2, or other compliance frameworks? Review whether using cloud-based AI services aligns with your compliance obligations.
+**Compliance requirements**: Are you subject to any compliance frameworks? Review whether using cloud-based AI services aligns with your compliance obligations.
 
 **Intellectual property**: Does your organization have policies about code or schema information being processed by external AI services? Some proprietary database designs might be considered trade secrets.
 

@@ -139,7 +139,7 @@ To get the most out of custom instruction files, follow these best practices:
 Example of a specific, example-driven instruction:
 
 ```markdown
-## Error Handling Pattern
+## Error handling pattern
 
 Always use this error handling pattern in stored procedures:
 
