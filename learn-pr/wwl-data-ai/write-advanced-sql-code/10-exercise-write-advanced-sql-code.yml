@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.write-advanced-tsql-code.exercise-write-advanced-tsql-code
+uid: learn.write-advanced-sql-code.exercise-write-advanced-sql-code
 title: Exercise - Work with JSON functions
 metadata:
   title: Exercise - Work with JSON functions
@@ -8,6 +8,6 @@ metadata:
   author: JulianePadrao
   ms.author: jupadrao
   ms.topic: unit
-durationInMinutes: 15
+durationInMinutes: 30
 content: |
-  [!include[](includes/10-exercise-write-advanced-tsql-code.md)]
+  [!include[](includes/10-exercise-write-advanced-sql-code.md)]

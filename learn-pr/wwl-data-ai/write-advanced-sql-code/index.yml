@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.write-advanced-tsql-code
+uid: learn.write-advanced-sql-code
 metadata:
   title: Write advanced T-SQL code
   description: Learn how to write advanced T-SQL code including CTEs, window functions, JSON functions, regular expressions, fuzzy string matching, graph queries, correlated queries, and error handling.
@@ -47,17 +47,17 @@ subjects:
 - cloud-computing
 - app-development
 units:
-  - learn.write-advanced-tsql-code.introduction
-  - learn.write-advanced-tsql-code.common-table-expressions
-  - learn.write-advanced-tsql-code.window-functions
-  - learn.write-advanced-tsql-code.json-functions
-  - learn.write-advanced-tsql-code.regular-expressions
-  - learn.write-advanced-tsql-code.fuzzy-string-matching
-  - learn.write-advanced-tsql-code.graph-queries
-  - learn.write-advanced-tsql-code.correlated-queries
-  - learn.write-advanced-tsql-code.error-handling
-  - learn.write-advanced-tsql-code.exercise-write-advanced-tsql-code
-  - learn.write-advanced-tsql-code.knowledge-check
-  - learn.write-advanced-tsql-code.summary
+  - learn.write-advanced-sql-code.introduction
+  - learn.write-advanced-sql-code.common-table-expressions
+  - learn.write-advanced-sql-code.window-functions
+  - learn.write-advanced-sql-code.json-functions
+  - learn.write-advanced-sql-code.regular-expressions
+  - learn.write-advanced-sql-code.fuzzy-string-matching
+  - learn.write-advanced-sql-code.graph-queries
+  - learn.write-advanced-sql-code.correlated-queries
+  - learn.write-advanced-sql-code.error-handling
+  - learn.write-advanced-sql-code.exercise-write-advanced-sql-code
+  - learn.write-advanced-sql-code.knowledge-check
+  - learn.write-advanced-sql-code.summary
 badge:
-  uid: learn.write-advanced-tsql-code.badge
+  uid: learn.write-advanced-sql-code.badge
