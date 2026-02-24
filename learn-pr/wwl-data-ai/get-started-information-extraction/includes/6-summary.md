@@ -23,6 +23,6 @@ Across all content types, Azure Content Understanding follows a consistent workf
 To learn more, check out the links: 
 
 - Review the [glossary of terms](/azure/ai-services/content-understanding/glossary) associated with Azure Content Understanding.
-- Learn more about Azure Content Understanding's [workflow from the documentation](s/azure/ai-services/content-understanding/overview).
+- Learn more about Azure Content Understanding's [workflow from the documentation](/azure/ai-services/content-understanding/overview).
 - Read more about Azure Content Understanding [analyzers and their configurations in the documentation](/azure/ai-services/content-understanding/concepts/analyzer-reference).
 - Try out Azure Content Understanding using the REST API with a [quickstart tutorial from the documentation](/azure/ai-services/content-understanding/quickstart/use-rest-api?tabs=portal%2Cdocument).
