@@ -2,9 +2,9 @@ Individual custom agents are powerful on their own, but their full potential eme
 
 ## What are handoffs?
 
-Handoffs are a mechanism that allows one custom agent to propose a transition to another agent after completing its part of a task. When an agent finishes its response, it can present a handoff button—a suggested "next action"—that, when selected, switches the chat to a target agent and optionally pre-fills a prompt to continue the workflow.
+Handoffs are a mechanism that allows one custom agent to propose a transition to another agent after completing its part of a task. When an agent finishes its response, it can present a handoff button—a suggested "next action"—that, when selected, switches the chat to a target agent and optionally prefills a prompt to continue the workflow.
 
-For example, a Planner agent could produce a detailed implementation plan and then display a "Start Implementation" button. When the developer selects this button, Copilot Chat switches to an Implementer agent that receives the plan as context along with a prompt like "Now implement the plan outlined above." The developer reviews the plan before selecting the button, maintaining control over the workflow while the agents handle the specialized work.
+For example, a Planner agent could produce a detailed implementation plan and then display a "Start Implementation" button. When the developer selects this button, GitHub Copilot Chat switches to an Implementer agent that receives the plan as context along with a prompt like "Now implement your suggested plan." The developer reviews the plan before selecting the button, maintaining control over the workflow while the agents handle the specialized work.
 
 This approach creates a structured multi-agent workflow where each agent handles a specific phase of the development process. The developer oversees each transition, ensuring quality and correctness at every step. Handoffs don't execute automatically by default—they require the developer to select the handoff button, which keeps the human in the loop.
 
@@ -16,13 +16,13 @@ A handoff entry includes the following fields:
 
 - **label**: The text displayed on the handoff button (for example, "Start Implementation" or "Run Tests").
 
-- **agent**: The name or identifier of the target agent to switch to. This must match the filename (without the `.agent.md` extension) or the `name` field of the target agent.
+- **agent**: The name or identifier of the target agent to switch to. This name must match the filename (without the `.agent.md` extension) or the `name` field of the target agent.
 
-- **prompt**: An optional message to send to the next agent. This prompt provides context or instructions for the target agent, such as "Now implement the plan outlined above" or "Review the code changes made in the previous step."
+- **prompt**: An optional message to send to the next agent. This prompt provides context or instructions for the target agent, such as "Now implement your suggested plan." or "Review the code changes made in the previous step."
 
-- **send**: A boolean value that controls whether the prompt is submitted automatically. When set to `false` (the default), the prompt is pre-filled in the chat input for the developer to review and edit before sending. When set to `true`, the prompt is submitted immediately, and the target agent begins working right away.
+- **send**: A boolean value that controls whether the prompt is submitted automatically. When set to `false` (the default), the prompt is prefilled in the chat input for the developer to review and edit before sending. When set to `true`, the prompt is submitted immediately, and the target agent begins working right away.
 
-- **model**: An optional field that specifies a particular AI model to use when the handoff executes. The format is `Model Name (vendor)`, such as `GPT-4.1 (OpenAI)` or `Claude Sonnet 4 (Anthropic)`. This is useful when different stages of a workflow benefit from different model capabilities—for example, using a reasoning model for planning and a faster model for implementation.
+- **model**: An optional field that specifies a particular AI model to use when the handoff executes. The format is `Model Name (vendor)`, such as `GPT-4.1 (OpenAI)` or `Claude Sonnet 4 (Anthropic)`. This field is useful when different stages of a workflow benefit from different model capabilities—for example, using a reasoning model for planning and a faster model for implementation.
 
 The following YAML snippet shows a Planner agent configured with a handoff to an Implementer agent:
 
@@ -38,7 +38,7 @@ handoffs:
 ---
 ```
 
-When the Planner agent completes its response, a "Start Implementation" button appears in the chat. Selecting this button switches to the Implementer agent, carries over the conversation history (including the plan), and pre-fills the prompt text for the developer to review.
+When the Planner agent completes its response, a "Start Implementation" button appears in the chat. Selecting this button switches to the Implementer agent, carries over the conversation history (including the plan), and prefills the prompt text for the developer to review.
 
 An agent can define multiple handoffs to offer different next steps. For instance, a Planner agent might offer both "Start Implementation" and "Write Tests First" buttons, letting the developer choose the appropriate path based on the situation.
 
@@ -46,11 +46,11 @@ An agent can define multiple handoffs to offer different next steps. For instanc
 
 Handoffs always involve an explicit user action—selecting the handoff button—unless the `send` field is set to `true`. This design ensures the developer stays in control of the workflow and can review each agent's output before moving to the next step.
 
-Each agent in a chain operates within its own defined tool set and instruction set. This provides guardrails at each step of the workflow. For example:
+Each agent in a chain operates within its own defined tool set and instruction set. This environment provides guardrails at each step of the workflow. For example:
 
-- A **Planning agent** with only `read` and `search` tools can gather information and propose plans but cannot accidentally modify code.
+- A **Planning agent** with only `read` and `search` tools can gather information and propose plans but can't accidentally modify code.
 - An **Implementation agent** with `read`, `edit`, and `terminal` tools can write code and run build commands but follows the specific coding guidelines in its instructions.
-- A **Review agent** with only `read` and `search` tools can analyze the generated code but cannot modify it, ensuring its review is purely advisory.
+- A **Review agent** with only `read` and `search` tools can analyze the generated code but can't modify it, ensuring its review is purely advisory.
 
 These role-specific constraints make multi-step processes more reliable by preventing unintended actions at each phase. The developer reviews the output at each handoff point and only proceeds when satisfied with the result.
 
@@ -66,7 +66,7 @@ This workflow mirrors how senior engineers plan work before implementation begin
 
 ### Implementation → Code Review
 
-After code is generated—whether by a human developer or an AI agent—a handoff can switch to a Code Review agent. The review agent evaluates the new code's quality, checking for bugs, security issues, style violations, and missing edge cases. The review agent can then either provide feedback for manual fixes or hand off to a "Fixer" agent that applies corrections, subject to developer approval.
+After code is generated, whether by a human developer or an AI agent, a handoff can switch to a Code Review agent. The review agent evaluates the new code's quality, checking for bugs, security issues, style violations, and missing edge cases. The review agent can then either provide feedback for manual fixes or hand off to a "Fixer" agent that applies corrections, subject to developer approval.
 
 ### Write Failing Tests → Write Code to Pass
 
@@ -85,17 +85,17 @@ Use a Planning agent to analyze an existing codebase and outline a refactoring o
 
 ## Agent execution environments
 
-By default, custom agents run on the client (inside VS Code). However, agents can also be configured to run in the cloud by setting `target: cloud` in the agent's YAML frontmatter. Cloud agents execute remotely and are better suited for long-running tasks—such as building an entire feature or running a comprehensive test suite—that would otherwise keep your local VS Code instance occupied. Background agents are a related concept: they run independently without blocking the chat interface, allowing you to continue working while the agent processes a task.
+By default, custom agents run on the client (inside Visual Studio Code). However, agents can also be configured to run in the cloud by setting `target: cloud` in the agent's YAML frontmatter. Cloud agents execute remotely and are better suited for long-running tasks—such as building an entire feature or running a comprehensive test suite—that would otherwise keep your local Visual Studio Code instance occupied. Background agents are a related concept: they run independently without blocking the chat interface, allowing you to continue working while the agent processes a task.
 
-## Copilot hooks
+## GitHub Copilot hooks
 
-Copilot hooks are a preview feature that lets you run custom commands automatically at specific points in the Copilot workflow. Hooks are defined in your VS Code settings (not in agent files) and trigger before or after specific events, such as before Copilot saves a file or after it runs a terminal command. For example, you can configure a hook to run a linter automatically after Copilot edits a file, ensuring that AI-generated code always meets your formatting standards before being saved.
+GitHub Copilot hooks are a preview feature that lets you run custom commands automatically at specific points in the GitHub Copilot workflow. Hooks are defined in your Visual Studio Code settings (not in agent files) and trigger before or after specific events, such as before GitHub Copilot saves a file or after it runs a terminal command. For example, you can configure a hook to run a linter automatically after GitHub Copilot edits a file, ensuring that AI-generated code always meets your formatting standards before being saved.
 
 Hooks extend the automation capabilities of multi-agent workflows by adding lifecycle-based actions that complement the agent's own instructions and tools.
 
 > [!NOTE]
-> Hooks are a preview feature and their configuration format may change. They are configured in VS Code settings under `github.copilot.chat.hooks` and support events like `postSaveFile`, `preRunTerminalCommand`, and `postRunTerminalCommand`.
+> Hooks are a preview feature and their configuration format might change. They're configured in Visual Studio Code settings under `github.copilot.chat.hooks` and support events like `postSaveFile`, `preRunTerminalCommand`, and `postRunTerminalCommand`.
 
 ## Summary
 
-Handoffs connect multiple custom agents into guided sequential workflows, enabling multi-step development tasks where each agent handles a specific phase. By configuring handoffs in the YAML frontmatter of agent files, you can create chains that transition from planning to implementation, implementation to review, or any other sequence that matches your team's development process. Each handoff keeps the developer in control, with the option to review and approve before proceeding to the next step. Additional capabilities like cloud agents, background execution, and Copilot hooks extend these workflows with remote processing and lifecycle automation.
+Handoffs connect multiple custom agents into guided sequential workflows, enabling multi-step development tasks where each agent handles a specific phase. By configuring handoffs in the YAML frontmatter of agent files, you can create chains that transition from planning to implementation, implementation to review, or any other sequence that matches your team's development process. Each handoff keeps the developer in control, with the option to review and approve before proceeding to the next step. Other capabilities like cloud agents, background execution, and GitHub Copilot hooks extend these workflows with remote processing and lifecycle automation.
