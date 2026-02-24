@@ -15,13 +15,13 @@ Identity is the foundation of Zero Trust security. A centralized identity provid
 
 | MCSB Control | Name |
 |---------|------|
-| [IM-1](/security/benchmark/azure/mcsb-identity-management#im-1-use-centralized-identity-and-authentication-system) | Use centralized identity and authentication system |
-| [IM-2](/security/benchmark/azure/mcsb-identity-management#im-2-protect-identity-and-authentication-systems) | Protect identity and authentication systems |
-| [IM-6](/security/benchmark/azure/mcsb-identity-management#im-6-use-strong-authentication-controls) | Use strong authentication controls |
-| [IM-7](/security/benchmark/azure/mcsb-identity-management#im-7-restrict-resource-access-based-on--conditions) | Restrict resource access based on conditions |
-| [PA-1](/security/benchmark/azure/mcsb-privileged-access#pa-1-separate-and-limit-highly-privilegedadministrative-users) | Separate and limit highly privileged/administrative users |
-| [PA-3](/security/benchmark/azure/mcsb-privileged-access#pa-3-manage-lifecycle-of-identities-and-entitlements) | Manage lifecycle of identities and entitlements |
-| [PA-8](/security/benchmark/azure/mcsb-privileged-access#pa-8-determine-access-process-for-cloud-provider-support) | Determine access process for cloud provider support |
+| [IM-1](/security/benchmark/azure/mcsb-v2-identity-management#im-1) | Centralize identity and authentication while ensuring isolation |
+| [IM-2](/security/benchmark/azure/mcsb-v2-identity-management#im-2) | Protect identity and authentication systems |
+| [IM-6](/security/benchmark/azure/mcsb-v2-identity-management#im-6) | Use strong authentication controls |
+| [IM-7](/security/benchmark/azure/mcsb-v2-identity-management#im-7) | Restrict resource access based on conditions |
+| [PA-1](/security/benchmark/azure/mcsb-v2-privileged-access#pa-1) | Separate and limit highly privileged/administrative users |
+| [PA-3](/security/benchmark/azure/mcsb-v2-privileged-access#pa-3) | Manage lifecycle of identities and entitlements |
+| [PA-8](/security/benchmark/azure/mcsb-v2-privileged-access#pa-8) | Determine access process for cloud provider support |
 
 ### Endpoint and device Security
 
@@ -34,11 +34,11 @@ Zero Trust requires continuous verification of device security posture. Key prac
 
 | MCSB Control | Name |
 |---------|------|
-| [ES-1](/security/benchmark/azure/mcsb-endpoint-security#es-1-use-endpoint-detection-and-response-edr) | Use Endpoint Detection and Response (EDR) |
-| [ES-2](/security/benchmark/azure/mcsb-endpoint-security#es-2-use-modern-anti-malware-software) | Use modern anti-malware software |
-| [ES-3](/security/benchmark/azure/mcsb-endpoint-security#es-3-ensure-anti-malware-software-and-signatures-are-updated) | Ensure anti-malware software and signatures are updated |
-| [PV-3](/security/benchmark/azure/mcsb-posture-vulnerability-management#pv-3-define-and-establish-secure-configurations-for-compute-resources) | Define and establish secure configurations for compute resources |
-| [PV-5](/security/benchmark/azure/mcsb-posture-vulnerability-management#pv-5-perform-vulnerability-assessments) | Perform vulnerability assessments |
+| [ES-1](/security/benchmark/azure/mcsb-v2-endpoint-security#es-1) | Use Endpoint Detection and Response (EDR) |
+| [ES-2](/security/benchmark/azure/mcsb-v2-endpoint-security#es-2) | Use modern anti-malware software |
+| [ES-3](/security/benchmark/azure/mcsb-v2-endpoint-security#es-3) | Ensure anti-malware software and signatures are updated |
+| [PV-3](/security/benchmark/azure/mcsb-v2-posture-vulnerability-management#pv-3) | Define and establish secure configurations for compute resources |
+| [PV-5](/security/benchmark/azure/mcsb-v2-posture-vulnerability-management#pv-5) | Perform vulnerability assessments |
 
 ### Network and infrastructure Security
 
@@ -51,13 +51,13 @@ Network controls remain essential for defense-in-depth and breach containment. K
 
 | MCSB Control | Name |
 |---------|------|
-| [NS-1](/security/benchmark/azure/mcsb-network-security#ns-1-establish-network-segmentation-boundaries) | Establish network segmentation boundaries |
-| [NS-2](/security/benchmark/azure/mcsb-network-security#ns-2-secure-cloud-native-services-with-network-controls) | Secure cloud native services with network controls |
-| [NS-3](/security/benchmark/azure/mcsb-network-security#ns-3-deploy-firewall-at-the-edge-of-enterprise-network) | Deploy firewall at the edge of enterprise network |
-| [NS-4](/security/benchmark/azure/mcsb-network-security#ns-4-deploy-intrusion-detectionintrusion-prevention-systems-idsips) | Deploy intrusion detection/intrusion prevention systems (IDS/IPS) |
-| [NS-5](/security/benchmark/azure/mcsb-network-security#ns-5-deploy-ddos-protection) | Deploy DDoS protection |
-| [NS-10](/security/benchmark/azure/mcsb-network-security#ns-10-ensure-domain-name-system-dns-security) | Ensure Domain Name System (DNS) security |
-| [LT-1](/security/benchmark/azure/mcsb-logging-threat-detection#lt-1-enable-threat-detection-capabilities) | Enable threat detection capabilities |
+| [NS-1](/security/benchmark/azure/mcsb-v2-network-security#ns-1) | Establish network segmentation boundaries |
+| [NS-2](/security/benchmark/azure/mcsb-v2-network-security#ns-2) | Secure cloud native services with network controls |
+| [NS-3](/security/benchmark/azure/mcsb-v2-network-security#ns-3) | Deploy firewall at the edge of enterprise network |
+| [NS-4](/security/benchmark/azure/mcsb-v2-network-security#ns-4) | Deploy intrusion detection/intrusion prevention systems (IDS/IPS) |
+| [NS-5](/security/benchmark/azure/mcsb-v2-network-security#ns-5) | Deploy DDOS protection |
+| [NS-10](/security/benchmark/azure/mcsb-v2-network-security#ns-10) | Ensure Domain Name System (DNS) security |
+| [LT-1](/security/benchmark/azure/mcsb-v2-logging-threat-detection#lt-1) | Enable threat detection capabilities |
 
 ### Application security and DevOps
 
@@ -70,14 +70,14 @@ Applications and Azure pipelines must be secured to prevent vulnerabilities. Key
 
 | MCSB Control | Name |
 |---------|------|
-| [PV-2](/security/benchmark/azure/mcsb-posture-vulnerability-management#pv-2-audit-and-enforce-secure-configurations) | Audit and enforce secure configurations |
-| [AM-2](/security/benchmark/azure/mcsb-asset-management#am-2-use-only-approved-services) | Use only approved services |
-| [AM-5](/security/benchmark/azure/mcsb-asset-management#am-5-use-only-approved-applications-in-virtual-machine) | Use only approved applications in virtual machine |
-| [DS-2](/security/benchmark/azure/mcsb-devops-security#ds-2-ensure-software-supply-chain-security) | Ensure software supply chain security |
-| [DS-6](/security/benchmark/azure/mcsb-devops-security#ds-6-enforce-security-of-workload-throughout-devops-lifecycle) | Enforce security of workload throughout DevOps lifecycle |
-| [DS-7](/security/benchmark/azure/mcsb-devops-security#ds-7-enable-logging-and-monitoring-in-devops) | Enable logging and monitoring in DevOps |
-| [DP-3](/security/benchmark/azure/mcsb-data-protection#dp-3-encrypt-sensitive-data-in-transit) | Encrypt sensitive data in transit |
-| [DP-4](/security/benchmark/azure/mcsb-data-protection#dp-4-enable-data-at-rest-encryption-by-default) | Enable data at rest encryption by default |
+| [PV-2](/security/benchmark/azure/mcsb-v2-posture-vulnerability-management#pv-2) | Audit and enforce secure configurations |
+| [AM-2](/security/benchmark/azure/mcsb-v2-asset-management#am-2) | Use only approved services |
+| [AM-5](/security/benchmark/azure/mcsb-v2-asset-management#am-5) | Use only approved applications in virtual machine |
+| [DS-2](/security/benchmark/azure/mcsb-v2-devop-security#ds-2) | Secure the software supply chain |
+| [DS-6](/security/benchmark/azure/mcsb-v2-devop-security#ds-6) | Secure the workload lifecycle |
+| [DS-7](/security/benchmark/azure/mcsb-v2-devop-security#ds-7) | Implement DevOps logging and monitoring |
+| [DP-3](/security/benchmark/azure/mcsb-v2-data-protection#dp-3) | Encrypt sensitive data in transit |
+| [DP-4](/security/benchmark/azure/mcsb-v2-data-protection#dp-4) | Enable data at rest encryption by default |
 
 ### Data protection and governance
 
@@ -91,14 +91,14 @@ Security is ultimately about protecting data. Key practices include:
 
 | MCSB Control | Name |
 |---------|------|
-| [DP-1](/security/benchmark/azure/mcsb-data-protection#dp-1-discover-classify-and-label-sensitive-data) | Discover, classify, and label sensitive data |
-| [DP-2](/security/benchmark/azure/mcsb-data-protection#dp-2-monitor-anomalies-and-threats-targeting-sensitive-data) | Monitor anomalies and threats targeting sensitive data |
-| [DP-3](/security/benchmark/azure/mcsb-data-protection#dp-3-encrypt-sensitive-data-in-transit) | Encrypt sensitive data in transit |
-| [DP-4](/security/benchmark/azure/mcsb-data-protection#dp-4-enable-data-at-rest-encryption-by-default) | Enable data at rest encryption by default |
-| [DP-5](/security/benchmark/azure/mcsb-data-protection#dp-5-use-customer-managed-key-option-in-data-at-rest-encryption-when-required) | Use customer-managed key option in data at rest encryption when required |
-| [AM-3](/security/benchmark/azure/mcsb-asset-management#am-3-ensure-security-of-asset-lifecycle-management) | Ensure security of asset lifecycle management |
-| [BR-1](/security/benchmark/azure/mcsb-backup-recovery#br-1-ensure-regular-automated-backups) | Ensure regular automated backups |
-| [BR-2](/security/benchmark/azure/mcsb-backup-recovery#br-2-protect-backup-and-recovery-data) | Protect backup and recovery data |
+| [DP-1](/security/benchmark/azure/mcsb-v2-data-protection#dp-1) | Discover, classify, and label sensitive data |
+| [DP-2](/security/benchmark/azure/mcsb-v2-data-protection#dp-2) | Monitor anomalies and threats targeting sensitive data |
+| [DP-3](/security/benchmark/azure/mcsb-v2-data-protection#dp-3) | Encrypt sensitive data in transit |
+| [DP-4](/security/benchmark/azure/mcsb-v2-data-protection#dp-4) | Enable data at rest encryption by default |
+| [DP-5](/security/benchmark/azure/mcsb-v2-data-protection#dp-5) | Use customer-managed key option in data at rest encryption when required |
+| [AM-3](/security/benchmark/azure/mcsb-v2-asset-management#am-3) | Ensure security of asset lifecycle management |
+| [BR-1](/security/benchmark/azure/mcsb-v2-backup-recovery#br-1) | Ensure regular automated backups |
+| [BR-2](/security/benchmark/azure/mcsb-v2-backup-recovery#br-2) | Protect backup and recovery data |
 
 ### Threat detection and response
 
@@ -111,31 +111,30 @@ Assume breach and build robust detection and response capabilities. Key practice
 
 | MCSB Control | Name |
 |---------|------|
-| [LT-1](/security/benchmark/azure/mcsb-logging-threat-detection#lt-1-enable-threat-detection-capabilities) | Enable threat detection capabilities |
-| [LT-3](/security/benchmark/azure/mcsb-logging-threat-detection#lt-3-enable-logging-for-security-investigation) | Enable logging for security investigation |
-| [LT-4](/security/benchmark/azure/mcsb-logging-threat-detection#lt-4-enable-logging-for-network-security-investigation) | Enable logging for network security investigation |
-| [IR-1](/security/benchmark/azure/mcsb-incident-response#ir-1-preparation--update-incident-response-plan-and-handling-process) | Preparation – update incident response plan and handling process |
-| [IR-2](/security/benchmark/azure/mcsb-incident-response#ir-2-preparation--setup-incident-notification) | Preparation – setup incident notification |
-| [IR-4](/security/benchmark/azure/mcsb-incident-response#ir-4-detection-and-analysis--investigate-an-incident) | Detection and analysis – investigate an incident |
-| [IR-5](/security/benchmark/azure/mcsb-incident-response#ir-5-detection-and-analysis--prioritize-incidents) | Detection and analysis – prioritize incidents |
-| [IR-6](/security/benchmark/azure/mcsb-incident-response#ir-6-containment-eradication-and-recovery--automate-the-incident-handling) | Containment, eradication, and recovery – automate the incident handling |
+| [LT-1](/security/benchmark/azure/mcsb-v2-logging-threat-detection#lt-1) | Enable threat detection capabilities |
+| [LT-3](/security/benchmark/azure/mcsb-v2-logging-threat-detection#lt-3) | Enable logging for security investigation |
+| [LT-4](/security/benchmark/azure/mcsb-v2-logging-threat-detection#lt-4) | Enable network logging for security investigation |
+| [IR-1](/security/benchmark/azure/mcsb-v2-incident-response#ir-1) | Preparation - update incident response plan and handling process |
+| [IR-2](/security/benchmark/azure/mcsb-v2-incident-response#ir-2) | Preparation - setup incident notification |
+| [IR-4](/security/benchmark/azure/mcsb-v2-incident-response#ir-4) | Detection and analysis - investigate an incident |
+| [IR-5](/security/benchmark/azure/mcsb-v2-incident-response#ir-5) | Detection and analysis - prioritize incidents |
+| [IR-6](/security/benchmark/azure/mcsb-v2-incident-response#ir-6) | Containment, eradication and recovery - automate the incident handling |
 
 ### Security posture management and compliance
 
 Maintain and improve security posture continuously. Key practices include:
 
 - **Use secure score and posture management**: Monitor security scores and cloud security posture management (CSPM) tools to track posture against best practices. Assign owners to address recommendations. *MCSB Controls: PV-1 (posture assessment).*
-- **Policy-as-code**: Use policy enforcement tools to audit and enforce security configurations. Embed security in Infrastructure as Code (IaC) templates. *MCSB Controls: PV-2 (audit and enforce configurations), GS-7 (policy management).*
-- **Regular audits**: Conduct periodic security reviews and threat modeling updates. Use Center for Internet Security (CIS) benchmarks and third-party assessments. *MCSB Controls: GS-1 (security strategy), GS-4 (architecture review).*
-- **Stay informed**: Track updates to security frameworks and benchmarks. Subscribe to vendor update feeds for new security features and controls. *MCSB Controls: GS-1 (security strategy).*
+- **Policy-as-code**: Use policy enforcement tools to audit and enforce security configurations. Embed security in Infrastructure as Code (IaC) templates. *MCSB Controls: PV-1 (secure configurations), PV-2 (audit and enforce configurations).*
+- **Regular audits**: Conduct periodic security reviews and threat modeling updates. Use Center for Internet Security (CIS) benchmarks and third-party assessments. *MCSB Controls: PV-5 (vulnerability assessments), AM-1 (asset inventory).*
+- **Stay informed**: Track updates to security frameworks and benchmarks. Subscribe to vendor update feeds for new security features and controls. *MCSB Controls: PV-1 (secure configurations).*
 
 | MCSB Control | Name |
 |---------|------|
-| [PV-1](/security/benchmark/azure/mcsb-posture-vulnerability-management#pv-1-define-and-establish-secure-configurations) | Define and establish secure configurations |
-| [PV-2](/security/benchmark/azure/mcsb-posture-vulnerability-management#pv-2-audit-and-enforce-secure-configurations) | Audit and enforce secure configurations |
-| [GS-1](/security/benchmark/azure/mcsb-governance-strategy#gs-1-align-organization-roles-responsibilities-and-accountabilities) | Align organization roles, responsibilities, and accountabilities |
-| [GS-4](/security/benchmark/azure/mcsb-governance-strategy#gs-4-define-and-implement-network-security-strategy) | Define and implement network security strategy |
-| [GS-7](/security/benchmark/azure/mcsb-governance-strategy#gs-7-define-and-implement-logging-threat-detection-and-incident-response-strategy) | Define and implement logging, threat detection, and incident response strategy |
+| [PV-1](/security/benchmark/azure/mcsb-v2-posture-vulnerability-management#pv-1) | Define and establish secure configurations |
+| [PV-2](/security/benchmark/azure/mcsb-v2-posture-vulnerability-management#pv-2) | Audit and enforce secure configurations |
+| [PV-5](/security/benchmark/azure/mcsb-v2-posture-vulnerability-management#pv-5) | Perform vulnerability assessments |
+| [AM-1](/security/benchmark/azure/mcsb-v2-asset-management#am-1) | Establish and maintain asset inventory |
 
 ## Bringing it all together
 
