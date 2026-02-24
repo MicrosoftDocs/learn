@@ -29,7 +29,7 @@ An MCP Client (such as Claude, an IDE, or another tool) can interact with MCP Se
 
 #### Local communication with local data
 
-In this scenario, the MCP Client talks directly to an MCP Server running on your machine using the MCP Protocol. That server then connects to a local data source (for example, files, databases, or other resources stored on your computer).
+The MCP Client talks directly to an MCP Server running on your machine using the MCP Protocol. That server then connects to a local data source (for example, files, databases, or other resources stored on your computer).
 
 **When to use it**: This setup is useful for local development, or anytime you want fast access to data that stays private on your machine.
 
