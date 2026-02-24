@@ -10,9 +10,9 @@ Now that you have completed this module, you can:
 For more information about the topics discussed in this module, see:
 
 - [Change feed in Azure Cosmos DB][/azure/cosmos-db/change-feed]
-- [Change feed processor in Azure Cosmos DB][/azure/cosmos-db/sql/change-feed-processor]
-- [Use the change feed estimator][/azure/cosmos-db/sql/how-to-use-change-feed-estimator]
+- [Change feed processor in Azure Cosmos DB][/azure/cosmos-db/change-feed-processor]
+- [Use the change feed estimator][/azure/cosmos-db/how-to-use-change-feed-estimator]
 
 [/azure/cosmos-db/change-feed]: /azure/cosmos-db/change-feed
-[/azure/cosmos-db/sql/change-feed-processor]: /azure/cosmos-db/sql/change-feed-processor
-[/azure/cosmos-db/sql/how-to-use-change-feed-estimator]: /azure/cosmos-db/sql/how-to-use-change-feed-estimator
+[/azure/cosmos-db/change-feed-processor]: /azure/cosmos-db/change-feed-processor
+[/azure/cosmos-db/how-to-use-change-feed-estimator]: /azure/cosmos-db/how-to-use-change-feed-estimator
