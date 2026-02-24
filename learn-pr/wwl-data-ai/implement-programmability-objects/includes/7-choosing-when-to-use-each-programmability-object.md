@@ -7,7 +7,7 @@ The following table summarizes key capabilities and limitations of each object t
 | Capability | Views | Stored Procedures | Functions | Triggers |
 | ---------- | ----- | ----------------- | --------- | -------- |
 | Accept parameters | No | Yes | Yes | No |
-| Modify data | Limited* | Yes | No | Yes |
+| Modify data | Limited | Yes | No | Yes |
 | Return result sets | Yes | Yes | Yes (TVFs) | No |
 | Use in `SELECT`/`JOIN` | Yes | No | Yes | No |
 | Transaction control | No | Yes | No | Yes |
