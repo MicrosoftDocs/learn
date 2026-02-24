@@ -10,7 +10,7 @@ This module examined the vital role datacenters play in shaping local economies 
 - [Datacenter Coalition](https://www.datacentercoalition.org/cpages/press-release-national-impact-study-2023)
 - [OFC: Data centers contribute $2.1T to the U.S. economy](https://www.ofcconference.org/ofc-blog/2023/11/data-centers-contribute-$2-1t-to-the-u-s-economy)
 - [AWS: Learn about AWS's long-term commitment to Virginia](https://www.aboutamazon.com/news/aws/aws-commitment-to-virginia)
-- [Governor of Virginia: Amazon Web Services Plans to Invest $35 Billion in the Commonwealth by 2040 to Expand Data Center Campuses](https://www.governor.virginia.gov/newsroom/news-releases/2023/january/name-991808-en.html)
+- [Governor of Virginia: Amazon Web Services Plans to Invest $35 Billion in the Commonwealth by 2040 to Expand Data Center Campuses](https://www.governor.virginia.gov/newsroom/news-releases/)
 - [EU STEM Coalition: Programs](https://www.stemcoalition.eu/programmes/)
 - [Microsoft Datacenter Academy](https://aka.ms/dca)
 - [Amazon Community Investments](https://www.aboutamazon.com/impact/economy/community-investments)
