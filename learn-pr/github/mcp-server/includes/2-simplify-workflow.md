@@ -35,7 +35,7 @@ The MCP Client talks directly to an MCP Server running on your machine using the
 
 #### Local server as a bridge to remote services
 
-Here, the MCP Client still connects to an MCP Server running locally. But instead of working only with local data, this server bridges to a remote service on the internet by calling its Web APIs.
+The MCP Client still connects to an MCP Server running locally. But instead of working only with local data, this server bridges to a remote service on the internet by calling its Web APIs.
 
 **When to use it**: This model is common when a local tool needs to fetch or update information from a remote service but benefits from having a local server in between—for example, to handle caching, security checks, or data preprocessing.
 
