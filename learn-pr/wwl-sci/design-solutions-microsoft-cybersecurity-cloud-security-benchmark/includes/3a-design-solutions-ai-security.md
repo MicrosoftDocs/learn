@@ -15,10 +15,10 @@ AI platform security focuses on protecting the underlying infrastructure, models
 | MCSB Control | Name |
 |---------|------|
 | [AI-1](/security/benchmark/azure/mcsb-v2-artificial-intelligence-security#ai-1-ensure-use-of-approved-models) | Ensure use of approved models |
-| [DP-1](/security/benchmark/azure/mcsb-data-protection#dp-1-discover-classify-and-label-sensitive-data) | Discover, classify, and label sensitive data |
-| [DP-4](/security/benchmark/azure/mcsb-data-protection#dp-4-enable-data-at-rest-encryption-by-default) | Enable data at rest encryption by default |
-| [DS-2](/security/benchmark/azure/mcsb-devops-security#ds-2-ensure-software-supply-chain-security) | Ensure software supply chain security |
-| [DS-6](/security/benchmark/azure/mcsb-devops-security#ds-6-enforce-security-of-workload-throughout-devops-lifecycle) | Enforce security of workload throughout DevOps lifecycle |
+| [DP-1](/security/benchmark/azure/mcsb-v2-data-protection#dp-1) | Discover, classify, and label sensitive data |
+| [DP-4](/security/benchmark/azure/mcsb-v2-data-protection#dp-4) | Enable data at rest encryption by default |
+| [DS-2](/security/benchmark/azure/mcsb-v2-devop-security#ds-2) | Secure the software supply chain |
+| [DS-6](/security/benchmark/azure/mcsb-v2-devop-security#ds-6) | Secure the workload lifecycle |
 
 ### AI application security
 
@@ -48,7 +48,7 @@ Continuous monitoring and proactive testing are essential to detect AI-specific 
 |---------|------|
 | [AI-6](/security/benchmark/azure/mcsb-v2-artificial-intelligence-security#ai-6-establish-monitoring-and-detection) | Establish monitoring and detection |
 | [AI-7](/security/benchmark/azure/mcsb-v2-artificial-intelligence-security#ai-7-perform-continuous-ai-red-teaming) | Perform continuous AI red teaming |
-| [LT-1](/security/benchmark/azure/mcsb-logging-threat-detection#lt-1-enable-threat-detection-capabilities) | Enable threat detection capabilities |
+| [LT-1](/security/benchmark/azure/mcsb-v2-logging-threat-detection#lt-1) | Enable threat detection capabilities |
 
 ### Bringing it all together
 
