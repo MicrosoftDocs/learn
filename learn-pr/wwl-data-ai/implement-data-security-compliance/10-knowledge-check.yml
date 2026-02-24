@@ -43,7 +43,7 @@ quiz:
     - content: "Always Encrypted with deterministic encryption"
       isCorrect: false
       explanation: "Incorrect. Always Encrypted completely encrypts values and doesn't support partial visibility. The billing system would also need the encryption keys to read the data."
-  - content: "A multi-tenant SaaS application stores data for multiple customers in the same database tables. Each table includes a TenantID column. You need to ensure users can only query rows belonging to their own tenant, even if they write SELECT statements directly. Which implementation approach should you use?"
+  - content: "A multitenant SaaS application stores data for multiple customers in the same database tables. Each table includes a TenantID column. You need to ensure users can only query rows belonging to their own tenant, even if they write SELECT statements directly. Which implementation approach should you use?"
     choices:
     - content: "Create separate views for each tenant and grant SELECT only on views"
       isCorrect: false
