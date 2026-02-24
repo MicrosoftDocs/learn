@@ -3,7 +3,7 @@ uid: learn.integrate-sql-solutions-azure-services
 metadata:
   title: Integrate SQL solutions with Azure services
   description: Learn how to use Data API Builder to create REST and GraphQL APIs for SQL databases, deploy to Azure, configure monitoring, and implement event-driven patterns for change handling.
-  ms.date: 02/05/2026
+  ms.date: 02/24/2026
   author: JulianePadrao
   ms.author: jupadrao
   ms.topic: module
