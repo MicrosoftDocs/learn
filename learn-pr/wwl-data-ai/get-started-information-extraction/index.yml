@@ -2,7 +2,7 @@
 uid: learn.wwl.get-started-information-extraction
 metadata:
   title: Get started with AI-powered information extraction in Azure
-  description: AI gives you the power to unlock insights from your data. In this module, you'll learn how to use Foundry Tools to extract information from content.
+  description: AI gives you the power to unlock insights from your data. Learn how to use Azure Content Understanding in Foundry Tools to extract information from content.
   author: sherzyang
   ms.author: sheryang
   ms.date: 02/21/2026
@@ -12,7 +12,7 @@ metadata:
   ms.collection:
     - wwl-ai-copilot
 title: Get started with AI-powered information extraction in Azure
-summary: AI gives you the power to unlock insights from your data. In this module, you'll learn how to use Foundry Tools to extract information from content.
+summary: AI gives you the power to unlock insights from your data. Learn how to use Azure Content Understanding in Foundry Tools to extract information from content.
 abstract: |
   After completing this module, you'll be able to:
   - Identify Foundry Tools for information extraction

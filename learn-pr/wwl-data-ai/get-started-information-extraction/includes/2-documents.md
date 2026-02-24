@@ -14,22 +14,21 @@ Azure Content Understanding follows a model‑driven extraction workflow in whic
 
 1. **Ingest content**: You submit content to Azure Content Understanding.
 
-2. **AI-powered analysis**: The service uses a combination of: OCR, speech recognition, natural language understanding, and multimodal AI models to analyze the content. 
+2. **AI-powered analysis**: The service uses a combination of: Optical Character Recognition (OCR), speech recognition, natural language understanding, and multimodal AI models to analyze the content. 
 
 3. **Structured output**: The service returns structured results (for example, in JSON) that match your model—making the data easy to store, search, or integrate into downstream systems. 
 
 >[!NOTE]
-> JSON (JavaScript Object Notation) is a text‑based data format used to store and exchange structured data between systems. It is easy for humans to read and write, and easy for machines to parse and generate. 
+> JSON (JavaScript Object Notation) is a text‑based data format used to store and exchange structured data between systems. It's easy for humans to read and write, and easy for machines to parse and generate. 
 
 #### Understand schemas 
 
-**Optical Character Recognition (OCR)** allows a computer to 'read' text from pictures, such as scanned documents, photos of receipts, or images of printed pages, and turn that text into editable and searchable digital text. Basic OCR helps recognize printed text, focuses on text extraction, and *does not* understand meaning, context, or relationships between words. 
+OCR (optical character recognition) allows a computer to 'read' text from pictures, such as scanned documents, photos of receipts, or images of printed pages, and turn that text into editable and searchable digital text. Basic OCR helps recognize printed text, focuses on text extraction, and *doesn't* understand meaning, context, or relationships between words. 
 
 Azure Content Understanding's document analysis capabilities go beyond simple OCR-based text extraction to include **schema-based** extraction of fields and their values. The schema-driven approach is what differentiates Azure Content Understanding from basic OCR or transcription services.
 
-In Azure Content Understanding, a schema describes *what information you want to extract* and *how that information should be structured* when unstructured content (documents, audio, images, or video) is analyzed. 
+A schema describes *what information you want to extract* and *how that information should be structured*. When you define a schema, you specify fields to extract. A schema lists the specific fields or entities you care about.
 
-When you define a schema, you specify fields to extract. A schema lists the specific fields or entities you care about.
 For example, suppose you define a schema that includes the common fields typically found in an invoice, such as:
 
 - Vendor name
@@ -55,12 +54,12 @@ Azure Content Understanding can apply the invoice schema to your invoice and ide
 
 ![Photograph of an analyzed invoice with detected fields highlighted.](../media/analyzed-invoice.png)
 
-A schema also defines the field structure. Schemas support *structured and nested fields*, not just flat text. For example: 
+The schema also defines the field structure. Schemas support *structured and nested fields*, not just flat text. For example: 
 
 - `Items` is a collection
 - Each item has `description`, `unit price`, `quantity`, and `line total`
 
-Identifying structured fields allows Azure Content Understanding to understand relationships between values, such as which price belongs to which item—something OCR alone cannot do. 
+Identifying structured fields allows Azure Content Understanding to understand relationships between values, something OCR alone cannot do. 
 
 In the invoice example, for each detected *field*, you can extract nested values:
 
@@ -94,11 +93,11 @@ Azure Content Understanding extracts expected meaning, not just labels. Schemas 
 - Fields can be extracted even if labels differ
 - Fields can be extracted even if labels are missing
 
-For example, “Invoice No.”, “Invoice #”, or an unlabeled number can all map to `InvoiceNumber` if the analyzer determines they represent the same concept. 
+For example, *Invoice No.*, *Invoice #*, or an unlabeled number can all map to `InvoiceNumber` if the analyzer determines they represent the same concept. 
 
 #### Understand analyzers 
 
-An **analyzer** is a unit in Azure Content Understanding that takes input, applies AI analysis, and produces structured results. Analyzers consistently apply the same extraction logic to all incoming content. Once it is configured, an analyzer ensures a schema is reused consistently for every analysis request. Analyzers also produce predictable JSON results which makes downstream processing (storage, search, automation) easier.
+An **analyzer** is a unit in Azure Content Understanding that takes input, applies AI analysis, and produces structured results. Analyzers consistently apply the same extraction logic to all incoming content. Once it's configured, an analyzer ensures a schema is reused consistently for every analysis request. Analyzers also produce predictable JSON results. The structured results make downstream processing (storage, search, automation) easier.
 
 Azure Content Understanding offers prebuilt analyzers for common scenarios and supports custom analyzers tailored to your needs. At a high level:
 
@@ -133,7 +132,7 @@ In Foundry portal, you can also view the JSON results of the processing.
 You can use the **Content Understanding API** to build a lightweight client application that extracts data programmatically. 
 
 >[!NOTE]
-> A client application is a software program that runs on a user's device and requests services or data from another system, typically a server, over a network. The *client* is the part of an application that users interact with, while the *server* does the heavy work behind the scenes. An API lets applications request data or actions from a service and receive a structured response, without needing to know how the service is built internally.
+> A client application is a software program that runs on a user's device and requests services or data from another system, typically a server, over a network. The *client* is the part of an application that users interact with, while the *server* does the heavy work behind the scenes. Applications can request data or actions from a service and receive a structured response using an API.
 
 When you use the Content Understanding API, you can choose a prebuilt analyzer or create a custom analyzer. Prebuilt analyzers include: `prebuilt-invoice`, `prebuilt-imageSearch`, `prebuilt-audioSearch`, and `prebuilt-videoSearch`. When you submit content for analysis to the analyzer, the analysis is **asynchronous**, which means you get the result later when it's ready. Because the analysis is asynchronous, you need to *poll* the Operation-Location URL (or `analyzerResults`) until the job succeeds. 
 
@@ -149,7 +148,7 @@ python -m pip install azure-ai-contentunderstanding
 
 2. Identify your Foundry resource endpoint and API key or Microsoft Entra ID. Your endpoint typically looks like: `https://<your-resource-name>.services.ai.azure.com/`
 
-3. Create and run the client application code. The `analzyer_id` is the ID of the prebuilt analyzer. You can find a list of prebuilt analyzer IDs [here](/azure/ai-services/content-understanding/concepts/prebuilt-analyzers). 
+3. Create and run the client application code. The `analzyer_id` is the ID of the prebuilt analyzer. You can find a list of prebuilt analyzer ID values [here](/azure/ai-services/content-understanding/concepts/prebuilt-analyzers). 
 
 ```python
 import os
@@ -207,6 +206,6 @@ The resulting output is JSON that shows the extracted markdown, fields, data in 
 }
 ```
 
-Content Understanding includes multiple predefined analyzers for common document types, as well as virtual tools to help you create custom analyzers for your particular data processing scenarios. Next, learn how to use Azure Content Understanding analyzers to extract structured data from audio and video. 
+Next, learn how to use Azure Content Understanding analyzers to extract structured data from audio and video. 
  
 ::: zone-end

@@ -6,9 +6,7 @@
 
 ::: zone pivot="text"
 
-As well as traditional documents and forms, business information is increasingly found in multimedia formats such as audio and video files. For example, businesses often record calls in order to analyze them later. The growth of video conferencing means that a lot of useful information is captured in recorded meetings. 
-
-Azure Content Understanding includes analyzers for audio and video content that you can use to extract insights that would otherwise be locked up in media files. 
+Business information is increasingly found in multimedia formats such as audio and video files. For example, businesses often record calls in order to analyze them later. The growth of video conferencing means that useful information is often captured in recorded meetings. Azure Content Understanding supports both audio and video data extraction and analysis.
 
 ## Extracting structured data from audio 
 
@@ -39,7 +37,7 @@ Thanks, bye!
 Using Azure Content Understanding to analyze the audio recording and apply your schema produces the following results:
 
 - **Caller**: Ava from Contoso
-- **Message summary**: Ava from Contoso called to follow up on a meeting and mentioned that they can meet the price expectations. She requested a callback or an email to discuss next steps.
+- **Message summary**: Ava from Contoso called to follow up on a meeting and mentioned that they can meet the price expectations. They requested a callback or an email to discuss next steps.
 - **Requested actions**: Call back or send an email to discuss next steps.
 - **Callback number**: 555-12345
 - **Alternative contact details**: Ava@contoso.com
@@ -58,7 +56,7 @@ Let's take a look at how we can use content understanding to analyze a call reco
 
 :::image type="content" source="../media/audio-extraction-playground.png" alt-text="Screenshot of the classic Foundry portal with audio analyzed with Azure Content Understanding." lightbox="../media/audio-extraction-playground.png":::
 
-In the returned results, you can see specific information that has been identified in the call. As with other analyzers in content understanding, the results are in JSON format for further processing. 
+In the returned results, you can see specific information from the call. As with other analyzers in content understanding, the results are in JSON format for further processing. 
 
 :::image type="content" source="../media/audio-json-result.png" alt-text="Screenshot of the classic Foundry portal where audio is analyzed and JSON is returned." lightbox="../media/audio-json-result.png":::
 
@@ -73,11 +71,11 @@ Let's first look at one image from the conference room camera. Suppose you defin
 - Remote attendees
 - Total attendees
 
-You can use Azure Content Understanding to analyze the following from the conference room camera:
+You could use Azure Content Understanding to analyze an image from the conference room camera:
 
 ![Photograph of a person in a conference room on a call with three remote attendees.](../media/conference-call.jpg)
 
-When applying the preceding schema to this image, Azure Content Understanding produces the following results:
+After applying the schema to the image, Azure Content Understanding returned structured data:
 
 - **Location**: Conference room
 - **In-person attendees**: 1

@@ -6,7 +6,7 @@
 
 ::: zone pivot="text"
 
-Anyone who has had to manually process invoices or forms knows how challenging it is. The great news is that we can use AI to eliminate manual effort and build the information systems of the future. AI-powered information extraction and analysis enables organizations to gain actionable insights from data that might otherwise be locked up in documents, images, audio files, or other assets. 
+Anyone who has manually processed invoices or forms knows how challenging it is. The great news is that we can use AI to eliminate manual effort and build the information systems of the future. AI-powered information extraction and analysis enable organizations to gain actionable insights from data that might otherwise be locked up in documents, images, audio, video, or other assets. 
 
 Examples of information extraction scenarios include:
 - **Expense claim processing**: A company needs to extract expense descriptions and amounts from scanned receipts.
@@ -17,9 +17,9 @@ Examples of information extraction scenarios include:
 
 Azure Content Understanding extracts structured data from multiple content types including: 
 
-- **Documents & images:**: PDFs, forms, invoices, receipts, contracts
-- **Audio:**: recordings, calls
-- **Video:**: meetings, media files 
+- **Documents & images:**: such as PDFs, forms, invoices, receipts, contracts
+- **Audio:**: such as recordings or calls
+- **Video:**: such as video of meetings or other media files 
 
 Azure Content Understanding's AI-powered information extraction automates the process of turning unstructured content into machine‑readable data that can be searched and analyzed. Next, learn how to extract structured data from unstructured documents and forms.
 
