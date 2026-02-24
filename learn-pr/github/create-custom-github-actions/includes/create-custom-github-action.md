@@ -39,9 +39,9 @@ Packaged composite actions bundle multiple steps into a reusable unit. These act
 
 When creating a packaged composite action, the steps are defined in a single `action.yml` file. This file specifies the inputs, outputs, and the sequence of commands or actions to execute. Packaged composite actions are particularly useful for automating repetitive tasks or combining multiple shell commands into a single reusable action.
 
-## Create a composite qction
+## Create a composite action
 
-### 1. Set Up a directory for the composite action
+### 1. Set Up a directory for the composite actions
 
 You must place your composite action in its own directory inside the repository.
 
