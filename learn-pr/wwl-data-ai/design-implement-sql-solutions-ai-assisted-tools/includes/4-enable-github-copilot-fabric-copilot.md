@@ -47,7 +47,7 @@ Visual Studio Code provides a flexible environment for database development with
 4. Search for and install the **GitHub Copilot Chat** extension
 5. Sign in to your GitHub account when prompted
 
-:::image type="content" source="../media/github-copilot-extension-vscode.png" alt-text="Screenshot showing the GitHub Copilot extension in Visual Studio Code.":::
+:::image type="content" source="../media/github-copilot-extension-vs-code.png" alt-text="Screenshot showing the GitHub Copilot extension in Visual Studio Code.":::
 
 For SQL database development, you'll also want the MSSQL extension:
 
@@ -57,7 +57,7 @@ For SQL database development, you'll also want the MSSQL extension:
 
 With both Copilot and MSSQL extensions installed, you can start conversations about your database directly in the Copilot Chat panel. Right-click on a connected database and select **Chat with this database** to begin a context-aware conversation.
 
-:::image type="content" source="../media/vscode-chat-database-context-menu.png" alt-text="Screenshot showing the database context menu with the Chat with this database option.":::
+:::image type="content" source="../media/vs-code-chat-database-context-menu.png" alt-text="Screenshot showing the database context menu with the Chat with this database option.":::
 
 ## Enable Fabric Copilot
 
