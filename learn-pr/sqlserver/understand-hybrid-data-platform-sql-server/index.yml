@@ -1,0 +1,46 @@
+### YamlMime:Module
+uid: learn.wwl.understand-hybrid-data-platform-sql-server
+metadata:
+  title: Understand Hybrid Data Platform on SQL Server 2025
+  description: "This module helps users understand the hybrid data platform capabilities of SQL Server 2025."
+  ms.date: 11/3/2025
+  author: JulianePadrao
+  ms.author: jupadrao
+  ms.topic: module
+  ms.custom:
+    - build-2023
+  ms.service: azure
+subjects:
+  - databases  
+title: Understand hybrid data platform on SQL Server 2025
+summary: Learn about the cloud connected capabilities of SQL Server 2025 for hybrid data platforms.
+abstract: |
+  In this module, you'll be able to:
+  *   Discover best practices for disaster recovery and extended capabilities
+  *   Describe how Azure Arc-enabled SQL Server works for centralized management
+  *   Understand how to implement near real-time analytics with mirroring in Microsoft Fabric
+  *   Explain enhanced security features including Microsoft Entra authentication and managed identity support
+prerequisites: |
+  * Basic working knowledge of SQL Server, including deployment, security, query processing, and high availability
+  * Fundamental knowledge of the T-SQL language
+  * Basic knowledge of Azure concepts, including subscriptions, resource groups, Infrastructure-as-a-Service and Platform-as-a-Service
+  * Understanding of hybrid cloud architectures and their benefits
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+  - database-administrator
+  - data-engineer
+  - administrator
+products:
+- sql-server
+units:
+- learn.wwl.understand-hybrid-data-platform-sql-server.introduction
+- learn.wwl.understand-hybrid-data-platform-sql-server.business-continuity-with-azure-sql-managed-instance
+- learn.wwl.understand-hybrid-data-platform-sql-server.azure-arc-enabled
+- learn.wwl.understand-hybrid-data-platform-sql-server.near-real-time-analytics-synapse-link-for-sql
+- learn.wwl.understand-hybrid-data-platform-sql-server.azure-active-directory-azure-ad-authentication
+- learn.wwl.understand-hybrid-data-platform-sql-server.knowledge-check
+- learn.wwl.understand-hybrid-data-platform-sql-server.summary
+badge:
+  uid: learn.wwl.understand-hybrid-data-platform-sql-server.badge
