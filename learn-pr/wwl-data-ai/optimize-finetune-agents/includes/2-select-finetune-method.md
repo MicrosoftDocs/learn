@@ -15,9 +15,7 @@ Not all fine-tuning methods solve the same problems. Adventure Works needs to im
 
 Three key dimensions determine which fine-tuning method fits your project: the data you can create, the costs you can bear, and the purpose you're optimizing for. Select a method below to explore how each dimension shapes your decision.
 
-::: zone pivot="method-sft"
-
-### Supervised Fine-Tuning (SFT)
+# [Supervised Fine-Tuning (SFT)](#tab/method-sft)
 
 **Data requirements**: You need 50-100+ labeled examples showing exact desired outputs. Each example pairs a prompt with the complete response you want the model to produce. At Adventure Works, this means gathering gear recommendation responses with specifications, pricing, and availability in their standard structure. With 300 historical gear interactions already documented, they have sufficient volume to train format consistency across product queries.
 
@@ -25,11 +23,7 @@ Three key dimensions determine which fine-tuning method fits your project: the d
 
 **Primary purpose**: SFT excels at format consistency, style adherence, and domain terminology. It teaches models to follow templates and maintain standardized structures across responses—exactly what Adventure Works needs when customers expect product comparisons with technical specifications in consistent formats.
 
-:::
-
-::: zone pivot="method-rft"
-
-### Reinforcement Fine-Tuning (RFT)
+# [Reinforcement Fine-Tuning (RFT)](#tab/method-rft)
 
 **Data requirements**: You need 30-50+ prompts representing reasoning challenges plus a grader function that scores solution quality. The grader can be code-based (checking specific criteria) or model-based (using another AI to evaluate). Adventure Works might use prompts describing complex trip planning scenarios with a grader checking whether recommendations consider fitness, weather, experience, and safety constraints simultaneously.
 
@@ -37,11 +31,7 @@ Three key dimensions determine which fine-tuning method fits your project: the d
 
 **Primary purpose**: RFT excels at complex reasoning, problem-solving, and multi-step analysis. It develops logic to handle interacting constraints and trade-offs—valuable when trip planning requires reasoning about how weather, fitness levels, experience, trail difficulty, and seasonal factors interact rather than treating each factor independently.
 
-:::
-
-::: zone pivot="method-dpo"
-
-### Direct Preference Optimization (DPO)
+# [Direct Preference Optimization (DPO)](#tab/method-dpo)
 
 **Data requirements**: You need 50-100+ preference pairs where each pair shows a prompt with two responses—one clearly better capturing your values than the other. Adventure Works creates pairs from safety recommendations where the preferred version balances honesty about risks with encouragement, while the rejected version either sounds alarmist or dismisses genuine hazards. Both format availability and volume feasibility shape your options.
 
@@ -49,9 +39,7 @@ Three key dimensions determine which fine-tuning method fits your project: the d
 
 **Primary purpose**: DPO excels at subjective preferences, tone alignment, and content choices. It calibrates outputs to match human values around communication style—critical when Adventure Works wants safety recommendations to balance product suggestions with precautions in a way that feels helpful rather than pushy or dismissive.
 
-:::
-
-::: zone-end
+---
 
 ## Recognize problems fine-tuning solves
 

@@ -12,7 +12,6 @@ metadata:
   ms.custom: ai-learning-hub
   ms.collection:
     - wwl-ai-copilot
-zone_pivot_groups: fine-tuning-method
 title: Optimize and fine-tune AI agents for production
 summary: "Learn to evaluate fine-tuning methods, design synthetic data strategies, assess model performance, and manage model lifecycles from development through production."
 abstract: |

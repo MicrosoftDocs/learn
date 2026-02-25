@@ -1,4 +1,4 @@
-Fine-tuning involves combining a suitable *foundation* model to use as a base, and with a set of *training data* that includes example prompts and responses that the model can learn from. This unit covers understanding the training data format, preparing datasets from real data, and generating synthetic data for fine-tuning.
+Fine-tuning combines a foundation model with training data that includes example prompts and responses. This unit covers [understanding the training data format](#understand-the-training-data-format), [preparing datasets from real data](#prepare-datasets-from-real-data), and [generating synthetic data for fine-tuning](#generate-synthetic-data-for-fine-tuning).
 
 ![Diagram of a base model plus training data resulting in a fine-tuned model.](../media/fine-tuning.png)
 
