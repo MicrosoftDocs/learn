@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-implement-sql-solutions-ai-assisted-tools.summary
+title: Summary
+metadata:
+  title: Summary
+  description: Summary of designing and implementing SQL solutions using AI-assisted tools including GitHub Copilot and Fabric Copilot.
+  ms.date: 02/02/2026
+  author: JulianePadrao
+  ms.author: jupadrao
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/10-summary.md)]
