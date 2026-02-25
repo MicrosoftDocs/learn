@@ -19,6 +19,7 @@ abstract: |
     - Analyze security alerts using GitHub Copilot's Ask mode.
     - Remediate hard-coded secrets using GitHub Copilot's Agent mode.
 prerequisites: |
+  - Experience using Git and GitHub for version control.
   - Experience using GitHub Copilot in Visual Studio Code.
   - Experience developing C# applications.
 iconUrl: /learn/achievements/generic-badge.svg
