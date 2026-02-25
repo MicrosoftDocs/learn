@@ -1,4 +1,4 @@
-Custom agents are specialized AI assistants that you configure for particular roles or workflows in Visual Studio Code. Each agent encapsulates a set of instructions and tool permissions that steer GitHub Copilot's behavior to act as a specific type ofexpert. When you select a custom agent in GitHub Copilot Chat, the AI adopts that agent's persona, follows its guidelines, and uses only the tools you assigned to it.
+Custom agents are specialized AI assistants that you configure for particular roles or workflows in Visual Studio Code. Each agent encapsulates a set of instructions and tool permissions that steer GitHub Copilot's behavior to act as a specific type of expert. When you select a custom agent in GitHub Copilot Chat, the AI adopts that agent's persona, follows its guidelines, and uses only the tools you assigned to it.
 
 ## What are custom GitHub Copilot agents?
 

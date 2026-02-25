@@ -2,7 +2,7 @@ Individual custom agents are powerful on their own, but their full potential eme
 
 ## What are handoffs?
 
-Handoffs are a mechanism that allows one custom agent to propose a transition to another agent after completing its part of a task. When an agent finishes its response, it can present a handoff button—a suggested "next action"—that, when selected, switches the chat to a target agent and optionally prefills a prompt to continue the workflow.
+Handoffs are a mechanism that allow one custom agent to propose a transition to another agent after completing its part of a task. When an agent finishes its response, it can present a handoff button—a suggested "next action"—that, when selected, switches the chat to a target agent and optionally prefills a prompt to continue the workflow.
 
 For example, a Planner agent could produce a detailed implementation plan and then display a "Start Implementation" button. When the developer selects this button, GitHub Copilot Chat switches to an Implementer agent that receives the plan as context along with a prompt like "Now implement your suggested plan." The developer reviews the plan before selecting the button, maintaining control over the workflow while the agents handle the specialized work.
 
@@ -89,7 +89,7 @@ By default, custom agents run on the client (inside Visual Studio Code). However
 
 ## GitHub Copilot hooks
 
-GitHub Copilot hooks are a preview feature that lets you run custom commands automatically at specific points in the GitHub Copilot workflow. Hooks are defined in your Visual Studio Code settings (not in agent files) and trigger before or after specific events, such as before GitHub Copilot saves a file or after it runs a terminal command. For example, you can configure a hook to run a linter automatically after GitHub Copilot edits a file, ensuring that AI-generated code always meets your formatting standards before being saved.
+GitHub Copilot hooks enable you to execute custom shell commands at strategic points in an agent's workflow. Hooks are defined in your Visual Studio Code settings (not in agent files) and trigger before or after specific events, such as before GitHub Copilot saves a file or after it runs a terminal command. For example, you can configure a hook to run a linter automatically after GitHub Copilot edits a file, ensuring that AI-generated code always meets your formatting standards before being saved.
 
 Hooks extend the automation capabilities of multi-agent workflows by adding lifecycle-based actions that complement the agent's own instructions and tools.
 
