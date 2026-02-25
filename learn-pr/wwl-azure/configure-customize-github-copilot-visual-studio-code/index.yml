@@ -17,6 +17,7 @@ abstract: |
   - Configure and use agent handoffs to orchestrate multi-step development workflows.
   - Implement a real-world scenario by defining custom instructions and chaining multiple custom agents to collaboratively complete a coding task.
 prerequisites: |
+  - Experience using Git and GitHub for version control.
   - Experience using GitHub Copilot Chat in Visual Studio Code.
   - Experience developing C# applications.
 iconUrl: /learn/achievements/generic-badge.svg
