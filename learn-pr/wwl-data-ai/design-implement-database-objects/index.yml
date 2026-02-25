@@ -46,16 +46,16 @@ subjects:
 - cloud-computing
 - app-development
 units:
-- learn-wwl.design-implement-database-objects.introduction
-- learn-wwl.design-implement-database-objects.understanding-platform-choices
-- learn-wwl.design-implement-database-objects.design-implement-tables
-- learn-wwl.design-implement-database-objects.design-implement-indexes
-- learn-wwl.design-implement-database-objects.specialized-table-types
-- learn-wwl.design-implement-database-objects.design-implement-constraints
-- learn-wwl.design-implement-database-objects.design-implement-json
-- learn-wwl.design-implement-database-objects.design-implement-partitioning
-- learn-wwl.design-implement-database-objects.exercise-create-database-objects
-- learn-wwl.design-implement-database-objects.knowledge-check
-- learn-wwl.design-implement-database-objects.summary
+- learn.wwl.design-implement-database-objects.introduction
+- learn.wwl.design-implement-database-objects.understanding-platform-choices
+- learn.wwl.design-implement-database-objects.design-implement-tables
+- learn.wwl.design-implement-database-objects.design-implement-indexes
+- learn.wwl.design-implement-database-objects.specialized-table-types
+- learn.wwl.design-implement-database-objects.design-implement-constraints
+- learn.wwl.design-implement-database-objects.design-implement-json
+- learn.wwl.design-implement-database-objects.design-implement-partitioning
+- learn.wwl.design-implement-database-objects.exercise-create-database-objects
+- learn.wwl.design-implement-database-objects.knowledge-check
+- learn.wwl.design-implement-database-objects.summary
 badge:
-  uid: learn-wwl.design-implement-database-objects.badge
+  uid: learn.wwl.design-implement-database-objects.badge
