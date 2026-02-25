@@ -8,6 +8,6 @@ metadata:
   author: petender
   ms.author: petender
   ms.topic: unit
-durationInMinutes: 5
+durationInMinutes: 4
 content: |
   [!include[](includes/6-refine-work-items-for-agent-delegation.md)]
