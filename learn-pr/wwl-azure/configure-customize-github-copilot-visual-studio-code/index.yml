@@ -3,7 +3,7 @@ uid: learn.wwl.configure-customize-github-copilot-visual-studio-code
 metadata:
   title: "Configure GitHub Copilot Instructions and Create Custom Agents"
   description: "This module covers how to configure and customize GitHub Copilot in Visual Studio Code using instruction files, prompt files, custom agents, and agent handoffs to create tailored AI-assisted development workflows."
-  ms.date: 02/17/2026
+  ms.date: 02/25/2026
   author: chrishowd
   ms.author: cahowd
   ms.topic: module
