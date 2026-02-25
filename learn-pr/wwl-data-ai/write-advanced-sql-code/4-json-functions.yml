@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.write-advanced-sql-code.json-functions
+title: Process JSON data with built-in functions
+metadata:
+  title: Process JSON data with built-in functions
+  description: Learn how to use JSON functions like JSON_OBJECT, JSON_ARRAY, JSON_ARRAYAGG, JSON_CONTAINS, OPENJSON, and JSON_VALUE in SQL Server and Azure SQL.
+  ms.date: 01/28/2026
+  author: JulianePadrao
+  ms.author: jupadrao
+  ms.topic: unit
+durationInMinutes: 12
+content: |
+  [!include[](includes/4-json-functions.md)]
