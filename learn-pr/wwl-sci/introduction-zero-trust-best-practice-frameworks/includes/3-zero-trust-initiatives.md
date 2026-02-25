@@ -22,10 +22,10 @@ The framework organizes adoption around a lifecycle with five phases:
 
 The framework applies the lifecycle through business scenarios that break work into concrete objectives. Each objective is a technical project that moves through the lifecycle independently, and you can stagger objectives so multiple workstreams progress in parallel. The framework includes these business scenarios:
 
-- **Rapidly modernize your security posture** — Build the organizational capacity and basic security hygiene needed for every other scenario.
-- **Secure remote and hybrid work** — Apply Zero Trust protections to identities, devices, and applications for remote access.
-- **Identify and protect sensitive business data** — Discover, classify, and protect sensitive data across your digital estate.
-- **Prevent or reduce business damage from a breach** — Limit blast radius through segmentation, threat detection, and response capabilities.
-- **Meet regulatory and compliance requirements** — Align Zero Trust protections with regulatory frameworks and track compliance status.
+- **Rapidly modernize your security posture**: Build the organizational capacity and basic security hygiene needed for every other scenario.
+- **Secure remote and hybrid work**: Apply Zero Trust protections to identities, devices, and applications for remote access.
+- **Identify and protect sensitive business data**: Discover, classify, and protect sensitive data across your digital estate.
+- **Prevent or reduce business damage from a breach**: Limit blast radius through segmentation, threat detection, and response capabilities.
+- **Meet regulatory and compliance requirements**: Align Zero Trust protections with regulatory frameworks and track compliance status.
 
 The *Rapidly modernize your security posture* scenario is typically the starting point because it builds the organizational capacity—strategy alignment, risk assessment, security hygiene, and a repeatable adoption process—needed to systematically execute the other business scenarios. In turn, the other scenarios supply the technical objectives that feed through this process and accelerate the overall transformation.
