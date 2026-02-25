@@ -37,16 +37,16 @@ products:
   - azure-sql-database
   - fabric
 units:
-  - learn.implement-data-security-compliance.introduction
-  - learn.implement-data-security-compliance.design-implement-data-encryption
-  - learn.implement-data-security-compliance.design-implement-dynamic-data-masking
-  - learn.implement-data-security-compliance.design-implement-row-level-security
-  - learn.implement-data-security-compliance.design-implement-permissions-secure-access
-  - learn.implement-data-security-compliance.implement-auditing
-  - learn.implement-data-security-compliance.secure-model-endpoints
-  - learn.implement-data-security-compliance.secure-graphql-rest-mcp-endpoints
-  - learn.implement-data-security-compliance.exercise-implement-security-features
-  - learn.implement-data-security-compliance.knowledge-check
-  - learn.implement-data-security-compliance.summary
+  - learn.wwl.implement-data-security-compliance.introduction
+  - learn.wwl.implement-data-security-compliance.design-implement-data-encryption
+  - learn.wwl.implement-data-security-compliance.design-implement-dynamic-data-masking
+  - learn.wwl.implement-data-security-compliance.design-implement-row-level-security
+  - learn.wwl.implement-data-security-compliance.design-implement-permissions-secure-access
+  - learn.wwl.implement-data-security-compliance.implement-auditing
+  - learn.wwl.implement-data-security-compliance.secure-model-endpoints
+  - learn.wwl.implement-data-security-compliance.secure-graphql-rest-mcp-endpoints
+  - learn.wwl.implement-data-security-compliance.exercise-implement-security-features
+  - learn.wwl.implement-data-security-compliance.knowledge-check
+  - learn.wwl.implement-data-security-compliance.summary
 badge:
-  uid: learn.implement-data-security-compliance.badge
+  uid: learn.wwl.implement-data-security-compliance.badge
