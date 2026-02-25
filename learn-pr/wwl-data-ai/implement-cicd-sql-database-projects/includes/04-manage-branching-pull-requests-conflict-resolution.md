@@ -4,9 +4,9 @@ Two developers add columns to the same table on the same day. One pushes to prod
 
 A simple branching strategy for SQL database projects follows three principles:
 
-1. Create a **feature branch** for every change, whether it's new tables, bug fixes, or stored procedure updates.
-2. Merge feature branches into **main** through pull requests.
-3. Always keep main in a deployable state.
+- Creates a **feature branch** for every change, whether it's new tables, bug fixes, or stored procedure updates.
+- Merges feature branches into **main** through pull requests.
+- Always keep main in a deployable state.
 
 When you start a database change, branch off `main`. Your work is isolated from everything else in progress. You modify the relevant `.sql` files, and because each object has its own file, a commit that adds a column to `Customers` touches only `Tables/Customers.sql` and nothing else.
 

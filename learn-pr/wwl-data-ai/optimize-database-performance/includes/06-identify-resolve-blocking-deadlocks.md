@@ -136,10 +136,6 @@ ORDER BY deadlock_time DESC;
 
 The deadlock graph includes three sections. The **victim-list** identifies which transaction was terminated. The **process-list** shows each process involved, including the query text, isolation level, and lock mode. The **resource-list** shows the locked resources and which process owns and waits on each one.
 
-If you save the deadlock graph XML as an `.xdl` file and open it in SQL Server Management Studio (SSMS), you get a visual representation. Processes appear as ovals and locked resources appear as rectangles. The deadlock victim has an "X" drawn across its oval.
-
-![Screenshot of an XDL file opened in SSMS. The deadlock graph is displayed graphically, with processes indicated by ovals and lock resources as rectangles.](../media/deadlock-graph.png)
-
 In Azure SQL Database, you can also configure deadlock alerts through the Azure portal to receive notifications when deadlocks occur.
 
 ### Prevent deadlocks

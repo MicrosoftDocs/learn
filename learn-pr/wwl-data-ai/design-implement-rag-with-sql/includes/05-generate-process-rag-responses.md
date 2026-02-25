@@ -113,11 +113,11 @@ You now know each piece of the RAG puzzle. Let's put them together into a single
 
 Here's what the procedure does:
 
-1. Convert the question into an embedding so you can compare it against your product descriptions.
-1. Find the most relevant products using vector distance to compare the question embedding against each product's precomputed description embedding.
-1. Build the prompt with a system message that tells the model to stick to the provided data, and a user message that combines the retrieved products with the original question.
-1. Send everything to Azure OpenAI.
-1. Extract the answer from the response and return it to the caller.
+1. Converts the question into an embedding so you can compare it against your product descriptions.
+1. Finds the most relevant products using vector distance to compare the question embedding against each product's precomputed description embedding.
+1. Builds the prompt with a system message that tells the model to stick to the provided data, and a user message that combines the retrieved products with the original question.
+1. Sends everything to Azure OpenAI.
+1. Extracts the answer from the response and return it to the caller.
 
 ```sql
 CREATE PROCEDURE dbo.AskProductQuestion

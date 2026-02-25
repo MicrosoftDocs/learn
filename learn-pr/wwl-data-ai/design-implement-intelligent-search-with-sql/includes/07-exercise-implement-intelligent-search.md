@@ -6,4 +6,4 @@ In this exercise, you implement different search approaches in an Azure SQL Data
 
 Launch the exercise and follow the instructions.
 
-[![Button to launch exercise.](../media/launch-exercise.png)](https://go.microsoft.com/fwlink/?linkid=2350413&clcid=0x409)
+[![Diagram of button to launch exercise.](../media/launch-exercise.png)](https://go.microsoft.com/fwlink/?linkid=2350413&clcid=0x409)
