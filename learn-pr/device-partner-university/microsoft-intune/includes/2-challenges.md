@@ -58,7 +58,7 @@ Supported scenarios include:
 
 - **Public or shared devices:** Users can securely sign in from public or shared Windows computers—such as conference kiosks or hotel business centers—without leaving corporate data behind on the device.
 
-Learn more about [app management](https://learn.microsoft.com/mem/intune/fundamentals/manage-apps).
+Learn more about [app management](/mem/intune/fundamentals/manage-apps).
 
 ### App management on iOS and Android
 
