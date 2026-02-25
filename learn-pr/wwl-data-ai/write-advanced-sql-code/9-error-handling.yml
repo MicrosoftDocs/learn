@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.write-advanced-sql-code.error-handling
+title: Handle errors with TRY...CATCH
+metadata:
+  title: Handle errors with TRY...CATCH
+  description: Learn how to implement structured error handling in SQL Server and Azure SQL using TRY...CATCH, error functions, THROW, and transaction management.
+  ms.date: 01/28/2026
+  author: JulianePadrao
+  ms.author: jupadrao
+  ms.topic: unit
+durationInMinutes: 12
+content: |
+  [!include[](includes/9-error-handling.md)]
