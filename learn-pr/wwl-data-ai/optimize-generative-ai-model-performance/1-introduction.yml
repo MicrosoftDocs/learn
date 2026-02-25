@@ -5,10 +5,10 @@ metadata:
   title: Introduction
   description: Introduction to optimizing generative AI model performance with Microsoft Foundry.
   author: ivorb
-  ms.author: ivorb
+  ms.author: berryivor
   ms.date: 02/24/2026
   ms.topic: unit
-  ai-usage: ai-generated
+  ai-usage: ai-assisted
 durationInMinutes: 2
 content: |
   [!include[](includes/1-introduction.md)]

@@ -4,11 +4,11 @@ metadata:
   title: Optimize generative AI model performance with Microsoft Foundry
   description: Explore complementary strategies to optimize generative AI model performance, including prompt engineering, system messages, model parameters, Retrieval Augmented Generation (RAG), and fine-tuning. Learn when to use each strategy and how to combine them.
   author: ivorb
-  ms.author: ivorb
+  ms.author: berryivor
   ms.date: 02/24/2026
   ms.service: azure-ai-foundry
   ms.topic: module-standard-task-based
-  ai-usage: ai-generated
+  ai-usage: ai-assisted
   ms.custom: ai-learning-hub
 title: Optimize generative AI model performance with Microsoft Foundry
 summary: "Explore complementary strategies to optimize generative AI model performance. Learn how to apply prompt engineering, ground your model with RAG, and fine-tune for consistent behavior—and when to combine these approaches."

@@ -5,10 +5,10 @@ metadata:
   title: Optimize model output with prompt engineering
   description: Learn how to use prompt engineering techniques including system messages, prompt patterns, and model parameters to optimize language model output.
   author: ivorb
-  ms.author: ivorb
+  ms.author: berryivor
   ms.date: 02/24/2026
   ms.topic: unit
-  ai-usage: ai-generated
+  ai-usage: ai-assisted
 durationInMinutes: 9
 content: |
   [!include[](includes/2-prompt-engineering.md)]
