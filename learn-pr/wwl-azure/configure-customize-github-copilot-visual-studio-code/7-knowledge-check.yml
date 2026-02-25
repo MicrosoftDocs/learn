@@ -1,0 +1,102 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-customize-github-copilot-visual-studio-code.knowledge-check
+title: Module assessment
+metadata:
+  title: Module Assessment
+  description: "Module assessment."
+  ms.date: 02/25/2026
+  author: chrishowd
+  ms.author: cahowd
+  ms.topic: unit
+durationInMinutes: 10
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is the purpose of a `.github/copilot-instructions.md` file in a repository?"
+    choices:
+    - content: "It configures which AI model Copilot uses for inline code completions."
+      isCorrect: false
+      explanation: "Incorrect. The `copilot-instructions.md` file provides custom guidelines for Copilot Chat responses, not model configuration for inline completions."
+    - content: "It provides always-on custom guidelines that are automatically included in every Copilot Chat request within the workspace."
+      isCorrect: true
+      explanation: "Correct. The `.github/copilot-instructions.md` file contains natural language guidelines in Markdown that Copilot automatically includes in every chat request, ensuring AI responses align with project-specific coding standards and conventions."
+    - content: "It stores environment variables that Copilot needs to access external APIs."
+      isCorrect: false
+      explanation: "Incorrect. The `copilot-instructions.md` file contains natural language guidelines for Copilot, not environment variables or API configuration."
+  - content: "How do `.instructions.md` files differ from the repository-wide `copilot-instructions.md` file?"
+    choices:
+    - content: "`.instructions.md` files replace the `copilot-instructions.md` file when both are present."
+      isCorrect: false
+      explanation: "Incorrect. When both exist, Copilot combines the repository-wide instructions with the relevant path-specific instructions rather than replacing one with the other."
+    - content: "`.instructions.md` files use an `applyTo` frontmatter field to target specific files or file patterns, applying instructions only when the agent is working on matching files."
+      isCorrect: true
+      explanation: "Correct. Path-specific `.instructions.md` files include a YAML frontmatter header with an `applyTo` field that uses glob patterns to specify which files the instructions apply to, enabling targeted guidance for different parts of the codebase."
+    - content: "`.instructions.md` files are only used for inline code completion suggestions, while `copilot-instructions.md` is used for chat responses."
+      isCorrect: false
+      explanation: "Incorrect. Neither file type affects inline code completions. Both types of instruction files apply to Copilot Chat and other high-level requests."
+  - content: "What is a custom agent in Visual Studio Code's Copilot Chat?"
+    choices:
+    - content: "A built-in Visual Studio Code extension that adds new programming language support."
+      isCorrect: false
+      explanation: "Incorrect. Custom agents are specialized AI configurations for Copilot Chat, not Visual Studio Code extensions for language support."
+    - content: "A specialized AI persona defined by a `.agent.md` file that encapsulates a set of instructions and tool permissions for a particular development role."
+      isCorrect: true
+      explanation: "Correct. Custom agents are defined using `.agent.md` Markdown files that include YAML frontmatter for metadata and tool configuration, plus a body with instructions that steer Copilot's behavior when that agent is selected."
+    - content: "A remote server that processes Copilot requests on behalf of the developer."
+      isCorrect: false
+      explanation: "Incorrect. Custom agents are locally defined configurations in `.agent.md` files, not remote server processes."
+  - content: "What does the `tools` field in a custom agent's YAML frontmatter control?"
+    choices:
+    - content: "The programming languages the agent can generate code in."
+      isCorrect: false
+      explanation: "Incorrect. The `tools` field controls what actions the agent can perform (such as reading, editing, or searching files), not which programming languages it supports."
+    - content: "Which actions the agent can perform, such as reading files, editing code, searching the workspace, or running terminal commands."
+      isCorrect: true
+      explanation: "Correct. The `tools` field restricts or empowers the agent with specific capabilities. For example, a planning agent might only have `['search', 'read']` tools, while an implementation agent would include `['search', 'read', 'edit', 'terminal']`."
+    - content: "The list of non-Microsoft extensions that the agent depends on."
+      isCorrect: false
+      explanation: "Incorrect. The `tools` field specifies built-in Copilot capabilities (like read, edit, search), not third-party extension dependencies."
+  - content: "What is a handoff in the context of custom Copilot agents?"
+    choices:
+    - content: "A mechanism for transferring Copilot Chat conversations to a human developer."
+      isCorrect: false
+      explanation: "Incorrect. Handoffs transition between custom agents within Copilot Chat, not from the AI to a human developer."
+    - content: "A transition that switches from one custom agent to another, carrying over context and optionally prefilling a prompt to continue a multi-step workflow."
+      isCorrect: true
+      explanation: "Correct. Handoffs are configured in the YAML frontmatter of an agent file and create buttons that, when selected, switch to a target agent with the conversation context preserved and an optional prompt prefilled."
+    - content: "A process that automatically saves the agent's output to a file in the workspace."
+      isCorrect: false
+      explanation: "Incorrect. Handoffs are transitions between agents in a workflow, not file-saving operations."
+  - content: "When a developer configures a handoff, what does setting `send: false` mean?"
+    choices:
+    - content: "The handoff button is hidden from the user interface."
+      isCorrect: false
+      explanation: "Incorrect. The `send` field controls whether the prompt is automatically submitted, not whether the handoff button is visible."
+    - content: "The prompt is prefilled in the chat input for the developer to review and edit before sending, rather than being submitted automatically."
+      isCorrect: true
+      explanation: "Correct. When `send` is `false` (the default), the handoff prefills the prompt text but waits for the developer to review and submit it manually, keeping the human in the loop."
+    - content: "The handoff is disabled and the agent can't transition to the target agent."
+      isCorrect: false
+      explanation: "Incorrect. The `send: false` setting doesn't disable the handoff. It simply requires the developer to manually submit the prefilled prompt rather than having it sent automatically."
+  - content: "What is the purpose of a `.prompt.md` file in the `.github/prompts/` folder?"
+    choices:
+    - content: "It defines a custom agent persona with specific tool permissions."
+      isCorrect: false
+      explanation: "Incorrect. Custom agent personas are defined in `.agent.md` files, not `.prompt.md` files."
+    - content: "It provides a reusable prompt template that can be invoked as a slash command in Copilot Chat to run a common task consistently."
+      isCorrect: true
+      explanation: "Correct. Prompt files (`.prompt.md`) are reusable prompt templates with optional YAML frontmatter and variable placeholders. Once created, they appear as slash commands in Copilot Chat, allowing the team to standardize common tasks like generating tests or producing documentation."
+    - content: "It configures which AI model Copilot uses for all chat interactions in the workspace."
+      isCorrect: false
+      explanation: "Incorrect. Prompt files define reusable prompt templates, not model configuration. Model preferences can be set per-agent or per-prompt using the `model` frontmatter field."
+  - content: "How do subagents differ from handoffs in custom agent workflows?"
+    choices:
+    - content: "Subagents and handoffs are different names for the same feature."
+      isCorrect: false
+      explanation: "Incorrect. Subagents and handoffs are distinct mechanisms. Subagents are invoked programmatically within an agent's response, while handoffs transfer control to the user to approve a transition."
+    - content: "Subagents are invoked automatically within an agent's processing and return results to the calling agent, while handoffs transfer control to the user to approve a transition to another agent."
+      isCorrect: true
+      explanation: "Correct. Subagents are called programmatically by the parent agent during its response processing—the result flows back to the calling agent automatically. Handoffs, by contrast, present a button to the user who decides whether to transition to the next agent."
+    - content: "Subagents can only run in the cloud, while handoffs run locally in Visual Studio Code."
+      isCorrect: false
+      explanation: "Incorrect. Both subagents and handoffs can run in either the client or the cloud, depending on the agent's `target` configuration."

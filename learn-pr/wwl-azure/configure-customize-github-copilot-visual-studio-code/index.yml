@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.wwl.configure-customize-github-copilot-visual-studio-code
+metadata:
+  title: "Configure GitHub Copilot Instructions and Create Custom Agents"
+  description: "This module covers how to configure and customize GitHub Copilot in Visual Studio Code using instruction files, prompt files, custom agents, and agent handoffs to create tailored AI-assisted development workflows."
+  ms.date: 02/25/2026
+  author: chrishowd
+  ms.author: cahowd
+  ms.topic: module
+  ms.service: github-copilot
+title: "Configure GitHub Copilot instructions and create custom agents"
+summary: This module covers how to configure and customize GitHub Copilot in Visual Studio Code using instruction files, prompt files, custom agents, and agent handoffs to create tailored AI-assisted development workflows.
+abstract: |
+  After completing this module, you're able to:
+  - Customize GitHub Copilot's responses using instruction files and prompt files to enforce project-specific coding styles, best practices, and guidelines.
+  - Create custom GitHub Copilot agents in Visual Studio Code with tailored instructions, tool permissions, and subagent configurations.
+  - Configure and use agent handoffs to orchestrate multi-step development workflows.
+  - Implement a real-world scenario by defining custom instructions and chaining multiple custom agents to collaboratively complete a coding task.
+prerequisites: |
+  - Experience using Git and GitHub for version control.
+  - Experience using GitHub Copilot Chat in Visual Studio Code.
+  - Experience developing C# applications.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+  - intermediate
+roles:
+  - developer
+products:
+  - github
+  - vs-code
+subjects:
+  - app-development
+  - productivity
+units:
+- learn.wwl.configure-customize-github-copilot-visual-studio-code.introduction
+- learn.wwl.configure-customize-github-copilot-visual-studio-code.examine-benefits-customize-github-copilot
+- learn.wwl.configure-customize-github-copilot-visual-studio-code.customize-copilot-responses-instruction-files
+- learn.wwl.configure-customize-github-copilot-visual-studio-code.create-custom-github-copilot-agents
+- learn.wwl.configure-customize-github-copilot-visual-studio-code.chain-agents-handoffs-multiple-step-tasks
+- learn.wwl.configure-customize-github-copilot-visual-studio-code.exercise-create-chain-custom-copilot-agents
+- learn.wwl.configure-customize-github-copilot-visual-studio-code.knowledge-check
+- learn.wwl.configure-customize-github-copilot-visual-studio-code.summary
+badge:
+  uid: learn.configure-customize-github-copilot-visual-studio-code.badge

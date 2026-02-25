@@ -34,6 +34,7 @@ modules:
 - learn.wwl.get-started-with-text-analysis-in-azure
 - learn.wwl.get-started-with-speech-in-azure
 - learn.wwl.get-started-with-computer-vision-in-azure
+- learn.wwl.get-started-information-extraction
 
 trophy:
   uid: learn.get-started-ai-apps-agents.trophy
