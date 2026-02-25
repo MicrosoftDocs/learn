@@ -1,6 +1,11 @@
-Fine-tuning a language model gives you greater control over how your model behaves, helping you achieve consistent responses in a specific style, format, and tone. Here you learn when to use fine-tuning and you explore three key fine-tuning techniques: 
+Fine-tuning a language model gives you greater control over how your model behaves, helping you achieve consistent responses in a specific style, format, and tone. Here you learn when to use fine-tuning and you explore five key fine-tuning techniques:
 
+Starting with the most basic approach:
 - Supervised fine-tuning for training with labeled examples
+
+And four more advanced techniques:
+- Function calling fine-tuning for structured output and API integration
+- Vision fine-tuning for image understanding tasks
 - Reinforcement fine-tuning for reward-based learning
 - Direct preference optimization for alignment using preference pairs
 
@@ -31,13 +36,13 @@ Microsoft Foundry supports multiple fine-tuning techniques, each designed for di
 
 ### Apply supervised fine-tuning
 
-**Supervised fine-tuning** is the most common approach where you train a base model on labeled example data. You provide the model with example conversations that demonstrate the desired behavior, including system messages, user prompts, and assistant responses. This technique is ideal for teaching the model specific formats, styles, tones, or domain-specific behaviors.
+**Supervised fine-tuning** is the most basic and common approach where you train a base model on labeled example data. You provide the model with example conversations that demonstrate the desired behavior, including system messages, user prompts, and assistant responses. This technique is ideal for teaching the model specific formats, styles, tones, or domain-specific behaviors.
 
-Supervised fine-tuning is supported for models like GPT-4, GPT-4o, GPT-3.5-Turbo, and many other foundation models in the model catalog.
+Supervised fine-tuning is supported for models like GPT-4, GPT-4o, GPT-3.5-Turbo, and many other foundation models in the model catalog. This is the recommended starting point for most fine-tuning scenarios.
 
 ### Implement reinforcement fine-tuning
 
-**Reinforcement fine-tuning (RFT)** is a technique that improves reasoning models by training them through a reward-based process, rather than relying only on labeled data. Instead of providing example responses, you provide prompts and a grader that scores the quality of the model's outputs. The model learns to generate better responses by maximizing the reward signal.
+**Reinforcement fine-tuning (RFT)** is an advanced technique that improves reasoning models by training them through a reward-based process, rather than relying only on labeled data. Instead of providing example responses, you provide prompts and a grader that scores the quality of the model's outputs. The model learns to generate better responses by maximizing the reward signal.
 
 RFT is especially useful for:
 
@@ -49,7 +54,7 @@ RFT is supported for advanced reasoning models like o4-mini and gpt-5. When usin
 
 ### Align with direct preference optimization
 
-**Direct preference optimization (DPO)** is an alignment technique that adjusts model weights based on human preferences. Instead of providing single example responses, you provide pairs of responses - one preferred and one nonpreferred - for each prompt. The model learns to generate outputs more similar to the preferred examples.
+**Direct preference optimization (DPO)** is an advanced alignment technique that adjusts model weights based on human preferences. Instead of providing single example responses, you provide pairs of responses - one preferred and one nonpreferred - for each prompt. The model learns to generate outputs more similar to the preferred examples.
 
 DPO is especially useful when:
 
@@ -59,4 +64,32 @@ DPO is especially useful when:
 - You want a computationally lighter alternative to reinforcement learning from human feedback (RLHF)
 
 DPO is supported for models like gpt-4o, gpt-4.1, and gpt-4.1-mini. You can use DPO with base models or with models already fine-tuned using supervised fine-tuning.
+
+### Fine-tune for function calling
+
+**Function calling fine-tuning** is an advanced technique that trains models to reliably call external functions or APIs with structured arguments. You provide training examples that demonstrate how the model should respond to user requests by calling specific functions with the correct parameters. This technique teaches the model when and how to use tools, improving its ability to generate structured output and integrate with external systems.
+
+Function calling fine-tuning is especially useful for:
+
+- Building agents that need to interact with APIs or databases
+- Ensuring consistent JSON schema adherence
+- Teaching domain-specific function usage patterns
+- Reducing errors in parameter extraction and function selection
+
+Function calling fine-tuning is supported for models like GPT-4o and GPT-4o-mini. You can combine this with supervised fine-tuning to teach both conversational behavior and function calling capabilities.
+
+### Fine-tune for vision tasks
+
+**Vision fine-tuning** is an advanced technique that enhances models' ability to understand and reason about images. You provide training examples that pair images with text prompts and expected responses, teaching the model to recognize specific visual patterns, objects, or concepts relevant to your domain. This technique is ideal for specialized computer vision applications where general-purpose vision models need domain-specific understanding.
+
+Vision fine-tuning is especially useful for:
+
+- Medical imaging analysis with specialized terminology
+- Industrial quality control and defect detection
+- Document understanding with custom layouts or formats
+- Domain-specific image classification and captioning
+
+Vision fine-tuning is supported for multimodal models like GPT-4o. You can fine-tune both the vision and language understanding capabilities together to create models tailored to your specific visual tasks.
+
+Now that you understand the options, let's explore what to consider when preparing your data for fine-tuning workloads.
 

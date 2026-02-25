@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.optimize-finetune-agents.exercise
+title: Exercise - Fine-tune a language model
+metadata:
+  title: Exercise - Fine-tune a language model
+  description: Exercise - Fine-tune a language model in the Microsoft Foundry portal.
+  author: madiepev
+  ms.author: madiepev
+  ms.date: 02/25/2026
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 60
+content: |
+  [!include[](includes/5-exercise.md)]
+
+
