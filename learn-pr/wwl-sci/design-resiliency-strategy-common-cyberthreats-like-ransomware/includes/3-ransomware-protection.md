@@ -19,7 +19,7 @@ This phase is designed to minimize the monetary incentive from ransomware attack
 
 The most immediate and effective action is to ensure your organization can restore your entire enterprise from immutable storage that neither the cybercriminal nor you can modify. Identify the most sensitive assets and protect them at a higher level of assurance.
 
-Your prioritized backup list also becomes your prioritized restore list. Identify business-critical systems in this priority order:
+Your prioritized backup list also becomes your prioritized restore list. Identify business-critical systems in this priority order, based on technical restoration dependencies (for example, identity systems must be restored first because all other systems depend on them for authentication and access):
 
 1. **Identity systems**: Active Directory, Microsoft Entra Connect, domain controllers
 2. **Human life systems**: Medical, safety, and life support systems

@@ -1,4 +1,3 @@
-## Evaluate solutions for security updates
 
 Security updates protect workloads against security vulnerabilities that are continuously discovered by threat researchers and attackers. Security update solutions help you evaluate, track, and deploy patches across your environment to reduce exposure to known vulnerabilities.
 

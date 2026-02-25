@@ -28,11 +28,11 @@ Effective business resiliency requires identifying which assets are most critica
 
 Work with business stakeholders to determine which systems, data, and processes are essential for maintaining operations. Microsoft documentation identifies five priority categories:
 
-1. **Identity systems**: Required for users to access all other systems, including Active Directory, Microsoft Entra Connect, and domain controllers.
-2. **Human life systems**: Any system that supports human life or could put it at risk, such as medical systems, safety systems, large machinery controls, and chemical or biological systems.
-3. **Financial systems**: Systems that process monetary transactions and keep the business operating, such as payment systems and financial reporting databases.
-4. **Product or service enablement**: Systems required to provide business services or produce products, including factory control systems, delivery infrastructure, and dispatch systems.
-5. **Security systems (minimum)**: Security systems needed to monitor for attacks and provide minimum security services. This should focus on ensuring current attacks can't immediately regain access to restored systems.
+- **Identity systems**: Required for users to access all other systems, including Active Directory, Microsoft Entra Connect, and domain controllers.
+- **Human life systems**: Any system that supports human life or could put it at risk, such as medical systems, safety systems, large machinery controls, and chemical or biological systems.
+- **Financial systems**: Systems that process monetary transactions and keep the business operating, such as payment systems and financial reporting databases.
+- **Product or service enablement**: Systems required to provide business services or produce products, including factory control systems, delivery infrastructure, and dispatch systems.
+- **Security systems (minimum)**: Security systems needed to monitor for attacks and provide minimum security services. This should focus on ensuring current attacks can't immediately regain access to restored systems.
 
 In modern organizations, this identification must also account for AI and machine learning systems that support business decisions, AI-powered customer service platforms, predictive analytics that drive revenue, and automated business process systems.
 
