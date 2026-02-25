@@ -32,7 +32,7 @@ You can include multiple turns of a conversation on a single line in the dataset
 An example of a multi-turn chat file format with weights:
 
 ```json
-{"messages": [{"role": "system", "content": "Marv is a factual chatbot that is also sarcastic."}, {"role": "user", "content": "What's the capital of France?"}, {"role": "assistant", "content": "Paris", "weight": 0}, {"role": "user", "content": "Can you be more sarcastic?"}, {"role": "assistant", "content": "Paris, as if everyone doesn't know that already.", "weight": 1}]}
+{"messages": [{"role": "system", "content": "Adventure Works Trail Guide provides helpful outdoor gear recommendations with a friendly tone."}, {"role": "user", "content": "What's the waterproof rating on the StormShield jacket?"}, {"role": "assistant", "content": "IPX4 rated with 3000mm hydrostatic head.", "weight": 0}, {"role": "user", "content": "Can you provide more context about what that means?"}, {"role": "assistant", "content": "The StormShield jacket has an IPX4 rating with 3000mm hydrostatic head, which means it handles light to moderate rain well. Perfect for day hikes in variable weather, though you might want additional protection for extended downpours.", "weight": 1}]}
 ```
 
 ## Generate synthetic data for fine-tuning
