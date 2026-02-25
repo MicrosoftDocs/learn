@@ -30,7 +30,7 @@ HTML tells the web browser what to do with the information on the page by using 
 
 The "strong" tags tell the browser that the text in between should be bold. It would appear as bolded text when you view it in a browser:
 
-<strong><code>This is bold text</code></strong>
+**`This is bold text`**
 
 ### CSS
 
