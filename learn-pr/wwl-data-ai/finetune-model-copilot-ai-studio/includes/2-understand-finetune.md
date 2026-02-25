@@ -1,4 +1,12 @@
-Before you start fine-tuning a model, you need to have a clear understanding of what fine-tuning is and when you should use it.
+Fine-tuning a language model gives you greater control over how your model behaves, helping you achieve consistent responses in a specific style, format, and tone. Here you learn when to use fine-tuning and you explore three key fine-tuning techniques: 
+
+- Supervised fine-tuning for training with labeled examples
+- Reinforcement fine-tuning for reward-based learning
+- Direct preference optimization for alignment using preference pairs
+
+Let's start by comparing fine-tuning to other optimization techniques for models and agents.
+
+## Understand when to use fine-tuning
 
 When you want to develop a chat application with Microsoft Foundry, you can use prompt flow to create a chat application that is integrated with a language model to generate responses. To improve the quality of the responses the model generates, you can try various strategies. The easiest strategy is to apply **prompt engineering**. You can change the way you format your question, but you can also update the **system message** that is sent along with the prompt to the language model.
 
@@ -16,4 +24,39 @@ How the model needs to act mostly relates to the style, format, and tone of the 
 Within prompt engineering, a technique used to *"force"* the model to generate output in a specific format, is to provide the model with various examples of what the desired output might look like, also known as **one-shot** (one example) or **few-shot** (few examples). Still, it can happen that your model doesn't always generate the output in the style and format you specified.
 
 To maximize the **consistency of the model's behavior**, you can **fine-tune a base model** with your own training data.
+
+## Explore fine-tuning techniques
+
+Microsoft Foundry supports multiple fine-tuning techniques, each designed for different use cases and model capabilities:
+
+### Apply supervised fine-tuning
+
+**Supervised fine-tuning** is the most common approach where you train a base model on labeled example data. You provide the model with example conversations that demonstrate the desired behavior, including system messages, user prompts, and assistant responses. This technique is ideal for teaching the model specific formats, styles, tones, or domain-specific behaviors.
+
+Supervised fine-tuning is supported for models like GPT-4, GPT-4o, GPT-3.5-Turbo, and many other foundation models in the model catalog.
+
+### Implement reinforcement fine-tuning
+
+**Reinforcement fine-tuning (RFT)** is a technique that improves reasoning models by training them through a reward-based process, rather than relying only on labeled data. Instead of providing example responses, you provide prompts and a grader that scores the quality of the model's outputs. The model learns to generate better responses by maximizing the reward signal.
+
+RFT is especially useful for:
+
+- Complex reasoning and problem-solving tasks
+- Scenarios where labeled examples are limited
+- Cases where you want the model to develop sophisticated reasoning strategies
+
+RFT is supported for advanced reasoning models like o4-mini and gpt-5. When using RFT, you need to define a grader (such as text comparison, model-based, or custom code graders) that evaluates the model's outputs during training.
+
+### Align with direct preference optimization
+
+**Direct preference optimization (DPO)** is an alignment technique that adjusts model weights based on human preferences. Instead of providing single example responses, you provide pairs of responses - one preferred and one nonpreferred - for each prompt. The model learns to generate outputs more similar to the preferred examples.
+
+DPO is especially useful when:
+
+- There's no clear-cut correct answer
+- Subjective elements like tone, style, or content preferences are important  
+- You have preference data from user logs, A/B tests, or manual annotations
+- You want a computationally lighter alternative to reinforcement learning from human feedback (RLHF)
+
+DPO is supported for models like gpt-4o, gpt-4.1, and gpt-4.1-mini. You can use DPO with base models or with models already fine-tuned using supervised fine-tuning.
 
