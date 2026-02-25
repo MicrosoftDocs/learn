@@ -1,0 +1,47 @@
+### YamlMime:Module
+uid: learn.wwl.get-started-information-extraction
+metadata:
+  title: Get started with AI-powered information extraction in Azure
+  description: Learn how to use Azure Content Understanding in Foundry Tools to extract information from content.
+  author: sherzyang
+  ms.author: sheryang
+  ms.date: 02/21/2026
+  ai-usage: ai-assisted
+  ms.service: azure-ai-foundry
+  ms.topic: module-standard-task-based
+  ms.collection:
+    - wwl-ai-copilot
+title: Get started with AI-powered information extraction in Azure
+summary: AI gives you the power to unlock insights from your data. Learn how to use Azure Content Understanding in Foundry Tools to extract information from content.
+abstract: |
+  After completing this module, you'll be able to:
+  - Identify Foundry Tools for information extraction
+  - Describe Azure Vision information extraction capabilities
+  - Describe Azure Content Understanding information extraction capabilities
+  - Describe Azure Document Intelligence information extraction capabilities
+  - Describe Azure AI Search information extraction capabilities
+prerequisites: |
+  Before starting this module, you should already have:
+  - Familiarity with Azure portal
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- ai-engineer
+products:
+- ai-services
+- azure-cognitive-search
+- azure-ai-foundry
+subjects:
+- artificial-intelligence
+units:
+- learn.wwl.get-started-information-extraction.introduction
+- learn.wwl.get-started-information-extraction.documents
+- learn.wwl.get-started-information-extraction.audio-video
+- learn.wwl.get-started-information-extraction.exercise
+- learn.wwl.get-started-information-extraction.knowledge-check
+- learn.wwl.get-started-information-extraction.summary
+# This is the badge for the module.
+badge:
+  uid: learn.wwl.get-started-information-extraction.badge
+
