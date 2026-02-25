@@ -3,7 +3,7 @@ uid: learn-wwl.design-implement-database-objects
 metadata:
   title: Design and implement database objects with SQL
   description: "Learn how to design and implement database objects in SQL Server, Azure SQL, and SQL databases in Microsoft Fabric, including tables, indexes, constraints, and specialized table types."
-  ms.date: 01/12/2026
+  ms.date: 02/24/2026
   author: JulianePadrao
   ms.author: jupadrao
   ms.topic: module
