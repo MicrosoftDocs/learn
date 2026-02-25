@@ -35,7 +35,7 @@ units:
 - learn.wwl.configure-customize-github-copilot-visual-studio-code.examine-benefits-customize-github-copilot
 - learn.wwl.configure-customize-github-copilot-visual-studio-code.customize-copilot-responses-instruction-files
 - learn.wwl.configure-customize-github-copilot-visual-studio-code.create-custom-github-copilot-agents
-- learn.wwl.configure-customize-github-copilot-visual-studio-code.chain-agents-handoffs-multi-step-tasks
+- learn.wwl.configure-customize-github-copilot-visual-studio-code.chain-agents-handoffs-multiple-step-tasks
 - learn.wwl.configure-customize-github-copilot-visual-studio-code.exercise-create-chain-custom-copilot-agents
 - learn.wwl.configure-customize-github-copilot-visual-studio-code.knowledge-check
 - learn.wwl.configure-customize-github-copilot-visual-studio-code.summary
