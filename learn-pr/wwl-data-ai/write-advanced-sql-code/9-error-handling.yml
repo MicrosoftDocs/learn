@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.write-advanced-sql-code.error-handling
+uid: learn.wwl.write-advanced-sql-code.error-handling
 title: Handle errors with TRY...CATCH
 metadata:
   title: Handle errors with TRY...CATCH

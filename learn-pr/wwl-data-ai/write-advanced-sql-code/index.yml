@@ -47,17 +47,17 @@ subjects:
 - cloud-computing
 - app-development
 units:
-  - learn.write-advanced-sql-code.introduction
-  - learn.write-advanced-sql-code.common-table-expressions
-  - learn.write-advanced-sql-code.window-functions
-  - learn.write-advanced-sql-code.json-functions
-  - learn.write-advanced-sql-code.regular-expressions
-  - learn.write-advanced-sql-code.fuzzy-string-matching
-  - learn.write-advanced-sql-code.graph-queries
-  - learn.write-advanced-sql-code.correlated-queries
-  - learn.write-advanced-sql-code.error-handling
-  - learn.write-advanced-sql-code.exercise-write-advanced-sql-code
-  - learn.write-advanced-sql-code.knowledge-check
-  - learn.write-advanced-sql-code.summary
+  - learn.wwl.write-advanced-sql-code.introduction
+  - learn.wwl.write-advanced-sql-code.common-table-expressions
+  - learn.wwl.write-advanced-sql-code.window-functions
+  - learn.wwl.write-advanced-sql-code.json-functions
+  - learn.wwl.write-advanced-sql-code.regular-expressions
+  - learn.wwl.write-advanced-sql-code.fuzzy-string-matching
+  - learn.wwl.write-advanced-sql-code.graph-queries
+  - learn.wwl.write-advanced-sql-code.correlated-queries
+  - learn.wwl.write-advanced-sql-code.error-handling
+  - learn.wwl.write-advanced-sql-code.exercise-write-advanced-sql-code
+  - learn.wwl.write-advanced-sql-code.knowledge-check
+  - learn.wwl.write-advanced-sql-code.summary
 badge:
-  uid: learn.write-advanced-sql-code.badge
+  uid: learn.wwl.write-advanced-sql-code.badge
