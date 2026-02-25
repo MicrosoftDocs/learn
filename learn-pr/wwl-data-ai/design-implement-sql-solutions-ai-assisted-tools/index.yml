@@ -36,15 +36,15 @@ products:
   - azure-sql-database
   - fabric
 units:
-  - learn.design-implement-sql-solutions-ai-assisted-tools.introduction
-  - learn.design-implement-sql-solutions-ai-assisted-tools.describe-ai-assisted-development-tools
-  - learn.design-implement-sql-solutions-ai-assisted-tools.interpret-security-impact
-  - learn.design-implement-sql-solutions-ai-assisted-tools.enable-github-copilot-fabric-copilot
-  - learn.design-implement-sql-solutions-ai-assisted-tools.configure-model-mcp-tool-options
-  - learn.design-implement-sql-solutions-ai-assisted-tools.create-configure-copilot-instruction-files
-  - learn.design-implement-sql-solutions-ai-assisted-tools.connect-mcp-server-endpoints
-  - learn.design-implement-sql-solutions-ai-assisted-tools.exercise-design-implement-sql-solutions-ai-assisted-tools
-  - learn.design-implement-sql-solutions-ai-assisted-tools.knowledge-check
-  - learn.design-implement-sql-solutions-ai-assisted-tools.summary
+  - learn.wwl.design-implement-sql-solutions-ai-assisted-tools.introduction
+  - learn.wwl.design-implement-sql-solutions-ai-assisted-tools.describe-ai-assisted-development-tools
+  - learn.wwl.design-implement-sql-solutions-ai-assisted-tools.interpret-security-impact
+  - learn.wwl.design-implement-sql-solutions-ai-assisted-tools.enable-github-copilot-fabric-copilot
+  - learn.wwl.design-implement-sql-solutions-ai-assisted-tools.configure-model-mcp-tool-options
+  - learn.wwl.design-implement-sql-solutions-ai-assisted-tools.create-configure-copilot-instruction-files
+  - learn.wwl.design-implement-sql-solutions-ai-assisted-tools.connect-mcp-server-endpoints
+  - learn.wwl.design-implement-sql-solutions-ai-assisted-tools.exercise-design-implement-sql-solutions-ai-assisted-tools
+  - learn.wwl.design-implement-sql-solutions-ai-assisted-tools.knowledge-check
+  - learn.wwl.design-implement-sql-solutions-ai-assisted-tools.summary
 badge:
-  uid: learn.design-implement-sql-solutions-ai-assisted-tools.badge
+  uid: learn.wwl.design-implement-sql-solutions-ai-assisted-tools.badge
