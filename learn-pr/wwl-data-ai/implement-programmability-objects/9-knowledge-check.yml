@@ -1,0 +1,71 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-programmability-objects.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Test your understanding of SQL Server programmability objects"
+  ms.date: 01/22/2026
+  author: JulianePadrao
+  ms.author: jupadrao
+  ms.topic: unit
+azureSandbox: false
+durationInMinutes: 3
+quiz:
+  title: Check your knowledge
+  questions:
+    - content: "Which programmability object should you use when you need to simplify a complex query that joins multiple tables and expose only specific columns to users?"
+      choices:
+        - content: "Stored procedure"
+          isCorrect: false
+          explanation: "Stored procedures are better suited for operations that modify data or contain procedural logic. Views are more appropriate for simplifying read queries."
+        - content: "View"
+          isCorrect: true
+          explanation: "Views act as virtual tables that encapsulate SELECT queries, making them ideal for simplifying complex joins and controlling which columns users can access."
+        - content: "Trigger"
+          isCorrect: false
+          explanation: "Triggers automatically execute in response to data modifications or database events. They aren't designed for simplifying query access."
+        - content: "Scalar function"
+          isCorrect: false
+          explanation: "Scalar functions return single values and are used for calculations, not for simplifying multi-table queries."
+    - content: "What is a key advantage of using stored procedures over embedding T-SQL directly in application code?"
+      choices:
+        - content: "Stored procedures automatically create indexed views"
+          isCorrect: false
+          explanation: "Stored procedures don't automatically create indexed views. This is unrelated to the benefits of stored procedures."
+        - content: "Stored procedures are precompiled and can include transaction management and error handling"
+          isCorrect: true
+          explanation: "Stored procedures are precompiled for better performance, support transaction management with BEGIN TRANSACTION/COMMIT/ROLLBACK, and include TRY...CATCH error handling."
+        - content: "Stored procedures can only be executed by database administrators"
+          isCorrect: false
+          explanation: "Stored procedures can be granted EXECUTE permissions to any user or role, not just administrators."
+        - content: "Stored procedures automatically encrypt all data"
+          isCorrect: false
+          explanation: "Stored procedures don't automatically encrypt data. Data encryption requires separate implementation."
+    - content: "When should you choose a table-valued function over a scalar function?"
+      choices:
+        - content: "When you need to return a single calculated value"
+          isCorrect: false
+          explanation: "Scalar functions return single values. Use a scalar function when you need a single calculated result."
+        - content: "When you need to modify data in the database"
+          isCorrect: false
+          explanation: "Neither scalar nor table-valued functions can modify data. Use stored procedures for data modifications."
+        - content: "When you need to return a result set that can be used in a FROM clause"
+          isCorrect: true
+          explanation: "Table-valued functions return result sets that can be joined with other tables or used in FROM clauses, making them ideal when you need to return multiple rows."
+        - content: "When you need automatic execution on data changes"
+          isCorrect: false
+          explanation: "Triggers execute automatically on data changes, not functions."
+    - content: "Which type of trigger executes automatically when data is inserted, updated, or deleted in a table?"
+      choices:
+        - content: "DDL trigger"
+          isCorrect: false
+          explanation: "DDL triggers respond to schema changes like CREATE, ALTER, and DROP statements, not data modifications."
+        - content: "Logon trigger"
+          isCorrect: false
+          explanation: "Logon triggers execute when a user session is established, not when data is modified."
+        - content: "DML trigger"
+          isCorrect: true
+          explanation: "DML (Data Manipulation Language) triggers fire automatically in response to INSERT, UPDATE, or DELETE operations on tables or views."
+        - content: "Schema trigger"
+          isCorrect: false
+          explanation: "Schema trigger isn't a standard SQL Server trigger type. DDL triggers handle schema-related events."
