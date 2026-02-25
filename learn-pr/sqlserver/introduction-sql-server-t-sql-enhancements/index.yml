@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.introduction-sql-server-t-sql-enhancements
+uid: learn.wwl.introduction-sql-server-t-sql-enhancements
 metadata:
   title: Transform Development Workflows with T-SQL in SQL Server 2025
   description: "Explore the new T-SQL enhancements in SQL Server 2025, including AI integration, pattern matching, JSON aggregation, and more."
@@ -30,13 +30,13 @@ products:
 - sql-server
 - azure-sql-database
 units:
-- learn.introduction-sql-server-t-sql-enhancements.introduction
-- learn.introduction-sql-server-t-sql-enhancements.vector-ai-integration
-- learn.introduction-sql-server-t-sql-enhancements.pattern-matching-text-extraction
-- learn.introduction-sql-server-t-sql-enhancements.json-string-aggregation
-- learn.introduction-sql-server-t-sql-enhancements.encoding-similarity
-- learn.introduction-sql-server-t-sql-enhancements.date-numeric-enhancements
-- learn.introduction-sql-server-t-sql-enhancements.knowledge-check
-- learn.introduction-sql-server-t-sql-enhancements.summary
+- learn.wwl.introduction-sql-server-t-sql-enhancements.introduction
+- learn.wwl.introduction-sql-server-t-sql-enhancements.vector-ai-integration
+- learn.wwl.introduction-sql-server-t-sql-enhancements.pattern-matching-text-extraction
+- learn.wwl.introduction-sql-server-t-sql-enhancements.json-string-aggregation
+- learn.wwl.introduction-sql-server-t-sql-enhancements.encoding-similarity
+- learn.wwl.introduction-sql-server-t-sql-enhancements.date-numeric-enhancements
+- learn.wwl.introduction-sql-server-t-sql-enhancements.knowledge-check
+- learn.wwl.introduction-sql-server-t-sql-enhancements.summary
 badge:
-  uid: learn.introduction-sql-server-t-sql-enhancements.badge
+  uid: learn.wwl.introduction-sql-server-t-sql-enhancements.badge
