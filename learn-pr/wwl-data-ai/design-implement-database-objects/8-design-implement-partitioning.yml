@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn-wwl.design-implement-database-objects.design-implement-partitioning
+uid: learn.wwl.design-implement-database-objects.design-implement-partitioning
 title: Partition tables for scale
 metadata:
   title: Partition tables for scale
