@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.introduction-to-sql-server
+uid: learn.wwl.introduction-to-sql-server
 metadata:
   title: Get Started with SQL Server 2025
   description: "Learn about SQL Server 2025's new capabilities including AI integration, analytics improvements, developer features, and performance enhancements."
@@ -33,14 +33,14 @@ products:
 subjects:
   - databases
 units:
-- learn.introduction-to-sql-server.introduction
-- learn.introduction-to-sql-server.deploy-feature-difference
-- learn.introduction-to-sql-server.ai-powered
-- learn.introduction-to-sql-server.analytics
-- learn.introduction-to-sql-server.developers
-- learn.introduction-to-sql-server.performance
-- learn.introduction-to-sql-server.security-scalability
-- learn.introduction-to-sql-server.knowledge-check
-- learn.introduction-to-sql-server.summary
+- learn.wwl.introduction-to-sql-server.introduction
+- learn.wwl.introduction-to-sql-server.deploy-feature-difference
+- learn.wwl.introduction-to-sql-server.ai-powered
+- learn.wwl.introduction-to-sql-server.analytics
+- learn.wwl.introduction-to-sql-server.developers
+- learn.wwl.introduction-to-sql-server.performance
+- learn.wwl.introduction-to-sql-server.security-scalability
+- learn.wwl.introduction-to-sql-server.knowledge-check
+- learn.wwl.introduction-to-sql-server.summary
 badge:
-  uid: learn.introduction-to-sql-server.badge
+  uid: learn.wwl.introduction-to-sql-server.badge
