@@ -35,7 +35,7 @@ In the correlated example, the subquery references `p1.ProductCategoryID` from t
 
 Correlated subqueries in the `WHERE` clause enable row-specific filtering conditions that would be impossible with static comparisons. Instead of comparing against a single fixed value, each row is evaluated against a dynamically calculated value based on that row's attributes.
 
-This pattern is useful when you need to identify outliers within groups, find records that exceed their own category's threshold, or apply business rules that vary by context. The following example finds products priced above their category average, meaning a \$50 accessory might be flagged as expensive while a \$500 bike might not:
+This pattern is useful when you need to identify outliers within groups, find records that exceed their own category's threshold, or apply business rules that vary by context. The following example finds products priced above their category average, meaning a low-priced accessory might be flagged as expensive while a higher-priced bike might not:
 
 ```sql
 SELECT 
