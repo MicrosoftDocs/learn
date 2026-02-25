@@ -2,7 +2,7 @@ Individual custom agents are powerful on their own, but their full potential eme
 
 ## What are handoffs?
 
-Handoffs are a mechanism that allow one custom agent to propose a transition to another agent after completing its part of a task. When an agent finishes its response, it can present a handoff button—a suggested "next action"—that, when selected, switches the chat to a target agent and optionally prefills a prompt to continue the workflow.
+A handoff is a mechanism that allows one custom agent to propose a transition to another agent after completing its part of a task. When an agent finishes its response, it can present a handoff button—a suggested "next action"—that, when selected, switches the chat to a target agent and optionally prefills a prompt to continue the workflow.
 
 For example, a Planner agent could produce a detailed implementation plan and then display a "Start Implementation" button. When the developer selects this button, GitHub Copilot Chat switches to an Implementer agent that receives the plan as context along with a prompt like "Now implement your suggested plan." The developer reviews the plan before selecting the button, maintaining control over the workflow while the agents handle the specialized work.
 
