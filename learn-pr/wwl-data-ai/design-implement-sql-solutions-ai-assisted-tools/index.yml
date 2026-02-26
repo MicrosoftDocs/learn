@@ -1,0 +1,50 @@
+### YamlMime:Module
+uid: learn.design-implement-sql-solutions-ai-assisted-tools
+metadata:
+  title: Implement SQL solutions by using AI-assisted tools
+  description: Learn how to use GitHub Copilot and Fabric Copilot for AI-assisted database development on Microsoft SQL platforms, including SQL Server, Azure SQL, and Microsoft Fabric.
+  ms.date: 02/02/2026
+  author: JulianePadrao
+  ms.author: jupadrao
+  ms.topic: module
+  ms.service: sql
+  ai-usage: ai-generated
+title: Implement SQL solutions by using AI-assisted tools
+summary: >-
+  Learn how to leverage GitHub Copilot and Fabric Copilot for AI-assisted database development across SQL Server, Azure SQL, and SQL databases in Microsoft Fabric.
+abstract: |
+  By the end of this module, you'll be able to:
+    - Describe AI-assisted development tools available for Microsoft SQL platforms
+    - Interpret security impact of using AI-assisted tools
+    - Enable GitHub Copilot and Fabric Copilot
+    - Configure model and Model Context Protocol (MCP) tool options in a GitHub Copilot or Fabric Copilot chat session
+    - Create and configure GitHub Copilot instruction files
+    - Connect to MCP server endpoints, including Microsoft SQL Server and Fabric Lakehouse
+prerequisites: |
+  - Experience writing T-SQL code for SQL Server or Azure SQL
+  - Familiarity with SQL Server Management Studio (SSMS) or Visual Studio Code
+  - Basic understanding of database development concepts (tables, stored procedures, views)
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+  - intermediate
+roles:
+  - database-administrator
+  - developer
+  - data-engineer
+products:
+  - sql-server
+  - azure-sql-database
+  - fabric
+units:
+  - learn.wwl.design-implement-sql-solutions-ai-assisted-tools.introduction
+  - learn.wwl.design-implement-sql-solutions-ai-assisted-tools.describe-ai-assisted-development-tools
+  - learn.wwl.design-implement-sql-solutions-ai-assisted-tools.interpret-security-impact
+  - learn.wwl.design-implement-sql-solutions-ai-assisted-tools.enable-github-copilot-fabric-copilot
+  - learn.wwl.design-implement-sql-solutions-ai-assisted-tools.configure-model-mcp-tool-options
+  - learn.wwl.design-implement-sql-solutions-ai-assisted-tools.create-configure-copilot-instruction-files
+  - learn.wwl.design-implement-sql-solutions-ai-assisted-tools.connect-mcp-server-endpoints
+  - learn.wwl.design-implement-sql-solutions-ai-assisted-tools.exercise-design-implement-sql-solutions-ai-assisted-tools
+  - learn.wwl.design-implement-sql-solutions-ai-assisted-tools.knowledge-check
+  - learn.wwl.design-implement-sql-solutions-ai-assisted-tools.summary
+badge:
+  uid: learn.wwl.design-implement-sql-solutions-ai-assisted-tools.badge

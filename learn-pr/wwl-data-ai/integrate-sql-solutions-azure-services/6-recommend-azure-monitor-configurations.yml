@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.integrate-sql-solutions-azure-services.recommend-azure-monitor-configurations
+title: Recommend Azure Monitor configurations
+metadata:
+  title: Recommend Azure Monitor configurations
+  description: Learn how to configure Azure Monitor, Application Insights, and Log Analytics for monitoring Data API Builder deployments.
+  ms.date: 02/05/2026
+  author: JulianePadrao
+  ms.author: jupadrao
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/6-recommend-azure-monitor-configurations.md)]
