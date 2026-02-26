@@ -31,7 +31,6 @@ products:
 - azure-ai-foundry
 modules:
 - learn.wwl.get-started-ai-fundamentals
-- learn.wwl.fundamentals-machine-learning
 - learn.wwl.fundamentals-generative-ai
 - learn.wwl.introduction-language
 - learn.wwl.introduction-ai-speech
