@@ -7840,3 +7840,13 @@ achievements:
   title: Identify security threats with Microsoft Defender for Cloud
   summary: In this module, you'll discover how to detect and respond to threats with Microsoft Defender for Cloud.
   iconUrl: /training/achievements/identify-threats-with-azure-security-center.svg
+- uid: learn.stage-deploy-app-service-deployment-slots.badge
+  type: badge 
+  title: Stage a web app deployment for testing and rollback by using App Service deployment slots
+  summary: Use deployment slots to streamline deployment and roll back a web app in Azure App Service.
+  iconUrl: /training/achievements/stage-deploy-app-service-deployment-slots.svg
+- uid: learn.deploy-a-website-with-azure-app-service.trophy
+  type: trophy 
+  title: Deploy a website to Azure with Azure App Service
+  summary: Web apps in Azure allow you to publish and manage your website easily without having to work with the underlying servers, storage, or network assets. 
+  iconUrl: /training/achievements/deploy-a-website-with-azure-app-service.svg
