@@ -1,0 +1,87 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.write-advanced-sql-code.knowledge-check
+title: Module assessment
+metadata:
+  ai_generated_module_assessment: true
+  title: Module assessment
+  description: "Knowledge check for writing advanced T-SQL code including CTEs, window functions, JSON, regex, and error handling."
+  ms.date: 01/28/2026
+  author: JulianePadrao
+  ms.author: jupadrao
+  ms.topic: unit
+  module_assessment: true
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+quiz:
+  questions:
+  - content: "You need to write a query that calculates a running total of sales ordered by date, while still showing individual order details. Which T-SQL approach should you use?"
+    choices:
+    - content: "A correlated subquery that sums all orders with a date less than or equal to the current row's date"
+      isCorrect: false
+      explanation: "Incorrect. While this would work, it's less efficient than using window functions. Correlated subqueries execute for each row, which is computationally expensive for running totals."
+    - content: "A recursive CTE that accumulates totals by iterating through each date"
+      isCorrect: false
+      explanation: "Incorrect. Recursive CTEs are designed for hierarchical data traversal, not running totals. This approach would be unnecessarily complex and potentially slower."
+    - content: "An aggregate function with `OVER (ORDER BY)` clause to create a window function"
+      isCorrect: true
+      explanation: "Correct. Window functions like `SUM(...) OVER (ORDER BY date)` efficiently calculate running totals while preserving row details. The optimizer handles these calculations efficiently."
+    - content: "A self-join of the table where all rows with earlier dates are joined and summed"
+      isCorrect: false
+      explanation: "Incorrect. While this works, it creates a triangular join that becomes extremely slow as data volume increases. Window functions are the standard and efficient solution."
+  - content: "You're building a JSON response from relational data and need to include an array of related order items for each customer. Which combination of functions creates nested JSON with arrays from grouped rows?"
+    choices:
+    - content: "`FOR JSON PATH` with nested subqueries"
+      isCorrect: false
+      explanation: "Incorrect. While `FOR JSON PATH` can create nested structures, it doesn't directly aggregate rows into arrays within a query. You'd need additional techniques for row aggregation."
+    - content: "`JSON_OBJECT` combined with `JSON_ARRAYAGG` to aggregate rows into arrays"
+      isCorrect: true
+      explanation: "Correct. `JSON_OBJECT` creates JSON objects from key-value pairs, and `JSON_ARRAYAGG` aggregates multiple rows into a JSON array, making them ideal for creating nested JSON from grouped relational data."
+    - content: "`OPENJSON` with a `WITH` clause to define the output schema"
+      isCorrect: false
+      explanation: "Incorrect. `OPENJSON` parses existing JSON into relational rows—it's the opposite direction. To create JSON from relational data, use `JSON_OBJECT` and `JSON_ARRAYAGG`."
+    - content: "`JSON_VALUE` and `JSON_QUERY` to extract and combine elements"
+      isCorrect: false
+      explanation: "Incorrect. These functions extract values from existing JSON strings. They don't construct new JSON from relational data."
+  - content: "You need to find customer records where names might be misspelled, such as finding 'John Smith' when the database contains 'Jon Smyth'. Which approach provides the best results for name matching?"
+    choices:
+    - content: "Use `LIKE` with wildcards such as `WHERE Name LIKE '%ohn%'`"
+      isCorrect: false
+      explanation: "Incorrect. `LIKE` patterns match literal characters and can't handle character substitutions, transpositions, or missing characters that occur in misspellings."
+    - content: "Use `SOUNDEX` to compare phonetic representations"
+      isCorrect: false
+      explanation: "Incorrect. While SOUNDEX can help with some phonetic variations, it's limited to English phonetics and produces the same code for many different names, leading to false positives."
+    - content: "Use `JARO_WINKLER_DISTANCE` which is optimized for name comparison and considers prefix matching"
+      isCorrect: true
+      explanation: "Correct. Jaro-Winkler is specifically designed for name matching. It gives higher scores to strings matching from the beginning (important for names) and handles common typos well."
+    - content: "Use `REGEXP_LIKE` to create a pattern matching all possible misspelling variations"
+      isCorrect: false
+      explanation: "Incorrect. Creating regex patterns for all possible misspellings is impractical. Fuzzy string matching functions automatically handle character variations without predefined patterns."
+  - content: "You're writing a stored procedure that updates multiple tables within a transaction. An error occurs after the first table is updated. What's the correct pattern to ensure data consistency?"
+    choices:
+    - content: "Use `SET XACT_ABORT ON` only, which automatically rolls back on any error"
+      isCorrect: false
+      explanation: "Incorrect. While `XACT_ABORT` handles automatic rollback, you should also use `TRY...CATCH` to log errors, perform cleanup, and provide meaningful feedback to callers."
+    - content: "Use `TRY...CATCH` with `IF @@TRANCOUNT > 0 ROLLBACK` in the `CATCH` block, then re-raise with `THROW`"
+      isCorrect: true
+      explanation: "Correct. This pattern ensures cleanup (rollback if needed), allows error logging, and propagates the error to callers. Checking `@@TRANCOUNT` prevents errors when no transaction is active."
+    - content: "Check `@@ERROR` after each statement and call `ROLLBACK` if non-zero"
+      isCorrect: false
+      explanation: "Incorrect. `@@ERROR` resets after each statement, making it easy to miss errors. The `TRY...CATCH` approach provides more reliable, structured error handling."
+    - content: "Use multiple nested transactions with `SAVE TRANSACTION` points for each table update"
+      isCorrect: false
+      explanation: "Incorrect. Save points allow partial rollbacks but don't handle errors automatically. You still need `TRY...CATCH` for proper error management, and the pattern is more complex than necessary."
+  - content: "You need to traverse an organizational hierarchy to find all employees who report to a manager at any level, not just direct reports. Which approach best handles variable-depth hierarchical traversal?"
+    choices:
+    - content: "Multiple self-joins with one join per possible level in the hierarchy"
+      isCorrect: false
+      explanation: "Incorrect. This requires knowing the maximum depth in advance and becomes unwieldy for deep hierarchies. Each level requires an additional join, making the query complex and inflexible."
+    - content: "A recursive CTE that traverses the hierarchy by joining on the manager-employee relationship"
+      isCorrect: true
+      explanation: "Correct. Recursive CTEs are designed for hierarchical data. The anchor member starts at the root, and the recursive member joins to find the next level, continuing until no more matches are found."
+    - content: "A window function with `PARTITION BY` on the manager column"
+      isCorrect: false
+      explanation: "Incorrect. Window functions operate within partitions but don't traverse relationships. They can't follow manager-employee links across levels like a recursive CTE can."
+    - content: "A correlated subquery that finds managers for each employee"
+      isCorrect: false
+      explanation: "Incorrect. A single correlated subquery can only look one level up or down. Variable-depth traversal requires recursion, which correlated subqueries don't support."

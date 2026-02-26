@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-implement-sql-solutions-ai-assisted-tools.connect-mcp-server-endpoints
+title: Connect to MCP server endpoints, including Microsoft SQL Server and Fabric Lakehouse
+metadata:
+  title: Connect to MCP server endpoints for SQL Server and Fabric Lakehouse
+  description: Learn how to connect AI assistants to Model Context Protocol (MCP) server endpoints for SQL Server, Azure SQL, and Microsoft Fabric Lakehouse environments.
+  ms.date: 02/02/2026
+  author: JulianePadrao
+  ms.author: jupadrao
+  ms.topic: unit
+durationInMinutes: 12
+content: |
+  [!include[](includes/7-connect-mcp-server-endpoints.md)]
