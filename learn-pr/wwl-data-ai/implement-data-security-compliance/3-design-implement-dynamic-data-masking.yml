@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-data-security-compliance.design-implement-dynamic-data-masking
+title: Configure dynamic data masking
+metadata:
+  title: Configure dynamic data masking
+  description: Learn how to protect sensitive data using Dynamic Data Masking in SQL Server, Azure SQL, and SQL databases in Microsoft Fabric.
+  ms.date: 02/04/2026
+  author: JulianePadrao
+  ms.author: jupadrao
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-design-implement-dynamic-data-masking.md)]
