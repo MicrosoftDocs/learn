@@ -11,4 +11,4 @@ metadata:
   ai-usage: ai-generated
 durationInMinutes: 10
 content: |
-  [!include[](includes/8b-cloud-adoption-framework-secure-ai.md)]
+  [!include[](includes/3a-cloud-adoption-framework-secure-ai.md)]
