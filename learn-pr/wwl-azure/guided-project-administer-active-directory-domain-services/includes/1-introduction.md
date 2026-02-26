@@ -4,11 +4,11 @@ This module covers the major steps of deploying, configuring, and maintaining a 
 
 ## Scenario
 
-Imagine you are a system administrator for a mid-sized company that is expanding its network infrastructure. You have been tasked with setting up a new domain controller to manage user access and security. However, due to budget constraints, you need to use existing hardware running Windows 10 or Windows 11. This scenario will guide you through the process of configuring a virtualized environment on your machine to run two Windows Server 2022 Evaluation Edition virtual machines.
+Imagine you're a system administrator for a mid-sized company that's expanding its network infrastructure. You have been tasked with setting up a new domain controller to manage user access and security. However, due to budget constraints, you need to use existing hardware running Windows 10 or Windows 11. This scenario guides you through the process of configuring a virtualized environment on your machine to run two Windows Server 2022 Evaluation Edition virtual machines.
 
 ## Learning objectives
 
-In this module, you'll practice how to:
+In this module, you practice how to:
 
  -  Configure Domain Controller Operations.
  -  Configure User Management Operations.
