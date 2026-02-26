@@ -11,9 +11,9 @@ You explored how to:
 
 ## Learn more
 
-- [What is Azure Boards?](https://learn.microsoft.com/azure/devops/boards/get-started/what-is-azure-boards)
-- [Azure Boards and GitHub integration](https://learn.microsoft.com/azure/devops/boards/github)
-- [Link GitHub commits, pull requests, and issues to work items](https://learn.microsoft.com/azure/devops/boards/github/link-to-from-github)
+- [What is Azure Boards?](/azure/devops/boards/get-started/what-is-azure-boards)
+- [Azure Boards and GitHub integration](/azure/devops/boards/github)
+- [Link GitHub commits, pull requests, and issues to work items](/azure/devops/boards/github/link-to-from-github)
 - [GitHub Copilot documentation](https://docs.github.com/copilot)
 - [About pull request reviews](https://docs.github.com/pull-requests/collaborating-with-pull-requests/reviewing-changes-in-pull-requests/about-pull-request-reviews)
 
