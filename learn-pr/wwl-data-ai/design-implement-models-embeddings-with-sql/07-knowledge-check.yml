@@ -1,0 +1,59 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-implement-models-embeddings-with-sql.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 02/02/2026
+  author: calopez
+  ms.author: calopez
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is an external model in Azure SQL Database?"
+    choices:
+    - content: "A machine learning model that runs inside the SQL Server engine"
+      isCorrect: false
+      explanation: "Incorrect. External models don't run inside the SQL Server engine. They reference external AI service endpoints."
+    - content: "A database object that stores metadata about an AI model endpoint"
+      isCorrect: true
+      explanation: "Correct. An external model stores metadata such as the endpoint URL, authentication details, and model configuration."
+    - content: "A copy of an AI model downloaded to the database server"
+      isCorrect: false
+      explanation: "Incorrect. External models don't download or store model files. They reference endpoints hosted elsewhere."
+  - content: "What is the purpose of chunking in embedding design?"
+    choices:
+    - content: "To compress vectors for faster storage"
+      isCorrect: false
+      explanation: "Incorrect. Chunking applies to input text, not to the resulting vectors."
+    - content: "To divide large text into smaller segments that fit within token limits"
+      isCorrect: true
+      explanation: "Correct. Chunking splits text into manageable pieces that stay within model token limits while preserving semantic meaning."
+    - content: "To encrypt sensitive data before embedding"
+      isCorrect: false
+      explanation: "Incorrect. Chunking is about size management, not security, or encryption."
+  - content: "What data type does Azure SQL Database use to store embeddings?"
+    choices:
+    - content: "NVARCHAR(MAX)"
+      isCorrect: false
+      explanation: "Incorrect. While text can be stored in NVARCHAR, embeddings are stored using the dedicated vector data type."
+    - content: "VECTOR"
+      isCorrect: true
+      explanation: "Correct. The VECTOR data type is designed to store embeddings efficiently and supports vector operations like similarity comparison."
+    - content: "JSON"
+      isCorrect: false
+      explanation: "Incorrect. Although vectors can be represented as JSON arrays, the VECTOR data type provides optimized storage and operations."
+  - content: "In RAG patterns, what role do embeddings play?"
+    choices:
+    - content: "They encrypt data before sending it to the model"
+      isCorrect: false
+      explanation: "Incorrect. Embeddings represent semantic meaning, not encryption."
+    - content: "They represent data as vectors for semantic similarity comparison"
+      isCorrect: true
+      explanation: "Correct. Embeddings convert text into vectors that can be compared to find semantically similar content for retrieval."
+    - content: "They translate queries into multiple languages"
+      isCorrect: false
+      explanation: "Incorrect. Embeddings capture meaning but don't perform language translation."

@@ -20,6 +20,8 @@ The CAF also identifies DevSecOps as a component of **innovation security** with
 
 This four-stage model complements the Secure methodology and provides a comprehensive framework for embedding security into every aspect of DevSecOps.
 
+:::image type="content" source="../media/development-security-operations-security.png" alt-text="Diagram that shows the four-stage model for designing a DevSecOps process that aligns with best practices of the CAF secure methodology." lightbox="../media/development-security-operations-security.png":::
+
 ## Align security strategy with DevSecOps goals
 
 The Secure methodology's strategy guidance establishes the strategic direction for security across cloud adoption. Several strategic commitments directly shape how you design DevSecOps processes.

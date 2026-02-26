@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.automated-evaluation-genaiops.create-evaluation-data
+title: Create evaluation datasets
+metadata:
+  title: Create evaluation datasets
+  description: "Create comprehensive evaluation datasets from production data and synthetic generation with proper composition across common scenarios, variations, edge cases, and adversarial examples"
+  ms.date: 02/22/2026
+  author: madiepev
+  ms.author: madiepev
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-create-evaluation-data.md)]
