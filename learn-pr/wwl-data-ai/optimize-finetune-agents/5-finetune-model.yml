@@ -12,6 +12,6 @@ metadata:
     - wwl-ai-copilot
 durationInMinutes: 8
 content: |
-  [!include[](includes/4-finetune-model.md)]
+  [!include[](includes/5-optimize-finetune.md)]
 
 

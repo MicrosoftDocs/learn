@@ -37,6 +37,7 @@ subjects:
 units:
 - learn.wwl.optimize-finetune-agents.introduction
 - learn.wwl.optimize-finetune-agents.select-finetune-method
+- learn.wwl.optimize-finetune-agents.scenarios
 - learn.wwl.optimize-finetune-agents.prepare-data
 - learn.wwl.optimize-finetune-agents.finetune-model
 - learn.wwl.optimize-finetune-agents.exercise

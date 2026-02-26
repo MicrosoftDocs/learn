@@ -1,9 +1,20 @@
-Not all fine-tuning methods solve the same problems. Adventure Works needs to improve their Trail Guide Agent's responses across gear specifications, safety recommendations, and trip planning—but each challenge requires a different optimization approach. Here, you learn to:
+Selecting the right optimization approach requires understanding what problem you're solving. Before choosing a fine-tuning method, determine whether fine-tuning addresses your quality gaps or whether prompt engineering, and retrieval improvements solve the problem more efficiently. Different fine-tuning methods—supervised fine-tuning, reinforcement fine-tuning, and direct preference optimization—solve distinct problems with varying data requirements and cost implications.
 
-- Recognize which problems each fine-tuning method solves
-- Compare methods across data requirements, cost structure, and purpose
-- Select approaches based on your quality needs and constraints
-- Apply the decision framework to production scenarios
+## Evaluate when fine-tuning is needed
+
+Before selecting a fine-tuning method, evaluate whether fine-tuning actually addresses your quality problems. Monitor key metrics at scale to identify patterns that indicate optimization needs:
+
+- **Format consistency**: When responses frequently omit required sections or structure varies unpredictably despite prompt examples
+- **Response quality**: When accuracy, relevance, or completeness decline across sufficient sample volumes
+- **User satisfaction**: When approval ratings drop, follow-up questions increase, or human escalation rates rise
+- **Operational efficiency**: When system prompts or agent instructions require 8+ examples driving high token costs, or maintenance burden grows across multiple prompt templates
+
+> [!TIP]
+> Consider prompt engineering and RAG improvements first. Fine-tuning teaches the model *how* to respond, while prompt engineering and RAG provide *what* information to include. Fine-tuning becomes valuable when prompt engineering reaches diminishing returns, format consistency remains unpredictable despite clear instructions, or reasoning quality plateaus.
+
+## Compare fine-tuning methods
+
+The following table provides a side-by-side comparison of the three primary fine-tuning methods available for optimizing agent responses. Use this overview to understand how each method differs in what data you need, what you pay, and what problems each method solves best.
 
 | Dimension | Supervised Fine-Tuning (SFT) | Reinforcement Fine-Tuning (RFT) | Direct Preference Optimization (DPO) |
 |-----------|------------------------------|----------------------------------|--------------------------------------|
@@ -11,15 +22,21 @@ Not all fine-tuning methods solve the same problems. Adventure Works needs to im
 | **Cost structure** | Token-based training (per million tokens × epochs) + hourly hosting | Time-based training (hourly rate) + grading tokens + hourly hosting | Token-based training (per million tokens × epochs) + hourly hosting |
 | **Primary purpose** | Format consistency, style adherence, domain terminology | Complex reasoning, problem-solving, multi-step analysis | Subjective preferences, tone alignment, content choices |
 
+> [!TIP]
+> For detailed information about managing and optimizing fine-tuning costs, learn more at [cost management for fine-tuning](/azure/ai-foundry/openai/how-to/fine-tuning-cost-management?view=foundry).
+
 ## Understand decision dimensions for method selection
 
-Three key dimensions determine which fine-tuning method fits your project: the data you can create, the costs you can bear, and the purpose you're optimizing for. Select a method below to explore how each dimension shapes your decision.
+Three key dimensions determine which fine-tuning method fits your project: the data you can create, the costs you can bear, and the purpose you're optimizing for. These dimensions matter because they represent both your constraints and your goals—data availability defines what's technically feasible, cost structure determines what's economically sustainable, and purpose alignment ensures the optimization actually solves your quality problem.
+
+> [!TIP]
+> Select each tab to explore how data requirements, cost structure, and primary purpose differ across fine-tuning methods. Examples are provided in the context of the Adventure Works scenario. Understanding these dimensions helps you match the right optimization approach to your specific agent quality challenge.
 
 # [Supervised Fine-Tuning (SFT)](#tab/method-sft)
 
 **Data requirements**: You need 50-100+ labeled examples showing exact desired outputs. Each example pairs a prompt with the complete response you want the model to produce. At Adventure Works, this means gathering gear recommendation responses with specifications, pricing, and availability in their standard structure. With 300 historical gear interactions already documented, they have sufficient volume to train format consistency across product queries.
 
-**Cost structure**: Token-based pricing charges per million tokens multiplied by training epochs, making costs predictable from your dataset size. Deployed models incur hourly hosting fees on Standard tier (Developer tier avoids hosting fees but auto-deletes after 24 hours). This predictability helps Adventure Works budget for optimizing their high-volume gear specification use case.
+**Cost structure**: Token-based pricing charges per million tokens multiplied by training epochs, making costs predictable from your dataset size. Deployed models incur hourly hosting fees on Standard tier (Developer tier avoids hosting fees but autodeletes after 24 hours). This predictability helps Adventure Works budget for optimizing their high-volume gear specification use case.
 
 **Primary purpose**: SFT excels at format consistency, style adherence, and domain terminology. It teaches models to follow templates and maintain standardized structures across responses—exactly what Adventure Works needs when customers expect product comparisons with technical specifications in consistent formats.
 
@@ -33,7 +50,7 @@ Three key dimensions determine which fine-tuning method fits your project: the d
 
 # [Direct Preference Optimization (DPO)](#tab/method-dpo)
 
-**Data requirements**: You need 50-100+ preference pairs where each pair shows a prompt with two responses—one clearly better capturing your values than the other. Adventure Works creates pairs from safety recommendations where the preferred version balances honesty about risks with encouragement, while the rejected version either sounds alarmist or dismisses genuine hazards. Both format availability and volume feasibility shape your options.
+**Data requirements**: You need 50-100+ preference pairs where each pair shows a prompt with two responses—one clearly better capturing your values than the other. Adventure Works creates pairs from safety recommendations. The preferred version balances honesty about risks with encouragement, while the rejected version either sounds alarmist or dismisses genuine hazards. Both format availability and volume feasibility shape your options.
 
 **Cost structure**: Token-based pricing charges per million tokens multiplied by training epochs (similar to SFT), making costs predictable from your dataset size. Deployed models incur Standard tier hourly hosting fees. Adventure Works justifies this investment for safety recommendations where tone calibration directly impacts customer trust and appropriate risk-taking behavior.
 
@@ -41,85 +58,9 @@ Three key dimensions determine which fine-tuning method fits your project: the d
 
 ---
 
-## Recognize problems fine-tuning solves
-
-Before comparing methods, you need to identify whether fine-tuning addresses your specific quality challenges. Not every agent performance issue benefits from fine-tuning—some problems stem from inadequate prompt engineering, missing knowledge sources, or architectural limitations. Adventure Works discovered three distinct problem patterns where fine-tuning provides the most effective solution path.
-
-### Problem: Inconsistent response format
+Each method's distinct requirements create natural constraints for your selection. Matching your available data, budget, and quality goals to the right method determines whether fine-tuning succeeds or fails. A method that requires preference pairs doesn't work if you only have labeled examples. A high-cost approach doesn't scale if you need to optimize multiple agents. And teaching format consistency doesn't help if your real problem is reasoning quality.
 
 > [!NOTE]
-> **Screenshot placeholder**: Conversation showing inconsistent gear specification responses.
->
-> **User**: "What's the waterproof rating on the StormShield jacket?"
->
-> **Agent (Response 1)**: "The StormShield jacket has good waterproofing."
->
-> **User**: "What about the Alpine Pro tent?"
->
-> **Agent (Response 2)**: "IPX4 rated, 3000mm hydrostatic head, sealed seams, durable water repellent coating. Weighs 2.1kg. Current stock: 12 units at Vancouver location, 8 at Toronto."
+> Two other fine-tuning methods address specialized scenarios: [**vision fine-tuning**](/azure/ai-foundry/openai/how-to/fine-tuning-vision?view=foundry) optimizes models for image understanding tasks (like product catalog recognition or visual quality inspection), while [**tool use fine-tuning**](/azure/ai-foundry/openai/how-to/fine-tuning-functions?view=foundry) teaches models when to make function calls and what to do with the results. Unlike the methods covered here (which optimize text generation quality) these specialized methods focus on multimodal processing and function-calling behavior respectively.
 
-**Challenge**: The agent provides varying levels of detail and structure when answering gear specification questions. Sometimes responses offer vague qualitative descriptions, other times they include precise technical specifications with availability data. Customers asking similar product questions receive inconsistent information quality, creating frustration and requiring follow-up interactions.
-
-**Desired state**: Every gear specification query receives a structured response following Adventure Works' standard format: include technical specifications using industry terminology, list current pricing and availability across locations, and suggest complementary items when relevant. Consistency builds customer trust and reduces back-and-forth clarification requests.
-
-**Best method**: Supervised Fine-Tuning (SFT) excels at teaching format consistency and terminology standardization. With 300 historical interactions demonstrating the desired response structure, Adventure Works has sufficient labeled examples to train the model to follow the pattern reliably across all gear queries.
-
-> [!TIP]
-> **Data constraint**: Need 50-100+ examples minimum. With fewer than 30? Consider synthetic data generation, broader dataset inclusion, or prompt engineering instead.
-
-### Problem: Inappropriate tone for sensitive topics
-
-> [!NOTE]
-> **Screenshot placeholder**: Conversation showing tone mismatches in safety recommendations.
->
-> **User**: "I'm planning my first winter mountain hike in Scotland. What safety gear should I bring?"
->
-> **Agent (Response 1)**: "Winter mountaineering is extremely dangerous for beginners. You need avalanche transceivers, ice axes, crampons, emergency shelter, PLB, first aid, backup navigation. Do not attempt this without professional training and experienced guides."
->
-> (Later interaction with different user)
->
-> **User**: "Same question - first winter mountain hike, what gear?"
->
-> **Agent (Response 2)**: "Bring warm clothes and good boots. Have fun out there!"
-
-**Challenge**: The agent inconsistently balances safety guidance with encouragement. Some responses sound overly alarmist and discouraging, potentially deterring customers from appropriate outdoor activities. Other responses minimize genuine risks, failing to communicate necessary precautions for challenging conditions. Neither extreme serves Adventure Works' goal of supporting safe outdoor experiences.
-
-**Desired state**: Safety recommendations acknowledge real risks honestly while maintaining an encouraging, supportive tone. Responses provide comprehensive equipment lists with rationale, clearly explain skill requirements, and suggest appropriate progression paths—all while conveying that Adventure Works wants customers to succeed in their outdoor goals when properly prepared.
-
-**Best method**: Direct Preference Optimization (DPO) specializes in subjective alignment challenges. By creating preference pairs from historical interactions—labeling which responses better balanced safety with encouragement—Adventure Works teaches the model to align with their values around risk communication. DPO directly addresses tone calibration that SFT alone cannot effectively teach.
-
-> [!TIP]
-> **Sequential approach**: Need format consistency AND tone alignment? Train with SFT first, verify improvements, then apply DPO starting from that improved model. Use Developer tier (free hosting, 24-hour limit) for initial validation.
-
-### Problem: Illogical reasoning in complex planning
-
-> [!NOTE]
-> **Screenshot placeholder**: Conversation showing flawed trip planning logic.
->
-> **User**: "Plan a five-day coastal hiking trip in Wales for April. Two adults, we're moderate fitness level, one person has limited camping experience, budget-conscious."
->
-> **Agent**: "Day 1: Pembrokeshire Coast Path, Angle to Freshwater West (18km, challenging terrain). Recommend wild camping at clifftop sites.
->
-> Day 2: Freshwater West to Stackpole (22km, some scrambling sections).
->
-> Day 3: Stackpole to Manorbier (20km).
->
-> Day 4: Manorbier to Saundersfoot (19km, exposed clifftop sections).
->
-> Day 5: Saundersfoot to Amroth (15km).
->
-> For camping equipment, I recommend:
-> - Lightweight 2-person tent (£450)
-> - Down sleeping bags rated to -10°C (£280 each)
-> - Carbon fiber trekking poles (£180 pair)"
-
-**Challenge**: The agent ignores critical constraint interactions when developing trip plans. This itinerary recommends wild camping despite the user's limited camping experience, suggests exposed clifftop terrain for moderate fitness level without considering April's unpredictable coastal weather, proposes high-end equipment despite budget consciousness, and ignores that -10°C sleeping bags vastly exceed April Welsh coast requirements. The agent lists trip elements but doesn't reason about how constraints interrelate.
-
-**Desired state**: Trip planning recommendations demonstrate multi-step reasoning that considers how different factors interact. The agent should recognize that limited camping experience suggests established campsites over wild camping, moderate fitness in April weather favors conservative daily distances with bailout options, budget constraints require value-oriented equipment suggestions, and equipment specifications should match actual seasonal conditions. Plans show the agent reasoned through trade-offs rather than listing disconnected recommendations.
-
-**Best method**: Reinforcement Fine-Tuning (RFT) develops sophisticated reasoning capabilities through iterative optimization. By defining graders that evaluate whether trip plans appropriately balance customer constraints—fitness level, experience, budget, weather, and safety factors—Adventure Works trains the model to develop better planning logic. While RFT costs more than SFT or DPO, reducing human escalations for complex travel planning justifies the investment for this high-value, complex-reasoning use case.
-
-> [!TIP]
-> **Budget constraint**: RFT's time-based training plus grading tokens plus hosting fees can consume 80% of your budget for one use case. Justify with ROI: does this use case drive enough revenue to warrant concentrated investment over spreading budget across multiple use cases?
-
-Now that you understand how to compare fine-tuning methods and select approaches based on project requirements, you're ready to develop strategies for creating and managing the training data each method requires.
+Understanding the characteristics of each method provides the foundation—but recognizing when to apply each approach requires practice. Next, you explore realistic agent quality problems and determine which fine-tuning method best addresses each scenario.
