@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.automated-evaluation-genaiops.batch-evaluations-python
+title: Implement batch evaluations with Python
+metadata:
+  title: Implement batch evaluations with Python
+  description: "Learn how to run batch evaluations using Python scripts with Microsoft Foundry"
+  ms.date: 02/22/2026
+  author: madiepev
+  ms.author: madiepev
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-batch-evaluations-python.md)]
