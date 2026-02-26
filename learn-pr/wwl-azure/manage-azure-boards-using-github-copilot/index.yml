@@ -44,11 +44,12 @@ units:
   - learn.wwl.manage-azure-boards-using-github-copilot.analyze-work-items-copilot-chat
   - learn.wwl.manage-azure-boards-using-github-copilot.refine-work-items-for-agent-delegation
   - learn.wwl.manage-azure-boards-using-github-copilot.delegate-single-work-item
-  - learn.wwl.manage-azure-boards-using-github-copilot.steer-review-copilot-prs
+  - learn.wwl.manage-azure-boards-using-github-copilot.steer-review-copilot-pull-requests
   - learn.wwl.manage-azure-boards-using-github-copilot.coordinate-multiple-work-items
   - learn.wwl.manage-azure-boards-using-github-copilot.maintain-traceability-boards
   - learn.wwl.manage-azure-boards-using-github-copilot.apply-governance-security
   - learn.wwl.manage-azure-boards-using-github-copilot.drive-adoption-improvement
+  - learn.wwl.manage-azure-boards-using-github-copilot.ai-assisted-work-item-management-in-azure-boards
   - learn.wwl.manage-azure-boards-using-github-copilot.knowledge-check
   - learn.wwl.manage-azure-boards-using-github-copilot.summary
 badge:
