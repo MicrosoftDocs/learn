@@ -1,0 +1,19 @@
+> [!IMPORTANT]
+> To complete this exercise, you need an active GitHub account, an active GitHub Copilot subscription (Free edition could work, but comes with prompt limitations. You might not be able to go through all prompt steps as defined, depending on your current Copilot consumption), access to an Azure DevOps project and a Visual Studio Code environment.  
+
+This exercise provides a comprehensive experience of using Azure DevOps MCP Server integration in Visual Studio Code with GitHub Copilot, guiding you through several common DevOps team tasks, such as configuring ADO MCP Server in VSCode, interact with Azure Boards work items, retrieve and trigger pipeline runs, inspect logs and monitor Azure DevOps projects and integrate Security guidelines when using MCP. 
+
+By the end of this lab, you will be able to:
+
+> [!IMPORTANT]
+> The focus of this exercise is on the integration of both DevOps platforms, without using actual application code.
+
+When you select the launch exercise button, the browser navigates to a public GitHub page that provides instructions for this exercise.
+
+When you finish the exercise, return here for:
+
+- A quick knowledge check.
+- A summary of what you learned during this module.
+- A badge for completing this module.
+
+[![Button to launch exercise.](../media/launch-exercise.png)](https://go.microsoft.com/fwlink/?linkid=2353651)
