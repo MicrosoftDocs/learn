@@ -64590,17 +64590,17 @@
     },                    
     { 
       "source_path": "learn-pr/wwl-azure/active-directory-domain-services-migration/5-explore-active-directory-migration-tool.yml",
-      "redirect_url": "https://learn.microsoft.com/en-us//training/paths/migrate-servers-workloads-premises-hybrid-environments/",
+      "redirect_url": "https://learn.microsoft.com/en-us//training/paths/migrate-servers-workloads-premises-hybrid-environments?tabs=portal",
       "redirect_document_id": false
     },    
     { 
       "source_path": "learn-pr/wwl-azure/active-directory-domain-services-migration/6-knowledge-check.yml",
-      "redirect_url": "https://learn.microsoft.com/en-us//training/paths/migrate-servers-workloads-premises-hybrid-environments/",
+      "redirect_url": "https://learn.microsoft.com/en-us//training/paths/migrate-servers-workloads-premises-hybrid-environments?tabs=portal",
       "redirect_document_id": false
     },
         { 
       "source_path": "learn-pr/wwl-azure/active-directory-domain-services-migration/7-summary-resources.yml",
-      "redirect_url": "https://learn.microsoft.com/en-us//training/paths/migrate-servers-workloads-premises-hybrid-environments/",
+      "redirect_url": "https://learn.microsoft.com/en-us//training/paths/migrate-servers-workloads-premises-hybrid-environments?tabs=portal",
       "redirect_document_id": false
     }      
   ]
