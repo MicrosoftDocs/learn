@@ -34,9 +34,9 @@ subjects:
 - devops
 - security
 modules:
-- learn.wwl.implement-data-security-compliance
+- learn.implement-data-security-compliance
 - learn.wwl.optimize-database-performance
 - learn.wwl.implement-cicd-sql-database-projects
-- learn.wwl.integrate-sql-solutions-azure-services
+- learn.integrate-sql-solutions-azure-services
 trophy:
   uid: learn.wwl.secure-optimize-deploy-database-solutions.badge

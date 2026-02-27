@@ -32,7 +32,7 @@ subjects:
 modules:
 - learn.wwl.design-implement-database-objects
 - learn.wwl.implement-programmability-objects
-- learn.wwl.write-advanced-sql-code
-- learn.wwl.design-implement-sql-solutions-ai-assisted-tools
+- learn.write-advanced-sql-code
+- learn.design-implement-sql-solutions-ai-assisted-tools
 trophy:
   uid: learn.wwl.design-develop-database-solutions.badge
