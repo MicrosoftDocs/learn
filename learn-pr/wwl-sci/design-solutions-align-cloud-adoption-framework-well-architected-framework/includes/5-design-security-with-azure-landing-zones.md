@@ -91,15 +91,25 @@ Use Microsoft Entra Privileged Identity Management to address these questions. C
 
 ## Design recommendations
 
-- Use Microsoft Entra ID reporting capabilities to generate access control audit reports.
-- Export Azure activity logs to Azure Monitor Logs for long-term data retention. Export to Azure Storage for retention beyond two years, if necessary.
-- Enable Defender for Cloud standard tier for all subscriptions, and use Azure Policy to ensure compliance.
-- Monitor base operating system patching drift via Azure Monitor Logs and Microsoft Defender for Cloud.
-- Use Azure policies to automatically deploy software configurations through VM extensions and enforce a compliant baseline VM configuration.
-- Connect default resource configurations to a centralized Azure Monitor Log Analytics workspace.
-- Use an Azure Event Grid-based solution for log-oriented, real-time alerts.
-- Deploy Microsoft Sentinel as part of your Azure landing zone for centralized SIEM/SOAR capabilities.
-- Implement a zero-trust approach for access to the Azure platform where appropriate.
+### Security operations
+
+- **Generate access control audit reports** from your identity provider to track who accessed what, when, and from where. *Microsoft example: Microsoft Entra ID reporting capabilities.*
+- **Export platform activity logs** to a centralized log analytics solution for long-term retention. For retention beyond two years, archive to immutable storage. *Microsoft example: Azure Monitor Logs for analysis, Azure Storage for long-term archival.*
+- **Enable cloud security posture management** across all subscriptions and enforce compliance through policy. *Microsoft example: Microsoft Defender for Cloud standard tier with Azure Policy.*
+- **Monitor operating system patching drift** using centralized log analytics and posture management tools. *Microsoft example: Azure Monitor Logs and Microsoft Defender for Cloud.*
+- **Monitor virtual machine security configuration drift** through policy to detect when deployed VMs deviate from your baseline. *Microsoft example: Azure Policy compliance reporting.*
+- **Automate software configuration deployment** through policy-driven extensions to enforce compliant baseline configurations on virtual machines. *Microsoft example: Azure Policy with VM extensions.*
+- **Centralize resource diagnostic data** by connecting default resource configurations to a single log analytics workspace. *Microsoft example: Azure Monitor Log Analytics workspace.*
+- **Implement event-driven, real-time alerting** for log-oriented security events. *Microsoft example: Azure Event Grid.*
+- **Deploy centralized SIEM/SOAR capabilities** as part of your landing zone to aggregate security telemetry and automate response. *Microsoft example: Microsoft Sentinel.*
+- **Use platform attestation** to verify the integrity of your VM boot chain, secure the release of confidential disk encryption keys, and attest that workloads run in trusted execution environments. *Microsoft example: Azure Attestation with Trusted Launch and confidential VMs.*
+
+### Access control
+
+- **Develop a security allowlist plan** to evaluate each required service's security configuration, monitoring, and alerting capabilities. If you plan to use customer-managed keys, verify support across all services and implement mitigations for any gaps. *Microsoft example: Azure Key Vault with customer-managed key support per service.*
+- **Define an incident response plan** for cloud services before moving workloads into production, including detection, investigation, and remediation procedures.
+- **Align security requirements with platform roadmaps** to stay current with newly released security controls and incorporate them into your landing zone as they become available.
+- **Implement a Zero Trust approach** for access to the cloud platform, applying least-privilege and verify-explicitly principles where appropriate.
 
 ## Platform versus workload security responsibilities
 
