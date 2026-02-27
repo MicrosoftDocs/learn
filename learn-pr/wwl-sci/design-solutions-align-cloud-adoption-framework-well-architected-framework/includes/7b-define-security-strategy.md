@@ -41,8 +41,10 @@ The CAF Secure methodology organizes security strategy into six components. Each
 
 Security posture modernization means continuously improving your defensive capabilities to keep pace with evolving threats. This component addresses:
 
+- **Identity and access governance**: In cloud environments, identity is the primary control plane. Define policies for authentication strength, privileged access lifecycle, conditional access based on risk signals, and service identity management. MCSB dedicates two domains—Identity Management and Privileged Access—to these controls, and WAF checklist item SE:05 specifies workload-level identity and access requirements.
+- **Network segmentation**: Define a network architecture that enforces isolation between trust zones, segmented by workload sensitivity and function. WAF checklist item SE:06 specifies workload-level network controls including traffic filtering and ingress/egress restrictions.
 - **Asset visibility**: You can't protect what you can't see. Establish a comprehensive inventory of identities, devices, applications, data, and infrastructure across cloud and on-premises environments.
-- **Configuration baselines**: Define secure configuration standards for each asset category. Use the Microsoft Cloud Security Benchmark as a control framework to establish baseline requirements across 12 security domains—from network security and identity management to data protection and AI workload security. At the workload level, WAF checklist item SE:01 reinforces this by requiring a security baseline aligned to compliance requirements, industry standards, and platform recommendations.
+- **Configuration baselines**: Define secure configuration standards for each asset category. Use the Microsoft Cloud Security Benchmark to establish baseline requirements across its 12 security domains. WAF checklist item SE:01 reinforces this by requiring a security baseline aligned to compliance requirements, industry standards, and platform recommendations.
 - **Continuous assessment**: Implement automated tools that measure posture against your baselines. *Microsoft example: Microsoft Defender for Cloud provides cloud security posture management (CSPM) with secure score and regulatory compliance dashboards.*
 
 #### Adopt Zero Trust as a strategic foundation
@@ -53,7 +55,7 @@ The CAF Secure methodology positions Zero Trust adoption as a core element of po
 - **Use least privilege**: Limit access with just-in-time and just-enough-access policies, risk-based adaptive controls, and data protection requirements tied to sensitivity levels.
 - **Assume breach**: Minimize blast radius through segmentation. Verify end-to-end encryption. Use analytics to detect threats and improve defenses proactively.
 
-These principles apply across all six pillars of a Zero Trust architecture: identities, devices, applications, data, infrastructure, and networks. When defining your strategy, map each principle to specific controls within each pillar rather than treating Zero Trust as an abstract goal. The WAF security design principle "plan your security readiness" explicitly requires accounting for Zero Trust and the CIA Triad when creating a workload-level security readiness plan.
+These principles apply across six Zero Trust pillars: identities, devices, applications, data, infrastructure, and networks. Map each principle to specific controls within each pillar rather than treating Zero Trust as an abstract goal. The WAF design principle "plan your security readiness" requires accounting for Zero Trust and the CIA Triad in workload-level planning.
 
 ### Incident preparedness
 
@@ -69,7 +71,8 @@ No security strategy eliminates all risk. Your strategy must account for how the
 Confidentiality ensures that sensitive information is accessible only to authorized entities. WAF checklist items SE:03 (classify and label data by sensitivity) and SE:07 (encrypt data using modern standards aligned to classification) provide the workload-level implementation requirements for this component. Your strategy should define:
 
 - **Data classification**: Establish classification levels (public, internal, confidential, highly confidential) and the criteria for assigning each level. Classification drives all downstream protection decisions.
-- **Data protection controls**: Map specific protection mechanisms to each classification level—encryption at rest and in transit, access controls, data loss prevention policies, and information barriers.
+- **Data protection controls**: Map specific protection mechanisms to each classification level—encryption at rest and in transit, access controls, and information barriers.
+- **Data loss prevention (DLP)**: Define a DLP strategy that prevents sensitive data from being shared, transferred, or exposed outside authorized boundaries. DLP policies should align to your classification levels and cover email, cloud storage, endpoints, and collaboration platforms.
 - **Regulatory alignment**: Identify which data falls under regulatory requirements (HIPAA, PCI-DSS, industry-specific mandates) and ensure your classification and protection scheme satisfies those obligations.
 - **Lifecycle management**: Define how data is handled from creation through disposal, including retention policies and secure deletion procedures.
 
@@ -99,17 +102,19 @@ A security strategy fails if it only addresses today's environment. Sustainment 
 - **Threat landscape monitoring**: Assign responsibility for tracking emerging threats and technologies that could affect your security posture, including new attack techniques and evolving regulatory requirements.
 - **Skill development**: Plan for ongoing training and skills investment as cloud services and threat tactics evolve. Security knowledge has a short half-life; build learning into your operating model.
 
-## Structure the strategy document
+## Address governance and compliance
 
-Bring these components together into a documented strategy that maps CAF lifecycle phases to WAF quality requirements. The document should be something stakeholders can reference and act on:
+A strategy without governance remains aspirational. Governance provides the enforcement mechanisms that translate strategic objectives into verifiable, consistent practice across your cloud estate:
 
-1. **Business context**: State the business drivers, risk appetite, and compliance obligations that shape security priorities.
-2. **Principles**: Define the security principles (Zero Trust, defense in depth, least privilege) that guide all decisions.
-3. **Strategy components**: Document posture modernization, incident preparedness, confidentiality, integrity, availability, and sustainment objectives with measurable targets. Reference the specific MCSB controls and WAF checklist items (SE:01–SE:12) that each objective addresses.
-4. **Scope mapping**: Assign each objective to the appropriate scope—strategy (CAF Secure methodology), platform (landing zones and MCSB), or workload (WAF security checklist)—so that the right teams own the right objectives. CAF-scope objectives address organizational direction and governance. Platform-scope objectives address infrastructure controls. Workload-scope objectives address the architectural requirements defined by WAF.
-5. **Phased roadmap**: Sequence implementation based on risk, business impact, and dependencies. Use the prioritization criteria discussed in the previous unit's gap analysis.
-6. **Success metrics**: Define how you measure progress—secure score targets, compliance percentages, mean time to detect, mean time to respond, and coverage metrics for each strategy component.
+- **Policy-as-code**: Codify security requirements as automated policies that prevent noncompliant deployments, audit existing configurations, and remediate drift. *Microsoft example: Azure Policy evaluates resources against defined rules and can deny, audit, or auto-remediate noncompliant configurations.*
+- **Compliance mapping**: Map each strategy component to the regulatory and industry frameworks your organization must satisfy—HIPAA, PCI-DSS, sector-specific mandates, or internal standards. Track adherence through continuous compliance monitoring rather than periodic audits alone.
+- **Exception management**: Define a formal process for security exceptions—risk acceptance criteria, approval authority, time-bound expiration, and compensating controls. Without a clear exception process, teams bypass controls informally.
+- **Secure development lifecycle**: Commit to integrating security into every phase of software delivery—threat modeling during design, secure code review during development, automated security testing in deployment pipelines, and runtime protection in production. WAF checklist item SE:02 requires a hardened software supply chain with integrated threat modeling.
 
-The strategy document doesn't need to be lengthy. Clarity and actionability matter more than comprehensiveness.
+## Address AI workload security
 
-With a security and governance strategy defined—whether from evaluation findings (previous unit) or from the ground up (this unit)—the next step is recommending specific solutions that implement each capability your strategy requires.
+Organizations deploying AI workloads face additional security concerns that traditional strategies don't cover. Your strategy should address model protection (securing model weights and training data as high-value assets), input validation (filtering for prompt injection and adversarial inputs), output controls (preventing data leakage through model responses), and monitoring for unusual query patterns. MCSB includes a dedicated AI security domain that provides controls for these scenarios.
+
+With all strategy components and governance mechanisms defined, document the strategy with measurable targets for each component, scope assignments—CAF for organizational objectives, landing zones for platform controls, WAF for workload requirements—and a phased roadmap prioritized by risk and business impact.
+
+The next step is recommending specific solutions that implement each capability your strategy requires.
