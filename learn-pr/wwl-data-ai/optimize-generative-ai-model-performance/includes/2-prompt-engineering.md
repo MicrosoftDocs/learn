@@ -15,8 +15,6 @@ How you structure and combine these components determines how effectively the mo
 
 ## Design effective system messages
 
-<!-- TODO: Screenshot of the chat playground in the Microsoft Foundry portal showing the system message pane on the left, a user prompt in the chat area, and a model response. Highlight the system message field to show where developers configure it. -->
-
 A **system message** is a set of instructions you provide to the model to guide its responses. System messages typically appear first in the conversation and act as the highest-level set of instructions. You use them to:
 
 - Define the assistant's role and boundaries.
@@ -124,8 +122,6 @@ When your prompt includes multiple sections — such as instructions, source tex
 
 ## Configure model parameters
 
-<!-- TODO: Screenshot of the model parameter configuration panel in the Microsoft Foundry portal chat playground, showing the Temperature and Top_p sliders with their current values. -->
-
 Beyond the text of your prompts, you can adjust model parameters that control how the model generates responses:
 
 - **Temperature**: Controls the randomness of the output. A higher value (for example, 0.7) produces more creative and varied responses, while a lower value (for example, 0.2) produces more focused and deterministic responses. Use lower values for factual tasks and higher values for creative ones.
@@ -133,13 +129,6 @@ Beyond the text of your prompts, you can adjust model parameters that control ho
 
 > [!TIP]
 > The general recommendation is to adjust either temperature or top_p, not both at the same time.
-
-Other useful parameters include:
-
-- **Max tokens**: Sets the maximum length of the response.
-- **Stop sequences**: Specifies text patterns where the model should stop generating.
-- **Frequency penalty**: Reduces the likelihood of the model repeating the same phrases.
-- **Presence penalty**: Encourages the model to introduce new topics.
 
 For the travel agency scenario, you might use a low temperature (0.2) when answering factual questions about hotel amenities, but a higher temperature (0.7) when generating creative travel itinerary suggestions.
 

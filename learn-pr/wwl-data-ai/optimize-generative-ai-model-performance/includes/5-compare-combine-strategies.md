@@ -1,4 +1,4 @@
-Now that you've explored prompt engineering, RAG, and fine-tuning individually, let's look at how they relate to each other. These strategies aren't mutually exclusive—they're complementary methods that you can combine to meet different optimization goals.
+Now that you've explored prompt engineering, RAG, and fine-tuning individually, let's look at how they relate to each other. These strategies aren't mutually exclusive;  they're complementary methods that you can combine to meet different optimization goals.
 
 ## Understand the optimization spectrum
 

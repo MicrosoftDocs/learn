@@ -6,6 +6,8 @@ To address this challenge, you can **ground** the model by providing it with rel
 
 When you use a language model without grounding, the only information it has comes from its training data. The result might be grammatically correct and logically structured, but it can be inaccurate or include fabricated details. For example, asking "Which hotels do you offer in Paris?" without grounding data might return fictional hotel names.
 
+:::image type="content" source="../media/ungrounded.png" alt-text="Diagram showing an ungrounded model returning an uncontextualized response based only on training data.":::
+
 When you **ground** a prompt, you provide relevant data from a trusted source along with the user's question. The model then generates a response based on that data, producing more accurate and contextually relevant answers.
 
 Consider the difference:
@@ -13,13 +15,15 @@ Consider the difference:
 - **Ungrounded**: The model relies only on its training data and might invent hotel names or details.
 - **Grounded**: The model receives your actual hotel catalog data as context and responds with real hotel names, prices, and availability.
 
+:::image type="content" source="../media/grounded.png" alt-text="Diagram comparing an ungrounded model returning generic responses versus a grounded model returning data-backed responses.":::
+
 Grounding improves the factual accuracy of responses by connecting the model to information that is specific, current, and relevant to the user's needs.
 
 ## How RAG works
 
-<!-- TODO: Diagram illustrating the RAG pattern flow: (1) User submits a question, (2) the question is used to search a data source/index, (3) retrieved documents are added to the prompt, (4) the augmented prompt is sent to the language model, (5) a grounded response is returned. Similar to the rag-pattern.png in the build-copilot module. -->
-
 RAG is a pattern that retrieves relevant information from a data source and includes it in the prompt before the model generates a response. The process follows three steps:
+
+:::image type="content" source="../media/rag-pattern.png" alt-text="Diagram showing the three-step RAG pattern: retrieve grounding data, augment the prompt with that data, and generate a grounded response.":::
 
 1. **Retrieve**: Search a data source for information that is relevant to the user's question.
 1. **Augment**: Add the retrieved information to the prompt as context.
@@ -31,7 +35,7 @@ By retrieving context from a specified data source, you ensure that the model us
 
 A critical component of RAG is the ability to efficiently find the most relevant information in your data source. This is where **embeddings** and **vector search** come in.
 
-An **embedding** is a mathematical representation of text as a vector—a list of floating-point numbers that captures the meaning of words, sentences, or documents. You create embeddings by sending your content to an embedding model, such as an Azure OpenAI embedding model available in Microsoft Foundry.
+An **embedding** is a mathematical representation of text as a vector — a list of floating-point numbers that captures the meaning of words, sentences, or documents. You create embeddings by sending your content to an embedding model, such as an Azure OpenAI embedding model available in Microsoft Foundry.
 
 For example, imagine two documents:
 
@@ -40,13 +44,15 @@ For example, imagine two documents:
 
 These sentences use different words but have similar meanings. When you create embeddings for each, their vectors are close together in multidimensional space, reflecting their semantic similarity.
 
+:::image type="content" source="../media/vector-embeddings.jpg" alt-text="Diagram showing text keywords plotted as vectors in multidimensional space, with the distance between vectors representing semantic similarity.":::
+
 **Cosine similarity** measures how close two vectors are by calculating the angle between them. A value near 1 means the vectors are very similar. This mathematical approach enables you to find relevant documents even when the exact words don't match.
 
 ## Use Azure AI Search for retrieval
 
-<!-- TODO: Screenshot of the Add Data dialog in the Microsoft Foundry portal, showing the available data source options (Azure Blob Storage, Azure Data Lake Storage Gen2, Microsoft OneLake, file upload). -->
-
 **Azure AI Search** provides the retrieval component for RAG solutions in Microsoft Foundry. It allows you to bring your own data, create a searchable index, and query it to retrieve relevant information.
+
+:::image type="content" source="../media/index.png" alt-text="Diagram showing an Azure AI Search index being queried to retrieve grounding data for a user question.":::
 
 To use Azure AI Search with RAG, you:
 
@@ -101,7 +107,7 @@ RAG is most effective when:
 - **Factual accuracy is critical**: You need responses grounded in real data rather than the model's general knowledge.
 - **The base model's training data has a cutoff**: Events or information that occurred after the model's training cutoff date need to be accessible.
 
-For the travel agency scenario, RAG allows customers to ask questions about specific hotels, destinations, and booking policies—all grounded in the agency's actual catalog data.
+For the travel agency scenario, RAG allows customers to ask questions about specific hotels, destinations, and booking policies, all grounded in the agency's actual catalog data.
 
 > [!TIP]
-> If you're building agents that need grounded knowledge without managing your own search infrastructure, consider **Foundry IQ** — a managed knowledge store that simplifies grounding for AI agents. To learn more, see [YOURPLACEHOLDER]().
+> If you're building agents that need grounded knowledge without managing your own search infrastructure, consider **Foundry IQ** — a managed knowledge store that simplifies grounding for AI agents. To learn more, see [Build knowledge-enhanced AI agents with Foundry IQ](/training/modules/introduction-foundry-iq/?azure-portal=true).
