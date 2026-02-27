@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.optimize-generative-ai-model-performance.retrieval-augmented-generation
+title: Ground your model with Retrieval Augmented Generation
+metadata:
+  title: Ground your model with Retrieval Augmented Generation
+  description: Learn when and how to use Retrieval Augmented Generation (RAG) to ground a language model with domain-specific data for more accurate responses.
+  author: ivorb
+  ms.author: berryivor
+  ms.date: 02/24/2026
+  ms.topic: unit
+  ai-usage: ai-assisted
+durationInMinutes: 9
+content: |
+  [!include[](includes/3-retrieval-augmented-generation.md)]
