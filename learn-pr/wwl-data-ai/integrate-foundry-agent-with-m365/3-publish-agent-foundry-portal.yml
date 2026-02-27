@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.integrate-foundry-agent-with-m365.publish-agent-foundry-portal
+title: Publish an agent from Foundry portal to Teams
+metadata:
+  title: Publish an agent from Foundry portal to Teams
+  description: Learn the step-by-step process to publish a Microsoft Foundry agent to Microsoft Teams and Microsoft 365 Copilot.
+  ms.date: 02/17/2026
+  author: ivorb
+  ms.author: berryivor
+  ms.topic: unit
+  ai-usage: ai-assisted
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-publish-agent-foundry-portal.md)]
