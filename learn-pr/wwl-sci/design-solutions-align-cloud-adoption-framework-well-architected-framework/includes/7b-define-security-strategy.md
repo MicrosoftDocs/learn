@@ -1,6 +1,6 @@
-The previous unit showed how to evaluate an existing security posture and design a strategy from the findings. But what if your organization lacks a formal security strategy altogether? Organizations adopting cloud for the first time, startups scaling beyond their initial infrastructure, and enterprises that historically relied on implicit security practices all face the same challenge—they need to design a security and governance strategy before they can evaluate against one.
+The previous unit showed how to evaluate an existing security posture and design a strategy from the findings. But what if your organization lacks a formal security strategy altogether? Organizations without one—whether adopting cloud for the first time or scaling beyond implicit security practices—need to design a strategy before they can evaluate against one.
 
-This unit covers how to design a new strategy for security and governance based on the Cloud Adoption Framework (CAF) and the Well-Architected Framework (WAF). CAF provides the organizational and lifecycle structure—how to plan, adopt, govern, and manage security across your cloud estate. WAF provides the architectural quality standards—what security properties your workloads must exhibit. A comprehensive strategy draws on both: CAF shapes the strategic direction and governance model, while WAF defines the security requirements that workloads must satisfy.
+This unit covers how to design a new strategy for security and governance based on the Cloud Adoption Framework (CAF) and the Well-Architected Framework (WAF). CAF provides the organizational and lifecycle structure—how to plan, adopt, govern, and manage security across your cloud estate. WAF provides the architectural quality standards—what security properties your workloads must exhibit.
 
 ## Recognize when you need a new strategy
 
@@ -11,7 +11,7 @@ Defining a new security strategy is appropriate when one or more of these condit
 - **Major transformation**: The organization is undergoing a significant shift—such as a first cloud adoption, a merger, or a move to a new operating model—that invalidates prior assumptions.
 - **Regulatory change**: New compliance requirements demand a fundamentally different security approach rather than incremental adjustments.
 
-If a documented cloud security strategy already exists, use the evaluation approach from the previous unit instead. Defining a new strategy and evaluating an existing one are complementary activities—most organizations cycle between both as their environment evolves.
+If a documented cloud security strategy already exists, use the evaluation approach from the previous unit instead.
 
 ## Address organizational readiness
 
@@ -22,6 +22,16 @@ Cloud security requires a broader set of participants than traditional on-premis
 **Align teams and roles.** Cloud security involves specialized functions that may not exist in your current structure—cloud security architecture, DevSecOps, security posture management, and threat intelligence. Map existing skills to required functions and identify gaps early. The CAF Secure methodology provides guidance on [security teams, roles, and functions](/azure/cloud-adoption-framework/secure/teams-roles) to help structure these responsibilities.
 
 **Secure executive sponsorship.** A security strategy without executive backing becomes a document that nobody follows. Ensure leadership understands the business rationale—risk reduction, compliance enablement, and business agility—and commits resources for implementation.
+
+## Establish security objectives
+
+Before defining how to address each strategy component, establish what security must achieve. Work with business stakeholders to define objectives that are:
+
+- **Business-aligned**: Tie each objective to a business outcome—revenue protection, customer trust, or regulatory compliance.
+- **Risk-informed**: Prioritize based on threat likelihood and business impact. Focus resources where potential harm is greatest.
+- **Measurable**: Define metrics that demonstrate progress—reduction in exposure, detection coverage, or mean time to remediate.
+
+These objectives become the criteria for evaluating each strategy component that follows.
 
 ## Define strategy components
 
@@ -52,7 +62,7 @@ No security strategy eliminates all risk. Your strategy must account for how the
 - **Detection capabilities**: Define monitoring coverage requirements for each environment—cloud workloads, identity systems, network traffic, and endpoint activity. Specify detection time targets for critical threat categories.
 - **Response procedures**: Establish incident response plans that define roles, communication channels, escalation paths, and decision authority. Include procedures for both contained incidents (single-workload compromise) and broad-impact scenarios (identity provider compromise, supply chain attack). WAF checklist item SE:12 requires workload-specific incident response procedures covering localized issues through disaster recovery.
 - **Recovery objectives**: Set recovery time objectives (RTO) and recovery point objectives (RPO) for security-related outages. Define what "recovered" means for each critical system—restored operations, confirmed absence of persistence mechanisms, and validated integrity of data.
-- **Practice and refinement**: Conduct tabletop exercises and simulated attacks regularly. Update response procedures based on lessons learned and emerging threat intelligence.
+- **Practice and refinement**: Conduct tabletop exercises and simulated attacks regularly. Update procedures based on lessons learned.
 
 ### Confidentiality strategy
 
@@ -100,6 +110,6 @@ Bring these components together into a documented strategy that maps CAF lifecyc
 5. **Phased roadmap**: Sequence implementation based on risk, business impact, and dependencies. Use the prioritization criteria discussed in the previous unit's gap analysis.
 6. **Success metrics**: Define how you measure progress—secure score targets, compliance percentages, mean time to detect, mean time to respond, and coverage metrics for each strategy component.
 
-The strategy document doesn't need to be lengthy. Clarity and actionability matter more than comprehensiveness. A concise strategy that teams actually follow is more effective than a detailed document that sits unread.
+The strategy document doesn't need to be lengthy. Clarity and actionability matter more than comprehensiveness.
 
 With a security and governance strategy defined—whether from evaluation findings (previous unit) or from the ground up (this unit)—the next step is recommending specific solutions that implement each capability your strategy requires.
