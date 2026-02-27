@@ -1,4 +1,4 @@
-You've identified which fine-tuning method addresses your agent quality challenge. Now prepare training data that actually works. Quality training data determines whether fine-tuning succeeds or wastes resources. Data preparation has two critical validation stages: ensuring your data follows the correct format for your chosen method, and verifying the content quality meets standards for effective training.
+You identified which fine-tuning method addresses your agent quality challenge. Now prepare training data that actually works. Quality training data determines whether fine-tuning succeeds or wastes resources. Data preparation involves three key stages: validating your data follows the correct format for your chosen method, verifying the content quality meets training standards, and creating your dataset using the right tools and workflow.
 
 ## Validate data format
 
@@ -34,7 +34,7 @@ For multi-turn conversations where you want to optimize only specific responses,
 
 DPO requires preference pairs in JSONL format with three top-level fields: `input` (containing the system message and initial user message), `preferred_output` (the better response), and `non_preferred_output` (the worse response).
 
-:::image type="content" source="../media/preference-format.png" alt-text="Diagram showing direct preference optimization data format with input messages, preferred output, and non-preferred output fields." lightbox="../media/preference-format.png":::
+:::image type="content" source="../media/preference-format.png" alt-text="Diagram showing direct preference optimization data format with input messages, preferred output, and nonpreferred output fields." lightbox="../media/preference-format.png":::
 
 Each training example separates the prompt (`input`) from two alternative responses (`preferred_output` and `non_preferred_output`):
 
@@ -53,8 +53,8 @@ Each training example separates the prompt (`input`) from two alternative respon
 - Every example has `input`, `preferred_output`, and `non_preferred_output` fields
 - `input` contains a `messages` array with system message (optional) and user message
 - `preferred_output` contains at least one assistant message demonstrating preferred behavior
-- `non_preferred_output` contains at least one assistant message demonstrating non-preferred behavior
-- Difference between preferred and non-preferred illustrates the specific quality you're optimizing (tone, safety balance, style)
+- `non_preferred_output` contains at least one assistant message demonstrating nonpreferred behavior
+- Difference between preferred and nonpreferred illustrates the specific quality you're optimizing (tone, safety balance, style)
 
 # [Reinforcement Fine-Tuning (RFT)](#tab/rft)
 
@@ -118,11 +118,32 @@ High-quality training data shares predictable characteristics regardless of fine
 
 **Accuracy**: Examples contain factually correct information and appropriate recommendations. One inaccurate training example (like recommending summer gear for winter conditions) can corrupt model behavior across related scenarios. Verify domain correctness before including examples.
 
-**Diversity**: Training data covers the full range of query variations, edge cases, and response scenarios your model will encounter. Adventure Works ensures their safety dataset includes varied experience levels, different seasons, multiple activity types, and diverse geographic contexts (not just summer hiking in one region).
+**Diversity**: Training data covers the full range of query variations, edge cases, and response scenarios your model can encounter. Adventure Works ensures their safety dataset includes varied experience levels, different seasons, multiple activity types, and diverse geographic contexts (not just summer hiking in one region).
 
-**Clarity**: Each example unambiguously demonstrates one desired behavior. Avoid examples where the "correct" response requires subjective interpretation or where multiple valid approaches exist unless you're using preference pairs (DPO) that explicitly show which approach you prefer.
+**Clarity**: Each example unambiguously demonstrates one desired behavior. Avoid examples where the "correct" response requires subjective interpretation or where multiple valid approaches exist. Unless you're using preference pairs (DPO) that explicitly show which approach you prefer.
 
 **Representativeness**: Training data distribution matches real-world usage patterns. If 40% of Adventure Works queries ask about waterproof ratings, but waterproof examples represent only 5% of training data, the model underperforms on a frequent use case.
 
 > [!TIP]
 > **Quality over quantity**: 100 high-quality diverse examples outperform 500 mediocre examples. Start with your best 50-100 examples, fine-tune, evaluate, then decide whether to expand volume or improve existing examples based on failure analysis.
+
+## Create your dataset
+
+Follow this systematic workflow to create training data that meets format requirements and quality standards.
+
+:::image type="content" source="../media/workflow-data.png" alt-text="Diagram showing the five-step workflow for creating training datasets: choose strategy, prepare materials, generate examples, validate, and monitor performance." lightbox="../media/workflow-data.png":::
+
+1. **Choose your data acquisition strategy**: Real data works when you have documented interactions. Synthetic generation works when examples are scarce or contain sensitive information. Hybrid combines both, for example you can use real data for common scenarios, synthetic for edge cases.
+
+2. **Prepare your source materials**: For synthetic data: clean PDFs/markdown for Q&A generation or OpenAPI specs for tool use generation. For real data: gather chat logs, support tickets, or documented interactions. Remove unnecessary formatting and marketing content.
+
+3. **Generate or curate training examples**: Use Foundry's synthetic data generators (Simple Q&A or Tool use) to create JSONL examples, or manually structure real interactions into JSONL format.
+
+4. **Validate format and quality**: Verify format compliance and quality principles. Review synthetic examples for incorrect information. Start with 50-100 examples, validate thoroughly, then scale.
+
+5. **Monitor and audit model performance**: Evaluate model benchmarks and metrics on validation data after fine-tuning. If performance falls short, analyze failures to determine whether you need more, better, or different examples.
+
+> [!TIP]
+> Learn more about how to [generate synthetic data for fine-tuning with Microsoft Foundry](/azure/ai-foundry/fine-tuning/data-generation?view=foundry#generate-synthetic-data-for-fine-tuning)
+
+With properly formatted, high-quality training data created, you're ready to learn how to optimize fine-tuning a model.
