@@ -8,7 +8,7 @@ Different fine-tuning methods require different data structures. Before training
 
 SFT requires conversations in JSONL (JSON Lines) format with **system** instructions, **user** prompts, and ideal **assistant** responses.
 
-:::image type="content" source="../media/supervised-format.png" alt-text="Diagram showing supervised fine-tuning data format with messages array containing system, user, and assistant roles.":::
+:::image type="content" source="../media/supervised-format.png" alt-text="Diagram showing supervised fine-tuning data format with messages array containing system, user, and assistant roles." lightbox="../media/supervised-format.png":::
 
 Each training example contains a `messages` array where roles alternate between user and assistant:
 
@@ -34,7 +34,7 @@ For multi-turn conversations where you want to optimize only specific responses,
 
 DPO requires preference pairs in JSONL format with three top-level fields: `input` (containing the system message and initial user message), `preferred_output` (the better response), and `non_preferred_output` (the worse response).
 
-:::image type="content" source="../media/preference-format.png" alt-text="Diagram showing direct preference optimization data format with input messages, preferred output, and non-preferred output fields.":::
+:::image type="content" source="../media/preference-format.png" alt-text="Diagram showing direct preference optimization data format with input messages, preferred output, and non-preferred output fields." lightbox="../media/preference-format.png":::
 
 Each training example separates the prompt (`input`) from two alternative responses (`preferred_output` and `non_preferred_output`):
 
@@ -60,7 +60,7 @@ Each training example separates the prompt (`input`) from two alternative respon
 
 RFT requires prompts in JSONL format plus a separate grader function that scores model responses. The model learns through reinforcement by generating responses and receiving reward scores from the grader. Training data can include optional fields (like `ideal_itinerary`) that graders access for scoring.
 
-:::image type="content" source="../media/reinforcement-format.png" alt-text="Diagram showing reinforcement fine-tuning data format with messages array and optional fields for grader access.":::
+:::image type="content" source="../media/reinforcement-format.png" alt-text="Diagram showing reinforcement fine-tuning data format with messages array and optional fields for grader access." lightbox="../media/reinforcement-format.png":::
 
 Each training example includes a `messages` array ending with a user message, plus optional fields that the grader uses for scoring:
 
@@ -109,6 +109,8 @@ This text similarity grader compares the model's generated itinerary against the
 ## Validate data quality
 
 Correctly formatted data can still fail if the content lacks quality. After confirming format compliance, validate that your queries, responses, and ground truths meet these quality standards.
+
+:::image type="content" source="../media/data-quality.png" alt-text="Diagram showing the five quality principles for training data: consistency, accuracy, diversity, clarity, and representativeness.":::
 
 High-quality training data shares predictable characteristics regardless of fine-tuning method. Evaluate your dataset against these five principles:
 
