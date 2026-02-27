@@ -39,7 +39,7 @@ units:
 - learn.wwl.optimize-finetune-agents.select-finetune-method
 - learn.wwl.optimize-finetune-agents.scenarios
 - learn.wwl.optimize-finetune-agents.prepare-data
-- learn.wwl.optimize-finetune-agents.finetune-model
+- learn.wwl.optimize-finetune-agents.optimize-finetune
 - learn.wwl.optimize-finetune-agents.exercise
 - learn.wwl.optimize-finetune-agents.knowledge-check
 - learn.wwl.optimize-finetune-agents.summary

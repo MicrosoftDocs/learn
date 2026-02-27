@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.optimize-finetune-agents.finetune-model
+uid: learn.wwl.optimize-finetune-agents.optimize-finetune
 title: Explore fine-tuning language models in Microsoft Foundry portal
 metadata:
   title: Explore fine-tuning foundation models in Microsoft Foundry portal
