@@ -7,7 +7,7 @@ Microsoft Purview combines multiple solution areas to address compliance require
 
 | Solution Area | Purpose | Key Solutions |
 |--------------|---------|---------------|
-| **Data security** | Protect sensitive data across its lifecycle | Information Protection, Data Loss Prevention, Insider Risk Management, Information Barriers, Privileged Access Management |
+| **Data security** | Protect sensitive data across its lifecycle | Information Protection, Data Loss Prevention, Insider Risk Management, Information Barriers, Privileged Access Management, Data Security Investigations |
 | **Data governance** | Manage and catalog data across your estate | Data Map, Unified Catalog |
 | **Data compliance** | Meet regulatory requirements and prepare for audits | Compliance Manager, Audit, Communication Compliance, eDiscovery, Data Lifecycle Management, Records Management |
 
@@ -44,7 +44,7 @@ Regulations often require controls to prevent unauthorized disclosure of sensiti
 Design your DLP policies to address specific regulatory requirements:
 
 - **Policy conditions** - Define what sensitive data to protect based on sensitive information types, labels, or content patterns
-- **Policy locations** - Specify where monitoring occurs (Exchange, SharePoint, OneDrive, Teams, endpoints, Defender for Cloud Apps)
+- **Policy locations** - Specify where monitoring occurs (Exchange, SharePoint, OneDrive, Teams, devices, non-Microsoft cloud apps, on-premises repositories, Fabric and Power BI, and Microsoft 365 Copilot)
 - **Policy actions** - Configure responses from audit-only monitoring to blocking with user override to complete restriction
 
 DLP integrates with your sensitivity labels, so protection can follow content based on its classification. This integration is particularly valuable for requirements that mandate different handling based on data sensitivity levels.
@@ -54,18 +54,20 @@ DLP integrates with your sensitivity labels, so protection can follow content ba
 Compliance frameworks require organizations to maintain audit trails and respond to legal or regulatory inquiries. Purview provides several solutions for these requirements:
 
 <!-- Source: https://learn.microsoft.com/purview/audit-solutions-overview -->
-**Microsoft Purview Audit** captures user and admin activities across Microsoft 365 services. Design your audit strategy to:
+**Microsoft Purview Audit** captures user and admin activities across Microsoft 365 services. Audit is available in two tiers—Audit (Standard) provides 180-day retention with basic search and export, while Audit (Premium) adds custom retention policies (up to 10 years with an add-on license), intelligent insights for forensic investigations, and higher API bandwidth. Design your audit strategy to:
 
-- Enable appropriate audit logging levels based on regulatory requirements
-- Configure retention periods that meet legal hold obligations
+- Select the appropriate audit tier based on regulatory retention and investigation requirements
+- Configure retention policies that meet legal hold obligations
 - Establish processes for searching and exporting audit data for investigations
 
+<!-- Source: https://learn.microsoft.com/purview/ediscovery -->
 **Microsoft Purview eDiscovery** helps you identify, preserve, collect, and export content for legal matters. For compliance purposes, design workflows that:
 
 - Create legal holds to preserve relevant content
 - Define search criteria that capture required data without over-collection
 - Export content in formats suitable for regulatory review
 
+<!-- Source: https://learn.microsoft.com/purview/records-management -->
 **Microsoft Purview Records Management** applies retention and deletion policies to meet recordkeeping requirements. Consider how file plans, retention labels, and disposition reviews align with your regulatory obligations.
 
 ## Managing insider risk
@@ -87,7 +89,7 @@ As discussed in the AI compliance considerations unit, organizations deploying A
 **Data Security Posture Management (DSPM) (preview)** provides visibility and control for both traditional applications and AI apps and agents. Use DSPM to:
 
 - Discover sensitive data that may be exposed to AI applications
-- Monitor how AI apps access and process organizational data through AI observability dashboards
+- Monitor how AI apps access and process organizational data through data security insights and trend analysis
 - Identify and remediate data security risks before they become compliance issues
 
 <!-- Source: https://learn.microsoft.com/purview/ai-microsoft-purview -->
