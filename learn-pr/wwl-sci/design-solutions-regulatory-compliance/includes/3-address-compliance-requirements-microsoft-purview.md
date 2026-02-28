@@ -2,13 +2,14 @@ Microsoft Purview provides a unified platform for data security, governance, and
 
 ## The Microsoft Purview portfolio
 
+<!-- Source: https://learn.microsoft.com/purview/purview -->
 Microsoft Purview combines multiple solution areas to address compliance requirements across your organization's data estate:
 
 | Solution Area | Purpose | Key Solutions |
 |--------------|---------|---------------|
-| **Data security** | Protect sensitive data across its lifecycle | Information Protection, Data Loss Prevention, Insider Risk Management |
+| **Data security** | Protect sensitive data across its lifecycle | Information Protection, Data Loss Prevention, Insider Risk Management, Information Barriers, Privileged Access Management |
 | **Data governance** | Manage and catalog data across your estate | Data Map, Unified Catalog |
-| **Data compliance** | Meet regulatory requirements and prepare for audits | Compliance Manager, Audit, eDiscovery, Records Management |
+| **Data compliance** | Meet regulatory requirements and prepare for audits | Compliance Manager, Audit, Communication Compliance, eDiscovery, Data Lifecycle Management, Records Management |
 
 Understanding how these solutions map to specific compliance requirements helps you design an integrated architecture rather than deploying isolated tools.
 
@@ -17,6 +18,7 @@ Understanding how these solutions map to specific compliance requirements helps 
 
 ## Addressing data protection requirements
 
+<!-- Source: https://learn.microsoft.com/purview/information-protection -->
 Most compliance frameworks require organizations to identify, classify, and protect sensitive data. Purview Information Protection provides the foundation for these requirements.
 
 **Sensitive information types** identify regulated data like payment card numbers, health records, or personal identifiers using built-in patterns or custom definitions. **Trainable classifiers** extend this capability by learning to recognize sensitive content based on examples you provide—useful for organization-specific data like internal financial reports or proprietary designs.
@@ -36,6 +38,7 @@ When designing your labeling strategy, consider:
 
 ## Preventing unauthorized data sharing
 
+<!-- Source: https://learn.microsoft.com/purview/dlp-learn-about-dlp -->
 Regulations often require controls to prevent unauthorized disclosure of sensitive information. **Microsoft Purview Data Loss Prevention (DLP)** monitors and controls how sensitive data is shared across Microsoft 365 services, endpoints, and cloud apps.
 
 Design your DLP policies to address specific regulatory requirements:
@@ -50,6 +53,7 @@ DLP integrates with your sensitivity labels, so protection can follow content ba
 
 Compliance frameworks require organizations to maintain audit trails and respond to legal or regulatory inquiries. Purview provides several solutions for these requirements:
 
+<!-- Source: https://learn.microsoft.com/purview/audit-solutions-overview -->
 **Microsoft Purview Audit** captures user and admin activities across Microsoft 365 services. Design your audit strategy to:
 
 - Enable appropriate audit logging levels based on regulatory requirements
@@ -66,6 +70,7 @@ Compliance frameworks require organizations to maintain audit trails and respond
 
 ## Managing insider risk
 
+<!-- Source: https://learn.microsoft.com/purview/insider-risk-management-solution-overview -->
 Some regulations require controls to detect and respond to insider threats. **Microsoft Purview Insider Risk Management** uses signals from across Microsoft 365 and third-party systems to identify risky user activities.
 
 Design your insider risk program to:
@@ -76,24 +81,27 @@ Design your insider risk program to:
 
 ## Addressing AI compliance requirements
 
-As discussed in the AI compliance considerations unit, organizations deploying AI face specific regulatory requirements around data protection, transparency, and governance. Purview provides capabilities specifically designed for AI scenarios:
+As discussed in the AI compliance considerations unit, organizations deploying AI face specific regulatory requirements around data protection, transparency, and governance. Multiple Purview solutions extend their capabilities to AI scenarios:
 
-**Data Security Posture Management (DSPM)** provides visibility and control for both traditional applications and AI apps. Use DSPM to:
+<!-- Source: https://learn.microsoft.com/purview/data-security-posture-management-learn-about -->
+**Data Security Posture Management (DSPM) (preview)** provides visibility and control for both traditional applications and AI apps and agents. Use DSPM to:
 
 - Discover sensitive data that may be exposed to AI applications
-- Monitor how AI apps access and process organizational data
+- Monitor how AI apps access and process organizational data through AI observability dashboards
 - Identify and remediate data security risks before they become compliance issues
 
-**Microsoft Purview for AI** extends data security protections to generative AI experiences:
+<!-- Source: https://learn.microsoft.com/purview/ai-microsoft-purview -->
+Existing Purview data security capabilities extend to generative AI apps, including Microsoft 365 Copilot, Copilot Studio, and third-party AI applications:
 
-- Protect data used by Copilot experiences and custom AI agents
-- Apply sensitivity labels to AI-generated content
-- Prevent sensitive data from being shared inappropriately through AI interactions
+- **Sensitivity labels** protect data referenced by AI apps—users must have appropriate usage rights (VIEW and EXTRACT) for AI apps to return encrypted content
+- **Data Loss Prevention** monitors AI interactions and can block sensitive data sharing with unmanaged AI apps through endpoint and inline web traffic policies
+- **Insider Risk Management** detects risky AI usage, including prompt injection attacks and unauthorized access to protected materials, through the Risky AI usage policy template
 
 For organizations subject to AI-specific regulations like the EU AI Act or ISO 42001, **Compliance Manager** provides assessment templates that map Purview controls to these requirements.
 
 ## Multicloud compliance with Compliance Manager
 
+<!-- Source: https://learn.microsoft.com/purview/compliance-manager -->
 Compliance Manager serves as the orchestration layer that brings together compliance data from across your environment. It integrates with Microsoft Defender for Cloud to assess compliance across Azure, AWS, and GCP.
 
 When designing your Compliance Manager implementation:
