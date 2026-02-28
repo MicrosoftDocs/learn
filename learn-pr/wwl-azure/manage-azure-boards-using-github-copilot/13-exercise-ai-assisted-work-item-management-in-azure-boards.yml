@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-azure-boards-using-github-copilot.ai-assisted-work-item-management-in-azure-boards
+title: Exercise - AI-assisted work item management in Azure Boards
+metadata:
+  title: Exercise - AI-assisted work item management in Azure Boards
+  description: "Exercise - AI-assisted work item management in Azure Boards"
+  ms.date: 02/25/2026
+  author: wwlpublish
+  ms.author: petender
+  ms.topic: unit
+durationInMinutes: 45
+content: |
+  [!include[](includes/13-ai-assisted-work-item-management-in-azure-boards.md)]
