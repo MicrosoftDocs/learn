@@ -1,12 +1,12 @@
 Context-first operation is one of the most important habits in MCP-assisted DevOps work. Before you create, update, or close artifacts, you should establish what sprint is active, what work is already in progress, and what the team’s current priorities are. This step reduces duplicate work, prevents accidental scope drift, and improves the quality of every follow-up action.
 
-## Why Context Discovery Is A Key Objective
+## Why context discovery is a key objective
 
 Many operational mistakes happen because teams execute before they observe. A duplicate bug gets created while one already exists. A task is moved without checking sprint timing. A batch update uses the wrong project scope. Context discovery avoids those errors and gives your prompts the structure needed for precise tool execution.
 
 In Azure DevOps MCP workflows, discovery prompts often trigger multiple underlying calls, combining iteration data, team settings, and work item searches into one understandable response. That capability saves time, but only if your prompt includes enough scope.
 
-## High-value Discovery Prompts
+## High-value discovery prompts
 
 Here are a few examples of prompts that specifically set the boundaries (also known as 'grounding') to the ADO project, the time window, and correct ADO work item type:
 
@@ -17,13 +17,13 @@ Here are a few examples of prompts that specifically set the boundaries (also kn
 
 These requests produce decision-ready context you can use for triage, standups, and planning discussions.
 
-## Prompt Pattern For Reliable Discovery
+## Prompt pattern for reliable discovery
 
 A strong discovery prompt usually contains:
 
-- project or team scope
-- iteration timeframe (current or previous sprint)
-- artifact filters (state, type, assignee, tags)
+- Project or team scope
+- Iteration timeframe (current or previous sprint)
+- Artifact filters (state, type, assignee, tags)
 
 Example:
 
@@ -31,34 +31,34 @@ Example:
 
 This approach reduces ambiguity and encourages focused outputs.
 
-## Practical Use In Daily Flow
+## Practical use in daily flow
 
 A repeatable daily prompt pattern might look like this:
 
-1. identify current sprint and remaining duration
-2. list blocked or high-priority active work
-3. check carryover items from previous sprint
-4. decide whether to create new items or update existing ones
+1. Identify current sprint and remaining duration
+2. List blocked or high-priority active work
+3. Check carryover items from previous sprint
+4. Decide whether to create new items or update existing ones
 
 By running this pattern first, you turn MCP from a reactive helper into a proactive decision assistant.
 
 > [!NOTE]
 > Remember that behind-the-scenes, you still have the Generative AI powers available. You can ask to transform prompt responses into table structure, json format or even asking it to generate a summarized response - without needing the MCP Server to assist.
 
-## Common Context Mistakes To Avoid
+## Common context mistakes to avoid
 
 As mentioned in the overall MCP unit, the key to successful interaction and getting the expected prompt response back, is being intentional and as specific as possible, in your prompt requests. 
 
 Some common context mistakes could be:
 
-- requesting data without project scope
-- mixing sprint and backlog terms inconsistently
-- asking for updates before validating current state
-- using broad filters that return unmanageable result sets
+- Requesting data without project scope
+- Mixing sprint and backlog terms inconsistently
+- Asking for updates before validating current state
+- Using broad filters that return unmanageable result sets
 
 When outputs are too broad or to vague, the typical solution is to refine your prompts (this action feels identical to using the filter in for example ADO Boards view): add assignee, define explicit work item state, add tag(s), or specify iteration constraints.
 
-## Outcome Of Context-right Behavior
+## Outcome of context-right behavior
 
 Teams that consistently start with project context usually see cleaner backlog management and fewer corrective updates. More importantly, they build trust in MCP interactions because each action is based on verified state, not assumptions.
 
@@ -66,18 +66,18 @@ Context-right prompts can standardize discussion quality. During Sprint standup 
 
 If your team uses multiple boards or parallel repositories, consider adding naming conventions in prompts to avoid accidental cross-project queries. Consistent scope language is a small habit with large reliability benefits.
 
-## Using Context For Better Planning Decisions
+## Using context for better planning decisions
 
 Context discovery is not only for avoiding mistakes; it is also a planning advantage. When you ask for current sprint progress, carryover trends, and active defect concentration, you create a fact-based picture of delivery capacity. This helps teams decide whether to absorb new work, defer lower-priority scope, or increase stabilization effort.
 
-## Context Quality Checklist
+## Context quality checklist
 
 Before moving from discovery (read-only) to action (trigger updates), verify that your context output includes:
 
-- the correct project and team
-- the intended iteration window
-- clear artifact filtering
-- enough detail to identify exact items
+- The correct project and team
+- The intended iteration window
+- Clear artifact filtering
+- Enough detail to identify exact items
 
 If any element is missing, run one refinement prompt. Better context always pays off in safer downstream updates.
 

@@ -1,6 +1,6 @@
 Reliable setup is the foundation of every successful MCP workflow. If installation and tool discovery are incomplete, later prompts can appear inconsistent even when your request is correct. The objective of this unit is to help you establish a stable, repeatable setup path for Azure DevOps MCP Server in Visual Studio Code.
 
-## Environment Prerequisites
+## Environment prerequisites
 
 Before installation, confirm these baseline conditions:
 
@@ -9,9 +9,9 @@ Before installation, confirm these baseline conditions:
 - Node.js 20 or later is available when required by your install method.
 - You have access to an Azure DevOps Organization and Project.
 
-## Installation Workflow
+## Installation workflow
 
-There are several possible ways to install the Azure DevOps MCP Server integration in your environment. The easiest is possibly using a **one-click** banner install (which you can experience from the exercise unit later in this module), but you can also set up an **mcp.json** config file in your **.vscode** folde, with the necessary parameters. 
+There are several possible ways to install the Azure DevOps MCP Server integration in your environment. The easiest is possibly using a **one-click** banner install (which you can experience from the exercise unit later in this module), but you can also set up an **mcp.json** config file in your **.vscode** folder, with the necessary parameters. 
 
 > [!NOTE] 
 > The Product Team provides a [GitHub repo](https://github.com/microsoft/azure-devops-mcp?tab=readme-ov-file#-installation--getting-started) with up-to-date information.  
@@ -33,7 +33,7 @@ If those three outcomes occur, your setup is functionally ready for next steps.
 > [!IMPORTANT]
 > The first time you execute the prompt, making a call to the ado tools, you will get asked to authenticate using your Azure DevOps credentials
 
-## Common Setup Problems
+## Common setup problems
 
 When setup fails, issues usually fall into a few predictable categories:
 
@@ -45,7 +45,7 @@ When setup fails, issues usually fall into a few predictable categories:
 > [!IMPORTANT]
 > Make sure you have the right permissions towards the Azure DevOps Organization and Project
 
-## Practical Troubleshooting Sequence
+## Practical troubleshooting sequence
 
 When you suspect setup problems, troubleshoot in this order:
 
@@ -56,8 +56,3 @@ When you suspect setup problems, troubleshoot in this order:
 5. Re-authenticate if prompted.
 
 This sequence resolves most onboarding issues quickly without unnecessary reinstall attempts.
-
-
-
-
-

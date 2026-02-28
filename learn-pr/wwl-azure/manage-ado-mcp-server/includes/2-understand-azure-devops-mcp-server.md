@@ -1,14 +1,14 @@
 Azure DevOps MCP Server provides a practical translation layer between conversational requests and Azure DevOps operations. Instead of directly calling Azure DevOps REST APIs yourself, you describe the intent in plain language and let MCP-enabled tooling construct the operation. This approach reduces friction for common tasks and makes Azure DevOps capabilities easier to access from inside the development workflow.
 
-Before diving into the details of the Azure DevOps MCP Server capabilities, let's start with describing what MCP actually is.
+Before diving into the details of the Azure DevOps MCP Server capabilities, let's start with describing what MCP actually is?
 
-## What Is MCP
+## What is MCP
 
 The Model Context Protocol (MCP) is an open standard developed by Anthropic for enabling AI systems to safely and transparently interact with external tools, data sources, and services. At its core, MCP defines a structured communication layer between AI models (like GitHub Copilot, Anthropic's Claude and other) and the systems they need to access; whether those are databases, APIs, file systems, or specialized platforms like Azure DevOps.
 
 Think of MCP as a standardized "language" that allows AI assistants to understand what tools are available, what each tool does, what inputs they accept, and how to interpret their outputs. Instead of hardcoding specific integrations into an AI application, MCP allows you to plug in any tool or service that adopts the protocol. This modularity is powerful because it separates concerns: the AI remains focused on understanding intent and reasoning, while MCP handles the mechanics of safely requesting and executing external operations.
 
-### How MCP Became an Adoption Standard
+### How MCP became an adoption standard
 
 MCP gained traction because it solved a critical problem in AI integration: the fragmentation of custom integrations. Before MCP, every AI assistant that needed to access external systems required purpose-built connectors. This meant duplicated work across organizations and fragmented approaches to safety and auditability.
 
@@ -21,7 +21,7 @@ Anthropic released MCP as an open standard, enabling vendors, cloud providers, a
 
 Major AI platforms and IDEs (including GitHub Copilot, VS Code, and others) have integrated MCP support, creating an ecosystem where teams can standardize on a single protocol rather than maintaining multiple vendor-specific APIs.
 
-### Broader Business Context and Real-World Value
+### Broader business context and real-world value
 
 In a business context, MCP addresses a fundamental challenge: teams increasingly rely on AI to handle routine operational tasks, but those tasks often require access to critical systems—project management, code repositories, incident tracking, customer data. Without a standardized protocol, companies either build fragile custom integrations or accept limited AI capabilities.
 
@@ -37,13 +37,13 @@ MCP enables several practical outcomes:
 
 In practice, MCP enables enterprises to deploy AI as a workflow accelerant while maintaining the security, auditability, and control that business-critical operations require. It shifts the conversation from "How do we safely let AI interact with our systems?" to "How do we standardize that interaction so it scales?"
 
-## MCP Server, MCP Client, And Tools
+## MCP server, MCP client, and tools
 
 MCP operates through a client-server architecture. An **MCP Server** is a process that exposes capabilities—called **tools**. These tools perform specific operations against a backend system. An **MCP Client** is an application (such as GitHub Copilot, Claude, or VS Code) that connects to the server, discovers available tools, and requests their execution based on user intent.
 
 A **tool** is a discrete, well-defined function that the server implements, complete with a name, description, input parameters, and output format. For example, an MCP Server for a Git platform might expose tools like "list pull requests," "add review comments," or "merge branches." A continuous integration system might expose tools like "trigger build," "retrieve test results," or "promote artifact to production." When a user asks an AI assistant to perform a task, the client identifies which tools are relevant, proposes a specific tool invocation to the user for review, and then requests the server to execute it. This separation of concerns means the server handles domain-specific logic and backend integration, while the client focuses on understanding user intent and orchestrating tool calls into workflows.
 
-## Core Interaction Sequence When Using MCP
+## Core interaction sequence when using MCP
 
 At a high level, the sequence is predictable and auditable:
 
@@ -55,7 +55,7 @@ At a high level, the sequence is predictable and auditable:
 
 This sequence matters because it keeps the process transparent. You can inspect what will run before it runs. That visibility is essential when requests involve write operations such as creating work items, updating state, linking artifacts, or interacting with pull requests and pipelines.
 
-## Azure DevOps Domain And Tools Mapping
+## Azure DevOps domain and tools mapping
 
 Azure DevOps MCP toolsets generally align to major platform domains:
 
@@ -142,7 +142,7 @@ A more complete overview is listed in the below table:
 
 Understanding this categorization helps you craft better prompts. If your request mixes multiple domains, Copilot may chain tools automatically. For example, a request to create a bug and assign it to yourself might first resolve your identity, then create the item, and then apply assignment and linking operations.
 
-## Prompt Quality And Tool Precision
+## Prompt quality and tool precision
 
 Natural language is flexible, but operational systems still expect specific input. This is where you can craft 'better' prompts, which usually include:
 
@@ -153,14 +153,14 @@ Natural language is flexible, but operational systems still expect specific inpu
 
 A more generic prompt (question) can still work, but often results in more follow-up questions or broad result sets. A scoped prompt lowers risk and improves speed. Since Generative AI communication between the prompt input and response using Large Language Models (LLMs) relies on tokens, it might also impact cost to have more focused prompts, resulting in a more focused prompt response. 
 
-## Benefits Of MCP In DevOps Team Operations
+## Benefits of MCP in DevOps team operations
 
 When used well, MCP-based Azure DevOps interaction provides measurable benefits:
 
-- faster retrieval of actionable project context
-- reduced UI navigation overhead for frequent tasks
-- improved consistency in how teams perform routine operations
-- better accessibility for less-experienced users learning platform workflows
+- Faster retrieval of actionable project context
+- Reduced UI navigation overhead for frequent tasks
+- Improved consistency in how teams perform routine operations
+- Better accessibility for less-experienced users learning platform workflows
 
 These gains are most visible in standups, triage sessions, release checks, and incident response windows, where speed and clarity directly affect delivery flow.
 
@@ -173,13 +173,13 @@ These gains are most visible in standups, triage sessions, release checks, and i
 
 In short, Azure DevOps MCP Server can make good processes easier to execute. It cannot make weak processes safe or more optimized by itself. Pair the tooling with strong team standards, and the results become both faster and more reliable.
 
-## Advanced Interpretation Tips
+## Advanced interpretation tips
 
 As you practice, observe which prompts trigger single-tool calls versus multi-tool chains. Multi-step chains are powerful, but they can also hide assumptions if you do not inspect payload details. For example, identity lookups, work item linking, and comment operations might execute as separate steps. Understanding this decomposition helps you troubleshoot unexpected results and refine future prompts.
 
 A useful team exercise is to compare two prompt variants for the same task and review resulting payload differences. This reinforces a key lesson: natural language flexibility is helpful, but operational precision still depends on explicit scope.
 
-## Mapping Intent To Operations In Practice
+## Mapping intent to operations in practice
 
 A useful way to understand MCP is to think in layers. The first layer is conversational intent (“show me active bugs”). The second layer is operational scope (project, state, assignee, iteration). The third layer is executable action (search work items with specific filters). Mature MCP use means being explicit in the first two layers so the third layer is predictable.
 

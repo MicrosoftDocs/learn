@@ -19,10 +19,10 @@ Human-in-the-loop review is the quality and safety checkpoint. Even when Copilot
 
 Before merge, verify:
 
-- [ ] All acceptance criteria are satisfied.
-- [ ] Security and privacy expectations are preserved.
-- [ ] Unit and integration tests are present and meaningful.
-- [ ] No unrelated changes are included in the pull request.
+- All acceptance criteria are satisfied.
+- Security and privacy expectations are preserved.
+- Unit and integration tests are present and meaningful.
+- No unrelated changes are included in the pull request.
 
 ## Review outcomes
 

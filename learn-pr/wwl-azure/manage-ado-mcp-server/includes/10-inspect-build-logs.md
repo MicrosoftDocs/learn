@@ -1,12 +1,12 @@
 Build logs are often the fastest path to root cause when delivery fails. This unit focuses on using MCP to retrieve and interpret pipeline log data efficiently, so teams can move from failure detection to corrective action with less delay.
 
-## Why Log Inspection Deserves Focus
+## Why log inspection deserves focus
 
 Pipeline failures frequently occur under time pressure. Manual navigation through full run output can be slow and noisy, especially in multi-stage pipelines. MCP helps by narrowing your requests to relevant stages, jobs, and failure signals.
 
 The objective is not to read every line of output. The objective is to isolate actionable evidence quickly.
 
-## Effective Log-focused Prompts
+## Effective log-focused prompts
 
 Use prompts that include build ID and stage scope. Here are a few examples:
 
@@ -18,14 +18,14 @@ Use prompts that include build ID and stage scope. Here are a few examples:
 
 These requests guide the tooling toward targeted extraction rather than broad output. Remember, the more specific the prompt input, the more accurate the prompt response is.
 
-## Interpreting Common Pipeline Failure
+## Interpreting common pipeline failure
 
 While each pipeline run) is unique, many failures fit recurring categories:
 
-- dependency restore or feed authentication failures
-- test instability or environment drift
-- build script syntax/configuration regressions
-- deployment stage permission or endpoint errors
+- Dependency restore or feed authentication failures
+- Test instability or environment drift
+- Build script syntax/configuration regressions
+- Deployment stage permission or endpoint errors
 
 Asking MCP for category-oriented summaries can speed triage when the raw output is large.
 
@@ -35,7 +35,7 @@ When incidents involve multiple teams, ask MCP for structured summaries you can 
 
 Over time, capture recurring failure signatures and associated prompt templates. Building a small internal playbook around those patterns can reduce mean time to recovery for common pipeline regressions.
 
-## Example Scenario Deep Dive: Narrowing A Test-stage Failure
+## Example scenario deep dive: narrowing a test-stage failure
 
 Suppose a build fails in the test stage after a dependency upgrade. The raw logs contain thousands of lines, and multiple teams are asking for updates. Instead of forwarding large logs, start with a stage-scoped query, then request an error-category summary. This often reveals whether the issue is environment drift, test instability, or a true functional regression.
 
@@ -45,7 +45,7 @@ When communicating findings, include three items: build ID, failing stage/job, a
 
 Over repeated incidents, this approach creates a strong troubleshooting discipline. MCP provides speed in extraction and summarization, while your engineering process provides judgment and remediation direction.
 
-### Sample Prompts for Test-stage Failure Diagnosis
+### Sample prompts for test-stage failure diagnosis
 
 To map with the earlier-described example scenario, here are a few sample prompt to illustrate how to use MCP-assisted prompting for those scenarios:
 
@@ -59,7 +59,7 @@ To map with the earlier-described example scenario, here are a few sample prompt
 
 These prompts narrow scope to the failing stage and test project, helping teams isolate whether the issue is environment-related, a true functional regression, or test instability.
 
-## Postmortem Integration
+## Postmortem integration
 
 After major failures, include MCP-derived log summaries in postmortem notes alongside root cause and prevention actions. This improves knowledge transfer and makes future investigations faster and more consistent.
 

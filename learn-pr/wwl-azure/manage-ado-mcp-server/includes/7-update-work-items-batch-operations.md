@@ -2,14 +2,14 @@ After work items are created, most of the daily operational effort shifts to upd
 
 This unit focuses on executing those updates safely and efficiently through MCP.
 
-## Single-item Updates As Core Operations
+## Single-item updates as core operations
 
 Single-item changes are common in standups and triage. Typical requests include:
 
-- moving a bug from New to Active
-- reassigning work ownership
-- adding or correcting tags
-- adjusting severity or iteration path
+- Moving a bug from New to Active
+- Reassigning work ownership
+- Adding or correcting tags
+- Adjusting severity or iteration path
 
 These updates are low complexity but high frequency. MCP helps by reducing clicks and making intent explicit in one prompt.
 
@@ -17,11 +17,11 @@ Example:
 
 > Move bug `#1234` to Active, assign it to `<user>`, and add the `mobile` tag.
 
-## Why Batch Updates Need Extra Discipline
+## Why batch updates need extra discipline
 
 Batch operations can save significant time, but they carry higher risk. A broad filter can modify dozens of items quickly, including artifacts you did not intend to touch. To reduce risk, use a two-step approach: preview first, update second.
 
-## Safe Two-step Batch Pattern
+## Safe two-step batch pattern
 
 1. **Discovery step**: request matching items only.
 2. **Validation step**: review IDs, counts, and scope.
@@ -37,26 +37,26 @@ Example execution prompt:
 
 This pattern is fast and predictable, especially in large backlogs.
 
-## Update Scope Checklist
+## Update scope checklist
 
 Before approving a batch payload, check:
 
-- project name and team scope
-- item type and state filters
-- total item count
-- exact fields to be changed
-- whether rollback is straightforward
+- Project name and team scope
+- Item type and state filters
+- Total item count
+- Exact fields to be changed
+- Whether rollback is straightforward
 
 If any of these are unclear, refine the prompt before execution.
 
-## Common Update Scenarios
+## Common update scenarios
 
 MCP works well for recurring information hygiene tasks such as:
 
-- tagging all defects for a known platform issue
-- moving stale items to a triage state
-- assigning unowned items in a sprint backlog
-- normalizing field values for reporting consistency
+- Tagging all defects for a known platform issue
+- Moving stale items to a triage state
+- Assigning unowned items in a sprint backlog
+- Normalizing field values for reporting consistency
 
 These scenarios provide immediate operational value and improve dashboard quality.
 
@@ -66,13 +66,13 @@ When performed with scoped prompts and pre-validation, MCP-assisted updates can 
 
 Use single-item operations for rapid triage and batch patterns for controlled maintenance. Together, they create a reliable rhythm for backlog health.
 
-## Example Scenario Deep Dive: Sprint Cleanup Under Time Pressure
+## Example scenario deep dive: sprint cleanup under time pressure
 
 At sprint close, teams often need to retag unresolved items, move stale work, and reassign ownership. Under time pressure, broad edits are tempting. A safer approach is to run a structured cleanup loop: discover candidates, validate counts, apply one field change, verify, then continue.
 
 This incremental method may seem slower, but it usually prevents rollback work and avoids confusion when metrics are reviewed later. It also creates clearer audit trails because each change has a visible and scoped intent.
 
-## Leveraging GitHub Copilot Chat for Epic Generation and Planning
+## Leveraging GitHub Copilot Chat for epic generation and planning
 
 A powerful workflow could also begin more upstream, in GitHub Copilot Chat. Rather than starting with an existing backlog, you can ask Copilot to generate an initial Epic based on feature requirements or business goals. Copilot can outline scope, identify key user stories, and suggest a breakdown of work.
 

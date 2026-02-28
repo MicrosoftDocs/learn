@@ -1,24 +1,24 @@
 Pipeline visibility is essential for reliable delivery, especially when multiple branches and services are in flight. Let's now focus on running and monitoring Azure Pipelines through MCP, so you can move from intent to execution status quickly.
 
-## Pipeline Objectives Using MCP
+## Pipeline objectives using MCP
 
 Release delays rarely come from a lack of effort. More often, they come from fragmented feedback loops: one person queues a run, another checks status in a different view, and someone else tries to interpret stage failures from partial context. That context switching adds friction at exactly the moment when teams need clarity and speed.
 
 MCP helps reduce this friction by keeping execution, monitoring, and follow-up in one conversational path. Instead of treating pipeline operations as disconnected tasks, you can treat them as one continuous flow: start the run, track progress, detect risk, and decide next action with shared context intact.
 
-## Core Pipeline Tasks Through MCP
+## Core pipeline tasks through MCP
 
 At a practical level, the most valuable tasks are straightforward. You identify the right pipeline definition for the project, queue a run with explicit branch intent, track stage progression with build-specific context, and gather enough metadata to keep handoffs clear. None of these actions are complex by themselves, but together they form the backbone of predictable release execution.
 
 This workflow becomes especially valuable during release windows, hotfix validation, and incident triage, where delayed or ambiguous status updates can quickly become delivery blockers.
 
-## Prompt Patterns For Predictable Results
+## Prompt patterns for predictable results
 
 Prompt precision directly affects monitoring reliability. The more explicit your identifiers, the less time you spend correcting ambiguity later. For example, naming both project and pipeline identifier is more reliable than using a friendly name alone, and querying by build ID is more dependable than querying by pipeline title when multiple runs are active.
 
 A good prompt usually contains three parts: a clear target, an explicit scope, and an expected outcome. That simple structure consistently improves response quality and reduces the chance of tracking the wrong run.
 
-### Example Prompts
+### Example prompts
 
 **Example 1: Pre-run Confirmation**
 ```
@@ -34,13 +34,13 @@ Which stage is it on, and are there any failures?
 If the validation stage has failed, pull the error logs and tell me the most likely cause.
 What should I do next—rerun or escalate?
 ```
-## Tips For Long-running Or Complex Pipelines
+## Tips for long-running or complex pipelines
 
 Long-running pipelines can overwhelm teams with too much output. In those cases, concise stage summaries are usually more useful than verbose logs at first pass. Start with what is blocked, failed, or waiting, then drill down selectively. Keep branch and environment context present in follow-up prompts so responses remain anchored to the right execution path.
 
 These habits speed up triage and make communication cleaner for developers, release managers, and incident responders.
 
-## Example Scenario Deep Dive: Release-day Monitoring
+## Example scenario deep dive: release-day monitoring
 
 During release day, teams often run multiple pipelines in parallel for validation, packaging, and deployment readiness. In this situation, manual tracking can quickly become noisy. MCP-driven monitoring helps by giving you a consistent conversational dashboard: which builds are running, which stages are blocked, and which runs failed most recently.
 
@@ -50,7 +50,7 @@ For collaboration, ask MCP for concise status summaries that can be shared in re
 
 Pipeline monitoring becomes even more effective when paired with pre-defined escalation rules. For example, one failed validation stage might trigger a rerun, while repeated failures in deployment packaging might trigger a stop-and-investigate policy. MCP can support both paths, but your team policy determines which path is appropriate.
 
-### Sample Monitoring Prompt
+### Sample monitoring prompt
 
 ```
 I'm tracking build ID 89456 in project "Contoso.Web" queued against the "release/v2.1" branch.
@@ -59,7 +59,7 @@ If the integration-tests stage has completed, share a brief summary of pass/fail
 Based on the current state, should I proceed to the deployment-staging stage or wait?
 ```
 
-## Using MCP For Site Reliability Engineering (SRE)
+## Using MCP for site reliability engineering (SRE)
 
 Pipeline monitoring should not end at pass/fail status. It is also a source of reliability intelligence. If your team tracks recurring stage delays, flaky validations, and repeated reruns, you can move from reactive troubleshooting to systemic improvement.
 

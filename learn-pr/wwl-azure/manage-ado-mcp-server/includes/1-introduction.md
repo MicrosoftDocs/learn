@@ -4,15 +4,15 @@ Azure DevOps MCP Server addresses this challenge by exposing Azure DevOps capabi
 
 This module introduces that exact AI-assisted operating model in a practical way. You learn how to set up the environment, authenticate safely, and execute common scenarios with repeatable prompt patterns. You also learn about security and responsibility boundaries when using Generative AI solutions, and leaving reviews and accountability to human oversight. 
 
-## Module Objectives
+## Module objectives
 
 DevOps efficiency is often lost in small but repeated interruptions:
 
-- context switching between planning and code delivery tools
-- manual data lookup before making routine decisions
-- inconsistent hand-off impacting quality across roles
-- repetitive update work that provides little strategic value
-- incomplete, outdated or lack of proper procedural documentation of business processes
+- Context switching between planning and code delivery tools
+- Manual data lookup before making routine decisions
+- Inconsistent hand-off impacting quality across roles
+- Repetitive update work that provides little strategic value
+- Incomplete, outdated or lack of proper procedural documentation of business processes
 
 An MCP-enabled workflow can reduce those interruptions by moving from UI-navigation-first behavior to intent-first behavior. You state what you need, starting from a natural language-based prompt, to then inspect the proposed operation, approve execution, and continue work in the right context.
 
@@ -22,19 +22,19 @@ The other benefit is that everything you already know about accessing Azure DevO
 
 That said, don't minimize the power of using prompts. You build a practical skill set around reliable and safe conversational operations:
 
-1. Understand how Azure DevOps MCP Server maps intent to tools.
-2. Install and configure the MCP integration in Visual Studio Code.
-3. Validate authentication and inspect payloads before approval.
-4. Use project and sprint discovery to reduce ambiguous actions.
-5. Create, enrich, and link work items for traceable execution.
-6. Perform controlled updates, including batch patterns.
-7. Manage pull request and pipeline workflows conversationally.
-8. Investigate failed builds with targeted log retrieval.
-9. Apply governance controls for production-ready team adoption.
+- Understand how Azure DevOps MCP Server maps intent to tools.
+- Install and configure the MCP integration in Visual Studio Code.
+- Validate authentication and inspect payloads before approval.
+- Use project and sprint discovery to reduce ambiguous actions.
+- Create, enrich, and link work items for traceable execution.
+- Perform controlled updates, including batch patterns.
+- Manage pull request and pipeline workflows conversationally.
+- Investigate failed builds with targeted log retrieval.
+- Apply governance controls for production-ready team adoption.
 
-## Learning Goals
+## Learning goals
 
-After completing this module, you’ll be able to to use MCP protocol-based interactions as a reliable extension of your existing Azure DevOps practices, not as a separate or conflicting process, by using the following:
+After completing this module, you’ll be able to use MCP protocol-based interactions as a reliable extension of your existing Azure DevOps practices, not as a separate or conflicting process, by using the following:
 
 - Configure and authenticate Azure DevOps MCP Server in Visual Studio Code.
 - Use prompt structures that invoke the intended Azure DevOps tools consistently.

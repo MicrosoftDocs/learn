@@ -1,9 +1,9 @@
 <!-- DOCUMENTATION COMMENT -->
 This section introduces the integration between Azure Boards and GitHub Copilot, which allows teams to combine two powerful capabilities:
 
-1. **Azure Boards** - Acts as the central planning hub where teams define, prioritize, and organize work items (like user stories, tasks, and bugs) in a structured backlog.
+- **Azure Boards** - Acts as the central planning hub where teams define, prioritize, and organize work items (like user stories, tasks, and bugs) in a structured backlog.
 
-2. **GitHub Copilot** - An AI-powered coding assistant that helps developers write, understand, and complete code more efficiently during implementation.
+- **GitHub Copilot** - An AI-powered coding assistant that helps developers write, understand, and complete code more efficiently during implementation.
 
 **Key Points:**
 - **Single Source of Truth**: Azure Boards maintains the authoritative backlog and work priorities. This ensures everyone knows what needs to be done and in what order.
@@ -50,7 +50,7 @@ Clear role definition ensures accountability and leverages each team member's st
 | Reviewer | Validate correctness, risks, and standards |
 | Project manager | Track progress and outcomes through linked artifacts |
 
-## Expected Outcomes
+## Expected outcomes
 
 By integrating Azure Boards with GitHub and leveraging Copilot assistance, teams achieve measurable improvements in delivery efficiency and quality. These outcomes demonstrate the value of connecting planning artifacts directly to implementation, ensuring visibility across the entire workflow while maintaining human oversight of AI-generated suggestions.
 
