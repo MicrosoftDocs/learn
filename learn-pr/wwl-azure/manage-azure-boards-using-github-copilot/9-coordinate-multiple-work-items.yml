@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-azure-boards-using-github-copilot.coordinate-multiple-work-items
+title: Coordinate multiple work items with AI assistance
+metadata:
+  title: Coordinate multiple work items with AI assistance
+  description: "Coordinate multiple work items with AI assistance"
+  ms.date: 02/25/2026
+  author: wwlpublish
+  ms.author: petender
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/9-coordinate-multiple-work-items.md)]
