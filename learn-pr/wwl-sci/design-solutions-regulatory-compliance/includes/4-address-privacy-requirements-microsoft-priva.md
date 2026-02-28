@@ -33,9 +33,9 @@ Privacy Risk Management provides customizable policies that identify privacy ris
 
 Design your strategy around three policy types:
 
-- **Data overexposure** — Detects personal data that is publicly accessible or has overly broad access. Remediation options include making content private, notifying content owners, or tagging items for review.
-- **Data transfer** — Monitors transfers of personal data across geographic boundaries, departmental boundaries, or outside your organization. Users receive email notifications with corrective actions they can take directly.
-- **Data minimization** — Identifies personal data stored beyond a configured retention threshold, helping reduce privacy risk from aging data. Items can be marked for deletion, or owners notified for review.
+- **Data overexposure:** Detects personal data that is publicly accessible or has overly broad access. Remediation options include making content private, notifying content owners, or tagging items for review.
+- **Data transfer:** Monitors transfers of personal data across geographic boundaries, departmental boundaries, or outside your organization. Users receive email notifications with corrective actions they can take directly.
+- **Data minimization:** Identifies personal data stored beyond a configured retention threshold, helping reduce privacy risk from aging data. Items can be marked for deletion, or owners notified for review.
 
 When policy matches are found, admins review alerts and create issues for further action. Email and Teams notifications inform content owners directly about policy matches. The Reports page presents consolidated insights on policy trends and data classification.
 
@@ -49,10 +49,10 @@ Priva Subject Rights Requests provides automation, insights, and workflows to fu
 
 <!--Source: https://learn.microsoft.com/privacy/priva/subject-rights-requests-create#request-types-->
 
-- **Access** — Summary of the data subject's personal information held in Microsoft 365
-- **Export** — Summary and exported file of content items reviewed and marked as included
-- **Tagged list for follow up** — Summary of files tagged during data review
-- **Delete** — Deletes content items after they are marked as included and approval is complete
+- **Access:** Summary of the data subject's personal information held in Microsoft 365
+- **Export:** Summary and exported file of content items reviewed and marked as included
+- **Tagged list for follow up:** Summary of files tagged during data review
+- **Delete:** Deletes content items after they are marked as included and approval is complete
 
 ### Architectural considerations for the SRR workflow
 
@@ -60,10 +60,10 @@ Priva Subject Rights Requests provides automation, insights, and workflows to fu
 
 Priva automates the SRR lifecycle through stages—data estimation, retrieval, review, report generation, and closure. When designing your SRR solution, focus on:
 
-- **Data scope and volume** — Priva retrieves content from Exchange Online, SharePoint Online, OneDrive for Business, and Teams into Azure Blob Storage. Plan storage and review capacity based on expected data volumes per request.
-- **Review process design** — A dedicated Teams channel is automatically created for each request. Design your review process around who should be assigned as collaborators, how priority items (content with sensitivity labels, multi-person data, or retention labels) are escalated, and how built-in redaction tools fit into your data handling procedures.
-- **Approval workflows for delete requests** — Delete requests require an additional approval substage. Define who has authority to approve deletions and how this integrates with your organization's data governance policies.
-- **Integration and automation** — Use Power Automate templates to connect SRR workflows with ticketing systems like ServiceNow, and use the Microsoft Graph subject rights request API for programmatic access when building custom integrations.
+- **Data scope and volume:** Priva retrieves content from Exchange Online, SharePoint Online, OneDrive for Business, and Teams into Azure Blob Storage. Plan storage and review capacity based on expected data volumes per request.
+- **Review process design:** A dedicated Teams channel is automatically created for each request. Design your review process around who should be assigned as collaborators, how priority items (content with sensitivity labels, multi-person data, or retention labels) are escalated, and how built-in redaction tools fit into your data handling procedures.
+- **Approval workflows for delete requests:** Delete requests require an additional approval substage. Define who has authority to approve deletions and how this integrates with your organization's data governance policies.
+- **Integration and automation:** Use Power Automate templates to connect SRR workflows with ticketing systems like ServiceNow, and use the Microsoft Graph subject rights request API for programmatic access when building custom integrations.
 
 <!--Source: https://learn.microsoft.com/privacy/priva/subject-rights-requests-automate-->
 
@@ -71,16 +71,16 @@ Priva automates the SRR lifecycle through stages—data estimation, retrieval, r
 
 When designing your privacy solution:
 
-- **Start with Priva and Purview together** — Use Priva for privacy-specific operations and Purview solutions for data protection, classification, and lifecycle management to address privacy requirements holistically
-- **Review default policies first** — The default privacy risk management policies are automatically enabled; customize them based on your highest privacy risks
-- **Configure anonymization** — Turn on anonymization in Priva settings to show anonymized usernames when reviewing privacy risk alerts
-- **Define response SLAs** — Establish service level agreements for subject rights requests that meet regulatory timeframes (default completion deadline is two weeks past creation)
-- **Automate where possible** — Use Power Automate templates to connect Priva with ticketing systems, and use the Microsoft Graph subject rights request API for programmatic integration
-- **Plan for scale** — Design workflows that can handle increased request volumes; purchase subject rights requests in blocks of 1, 10, or 100
-- **Train content owners** — Enable user notification emails so data owners can remediate privacy risks directly from email notifications
-- **Configure data retention** — Set retention periods (30 or 90 days) for subject rights request data after requests are closed
-- **Integrate with Compliance Manager** — Priva actions contribute to your compliance score; automated detection of Priva improvement actions is in preview
-- **Set appropriate permissions** — Assign users to Priva role groups following the principle of least privilege
+- **Start with Priva and Purview together:** Use Priva for privacy-specific operations and Purview solutions for data protection, classification, and lifecycle management to address privacy requirements holistically
+- **Review default policies first:** The default privacy risk management policies are automatically enabled; customize them based on your highest privacy risks
+- **Configure anonymization:** Turn on anonymization in Priva settings to show anonymized usernames when reviewing privacy risk alerts
+- **Define response SLAs:** Establish service level agreements for subject rights requests that meet regulatory timeframes (default completion deadline is two weeks past creation)
+- **Automate where possible:** Use Power Automate templates to connect Priva with ticketing systems, and use the Microsoft Graph subject rights request API for programmatic integration
+- **Plan for scale:** Design workflows that can handle increased request volumes; purchase subject rights requests in blocks of 1, 10, or 100
+- **Train content owners:** Enable user notification emails so data owners can remediate privacy risks directly from email notifications
+- **Configure data retention:** Set retention periods (30 or 90 days) for subject rights request data after requests are closed
+- **Integrate with Compliance Manager:** Priva actions contribute to your compliance score; automated detection of Priva improvement actions is in preview
+- **Set appropriate permissions:** Assign users to Priva role groups following the principle of least privilege
 
 <!--Sources:
 - https://learn.microsoft.com/privacy/priva/priva-setup
