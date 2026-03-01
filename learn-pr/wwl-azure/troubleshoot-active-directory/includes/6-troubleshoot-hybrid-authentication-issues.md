@@ -14,17 +14,17 @@ Small organizations that don't have an on-premises directory such as AD DS can f
 > [!NOTE]
 > The Azure AD directory is not an extension of an on-premises directory. Rather, it's a copy that contains the same objects and identities. Changes made to these items on-premises are copied to Azure AD, but changes made in Azure AD are not replicated back to the on-premises domain.
 
-## What is Azure AD Connect?
+## What is Microsoft Entra Connect?
 
 Directory synchronization enables synchronization between on-premises AD DS and Azure AD for users, groups, and contacts. In its simplest form, you install a Directory synchronization component on a server in your on-premises domain. You then provide an account with Domain Admin and Enterprise Admin access to on-premises AD DS, and another account with administrator access to Azure AD, and let it run.
 
-You can use Azure Active Directory Connect (Azure AD Connect) to perform synchronization between on-premises AD DS and Azure AD. Azure AD Connect is a wizard-based tool designed to enable connectivity between an on-premises identity infrastructure and Azure. Using the wizard, you can choose your topology and requirements and then the wizard deploys and configures all the required components for you.
+You can use Azure Active Directory Connect (Microsoft Entra Connect) to perform synchronization between on-premises AD DS and Azure AD. Microsoft Entra Connect is a wizard-based tool designed to enable connectivity between an on-premises identity infrastructure and Azure. Using the wizard, you can choose your topology and requirements and then the wizard deploys and configures all the required components for you.
 
-When you run Azure AD Connect, the following occurs:
+When you run Microsoft Entra Connect, the following occurs:
 
 - New users, groups, and contact objects in on-premises AD DS are added to Azure AD.
 
-- Attributes of existing users, groups, or contact objects that are modified in on-premises AD DS are modified in Azure AD. However, not all on-premises AD DS attributes are synchronized to Azure AD. You can configure a set of attributes that synchronize to Azure AD by using Synchronization Manager component of Azure AD Connect.
+- Attributes of existing users, groups, or contact objects that are modified in on-premises AD DS are modified in Azure AD. However, not all on-premises AD DS attributes are synchronized to Azure AD. You can configure a set of attributes that synchronize to Azure AD by using Synchronization Manager component of Microsoft Entra Connect.
 
 - Existing users, groups, and contact objects that are deleted from the on-premises AD DS are deleted from Azure AD.
 
@@ -33,7 +33,7 @@ When you run Azure AD Connect, the following occurs:
 > [!WARNING]
 > However, licenses are not automatically assigned or unassigned.
 
-Azure AD requires that you have a single source of authority for every object. Therefore, it's important to understand that in an Azure AD Connect scenario, when you're running Active Directory synchronization you're mastering objects from within your on-premises AD DS.
+Azure AD requires that you have a single source of authority for every object. Therefore, it's important to understand that in an Microsoft Entra Connect scenario, when you're running Active Directory synchronization you're mastering objects from within your on-premises AD DS.
 
 > [!IMPORTANT]
 > After the first synchronization cycle is complete, the source of authority is transferred from the cloud to the on-premises AD DS. 
@@ -69,15 +69,15 @@ For distinguished names that contain format and duplicate errors, IdFix might no
 
 For errors such as format issues, you can make changes to specific attributes object-by-object by using either ADSIEdit or Advanced Mode in Active Directory Users and Computers. However, to make attribute changes to multiple objects, `ADModify.NET` is a better tool. This is because the batch mode operation provided by `ADModify.NET` is particularly useful for making changes to attributes such as UPNs across OUs or domains.
 
-## Troubleshoot issues with Azure AD Connect sync
+## Troubleshoot issues with Microsoft Entra Connect Sync
 
-If you experience problems synchronizing objects to Azure AD, consider running the troubleshooting task in the Azure AD Connect wizard. To run the wizard, use the following procedure:
+If you experience problems synchronizing objects to Azure AD, consider running the troubleshooting task in the Microsoft Entra Connect wizard. To run the wizard, use the following procedure:
 
-1. On your Azure AD Connect server, open an elevated Windows PowerShell command prompt.
+1. On your Microsoft Entra Connect server, open an elevated Windows PowerShell command prompt.
 
 1. Run either the `Set-ExecutionPolicy RemoteSigned` or `Set-ExecutionPolicy Unrestricted` command.
 
-1. Start the **Azure AD Connect** wizard.
+1. Start the **Microsoft Entra Connect** wizard.
 
 1. Select Configure, select **Troubleshoot**, and then select **Next**.
 
@@ -105,15 +105,15 @@ You can select a number of options. These are:
 
 - Test Active Directory Connectivity
 
-Use the guidance in the following document to interpret the output and resolve any discovered issues: [Troubleshoot object synchronization with Azure AD Connect sync](/azure/active-directory/hybrid/tshoot-connect-objectsync).
+Use the guidance in the following document to interpret the output and resolve any discovered issues: [Troubleshoot object synchronization with Microsoft Entra Connect Sync](/azure/active-directory/hybrid/tshoot-connect-objectsync).
 
-## Monitor Azure AD Connect
+## Monitor Microsoft Entra Connect
 
-If you subscribe to a premium version of Azure AD, you can use the Azure AD Connect Health tool to identify problems with synchronization. To access this tool, in the Azure Active Directory admin center:
+If you subscribe to a premium version of Azure AD, you can use the Microsoft Entra Connect Health tool to identify problems with synchronization. To access this tool, in the Azure Active Directory admin center:
 
-1. On the **Azure Active Directory** tab, select **Azure AD Connect**.
+1. On the **Azure Active Directory** tab, select **Microsoft Entra Connect**.
 
-1. In the details pane, select the **Azure AD Connect Health** link.
+1. In the details pane, select the **Microsoft Entra Connect Health** link.
 
 1. As displayed in the following screenshot, from this page, you can review a number of items and launch several tools, including:
 
@@ -121,7 +121,7 @@ If you subscribe to a premium version of Azure AD, you can use the Azure AD Conn
 
   - Sync services. Displays the current synchronization status. In the screenshot, it displays as Unhealthy.
 
-![A screenshot of the Sync services page in the Azure AD Connect Health tool. Unhealthy status is returned.](../media/sync-services.png)
+![A screenshot of the Sync services page in the Microsoft Entra Connect Health tool. Unhealthy status is returned.](../media/sync-services.png)
 
 > [!TIP]
 > You can drill down into specific items to learn more. 

@@ -22,4 +22,4 @@ Use these resources to discover more.
 
 - [Repadmin commands](/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/cc770963(v=ws.11))
 
-- [Troubleshoot object synchronization with Azure AD Connect sync](/azure/active-directory/hybrid/tshoot-connect-objectsync)
+- [Troubleshoot object synchronization with Microsoft Entra Connect Sync](/azure/active-directory/hybrid/tshoot-connect-objectsync)
