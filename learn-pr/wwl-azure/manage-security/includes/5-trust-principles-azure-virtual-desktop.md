@@ -9,7 +9,7 @@ To apply Zero Trust principles to the identities used in Azure Virtual Desktop:
 
 ## Step 2: Secure your endpoints with Zero Trust
 
-Endpoints are the devices through which users access the Azure Virtual Desktop environment and session host virtual machines. Use the instructions in the [Endpoint integration overview](/security/zero-trust/integrate/endpoints) and use Microsoft Defender for Endpoint and Microsoft Endpoint Manager to ensure that your endpoints adhere to your security and compliance requirements.
+Endpoints are the devices through which users access the Azure Virtual Desktop environment and session host virtual machines. Use the instructions in the [Endpoint integration overview](/security/zero-trust/integrate/endpoints) and use Microsoft Defender for Endpoint and Microsoft Intune to ensure that your endpoints adhere to your security and compliance requirements.
 
 ## Step 3: Apply Zero Trust principles to Azure Virtual Desktop storage resources
 

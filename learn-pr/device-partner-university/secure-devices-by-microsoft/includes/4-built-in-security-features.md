@@ -16,7 +16,7 @@ Surface devices are delivered with enterprise-ready compliance, adhering to the 
 
 Surface devices with Windows 11 Pro use a multi-layered security approach that integrates protections across the cloud, identity, application, operating system, and hardware.
 
-Cloud services like Microsoft Endpoint Manager and Windows Autopilot enable secure management and compliance from anywhere. Passwordless sign-in options and advanced credential protections reduce the risk of credential theft. Application and OS defenses include app control, encryption, and real-time threat detection.
+Cloud services like Microsoft Intune and Windows Autopilot enable secure management and compliance from anywhere. Passwordless sign-in options and advanced credential protections reduce the risk of credential theft. Application and OS defenses include app control, encryption, and real-time threat detection.
 
 At the hardware level, features like TPM 2.0 and Microsoft Pluton establish a secure foundation, reinforced by secure supply chain practices and industry certifications. This integrated approach helps organizations confidently address evolving security threats and compliance needs.
 

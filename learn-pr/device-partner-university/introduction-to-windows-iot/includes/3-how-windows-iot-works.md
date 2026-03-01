@@ -6,7 +6,7 @@ Windows IoT is compatible with several device management platforms:
 
 - **Windows Admin Center:** A web-based interface for configuring and monitoring Windows devices, including IoT endpoints.
 
-- **Microsoft Endpoint Manager:** Provides centralized management capabilities such as policy enforcement, software updates, and security configuration.
+- **Microsoft Intune:** Provides centralized management capabilities such as policy enforcement, software updates, and security configuration.
 
 - **Azure IoT Hub:** A cloud-based service for connecting, monitoring, and managing IoT devices. It supports remote provisioning, firmware updates, and device health monitoring.
 

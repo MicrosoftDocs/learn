@@ -6,7 +6,7 @@ Before you start enabling Microsoft Entra hybrid joined devices in your organiza
 
  -  You're running an up-to-date version of Microsoft Entra Connect. Microsoft Entra Connect provides you with a wizard to configure Microsoft Entra hybrid join. Microsoft Entra Connect has synchronized the computer objects of the devices you want to be Microsoft Entra hybrid joined to Microsoft Entra ID. If the computer objects belong to specific organizational units (OUs), then these OUs need to be configured for synchronization in Microsoft Entra Connect as well.
  -  Intune MDM must be set up and configured for automatic enrollment.
- -  Microsoft Endpoint Manager is installed.
+ -  Microsoft Intune is installed.
  -  Active Directory joined devices are using Windows 10 version 1709 or later. We recommended that you always use the latest version of Windows so that you get the newest advances in terms of security, Microsoft Entra ID, and Intune features.
  -  Microsoft Entra automatic enrollment is enabled.
 
@@ -49,7 +49,7 @@ The following list features some of the workloads that you can transition to Int
  -  Endpoint Protection
      -  Microsoft Defender Antivirus
      -  Microsoft Defender Application Guard
-     -  Microsoft Defender Firewall
+     -  Windows Defender Firewall
      -  Microsoft Defender SmartScreen
      -  Windows Encryption
      -  Microsoft Defender Exploit Guard
