@@ -4,11 +4,11 @@ title: Create and preserve table definitions
 metadata:
   title: Create and Preserve Table Definitions
   description: Learn how to create, implement, and preserve table and column definitions and descriptions for data discovery in Unity Catalog using comments, tags, and exploration tools.
-  ms.date: 12/07/2025
+  ms.date: 02/05/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit
   ai-usage: ai-generated
-durationInMinutes: 8
+durationInMinutes: 7
 content: |
   [!include[](includes/2-preserve-table-column-definitions.md)]

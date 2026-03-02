@@ -1,124 +1,87 @@
-This unit will focus on using Azure API Management to secure APIs. Azure API Management is a hybrid, multicloud management platform for APIs across all environments. As a platform-as-a-service, API Management supports the complete API lifecycle.
+APIs are the connective tissue of modern applications. They expose business logic, enable integrations, and often handle sensitive data. As the number of APIs in an organization grows, so does the attack surface. Unsecured APIs are a leading cause of data breaches because they often bypass traditional perimeter defenses.
 
-## API Management components
+As a cybersecurity architect, you need to design an API security strategy that provides centralized governance, consistent authentication and authorization, and protection against common API-specific threats. Azure API Management is the core service for this purpose.
 
-Azure API Management is made up of an API _gateway_, a _management plane_, and a _developer portal_. These components are Azure-hosted and fully managed by default. API Management is available in various [tiers](/azure/api-management/api-management-features) differing in capacity and features.
+## Azure API Management overview
 
-![Diagram showing key components of Azure API Management.](../media/api-management-components.png)
-<!--
-[](/azure/api-management/api-management-key-concepts#api-gateway)
--->
+Azure API Management (APIM) provides a unified API gateway, management plane, and developer portal that sits between API consumers and your backend services. It acts as a policy enforcement point where you apply security controls consistently across all APIs, regardless of where the backends are hosted.
 
-## API gateway
+The key components are:
 
-All requests from client applications first reach the API gateway, which then forwards them to respective backend services. The API gateway acts as a facade to the backend services, allowing API providers to abstract API implementations and evolve backend architecture without impacting API consumers. The gateway enables consistent configuration of routing, security, throttling, caching, and observability.
+- **API gateway:** the endpoint that accepts API calls and routes them to backends. It enforces policies for authentication, rate limiting, transformation, and logging.
+- **Management plane:** the administrative interface for importing APIs, defining policies, and managing users and subscriptions.
+- **Developer portal:** a customizable website where API consumers discover and test APIs, obtain API keys, and view documentation.
 
-Specifically, the gateway:
+:::image type="content" source="../media/api-management-components.png" alt-text="Diagram showing key components of Azure API Management." lightbox="../media/api-management-components.png":::
 
--   Acts as a facade to backend services by accepting API calls and routing them to appropriate backends
--   Verifies [API keys](/azure/api-management/api-management-subscriptions) and other credentials such as [JWT tokens and certificates](/azure/api-management/api-management-access-restriction-policies) presented with requests
--   Enforces [usage quotas and rate limits](/azure/api-management/api-management-access-restriction-policies)
--   Optionally transforms requests and responses as specified in [policy statements](/azure/api-management/api-management-howto-policies)
--   If configured, [caches responses](/azure/api-management/api-management-howto-cache) to improve response latency and minimize the load on backend services
--   Emits logs, metrics, and traces for [monitoring, reporting, and troubleshooting](/azure/api-management/observability)
-<!--
-[](/azure/api-management/api-management-key-concepts#self-hosted-gateway)
--->
+For architectures that require data sovereignty or reduced latency, APIM also supports a **self-hosted gateway** that runs as a container in your own infrastructure, including on-premises or in other clouds, while still reporting to the centralized management plane.
+
+## Designing API authentication and authorization
+
+Authentication and authorization are the most critical security controls for APIs. APIM supports several approaches, and your design should select the appropriate mechanism based on the API's consumer type and sensitivity.
+
+### OAuth 2.0 with Microsoft Entra ID
+
+For most enterprise scenarios, configure OAuth 2.0 token validation in APIM using Microsoft Entra ID as the identity provider. The API gateway validates JSON Web Token (JWT) tokens on every request, verifying the issuer, audience, expiration, and required scopes or roles before forwarding to the backend. This approach works for both user-delegated permissions (users accessing APIs through client applications) and application permissions (service-to-service calls).
+
+Design your OAuth scopes to enforce least privilege. Instead of a single broad scope like "api.access," define granular scopes that map to specific capabilities (for example, "Orders.Read," "Orders.Write," "Inventory.Manage").
+
+### Subscription keys
+
+APIM can require API keys (subscription keys) for API access. While simpler than OAuth, subscription keys are shared secrets and don't identify individual callers. Use subscription keys primarily for rate limiting and usage tracking, not as the sole authentication mechanism. Scope subscription keys to specific APIs or products rather than granting all-API access.
+
+### Client certificates and mutual TLS (mTLS)
+
+For high-security scenarios, require mutual TLS between clients and the gateway or between the gateway and backends. APIM can validate client certificates against trusted CAs, check certificate revocation, and enforce specific certificate attributes.
+
+### Backend authentication
+
+Protect the connection between APIM and backend services as well. Configure managed identities on the APIM instance to authenticate to backend Azure services. This eliminates the need to store backend credentials in APIM configuration. For non-Azure backends, store credentials in Azure Key Vault and reference them in APIM policies.
+
+## Network security for APIs
+
+Restrict network access to your APIM instance based on the deployment model and sensitivity of the APIs.
+
+- **Virtual network integration (internal mode)** places the APIM gateway inside a virtual network with no public IP address. API consumers access the gateway through private endpoints or ExpressRoute/VPN connections. Use this mode for internal APIs that should never be internet-accessible.
+- **Virtual network integration (external mode)** places APIM in a virtual network but retains a public gateway IP. Backend services are accessible only within the virtual network. Use this for APIs that serve external consumers but need private backend connectivity.
+- **Private endpoints** provide private IP connectivity to APIM from within a virtual network without full virtual network injection.
+- **IP filtering and network security groups (NSGs)** restrict inbound access to known IP ranges.
+
+As an architect, select the network topology that matches your API's exposure requirements. Internet-facing APIs that serve external partners need different network configurations than internal APIs called only by other Azure services.
+
+## API threat protection with policies
+
+APIM policies run at the gateway and provide defense against common API threats:
+
+- **Rate limiting and throttling** prevent abuse and denial-of-service attacks. Configure rate limits per subscription, per caller IP, or per API operation to ensure fair usage and protect backend capacity.
+- **Request validation** checks incoming requests against the API's OpenAPI specification, rejecting requests with unexpected parameters, oversized payloads, or invalid content types before they reach the backend.
+- **IP filtering** restricts access to APIs from known IP ranges or virtual networks.
+- **CORS policies** control cross-origin resource sharing to prevent unauthorized browser-based API access.
+- **Header and payload transformation** strips sensitive headers, redacts data in responses, and normalizes requests to prevent injection attacks.
+
+## Secrets management for APIs
+
+Store all sensitive configuration data, including API keys, certificates, and connection strings, as APIM named values backed by Azure Key Vault. This ensures that secrets are encrypted, audited, and can be rotated without redeploying APIM configuration.
+
+Never store secrets directly in APIM policy expressions or API configuration. The Microsoft Cloud Security Benchmark v2 (MCSBv2) specifically requires that "API Management secret named values should be stored in Azure Key Vault" (control IM-8).
+
+## API lifecycle and governance
+
+Effective API security includes governance across the API lifecycle:
+
+- **API versioning** ensures that deprecated API versions with known vulnerabilities can be retired without breaking consumers. Establish a versioning strategy and communicate deprecation timelines.
+- **Unused endpoint removal** reduces attack surface. The MCSBv2 recommends that "API endpoints that are unused should be disabled and removed from the Azure API Management service" (control AM-3).
+- **Subscription scoping** prevents individual subscription keys from accessing all APIs. Scope subscriptions to specific products or APIs to enforce separation of concerns.
+
+## Microsoft Defender for APIs
+
+Microsoft Defender for APIs, available as part of Microsoft Defender for Cloud, provides API-specific threat detection and posture management:
+
+- Discovers and inventories all APIs managed by APIM.
+- Identifies APIs that expose sensitive data, such as personally identifiable information (PII).
+- Detects runtime threats including authentication attacks, suspicious data exfiltration, and volumetric attacks.
+- Prioritizes API vulnerabilities based on actual exposure and potential impact.
+
+Integrate Defender for APIs with your broader Defender for Cloud deployment to correlate API threats with other cloud security findings.
 
 
-### Self-hosted gateway
-
-With the [self-hosted gateway](/azure/api-management/self-hosted-gateway-overview), customers can deploy the API gateway to the same environments where they host their APIs, to optimize API traffic and ensure compliance with local regulations and guidelines. The self-hosted gateway enables customers with hybrid IT infrastructure to manage APIs hosted on-premises and across clouds from a single API Management service in Azure.
-
-The self-hosted gateway is packaged as a Linux-based Docker container and is commonly deployed to Kubernetes, including to Azure Kubernetes Service and [Azure Arc-enabled Kubernetes](/azure/api-management/how-to-deploy-self-hosted-gateway-azure-arc).
-
-More information:
-
-- [API gateway in Azure API Management](/azure/api-management/api-management-gateways-overview)
-<!--
-[](/azure/api-management/api-management-key-concepts#management-plane)
--->
-
-## Management plane
-
-API providers interact with the service through the management plane, which provides full access to the API Management service capabilities.
-
-Customers interact with the management plane through Azure tools including the Azure portal, Azure PowerShell, Azure CLI, a [Visual Studio Code extension](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-apimanagement&ssr=false#overview), or client SDKs in several popular programming languages.
-
-Use the management plane to:
-
--   Provision and configure API Management service settings
--   Define or import API schemas from a wide range of sources, including OpenAPI specifications, Azure compute services, or WebSocket or GraphQL backends
--   Package APIs into products
--   Set up [policies](/azure/api-management/api-management-key-concepts#policies) like quotas or transformations on the APIs
--   Get insights from analytics
--   Manage users
-
-Microsoft cloud security benchmark's API security baseline outlines a number of controls for secure API management, in seven main areas. For each area, we have identified:
-* the specific controls 
-* important features which support that control
-* configuration guidance for those features
-
-## Azure API Management Security baseline
-
-Microsoft cloud security benchmark's API security baseline outlines a number of controls for secure API management, in seven main areas. For each area, we have identified:
-* the specific controls 
-* important features which support that control
-* configuration guidance for those features
-
-We have omitted controls from the baseline where the feature was not supported to secure the service at this time and there was no configuration guidance. For the full specification, see [Azure security baseline for API Management](/security/benchmark/azure/baselines/api-management-security-baseline).
-
-### Network security
-
-* NS-1: Establish network segmentation boundaries
-	* Virtual Network Integration - Deploy Azure API Management inside an Azure Virtual Network (VNET), so it can access backend services within the network. The developer portal and API Management gateway can be configured to be accessible either from the Internet (External) or only within the Vnet (Internal).
-	* Network Security Group Support - Deploy network security groups (NSG) to your API Management subnets to restrict or monitor traffic by port, protocol, source IP address, or destination IP address. Create NSG rules to restrict your service's open ports (such as preventing management ports from being accessed from untrusted networks). Be aware that by default, NSGs deny all inbound traffic but allow traffic from virtual network and Azure Load Balancers.
-* NS-2: Secure cloud services with network controls
-	* Azure Private Link - In instances where you are unable to deploy API Management instances into a virtual network, you should instead deploy a private endpoint to establish a private access point for those resources.
-	* Disable Public Network Access - Disable public network access either using the IP ACL filtering rule on the NSGs assigned to the service's subnets or a toggling switch for public network access.
-	* Microsoft Defender for Cloud monitoring
-* NS-6: Deploy web application firewall
-
-### Identity Management
-
-* IM-1: Use centralized identity and authentication system
-	* Microsoft Entra authentication Required for Data Plane Access - Use Microsoft Entra ID as the default authentication method for API Management where possible.
-	* Local Authentication Methods for Data Plane Access - Restrict the use of local authentication methods for data plane access, maintain inventory of API Management user accounts and reconcile access as needed. In API Management, developers are the consumers of the APIs that exposed with API Management. By default, newly created developer accounts are Active, and associated with the Developers group. Developer accounts that are in an active state can be used to access all of the APIs for which they have subscriptions.
-* IM-3: Manage application identities securely and automatically
-	* Managed Identities - Use a Managed Service Identity generated by Microsoft Entra ID to allow your API Management instance to easily and securely access other Microsoft Entra ID-protected resources, such as Azure Key Vault instead of using service principals. Managed identity credentials are fully managed, rotated, and protected by the platform, avoiding hard-coded credentials in source code or configuration files.
-* IM-5: Use single sign-on (SSO) for application access
-* IM-8: Restrict the exposure of credential and secrets
-	* Service Credential and Secrets Support Integration and Storage in Azure Key Vault - Set up integration of API Management with Azure Key Vault. Ensure that secrets for API Management (Named values) are stored an Azure Key Vault so they can be securely accessed and updated.
-
-### Privilege Access
-
-* PA-1: Separate and limit highly privileged/administrative users 
-	* Local Admin Accounts - If not required for routine administrative operations, disable or restrict any local admin accounts for only emergency use.
-* PA-7: Follow just enough administration (least privilege) principle
-	* Azure RBAC for Data Plane - Use Azure role-based access control (Azure RBAC) for controlling access to Azure API Management. Azure API Management relies on Azure role-based access control to enable fine-grained access management for API Management services and entities (for example, APIs and policies).
-* PA-8: Determine access process for cloud provider support
-	* Customer Lockbox - In support scenarios where Microsoft needs to access your data, use Customer Lockbox to review, then approve or reject each of Microsoft's data access requests.
-
-### Data protection
-
-* DP-3: Encrypt sensitive data in transit
-	* Data in Transit Encryption - No additional configurations are required as this is enabled on a default deployment.
-* DP-6: Use a secure key management process
-	* Key Management in Azure Key Vault - Set up integration of API Management with Azure Key Vault. Ensure that keys used by API Management are stored an Azure Key Vault so they can be securely accessed and updated.
-* DP-7: Use a secure certificate management process
-	* Certificate Management in Azure Key Vault - Set up integration of API Management with Azure Key Vault. Ensure that secrets for API Management (Named values) are stored an Azure Key Vault so they can be securely accessed and updated.
-
-### Asset management
-
-* AM-2: Use only approved services
-	*  Azure Policy Support - Use built-in Azure Policy to monitor and enforce secure configuration across API Management resources. Use Azure Policy aliases in the "Microsoft.ApiManagement" namespace to create custom Azure Policy definitions where required.
-
-### Logging and threat detection
-
-* LT-4: Enable logging for security investigation
-	* Azure Resource Logs - Enable resource logs for API Management, resource logs provide rich information about operations and errors that are important for auditing and troubleshooting purposes. 
-
-### Backup and recovery
-
-* BR-1: Ensure regular automated backups
-	* Service Native Backup Capability - Azure API Management supports its own native backup capability.

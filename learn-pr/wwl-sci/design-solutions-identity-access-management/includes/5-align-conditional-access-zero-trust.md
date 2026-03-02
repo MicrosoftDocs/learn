@@ -1,55 +1,163 @@
-We'll start out with some design principles.
+Zero Trust is a security model based on the principle "never trust, always verify." Conditional Access is the primary policy engine in Microsoft Entra ID that enforces Zero Trust principles for every access request. As a security architect, you validate that your Conditional Access configuration aligns with Zero Trust requirements.
 
-<!--[](/azure/architecture/guide/security/conditional-access-design#conditional-access-as-a-zero-trust-policy-engine)-->
+## Zero Trust principles and Conditional Access
 
-### Conditional Access as a Zero Trust policy engine
+Zero Trust is built on three core principles. Each principle maps directly to Conditional Access capabilities:
 
-The Microsoft approach to Zero Trust includes Conditional Access as the main policy engine. Here's an overview of that approach:
+| Zero Trust Principle | Conditional Access Implementation |
+|---------------------|----------------------------------|
+| **Verify explicitly** | Evaluate all available signals—user, device, location, application, risk—before granting access |
+| **Use least privilege access** | Grant only necessary access with session controls and time-limited permissions |
+| **Assume breach** | Minimize blast radius through segmentation, continuous verification, and real-time risk detection |
 
-[![Diagram that provides an overview of the Zero Trust model.](../media/zero-trust-model.png)](../media/zero-trust-model.png#lightbox)
+Your Conditional Access policies should collectively enforce all three principles across your organization's resources.
 
-_Download an [SVG file](https://arch-center.azureedge.net/zero-trust-model.svg) of this architecture._
+## Validating explicit verification
 
-Conditional Access is used as the policy engine for a Zero Trust architecture that covers both policy definition and policy enforcement. Based on various signals or conditions, Conditional Access can block or give limited access to resources, as shown here:
+Explicit verification requires that every access request is authenticated and authorized based on multiple signals. Validate your Conditional Access implementation includes:
 
-![Diagram that provides an overview of the Conditional Access signal, decision, enforcement path.](../media/conditional-access-signals.png)
+### Identity verification
 
-Here's a more detailed view of the elements of Conditional Access and what it covers:
+- All users must authenticate with strong credentials
+- MFA is required for all users and applications (baseline policy)
+- Phishing-resistant authentication methods are enforced where possible
+- Legacy authentication protocols are blocked
 
-[![Diagram that shows a more detailed view of Conditional Access.](../media/user-access.png)](../media/user-access.png#lightbox)
+### Device verification
 
-This diagram shows Conditional Access and related elements that can help protect user access to resources, as opposed to non-interactive or non-human access. The following diagram describes both types of identities:
+Conditional Access should validate device state before granting access:
 
-[![Diagram that describes Conditional Access identity types.](../media/conditional-access-identity.svg)](../media/conditional-access-identity.svg#lightbox)
+- Require Microsoft Entra hybrid join or Intune-compliant devices for accessing sensitive resources
+- Use device filters to target or exclude specific device types
+- Consider requiring managed devices for privileged access
 
-Non-human access to resources must also be protected. Currently, you can't use Conditional Access to protect non-human access to cloud resources. You need to use another method, like grant controls for OAuth-based access.
+### Location verification
 
-### Principles of Conditional Access vs Principles of Zero Trust
+Network location provides context for risk assessment:
 
-Based on the preceding information, here's a summary of suggested principles. Microsoft recommends that you create an access model based on Conditional Access that's aligned with the three main Microsoft Zero Trust principles:
+- Define named locations for corporate networks and trusted IP ranges
+- Block access from countries/regions where your organization doesn't operate
+- Require additional controls for access from untrusted networks
 
-|  Zero Trust Principle | Conditional Access Principle
-|---|---|
-| **Verify explicitly**  | - Move the control plane to the cloud. Integrate apps with Microsoft Entra ID and protect them by using Conditional Access.<br>- Consider all clients to be external.  |
-|  **Use least privileged access** | - Evaluate access based on compliance and risk, including user risk, sign-in risk, and device risk.<br>-   Use these access priorities:<br>-   Access the resource directly, using Conditional Access for protection.<br>-   Publish access to the resource by using Microsoft Entra application proxy, using Conditional Access for protection.<br>-   Use Conditional Access—based VPN to access the resource. Restrict access to the level of the app or DNS name.  |
-| **Assume breach**  | -   Segment network infrastructure.<br>- Minimize use of enterprise PKI.<br>- Migrate single sign-on (SSO) from AD FS to password hash synchronization (PHS).<br>-   Minimize dependencies on DCs by using Kerberos KDC in Microsoft Entra ID.<br>- Move the management plane to the cloud. Manage devices by using Microsoft Endpoint Manager.  |
+### Application and risk signals
 
-Here are some more detailed principles and recommended practices for Conditional Access:
+Complete explicit verification by evaluating:
 
--   Apply Zero Trust principles to Conditional Access.
--   Use report-only mode before putting a policy into production.
--   Test both positive and negative scenarios.
--   Use change and revision control on Conditional Access policies.
--   Automate the management of Conditional Access policies by using tools like Azure DevOps / GitHub or Azure Logic Apps.
--   Use block mode for general access only if and where you need to.
--   Ensure that all applications and your platform are protected. Conditional Access has no implicit "deny all."
--   Protect privileged users in all Microsoft 365 role-based access control (RBAC) systems.
--   Require password change and multi-factor authentication for high-risk users and sign-ins (enforced by sign-in frequency).
--   Restrict access from high-risk devices. Use an Intune compliance policy with a compliance check in Conditional Access.
--   Protect privileged systems, like access to the administrator portals for Office 365, Azure, AWS, and Google Cloud.
--   Prevent persistent browser sessions for admins and on untrusted devices.
--   Block legacy authentication.
--   Restrict access from unknown or unsupported device platforms.
--   Require compliant device for access to resources, when possible.
--   Restrict strong credential registration.
--   Consider using default session policy that allows sessions to continue if there's an outage, if the appropriate conditions were satisfied before the outage.
+- Application sensitivity (Conditional Access App Control for high-risk apps)
+- Sign-in and user risk levels from Identity Protection
+- Session context and authentication freshness
+
+## Validating least privilege access
+
+Least privilege means granting only the access necessary for users to perform their tasks. Validate your configuration includes:
+
+### Session controls
+
+- Limit session duration for sensitive applications
+- Use Conditional Access App Control to prevent download of sensitive data on unmanaged devices
+- Implement application-enforced restrictions where supported
+
+### Scope-based policies
+
+- Create targeted policies for specific user groups and applications rather than broad access
+- Use group-based access with regular access reviews
+- Implement Privileged Identity Management (PIM) for just-in-time access to administrative roles
+
+### Access segmentation
+
+- Separate policies for different resource sensitivity levels
+- Higher controls for privileged operations and sensitive data
+- Different baseline requirements for internal versus external users
+
+## Validating assume breach
+
+The assume breach principle acknowledges that compromise can occur and focuses on limiting impact. Validate your implementation includes:
+
+### Continuous verification
+
+- Continuous Access Evaluation (CAE) enabled for supported applications
+- Real-time risk detection through Identity Protection integration
+- Policies that respond to elevated risk by requiring reauthentication or blocking access
+
+### Blast radius reduction
+
+- Segment access by resource sensitivity
+- Use privileged access workstations for administrative functions
+- Implement protected actions for sensitive operations
+- Configure alerts for anomalous access patterns
+
+### Response readiness
+
+- Risk-based policies that automatically respond to detected threats
+- Automated remediation paths (password reset, MFA registration)
+- Integration with security operations for investigation and response
+
+## Zero Trust alignment checklist
+
+Use this checklist to validate your Conditional Access configuration against Zero Trust requirements:
+
+**Identity controls**
+
+☐ MFA required for all users<br>
+☐ Legacy authentication blocked<br>
+☐ Risk-based policies enabled<br>
+☐ Phishing-resistant authentication for privileged accounts
+
+**Device controls**
+
+☐ Device compliance required for corporate resource access<br>
+☐ Device filters configured for appropriate targeting<br>
+☐ Unmanaged device access restricted appropriately
+
+**Network controls**
+
+☐ Named locations defined for trusted networks<br>
+☐ Geographic restrictions applied<br>
+☐ Enhanced controls for external network access
+
+**Application controls**
+
+☐ Conditional Access App Control enabled for sensitive applications<br>
+☐ Session controls configured appropriately<br>
+☐ Application-specific policies for high-value targets
+
+**Monitoring and response**
+
+☐ CAE enabled where supported<br>
+☐ Identity Protection risk policies active<br>
+☐ Sign-in logs monitored<br>
+☐ Alerts configured for policy exceptions
+
+## Common misalignments
+
+Watch for these common gaps between Conditional Access configuration and Zero Trust principles:
+
+| Misalignment | Zero Trust Impact |
+|--------------|-------------------|
+| Emergency access accounts without monitoring | Violates assume breach—compromise goes undetected |
+| MFA only for admins | Violates verify explicitly—regular users not verified |
+| No device compliance requirements | Incomplete explicit verification |
+| Single policy for all applications | Violates least privilege—same controls for all sensitivity levels |
+| No risk-based policies | Missing continuous verification |
+| Legacy authentication still allowed | Bypasses MFA and other controls |
+
+## Microsoft Entra solutions for Zero Trust
+
+The following capabilities support Zero Trust alignment:
+
+- **Microsoft Entra Conditional Access** - Policy engine for Zero Trust enforcement
+- **Microsoft Entra Identity Protection** - Risk detection for continuous verification
+- **Continuous Access Evaluation** - Real-time policy enforcement
+- **Privileged Identity Management** - Just-in-time access for least privilege
+- **Access reviews** - Regular validation of access rights
+- **Defender for Cloud Apps** - Conditional Access App Control for session management
+
+## Design considerations for security architects
+
+When validating Zero Trust alignment:
+
+- **Assess current state** - Document existing policies and identify gaps against Zero Trust requirements
+- **Prioritize by risk** - Address highest-risk gaps first (MFA for all users, block legacy auth)
+- **Use report-only mode** - Test policy changes before enforcement
+- **Measure and iterate** - Track policy coverage and effectiveness through Conditional Access insights
+- **Plan exceptions carefully** - Document any policies that deviate from Zero Trust with compensating controls

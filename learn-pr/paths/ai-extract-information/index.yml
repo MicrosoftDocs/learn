@@ -30,7 +30,7 @@ subjects:
 - artificial-intelligence
 products:
 - ai-services
-- azure-ai-foundry
+- microsoft-foundry
 - azure-cognitive-search
 modules:
 - learn.wwl.analyze-content-ai

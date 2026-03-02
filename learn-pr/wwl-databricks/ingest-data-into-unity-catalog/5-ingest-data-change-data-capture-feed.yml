@@ -4,7 +4,7 @@ title: Ingest data with CDC feed
 metadata:
   title: Ingest Data with CDC Feed
   description: Learn how to ingest data using change data capture (CDC) feeds in Azure Databricks, including processing changes with the AUTO CDC API and handling SCD Type 1 and Type 2 patterns.
-  ms.date: 12/07/2025
+  ms.date: 02/16/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit

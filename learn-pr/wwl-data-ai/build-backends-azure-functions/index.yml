@@ -1,0 +1,46 @@
+### YamlMime:Module
+uid: learn.wwl.build-backends-azure-functions
+metadata:
+  title: Build Serverless AI Backends with Azure Functions
+  description: Learn how to use Azure Functions as lightweight serverless compute for AI workloads, including inference endpoints, event processors, and integration with Azure services.
+  ms.date: 02/13/2026
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: module-standard-task-based
+  ai-usage: ai-assisted
+  ms.service: azure-functions
+title: Build serverless AI backends with Azure Functions
+summary: Learn how to use Azure Functions as lightweight serverless compute for AI workloads. Build inference endpoints, event processors, and service integrations that scale automatically with demand.
+abstract: |
+  After completing this module, you'll be able to:
+    - Evaluate cold start, scaling, and instance memory trade-offs when choosing between Flex Consumption and Premium hosting for AI workloads
+    - Set up a local development environment for Azure Functions using Core Tools, emulators, and an IDE
+    - Create triggers and bindings that implement common AI integration patterns such as HTTP inference endpoints and queue-based batch processors
+    - Configure secrets management and application settings using Key Vault references and Azure App Configuration
+    - Apply managed identity and function-level authorization to secure access between Functions and other Azure resources
+prerequisites: |
+  Before beginning this module, you should have:
+  - Programming experience with languages such as Python, JavaScript, or C#.
+  - Basic understanding of Azure services and cloud computing concepts.
+  - Familiarity with REST APIs and event-driven programming patterns.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- azure-functions
+subjects:
+- serverless-computing
+units:
+- learn.wwl.build-backends-azure-functions.introduction
+- learn.wwl.build-backends-azure-functions.understand-hosting-scaling
+- learn.wwl.build-backends-azure-functions.set-up-local-development-environment
+- learn.wwl.build-backends-azure-functions.create-triggers-bindings-ai-patterns
+- learn.wwl.build-backends-azure-functions.manage-secrets-configuration
+- learn.wwl.build-backends-azure-functions.configure-identity-access
+- learn.wwl.build-backends-azure-functions.exercise-create-mcp-server
+- learn.wwl.build-backends-azure-functions.knowledge-check
+- learn.wwl.build-backends-azure-functions.summary
+badge:
+  uid: learn.wwl.build-backends-azure-functions.badge

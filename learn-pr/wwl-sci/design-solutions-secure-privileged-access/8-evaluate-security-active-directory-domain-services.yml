@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.design-solutions-secure-privileged-acces.evaluate-security-active-directory-domain-services
+uid: learn.wwl.design-solutions-secure-privileged-access.evaluate-security-active-directory-domain-services
 
-title: Evaluate the security and governance of on-premises Active Directory Domain Services (AD DS), including resilience to common attacks
+title: Evaluate the security of Active Directory Domain Services (AD DS)
 metadata:
-  title: Evaluate the security and governance of on-premises Active Directory Domain Services (AD DS), including resilience to common attacks
-  description: "SC-100 preparatory unit on the topic: Evaluate the security and governance of on-premises Active Directory Domain Services (AD DS), including resilience to common attacks."
-  ms.date: 04/02/2025
+  title: Evaluate the security of Active Directory Domain Services (AD DS)
+  description: "Learn to evaluate the security and governance of AD DS, including resilience to common attacks like pass-the-hash and Kerberoasting for the SC-100 certification."
+  ms.date: 01/28/2026
   author: ceperezb
   ms.author: ceperezb
   ms.topic: unit
-durationInMinutes: 10
+durationInMinutes: 6
 content: |
   [!include[](includes/8-evaluate-security-active-directory-domain-services.md)]

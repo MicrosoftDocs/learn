@@ -1,0 +1,84 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.how-windows-enables-ai-agents.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge Check
+  description: This content is part of the "How Windows enables AI and agents" module.
+  ms.date: 01/21/2026
+  author: hhreyes21
+  ms.author: v-homerreyes
+  ms.topic: unit
+durationInMinutes: 5
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "What is the primary reason Windows integrates AI into the operating system?"
+    choices:
+        - content: "To replace IT teams entirely"
+          isCorrect: false
+          explanation: "Incorrect. AI reduces repetitive tasks, not replaces IT."
+        - content: "To embed intelligence for efficiency and workflows"
+          isCorrect: true
+          explanation: "Correct. Windows integrates AI to streamline tasks and improve productivity."
+        - content: "To make AI a separate application"
+          isCorrect: false
+          explanation: "Incorrect. AI is moving away from being “one more app to open.”"
+        - content: "To remove traditional workflows from Windows"
+          isCorrect: false
+          explanation: "Incorrect. AI enhances workflows, not eliminates them."
+  - content: "What is a key benefit of running AI locally on Copilot+ PCs?"
+    choices:
+        - content: "Increased reliance on cloud connectivity"
+          isCorrect: false
+          explanation: "Incorrect. Local AI reduces dependence on cloud."
+        - content: "Higher latency for AI responses"
+          isCorrect: false
+          explanation: "Incorrect. Local processing decreases latency."
+        - content: "Improved privacy and reduced latency"
+          isCorrect: true
+          explanation: "Correct. Local AI keeps sensitive data on-device and speeds up responses."
+        - content: "Elimination of all network-based tasks"
+          isCorrect: false
+          explanation: "Incorrect. Some tasks still require network access."
+  - content: "Which Windows feature helps reduce repetitive IT tickets by guiding users through troubleshooting?"
+    choices:
+        - content: "Copilot+ PCs hardware"
+          isCorrect: false
+          explanation: "Incorrect. Hardware supports AI but does not guide troubleshooting directly."
+        - content: "Microsoft Edge for Business"
+          isCorrect: false
+          explanation: "Incorrect. Edge helps with research, not troubleshooting tickets."
+        - content: "Semantic Search"
+          isCorrect: false
+          explanation: "Incorrect. Search improves file discovery, not IT ticket reduction."
+        - content: "Built-in AI agents"
+          isCorrect: true
+          explanation: "Correct. Agents assist users with diagnostics and remediation under policy."
+  - content: "What is the main advantage of Microsoft Foundry on Windows for IT teams?"
+    choices:
+        - content: "Eliminates all cloud dependencies"
+          isCorrect: false
+          explanation: "Incorrect. Foundry supports both local and cloud workloads."
+        - content: "Provides unmanaged AI environments"
+          isCorrect: false
+          explanation: "Incorrect. Foundry aligns with Windows governance and policy."
+        - content: "Delivers a standardized AI development and deployment platform"
+          isCorrect: true
+          explanation: "Correct. Foundry ensures consistency and integration with Windows."
+        - content: "Requires separate toolchains for AI workloads"
+          isCorrect: false
+          explanation: "Incorrect. Foundry reduces fragmentation by using native tools."
+  - content: "What is a key benefit of integrating AI into familiar Windows surfaces like the taskbar?"
+    choices:
+        - content: "Reduces context switching and improves adoption"
+          isCorrect: true
+          explanation: "Correct. AI appears where work happens, improving flow."
+        - content: "Requires switching to separate AI apps"
+          isCorrect: false
+          explanation: "Incorrect. Integration removes the need to switch apps."
+        - content: "Increases training complexity"
+          isCorrect: false
+          explanation: "Incorrect. Familiar surfaces reduce training requirements."
+        - content: "Limits AI to Microsoft Edge only"
+          isCorrect: false
+          explanation: "Incorrect. AI integrates across multiple Windows surfaces, not just Edge."

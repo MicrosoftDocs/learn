@@ -3,7 +3,7 @@ uid: learn.quantum.estimate-resources-quantum-algorithms.estimate-resources-of-a
 title: Exercise - Estimate resources for a real-world problem
 metadata:
   title: Exercise - Estimate resources for a real-world problem
-  description: Learn how to run a quantum algorithm on the Azure Quantum Resource Estimator.
+  description: Learn how to run a quantum algorithm on the Microsoft Quantum resource estimator.
   ms.date: 09/22/2025
   author: azure-quantum-content
   ms.author: quantumdocwriters

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.build-query-azure-database-postgresql.integrate-sdks-apps
+title: Integrate SDKs and applications
+metadata:
+  title: Integrate SDKs and Applications
+  description: Integrate SDKs and applications
+  ms.date: 01/29/2026
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/6-integrate-sdks-apps.md)]

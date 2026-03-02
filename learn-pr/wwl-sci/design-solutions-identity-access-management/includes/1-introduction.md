@@ -1,30 +1,33 @@
+Identity is the primary security perimeter in cloud and hybrid environments. As a cybersecurity architect, you're responsible for designing identity and access management solutions that verify every user and workload, control access to resources, and protect against identity-based attacks.
 
-This module provides an in-depth exploration of designing identity and access management solutions in hybrid and multicloud environments. It covers various aspects such as user management, entitlement management, admin management, and credential management.
+## Scenario
 
-Imagine you're a cloud architect for a multinational corporation that is transitioning its infrastructure to Azure. You're tasked with designing a robust and secure identity and access management system. The challenge lies in managing identities across different departments, regions, and external partners while ensuring secure access to resources. This module guides you through the process of designing and implementing an effective identity and access management system in Azure.
+Your organization is expanding its cloud footprint across Azure, AWS, and GCP while maintaining on-premises Active Directory infrastructure. The security team needs an identity architecture that:
+
+- Controls access to SaaS, PaaS, and IaaS resources through identity, networking, and application controls
+- Extends Microsoft Entra ID across hybrid and multicloud environments
+- Enables secure collaboration with external partners and customers
+- Implements modern authentication strategies that adapt to risk
+- Enforces Zero Trust principles through Conditional Access policies
+- Hardens Active Directory Domain Services against credential-based attacks
+- Centrally manages secrets, keys, and certificates
+
+As the cybersecurity architect, you design the identity and access management solutions that balance security with productivity across this complex environment.
 
 ## Learning objectives
 
-In this module, you learn how to:
+By the end of this module, you're able to:
 
-- Design cloud, hybrid, and multicloud access strategies.
-- Design a solution for Microsoft Entra ID.
-- Design a solution for external identities.
-- Design modern authentication and authorization strategies.
-- Specify requirements to secure Active Directory Domain Services.
-- Design a solution to manage secrets, keys, and certificates.
-
-The content in the module helps you prepare for the certification exam SC-100: Microsoft Cybersecurity Architect.
+- Design access strategies for SaaS, PaaS, IaaS, hybrid, and multicloud resources using identity, networking, and application controls
+- Design a solution for Microsoft Entra ID, including hybrid and multicloud environments
+- Design a solution for external identities, including B2B collaboration and customer identity
+- Design modern authentication and authorization strategies
+- Validate Conditional Access alignment with Zero Trust
+- Specify requirements for securing Active Directory Domain Services
+- Design a solution for managing secrets, keys, and certificates
 
 ## Prerequisites
 
-- Conceptual knowledge of security policies, requirements, Zero Trust architecture, and management of hybrid environments
-- Working experience with Zero Trust strategies, applying security policies, and developing security requirements based on business goals
-
-## Introduction
-
-Identity provides the basis for a wide variety of security assurance. It grants access based on identity authentication and authorization controls in cloud services. Access control protects data and resources and helps decide which requests should be permitted.
-
-The technological landscape in the enterprise is becoming complex and heterogenous. To manage compliance and security for this environment, identity and access management lets the right individuals access the right resources at the right time for the right reasons.
-
-Identity and access management is boundary security in the public cloud. It must be treated as the foundation of any secure and fully compliant public cloud architecture. Azure offers a comprehensive set of services, tools, and reference architectures to help organizations make highly secure, operationally efficient environments.
+- Advanced experience with identity and access concepts including authentication, authorization, and Active Directory
+- Experience with Microsoft Entra ID, Conditional Access, and Azure Key Vault
+- Conceptual knowledge of Zero Trust security principles

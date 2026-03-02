@@ -22,7 +22,7 @@ roles:
 - developer
 products:
 - ai-services
-- azure-ai-foundry
+- microsoft-foundry
 subjects:
 - natural-language-processing
 modules:

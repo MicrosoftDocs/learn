@@ -3,11 +3,11 @@ uid: learn.wwl.design-solutions-securing-server-client-endpoints.introduction-en
 title: Introduction to endpoint security
 metadata:
   title: Introduction to endpoint security
-  description: "SC-100 preparatory unit on the topic: introduction to endpoint security."
-  ms.date: 09/26/2024
+  description: Learn about designing security solutions for server and client endpoints, including servers, mobile devices, IoT systems, and operational technology.
+  ms.date: 02/07/2026
   author: ceperezb
   ms.author: ceperezb
   ms.topic: unit
-durationInMinutes: 10
+durationInMinutes: 3
 content: |
   [!include[](includes/1-introduction-endpoint-security.md)]

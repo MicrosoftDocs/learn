@@ -4,11 +4,11 @@ title: Module assessment
 metadata:
   title: Module Assessment
   description: "Module assessment"
-  ms.date: 12/12/2025
+  ms.date: 1/28/2026
   author: chrishowd
   ms.author: cahowd
   ms.topic: unit
-durationInMinutes: 5
+durationInMinutes: 8
 content: |
 quiz:
   questions:

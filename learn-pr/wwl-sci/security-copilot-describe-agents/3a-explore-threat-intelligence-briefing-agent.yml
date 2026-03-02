@@ -6,10 +6,10 @@ metadata:
   description: Explore the Threat Intelligence Briefing Agent.
   author: wwlpublish
   ms.author: ceperezb
-  ms.date: 06/12/2025
+  ms.date: 02/15/2026
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
-durationInMinutes: 15
+durationInMinutes: 11
 content: |
   [!include[](includes/3a-explore-threat-intelligence-briefing-agent.md)]

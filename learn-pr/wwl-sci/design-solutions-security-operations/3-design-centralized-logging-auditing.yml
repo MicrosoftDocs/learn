@@ -1,13 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.design-solutions-security-operations.design-centralized-logging-auditing
-title: Design centralized logging and auditing, including Microsoft Purview Audit 
+title: Design solutions to support centralized logging and auditing 
 metadata:
-  title: Design centralized logging and auditing, including Microsoft Purview Audit 
-  description: "SC-100 preparatory unit on the topic: design centralized logging and auditing, including Microsoft Purview Audit."
-  ms.date: 09/26/2024
+  title: Design solutions to support centralized logging and auditing 
+  description: "SC-100 preparatory unit on the topic: design centralized logging and auditing."
+  ms.date: 02/02/2026
   author: ceperezb
   ms.author: ceperezb
   ms.topic: unit
-durationInMinutes: 10
+durationInMinutes: 20
 content: |
   [!include[](includes/3-design-centralized-logging-auditing.md)]

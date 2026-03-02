@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn.wwl.develop-ai-enabled-apps-using-github-copilot-sdk
+metadata:
+  title: "Develop AI-Enabled Apps using the GitHub Copilot SDK"
+  description: "This module covers how to develop AI-enabled applications using the GitHub Copilot SDK. You install the SDK, explore its features, and build AI agents that can be integrated into your applications to automate tasks and enhance functionality."
+  ms.date: 02/13/2026
+  author: chrishowd
+  ms.author: cahowd
+  ms.topic: module
+  ms.service: github-copilot
+title: "Develop AI-enabled apps using the GitHub Copilot SDK"
+summary: This module covers how to develop AI-enabled applications using the GitHub Copilot SDK. You install the SDK, explore its features, and build AI agents that can be integrated into your applications to automate tasks and enhance functionality.
+abstract: |
+  After completing this module, you're able to:
+  - Explain what AI agents are and how they differ from chatbots and automation scripts.
+  - Describe the architecture and key features of the GitHub Copilot SDK.
+  - Design an AI agent system with tools, memory, and guardrails.
+  - Implement an AI agent using the GitHub Copilot SDK with custom tool definitions.
+prerequisites: |
+  - Experience using GitHub Copilot in Visual Studio Code.
+  - Experience developing C# applications.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+  - intermediate
+roles:
+  - developer
+products:
+  - github
+  - vs-code
+subjects:
+  - app-development
+  - productivity
+units:
+- learn.wwl.develop-ai-enabled-apps-using-github-copilot-sdk.introduction
+- learn.wwl.develop-ai-enabled-apps-using-github-copilot-sdk.what-ai-agent
+- learn.wwl.develop-ai-enabled-apps-using-github-copilot-sdk.what-github-copilot-sdk
+- learn.wwl.develop-ai-enabled-apps-using-github-copilot-sdk.examine-ai-agent-use-cases
+- learn.wwl.develop-ai-enabled-apps-using-github-copilot-sdk.design-ai-agents
+- learn.wwl.develop-ai-enabled-apps-using-github-copilot-sdk.implement-ai-agents-github-copilot-sdk
+- learn.wwl.develop-ai-enabled-apps-using-github-copilot-sdk.adapt-extend-ai-agents
+- learn.wwl.develop-ai-enabled-apps-using-github-copilot-sdk.exercise-integrate-ai-agent-github-copilot-sdk
+- learn.wwl.develop-ai-enabled-apps-using-github-copilot-sdk.knowledge-check
+- learn.wwl.develop-ai-enabled-apps-using-github-copilot-sdk.summary
+badge:
+  uid: learn.develop-ai-enabled-apps-using-github-copilot-sdk.badge

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-github-app-modernization.introduction-code-modernization
+title: Introduction to code modernization
+metadata:
+  title: Introduction to Code Modernization
+  description: This unit introduces the concept of code modernization and its importance in maintaining and upgrading legacy applications.
+  ms.date: 02/17/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/1-introduction-code-modernization.md)]

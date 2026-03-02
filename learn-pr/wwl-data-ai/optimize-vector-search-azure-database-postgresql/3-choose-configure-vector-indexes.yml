@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.optimize-vector-search-azure-database-postgresql.choose-configure-vector-indexes
+title: Choose and configure vector indexes
+metadata:
+  title: Choose and Configure Vector Indexes
+  description: Choose and configure vector indexes
+  ms.date: 01/26/2026
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: unit
+durationInMinutes: 15
+content: |
+  [!include[](includes/3-choose-configure-vector-indexes.md)]

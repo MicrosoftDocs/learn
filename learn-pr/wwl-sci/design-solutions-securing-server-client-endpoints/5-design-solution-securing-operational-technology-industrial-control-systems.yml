@@ -1,13 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.design-solutions-securing-server-client-endpoints.design-solution-securing-operational-technology-industrial-control-systems
-title: Secure operational technology (OT) and industrial control systems (ICS) with Microsoft Defender for IoT
+title: Evaluate solutions for securing operational technology (OT) and industrial control systems (ICS) by using Microsoft Defender for IoT
 metadata:
-  title: Secure operational technology (OT) and industrial control systems (ICS) with Microsoft Defender for IoT
-  description: "SC-100 preparatory unit on the topic: secure operational technology (OT) and industrial control systems (ICS) with Microsoft Defender for IoT."
-  ms.date: 09/26/2024
+  title: Evaluate solutions for securing operational technology (OT) and industrial control systems (ICS) by using Microsoft Defender for IoT
+  description: "Learn how to evaluate Microsoft Defender for IoT for securing OT and ICS environments including deployment models, integrations, and threat detection."
+  ms.date: 02/07/2026
   author: ceperezb
   ms.author: ceperezb
   ms.topic: unit
-durationInMinutes: 10
+durationInMinutes: 8
 content: |
   [!include[](includes/5-design-solution-securing-operational-technology-industrial-control-systems.md)]

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-ai-governance-ai-ready-infrastructure.introduction
+title: "Introduction"
+metadata:
+  title: "Introduction"
+  description: "Discover how to balance innovation with responsible AI practices using Microsoft Foundry for governance, compliance, and cost control."
+  ms.date: 02/02/2026
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: unit
+  ms.custom: references_regions
+durationInMinutes: 3
+content: |
+  [!include[](includes/1-introduction.md)]
+

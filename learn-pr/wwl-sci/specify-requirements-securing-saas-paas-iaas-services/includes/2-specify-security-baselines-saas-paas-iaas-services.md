@@ -1,83 +1,119 @@
-This unit will provide an overview of the general best practices for IaaS and PaaS security.
+As a security architect, you define security baselines that establish minimum security configurations for cloud resources. Security baselines translate organizational security requirements into actionable, measurable controls that can be consistently applied across SaaS, PaaS, and IaaS services.
 
-## IaaS security
+## Understand the shared responsibility model
 
-### Protect VMs by using authentication and access control
+Before specifying security baselines, you need to understand where your security responsibilities begin and end. The shared responsibility model defines which security tasks your cloud provider handles and which tasks you handle. These responsibilities vary by service model.
 
-The first step in protecting your VMs is to ensure that only authorized users can set up new VMs and access VMs.
+| Responsibility area | IaaS | PaaS | SaaS |
+|---|---|---|---|
+| Customer data | Customer | Customer | Customer |
+| Identities and access management | Customer | Customer | Customer |
+| Applications | Customer | Shared | Shared |
+| Network controls | Customer | Shared | Microsoft |
+| Operating system | Customer | Microsoft | Microsoft |
+| Physical infrastructure | Microsoft | Microsoft | Microsoft |
 
-Use [Azure policies](/azure/governance/policy/overview) to establish conventions for resources in your organization and create customized policies. Apply these policies to resources, such as [resource groups](/azure/azure-resource-manager/management/overview). VMs that belong to a resource group inherit its policies.
+In IaaS deployments, you manage virtual machines, operating systems, and applications. PaaS shifts operating system and infrastructure management to Microsoft, but you remain responsible for application configuration and access controls. SaaS applications require you to focus primarily on data protection and identity management.
 
-### Use multiple VMs for better availability
+Regardless of service model, you always retain responsibility for protecting your data, managing identities, configuring access controls, and securing endpoints that access cloud services.
 
-If your VM runs critical applications that need to have high availability, we strongly recommend that you use multiple VMs. For better availability, use an [availability set](/azure/virtual-machines/availability-set-overview) or availability [zones](/azure/availability-zones/az-overview).
+:::image type="content" source="../media/shared-responsibility.png" alt-text="Diagram showing the division of security responsibilities between customer and cloud provider across SaaS, PaaS, and IaaS deployment models.":::
 
-An availability set is a logical grouping that you can use in Azure to ensure that the VM resources you place within it are isolated from each other when they’re deployed in an Azure datacenter. Azure ensures that the VMs you place in an availability set run across multiple physical servers, compute racks, storage units, and network switches. If a hardware or Azure software failure occurs, only a subset of your VMs are affected, and your overall application continues to be available to your customers. Availability sets are an essential capability when you want to build reliable cloud solutions.
+## Use the Microsoft cloud security benchmark
 
-### Protect against malware
+The [Microsoft cloud security benchmark (MCSB)](/security/benchmark/azure/introduction) provides the canonical framework for specifying security baselines in Azure. MCSB defines security controls aligned with industry standards including CIS Controls, NIST SP 800-53, PCI-DSS, and ISO 27001.
 
-You should install antimalware protection to help identify and remove viruses, spyware, and other malicious software. You can install [Microsoft Antimalware](/azure/security/fundamentals/antimalware) or a Microsoft partner’s endpoint protection solution ([Trend Micro](https://help.deepsecurity.trendmicro.com/20_0/on-premise/welcome.html), [Broadcom](https://www.broadcom.com/products), [McAfee](https://www.mcafee.com/us/products.aspx), [Windows Defender](https://www.microsoft.com/windows/comprehensive-security), and [System Center Endpoint Protection](/configmgr/protect/deploy-use/endpoint-protection)).
+MCSB organizes security guidance into 12 security domains:
 
-### Manage your VM updates
+- **Network security**: Secure virtual networks, establish private connections, and prevent external attacks
+- **Identity management**: Implement secure identity and access controls with strong authentication
+- **Privileged access**: Protect administrative accounts and privileged access workstations
+- **Data protection**: Control data at rest and in transit through encryption and access controls
+- **Asset management**: Ensure security visibility and governance over resources
+- **Logging and threat detection**: Enable detection, collection, and analysis of security events
+- **Incident response**: Prepare for and respond to security incidents
+- **Posture and vulnerability management**: Assess and improve security configuration continuously
+- **Endpoint security**: Deploy endpoint detection and response capabilities
+- **Backup and recovery**: Protect data through validated backup and recovery processes
+- **DevOps security**: Integrate security into development and deployment pipelines
+- **Artificial intelligence security**: Secure AI platform, applications, and monitoring
 
-Azure VMs, like all on-premises VMs, are meant to be user managed. Azure doesn't push Windows updates to them. You need to manage your VM updates.
+When specifying security baselines, map your organizational requirements to the relevant MCSB security domains and controls. Each Azure service has a published security baseline that provides service-specific guidance for implementing MCSB controls.
 
-Use the [Update Management](/azure/automation/update-management/overview) solution in Azure Automation to manage operating system updates for your Windows and Linux computers that are deployed in Azure, in on-premises environments, or in other cloud providers. You can quickly assess the status of available updates on all agent computers and manage the process of installing required updates for servers.
+## Specify IaaS security baselines
 
-### Manage your VM security posture
+IaaS provides the most flexibility but also requires you to manage the largest portion of the security stack. Your IaaS security baseline should address the following areas.
 
-Cyberthreats are evolving. Safeguarding your VMs requires a monitoring capability that can quickly detect threats, prevent unauthorized access to your resources, trigger alerts, and reduce false positives.
+### Authentication and access control
 
-To monitor the security posture of your [Windows](/azure/security-center/security-center-introduction) and [Linux VMs](/azure/security-center/security-center-introduction), use [Microsoft Defender for Cloud](/azure/security-center/security-center-introduction).
+Ensure that only authorized users can provision and access virtual machines. Use [Azure Policy](/azure/governance/policy/overview) to establish conventions for resources and create policies that enforce security standards. Apply policies at the management group or subscription level so VMs inherit them automatically.
 
-### Monitor VM performance
+### Endpoint protection
 
-Resource abuse can be a problem when VM processes consume more resources than they should. Performance issues with a VM can lead to service disruption, which violates the security principle of availability. This is particularly important for VMs that are hosting IIS or other web servers, because high CPU or memory usage might indicate a denial of service (DoS) attack. It’s imperative to monitor VM access not only reactively while an issue is occurring, but also proactively against baseline performance as measured during normal operation.
+Require antimalware solutions on all virtual machines. Deploy [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint) or supported endpoint protection solutions. Use [Microsoft Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction) to monitor endpoint protection status and remediate gaps.
 
-### Encrypt your virtual hard disk files
+### Update management
 
-We recommend that you encrypt your virtual hard disks (VHDs) to help protect your boot volume and data volumes at rest in storage, along with your encryption keys and secrets.
+Establish patching requirements and timelines for operating systems and applications. Use [Azure Update Manager](/azure/update-manager/overview) to assess update status, schedule maintenance windows, and deploy updates across Windows and Linux machines in Azure, on-premises, and other cloud environments.
 
-[Azure Disk Encryption for Linux VMs](/azure/virtual-machines/linux/disk-encryption-overview) and [Azure Disk Encryption for Windows VMs](/azure/virtual-machines/linux/disk-encryption-overview) helps you encrypt your Linux and Windows IaaS virtual machine disks. Azure Disk Encryption uses the industry-standard [DM-Crypt](https://en.wikipedia.org/wiki/Dm-crypt) feature of Linux and the [BitLocker](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc732774(v=ws.11)) feature of Windows to provide volume encryption for the OS and the data disks. The solution is integrated with [Azure Key Vault](/azure/key-vault/) to help you control and manage the disk-encryption keys and secrets in your key vault subscription. The solution also ensures that all data on the virtual machine disks are encrypted at rest in Azure Storage.
+### Disk encryption
 
-### Restrict direct internet connectivity
+Require encryption for virtual hard disks to protect data at rest. [Azure Disk Encryption](/azure/virtual-machines/disk-encryption-overview) uses DM-Crypt for Linux and BitLocker for Windows to provide volume encryption. Integrate with [Azure Key Vault](/azure/key-vault/general/overview) to control and manage encryption keys.
 
-Monitor and restrict VM direct internet connectivity. Attackers constantly scan public cloud IP ranges for open management ports and attempt “easy” attacks like common passwords and known unpatched vulnerabilities. 
+### Network segmentation
 
-## PaaS security
+Restrict direct internet connectivity for management interfaces. Use network security groups to control traffic flow between subnets. Implement [just-in-time VM access](/azure/defender-for-cloud/just-in-time-access-overview) to reduce exposure to brute-force attacks on management ports.
 
-### Adopt a policy of identity as the primary security perimeter
+## Specify PaaS security baselines
 
-One of the five essential characteristics of cloud computing is broad network access, which makes network-centric thinking less relevant. The goal of much of cloud computing is to allow users to access resources regardless of location. For most users, their location is going to be somewhere on the Internet.
+PaaS services shift infrastructure management to Microsoft, which changes your security focus. Your PaaS security baseline should emphasize identity-centric controls rather than traditional network perimeters.
 
-The following figure shows how the security perimeter has evolved from a network perimeter to an identity perimeter. Security becomes less about defending your network and more about defending your data, as well as managing the security of your apps and users. The key difference is that you want to push security closer to what's important to your company. Treat identity as the primary security perimeter
+### Adopt identity as the primary security perimeter
+
+Modern security practices assume that adversaries can breach network perimeters. Identity becomes your primary defense layer. Organizations must establish identity-based security with strong authentication and authorization.
 
 ![Diagram showing identity as the new security perimeter.](../media/identity-perimeter.png)
 
-Initially, Azure PaaS services (for example, web roles and Azure SQL) provided little or no traditional network perimeter defenses. It was understood that the element's purpose was to be exposed to the Internet (web role) and that authentication provides the new perimeter (for example, BLOB or Azure SQL).
+Your PaaS baseline should require:
 
-Modern security practices assume that the adversary has breached the network perimeter. Therefore, modern defense practices have moved to identity. Organizations must establish an identity-based security perimeter with strong authentication and authorization hygiene (best practices).  This includes requiring Microsoft Entra Conditional Access for administrative and sensitive workloads, enforcing multifactor authentication and passwordless methods for high-privilege roles, and enabling Privileged Identity Management (PIM) to reduce standing privileges.
+- **Microsoft Entra Conditional Access** for administrative and sensitive workloads
+- **Multifactor authentication** for all users, with phishing-resistant methods like passkeys or FIDO2 for privileged roles
+- **Privileged Identity Management (PIM)** to eliminate standing privileges for administrative access
+- **Managed identities** for application authentication to avoid credential storage in code
 
-Other general, security recommendations that are proven in the field and apply to almost all PaaS services are described in the sections that follow.
+### Application security controls
 
-### Develop on Azure App Service
+For web applications hosted on [Azure App Service](/azure/app-service/overview) or similar PaaS platforms, specify baseline requirements for:
 
-[Azure App Service](/azure/app-service/overview) is a PaaS offering that lets you create web and mobile apps for any platform or device and connect to data anywhere, in the cloud or on-premises. App Service includes the web and mobile capabilities that were previously delivered separately as Azure Websites and Azure Mobile Services. It also includes new capabilities for automating business processes and hosting cloud APIs. As a single integrated service, App Service brings a rich set of capabilities to web, mobile, and integration scenarios.
-
-### Install a web application firewall
-
-Web applications are increasingly targets of malicious attacks that exploit common known vulnerabilities. Common among these exploits are SQL injection attacks, cross site scripting attacks to name a few. Preventing such attacks in application code can be challenging and might require rigorous maintenance, patching and monitoring at many layers of the application topology. A centralized web application firewall helps make security management much simpler and gives better assurance to application administrators against threats or intrusions. A WAF solution can also react to a security threat faster by patching a known vulnerability at a central location versus securing each of individual web applications.
-
-[Web Application Firewall (WAF)](/azure/web-application-firewall/overview) provides centralized protection of your web applications from common exploits and vulnerabilities.
+- **Authentication**: Integrate with Microsoft Entra ID using OAuth 2.0 and OpenID Connect
+- **Transport security**: Enforce HTTPS-only traffic and require TLS 1.2 or higher
+- **Key protection**: Store secrets, certificates, and encryption keys in [Azure Key Vault](/azure/key-vault/general/overview)
+- **Web application firewall**: Deploy [Azure WAF](/azure/web-application-firewall/overview) to protect against common exploits like SQL injection and cross-site scripting
 
 ### DDoS protection
 
-[Azure DDoS Protection](/azure/ddos-protection/ddos-protection-overview), combined with application-design best practices, provides enhanced DDoS mitigation features to provide more defense against DDoS attacks. You should enable [Azure DDOS Protection](/azure/ddos-protection/ddos-protection-overview) on any perimeter virtual network.
+Include DDoS protection requirements in your baseline. [Azure DDoS Protection](/azure/ddos-protection/ddos-protection-overview) provides enhanced mitigation capabilities for network-layer attacks. For application-layer protection, combine DDoS Protection with a web application firewall.
 
-### Monitor the performance of your applications
+## Specify SaaS security baselines
 
-Monitoring is the act of collecting and analyzing data to determine the performance, health, and availability of your application. An effective monitoring strategy helps you understand the detailed operation of the components of your application. It helps you increase your uptime by notifying you of critical issues so that you can resolve them before they become problems. It also helps you detect anomalies that might be security related.
+SaaS applications require you to focus on data protection, identity management, and integration security. Use [Microsoft Defender for Cloud Apps](/defender-cloud-apps/what-is-defender-for-cloud-apps) to discover SaaS applications in your environment, assess their risk, and enforce security policies.
 
-### Perform security penetration testing
+Your SaaS baseline should address:
 
-Validating security defenses is as important as testing any other functionality. Make [penetration testing](/azure/security/fundamentals/pen-testing) a standard part of your build and deployment process. Schedule regular security tests and vulnerability scanning on deployed applications, and monitor for open ports, endpoints, and attacks.
+- **App discovery and assessment**: Inventory SaaS applications and evaluate their security posture
+- **Access governance**: Implement Conditional Access policies that control how users access SaaS apps
+- **Data protection**: Apply sensitivity labels and data loss prevention policies to prevent unauthorized data sharing
+- **Session controls**: Use real-time session monitoring and controls for sensitive operations
+
+## Implement continuous baseline monitoring
+
+Specifying a security baseline is only effective when you monitor compliance and remediate drift. Use [Microsoft Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction) to:
+
+- Assess resources against MCSB controls automatically
+- View compliance status in the regulatory compliance dashboard
+- Generate recommendations for configuration gaps
+- Track secure score to measure security posture improvements
+
+Enable the Foundational CSPM (Cloud Security Posture Management) plan to assess resources against the Microsoft cloud security benchmark. For enhanced capabilities, enable paid Defender plans that provide workload-specific threat protection for servers, storage, databases, and containers.
+
+Schedule regular security tests including penetration testing and vulnerability scanning. Use automated tools to detect configuration drift and enforce remediation to maintain baseline compliance across your cloud environment.

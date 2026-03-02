@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.optimize-generative-ai-model-performance.exercise
+title: Exercise - Optimize generative AI model performance
+metadata:
+  title: Exercise - Optimize generative AI model performance
+  description: Exercise - Optimize generative AI model performance using Microsoft Foundry.
+  author: ivorb
+  ms.author: berryivor
+  ms.date: 02/24/2026
+  ms.topic: unit
+  ai-usage: ai-assisted
+durationInMinutes: 60
+content: |
+  [!include[](includes/6-exercise.md)]

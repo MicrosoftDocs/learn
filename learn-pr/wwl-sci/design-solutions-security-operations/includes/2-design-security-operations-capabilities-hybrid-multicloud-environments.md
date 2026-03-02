@@ -1,186 +1,146 @@
-Hybrid, multicloud, and edge deployment approaches often lead to increases in operating costs. The unexpected increase in cost is the result of duplicated or disparate operations, with one set of operating practices per cloud provider. **Unified operations** is the intentional approach of maintaining one set of tools and processes to consistently manage each cloud provider through a common set of governance and operations management practices.
+Organizations operating across hybrid, multicloud, and edge environments face unique challenges in security monitoring. Designing effective monitoring solutions requires a unified approach that extends visibility and control across all environments while optimizing costs and reducing operational complexity.
 
-<!-- 
-[](/azure/cloud-adoption-framework/scenarios/hybrid/unified-operations#understand-and-minimize-costs-through-unified-operations)
--->
+**Monitoring** focuses on real-time visibility into system health, performance, and security threats. It answers the question "What's happening now?" and enables immediate detection and response. **Logging** focuses on recording events for later analysis, compliance, and forensics—answering "What happened?" These are complementary capabilities, and monitoring solutions may also provide logging capabilities in support of a unified platform. This unit focuses on the real-time monitoring aspects; the next unit covers logging and auditing in detail, including workspace design and data retention strategies.
 
-## Understand and minimize costs through unified operations
+## Design guidance for hybrid and multicloud monitoring
 
-In hybrid and multicloud strategies, the first increase in overhead costs might be duplicated cloud platform utilities: network, identity, governance, security, and operations tooling. In the longer term, business challenges could emerge, such as staffing core functions or teams with the required skills to manage diverse environments.
+When designing monitoring solutions for hybrid and multicloud environments, consider these best practices from the Microsoft Cloud Security Benchmark and Cloud Adoption Framework:
 
-Hybrid and multicloud strategies lead many decision makers to incorrectly conclude that the cloud is more expensive than on-premises technologies. A recent Forrester Consulting study, commissioned by Microsoft, found that a hybrid and multicloud strategy can provide significant [three-year return on investment, and substantial avoided on-premises infrastructure and staff costs](https://azure.microsoft.com/resources/forrester-tei-microsoft-azure-iaas/) for organizations. An Accenture and WSP environment and energy study further concluded that cloud solutions add increased energy efficiencies for large deployments. Organizations using cloud solutions [reduce energy use and carbon emissions by more than 30 percent against business applications installed on-premises](https://download.microsoft.com/download/7/3/9/739BC4AD-A855-436E-961D-9C95EB51DAF9/Microsoft_Cloud_Carbon_Study_2018.pdf). For small deployments, cloud solutions reach over 90 percent reductions with a shared cloud service.
-
-Organizations can modernize and optimize overall operations using a simple approach to overcoming risks, overhead cost increases, or challenges related to staffing core functions. The _Unified operations_ approach provides hybrid, multicloud, and edge cloud strategies that reduce short-term duplication and long-term strain on your technology staff. This article describes the provider-neutral approach of using unified operations to extend a single enterprise control plane across distributed assets in hybrid, multicloud, and edge environments.
-
-More articles will follow that outline the Azure approach to unified operations: delivering [governance](/azure/cloud-adoption-framework/scenarios/hybrid/govern) and [operations management](/azure/cloud-adoption-framework/scenarios/hybrid/manage) across heterogeneous hybrid, multicloud, and edge environments. The overall goal in an Azure-specific approach to unified operations is to inventory, organize, and govern IT assets anywhere, on any infrastructure. This centralized enterprise control plane provides a consistent cloud operations management experience across on-premises, multicloud, and edge environments.
-<!-- 
-[](/azure/cloud-adoption-framework/scenarios/hybrid/unified-operations#primary-cloud-platform)
--->
-
-
-## Primary cloud platform
-
-Successful hybrid, multicloud, and edge strategies begin with a primary cloud platform.
-
-Whether located in a public or private cloud, your primary cloud platform hosts your operational processes, along with a set of defined cloud facilities. In Azure, those facilities are [Azure regions](https://azure.microsoft.com/global-infrastructure/), whereas on-premises, they could be datacenters. These facilities host the cloud services necessary to manage core operations, and to support other workloads hosted on the platform. Your primary cloud platform also includes a series of controls designed to support operations within that cloud.
-
-<!-- 
-[](/azure/cloud-adoption-framework/scenarios/hybrid/unified-operations#define-unified-operations)
--->
-
-
-## Define unified operations
-
-The concept behind how the unified operations approach works is: implement an extension, or gateway, in order to apply the controls in your primary cloud provider across your hybrid, multicloud, or edge deployments. Manage and govern your operations consistently across heterogeneous on-premises, multicloud, and edge environments.
-
-When you implement unified operations, a single enterprise control plane extends across your organization's distributed assets. The single enterprise control plane provides consistent management, application development, and cloud services to any infrastructure, anywhere, at scale. When you enable consistent management and governance for organizations, a gateway with such cloud controls extends consistent operations management and data services across disparate on-premises, multicloud, and edge environments.
-
-When identifying your primary cloud platform, it's important to ensure that cloud has the necessary toolsets to manage all the clouds in your portfolio. Many cloud platforms were designed and built before operations required hybrid, multicloud, or edge deployment options. Insufficient capabilities in current operation tools can require operations teams to replicate processes-using different cloud controls to manage cloud services across each cloud platform. If your cloud strategy calls for hybrid, multicloud, or edge deployment options **and** your primary cloud platform doesn't support them, consider a platform that can deploy the requisite functionalities for unified operations.
-<!-- 
-[](/azure/cloud-adoption-framework/scenarios/hybrid/unified-operations#unified-operations)
--->
-
-
-## Unified operations
-
-A single cloud management and operations experience across your portfolio of distributed, scaled assets supports an integrated hybrid and multicloud strategy. This implementation increases your organization's future innovation, agility, and business growth. Adding a gateway for cloud controls that extend management and data services to on-premises, multicloud, and the edge, enables consistent management and governance for organizations. An integral hybrid and multicloud strategy can increase your organization's future innovation, agility, and business growth, anywhere. Implement an extension (or gateway) in order to apply the controls in your primary cloud provider across your hybrid, multicloud, or edge deployments.
+- **Establish a primary cloud platform** that serves as your enterprise control plane for consistent management across all environments.
+- **Implement unified operations** to maintain one set of tools and processes across cloud providers, reducing duplicated efforts and staffing challenges.
+- **Extend governance and operations** using cloud controls that can reach on-premises, multicloud, and edge deployments.
+- **Design for data residency and compliance** requirements that may dictate where monitoring data must be stored.
 
 ![Diagram that shows how unified operations extends cloud controls to hybrid, multicloud, and edge deployments.](../media/primary-cloud-provider-extended.png)
 
+## Microsoft solutions for hybrid and multicloud monitoring
 
-If you use an inconsistent approach to implementing unified operations, it can multiply cost inefficiencies for your organization-with increased operating costs (from duplicated cloud platform utilities, or operations tooling). It can also have negative business impacts (staffing teams without the necessary cloud skilling in place).
+Microsoft provides an integrated approach to monitoring that extends Azure's capabilities across all environments through Azure Arc and the unified security operations platform.
 
-If your current primary cloud provider doesn't offer the required capabilities for unified operations, consider optimizing your operations and processes using a modern cloud provider.
-<!-- 
-[](/azure/cloud-adoption-framework/scenarios/hybrid/unified-operations#unified-operations-decomposed)
--->
+### Azure Arc as the foundation
 
+Azure Arc extends the Azure platform to manage and govern infrastructure across on-premises, multicloud, and edge environments:
 
-## Unified operations decomposed
+- **Unified resource management** by projecting non-Azure resources into Azure Resource Manager
+- **Consistent policy enforcement** using Azure Policy across Azure, on-premises, AWS EC2, and GCP VM instances
+- **Centralized monitoring** through Azure Monitor for all connected resources regardless of location
+- **Inventory and visibility** with a cloud-based inventory bringing together Azure and hybrid infrastructure
 
-The following image shows the individual components required for unified operations, and how they interact with each other. The following sections provide details on each unified operations component.
+### Azure Monitor for unified observability
 
-![Diagram that shows the components required to deliver unified operations (outlined in the remainder of this article).](../media/unified-operations.png)
-<!-- 
-[](/azure/cloud-adoption-framework/scenarios/hybrid/unified-operations#customer-processes)
--->
+Azure Monitor provides comprehensive monitoring for resources across cloud and on-premises environments. While Azure Monitor supports both real-time monitoring and log collection, this section focuses on the monitoring capabilities. Log Analytics workspace design and log retention strategies are covered in the next unit.
 
+| Capability | Description |
+|------------|-------------|
+| **Metrics** | Collect and analyze numerical performance data from Azure, on-premises, and multicloud sources for real-time visibility |
+| **VM insights** | Monitor operating system performance and discover application components across hybrid machines |
+| **Container insights** | Use Azure Arc-enabled Kubernetes for consistent monitoring of AKS, AWS EKS, and GCP GKE clusters |
+| **Dashboards and workbooks** | Visualize real-time performance metrics and create interactive reports for operational visibility |
 
-## Customer processes
+The Azure Monitor agent can be deployed to both Azure VMs and Azure Arc-enabled servers, using the same data collection rules across all environments.
 
-The primary objective of unified operations is to create as much process consistency as possible across deployments. No cloud service provider can reach 100% feature parity across all hybrid, multicloud, and edge deployments. But the provider should be able to deliver baseline feature sets common across all deployments, so that your [governance](/azure/cloud-adoption-framework/scenarios/hybrid/govern) and [operations management](/azure/cloud-adoption-framework/scenarios/hybrid/manage) processes remain consistent.
+### Data collection rules for hybrid environments
 
-![Diagram that shows the customer processes that unified operations support.](../media/unified-operations-customer-processes.png)
+Data collection rules (DCRs) define what telemetry to collect and where to send it, enabling consistent monitoring across hybrid and multicloud environments. From a monitoring perspective, DCRs enable:
 
-Most commonly, customers require the ability to deliver consistency within their defined governance and operations management processes. To meet long-term requirements, your unified operations solution needs to scale to meet these common processes, specified in the following section.
-<!-- 
-[](/azure/cloud-adoption-framework/scenarios/hybrid/unified-operations#common-governance-processes-tasks)
--->
+- **Consistent telemetry collection** - Apply the same collection configuration to Azure VMs, Arc-enabled servers in AWS/GCP, and on-premises machines
+- **Real-time data routing** - Stream performance counters and security events to Azure Monitor for immediate alerting and visualization
+- **Data transformation** - Filter and transform data before ingestion to focus on security-relevant telemetry
 
+DCRs ensure that security teams have consistent visibility across all environments, regardless of where resources are hosted.
 
-### Common governance processes tasks
+### Alerting for hybrid and multicloud resources
 
--   **Cost management:** View, manage, or optimize costs, and identify and provide mitigation guidance for cloud-related IT spend risk.
--   **Security baseline:** Audit, apply, or automate requirements from recommended security controls, and identify and provide mitigation guidance for security-related business risks.
--   **Resource consistency:** Onboard, organize, and configure resources and services, and identify and provide risk mitigation guidance for potential business risks.
--   **Identity baseline:** Enforce authentication and authorization across user identity and access, and identify and provide risk-mitigation guidance for potential identity-related business risks.
--   **Deployment acceleration:** Drive consistency using templates, automation, and pipelines (for deployments, configuration alignment, and reusable assets). Establish policies to ensure compliant, consistent, and repeatable resource deployment and configuration.
-<!-- 
-[](/azure/cloud-adoption-framework/scenarios/hybrid/unified-operations#common-operations-management-processes-tasks)
--->
+Azure Monitor provides alerting capabilities that work consistently across hybrid environments:
 
+| Alert type | Use case |
+|------------|----------|
+| **Metric alerts** | Near-real-time alerts comparing collected values to static or dynamic thresholds using machine learning |
+| **Log search alerts** | Identify issues by analyzing log data across multiple servers using KQL queries |
+| **Activity log alerts** | Monitor Azure resource operations and service health events |
 
-### Common operations management processes tasks
+Alerts can trigger action groups to notify teams, run automation runbooks, or invoke Logic Apps for automated remediation.
 
--   **Inventory and visibility:** Account for, and ensure reporting for all assets, and collect and monitor your inventory's run state in enterprise-grade environments.
--   **Optimized operations:** Track, patch, and optimize supported resources and minimize business interruption risks from configuration drift or vulnerabilities from inconsistent patch management.
--   **Protection and recovery:** Backup, business continuity, and disaster recovery best practices reduce the duration and impact of unpreventable outages.
--   [Platform operations](/azure/cloud-adoption-framework/manage/azure-management-guide/platform-specialization): Specialized operations for common technology platforms such as SQL databases, virtual desktops, and SAP (for medium to high criticality workloads).
--   [Workload operations](/azure/cloud-adoption-framework/manage/azure-management-guide/workload-specialization): Specialized operations (for high priority/mission-critical workloads) with greater operations requirements.
+### Multicloud monitoring with Microsoft Defender for Cloud 
 
-Platform and workload operations both run an equivalent _iterative process_ to improve system design, automate remediation, scale changes with a service catalog, and continuously improve system design, automation, and scale.
+Microsoft Defender for Cloud provides continuous security monitoring across Azure, AWS, and GCP environments:
 
-Your primary cloud platform should be able to provide the required technical capabilities and tooling to automate processes, and reach the goals described in the previous section for governance and operations management. Your unified operations solution should enable you to extend these processes across all hybrid, multicloud, and edge deployments.
-<!-- 
-[](/azure/cloud-adoption-framework/scenarios/hybrid/unified-operations#primary-cloud-controls)
--->
+- **Real-time threat detection** generates security alerts when suspicious activities or threats are detected on workloads across all connected cloud environments
+- **Workload protection monitoring** through Defender plans (Defender for Servers, Containers, Databases) that continuously monitor resources for vulnerabilities and attacks
+- **Auto-provisioning of monitoring agents** automates deployment of the Azure Arc agent and Azure Monitor agent to AWS EC2 and GCP VM instances, enabling consistent security telemetry collection
+- **Security alerts integration** with Azure Monitor and Microsoft Sentinel for centralized alert management, correlation, and response across hybrid environments
 
+### Monitoring AI workloads
 
-## Primary cloud controls
+Organizations deploying generative AI applications require specialized monitoring. **Microsoft Defender for AI Services** provides real-time threat detection for AI workloads:
 
-Your primary cloud platform should include important features to facilitate or automate the customer processes typically required in the cloud.
+| Capability | Description |
+|------------|-------------|
+| **Prompt injection detection** | Identifies attempts to manipulate AI models through malicious prompts |
+| **Jailbreak monitoring** | Detects attempts to bypass AI safety controls |
+| **Data leakage alerts** | Monitors for sensitive data exposure through AI responses |
+| **Credential theft detection** | Identifies attempts to extract credentials or secrets through AI interactions |
 
-![Diagram that shows the common cloud controls, outlined in the following bullets.](../media/unified-operations-cloud-controls.png)
-<!-- 
-[](/azure/cloud-adoption-framework/scenarios/hybrid/unified-operations#basic-features)
--->
+Defender for AI Services integrates with the Defender XDR portal, allowing security teams to correlate AI workload alerts with other security incidents. When designing monitoring for environments with Azure OpenAI or Azure AI Model Inference services, include these AI-specific threat detection capabilities in your security operations architecture.
 
+### Centralized monitoring visibility in the Defender portal
 
-### Basic features
+The Microsoft Defender portal provides a unified view of security monitoring data across hybrid and multicloud environments. From a monitoring design perspective, this centralization enables:
 
-All these basic features are required in order to deliver a cloud adoption plan, at scale:
+- **Single pane of glass** for security alerts from Azure, AWS, GCP, and on-premises resources
+- **Correlated incident view** that combines alerts from multiple sources into unified incidents
+- **Real-time dashboards** displaying threat detection status across all connected environments
+- **Integrated alert management** with alerts from Defender for Cloud, Microsoft Sentinel, and Defender XDR services visible in one location
 
--   **Search, index, group, and tag** all deployed assets, extending basic visibility and management.
--   **Templatize, automate, and extend tooling** for consistent deployments.
--   **Create access and security boundaries** to protect deployed assets.
-<!-- 
-[](/azure/cloud-adoption-framework/scenarios/hybrid/unified-operations#enhanced-features)
--->
+This centralized visibility eliminates the need for security teams to switch between multiple consoles when monitoring hybrid environments, reducing mean time to detect (MTTD) threats.
 
+> [!NOTE]
+> This unit focuses on infrastructure monitoring across hybrid and multicloud environments. Microsoft 365 productivity workloads (email, files, identity, collaboration) have their own monitoring capabilities through Microsoft Defender XDR services, and are covered in [Design solutions for securing Microsoft 365](/training/modules/design-solutions-secure-microsoft-365/). The Defender portal serves as the convergence point where infrastructure and productivity monitoring combine for unified incident correlation and response.
 
-### Enhanced features
+## Architect-level design considerations
 
-You'll likely need most, if not all, of the following enhanced features to operate a hybrid and multicloud environment at scale:
+### Workspace architecture decisions
 
--   **Performance and inventory reporting**
--   **Security and compliance auditing and automation**
--   **Tracking and reporting on applications and dependencies**
-<!-- 
-[](/azure/cloud-adoption-framework/scenarios/hybrid/unified-operations#automated-controls)
--->
+As a cybersecurity architect, workspace topology is a key decision that affects both monitoring and logging effectiveness. From a monitoring perspective, consider:
 
+- **Threat correlation** - Security analysts need to correlate events across identities, endpoints, and network traffic. Data in separate workspaces requires cross-workspace queries, which are slower and more complex.
+- **Alert context** - When an alert fires, analysts need the surrounding context from related logs. Fragmented workspaces mean analysts may miss critical context during investigations.
+- **Detection rules** - Analytics rules and detection logic work most efficiently when all relevant data sources are in the same workspace.
 
-### Automated controls
+The next unit covers workspace architecture in more depth, including log retention tiers, cost optimization, and compliance considerations.
 
-Automate your environment with tools to modernize your operations and optimize operational costs:
+### Agent deployment strategy at scale
 
--   **Environment and in-guest policy**
--   **Configuration and updates**
--   **Protection and recovery**
+Deploying the Azure Monitor agent consistently across hybrid environments ensures complete monitoring coverage. For non-Azure machines, the Azure Arc agent must be installed first to enable Azure Monitor agent deployment. Design your agent deployment approach based on environment characteristics:
 
-These features are likely already included in the control sets you're currently using to operate your primary cloud provider. There are likely many other features and automated processes available in that set of controls. Those features are the primary control functionalities that should be available across hybrid, multicloud, and edge in your unified operations solution.
+- **Azure Policy with remediation tasks** - Automatically deploy Azure Monitor agent to Arc-enabled servers that don't have it installed. Best for enforcing consistent monitoring across large estates.
+- **Defender for Cloud auto-provisioning** - Automatically deploys Arc agent and monitoring extensions to AWS EC2 and GCP VM instances when connectors are configured. Simplifies multicloud onboarding.
 
-It's because they're implemented as primary controls that the features above are the ones that commonly lead to fractured or duplicated operations. As mentioned before, an inconsistent approach to implementing unified operations can:
+> [!TIP]
+> Use Azure Resource Graph queries to identify monitoring coverage gaps—resources that are Arc-enabled but missing the Azure Monitor agent or required data collection rules. For sample queries, see [Azure Resource Graph sample queries for Azure Arc-enabled servers](/azure/azure-arc/servers/resource-graph-samples).
 
--   Increase operating costs (for example, duplicated cloud platform utilities, operations tooling)
--   Multiply cost inefficiencies for your organization
--   Incur significant capital expenditures in the early phase of the cloud adoption journey
-<!-- 
-[](/azure/cloud-adoption-framework/scenarios/hybrid/unified-operations#hybrid-multicloud-gateway-and-enterprise-control-plane)
--->
+### Monitoring coverage and resilience
 
+Plan for scenarios where monitoring agents may be unavailable:
 
-### Hybrid, multicloud gateway, and enterprise control plane
+- **Agent health monitoring** - Configure alerts for agent heartbeat failures to detect offline Arc-enabled servers
+- **Connectivity requirements** - Arc agents require outbound HTTPS (443) to Azure endpoints; plan network architecture accordingly
+- **Graceful degradation** - Azure Monitor agent caches data locally during temporary disconnections and syncs when connectivity is restored
 
-To extend your primary cloud controls, configure an extension or gateway. This type of extension lets your controls see and interact with resources that are deployed outside the cloud platform and creates one control plane and greater visibility across disparate, heterogeneous environments.
+### Network architecture considerations
 
-In Microsoft's cloud platforms, [Azure Arc](/azure/azure-arc/overview) is the extension. Azure Arc extends the same controls and processes you use to govern your Azure cloud to other public and private clouds and the edge. It's these cloud controls that enable a unified operations approach to consistent governance and operations management processes across heterogeneous on-premises, multicloud, and edge environments.
+- Design network connectivity using VPNs, ExpressRoute, or private endpoints for secure telemetry transfer
+- Use Azure Private Link for Log Analytics workspaces to keep monitoring traffic off the public internet
+- Plan for network latency when determining workspace placement—high latency can affect real-time alerting
 
-Unified operations extends the reach of [Azure Resource Manager (ARM)](/azure/azure-resource-manager/management/overview), the _operating system_ of Azure. ARM reaches outside Azure to bring scattered resources inside Azure and represent them. By bringing Azure services and management to any kind of infrastructure, the unified operations approach extends Azure's reach, and enables new hybrid and multicloud solutions.
+## Design considerations summary
 
-When you use a unified operations approach, you can organize, govern, and secure any environment anywhere, with centralized visibility, operations, and compliance. Build cloud applications, anywhere, at scale, with standardized application services, from deployment to monitoring. Deploy Azure services anywhere, faster, consistently, and at scale with always-up-to-date Azure Arc enabled services.
+| Factor | Consideration |
+|--------|---------------|
+| **Data residency** | Regulatory requirements may dictate where monitoring data is stored |
+| **Latency** | Place workspaces close to monitored resources when performance is critical |
+| **Cost** | Balance centralization benefits against egress and ingestion costs |
+| **Access control** | Design RBAC to support operational teams across different environments |
+| **Scalability** | Plan for growth as more resources are connected across environments |
 
-Building, operating, and managing across traditional, cloud-native, and distributed edge applications with consistent controls and processes extends cloud innovations to scattered assets. You can unlock new hybrid and multicloud scenarios to support:
-
--   Simplified management
--   Faster application development
--   Consistent Azure services
-
-These scenarios extend to all resource environments, on any infrastructure, across your entire IT estate.
-
-A central Azure control plane that focuses on standardization, interoperability, and compliance provides the following benefits across your hybrid and multicloud infrastructures:
-
--   Enables consistent visibility and uniform governance and operations management
--   Increases productivity
--   Reduces risks
--   Accelerates cloud adoption and migration practices and technologies for organizations
+For organizations with multiple tenants or subsidiaries, Azure Lighthouse enables centralized management while maintaining data sovereignty and compliance boundaries.

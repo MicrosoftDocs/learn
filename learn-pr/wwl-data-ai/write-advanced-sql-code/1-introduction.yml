@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.write-advanced-sql-code.introduction
+title: Introduction
+metadata:
+  title: Introduction to advanced T-SQL coding techniques
+  description: Learn why advanced T-SQL features like CTEs, window functions, JSON, regex, and error handling are essential for modern database development.
+  ms.date: 01/28/2026
+  author: JulianePadrao
+  ms.author: jupadrao
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/1-introduction.md)]

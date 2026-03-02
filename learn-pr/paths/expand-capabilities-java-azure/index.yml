@@ -73,7 +73,6 @@ modules:
 - learn.azure.deploy-java-ee-app-to-app-service
 # Kafka
 - learn.azure.azure-java-app-enable-authentication-authorization
-- learn.store-app-data-with-azure-blob-storage
 # Microservices auth/auth
 trophy:
   uid: learn.expand-capabilities-java-azure.trophy

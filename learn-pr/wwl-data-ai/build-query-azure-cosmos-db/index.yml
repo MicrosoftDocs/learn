@@ -1,0 +1,43 @@
+### YamlMime:Module
+uid: learn.wwl.build-query-azure-cosmos-db
+metadata:
+  title: Build Queries for Azure Cosmos DB for NoSQL
+  description: Learn how to connect to Azure Cosmos DB for NoSQL, use the SDK to perform CRUD operations, and write SQL queries to retrieve document data for AI applications.
+  ms.date: 02/05/2026
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: module-standard-task-based
+  ai-usage: ai-assisted
+  ms.service: azure-cosmos-db
+title: Build queries for Azure Cosmos DB for NoSQL
+summary: Learn how to connect to Azure Cosmos DB for NoSQL using the SDK, perform data operations on items, and write efficient SQL queries to retrieve document data for AI applications.
+abstract: |
+  After completing this module, you'll be able to:
+    - Explain the Azure Cosmos DB for NoSQL resource model and how databases, containers, and items relate to each other
+    - Implement SDK operations to connect to Azure Cosmos DB and perform CRUD operations on items
+    - Select between point reads and queries based on performance requirements and access patterns
+    - Build queries using SQL syntax to filter, project, and retrieve data from containers
+prerequisites: |
+  Before beginning this module, you should have:
+  - Programming experience with Python
+  - Basic understanding of Azure services and cloud computing concepts
+  - Familiarity with JSON document structures
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- azure-cosmos-db
+subjects:
+- databases
+units:
+- learn.wwl.build-query-azure-cosmos-db.introduction
+- learn.wwl.build-query-azure-cosmos-db.explore-cosmos-db-nosql
+- learn.wwl.build-query-azure-cosmos-db.implement-cosmos-db-sdk
+- learn.wwl.build-query-azure-cosmos-db.query-cosmos-db-nosql
+- learn.wwl.build-query-azure-cosmos-db.exercise-build-rag-document-store
+- learn.wwl.build-query-azure-cosmos-db.knowledge-check
+- learn.wwl.build-query-azure-cosmos-db.summary
+badge:
+  uid: learn.wwl.build-query-azure-cosmos-db.badge

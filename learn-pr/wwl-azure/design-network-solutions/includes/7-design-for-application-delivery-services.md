@@ -28,9 +28,6 @@ The different load balancers can work together in your networking architecture.
 - Support WAF and CDN integration for HTTP(S) traffic.
 - Support for content delivery services. 
 
-> [!Tip]
-> Learn more with the [Introduction to Azure Front Door](/training/modules/intro-to-azure-front-door/) training module. 
-
 ### Azure Traffic Manager
 
 [Azure Traffic Manager](/azure/traffic-manager/traffic-manager-overview) is a DNS-based traffic load balancer that enables you to distribute traffic optimally to services across global Azure regions, while providing high availability and responsiveness. Traffic Manager provides a range of traffic-routing methods to distribute traffic such as priority, weighted, performance, geographic, multi-value, and subnet. 

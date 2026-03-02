@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-implement-database-objects.exercise-create-database-objects
+title: Exercise - Create and maintain database objects
+metadata:
+  title: Exercise - Create and maintain database objects
+  description: "Hands-on exercise to create and maintain database objects"
+  ms.date: 02/24/2026
+  author: JulianePadrao
+  ms.author: jupadrao
+  ms.topic: unit
+azureSandbox: true
+labModal: true
+durationInMinutes: 15
+content: |
+  [!include[](includes/9-exercise-create-database-objects.md)]

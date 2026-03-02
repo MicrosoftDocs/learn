@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-data-loss-prevention-create-manage-policies.policy-intent
+title: Understand how DLP policy decisions fit together
+metadata:
+  title: Understand how DLP policy decisions fit together
+  description: "Understand how DLP policy decisions fit together"
+  ms.date: 01/27/2026
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/policy-intent.md)]

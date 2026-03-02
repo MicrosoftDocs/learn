@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.wwl.introduction-language
 metadata:
-  title: Introduction to text analysis concepts
+  title: Introduction to natural language processing concepts
   description: "Natural language processing (NLP) supports applications that can analyze text to infer semantic meaning."
   ms.date: 12/16/2025
   ms.update-cycle: 180-days
@@ -13,7 +13,7 @@ metadata:
   - N/A
   ms.service: azure-ai-language
   ai-usage: ai-assisted
-title: Introduction to text analysis concepts
+title: Introduction to natural language processing concepts
 summary: Natural language processing (NLP) supports applications that can analyze text to infer semantic meaning.
 abstract: Explore concepts and techniques for text analysis.
 prerequisites: A basic understanding of machine learning and AI concepts.

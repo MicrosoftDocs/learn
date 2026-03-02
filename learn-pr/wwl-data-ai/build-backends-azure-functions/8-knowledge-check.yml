@@ -1,0 +1,73 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.build-backends-azure-functions.knowledge-check
+title: Module assessment
+metadata:
+  title: Module Assessment
+  description: Module assessment
+  ms.date: 02/13/2026
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: unit
+durationInMinutes: 5
+content: "Choose the best response for each of the following questions."
+quiz:
+  questions:
+  - content: "Your AI inference function experiences cold start latency of several seconds because it loads large ML libraries and initializes connections to Azure AI services. You need to reduce latency for the first request while keeping costs low during idle periods. Which approach should you use?"
+    choices:
+    - content: "Use the Flex Consumption plan with always-ready instances configured for the function"
+      isCorrect: true
+      explanation: "Correct. The Flex Consumption plan's always-ready feature lets you keep a minimum number of warm instances for latency-sensitive functions while other functions scale to zero. This provides cold start mitigation for critical endpoints without paying for always-on infrastructure across the entire app."
+    - content: "Use the Consumption plan with increased function timeout settings"
+      isCorrect: false
+      explanation: "Incorrect. The Consumption plan doesn't provide always-ready instances, and function timeout settings don't affect cold start behavior. Timeout settings only control how long a function can run after it starts executing."
+    - content: "Use the Premium plan with pre-warmed workers disabled"
+      isCorrect: false
+      explanation: "Incorrect. Disabling pre-warmed workers in the Premium plan would expose the function to cold starts. The Premium plan's value for eliminating cold starts comes from its pre-warmed workers, which keep at least one instance always running."
+
+  - content: "You're setting up a local development environment for Azure Functions. Your function app uses a Service Bus queue trigger, but you notice the trigger doesn't fire when you run the function locally. What is the most likely cause?"
+    choices:
+    - content: "The AzureWebJobsStorage setting in local.settings.json isn't configured with a valid storage connection"
+      isCorrect: true
+      explanation: "Correct. The Azure Functions runtime requires a storage account connection (AzureWebJobsStorage) to manage internal operations such as trigger coordination and state tracking. Without a valid connection to Azure Storage or the Azurite emulator, non-HTTP triggers like Service Bus triggers don't work locally."
+    - content: "The function app needs to be deployed to Azure before Service Bus triggers can be tested"
+      isCorrect: false
+      explanation: "Incorrect. Service Bus triggers can be tested locally using Azure Functions Core Tools, provided the runtime storage dependency is configured and a valid Service Bus connection string is available. Local testing doesn't require deployment to Azure."
+    - content: "Visual Studio Code doesn't support debugging Service Bus-triggered functions"
+      isCorrect: false
+      explanation: "Incorrect. Visual Studio Code with the Azure Functions extension fully supports debugging Service Bus-triggered functions locally. The extension attaches the debugger to Core Tools, which processes all supported trigger types."
+
+  - content: "Your function processes documents asynchronously. An HTTP endpoint accepts requests, writes messages to a Service Bus queue, and a separate queue-triggered function performs the processing. You want to configure the queue trigger to process one message at a time per instance to maximize CPU and memory available for each document. Which configuration should you use?"
+    choices:
+    - content: "Set maxConcurrentCalls to 1 in the serviceBus section of host.json"
+      isCorrect: true
+      explanation: "Correct. The maxConcurrentCalls property in host.json controls how many messages each instance processes simultaneously. Setting it to 1 ensures each message gets the full instance resources, which is appropriate for resource-intensive AI processing tasks."
+    - content: "Set batchSize to 1 in the serviceBus section of host.json"
+      isCorrect: false
+      explanation: "Incorrect. The batchSize property applies to Azure Storage Queue triggers, not Service Bus triggers. Service Bus triggers use maxConcurrentCalls to control parallel message processing per instance."
+    - content: "Set maxDequeueCount to 1 on the Service Bus queue resource"
+      isCorrect: false
+      explanation: "Incorrect. maxDeliveryCount (not maxDequeueCount) is configured on the Service Bus queue resource and controls how many times a message is retried before moving to the dead-letter queue. It doesn't affect concurrency within the function."
+
+  - content: "You need to store an API key for an Azure AI service in your function app's configuration. The security team requires that the key be stored in Azure Key Vault and rotated regularly without requiring application redeployment. Which approach meets these requirements?"
+    choices:
+    - content: "Create a Key Vault reference in the application setting using a versionless secret URI"
+      isCorrect: true
+      explanation: "Correct. Key Vault references with versionless URIs automatically resolve to the latest secret version. The runtime re-resolves references periodically (within 24 hours) or immediately when any configuration change triggers an app restart, allowing rotated secrets to be picked up without redeploying the application."
+    - content: "Create a Key Vault reference in the application setting using a versioned secret URI"
+      isCorrect: false
+      explanation: "Incorrect. A versioned secret URI pins the reference to a specific secret version. When the secret is rotated, you must update the application setting with the new version identifier, which requires manual intervention and doesn't meet the requirement to avoid redeployment."
+    - content: "Store the API key directly in the application setting with encryption enabled"
+      isCorrect: false
+      explanation: "Incorrect. While Azure encrypts application settings at rest, storing the key directly in application settings doesn't meet the requirement to store it in Key Vault. When the key rotates, you must update the application setting manually."
+
+  - content: "You're configuring identity-based connections for a Service Bus trigger in your function app. You've enabled a system-assigned managed identity and set ServiceBusConnection__fullyQualifiedNamespace to your namespace. The function fails to receive messages. What role assignment is missing?"
+    choices:
+    - content: "Azure Service Bus Data Receiver on the Service Bus namespace"
+      isCorrect: true
+      explanation: "Correct. Identity-based connections for Service Bus triggers require the Azure Service Bus Data Receiver role to be assigned to the function app's managed identity on the Service Bus namespace. This role grants permission to receive messages from queues and subscriptions."
+    - content: "Azure Service Bus Data Owner on the Service Bus namespace"
+      isCorrect: false
+      explanation: "Incorrect. While Azure Service Bus Data Owner would grant sufficient permissions, it provides more access than necessary. The principle of least privilege recommends using Azure Service Bus Data Receiver for triggers that only need to receive messages."
+    - content: "Key Vault Secrets User on the Service Bus namespace"
+      isCorrect: false
+      explanation: "Incorrect. Key Vault Secrets User is a role for Azure Key Vault, not Service Bus. Identity-based connections to Service Bus use Service Bus-specific roles like Azure Service Bus Data Receiver."

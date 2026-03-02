@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.model-catalog-evaluate.explore-model-catalog
+title: Explore the model catalog
+metadata:
+  title: Explore the model catalog
+  description: Learn how to browse and filter models in the Microsoft Foundry portal model catalog.
+  ms.date: 02/13/2026
+  author: ivorb
+  ms.author: berryivor
+  ms.topic: unit
+  ai-usage: ai-assisted
+durationInMinutes: 7
+content: |
+  [!include[](includes/2-explore-model-catalog.md)]

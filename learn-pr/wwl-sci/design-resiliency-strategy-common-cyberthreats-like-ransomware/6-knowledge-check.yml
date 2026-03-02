@@ -12,7 +12,7 @@ metadata:
     - AI-contribution
   ai-usage: ai-assisted
   module_assessment: true
-durationInMinutes: 10
+durationInMinutes: 5
 ###########################################################################
 ###
 ### General guidance (https://review.learn.microsoft.com/learn-docs/docs/id-guidance-knowledge-check)

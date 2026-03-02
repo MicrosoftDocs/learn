@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-started-with-speech-in-azure.speech-synthesis
+title: Speech synthesis
+metadata:
+  title: Speech synthesis
+  description: "Speech synthesis"
+  ms.date: 02/13/2026
+  author: wwlpublish
+  ms.author: sheryang
+  ms.topic: unit
+  zone_pivot_groups: video-or-text
+durationInMinutes: 5
+content: |
+  [!include[](includes/3-speech-synthesis.md)]

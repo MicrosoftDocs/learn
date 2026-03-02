@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-data-loss-prevention-create-manage-policies.define-policy-detection
+title: Define what the policy detects
+metadata:
+  title: Define what the policy detects
+  description: "Define what the policy detects"
+  ms.date: 01/27/2026
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/define-policy-detection.md)]

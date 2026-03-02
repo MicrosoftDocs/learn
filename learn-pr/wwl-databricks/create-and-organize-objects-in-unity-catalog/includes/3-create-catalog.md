@@ -1,5 +1,7 @@
 Your organization's data governance policies require clear separation between **development**, **testing**, and **production** environments. You need production data in dedicated storage, development work isolated from live systems, and sensitive customer information protected from operational data. **Unity Catalog's catalog structure** helps you meet these requirements while maintaining centralized governance and access control.
 
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=991f545a-e419-4ff4-889b-a99e794a9de1]
+
 ## What is a catalog?
 
 A **catalog** is the **top-level container** in Unity Catalog's **three-layer namespace**. Think of it as the foundation of your data organization, like building a house before decorating the rooms inside. Every data asset in Unity Catalog exists within this hierarchy: `catalog.schema.table`.

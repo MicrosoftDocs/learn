@@ -1,6 +1,6 @@
 In this unit, you learn how to use Copilot on the Microsoft Quantum website to explore quantum computing and quantum programming. Copilot is an AI-powered tool that generates Q# code from your prompts and engages in conversations about quantum computing. You can also run your code and ask Copilot to explain quantum computing concepts.
 
-To start exploring Copilot and coding in Azure Quantum, use one of the samples from the **Quantum Samples** dropdown in the [code tool](https://quantum.microsoft.com/en-us/tools/quantum-coding).
+To start exploring Copilot and coding in Microsoft Quantum, use one of the samples from the **Quantum Samples** dropdown in the [code tool](https://quantum.microsoft.com/en-us/tools/quantum-coding).
 
 ## Run a quantum program
 

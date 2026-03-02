@@ -1,13 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.design-solutions-secure-applications.summary
-title: Summary - Design solutions for securing applications
+title: Summary
 metadata:
-  title: Summary - Design solutions for securing applications
-  description: "Summary of module on this topic: design solutions for securing applications."
-  ms.date: 3/14/2023
+  title: Summary
+  description: "Summary and resources for the module, Design solutions for securing applications."
+  ms.date: 02/10/2026
   author: ceperezb
   ms.author: ceperezb
   ms.topic: unit
-durationInMinutes: 3
+durationInMinutes: 4
 content: |
   [!include[](includes/10-summary.md)]

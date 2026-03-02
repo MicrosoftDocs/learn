@@ -3,11 +3,11 @@ uid: learn.wwl.design-solutions-secure-privileged-access.evaluate-access-review-
 title: Evaluate an access review management solution
 metadata:
   title: Evaluate an access review management solution
-  description: "SC-100 preparatory unit on the topic: Evaluate an access review management solution."
-  ms.date: 04/02/2025
+  description: "Learn to evaluate access review management solutions using Microsoft Entra access reviews, including multi-stage reviews for the SC-100 certification."
+  ms.date: 01/28/2026
   author: ceperezb
   ms.author: ceperezb
   ms.topic: unit
-durationInMinutes: 10
+durationInMinutes: 7
 content: |
   [!include[](includes/7-evaluate-access-review-management-solution.md)]

@@ -2,6 +2,8 @@ Naming conventions are fundamental to effective data governance in Azure Databri
 
 ## Understand Unity Catalog naming requirements
 
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=f26ca1fc-1218-4f52-b998-1e7a9c642af1]
+
 Unity Catalog imposes specific technical constraints on object names that you must follow when designing your naming conventions. These constraints ensure compatibility across the platform while supporting international characters and diverse organizational needs.
 
 All Unity Catalog object names are limited to 255 characters and are stored in lowercase, regardless of how you create them. This means `SalesData`, `salesdata`, and `SALESDATA` all resolve to the same object. When you reference objects in queries, Unity Catalog performs case-insensitive matching, simplifying query syntax while maintaining consistency.
@@ -11,6 +13,8 @@ Certain characters are prohibited in object names. You can't use periods (`.`), 
 Column names follow different rules. Unity Catalog preserves the casing you specify for column names, though queries remain case-insensitive. You can use special characters in column names by enclosing them in backticks, giving you flexibility for descriptive field names while maintaining query simplicity.
 
 ## Apply naming patterns for data organization
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=5beb1979-3ec1-4bf9-9104-e6db204d4391]
 
 Effective naming patterns balance descriptiveness with brevity, helping your team understand data purpose without creating unwieldy identifiers. The three-level namespace structure of Unity Catalog—`catalog.schema.table`—provides natural boundaries for applying meaningful conventions.
 
@@ -79,6 +83,8 @@ For **external sharing scenarios**, choose catalog names that are meaningful to 
 **External storage paths** should mirror your naming conventions for consistency. Following a pattern like `abfss://container@storage.dfs.core.windows.net/env/layer/domain/table/` aligns storage organization with Unity Catalog structure. For example, `abfss://datalake@company.dfs.core.windows.net/prod/gold/sales/monthly_revenue/` makes the relationship between storage and catalog objects transparent.
 
 ## Apply naming conventions for compute and development resources
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=40f8d028-dc75-4ed1-86dd-cc1ab75cf0b7]
 
 Beyond data objects, consistent naming conventions for compute resources, development artifacts, and operational components help you navigate the Azure Databricks workspace efficiently and maintain clear ownership boundaries.
 

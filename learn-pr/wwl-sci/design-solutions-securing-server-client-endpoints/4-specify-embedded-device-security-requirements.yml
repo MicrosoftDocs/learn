@@ -1,13 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.design-solutions-securing-server-client-endpoints.specify-embedded-device-security-requirements
-title: Specify internet of things (IoT) and embedded device security requirements
+title: Specify security requirements for IoT devices and embedded systems
 metadata:
-  title: Specify internet of things (IoT) and embedded device security requirements
-  description: "SC-100 preparatory unit on the topic: specify internet of things (IoT) and embedded device security requirements."
-  ms.date: 09/26/2024
+  title: Specify security requirements for IoT devices and embedded systems
+  description: "Learn how to specify security requirements for IoT devices and embedded systems including device identity, network segmentation, and threat detection."
+  ms.date: 02/07/2026
   author: ceperezb
   ms.author: ceperezb
   ms.topic: unit
-durationInMinutes: 10
+durationInMinutes: 11
 content: |
   [!include[](includes/4-specify-embedded-device-security-requirements.md)]

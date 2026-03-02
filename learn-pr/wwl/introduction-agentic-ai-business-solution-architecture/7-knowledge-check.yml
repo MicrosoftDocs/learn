@@ -1,0 +1,58 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.introduction-agentic-ai-business-solution-architecture.knowledge-check
+title: "Module assessment"
+metadata:
+  title: "Knowledge check"
+  description: "Knowledge check"
+  ms.date: 02/02/2026
+  author: Randall-Knapp
+  ms.author: taeldin
+  ai-usage: ai-assisted
+  ms.topic: unit
+  module_assessment: false
+durationInMinutes: 3
+content: "Choose the best response for each of the following questions."
+quiz:
+  questions:
+  - content: "Which of the following best describes the primary role of an architect in AI transformation for businesses?"
+    choices:
+    - content: "Developing machine learning models"
+      isCorrect: false
+      explanation: "Incorrect. While developing machine learning models is important, it is not the primary role of an architect in AI transformation."
+    - content: "Bridging business strategy and technical implementation"
+      isCorrect: true
+      explanation: "Correct. The primary role of an architect in AI transformation is to bridge business strategy and technical implementation."
+    - content: "Managing IT support tickets"
+      isCorrect: false
+      explanation: "Incorrect. Managing IT support tickets is not a responsibility of an AI architect."
+    - content: "Designing user interfaces"
+      isCorrect: false
+      explanation: "Incorrect. Designing user interfaces is not the primary role of an AI architect."
+  - content: "What is a key responsibility of an AI architect to ensure AI solutions are effective and aligned with business priorities?"
+    choices:
+    - content: "Defining the AI adoption vision and roadmap"
+      isCorrect: true
+      explanation: "Correct. Defining the AI adoption vision and roadmap ensures that AI solutions are effective and aligned with business priorities."
+    - content: "Writing code for AI models"
+      isCorrect: false
+      explanation: "Incorrect. Writing code for AI models is typically the responsibility of data scientists or developers, not the AI architect."
+    - content: "Building physical servers"
+      isCorrect: false
+      explanation: "Incorrect. Building physical servers is not a key responsibility of an AI architect."
+    - content: "Conducting end-user training only"
+      isCorrect: false
+      explanation: "Incorrect. While training may be part of the process, it is not the key responsibility of an AI architect."
+  - content: "Which best practice should architects follow to scale AI across the enterprise?"
+    choices:
+    - content: "Focus solely on technology upgrades"
+      isCorrect: false
+      explanation: "Incorrect. Focusing solely on technology upgrades does not address the broader needs of scaling AI across the enterprise."
+    - content: "Adopt modular and flexible design principles"
+      isCorrect: true
+      explanation: "Correct. Adopting modular and flexible design principles is a best practice for scaling AI across the enterprise."
+    - content: "Avoid collaboration with business leaders"
+      isCorrect: false
+      explanation: "Incorrect. Collaboration with business leaders is essential for successful AI scaling."
+    - content: "Implement AI without considering responsible AI principles"
+      isCorrect: false
+      explanation: "Incorrect. Responsible AI principles are critical for ethical and effective AI implementation."

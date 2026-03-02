@@ -33,6 +33,5 @@ subjects:
 modules:
 - learn.protect-on-premises-infrastructure-with-azure-site-recovery
 - learn.protect-virtual-machines-with-azure-backup
-- learn.build-app-with-scale-sets
 trophy:
   uid: learn.architect-migration-bcdr.trophy

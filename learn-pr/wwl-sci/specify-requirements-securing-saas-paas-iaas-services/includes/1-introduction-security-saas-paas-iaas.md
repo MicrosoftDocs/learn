@@ -1,36 +1,24 @@
-This module provides an overview of specifying security requirements for Software as a Service (SaaS), Infrastructure as a Service (IaaS) and Platform as a Service (PaaS) security. The module highlights Microsoft cloud security baselines for IoT Hub, App Service, Azure Kubernetes Service (AKS), and guidelines for securing Microsoft Azure OpenAI.
+As a security architect, you design security requirements for cloud workloads across Software as a Service (SaaS), Platform as a Service (PaaS), and Infrastructure as a Service (IaaS) deployment models. Each model shifts different responsibilities between your organization and the cloud provider, requiring you to specify appropriate security controls for the components you manage.
 
-Imagine you're a security engineer at a large multinational corporation. Your company has recently migrated its infrastructure to Azure and is using a mix of IaaS and PaaS services. You're tasked with ensuring the security of these services, but you're unsure where to start. You need to understand the best practices for securing IaaS and PaaS, as well as how to apply Azure's security baselines for IoT Hub, App Service, and AKS. Additionally, your company is exploring the use of Foundry Tools, including Azure OpenAI, so you need to know how to secure AI workloads.
+This module prepares you to specify security requirements for common Azure workloads including IoT devices, web applications, containers, and AI services. You learn how to apply the Microsoft Cloud Security Benchmark (MCSB) to establish security baselines and evaluate solutions against security best practices.
+
+## Scenario
+
+Your organization operates a diverse Azure environment with IoT devices collecting manufacturing data, web applications serving customers, containerized microservices, and AI-powered applications using Azure OpenAI. As the security architect, you must specify security requirements that protect each workload type while enabling business operations. You need to understand how the shared responsibility model affects your security obligations and how to apply security baselines consistently across different service types.
 
 ## Learning objectives
 
-In this module, you learn how to:
+By the end of this module, you're able to:
 
-* Specify security baselines for SaaS, PaaS, and IaaS services.
-* Specify security requirements for IoT workloads.
-* Specify security requirements for web workloads.
-* Specify security requirements for containers and container orchestration.
-* Specify security requirements for AI workloads.
-
-The content in the module helps you prepare for the certification exam SC-100: Microsoft Cybersecurity Architect.
+- Specify security baselines for SaaS, PaaS, and IaaS services using the Microsoft Cloud Security Benchmark
+- Specify security requirements for IoT workloads including device authentication, network isolation, and threat detection
+- Specify security requirements for web workloads including WAF protection, identity controls, and secure deployment
+- Specify security requirements for containers and container orchestration including AKS cluster security, image security, and pod security standards
+- Evaluate solutions that include Azure AI services security using MCSB v2 AI-specific controls
 
 ## Prerequisites
 
-- Advanced experience and knowledge in identity and access, platform protection, security operations, securing data, and securing applications.
-- Experience with hybrid and cloud implementations.
+- Advanced experience and knowledge in identity and access, platform protection, security operations, securing data, and securing applications
+- Experience with hybrid and cloud implementations
+- Familiarity with Azure services including Azure Kubernetes Service, App Service, IoT Hub, and Azure OpenAI
 
-## Shared responsibility in the cloud
-
-As you consider and evaluate public cloud services, it’s critical to understand the shared responsibility model and which security tasks are handled by the cloud provider and which tasks are handled by you (the customer). The workload responsibilities vary depending on whether the workload is hosted on Software as a Service (SaaS), Platform as a Service (PaaS), Infrastructure as a Service (IaaS), or in an on-premises datacenter.
-
-### Division of responsibility
-
-In an on-premises datacenter, you own the whole stack. As you move to the cloud some responsibilities transfer to Microsoft. The following diagram illustrates the areas of responsibility between you and Microsoft, according to the type of deployment of your stack.
-
-- For SaaS, Microsoft operates the application stack while you retain responsibility for data, user identities, access management, and tenant configuration. 
-- For PaaS, Microsoft manages the platform and infrastructure; you manage application configuration, data, identity, and runtime permissions. 
-- For IaaS, you manage the operating system, application software, data, and most network controls.
-
-For all cloud deployment types, you (customer) always own your data, devices, and identities. You're responsible for protecting the security of your data and identities, on-premises resources, and the cloud components you control (which varies by service type).
-
-![Diagram showing responsibility zones.](../media/shared-responsibility.png)
