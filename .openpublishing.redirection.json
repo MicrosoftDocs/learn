@@ -11,47 +11,47 @@
       "redirect_document_id": false
     },
     {
-      "source_path_from_root": "/learn-pr/device-partner-university/learning-zone/intro.yml",
+      "source_path_from_root": "/learn-pr/device-partner-university/learning-zone/1-intro.yml",
       "redirect_url": "https://learn.microsoft.com/training",
       "redirect_document_id": false
     },
     {
-      "source_path_from_root": "/learn-pr/device-partner-university/learning-zone/microsoft-learn.yml",
+      "source_path_from_root": "/learn-pr/device-partner-university/learning-zone/2-microsoft-learn.yml",
       "redirect_url": "https://learn.microsoft.com/training",
       "redirect_document_id": false
     },
     {
-      "source_path_from_root": "/learn-pr/device-partner-university/learning-zone/activate.yml",
+      "source_path_from_root": "/learn-pr/device-partner-university/learning-zone/3-activate.yml",
       "redirect_url": "https://learn.microsoft.com/training",
       "redirect_document_id": false
     },
     {
-      "source_path_from_root": "/learn-pr/device-partner-university/learning-zone/personalized-lessons.yml",
+      "source_path_from_root": "/learn-pr/device-partner-university/learning-zone/4-personalized-lessons.yml",
       "redirect_url": "https://learn.microsoft.com/training",
       "redirect_document_id": false
     },
     {
-      "source_path_from_root": "/learn-pr/device-partner-university/learning-zone/new-lesson.yml",
+      "source_path_from_root": "/learn-pr/device-partner-university/learning-zone/5-new-lesson.yml",
       "redirect_url": "https://learn.microsoft.com/training",
       "redirect_document_id": false
     },
     {
-      "source_path_from_root": "/learn-pr/device-partner-university/learning-zone/assign-manage.yml",
+      "source_path_from_root": "/learn-pr/device-partner-university/learning-zone/6-assign-manage.yml",
       "redirect_url": "https://learn.microsoft.com/training",
       "redirect_document_id": false
     },
     {
-      "source_path_from_root": "/learn-pr/device-partner-university/learning-zone/insights.yml",
+      "source_path_from_root": "/learn-pr/device-partner-university/learning-zone/7-insights.yml",
       "redirect_url": "https://learn.microsoft.com/training",
       "redirect_document_id": false
     },
     {
-      "source_path_from_root": "/learn-pr/device-partner-university/learning-zone/knowledge-check.yml",
+      "source_path_from_root": "/learn-pr/device-partner-university/learning-zone/8-knowledge-check.yml",
       "redirect_url": "https://learn.microsoft.com/training",
       "redirect_document_id": false
     },
     {
-      "source_path_from_root": "/learn-pr/device-partner-university/learning-zone/summary.yml",
+      "source_path_from_root": "/learn-pr/device-partner-university/learning-zone/9-summary.yml",
       "redirect_url": "https://learn.microsoft.com/training",
       "redirect_document_id": false
     },
