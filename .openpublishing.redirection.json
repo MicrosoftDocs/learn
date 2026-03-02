@@ -6,6 +6,56 @@
       "redirect_document_id": false
     },
     {
+      "source_path_from_root": "/learn-pr/device-partner-university/learning-zone/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/device-partner-university/learning-zone/intro.yml",
+      "redirect_url": "https://learn.microsoft.com/training",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/device-partner-university/learning-zone/microsoft-learn.yml",
+      "redirect_url": "https://learn.microsoft.com/training",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/device-partner-university/learning-zone/activate.yml",
+      "redirect_url": "https://learn.microsoft.com/training",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/device-partner-university/learning-zone/personalized-lessons.yml",
+      "redirect_url": "https://learn.microsoft.com/training",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/device-partner-university/learning-zone/new-lesson.yml",
+      "redirect_url": "https://learn.microsoft.com/training",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/device-partner-university/learning-zone/assign-manage.yml",
+      "redirect_url": "https://learn.microsoft.com/training",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/device-partner-university/learning-zone/insights.yml",
+      "redirect_url": "https://learn.microsoft.com/training",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/device-partner-university/learning-zone/knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/device-partner-university/learning-zone/summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training",
+      "redirect_document_id": false
+    },
+    {
       "source_path_from_root": "/learn-pr/azure/deploy-java-spring-boot-app-service-mysql/1-introduction.yml",
       "redirect_url": "https://learn.microsoft.com/azure/app-service/tutorial-java-spring-cosmosdb",
       "redirect_document_id": false
