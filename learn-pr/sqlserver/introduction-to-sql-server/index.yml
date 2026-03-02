@@ -1,0 +1,46 @@
+### YamlMime:Module
+uid: learn.wwl.introduction-to-sql-server
+metadata:
+  title: Get Started with SQL Server 2025
+  description: "Learn about SQL Server 2025's new capabilities including AI integration, analytics improvements, developer features, and performance enhancements."
+  ms.date: 10/06/2025
+  author: JulianePadrao
+  ms.author: jupadrao
+  ms.topic: module
+  ms.service: sql
+title: Get started with SQL Server 2025
+summary: |
+  Learn about SQL Server 2025's major capabilities including AI features, analytics improvements, developer tools, and performance optimization.
+abstract: |
+  By the end of this module, you're able to:
+  - Implement AI capabilities and vector search in SQL Server 2025.
+  - Configure Microsoft Fabric mirroring and analytics features.
+  - Use new developer tools including JSON, REST APIs, and RegEx.
+  - Optimize performance with intelligent query processing.
+  - Apply security enhancements and scalability features.
+prerequisites: |
+  - Basic working knowledge of SQL Server, including deployment, security, and query processing.
+  - Fundamental knowledge of T-SQL and database concepts.
+  - Basic understanding of AI and machine learning concepts.
+  - Familiarity with Microsoft Azure services and cloud computing.
+iconUrl: /training/achievements/sqlserver/introduction-to-sql-server-2025.svg
+levels:
+  - beginner
+roles:
+  - administrator
+products:
+  - sql-server
+subjects:
+  - databases
+units:
+- learn.wwl.introduction-to-sql-server.introduction
+- learn.wwl.introduction-to-sql-server.deploy-feature-difference
+- learn.wwl.introduction-to-sql-server.ai-powered
+- learn.wwl.introduction-to-sql-server.analytics
+- learn.wwl.introduction-to-sql-server.developers
+- learn.wwl.introduction-to-sql-server.performance
+- learn.wwl.introduction-to-sql-server.security-scalability
+- learn.wwl.introduction-to-sql-server.knowledge-check
+- learn.wwl.introduction-to-sql-server.summary
+badge:
+  uid: learn.wwl.introduction-to-sql-server.badge
