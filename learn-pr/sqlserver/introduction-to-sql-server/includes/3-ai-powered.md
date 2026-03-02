@@ -2,8 +2,6 @@ SQL Server 2025 introduces native AI capabilities with [vector search](/sql/sql-
 
 Model management in T-SQL allows you to work with models from [Azure OpenAI Service](/azure/ai-services/openai/overview), [Microsoft Foundry](/azure/ai-foundry/what-is-azure-ai-foundry), and other providers through REST APIs. You can deploy and manage models on-premises or in the cloud using standard T-SQL syntax.
 
-:::image type="content" source="../media/sql-2005-ai.png" alt-text="Diagram illustrating AI-powered features in SQL Server 2025." lightbox="../media/sql-2005-ai.png" border="false":::
-
 The diagram highlights how SQL Server 2025 brings together advanced AI integration, vector search, and seamless model management. With these capabilities, organizations can unlock new insights, enable natural language queries, and build intelligent applications directly on their data platform.
 
 SQL Server 2025 also introduces essential tools for building AI-powered applications, including vector embedding generation, text chunking, and fast, efficient vector indexing with DiskANN. These features support retrieval-augmented generation (RAG) and AI agent workflows, and integrate smoothly with frameworks like LangChain, Semantic Kernel, and Entity Framework Core.
