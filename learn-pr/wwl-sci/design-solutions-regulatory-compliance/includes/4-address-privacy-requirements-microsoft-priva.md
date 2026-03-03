@@ -1,132 +1,90 @@
-Privacy regulations grant individuals rights over their personal data and require organizations to implement controls that protect that data throughout its lifecycle. As a security architect, you design privacy solutions that address these regulatory requirements while enabling your organization to use data responsibly. Microsoft Priva provides purpose-built capabilities to operationalize privacy across your data landscape.
+Privacy regulations such as CCPA, LGPD, PIPEDA, and other privacy laws grant individuals rights over their personal data and require organizations to implement controls that protect that data throughout its lifecycle. As a security architect, you design privacy solutions that address these regulatory requirements while enabling your organization to use data responsibly.
 
-## The Microsoft Priva portfolio
+## Microsoft solutions that address privacy
 
-Microsoft Priva is a dedicated privacy solution separate from the compliance and data protection capabilities in Microsoft Purview. While Purview focuses on data security and compliance broadly, Priva specifically addresses privacy operations:
+Data privacy and data protection go hand in hand. Microsoft Priva and Microsoft Purview provide a unified platform to help you comply with data privacy regulations. Priva focuses specifically on privacy operations, while several Microsoft Purview solutions provide complementary data protection capabilities that support privacy requirements:
 
-| Priva Solution | Purpose | Privacy Requirements Addressed |
-|---------------|---------|-------------------------------|
-| **Privacy Risk Management** | Identify and remediate privacy risks | Data minimization, purpose limitation, transfer restrictions |
-| **Subject Rights Requests** | Fulfill individual data requests | Access rights, deletion rights, portability rights |
-| **Privacy Assessments** | Evaluate privacy impact of projects | Privacy by design, impact assessments |
-| **Consent Management** | Track and manage user consent | Consent requirements, preference management |
+<!--Source: https://learn.microsoft.com/microsoft-365/solutions/data-privacy-protection-->
 
-These solutions work together to create a comprehensive privacy operations program that addresses regulatory requirements from CCPA, LGPD, and other privacy laws.
+| Solution | Privacy role |
+| -------- | ------------ |
+| **Microsoft Priva** | Purpose-built privacy operations: risk management policies and automated subject rights request fulfillment |
+| **Microsoft Purview Compliance Manager** | Tracks privacy compliance posture through assessments and improvement actions; Priva actions contribute to compliance score (automated detection in preview) |
+| **Microsoft Purview Data Loss Prevention** | Prevents personal data from being shared inappropriately; Priva extends DLP by delivering privacy-specific insights and user remediation via email |
+| **Microsoft Purview Information Protection** | Sensitivity labels classify and protect personal data in documents and emails |
+| **Microsoft Purview Data Lifecycle Management** | Retention policies and labels help enforce data minimization by managing how long personal data is stored |
+| **Microsoft Purview Audit** | Tracks access to and actions on personal data for accountability and incident response |
+
+<!--Sources: https://learn.microsoft.com/privacy/priva/priva-setup, https://learn.microsoft.com/microsoft-365/solutions/data-privacy-protection-->
+
+## Microsoft Priva
+
+Microsoft Priva provides two generally available solutions, accessed through the [Microsoft Priva portal](https://purview.microsoft.com/priva): **Privacy Risk Management** and **Subject Rights Requests**.
+
+<!--Source: https://learn.microsoft.com/privacy/priva/priva-overview-->
+
+Priva uses Microsoft Purview [data classifications](/purview/concept-classification) and [sensitive information types (SITs)](/microsoft-365/compliance/sensitive-information-type-learn-about) to identify personal data across Exchange Online, SharePoint Online, OneDrive for Business, Microsoft Teams, and data sources registered through Microsoft Purview.
 
 ## Designing with Privacy Risk Management
 
-Privacy Risk Management enables you to create policies that continuously identify and remediate privacy risks in your Microsoft 365 environment. Design your privacy risk management strategy around three key risk scenarios:
+Privacy Risk Management provides customizable policies that identify privacy risks in your Microsoft 365 environment and enable easy remediation. When you start using Priva, a default version of each policy type is automatically set up and running.
 
-### Data overexposure policies
+<!--Source: https://learn.microsoft.com/privacy/priva/risk-management-->
 
-Personal data becomes a privacy risk when it's accessible to more people than necessary. Data overexposure policies detect when personal data is stored in locations with overly broad access permissions.
+Design your strategy around three policy types:
 
-Design your overexposure policies to:
+- **Data overexposure:** Detects personal data that is publicly accessible or has overly broad access. Remediation options include making content private, notifying content owners, or tagging items for review.
+- **Data transfer:** Monitors transfers of personal data across geographic boundaries, departmental boundaries, or outside your organization. Users receive email notifications with corrective actions they can take directly.
+- **Data minimization:** Identifies personal data stored beyond a configured retention threshold, helping reduce privacy risk from aging data. Items can be marked for deletion, or owners notified for review.
 
-- Identify content containing personal data that is publicly accessible or shared broadly within the organization
-- Configure remediation actions that empower content owners to restrict access
-- Send user notifications with links to your organization's privacy training materials
-- Tag items for privacy team review when automated remediation isn't appropriate
-
-### Data transfer policies
-
-Moving personal data across organizational boundaries, departments, or geographic regions creates compliance risk. Data transfer policies monitor for these movements and alert when transfers violate your privacy policies.
-
-When designing transfer policies, consider:
-
-- **Geographic boundaries** - Detect transfers between regions with different privacy laws, such as data moving outside the EU
-- **Departmental boundaries** - Monitor transfers between business units that shouldn't share certain personal data categories
-- **External sharing** - Identify when personal data leaves your organization through email or file sharing
-
-### Data minimization policies
-
-Organizations accumulate personal data over time, and retaining data longer than necessary increases privacy risk. Data minimization policies identify personal data that has been stored beyond a defined period without being accessed.
-
-Design minimization policies that:
-
-- Set retention thresholds aligned with your data retention schedule and regulatory requirements
-- Notify data owners to review and delete unnecessary personal data
-- Generate reports showing aging personal data across your environment
+When policy matches are found, admins review alerts and create issues for further action. Email and Teams notifications inform content owners directly about policy matches. The Reports page presents consolidated insights on policy trends and data classification.
 
 ## Designing for subject rights requests
 
-Privacy regulations grant individuals the right to request access to, deletion of, or portability of their personal data. These subject rights requests require organizations to locate all personal data about an individual and respond within regulatory timeframes—often 30 to 45 days.
+Privacy regulations grant individuals—or *data subjects*—the right to review or manage personal data that organizations have collected about them. These subject rights requests (SRRs) require organizations to locate all relevant personal data and respond within regulatory timeframes.
 
-Priva Subject Rights Requests automates this process. When designing your subject rights workflow:
+<!--Source: https://learn.microsoft.com/privacy/priva/subject-rights-requests-->
 
-### Request types and intake
+Priva Subject Rights Requests provides automation, insights, and workflows to fulfill requests efficiently. It supports four request types:
 
-Priva supports multiple request types aligned with privacy regulations:
+<!--Source: https://learn.microsoft.com/privacy/priva/subject-rights-requests-create#request-types-->
 
-- **Access requests** - Provide individuals with copies of their personal data
-- **Export requests** - Deliver personal data in portable formats
-- **Delete requests** - Remove personal data from your systems
-- **Tagged for follow-up** - Mark items requiring manual processing
+- **Access:** Summary of the data subject's personal information held in Microsoft 365
+- **Export:** Summary and exported file of content items reviewed and marked as included
+- **Tagged list for follow up:** Summary of files tagged during data review
+- **Delete:** Deletes content items after they are marked as included and approval is complete
 
-Design your intake process to verify requestor identity before initiating data discovery.
+### Architectural considerations for the SRR workflow
 
-### Automated data discovery
+<!--Sources: https://learn.microsoft.com/privacy/priva/subject-rights-requests-workflow, https://learn.microsoft.com/privacy/priva/subject-rights-requests-automate-->
 
-When you create a request, Priva immediately searches across Exchange Online, SharePoint, OneDrive, and Teams to find content containing the data subject's personal data. The solution:
+Priva automates the SRR lifecycle through stages—data estimation, retrieval, review, report generation, and closure. When designing your SRR solution, focus on:
 
-- Uses Microsoft 365's foundational data classification capabilities to identify personal data types
-- Retrieves content items within hours depending on data volume
-- Provides options to refine search parameters for high-volume results
-- Surfaces priority items that may need special handling, such as confidential content or data containing multiple individuals' information
+- **Data scope and volume:** Priva retrieves content from Exchange Online, SharePoint Online, OneDrive for Business, and Teams into Azure Blob Storage. Plan storage and review capacity based on expected data volumes per request.
+- **Review process design:** A dedicated Teams channel is automatically created for each request. Design your review process around who should be assigned as collaborators, how priority items (content with sensitivity labels, multi-person data, or retention labels) are escalated, and how built-in redaction tools fit into your data handling procedures.
+- **Approval workflows for delete requests:** Delete requests require an additional approval substage. Define who has authority to approve deletions and how this integrates with your organization's data governance policies.
+- **Integration and automation:** Use Power Automate templates to connect SRR workflows with ticketing systems like ServiceNow, and use the Microsoft Graph subject rights request API for programmatic access when building custom integrations.
 
-### Collaborative review
-
-Priva creates a dedicated Teams channel for each request, enabling stakeholders to collaborate on review decisions. Design your review process to:
-
-- Assign appropriate team members as request collaborators
-- Use built-in redaction tools to protect third-party personal data or confidential information
-- Apply organizational tags to track items requiring follow-up actions
-- Document decisions for audit purposes
-
-### Response generation
-
-After review, Priva automatically generates:
-
-- Data packages containing the personal data to provide to the requestor
-- Audit logs documenting the request handling process
-- Summary reports of tagged items for follow-up actions
-
-## Privacy Assessments for privacy by design
-
-Many privacy regulations require organizations to assess the privacy impact of new projects, systems, or data processing activities before implementation. Priva Privacy Assessments provides structured workflows to evaluate privacy risks during project planning.
-
-Design your assessment process to:
-
-- Identify which projects require privacy assessments based on data types and processing activities
-- Define assessment templates aligned with your regulatory obligations
-- Route assessments to appropriate reviewers based on risk level
-- Track remediation of identified privacy risks before project launch
-
-## Consent Management for preference tracking
-
-When your organization collects personal data, privacy regulations often require explicit consent and the ability for individuals to manage their preferences. Priva Consent Management helps you:
-
-- Track consent status across your data subjects
-- Document what individuals have consented to and when
-- Honor preference changes across your systems
-- Generate consent audit trails for regulatory inquiries
-
-## Privacy considerations for AI
-
-Personal data used in AI systems falls under the same privacy regulations as other personal data. When designing privacy solutions for organizations using AI:
-
-- Include AI prompts and responses in your scope for subject rights requests
-- Monitor how personal data flows into AI applications through Privacy Risk Management policies
-- Consider how AI-generated content might contain or infer personal data
-- Assess privacy impact of AI projects through Privacy Assessments before deployment
+<!--Source: https://learn.microsoft.com/privacy/priva/subject-rights-requests-automate-->
 
 ## Design considerations for security architects
 
-When designing your Priva implementation:
+When designing your privacy solution:
 
-- **Start with risk scenarios** - Prioritize Privacy Risk Management policies based on your highest privacy risks
-- **Define response SLAs** - Establish service level agreements for subject rights requests that meet regulatory timeframes
-- **Automate where possible** - Use Power Automate templates to connect Priva with your ticketing and workflow systems
-- **Plan for scale** - Design workflows that can handle increased request volumes as privacy awareness grows
-- **Train content owners** - Enable user notifications so data owners can remediate privacy risks directly
-- **Integrate with governance** - Connect Priva actions to Compliance Manager to track privacy improvements in your compliance score
+- **Start with Priva and Purview together:** Use Priva for privacy-specific operations and Purview solutions for data protection, classification, and lifecycle management to address privacy requirements holistically
+- **Review default policies first:** The default privacy risk management policies are automatically enabled; customize them based on your highest privacy risks
+- **Configure anonymization:** Turn on anonymization in Priva settings to show anonymized usernames when reviewing privacy risk alerts
+- **Define response SLAs:** Establish service level agreements for subject rights requests that meet regulatory timeframes (default completion deadline is two weeks past creation)
+- **Automate where possible:** Use Power Automate templates to connect Priva with ticketing systems, and use the Microsoft Graph subject rights request API for programmatic integration
+- **Plan for scale:** Design workflows that can handle increased request volumes; purchase subject rights requests in blocks of 1, 10, or 100
+- **Train content owners:** Enable user notification emails so data owners can remediate privacy risks directly from email notifications
+- **Configure data retention:** Set retention periods (30 or 90 days) for subject rights request data after requests are closed
+- **Integrate with Compliance Manager:** Priva actions contribute to your compliance score; automated detection of Priva improvement actions is in preview
+- **Set appropriate permissions:** Assign users to Priva role groups following the principle of least privilege
+
+<!--Sources:
+- https://learn.microsoft.com/privacy/priva/priva-setup
+- https://learn.microsoft.com/privacy/priva/priva-settings
+- https://learn.microsoft.com/privacy/priva/subject-rights-requests-automate
+- https://learn.microsoft.com/microsoft-365/solutions/data-privacy-protection
+-->

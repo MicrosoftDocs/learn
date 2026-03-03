@@ -42,8 +42,8 @@ The Natural Language Agent Creation method allows you to build agents simply by 
 - Engage in a conversational workflow where Security Copilot asks clarifying questions
 - Review and approve the automatically generated agent configuration
 - Select **View agent configuration** to transition to the agent builder, where you finalize your agent
-- Once the agent is configured, select **Test**, enter any inputs your agent requires, then select **Run test**.
-- Provide any necessary updates, based on the outcome of the test, then when your tests are complete, publish your agent.
+- Once the agent is configured, select **Publish**. You must publish your agent before you can test it.
+- Once published, you **test** you agent.
 
 
 # [Build agent](#tab/build-agent)
@@ -55,6 +55,9 @@ The Natural Language Agent Creation method allows you to build agents simply by 
 # [Agent details](#tab/agent-details)
 :::image type="content" source="../media/agent-details.png" lightbox="../media/agent-details.png" alt-text="Screenshot showing the details of the agent built using natural language.":::
 
+# [Publish](#tab/publish)
+:::image type="content" source="../media/agent-publish.png" lightbox="../media/agent-publish.png" alt-text="Screenshot showing the publish window for your agent.":::
+
 # [Test](#tab/test)
 :::image type="content" source="../media/test-agent.png" lightbox="../media/test-agent.png" alt-text="Screenshot showing the test window for your agent.":::
 
@@ -62,7 +65,7 @@ The Natural Language Agent Creation method allows you to build agents simply by 
 
 ## Agent builder
 
-The agent builder provides a comprehensive form-based experience for creating agents from scratch using the Security Copilot platform's graphical interface. On the top navigation bar, there are two tabs: **Build** and **Test**. Use the **Build** tab to define your agent and configure its tools. The **Test** tab lets you validate the agent's responses.
+The agent builder provides a comprehensive form-based experience for creating agents from scratch using the Security Copilot platform's graphical interface. On the top navigation bar, there are two tabs: **Build** and **Test**. Use the **Build** tab to define your agent and configure its tools. The **Test** tab lets you validate the agent's responses, but you must currently first publish your agent before you can test it.
 
 You can configure the following sections in the agent builder:
 
@@ -87,6 +90,8 @@ You can also use the **Copilot** button to open a Chat interface that appears on
 :::image type="content" source="../media/agent-builder-automation-triggers-permissions.png" lightbox="../media/agent-builder-automation-triggers-permissions.png" alt-text="Screenshot showing the section in the agent builder where you configure triggers and permissions.":::
 
 ---
+
+Once you have completed the configuration of your agent, you must currently publish it before you can test it.
 
 ## YAML upload method
 

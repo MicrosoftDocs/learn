@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.write-advanced-sql-code.common-table-expressions
+title: Organize queries with Common Table Expressions
+metadata:
+  title: Organize queries with Common Table Expressions
+  description: Learn how to create nonrecursive and recursive CTEs in SQL Server and Azure SQL to simplify complex queries and traverse hierarchical data.
+  ms.date: 01/28/2026
+  author: JulianePadrao
+  ms.author: jupadrao
+  ms.topic: unit
+durationInMinutes: 12
+content: |
+  [!include[](includes/2-common-table-expressions.md)]

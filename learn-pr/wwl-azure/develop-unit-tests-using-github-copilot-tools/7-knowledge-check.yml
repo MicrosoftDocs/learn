@@ -5,8 +5,8 @@ metadata:
   hidden_question_numbers: ["170CED1A_10","170CED1A_14","170CED1A_2","170CED1A_26","170CED1A_6","170CED1A_51","170CED1A_55","170CED1A_59","170CED1A_63","170CED1A_67","170CED1A_83"]
   title: Module assessment
   description: "Knowledge check"
-  ms.date: 08/22/2025
-  author: wwlpublish
+  ms.date: 03/03/2026
+  author: chrishowd
   ms.author: cahowd
   ms.topic: unit
   ms.custom:
@@ -50,25 +50,25 @@ quiz:
     - content: "To check if the function returns the expected output."
       isCorrect: false
       explanation: "Incorrect. Generating assertions for function input parameters is not primarily done to check the function's output."
-  - content: "What does the GitHub Copilot extension for Visual Studio Code provide when creating unit tests for specific conditions?"
+  - content: "What are the three built-in agents available in the Chat view for creating unit tests?"
     choices:
-    - content: "It provides a user interface for manually writing tests."
+    - content: "Ask, Edit, and Agent."
       isCorrect: false
-      explanation: "Incorrect. GitHub Copilot does not provide a user interface for writing tests. GitHub Copilot suggests completions and generates tests."
-    - content: "It automatically runs the tests and provides the results."
-      isCorrect: false
-      explanation: "Incorrect. GitHub Copilot does not run tests. GitHub Copilot helps generate them."
-    - content: "It suggests completions and generates tests based on the code context."
+      explanation: "Incorrect. Edit mode has been replaced. The three built-in agents available in the Chat view are Ask, Plan, and Agent."
+    - content: "Ask, Plan, and Agent."
       isCorrect: true
-      explanation: "Correct. GitHub Copilot suggests completions and generates tests based on the code context."
-  - content: "What is the benefit of using GitHub Copilot for generating unit tests?"
+      explanation: "Correct. The Chat view provides three built-in agents: Ask for answering questions, Plan for creating structured implementation plans before writing code, and Agent for agentic coding workflows."
+    - content: "Plan, Debug, and Agent."
+      isCorrect: false
+      explanation: "Incorrect. Debug is not a built-in agent in the Chat view. The three built-in agents are Ask, Plan, and Agent."
+  - content: "What is the purpose of the Plan agent in the Chat view?"
     choices:
-    - content: "It reduces the need for manual testing."
+    - content: "It automatically implements code changes across multiple files in the workspace."
       isCorrect: false
-      explanation: "Incorrect. While GitHub Copilot helps generate unit tests, it does not eliminate the need for manual testing."
-    - content: "It can suggest a range of unit tests based on the code context, saving development time."
+      explanation: "Incorrect. The Plan agent does not make code changes. The Plan agent creates a structured implementation plan, which can then be handed off to the Agent for implementation."
+    - content: "It creates a structured, step-by-step implementation plan before writing any code."
       isCorrect: true
-      explanation: "Correct. GitHub Copilot can suggest a range of unit tests based on the code context, which can save development time."
-    - content: "It automatically fixes bugs in the code."
+      explanation: "Correct. The Plan agent researches the task comprehensively, asks clarifying questions, and produces a step-by-step plan. Once the plan is reviewed and approved, it can be handed off to the Agent for implementation."
+    - content: "It runs tests and generates test reports for the project."
       isCorrect: false
-      explanation: "Incorrect. GitHub Copilot does not fix bugs. GitHub Copilot helps generate unit tests."
+      explanation: "Incorrect. The Plan agent does not run tests or generate reports. The Plan agent creates a detailed implementation plan that can be handed off to the Agent for implementation."

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.write-advanced-sql-code.regular-expressions
+title: Match patterns with regular expressions
+metadata:
+  title: Match patterns with regular expressions
+  description: Learn how to use regular expression functions like REGEXP_LIKE, REGEXP_REPLACE, REGEXP_SUBSTR, REGEXP_INSTR, REGEXP_COUNT, REGEXP_MATCHES, and REGEXP_SPLIT_TO_TABLE.
+  ms.date: 01/28/2026
+  author: JulianePadrao
+  ms.author: jupadrao
+  ms.topic: unit
+durationInMinutes: 14
+content: |
+  [!include[](includes/5-regular-expressions.md)]

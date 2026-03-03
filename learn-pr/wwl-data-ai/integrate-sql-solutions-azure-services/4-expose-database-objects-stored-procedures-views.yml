@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.integrate-sql-solutions-azure-services.expose-database-objects-stored-procedures-views
+title: Expose database objects, stored procedures, and views
+metadata:
+  title: Expose database objects, stored procedures, and views
+  description: Learn how to expose SQL Server views, stored procedures, and configure GraphQL relationships in Data API Builder.
+  ms.date: 02/05/2026
+  author: JulianePadrao
+  ms.author: jupadrao
+  ms.topic: unit
+durationInMinutes: 12
+content: |
+  [!include[](includes/4-expose-database-objects-stored-procedures-views.md)]

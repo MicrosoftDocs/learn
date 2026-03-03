@@ -5,8 +5,8 @@ metadata:
   hidden_question_numbers: ["A1A8B431_10","A1A8B431_30","A1A8B431_6","A1A8B431_51","A1A8B431_55","A1A8B431_63","A1A8B431_67","A1A8B431_79","A1A8B431_104","A1A8B431_108","A1A8B431_112","A1A8B431_128","A1A8B431_88"]
   title: Module assessment
   description: "Knowledge check"
-  ms.date: 08/25/2025
-  author: wwlpublish
+  ms.date: 03/03/2026
+  author: chrishowd
   ms.author: cahowd
   ms.topic: unit
   ms.custom:
@@ -49,17 +49,17 @@ quiz:
     - content: "To provide feedback to the AI for future improvements."
       isCorrect: false
       explanation: "Incorrect. While feedback can be useful, the primary purpose of reviewing is to ensure the accuracy and completeness of the generated output."
-  - content: "How can GitHub Copilot Chat assist when encountering an error in the code?"
+  - content: "Which Chat view modes are available in GitHub Copilot for generating documentation?"
     choices:
-    - content: "It can explain the cause of the error and suggest ways to fix it."
+    - content: "Ask, Edit, and Agent modes."
+      isCorrect: false
+      explanation: "Incorrect. Edit mode is not one of the available Chat view modes. The three available modes are Ask, Agent, and Plan."
+    - content: "Ask, Agent, and Plan modes."
       isCorrect: true
-      explanation: "Correct. Copilot Chat can provide explanations for errors and suggest potential solutions."
-    - content: "It can prevent errors from occurring in the first place."
+      explanation: "Correct. The Chat view supports Ask, Agent, and Plan modes. Each mode has different strengths for documentation tasks. Ask mode is best for analyzing and previewing documentation. Agent mode is best for multi-file documentation generation. Plan mode creates a detailed implementation plan that can be handed off to agent mode."
+    - content: "Only Ask and Agent modes."
       isCorrect: false
-      explanation: "Incorrect. Copilot Chat assists in understanding and fixing errors, but it can't prevent them."
-    - content: "It can automatically fix the error without any user interaction."
-      isCorrect: false
-      explanation: "Incorrect. While Copilot Chat can suggest fixes, it doesn't automatically apply them."
+      explanation: "Incorrect. In addition to Ask and Agent modes, the Chat view also supports Plan mode, which creates implementation plans that can be handed off to agent mode for execution."
   - content: "What is the primary purpose of project documentation in software development?"
     choices:
     - content: "To provide a detailed codebase for developers to use."
@@ -71,17 +71,17 @@ quiz:
     - content: "To provide essential information for understanding the project's scope and purpose."
       isCorrect: true
       explanation: "Correct. Project documentation provides essential information for understanding the project's scope, purpose, constraints, dependencies, and requirements."
-  - content: "How can GitHub Copilot Chat be used in the context of project documentation?"
+  - content: "What is a key advantage of using agent mode to generate project documentation?"
     choices:
-    - content: "To generate specific sections of the project documentation, such as the project overview, requirements, constraints, dependencies, and summary."
+    - content: "Agent mode can analyze the entire project structure and generate documentation that links and summarizes content across the codebase."
       isCorrect: true
-      explanation: "Correct. GitHub Copilot Chat can be used to generate specific sections of the project documentation."
-    - content: "To communicate with the project stakeholders and gather their requirements."
+      explanation: "Correct. Agent mode can gather information from multiple files and folders, describe complex relationships, include links between documents, and execute batch documentation tasks such as creating README, UsageExamples, and ChangeLog files."
+    - content: "Agent mode provides only high-level overviews of individual files."
       isCorrect: false
-      explanation: "Incorrect. GitHub Copilot Chat isn't designed for communication with stakeholders."
-    - content: "To automatically write the entire codebase for the project."
+      explanation: "Incorrect. Agent mode can analyze the entire project structure and generate detailed documentation across multiple files, not just individual file overviews."
+    - content: "Agent mode requires the @workspace chat participant to analyze the codebase."
       isCorrect: false
-      explanation: "Incorrect. GitHub Copilot Chat can assist with code suggestions, but it doesn't write the entire codebase."
+      explanation: "Incorrect. Chat participants like @workspace aren't available in agent mode. You can add context using #codebase and the Attach Context button instead."
   - content: "What is the purpose of generating inline code documentation in software development?"
     choices:
     - content: "To make the code more complex and challenging for other developers."
@@ -93,14 +93,14 @@ quiz:
     - content: "To increase the size of the codebase."
       isCorrect: false
       explanation: "Incorrect. While documentation does add to the size of the codebase, its primary purpose is to improve readability and maintainability, not to increase size."
-  - content: "How can GitHub Copilot Chat help generate inline code documentation?"
+  - content: "What is the purpose of the Plan mode in GitHub Copilot Chat?"
     choices:
-    - content: "By automatically writing the entire codebase."
+    - content: "To directly apply code changes to files without user review."
       isCorrect: false
-      explanation: "Incorrect. GitHub Copilot Chat assists in generating inline code documentation, not in writing the entire codebase."
-    - content: "By generating inline code comments based on natural language prompts or commands."
+      explanation: "Incorrect. Plan mode doesn't directly apply changes. It creates an implementation plan that can be reviewed and then handed off to agent mode for execution."
+    - content: "To create a detailed implementation plan that can be handed off to agent mode for execution."
       isCorrect: true
-      explanation: "Correct. GitHub Copilot Chat can generate inline code comments based on natural language prompts or the '/doc' command."
-    - content: "By providing real-time chat support with other developers."
+      explanation: "Correct. Plan mode analyzes the codebase, identifies requirements, and produces a step-by-step plan. Once approved, you can select Start Implementation to hand off the plan to agent mode, or select Open in Editor to save the plan as a Markdown file."
+    - content: "To provide inline code suggestions directly in the editor."
       isCorrect: false
-      explanation: "Incorrect. GitHub Copilot Chat doesn't provide real-time chat support with other developers. It generates inline code documentation."
+      explanation: "Incorrect. Plan mode doesn't provide inline suggestions. It creates implementation plans in the Chat view that can be handed off to agent mode or saved as a Markdown file for later use."

@@ -1,0 +1,52 @@
+### YamlMime:Module
+uid: learn.implement-data-security-compliance
+metadata:
+  title: Implement data security and compliance with SQL
+  description: Learn how to implement data security and compliance features in SQL Server, Azure SQL, and SQL databases in Microsoft Fabric, including encryption, masking, Row-Level Security, and auditing.
+  ms.date: 02/24/2026
+  author: JulianePadrao
+  ms.author: jupadrao
+  ms.topic: module
+  ms.service: sql
+  ai-usage: ai-generated
+title: Implement data security and compliance with SQL
+summary: >-
+  Learn how to protect sensitive data and meet compliance requirements by implementing encryption, masking, access controls, and auditing across Microsoft's SQL platforms.
+abstract: |
+  By the end of this module, you'll be able to:
+    - Design and implement data encryption using Always Encrypted and column-level encryption
+    - Configure Dynamic Data Masking to protect sensitive data
+    - Implement Row-Level Security to filter data access based on user context
+    - Design object-level permissions and implement secure, passwordless database access using Microsoft Entra ID
+    - Configure auditing to track database activity
+    - Secure model endpoints and API endpoints for modern applications
+prerequisites: |
+  - Experience writing T-SQL queries and developing databases in SQL Server, Azure SQL, or SQL databases in Microsoft Fabric
+  - Familiarity with database security concepts such as authentication and authorization
+  - Understanding of Microsoft Entra ID basics
+  - Access to a SQL Server, Azure SQL Database, or SQL database in Microsoft Fabric for testing
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+  - intermediate
+roles:
+  - database-administrator
+  - developer
+  - data-engineer
+products:
+  - sql-server
+  - azure-sql-database
+  - fabric
+units:
+  - learn.wwl.implement-data-security-compliance.introduction
+  - learn.wwl.implement-data-security-compliance.design-implement-data-encryption
+  - learn.wwl.implement-data-security-compliance.design-implement-dynamic-data-masking
+  - learn.wwl.implement-data-security-compliance.design-implement-row-level-security
+  - learn.wwl.implement-data-security-compliance.design-implement-permissions-secure-access
+  - learn.wwl.implement-data-security-compliance.implement-auditing
+  - learn.wwl.implement-data-security-compliance.secure-model-endpoints
+  - learn.wwl.implement-data-security-compliance.secure-graphql-rest-mcp-endpoints
+  - learn.wwl.implement-data-security-compliance.exercise-implement-security-features
+  - learn.wwl.implement-data-security-compliance.knowledge-check
+  - learn.wwl.implement-data-security-compliance.summary
+badge:
+  uid: learn.wwl.implement-data-security-compliance.badge

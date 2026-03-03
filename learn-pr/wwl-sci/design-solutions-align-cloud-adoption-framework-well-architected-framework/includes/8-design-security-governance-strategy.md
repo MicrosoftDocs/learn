@@ -1,183 +1,144 @@
-Now that you understand the Cloud Adoption Framework, Azure landing zones, and the Well-Architected Framework, you can apply these frameworks together to design a comprehensive security and governance strategy. This unit provides practical guidance for combining the Cloud Adoption Framework's (CAF) strategic approach with the Well-Architected Framework's (WAF) workload-specific principles.
+Your security strategy identifies gaps and defines objectives. This unit translates those objectives into solution recommendations—organized by capability area and mapped to CAF governance requirements, MCSB control domains, and WAF security checklist items. Each section describes the capabilities your solutions must provide, followed by a brief example of Microsoft solutions that address the requirement.
 
-## Mapping frameworks to security responsibilities
+## From strategy to solutions
 
-Each framework addresses security at a different scope. Understanding these boundaries helps you apply the right guidance to the right decisions.
+Each gap in your security strategy implies a capability requirement. As a cybersecurity architect, you translate requirements into solution recommendations by:
 
-| Scope | Framework | Security focus |
-|-------|-----------|----------------|
-| **Organization** | Cloud Adoption Framework | Security strategy, policies, compliance requirements, team structures |
-| **Environment** | Azure landing zones | Platform security controls, network segmentation, identity foundation |
-| **Workload** | Well-Architected Framework | Application security, data protection, workload-specific controls |
+1. Identifying the capability each gap requires
+2. Defining evaluation criteria based on framework controls
+3. Recommending solutions that meet those criteria within your organization's constraints
 
-As a cybersecurity architect, you operate across all three scopes. Your strategy must ensure security requirements flow consistently from organizational policy through platform controls to individual workloads.
+The sections below organize recommendations by capability area. Use them as a reference when building your solution portfolio.
 
-## Phase 1: Establish strategic alignment
+## Identity and access management
 
-Begin with the Cloud Adoption Framework's Secure methodology to define your organization's security posture.
+**Framework drivers**: CAF Ready phase (identity design area); MCSB Identity Management (IM) and Privileged Access (PA) domains; WAF checklist SE:05
 
-### Define security objectives
+A comprehensive identity solution should provide:
 
-Work with business stakeholders to establish security objectives that support business outcomes. Effective security objectives are:
+- Centralized identity provider with single sign-on across cloud and on-premises resources
+- Risk-based conditional access that evaluates context (location, device health, user risk) before granting access
+- Privileged access management with just-in-time elevation and approval workflows
+- Workload identity management for service-to-service authentication without stored credentials
 
-- **Business-aligned**: Security investments should protect what matters most to the organization
-- **Risk-informed**: Prioritize controls based on threat likelihood and business impact
-- **Measurable**: Define metrics that demonstrate security posture improvement
+**Microsoft example**: Entra ID provides centralized identity, conditional access policies, and Privileged Identity Management (PIM) for just-in-time privileged access. Workload identity federation eliminates secrets for automated deployments.
 
-### Identify compliance requirements
+## Network security
 
-Document regulatory and industry requirements that affect your Azure environment:
+**Framework drivers**: CAF Ready phase (network topology design area); MCSB Network Security (NS) domain; WAF checklist SE:04, SE:06
 
-- Data residency and sovereignty requirements
-- Industry-specific standards (PCI-DSS, HIPAA, FedRAMP)
-- Internal security policies and standards
+Your network security solution should provide:
 
-These requirements become inputs to both your landing zone design and workload security architecture.
+- Network segmentation that isolates workloads by sensitivity and function
+- Traffic inspection and filtering at network boundaries
+- Web application firewall protection for internet-facing applications
+- Distributed denial-of-service (DDoS) mitigation for public endpoints
+- Private connectivity for platform services to eliminate public internet exposure
 
-### Establish governance structures
+**Microsoft example**: Azure Virtual Network with network security groups provides segmentation. Azure Firewall inspects cross-zone traffic. Azure Private Link enables private connectivity to platform services.
 
-Define roles, responsibilities, and decision rights for security across your organization:
+## Data protection
 
-- **Central security team**: Owns security strategy, policies, and monitoring
-- **Platform team**: Implements landing zone security controls
-- **Workload teams**: Responsible for application-level security within guardrails
+**Framework drivers**: MCSB Data Protection (DP) domain; WAF checklist SE:03, SE:07, SE:09
 
-Document escalation paths and decision-making authority for security exceptions.
+Your data protection solution should provide:
 
-## Phase 2: Design the security foundation
+- Data classification and labeling across structured and unstructured data stores
+- Encryption at rest and in transit using current cryptographic standards
+- Key management with hardware security module (HSM) backing for high-sensitivity keys
+- Data loss prevention (DLP) controls to detect and block unauthorized data movement
+- Backup and recovery with immutable storage to protect against ransomware
 
-Use Azure landing zones to implement your security foundation. The landing zone provides the secure, governed environment where workloads operate.
+**Microsoft example**: Microsoft Purview provides classification, labeling, and DLP. Azure Key Vault manages encryption keys with HSM support. Azure Backup with immutable vaults protects recovery points.
 
-### Implement identity and access management
+## Security monitoring and threat detection
 
-Identity forms the primary security perimeter in cloud environments. Design your identity foundation to support:
+**Framework drivers**: CAF Manage phase (security monitoring); MCSB Logging and Threat Detection (LT) domain; WAF checklist SE:10, SE:12
 
-- **Centralized identity**: Use a single cloud identity provider for all authentication
-- **Privileged access management**: Implement just-in-time administrative access to reduce standing privileges
-- **Conditional access**: Define risk-based policies that enforce security requirements
+Your monitoring solution should provide:
 
-### Design network segmentation
+- Security information and event management (SIEM) with centralized log aggregation and correlation
+- Extended detection and response (XDR) covering endpoints, identities, email, and cloud workloads
+- User and entity behavior analytics (UEBA) to detect anomalous activity patterns
+- Security orchestration, automation, and response (SOAR) for automated playbook execution
+- Incident response workflow management with case tracking and evidence preservation
 
-Network architecture should enforce isolation between workloads and control traffic flows:
+**Microsoft example**: Microsoft Sentinel provides SIEM, UEBA, and SOAR capabilities. Microsoft Defender XDR covers endpoint, identity, and application threat detection with automated investigation and response.
 
-- **Hub-spoke topology**: Centralize shared services and security controls in a hub
-- **Network security groups**: Define traffic rules at the subnet level
-- **Cloud firewall**: Inspect and filter traffic between security zones
+## Cloud security posture management
 
-### Establish security monitoring
+**Framework drivers**: CAF Govern phase (security baseline); MCSB Posture and Vulnerability Management (PV) domain; WAF checklist SE:01, SE:08
 
-Deploy centralized monitoring to detect threats across your environment:
+Your posture management solution should provide:
 
-- **Security information and event management (SIEM)**: Aggregate security signals and enable threat detection
-- **Cloud security posture management (CSPM)**: Assess security posture and protect workloads
-- **Centralized logging**: Collect logs for investigation and compliance
+- Continuous assessment of resource configurations against security benchmarks
+- Secure score that quantifies posture and prioritizes remediation by risk
+- Regulatory compliance dashboards mapping configurations to industry standards
+- Vulnerability assessment for compute resources, containers, and databases
+- Attack path analysis that identifies exploitable chains of misconfiguration
 
-### Enforce governance through policy
+**Microsoft example**: Microsoft Defender for Cloud provides CSPM with secure score, regulatory compliance assessment, and attack path analysis. Defender Vulnerability Management assesses compute and container vulnerabilities.
 
-Policy-as-code enforces organizational standards across all subscriptions:
+## Governance and policy enforcement
 
-- **Deny non-compliant resources**: Prevent deployment of resources that violate security requirements
-- **Audit and remediate**: Identify and correct configuration drift
-- **Auto-remediation**: Automatically configure required security settings
+**Framework drivers**: CAF Govern phase; WAF checklist SE:01
 
-## Phase 3: Apply workload security principles
+Your governance solution should provide:
 
-With your foundation in place, use the Well-Architected Framework's Security pillar to design secure workloads.
+- Policy-as-code engine that evaluates resource configurations at deployment time and continuously
+- Deny, audit, and auto-remediate enforcement modes
+- Compliance reporting across subscriptions and management groups
+- Resource organization through tagging standards and hierarchy enforcement
+- Drift detection when resource configurations change after deployment
 
-### Apply the CIA triad
+**Microsoft example**: Azure Policy provides policy-as-code enforcement with built-in MCSB initiative assignments. Management groups organize subscriptions into governed hierarchies. Azure Resource Graph enables cross-subscription compliance queries.
 
-Every workload security design should address the three core security principles—confidentiality, integrity, and availability (CIA):
+## Application security
 
-- **Confidentiality**: Who can access the data? How is it protected at rest and in transit?
-- **Integrity**: How do you prevent unauthorized modification? How do you detect tampering?
-- **Availability**: How do you protect against denial-of-service? What are your recovery objectives?
+**Framework drivers**: CAF Adopt phase (innovation security); MCSB DevOps Security (DS) domain; WAF checklist SE:02, SE:08, SE:09, SE:11
 
-### Implement Zero Trust controls
+Your application security solution should provide:
 
-Apply Zero Trust principles at the workload level:
+- Static application security testing (SAST) integrated into CI/CD pipelines
+- Software composition analysis (SCA) for dependency vulnerability tracking
+- Secret scanning to detect credentials committed to source code
+- Secrets management with centralized, audited storage and automated rotation
+- Container image scanning and runtime protection
 
-| Principle | Workload implementation |
-|-----------|------------------------|
-| **Verify explicitly** | Authenticate every request; validate tokens; check device health |
-| **Least privilege** | Use managed identities; scope permissions narrowly; implement just-in-time (JIT) access |
-| **Assume breach** | Encrypt data; segment workload components; implement detection and response |
+**Microsoft example**: GitHub Advanced Security provides SAST (CodeQL), SCA (Dependabot), and secret scanning. Azure Key Vault manages application secrets with rotation support. Microsoft Defender for Containers secures container workloads from build through runtime.
 
-### Design for defense in depth
+## AI workload security
 
-Layer security controls so that failure of one control doesn't compromise the workload:
+**Framework drivers**: MCSB controls extended by AI-specific frameworks (MITRE ATLAS, OWASP Top 10 for GenAI, NIST AI RMF); WAF AI workload assessment
 
-1. **Identity layer**: Authentication and authorization
-2. **Network layer**: Segmentation and traffic filtering
-3. **Application layer**: Input validation, secure coding practices
-4. **Data layer**: Encryption, access controls, backup and recovery
+Your AI security solution should provide:
 
-### Address AI workload security
+- Content filtering for inputs (prompt injection defense) and outputs (data leakage prevention)
+- Model access controls with authentication, authorization, and rate limiting
+- AI-specific monitoring for anomalous query patterns and data extraction attempts
+- Red teaming tools for adversarial testing of AI systems
+- Responsible AI governance including fairness, transparency, and accountability controls
 
-For workloads that include AI components, extend your security design to address:
+**Microsoft example**: Azure AI Content Safety provides input and output filtering. Azure AI services include built-in authentication and rate limiting. PyRIT (Python Risk Identification Toolkit) supports AI red teaming.
 
-- **Model protection**: Secure model weights and training data as high-value assets
-- **Input validation**: Filter for prompt injection and adversarial inputs
-- **Output controls**: Implement content filtering and prevent data leakage
-- **Monitoring**: Detect unusual query patterns that might indicate attacks
+## Build a solution roadmap
 
-## Phase 4: Operationalize security
+After identifying solutions for each capability area, build a phased deployment roadmap aligned with your security strategy:
 
-Security isn't complete at deployment. Establish operational practices that maintain security over time.
+**Phase 1—Foundation**: Deploy platform-wide capabilities first—identity provider with conditional access, network segmentation, CSPM, centralized SIEM, and governance policy engine. These correspond to your platform-scope strategy and must be operational before workloads can inherit a secure baseline.
 
-### Continuous security assessment
+**Phase 2—Workload protection**: Extend protection to individual workloads by priority—data classification and encryption for sensitive data, application security tooling in development pipelines, workload-specific threat detection, and secrets management.
 
-Regularly evaluate your security posture using the assessment tools from both frameworks:
+**Phase 3—Advanced capabilities**: Add capabilities that mature your posture—attack path analysis, AI workload security controls, automated compliance reporting across multiple regulatory standards, and SOAR playbooks for common incident scenarios.
 
-- **Well-Architected Review**: Assess individual workloads against pillar checklists
-- **CSPM secure score**: Track platform security posture
-- **Compliance dashboards**: Monitor adherence to regulatory requirements
+### Evaluate solution fit
 
-### Incident response integration
+When recommending specific solutions, evaluate each against these criteria:
 
-Ensure your incident response processes span all three scopes:
+- **Framework alignment**: Does the solution map directly to MCSB controls or WAF checklist items?
+- **Integration**: Does it connect with your existing identity, monitoring, and governance solutions?
+- **Automation**: Does it support automated assessment and remediation, or require manual operation?
+- **Multi-cloud coverage**: If your strategy spans multiple cloud providers, does the solution provide consistent visibility?
+- **Scalability**: Can it grow with your environment without requiring architectural redesign?
 
-- **Detection**: Security signals from workloads flow to centralized SIEM
-- **Investigation**: Security operations center (SOC) analysts can access workload logs and context
-- **Response**: Playbooks include workload-specific remediation steps
-- **Recovery**: Workload teams have tested recovery procedures
-
-### Security governance reviews
-
-Conduct regular reviews to ensure alignment between strategy and implementation:
-
-- **Quarterly**: Review security metrics and adjust priorities
-- **After incidents**: Update controls based on lessons learned
-- **Before major changes**: Assess security impact of new workloads or platform changes
-
-## Bringing it together: A practical example
-
-Consider an organization deploying a new customer-facing application with AI capabilities.
-
-**CAF provides strategic guidance:**
-- Security objectives prioritize customer data protection
-- Compliance requirements including data protection and system and organization controls
-- Central security team defines data classification standards
-
-**Landing zones provide the foundation:**
-- Application deploys to a dedicated subscription with appropriate policies
-- Network isolation prevents direct internet access to backend services
-- Centralized SIEM monitors for threats across the environment
-
-**WAF guides workload design:**
-- Data encryption at rest and in transit protects customer information
-- Managed identities eliminate credential management risks
-- AI model endpoints implement rate limiting and input validation
-- Application logs integrate with central monitoring
-
-This layered approach ensures security requirements flow consistently from strategy through implementation.
-
-## Key takeaways for cybersecurity architects
-
-When designing security and governance strategies:
-
-1. **Start with strategy**: Use CAF to align security investments with business objectives
-2. **Build a strong foundation**: Implement landing zone controls that enforce security standards
-3. **Design secure workloads**: Apply WAF principles to each application you deploy
-4. **Operationalize continuously**: Security posture requires ongoing assessment and improvement
-
-By combining these frameworks, you create a comprehensive security approach that addresses organizational, environmental, and workload-level concerns.
+The solution recommendations in this unit complement the security strategy designed in the previous unit. Together, they provide an end-to-end approach: evaluate your posture, design your strategy, and recommend the solutions that implement it.

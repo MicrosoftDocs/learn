@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-data-security-compliance.exercise-implement-security-features
+title: "Exercise: Implement security features"
+metadata:
+  title: "Exercise: Implement security features"
+  description: Hands-on exercise to implement Dynamic Data Masking, Row-Level Security, column-level encryption, and auditing in a SQL database.
+  ms.date: 02/05/2026
+  author: JulianePadrao
+  ms.author: jupadrao
+  ms.topic: unit
+durationInMinutes: 30
+content: |
+  [!include[](includes/9-exercise-implement-security-features.md)]

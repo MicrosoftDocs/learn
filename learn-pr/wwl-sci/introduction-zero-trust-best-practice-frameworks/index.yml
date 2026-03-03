@@ -3,7 +3,7 @@ uid: learn.wwl.introduction-zero-trust-best-practice-frameworks
 metadata:
   title: Introduction to Zero Trust and Best Practice Frameworks
   description: "You learn about security best practices and antipatterns, the concept of Zero Trust and its guiding principles, and key best practice frameworks including CAF, WAF, MCRA, and MCSB. You also learn about the Zero Trust adoption framework and how the frameworks relate to each other."
-  ms.date: 02/11/2026
+  ms.date: 02/24/2026
   author: ceperezb
   ms.author: ceperezb
   ms.topic: module

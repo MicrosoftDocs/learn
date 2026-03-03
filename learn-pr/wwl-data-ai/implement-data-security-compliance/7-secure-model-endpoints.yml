@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-data-security-compliance.secure-model-endpoints
+title: Configure secure access to AI services
+metadata:
+  title: Configure secure access to AI services
+  description: Learn how to securely call Azure OpenAI and Azure Machine Learning endpoints from your database using Managed Identity authentication.
+  ms.date: 02/05/2026
+  author: JulianePadrao
+  ms.author: jupadrao
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/7-secure-model-endpoints.md)]

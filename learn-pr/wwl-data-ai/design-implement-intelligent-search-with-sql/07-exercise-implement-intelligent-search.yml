@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-implement-intelligent-search-with-sql.exercise-implement-intelligent-search
+title: Exercise - Implement intelligent search with full-text, vector, and hybrid queries
+metadata:
+  title: Exercise - Implement intelligent search with full-text, vector, and hybrid queries
+  description: Practice implementing full-text search, vector search, and hybrid search with Reciprocal Rank Fusion in SQL.
+  author: calopez
+  ms.author: calopez
+  ms.date: 02/03/2026
+  ms.topic: unit
+durationInMinutes: 30
+content: |
+  [!include[](includes/07-exercise-implement-intelligent-search.md)]
