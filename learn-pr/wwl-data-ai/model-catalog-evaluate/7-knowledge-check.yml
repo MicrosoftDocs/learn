@@ -1,0 +1,48 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.model-catalog-evaluate.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Check your understanding of model selection, deployment, and evaluation concepts.
+  ms.date: 02/13/2026
+  author: ivorb
+  ms.author: berryivor
+  ms.topic: unit
+  ai-usage: ai-assisted
+durationInMinutes: 3
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Which deployment type in Microsoft Foundry portal requires an Azure Marketplace subscription for models from partners and the community?"
+    choices:
+    - content: "Managed compute"
+      isCorrect: false
+      explanation: "Incorrect. Managed compute doesn't necessarily require Azure Marketplace subscriptions. It uses Azure virtual machines and is billed for hosting and inference costs."
+    - content: "Serverless API"
+      isCorrect: true
+      explanation: "Correct. Serverless API deployments for models from partners and community require Azure Marketplace subscriptions, while models sold directly by Azure don't require this subscription."
+    - content: "Provisioned"
+      isCorrect: false
+      explanation: "Incorrect. Provisioned deployments reserve dedicated capacity but don't specifically require Azure Marketplace subscriptions."
+  - content: "Which evaluation metric measures whether model responses are based on provided context rather than speculation?"
+    choices:
+    - content: "Fluency"
+      isCorrect: false
+      explanation: "Incorrect. Fluency evaluates linguistic correctness and natural language quality, not whether responses are grounded in context."
+    - content: "Groundedness"
+      isCorrect: true
+      explanation: "Correct. Groundedness determines whether responses are based on provided context rather than speculation or the model's general knowledge."
+    - content: "Coherence"
+      isCorrect: false
+      explanation: "Incorrect. Coherence assesses whether responses flow logically and maintain consistent ideas, not whether they're based on provided context."
+  - content: "What type of model should you select if your application needs to process both text and images?"
+    choices:
+    - content: "Small Language Model (SLM)"
+      isCorrect: false
+      explanation: "Incorrect. SLMs are efficient text-focused models but don't inherently process images alongside text."
+    - content: "Embedding model"
+      isCorrect: false
+      explanation: "Incorrect. Embedding models convert text into numerical representations for semantic search and similarity tasks, not for processing images."
+    - content: "Multimodal model"
+      isCorrect: true
+      explanation: "Correct. Multimodal models like GPT-4o and Phi-3-vision can process multiple data types including both text and images."

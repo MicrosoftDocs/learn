@@ -22,7 +22,7 @@ After you add an app to Intune, you can assign the app to other groups of users 
 
 Use these steps to add an app to Intune:
 
-1. **Sign in** to Microsoft Endpoint Manager admin center, **select Apps > All apps > Add**.
+1. **Sign in** to Microsoft Intune admin center, **select Apps > All apps > Add**.
 
 2. **Choose the type of app you need** in the Intune 'Select app type' pane.
 
@@ -36,7 +36,7 @@ Use these steps to add an app to Intune:
 
 ## Install apps on enrolled devices
 
-Your customers should use the Company Portal app to install apps that are assigned as 'available' (optional). The Company Portal app itself can be installed manually from the Microsoft Store on Windows devices or set as 'required' in Intune, so it installs automatically on assigned devices.
+Your users should use the Company Portal app to install apps that are assigned as 'available' (optional). The Company Portal app itself can be installed manually from the Microsoft Store on Windows devices or set as 'required' in Intune, so it installs automatically on assigned devices.
 
 To verify the app is accessible on your customers' enrolled devices, follow these steps:
 

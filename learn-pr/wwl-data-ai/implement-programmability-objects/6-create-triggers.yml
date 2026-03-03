@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-programmability-objects.create-triggers
+title: Create triggers
+metadata:
+  title: Create triggers
+  description: Learn how to create DML and DDL triggers in SQL Server to automate database operations, enforce business rules, and maintain data integrity.
+  ms.date: 01/22/2026
+  author: JulianePadrao
+  ms.author: jupadrao
+  ms.topic: unit
+  ai-usage: ai-generated
+azureSandbox: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/6-create-triggers.md)]

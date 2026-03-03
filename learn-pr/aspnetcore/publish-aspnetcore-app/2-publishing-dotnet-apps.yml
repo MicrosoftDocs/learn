@@ -6,7 +6,7 @@ metadata:
   description: This unit explains the difference between building and publishing, as well as the different types of deployments available for .NET apps.
   ms.date: 8/29/2024
   author: camsoper
-  ms.author: casoper
+  ms.author: daroth
   ms.topic: unit
 durationInMinutes: 5
 content: |

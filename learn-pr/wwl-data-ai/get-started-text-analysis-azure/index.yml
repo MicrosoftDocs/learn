@@ -1,0 +1,43 @@
+### YamlMime:Module
+uid: learn.wwl.get-started-with-text-analysis-in-azure
+metadata:
+  title: Get started with text analysis in Azure
+  description: "Get started with text analysis in Azure"
+  ms.date: 02/10/2026
+  ms.update-cycle: 180-days
+  author: wwlpublish
+  ms.author: sheryang
+  ms.topic: module
+  ms.collection: wwl-ai-copilot
+  ms.custom:
+  - N/A
+  ms.service: azure-ai-language
+  ai-usage: ai-assisted
+title: Get started with text analysis in Azure
+summary: Explore Azure Language's text analysis features, which include sentiment analysis, key phrase extraction, named entity recognition, and language detection.
+abstract: Learn how to use Azure Language for text analysis
+prerequisites: Ability to navigate the Azure portal
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- ai-engineer
+- data-scientist
+- developer
+- solution-architect
+- student
+products:
+- ai-services
+- azure-ai-foundry
+subjects:
+- natural-language-processing
+units:
+- learn.wwl.get-started-with-text-analysis-in-azure.introduction
+- learn.wwl.get-started-with-text-analysis-in-azure.azure-language
+- learn.wwl.get-started-with-text-analysis-in-azure.language-sdk
+- learn.wwl.get-started-with-text-analysis-in-azure.language-mcp
+- learn.wwl.get-started-with-text-analysis-in-azure.exercise
+- learn.wwl.get-started-with-text-analysis-in-azure.knowledge-check
+- learn.wwl.get-started-with-text-analysis-in-azure.summary
+badge:
+  uid: learn.wwl.get-started-with-text-analysis-in-azure.badge

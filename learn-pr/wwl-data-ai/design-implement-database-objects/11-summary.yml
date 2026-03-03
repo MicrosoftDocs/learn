@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-implement-database-objects.summary
+title: Summary
+metadata:
+  title: Summary
+  description: "Summary of designing and implementing database objects"
+  ms.date: 02/24/2026
+  author: JulianePadrao
+  ms.author: jupadrao
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/11-summary.md)]

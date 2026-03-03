@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.evaluate-optimize-agents.git-based-experimentation-workflow
+metadata:
+  title: Apply Git-based workflows to optimization experiments
+  description: Learn how to organize agent optimization experiments using Git branches, systematic testing scripts, and documented evaluation results for reproducible comparisons.
+  ms.date: 02/17/2026
+  author: madiepev
+  ms.author: madiepev
+  ms.topic: unit
+  ai-usage: ai-generated
+title: Apply Git-based workflows to optimization experiments
+durationInMinutes: 8
+content: |
+  [!include[](includes/3-git-based-experimentation-workflow.md)]

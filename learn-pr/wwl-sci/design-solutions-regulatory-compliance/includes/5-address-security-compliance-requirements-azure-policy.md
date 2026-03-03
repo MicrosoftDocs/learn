@@ -25,7 +25,7 @@ Azure Policy provides multiple effects that determine how the platform responds 
 Preventive effects block noncompliant configurations before they're deployed:
 
 - **Deny** - Prevents resource creation or updates that violate the policy
-- **DenyAction** - Blocks specific actions on resources regardless of configuration
+- **DenyAction** - Prevents specific lifecycle actions (such as delete) on protected resources
 
 Design preventive controls for requirements where noncompliance creates immediate risk, such as:
 
@@ -52,6 +52,16 @@ Corrective effects automatically remediate noncompliant configurations:
 
 Design corrective controls to reduce manual remediation effort and ensure consistent configuration across resources.
 
+### Operational controls
+
+These effects support policy lifecycle management and attestation-based compliance:
+
+- **Disabled** - Turns off policy evaluation without removing the assignment. Use this effect during phased rollout to test policy definitions before enforcement.
+- **Manual** - Requires attestation to set compliance state. Use for controls that can't be automatically evaluated, such as procedural or organizational requirements.
+
+> [!NOTE]
+> Azure Policy evaluates effects in a specific order: disabled, append/modify, deny, audit, manual, auditIfNotExists, then denyAction. When designing layered policies across multiple scopes, consider this order to predict enforcement behavior.
+
 ## Aligning policies with compliance frameworks
 
 Azure Policy includes built-in regulatory compliance initiatives that map directly to compliance framework requirements. The Microsoft cloud security benchmark (MCSB) provides a foundation that aligns with multiple frameworks:
@@ -60,8 +70,11 @@ Azure Policy includes built-in regulatory compliance initiatives that map direct
 - NIST SP 800-53
 - PCI-DSS
 - ISO 27001
+- NIST CSF v2.0
+- NIS2 (EU directive for cybersecurity)
+- DORA (EU Digital Operational Resilience Act)
 
-When designing your policy architecture:
+When designing your policy architecture, consider the following approaches.
 
 ### Start with built-in initiatives
 
@@ -99,6 +112,8 @@ Design your management group structure to support policy inheritance:
 - Assign workload-specific policies at lower levels (landing zone or application management groups)
 - Use exclusions sparingly and with documented justification
 
+When multiple policies apply to the same resource at different scopes, the result is **cumulative most restrictive**. If two overlapping policies both use the deny effect, the resource is blocked by both. Design your scope hierarchy with this behavior in mind to avoid unintended restrictions.
+
 ### Assignment considerations
 
 When assigning policies:
@@ -115,9 +130,9 @@ Azure Policy continuously evaluates resources against assigned policies. Design 
 
 Understand when evaluation occurs to set appropriate expectations:
 
-- New policy assignments evaluate within approximately 5 minutes
-- Resource changes evaluate within approximately 15 minutes
-- Full compliance scans run every 24 hours
+- New policy assignments are applied to the scope within approximately 5 minutes, then the evaluation cycle begins. For large scopes, evaluation time varies and has no predefined completion guarantee.
+- Individual resource changes are reflected within approximately 15 minutes.
+- A full compliance evaluation cycle runs automatically every 24 hours. On-demand scans can also be triggered through REST API, Azure CLI, or Azure PowerShell.
 
 ### Compliance states
 
@@ -125,8 +140,11 @@ Resources can be in several compliance states:
 
 - **Compliant** - Resource meets policy requirements
 - **Non-compliant** - Resource violates policy conditions
-- **Exempt** - Resource is explicitly excluded from evaluation
-- **Conflicting** - Multiple policies have incompatible requirements
+- **Exempt** - Resource is excluded from evaluation through a policy exemption
+- **Conflicting** - Multiple policies have contradicting rules at the same scope
+- **Error** - A system error prevented evaluation (such as a template or evaluation error)
+- **Unknown** - Default state for policies with the manual effect, indicating attestation is required
+- **Protected** - Resource is covered by an assignment with a denyAction effect
 
 Design dashboards and alerts based on these states to track compliance posture over time.
 
@@ -161,4 +179,5 @@ When designing your Azure Policy implementation:
 - **Balance enforcement with agility** - Use audit mode initially to assess impact before enabling deny effects
 - **Plan exemption governance** - Establish approval workflows and time limits for policy exemptions
 - **Integrate with Defender for Cloud** - Use the regulatory compliance dashboard for centralized visibility across your compliance initiatives
-- **Version control policies** - Store custom policy definitions in source control and deploy through CI/CD pipelines
+- **Adopt Policy as Code** - Store custom policy definitions in source control and deploy through CI/CD pipelines using the [Policy as Code workflow](https://learn.microsoft.com/azure/governance/policy/concepts/policy-as-code)
+- **Extend governance to hybrid environments** - Use Azure Arc to apply Azure Policy to resources outside Azure, enabling consistent governance across on-premises and multicloud environments

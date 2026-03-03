@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.analyze-telemetry-logs-metrics.explore-logs-errors-performance
+title: Explore logs for errors and performance
+metadata:
+  title: Explore Logs for Errors and Performance
+  description: Explore logs for errors and performance
+  ms.date: 02/19/2026
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: unit
+durationInMinutes: 12
+content: |
+  [!include[](includes/3-explore-logs-errors-performance.md)]

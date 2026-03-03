@@ -6,7 +6,7 @@ metadata:
   description: Introduction to ASP.NET Core middleware.
   ms.date: 8/28/2024
   author: camsoper
-  ms.author: casoper
+  ms.author: daroth
   ms.topic: unit
 durationInMinutes: 1
 content: |

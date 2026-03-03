@@ -6,6 +6,56 @@
       "redirect_document_id": false
     },
     {
+      "source_path_from_root": "/learn-pr/device-partner-university/learning-zone/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/device-partner-university/learning-zone/1-intro.yml",
+      "redirect_url": "https://learn.microsoft.com/training",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/device-partner-university/learning-zone/2-microsoft-learn.yml",
+      "redirect_url": "https://learn.microsoft.com/training",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/device-partner-university/learning-zone/3-activate.yml",
+      "redirect_url": "https://learn.microsoft.com/training",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/device-partner-university/learning-zone/4-personalized-lessons.yml",
+      "redirect_url": "https://learn.microsoft.com/training",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/device-partner-university/learning-zone/5-new-lesson.yml",
+      "redirect_url": "https://learn.microsoft.com/training",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/device-partner-university/learning-zone/6-assign-manage.yml",
+      "redirect_url": "https://learn.microsoft.com/training",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/device-partner-university/learning-zone/7-insights.yml",
+      "redirect_url": "https://learn.microsoft.com/training",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/device-partner-university/learning-zone/8-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/device-partner-university/learning-zone/9-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training",
+      "redirect_document_id": false
+    },
+    {
       "source_path_from_root": "/learn-pr/azure/deploy-java-spring-boot-app-service-mysql/1-introduction.yml",
       "redirect_url": "https://learn.microsoft.com/azure/app-service/tutorial-java-spring-cosmosdb",
       "redirect_document_id": false
@@ -64413,6 +64463,46 @@
       "redirect_url": "https://learn.microsoft.com/azure/storage/files/storage-files-introduction",
       "redirect_document_id": false
     },
+    {
+      "source_path": "learn-pr/paths/build-workflows-with-logic-apps/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/logic-apps/logic-apps-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-logic-apps/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/logic-apps/logic-apps-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-logic-apps/2-what-is-logic-apps.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/logic-apps/logic-apps-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-logic-apps/3-how-logic-apps-works.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/logic-apps/logic-apps-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-logic-apps/4-when-to-use-logic-apps.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/logic-apps/logic-apps-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-logic-apps/5-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/logic-apps/logic-apps-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-logic-apps/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/logic-apps/logic-apps-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-logic-apps/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/logic-apps/logic-apps-overview",
+      "redirect_document_id": false
+    },
     {                                                                    
       "source_path": "learn-pr/azure/intro-to-azure-arc/index.yml",
       "redirect_url": "https://learn.microsoft.com/azure/azure-arc/overview",
@@ -64507,6 +64597,61 @@
       "source_path": "learn-pr/wwl-data-ai/get-started-with-generative-ai-and-agents/5-using-an-agent.yml",
       "redirect_url": "https://learn.microsoft.com/training/modules/get-started-with-generative-ai-and-agents/4-creating-an-agent",
       "redirect_document_id": false
-    }
+    },
+    { 
+      "source_path": "learn-pr/paths/deploy-a-website-with-azure-app-service/index.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/app-service/deploy-staging-slots?tabs=portal",
+      "redirect_document_id": false
+    },
+    { 
+      "source_path": "learn-pr/azure/stage-deploy-app-service-deployment-slots/index.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/app-service/deploy-staging-slots?tabs=portal",
+      "redirect_document_id": false
+    },
+    { 
+      "source_path": "learn-pr/azure/stage-deploy-app-service-deployment-slots/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/app-service/deploy-staging-slots?tabs=portal",
+      "redirect_document_id": false
+    },  
+    { 
+      "source_path": "learn-pr/azure/stage-deploy-app-service-deployment-slots/2-create-deployment-slots.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/app-service/deploy-staging-slots?tabs=portal",
+      "redirect_document_id": false
+    },
+    { 
+      "source_path": "learn-pr/azure/stage-deploy-app-service-deployment-slots/3-exercise-create-deployment-slots.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/app-service/deploy-staging-slots?tabs=portal",
+      "redirect_document_id": false
+    },
+    { 
+      "source_path": "learn-pr/azure/stage-deploy-app-service-deployment-slots/4-deploy-a-web-app-by-swapping-deployment-slots.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/app-service/deploy-staging-slots?tabs=portal",
+      "redirect_document_id": false
+    },
+    { 
+      "source_path": "learn-pr/azure/stage-deploy-app-service-deployment-slots/5-exercise-deploy-a-web-app-by-using-deployment-slots.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/app-service/deploy-staging-slots?tabs=portal",
+      "redirect_document_id": false
+    },  
+    { 
+      "source_path": "learn-pr/azure/stage-deploy-app-service-deployment-slots/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/app-service/deploy-staging-slots?tabs=portal",
+      "redirect_document_id": false
+    },                    
+    { 
+      "source_path": "learn-pr/wwl-azure/active-directory-domain-services-migration/5-explore-active-directory-migration-tool.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/training/paths/migrate-servers-workloads-premises-hybrid-environments?tabs=portal",
+      "redirect_document_id": false
+    },    
+    { 
+      "source_path": "learn-pr/wwl-azure/active-directory-domain-services-migration/6-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/training/paths/migrate-servers-workloads-premises-hybrid-environments?tabs=portal",
+      "redirect_document_id": false
+    },
+        { 
+      "source_path": "learn-pr/wwl-azure/active-directory-domain-services-migration/7-summary-resources.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/training/paths/migrate-servers-workloads-premises-hybrid-environments?tabs=portal",
+      "redirect_document_id": false
+    }      
   ]
 }

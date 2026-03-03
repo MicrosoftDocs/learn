@@ -4,7 +4,7 @@ title: Implement validation checks
 metadata:
   title: Implement Validation Checks
   description: Learn how to implement validation checks including nullability, data cardinality, and range checking in Azure Databricks using pipeline expectations and table constraints.
-  ms.date: 12/07/2025
+  ms.date: 02/19/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit

@@ -4,22 +4,6 @@ Setting up Visual Studio Code for AI agent development brings enterprise-grade c
 
 The Microsoft Foundry for Visual Studio Code extension provides direct access to Microsoft Foundry Agent Service capabilities. This extension creates an integrated experience for agent development that combines visual design tools with code-based configuration.
 
-### Core capabilities
-
-The extension offers several key features that streamline agent development:
-
-**Agent discovery and management** - Browse, create, and manage AI agents within your Microsoft Foundry projects. View all your agents in the Azure Resources explorer without opening a browser.
-
-**Visual agent designer** - Configure agent instructions, tools, and capabilities through an intuitive interface. The designer provides the same power as the Foundry portal while keeping you in your development environment.
-
-**Integrated testing** - Test agents in real-time using the built-in playground. Verify behavior and iterate on designs without switching contexts or tools.
-
-**Code generation** - Generate sample integration code to connect agents with your applications. The extension creates ready-to-use code snippets that accelerate implementation.
-
-**Deployment pipeline** - Deploy agents directly to Microsoft Foundry for production use. Simple commands handle the deployment process, providing feedback about status and results.
-
-**Dual configuration modes** - Work with both visual interfaces and direct YAML editing. Switch between modes based on your immediate needs and preferences.
-
 ![Screenshot of an agent details in the Microsoft Foundry VS Code extension.](../media/vs-code-agent.png)
 
 ## Installing and configuring the extension
@@ -86,65 +70,6 @@ With the extension configured and a model deployed, you're ready to create an ag
 ![Screenshot of creating a new agent in the Microsoft Foundry VS Code extension.](../media/vs-code-create-new-agent.png)
 
 Both views remain synchronized; changes in one automatically update the other. This dual approach lets you work with whichever format feels more natural for your current task.
-
-## Understanding the development workflow
-
-The Microsoft Foundry extension supports an efficient development workflow:
-
-1. **Create or import** agents using the visual designer or existing YAML files
-1. **Configure** agent properties, instructions, and capabilities
-1. **Test** immediately using the integrated playground
-1. **Iterate** on design based on test results
-1. **Deploy** to Azure with a single command
-1. **Generate integration code** for your applications
-1. **Monitor** deployed agents through the Azure Resources view
-
-This workflow eliminates context switching between tools, keeping you focused on agent development rather than infrastructure management.
-
-## Working with agent YAML files
-
-While the visual designer provides an accessible interface, the YAML files give you direct access to agent configuration. Understanding YAML structure helps you make precise changes and version control your agents effectively.
-
-### Basic YAML structure
-
-Here's a typical agent YAML file:
-
-```yaml
-# yaml-language-server: $schema=https://aka.ms/ai-foundry-vsc/agent/1.0.0
-version: 1.0.0
-name: customer-service-agent
-description: Handles customer inquiries and appointment scheduling
-id: ''
-metadata:
-  authors:
-    - your-name
-  tags:
-    - customer-service
-    - healthcare
-model:
-  id: 'gpt-4o-deployment'
-  options:
-    temperature: 0.7
-    top_p: 1
-instructions: |
-  You're a helpful customer service agent for a healthcare organization.
-  Assist patients with scheduling appointments and answering questions.
-tools: []
-```
-
-The YAML format is straightforward, with clear sections for each aspect of your agent's configuration. You can edit this file directly or use the visual designer—both approaches modify the same underlying configuration.
-
-### Benefits of YAML configuration
-
-Direct YAML editing provides several advantages:
-
-- **Version control** - Track changes in Git alongside your application code
-- **Bulk updates** - Make multiple changes simultaneously with confidence
-- **Templates** - Create reusable agent templates for consistent configurations
-- **Code review** - Include agent configurations in your standard code review processes
-- **Automation** - Build scripts that generate or modify agent configurations programmatically
-
-The extension validates YAML syntax in real-time, highlighting errors and providing suggestions as you type.
 
 ## Managing multiple agents
 

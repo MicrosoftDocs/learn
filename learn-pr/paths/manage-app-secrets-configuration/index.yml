@@ -1,0 +1,30 @@
+### YamlMime:LearningPath
+uid: learn.wwl.manage-app-secrets-configuration
+metadata:
+  title: Manage Application Secrets and Configuration for AI Solutions
+  description: Learn how to manage application secrets and configuration for AI solutions on Azure using Azure Key Vault and Azure App Configuration.
+  ms.date: 02/18/2026
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: learning-path
+title: Manage application secrets and configuration for AI solutions
+prerequisites: |
+  - Programming experience with Python.
+  - Basic understanding of Azure services and cloud computing concepts.
+summary: |
+  This learning path teaches you how to securely manage secrets and centralize configuration for AI solutions on Azure. You start by using Azure Key Vault to store, organize, and retrieve secrets with managed identity authentication, handle secret versioning and rotation for zero-downtime credential updates, and implement caching strategies that reduce API calls while maintaining credential freshness. You then use Azure App Configuration to centralize application settings, organize key-value pairs with labels for environment-specific variants, manage feature flags for controlled rollouts, and reference Key Vault secrets so the application retrieves configuration and secrets through a single path.
+iconUrl: /training/achievements/generic-trophy.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- azure-key-vault
+- azure-app-configuration
+subjects:
+- security
+modules:
+- learn.wwl.manage-app-secrets-key-vault
+- learn.wwl.manage-app-settings-app-config
+trophy:
+  uid: learn.wwl.manage-app-secrets-configuration.trophy

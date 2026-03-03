@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-app-settings-app-config.connect-app-configuration
+title: Connect to App Configuration from application code
+metadata:
+  title: Connect to App Configuration from Application Code
+  description: Connect to App Configuration from application code
+  ms.date: 02/17/2026
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: unit
+durationInMinutes: 11
+content: |
+  [!include[](includes/2-connect-app-configuration.md)]

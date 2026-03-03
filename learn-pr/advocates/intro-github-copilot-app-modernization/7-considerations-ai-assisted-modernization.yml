@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-github-app-modernization.considerations-ai-assisted-modernization
+title: Considerations for AI-assisted modernization
+metadata:
+  title: Considerations for AI-Assisted Modernization
+  description: Understand the key considerations when using AI-assisted tools like GitHub Copilot for app modernization, including best practices, potential challenges, and strategies for successful implementation.
+  ms.date: 02/17/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/7-considerations-ai-assisted-modernization.md)]

@@ -2,6 +2,16 @@ As a Security Architect, you need to address the unique security challenges that
 
 AI workloads create new attack surfaces that traditional security measures can't fully address. You must integrate AI-specific security considerations into your cloud adoption strategy, planning, and operations to protect these valuable assets.
 
+## How the frameworks apply to AI
+
+Each framework you've studied contributes a distinct layer to your AI security strategy:
+
+- **CAF Secure methodology**: Provides the end-to-end process—from defining AI security objectives in Strategy, through preparing secure AI infrastructure in Ready, to monitoring AI threats in Manage. The CIA Triad and Zero Trust principles from the Secure methodology apply directly to AI workloads.
+- **Azure landing zones**: Provide the platform foundation for AI deployment. AI workloads deploy into application landing zones like any other workload, inheriting baseline policies, network controls, and identity management. The landing zone's security design area establishes the guardrails within which AI resources operate.
+- **WAF security pillar**: Guides workload-level security decisions for individual AI applications. The five design principles—plan readiness, protect confidentiality, protect integrity, protect availability, and sustain posture—frame how you secure each AI workload.
+
+These layers work together: landing zones provide platform guardrails, the WAF security pillar guides workload design, and the CAF Secure methodology ensures security spans the full adoption lifecycle.
+
 ## AI security within the Cloud Adoption Framework
 
 The CAF AI adoption scenario includes security guidance that spans the same phases as the Secure methodology—Strategy, Plan, Ready, Adopt, Govern, and Manage. This guidance addresses AI-specific risks while aligning with your broader security strategy.
@@ -76,9 +86,31 @@ AI workloads rely on data and artifacts that require robust protection:
 - Implement access controls for AI inference endpoints
 - Monitor for data exfiltration through AI interactions
 
+## Monitoring and detecting AI threats
+
+AI systems require specialized monitoring to detect threats that traditional security tools may miss.
+
+### AI-specific threat detection
+
+Implement monitoring that addresses AI-unique attack patterns:
+
+- Detect prompt injection attempts and jailbreak patterns
+- Monitor for unusual query patterns that might indicate data extraction
+- Track model behavior changes that could indicate compromise
+- Alert on unauthorized model access or modification
+
+### Integration with security operations
+
+AI threat detection should feed into your existing security operations:
+
+- Integrate AI alerts with your SIEM for correlation with other security events
+- Include AI systems in incident response playbooks
+- Train SOC analysts on AI-specific threats and investigation techniques
+- Establish escalation paths for AI security incidents
+
 ## AI governance and responsible AI
 
-AI governance integrates with your broader security governance to ensure AI systems operate safely and ethically.
+AI governance integrates with your broader security governance to ensure AI systems operate safely and ethically. As covered in the WAF security pillar unit, the AI shared responsibility model defines how security obligations shift depending on whether you consume AI as SaaS, PaaS, or IaaS—governance policies should reflect those boundaries.
 
 ### Responsible AI principles
 
@@ -103,28 +135,6 @@ The NIST AI Risk Management Framework (AI RMF) provides a structured approach to
 - **Manage**: Prioritize and respond to AI risks
 
 Integrate AI risk management into your broader risk framework rather than treating it as a separate process.
-
-## Monitoring and detecting AI threats
-
-AI systems require specialized monitoring to detect threats that traditional security tools may miss.
-
-### AI-specific threat detection
-
-Implement monitoring that addresses AI-unique attack patterns:
-
-- Detect prompt injection attempts and jailbreak patterns
-- Monitor for unusual query patterns that might indicate data extraction
-- Track model behavior changes that could indicate compromise
-- Alert on unauthorized model access or modification
-
-### Integration with security operations
-
-AI threat detection should feed into your existing security operations:
-
-- Integrate AI alerts with your SIEM for correlation with other security events
-- Include AI systems in incident response playbooks
-- Train SOC analysts on AI-specific threats and investigation techniques
-- Establish escalation paths for AI security incidents
 
 ## Bringing it all together
 

@@ -1,3 +1,5 @@
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=9641bd12-f1cf-4ef0-be79-1dd29424da72]
+
 Before you cleanse or transform data, you need to understand what's in your tables. **Profiling data** means examining your datasets to generate summary statistics—counts, averages, value distributions, and null percentages—that reveal the quality and structure of your data. This foundation helps you identify issues like missing values, outliers, and unexpected patterns before they cause problems downstream.
 
 In this unit, you learn how to generate summary statistics using SQL commands and the data profiling feature in Azure Databricks.

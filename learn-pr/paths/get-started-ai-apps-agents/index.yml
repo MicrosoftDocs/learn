@@ -4,7 +4,7 @@ metadata:
   title: Get started with AI applications and agents on Azure
   description: Learn how to get started with AI workloads and solutions in Microsoft Foundry.
   brand: azure
-  ms.date: 02/03/2026
+  ms.date: 02/22/2026
   author: sherzyang
   ms.author: sheryang
   ms.topic: learning-path
@@ -27,9 +27,14 @@ roles:
 subjects:
 - artificial-intelligence
 products:
-- azure-ai-foundry
+- microsoft-foundry
 modules:
 - learn.wwl.get-started-with-ai-in-azure
 - learn.wwl.get-started-with-generative-ai-and-agents
+- learn.wwl.get-started-with-text-analysis-in-azure
+- learn.wwl.get-started-with-speech-in-azure
+- learn.wwl.get-started-with-computer-vision-in-azure
+- learn.wwl.get-started-information-extraction
+
 trophy:
   uid: learn.get-started-ai-apps-agents.trophy

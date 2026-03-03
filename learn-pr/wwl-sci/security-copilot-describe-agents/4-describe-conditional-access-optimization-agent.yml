@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
 uid: learn.security-copilot-describe-agents.describe-conditional-access-optimization-agent
-title: Describe the Conditional Access Optimization Agent
+title: Describe the Security Copilot agents in Microsoft Entra
 metadata:
-  title: Describe the Conditional Access Optimization Agent
-  description: Describe the Conditional Access Optimization Agent.
+  title: Describe the Security Copilot agents in Microsoft Entra
+  description: Describe the Security Copilot agents in Microsoft Entra.
   author: wwlpublish
   ms.author: ceperezb
-  ms.date: 05/08/2025
+  ms.date: 02/15/2026
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot

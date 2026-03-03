@@ -1,0 +1,48 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-azure-boards-using-github-copilot.knowledge-check
+title: Module assessment
+metadata:
+  title: Module assessment
+  description: "Knowledge check"
+  ms.date: 02/25/2026
+  author: wwlpublish
+  ms.author: petender
+  ms.topic: unit
+  module_assessment: true
+durationInMinutes: 3
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which condition most improves the quality of Copilot-assisted execution from Azure Boards work items?"
+    choices:
+    - content: "Adding explicit acceptance criteria, technical context, and test expectations in the work item."
+      isCorrect: true
+      explanation: "Correct. Clear requirements and constraints help Copilot generate more relevant and reviewable changes."
+    - content: "Keeping work items brief and relying on pull request comments to define all requirements."
+      isCorrect: false
+      explanation: "Incorrect. Minimal detail increases ambiguity and usually leads to extra rework."
+    - content: "Assigning one large epic directly to Copilot instead of splitting work into smaller items."
+      isCorrect: false
+      explanation: "Incorrect. Large, multi-outcome requests are harder to execute reliably than scoped work items."
+  - content: "After connecting Azure Boards to GitHub, what provides the strongest delivery traceability?"
+    choices:
+    - content: "A flow where work items link to commits and pull requests, and status is updated from merge activity."
+      isCorrect: true
+      explanation: "Correct. Linked artifacts and state updates create a reliable audit trail from planning to delivery."
+    - content: "Tracking all progress only in GitHub issues without linking back to Azure Boards."
+      isCorrect: false
+      explanation: "Incorrect. Without links to work items, portfolio-level traceability in Azure Boards is reduced."
+    - content: "Using manual status updates only at the end of each sprint review."
+      isCorrect: false
+      explanation: "Incorrect. Delayed manual updates reduce visibility and increase reporting gaps."
+  - content: "What is the most appropriate human-in-the-loop practice for Copilot-generated pull requests?"
+    choices:
+    - content: "Require reviewer validation for scope, security, and test quality before merge."
+      isCorrect: true
+      explanation: "Correct. Human review ensures quality, governance, and compliance requirements are met."
+    - content: "Auto-merge all Copilot pull requests to maximize throughput."
+      isCorrect: false
+      explanation: "Incorrect. Automated merging without review can introduce quality and security risks."
+    - content: "Skip testing when acceptance criteria look complete."
+      isCorrect: false
+      explanation: "Incorrect. Validation is still required even when generated output appears correct."

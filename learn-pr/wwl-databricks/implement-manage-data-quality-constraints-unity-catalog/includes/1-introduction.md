@@ -1,3 +1,5 @@
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=8f94718e-160e-4b3f-902f-fb1d807a3107]
+
 **Data quality** issues can derail analytics projects, corrupt business reports, and erode confidence in your data platform. When invalid data enters your tables—whether through type mismatches, missing required values, or unexpected schema changes—problems compound as that data flows through pipelines and reaches downstream consumers. Implementing robust **data quality constraints** at the point of ingestion creates a foundation of trust in your data assets.
 
 Azure Databricks provides multiple mechanisms for enforcing data quality within **Unity Catalog**. **Schema enforcement** validates data types automatically when writing to Delta Lake tables. **Table constraints** define rules that reject invalid records at write time. **Pipeline expectations** in Lakeflow Spark Declarative Pipelines enable real-time quality checks on streaming data with configurable actions for violations. Together, these capabilities form a comprehensive approach to maintaining data integrity.

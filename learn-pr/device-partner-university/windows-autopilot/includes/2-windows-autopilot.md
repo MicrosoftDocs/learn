@@ -20,9 +20,9 @@ When an employee receives a device—whether via mail or other delivery methods�
 
 Traditional deployment methods require IT administrators to maintain custom operating system images and device drivers for each hardware model.
 
-Windows Autopilot applies a preinstalled, OEM-optimized version of the Windows client during initial deployment of new devices. This approach eliminates the need for manual image and driver management, streamlining setup procedures and reducing IT workload.
+During initial device deployment, Windows Autopilot leverages the instance of Windows that comes preinstalled on the device (typically provided by the OEM). This approach eliminates the need for manual image and driver management, streamlining setup procedures and reducing IT workload.
 
-Existing Windows installations can be transformed into “business-ready” states by:
+Existing Windows installations can be transformed by Autopilot into “business-ready” states by:
 
 - Applying settings and policies.
 - Installing apps.
@@ -44,15 +44,14 @@ Existing Windows installations can be transformed into “business-ready” stat
 
 - Simplified image management: Eliminates the need to maintain custom operating system images and drivers for each device model.
 - Remote reset capabilities: Enables IT administrators to resolve device issues remotely without requiring physical access.
-- Automatic updates: For users with Microsoft 365 subscriptions (sold separately), Windows Autopilot supports automatic updates to ensure devices remain current with the latest Windows version.
-- Device upgrade and repurposing: Windows Autopilot can be used to upgrade existing devices and deploy specialized configurations such as kiosks, digital signage, or shared-use systems.
+- Automatic updates: In Autopilot deployments that use Intune’s Enrollment Status Page (ESP), monthly security (quality) updates can be installed during Windows out-of-the-box experience (OOBE) when enabled via the ESP setting “Install Windows quality updates (might restart the device).” Feature updates aren’t supported for installation during OOBE.
 
 ## End-users experience
 
-- Devices are ready for use upon unboxing and sign in, minimizing delays typically associated with traditional deployment methods.
+- Devices are ready for use shortly after unboxing and sign in, minimizing delays typically associated with traditional deployment methods.
 - Provides users with up-to-date tools and configurations aligned with current workplace technology standards.
 - Devices can be preconfigured and shipped directly to users at various locations, eliminating the need for centralized setup.
-- Devices remain current with the latest Windows version, supporting optimal functionality and security.
+- Devices remain current with the latest Windows updates, supporting optimal functionality and security.
 
 ## Differentiating processes
 
@@ -60,9 +59,12 @@ Here are deployment scenarios that fall under [Windows Autopilot](/autopilot/ove
 
 - *User-driven:* Users enroll their devices using their credentials for a personalized setup.
 - *Self-deploying:* Devices configure automatically without user interaction.
-- *Pre-provisioning:* IT preconfigures devices before delivery, ensuring they're ready for immediate use.
+- *Pre-provisioning:* IT preconfigures devices before delivery, reducing setup time so end users can start using their devices faster after powering it on and signing in.
 
 In these scenarios, devices must first be registered with the Windows Autopilot deployment service. Once registration is complete, a Windows Autopilot profile must also be assigned to the device, defining the configuration options for the specific scenario. In contrast, [Windows Autopilot device preparation](/autopilot/device-preparation/overview) doesn’t require registration. While there’s still a profile assignment process, a Windows Autopilot profile is assigned to users rather than individual devices.
+
+> [!NOTE]
+> Windows Autopilot device preparation is still evolving, and device-based assignment is currently in development.
 
 ## Register and customize
 

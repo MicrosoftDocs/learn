@@ -17,6 +17,7 @@ abstract: |
     - Use GitHub Copilot's Ask mode to analyze the code vulnerabilities associated with a GitHub issue and suggest potential fixes.
     - Use GitHub Copilot's Agent mode to fix code vulnerabilities and resolve GitHub issues.
 prerequisites: |
+  - Experience using Git and GitHub for version control.
   - Experience using GitHub Copilot in Visual Studio Code.
   - Experience developing C# applications.
 iconUrl: /learn/achievements/generic-badge.svg
