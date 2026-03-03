@@ -1,4 +1,4 @@
-After preparing quality training data, the next challenge involves configuring fine-tuning parameters and interpreting metrics to optimize model performance. This unit covers [understanding key training configurations](#understand-key-training-configurations), [monitoring and interpreting training metrics](#monitor-and-interpret-training-metrics), and [making optimization decisions based on evidence](#make-optimization-decisions-based-on-evidence).
+After preparing quality training data, the next challenge involves configuring fine-tuning parameters and interpreting metrics to optimize model performance. This unit covers understanding key training configurations, monitoring and interpreting training metrics, and making optimization decisions based on evidence.
 
 ## Understand key training configurations
 
@@ -9,40 +9,40 @@ Fine-tuning jobs expose several hyperparameters that significantly impact model 
 **What it controls**: Number of training examples processed together in one forward-backward pass during training. The model updates parameters after processing each batch.
 
 **How it affects training**:
-- **Larger batches** (8-32): More stable parameter updates with lower variance, faster training on powerful hardware, but requires more memory and may struggle with small datasets
-- **Smaller batches** (1-4): Higher variance in updates can help escape local optima, works with limited memory, but training takes longer
+
+| **Larger batches** (8-32) | **Smaller batches** (1-4) |
+| --- | --- |
+| More stable parameter updates with lower variance, faster training on powerful hardware, but requires more memory and may struggle with small datasets | Higher variance in updates can help escape local optima, works with limited memory, but training takes longer |
 
 **Optimization strategy**: Microsoft Foundry sets model-specific defaults that work for most cases. Start with defaults. If training is unstable (loss fluctuates wildly), increase batch size. If overfitting occurs (training loss decreases but validation loss increases), decrease batch size to add regularization through noise.
-
-Adventure Works kept default batch size for their gear specification SFT (dataset of 300 examples) but reduced it for their safety recommendation DPO (only 80 preference pairs) to prevent overfitting.
 
 ### Learning rate multiplier
 
 **What it controls**: Scaling factor applied to the base learning rate. The effective learning rate = base model's pretrained learning rate × multiplier. Controls how aggressively the model adjusts parameters during fine-tuning.
 
 **How it affects training**:
-- **Higher multipliers** (0.1-0.2): Faster adaptation to training data, risks overshooting optimal parameters or catastrophic forgetting of pretrained knowledge
-- **Lower multipliers** (0.02-0.05): Gentler adaptation preserving more pretrained knowledge, slower convergence, may underfit if too conservative
+
+| **Higher multipliers** (0.1-0.2) | **Lower multipliers** (0.02-0.05) |
+| --- | --- |
+| Faster adaptation to training data, risks overshooting optimal parameters or catastrophic forgetting of pretrained knowledge | Gentler adaptation preserving more pretrained knowledge, slower convergence, may underfit if too conservative |
 
 **Optimization strategy**: Recommended range is 0.02-0.2. Start with 0.05-0.1 as baseline. If training loss remains high after multiple epochs, try 0.15-0.2. If validation loss increases while training loss decreases (overfitting), reduce to 0.02-0.05. Larger batch sizes generally pair well with higher learning rates.
-
-Adventure Works used 0.08 for SFT (standard adaptation), 0.05 for DPO (gentler to preserve nuanced tone preferences), and 0.12 for RFT (needed stronger signal for complex reasoning).
 
 ### Number of epochs
 
 **What it controls**: How many times the model sees the entire training dataset. One epoch = one complete pass through all training examples.
 
-**How it affects training**:
-- **More epochs** (5-10): Better convergence, higher risk of overfitting, increased cost
-- **Fewer epochs** (1-3): Faster and cheaper, may underfit, leaves performance on table
+**How it affects training**
+
+|**More epochs** (5-10) | **Fewer epochs** (1-3) |
+|---|---|
+| Better convergence, higher risk of overfitting, increased cost | Faster and cheaper, may underfit, leaves performance on table |
 
 **Optimization strategy**: Start with 3-4 epochs. Monitor validation metrics—if validation loss stops improving or starts increasing while training loss keeps decreasing, you're overfitting and should reduce epochs. If both training and validation loss are still decreasing at your final epoch, add 1-2 more epochs.
 
-Adventure Works trained gear specification SFT for 4 epochs (300 diverse examples), safety DPO for 6 epochs (80 preference pairs needed more exposure), and trip planning RFT for 8 epochs (complex reasoning requires more iterations).
-
 ### Seed
 
-**What it controls**: Random seed for reproducibility. Same seed + same data + same parameters should produce nearly identical results (small differences can occur due to hardware variations).
+**What it controls**: Random seed for reproducibility. The same seed with the same data and the same parameters should produce nearly identical results (small differences can occur due to hardware variations).
 
 **Optimization strategy**: Set a fixed seed when comparing configuration changes—this isolates the effect of your hyperparameter adjustment from random variation. Use different seeds when training production models to avoid inadvertent memorization patterns.
 
@@ -58,6 +58,7 @@ Microsoft Foundry provides training and validation metrics during and after fine
 **What it measures**: Average prediction error on training data during each epoch. Lower values indicate the model better predicts training examples.
 
 **What to watch for**:
+
 - **Steadily decreasing**: Normal healthy training progression
 - **Plateaus early**: Model may need higher learning rate, more epochs, or better data quality
 - **Fluctuates wildly**: Batch size too small or learning rate too high—training is unstable
@@ -70,6 +71,7 @@ Adventure Works saw training loss decrease from 2.1 → 1.8 → 1.5 → 1.3 acro
 **What it measures**: Average prediction error on held-out validation data (never seen during training). Measures generalization to new examples.
 
 **What to watch for**:
+
 - **Decreases with training loss**: Ideal scenario—model learns genuine patterns that generalize
 - **Plateaus while training loss decreases**: Early overfitting signal—model memorizing training data
 - **Increases while training loss decreases**: Clear overfitting—stop training or use fewer epochs
@@ -82,6 +84,7 @@ Adventure Works tracked their safety DPO validation loss carefully. It decreased
 **What it measures**: Percentage of predicted tokens matching expected tokens in validation set. Higher percentages indicate better prediction accuracy.
 
 **What to watch for**:
+
 - **Improving steadily**: Good learning signal
 - **Very high (>95%)**: May indicate data leakage, overfitting, or excessively simple task
 - **Very low (<40%)**: May indicate task too difficult, data quality issues, or configuration problems
@@ -97,59 +100,20 @@ Adventure Works tracked their safety DPO validation loss carefully. It decreased
 
 ## Make optimization decisions based on evidence
 
-Effective optimization requires systematic experimentation informed by metrics rather than random hyperparameter adjustments.
+Effective optimization requires systematic experimentation informed by metrics rather than random hyperparameter adjustments. Follow this workflow to move from baseline to production-ready models while balancing quality and cost:
 
-### Establish a baseline
+1. **Establish baseline performance**: Train one model with default parameters (batch size default, learning rate 0.05-0.1, 3-4 epochs). Reserve 15-20% of data for validation. Deploy to Developer tier for 24-hour testing. Measure validation loss, token accuracy, and real-world performance on 20-30 test queries.
 
-Before optimization, train one model with default parameters to establish baseline performance:
+1. **Diagnose performance problems**: Use metrics and testing to identify root causes. If both training and validation loss are high (underfitting), increase learning rate or add epochs. If training loss is low but validation loss is high (overfitting), decrease epochs or lower learning rate. If training is unstable (loss fluctuates), increase batch size or halve learning rate. If metrics look good but real-world performance is poor, revise training data to match actual usage patterns.
 
-1. Use default batch size, learning rate multiplier (0.05-0.1), 3-4 epochs
-1. Reserve 15-20% of data for validation
-1. Deploy to Developer tier for 24-hour testing
-1. Measure baseline: validation loss, token accuracy, real-world test performance on 20-30 queries
+1. **Run controlled experiments**: Change one hyperparameter at a time while keeping others constant to isolate effects. Train the new model and compare validation metrics to baseline. Deploy the improved model and test on the same queries used for baseline. Measure whether metric improvements translate to better user experience.
 
-Adventure Works' baseline gear specification SFT achieved: validation loss 1.3, token accuracy 78%, 85% format consistency on manual test set.
+1. **Iterate or deploy**: If improvement is substantial (>5%), consider one more refinement cycle. Otherwise, deploy the current model. Remember that the optimal model delivers acceptable performance at sustainable cost—not necessarily the lowest validation loss.
 
-### Diagnose performance problems
+1. **Manage deployment costs**: Use Developer tier (free hosting, auto-deletes after 24 hours) for all experimentation. Deploy validated models to Standard tier for production (incurs hourly hosting fees). Factor in training costs—token-based for SFT/DPO, time-based for RFT—as more epochs and iterations increase expenses.
 
-Based on metrics and real-world testing, identify the root cause:
+Adventure Works followed this workflow for their trip planning RFT. Their baseline (Config A: learning_rate=0.08, epochs=6) achieved validation loss 0.9 and 72% reasoning quality. Config B (learning_rate=0.12, epochs=6) improved to validation loss 0.85 and 78% reasoning quality (+6%). Config C (learning_rate=0.12, epochs=8) reached validation loss 0.82 and 79% reasoning quality (+1% vs B). They deployed Config B because the marginal improvement from B to C didn't justify additional training cost and overfitting risk.
 
-| Symptom | Likely Cause | Optimization Action |
-|---------|--------------|---------------------|
-| Both training and validation loss high | Underfitting—insufficient learning | Increase learning rate (try 1.5-2× current), add more epochs, verify data quality |
-| Training loss low, validation loss high | Overfitting—memorizing training data | Decrease epochs (remove 1-2), lower learning rate (try 0.5× current), add more diverse data |
-| Training unstable (loss fluctuates) | Batch size too small or learning rate too high | Increase batch size if possible, halve learning rate |
-| Metrics good but real-world performance poor | Data doesn't represent real usage | Revise training data to match actual query patterns |
-| Fast convergence then plateau | Hit local optimum or data limitations | Try different learning rate schedule, add data diversity, or accept current performance |
-
-### Implement iterative refinement
-
-Optimize through controlled experiments:
-
-1. **Change one variable**: Adjust one hyperparameter while keeping others constant to isolate effects
-1. **Compare validation metrics**: Train new model, compare validation loss and task accuracy to baseline
-1. **Test real-world impact**: Deploy improved model, test on same 20-30 queries as baseline
-1. **Measure practical improvement**: Does the metric improvement translate to better user experience?
-1. **Iterate or deploy**: If improvement is substantial (>5%), consider one more refinement cycle; otherwise deploy
-
-Adventure Works tried three configurations for their trip planning RFT:
-- **Config A** (baseline): learning_rate=0.08, epochs=6 → validation loss 0.9, 72% reasoning quality
-- **Config B**: learning_rate=0.12, epochs=6 → validation loss 0.85, 78% reasoning quality (+6%)
-- **Config C**: learning_rate=0.12, epochs=8 → validation loss 0.82, 79% reasoning quality (+1% vs B)
-
-They deployed Config B—the improvement from B to C didn't justify additional training cost and the risk of overfitting.
-
-### Balance cost and quality
-
-Fine-tuning optimization involves trade-offs between performance, cost, and time:
-
-- **Developer tier**: Free hosting (auto-deletes after 24 hours)—use for all experimentation and validation
-- **Standard tier**: Hourly hosting fees—deploy only validated models for production use
-- **Training costs**: Token-based (SFT/DPO) or time-based (RFT)—more epochs and iterations increase costs
-
-The optimal model isn't the one with the lowest validation loss—it's the one delivering acceptable performance at sustainable cost. Adventure Works determined 85% format consistency met their requirements, so they deployed Config B for gear specifications rather than chasing 90%+ through expensive additional iterations.
-
-> [!TIP]
-> **Optimization stopping criteria**: Stop optimization when: (1) validation metrics meet your quality threshold, (2) real-world testing shows acceptable performance, (3) marginal improvements are under 3-5%, or (4) additional training cost exceeds value of improvement. Perfect isn't necessary—sufficient is optimal.
+Stop optimization when validation metrics meet your quality threshold, real-world testing shows acceptable performance, marginal improvements fall under 3-5%, or additional training cost exceeds the value of improvement. Perfect isn't necessary—sufficient is optimal.
 
 By understanding how configurations affect training, monitoring metrics to diagnose problems, and making evidence-based decisions through systematic experimentation, you optimize fine-tuning investments for maximum practical impact while controlling costs.
