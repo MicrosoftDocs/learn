@@ -1,5 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.recognize-synthesize-speech
+hidden: true
 metadata:
   title: (AI-900) Get started with speech in Microsoft Foundry
   description: "Learn how to use Azure Speech in Foundry Tools to recognize and synthesize speech."
@@ -10,7 +11,7 @@ metadata:
   ms.topic: module
   ms.collection: wwl-ai-copilot
   ms.custom:
-  - N/A
+    - N/A
   ms.service: azure-ai-speech
   ai-usage: ai-assisted
 title: (AI-900) Get started with speech in Microsoft Foundry
@@ -22,23 +23,23 @@ abstract: |
 prerequisites: Ability to navigate the Azure portal
 iconUrl: /training/achievements/convert-speech-to-text.svg
 levels:
-- beginner
+  - beginner
 roles:
-- ai-engineer
-- student
+  - ai-engineer
+  - student
 products:
-- ai-services
-- azure-ai-foundry
+  - ai-services
+  - azure-ai-foundry
 subjects:
-- artificial-intelligence
-- natural-language-processing
+  - artificial-intelligence
+  - natural-language-processing
 units:
-- learn.wwl.recognize-synthesize-speech.introduction
-- learn.wwl.recognize-synthesize-speech.understand-speech
-- learn.wwl.recognize-synthesize-speech.get-started-azure
-- learn.wwl.recognize-synthesize-speech.use-azure-speech
-- learn.wwl.recognize-synthesize-speech.exercise-transcribe-speech-use-azure
-- learn.wwl.recognize-synthesize-speech.knowledge-check
-- learn.wwl.recognize-synthesize-speech.summary
+  - learn.wwl.recognize-synthesize-speech.introduction
+  - learn.wwl.recognize-synthesize-speech.understand-speech
+  - learn.wwl.recognize-synthesize-speech.get-started-azure
+  - learn.wwl.recognize-synthesize-speech.use-azure-speech
+  - learn.wwl.recognize-synthesize-speech.exercise-transcribe-speech-use-azure
+  - learn.wwl.recognize-synthesize-speech.knowledge-check
+  - learn.wwl.recognize-synthesize-speech.summary
 badge:
   uid: learn.wwl.recognize-synthesize-speech.badge
