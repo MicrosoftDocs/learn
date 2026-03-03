@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.optimize-finetune-agents.optimize-finetune
+title: Design your optimization strategy and configure training hyperparameters
+metadata:
+  title: Design your optimization strategy and configure training hyperparameters
+  description: Learn how to design an optimization strategy by evaluating baseline performance, setting measurable targets, splitting your dataset, and configuring hyperparameters for SFT, DPO, and RFT training jobs.
+  author: madiepev
+  ms.author: madiepev
+  ms.date: 02/25/2026
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 8
+content: |
+  [!include[](includes/5-optimize-finetune.md)]
+
+
