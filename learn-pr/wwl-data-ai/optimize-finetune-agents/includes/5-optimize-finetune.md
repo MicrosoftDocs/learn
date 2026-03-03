@@ -1,119 +1,126 @@
-After preparing quality training data, the next challenge involves configuring fine-tuning parameters and interpreting metrics to optimize model performance. This unit covers understanding key training configurations, monitoring and interpreting training metrics, and making optimization decisions based on evidence.
+You selected your fine-tuning method and prepared quality training data. Before submitting your first training job, invest time in two critical decisions: establishing a clear optimization strategy and understanding how hyperparameters control the training process. These decisions determine whether your fine-tuning job produces a genuinely better model or wastes compute resources on a poorly configured run.
 
-## Understand key training configurations
+## Design your optimization strategy
 
-Fine-tuning jobs expose several hyperparameters that significantly impact model quality, training time, and cost. Focus on these key configurations:
+A clear optimization strategy prevents the most common fine-tuning failure: training a model without knowing whether it improved. Three steps define the strategy: benchmark the base model, set measurable targets, and split the dataset before training begins.
 
-### Batch size
+**Evaluate your base model**
 
-**What it controls**: Number of training examples processed together in one forward-backward pass during training. The model updates parameters after processing each batch.
-
-**How it affects training**:
-
-| **Larger batches** (8-32) | **Smaller batches** (1-4) |
-| --- | --- |
-| More stable parameter updates with lower variance, faster training on powerful hardware, but requires more memory and may struggle with small datasets | Higher variance in updates can help escape local optima, works with limited memory, but training takes longer |
-
-**Optimization strategy**: Microsoft Foundry sets model-specific defaults that work for most cases. Start with defaults. If training is unstable (loss fluctuates wildly), increase batch size. If overfitting occurs (training loss decreases but validation loss increases), decrease batch size to add regularization through noise.
-
-### Learning rate multiplier
-
-**What it controls**: Scaling factor applied to the base learning rate. The effective learning rate = base model's pretrained learning rate × multiplier. Controls how aggressively the model adjusts parameters during fine-tuning.
-
-**How it affects training**:
-
-| **Higher multipliers** (0.1-0.2) | **Lower multipliers** (0.02-0.05) |
-| --- | --- |
-| Faster adaptation to training data, risks overshooting optimal parameters or catastrophic forgetting of pretrained knowledge | Gentler adaptation preserving more pretrained knowledge, slower convergence, may underfit if too conservative |
-
-**Optimization strategy**: Recommended range is 0.02-0.2. Start with 0.05-0.1 as baseline. If training loss remains high after multiple epochs, try 0.15-0.2. If validation loss increases while training loss decreases (overfitting), reduce to 0.02-0.05. Larger batch sizes generally pair well with higher learning rates.
-
-### Number of epochs
-
-**What it controls**: How many times the model sees the entire training dataset. One epoch = one complete pass through all training examples.
-
-**How it affects training**
-
-|**More epochs** (5-10) | **Fewer epochs** (1-3) |
-|---|---|
-| Better convergence, higher risk of overfitting, increased cost | Faster and cheaper, may underfit, leaves performance on table |
-
-**Optimization strategy**: Start with 3-4 epochs. Monitor validation metrics—if validation loss stops improving or starts increasing while training loss keeps decreasing, you're overfitting and should reduce epochs. If both training and validation loss are still decreasing at your final epoch, add 1-2 more epochs.
-
-### Seed
-
-**What it controls**: Random seed for reproducibility. The same seed with the same data and the same parameters should produce nearly identical results (small differences can occur due to hardware variations).
-
-**Optimization strategy**: Set a fixed seed when comparing configuration changes—this isolates the effect of your hyperparameter adjustment from random variation. Use different seeds when training production models to avoid inadvertent memorization patterns.
-
-> [!TIP]
-> **Configuration interdependencies**: These parameters interact. Larger batch sizes typically benefit from higher learning rates. Smaller datasets need fewer epochs and lower learning rates to avoid overfitting. When changing one parameter, consider adjusting related ones.
-
-## Monitor and interpret training metrics
-
-Microsoft Foundry provides training and validation metrics during and after fine-tuning. Understanding what these metrics reveal guides optimization decisions.
-
-### Training loss
-
-**What it measures**: Average prediction error on training data during each epoch. Lower values indicate the model better predicts training examples.
-
-**What to watch for**:
-
-- **Steadily decreasing**: Normal healthy training progression
-- **Plateaus early**: Model may need higher learning rate, more epochs, or better data quality
-- **Fluctuates wildly**: Batch size too small or learning rate too high—training is unstable
-- **Increases mid-training**: Extremely rare; suggests learning rate far too high causing divergence
-
-Adventure Works saw training loss decrease from 2.1 → 1.8 → 1.5 → 1.3 across 4 epochs for their gear specification SFT—steady convergence indicated good configuration.
-
-### Validation loss
-
-**What it measures**: Average prediction error on held-out validation data (never seen during training). Measures generalization to new examples.
-
-**What to watch for**:
-
-- **Decreases with training loss**: Ideal scenario—model learns genuine patterns that generalize
-- **Plateaus while training loss decreases**: Early overfitting signal—model memorizing training data
-- **Increases while training loss decreases**: Clear overfitting—stop training or use fewer epochs
-- **Much higher than training loss**: Gap indicates overfitting degree; some gap is normal, large gaps are problematic
-
-Adventure Works tracked their safety DPO validation loss carefully. It decreased epochs 1-4 (1.9 → 1.6 → 1.4 → 1.3) then increased epoch 5-6 (1.4 → 1.5). They deployed the epoch 4 checkpoint rather than the final model since validation loss indicated epoch 4 generalized better.
-
-### Token accuracy (when available)
-
-**What it measures**: Percentage of predicted tokens matching expected tokens in validation set. Higher percentages indicate better prediction accuracy.
-
-**What to watch for**:
-
-- **Improving steadily**: Good learning signal
-- **Very high (>95%)**: May indicate data leakage, overfitting, or excessively simple task
-- **Very low (<40%)**: May indicate task too difficult, data quality issues, or configuration problems
-
-### Full-evaluation metrics
-
-**What it measures**: After training completes, Fine-Tuning API calculates comprehensive metrics on your validation set including perplexity, exact match rates, and task-specific scores.
-
-**What to watch for**: Compare these metrics across different fine-tuning runs when testing hyperparameter changes. A 5% improvement in validation accuracy represents meaningful progress; differences under 2% may be noise.
+Run your evaluation dataset through the unmodified base model and record scores for the Microsoft Foundry metrics relevant to your quality problem—coherence, relevance, fluency, groundedness, or a custom evaluator. This baseline becomes your reference point. Without it, you can't determine whether fine-tuning improved, degraded, or had no effect.
 
 > [!NOTE]
-> **Metrics by method**: SFT, DPO, and RFT report similar loss metrics, but RFT additionally shows reward signals from your grader function. Higher average rewards across epochs indicate the model learns to optimize for your grading criteria.
+> For RFT, run the grader function against the base model's outputs on your validation set and record the reward scores. The grader is the same instrument you'll use to measure improvement after training, so using it for the baseline gives you a direct before-and-after comparison.
 
-## Make optimization decisions based on evidence
+**Define target performance**
 
-Effective optimization requires systematic experimentation informed by metrics rather than random hyperparameter adjustments. Follow this workflow to move from baseline to production-ready models while balancing quality and cost:
+Set specific, measurable thresholds before training. A goal like "improve response quality" has no finish line. Quantified targets let you determine when the model is production-ready and prevent unnecessary extra training rounds.
 
-1. **Establish baseline performance**: Train one model with default parameters (batch size default, learning rate 0.05-0.1, 3-4 epochs). Reserve 15-20% of data for validation. Deploy to Developer tier for 24-hour testing. Measure validation loss, token accuracy, and real-world performance on 20-30 test queries.
+After training, compare your fine-tuned model's scores against these thresholds using the same evaluation dataset you used for the baseline.
 
-1. **Diagnose performance problems**: Use metrics and testing to identify root causes. If both training and validation loss are high (underfitting), increase learning rate or add epochs. If training loss is low but validation loss is high (overfitting), decrease epochs or lower learning rate. If training is unstable (loss fluctuates), increase batch size or halve learning rate. If metrics look good but real-world performance is poor, revise training data to match actual usage patterns.
+**Split your dataset**
 
-1. **Run controlled experiments**: Change one hyperparameter at a time while keeping others constant to isolate effects. Train the new model and compare validation metrics to baseline. Deploy the improved model and test on the same queries used for baseline. Measure whether metric improvements translate to better user experience.
+Divide your prepared data into training and validation sets before training begins. The training set teaches the model; the validation set measures how well it generalizes to unseen examples. Keep the two sets strictly separate—overlap makes evaluation metrics look better than they are.
 
-1. **Iterate or deploy**: If improvement is substantial (>5%), consider one more refinement cycle. Otherwise, deploy the current model. Remember that the optimal model delivers acceptable performance at sustainable cost—not necessarily the lowest validation loss.
+| Adventure Works dataset split | |
+|---|---|
+| **Total examples** | 300 gear interactions |
+| **Training set (80%)** | 240 examples |
+| **Validation set (20%)** | 60 examples |
 
-1. **Manage deployment costs**: Use Developer tier (free hosting, auto-deletes after 24 hours) for all experimentation. Deploy validated models to Standard tier for production (incurs hourly hosting fees). Factor in training costs—token-based for SFT/DPO, time-based for RFT—as more epochs and iterations increase expenses.
+> [!TIP]
+> If your dataset has fewer than 100 examples, consider a 90/10 split to maximize training data while preserving enough validation examples for meaningful evaluation.
 
-Adventure Works followed this workflow for their trip planning RFT. Their baseline (Config A: learning_rate=0.08, epochs=6) achieved validation loss 0.9 and 72% reasoning quality. Config B (learning_rate=0.12, epochs=6) improved to validation loss 0.85 and 78% reasoning quality (+6%). Config C (learning_rate=0.12, epochs=8) reached validation loss 0.82 and 79% reasoning quality (+1% vs B). They deployed Config B because the marginal improvement from B to C didn't justify additional training cost and overfitting risk.
+> [!NOTE]
+> RFT can work effectively with far fewer examples than SFT because the model doesn't learn from ground-truth outputs—it learns from reward scores. A split like 100 training examples and 50 validation examples is often sufficient to get meaningful results.
 
-Stop optimization when validation metrics meet your quality threshold, real-world testing shows acceptable performance, marginal improvements fall under 3-5%, or additional training cost exceeds the value of improvement. Perfect isn't necessary—sufficient is optimal.
+## Configure training hyperparameters
 
-By understanding how configurations affect training, monitoring metrics to diagnose problems, and making evidence-based decisions through systematic experimentation, you optimize fine-tuning investments for maximum practical impact while controlling costs.
+Hyperparameters control how the training algorithm learns from your data. Three hyperparameters appear across all fine-tuning methods—supervised fine-tuning (SFT), direct preference optimization (DPO), and reinforcement fine-tuning (RFT). Start with the defaults and adjust one at a time based on evaluation results.
+
+| Hyperparameter | Default | Typical range | How to adjust |
+|---|---|---|---|
+| `n_epochs` | 3 | 1–10 | Increase if evaluation scores remain low after training (underfitting). Decrease if scores are high but the model behaves unexpectedly on new inputs (overfitting). |
+| `batch_size` | 1 | 1–8 | Increase to 2–4 for larger datasets to speed up training. Keep at 1–2 when training stability matters, such as with DPO. |
+| `learning_rate_multiplier` | 1.0 | 0.1–2.0 | Reduce below 1.0 for more conservative updates if training is unstable. Increase above 1.0 to speed up learning, but watch for erratic results. |
+
+Select the tab for your method to see how to pass these hyperparameters when creating a job.
+
+# [Supervised Fine-Tuning (SFT)](#tab/sft)
+
+Pass hyperparameters inside the `supervised` method block:
+
+```python
+fine_tuning_job = openai_client.fine_tuning.jobs.create(
+    training_file=train_file_id,
+    validation_file=val_file_id,
+    model=model_name,
+    method={
+        "type": "supervised",
+        "supervised": {
+            "hyperparameters": {
+                "n_epochs": 3,
+                "batch_size": 1,
+                "learning_rate_multiplier": 1.0
+            }
+        }
+    }
+)
+```
+
+# [Direct Preference Optimization (DPO)](#tab/dpo)
+
+Pass hyperparameters inside the `dpo` method block. DPO is more sensitive to training instability than SFT—keep `batch_size` at one or two, and reduce `learning_rate_multiplier` first if results are erratic:
+
+```python
+fine_tuning_job = openai_client.fine_tuning.jobs.create(
+    training_file=train_file_id,
+    validation_file=val_file_id,
+    model=model_name,
+    method={
+        "type": "dpo",
+        "dpo": {
+            "hyperparameters": {
+                "n_epochs": 3,
+                "batch_size": 1,
+                "learning_rate_multiplier": 1.0
+            }
+        }
+    }
+)
+```
+
+# [Reinforcement Fine-Tuning (RFT)](#tab/rft)
+
+RFT includes three extra parameters inside the `reinforcement` block. `eval_interval` controls how often (every N steps) the grader scores the model during training. `eval_samples` sets how many examples are scored at each interval. `reasoning_effort` (`low`, `medium`, or `high`) controls how much compute the model uses when generating responses during training. Because the grader provides continuous feedback, RFT typically needs fewer epochs than SFT—default is two instead of three:
+
+```python
+fine_tuning_job = openai_client.fine_tuning.jobs.create(
+    training_file=train_file_id,
+    validation_file=val_file_id,
+    model=model_name,
+    method={
+        "type": "reinforcement",
+        "reinforcement": {
+            "grader": grader,
+            "hyperparameters": {
+                "n_epochs": 2,
+                "batch_size": 1,
+                "learning_rate_multiplier": 1.0,
+                "eval_interval": 5,
+                "eval_samples": 2,
+                "reasoning_effort": "medium"
+            }
+        }
+    }
+)
+```
+
+---
+
+## Iterate on your results
+
+Start with the default hyperparameters for your first training run. After evaluating results against your baseline, adjust one hyperparameter at a time. When you change multiple values simultaneously, it can be impossible to determine which change drove any improvement or regression.
+
+Fine-tuning rarely produces a perfect model on the first attempt. If your fine-tuned model doesn't meet your target thresholds, you don't have to start over. You can use the fine-tuned model itself as the base for another training round, adjusting hyperparameters, incorporating more data, or targeting a more specific task without discarding the progress already made.
+
+The most effective fine-tuning process is a loop: evaluate, adjust, retrain, and repeat until the model consistently meets your quality targets.
