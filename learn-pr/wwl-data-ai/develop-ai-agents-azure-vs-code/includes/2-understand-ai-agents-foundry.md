@@ -77,21 +77,36 @@ Microsoft Foundry Agent Service is a fully managed service designed to empower d
 
 Previously, creating agent-like experiences required significant coding effort using standard APIs. Microsoft Foundry Agent Service handles the complexity through a streamlined interface, enabling you to build agents via the Foundry portal or in your own applications with fewer than 50 lines of code.
 
+### Agent types
+
+Microsoft Foundry supports two primary types of agents:
+
+**Declarative agents** - Agents defined through configuration rather than code. Declarative agents come in two forms:
+
+- **Prompt-based agents** - A single agent configured with a model, instructions, tools, and prompts. This is the most common type and the focus of this module.
+- **Workflow agents** - Multi-agent orchestrations defined in YAML, enabling complex scenarios where multiple agents collaborate to complete tasks.
+
+**Hosted agents** - Containerized agents that are created and deployed in code, then hosted by the Foundry platform. Hosted agents give you full control over agent logic and execution while the platform manages infrastructure.
+
+Understanding these agent types helps you choose the right approach for your scenarios. This module focuses primarily on declarative prompt-based agents, which provide the most accessible path to getting started.
+
 ### Key features of Microsoft Foundry Agent Service
 
 The service offers several powerful capabilities:
 
 **Automatic tool calling** - The service handles the entire tool-calling lifecycle, including running the model, invoking tools, and returning results. This eliminates complex integration code.
 
-**Securely managed data** - Conversation states are securely managed with `conversations`, removing the need for manual state management.
+**Securely managed data** - Conversation states are securely managed through the Responses API, removing the need for manual state management.
 
-**Out-of-the-box tools** - Built-in tools support file retrieval, code interpretation, and interaction with data sources like Bing, Azure AI Search, and Azure Functions.
+**Extensive tool catalog** - A rich set of built-in and community tools extends agent capabilities beyond text generation, including code execution, file search, web search, and integrations with Azure services and external APIs.
 
 **Model selection** - Choose from [various AI models](/azure/ai-foundry/agents/concepts/model-region-support?tabs=global-standard#available-models) to match your performance and cost requirements.
 
-**Enterprise-grade security** - The service ensures data privacy and compliance with secure data handling and keyless authentication.
+**Enterprise-grade security** - The service ensures data privacy and compliance with secure data handling, keyless authentication, and built-in content safety filters.
 
 **Customizable storage solutions** - Use platform-managed storage or bring your own Azure Blob storage for full visibility and control.
+
+**Observability and tracing** - Built-in monitoring capabilities help you track agent behavior, debug issues, and optimize performance in production.
 
 These features provide a streamlined and secure way to build and deploy AI agents compared to developing with the Inference API directly.
 
