@@ -19,7 +19,6 @@ abstract: |
     - Evaluate and select fine-tuning methods including supervised fine-tuning (SFT), reinforcement fine-tuning (RFT), and direct preference optimization (DPO) based on quality requirements, data availability, and cost constraints.
     - Design and manage synthetic data strategies for fine-tuning, including assessing data quality requirements, generating diverse training examples, validating synthetic data effectiveness, and managing data versioning.
     - Assess and optimize fine-tuned model performance by interpreting evaluation metrics, identifying performance regressions, making data-driven optimization decisions, and validating improvements meet production thresholds.
-    - Architect model lifecycle workflows from development through production deployment, including model versioning strategies, testing approaches, deployment pipeline design, and rollback procedures.
 prerequisites: |
   Before starting this module, you should be familiar with fundamental AI concepts and services in Azure.
 iconUrl: /learn/achievements/generic-badge.svg
