@@ -8,6 +8,6 @@ metadata:
   author: ceperezb
   ms.author: ceperezb
   ms.topic: unit
-durationInMinutes: 7
+durationInMinutes: 12
 content: |
   [!include[](includes/6-specify-requirements-secure-active-directory-domain-services.md)]
