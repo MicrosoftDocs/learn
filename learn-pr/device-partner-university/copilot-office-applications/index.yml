@@ -13,13 +13,13 @@ summary: >
   Learn how to use Microsoft 365 Copilot in Word, PowerPoint, Excel, Outlook, and OneNote to work smarter and more efficiently.
 
 abstract: |
-By the end of this module, you're able to:
-- Enable Microsoft 365 Copilot in your apps to start using its powerful features.
-- Use Copilot in Word to generate, summarize, and edit documents with ease.
-- Leverage Copilot in PowerPoint to create engaging presentations quickly.
-- Utilize Copilot in Excel to analyze data, create visualizations, and automate tasks.
-- Apply Copilot in Outlook to manage your email and calendar more effectively.
-- Take advantage of Copilot in OneNote to organize your notes and boost your productivity.
+  By the end of this module, you're able to:
+  - Enable Microsoft 365 Copilot in your apps to start using its powerful features.
+  - Use Copilot in Word to generate, summarize, and edit documents with ease.
+  - Leverage Copilot in PowerPoint to create engaging presentations quickly.
+  - Utilize Copilot in Excel to analyze data, create visualizations, and automate tasks.
+  - Apply Copilot in Outlook to manage your email and calendar more effectively.
+  - Take advantage of Copilot in OneNote to organize your notes and boost your productivity.
 
 prerequisites: |
   - None
