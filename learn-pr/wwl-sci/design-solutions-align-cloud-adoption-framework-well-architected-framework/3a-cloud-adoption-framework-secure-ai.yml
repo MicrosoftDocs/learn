@@ -4,11 +4,11 @@ title: Design a strategy for secure AI adoption
 metadata:
   title: Design a strategy for secure AI adoption
   description: "Design a strategy for secure AI adoption."
-  ms.date: 01/24/2026
+  ms.date: 02/26/2026
   author: ceperezb
   ms.author: ceperezb
   ms.topic: unit
   ai-usage: ai-generated
-durationInMinutes: 7
+durationInMinutes: 10
 content: |
   [!include[](includes/3a-cloud-adoption-framework-secure-ai.md)]

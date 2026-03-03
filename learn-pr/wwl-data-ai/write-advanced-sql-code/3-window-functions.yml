@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.write-advanced-sql-code.window-functions
+title: Apply window functions for analytics
+metadata:
+  title: Apply window functions for analytics
+  description: Learn how to use window functions including ranking, aggregate, and analytical functions to perform calculations across related rows in SQL Server and Azure SQL.
+  ms.date: 01/28/2026
+  author: JulianePadrao
+  ms.author: jupadrao
+  ms.topic: unit
+durationInMinutes: 14
+content: |
+  [!include[](includes/3-window-functions.md)]

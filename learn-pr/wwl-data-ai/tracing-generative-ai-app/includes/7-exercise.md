@@ -5,5 +5,5 @@ If you have an Azure subscription, you can explore tracing with Microsoft Foundr
 
 Launch the exercise and follow the instructions.
 
-[![Button to launch exercise.](../media/launch-exercise.png)](https://go.microsoft.com/fwlink/?linkid=2330818&azure-portal=true)
+[![Button to launch exercise.](../media/launch-exercise.png)](/training/)
 

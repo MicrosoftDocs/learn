@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-data-security-compliance.design-implement-permissions-secure-access
+title: Manage permissions and secure access
+metadata:
+  title: Manage permissions and secure access
+  description: Learn how to implement object-level permissions using roles and schemas, and configure secure passwordless database access using Microsoft Entra ID and managed identities.
+  ms.date: 02/05/2026
+  author: JulianePadrao
+  ms.author: jupadrao
+  ms.topic: unit
+durationInMinutes: 12
+content: |
+  [!include[](includes/5-design-implement-object-level-permissions.md)]

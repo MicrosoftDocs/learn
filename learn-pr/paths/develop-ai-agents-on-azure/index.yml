@@ -1,5 +1,6 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.develop-ai-agent-on-azure
+hidden: true
 metadata:
   title: Develop AI Agents on Azure 
   description: Learn how to develop AI agents on Azure using the Microsoft Foundry Agent Service and Semantic Kernel Agent Framework. AI-3026

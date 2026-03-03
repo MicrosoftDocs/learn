@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-programmability-objects.exercise-implement-programmability-objects
+title: 'Exercise: Implement programmability objects in SQL Server'
+metadata:
+  title: 'Exercise: Implement programmability objects in SQL Server'
+  description: "Practice creating views, stored procedures, functions, and triggers in SQL Server."
+  ms.date: 01/22/2026
+  author: JulianePadrao
+  ms.author: jupadrao
+  ms.topic: unit
+azureSandbox: false
+durationInMinutes: 45
+content: |
+  [!include[](includes/8-exercise-implement-programmability-objects.md)]

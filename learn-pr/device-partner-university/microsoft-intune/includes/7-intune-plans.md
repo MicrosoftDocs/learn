@@ -1,4 +1,4 @@
-## Microsoft Intune Plan 1 - USD8
+## Microsoft Intune Plan 1
 
 Microsoft Intune is included with subscriptions to Microsoft 365 E3, E5, F1, F3, and Business Premium plans. It’s also included in versions of these suites that don't include Microsoft Teams.
 
@@ -13,7 +13,7 @@ Microsoft Intune is included with subscriptions to Microsoft 365 E3, E5, F1, F3,
 > [!NOTE]
 > Intune Suite features are available for purchase as individual add-ons. [Learn more](https://www.microsoft.com/security/business/microsoft-intune-pricing).
 
-## Microsoft Intune Plan 2 - USD4
+## Microsoft Intune Plan 2
 
 An add-on to Microsoft Intune Plan 1 that offers advanced endpoint management capabilities, such as:
 
@@ -23,7 +23,7 @@ An add-on to Microsoft Intune Plan 1 that offers advanced endpoint management ca
 
 - Microsoft Intune firmware-over-the-air (FOTA) updates
 
-## Microsoft Intune Suite - USD10
+## Microsoft Intune Suite
 
 An add-on to Microsoft Intune Plan 1 that unifies mission-critical advanced endpoint management and security solutions. Microsoft Intune Plan 2 is included in Intune Suite.
 
@@ -37,7 +37,7 @@ An add-on to Microsoft Intune Plan 1 that unifies mission-critical advanced endp
 
 - Microsoft Cloud PKI
 
-> [!NOTE] 
+> [!NOTE]
 > Pricing provided is approximate and intended for informational purposes only. Actual prices might vary based on the type of licensing, volume pricing agreements, and other factors. All prices are subject to change without notice. Check out [Intune plans and pricing](https://www.microsoft.com/security/business/microsoft-intune-pricing?msockid=35e5b6fab66060b80bb3a0edb779616c) for more information.
 
 ## Microsoft Intune free trial

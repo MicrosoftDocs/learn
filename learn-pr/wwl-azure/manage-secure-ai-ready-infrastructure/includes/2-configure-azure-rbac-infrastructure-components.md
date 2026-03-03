@@ -1,3 +1,7 @@
+This video summarizes the key concepts on the page. 
+
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=22a59131-bbfb-495e-9ba8-b6c1a2591d2a]
+
 When Contoso's development team first deployed their AI agents, they granted every service account Contributor permissions at the subscription level. This approach delivered fast deployment velocity during the prototype phase, but it also gave agents the ability to delete production databases, modify network security rules, and access resources across unrelated projects. Security audits revealed that over-privileged access increased the blast radius of potential breaches by 300%, turning what should have been isolated incidents into organization-wide security events.
 
 Azure Role-Based Access Control (RBAC) solves this problem by letting you assign permissions at precisely the scope required for each job task. With RBAC, you define who can access which resources and what actions they can perform, enforcing the principle of least privilege across your entire infrastructure. The system uses a hierarchy of scopes—subscription, resource group, and individual resource—where permissions assigned at a higher level automatically inherit to child resources. For example, granting Reader access at the resource group level means that identity can view all resources within that group without requiring separate assignments for each database, storage account, or virtual machine.

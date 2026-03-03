@@ -27,13 +27,14 @@ roles:
 subjects:
 - artificial-intelligence
 products:
-- azure-ai-foundry
+- microsoft-foundry
 modules:
 - learn.wwl.get-started-with-ai-in-azure
 - learn.wwl.get-started-with-generative-ai-and-agents
 - learn.wwl.get-started-with-text-analysis-in-azure
 - learn.wwl.get-started-with-speech-in-azure
 - learn.wwl.get-started-with-computer-vision-in-azure
+- learn.wwl.get-started-information-extraction
 
 trophy:
   uid: learn.get-started-ai-apps-agents.trophy

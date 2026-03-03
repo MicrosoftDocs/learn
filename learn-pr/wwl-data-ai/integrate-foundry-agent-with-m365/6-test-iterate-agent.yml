@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.integrate-foundry-agent-with-m365.test-iterate-agent
+title: Test and iterate your integrated agent
+metadata:
+  title: Test and iterate your integrated agent
+  description: Learn best practices for testing and troubleshooting Foundry agents after publishing to Microsoft Teams.
+  ms.date: 02/17/2026
+  author: ivorb
+  ms.author: berryivor
+  ms.topic: unit
+  ai-usage: ai-assisted
+durationInMinutes: 6
+content: |
+  [!include[](includes/6-test-iterate-agent.md)]
