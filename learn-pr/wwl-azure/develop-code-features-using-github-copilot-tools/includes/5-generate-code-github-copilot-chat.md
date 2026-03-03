@@ -92,10 +92,10 @@ The Plan agent is designed to help you research and plan a task before writing a
 
 ### Use the Agent to generate code
 
-When using the Agent, GitHub Copilot acts as an autonomous agent that can take actions on your behalf. You can ask GitHub Copilot to perform specific tasks, and it generates code based on your requests.
+When you use GitHub Copilot in Agent mode, GitHub Copilot acts as an autonomous agent that can take actions on your behalf. You can ask GitHub Copilot to perform specific tasks, and it generates code based on your requests.
 
 > [!IMPORTANT]
-> When you use the Agent, GitHub Copilot may make multiple premium requests to complete a single task. Premium requests can be used by user-initiated prompts and follow-up actions GitHub Copilot takes on your behalf. The total premium requests used depends on the complexity of the task, the number of steps involved, and the model selected.
+> When you use the Agent mode, GitHub Copilot may make multiple premium requests to complete a single task. Premium requests can be used by user-initiated prompts and follow-up actions GitHub Copilot takes on your behalf. The total premium requests used depends on the complexity of the task, the number of steps involved, and the model selected.
 
 1. Open the Chat view and select **Agent** from the agent picker.
 

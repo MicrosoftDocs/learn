@@ -7,13 +7,13 @@ Each of the following GitHub Copilot features can be used to analyze or explain 
 - Smart actions: Run the Explain smart action to explain selected code without even having to write a prompt.
 - Quick Chat: Ask a quick question and get back into what you're doing.
 
-## Use the Chat view in ask mode to analyze and explain code
+## Use the Chat view in Ask agent mode to analyze and explain code
 
 The Chat view in Visual Studio Code is used to manage chat conversations between you and the AI pair programmer. By default, the Chat view is located in the Secondary Side Bar on the right side of the Visual Studio Code window. When you submit a prompt, the AI pair programmer responds with natural language descriptions, code snippets, and other relevant information. Responses are displayed in the Chat view.
 
-To access the Chat view, you can select the **Toggle Chat** button (Copilot icon), select **Open Chat** from the GitHub Copilot menu, or use the **Ctrl+Alt+I** keyboard shortcut. The Chat view defaults to ask mode, but retains the most recently selected mode when you toggle between open and hidden.
+To access the Chat view, you can select the **Toggle Chat** button (Copilot icon), select **Open Chat** from the GitHub Copilot menu, or use the **Ctrl+Alt+I** keyboard shortcut. The Chat view defaults to Ask agent mode, but retains the most recently selected mode when you toggle between open and hidden.
 
-You can use the Chat view in ask mode for a wide range of topics. For example:
+You can use the Chat view in Ask agent mode for a wide range of topics. For example:
 
 - Ask questions about coding and technology concepts ("`What is a linked list?`", "`top 10 popular web frameworks`")
 - Brainstorm ideas on how to best solve a coding problem ("`How to add auth to my project?`")
@@ -23,7 +23,7 @@ You can use the Chat view in ask mode for a wide range of topics. For example:
 
 ![Screenshot showing the Chat view asking about the Singleton pattern.](../media/explain-chat-view-workspace-explain-singleton-pattern.png)
 
-The ask mode supports the following interface features:
+The Ask agent mode supports the following interface features:
 
 - Chat view toolbar: The Chat view toolbar is located in the top right corner of the Chat view. You can use the toolbar to manage the chat history, start a new chat, open the Chat view in another location, or hide the Chat view. Hover your mouse pointer over the toolbar button icons to see a description.
 
@@ -31,9 +31,9 @@ The ask mode supports the following interface features:
 
 - Attach Context button: The Attach Context button (paperclip icon) is located in the bottom section of the Chat view. You can use this button to attach files, selections, symbols, or other resources from your workspace as context for your chat prompt.
 
-- Ask Copilot: The Ask Copilot text box is where you enter your prompts. When you're using ask mode, prompts can include chat participants, slash commands, and chat variables.
+- Ask Copilot: The Ask Copilot text box is where you enter your prompts. When you're using Ask agent mode, prompts can include chat participants, slash commands, and chat variables.
 
-    In ask mode, you can use chat participants to specify the context of your questions. For example, you can use `@workspace` to indicate that the context is your workspace files.
+    In Ask agent mode, you can use chat participants to specify the context of your questions. For example, you can use `@workspace` to indicate that the context is your workspace files.
 
 - Start Voice Chat button: The Start Voice Chat button is located to the left of the Ask Copilot textbox. You can use this button to enable or disable voice interactions with GitHub Copilot. When voice interactions are enabled, you can use your voice to ask GitHub Copilot questions.
 
@@ -81,11 +81,11 @@ The Quick Chat feature allows you to ask a quick question and get back into what
 
 To access the Quick Chat window, you can select **Quick Chat** from the GitHub Copilot menu, or use the **Ctrl+Shift+Alt+L** keyboard shortcut.
 
-The Quick Chat window supports the same context features provided by the Chat view in ask mode, but it doesn't provide a way to manage the chat history. The Quick Chat window is designed for quick questions and answers, so it doesn't include all of the features provided by the Chat view.
+The Quick Chat window supports the same context features provided by the Chat view in Ask agent mode, but it doesn't provide a way to manage the chat history. The Quick Chat window is designed for quick questions and answers, so it doesn't include all of the features provided by the Chat view.
 
 ![Screenshot showing the Quick Chat window.](../media/explain-quick-chat-explain-issue.png)
 
-You can use the Quick Chat for the same types of questions as the Chat view in ask mode. However, the Quick Chat is best suited for quick questions that aren't part of a larger conversation.
+You can use the Quick Chat for the same types of questions as the Chat view in Ask agent mode. However, the Quick Chat is best suited for quick questions that aren't part of a larger conversation.
 
 ## Summary
 

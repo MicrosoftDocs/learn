@@ -16,11 +16,11 @@ The following GitHub Copilot features can be used to analyze and explain code:
 
 The following GitHub Copilot features can be used to generate inline code documentation:
 
-- Ask mode: Use the ask mode to suggest inline code documentation for a code file, class, or method. Review the suggested inline documentation in the Chat view. Request updates as needed in the chat conversation. Once you're satisfied with the proposed documentation, you can insert the suggested documentation into the corresponding code file.
+- Ask mode: Use the Ask agent mode to suggest inline code documentation for a code file, class, or method. Review the suggested inline documentation in the Chat view. Request updates as needed in the chat conversation. Once you're satisfied with the proposed documentation, you can insert the suggested documentation into the corresponding code file.
 
-- Plan mode: Use the Plan mode to create a detailed implementation plan for your documentation tasks. The Plan mode can be used to analyze the codebase, identify documentation requirements, and produce a step-by-step plan. Once the plan is approved, you can hand it off to agent mode for execution.
+- Plan mode: Use the Plan mode to create a detailed implementation plan for your documentation tasks. The Plan mode can be used to analyze the codebase, identify documentation requirements, and produce a step-by-step plan. Once the plan is approved, you can hand it off to Agent mode for execution.
 
-- Agent mode: Use the agent mode to autonomously generate inline code documentation for specified code projects, files, classes, or methods. Have the agent perform other tasks during or after the documentation process. Accept or reject the updates when the agent has completed the assigned tasks.
+- Agent mode: Use the Agent mode to autonomously generate inline code documentation for specified code projects, files, classes, or methods. Have the agent perform other tasks during or after the documentation process. Accept or reject the updates when the agent has completed the assigned tasks.
 
 - Inline chat - Use an inline chat session to work directly in the code editor. The inline chat is useful when you want to document specific code (classes, methods, or code blocks) without leaving the editor. You can provide specific instructions in the prompt or use the `/doc` slash command without specific information if you want. Updates are displayed in the code editor and can be accepted or rejected. You can also choose the option to rerun the prompt with or without updates.
 

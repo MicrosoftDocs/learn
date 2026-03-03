@@ -103,7 +103,7 @@ About the `@workspace` keyword:
 - The `@workspace` keyword is a chat participant that's dedicated to answering questions about your codebase.
 - The `@workspace` keyword takes control of the user prompt and uses the codebase to provide an answer.
 - The `@workspace` keyword can't invoke other tools.
-- The `@workspace` keyword can only be used when you're using the ask mode.
+- The `@workspace` keyword can only be used when you're using the Ask agent mode.
 - Example: "`@workspace how can I validate a date?`"
 
 About the `#codebase` keyword:

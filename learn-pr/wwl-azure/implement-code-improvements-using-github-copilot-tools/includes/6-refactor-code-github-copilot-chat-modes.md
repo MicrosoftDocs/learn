@@ -130,7 +130,7 @@ Consider the following criteria to choose between Plan and Agent:
 - Task complexity: The Agent is better suited for complex tasks that require both code edits and the invocation of tools or terminal commands.
 - Duration: The Agent uses multiple steps to process a request, so it might take longer to generate a response. For example, to determine the relevant context and files to edit, determine the plan of action, and more.
 - Self-healing: The Agent evaluates the outcome of the generated edits and might iterate multiple times to resolve intermediate issues.
-- Request quota: When using the Agent mode, depending on the complexity of the task, one prompt might result in many requests to the backend.
+- Request quota: When you're using the Agent mode, depending on the complexity of the task, one prompt might result in many requests to the backend.
 
 ## Summary
 

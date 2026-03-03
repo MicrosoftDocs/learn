@@ -55,7 +55,7 @@ Alternatively, you can:
 1. Follow GitHub Copilot's suggestions to fix the test
 
 > [!TIP]
-> When using agents, the agent monitors the test output when running tests, and automatically attempts to fix and rerun failing tests.
+> When using GitHub Copilot in Agent mode, the agent monitors the test output when running tests, and automatically attempts to fix and rerun failing tests.
 
 ### Maintain consistency
 
