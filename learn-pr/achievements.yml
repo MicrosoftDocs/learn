@@ -10,6 +10,11 @@ achievements:
   title: Guided project - Analyze logs in Azure Monitor with KQL
   summary: Write log queries to find answers to operational and business questions. Use Kusto Query Language (KQL) to extract insights from logs in Azure Monitor.
   iconUrl: /training/achievements/analyze-logs-with-kql.svg
+- uid: learn.dpu.learning-zone.badge
+  type: badge
+  title: Getting started with Microsoft Learning Zone
+  summary: This module guides you through downloading Microsoft Learning Zone, generating and editing lessons, assigning activities, and using insights and the Content Gallery to support effective, data-driven teaching.
+  iconUrl: /training/achievements/learning-zone.svg
 - uid: learn.azure.explore-fundamentals-kql.badge
   type: badge
   title: Explore the fundamentals of data analysis using Kusto Query Language (KQL)
@@ -7840,3 +7845,13 @@ achievements:
   title: Identify security threats with Microsoft Defender for Cloud
   summary: In this module, you'll discover how to detect and respond to threats with Microsoft Defender for Cloud.
   iconUrl: /training/achievements/identify-threats-with-azure-security-center.svg
+- uid: learn.stage-deploy-app-service-deployment-slots.badge
+  type: badge 
+  title: Stage a web app deployment for testing and rollback by using App Service deployment slots
+  summary: Use deployment slots to streamline deployment and roll back a web app in Azure App Service.
+  iconUrl: /training/achievements/stage-deploy-app-service-deployment-slots.svg
+- uid: learn.deploy-a-website-with-azure-app-service.trophy
+  type: trophy 
+  title: Deploy a website to Azure with Azure App Service
+  summary: Web apps in Azure allow you to publish and manage your website easily without having to work with the underlying servers, storage, or network assets. 
+  iconUrl: /training/achievements/deploy-a-website-with-azure-app-service.svg

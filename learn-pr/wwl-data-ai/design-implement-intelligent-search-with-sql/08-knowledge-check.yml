@@ -1,0 +1,71 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-implement-intelligent-search-with-sql.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 02/03/2026
+  author: calopez
+  ms.author: calopez
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which full-text predicate finds documents containing words that are inflectional forms of a search term, such as finding 'running' when searching for 'run'?"
+    choices:
+    - content: "CONTAINS with FORMSOF(INFLECTIONAL)"
+      isCorrect: false
+      explanation: "Incorrect. CONTAINS with FORMSOF(INFLECTIONAL) does support inflectional matching, but it's not the only option."
+    - content: "FREETEXT"
+      isCorrect: false
+      explanation: "Incorrect. FREETEXT automatically expands to inflectional forms, but it's not the only option."
+    - content: "Both CONTAINS with FORMSOF(INFLECTIONAL) and FREETEXT"
+      isCorrect: true
+      explanation: "Correct. FREETEXT automatically expands to inflectional forms, and CONTAINS can do this explicitly using FORMSOF(INFLECTIONAL, term)."
+    - content: "Neither - inflectional matching requires vector search"
+      isCorrect: false
+      explanation: "Incorrect. Full-text search in SQL Server supports inflectional matching through both FREETEXT and CONTAINS with FORMSOF."
+  - content: "What is the range of cosine distance values when comparing two vectors?"
+    choices:
+    - content: "-1 to 1"
+      isCorrect: false
+      explanation: "Incorrect. This range describes cosine similarity, not cosine distance."
+    - content: "0 to 1"
+      isCorrect: false
+      explanation: "Incorrect. Cosine distance has a wider range than 0 to 1."
+    - content: "0 to 2"
+      isCorrect: true
+      explanation: "Correct. Cosine distance ranges from 0 (identical vectors) to 2 (completely opposite vectors)."
+    - content: "0 to infinity"
+      isCorrect: false
+      explanation: "Incorrect. This range describes Euclidean distance, not cosine distance."
+  - content: "Which function should be used for vector search on a table with 500,000 rows when query speed is the priority?"
+    choices:
+    - content: "VECTOR_DISTANCE"
+      isCorrect: false
+      explanation: "Incorrect. VECTOR_DISTANCE performs exact search by calculating distance to every row, which is slow for large datasets."
+    - content: "VECTOR_SEARCH"
+      isCorrect: true
+      explanation: "Correct. VECTOR_SEARCH uses a vector index (DiskANN) for approximate nearest neighbor search, which is much faster for large datasets."
+    - content: "VECTOR_NORMALIZE"
+      isCorrect: false
+      explanation: "Incorrect. VECTOR_NORMALIZE scales vectors to unit length but doesn't perform search operations."
+    - content: "FREETEXTTABLE"
+      isCorrect: false
+      explanation: "Incorrect. FREETEXTTABLE is used for full-text search, not vector search."
+  - content: "What problem does Reciprocal Rank Fusion (RRF) solve in hybrid search?"
+    choices:
+    - content: "It improves the speed of vector search"
+      isCorrect: false
+      explanation: "Incorrect. RRF is a ranking algorithm, not a performance optimization for vector search."
+    - content: "It combines ranked results from different sources without requiring score normalization"
+      isCorrect: true
+      explanation: "Correct. RRF merges ranked lists from full-text and vector search by using rank positions instead of raw scores, avoiding the problem of different scoring scales and preventing one source from dominating."
+    - content: "It converts full-text results to vectors"
+      isCorrect: false
+      explanation: "Incorrect. RRF doesn't convert data types. It combines ranked results from multiple search methods."
+    - content: "It creates full-text indexes automatically"
+      isCorrect: false
+      explanation: "Incorrect. RRF is a ranking fusion algorithm, not an indexing feature."

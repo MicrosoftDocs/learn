@@ -48,7 +48,7 @@ Intune Suite’s add-ons are helpful for people whose needs go beyond basic endp
 
 ### Enhanced security and compliance needs
 
-Endpoint Privilege Management in Intune Suite allows you to manage user permissions by providing granular, just-in-time elevation of privileges for specific tasks.
+Endpoint Privilege Management in Intune Suite enables an admin to allow users to perform local tasks that would normally require elevated or admin permissions.
 
 You can define which tasks require elevated permissions and grant users only the necessary access temporarily—reducing the need for permanent admin rights. You can also review logs of all privileged actions to ensure compliance and monitor for security risks.
 
@@ -56,7 +56,7 @@ You can define which tasks require elevated permissions and grant users only the
 
 The Remote Help feature in Intune Suite allows you to securely assist users by troubleshooting and resolving issues on their devices, even when they're working remotely.
 
-You can connect to an end user’s device from any location to diagnose and fix problems in real-time—without the need for in-person support. You can also monitor active Remote Help sessions and view details about past sessions through detailed reports and audit logs in the Intune admin center.
+You can connect to an end user’s device from any location to diagnose and fix problems in real-time—without the need for in-person support. You can also track active Remote Help sessions and view details about past sessions through detailed reports and audit logs in the Intune admin center.
 
 In the Microsoft Intune admin center, you can view reports that include details about who helped who, on what device, and for how long. You can also find details about active sessions.
 

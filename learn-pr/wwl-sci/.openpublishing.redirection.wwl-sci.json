@@ -762,6 +762,11 @@
       "source_path_from_root": "/learn-pr/wwl-sci/introduction-zero-trust-best-practice-frameworks/5-zero-trust-technology-pillars-2.yml",
       "redirect_url": "/training/modules/introduction-zero-trust-best-practice-frameworks/2-introduction-zero-trust",
       "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-sci/design-solutions-align-cloud-adoption-framework-well-architected-framework/1-define-security-strategy.yml",
+      "redirect_url": "/training/modules/design-solutions-align-cloud-adoption-framework-well-architected-framework/7a-evaluate-security-strategy",
+      "redirect_document_id": false
     }
     ]
 }
