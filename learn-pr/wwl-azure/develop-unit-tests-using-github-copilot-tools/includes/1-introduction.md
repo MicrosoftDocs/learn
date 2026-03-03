@@ -9,7 +9,7 @@ The topics covered in this module include:
 - Using GitHub Copilot and Visual Studio Code for unit testing.
 - Generate unit tests with GitHub Copilot's Generate Tests smart action.
 - Creating unit tests with GitHub Copilot Inline Chat.
-- Creating unit tests with GitHub Copilot Chat Modes.
+- Creating unit tests with GitHub Copilot Chat view agents.
 - Developing unit tests with GitHub Copilot in C#.
 
 After completing this module, you’ll be able to:
@@ -17,7 +17,7 @@ After completing this module, you’ll be able to:
 - Explain how GitHub Copilot Chat supports various testing tasks, including unit, integration, and end-to-end tests.
 - Use the Generate Tests smart action to create unit tests for specific code blocks or entire files.
 - Leverage the Inline Chat feature to generate and refine unit tests directly within the code editor.
-- Utilize the Chat view modes—Ask, Edit, and Agent—to create, update, and automate unit test workflows.
+- Utilize the Chat view agents—Ask, Plan, and Agent—to create, plan, and automate unit test workflows.
 - Apply GitHub Copilot's capabilities to streamline the development of unit tests for a C# application in Visual Studio Code.
 
 > [!IMPORTANT]
