@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.introduction-end-analytics-use-microsoft-fabric.data-team
+title: Explore data teams and Microsoft Fabric
+metadata:
+  title: Data teams and Microsoft Fabric
+  description: "Data teams and Microsoft Fabric"
+  ms.date: 02/20/2026
+  author: angierudduck
+  ms.author: anrudduc
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/3-data-team.md)]
