@@ -1,3 +1,5 @@
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=1268c800-cec5-4dae-9d18-8e66d28446d3]
+
 When data pipelines fail, the consequences extend beyond immediate job errors. Invalid records can corrupt downstream analytics, unnoticed failures can accumulate technical debt, and without proper alerting, teams might discover problems hours or days after they occur. Designing robust **error handling** transforms your pipelines from fragile processes into resilient systems that protect data quality and enable rapid recovery.
 
 In this unit, you learn how to design error handling strategies for data pipelines, notebooks, and jobs in Azure Databricks.
