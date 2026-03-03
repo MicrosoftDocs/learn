@@ -28,11 +28,11 @@ For example, the README.md could include the following sections:
 
 GitHub Copilot Chat can help you generate project documentation that meets the specific needs of your project and its stakeholders.
 
-## Use the ask mode to generate project documentation
+## Use the Ask agent mode to generate project documentation
 
-The ask mode can be used to analyze a workspace and then generate documentation.
+The Ask agent mode can be used to analyze a workspace and then generate documentation.
 
-Use the following process to generate project documentation using the ask mode:
+Use the following process to generate project documentation using the Ask agent mode:
 
 1. Identify the documentation requirements and supporting resources.
 
@@ -40,7 +40,7 @@ Use the following process to generate project documentation using the ask mode:
 
     - Identify the resources required to generate the documentation. Your code workspace could be the only required resource. However, you may need to add context to the chat for sections like "Contributing", "Credits", and "Contact".
 
-1. Open the Chat view and start a new chat session using the ask mode.
+1. Open the Chat view and start a new chat session using the Ask agent mode.
 
 1. Add context to the chat session.
 
@@ -49,7 +49,7 @@ Use the following process to generate project documentation using the ask mode:
 
 1. Enter a series of prompts that investigate your documentation requirements.
 
-    You can use the ask mode to analyze the workspace and build a chat session history that supports your documentation requirements. Describing your goals can help establish context for the chat session. Asking questions that address your requirements helps GitHub Copilot identify the information needed to generate the documentation.
+    You can use the Ask agent mode to analyze the workspace and build a chat session history that supports your documentation requirements. Describing your goals can help establish context for the chat session. Asking questions that address your requirements helps GitHub Copilot identify the information needed to generate the documentation.
 
     Refresh the added context as needed.
 
@@ -63,7 +63,7 @@ Use the following process to generate project documentation using the ask mode:
 
     For example, create a README.md file at the root of the workspace, and the insert the suggested content into the file.
 
-    You can use the ask mode to suggest updates for specific sections of your project after creating the document, or use other GitHub Copilot tools to help with updates.
+    You can use the Ask agent mode to suggest updates for specific sections of your project after creating the document, or use other GitHub Copilot tools to help with updates.
 
 ## Use the Plan mode to generate project documentation
 
@@ -137,4 +137,4 @@ Agent mode is ideal for project-wide, multi-file, and context-aware documentatio
 
 ## Summary
 
-GitHub Copilot can help you generate project documentation that meets the specific needs of your project and its stakeholders. The Chat view can be used to generate project documentation in three different modes: Ask, Agent, and Plan. Each mode has its own strengths and weaknesses, and the best mode to use depends on the specific task at hand. The ask mode is best for asking questions about your codebase or technology concepts. The agent mode is best for generating project documentation that requires an in-depth understanding of the project. The Plan mode is best for creating a detailed implementation plan before generating documentation, which can then be handed off to agent mode for execution.
+GitHub Copilot can help you generate project documentation that meets the specific needs of your project and its stakeholders. The Chat view can be used to generate project documentation in three different modes: Ask, Agent, and Plan. Each mode has its own strengths and weaknesses, and the best mode to use depends on the specific task at hand. The Ask agent mode is best for asking questions about your codebase or technology concepts. The Agent mode is best for generating project documentation that requires an in-depth understanding of the project. The Plan mode is best for creating a detailed implementation plan before generating documentation, which can then be handed off to Agent mode for execution.
