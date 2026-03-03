@@ -4,7 +4,7 @@ GitHub Copilot Chat can help you document code quickly, accurately, and consiste
 
 Each of the following GitHub Copilot features can be used to create inline code documentation:
 
-- Chat view: Use the Chat view can be used in Ask, Edit, and Agent mode.
+- Chat view: Use the Chat view in Ask, Agent, or Plan mode.
 - Inline chat: Use an inline chat session to document specific code (classes, methods, or code blocks) without leaving the editor.
 - Smart actions: Run the Generate Docs smart action to explain selected code without even having to write a prompt.
 
@@ -12,7 +12,7 @@ Each of the following GitHub Copilot features can be used to create inline code 
 
 The Chat View can be used to generate inline code documentation for a project, code file, class, or method. You can review the suggested documentation and request updates as needed before updating the code file.
 
-Each of the three modes of the Chat view (Ask, Edit, and Agent) can be used to generate inline code documentation. The cost of using Agent mode is higher than the other modes, which may be a consideration.
+Each of the three modes of the Chat view (Ask, Agent, and Plan) can be used to generate inline code documentation. The cost of using Agent mode is higher than the other modes, which may be a consideration.
 
 ### Generate inline code documentation using the Chat view in Ask mode
 
@@ -52,29 +52,29 @@ The Ask mode can be used to evaluate your code and suggest inline code documenta
 
     You can continue to update the documentation as needed in the code editor.
 
-### Generate inline code documentation using the Chat view in Edit mode
+### Generate inline code documentation using the Chat view in Plan mode
 
-The Chat view in Edit mode can be used to generate inline code documentation for code file, class, or method. You can review the suggested inline documentation and request updates as needed before updating the code file.
+The Chat view in Plan mode can be used to create a detailed plan for generating inline code documentation across your project. The Plan mode analyzes your codebase and produces a step-by-step plan that can be handed off to agent mode for execution.
 
-1. Open the Chat view in Edit mode.
+1. Open the Chat view in Plan mode.
 
-1. Add context to the chat prompt. For example, select the **Add Context** button and then select **Open Editors** to add the open editor tabs to the chat.
-
-1. Enter a prompt to generate inline code documentation.
+1. Enter a prompt that describes your inline documentation tasks.
 
     For example, you can enter the following prompt:
 
     ```plaintext
-    Create inline code documentation for the ConsoleApp class. Document the class, its properties, and methods.
+    Create a plan for adding inline code documentation to the ConsoleApp class. Document the class, its properties, and methods. Identify all files that need documentation updates.
     ```
 
-    Edit mode doesn't support the `@workspace` chat participant or the `/doc` slash command, so you need to provide a detailed prompt.
+1. Review the implementation plan.
 
-1. Review the suggested inline code documentation in the editor.
+    After a few moments, the Plan agent outputs a plan in the Chat view. The plan provides a high-level summary and a breakdown of steps, including any open questions for clarification.
 
-    ![Screenshot showing the Chat view in Edit mode suggesting inline documentation.](../media/chat-view-edit-mode-inline-docs-may-2025.png)
+1. Once the plan is complete, select **Start Implementation** to hand off the plan to agent mode, or select **Open in Editor** to save the plan as a Markdown file for later use.
 
-1. Navigate through the updates to accept, reject, or modify individual suggestions.
+    When you select **Start Implementation**, GitHub Copilot switches to agent mode and begins adding inline code documentation based on the approved plan.
+
+1. Review the updated files in the editor. Navigate through the updates to accept, reject, or modify individual suggestions.
 
 1. To accept or reject all of the suggestions, select the **Keep** or **Undo** button on the bottom menu bar. You can also select the **Keep** or **Undo** buttons in the Chat view to accept or reject all of the suggestions.
 
@@ -86,7 +86,7 @@ The Chat view in Agent mode can be used to generate inline code documentation fo
 
 1. Open the Chat view in Agent mode.
 
-1. Add context to the chat prompt. For example, use the **Add Context** button to add source code folders to the chat.
+1. Add context to the chat prompt. For example, use the **Attach Context** button (paperclip icon) to add source code folders to the chat.
 
 1. Enter a prompt that defines your documentation tasks.
 

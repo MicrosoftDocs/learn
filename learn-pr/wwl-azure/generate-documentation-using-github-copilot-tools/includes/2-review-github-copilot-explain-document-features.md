@@ -18,7 +18,7 @@ The following GitHub Copilot features can be used to generate inline code docume
 
 - Ask mode: Use the ask mode to suggest inline code documentation for a code file, class, or method. Review the suggested inline documentation in the Chat view. Request updates as needed in the chat conversation. Once you're satisfied with the proposed documentation, you can insert the suggested documentation into the corresponding code file.
 
-- Edit mode: Use the edit mode to suggest inline code documentation for a code file, class, or method. Review the suggested documentation in the editor, navigating between suggested updates. Accept or reject individual suggestions, or modify suggestions as needed.
+- Plan mode: Use the Plan mode to create a detailed implementation plan for your documentation tasks. The Plan mode can be used to analyze the codebase, identify documentation requirements, and produce a step-by-step plan. Once the plan is approved, you can hand it off to agent mode for execution.
 
 - Agent mode: Use the agent mode to autonomously generate inline code documentation for specified code projects, files, classes, or methods. Have the agent perform other tasks during or after the documentation process. Accept or reject the updates when the agent has completed the assigned tasks.
 
@@ -32,12 +32,12 @@ The following GitHub Copilot features can be used to generate project documentat
 
 - Chat view in ask mode: Use the ask mode to analyze the codebase and gain an understanding of the code projects, files, and classes. Use ask mode to preview suggested project documentation. Review suggestions and request updates or other details as needed. Insert the suggested documentation into a project documentation file (README.md).
 
-- Chat view in Edit mode: Generate a project documentation file (README.md).
+- Chat view in Plan mode: Create a detailed implementation plan for project documentation, then hand off to agent mode for execution.
 
 - Chat view in agent mode: Generate a collection of project documentation files: create/update the README.md, create/update the UsageExamples.md, and create/update the ChangeLog.md. Include links between the documentation files, cross-reference classes and methods, and ensure consistency across docs.
 
 > [!IMPORTANT]
-> When you use the Chat view in agent mode, GitHub Copilot may make multiple premium requests to complete a single task. Premium requests can be used by user-initiated prompts and follow-up actions Copilot takes on your behalf. The total premium requests used will depend on the complexity of the task, the number of steps involved, and the model selected.
+> When you use the Chat view in agent mode, each prompt you enter counts as one premium request, multiplied by the model's multiplier. GitHub Copilot may take several follow-up actions to complete your task, but these follow-up actions don't count toward your premium request usage. Only the prompts you enter are billed. The total premium requests used depends on how many prompts you enter and the model selected. The Free Plan for GitHub Copilot gets 50 premium requests per month. Check plan descriptions for more details about premium request limits for each GitHub Copilot subscription.
 
 ## Summary
 
