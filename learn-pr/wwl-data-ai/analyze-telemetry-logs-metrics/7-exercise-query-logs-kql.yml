@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.analyze-telemetry-logs-metrics.exercise-query-logs-kql
+title: Exercise - Query logs with KQL
+metadata:
+  title: Exercise - Query Logs with KQL
+  description: Exercise - Query logs with KQL
+  ms.date: 02/19/2026
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: unit
+durationInMinutes: 20
+content: |
+  [!include[](includes/7-exercise-query-logs-kql.md)]

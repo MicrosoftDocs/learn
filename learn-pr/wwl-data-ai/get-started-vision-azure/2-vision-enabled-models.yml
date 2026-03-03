@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-started-with-computer-vision-in-azure.vision-enabled-models
+title: Multimodal models for image analysis
+metadata:
+  title: Multimodal models for image analysis
+  description: Multimodal models for image analysis
+  author: wwlpublish
+  ms.author: sheryang
+  ms.date: 02/17/2026
+  ms.topic: unit
+  zone_pivot_groups: video-or-text
+durationInMinutes: 7
+content: |
+  [!include[](includes/2-vision-enabled-models.md)]
+

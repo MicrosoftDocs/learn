@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.optimize-database-performance.evaluate-query-performance
+title: Evaluate query performance with execution plans and DMVs
+metadata:
+  title: Evaluate query performance with execution plans and DMVs
+  description: Analyze query performance using execution plans and dynamic management views to identify bottlenecks and optimization opportunities.
+  author: calopez
+  ms.author: calopez
+  ms.date: 07/07/2025
+  ms.topic: unit
+  ai-usage: ai-generated
+durationInMinutes: 10
+content: |
+  [!include[](includes/04-evaluate-query-performance.md)]

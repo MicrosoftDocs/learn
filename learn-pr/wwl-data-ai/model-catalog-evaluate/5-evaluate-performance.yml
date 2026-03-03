@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.model-catalog-evaluate.evaluate-performance
+title: Evaluate model performance
+metadata:
+  title: Evaluate model performance
+  description: Discover how to evaluate models using manual testing, AI-assisted metrics, and NLP metrics.
+  ms.date: 02/13/2026
+  author: ivorb
+  ms.author: berryivor
+  ms.topic: unit
+  ai-usage: ai-assisted
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-evaluate-performance.md)]

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.instrument-app-opentelemetry.configure-spans-traces
+title: Configure spans and traces
+metadata:
+  title: Configure Spans and Traces
+  description: Configure spans and traces
+  ms.date: 02/19/2026
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-configure-spans-traces.md)]

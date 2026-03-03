@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-implement-sql-solutions-ai-assisted-tools.enable-github-copilot-fabric-copilot
+title: Enable GitHub Copilot and Fabric Copilot
+metadata:
+  title: Enable GitHub Copilot and Fabric Copilot
+  description: Learn how to install and enable GitHub Copilot in SSMS and VS Code, and configure Fabric Copilot for SQL database development.
+  ms.date: 02/02/2026
+  author: JulianePadrao
+  ms.author: jupadrao
+  ms.topic: unit
+durationInMinutes: 12
+content: |
+  [!include[](includes/4-enable-github-copilot-fabric-copilot.md)]

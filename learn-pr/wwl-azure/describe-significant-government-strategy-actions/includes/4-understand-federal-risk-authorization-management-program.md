@@ -15,7 +15,7 @@
     :::column-end:::
 :::row-end:::
 
-On December 8, 2011, the OMB released a memorandum for Chief Information Officers titled [“Security Authorization for Information Systems in Cloud Computing”](https://www.fedramp.gov/assets/resources/documents/FedRAMP_Policy_Memo.pdf) that establishes FedRAMP. The memorandum seeks to “provide a cost-effective, risk-based approach for the adoption and use of cloud services to Executive departments and agencies.”
+On December 8, 2011, the OMB released a memorandum for Chief Information Officers titled [“Security Authorization for Information Systems in Cloud Computing”](https://bidenwhitehouse.archives.gov/wp-content/uploads/legacy_drupal_files/omb/assets/egov_docs/fedrampmemo.pdf) that establishes FedRAMP. The memorandum seeks to “provide a cost-effective, risk-based approach for the adoption and use of cloud services to Executive departments and agencies.”
 
 The General Services Administration, in June 2012, then followed up by creating a FedRAMP Project Management Office, or PMO, with the goal of promoting the adoption of secure cloud services across the Federal Government through a standardized approach to security and risk management.
 
