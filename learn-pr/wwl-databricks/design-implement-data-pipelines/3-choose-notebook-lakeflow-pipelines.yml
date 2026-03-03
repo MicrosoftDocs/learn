@@ -4,7 +4,7 @@ title: Choose notebook vs Lakeflow Pipelines
 metadata:
   title: Choose Notebook vs Lakeflow Pipelines
   description: Learn how to choose between notebooks and Lakeflow Spark Declarative Pipelines for building data pipelines in Azure Databricks, comparing flexibility, maintainability, and use cases.
-  ms.date: 12/07/2025
+  ms.date: 03/03/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit
