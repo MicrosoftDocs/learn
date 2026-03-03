@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.optimize-finetune-agents.prepare-data
-title: Prepare your data to fine-tune a chat completion model
+title: Prepare training data for fine-tuning
 metadata:
-  title: Prepare your data to fine-tune a chat completion model
-  description: Learn how to prepare training data from real conversations or generate synthetic data using Microsoft Foundry's data generation tools for fine-tuning chat completion models.
+  title: Prepare training data for fine-tuning
+  description: Learn how to validate data formats for SFT, DPO, and RFT fine-tuning methods, apply data quality principles, and follow a systematic workflow to create or generate high-quality training datasets.
   author: madiepev
   ms.author: madiepev
   ms.date: 02/25/2026

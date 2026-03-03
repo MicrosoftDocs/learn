@@ -3,7 +3,7 @@ uid: learn.wwl.optimize-finetune-agents.introduction
 title: Introduction
 metadata:
   title: Introduction
-  description: Introduction to fine-tuning a foundation model from the model catalog in Microsoft Foundry.
+  description: Introduction to advanced fine-tuning decision-making for AI agents, covering method selection, synthetic data strategies, performance assessment, and model lifecycle management.
   author: madiepev
   ms.author: madiepev
   ms.date: 02/25/2026
