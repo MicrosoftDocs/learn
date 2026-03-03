@@ -48,17 +48,7 @@ The VS Code extension is ideal for:
 - **Code-first development** - Edit YAML configurations directly for precise control
 - **Local development** - Work on agent designs offline before deploying to Azure
 
-The extension installs directly from the Visual Studio Code Marketplace and connects to your existing Foundry projects.
-
-### Extension installation
-
-To get started with the Microsoft Foundry for Visual Studio Code extension:
-
-1. Open Visual Studio Code
-1. Select Extensions from the left pane, or press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>X</kbd>
-1. Search for and select **Microsoft Foundry**
-1. Select **Install**
-1. Verify the extension installed successfully from the status messages
+The extension installs directly from the Visual Studio Code Marketplace and connects to your existing Foundry projects. Detailed installation and setup steps are covered in the next unit.
 
 ## Typical development workflow
 
