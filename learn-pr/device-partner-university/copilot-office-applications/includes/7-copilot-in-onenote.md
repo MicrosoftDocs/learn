@@ -11,7 +11,7 @@ Using Copilot in OneNote you can:
 - Create new content like presentation outlines and meeting drafts.
 - Chat with Copilot to get assistance in real-time.
 
-:::image type="content" border="true" source="../media/onenote-copilot-chat.jpeg" alt-text="Screenshot of Copilot chat in OneNote.":::
+:::image type="content" border="true" source="../media/onenote-copilot-chat.png" alt-text="Screenshot of Copilot chat in OneNote.":::
 
 To start interacting with Copilot in OneNote, select the Copilot button from the Home Ribbon.
 
