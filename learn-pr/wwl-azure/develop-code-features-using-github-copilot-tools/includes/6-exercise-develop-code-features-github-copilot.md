@@ -4,7 +4,7 @@
 In this exercise, you use GitHub Copilot to accelerate the development of new code features in Visual Studio Code. Tasks include:
 
 - Implement new code features using inline chat.
-- Implement new code features using the Chat view in Ask and Edit modes.
+- Implement new code features using the Chat view with Ask and Agent modes.
 
 When you select the launch exercise button, the browser navigates to a public GitHub page that provides instructions for this exercise.
 

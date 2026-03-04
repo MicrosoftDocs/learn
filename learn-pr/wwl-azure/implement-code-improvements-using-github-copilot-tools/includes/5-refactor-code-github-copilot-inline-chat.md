@@ -35,11 +35,11 @@ To refactor code using Inline Chat, follow these steps:
 
 1. Review the suggested code update.
 
-    Copilot applies the suggested code update directly in the editor, where you can review it in-place, with the full context of the surrounding code.
+    GitHub Copilot applies the suggested code update directly in the editor, where you can review it in-place, with the full context of the surrounding code.
 
 1. Select **Accept** or **Close** to accept or discard the suggested code update.
 
-    As with all Copilot suggestions, check that the revised code runs without errors and produces the correct result.
+    As with all GitHub Copilot suggestions, check that the revised code runs without errors and produces the correct result.
 
 The following example demonstrates how to use Inline Chat to refactor a C# method that processes data.
 
@@ -94,13 +94,13 @@ To refactor the ProcessData method, follow these steps:
 
 1. Open inline chat.
 
-1. Enter a prompt that asks Copilot to create separate methods for each task, and then press **Enter**.
+1. Enter a prompt that asks GitHub Copilot to create separate methods for each task, and then press **Enter**.
 
     For example: **I want to refactor the ProcessData method. I want a method for data cleansing, a method for printing, and a method for data processing.**
 
 1. Review the suggested code update.
 
-    For this example, Copilot suggests a refactored version of the original method that separates the cleansing and printing tasks into separate methods.
+    For this example, GitHub Copilot suggests a refactored version of the original method that separates the cleansing and printing tasks into separate methods.
 
     ```csharp
     using System;
@@ -154,7 +154,7 @@ To refactor the ProcessData method, follow these steps:
 
     In this example, the suggested code looks good, so you would select **Accept** to apply the refactored code to your project.
 
-    As with all Copilot suggestions, check that the revised code runs without errors and produces the correct result.
+    As with all GitHub Copilot suggestions, check that the revised code runs without errors and produces the correct result.
 
 1. Test the refactored code to ensure it runs without errors and generates the expected result.
 

@@ -3,8 +3,8 @@
 
 In this exercise, you use GitHub Copilot to refactor selected sections of a C# application and make improvements to code quality, reliability, performance, and security. Tasks include:
 
-- Analyze and refactor code using the Chat view in Ask and Edit modes.
-- Refactor code using inline chat and the Chat view in Edit and Agent modes.
+- Analyze and refactor code using the Chat view with Ask and Agent.
+- Refactor code using inline chat and the Chat view with Plan and Agent.
 
 When you select the launch exercise button, the browser navigates to a public GitHub page that provides instructions for this exercise.
 
