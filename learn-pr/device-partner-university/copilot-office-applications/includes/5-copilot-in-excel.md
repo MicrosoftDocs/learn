@@ -46,7 +46,7 @@ Agent Mode is best for complex, multi-step tasks like reshaping data, merging sh
 2. Select **Home** > **Copilot** and open Copilot chat.
 3. Select the **Tools** menu and choose **Agent Mode**.
 
-:::image type="content" border="true" source="../media/copilot-excel-agent-mode.png" alt-text="Screenshot of the Agent Mode option in Copilot chat in Excel.":::
+:::image type="content" border="true" source="../media/excel-agent-mode.png" alt-text="Screenshot of the Agent Mode option in Copilot chat in Excel.":::
 
 Here are some examples of prompts to try to take advantage of the capabilities of Agent Mode:
 
