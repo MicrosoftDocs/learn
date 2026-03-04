@@ -50,7 +50,7 @@ and so on.
 As you add more training data, more tokens will be added to the vocabulary and assigned identifiers; so you might end up with tokens for words like *puppy*, *skateboard*, *car*, and others.
 
 > [!NOTE]
->  In this simple example, we've tokenized the example text based on *words*. In reality there would also be sub-words, punctuation, and other tokens.
+> In this simple example, we've tokenized the example text based on *words*. In reality there would also be sub-words, punctuation, and other tokens.
 
 ## Transforming tokens with a *transformer*
 
@@ -112,9 +112,6 @@ The result of the encoding process is a set of embeddings; vectors that include 
 | puppy | 127 | [5, 3, 2 ] |
 | car | 128 | [-2, -2, 1 ] |
 | skateboard | 129 | [-3, -2, 2 ] |
-| bark | 203 | [2, -2, 3 ] |
-
-If you're observant, you might have spotted that our results include two embeddings for the token "bark". It's important to understand that the embeddings represent a token within a particular *context*; and some tokens might be used to mean multiple things. For example, the *bark* of a *dog* is different from the *bark* of a *tree*! Tokens that are commonly used in multiple contexts can produce multiple embeddings.
 
 We can think of the elements of the embeddings as dimensions in a multi-dimensional vector-space. In our simple example, our embeddings only have three elements, so we can visualize them as vectors in three-dimensional space, like this:
 
