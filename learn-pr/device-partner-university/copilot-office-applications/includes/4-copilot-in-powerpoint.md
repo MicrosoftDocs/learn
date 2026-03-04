@@ -9,35 +9,35 @@ By using natural language text prompts, Copilot can help you build and refine a 
 1. Start a new presentation in PowerPoint.
 2. Select the **Create a presentation** option in the **Copilot** menu above your slide.
 
-:::image type="content" border="true" source="../media/powerpoint-create-presentation.png" alt-text="Screenshot of the Create a presentation option in the Copilot menu.":::
+	:::image type="content" border="true" source="../media/powerpoint-create-presentation.png" alt-text="Screenshot of the Create a presentation option in the Copilot menu.":::
 
 3. Complete your prompt with a description of the presentation you'd like Copilot to help draft. You can also select the paper clip button or enter / to choose a file that you'd like Copilot to reference when creating your presentation.
 
->[!NOTE]
-> You can add up to five Word documents, PDF files, TXT files, Excel files, and Loop/Pages for Copilot to reference when creating your presentation.
-
-:::image type="content" border="true" source="../media/powerpoint-copilot-prompt.png" alt-text="Screenshot of the Copilot create a presentation about prompt in PowerPoint.":::
+	>[!NOTE]
+	> You can add up to five Word documents, PDF files, TXT files, Excel files, and Loop/Pages for Copilot to reference when creating your presentation.
+   
+	:::image type="content" border="true" source="../media/powerpoint-copilot-prompt.png" alt-text="Screenshot of the Copilot create a presentation about prompt in PowerPoint.":::
 
 4. Indicate a presentation length if you'd like to provide one and select the arrow to generate your presentation outline. You can use a suggested length from Copilot or define Short (3-8 slides), Medium (9-17 slides), or Long (18+ slides) presentation length.
 
-:::image type="content" border="true" source="../media/presentation-length.png" alt-text="Screenshot of the presentation length options in Copilot in PowerPoint.":::
+	:::image type="content" border="true" source="../media/presentation-length.png" alt-text="Screenshot of the presentation length options in Copilot in PowerPoint.":::
 
 5. Review and modify the topics that Copilot generates for you. To refine your prompt and regenerate a new set of topics, select the pencil button.
 
-:::image type="content" border="true" source="../media/powerpoint-prompt-outline.png" alt-text="Screenshot of the Copilot prompt presentation outline in PowerPoint.":::
+	:::image type="content" border="true" source="../media/powerpoint-prompt-outline.png" alt-text="Screenshot of the Copilot prompt presentation outline in PowerPoint.":::
 
 6. Adjust the tone of your presentation and regenerate your presentation outline.
 
-:::image type="content" border="true" source="../media/presentation-tone.png" alt-text="Screenshot of the presentation tone options in Copilot in PowerPoint.":::
+	:::image type="content" border="true" source="../media/presentation-tone.png" alt-text="Screenshot of the presentation tone options in Copilot in PowerPoint.":::
 
 7. Add a topic by selecting the + button, then describe your topic. You can also select the paper clip button or enter / to choose a file that you'd like Copilot to reference when adding a topic.
 8. Select a Presentation Style or choose a template that is available from your organization.
 
-:::image type="content" border="true" source="../media/powerpoint-presentation-style.png" alt-text="Screenshot of the presentation style options in Copilot in PowerPoint.":::
+	:::image type="content" border="true" source="../media/powerpoint-presentation-style.png" alt-text="Screenshot of the presentation style options in Copilot in PowerPoint.":::
 
 9. Choose the source for images in your presentation. If you'd like to use AI-generated images, you can choose a style for your images.
 
-:::image type="content" border="true" source="../media/powerpoint-image-preferences.png" alt-text="Screenshot of the image preferences options in Copilot in PowerPoint.":::
+	:::image type="content" border="true" source="../media/powerpoint-image-preferences.png" alt-text="Screenshot of the image preferences options in Copilot in PowerPoint.":::
 
 10. If you're happy with your topics, select **Generate slides** and Copilot will draft a presentation for you.
 

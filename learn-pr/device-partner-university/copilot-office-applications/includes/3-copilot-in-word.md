@@ -11,9 +11,9 @@ Copilot in Word can rewrite your text to make it clearer and easier to read. Jus
 3. From the left margin Copilot menu, select Auto Rewrite.
 4. Copilot shows you rewritten options to choose from.
 5. Select between these options:
-  a. **Replace to use** the revised text.
-  b. **Insert below** to insert the rewritten text below the current text.
-  c. **Regenerate** to regenerate Copilot's suggestions.
+  1. **Replace to use** the revised text.
+  2. **Insert below** to insert the rewritten text below the current text.
+  3. **Regenerate** to regenerate Copilot's suggestions.
 
 ### Interactive rewriting
 

@@ -8,7 +8,7 @@ Copilot Chat is secure AI chat grounded in the web built right into Microsoft 36
 
 Copilot is available in the Home tab of Microsoft 365 apps on both the web and desktop apps. The button should appear automatically. Let's explore how to enable this button across Microsoft 365 apps in case it isn't visible.
 
-First, ensure you're using the correct account. ****Make sure that you're signed into your Microsoft 365 apps with an account that has a Copilot license—meaning a Microsoft 365 Personal or Family subscription. For new or locally saved files, make sure you're signed in with the Microsoft 365 account that has a Copilot license.
+First, ensure you're using the correct account. Make sure that you're signed into your Microsoft 365 apps with an account that has a Copilot license—meaning a Microsoft 365 Personal or Family subscription. For new or locally saved files, make sure you're signed in with the Microsoft 365 account that has a Copilot license.
 
 :::image type="content" border="true" source="../media/profile-icon-word.png" alt-text="Screenshot of the profile icon in Word.":::
 
@@ -17,13 +17,13 @@ The steps to turn on the Copilot button are different on desktop and on the web.
 ## Enabling the Copilot button on Windows
 
 1. **Make sure you're using the latest version of Microsoft 365:** To get access to the newest features, check for updates by doing the following:
-  i. Open any Office app, such as Word, and create a new document.
-  ii. Go to **File** > **Account**.
-  iii. Under **Product Information**, choose **Update Options** > **Update Now**.
-  iv. Close the **"You're up to date!"** window after Office done checking for and installing updates.
+  1. Open any Office app, such as Word, and create a new document.
+  2. Go to **File** > **Account**.
+  3. Under **Product Information**, choose **Update Options** > **Update Now**.
+  4. Close the **"You're up to date!"** window after Office done checking for and installing updates.
 
->[!NOTE]
-> You may need to select **Enable Updates** first if you don't see the **Update Now** option right away.
+>   [!NOTE]
+>    You may need to select **Enable Updates** first if you don't see the **Update Now** option right away.
 
 :::image type="content" border="true" source="../media/office-update.png" alt-text="Screenshot of the Office update window in Microsoft 365.":::
 

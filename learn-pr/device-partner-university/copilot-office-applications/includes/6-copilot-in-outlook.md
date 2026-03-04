@@ -17,11 +17,11 @@ With Copilot, you can get help crafting an email with the proper tone of voice, 
 1. Open Outlook, select **Home** > **New mail**.
 2. To start a new message, select the Copilot icon from the toolbar above the blank email, and select **Draft** from the dropdown menu. If you don't see the icon in the toolbar, select the Copilot icon or the **Draft with Copilot** text in the email message area.
 
-:::image type="content" border="true" source="../media/draft-with-copilot.png" alt-text="Screenshot of the Draft with Copilot option in Outlook.":::
+  :::image type="content" border="true" source="../media/draft-with-copilot.png" alt-text="Screenshot of the Draft with Copilot option in Outlook.":::
 
 3. In the Copilot box, type your prompt—or select and edit one of the suggested prompts from the dropdown.
 
-:::image type="content" border="true" source="../media/outlook-suggested-prompts.png" alt-text="Screenshot of suggested prompts in Copilot for Outlook.":::
+  :::image type="content" border="true" source="../media/outlook-suggested-prompts.png" alt-text="Screenshot of suggested prompts in Copilot for Outlook.":::
 
 4. When you're finished, select the **Generate** arrow. Copilot drafts a message for you.
 5. Review the draft. If it's not right, choose one of the options to adjust the text, or enter a new prompt and select **Generate** again.
@@ -40,9 +40,9 @@ Copilot can also help you create meetings and meeting agendas quickly, saving yo
 2. Scroll down to the meeting description in the event form.
 3. Select the Copilot button, or press **Alt + I** to open Copilot.
 4. Select the prompt entry field and:
-  i. If you've already set the meeting title and attendees, you can select **Auto draft an agenda**.
-  ii. Choose a suggested prompt based on your title and attendees and build on it.
-  iii. Explicitly type a prompt with the goal, talking points, or other meeting details for the agenda you want.
+  1. If you've already set the meeting title and attendees, you can select **Auto draft an agenda**.
+  2. Choose a suggested prompt based on your title and attendees and build on it.
+  3. Explicitly type a prompt with the goal, talking points, or other meeting details for the agenda you want.
 5. Once Copilot creates a draft agenda, you can choose **Keep it**, **Discard**, or **Adjust the tone or length**.
 6. With **Adjust the tone or length**, you can choose to **Retry**, **Make it shorter**, **Make it longer**, or **Change Tone**.
 7. Use **< Previous** or **Next >** to scroll through agenda versions and select **Keep it** when you find one you like.

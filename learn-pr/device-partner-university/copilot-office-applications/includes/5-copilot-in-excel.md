@@ -28,7 +28,7 @@ Formulas are a powerful tool in Excel, but they can sometimes be complex and dif
 1. Open Excel.
 2. Select a cell with a formula, and right select.
 
-:::image type="content" border="true" source="../media/excel-explain-formula.png" alt-text="Screenshot of the Copilot explain formula option in Excel.":::
+	:::image type="content" border="true" source="../media/excel-explain-formula.png" alt-text="Screenshot of the Copilot explain formula option in Excel.":::
 
 3. Select Copilot Suggestions.
 4. Choose Explain this formula from the dropdown menu.
