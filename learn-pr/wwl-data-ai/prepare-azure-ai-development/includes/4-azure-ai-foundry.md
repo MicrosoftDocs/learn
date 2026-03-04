@@ -14,13 +14,13 @@ In Microsoft Foundry, you manage the resource connections, data, code, and other
 
 A Microsoft Foundry resource supports the most common AI development tasks to develop generative AI chat apps and agents. In most cases, using a Foundry project provides the right level of resource centralization and capabilities with a minimal amount of administrative resource management. You can use Microsoft Foundry portal to work in projects that are based in Microsoft Foundry resources, making it easy to add connected resources and manage model and agent deployments.
 
-### Hub-based projects
+### Hub-based projects (deprecated)
 
 ![Diagram of a hub-based project.](../media/hub-project.png)
 
-*Hub-based projects* are associated with an **Azure AI hub** resource in an Azure subscription. Hub-based projects include a Microsoft Foundry resource, as well as managed compute, support for Prompt Flow development, and connected **Azure storage** and **Azure key vault** resources for secure data storage.
+*Hub-based projects* are associated with an **Azure AI hub** resource in an Azure subscription. Hub-based projects include a Microsoft Foundry resource, as well as managed compute, support for Prompt Flow development, and connected **Azure storage** and **Azure key vault** resources for secure data storage. These are now deprecated, but still in use in several projects today.
 
-Azure AI hub resources support advanced AI development scenarios, like developing Prompt Flow based applications or fine-tuning models. You can also use Azure AI hub resources in both Microsoft Foundry portal and Azure Machine learning portal, making it easier to work on collaborative projects that involve data scientists and machine learning specialists as well as developers and AI software engineers
+Azure AI hub resources support advanced AI development scenarios, like developing Prompt Flow based applications or fine-tuning models. You can also use Azure AI hub resources in both Microsoft Foundry portal and Azure Machine Learning portal, making it easier to work on collaborative projects that involve data scientists and machine learning specialists as well as developers and AI software engineers
 
 > [!TIP]
 > For more information about Microsoft Foundry project types, see **[What is Microsoft Foundry?](/azure/ai-foundry/what-is-azure-ai-foundry?azure-portal=true)**.
