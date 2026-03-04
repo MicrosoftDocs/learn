@@ -3,9 +3,9 @@ uid: learn.wwl.develop-code-features-using-github-copilot-tools
 metadata:
   title: Develop Code Features using GitHub Copilot Tools
   description: "This module explores using GitHub Copilot autocompletion suggestions to create new code. Autocompletion suggestions are generated, managed, and implemented using the GitHub Copilot extension for Visual Studio Code."
-  ms.date: 06/02/2025
+  ms.date: 03/03/2026
   ms.update-cycle: 180-days
-  author: wwlpublish
+  author: chrishowd
   ms.author: cahowd
   ms.topic: module-standard-task-based
   ms.collection: wwl-ai-copilot

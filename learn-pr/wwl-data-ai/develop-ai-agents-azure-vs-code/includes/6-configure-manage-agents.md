@@ -1,4 +1,7 @@
-Once you create an agent in Visual Studio Code, the real work begins — configuring its behavior, instructions, and properties to match your requirements. The Microsoft Foundry extension provides comprehensive configuration options through both visual interfaces and direct file editing, giving you flexibility in how you work.
+Once you have a declarative agent (created in the Foundry portal or through the SDK), the real work begins — configuring its behavior, instructions, and properties to match your requirements. The Microsoft Foundry VS Code extension provides comprehensive configuration options through both the visual Agent Designer and direct YAML file editing, giving you flexibility in how you work.
+
+> [!NOTE]
+> The configuration workflow described in this unit applies to **declarative prompt-based agents**. Hosted agents are configured through code, and workflow agents use a different YAML schema for multi-agent orchestration.
 
 ## Configuring agent properties
 
@@ -30,7 +33,7 @@ These settings appear in both the Designer interface and the YAML file, remainin
 
 ## Understanding the agent YAML structure
 
-The YAML file contains all your agent's configuration in a structured, readable format. Understanding this structure helps you make precise changes and work efficiently when the visual interface isn't the best fit.
+The YAML file contains all your declarative agent's configuration in a structured, readable format. Understanding this structure helps you make precise changes and work efficiently when the visual interface isn't the best fit.
 
 ### Complete YAML example
 
