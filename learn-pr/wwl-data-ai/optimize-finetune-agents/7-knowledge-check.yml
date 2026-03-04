@@ -1,0 +1,52 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.optimize-finetune-agents.knowledge-check
+title: Module assessment
+metadata:
+  title: Module assessment
+  description: Knowledge check covering fine-tuning method selection for agent quality problems, DPO preference pair data format requirements, and optimization strategy design.
+  author: madiepev
+  ms.author: madiepev
+  ms.date: 02/25/2026
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+  module_assessment: true
+durationInMinutes: 3
+content: |
+quiz:
+  questions:
+  - content: "An AI agent generates trip plans that fail to consider how customer constraints like fitness level, experience, budget, and weather conditions interact with each other. Which fine-tuning method best addresses this problem?"
+    choices:
+    - content: "Supervised Fine-Tuning (SFT)"
+      isCorrect: false
+      explanation: "Incorrect. SFT excels at format consistency and style adherence, but doesn't develop the multi-step reasoning needed to balance interacting constraints."
+    - content: "Reinforcement Fine-Tuning (RFT)"
+      isCorrect: true
+      explanation: "Correct. RFT develops complex reasoning capabilities by using a grader function to reward outputs that appropriately balance interacting constraints, making it the right choice for multi-step planning problems."
+    - content: "Direct Preference Optimization (DPO)"
+      isCorrect: false
+      explanation: "Incorrect. DPO specializes in subjective preferences and tone alignment, not in developing reasoning logic for multi-step constraint balancing."
+  - content: "Which fine-tuning method requires training data structured as preference pairs, each containing a prompt alongside both a preferred and a non-preferred response?"
+    choices:
+    - content: "Supervised Fine-Tuning (SFT)"
+      isCorrect: false
+      explanation: "Incorrect. SFT requires labeled examples, where each example pairs a prompt with the single ideal response you want the model to produce."
+    - content: "Reinforcement Fine-Tuning (RFT)"
+      isCorrect: false
+      explanation: "Incorrect. RFT requires prompts combined with a separate grader function that scores the model's generated responses during training."
+    - content: "Direct Preference Optimization (DPO)"
+      isCorrect: true
+      explanation: "Correct. DPO uses preference pairs to teach the model which response better reflects your values. Each example includes a prompt, a preferred response, and a non-preferred response."
+  - content: "What is the purpose of evaluating the base model before submitting a fine-tuning job?"
+    choices:
+    - content: "To establish a baseline so you can measure whether fine-tuning improved performance."
+      isCorrect: true
+      explanation: "Correct. Running your evaluation dataset through the unmodified base model and recording metric scores gives you a reference point for comparing fine-tuned results."
+    - content: "To automatically generate labeled training examples from the base model's outputs."
+      isCorrect: false
+      explanation: "Incorrect. Evaluating the base model measures its current performance—it doesn't produce training data. Training data must be prepared separately before fine-tuning begins."
+    - content: "To determine the correct number of epochs to use during training."
+      isCorrect: false
+      explanation: "Incorrect. Baseline evaluation measures current model quality against your metrics. Epoch count is a hyperparameter you set based on training results, adjusted one at a time after evaluating each run."
+
+
