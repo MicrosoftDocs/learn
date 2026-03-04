@@ -3,10 +3,10 @@ uid: learn.wwl.finetune-model-copilot-ai-studio.understand-finetune
 title: Understand when to fine-tune a language model 
 metadata:
   title: Understand when to fine-tune a language model
-  description: Learn how to optimize a language model, and when to fine-tune a language model.
+  description: Learn how to optimize a language model and explore fine-tuning techniques including supervised fine-tuning, reinforcement fine-tuning, and direct preference optimization.
   author: madiepev
   ms.author: madiepev
-  ms.date: 07/15/2025
+  ms.date: 02/01/2026
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot

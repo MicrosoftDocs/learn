@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.optimize-finetune-agents.scenarios
+title: Recognize problems fine-tuning solves
+metadata:
+  title: Recognize problems fine-tuning solves
+  description: Apply your knowledge of fine-tuning methods to real-world scenarios. Analyze agent quality challenges and determine which fine-tuning approach provides the most effective solution for inconsistent response formats, inappropriate tone, and illogical reasoning problems.
+  author: madiepev
+  ms.author: madiepev
+  ms.date: 02/26/2026
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 6
+content: |
+  [!include[](includes/3-scenarios.md)]
