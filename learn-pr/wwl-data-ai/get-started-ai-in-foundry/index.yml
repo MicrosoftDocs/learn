@@ -1,5 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.get-started-ai-in-foundry
+hidden: true
 metadata:
   title: (AI-900) Get started with Microsoft Foundry
   description: "This module introduces Microsoft Foundry and its capabilities for building AI solutions. Explore the key features and benefits of using Azure for AI development."
@@ -14,24 +15,24 @@ abstract: Get started with AI in Microsoft Foundry
 prerequisites: Ability to navigate the Azure portal
 iconUrl: /training/achievements/fundamentals-azure-ai-services.svg
 levels:
-- beginner
+  - beginner
 roles:
-- ai-engineer
-- data-scientist
-- developer
-- solution-architect
-- student
+  - ai-engineer
+  - data-scientist
+  - developer
+  - solution-architect
+  - student
 products:
-- azure-ai-foundry
+  - azure-ai-foundry
 units:
-- learn.wwl.get-started-ai-in-foundry.introduction
-- learn.wwl.get-started-ai-in-foundry.concepts
-- learn.wwl.get-started-ai-in-foundry.components
-- learn.wwl.get-started-ai-in-foundry.microsoft-foundry
-- learn.wwl.get-started-ai-in-foundry.foundry-projects
-- learn.wwl.get-started-ai-in-foundry.about-azure
-- learn.wwl.get-started-ai-in-foundry.exercise
-- learn.wwl.get-started-ai-in-foundry.knowledge-check
-- learn.wwl.get-started-ai-in-foundry.summary
+  - learn.wwl.get-started-ai-in-foundry.introduction
+  - learn.wwl.get-started-ai-in-foundry.concepts
+  - learn.wwl.get-started-ai-in-foundry.components
+  - learn.wwl.get-started-ai-in-foundry.microsoft-foundry
+  - learn.wwl.get-started-ai-in-foundry.foundry-projects
+  - learn.wwl.get-started-ai-in-foundry.about-azure
+  - learn.wwl.get-started-ai-in-foundry.exercise
+  - learn.wwl.get-started-ai-in-foundry.knowledge-check
+  - learn.wwl.get-started-ai-in-foundry.summary
 badge:
   uid: learn.wwl.get-started-ai-in-foundry.badge
