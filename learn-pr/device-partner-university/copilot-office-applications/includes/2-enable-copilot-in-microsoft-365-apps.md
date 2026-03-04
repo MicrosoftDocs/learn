@@ -17,13 +17,13 @@ The steps to turn on the Copilot button are different on desktop and on the web.
 ## Enabling the Copilot button on Windows
 
 1. **Make sure you're using the latest version of Microsoft 365:** To get access to the newest features, check for updates by doing the following:
-  1. Open any Office app, such as Word, and create a new document.
-  2. Go to **File** > **Account**.
-  3. Under **Product Information**, choose **Update Options** > **Update Now**.
-  4. Close the **"You're up to date!"** window after Office done checking for and installing updates.
+    1. Open any Office app, such as Word, and create a new document.
+    2. Go to **File** > **Account**.
+    3. Under **Product Information**, choose **Update Options** > **Update Now**.
+    4. Close the **"You're up to date!"** window after Office done checking for and installing updates.
 
->   [!NOTE]
->    You may need to select **Enable Updates** first if you don't see the **Update Now** option right away.
+    > [!NOTE]
+    > You may need to select **Enable Updates** first if you don't see the **Update Now** option right away.
 
 :::image type="content" border="true" source="../media/office-update.png" alt-text="Screenshot of the Office update window in Microsoft 365.":::
 
