@@ -8,15 +8,16 @@ There are many development tools and environments available, and developers shou
 
 When developing Microsoft Foundry based generative AI applications in Visual Studio Code, you can use the Microsoft Foundry for Visual Studio Code extension to simplify key tasks in the workflow, including:
 
-- Creating a project.
-- Selecting and deploying a model.
-- Testing a model in the playground.
-- Creating an agent.
+- Browsing and managing project resources, including deployed models, agents, connections, and vector stores.
+- Deploying models from the model catalog.
+- Testing models and agents in integrated playgrounds.
+- Configuring declarative and hosted agents using a visual designer and YAML files.
+- Generating integration code to connect agents with your applications.
 
-![Screenshot of the Microsoft Foundry Visual Studio Code extension.](../media/vs-code.png)
+![Screenshot of the Microsoft Foundry Visual Studio Code extension showing the Resources, Tools, and Help and Feedback sections.](../media/vs-code.png)
 
 > [!TIP]
-> For more information about using the Microsoft Foundry for Visual Studio Code extension, see **[Work with the Microsoft Foundry for Visual Studio Code extension](/azure/ai-foundry/how-to/develop/get-started-projects-vs-code?azure-portal=true)**.
+> For more information about using the Microsoft Foundry for Visual Studio Code extension, see **[Work with the Microsoft Foundry for Visual Studio Code extension](/azure/ai-foundry/how-to/develop/get-started-projects-vs-code?azure-portal=true)**. To learn how to develop AI agents and use the extension, see the [Develop AI agents with Azure and Visual Studio Code](/training/modules/develop-ai-agents-azure-vs-code) module.
 
 ### GitHub and GitHub Copilot
 

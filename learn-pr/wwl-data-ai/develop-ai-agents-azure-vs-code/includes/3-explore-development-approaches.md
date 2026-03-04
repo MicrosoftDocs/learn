@@ -22,21 +22,27 @@ The Microsoft Foundry extension for Visual Studio Code brings enterprise-grade A
 
 ### Key capabilities of the VS Code extension
 
-The extension provides comprehensive agent development features:
+The extension organizes its features into three main sections:
 
-**Agent discovery and management** - Browse, create, and manage AI agents within your Microsoft Foundry projects directly from VS Code.
+**Resources** - Browse and manage your Foundry project assets directly from VS Code, including:
+- **Deployed models** - View and manage model deployments
+- **Declarative agents** - View and configure prompt-based and workflow agents
+- **Hosted agents** - View and manage containerized, code-deployed agents
+- **Connections** - Manage connections to external services
+- **Vector stores** - Organize document collections for File Search
 
-**Visual agent designer** - Use an intuitive interface to configure agent instructions, tools, and capabilities without leaving your editor.
+**Tools** - Access development and testing capabilities:
+- **Model Catalog** - Browse and deploy models from the catalog
+- **Model Playground** - Experiment with models directly
+- **Agent Playgrounds** - Test agents using remote or local playgrounds
+- **Local Visualizer** - Debug and visualize agent behavior locally
+- **Deploy Hosted Agents** - Deploy containerized agents to production
 
-**Integrated testing** - Test agents in real-time using the built-in playground without switching contexts or opening additional applications.
+**Help and Feedback** - Access documentation and support resources.
 
-**Code generation** - Generate sample integration code to connect agents with your applications, accelerating the path from prototype to production.
+The extension also provides a visual **Agent Designer** for configuring agent properties, integrated **code generation** for application integration, and direct **YAML configuration** editing for precise control.
 
-**Deployment pipeline** - Deploy agents directly to Microsoft Foundry for production use through streamlined commands.
-
-**YAML configuration** - Access and edit agent configuration files directly, providing both visual and code-based workflows.
-
-![Screenshot of an agent details in the Microsoft Foundry VS Code extension.](../media/vs-code-agent.png)
+![Screenshot of the Microsoft Foundry VS Code extension interface showing the Resources, Tools, and Help and Feedback sections.](../media/vs-code-agent.png)
 
 ### When to use Visual Studio Code
 
@@ -55,8 +61,8 @@ The extension installs directly from the Visual Studio Code Marketplace and conn
 Regardless of your chosen approach, agent development follows a consistent pattern:
 
 1. **Connect** to your Microsoft Foundry project
-1. **Create** an AI agent with a descriptive name and purpose
-1. **Configure** agent instructions defining its behavior and capabilities
+1. **Create** an AI agent in the Foundry portal with a descriptive name and purpose
+1. **Configure** agent instructions defining its behavior and capabilities (in the portal or VS Code)
 1. **Add tools** to extend what the agent can do
 1. **Test** the agent using integrated playgrounds
 1. **Iterate** on the design based on test results
@@ -72,7 +78,7 @@ Both development approaches require the same underlying Azure resources. To deve
 - **Microsoft Foundry project** - Organizes your agents, models, and related assets in one place
 - **Model deployments** - Deployed AI models (such as GPT-4.1 or Claude Sonnet 4.6) that power your agents
 
-When you create a Microsoft Foundry project, the necessary infrastructure is provisioned automatically. As you add capabilities to your agents, such as File Search or custom tools, the service seamlessly integrates any required supporting services behind the scenes. If you choose to extend the capabilities of your agent even further, for example with Foundry IQ, you may need to deploy some addition Azure services.
+When you create a Microsoft Foundry project, the necessary infrastructure is provisioned automatically. As you add capabilities to your agents, such as File Search or custom tools, the service seamlessly integrates any required supporting services behind the scenes. If you choose to extend the capabilities of your agent even further, for example with Foundry IQ, you may need to deploy some additional Azure services.
 
 ### Optional Azure services
 
