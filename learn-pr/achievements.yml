@@ -7860,3 +7860,8 @@ achievements:
   title: Transform development workflows with T-SQL in SQL Server 2025
   summary: Learn about the new T-SQL capabilities introduced in SQL Server 2025 that expand data processing, AI integration, and query flexibility.
   iconUrl: /learn/achievements/sql-server.svg
+- uid: learn.introduction-to-sql-server-2022.badge
+  type: badge
+  title: Get started with SQL Server 2025
+  summary: Learn about SQL Server 2025's major capabilities including AI features, analytics improvements, developer tools, and performance optimization.
+  iconUrl: /training/achievements/sqlserver/introduction-to-sql-server-2025.svg
