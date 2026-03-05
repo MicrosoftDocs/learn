@@ -34,7 +34,7 @@ prerequisites: |
   -   The ability to create interfaces&nbsp;that define a contract&nbsp;for the classes implemented by a basic&nbsp;object-oriented program written in C#.
 
   -   The ability to create a class hierarchy by using base and derived classes.
-iconUrl: /training/achievements/generic-badge.svg
+iconUrl: /training/achievements/visual-studio-module.svg
 levels:
 - beginner
 roles:

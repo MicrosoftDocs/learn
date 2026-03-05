@@ -31,10 +31,7 @@ roles:
 products:
 - sql-server
 modules:
-- learn.introduction-to-sql-server-2022
 - learn-wwl.build-ai-solutions-sql-server
-- learn.wwl.understand-hybrid-data-platform-sql-server-2022
 - learn.sql-server-2022-data-virtualization
-- learn.introduction-sql-server-2022-t-sql-enhancements
 trophy:
   uid: learn.wwl.explore-sql-server-2022-capabilities.trophy
