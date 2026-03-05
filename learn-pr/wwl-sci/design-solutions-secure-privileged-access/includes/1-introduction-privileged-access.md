@@ -40,28 +40,28 @@ Securing Privileged Access has two simple goals
 
 There are two types of pathways to accessing the systems, user access (to use the capability) and privileged access (to manage the capability or access a sensitive capability)
 
-:::image type="content" source="../media/privileged-access-strategy-step1-no-third-party-icons.png" alt-text="Diagram showing Two pathways to systems user and privileged access." lightbox="../media/privileged-access-strategy-step1-no-third-party-icons.png":::
+:::image type="content" source="../media/privileged-access-strategy-step-1.png" alt-text="Diagram showing Two pathways to systems user and privileged access." lightbox="../media/privileged-access-strategy-step-1.png":::
 
 - User Access - the lighter blue path on the bottom of the diagram depicts a standard user account performing general productivity tasks like email, collaboration, web browsing, and use of line-of-business applications or websites. This path includes an account logging on to a device or workstation, sometimes passing through an intermediary like a remote access solution, and interacting with enterprise systems. 
 - Privileged Access - the darker blue path on the top of the diagram depicts privileged access, where privileged accounts like IT Administrators or other sensitive accounts access business-critical systems and data or perform administrative tasks on enterprise systems. While the technical components may be similar in nature, the damage an adversary can inflict with privileged access is much higher.
 
 The full access management system also includes identity systems and authorized elevation paths.
 
-:::image type="content" source="../media/privileged-access-strategy-step2-no-third-party-icons.png" alt-text="Diagram showing Two pathways plus identity systems and elevation paths." lightbox="../media/privileged-access-strategy-step2-no-third-party-icons.png":::
+:::image type="content" source="../media/privileged-access-strategy-step-2.png" alt-text="Diagram showing Two pathways plus identity systems and elevation paths." lightbox="../media/privileged-access-strategy-step-2.png":::
 
 - Identity Systems - provide identity directories that host the accounts and administrative groups, synchronization and federation capabilities, and other identity support functions for standard and privileged users.
 - Authorized Elevation Paths - provide means for standard users to interact with privileged workflows, such as managers or peers approving requests for administrative rights to a sensitive system through a just-in-time (JIT) process in a Privileged Access Management / Privileged Identity management system.  
 
 These components collectively comprise the privileged access attack surface that an adversary may target to attempt to gain elevated access to your enterprise: 
 
-:::image type="content" source="../media/privileged-access-strategy-step3-no-third-party-icons.png" alt-text="Diagram showing the attack surface unprotected." lightbox="../media/privileged-access-strategy-step3-no-third-party-icons.png":::
+:::image type="content" source="../media/privileged-access-strategy-step-3.png" alt-text="Diagram showing the attack surface unprotected." lightbox="../media/privileged-access-strategy-step-3.png":::
 
 > [!NOTE]
 > For on-premises and infrastructure as a service (IaaS) systems hosted on a customer-managed operating system, the attack surface dramatically increases with management and security agents, service accounts, and potential configuration issues.
 
 Creating a sustainable and manageable privileged access strategy requires closing off all unauthorized vectors to create the virtual equivalent of a control console physically attached to a secure system that represents the only way to access it.  
 
-:::image type="content" source="../media/privileged-access-strategy-step4-no-third-party-icons.png" alt-text="Diagram showing the protected attack surface." lightbox="../media/privileged-access-strategy-step4-no-third-party-icons.png":::
+:::image type="content" source="../media/privileged-access-strategy-step-4.png" alt-text="Diagram showing the protected attack surface." lightbox="../media/privileged-access-strategy-step-4.png":::
 
 ### Strategic initiatives in the journey
 
