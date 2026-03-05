@@ -64667,6 +64667,11 @@
       "source_path": "learn-pr/sqlserver/introduction-sql-server-2022-t-sql-enhancements/05-encoding-similarity.md",
       "redirect_url": "/training/modules/introduction-sql-server-t-sql-enhancements/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/introduction-sql-server-2022-t-sql-enhancements/01-introduction.md",
+      "redirect_url": "/training/modules/introduction-sql-server-t-sql-enhancements/",
+      "redirect_document_id": false
     }
   ]
 }
