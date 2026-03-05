@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-ado-mcp-server.explore-project-sprint-context
+title: Explore project and sprint context
+metadata:
+  title: Explore Project And Sprint Context
+  description: "Explore project and sprint context"
+  ms.date: 02/27/2026
+  author: wwlpublish
+  ms.author: petender
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/5-explore-project-sprint-context.md)]

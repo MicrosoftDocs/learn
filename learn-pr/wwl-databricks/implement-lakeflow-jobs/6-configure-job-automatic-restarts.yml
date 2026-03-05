@@ -4,7 +4,7 @@ title: Configure automatic restarts
 metadata:
   title: Configure Automatic Restarts
   description: Learn how to configure automatic restarts and retry policies for Lakeflow Jobs in Azure Databricks to handle transient failures and maintain pipeline reliability.
-  ms.date: 12/07/2025
+  ms.date: 03/05/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit
