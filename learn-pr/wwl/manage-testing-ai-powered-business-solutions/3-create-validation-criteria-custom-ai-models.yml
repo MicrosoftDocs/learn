@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-testing-ai-powered-business-solutions.create-validation-criteria-custom-ai-models
+title: "Create validation criteria for custom AI models"
+metadata:
+  title: "Create Validation Criteria for Custom AI Models"
+  description: "Learn how to define robust validation criteria for custom AI models to ensure accuracy, reliability, safety, and scalability in enterprise environments."
+  ms.date: 02/13/2026
+  author: msdavidram
+  ms.author: taeldin
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/3-create-validation-criteria-custom-ai-models.md)]
