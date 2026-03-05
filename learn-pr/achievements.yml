@@ -7855,3 +7855,18 @@ achievements:
   title: Deploy a website to Azure with Azure App Service
   summary: Web apps in Azure allow you to publish and manage your website easily without having to work with the underlying servers, storage, or network assets. 
   iconUrl: /training/achievements/deploy-a-website-with-azure-app-service.svg
+- uid: learn.introduction-sql-server-2022-t-sql-enhancements.badge
+  type: badge
+  title: Transform development workflows with T-SQL in SQL Server 2025
+  summary: Learn about the new T-SQL capabilities introduced in SQL Server 2025 that expand data processing, AI integration, and query flexibility.
+  iconUrl: /learn/achievements/sql-server.svg
+- uid: learn.introduction-to-sql-server-2022.badge
+  type: badge
+  title: Get started with SQL Server 2025
+  summary: Learn about SQL Server 2025's major capabilities including AI features, analytics improvements, developer tools, and performance optimization.
+  iconUrl: /training/achievements/sqlserver/introduction-to-sql-server-2025.svg
+- uid: learn.wwl.understand-hybrid-data-platform-sql-server-2022.badge
+  type: badge
+  title: Understand hybrid data platform on SQL Server 2025
+  summary: Learn about the cloud connected capabilities of SQL Server 2025 for hybrid data platforms.
+  iconUrl: /learn/achievements/generic-badge.svg
