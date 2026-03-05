@@ -64737,6 +64737,11 @@
       "source_path": "learn-pr/sqlserver/introduction-to-sql-server-2022/6-performance.md",
       "redirect_url": "/training/modules/introduction-to-sql-server/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/introduction-to-sql-server-2022/7-security-scalability.md",
+      "redirect_url": "/training/modules/introduction-to-sql-server/",
+      "redirect_document_id": false
     }
   ]
 }
