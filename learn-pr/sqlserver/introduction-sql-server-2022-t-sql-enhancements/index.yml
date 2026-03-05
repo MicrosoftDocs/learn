@@ -31,7 +31,6 @@ products:
 - azure-sql-database
 units:
 - learn.introduction-sql-server-2022-t-sql-enhancements.vector-ai-integration
-- learn.introduction-sql-server-2022-t-sql-enhancements.pattern-matching-text-extraction
 - learn.introduction-sql-server-2022-t-sql-enhancements.summary
 badge:
   uid: learn.introduction-sql-server-2022-t-sql-enhancements.badge
