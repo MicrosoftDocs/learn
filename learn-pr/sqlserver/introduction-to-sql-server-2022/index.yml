@@ -35,7 +35,6 @@ subjects:
 units:
 - learn.introduction-to-sql-server-2022.performance
 - learn.introduction-to-sql-server-2022.security-scalability
-- learn.introduction-to-sql-server-2022.knowledge-check
 - learn.introduction-to-sql-server-2022.summary
 badge:
   uid: learn.introduction-to-sql-server-2022.badge
