@@ -2,7 +2,7 @@
 uid: learn.wwl.accelerate-app-development-using-github-copilot
 metadata:
   title: Get Started with AI-Assisted Development
-  description: Learn how to accelerate app development by using GitHub Copilot in a Visual Studio Code environment and get started with vibe coding. AZ-2007
+  description: Learn how to accelerate app development by using GitHub Copilot in a Visual Studio Code environment and then apply what you've learned to get started with vibe coding. AZ-2007
   ms.date: 03/05/2026
   author: chrishowd
   ms.author: cahowd
@@ -13,7 +13,7 @@ prerequisites: |
   -   One or more years of code development experience is recommended.
   -   Some experience developing C# applications in Visual Studio Code with the C# Dev Kit extension is recommended.
 summary: |
-  Learn how to accelerate app development by using GitHub Copilot in a Visual Studio Code environment and get started with vibe coding.
+  Learn how to accelerate app development by using GitHub Copilot in a Visual Studio Code environment and then apply what you've learned to get started with vibe coding.
 iconUrl: /training/achievements/generic-trophy.svg
 levels:
 - intermediate

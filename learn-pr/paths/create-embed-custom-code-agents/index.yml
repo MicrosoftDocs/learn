@@ -1,19 +1,19 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.create-embed-custom-code-agents
 metadata:
-  title: Create and Embed Custom Code Agents
-  description: Learn how to implement agentic programming tools and techniques. This training covers how to configure custom agents in the development environment, how to develop apps using the GitHub Spec Kit, and how to develop AI-enabled apps with embedded agents using the GitHub Copilot SDK.
+  title: Develop Agents and Applications using Agentic Programming Tools
+  description: Learn how to develop code more efficiently by using agentic programming tools and techniques. This training covers how to configure custom agents in the development environment, how to develop or update apps using the GitHub Spec Kit, and how to create AI-enabled apps with embedded agents using the GitHub Copilot SDK.
   ms.date: 03/05/2026
   author: chrishowd
   ms.author: cahowd
   ms.topic: learning-path
-title: Create and embed custom code agents
+title: Develop agents and applications using agentic programming tools
 prerequisites: |
   -   An active subscription for GitHub Copilot is required for either a personal GitHub account or a GitHub account managed by an organization or enterprise.
   -   One or more years of code development experience is recommended.
   -   Some experience developing C# applications in Visual Studio Code with the C# Dev Kit extension is recommended.
 summary: |
-  Learn how to implement agentic programming tools and techniques. This training covers how to configure custom agents in the development environment, how to develop apps using the GitHub Spec Kit, and how to develop AI-enabled apps with embedded agents using the GitHub Copilot SDK.
+  Learn how to develop code more efficiently by using agentic programming tools and techniques. This training covers how to configure custom agents in the development environment, how to develop or update apps using the GitHub Spec Kit, and how to create AI-enabled apps with embedded agents using the GitHub Copilot SDK.
 iconUrl: /training/achievements/generic-trophy.svg
 levels:
 - intermediate
