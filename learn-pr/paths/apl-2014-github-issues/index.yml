@@ -8,7 +8,7 @@ metadata:
   author: chrishowd
   ms.author: cahowd
   ms.topic: learning-path
-title: Resolve GitHub Issues using GitHub Copilot Agent
+title: Resolve GitHub issues using GitHub Copilot Agent
 prerequisites: |
   -   An active subscription for GitHub Copilot is required for either a personal GitHub account or a GitHub account managed by an organization or enterprise.
   -   One or more years of code development experience is recommended.
