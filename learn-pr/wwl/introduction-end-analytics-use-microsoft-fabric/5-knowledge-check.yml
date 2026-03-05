@@ -4,7 +4,7 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: "Knowledge Check"
-  ms.date: 08/05/2025
+  ms.date: 03/04/2026
   author: angierudduck
   ms.author: anrudduc
   ms.topic: unit
@@ -44,4 +44,15 @@ quiz:
       explanation: "Incorrect. The Data Warehousing experience is for building and managing data warehouses."
     - content: "Data Factory"
       isCorrect: true
-      explanation: "Correct. The Data Factory experience is used to move and transform data using Power Query."
+      explanation: "Correct. The Data Factory workload is used to ingest, transform, and orchestrate data."
+  - content: "Why is OneLake's unified storage model important for AI capabilities in Fabric?"
+    choices:
+    - content: "It requires all data to be converted to a proprietary format for AI processing."
+      isCorrect: false
+      explanation: "Incorrect. OneLake uses the open Delta-Parquet format, not a proprietary format."
+    - content: "AI tools like Copilot and data agents can access the same governed data without separate preparation pipelines."
+      isCorrect: true
+      explanation: "Correct. Because all Fabric workloads store data in OneLake using an open format, AI capabilities can access the same governed data used by reports and dashboards."
+    - content: "It stores AI models alongside the data they process."
+      isCorrect: false
+      explanation: "Incorrect. Model management is handled by the Data Science workload, not by OneLake's storage format."

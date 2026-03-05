@@ -1,0 +1,5 @@
+In this module, you explored how **Microsoft 365 Copilot** is embedded directly into the apps you use every day—helping you work more efficiently without switching tools or losing context. You learned how Copilot supports content creation, analysis, and organization across Word, PowerPoint, Excel, Outlook, and OneNote by combining natural language prompts with awareness of your files and data.
+
+You also examined how to access and enable Copilot in Microsoft 365 apps, including key requirements such as using a licensed account and keeping your apps up to date. With Copilot available directly in the app experience, you can get help exactly where you're working—whether that's drafting documents, analyzing data, or catching up on communications.
+
+Copilot capabilities continue to evolve, offering new ways to streamline everyday work and focus on higher-value tasks. As you move forward, practice using Copilot directly within your Microsoft 365 apps to discover which prompts are most effective for your daily life.
