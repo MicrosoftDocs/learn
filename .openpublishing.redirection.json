@@ -64757,6 +64757,11 @@
       "source_path": "learn-pr/sqlserver/understand-hybrid-data-platform-sql-server-2022/5-azure-active-directory-azure-ad-authentication.md",
       "redirect_url": "/training/modules/understand-hybrid-data-platform-sql-server/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/understand-hybrid-data-platform-sql-server-2022/3-azure-arc-enabled.md",
+      "redirect_url": "/training/modules/understand-hybrid-data-platform-sql-server/",
+      "redirect_document_id": false
     }
   ]
 }
