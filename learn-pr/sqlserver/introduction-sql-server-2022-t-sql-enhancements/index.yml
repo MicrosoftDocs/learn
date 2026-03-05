@@ -30,6 +30,5 @@ products:
 - sql-server
 - azure-sql-database
 units:
-- learn.introduction-sql-server-2022-t-sql-enhancements.vector-ai-integration
 badge:
   uid: learn.introduction-sql-server-2022-t-sql-enhancements.badge
