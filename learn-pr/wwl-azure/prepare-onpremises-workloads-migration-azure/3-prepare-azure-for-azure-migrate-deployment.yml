@@ -2,14 +2,13 @@
 uid: learn.wwl.prepare-onpremises-workloads-migration-azure.prepare-azure-for-azure-migrate-deployment
 title: Prepare Azure for the Azure Migrate deployment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Prepare Azure for the Azure Migrate deployment
   description: "Prepare Azure for the Azure Migrate deployment"
   ms.date: 09/25/2020
   author: wwlpublish
   ms.author: tonyj
   ms.topic: unit
+  ms.custom: sfi-ga-nochange
 azureSandbox: false
 durationInMinutes: 7
 content: |
@@ -39,4 +38,4 @@ quiz:
     - content: "The appliance setup file"
       isCorrect: false
       explanation: "The appliance setup file is used to download the virtual machine image used to set up the appliance."
-
+

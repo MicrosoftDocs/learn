@@ -1,4 +1,4 @@
-GitHub Copilot is the world's first at-scale AI developer tool that can help you write code faster with less work. GitHub Copilot draws context from comments and code to suggest individual lines and whole functions instantly.
+GitHub Copilot is an AI-powered developer assistant that helps you work faster and with greater confidence throughout the software development lifecycle. Copilot uses the context of your code and comments to help generate code, explain existing logic, refactor implementations, fix bugs, and write tests—all directly from your development environment.
 
 Research finds that when GitHub Copilot helps developers code faster, they can focus on solving bigger problems, stay in the flow longer, and feel more fulfilled with their work.
 
@@ -8,7 +8,7 @@ OpenAI created the generative pretrained language model in GitHub Copilot, power
 
 By the end of this module, you'll:
 
-- Understand how GitHub Copilot can help you code by offering autocomplete-style suggestions.
+- Understand how GitHub Copilot can help you write, understand, and improve code by providing context-aware suggestions, explanations, and code generation.
 - Understand the various ways to trigger GitHub Copilot.
 - Comprehend the differences among GitHub Copilot Free, Pro, Business, and Enterprise.
 - Know how to configure GitHub Copilot.

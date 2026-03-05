@@ -2,13 +2,11 @@
 uid: learn.wwl.search-data-outside-azure-platform-cognitive-search.introduction
 title: Introduction
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Introduction
   description: Introduction
-  author: wwlpublish
+  author: ivorb
   ms.author: berryivor
-  ms.date: 09/20/2024
+  ms.date: 05/06/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot

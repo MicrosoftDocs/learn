@@ -1,4 +1,4 @@
-PII (personally identifiable information) detection is a [feature](/azure/ai-services/language-service/personally-identifiable-information/overview) offered by [Azure AI Language](). It identifies, categorizes, and redacts personally identifiable information (PII) in unstructured text. PII includes email addresses, phone numbers, payment information, etc.
+PII (personally identifiable information) detection is a [feature](/azure/ai-services/language-service/personally-identifiable-information/overview) offered by [Azure Language](). It identifies, categorizes, and redacts personally identifiable information (PII) in unstructured text. PII includes email addresses, phone numbers, payment information, etc.
 
 There are several ways to call the [PII detection API](/azure/ai-services/language-service/personally-identifiable-information/how-to-call). Here, you use the `azure_ai` extension to process PII from the text in SQL queries.
 

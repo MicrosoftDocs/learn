@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.manage-defender-windows-client
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: MD-102 3-Manage Microsoft Defender in Windows client
   description: "This module explains the built-in security features of Windows clients and how to implement them using policies."
   ms.date: 05/10/2023
@@ -23,7 +21,7 @@ prerequisites: |
   - Strong technical skills installing, maintaining, and troubleshooting the Windows 10 OS or later
   - Strong understanding of computer networking, client security, and application concepts
   - Experience using Active Directory Domain Services
-iconUrl: /training/achievements/generic-badge.svg
+iconUrl: /training/achievements/microsoft-defender-module.svg
 levels:
 - intermediate
 roles:

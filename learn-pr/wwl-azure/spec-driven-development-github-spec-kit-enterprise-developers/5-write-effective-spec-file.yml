@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.spec-driven-development-github-spec-kit-microsoft-internal.write-effective-spec-file
+title: Generate a clear, precise, and effective spec
+metadata:
+  title: Generate a Clear, Precise, and Effective Spec
+  description: "Generate a clear, precise, and effective spec."
+  ms.date: 1/28/2026
+  author: chrishowd
+  ms.author: cahowd
+  ms.topic: unit
+durationInMinutes: 14
+content: |
+  [!include[](includes/5-write-effective-spec-file.md)]

@@ -1,8 +1,8 @@
 Blazor components let you define webpages or portions of HTML that include dynamic content by using .NET code. In Blazor, you can formulate dynamic content by using C#, instead of using JavaScript.
 
-Suppose you're working for a pizza delivery company to create a new modern website. You're starting with a welcome page that will become the landing page for most site users. You want to display special deals and popular pizzas on that page.
+Suppose you're working for a pizza delivery company to create a new modern website. You're starting with a welcome page that is going to become the landing page for most site users. You want to display special deals and popular pizzas on that page.
 
-In this unit, you'll learn how to create components in Blazor and write code that renders dynamic content on those components.
+In this unit, you learn how to create components in Blazor and write code that renders dynamic content on those components.
 
 ## Understand Blazor components
 
@@ -11,13 +11,13 @@ Blazor is a framework that developers can use to create a rich interactive user 
 > [!NOTE]
 > There are two hosting models for code in Blazor apps:
 >
-> - **Blazor Server**: In this model, the app is executed on the web server within an ASP.NET Core app. UI updates, events, and JavaScript calls on the client side are sent through a **SignalR** connection between the client and the server. In this module, we'll discuss and code for this model.
+> - **Blazor Server**: In this model, the app is executed on the web server within an ASP.NET Core app. On the client side, UI updates, events, and JavaScript calls, are sent through a **SignalR** connection between the client and the server. In this module, we discuss and code for this model.
 > - **Blazor WebAssembly**: In this model, the Blazor app, its dependencies, and the .NET runtime are downloaded and run on the browser.
 
-In Blazor, you build the UI from self-contained portions of code called *components*. Each component can contain a mix of HTML and C# code. Components are written by using *Razor syntax*, in which code is marked with the `@code` directive. Other directives can be used to access variables, bind to values, and achieve other rendering tasks. When the app is compiled, the HTML and code are compiled into a component class. Components are written as files with a **.razor** extension.
+In Blazor, you build the UI from self-contained portions of code called *components*. Each component can contain a mix of HTML and C# code. Components are written by using *Razor syntax*, in which code is marked with the `@code` directive. Other directives can be used to access variables, bind to values, and achieve other rendering tasks. When the app is compiled, the HTML and code are compiled into a component class. Components are written as files with a `.razor` extension.
 
 > [!NOTE]
-> Razor syntax is used for embedding .NET code into webpages. You can use it in ASP.NET MVC (Model-View-Controller) applications, where files have a **.cshtml** extension. Razor syntax is used in Blazor to write components. These components have the **.razor** extension instead, and there's no strict separation between controllers and views.
+> Razor syntax is used for embedding .NET code into webpages. You can use it in ASP.NET MVC (Model-View-Controller) applications, where files have a `.cshtml` extension. Razor syntax is used in Blazor to write components. These components have the `.razor` extension instead, and there's no strict separation between controllers and views.
 
 Here's a simple example of a Blazor component:
 
@@ -33,14 +33,14 @@ Here's a simple example of a Blazor component:
 }
 ```
 
-In this example, the code sets the value of a string variable, named `welcomeMessage`. That variable is rendered within `<p>` tags in the HTML. We'll examine more complex examples later in this unit.
+In this example, the code sets the value of a string variable, named `welcomeMessage`. That variable is rendered within `<p>` tags in the HTML. We examine more complex examples later in this unit.
 
 ## Create Blazor components
 
-When you create a Blazor app by using the **blazorserver** template in the **dotnet** command-line interface (CLI), several components are included by default:
+When you create a Blazor app by using the `blazor` template in the **dotnet** command-line interface (CLI), several components are included by default:
 
 ```bash
-dotnet new blazorserver -o BlazingPizzaSite
+dotnet new blazor -o BlazingPizzaSite
 ```
 
 The default components include the **Index.razor** home page and the **Counter.razor** demo component. Both of these components are placed in the **Pages** folder. You can either modify these views to fit your needs, or delete them and replace them with new components.
@@ -52,7 +52,7 @@ dotnet new razorcomponent -n PizzaBrowser -o Pages
 ```
 
 - The `-n` option specifies the name of the component to add. This example adds a new file named **PizzaBrowser.razor**.
-- The `-o` option specifies the folder that will contain the new component.
+- The `-o` option specifies the folder that you want to contain the new component.
 
 > [!IMPORTANT]
 > The name of a Blazor component must begin with an uppercase character.
@@ -81,7 +81,7 @@ Let's consider this example component again:
 }
 ```
 
-You can recognize the HTML markup with `<h1>` and `<p>` tags. This markup is the static framework of the page, into which your code will insert dynamic content. The Razor markup consists of:
+You can recognize the HTML markup with `<h1>` and `<p>` tags. This markup is the static framework of the page, into which your code inserts dynamic content. The Razor markup consists of:
 
 - **The `@page` directive**: This directive provides a route template to Blazor. At runtime, Blazor locates a page to render by matching this template to the URL that the user requested. In this case, it might match a URL of the form `http://yourdomain.com/index`.
 - **The `@code` directive**: This directive declares that the text in the following block is C# code. You can put as many code blocks as you need in a component. You can define component class members in these code blocks and set their values from calculation, data lookup operations, or other sources. In this case, the code defines a single component member called `welcomeMessage` and sets its string value.

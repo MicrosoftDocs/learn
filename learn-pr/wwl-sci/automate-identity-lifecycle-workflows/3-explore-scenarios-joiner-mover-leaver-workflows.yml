@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.automate-identity-lifecycle-workflows.explore-scenarios-joiner-mover-leaver-workflows
+title: Explore scenarios Joiner, Mover, Leaver workflows
+metadata:
+  title: Explore scenarios Joiner, Mover, Leaver workflows
+  description: "Explore the Joiner, Mover, and Leaver scenarios and map them to built-in Lifecycle Workflow templates."
+  ms.date: 09/3/2025
+  author: wwlpublish
+  ms.author: roberts
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 7
+content: |
+  [!include[](includes/3-explore-scenarios-joiner-mover-leaver-workflows.md)]

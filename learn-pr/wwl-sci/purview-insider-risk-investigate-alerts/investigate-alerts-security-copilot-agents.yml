@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-insider-risk-investigate-alerts.investigate-alerts-security-copilot-agents
+title: Investigate insider risk alerts with Security Copilot and AI agents
+metadata:
+  title: Investigate insider risk alerts with Security Copilot and AI agents
+  description: "Investigate insider risk alerts with Security Copilot and AI agents."
+  ms.date: 11/05/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/investigate-alerts-security-copilot-agents.md)]

@@ -1,5 +1,7 @@
 We used UbuntuLTS for the image to create the virtual machine. Azure has several standard VM images you can use to create a virtual machine. 
 
+[!INCLUDE[](../../../includes/azure-optional-exercise-subscription-note.md)]
+
 ## Listing images
 
 You can get a list of the available VM images using the following command:
@@ -9,7 +11,7 @@ az vm image list --output table
 ```
 
 > [!NOTE]
-  > If you get the error *az: command not found*, type `exit` into the shell and try again.
+> If you get the error *az: command not found*, type `exit` into the shell and try again.
 
 This outputs the most popular images that are part of an offline list built into the Azure CLI. However, there are *hundreds* of image options available in the Azure Marketplace.
 
@@ -39,9 +41,7 @@ Some images are only available in certain locations. Try adding the `--location 
 az vm image list --location eastus --output table
 ```
 
-Try checking some of the images in the other Azure sandbox available locations:
-
-[!include[](../../../includes/azure-sandbox-regions-note.md)]
+Try checking some of the images in the other Azure available locations.
 
 > [!TIP]
 > These are the standard images that are provided by Azure. Keep in mind that you can also [create and upload your own custom images](/azure/virtual-machines/linux/tutorial-custom-images) to create VMs based on unique configurations or less common versions or distributions of an operating system.

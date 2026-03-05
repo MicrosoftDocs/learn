@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-ai-understand-risks.detect-respond-ai-activity
+title: Detect and respond to risky AI activity
+metadata:
+  title: Detect and Respond to Risky AI Activity
+  description: "Detect and respond to risky AI activity."
+  ms.date: 08/25/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/detect-respond-ai-activity.md)]

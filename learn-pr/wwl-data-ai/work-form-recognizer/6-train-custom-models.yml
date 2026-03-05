@@ -2,13 +2,11 @@
 uid: learn.wwl.work-with-form-recognizer.train-custom-models-with-labels
 title: Train custom models
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Train custom models
   description: Train custom models
   author: wwlpublish
   ms.author: berryivor
-  ms.date: 04/18/2024
+  ms.date: 04/28/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot

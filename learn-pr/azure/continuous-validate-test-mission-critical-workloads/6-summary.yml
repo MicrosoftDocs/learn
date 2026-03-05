@@ -2,8 +2,6 @@
 uid: learn.continuous-validate-test-mission-critical-workloads.summary
 title: Summary
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Summary
   description: In this module, you designed and used continuous validation for a production-ready, mission-critical solution in Azure.
   ms.date: 07/31/2024
@@ -13,4 +11,4 @@ metadata:
 durationInMinutes: 2
 content: |
   [!include[](includes/6-summary.md)]
-
+

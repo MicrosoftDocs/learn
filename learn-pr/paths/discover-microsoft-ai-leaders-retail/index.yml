@@ -1,13 +1,13 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.discover-microsoft-ai-leaders-retail
 metadata:
-  title: Discover Microsoft AI for leaders in retail
+  title: Discover AI for leaders in retail
   description: In this learning path, retail business leaders find all the knowledge and resources to adopt AI in their organizations. It discusses available resources, strategy, responsible practices, and retail use cases.
   ms.date: 12/06/2023
   author: wwlpublish
   ms.author: rcaper
   ms.topic: learning-path
-title: Discover Microsoft AI for leaders in retail
+title: Discover AI for leaders in retail
 prerequisites: |
   * Basic understanding of retail concepts.
 summary: |
@@ -16,8 +16,8 @@ iconUrl: /training/achievements/generic-trophy.svg
 levels:
 - beginner
 roles:
+- business-leader
 - business-owner
-- business-user
 products:
 - industry-solutions
 - azure-openai

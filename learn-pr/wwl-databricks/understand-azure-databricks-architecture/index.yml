@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn.wwl.understand-azure-databricks-architecture
+metadata:
+  title: Understand Azure Databricks Architecture
+  description: Learn about Azure Databricks architecture, including the account hierarchy, control and compute planes, and different storage options for managing data with Unity Catalog.
+  ms.date: 12/07/2025
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: module
+  ms.service: azure-databricks
+  ai-usage: ai-generated
+title: Understand Azure Databricks architecture
+summary: Azure Databricks architecture separates control and compute planes while organizing resources through a hierarchical structure. This module explores how the account hierarchy works, the differences between serverless and classic compute planes, and the various storage options available including default storage, external storage, and Unity Catalog managed storage for organizing and governing your data.
+abstract: |
+  By the end of this module, you'll be able to:
+  - Describe the Azure Databricks account hierarchy and how it organizes resources
+  - Explain the difference between control plane and compute plane
+  - Understand the role of workspace storage in Azure Databricks
+  - Describe default storage capabilities in serverless workspaces
+  - Explain how external locations connect cloud storage to Unity Catalog
+  - Understand how Unity Catalog managed storage organizes data across catalogs and schemas
+prerequisites: |
+  The following prerequisites should be completed:
+  * Basic understanding of cloud storage concepts
+  * Familiarity with Azure Databricks workspaces
+  * Knowledge of Unity Catalog fundamentals
+iconUrl: /learn/achievements/azure-databricks.svg
+levels:
+  - intermediate
+roles:
+  - data-engineer
+products:
+  - azure-databricks
+subjects:
+  - data-engineering
+units:
+  - learn.wwl.understand-azure-databricks-architecture.introduction
+  - learn.wwl.understand-azure-databricks-architecture.understand-azure-databricks-architecture
+  - learn.wwl.understand-azure-databricks-architecture.understand-unity-catalog-managed-storage
+  - learn.wwl.understand-azure-databricks-architecture.understand-external-storage
+  - learn.wwl.understand-azure-databricks-architecture.understand-default-storage
+  - learn.wwl.understand-azure-databricks-architecture.knowledge-check
+  - learn.wwl.understand-azure-databricks-architecture.summary
+badge:
+  uid: learn.wwl.understand-azure-databricks-architecture.badge

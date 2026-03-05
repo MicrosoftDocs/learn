@@ -2,7 +2,7 @@ Let's apply key phrase extraction, entity recognition, and PII (personally ident
 
 > [!Note]
 >
-> To complete this exercise, you will need an [Azure subscription](https://azure.microsoft.com/free).
+> To complete this exercise, you will need an [Azure subscription](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn).
 
 Launch the exercise and follow the instructions.
 

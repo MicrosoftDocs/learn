@@ -18,5 +18,3 @@ For an example of a company that reaped the cost benefits of the cloud, consider
  -  Monthly costs fell by $800,000 and efficiency rose 20 percent, significantly exceeding expectations. Home point attributed the savings to the fact that “our systems tell the agents exactly what they need to look at instead of having them ‘stare and compare’ for hours.”
  -  Azure enabled real-time insights into customer data, an improvement from four-hour “snapshots” under the old system. “As a result, we can answer much more sophisticated questions about our clients and the data they continuously feed us.”
  -  Home point's pace of new digital releases increased by up to 40 percent.
-
-[Read more about Home point here](https://customers.microsoft.com/story/1427700939507289839-confluent-homepoint-customer-success-story-azure-us).

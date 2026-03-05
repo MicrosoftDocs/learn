@@ -3,9 +3,8 @@ uid: learn.azure.create-hello-app-service.introduction
 title: Introduction
 metadata:
   description: Module introduction
-  author: KarlErickson
-  ms.author: karler
-  ms.reviewer: ayangupta
+  author: ayangupt
+  ms.author: ayangupta
   ms.date: 12/11/2024
   ms.topic: unit
   ms.custom: team=cloud_advocates, devx-track-java, devx-track-extended-java, linux-related-content

@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.azure.optimize-hpc-application-azure-virtual-machines-series
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Optimizing tightly coupled HPC applications on HBv2, HC, and HB series virtual machines
   description: Learn how to build, run, and tune tightly coupled HPC applications in Azure.
   ms.date: 08/05/2024
@@ -46,4 +44,4 @@ units:
 - learn.azure.optimize-hpc-application-azure-virtual-machines-series.10-summary
 badge:
   uid: learn.azure.optimize-hpc-application-azure-virtual-machines-series.badge
-
+

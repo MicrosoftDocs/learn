@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.azure.azure-netapp-files-quotas
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   moduleType: introduction        
   title: Understand quotas in Azure NetApp Files 
   description: Learn how to manage and monitor capacity in Azure NetApp Files.   
@@ -44,4 +42,4 @@ units:
 - learn.azure.azure-netapp-files-quotas.summary
 badge:
   uid: learn.azure.azure-netapp-files-quotas.badge
-
+

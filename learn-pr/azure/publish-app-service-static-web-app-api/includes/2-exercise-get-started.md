@@ -10,7 +10,7 @@ This module makes it easy for you to create a new repository by using a GitHub t
 
 1. Name your repository **my-static-web-app**.
 
-1. Select the **Create repository from template** button.
+1. Select the **Create repository** button.
 
 ## Run your app
 

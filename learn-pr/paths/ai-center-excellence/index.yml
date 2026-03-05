@@ -1,0 +1,28 @@
+### YamlMime:LearningPath
+uid: learn.ai-center-excellence
+metadata:
+  title: AI Center of Excellence
+  description: Learn about the AI Center of Excellence (AI CoE), how it centralizes information about AI adoption, operations, governance, best practices, and security.
+  ms.date: 06/05/2025
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: learning-path
+title: AI Center of Excellence
+summary: |
+   Learn about the AI Center of Excellence (AI CoE) and how it can help your organization adopt AI workloads. This learning path covers the key components of an AI CoE, including stakeholders, workload governance, AI workload operations best practices, and how you can leverage Azure landing zones for complex AI workloads.
+prerequisites: Familiarity basic Artificial Intelligence and operations concepts
+iconUrl: /training/achievements/generic-trophy.svg
+levels:
+- beginner
+roles:
+- developer
+- administrator
+- security-engineer
+products:
+- azure
+modules:
+- learn.introduction-generative-ai-center-excellence
+- learn.workload-operations-generative-ai-center-excellence
+- learn.introduction-ai-landing-zones
+trophy:
+  uid: learn.ai-center-excellence.trophy

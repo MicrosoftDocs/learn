@@ -1,4 +1,5 @@
 
+
 Tailwind Traders has several active development projects. As the solution Architect for the company, you're responsible for selecting the right compute technology for each project. Ideally, you'd like to create compute resources and configure them to do the work and only pay for the services used.
 
 Here are the specific project requirements:

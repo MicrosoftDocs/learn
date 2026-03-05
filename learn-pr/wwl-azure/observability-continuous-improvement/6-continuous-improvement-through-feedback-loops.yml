@@ -2,8 +2,6 @@
 uid: learn.wwl.observability-continuous-improvement.continuous-improvement-through-feedback-loops
 title: Continuous Improvement through Feedback Loops
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Continuous Improvement through Feedback Loops
   description: "Continuous Improvement through Feedback Loops"
   ms.date: 01/14/2025
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 6
 content: |
-  [!include[](includes/6-continuous-improvement-through-feedback-loops.md)]
+  [!include[](includes/6-continuous-improvement-through-feedback-loops.md)]

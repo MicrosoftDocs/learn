@@ -4,7 +4,7 @@ title: Represent key information through multiple sensory channels
 metadata:
   title: Represent key information through multiple sensory channels
   description: This content is part of the accessibility best practices for games and platforms module.
-  ms.date: 04/30/2023
+  ms.date: 05/23/2025
   author: kaitlynjones
   ms.author: kaitlynjones
   ms.topic: unit
@@ -25,14 +25,14 @@ quiz:
     - content: "A game uses a visual cue and a spatial audio ping to represent the presence of a nearby interactable object."
       isCorrect: true
       explanation: "Correct. This option accurately describes representation through multiple sensory channels. It uses both audio and visuals to communicate information to the player."
-  - content: "Which of the following options would best support the player in the following scenario by using multiple channels to represent important information? A player with low vision occasionally bypasses collectible items in their game environment needed to advance because they don't see them."
+  - content: "Which of the following options would best support the player in the following scenario by using multiple channels to represent important information? A player with low vision occasionally bypasses collectible items that they need to advance in their game environment because they don't see them."
     choices:
     - content: "The game can provide a setting that, when enabled, plays a distinct audio cue whenever collectible items are within a certain range of the player's character."
       isCorrect: true
       explanation: "Correct. This option uses multiple sensory channels like audio and visuals to represent the same information to players (the presence of a collectible object)."
     - content: "The game can provide players with an option to customize the size and color of collectible items to make them more visible to players."
       isCorrect: false
-      explanation: "Incorrect. While visual customization options should generally be provided, this option only addresses visual channels and doesn't include another way of representing this information, such as audio or haptics."
+      explanation: "Incorrect. While visual customization options should generally be provided, this option only addresses visual channels and doesn't include another way of representing the information, such as audio or haptics."
     - content: "The game can introduce a flashing exclamation mark onscreen when players walk past collectible items and don't pick them up."
       isCorrect: false
       explanation: "Incorrect. This option presents a new cue altogether. This approach also uses visual channels alone to represent information."

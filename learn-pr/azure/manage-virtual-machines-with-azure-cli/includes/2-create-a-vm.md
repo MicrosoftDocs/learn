@@ -1,8 +1,13 @@
 Let's start with the most obvious task: creating an Azure Virtual Machine.
 
-## Logins, subscriptions, and resource groups
+[!INCLUDE[](../../../includes/azure-optional-exercise-subscription-note.md)]
 
-You'll be working in the Azure Cloud Shell on the right. Once you activate the sandbox, you'll be logged into Azure with a free subscription that Microsoft Learn manages. You don't have to log in to Azure on your own or select a subscription; this is done for you. You'd also normally create a *resource group* to hold new resources. In this module, the Azure sandbox creates a resource group for you, which you'll use to execute all the commands.
+[!INCLUDE[](../../../includes/azure-optional-exercise-create-resource-group-note.md)]
+
+[!INCLUDE[](../../../includes/azure-cloud-shell-terminal-note.md)]
+
+> [!NOTE]
+> Throughout this exercise, replace **myResourceGroupName** in the examples with the name of an existing resource group, or the name of the resource group that you created for this exercise.
 
 ## Create a Linux VM with the Azure CLI
 
@@ -29,7 +34,7 @@ Let's start with the first one: `az vm create`. You can use this command to crea
 > [!div class="mx-tableFixed"]
 > | Parameter | Description |
 > |-----------|-------------|
-> | `--resource-group` | The resource group that will own the virtual machine; use **<rgn>[sandbox Resource Group]</rgn>**. |
+> | `--resource-group` | The resource group that will own the virtual machine; use **myResourceGroupName**. |
 > | `--name` | The name of the virtual machine; must be unique within the resource group. |
 > | `--image` | The operating system image to use to create the VM. |
 > | `--location` | The region in which to place the VM. Typically, this would be close to the VM's consumer. |
@@ -42,7 +47,7 @@ Let's create a new Linux virtual machine. Execute the following command in Azure
 
 ```azurecli
 az vm create \
-  --resource-group "<rgn>[sandbox resource group name]</rgn>" \
+  --resource-group "myResourceGroupName" \
   --location westus \
   --name SampleVM \
   --image Ubuntu2204 \
@@ -51,7 +56,7 @@ az vm create \
   --verbose 
 ```
 
-[!include[](../../../includes/azure-cloudshell-copy-paste-tip.md)]
+[!INCLUDE[](../../../includes/azure-cloudshell-copy-paste-tip.md)]
 
 This command creates a new **Ubuntu** Linux virtual machine with the name `SampleVM`. Notice that the Azure CLI tool waits while the VM is being created. You can add the `--no-wait` option to tell the Azure CLI tool to return immediately and have Azure continue creating the VM in the background. This is useful if you're executing the command in a script.
 

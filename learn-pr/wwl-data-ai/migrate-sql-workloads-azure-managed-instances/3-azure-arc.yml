@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn-wwl.migrate-sql-workloads-azure-managed-instances.azure-arc-migration
+title: Migrate using Azure Arc
+metadata:
+  title: Migrate using Azure Arc
+  description: "Learn to migrate SQL Server databases to Azure SQL Managed Instance using Azure Arc"
+  ms.date: 01/19/2026
+  author: JulianePadrao
+  ms.author: jupadrao
+  ms.topic: unit
+azureSandbox: false
+durationInMinutes: 8
+content: |
+  [!include[](includes/3-azure-arc.md)]

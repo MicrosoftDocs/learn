@@ -2,8 +2,6 @@
 uid: learn.wwl.describe-features-tools-manage-deploy-azure-resources.summary
 title: Summary
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Summary
   description: "Summary"
   ms.date: 09/19/2024
@@ -14,4 +12,4 @@ metadata:
   - ai-video-concept
 durationInMinutes: 2
 content: |
-  [!include[](includes/6-summary.md)]
+  [!include[](includes/6-summary.md)]

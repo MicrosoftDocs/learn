@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-ai-secure-copilot.communication-compliance-copilot
+title: Analyze Copilot interactions with Communication Compliance
+metadata:
+  title: Analyze Copilot Interactions with Communication Compliance
+  description: "Analyze Copilot interactions with Communication Compliance"
+  ms.date: 08/25/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/communication-compliance-copilot.md)]

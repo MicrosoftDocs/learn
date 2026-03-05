@@ -2,8 +2,6 @@
 uid: learn.wwl.troubleshoot-web-app-down-scenarios-app-service-diagnostics.troubleshoot-downtimes
 title: Troubleshoot downtimes
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Troubleshoot downtimes
   description: "Troubleshoot downtimes"
   ms.date: 07/13/2022
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 7
 content: |
-  [!include[](includes/2-troubleshoot-downtimes.md)]
+  [!include[](includes/2-troubleshoot-downtimes.md)]

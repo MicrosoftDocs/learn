@@ -2,8 +2,6 @@
 uid: learn.wwl.describe-concepts-of-relational-data.choose-right-platform-for-relational-workload
 title: Choose the right platform for a relational workload
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Choose the right platform for a relational workload
   description: "Choose the right platform for a relational workload"
   ms.date: 03/18/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 5
 content: |
-  [!include[](includes/4-choose-right-platform-relational-workload.md)]
+  [!include[](includes/4-choose-right-platform-relational-workload.md)]

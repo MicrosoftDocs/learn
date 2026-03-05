@@ -1,9 +1,11 @@
-In this exercise, you start to create a new Blazing Pizza app for the pizza delivery company. The company has provided the current CSS, imagery, and HTML from its old site to work with.
+In this exercise, you start to create a new Blazing Pizza app for the pizza delivery company. The company provides you with the current CSS, imagery, and HTML from its old site to work with.
 
 > [!NOTE]
 > This module uses the .NET CLI and Visual Studio Code for local development. After you finish this module, you can apply the concepts by using Visual Studio for Windows and Visual Studio for Mac for macOS. For continued development, you can use Visual Studio Code for Windows, Linux, and macOS.
 
-If you haven't created a Blazor app before, follow the [setup instructions for Blazor](https://aka.ms/blazor-getting-started) to install the correct version of .NET and check that your machine is set up correctly. Stop at the **Create your app** step.
+[!include[](../../../includes/dotnet9-sdk-version.md)]
+
+If you're creating your first Blazor app, follow the [setup instructions for Blazor](https://aka.ms/blazor-getting-started) to install the correct version of .NET and check that your machine is set up correctly. Stop at the **Create your app** step.
 
 ## Create a new Blazor app
 
@@ -15,10 +17,10 @@ If you haven't created a Blazor app before, follow the [setup instructions for B
 1. Run the dotnet terminal command:
 
     ```dotnetcli
-    dotnet new blazorserver -o BlazingPizza --no-https true
+    dotnet new blazor -o BlazingPizza
     ```
 
-    This command creates a new Blazor server project in a folder named **BlazingPizza**. It also tells the project to disable HTTPS.
+    This command creates a new Blazor server project in a folder named **BlazingPizza**.
 1. Select **File** > **Open folder**.
 1. In the Open dialog, go to the **BlazingPizza** folder and choose **Select Folder**.
 
@@ -48,11 +50,11 @@ You can also run and debug your project with Visual Studio Code.
 1. Visual Studio Code also switches to the **Run and Debug** window that allows you to restart or stop your app.
 
     :::image type="content" source="../media/3-visual-studio-code-debugging.png" alt-text="Screenshot showing the debugging window in Visual Studio Code.":::
-1. Select <kbd>Shift</kbd> + <kbd>F5</kbd> to stop the app.
+1. To stop the app, select <kbd>Shift</kbd> + <kbd>F5</kbd>.
 
 ## Download the Blazing Pizza assets and starter files
 
-You'll now clone your teams' existing Blazor app project files from the [GitHub repository](https://github.com/MicrosoftDocs/mslearn-interact-with-data-blazor-web-apps.git).
+Clone your teams' existing Blazor app project files from the [GitHub repository](https://github.com/MicrosoftDocs/mslearn-interact-with-data-blazor-web-apps.git).
 
 1. Delete your **BlazingPizza** folder by using the file explorer or in Visual Studio Code.
 
@@ -70,7 +72,7 @@ You'll now clone your teams' existing Blazor app project files from the [GitHub 
 
 The **Pages/Index.razor** component lets customers select and configure the pizzas they want to order. The component responds to the root URL of the app.
 
-The team has also created classes to represent the models in the app. Review the current `PizzaSpecial` model.
+The team also created classes to represent the models in the app. Review the current `PizzaSpecial` model.
 
 1. In Visual Studio Code's file explorer, expand the **Model** folder. Then select **PizzaSpecial**.
 
@@ -133,7 +135,7 @@ The team has also created classes to represent the models in the app. Review the
 
 1. Select <kbd>F5</kbd> or select **Run**. Then select **Start Debugging**.
 
-    The app should compile and run, and you'll see that nothing has changed. The code isn't being used by anything in the client-side HTML. Let's fix that.
+    When the app compiles and runs, you see that nothing. The code isn't being used by anything in the client-side HTML. Let's fix that.
 
 1. Select <kbd>Shift</kbd> + <kbd>F5</kbd> or select **Stop Debugging**.
 1. In **Index.razor**, replace `<h1>Blazing Pizzas</h1>` with this code:
@@ -166,4 +168,4 @@ The team has also created classes to represent the models in the app. Review the
 
     :::image type="content" source="../media/3-blazing-pizzas.png" alt-text="Screenshot showing a list of blazing pizzas.":::
 
-You now have a pizza base component to allow customers to order a pizza. You'll improve on this component in following exercises.
+You now have a pizza base component to allow customers to order a pizza. In following exercises, you improve on this component.

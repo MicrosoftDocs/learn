@@ -38,3 +38,4 @@ One of the most useful features is the ability to monitor database resource util
 :::image type="content" source="../media/module-22-plan-implement-final-23.png" alt-text="Utilization per database in an Elastic Pool from the Azure portal." lightbox="../media/module-22-plan-implement-final-23.png":::
 
 An elastic pool is a good fit for multitenant databases where each tenant has its own copy of the database. Balance the workload across databases so as not to allow one database to monopolize all the pool’s resources.
+

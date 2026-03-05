@@ -1,0 +1,31 @@
+### YamlMime:LearningPath
+uid: learn.dpu.microsoft-education-k-12-accreditation-2025
+title: Microsoft Education for K-12 Accreditation 2025
+metadata:
+  title: Microsoft Education For K-12 Accreditation 2025
+  description: This Learning Path introduces Microsoft Education solutions designed specifically for K–12 institutions. You'll explore how these tools empower administrators, educators, IT professionals, and students to enhance learning outcomes, streamline operations, and foster inclusive, engaging educational environments. Whether you're new to Microsoft Education or looking to deepen your understanding, this Learning Path will guide you through the key capabilities and best practices for implementation in K–12 settings.
+  ms.date: 08/22/2025
+  author: melissawinters
+  ms.author: v-mwinters
+  ms.topic: learning-path
+  ms.custom: CE052925-0
+summary: >
+  Explore how Microsoft Education solutions support K–12 institutions across roles. This Learning Path introduces the core capabilities of Microsoft Education for administrators, educators, and IT professionals. Discover how these tools help create inclusive, secure, and effective learning environments that empower students and staff alike.
+prerequisites: None
+iconUrl: /training/achievements/microsoft-education-k-12-accreditation-2025.svg
+levels:
+  - beginner
+roles:
+  - k-12-educator
+  - school-leader
+  - student
+  - technology-manager
+products:
+  - m365-education
+modules:
+  - learn.dpu.intro-k12-edu
+  - learn.dpu.k12-admin
+  - learn.dpu.k-12-educators
+  - learn.dpu.k-12-it-pros
+trophy:
+  uid: learn.dpu.microsoft-education-k-12-accreditation-2025.trophy

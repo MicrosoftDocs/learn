@@ -1,0 +1,11 @@
+In this module you learned that Azure Landing Zones provide a scalable, preconfigured environment in Microsoft Azure designed to ensure secure, reliable, and compliant deployment of AI workloads. Landing zones implement best practices for governance, security, and infrastructure and standardize elements such as subscription design, identity and access management, network topology, and policy configurations. Azure Landing Zones are structured around eight key design areas, including billing, identity, network, resource organization, security, management, governance, and platform automation, each of which must be carefully considered to tailor the environment for specific organizational needs. There's a clear separation of responsibilities: platform teams manage shared services and centralized resources, while workload teams manage application-specific resources and configurations. For AI workloads, such as an Azure OpenAI chatbot, workload teams handle resources like AI Foundry, App Service, and Key Vault, while platform teams oversee infrastructure like Azure Firewall, Bastion, DNS, and DDoS protection. Critical dependencies, such as centralized firewalls and DNS, require coordinated incident response and change management. Security is enforced through network controls, DDoS protection, RBAC, and certificate management. Deployment can be accelerated using Azure's landing zone accelerator, or customized through Terraform, Bicep, or ARM templates. The Azure OpenAI Chat Baseline Landing Zone serves as a practical example, with detailed deployment instructions available on GitHub, though organizations should be aware of potentially significant operational costs associated with some features.
+
+## Further reading
+
+[Landing Zone design areas](/azure/cloud-adoption-framework/ready/landing-zone/design-areas)
+
+[Deploy landing zones](/azure/architecture/landing-zones/landing-zone-deploy)
+
+[Testing approach for Azure landing zones](/azure/cloud-adoption-framework/ready/enterprise-scale/testing-approach)
+
+[Azure OpenAI chat baseline architecture in an Azure landing zone](/azure/architecture/ai-ml/architecture/azure-openai-baseline-landing-zone) 

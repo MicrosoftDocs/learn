@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.use-ai-personalize-learning-students-disabilities.summary
+title: "Summary"
+metadata:
+  title: "Summary"
+  description: "Discover how AI tools like Copilot, Immersive Reader, and Math Assistant help educators create accessible and inclusive learning environments."
+  ms.date: 01/09/2026
+  author: Randall-Knapp
+  ms.author: erzelman
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/8-summary.md)]

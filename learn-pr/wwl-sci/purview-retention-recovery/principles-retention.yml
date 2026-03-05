@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-retention-recovery.principles-retention
+title: Understand policy and label precedence in Microsoft Purview
+metadata:
+  title: Understand policy and label precedence in Microsoft Purview
+  description: "Understand policy and label precedence in Microsoft Purview."
+  ms.date: 04/14/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/principles-retention.md)]

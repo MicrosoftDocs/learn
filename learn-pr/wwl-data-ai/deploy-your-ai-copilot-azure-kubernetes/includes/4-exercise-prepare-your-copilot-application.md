@@ -1,7 +1,7 @@
 Previously in this learning path, you implemented AI vector search functionality within your MongoDB project. Now this project is extended to include a web application interface. In this exercise, you’ll add code to expose key functions and create endpoints, enabling external interactions with the application. You’ll also create a Dockerfile to containerize your app, then run the Docker image locally to verify everything is working as expected. By the end of this exercise, you create a web application ready for deployment, complete with accessible endpoints, and containerized for easy distribution.
 
 > [!IMPORTANT]
-> You need your own Azure subscription to run this exercise, and you might incur charges. If you don't already have an Azure subscription, create a [free account](https://azure.microsoft.com/pricing/purchase-options/azure-account?icid=azurefreeaccount) before you begin.
+> You need your own Azure subscription to run this exercise, and you might incur charges. If you don't already have an Azure subscription, create a [free account](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn) before you begin.
 
 ## Prepare your coding environment
 

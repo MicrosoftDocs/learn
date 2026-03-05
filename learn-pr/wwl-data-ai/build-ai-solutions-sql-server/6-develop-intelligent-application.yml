@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn-wwl.build-ai-solutions-sql-server.develop-intelligent-application
+title: Develop intelligent applications with AI frameworks
+metadata:
+  title: Develop intelligent applications with AI frameworks
+  description: "Learn how to develop intelligent applications using AI frameworks in SQL Server 2025."
+  ms.date: 10/20/2025
+  author: JulianePadrao
+  ms.author: jupadrao
+  ms.topic: unit
+azureSandbox: false
+durationInMinutes: 15
+content: |
+  [!include[](includes/6-develop-intelligent-application.md)]

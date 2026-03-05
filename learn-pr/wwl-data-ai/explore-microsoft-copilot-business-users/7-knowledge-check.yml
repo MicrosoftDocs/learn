@@ -1,27 +1,27 @@
 ### YamlMime:ModuleUnit
 uid: learn.explore-microsoft-copilot-business-users.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  title: Knowledge check
+  title: Module assessment
   description: "Check your knowledge of Microsoft Copilot."
-  ms.date: 11/11/2024
-  author: GraemeMalcolm
-  ms.author: gmalc
+  ms.date: 12/18/2025
+  author: wwlpublish
+  ms.author: rcaper
   ms.topic: unit
-  ms.collection:
-  - wwl-ai-copilot
+  ms.custom:
+  - N/A
 durationInMinutes: 3
-content: |
 quiz:
+  title: ""
   questions:
   - content: "Which Copilot product should your organization use to assist employees as they work in Microsoft productivity applications and with data in services across the enterprise?"
     choices:
     - content: "Microsoft Copilot"
       isCorrect: false
       explanation: "Incorrect. Microsoft Copilot is a good solution for individuals who need Copilot for personal use."
-    - content: "Microsoft Copilot Pro"
+    - content: "Microsoft 365 Copilot Chat"
       isCorrect: false
-      explanation: "Incorrect. Microsoft Copilot Pro is for individuals who need advanced functionality."
+      explanation: "Incorrect. Microsoft 365 Copilot Chat is for individuals who need advanced functionality."
     - content: "Microsoft 365 Copilot"
       isCorrect: true
       explanation: "Correct. Microsoft 365 Copilot is a great choice to assist employees in an organization."
@@ -36,7 +36,7 @@ quiz:
     - content: "Enter the command 'GO' after your prompt"
       isCorrect: false
       explanation: "Incorrect. Copilot prompts do not require keyword commands."
-  - content: "What should you do if Copilot returns a response that doesn’t fully answer your question?"
+  - content: "What should you do if Copilot returns a response that doesn't fully answer your question?"
     choices:
     - content: "Restart the session and try again. Copilot answers are random."
       isCorrect: false
@@ -47,4 +47,3 @@ quiz:
     - content: "Ask a human coworker instead. Copilot cannot answer your question."
       isCorrect: false
       explanation: "Incorrect. Copilot responses can be refined by submitting effective prompts in iterative conversations."
-  

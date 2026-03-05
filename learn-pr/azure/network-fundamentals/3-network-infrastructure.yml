@@ -2,8 +2,6 @@
 uid: learn.azure.network-fundamentals.network-infrastructure
 title: Types of network devices to use when you build a network
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Types of network devices to use when you build a network
   description: Explore network standards and the purpose and use of repeaters, hubs, switches, and routers that are used to build networks.
   ms.date: 07/09/2024
@@ -64,4 +62,4 @@ quiz:
     - content: "A router is a network device that forwards data packets between computer networks."
       isCorrect: true
       explanation: "A router is an essential part of your network. A router connects different networks and also connects to the internet."
-
+

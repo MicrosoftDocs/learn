@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.introduction-foundry-iq.exercise
+metadata:
+  title: Exercise - Integrate an AI agent with Foundry IQ
+  description: Hands-on exercise to create a Foundry project, set up a knowledge base, and integrate an AI agent with Foundry IQ for knowledge-enhanced interactions.
+  ms.date: 01/15/2026
+  author: madiepev
+  ms.author: madiepev
+  ms.topic: unit
+title: Exercise - Integrate an AI agent with Foundry IQ
+durationInMinutes: 35
+content: |
+  [!include[](includes/6-exercise.md)]

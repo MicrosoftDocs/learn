@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.bicep-conditions-loops.summary
+title: Summary
+metadata:
+  unitType: summary
+  title: Summary
+  description: This page summarizes what you've learned in this module.
+  ms.date: 04/18/2025
+  author: mumian
+  ms.author: jgao
+  ms.topic: unit
+  ms.custom:
+    - devx-track-bicep
+durationInMinutes: 1
+content: |
+  [!include[](includes/10-summary.md)]
+

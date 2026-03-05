@@ -4,11 +4,13 @@ metadata:
   ms.author: sayoung
   author: sarah-yo
   ms.date: 12/16/2024
+  ms.update-cycle: 180-days
   title: Introduction to Azure OpenAI Managed Identity Authentication with Java
   description: How to implement role based access control and managed identity authentication to Azure OpenAI with Java.
   ms.topic: module
   ms.collection: ce-advocates-ai-copilot
-  ms.service: azure-ai-openai
+  ms.service: azure-ai-foundry
+  ms.subservice: azure-ai-foundry-openai
 title: Introduction to Azure OpenAI Managed Identity Authentication with Java
 summary:  Understanding how to use managed identity in Java apps that interact with Azure OpenAI.
 abstract: |

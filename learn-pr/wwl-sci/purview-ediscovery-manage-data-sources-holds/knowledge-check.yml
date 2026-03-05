@@ -1,0 +1,76 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-ediscovery-manage-data-sources-holds.knowledge-check
+title: Module assessment
+metadata:
+  title: Module assessment
+  description: "Knowledge check"
+  ms.date: 05/15/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "You're setting up an eDiscovery search and want to include all content from a specific user's mailbox and OneDrive. What should you do?"
+    choices:
+    - content: "Add the user's email address only"
+      isCorrect: false
+      explanation: "Incorrect: Adding only the email address might include the mailbox but not the OneDrive site."
+    - content: "Use a tenant-wide source to scope the user"
+      isCorrect: false
+      explanation: "Incorrect: Tenant-wide sources include all users, not just the individual user you want to target."
+    - content: "Add the user as a data source"
+      isCorrect: true
+      explanation: "Correct: Adding the user automatically includes both their mailbox and OneDrive site."
+
+  - content: "You add a Microsoft 365 group as a data source, but you need to make sure chat messages and shared files from individual members are also preserved. What should you do?"
+    choices:
+    - content: "Add individual group members as separate sources"
+      isCorrect: true
+      explanation: "Correct: Group holds don't automatically preserve member content, so you must add members separately."
+    - content: "Select the group's SharePoint site only"
+      isCorrect: false
+      explanation: "Incorrect: That only covers files, not member chats or mailboxes."
+    - content: "Rely on real-time sync to add members automatically"
+      isCorrect: false
+      explanation: "Incorrect: Sync updates content locations but doesn't add new members to the hold."
+
+  - content: "A hold was applied last week, but one user's OneDrive URL changed after a UPN update. What should you do?"
+    choices:
+    - content: "Update the source path to reflect the new URL"
+      isCorrect: true
+      explanation: "Correct: Updating the URL ensures continued visibility and management of the held content."
+    - content: "Remove the hold and recreate it"
+      isCorrect: false
+      explanation: "Incorrect: Removing and recreating the hold is unnecessary and might risk data loss."
+    - content: "Rely on the old hold to automatically apply to the new URL"
+      isCorrect: false
+      explanation: "Incorrect: The existing hold still works, but the URL must be updated for full visibility."
+
+  - content: "You remove a user's mailbox from a hold policy. What happens next?"
+    choices:
+    - content: "The content is deleted immediately"
+      isCorrect: false
+      explanation: "Incorrect: Delay holds prevent immediate deletion after removal from a policy."
+    - content: "A delay hold is applied for 30 days"
+      isCorrect: true
+      explanation: "Correct: Microsoft Purview applies a delay hold to prevent immediate data deletion after removal."
+    - content: "The hold remains active until the case is closed"
+      isCorrect: false
+      explanation: "Incorrect: Removal from a policy ends the hold, except for the delay hold period."
+
+  - content: "You're troubleshooting a hold and see an error for a SharePoint site. The hold status says 'read-only site.' What should you do?"
+    choices:
+    - content: "Readd the site as a new data source"
+      isCorrect: false
+      explanation: "Incorrect: Readding won't resolve the issue unless the site's permissions change."
+    - content: "Switch the hold to keyword query mode"
+      isCorrect: false
+      explanation: "Incorrect: The hold mode doesn't affect the read-only status of the site."
+    - content: "Make the site writable, then retry the policy"
+      isCorrect: true
+      explanation: "Correct: You need to make the site writable so the hold can be applied successfully."

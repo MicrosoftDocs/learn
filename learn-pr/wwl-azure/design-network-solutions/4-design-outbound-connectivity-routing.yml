@@ -2,9 +2,11 @@
 uid: learn.wwl.design-network-solutions.design-outbound-connectivity-routing
 title: Design outbound connectivity and routing
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Design outbound connectivity and routing
   description: "Design outbound connectivity with NAT and define routes in routing tables."
-  ms.date: 12/09/2024
+  ms.date: 05/13/2025
   author: wwlpublish
   ms.author: jileary
   ms.topic: unit
@@ -13,3 +15,17 @@ metadata:
 durationInMinutes: 7
 content: |
   [!include[](includes/4-design-outbound-connectivity-routing.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which route would you use for a specific location where you don't expect to modify the traffic pattern?"
+    choices:
+    - content: "System routes."
+      isCorrect: true
+      explanation: "Correct. System routes are specific locations and scenarios you don't expect to modify."
+    - content: "User defined routes."
+      isCorrect: false
+      explanation: "Incorrect. User defined routes are custom routes that override the system routes."
+    - content: "Custom or overriding routes."
+      isCorrect: false
+      explanation: "Incorrect. Custom routes are for modifying the default traffic patterns."

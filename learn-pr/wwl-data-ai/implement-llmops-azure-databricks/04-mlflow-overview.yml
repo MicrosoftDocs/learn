@@ -2,12 +2,10 @@
 uid: learn.wwl.implement-llmops-azure-databricks.mlflow-overview
 title: Describe MLflow deployment capabilities
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Describe MLflow deployment capabilities
   description: "Describe MLflow deployment capabilities"
-  ms.date: 03/20/2025
-  author: wwlpublish
+  ms.date: 07/17/2025
+  author: theresa-i
   ms.author: theresai
   ms.topic: unit
 azureSandbox: false

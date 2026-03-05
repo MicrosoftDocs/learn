@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.understand-mysql-storage-engine
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Understand the MySQL storage engine
   description: "Learn about MySQL’s pluggable storage engine model, and learn about common storage engines, and those supported by Azure Database for MySQL."
   ms.date: 11/08/2022
@@ -43,4 +41,4 @@ units:
 - learn.wwl.understand-mysql-storage-engine.knowledge-check
 - learn.wwl.understand-mysql-storage-engine.summary
 badge:
-  uid: learn.wwl.understand-mysql-storage-engine.badge
+  uid: learn.wwl.understand-mysql-storage-engine.badge

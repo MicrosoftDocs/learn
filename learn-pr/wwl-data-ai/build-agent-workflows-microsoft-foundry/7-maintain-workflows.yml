@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.build-agent-workflows-microsoft-foundry.maintain-workflows
+title: Maintain Workflows in Microsoft Foundry
+metadata:
+  title: Maintain workflows in Microsoft Foundry
+  description: Understand how to maintain and version workflows in Microsoft Foundry.
+  author: buzahid
+  ms.author: buzahid
+  ms.date: 1/8/2026
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/7-maintain-workflows.md)]
+

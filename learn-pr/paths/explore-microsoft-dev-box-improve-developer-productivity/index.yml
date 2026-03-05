@@ -1,0 +1,39 @@
+### YamlMime:LearningPath
+uid: learn.wwl.explore-microsoft-dev-box-improve-developer-productivity
+metadata:
+  title: Explore and Learn about Microsoft Dev Box
+  description: |-
+    This learning path provides a comprehensive introduction to Microsoft Dev Box, covering core service fundamentals, deployment best practices, key customization and imaging features, and guidance for using and optimizing your experience in the developer portal.
+
+    &nbsp;
+  ms.date: 05/08/2025
+  author: wwlpublish
+  ms.author: fkhan
+  ms.topic: learning-path
+title: Explore Microsoft Dev Box and improve developer productivity
+prerequisites: |
+  -   You should be familiar with cloud and compute services such as Azure Virtual machines.
+summary: |
+  This learning path provides a comprehensive overview of the **Microsoft Dev Box** service. It begins with an introduction to the core fundamentals of Dev Box, helping you understand what it is and how it supports modern development scenarios. The second module focuses on **enterprise deployment strategies and best practices**, offering guidance for IT admins and platform engineers. The third module dives into **customization and imaging**, demonstrating how developers can tailor their Dev Box environments using configuration files and automated setup tasks. The final module explores the **end-to-end developer experience** in the Developer Portal—from provisioning Dev Box machines to managing, accessing, and maintaining them for optimal productivity.
+iconUrl: /training/achievements/explore-microsoft-dev-box-improve-developer-productivity.svg
+levels:
+- intermediate
+roles:
+- administrator
+- developer
+- devops-engineer
+- platform-engineer
+- solution-architect
+products:
+- azure
+subjects:
+- cloud-computing
+- devops
+- infrastructure
+- platform-engineering
+- virtual-machine
+modules:
+- learn.wwl.understand-basics-microsoft-dev-box
+- learn.wwl.explore-microsoft-dev-box-deployment-guidelines-best-practices
+trophy:
+  uid: learn.wwl.explore-microsoft-dev-box-improve-developer-productivity.trophy

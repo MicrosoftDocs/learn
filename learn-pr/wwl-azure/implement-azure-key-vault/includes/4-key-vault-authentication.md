@@ -1,19 +1,21 @@
-Authentication with Key Vault works with Microsoft Entra ID, which is responsible for authenticating the identity of any given security principal.
+Authentication with Key Vault works with Microsoft Entra ID, which is responsible for authenticating the identity of any given security principal. A security principal is anything that can request access to Azure resources. This includes:
 
-For applications, there are two ways to obtain a service principal:
+* Users – Real people with accounts in Microsoft Entra ID.
+* Groups – Collections of users. Permissions given to the group apply to all its members.
+* Service Principals – Represent apps or services (not people). Think of it like a user account for an app.
 
-* Enable a system-assigned **managed identity** for the application. With managed identity, Azure internally manages the application's service principal and automatically authenticates the application with other Azure services. Managed identity is available for applications deployed to various services.
+For applications, there are two main ways to obtain a service principal:
 
-* If you can't use managed identity, you instead register the application with your Microsoft Entra tenant. Registration also creates a second application object that identifies the app across all tenants.
+* Use a managed identity (recommended): Azure creates and manages the service principal for you. The app can securely access other Azure services without storing credentials. Works with services like App Service, Azure Functions, and Virtual Machines.
+
+* Register the app manually: You register the app in Microsoft Entra ID. This creates a service principal and an app object that identifies the app across all tenants.
 
 > [!NOTE]
-> It is recommended to use a system-assigned managed identity.
-
-The following is information on authenticating to Key Vault without using a managed identity.
+> It's recommended to use a system-assigned managed identity.
 
 ## Authentication to Key Vault in application code
 
-Key Vault SDK is using Azure Identity client library, which allows seamless authentication to Key Vault across environments with same code. The table below provides information on the Azure Identity client libraries:
+Key Vault SDK is using Azure Identity client library, which allows seamless authentication to Key Vault across environments with same code. The following table provides information on the Azure Identity client libraries:
 
 
 | .NET | Python | Java | JavaScript |
@@ -30,7 +32,7 @@ PUT /keys/MYKEY?api-version=<api_version>  HTTP/1.1
 Authorization: Bearer <access_token>
 ```
 
-When an access token isn't supplied, or when a token isn't accepted by the service, an `HTTP 401` error is returned to the client and will include the `WWW-Authenticate` header, for example:
+When an access token isn't supplied, or when the service rejects a token, an `HTTP 401` error is returned to the client and includes the `WWW-Authenticate` header, for example:
 
 ```http
 401 Not Authorized  
@@ -39,7 +41,7 @@ WWW-Authenticate: Bearer authorization="…", resource="…"
 
 The parameters on the `WWW-Authenticate` header are:
 
-* authorization: The address of the OAuth2 authorization service that may be used to obtain an access token for the request.
+* authorization: The address of the OAuth2 authorization service that might be used to obtain an access token for the request.
 
 * resource: The name of the resource (`https://vault.azure.net`) to use in the authorization request.
 
@@ -47,3 +49,4 @@ The parameters on the `WWW-Authenticate` header are:
 
 * [Azure Key Vault developer's guide](/azure/key-vault/general/developers-guide)
 * [Azure Key Vault availability and redundancy](/azure/key-vault/general/disaster-recovery-guidance)
+

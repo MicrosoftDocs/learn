@@ -23,3 +23,4 @@ SqlPackage.exe /a:import /tcs:"Data Source=<server-name>.database.windows.net;In
 
 >[!TIP]
 >To increase the speed of the import process, you can scale your database to a higher service tier and compute size, providing more and faster resources. Once the import is complete, you can scale down to your desired service tier and compute size. 
+

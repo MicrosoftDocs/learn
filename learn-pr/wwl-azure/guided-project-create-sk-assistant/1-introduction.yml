@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.guided-project-create-sk-assistant.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: Learn how to design an AI assistant with Semantic Kernel and Azure OpenAI.
+  ms.date: 04/28/2025
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/1-introduction.md)]

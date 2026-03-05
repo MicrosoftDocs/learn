@@ -1,17 +1,16 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.fundamentals-machine-learning.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
-  ms.date: 02/14/2025
+  ms.date: 09/10/2025
   author: wwlpublish
   ms.author: gmalc
   ms.topic: unit
   ms.custom:
   - N/A
+  module_assessment: true
 durationInMinutes: 3
 quiz:
   title: ""
@@ -38,25 +37,14 @@ quiz:
     - content: "Silhouette"
       isCorrect: false
       explanation: "Incorrect. Silhouette is used to evaluate clustering models."
-  - content: "In deep learning, what is the purpose of a loss function?"
+  - content: "In deep learning, what is *loss*?"
     choices:
-    - content: "To remove data for which no known label values are provided"
+    - content: "Data deleted from the training set"
       isCorrect: false
-      explanation: "Incorrect. A loss function does not remove data."
-    - content: "To evaluate the aggregate difference between predicted and actual label values"
+      explanation: "Incorrect. Loss is not a measure of deleted data."
+    - content: "The difference between predicted and actual label values"
       isCorrect: true
-      explanation: "Correct. A loss function determines the overall variance, or loss, between predicted and actual label values."
-    - content: "To calculate the cost of training a neural network rather than a statistical model"
+      explanation: "Correct. Loss measures the overall variance, or error, between predicted and actual label values."
+    - content: "The financial cost of training a model"
       isCorrect: false
-      explanation: "Incorrect. A loss function does not calculate cost."
-  - content: "What does automated machine learning in Azure Machine Learning enable you to do?"
-    choices:
-    - content: "Automatically deploy new versions of a model as they're trained"
-      isCorrect: false
-      explanation: "Incorrect. Automated machine learning does not automatically deploy models."
-    - content: "Automatically provision Azure Machine Learning workspaces for new data scientists in an organization"
-      isCorrect: false
-      explanation: "Incorrect. Automated machine learning does not automate workspace provisioning."
-    - content: "Automatically run multiple training jobs using different algorithms and parameters to find the best model"
-      isCorrect: true
-      explanation: "Correct. Automated machine learning runs multiple training jobs, varying algorithms and parameters, to find the best model for your data."
+      explanation: "Incorrect. Loss is not a financial metric for model training cost."

@@ -1,3 +1,10 @@
-Data professionals are increasingly expected to be able to work with data at scale, and to be able to do so in a way that is secure, compliant, and cost-effective. At the same time, the business wants to use that data more effectively and quickly to make better decisions.
+Organizations need to ingest, prepare, govern, and analyze data at scale. They also need that data to be ready for AI workloads like copilots, agents, and machine learning models.
 
-Microsoft Fabric is a collection of tools and services that enables organizations to do just that. In this module, you learned about Fabric's OneLake storage, what workloads that are included in Fabric, and how to enable and use Fabric in your organization.
+Microsoft Fabric provides a unified foundation for both. In this module, you explored Fabric's OneLake storage architecture, the workloads that serve different analytics needs, and how data teams collaborate within the platform.
+
+You also learned how AI capabilities build on top of well-governed data. Copilot provides intelligent assistance across every workload, data agents let users query organizational data in natural language, and Fabric IQ is a workload that helps agents reason across domains using consistent business language. Together with Foundry IQ and Work IQ, these capabilities position Fabric as both a data platform and an intelligence platform.
+
+## Learn more
+
+- [What's new in Microsoft Fabric?](/fabric/fundamentals/whats-new)
+- [Migrate to Microsoft Fabric](/fabric/fundamentals/migration)

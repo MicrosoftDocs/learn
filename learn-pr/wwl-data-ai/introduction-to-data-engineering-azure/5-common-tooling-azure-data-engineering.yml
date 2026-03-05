@@ -2,13 +2,11 @@
 uid: learn.wwl.introduction-data-engineering-azure.common-tooling-azure-data-engineering
 title: Data engineering in Microsoft Azure
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Data engineering in Microsoft Azure
+  title: Data Engineering in Microsoft Azure
   description: "Data engineering in Microsoft Azure"
-  ms.date: 02/07/2023
-  author: wwlpublish
-  ms.author: jamesh
+  ms.date: 08/21/2025
+  author: weslbo
+  ms.author: wedebols
   ms.topic: unit
 durationInMinutes: 6
 content: |

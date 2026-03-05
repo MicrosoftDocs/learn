@@ -1,6 +1,6 @@
-Azure AI Document Intelligence includes some prebuilt models that are trained on common form types. You can use these models to obtain the values of common fields from invoices, receipts, business cards, and more.
+Azure Document Intelligence includes some prebuilt models that are trained on common form types. You can use these models to obtain the values of common fields from invoices, receipts, business cards, and more.
 
-In your polling company, invoices and receipts are often submitted as photos or scans of the paper documents. Sometimes the scan is poor and the paper is creased or damaged. You want to know if Azure AI Document Intelligence can get this information into your databases more efficiently than manual data entry.
+In your polling company, invoices and receipts are often submitted as photos or scans of the paper documents. Sometimes the scan is poor and the paper is creased or damaged. You want to know if Azure Document Intelligence can get this information into your databases more efficiently than manual data entry.
 
 Here, you'll learn about the prebuilt models that handle financial, identity, and tax documents.
 
@@ -8,7 +8,7 @@ Here, you'll learn about the prebuilt models that handle financial, identity, an
 
 Your business both issues invoices and receives them from partner organization. There might be many different formats on paper or in digitized forms and some will have been scanned poorly at odd angles or from creased paper. 
 
-The invoice model in Azure AI Document Intelligence can handle these challenges and uses the features of the read model to extract text from invoice scans. In addition, it extracts specific fields that are commonly used on invoices including:
+The invoice model in Azure Document Intelligence can handle these challenges and uses the features of the read model to extract text from invoice scans. In addition, it extracts specific fields that are commonly used on invoices including:
 
 - Customer name and reference ID
 - Purchase order number
@@ -25,7 +25,7 @@ Invoices also feature lines, usually in a table, each of which is one purchased 
 
 ## Using the receipt model
 
-Receipts have similar fields and structures to invoices, but they record amounts paid instead of amounts charged. Azure AI Document Intelligence faces the same challenges of poor scanning or digitization but can reliably identify fields including:
+Receipts have similar fields and structures to invoices, but they record amounts paid instead of amounts charged. Azure Document Intelligence faces the same challenges of poor scanning or digitization but can reliably identify fields including:
 
 - Merchant details such a name, phone number, and address.
 - Amounts such as receipt total, tax, and tip.
@@ -39,7 +39,7 @@ As for invoices, receipts often include a table of items, each of which is a pro
 - The total price for that quantity.
 
 > [!NOTE]
-> In Azure AI Document Intelligence v3.0 and later, the receipt model supports single-page hotel receipt processing. If a receipt is classified as a hotel receipt, the model extracts extra relevant fields such as arrival and departure dates.
+> In Azure Document Intelligence v3.0 and later, the receipt model supports single-page hotel receipt processing. If a receipt is classified as a hotel receipt, the model extracts extra relevant fields such as arrival and departure dates.
 
 ## Using the ID document model
 
@@ -73,8 +73,8 @@ Business cards are a popular way to exchange contact information quickly and oft
 
 ## Using other prebuilt models
 
-Azure AI Document Intelligence offers several prebuilt models, with new models being released regularly. Before training a custom model, it's worth verifying if your use case can be analyzed accurately with one of these prebuilt models. Using a prebuilt model will benefit from rigorous testing, updated model versions, and reduced cost compared to a custom model.
+Azure Document Intelligence offers several prebuilt models, with new models being released regularly. Before training a custom model, it's worth verifying if your use case can be analyzed accurately with one of these prebuilt models. Using a prebuilt model will benefit from rigorous testing, updated model versions, and reduced cost compared to a custom model.
 
 ## Learn more
 
-- [Azure AI Document Intelligence model overview](/azure/ai-services/document-intelligence/concept-model-overview)
+- [Azure Document Intelligence model overview](/azure/ai-services/document-intelligence/concept-model-overview)

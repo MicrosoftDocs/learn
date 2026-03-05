@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.optimize-spend-and-performance-with-azure-ai-foundry-provisioned-reservations.manage-monitor-provisioned-reservations
+title: Manage and monitor provisioned reservations
+metadata:
+  title: Manage and Monitor Provisioned Reservations
+  description: Learn how to manage reservations and review purchased reservations.
+  ms.date: 08/01/2025
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: unit
+durationInMinutes: 11
+content: |
+  [!include[](includes/manage-monitor-provisioned-reservations.md)]

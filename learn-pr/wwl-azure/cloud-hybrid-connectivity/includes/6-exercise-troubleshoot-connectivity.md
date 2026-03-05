@@ -1,5 +1,5 @@
 > [!IMPORTANT]
-> You need your own [Azure subscription](https://azure.microsoft.com/free/?azure-portal=true) to complete the exercises in this module. If you don't have an Azure subscription, you can still view the demonstraition video at the bottom of this page.
+> You need your own [Azure subscription](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn) to complete the exercises in this module. If you don't have an Azure subscription, you can still view the demonstraition video at the bottom of this page.
 
 If you have not already run the script in unit 2, please do so now so you can follow the exercise below.
 

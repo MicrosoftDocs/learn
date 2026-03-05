@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.manage-access
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Manage access for Azure Virtual Desktop
   description: "Manage access for Azure Virtual Desktop"
   ms.date: 08/20/2024
@@ -49,4 +47,4 @@ units:
 - learn.wwl.manage-access.knowledge-check
 - learn.wwl.manage-access.summary
 badge:
-  uid: learn.wwl.manage-access.badge
+  uid: learn.wwl.manage-access.badge

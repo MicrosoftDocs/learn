@@ -1,0 +1,14 @@
+### YamlMime: ModuleUnit
+uid: learn.wwl.understand-azure-databricks-integrations.integration-databricks-vscode
+title: Understand integration with VS Code
+metadata:
+  title: Understand Integration with VS Code
+  description: Learn how the Databricks extension for Visual Studio Code enables local development with remote execution, debugging with Databricks Connect, and CI/CD deployment using Asset Bundles.
+  ms.date: 01/15/2026
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+  ai-usage: ai-generated
+durationInMinutes: 7
+content: |
+  [!include[](includes/4-integration-databricks-vscode.md)]

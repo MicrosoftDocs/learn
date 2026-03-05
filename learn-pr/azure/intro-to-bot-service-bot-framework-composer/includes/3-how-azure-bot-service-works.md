@@ -56,7 +56,7 @@ You can use several visual and interactive methods to enhance conversation for y
 
 ### Extend language understanding and intelligence with LUIS and QnA Maker
 
-*LUIS* provides natural language processing with a complete intent and entity management system. You can integrate previously created LUIS apps or create new apps within Composer to add robust natural-language understanding capabilities to your bot.
+*LUIS* provides natural language processing with a complete intent and entity management system. You can integrate previously created LUIS apps, or create new apps within Composer to add robust natural-language understanding capabilities to your bot.
 
 *QnA Maker* is a cloud-based service. Use it to extract Question and Answer pairs from existing FAQ-style documents and websites. You then can import that information into a knowledge base that knowledge experts can curate manually. You can integrate your bot with a QnA knowledge base. This integration allows you to find the most appropriate answer for any given natural language input.
 

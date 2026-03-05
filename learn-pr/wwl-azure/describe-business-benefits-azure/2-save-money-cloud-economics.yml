@@ -2,8 +2,6 @@
 uid: learn.wwl.describe-business-benefits-azure.save-money-cloud-economics
 title: Save money with cloud economics
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Save money with cloud economics
   description: "Save money with cloud economics"
   ms.date: 09/20/2024
@@ -15,4 +13,4 @@ metadata:
 durationInMinutes: 7
 content: |
   [!include[](includes/2-save-money-cloud-economics.md)]
-interactive: bash
+interactive: bash

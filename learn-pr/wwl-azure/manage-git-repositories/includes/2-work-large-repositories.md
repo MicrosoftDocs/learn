@@ -1,38 +1,36 @@
-Git is a great version control system widely adopted and recommended, but a few concerns should be made and taken care of when working with large repositories.
+Git is an excellent version control system that many teams use. However, when repositories get very large, you need to use special techniques to keep them working well.
 
-While having a local copy of repositories in a distributed version control system is functional, that can be a significant problem when large repositories are in place.
+When you have a local copy of a repository on your computer, this usually works great. But when repositories become huge, this can cause problems.
 
-For example, Microsoft discovered this issue when migrating a repository with over 300 GB of data from an internal system to Git.
+For example, Microsoft found this issue when they moved a repository with over 300 GB of data from their internal system to Git.
 
 ## Why repositories become large
 
-There are two primary causes for large repositories:
+There are two main reasons why repositories grow large:
 
- -  Long history
- -  Large binary files
+- **Long history** - Many years of changes and commits
+- **Large binary files** - Images, videos, or other big files
 
 ## Shallow clone
 
-If developers don't need all the available history in their local repositories, a good option is to implement a shallow clone.
+If you don't need all the history in your local repository, you can use a shallow clone. This saves space on your computer and makes syncing faster.
 
-It saves both space on local development systems and the time it takes to sync.
-
-You can specify the depth of the clone that you want to execute:
+You can choose how much history you want to download:
 
 ```DOS
 git clone --depth [depth] [clone-url]
 
 ```
 
-You can also reduce clones by filtering branches or cloning only a single branch.
+You can also reduce the download size by filtering branches or cloning only one branch.
 
 ## VFS for Git
 
-VFS for Git helps with large repositories. It requires a Git LFS client.
+VFS for Git helps you work with large repositories. It needs a Git LFS client to work.
 
-Typical Git commands are unaffected, but the Git LFS works with the standard filesystem to download necessary files in the background when you need files from the server.
+Your normal Git commands work the same way, but Git LFS works behind the scenes to download files only when you need them from the server.
 
-The Git LFS client was released as open-source. The protocol is a straightforward one with four endpoints similar to REST endpoints.
+The Git LFS client is open-source. It uses a simple protocol with four endpoints that work like REST endpoints.
 
 For more information on large repositories, see: [Working with large files](https://docs.github.com/repositories/working-with-files/managing-large-files) and [Virtual File System for Git: Enable Git at Enterprise Scale](https://github.com/microsoft/VFSForGit).
 
@@ -40,25 +38,24 @@ For more information on large repositories, see: [Working with large files](http
 
 :::image type="content" source="../media/scalar-5d38de1c.png" alt-text="Screenshot of Scalar icon.":::
 
+Scalar is a .NET Core application that works on Windows and macOS. It gives you tools and extensions for Git that help very large repositories work faster. Microsoft uses it for their Windows and Office repositories.
 
-Scalar is a .NET Core application available for Windows and macOS. With tools and extensions for Git to allow very large repositories to maximize your Git command performance. Microsoft uses it for Windows and Office repositories.
+If Azure Repos hosts your repository, you can clone it using the [GVFS protocol](https://github.com/microsoft/VFSForGit/blob/master/Protocol.md#the-gvfs-protocol-v1).
 
-If Azure Repos hosts your repository, you can clone a repository using the [GVFS protocol](https://github.com/microsoft/VFSForGit/blob/master/Protocol.md#the-gvfs-protocol-v1).
+Scalar works by turning on these advanced Git features:
 
-It achieves by enabling some advanced Git features, such as:
-
- -  *Partial clone:* reduces time to get a working repository by not downloading all Git objects right away.
- -  *Background prefetch:* downloads Git object data from all remotes every hour, reducing the time for foreground git fetch calls.
- -  *Sparse-checkout:* limits the size of your working directory.
- -  *File system monitor:* tracks the recently modified files and eliminates the need for Git to scan the entire work tree.
- -  *Commit-graph:* accelerates commit walks and reachability calculations, speeding up commands like git log.
- -  *Multi-pack-index:* enables fast object lookups across many pack files.
- -  *Incremental repack:* Repacks the packed Git data into fewer pack files without disrupting concurrent commands using the multi-pack-index.
+- **Partial clone** - Gets a working repository faster by not downloading all Git objects immediately
+- **Background prefetch** - Downloads Git object data from all remotes every hour, making git fetch calls faster
+- **Sparse-checkout** - Makes your working directory smaller by only including files you need
+- **File system monitor** - Tracks recently changed files so Git doesn't have to scan your entire work tree
+- **Commit-graph** - Makes commit walks and reachability calculations faster, speeding up commands like git log
+- **Multi-pack-index** - Enables fast object lookups across many pack files
+- **Incremental repack** - Repacks Git data into fewer pack files without disrupting other commands
 
 > [!NOTE]
-> We update the list of features that Scalar automatically configures as a new Git version is released.
+> We update the list of features that Scalar automatically sets up as new Git versions are released.
 
 For more information, see:
 
- -  [microsoft/scalar: Scalar](https://github.com/microsoft/scalar/).
- -  [Introducing Scalar: Git at scale for everyone](https://devblogs.microsoft.com/devops/introducing-scalar/).
+- [microsoft/scalar: Scalar](https://github.com/microsoft/scalar/)
+- [Introducing Scalar: Git at scale for everyone](https://devblogs.microsoft.com/devops/introducing-scalar/)

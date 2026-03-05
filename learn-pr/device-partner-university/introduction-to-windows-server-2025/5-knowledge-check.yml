@@ -1,0 +1,85 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.introduction-to-windows-server-2025.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge Check
+  description: This content is part of the "Introduction to Windows Server 2025" module.
+  ms.date: 08/27/2025
+  author: melissawinters
+  ms.author: v-mwinters
+  ms.topic: unit
+durationInMinutes: 5
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Which Windows Server 2025 feature allows administrators to manage both on-premises and cloud-integrated environments from a single interface?"
+    choices:
+        - content: "Hyper-V"
+          isCorrect: false
+          explanation: "Incorrect. Hyper-V is used for virtualization, not centralized management."
+        - content: "Windows Admin Center"
+          isCorrect: true
+          explanation: "Correct. Windows Admin Center provides a browser-based toolset for managing both hybrid and on-premises server environments."
+        - content: "Credential Guard"
+          isCorrect: false
+          explanation: "Incorrect. Credential Guard is a security feature for protecting credentials."
+        - content: "Storage Spaces Direct"
+          isCorrect: false
+          explanation: "Incorrect. Storage Spaces Direct is used for fault-tolerant storage."
+  - content: "What is the primary purpose of Secured-core Server technology in Windows Server 2025?"
+    choices:
+        - content: "To enable live migration of virtual machines"
+          isCorrect: false
+          explanation: "Incorrect. Live migration is a feature of Hyper-V virtualization."
+        - content: "To provide hardware-based security against firmware-level threats"
+          isCorrect: true
+          explanation: "Correct. Secured-core Server is designed to mitigate firmware-level threats and establish a hardware-based root of trust."
+        - content: "To automate routine administrative tasks"
+          isCorrect: false
+          explanation: "Incorrect. Automation is handled by PowerShell and Desired State Configuration."
+        - content: "To synchronize file servers across locations"
+          isCorrect: false
+          explanation: "Incorrect. File server synchronization is a hybrid management feature."
+  - content: "A retail company needs to run multiple virtual machines for point-of-sale, inventory, and guest Wi-Fi services at each store. Which Windows Server 2025 feature best supports this requirement?"
+    choices:
+        - content: "Credential Guard"
+          isCorrect: false
+          explanation: "Incorrect. Credential Guard secures login credentials, not virtualization."
+        - content: "Hyper-V virtualization"
+          isCorrect: true
+          explanation: "Correct. Hyper-V allows multiple virtual machines to run on a single physical server."
+        - content: "Storage Spaces Direct"
+          isCorrect: false
+          explanation: "Incorrect. Storage Spaces Direct provides fault-tolerant storage."
+        - content: "Windows Admin Center"
+          isCorrect: false
+          explanation: "Incorrect. Windows Admin Center is used for management, not virtualization."
+  - content: "An organization wants to minimize downtime during security updates on their servers. Which Windows Server 2025 feature should they use?"
+    choices:
+        - content: "Hotpatching"
+          isCorrect: true
+          explanation: "Correct. Hotpatching enables the application of security updates without requiring a system reboot."
+        - content: "BitLocker"
+          isCorrect: false
+          explanation: "Incorrect. BitLocker is used for disk encryption."
+        - content: "Active Directory"
+          isCorrect: false
+          explanation: "Incorrect. Active Directory is for identity and access management."
+        - content: "System Insights"
+          isCorrect: false
+          explanation: "Incorrect. System Insights provides predictive analytics for resource management."
+  - content: "Your company operates a mix of legacy applications and modern cloud services. Which aspect of Windows Server 2025 makes it suitable for this environment?"
+    choices:
+        - content: "Only supports modern workloads"
+          isCorrect: false
+          explanation: "Incorrect. Windows Server 2025 supports both legacy and modern workloads."
+        - content: "Provides compatibility with both legacy and modern workloads"
+          isCorrect: true
+          explanation: "Correct. Windows Server 2025 maintains compatibility with traditional applications and modern services."
+        - content: "Requires exclusive use of Azure services"
+          isCorrect: false
+          explanation: "Incorrect. Windows Server 2025 supports hybrid and on-premises deployments."
+        - content: "Does not support virtualization"
+          isCorrect: false
+          explanation: "Incorrect. Hyper-V provides robust virtualization support."
+

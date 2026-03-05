@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.hdinsight-configuration-to-build-open-source-analytical-solutions
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Choose the correct HDInsight Configuration to build open source analytics solutions.
   description: "Choose the correct HDInsight Configuration to build open source analytics solutions"
   ms.date: 04/05/2024
@@ -44,4 +42,4 @@ units:
 - learn.wwl.hdinsight-configuration-to-build-open-source-analytical-solutions.7-summary
 badge:
   uid: learn.wwl.hdinsight-configuration-to-build-open-source-analytical-solutions.badge
-
+

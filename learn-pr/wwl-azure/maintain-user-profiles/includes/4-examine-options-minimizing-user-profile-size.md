@@ -1,5 +1,3 @@
-
-
 Considering user profiles keep user state and users can modify their state, users must possess Write permissions to their user profiles. As long as users have Write permissions, they can write as much data as they want if there’s available free disk space unless an administrator limits them. Because user profiles contain user data, and user data can increase rapidly.
 
 For example, if users store large graphic or multimedia files in their Documents folder, which is in their profile, an administrator often limits the space for storing user profiles.

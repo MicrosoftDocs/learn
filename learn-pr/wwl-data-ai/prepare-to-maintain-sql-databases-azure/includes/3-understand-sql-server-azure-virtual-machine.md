@@ -38,7 +38,7 @@ For production SQL Server data and transaction log files, you should only use Pr
 
 ## High availability in Azure
 
-The Azure platform is designed to be fault tolerant and provides quickly recovery from service disruptions and transient errors. In fact, many organizations see higher levels of availability in single virtual machines deployments than they previously experienced in their on-premises environments. Microsoft guarantees uptime of at least 99.9% for single instance Azure virtual machine, when using Premium SSD or Ultra Disk for all disks.
+The Azure platform is designed to be fault tolerant and provides quick recovery from service disruptions and transient errors. In fact, many organizations see higher levels of availability in single virtual machines deployments than they previously experienced in their on-premises environments. Microsoft guarantees uptime of at least 99.9% for single instance Azure virtual machine, when using Premium SSD or Ultra Disk for all disks.
 
 Azure offers several features to support high availability including availability sets, availability zones, and load-balancing techniques that provide high availability by distributing incoming traffic among Virtual Machines.
 
@@ -49,3 +49,4 @@ Azure Arc extends Azure management capabilities to SQL Server instances running 
 With Azure Arc, you can centrally manage and monitor your SQL Server instances through the Azure portal just like you would with native Azure services. This unified management experience simplifies operations and reduces the complexity of managing disparate environments. Additionally, Azure Arc enables advanced features like automated updates, backup and restore, and disaster recovery for your SQL Server instances, ensuring they're always up-to-date, secure, and resilient against failures. By connecting your SQL Server instances to Azure Arc, you can also take advantage of Azure's machine learning and artificial intelligence capabilities, enabling you to build and deploy intelligent applications that use your existing data.
 
 To learn more about enabling SQL Server with Azure Arc, see [SQL Server enabled by Azure Arc](/sql/sql-server/azure-arc/overview).
+

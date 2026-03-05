@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.azure.monitor-protection-of-workloads-in-azure-backup
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Monitor workload protection in Azure Backup
   description: Learn how to monitor Azure Backup-protected workloads by using Azure Monitor.
   manager: jsuri
@@ -56,4 +54,4 @@ units:
 - learn.azure.monitor-protection-of-workloads-in-azure-backup.summary
 badge:
   uid: learn.azure.monitor-protection-of-workloads-in-azure-backup.badge
-
+

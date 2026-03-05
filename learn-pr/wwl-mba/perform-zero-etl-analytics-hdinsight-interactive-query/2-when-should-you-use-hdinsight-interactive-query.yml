@@ -2,8 +2,6 @@
 uid: learn.wwl.perform-zero-etl-analytics-hdinsight-interactive-query.2-when-should-you-use-hdinsight-interactive-query
 title: When should you use HDInsight Interactive Query?
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: When should you use HDInsight Interactive Query?
   description: "When should you use HDInsight Interactive Query?"
   ms.date: 04/08/2024
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 6
 content: |
-  [!include[](includes/2-when-should-you-use-hdinsight-interactive-query.md)]
+  [!include[](includes/2-when-should-you-use-hdinsight-interactive-query.md)]

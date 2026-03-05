@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-ai-secure-enterprise-other.data-loss-prevention-ai
+title: Protect sensitive data in AI apps with Microsoft Purview DLP
+metadata:
+  title: Protect Sensitive Data in AI Apps with Microsoft Purview DLP
+  description: "Protect sensitive data in AI apps with Microsoft Purview DLP"
+  ms.date: 08/25/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 8
+content: |
+  [!include[](includes/data-loss-prevention-ai.md)]

@@ -1,0 +1,138 @@
+<svg width="4249" height="1866"
+    xmlns="http://www.w3.org/2000/svg" style="background-color:rgb(255,255,255)"
+    xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" overflow="hidden">
+    <defs>
+        <linearGradient x1="142.881" y1="518.524" x2="142.881" y2="342.549" gradientUnits="userSpaceOnUse" spreadMethod="pad" id="fill0">
+            <stop offset="0" stop-color="#2AAC94" stop-opacity="1"/>
+            <stop offset="0.056" stop-color="#2AAC94" stop-opacity="1"/>
+            <stop offset="0.155" stop-color="#239C87" stop-opacity="1"/>
+            <stop offset="0.372" stop-color="#177E71" stop-opacity="1"/>
+            <stop offset="0.588" stop-color="#0E6961" stop-opacity="1"/>
+            <stop offset="0.799" stop-color="#095D57" stop-opacity="1"/>
+            <stop offset="1" stop-color="#085954" stop-opacity="1"/>
+        </linearGradient>
+        <linearGradient x1="365.222" y1="390.85" x2="195.313" y2="206.044" gradientUnits="userSpaceOnUse" spreadMethod="pad" id="fill1">
+            <stop offset="0" stop-color="#ABE88E" stop-opacity="1"/>
+            <stop offset="0.042" stop-color="#ABE88E" stop-opacity="1"/>
+            <stop offset="0.549" stop-color="#2AAA92" stop-opacity="1"/>
+            <stop offset="0.906" stop-color="#117865" stop-opacity="1"/>
+            <stop offset="1" stop-color="#117865" stop-opacity="1"/>
+        </linearGradient>
+        <linearGradient x1="-52.3276" y1="381.864" x2="109.373" y2="326.719" gradientUnits="userSpaceOnUse" spreadMethod="pad" id="fill2">
+            <stop offset="0" stop-color="#6AD6F9" stop-opacity="0.8"/>
+            <stop offset="1" stop-color="#6AD6F9" stop-opacity="0"/>
+        </linearGradient>
+        <linearGradient x1="71.0259" y1="170.307" x2="501.433" y2="170.307" gradientUnits="userSpaceOnUse" spreadMethod="pad" id="fill3">
+            <stop offset="0" stop-color="#25FFD4" stop-opacity="1"/>
+            <stop offset="0.043" stop-color="#25FFD4" stop-opacity="1"/>
+            <stop offset="0.874" stop-color="#55DDB9" stop-opacity="1"/>
+            <stop offset="1" stop-color="#55DDB9" stop-opacity="1"/>
+        </linearGradient>
+        <linearGradient x1="71.0259" y1="110.133" x2="458.748" y2="290.169" gradientUnits="userSpaceOnUse" spreadMethod="pad" id="fill4">
+            <stop offset="0" stop-color="#6AD6F9" stop-opacity="1"/>
+            <stop offset="0.23" stop-color="#60E9D0" stop-opacity="1"/>
+            <stop offset="0.651" stop-color="#6DE9BB" stop-opacity="1"/>
+            <stop offset="0.994" stop-color="#ABE88E" stop-opacity="1"/>
+            <stop offset="1" stop-color="#ABE88E" stop-opacity="1"/>
+        </linearGradient>
+        <linearGradient x1="106.884" y1="143.832" x2="317.716" y2="190.457" gradientUnits="userSpaceOnUse" spreadMethod="pad" id="fill5">
+            <stop offset="0" stop-color="#FFFFFF" stop-opacity="0"/>
+            <stop offset="0.459" stop-color="#FFFFFF" stop-opacity="0.4"/>
+            <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+        </linearGradient>
+        <linearGradient x1="176.787" y1="324.438" x2="181.764" y2="176.597" gradientUnits="userSpaceOnUse" spreadMethod="pad" id="fill6">
+            <stop offset="0" stop-color="#063D3B" stop-opacity="0"/>
+            <stop offset="0.205" stop-color="#063D3B" stop-opacity="0"/>
+            <stop offset="0.586" stop-color="#063D3B" stop-opacity="0.237"/>
+            <stop offset="0.872" stop-color="#063D3B" stop-opacity="0.75"/>
+            <stop offset="1" stop-color="#063D3B" stop-opacity="0.75"/>
+        </linearGradient>
+        <linearGradient x1="20.1499" y1="309.732" x2="200.324" y2="343.62" gradientUnits="userSpaceOnUse" spreadMethod="pad" id="fill7">
+            <stop offset="0" stop-color="#FFFFFF" stop-opacity="0"/>
+            <stop offset="0.459" stop-color="#FFFFFF" stop-opacity="0.2"/>
+            <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+        </linearGradient>
+        <linearGradient x1="150.312" y1="469.756" x2="115.162" y2="297.894" gradientUnits="userSpaceOnUse" spreadMethod="pad" id="fill8">
+            <stop offset="0" stop-color="#063D3B" stop-opacity="0"/>
+            <stop offset="0.064" stop-color="#063D3B" stop-opacity="0"/>
+            <stop offset="0.17" stop-color="#063D3B" stop-opacity="0.135"/>
+            <stop offset="0.562" stop-color="#063D3B" stop-opacity="0.599"/>
+            <stop offset="0.85" stop-color="#063D3B" stop-opacity="0.9"/>
+            <stop offset="1" stop-color="#063D3B" stop-opacity="1"/>
+        </linearGradient>
+    </defs>
+    <g transform="translate(-123 -398)">
+        <g>
+            <g>
+                <g>
+                    <g>
+                        <path d="M412.456 191.741 217.828 299.865 9.85754 184.298 0 189.744 0 273.742 217.81 394.865 412.456 286.686 412.456 331.308 217.828 439.541 9.91201 323.901-1.20929e-14 329.347-1.20929e-14 343.616 217.81 464.739 435.693 343.616 435.693 259.546 425.835 254.1 217.81 369.667 23.2369 261.543 23.2369 217.12 217.846 325.136 435.693 204.049 435.693 121.123 424.746 115.114 217.828 230.173 33.5665 127.658 217.828 25.1976 369.667 109.613 383.173 102.115 383.173 91.9674 217.846 0 0 121.177 0 134.175 217.81 255.298 412.456 147.119 412.456 191.741Z" fill="#FF3621" fill-rule="nonzero" fill-opacity="1" transform="matrix(-1.02595 0 0 1 1663 1018)"/>
+                    </g>
+                </g>
+            </g>
+            <g>
+                <g>
+                    <g>
+                        <path d="M54.4014 368.471 47.316 394.41C44.672 402.705 40.9738 414.905 38.9865 425.758 25.6504 460.918 43.342 500.232 78.5019 513.567 83.8441 515.595 89.4202 516.939 95.0987 517.573 104.672 518.956 115.508 518.869 127.657 517.089L183.475 509.382C197.516 507.443 209.043 497.309 212.767 483.633L251.183 342.549 54.4014 368.471Z" fill="url(#fill0)" fill-rule="evenodd" transform="matrix(1 0 0 1 2697 961)"/>
+                        <path d="M108.837 375.176C50.0119 384.283 37.9323 428.678 37.9323 428.678L94.2692 221.666 388.655 181.851 348.511 327.67C346.437 335.481 339.87 341.46 331.731 342.704L330.089 342.981 107.196 375.452 108.837 375.158Z" fill="url(#fill1)" fill-rule="nonzero" transform="matrix(1 0 0 1 2697 961)"/>
+                        <path d="M108.837 375.176C50.0119 384.283 37.9323 428.678 37.9323 428.678L94.2692 221.666 388.655 181.851 348.511 327.67C346.437 335.481 339.87 341.46 331.731 342.704L330.089 342.981 107.196 375.452 108.837 375.158Z" fill="url(#fill2)" fill-rule="nonzero" transform="matrix(1 0 0 1 2697 961)"/>
+                        <path d="M142.225 243.078 468.149 194.932C475.891 193.896 482.164 188.193 484.151 180.762L517.781 59.05C520.656 48.7941 514.673 38.1492 504.417 35.274 501.918 34.5737 499.305 34.3847 496.732 34.718L185.773 80.6688C152.188 86.1301 124.877 110.685 115.888 143.503L71.0259 306.034C80.0122 273.165 85.5421 253.326 142.225 243.078Z" fill="url(#fill3)" fill-rule="nonzero" transform="matrix(1 0 0 1 2697 961)"/>
+                        <path d="M142.225 243.078 468.149 194.932C475.891 193.896 482.164 188.193 484.151 180.762L517.781 59.05C520.656 48.7941 514.673 38.1492 504.417 35.274 501.918 34.5737 499.305 34.3847 496.732 34.718L185.773 80.6688C152.188 86.1301 124.877 110.685 115.888 143.503L71.0259 306.034C80.0122 273.165 85.5421 253.326 142.225 243.078Z" fill="url(#fill4)" fill-rule="nonzero" transform="matrix(1 0 0 1 2697 961)"/>
+                        <path d="M142.225 243.078 468.149 194.932C475.891 193.896 482.164 188.193 484.151 180.762L517.781 59.05C520.656 48.7941 514.673 38.1492 504.417 35.274 501.918 34.5737 499.305 34.3847 496.732 34.718L185.773 80.6688C152.188 86.1301 124.877 110.685 115.888 143.503L71.0259 306.034C80.0122 273.165 85.5421 253.326 142.225 243.078Z" fill="url(#fill5)" fill-rule="nonzero" transform="matrix(1 0 0 1 2697 961)"/>
+                        <path d="M142.225 243.078C95.0296 251.632 83.3129 266.822 75.519 290.653L37.9323 428.696C37.9323 428.696 49.9428 384.75 108.06 375.349L330.072 342.998 331.713 342.722C339.853 341.495 346.42 335.481 348.511 327.687L381.535 207.738 142.19 243.078Z" fill="url(#fill6)" fill-rule="nonzero" transform="matrix(1 0 0 1 2697 961)"/>
+                        <path d="M142.225 243.078C95.0296 251.632 83.3129 266.822 75.519 290.653L37.9323 428.696C37.9323 428.696 49.9428 384.75 108.06 375.349L330.072 342.998 331.713 342.722C339.853 341.495 346.42 335.481 348.511 327.687L381.535 207.738 142.19 243.078Z" fill="url(#fill7)" fill-rule="nonzero" transform="matrix(1 0 0 1 2697 961)"/>
+                        <path d="M108.06 375.349C58.9463 383.298 42.8229 415.821 38.9865 425.741 25.6412 460.898 43.3227 500.216 78.479 513.56 83.8284 515.591 89.4121 516.939 95.0987 517.573 104.672 518.956 115.508 518.869 127.657 517.089L183.475 509.382C197.516 507.443 209.043 497.309 212.767 483.633L247.778 355.009 108.06 375.349Z" fill="url(#fill8)" fill-rule="evenodd" transform="matrix(1 0 0 1 2697 961)"/>
+                    </g>
+                </g>
+            </g>
+            <text fill="#000000" fill-opacity="1" font-family="Segoe UI,Segoe UI_MSFontService,sans-serif" font-style="normal" font-variant="normal" font-weight="400" font-stretch="normal" font-size="73" text-anchor="start" direction="ltr" writing-mode="lr-tb" unicode-bidi="normal" text-decoration="none" transform="matrix(1 0 0 1 2711.98 1585)">Microsoft Fabric</text>
+            <text fill="#000000" fill-opacity="1" font-family="Segoe UI,Segoe UI_MSFontService,sans-serif" font-style="normal" font-variant="normal" font-weight="400" font-stretch="normal" font-size="73" text-anchor="start" direction="ltr" writing-mode="lr-tb" unicode-bidi="normal" text-decoration="none" transform="matrix(1 0 0 1 1165.03 1585)">Azure Databricks</text>
+            <path d="M3001 1664 3001 1813.62C3001 1877.9 2948.9 1930 2884.62 1930L1507.62 1930C1443.35 1930 1391.25 1877.9 1391.25 1813.62L1391.25 1797 1358 1797 1424.5 1730.5 1491 1797 1457.75 1797 1457.75 1813.62C1457.75 1841.17 1480.08 1863.5 1507.63 1863.5L2884.62 1863.5C2912.17 1863.5 2934.5 1841.17 2934.5 1813.62L2934.5 1664Z" stroke="#225B62" stroke-width="5.72917" stroke-linecap="butt" stroke-linejoin="round" stroke-miterlimit="10" stroke-opacity="1" fill="#49C5B1" fill-rule="evenodd" fill-opacity="1"/>
+            <path d="M1358 943 1358 793.374C1358 729.102 1410.1 677 1474.37 677L2903.38 677C2967.65 677 3019.75 729.102 3019.75 793.374L3019.75 810 3053 810 2986.5 876.501 2920 810 2953.25 810 2953.25 793.374C2953.25 765.829 2930.92 743.499 2903.38 743.499L1474.37 743.501C1446.83 743.501 1424.5 765.831 1424.5 793.376L1424.5 943Z" stroke="#F4364C" stroke-width="5.72917" stroke-linecap="butt" stroke-linejoin="round" stroke-miterlimit="10" stroke-opacity="1" fill="#FFAF77" fill-rule="evenodd" fill-opacity="1"/>
+            <text fill="#000000" fill-opacity="1" font-family="Segoe UI Symbol,Segoe UI Symbol_MSFontService,sans-serif" font-style="normal" font-variant="normal" font-weight="400" font-stretch="normal" font-size="73" text-anchor="start" direction="ltr" writing-mode="lr-tb" unicode-bidi="normal" text-decoration="none" transform="matrix(1 0 0 1 3306.99 580)">‣</text>
+            <text fill="#000000" fill-opacity="1" font-family="Segoe UI,Segoe UI_MSFontService,sans-serif" font-style="normal" font-variant="normal" font-weight="400" font-stretch="normal" font-size="73" text-anchor="start" direction="ltr" writing-mode="lr-tb" unicode-bidi="normal" text-decoration="none" transform="matrix(1 0 0 1 3410.12 580)">No replication</text>
+            <text fill="#000000" fill-opacity="1" font-family="Segoe UI Symbol,Segoe UI Symbol_MSFontService,sans-serif" font-style="normal" font-variant="normal" font-weight="400" font-stretch="normal" font-size="73" text-anchor="start" direction="ltr" writing-mode="lr-tb" unicode-bidi="normal" text-decoration="none" transform="matrix(1 0 0 1 3306.99 756)">‣</text>
+            <text fill="#000000" fill-opacity="1" font-family="Segoe UI,Segoe UI_MSFontService,sans-serif" font-style="normal" font-variant="normal" font-weight="400" font-stretch="normal" font-size="73" text-anchor="start" direction="ltr" writing-mode="lr-tb" unicode-bidi="normal" text-decoration="none" transform="matrix(1 0 0 1 3410.12 756)">Mirrors catalog using </text>
+            <text fill="#000000" fill-opacity="1" font-family="Segoe UI,Segoe UI_MSFontService,sans-serif" font-style="normal" font-variant="normal" font-weight="400" font-stretch="normal" font-size="73" text-anchor="start" direction="ltr" writing-mode="lr-tb" unicode-bidi="normal" text-decoration="none" transform="matrix(1 0 0 1 3410.12 844)">OneLake shortcuts</text>
+            <text fill="#000000" fill-opacity="1" font-family="Segoe UI Symbol,Segoe UI Symbol_MSFontService,sans-serif" font-style="normal" font-variant="normal" font-weight="400" font-stretch="normal" font-size="73" text-anchor="start" direction="ltr" writing-mode="lr-tb" unicode-bidi="normal" text-decoration="none" transform="matrix(1 0 0 1 3306.99 1020)">‣</text>
+            <text fill="#000000" fill-opacity="1" font-family="Segoe UI,Segoe UI_MSFontService,sans-serif" font-style="normal" font-variant="normal" font-weight="400" font-stretch="normal" font-size="73" text-anchor="start" direction="ltr" writing-mode="lr-tb" unicode-bidi="normal" text-decoration="none" transform="matrix(1 0 0 1 3410.12 1020)">Short</text>
+            <text fill="#000000" fill-opacity="1" font-family="Segoe UI,Segoe UI_MSFontService,sans-serif" font-style="normal" font-variant="normal" font-weight="400" font-stretch="normal" font-size="73" text-anchor="start" direction="ltr" writing-mode="lr-tb" unicode-bidi="normal" text-decoration="none" transform="matrix(1 0 0 1 3583.14 1020)">-</text>
+            <text fill="#000000" fill-opacity="1" font-family="Segoe UI,Segoe UI_MSFontService,sans-serif" font-style="normal" font-variant="normal" font-weight="400" font-stretch="normal" font-size="73" text-anchor="start" direction="ltr" writing-mode="lr-tb" unicode-bidi="normal" text-decoration="none" transform="matrix(1 0 0 1 3612.36 1020)">lived credentials (tied </text>
+            <text fill="#000000" fill-opacity="1" font-family="Segoe UI,Segoe UI_MSFontService,sans-serif" font-style="normal" font-variant="normal" font-weight="400" font-stretch="normal" font-size="73" text-anchor="start" direction="ltr" writing-mode="lr-tb" unicode-bidi="normal" text-decoration="none" transform="matrix(1 0 0 1 3410.12 1108)">to the identity of the user </text>
+            <text fill="#000000" fill-opacity="1" font-family="Segoe UI,Segoe UI_MSFontService,sans-serif" font-style="normal" font-variant="normal" font-weight="400" font-stretch="normal" font-size="73" text-anchor="start" direction="ltr" writing-mode="lr-tb" unicode-bidi="normal" text-decoration="none" transform="matrix(1 0 0 1 3410.12 1196)">who configured the </text>
+            <text fill="#000000" fill-opacity="1" font-family="Segoe UI,Segoe UI_MSFontService,sans-serif" font-style="normal" font-variant="normal" font-weight="400" font-stretch="normal" font-size="73" text-anchor="start" direction="ltr" writing-mode="lr-tb" unicode-bidi="normal" text-decoration="none" transform="matrix(1 0 0 1 3410.12 1284)">connection)</text>
+            <text fill="#F4364C" fill-opacity="1" font-family="Segoe UI Symbol,Segoe UI Symbol_MSFontService,sans-serif" font-style="normal" font-variant="normal" font-weight="400" font-stretch="normal" font-size="73" text-anchor="start" direction="ltr" writing-mode="lr-tb" unicode-bidi="normal" text-decoration="none" transform="matrix(1 0 0 1 3306.99 1457)">‣</text>
+            <text fill="#F4364C" fill-opacity="1" font-family="Apple Color Emoji,Apple Color Emoji_MSFontService,sans-serif" font-style="normal" font-variant="normal" font-weight="400" font-stretch="normal" font-size="73" text-anchor="start" direction="ltr" writing-mode="lr-tb" unicode-bidi="normal" text-decoration="none" transform="matrix(1 0 0 1 3410.12 1457)">❗️</text>
+            <text fill="#F4364C" fill-opacity="1" font-family="Segoe UI,Segoe UI_MSFontService,sans-serif" font-style="normal" font-variant="normal" font-weight="400" font-stretch="normal" font-size="73" text-anchor="start" direction="ltr" writing-mode="lr-tb" unicode-bidi="normal" text-decoration="none" transform="matrix(1 0 0 1 3483.45 1457)">Unity Catalog </text>
+            <text fill="#F4364C" fill-opacity="1" font-family="Segoe UI,Segoe UI_MSFontService,sans-serif" font-style="normal" font-variant="normal" font-weight="400" font-stretch="normal" font-size="73" text-anchor="start" direction="ltr" writing-mode="lr-tb" unicode-bidi="normal" text-decoration="none" transform="matrix(1 0 0 1 3410.12 1548)">governance policies don't </text>
+            <text fill="#F4364C" fill-opacity="1" font-family="Segoe UI,Segoe UI_MSFontService,sans-serif" font-style="normal" font-variant="normal" font-weight="400" font-stretch="normal" font-size="73" text-anchor="start" direction="ltr" writing-mode="lr-tb" unicode-bidi="normal" text-decoration="none" transform="matrix(1 0 0 1 3410.12 1636)">apply to downstream Fabric </text>
+            <text fill="#F4364C" fill-opacity="1" font-family="Segoe UI,Segoe UI_MSFontService,sans-serif" font-style="normal" font-variant="normal" font-weight="400" font-stretch="normal" font-size="73" text-anchor="start" direction="ltr" writing-mode="lr-tb" unicode-bidi="normal" text-decoration="none" transform="matrix(1 0 0 1 3410.12 1724)">users</text>
+            <text fill="#F4364C" fill-opacity="1" font-family="Segoe UI Symbol,Segoe UI Symbol_MSFontService,sans-serif" font-style="normal" font-variant="normal" font-weight="400" font-stretch="normal" font-size="73" text-anchor="start" direction="ltr" writing-mode="lr-tb" unicode-bidi="normal" text-decoration="none" transform="matrix(1 0 0 1 3306.99 1900)">‣</text>
+            <text fill="#F4364C" fill-opacity="1" font-family="Segoe UI,Segoe UI_MSFontService,sans-serif" font-style="normal" font-variant="normal" font-weight="400" font-stretch="normal" font-size="73" text-anchor="start" direction="ltr" writing-mode="lr-tb" unicode-bidi="normal" text-decoration="none" transform="matrix(1 0 0 1 3410.12 1900)">No support for views, </text>
+            <text fill="#F4364C" fill-opacity="1" font-family="Segoe UI,Segoe UI_MSFontService,sans-serif" font-style="normal" font-variant="normal" font-weight="400" font-stretch="normal" font-size="73" text-anchor="start" direction="ltr" writing-mode="lr-tb" unicode-bidi="normal" text-decoration="none" transform="matrix(1 0 0 1 3410.12 1988)">materialized views, </text>
+            <text fill="#F4364C" fill-opacity="1" font-family="Segoe UI,Segoe UI_MSFontService,sans-serif" font-style="normal" font-variant="normal" font-weight="400" font-stretch="normal" font-size="73" text-anchor="start" direction="ltr" writing-mode="lr-tb" unicode-bidi="normal" text-decoration="none" transform="matrix(1 0 0 1 3410.12 2076)">streaming tables</text>
+            <text fill="#F4364C" fill-opacity="1" font-family="Segoe UI,Segoe UI_MSFontService,sans-serif" font-style="normal" font-variant="normal" font-weight="400" font-stretch="normal" font-size="64" text-anchor="start" direction="ltr" writing-mode="lr-tb" unicode-bidi="normal" text-decoration="none" transform="matrix(1 0 0 1 212.299 518)">abfss</text>
+            <text fill="#F4364C" fill-opacity="1" font-family="Segoe UI,Segoe UI_MSFontService,sans-serif" font-style="normal" font-variant="normal" font-weight="400" font-stretch="normal" font-size="64" text-anchor="start" direction="ltr" writing-mode="lr-tb" unicode-bidi="normal" text-decoration="none" transform="matrix(1 0 0 1 357.499 518)">://</text>
+            <text fill="#F4364C" fill-opacity="1" font-family="Segoe UI,Segoe UI_MSFontService,sans-serif" font-style="normal" font-variant="normal" font-weight="400" font-stretch="normal" font-size="64" text-anchor="start" direction="ltr" writing-mode="lr-tb" unicode-bidi="normal" text-decoration="none" transform="matrix(1 0 0 1 421.666 518)">myWorkspace@onelake.dfs.fabric.microsoft.com</text>
+            <text fill="#F4364C" fill-opacity="1" font-family="Segoe UI,Segoe UI_MSFontService,sans-serif" font-style="normal" font-variant="normal" font-weight="400" font-stretch="normal" font-size="64" text-anchor="start" direction="ltr" writing-mode="lr-tb" unicode-bidi="normal" text-decoration="none" transform="matrix(1 0 0 1 212.299 595)">/</text>
+            <text fill="#F4364C" fill-opacity="1" font-family="Segoe UI,Segoe UI_MSFontService,sans-serif" font-style="normal" font-variant="normal" font-weight="400" font-stretch="normal" font-size="64" text-anchor="start" direction="ltr" writing-mode="lr-tb" unicode-bidi="normal" text-decoration="none" transform="matrix(1 0 0 1 237.508 595)">myLakehouse.lakehouse</text>
+            <text fill="#F4364C" fill-opacity="1" font-family="Segoe UI,Segoe UI_MSFontService,sans-serif" font-style="normal" font-variant="normal" font-weight="400" font-stretch="normal" font-size="64" text-anchor="start" direction="ltr" writing-mode="lr-tb" unicode-bidi="normal" text-decoration="none" transform="matrix(1 0 0 1 920.149 595)">/Files/</text>
+            <text fill="#000000" fill-opacity="1" font-family="Segoe UI,Segoe UI_MSFontService,sans-serif" font-style="normal" font-variant="normal" font-weight="700" font-stretch="normal" font-size="73" text-anchor="start" direction="ltr" writing-mode="lr-tb" unicode-bidi="normal" text-decoration="none" transform="matrix(1 0 0 1 173.746 817)">Authentication: </text>
+            <text fill="#000000" fill-opacity="1" font-family="Segoe UI Symbol,Segoe UI Symbol_MSFontService,sans-serif" font-style="normal" font-variant="normal" font-weight="400" font-stretch="normal" font-size="73" text-anchor="start" direction="ltr" writing-mode="lr-tb" unicode-bidi="normal" text-decoration="none" transform="matrix(1 0 0 1 173.746 993)">‣</text>
+            <text fill="#000000" fill-opacity="1" font-family="Segoe UI,Segoe UI_MSFontService,sans-serif" font-style="normal" font-variant="normal" font-weight="400" font-stretch="normal" font-size="73" text-anchor="start" direction="ltr" writing-mode="lr-tb" unicode-bidi="normal" text-decoration="none" transform="matrix(1 0 0 1 276.871 993)">Microsoft Entra </text>
+            <text fill="#000000" fill-opacity="1" font-family="Segoe UI,Segoe UI_MSFontService,sans-serif" font-style="normal" font-variant="normal" font-weight="400" font-stretch="normal" font-size="73" text-anchor="start" direction="ltr" writing-mode="lr-tb" unicode-bidi="normal" text-decoration="none" transform="matrix(1 0 0 1 276.871 1081)">credential passthrough</text>
+            <text fill="#000000" fill-opacity="1" font-family="Segoe UI,Segoe UI_MSFontService,sans-serif" font-style="normal" font-variant="normal" font-weight="400" font-stretch="normal" font-size="73" text-anchor="start" direction="ltr" writing-mode="lr-tb" unicode-bidi="normal" text-decoration="none" transform="matrix(1 0 0 1 276.871 1169)">(requires premium)</text>
+            <text fill="#000000" fill-opacity="1" font-family="Segoe UI,Segoe UI_MSFontService,sans-serif" font-style="normal" font-variant="normal" font-weight="400" font-stretch="normal" font-size="73" text-anchor="start" direction="ltr" writing-mode="lr-tb" unicode-bidi="normal" text-decoration="none" transform="matrix(1 0 0 1 276.871 1257)">(serverless not </text>
+            <text fill="#000000" fill-opacity="1" font-family="Segoe UI,Segoe UI_MSFontService,sans-serif" font-style="normal" font-variant="normal" font-weight="400" font-stretch="normal" font-size="73" text-anchor="start" direction="ltr" writing-mode="lr-tb" unicode-bidi="normal" text-decoration="none" transform="matrix(1 0 0 1 276.871 1345)">supported)</text>
+            <text fill="#000000" fill-opacity="1" font-family="Segoe UI Symbol,Segoe UI Symbol_MSFontService,sans-serif" font-style="normal" font-variant="normal" font-weight="400" font-stretch="normal" font-size="73" text-anchor="start" direction="ltr" writing-mode="lr-tb" unicode-bidi="normal" text-decoration="none" transform="matrix(1 0 0 1 173.746 1521)">‣</text>
+            <text fill="#000000" fill-opacity="1" font-family="Segoe UI,Segoe UI_MSFontService,sans-serif" font-style="normal" font-variant="normal" font-weight="400" font-stretch="normal" font-size="73" text-anchor="start" direction="ltr" writing-mode="lr-tb" unicode-bidi="normal" text-decoration="none" transform="matrix(1 0 0 1 276.871 1521)">Service Principal</text>
+            <text fill="#000000" fill-opacity="1" font-family="Segoe UI,Segoe UI_MSFontService,sans-serif" font-style="normal" font-variant="normal" font-weight="400" font-stretch="normal" font-size="73" text-anchor="start" direction="ltr" writing-mode="lr-tb" unicode-bidi="normal" text-decoration="none" transform="matrix(1 0 0 1 276.871 1609)">(fixed credential)</text>
+            <path d="M128 505.763C128 466.129 160.129 434 199.762 434L1947.24 434C1986.87 434 2019 466.129 2019 505.763L2019 2188.24C2019 2227.87 1986.87 2260 1947.24 2260L199.762 2260C160.129 2260 128 2227.87 128 2188.24Z" stroke="#0078D4" stroke-width="5.72917" stroke-linecap="butt" stroke-linejoin="round" stroke-miterlimit="10" stroke-opacity="1" fill="none" fill-rule="evenodd"/>
+            <path d="M2455 473.761C2455 434.128 2487.13 402 2526.76 402L4275.24 402C4314.87 402 4347 434.128 4347 473.761L4347 2156.24C4347 2195.87 4314.87 2228 4275.24 2228L2526.76 2228C2487.13 2228 2455 2195.87 2455 2156.24Z" stroke="#0078D4" stroke-width="5.72917" stroke-linecap="butt" stroke-linejoin="round" stroke-miterlimit="10" stroke-opacity="1" fill="none" fill-rule="evenodd"/>
+            <rect x="1861" y="765" width="698" height="89.0001" fill="#FFFFFF" fill-opacity="1"/>
+            <text fill="#F4364C" fill-opacity="1" font-family="Segoe UI,Segoe UI_MSFontService,sans-serif" font-style="normal" font-variant="normal" font-weight="400" font-stretch="normal" font-size="73" text-anchor="start" direction="ltr" writing-mode="lr-tb" unicode-bidi="normal" text-decoration="none" transform="matrix(1 0 0 1 1861.38 836)">Can write to OneLake</text>
+            <rect x="1707" y="1753" width="906" height="88" fill="#FFFFFF" fill-opacity="1"/>
+            <text fill="#07641D" fill-opacity="1" font-family="Segoe UI,Segoe UI_MSFontService,sans-serif" font-style="normal" font-variant="normal" font-weight="400" font-stretch="normal" font-size="73" text-anchor="start" direction="ltr" writing-mode="lr-tb" unicode-bidi="normal" text-decoration="none" transform="matrix(1 0 0 1 1706.5 1824)">Can read from unity catalog</text>
+        </g>
+    </g>
+</svg>

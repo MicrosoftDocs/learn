@@ -13,7 +13,7 @@ Use the process layer for every system, especially if it handles sensitive data.
 
 ## Deep diving into a system part
 
-In some cases, system parts may require more granular context because of their increased sensitivity and risk. You can best assess threats and risk-reduction strategies by going down to this layer. Follow the same rule from the system layer.
+In some cases, system parts might require more granular context because of their increased sensitivity and risk. You can best assess threats and risk-reduction strategies by going down to this layer. Follow the same rule from the system layer.
 
 |Step|Guidance|
 |----|--------|
@@ -24,4 +24,4 @@ In some cases, system parts may require more granular context because of their i
 The result is a series of data-flow diagrams in the **subprocess layer**, known as layer 2.
 
 > [!TIP]
-> The path-like file naming structure helps you differentiate between the different levels.
+> The path-like file-naming structure helps you differentiate between the different levels.

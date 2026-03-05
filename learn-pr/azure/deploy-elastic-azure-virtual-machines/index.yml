@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.azure.deploy-elastic-azure-virtual-machines
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   moduleType: standard
   title: Deploy Elastic on Azure virtual machines
   description: "Deploy Elastic on Azure virtual machines (VMs) to get the benefits of Elasticsearch for your Linux workloads by following the instructions provided here."
@@ -40,4 +38,4 @@ units:
 - learn.azure.deploy-elastic-azure-virtual-machines.summary
 badge:
   uid: learn.azure.deploy-elastic-azure-virtual-machines.badge
-
+

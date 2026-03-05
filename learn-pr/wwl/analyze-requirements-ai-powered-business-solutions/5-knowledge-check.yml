@@ -1,0 +1,72 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.analyze-requirements-ai-powered-business-solutions.knowledge-check
+title: "Module assessment"
+metadata:
+  title: "Knowledge check"
+  description: "Knowledge check"
+  ms.date: 02/04/2026
+  author: Randall-Knapp
+  ms.author: taeldin
+  ms.topic: unit
+  ai-usage: ai-assisted
+  module_assessment: false
+durationInMinutes: 3
+content: "Choose the best response for each of the questions."
+quiz:
+  questions:
+  - content: "Which of the following answers is a primary way AI agents enhance productivity in business workflows?"
+    choices:
+    - content: "Replacing all manual processes with fully autonomous systems"
+      isCorrect: false
+      explanation: "Incorrect. While AI can automate certain tasks, it doesn't replace all manual processes with fully autonomous systems."
+    - content: "Drafting content and summarizing information using generative AI"
+      isCorrect: true
+      explanation: "Correct. Generative AI accelerates productivity by drafting content, summarizing information, and enabling natural language interaction with data and systems. This allows employees to work faster and more efficiently, directly enhancing productivity in business workflows."
+    - content: "Eliminating the need for employee training"
+      isCorrect: false
+      explanation: "Incorrect. AI doesn't eliminate the need for employee training; rather, it complements employee efforts."
+    - content: "Removing the requirement for business context in automation"
+      isCorrect: false
+      explanation: "Incorrect. Business context is essential for effective automation and AI implementation."
+  - content: "Which grounding data dimension ensures AI agents retrieve information that matches the intended business scenario?"
+    choices:
+    - content: "Cleanliness"
+      isCorrect: false
+      explanation: "Incorrect. Cleanliness refers to the accuracy and quality of data, not its alignment with the business scenario."
+    - content: "Availability"
+      isCorrect: false
+      explanation: "Incorrect. Availability ensures data is accessible but doesn't guarantee it matches the intended business scenario."
+    - content: "Relevance"
+      isCorrect: true
+      explanation: "Correct. Relevance ensures that grounding data matches the intended use case of the agent. This dimension is critical for surfacing information that is contextually appropriate for the user's scenario, workflow, or business domain."
+    - content: "Timeliness"
+      isCorrect: false
+      explanation: "Incorrect. Timeliness ensures data is up-to-date but doesn't address its alignment with the business scenario."
+  - content: "What is the role of semantic indexing in Microsoft Copilot solutions?"
+    choices:
+    - content: "Customizing user interfaces"
+      isCorrect: false
+      explanation: "Incorrect. Semantic indexing isn't related to customizing user interfaces."
+    - content: "Mapping enterprise content for precise data retrieval"
+      isCorrect: true
+      explanation: "Correct. Semantic indexing is used to map enterprise content across Microsoft Graph into rich lexical and semantic representations. This enables AI agents to retrieve contextually precise and permissioned information, supporting trustworthy outputs."
+    - content: "Managing email distribution lists"
+      isCorrect: false
+      explanation: "Incorrect. Semantic indexing doesn't involve managing email distribution lists."
+    - content: "Automating financial transactions"
+      isCorrect: false
+      explanation: "Incorrect. Semantic indexing isn't related to automating financial transactions."
+  - content: "Why is it important to centralize and structure business solution data before deploying AI agents?"
+    choices:
+    - content: "To reduce the number of employees needed"
+      isCorrect: false
+      explanation: "Incorrect. Centralizing and structuring data isn't aimed at reducing the workforce."
+    - content: "To ensure AI systems can access high-quality, reliable data"
+      isCorrect: true
+      explanation: "Correct. AI systems require high-quality, structured, and accessible data. Centralizing and structuring data ensures it's reliable and ready for AI processing."
+    - content: "To allow data to remain in scattered silos"
+      isCorrect: false
+      explanation: "Incorrect. Scattered silos hinder AI systems from accessing and processing data effectively."
+    - content: "To eliminate the need for data governance"
+      isCorrect: false
+      explanation: "Incorrect. Data governance remains essential even when data is centralized and structured."

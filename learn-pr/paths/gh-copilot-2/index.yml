@@ -41,10 +41,10 @@ subjects:
 - devops
 
 modules:
-- learn.github.developer-use-cases-for-ai-with-github-copilot
-- learn.wwl.develop-unit-tests-using-github-copilot-tools
-- learn.github.introduction-to-github-copilot-for-business
-- learn.github.intro-github-copilot-enterprise
+- learn.github.github-copilot-agent-mode
+- learn.github.github-copilot-code-agent
+- learn.github.mcp-server
+- learn.github.code-reviews-pull-requests-github-copilot
 - learn.github-copilot-with-javascript
 - learn.github-copilot-with-python
 trophy:

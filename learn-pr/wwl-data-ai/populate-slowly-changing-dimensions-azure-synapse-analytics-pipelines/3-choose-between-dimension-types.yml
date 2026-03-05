@@ -2,8 +2,6 @@
 uid: learn.wwl.populate-slowly-changing-dimensions-azure-synapse-analytics-pipelines.choose-between-dimension-types
 title: Choose between slowly changing dimension types
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Choose between slowly changing dimension types
   description: "Choose between slowly changing dimension types"
   ms.date: 05/12/2022
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 6
 content: |
-  [!include[](includes/3-choose-between-dimension-types.md)]
+  [!include[](includes/3-choose-between-dimension-types.md)]

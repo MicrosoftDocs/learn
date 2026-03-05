@@ -4,9 +4,9 @@ metadata:
   moduleType: standard
   title: Write your first query with Kusto Query Language
   description: Learn how to write simple queries in Kusto Query Language (KQL) by using the operators take, project, count, where, and sort.
-  ms.date: 10/05/2023
-  author: shsagir
-  ms.author: shsagir
+  ms.date: 02/09/2026
+  author: Naorbt00
+  ms.author: naorbiton 
   ms.topic: module
   ms.service: kusto
 title: Write your first query with Kusto Query Language

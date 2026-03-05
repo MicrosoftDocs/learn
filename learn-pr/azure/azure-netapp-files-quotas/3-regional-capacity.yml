@@ -2,8 +2,6 @@
 uid: learn.azure.azure-netapp-files-quotas.regional-capacity
 title: Regional capacity quota for Azure NetApp Files
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: learning-module
   title: Regional capacity quota for Azure NetApp Files
   description: Understand how regional capacity is calculated and can be adjusted in Azure NetApp Files.    
@@ -13,4 +11,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 3
 content: |
-  [!include[](includes/3-regional-capacity.md)]
+  [!include[](includes/3-regional-capacity.md)]

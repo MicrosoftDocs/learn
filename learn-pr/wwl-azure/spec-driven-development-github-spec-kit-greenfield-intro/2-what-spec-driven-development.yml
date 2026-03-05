@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.spec-driven-development-github-spec-kit-greenfield-intro.what-spec-driven-development
+title: "What is spec-driven development?"
+metadata:
+  title: "What is Spec-Driven Development?"
+  description: "What is spec-driven development?"
+  ms.date: 01/26/2026
+  author: chrishowd
+  ms.author: cahowd
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/2-what-spec-driven-development.md)]

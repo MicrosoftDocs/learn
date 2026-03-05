@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.describe-concepts-of-relational-data.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
   ms.date: 03/18/2024
   author: wwlpublish
@@ -12,6 +10,7 @@ metadata:
   ms.topic: unit
   ms.custom:
   - N/A
+  module_assessment: true
 durationInMinutes: 1
 content: |
   [!include[](includes/5-knowledge-check.md)]
@@ -50,4 +49,4 @@ quiz:
       explanation: "That's correct. PaaS solutions enable you to scale up and out without having to procure your own hardware."
     - content: "Increased functionality"
       isCorrect: false
-      explanation: "That's incorrect. Many database management systems running as PaaS solutions have reduced functionality compared to running the same database management systems on-premises."
+      explanation: "That's incorrect. Many database management systems running as PaaS solutions have reduced functionality compared to running the same database management systems on-premises."

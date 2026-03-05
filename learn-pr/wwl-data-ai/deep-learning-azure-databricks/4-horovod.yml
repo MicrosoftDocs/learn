@@ -2,13 +2,11 @@
 uid: learn.wwl.deep-learning-azure-databricks.horovod
 title: Distribute PyTorch training with TorchDistributor
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Distribute PyTorch training with TorchDistributor
   description: Distribute PyTorch training with TorchDistributor
-  author: wwlpublish
-  ms.author: madiepev
-  ms.date: 08/26/2024
+  author: JulianePadrao
+  ms.author: jupadrao
+  ms.date: 4/24/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot

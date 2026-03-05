@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.tune-hyperparameters-azure-databricks
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Tune hyperparameters with Azure Databricks
   description: "Tune hyperparameters with Azure Databricks"
   ms.date: 03/27/2023
@@ -37,4 +35,4 @@ units:
 - learn.wwl.tune-hyperparameters-azure-databricks.knowledge-check
 - learn.wwl.tune-hyperparameters-azure-databricks.summary
 badge:
-  uid: learn.wwl.tune-hyperparameters-azure-databricks.badge
+  uid: learn.wwl.tune-hyperparameters-azure-databricks.badge

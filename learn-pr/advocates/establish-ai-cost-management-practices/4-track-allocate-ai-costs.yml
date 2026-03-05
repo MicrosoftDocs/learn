@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.establish-ai-cost-management-practices.track-allocate-ai-costs
+title: Tracking and allocating AI costs
+metadata:
+  title: Tracking and Allocating AI Costs
+  description: Tracking and allocating AI costs against budgets and thresholds.
+  ms.date: 10/03/2025
+  author: Orin-Thomas
+  ms.author: socuff
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-track-allocate-ai-costs.md)]

@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.operationalize-your-azure-data-factory-pipelines
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Operationalize your Azure Data Factory or Azure Synapse Pipeline
   description: "Operationalize your Azure Data Factory or Azure Synapse Pipeline"
   ms.date: 05/16/2024
@@ -48,4 +46,4 @@ units:
 - learn.wwl.operationalize-your-azure-data-factory-pipelines.summary
 badge:
   uid: learn.wwl.operationalize-your-azure-data-factory-pipelines.badge
-
+

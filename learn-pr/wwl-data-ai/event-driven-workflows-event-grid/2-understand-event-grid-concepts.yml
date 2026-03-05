@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.event-driven-workflows-event-grid.understand-event-grid-concepts
+title: Understand Azure Event Grid concepts and event-driven patterns for AI solutions
+metadata:
+  title: Understand Azure Event Grid Concepts and Event-Driven Patterns for AI Solutions
+  description: Learn about Azure Event Grid core components and how event-driven architecture benefits AI backends.
+  ms.date: 02/13/2026
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: unit
+durationInMinutes: 9
+content: |
+  [!include[](includes/2-understand-event-grid-concepts.md)]

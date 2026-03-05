@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-started-delegates.examine-variance-delegates
+title: Examine variance in delegates
+metadata:
+  title: Examine variance in delegates
+  description: "Examine variance in delegates."
+  ms.date: 04/22/2025
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/05-examine-variance-delegates.md)]

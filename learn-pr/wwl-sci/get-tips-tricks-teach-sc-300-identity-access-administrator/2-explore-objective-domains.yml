@@ -2,8 +2,6 @@
 uid: learn.wwl.get-tips-tricks-teach-sc-300-identity-access-administrator.explore-objective-domains
 title: Explore objective domains
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Explore objective domains
   description: "Explore objective domains"
   ms.date: 11/17/2023
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 4
 content: |
-  [!include[](includes/2-explore-objective-domains.md)]
+  [!include[](includes/2-explore-objective-domains.md)]

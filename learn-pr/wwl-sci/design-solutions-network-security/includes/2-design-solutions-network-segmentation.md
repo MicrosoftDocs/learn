@@ -1,56 +1,102 @@
-## Azure features for segmentation
+Network segmentation divides your network into smaller, isolated segments so you can control traffic flow, limit blast radius, and prevent unauthorized lateral movement. As a security architect, you design segmentation strategies that align with your organization's risk profile, compliance requirements, and the Zero Trust principle of assume breach. This unit builds on the evaluation criteria from MCSB v2 control NS-1 (Establish network segmentation boundaries) and focuses on how to design effective segmentation using Azure services.
 
-When you operate on Azure, you have many segmentation options.
+## Design an enterprise segmentation strategy
 
-![Diagram showing different segmentation options on Microsoft Azure.](../media/resource-flowchart.png)
+Before selecting Azure services, define your segmentation strategy around business context. The Azure Well-Architected Framework describes a segment as a logical section of your solution that you secure as one unit. Your strategy should answer three questions:
 
-1. [Subscription](/azure/cost-management-billing/manage/create-subscription): A high-level construct, which provides platform powered separation between entities. It's intended to carve out boundaries between large organizations within a company and communication between resources in different subscriptions needs to be explicitly provisioned.
-1. [Virtual Network (VNets)](/azure/virtual-network/virtual-networks-overview): Created within a subscription in private address spaces. They provide network level containment of resources with no traffic allowed by default between any two virtual networks. Like subscriptions, any communication between virtual networks needs to be explicitly provisioned.
-1. [Network Security Groups (NSG)](/azure/virtual-network/security-overview): An access control mechanisms for controlling traffic between resources within a virtual network and also with external networks, such as the internet, other virtual networks. NSGs can take your segmentation strategy to a granular level by creating perimeters for a subnet, a VM, or a group of VMs. For information about possible operations with subnets in Azure, see [Subnets (Azure Virtual Networks)](/rest/api/virtualnetwork/subnets).
-1. [Application Security Groups (ASGs)](/azure/virtual-network/application-security-groups): Similar to NSGs but are referenced with an application context. It allows you to group a set of VMs under an application tag and define traffic rules that are then applied to each of the underlying VMs.
-1. [Azure Firewall](/azure/firewall/): A cloud native stateful Firewall as a service, which can be deployed in your VNet or in [Azure Virtual WAN](/azure/virtual-wan/virtual-wan-about) hub deployments for filtering traffic flowing between cloud resources, the internet, and on-premises. You create rules or policies (using Azure Firewall or [Azure Firewall Manager](/azure/firewall-manager/overview)) specifying allow/deny traffic using layer 3 to layer 7 controls. You can also filter traffic going to the internet using both Azure Firewall and third parties by directing some or all traffic through third-party security providers for advanced filtering & user protection.
+- **What trust boundaries exist?** Identify where workloads with different risk levels, compliance requirements, or organizational ownership need isolation from each other.
+- **How do you contain a breach?** Design segments so that if an attacker compromises one area, they can't move laterally to other areas. Containment limits the blast radius.
+- **Where do you enforce traffic controls?** Define perimeter points where you inspect and filter traffic entering or leaving each segment.
 
-## Segmentation patterns
+Common segmentation boundaries include separating production from nonproduction environments, isolating internet-facing workloads from internal systems, and separating workloads that process regulated data (such as payment card or health data) from general workloads.
 
-Here are some common patterns for segmenting a workload in Azure from a networking perspective. Each pattern provides a different type of isolation and connectivity. Choose a pattern based on your organization's needs.
+## Design segmentation layers in Azure
 
-## Pattern 1: Single VNet
+Azure provides multiple constructs that create layers of isolation. Design your segmentation by combining these layers based on the level of separation each workload requires.
 
-All the components of the workload reside in a single VNet. This pattern is appropriate you are operating in a single region because a VNet cannot span multiple regions.
+### Subscriptions and management groups
 
-Common ways for securing segments, such as subnets or application groups, are by using NSGs and ASGs. You can also use a Network Virtualized Appliance (NVAs) from Azure Marketplace or Azure Firewall to enforce and secure this segmentation.
+Subscriptions provide the broadest isolation boundary. Resources in different subscriptions have no default connectivity and require explicit configuration to communicate. Use subscriptions to separate major organizational units, environments (production, development, testing), or regulatory boundaries. Management groups allow you to apply Azure Policy and role-based access control (RBAC) consistently across multiple subscriptions.
 
-In this image, Subnet1 has the database workload. Subnet2 has the web workloads. You can configure NSGs that allow Subnet1 to only communicate with Subnet2 and Subnet2 can only communicate with the internet.
+### Virtual networks and subnets
+
+[Azure Virtual Networks](/azure/virtual-network/virtual-networks-overview) provide network-level containment within a subscription. No traffic flows between virtual networks by default—you must explicitly enable communication through peering, VPN, or routing. This default isolation is a security advantage.
+
+Within each virtual network, subnets create internal boundaries. Use [network security groups (NSGs)](/azure/virtual-network/network-security-groups-overview) on subnets to filter traffic by port, protocol, and source or destination IP address. Design NSG rules following deny-by-default principles—allow only the traffic each workload requires and deny everything else.
+
+[Application security groups (ASGs)](/azure/virtual-network/application-security-groups) simplify NSG rules by grouping virtual machines by application role. Instead of managing rules based on individual IP addresses, you reference ASGs in your NSG rules. This approach reduces rule complexity and the risk of misconfiguration as your environment scales.
+
+### Azure Network Security Perimeter for PaaS isolation
+
+For PaaS services, [Azure Network Security Perimeter](/azure/private-link/network-security-perimeter-concepts) creates a logical boundary around multiple PaaS resources. Resources within the perimeter communicate freely with each other, while traffic from outside the perimeter is denied by default. This approach complements private endpoints by adding perimeter-level data exfiltration controls without requiring individual access rules for each service. Supported services include Azure Storage, Azure SQL Database, Azure Key Vault, Azure Event Hubs, and Azure Cosmos DB.
+
+## Design network topology patterns
+
+Your topology determines how segments connect and how traffic flows between them. Choose a pattern based on the number of workloads, regions, and the level of centralized control you need.
+
+### Single virtual network with subnet segmentation
+
+All workload components reside in one virtual network, with subnets defining segment boundaries. NSGs and ASGs control traffic between subnets. This pattern suits single-region deployments with a small number of workloads.
 
 ![Diagram showing a segmentation pattern with a single virtual network.](../media/single-azure-region.png)
 
-Consider a use case where you have multiple workloads that are placed in separate subnets. You can place controls that will allow one workload to communicate to the backend of another workload.
+This design is straightforward but provides limited centralized control. If an NSG rule is misconfigured, a public endpoint could be accidentally exposed.
 
-## Pattern 2: Multiple VNets that communicate through with peering
+### Multiple virtual networks with peering
 
-The resources are spread or replicated in multiple VNets. The VNets can communicate through peering. This pattern is appropriate when you need to group applications into separate VNets. Or, you need multiple Azure regions. One benefit is the built-in segmentation because you have to explicitly peer one VNet to another. Virtual network peering is not transitive. You can further segment within a VNet by using NSGs and ASGs as shown in pattern 1.
+Workloads are deployed across separate virtual networks that connect through [virtual network peering](/azure/virtual-network/virtual-network-peering-overview). Because peering isn't transitive, each virtual network pair requires explicit configuration. This pattern provides stronger isolation between workloads and supports multiregion deployments.
 
 ![Diagram showing a segmentation pattern with multiple virtual networks.](../media/multiple-virtual-networks.png)
 
-## Pattern 3: Multiple VNets in a hub and spoke model
+Use this pattern when workloads have different owners or compliance requirements that warrant virtual network-level separation. You can still apply NSGs within each virtual network for granular subnet-level filtering.
 
-A VNet is designated as a _hub_ in a given region for all the other VNets as _spokes_ in that region. The hub and its spokes are connected through peering. All traffic passes through the hub that can act as a gateway to other hubs in different regions. In this pattern, the security controls are set up at the hubs so that they get to segment and govern the traffic in between other VNets in a scalable way. One benefit of this pattern is, as your network topology grows, the security posture overhead does not grow (except when you expand to new regions).
+### Hub-and-spoke topology
+
+A central hub virtual network hosts shared security services, and spoke virtual networks contain workloads. Spokes connect to the hub through peering, and all inter-spoke and internet-bound traffic routes through the hub. This pattern provides the strongest centralized control and scales well as you add workloads.
 
 ![Diagram showing a segmentation pattern with a hub and spoke topology.](../media/hub-and-spoke.png)
 
-The recommended native option is Azure Firewall. This option works across both VNets and subscriptions to govern traffic flows using layer 3 to layer 7 controls. You can define your communication rules and apply them consistently. Here are some examples:
+Deploy [Azure Firewall](/azure/firewall/overview) in the hub to enforce centralized network and application rules across all spokes. Define [user-defined routes (UDRs)](/azure/virtual-network/virtual-networks-udr-overview) on spoke subnets to direct traffic through the firewall. Key design benefits include:
 
--   VNet 1 cannot communicate with VNet 2, but it can communicate VNet 3.
--   VNet 1 cannot access public internet except for *.github.com.
+- **Deny by default between spokes.** Inter-spoke traffic is blocked unless explicitly allowed through firewall rules.
+- **Centralized logging.** Azure Firewall logs all accepted and denied traffic to Azure Monitor, providing a single view of traffic across the network.
+- **Asymmetric routing protection.** Even if someone accidentally creates a public endpoint in a spoke, the return packet is dropped by the stateful firewall, preventing unintended access.
 
-With Azure Firewall Manager preview, you can centrally manage policies across multiple Azure Firewalls and enable DevOps teams to further customize local policies.
+For organizations that need global transit connectivity and integrated security across multiple regions, [Azure Virtual WAN](/azure/virtual-wan/virtual-wan-about) provides a managed hub-and-spoke architecture with built-in routing, VPN, ExpressRoute, and Azure Firewall integration.
 
-## Pattern comparison
+## Enforce segmentation at scale with Azure Virtual Network Manager
 
-|Considerations | Pattern 1 | Pattern 2 | Pattern 3
-|--|--|--|--|
-|**Connectivity/routing: how each segment communicates to each other** | System routing provides default connectivity to any workload in any subnet. | Same as a pattern 1. | No default connectivity between spoke networks. A layer 3 router, such as the Azure Firewall, in the hub is required to enable connectivity. |
-|**Network level traffic filtering**| Traffic is allowed by default. Use NSG, ASG to filter traffic. | Same as a pattern 1. | Traffic between spoke virtual networks is denied by default. Open selected paths to allow traffic through Azure Firewall configuration. |
-|**Centralized logging**| NSG, ASG logs for the virtual network. | Aggregate NSG, ASG logs across all virtual networks. | Azure Firewall logs all accepted/denied traffic sent through the hub. View the logs in Azure Monitor. |
-|**Unintended open public endpoints**| DevOps can accidentally open a public endpoint through incorrect NSG, ASG rules. | Same as a pattern 1. |Accidentally opened public endpoint in a spoke will not enable access because the return packet will get dropped through stateful firewall (asymmetric routing). |
-**Application level protection** | NSG or ASG provides network layer support only.  | Same as a pattern 1. | Azure Firewall supports FQDN filtering for HTTP/S and MSSQL for outbound traffic and across virtual networks. |
+As your network grows, manually managing NSG rules and peering across dozens of virtual networks becomes error-prone. [Azure Virtual Network Manager](/azure/virtual-network-manager/overview) centralizes network management and enables you to enforce segmentation policies at scale.
+
+### Security Admin Rules
+
+Security Admin Rules are a key capability of Azure Virtual Network Manager for segmentation design. These rules are evaluated **before** NSG rules, so they act as organizational guardrails that individual teams can't override. Design your Security Admin Rules to:
+
+- **Block high-risk ports globally.** Deny inbound traffic on ports like RDP (3389), SSH (22), and SMB (445) from the internet across all managed virtual networks. Teams that need exceptions can use Azure Bastion or just-in-time VM access.
+- **Enforce network segmentation.** Block traffic between virtual networks or subnets that shouldn't communicate, regardless of individual NSG configurations.
+- **Allow platform services.** Use *Always Allow* rules to ensure traffic from hub infrastructure services (such as Azure Firewall or Azure Bastion) can always reach spoke virtual networks, preventing NSG misconfigurations from breaking critical services.
+
+Security Admin Rules support three actions: *Allow* (evaluated first, then NSG rules apply), *Deny* (traffic is dropped, NSG rules don't apply), and *Always Allow* (traffic is permitted, NSG rules are bypassed). This hierarchy lets your central security team set guardrails while application teams manage workload-specific NSG rules within those boundaries.
+
+### Network groups and connectivity configurations
+
+Group virtual networks into [network groups](/azure/virtual-network-manager/concept-network-groups) based on environment, region, or workload type. Use dynamic membership with Azure Policy to automatically add new virtual networks to the appropriate group. Then apply connectivity configurations to define whether virtual networks in a group use mesh or hub-and-spoke connectivity, and deploy security admin configurations to enforce segmentation rules across the group.
+
+## Control east-west traffic with Azure Firewall
+
+Segmentation boundaries are only effective when you inspect and filter the traffic crossing them. Deploy Azure Firewall as the central east-west and north-south inspection point in your hub virtual network. Design your firewall rules using the principle of least privilege:
+
+- **Network rules** filter by IP address, port, and protocol for layer 3 and layer 4 traffic between segments.
+- **Application rules** filter by fully qualified domain name (FQDN) for HTTP/HTTPS and Azure SQL traffic, controlling which external destinations workloads can reach.
+- **Threat intelligence** blocks traffic to and from known malicious IP addresses and domains.
+
+Use [Azure Firewall Manager](/azure/firewall-manager/overview) to manage policies across multiple firewalls and regions through a parent-child policy hierarchy—a base policy sets organization-wide rules, and child policies add environment-specific overrides.
+
+## Design microsegmentation within workloads
+
+Beyond virtual network and subnet boundaries, design microsegmentation within individual workloads to limit lateral movement even inside a segment. Key approaches include:
+
+- **NSG rules between application tiers.** For a three-tier application, allow only the web tier to communicate with the application tier, and only the application tier to communicate with the database tier. Deny all other inter-tier traffic.
+- **Private endpoints.** Use [Azure Private Link](/azure/private-link/private-link-overview) to access PaaS services through private endpoints within the virtual network, eliminating public internet exposure and mapping each endpoint to a specific resource instance to prevent data exfiltration to other accounts.
+- **Azure Bastion.** Replace direct RDP/SSH access with [Azure Bastion](/azure/bastion/bastion-overview), which provides secure remote access over TLS through the Azure portal without exposing management ports.
+- **Virtual network encryption.** Enable [virtual network encryption](/azure/virtual-network/virtual-network-encryption-overview) to encrypt traffic between virtual machines and virtual machine scale sets within the same virtual network and across peered virtual networks. This protects data in transit at the network layer, even from users with access to the underlying infrastructure. Virtual network encryption requires the Accelerated Networking capability on supported VM SKUs.

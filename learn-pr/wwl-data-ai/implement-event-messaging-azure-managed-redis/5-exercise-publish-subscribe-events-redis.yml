@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-event-messaging-azure-managed-redis.exercise-publish-subscribe-events-redis
+title: Exercise - Publish and subscribe to events in Azure Managed Redis
+metadata:
+  title: Exercise - Publish and Subscribe to Events in Azure Managed Redis
+  description: Exercise - Publish and subscribe to events in Azure Managed Redis
+  ms.date: 11/21/2025
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: unit
+azureSandbox: false
+durationInMinutes: 40
+content: |
+  [!include[](includes/5-exercise-publish-subscribe-events-redis.md)]

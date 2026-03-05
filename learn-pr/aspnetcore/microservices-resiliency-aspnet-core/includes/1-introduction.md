@@ -13,7 +13,7 @@ You'll modify the app to include some code-based resiliency handling policies in
 
 ## Learning objectives
 
-In this module, you will:
+In this module, you'll:
 
 * Understand foundational resiliency concepts.
 * Observe the behavior of a microservice that has no resiliency strategy.

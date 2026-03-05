@@ -1,4 +1,4 @@
-When you access file data using the [Azure portal](https://portal.azure.com/?azure-portal=true), the portal makes requests to Azure Files behind the scenes. These requests can be authorized using either your Microsoft Entra account or the storage account access key. The portal indicates which method you're using, and enables you to switch between the two if you have the appropriate permissions.
+When you access file data using the [Azure portal](https://portal.azure.com/?azure-portal=true), the portal makes requests to Azure Files behind the scenes. These requests can be authorized using either your Microsoft Entra account or the storage account access key. The portal indicates which method you're using, and enables you to switch between the two if you have the appropriate permissions. Microsoft recommends using Microsoft Entra ID authentication whenever possible for enhanced security and centralized identity management.
 
 You can also specify how to authorize an individual file share operation in the Azure portal. By default, the portal uses whichever method you're already using to authorize all file shares, but you have the option to change this setting for individual file shares.
 
@@ -10,23 +10,28 @@ Depending on how you want to authorize access to file data in the Azure portal, 
 
 To access file data from the Azure portal using your Microsoft Entra account, both of the following statements must be true:
 
- -  You're assigned either a built-in or custom role that provides access to file data.
- -  You're assigned the Azure Resource Manager Reader role, at a minimum, scoped to the level of the storage account or higher. The Reader role grants the most restricted permissions, but another Azure Resource Manager role that grants access to storage account management resources is also acceptable.
+- You're assigned either a built-in or custom role that provides access to file data.
+- You're assigned the Azure Resource Manager Reader role, at a minimum, scoped to the level of the storage account or higher. The Reader role grants the most restricted permissions, but another Azure Resource Manager role that grants access to storage account management resources is also acceptable.
 
 The Azure Resource Manager Reader role permits users to view storage account resources, but not modify them. It doesn't provide read permissions to data in Azure Storage, but only to account management resources. The Reader role is necessary so that users can navigate to file shares in the Azure portal.
 
-There are two new built-in roles that have the required permissions to access file data with OAuth:
+Azure provides built-in roles that have the required permissions to access file data with OAuth (Microsoft Entra ID authentication):
 
- -  [Storage File Data Privileged Reader](/azure/role-based-access-control/built-in-roles#storage-file-data-privileged-reader)
- -  [Storage File Data Privileged Contributor](/azure/role-based-access-control/built-in-roles#storage-file-data-privileged-contributor)
+- **[Storage File Data Privileged Reader](/azure/role-based-access-control/built-in-roles#storage-file-data-privileged-reader)** - Provides read access to Azure file share content.
+- **[Storage File Data Privileged Contributor](/azure/role-based-access-control/built-in-roles#storage-file-data-privileged-contributor)** - Provides read, write, and delete access to Azure file share content.
 
-The **Storage File Data Privileged Contributor** role has permissions to read, write, delete, and modify ACLs/NTFS permissions on files/directories in Azure file shares. Modifying ACLs/NTFS permissions isn't supported via the Azure portal.
+The **Storage File Data Privileged Contributor** role has permissions to read, write, delete, and modify ACLs/NTFS permissions on files and directories in Azure file shares. Note that modifying ACLs/NTFS permissions isn't currently supported via the Azure portal and must be done through other tools such as PowerShell or the Azure CLI.
 
 Custom roles can support different combinations of the same permissions provided by the built-in roles. For more information about creating Azure custom roles, see [Azure custom roles](/azure/role-based-access-control/custom-roles) and [Understand role definitions for Azure resources](/azure/role-based-access-control/role-definitions).
 
 ### Use the storage account access key
 
-To access file data with the storage account access key, you must have an Azure role assigned to you that includes the Azure RBAC action **Microsoft.Storage/storageAccounts/listkeys/action**. This Azure role may be a built-in role or a custom role. Built-in roles that support **Microsoft.Storage/storageAccounts/listkeys/action** include the following, listed in order from least to greatest permissions:
+To access file data with the storage account access key, you must have an Azure role assigned to you that includes the Azure RBAC action **Microsoft.Storage/storageAccounts/listkeys/action**. This Azure role may be a built-in role or a custom role.
+
+>[!NOTE]
+> Using storage account access keys provides full access to the storage account and should be avoided when possible. Microsoft Entra ID authentication provides more granular access control and better aligns with Zero Trust security principles.
+
+Built-in roles that support **Microsoft.Storage/storageAccounts/listkeys/action** include the following, listed in order from least to greatest permissions:
 
  -  The [Reader and Data Access](/azure/role-based-access-control/built-in-roles#reader-and-data-access) role
  -  The [Storage Account Contributor role](/azure/role-based-access-control/built-in-roles#storage-account-contributor)
@@ -51,34 +56,49 @@ You can change the authentication method for individual file shares. By default,
     :::image type="content" source="../media/authorization-method-access-key-page-2fd78c3c.png" alt-text="Screenshot showing the authentication method access key page.":::
     
 
-### Authenticate with your Microsoft Entra account<br>
+### Authenticate with your Microsoft Entra account
 
-To switch to using your Microsoft Entra account, select the link highlighted in the image that says Switch to Microsoft Entra user account. If you have the appropriate permissions via the Azure roles that are assigned to you, you'll be able to proceed. However, if you lack the necessary permissions, you'll see an error message that you don't have permissions to list the data using your user account with Microsoft Entra ID.
+To switch to using your Microsoft Entra account, select the link highlighted in the image that says **Switch to Microsoft Entra user account**. If you have the appropriate permissions via the Azure roles that are assigned to you, you'll be able to proceed. However, if you lack the necessary permissions, you'll see an error message that you don't have permissions to list the data using your user account with Microsoft Entra ID.
 
 Two additional RBAC permissions are required to use your Microsoft Entra account:
 
- -  `Microsoft.Storage/storageAccounts/fileServices/readFileBackupSemantics/action`
- -  `Microsoft.Storage/storageAccounts/fileServices/writeFileBackupSemantics/action`
+- `Microsoft.Storage/storageAccounts/fileServices/readFileBackupSemantics/action`
+- `Microsoft.Storage/storageAccounts/fileServices/writeFileBackupSemantics/action`
 
-### Authenticate with the storage account access key<br>
+### Authenticate with the storage account access key
 
-To switch to using the account access key, select Switch to access key. If you have access to the storage account key, then you'll be able to proceed. However, if you lack access to the account key, you'll see an error message that you don't have permissions to use the access key to list data.
+To switch to using the account access key, select **Switch to access key**. If you have access to the storage account key, then you'll be able to proceed. However, if you lack access to the account key, you'll see an error message that you don't have permissions to use the access key to list data.
 
 ## Default to Microsoft Entra authorization in the Azure portal
 
 When you create a new storage account, you can specify that the Azure portal will default to authorization with Microsoft Entra ID when a user navigates to file data. You can also configure this setting for an existing storage account. This setting specifies the default authorization method only. Keep in mind that a user can override this setting and choose to authorize data access with the storage account key.
 
+>{!NOTE]
+>Enable this setting to encourage users to authenticate with Microsoft Entra ID by default, reducing reliance on storage account keys and improving your overall security posture.
+
 To specify that the portal will use Microsoft Entra authorization by default for data access when you create a storage account, follow these steps:
 
-1.  Create a new storage account, following the instructions in [Create a storage account](/azure/storage/common/storage-account-create).
-2.  On the **Advanced** tab, in the **Security** section, check the box next to **Default to Microsoft Entra authorization in the Azure portal**.
-3.  Select **Review + create** to run validation and create the storage account.<br>
+1. Create a new storage account, following the instructions in [Create a storage account](/azure/storage/common/storage-account-create).
+2. On the **Advanced** tab, in the **Security** section, check the box next to **Default to Microsoft Entra authorization in the Azure portal**.
+3. Select **Review + create** to run validation and create the storage account.
 
 To update this setting for an existing storage account, follow these steps:
 
-1.  Navigate to the storage account overview in the Azure portal.
-2.  Under **Settings**, select **Configuration**.
+1. Navigate to the storage account overview in the Azure portal.
+2. Under **Settings**, select **Configuration**.
     
     :::image type="content" source="../media/default-authorization-account-create-page-2bca5752.png" alt-text="Screenshot showing the default authentication account create page.":::
     
-3.  Set **Default to Microsoft Entra authorization** in the **Azure portal** to **Enabled**.
+3. Set **Default to Microsoft Entra authorization** in the **Azure portal** to **Enabled**.
+
+## Security best practices for Azure Files access
+
+When configuring access to Azure Files, follow these security recommendations:
+
+- **Prefer identity-based authentication**: Always use Microsoft Entra ID authentication over storage account keys when possible. This provides better audit trails, granular access control, and integration with conditional access policies.
+- **Use appropriate RBAC roles**: Assign the most restrictive role that meets user requirements. Use **Storage File Data Privileged Reader** for read-only access rather than more permissive roles.
+- **Enable default Microsoft Entra authorization**: Configure storage accounts to default to Microsoft Entra ID authentication in the portal to reduce accidental use of account keys.
+- **Leverage managed identities**: For applications running in Azure, use managed identities to access Azure Files without storing credentials.
+- **Implement conditional access**: Use Microsoft Entra Conditional Access policies to enforce additional requirements such as multifactor authentication or compliant device checks for file access.
+- **Monitor access**: Regularly review Azure Monitor logs to track who is accessing your file shares and identify any unauthorized access attempts.
+- **Consider disabling Shared Key**: If all your scenarios support identity-based authentication, consider disabling Shared Key authorization at the storage account level to prevent its use entirely.

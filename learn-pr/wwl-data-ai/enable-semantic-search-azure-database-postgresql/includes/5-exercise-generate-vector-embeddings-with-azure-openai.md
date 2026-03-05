@@ -7,3 +7,4 @@ The first step to implementing semantic search is to generate and store embeddin
 Launch the exercise and follow the instructions.
 
 [![Button to launch exercise.](../media/launch-exercise.png)](https://go.microsoft.com/fwlink/?linkid=2269607&clcid=0x409)
+

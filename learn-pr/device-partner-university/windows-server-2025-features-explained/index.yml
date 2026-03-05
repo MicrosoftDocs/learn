@@ -1,0 +1,43 @@
+### YamlMime:Module
+uid: learn.dpu.windows-server-2025-features-explained
+title: Key features and innovations in Windows Server 2025
+metadata:
+  title: Key Features And Innovations In Windows Server 2025
+  description: Learn how Windows Server 2025 strengthens security, extends hybrid cloud capabilities, and boosts performance to support modern workloads and business innovation.
+  ms.date: 09/08/2025
+  author: hhreyes21
+  ms.author: v-homerreyes
+  ms.topic: module
+  ms.service: windows-server
+  ms.custom: CS110724-2
+summary: >
+   Explore how Windows Server 2025 enhances security, hybrid flexibility, and performance to help your organization stay resilient and competitive.
+abstract: |
+  By the end of this module, you'll be able to:
+  - Configure secured-core server features to improve resilience against cyberattacks.
+  - Extend Azure innovation to on-premises workloads using hybrid capabilities.
+  - Optimize performance and efficiency with new infrastructure tools in Windows Server 2025.
+  - Support AI and analytics workloads using GPU partitioning and enhanced storage capabilities.
+prerequisites: |
+  - None
+iconUrl: /training/achievements/windows-server-2025-features-explained.svg
+ratingEnabled: false
+levels:
+  - beginner
+roles:
+  - business-owner
+  - business-user
+  - administrator
+  - technology-manager
+products:
+  - windows-server
+units:
+  - learn.dpu.windows-server-2025-features-explained.introduction
+  - learn.dpu.windows-server-2025-features-explained.secure-workloads-with-windows-server
+  - learn.dpu.windows-server-2025-features-explained.enable-hybrid-cloud-windows-server
+  - learn.dpu.windows-server-2025-features-explained.how-to-optimize-performance-with-ai-analytics
+  - learn.dpu.windows-server-2025-features-explained.modernize-apps-with-data-analytics
+  - learn.dpu.windows-server-2025-features-explained.knowledge-check
+  - learn.dpu.windows-server-2025-features-explained.summary
+badge:
+  uid: learn.dpu.windows-server-2025-features-explained.badge

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-insider-risk-investigate-alerts.user-activity-tab
+title: Review patterns over time with the User activity tab
+metadata:
+  title: Review patterns over time with the User activity tab
+  description: "Review patterns over time with the User activity tab."
+  ms.date: 04/15/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/user-activity-tab.md)]

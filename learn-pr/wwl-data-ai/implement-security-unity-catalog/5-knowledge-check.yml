@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-security-unity-catalog.knowledge-check
+title: Knowledge Check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 09/30/2025
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+  module_assessment: true
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+quiz:
+  questions:
+  - content: "To successfully run `SELECT * FROM corpdata.finance.sales`, which minimum set of privileges must a user have?"
+    choices:
+    - content: "`SELECT` on the table only; higher-level privileges are implicit."
+      isCorrect: false
+      explanation: "Incorrect. Without `USE CATALOG` and `USE SCHEMA`, the user can't resolve or traverse the hierarchy."
+    - content: "`USE CATALOG` on `corpdata`, `USE SCHEMA` on `finance`, and `SELECT` on the table."
+      isCorrect: true
+      explanation: "Correct. Unity Catalog requires traversal plus object privilege: catalog + schema + table."
+    - content: "`ALL PRIVILEGES` on the catalog only."
+      isCorrect: false
+      explanation: "Incorrect. While overly broad, `ALL PRIVILEGES` on the catalog would include access, but the question asks for the minimum set."
+  - content: "Where are final row- and column-level filters enforced in the Unity Catalog query lifecycle?"
+    choices:
+    - content: "Inside Unity Catalog before any storage access occurs."
+      isCorrect: false
+      explanation: "Incorrect. Unity Catalog doesn't apply row/column filters inline; it supplies scoped tokens."
+    - content: "In the cloud storage service when objects are read."
+      isCorrect: false
+      explanation: "Incorrect. Storage returns the data; fine-grained filtering is applied later by compute."
+    - content: "On the compute (cluster or SQL warehouse) after data is returned from storage."
+      isCorrect: true
+      explanation: "Correct. Unity Catalog authorizes and issues scoped access, but last-mile filtering executes on the compute resource."
+  - content: "A schema contains hundreds of tables that a reporting group must read now and in the future. Which grant pattern best balances least privilege with low maintenance?"
+    choices:
+    - content: "`GRANT SELECT` on the schema plus `USE CATALOG` and `USE SCHEMA`."
+      isCorrect: true
+      explanation: "Correct. Schema-level SELECT lets current and future tables be queried without per-table grants."
+    - content: "`GRANT SELECT` individually on every existing and new table as they appear."
+      isCorrect: false
+      explanation: "Incorrect. This is explicit and high maintenance for large / evolving schemas."
+    - content: "`GRANT ALL PRIVILEGES` at the catalog level."
+      isCorrect: false
+      explanation: "Incorrect. This is broader than necessary and exceeds read-only needs for one schema."

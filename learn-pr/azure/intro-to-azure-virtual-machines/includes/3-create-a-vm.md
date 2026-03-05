@@ -1,5 +1,12 @@
 You've planned out the network infrastructure and identified a few VMs to migrate to the cloud. You have several choices for creating your VMs. The choice you make depends on the environment you're comfortable with. Azure supports a web-based portal for creating and administering resources. You can also choose to use command-line tools that run on Linux, macOS, and Windows.
 
+[!INCLUDE[](../../../includes/azure-optional-exercise-subscription-note.md)]
+
+[!INCLUDE[](../../../includes/azure-optional-exercise-create-resource-group-note.md)]
+
+> [!NOTE]
+> Throughout this exercise, replace **myResourceGroupName** in the examples with the name of an existing resource group, or the name of the resource group that you created for this exercise.
+
 #### Options to create and manage VMs
 
 > [!VIDEO https://learn-video.azurefd.net/vod/player?id=8790339c-187e-4ebe-85f6-6c57b8c869cb]
@@ -14,7 +21,7 @@ The **Azure portal** provides an easy-to-use browser-based user interface that e
 
 Let's assume you want to create a VM running a web server on Ubuntu. Setting up a site isn't difficult, but there are a couple of things to keep in mind. You need to install and configure an operating system, configure a website, install a database, and worry about things like firewalls. We're going to cover creating VMs in the next few modules, but let's create one here to see how easy it is. We don't go through all the options - check out one of the **Create a VM** modules to get complete details on each option.
 
-1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you used to activate the sandbox.
+1. Sign in to the [Azure portal](https://portal.azure.com/).
 
 1. On the Azure home page, under **Azure services**, select **Create a resource**. The **Create a resource** pane appears, displaying popular products for Azure services.
 
@@ -33,8 +40,8 @@ You need to configure the basic parameters of your virtual machine. If some of t
     | Setting | Value  |
     | ------ | ------- |
     | **Project details**  |
-    | Subscription | Concierge Subscription |
-    | Resource group | Select **<rgn>[sandbox resource group name]</rgn>** from the drop-down |
+    | Subscription | Select your subscription |
+    | Resource group | Select **myResourceGroupName** from the drop-down |
     | **Instance details** |
     | Virtual machine name  | Enter *test-ubuntu-cus-vm* |
     | Region | From the dropdown list, select a geographical location close to you. |

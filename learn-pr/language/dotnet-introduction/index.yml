@@ -4,8 +4,8 @@ metadata:
   title: Introduction to .NET
   description: Start learning about .NET. Understand what .NET is and how it works. Quickly build a small app in a web-based .NET environment.
   ms.date: 10/07/2024
-  author: camsoper
-  ms.author: casoper
+  author: wwlpublish
+  ms.author: buzahid
   manager: coxford
   ms.topic: module
   ms.service: dotnet

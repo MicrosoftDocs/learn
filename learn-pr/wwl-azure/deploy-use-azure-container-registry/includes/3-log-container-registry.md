@@ -6,7 +6,7 @@ Before pushing and pulling container images, you must sign-in to the registry in
 > Don't use the fully qualified sign-in server name.
 
 > [!NOTE]
-> To complete this procedure, you need an [Azure subscription](https://azure.microsoft.com/free/).
+> To complete this procedure, you need an [Azure subscription](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn).
 
 Sign into the Azure CLI on your local machine, then run the `az sign-in` command.
 

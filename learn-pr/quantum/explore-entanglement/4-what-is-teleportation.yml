@@ -1,12 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.quantum.explore-entanglement.what-is-teleportation
-title: How to use entanglement to send information?
+title: How to use entanglement to send information
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: How to use entanglement to send information?
-  description: How to use entanglement to send information?
-  ms.date: 01/22/2025
+  title: How to use entanglement to send information
+  description: How to use entanglement to send information
+  ms.date: 09/19/2025
   author: azure-quantum-content
   ms.author: quantumdocwriters
   

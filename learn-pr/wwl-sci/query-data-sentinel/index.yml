@@ -3,8 +3,8 @@ uid: azure.query-data-sentinel
 metadata:
   title: Query, visualize, and monitor data in Microsoft Sentinel
   description: Learn how to query, visualize, and monitor data in Microsoft Sentinel by using the Azure portal.
-  ms.date: 05/20/2023
-  author: wwlpublish
+  ms.date: 06/06/2025
+  author: KenMAG
   ms.author: kelawson
   ms.topic: module
   ms.service: microsoft-sentinel

@@ -2,13 +2,11 @@
 uid: learn.wwl.classify-images.summary
 title: Summary
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Summary
   description: Summary
   author: ivorb
   ms.author: berryivor
-  ms.date: 11/5/2024
+  ms.date: 05/05/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot

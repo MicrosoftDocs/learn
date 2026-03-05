@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn.wwl.introduction-ai-speech
+metadata:
+  title: Introduction to AI speech concepts
+  description: Imagine AI apps and agents that you can talk to. Explore the concepts behind AI speech, including speech recognition and synthesis.
+  author: wwlpublish
+  ms.author: gmalc
+  ms.date: 10/27/2025
+  ms.service: azure
+  ai-usage: ai-assisted
+  ms.topic: module
+  ms.collection:
+    - wwl-ai-copilot
+title: Introduction to AI speech concepts
+summary: Imagine AI apps and agents that you can talk to. Explore the concepts behind AI speech, including speech recognition and synthesis.
+abstract: |
+  After completing this module, you'll be able to:
+  -   Identify different scenarios for AI speech
+  -   Describe how speech recognition works
+  -   Describe how speech synthesis works
+prerequisites: A basic understanding of machine learning and generative AI concepts.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- ai-engineer
+- data-scientist
+- developer
+- solution-architect
+- student
+products:
+- azure-ai-foundry
+subjects:
+- artificial-intelligence
+units:
+- learn.wwl.introduction-ai-speech.introduction
+- learn.wwl.introduction-ai-speech.speech-solutions
+- learn.wwl.introduction-ai-speech.speech-recognition
+- learn.wwl.introduction-ai-speech.speech-synthesis
+- learn.wwl.introduction-ai-speech.exercise-speech
+- learn.wwl.introduction-ai-speech.knowledge-check
+- learn.wwl.introduction-ai-speech.summary
+badge:
+  uid: learn.wwl.introduction-ai-speech.badge
+

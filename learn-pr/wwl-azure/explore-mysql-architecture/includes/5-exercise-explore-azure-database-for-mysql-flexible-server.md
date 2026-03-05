@@ -1,7 +1,7 @@
 In this exercise, you will create an Azure Database for MySQL server and configure it.
 
 > [!IMPORTANT]
-> You need your own Azure subscription to complete this exercise. If you do not have an Azure subscription, create an [Azure free trial](https://azure.microsoft.com/free).
+> You need your own Azure subscription to complete this exercise. If you do not have an Azure subscription, create an [Azure free trial](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn).
 
 ## Create a Resource Group
 

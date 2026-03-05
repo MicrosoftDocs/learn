@@ -2,13 +2,11 @@
 uid: learn.api-management.introduction
 title: Introduction
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Introduction
   description: Introduction
-  author: dlepow
-  ms.author: danlep
-  manager: susanpotter
+  author: softchris
+  ms.author: chnoring
+  manager:
   ms.date: 06/30/2024
   ms.topic: unit
 durationInMinutes: 3

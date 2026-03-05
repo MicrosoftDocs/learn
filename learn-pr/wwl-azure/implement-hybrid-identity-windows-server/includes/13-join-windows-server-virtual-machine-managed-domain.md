@@ -9,4 +9,4 @@ In this demonstration, learn how to:
 The demonstration was based on the steps provided in the following online tutorial:
 [Tutorial: Join a Windows Server virtual machine to a Microsoft Entra Domain Services managed domain](https://aka.ms/join-windows-vm?azure-portal=true)
 
-If you want to repeat these steps yourself, we advise that you create a [free trial Azure subscription](https://azure.microsoft.com/free?azure-portal=true). It's important that after completing the steps, you remove any resource groups that you created. This will help to avoid any charges relating to your account after the free trial period expires.
+If you want to repeat these steps yourself, we advise that you create a [free trial Azure subscription](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn). It's important that after completing the steps, you remove any resource groups that you created. This will help to avoid any charges relating to your account after the free trial period expires.

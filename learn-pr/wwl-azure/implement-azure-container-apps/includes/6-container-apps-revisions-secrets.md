@@ -15,7 +15,7 @@ az containerapp update \
   --image <IMAGE_NAME>
 ```
 
-You can list all revisions associated with your container app with the `az containerapp revision list` command. 
+You can list all revisions associated with your container app with the `az containerapp revision list` command.
 
 ```bash
 az containerapp revision list \
@@ -43,7 +43,7 @@ An updated or deleted secret doesn't automatically affect existing revisions in 
 Before you delete a secret, deploy a new revision that no longer references the old secret. Then deactivate all revisions that reference the secret.
 
 > [!NOTE]
-> Container Apps doesn't support Azure Key Vault integration. Instead, enable managed identity in the container app and use the Key Vault SDK in your app to access secrets.
+> Container Apps supports native Azure Key Vault integration. Enable managed identity in the container app, grant the identity the **Key Vault Secrets User** role, and define secrets as Key Vault references using the secret's URI. Container Apps automatically retrieves and refreshes the secret value.
 
 ### Defining secrets
 
@@ -52,7 +52,7 @@ When you create a container app, secrets are defined using the `--secrets` param
 * The parameter accepts a space-delimited set of name/value pairs.
 * Each pair is delimited by an equals sign (`=`).
 
-In the example below, a connection string to a queue storage account is declared in the `--secrets` parameter. The value for queue-connection-string comes from an environment variable named `$CONNECTION_STRING`.
+In the following example, a connection string to a queue storage account is declared in the `--secrets` parameter. The value for queue-connection-string comes from an environment variable named `$CONNECTION_STRING`.
 
 ```bash
 az containerapp create \
@@ -76,5 +76,6 @@ az containerapp create \
   --secrets "queue-connection-string=$CONNECTIONSTRING" \
   --env-vars "QueueName=myqueue" "ConnectionString=secretref:queue-connection-string"
 ```
+
 
 

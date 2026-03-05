@@ -2,8 +2,6 @@
 uid: learn.wwl.deploy-microsoft-deployment-toolkit.evaluate-traditional-deployment-methods
 title: Evaluate traditional deployment methods
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Evaluate traditional deployment methods
   description: "Evaluate traditional deployment methods"
   ms.date: 04/03/2023
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 5
 content: |
-  [!include[](includes/2-evaluate-traditional-deployment-methods.md)]
+  [!include[](includes/2-evaluate-traditional-deployment-methods.md)]

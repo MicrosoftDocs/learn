@@ -2,8 +2,6 @@
 uid: learn.wwl.run-azure-databricks-notebooks-azure-data-factory.exercise-run-azure-databricks-notebook
 title: Exercise - Run an Azure Databricks Notebook with Azure Data Factory
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Run an Azure Databricks Notebook with Azure Data Factory
   description: "Exercise - Run an Azure Databricks Notebook with Azure Data Factory"
   ms.date: 08/29/2023
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 40
 content: |
-  [!include[](includes/06-exercise-databricks-factory.md)]
+  [!include[](includes/06-exercise-databricks-factory.md)]

@@ -1,8 +1,8 @@
-Azure AI Content Understanding is a generative AI service that you can use to extract insights and data from multiple kinds of content. With Content Understanding, you can quickly build applications that analyze complex data and generate outputs that can be used to automate and optimize processes.
+Azure Content Understanding is a generative AI service that you can use to extract insights and data from multiple kinds of content. With Content Understanding, you can quickly build applications that analyze complex data and generate outputs that can be used to automate and optimize processes.
 
-Content Understanding is a component of Azure AI services. To use it, you need to provision an Azure AI services resource in your Azure subscription. You can develop and manage a Content Understanding solution:
+Content Understanding is a component of Foundry Tools. To use it, you need to provision a Foundry Tools resource in your Azure subscription. You can develop and manage a Content Understanding solution:
 
-- In the Azure AI Foundry portal
+- In the Microsoft Foundry portal
 - By using the Content Understanding REST API
 
 ## Multimodal content analysis
@@ -29,6 +29,7 @@ Analysis of audio enables you to automate tasks like summarizing conference call
 
 ### Video
 
-Video accounts for a large volume of the data captured today, and you can use Content Understanding to analyze and extract insights from video to support many scenarios. For example, to summarize and extract key points from presentations or to detect the presence of specific activity in security footage.
+Video accounts for a large volume of the data captured today, and you can use Content Understanding to analyze and extract insights from video to support many scenarios. For example, to extract key points from video conference recordings, to summarize presentations, or to detect the presence of specific activity in security footage.
 
 ![Screenshot of an video file being analyzed by Content Understanding.](../media/video-analysis.png)
+

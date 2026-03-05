@@ -6,12 +6,13 @@ metadata:
   prefetch-feature-rollout: true
   title: Register an application
   description: "Register an application"
-  ms.date: 12/18/2024
+  ms.date: 03/31/2025
   author: wwlpublish
   ms.author: roberts
   ms.topic: unit
   ms.custom:
-  - N/A
+    - sfi-ga-nochange
+    - N/A
 durationInMinutes: 12
 content: |
   [!include[](includes/4-register-application.md)]

@@ -1,0 +1,42 @@
+### YamlMime:Module
+uid: learn.wwl.monitor-apps-azure-kubernetes-service
+metadata:
+  title: Monitor and Troubleshoot Applications on Azure Kubernetes Service
+  description: Monitor application health, debug issues, and verify connectivity for AI workloads running on Azure Kubernetes Service (AKS).
+  ms.date: 12/31/2025
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: module-standard-task-based
+  ai-usage: ai-assisted
+  ms.service: azure-kubernetes-service
+title: Monitor and troubleshoot applications on Azure Kubernetes Service
+summary: Learn to monitor application health, inspect logs and metrics, troubleshoot pods and Services, and verify connectivity for AI workloads on Azure Kubernetes Service (AKS).
+abstract: |
+  After completing this module, you'll be able to:
+    - Explain key monitoring signals for AI workloads running on Azure Kubernetes Service.
+    - Use kubectl and Azure tools to inspect logs and metrics for applications.
+    - Troubleshoot pod and Service issues that affect AI APIs and workers.
+    - Verify Service and ingress connectivity paths to ensure clients can reach AI services.
+prerequisites: |
+  Before beginning this module, you should have:
+  - Programming experience with languages such as Python, JavaScript, or C#.
+  - Basic understanding of Azure services and cloud computing concepts.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- azure-kubernetes-service
+subjects:
+- containers
+units:
+- learn.wwl.monitor-apps-azure-kubernetes-service.introduction
+- learn.wwl.monitor-apps-azure-kubernetes-service.monitor-logs-metrics
+- learn.wwl.monitor-apps-azure-kubernetes-service.troubleshoot-pods-services
+- learn.wwl.monitor-apps-azure-kubernetes-service.verify-connectivity
+- learn.wwl.monitor-apps-azure-kubernetes-service.exercise-troubleshoot-apps
+- learn.wwl.monitor-apps-azure-kubernetes-service.module-assessment
+- learn.wwl.monitor-apps-azure-kubernetes-service.summary
+badge:
+  uid: learn.wwl.monitor-apps-azure-kubernetes-service.badge

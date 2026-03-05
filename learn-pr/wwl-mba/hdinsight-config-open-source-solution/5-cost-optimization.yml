@@ -2,8 +2,6 @@
 uid: learn.wwl.hdinsight-configuration-to-build-open-source-analytical-solutions.5-cost-optimization-strategies-hdinsight-clusters
 title: Cost optimization strategies for HDInsight clusters
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Cost optimization strategies for HDInsight clusters
   description: "Cost optimization strategies for HDInsight clusters"
   ms.date: 04/06/2024
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 5
 content: |
-  [!include[](includes/5-cost-optimization.md)]
+  [!include[](includes/5-cost-optimization.md)]

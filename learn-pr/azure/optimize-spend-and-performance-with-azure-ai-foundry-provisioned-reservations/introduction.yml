@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.optimize-spend-and-performance-with-azure-ai-foundry-provisioned-reservations.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: Learn about provisioned throughput deployments in Azure AI Foundry.
+  ms.date: 08/01/2025
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/introduction.md)]

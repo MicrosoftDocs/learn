@@ -2,8 +2,6 @@
 uid: learn.wwl.get-tips-tricks-teach-az-104-microsoft-azure-administrator.explore-best-practices-for-module-4
 title: Explore best practices for learning path 4
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Explore best practices for learning path 4
   description: "Explore best practices for learning path 4"
   ms.date: 04/01/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 12
 content: |
-  [!include[](includes/7-explore-best-practices-for-learning-path-4.md)]
+  [!include[](includes/7-explore-best-practices-for-learning-path-4.md)]

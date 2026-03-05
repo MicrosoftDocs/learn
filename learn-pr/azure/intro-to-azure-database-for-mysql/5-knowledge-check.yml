@@ -1,17 +1,16 @@
 ### YamlMime:ModuleUnit
 uid: learn.intro-to-azure-database-for-mysql.5-knowledge-check  
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: knowledge_check
-  title: Knowledge check
+  title: Module assessment
   description: Knowledge check
   ms.date: 08/21/2024
-  author: shreyaaithal
-  ms.author: shaithal
+  author: deepthiprasad
+  ms.author: deprasa
   ms.reviewer: maghan
   ms.topic: unit
+  module_assessment: true
 durationInMinutes: 5
 content: |
   [!include[](includes/5-knowledge-check.md)]
@@ -47,9 +46,9 @@ quiz:
     - content: "General Purpose"
       isCorrect: false
       explanation: "Incorrect. The General Purpose SKU is intended for production workloads requiring balanced compute and memory resources."
-    - content: "Business Critical"
+    - content: "Memory-Optimized"
       isCorrect: false
-      explanation: "Incorrect. The Business Critical SKU is meant for the most demanding database applications, requiring high throughput and low latency."
+      explanation: "Incorrect. The Memory-Optimized SKU is meant for the most demanding database applications, requiring high throughput and low latency."
   - content: "What feature of Azure Database for MySQL allows for automatic scaling of IOPS based on workload needs?"
     choices:
     - content: "Elastic pools"

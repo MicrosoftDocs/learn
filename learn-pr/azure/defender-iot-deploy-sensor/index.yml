@@ -15,7 +15,7 @@ abstract: |
     - Deploy Defender for IoT software to a virtual appliance
 prerequisites: |
   - Knowledge of what Defender for IoT is and how it works at a beginner level
-  - Access to an [Azure subscription](https://azure.microsoft.com/free) as a Security Admin, Contributor, or Owner 
+  - Access to an [Azure subscription](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn) as a Security Admin, Contributor, or Owner 
   -	A Defender for IoT license with an [OT plan](/azure/defender-for-iot/organizations/getting-started)
   - A configured firewall and all of the rules and settings for it to connect to port 443, including: IP address, subnet mask, default gateway, DNS and hostname
   - Access to either a virtual or physical OT sensor

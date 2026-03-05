@@ -4,9 +4,8 @@ title: Compare the solutions
 metadata:
   title: Compare the solutions
   description: This unit presents a comparison of Azure solutions for deploying Java applications.
-  author: KarlErickson
-  ms.author: karler
-  ms.reviewer: hangwan
+  author: hangwan97
+  ms.author: hangwan
   ms.date: 01/04/2024
   ms.topic: unit
   ms.custom:

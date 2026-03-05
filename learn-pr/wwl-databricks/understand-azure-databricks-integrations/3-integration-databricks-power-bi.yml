@@ -1,0 +1,14 @@
+### YamlMime: ModuleUnit
+uid: learn.wwl.understand-azure-databricks-integrations.integration-databricks-power-bi
+title: Understand integration with Power BI
+metadata:
+  title: Understand Integration with Power BI
+  description: Learn how Azure Databricks integrates with Power BI through Desktop connections, service publishing, and Unity Catalog orchestration for business intelligence and reporting.
+  ms.date: 12/07/2025
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+  ai-usage: ai-generated
+durationInMinutes: 12
+content: |
+  [!include[](includes/3-integration-databricks-power-bi.md)]

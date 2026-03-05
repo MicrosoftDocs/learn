@@ -61,3 +61,4 @@ From an Event Grid perspective, an event handler is the place where the event is
 ### Security
 
 Event Grid provides security for subscribing to topics and when publishing events to topics. When subscribing, you must have adequate permissions on the Event Grid topic. If using push delivery, the event handler is an Azure service, and a managed identity is used to authenticate Event Grid, the managed identity should have an appropriate RBAC role. For example, if sending events to Event Hubs, the managed identity used in the event subscription should be a member of the Event Hubs Data Sender role.
+

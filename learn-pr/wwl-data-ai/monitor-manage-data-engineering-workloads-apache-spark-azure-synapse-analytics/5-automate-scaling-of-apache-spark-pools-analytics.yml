@@ -2,8 +2,6 @@
 uid: learn.wwl.monitor-manage-data-engineering-workloads-with-apache-spark-azure-synapse-analyt.automate-scaling-of-apache-spark-pools-analytics
 title: Automate scaling of Apache Spark pools in Azure Synapse Analytics
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Automate scaling of Apache Spark pools in Azure Synapse Analytics
   description: "Automate scaling of Apache Spark pools in Azure Synapse Analytics"
   ms.date: 01/05/2022
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 3
 content: |
-  [!include[](includes/5-automate-scaling-of-apache-spark-pools-analytics.md)]
+  [!include[](includes/5-automate-scaling-of-apache-spark-pools-analytics.md)]

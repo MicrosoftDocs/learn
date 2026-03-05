@@ -4,11 +4,17 @@ Now that you have a better understanding of the features and capabilities of Sto
 
 Here, you'll try Storage Explorer by downloading, installing, and connecting to an Azure Storage account. You'll create a blob and a queue in your storage account.
 
+[!INCLUDE[](../../../includes/azure-optional-exercise-subscription-note.md)]
+
+[!INCLUDE[](../../../includes/azure-optional-exercise-create-resource-group-note.md)]
+
+[!INCLUDE[](../../../includes/azure-cloud-shell-terminal-note.md)]
+
 ## Download and install Azure Storage Explorer
 
 First, you need to download and install Storage Explorer.  
 
-1. Browse to the [Azure Storage Explorer website](https://azure.microsoft.com/products/storage/storage-explorer/?azure-sandbox=true).
+1. Browse to the [Azure Storage Explorer website](https://azure.microsoft.com/products/storage/storage-explorer/).
 
 1. Select **Download now**, then select your preferred operating system. The following steps will go through the Windows version of the application. Your steps will be different if you're using a different OS.
 
@@ -44,18 +50,18 @@ When you first open Storage Explorer, it displays the **Connect to Azure Storage
 
     ![Screenshot that shows the account management panel after signing in to an Azure account.](../media/3-account-panel-subscriptions-apply.png)
 
-   Confirm that the **Concierge Subscription** subscription is selected and account details are correct, and then select **Open Explorer**.
+   Confirm that your subscription is selected and account details are correct, and then select **Open Explorer**.
 
 You've now connected Storage Explorer to your Azure subscription. Leave Storage Explorer open while you work through the next steps.
 
 ## Create a storage account and add a blob
 
-1. In Azure Cloud Shell, run the following command to create a storage account.
+1. In Azure Cloud Shell, run the following command to create a storage account. Replace **myResourceGroupName** with the name of an existing resource group, or the name of the resource group that you created for this exercise.
 
     ```azurecli
     az storage account create \
     --name mslearn$RANDOM \
-    --resource-group "<rgn>[sandbox resource group name]</rgn>" \
+    --resource-group "myResourceGroupName" \
     --sku Standard_GRS \
     --kind StorageV2
     ```
@@ -64,9 +70,9 @@ You've now connected Storage Explorer to your Azure subscription. Leave Storage 
 
 1. If it isn't currently visible, toggle the **EXPLORER** view so that the pane is shown.
 
-1. In the **EXPLORER** pane, select **Refresh All**, then locate and expand **Concierge Subscription**.
+1. In the **EXPLORER** pane, select **Refresh All**, then locate and expand your subscription.
 
-    ![Screenshot that shows the expansion of Concierge Subscription.](../media/3-storage-explorer-create-blob-1.png)
+    ![Screenshot that shows the expansion of a subscription.](../media/3-storage-explorer-create-blob-1.png)
 
 1. Locate and expand the storage account that you created earlier. It should be named something similar to **mslearn12345**, ending with a different set of numbers. It has four virtual folders: **Blob Containers**, **File Shares**, **Queues**, and **Tables**.
 
@@ -99,7 +105,7 @@ From here, you can upload additional files, download files, make copies, and do 
 
 To create a queue in your storage account:
 
-1. In the resource tree, find **Concierge Subscription** and expand the options.
+1. In the resource tree, find your subscription and expand the options.
 
 1. Expand the **cloudshell** storage account.
 
@@ -114,4 +120,4 @@ To create a queue in your storage account:
 
     ![Screenshot that shows the content and details of the new myblob blob container.](../media/3-storage-explorer-create-queue-view.png)
 
-    From this view, you can manage the queue's content. If our application used this queue and experienced an issue with processing a message, you could connect to the queue and view the message contents to determine the issue.
+    From this view, you can manage the queue's content. If your application used this queue and experienced an issue with processing a message, you could connect to the queue and view the message contents to determine the issue.

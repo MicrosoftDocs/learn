@@ -2,8 +2,6 @@
 uid: learn.azure.choose-service-level-azure-netapp-files-hpc-applications.introduction  
 title: Introduction  
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: introduction  
   title: Introduction
   description: Overview of the module including a scenario, goals, and prerequisites.
@@ -14,4 +12,4 @@ metadata:
 durationInMinutes: 1
 content: |
   [!include[](includes/1-introduction.md)]
-
+

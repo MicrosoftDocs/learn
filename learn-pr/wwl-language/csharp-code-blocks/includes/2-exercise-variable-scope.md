@@ -33,22 +33,32 @@ This module includes hands-on activities that guide you through the process of b
 
     Notice that a command prompt in the Terminal panel displays the folder path for the current folder. For example:  
 
-    ```dos
+    ```PowerShell
     C:\Users\someuser\Desktop>
     ```
 
     > [!NOTE]
     > If you are working on your own PC rather than in a sandbox or hosted environment and you have completed other Microsoft Learn modules in this C# series, you may have already created a project folder for code samples. If that's the case, you can skip over the next step, which is used to create a console app in the TestProject folder.
 
-1. At the Terminal command prompt, to create a new console application in a specified folder, type **dotnet new console -o ./CsharpProjects/TestProject** and then press Enter.
+1. At the Terminal command prompt, to create a new console application in a specified folder, enter the following prompt:
+
+    ```dotnetcli
+    dotnet new console -o ./CsharpProjects/TestProject
+    ```
 
     This .NET CLI command uses a .NET program template to create a new C# console application project in the specified folder location. The command creates the CsharpProjects and TestProject folders for you, and uses TestProject as the name of your `.csproj` file.
 
-1. In the EXPLORER panel, expand the **CsharpProjects** folder.
+    If a message is displayed telling you that the files already exist, continue with the next steps. You'll reuse the existing project files.
 
-    You should see the TestProject folder and two files, a C# program file named Program.cs and a C# project file named TestProject.csproj.
+1. In the EXPLORER view, expand the **CsharpProjects** folder.
 
-1. In the EXPLORER panel, to view your code file in the Editor panel, select **Program.cs**.
+    You should see the **TestProject** folder and two files, a C# program file named Program.cs and a C# project file named TestProject.csproj.
+
+1. On the Visual Studio Code **File** menu, select **Open Folder**.
+
+1. In the **Open Folder** dialog, select the **CsharpProjects** folder, and then select **Select Folder**.
+
+1. In the EXPLORER view, expand the TestProject folder, and then select **Program.cs**.
 
 1. Delete the existing code lines.
 

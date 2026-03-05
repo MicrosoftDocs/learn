@@ -2,8 +2,6 @@
 uid: learn.azure.manage-resource-lifecycles-deployment-stacks.exercise-detach-delete-resources-deployment-stack
 title: Exercise - Detach and delete managed resources from a deployment stack
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Detach and delete managed resources from a deployment stack
   description: Learn how to detach and delete managed resources from a deployment stack.
   ms.date: 08/01/2023
@@ -14,4 +12,4 @@ metadata:
 durationInMinutes: 8
 content: | 
   [!include[](includes/8-exercise-detach-delete-resources-deployment-stack.md)]
-
+

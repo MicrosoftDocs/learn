@@ -2,13 +2,11 @@
 uid: learn.wwl.work-environments-azure-machine-learning.understand-environments
 title: Understand environments
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Understand environments
   description: Learn about environments in Azure Machine Learning, and how to list the available environments in a workspace.
   author: wwlpublish
   ms.author: madiepev
-  ms.date: 08/25/2024
+  ms.date: 12/01/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot

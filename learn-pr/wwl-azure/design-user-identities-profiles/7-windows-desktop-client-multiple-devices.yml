@@ -2,8 +2,6 @@
 uid: learn.wwl.design-for-user-identities-profiles.windows-desktop-client-to-multiple-devices
 title: Windows Desktop client to multiple devices
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Windows Desktop client to multiple devices
   description: "Windows Desktop client to multiple devices"
   ms.date: 02/10/2023
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 7
 content: |
-  [!include[](includes/7-windows-desktop-client-multiple-devices.md)]
+  [!include[](includes/7-windows-desktop-client-multiple-devices.md)]

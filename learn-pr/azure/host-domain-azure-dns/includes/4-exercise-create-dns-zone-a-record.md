@@ -6,6 +6,10 @@ In this unit, you'll:
 - Create an A record.
 - Verify that the A record resolves to an IP address.
 
+[!INCLUDE[](../../../includes/azure-optional-exercise-subscription-note.md)]
+
+[!INCLUDE[](../../../includes/azure-optional-exercise-create-resource-group-note.md)]
+
 ## Create a DNS zone in Azure DNS
 
 Before you can host the wideworldimports.com domain on your servers, you need to create a DNS zone. The DNS zone holds all the configuration records associated with your domain.
@@ -29,8 +33,8 @@ To create your DNS zone:
     | Setting  | Value |
     |---------|---------|
     | **Project details** |
-    | Subscription  |  Concierge subscription  |
-    | Resource group  | From the dropdown list, select <rgn>[sandbox resource group]</rgn> |
+    | Subscription  |  Choose your subscription  |
+    | Resource group  | From the dropdown list, select the resource group you want to use for this exercise. |
     | **Instance details** |
     | Name  |   The name needs to be unique in the sandbox. Use `wideworldimportsXXXX.com`, and replace the "Xs" with letters or numbers. |
 

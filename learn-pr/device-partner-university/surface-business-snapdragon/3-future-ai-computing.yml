@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.surface-business-snapdragon.future-ai-computing
+title: Future AI computing
+metadata:
+  title: Future AI Computing
+  description: This content is part of the "Surface Pro for Business with Snapdragon® X Elite and Plus processors" module.
+  ms.date: 08/22/2025
+  author: Stephanie-Rosenzweig
+  ms.author: v-stephanier
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/3-future-ai-computing.md)]

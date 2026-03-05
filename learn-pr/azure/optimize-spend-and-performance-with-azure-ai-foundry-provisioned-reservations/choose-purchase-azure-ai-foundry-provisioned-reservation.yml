@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.optimize-spend-and-performance-with-azure-ai-foundry-provisioned-reservations.choose-purchase-azure-ai-foundry-provisioned-reservation
+title: Choose and purchase the right Azure AI Foundry Provisioned Throughput reservation
+metadata:
+  title: Choose the right Azure AI Foundry Provisioned Throughput Reservation
+  description: Learn how to estimate, request, and deploy provisioned throughput units (PTUs) in Azure AI Foundry.
+  ms.date: 08/01/2025
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: unit
+durationInMinutes: 14
+content: |
+  [!include[](includes/choose-purchase-azure-ai-foundry-provisioned-reservation.md)]

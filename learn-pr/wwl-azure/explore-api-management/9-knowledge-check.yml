@@ -1,22 +1,23 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.explore-api-management.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
   adobe-target: true
   prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
-  ms.date: 10/28/2024
+  ms.date: 08/26/2025
   author: wwlpublish
   ms.author: jeffko
   ms.topic: unit
   ms.custom:
   - N/A
+  module_assessment: true
 durationInMinutes: 3
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Which of the following components of the API Management service would a developer use if they need to create an account and subscribe to get API keys?"
+  - content: "Which of the following components of the API Management service would a developer use if they need to create an account and subscribe to get subscription keys?"
     choices:
     - content: "API gateway"
       isCorrect: false
@@ -26,7 +27,7 @@ quiz:
       explanation: "Incorrect. The Azure portal is the administrative interface where you set up your API program."
     - content: "Developer portal"
       isCorrect: true
-      explanation: "Correct. The Developer portal serves as the main web presence for developers, and is where they can subscribe to get API keys."
+      explanation: "Correct. The Developer portal serves as the main web presence for developers, and is where they can subscribe to get subscription keys."
   - content: "Which of the following API Management policies applies a policy based on a condition?"
     choices:
     - content: "forward-request"

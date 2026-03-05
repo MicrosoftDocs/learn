@@ -1,18 +1,16 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.ingest-streaming-data-use-azure-stream-analytics-synapse.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module Assessment
   description: "Knowledge check"
-  ms.date: 12/12/2024
-  author: wwlpublish
-  ms.author: gmalc
+  ms.date: 08/21/2025
+  author: weslbo
+  ms.author: wedebols
   ms.topic: unit
+  module_assessment: true
 durationInMinutes: 3
 quiz:
-  title: "Check your knowledge"
   questions:
   - content: "Which type of output should you use to ingest the results of an Azure Stream Analytics job into a dedicated SQL pool table in Azure Synapse Analytics?"
     choices:

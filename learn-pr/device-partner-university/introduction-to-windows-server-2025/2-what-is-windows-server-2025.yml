@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.introduction-to-windows-server-2025.what-is-windows-server-2025
+title: What is Windows Server 2025?
+metadata:
+  title: What Is Windows Server 2025?
+  description: This content is part of the "Introduction to Windows Server 2025" module.
+  ms.date: 08/27/2025
+  author: melissawinters
+  ms.author: v-mwinters
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/2-what-is-windows-server-2025.md)]

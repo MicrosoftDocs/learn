@@ -1,0 +1,71 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.optimize-generative-ai-model-performance.knowledge-check
+title: Module assessment
+metadata:
+  title: Module assessment
+  description: Knowledge check about optimizing generative AI model performance.
+  author: ivorb
+  ms.author: berryivor
+  ms.date: 02/24/2026
+  ms.topic: unit
+  ai-usage: ai-assisted
+  module_assessment: true
+durationInMinutes: 3
+content: |
+quiz:
+  questions:
+  - content: "What is the primary purpose of a system message in a prompt?"
+    choices:
+    - content: "To define the model's role, behavior, and output constraints."
+      isCorrect: true
+      explanation: "Correct. A system message sets instructions that guide the model's responses, including its role, tone, format, and boundaries."
+    - content: "To provide training data that permanently changes the model."
+      isCorrect: false
+      explanation: "Incorrect. System messages provide instructions for the current conversation but don't permanently change the model. Fine-tuning changes the model's weights."
+    - content: "To retrieve data from an external data source."
+      isCorrect: false
+      explanation: "Incorrect. Retrieving data from external sources is the role of RAG, not system messages."
+  - content: "When should you use Retrieval Augmented Generation (RAG) instead of relying on prompt engineering alone?"
+    choices:
+    - content: "When you want the model to respond in a consistent style and format."
+      isCorrect: false
+      explanation: "Incorrect. For consistent style and format, fine-tuning is more appropriate. RAG is used to improve factual accuracy with external data."
+    - content: "When the model needs access to domain-specific or current data that it wasn't trained on."
+      isCorrect: true
+      explanation: "Correct. RAG retrieves relevant data from external sources at query time, enabling the model to generate accurate responses based on specific, current, or private data."
+    - content: "When you want to reduce the length of prompts sent to the model."
+      isCorrect: false
+      explanation: "Incorrect. RAG actually adds retrieved context to the prompt. Fine-tuning is a strategy that can reduce prompt length."
+  - content: "What does the temperature parameter control in a language model?"
+    choices:
+    - content: "The maximum number of tokens the model can generate."
+      isCorrect: false
+      explanation: "Incorrect. The maximum number of tokens is controlled by the max tokens parameter, not temperature."
+    - content: "The randomness and creativity of the model's responses."
+      isCorrect: true
+      explanation: "Correct. A higher temperature produces more random and creative responses, while a lower temperature produces more focused and deterministic output."
+    - content: "The speed at which the model processes requests."
+      isCorrect: false
+      explanation: "Incorrect. Temperature doesn't affect processing speed. It controls the randomness of token selection during response generation."
+  - content: "What does fine-tuning optimize in a language model?"
+    choices:
+    - content: "The factual accuracy of responses by connecting to external data."
+      isCorrect: false
+      explanation: "Incorrect. Connecting to external data for factual accuracy is achieved through RAG. Fine-tuning optimizes the model's behavioral consistency."
+    - content: "The consistency of the model's behavior, style, and output format."
+      isCorrect: true
+      explanation: "Correct. Fine-tuning trains the model on examples that demonstrate the desired style, tone, and format, maximizing the consistency of the model's behavior."
+    - content: "The number of tokens the model can process in a single request."
+      isCorrect: false
+      explanation: "Incorrect. Fine-tuning doesn't change the model's token processing capacity. It adjusts the model's weights to produce more consistent responses."
+  - content: "You're building a chat application that needs to answer questions using your company's product catalog while maintaining a specific brand voice. Which combination of strategies is most appropriate?"
+    choices:
+    - content: "Prompt engineering only, with detailed system messages."
+      isCorrect: false
+      explanation: "Incorrect. While prompt engineering is a good starting point, it can't give the model access to your product catalog data or guarantee consistent brand voice across all interactions."
+    - content: "RAG for the product catalog data, fine-tuning for the brand voice, and prompt engineering for conversation-specific instructions."
+      isCorrect: true
+      explanation: "Correct. RAG grounds the model in your actual product data, fine-tuning ensures consistent brand voice, and prompt engineering adds per-conversation guidance. These strategies are complementary."
+    - content: "Fine-tuning only, with the product catalog included in the training data."
+      isCorrect: false
+      explanation: "Incorrect. Fine-tuning alone isn't ideal for frequently changing data like product catalogs. RAG is better suited for dynamic, domain-specific data because it retrieves current information at query time."

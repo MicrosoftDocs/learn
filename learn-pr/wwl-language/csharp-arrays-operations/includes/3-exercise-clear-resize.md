@@ -25,7 +25,7 @@ The `Array.Resize()` method, on the other hand, allows you to add or remove elem
     ```
 
     > [!NOTE]
-    > This example uses [**Collection expression syntax**](https://devblogs.microsoft.com/dotnet/refactor-your-code-with-collection-expressions/), introduced in C# 12.
+    > This example uses [**Collection expression syntax**](https://devblogs.microsoft.com/dotnet/refactor-your-code-with-collection-expressions/), introduced in C# 12 and supported in .NET 10.
 
 1. Take a minute to focus on the line of code `Array.Clear(pallets, 0, 2);`.
 

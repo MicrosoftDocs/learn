@@ -4,10 +4,10 @@ title: Investigate incidents
 metadata:
   title: Investigate incidents
   description: "Investigate incidents"
-  ms.date: 01/24/2024
-  author: wwlpublish
+  ms.date: 11/06/2025
+  author: KenMAG
   ms.author: kelawson
   ms.topic: unit
-durationInMinutes: 4
+durationInMinutes: 8
 content: |
   [!include[](includes/4-investigate-incidents.md)]

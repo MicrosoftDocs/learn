@@ -17,15 +17,13 @@ To deploy new versions of the eShop product service, edit the **product.yml** fi
       - image: [replace with your ACR name].azurecr.io/productservice:latest
     ```  
 
-    Replace the `[replace with your ACR name]` with the name of your ACR; for example, **acseshop186748394**.
+    Replace the `[replace with your ACR name]` with the name of your ACR, such as **acseshop186748394**.
 
-1. In the top right, select **Commit changes...** then, in the dialog, select **Commit changes**.
+1. In the top right, select **Commit changes...**, and then in the dialog select **Commit changes**.
 
 ## Create the deployment action
 
-The YAML code adds a GitHub step that:
-
-Has one step that deploys new images. Here's the steps in an `ubuntu-latest` runner:
+The YAML code adds a GitHub step that has one step, which deploys new images. Here's the steps in an `ubuntu-latest` runner:
 
 1. Checks out the repository this file is in.
 1. **Azure Login** signs in to Azure with the service principal credentials.
@@ -86,7 +84,7 @@ Complete the following steps to create a GitHub action that deploys the coupon s
     
     ```
 
-1. In the top right, select **Commit changes...**, then in the dialog select **Commit changes**.
+1. In the top right, select **Commit changes...**, and then in the dialog select **Commit changes**.
 
 ## Trigger a deployment
 
@@ -104,7 +102,7 @@ You have a new product your marketing team would like to add to the catalog.
     new Product {  Name = "Camping Tent 2", Description = "This updated tent is improved and cheaper, perfect for your next trip.", Price = 79.99m, ImageUrl = "product9.png" },
     ```
 
-1. In the top right, select **Commit changes...** then, in the dialog, select **Commit changes**.
+1. In the top right, select **Commit changes...**, and then in the dialog select **Commit changes**.
 
 ## Monitor the deployment
 
@@ -115,7 +113,7 @@ You have a new product your marketing team would like to add to the catalog.
 
     :::image type="content" source="../media/4-kubernetes-deploy-workflow.png" alt-text="Screenshot that shows the deploy job selected with a list of all the steps." border="true" lightbox="../media/4-kubernetes-deploy-workflow.png":::
 
-1. In the terminal, run the following command to monitor the coupon service pods in your AKS cluster. The `--selector` flag filters the list to only pods for the coupon service, and the `--watch` flag instructs `kubectl` to watch for changes. 
+1. In the terminal, run the following command to monitor the coupon service pods in your AKS cluster. The `--selector` flag filters the list to only pods for the coupon service, and the `--watch` flag instructs `kubectl` to watch for changes.
 
     ```bash
     kubectl get pods --selector=app=productservice --watch
@@ -145,7 +143,7 @@ Complete the following steps to verify that your app still works:
     echo "http://$(kubectl get services --namespace ingress-nginx ingress-nginx-controller --output jsonpath='{.status.loadBalancer.ingress[0].ip}')"
     ```
 
-    The above command returns the external IP address for the web app. Hold <kbd>CTRL</kbd> and select the link to open the app in a new tab.
+    The command returns the external IP address for the web app. Hold <kbd>CTRL</kbd> and select the link to open the app in a new tab.
 
 Go to the products page to view the new tent listed at the bottom of the page.
 

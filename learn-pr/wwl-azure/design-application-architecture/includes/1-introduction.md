@@ -6,7 +6,7 @@ These design changes bring new challenges. Application states are distributed, a
 - Be resilient when failures occur.
 - Be able to integrate with other systems seamlessly.
 
-In this module, we explore how Azure lets you create applications composed of various components, including website front ends, back-end services, and triggered functions. We investigate how Azure includes various communication strategies to enable the components to pass data to each other.
+In this module, we explore how Azure lets you create AI-ready applications composed of various components, including website front ends, back-end services, and triggered functions. We investigate how Azure includes various communication strategies to enable the components to pass data to each other.
 
 ## Meet Tailwind Traders
 

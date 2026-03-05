@@ -16,9 +16,5 @@ Learning Path 5 Tips and Tricks
 - Use Demo 01 to show Azure OpenAI service
 - When describing generative AI, show some examples with either Microsoft Copilot in Bing or Azure OpenAI’s playground
 
-Learning Path 5 Demos
-- [Demo 01: Explore Azure OpenAI](https://aka.ms/ai900-azure-openai)
-- [Demo 02: Explore content filters in Azure OpenAI](https://aka.ms/ai900-content-filters)
-
 Learning Path 5 Exercise
-- [Exercise 01: Explore generative AI with Microsoft Copilot](https://aka.ms/ai900-bing-copilot)
+- [Exercise 01: Explore generative AI with Microsoft Copilot](https://microsoftlearning.github.io/mslearn-ai-fundamentals/Instructions/Exercises/02-generative-ai.html)

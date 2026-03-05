@@ -1,4 +1,4 @@
-To complete this optional exercise, you need access to an Azure subscription to create Azure resources. If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?azure-portal=true) before you begin.
+To complete this optional exercise, you need access to an Azure subscription to create Azure resources. If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn) before you begin.
 
 > [!NOTE]
 > If you perform the exercises in this module, you might incur costs in your Azure subscription. To estimate the costs, see [Microsoft Sentinel pricing](https://azure.microsoft.com/pricing/details/microsoft-sentinel).
@@ -22,9 +22,11 @@ To deploy the prerequisites for the exercise, perform the following tasks.
     | **Workspace name**  | Provide a unique name for the Microsoft Sentinel workspace, such as `<yourName>-sentinel`, where *\<yourName>* represents the workspace name that you chose in the previous task. |
     | **Location** | Accept the default value **[resourceGroup().location]**. |
     | **Simplevm Name** | Accept the default value **simple-vm**. |
-    | **Simplevm Windows OS Version** | Accept the default value **2016-Datacenter**.|
+    | **Simplevm Windows OS Version** | Accept the default value **2022-Datacenter**.|
 
 1. Select **Review + create**, and then select **Create**.
+
+   :::image type="content" source="../media/02-custom-deployment.png" alt-text="Screenshot of the Custom Deployment page." border="true":::
 
     > [!NOTE]
     > Wait for the deployment to finish. The deployment should take less than five minutes.

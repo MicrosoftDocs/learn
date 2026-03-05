@@ -2,8 +2,6 @@
 uid: learn.azure.azure-netapp-files-performance.summary
 title: Summary
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: summary
   title: Summary
   description: Review best practices for Azure NetApp Files performance tuning. 
@@ -13,4 +11,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 6
 content: |
-  [!include[](includes/5-summary.md)]
+  [!include[](includes/5-summary.md)]

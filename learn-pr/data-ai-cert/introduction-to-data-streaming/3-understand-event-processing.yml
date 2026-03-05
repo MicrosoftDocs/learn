@@ -2,13 +2,11 @@
 uid: learn.data-ai.introduction-to-data-streaming.event-processing
 title: Understand event processing
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Understand event processing
+  title: Understand Event Processing
   description: "Understand event processing"
-  ms.date: 12/08/2022
-  author: wwlpublish
-  ms.author: jamesh
+  ms.date: 08/21/2025
+  author: weslbo
+  ms.author: wedebols
   ms.topic: unit
 azureSandbox: false
 labModal: false

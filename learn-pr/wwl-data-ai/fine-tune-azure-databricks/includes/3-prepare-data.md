@@ -1,33 +1,26 @@
-To fine-tune a Large Language Model (LLM) with Azure Databricks, you first need to collect and prepare the dataset you want to use.
+To fine-tune a Large Language Model (LLM) with Azure Databricks, you first need to collect and prepare your dataset.
 
-Let's explore how to prepare your data when you want to fine-tune an Azure OpenAI model.
-
-> [!Tip]
-> For a different approach, learn more about how to [prepare data for fine-tuning Hugging Face models](/azure/databricks/machine-learning/train-model/huggingface/load-data?azure-portal=true).
+The data preparation process varies depending on which fine-tuning approach you choose. This unit focuses on preparing data for Azure OpenAI models. If you're working with Hugging Face models instead, you can learn more about [preparing data for Hugging Face fine-tuning](/azure/databricks/machine-learning/train-model/huggingface/load-data?azure-portal=true).
 
 ## Identify your data requirements
 
-The training data can be in JSON Lines (JSONL), CSV, or TSV format. The requirements of your data vary based on the specific task you intend to fine-tune your model for.
+Before you start fine-tuning, you need to understand what makes effective training data. While Azure OpenAI fine-tuning can be used for various text-based tasks, this unit focuses on conversational data that teaches the model how to respond in chat and question-answering scenarios.
 
-| Task | Dataset requirements |
-| --- | --- |
-| Text classification | Two columns: `Sentence` (string) and `Label` (integer/string) |
-| Token classification | Two columns: `Token` (string) and `Tag` (string) |
-| Question answering | Five columns: `Question` (string), `Context` (string), `Answers` (string), `Answers_start` (int), and `Answers_text` (string) |
-| Summarization | Two columns: `Document` (string) and `Summary` (string) |
-| Translation | Two columns: `Source_language` (string) and `Target_language` (string) |
+Your training data should represent the kinds of conversations you want your fine-tuned model to handle. If you're building a customer support chatbot, include real customer questions and ideal responses. If you're creating a technical assistant, include technical queries and expert answers.
 
-## Prepare you data
+For Azure OpenAI fine-tuning, your data must be in JSONL (JSON Lines) format. Each line contains a separate JSON object representing one training example, which works well for structuring conversation data with prompts and responses.
 
-To fine-tune a model for chat or question answering, your training dataset should consist of conversational exchanges that reflect the type of interactions you want the model to handle.
+## Prepare your data
 
-Here are some key elements to include in your dataset:
+While fine-tuning can be used for various applications, this section focuses on preparing data for chat and question-answering scenarios, which are the most common uses for Azure OpenAI fine-tuning.
 
-- **Prompts and responses**: Each entry in your dataset should have a prompt (the question or statement) and a corresponding response (the answer or reply). For example, a prompt could be a user's question, and the response would be the model's answer.
-- **Contextual information**: If your chat involves multi-turn conversations, it's important to include context from previous turns. Including context helps the model understand the flow of the conversation and generate more coherent responses.
-- **Diverse examples**: Include various questions and answers to cover different topics and scenarios. More diverse examples help the model generalize better and handle a wide range of queries.
-- **Human-generated responses**: Use human-generated responses to train the model. Using human-generated responses to fine-tune the model ensures that the model learns to generate natural and accurate replies.
-- **Formatting**: Ensure that each prompt and response pair is properly formatted. For example, you can use a fixed separator to indicate the end of a prompt and the beginning of a response. A common separator is \n\n###\n\n, which shouldn't appear elsewhere in the prompts.
+To fine-tune a model for these conversational scenarios, create a training dataset that consists of conversational exchanges reflecting the type of interactions you want the model to handle.
 
-> [!Tip]
-> Though your training dataset can be stored as JSONL, CSV, or TSV, JSONL is often preferred because it allows for easier handling of nested data structures and is more flexible for storing complex data. JSONL (JSON Lines) format stores each record as a separate JSON object on a single line, making it easier to process large datasets line-by-line without loading the entire dataset into memory. The JSONL format is particularly useful for training language models, as it can efficiently handle large volumes of text data and maintain the structure needed for fine-tuning tasks.
+Include the following key elements in your dataset:
+
+- **Prompts and responses**: Each entry should have a prompt (the question or statement) and a corresponding response (the answer or reply).
+- **Contextual information**: If your chat involves multi-turn conversations, include context from previous turns. Context helps the model understand the flow of the conversation and generate more coherent responses.
+- **Diverse examples**: Include various questions and answers to cover different topics and scenarios. Diverse examples help the model generalize better and handle a wide range of queries.
+- **Human-generated responses**: Use human-generated responses to train the model. Human-generated responses ensure that the model learns to generate natural and accurate replies.
+
+Well-prepared data is the foundation of successful fine-tuning, so investing time in creating high-quality, representative training examples will affect your model's performance.

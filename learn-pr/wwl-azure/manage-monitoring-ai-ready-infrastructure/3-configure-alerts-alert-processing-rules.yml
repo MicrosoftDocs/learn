@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-monitoring-ai-ready-infrastructure.configure-alerts-alert-processing-rules
+title: "Configure alerts and alert processing rules"
+metadata:
+  title: "Configure alerts and alert processing rules"
+  description: "Configure alerts and alert processing rules"
+  ms.date: 02/02/2026
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: unit
+durationInMinutes: 13
+content: |
+  [!include[](includes/3-configure-alerts-alert-processing-rules.md)]

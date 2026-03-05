@@ -1,8 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure-security.secure-aad-users-with-mfa.azure-multi-factor-authentication
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: What is Microsoft Entra multifactor authentication?
   description: Learn about Microsoft Entra multifactor authentication and how it helps protect user accounts.
   ms.date: 11/01/2024
@@ -13,4 +11,4 @@ title: What is Microsoft Entra multifactor authentication?
 durationInMinutes: 10
 content: |
   [!include[](includes/2-azure-multi-factor-authentication.md)]
-
+

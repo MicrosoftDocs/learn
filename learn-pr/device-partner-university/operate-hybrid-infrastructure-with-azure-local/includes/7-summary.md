@@ -1,0 +1,3 @@
+Azure Local empowers IT pros to modernize infrastructure while continuing to use the tools and processes they already know. By consolidating and virtualizing workloads, operating at scale across clusters, and extending management through Azure Arc, IT teams can deliver resilient and secure hybrid environments that are cost-efficient and easy to manage.
+
+This approach provides the best of both worlds: the flexibility and innovation of the cloud, combined with the familiarity and control of on-premises operations—helping organizations evolve at their own pace, without abandoning the tools and processes they trust.

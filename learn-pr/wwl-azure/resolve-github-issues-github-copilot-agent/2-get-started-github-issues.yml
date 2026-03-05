@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.resolve-github-issues-github-copilot-agent.get-started-github-issues
+title: Get started with GitHub issues
+metadata:
+  title: Get Started with GitHub Issues
+  description: "Get started with GitHub issues"
+  ms.date: 11/11/2025
+  author: chrishowd
+  ms.author: cahowd
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/2-get-started-github-issues.md)]

@@ -1,16 +1,15 @@
-Blue-green deployment is a technique that reduces risk and downtime by running two identical environments. These environments are called blue and green.
+Blue-green deployment implements zero-downtime release strategies through parallel identical environment architectures that enable seamless traffic switching and instant rollback capabilities for risk mitigation.
 
-Only one of the environments is live, with the live environment serving all production traffic.
+The deployment pattern maintains two production-equivalent environments designated as "blue" and "green," with only one environment actively serving production traffic at any given time.
 
 :::image type="content" source="../media/blue-green-new-58f05eb7.png" alt-text="Diagram showing blue-green deployment.":::
 
+In typical implementation scenarios, the blue environment serves active production traffic while the green environment remains idle awaiting deployment activities.
 
-For this example, blue is currently live, and green is idle.
+New software version deployment and comprehensive validation testing occur in the inactive environment (green in this scenario). Following successful deployment verification and quality validation, traffic routing switches from blue to green through load balancer or router configuration updates that redirect all incoming requests to the newly validated environment.
 
-As you prepare a new version of your software, the deployment and final testing stage occur in an environment that isn't live: in this example, green. Once you've deployed and thoroughly tested the software in green, switch the router or load balancer so all incoming requests go to green instead of blue.
+Following cutover completion, green becomes the active production environment while blue transitions to idle status, providing immediate fallback capabilities.
 
-Green is now live, and blue is idle.
+Zero-downtime deployment capability eliminates service interruption during application updates. Additionally, blue-green deployment provides instant rollback mechanisms that enable immediate reversion to the previous stable version through simple traffic switching when unexpected issues arise in the newly deployed environment.
 
-This technique can eliminate downtime because of app deployment. Besides, blue-green deployment reduces risk: if something unexpected happens with your new version on the green, you can immediately roll back to the last version by switching back to blue.
-
-When it involves database schema changes, this process isn't straightforward. You probably can't swap your application. In that case, your application and architecture should be built to handle both the old and the new database schema.
+Database schema evolution introduces architectural complexity requiring careful consideration. Schema modifications prevent straightforward environment switching without forward/backward compatibility planning. Application architecture must support dual-schema compatibility patterns enabling operation against both legacy and updated database structures during transition periods.

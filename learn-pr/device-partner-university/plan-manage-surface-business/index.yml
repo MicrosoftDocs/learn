@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.dpu.plan-manage-surface-business
+title: Plan and manage Surface for Business deployments
+metadata:
+  title: Plan And Manage Surface For Business Deployments
+  description: Learn how to plan and manage Surface for Business deployments that enable secure, collaborative, and productive work environments using the Surface Management Portal.
+  ms.date: 11/25/2025
+  author: hhreyes21
+  ms.author: v-homerreyes
+  ms.topic: module-standard-task-based
+  ms.service: surface
+  ms.custom: CB082423-1
+summary: >
+  Learn how to plan and manage Surface for Business deployments that enable secure, collaborative, and productive work environments using the Surface Management Portal.
+abstract: |
+ By the end of this module, you're able to:
+
+ - Plan a Surface deployment that aligns with your organization’s collaboration goals.
+ - Use the Surface Management Portal to configure and manage devices remotely.
+ - Enable Surface features that enhance productivity, such as Microsoft Teams integration and fluid inking.
+
+prerequisites: |
+  - None
+iconUrl: /training/achievements/plan-manage-surface-business.svg
+ratingEnabled: false
+levels:
+  - beginner
+roles:
+  - administrator
+  - business-leader
+  - business-owner
+  - business-user
+  - technology-manager
+products:
+  - surface
+units:
+  - learn.dpu.plan-manage-surface-business.introduction
+  - learn.dpu.plan-manage-surface-business.plan-surface-deployment-support-collaboration-productivity
+  - learn.dpu.plan-manage-surface-business.use-surface-management-portal
+  - learn.dpu.plan-manage-surface-business.deploy-surface-devices-with-the-surface-management-portal
+  - learn.dpu.plan-manage-surface-business.knowledge-check
+  - learn.dpu.plan-manage-surface-business.summary
+badge:
+  uid: learn.dpu.plan-manage-surface-business.badge

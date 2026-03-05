@@ -26,7 +26,7 @@ The following are the 10 most common models that tech startups use.
 
 **Description**: Customers pay based on the frequency or volume at which they use or consume your product.
 
-**Ideal for**: Infrastructure businesses that provide services that users can't afford to own, but need to access; examples are Azure or Twilio.
+**Ideal for**: Infrastructure businesses that provide services that users can't afford to own but need to access; examples are Azure or Twilio.
 
 **Practical considerations**:
 
@@ -44,7 +44,7 @@ The following are the 10 most common models that tech startups use.
 **Practical considerations**:
 
 - Allows you to generate recurring revenues, which provide many benefits.
-- Tiered pricing plans enable customers to pay based on the features they need, their volume of usage or the number of licences required, or the size or type of their organization.
+- Tiered pricing plans enable customers to pay based on the features they need, their volume of usage or the number of licenses required, or the size or type of their organization.
 - Allows you to offer new customers a free trial that converts to a paid plan after a set period. A free trial can be a good way of getting customers to start using your product, particularly if they're uncertain about the features, value, or pricing. It can also be a distraction if too few users convert.
 - Allows you to deliver a free version of your offering in which users can access basic features for free (usually forever) and unlock premium features by paying; examples are LinkedIn Premium, Strava, or Spotify. You need to ensure that a large enough percentage of users convert to paid plans and that free users can be serviced at very low cost.
 - As long as you have a higher new customer sign-up rate than churn (unsubscribe) rate, your company will be growing.
@@ -54,7 +54,7 @@ The following are the 10 most common models that tech startups use.
 
 **Description**: Make sales by directly contacting potential customers (outbound sales) or enabling customers to contact you directly (inbound sales).
 
-**Ideal for**: High-value products or services. Enterprise customers where relationships are crucial, or sales require interaction with multiple decision-makers and influencers over time; an example is SAP.
+**Ideal for**: High-value products or services. Enterprise customers where relationships are crucial or sales requiring interaction with multiple decision-makers and influencers over time; an example is SAP.
 
 **Practical considerations**:
 
@@ -97,7 +97,7 @@ The following are the 10 most common models that tech startups use.
 **Practical considerations**:
 
 - Limited scope for recurring revenues, because each customer job is an isolated event.
-- Cheap to start and can be profitable, especially if you have a rare skill set or one that would be highly valued by prospective clients.
+- Cheap to start and can be profitable, especially if you have a rare skill set or one that prospective clients value highly.
 - Limited scope for passive income, because you stop getting paid when you stop delivering the service.
 - Doesn't scale well. A time cost is associated with every occasion that you deliver the service, and there are only 24 hours in a day.
 
@@ -117,7 +117,7 @@ The following are the 10 most common models that tech startups use.
 
 **Description**: Get paid a license fee for granting another company the right to use your intellectual property (IP) for an agreed purpose.
 
-**Ideal for**: Advanced technologies that could be used by multiple licensees, or in applications where your technology is only part of a solution and relies on an existing product or infrastructure that you don't own; an example is image-correction software for use on MRI scanners.
+**Ideal for**: Advanced technologies that multiple licensees could use, or in applications where your technology is only part of a solution and relies on an existing product or infrastructure that you don't own; an example is image-correction software for use on MRI scanners.
 
 **Practical considerations**:
 
@@ -153,4 +153,4 @@ The following are the 10 most common models that tech startups use.
 
 ## Task: Evaluate a revenue model
 
-Select the revenue model that you believe makes most sense for your startup. Write a list of pros and cons for how this revenue model would work in your startup. Ask yourself what assumptions need to hold true for this revenue model to work. Consider how you can test those assumptions with customers, either through customer interviews or by running experiments.
+Select the revenue model that you believe makes the most sense for your startup. Write a list of pros and cons for how this revenue model would work in your startup. Ask yourself what assumptions need to hold true for this revenue model to work. Consider how you can test those assumptions with customers, either through customer interviews or by running experiments.

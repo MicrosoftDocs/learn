@@ -1,13 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.get-started-lakehouses.explore-data-lakehouse
-title: Explore and transform data in a lakehouse
+title: Query and analyze lakehouse data
 metadata:
-  title: Explore and transform data in a lakehouse
-  description: "Explore and transform data in a lakehouse"
-  ms.date: 03/19/2025
+  title: Query and Analyze Lakehouse Data
+  description: "Learn how to query and analyze data in a lakehouse using SQL and Spark notebooks."
+  ms.date: 03/04/2026
   author: angierudduck
   ms.author: anrudduc
   ms.topic: unit
-durationInMinutes: 6
+  ai-usage: ai-assisted
+durationInMinutes: 7
 content: |
   [!include[](includes/4-explore-data-lakehouse.md)]

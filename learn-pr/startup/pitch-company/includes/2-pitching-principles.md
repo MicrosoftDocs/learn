@@ -6,9 +6,9 @@ Every time you deliver a pitch, you should have a clear purpose in mind.
 
 It's common for company founders to view investor pitches as an opportunity to get an immediate commitment for funding, as you might see on shows like Shark Tank.
 
-But this scenario rarely plays out. Most of the time, a pitch is just the start of a conversation. By getting people interested in what you're doing, you're encouraging them to connect with you afterward to find out more.
+However, this scenario rarely plays out. Most of the time, a pitch is just the start of a conversation. By getting people interested in what you're doing, you're encouraging them to connect with you afterward to find out more.
 
-If you give your pitch at a public event, such as an accelerator demo day, the purpose of your pitch is to act as a short teaser that gives your audience some small nuggets of information and makes them want to know more.
+If you give your pitch at a public event such as an accelerator demo day, the purpose of your pitch is to act as a short teaser that gives your audience some small nuggets of information and makes them want to know more.
 
 If you pitch an investor such as an angel group or a venture capital fund, it's likely that most of the people in the room know little about your company, and your pitch is the first of many meetings before you actually have money in the bank.
 
@@ -16,7 +16,7 @@ If you pitch an investor such as an angel group or a venture capital fund, it's 
 
 The most impactful pitches are delivered at just the right level for the audience. By understanding your audience's objectives and their current level of knowledge about your company and sector, you can deliver a pitch that's informative without being condescendingly simple or overloading them with unfamiliar terminology.
 
-Most people underestimate the gap between their own knowledge and that of their audience. This gap can result in the audience missing key points, because they don't understand the industry, the technology, market dynamics, or terminology.
+Most people underestimate the gap between their own knowledge and that of their audience. This gap can result in the audience missing key points because they don't understand the industry, the technology, market dynamics, or terminology.
 
 If you lose your audience early in your pitch, it's likely that they'll switch off and you'll struggle to keep their attention for the remainder of your presentation.
 
@@ -33,7 +33,7 @@ Startup founders need to be familiar with several pitch formats. Let's review so
 
 An elevator pitch is a short, pithy description of your company that you can use in casual conversation.
 
-Let's say you're at a networking event. You meet an investor, and they ask "What does your company do?" What do you say? Try it right now. Can you, in one or two sentences, give a clear and compelling explanation of what your company does? Do you think your elevator pitch would get a potential investor interested to know more?
+Let's say you're at a networking event. You meet an investor, and they ask: "What does your company do?" What do you say? Try it right now. Can you, in one or two sentences, give a clear and compelling explanation of what your company does? Do you think your elevator pitch would get a potential investor interested to know more?
 
 Unless you've had significant practice at this, it's likely your elevator pitch needs work. Many startup founders find it helpful to script their elevator pitch and memorize it rather than attempt to come up with something on the spot.
 
@@ -45,7 +45,7 @@ One format that's proven to be a good starting point is the *Gaddie Pitch*, name
 
 Here's an example of a Gaddie Pitch for Canva:
 
-**You know how** good graphic design is important to every company.
+**You know how** good graphic design is important to every company?
 
 **Well, what we do is** provide simple online tools for anyone to make professional presentations, social media graphics, and more in just a few minutes.
 
@@ -61,7 +61,7 @@ Investors who attend accelerator demo days are usually there for one reason: to 
 
 Therefore, your primary aim at a demo day pitch should be to convey that your startup has a shot at huge success, and investors would be wise to follow up with you.
 
-Since the beginning of the COVID-19 pandemic, almost all accelerator demo days moved completely online, and this trend is likely to continue. Your pitch might exist online in perpetuity, which means you should avoid disclosing anything that's highly sensitive or that could jeopardize fundraising opportunities in the future.
+Since the beginning of the COVID-19 pandemic, almost all accelerator demo days have moved completely online, and this trend is likely to continue. Your pitch might exist online in perpetuity, which means you should avoid disclosing anything that's highly sensitive or that could jeopardize fundraising opportunities in the future.
 
 ### Video pitch
 
@@ -75,6 +75,7 @@ Accelerators also look for startup teams that are coachable. They want to know t
 
 > [!TIP]
 > As you build an accelerator application video, take advantage of the following tips:
+>
 > - Stay within the requested time limit.
 > - Upload your video to YouTube and provide a link. The video can be marked as unlisted but not private or password-protected.
 > - Don't use slides or fancy graphics, only the founders talking.
@@ -130,14 +131,14 @@ It's useful to write a one-page executive summary that complements your pitch de
 
 The executive summary is an excellent way to follow up with a potential investor whom you meet at a networking event or demo day. It presents a brief, high-level overview of your company and can include the following information:
 
-- Company overview, a brief description of what your company or your product does
-- Current status, including any recent notable milestones
-- Key metrics, including traction, revenue, conversion rate, growth rate, churn
-- Ideal target customer
-- Total addressable market (size of opportunity)
-- Leadership team, including names, LinkedIn profiles, and skill sets
-- Previous funding amount (if any)
-- Current funding round: how much you're raising, what you're using it for, any funds already committed, terms
+- Company overview: a brief description of what your company or your product does.
+- Current status, including any recent notable milestones.
+- Key metrics, including traction, revenue, conversion rate, growth rate, churn.
+- Ideal target customer.
+- Total addressable market (size of opportunity).
+- Leadership team, including names, LinkedIn profiles, and skill sets.
+- Previous funding amount (if any).
+- Current funding round: how much you're raising, what you're using it for, any funds already committed, terms.
 
 > [!TIP]
 > Save the executive summary as a PDF file to a shared location such as OneDrive, and have a link to it readily available on your phone. When you meet a potential investor, you can quickly send them the link.

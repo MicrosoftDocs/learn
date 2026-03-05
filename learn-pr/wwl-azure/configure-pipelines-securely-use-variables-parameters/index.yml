@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.configure-pipelines-securely-use-variables-parameters
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Configure pipelines to securely use variables and parameters
   description: This module is designed to help learners understand the importance of configuring pipelines to use variables and parameters securely in Azure DevOps.
   ms.date: 01/18/2024
@@ -60,4 +58,4 @@ units:
 - learn.wwl.configure-pipelines-securely-use-variables-parameters.summary
 badge:
   uid: learn.wwl.configure-pipelines-securely-use-variables-parameters.badge
-
+

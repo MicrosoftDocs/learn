@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-data-loss-prevention-alerts.investigate-alerts-security-copilot-agents
+title: Investigate DLP alerts with Security Copilot and AI agents
+metadata:
+  title: Investigate DLP alerts with Security Copilot and AI agents
+  description: "Investigate DLP alerts with Security Copilot and AI agents."
+  ms.date: 11/03/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/investigate-alerts-security-copilot-agents.md)]

@@ -8,6 +8,7 @@ metadata:
   author: asw101
   ms.author: aawislan
   ms.topic: unit
+  ms.custom: sfi-ropc-nochange
 durationInMinutes: 45
 content: |
   [!include[](includes/4-explore-run-linux-postgresql-workloads.md)]

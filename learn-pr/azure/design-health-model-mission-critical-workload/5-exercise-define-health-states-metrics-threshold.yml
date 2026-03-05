@@ -2,8 +2,6 @@
 uid: learn.design-health-model-mission-critical-workload.exercise-define-health-states-metrics-threshold
 title: Exercise - Define health state, metrics, and thresholds
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Define health state, metrics, and thresholds
   description: Learn how to define the health state, metrics, and thresholds for a health model.
   ms.date: 08/05/2024
@@ -13,4 +11,4 @@ metadata:
 durationInMinutes: 6
 content: |
   [!include[](includes/5-exercise-define-health-states-metrics-threshold.md)]
-
+

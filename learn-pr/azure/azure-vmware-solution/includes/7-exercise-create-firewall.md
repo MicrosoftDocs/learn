@@ -1,4 +1,4 @@
-﻿> [!IMPORTANT] 
+﻿> [!IMPORTANT]
 
 > Try our Secure Outbound Internet Connectivity click-through demo. This demo shows how to use Azure vNET with Route Server, a network virtual appliance (NVA), and Azure Firewall to inspect and manage traffic originating from Azure VMware Solution and heading to the internet. [Try now](https://regale.cloud/microsoft/play/4174/secure-outbound-internet-connectivity#/0/0)
 

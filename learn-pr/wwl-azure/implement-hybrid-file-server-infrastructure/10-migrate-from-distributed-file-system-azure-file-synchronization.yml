@@ -2,8 +2,6 @@
 uid: learn.wwl.implement-hybrid-file-server-infrastructure.migrate-from-dfsr-to-azure-file-sync
 title: Migrate from DFSR to Azure File Sync
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Migrate from DFSR to Azure File Sync
   description: "Migrate from DFSR to Azure File Sync"
   ms.date: 01/01/2025
@@ -13,4 +11,4 @@ metadata:
 azureSandbox: false
 durationInMinutes: 5
 content: |
-  [!include[](includes/10-migrate-from-distributed-file-system-azure-file-synchronization.md)]
+  [!include[](includes/10-migrate-from-distributed-file-system-azure-file-synchronization.md)]

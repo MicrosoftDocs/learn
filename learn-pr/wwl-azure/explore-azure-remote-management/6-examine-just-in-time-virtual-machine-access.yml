@@ -2,8 +2,6 @@
 uid: learn.wwl.explore-azure-remote-management.examine-just-time-jit-virtual-machine-access
 title: Examine just-in-time (JIT) virtual machine access
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Examine just-in-time (JIT) virtual machine access
   description: "Examine just-in-time (JIT) virtual machine access."
   ms.date: 08/01/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 4
 content: |
-  [!include[](includes/6-examine-just-in-time-virtual-machine-access.md)]
+  [!include[](includes/6-examine-just-in-time-virtual-machine-access.md)]

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.establish-ai-cost-management-practices.estimate-ai-costs
+title: Estimating AI costs
+metadata:
+  title: Estimating AI Costs
+  description: Overview of estimating AI costs.
+  ms.date: 10/03/2025
+  author: Orin-Thomas
+  ms.author: socuff
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/1-estimate-ai-costs.md)]

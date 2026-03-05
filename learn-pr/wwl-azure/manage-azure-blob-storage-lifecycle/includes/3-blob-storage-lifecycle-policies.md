@@ -44,7 +44,7 @@ The following sample rule filters the account to run the actions on objects that
 * Tier blob to cool tier 30 days after last modification
 * Tier blob to archive tier 90 days after last modification
 * Delete blob 2,555 days (seven years) after last modification
-* Delete blob snapshots 90 days after snapshot creation
+* Delete blob snapshots 90 days after snapshot creation 
 
 ```json
 {
@@ -55,11 +55,6 @@ The following sample rule filters the account to run the actions on objects that
       "type": "Lifecycle",
       "definition": {
         "actions": {
-          "version": {
-            "delete": {
-              "daysAfterCreationGreaterThan": 90
-            }
-          },
           "baseBlob": {
             "tierToCool": {
               "daysAfterModificationGreaterThan": 30
@@ -70,6 +65,11 @@ The following sample rule filters the account to run the actions on objects that
             },
             "delete": {
               "daysAfterModificationGreaterThan": 2555
+            }
+          },
+          "snapshot": {
+            "delete": {
+              "daysAfterCreationGreaterThan": 90
             }
           }
         },

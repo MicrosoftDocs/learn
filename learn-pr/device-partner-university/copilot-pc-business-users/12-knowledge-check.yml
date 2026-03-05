@@ -1,0 +1,71 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.copilot-pc-business-users.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge Check
+  description: This content is part of the "Introducing Copilot+ PC business users" module.
+  ms.date: 08/04/2025
+  author: Stephanie-Rosenzweig
+  ms.author: v-stephanier
+  ms.topic: unit
+durationInMinutes: 5
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "What is the top concern for IT Decision Makers (ITDMs) regarding generative AI?"
+    choices:
+        - content: "Difficulty in training employees"
+          isCorrect: false
+          explanation: "Incorrect. While training is a challenge, it isn't the top concern."
+        - content: "Lack of innovation"
+          isCorrect: false
+          explanation: "Incorrect. ITDMs are focused on innovation but are more concerned about security risks."
+        - content: "New security risks to data"
+          isCorrect: true
+          explanation: "Correct. A reported 71% of early adopting ITDMs believe generative AI will introduce new security risks."
+        - content: "High cost of AI hardware"
+          isCorrect: false
+          explanation: "Incorrect. Cost is a consideration, but not the top concern."
+  - content: "Which role is primarily focused on generating revenue and streamlining workflows using AI-enhanced technologies?"
+    choices:
+        - content: "IT Decision Makers"
+          isCorrect: false
+          explanation: "Incorrect. They focus on technology strategy and security."
+        - content: "C-suite Executives"
+          isCorrect: false
+          explanation: "Incorrect. They oversee strategy and innovation but aren't primarily focused on revenue generation."
+        - content: "Sales and Marketing pros"
+          isCorrect: true
+          explanation: "Correct. Their main priority is generating revenue and improving productivity through AI."
+        - content: "Small and medium business Founders and Owners"
+          isCorrect: false
+          explanation: "Incorrect. They're focused on overall business growth and operations."
+  - content: "What is a key benefit of Copilot+ PCs for knowledge creators?"
+    choices:
+        - content: "Reducing company expenses"
+          isCorrect: false
+          explanation: "Incorrect. While AI might contribute to cost savings, this isn't the key benefit for knowledge creators."
+        - content: "Automating customer service entirely"
+          isCorrect: false
+          explanation: "Incorrect. Copilot+ PCs support but don't fully automate customer service."
+        - content: "Accelerating results and safeguarding work"
+          isCorrect: true
+          explanation: "Correct. Copilot+ PCs help knowledge creators work efficiently and securely."
+        - content: "Replacing human decision-making"
+          isCorrect: false
+          explanation: "Incorrect. AI is used to augment, not replace, human decision-making."
+  - content: "Which of the following is NOT listed as a top responsibility for C-suite executives?"
+    choices:
+        - content: "Digital strategy"
+          isCorrect: false
+          explanation: "Incorrect. This is listed as a top responsibility for C-suite executives."
+        - content: "Product development"
+          isCorrect: false
+          explanation: "Incorrect. This is one of the key responsibilities mentioned."
+        - content: "Sales and business development"
+          isCorrect: true
+          explanation: "Correct. This responsibility is associated with Sales and Marketing pros, not C-suite executives."
+        - content: "Employee management"
+          isCorrect: false
+          explanation: "Incorrect. C-suite executives are responsible for managing employees."
+

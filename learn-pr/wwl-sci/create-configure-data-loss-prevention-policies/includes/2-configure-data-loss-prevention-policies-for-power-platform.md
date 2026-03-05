@@ -1,6 +1,5 @@
 While data loss prevention (DLP) policies in the Microsoft Purview compliance portal protect data in Microsoft 365 services from being shared, DLP policies in Power Platform are used to restrict the communication between connectors. A connector in Power Platform is a wrapper or an API that allows predefined triggers and actions to access the data behind it.
 
-
 There are three groups you can use to categorize your connectors:
 
 | **Category**| **Actions**|
@@ -13,7 +12,7 @@ Connectors can reside in only one group at a time. For example, the SharePoint O
 
 There's no specification as to the type of data you can share over the connector. For example, if you access a SharePoint Online connector you can access the content of a library no matter what is placed in that library.
 
-To protect data in your organization, you can use PowerApps to create and enforce policies that define the consumer connectors for which specific business data can be shared. These DLP policies ensure that data is managed in a uniform manner across your organization, and they prevent important business data from being accidentally published to connectors such as social media sites.
+To protect data in your organization, you can use Power Platform DLP policies to define which consumer connectors specific business data can be shared with. These policies help ensure consistent data handling across your organization and prevent important business data from being accidentally shared with connectors such as social media sites.
 
 While the blocked group exists, not all Connectors can be added to the blocked group. In this case the Block action is greyed, and a warning appears.
 
@@ -51,4 +50,3 @@ If you want to create a DLP Policy to deny connectivity between SharePoint Onlin
 1. On the Review and create policy page you can review all settings. Select **Create Policy**.
 
 Or you can use the PowerApps PowerShell module using the **New-DlpPolicy** cmdlet to create a DLP policy for Power Platform.
-

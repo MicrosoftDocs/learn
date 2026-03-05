@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.migrate-premises-mongodb-databases-azure-database-mongodb
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Migrate on-premises MongoDB databases to Cosmos DB
   description: "Migrate on-premises MongoDB databases to Cosmos DB"
   ms.date: 02/03/2021
@@ -44,4 +42,4 @@ units:
 - learn.wwl.migrate-premises-mongodb-databases-azure-database-mongodb.summary
 badge:
   uid: learn.wwl.migrate-premises-mongodb-databases-azure-database-mongodb.badge
-
+

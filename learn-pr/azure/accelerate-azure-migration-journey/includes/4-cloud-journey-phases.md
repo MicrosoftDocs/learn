@@ -37,11 +37,11 @@ To avoid common migration blockers, create a clear and concise business strategy
 
 Defining a strategy for a move to the cloud is an important beginning step in the process. Proper strategic planning, done early, sets a guide for the migration and modernization of on-premises workloads to the cloud.
 
-This is accomplished by creating a cloud strategy team. This team is responsible for the planning of the move to Azure. They define motivations and business outcomes and then validate and maintain alignment between the business priorities and cloud adoption efforts.
+This is accomplished by creating a cloud strategy team. This team is responsible for the planning of the move to Azure. They define motivations and business outcomes, and then validate and maintain alignment between the business priorities and cloud adoption efforts.
 
 #### Engage a partner
 
-The migration and modernization process often requires a deep understanding of Azure in order to ensure a smooth a successful migration. Engaging a partner early in the process provides the ability to leverage their deep domain expertise both in the planning and execution of the move.
+The migration and modernization process often requires a deep understanding of Azure in order to ensure a smooth and successful migration. Engaging a partner early in the process provides the ability to leverage their deep domain expertise both in the planning and execution of the move.
 
 By engaging a partner in the planning process, potential pitfalls can be avoided in the migration and modernization journey because they have the experience to drive the move forward along the correct path.
 
@@ -55,7 +55,7 @@ Once a strategy is defined, it's time to start planning the move. As with defini
 
 #### Discover and assess
 
-Use discovery and assessment to improve technical alignment and create an action plan for executing your strategy. During this step, validate the business case using data about the current state environment. Then perform quantitative analysis and an in-depth qualitative assessment of the highest priority workloads.
+Use discovery and assessment to improve technical alignment and create an action plan for executing your strategy. During this step, validate the business case using data about the current state environment. Then, perform quantitative analysis and an in-depth qualitative assessment of the highest priority workloads.
 
 You need to discover and assess your apps, databases, and infrastructure. Build an inventory of your infrastructure, assess your on-premises environments, get right-sizing guidance, workload-level cost estimates, and performance metrics. [Azure Migrate](https://azure.microsoft.com/services/azure-migrate/?azure-portal=true) can be used to build this inventory. You can also gain insights into your dependencies, such as which web servers connect to your database servers.
 
@@ -71,9 +71,9 @@ At the highest level, the formula for business justification is simple. But the 
 
 #### Holistic plan
 
-With this information in hand, your cloud migration Center of Excellence (CoE) team can now build a holistic migration plan. Account for workload priorities, timelines, milestones, resources, and funding. Determine if each application should be **migrated** or **modernized**. Define your approach based on three considerations: migration triggers, business goals, and workload priorities. Migrate if you have time-sensitive triggers. Modernize for targeted and business-critical workloads that will see continued investment.
+With this information in hand, your cloud migration Center of Excellence (CoE) team can now build a holistic migration plan. You should account for workload priorities, timelines, milestones, resources, and funding. Determine if each application should be **migrated** or **modernized**. Define your approach based on three considerations: migration triggers, business goals, and workload priorities. Migrate if you have time-sensitive triggers. Modernize for targeted and business-critical workloads that will see continued investment.
 
-Next, break up your overall plan into migration waves, each with a group of related workloads. Get buy-in from leadership and your new migration center of excellence.
+Next, break up your overall plan into migration waves, each with a group of related workloads. Get buy-in from leadership, and your new migration center of excellence.
 
 ## Implementation
 
@@ -85,7 +85,7 @@ Executing on the plan is where the act of moving to the cloud starts to unfold. 
 
 ### Migration and modernization waves
 
-During the move to the cloud, use a wave-based approach to execute a manageable set of workloads. *Migrate* and *modernize* in waves with an iterative approach. Pick a manageable-sized cohort of workloads for each wave and perform the move using automated tools. Select the target cloud services to move your workloads into, like Azure IaaS for infrastructure or Azure App Service for web apps.
+During the move to the cloud, use a wave-based approach to execute a manageable set of workloads. *Migrate* and *modernize* in waves with an iterative approach. Pick a manageable-sized cohort of workloads for each wave, and perform the move using automated tools. Select the target cloud services to move your workloads into, like Azure IaaS for infrastructure or Azure App Service for web apps.
 
 :::image type="content" source="../media/migration-modernization-waves.png" alt-text="Diagram showing a migration and modernization wave.":::
 
@@ -93,7 +93,7 @@ During the move to the cloud, use a wave-based approach to execute a manageable 
 
 Existing employees can play a hands-on role in the migration and modernization effort, but additional skills might be required. In this step, find ways to develop those skills or use partners to add to those skills. Get your IT and app development teams up to speed on cloud technologies, migration tools, and operational processes. Upfront training investment helps you to scale your migration efforts more efficiently and set up your organization for success.
 
-Ensure your teams are ready and skilled up on Azure fundamentals and workload-level considerations. For example: If you're migrating virtual machines, your IT teams need to be well versed in Azure IaaS capabilities and how to operate them once they get here. Same for databases and apps.
+Ensure your teams are ready and skilled up on Azure fundamentals and workload-level considerations. For example, if you're migrating virtual machines, your IT teams need to be well versed in Azure IaaS capabilities and how to operate them once they get here. The same goes for databases and apps.
 
 [Build a skills-readiness plan](/azure/cloud-adoption-framework/plan/adapt-roles-skills-processes?azure-portal=true). Quickly evaluate your existing skills to identify what other skills the team should develop.
 
@@ -103,11 +103,11 @@ To migrate your applications and create the new modernized versions, you first n
 
 - [Choose a landing zone](/azure/cloud-adoption-framework/ready/landing-zone/?azure-portal=true): Find the right approach to deploying a landing zone based on your adoption pattern. Then deploy that standardized codebase.
 
-- [Expand your landing zone](/azure/cloud-adoption-framework/ready/considerations/?azure-portal=true): Whatever your starting point, identify gaps in the deployed landing zone and add required components for resource organization, security, governance, compliance, and operations.
+- [Expand your landing zone](/azure/cloud-adoption-framework/ready/considerations/?azure-portal=true): Whatever your starting point, identify gaps in the deployed landing zone, and add required components for resource organization, security, governance, compliance, and operations.
 
 #### Migration and modernization
 
-The [Azure Migration and Modernization Program (AMMP)](https://azure.microsoft.com/solutions/migration/migration-modernization-program) has determined that projects with six to eight applications in a wave enjoy the most success. This approach lets teams work in a focused manner, thereby increasing the quality of migration and modernization, and it allows improvements along the way. This program also helps assess and plan which workloads can be modernized, and the process to accomplish it.
+The [Azure Migration and Modernization Program (AMMP)](https://azure.microsoft.com/solutions/migration/migration-modernization-program) has determined that projects with six to eight applications in a wave enjoy the most success. This approach lets teams work in a focused manner, thereby increasing the quality of migration and modernization. It allows improvements along the way. This program also helps assess and plan which workloads can be modernized, and the process to accomplish it.
 
 ## Operations
 
@@ -125,9 +125,9 @@ Governance is a key factor to the long-term success of any effort. The speed to 
 
 #### Azure Policy
 
-[Azure Policy](/azure/governance/policy/overview?azure-portal=true) is an important tool when implementing the policies of your business. Azure Policy helps to enforce organizational standards and to assess compliance at-scale. Through its compliance dashboard, it provides an aggregated view to evaluate the overall state of the environment, with the ability to drill down to the per-resource, per-policy granularity. It also helps to bring your resources to compliance through bulk remediation for existing resources and automatic remediation for new resources.
+[Azure Policy](/azure/governance/policy/overview?azure-portal=true) is an important tool when implementing the policies of your business. Azure Policy helps to enforce organizational standards and to assess compliance at-scale. Through its compliance dashboard, it provides an aggregated view to evaluate the overall state of the environment, with the ability to drill down to the per-resource and per-policy granularity. It also helps to bring your resources to compliance through bulk remediation for existing resources and automatic remediation for new resources.
 
-:::image type="content" source="../media/select-assignments.png" alt-text="Screenshot of the Azure Portal showing the Policy dashboard.":::
+:::image type="content" source="../media/select-assignments.png" alt-text="Screenshot of the Azure portal showing the Policy dashboard.":::
 
 ### Manage
 
@@ -141,7 +141,7 @@ Once workloads have been moved into the cloud, Microsoft Defender for Cloud can 
 
 #### Business continuity
 
-Business continuity is still important to Tailwind Traders after the migration and modernization process, both for applications that have been moved to the cloud and applications that still exist on-premises. Insuring that Azure resources have backups in place and can be recovered when needed.
+Business continuity is still important to Tailwind Traders after the migration and modernization process, both for applications that have been moved to the cloud and applications that still exist on-premises. It ensures that Azure resources have backups in place and can be recovered when needed.
 
 By moving their applications to Azure, Tailwind Traders is able to manage their end-to-end business continuity solution both in the cloud and on-premises in an easy to deploy, cost-effective, secure, and scalable manner.
 

@@ -1,64 +1,125 @@
+Many organizations maintain Active Directory Domain Services (AD DS) as their on-premises identity foundation, often synchronized with Microsoft Entra ID for hybrid scenarios. As a security architect, you specify requirements for hardening AD DS to reduce attack surface and protect against credential theft and lateral movement.
 
-The following table provides a summary of the recommendations provided in this document for securing an AD DS installation. Some best practices are strategic in nature and require comprehensive planning and implementation projects; others are tactical and focused on specific components of Active Directory and related infrastructure.
+## Understanding AD DS security risks
 
-Practices are listed in approximate order of priority, that is, lower numbers indicate higher priority. Where applicable, best practices are identified as preventative or detective in nature. All of these recommendations should be thoroughly tested and modified as needed for your organization's characteristics and requirements.
+Active Directory is a primary target for attackers because it controls access to organizational resources. Common attack patterns include:
 
-| **Best Practice** | **Tactical or Strategic** | **Preventative or Detective** |
-|--|--|--|
-| Patch applications. | Tactical | Preventative |
-| Patch operating systems. | Tactical | Preventative |
-| Deploy and promptly update antivirus and antimalware software across all systems and monitor for attempts to remove or disable it. | Tactical | Both |
-| Monitor sensitive Active Directory objects for modification attempts and Windows for events that may indicate attempted compromise. | Tactical | Detective |
-| Protect and monitor accounts for users who have access to sensitive data | Tactical | Both |
-| Prevent powerful accounts from being used on unauthorized systems. | Tactical | Preventative |
-| Eliminate permanent membership in highly privileged groups. | Tactical | Preventative |
-| Implement controls to grant temporary membership in privileged groups when needed. | Tactical | Preventative |
-| Implement secure administrative hosts. | Tactical | Preventative |
-| Use application allowlists on domain controllers, administrative hosts, and other sensitive systems. | Tactical | Preventative |
-| Identify critical assets, and prioritize their security and monitoring. | Tactical | Both |
-| Implement least-privilege, role-based access controls for administration of the directory, its supporting infrastructure, and domain-joined systems. | Strategic | Preventative |
-| Isolate legacy systems and applications. | Tactical | Preventative |
-| Decommission legacy systems and applications. | Strategic | Preventative |
-| Implement secure development lifecycle programs for custom applications. | Strategic | Preventative |
-| Implement configuration management, review compliance regularly, and evaluate settings with each new hardware or software version. | Strategic | Preventative |
-| Migrate critical assets to pristine forests with stringent security and monitoring requirements. | Strategic | Both |
-| Simplify security for end users. | Strategic | Preventative |
-| Use host-based firewalls to control and secure communications. | Tactical | Preventative |
-| Patch devices. | Tactical | Preventative |
-| Implement business-centric lifecycle management for IT assets. | Strategic | N/A |
-| Create or update incident recovery plans. | Strategic | N/A |
+| Attack category | Description |
+|---|---|
+| **Credential theft** | Extracting password hashes, Kerberos tickets, or cached credentials from domain-joined systems |
+| **Privilege escalation** | Exploiting misconfigurations to gain higher privileges (DCSync, AdminSDHolder manipulation) |
+| **Lateral movement** | Using stolen credentials to access other systems across the network |
+| **Persistence** | Creating backdoors through group membership changes, service accounts, or Group Policy Objects (GPOs) |
 
-## Reducing the Active Directory Attack Surface
+Your hardening requirements should address each of these attack categories. These attacks are commonly enabled by organizational weaknesses: gaps in anti-malware coverage, incomplete patching (especially non-Windows systems), outdated applications or operating systems still in production, and misconfigurations such as disabled host firewalls or standardized local administrator passwords.
 
-This section focuses on technical controls to reduce the attack surface of an Active Directory installation. Included in this section are the following subjects:
+## Reducing the AD DS attack surface
 
-- The **Privileged Accounts and Groups in Active Directory** section discusses the highest privileged accounts and groups in Active Directory and the mechanisms by which privileged accounts are protected. Within Active Directory, three built-in groups are the highest privilege groups in the directory (Enterprise Admins, Domain Admins, and Administrators), although a number of additional groups and accounts should also be protected.
+### Administrative account protection
 
-- The **Implementing Least-Privilege Administrative Models** section focuses on identifying the risk that the use of highly privileged accounts for day-to-day administration presents, in addition to providing recommendations to reduce that risk.
+- **Minimize privileged accounts** - Strictly limit membership in the Administrators, Domain Admins, and Enterprise Admins groups to the smallest number of accounts necessary. These groups should be considered equally powerful because a member of any one can elevate to the others.
+- **Use separate admin accounts** - Administrators should use dedicated accounts for privileged tasks, separate from daily use accounts to reduce attack exposure.
+- **Prevent excessive privilege grants** - Audit accounts across Active Directory, member servers, workstations, applications, and data repositories to identify and remove unnecessary privileges.
 
-Excessive privilege isn't only found in Active Directory in compromised environments. When an organization has developed the habit of granting more privilege than is required, it is typically found throughout the infrastructure:
+### Domain controller security
 
-- In Active Directory
-- On member servers
-- On workstations
-- In applications
-- In data repositories
+If an attacker gains privileged access to a domain controller, they can modify, corrupt, or destroy the AD DS database. Domain controllers should be secured separately and more stringently than the general infrastructure:
 
-- The **Implementing Secure Administrative Hosts** section describes secure administrative hosts, which are computers that are configured to support administration of Active Directory and connected systems. These hosts are dedicated to administrative functionality and do not run software such as email applications, web browsers, or productivity software (such as Microsoft Office).
+- **Restrict logon access** - Only domain admins should be able to sign in to domain controllers.
+- **Block internet access** - Configure perimeter firewalls to block outbound connections from domain controllers to the internet. Use AppLocker and Windows Firewall configuration to prevent web browsing.
+- **Use Server Core** - Deploy domain controllers on Server Core installations to reduce attack surface.
+- **Keep systems patched** - Apply security updates promptly. Become familiar with the domain controller operating system and use security configuration baselines enforced with GPOs.
+- **Enable Credential Guard** - Protect credential hashes from extraction on Windows Server domain controllers.
+- **Physical security** - Require TPM, BitLocker Drive Encryption on all DC volumes, and dedicated secure racks or cages. Run virtual DCs on separate physical hosts isolated from general-purpose virtual machines.
+- **Branch office protection** - Deploy Read-Only Domain Controllers (RODCs) where physical security can't be fully guaranteed.
 
-Included in this section are the following:
+### Legacy protocol restrictions
 
-- **Principles for Creating Secure Administrative Hosts** - The general principles to keep in mind are:
-  - Never administer a trusted system from a less-trusted host.
-  - Do not rely on a single authentication factor when performing privileged activities.
-  - Do not forget physical security when designing and implementing secure administrative hosts.
+- Restrict NTLM authentication and disable NTLMv1 where possible (prefer Kerberos)
+- Require SMB signing and LDAP signing
+- Disable DES and RC4 encryption for Kerberos
+- Enable Kerberos Armoring and TLS 1.2 only mode
 
-- **Securing Domain Controllers Against Attack** - If a malicious user obtains privileged access to a domain controller, that user can modify, corrupt, and destroy the Active Directory database, and by extension, all of the systems and accounts that are managed by Active Directory.
+## Implementing least privilege with the enterprise access model
 
-Included in this section are the following subjects:
+Microsoft's enterprise access model supersedes and replaces the legacy AD tier model. It spans on-premises, multiple clouds, and all access methods.
 
-- **Physical Security for Domain Controllers** - Contains recommendations for providing physical security for domain controllers in datacenters, branch offices, and remote locations.
+| Plane | Scope | Description |
+|---|---|---|
+| **Control plane** | Domain controllers, PKI, AD FS, identity infrastructure | Full control of identity - equivalent to legacy Tier 0, expanded to include networking access controls |
+| **Management plane** | Member servers, enterprise IT management | Enterprise-wide IT management functions - split from legacy Tier 1 |
+| **Data/Workload plane** | Applications, data | Per-workload management, often by business units |
+| **User access** | Workstations, endpoints | B2B, B2C, and public access scenarios |
 
-- **Domain Controller Operating Systems** - Contains recommendations for securing the domain controller operating systems.
+Credentials used at one plane should never be exposed on systems at a lower plane to prevent credential theft cascades.
 
-- **Secure Configuration of Domain Controllers** - Native and freely available configuration tools and settings can be used to create security configuration baselines for domain controllers that can subsequently be enforced by Group Policy Objects (GPOs).
+### Secure administrative hosts and Privileged Access Workstations (PAWs)
+
+Secure administrative hosts are dedicated computers used exclusively for administrative tasks. They must not run nonadministrative software such as email clients or web browsers, and should be hardened with restricted sign-in, limited network access, and enhanced monitoring.
+
+Microsoft's Privileged Access Workstations (PAWs) provide a specific implementation framework for secure admin hosts, with three device security levels managed through Intune and Autopilot:
+
+- **Enterprise** - Baseline managed security with endpoint detection and response (EDR)
+- **Specialized** - Removes self-administration and restricts applications to those installed by authorized administrators
+- **Privileged** - Highest security configuration with application control, Credential Guard, and web traffic restricted to approved destinations only. Designed for roles where account compromise would have significant organizational impact.
+
+Use PAWs or equivalent secure admin hosts for all control plane and management plane administrative activities. Require multifactor authentication for all privileged sign-ins.
+
+### Just-in-time access
+
+Reduce standing privileges through time-limited access. Microsoft Entra PIM provides just-in-time role activation for Microsoft Entra ID and Azure resource roles, but doesn't directly manage on-premises AD DS group memberships. PIM can, however, protect roles that indirectly affect AD DS, such as the Hybrid Identity Administrator role (which manages synchronization settings) or Azure resource roles on Arc-enabled domain controllers. For AD DS privileged groups, use time-limited group memberships (a native AD DS capability at Windows Server 2016 forest functional level) to automatically expire membership in groups like Domain Admins after a defined period.
+
+## Monitoring and detecting threats
+
+### Security auditing
+
+Research consistently shows that most breach victims had evidence of compromise in their event logs but failed to detect it. Require comprehensive auditing using Windows Advanced Audit Policy subcategories:
+
+- Audit account sign-in events and privilege use
+- Monitor changes to sensitive groups (Domain Admins, Enterprise Admins, Schema Admins)
+- Track directory service access and changes
+- Forward logs to a SIEM for correlation, alerting, and advanced hunting
+
+### Microsoft Defender for Identity
+
+Microsoft Defender for Identity is a cloud-based identity threat detection and response (ITDR) solution. It gathers signals from AD DS domain controllers and servers running AD FS and AD CS by installing sensors directly on those servers. Capabilities include:
+
+- **Proactive security posture assessments** to prevent breaches
+- **Real-time threat detection** for reconnaissance, credential compromise, lateral movement, and domain dominance attacks (including DCSync, golden ticket, and pass-the-hash)
+- **Clear, actionable incident information** integrated with Microsoft Defender XDR for correlation across endpoints, identities, email, and applications
+- **Automatic response** to compromised identities
+
+Deploy Defender for Identity sensors on all domain controllers, AD FS servers, AD CS servers, and Microsoft Entra Connect servers for comprehensive coverage.
+
+## Planning for compromise
+
+Design your AD DS environment assuming compromise will occur:
+
+- **Backup and recovery** - Maintain offline, protected backups of AD DS. Test restoration procedures regularly and plan for forest-wide recovery scenarios.
+- **Segregation of critical assets** - Isolate the most critical users, systems, and data by segregating them into separate, more secure domains or forests. Decommission legacy systems where possible; where not feasible, segregate them into a separate domain or forest to limit the scope of compromise. Within each domain, use organizational units (OUs) to organize objects by role or function and link Group Policy Objects (GPOs) to enforce security baselines, restrict privileged account sign-in, and delegate administration with least privilege.
+- **Business-centric security practices** - Assign business ownership to AD data, implement lifecycle management, and classify all AD DS data by criticality.
+- **Pristine forest strategy** - For severely compromised environments, plan for building a new secure AD forest as a recovery baseline and migrating critical assets without carrying over compromised security principals.
+
+## Microsoft solutions for AD DS security
+
+The following capabilities support AD DS hardening:
+
+| Solution | Security requirement addressed | Description |
+|---|---|---|
+| **Windows Server AD DS (Windows Server 2025)** | Attack surface reduction, least privilege, and segregation | Provides built-in security capabilities including organizational units (OUs) and Group Policy Objects (GPOs) for security baseline enforcement and delegated administration, Read-Only Domain Controllers (RODCs) for branch offices, Server Core installations, time-limited group memberships for JIT access, Windows Advanced Audit Policy, and Kerberos Armoring |
+| **Microsoft Defender for Identity** | Monitoring and threat detection | Cloud-based ITDR solution with sensors on domain controllers for real-time detection of credential theft, lateral movement, and privilege escalation, plus proactive security posture assessments |
+| **Microsoft Entra Password Protection** | Credential theft prevention | Extends cloud-based banned password lists to on-premises AD DS, blocking weak and commonly attacked passwords during password changes |
+| **Windows LAPS** | Local admin account protection | Automatically manages and rotates local administrator passwords on domain-joined devices, eliminating standardized local admin passwords that enable lateral movement |
+| **Credential Guard** | Credential theft prevention | Hardware-based (virtualization-based security) credential isolation that prevents extraction of NTLM hashes and Kerberos tickets from memory on domain controllers and workstations |
+| **Microsoft Sentinel** | Security auditing and log analysis | Cloud-native SIEM for ingesting and correlating AD DS audit logs, security events, and Defender for Identity alerts with advanced hunting and automated response |
+| **Azure Arc** | Domain controller security and monitoring | Extends cloud-based policy enforcement, monitoring, and security baselines to on-premises servers including domain controllers |
+
+## Design considerations for security architects
+
+When specifying AD DS hardening requirements:
+
+- **Assess current state** - Evaluate existing configurations against Microsoft security baselines
+- **Prioritize by impact** - Focus first on protecting domain controllers and privileged accounts
+- **Balance security with operations** - Ensure hardening doesn't break business-critical services; test in pilot groups before staged rollout
+- **Plan for hybrid** - Coordinate AD DS security with Microsoft Entra ID security policies and cloud-powered protections like Defender for Identity
+- **Document exceptions** - Track any deviations from hardening standards with compensating controls

@@ -1,0 +1,53 @@
+### YamlMime:Module
+uid: learn.wwl.automated-evaluation-genaiops
+metadata:
+  title: Automate AI evaluations with Microsoft Foundry and GitHub Actions
+  description: Learn how to implement automated evaluations for AI agents using Microsoft Foundry evaluators and GitHub Actions workflows.
+  author: madiepev
+  ms.author: madiepev
+  ms.date: 02/22/2026
+  ms.service: azure-ai-services
+  ms.topic: module-standard-task-based
+  ms.custom: ai-learning-hub
+  ms.collection:
+    - wwl-ai-copilot
+title: Automate AI evaluations with Microsoft Foundry and GitHub Actions
+summary: Learn how to implement automated evaluations for AI agent responses using Microsoft Foundry evaluators, create evaluation datasets from production data and synthetic generation, run batch evaluations with Python scripts, and integrate evaluation workflows into GitHub Actions for continuous quality assurance.
+abstract: |
+  By the end of this module, you're able to:
+    - Explain why automated evaluations complement human evaluations in AI quality assurance.
+    - Select evaluators that align with human evaluation criteria for validation.
+    - Create evaluation datasets with appropriate composition for comprehensive testing.
+    - Implement batch evaluations using Python scripts with Microsoft Foundry.
+    - Integrate automated evaluation workflows into GitHub Actions for continuous testing.
+prerequisites: |
+  Before starting this module, you should be familiar with fundamental generative AI concepts and services in Azure. Consider completing the [Fundamentals of Generative AI](/training/modules/fundamentals-generative-ai/) module first. Basic familiarity with Python and GitHub workflows is recommended.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+  - intermediate
+roles: 
+  - data-scientist
+  - ai-engineer
+  - devops-engineer
+  - developer
+products: 
+  - azure
+  - ai-services
+  - github
+subjects: 
+  - cloud-computing
+  - artificial-intelligence
+  - machine-learning
+  - devops
+units:
+- learn.wwl.automated-evaluation-genaiops.introduction
+- learn.wwl.automated-evaluation-genaiops.why-automated-evaluations
+- learn.wwl.automated-evaluation-genaiops.align-evaluators-human-criteria
+- learn.wwl.automated-evaluation-genaiops.create-evaluation-data
+- learn.wwl.automated-evaluation-genaiops.batch-evaluations-python
+- learn.wwl.automated-evaluation-genaiops.github-actions-workflow
+- learn.wwl.automated-evaluation-genaiops.exercise
+- learn.wwl.automated-evaluation-genaiops.knowledge-check
+- learn.wwl.automated-evaluation-genaiops.summary
+badge:
+  uid: learn.wwl.automated-evaluation-genaiops.badge

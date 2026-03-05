@@ -2,8 +2,6 @@
 uid: learn.wwl.review-azure-powershell-module.review-azure-powershell
 title: Review Azure PowerShell
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Review Azure PowerShell
   description: "Review Azure PowerShell"
   ms.date: 03/22/2024
@@ -16,4 +14,4 @@ labModal: false
 durationInMinutes: 3
 content: |
   [!include[](includes/2-review-azure-powershell.md)]
-
+

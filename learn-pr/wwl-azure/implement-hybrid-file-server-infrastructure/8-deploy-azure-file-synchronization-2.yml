@@ -2,8 +2,6 @@
 uid: learn.wwl.implement-hybrid-file-server-infrastructure.deploy-azure-file-sync2
 title: Deploy Azure File Sync 2
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Deploy Azure File Sync 2
   description: "Deploy Azure File Sync 2"
   ms.date: 01/01/2025
@@ -13,4 +11,4 @@ metadata:
 azureSandbox: false
 durationInMinutes: 6
 content: |
-  [!include[](includes/8-deploy-azure-file-synchronization-2.md)]
+  [!include[](includes/8-deploy-azure-file-synchronization-2.md)]

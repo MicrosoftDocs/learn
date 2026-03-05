@@ -1,5 +1,13 @@
-AI is changing business and how companies operate and drive value. To succeed, an organization needs an AI strategy that takes a holistic view of external and internal organizational factors, and prioritizes key drivers throughout the stages of adoption.
+AI is no longer a nice to have—it’s a competitive necessity. In this module, learn how to turn AI from a set of experiments into a dependable driver of business outcomes. We use a practical framework built on five essential drivers of AI readiness:
 
-AI helps organizations transform digitally by creating new experiences infused with capabilities to make them smart, fast, and helpful. To harness this potential, organizations must be ready to create, own, and operate AI-based systems. A successful AI strategy must consider cultural issues as well as business ones. Becoming an AI-ready organization requires a fundamental transformation in how you do things, how employees relate to each other, what skills they have, and what processes and principles guide your behaviors.
+- Business Strategy
+- Technology and Data Strategy
+- AI Strategy and Experience
+- Organization and Culture
+- AI Governance
 
-Let’s start by defining an AI strategy to enable your organization to adopt AI in a meaningful and successful way.
+Across the framework, you see how to align AI with strategic priorities, build a scalable and secure foundation, accelerate adoption with the right tools, and govern responsibly. Each  AI readiness driver connects to real decisions you make as a leader: which use cases to prioritize, how to measure value, what capabilities to invest in, and how to manage risk.
+
+:::image type="content" source="../media/01-readiness-drivers.png" alt-text="Diagram of the five readiness drivers.":::
+
+Let’s start by aligning AI to your business strategy so you can prioritize the highest impact opportunities and measure what matters.

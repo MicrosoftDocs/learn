@@ -3,13 +3,11 @@ uid: learn.intro-to-azure-kubernetes-service.how-azure-kubernetes-service-works
 title: How Azure Kubernetes Service works
 
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: How Azure Kubernetes Service works
   description: How Azure Kubernetes Service works
   ms.date: 11/26/2024
-  author: nickomang
-  ms.author: nickoman
+  author: davidsmatlak
+  ms.author: davidsmatlak
   ms.topic: unit
 
 durationInMinutes: 5

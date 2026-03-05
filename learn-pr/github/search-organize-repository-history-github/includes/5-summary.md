@@ -5,6 +5,9 @@ You learned about:
 - Finding relevant issues and pull requests.
 - Searching history to find context.
 - Making connections within GitHub to help others find things.
+- Use labels and milestones to filter and organize issues.
+- Respond faster with saved replies.
+- Assign issues and pull requests to collaborators.
 
 Now that you're familiar with finding and organizing information on GitHub, learn to [Maintain a secure repository by using GitHub best practices](/training/modules/maintain-secure-repository-github/).
 
@@ -17,3 +20,8 @@ Here are some links to more information on the topics we discussed in this modul
 - [git blame documentation](https://git-scm.com/docs/git-blame?azure-portal=true)
 - [Viewing and understanding files](https://docs.github.com/repositories/working-with-files/using-files/viewing-a-file)
 - [Autolinked references and URLs](https://docs.github.com/get-started/writing-on-github/working-with-advanced-formatting/autolinked-references-and-urls)
+
+## Provide feedback
+
+Use this [issue form](https://github.com/githubpartners/microsoft-learn/issues/new/choose) to provide content feedback or suggested changes for this Microsoft Learn module. GitHub maintains this content and a team member will triage the request. Thank you for taking the time to improve our content!
+

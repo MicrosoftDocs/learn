@@ -24,9 +24,9 @@ If you have a project hosted on another version control system, you can automati
 
 If you'd like to match the commits in your repository to the authors' GitHub user accounts during the import. First, make sure that every contributor to your repository has a GitHub account before you begin the import.
 
-Repositories and individual files are subject to size limits. For more information, check out [About large files on GitHub](https://docs.github.com/repositories/working-with-files/managing-large-files/about-large-files-on-github).
+Repositories and individual files are subject to size limits. For more information, see [About large files on GitHub](https://docs.github.com/repositories/working-with-files/managing-large-files/about-large-files-on-github).
 
-Follow these steps to import a repository:
+To import a repository, follow these steps:
 
 1. In the upper-right corner of any page, select **+**, and then select **Import repository**.
 
@@ -58,7 +58,7 @@ Follow these steps to import a repository:
 
 8. If your project contains files larger than 100 MB, choose whether to import the large files using [Git Large File Storage](https://docs.github.com/repositories/working-with-files/managing-large-files), then select **Continue**.
 
-    :::image type="content" source="../media/8-select-git-lfs-importer.png" alt-text="Screenshot of files suitable for Git LFS importer.":::
+    :::image type="content" source="../media/8-select-git-lfs-importer.png" alt-text="Screenshot of files suitable for Git Large File Storage importer.":::
 
 When the repository is fully imported, you receive an email.
 
@@ -116,7 +116,7 @@ Follow these steps to import your external repository:
 
 1. [Create a new repository on GitHub.](https://docs.github.com/repositories/creating-and-managing-repositories/creating-a-new-repository) You import your external Git repository to this new repository.
 
-1. On the command line, make a "bare" clone of the repository using the external clone URL. This command creates a full copy of the data, but without a working directory for editing files, and ensures a clean, fresh export of all the old data.
+1. Make a "bare" clone of the repository using the external clone URL. On the command line, enter the following command. This command creates a full copy of the data, but without a working directory for editing files, and ensures a clean, fresh export of all the old data.
 
     ```bash
     $ git clone --bare https://external-host.com/ext-user/repo.git

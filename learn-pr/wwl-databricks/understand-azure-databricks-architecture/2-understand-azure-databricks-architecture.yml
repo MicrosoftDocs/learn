@@ -1,0 +1,14 @@
+### YamlMime: ModuleUnit
+uid: learn.wwl.understand-azure-databricks-architecture.understand-azure-databricks-architecture
+title: Understand Azure Databricks architecture
+metadata:
+  title: Understand Azure Databricks Architecture
+  description: Learn about the hierarchical structure and architectural components of Azure Databricks, including the control plane, compute plane, and workspace storage.
+  ms.date: 12/07/2025
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+  ai-usage: ai-generated
+durationInMinutes: 6
+content: |
+  [!include[](includes/2-understand-azure-databricks-architecture.md)]

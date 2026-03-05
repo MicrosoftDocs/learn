@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.monitor-apps-azure-kubernetes-service.monitor-logs-metrics
+title: Monitor application logs and metrics
+metadata:
+  title: Monitor Application Logs and Metrics
+  description: Monitor application logs and metrics
+  ms.date: 12/31/2025
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/2-monitor-logs-metrics.md)]

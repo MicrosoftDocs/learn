@@ -2,8 +2,6 @@
 uid: learn.wwl.creating-and-configuring-hdinsight-cluster.2-creating-a-hdinsight-cluster
 title: Creating an HDInsight cluster
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Creating an HDInsight cluster
   description: "Creating an HDInsight cluster"
   ms.date: 04/05/2024
@@ -15,4 +13,4 @@ labModal: false
 durationInMinutes: 10
 content: |
   [!include[](includes/2-creating-hdinsight-cluster.md)]
-
+

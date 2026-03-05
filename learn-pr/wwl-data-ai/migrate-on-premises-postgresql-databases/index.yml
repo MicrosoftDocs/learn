@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.migrate-premises-postgresql-databases-azure-database-postgresql
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Migrate on-premises PostgreSQL databases to Azure Database for PostgreSQL
   description: "Migrate on-premises PostgreSQL databases to Azure Database for PostgreSQL"
   ms.date: 10/14/2022
@@ -38,4 +36,4 @@ units:
 - learn.wwl.migrate-premises-postgresql-databases-azure-database-postgresql.knowledge-check
 - learn.wwl.migrate-premises-postgresql-databases-azure-database-postgresql.summary
 badge:
-  uid: learn.wwl.migrate-on-premises-postgresql-databases-to-azure-database-for-postgresql.badge
+  uid: learn.wwl.migrate-on-premises-postgresql-databases-to-azure-database-for-postgresql.badge

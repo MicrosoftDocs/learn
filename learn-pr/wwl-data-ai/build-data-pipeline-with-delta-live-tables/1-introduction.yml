@@ -2,14 +2,12 @@
 uid: learn.wwl.build-data-pipeline-with-delta-live-tables.introduction
 title: Introduction
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Introduction
   description: "Introduction"
-  ms.date: 07/23/2024
-  author: wwlpublish
-  ms.author: theresai
+  ms.date: 09/12/2025
+  author: weslbo
+  ms.author: wedebols
   ms.topic: unit
-durationInMinutes: 1
+durationInMinutes: 2
 content: |
   [!include[](includes/1-introduction.md)]

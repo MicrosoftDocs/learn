@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.keep-microsoft-365-secure.plan-your-organizations-path-forward
+title: Plan your organization's path forward
+metadata:
+  title: Plan Your Organization's Path Forward
+  description: This content is part of the "Keep Microsoft 365 secure after Windows 10 end of support" module.
+  ms.date: 10/15/2025
+  author: melissawinters
+  ms.author: v-mwinters
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-plan-your-organizations-path-forward.md)]

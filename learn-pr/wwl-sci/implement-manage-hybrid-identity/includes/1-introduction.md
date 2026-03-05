@@ -10,14 +10,14 @@ By the end of this module, you'll be able to implement and manage a hybrid ident
 
 In this module, you'll:
 
- -  Plan, design, and implement Microsoft Entra Connect
- -  Manage Microsoft Entra Connect
- -  Implement and manage password hash synchronization (PHS)
- -  Implement and manage pass-through authentication (PTA)
- -  Implement and manage seamless single sign-on (seamless SSO)
- -  Implement and manage federation excluding manual AD FS deployments
- -  Troubleshoot synchronization errors
- -  Implement and manage Microsoft Entra Connect Health
+- Plan, design, and implement Microsoft Entra Connect
+- Manage Microsoft Entra Connect
+- Implement and manage password hash synchronization (PHS)
+- Implement and manage pass-through authentication (PTA)
+- Implement and manage seamless single sign-on (seamless SSO)
+- Implement and manage federation excluding manual AD FS deployments
+- Troubleshoot synchronization errors
+- Implement and manage Microsoft Entra Connect Health
 
 ## Prerequisites
 

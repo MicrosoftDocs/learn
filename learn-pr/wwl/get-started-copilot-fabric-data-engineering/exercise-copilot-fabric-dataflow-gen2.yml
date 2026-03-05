@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-started-copilot-fabric-data-engineering.exercise-copilot-fabric-dataflow-gen2
+title: Exercise - Work smarter with Copilot in Microsoft Fabric Dataflow Gen2
+metadata:
+  title: Exercise - Work Smarter With Copilot in Microsoft Fabric Dataflow Gen2
+  description: "Exercise - Work smarter with Copilot in Microsoft Fabric Dataflow Gen2"
+  ms.date: 08/18/2025
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+durationInMinutes: 30
+content: |
+  [!include[](includes/exercise-copilot-fabric-dataflow-gen2.md)]

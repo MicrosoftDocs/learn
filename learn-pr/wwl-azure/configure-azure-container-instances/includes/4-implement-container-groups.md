@@ -1,5 +1,7 @@
 The top-level resource in Azure Container Instances is the **container group**. A [container group](/azure/container-instances/container-instances-container-groups) is a collection of containers that get scheduled on the same host machine. The containers share a lifecycle, resources, local network, and storage volumes.
 
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=cea8e224-f2f1-4e42-b393-67ecef90c7a7]
+
 ### Things to know about container groups
 
 Let's review some of details about container groups for Azure Container Instances.
@@ -8,11 +10,9 @@ Let's review some of details about container groups for Azure Container Instance
 
 - Azure Container Instances allocates resources to a multi-container group by adding together the resource requests of all containers in the group. Resources can include items such as CPUs, memory, and GPUs.
 
-   Consider a container group that has two containers that each require CPU resources. Each container requests one CPU. Azure Container Instances allocates two CPUs for the container group.
-
 - There are two common ways to deploy a multi-container group: Azure Resource Manager (ARM) templates and YAML files.
   
-   - **ARM template**. An ARM template is recommended for deploying other Azure service resources when you deploy your container instances, such as an Azure Files file share.
+  - **ARM template**. An ARM template is recommended for deploying other Azure service resources when you deploy your container instances, such as an Azure Files file share.
   
   - **YAML file**. Due to the concise nature of the YAML format, a YAML file is recommended when your deployment includes only container instances.
 

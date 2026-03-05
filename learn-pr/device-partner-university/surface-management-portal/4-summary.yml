@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.surface-management-portal.summary
+title: Summary
+metadata:
+  title: Summary
+  description: This content is part of the "Work smarter and streamline workflows with Security Copilot in the Surface Management Portal" module.
+  ms.date: 07/17/2025
+  author: ozahran7
+  ms.author: v-zahranomar
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/4-summary.md)]

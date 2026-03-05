@@ -2,8 +2,6 @@
 uid: learn.wwl.describe-high-availability-disaster-recovery-strategies.describe-hybrid-solutions
 title: Describe hybrid solutions
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Describe hybrid solutions
   description: "Describe hybrid solutions"
   ms.date: 03/27/2025
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 4
 content: |
-  [!include[](includes/7-describe-hybrid-solutions.md)]
+  [!include[](includes/7-describe-hybrid-solutions.md)]

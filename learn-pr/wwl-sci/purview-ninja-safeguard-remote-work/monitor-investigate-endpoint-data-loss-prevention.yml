@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-ninja-safeguard-remote-work.monitor-investigate-endpoint-data-loss-prevention
+title: Monitor, investigate, and refine Endpoint DLP policies
+metadata:
+  title: Monitor, Investigate, and Refine Endpoint DLP Policies
+  description: "Monitor, investigate, and refine Endpoint DLP policies."
+  ms.date: 08/21/2025
+  author: sachow
+  ms.author: sachow
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/monitor-investigate-endpoint-data-loss-prevention.md)]

@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-started-computer-vision.azure-ai-vision
+title: Understand Foundry Tools for computer vision
+metadata:
+  title: Understand Foundry Tools for computer vision
+  description: Foundry Tools for computer vision
+  author: wwlpublish
+  ms.author: sheryang
+  ms.date: 05/22/2025
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-azure-ai-vision.md)]
+

@@ -1,0 +1,70 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-event-messaging-azure-managed-redis.module-assessment
+title: Module assessment
+metadata:
+  title: Module Assessment
+  description: Module assessment
+  ms.date: 11/21/2025
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: unit
+azureSandbox: false
+durationInMinutes: 5
+content: |
+quiz:
+  questions:
+  - content: "What is the key difference between Redis pub/sub and Redis Streams for event messaging?"
+    choices:
+    - content: "Pub/sub delivers messages to active subscribers only, while Streams persist messages for consumer groups to process at their own pace"
+      isCorrect: true
+      explanation: "Pub/sub is fire-and-forget with no persistence. Streams store messages durably and allow multiple consumer groups to read at different speeds."
+    - content: "Pub/sub can handle more messages per second than Streams"
+      isCorrect: false
+      explanation: "While pub/sub is high-throughput, both patterns handle high volumes. The choice depends on durability and replay requirements, not throughput."
+    - content: "Streams are only for string data while pub/sub works with any data type"
+      isCorrect: false
+      explanation: "Both pub/sub and Streams can handle complex data structures. The difference is in message delivery guarantees and persistence."
+  - content: "When building a processing pipeline with multiple services that need automatic retry on failure, which pattern should you use?"
+    choices:
+    - content: "Redis Streams with consumer groups for reliable task coordination and built-in retry handling"
+      isCorrect: true
+      explanation: "Streams provide durability, automatic retry on crash, and built-in consumer group coordination perfect for multi-step processing pipelines."
+    - content: "Redis pub/sub for real-time distribution of work items"
+      isCorrect: false
+      explanation: "Pub/sub doesn't guarantee delivery or provide retry mechanisms. Messages are lost if subscribers disconnect, unsuitable for critical processing."
+    - content: "A simple Redis List with LPUSH and RPOP"
+      isCorrect: false
+      explanation: "While Lists can work as queues, they don't provide consumer group coordination or automatic retry like Streams do."
+  - content: "Which Redis command is used to add a new message to a Stream?"
+    choices:
+    - content: "XADD"
+      isCorrect: true
+      explanation: "XADD adds a new message to a Stream with auto-generated or specified IDs. It's the fundamental command for putting work items into a Stream queue."
+    - content: "LPUSH"
+      isCorrect: false
+      explanation: "LPUSH adds items to a List, not a Stream. While both can work as queues, XADD is the command for Streams that provide better consumer group coordination."
+    - content: "PUBLISH"
+      isCorrect: false
+      explanation: "PUBLISH sends messages to pub/sub channels. For Streams, use XADD to add messages instead."
+  - content: "Which scenario is best suited for Redis pub/sub messaging?"
+    choices:
+    - content: "Broadcasting real-time status updates to multiple connected clients or services that are currently listening"
+      isCorrect: true
+      explanation: "Pub/sub excels at one-to-many broadcasting to active subscribers. Perfect for notifications, dashboards, and real-time alerts where subscribers are always connected."
+    - content: "Storing messages that arrive when subscribers are offline and delivering them when subscribers reconnect"
+      isCorrect: false
+      explanation: "Pub/sub doesn't persist messages. Use Streams if you need offline delivery. Messages are lost when no subscribers are listening."
+    - content: "Implementing a reliable work queue where tasks must be processed exactly once"
+      isCorrect: false
+      explanation: "Pub/sub doesn't guarantee task processing. Use Streams with consumer groups for reliable work queues with exactly-once semantics."
+  - content: "How would you coordinate multiple AI workers processing documents from a Stream to ensure no document is processed by more than one worker simultaneously?"
+    choices:
+    - content: "Use XREADGROUP to pull tasks from a consumer group, which automatically assigns unacknowledged tasks to different workers"
+      isCorrect: true
+      explanation: "Consumer groups in Streams automatically distribute pending tasks among workers. Each task is assigned to one worker until acknowledged, preventing duplicate processing."
+    - content: "Use XREAD to have each worker independently read from the Stream without coordination"
+      isCorrect: false
+      explanation: "XREAD doesn't coordinate between workers. Multiple workers would read the same messages, causing duplicate processing."
+    - content: "Use pub/sub channels with one channel per worker"
+      isCorrect: false
+      explanation: "Pub/sub doesn't provide built-in coordination. You'd need to implement complex logic outside Redis to prevent duplicates."

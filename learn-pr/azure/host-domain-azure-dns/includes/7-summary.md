@@ -9,7 +9,7 @@ The Azure DNS zone allows better control and integration with your Azure resourc
 By using an Azure DNS zone to host your domain, your organization benefits by having all the resources managed through a single, common interface. This solution provides better integration with existing Azure resources, improved security, and monitoring tools.
 
 <!-- Cleanup sandbox -->
-[!include[](../../../includes/azure-sandbox-cleanup.md)]
+[!include[](../../../includes/azure-optional-exercise-subscription-cleanup.md)]
 
 ## Learn more
 

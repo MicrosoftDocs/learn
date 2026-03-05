@@ -1,14 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.intro-to-azure-ad.5-get-started
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Get started with Microsoft Entra ID
   description: Getting started with Microsoft Entra ID
-  ms.date: 12/18/2023
+  ms.date: 04/30/2025
   author: MicrosoftGuyJFlo
   ms.author: joflore
   ms.topic: unit
+  ms.custom: sfi-ga-nochange
 title: Get started with Microsoft Entra ID
 durationInMinutes: 5
 content: |

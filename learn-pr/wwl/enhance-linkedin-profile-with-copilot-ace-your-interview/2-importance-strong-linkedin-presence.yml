@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.enhance-linkedin-profile-with-copilot-ace-your-interview.importance-strong-linkedin-presence
+title: Discuss the importance of a strong LinkedIn presence
+metadata:
+  title: Discuss the Importance of a Strong LinkedIn Presence
+  description: Discuss the importance of a strong LinkedIn presence for students
+  ms.date: 05/09/2025
+  author: andrewbettany
+  ms.author: tsheppard
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-importance-strong-linkedin-presence.md)]

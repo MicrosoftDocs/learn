@@ -2,8 +2,9 @@
 uid: learn.evaluate-generative-ai-apps
 metadata:
   ms.author: apspeigh
-  author: aprilspeight
+  author: aprilgittens
   ms.date: 10/11/2024
+  ms.update-cycle: 180-days
   title: Evaluating generative AI applications
   description: Learn the fundamental concepts of evaluating generative AI applications.
   ms.service: artificial-intelligence
@@ -20,7 +21,7 @@ abstract:  |
   - Choose the appropriate metrics based on your AI system use case
   - Understand how to interpret evaluation results
 prerequisites: |
-  - An Azure subscription – [Create one for free](https://azure.microsoft.com/free/cognitive-services/)
+  - An Azure subscription – [Create one for free](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn)
   - Familiarity with Azure and the Azure portal
 iconUrl: /learn/achievements/generic-badge.svg
 levels:

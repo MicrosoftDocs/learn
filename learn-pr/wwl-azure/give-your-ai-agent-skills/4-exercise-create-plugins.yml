@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.give-your-ai-agent-skills.exercise-create-plugins
+title: Exercise - Create Semantic Kernel plugins
+metadata:
+  title: Exercise - Create Semantic Kernel plugins
+  description: "Exercise - Create Semantic Kernel plugins"
+  ms.date: 05/27/2025
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 8
+content: |
+  [!include[](includes/4-exercise-create-plugins.md)]

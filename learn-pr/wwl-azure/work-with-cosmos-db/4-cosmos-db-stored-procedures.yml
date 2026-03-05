@@ -6,8 +6,8 @@ metadata:
   prefetch-feature-rollout: true
   title: Create stored procedures
   description: "Create stored procedures"
-  ms.date: 07/15/2024
-  author: wwlpublish
+  ms.date: 09/09/2025
+  author: JeffKoMS
   ms.author: jeffko
   ms.topic: unit
   ms.custom:

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.case-study-access-control-threat-resilience.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: "Overview of the interactive case study structure."
+  ms.date: 08/05/2025
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/1-introduction.md)]

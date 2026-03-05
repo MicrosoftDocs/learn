@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.automate-meeting-scheduling.exercise-set-meeting-options-manage-participants
+title: Exercise – set meeting options and manage participants
+metadata:
+  title: Exercise – Set Meeting Options And Manage Participants
+  description: This content is part of the "Automate meeting scheduling with Microsoft Teams" module.
+  ms.date: 09/18/2025
+  author: melissawinters
+  ms.author: v-mwinters
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-exercise-set-meeting-options-manage-participants.md)]
+

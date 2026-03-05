@@ -1,3 +1,7 @@
+Let's begin with an overview of IP addressing. 
+
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=5eed7999-56ce-4396-9e52-29390e9595d4]
+
 You can assign IP addresses to Azure resources to communicate with other Azure resources, your on-premises network, and the internet. There are two types of Azure IP addresses: _private_ and _public_.
 
 **Private IP addresses** enable communication within an Azure virtual network and your on-premises network. You create a private IP address for your resource when you use a VPN gateway or Azure ExpressRoute circuit to extend your network to Azure.

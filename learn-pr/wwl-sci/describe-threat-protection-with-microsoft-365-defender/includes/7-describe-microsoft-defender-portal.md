@@ -3,7 +3,7 @@ A unified security operations platform is a fully integrated toolset for securit
 
 Through the Microsoft Defender portal, Microsoft delivers on the promise of a unified security operations platform so you can view the security health of your organization. The Microsoft Defender portal combines protection, detection, investigation, and response to threats across your entire organization and all its components, in a central place.
 
-To access the portal, You must be assigned an appropriate role, such as Global Administrator, Security Administrator, Security Operator, or Security Reader in Microsoft Entra ID to access the Microsoft Defender portal.
+To access the portal, you must be assigned an appropriate role such as Global Reader or Administrator, Security Reader or Administrator, or Security Operator in Microsoft Entra ID to access the Microsoft Defender portal.  
 
 The Defender portal emphasizes quick access to information, simpler layouts, and bringing related information together for easier use.
 

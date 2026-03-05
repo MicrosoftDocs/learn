@@ -2,8 +2,6 @@
 uid: learn.intro-to-azure-blueprints.what-is-azure-blueprints
 title: What is Azure Blueprints?
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: learning-content
   title: What is Azure Blueprints?
   description: Learn about the Azure Blueprints service and what can it be used for.
@@ -13,4 +11,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 1
 content: |
-  [!include[](includes/2-what-is-azure-blueprints.md)]
+  [!include[](includes/2-what-is-azure-blueprints.md)]

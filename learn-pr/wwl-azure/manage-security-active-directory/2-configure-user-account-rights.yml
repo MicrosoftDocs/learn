@@ -2,8 +2,6 @@
 uid: learn.wwl.manage-security-active-directory.configure-user-account-rights
 title: Configure user account rights
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Configure user account rights
   description: "Configure user account rights"
   ms.date: 10/22/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 7
 content: |
-  [!include[](includes/2-configure-user-account-rights.md)]
+  [!include[](includes/2-configure-user-account-rights.md)]

@@ -1,16 +1,18 @@
 ### YamlMime:ModuleUnit
 uid: learn.introduction-to-polyglot-notebooks.knowledge-check
 metadata:
-  title: Knowledge check
+  title: Module assessment
   description: Check your understanding.
   author: japhletnwamu
-  ms.author: japhletnwamu
+  ms.author: orthomas
   ms.date: 08/28/2024
+  ms.update-cycle: 180-days
   ms.topic: unit
   ms.collection:
     - ce-advocates-ai-copilot
   ms.custom: team=nextgen
-title: Knowledge check
+  module_assessment: true
+title: Module assessment
 durationInMinutes: 3
 content: |
   Choose the best response for each question.

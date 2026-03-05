@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.pitch-your-product-prototype
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Pitch your product prototype
   description: Write a compelling pitch deck for your product prototype that will resonate with your audience and share the vision of your prototype.
   author: czhu89
@@ -44,4 +42,4 @@ units:
 - learn.pitch-your-product-prototype.7-conclusion
 badge:
   uid: learn.pitch-your-product-prototype.badge
-
+

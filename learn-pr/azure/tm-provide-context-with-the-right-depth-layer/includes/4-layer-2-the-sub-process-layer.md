@@ -30,4 +30,4 @@ Any system subparts requiring deeper dives should follow the same rule from the 
 The result is a series of data-flow diagrams in the **lower-level layer**, known as layer 3.
 
 > [!TIP]
-> The path-like file naming structure helps you differentiate between the different levels.
+> The path-like file-naming structure helps you differentiate between the different levels.

@@ -4,8 +4,8 @@ metadata:
   title: Save money with Azure Reserved Instances
   description: Learn how to save money by taking advantage of Azure Reserved Instances.
   ms.date: 10/24/2024
-  author: bandersmsft
-  ms.author: banders
+  author: tonyafehr
+  ms.author: tfehr
   ms.topic: module
   ms.service: cost-management-billing
 title: Save money with Azure Reserved Instances

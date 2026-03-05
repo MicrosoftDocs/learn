@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.modernize-surface-windows-10-end-of-support.explore-surface-device-options
+title: Explore Surface device options
+metadata:
+  title: Explore Surface Device Options
+  description: This content is part of the "Modernize with Surface for Business after Windows 10 end of support" module.
+  ms.date: 11/12/2025
+  author: hhreyes21
+  ms.author: v-homerreyes
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-explore-surface-device-options.md)]

@@ -1,17 +1,17 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.secure-azure-using-microsoft-defender-cloud-sentinel
 metadata:
-  title: 'AZ-500: Secure Azure using Microsoft Defender for Cloud and Microsoft Sentinel'
-  description: 'AZ-500: Secure Azure using Microsoft Defender for Cloud and Microsoft Sentinel'
-  ms.date: 02/12/2025
+  title: 'Strengthen security posture using Microsoft Defender for Cloud and Microsoft Sentinel'
+  description: 'Strengthen security posture using Microsoft Defender for Cloud and Microsoft Sentinel'
+  ms.date: 01/23/2026
   author: wwlpublish
-  ms.author: serlingdavis
+  ms.author: roberts
   ms.topic: learning-path
-title: 'AZ-500: Secure Azure using Microsoft Defender for Cloud and Microsoft Sentinel'
+title: 'Strengthen security posture using Microsoft Defender for Cloud and Microsoft Sentinel'
 prerequisites: |
   -   None
 summary: |
-  Master the art of managing security operations in Azure, from governance and policy creation to infrastructure security, key management, security posture, threat protection, and advanced security monitoring and automation.
+  Learn how to strengthen your Azure security posture using Microsoft Defender for Cloud and Microsoft Sentinel. You implement cloud governance policies, manage security posture, protect against threats, and automate security monitoring across your environment.
 iconUrl: /training/achievements/generic-trophy.svg
 levels:
 - intermediate

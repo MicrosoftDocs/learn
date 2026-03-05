@@ -1,6 +1,6 @@
 If you want your NoSQL queries to be endlessly flexible, why exclude any paths at all? Well, each insert or update operation requires the indexer to run to update the inverted index with data from your newly created or updated item. More oversized items, or bulk workloads, can cause the indexing to use many RU/s or take a significant amount of time.
 
-Let’s consider an example JSON object that is much larger than previous examples.
+Let’s consider an example JSON object that is larger than previous examples.
 
 ```json
 {
@@ -76,7 +76,7 @@ WHERE
     p.price = <numeric-value>
 ```
 
-An indexing policy that excludes all paths, except for the **price** property path, would be appropriate here. This policy will still index items, but it will do so quickly because only one property is added to the inverted index.
+An indexing policy that excludes all paths, except for the **price** property path, would be appropriate here. This policy will still index items, but it does so quickly because only one property is added to the inverted index.
 
 ```json
 {
@@ -96,9 +96,9 @@ An indexing policy that excludes all paths, except for the **price** property pa
 ```
 
 > [!TIP]
-> Again, the drawback to this approach is that you will need to update the index anytime you change your schema.
+> Again, the drawback to this approach is that you'll need to update the index anytime you change your schema.
 
-Here is a diagram of the inverted index showing that it only has a single property to traverse and then multiple potential values.
+Here's a diagram of the inverted index showing that it only has a single property to traverse and then multiple potential values.
 
 ![Inverted tree with a single property node of price and multiple child nodes](../media/4-inverted-tree.png)
 
@@ -109,3 +109,4 @@ Suppose your application is write-heavy and only ever does point reads using the
   "indexingMode": "none",
 }
 ```
+

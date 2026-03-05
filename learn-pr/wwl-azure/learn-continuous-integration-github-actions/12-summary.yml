@@ -3,9 +3,9 @@ uid: learn.wwl.learn-continuous-integration-github-actions.summary
 title: Summary
 metadata:
   title: Summary
-  description: "Summary"
-  ms.date: 05/08/2024
-  author: wwlpublish
+  description: "Review key learnings and explore next steps for mastering continuous integration with GitHub Actions."
+  ms.date: 09/26/2025
+  author: LuizMacedo
   ms.author: lumac
   ms.topic: unit
 durationInMinutes: 1

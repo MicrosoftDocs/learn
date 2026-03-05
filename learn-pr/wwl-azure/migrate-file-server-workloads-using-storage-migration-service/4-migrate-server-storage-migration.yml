@@ -2,8 +2,6 @@
 uid: learn.wwl.migrate-file-server-workloads-using-storage-migration-service.migrate-server
 title: Migrate a server with Storage migration
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Migrate a server with Storage migration
   description: "Migrate a server with Storage migration"
   ms.date: 01/01/2025
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 7
 content: |
-  [!include[](includes/4-migrate-server-storage-migration.md)]
+  [!include[](includes/4-migrate-server-storage-migration.md)]

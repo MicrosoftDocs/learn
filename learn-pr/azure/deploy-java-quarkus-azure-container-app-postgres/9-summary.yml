@@ -2,14 +2,11 @@
 uid: learn.azure.deploy-java-quarkus-azure-container-app-postgres.9-summary
 title: Summary
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Summary
   description: Summary
   ms.date: 03/06/2025
-  author: KarlErickson
-  ms.author: karler
-  ms.reviewer: yoterada
+  author: yoshioterada
+  ms.author: yoterada
   ms.topic: unit
   ms.custom:
     - team=devdiv

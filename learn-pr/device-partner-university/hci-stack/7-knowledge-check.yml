@@ -1,0 +1,85 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.hci-stack.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge Check
+  description: This content is part of the "Hyperconverged Infrastructure (HCI) Stack" module.
+  ms.date: 09/16/2025
+  author: Stephanie-Rosenzweig
+  ms.author: v-stephanier
+  ms.topic: unit
+durationInMinutes: 5
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "What is the primary advantage of a hyperconverged infrastructure (HCI) stack in Azure Local?"
+    choices:
+        - content: "It separates compute, storage, and networking resources for individual management."
+          isCorrect: false
+          explanation: "Incorrect. HCI converges these resources into a single platform rather than separating them."
+        - content: "It streamlines datacenter operations and reduces hardware complexity."
+          isCorrect: true
+          explanation: "Correct. HCI's main advantage is simplifying operations and reducing complexity."
+        - content: "It eliminates the need for virtualization in datacenters."
+          isCorrect: false
+          explanation: "Incorrect. HCI enables virtualized workloads, not eliminates virtualization."
+        - content: "It requires manual updates for all hardware components."
+          isCorrect: false
+          explanation: "Incorrect. Azure Local provides regular feature and security updates automatically."
+  - content: "Which Azure Local feature allows IT administrators to automate administrative tasks and manage environments efficiently?"
+    choices:
+        - content: "Windows PowerShell"
+          isCorrect: true
+          explanation: "Correct. Windows PowerShell provides cross-platform command-line and scripting capabilities for automation."
+        - content: "Azure Arc"
+          isCorrect: false
+          explanation: "Incorrect. Azure Arc is used for unified management and monitoring, not for automation and scripting."
+        - content: "Secure Boot"
+          isCorrect: false
+          explanation: "Incorrect. Secure Boot is a security feature, not a management or automation tool."
+        - content: "Storage Spaces Direct"
+          isCorrect: false
+          explanation: "Incorrect. Storage Spaces Direct is used for pooling storage resources, not for automation."
+  - content: "What feature in Azure Local helps protect VMs from rootkits and boot-level attacks?"
+    choices:
+        - content: "Trusted Platform Module (TPM 2.0)"
+          isCorrect: false
+          explanation: "Incorrect. TPM provides cryptographic functions and stores security information."
+        - content: "Virtualization-based security (VBS)"
+          isCorrect: false
+          explanation: "Incorrect. VBS isolates containers within the CPU to protect system components and data."
+        - content: "Secure Boot"
+          isCorrect: true
+          explanation: "Correct. Secure Boot ensures only trusted bootloaders and components are loaded, protecting against rootkits and boot-level attacks."
+        - content: "Active Directory"
+          isCorrect: false
+          explanation: "Incorrect. Active Directory is used for user and policy management, not for boot-level security."
+  - content: "Which Azure Local feature allows organizations to scale infrastructure by adjusting subscriptions based on physical cores?"
+    choices:
+        - content: "Per-user licensing"
+          isCorrect: false
+          explanation: "Incorrect. Per-user licensing is suitable when many users access VMs, not for scaling by physical cores."
+        - content: "Per physical core monthly subscription"
+          isCorrect: true
+          explanation: "Correct. This model allows organizations to scale resources by adjusting subscriptions based on the number of physical cores."
+        - content: "Unlimited Linux VMs"
+          isCorrect: false
+          explanation: "Incorrect. This refers to the ability to create Linux VMs without additional licensing costs."
+        - content: "Integrated systems"
+          isCorrect: false
+          explanation: "Incorrect. Integrated systems refer to hardware delivered with Azure Local software pre-installed."
+  - content: "Why might Azure Local NOT be a good fit for some organizations?"
+    choices:
+        - content: "It requires certified hardware and may involve upfront infrastructure upgrades."
+          isCorrect: true
+          explanation: "Correct. This can be a challenge for organizations with minimal IT budgets."
+        - content: "It is designed for hard real-time systems."
+          isCorrect: false
+          explanation: "Incorrect. Azure Local is not designed for hard real-time systems."
+        - content: "It eliminates the need for cloud connectivity."
+          isCorrect: false
+          explanation: "Incorrect. Some features require periodic cloud connectivity."
+        - content: "It is only compatible with Microsoft tools."
+          isCorrect: false
+          explanation: "Incorrect. Azure Local supports compatibility with non-Microsoft tools as well."
+

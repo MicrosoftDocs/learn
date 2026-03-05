@@ -4,7 +4,7 @@ To use a custom handler, you need to author a web application. After you've writ
 
 To build a REST API by using Go, you need to know a few things:
 
-- **Import libraries**. You'll use the libraries `fmt`, `log`, and `net/http`. These libraries will help you manage routes, handle incoming requests, and deal with logging. Use the following import statement:
+- **Import libraries**. You use the libraries `fmt`, `log`, and `net/http`. These libraries help you manage routes, handle incoming requests, and deal with logging. Use the following import statement:
 
    ```go
    import (
@@ -46,7 +46,7 @@ Before you develop an Azure Functions app, we recommend that you:
 
 - [Install Visual Studio Code](https://code.visualstudio.com/download?azure-portal=true). You can author Azure Functions apps with any text editor or IDE. This module showcases some extensions that make authoring easier.  
 
-- [Install the Visual Studio Code extension for Azure Functions](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions&azure-portal=true). This extension will help you to scaffold a Functions app, run it, and debug it.
+- [Install the Visual Studio Code extension for Azure Functions](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions&azure-portal=true). This extension helps you to scaffold a Functions app, run it, and debug it.
 
 - [Install Azure Functions Core Tools](https://github.com/Azure/azure-functions-core-tools#installing?azure-portal=true). This installation includes a `func` executable command that lets you run your Functions app, among other things.
 
@@ -63,7 +63,7 @@ After you finish generating the project, you should have an app with the followi
 - _proxies.json_
 - _function.json_ 
 
-The _function.json_ file is in a directory whose name corresponds to what you named your first function. You'll use this file to configure your function.
+The _function.json_ file is in a directory whose name corresponds to what you named your first function. You use this file to configure your function.
 
 ### Configure the project
 
@@ -89,7 +89,7 @@ For your app to work with HTTP primitives, you need to configure a few things:
 
   Enable a property called `enableForwardingHttpRequest`. When this property is enabled, it changes the behavior of how the request is handled in the following ways:
 
-  - **Copy of the original request**. The HTTP request does not contain the custom handler's request payload. Instead, the Functions host invokes the handler with a copy of the original HTTP request.
+  - **Copy of the original request**. The HTTP request doesn't contain the custom handler's request payload. Instead, the Functions host invokes the handler with a copy of the original HTTP request.
   - **Same path as the original request**. The Functions host invokes the handler with the same path as the original request. 
   
     When you define a route and a route handler, you need to be specific in how you set up the routing. Say you have the following project outline:
@@ -99,7 +99,7 @@ For your app to work with HTTP primitives, you need to configure a few things:
       function.json   
      ```
 
-     The files in the outline will be mapped to a route `/api/hello` by default. In your code for setting up the route, you need to specify the full route:
+     The files in the outline are mapped to a route `/api/hello` by default. In your code for setting up the route, you need to specify the full route:
 
      ```go
      mux.HandleFunc("/api/hello", helloHandler)
@@ -113,7 +113,7 @@ In the preceding example, the executable file is `mygoapp.exe`. The example assu
 
 ### Build the app
 
-Building the web app at this point is not much different from building any web app by using Go. As long as you've done the configuration described in the previous section, you're all set. 
+Building the web app at this point isn't much different from building any web app by using Go. As long as you've done the configuration described in the previous section, you're all set. 
 
 Now you need to take the following steps:
 

@@ -1,6 +1,6 @@
 In this module, you secured an app's secret configuration in Azure Key Vault. Your app code authenticated to the vault with a managed identity, and automatically loaded the secrets from the vault into memory at startup.
 
-[!include[](../../../includes/azure-sandbox-cleanup.md)]
+[!INCLUDE[](../../../includes/azure-optional-exercise-subscription-cleanup.md)]
 
 To clean up your Cloud Shell storage, delete the *KeyVaultDemoApp* directory.
 

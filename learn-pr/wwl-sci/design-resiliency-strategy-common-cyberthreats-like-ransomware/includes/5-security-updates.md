@@ -1,49 +1,74 @@
-Update Manager is a unified service to help manage and govern updates for all your machines. You can monitor Windows and Linux update compliance across your deployments in Azure, on-premises, and on other cloud platforms from a single dashboard. You can also use Update Manager to make real-time updates or schedule them within a defined maintenance window.
 
-You can use Update Manager in Azure to:
+Security updates protect workloads against security vulnerabilities that are continuously discovered by threat researchers and attackers. Security update solutions help you evaluate, track, and deploy patches across your environment to reduce exposure to known vulnerabilities.
 
-- Oversee update compliance for your entire fleet of machines in Azure, on-premises, and in other cloud environments.
-- Instantly deploy critical updates to help secure your machines.
-- Use flexible patching options such as [automatic virtual machine (VM) guest patching](/azure/virtual-machines/automatic-vm-guest-patching) in Azure, [hotpatching](/azure/automanage/automanage-hotpatch), and customer-defined maintenance schedules.
+A comprehensive security update strategy must address virtual machines, on-premises servers, and workloads running across multiple cloud platforms. The solution you select should provide unified visibility, flexible scheduling, and policy-based governance regardless of where workloads run.
 
-We also offer other capabilities to help you manage updates for your Azure VMs that you should consider as part of your overall update management strategy. To learn more about the options that are available, see the Azure VM [update options](/azure/virtual-machines/updates-maintenance-overview).
+### Patch management strategy
 
-Before you enable your machines for Update Manager, make sure that you understand the information in the following sections.
+An effective patch management strategy addresses four key areas:
 
-## Key benefits
+- **Discovery and assessment**: Continuously inventory all machines and assess their update status. Automated periodic assessments ensure newly discovered vulnerabilities are identified quickly.
+- **Prioritization**: Not all patches carry equal risk. Prioritize updates based on severity (critical, security, feature), exploitability, and the criticality of the affected asset. Align with industry vulnerability scoring frameworks such as CVSS.
+- **Deployment**: Deploy patches through a controlled process with defined maintenance windows, staged rollouts, and rollback plans. Balance security urgency with operational stability.
+- **Verification and reporting**: Confirm deployment success, validate system functionality post-patch, and maintain audit trails for compliance reporting.
 
-Update Manager has been redesigned and doesn't depend on Azure Automation or Azure Monitor Logs, as required by the [Azure Automation Update Management feature](/azure/automation/update-management/overview). Update Manager offers many new features and provides enhanced functionality over the original version available with Azure Automation. Some of those benefits are listed here:
+### Key capabilities to evaluate
 
-- Provides native experience with zero on-boarding.
-    - Built as native functionality on Azure compute and the Azure Arc for Servers platform for ease of use.
-    - No dependency on Log Analytics and Azure Automation.
-    - Azure Policy support.
-    - Global availability in all Azure compute and Azure Arc regions.
-- Works with Azure roles and identity.
-    - Granular access control at the per-resource level instead of access control at the level of the Azure Automation account and Log Analytics workspace.
-    - Update Manager now has Azure Resource Manager-based operations. It allows role-based access control and roles based on Azure Resource Manager in Azure.
-- Offers enhanced flexibility.
-    - Ability to take immediate action either by installing updates immediately or scheduling them for a later date.
-    - Check updates automatically or on demand.
-    - Helps secure machines with new ways of patching, such as [automatic VM guest patching](/azure/virtual-machines/automatic-vm-guest-patching) in Azure, [hotpatching](/azure/automanage/automanage-hotpatch), or custom maintenance schedules.
-    - Sync patch cycles in relation to "patch Tuesday," the unofficial term for Microsoft's scheduled security fix release on every second Tuesday of each month.
+When evaluating security update solutions, look for the following capabilities:
 
-The following diagram illustrates how Update Manager assesses and applies updates to all Azure machines and Azure Arc-enabled servers for both Windows and Linux.
+- **Flexible patching options**:
+  - **Automatic guest patching**: Automatically downloads and installs patches classified as critical or security updates without manual intervention.
+  - **Hot patching**: Installs updates that take effect without requiring a reboot, reducing downtime for production workloads.
+  - **Scheduled patching**: Define custom maintenance windows to control when updates are deployed. Use dynamic scoping to group machines based on criteria such as environment, location, or tags.
 
-![Diagram that shows the Update Manager workflow.](../media/update-management-center-overview.png)
+- **Unified update assessment**:
+  - Periodic assessment checks for new updates across all managed machines.
+  - Single pane of glass visibility across on-premises, cloud, and multicloud environments.
 
-To support management of your Azure VM or non-Azure machine, Update Manager relies on a new [Azure extension](/azure/virtual-machines/extensions/overview) designed to provide all the functionality required to interact with the operating system to manage the assessment and application of updates. This extension is automatically installed when you initiate any Update Manager operations, such as **Check for updates**, **Install one-time update**, and **Periodic Assessment** on your machine. The extension supports deployment to Azure VMs or Azure Arc-enabled servers by using the extension framework. The Update Manager extension is installed and managed by using:
+- **Governance and compliance**:
+  - Policy integration to audit and enforce update compliance.
+  - Built-in reporting for update status, compliance trends, and deployment history.
+  - Query-based dashboards for advanced analysis and custom views.
 
-- [Azure VM Windows agent](/azure/virtual-machines/extensions/agent-windows) or the [Azure VM Linux agent](/azure/virtual-machines/extensions/agent-linux) for Azure VMs.
-- [Azure Arc-enabled servers agent](/azure/azure-arc/servers/agent-overview) for non-Azure Linux and Windows machines or physical servers.
+- **Hybrid and multicloud support**:
+  - Consistent management experience across cloud VMs, on-premises servers, and machines in other cloud environments.
+  - Management plane extensions (such as Azure Arc or similar agents) to bring non-native machines under centralized governance.
 
- Update Manager manages the extension agent installation and configuration. Manual intervention isn't required as long as the Azure VM agent or Azure Arc-enabled server agent is functional. The Update Manager extension runs code locally on the machine to interact with the operating system, and it includes:
+In Azure, Azure Update Manager provides these capabilities natively. It supports Windows and Linux machines across Azure, on-premises, and other cloud platforms through Azure Arc integration. It requires no additional onboarding, includes built-in role-based access control (RBAC), and supports Azure Policy for governance.
 
-- Retrieving the assessment information about status of system updates for it specified by the Windows Update client or Linux package manager.
-- Initiating the download and installation of approved updates with the Windows Update client or Linux package manager.
+The following diagram shows how Update Manager assesses and applies security updates to all Azure and Arc-enabled machines for both Windows and Linux.
 
-All assessment information and update installation results are reported to Update Manager from the extension and is available for analysis with [Azure Resource Graph](/azure/governance/resource-graph/overview). You can view up to the last seven days of assessment data, and up to the last 30 days of update installation results.
+:::image type="content" source="../media/update-management-center-overview.png" alt-text="Diagram that shows the Update Manager workflow." lightbox="../media/update-management-center-overview.png":::
 
-The machines assigned to Update Manager report how up to date they are based on what source they're configured to synchronize with. You can configure [Windows Update Agent (WUA)](/windows/win32/wua_sdk/updating-the-windows-update-agent) on Windows machines to report to [Windows Server Update Services](/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus) or Microsoft Update, which is by default. You can configure Linux machines to report to a local or public YUM or APT package repository. If the Windows Update Agent is configured to report to WSUS, depending on when WSUS last synchronized with Microsoft Update, the results in Update Manager might differ from what Microsoft Update shows. This behavior is the same for Linux machines that are configured to report to a local repository instead of a public package repository.
+### Comparing update management approaches
 
-You can manage your Azure VMs or Azure Arc-enabled servers directly or at scale with Update Manager.
+When designing a security update strategy, consider the following approaches based on your environment:
+
+| Approach | Best for | Key characteristics | Microsoft solution |
+|---|---|---|---|
+| **Cloud-native patch management** | Cloud VMs and arc/agent-enabled machines | Unified management, policy integration, no extra infrastructure | Azure Update Manager |
+| **Cloud-native with management plane extensions** | Hybrid and multicloud environments | Extends cloud management to on-premises and other clouds | Azure Update Manager + Azure Arc |
+| **Traditional enterprise (Windows Server Update Services (WSUS), System Center Configuration Manager (SCCM), or equivalent)** | Legacy Windows environments | Familiar tools, granular control, limited cross-platform support | WSUS, Microsoft Configuration Manager |
+| **Third-party solutions** | Organizations with existing investments | Specialized features, potential added cost and complexity | N/A |
+
+For most organizations, cloud-native patch management provides the optimal balance of coverage, governance, and operational simplicity. Extending the management plane through agents or extensions enables consistent update management across hybrid and multicloud environments without requiring separate tools for each platform.
+
+### Integration with cloud security posture management
+
+Security update compliance should be part of your overall security posture management. Cloud security posture management (CSPM) tools integrate with patch management to provide security-focused update recommendations:
+
+- CSPM tools periodically check managed machines for system updates and surface missing critical and security patches as security recommendations.
+- Policy enforcement can require periodic assessment and automatic patching, ensuring no machine goes unmonitored.
+- Unified dashboards correlate update compliance with other security signals such as vulnerability findings and misconfigurations.
+
+In Azure, Microsoft Defender for Cloud provides this integration, surfacing update recommendations alongside other security findings.
+
+### AI considerations for security updates
+
+As organizations deploy and manage AI systems, security update strategies must account for AI-specific requirements:
+
+- **AI framework patching**: Machine learning frameworks (such as PyTorch, TensorFlow, ONNX Runtime) and AI service dependencies require regular security updates. Track and apply patches to AI-related packages in addition to operating system and middleware components.
+- **AI-powered vulnerability prioritization**: CSPM tools increasingly use machine learning to prioritize vulnerability remediation based on exploitability, asset criticality, and environmental context. Integrate these prioritized recommendations with your update deployment schedule.
+- **Predictive update impact analysis**: Evaluate how security updates might affect AI model serving performance, inference latency, and data pipeline operations. Schedule updates to AI infrastructure during maintenance windows that account for model retraining and validation.
+- **Automated remediation for AI workloads**: Use policy-based automation to enforce security update compliance for AI compute resources, including GPU-enabled VMs, machine learning compute clusters, and inference endpoints.
+- **Container and model serving updates**: AI workloads often run in containers. Incorporate container image scanning and patching into your security update strategy, including base image updates and runtime dependency patches.

@@ -6,8 +6,6 @@ There are a range of tools and services that can help you plan and complete the 
 
 | Service or tool | Stage | Description |
 | --- | --- | --- |
-| **Service Map** | _Assess_ | The Service Map feature of Azure Monitor maps communication between application components on Windows or Linux. Use this feature to identify dependencies when determining what data to migrate. Service Map requires another agent to be installed on the source environment virtual machines. |
-| **Azure TCO Calculator** | _Assess_ | The Azure Total Cost of Ownership (TCO) Calculator estimates the cost savings you can realize by migrating your workloads to Azure. |
 | **Azure Migrate** | _Assess_ & _Migrate_  | Azure Migrate performs assessment and migration to Azure of virtual machines (Hyper-V and VMware), cloud-based virtual machines, physical servers, databases, data, virtual desktop infrastructure, and web applications. |
 | **Database Migration Service** | _Assess_ & _Migrate_  | The Azure Database Migration Service performs assessment and migration for several different databases, not just Azure SQL Database. |
 | **Data Migration tool** |  _Migrate_ | The Azure Cosmos DB Data Migration tool migrates your existing databases to Azure Cosmos DB. |
@@ -15,70 +13,6 @@ There are a range of tools and services that can help you plan and complete the 
 | **Advisor** | _Monitor_ | Azure Advisor helps optimize your Azure resources for reliability, performance, cost, security, and operational excellence. |
 | **Monitor** | _Monitor_ | Azure Monitor collects monitoring data from both on-premises and Azure resources that help you analyze data, set up alerts, and identify problems. |
 | **Microsoft Sentinel** | _Monitor_ | Microsoft Sentinel provides intelligent security analytics for your applications that enable you to collect, detect, investigate, and respond to incidents. |
-
-Let's examine three Azure services and tools to support the assessment stage of migrating Tailwind Traders workloads to Azure:
-
-- Service Map 
-- Azure TCO Calculator
-- Azure Migrate
-
-## Service Map
-
-> [!Note]
->  Service Map will be retired on 30 September 2025. Be sure to migrate to VM insights before this date to continue monitoring processes and dependencies for your virtual machines.
-
-The Service Map feature of Azure Monitor lets you automatically discover applications and their components in your on-premises environment. Use the feature to gain valuable insights into the app structure at Tailwind Traders to effectively plan and perform your migration. Service Map supports discovery on both Windows and Linux platforms.
-
-You can use Service Map to review the Tailwind Traders server environment as a collection of interconnected systems. Service Map displays the environment details in several formats:
-
-- Connections between servers
-- Server processes
-- Inbound and outbound connection latency
-- TCP or UDP ports across any connected architecture
-
-### Things to know about Service Map
-
-The Service Map feature of Azure Monitor supports several critical assessment functions:
-
-- **Discovery**: Build a common reference of dependencies of your servers and their processes. Review discovered information as an intuitive graphical map. Identify failed network connections.
-
-- **Incident management**: Eliminate guesswork around problem isolation. Identify misconfigured systems and components.
-
-- **Migration assurance**: Plan, accelerate, and validate your Azure migrations. Ensure nothing is left behind and unexpected outages don't occur.
-
-- **Business continuity**: Identify how your systems rely on each other. Identify, which front-end systems you must recover after a server is restored and available again.
-
-- **Patch management**: Identify which other teams and servers depend on a service being patched. Notify teams in advance before you take down your systems for patching.
-
-## Azure TCO Calculator
-
-The Azure TCO Calculator helps you estimate and optimize your expected Azure costs following your migration. The calculator guides you through three steps to prepare the estimates:
-
-1. Define your workloads.
-1. Adjust any assumptions.
-1. View the estimates report.
-
-### Things to know about Azure TCO Calculator
-
-You start by defining the characteristics of your existing workloads. You enter information about your servers, databases, storage, and networking. The following screenshot shows an example workload definition for servers:
-
-:::image type="content" source="../media/calculator-estimate.png" alt-text="Screenshot of the Azure TCO Calculator with cost estimates." lightbox="../media/calculator-estimate.png" border="false":::
-
-After you define your existing workloads, you adjust any assumptions, such as:
-
-- Software Assurance coverage.
-- Geo-redundant storage.
-- Virtual machine costs.
-- Costs for electricity, storage, and IT labor.
-- Other assumptions, including hardware and software costs, virtualization costs, and datacenter costs.
-
-By making these adjustments, you can fine tune your workloads to reflect their actual cost to Tailwind Traders as closely as possible.
-
-In the last step, you review information about possible cost savings on the View report page.
-
-:::image type="content" source="../media/estimated-savings.png" alt-text="Screenshot that shows the estimated cost savings in the Azure TCO Calculator." border="false":::
-
-The information available from the report can be useful in helping identify the benefits in moving from an on-premises content to one based in Azure.
 
 ## Azure Migrate 
 
@@ -90,7 +24,7 @@ Azure Migrate also supports the visualization of dependencies for those machines
 
 ### Things to know about Server Assessment
 
-Azure Migrate includes several [assessment tools](/azure/migrate/how-to-assess) to help you prepare for your migration. To perform an agentless discovery, you use the Azure Migrate Server Assessment tool.
+Azure Migrate includes several assessment tools to help you prepare for your migration. To perform an agentless discovery, you use the Azure Migrate Server Assessment tool.
 
 Server Assessment guides you through downloading a lightweight collector appliance. The appliance carries out the discovery of systems in your environment. The tool uses data collected by the appliance to identify data about virtual machine cores, memory, disk sizes, and network adapters. Where applicable, the collector also gathers performance data like CPU and memory usage, disk IOPS, disk throughput, and network output.
 

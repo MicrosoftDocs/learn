@@ -2,8 +2,6 @@
 uid: learn.wwl.describe-monitoring-tools-azure.describe-purpose-of-azure-advisor
 title: Describe the purpose of Azure Advisor
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Describe the purpose of Azure Advisor
   description: "Describe the purpose of Azure Advisor"
   ms.date: 09/19/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 2
 content: |
-  [!include[](includes/2-describe-purpose-of-azure-advisor.md)]
+  [!include[](includes/2-describe-purpose-of-azure-advisor.md)]

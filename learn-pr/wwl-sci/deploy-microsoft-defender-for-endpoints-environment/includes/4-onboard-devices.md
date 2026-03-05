@@ -1,13 +1,13 @@
 ## Configure Device discovery
 
-When accessing your Microsoft Defender portal settings for Endpoints for the first time, the first step is to configure Device discovery. You must be a global administrator or security administrator for the tenant.
+When accessing your Microsoft Defender portal settings for Endpoints for the first time, the first step is to configure Device discovery. You must be a Security Administrator for the tenant.
 
 1. On the **Microsoft Defender XDR** portal, from the navigation menu, select **Settings** from the left.
 
 1. In the Settings menu page, select Device discovery.
 
    > [!NOTE]
-   > If you do not see the **Device discovery** option under **Settings**, logout by selecting the top-right circle with your account initials and select **Sign out**. Other options that you might want to try is to refresh the page with Ctrl+F5 or open the page InPrivate. Login again with the **Tenant Email** credentials.
+   > If you do not see the **Device discovery** option under **Settings**, logout by selecting the top-right circle with your account initials and select **Sign out**. Other options that you might want to try is to refresh the page with Ctrl+F5 or open the page InPrivate. Log in again with the **Tenant Email** credentials.
 
 1. In Discovery setup, make sure **Standard discovery (recommended)** is selected.
 

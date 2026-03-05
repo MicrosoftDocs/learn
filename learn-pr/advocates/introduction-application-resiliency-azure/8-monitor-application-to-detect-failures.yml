@@ -2,11 +2,9 @@
 uid: learn.introduction-to-application-resiliency-azure.monitor-application-to-detect-failures
 title: Monitor application to detect failures
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Monitor application to detect failures
   description: Monitor application to detect failures in Azure
-  ms.date: 08/14/2024
+  ms.date: 11/15/2025
   author: Orin-Thomas
   ms.author: orthomas
   ms.topic: unit

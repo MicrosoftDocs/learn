@@ -2,8 +2,6 @@
 uid: learn.wwl.understand-data-warehouse-developer-features-of-azure-synapse-analytics.explore-development-tools-for
 title: Explore the development tools for Azure Synapse Analytics
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Explore the development tools for Azure Synapse Analytics
   description: "Explore the development tools for Azure Synapse Analytics"
   ms.date: 06/23/2022
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 8
 content: |
-  [!include[](includes/2-explore-development-tools.md)]
+  [!include[](includes/2-explore-development-tools.md)]

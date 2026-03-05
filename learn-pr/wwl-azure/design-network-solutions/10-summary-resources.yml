@@ -2,9 +2,11 @@
 uid: learn.wwl.design-network-solutions.summary-resources
 title: Summary and resources
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Summary and resources
   description: "Summary and resources"
-  ms.date: 12/09/2024
+  ms.date: 05/13/2025
   author: wwlpublish
   ms.author: jileary
   ms.topic: unit

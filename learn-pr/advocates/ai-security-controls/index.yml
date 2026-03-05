@@ -4,6 +4,7 @@ metadata:
   ms.author: sayoung
   author: sarah-yo
   ms.date: 07/24/2024
+  ms.update-cycle: 180-days
   title: AI Security Controls
   description: Security controls that you can implement in AI systems to increase the security posture of AI environments
   ms.topic: module

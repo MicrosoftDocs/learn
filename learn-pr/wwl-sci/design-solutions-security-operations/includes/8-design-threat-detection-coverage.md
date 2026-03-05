@@ -1,73 +1,166 @@
+[MITRE ATT&CK](https://attack.mitre.org/) is a publicly accessible knowledge base of tactics and techniques commonly used by attackers. Created and maintained through real-world observations, many organizations use MITRE ATT&CK to develop threat models and methodologies for verifying security status in their environments.
 
-[MITRE ATT&CK](https://attack.mitre.org/#) is a publicly accessible knowledge base of tactics and techniques that are commonly used by attackers, and is created and maintained by observing real-world observations. Many organizations use the MITRE ATT&CK knowledge base to develop specific threat models and methodologies that are used to verify security status in their environments.
+## MITRE ATT&CK matrices
 
-## ATT&CK matrices
+MITRE ATT&CK includes multiple matrices, each representing a threat model for different environments:
 
-[MITRE ATT&CK](https://attack.mitre.org/) includes three matrices in its attack framework. Each matrix is a threat model with multiple tactics or goals along with techniques for achieving those goals in a specific type of environment:
+| Matrix | Description | Focus areas |
+|--------|-------------|-------------|
+| **Enterprise** | Tactics and techniques for attacks on corporate networks | Windows, macOS, Linux, network infrastructure, containers |
+| **Cloud** | Tactics and techniques specific to cloud environments | Azure, AWS, GCP, Microsoft 365, Google Workspace, SaaS, IaaS, identity providers |
+| **Mobile** | Tactics and techniques for infiltrating mobile devices | iOS, Android device attacks |
+| **ICS** | Tactics and techniques for attacks on Industrial Control Systems | Operational technology, SCADA systems, industrial processes |
 
-* Enterprise - a threat model that describes what an attacker might do in a corporate network. 
-* Mobile - a threat model that describes what an attacker might do to infiltrate mobile devices.
-* ICS - a threat model that describes potential attacks on an Industrial Control System (ICS).
+> [!NOTE]
+> The Cloud matrix is integrated within the Enterprise matrix but focuses specifically on cloud-native attack techniques. Many organizations require coverage across both traditional Enterprise techniques and Cloud-specific techniques.
 
-## MITRE ATT&CK and Microsoft Sentinel
+Each matrix contains multiple tactics (attacker goals) along with techniques (methods to achieve those goals). Security architects should evaluate coverage across relevant matrices based on their organization's technology environment.
 
-Microsoft Sentinel analyzes ingested data, not only to detect threats and help you investigate, but also to visualize the nature and coverage of your organization's security status.
+## Design guidance for threat detection coverage
 
-This article describes how to use the **MITRE** page in Microsoft Sentinel to view the detections already active in your workspace, and those available for you to configure, to understand your organization's security coverage, based on the tactics and techniques from the MITRE ATT&CK® framework.
+When evaluating threat detection coverage using MITRE ATT&CK:
 
-:::image type="content" source="../media/mitre-coverage.png" alt-text="Screenshot of the MITRE coverage page with both active and simulated indicators selected." lightbox="../media/mitre-coverage.png":::
+- **Assess current coverage** by mapping existing detections to ATT&CK techniques
+- **Identify gaps** where techniques lack corresponding detection rules
+- **Prioritize based on risk** focusing on techniques most relevant to your environment and threat landscape
+- **Plan incremental improvements** to systematically expand coverage
+- **Consider multiple matrices** (Enterprise, Mobile, ICS) based on your technology footprint
 
-Microsoft Sentinel is currently aligned to The MITRE ATT&CK framework, version 13.
+> [!TIP]
+> Use the MITRE ATT&CK framework as a common language for discussing threats and detection capabilities with stakeholders across your organization.
 
-##  View current MITRE coverage
+## Microsoft Sentinel MITRE coverage
 
-In Microsoft Sentinel, in the **Threat management** menu on the left, select **MITRE**. By default, both currently active scheduled query and near real-time (NRT) rules are indicated in the coverage matrix.
+Microsoft Sentinel provides built-in capabilities to visualize and evaluate threat detection coverage based on MITRE ATT&CK.
 
-- **Use the legend at the top-right** to understand how many detections are currently active in your workspace for specific technique.
+### View current MITRE coverage
 
-- **Use the search bar at the top-left** to search for a specific technique in the matrix, using the technique name or ID, to view your organization's security status for the selected technique.
+The **MITRE** page in Microsoft Sentinel displays the coverage matrix showing currently active scheduled query and near real-time (NRT) analytics rules:
 
-- **Select a specific technique** in the matrix to view more details on the right. There, use the links to jump to any of the following locations:
+- **Coverage indicators** show how many detections are currently active for each technique
+- **Search functionality** allows finding specific techniques by name or ID
+- **Technique details** provide links to the MITRE ATT&CK knowledge base and active detections
 
-    - Select **View technique details** for more information about the selected technique in the MITRE ATT&CK framework knowledge base.
+Microsoft Sentinel aligns to current MITRE ATT&CK framework versions as they're released.
 
-    - Select links to any of the active items to jump to the relevant area in Microsoft Sentinel.
+### Simulate possible coverage
 
-## Simulate possible coverage with available detections
+The MITRE coverage matrix also shows *simulated* coverage—detections that are available but not currently configured. This helps you understand your organization's possible security status if all available detections were configured.
 
-In the MITRE coverage matrix, *simulated* coverage refers to detections that are available, but not currently configured, in your Microsoft Sentinel workspace. View your simulated coverage to understand your organization's possible security status, were you to configure all detections available to you.
+Simulated coverage includes:
 
-In Microsoft Sentinel, in the **General** menu on the left, select **MITRE**.
+- **Analytics rule templates** available in solutions from the Content Hub
+- **Hunting queries** that can be converted to detections
+- **Solution-specific detections** from installed solutions
 
-Select items in the **Simulate** menu to simulate your organization's possible security status.
+When you select a specific technique, the details pane shows the number of active detections out of all available detections, helping you identify coverage opportunities.
 
-- **Use the legend at the top-right** to understand how many detections, including analytics rule templates or hunting queries, are available for you to configure.
+### SOC optimization recommendations
 
-- **Use the search bar at the top-left** to search for a specific technique in the matrix, using the technique name or ID, to view your organization's simulated security status for the selected technique.
+Microsoft Sentinel provides SOC optimization recommendations that include:
 
-- **Select a specific technique** in the matrix to view more details on the right. There, use the links to jump to any of the following locations:
+- **Threat-based coverage optimizations** with scoring (High, Medium, Low) based on the percentage of recommended rules activated
+- **Spider charts** showing coverage across different tactics and techniques for both user-defined and out-of-the-box detections
+- **Threat scenario analysis** with the ability to view full threat scenarios and drill down into specific MITRE ATT&CK techniques
+- **View by threat scenario** toggle on the MITRE ATT&CK page to filter coverage by specific threat scenarios
+- **AI MITRE ATT&CK tagging recommendations** (preview) that use AI to suggest tagging detections with MITRE tactics and techniques
+- **Risk-based recommendations** (preview) for adding controls to address business risks including operational, financial, and compliance risks
 
-    - Select **View technique details** for more information about the selected technique in the MITRE ATT&CK framework knowledge base.
+## Using MITRE ATT&CK in security operations
 
-    - Select links to any of the simulation items to jump to the relevant area in Microsoft Sentinel.
+### Analytics rules
 
-    For example, select **Hunting queries** to jump to the **Hunting** page. There, you'll see a filtered list of the hunting queries that are associated with the selected technique, and available for you to configure in your workspace.
+- When configuring analytics rules, **select specific MITRE techniques** to apply to your rule
+- When searching for analytics rules, **filter by technique** to find relevant rules quickly
+- Use technique mapping to **understand the attack coverage** each rule provides
 
-## Use the MITRE ATT&CK framework in analytics rules and incidents
+### Incidents
 
-Having a scheduled rule with MITRE techniques applied running regularly in your Microsoft Sentinel workspace enhances the security status shown for your organization in the MITRE coverage matrix.
+When incidents are created for alerts surfaced by rules with MITRE techniques configured:
 
-- **Analytics rules**:
+- Techniques are automatically added to incidents
+- Investigators can quickly understand the attack stage and methods used
+- Incident correlation considers technique relationships
 
-    - When configuring analytics rules, select specific MITRE techniques to apply to your rule.
-    - When searching for analytics rules, filter the rules displayed by technique to find your rules quicker.
+### Threat hunting
 
-- **Incidents**:
+- **Select tactics and techniques** when creating new hunting queries
+- **Filter queries by tactics** when searching for active hunting queries
+- **Use technique mapping** in bookmarks inherited from hunting queries or create custom mappings
 
-    When incidents are created for alerts that are surfaced by rules with MITRE techniques configured, the techniques are also added to the incidents.
+## Coverage considerations by matrix type
 
-- **Threat hunting**:
+### Enterprise matrix
 
-    - When creating a new hunting query, select the specific tactics and techniques to apply to your query.
-    - When searching for active hunting queries, filter the queries displayed by tactics by selecting an item from the list above the grid. Select a query to see tactic and technique details on the right.
-    - When creating bookmarks, either use the technique mapping inherited from the hunting query, or create your own mapping.
+Focus areas for corporate environment coverage:
+
+| Domain | Key techniques to monitor |
+|--------|--------------------------|
+| **Initial Access** | Phishing, exploits, valid accounts |
+| **Execution** | PowerShell, scripting, command-line |
+| **Persistence** | Registry modifications, scheduled tasks, account creation |
+| **Privilege Escalation** | Access token manipulation, UAC bypass |
+| **Defense Evasion** | Obfuscation, disabling security tools |
+| **Credential Access** | Credential dumping, brute force |
+| **Lateral Movement** | Remote services, pass-the-hash |
+| **Exfiltration** | Data compressed, transfer to cloud |
+
+### Cloud matrix
+
+For organizations using cloud services, evaluate coverage for cloud-specific techniques:
+
+| Domain | Key techniques to monitor |
+|--------|--------------------------|
+| **Initial Access** | Valid cloud accounts, trusted relationship abuse, cloud service exploitation |
+| **Persistence** | Account manipulation, implant cloud resources, modify cloud compute infrastructure |
+| **Privilege Escalation** | Cloud IAM abuse, temporary elevated cloud access |
+| **Defense Evasion** | Disable cloud logs, modify cloud authentication process |
+| **Credential Access** | Steal application access tokens, unsecured cloud credentials |
+| **Discovery** | Cloud service discovery, cloud infrastructure discovery |
+| **Collection** | Data from cloud storage, data staged in cloud |
+| **Impact** | Resource hijacking, data destruction in cloud |
+
+### Mobile matrix
+
+For organizations with mobile device deployments:
+
+- Device compromise techniques
+- Network-based attacks
+- Application-level threats
+- Data exfiltration from mobile devices
+
+### ICS matrix
+
+For organizations with operational technology environments:
+
+- Use Microsoft Defender for IoT integrated with Microsoft Sentinel
+- Monitor for techniques targeting industrial processes
+- Map alerts to MITRE ATT&CK for ICS tactics
+- Deploy OT-specific analytics rules and workbooks
+
+## AI and machine learning attack coverage
+
+Organizations deploying AI systems should also consider the **MITRE ATLAS** (Adversarial Threat Landscape for Artificial Intelligence Systems) framework. ATLAS extends threat modeling to AI-specific attack techniques:
+
+| Tactic | Example techniques |
+|--------|-------------------|
+| **Reconnaissance** | Search for victim's ML artifacts, identify ML model capabilities |
+| **Resource development** | Acquire ML attack tools, develop adversarial examples |
+| **Initial access** | Supply chain compromise of ML models, compromised ML dependencies |
+| **ML attack staging** | Backdoor ML models, craft adversarial data |
+| **ML model access** | Model inference API access, physical environment access |
+| **Exfiltration** | Model extraction, training data extraction |
+| **Impact** | Evade ML model, denial of ML service, erode ML model integrity |
+
+As AI workloads become more prevalent, security architects should evaluate detection coverage for both traditional MITRE ATT&CK techniques and AI-specific attack patterns described in ATLAS.
+
+## Design recommendations
+
+| Consideration | Recommendation |
+|---------------|----------------|
+| **Baseline coverage** | Start with high-priority techniques based on threat intelligence and industry reports |
+| **Continuous improvement** | Regularly review and expand coverage as new techniques emerge |
+| **Cross-matrix coverage** | Evaluate coverage across Enterprise, Cloud, Mobile, and ICS based on your environment |
+| **AI workload coverage** | For organizations with AI deployments, evaluate coverage against MITRE ATLAS techniques |
+| **Integration** | Use MITRE ATT&CK mappings across analytics rules, hunting queries, and incident response |
+| **Metrics** | Track coverage percentage and improvement over time as a security maturity indicator |

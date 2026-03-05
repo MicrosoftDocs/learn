@@ -1,15 +1,15 @@
-**Haystack** is an open-source framework designed for multi-stage reasoning systems that include document retrieval, text generation, and summarization.
+**Haystack** is an open-source framework designed for multi-stage reasoning systems that include document retrieval, text generation, and summarization. Haystack focuses on search and question-answering systems. Use this framework when your multi-stage reasoning system needs to search through documents or answer questions from large text collections.
 
-Developed by deepset, Haystack provides a modular and flexible architecture that allows you to create pipelines tailored to your specific use case.
+Haystack provides a modular and flexible architecture that allows you to create pipelines tailored to your specific use case.
 
 ## Explore the main components of Haystack
 
-When you build a multi-reasoning system with Haystack, you need to be familiar with the main components:
+When you build a multi-stage reasoning system with Haystack, you work with several main components:
 
 :::image type="content" source="../media/haystack-overview.png" alt-text="Diagram of the main components of a Haystack architecture." lightbox="../media/haystack-overview.png":::
 
-1. **Pipelines**: A directed multigraph of components.
-1. **Generators**: An interface to generate text based on a prompt.
+1. **Pipelines**: A workflow that connects components in sequence to process data from start to finish.
+1. **Generators**: Components that use language models to create text responses.
 1. **Retriever**: A component that retrieves relevant documents for a query.
 1. **Document stores**: A database for your documents.
 
@@ -26,7 +26,7 @@ Pipelines define how queries are processed and how the results are generated and
 
 ### Interact with LLMs through generators
 
-**Generators** in Haystack are components responsible for using LLMs to generate responses based on input queries. You can configure generators to interact with both open-source models and privately hosted model, giving you the flexibility and control over how your data is processed.
+**Generators** in Haystack are components that use language models to create text responses. They take the information gathered by other components (like retrievers) and use it to generate final answers or summaries. You can configure generators to work with different types of language models, giving you control over how your system produces responses.
 
 > [!Tip]
 > Explore the available [generators](https://docs.haystack.deepset.ai/docs/generators?azure-portal=true) and how to [choose the right generator](https://docs.haystack.deepset.ai/docs/choosing-the-right-generator?azure-portal=true).

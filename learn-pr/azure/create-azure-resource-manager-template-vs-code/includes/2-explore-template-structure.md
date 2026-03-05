@@ -135,7 +135,7 @@ New-AzResourceGroupDeployment `
 
 Use linked templates to deploy complex solutions. You can break a template into many templates and deploy these templates through a main template. When you deploy the main template, it triggers the linked template's deployment. You can store and secure the linked template by using a SAS token.
 
-A CI/CD pipeline automates the creation and deployment of development projects, which includes ARM template projects. The two most common pipelines used for template deployment are [Azure Pipelines](/training/paths/deploy-applications-with-azure-devops/?azure-portal=true) or [GitHub Actions](/training/paths/github-actions/?azure-portal=true).
+A CI/CD pipeline automates the creation and deployment of development projects, which includes ARM template projects. The two most common pipelines used for template deployment are Azure Pipelines or [GitHub Actions](/training/paths/github-actions/?azure-portal=true).
 
 More information on these two types of deployment is covered in other modules.
 
@@ -145,7 +145,7 @@ To add a resource to your template, you need to know the resource provider and i
 
 After you define the provider and resource type, you need to understand the properties for each resource type you want to use. For details, see [Define resources in Azure Resource Manager templates](/azure/templates?azure-portal=true). To find the resource, view the list in the left column. Notice that the properties are sorted by API version.
 
-![Screenshot of a Microsoft documentation page showing the storage account documentation selected.](../media/2-resource-type-properties.png)
+:::image type="content" source="../media/2-resource-type-properties.png" alt-text="Screenshot of a Microsoft documentation page showing the storage account documentation selected.":::
 
 Here's an example of some of the listed properties from the Storage Accounts page:
 
@@ -164,7 +164,7 @@ For our storage example, your template might look like this:
   "resources": [
     {
       "type": "Microsoft.Storage/storageAccounts",
-      "apiVersion": "2023-05-01",
+      "apiVersion": "2025-01-01",
       "name": "learntemplatestorage123",
       "location": "westus",
       "sku": {

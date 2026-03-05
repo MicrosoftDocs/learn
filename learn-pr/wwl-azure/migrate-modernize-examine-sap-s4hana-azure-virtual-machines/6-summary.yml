@@ -2,8 +2,6 @@
 uid: learn.wwl.migrate-modernize-examine-sap-s4hana-azure-virtual-machines.summary
 title: Summary
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Summary
   description: "Summary"
   ms.date: 01/08/2024
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 1
 content: |
-  [!include[](includes/6-summary.md)]
+  [!include[](includes/6-summary.md)]

@@ -2,8 +2,6 @@
 uid: learn.wwl.explore-security.inspect-biometrics
 title: Inspect biometrics
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Inspect biometrics
   description: "The inspect biometrics unit discusses the impact that biometrics has in authentication as it relates to security in the broader module."
   ms.date: 09/23/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 3
 content: |
-  [!include[](includes/5-inspect-biometrics.md)]
+  [!include[](includes/5-inspect-biometrics.md)]

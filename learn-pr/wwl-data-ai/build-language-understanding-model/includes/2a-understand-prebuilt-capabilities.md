@@ -1,14 +1,14 @@
-The Azure AI Language service provides various features for understanding human language. You can use each feature to better communicate with users, better understand incoming communication, or use them together to provide more insight into what the user is saying, intending, and asking about.
+The Azure Language service provides various features for understanding human language. You can use each feature to better communicate with users, better understand incoming communication, or use them together to provide more insight into what the user is saying, intending, and asking about.
 
-Azure AI Language service features fall into two categories: Pre-configured features, and Learned features. Learned features require building and training a model to correctly predict appropriate labels, which is covered in upcoming units of this module.
+Azure Language service features fall into two categories: Pre-configured features, and Learned features. Learned features require building and training a model to correctly predict appropriate labels, which is covered in upcoming units of this module.
 
-This unit covers most of the capabilities of the Azure AI Language service, but head over to the [Azure AI Language service documentation](/azure/cognitive-services/language-service/overview?azure-portal=true) for a full list, including quickstarts and a full explanation of everything available.
+This unit covers most of the capabilities of the Azure Language service, but head over to the [Azure Language service documentation](/azure/cognitive-services/language-service/overview?azure-portal=true) for a full list, including quickstarts and a full explanation of everything available.
 
-Using these features in your app requires sending your query to the appropriate endpoint. The endpoint used to query a specific feature varies, but all of them are prefixed with the Azure AI Language resource you created in your Azure account, either when building your REST request or defining your client using an SDK. Examples of each can be found in the next unit.
+Using these features in your app requires sending your query to the appropriate endpoint. The endpoint used to query a specific feature varies, but all of them are prefixed with the Azure Language resource you created in your Azure account, either when building your REST request or defining your client using an SDK. Examples of each can be found in the next unit.
 
 ## Pre-configured features
 
-The Azure AI Language service provides certain features without any model labeling or training. Once you create your resource, you can send your data and use the returned results within your app.
+The Azure Language service provides certain features without any model labeling or training. Once you create your resource, you can send your data and use the returned results within your app.
 
 The following features are all pre-configured.
 
@@ -26,7 +26,7 @@ PII detection allows you to identify, categorize, and redact information that co
 
 ### Key phrase extraction
 
-Key phrase extraction is a feature that quickly pulls the main concepts out of the provided text. For example, given the text "Text Analytics is one of the features in Azure AI Services.", the service would extract *"Azure AI Services"* and *"Text Analytics"*.
+Key phrase extraction is a feature that quickly pulls the main concepts out of the provided text. For example, given the text "Text Analytics is one of the features in Foundry Tools.", the service would extract *"Foundry Tools"* and *"Text Analytics"*.
 
 ### Sentiment analysis
 
@@ -45,7 +45,7 @@ Learned features require you to label data, train, and deploy your model to make
 
 ### Conversational language understanding (CLU)
 
-CLU is one of the core custom features offered by Azure AI Language. CLU helps users to build custom natural language understanding models to predict overall intent and extract important information from incoming utterances. CLU does require data to be tagged by the user to teach it how to predict intents and entities accurately.
+CLU is one of the core custom features offered by Azure Language. CLU helps users to build custom natural language understanding models to predict overall intent and extract important information from incoming utterances. CLU does require data to be tagged by the user to teach it how to predict intents and entities accurately.
 
 The exercise in this module will be building a CLU model and using it in your app.
 
@@ -63,4 +63,4 @@ Question answering is a mostly pre-configured feature that provides answers to q
 
 For example, say you want to make a virtual chat assistant on your company website to answer common questions. You could use a company FAQ as the input document to create the question and answer pairs. Once deployed, your chat assistant can pass input questions to the service, and get the answers as a result.
 
-For a complete list of capabilities and how to use them, see the Azure AI Language [documentation](/azure/ai-services/language-service/overview?azure-portal=true).
+For a complete list of capabilities and how to use them, see the Azure Language [documentation](/azure/ai-services/language-service/overview?azure-portal=true).

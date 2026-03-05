@@ -2,8 +2,6 @@
 uid: learn.wwl.creating-and-configuring-hdinsight-cluster.7-common-provisioning-issues
 title: Common provisioning Issues
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Common provisioning Issues
   description: "Common provisioning Issues"
   ms.date: 04/05/2024
@@ -15,4 +13,4 @@ labModal: false
 durationInMinutes: 6
 content: |
   [!include[](includes/7-common-provisioning-issues.md)]
-
+

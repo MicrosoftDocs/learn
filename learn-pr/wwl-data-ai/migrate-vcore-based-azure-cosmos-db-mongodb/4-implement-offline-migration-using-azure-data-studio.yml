@@ -2,8 +2,6 @@
 uid: learn.wwl.migrate-vcore-based-azure-cosmos-db-mongodb.implement-offline-migration-using-azure-data-studio
 title: Offline migration from MongoDB to vCore-based Azure Cosmos DB for MongoDB using Azure Data Studio
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Offline migration from MongoDB to vCore-based Azure Cosmos DB for MongoDB using Azure Data Studio
   description: "Offline migration from MongoDB to vCore-based Azure Cosmos DB for MongoDB using Azure Data Studio"
   ms.date: 11/24/2024
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 6
 content: |
-  [!include[](includes/4-implement-offline-migration-using-azure-data-studio.md)]
+  [!include[](includes/4-implement-offline-migration-using-azure-data-studio.md)]

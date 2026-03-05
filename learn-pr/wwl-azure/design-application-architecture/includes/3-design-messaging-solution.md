@@ -4,7 +4,9 @@ One of your design tasks for Tailwind Traders is to recommend a design for their
 - Ensure all content files are uploaded to the web API reliably from the mobile app. Files include text, images, and video.
 - Deliver details about new files directly to the app, such as when a customer posts a new product review or a video is added. 
 
-For these app requirements, the ideal solution is a message-based system.
+For these app requirements, the ideal solution is a message-based system. This video from the Developer course explains the different message queue solutions.
+
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=69784674-a8c7-42e9-b7ce-b239a865aafc]
 
 ### Things to know about Azure Queue Storage
 
@@ -40,12 +42,6 @@ For these app requirements, the ideal solution is a message-based system.
 
 Azure Service Bus message queues are intended for enterprise applications, such as an app that uses communication protocols and different data contracts. 
 
-#### Publish-subscribe topics
-
-[Azure Service Bus publish-subscribe topics](/azure/service-bus-messaging/service-bus-queues-topics-subscriptions#topics-and-subscriptions) are like queues but can have multiple subscribers. When a message is sent to a topic, multiple components can be triggered to perform a task. 
-
-:::image type="content" source="../media/service-bus-topic.png" alt-text="Illustration that shows a sender and multiple receivers communicating through subscriptions." border="false":::
-
 #### Business scenario
 
 Consider the scenario where a customer is watching a video on an app. The app supports both user history and fan lists. You can support both actions by using publish-subscribe topic attributes:
@@ -65,3 +61,6 @@ Each Azure messaging solution has a slightly different set of features and capab
  **Azure Queue Storage** | _You want a simple queue to organize messages_.<br><br> _You need an audit trail of all messages that pass through the queue_.<br><br>  _The queue storage exceeds 80 GB_.<br><br> _You'd like to track progress for processing a message inside of the queue_. |
 |  **Azure Service Bus** <br> _message queues_ |_You require an at-most-once delivery guarantee_.<br><br> _You require at-least-once message processing (PeekLock receive mode)_.<br><br> _You require at-most-once message processing (ReceiveAndDelete receive mode)_.<br><br> _You want to group messages into transactions_.<br><br> _You want to receive messages without polling the queue_.<br><br> _You need to handle messages larger than 64 KB_.<br><br> _The queue storage doesn't exceed 80 GB_.<br><br> _You'd like to publish and consume batches of messages_. |
 | **Azure Service Bus** <br> _publish-subscribe topics_ | _You need multiple receivers to handle each message_.<br><br> _You expect multiple destinations for a single message but need queue-like behavior_. | 
+
+> [!TIP]
+> Continue your learning with the [Discover Azure message queues](/training/modules/discover-azure-message-queue/) module. 

@@ -1,6 +1,9 @@
 Microsoft Security Copilot is now accessible from within Microsoft Purview data security solutions, as part of the embedded experience. With Copilot in Microsoft Purview, data security and compliance admins can use the power of AI to assess risk exposure more quickly than is otherwise possible, directly from within Microsoft Purview solutions.
 
-The scenarios supported as part of the embedded experience are:
+> [!NOTE]
+>The list of Copilot capabilities embedded in Microsoft Purview is continually growing. This unit provides just a sampling of those capabilities. For more information, see documentation on Microsoft Purview.
+
+Some of the scenarios supported as part of the embedded experience include:
 
 - Gain comprehensive summary of Data Loss Prevention alerts.
 - Gain comprehensive summary of Insider Risk Management alerts.
@@ -11,7 +14,7 @@ For all use cases supported through the embedded experience, as is the case with
 
 :::image type="content" source="../media/purview-plugin-requirement-new.png" lightbox="../media/purview-plugin-requirement-new.png" alt-text="Screen capture of the setting to allow Security Copilot to access data from your Microsoft 365 services, which is required to enable the Microsoft Purview plugin.":::
 
-Additionally, users must have the appropriate role permissions for both Copilot and the Purview solutions. For Copilot, users need, at a minimum, the Copilot workspace contributor role or the Entra Security operator role. For Microsoft Purview, as is true for a Microsoft solution enabled via a plugin, Copilot assumes the permissions of the user when it tries to access the data to answer the queries, so you need to have the required permissions to access the data.
+Additionally, users must have the appropriate role permissions for both Copilot and the Purview solutions. For Copilot, users need, at a minimum, the Copilot workspace contributor role or the Microsoft Entra Security operator role. For Microsoft Purview, as is true for a Microsoft solution enabled via a plugin, Copilot assumes the permissions of the user when it tries to access the data to answer the queries, so you need to have the required permissions to access the data.
 
 ### Gain comprehensive summary of alerts
 
@@ -97,14 +100,3 @@ For any AI generated content, you can provide feedback and accuracy of the conte
 
 :::image type="content" source="../media/ai-accuracy-feedback-data-loss-prevention-summary.png" lightbox="../media/ai-accuracy-feedback-data-loss-prevention-summary.png" alt-text="Screen capture of the feedback options. The options are: confirmed, it looks great, off target, inaccurate, or potentially harmful, inappropriate.":::
 
-### Limitations of Copilot in Microsoft Purview
-
-The Microsoft Purview use cases supported by Copilot have the following limitations:
-
-- The Copilot capabilities supported by Microsoft Purview eDiscovery are supported only with Microsoft Purview eDiscovery (Premium).
-
-- Copilot activities aren't discoverable in Purview eDiscovery. You can’t search and preserve Copilot activities.
-
-- No audit activities are available for Copilot activities.
-
-- Content summarization length is currently limited 20,000 tokens, which is approximately 15,000 words.

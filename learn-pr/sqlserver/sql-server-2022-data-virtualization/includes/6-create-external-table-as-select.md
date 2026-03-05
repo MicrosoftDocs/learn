@@ -28,11 +28,11 @@ For example, imagine your `order` table has historical data of past years that d
 
 ### Data export hub
 
-By using SQL Server 2022 as a data hub, you can combine CETAS with all existing PolyBase capabilities, including connecting to other data sources like Oracle, Teradata, ODBC, or other versions of SQL Server.
+By using SQL Server 2025 as a data hub, you can combine CETAS with all existing PolyBase capabilities, including connecting to other data sources like Oracle, Teradata, ODBC, or other versions of SQL Server.
 
 ## CETAS requirements
 
-To use CETAS in SQL Server 2022, you need to enable the property `ALLOW POLYBASE EXPORT` by using `sp_configure`. For details, see the next exercise.
+To use CETAS in SQL Server 2025, you need to enable the property `ALLOW POLYBASE EXPORT` by using `sp_configure`. For details, see the next exercise.
 
 ###  CETAS permissions
 
@@ -41,7 +41,7 @@ To use CETAS, you need three different levels of permission:
 - Permission to access and read the data source.
   If the data resides outside of SQL Server, either on a network share or another database server, the SQL Server service account must have permission to access the data source.
 
-- Permission on SQL Server 2022 to use the CETAS command.
+- Permission on SQL Server 2025 to use the CETAS command.
   For the database user to execute the CETAS command, they need **ADMINISTER BULK OPERATIONS**, **ALTER ANY EXTERNAL DATA SOURCE**, and **ALTER ANY EXTERNAL FILE FORMAT** permissions.
 
 - Write permission on the destination to write the CETAS results.
@@ -69,7 +69,7 @@ To better understand CETAS, you can break down the overall T-SQL syntax. CETAS T
 - In the middle, there are optional parameters you can use to reject data that you don't want to export.
 - At the top of the CETAS statement, after declaring CREATE EXTERNAL TABLE, you add information about the destination location, filename, and file format.
 
-This structure allows CETAS to be combined with any SELECT statement to query data outside SQL Server, within SQL Server, or from any other supported database. SQL Server 2022 automatically creates the file name and splits the results in multiple files for optimization. For example, a table exported as a Parquet can generate several files, depending on the exported data size. The select statement defines the external table column definition and type.
+This structure allows CETAS to be combined with any SELECT statement to query data outside SQL Server, within SQL Server, or from any other supported database. SQL Server 2025 automatically creates the file name and splits the results in multiple files for optimization. For example, a table exported as a Parquet can generate several files, depending on the exported data size. The select statement defines the external table column definition and type.
 
 ### Export a table from SQL Server as Parquet
 
@@ -83,7 +83,7 @@ WITH (
       FILE_FORMAT = ParquetFileFormat
      ) AS
 SELECT *
-FROM AdventureWorks2022.[Sales].[SalesOrderDetail];
+FROM AdventureWorks2025.[Sales].[SalesOrderDetail];
 ```
 
 ### Read a Delta file and export as Parquet

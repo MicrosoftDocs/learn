@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.case-study-access-control-threat-resilience
+metadata:
+  title: "Interactive Case Study: Modernizing User Access Control and Threat Resilience"
+  description: "Apply your cybersecurity architect skills on a real business scenario focused on user access control and threat resilience. Analyze design requirements, answer conceptual and technical questions and design a solution to meet the business needs."
+  ms.date: 08/05/2025
+  author: wwlpublish
+  ms.author: ceperezb
+  ai-usage: ai-assisted
+  ms.topic: module
+  ms.service: security
+title: "Interactive case study: Modernizing user access control and threat resilience"
+summary: "Apply your cybersecurity architect skills on a real business scenario focused on user access control and threat resilience. Analyze design requirements, answer conceptual and technical questions and design a solution to meet the business needs."
+abstract: |
+  In this interactive case study, you:
+  - Explore the operational and security challenges commonly associated with fragmented identity systems, legacy infrastructure, and inconsistent access governance.
+  - Learn how to apply Zero Trust principles using Microsoft technologies to modernize access control, improve threat detection, and enforce compliance across hybrid environments.
+  - Apply architectural reasoning to assess threats and design secure solutions.
+prerequisites: |
+  -   Experience and knowledge in identity and access, platform protection, security operations, securing data and securing applications.
+  -   Experience with hybrid and cloud implementations.
+iconUrl: /training/achievements/case-study-access-control-threat-resilience.svg
+hidden: false
+levels: 
+  - advanced
+roles:
+  - security-engineer
+  - solution-architect
+products: 
+  - entra
+  - defender-for-cloud
+subjects: 
+  - security
+  - cloud-security
+units:
+- learn.case-study-access-control-threat-resilience.introduction
+- learn.case-study-access-control-threat-resilience.interactive-case-study
+- learn.case-study-access-control-threat-resilience.interactive-case-study-highlights
+- learn.case-study-access-control-threat-resilience.knowledge-check
+- learn.case-study-access-control-threat-resilience.summary
+badge:
+  uid: learn.case.study-access-control-threat-resilience.badge
+
+

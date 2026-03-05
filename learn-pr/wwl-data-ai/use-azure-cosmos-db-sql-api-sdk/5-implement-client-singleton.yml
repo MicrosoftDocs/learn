@@ -2,11 +2,9 @@
 uid: learn.wwl.use-azure-cosmos-db-sql-api-sdk.implement-client-singleton
 title: Implement client singleton
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Implement client singleton
   description: "Implement client singleton"
-  ms.date: 03/05/2025
+  ms.date: 04/02/2025
   author: wwlpublish
   ms.author: calopez
   ms.topic: unit

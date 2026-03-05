@@ -2,8 +2,6 @@
 uid: learn.wwl.secure-mysql.describe-authentication
 title: Describe authentication
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Describe authentication
   description: "Describe authentication"
   ms.date: 11/08/2022
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 1
 content: |
-  [!include[](includes/2-describe-authentication.md)]
+  [!include[](includes/2-describe-authentication.md)]

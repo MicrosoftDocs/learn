@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.introduction-to-azure-data-share
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Introduction to Azure Data Share
   description: "Introduction to Azure Data Share"
   ms.date: 01/05/2022
@@ -47,4 +45,4 @@ units:
 - learn.wwl.introduction-to-azure-data-share.summary
 badge:
   uid: learn.wwl.introduction-to-azure-data-share.badge
-
+

@@ -2,8 +2,6 @@
 uid: learn.wwl.plan-azure-kubernetes-service-deployment.network-access-azure-kubernetes-service
 title: Access to Azure Kubernetes Service
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Access to Azure Kubernetes Service
   description: "Access to Azure Kubernetes Service"
   ms.date: 02/14/2025

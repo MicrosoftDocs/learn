@@ -17,7 +17,7 @@ In this unit, you'll complete the following tasks:
 
 Complete the following steps to create the GitHub Actions build action:
 
-1. Go to your forked repository in [GitHub](https://github.com), select the **:::no-loc text="Actions":::** tab.
+1. Go to your forked repository in [GitHub](https://github.com), and select the **:::no-loc text="Actions":::** tab.
 1. On the **:::no-loc text="Get started with GitHub Actions":::** page, select the **:::no-loc text="set up a workflow yourself":::** link.
 
     :::image type="content" source="../media/3-set-up-custom-github-workflow.png" alt-text="Screenshot that shows the Actions tab in the GitHub repository, highlighting the workflow creation link." lightbox="../media/3-set-up-custom-github-workflow.png":::
@@ -68,7 +68,7 @@ Complete the following steps to create the GitHub Actions build action:
 
 1. Replace the default workflow **:::no-loc text="main.yml":::** file name with *:::no-loc text="azure-kubernetes-service.yml":::*, and then select **:::no-loc text="Commit changes":::**.
 
-1. On the **:::no-loc text="Commit changes":::** screen, select **:::no-loc text="Commit directly to the main branch":::** and then select **:::no-loc text="Commit changes":::**.
+1. On the **:::no-loc text="Commit changes":::** screen, select **:::no-loc text="Commit directly to the main branch":::**, and then select **:::no-loc text="Commit changes":::**.
 
     You've finished creating the build workflow for your CI/CD pipeline.
 
@@ -88,14 +88,14 @@ Complete the following steps to create the GitHub Actions build action:
 
 ## Trigger the build
 
-The build workflow triggers automatically as soon as you commit the workflow file. You can also trigger the build manually. 
+The build workflow triggers automatically as soon as you commit the workflow file. You can also trigger the build manually.
 
-1. In your repository, select the **:::no-loc text="Actions":::** tab. 
+1. In your repository, select the **:::no-loc text="Actions":::** tab.
 1. On the left, under **:::no-loc text="All workflows":::**, select the **:::no-loc text="Build and deploy an app to AKS":::** workflow, and then select **:::no-loc text="Run workflow":::**.
 
 ## Monitor the build
 
-To view the real-time progress of the build:
+To view real-time progress of the build:
 
 1. In your repository, select the **:::no-loc text="Actions":::** tab.
 1. Select the most recent workflow run listed for the **:::no-loc text="Build and deploy an app to AKS":::** workflow. The name of the run is the commit message you used in the previous step.
@@ -104,14 +104,14 @@ To view the real-time progress of the build:
 
     :::image type="content" source="../media/3-github-workflow.png" alt-text="Screenshot showing a GitHub workflow in progress." lightbox="../media/3-github-workflow.png" border="true":::
 
-1. If you wait a few minutes, the steps in the job should complete successfully. 
+1. If you wait a few minutes, the steps in the job should complete successfully.
 1. In your terminal, run this command again to view the versions of the product service stored in the ACR.
 
     ```bash
     az acr repository show-tags -n AZURE_CONTAINER_REGISTRY --repository productservice --orderby time_desc --output table
     ```
 
-    You should see output similar to the following, that shows a new image version has been added to the ACR from the GitHub workflow:
+    You should see output similar to the following that shows a new image version has been added to the ACR from the GitHub workflow:
 
     ```bash
     Result

@@ -1,4 +1,4 @@
-Azure Load Balancer operates at the transport layer of the OSI model. This Layer 4 functionality allows traffic management based on specific properties of the traffic. Properties including, source and destination address, TCP or UDP protocol type, and port number.
+Azure Load Balancer operates at the transport layer of the Open Systems Interconnection (OSI) model. This Layer 4 functionality allows traffic management based on specific properties of the traffic. Properties including source and destination address, TCP or UDP protocol type, and port number.
 
 Load Balancer has several elements that work together to ensure an application's high availability and performance:
 
@@ -14,7 +14,7 @@ Load Balancer has several elements that work together to ensure an application's
 
 The front-end IP address is the address clients use to connect to your web application. A front-end IP address can be either a public or a private IP address. Azure load balancers can have multiple front-end IPs. The selection of a public or a private IP address determines which type of load balancer to create:
 
-- **Public IP address: A public load balancer**: A public load balancer maps the public IP and port of incoming traffic to the private IP and port of the VM. You can distribute specific types of traffic across multiple VMs or services by applying load-balancing rules. For example, you can spread the load of web request traffic across multiple web servers. The load balancer maps the response traffic from the private IP and port of the VM to the public IP and port of the load balancer. Then, it transmits the response back to the requesting client.
+- **Public IP address: A public load balancer**: A public load balancer maps the public IP and port of incoming traffic to the private IP and port of the virtual machine (VM). You can distribute specific types of traffic across multiple VMs or services by applying load-balancing rules. For example, you can spread the load of web request traffic across multiple web servers. The load balancer maps the response traffic from the private IP and port of the VM to the public IP and port of the load balancer. Then, it transmits the response back to the requesting client.
 - **Private IP address: An internal load balancer**: An internal load balancer distributes traffic to resources that are inside a virtual network. Azure restricts access to the front-end IP addresses of a virtual network that are load balanced. Front-end IP addresses and virtual networks are never directly exposed to an internet endpoint. Internal line-of-business applications run in Azure and are accessed from within Azure or from on-premises resources through a VPN or ExpressRoute connection.
 
     :::image type="content" source="../images/load-balancer-types.png" alt-text="Diagram that depicts how public and internal load balancers work in Azure Load Balancer." border="false":::
@@ -31,7 +31,7 @@ Traffic is managed using a five-tuple hash made from the following elements:
 - **Source port**: The port of the requesting client.
 - **Destination IP**: The destination IP address of the request.
 - **Destination port**: The destination port of the request.
-- **Protocol type**: The specified protocol type, TCP or UDP.
+- **Protocol type**: The specified protocol type, Transmission Control Protocol (TCP), or User Datagram Protocol (UDP).
 - **Session affinity**: Ensures that the same pool node always handles traffic for a client.
 
 Load Balancer allows you to load balance services on multiple ports, multiple IP addresses, or both. You can configure different load balancing rules for each front-end IP. Multiple front-end configurations are only supported with IaaS VMs.
@@ -71,7 +71,7 @@ You can change this behavior by configuring one of the options that are describe
 
 ## High availability ports
 
-A load balancer rule configured with `protocol - all and port - 0` is called a *high availability (HA) port rule*. This rule enables a single rule to load balance all TCP and UDP flows that arrive on all ports of an internal standard load balancer.
+A load balancer rule configured with `protocol - all and port - 0` is known as a *high availability (HA) port rule*. This rule enables a single rule to load balance all TCP and UDP flows that arrive on all ports of an internal standard load balancer.
 
 The load-balancing decision is made per flow. This action is based on the following five-tuple connection:
 

@@ -1,5 +1,5 @@
 > [!NOTE]
-> To complete this exercise, you need a [Microsoft Azure subscription](https://azure.microsoft.com/free) for which you have administrative access.
+> To complete this exercise, you need a [Microsoft Azure subscription](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn) for which you have administrative access.
 
 To set up the lab environment for this exercise, sign into your Azure subscription and follow these instructions to provision your Azure resources:
 

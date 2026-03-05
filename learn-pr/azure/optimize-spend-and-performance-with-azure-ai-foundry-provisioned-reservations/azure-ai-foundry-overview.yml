@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.optimize-spend-and-performance-with-azure-ai-foundry-provisioned-reservations.azure-ai-foundry-overview
+title: What are Azure AI Foundry Models?
+metadata:
+  title: Azure AI Foundry Models Overview
+  description: Learn about Azure AI Foundry Models.
+  ms.date: 08/01/2025
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/azure-ai-foundry-overview.md)]

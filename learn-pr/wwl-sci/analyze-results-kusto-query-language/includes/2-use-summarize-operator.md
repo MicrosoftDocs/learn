@@ -1,8 +1,8 @@
-The count operator with its variations creates a new column with the calculated result for the specified fields.
+You use the summarize operator with other operators like the count operator. The count operator with its variations creates a new column with the calculated result for the specified fields.
 
 The first statement below returns one column that is a unique list of Activity column values.
 
-The second statement returns a count of SecurityEvent rows where EventID equals 4688, and the count is grouped by Process and Computer.  Because of the by clause, the result set contains three columns: Process, Computer, Count.
+The second statement returns a count of SecurityEvent rows where EventID equals 4688, and the count is grouped by Process and Computer. Because of the by clause, the result set contains three columns: Process, Computer, Count.
 
 Run each Query separately to see the results.
 
@@ -33,7 +33,7 @@ The example below is a partial list of the most common simple aggregate function
 
 An aggregate function column can be explicitly named by including the "fieldname=" before the aggregate function.
 
-The KQL statement returns three columns: "cnt", "AccountType", and "Computer".  The "cnt" field name replaces the default "count_" name.
+The KQL statement returns three columns: "cnt," "AccountType," and "Computer."  The "cnt" field name replaces the default "count_" name.
 
 ```kusto
 SecurityEvent
@@ -57,7 +57,7 @@ SecurityEvent
 
 The following statement is a rule to detect Invalid Password failures across multiple applications for the same account.
 
-The where operator for ResultDescription filters the result set for results including "Invalid password".  Next, the statement "summarize" produces a distinct count of application names and group by User and IP Address.  Finally, there's a check against a variable created (threshold) to see if the number exceeds the allowed amount.
+The where operator for ResultDescription filters the result set for results including "Invalid password." Next, the statement "summarize" produces a distinct count of application names and group by User and IP Address. Finally, there's a check against a variable created (threshold) to see if the number exceeds the allowed amount.
 
 ```kusto
 let timeframe = 30d;

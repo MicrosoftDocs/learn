@@ -2,8 +2,6 @@
 uid: learn.wwl.migrate-onpremises-workloads-azure.configure-replication-onprem-vms
 title: Configure replication of on-premises virtual machines
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Configure replication of on-premises virtual machines
   description: "Configure replication of on-premises virtual machines"
   ms.date: 05/17/2021
@@ -38,4 +36,4 @@ quiz:
       explanation: "You can exclude disks from replication to optimize bandwidth and save resources by not replicating data you don’t need. Excluding data disks in this case could adversely affect the functionality of the migrated VM."
     - content: "Pick another VM size that supports the on-premises configuration."
       isCorrect: true
-      explanation: "Correct. If the suggested VM size isn’t appropriate, select another VM size in the Compute settings of Replication."
+      explanation: "Correct. If the suggested VM size isn’t appropriate, select another VM size in the Compute settings of Replication."

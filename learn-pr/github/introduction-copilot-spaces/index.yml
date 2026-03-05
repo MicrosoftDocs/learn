@@ -1,0 +1,42 @@
+### YamlMime:Module
+uid: learn.github.copilot-spaces
+title: Introduction to Copilot Spaces
+metadata:
+  title: Introduction to Copilot Spaces
+  description: Learn how to use GitHub Copilot Spaces to get context-aware, reliable answers, configure custom instructions, and optimize interactions for repositories, issues, and pull requests.
+  author: camihmerhar
+  ms.author: camhernandez
+  ms.date: 09/23/2025
+  ms.update-cycle: 180-days
+  ms.service: github
+  ms.topic: module
+summary: This module introduces Copilot Spaces, guiding developers and PMs to create, configure, and use Spaces effectively for high-quality, grounded responses.
+abstract: |
+  By the end of this module, learners can:
+  - Explain what Spaces are and when to use them versus general Copilot Chat
+  - Create, configure, and iterate on a Space with targeted context and custom instructions
+  - Apply best practices for high-quality, grounded answers within model context limits
+prerequisites: |
+  - GitHub account with an active Copilot subscription
+  - Access to the Spaces feature in your environment (availability may vary)
+  - Basic familiarity with repositories, issues, and pull requests
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+  - intermediate
+roles:
+  - devops-engineer
+  - administrator
+  - developer
+  - solution-architect
+products:
+  - github
+units:
+  - learn.github.copilot-spaces.introduction
+  - learn.github.copilot-spaces.create-first-space
+  - learn.github.copilot-spaces.share-discover-govern
+  - learn.github.copilot-spaces.working-in-space
+  - learn.github.copilot-spaces.skills-exercise
+  - learn.github.copilot-spaces.knowledge-check
+  - learn.github.copilot-spaces.summary
+badge:
+  uid: learn.github.copilot-spaces.badge

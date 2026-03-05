@@ -3,13 +3,11 @@ uid: learn.intro-to-docker-containers.5-when-use-docker-containers
 title: When to use Docker containers
 
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: When to use Docker containers
   description: In this unit, you'll see the benefits of using Docker as well as some considerations to help you decide when to use Docker.
   ms.date: 10/09/2024
-  author: rayoef
-  ms.author: rayoflores
+  author: davidsmatlak
+  ms.author: davidsmatlak
   ms.topic: unit
 
 durationInMinutes: 5

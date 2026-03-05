@@ -2,8 +2,6 @@
 uid: learn.wwl.design-mongodb-database-for-azure-cosmos-db.aggregation-pipeline-queries
 title: Aggregation pipeline
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Aggregation pipeline
   description: "Aggregation pipeline"
   ms.date: 12/28/2022
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 7
 content: |
-  [!include[](includes/4-aggregation-pipeline-queries.md)]
+  [!include[](includes/4-aggregation-pipeline-queries.md)]

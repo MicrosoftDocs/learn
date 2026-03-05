@@ -75,7 +75,7 @@ Users who need to manage service keys used by the extension require the `azure_a
 
 ## How does the azure_ai extension work?
 
-Here's a quick example of how easy it is to use the `azure_ai` extension within an Azure Database for PostgreSQL flexible server:
+Here's a quick example of how easy it's to use the `azure_ai` extension within an Azure Database for PostgreSQL flexible server:
 
 - **Generating embeddings**: You can create embeddings by calling a user-defined function (UDF) inline from SQL. For example:
 

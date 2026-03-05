@@ -41,7 +41,9 @@ Database database2 = await client.CreateDatabaseIfNotExistsAsync(
 Reads a database from the Azure Cosmos DB service as an asynchronous operation.
 
 ```csharp
-DatabaseResponse readResponse = await database.ReadAsync();
+// Reads a Database resource with the ID property of the Database resource you wish to read.
+Database database = this.cosmosClient.GetDatabase(database_id);
+DatabaseResponse response = await database.ReadAsync();
 ```
 
 ### Delete a database

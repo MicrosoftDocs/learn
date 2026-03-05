@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-ai-govern-usage.knowledge-check
+title: Module assessment
+metadata:
+  title: Module assessment
+  description: "Check your knowledge."
+  ms.date: 04/10/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What should you check before deleting Copilot data using eDiscovery (Premium)?"
+    choices:
+    - content: "Ensure the Copilot application is updated to the latest version."
+      isCorrect: false
+      explanation: "Incorrect: The app version is not required for data deletion in eDiscovery."
+    - content: "Check and remove any hold or retention policies from mailboxes."
+      isCorrect: true
+      explanation: "Correct: Active holds and retention policies must be removed before deletion."
+    - content: "Upgrade the user's mailbox to a larger storage capacity."
+      isCorrect: false
+      explanation: "Incorrect: Mailbox storage size isn't relevant to this process."
+  - content: "How do retention policies in Microsoft Purview Data Lifecycle Management apply to Copilot interactions?"
+    choices:
+    - content: "They only apply to user prompts, not Copilot responses."
+      isCorrect: false
+      explanation: "Incorrect: Policies cover both prompts and responses."
+    - content: "They only apply to Copilot interactions in Teams."
+      isCorrect: false
+      explanation: "Incorrect: Policies apply across multiple Copilot apps, not just Teams."
+    - content: "They apply to both user prompts and Copilot responses."
+      isCorrect: true
+      explanation: "Correct: This ensures both sides of the interaction are governed."
+  - content: "What is the purpose of Microsoft Purview Communication Compliance for Copilot?"
+    choices:
+    - content: "To encrypt and secure the data processed by Copilot."
+      isCorrect: false
+      explanation: "Incorrect: Communication Compliance is focused on enforcing communication policies, not encryption."
+    - content: "To provide technical support for Copilot users."
+      isCorrect: false
+      explanation: "Incorrect: Communication Compliance isn't a support tool."
+    - content: "To review and manage Copilot interactions for compliance."
+      isCorrect: true
+      explanation: "Correct: It reviews prompts and responses to ensure they align with organizational policies."

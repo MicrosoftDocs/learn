@@ -1,27 +1,25 @@
-You can use multiple build agents to support multiple build machines. Either distribute the load, run builds in parallel, or use different agent capabilities.
+Multi-job builds enable you to distribute work across multiple agents, run tasks in parallel, and create more efficient CI/CD workflows. This approach is particularly useful when different parts of your application have different requirements or when you want to reduce overall build time.
 
-As an example, components of an application might require different incompatible versions of a library or dependency.
+For example, some application components might require incompatible versions of libraries or dependencies, necessitating separate execution environments.
 
-## Multiple jobs in a pipeline
+## Benefits of multiple jobs
 
-Adding multiple jobs to a pipeline lets you:
+Adding multiple jobs to your pipeline provides several advantages:
 
- -  Break your pipeline into sections that need different agent pools or self-hosted agents.
- -  Publish artifacts in one job and consume them in one or more subsequent jobs.
- -  Build faster by running multiple jobs in parallel.
- -  Enable conditional execution of tasks.
+- Break your pipeline into sections that need different agent pools or self-hosted agents.
+- Publish artifacts in one job and consume them in one or more subsequent jobs.
+- Build faster by running multiple jobs in parallel.
+- Enable conditional execution of tasks.
 
 To add another agent job to an existing pipeline, click on the ellipsis and choose as shown in this image:
 
 :::image type="content" source="../media/devops-ci-image-028-86cb5076.png" alt-text="Screenshot of the Add an Agent Job page.":::
-
 
 ## Parallel jobs
 
 At the organization level, you can configure the number of parallel jobs that are made available.
 
 :::image type="content" source="../media/devops-ci-image-027-d0c04920.png" alt-text="Screenshot of the Retention and Parallel Jobs page.":::
-
 
 The free tier allows for one parallel job of up to 1800 minutes per month. The self-hosted agents have higher levels.
 

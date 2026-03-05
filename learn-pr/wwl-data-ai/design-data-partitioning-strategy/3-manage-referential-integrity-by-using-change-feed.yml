@@ -2,11 +2,9 @@
 uid: learn.wwl.design-data-partitioning-strategy.manage-referential-integrity-by-using-change-feed
 title: Manage referential integrity by using change feed
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Manage referential integrity by using change feed
   description: "Manage referential integrity by using change feed"
-  ms.date: 04/16/2024
+  ms.date: 04/02/2025
   author: wwlpublish
   ms.author: calopez
   ms.topic: unit

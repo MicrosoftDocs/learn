@@ -9,6 +9,6 @@ metadata:
   ms.author: jushiman
   ms.topic: unit
 durationInMinutes: 10
-azureSandbox: true
+#azureSandbox: true
 content: |
   [!include[](includes/5-exercise-connect-to-a-windows-vm-using-rdp.md)]

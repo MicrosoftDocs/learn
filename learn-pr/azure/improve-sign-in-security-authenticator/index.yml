@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.improve-sign-in-security-authenticator
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   moduleType: standard
   title: Improve sign-in security with Microsoft Authenticator
   description: "Improve Microsoft Entra sign-in security by running a registration campaign to nudge users to set up Microsoft Authenticator push notifications as their default sign-in method."
@@ -40,4 +38,4 @@ units:
 - learn.improve-sign-in-security-authenticator.summary
 badge:
   uid: learn.improve-sign-in-security-authenticator.badge
-
+

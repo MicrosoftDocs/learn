@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.manage-email-efficiently.summarize-email
+title: Summarize email threads with Copilot Chat in Outlook
+metadata:
+  title: Summarize Email Threads With Copilot Chat In Outlook
+  description: This content is part of the "Manage email efficiently with Microsoft Outlook and Copilot Chat" module.
+  ms.date: 09/24/2025
+  author: Stephanie-Rosenzweig
+  ms.author: v-stephanier
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-summarize-email.md)]

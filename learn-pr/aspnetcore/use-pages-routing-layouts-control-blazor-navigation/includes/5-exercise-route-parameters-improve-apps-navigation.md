@@ -6,9 +6,9 @@ In this exercise, you add a new order detail page that makes use of route parame
 
 ## Create an order detail page
 
-1. In Visual Studio Code, on the menu, select **File** > **New Text File**.
-1. Select ASP.NET Razor as the language.
-1. Create an order detail page component with this code:
+1. In Visual Studio Code, on the menu, select **File** > **New File**.
+1. Name the new file **OrderDetail.razor** and save it in the **Pages** directory.
+1. In the new file, create an order detail page component with this code:
 
     ```razor
     @page "/myorders/{orderId}"
@@ -106,7 +106,7 @@ In this exercise, you add a new order detail page that makes use of route parame
     This page looks similar to the **MyOrders** component. We're making a call to the **OrderController**, but this time we're asking for a specific order. We want the one that matches `OrderId`. Let's add the code that processes this request.
 
 1. Save your changes by selecting <kbd>Ctrl</kbd>+<kbd>S</kbd>.
-1. For the filename, use **OrderDetail.razor**. Make sure you save the file in the **Pages** directory.
+
 1. In the file explorer, select **OrderController.cs**.
 1. Under the `PlaceOrder` method, add a new method to return orders with a status.
 
@@ -163,7 +163,7 @@ The app should only respond to requests with numeric order IDs, such as `(http:/
 
     Go through the app, order, and check out. You're taken to the detailed order screen and you see the status of the order.
 
-1. Try different order IDs. If you use an integer that isn't a valid order, you get an **Order not found** message.
+1. Open a new browser window and enter `(http://localhost:5000/myorders/2)`. Try different order IDs including nonintegers. If you use an integer that isn't a valid order, you get an **Order not found** message.
 
     :::image type="content" source="../media/order-not-found.png" alt-text="Screenshot showing Order not found message.":::
 

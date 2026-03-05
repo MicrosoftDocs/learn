@@ -2,8 +2,6 @@
 uid: learn.wwl.explore-basic-services-identity-types-of-azure-active-directory-azure-ad.describe-external-identities
 title: Describe external identities
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Describe external identities
   description: "Describe external identities"
   ms.date: 08/01/2024
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 4
 content: |
-  [!include[](includes/5-describe-external-identities.md)]
+  [!include[](includes/5-describe-external-identities.md)]

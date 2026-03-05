@@ -1,13 +1,11 @@
 ### YamlMime:Module
 uid: learn.wwl.configure-azure-enhanced-monitoring-extension-for-sap
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Configure the Azure Enhanced Monitoring Extension for SAP
   description: "This module covers the configuration of the Azure Enhanced Monitoring Extension for SAP. Prepare for Exam AZ-120 Planning and Administering Microsoft Azure for SAP Workloads."
   ms.date: 08/01/2024
-  author: wwlpublish
-  ms.author: eric
+  author: bradjoseph
+  ms.author: bradj
   ms.topic: module
   ms.custom:
   - N/A

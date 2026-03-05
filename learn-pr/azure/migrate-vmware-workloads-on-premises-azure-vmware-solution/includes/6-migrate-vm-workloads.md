@@ -6,10 +6,8 @@ VMware HCX provides several ways of migrating VMs running Windows Server and Lin
 
 One last thing to note is that taking snapshots of a VM during migration, either manually or via a third-party backup solution, can disrupt the migration process. To prevent any disruption, disable backups until the VM completely migrates into Azure VMware Solution.
 
-> [!IMPORTANT] 
-
+> [!IMPORTANT]
 > Try our HCX migration click-through demo. This demo shows how an organization can confidently migrate workloads from an on-premises VMware deployment to a private cloud in Microsoft Azure. [Try now](https://regale.cloud/Microsoft/play/3210/hcx-migration#/0/0)
-
 
 ### Steps to migrate virtual machines into Azure VMware Solution using Bulk Migration
 
@@ -37,7 +35,7 @@ One last thing to note is that taking snapshots of a VM during migration, either
 
 1. After the network configuration finishes, select **Validate** or **Go**. **Validate** ensures the settings are configured correctly. **Go** starts the migration.
 
-1. HCX Manager then migrates all VMs selected. If you see a warning or error when you validate, fix the configuration and select **Go** to start the migration again.
+1. HCX Manager then migrates all VMs selected. If you see a warning or error when you validate, fix the configuration, and select **Go** to start the migration again.
 
 ### Steps to migrate virtual machines into Azure VMware Solution using Replication Assisted vMotion
 
@@ -80,6 +78,3 @@ Use the following steps to extend a Network:
 1. Verify a green check under **Status** indicating the Network Extension is completed.
 
     :::image type="content" source="../media/6-hcx-network-extension-complete-status-green.png" alt-text="Screenshot shows a green status check that the Network Extension is complete."lightbox="../media/6-hcx-network-extension-complete-status-green.png":::
-
-
-

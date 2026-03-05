@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.windows-autopilot.windows-autopilot
+title: Windows Autopilot
+metadata:
+  title: Windows Autopilot
+  description: This content is part of the "Device deployment with Windows Autopilot" module.
+  ms.date: 08/29/2025
+  author: Stephanie-Rosenzweig
+  ms.author: v-stephanier
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/2-windows-autopilot.md)]

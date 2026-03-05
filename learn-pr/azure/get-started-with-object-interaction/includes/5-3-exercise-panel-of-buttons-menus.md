@@ -41,21 +41,21 @@ There are several ways to provide inputs. Inputs trigger certain events and perf
 
     :::image type="content" source="../media/explode-button-object.png" alt-text="Screenshot of Unity with Explode button object OnClick event configured." lightbox="../media/explode-button-object.png":::
 
-7. Press the Play button to enter Game mode. Press-and-hold the space bar to activate the hand and use the mouse to press the **Hints** button to toggle the visibility of the placement hint objects:
+7. Press the **Play** button to enter Game mode. Press and hold the space bar to activate the hand, then use the mouse to press the **Hints** button to toggle the visibility of the placement hint objects:
 
     :::image type="content" source="../media/hint-button-pressed.png" alt-text="Screenshot of Unity Play mode split view with Hints button being pressed." lightbox="../media/hint-button-pressed.png":::
 
-8. **Explode button** will toggle the exploded view on and off:
+8. **Explode button** toggles the exploded view on and off:
 
     :::image type="content" source="../media/explode-button-pressed.png" alt-text="Screenshot of Unity Play mode split view with Explode button being pressed." lightbox="../media/explode-button-pressed.png":::
 
-    We will implement the **Reset** button later in the module.
+    We'll implement the **Reset** button later in the module.
 
 ## Create a dynamic menu that follows the user
 
 1. In the Project pane, navigate to the **Packages** > **MRTK UX Components** > **Near Menu** folder, click-and-drag the **NearMenuBase** prefab into the Hierarchy window, set its Transform **Position** to X = 0, Y = -0.4, Z = 0 and configure it as follows:
-    * Verify that the **SolverHandler** component's **Tracked Target Type** is set to **Head**
-    * Check the checkbox next to the **RadialView** Solver component so it's enabled by default
+    * Verify that the **SolverHandler** component's **Tracked Target Type** is set to **Head**.
+    * Check the checkbox next to the **RadialView** Solver component so it's enabled by default.
 
     :::image type="content" source="../media/near-menu-prefab.png" alt-text="Screenshot of Unity with newly added near menu prefab selected." lightbox="../media/near-menu-prefab.png":::
 
@@ -63,34 +63,34 @@ There are several ways to provide inputs. Inputs trigger certain events and perf
 
     :::image type="content" source="../media/menu-object-selected.png" alt-text="Screenshot of Unity with Menu object selected and ButtonCollection object expanded." lightbox="../media/menu-object-selected.png":::
 
-3. Rename the first button in the Buttons-GridLayout (Buttons) to Indicator, then in the Hierarchy window, configure the Indicator game object as follows:
+3. Rename the first button in the **Buttons-GridLayout (Buttons)** to **Indicator**, then in the Hierarchy window, configure the **Indicator** game object as follows:
 
-    * Select the **Frontplate > AnimatedContent > Icon > Label** object and change the **TextMesh Pro** component to match the name of the button. Make sure the Label object is activated in the hierarchy
-    * Configure the **PressableButton.OnClicked()** event by assigning the **Indicator** object that looks like a chevron, to the **None (Object)** field and selecting **GameObject > SetActive (bool)** from the **No Function** dropdown (verify that the argument checkbox is **checked**)
-    * Select the **Frontplate > AnimatedContent > Icon > UIButtonFontIcon** object and change the icon to the search icon on the **Font Icon Selector** component. You can find this in the list of icons, or set **Current Icon Name** to 'Icon 130'
+    * Select the **Frontplate > AnimatedContent > Icon > Label** object and change the **TextMesh Pro** component to match the name of the button. Make sure the Label object is activated in the hierarchy.
+    * Configure the **PressableButton.OnClicked()** event by assigning the **Indicator** object that looks like a chevron, to the **None (Object)** field and selecting **GameObject > SetActive (bool)** from the **No Function** dropdown (verify that the argument checkbox is **checked**).
+    * Select the **Frontplate > AnimatedContent > Icon > UIButtonFontIcon** object and change the icon to the search icon on the **Font Icon Selector** component. You can find this in the list of icons, or set **Current Icon Name** to **Icon 130**.
 
     :::image type="content" source="../media/indicator-button-object.png" alt-text="Screenshot of Unity with Indicator button object Button Config Helper configured." lightbox="../media/indicator-button-object.png":::
 
 4. To disable the chevron Indicator object, in the Hierarchy pane, select the Indicator object that looks like a chevron, then in the Inspector pane:
 
-    * Clear the checkbox next to its name to make it inactive by default
-    * Use the **Add Component** button to add the **Directional Indicator Controller (Script)** component
+    * Clear the checkbox next to its name to make it inactive by default.
+    * Use the **Add Component** button to add the **Directional Indicator Controller (Script)** component.
 
     :::image type="content" source="../media/directional-indicator-controller.png" alt-text="Screenshot of Unity with Indicator object selected, disabled, and DirectionalIndicatorController component added." lightbox="../media/directional-indicator-controller.png":::
 
-5. Rename the second button to **TapToPlace**, then in the Hierarchy window, configure the TapToPlace game object as follows:
+5. Rename the second button to **TapToPlace**, then configure the **TapToPlace** game object in the Hierarchy window as follows:
 
-    * Select the **Frontplate > AnimatedContent > Icon > Label** object and change the **TextMesh Pro** component to match the name of the button. Make sure the Label object is activated in the hierarchy
-    * Configure the **PressableButton.OnClicked()** event by assigning the RoverExplorer > **RoverAssembly** object to the **None (Object)** field and selecting **TapToPlace** > **bool Enabled** from the **No Function** dropdown (verify that the argument checkbox is **checked**)
-    * Select the **Frontplate > AnimatedContent > Icon > UIButtonFontIcon** object and change the icon to the hand icon on the **Font Icon Selector** component. You can find this in the list of icons, or set **Current Icon Name** to 'Icon 13'
+    * Select the **Frontplate > AnimatedContent > Icon > Label** object and change the **TextMesh Pro** component to match the name of the button. Make sure the Label object is activated in the hierarchy.
+    * Configure the **PressableButton.OnClicked()** event by assigning the RoverExplorer > **RoverAssembly** object to the **None (Object)** field and selecting **TapToPlace** > **bool Enabled** from the **No Function** dropdown (verify that the argument checkbox is **checked**).
+    * Select the **Frontplate > AnimatedContent > Icon > UIButtonFontIcon** object and change the icon to the hand icon on the **Font Icon Selector** component. You can find this in the list of icons, or set **Current Icon Name** to **Icon 13**.
 
     :::image type="content" source="../media/tap-to-place-button.png" alt-text="Screenshot of Unity with TapToPlace button object Button Config Helper configured." lightbox="../media/tap-to-place-button.png":::
 
 6. In the Hierarchy window, select the **RoverAssembly** object, then in the Inspector window, configure the **Tap To Place (Script)** component as follows:
-    * Uncheck the checkbox next to its name to make it inactive by default
-    * In the On **Placing Stopped ()** event section, select the + icon to add a new event:
-    * Assign the **RoverExplorer** > **RoverAssembly** object to the **None (Object)** field
-    * From the **No Function** dropdown, select **TapToPlace** > **bool Enabled** to update this property value when the event is triggered
-    * Verify that the argument checkbox is **unchecked**
+    * Uncheck the checkbox next to its name to make it inactive by default.
+    * In the On **Placing Stopped ()** event section, select the + icon to add a new event.
+    * Assign the **RoverExplorer** > **RoverAssembly** object to the **None (Object)** field.
+    * From the **No Function** dropdown, select **TapToPlace** > **bool Enabled** to update this property value when the event is triggered.
+    * Verify that the argument checkbox is **unchecked**.
 
     :::image type="content" source="../media/tap-to-place-reconfigured.png" alt-text="Screenshot of Unity with TapToPlace component reconfigured." lightbox="../media/tap-to-place-reconfigured.png":::

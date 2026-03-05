@@ -1,5 +1,7 @@
 Perhaps the simplest and quickest way to connect your virtual networks is to use Azure Virtual Network peering. Virtual Network peering enables you to seamlessly connect two Azure virtual networks. After the networks are peered, the two virtual networks operate as a single network, for connectivity purposes.
 
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=dc8c31e3-7c1a-4377-a0c2-e415bfc1d638]
+
 ### Things to know about Azure Virtual Network peering
 
 Let's examine some prominent characteristics of Azure Virtual Network peering.
@@ -19,6 +21,8 @@ Let's examine some prominent characteristics of Azure Virtual Network peering.
 - Global peering of virtual networks in different Azure Government cloud regions isn't permitted.
 
 - After you create a peering between virtual networks, the individual virtual networks are still managed as separate resources.
+
+- Virtual networks can be peered across subscriptions and tenants. 
 
 ### Things to consider when using Azure Virtual Network peering
 

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.ai-agent-cost-structure.ongoing-costs
+title: Understand ongoing non-infrastructure costs of AI agents
+metadata:
+  title: Understand ongoing Non-Infrastructure Costs of AI agents
+  description: This unit covers the ongoing non-infrastructure costs associated with AI agents, including operational expenses, maintenance, and support.
+  ms.date: 10/01/2025
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 20
+content: |
+  [!include[](includes/5-ongoing-costs.md)]

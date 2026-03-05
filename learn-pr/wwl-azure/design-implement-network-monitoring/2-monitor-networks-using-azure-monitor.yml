@@ -1,12 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.design-implement-network-monitoring.monitor-your-networks-using-azure-monitor
-title: Monitor your networks using Azure monitor
+title: Monitor your networks using Azure Monitor
 metadata:
-  title: Monitor your networks using Azure monitor
-  description: "Monitor your networks using Azure monitor"
-  ms.date: 12/03/2024
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Monitor your networks using Azure Monitor
+  description: "Monitor your networks using Azure Monitor"
+  ms.date: 05/19/2025
   author: wwlpublish
-  ms.author: jileary
+  ms.author: cynthist
   ms.topic: unit
   ms.custom:
   - N/A
@@ -16,25 +18,25 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "What two types of data are used by Azure Monitor?"
+  - content: "What is the primary function of Azure Monitor in network monitoring?"
     choices:
-    - content: "Policies and locks"
+    - content: "Azure Monitor primarily boosts network speed and performance."
       isCorrect: false
-      explanation: "Incorrect. Policies and locks aren't data types."
-    - content: "Database and storage"
+      explanation: "Incorrect. Azure Monitor doesn't directly enhance network speed or performance."
+    - content: "Azure Monitor primarily provides firewall protection for networks."
       isCorrect: false
-      explanation: "Incorrect. Databases and storage aren't data types."
-    - content: "Metrics and logs"
+      explanation: "Incorrect. While Azure does offer firewall services, Azure Monitor's main function isn't to provide firewall protection."
+    - content: "Azure Monitor primarily collects, analyzes, and acts on telemetry data from your Azure and on-premises environments."
       isCorrect: true
-      explanation: "Correct. Metrics and logs are the two fundamental data types used by Azure Monitor."
-  - content: "Which statement is correct?"
+      explanation: "Correct. Azure Monitor helps in collecting, analyzing, and acting on telemetry data."
+  - content: "What kind of data does Azure Monitor collect for network monitoring?"
     choices:
-    - content: "Azure Monitor Logs collects data from all Azure resources automatically."
+    - content: "Azure Monitor collects only the data related to user access and permissions for network monitoring."
       isCorrect: false
-      explanation: "Incorrect. When you create a Log Analytics workspace, you must configure different sources. No data is collected automatically."
-    - content: "Azure Monitor Logs collects and organizes log and performance data from monitored resources."
+      explanation: "Incorrect. While user access data may be part of the collected data, Azure Monitor collects a broader range of data for network monitoring."
+    - content: "Azure Monitor collects data about network traffic, performance metrics, and logs from your Azure and on-premises environments."
       isCorrect: true
-      explanation: "Correct. Azure Monitor Logs is a feature of Azure Monitor that collects and organizes log and performance data from monitored resources."
-    - content: "Azure Monitor Logs doesn't include events and traces."
+      explanation: "Correct. Azure Monitor collects a wide range of data including network traffic, performance metrics, and logs."
+    - content: "Azure Monitor collects only the data related to the physical status of network devices."
       isCorrect: false
-      explanation: "Incorrect. Azure Monitor Logs does include events and traces."
+      explanation: "Incorrect. Azure Monitor doesn't focus on the physical status of network devices."

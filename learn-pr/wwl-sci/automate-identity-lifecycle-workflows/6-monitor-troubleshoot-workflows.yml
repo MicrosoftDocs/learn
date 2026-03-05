@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.automate-identity-lifecycle-workflows.monitor-troubleshoot-workflows
+title: Monitor and troubleshoot workflows
+metadata:
+  title: Monitor and troubleshoot workflows
+  description: "Monitor audit logs, use Microsoft Graph APIs for reporting, address common issues, and evaluate workflow task summaries."
+  ms.date: 09/3/2025
+  author: wwlpublish
+  ms.author: roberts
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 6
+content: |
+  [!include[](includes/6-monitor-troubleshoot-workflows.md)]

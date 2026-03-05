@@ -14,7 +14,7 @@ CodeQL is the code analysis engine GitHub developed to automate security checks.
   
 CodeQL treats code like data, allowing you to find potential vulnerabilities in your code with greater confidence than traditional static analyzers. You generate a CodeQL database to represent your codebase, then run CodeQL queries on that database to identify problems in the codebase. The query results are shown as code scanning alerts in GitHub when you use CodeQL with code scanning.
 
-CodeQL supports both compiled and interpreted languages, and can find vulnerabilities and errors in code written in the following supported languages:
+CodeQL supports both compiled and interpreted languages, and it can find vulnerabilities and errors in code written in the following supported languages:
 
 - C or C++
 - C#
@@ -40,7 +40,7 @@ Follow these steps to set up code scanning using the CodeQL GitHub Actions workf
      :::image type="content" source="../media/2-security-tab-screenshot.png" alt-text="Screenshot of the security tab.":::
 
 3. Select **Set up code scanning**. If this option isn't available, ask an organization owner or repository administrator to enable GitHub Advanced Security.
- 
+
      :::image type="content" source="../media/3-set-up-code-scanning-button-screenshot.png" alt-text="Screenshot of the set up code scanning button.":::
 
 4. In the **Set up** drop-down, select **Default**.
@@ -59,4 +59,4 @@ Running code scanning with GitHub Actions affects your monthly billing minutes. 
 
 ## About Billing for Actions
 
-Code scanning uses GitHub Actions, and each run of a code-scanning workflow consumes minutes for GitHub Actions. GitHub Actions usage is free for both public repositories and self-hosted runners. For private repositories, each GitHub account receives a certain number of free minutes and storage, depending on the product used with the account. Any usage beyond the included amounts is controlled by spending limits. If you're a monthly billed customer, your account has a default spending limit of 0 US dollars (USD), which prevents extra usage of minutes or storage for private repositories beyond the amounts included with your account. If you pay your account by invoice, your account will have an unlimited default spending limit. Minutes reset every month, while storage usage doesn't.
+Code scanning uses GitHub Actions, and each run of a code-scanning workflow consumes minutes for GitHub Actions. GitHub Actions usage is free for both public repositories and self-hosted runners. For private repositories, each GitHub account receives a certain number of free minutes and storage, depending on the product used with the account. Spending limits control any usage beyond the included amounts. If you're a monthly billed customer, your account has a default spending limit of zero US dollars (USD), which prevents extra usage of minutes or storage for private repositories beyond the amounts included with your account. If you pay your account by invoice, your account will have an unlimited default spending limit. Minutes reset every month, while storage usage doesn't.

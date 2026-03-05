@@ -2,8 +2,6 @@
 uid: learn.intro-to-azure-dns-private-resolver.when-to-use-azure-dns-private-resolver
 title: When to use Azure DNS Private Resolver
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: learning-content
   title: When to use Azure DNS Private Resolver
   description: Discover the main use case scenarios for the Azure DNS Private Resolver.
@@ -13,4 +11,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 1
 content: |
-  [!include[](includes/4-when-to-use-azure-dns-private-resolver.md)]
+  [!include[](includes/4-when-to-use-azure-dns-private-resolver.md)]

@@ -2,8 +2,6 @@
 uid: learn.wwl.protect-azure-for-sap-workloads.support-access-to-premises-networks
 title: Support access to on-premises networks
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Support access to on-premises networks
   description: "Support access to on-premises networks"
   ms.date: 12/10/2021
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 4
 content: |
-  [!include[](includes/3-support-access-on-premises-networks.md)]
+  [!include[](includes/3-support-access-on-premises-networks.md)]

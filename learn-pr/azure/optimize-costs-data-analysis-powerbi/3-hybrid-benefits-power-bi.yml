@@ -4,8 +4,8 @@ metadata:
   title: Manage hybrid benefits to reduce the licensing cost of Azure VMs
   description: Manage hybrid benefits to reduce the licensing cost of Azure VMs
   ms.date: 11/11/2024
-  author: bandersmsft
-  ms.author: banders
+  author: tonyafehr
+  ms.author: tfehr
   ms.topic: unit
 title: Manage hybrid benefits to reduce the licensing cost of Azure VMs
 durationInMinutes: 5

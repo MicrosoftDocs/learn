@@ -31,15 +31,15 @@ DerivedClass1 derivedClass1 = new DerivedClass1();
 
 // demonstrate the overridden methods of the derived class
 Console.WriteLine("Calling the methods of DerivedClass1...\n");
-Console.WriteLine($"Method1 in the derived class appends derived class information to the return value: {derivedClass1.Method1()}");
+Console.WriteLine($"Method1 in the derived class overrides the base class and provides a custom message: {derivedClass1.Method1()}");
 
 derivedClass1.Method2();
 
 /*Output:
 Calling the methods of DerivedClass1...
 
-Method1 in the derived class calls base.Method1. base.Method1 returns: base.Method1 results
-Method1 in the derived class appends derived class information to the return value: base.Method1 results - plus information specific to DerivedClass1
+Method1 in the base class is abstract and can't be called.
+Method1 in the derived class overrides the base class and provides a custom message: Message from the overridden Method1 in DerivedClass1
 
 Method2 in the derived class calls base.Method2 (reuses the base class implementation)
 Method2 in the base class implements common behavior and returns true/false
@@ -53,10 +53,7 @@ public abstract class BaseClass
     public abstract string Property1 { get; set; }
     public virtual string Property2 { get; set; } = "Base - Property2";
 
-    public virtual string Method1()
-    {
-        return "base.Method1 results";
-    }
+    public abstract string Method1();
 
     public virtual bool Method2()
     {
@@ -73,24 +70,24 @@ public class DerivedClass1 : BaseClass
     public override string Method1()
     {
         // Method1 of the base class is abstract and can't be called
-        Console.WriteLine($"Method1 in the derived class calls base.Method1. base.Method1 returns: {base.Method1()}");
+        Console.WriteLine($"Method1 in the base class is abstract and can't be called.");
         
         // Return the base.Method1 response additional information specific to DerivedClass1
-        return $"{base.Method1()} - plus information specific to DerivedClass1";
+        return $"Message from the overridden Method1 in DerivedClass1";
     }
 
     public override bool Method2()
     {
         // Call base class method to implement common behavior
         Console.WriteLine($"\nMethod2 in the derived class calls base.Method2 (reuses the base class implementation)");
-        bool baseMethod1Success = base.Method2();
+        bool baseMethod2Success = base.Method2();
 
         // Access base class Property2
         string baseProperty2Value = base.Property2;
         Console.WriteLine($"Method2 in the derived class accesses base class Property2: {baseProperty2Value}");
 
         // implement derived class logic that involves base class information
-        if (baseMethod1Success && baseProperty2Value == "Base - Property2")
+        if (baseMethod2Success && baseProperty2Value == "Base - Property2")
         {
             Console.WriteLine("\nMethod2 in the derived class uses base class members to modify and extend functionality");
             return true;
@@ -110,7 +107,7 @@ In this code sample, the `DerivedClass1` class inherits from the `BaseClass` and
 
 1. An instance of `DerivedClass1` is created using the statement `DerivedClass1 derivedClass1 = new DerivedClass1();`. This derived class instance is used to call and demonstrate the overridden methods of the derived class.
 
-1. The code calls `Method1` of the derived class from within a `Console.WriteLine` statement. The overridden `Method1` uses `base.Method1()` to call the base class's `Method1`, appends additional information specific to `DerivedClass1`, and returns the combined result. A `Console.WriteLine` statement is used to display the value returned by overridden `Method1`. This step demonstrates how to include information specific to the derived class when extending a base class method of type `string`.
+1. The code calls `Method1` of the derived class from within a `Console.WriteLine` statement. The overridden `Method1` can't access the abstract `Method1` of the base class. Instead, it provides its own implementation that returns a string indicating that it's unique to the derived class.
 
 1. The code calls `Method2` of the derived class. The overridden `Method2` uses `base.Method2` to reuse the base class's `Method2` implementation. The method accesses the base class's `Property2` and prints its value. The overridden method then uses the Boolean value returned by the base class's `Method2` and the value of `Property2`, to either extend the `Method2` functionality or implements alternate behavior. This step demonstrates how the derived class can build upon and modify the behavior of the base class method.
 
@@ -183,7 +180,7 @@ public class DerivedClass1 : BaseClass
 
     public override string Method1()
     {
-        // Method1 of the base class is abstract and can't be called
+        // Method1 of the base class is now virtual
         Console.WriteLine($"Method1 in the derived class calls base.Method1. base.Method1 returns: {base.Method1()}");
         
         // Return the base.Method1 response additional information specific to DerivedClass1

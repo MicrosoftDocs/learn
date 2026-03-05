@@ -1,13 +1,13 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.azure-data-fundamentals-explore-data-warehouse-analytics
 metadata:
-  title: 'Microsoft Azure Data Fundamentals: Explore data analytics in Azure'
-  description: 'Microsoft Azure Data Fundamentals: Explore data analytics in Azure'
-  ms.date: 09/25/2024
+  title: 'Introduction to Microsoft Azure Data analytics in Azure'
+  description: 'Introduction to Microsoft Azure Data analytics in Azure'
+  ms.date: 06/20/2025
   author: wwlpublish
-  ms.author: rcaper
+  ms.author: calopez
   ms.topic: learning-path
-title: 'Microsoft Azure Data Fundamentals: Explore data analytics in Azure'
+title: 'Introduction to Microsoft Azure Data analytics in Azure'
 prerequisites: |
   Before starting this learning path, you should have a fundamental understanding of core data concepts, relational data, and non-relational data.
 summary: |

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.create-personalized-savings-plan.introduction
+title: Introduction to saving
+metadata:
+  title: Introduction to Saving
+  description: This content is a part of the Create a personalized savings plan to work toward a financial goal.
+  ms.date: 04/02/2025
+  author: kprks
+  ms.author: v-kperkes
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/1-introduction.md)]

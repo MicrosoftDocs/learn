@@ -1,5 +1,8 @@
 [Azure Policy](https://azure.microsoft.com/services/azure-policy) is a service in Azure that enables you to create, assign, and manage policies to control or audit your resources. These policies enforce different rules over your resource configurations so the configurations stay compliant with corporate standards.
 
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=f76c5590-f75a-430d-ab4b-0b1e72d14b19]
+
+
 ### Things to know about Azure Policy
 
 As you plan the governance strategy for Tailwind Traders, consider these characteristics of Azure Policy:

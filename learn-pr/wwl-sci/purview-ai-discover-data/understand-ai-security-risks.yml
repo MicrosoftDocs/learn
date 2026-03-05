@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-ai-discover-data.understand-ai-security-risks
+title: Understand AI security risks
+metadata:
+  title: Understand AI security risks
+  description: "Understand AI security risks."
+  ms.date: 04/04/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/understand-ai-security-risks.md)]

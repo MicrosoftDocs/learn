@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-data-storage-solution-for-relational-data.design-for-azure-cosmos-db
+title: Design for Azure Cosmos DB and Table Storage
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Design for Azure Cosmos DB and Table Storage
+  description: "Design for Azure Cosmos DB and Table Storage"
+  ms.date: 05/16/2025
+  author: wwlpublish
+  ms.author: cynthist
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 7
+content: |
+  [!include[](includes/8-design-for-azure-cosmos.md)]

@@ -1,4 +1,4 @@
-We recommend you edit an existing watchlist instead of deleting and recreating a watchlist. Log analytics has a five-minute SLA for data ingestion. If you delete and recreate a watchlist, you might see both the deleted and recreated entries in Log Analytics during this five-minute window. If you see these duplicate entries in Log Analytics for a longer period of time, submit a support ticket.
+We recommend you edit an existing watchlist instead of deleting and recreating a watchlist. Log analytics has a five-minute SLA (Service Level Agreement) for data ingestion. If you delete and recreate a watchlist, you might see both the deleted and recreated entries in Log Analytics during this five-minute window. If you see these duplicate entries in Log Analytics for a longer period of time, submit a support ticket.
 
 ## Edit a watchlist item
 
@@ -32,9 +32,9 @@ Edit a watchlist to edit or add an item to the watchlist.
 
 ## Bulk update a watchlist
 
-When you have many items to add to a watchlist, use bulk update. A bulk update of a watchlist appends items to the existing watchlist. Then, it de-duplicates the items in the watchlist where all the value in each column match.
+When you have many items to add to a watchlist, use bulk update. A bulk update of a watchlist appends items to the existing watchlist. Then, it deduplicates the items in the watchlist where all the value in each column match.
 
-If you've deleted an item from your watchlist file and upload it, bulk update won't delete the item in the existing watchlist. Delete the watchlist item individually. Or, when you have many deletions, delete and recreate the watchlist.
+If you deleted an item from your watchlist file and upload it, bulk update won't delete the item in the existing watchlist. Delete the watchlist item individually. Or, when you have many deletions, delete and recreate the watchlist.
 
 The updated watchlist file you upload must contain the search key field used by the watchlist with no blank values.
 

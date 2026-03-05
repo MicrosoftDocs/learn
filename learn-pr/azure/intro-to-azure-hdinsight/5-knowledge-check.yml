@@ -1,16 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.intro-to-azure-hdinsight.5-knowledge-check  
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: knowledge_check
-  title: Knowledge check
+  title: Module assessment
   description: Knowledge check
   ms.date: 04/21/2024 
   author: sreekzz
   ms.author: v-sreeiyer  
   ms.topic: unit
+  module_assessment: true
 durationInMinutes: 6
 content: |
   [!include[](includes/5-knowledge-check.md)]
@@ -68,4 +67,4 @@ quiz:
     - content: "Batch processing"
       isCorrect: true
       explanation: "Correct. Organizations use batch-processing jobs to prepare big data for further analysis."
-
+

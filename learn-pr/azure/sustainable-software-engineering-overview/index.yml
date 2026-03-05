@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.azure.sustainable-software-engineering-overview
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: The Principles of Sustainable Software Engineering
   description: Sustainable Software Engineering is an emerging discipline at the intersection of climate science, software, hardware, electricity markets, and data center design. The Principles of Sustainable Software Engineering are a core set of competencies needed to define, build, and run sustainable software applications.
   ms.date: 11/23/2024
@@ -55,4 +53,4 @@ units:
 - learn.azure.sustainable-software-engineering-overview.summary
 badge:
   uid: learn.azure.sustainable-software-engineering-overview.badge
-
+

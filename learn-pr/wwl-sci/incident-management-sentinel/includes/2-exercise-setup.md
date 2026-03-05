@@ -3,7 +3,7 @@ To set up the Azure environment for the optional incident management exercise, c
 
 ## Prerequisites
 
-To complete this optional exercise, you need access to an Azure subscription. If you don't have a subscription, create a [free account](https://azure.microsoft.com/free/?azure-portal=true).
+To complete this optional exercise, you need access to an Azure subscription. If you don't have a subscription, create a [free account](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn).
 
 > [!NOTE]
 > Be aware that this exercise creates resources that might incur costs in your Azure subscription. To estimate the costs, see [Microsoft Sentinel pricing](https://azure.microsoft.com/pricing/details/azure-sentinel/).

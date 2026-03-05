@@ -2,7 +2,7 @@ We covered how to create core and specialized Power BI semantic models and templ
 
 ## Endorse semantic models
 
-Users can discover other semantic models in the Power BI service and build their own reports. You can use this feature and make it easier for collaboration through **Endorsement**. Endorsement helps users find high-quality content they need by identifying the contest as verified and trustworthy.
+Users can discover other semantic models in the Power BI service and build their own reports. You can use this feature and make it easier for collaboration through **Endorsement**. Endorsement helps users find high-quality content they need by identifying the content as verified and trustworthy.
 
 Items can receive one of three endorsement badges - Promoted, Certified, or Master data:
 

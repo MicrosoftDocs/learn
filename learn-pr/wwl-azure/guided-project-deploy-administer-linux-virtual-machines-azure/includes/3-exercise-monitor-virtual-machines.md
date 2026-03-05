@@ -16,6 +16,6 @@ You need to monitor and be alerted if there are issues with the virtual machine.
 Launch the exercise and follow the instructions. When finished, be sure to return to this page so you can continue learning.
 
 > [!NOTE]
-> To complete this lab you'll need an [Azure subscription](https://azure.microsoft.com/free/).
+> To complete this lab you'll need an [Azure subscription](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn).
 
 [![Button to launch exercise.](../media/launch-exercise.png)](https://go.microsoft.com/fwlink/?linkid=2277722)

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.establish-ai-cost-management-practices.get-visibility-ai-costs
+title: Getting visibility of your AI costs
+metadata:
+  title: Getting Visibility of your AI Costs
+  description: Use Azure tools to view your AI costs.
+  ms.date: 10/03/2025
+  author: Orin-Thomas
+  ms.author: socuff
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/3-get-visibility-ai-costs.md)]

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.orchestrate-processes-in-fabric.choose-between-pipeline-notebook
+title: Describe Microsoft Fabric Real-Time Intelligence?
+metadata:
+  title: Describe Microsoft Fabric Real-Time Intelligence?
+  description: "What is Microsoft Fabric Real-Time Intelligence?"
+  ms.date: 11/14/2024
+  author: jamesh
+  ms.author: jamesh
+  ms.topic: unit
+  ms.custom:
+  - DP-700
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-choose-between-pipeline-notebook.md)]

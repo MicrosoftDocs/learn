@@ -2,15 +2,13 @@
 uid: learn.wwl.train-evaluate-deep-learn-models.introduction
 title: Introduction
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Introduction
   description: "Introduction"
-  ms.date: 07/10/2024
+  ms.date: 10/14/2025
   author: wwlpublish
   ms.author: gmalc
   ms.topic: unit
 azureSandbox: false
-durationInMinutes: 5
+durationInMinutes: 3
 content: |
   [!include[](includes/1-introduction.md)]

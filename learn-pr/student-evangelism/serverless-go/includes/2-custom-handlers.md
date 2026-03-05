@@ -1,4 +1,4 @@
-Azure Functions features a variety of language runtimes. If your language of choice is not provided by default, you can use a custom handler.
+Azure Functions features a variety of language runtimes. If your language of choice isn't provided by default, you can use a custom handler.
 
 ## What are custom handlers?
 

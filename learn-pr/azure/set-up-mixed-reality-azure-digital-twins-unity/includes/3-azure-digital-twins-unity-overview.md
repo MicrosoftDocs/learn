@@ -4,7 +4,7 @@ Azure Digital Twins enables the creation of knowledge graphs based on digital mo
 
 ## Create an Azure Digital Twins account
 
-To create and use Azure services (including Azure Digital Twin), you need an Azure subscription. For more information on how to create an Azure account, see [Create a free Azure account](https://azure.microsoft.com/free/).
+To create and use Azure services (including Azure Digital Twin), you need an Azure subscription. For more information on how to create an Azure account, see [Create a free Azure account](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn).
 
 An Azure Resource Manager template (ARM template) has been created for you to set up your Azure Digital Twins development and operating environment. This ARM template contains all the required instructions to automatically build out your Azure service environment (for example, storage, applications, SignalR, and so on).
 

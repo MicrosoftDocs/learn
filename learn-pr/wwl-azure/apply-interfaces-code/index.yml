@@ -1,9 +1,9 @@
 ### YamlMime:Module
 uid: learn.wwl.apply-interfaces-code
 metadata:
-  title: Apply interfaces in code
+  title: Apply Interfaces in Code
   description: "Discover how default implementations in interfaces enable you to add new methods directly into an interface and provide a default implementation."
-  ms.date: 02/17/2025
+  ms.date: 04/15/2025
   author: wwlpublish
   ms.author: eric
   ms.topic: module-intro-to-product

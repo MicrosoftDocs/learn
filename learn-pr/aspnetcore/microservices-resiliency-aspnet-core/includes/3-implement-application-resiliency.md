@@ -18,7 +18,7 @@ dotnet add package Microsoft.Extensions.Http.Resilience
 
 Running this command from the terminal in the apps project folder will add the package reference to the project file.
 
-In your application's startup class then add the following using statement:
+Then add the following using statement in your application's startup class :
 
 ```csharp
 using Microsoft.Extensions.Http.Resilience;
@@ -30,12 +30,12 @@ You can now add a standard resilience strategy to your HttpClient service. .NET 
 
 :::image type="content" source="../media/3-standard-reslience-strategies.png" alt-text="A diagram showing the strategies included in the Standard Resilience Handler. From overall timeout, retry, bulkhead, circuit breaker, and attempt timeout." border="false":::
 
-The request handler goes through each of the above strategies in order form left to right:
+The request handler goes through each of these strategies in order form left to right:
 
 - **Total request timeout strategy**: This sets a total amount of time that the request can take. You can think of this as setting the upper time limit for all the other strategies.
 - **Retry strategy**: This strategy controls the options on number of retries, backoff, and jitter. These options can't exceed the total timeout set in the previous strategy.
 - **Circuit breaker strategy**: This strategy opens the circuit if the failure ratio exceeds the threshold.
-- **Attempt timeout strategy**: This strategy sets a timeout for each individual request. If the request takes longer than this time then an exception is thrown.
+- **Attempt timeout strategy**: This strategy sets a timeout for each individual request. If the request takes longer than this time, then an exception is thrown.
 
 You can add this standard strategy, with all the default values by adding this extension method:
 
@@ -43,7 +43,7 @@ You can add this standard strategy, with all the default values by adding this e
 .AddStandardResilienceHandler();
 ```
 
-For example if you have declared a `WebApplication`, and you want to add a resilience strategy to the HttpClient service use this code: 
+For example if you have declared a `WebApplication`, and you want to add a resilience strategy to the HttpClient service use this code:
 
 ```csharp
 builder.Services.AddHttpClient<ServiceBeingCalled>(httpClient =>
@@ -52,7 +52,7 @@ builder.Services.AddHttpClient<ServiceBeingCalled>(httpClient =>
 }).AddStandardResilienceHandler();
 ```
 
-The first line of the above code adds a standard resilience handler to the HTTPClient. This will use all the default settings for the retry and circuit breaker strategies.
+The first line of the preceding code adds a standard resilience handler to the HTTPClient. This will use all the default settings for the retry and circuit breaker strategies.
 
 ### Configure the resilience strategy
 
@@ -68,7 +68,7 @@ You can change the default values of any of the strategies by specifying new opt
 
 This code changes the retry strategy defaults to have a maximum number of retires of 10, to use a linear back off, and use a base delay of 1 second.
 
-The options you choose have to be compatible with each other. For example, if the total time remains as its default of 30 seconds, then the retry options above will cause an exception. This is an error because the exponential backoff setting would cause the total time to complete the 10 retries to be 2046 seconds. This is a runtime exception, not a compile time error.
+The options you choose have to be compatible with each other. For example, if the total time remains as its default of 30 seconds, then the retry options will cause an exception. This is an error because the exponential backoff setting would cause the total time to complete the 10 retries to be 2,046 seconds. This is a runtime exception, not a compile time error.
 
 The following table lists the options available for each of the strategies.
 
@@ -108,4 +108,4 @@ The following table lists the options available for each of the strategies.
 
 :::image type="content" source="../media/3-calling-pattern-with-resiliency.png" alt-text="A sequence diagram showing the flow of events in an application using a resiliency strategy." border="false":::
 
-The sequence diagram above shows how each of the strategies work together in a standard resiliency strategy. To begin with the limiting factor of how long a request can take is controlled by the total timeout strategy. The retry strategy must then be set to have a maximum number of retries that will complete within the total timeout. The circuit breaker strategy will open the circuit if the failure ratio exceeds the threshold set for it. The attempt timeout strategy sets a timeout for each individual request. If the request takes longer than this time then an exception is thrown.
+The sequence diagram shows how each of the strategies work together in a standard resiliency strategy. To begin with, the total timeout strategy controls the limiting factor of how long a request can take. The retry strategy must then be set to have a maximum number of retries that will complete within the total timeout. The circuit breaker strategy will open the circuit if the failure ratio exceeds the threshold set for it. The attempt timeout strategy sets a timeout for each individual request. If the request takes longer than this time, then an exception is thrown.

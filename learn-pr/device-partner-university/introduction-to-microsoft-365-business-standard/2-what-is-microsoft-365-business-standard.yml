@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.introduction-to-microsoft-365-business-standard.what-is-microsoft-365-business-standard
+title: What is Microsoft 365 Business Standard?
+metadata:
+  title: What Is Microsoft 365 Business Standard?
+  description: This content is part of the "Introduction to Microsoft 365 Business Standard" module.
+  ms.date: 09/16/2025
+  author: melissawinters
+  ms.author: v-mwinters
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/2-what-is-microsoft-365-business-standard.md)]
+

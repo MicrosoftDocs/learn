@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.understand-unity-catalog.explore-external-data
+metadata:
+  title: Explore external data
+  description: "Explore Unity Catalog external data management: storage credentials, external locations, lakehouse federation, foreign catalogs, connections, and Delta Sharing for cross-platform data access."
+  ms.date: 10/03/2025
+  author: theresa-i
+  ms.author: theresai
+  ms.topic: unit
+title: Explore external data
+durationInMinutes: 11
+content: |
+  [!include[](includes/4-explore-external-data.md)]

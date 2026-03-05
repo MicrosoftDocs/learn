@@ -2,8 +2,6 @@
 uid: learn.wwl.explore-authentication-capabilities-of-azure-ad.summary-resources
 title: Summary and resources
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Summary and resources
   description: "Summary and resources"
   ms.date: 09/23/2024
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 1
 content: |
-  [!include[](includes/7-summary-resources.md)]
+  [!include[](includes/7-summary-resources.md)]

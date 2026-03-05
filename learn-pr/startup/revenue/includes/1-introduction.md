@@ -1,6 +1,6 @@
 In this module, we look at a range of revenue models and discuss how you can apply them to different types of startups.
 
-We also cover strategies for making early sales, and we discuss why it's important to focus on ideal first customers and early adopters rather than aim to acquire a large number of users at the outset.
+We also cover strategies for making early sales. In addition, we discuss why it's important to focus on ideal first customers and early adopters rather than aim to acquire a large number of users at the outset.
 
 ## Learning objectives
 

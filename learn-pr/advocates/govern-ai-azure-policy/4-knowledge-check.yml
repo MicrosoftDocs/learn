@@ -1,0 +1,47 @@
+### YamlMime:ModuleUnit
+uid: learn.govern-ai-services-azure-policy.knowledge-check
+title: Knowledge Check
+metadata:
+  title: Knowledge check
+  description: Check your knowledge.
+  ms.date: 06/26/2025
+  author: Orin-Thomas
+  ms.author: viniap
+  ms.topic: unit
+durationInMinutes: 4
+content: Choose the best response for each question.
+quiz:
+  questions:
+    - content: "You have been tasked with applying a policy to assess the state of an Azure AI Foundry deployment without interfering with its current implementation. How can you ensure the policy targets the existing Azure AI Foundry Hub?"
+      choices:
+        - content: "Ensure the policy definition targets resources of type \"Microsoft.MachineLearningServices/workspaces\", the policy scope targets the desired Resource Group or subscription, and Policy enforcement is disabled."
+          isCorrect: true
+          explanation: "Microsoft.MachineLearningServices/workspaces is the resource ID type for Azure AI Foundry and Azure Machine Learning, the scope ensures the Azure AI Foundry Hub is targeted, and disabled policy enforcement will provide assessment information only."
+        - content: "Ensure the policy definition targets resources of type \"Microsoft.CognitiveServices\" and the policy scope targets the desired Resource Group or subscription."
+          isCorrect: false
+          explanation: "Microsoft.CognitiveServices is the resource ID type for Azure AI services and won't target Azure AI Foundry Hubs as a result."
+        - content: "Ensure the policy definition targets resources of type \"Microsoft.MachineLearningServices/workspaces\", the policy scope targets the desired Resource Group or subscription, and Policy enforcement is enabled."
+          isCorrect: false
+          explanation: "An enabled policy enforcement interferes with the workload if the state isn't in accordance with the policy."
+    - content: "You're a cloud operations administrator responsible for ensuring compliance of AI services in Azure. You need to restrict network access to Azure AI services to enhance security. Which policy should you apply?"
+      choices:
+        - content: "Azure AI Services resources should use Azure Private Link."
+          isCorrect: false
+          explanation: "This policy focuses on connecting your virtual network to Azure services without a public IP address, not network access."
+        - content: "Azure AI Services resources should restrict network access."
+          isCorrect: true
+          explanation: "This policy ensures that only allowed networks can access the service."
+        - content: "Azure AI Services resources should have key access disabled (disable local authentication)."
+          isCorrect: false
+          explanation: "This policy focuses on disabling local authentication, not network access."
+    - content: "You've been tasked with applying a policy that should affect an Azure OpenAI service, but not an Azure AI Search that is also deployed to the same Resource Group in an Azure subscription. How can you ensure this policy doesn't affect the Azure AI Search service?"
+      choices:
+        - content: "Ensure the policy definition targets resources of type \"Microsoft.Search/searchServices\""
+          isCorrect: false
+          explanation: "By targeting Microsoft.Search/searchServices, you're affecting the Azure AI Search service only."
+        - content: "Ensure the policy definition targets resources of type \"Microsoft.MachineLearningServices/workspaces\""
+          isCorrect: false
+          explanation: "Microsoft.MachineLearningServices/workspaces can be used for Azure Machine Learning and Azure AI Foundry resources."
+        - content: "Ensure the policy definition targets resources of type \"Microsoft.CognitiveServices\""
+          isCorrect: true
+          explanation: "By targeting Microsoft.CognitiveServices only, you can ensure the service targets the Azure OpenAI service and not the Azure AI Search service."

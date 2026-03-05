@@ -1,0 +1,40 @@
+### YamlMime:Module
+uid: learn.dpu.k-12-it-pros
+title: Microsoft Education for K-12 IT professionals
+metadata:
+  title: Microsoft Education For K-12 IT Professionals
+  description: In this module, learners will examine how Microsoft Education solutions support IT professionals in K–12 institutions by improving operational efficiency, strengthening security, and enabling more strategic use of time and resources.
+  ms.date: 08/21/2025
+  author: Stephanie-Rosenzweig
+  ms.author: v-stephanier
+  ms.topic: module
+  ms.service: microsoft-365-education
+  ms.custom: CE052925-4
+summary: >
+  Microsoft Education solutions can simplify and streamline the work of K-12 education IT professionals.
+abstract: |
+  By the end of this module, you'll be able to:
+  - Save time and simplify your work by using Microsoft tools to manage devices, apps, and users across schools.
+  - Strengthen your school’s cybersecurity with AI-powered tools that detect threats, protect sensitive data, and automate responses.
+  - Make smarter decisions with insights from unified dashboards and automated workflows that help you stay ahead of risks and compliance needs.
+prerequisites: |
+  - None
+iconUrl: /training/achievements/microsoft-education-k-12-it-pros.svg
+ratingEnabled: false
+levels:
+  - beginner
+roles:
+  - k-12-educator
+  - school-leader
+  - student
+  - technology-manager
+products:
+  - m365-education
+units:
+  - learn.dpu.k-12-it-pros.introduction
+  - learn.dpu.k-12-it-pros.overview-k-12-it-professionals
+  - learn.dpu.k-12-it-pros.microsoft-solutions-k-12-it-professionals
+  - learn.dpu.k-12-it-pros.microsoft-defender
+  - learn.dpu.k-12-it-pros.summary
+badge:
+  uid: learn.dpu.k-12-it-pros.badge

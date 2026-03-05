@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-solutions-network-security.evaluate-network-designs-best-practices
+title: Evaluate network designs to align with security requirements and best practices
+metadata:
+  title: Evaluate Network Designs to Align With Security Requirements and Best Practices
+  description: "Learn how to evaluate Azure network designs against Zero Trust principles, defense-in-depth controls, and Microsoft security best practices as a security architect."
+  ms.date: 02/07/2026
+  author: ceperezb
+  ms.author: ceperezb
+  ms.topic: unit
+  ai-usage: ai-generated
+durationInMinutes: 8
+content: |
+  [!include[](includes/1a-evaluate-network-designs-best-practices.md)]

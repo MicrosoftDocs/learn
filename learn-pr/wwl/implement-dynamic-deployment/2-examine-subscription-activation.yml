@@ -2,8 +2,6 @@
 uid: learn.wwl.implement-dynamic-deployment.examine-subscription-activation
 title: Examine subscription activation
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Examine subscription activation
   description: "Examine subscription activation"
   ms.date: 04/05/2023
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 7
 content: |
-  [!include[](includes/2-examine-subscription-activation.md)]
+  [!include[](includes/2-examine-subscription-activation.md)]

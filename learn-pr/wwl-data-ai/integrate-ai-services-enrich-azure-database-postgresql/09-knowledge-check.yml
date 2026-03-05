@@ -1,0 +1,47 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.integrate-ai-services-enrich-azure-database-postgresql.knowledge-check
+title: Module assessment
+metadata:
+  title: Module assessment
+  description: "Knowledge check"
+  ms.date: 09/15/2025
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+durationInMinutes: 5
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: A hospital stores long notes from doctors and wants a way to highlight the key sentences without altering the wording. Which technique should be used?
+    choices:
+    - content: Abstractive summarization
+      isCorrect: false
+      explanation: Incorrect. Abstractive summarization rephrases text instead of keeping sentences intact.
+    - content: Extractive summarization
+      isCorrect: true
+      explanation: Correct. Extractive summarization surfaces the most important sentences as written:contentReference[oaicite:0]{index=0}.
+    - content: Key phrase extraction
+      isCorrect: false
+      explanation: Incorrect. Key phrase extraction pulls out important concepts, not full sentences.
+  - content: A healthcare provider wants to predict patient no-shows by automatically building models without manual tuning. Which feature would help?
+    choices:
+    - content: Automated Machine Learning (AutoML)
+      isCorrect: true
+      explanation: Correct. AutoML automates model selection, feature engineering, and hyperparameter tuning:contentReference[oaicite:8]{index=8}.
+    - content: Opinion mining
+      isCorrect: false
+      explanation: Incorrect. Opinion mining analyzes aspects of text, not predictive models.
+    - content: Manual model training
+      isCorrect: false
+      explanation: Incorrect. Manual training requires expert selection and tuning, which is what AutoML removes.
+  - content: A ride-sharing company wants to know why some feedback is mixed, such as "The driver was friendly but the car was dirty." What technique would help?
+    choices:
+    - content: Opinion mining
+      isCorrect: true
+      explanation: Correct. Opinion mining links sentiment to aspects such as driver and car:contentReference[oaicite:1]{index=1}.
+    - content: Sentiment analysis
+      isCorrect: false
+      explanation: Incorrect. Sentiment analysis gives an overall tone but doesn't separate aspects.
+    - content: Named entity recognition
+      isCorrect: false
+      explanation: Incorrect. Entity recognition identifies terms like "driver" or "car" but doesn't classify opinions about them.

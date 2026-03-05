@@ -1,0 +1,42 @@
+### YamlMime:Module
+uid: learn.wwl.understand-fabric-iq-fundamentals
+metadata:
+  title: Understand Microsoft Fabric IQ fundamentals
+  description: Learn the fundamentals of Microsoft Fabric IQ, including how ontologies create a shared business vocabulary, the components that make up the Fabric IQ ecosystem, and how ontology modeling differs from traditional data modeling approaches.
+  ms.date: 02/09/2026
+  author: theresa-i
+  ms.author: theresai
+  ms.topic: module
+  ms.service: fabric
+  ai-usage: ai-generated
+title: Understand Microsoft Fabric IQ fundamentals
+summary: Microsoft Fabric IQ provides a way to define business vocabulary in an ontology and bind the ontology to data sources. Learn about ontology items, data agents, Graph in Microsoft Fabric, and Power BI semantic models. Discover how ontology modeling differs from traditional analytical modeling by starting with business concepts rather than specific use cases.
+abstract: |
+  By the end of this module, you'll be able to:
+  - Explain what Fabric IQ is and how ontologies define business vocabulary
+  - Describe the role of ontology items in creating entity types, properties, and relationships
+  - Distinguish between the roles of each Fabric IQ component: ontology items, data agents, Graph in Microsoft Fabric, and Power BI semantic models
+  - Compare ontology modeling's concept-driven approach with traditional use-case-driven data modeling
+prerequisites: |
+  Before starting this module, you should have:
+  - The ability to navigate the Microsoft Fabric portal
+  - A conceptual understanding of data concepts such as tables, columns, and relationships
+  - General familiarity with business intelligence and analytics scenarios
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- data-analyst
+products:
+- fabric
+subjects:
+- data-analytics
+units:
+- learn.wwl.understand-fabric-iq-fundamentals.introduction
+- learn.wwl.understand-fabric-iq-fundamentals.get-started-with-fabric-iq
+- learn.wwl.understand-fabric-iq-fundamentals.explore-fabric-iq-components
+- learn.wwl.understand-fabric-iq-fundamentals.understand-ontology-modeling-paradigm
+- learn.wwl.understand-fabric-iq-fundamentals.knowledge-check
+- learn.wwl.understand-fabric-iq-fundamentals.summary
+badge:
+  uid: learn.wwl.understand-fabric-iq-fundamentals.badge

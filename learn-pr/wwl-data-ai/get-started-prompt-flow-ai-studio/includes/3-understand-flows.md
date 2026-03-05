@@ -2,7 +2,7 @@ To create a Large Language Model (LLM) application with prompt flow, you need to
 
 ## Understand a flow
 
-Prompt flow is a feature within Azure AI Foundry that allows you to author **flows**. Flows are executable workflows often consist of three parts:
+Prompt flow is a feature within Microsoft Foundry that allows you to author **flows**. Flows are executable workflows often consist of three parts:
 
 1. **Inputs**: Represent data passed into the flow. Can be different data types like strings, integers, or boolean.
 1. **Nodes**: Represent *tools* that perform data processing, task execution, or algorithmic operations.
@@ -38,3 +38,4 @@ There are three different types of flows you can create with prompt flow:
 - **Evaluation flow**: Focused on performance evaluation, allowing the analysis and improvement of models or applications through feedback on previous runs.
 
 Now that you understand how a flow is structured and what you can use it for, let's explore how you can create a flow.
+

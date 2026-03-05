@@ -15,17 +15,11 @@ Copilot Chat allows you to interact with Copilot using natural language. In this
 
 1. Select all of the code for the `LevenshteinDistance` method
 
-1. Right click the selected code. Under **Copilot**, click **Start Copilot Chat**
+1. Right click the selected code. Under **Generate Code**, select **Review**
 
-1. In the textbox, enter "Fix this code"
+    Copilot should detect that the Levenshtein distance calculation is incorrect, and suggest incremental fixes.
 
-    Copilot Chat may ask "Sure, what seems to be the issue with the code?" If so, enter "The Levenshtein distance is calculated incorrectly"
-
-1. Wait for Copilot to generate new code.
-
-    Copilot should suggest code that fixes an off by one error.
-
-1. Click **Accept** to apply the fix.
+1. Click **Apply and Go To Next** to apply the fixes and continue reviewing the code until all suggestions have been applied.
 
 ## Use Copilot Chat to improve code
 
@@ -39,7 +33,7 @@ You can use Copilot Chat to improve code by adding new features or refactoring e
 
 1. Select all of the code for the `PrintTrie` method
 
-1. Right click the selected code. Under **Copilot**, click **Start Copilot Chat**
+1. Right click the selected code and select **Inline Chat**
 
 1. In the textbox, enter "Improve this code by separating the words into five columns"
 

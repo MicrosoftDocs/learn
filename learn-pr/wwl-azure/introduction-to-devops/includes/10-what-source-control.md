@@ -8,7 +8,6 @@ Source control protects source code from catastrophe and the casual degradation 
 
 :::image type="content" source="../media/source-control-f1d31c38-fc3f9d0e-682a8dd2.png" alt-text="Diagram of Source control.":::
 
-
 Without version control, you're tempted to keep multiple copies of code on your computer. It could be dangerous. Easy to change or delete a file in the wrong code copy, potentially losing work.
 
 Version control systems solve this problem by managing all versions of your code but presenting you with a single version at a time.
@@ -25,10 +24,9 @@ Version control also makes experimenting easy and, most importantly, makes colla
 
 There are several perspectives on version control.
 
- -  For developers, it's a daily enabler for work and collaboration to happen. It's part of the daily job, one of the most-used tools.
- -  For management, the critical value of version control is in:
-    
-    
-     -  IP security.
-     -  Risk management.
-     -  Time-to-market speed through Continuous Delivery, where version control is a fundamental enabler.
+- For developers, it's a daily enabler for work and collaboration to happen. It's part of the daily job, one of the most-used tools.
+- For management, the critical value of version control is in:
+
+  - IP security.
+  - Risk management.
+  - Time-to-market speed through Continuous Delivery, where version control is a fundamental enabler.

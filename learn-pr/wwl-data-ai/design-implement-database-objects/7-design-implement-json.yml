@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-implement-database-objects.design-implement-json
+title: Manage JSON columns and indexes
+metadata:
+  title: Manage JSON columns and indexes
+  description: "Learn how to design and implement JSON columns and indexes for semi-structured data"
+  ms.date: 02/24/2026
+  author: JulianePadrao
+  ms.author: jupadrao
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 8
+content: |
+  [!include[](includes/7-design-implement-json.md)]

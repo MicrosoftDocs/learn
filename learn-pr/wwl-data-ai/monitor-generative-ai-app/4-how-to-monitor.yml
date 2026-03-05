@@ -1,0 +1,18 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.monitor-generative-ai-app.how-to-monitor
+title: Explore how to monitor with Azure
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Explore how to monitor with Azure
+  description: Explore how to continuously monitor generative AI applications with Azure.
+  author: wwlpublish
+  ms.author: madiepev
+  ms.date: 04/30/2025
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-how-to-monitor.md)]
+

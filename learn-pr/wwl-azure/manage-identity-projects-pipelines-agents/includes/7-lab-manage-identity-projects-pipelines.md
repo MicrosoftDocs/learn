@@ -3,7 +3,7 @@ Managed identities offer a secure method for controlling access to Azure resourc
 In this lab, create a managed identity to use in your YAML pipelines using Azure DevOps with self-hosted agents and a managed identity.
 
 > [!NOTE]
-> To complete this lab, you will need an [Azure subscription](https://azure.microsoft.com/free). You will also need to [validate your lab environment](https://aka.ms/mslearn-implement-security-through-pipeline-validate-lab-environment) to complete this lab.
+> To complete this lab, you will need an [Azure subscription](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn). You will also need to [validate your lab environment](https://aka.ms/mslearn-implement-security-through-pipeline-validate-lab-environment) to complete this lab.
 
 Launch the exercise and follow the instructions.
 

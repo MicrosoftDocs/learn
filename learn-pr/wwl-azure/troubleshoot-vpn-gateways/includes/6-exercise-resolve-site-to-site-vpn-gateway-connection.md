@@ -1,6 +1,6 @@
 
 > [!IMPORTANT]
-> You need your own [Azure subscription](https://azure.microsoft.com/free/?azure-portal=true) to complete the exercises in this module. If you don't have an Azure subscription, you can still view the demonstration video in the preceding unit.
+> You need your own [Azure subscription](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn) to complete the exercises in this module. If you don't have an Azure subscription, you can still view the demonstration video in the preceding unit.
 
 You've explored the possible reasons why your two machines can't connect to each other. You found that the shared key for the two connections is different.
 

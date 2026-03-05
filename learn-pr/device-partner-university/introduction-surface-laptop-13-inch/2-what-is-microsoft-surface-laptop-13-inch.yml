@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.introduction-to-surface-laptop-13-inch.what-is-microsoft-surface-laptop-13-inch
+title: What is Microsoft Surface Laptop 13-inch?
+metadata:
+  title: What Is Microsoft Surface Laptop 13-Inch?
+  description: This content is part of the "Introduction to Microsoft Surface Laptop 13-inch" module.
+  ms.date: 09/29/2025
+  author: ozahran7
+  ms.author: v-zahranomar
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/2-what-is-microsoft-surface-laptop-13-inch.md)]

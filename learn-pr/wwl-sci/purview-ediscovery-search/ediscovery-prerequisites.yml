@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-ediscovery-search.ediscovery-prerequisites
+title: Prerequisites for using eDiscovery in Microsoft Purview
+metadata:
+  title: Prerequisites for using eDiscovery in Microsoft Purview
+  description: "Prerequisites for using eDiscovery in Microsoft Purview."
+  ms.date: 04/17/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/ediscovery-prerequisites.md)]

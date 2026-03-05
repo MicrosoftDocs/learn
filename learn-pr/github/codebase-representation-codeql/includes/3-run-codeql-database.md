@@ -36,7 +36,7 @@ Metadata information can include a description of the query, a unique ID, and th
 
 GitHub has a recommended style guide for query metadata. You can find it in the [CodeQL documentation](https://github.com/github/codeql/blob/main/docs/query-metadata-style-guide.md).
 
-This is an example of metadata for one of the standard Java queries:
+This example shows metadata for one of the standard Java queries:
 
 :::image type="content" source="../media/query-metadata.png" alt-text="Screenshot showing query metadata." border="false":::
 
@@ -46,9 +46,9 @@ CodeQL doesn't interpret queries that don't have metadata. It shows those result
 
 QL is a declarative, object-oriented query language. It's optimized to enable efficient analysis of hierarchical data structures, and in particular, databases that represent software artifacts.
 
-The syntax of QL is similar to SQL, but the semantics of QL are based on Datalog. Datalog is a declarative logic programming language that's often used as a query language. Because QL is primarily a logic language, all operations in QL are logical operations. QL also inherits recursive predicates from Datalog. QL adds support for aggregates to make even complex queries concise and simple.
+The syntax of QL is similar to SQL, but the semantics of QL are based on Datalog. Datalog is a declarative logic programming language, which is often used as a query language. Because QL is primarily a logic language, all operations in QL are logical operations. QL also inherits recursive predicates from Datalog. QL adds support for aggregates to make even complex queries concise and simple.
 
-The QL language consists of logical formulas. It uses common logical connectives such as `and`, `or`, and `not`, along with quantifiers such as `forall` and `exists`. Because QL inherits recursive predicates, you can also write complex recursive queries by using simple QL syntax and aggregates like `count`, `sum`, and `average`.
+The QL language consists of logical formulas. It uses common logical connectives such as `and`, `or`, and `not`, along with quantifiers such as `forall` and `exists`. Because QL inherits recursive predicates, you can also write complex recursive queries by using basic QL syntax and aggregates like `count`, `sum`, and `average`.
 
 For more information on the QL language, see the [CodeQL documentation](https://codeql.github.com/docs/ql-language-reference/about-the-ql-language/).
 
@@ -60,7 +60,7 @@ Creating path queries can help you visualize the flow of information through a c
 
 The easiest way to start writing your own path query is to use one of the existing queries as a template. To get these queries for supported languages, see the [CodeQL documentation](https://codeql.github.com/codeql-query-help/).
 
-Your path query requires certain metadata, query predicates, and `select` statement structures. Many of the built-in path queries in CodeQL follow a simple structure. The structure depends on how CodeQL models the language that you're analyzing.
+Your path query requires certain metadata, query predicates, and `select` statement structures. Many of the built-in path queries in CodeQL follow a basic structure. The structure depends on how CodeQL models the language that you're analyzing.
 
 Here's an example template for a path query:
 
@@ -91,7 +91,7 @@ In that template:
 - `Flow` is the result of the data-flow computation based on `MyConfiguration`.
 - `Flow::Pathgraph` is the resulting data-flow graph module that you need to import in order to include path explanations in the query.
 - `source` and `sink` are nodes in the graph as defined in the configuration, and `Flow::PathNode` is their type.
-- `DataFlow::Global<..>` is an invocation of data flow. You can use `TaintTracking::Global<..>` instead to include a default set of additional taint steps.
+- `DataFlow::Global<..>` is an invocation of data flow. You can use `TaintTracking::Global<..>` instead to include a default set of taint steps.
 
 ### How to write a path query
 
@@ -105,9 +105,9 @@ Here's an example statement that imports the `pathgraph` module from the data-fl
 
 `import DataFlow::PathGraph`
 
-You can import many additional libraries included with CodeQL. You can also import libraries that are specifically designed to implement data-flow analysis in various common frameworks and environments.
+You can import many other libraries included with CodeQL. You can also import libraries that are designed specifically to implement data-flow analysis in various common frameworks and environments.
 
-The class `PathNode` is an example that's specifically designed to implement data-flow analysis. It's `Node` augmented with a call context (except for sinks), an access path, and a configuration. Only `PathNode` values that are reachable from a source are generated.
+The class `PathNode` is designed to implement data-flow analysis. Its `Node` augmented with a call context (except for sinks), an access path, and a configuration. Only `PathNode` values that are reachable from a source are generated.
 
 Here's an example of the import path:
 
@@ -117,7 +117,7 @@ You can optionally define a `nodes` query predicate, which specifies the nodes o
 
 ## Database analysis
 
- When you use queries to analyze a CodeQL database, you receive meaningful results in the context of the source code. The results are styled as alerts or paths in SARIF or another interpreted format.
+When you use queries to analyze a CodeQL database, you receive meaningful results in the context of the source code. The results are styled as alerts or paths in SARIF or another interpreted format.
 
 Here's an example of a CodeQL database command that analyzes the database by running selected queries against it and interpreting the results:
 
@@ -154,7 +154,7 @@ You could potentially allow the CodeQL CLI to use the same token if CI servers a
 
 For code scanning to display results from a non-Microsoft static analysis tool in your GitHub repository, your results must be stored in a SARIF file that supports a specific subset of the SARIF 2.1.0 JSON schema. You can upload the results by using the code-scanning API or the CodeQL CLI.
 
-Each time you upload the results of a new code scan, CodeQL processes the results and adds alerts to the repository. To prevent duplicate alerts for the same problem, code scanning uses the SARIF `partialFingerprints` property to match results across various runs so that they appear only once in the latest run for the selected branch. This makes it possible to match alerts to the correct line of code when files are edited.
+Each time you upload the results of a new code scan, CodeQL processes the results and adds alerts to the repository. To prevent duplicate alerts for the same problem, code scanning uses the SARIF `partialFingerprints` property to match results across various runs so that they appear only once in the latest run for the selected branch. Eliminating duplicates makes it possible to match alerts to the correct line of code when files are edited.
 
 The rule ID for a result has to be the same across analyses. Fingerprint data is automatically included in SARIF files created through the CodeQL analysis workflow or the CodeQL runner.
 

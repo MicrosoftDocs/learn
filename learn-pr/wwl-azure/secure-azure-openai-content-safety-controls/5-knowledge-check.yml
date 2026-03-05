@@ -1,0 +1,48 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.secure-azure-openai-content-safety-controls.knowledge-check
+title: "Module assessment"
+metadata:
+  title: "Knowledge check"
+  description: "Knowledge check"
+  ms.date: 02/04/2026
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: unit
+  module_assessment: false
+durationInMinutes: 6
+content: "Choose the best response for each of the following questions."
+quiz:
+  questions:
+  - content: "Your financial services company deploys an Azure OpenAI chatbot for customer inquiries about investment products. Regulatory requirements prohibit any content that could be construed as discriminatory based on protected characteristics. During testing, the chatbot occasionally generates responses with subtle bias when discussing demographic investment patterns. Which content safety configuration best addresses this compliance requirement?"
+    choices:
+    - content: "Set the hate and fairness threshold to level 0 to block any detected bias, accepting higher false positive rates to ensure regulatory compliance"
+      isCorrect: true
+      explanation: "Setting hate and fairness to level 0 provides the strictest blocking appropriate for regulated industries where even subtle bias creates compliance risk. While this may produce more false positives, the regulatory requirement to prevent discriminatory content takes priority over minimizing over-blocking. Option 2's level 4 threshold might allow subtle bias that violates regulations, and block lists alone can't catch nuanced discriminatory patterns. Option 3's default filters lack the strictness required for high-compliance scenarios like financial services."
+    - content: "Set the hate and fairness threshold to level 4 to balance compliance with functionality, and create a custom block list containing specific discriminatory terms identified by the legal team"
+      isCorrect: false
+      explanation: "Option 2's level 4 threshold might allow subtle bias that violates regulations, and block lists alone can't catch nuanced discriminatory patterns."
+    - content: "Rely on default Microsoft-managed filters without custom configuration, since they provide baseline protection sufficient for most applications"
+      isCorrect: false
+      explanation: "Option 3's default filters lack the strictness required for high-compliance scenarios like financial services."
+  - content: "Your healthcare education platform uses Azure OpenAI to help medical students learn about trauma care and emergency procedures. The content frequently includes clinical descriptions of injuries, surgical procedures, and patient conditions that might trigger violence detection filters. Students report that legitimate educational content is being blocked, interrupting their learning. How should you adjust content safety settings?"
+    choices:
+    - content: "Disable content filtering entirely for the education deployment since medical students need access to clinical content without restrictions"
+      isCorrect: false
+      explanation: "Option 1 eliminates all protection and violates responsible AI principles."
+    - content: "Increase the violence threshold to level 5 or 6 to allow clinical descriptions while still blocking graphic nonmedical content, and add medical terminology to a custom allow list"
+      isCorrect: true
+      explanation: "Increasing the violence threshold to level 5 or 6 allows clinical medical content while still providing some protection against truly harmful material. This approach acknowledges that medical education requires exposure to content that would be inappropriate in other contexts, while maintaining guardrails against extreme content."
+    - content: "Maintain default violence thresholds at level 2 but create a custom content filter that excludes violence detection while keeping other categories active"
+      isCorrect: false
+      explanation: "Option 3's approach of disabling specific category detection isn't supported—you configure thresholds per category but can't completely disable detection for one category while keeping others."
+  - content: "Your retail company's customer service chatbot must never mention competitor brand names in responses, even when customers explicitly ask for comparisons. Your security team also wants to prevent internal project code names from appearing in any customer-facing communications. Which content safety mechanism most efficiently enforces both requirements?"
+    choices:
+    - content: "Create two separate custom block lists: one containing competitor brand names maintained by marketing, and one containing internal code names maintained by security, then associate both block lists with the customer service deployment"
+      isCorrect: true
+      explanation: "Custom block lists provide exact-match blocking for organization-specific terms that content category filters can't detect. Creating separate block lists allows different teams to maintain their domain-specific requirements independently while both policies apply to the same deployment."
+    - content: "Configure custom content filter thresholds at the strictest levels across all categories to prevent any potentially sensitive content from appearing in responses"
+      isCorrect: false
+      explanation: "Option 2's strict category thresholds target harmful content (hate, violence, etc.) but can't detect competitor brands or code names—these aren't harmful content, just policy violations."
+    - content: "Train a custom Azure OpenAI model with examples of forbidden terms so the model learns not to generate competitor references or internal code names"
+      isCorrect: false
+      explanation: "Option 3 isn't the appropriate mechanism; custom block lists enforce policy compliance at inference time without model retraining."

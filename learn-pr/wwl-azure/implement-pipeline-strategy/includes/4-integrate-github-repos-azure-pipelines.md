@@ -1,51 +1,88 @@
-Integrating GitHub repositories with Azure Pipelines offers a solution for teams that plan to create new or have existing repositories on GitHub but seek to leverage the capabilities of Azure Pipelines for continuous integration and deployment. This approach allows organizations to capitalize on their existing expertise in Azure Pipelines while benefiting from the collaborative features and familiarity of GitHub for version control and code management.
+Integrating GitHub repositories with Azure Pipelines combines the collaborative features of GitHub with the robust CI/CD capabilities of Azure Pipelines. This integration allows teams to use GitHub for source control while leveraging Azure Pipelines for automated builds, testing, and deployments.
 
-## Planning
+## Planning your integration
 
-While GitHub and Azure Pipelines offer tight integration with each other, they're two independent services with their own organization, user management, and permission model. To implement and managing that integration, you should consider several considerations.
+GitHub and Azure Pipelines are separate services with independent user management and permission models. Consider these key aspects when planning your integration:
 
-### Naming convention
+## Naming conventions
 
-Consider aligning the way GitHub repos and Azure Pipelines are named and structured. In particular:
+Establish consistent naming patterns between GitHub repositories and Azure Pipelines to improve organization and clarity:
 
- -  If you don't have an Azure DevOps organization yet, create one named the same as your GitHub organization or account. For example, assuming that your GitHub organization is named org1, the resulting Azure DevOps organization URL would be https://dev.azure.com/org1.
- -  In the Azure DevOps organization, create projects named the same as the GitHub repositories. For example, assuming that your GitHub repo is named repo1, the resulting URL would be https://dev.azure.com/org1/repo1.
- -  In the DevOps project, create pipelines named after the corresponding GitHub organization and repository, such as org1.repo1.
+**Azure DevOps organization**: Create an Azure DevOps organization with the same name as your GitHub organization. For example:
 
-Note that this alignment isn't required, but it will help you clearly indicate the relationship between GitHub repos and their respective Azure Pipelines.
+- GitHub organization: `contoso`
+- Azure DevOps organization: `https://dev.azure.com/contoso`
 
-### User management
+**Project naming**: Create Azure DevOps Projects that match your GitHub repository names. For example:
 
-By default, GitHub users don't have access to Azure Pipelines. Similarly, Azure Pipelines aren't aware of GitHub identities. Consequently, it isn't possible to configure Azure Pipelines to automatically notify these users about build or deployment related issues. To remediate this, add the user accounts to the Azure DevOps organization and configure their permissions to match those in the GitHub organization. At that point, you'll be able to set up Azure Pipelines user notifications.
+- GitHub repository: `contoso/webapp`
+- Azure DevOps project: `https://dev.azure.com/contoso/webapp`
 
-### Azure Pipeline permissions
+**Pipeline naming**: Use descriptive names that reference both the GitHub organization and repository, such as `contoso.webapp.ci` or `contoso.webapp.deploy`.
 
-Azure Pipelines must be able to access GitHub repositories to trigger their builds, and fetch their code during builds. You can grant this access can by using the following methods:
+While this alignment isn't mandatory, it helps teams understand the relationship between repositories and their associated pipelines.
 
- -  GitHub App authentication with the Azure Pipelines identity
- -  OAuth with your personal GitHub identity
- -  GitHub personal access token (PAT) with your personal GitHub identity
+## User management
 
-#### GitHub app authentication
+GitHub users don't automatically have access to Azure Pipelines, and Azure Pipelines doesn't recognize GitHub identities by default. This separation means Azure Pipelines can't automatically send notifications to GitHub users about build or deployment events.
 
-The Azure Pipelines GitHub App is the recommended authentication type for continuous integration pipelines, since it doesn't rely on your personal GitHub identity. In addition, this method supports GitHub Checks to display build, test, and code coverage results in GitHub.
+To enable proper user notifications:
 
-#### OAuth
+1. Add GitHub users to your Azure DevOps organization
+2. Configure their permissions to match their GitHub repository access levels
+3. Set up notification rules to inform users about pipeline events
 
-OAuth authorization is suitable when working with personal GitHub accounts. In this case, GitHub status updates are performed in the security context of your personal GitHub identity.
+This approach ensures team members receive appropriate notifications about builds, deployments, and other pipeline activities.
 
-#### GitHub personal access token
+## Authentication methods
 
-As with OAuth, PAT relies on your personal GitHub identity for authentication, but its permissions can be configured in a very granular manner. On the other hand, PAT is subject to expiration and revocation, so you need to ensure that it remains valid for as long as you need to run the corresponding pipelines.
+Azure Pipelines needs access to your GitHub repositories to trigger builds and fetch code. Choose from these authentication methods:
 
-## Implementation
+**GitHub App authentication** (Recommended):
 
-To use the GitHub App, install it in your GitHub organization for all repositories (as the organization owner) or some of them (as the repo admin). Following the installation, any pipelines targeting these repositories will, by default, use this authentication method.
+- Uses Azure Pipelines identity instead of personal accounts
+- Supports GitHub Checks for displaying build, test, and coverage results
+- More secure and doesn't depend on individual user accounts
 
-To use OAuth, select Choose a different connection under the list of repositories while creating a pipeline. Then, select Authorize to sign into GitHub and authorize with OAuth. An OAuth connection is saved in your Azure DevOps project. You'll be able to reference later if needed when creating additional pipelines.
+**OAuth authentication**:
 
-To use a PAT, use the GitHub settings page. Set the permissions to repo, admin:repo\_hook, read:user, and user:email. Copy the generated PAT into a new GitHub service connection in your Azure DevOps project settings. Reference the service connection name when creating pipelines.
+- Suitable for personal GitHub accounts
+- GitHub status updates appear under your personal identity
+- Easy to set up for individual developers
 
-When creating a pipeline, select the target GitHub repository and then a YAML file in that repository. The repository in which the YAML file is present is called self. By default, this is the repository that the pipeline will build. You can also configure the same pipeline to check out additional repositories.
+**Personal Access Token (PAT)**:
 
-When you create pipelines for a single repository across multiple Azure DevOps organizations, only the first pipeline can be automatically triggered by GitHub commits or pull requests. The remaining pipelines can access the repository, but invoking them requires manual or scheduled triggers.
+- Offers granular permission control
+- Uses your personal GitHub identity
+- Requires regular maintenance due to expiration and potential revocation
+
+## Implementation steps
+
+**Setting up GitHub App authentication**:
+
+1. Install the Azure Pipelines GitHub App in your GitHub organization
+2. Grant access to all repositories or specific ones (requires organization owner or repository admin rights)
+3. New pipelines automatically use this authentication method
+
+**Configuring OAuth authentication**:
+
+1. During pipeline creation, select "Choose a different connection"
+2. Select "Authorize" to sign into GitHub with OAuth
+3. The OAuth connection is saved for reuse in additional pipelines
+
+**Using Personal Access Tokens**:
+
+1. Generate a PAT in GitHub settings with these permissions: `repo`, `admin:repo_hook`, `read:user`, `user:email`
+2. Create a GitHub service connection in Azure DevOps project settings
+3. Reference the service connection when creating pipelines
+
+## Pipeline configuration
+
+When creating your pipeline:
+
+1. Select your target GitHub repository
+2. Choose a YAML file from the repository (the repository containing the YAML file becomes the "self" repository)
+3. Configure additional repositories if needed
+
+> [!IMPORTANT]
+> When multiple Azure DevOps organizations access the same GitHub repository, only the first pipeline can use automatic triggers. Additional pipelines require manual or scheduled triggers.

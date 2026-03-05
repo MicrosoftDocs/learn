@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.deploy-containers-azure-app-service.deploy-containers
+title: Deploy containers to Azure App Service
+metadata:
+  title: Deploy Containers to Azure App Service
+  description: Deploy containers to Azure App Service
+  ms.date: 01/12/2026
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/2-deploy-containers.md)]

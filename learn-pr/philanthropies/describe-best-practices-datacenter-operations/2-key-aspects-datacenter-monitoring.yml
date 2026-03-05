@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.describe-best-practices-datacenter-operations.key-aspects-datacenter-monitoring
+title: Key aspects of datacenter monitoring
+metadata:
+  title: Key Aspects of Datacenter Monitoring
+  description: This content is a part of the Describe the best practices for datacenter operations.
+  ms.date: 05/07/2025
+  author: kiranchandratrey
+  ms.author: elenasim
+  ms.topic: unit
+durationInMinutes: 14
+content: |
+  [!include[](includes/2-key-aspects-datacenter-monitoring.md)]

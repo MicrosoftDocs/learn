@@ -10,6 +10,7 @@ az vmware workload-network segment show --resource-group <resource-group-name>  
 ```
 
 ## Configure Azure Firewall Rule for Azure VMware Solution workload network segment
+
 Use the following command to configure Firewall rule for workload segment:
 
 ```azurecli

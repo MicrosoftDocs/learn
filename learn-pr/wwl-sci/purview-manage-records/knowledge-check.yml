@@ -1,0 +1,75 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-manage-records.knowledge-check
+title: Module assessment
+metadata:
+  title: Module assessment
+  description: "Knowledge check."
+  ms.date: 06/10/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Your organization wants to ensure HR-related documents are kept for seven years after an employee leaves. What's the best way to implement this requirement in Microsoft Purview?"
+    choices:
+    - content: "Apply a retention label that starts retention based on the creation date."
+      isCorrect: false
+      explanation: "Incorrect: You need retention to start after the employee leaves, not when the file is created."
+    - content: "Create a retention policy that includes the HR site."
+      isCorrect: false
+      explanation: "Incorrect: Retention policies apply broadly and can't start based on events."
+    - content: "Use an event-based retention label triggered by the termination event."
+      isCorrect: true
+      explanation: "Correct: Event-based retention allows retention to start from a defined event, like termination."
+
+  - content: "You're reviewing your organization's file plan and want to group labels by regulatory requirement. What should you use?"
+    choices:
+    - content: "Retention period settings"
+      isCorrect: false
+      explanation: "Incorrect: Retention period controls when items are kept, not how they're grouped."
+    - content: "File plan descriptors"
+      isCorrect: true
+      explanation: "Correct: File plan descriptors let you classify labels by business function, category, or authority."
+    - content: "Auto-labeling policies"
+      isCorrect: false
+      explanation: "Incorrect: Auto-labeling applies labels to content, but doesn't affect file plan classification."
+
+  - content: "A compliance team needs to evaluate financial documents before deletion. What feature enables this?"
+    choices:
+    - content: "Retention policies with a delete action"
+      isCorrect: false
+      explanation: "Incorrect: Retention policies don't support manual review before deletion."
+    - content: "Disposition reviews configured in a retention label"
+      isCorrect: true
+      explanation: "Correct: Disposition reviews let reviewers evaluate items before deletion."
+    - content: "Manual deletion with admin oversight"
+      isCorrect: false
+      explanation: "Incorrect: Manual deletion isn't part of Microsoft Purview's automated retention process."
+
+  - content: "You're setting up an auto-apply policy using a trainable classifier. What's a key limitation to be aware of?"
+    choices:
+    - content: "Simulation mode isn't available."
+      isCorrect: true
+      explanation: "Correct: Simulation mode isn't supported with trainable classifiers."
+    - content: "Trainable classifiers only work in Exchange."
+      isCorrect: false
+      explanation: "Incorrect: Classifiers can apply labels across supported services, not just Exchange."
+    - content: "Only one classifier can be used per policy."
+      isCorrect: false
+      explanation: "Incorrect: You can use multiple conditions per policy, including classifiers."
+
+  - content: "A reviewer misses the deadline to take action on an item in disposition review. What happens next?"
+    choices:
+    - content: "The review is canceled and must be restarted."
+      isCorrect: false
+      explanation: "Incorrect: The review isn't canceled; the system moves to the next step."
+    - content: "The item is permanently retained."
+      isCorrect: false
+      explanation: "Incorrect: Items aren't kept indefinitely without explicit retention."
+    - content: "The item is automatically approved for deletion or moves to the next stage."
+      isCorrect: true
+      explanation: "Correct: If no action is taken in time, the item proceeds automatically."

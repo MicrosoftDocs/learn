@@ -1,13 +1,11 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.manage-application-configuration-data.examine-app-configuration-feature-management
-title: Examine App configuration feature management
+title: Examine App Configuration feature management
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Examine App configuration feature management
-  description: "Examine App configuration feature management"
-  ms.date: 05/28/2024
-  author: wwlpublish
+  title: Examine App Configuration Feature Management
+  description: "Examine feature flag implementation patterns, feature filters, targeting rules, and progressive rollout strategies in Azure App Configuration"
+  ms.date: 10/24/2025
+  author: LuizMacedo
   ms.author: lumac
   ms.topic: unit
 durationInMinutes: 4

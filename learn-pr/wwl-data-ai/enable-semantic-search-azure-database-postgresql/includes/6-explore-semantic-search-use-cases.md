@@ -17,3 +17,4 @@ Semantic search allows applications to provide customers with relevant product r
 ### Nontextual use cases
 
 There are many ways to use semantic search beyond text. The core feature of semantic search is computing the similarity of embedding vectors. A model can generate embeddings for text input or other inputs such as image pixels. An image model can be trained on object recognition to allow users to search for photos containing objects in a query photo.
+

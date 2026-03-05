@@ -1,8 +1,11 @@
-Part of the planning for your Azure network solution includes exploring how to support outbound network connectivity and traffic communication routing.
+
+Part of the planning for your Azure AI-ready network solution includes exploring how to support outbound network connectivity and traffic communication routing.
 
 Around the globe, IPv4 address ranges are in short supply. Trying to purchase an IP address in the v4 range can be an expensive way to grant access to your internet resources. To address this issue, architects use Network Address Translation (NAT) to enable internal resources on a private network to share routable IPv4 addresses. The internal resources use the routable IPv4 addresses to access external resources on a public network. Instead of buying an IPv4 address for each resource that needs internet access, you can use a NAT service to map outgoing requests from your internal resources to external IP addresses. Azure provides this technology via the Azure Virtual Network NAT service.
 
 Azure [routes communication traffic](/azure/virtual-network/virtual-networks-udr-overview) between your on-premises internal resources and external internet resources by using _route tables_. When you create a virtual network, Azure automatically creates a routing table for each subnet in the network. A routing table contains many different types of routes, including system, service endpoints, and subnet defaults. The table also has route entries for the Border Gateway Protocol (BGP), user-defined routes (UDRs), and routes from other virtual networks.
+
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=76dd401c-0669-4693-87fc-1ba82d27782d]
 
 #### Business scenarios
 
@@ -42,10 +45,10 @@ There are many networking scenarios where defining and overriding routes can be 
 
 - **Consider user defined routes**. Create custom UDRs to override Azure's default system routes, or to add more routes to a subnet's route table.
    - Enable filtering of internet traffic by using Azure Firewall or forced tunneling.
-   - Flow traffic between subnets through an NVA.
+   - Flow traffic between subnets through a Network Virtual Appliance (NVA).
    - Define routes to specify how packets should be routed in a virtual network.
    - Define routes that control network traffic and specify the next hop in the traffic flow.
 
 - **Consider overriding routes**. Plan for route overrides to control traffic flow.
-   - Flow through NVA: [Configure route tables to force traffic between subnets to flow through an NVA](/azure/virtual-network/tutorial-create-route-table-portal)
-   - Forced tunneling: [Force all internet-bound traffic through an NVA, or on-premises, through an Azure VPN gateway](/azure/vpn-gateway/vpn-gateway-forced-tunneling-rm)
+   - Flow through NVA: [Configure route tables to force traffic between subnets to flow through an NVA](/azure/virtual-network/tutorial-create-route-table-portal).
+   - Forced tunneling: [Force all internet-bound traffic through an NVA, or on-premises, through an Azure VPN gateway](/azure/vpn-gateway/vpn-gateway-forced-tunneling-rm).

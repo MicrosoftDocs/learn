@@ -3,7 +3,7 @@ uid: learn.wwl.build-your-kernel
 metadata:
   title: Build your kernel
   description: "Learn how the semantic kernel SDK connects native code to large language models to create smart applications."
-  ms.date: 01/23/2025
+  ms.date: 05/27/2025
   author: wwlpublish
   ms.author: buzahid
   ms.topic: module
@@ -43,7 +43,6 @@ units:
 - learn.wwl.build-your-kernel.what-semantic-kernel
 - learn.wwl.build-your-kernel.why-use-semantic-kernel
 - learn.wwl.build-your-kernel.how-build-your-kernel
-- learn.wwl.build-your-kernel.exercise-create-your-endpoint
 - learn.wwl.build-your-kernel.exercise-build-kernel-object
 - learn.wwl.build-your-kernel.knowledge-check
 - learn.wwl.build-your-kernel.summary

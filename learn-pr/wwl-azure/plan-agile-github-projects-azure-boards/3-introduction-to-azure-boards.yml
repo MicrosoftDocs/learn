@@ -2,12 +2,10 @@
 uid: learn.wwl.plan-agile-github-projects-azure-boards.introduction-to-azure-boards
 title: Introduction to Azure Boards
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Introduction to Azure Boards
   description: "Introduction to Azure Boards"
-  ms.date: 05/24/2024
-  author: wwlpublish
+  ms.date: 09/02/2025
+  author: LuizMacedo
   ms.author: lumac
   ms.topic: unit
 durationInMinutes: 3

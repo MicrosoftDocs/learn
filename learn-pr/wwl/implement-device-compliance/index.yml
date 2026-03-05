@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.implement-device-compliance
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: MD-102 3-Implement device compliance
   description: "This module describes how to use compliance and conditional access policies to help protect access to organizational resources."
   ms.date: 10/09/2023
@@ -41,4 +39,4 @@ units:
 - learn.wwl.implement-device-compliance.knowledge-check
 - learn.wwl.implement-device-compliance.summary
 badge:
-  uid: learn.wwl.implement-device-compliance.badge
+  uid: learn.wwl.implement-device-compliance.badge

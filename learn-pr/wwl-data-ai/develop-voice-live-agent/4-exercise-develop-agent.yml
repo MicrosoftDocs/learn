@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.develop-voice-live-agent.exercise-develop-agent
+title: Exercise - Develop an Azure AI Voice Live agent
+metadata:
+  title: Exercise - Develop an Azure AI Voice Live Agent
+  description: Exercise - Develop an Azure AI Voice Live agent
+  ms.date: 10/9/2025
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: unit
+azureSandbox: false
+durationInMinutes: 30
+content: |
+  [!include[](includes/4-exercise-develop-agent.md)]

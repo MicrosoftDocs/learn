@@ -1,0 +1,5 @@
+As organizations adapt to hybrid and remote work, reliable and well-planned device deployments play a major role in keeping teams connected and productive. Surface devices offer the flexibility and built-in capabilities to support these evolving workstyles—but the value comes from how they're deployed, configured, and managed.
+
+In this module, you explored how to build a deployment strategy that aligns Surface devices with the way your teams collaborate. You learned how to identify user needs, select the right mix of devices, configure essential tools like Microsoft Teams and OneDrive, and use the Surface Management Portal to simplify setup and ongoing management.
+
+When Surface for Business device choices, configurations, and management tools work together, users get a consistent, seamless experience—no matter where they're working. Surface becomes more than hardware; it becomes a platform that supports communication, creativity, and meaningful collaboration across your organization.

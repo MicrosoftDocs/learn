@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.replicate-monitor-azure-cosmos-db-api-mongodb-account
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Replicate and monitor an Azure Cosmos DB for MongoDB account
   description: "Replicate and monitor an Azure Cosmos DB for MongoDB account"
   ms.date: 12/12/2022
@@ -38,4 +36,4 @@ units:
 - learn.wwl.replicate-monitor-azure-cosmos-db-api-mongodb-account.knowledge-check
 - learn.wwl.replicate-monitor-azure-cosmos-db-api-mongodb-account.summary
 badge:
-  uid: learn.wwl.replicate-monitor-azure-cosmos-db-api-for-mongodb-account.badge
+  uid: learn.wwl.replicate-monitor-azure-cosmos-db-api-for-mongodb-account.badge

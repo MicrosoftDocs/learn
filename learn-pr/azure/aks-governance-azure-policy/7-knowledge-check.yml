@@ -2,8 +2,6 @@
 uid: learn.aks-governance-azure-policy.check-your-knowledge
 title: Check your knowledge
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Check your knowledge
   description: Knowledge Check of Azure policy concepts
   ms.date: 04/22/2024
@@ -59,4 +57,4 @@ quiz:
         - content: "Add an exclusion to the AKS cluster Resource group that the Policy shouldn't apply to."
           isCorrect: true
           explanation: "Correct. Azure Policies allows you to add exclusions you can use to exempt certain resources from having to comply with the Policy."
-
+

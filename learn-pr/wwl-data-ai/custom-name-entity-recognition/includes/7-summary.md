@@ -7,4 +7,4 @@ In this module, you learned how to:
 - Label data, train, and deploy an entity extraction model.
 - Submit extraction tasks from your own app.
 
-To learn more about Azure AI Language, see the [Azure AI Language documentation](/azure/ai-services/language-service/?azure-portal=true).
+To learn more about Azure Language, see the [Azure Language documentation](/azure/ai-services/language-service/?azure-portal=true).

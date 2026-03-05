@@ -4,6 +4,9 @@ In this module, you learned:
 - Defined GHAS and the importance of the integral features such as Secret scanning, Code scanning, and Dependabot
 - Explored how to utilize GHAS to maximize security impact
 - Learned about GHAS and its role in the security ecosystem
+- Reviewed how the Dependency Graph works and supports Dependabot features
+- Learned about Push Protection and how it proactively prevents secret exposure during development
+- Recognized that GitHub now offers these security features under two product SKUs: GitHub Secret Protection and GitHub Code Security
 
 ## Learn more
 
@@ -16,3 +19,8 @@ Use the following resources to learn more about GitHub Advanced Security:
 - [Secret scanning](https://docs.github.com/en/code-security/secret-scanning)
 - [CodeQL](https://docs.github.com/en/code-security/code-scanning/automatically-scanning-your-code-for-vulnerabilities-and-errors/about-code-scanning-with-codeql#about-code-scanning-with-codeql)
 - [Integrating with code scanning](https://docs.github.com/en/code-security/code-scanning/integrating-with-code-scanning)
+
+## Provide feedback
+
+Use this [issue form](https://github.com/githubpartners/microsoft-learn/issues/new/choose) to provide content feedback or suggested changes for this Microsoft Learn module. GitHub maintains this content and a team member will triage the request. Thank you for taking the time to improve our content!
+

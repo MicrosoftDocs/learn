@@ -50,8 +50,9 @@ Organizations are trying to leverage or cope with the massive amounts of data th
 
 1. _John Gantz and David Reinsel (2012). [The Digital Universe in 2020 IDC White paper](https://it4sec.org/article/digital-universe-2020-big-data-bigger-digital-shadows-and-biggest-growth-far-east)_
 2. _Subramanian Muralidhar, Wyatt Lloyd, Sabyasachi Roy, Cory Hill, Ernest Lin, Weiwen Liu, Satadru Pan, Shiva Shankar, Viswanath Sivakumar, Linpeng Tang and Sanjeev Kumar (2014). [f4: Facebook's Warm BLOB Storage System](https://www.usenix.org/conference/osdi14/technical-sessions/presentation/muralidhar) 11th USENIX Symposium on Operating Systems Design and Implementation (OSDI 14) 383-398 USENIX Association_
-3. _Thomas Rivera (2012). [The Evolution of File Systems SNIA Tutorial](https://www.snia.org/sites/default/education/tutorials/2012/spring/file/ThomasRivera_The_Evolution_of_File_Systems-v3.pdf)_
+3. _Thomas Rivera (2012). [The Evolution of File Systems SNIA Tutorial](https://www.cse.msu.edu/~cse820/lectures/lecturesS08/Bandulet-C_The_Storage_Evolution.pdf
+)_
 
 [^1]: <https://it4sec.org/article/digital-universe-2020-big-data-bigger-digital-shadows-and-biggest-growth-far-east> "John Gantz and David Reinsel (2012). *The Digital Universe in 2020 IDC White paper*"
 [^2]: <https://www.usenix.org/conference/osdi14/technical-sessions/presentation/muralidhar> "Subramanian Muralidhar, Wyatt Lloyd, Sabyasachi Roy, Cory Hill, Ernest Lin, Weiwen Liu, Satadru Pan, Shiva Shankar, Viswanath Sivakumar, Linpeng Tang and Sanjeev Kumar (2014). *f4: Facebook's Warm BLOB Storage System* 11th USENIX Symposium on Operating Systems Design and Implementation (OSDI 14) 383-398 USENIX Association"
-[^3]: <https://www.snia.org/sites/default/education/tutorials/2012/spring/file/ThomasRivera_The_Evolution_of_File_Systems-v3.pdf> "Thomas Rivera (2012). *The Evolution of File Systems SNIA Tutorial*"
+[^3]: <https://www.cse.msu.edu/~cse820/lectures/lecturesS08/Bandulet-C_The_Storage_Evolution.pdf> "Thomas Rivera (2012). *The Evolution of File Systems SNIA Tutorial*"

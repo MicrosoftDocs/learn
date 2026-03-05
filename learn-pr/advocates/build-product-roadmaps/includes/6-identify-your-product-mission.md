@@ -4,9 +4,9 @@
   :::column-end:::
         :::column span="3":::
 
-Now we've seen some background product roadmap, let's look at the components that make up a roadmap. The product roadmap is the strategic guide to building your product. Every roadmap should be driven by the mission of your product, the answer to the "Why are you building the product?" question.
+Now that we have some background about product roadmaps, let's look at the components that make up a roadmap. The product roadmap is the strategic guide to building your product. The mission of your product, the answer to the "Why are you building the product?" question should drive every roadmap.
 
-If you can’t answer this question or haven’t yet done so, you need to rethink building a roadmap or developing the product in the first place!
+If you can’t answer this question, you need to rethink building a roadmap or developing the product in the first place!
 
  :::column-end:::
 :::row-end:::
@@ -23,10 +23,10 @@ State the high-level problem you're trying to solve. Addressing this problem sho
 
 ## What's the solution
 
-Once you've articulated the problem, you need to understand the high-level solution you're building to solve the problem. In our case, we're building an app that makes it easier to identify the clothes you want using machine learning and AI, which then allows you to buy those clothes without leaving the app.
+Once you articulate the problem, you need to understand the high-level solution you're building to solve the problem. In our case, we're building an app that uses machine learning and AI to identify the clothes you want easier, and then allows you to buy those clothes without leaving the app.
 
 ## Everyone owns the mission
 
-Everyone in your Product, Design, and Engineering teams should be able to give the product’s "elevator pitch" and understand and absorb the "why" of the product; the problem you're tying to solve and how you propose to solve it.
+Everyone in your Product, Design, and Engineering teams should be able to give the product’s "elevator pitch." They should understand and absorb the "why" of the product; the problem you're tying to solve and how you propose to solve it.
 
-This "elevator pitch" mission provides those teams with a reference point to validate that the work they're doing is the right work and that it's adding value to the product. Both are key drivers for engineer happiness. If you can’t connect work to the mission (or engineering tooling that accelerates your development) in some way, then it’s probably a good indication that it's work you shouldn't be doing.
+This "elevator pitch" mission provides those teams with a reference point to validate that the work they're doing is the right work and that it's adding value to the product. Both are key drivers for engineer happiness. If you can’t connect your work to the mission, or to engineering tooling that accelerates your development in some way. It’s probably a good indication that you shouldn't be doing the work.

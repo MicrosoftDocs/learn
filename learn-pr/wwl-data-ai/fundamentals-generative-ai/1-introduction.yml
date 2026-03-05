@@ -5,13 +5,14 @@ metadata:
   adobe-target: true
   prefetch-feature-rollout: true
   title: Introduction
-  description: Introduction to generative AI applications with examples of what generative AI can do.
+  description: Introduction to generative AI concepts. 
   author: sherzyang
   ms.author: sheryang
-  ms.date: 11/26/2024
+  ms.date: 10/04/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
+  zone_pivot_groups: video-or-text
 durationInMinutes: 1
 content: |
   [!include[](includes/1-introduction.md)]

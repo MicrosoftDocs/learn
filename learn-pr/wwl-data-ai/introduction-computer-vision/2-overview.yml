@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.introduction-computer-vision.overview
+title: Computer vision tasks and techniques
+metadata:
+  title: Computer vision tasks and techniques
+  description: Overview of computer vision tasks and techniques
+  author: wwlpublish
+  ms.author: gmalc
+  ms.date: 10/24/2025
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+  zone_pivot_groups: video-or-text
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-overview.md)]

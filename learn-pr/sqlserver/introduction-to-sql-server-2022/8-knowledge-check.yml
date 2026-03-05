@@ -1,0 +1,74 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-to-sql-server-2022.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Knowledge check
+  ms.date: 10/06/2025
+  author: JulianePadrao
+  ms.author: jupadrao
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  Answer the following questions to test your knowledge of SQL Server 2025 features.
+quiz:
+  questions:
+  - content: "Which feature in SQL Server 2025 enables semantic search and similarity matching using vector embeddings?"
+    choices:
+    - content: "Full-text search"
+      isCorrect: false
+      explanation: "Incorrect. Full-text search is a traditional text search feature. Vector search is the new feature that enables semantic search and similarity matching."
+    - content: "Vector search"
+      isCorrect: true
+      explanation: "Correct. Vector search is a new feature in SQL Server 2025 that enables semantic search and similarity matching using vector embeddings."
+    - content: "Regular expressions"
+      isCorrect: false
+      explanation: "Incorrect. Regular expressions are used for pattern matching in text. Vector search is used for semantic search and similarity matching."
+    - content: "Text chunking"
+      isCorrect: false
+      explanation: "Incorrect. Text chunking is a preprocessing step. Vector search is the feature that enables semantic search functionality."
+
+  - content: "What is the key improvement in Microsoft Fabric mirroring compared to traditional Change Data Capture (CDC)?"
+    choices:
+    - content: "Uses SQL Server Agent for key functions"
+      isCorrect: false
+      explanation: "Incorrect. SQL Server 2025's Change Feed method eliminates the need for SQL Server Agent, unlike CDC."
+    - content: "Requires On-premises Data Gateway"
+      isCorrect: false
+      explanation: "Incorrect. The new Change Feed method uses direct writes to OneLake, with OPDG only for control and command."
+    - content: "Uses Change Feed method for direct streaming"
+      isCorrect: true
+      explanation: "Correct. SQL Server 2025 replaces CDC with the Change Feed method, enabling direct streaming to OneLake with reduced overhead."
+    - content: "Requires Arc Agent for authentication"
+      isCorrect: false
+      explanation: "Incorrect. Arc Agent provides system managed identity but isn't the key improvement over CDC."
+
+  - content: "Which new capability in SQL Server 2025 allows developers to validate and transform text using pattern matching directly in T-SQL?"
+    choices:
+    - content: "JSON functions"
+      isCorrect: false
+      explanation: "Incorrect. JSON functions handle JSON data structure but don't provide pattern matching capabilities."
+    - content: "Regular expressions (RegEx)"
+      isCorrect: true
+      explanation: "Correct. Regular expressions in SQL Server 2025 enable pattern matching and text transformation directly in T-SQL."
+    - content: "REST APIs"
+      isCorrect: false
+      explanation: "Incorrect. REST APIs are for external service integration, not text pattern matching."
+    - content: "Vector embeddings"
+      isCorrect: false
+      explanation: "Incorrect. Vector embeddings are used for semantic search, not text pattern matching."
+
+  - content: "What improvement in Query Store helps monitor performance in high-availability environments?"
+    choices:
+    - content: "Automatic index recommendations"
+      isCorrect: false
+      explanation: "Incorrect. While this is a feature, the key improvement for HA environments is performance monitoring on readable secondaries."
+    - content: "Plan improvement suggestions"
+      isCorrect: false
+      explanation: "Incorrect. Plan improvements are a general feature, not specific to high-availability monitoring."
+    - content: "Performance monitoring on readable secondaries"
+      isCorrect: true
+      explanation: "Correct. Query Store now supports capturing performance data on readable secondary replicas, which is valuable in high-availability environments."
+    - content: "Cross-database query monitoring"
+      isCorrect: false
+      explanation: "Incorrect. While this is a feature, the specific improvement for HA environments is monitoring on readable secondaries."

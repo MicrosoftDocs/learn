@@ -10,7 +10,7 @@ The Azure SQL platform as a service (PaaS) family includes the Azure SQL Databas
 
 Azure SQL Managed Instance is designed to enable a *lift and shift* solution for customers. The managed instance looks to bring applications, databases, and supporting technologies to Azure PaaS. Previously, without SQL Managed Instance, migration scenarios where an organization’s application required access to any technology outside of the database (for example SQL Agent jobs, cross database joins, and SQL Server Integration Services) would be prevented from moving to the cloud. The only way a DBA or developer could migrate an on-premises application would be to employ one of the following approaches:
 
-- Move the database and supporting technologies to an infrastructure as a service (IaaS) model. 
+- Move the database and supporting technologies to an infrastructure as a service (IaaS) model.
 - Rewrite the application with a fully PaaS model on Azure SQL Database, with extra development to address migration blockers.
 
 The decision to migrate applications to Azure often hinges on whether an organization has the resources to adapt their application to Azure's PaaS model and manage the application code, as vendor support for modifications is typically limited. So, many opt for SQL Server on IaaS to use the full SQL Server experience without the need to overhaul existing applications. Despite Azure SQL Database's capabilities, the heavy dependence of many applications on technologies outside its scope presents challenges. However, SQL Managed Instance, code-named *"cloud lifter,"* aims to overcome these hurdles, facilitating the migration to a SQL-based PaaS solution in Azure without needing application redesign.
@@ -34,9 +34,9 @@ There are two modes of migration to Azure SQL Managed Instance: **online** and *
 
 - [**Log Replay Service**](/azure/azure-sql/managed-instance/log-replay-service-overview?azure-portal=true). It's an online migration option, and used when you need more control of your database migration project.
 
-- [**Azure SQL Migration extension for Azure Data Studio**](/sql/azure-data-studio/extensions/azure-sql-migration-extension?azure-portal=true). It's a tool that helps you prepare for migrating your SQL Server databases to Azure. It uses the latest version of Data Migration Services to assess your readiness for migration, recommend the best Azure resources for your needs, and execute the migration. It’s ideal for small to medium-sized databases and supports online migration to SQL Managed Instance.
-
 - [**Managed Instance link.**](/azure/azure-sql/managed-instance/managed-instance-link-feature-overview?azure-portal=true). The Managed Instance link, using distributed availability groups, securely extends your data estate by replicating data almost instantly (online) between any hosted SQL Server and Azure SQL Managed Instance, and vice versa.
+
+- [**SQL Server migration in Azure Arc**](/sql/sql-server/azure-arc/migrate-to-azure-sql-managed-instance?azure-portal=true). When your SQL Server instance is enabled by Azure Arc, you can migrate databases to SQL Managed Instance directly from the Azure portal using either the Managed Instance link or Log Replay Service methods.
 
 - [**Native backup and restore**](/azure/azure-sql/managed-instance/restore-sample-database-quickstart?azure-portal=true). Backup and restore are a simple migration method favored by many SQL Server professionals. It's the easiest migration option for customers who can provide full database backups to Azure Storage.
 

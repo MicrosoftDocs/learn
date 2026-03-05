@@ -30,9 +30,9 @@ These same techniques can be used for subtraction, multiplication, and more. The
 
 ### Write code to increment and decrement a value
 
-1. Select all of the code in the .NET Editor, and press <kbd>Delete</kbd> or <kbd>Backspace</kbd> to delete it.
+1. Select all of the code you wrote previously in the [C# Code Editor](https://microsoftlearning.github.io/c-sharp-minor?azure-portal=true) and press <kbd>Delete</kbd> or <kbd>Backspace</kbd> to delete it.
 
-1. Enter the following code in the .NET Editor:
+1. Enter the following code in the C# Code Editor:
 
     ```csharp
     int value = 1;
@@ -76,7 +76,7 @@ Both the increment and decrement operators have an interesting quality &mdash; d
 
 ### Use the increment operator before and after the value
 
-1. Delete the code from the previous steps and enter the following code into the .NET Editor:
+1. Delete the code from the previous steps and enter the following code into the C# Code Editor:
 
     ```csharp
     int value = 1;

@@ -1,16 +1,19 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.get-started-lakehouses.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  title: Knowledge check
+  hidden_question_numbers: ["62697432_2","62697432_30","62697432_6","62697432_59","62697432_63","62697432_71","62697432_75","62697432_79","62697432_83","62697432_87","62697432_91","62697432_95","62697432_108","62697432_112","62697432_116","62697432_120","62697432_132","62697432_136","62697432_140"]
+  ai_generated_module_assessment: false
+  title: Module assessment
   description: "Knowledge check"
-  ms.date: 03/19/2025
+  ms.date: 03/04/2026
   author: angierudduck
   ms.author: anrudduc
   ms.topic: unit
-durationInMinutes: 3
+  module_assessment: true
+  ai-usage: ai-assisted
+durationInMinutes: 5
 quiz:
-  title: ""
   questions:
   - content: "What is a Microsoft Fabric lakehouse?"
     choices:
@@ -23,6 +26,17 @@ quiz:
     - content: "An analytical store that combines the file storage flexibility of a data lake with the SQL-based query capabilities of a data warehouse."
       isCorrect: true
       explanation: "Correct. Lakehouses combine data lake and data warehouse features."
+  - content: "What is the main difference between the lakehouse explorer and SQL analytics endpoint?"
+    choices:
+    - content: "The lakehouse explorer provides read-only access, while the SQL analytics endpoint allows data modifications."
+      isCorrect: false
+      explanation: "Incorrect. The SQL analytics endpoint provides read-only access, while the lakehouse explorer allows modifications."
+    - content: "Lakehouse explorer enables interaction with tables, files, and folders, while SQL analytics endpoint provides read-only T-SQL querying of Delta tables."
+      isCorrect: true
+      explanation: "Correct. Lakehouse explorer supports data management operations, while SQL analytics endpoint is read-only SQL access."
+    - content: "Both provide identical functionality with different user interfaces."
+      isCorrect: false
+      explanation: "Incorrect. The two modes have different capabilities and purposes."
   - content: "You want to include data in an external Azure Data Lake Store Gen2 location in your lakehouse, without the requirement to copy the data. What should you do?"
     choices:
     - content: "Create a Data pipeline that uses a Copy Data activity to load the external data into a file."
@@ -30,18 +44,40 @@ quiz:
       explanation: "Incorrect. A Copy Data activity in a pipeline copies the data."
     - content: "Create a shortcut."
       isCorrect: true
-      explanation: "Correct. A shortcut enables you to include external data in the lakehouse."
+      explanation: "Correct. A shortcut enables you to include external data in the lakehouse without copying it."
     - content: "Create a Dataflow Gen2 that extracts the data and loads it into a table."
       isCorrect: false
       explanation: "Incorrect. A dataflow that loads the data into a table would copy the data."
+  - content: "You have CSV files in your lakehouse Files area and want to create Delta tables without writing code. What should you use?"
+    choices:
+    - content: "A notebook with PySpark code"
+      isCorrect: false
+      explanation: "Incorrect. While notebooks can load data, they require writing code."
+    - content: "Load to Table"
+      isCorrect: true
+      explanation: "Correct. Load to Table is a no-code option that creates Delta tables from Parquet or CSV files directly in the lakehouse explorer."
+    - content: "The SQL analytics endpoint"
+      isCorrect: false
+      explanation: "Incorrect. The SQL analytics endpoint is read-only and can't create tables."
   - content: "You want to use Apache Spark to interactively explore data in a file in the lakehouse. What should you do?"
     choices:
     - content: "Create a notebook."
       isCorrect: true
-      explanation: "Correct. A notebook enables interactive Spark coding."
+      explanation: "Correct. A notebook enables interactive Spark coding with PySpark or Spark SQL."
     - content: "Switch to the SQL analytics endpoint mode."
       isCorrect: false
       explanation: "Incorrect. The SQL analytics endpoint mode doesn't support interactive Spark code."
     - content: "Create a Dataflow Gen2."
       isCorrect: false
       explanation: "Incorrect. A dataflow doesn't provide an interactive Spark coding interface."
+  - content: "What connection mode does Power BI use by default when connecting to a lakehouse semantic model?"
+    choices:
+    - content: "Import mode, which copies data into Power BI."
+      isCorrect: false
+      explanation: "Incorrect. Power BI uses Direct Lake mode by default when connecting to a Fabric lakehouse."
+    - content: "DirectQuery mode, which queries the source in real-time."
+      isCorrect: false
+      explanation: "Incorrect. While DirectQuery exists, Direct Lake is the default when connecting to a Fabric lakehouse."
+    - content: "Direct Lake mode, which reads directly from Delta Lake files without copying data."
+      isCorrect: true
+      explanation: "Correct. Direct Lake provides fast query performance while ensuring reports always reflect current lakehouse data."

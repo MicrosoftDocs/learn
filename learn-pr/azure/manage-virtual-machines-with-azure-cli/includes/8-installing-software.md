@@ -1,5 +1,12 @@
 The last thing we want to try on our VM is to install a web server. One of the easiest packages to install is `nginx`.
 
+[!INCLUDE[](../../../includes/azure-optional-exercise-subscription-note.md)]
+
+[!INCLUDE[](../../../includes/azure-cloud-shell-terminal-note.md)]
+
+> [!NOTE]
+> Throughout this exercise, replace **myResourceGroupName** in the examples with the name of an existing resource group, or the name of the resource group that you created for this exercise.
+
 ## Install NGINX web server
 
 1. Locate the public IP address of your *SampleVM* Linux virtual machine.
@@ -41,7 +48,7 @@ The last thing we want to try on our VM is to install a web server. One of the e
     ```azurecli
     az vm open-port \
         --port 80 \
-        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
+        --resource-group "myResourceGroupName" \
         --name SampleVM
     ```
 

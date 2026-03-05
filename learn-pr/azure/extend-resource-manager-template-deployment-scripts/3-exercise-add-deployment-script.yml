@@ -4,9 +4,9 @@ title: Exercise - Add a deployment script to an ARM template
 metadata:
   title: Exercise - Add a deployment script to an ARM template
   description: Update an ARM template with a deployment script resource
-  author: smurawski
+  author: usepowershell
   ms.author: stmuraws
-  ms.date: 05/03/2023
+  ms.date: 04/28/2025
   ms.topic: unit
   zone_pivot_groups: arm-template-language-azure-shell-interface
   ms.custom: team=cloud_advocates, devx-track-arm-template, devx-track-bicep

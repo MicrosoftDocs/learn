@@ -2,15 +2,22 @@ Application registration in Microsoft Entra ID is the process of ensuring that t
 
 ## Scenario
 
-Imagine you're an application developer who wants to create an application that requires authentication and authorization. You want to ensure that only authorized users can access the app and that the app can access the necessary resources. By registering your application with Microsoft Entra ID, you can provide an identity configuration for your application that allows it to integrate with the Microsoft identity platform. Registering the app also allows you to customize the branding of your application in the sign-in dialog box. This branding is important because signing in, is the first experience a user has with your app. You can decide if you want to allow users to sign in only if they belong to your organization. This architecture is known as a single-tenant application. Or, you can allow users to sign in by using any work or school account, which is known as a multitenant application. You can also allow personal Microsoft accounts or social accounts from LinkedIn, Google, and so on. Request scope permissions. For example, you can request the user.read scope, which grants permission to read the profile of the signed-in user. Define scopes that define access to your web API. Typically, when an app wants to access your API, it needs to request permissions to the scopes you define. Share a secret with the Microsoft identity platform that proves the app's identity. Using a secret is relevant in the case where the app is a confidential client application. A confidential client application is an application that can hold credentials securely, like a web client. A trusted back-end server is required to store the credentials.
+Imagine you're an application developer who wants to create an application that requires authentication and authorization. You want to ensure that only authorized users can access the app and that the app can access the necessary resources.
+
+By registering your application with Microsoft Entra ID, you can provide an identity configuration for your application that allows it to integrate with the Microsoft identity platform. This registration process enables several key capabilities:
+
+- **Custom branding**: Customize the branding of your application in the sign-in dialog box. This branding is important because signing in is the first experience a user has with your app.
+- **Tenant configuration**: Choose between single-tenant application (your organization), or multitenant application (accept accounts from other tenants). You can also allow personal Microsoft accounts or social accounts from LinkedIn, Google, and so on.
+- **Permission management**: Request scope permissions, such as the user.read scope, which grants permission to read the profile of the signed-in user. Define scopes that control access to your web API.
+- **Secure authentication**: Configure secure authentication methods. For confidential client applications that can hold credentials securely (like web applications with trusted back-end servers), you can use client secrets, certificates, or modern alternatives like managed identities for enhanced security.
 
 ## Learning objectives
 
- -  Benefits of registering an app.
- -  Single-tenant versus multitenant apps.
- -  What happens when an app is registered.
- -  Relationship between application objects and service principals.<br>
+- Benefits of registering an app.
+- Single-tenant versus multitenant apps.
+- What happens when an app is registered.
+- Relationship between application objects and service principals.
 
 ## Goals
 
-The goal of this module is to teach you how to register your application with Microsoft Entra ID and how to configure it to integrate with the Microsoft identity platform. You learn how to customize the branding of your application in the sign-in dialog box, how to request scope permissions, and how to share a secret with the Microsoft identity platform that proves the app's identity. You'll also learn about single-tenant versus multitenant apps, application objects, and service principal objects, and the relationship between them.
+The goal of this module is to teach you how to register your application with Microsoft Entra ID, then how to configure it to integrate with the Microsoft identity platform. Learn how to customize the branding of your application in the sign-in dialog box. Then explore how to request scope permissions, and how to share a secret with the Microsoft identity platform that proves the app's identity. Finally, learn about single-tenant versus multitenant apps, application objects, and service principal objects, and the relationship between them.

@@ -2,8 +2,6 @@
 uid: learn.wwl.deploy-microsoft-configuration-manager.explore-client-deployment-using
 title: Explore client deployment using Configuration Manager
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Explore client deployment using Configuration Manager
   description: "Explore client deployment using Configuration Manager"
   ms.date: 05/15/2023
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 6
 content: |
-  [!include[](includes/2-explore-client-deployment-using.md)]
+  [!include[](includes/2-explore-client-deployment-using.md)]

@@ -1,15 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.monitor-azure-arc-enabled-servers.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: Knowledge check
   ms.date: 08/17/2023
   author: aurnovcy
   ms.author: aurnovc
   ms.topic: unit
+  module_assessment: true
 durationInMinutes: 7
 content: |
   [!include[](includes/6-knowledge-check.md)]
@@ -72,4 +71,4 @@ quiz:
     - content: Visualize with Azure Dashboard
       isCorrect: false
       explanation: Incorrect, both Azure Monitor Logs and Azure Monitor Metrics can be visualized with Azure Dashboards.
-
+

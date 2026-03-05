@@ -2,11 +2,9 @@
 uid: learn.wwl.configure-sql-server-resources-for-optimal-performance.control
 title: Control SQL Server resources
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Control SQL Server resources
   description: "Control SQL Server resources"
-  ms.date: 03/20/2025
+  ms.date: 04/01/2025
   author: JulianePadrao
   ms.author: jupadrao
   ms.topic: unit

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-vector-storage-azure-managed-redis.index-query-vector-data
+title: Index and query vector data
+metadata:
+  title: Index and Query Vector Data
+  description: Index and query vector data
+  ms.date: 11/23/2025
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: unit
+azureSandbox: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-index-query-vector-data.md)]

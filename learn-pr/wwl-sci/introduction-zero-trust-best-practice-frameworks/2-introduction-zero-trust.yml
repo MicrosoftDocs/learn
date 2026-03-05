@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.introduction-zero-trust-best-practice-frameworks.introduction-zero-trust
-title: Introduction to Zero Trust
+title: Describe the concept of Zero Trust
 metadata:
-  title: Introduction to Zero Trust
-  description: "SC-100 preparatory unit on the topic: Introduction to Zero Trust."
-  ms.date: 09/26/2024
+  title: Describe the concept of Zero Trust
+  description: "Describe the concept of Zero Trust."
+  ms.date: 02/11/2026
   author: ceperezb
   ms.author: ceperezb
   ms.topic: unit

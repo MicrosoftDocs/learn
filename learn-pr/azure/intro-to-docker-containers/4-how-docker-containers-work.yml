@@ -3,13 +3,11 @@ uid: learn.intro-to-docker-containers.4-how-docker-containers-work
 title: How Docker containers work
 
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: How Docker containers work
   description: In this unit, we explore how Docker containers work and how to run containers. We also discuss the life cycle of a Docker container.
   ms.date: 10/09/2024
-  author: rayoef
-  ms.author: rayoflores
+  author: davidsmatlak
+  ms.author: davidsmatlak
   ms.topic: unit
 
 durationInMinutes: 10

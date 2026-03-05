@@ -1,16 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.describe-core-architectural-components-of-azure.exercise-explore-learn-sandbox
-title: Exercise - Explore the Learn sandbox
+title: Exercise - Explore interacting with Azure
 metadata:
-  title: Exercise - Explore the Learn sandbox
-  description: "Exercise - Explore the Learn sandbox"
+  title: Exercise - Explore Interacting with Azure
+  description: "Exercise to explore the Azure portal, command line interface, and Azure interactive mode."
   ms.date: 12/03/2024
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: unit
   ms.custom:
   - N/A
-azureSandbox: true
 durationInMinutes: 10
 content: |
   [!include[](includes/4-exercise-explore-learn-sandbox.md)]

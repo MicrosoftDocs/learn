@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.troubleshoot-web-app-down-scenarios-app-service-diagnostics
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Troubleshoot Web App Down Scenarios with App Service Diagnostics
   description: "Utilize Web App Down, Crash Monitoring, and Ask Genie for troubleshooting. Use these tools to monitor application and platform availability, identify unhandled exceptions, capture memory dumps and callstack, and find areas of investigation and diagnostics."
   ms.date: 07/13/2022
@@ -39,4 +37,4 @@ units:
 - learn.wwl.troubleshoot-web-app-down-scenarios-app-service-diagnostics.summary
 badge:
   uid: learn.wwl.troubleshoot-web-app-down-scenarios-app-service-diagnostics.badge
-
+

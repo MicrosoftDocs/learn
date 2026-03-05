@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.introduction-information-extraction.exercise
+title: Exercise - Explore AI information extraction
+metadata:
+  title: Exercise - Explore AI information extraction
+  description: Explore AI information extraction.
+  author: GraemeMalcolm
+  ms.author: gmalc
+  ms.date: 11/18/2025
+  ms.topic: unit
+durationInMinutes: 15
+content: |
+  [!include[](includes/6b-exercise.md)]
+

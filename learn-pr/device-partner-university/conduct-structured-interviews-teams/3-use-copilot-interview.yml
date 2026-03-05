@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.conduct-structured-interviews-teams.use-copilot-interview
+title: Use Copilot during and after the interview
+metadata:
+  title: Use Copilot During And After The Interview
+  description: This content is part of the "Conduct structured interviews using Microsoft Teams and Copilot" module.
+  ms.date: 10/20/2025
+  author: hhreyes21
+  ms.author: v-homerreyes
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/3-use-copilot-interview.md)]

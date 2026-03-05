@@ -1,16 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.startups.name-brand.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: Review concepts on startup naming and branding. Subjects include choosing an effective name and strengthening your personal brand.
-  ms.date: 06/05/2024
-  author: ryanmesches
-  ms.author: vahughes
+  ms.date: 06/13/2025
+  author: vaquresh
+  ms.author: vaquresh
   ms.topic: unit
   ms.collection: learn-startups
+  module_assessment: true
 durationInMinutes: 4
 quiz:
   questions:

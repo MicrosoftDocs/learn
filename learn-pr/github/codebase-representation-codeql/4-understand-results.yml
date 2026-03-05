@@ -4,8 +4,8 @@ title: Understand CodeQL results
 metadata:
   unitType: Understand CodeQL results 
   title: Understand CodeQL results 
-  description: View CodeQL results and determine if there are security vulnerabilities to address.
-  ms.date: 05/01/2024
+  description: View your CodeQL results and determine if there are security vulnerabilities to address.
+  ms.date: 07/01/2025
   author: a-a-ron
   ms.author: aastewar
   ms.topic: unit

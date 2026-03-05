@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.choose-budgeting-tool.why-budgeting-tools-are-important
+title: Why budgeting tools are important
+metadata:
+  title: Why Budgeting Tools Are Important
+  description: This content is a part of the Choose a budgeting tool that fits your preferences and financial goals.
+  ms.date: 04/02/2025
+  author: kprks
+  ms.author: v-kperkes
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-why-budgeting-tools-are-important.md)]

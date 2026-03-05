@@ -2,6 +2,8 @@ Here you install Node.js, the **N** in the MEAN acronym. Like MongoDB, Node.js i
 
 Node.js acts as the server-side host for your web application and handles inbound HTTP traffic. Node.js also provides you with a way to communicate with your MongoDB installation, which you see later.
 
+[!INCLUDE[](../../../includes/azure-optional-exercise-subscription-note.md)]
+
 ## What versions of Node.js are available?
 
 You can get Node.js in two ways:

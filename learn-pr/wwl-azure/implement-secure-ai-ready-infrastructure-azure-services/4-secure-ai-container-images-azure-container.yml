@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-secure-ai-ready-infrastructure-azure-services.secure-ai-container-images-azure-container
+title: "Secure AI container images with Azure Container Registry"
+metadata:
+  title: "Secure AI Container Images with Azure Container Registry"
+  description: "Secure AI container images using Azure Container Registry with automated vulnerability scanning, access control, and content trust features."
+  ms.date: 02/04/2026
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: unit
+durationInMinutes: 11
+content: |
+  [!include[](includes/4-secure-ai-container-images-azure-container.md)]

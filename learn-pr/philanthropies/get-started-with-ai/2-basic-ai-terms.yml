@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.get-started-with-ai.basic-ai-terms
+title: Basic AI terms
+metadata:
+  title: Basic AI terms
+  description: This content is a part of the Get started with AI.
+  ms.date: 04/08/2025
+  author: CourtneyHMicrosoft
+  ms.author: cohodge
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/2-basic-ai-terms.md)]

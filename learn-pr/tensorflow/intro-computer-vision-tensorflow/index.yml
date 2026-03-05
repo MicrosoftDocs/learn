@@ -1,13 +1,12 @@
 ### YamlMime:Module
 uid: learn.tensorflow.intro-computer-vision
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Introduction to computer vision with TensorFlow
   description: Learn how to perform different computer vision tasks using TensorFlow.
-  author: shwars
-  ms.author: chnoring
+  author: Orin-Thomas
+  ms.author: orthomas
   ms.date: 07/07/2021
+  ms.update-cycle: 180-days
   ms.service: azure-ai-services
   ms.topic: module
   ms.collection:
@@ -15,13 +14,14 @@ metadata:
     - ce-advocates-ai-copilot
   ms.custom: team=nextgen
 title: Introduction to computer vision with TensorFlow
-summary: In this module, you will get an introduction to Computer Vision using TensorFlow. We'll use image classification to learn about convolutional neural networks, and then see how pre-trained networks and transfer learning can improve our models and solve real-world problems.
+summary: In this module, you get an introduction to Computer Vision using TensorFlow. We use image classification to learn about convolutional neural networks, and then see how pretrained networks and transfer learning can improve our models and solve real-world problems.
 abstract: |
   In this module you will:
   - Learn how to build computer vision machine learning models
   - Learn how to represent images as tensors
   - Learn how to build Dense Neural Networks and Convolutional Neural Networks
 iconUrl: /training/achievements/tensor-computer-vision.svg
+hidden: true
 levels:
 - beginner
 roles:

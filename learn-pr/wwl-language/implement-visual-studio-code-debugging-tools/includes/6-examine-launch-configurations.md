@@ -18,7 +18,7 @@ The `name` attribute specifies the display name for the launch configuration. Th
 
 ### Type
 
-The `type` attribute specifies the type of debugger to use for the launch configuration. A value of `codeclr` specifies the debugger type for .NET 5+ and .NET Core applications (including C# applications).
+The `type` attribute specifies the type of debugger to use for the launch configuration. A value of `codeclr` specifies the debugger type for .NET 5+ applications (including C# applications).
 
 ### Request
 
@@ -30,7 +30,7 @@ The `preLaunchTask` attribute specifies a task to run before debugging your prog
 
 ### Program
 
-The `program` attribute is set to the path of the application dll or .NET Core host executable to launch.
+The `program` attribute is set to the path of the application dll or .NET host executable to launch.
 
 This property normally takes the form: `${workspaceFolder}/bin/Debug/<target-framework>/<project-name.dll>`.
 
@@ -39,10 +39,10 @@ Where:
 - `<target-framework>` is the framework that the debug project is being built for. This value is normally found in the project file as the 'TargetFramework' property.
 - `<project-name.dll>` is the name of debugged project's build output dll. This property is normally the same as the project file name but with a '.dll' extension.
 
-For example: `${workspaceFolder}/bin/Debug/net7.0/Debug101.dll`
+For example: `${workspaceFolder}/bin/Debug/net10.0/Debug101.dll`
 
 > [!NOTE]
-> The **.dll** extension indicates that this file is a dynamic link library (dll) file. If your project is named Debug101, a file named **Debug101.dll** is created when a build task compiles your program using the Program.cs and Debug101.csproj files. You can find the **Debug101.dll** file in the EXPLORER view by expanding the "bin" and "Debug" folders, and then opening a folder that represents the .NET framework used by your code project, such as "net7.0". The .NET Framework version is specified in your .csproj file.
+> The **.dll** extension indicates that this file is a dynamic link library (dll) file. If your project is named Debug101, a file named **Debug101.dll** is created when a build task compiles your program using the Program.cs and Debug101.csproj files. You can find the **Debug101.dll** file in the EXPLORER view by expanding the "bin" and "Debug" folders, and then opening a folder that represents the .NET framework used by your code project, such as "net10.0". The .NET Framework version is specified in your .csproj file.
 
 ### Cwd
 
@@ -118,7 +118,7 @@ The following example shows how you could configure the launch.json file to incl
         "type": "coreclr",
         "request": "launch",
         "preLaunchTask": "buildProject123",
-        "program": "${workspaceFolder}/Project123/bin/Debug/net7.0/Project123.dll",
+        "program": "${workspaceFolder}/Project123/bin/Debug/net10.0/Project123.dll",
         "args": [],
         "cwd": "${workspaceFolder}/Project123",
         "console": "internalConsole",
@@ -129,7 +129,7 @@ The following example shows how you could configure the launch.json file to incl
         "type": "coreclr",
         "request": "launch",
         "preLaunchTask": "buildProject456",
-        "program": "${workspaceFolder}/Project456/bin/Debug/net7.0/Project456.dll",
+        "program": "${workspaceFolder}/Project456/bin/Debug/net10.0/Project456.dll",
         "args": [],
         "cwd": "${workspaceFolder}/Project456",
         "console": "internalConsole",

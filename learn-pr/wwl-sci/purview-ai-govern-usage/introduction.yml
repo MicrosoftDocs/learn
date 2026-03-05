@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-ai-govern-usage.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: "Introduction"
+  ms.date: 04/10/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 1
+content: |
+  [!include[](includes/introduction.md)]

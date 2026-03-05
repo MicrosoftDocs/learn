@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-to-sql-server-2022.summary
+title: Summary
+metadata:
+  unitType: summary
+  title: Summary
+  description: "Review the key features and capabilities of SQL Server 2025, including AI integration, analytics improvements, advanced security, and enhanced developer tools"
+  ms.date: 10/06/2025
+  author: JulianePadrao
+  ms.author: jupadrao
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/9-summary.md)]

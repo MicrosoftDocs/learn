@@ -1,0 +1,48 @@
+### YamlMime:Module
+uid: learn.wwl.introduction-ai-special-education
+metadata:
+  title: "Learn AI in Special Education"
+  description: "Explore practical AI tools to enhance teaching, boost student outcomes, and streamline work in special education environments responsibly."
+  ms.date: 11/18/2025
+  author: Randall-Knapp
+  ms.author: erzelman
+  ms.topic: module
+  ms.service: microsoft-syntex
+title: "Apply AI tools in special education environments"
+summary: Discover how AI supports educators in special education by improving teaching practices, student outcomes, and workflow efficiency responsibly.
+abstract: |
+  After completing this module, you will be able to:
+  - Describe how artificial intelligence can support the work of special education teams and contribute to inclusive, well organized learning environments.
+  - Identify potential benefits and considerations when using AI tools in special education, including time saving opportunities and the need for thoughtful oversight to protect privacy and compliance.
+  - Explain ways AI can assist with differentiated instruction, multilingual family communication, and routine administrative tasks to strengthen student outcomes and educator effectiveness.
+  - Apply Microsoft’s Responsible AI Principles to guide ethical, transparent, and student centered use of AI in teaching and learning.
+  - Evaluate AI generated content for accuracy, fairness, and alignment with IEP goals and legal requirements, ensuring that final decisions remain grounded in educator expertise.
+prerequisites: |
+  - Familiarity with special education principles.
+  - Basic understanding of educational technology tools.
+  - Awareness of diversity in learning needs among students.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- k-12-educator
+- school-leader
+products:
+- m365
+- microsoft-365-copilot
+- office-teams
+- office-powerpoint
+- office-word
+subjects:
+- artificial-intelligence
+- generative-ai
+units:
+- learn.wwl.introduction-ai-special-education.introduction
+- learn.wwl.introduction-ai-special-education.role-ai-special-education
+- learn.wwl.introduction-ai-special-education.benefits-challenges-ai
+- learn.wwl.introduction-ai-special-education.responsible-use-ai-education
+- learn.wwl.introduction-ai-special-education.exercise-reflection
+- learn.wwl.introduction-ai-special-education.knowledge-check
+- learn.wwl.introduction-ai-special-education.summary
+badge:
+  uid: learn.wwl.introduction-ai-special-education.badge

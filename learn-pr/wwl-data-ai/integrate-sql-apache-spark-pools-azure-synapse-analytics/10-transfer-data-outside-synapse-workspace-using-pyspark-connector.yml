@@ -2,8 +2,6 @@
 uid: learn.wwl.integrate-sql-apache-spark-pools-azure-synapse-analytics.transfer-data-outside-synapse-workspace-using-pyspark-connector
 title: Transfer data outside the synapse workspace using the PySpark connector
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Transfer data outside the synapse workspace using the PySpark connector
   description: "Transfer data outside the synapse workspace using the PySpark connector"
   ms.date: 06/08/2022
@@ -18,4 +16,4 @@ labModal: false
 durationInMinutes: 3
 content: |
   [!include[](includes/10-transfer-data-outside-synapse-workspace-using-pyspark-connector.md)]
-
+

@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.dpu.cloud-native-myths
+title: 'Windows 11 and cloud-native concepts: myths, realities, and best practices'
+metadata:
+  title: 'Windows 11 And Cloud-Native Concepts: Myths, Realities, And Best Practices'
+  description: This module introduces cloud-native concepts, explains how Windows 11 supports both traditional and cloud-based management, and addresses common misconceptions about device management and application compatibility. It offers practical guidance for organizations planning upgrades or transitions, highlighting how cloud-native approaches can enhance flexibility and efficiency.
+  ms.date: 10/29/2025
+  author: Stephanie-Rosenzweig
+  ms.author: v-stephanier
+  ms.topic: module-standard-concept-based
+  ms.service: windows-11
+summary: >
+  This module introduces cloud-native concepts, explains how Windows 11 supports both traditional and cloud-based management, and addresses common misconceptions about device management and application compatibility. It offers practical guidance for organizations planning upgrades or transitions, highlighting how cloud-native approaches can enhance flexibility and efficiency.
+abstract: |
+  By the end of this module, you'll be able to:
+  - Define cloud-native management and its key principles.
+  - Describe the relationship between Windows 11 deployment and cloud-native management.
+  - Distinguish facts from common myths about cloud-native adoption.
+  - Identify practical steps for transitioning to cloud-native management.
+prerequisites: |
+  - None
+iconUrl: /training/achievements/cloud-native-myths.svg
+ratingEnabled: false
+levels:
+  - beginner
+roles:
+  - business-leader
+  - business-owner
+  - technology-manager
+products:
+  - entra-id
+  - windows-11
+  - intune
+  - windows-autopilot
+units:
+  - learn.dpu.cloud-native-myths.introduction
+  - learn.dpu.cloud-native-myths.define-cloud-native
+  - learn.dpu.cloud-native-myths.cloud-readiness
+  - learn.dpu.cloud-native-myths.misconceptions
+  - learn.dpu.cloud-native-myths.knowledge-check
+  - learn.dpu.cloud-native-myths.summary
+badge:
+  uid: learn.dpu.cloud-native-myths.badge
+

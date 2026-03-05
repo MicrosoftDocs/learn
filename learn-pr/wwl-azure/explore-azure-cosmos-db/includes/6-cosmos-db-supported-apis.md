@@ -14,7 +14,7 @@ API for MongoDB, PostgreSQL, Cassandra, Gremlin, and Table implement the wire pr
 
 ## API for NoSQL
 
-The Azure Cosmos DB API for NoSQL stores data in document format. It offers the best end-to-end experience as we have full control over the interface, service, and the SDK client libraries. Any new feature that is rolled out to Azure Cosmos DB is first available on API for NoSQL accounts. NoSQL accounts provide support for querying items using the Structured Query Language (SQL) syntax.
+The Azure Cosmos DB API for NoSQL stores data as JSON documents (called items). It offers the best end-to-end experience as we have full control over the interface, service, and the SDK client libraries. Any new feature that is rolled out to Azure Cosmos DB is first available on API for NoSQL accounts. NoSQL accounts provide support for querying items using the Structured Query Language (SQL) syntax.
 
 ## API for MongoDB
 

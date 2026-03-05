@@ -2,13 +2,11 @@
 uid: learn.oxford.run-cognitive-services-iot-edge.how-deploy-cognitive-service-iot-edge
 title: How to deploy a cognitive service to an IoT Edge device
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: How to deploy a prebuilt module to an IoT Edge device
   description: In this section, we explain submitting a new deployment to an IoT Edge device
-  ms.date: 07/22/2024
-  author: PatAltimore
-  ms.author: patricka
+  ms.date: 08/19/2025
+  author: sethmanheim
+  ms.author: sethm
   ms.topic: unit
   ms.custom: team=nextgen
 durationInMinutes: 5

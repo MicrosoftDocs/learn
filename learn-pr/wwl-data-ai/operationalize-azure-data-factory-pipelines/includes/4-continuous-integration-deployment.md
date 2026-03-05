@@ -14,9 +14,9 @@ Below is a sample overview of the CI/CD lifecycle in an Azure data factory that'
 
 1.  A developer creates a feature branch to make a change. They debug their pipeline runs with their most recent changes.
 
-1.  After a developer is satisfied with their changes, they create a pull request from their feature branch to the master or collaboration branch to get their changes reviewed by peers.
+1.  After a developer is satisfied with their changes, they create a pull request from their feature branch to the main or collaboration branch to get their changes reviewed by peers.
 
-1.  After a pull request is approved and changes are merged in the master branch, the changes get published to the development factory.
+1.  After a pull request is approved and changes are merged in the main branch, the changes get published to the development factory.
 
 1.  When the team is ready to deploy the changes to a test or UAT (User Acceptance Testing) factory, the team goes to their Azure Pipelines release and deploys the desired version of the development factory to UAT. This deployment takes place as part of an Azure Pipelines task and uses Resource Manager template parameters to apply the appropriate configuration.
 
@@ -63,21 +63,21 @@ The following is a guide for setting up an Azure Pipelines release that automate
 
 1.  Add an Azure Resource Manager Deployment task:
 
-    a.  In the stage view, select **View stage tasks**.
+    a. In the stage view, select **View stage tasks**.
 
     ![Stage view](../media/continuous-integration-image-14.png)
 
-    b.  Create a new task. Search for **ARM Template Deployment**, and then select **Add**.
+    b. Create a new task. Search for **ARM Template Deployment**, and then select **Add**.
 
-    c.  In the Deployment task, select the subscription, resource group, and location for the target data factory. Provide credentials if necessary.
+    c. In the Deployment task, select the subscription, resource group, and location for the target data factory. Provide credentials if necessary.
 
-    d.  In the **Action** list, select **Create or update resource group**.
+    d. In the **Action** list, select **Create or update resource group**.
 
-    e.  Select the ellipsis button (**…**) next to the **Template** box. Browse for the Azure Resource Manager template that is generated in your publish branch of the configured git repository. Look for the file `ARMTemplateForFactory.json` in the `<FactoryName>` folder of the adf_publish branch.
+    e. Select the ellipsis button (**…**) next to the **Template** box. Browse for the Azure Resource Manager template that is generated in your publish branch of the configured git repository. Look for the file `ARMTemplateForFactory.json` in the `<FactoryName>` folder of the adf_publish branch.
 
-    f.  Select **…** next to the **Template parameters** box to choose the parameters file. Look for the file `ARMTemplateParametersForFactory.json` in the `<FactoryName>` folder of the adf_publish branch.
+    f. Select **…** next to the **Template parameters** box to choose the parameters file. Look for the file `ARMTemplateParametersForFactory.json` in the `<FactoryName>` folder of the adf_publish branch.
 
-    g.  Select **…** next to the **Override template parameters** box, and enter the desired parameter values for the target data factory. For credentials that come from Azure Key Vault, enter the secret's name between double quotation marks. For example, if the secret's name is cred1, enter **"$(cred1)"** for this value.
+    g. Select **…** next to the **Override template parameters** box, and enter the desired parameter values for the target data factory. For credentials that come from Azure Key Vault, enter the secret's name between double quotation marks. For example, if the secret's name is cred1, enter **"$(cred1)"** for this value.
 
     h. Select **Incremental** for the **Deployment mode**.
 
@@ -221,7 +221,7 @@ The following are some guidelines to follow when you create the custom parameter
 
 If you've set up CI/CD for your data factories, you might exceed the Azure Resource Manager template limits as your factory grows bigger. For example, one limit is the maximum number of resources in a Resource Manager template. To accommodate large factories while generating the full Resource Manager template for a factory, Data Factory now generates linked Resource Manager templates. With this feature, the entire factory payload is broken down into several files so that you aren't constrained by the limits.
 
-If you've configured Git, the linked templates are generated and saved alongside the full Resource Manager templates in the adf_publish branch in a new folder called linkedTemplates. The linked Resource Manager templates usually consist of a master template and a set of child templates that are linked to the master. The parent template is called ArmTemplate_master.json, and child templates are named with the pattern ArmTemplate_0.json, ArmTemplate_1.json, and so on. 
+If you've configured Git, the linked templates are generated and saved alongside the full Resource Manager templates in the adf_publish branch in a new folder called linkedTemplates. The linked Resource Manager templates usually consist of a parent template and a set of child templates that are linked to the parent. The parent template is called ArmTemplate_master.json, and child templates are named with the pattern ArmTemplate_0.json, ArmTemplate_1.json, and so on. 
 
 To use linked templates instead of the full Resource Manager template, update your CI/CD task to point to ArmTemplate_master.json instead of ArmTemplateForFactory.json (the full Resource Manager template). Resource Manager also requires that you upload the linked templates into a storage account so Azure can access them during deployment.
 

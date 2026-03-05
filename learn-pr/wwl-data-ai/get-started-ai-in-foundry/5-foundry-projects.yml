@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-started-ai-in-foundry.foundry-projects
+title: Get started with Foundry
+metadata:
+  title: Get started with Foundry
+  description: "This unit covers the various how to get started with Foundry, including how to create a new project."
+  ms.date: 12/8/2025
+  author: sherzyang
+  ms.author: sheryang
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-foundry-projects.md)]

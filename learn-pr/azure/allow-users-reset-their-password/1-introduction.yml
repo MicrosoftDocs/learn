@@ -2,8 +2,6 @@
 uid: learn.azure.allow-users-to-reset-their-password.introduction
 title: Introduction
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Introduction
   description: In this unit, you'll learn about a business scenario where self-service password resets can reduce administrative costs.
   ms.date: 11/07/2024
@@ -13,4 +11,4 @@ metadata:
 durationInMinutes: 2
 content: |
   [!include[](includes/1-introduction.md)]
-
+

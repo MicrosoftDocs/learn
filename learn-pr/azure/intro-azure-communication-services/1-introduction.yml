@@ -2,14 +2,12 @@
 uid: learn.azure.intro-to-azure-communication-services.introduction
 title: Introduction
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: introduction
   title: Introduction
   description: "Introduces the introduction to Azure Communication Services, Learn module." 
   ms.date: 04/17/2024
-  author: rmcmurray
-  ms.author: robmcm
+  author: sloanster
+  ms.author: micahvivion
   ms.topic: unit
 durationInMinutes: 3
 content: |

@@ -1,16 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.introduction-elastic-azure.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: knowledge_check
-  title: Knowledge check
+  title: Module assessment
   description: A multiple-choice knowledge check.
   ms.date: 03/21/2023
   author: yenchiho
   ms.author: yenchiho
   ms.topic: unit
+  module_assessment: true
 durationInMinutes: 2
 content: |
 quiz:
@@ -48,4 +47,4 @@ quiz:
     - content: Preferred OS
       isCorrect: false
       explanation: Preferred OS is one of the decision criteria.
-
+

@@ -1,10 +1,10 @@
-Create a release pipeline that deploys to QA devices and smoke tests the edge runtime in a containerized device.
+Create a release pipeline to deploy to QA devices and smoke test the edge runtime in a containerized device.
 
 The steps to achieve this are:
 
-1. Run an instance of [azure-iot-edge-device-container](https://github.com/toolboc/azure-iot-edge-device-container), which is configured as a QA device.
+1. Run an instance of [azure-iot-edge-device-container](https://github.com/toolboc/azure-iot-edge-device-container) configured as a QA device.
 
-1. Probe the IoT hub to ensure the QA device receives the correct deployment configuration and can successfully run all configured modules. This test is contained in [edgeSmokeTest.sh](https://github.com/MicrosoftDocs/mslearn-oxford-implement-cicd-iot-edge/blob/master/scripts/edgeSmokeTest.sh).
+1. Probe the IoT hub to ensure the QA device receives the correct deployment configuration and runs all configured modules successfully. This test is in [edgeSmokeTest.sh](https://github.com/MicrosoftDocs/mslearn-oxford-implement-cicd-iot-edge/blob/master/scripts/edgeSmokeTest.sh).
 
 ## Add tests
 
@@ -14,7 +14,7 @@ Integration testing is vital for Azure IoT Edge solutions that rely on services 
 
 1. Monitor these devices using the dockerappinsights module, which is configured in deployment.template.json. Completion of this step will require the configuration of Azure Kubernetes Service.
 
-## Configure an Azure Kubernetes Service
+## Configure Azure Kubernetes Service
 
 1. Create an Azure Kubernetes Service cluster in the Azure portal.
 

@@ -2,8 +2,6 @@
 uid: learn.monitor-java-azure.distributed
 title: Monitoring the entire solution
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: learning-content
   title: Monitoring the entire solution
   description: We look at monitoring the entire solution
@@ -19,4 +17,4 @@ metadata:
 durationInMinutes: 10
 content: |
   [!include[](includes/8-distributed.md)]
-
+

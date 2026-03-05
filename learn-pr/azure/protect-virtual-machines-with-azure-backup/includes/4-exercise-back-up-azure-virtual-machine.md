@@ -6,7 +6,7 @@ In this exercise, you create a virtual machine (VM), set up a backup, and start 
 
 > [!NOTE]
 > This exercise is optional. If you don't have an Azure account, you can read through the instructions so you understand how to back up virtual machines by using Azure Backup.
-> If you want to complete this exercise, but you don't have an Azure subscription or you prefer not to use your own account, create a [free account](https://azure.microsoft.com/free/?azure-portal=true) before you begin.
+> If you want to complete this exercise, but you don't have an Azure subscription or you prefer not to use your own account, create a [free account](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn) before you begin.
 
 ## Create a backup for Azure virtual machines
 
@@ -66,6 +66,14 @@ az vm create \
     --vnet-name NorthwindInternal \
     --subnet NorthwindInternal1
 ```
+
+> [!NOTE]
+> If you get a `securityProfile.securityType is invalid` error running the preceding command, run the following commands to register `UseStandardSecurityType`, then re-run the preceding command.
+>
+> ```azurecli
+> az feature register --name UseStandardSecurityType --namespace Microsoft.Compute
+> az feature show --name UseStandardSecurityType --namespace Microsoft.Compute
+> ```
 
 The command can take a few minutes to complete. Wait for it to finish before moving on to the next step.
 

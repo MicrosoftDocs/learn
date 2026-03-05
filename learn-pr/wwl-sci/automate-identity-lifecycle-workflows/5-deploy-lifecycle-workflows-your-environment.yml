@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.automate-identity-lifecycle-workflows.deploy-lifecycle-workflows-your-environment
+title: Deploy lifecycle workflows in your environment
+metadata:
+  title: Deploy lifecycle workflows in your environment
+  description: "Plan, extend, test, and monitor lifecycle workflow deployments in Microsoft Entra."
+  ms.date: 09/3/2025
+  author: wwlpublish
+  ms.author: roberts
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 6
+content: |
+  [!include[](includes/5-deploy-lifecycle-workflows-your-environment.md)]

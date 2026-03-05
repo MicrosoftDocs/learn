@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.use-fabric-activator.create-rules
+title: Create rules in Activator
+metadata:
+  title: Create rules in Activator
+  description: "Create rules in Activator"
+  ms.date: 09/12/2025
+  author: theresa-i
+  ms.author: theresai
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/3-create-rules.md)]

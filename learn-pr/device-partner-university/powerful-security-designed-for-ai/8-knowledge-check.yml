@@ -1,0 +1,57 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.powerful-security-ai.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge Check
+  description: This content is part of the "Powerful security designed for AI" module.
+  ms.date: 08/05/2025
+  author: hhreyes21
+  ms.author: v-homerreyes
+  ms.topic: unit
+durationInMinutes: 3
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "What can you do with Copilot+ PCs to help your organization?"
+    choices:
+        - content: "Replace the need for Microsoft 365 entirely"
+          isCorrect: false
+          explanation: "Incorrect. Copilot+ PCs complement Microsoft 365, they do not replace it."
+        - content: "Automatically send user data to the cloud for analysis"
+          isCorrect: false
+          explanation: "Incorrect. Copilot+ PCs process data locally and do not send snapshots or prompts to the cloud."
+        - content: "Use on-device AI to enhance productivity while keeping data secure"
+          isCorrect: true
+          explanation: "Correct. Copilot+ PCs use on-device AI and security features to boost productivity while maintaining data privacy."
+        - content: "Disable security features to improve system performance"
+          isCorrect: false
+          explanation: "Incorrect. Security is a core feature and is designed to work without compromising performance."
+  - content: "What are the security benefits of Copilot+ PCs?"
+    choices:
+        - content: "They rely solely on user-installed antivirus software"
+          isCorrect: false
+          explanation: "Incorrect. Copilot+ PCs have built-in hardware-backed security layers beyond just antivirus."
+        - content: "They use on-device AI that automatically deletes all files daily"
+          isCorrect: false
+          explanation: "Incorrect. On-device AI is used for productivity, not for deleting files."
+        - content: "They include Secured-core protections, Microsoft Pluton, and advanced sign-in security"
+          isCorrect: true
+          explanation: "Correct. These features provide multilayer protection against modern threats."
+        - content: "They store snapshots in the cloud for easier backup"
+          isCorrect: false
+          explanation: "Incorrect. Snapshots are stored locally only, not in the cloud."
+  - content: "How do the advanced security features of Copilot+ PCs benefit you professionally?"
+    choices:
+        - content: "They ensure you never need to update your system again"
+          isCorrect: false
+          explanation: "Incorrect. Regular updates are still necessary for optimal security and performance."
+        - content: "They allow you to share sensitive data more easily over email"
+          isCorrect: false
+          explanation: "Incorrect. While secure, sharing sensitive data still requires caution."
+        - content: "They give you peace of mind to focus on tasks without worrying about data breaches"
+          isCorrect: true
+          explanation: "Correct. The built-in protections help ensure your work is safeguarded, allowing you to focus on productivity."
+        - content: "They remove the need for password authentication"
+          isCorrect: false
+          explanation: "Incorrect. Passwords are still in use, though enhanced sign-in methods like Windows Hello are supported."
+

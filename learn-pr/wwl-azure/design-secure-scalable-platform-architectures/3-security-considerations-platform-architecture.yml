@@ -2,8 +2,6 @@
 uid: learn.wwl.design-secure-scalable-platform-architectures.security-considerations-platform-architecture
 title: Security Considerations in Platform Architecture
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Security Considerations in Platform Architecture
   description: "Security Considerations in Platform Architecture"
   ms.date: 01/14/2025
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 8
 content: |
-  [!include[](includes/3-security-considerations-platform-architecture.md)]
+  [!include[](includes/3-security-considerations-platform-architecture.md)]

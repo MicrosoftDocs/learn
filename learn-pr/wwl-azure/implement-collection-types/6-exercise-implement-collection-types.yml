@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-collection-types.exercise-implement-collection-types
+title: Exercise - Implement collection types
+metadata:
+  title: Exercise - Implement collection types
+  description: "Practice implementing and using collection types like List, Dictionary, and HashSet in a banking application scenario."
+  ms.date: 03/28/2025
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 30
+content: |
+  [!include[](includes/6-exercise-implement-collection-types.md)]

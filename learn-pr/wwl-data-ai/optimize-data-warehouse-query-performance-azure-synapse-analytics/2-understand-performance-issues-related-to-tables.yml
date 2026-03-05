@@ -2,8 +2,6 @@
 uid: learn.wwl.optimize-data-warehouse-query-performance-azure-synapse-analytics.understand-performance-issues-related-to-tables
 title: Understand performance issues related to tables
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Understand performance issues related to tables
   description: "Understand performance issues related to tables"
   ms.date: 08/05/2022
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 5
 content: |
-  [!include[](includes/2-understand-performance-issues-related-to-tables.md)]
+  [!include[](includes/2-understand-performance-issues-related-to-tables.md)]

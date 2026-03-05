@@ -1,0 +1,14 @@
+### YamlMime: ModuleUnit
+uid: learn.wwl.understand-azure-databricks-integrations.integration-databricks-microsoft-purview
+title: Understand integration with Microsoft Purview
+metadata:
+  title: Understand Integration with Microsoft Purview
+  description: Learn how Azure Databricks integrates with Microsoft Purview for data governance, enabling metadata discovery, lineage tracking, and unified catalog management across your data estate.
+  ms.date: 12/07/2025
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+  ai-usage: ai-generated
+durationInMinutes: 4
+content: |
+  [!include[](includes/7-integration-databricks-microsoft-purview.md)]

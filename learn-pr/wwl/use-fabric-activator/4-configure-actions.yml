@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.use-fabric-activator.configure-actions
+title: Configure actions in Activator
+metadata:
+  title: Configure actions in Activator
+  description: "Configure actions in Activator"
+  ms.date: 09/12/2025
+  author: theresa-i
+  ms.author: theresai
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-configure-actions.md)]

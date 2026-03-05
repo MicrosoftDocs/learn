@@ -2,11 +2,9 @@
 uid: learn.wwl.configure-azure-cosmos-db-sql-api.choose-between-standard-autoscale-provisioned-throughput
 title: Compare serverless vs. provisioned throughput
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Compare serverless vs. provisioned throughput
   description: "Compare serverless vs. provisioned throughput"
-  ms.date: 10/22/2024
+  ms.date: 04/02/2025
   author: wwlpublish
   ms.author: calopez
   ms.topic: unit

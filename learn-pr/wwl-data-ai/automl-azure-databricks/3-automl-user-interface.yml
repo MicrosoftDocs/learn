@@ -2,13 +2,11 @@
 uid: learn.wwl.automl-azure-databricks.automl-user-interface
 title: Use AutoML in the Azure Databricks user interface
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Use AutoML in the Azure Databricks user interface
   description: Use AutoML in the Azure Databricks user interface
-  author: wwlpublish
-  ms.author: madiepev
-  ms.date: 08/26/2024
+  author: JulianePadrao
+  ms.author: jupadrao
+  ms.date: 4/24/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot

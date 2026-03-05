@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.introduction-sql-server-t-sql-enhancements.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: "Introduction"
+  ms.date: 10/14/2025
+  author: MScalopez
+  ms.author: calopez
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/01-introduction.md)]

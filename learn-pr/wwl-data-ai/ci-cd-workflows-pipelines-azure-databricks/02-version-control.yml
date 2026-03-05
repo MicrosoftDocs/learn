@@ -2,8 +2,6 @@
 uid: learn.wwl.ci-cd-workflows-pipelines-azure-databricks.version-control
 title: Implement version control and Git integration
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Implement version control and Git integration
   description: "Implement version control and Git integration"
   ms.date: 08/01/2024
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 6
 content: |
-  [!include[](includes/02-version-control.md)]
+  [!include[](includes/02-version-control.md)]

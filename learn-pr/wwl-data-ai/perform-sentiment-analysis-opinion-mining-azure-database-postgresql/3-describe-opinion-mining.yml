@@ -2,8 +2,6 @@
 uid: learn-wwl.perform-sentiment-analysis-opinion-mining-azure-database-postgresql.describe-opinion-mining
 title: Describe opinion mining
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Describe opinion mining
   description: Describe opinion mining
   author: wwlpublish
@@ -15,4 +13,4 @@ metadata:
 durationInMinutes: 3
 content: |
   [!include[](includes/3-describe-opinion-mining.md)]
-
+

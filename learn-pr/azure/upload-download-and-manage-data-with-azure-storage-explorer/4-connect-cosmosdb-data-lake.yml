@@ -1,8 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.upload-download-and-manage-data-with-azure-storage-explorer.4-connect-cosmosdb-data-lake
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Connect Azure Storage Explorer to Azure Data Lake Storage
   description: Connect Azure Storage Explorer to Azure Data Lake Storage
   ms.date: 09/19/2024
@@ -13,4 +11,4 @@ title: Connect Azure Storage Explorer to Azure Data Lake Storage
 durationInMinutes: 8
 content: |
   [!include[](includes/4-connect-cosmosdb-data-lake.md)]
-
+

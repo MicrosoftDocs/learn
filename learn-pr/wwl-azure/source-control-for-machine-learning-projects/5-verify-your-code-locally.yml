@@ -2,13 +2,11 @@
 uid: learn.wwl.source-control-for-machine-learning-projects.verify-your-code-locally
 title: Verify your code locally
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Verify your code locally
   description: Verify your code locally
   author: wwlpublish
   ms.author: madiepev
-  ms.date: 07/25/2024
+  ms.date: 12/01/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot

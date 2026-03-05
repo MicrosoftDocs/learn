@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.introduction-ai-speech.speech-solutions
+title: Speech-enabled solutions
+metadata:
+  title: Speech-enabled solutions
+  description: Explore speech enabled solutions
+  author: wwlpublish
+  ms.author: gmalc
+  ms.date: 10/27/2025
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+  zone_pivot_groups: video-or-text
+durationInMinutes: 2
+content: |
+  [!include[](includes/2-speech-solutions.md)]
+

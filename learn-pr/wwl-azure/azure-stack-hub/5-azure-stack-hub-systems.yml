@@ -2,8 +2,6 @@
 uid: learn.wwl.azure-stack-hub.systems
 title: Azure Stack Hub systems
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Azure Stack Hub systems
   description: "Azure Stack Hub systems"
   ms.date: 08/05/2022
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 6
 content: |
-  [!include[](includes/5-azure-stack-hub-systems.md)]
+  [!include[](includes/5-azure-stack-hub-systems.md)]

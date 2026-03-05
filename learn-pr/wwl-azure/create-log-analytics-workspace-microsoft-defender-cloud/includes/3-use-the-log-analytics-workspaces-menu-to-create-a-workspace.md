@@ -1,7 +1,7 @@
 In this lab, learn how to create a Log Analytics workspace to collect data from Azure resources in your subscription, on-premises computers monitored by System Center Operations Manager, device collections from Configuration Manager, diagnostics or log data from Azure Storage.
 
 > [!NOTE]
-> To complete this lab, you will need an [Azure subscription](https://azure.microsoft.com/free).
+> To complete this lab, you will need an [Azure subscription](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn).
 
 Launch the exercise and follow the instructions.
 

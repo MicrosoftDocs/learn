@@ -2,11 +2,11 @@ Blazor lets you bind HTML controls to properties so that changing values are aut
 
 Suppose you're developing a page that collects information from customers about their pizza preferences. You want to load the information from a database and enable customers to make changes, such as recording their favorite toppings. When there's a change from the user or an update in the database, you want the new values to display in the UI as quickly as possible.
 
-In this unit, you'll learn how to use data binding in Blazor to tie UI elements to data values, properties, or expressions.
+In this unit, you learn how to use data binding in Blazor to tie UI elements to data values, properties, or expressions.
 
 ## What is data binding?
 
-If you want an HTML element to display a value, you can write code to alter the display. You'll need to write extra code to update the display when the value changes. In Blazor, you can use data binding to connect an HTML element to a field, property, or expression. This way, when the value changes, the HTML element is automatically updated. The update usually happens quickly after the change, and you don't have to write any update code.
+If you want an HTML element to display a value, you can write code to alter the display. You need to write extra code to update the display when the value changes. In Blazor, you can use data binding to connect an HTML element to a field, property, or expression. This way, when the value changes, the HTML element is automatically updated. The update usually happens quickly after the change, and you don't have to write any update code.
 
 To bind a control, you would use the `@bind` directive:
 
@@ -26,7 +26,7 @@ To bind a control, you would use the `@bind` directive:
 In the preceding page, whenever the `customerEmail` variable changes its value, the `<input>` value updates.
 
 > [!NOTE]
-> Controls, such as `<input>`, update their display only when the component is rendered and not when a field's value changes. Because Blazor components render after any event handler code executes, in practice, updates are usually displayed quickly.
+> Controls, such as `<input>`, update their display only when the component is rendered and not when a field's value changes. Because Blazor components render after any event handler code executes, in practice, updates are typically displayed quickly.
 
 ## Bind elements to specific events
 
@@ -126,4 +126,4 @@ As an alternative to using the `@bind:format` directive, you can write C# code t
 }
 ```
 
-In the next unit, you'll apply what you've learned.
+In the next unit, you apply what you learned about binding controls to data.

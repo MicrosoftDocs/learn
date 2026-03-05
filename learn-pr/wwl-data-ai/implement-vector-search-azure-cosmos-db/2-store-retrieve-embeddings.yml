@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-vector-search-azure-cosmos-db.store-retrieve-embeddings
+title: Store and retrieve embeddings in Azure Cosmos DB
+metadata:
+  title: Store and Retrieve Embeddings in Azure Cosmos DB
+  description: Store and retrieve embeddings in Azure Cosmos DB
+  ms.date: 02/05/2026
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: unit
+durationInMinutes: 12
+content: |
+  [!include[](includes/2-store-retrieve-embeddings.md)]

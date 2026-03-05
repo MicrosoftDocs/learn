@@ -1,22 +1,24 @@
-Consider the following best practices when implementing real-time dashboards in Microsoft Fabric.
+When multiple tiles in a dashboard use related data, you can improve maintainability by defining *base queries* that retrieve a general set of records relevant for multiple tiles. Tile-specific queries then filter or group this data for particular visualizations.
 
-- **Clarity and Simplicity**: Keep the dashboard simple and avoid clutter.
-    - Use clear labels for tiles and visuals. 
-    - Use more pages for navigation or subject area when necessary.
-- **Relevance**: Ensure that the data displayed is relevant to the dashboard's purpose and the audience's needs.
-- **Refresh Rate**: Set an appropriate refresh rate to ensure data is up to date without overloading the system.
-    - Consult with your users to ensure refresh rates are within expectations.
-- **Accessibility**: Design dashboards that are accessible to all users, including those with viewer permissions.
-- **Interactivity**: Include features that allow users to interact with the data, such as filters and drill-down capabilities.
-    - Elicit feedback regularly to ensure that the reports continue to provide value.
-    - As users become more familiar with the products, the introduction of new features can enhance their productivity.
-    - Use Copilot when possible to increase productivity.
-- **Performance**: Optimize queries and visuals for performance to ensure a smooth user experience.
-    - Include parameters, which apply filters at the query and are executed during the rendering of the Real-Time Dashboard.
-    - Don't query more than you use in the visualization to meet the customer requirements.
-- **Security**: Implement appropriate security measures. 
-    - Protect sensitive data.
-    - Remember, Fabric is a Software as a Service (SaaS) solution, and it's critical that you properly manage who has access to the system (*authentication*), and what they have access too (*authorization*).
-- **Testing**: Regularly test the dashboard for functionality and performance issues.
-    - Testing should include user-acceptance testing and feedback loops.
+Base queries help you avoid duplicating the same logic across multiple tiles. Instead of writing similar queries for each tile, you create one base query and reference it from multiple tiles.
 
+For example, in a bike rental dashboard, you could create a base query through the dashboard's **Base queries** menu. When creating the base query, you would:
+
+1. Assign it the variable name `_base_bike_data`
+2. Define a query that returns all data fields in each neighborhood within the last 30 minutes:
+
+```kql
+bikes
+| where ingestion_time() between (ago(30min) .. now())
+| summarize latest_observation = arg_max(ingestion_time(), *) by Neighbourhood
+```
+
+:::image type="content" source="../media/base-query.png" alt-text="Screenshot showing a base query configuration." lightbox="../media/base-query.png":::
+
+Then, you can create individual tile queries that reference this base query by using its variable name:
+
+```kql
+_base_bike_data
+| project Neighbourhood, latest_observation, No_Bikes, No_Empty_Docks
+| order by Neighbourhood asc
+```

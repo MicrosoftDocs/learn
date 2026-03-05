@@ -1,0 +1,46 @@
+### YamlMime:Module
+uid: learn.wwl.scale-containers-azure-container-apps
+metadata:
+  title: Scale Containers in Azure Container Apps
+  description: Learn how to configure automatic horizontal scaling for containerized applications in Azure Container Apps using HTTP rules, KEDA scalers, and traffic management.
+  ms.date: 01/26/2026
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: module-standard-task-based
+  ai-usage: ai-assisted
+  ms.service: azure-container-apps
+title: Scale containers in Azure Container Apps
+summary: Learn how to configure automatic horizontal scaling for containerized applications in Azure Container Apps. Configure HTTP, TCP, CPU, and memory scale rules, implement event-driven scaling with KEDA, optimize compute resources, and apply revision modes for traffic management.
+abstract: |
+  After completing this module, you'll be able to:
+    - Configure HTTP, TCP, CPU, and memory scale rules for container apps
+    - Implement event-driven scaling using KEDA scalers for Azure services
+    - Select appropriate compute resources to optimize performance and cost
+    - Apply revision modes to control scaling behavior and traffic distribution
+prerequisites: |
+  Before beginning this module, you should have:
+  - Programming experience with languages such as Python, JavaScript, or C#.
+  - Basic understanding of Azure services and cloud computing concepts.
+  - Familiarity with containerization concepts and Docker.
+  - Experience deploying applications to Azure Container Apps or similar container platforms.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- azure-container-apps
+subjects:
+- containers
+units:
+- learn.wwl.scale-containers-azure-container-apps.introduction
+- learn.wwl.scale-containers-azure-container-apps.configure-scale-rules
+- learn.wwl.scale-containers-azure-container-apps.event-driven-scaling-keda
+- learn.wwl.scale-containers-azure-container-apps.keda-scalers-custom-workloads
+- learn.wwl.scale-containers-azure-container-apps.compute-resources-performance-cost
+- learn.wwl.scale-containers-azure-container-apps.revision-modes-traffic-management
+- learn.wwl.scale-containers-azure-container-apps.exercise-configure-autoscaling-keda
+- learn.wwl.scale-containers-azure-container-apps.module-assessment
+- learn.wwl.scale-containers-azure-container-apps.summary
+badge:
+  uid: learn.wwl.scale-containers-azure-container-apps.badge

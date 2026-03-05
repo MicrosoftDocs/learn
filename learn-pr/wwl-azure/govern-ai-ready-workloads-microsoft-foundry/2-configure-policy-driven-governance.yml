@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.govern-ai-ready-workloads-microsoft-foundry.configure-policy-driven-governance
+title: "Configure policy-driven governance with Microsoft Foundry"
+metadata:
+  title: "Configure Policy-driven Governance with Microsoft Foundry"
+  description: "Learn about configure policy-driven governance with Microsoft Foundry."
+  ms.date: 02/02/2026
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: unit
+durationInMinutes: 12
+content: |
+  [!include[](includes/2-configure-policy-driven-governance.md)]

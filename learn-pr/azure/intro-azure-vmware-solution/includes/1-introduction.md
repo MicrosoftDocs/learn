@@ -1,4 +1,4 @@
-Azure VMware Solution is an Azure service that delivers a vSphere-based, single-tenant, private cloud. It's deployed on dedicated bare-metal infrastructure in Azure.
+Azure VMware Solution is an Azure service that delivers a vSphere-based, single-tenant, private cloud. It's deployed on dedicated hardware in Azure.
 
 You can now seamlessly run, manage, and secure applications across VMware environments and Microsoft Azure with a common operating framework.
 

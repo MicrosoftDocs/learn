@@ -2,8 +2,6 @@
 uid: learn.wwl.integrate-data-azure-data-factory.explain-process
 title: Explain the data factory process
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Explain the data factory process
   description: "Explain the data factory process"
   ms.date: 06/05/2023
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 4
 content: |
-  [!include[](includes/4-explain-process.md)]
+  [!include[](includes/4-explain-process.md)]

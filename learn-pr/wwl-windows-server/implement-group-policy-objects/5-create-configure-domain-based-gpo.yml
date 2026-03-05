@@ -2,8 +2,6 @@
 uid: learn.wwl.implement-group-policy-objects.create-configure-domain-based-gpo
 title: Create and configure a domain-based GPO
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Create and configure a domain-based GPO
   description: "Create and configure a domain-based GPO"
   ms.date: 04/17/2024
@@ -28,4 +26,4 @@ quiz:
       explanation: "That's incorrect. Although that would block the application of the Folder Redirection GPO, it would also block all other GPOs from Marketing and the parent domain."
     - content: "Create a global security group called Marketing Managers and add the marketing manager user accounts to the group. Then configure GPO security filtering to Deny the Apply Policy permission to this group."
       isCorrect: true
-      explanation: "That's correct. You can use security filtering to allow or deny the application of a GPO to specific users or groups."
+      explanation: "That's correct. You can use security filtering to allow or deny the application of a GPO to specific users or groups."

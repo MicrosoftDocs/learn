@@ -17,7 +17,7 @@ An organization might need to use an emergency access account in the following s
 
 Create two or more emergency access accounts. These accounts should be cloud-only accounts that use the .onmicrosoft.com domain and that aren't federated or synchronized from an on-premises environment.
 
-When and admin configures emergency accounts, the following requirements must be met:
+When an admin configures emergency accounts, the following requirements must be met:
 
  -  The emergency access accounts shouldn't be associated with any individual user in the organization. Make sure that your accounts aren't connected with any employee-supplied mobile phones, hardware tokens that travel with individual employees, or other employee-specific credentials. This precaution covers instances where an individual employee is unreachable when the credential is needed. Any registered devices need to be kept in known, secure location. These locations need multiple means of communicating with Microsoft Entra ID.
  -  The authentication mechanism used for an emergency access account should be distinct. Keep it separate from that used by your other administrative accounts, including other emergency-access accounts. For example, if your normal administrator sign-in is via on-premises MFA, then multifactor authentication would be a different mechanism. However, if multifactor authentication is your primary part of authentication for your administrative accounts, then consider a different approach for emergency-accounts. Try things such as using Conditional Access with a third-party MFA provider via Custom controls.

@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-started-generative-ai-azure-database-postgresql.explore-semantic-operators
+title: Explore semantic operators
+metadata:
+  title: Explore semantic operators
+  description: Explore semantic operators
+  author: wwlpublish
+  ms.author: calopez
+  ms.date: 10/05/2025
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 4
+content: |
+  [!include[](includes/6-explore-semantic-operators.md)]
+

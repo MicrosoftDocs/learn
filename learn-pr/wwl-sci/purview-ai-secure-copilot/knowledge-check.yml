@@ -1,0 +1,75 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-ai-secure-copilot.knowledge-check
+title: Module assessment
+metadata:
+  title: Module assessment
+  description: "Check your knowledge."
+  ms.date: 08/25/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "You're configuring Microsoft Purview to prevent users from inputting sensitive financial data into Copilot. What should you do?"
+    choices:
+    - content: "Apply a retention policy to preserve Copilot prompts."
+      isCorrect: false
+      explanation: "Incorrect: Retention policies manage content lifecycle but don't prevent data entry."
+    - content: "Use a sensitivity label that restricts external sharing."
+      isCorrect: false
+      explanation: "Incorrect: Labels help protect data but don't directly block input into Copilot."
+    - content: "Create a DLP policy that includes Microsoft 365 Copilot as a location."
+      isCorrect: true
+      explanation: "Correct: DLP policies let you detect and block sensitive inputs to Copilot."
+  
+  - content: "A compliance officer needs to review risky prompts submitted to Copilot that might include offensive language. Which Purview solution should they use?"
+    choices:
+    - content: "Communication Compliance"
+      isCorrect: true
+      explanation: "Correct: Communication Compliance detects and reviews inappropriate or risky messages, including Copilot prompts."
+    - content: "Audit"
+      isCorrect: false
+      explanation: "Incorrect: Audit logs record events but don't flag risky language or allow policy-based reviews."
+    - content: "eDiscovery"
+      isCorrect: false
+      explanation: "Incorrect: eDiscovery supports investigations, not real-time detection or review of message content."
+
+  - content: "You need to ensure Copilot prompt and response data is preserved for regulatory review. What should you configure?"
+    choices:
+    - content: "Create a retention policy and include Microsoft Copilot Experiences."
+      isCorrect: true
+      explanation: "Correct: This ensures prompts and responses are retained across supported apps."
+    - content: "Enable communication compliance with auto-tagging."
+      isCorrect: false
+      explanation: "Incorrect: Communication compliance is for reviewing risky content, not for retention."
+    - content: "Run an audit log search on Copilot interactions."
+      isCorrect: false
+      explanation: "Incorrect: Audit logs allow review but don't preserve content long-term."
+
+  - content: "A user submitted a prompt to Copilot that might have exposed confidential data. What's your best option for investigating this activity?"
+    choices:
+    - content: "Use Microsoft Purview eDiscovery to search and review the prompt."
+      isCorrect: true
+      explanation: "Correct: eDiscovery lets you search and review specific Copilot interactions for investigations."
+    - content: "Modify the DLP policy to prevent future prompts."
+      isCorrect: false
+      explanation: "Incorrect: Updating DLP policies is preventive but doesn't help with retrospective investigation."
+    - content: "Remove the user's license for Microsoft 365 Copilot."
+      isCorrect: false
+      explanation: "Incorrect: Removing access doesn't provide visibility into the prompt content."
+
+  - content: "Your organization is preparing for an audit of AI-related activity. Which tool should you use to assess policy coverage and identify configuration gaps?"
+    choices:
+    - content: "Compliance Manager with an AI regulation assessment template"
+      isCorrect: true
+      explanation: "Correct: Compliance Manager tracks control implementation and alignment with frameworks like NIST AI RMF."
+    - content: "Audit with a filtered search on Copilot activity"
+      isCorrect: false
+      explanation: "Incorrect: Audit shows activity but doesn't assess coverage or track control implementation."
+    - content: "Communication Compliance with Copilot prompts enabled"
+      isCorrect: false
+      explanation: "Incorrect: Communication Compliance helps review messages, not assess overall compliance posture."

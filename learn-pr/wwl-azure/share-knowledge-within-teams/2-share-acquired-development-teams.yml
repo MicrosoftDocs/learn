@@ -2,14 +2,12 @@
 uid: learn.wwl.share-knowledge-within-teams.share-acquired-development-teams
 title: Share acquired knowledge within development teams
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Share acquired knowledge within development teams
-  description: "Share acquired knowledge within development teams"
-  ms.date: 05/24/2024
-  author: wwlpublish
+  title: Share Acquired Knowledge Within Development Teams
+  description: "Learn strategies for capturing and sharing organizational knowledge within development teams. Understand the cost of relearning lessons, importance of documenting coding standards and best practices, and tools for knowledge preservation to reduce staff turnover impact and improve team efficiency."
+  ms.date: 10/21/2025
+  author: LuizMacedo
   ms.author: lumac
   ms.topic: unit
-durationInMinutes: 1
+durationInMinutes: 3
 content: |
   [!include[](includes/2-share-acquired-development-teams.md)]

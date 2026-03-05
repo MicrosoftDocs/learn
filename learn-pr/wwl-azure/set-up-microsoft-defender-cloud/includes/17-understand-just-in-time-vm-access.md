@@ -1,10 +1,11 @@
-## The risk of open management ports on a virtual machine
-
 Threat actors actively hunt accessible machines with open management ports, like **remote desktop protocol (RDP)** or **secure shell protocol (SSH)**. All of your virtual machines are potential targets for an attack. When a VM is successfully compromised, it's used as the entry point to attack further resources within your environment.
 
 ## Why JIT VM access is the solution
 
 As with all cybersecurity prevention techniques, your goal should be to reduce the attack surface. In this case that means having fewer open ports especially management ports. Your legitimate users also use these ports, so it's not practical to keep them closed. To solve this dilemma, Microsoft Defender for Cloud offers JIT. With JIT, you can lock down the inbound traffic to your VMs, reducing exposure to attacks while providing easy access to connect to VMs when needed.
+
+> [!NOTE]
+> Just-in-time VM access requires Microsoft Defender for Servers Plan 2.
 
 ## How JIT operates with network resources in Azure and AWS
 
@@ -14,20 +15,20 @@ If other rules already exist for the selected ports, then those existing rules t
 
 In AWS, by enabling JIT-access the relevant rules in the attached **Amazon Elastic Compute Cloud (Amazon EC2)** security groups, for the selected ports, are revoked which blocks inbound traffic on those specific ports.
 
-When a user requests access to a VM, Defender for Cloud checks that the user has **Azure role-based access control (Azure RBAC)** permissions for that VM. If the request is approved, Defender for Cloud configures the NSGs and Azure Firewall to allow inbound traffic to the selected ports from the r**elevant IP address** (**or range**), for the amount of time that was specified. In AWS, Defender for Cloud creates a new EC2 security group that allows inbound traffic to the specified ports. After the time has expired, Defender for Cloud restores the NSGs to their previous states. Connections that are already established are not interrupted.
+When a user requests access to a VM, Defender for Cloud checks that the user has **Azure role-based access control (Azure RBAC)** permissions for that VM. If the request is approved, Defender for Cloud configures the NSGs and Azure Firewall to allow inbound traffic to the selected ports from the r**elevant IP address** (**or range**), for the amount of time that was specified. In AWS, Defender for Cloud creates a new EC2 security group that allows inbound traffic to the specified ports. After the time has expired, Defender for Cloud restores the NSGs to their previous states. Connections that are already established aren't interrupted.
 
 ## **Just-in-time VM enabled on an Azure Virtual Machine.**
 
 **Example:** Azure virtual machine
 
-The diagram shows the logic that Defender for Cloud applies when deciding how to categorize your supported VMs (i.e., Azure Virtual Machine)
+The diagram shows the logic that Defender for Cloud applies when deciding how to categorize your supported VMs (that is, Azure Virtual Machine)
 
 :::image type="content" source="../media/just-in-time-vm-enabled-on-an-azure-virtual-machine-f4788d97.png" alt-text="Diagram showing just in time VM enabled on an Azure virtual machine.":::
 
 
 ## **Just-in-time VM enabled on an AWS EC2 Instance.**
 
-The diagram shows the logic that Defender for Cloud applies when deciding how to categorize your supported VMs (i.e., AWS EC2 instance)
+The diagram shows the logic that Defender for Cloud applies when deciding how to categorize your supported VMs (that is, AWS EC2 instance)
 
 **Example:** AWS EC2 Instance
 

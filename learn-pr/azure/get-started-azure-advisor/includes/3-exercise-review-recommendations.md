@@ -1,7 +1,7 @@
 Now, let's walk through a real-world example to see how Advisor can work in your environment. In this unit, there are guided step-by-step instructions to review and apply some Advisor recommendations to help optimize your Azure workloads.
 
 > [!NOTE]
-> You'll need at least read access to one active Azure subscription with provisioned resources.
+> To follow this exercise, you need at least read access to one active Azure subscription with provisioned resources.
 
 1. First, sign in to the [Azure portal](https://portal.azure.com/?azure-portal=true).
 1. Go to your Advisor dashboard by typing "advisor" in the search bar and then selecting **Advisor** from the list of services.
@@ -35,7 +35,7 @@ Now, let's walk through a real-world example to see how Advisor can work in your
    :::image alt-text="Screenshot showing recommended actions you can take." lightbox="../media/azure-advisor-recommendation-rightsize-shutdown-vm-recommended-actions.png" source="../media/azure-advisor-recommendation-rightsize-shutdown-vm-recommended-actions-preview.png" type="content":::
 
    > [!NOTE]
-   > If you're not ready to take action during this exercise, simply close the Azure portal, and no changes will be made to your subscriptions or resources. The only way to undo a recommendation is to take the opposite action.
+   > If you're not ready to take action during this exercise, just close the Azure portal, and no changes are made to your subscriptions or resources. The only way to undo a recommendation is to take the opposite action.
 
 1. Select one of the **Recommended actions** from the list. On the next page, Advisor helps guide you through specific actions that you can take right now to apply the recommendation and resolve the issue.
 

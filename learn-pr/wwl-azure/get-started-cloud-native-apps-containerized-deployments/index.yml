@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.get-started-cloud-native-apps-containerized-deployments
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Get started with cloud native apps and containerized deployments
   description: Learn about cloud-native application concepts, containerized deployment benefits and challenges, deployment options, and Azure-specific best practices for managing and scaling containerized applications.
   ms.date: 02/26/2024
@@ -43,4 +41,4 @@ units:
 - learn.wwl.get-started-cloud-native-apps-containerized-deployments.summary
 badge:
   uid: learn.wwl.get-started-cloud-native-apps-containerized-deployments.badge
-
+

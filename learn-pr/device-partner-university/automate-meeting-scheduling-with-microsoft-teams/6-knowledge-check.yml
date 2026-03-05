@@ -1,0 +1,70 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.automate-meeting-scheduling.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge Check
+  description: This content is part of the "Automate meeting scheduling with Microsoft Teams" module.
+  ms.date: 09/18/2025
+  author: melissawinters
+  ms.author: v-mwinters
+  ms.topic: unit
+durationInMinutes: 5
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "What is a benefit of using Microsoft Teams’ calendar integration?"
+    choices:
+        - content: "It allows meetings to be recorded automatically."
+          isCorrect: false
+          explanation: "Incorrect. Recording is a separate feature not tied to calendar integration."
+        - content: "It syncs meetings between Teams and Outlook."
+          isCorrect: true
+          explanation: "Correct. Calendar integration ensures consistency across both platforms."
+        - content: "It blocks scheduling conflicts automatically."
+          isCorrect: false
+          explanation: "Incorrect. Users must manually check availability."
+        - content: "It sends reminders via SMS."
+          isCorrect: false
+          explanation: "Incorrect. Teams uses app and email notifications, not SMS."
+  - content: "What role in Microsoft Teams can share content and manage participants?"
+    choices:
+        - content: "Organizer"
+          isCorrect: false
+          explanation: "Incorrect. Organizers schedule meetings but don’t necessarily manage content during them."
+        - content: "Presenter"
+          isCorrect: true
+          explanation: "Correct. Presenters can share content and manage participants."
+        - content: "Attendee"
+          isCorrect: false
+          explanation: "Incorrect. Attendees have limited permissions."
+        - content: "Scheduler"
+          isCorrect: false
+          explanation: "Incorrect. This isn't a defined role in Teams meetings."
+  - content: "What setting controls who can join a Teams meeting without waiting in the lobby?"
+    choices:
+        - content: "Who can bypass the lobby"
+          isCorrect: true
+          explanation: "Correct. This setting determines direct entry permissions."
+        - content: "Who can present"
+          isCorrect: false
+          explanation: "Incorrect. This controls presentation rights, not entry."
+        - content: "Attendee mic permissions"
+          isCorrect: false
+          explanation: "Incorrect. This controls audio, not access."
+        - content: "Meeting description"
+          isCorrect: false
+          explanation: "Incorrect. This provides context, not access control."
+  - content: "What is a best practice when setting up recurring meetings in Teams?"
+    choices:
+        - content: "Use the same title for all meetings."
+          isCorrect: false
+          explanation: "Incorrect. Descriptive titles are recommended."
+        - content: "Avoid setting an agenda."
+          isCorrect: false
+          explanation: "Incorrect. Including an agenda helps guide the meeting."
+        - content: "Confirm participant availability."
+          isCorrect: true
+          explanation: "Correct. This helps avoid scheduling conflicts."
+        - content: "Only invite required attendees."
+          isCorrect: false
+          explanation: "Incorrect. Optional attendees may also benefit from joining."

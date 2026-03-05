@@ -1,0 +1,32 @@
+### YamlMime:LearningPath
+uid: learn.wwl.deploy-monitor-apps-azure-kubernetes-service
+metadata:
+  title: Deploy and Monitor Applications on Azure Kubernetes Service
+  description: Learn how to deploy, configure, and troubleshoot apps on Azure Kubernetes Service.
+  ms.date: 1/2/2026
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: learning-path
+title: Deploy and monitor applications on Azure Kubernetes Service
+prerequisites: |
+  - Programming experience with languages such as Python, JavaScript, or C#.
+  - Basic understanding of Azure services and cloud computing concepts.
+  - Familiarity with containerization and Kubernetes fundamentals.
+  - Access to Azure Kubernetes Service and related tools for practical exercises.
+summary: |
+  This learning path guides you through the complete lifecycle of running applications on Azure Kubernetes Service. You start by creating deployment manifests and exposing applications with Kubernetes Services. You then externalize configuration using ConfigMaps, secure sensitive settings with Secrets, and attach persistent storage for stateful workloads. Finally, you learn to monitor application health using logs and metrics, troubleshoot pod and Service issues, and verify connectivity paths to ensure reliable access to your applications.
+iconUrl: /training/achievements/generic-trophy.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- azure-kubernetes-service
+subjects:
+- containers
+modules:
+- learn.wwl.deploy-apps-azure-kubernetes-service
+- learn.wwl.configure-apps-azure-kubernetes-service
+- learn.wwl.monitor-apps-azure-kubernetes-service
+trophy:
+  uid: learn.wwl.deploy-monitor-apps-azure-kubernetes-service.trophy

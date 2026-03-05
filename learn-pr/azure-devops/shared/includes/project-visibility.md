@@ -7,5 +7,5 @@ At the moment, it is not necessary to modify any of these settings for the purpo
 Later on, you may find the following resources helpful in determining which option is best for your project:
 
 * [Use private and public projects](/azure/devops/organizations/projects/about-projects#use-private-and-public-projects)
-* [Quickstart: Make your private project public](/azure/devops/organizations/public/make-project-public)
+* [Change project visibility to public or private](/azure/devops/organizations/public/make-project-public)
 * [Setting repository visibility](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/managing-repository-settings/setting-repository-visibility#changing-a-repositorys-visibility)

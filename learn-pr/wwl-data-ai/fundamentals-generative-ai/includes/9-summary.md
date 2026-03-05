@@ -1,11 +1,21 @@
-Generative AI is a rapidly developing field of AI that supports new language generation, code development, image creation, and more. This module explored how language models power generative AI and how copilot brings generative AI capabilities to your desktop. You learned the basics of Large Language Models (LLMs) and Small Language Models (SLMs), and the underlying transformer architecture of advanced language models.
+::: zone pivot="video"
 
-The main takeaways from this module include understanding the role of generative AI in creating AI assistants or agents that provide contextualized support for common tasks. Often, generative AI is integrated into chat applications like Microsoft Copilot to interpret natural language inputs and generate suitable responses. You learned about the three levels of agent adoption and the various applications of Microsoft Copilot across different Microsoft applications. The module also highlighted the importance of improving the quality of responses from generative AI. Finally, you have been introduced to two tools offered by Microsoft for developing copilot-like agents: Copilot Studio and Azure AI Foundry.
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=d4576e9f-45bb-4e50-8e89-06d8f76cfd04]
 
-More reading:
-- [Use Microsoft Copilot](https://copilot.microsoft.com/)
-- [Learn about Microsoft 365 Copilot](https://adoption.microsoft.com/copilot/)
-- [Learn more about Microsoft Copilot Studio](https://www.microsoft.com/microsoft-copilot/microsoft-copilot-studio/)
-- [Learn more about Microsoft AI Foundry](/azure/ai-studio/what-is-ai-studio)
+> [!NOTE]
+> See the **Text and images** tab for more details!
 
+::: zone-end
 
+::: zone pivot="text"
+
+Generative AI is a rapidly developing field of AI that supports new language generation, code development, image creation, and more. In this module, you've explored how generative AI uses large language models to make sense of language, and how you can interact with these models using prompts. You've also learned how AI agents, built on generative AI, can act as digital assistants that collaborate with you to find information and accomplish tasks.
+
+::: zone-end
+
+> [!TIP]
+> For more information about some of the concepts discussed in this module, take a look at the following links:
+> 
+> - [What are large language models (LLMs)?](https://azure.microsoft.com/resources/cloud-computing-dictionary/what-are-large-language-models-llms?azure-portal=true)
+> - [What is retrieval-augmented generation (RAG)?](https://azure.microsoft.com/resources/cloud-computing-dictionary/what-is-retrieval-augmented-generation-rag?azure-portal=true)
+> - [Agent Factory: The new era of agentic AI—common use cases and design patterns](https://azure.microsoft.com/blog/agent-factory-the-new-era-of-agentic-ai-common-use-cases-and-design-patterns?azure-portal=true)

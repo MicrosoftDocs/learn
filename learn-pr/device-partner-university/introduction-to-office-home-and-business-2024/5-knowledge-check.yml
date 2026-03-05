@@ -1,0 +1,84 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.introduction-to-office-home-and-business-2024.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge Check
+  description: This content is part of the "Introduction to Office Home & Business 2024" module.
+  ms.date: 09/22/2025
+  author: hhreyes21
+  ms.author: v-homerreyes
+  ms.topic: unit
+durationInMinutes: 5
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "What is a key difference between Office Home & Business 2024 and Microsoft 365?"
+    choices:
+        - content: "Office Home & Business includes Access and Publisher."
+          isCorrect: false
+          explanation: "Incorrect. These apps are only available in Microsoft 365 Business editions."
+        - content: "Office Home & Business is a one-time purchase."
+          isCorrect: true
+          explanation: "Correct. It uses a device-based, perpetual licensing model."
+        - content: "Office Home & Business supports real-time collaboration."
+          isCorrect: false
+          explanation: "Incorrect. It doesn't include cloud services for coauthoring."
+        - content: "Office Home & Business includes Teams and OneDrive."
+          isCorrect: false
+          explanation: "Incorrect. These cloud services aren't part of the suite."
+  - content: "Which application in Office Home & Business 2024 is used for data analysis?"
+    choices:
+        - content: "Word"
+          isCorrect: false
+          explanation: "Incorrect. Word is used for document creation and editing."
+        - content: "Excel"
+          isCorrect: true
+          explanation: "Correct. Excel is designed for data analysis and visualization."
+        - content: "PowerPoint"
+          isCorrect: false
+          explanation: "Incorrect. PowerPoint is used for creating presentations."
+        - content: "OneNote"
+          isCorrect: false
+          explanation: "Incorrect. OneNote is used for note-taking and organization."
+  - content: "What is required to activate Office Home & Business 2024?"
+    choices:
+        - content: "A subscription plan"
+          isCorrect: false
+          explanation: "Incorrect. Office Home & Business 2024 isn't subscription-based."
+        - content: "A cloud storage account"
+          isCorrect: false
+          explanation: "Incorrect. Cloud services aren't required for activation."
+        - content: "A Microsoft Account"
+          isCorrect: true
+          explanation: "Correct. Activation and license management require a Microsoft Account."
+        - content: "A company domain"
+          isCorrect: false
+          explanation: "Incorrect. Activation doesn't depend on domain setup."
+  - content: "Which feature improves accessibility in Office Home & Business 2024?"
+    choices:
+        - content: "Real-time coauthoring"
+          isCorrect: false
+          explanation: "Incorrect. This feature isn't available in Office Home & Business 2024."
+        - content: "Cloud file sync"
+          isCorrect: false
+          explanation: "Incorrect. The suite doesn't support cloud-based syncing."
+        - content: "Screen reader support"
+          isCorrect: true
+          explanation: "Correct. It enhances usability for users with low vision."
+        - content: "Business email hosting"
+          isCorrect: false
+          explanation: "Incorrect. This is part of Microsoft 365, not Office Home & Business."
+  - content: "Why might a rural law office choose Office Home & Business 2024?"
+    choices:
+        - content: "It supports advanced compliance tools."
+          isCorrect: false
+          explanation: "Incorrect. These are features of Microsoft 365 Business Premium."
+        - content: "It includes SharePoint and Teams."
+          isCorrect: false
+          explanation: "Incorrect. These are cloud services not included in Office Home & Business."
+        - content: "It offers offline reliability and one-time licensing."
+          isCorrect: true
+          explanation: "Correct. These features suit environments with limited internet and predictable budgets."
+        - content: "It allows installation on multiple devices per user."
+          isCorrect: false
+          explanation: "Incorrect. Licensing is tied to a single device, not multiple installations per user."

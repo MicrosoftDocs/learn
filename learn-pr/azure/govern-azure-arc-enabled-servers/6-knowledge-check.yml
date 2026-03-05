@@ -1,15 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.govern-azure-arc-enabled-servers.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: Knowledge check
   ms.date: 08/09/2024
   author: aurnovcy
   ms.author: aurnovc
   ms.topic: unit
+  module_assessment: true
 durationInMinutes: 7
 content: |
   [!include[](includes/6-knowledge-check.md)]
@@ -58,4 +57,4 @@ quiz:
     - content: Process Automation
       isCorrect: false
       explanation: Incorrect, Process Automation is part of Azure Automation.
-
+

@@ -1,0 +1,14 @@
+### YamlMime: ModuleUnit
+uid: learn.wwl.understand-azure-databricks-integrations.integration-databricks-microsoft-fabric
+title: Understand integration with Microsoft Fabric
+metadata:
+  title: Understand Integration with Microsoft Fabric
+  description: Learn how Azure Databricks integrates with Microsoft Fabric through Unity Catalog and OneLake, enabling bidirectional data access for analytics and reporting scenarios.
+  ms.date: 12/07/2025
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+  ai-usage: ai-generated
+durationInMinutes: 8
+content: |
+  [!include[](includes/2-integration-databricks-microsoft-fabric.md)]

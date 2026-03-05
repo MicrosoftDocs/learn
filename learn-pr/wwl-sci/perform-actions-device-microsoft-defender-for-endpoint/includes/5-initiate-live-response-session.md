@@ -1,4 +1,4 @@
-Live response provides security operations teams instantaneous access to a device using a remote shell connection. Live response provides you the power to do in-depth investigation and take immediate response actions to promptly contain identified threats.
+Live response provides security operations teams instantaneous access to a device using a remote shell connection. Live response provides you with the power to do in-depth investigation and take immediate response actions to promptly contain identified threats.
 
 Live response is designed to enhance investigations by enabling your security operations team to collect forensic data, run scripts, send suspicious entities for analysis, remediate threats, and proactively hunt for emerging threats.
 
@@ -22,21 +22,21 @@ Before you can start a session on a device, make sure you fulfill the following 
 
 **Verify that you're running a supported version of Windows 10 or later**
 
-Enable live response from the settings page.  You'll need to enable the live response capability in the Advanced features settings page.
+You need to enable the live response capability in the Advanced features settings page.
 
-Only users with manage security or global admin roles can edit these settings.
+Only users with **Manage Portal Settings** permissions can enable these settings.
 
 **Ensure that the device has an Automation Remediation level assigned to it**
 
-You'll need to enable, at least, the minimum Remediation Level for a given Device Group. Otherwise you can't establish a Live Response session to a member of that group.
+You need to enable, at least, the minimum Remediation Level for a given Device Group. Otherwise you can't establish a Live Response session to a member of that group.
 
 **Enable live response unsigned script execution (optional)**
 
-Allowing the use of unsigned scripts may increase your exposure to threats.  Running unsigned scripts isn't recommended as it can increase your exposure to threats. If you must use them however, you'll need to enable the setting in the Advanced features settings page.
+Allowing the use of unsigned scripts may increase your exposure to threats. Running unsigned scripts isn't recommended as it can increase your exposure to threats. If you must use them however, you need to enable the setting in the Advanced features settings page.
 
 **Ensure that you have the appropriate permissions**
 
-Only users who have been provisioned with the appropriate permissions can initiate a session.  The option to upload a file to the library is only available to users with the appropriate Role-based access control (RBAC) permissions. The button is greyed out for users with only delegated permissions.  Depending on the role that's been granted to you, you can run basic or advanced live response commands. Users' permissions are controlled by RBAC custom role.
+Only users who have been provisioned with the appropriate permissions can initiate a session. The option to upload a file to the library is only available to users with the appropriate Role-based access control (RBAC) permissions. The button is greyed out for users with only delegated permissions. Depending on the role that's been granted to you, you can run basic or advanced live response commands. Users' permissions are controlled by RBAC custom role.
 
 ## Live response dashboard overview
 
@@ -93,7 +93,7 @@ The following commands are available for user roles that are granted the ability
 | Command| Description|
 | :--- | :--- |
 | analyze| Analyses the entity with various incrimination engines to reach a verdict.|
-| getfile| Gets a file from the device.  This command has a prerequisite command. You can use the -auto command with getfile to automatically run the prerequisite command.|
+| getfile| Gets a file from the device. This command has a prerequisite command. You can use the -auto command with getfile to automatically run the prerequisite command.|
 | run| Runs a PowerShell script from the library on the device.|
 | library| Lists files that were uploaded to the live response library.|
 | putfile| Puts a file from the library to the device. Files are saved in a working folder and are deleted when the device restarts by default.|
@@ -135,7 +135,7 @@ Here are some examples:
 
 ### Put a file in the library
 
-Live response has a library where you can put files in. The library stores files (such as scripts) that can be run in a live response session at the tenant level.  Live response allows PowerShell scripts to run. However, you must first put the files into the library before you can run them.  You can have a collection of PowerShell scripts that can run on devices that you initiate live response sessions with.
+Live response has a library where you can put files in. The library stores files (such as scripts) that can be run in a live response session at the tenant level. Live response allows PowerShell scripts to run. However, you must first put the files into the library before you can run them. You can have a collection of PowerShell scripts that can run on devices that you initiate live response sessions with.
 
 To upload a file in the library:
 
@@ -159,7 +159,7 @@ Anytime during a session, you can cancel a command by pressing CTRL + C.
 
 ### Automatically run prerequisite commands
 
-Some commands have prerequisite commands to run. If you don't run the prerequisite command, you'll get an error. For example, running the download command without *fileinfo* will return an error. You can use the auto flag to automatically run prerequisite commands, for example:
+Some commands have prerequisite commands to run. If you don't run the prerequisite command, you get an error. For example, running the download command without *fileinfo* will return an error. You can use the auto flag to automatically run prerequisite commands, for example:
 
 ```console
 getfile c:\Users\user\Desktop\work.txt -auto
@@ -168,7 +168,7 @@ getfile c:\Users\user\Desktop\work.txt -auto
 
 ### Run a PowerShell script
 
-Before you can run a PowerShell script, you must first upload it to the library. After uploading the script to the library, use the **run** command to run the script.  If you plan to use an unsigned script in the session, you'll need to enable the setting in the Advanced features settings page.
+Before you can run a PowerShell script, you must first upload it to the library. After uploading the script to the library, use the **run** command to run the script. If you plan to use an unsigned script in the session, you need to enable the setting in the Advanced features settings page.
 
 ### Apply command parameters
 

@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.azure.azure-netapp-files-security
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Azure security for Azure NetApp Files
   description: Learn about data encryption options available in Azure NetApp Files to improve the security of your data. 
   ms.date: 11/18/2024
@@ -39,4 +37,4 @@ units:
 - learn.azure.azure-netapp-files-security.knowledge-check
 - learn.azure.azure-netapp-files-security.summary
 badge:
-  uid: learn.azure-netapp-files-security.badge
+  uid: learn.azure-netapp-files-security.badge

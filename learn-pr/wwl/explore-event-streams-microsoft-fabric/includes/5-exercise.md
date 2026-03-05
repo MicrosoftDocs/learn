@@ -3,7 +3,7 @@ In this exercise, you'll explore how to use an eventstream to capture a source o
 This lab takes approximately **30** minutes to complete.
 
 > [!IMPORTANT]
-> You'll need a **Microsoft Fabric license** to complete this exercise. See [Getting started with Fabric](/fabric/get-started/fabric-trial) for details of how to enable a free Fabric trial license.
+> You'll need a **Microsoft Fabric license** to complete this exercise. See [Getting started with Fabric](/fabric/get-started/fabric-trial?azure-portal=true) for details of how to enable a free Fabric trial license.
 
 Launch the exercise and follow the instructions.
 

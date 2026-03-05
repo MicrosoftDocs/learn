@@ -1,11 +1,14 @@
 ### YamlMime:Module
 uid: learn.wwl.design-data-integration
 metadata:
-  title: Design data integration
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Design Data Integration
   description: "Azure Architects design and recommend data integration solutions."
-  ms.date: 12/11/2024
+  ms.date: 01/26/2026
+  ms.update-cycle: 180-days
   author: wwlpublish
-  ms.author: jileary
+  ms.author: cynthist
   ms.topic: module
   ms.collection: wwl-ai-copilot
   ms.custom:

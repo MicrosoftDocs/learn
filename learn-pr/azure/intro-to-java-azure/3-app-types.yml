@@ -1,14 +1,11 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.intro-to-java-azure.3-app-types
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Types of Java applications
   description: We categorize the different types of Java applications
   ms.date: 11/22/2024
-  author: KarlErickson
-  ms.author: karler
-  ms.reviewer: hangwan
+  author: hangwan97
+  ms.author: hangwan
   ms.topic: unit
   ms.custom:
     - team=cloud_advocates

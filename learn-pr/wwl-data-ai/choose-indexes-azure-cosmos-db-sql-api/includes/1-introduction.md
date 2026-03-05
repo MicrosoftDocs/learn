@@ -4,3 +4,4 @@ After completing this module, you'll be able to:
 
 - Customize an indexing policy for read-heavy workloads
 - Customize an indexing policy for write-heavy workloads
+

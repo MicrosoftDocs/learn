@@ -2,8 +2,6 @@
 uid: learn.wwl.install-configure-apps-session-host.create-configure-application-group
 title: Create and configure an application group
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Create and configure an application group
   description: "Create and configure an application group"
   ms.date: 08/13/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 7
 content: |
-  [!include[](includes/2-create-configure-application-group.md)]
+  [!include[](includes/2-create-configure-application-group.md)]

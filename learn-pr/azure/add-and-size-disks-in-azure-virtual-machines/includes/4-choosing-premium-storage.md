@@ -10,7 +10,8 @@ There are five types of disks you can choose when creating a managed disk: Ultra
 
 ### Ultra Disk
 
-Azure Ultra Disks deliver high throughput, high input/output per second (IOPS), and consistent low-latency disk storage for Azure IaaS VMs. Ultra Disks include the ability to dynamically change the performance of the disk without the need to restart your VMs. Ultra disks are suited for data-intensive workloads such as SAP HANA, top tier databases, and transaction-heavy workloads. You can only use Ultra disks as data disks. We recommend using Premium SSDs as OS disks.
+Azure Ultra Disks deliver high throughput, high input/output per second (IOPS), and consistent low-latency disk storage for Azure IaaS VMs. Ultra Disks include the ability to dynamically change the performance of the disk without the need to restart your VMs. Ultra Disks are suited for data-intensive workloads such as SAP HANA, top tier databases, and transaction-heavy workloads. You can only use Ultra Disks as data disks. We recommend using Premium SSDs as OS disks.
+
 
 ### Premium SSD v2
 
@@ -44,8 +45,8 @@ The following table provides a comparison of Ultra disk, Premium SSD, Standard S
 | **Disk type** | SSD | SSD |SSD | SSD | HDD |
 | **Scenario**  | IO-intensive workloads such as [SAP HANA](/azure/sap/workloads/hana-vm-operations-storage), top tier databases (for example, SQL, Oracle), and other transaction-heavy workloads. | Production and performance-sensitive workloads that consistently require low latency and high IOPS and throughput. | Production and performance sensitive workloads. | Web servers, lightly used enterprise applications and dev/test. | Backup data, noncritical, infrequent access. |
 | **Max disk size** | 65,536 GiB | 65,536 GiB |32,767 GiB | 32,767 GiB | 32,767 GiB |
-| **Max throughput** | 4,000 MB/s | 1,200 MB/s | 900 MB/s | 750 MB/s | 500 MB/s |
-| **Max IOPS** | 160,000 | 80,000 | 20,000 | 6,000 | 2,000, 3,000* |
+| **Max throughput** | 10,000 MB/s | 1,200 MB/s | 900 MB/s | 750 MB/s | 500 MB/s |
+| **Max IOPS** | 400,000 | 80,000 | 20,000 | 6,000 | 2,000, 3,000* |
 | **Usable as OS Disk?** | No | No | Yes | Yes | Yes |
 
 The following sections provide more detail on disk performance.

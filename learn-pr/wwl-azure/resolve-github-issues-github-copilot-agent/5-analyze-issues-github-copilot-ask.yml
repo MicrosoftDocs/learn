@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.resolve-github-issues-github-copilot-agent.analyze-issues-github-copilot-ask
+title: Analyze issues using GitHub Copilot's Ask mode
+metadata:
+  title: Analyze Issues using GitHub Copilot's Ask Mode
+  description: "Analyze issues using GitHub Copilot's Ask mode"
+  ms.date: 11/11/2025
+  author: chrishowd
+  ms.author: cahowd
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/5-analyze-issues-github-copilot-ask.md)]

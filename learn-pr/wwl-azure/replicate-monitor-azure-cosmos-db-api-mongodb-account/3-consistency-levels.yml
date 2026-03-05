@@ -2,8 +2,6 @@
 uid: learn.wwl.replicate-monitor-azure-cosmos-db-api-mongodb-account.consistency-levels
 title: Consistency levels
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Consistency levels
   description: "Consistency levels"
   ms.date: 12/12/2022
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 9
 content: |
-  [!include[](includes/3-consistency-levels.md)]
+  [!include[](includes/3-consistency-levels.md)]

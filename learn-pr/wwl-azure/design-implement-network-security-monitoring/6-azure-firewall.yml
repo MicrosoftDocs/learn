@@ -2,21 +2,23 @@
 uid: learn.wwl.design-implement-network-security-monitoring.azure-firewall
 title: Design and implement Azure Firewall
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Design and implement Azure Firewall
   description: "Design and implement Azure Firewall"
-  ms.date: 11/29/2024
+  ms.date: 05/19/2025
   author: wwlpublish
-  ms.author: jileary
+  ms.author: cynthist
   ms.topic: unit
   ms.custom:
   - N/A
-durationInMinutes: 12
+durationInMinutes: 7
 content: |
   [!include[](includes/6-azure-firewall.md)]
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Filtering of which direction of traffic does Azure Firewall support?"
+  - content: "Azure Firewall supports filtering network traffic in which direction?"
     choices:
     - content: "Outbound only."
       isCorrect: false
@@ -27,14 +29,3 @@ quiz:
     - content: "Inbound and Outbound."
       isCorrect: true
       explanation: "Correct. Azure Firewall supports inbound and outbound filtering."
-  - content: "Which priority level is the highest for a security rule?"
-    choices:
-    - content: "0"
-      isCorrect: false
-      explanation: "Incorrect. Priority settings must use a number between 100 and 65000."
-    - content: "100"
-      isCorrect: true
-      explanation: "Correct. Priority settings can be any number between 100 and 65000. With 100 being the highest priority."
-    - content: "110"
-      isCorrect: false
-      explanation: "Incorrect. 110 is a lower priority than 100. The smaller the number, the higher the priority."

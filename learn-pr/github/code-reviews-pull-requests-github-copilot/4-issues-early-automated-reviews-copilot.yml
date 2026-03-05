@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.github.code-reviews-pull-requests-github-copilot.issues-early-automated-reviews-copilot
+title: Catching issues early and automating reviews with Copilot
+metadata:
+  title: Catching Issues Early and Automating Reviews With Copilot
+  description: This content is a part of the Leveling up code reviews and pull requests with GitHub Copilot.
+  author: camihmerhar
+  ms.author: camhernandez
+  ms.date: 09/16/2025
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-issues-early-automated-reviews-copilot.md)]

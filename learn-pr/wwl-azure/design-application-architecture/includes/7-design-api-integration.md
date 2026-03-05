@@ -42,3 +42,6 @@ Review the following criteria, and think about what APIs and API management are 
 - **Consider centralized API management**. Bring multiple APIs under a single administrative umbrella with Azure API Management and centralize all API operations. Without an API management service, each API is on its own in terms of administration, deployment, and developer access. A centralized model results in less duplicated effort and increases efficiency.
 
 - **Consider enhanced API security**. Azure API Management was designed with API security in mind. Use the service to manage permissions and access, and protect your APIs from malicious usage.  Azure API Management helps to achieve all corporate and government-related compliance.
+
+> [!TIP]
+> There's a lot more to learn in the [Explore API Management](/training/modules/explore-api-management/) module. 

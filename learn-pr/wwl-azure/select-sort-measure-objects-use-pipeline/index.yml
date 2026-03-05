@@ -1,13 +1,11 @@
 ### YamlMime:Module
 uid: learn.wwl.select-sort-measure-objects-use-pipeline
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Select, sort, and measure objects using the pipeline
   description: This module explains how to manipulate objects in the pipeline by using commands that sort, select, and measure objects.
-  ms.date: 05/30/2024
+  ms.date: 01/23/2026
   author: wwlpublish
-  ms.author: tonyj
+  ms.author: robbarefoot
   ms.topic: module
   ms.custom:
   - N/A

@@ -2,8 +2,6 @@
 uid: learn.azure.azure-container-instances-sidecar.understand-yaml
 title: Use YAML container instance definitions
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Use YAML container instance definitions
   description: Understand Azure Container Instances YAML definitions
   ms.date: 07/24/2024
@@ -14,4 +12,4 @@ metadata:
 durationInMinutes: 10
 content: |
   [!include[](includes/3-understand-yaml-definitions.md)]
-
+

@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.bicep-conditions-loops.introduction
+title: Introduction
+metadata:
+  unitType: introduction
+  title: Introduction
+  description: Learn how to build flexible Bicep files by using conditions and loops. 
+  ms.date: 04/18/2025
+  author: mumian
+  ms.author: jgao
+  ms.topic: unit
+  ms.custom:
+    - devx-track-bicep
+durationInMinutes: 1
+content: |
+  [!include[](includes/1-introduction.md)]
+

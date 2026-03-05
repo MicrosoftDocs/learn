@@ -6,12 +6,12 @@ metadata:
   prefetch-feature-rollout: true
   title: Index usage
   description: "Index usage"
-  ms.date: 10/18/2022
+  ms.date: 05/07/2025
   author: wwlpublish
   ms.author: calopez
   ms.topic: unit
-azureSandbox: false
-labModal: false
+  ms.custom:
+  - N/A
 durationInMinutes: 10
 content: |
   [!include[](includes/2-index-usage.md)]

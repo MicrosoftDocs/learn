@@ -2,8 +2,6 @@
 uid: learn.wwl.explore-basic-services-identity-types-of-azure-active-directory-azure-ad.describe-identity-types
 title: Describe types of identities
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Describe types of identities
   description: "Describe types of identities"
   ms.date: 08/01/2024
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 12
 content: |
-  [!include[](includes/3-describe-identity-types.md)]
+  [!include[](includes/3-describe-identity-types.md)]

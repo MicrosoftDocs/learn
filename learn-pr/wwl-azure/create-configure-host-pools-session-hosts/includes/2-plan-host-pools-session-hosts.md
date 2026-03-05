@@ -8,7 +8,7 @@ At a high level, you need:
 
 ## Azure account with an active subscription
 
-You need an Azure account with an active subscription to deploy Azure Virtual Desktop. If you don't have one already, you can [create an account for free](https://azure.microsoft.com/free/?WT.mc_id=A261C142F).
+You need an Azure account with an active subscription to deploy Azure Virtual Desktop. If you don't have one already, you can [create an account for free](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn).
 
 To deploy Azure Virtual Desktop, you need to assign the relevant Azure role-based access control (RBAC) roles. The specific role requirements are covered in each of the related articles for deploying Azure Virtual Desktop, which are listed in the [Next steps](/azure/virtual-desktop/prerequisites?tabs=portal#next-steps) section.
 

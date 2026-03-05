@@ -16,8 +16,6 @@ In this module, you learned how to:
 
 - [Monitor performance of virtual machines by using Azure Monitor for VMs](/learn/modules/monitor-performance-using-azure-monitor-for-vms/)
 
-- [Monitoring options available in Azure](/learn/modules/design-monitoring-strategy-on-azure/3-azure-monitoring-options)
-
 - [Azure monitor for SAP solutions providers)](/azure/virtual-machines/workloads/sap/azure-monitor-providers)
 
 - [Azure VM monitor considerations for SAP workloads](/learn/modules/plan-implement-sap-solutions/5-azure-vm-monitor-considerations-sap-workloads)
@@ -29,8 +27,6 @@ In this module, you learned how to:
 - [Azure monitor for SAP solutions providers](/azure/virtual-machines/workloads/sap/azure-monitor-providers)
 
 - [Deploy Azure Monitor for SAP Solutions with Azure portal](/azure/virtual-machines/workloads/sap/azure-monitor-sap-quickstart)
-
-- [Unify monitoring solutions in Azure](/learn/modules/design-monitoring-strategy-on-azure/7-unifying-monitoring-solutions)
 
 - [Azure Monitor for SAP solutions FAQ](/azure/virtual-machines/workloads/sap/azure-monitor-faq)
 

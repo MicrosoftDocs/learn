@@ -67,9 +67,9 @@ Azure uses virtual hard disks (VHDs) to represent physical disks for the VM. VHD
 
 By default, two virtual hard disks (VHDs) will be created for your Windows VM:
 
-1. **The Operating System disk**: This is your primary or C: drive and has a maximum capacity of 2048 GB.
+- **The Operating System disk**: This is your primary or C: drive and has a maximum capacity of 2048 GB.
 
-1. **A Temporary disk**: This provides temporary storage for the OS or any apps. It's configured as the D: drive by default and is sized based on the VM size, making it an ideal location for the Windows paging file.
+- **A Temporary disk**: This provides temporary storage for the OS or any apps. It's configured as the D: drive by default and is sized based on the VM size, making it an ideal location for the Windows paging file.
 
 > [!WARNING]
 > The temporary disk isn't persistent. You should only write data to this disk that you're willing to lose at any time.
@@ -105,3 +105,4 @@ When you create a new VM, you'll have the option of creating a new virtual netwo
 Having Azure create the network together with the VM is simple, but it's likely not ideal for most scenarios. It's better to plan your network requirements *up front* for all the components in your architecture, and create the VNet structure you'll need separately. Then create the VMs, and place them into the already-created VNets.
 
 We'll look more at virtual networks a bit later in this module. Let's apply some of this knowledge and create a VM in Azure.
+

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.agent-orchestration-patterns.concurrent-orchestration
+title: Concurrent orchestration
+metadata:
+  title: Concurrent orchestration
+  description: Understand the concurrent orchestration pattern in AI agent orchestration.
+  ms.date: 08/13/2025
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/3-concurrent-orchestration.md)]

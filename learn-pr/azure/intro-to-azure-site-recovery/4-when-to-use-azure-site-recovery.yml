@@ -2,11 +2,9 @@
 uid: learn.intro-to-azure-site-recovery.when-to-use-azure-site-recovery
 title: When to use Azure Site Recovery
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: When to use Azure Site Recovery
   description: In this unit, you learn when to use Azure Site Recovery.
-  ms.date: 07/08/2024
+  ms.date: 11/15/2025
   author: orin-thomas
   ms.author: orthomas
   ms.topic: unit

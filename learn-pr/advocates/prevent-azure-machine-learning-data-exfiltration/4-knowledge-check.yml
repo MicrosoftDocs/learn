@@ -1,0 +1,47 @@
+### YamlMime:ModuleUnit
+uid: learn.prevent-data-exfiltration-azure-ai-workloads.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge Check
+  description: Check your knowledge.
+  ms.date: 07/01/2025
+  author: Orin-Thomas
+  ms.author: viniap
+  ms.topic: unit
+durationInMinutes: 4
+content: Choose the best response for each question.
+quiz:
+  questions:
+    - content: "You're tasked with enabling data exfiltration prevention for an Azure OpenAI service in your organization. You want to restrict outbound traffic to avoid data being sent to unauthorized locations. What do you need to configure?"
+      choices:
+        - content: "Disable outbound traffic and allow for in-Azure communication only."
+          isCorrect: false
+          explanation: "Disabling outbound traffic will completely shut off the Azure AI service affected."
+        - content: "Enable the restriction for outbound traffic and configure the list of approved FQDNs."
+          isCorrect: true
+          explanation: "Disabling outbound traffic and configuring the allowed FQDNs allow the service to function properly while limiting the ability of a malicious individual to extract data."
+        - content: "Configure the list of approved FQDNs so data can only be sent to those."
+          isCorrect: false
+          explanation: "The list of allowed FQDNs has no effect if the outbound traffic hasn't been disabled previously."
+    - content: "How can you restrict Inbound traffic for compute instances or clusters using a public IP address in Azure Machine Learning?"
+      choices:
+        - content: "Restrict traffic using a network security group (NSG) and service tags."
+          isCorrect: true
+          explanation: "NSGs can block unauthorized traffic while allowing for legitimate requests to go through."
+        - content: "Block port 44224 for the compute or cluster instance."
+          isCorrect: false
+          explanation: "Blocking port 44224 prevents Azure Machine Learning from responding to requests and shut off the service."
+        - content: "Allow only HTTPS traffic (port 443) for the compute or cluster instance."
+          isCorrect: false
+          explanation: "Azure Machine Learning doesn't, by default, respond to traffic on port 443 for HTTPS requests."
+    - content: "You want to add another security layer to prevent data exfiltration on an Azure Machine Learning environment. How can you control the outbound traffic to allowed storage accounts only?"
+      choices:
+        - content: "Use 3rd party storage accounts only."
+          isCorrect: false
+          explanation: "The usage of 3rd party storage accounts by itself doesn't prevent data exfiltration."
+        - content: "Use Storage accounts on different Azure subscriptions."
+          isCorrect: false
+          explanation: "Storage accounts on different Azure subscriptions still allow unchecked outbound traffic."
+        - content: "Use Service endpoint policies."
+          isCorrect: true
+          explanation: "Service endpoint policies let you filter outbound network traffic to specific Azure Storage accounts, limiting data exfiltration."

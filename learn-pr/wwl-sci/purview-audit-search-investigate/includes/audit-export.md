@@ -1,96 +1,67 @@
-Both the Standard and Premium versions of Microsoft Purview Audit have the capability to export audit logs to CSV. This functionality is essential for performing detailed data analysis and meeting compliance reporting requirements. CSV exports enable extensive data manipulation and deeper insights of audit activities, which are important for maintaining high data security standards in sensitive environments.
+Both the Standard and Premium versions of Microsoft Purview Audit let you export audit logs to CSV. This capability supports detailed analysis and compliance reporting by allowing you to work with audit data outside the portal.
 
-After securing electronic health records (EHR) using Microsoft Purview Audit, the IT compliance team at our healthcare network is now focusing on the export functionality. By exporting audit logs, they aim to deepen their analysis, supporting ongoing security evaluations and compliance with health data protection standards.
+## Export audit log search results
 
-Here you learn to:
+After running an audit log search in the Microsoft Purview portal, you can export the results for offline analysis.
 
-- Export audit logs to CSV.
-- Use Excel's Power Query Editor to manage and analyze audit data.
-- Customize audit log exports with PowerShell to meet specific investigation needs.
+1. Run your audit search with the desired filters.
+1. On the search results page, select **Export** to download the audit records to a CSV file.
 
-## Export and transform audit log data
-
-Understanding how to effectively export and transform audit log data is crucial for comprehensive data analysis and compliance monitoring. Here's how you can handle the export and transformation process using Microsoft Purview Audit tools and Excel's Power Query Editor.
-
-### Export audit log search results
-
-1. Begin by searching the audit log. Adjust your search criteria as needed to ensure you capture the necessary data.
-1. On the search results page, select **Export** to download all the audit records from your search into a CSV file. Preparing the download can take time, especially for large searches.
- 
    :::image type="content" source="../media/audit-export-audit-search-results.png" alt-text="Screenshot showing where to select Export to export data.":::
 
-1. Once the export process is complete, a prompt appears, guiding you to open the CSV file and save it to your local computer. You can also access the CSV file in the Downloads folder.
-   - You can download a maximum of 50,000 entries to a CSV file from a single audit log search. If your search results exceed this limit, consider using a narrower date range to manage the volume of data.
+1. Once the export finishes, save the file locally.
 
-### Transform audit log data using Power Query editor
+   - You can export up to 50,000 entries from a single search. If your results exceed this, narrow the date range or apply more filters.
 
-After you export the audit data, the next step involves using Excel's Power Query Editor to enhance the data's readability and usability.
+## Transform audit log data using Power Query Editor
 
-1. Open a blank workbook in Excel and navigate to the **Data** tab. Select **From Text/CSV** to open your exported CSV file.
+You can make the exported CSV data easier to work with by transforming it in Excel's Power Query Editor.
+
+1. Open a blank Excel workbook, go to the **Data** tab, and select **From Text/CSV** to open your exported file.
 
    :::image type="content" source="../media/json-transform-open-csv-file.png" alt-text="Screenshot showing the From Text/CSV button in Excel.":::
 
-1. Once the CSV file opens, select **Transform Data** to begin editing in the Power Query Editor.
+1. When the CSV opens, select **Transform Data** to start editing in Power Query.
 
    :::image type="content" source="../media/json-open-power-query.png" alt-text="Screenshot showing the Transform Data button in Excel.":::
 
-1. Right-click **AuditData**, select **Transform**, then choose **JSON** in the **Query Editor**. This step transforms the data into a readable format, creating separate columns for each property within the JSON object.
+1. Right-click **AuditData**, select **Transform**, then choose **JSON**. This parses the data into a readable format.
 
    :::image type="content" source="../media/json-transform.png" alt-text="Screenshot showing where to select Transform then JSON to parse data.":::
 
-1. Select the expand icon in the upper-right corner of the **AuditData** column to see a list of properties in the JSON objects.
+1. Select the expand icon in the **AuditData** column to view JSON properties.
 
    :::image type="content" source="../media/json-transform-expand-icon.png" alt-text="Screenshot showing the expand icon.":::
 
-1. If only some properties are visible initially, select **Load more** to display the full list of properties in the JSON objects.
+1. If only some properties are visible, select **Load more**.
 
    :::image type="content" source="../media/json-transform-load-json-properties.png" alt-text="Screenshot showing where to select Load more to display the full list of properties.":::
 
-1. Deselect any properties you don't need to simplify your data view. This helps in focusing only on relevant data for your analysis.
-   - Keep in mind that the properties shown after clicking **Load more** are based on the first 1,000 rows in your CSV file. If different properties exist beyond these rows, they don't appear when the **AuditData** column is expanded. To ensure you capture all necessary properties, you might need to refine your audit log search to return fewer records or filter out less relevant data in the **Operations** column before expanding **AuditData**.
-1. Decide if you want to include the original column name as a prefix in the new column titles, which can help maintain clarity about the data source.
-1. After setting up your columns, select **OK** to apply the transformations. Each property from the JSON object now appears in its own column, which facilitates easier data analysis.
-1. To finish, select **Close & Load** on the **Home** tab to exit the Power Query Editor and open the transformed CSV file in an Excel workbook.
+1. Deselect unneeded properties to simplify your view.
+1. Choose whether to include the original column name as a prefix.
+1. Select **OK** to apply the transformation.
+1. On the **Home** tab, select **Close & Load** to return the transformed data to Excel.
 
-### Use PowerShell to search and export audit log records
+## Use PowerShell to search and export audit log records
 
-For more customizable audit log searches, consider using the `Search-UnifiedAuditLog` cmdlet in Exchange Online PowerShell. This approach allows for precise querying, particularly when filtering by _RecordType_. After exporting, the CSV file can be formatted using the same methods as outlined with the Power Query editor in Excel.
+For more control over your audit searches and exports, use the `Search-UnifiedAuditLog` cmdlet in Exchange Online PowerShell.
 
-#### Example: Export SharePoint audit records
+### Example: Export SharePoint sharing operations
 
-Imagine the IT compliance team at your healthcare network needs to review SharePoint sharing operations as part of an audit on how health records are accessed and shared. Here's how they could use PowerShell to capture and analyze these activities:
+```powershell
+$auditlog = Search-UnifiedAuditLog -StartDate 06/01/2019 -EndDate 06/30/2019 -RecordType SharePointSharingOperation
+$auditlog | Select-Object CreationDate, UserIds, RecordType, AuditData | Export-Csv -Path C:AuditLogsSharePointAudit.csv -NoTypeInformation
+```
 
-1. **Search for SharePoint sharing operations** within a specific period by running:
+To append more data:
 
-   ```powershell
-   $auditlog = Search-UnifiedAuditLog -StartDate 06/01/2019 -EndDate 06/30/2019 -RecordType SharePointSharingOperation
-   ```
+```powershell
+$auditlog = Search-UnifiedAuditLog -StartDate 06/01/2019 -EndDate 06/30/2019 -RecordType SharePointFileOperation
+$auditlog | Select-Object CreationDate, UserIds, RecordType, AuditData | Export-Csv -Append -Path C:AuditLogsSharePointAudit.csv -NoTypeInformation
+```
 
-   - Export the results to a CSV file:
+## Tips for exporting and reviewing audit data
 
-   ```powershell
-   $auditlog | Select-Object -Property CreationDate, UserIds, RecordType, AuditData | Export-Csv -Path c:\AuditLogs\PowerShellAuditlog.csv -NoTypeInformation
-   ```
-
-   The resulting file, _PowerShellAuditlog.csv_, includes four columns: CreationDate, UserIds, RecordType, AuditData.
-
-1. **Append additional data** to the existing csv file by running:
-
-   ```powershell
-   $auditlog = Search-UnifiedAuditLog -StartDate 06/01/2019 -EndDate 06/30/2019 -RecordType SharePointFileOperation
-   ```
-
-   ```powershell
-   $auditlog | Select-Object -Property CreationDate, UserIds, RecordType, AuditData | Export-Csv -Append -Path c:\AuditLogs\PowerShellAuditlog.csv -NoTypeInformation
-   ```
-
-### Tips for exporting and viewing the audit log
-
-After you export the data, use the Power Query Editor in Excel to transform the JSON object in the AuditData column into a structured format. This process enhances data visibility and aids in pinpoint analyses:
-
-- **Filter by RecordType**: Focus on specific events, such as SharePoint sharing operations, to streamline reviews and ensure compliance with healthcare data regulations.
-- **Filter by Operations**: Narrow down to precise activities to monitor how sensitive information is being accessed or modified.
-
-## Knowledge check
-
-Choose the best response for the question below.
+- **Filter by RecordType** to focus on specific workloads.
+- **Filter by Operations** to narrow results to key actions, such as file sharing or deletion.
+- Use Power Query transformations to make JSON data in the **AuditData** column easier to read.

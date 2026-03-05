@@ -2,13 +2,11 @@
 uid: learn.wwl.introduction-data-platform-modernization.introduction
 title: Introduction
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Introduction
   description: "Introduction"
-  ms.date: 04/14/2023
-  author: wwlpublish
-  ms.author: rcaper
+  ms.date: 08/26/2025
+  author: JulianePadrao
+  ms.author: jupadrao
   ms.topic: unit
 azureSandbox: false
 labModal: false

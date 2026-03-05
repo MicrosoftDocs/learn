@@ -2,8 +2,6 @@
 uid: learn.wwl.monitor-manage-data-engineering-workloads-with-apache-spark-azure-synapse-analyt.optimize-apache-spark-jobs-analytics
 title: Optimize Apache Spark jobs in Azure Synapse Analytics
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Optimize Apache Spark jobs in Azure Synapse Analytics
   description: "Optimize Apache Spark jobs in Azure Synapse Analytics"
   ms.date: 01/05/2022
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 3
 content: |
-  [!include[](includes/4-optimize-apache-spark-jobs-analytics.md)]
+  [!include[](includes/4-optimize-apache-spark-jobs-analytics.md)]

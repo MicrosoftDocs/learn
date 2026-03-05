@@ -1,3 +1,5 @@
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=193f493f-2d85-4493-b14c-911597680ddf]
+
 Analytical data processing typically uses read-only (or read-*mostly*) systems that store vast volumes of historical data or business metrics. 
 Analytics can be based on a snapshot of the data at a given point in time, or a series of snapshots.
 

@@ -67,9 +67,11 @@ Typically, your data diversity, cost sensitivity, and tolerance for management o
 
 Organizations often generate data that differs along several vectors. For example, where the data is consumed, how sensitive it is, which group pays the bills for it, etc. Diversity along any of these vectors can lead to multiple storage accounts. Let's consider two examples:
 
-1. Do you have data that is specific to a country/region? If so, you might want to store the data in a datacenter in that country/region for performance or compliance reasons. You need one storage account for each geographical region.
+- Do you have data that is specific to a country/region? If so, you might want to store the data in a datacenter in that country/region for performance or compliance reasons. You need one storage account for each geographical region.
 
-1. Do you have some data that is proprietary and some for public consumption? If so, you could enable virtual networks for the proprietary data and not for the public data. Separating proprietary data and public data requires separate storage accounts.
+
+- Do you have some data that is proprietary and some for public consumption? If so, you could enable virtual networks for the proprietary data and not for the public data. Separating proprietary data and public data requires separate storage accounts.
+
 
 In general, increased diversity means an increased number of storage accounts.
 

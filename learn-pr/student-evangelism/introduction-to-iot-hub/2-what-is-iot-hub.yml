@@ -2,8 +2,6 @@
 uid: learn.oxford.intro-to-iot-hub.what-is-iot-hub
 title: What is IoT Hub?
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: What is IoT Hub?
   description: In this section, we provide a definition of the product and discuss the value proposition of the product.
   ms.date: 07/20/2024
@@ -14,4 +12,4 @@ metadata:
 durationInMinutes: 4 # dummy number at present
 content: |
   [!include[](includes/2-what-is-iot-hub.md)]
-
+

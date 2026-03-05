@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.create-knowledge-store-with-azure-cognitive-search
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Create a knowledge store with Azure AI Search
   description: Create a knowledge store with Azure AI Search
   author: ivorb
@@ -43,4 +41,4 @@ units:
 - learn.wwl.create-knowledge-store-with-azure-cognitive-search.summary
 badge:
   uid: learn.wwl.create-knowledge-store-with-azure-cognitive-search.badge
-
+

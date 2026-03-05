@@ -1,0 +1,42 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-ninja-prevent-data-loss-share-transfer.knowledge-check
+title: Module assessment
+metadata:
+  title: Module Assessment
+  description: "Knowledge check."
+  ms.date: 08/21/2025
+  author: sachow
+  ms.author: sachow
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is the primary reason the large corporation implemented automated data loss prevention (DLP) tools and mandatory training?"
+    choices:
+    - content: "To reduce IT costs"
+      isCorrect: false
+    - content: "To increase file storage capacity"
+      isCorrect: false
+    - content: "To prevent risky sharing and reinforce data stewardship"
+      isCorrect: true
+
+  - content: "Which of the following increases the risk of data exposure when sharing files externally in SharePoint or OneDrive?"
+    choices:
+    - content: "Block sharing or restrict to trusted domains"
+      isCorrect: false
+    - content: "Monitor external sharing with audit logs and alerts"
+      isCorrect: false
+    - content: "Allow unrestricted sharing of sensitive files"
+      isCorrect: true
+
+  - content: "In Microsoft Teams, what happens if a user tries to share sensitive information with an external user and a DLP policy is in place?"
+    choices:
+    - content: "The user is permanently blocked from Teams"
+      isCorrect: false
+    - content: "The message is automatically deleted based on policy settings"
+      isCorrect: true
+    - content: "The message is sent with a warning"
+      isCorrect: false

@@ -2,8 +2,6 @@
 uid: learn.wwl.teach-azure-204-develop-solution-microsoft-azure-academic-programs.summary
 title: 'Summary '
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Summary
   description: "Summary"
   ms.date: 06/02/2023
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 1
 content: |
-  [!include[](includes/18-summary.md)]
+  [!include[](includes/18-summary.md)]

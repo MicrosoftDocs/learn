@@ -1,23 +1,23 @@
-Now that the application has started development, it's good to add more diagnostics to the logic to help developers as they add new features. We can use our new learnings on debug diagnostics to do this task.
+Now that the application is starting development, it's good to add more diagnostics to the logic to help developers as they add new features. We can use our new knowledge of debug diagnostics to do this task.
 
 ## Write to the debug console
 
-Before we debug the application, let's add more debug diagnostics. Additional diagnostics will help diagnose the application while it's being run under debug.
+Before we debug the application, let's add more debug diagnostics. Further diagnostics can help diagnose the application while it's being run under debug.
 
-1. At the top of the `Program.cs` file, we'll add a new `using` statement to bring in `System.Diagnostics` so we can use the `Debug` methods.
-    
+1. At the top of the `Program.cs` file, add a new `using` statement to bring in `System.Diagnostics` so we can use the `Debug` methods.
+
     ```csharp
     using System.Diagnostics;
     ```
 
-2. Add a `WriteLine` statement at the start of the `Fibonacci` method to get clarity when you debug through the code.
+1. Add `WriteLine` statements at the start of the `Fibonacci` method to get clarity when you debug through the code.
 
     ```csharp
     Debug.WriteLine($"Entering {nameof(Fibonacci)} method");
     Debug.WriteLine($"We are looking for the {n}th number");
     ```
 
-3. At the end of our `for` loop, we could print out every value. Or, we could use a conditional print statement by using `WriteIf` or `WriteLineIf`. Add a print line only when `sum` is 1 at the end of the for loop.
+1. At the end of our `for` loop, we could output every value. Or, we could use a conditional print statement by using `WriteIf` or `WriteLineIf`. Add a print line only when `sum` is 1 at the end of the for loop.
 
     ```csharp
     for (int i = 2; i <= n; i++)
@@ -29,7 +29,7 @@ Before we debug the application, let's add more debug diagnostics. Additional di
     }
     ```
 
-4. Debug the application. You should get the following output:
+1. Debug the application. You should get the following output:
 
     ```output
     Entering Fibonacci method
@@ -47,7 +47,7 @@ Debug.Assert(n2 == 5, "The return value is not 5 and it should be.");
 return n == 0 ? n1 : n2;
 ```
 
-Our application logic is already correct, so let's update our `Fibonacci(5);` to `Fibonacci(6);`, which will have a different result.
+Our application logic is already correct, so let's update our `Fibonacci(5);` to `Fibonacci(6);`, which generates a different result.
 
 Debug the application. When `Debug.Assert` is run in the code, the debugger stops the application so you can inspect variables, watch window, call stack, and more. It also outputs the message to the debug console.
 
@@ -67,7 +67,7 @@ Stop debugging, then run the application without debug by entering the following
 dotnet run
 ```
 
-The application is terminated after the assertion has failed and information has been logged to the application output.
+The application is terminated after the assertion fails and information is logged to the application output.
 
 ```output
 Process terminated. Assertion failed.
@@ -84,4 +84,4 @@ dotnet run --configuration Release
 
 The application successfully runs to completion because we're no longer in the `Debug` configuration.
 
-Congratulations, you've successfully and efficiently debugged code by using features of .NET, which include `Debug.WriteLine` and `Debug.Assert`. Well done!
+Congratulations, you successfully and efficiently debugged code by using features of .NET, which include `Debug.WriteLine` and `Debug.Assert`. Well done!

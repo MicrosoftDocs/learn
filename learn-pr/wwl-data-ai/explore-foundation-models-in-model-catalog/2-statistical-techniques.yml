@@ -2,13 +2,11 @@
 uid: learn.explore-foundation-models-in-model-catalog.statistical-techniques
 title: Understand statistical techniques used for natural language processing (NLP)
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Understand statistical techniques used for natural language processing
   description: Learn about the history of NLP by first exploring the statistical techniques that were developed.
   author: madiepev
   ms.author: madiepev
-  ms.date: 07/25/2024
+  ms.date: 12/01/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot

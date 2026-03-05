@@ -200,7 +200,7 @@ tmp-ubuntu          version-1.0        f89469694960        14 minutes ago       
 ubuntu              18.04                   a2a15febcdf3        5 weeks ago            64.2MB
 ```
 
-Notice how the image is listed with its _Name_, _Tag_, and an _Image ID_. Recall that we can apply multiple labels to an image. The preceding output shows an example; even though the image names are different, we can see the IDs are the same.
+Notice how the image is listed with its _Repository_, _Tag_, and an _Image ID_. Recall that we can apply multiple labels to an image. The preceding output shows an example; even though the image names are different, we can see the IDs are the same.
 
 The image ID is a useful way to identify and manage images where the name or tag of an image might be ambiguous.
 

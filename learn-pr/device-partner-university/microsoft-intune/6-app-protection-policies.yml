@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.microsoft-intune.app-protection-policies
+title: App protection policies
+metadata:
+  title: App Protection Policies
+  description: This content is part of the "Device management with Microsoft Intune" module.
+  ms.date: 09/03/2025
+  author: Stephanie-Rosenzweig
+  ms.author: v-stephanier
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/6-app-protection-policies.md)]

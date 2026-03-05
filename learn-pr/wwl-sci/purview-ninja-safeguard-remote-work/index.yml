@@ -1,0 +1,46 @@
+### YamlMime:Module
+uid: learn.wwl.purview-ninja-safeguard-remote-work
+metadata:
+  title: Safeguard sensitive data in remote work with endpoint DLP
+  description: "Safeguard Sensitive Data in Remote Work with Endpoint DLP."
+  ms.date: 08/21/2025
+  author: sachow
+  ms.author: sachow
+  ms.topic: module
+  ms.service: purview
+  ai-usage: human-only
+  hidden: true
+title: Safeguard sensitive data in remote work with Endpoint DLP
+summary: Safeguarding data during remote work means implementing security measures and policies to protect sensitive information as employees access and share data outside the traditional office environment. It involves monitoring and controlling data transfers, blocking unauthorized sharing, and ensuring compliance to minimize the risk of accidental or intentional data exposure.
+abstract: |
+  After completing this module, you'll be able to:
+  - Map SITs and labels to DLP locations.
+  - Apply DLP in Exchange Online to prevent external sharing.
+  - Protect files in SharePoint and OneDrive with labels, DLP, and access controls.
+  - Enforce DLP in Teams to safeguard chats, channels, and documents.
+prerequisites: |
+  - Basic knowledge of Microsoft Purview DLP
+  - Familiarity with sensitivity labels and SITs in Purview
+  - Understanding of Exchange Online, SharePoint, OneDrive, and Teams in Microsoft 365
+  - General understanding of Microsoft Entra Conditional Access
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- risk-practitioner
+products:
+- microsoft-purview
+- m365
+subjects:
+- information-protection-governance
+units:
+- learn.wwl.purview-ninja-safeguard-remote-work.introduction
+- learn.wwl.purview-ninja-safeguard-remote-work.restrict-sensitive-files-endpoint-data-loss-prevention
+- learn.wwl.purview-ninja-safeguard-remote-work.groups-conditions-endpoint-data-loss-prevention
+- learn.wwl.purview-ninja-safeguard-remote-work.extend-conditional-access-app-control
+- learn.wwl.purview-ninja-safeguard-remote-work.monitor-investigate-endpoint-data-loss-prevention
+- learn.wwl.purview-ninja-safeguard-remote-work.knowledge-check
+- learn.wwl.purview-ninja-safeguard-remote-work.summary
+- learn.wwl.purview-ninja-safeguard-remote-work.conclusion
+badge:
+  uid: learn.wwl.purview-ninja-safeguard-remote-work.badge

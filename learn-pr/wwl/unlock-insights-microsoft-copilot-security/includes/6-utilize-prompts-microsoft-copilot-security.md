@@ -1,8 +1,8 @@
-## Prompting in Microsoft Copilot for Security
+## Prompting in Microsoft Security Copilot
 
 ### Overview
 
-Microsoft Copilot for Security enhances your security operations by using prompts to generate responses tailored to your security needs. Prompts are text-based inputs that guide Copilot for Security to deliver valuable insights and actions.
+Microsoft Security Copilot enhances your security operations by using prompts to generate responses tailored to your security needs. Prompts are text-based inputs that guide Security Copilot to deliver valuable insights and actions.
 
 ### How to Use Prompts
 
@@ -15,7 +15,7 @@ Microsoft Copilot for Security enhances your security operations by using prompt
 
 1. **Enter Your Request:** Type your question or request in the prompt bar.
 2. **Submit the Prompt:** Select Send or press Enter.
-3. **View the Response:** Copilot for Security will process your prompt and display the response. You can monitor the steps taken in the process log, which shows the actions and information sources used.
+3. **View the Response:** Security Copilot will process your prompt and display the response. You can monitor the steps taken in the process log, which shows the actions and information sources used.
 
 You can cancel, edit, or delete your prompt at any time during the response generation. Review the response to ensure it meets your needs. If necessary, continue the session with more prompts for iterative responses. Adjust your prompts by providing more details or specifying the response format to improve accuracy.
 
@@ -33,13 +33,13 @@ To create effective prompts, include:
 
 #### Providing feedback
 
-Your feedback helps improve Copilot for Security. Use the feedback buttons at the bottom of each response:
+Your feedback helps improve Security Copilot. Use the feedback buttons at the bottom of each response:
 - **Looks Right:** If satisfied, specify what was accurate.
 - **Needs Improvement:** If not satisfied, provide details on what was lacking.
 - **Inappropriate:** Report any concerning or unexpected responses.
 
 #### Additional Resources
 
-For more information and tips on creating effective prompts, see the [Microsoft Copilot for Security documentation](/copilot/security/prompting-security-copilot).
+For more information and tips on creating effective prompts, see the [Microsoft Security Copilot documentation](/copilot/security/prompting-security-copilot).
 
-By following these guidelines, you can use Microsoft Copilot for Security to enhance your security operations and make informed decisions.
+By following these guidelines, you can use Microsoft Security Copilot to enhance your security operations and make informed decisions.

@@ -1,6 +1,6 @@
 
 > [!IMPORTANT]
-> You need your own [Azure subscription](https://azure.microsoft.com/free/?azure-portal=true) to complete the exercises in this module. If you don't have an Azure subscription, you can still view the demonstration video at the bottom of this page.
+> You need your own [Azure subscription](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn) to complete the exercises in this module. If you don't have an Azure subscription, you can still view the demonstration video at the bottom of this page.
 
 As your organization's support engineer, you've been asked to help fix an issue between your resources in the US and northern Europe. you've existing infrastructure of virtual networks in two different regions. The VMs in the US virtual network (VNet1) are unable to get a ping response from the VMs in northern Europe (VNet2).
 
@@ -11,7 +11,7 @@ Checking the topology, you can see that there are VPN gateways and connections.
 In this exercise, you'll troubleshoot and resolve the connectivity issue.
 
 > [!IMPORTANT]
-> You need your own [Azure subscription](https://azure.microsoft.com/free/?azure-portal=true) to complete the exercises in this module. If you don't have an Azure subscription, you can still read along.
+> You need your own [Azure subscription](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn) to complete the exercises in this module. If you don't have an Azure subscription, you can still read along.
 ## Test the connection
 
 1. We're going to test the connection between the two VMs, by sending a ping request between them.

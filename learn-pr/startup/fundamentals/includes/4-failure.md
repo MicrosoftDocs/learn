@@ -108,7 +108,7 @@ Similarly, investors are always on the lookout for promising startups. Good inve
 Make a wish list of people with whom you'd like to connect. Start with your local startup community, but also look further afield. Reach out through mutual contacts, by using LinkedIn, or by sending an email or direct message. Have a specific question that you believe that individual is well-positioned to address; nobody likes to hear "I just want to pick your brains!"
 
 > [!TIP]
-> Need help finding quality mentors? The Microsoft for Startups mentor network has hundreds of subject-area experts ready to help you overcome obstacles and hit your next milestone. For more information, check out the [Microsoft for Startups mentor network](https://startups.microsoft.com/en-US/blog/mentorshipprimer?azure-portal=true). 
+> Need help finding quality mentors? The Microsoft for Startups mentor network has hundreds of subject-area experts ready to help you overcome obstacles and hit your next milestone. For more information, check out the [Microsoft for Startups mentor network](https://www.microsoft.com/startups/blog/mentorshipprimer). 
 
 ## Cofounder conflict
 

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.choose-budgeting-tool.explore-budgeting-tools
+title: Explore budgeting tools
+metadata:
+  title: Explore Budgeting Tools
+  description: This content is a part of the Choose a budgeting tool that fits your preferences and financial goals.
+  ms.date: 04/02/2025
+  author: kprks
+  ms.author: v-kperkes
+  ms.topic: unit
+durationInMinutes: 15
+content: |
+  [!include[](includes/3-explore-budgeting-tools.md)]

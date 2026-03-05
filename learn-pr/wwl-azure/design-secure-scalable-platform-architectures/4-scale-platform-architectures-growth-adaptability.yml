@@ -2,8 +2,6 @@
 uid: learn.wwl.design-secure-scalable-platform-architectures.scale-platform-architectures-growth-adaptability
 title: Scale Platform Architectures for Growth and Adaptability
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Scale Platform Architectures for Growth and Adaptability
   description: "Scale Platform Architectures for Growth and Adaptability"
   ms.date: 01/14/2025
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 9
 content: |
-  [!include[](includes/4-scale-platform-architectures-growth-adaptability.md)]
+  [!include[](includes/4-scale-platform-architectures-growth-adaptability.md)]

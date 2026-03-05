@@ -4,7 +4,7 @@ title: Cryptographic failures
 metadata:
   title: Cryptographic failures
   description: "OWASP Top 10 for .NET Developers. Cryptographic failures."
-  ms.date: 05/31/2024
+  ms.date: 06/18/2025
   author: obrocki
   ms.author: dawidobrocki
   ms.topic: unit
@@ -23,9 +23,7 @@ quiz:
       explanation: "Incorrect. Rely on industry-standard encryption and hashing implementations. Review the documentation to ensure you're using strong algorithms."
     - content: "No."
       isCorrect: true
-      explanation: "Correct. Rely on industry-standard encryption and hashing implementations. Review the documentation to ensure you're using strong algorithms."    
-
-
+      explanation: "Correct. Rely on industry-standard encryption and hashing implementations. Review the documentation to ensure you're using strong algorithms."  
   - content: "The process of converting data to a different format for storage, transmission, compression, or decompression best describes:"  
     choices:    
     - content: "Encryption."

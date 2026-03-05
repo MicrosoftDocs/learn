@@ -9,7 +9,8 @@ metadata:
   ms.author: ceperezb
   ms.topic: unit
   ms.custom:
-  - N/A
+    - sfi-ga-nochange
+    - N/A
 durationInMinutes: 6
 content: |
   [!include[](includes/7-describe-microsoft-defender-portal.md)]

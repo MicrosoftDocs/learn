@@ -2,8 +2,6 @@
 uid: learn.wwl.get-tips-tricks-teach-sc-900-security-compliance-identity-fundamentals.summary
 title: Summary
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Summary
   description: "Summary"
   ms.date: 04/07/2023
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 1
 content: |
-  [!include[](includes/10-summary.md)]
+  [!include[](includes/10-summary.md)]

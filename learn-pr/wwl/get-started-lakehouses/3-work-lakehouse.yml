@@ -1,13 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.get-started-lakehouses.work-lakehouse
-title: Work with Microsoft Fabric lakehouses
+title: Ingest and transform data in a lakehouse
 metadata:
-  title: Work with Microsoft Fabric lakehouses
-  description: "Work with Microsoft Fabric lakehouses"
-  ms.date: 03/19/2025
+  title: Ingest and Transform Data in a Lakehouse
+  description: "Learn how to create a lakehouse, ingest data, and transform data in Microsoft Fabric."
+  ms.date: 03/04/2026
   author: angierudduck
   ms.author: anrudduc
   ms.topic: unit
-durationInMinutes: 6
+  ai-usage: ai-assisted
+durationInMinutes: 7
 content: |
   [!include[](includes/3-work-lakehouse.md)]

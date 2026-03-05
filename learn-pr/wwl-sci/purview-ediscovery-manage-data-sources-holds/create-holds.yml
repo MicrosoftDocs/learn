@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-ediscovery-manage-data-sources-holds.create-holds
+title: Create holds in eDiscovery
+metadata:
+  title: Create holds in eDiscovery
+  description: "Create holds in eDiscovery"
+  ms.date: 05/15/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 8
+content: |
+  [!include[](includes/create-holds.md)]

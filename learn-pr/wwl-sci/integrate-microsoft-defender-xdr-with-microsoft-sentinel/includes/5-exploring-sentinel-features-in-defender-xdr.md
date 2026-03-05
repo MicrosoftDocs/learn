@@ -33,7 +33,7 @@ Find Microsoft Sentinel settings in the Defender portal under **System** > **Set
 
 ## Quick reference
 
-Some Microsoft Sentinel capabilities, like the unified incident queue, are integrated with Microsoft Defender XDR in the unified security operations platform. Many other Microsoft Sentinel capabilities are available in the **Microsoft Sentinel** section of the Defender portal.
+Some Microsoft Sentinel capabilities, like the unified incident queue, are integrated with Microsoft Defender XDR in the Microsoft Defender portal. Many other Microsoft Sentinel capabilities are available in the **Microsoft Sentinel** section of the Defender portal.
 
 The following image shows the **Microsoft Sentinel** menu in the Defender portal:
 

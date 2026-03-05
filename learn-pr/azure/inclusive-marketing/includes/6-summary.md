@@ -4,7 +4,7 @@ Beginning with the simple framework of what, who, and how you market, one or all
 
 ## References
 
-- [Inclusive Marketing: Why it’s essential for your brand](https://about.ads.microsoft.com/blog/post/january-2020/inclusive-marketing-why-its-essential-for-your-brand)
+- [Inclusive Marketing: Why it’s essential for your brand](/training/modules/inclusive-marketing)
 - [How Microsoft defines and pursues inclusive marketing](https://www.warc.com/content/paywall/article/event-reports/how-microsoft-defines-and-pursues-inclusive-marketing/129014)
 - [LGBT advertising: How brands are taking a stance on issues](https://www.thinkwithgoogle.com/future-of-marketing/management-and-culture/diversity-and-inclusion/lgbt-advertising-brands-taking-stance-on-issues/)
 - [Brands & Stands: Social Purpose is the New Black](https://engageforgood.com/guides/statistics-every-cause-marketer-should-know/ ) 

@@ -65,7 +65,7 @@ Developers who prefer a command-line workflow might use a combination of *Visual
 
 Furthermore, you can choose from numerous first-party and third-party tools for many advanced .NET use cases. Options include code profilers, unit test runners, and code coverage analyzers.
 
-You can find other .NET tools for other scenarios. For example, later in this module you work with *Try .NET*. You use this browser-based interface to write simple applications to help you learn the C# programming language.
+You can find other .NET tools for other scenarios. For example, there are C# code editors available to use directly in the browser. Browser editors provide a lightweight environment for writing, running, and testing C# code without needing to install any software on your local computer.
 
 ### Find solutions and answers in documentation and tutorials
 

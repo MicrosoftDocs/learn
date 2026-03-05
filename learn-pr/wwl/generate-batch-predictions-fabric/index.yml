@@ -5,7 +5,7 @@ metadata:
   description: Learn how to use a trained machine learning model to generate batch predictions in Microsoft Fabric.
   author: JulianePadrao
   ms.author: jupadrao
-  ms.date: 10/26/2023
+  ms.date: 5/9/2025
   ms.service: fabric
   ms.topic: module
   ms.collection:

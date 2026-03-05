@@ -4,10 +4,10 @@ title: Specify security requirements for web workloads
 metadata:
   title: Specify security requirements for web workloads
   description: "SC-100 preparatory unit on the topic: specify security requirements for web workloads."
-  ms.date: 09/26/2024
+  ms.date: 02/06/2026
   author: ceperezb
   ms.author: ceperezb
   ms.topic: unit
-durationInMinutes: 10
+durationInMinutes: 8
 content: |
   [!include[](includes/4-specify-security-requirements-web-workloads.md)]

@@ -1,0 +1,85 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.windows-autopilot.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge Check
+  description: This content is part of the "Device deployment with Windows Autopilot" module.
+  ms.date: 08/29/2025
+  author: Stephanie-Rosenzweig
+  ms.author: v-stephanier
+  ms.topic: unit
+durationInMinutes: 5
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "What is the primary purpose of Windows Autopilot?"
+    choices:
+        - content: "To simplify the deployment and setup of new Windows devices"
+          isCorrect: true
+          explanation: ""
+        - content: "To create custom operating system images for each device"
+          isCorrect: false
+          explanation: ""
+        - content: "To manually configure device drivers for each hardware model"
+          isCorrect: false
+          explanation: ""
+        - content: "To replace Microsoft Intune as a device management tool"
+          isCorrect: false
+          explanation: ""
+  - content: "Which of the options is NOT a benefit of using Windows Autopilot?"
+    choices:
+        - content: "Minimizes IT involvement in device setup"
+          isCorrect: false
+          explanation: ""
+        - content: "Requires on-premises infrastructure for deployment"
+          isCorrect: true
+          explanation: ""
+        - content: "Improves the setup experience for end users"
+          isCorrect: false
+          explanation: ""
+        - content: "Automates device provisioning and configuration"
+          isCorrect: false
+          explanation: ""
+  - content: "What must be uploaded to the Windows Autopilot deployment service to register a device?"
+    choices:
+        - content: "The device's unique hardware hash"
+          isCorrect: true
+          explanation: ""
+        - content: "A custom Windows image"
+          isCorrect: false
+          explanation: ""
+        - content: "The user's Microsoft account password"
+          isCorrect: false
+          explanation: ""
+        - content: "A list of installed applications"
+          isCorrect: false
+          explanation: ""
+  - content: "Which deployment scenario allows devices to be configured automatically without user interaction?"
+    choices:
+        - content: "Self-deploying"
+          isCorrect: true
+          explanation: ""
+        - content: "User-driven"
+          isCorrect: false
+          explanation: ""
+        - content: "Pre-provisioning"
+          isCorrect: false
+          explanation: ""
+        - content: "Manual registration"
+          isCorrect: false
+          explanation: ""
+  - content: "What does the Enrollment Status Page (ESP) display during Windows Autopilot setup?"
+    choices:
+        - content: "The device's configuration progress"
+          isCorrect: true
+          explanation: ""
+        - content: "A list of available Wi-Fi networks"
+          isCorrect: false
+          explanation: ""
+        - content: "The Microsoft account details of the user"
+          isCorrect: false
+          explanation: ""
+        - content: "The hardware specifications of the device"
+          isCorrect: false
+          explanation: ""
+

@@ -2,11 +2,9 @@
 uid: learn.introduction-to-application-resiliency-azure.design-for-resiliency
 title: Design for resiliency
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Design for resiliency
   description: Design for resiliency in Azure
-  ms.date: 08/14/2024
+  ms.date: 11/15/2025
   author: Orin-Thomas
   ms.author: orthomas
   ms.topic: unit

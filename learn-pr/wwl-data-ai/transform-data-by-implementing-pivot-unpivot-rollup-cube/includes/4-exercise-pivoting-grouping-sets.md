@@ -5,7 +5,7 @@ Now it's your chance to try the Transact-SQL techniques you've learned about for
 ### Set up Azure SQL Database
 
 > [!NOTE]
-> To use Azure SQL Database, you will need a [Microsoft Azure subscription](https://azure.microsoft.com/free?azure-portal=true) in which you have administrative access.
+> To use Azure SQL Database, you will need a [Microsoft Azure subscription](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn) in which you have administrative access.
 
 To set up a database for this exercise, sign into your Azure subscription and follow the **[setup instructions](https://go.microsoft.com/fwlink/?linkid=2294301&azure-portal=true)** to provision Azure SQL Database.
 

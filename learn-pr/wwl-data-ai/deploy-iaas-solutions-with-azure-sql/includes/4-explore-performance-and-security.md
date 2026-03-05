@@ -36,13 +36,13 @@ There are several regulations and standards that Azure complies with that makes 
 
 ### Microsoft Defender for SQL
 
-[Microsoft Defender for SQL](/azure/azure-sql/database/azure-defender-for-sql) provides Azure Security Center security features such as vulnerability assessments and security alerts.
+[Microsoft Defender for SQL](/azure/azure-sql/database/azure-defender-for-sql) provides Microsoft Defender for Cloud security features such as vulnerability assessments and security alerts.
 
 Azure Defender for SQL can be used to identify and mitigate potential vulnerabilities in your SQL Server instance and database. The vulnerability assessment feature can detect potential risks in your SQL Server environment and help you remediate them. It also provides insight into your security state and actionable steps to resolve security issues.
 
-### Azure Security Center
+### Microsoft Defender for Cloud
 
-Azure Security Center is a unified security management system that evaluates and offers opportunities for improving several security aspects of your data environment. Azure Security Center is a security management tool that allows you to gain insight into your security state across hybrid cloud workloads, reduce your exposure to attacks, and respond to detected threats quickly.
+Microsoft Defender for Cloud is a unified security management system that evaluates and offers opportunities for improving several security aspects of your data environment. Microsoft Defender for Cloud is a security management tool that allows you to gain insight into your security state across hybrid cloud workloads, reduce your exposure to attacks, and respond to detected threats quickly.
 
 ## Performance considerations
 
@@ -120,3 +120,4 @@ Below is a list of additional SQL Server features and actions to consider for pr
 - Monitor and manage the health and size of the transaction log files
 
 For more information about performance best practices, see [Best practices for SQL Server on Azure VMs](/azure/azure-sql/virtual-machines/windows/performance-guidelines-best-practices-checklist).
+

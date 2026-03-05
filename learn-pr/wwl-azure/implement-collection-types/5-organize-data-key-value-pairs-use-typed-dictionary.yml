@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-collection-types.organize-data-key-value-pairs-use-typed-dictionary
+title: Organize data with Dictionary<TKey, TValue>
+metadata:
+  title: Organize data with Dictionary<TKey, TValue>
+  description: "Learn how to use Dictionary for storing and retrieving data using key-value pairs efficiently."
+  ms.date: 03/28/2025
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 8
+content: |
+  [!include[](includes/5-organize-data-key-value-pairs-use-typed-dictionary.md)]

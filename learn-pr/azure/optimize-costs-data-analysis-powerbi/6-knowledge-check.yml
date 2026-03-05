@@ -1,13 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.optimize-costs-data-analysis-powerbi.knowledge-check
 metadata:
-  title: Knowledge check
+  title: Module assessment
   description: Knowledge check
   ms.date: 11/11/2024
-  author: bandersmsft
-  ms.author: banders
+  author: tonyafehr
+  ms.author: tfehr
   ms.topic: unit
-title: Knowledge check
+  module_assessment: true
+title: Module assessment
 durationInMinutes: 4
 quiz:
   title: Check your knowledge

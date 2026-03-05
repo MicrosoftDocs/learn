@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-started-copilot-fabric-data-warehouse.exercise-copilot-fabric-data-warehouse
+title: Exercise - Use Copilot in Microsoft Fabric data warehouse
+metadata:
+  title: Exercise - Use Copilot in Microsoft Fabric Data Warehouse
+  description: "Exercise - Use Copilot in Microsoft Fabric data warehouse"
+  ms.date: 08/18/2025
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+durationInMinutes: 30
+content: |
+  [!include[](includes/exercise-copilot-fabric-data-warehouse.md)]

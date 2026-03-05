@@ -2,11 +2,9 @@
 uid: learn.wwl.build-multi-item-transactions-azure-cosmos-db-sql-api.create-stored-procedures-sdk
 title: Create stored procedures with the JavaScript SDK
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Create stored procedures with the JavaScript SDK
   description: "Create stored procedures with the JavaScript SDK"
-  ms.date: 10/17/2022
+  ms.date: 04/02/2025
   author: wwlpublish
   ms.author: calopez
   ms.topic: unit

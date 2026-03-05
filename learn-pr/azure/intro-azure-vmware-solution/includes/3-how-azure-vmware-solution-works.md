@@ -40,11 +40,11 @@ Azure VMware Solution monitors the following conditions on the host:
 
 ## Private clouds, clusters, and hosts in Azure
 
-Azure VMware Solution provides private clouds that contain vSphere clusters. Those clusters are built from dedicated bare-metal Azure hosts. 
+Azure VMware Solution provides VCF private clouds on Azure dedicated hardware.
 
 Each private cloud can have multiple clusters managed by the same vCenter Server and NSX Manager. Private clouds are installed and managed from within an Azure subscription. The number of private clouds within a subscription is scalable.
 
-For each private cloud created, there's one vSphere cluster by default. You can add, delete, and scale clusters by using the Azure portal or by using the API. Microsoft offers node configurations based on core, memory, and storage requirements. Choose the type of node that's appropriate for your region; the most common choice is AV36P. 
+For each private cloud created, there's one vSphere cluster by default. You can add, delete, and scale clusters by using the Azure portal or by using the API. Microsoft offers node configurations based on core, memory, and storage requirements. Choose the type of node that's appropriate for your region; the most common choice is AV36P.
 
 Minimum and maximum node configurations are:
 
@@ -57,12 +57,12 @@ The following table shows the CPU, memory, disk, and network specifications of t
 
 | Host Type | CPU   | RAM   | vSAN Cache Tier | vSAN Capacity |
 | :---     | :---  | :---:  | :---            | :---          |
-| AV36      | Dual Intel Xeon Gold 6140 CPUs, 18 cores/CUP @ 2.3 GHz. Total 36 physical cores. | 576 GB | 3.2 TB (NVMe) | 15.20 TB (SSD)|
 | AV36P      | Dual Intel Xeon Gold 6240 CPUs, 18 cores/CPU @ 2.6 GHz / 3.9 GHz Turbo. Total 36 physical cores. | 768 GB | 1.5 TB (Intel Cache) | 19.20 TB (NVMe)|
+| AV48       | Dual Intel Xeon Gold 6442Y CPUs, 24 cores/CPU @ 2.6 GHz / 4.0 GHz Turbo. Total 48 physical cores. | 1,024 GB | N/A | 25.6 TB (NVMe) |
 | AV52      | Dual Intel Xeon Platinum 8270 CPUs, 26 cores/CPU @ 2.7 GHz / 4.0 GHz Turbo. Total 52 physical cores. | 1,536 GB | 1.5 TB (Intel Cache) | 38.40 TB (NVMe)|
 | AV64*      | Dual Intel Xeon Platinum 8370C CPUs, 32 cores/CPU @ 2.8 GHz / 3.5 GHz Turbo. Total 64 physical cores. | 1,024 GB | 3.84 TB (NVMe) | 15.36 TB (NVMe)|
 
-(*) An Azure VMware Solution private cloud deployed with AV36, AV36P, or AV52 is required prior to adding AV64 hosts. 
+(*) In AVS Gen 1, an Azure VMware Solution private cloud deployed with AV36P, AV48, or AV52 is required prior to adding AV64 hosts. In AVS Gen 2, AV64 can be deployed alone.
 
 You use vSphere and NSX Manager to manage most aspects of cluster configuration or operation. All local storage for each host in a cluster is under the control of vSAN. Each ESXi host in the solution is configured with four 25-Gbps NICs, two NICs provisioned for ESXi system traffic, and two NICs provisioned for workload traffic.
 
@@ -113,8 +113,8 @@ vSAN original storage architecture uses a unit of resources known as a disk grou
 
 | Host Type | vSAN Cache tier (TB, raw) | vSAN Capacity tier (TB, raw) |
 | :---      | :---                      | :--- |                      
-| AV36      | 3.2 (NVMe)                | 15.20 (SSD)   |
 | AV36P     | 1.5 (Intel Cache)         | 19.20 (NVMe)  |
+| AV48      | N/A                       | 25.60 (NVMe)  |
 | AV52      | 1.5 (Intel Cache)         | 38.40 (NVMe)  |
 | AV64      | 3.84 (NVMe)               | 15.36 (NVMe)  |
 
@@ -147,7 +147,7 @@ The following table outlines the steps that an organization takes to get started
 
 |Milestone |Steps  |
 |---------|---------|
-|Plan   |  Plan the deployment of Azure VMware Solution: <br> - Assess workloads <br> - Determine sizing <br> - Identify the host <br> - Request a quote <br> - Determine networking and connectivity      |
+|Plan   |  Plan the deployment of Azure VMware Solution: <br> - Assess workloads <br> - Determine sizing <br> - Identify the host <br> - Request quota <br> - Determine networking and connectivity      |
 |Deploy     | Deploy and configure Azure VMware Solution: <br>- Register the Microsoft.AVS resource provider <br>- Create an Azure VMware Solution private cloud <br>- Connect to Azure Virtual Network with ExpressRoute  <br>- Validate the connection<br>    |
 |Connect to on-premises     |  Create an ExpressRoute authorization key in the on-premises ExpressRoute circuit: <br>- Peer the private cloud to on-premises  <br> - Verify on-premises network connectivity <br> Other connectivity options are also available.    |
 |Deploy and configure VMware HCX     |  Deploy and configure VMware HCX: <br>- Enable the HCX service add-on <br>- Download the VMware HCX Connector OVA <br>- Deploy the on-premises VMware HCX OVA (VMware HCX Connector)<br>-  Activate the VMware HCX Connector <br>- Pair your on-premises VMware HCX Connector with your Azure VMware Solution HCX Cloud Manager <br>- Configure the interconnect (network profile, compute profile, and service mesh) <br>- Complete setup by checking the appliance status and validating that migration is possible     |

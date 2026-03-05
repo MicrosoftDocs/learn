@@ -1,0 +1,42 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-ninja-discover-define-sits.knowledge-check
+title: Module assessment
+metadata:
+  title: Module assessment
+  description: "Knowledge check."
+  ms.date: 08/21/2025
+  author: sachow
+  ms.author: sachow
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is the first step the information protection team should take when identifying sensitive information after a company acquisition?"
+    choices:
+    - content: "Define custom sensitive information types"
+      isCorrect: false
+    - content: "Assess data sources and environment"
+      isCorrect: true
+    - content: "Create Data Loss Prevention policies"
+      isCorrect: false
+
+  - content: "Why is it important to test custom sensitive information types before implementing Data Loss Prevention and autolabeling policies?"
+    choices:
+    - content: "To decrease false positives and refine definitions"
+      isCorrect: true
+    - content: "To meet regulatory requirements"
+      isCorrect: false
+    - content: "To train employees on data handling"
+      isCorrect: false
+
+  - content: "Which method provides the most accurate detection of organization-specific sensitive information types?"
+    choices:
+    - content: "Define patterns, keywords, or regular expressions"
+      isCorrect: false
+    - content: "Use document fingerprinting"
+      isCorrect: false
+    - content: "Use exact data match"
+      isCorrect: true

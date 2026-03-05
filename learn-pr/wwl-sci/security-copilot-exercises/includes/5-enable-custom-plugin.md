@@ -1,12 +1,12 @@
-In this exercise, you experiment with a custom plugin. You start by checking the owner settings for who can add and manage their own custom plugins and who can add and manage custom plugins for everyone in the organization. Once you have configured the owner settings, you upload the file for your custom plugin. Uploading the files adds the plugin capability to Copilot. Once the plugin is added, you validate that is shows up as a system capability and start using it.
+In this exercise, you experiment with a custom plugin. You start by checking the owner settings for who can add and manage their own custom plugins and who can add and manage custom plugins for everyone in the organization. Once you configure the owner settings, you upload the file for your custom plugin. Uploading the files adds the plugin capability to Copilot. Once the plugin is added, you validate that is shows up as a system capability and start using it.
 
 The creation of the YAML or JSON plugin manifest file, which describes metadata about the plugin and how to invoke it, is outside the scope of this content, but you can obtain more information by visiting [Create your own custom plugins](/copilot/security/custom-plugins).
 
 > [!NOTE]
-> The environment for this exercise is a simulation generated from the product. As a limited simulation, links on a page may not be enabled and text-based inputs that fall outside of the specified script may not be supported. A pop-up message will display stating, "This feature is not available within the simulation." When this occurs, select OK and continue the exercise steps.  
->:::image type="content" source="../media/simulation-pop-up-error.png" alt-text="Screenshot of pop-up screen indicating that this feature is not available within the simulation.":::
+> The environment for this exercise is a simulation generated from the product. As a limited simulation, links on a page may not be enabled and text-based inputs that fall outside of the specified script may not be supported. A pop-up message displays stating, "This feature is not available within the simulation." When this occurs, select OK and continue the exercise steps.  
 >
-> Also, Microsoft Security Copilot was previously referred to as Microsoft Copilot for Security. Throughout this simulation, you'll find that the user interface still reflects the original name.
+>
+>:::image type="content" source="../media/simulation-pop-up-error.png" alt-text="Screenshot of pop-up screen indicating that this feature isn't available within the simulation.":::
 
 ### Exercise
 
@@ -15,32 +15,30 @@ For this exercise, you're logged in as Avery Howard and have the Copilot owner r
 This exercise should take approximately **10** minutes to complete.
 
 > [!NOTE]
-> When a lab instruction calls for opening a link to the simulated environment, it is generally recommended that you open the link in a new browser window so that you can simultaneously view the instructions and the exercise environment. To do so, select the right mouse key and select the option.
+> When a lab instruction calls for opening a link to the simulated environment, it's recommended that you open the link in a new browser window so that you can simultaneously view the instructions and the exercise environment. To do so, select the right mouse key and select the option.
 
 #### Before you start
 
-For this exercise, you'll be using a sample .yaml file, 'KQL_DefenderExample.yaml.'
+For this exercise, you are using a sample .yaml file, 'KQL_DefenderExample.yaml.'
 
 1. Select the link **[KQL_DefenderExample.yaml](https://github.com/MicrosoftLearning/SC-5006-Enhance-security-by-Microsoft-Security-Copilot/blob/master/Sample%20files/KQL_DefenderExample.yaml?azure-portal=true)** to access the sample file.
 
-1. Select the **Download raw file ![download raw file icon](../media/raw-file-download-icon-v2.png)** icon. Save the file on your local computer, as you will need it later. 
+1. Select the **Download raw file ![download raw file icon](../media/raw-file-download-icon-v2.png)** icon. Save the file on your local computer, as you'll need it later. 
 
-   Alternatively, because this is a simulation, you can create the file named 'KQL_DefenderExample.yaml.' Because this is a simulation, the contents of the file you create won't matter. The system capabilities and prompt responses shown in the simulation, however, are based on the actual file.
+   Alternatively, because this is a simulation, you can create the file named 'KQL_DefenderExample.yaml.' Because this is a simulation, the contents of the file you create don't matter. The system capabilities and prompt responses shown in the simulation, however, are based on the actual file.
 
 
 #### Task: Update owner settings for custom plugins
 
 In this task, you configure Copilot so that Copilot owners and contributors can add and manage their own custom plugins and for everyone in the organization. 
 
-1. Open the simulated environment by selecting this link: **[Microsoft Security Copilot](https://app.highlights.guide/start/89f9d04d-283c-4788-8214-22e4d5b4b171?link=0&token=40f793d4-2956-40a4-b11a-6b3d4f92557f&azure-portal=true)**.
+1. Open the simulated environment by selecting this link: **[Microsoft Security Copilot](https://app.highlights.guide/start/f7107adc-8d47-43ae-a7f7-f9e9a35881c4?token=045faae1-1078-4eac-bf56-e12472eddaf9&azure-portal=true)**.
 
 1. Select the **Home menu** (hamburger) icon
 
-1. Select **Owner settings**.
-
-1. Under Plugins for Security Copilot,
-    1. Set "Who can add and manage their own custom plugins" to **Contributors and owners**.
-    1. Set "Who can add and manage custom plugins for everyone in the organization" to **Contributors and owners**.
+1. Select **Plugin settings**.
+    1. Set "Who can add and manage their own custom plugins?" to **Contributors and owners**.
+    1. Set "Who can add and manage custom plugins for users of this workspace?" to **Contributors and owners**.
 
 1. Return to the landing page. Select **Microsoft Security Copilot** next to the home menu (hamburger) icon.
 

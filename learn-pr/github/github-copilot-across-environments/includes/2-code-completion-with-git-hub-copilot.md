@@ -34,16 +34,18 @@ Copilot offers code suggestions as you type: sometimes completing the current li
 
 ## Multiple suggestions pane
 
-When you're working on a code block and GitHub Copilot offers a suggestion, you see a grayed-out code snippet. To explore more options, hover over the suggestion to reveal the GitHub Copilot control panel.
+When you're working on a code block and GitHub Copilot offers a suggestion, you see a grayed-out code snippet. To explore more options and accelerate your development workflow, hover over the suggestion to reveal the GitHub Copilot control panel. This feature allows you to quickly evaluate multiple approaches to the same problem, helping you choose the most suitable solution for your specific context.
 
 :::image type="content" source="../media/multiple-suggestion-auto-completion-ghost-text.png" alt-text="Screenshot of multiple suggestion auto completion ghost text.":::
 
-Click the forward or backward arrow buttons in the control panel to see the next or previous suggestions. You can also use keyboard shortcuts:
+Click the forward or backward arrow buttons in the control panel to see the next or previous suggestions. You can also use keyboard shortcuts to rapidly cycle through options:
 
 - macOS: Option (⌥) or Alt+] (next), Option (⌥) or Alt+[ (previous) 
 - Windows or Linux: Alt+] (next), Alt+[ (previous)
 
 :::image type="content" source="../media/suggestions-pane.gif" alt-text="Screenrecord of suggestions pane.":::
+
+This rapid iteration through multiple code suggestions helps you maintain development momentum by letting you quickly compare approaches without interrupting your coding flow. Instead of starting from scratch or searching online for examples, you can evaluate different implementations within seconds, selecting the one that best fits your needs and coding style.
 
 While GitHub Copilot is superb at suggesting code for you, it also demonstrates its ability to adapt through the following ways:
 

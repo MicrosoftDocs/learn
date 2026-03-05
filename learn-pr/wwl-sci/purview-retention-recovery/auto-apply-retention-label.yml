@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-retention-recovery.auto-apply-retention-label
+title: Create and manage auto-apply retention labels
+metadata:
+  title: Create and manage auto-apply retention labels
+  description: "Create and manage auto-apply retention labels."
+  ms.date: 04/14/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 9
+content: |
+  [!include[](includes/auto-apply-retention-label.md)]

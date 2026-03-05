@@ -1,12 +1,11 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.deploy-java-ee-app-to-app-service.8-knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  title: Knowledge Check
+  title: Module assessment
   description: Check your knowledge of JBoss EAP.
-  author: KarlErickson
-  ms.author: karler
-  ms.reviewer: yoshioterada
+  author: yoshioterada
+  ms.author: yoterada
   ms.date: 03/16/2025
   ms.topic: unit
   ms.custom:
@@ -14,6 +13,7 @@ metadata:
     - devx-track-java
     - devx-track-javaee-jbosseap-appsvc
     - devx-track-javaee
+  module_assessment: true
 durationInMinutes: 2
 quiz:
   questions:

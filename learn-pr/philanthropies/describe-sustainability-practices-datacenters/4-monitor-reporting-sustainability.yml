@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.describe-sustainability-practices-datacenters.monitor-reporting-sustainability
+title: Monitoring and reporting sustainability
+metadata:
+  title: Monitoring and reporting sustainability
+  description: This content is a part of the Describe the sustainability practices in datacenters.
+  ms.date: 05/08/2025
+  author: kiranchandratrey
+  ms.author: elenasim
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/4-monitor-reporting-sustainability.md)]

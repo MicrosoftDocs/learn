@@ -2,13 +2,11 @@
 uid: learn.wwl.automl-azure-databricks.automl-code
 title: Use code to run an AutoML experiment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Use code to run an AutoML experiment
   description: Use code to run an AutoML experiment
-  author: wwlpublish
-  ms.author: madiepev
-  ms.date: 08/26/2024
+  author: JulianePadrao
+  ms.author: jupadrao
+  ms.date: 4/24/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot

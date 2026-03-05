@@ -2,13 +2,11 @@
 uid: learn.wwl.design-model-deployment-solution.understand-how-model-consumed
 title: Understand how model will be consumed
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Understand how model will be consumed
   description: Understand how model will be consumed
   author: wwlpublish
   ms.author: madiepev
-  ms.date: 07/10/2024
+  ms.date: 12/01/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot

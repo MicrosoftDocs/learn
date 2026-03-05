@@ -1,0 +1,40 @@
+### YamlMime:Module
+uid: learn.dpu.windows-server-features
+title: Key features and innovations in Windows Server 2025
+metadata:
+  title: Key Features And Innovations In Windows Server 2025
+  description: In this module, you explore the key features of Windows Server 2025.
+  ms.date: 08/27/2025
+  author: Stephanie-Rosenzweig
+  ms.author: v-stephanier
+  ms.topic: module
+  ms.service: windows-server
+  ms.custom: CS110724-2
+summary: >
+  In this module, you'll learn about the features and capabilities of Windows Server 2025.
+abstract: |
+  By the end of this module, you'll be able to:
+  - Apply key features of Windows Server 2025 to support business security and efficiency.
+  - Discover how Windows Server 2025 enables flexible and remote work capabilities.
+  - Discover the benefits of Windows Server 2025 for streamlining everyday business operations.
+prerequisites: |
+  - None
+iconUrl: /training/achievements/generic-badge.svg
+ratingEnabled: false
+levels:
+  - beginner
+roles:
+  - business-owner
+  - business-user
+  - administrator
+  - technology-manager
+products:
+  - windows-server
+units:
+  - learn.dpu.windows-server-features.introduction
+  - learn.dpu.windows-server-features.windows-server-2025
+  - learn.dpu.windows-server-features.flexible-hybrid-capabilities
+  - learn.dpu.windows-server-features.knowledge-check
+  - learn.dpu.windows-server-features.summary
+badge:
+  uid: learn.dpu.windows-server-features.badge

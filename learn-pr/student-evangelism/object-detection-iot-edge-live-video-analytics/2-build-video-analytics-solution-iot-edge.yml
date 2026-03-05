@@ -2,8 +2,6 @@
 uid: learn.oxford.object-detection-lva-edge-device.build-video-analytics-solution
 title: Build the video analytics solution on IoT Edge
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Build the video analytics solution on IoT Edge
   description: In this section, we provide overview of video analytics solution
   ms.date: 07/20/2024
@@ -13,4 +11,4 @@ metadata:
 durationInMinutes: 7
 content: |
   [!include[](includes/2-build-video-analytics-solution-iot-edge.md)]
-
+

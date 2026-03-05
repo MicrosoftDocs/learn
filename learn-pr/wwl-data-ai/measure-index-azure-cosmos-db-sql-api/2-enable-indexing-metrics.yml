@@ -2,11 +2,9 @@
 uid: learn.wwl.measure-index-azure-cosmos-db-sql-api.enable-indexing-metrics
 title: Enable indexing metrics
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Enable indexing metrics
   description: "Enable indexing metrics"
-  ms.date: 10/23/2024
+  ms.date: 04/02/2025
   author: wwlpublish
   ms.author: calopez
   ms.topic: unit

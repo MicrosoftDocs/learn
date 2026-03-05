@@ -18,4 +18,4 @@ By the end of this module, you're able to:
 ## Prerequisites
 
 - Familiarity with security operations in an organization
-- Basic experience with Azure services
+- Basic experience with Microsoft Defender and Azure services

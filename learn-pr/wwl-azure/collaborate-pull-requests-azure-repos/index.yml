@@ -1,59 +1,66 @@
 ### YamlMime:Module
 uid: learn.wwl.collaborate-pull-requests-azure-repos
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Collaborate with pull requests in Azure Repos
-  description: "Collaborate with pull requests in Azure Repos"
-  ms.date: 05/24/2024
-  author: wwlpublish
+  description: "Collaborate with enterprise-grade pull request workflows, advanced collaboration patterns, and strategic code review practices in Azure Repos for scalable DevOps implementations."
+  ms.date: 09/09/2025
+  author: LuizMacedo
   ms.author: lumac
   ms.topic: module
   ms.service: azure
   ai-usage: ai-assisted
 title: Collaborate with pull requests in Azure Repos
-summary: This module presents pull requests for collaboration and code reviews using Azure DevOps and GitHub mobile for pull request approvals. It helps understanding how pull requests works and how to configure them.
+summary: This module covers strategic code review practices, automated policy enforcement, and scalable team collaboration frameworks essential for modern DevOps implementations.
 abstract: |
   By the end of this module, you're able to:
 
-  -   Leverages pull requests for collaboration and code reviews
+  -   Implement enterprise-grade pull request workflows for scalable collaboration
 
-  -   Give feedback using pull requests
+  -   Design strategic code review processes that enhance quality and knowledge transfer
 
-  -   Configure branch policies
+  -   Configure advanced branch policies and automated governance controls
 
-  -   Use GitHub mobile for pull requests approvals
-prerequisites: None
+  -   Orchestrate cross-team collaboration patterns using Azure Repos integration capabilities
+
+  -   Establish audit trails and compliance frameworks through pull request governance
+prerequisites: |
+  - Experience with Git version control fundamentals and branching strategies
+  - Familiarity with Azure DevOps services and enterprise development workflows
+  - Understanding of software development lifecycle and collaborative development practices
+  - Basic knowledge of code review principles and quality assurance processes
 iconUrl: /training/achievements/3-collaborate-with-pull-requests-in-azure-repos.svg
 levels:
-- advanced
+  - advanced
 roles:
-- administrator
-- developer
-- devops-engineer
-- security-engineer
-- security-operations-analyst
-- service-adoption-specialist
-- solution-architect
-- technology-manager
+  - administrator
+  - ai-engineer
+  - data-engineer
+  - developer
+  - devops-engineer
+  - platform-engineer
+  - security-engineer
+  - security-operations-analyst
+  - service-adoption-specialist
+  - solution-architect
+  - startup-founder
+  - technology-manager
 products:
-- azure
-- azure-artifacts
-- azure-boards
-- azure-cloud-services
-- azure-devops
-- azure-pipelines
-- azure-repos
-- azure-test-plans
-- github
+  - azure
+  - azure-artifacts
+  - azure-boards
+  - azure-cloud-services
+  - azure-devops
+  - azure-pipelines
+  - azure-repos
+  - azure-test-plans
+  - github
 subjects:
-- data-engineering
-- devops
+  - devops
 units:
-- learn.wwl.collaborate-pull-requests-azure-repos.introduction
-- learn.wwl.collaborate-pull-requests-azure-repos.collaborate-pull-requests
-- learn.wwl.collaborate-pull-requests-azure-repos.exercise-collaborating-pull-requests
-- learn.wwl.collaborate-pull-requests-azure-repos.knowledge-check
-- learn.wwl.collaborate-pull-requests-azure-repos.summary
+  - learn.wwl.collaborate-pull-requests-azure-repos.introduction
+  - learn.wwl.collaborate-pull-requests-azure-repos.collaborate-pull-requests
+  - learn.wwl.collaborate-pull-requests-azure-repos.exercise-collaborating-pull-requests
+  - learn.wwl.collaborate-pull-requests-azure-repos.knowledge-check
+  - learn.wwl.collaborate-pull-requests-azure-repos.summary
 badge:
   uid: learn.wwl.collaborate-pull-requests-azure-repos.badge

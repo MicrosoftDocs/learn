@@ -1,5 +1,4 @@
-:::image type="content" source="../media/company-brand-583c4126-c1812a7a.png" alt-text="Screenshot of the Microsoft Entra ID Company Branding page. You can pick a default language, a corporate logo, and over values.":::
-
+:::image type="content" source="../media/company-brand.png" alt-text="Screenshot of the Microsoft Entra ID Company Branding page. You can pick a default language, a corporate logo, and over values.":::
 
 You can use your organization's logo and custom color schemes to provide a consistent experience on your sign-in pages. Your sign-in pages appear when users sign in to your organization's web-based apps, such as Microsoft 365, which uses Microsoft Entra ID as your identity provider. Adding custom branding requires you to have either **Microsoft Entra ID premium P1, P2, or Office 365 (for Office 365 apps)** license.
 

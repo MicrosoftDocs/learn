@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.configure-continuous-deployment-container-apps
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Configure continuous deployment for container apps
   description: This module explores deployment options for containerized apps and delves into the features of Azure DevOps and Azure Pipelines. It guides users in setting up automated pipelines for container apps, covering agent pool configuration and secret variables management.
   ms.date: 02/29/2024
@@ -47,4 +45,4 @@ units:
 - learn.wwl.configure-continuous-deployment-container-apps.summary
 badge:
   uid: learn.wwl.configure-continuous-deployment-container-apps.badge
-
+

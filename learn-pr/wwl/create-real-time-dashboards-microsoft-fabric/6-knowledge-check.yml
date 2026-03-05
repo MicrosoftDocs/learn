@@ -1,15 +1,19 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.create-real-time-dashboards-microsoft-fabric.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  title: Knowledge check
+  hidden_question_numbers: ["2F0B032A_2","2F0B032A_26","2F0B032A_34","2F0B032A_38","2F0B032A_6","2F0B032A_51","2F0B032A_55","2F0B032A_63","2F0B032A_67","2F0B032A_75","2F0B032A_83","2F0B032A_87","2F0B032A_95","2F0B032A_104","2F0B032A_108","2F0B032A_120","2F0B032A_128","2F0B032A_140"]
+  module_assessment_regen_label: regen-1757542483821
+  ai_generated_module_assessment: true
+  title: Module assessment
   description: "Knowledge check"
-  ms.date: 12/12/2024
-  author: wwlpublish
-  ms.author: gmalc
+  ms.date: 09/07/2025
+  author: theresa-i
+  ms.author: theresai
   ms.topic: unit
   ms.custom:
   - N/A
+  module_assessment: true
 durationInMinutes: 3
 quiz:
   title: "Check your knowledge"

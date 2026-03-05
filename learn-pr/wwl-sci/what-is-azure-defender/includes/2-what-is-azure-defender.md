@@ -33,8 +33,7 @@ When you enable Defender for Cloud from the Pricing and settings area, the follo
 
 - Microsoft Defender for Resource Manager
 
-- Microsoft Defender for DNS
-
+- Microsoft Defender for APIs
 
 ## Hybrid cloud protection
 
@@ -44,7 +43,7 @@ In addition to defending your Azure environment, you can add Defender for Cloud 
 
 - Protect your virtual machines in other clouds (such as AWS and GCP)
 
-You'll get customized threat intelligence and prioritized alerts according to your specific environment so that you can focus on what matters the most.
+You get customized threat intelligence and prioritized alerts according to your specific environment so that you can focus on what matters the most.
 
 To extend protection to virtual machines and SQL databases in other clouds or on-premises, deploy Azure Arc and enable Defender for Cloud. Azure Arc for servers is a free service, but services used on Arc enabled servers, such as Defender for Cloud, are charged per the pricing for that service. To learn more, see [Add non-Azure machines with Azure Arc](/azure/defender-for-cloud/quickstart-onboard-machines?pivots=azure-arc#add-non-azure-machines-with-azure-arc).
 

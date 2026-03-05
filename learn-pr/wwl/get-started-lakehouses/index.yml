@@ -2,30 +2,27 @@
 uid: learn.wwl.get-started-lakehouses
 metadata:
   title: Get started with lakehouses in Microsoft Fabric
-  description: "Get started with lakehouses in Microsoft Fabric"
-  ms.date: 03/19/2025
+  description: "Lakehouses in Microsoft Fabric combine data lake flexibility with data warehouse analytics. Learn how to create, load, and query a lakehouse on a single platform."
+  ms.date: 03/04/2026
   author: angierudduck
   ms.author: anrudduc
   ms.topic: module-standard-task-based
   ms.collection: N/A
   ms.service: fabric
-  ai-usage: human-only
+  ai-usage: ai-assisted
 title: Get started with lakehouses in Microsoft Fabric
-summary: Lakehouses merge data lake storage flexibility with data warehouse analytics. Microsoft Fabric offers a lakehouse solution for comprehensive analytics on a single SaaS platform.
+summary: Lakehouses in Microsoft Fabric combine data lake storage flexibility with data warehouse analytical capabilities. Learn how to create a lakehouse, ingest and transform data, and query data with SQL and Spark.
 abstract: |
   In this module, you learn how to:
 
   -   Describe core features and capabilities of lakehouses in Microsoft Fabric.
-
   -   Create a lakehouse.
-
-  -   Ingest data into files and tables in a lakehouse.
-
-  -   Query lakehouse tables with SQL.
+  -   Ingest and transform data in a lakehouse.
+  -   Query and analyze lakehouse data with SQL and Spark.
 prerequisites: Before starting this module, you should understand fundamental data storage and analytics concepts.
 iconUrl: /training/achievements/get-started-lakehouses.svg
 levels:
-- intermediate
+- beginner
 roles:
 - data-analyst
 - data-engineer

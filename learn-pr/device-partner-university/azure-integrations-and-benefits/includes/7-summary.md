@@ -1,0 +1,3 @@
+Throughout this module, you explored how Windows Server 2025 integrates with Microsoft Azure to create a powerful hybrid management experience. You learned how Azure Arc extends control across on-premises and multi-cloud environments, enabling consistent governance and streamlined operations.
+
+Security and compliance were key themes, with tools like Azure Policy and role-based access control helping you enforce standards across all deployments. You also discovered how Hotpatching can dramatically reduce downtime, keeping systems secure and available. Finally, you saw how Azure’s advanced compute, storage, and resilience features can elevate Windows Server performance for even the most demanding workloads.

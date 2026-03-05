@@ -15,8 +15,8 @@ Now that you completed this module, you should be able to:
 - [GitHub Copilot: The Agent Awakens](https://github.blog/news-insights/product-news/github-copilot-the-agent-awakens)
 - [Introducing GitHub Copilot Agent Mode (preview)](https://code.visualstudio.com/blogs/2025/02/24/introducing-copilot-agent-mode)
 - [Developing in Visual Studio Code](https://code.visualstudio.com/docs)
+- [Premium Request Units (PRUs) - GitHub Documentation](https://docs.github.com/en/copilot/concepts/billing/copilot-requests)
 
-## Get Certified
-Enhance your skills and get certified! Microsoft AI Skillsfest participants will receive a 50% discount code for GitHub's newest certification exam- GitHub Copilot. The exam discount code is valid through May 28, 2025. Exams must be completed by June 30, 2025. You can register for your exam and review exam study materials by going to [our website](https://resources.github.com/learn/certifications/). 
+## Provide feedback
 
-**COUPON CODE**: AN6T5E9C
+Use this [issue form](https://github.com/githubpartners/microsoft-learn/issues/new/choose) to provide content feedback or suggested changes for this Microsoft Learn module. GitHub maintains this content and a team member will triage the request. Thank you for taking the time to improve our content!

@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.understand-fabric-iq-fundamentals.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: "Introduction to Microsoft Fabric IQ and how ontologies define business vocabulary for data agents and Graph in Microsoft Fabric."
+  ms.date: 02/09/2026
+  author: theresa-i
+  ms.author: theresai
+  ms.topic: unit
+  ai-usage: ai-generated
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/1-introduction.md)]

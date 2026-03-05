@@ -4,8 +4,8 @@ title: Create a NuGet package
 metadata:
   unitType: exercise
   title: Create a NuGet package
-  description: "In this exercise, you'll package the Razor class library that you created earlier."
-  ms.date: 01/26/2024
+  description: "In this exercise, you package the Razor class library that you created earlier."
+  ms.date: 04/07/2025
   author: csharpfritz
   ms.author: jefritz
   ms.manager: markl

@@ -1,4 +1,4 @@
-In this module, you'll run Azure AI services on an edge device with Azure IoT Edge.
+In this module, you run Azure AI services on an edge device with Azure IoT Edge.
 
 ## High-level goals
 
@@ -15,4 +15,4 @@ In this module, you'll run Azure AI services on an edge device with Azure IoT Ed
 5. Set the Language Detection container on to the edge device
 6. Test your cognitive service
 
-By the end of the module, you'll deploy a module to an edge device, which uses Azure AI services in a container. It will analyze text and detect the language of the text on the edge. You'll test your Text Analytics API in the browser. Consider the scenario outlined previously. In this scenario, for a disaster zone, you were tasked with managing donated medical supplies from a variety of countries/regions. By using cognitive API capabilities like language detection on an edge device, you can rapidly determine the origin (source) of the medicine, even when the internet connectivity is nonexistent.
+By the end of the module, you deploy a module to an edge device, which uses Azure AI services in a container. It analyzes text and detects the language of the text on the edge. You test your Text Analytics API in the browser. Consider the scenario outlined previously. In this scenario, for a disaster zone, you're tasked with managing donated medical supplies from different countries or regions. By using cognitive API capabilities like language detection on an edge device, you can quickly check the origin of the medicine, even when internet connectivity isn't available.

@@ -1,41 +1,168 @@
-## Data protection in Azure Storage
+Azure Storage provides foundational data services including Blob storage, Azure Files, Queue storage, and Table storage. Securing these services requires careful consideration of network controls, encryption options, and access management aligned with MCSB data protection controls.
 
-| Scenario | Data protection option | Recommendations | Protection benefit | Available for Data Lake Storage |
-|--|--|--|--|--|
-| Prevent a storage account from being deleted or modified. | Azure Resource Manager lock | Lock all of your storage accounts with an Azure Resource Manager lock to prevent deletion of the storage account. | Protects the storage account against deletion or configuration changes.<br /><br />Doesn't protect containers or blobs in the account from being deleted or overwritten. | Yes |
-| Prevent a blob version from being deleted for an interval that you control. | Immutability policy on a blob version | Set an immutability policy on an individual blob version to protect business-critical documents, for example, in order to meet legal or regulatory compliance requirements. | Protects a blob version from being deleted and its metadata from being overwritten. An overwrite operation creates a new version.<br /><br />If at least one container has version-level immutability enabled, the storage account is also protected from deletion. Container deletion fails if at least one blob exists in the container. | No |
-| Prevent a container and its blobs from being deleted or modified for an interval that you control. | Immutability policy on a container | Set an immutability policy on a container to protect business-critical documents, for example, in order to meet legal or regulatory compliance requirements. | Protects a container and its blobs from all deletes and overwrites.<br /><br />When a legal hold or a locked time-based retention policy is in effect, the storage account is also protected from deletion. Containers for which no immutability policy has been set aren't protected from deletion. | Yes |
-| Restore a deleted container within a specified interval. | Container soft delete | Enable container soft delete for all storage accounts, with a minimum retention interval of seven days.<br /><br />Enable blob versioning and blob soft delete together with container soft delete to protect individual blobs in a container.<br /><br />Store containers that require different retention periods in separate storage accounts. | A deleted container and its contents may be restored within the retention period.<br /><br />Only container-level operations (for example, [Delete Container](/rest/api/storageservices/delete-container)) can be restored. Container soft delete doesn't enable you to restore an individual blob in the container if that blob is deleted. | Yes |
-| Automatically save the state of a blob in a previous version when it's overwritten. | Blob versioning | Enable blob versioning, together with container soft delete and blob soft delete, for storage accounts where you need optimal protection for blob data.<br /><br />Store blob data that doesn't require versioning in a separate account to limit costs. | Every blob write operation creates a new version. The current version of a blob may be restored from a previous version if the current version is deleted or overwritten. | No |
-| Restore a deleted blob or blob version within a specified interval. | Blob soft delete | Enable blob soft delete for all storage accounts, with a minimum retention interval of seven days.<br /><br />Enable blob versioning and container soft delete together with blob soft delete for optimal protection of blob data.<br /><br />Store blobs that require different retention periods in separate storage accounts. | A deleted blob or blob version may be restored within the retention period. | Yes |
-| Restore a set of block blobs to a previous point in time. | Point-in-time restore | To use point-in-time restore to revert to an earlier state, design your application to delete individual block blobs rather than deleting containers. | A set of block blobs may be reverted to their state at a specific point in the past.<br /><br />Only operations performed on block blobs are reverted. Any operations performed on containers, page blobs, or append blobs aren't reverted. | No |
-| Manually save the state of a blob at a given point in time. | Blob snapshot | Recommended as an alternative to blob versioning when versioning isn't appropriate for your scenario, due to cost or other considerations, or when the storage account has a hierarchical namespace enabled. | A blob may be restored from a snapshot if the blob is overwritten. If the blob is deleted, snapshots are also deleted. | Yes, in preview |
-| A blob can be deleted or overwritten, but the data is regularly copied to a second storage account. | Roll-your-own solution for copying data to a second account by using Azure Storage object replication or a tool like AzCopy or Azure Data Factory. | Recommended for peace-of-mind protection against unexpected intentional actions or unpredictable scenarios.<br /><br />Create the second storage account in the same region as the primary account to avoid incurring egress charges. | Data can be restored from the second storage account if the primary account is compromised in any way. | AzCopy and Azure Data Factory are supported.<br /><br />Object replication isn't supported. |
+## Design considerations for Azure Storage security
 
-## Data encryption in Azure Storage
+### Network security options
 
-Azure Storage encryption is enabled for all storage accounts, including both Resource Manager and classic storage accounts. Azure Storage encryption cannot be disabled. Because your data is secured by default, you don't need to modify your code or applications to take advantage of Azure Storage encryption.
+Azure Storage offers multiple network security mechanisms:
 
-Data in a storage account is encrypted regardless of performance tier (standard or premium), access tier (hot or cool), or deployment model (Azure Resource Manager or classic). All new and existing block blobs, append blobs, and page blobs are encrypted, including blobs in the archive tier. All Azure Storage redundancy options support encryption, and all data in both the primary and secondary regions is encrypted when geo-replication is enabled. All Azure Storage resources are encrypted, including blobs, disks, files, queues, and tables. All object metadata is also encrypted.
+| Mechanism | Description | Use case |
+|-----------|-------------|----------|
+| **Firewall rules** | Allow access from specific IP addresses/ranges | Known client IPs |
+| **Virtual network rules** | Allow access from specific VNet subnets | Azure resources |
+| **Private endpoints** | Private IP within your VNet | Complete network isolation |
+| **Service endpoints** | Optimized route from VNet to storage | High bandwidth requirements |
 
-There is no additional cost for Azure Storage encryption.
+The MCSB control [NS-2](/azure/cloud-adoption-framework/organize/cloud-security-infrastructure-endpoint) recommends using private endpoints to secure cloud services, which applies directly to Azure Storage.
 
-### About encryption key management
+### Network isolation strategies
 
-Data in a new storage account is encrypted with Microsoft-managed keys by default. You can continue to rely on Microsoft-managed keys for the encryption of your data, or you can manage encryption with your own keys. If you choose to manage encryption with your own keys, you have two options. You can use either type of key management, or both:
+When designing network security for Azure Storage:
 
-- You can specify a *customer-managed key* to use for encrypting and decrypting data in Blob Storage and in Azure Files.<sup>1,2</sup> Customer-managed keys must be stored in Azure Key Vault or Azure Key Vault Managed Hardware Security Model (HSM). 
-- You can specify a *customer-provided key* on Blob Storage operations. A client making a read or write request against Blob Storage can include an encryption key on the request for granular control over how blob data is encrypted and decrypted.
+- **Disable public blob access** at the storage account level for sensitive data
+- **Configure private endpoints** for each storage service (blob, file, queue, table)
+- **Use network security groups** to control traffic to private endpoints
+- **Implement Azure Firewall** or NVA for centralized traffic inspection
 
-By default, a storage account is encrypted with a key that is scoped to the entire storage account. Encryption scopes enable you to manage encryption with a key that is scoped to a container or an individual blob. You can use encryption scopes to create secure boundaries between data that resides in the same storage account but belongs to different customers. Encryption scopes can use either Microsoft-managed keys or customer-managed keys.
+### DNS considerations for private endpoints
 
-The following table compares key management options for Azure Storage encryption.
+Private endpoints require DNS configuration to resolve storage account names to private IP addresses:
 
-| Key management parameter | Microsoft-managed keys | Customer-managed keys | Customer-provided keys |
-|--|--|--|--|
-| Encryption/decryption operations | Azure | Azure | Azure |
-| Azure Storage services supported | All | Blob Storage, Azure Files<sup>1,2</sup> | Blob Storage |
-| Key storage | Microsoft key store | Azure Key Vault or Key Vault HSM | Customer's own key store |
-| Key rotation responsibility | Microsoft | Customer | Customer |
-| Key control | Microsoft | Customer | Customer |
-| Key scope | Account (default), container, or blob | Account (default), container, or blob | N/A |
+- **Azure Private DNS zones**: Automatic resolution for Azure resources
+- **DNS forwarders**: Required for on-premises name resolution
+- **Custom DNS**: Configure A records pointing to private endpoint IPs
+
+## Encryption for Azure Storage
+
+### Encryption at rest
+
+[Azure Storage encryption](/azure/storage/common/storage-service-encryption) protects data at rest using AES-256 encryption. This encryption is enabled by default for all storage accounts.
+
+#### Key management options
+
+| Option | Key location | Control | Use case |
+|--------|--------------|---------|----------|
+| **Microsoft-managed keys** | Microsoft | Microsoft | Standard workloads |
+| **Customer-managed keys (CMK)** | Azure Key Vault | Customer | Regulatory compliance |
+| **Customer-provided keys** | Customer | Customer | Per-request control |
+
+Customer-managed keys align with MCSB control [DP-5: Use customer-managed key option in data at rest encryption when required](/security/benchmark/azure/mcsb-data-protection#dp-5-use-customer-managed-key-option-in-data-at-rest-encryption-when-required).
+
+### Infrastructure encryption (double encryption)
+
+[Infrastructure encryption](/azure/storage/common/infrastructure-encryption-enable) provides a second layer of encryption for highly sensitive data:
+
+- **First layer**: Service-level encryption with service-managed or customer-managed keys
+- **Second layer**: Infrastructure-level encryption with Microsoft-managed keys
+
+Enable infrastructure encryption at storage account creation for:
+
+- Regulatory requirements mandating double encryption
+- Defense-in-depth for highly sensitive workloads
+- Compliance with internal security policies
+
+### Encryption in transit
+
+Configure encryption in transit through:
+
+- **Require secure transfer**: Force HTTPS for all REST API operations
+- **Minimum TLS version**: Set TLS 1.2 as minimum (recommended)
+- **SMB 3.0 encryption**: Required for Azure Files access
+
+## Access management for Azure Storage
+
+### Authentication methods
+
+Azure Storage supports multiple authentication mechanisms:
+
+| Method | Protocol | Use case |
+|--------|----------|----------|
+| **Microsoft Entra ID** | REST API | Azure resources, applications |
+| **Shared Key** | REST API | Legacy applications |
+| **Shared Access Signatures (SAS)** | REST API | Delegated access |
+| **AD DS/Microsoft Entra Domain Services** | SMB | Azure Files identity-based access |
+
+The MCSB recommends using Microsoft Entra ID with managed identities for authentication whenever possible.
+
+### Authorization options
+
+#### Azure RBAC for data plane
+
+Azure Storage supports [data plane RBAC](/azure/storage/blobs/authorize-access-azure-active-directory) with built-in roles:
+
+- **Storage Blob Data Owner**: Full access including ACL management
+- **Storage Blob Data Contributor**: Read, write, delete blob data
+- **Storage Blob Data Reader**: Read blob data only
+- **Storage Queue Data Contributor**: Read, write, delete queue messages
+
+#### Shared Access Signatures (SAS)
+
+When SAS tokens are necessary, follow these best practices:
+
+- **Use user delegation SAS** backed by Microsoft Entra credentials
+- **Apply shortest practical validity periods**
+- **Grant minimum required permissions**
+- **Use stored access policies** for service SAS management
+- **Implement secure SAS distribution** mechanisms
+
+### Blob access tiers and security
+
+Access tier selection affects cost and availability, not security:
+
+- **Hot, Cool, Cold, Archive** tiers all use the same encryption
+- Configure **lifecycle management policies** for automatic tier transitions
+- Archive tier requires rehydration before access
+
+## Threat protection for Azure Storage
+
+### Microsoft Defender for Storage
+
+[Microsoft Defender for Storage](/azure/defender-for-cloud/defender-for-storage-introduction) provides:
+
+- **Activity monitoring**: Detect unusual access patterns
+- **Malware scanning**: Scan uploaded content for malicious files
+- **Sensitive data threat detection**: Alert on suspicious access to sensitive data
+- **Hash reputation analysis**: Identify known malware based on file hashes
+
+Defender for Storage aligns with MCSB control [DP-2: Monitor anomalies and threats targeting sensitive data](/security/benchmark/azure/mcsb-data-protection#dp-2-monitor-anomalies-and-threats-targeting-sensitive-data).
+
+### Logging and monitoring
+
+Enable diagnostic settings to capture:
+
+- **StorageRead**: All read operations
+- **StorageWrite**: All write operations
+- **StorageDelete**: All delete operations
+- **Transaction metrics**: Performance and availability data
+
+Send logs to:
+
+- **Log Analytics workspace**: Query and analyze with KQL
+- **Storage account**: Long-term retention and compliance
+- **Event Hub**: SIEM integration
+
+## Immutable storage for compliance
+
+[Immutable blob storage](/azure/storage/blobs/immutable-storage-overview) supports regulatory compliance requirements:
+
+### Time-based retention policies
+
+- Set retention period for data protection
+- Locked policies cannot be shortened
+- Supports legal hold for litigation
+
+### Version-level immutability
+
+- Apply policies at blob version level
+- Enable versioning to maintain history
+- Combine with legal holds for complete protection
+
+Use immutable storage for:
+
+- Financial records requiring SEC 17a-4 compliance
+- Healthcare records under HIPAA retention rules
+- Legal documents subject to litigation hold
+
+## Bringing it together
+
+Securing Azure Storage requires a layered approach across network, identity, encryption, and monitoring. Use private endpoints and disable public blob access for accounts containing sensitive data. Implement Microsoft Entra authentication with RBAC, preferring user delegation SAS over shared keys. Enable infrastructure encryption with customer-managed keys for regulated workloads, and require secure transfer (HTTPS only) with TLS 1.2 minimum. Enable Microsoft Defender for Storage with malware scanning for accounts accepting uploads, and configure diagnostic logging to detect anomalous activity.

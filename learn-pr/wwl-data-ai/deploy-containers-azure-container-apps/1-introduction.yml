@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.deploy-containers-azure-container-apps.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: Introduction
+  ms.date: 01/26/2026
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/1-introduction.md)]

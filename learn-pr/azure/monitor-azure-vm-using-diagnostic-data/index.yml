@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.azure.monitor-azure-vm-using-diagnostic-data
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Monitor your Azure virtual machines with Azure Monitor
   description: Learn how to monitor your Azure VMs by using Azure Monitor to collect and analyze VM host and client metrics and logs.
   ms.date: 09/26/2024
@@ -43,4 +41,4 @@ units:
 - learn.azure.monitor-azure-vm-using-diagnostic-data.summary
 badge:
   uid: learn.azure.monitor-azure-vm-using-diagnostic-data.badge
-
+

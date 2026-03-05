@@ -12,7 +12,7 @@ You will:
 ### Prerequisites
 You'll need:
 
-- An Azure account with an active subscription. If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/) before you begin.
+- An Azure account with an active subscription. If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn) before you begin.
 - The account must be assigned the Owner or Contributor [built-in role-based access control (RBAC) roles](/azure/role-based-access-control/role-assignments-portal) on the subscription.
 - A [virtual network](/azure/virtual-network/quick-create-portal) in the same Azure region you want to deploy your session hosts to.
 - A user account in Microsoft Entra ID you can use for connecting to the desktop. This account must be assigned the Virtual Machine User Login or Virtual Machine Administrator Login RBAC role on the subscription. Alternatively, you can assign the role to the account on the session host VM or the resource group containing the VM after deployment.

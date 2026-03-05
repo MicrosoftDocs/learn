@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn-wwl.build-ai-solutions-sql-server.integrate-ai-models
+title: Integrate AI models and external services securely
+metadata:
+  title: Integrate AI models and external services securely
+  description: "Learn how to integrate AI models and external services securely in SQL Server 2025"
+  ms.date: 10/20/2025
+  author: JulianePadrao
+  ms.author: jupadrao
+  ms.topic: unit
+azureSandbox: false
+durationInMinutes: 9
+content: |
+  [!include[](includes/4-integrate-ai-models.md)]

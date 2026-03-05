@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.manage-optimize-agent-investment-azure.optimize-spending
+title: Optimize spending on AI agents in Azure
+metadata:
+  title: Optimize Spending on AI Agents in Azure
+  description: This unit explores various strategies and best practices for reducing costs associated with AI agent deployments, including resource optimization, scaling techniques, and leveraging Azure's cost management tools.
+  ms.date: 10/1/2025
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/3-optimize-spending.md)]

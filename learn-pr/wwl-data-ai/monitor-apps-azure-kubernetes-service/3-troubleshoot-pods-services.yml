@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.monitor-apps-azure-kubernetes-service.troubleshoot-pods-services
+title: Troubleshoot pods and services
+metadata:
+  title: Troubleshoot Pods and Services
+  description: Troubleshoot pods and services
+  ms.date: 12/31/2025
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/3-troubleshoot-pods-services.md)]

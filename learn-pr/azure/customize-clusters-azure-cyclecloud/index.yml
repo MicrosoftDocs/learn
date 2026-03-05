@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.azure.customize-clusters-azure-cyclecloud
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   moduleType: standard
   title: Customize high-performance computing clusters deployed with Azure CycleCloud
   description: Azure CycleCloud templates offer a declarative provisioning model that helps you minimize administrative overhead associated with deploying and maintaining custom HPC environments in Azure.
@@ -45,4 +43,4 @@ units:
 - learn.azure.customize-clusters-azure-cyclecloud.summary
 badge:
   uid: learn.azure.customize-clusters-azure-cyclecloud.badge
-
+

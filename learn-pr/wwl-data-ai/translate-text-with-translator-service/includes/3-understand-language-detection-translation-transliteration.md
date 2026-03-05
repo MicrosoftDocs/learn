@@ -1,4 +1,4 @@
-Let's explore the capabilities of **Azure AI Translator**. These capabilities include:
+Let's explore the capabilities of **Azure Translator**. These capabilities include:
 
 ## Language detection
 

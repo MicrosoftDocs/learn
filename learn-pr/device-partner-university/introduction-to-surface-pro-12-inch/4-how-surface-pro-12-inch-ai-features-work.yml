@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.introduction-to-surface-pro-12-inch.how-surface-pro-12-inch-ai-features-work
+title: How Surface Pro 12-inch AI features work
+metadata:
+  title: How Surface Pro 12-inch AI Features Work
+  description: This content is part of the "Introduction to Microsoft Surface Pro 12-inch" module.
+  ms.date: 11/06/2025
+  author: ozahran7
+  ms.author: v-zahranomar
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/4-how-surface-pro-12-inch-ai-features-work.md)]

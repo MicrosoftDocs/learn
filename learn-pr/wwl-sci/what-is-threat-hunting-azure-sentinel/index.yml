@@ -3,15 +3,15 @@ uid: learn.wwl.what-is-threat-hunting-azure-sentinel
 metadata:
   title: Explain threat hunting concepts in Microsoft Sentinel
   description: "Explain threat hunting concepts in Microsoft Sentinel"
-  ms.date: 06/29/2022
-  author: wwlpublish
+  ms.date: 05/21/2025
+  author: KenMAG
   ms.author: kelawson
   ms.topic: module
   ms.service: microsoft-sentinel
 title: Explain threat hunting concepts in Microsoft Sentinel
 summary: Learn the threat hunting process in Microsoft Sentinel.
 abstract: |
-  Upon completion of this module, the learner will be able to:
+  Upon completion of this module, the learner is able to:
   - Describe threat hunting concepts for use with Microsoft Sentinel
   - Define a threat hunting hypothesis for use in Microsoft Sentinel
 prerequisites: |
@@ -23,6 +23,7 @@ roles:
 - security-operations-analyst
 products:
 - azure
+- defender-xdr
 - microsoft-sentinel
 subjects:
 - security

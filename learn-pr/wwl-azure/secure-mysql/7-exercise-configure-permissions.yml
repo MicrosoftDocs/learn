@@ -2,8 +2,6 @@
 uid: learn.wwl.secure-mysql.exercise-configure-permissions
 title: 'Exercise: Configure permissions in MySQL'
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: 'Exercise: Configure permissions in MySQL'
   description: "Exercise: Configure permissions in MySQL"
   ms.date: 11/08/2022
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 20
 content: |
-  [!include[](includes/7-exercise-configure-permissions.md)]
+  [!include[](includes/7-exercise-configure-permissions.md)]

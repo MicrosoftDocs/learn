@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.resolve-github-issues-github-copilot-agent.examine-common-code-security-issues
+title: Examine common code security issues
+metadata:
+  title: Examine Common Code Security Issues
+  description: "Examine common code security issues"
+  ms.date: 11/11/2025
+  author: chrishowd
+  ms.author: cahowd
+  ms.topic: unit
+durationInMinutes: 11
+content: |
+  [!include[](includes/3-examine-common-code-security-issues.md)]

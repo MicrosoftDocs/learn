@@ -63,7 +63,7 @@ In type 2 SCD, when a new version of the same element is brought to the data war
 
 :::image type="content" source="../media/2-slowly-changing-dimension.png" alt-text="Diagram showing the function and structure of OneLake." lightbox="../media/2-slowly-changing-dimension.png":::
 
-The following example shows how to handle the business key in a type 2 SCD for the *Dim_Products* table using T-SQL.
+The following code shows a simple example on how to handle the business key in a type 2 SCD for the *Dim_Products* table using T-SQL.
 
 ```sql
 IF EXISTS (SELECT 1 FROM Dim_Products WHERE SourceKey = @ProductID AND IsActive = 'True')

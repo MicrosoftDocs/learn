@@ -2,8 +2,6 @@
 uid: learn.azure-spring-cloud-workshop.6-configure-distributed-tracing
 title: Learn how to monitor performance issues by using distributed tracing.
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Distributed tracing
   description: Learn how to monitor performance issues by using distributed tracing.
   author: judubois
@@ -15,4 +13,4 @@ metadata:
 durationInMinutes: 2
 content: |
   [!include[](includes/6-configure-distributed-tracing.md)]
-
+

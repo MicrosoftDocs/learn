@@ -8,8 +8,8 @@ Application Gateway uses a round-robin process to load balance requests to the s
 
 Azure Application Gateway includes the following features:
 
-- Support for the HTTP, HTTPS, HTTP/2, and WebSocket protocols
-- A web application firewall to protect against web application vulnerabilities
-- End-to-end request encryption
-- Autoscaling to dynamically adjust capacity as your web traffic load change
-- Connection draining allowing graceful removal of back-end pool members during planned service updates
+- Support for the HTTP, HTTPS, HTTP/2, and WebSocket protocols.
+- A web application firewall to protect against web application vulnerabilities.
+- End-to-end request encryption.
+- Autoscaling to dynamically adjust capacity as your web traffic load change.
+- Connection draining allowing graceful removal of back-end pool members during planned service updates.

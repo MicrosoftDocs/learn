@@ -2,8 +2,6 @@
 uid: learn.wwl.migrate-modernize-implement-disaster-recovery-sap-workloads-azure.explore-site-recovery
 title: Explore site recovery
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Explore site recovery
   description: "Explore site recovery"
   ms.date: 01/09/2024
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 12
 content: |
-  [!include[](includes/5-explore-site-recovery.md)]
+  [!include[](includes/5-explore-site-recovery.md)]

@@ -1,0 +1,75 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-ediscovery-search.knowledge-check
+title: Module assessment
+metadata:
+  title: Module assessment
+  description: "Check your knowledge."
+  ms.date: 04/17/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Why is every eDiscovery search in Microsoft Purview associated with a case?"
+    choices:
+    - content: "To reduce storage costs in Microsoft 365."
+      isCorrect: false
+      explanation: "Incorrect: The case structure isn't related to storage management."
+    - content: "To group searches by workload (like email or Teams)."
+      isCorrect: false
+      explanation: "Incorrect: Cases aren't used to categorize searches by workload."
+    - content: "To control access and provide an auditable investigation workspace."
+      isCorrect: true
+      explanation: "Correct: Cases help enforce access controls and auditing during investigations."
+
+  - content: "What roles are required to access and manage eDiscovery cases in Microsoft Purview?"
+    choices:
+    - content: "Global or Compliance Administrator"
+      isCorrect: false
+      explanation: "Incorrect: These roles alone don't grant access to eDiscovery cases."
+    - content: "eDiscovery Manager or eDiscovery Administrator"
+      isCorrect: true
+      explanation: "Correct: These roles are required to access and manage eDiscovery cases."
+    - content: "Security Reader or Microsoft 365 Reader"
+      isCorrect: false
+      explanation: "Incorrect: These roles provide read access to other features, not eDiscovery."
+
+  - content: "What does the Search by file feature in eDiscovery allow you to do?"
+    choices:
+    - content: "Create search queries using PowerShell scripts only."
+      isCorrect: false
+      explanation: "Incorrect: Search by file uses uploaded .txt or .csv files, not PowerShell."
+    - content: "Automatically export search results to a review set."
+      isCorrect: false
+      explanation: "Incorrect: Search by file only assists in search criteria, not exporting."
+    - content: "Upload sample content to find similar or referenced items."
+      isCorrect: true
+      explanation: "Correct: You can upload .txt or .csv files to guide the search."
+
+  - content: "What is the purpose of the Statistics result type in eDiscovery search?"
+    choices:
+    - content: "To view how many items matched your query and where they were found."
+      isCorrect: true
+      explanation: "Correct: Statistics provides an overview of matched items, locations, and data volume."
+    - content: "To view each item in full detail for immediate export."
+      isCorrect: false
+      explanation: "Incorrect: Full item views are available in samples or review sets, not statistics."
+    - content: "To monitor the search status in real time as it runs."
+      isCorrect: false
+      explanation: "Incorrect: Statistics are shown after the search is completed."
+
+  - content: "What happens when you export search results in Microsoft Purview eDiscovery?"
+    choices:
+    - content: "Items are automatically deleted from their original location after export."
+      isCorrect: false
+      explanation: "Incorrect: Exporting doesn't remove or alter original data."
+    - content: "Results are packaged with reports and made available for download."
+      isCorrect: true
+      explanation: "Correct: Exporting creates a downloadable package of content and summary reports."
+    - content: "Search results are immediately added to a review set for further analysis."
+      isCorrect: false
+      explanation: "Incorrect: Adding to a review set is a separate action from exporting."

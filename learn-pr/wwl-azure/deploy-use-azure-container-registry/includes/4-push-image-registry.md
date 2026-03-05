@@ -5,7 +5,7 @@ For this exercise, Docker commands are used to push a container image into the r
 You must also have Docker installed locally and running. Docker provides packages that easily configure Docker on any [Mac](https://docs.docker.com/docker-for-mac/), [Windows](https://docs.docker.com/docker-for-windows/), or [Linux](https://docs.docker.com/engine/installation/#supported-platforms) system.
 
 > [!NOTE]
-> To complete this procedure, you need an [Azure subscription](https://azure.microsoft.com/free/).
+> To complete this procedure, you need an [Azure subscription](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn).
 
 To push an image to an Azure Container registry, you must first have an image. If you don't yet have any local container images, run the following [docker pull](https://docs.docker.com/engine/reference/commandline/pull/) command to pull an existing public image.
 

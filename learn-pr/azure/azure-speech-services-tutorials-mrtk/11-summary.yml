@@ -2,17 +2,16 @@
 uid: learn.azure.azure-speech-services-tutorials-mrtk.11-summary
 title: Summary
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Summary
   description: Summary
   author: marlenaklein-msft
   ms.author: marlenaklein
   ms.date: 01/17/2024
+  ms.update-cycle: 180-days
   ms.topic: unit
   ms.collection:
     - ce-skilling-ai-copilot
 durationInMinutes: 1
 content: |
   [!include[](includes/11-summary.md)]
-
+

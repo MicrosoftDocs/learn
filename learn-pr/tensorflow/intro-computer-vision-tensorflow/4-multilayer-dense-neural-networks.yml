@@ -2,13 +2,12 @@
 uid: learn.tensorflow.intro-computer-vision.multilayer-dense-neural-networks
 title: Multi-layer networks
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Multi-layer networks
   description: Learn how multi-layer neural networks can be constructed to improve model accuracy
-  author: shwars
-  ms.author: chnoring
+  author: Orin-Thomas
+  ms.author: orthomas
   ms.date: 07/07/2021
+  ms.update-cycle: 180-days
   ms.topic: unit
   ms.collection:
     - ce-advocates-ai-copilot
@@ -30,19 +29,19 @@ quiz:
     - content: "Training accuracy continues to increase, validation accuracy starts decreasing"
       isCorrect: true
       explanation: "This is correct"
-    - content: "Validation accuracy becomes significantly smaller than training accuracy"
+    - content: "Validation accuracy becomes smaller than training accuracy"
       isCorrect: false
-      explanation: "This is not an indication of overfitting"
-  - content: "We have defined two-layer model, and it does not show any benefits comparing to one-layer model. What could be the problem?"
+      explanation: "This isn't an indication of overfitting"
+  - content: "We have defined two-layer model, and it doesn't show any benefits comparing to one-layer model. What could be the problem?"
     choices:
     - content: "The size of the hidden layer is larger than the size of the output layer"
       isCorrect: false
-      explanation: "This is quite normal case, and we can expect higher accuracy than one-layer model"
+      explanation: "This is normal case, and we can expect higher accuracy than one-layer model"
     - content: "The size of the hidden layer is the same as the size of the output layer"
       isCorrect: false
       explanation: "Even in this case we can expect higher accuracy than one-layer model"
     - content: "We have forgotten to specify activation function between layers"
       isCorrect: true
-      explanation: "When we do not specify non-linear activation, two layers are equivalent to one layer"
+      explanation: "When we don't specify nonlinear activation, two layers are equivalent to one layer"
 
 

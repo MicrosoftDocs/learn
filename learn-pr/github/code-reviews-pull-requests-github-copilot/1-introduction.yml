@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.github.code-reviews-pull-requests-github-copilot.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: This content is a part of the Leveling up code reviews and pull requests with GitHub Copilot.
+  author: camihmerhar
+  ms.author: camhernandez
+  ms.date: 09/16/2025
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/1-introduction.md)]

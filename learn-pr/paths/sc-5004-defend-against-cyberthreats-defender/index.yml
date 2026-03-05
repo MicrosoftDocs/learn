@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: kelawson
   ms.topic: learning-path
-  adobe-target: true
 title: 'Defend against cyberthreats with Microsoft Defender XDR'
 prerequisites: |
   - Experience using the Microsoft Defender portal
@@ -38,4 +37,4 @@ modules:
 - learn.wwl.perform-device-investigations-microsoft-defender-for-endpoints
 - learn.wwl.defend-against-cyberthreats-microsoft-defender-xdr-labs 
 trophy:
-  uid: learn.wwl.earn.wwl.defend-against-cyberthreats-defender.trophy
+  uid: learn.wwl.earn.wwl.defend-against-cyberthreats-defender.trophy

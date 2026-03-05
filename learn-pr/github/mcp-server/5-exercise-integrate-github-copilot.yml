@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.github.mcp-server.exercise-integrate-github-copilot
+title: Exercise - Integrate MCP with GitHub Copilot
+metadata:
+  title: Exercise - Integrate MCP with GitHub Copilot
+  description: This content is a part of the Introduction to MCP Server.
+  author: camihmerhar
+  ms.author: camhernandez
+  ms.date: 08/25/2025
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/5-exercise-integrate-github-copilot.md)]

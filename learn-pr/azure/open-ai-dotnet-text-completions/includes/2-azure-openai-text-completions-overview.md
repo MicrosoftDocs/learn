@@ -1,6 +1,6 @@
-Azure OpenAI Service provides REST API access to OpenAI's powerful language models including the GPT-3.5 and GPT-4 model series. These models can be easily adapted to your specific task including but not limited to content generation, summarization, semantic search, and natural language to code translation.
+Azure OpenAI Service provides REST API access to OpenAI's powerful language models, including the GPT-3.5 and GPT-4 model series. These models can be easily adapted to your specific task including but not limited to content generation, summarization, semantic search, and natural language to code translation.
 
-In addition to the REST API access, a .NET SDK exists to access Azure OpenAI Service. And that's what we will use to build our application. But before building the application, let's learn a bit more about what Azure OpenAI is and what text completions are. Knowing that give us the foundation we need to build amazing applications with AI.
+In addition to the REST API access, a .NET SDK exists to access Azure OpenAI Service. That's what we'll use to build our application. But before building the application, let's learn a bit more about what Azure OpenAI is and what text completions are. Knowing that gives us the foundation we need to build amazing applications with AI.
 
 ## Azure OpenAI overview
 
@@ -12,7 +12,7 @@ The completions endpoint is the core component of the API service. This API prov
 
 ## Text completions
 
-In this unit we'll learn about text completions. The completions endpoint can be used for a wide variety of tasks. It provides a simple but powerful text-in, text-out interface to any of the Azure OpenAI models. You input some text as a prompt, and the model generates a text completion that attempts to match whatever context or pattern you gave it. For example, if you give the API the prompt, "As Descartes said, I think, therefore", it returns the completion " I am" with high probability.
+In this unit, we'll learn about text completions. The completions endpoint can be used for a wide variety of tasks. It provides a simple but powerful text-in, text-out interface to any of the Azure OpenAI models. You input some text as a prompt, and the model generates a text completion that attempts to match whatever context or pattern you gave it. For example, if you give the API the prompt, "As Descartes said, I think, therefore", it returns the completion " I am" with high probability.
 
 The actual completion results you see may differ because the AI is stochastic by default. In other words, you might get a slightly different completion every time you call it, even if your prompt stays the same.
 
@@ -22,7 +22,7 @@ We'll take a look at how to write a good prompt a bit later, but for now let's l
 
 ## Types of Azure OpenAI completions
 
-As mentioned, you pass in a prompt to the Azure OpenAI API that provides instructions on what you want it to do. And you can make it do things like classify text, generate ideas, or even translate text into emojis.
+As mentioned, you pass in a prompt to the Azure OpenAI API that provides instructions on what you want it to do. You can make it do things like classify text, generate ideas, or even translate text into emojis.
 
 ### Classification
 
@@ -30,7 +30,7 @@ For this first completion type, let's dive deep into how to "program" the model 
 
 You can tell the model you want it to sort data into predefined categories. This completion type is known as **Classification**.
 
-For example, you can pass instructions, or a prompt, similar to following to the completion API:
+For example, you can pass instructions or a prompt, similar to following to the completion API:
 
 ```
 This is a sentiment classifier
@@ -72,33 +72,33 @@ Sentiment classifications:
 1.
 ```
 
-After showing the model 4 examples of a sentence classified by sentiment, we then provide it a list of examples and then a list of sentiment ratings with the same number index. The API is able to pick up from this how it is supposed to output the classified sentiments.
+After showing the model 4 examples of a sentence classified by sentiment, we then provide it a list of examples and then a list of sentiment ratings with the same number index. The API is able to pick up from this how it's supposed to output the classified sentiments.
 
-And that leads us to what we want the model to do: we give it 5 sentiments for it to classify and then it should output the classification of each in an ordered list.
+That leads us to what we want the model to do: we give it five sentiments to classify, and then it should output the classification of each in an ordered list.
 
 This allows the model to rate five (and even more) examples in just one call to it.
 
-You can begin to see how the prompt, or the text passed to the model is the programming language.
+You can begin to see how the prompt or the text passed to the model is the programming language.
 
 ### Generation
 
-One of the most powerful yet simplest tasks you can accomplish with the various GPT models is generating new ideas or versions of input. You can give the model a list of a few story ideas and it tries to add to that list. We've seen it create business plans, character descriptions and marketing slogans just by providing it a handful of examples.
+One of the most powerful yet simplest tasks you can accomplish with the various GPT models is generating new ideas or versions of input. You can give the model a list of a few story ideas, and it tries to add to that list. We've seen it create business plans, character descriptions, and marketing slogans just by providing it a handful of examples.
 
 ### Conversation
 
-The model is extremely adept at carrying on conversations with humans and even with itself. With just a few lines of instruction, we've seen the model perform as a customer service chatbot that intelligently answers questions without ever getting flustered or a wise-cracking conversation partner that makes jokes and puns.
+The model is adept at carrying on conversations with humans and even with itself. With just a few lines of instruction, we've seen the model perform as a customer service chatbot that intelligently answers questions without ever getting flustered, or a wise-cracking conversation partner that makes jokes and puns.
 
 ### Transformation
 
-The model is a language model that is familiar with a variety of ways that words and characters can be used to express information. This ranges from natural language text to code and languages other than English. The model is also able to understand content on a level that allows it to summarize, convert and express it in different ways.
+The model is a language model that is familiar with a variety of ways that words and characters can be used to express information. This ranges from natural language text to code and languages other than English. The model is also able to understand content on a level that allows it to summarize, convert, and express it in different ways.
 
 #### Translation
 
-The model already has a grasp of many languages, such as French, so you do not need to teach it. Instead you just need to provide it enough examples of the translation in the prompt so it understands that it is translating from one language to another.
+The model already has a grasp of many languages, such as French, so you don't need to teach it. Instead, you just need to provide it enough examples of the translation in the prompt so it understands that it's translating from one language to another.
 
 #### Conversion
 
-In this example we convert the name of a movie into emoji. This shows the adaptability of the model to picking up patterns and working with other characters.
+In this example, we convert the name of a movie into emoji. This shows the adaptability of the model to picking up patterns and working with other characters.
 
 Here we expect the output to be an emoji representation of the Spider-Man movie.
 
@@ -130,9 +130,9 @@ Vertical farming provides a novel solution for producing food locally, reducing 
 
 Large language models (LLMs) have a lot of knowledge that they've learned from the data they trained on. They also have the ability to provide responses that sound real but are in fact made up. There are two ways to limit the likelihood of LLMs making up an answer.
 
-* **1. Provide a ground truth for the API** If you provide the model with a body of text to answer questions about (like a Wikipedia entry) it is less likely to confabulate a response.
+* **1. Provide a ground truth for the API.**: If you provide the model with a body of text to answer questions about (like a Wikipedia entry), it's less likely to confabulate a response.
 
-* **2. Use a low probability and show the API how to say "I don't know"** If the model understands that in cases where it's less certain about a response that saying "I don't know" or some variation is appropriate, it is less inclined to make up answers.
+* **2. Use a low probability and show the API how to say "I don't know."**: If the model understands that in cases where it's less certain about a response that saying "I don't know" or some variation is appropriate, it's less inclined to make up answers.
 
 In this example, we give the model examples of questions and answers it knows and then examples of things it wouldn't know and provide question marks. We also set the probability to zero so the model is more likely to respond with a "?" if there's any doubt.
 
@@ -147,11 +147,11 @@ Q: What is Devz9?
 A: ?
 
 Q: Who is George Lucas?
-A: George Lucas is American film director and producer famous for creating Star Wars.
+A: George Lucas is an American film director and producer famous for creating Star Wars.
 ```
 
 ## Summary
 
-Azure OpenAI Service provides REST API access to OpenAI's powerful language models including the GPT-3.5 and GPT-4 model series. It also gives you the security and enterprise features you've come to rely from the Azure cloud.
+Azure OpenAI Service provides REST API access to OpenAI's powerful language models including the GPT-3.5 and GPT-4 model series. It also gives you the security and enterprise features you've come to rely on from the Azure cloud.
 
 One of the most useful features from the OpenAI language models is text completion. You pass in a **prompt** or a plain language description of what you want the model to do, and it can perform tasks such as text classification, text generation, or text summarization.

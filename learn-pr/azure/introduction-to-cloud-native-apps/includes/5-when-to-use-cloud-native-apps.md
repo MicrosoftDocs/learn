@@ -1,4 +1,4 @@
-Cloud-native apps are architecturally different to more traditional software engineering approaches. Because cloud-native is such a broad category, you can easily create an architecture to serve most needs, such as speed to market, integration of new technologies like machine learning, and rapid adaptation to customer feedback.
+Cloud-native apps are architecturally different to more traditional software engineering approaches. Because cloud-native is such a broad category, you can easily create an architecture to serve most needs. Such as, speed to market, integration of new technologies like machine learning, and rapid adaptation to customer feedback.
 
 ### Modernizing existing apps
 
@@ -6,7 +6,7 @@ Cloud-native apps aren’t only for new projects. While a retrofit application m
 
 It’s often cost-effective to cloud-optimize an existing application, as you can take better advantage of fine-grained scalability and improved system resiliency. Many cloud services provide administrative functionality suitable for cloud architects and developers, because it lowers the need for specialist management.
 
-For example, Azure Database for PostgreSQL has built-in database administrative functionality that is like DBA, by managing the underlying operating system and database for you.
+For example, Azure Database for PostgreSQL has built-in functionality that acts like a database administrator (DBA), managing the underlying operating system and database for you.
 
 ### Gradual adoption of a cloud-native approach
 

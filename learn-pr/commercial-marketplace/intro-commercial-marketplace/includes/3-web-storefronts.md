@@ -11,7 +11,7 @@ Azure Marketplace is a comprehensive online store that offers various solutions 
 - Finished software solutions: ready-to-use applications for business operations.
 - Consulting and managed services: expert services for Azure solution deployment and management.
 
-Azure Marketplace simplifies the search for the right solutions with categorized and filterable listings, enabling customers to easily build on their existing Azure cloud infrastructure. The Azure Marketplace online store link can be found in the resources section at the end of this module.
+Azure Marketplace simplifies the search for the right solutions with categorized and filterable listings, enabling customers to easily build on their existing Azure cloud infrastructure. Azure Marketplace online store link can be found in the resources section at the end of this module.
 
 :::image type="content" source="..\media\2-azure-marketplace-homepage.png" alt-text="Screenshot of the Azure Marketplace homepage with emphasis on apps and consulting services buttons.":::
 
@@ -29,13 +29,13 @@ Azure Marketplace is a part of Azure, allowing your customers to access the Azur
 
 Azure Marketplace and the Azure portal help to streamline the process for customers to easily find, try, purchase, and deploy Azure solutions within minutes.
 
-In addition to cloud solutions and services available through both the online store and the Azure portal, the Azure Marketplace online store also features consulting and managed services offered by Microsoft partners, helping customers in areas such as analytics, DevOps, migration, and security.
+In addition to cloud solutions and services available through both the online store and the Azure portal, the Azure Marketplace online store also features consulting and managed services offered by Microsoft partners. These services help customers in areas such as analytics, DevOps, migration, and security.
 
 ## Microsoft AppSource
 
 Microsoft AppSource offers business software that integrates with Azure, Dynamics 365, Microsoft 365, and the Power Platform. In AppSource, you can also find cloud-hosted web applications. Customers can easily filter and search for the right app or services based on category and industry.
 
-The Microsoft AppSource online store link can be found at the end of this learn module.
+The Microsoft AppSource online store link can be found in the resources section at the end of this module.
 
 :::image type="content" source="..\media\7-microsoft-appsource-homepage.png" alt-text="Screenshot of Microsoft AppSource homepage with emphasis on apps and consulting services buttons.":::
 

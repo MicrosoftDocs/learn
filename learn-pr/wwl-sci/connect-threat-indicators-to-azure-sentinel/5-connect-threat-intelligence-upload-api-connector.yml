@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.connect-threat-indicators-to-azure-sentinel.intelligence-upload-api-connector
+title: Connect the threat intelligence Upload API connector
+metadata:
+  title: Connect the threat intelligence Upload API connector
+  description: "By using the Threat Intelligence Upload API, your organization can ingest custom threat intelligence data into Microsoft Sentinel."
+  ms.date: 05/05/2025
+  author: KenMAG
+  ms.author: kelawson
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 1
+content: |
+  [!include[](includes/5-connect-threat-intelligence-upload-api-connector.md)]

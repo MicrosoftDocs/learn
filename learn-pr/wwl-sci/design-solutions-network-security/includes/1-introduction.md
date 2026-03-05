@@ -1,18 +1,20 @@
-This module provides an overview of some of the technical considerations and available capabilities to design solutions for network security as a Microsoft cybersecurity architect.
+As organizations adopt hybrid and multicloud architectures, the network perimeter extends well beyond a single data center or virtual network. A security architect must evaluate network designs against Zero Trust principles, segment workloads to limit lateral movement, filter traffic at multiple layers, monitor for threats in real time, and secure access for both internet-bound and private traffic.
 
-Imagine you're a cybersecurity architect for a multinational corporation. Your company decided to migrate its infrastructure to Azure. You're tasked with ensuring the security and efficiency of the network architecture. Securing network infrastructure involves understanding and implementing Azure's segmentation features, setting up network security groups, utilizing the network map functionality in Microsoft Defender for Cloud, analyzing network traffic, and managing internet and private access. The challenge lies in choosing the right tools and strategies to ensure optimal network performance and security.
+Imagine you're a cybersecurity architect at a large enterprise that operates across Azure, on-premises data centers, and multiple SaaS services. Leadership asks you to review the current network security posture and recommend improvements. You need to evaluate whether the existing segmentation strategy limits blast radius, determine whether traffic filtering rules follow least-privilege principles, assess monitoring coverage for gaps, and decide how Microsoft Entra Internet Access and Private Access can replace legacy VPN and proxy infrastructure. Each decision affects the organization's ability to detect and contain threats before they spread.
 
 ## Learning objectives
 
 In this module, you learn how to:
 
+- Evaluate network designs to align with security requirements and best practices
 - Design solutions for network segmentation
 - Design solutions for filtering traffic with network security groups
-- Design solutions for network posture measurement
+- Design solutions for network posture management
 - Design solutions for network monitoring
-- Design solutions that use Microsoft Entra Internet Access and Private Access
+- Evaluate solutions that use Microsoft Entra Internet Access
+- Evaluate solutions that use Microsoft Entra Private Access
 
-The content in the module helps you prepare for the certification exam SC-100: Microsoft Cybersecurity Architect.
+The content in this module helps you prepare for the certification exam SC-100: Microsoft Cybersecurity Architect.
 
 ## Prerequisites
 

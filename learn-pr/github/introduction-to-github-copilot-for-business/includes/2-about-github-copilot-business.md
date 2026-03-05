@@ -20,7 +20,7 @@ Now, let's review some of the differences between GitHub Copilot Business and Gi
 |**Exclude specific files from GitHub Copilot**| ✓ | ✕ |
 |**Organization-wide policy management**| ✓ | ✕ |
 |**Audit logs**| ✓ | ✕ |
-|**Increase GitHub Models rate limites**| ✓ | ✕ |
+|**Increase GitHub Models rate limits**| ✓ | ✕ |
 
 *GitHub Copilot Free has usage limitations
 

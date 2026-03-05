@@ -6,7 +6,7 @@ In summary, you use Azure Policy to:
   - Use built-in policies or build custom policies for all resource types.
   - Perform real-time policy evaluation and enforcement.
   - Perform periodic and on-demand compliance evaluation.
-- Apply policies at scale
+- Apply policies at scale:
   - Apply policies to a Management Group with control across your entire organization.
   - Apply multiple policies and aggregate policy states with policy initiatives.
   - Handle exclusion scopes.

@@ -85,4 +85,3 @@ For an up to date list of source and target database migrations that the Azure D
 - [Explore PostgreSQL architecture](/training/modules/explore-postgresql-architecture/)
 - [Explore MySQL architecture](/training/modules/explore-mysql-architecture/)
 - [Get started with the MongoDB API in Azure Cosmos DB](/training/modules/get-started-mongodb-api-azure-cosmos-db/)
-- [Get an introduction to Azure Cache for Redis](/training/modules/intro-to-azure-cache-for-redis/)

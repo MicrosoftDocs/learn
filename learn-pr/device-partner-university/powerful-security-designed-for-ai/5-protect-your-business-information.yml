@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.powerful-security-ai.protect-your-business-information
+title: Protect your business information
+metadata:
+  title: Protect Your Business Information
+  description: This content is part of the "Powerful security designed for AI" module.
+  ms.date: 08/05/2025
+  author: hhreyes21
+  ms.author: v-homerreyes
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/5-protect-your-business-information.md)]

@@ -1,0 +1,50 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.automated-evaluation-genaiops.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check for automated evaluation with Microsoft Foundry and GitHub Actions"
+  ms.date: 02/22/2026
+  author: madiepev
+  ms.author: madiepev
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 3
+content: |
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is the primary benefit of using shadow ratings during the transition from human to automated evaluations?"
+    choices:
+    - content: "Shadow ratings eliminate the need for human evaluators completely."
+      isCorrect: false
+      explanation: "Incorrect. Shadow ratings don't eliminate human evaluators; they run alongside them to validate automated evaluators."
+    - content: "Shadow ratings allow you to compare automated evaluator scores with human ratings to measure alignment before fully trusting automation."
+      isCorrect: true
+      explanation: "Correct. Shadow ratings run automated evaluations alongside human evaluations to validate that automated scores align with human judgment before relying on them exclusively."
+    - content: "Shadow ratings reduce the cost of evaluations by replacing expensive cloud computing with local processing."
+      isCorrect: false
+      explanation: "Incorrect. Shadow ratings don't focus on cost reduction; they focus on validating automated evaluators against human judgment."
+  - content: "When creating a synthetic test dataset, what percentage should typically represent edge cases?"
+    choices:
+    - content: "5-10% to ensure the system handles unusual scenarios without over-optimizing for rare cases."
+      isCorrect: true
+      explanation: "Correct. Edge cases should represent 5-10% of your test dataset to validate handling of unusual scenarios while maintaining focus on common use cases."
+    - content: "50% to ensure comprehensive coverage of all possible scenarios."
+      isCorrect: false
+      explanation: "Incorrect. 50% edge cases would over-represent unusual scenarios and lead to systems over-optimized for rare situations."
+    - content: "Less than 1% since edge cases rarely occur in production."
+      isCorrect: false
+      explanation: "Incorrect. While edge cases are rare, less than 1% provides insufficient coverage to validate system behavior in unusual scenarios."
+  - content: "What triggers a GitHub Actions workflow for automated evaluation in a pull request-based workflow?"
+    choices:
+    - content: "Manual approval from a senior team member after code review."
+      isCorrect: false
+      explanation: "Incorrect. GitHub Actions workflows are triggered automatically by events like pull request creation, not manual approval."
+    - content: "Creating or updating a pull request that modifies prompt files."
+      isCorrect: true
+      explanation: "Correct. GitHub Actions workflows use triggers like 'pull_request' events on specific paths to automatically run evaluations when prompt changes are proposed."
+    - content: "Deploying code to production after merging to the main branch."
+      isCorrect: false
+      explanation: "Incorrect. While you can trigger workflows on merge, the primary evaluation workflow runs before merge during the pull request phase to catch issues early."

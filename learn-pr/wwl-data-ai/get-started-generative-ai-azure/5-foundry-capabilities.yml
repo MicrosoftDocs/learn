@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-started-generative-ai-azure.foundry-capabilities
+title: Understand Foundry capabilities
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Understand Foundry capabilities
+  description: Understand Foundry capabilities
+  author: sherzyang
+  ms.author: sheryang
+  ms.date: 12/5/2025
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-foundry-capabilities.md)]

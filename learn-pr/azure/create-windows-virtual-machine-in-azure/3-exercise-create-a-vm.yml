@@ -9,6 +9,6 @@ metadata:
   ms.author: jushiman
   ms.topic: unit
 durationInMinutes: 10
-azureSandbox: true
+#azureSandbox: true
 content: |
   [!include[](includes/3-exercise-create-a-vm.md)]

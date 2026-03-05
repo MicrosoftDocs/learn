@@ -4,10 +4,12 @@ title: Examine deployment guidelines
 metadata:
   title: Examine deployment guidelines
   description: "Examine deployment guidelines"
-  ms.date: 04/22/2024
+  ms.date: 05/20/2025
   author: wwlpublish
   ms.author: rstearman
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 3
 content: |
   [!include[](includes/2-examine-deployment-guidelines.md)]

@@ -2,8 +2,6 @@
 uid: learn.continuous-validate-test-mission-critical-workloads.define-load-tests
 title: Define load tests based on key user flows
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Define load tests based on key user flows
   description: Learn more about user flows, why they're important, and how to design load tests based on these flows.
   ms.date: 07/31/2024
@@ -41,4 +39,4 @@ quiz:
     - content: "No. A load test can't help identify the performance of a user flow."
       isCorrect: false
       explanation: "Incorrect. A load test can help you evaluate the expected performance of a user flow."
-
+

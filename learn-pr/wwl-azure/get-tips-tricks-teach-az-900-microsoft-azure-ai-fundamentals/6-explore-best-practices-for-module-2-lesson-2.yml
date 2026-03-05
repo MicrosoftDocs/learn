@@ -2,8 +2,6 @@
 uid: learn.wwl.get-tips-tricks-teach-az-900-microsoft-azure-ai-fundamentals.explore-best-practices-for-module-2-lesson-2
 title: Explore best practices for module 2 lesson 2
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Explore best practices for module 2 lesson 2
   description: "Explore best practices for module 2 lesson 2"
   ms.date: 01/16/2023
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 4
 content: |
-  [!include[](includes/6-explore-best-practices-for-module-2-lesson-2.md)]
+  [!include[](includes/6-explore-best-practices-for-module-2-lesson-2.md)]

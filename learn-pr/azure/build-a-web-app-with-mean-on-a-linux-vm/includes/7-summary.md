@@ -13,7 +13,7 @@ With your MEAN stack in place, you created a basic book inventory web applicati
 
 You can [find the source code for the web application](https://github.com/MicrosoftDocs/mslearn-build-a-web-app-with-mean-on-a-linux-vm?azure-portal=true) on GitHub.
 
-[!include[](../../../includes/azure-sandbox-cleanup.md)]
+[!INCLUDE [](../../../includes/azure-optional-exercise-subscription-cleanup.md)]
 
 ## Learn more
 

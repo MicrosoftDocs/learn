@@ -8,8 +8,8 @@ Manage updates for out-of-the-box content via the Microsoft Sentinel Content hub
 
 Customize out-of-the-box content for your own needs, or create custom content, including analytics rules, hunting queries, notebooks, workbooks, and more. Manage your custom content directly in your Microsoft Sentinel workspace, via the Microsoft Sentinel API, or in your own source control repository, via the Microsoft Sentinel Repositories page.
 
-
 ## Solutions
+
 Microsoft Sentinel solutions are packaged content or integrations that deliver end-to-end product value for one or more domain or vertical scenarios.
 
 The solutions experience is powered by Azure Marketplace for solutions’ discoverability and deployment. 
@@ -37,8 +37,8 @@ Use the Content hub to centrally discover and deploy solutions and out-of-the-bo
 
     For example, in the Cisco Umbrella solution shows a category of Security - Others, and that this solution includes 10 analytics rules, 11 hunting queries, a parser, three playbooks, and more.
 
+## Install or update a solution
 
-### Install or update a solution
 - In the content hub, select a solution to view more information on the right. Then select Install, or Update, if you need updates. For example:
 
 - On the solution details page, select Create or Update to start the solution wizard. On the wizard's Basics tab, enter the subscription, resource group, and workspace to which you want to deploy the solution. 

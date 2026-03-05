@@ -1,31 +1,34 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.explore-event-streams-microsoft-fabric.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  title: Knowledge check
-  description: "Knowledge check"
-  ms.date: 12/05/2024
-  author: wwlpublish
-  ms.author: gmalc
+  hidden_question_numbers: ["6752CC34_2","6752CC34_75","6752CC34_112","6752CC34_124"]
+  module_assessment_regen_label: regen-1756946424036
+  title: Module assessment
+  ai_generated_module_assessment: true
+  module_assessment: true
+  description: "Check your knowledge of Eventstream in Real-Time Intelligence"
+  ms.date: 09/10/2025
+  author: theresa-i
+  ms.author: theresai
   ms.topic: unit
   ms.custom:
-  - N/A
 durationInMinutes: 3
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "What is the primary function of Microsoft Fabric Eventstreams?"
+  - content: "What is the primary function of Eventstream?"
     choices:
     - content: "Performing batch loading of data into a data warehouse."
       isCorrect: false
-      explanation: "Incorrect. Eventstreams isn't a batch loading technology."
+      explanation: "Incorrect. Eventstream isn't a batch loading technology."
     - content: "Running Apache Spark notebooks and jobs."
       isCorrect: false
-      explanation: "Incorrect. Eventstreams isn't used primarily to run Spark code."
+      explanation: "Incorrect. Eventstream isn't used primarily to run Spark code."
     - content: "Ingesting and transforming real-time data."
       isCorrect: true
-      explanation: "Correct. Eventstreams is used to ingest and transform real-time data."
-  - content: "What do temporal window transformation enable you to do?"
+      explanation: "Correct. Eventstream is used to ingest and transform real-time data."
+  - content: "What do temporal window transformations enable you to do?"
     choices:
     - content: "Aggregate event data in a stream based on specific time periods."
       isCorrect: true
@@ -36,14 +39,14 @@ quiz:
     - content: "Delete expired data after a specified retention period."
       isCorrect: false
       explanation: "Incorrect. Temporal windows aren't used to delete expired data."
-  - content: "What is the purpose of the Fabric Activator destination in an eventstream?"
+  - content: "What is the purpose of the Fabric Activator destination in an Eventstream?"
     choices:
     - content: "Data sent to an Activator destination can be used to trigger an automated action based on data values."
       isCorrect: true
       explanation: "Correct. The Activator destination is used to trigger automated actions."
-    - content: "Ingested data in a lakehouse or eventhouse isn't visible until activated by the Fabric Activator."
+    - content: "Ingested data in a lakehouse or Eventhouse isn't visible until activated by the Fabric Activator."
       isCorrect: false
-      explanation: "Incorrect. Data loaded into a lakehouse or eventhouse doesn't need to be activated before becoming visible."
-    - content: "The Activator resets any transformation that were applied in the eventstream, returning the data to a clean state."
+      explanation: "Incorrect. Data loaded into a lakehouse or Eventhouse doesn't need to be activated before becoming visible."
+    - content: "The Activator resets any transformations that were applied in the Eventstream, returning the data to a clean state."
       isCorrect: false
       explanation: "Incorrect. The Activator destination doesn't reset transformations."

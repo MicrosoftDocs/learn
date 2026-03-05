@@ -2,8 +2,6 @@
 uid: learn.oxford.object-detection-lva-edge-device.exercise-deploy-edge-device
 title: Exercise - Deploy an IoT Edge device
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Deploy an IoT Edge device
   description: In this section, we help learner to configure and deploy an IoT Edge device
   ms.date: 07/20/2024
@@ -26,4 +24,4 @@ quiz:
       explanation: "It displays the details of a single deployment"
     - content: "az iot edge deployment status"
       isCorrect: false
-      explanation: "The command is not available" 
+      explanation: "The command is not available" 

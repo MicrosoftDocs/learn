@@ -1,7 +1,3 @@
----
-ms.custom:
-  - build-2023
----
 The Dataframe API is part of a Spark library named Spark SQL, which enables data analysts to use SQL expressions to query and manipulate data.
 
 ## Creating database objects in the Spark catalog

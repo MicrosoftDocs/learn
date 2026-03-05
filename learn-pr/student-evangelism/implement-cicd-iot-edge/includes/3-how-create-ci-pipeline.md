@@ -1,4 +1,4 @@
-Azure Pipelines supports continuous integration (CI) and continuous delivery (CD). CI/CD pipelines allow you to regularly and consistently test, build, and ship code.
+Azure Pipelines supports continuous integration (CI) and continuous delivery (CD). CI/CD pipelines let you test, build, and ship code regularly and consistently.
 
 - You define a *build pipeline* to build and test your code, and then to publish artifacts.
 - You also define a *release pipeline* to consume and deploy those artifacts to deployment targets.

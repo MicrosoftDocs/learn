@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.wwl.purview-ninja-security-copilot
+metadata:
+  title: Efficiently Investigate Data Risks with Security Copilot in Microsoft Purview
+  description: "Efficiently investigate data risks with Security Copilot in Microsoft Purview."
+  ms.date: 08/21/2025
+  author: sachow
+  ms.author: sachow
+  ms.topic: module
+  ms.service: purview
+  ai-usage: human-only
+  hidden: true
+title: Efficiently investigate data risks with Security Copilot in Microsoft Purview
+summary: Security Copilot in Microsoft Purview accelerates investigations by automating alert triage and providing AI-driven insights that help teams quickly uncover root causes and apply remediation actions. This integration streamlines review cycles, ensuring consistent and accurate data activity analysis while enabling information protection teams to focus on strategic security initiatives.
+abstract: |
+  After completing this module, you'll be able to:
+  - Use the Embedded Skill in Microsoft Purview to review DLP policy insights.
+  - Investigate DLP alerts with Security Copilot to identify risks and assess severity.
+  - Investigate data security posture with Security Copilot promptbooks and the Prompt Gallery.
+  - Triage and prioritize alerts with Security Copilot agents to reduce manual workload and alert fatigue.
+prerequisites: |
+  - Have basic knowledge of Microsoft Purview Data Loss Prevention (DLP) and Insider Risk Management.
+  - Are familiar with sensitive information types and labeling concepts in Microsoft Purview.
+  - Understand core security and compliance principles in Microsoft 365.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- risk-practitioner
+products:
+- microsoft-purview
+- m365
+subjects:
+- information-protection-governance
+units:
+- learn.wwl.purview-ninja-security-copilot.introduction
+- learn.wwl.purview-ninja-security-copilot.embedded-skill-data-loss-prevention
+- learn.wwl.purview-ninja-security-copilot.investigate-data-loss-prevention-alerts-security-copilot
+- learn.wwl.purview-ninja-security-copilot.triage-data-loss-prevention-security-copilot
+- learn.wwl.purview-ninja-security-copilot.investigate-data-security-posture-copilot
+- learn.wwl.purview-ninja-security-copilot.knowledge-check
+- learn.wwl.purview-ninja-security-copilot.summary
+badge:
+  uid: learn.wwl.purview-ninja-security-copilot.badge

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-identity-based-security-azure-machine-learning.exercise-configure-secure-access-azure-machine
+title: "Configure secure access to Azure Machine Learning"
+metadata:
+  title: "Configure Secure Access to Azure Machine Learning"
+  description: "Learn how to configure secure access to Azure Machine Learning using Microsoft Entra Conditional Access policies for identity-driven control."
+  ms.date: 02/05/2026
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: unit
+durationInMinutes: 12
+content: |
+  [!include[](includes/6-exercise-configure-secure-access-azure-machine.md)]

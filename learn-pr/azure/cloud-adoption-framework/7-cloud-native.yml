@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.cloud-adoption-framework.cloud-native
+title: Cloud-native
+metadata:
+  title: Cloud-native
+  description: "A high-level overview of the Cloud-native methodology in the Cloud Adoption Framework, including how to build cloud-native apps and features."
+  ms.date: 08/07/2025
+  author: stephen-sumner
+  ms.author: ssumner
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/7-cloud-native.md)]

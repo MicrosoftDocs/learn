@@ -4,4 +4,4 @@ You also looked at the options to create and manage virtual machines in Azure. Y
 
 Finally, you looked at the extensions and services available to more easily administer your VMs.
 
-[!include[](../../../includes/azure-sandbox-cleanup.md)]
+[!INCLUDE [](../../../includes/azure-optional-exercise-subscription-cleanup.md)]

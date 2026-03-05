@@ -1,0 +1,84 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.identify-key-hardware-and-it-infrastructure-components.check
+title: Module assessment
+metadata:
+  title: Module Assessment
+  description: This content is a part of the "Identify key hardware and IT infrastructure components of datacenters" module.
+  ms.date: 05/10/2025
+  author: kiranchandratrey
+  ms.author: elenasim
+  ms.topic: unit
+durationInMinutes: 7
+quiz:
+  title: Knowledge check
+  questions:
+  - content: What are the main types of servers used in a datacenter and what are their functions? 
+    choices:
+    - content: Rack servers for edge computing and blade servers for simple home networks.
+      isCorrect: false
+      explanation: Incorrect. Rack servers are designed for scalability and flexibility in datacenters, not specifically for edge computing. They're versatile and can be used in various applications, including large-scale datacenters. Blade servers are used in high-density environments to maximize processing power in limited space, not for simple home networks.
+    - content: Blade servers for high-density environments and rack servers for scalability. 
+      isCorrect: true
+      explanation: Correct.
+    - content: Blade servers for edge computing, and rack servers for low-performance tasks.
+      isCorrect: false
+      explanation: Incorrect. Blade servers are used in high-density environments to maximize processing power in limited space, not specifically for edge computing. Rack servers are designed for scalability and flexibility, supporting a wide range of applications, including high-performance tasks, not just low-performance tasks.
+    - content: Blade servers for power-saving home offices, and rack servers for simple networking.
+      isCorrect: false
+      explanation: Incorrect. Blade servers are used in high-density environments to maximize processing power in limited space, not for power-saving home offices. Rack servers are designed for scalability and flexibility, supporting a wide range of applications, including complex networking tasks, not just simple networking.
+  - content: Which of the following are common types of data storage used in datacenters? 
+    choices:
+    - content: Storage Area Network (SAN), Network Attached Storage (NAS), and Object Storage
+      isCorrect: true
+      explanation: Correct. 
+    - content: USB drives, DVDs, and external hard drives
+      isCorrect: false
+      explanation: Incorrect. USB drives, DVDs, and external hard drives are typically used for personal or small-scale data storage rather than in datacenters. Datacenters require more robust, scalable, and high-performance storage solutions like SAN, NAS, and Object Storage to handle large volumes of data and provide efficient access and management.
+    - content: Wireless routers, modems, and firewalls
+      isCorrect: false
+      explanation: Incorrect. Wireless routers, modems, and firewalls are networking devices, not data storage solutions. They're used to manage and secure network traffic rather than store data. Datacenters use SAN, NAS, and Object Storage for data storage needs.
+    - content: RAM, cache memory, and processors
+      isCorrect: false
+      explanation: Incorrect. RAM, cache memory, and processors are components of computing systems that handle data processing and temporary storage, not long-term data storage. Datacenters use SAN, NAS, and Object Storage for persistent data storage.
+  - content: What role do switches, routers, and firewalls play in a datacenter's network infrastructure? 
+    choices:
+    - content: Switches create internet connections, routers manage power, and firewalls handle storage. 
+      isCorrect: false
+      explanation: Incorrect. Switches don't create internet connections; they connect devices within the datacenter to facilitate internal communication. Routers manage the flow of data between different networks, not power. Firewalls are used to secure the network by controlling incoming and outgoing traffic based on security rules, not for handling storage.
+    - content: Switches connect devices, routers link external networks, and firewalls provide security. 
+      isCorrect: true
+      explanation: Correct. 
+    - content: Switches handle traffic, routers monitor apps, and firewalls store data. 
+      isCorrect: false
+      explanation: Incorrect. Switches handle traffic within the datacenter by forwarding data packets between devices. Routers manage the flow of data between different networks, not specifically monitoring applications. Firewalls are used to secure the network by controlling traffic, not for storing data.
+    - content: Switches regulate airflow, routers optimize density, and firewalls distribute tasks. 
+      isCorrect: false
+      explanation: Incorrect. Switches don't regulate airflow; they connect devices within the datacenter. Routers manage the flow of data between different networks, not optimizing density. Firewalls are used to secure the network by controlling traffic, not for distributing tasks.
+  - content: Why is rack and enclosure management critical in a datacenter? 
+    choices:
+    - content: To enable faster internet and software scalability. 
+      isCorrect: false
+      explanation: Incorrect. Rack and enclosure management focuses on the physical organization, security, and cooling of the hardware within a datacenter. While these aspects indirectly support overall performance and efficiency, they don't directly enable faster internet or software scalability. These are achieved through network infrastructure and software solutions.
+    - content: To ensure security, cooling, and organization.
+      isCorrect: true
+      explanation: Correct. 
+    - content: To facilitate backups and storage tiering. 
+      isCorrect: false
+      explanation: Incorrect. Backups and storage tiering are managed through data management and storage solutions, not through rack and enclosure management. Rack and enclosure management ensures that the physical hardware is organized, secure, and properly cooled, which supports the overall reliability and efficiency of the datacenter.
+    - content: To optimize AI/ML tasks and compliance. 
+      isCorrect: false
+      explanation: Incorrect. Optimizing AI/ML tasks involves specialized hardware and software configurations, while compliance is managed through policies and security protocols. Rack and enclosure management is focused on the physical aspects of the datacenter, ensuring that equipment is properly housed, secure, and cooled.
+  - content: How do application delivery controllers contribute to datacenter efficiency? 
+    choices:
+    - content: By managing network switches and firewalls for better connectivity. 
+      isCorrect: false
+      explanation: Incorrect. Application delivery controllers (ADCs) aren't primarily responsible for managing network switches and firewalls. Their main function is to optimize application performance, balance traffic, and ensure secure, high-availability delivery. Network switches and firewalls are managed by other network infrastructure components.
+    - content: By optimizing application performance, balancing traffic, and ensuring secure, high-availability delivery. 
+      isCorrect: true
+      explanation: Correct.
+    - content: By increasing server density and reducing cooling costs. 
+      isCorrect: false
+      explanation: Incorrect. Increasing server density and reducing cooling costs aren't the primary functions of ADCs. These tasks are typically managed by other datacenter infrastructure components, such as server management and cooling systems. ADCs focus on optimizing application performance, balancing traffic, and ensuring secure, high-availability delivery.
+    - content: By improving storage capacity and enabling automated data tiering.
+      isCorrect: false
+      explanation: Incorrect. Improving storage capacity and enabling automated data tiering are functions related to storage management systems, not ADCs. ADCs are designed to optimize application performance, balance traffic, and ensure secure, high-availability delivery, rather than managing storage capacity and data tiering.

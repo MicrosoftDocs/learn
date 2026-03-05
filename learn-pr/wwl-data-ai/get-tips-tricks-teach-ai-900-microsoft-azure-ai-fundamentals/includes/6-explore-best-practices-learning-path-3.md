@@ -18,10 +18,8 @@ Learning Path 3 Tips and Tricks
 
 Learning Path 3 Demos
 
-- [Demo 01: Use Question Answering model with Language Studio](https://aka.ms/ai900-question-answering)
-- [Demo 02: Use Conversational Language Understanding with Language Studio](https://aka.ms/ai900-language-understanding)
-- [Demo 03: Explore Speech Studio](https://aka.ms/ai900-speech)
+- [Demo 03: Explore Speech Studio](https://microsoftlearning.github.io/mslearn-ai-fundamentals/Instructions/Exercises/04-speech.html)
 
 Learning Path 3 Exercise
 
-- [Exercise 01: Analyze text with Language Studio](https://aka.ms/ai900-text-analysis)
+- [Exercise 01: Analyze text with Language Studio](https://microsoftlearning.github.io/mslearn-ai-fundamentals/Instructions/Exercises/03-text-analysis.html)

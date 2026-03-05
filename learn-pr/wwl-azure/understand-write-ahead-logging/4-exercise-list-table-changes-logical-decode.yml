@@ -2,8 +2,6 @@
 uid: learn.wwl.understand-write-ahead-logging.exercise-list-table-changes-logical-decode
 title: Exercise - List table changes with logical decoding
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - List table changes with logical decoding
   description: "Exercise - List table changes with logical decoding."
   ms.date: 05/10/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 30
 content: |
-  [!include[](includes/4-exercise-list-table-changes-logical-decode.md)]
+  [!include[](includes/4-exercise-list-table-changes-logical-decode.md)]

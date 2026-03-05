@@ -3,7 +3,7 @@ uid: learn.wwl.use-azure-machine-learning-pipelines-for-automation
 metadata:
   title: Optimize model training with Azure Machine Learning
   description: Learn how to optimize model training in Azure Machine Learning by using scripts, jobs, components and pipelines.
-  ms.date: 06/06/2023
+  ms.date: 12/01/2025
   author: wwlpublish
   ms.author: madiepev
   ms.topic: learning-path

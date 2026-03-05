@@ -1,32 +1,31 @@
-When you have a clear view of the different stages you'll deploy, you need to think about when you want to deploy to these stages.
+When you have a clear view of the different stages for deployment, consider when to deploy to these stages.
 
-As we mentioned in the introduction, Continuous Delivery is about deploying multiple times a day and can deploy on-demand.
+Continuous Delivery involves deploying multiple times per day with on-demand deployment capabilities.
 
-When we define our cadence, questions that we should ask ourselves are:
+When defining deployment cadence, consider these questions:
 
- -  Do we want to deploy our application?
- -  Do we want to deploy multiple times a day?
- -  Can we deploy to a stage? Is it used?
+- Should the application be deployed automatically?
+- Is multiple daily deployment appropriate?
+- Is the target stage available for deployment?
 
 For example, a tester testing an application during the day might not want to deploy a new version of the app during the test phase.
 
-Another example is when your application incurs downtime, you don't want to deploy when users use the application.
+Another consideration is application downtime - avoid deploying during peak usage periods.
 
-The frequency of deployment, or cadence, differs from stage to stage.
+Deployment frequency varies between stages.
 
-A typical scenario we often see is continuous deployment during the development stage.
+A common scenario is continuous deployment to the development stage, where each completed change automatically deploys after building.
 
-Every new change ends up there once it's completed and builds.
+Deployment to subsequent phases may occur less frequently, such as scheduled overnight deployments.
 
-Deploying to the next phase doesn't always occur multiple times but only at night.
+When designing release strategy, select triggers carefully and consider the required deployment cadence.
 
-When designing your release strategy, choose your triggers carefully and consider the required release cadence.
+Key considerations include:
 
-Some things we need to take into consideration are:
-
- -  What is your target environment?
- -  Does one team use it, or do multiple teams use it?
-     -  If a single team uses it, you can deploy it frequently. Otherwise, it would be best if you were a bit more careful.
- -  Who are the users? Do they want a new version multiple times a day?
- -  How long does it take to deploy?
- -  Is there downtime? What happens to performance? Are users affected?
+- Target environment characteristics
+- Team usage patterns:
+  - Single team environments support frequent deployments
+  - Shared environments require coordinated deployment schedules
+- User expectations and tolerance for frequent updates
+- Deployment duration and complexity
+- Downtime impact, performance effects, and user experience

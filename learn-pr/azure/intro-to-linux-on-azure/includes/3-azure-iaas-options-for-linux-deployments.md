@@ -34,7 +34,7 @@ Microsoft recommends using [endorsed distributions](/azure/virtual-machines/linu
 
 To receive Azure support, you must first register for a support plan. [Several tiers are available](https://azure.microsoft.com/support/plans), including Basic (free), Developer, Standard, and Professional Direct.
 
-Three of the largest Linux vendors—[Red Hat](https://www.redhat.com/en/resources/integrated-support-for-rh-solutions-in-azure-brief), [SUSE](https://www.suse.com/news/suse-linux-enterprise-server-basic-and-priority-support-now-offered-on-windows-azure/), and [Ubuntu](https://ubuntu.com/azure/support)—partner with Microsoft to provide end-to-end support for Linux deployments. The integrated, enterprise-level support covers everything from operating-system issues to security patches to application support. Microsoft and your Linux provider collaborate to solve your issues through a single point of contact.
+Three of the largest Linux vendors—[Red Hat](https://www.redhat.com/en/partners/microsoft/red-hat-on-azure), [SUSE](https://www.suse.com/news/suse-linux-enterprise-server-basic-and-priority-support-now-offered-on-windows-azure/), and [Ubuntu](https://ubuntu.com/azure/support)—partner with Microsoft to provide end-to-end support for Linux deployments. The integrated, enterprise-level support covers everything from operating-system issues to security patches to application support. Microsoft and your Linux provider collaborate to solve your issues through a single point of contact.
 
 ## Describe next steps with Azure IaaS
 

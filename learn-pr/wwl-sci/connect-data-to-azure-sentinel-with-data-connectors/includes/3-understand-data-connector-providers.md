@@ -10,12 +10,11 @@ The Microsoft Defender XDR data connector provides alerts, incidents, and raw da
 
 - Microsoft Defender for Cloud Apps
 
-
 ### Microsoft Azure Services
 
 The connectors for Microsoft and Azure-related services include (but aren't limited to):
 
-- Microsoft Entra ID 
+- Microsoft Entra ID
 
 - Azure Activity
 
@@ -23,7 +22,7 @@ The connectors for Microsoft and Azure-related services include (but aren't limi
 
 - Azure DDoS Protection
 
-- Microsoft Defender for IoT 
+- Microsoft Defender for IoT
 
 - Azure Information Protection
 
@@ -37,13 +36,13 @@ The connectors for Microsoft and Azure-related services include (but aren't limi
 
 - Office 365
 
-- Windows firewall
+- Windows Firewall
 
 - Security Events
 
 ### Vendor connectors
 
-Microsoft Sentinel provides an ever-growing list of vendor-specific data connectors.  These connectors primarily use the CEF and Syslog connector as their foundation.
+Microsoft Sentinel provides an ever-growing list of vendor-specific data connectors. These connectors primarily use the CEF and Syslog connector as their foundation.
 
 > [!TIP]
 > Remember to check the connector page to see the Data Type (table) that the connector writes to.
@@ -66,7 +65,7 @@ Common Event Format (CEF) is an industry-standard format on top of Syslog messag
 
 ### Syslog vs. Common Event Format
 
-CEF is always a superior choice because the log data is parsed into predefined fields in the CommonSecurityLog table.  Syslog provides header fields, but the raw log message is stored in a field named SyslogMessage in the Syslog table.  For the Syslog data to be queried, you need to write a parser to extract the specific fields. The process to create a Parser for a Syslog message is demonstrated in a later module.
+CEF is always a superior choice because the log data is parsed into predefined fields in the CommonSecurityLog table. Syslog provides header fields, but the raw log message is stored in a field named SyslogMessage in the Syslog table. For the Syslog data to be queried, you need to write a parser to extract the specific fields. The process to create a Parser for a Syslog message is demonstrated in a later module.
 
 ### Connector architecture options
 

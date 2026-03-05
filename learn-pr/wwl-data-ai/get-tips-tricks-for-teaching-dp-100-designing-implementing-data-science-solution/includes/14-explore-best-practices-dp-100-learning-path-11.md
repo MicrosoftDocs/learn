@@ -1,11 +1,8 @@
-
-
-
 DP-100: Learning Path 11 Design an MLOps solution
 
 Learning Path 11 Overview
 
-As you begin to teach this learning path, get familiar with what the students will learn during the learning path. In this learning path students will learn about designing a machine learning operations solution.
+As you begin to teach this learning path, get familiar with what the students learn during the learning path. In this learning path students learn about designing a machine learning operations solution.
 
 This learning path consists of five focus areas:
 
@@ -31,3 +28,4 @@ Learning Path 11 Lab
 
 - Lab 11.1: [Deploy a model to a managed online endpoint](https://microsoftlearning.github.io/mslearn-azure-ml/Instructions/11-Deploy-online-endpoint.html)
 - Lab 11.2: Case study: design an MLOps solution (optional)
+

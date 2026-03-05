@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.deploy-apps-azure-kubernetes-service.exercise-deploy-ai-api
+title: Exercise - Deploy an AI inference API to Azure Kubernetes Service
+metadata:
+  title: Exercise - Deploy an AI Inference API to Azure Kubernetes Service
+  description: Exercise - Deploy an AI inference API to Azure Kubernetes Service
+  ms.date: 12/11/2025
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: unit
+azureSandbox: false
+durationInMinutes: 30
+content: |
+  [!include[](includes/5-exercise-deploy-ai-api.md)]

@@ -10,7 +10,7 @@ Let's take a closer look at how to implement and use an App Service plan with yo
    - **Operating system**: Linux or Windows. 
    - **Region**: The region for the App Service plan, such as West US, Central India, North Europe, and so on.
    - **Pricing tier**: Determines what App Service features you get and how much you pay for the plan. The pricing tiers available to your App Service plan depend on the operating system selected at creation time.
-   - **Number of VM instances**: Currently ranges from three to 30. 
+   - **Number of VM instances**: Determined by your plan. 
    - **Size of VM instances**: Defined by CPU, memory, and remote storage. 
 
 - You can continue to add new applications to an existing plan as long as the plan has enough resources to handle the increasing load.

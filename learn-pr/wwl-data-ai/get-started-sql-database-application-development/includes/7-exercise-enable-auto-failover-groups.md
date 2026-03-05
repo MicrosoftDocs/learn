@@ -3,7 +3,7 @@ Now it's your chance to enable application resilience with auto-failover groups 
 In this exercise you’ll create two Azure SQL databases that will act as primary and secondary. You'll configure auto-failover groups to ensure high availability and disaster recovery of your application database, and validate the replication status on your application.
 
 > [!NOTE]
-> To complete this exercise, you will need an [Azure subscription](https://azure.microsoft.com/free?azure-portal=true).
+> To complete this exercise, you will need an [Azure subscription](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn).
 
 Launch the exercise and follow the instructions.
 

@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.troubleshoot-vpn-gateways
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Troubleshoot VPN gateways in Microsoft Azure
   description: "Network configuration and the use of Virtual Private Networks (VPNs) is integral to the success of collaborative working. In this module, we look at how to monitor and troubleshoot site-to-site and point-to-site VPNs. AZ720 AZ-720 az-720 networking"
   ms.date: 04/27/2023
@@ -44,4 +42,4 @@ units:
 - learn.wwl.troubleshoot-vpn-gateways.knowledge-check
 - learn.wwl.troubleshoot-vpn-gateways.summary
 badge:
-  uid: learn.wwl.troubleshoot-vpn-gateways.badge
+  uid: learn.wwl.troubleshoot-vpn-gateways.badge

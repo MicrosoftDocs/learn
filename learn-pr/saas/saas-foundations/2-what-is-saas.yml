@@ -2,8 +2,6 @@
 uid: learn.saas-foundations.what-is-saas
 title: What is SaaS?
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: What is Saas?
   description: Learn about SaaS and the difference between B2B and B2C SaaS.
   ms.date: 05/28/2024
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 10
 content: |
-  [!include[](includes/2-what-is-saas.md)]
+  [!include[](includes/2-what-is-saas.md)]

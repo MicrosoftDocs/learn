@@ -1,0 +1,48 @@
+### YamlMime:Module
+uid: learn.dpu.k-12-educators
+title: Microsoft Education for K-12 educators
+metadata:
+  title: Microsoft Education for K-12 educators
+  description: In this module, you'll explore various Microsoft Education solutions for K-12 educators.
+  ms.date: 07/17/2025
+  author: melissawinters
+  ms.author: v-mwinters
+  ms.topic: module
+  ms.service: microsoft-365-education
+  ms.custom: CE052925-3
+summary: >
+  Microsoft Education offers tools designed to support K–12 educators by addressing common challenges like outdated technology, limited time, and the need for accessible, inclusive learning. Solutions such as Learning Accelerators, Reflect, Immersive Reader, and Copilot Chat help streamline instruction, personalize learning, and enhance student engagement. These tools empower educators to focus more on teaching and student connection while building future-ready skills.
+abstract: |
+  By the end of this module, you'll be able to:
+  - Identify the key challenges K–12 educators face and explain how Microsoft Education tools—such as Learning Accelerators, Reflect, and Immersive Reader—address these challenges to support teaching and learning.
+  - Demonstrate how to use Microsoft tools like Reading Coach, Math Progress, and Education Insights to personalize instruction, streamline assessment, and improve student outcomes across foundational and future-ready skills.
+  - Explore how Microsoft 365 Copilot Chat and Minecraft Education can enhance lesson planning, student engagement, and classroom customization through AI-powered support and immersive learning environments.
+prerequisites: |
+  - None
+iconUrl: /training/achievements/microsoft-education-k-12-educators.svg
+ratingEnabled: false
+levels:
+  - beginner
+roles:  
+  - k-12-educator
+  - school-leader
+  - technology-manager
+products:
+  - m365-education
+units:
+  - learn.dpu.k-12-educators.introduction
+  - learn.dpu.k-12-educators.challenges-facing-k-12-educators
+  - learn.dpu.k-12-educators.what-k-12-educators-need
+  - learn.dpu.k-12-educators.learning-accelerators
+  - learn.dpu.k-12-educators.what-is-reading-coach
+  - learn.dpu.k-12-educators.reading-progress
+  - learn.dpu.k-12-educators.math-progress
+  - learn.dpu.k-12-educators.microsoft-reflect
+  - learn.dpu.k-12-educators.immersive-reader
+  - learn.dpu.k-12-educators.education-insights
+  - learn.dpu.k-12-educators.microsoft-365-copilot-chat
+  - learn.dpu.k-12-educators.minecraft-education
+  - learn.dpu.k-12-educators.knowledge-check
+  - learn.dpu.k-12-educators.summary
+badge:
+  uid: learn.dpu.k-12-educators.badge

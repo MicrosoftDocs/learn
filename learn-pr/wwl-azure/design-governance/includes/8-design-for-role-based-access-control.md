@@ -1,6 +1,6 @@
 [Azure RBAC](/azure/role-based-access-control/overview) allows you to grant access to Azure resources that you control. Azure RBAC evaluates each request for access and determines if access should be blocked, not allowed, or allowed. 
 
-:::image type="content" source="../media/role-based-access-control-flowchart.png" alt-text="Diagram of an RBAC decision tree that shows the flow from no access to access allowed." border="false":::
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=1c0458bb-8548-4e8d-8443-f1edc02e5adf]
  
 RBAC is an allow model. An _allow model_ means when a user is assigned a specific role, Azure RBAC allows the user to perform the actions associated with that role. A role assignment could grant a user read permissions to a resource group. To have write permissions, the role would need to explicitly allow write access. 
 

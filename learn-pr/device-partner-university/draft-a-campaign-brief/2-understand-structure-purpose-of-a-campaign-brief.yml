@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.draft-a-campaign-brief.understand-structure-purpose-of-a-campaign-brief
+title: Understand the structure and purpose of a campaign brief
+metadata:
+  title: Understand The Structure And Purpose Of A Campaign Brief
+  description: This content is part of the "Draft a campaign brief using Copilot in Word" module.
+  ms.date: 10/07/2025
+  author: melissawinters
+  ms.author: v-mwinters
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/2-understand-structure-purpose-of-a-campaign-brief.md)]

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.spec-driven-development-github-spec-kit-greenfield-intro.exercise-create-greenfield-application-github-spec-kit
+title: "Develop a greenfield application using GitHub Spec Kit"
+metadata:
+  title: "Develop a Greenfield Application Using GitHub Spec Kit"
+  description: "Develop a greenfield application using GitHub Spec Kit."
+  ms.date: 01/26/2026
+  author: chrishowd
+  ms.author: cahowd
+  ms.topic: unit
+durationInMinutes: 60
+content: |
+  [!include[](includes/9-exercise-create-greenfield-application-github-spec-kit.md)]

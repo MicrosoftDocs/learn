@@ -4,18 +4,15 @@ In this unit, you learn how to use the Security Overview to monitor the security
 
 ## Use the Security Overview
 
-> [!NOTE]
-> The Security Overview is currently in beta and subject to change.
-
 The Security Overview is available in the **Security** tab of organizations and repositories. You can use it to get a high-level view of the security status of your organization or to identify problematic repositories that require intervention.
 
-- At the organization level, the Security Overview displays aggregate and repository-specific security information for repositories owned by your organization. You can also filter information per security feature.
-- At the team level, the Security Overview displays repository-specific security information for repositories that the team has admin privileges for.
+- At the organization level, the Security Overview displays aggregate and repository-specific security information for repositories your organization owns. You can also filter information per security feature.
+- At the team level, the Security Overview displays repository-specific security information for repositories for which the team has admin privileges.
 - At the repository level, the Security Overview shows which security features are enabled for the repository and offers the option to configure any available security features not currently in use.
 
 :::image type="content" source="../media/security-overview.png" alt-text="Screenshot of the Security Overview at the organization level.":::
 
-Thanks to its high level of interactivity and numerous filters, the Security Overview is useful for both broad and specific analyses of your organization's security status. For example, you can use it to monitor the adoption of features by your organization or by a specific team as you roll out GitHub Advanced Security to your enterprise. Or, use it to review all alerts of a specific type and severity level across all repositories in your organization.
+Thanks to its high level of interactivity and numerous filters, the Security Overview is useful for both broad and specific analyses of your organization's security status. For example, you can use it to monitor the adoption of features by your organization or by a specific team as you roll out GitHub Advanced Security to your enterprise, or use it to review all alerts of a specific type and severity level across all repositories in your organization.
 
 ## Use the GitHub Advanced Security endpoints
 

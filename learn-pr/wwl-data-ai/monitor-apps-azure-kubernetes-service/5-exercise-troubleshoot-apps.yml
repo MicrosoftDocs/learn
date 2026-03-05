@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.monitor-apps-azure-kubernetes-service.exercise-troubleshoot-apps
+title: Exercise - Troubleshoot apps on Azure Kubernetes Service
+metadata:
+  title: Exercise - Troubleshoot Apps on Azure Kubernetes Service
+  description: Exercise - Troubleshoot apps on Azure Kubernetes Service
+  ms.date: 12/31/2025
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: unit
+durationInMinutes: 30
+content: |
+  [!include[](includes/5-exercise-troubleshoot-apps.md)]

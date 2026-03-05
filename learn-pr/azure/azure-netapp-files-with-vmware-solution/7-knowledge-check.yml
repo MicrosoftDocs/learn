@@ -1,16 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.azure-netapp-files-with-vmware-solution.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: knowledge_check
-  title: Knowledge check
+  title: Module assessment
   description: Check your knowledge of Azure NetApp Files.
   ms.date: 07/03/2024
   author: b-ahibbard
   ms.author: anfdocs
   ms.topic: unit
+  module_assessment: true
 durationInMinutes: 4
 content: |
 quiz: 
@@ -56,4 +55,4 @@ quiz:
       explanation: "Azure NetApp Files is a shared file service and doesn't offer block protocol connectivity."
 
 
- 
+ 

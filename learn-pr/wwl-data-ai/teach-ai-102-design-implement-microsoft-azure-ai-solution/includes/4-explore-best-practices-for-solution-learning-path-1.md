@@ -1,7 +1,7 @@
 
 
 
-AI-102: Learning Path 1 Get started with Azure AI Services
+AI-102: Learning Path 1 Get started with Foundry Tools
 
 Learning Path 1 Overview
 
@@ -11,8 +11,8 @@ This learning path consists of four lessons:
 
 - Lesson 1 – Introduction to AI
 - Lesson 2 – AI in Azure
-- Lesson 3 – Get started with Azure AI Services
-- Lesson 4 – Using Azure AI services for enterprise applications
+- Lesson 3 – Get started with Foundry Tools
+- Lesson 4 – Using Foundry Tools for enterprise applications
 
 
 > [!VIDEO https://learn-video.azurefd.net/vod/player?id=abca5fd1-9203-47fb-91e1-2a3ee51b40ef] 
@@ -30,4 +30,4 @@ Learning Path 1 Demos
 - Monitor AI Services 
 
 Learning Path 1 Lab/Exercise
-- Get Started with Azure AI Services
+- Get Started with Foundry Tools

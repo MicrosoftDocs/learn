@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.develop-multi-agent-azure-ai-foundry.exercise
+title: Exercise - Develop a multi-agent app with Microsoft Foundry
+metadata:
+  title: Exercise - Develop a multi-agent app with Microsoft Foundry
+  description: "Build a multi-agent solution using connected agents in Microsoft Foundry Agent Service."
+  ms.date: 06/13/2025
+  author: buzahid
+  ms.author: buzahid
+  ms.topic: unit
+durationInMinutes: 30
+content: |
+  [!include[](includes/4-exercise.md)]
+

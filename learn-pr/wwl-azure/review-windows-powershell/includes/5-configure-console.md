@@ -9,7 +9,7 @@ If the font size and color make it difficult for you to review content, you can 
 - Open parentheses (().
 - Open curly bracket ({).
 - Open square bracket ([).
-- Open angle bracket or greater than symbol (<).
+- Open angle bracket or less than symbol (<).
 
 If you find it difficult to differentiate between these characters, try changing the font. To change the font, select the **PowerShell** icon in the console window. From the shortcut menu, select **Properties**, and then select the **Font** tab. Select a new font style and size. TrueType fonts, which the double-T symbol indicates, are considered easier to review than Raster fonts. The PowerShell **Properties** dialog box provides a preview pane in which you can review the results of your choice.
 

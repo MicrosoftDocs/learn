@@ -34,7 +34,7 @@ Connection Monitor provides unified, end-to-end connection monitoring in Azure N
 
 :::image type="content" source="../images/connection-monitor-topology.png" alt-text="Diagram that shows how Connection Monitor interacts with Azure Virtual Machines, non-Azure hosts, endpoints, and data storage locations." border="false":::
 
-To use Connection Monitor for monitoring, you need to install monitoring agents on the hosts that you monitor. Connection Monitor uses lightweight executable files to run connectivity checks, whether a host is located in an Azure virtual network or in an on-premises network. With Azure VMs, you can install the Network Watcher Agent VM, also known as the Network Watcher extension. For on-premises computers, you can enable this functionality by installing the Log Analytics agent.
+To use Connection Monitor for monitoring, you need to install monitoring agents on the hosts that you monitor. Connection Monitor uses lightweight executable files to run connectivity checks, whether a host is located in an Azure virtual network or in an on-premises network. With Azure VMs, you can install the Network Watcher Agent VM, also known as the Network Watcher extension.
 
 ## IP flow verify
 

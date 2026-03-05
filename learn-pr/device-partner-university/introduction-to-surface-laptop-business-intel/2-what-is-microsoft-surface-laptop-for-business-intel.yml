@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.introduction-to-surface-laptop-business-intel.what-is-microsoft-surface-laptop-for-business-intel
+title: What is Microsoft Surface Laptop for Business (Intel)?
+metadata:
+  title: What Is Microsoft Surface Laptop For Business (Intel)?
+  description: This content is part of the "Introduction to Microsoft Surface Laptop for Business (Intel)" module.
+  ms.date: 11/17/2025
+  author: ozahran7
+  ms.author: v-zahranomar
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/2-what-is-microsoft-surface-laptop-for-business-intel.md)]

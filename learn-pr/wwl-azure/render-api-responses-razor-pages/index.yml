@@ -1,10 +1,10 @@
 ### YamlMime:Module
 uid: learn.wwl.render-api-responses-razor-pages
 metadata:
-  title: Render API responses in ASP.NET Core Blazor Web apps
+  title: Render API Responses in ASP.NET Core Blazor Web Apps
   description: "Render API responses in ASP.NET Core Blazor Web apps"
   ms.date: 01/16/2025
-  author: wwlpublish
+  author: JeffKoMS
   ms.author: jeffko
   ms.topic: module
   ms.collection: N/A

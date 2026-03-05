@@ -1,0 +1,75 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-ediscovery-review-set.knowledge-check
+title: Module assessment
+metadata:
+  title: Module assessment
+  description: "Check your knowledge."
+  ms.date: 05/15/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "A legal team is reviewing content in a case and wants to maintain a consistent, auditable record of data added for analysis. Why would they use a review set in Microsoft Purview eDiscovery?"
+    choices:
+    - content: "To automatically delete irrelevant items from search results."
+      isCorrect: false
+      explanation: "Incorrect: Items in review sets can't be removed once added."
+    - content: "To store a static set of content for focused review and tagging."
+      isCorrect: true
+      explanation: "Correct: Review sets are static and support consistent analysis and tagging."
+    - content: "To merge results from multiple cases into one shared location."
+      isCorrect: false
+      explanation: "Incorrect: Review sets are scoped to a single case and can't merge content across cases."
+
+  - content: "You're analyzing a large volume of email data in a review set. What's the benefit of running analytics before starting manual review?"
+    choices:
+    - content: "It permanently deletes duplicate files to reduce storage costs."
+      isCorrect: false
+      explanation: "Incorrect: Analytics identifies duplicates but doesn't delete them."
+    - content: "It sorts documents by file extension to simplify viewing."
+      isCorrect: false
+      explanation: "Incorrect: File extension grouping isn't a function of analytics."
+    - content: "It reduces review volume by grouping near-duplicates and identifying key emails."
+      isCorrect: true
+      explanation: "Correct: Analytics helps focus review by identifying near-duplicates, threading emails, and flagging inclusive messages."
+
+  - content: "You're reviewing tagged documents in a case and want to apply a consistent tagging structure across future cases. What should you do?"
+    choices:
+    - content: "Save the tag list as a local file and manually recreate it later."
+      isCorrect: false
+      explanation: "Incorrect: Tag templates provide a better way to reuse consistent structures."
+    - content: "Import a predefined tag template created by an eDiscovery administrator."
+      isCorrect: true
+      explanation: "Correct: Tag templates let you reuse standardized tagging structures across review sets."
+    - content: "Convert the tags into a filter to export only tagged items."
+      isCorrect: false
+      explanation: "Incorrect: Filters and tags are separate tools with different purposes."
+
+  - content: "A case reviewer is using the filter panel in a review set to identify documents that are missing tags. What condition should they use?"
+    choices:
+    - content: "Tag field with the 'Is empty' operator."
+      isCorrect: true
+      explanation: "Correct: This condition shows items that haven't been tagged yet."
+    - content: "File type filter with the 'Isn't empty' operator."
+      isCorrect: false
+      explanation: "Incorrect: This shows items that have a file type but doesn't target tags."
+    - content: "Search filter with the 'Equals' operator set to 'None'."
+      isCorrect: false
+      explanation: "Incorrect: This condition doesn't detect untagged content."
+
+  - content: "Your team is preparing for export but wants to include all related items such as attachments and chat messages. Which export option should you enable?"
+    choices:
+    - content: "Export text files"
+      isCorrect: false
+      explanation: "Incorrect: This only includes extracted text, not related items."
+    - content: "Include associated family and conversation items"
+      isCorrect: true
+      explanation: "Correct: This option ensures related attachments and conversation threads are included in the export."
+    - content: "Enable redaction before export"
+      isCorrect: false
+      explanation: "Incorrect: Redaction affects file content, not which related items are included."

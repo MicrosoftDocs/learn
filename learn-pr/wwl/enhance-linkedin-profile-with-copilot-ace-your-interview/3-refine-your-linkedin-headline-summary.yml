@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.enhance-linkedin-profile-with-copilot-ace-your-interview.refine-your-linkedin-headline-summary
+title: Refine your LinkedIn headline & summary
+metadata:
+  title: Refine Your LinkedIn Headline & Summary
+  description: Refine your LinkedIn headline and summary to attract recruiters and employers
+  ms.date: 05/09/2025
+  author: andrewbettany
+  ms.author: tsheppard
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-refine-your-linkedin-headline-summary.md)]

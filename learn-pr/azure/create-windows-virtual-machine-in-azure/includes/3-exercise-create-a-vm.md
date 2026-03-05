@@ -1,10 +1,17 @@
 Your company processes video content on Windows virtual machines. A new city has contracted with your company to process their traffic cameras, but it's a model with which you haven't worked before. You need to create a new Windows virtual machine (VM) and install some proprietary codecs in order to process and analyze the new video content.
 
+[!INCLUDE[](../../../includes/azure-optional-exercise-subscription-note.md)]
+
+[!INCLUDE[](../../../includes/azure-optional-exercise-create-resource-group-note.md)]
+
+> [!NOTE]
+> Throughout this exercise, replace **myResourceGroupName** in the examples with the name of an existing resource group, or the name of the resource group that you created for this exercise.
+
 ## Create a new Windows virtual machine
 
 You can create Windows VMs with the Azure portal, Azure CLI, or Azure PowerShell. The best approach is to use the portal, because the **Create a virtual machine** wizard collects all the required information and provides hints and validation messages throughout the process.
 
-1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you used to activate the sandbox.
+1. Sign in to the [Azure portal](https://portal.azure.com/) using your account.
 
 1. On the Azure portal, under **Azure services**, select **Create a resource**. The **Create a resource** pane appears.
 
@@ -18,7 +25,7 @@ You can create Windows VMs with the Azure portal, Azure CLI, or Azure PowerShell
 
 Azure presents a *wizard* as a series of tabs to walk you through all the configuration details for creating the VM. The first tab is **Basics**. You can select **Next** or **Previous** to move from one tab to another, or you can select any tab in the horizontal menu to move to a  customizable configuration section.
 
-:::image type="content" source="../media/3-azure-portal-create-vm.png" border="true" alt-text="Screenshot showing **Basics** tab of the **Create a virtual machine** pane.":::
+:::image type="content" source="../media/3-azure-portal-create-vm.png" border="true" alt-text="Screenshot showing Basics tab of the Create a virtual machine pane.":::
 
 ### Configure basic VM settings
 
@@ -33,11 +40,11 @@ Azure presents a *wizard* as a series of tabs to walk you through all the config
     | Setting | Value |
     |---------|---------|
     | **Project details** |
-    | Subscription | Concierge Subscription (the subscription that should be billed for VM hours). |
-    | Resource Group | Select ***<rgn>[sandbox resource group name]</rgn>***. |
+    | Subscription | Select your subscription that should be billed for VM hours. |
+    | Resource Group | Select ***myResourceGroupName***. |
     | **Instance details** |
     | Virtual machine name | Enter a name for your VM, such as **test-vp-vm2** (for Test Video Processor VM #2). |
-    | Region | Select a region close to you from the global regions listed in the following table. |
+    | Region | Select a region close to you from the list of [global Azure regions](/azure/reliability/regions-list). |
     | Availability options | Accept default **No infrastructure redundancy required**. This option is used to ensure the VM is highly available by grouping multiple VMs together to deal with planned or unplanned maintenance events or outages. |
     | Security type | Standard |
     | Image | Select **[smalldisk] Windows Server 2019 Datacenter - x64 Gen2** from the dropdown list. |
@@ -55,11 +62,10 @@ Azure presents a *wizard* as a series of tabs to walk you through all the config
     | Would you like to use an existing Windows Server License | Leave unchecked | 
     | | |
 
-   [!include[](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
-
 1. Select **Next : Disks**.
+
     > [!TIP]
-    > You can use the horizonal scroll bar to slide the view to the left to get back to the VM settings, which had opened a new pane on the right hand side.
+    > You can use the horizontal scroll bar to slide the view to the left to get back to the VM settings, which had opened a new pane on the right hand side.
 
 ## Configure disks for the VM
 
@@ -123,3 +129,4 @@ On the **Create a virtual machine** pane, the rest of the tabs have reasonable d
 1. After deployment completes, select **Go to resource**. Your virtual machine pane appears.
 
 Now, let's look at what we can do with this VM.
+

@@ -1,0 +1,30 @@
+### YamlMime:LearningPath
+uid: implement-data-governance-security-databricks-unity-catalog
+metadata:
+  title: Implement Data Governance and Security with Databricks Unity Catalog
+  description: This learning path covers the implementation of data governance and security best practices using Databricks Unity Catalog. You'll learn how to manage data storage and implement security and access control with Azure Databricks Unity Catalog.
+  ms.date: 10/20/2025
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: learning-path
+title: Implement Data Governance and Security with Databricks Unity Catalog
+prerequisites: |
+  Before starting this module, you should be familiar with fundamental Azure Databricks concepts. Consider completing the [Explore Azure Databricks](/training/modules/explore-azure-databricks?azure-portal=true) module first.
+summary: |
+  This learning path covers the implementation of data governance and security best practices using Databricks Unity Catalog. You'll learn how to manage data storage and implement security and access control with Azure Databricks Unity Catalog.
+iconUrl: /training/achievements/generic.svg
+levels:
+- intermediate
+roles:
+- data-engineer
+products:
+- azure-databricks
+subjects:
+- data-engineering
+modules:
+- learn.wwl.understand-unity-catalog
+- learn.wwl.secure-unity-catalog-for-governance
+- learn.wwl.implement-security-unity-catalog
+- learn.wwl.implement-advanced-security-unity-catalog
+trophy:
+  uid: implement-data-governance-security-databricks-unity-catalog.trophy

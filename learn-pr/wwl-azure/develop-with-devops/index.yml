@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.develop-with-devops
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: "Develop with DevOps"
   description: "Streamline updates to your software development projects by applying version control with Git and GitHub. Your software lifecycle improves through the implementation of continuous integration, shift-left testing, and shift-left security."
   ms.date: 02/06/2024
@@ -54,4 +52,4 @@ units:
 - learn.wwl.develop-with-devops.knowledge-check
 - learn.wwl.develop-with-devops.summary
 badge:
-  uid: learn.wwl.develop-with-devops.badge
+  uid: learn.wwl.develop-with-devops.badge

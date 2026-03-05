@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.deploy-use-azure-container-registry
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Deploy and use Azure Container Registry
   description: Learn how to create a private registry service for building, storing, and managing container images and related artifacts.
   ms.date: 04/01/2024
@@ -39,4 +37,4 @@ units:
 - learn.wwl.deploy-use-azure-container-registry.summary
 badge:
   uid: learn.wwl.deploy-use-azure-container-registry.badge
-
+

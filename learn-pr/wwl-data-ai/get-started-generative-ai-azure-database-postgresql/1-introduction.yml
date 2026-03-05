@@ -2,13 +2,11 @@
 uid: learn.wwl.get-started-generative-ai-azure-database-postgresql.introduction
 title: Introduction
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Introduction
   description: Introduction
   author: wwlpublish
   ms.author: calopez
-  ms.date: 11/25/2024
+  ms.date: 10/05/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot

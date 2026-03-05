@@ -1,80 +1,135 @@
-In Azure, encryption keys can be either platform managed or customer managed.
+Applications and services require secrets, cryptographic keys, and certificates to authenticate, encrypt data, and establish trust. As a security architect, you design solutions that protect these sensitive assets throughout their lifecycle while enabling secure access for authorized workloads.
 
-Platform-managed keys (PMKs) are encryption keys that are generated, stored, and managed entirely by Azure. Customers do not interact with PMKs. The keys used for [Azure Data Encryption-at-Rest](/azure/security/fundamentals/encryption-atrest), for instance, are PMKs by default.
+## Types of cryptographic assets
 
-Customer-managed keys (CMK), on the other hand, are those that can be read, created, deleted, updated, and/or administered by one or more customers. Keys stored in a customer-owned key vault or hardware security module (HSM) are CMKs. Bring Your Own Key (BYOK) is a CMK scenario in which a customer imports (brings) keys from an outside storage location into an Azure key management service (see the [Azure Key Vault: Bring your own key specification](/azure/key-vault/keys/byok-specification)).
+Understanding the different types of assets helps you design appropriate protection:
 
-A specific kind of customer-managed key is the "key encryption key" (KEK). A KEK is a primary key that controls access to one or more encryption keys that are themselves encrypted.
+| Asset type | Purpose | Examples |
+|---|---|---|
+| **Secrets** | Application authentication and configuration | Connection strings, API keys, passwords, SAS tokens |
+| **Keys** | Encryption and decryption operations | Symmetric keys for data encryption, asymmetric keys for signing and key wrapping |
+| **Certificates** | Identity verification and trust establishment | TLS/SSL certificates, code signing certificates, authentication certificates |
 
-Customer-managed keys can be stored on-premises or, more commonly, in a cloud key management service.
+Each type requires different protection mechanisms and lifecycle management approaches.
 
-<!--[](/azure/security/fundamentals/key-management#azure-key-management-services)-->
+## Azure key management solutions
 
-## Azure key management services
+Azure provides multiple key management services with different security and compliance levels. Select the service that matches your requirements:
 
-Azure offers several options for storing and managing your keys in the cloud, including Azure Key Vault, Azure Managed HSM, Dedicated HSM, and Payments HSM. These options differ in terms of their FIPS compliance level, management overhead, and intended applications.
+| Service | Key protection | FIPS compliance | Tenancy |
+|---|---|---|---|
+| **Key Vault Standard** | Software-protected | FIPS 140-2 Level 1 | Multitenant |
+| **Key Vault Premium** | HSM-protected (Marvell LiquidSecurity) | FIPS 140-3 Level 3 | Multitenant |
+| **Key Vault Managed HSM** | Single-tenant HSM | FIPS 140-3 Level 3 | Single-tenant |
+| **Azure Cloud HSM** | Customer-owned HSM cluster | FIPS 140-3 Level 3 | Single-tenant |
 
-**Azure Key Vault (Standard Tier)**: A FIPS 140-2 Level 1 validated multi-tenant cloud key management service that can also be used to store secrets and certificates. Keys stored in Azure Key Vault are software-protected and can be used for encryption-at-rest and custom applications. Key Vault provides a modern API and the widest breadth of regional deployments and integrations with Azure Services. For more information, see [About Azure Key Vault](/azure/key-vault/general/overview).
+For most enterprise scenarios, Key Vault Premium provides adequate protection with HSM-backed keys. Choose Managed HSM when you require key sovereignty, single-tenant HSM administration, or the highest crypto operations throughput. Azure Cloud HSM is the successor to Azure Dedicated HSM and supports PKCS#11, OpenSSL, and other industry-standard APIs for applications migrating from on-premises HSMs.
 
-**Azure Key Vault (Premium Tier)**: A FIPS 140-2 Level 2 validated multi-tenant HSM offering that can be used to store keys in a secure hardware boundary. Microsoft manages and operates the underlying HSM, and keys stored in Azure Key Vault Premium can be used for encryption-at-rest and custom applications. Key Vault Premium also provides a modern API and the widest breadth of regional deployments and integrations with Azure Services. For more information, see [About Azure Key Vault](/azure/key-vault/general/overview).
+## Designing secret management
 
-**Azure Managed HSM**: A FIPS 140-2 Level 3 validated single-tenant HSM offering that gives customers full control of an HSM for encryption-at-rest, Keyless SSL, and custom applications. Customers receive a pool of three HSM partitions—together acting as one logical, highly available HSM appliance--fronted by a service that exposes crypto functionality through the Key Vault API. Microsoft handles the provisioning, patching, maintenance, and hardware failover of the HSMs, but doesn't have access to the keys themselves, because the service executes within Azure's Confidential Compute Infrastructure. Managed HSM is integrated with the Azure SQL, Azure Storage, and Azure Information Protection PaaS services and offers support for Keyless TLS with F5 and Nginx. For more information, see [What is Azure Key Vault Managed HSM?](/azure/key-vault/managed-hsm/overview)
+Secrets are the most common assets stored in Key Vault. Design your secret management approach with these considerations:
 
-**Azure Dedicated HSM**: A FIPS 140-2 Level 3 validated bare metal HSM offering, that lets customers lease a general-purpose HSM appliance that resides in Microsoft datacenters. The customer has complete and total ownership over the HSM device and is responsible for patching and updating the firmware when required. Microsoft has no permissions on the device or access to the key material, and Dedicated HSM is not integrated with any Azure PaaS offerings. Customers can interact with the HSM using the PKCS#11, JCE/JCA, and KSP/CNG APIs. This offering is most useful for legacy lift-and-shift workloads, PKI, SSL Offloading and Keyless TLS (supported integrations include F5, Nginx, Apache, Palo Alto, IBM GW and more), OpenSSL applications, Oracle TDE, and Azure SQL TDE IaaS. For more information, see [What is Azure Key Vault Managed HSM?](/azure/dedicated-hsm/overview)
+### Secret access patterns
 
-**Azure Payments HSM**: A FIPS 140-2 Level 3, PCI HSM v3, validated bare metal offering that lets customers lease a payment HSM appliance in Microsoft datacenters for payments operations, including payment processing, payment credential issuing, securing keys and authentication data, and sensitive data protection. The service is PCI DSS and PCI 3DS compliant. Azure Payment HSM offers single-tenant HSMs for customers to have complete administrative control and exclusive access to the HSM. Once the HSM is allocated to a customer, Microsoft has no access to customer data. Likewise, when the HSM is no longer required, customer data is zeroized and erased as soon as the HSM is released, to ensure complete privacy and security is maintained. For more information, see [About Azure Payment HSM](/azure/payment-hsm/overview).
+- **Application access**: Use managed identities to authenticate applications to Key Vault without storing credentials.
+- **User access**: Grant access through Microsoft Entra role-based access control (RBAC).
+- **CI/CD access**: Use workload identity federation for deployment pipelines to avoid storing service principal secrets.
 
-For an overview of the types of secrets, keys and certificates you can work with in key vault, see [Azure Key Vault Keys, Secrets, and Certificates Overview](/azure/key-vault/general/about-keys-secrets-certificates?source=recommendations)
+### Secret lifecycle management
 
-## Best practices for using Key Vault
+- **Rotation**: Implement autorotation using Event Grid events and Azure Functions to update secrets and dependent services automatically. Key Vault supports rotation scenarios for resources with one or two sets of authentication credentials.
+- **Expiration**: Set expiration dates on secrets and configure Event Grid notifications before secrets expire.
+- **Versioning**: Key Vault automatically versions secrets. Configure applications to reference the latest version.
 
-### Use separate key vaults
+### Design considerations for secrets
 
-Our recommendation is to use a vault per application per environment (development, pre-production, and production), per region. This helps you not share secrets across environments and regions. It will also reduce the threat in case of a breach.
+- Store all application secrets in Key Vault rather than in code, configuration files, or environment variables.
+- Use Key Vault references in App Service, Azure Functions, and Container Apps for direct integration without custom code.
+- Don't use Key Vault for general application configuration data. Use Azure App Configuration for nonsensitive settings.
+- Separate Key Vaults by application, region, and environment to limit the blast radius of a security event.
 
-<!--[](/azure/key-vault/general/best-practices#why-we-recommend-separate-key-vaults)-->
+## Designing key management
 
-#### Why we recommend separate key vaults
+Cryptographic keys require careful management to ensure data protection without operational disruption.
 
-Key vaults define security boundaries for stored secrets. Grouping secrets into the same vault increases the _blast radius_ of a security event because attacks might be able to access secrets across concerns. To mitigate access across concerns, consider what secrets a specific application _should_ have access to, and then separate your key vaults based on this delineation. Separating key vaults by application is the most common boundary. Security boundaries, however, can be more granular for large applications, for example, per group of related services.
+### Customer-managed keys (CMK)
 
-<!--[](/azure/key-vault/general/best-practices#control-access-to-your-vault)-->
+Many Azure services support customer-managed keys for encryption at rest, including Azure Storage, Azure SQL Database, Azure Cosmos DB, and Azure Disk Encryption. Keys remain in Key Vault or Managed HSM while services request cryptographic operations, providing control over the key lifecycle and a full audit trail.
 
-### Control access to your vault
+### Key lifecycle management
 
-Encryption keys and secrets like certificates, connection strings, and passwords are sensitive and business critical. You need to secure access to your key vaults by allowing only authorized applications and users. [Azure Key Vault security features](/azure/key-vault/general/security-features) provides an overview of the Key Vault access model. It explains authentication and authorization. It also describes how to secure access to your key vaults.
+- **Autorotation**: Configure key rotation policies in Key Vault with configurable intervals (minimum seven days). Azure services using CMKs automatically adopt new key versions for new encryption operations while maintaining access to data encrypted with previous versions.
+- **Bring your own key (BYOK)**: Import HSM-protected keys from on-premises HSMs into Key Vault Premium or Managed HSM for regulatory compliance scenarios.
+- **Backup**: Back up keys that can't be regenerated from other sources. For most scenarios, Key Vault's built-in redundancy provides sufficient protection.
 
-Suggestions for controlling access to your vault are as follows:
+## Designing certificate management
 
--   Lock down access to your subscription, resource group, and key vaults (role-based access control (RBAC)).
--   Create access policies for every vault.
--   Use the principle of least privilege access to grant access.
--   Turn on firewall and [virtual network service endpoints](/azure/key-vault/general/overview-vnet-service-endpoints).
+Azure Key Vault simplifies certificate lifecycle management with integrated acquisition and renewal.
 
-<!--[](/azure/key-vault/general/best-practices#turn-on-data-protection-for-your-vault)-->
+### Certificate sources
 
-### Turn on data protection for your vault
+- **Key Vault-generated**: Create self-signed certificates or request certificates from integrated certificate authorities (DigiCert, GlobalSign).
+- **Imported**: Import existing certificates in PFX or PEM format.
 
-Turn on purge protection to guard against malicious or accidental deletion of the secrets and key vault even after soft-delete is turned on.
+### Certificate lifecycle
 
-For more information, see [Azure Key Vault soft-delete overview](/azure/key-vault/general/soft-delete-overview)
+- **Autorotation**: Configure automatic renewal at a specified percentage of the certificate lifetime (for example, 80%) or a set number of days before expiry. Key Vault handles renewal with integrated CAs or regenerates self-signed certificates.
+- **Notifications**: Use Event Grid to receive configurable near-expiry alerts (by percentage of lifetime or days before expiry), expiration notifications, and renewal events.
+- **Distribution**: Applications retrieve certificates from Key Vault at runtime using managed identities.
 
-<!--[](/azure/key-vault/general/best-practices#turn-on-logging)-->
+### Certificate design considerations
 
-### Turn on logging
+- Store certificates as Key Vault certificate objects, not as secrets. Certificate objects support autorotation, expiration tracking, and CA integration.
+- Store private keys in Key Vault rather than on application servers.
+- Plan for certificate rotation in applications that use certificate pinning.
 
-[Turn on logging](/azure/key-vault/general/logging) for your vault. Also, [set up alerts](/azure/key-vault/general/alert).
+## Data protection and recovery
 
-<!--[](/azure/key-vault/general/best-practices#backup)-->
+Protect Key Vault assets against accidental or malicious deletion and plan for disaster recovery:
 
-### Backup
+- **Soft delete**: Enabled by default, soft delete retains deleted vaults and objects for a configurable period (7-90 days, default 90). Once enabled, soft delete can't be disabled.
+- **Purge protection**: Prevents permanent deletion of vaults and objects until the retention period elapses. No administrator role—including Microsoft—can override purge protection. Enable purge protection for all production vaults.
+- **Availability and redundancy**: Key Vault automatically replicates data within the region and to a paired region (where available), providing built-in disaster recovery without customer configuration.
+- **Backup**: Use manual backups only when required for compliance or for objects that can't be recreated from other sources. Key Vault's built-in redundancy and soft delete are sufficient for most scenarios.
 
-Purge protection prevents malicious and accidental deletion of vault objects for up to 90 days. In scenarios when purge protection is not a possible option, we recommend backup vault objects, which can't be recreated from other sources like encryption keys generated within the vault.
+## Access control design
 
-For more information about backup, see [Azure Key Vault backup and restore](/azure/key-vault/general/backup)
+Control who and what can access Key Vault assets, aligned with Zero Trust principles.
 
-<!--[](/azure/key-vault/general/best-practices#multitenant-solutions-and-key-vault)-->
+### RBAC versus access policies
 
-### Multitenant solutions and Key Vault
+| Model | Recommendation | Granularity |
+|---|---|---|
+| **Azure RBAC** | Recommended for all new deployments | Per-secret, per-key, per-certificate |
+| **Vault access policies** | Legacy | Vault-level only |
 
-A multitenant solution is built on an architecture where components are used to serve multiple customers or tenants. Multitenant solutions are often used to support software as a service (SaaS) solutions. If you're building a multitenant solution that includes Key Vault, review [Multitenancy and Azure Key Vault](/azure/architecture/guide/multitenant/service/key-vault).
+Azure RBAC provides finer-grained control and consistent management with other Azure resources. Key built-in roles include Key Vault Administrator, Key Vault Secrets User, Key Vault Certificates Officer, Key Vault Crypto Officer, and Key Vault Purge Operator.
+
+### Network access control
+
+- Use private endpoints to restrict Key Vault access to your virtual networks.
+- Configure firewall rules to allow only specific IP ranges or trusted Azure services.
+- Disable public network access for production Key Vaults.
+
+## Microsoft solutions for secrets, keys, and certificates
+
+| Solution | Capability |
+|---|---|
+| **Azure Key Vault** | Centralized secret, key, and certificate management with Standard, Premium, and Managed HSM tiers |
+| **Azure Cloud HSM** | Customer-owned, single-tenant HSM for PKCS#11 and custom applications |
+| **Managed identities** | Credential-free authentication to Key Vault and other Azure services |
+| **Key Vault references** | Direct integration with App Service, Functions, and Container Apps |
+| **Event Grid integration** | Notifications for expiration, rotation, and lifecycle events |
+| **Azure Policy** | Enforce Key Vault configuration standards (soft delete, purge protection, key types, certificate validity) |
+| **Microsoft Defender for Key Vault** | Threat detection for unusual or suspicious access patterns |
+
+## Design considerations for security architects
+
+- **Use separate vaults per application, region, and environment**: Each vault defines a security boundary. If a vault is compromised, only the secrets within that vault are exposed. For example, use distinct vaults for production and development, and for each application or service.
+- **Create separate key vaults per tenant in multitenant SaaS solutions**: Each tenant's secrets, keys, and certificates are stored within a separate access control and security boundary. A compromise or misconfiguration in one tenant's vault doesn't expose another tenant's cryptographic assets.
+- **Eliminate application secrets**: Use managed identities wherever possible so that workloads authenticate without stored connection strings, API keys, or service principal secrets.
+- **Design for autorotation**: Configure key rotation policies, event-driven secret rotation, and certificate autorenewal to reduce manual effort and prevent expiration outages.
+- **Enforce data protection**: Enable soft delete and purge protection on all production vaults. Use Azure Policy to enforce these settings across your organization.
+- **Implement least privilege**: Use Azure RBAC to grant minimal necessary permissions. Separate management-plane and data-plane access.
+- **Monitor and detect threats**: Enable diagnostic logging, configure Microsoft Defender for Key Vault, and set up Event Grid alerts for sensitive operations.
+- **Align with Zero Trust**: Key management supports the Zero Trust principle of "use least privilege access." Verify explicitly, grant minimal permissions, and assume breach in all access patterns.

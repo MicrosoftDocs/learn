@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.understand-client-server-communication-postgresql
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Understand client-server communication in PostgreSQL
   description: "PostgreSQL is a client-server system, which allows many clients to connect to a central server. In this module you learn how PostgreSQL manages connections from clients, and looking at some common PostgreSQL client tools."
   ms.date: 05/12/2024
@@ -42,4 +40,4 @@ units:
 - learn.wwl.understand-client-server-communication-postgresql.knowledge-check
 - learn.wwl.understand-client-server-communication-postgresql.summary
 badge:
-  uid: learn.wwl.understand-client-server-communication-postgresql.badge
+  uid: learn.wwl.understand-client-server-communication-postgresql.badge

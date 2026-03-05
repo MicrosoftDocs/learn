@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-ninja-label-sensitive-data.automate-sensitivity-label
+title: Automate sensitivity labeling in Microsoft 365
+metadata:
+  title: Automate Sensitivity Labeling in Microsoft 365
+  description: "Automate sensitivity labeling in Microsoft 365."
+  ms.date: 08/21/2025
+  author: sachow
+  ms.author: sachow
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 8
+content: |
+  [!include[](includes/automate-sensitivity-label.md)]

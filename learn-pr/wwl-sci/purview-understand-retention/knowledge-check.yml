@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-understand-retention.knowledge-check
+title: Module assessment
+metadata:
+  title: Module assessment
+  description: "Knowledge check"
+  ms.date: 04/11/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+quiz: 
+  title: "Check your knowledge"
+  questions:
+  - content: "Your organization needs to preserve employee records for a fixed period after separation. Which Microsoft Purview feature is best suited for this task?"
+    choices:
+    - content: "Sensitivity labels"
+      isCorrect: false
+      explanation: "Incorrect: Sensitivity labels are used to apply protection settings, not manage data retention timelines."
+    - content: "Data Loss Prevention (DLP) policies"
+      isCorrect: false
+      explanation: "Incorrect: DLP policies help prevent data sharing violations but don't control how long content is retained."
+    - content: "Retention policies"
+      isCorrect: true
+      explanation: "Correct: Retention policies allow organizations to preserve data for a required period, such as keeping employee records after separation."
+
+  - content: "An organization wants to automatically delete project documents two years after project completion. Which retention setting should they configure?"
+    choices:
+    - content: "Retain-only"
+      isCorrect: false
+      explanation: "Incorrect: Retain-only keeps content for a period without deleting it afterward."
+    - content: "Delete-only"
+      isCorrect: true
+      explanation: "Correct: Delete-only retention settings automatically remove content after a specified time."
+    - content: "Retain then delete"
+      isCorrect: false
+      explanation: "Incorrect: Retain then delete first preserves content, which might not be necessary in this case."
+
+  - content: "What is one way to scope a retention policy to apply only to specific users or locations?"
+    choices:
+    - content: "Use adaptive scope based on Microsoft Entra ID attributes"
+      isCorrect: true
+      explanation: "Correct: Adaptive scopes let you apply retention to users, groups, or sites based on Microsoft Entra ID attributes."
+    - content: "Tag files with keywords in SharePoint"
+      isCorrect: false
+      explanation: "Incorrect: While metadata can help classify content, adaptive scope is the correct method for targeting policies."
+    - content: "Apply a DLP rule to the content"
+      isCorrect: false
+      explanation: "Incorrect: DLP rules don't control retention settings or policy scope."

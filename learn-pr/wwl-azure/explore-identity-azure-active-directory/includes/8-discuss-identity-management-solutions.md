@@ -20,4 +20,4 @@ Microsoft Entra ID is a cloud-based identity and access management solution, wit
 
    - More instances of Microsoft Entra ID can be created. Microsoft Entra ID is the underlying product providing the identity service. The term Tenant means a single instance of Microsoft Entra ID representing a single organization. The terms Tenant and Directory are often used interchangeably.
 
-- **Administrative Unit** - A portioned off piece of a Microsoft Entra tenant used to create and administrative boundary.
+- **Administrative Unit** - A portioned off piece of a Microsoft Entra tenant used to create an administrative boundary.

@@ -2,8 +2,6 @@
 uid: learn.wwl.get-started-mongodb-api-azure-cosmos-db.capacity-estimation-use-calculator
 title: Capacity estimation using the Azure Cosmos DB Capacity Calculator
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Capacity estimation using the Azure Cosmos DB Capacity Calculator
   description: "Capacity estimation using the Azure Cosmos DB Capacity Calculator"
   ms.date: 03/20/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 5
 content: |
-  [!include[](includes/5-capacity-estimation-calculator.md)]
+  [!include[](includes/5-capacity-estimation-calculator.md)]

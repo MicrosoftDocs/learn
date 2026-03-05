@@ -1,0 +1,84 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.keep-microsoft-365-secure.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge Check
+  description: This content is part of the "Keep Microsoft 365 secure after Windows 10 end of support" module.
+  ms.date: 10/15/2025
+  author: melissawinters
+  ms.author: v-mwinters
+  ms.topic: unit
+durationInMinutes: 5
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "When did Microsoft officially end support for Windows 10?"
+    choices:
+        - content: "October 10, 2028"
+          isCorrect: false
+          explanation: "Incorrect. This is when security updates for Microsoft 365 apps on Windows 10 end."
+        - content: "January 12, 2027"
+          isCorrect: false
+          explanation: "Incorrect. This is the end of feature updates for the Semi-Annual Enterprise Channel."
+        - content: "October 14, 2025"
+          isCorrect: true
+          explanation: "Correct. This is the official end-of-support date for Windows 10."
+        - content: "August 2026"
+          isCorrect: false
+          explanation: "Incorrect. This is when feature updates end for the Current Channel."
+  - content: "What is required to stay compliant with the Modern Lifecycle Policy?"
+    choices:
+        - content: "Use Windows 10 with ESUs"
+          isCorrect: false
+          explanation: "Incorrect. ESUs only provide security fixes and don't ensure full compliance."
+        - content: "Install updates, meet system requirements, and maintain a valid license"
+          isCorrect: true
+          explanation: "Correct. These are the key requirements for compliance."
+        - content: "Submit bug reports regularly"
+          isCorrect: false
+          explanation: "Incorrect. Bug reporting isn't a compliance requirement."
+        - content: "Avoid automatic updates"
+          isCorrect: false
+          explanation: "Incorrect. Microsoft recommends enabling automatic updates for compliance."
+  - content: "What happens to Microsoft 365 apps on Windows 10 after October 10, 2028?"
+    choices:
+        - content: "They receive feature updates only"
+          isCorrect: false
+          explanation: "Incorrect. Feature updates end earlier, not after this date."
+        - content: "They stop working entirely"
+          isCorrect: false
+          explanation: "Incorrect. Apps might still run but without updates or support."
+        - content: "They get full technical support"
+          isCorrect: false
+          explanation: "Incorrect. Full support ends with Windows 10 support."
+        - content: "They no longer receive security updates"
+          isCorrect: true
+          explanation: "Correct. Security updates end on October 10, 2028."
+  - content: "What is a key benefit of upgrading to Windows 11 for Microsoft 365 users?"
+    choices:
+        - content: "Continued use of Windows 10 hardware"
+          isCorrect: false
+          explanation: "Incorrect. Windows 11 requires compatible hardware."
+        - content: "No need for updates"
+          isCorrect: false
+          explanation: "Incorrect. Updates are still required for compliance and security."
+        - content: "Access to AI-driven enhancements and full support"
+          isCorrect: true
+          explanation: "Correct. Windows 11 offers full support and new features."
+        - content: "Avoiding TPM 2.0 requirements"
+          isCorrect: false
+          explanation: "Incorrect. TPM 2.0 is a requirement for Windows 11."
+  - content: "What is the role of Extended Security Updates (ESUs) for Windows 10?"
+    choices:
+        - content: "Provide full feature updates"
+          isCorrect: false
+          explanation: "Incorrect. ESUs don't include feature updates."
+        - content: "Extend Modern Lifecycle Policy"
+          isCorrect: false
+          explanation: "Incorrect. ESUs don't extend full support or lifecycle compliance."
+        - content: "Offer critical security patches temporarily"
+          isCorrect: true
+          explanation: "Correct. ESUs provide limited security fixes during transition."
+        - content: "Enable new Microsoft 365 innovations"
+          isCorrect: false
+          explanation: "Incorrect. Innovations require a fully supported OS like Windows 11."

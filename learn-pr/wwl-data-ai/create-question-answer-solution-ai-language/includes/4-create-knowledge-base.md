@@ -4,13 +4,13 @@ To create a question answering solution, you can use the REST API or SDK to writ
 To create a knowledge base you:
 
 1. Sign in to Azure portal.
-1. Search for **Azure AI services** using the search field at the top of the portal.
+1. Search for **Foundry Tools** using the search field at the top of the portal.
 1. Select **Create** under the **Language Service** resource.
 1. Create a resource in your Azure subscription:
     - Enable the *question answering* feature.
     - Create or select an **Azure AI Search** resource to host the knowledge base index.
 
-1. In Language Studio, select your Azure AI Language resource and create a **Custom question answering** project.
+1. In Language Studio, select your Azure Language resource and create a **Custom question answering** project.
 
 1. Add one or more data sources to populate the knowledge base:
    - URLs for web pages containing FAQs.

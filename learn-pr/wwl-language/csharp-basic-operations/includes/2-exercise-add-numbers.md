@@ -9,7 +9,13 @@ To add two numbers together, you'll use the *addition operator*, which is the pl
 
 In this instance, the C# compiler understands what you're attempting to do. The compiler parses your code and sees that the `+` (the operator) is surrounded by two numeric values (the operands). Given the data types of the variables (both are `int`s), it figures out that you intended to add those two values.
 
-1. Enter the following code into the .NET Editor:
+A C# code editor is available to use directly in the browser: [C# Code Editor](https://microsoftlearning.github.io/c-sharp-minor?azure-portal=true). This editor provides a lightweight environment for writing, running, and testing C# code without needing to install any software on your local computer.
+
+1. Open the [C# Code Editor](https://microsoftlearning.github.io/c-sharp-minor?azure-portal=true) in a new browser window or tab.
+
+    You can position the browser windows side-by-side so that you can refer to these instructions while you work in the C# Code Editor.
+
+1. Enter the following code into the C# Code Editor:
 
     ```csharp
     int firstNumber = 12;
@@ -27,7 +33,9 @@ In this instance, the C# compiler understands what you're attempting to do. The 
 
 What happens if you try to use the `+` symbol with both `string` and `int` values?
 
-1. Modify the code you wrote to match the following code:
+1. Remove all of the code you wrote previously.
+
+1. Enter the following code into the C# Code Editor:
 
     ```csharp
     string firstName = "Bob";

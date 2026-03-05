@@ -1,5 +1,7 @@
 Now it's time to run your app in Azure. You need to create an Azure App Service app, set it up with a managed identity and your vault configuration, and deploy your code.
 
+[!INCLUDE[](../../../includes/azure-optional-exercise-subscription-note.md)]
+
 ## Create the App Service plan and app
 
 Creating an App Service app is a two-step process: First create the *plan*, then the *app*.

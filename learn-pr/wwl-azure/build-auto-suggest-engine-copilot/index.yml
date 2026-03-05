@@ -5,7 +5,7 @@ metadata:
   description: Use GitHub Copilot to interpret, debug, and extend project code for a Trie data structure that supports autocomplete and spelling suggestion features.
   author: wwlpublish
   ms.author: buzahid
-  ms.date: 03/19/2024
+  ms.date: 10/14/2025
   ms.service: artificial-intelligence
   ms.topic: module-guided-project
   ms.collection:
@@ -35,7 +35,7 @@ prerequisites: |
   -   Basic understanding of the C# programming language
 
   -   Familiarity with classes, methods, variables, and logic statements
-iconUrl: /training/achievements/generic-badge.svg
+iconUrl: /training/achievements/copilot-module.svg
 levels:
 - intermediate
 roles:

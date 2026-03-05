@@ -5,7 +5,7 @@ Your manager is evaluating Azure as an option for hosting your app, and they ask
 In this exercise, you publish an ASP.NET Core app as a framework-dependent deployment for Azure.
 
 > [!NOTE]
-> This exercise is optional. If you don't have an Azure subscription, you can get a [free account](https://azure.microsoft.com/free/dotnet/) or skip this exercise. 
+> This exercise is optional. If you don't have an Azure subscription, you can get a [free account](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn) or skip this exercise. 
 
 ## Create an Azure App Service web app
 

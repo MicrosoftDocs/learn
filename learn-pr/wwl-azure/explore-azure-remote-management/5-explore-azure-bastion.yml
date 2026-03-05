@@ -2,8 +2,6 @@
 uid: learn.wwl.explore-azure-remote-management.bastion
 title: Explore Azure Bastion
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Explore Azure Bastion
   description: "Connect to a virtual machine using your browser and the Azure portal, with Azure Bastion."
   ms.date: 08/01/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 5
 content: |
-  [!include[](includes/5-explore-azure-bastion.md)]
+  [!include[](includes/5-explore-azure-bastion.md)]

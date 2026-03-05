@@ -1,6 +1,6 @@
 All the exercises in this module relate to the prebuilt **TipCalculator** application. You modify and improve this app throughout the module. In this exercise, you use page-level resources to eliminate repeated values in your Extensible Application Markup Language (XAML) code.
 
-[!include[](../../../includes/dotnet9-sdk-version.md)]
+[!include[](../../../includes/dotnet10-sdk-version.md)]
 
 ## Open the starter solution
 

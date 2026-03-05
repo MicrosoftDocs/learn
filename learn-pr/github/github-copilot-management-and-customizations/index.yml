@@ -4,6 +4,7 @@ metadata:
   title: Management and Customization Considerations with GitHub Copilot
   description: Management and customization control are a vital part of using an AI pair programming tool. With a better understanding of the GitHub Copilot plans and their associated features, you can select the right fit for your organization's needs.
   ms.date: 10/18/2024
+  ms.update-cycle: 180-days
   author: a-a-ron
   ms.author: aastewar
   ms.topic: module

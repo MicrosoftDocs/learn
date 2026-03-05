@@ -1,12 +1,5 @@
 You can use the Web Apps, Mobile Apps, or API Apps features of Azure App Service, and create your own apps in the Azure portal.
 
-Watch the following video to learn how to create an app with Azure App Service. 
-
-### How to create App Services in the Azure portal
-
-> [!VIDEO https://www.youtube.com/embed/dHTzv-zY17I]
-
-
 ### Things to know about configuration settings
 
 Let's examine some of the basic configuration settings you need to create an app with App Service.
@@ -25,7 +18,7 @@ Let's examine some of the basic configuration settings you need to create an app
 
 #### Post-creation settings
 
-After your app is created, other Configuration settings become available in the Azure portal, including app deployment options and path mapping.
+After your app is created, other **Configuration** settings become available in the Azure portal, including app deployment options and path mapping.
 
 :::image type="content" source="../media/web-app-configuration-27facdc5.png" alt-text="Screenshot that shows other configuration options for an app with the App Service in the Azure portal.":::
 
@@ -36,3 +29,7 @@ Some of the extra configuration settings can be included in the developer's code
 - **Session affinity**: In a multi-instance deployment, you can ensure your app client is routed to the same instance for the life of the session.
 
 - **HTTPS Only**: When enabled, all HTTP traffic is redirected to HTTPS.
+
+
+> [!TIP]
+> Consider practicing on your own with the [Exercise - Create a web app in the Azure portal](/training/modules/host-a-web-app-with-azure-app-service/3-exercise-create-a-web-app-in-the-azure-portal?pivots=csharp). This exercise provides a sandbox. 

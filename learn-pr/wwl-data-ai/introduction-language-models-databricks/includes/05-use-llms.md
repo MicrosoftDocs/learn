@@ -8,7 +8,7 @@ These tasks include:
 - **Zero-shot classification**: Categorize text into predefined labels without prior examples.
 - **Few-shot learning**: Adapt to new tasks with minimal training data.
 
-These versatile applications demonstrate the transformative potential of LLMs in processing and understanding human language.
+These applications demonstrate the transformative potential of LLMs in processing and understanding human language.
 
 Let's explore each of these tasks in more detail.
 
@@ -65,7 +65,7 @@ Zero-shot classification is highly versatile and efficient, as it eliminates the
 
 When you use **few-shot learning**, you provide an LLM with a few examples before it performs a specific task.
 
-Providing a model with a few examples, enables the model to quickly adapt to new tasks with minimal data, using its pre-existing language knowledge.
+Providing a model with a few examples, enables the model to quickly adapt to new tasks with minimal data, using its established language knowledge.
 
 Few-shot learning is advantageous in scenarios where labeled data is scarce or expensive to obtain. By providing a handful of examples, you can guide the model to perform specialized tasks such as domain-specific text classification, custom sentiment analysis, or entity recognition.
 
@@ -81,14 +81,14 @@ For each tweet, describe its sentiment.
 Tweet: I hate it when my phone battery dies
 Sentiment: Negative
 
-Tweet: My has been great
+Tweet: My day has been great
 Sentiment: Positive
 
 Tweet: This is the ink to the article
 Sentiment: Neutral
 
-Tweet: This new music video was incredible
-Sentiment: 
+Tweet: This new music video is incredible
+Sentiment: Positive
 ```
 
 The LLM uses the examples to understand what it needs to do and completes the prompt by returning the sentiment of the last tweet.

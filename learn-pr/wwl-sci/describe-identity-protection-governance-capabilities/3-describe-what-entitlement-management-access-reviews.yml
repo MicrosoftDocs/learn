@@ -2,8 +2,6 @@
 uid: learn.wwl.describe-identity-protection-governance-capabilities-of-azure-ad.describe-what-is-entitlement-management-access-reviews
 title: Describe access reviews
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Describe access reviews
   description: "Describe access reviews"
   ms.date: 08/02/2024
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 5
 content: |
-  [!include[](includes/3-describe-what-entitlement-management-access-reviews.md)]
+  [!include[](includes/3-describe-what-entitlement-management-access-reviews.md)]

@@ -2,15 +2,15 @@ Remote networks are remote locations, such as a branch office, or networks that 
 
 There are multiple ways to connect remote networks to Global Secure Access. In a nutshell, you're creating an Internet Protocol Security (IPSec) tunnel between a core router, known as the customer premises equipment (CPE), at your remote network and the nearest Global Secure Access endpoint. All internet-bound traffic is routed through the core router of the remote network for security policy evaluation in the cloud. Installation of a client isn't required on individual devices.
 
-There are five primary steps to configure a Remote Network. In this phase, you're building a bridge from an on-premises router in your office to Global Secure Access. These steps can be performed in Microsoft Entra admin center or via the Microsoft Graph API. Note the final step is performed on the on-premises router.
+There are five primary steps to configure a Remote Network. In this process, you're building a bridge from an on-premises router in your office to Global Secure Access. These steps can be performed in Microsoft Entra admin center or via the Microsoft Graph API. Note the final step is performed on the on-premises router.
 
 | Steps | Description |
 | :--- | :--- |
 | Basics | Define the name of your remote network and the region where you want to connect. |
 | Connectivity | Enter the data about your on-premises router, where the signal comes from. |
 | Traffic Forwarding | Add a traffic forwarding profile to define the type traffic network traffic to allow through. |
-| Review Configuration | In the step your confirm the setup of the remote network and gather settings you need to configure in the on-premises router. |
-| Setup on-premises router | Use the management console of your on-premises router to enter the Microsoft connectivity setting from previous step. |
+| Review Configuration | In this step, you confirm the setup of the remote network and gather settings you need to configure in the on-premises router. |
+| Setup on-premises router | Use the management console of your on-premises router to enter the Microsoft connectivity settings from the previous step. |
 
 ## Configure - Basics
 
@@ -42,5 +42,5 @@ There are five primary steps to configure a Remote Network. In this phase, you'r
 ## Complete configuration - Set up your on-premises router
 All your remote networks appear on the Remote network page. Select the View configuration link in the Connectivity details column. These details contain the connectivity information from the Microsoft side of the bidirectional communication channel that you use to set up your CPE.
 
-With the Microsoft connection data, it's time to update the on-premises router configuration. This step is performed in management console your CPE, not in Microsoft Entra admin center. Until you complete this step, your IPsec isn't set up. IPsec is a bidirectional communication. Internet Key Exchange (IKE) negotiations happen between two parties before the tunnel is successfully set up. So, don't miss this step.
+With the Microsoft connection data, it's time to update the on-premises router configuration. This step is performed in the management console of your CPE, not in Microsoft Entra admin center. Until you complete this step, your IPsec isn't set up. IPsec is a bidirectional communication. Internet Key Exchange (IKE) negotiations happen between two parties before the tunnel is successfully set up. So, don't miss this step.
 

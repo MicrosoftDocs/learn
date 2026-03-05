@@ -8,12 +8,12 @@ Before you can build any AI application, you need the right environment. Azure p
 
 One of the key tools that can help streamline this process is **AZD** or the [**Azure Developer CLI**](/azure/developer/azure-developer-cli/). Setting up the environment for AI development can be complex, involving multiple services and configurations that require both time and expertise. AZD addresses these challenges by simplifying the process of setting up your development environment and deploying applications on Azure.
 
-Once your environment is set up with AZD, the next step in developing AI applications is exploration. **Azure AI Foundry** allows you to explore various AI models, enabling you to track their performance, test different configurations, and optimize them for better output. Within the Azure AI Foundry **portal**, you can use the **Chat playground** to interactively experiment with different prompts and receive immediate feedback.
+Once your environment is set up with AZD, the next step in developing AI applications is exploration. **Microsoft Foundry** allows you to explore various AI models, enabling you to track their performance, test different configurations, and optimize them for better output. Within the Microsoft Foundry **portal**, you can use the **Chat playground** to interactively experiment with different prompts and receive immediate feedback.
 
 |Tool|Use|
 |---|---|
 |[AZD AI Template](/collections/5pq0uompdgje8d?sharingId=ADFFF9D4AD9A0F29&WT_mc.id=aip-114567-cassieb&azure-portal=true)|A set of prebuilt infrastructure templates that allow you to quickly deploy AI applications in Azure without manually configuring every component. It simplifies the process of setting up resources.|
-|[Chat playground](/azure/ai-studio/quickstarts/get-started-playground?azure-portal=true)|An interactive environment within the Azure AI Foundry portal for testing and refining AI-generated responses. It enables you to experiment with Generative AI models before deploying them to production.|
+|[Chat playground](/azure/ai-studio/quickstarts/get-started-playground?azure-portal=true)|An interactive environment within the Microsoft Foundry portal for testing and refining AI-generated responses. It enables you to experiment with Generative AI models before deploying them to production.|
 
 Now that you have the necessary resources and explored the available language models, you can customize a model to your specific needs.
 
@@ -40,8 +40,8 @@ An agent is an actor that uses one or more models, allows you to do complex long
 
 |Tool|Use|
 |---|---|
-|[Serverless fine-tuning](/azure/ai-studio/concepts/fine-tuning-overview?azure-portal=true)|A feature within Azure AI Foundry that allows you to fine-tune models without having to manage the underlying infrastructure.|
-|[Azure AI Agents](/azure/ai-services/agents/overview?azure-portal=true)|This service within Azure AI Foundry enables you to combine language models with tools to build an agent specialized in a task.|
+|[Serverless fine-tuning](/azure/ai-studio/concepts/fine-tuning-overview?azure-portal=true)|A feature within Microsoft Foundry that allows you to fine-tune models without having to manage the underlying infrastructure.|
+|[Azure AI Agents](/azure/ai-services/agents/overview?azure-portal=true)|This service within Microsoft Foundry enables you to combine language models with tools to build an agent specialized in a task.|
 
 Whatever method you choose to customize a model, you want to ensure your AI models generate high-quality responses. The experimentation phase helps you to manage, debug, and test the performance of AI models, optimizing them for better output.
 
@@ -51,28 +51,28 @@ Optimizing AI model performance starts with prompt engineering, where carefully 
 
 By experimenting with different prompt variations, you can better understand how the model reacts to certain phrases, structures, or contexts. This iterative process helps refine the model's understanding, making it more adept at generating high-quality, contextually relevant, and precise responses.
 
-When you want to quickly explore prompts, you can use the chat playground in the Azure AI Foundry portal. If you want a more code-based approach, you can use the [**Azure AI Foundry SDK**](/azure/ai-studio/how-to/develop/sdk-overview?tabs=sync&pivots=programming-language-python?azure-portal=true), which includes **prompt templates**. If you want a tool-agnostic approach to prompt experimentation, you can use Prompty. **Prompty** is a tool that you can run in any development environment of your choice, and provides an asset class and format to construct rich prompts.
+When you want to quickly explore prompts, you can use the chat playground in the Microsoft Foundry portal. If you want a more code-based approach, you can use the [**Microsoft Foundry SDK**](/azure/ai-studio/how-to/develop/sdk-overview?tabs=sync&pivots=programming-language-python?azure-portal=true), which includes **prompt templates**. If you want a tool-agnostic approach to prompt experimentation, you can use Prompty. **Prompty** is a tool that you can run in any development environment of your choice, and provides an asset class and format to construct rich prompts.
 
 |Tool|Use|
 |---|---|
-|[Azure AI Foundry prompt templates](/azure/ai-studio/how-to/develop/sdk-overview?branch=main&tabs=sync&pivots=programming-language-python#prompt-templates&azure-portal=true)|A template that allows you to dynamically generate prompts using inputs that are available at runtime, part of the Azure AI Inference SDK.|
+|[Microsoft Foundry prompt templates](/azure/ai-studio/how-to/develop/sdk-overview?branch=main&tabs=sync&pivots=programming-language-python#prompt-templates&azure-portal=true)|A template that allows you to dynamically generate prompts using inputs that are available at runtime, part of the Azure AI Inference SDK.|
 |[Prompty](https://prompty.ai/?azure-portal=true)|A tool to manage prompts, which are the instructions or queries given to the AI model. Prompty helps you track the performance of different prompts and optimize them for better responses.|
 
 When you're experimenting with prompts, you want to evaluate how your model performs. **Evaluators** are either built in or custom insights into your model's performance. Whereas evaluators are based on how a given dataset is processed, you can also include **tracing** to gain more insights into how your application is being executed.
 
-If your AI model occasionally provides biased or inappropriate responses, **Azure AI Content Safety** helps you identify and address these issues before they reach end users.
+If your AI model occasionally provides biased or inappropriate responses, **Microsoft Foundry Content Safety** helps you identify and address these issues before they reach end users.
 
 |Tool|Use|
 |---|---|
 |[Evaluators](/azure/ai-studio/how-to/develop/evaluate-sdk?azure-portal=true)|Tools designed to assess the quality and safety of AI outputs, helping you refine the model’s behavior and outputs.|
 |[Tracing](/azure/ai-studio/concepts/trace?azure-portal=true)|This tool helps debug AI models by tracing their actions, allowing you to understand why certain responses are generated.|
-|[Azure AI Content Safety](/azure/ai-services/content-safety/overview?azure-portal=true)|It ensures that AI models generate ethical, unbiased, and safe responses. It detects harmful outputs and helps mitigate risks associated with AI.|
+|[Microsoft Foundry Content Safety](/azure/ai-services/content-safety/overview?azure-portal=true)|It ensures that AI models generate ethical, unbiased, and safe responses. It detects harmful outputs and helps mitigate risks associated with AI.|
 
 ## Deploy your Generative AI app to production
 
 Once the model is refined and optimized, the next step is deployment. AI models need to be deployed into a production environment, automated for continuous updates, and monitored for performance. Choosing the right framework is key to integrating your model into an AI application that works reliably in real-world scenarios.
 
-Azure AI Foundry integrated with several tools to help with this process, including **Prompt flow**, **LangChain**, and **Semantic Kernel**. Each of these orchestration frameworks helps structure and manage how AI models interact with data, tools, and other applications. They share a common goal of enabling AI models to function effectively within larger systems but differ in their specific focus areas.
+Microsoft Foundry integrated with several tools to help with this process, including **Prompt flow**, **LangChain**, and **Semantic Kernel**. Each of these orchestration frameworks helps structure and manage how AI models interact with data, tools, and other applications. They share a common goal of enabling AI models to function effectively within larger systems but differ in their specific focus areas.
 
 |Tool|Use|
 |---|---|
@@ -87,3 +87,4 @@ Finally, when you deploy a generative AI app, you want to automate updates, moni
 |[GitHub Actions](https://docs.github.com/actions?azure-portal=true)|Automates deployment, ensuring new models are updated without manual effort.|
 |[Azure Monitor](/azure/azure-monitor/overview?azure-portal=true)|Tracks real-time AI performance, detecting failures and degradation.|
 |[Application Insights](/azure/azure-monitor/app/app-insights-overview?azure-portal=true)|Provides analytics on usage, errors, and user interactions.|
+

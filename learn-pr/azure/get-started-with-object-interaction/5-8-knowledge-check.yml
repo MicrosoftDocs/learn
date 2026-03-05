@@ -1,29 +1,30 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.get-started-with-object-interaction-tutorials-mrtk.5-8-knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  title: Knowledge check
+  title: Module assessment
   description: Two multiple-choice questions
-  ms.date: 06/26/2023
+  ms.date: 06/05/2025
   author: marlenaklein-msft
-  ms.author: marlenaklein
+  ms.author: lolab
   ms.topic: unit
+  module_assessment: true
 durationInMinutes: 3
 content: Choose the best response for each question. 
 quiz:
   title: Check your knowledge
   questions:
-    - content: " What is the purpose of the ObjectManipulator script?"
+    - content: "What's the purpose of the `ObjectManipulator` script?"
       choices:
         - content: "This script makes an object movable, scalable, and rotatable using one or two hands."
           isCorrect: true
-          explanation: The ObjectManipulator script makes an object movable, scalable, and rotatable using one or two hands.
+          explanation: "The `ObjectManipulator` script makes an object movable, scalable, and rotatable using one or two hands."
         - content: "This script helps outline the game object for bodily collisions."
           isCorrect: false
           explanation: Collider component helps approximate the object's mesh and is added to any GameObject that can be manipulated.
         - content: "This script makes an object change color when a user gazes at the object."
           isCorrect: false
-          explanation: You must enable eye-tracking to do the above operation.
+          explanation: You must enable eye-tracking to do that.
     - content: "Which component is an all-in-one container to make any object easily interactable and responsive to input?"
       choices:
         - content: "Box Collider Component"
@@ -31,7 +32,7 @@ quiz:
           explanation: Box Colliders are rectangular cuboid and are useful for items such as crates or chests.
         - content: "Bounds Control Component"
           isCorrect: false
-          explanation: This script helps display a bounding box across a hologram to suggest it can be interacted with.
+          explanation: This script helps display a bounding box across a hologram to suggest the user can interact with it.
         - content: "StatefulInteractable Component"
           isCorrect: true
           explanation: StatefulInteractable acts as a catch-all for all types of input including touch, hand rays, speech, and funnel these interactions into events and visual theme responses.

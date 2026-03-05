@@ -3,9 +3,9 @@ uid: learn.languages.csharp-choose-data-type
 metadata:
   title: Choose the correct data type in your C# code
   description: "Choose the correct data type for your code from several basic types used in C#."
-  ms.date: 02/26/2025
-  author: wwlpublish
-  ms.author: eric
+  ms.date: 12/15/2025
+  author: ChrisHowd
+  ms.author: cahowd
   ms.topic: module
   ms.collection: N/A
   ms.custom:

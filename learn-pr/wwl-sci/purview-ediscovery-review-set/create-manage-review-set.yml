@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-ediscovery-review-set.create-manage-review-set
+title: Create and manage review sets in eDiscovery
+metadata:
+  title: Create and manage review sets in eDiscovery
+  description: "Create and manage review sets in eDiscovery."
+  ms.date: 05/15/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 8
+content: |
+  [!include[](includes/create-manage-review-set.md)]

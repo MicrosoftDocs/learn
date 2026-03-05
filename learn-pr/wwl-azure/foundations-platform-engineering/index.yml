@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.foundations-platform-engineering
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Foundations of Platform Engineering
   description: "This module introduces the core concepts and importance of platform engineering. It explores how platform engineering enhances developer productivity, accelerates time to value, and supports digital transformation. Learners will understand the strategic value of platform engineering as the foundation for both technical success and alignment with broader business goals."
   ms.date: 01/14/2025
@@ -62,4 +60,4 @@ units:
   - learn.wwl.foundations-platform-engineering.knowledge-check
   - learn.wwl.foundations-platform-engineering.summary
 badge:
-  uid: learn.wwl.foundations-platform-engineering.badge
+  uid: learn.wwl.foundations-platform-engineering.badge

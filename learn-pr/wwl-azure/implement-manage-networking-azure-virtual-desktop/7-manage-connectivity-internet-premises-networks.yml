@@ -2,8 +2,6 @@
 uid: learn.wwl.implement-manage-networking-for-azure-virtual-desktop.manage-connectivity-to-internet-premises-networks
 title: Manage connectivity internet premises Networks
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Manage connectivity internet premises Networks
   description: "Manage connectivity internet premises Networks"
   ms.date: 08/22/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 5
 content: |
-  [!include[](includes/7-manage-connectivity-internet-premises-networks.md)]
+  [!include[](includes/7-manage-connectivity-internet-premises-networks.md)]

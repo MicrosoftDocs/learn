@@ -6,37 +6,48 @@ metadata:
   prefetch-feature-rollout: true
   title: Define Private Link Service and private endpoint
   description: "Define Private Link Service and private endpoint"
-  ms.date: 01/30/2025
+  ms.date: 05/19/2025
   author: wwlpublish
   ms.author: cynthist
   ms.topic: unit
   ms.custom:
   - N/A
-durationInMinutes: 12
+durationInMinutes: 11
 content: |
   [!include[](includes/3-define-private-link-service-private-endpoint.md)]
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "What is the key technology behind Private Links?"
+  - content: "What is the main function of a private link service private endpoint?"
     choices:
-    - content: "Private Endpoint."
+    - content: "It allows public access to a private network"
+      isCorrect: false
+      explanation: "Incorrect. A private endpoint provides private connectivity."
+    - content: "It provides a public IP address for a private network"
+      isCorrect: false
+      explanation: "Incorrect. A private endpoint provides a private IP in the VNet."
+    - content: "It enables a private and secure connection to a service powered by Azure Private Link"
       isCorrect: true
-      explanation: "Correct. Private Links are dependent on Private Endpoints."
-    - content: "DNS Resolution."
-      isCorrect: false
-      explanation: "Incorrect. The recommended practice is to use a single Private Endpoint for a given Private Link resource."
-    - content: "Virtual Networks."
-      isCorrect: false
-      explanation: "Incorrect. Private Links are dependent on Private Endpoints."
-  - content: "What is the difference between a Service Endpoint and a Private Endpoint?"
+      explanation: "Correct. A private endpoint provides a secure and private IP address within a virtual network."
+  - content: "What is a key benefit of using a private link service private endpoint?"
     choices:
-    - content: "A Private Endpoint connects to external systems and services."
-      isCorrect: false
-      explanation: "Incorrect, a Private Endpoint enables a private and secure connection between your virtual network and Azure. A Service Endpoint connects to external resources."
-    - content: "A Service Endpoint connects to external systems and services."
+    - content: "It provides a secure and private IP address within a Virtual Network (VNet)"
       isCorrect: true
-      explanation: "Correct! A Service Endpoint connects to external resources. A Private Endpoint enables a private and secure connection between your virtual network and Azure."
-    - content: "A Service Endpoint enables a private and secure connection between your virtual network and Azure."
+      explanation: "Correct. The key benefit of a private endpoint is that it provides a secure and private IP address within a virtual network."
+    - content: "It increases the speed of data transfer"
       isCorrect: false
-      explanation: "Incorrect, a Private Endpoint enables a private and secure connection between your virtual network and Azure. A Service Endpoint connects to external resources."
+      explanation: "Incorrect. While a private endpoint may improve performance, its key benefit is related to security and privacy."
+    - content: "It reduces the cost of data transfer"
+      isCorrect: false
+      explanation: "Incorrect. A private endpoint doesn't directly impact the cost of data transfer."
+  - content: "How does a private link service private endpoint enhance security?"
+    choices:
+    - content: "By providing firewall protection"
+      isCorrect: false
+      explanation: "Incorrect. A private endpoint doesn't provide firewall protection."
+    - content: "By encrypting all data in transit"
+      isCorrect: false
+      explanation: "Incorrect. While encryption can be part of the solution, the primary security enhancement is through private connectivity."
+    - content: "By ensuring that traffic between your virtual network and the service travels across the Microsoft backbone network"
+      isCorrect: true
+      explanation: "Correct. A private endpoint ensures that traffic doesn't traverse over the public internet."

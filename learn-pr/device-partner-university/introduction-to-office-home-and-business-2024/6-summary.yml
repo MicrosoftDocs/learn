@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.introduction-to-office-home-and-business-2024.summary
+title: Summary
+metadata:
+  title: Summary
+  description: This content is part of the "Introduction to Office Home & Business 2024" module.
+  ms.date: 09/22/2025
+  author: hhreyes21
+  ms.author: v-homerreyes
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/6-summary.md)]

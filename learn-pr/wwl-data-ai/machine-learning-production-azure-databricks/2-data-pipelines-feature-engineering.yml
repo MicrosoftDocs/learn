@@ -2,13 +2,11 @@
 uid: learn.wwl.machine-learning-production-azure-databricks.data-pipelines-feature-engineering
 title: Automate your data transformations
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Automate your data transformations
   description: "Automate your data transformations"
-  ms.date: 07/17/2024
-  author: wwlpublish
-  ms.author: madiepev
+  ms.date: 4/24/2025
+  author: JulianePadrao
+  ms.author: jupadrao
   ms.topic: unit
 durationInMinutes: 7
 content: |

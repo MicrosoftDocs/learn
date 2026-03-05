@@ -4,9 +4,9 @@ title: Automatic differentiation
 metadata:
   title: Automatic differentiation
   description: Learn about GradientTape and other TensorFlow automatic differentiation features.
-  ms.date: 07/24/2023
-  author: bstollnitz
-  ms.author: bstollnitz
+  ms.date: 10/10/2025
+  author: Orin-Thomas
+  ms.author: orthomas
   ms.topic: unit
   ms.product: learning-tensorflow
   ms.contributors: bstollnitz-08202021

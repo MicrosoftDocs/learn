@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-ninja-security-copilot.investigate-data-security-posture-copilot
+title: Investigate data security risks with Security Copilot in DSPM
+metadata:
+  title: Investigate Data Security Risks with Security Copilot in DSPM
+  description: "Investigate data security risks with Security Copilot in DSPM."
+  ms.date: 08/21/2025
+  author: sachow
+  ms.author: sachow
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 2
+content: |
+  [!include[](includes/investigate-data-security-posture-copilot.md)]

@@ -5,7 +5,7 @@ At a high level, the way Microsoft Defender for Identity works is as follows:
 
 - Microsoft Defender for Identity uses software-based sensors installed on your on-premises identity infrastructure servers (domain controllers and servers running Active Directory Federated Services and Active Directory Certificate Services).
 
-- The Defender for Identity sensor accesses the event logs it requires directly from the servers. After the logs and network traffic are parsed by the sensor, Defender for Identity sends only the parsed information to the Defender for Identity cloud service. The Defender for Identity cloud service uses the data/signals obtained to deliver an identity threat detection and response (IDTR) solution. Microsoft Defender for Identity helps security professionals, managing a hybrid environment, the functionality to:
+- The Defender for Identity sensor accesses the event logs it acquires directly from the servers. After the logs and network traffic are parsed by the sensor, Defender for Identity sends only the parsed information to the Defender for Identity cloud service. The Defender for Identity cloud service uses the data/signals obtained to deliver an identity threat detection and response (IDTR) solution. Microsoft Defender for Identity helps security professionals, managing a hybrid environment, the functionality to:
   - Prevent breaches, by proactively assessing your identity posture.
   - Detect threats, using real-time analytics and data intelligence.
   - Investigate suspicious activities, using clear, actionable incident information.

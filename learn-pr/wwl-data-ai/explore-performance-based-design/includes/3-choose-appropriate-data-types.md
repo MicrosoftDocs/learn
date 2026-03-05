@@ -1,12 +1,12 @@
-SQL Server offers a wide variety of data types to choose from, and your choice can affect performance in many ways. While SQL Server can convert some data types automatically (we call this an ‘implicit conversion’), conversion can be costly and can also negatively affect query plans. The alternative is an explicit conversion, where you use the CAST or CONVERT function in your code to force a data type conversion. 
+SQL Server offers a wide variety of data types, and your choice can significantly impact performance. While SQL Server can automatically convert some data types (known as 'implicit conversion'), this process can be costly and negatively affect query plans. The alternative is explicit conversion, where you use the `CAST` or `CONVERT` function in your code to force a data type conversion.
 
-Additionally, choosing data types that are much larger than needed can cause wasted space and require more pages than is necessary to be read. It's important to choose the right data types for a given set of data—which will reduce the total storage required for the database and improve the performance of queries executed. 
+Also, choosing data types that are larger than necessary can lead to wasted space and require more pages to be read. It's crucial to select the appropriate data types for your data, as this will reduce the total storage required for the database and improve query performance.
 
 > [!NOTE]
-> In some cases, conversions are not possible at all. For example, a date cannot be converted to a bit. Conversions can negatively impact query performance by causing index scans where seeks would have been possible, and additional CPU overhead from the conversion itself.
+> In some cases, conversions aren't possible at all. For example, a date can't be converted to a bit. Conversions can negatively impact query performance by causing index scans where seeks would have been possible, and extra CPU overhead from the conversion itself.
 
-The image below indicates in which cases SQL Server can do an implicit conversion and in which cases you must explicitly convert data types in your code.
+The following image indicates in which cases SQL Server can do an implicit conversion and in which cases you must explicitly convert data types in your code.
 
 :::image type="content" source="../media/module-55-optimize-queries-final-11.png" alt-text="Chart of Type Conversions in SQL Server and Azure SQL":::
 
-SQL Server offers a set of system supplied data types for all data that can be used in your tables and queries. SQL Server allows the creation of user defined data types in either T-SQL or the .NET framework.
+SQL Server provides various system-supplied data types that can be used in your tables and queries. Also, SQL Server allows the creation of user-defined data types using either T-SQL or the .NET framework.

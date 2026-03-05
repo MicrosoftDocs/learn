@@ -1,9 +1,4 @@
-In this module, you learned how the **Azure AI Custom Vision** service enables you to build your own computer vision models for image classification.
+In this module, you learned how to use the **Azure AI Custom Vision** service to build your own custom vision models for image classification.
 
-Now that you've completed this module, you can:
-
-- Provision Azure resources for Azure AI Custom Vision.
-- Describe image classification.
-- Train an image classifier.
-
-To find out more about the Azure AI Custom Vision service, see the [Azure AI Custom Vision documentation](/azure/ai-services/custom-vision-service/).
+> [!TIP]
+> To find out more about the Azure AI Custom Vision service, see the [Azure AI Custom Vision documentation](/azure/ai-services/custom-vision-service/).

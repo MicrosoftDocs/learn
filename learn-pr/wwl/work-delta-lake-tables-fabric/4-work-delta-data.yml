@@ -4,12 +4,10 @@ title: Work with delta tables in Spark
 metadata:
   title: Work with delta tables in Spark
   description: "Work with delta tables in Spark"
-  ms.date: 09/26/2024
-  author: AngieRudduck
-  ms.author: anrudduc
+  ms.date: 05/23/2025
+  author: theresa-i
+  ms.author: theresai
   ms.topic: unit
-  ms.custom:
-  - build-2023
 durationInMinutes: 5
 content: |
   [!include[](includes/4-work-delta-data.md)]

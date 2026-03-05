@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.improve-code-performance-github-copilot-agent.exercise-implement-performance-profiling-github-copilot
+title: Exercise - Implement performance profiling using GitHub Copilot
+metadata:
+  title: Exercise - Implement performance profiling using GitHub Copilot
+  description: Exercise - Implement performance profiling using GitHub Copilot
+  ms.date: 10/20/2025
+  author: chrishowd
+  ms.author: cahowd
+  ms.topic: unit
+durationInMinutes: 30
+content: |
+  [!include[](includes/7-exercise-implement-performance-profiling-github-copilot.md)]

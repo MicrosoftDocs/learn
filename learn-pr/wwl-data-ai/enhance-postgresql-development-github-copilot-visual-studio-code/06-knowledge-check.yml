@@ -1,0 +1,48 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.enhance-postgresql-development-github-copilot-visual-studio-code.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 12/16/2025
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: What primary capability does the PostgreSQL extension add to Visual Studio Code?
+    choices:
+    - content: A built-in PostgreSQL server that runs locally
+      isCorrect: false
+      explanation: Incorrect. The extension connects to existing PostgreSQL databases; it doesn't host a server.
+    - content: Database connections, object exploration, query execution, and results viewing inside the editor
+      isCorrect: true
+      explanation: Correct. The extension adds core PostgreSQL management and development tools to Visual Studio Code.
+    - content: Automatic schema migrations for PostgreSQL databases
+      isCorrect: false
+      explanation: Incorrect. Schema migrations aren't a built-in feature of the extension.
+  - content: What type of context does the @pgsql Copilot participant provide?
+    choices:
+    - content: The PostgreSQL database schema and metadata from the active connection
+      isCorrect: true
+      explanation: Correct. @pgsql uses the connected database context.
+    - content: The contents of the SQL query editor
+      isCorrect: false
+      explanation: Incorrect. Query editor context is separate from database context.
+    - content: Application source code in the workspace
+      isCorrect: false
+      explanation: Incorrect. @pgsql focuses on database context.
+  - content: Which workflow best represents how the PostgreSQL extension and GitHub Copilot are used together?
+    choices:
+    - content: Copilot executes queries first, then the extension displays results
+      isCorrect: false
+      explanation: Incorrect. Developers control execution through the extension.
+    - content: Copilot assists with generating or refining SQL, and the extension executes and displays results
+      isCorrect: true
+      explanation: Correct. Copilot provides guidance, and the extension handles execution and results.
+    - content: The extension generates SQL, and Copilot only formats it
+      isCorrect: false
+      explanation: Incorrect. SQL generation assistance comes from Copilot.

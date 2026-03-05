@@ -1,27 +1,30 @@
-Vector search matches user queries with semantically similar content instead of exact word matches. However, you can get multiple results from a vector search that you want to filter and rerank to refine and reorder your search results.
+When you perform vector search, you get document chunks ranked by similarity scores. But similarity doesn't always equal relevance - sometimes the most mathematically similar chunks aren't the most useful for answering a user's question. Ranking and reranking help you understand and improve these results.
 
-Imagine the following scenario:
+:::image type="content" source="../media/reranker.png" alt-text="Diagram showing the reranking process: user query leads to multiple similar documents from vector search, then reranking selects the most relevant subset for the language model.":::
 
-:::image type="content" source="../media/reranker.png" alt-text="Diagram of a ranking scenario after retrieving relevant documents.":::
+This diagram illustrates the complete process: A user query searches your vector database and returns multiple semantically similar document chunks. However, only some of these chunks are truly relevant to answering the user's question. A reranker evaluates all the retrieved chunks and selects the most relevant ones to send to the language model for generating the final response.
 
-1. A user query comes in and is used to search your vector store for any relevant documents.
-1. Multiple documents are identified as being semantically similar to the user query.
-1. Only a subset of the documents are relevant. You can use a **reranker** to select the top three documents based on certain criteria.
-1. The three documents are provided as context for a language model to generate a response to the user.
+## Understanding similarity scores
 
-Reranking adjusts the initial ranking of retrieved documents to enhance the precision and relevance of search results. You can reorder documents based on the relevance scores with the goal to place the most relevant documents at the top of the list.
+Vector search ranks results using **similarity scores** that measure how mathematically similar document chunk vectors are to your query vector. These scores help determine which chunks are most likely to be relevant, but higher similarity doesn't guarantee the content will best answer the user's question.
 
-When you use vector search to retrieve relevant documents, the similarity between two vectors is calculated with the **cosine similarity**. The higher the metric, the more similar two vectors are.
+For example, a query about "dog training methods" might return highly similar chunks about "pet care supplies" or "animal behavior theory" - these are topically related but might not contain the specific training techniques the user needs.
 
-:::image type="content" source="../media/cosine-similarity.png" alt-text="Diagram of the cosine similarity between a query and document vector.":::
+## When and why to rerank
 
-Reranking goes beyond just evaluating the cosine similarity between the query and document vectors. It supports a deeper semantic understanding by considering the actual relevance of the documents to the query. A reranker can select more relevant documents and reduce hallucinations.
+**Reranking** goes beyond basic similarity to evaluate actual relevance to the user's question. Instead of just looking at vector similarity, reranking considers factors like:
 
-:::image type="content" source="../media/reranker-vectors.png" alt-text="Diagram of the reranking of multiple document vectors.":::
+- How well the content directly answers the query
+- The context and intent behind the user's question  
+- The practical usefulness of the information
 
-To use a reranker, you can use:
+This extra step can improve answer quality and reduce incorrect information, but it also adds processing time to your RAG pipeline.
 
-- **Private** APIs, like [Cohere](https://cohere.com/rerank) or [Jina](https://jina.ai/reranker/?azure-portal=true).
-- **Open-source** rerankers, like [cross-encoders](https://www.sbert.net/docs/cross_encoder/pretrained_models.html?azure-portal=true), [FlagEmbedding](https://github.com/FlagOpen/FlagEmbedding?azure-portal=true), or [FlashRank](https://github.com/PrithivirajDamodaran/FlashRank?azure-portal=true).
+## Implementing reranking
 
-Though rerankers can improve the accuracy of the final response of your Generative AI application, implementing rerankers adds complexity to the RAG pipeline and must be done with care.
+If the basic similarity search provided by Mosaic AI Vector Search isn't providing relevant enough results for your use case, you can implement reranking using:
+
+- **APIs** like [Cohere](https://cohere.com/rerank) or [Jina](https://jina.ai/reranker/?azure-portal=true)
+- **Open-source models** like [cross-encoders](https://www.sbert.net/docs/cross_encoder/pretrained_models.html?azure-portal=true), [FlagEmbedding](https://github.com/FlagOpen/FlagEmbedding?azure-portal=true), or [FlashRank](https://github.com/PrithivirajDamodaran/FlashRank?azure-portal=true)
+
+Keep in mind that reranking adds complexity and processing time to your RAG pipeline. Start with Mosaic AI Vector Search's built-in similarity search and consider reranking only if you need to improve result relevance for your specific use case.
