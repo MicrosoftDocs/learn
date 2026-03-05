@@ -65,8 +65,6 @@ For enterprise organizations managing resources across multiple tenants, see [Az
 
 A Microsoft 365 tenant represents a dedicated instance of Microsoft 365 services linked to a Microsoft Entra tenant. Securing administrative access requires attention to both the Microsoft 365 workloads and the underlying identity infrastructure.
 
-:::image type="content" source="../media/tenant-management-example-tenant.png" alt-text="Diagram showing an example Microsoft 365 tenant with its Microsoft Entra tenant." lightbox="../media/tenant-management-example-tenant.png":::
-
 ### How Microsoft 365 addresses design considerations
 
 | Design consideration | Microsoft 365 capability |
