@@ -33,6 +33,5 @@ products:
 subjects:
   - databases
 units:
-- learn.introduction-to-sql-server-2022.summary
 badge:
   uid: learn.introduction-to-sql-server-2022.badge
