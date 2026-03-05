@@ -35,7 +35,6 @@ subjects:
 units:
 - learn.introduction-to-sql-server-2022.introduction
 - learn.introduction-to-sql-server-2022.deploy-and-feature-difference
-- learn.introduction-to-sql-server-2022.ai-powered
 - learn.introduction-to-sql-server-2022.analytics
 - learn.introduction-to-sql-server-2022.developers
 - learn.introduction-to-sql-server-2022.performance
