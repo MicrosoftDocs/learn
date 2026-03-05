@@ -64772,6 +64772,11 @@
       "source_path": "learn-pr/sqlserver/understand-hybrid-data-platform-sql-server-2022/1-introduction.md",
       "redirect_url": "/training/modules/understand-hybrid-data-platform-sql-server/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/understand-hybrid-data-platform-sql-server-2022/6-knowledge-check.md",
+      "redirect_url": "/training/modules/understand-hybrid-data-platform-sql-server/",
+      "redirect_document_id": false
     }
   ]
 }
