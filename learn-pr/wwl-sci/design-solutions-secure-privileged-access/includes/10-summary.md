@@ -11,7 +11,6 @@ In this module, you learned strategies and solutions for securing privileged acc
 - [Tenant management for Microsoft 365 for enterprise](/microsoft-365/solutions/tenant-management-overview)
 - [Why are privileged access devices important](/security/privileged-access-workstations/privileged-access-devices)
 - [About Azure Bastion](/azure/bastion/bastion-overview)
-- [Best practices for securing Active Directory](/windows-server/identity/ad-ds/plan/security-best-practices/best-practices-for-securing-active-directory)
 - [Microsoft Cloud Security Benchmark - Privileged Access](/security/benchmark/azure/mcsb-privileged-access)
 - [Zero Trust security overview](/security/zero-trust/zero-trust-overview)
 
