@@ -1,3 +1,5 @@
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=2c80d1c5-45cc-482c-87ae-35e7369f26c0]
+
 Data pipelines rarely succeed when run manually at arbitrary times. **Production workloads** demand automation—jobs that execute reliably, respond to data changes, and recover from failures without human intervention. **Lakeflow Jobs** in Azure Databricks provides the **orchestration layer** that transforms ad hoc data processing into robust, automated workflows.
 
 Building effective data pipelines requires more than writing transformation logic. You need to configure how tasks execute, when they run, and what happens when something goes wrong. A well-designed job coordinates multiple tasks with proper **dependencies**, allocates appropriate **compute resources**, and maintains visibility through alerts and notifications. Without these capabilities, even the best data transformations become operational liabilities that require constant monitoring and manual restarts.
