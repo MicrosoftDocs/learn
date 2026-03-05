@@ -2,7 +2,7 @@ Azure DevOps MCP Server provides a practical translation layer between conversat
 
 Before diving into the details of the Azure DevOps MCP Server capabilities, let's start with describing what MCP actually is?
 
-## What is MCP
+## What is MCP?
 
 The Model Context Protocol (MCP) is an open standard developed by Anthropic for enabling AI systems to safely and transparently interact with external tools, data sources, and services. At its core, MCP defines a structured communication layer between AI models (like GitHub Copilot, Anthropic's Claude and other) and the systems they need to access; whether those are databases, APIs, file systems, or specialized platforms like Azure DevOps.
 
@@ -27,13 +27,10 @@ In a business context, MCP addresses a fundamental challenge: teams increasingly
 
 MCP enables several practical outcomes:
 
-**Accelerated Workflow Automation**: DevOps (and wider business) Teams can describe tasks using natural language and have AI safely execute them across multiple systems. A DevOps engineer might ask an AI assistant to "create a bug, assign it to the on-call engineer, and link it to the current incident," and MCP ensures each step is transparent and auditable.
-
-**Reduced Integration Overhead**: Instead of building connectors for every AI platform and every business system, organizations implement MCP once and gain compatibility across tools. This lowers the total cost of custom integration work.
-
-**Improved Governance**: MCP's transparent execution model makes it easier to enforce least-privilege access, log operations for compliance, and audit AI-driven changes to critical systems. This is essential for regulated industries and enterprises managing sensitive data.
-
-**Vendor Neutrality**: Because MCP is open, teams are not locked into a single AI provider or tool vendor. They can migrate assistants or add new tools without rewriting integrations.
+- **Accelerated Workflow Automation**: DevOps (and wider business) Teams can describe tasks using natural language and have AI safely execute them across multiple systems. A DevOps engineer might ask an AI assistant to "create a bug, assign it to the on-call engineer, and link it to the current incident," and MCP ensures each step is transparent and auditable.
+- **Reduced Integration Overhead**: Instead of building connectors for every AI platform and every business system, organizations implement MCP once and gain compatibility across tools. This lowers the total cost of custom integration work.
+- **Improved Governance**: MCP's transparent execution model makes it easier to enforce least-privilege access, log operations for compliance, and audit AI-driven changes to critical systems. This is essential for regulated industries and enterprises managing sensitive data.
+- **Vendor Neutrality**: Because MCP is open, teams are not locked into a single AI provider or tool vendor. They can migrate assistants or add new tools without rewriting integrations.
 
 In practice, MCP enables enterprises to deploy AI as a workflow accelerant while maintaining the security, auditability, and control that business-critical operations require. It shifts the conversation from "How do we safely let AI interact with our systems?" to "How do we standardize that interaction so it scales?"
 
@@ -146,10 +143,10 @@ Understanding this categorization helps you craft better prompts. If your reques
 
 Natural language is flexible, but operational systems still expect specific input. This is where you can craft 'better' prompts, which usually include:
 
-- project or repository scope
-- object type (bug, PR, build, pipeline)
-- clear action verb (list, create, update, link, run)
-- optional constraints (state, iteration, assignee, branch)
+- Project or repository scope
+- Object type (bug, PR, build, pipeline)
+- Clear action verb (list, create, update, link, run)
+- Optional constraints (state, iteration, assignee, branch)
 
 A more generic prompt (question) can still work, but often results in more follow-up questions or broad result sets. A scoped prompt lowers risk and improves speed. Since Generative AI communication between the prompt input and response using Large Language Models (LLMs) relies on tokens, it might also impact cost to have more focused prompts, resulting in a more focused prompt response. 
 

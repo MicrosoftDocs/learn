@@ -25,7 +25,7 @@ Even strong first prompts may require enrichment. Use follow-up actions to impro
 
 - Add reproduction steps in discussion comments
 - Assign ownership explicitly
-- Tag by area or platform (for example, `Android` or 'WindowsOS')
+- Tag by area or platform (for example, `Android` or `WindowsOS`)
 - Place the item in the correct sprint
 
 These details support triage, capacity planning, and faster root-cause analysis later.

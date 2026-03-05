@@ -49,13 +49,12 @@ Over repeated incidents, this approach creates a strong troubleshooting discipli
 
 To map with the earlier-described example scenario, here are a few sample prompt to illustrate how to use MCP-assisted prompting for those scenarios:
 
-```
 - "Get all errors and warnings from the Test stage in build #4527."
 - "Summarize failures in the MyProject.Tests project from build #4527."
 - "Show me test instability patterns: which tests failed in build #4527 but passed in build #4526?"
 - "Extract dependency restore and NuGet feed errors from build #4527 Test stage."
 - "List all warnings in the Test stage that might indicate environment drift in build #4527."
-```
+
 
 These prompts narrow scope to the failing stage and test project, helping teams isolate whether the issue is environment-related, a true functional regression, or test instability.
 

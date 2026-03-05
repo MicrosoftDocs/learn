@@ -2,15 +2,15 @@ In this module, you learned how to use Azure DevOps MCP Server with GitHub Copil
 
 The module followed an end-to-end progression from setup through execution:
 
-1. understanding the MCP interaction model
-2. installing and validating tooling in Visual Studio Code
-3. authenticating and reviewing payloads safely
-4. gathering context before changing artifacts
-5. creating, linking, and updating work items
-6. managing pull request collaboration workflows
-7. triggering and monitoring pipelines
-8. retrieving and interpreting logs for troubleshooting
-9. applying governance guardrails for sustainable adoption
+1. Understanding the MCP interaction model
+2. Installing and validating tooling in Visual Studio Code
+3. Authenticating and reviewing payloads safely
+4. Gathering context before changing artifacts
+5. Creating, linking, and updating work items
+6. Managing pull request collaboration workflows
+7. Triggering and monitoring pipelines
+8. Retrieving and interpreting logs for troubleshooting
+9. Applying governance guardrails for sustainable adoption
 
 ## Key takeaways
 
