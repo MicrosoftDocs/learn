@@ -32,7 +32,6 @@ products:
 - sql-server
 modules:
 - learn-wwl.build-ai-solutions-sql-server
-- learn.wwl.understand-hybrid-data-platform-sql-server-2022
 - learn.sql-server-2022-data-virtualization
 trophy:
   uid: learn.wwl.explore-sql-server-2022-capabilities.trophy
