@@ -34,7 +34,6 @@ subjects:
   - databases
 units:
 - learn.introduction-to-sql-server-2022.introduction
-- learn.introduction-to-sql-server-2022.developers
 - learn.introduction-to-sql-server-2022.performance
 - learn.introduction-to-sql-server-2022.security-scalability
 - learn.introduction-to-sql-server-2022.knowledge-check
