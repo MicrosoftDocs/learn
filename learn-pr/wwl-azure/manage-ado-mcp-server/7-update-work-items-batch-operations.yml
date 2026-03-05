@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-ado-mcp-server.update-work-items-batch-operations
+title: Update work items with batch operations
+metadata:
+  title: Update Work Items With Batch Operations
+  description: "Update work items with batch operations"
+  ms.date: 02/27/2026
+  author: wwlpublish
+  ms.author: petender
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/7-update-work-items-batch-operations.md)]

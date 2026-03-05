@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-ado-mcp-server.guided-exercise-manage-ado-mcp-server
+title: Guided exercise - manage Azure DevOps by using MCP Server
+metadata:
+  title: Guided Exercise - Manage Azure DevOps By Using MCP Server
+  description: "Guided exercise"
+  ms.date: 02/27/2026
+  author: wwlpublish
+  ms.author: petender
+  ms.topic: unit
+durationInMinutes: 45
+content: |
+  [!include[](includes/12-guided-exercise-manage-azure-devops-mcp-server.md)]

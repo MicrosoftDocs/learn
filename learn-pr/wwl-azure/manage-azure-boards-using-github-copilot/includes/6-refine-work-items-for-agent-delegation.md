@@ -12,10 +12,10 @@ Explain the observed issue or required capability in one concise paragraph. Focu
 
 ### Acceptance criteria
 
-- [ ] User-observable behavior is clear.
-- [ ] Edge case behavior is defined.
-- [ ] Expected tests are specified.
-- [ ] Done criteria are measurable.
+- User-observable behavior is clear.
+- Edge case behavior is defined.
+- Expected tests are specified.
+- Done criteria are measurable.
 
 ### Technical context
 
@@ -47,10 +47,10 @@ Before you delegate, run a short quality gate. This prevents avoidable churn and
 
 Confirm:
 
-- [ ] The task is small enough for one pull request.
-- [ ] Dependencies are identified or intentionally excluded.
-- [ ] Validation steps are included.
-- [ ] A reviewer can decide pass/fail from written criteria.
+- The task is small enough for one pull request.
+- Dependencies are identified or intentionally excluded.
+- Validation steps are included.
+- A reviewer can decide pass/fail from written criteria.
 
 ## Summary
 
