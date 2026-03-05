@@ -27,7 +27,7 @@ subjects:
 modules:
 - learn.wwl.configure-customize-github-copilot-visual-studio-code
 - learn.wwl.spec-driven-development-github-spec-kit-greenfield-intro
-- learn.wwl.spec-driven-development-github-spec-kit-microsoft-internal
+- learn.spec-driven-development-github-spec-kit-microsoft-internal
 - learn.wwl.develop-ai-enabled-apps-using-github-copilot-sdk
 trophy:
   uid: learn.wwl.create-embed-custom-code-agents.trophy

@@ -26,6 +26,6 @@ subjects:
 - app-development
 - productivity
 modules:
-- learn.wwl.resolve-github-issues-github-copilot-agent
+- learn.resolve-github-issues-github-copilot-agent
 trophy:
   uid: learn.wwl.apl-2014-github-issues.trophy

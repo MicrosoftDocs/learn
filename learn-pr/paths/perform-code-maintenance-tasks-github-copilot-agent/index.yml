@@ -25,11 +25,11 @@ subjects:
 - app-development
 - productivity
 modules:
-- learn.wwl.consolidate-duplicate-logic-github-copilot-agent
-- learn.wwl.refactor-large-functions-github-copilot
-- learn.wwl.simplify-complex-conditionals-github-copilot-agent
+- learn.consolidate-duplicate-logic-github-copilot-agent
+- learn.refactor-large-functions-github-copilot
+- learn.simplify-complex-conditionals-github-copilot-agent
 - learn.wwl.implement-code-improvements-using-github-copilot-tools
-- learn.wwl.resolve-github-issues-github-copilot-agent
-- learn.wwl.resolve-github-secret-scanning-alerts-github-copilot-agent
+- learn.resolve-github-issues-github-copilot-agent
+- learn.resolve-github-secret-scanning-alerts-github-copilot-agent
 trophy:
   uid: learn.wwl.perform-code-maintenance-tasks-github-copilot-agent.trophy
