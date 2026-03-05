@@ -67,10 +67,10 @@ Use this summary as a reference when introducing MCP practices to colleagues. Sh
 
 If you want to operationalize this module, begin with a short rollout plan:
 
-- Select two or three high-value scenarios (for example, sprint context, bug updates, pipeline status)
-- Define approved prompt templates for each scenario
-- Run a pilot with explicit approval discipline
-- Capture lessons learned in a shared playbook
+- Select two or three high-value scenarios (for example, sprint context, bug updates, pipeline status).
+- Define approved prompt templates for each scenario.
+- Run a pilot with explicit approval discipline.
+- Capture lessons learned in a shared playbook.
 
 After two to four weeks, review outcomes against baseline metrics such as triage cycle time, review turnaround, and incident diagnosis speed. This helps demonstrate whether MCP usage is delivering practical value, not just novelty.
 
@@ -80,11 +80,11 @@ As maturity grows, expand scenario coverage gradually and keep governance checkp
 
 Treat MCP adoption as an iterative improvement loop:
 
-1. define high-value scenarios
-2. standardize prompt patterns
-3. review outcomes and exceptions
-4. refine templates and guidance
-5. repeat with broader coverage
+1. Define high-value scenarios.
+2. Standardize prompt patterns.
+3. Review outcomes and exceptions.
+4. Refine templates and guidance.
+5. Repeat with broader coverage.
 
 This loop helps teams scale capability while maintaining quality and compliance.
 
@@ -108,11 +108,11 @@ Use this module as a baseline, then adapt the patterns to your project structure
 
 ## One-page adoption checklist
 
-- Define top three MCP scenarios for your team
-- Publish scoped prompt templates for those scenarios
-- Require preview-first for broad updates
-- Capture build IDs and PR IDs in handoffs
-- Review outcomes monthly and refine guidance
+- Define top three MCP scenarios for your team.
+- Publish scoped prompt templates for those scenarios.
+- Require preview-first for broad updates.
+- Capture build IDs and PR IDs in handoffs.
+- Review outcomes monthly and refine guidance.
 
 This simple checklist helps teams move from learning to sustained operational practice.
 
