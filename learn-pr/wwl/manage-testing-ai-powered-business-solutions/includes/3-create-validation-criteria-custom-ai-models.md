@@ -14,11 +14,11 @@ Validation criteria help architects consistently confirm that a model is:
 
 - Evaluated consistently before, during, and after deployment.
 
-## 1. Foundations of Model Validation
+## 1. Foundations of model validation
 
 Model validation establishes whether a custom AI model performs as expected and maintains consistent quality in production.
 
-### Core Questions for Validation
+### Core questions for validation
 
 - _Does the model generate correct, relevant, grounded outputs?_
 
@@ -28,7 +28,7 @@ Model validation establishes whether a custom AI model performs as expected and 
 
 - _Is model behavior aligned with established business intent and expected outcomes?_
 
-### Key Validation Dimensions
+### Key validation dimensions
 
 - **Performance metrics**
 
@@ -40,11 +40,11 @@ Model validation establishes whether a custom AI model performs as expected and 
 
 - **User-centric metrics**
 
-## 2. Define Quantitative Validation Criteria
+## 2. Define quantitative validation criteria
 
 Quantitative criteria ensure measurable and repeatable evaluation during tuning or deployment.
 
-### Primary Metrics
+### Primary metrics
 
 Below are key metrics that must be included in the evaluation of custom AI Models.
 
@@ -55,22 +55,22 @@ Below are key metrics that must be included in the evaluation of custom AI Model
 - **Token Efficiency**<br>Amount of model usage cost relative to output quality.
 - **Drift Indicators**<br>Changes in output quality due to evolving data or shifting patterns.
 
-## 3. Define Qualitative Validation Criteria
+## 3. Define qualitative validation criteria
 
 Qualitative evaluation helps architects identify nuanced issues that numeric metrics can't capture.
 
-### Criteria Examples
+### Criteria examples
 
-- **Relevance and Completeness**<br>Does the model respond with the right level of detail, in context, without hallucinations?
+- **Relevance and Completeness**<br>Does the model respond with the right level of detail, in context, without incorrect information?
 - **Consistency of Reasoning**<br>Does the model follow logical steps aligned with enterprise workflows?
 - **Grounding Integrity**<br>Does the model use approved organizational knowledge?
 - **User Experience Quality**<br>Clarity, coherence, readability, and instructional usefulness.
 
-## 4. Establish Safety and Compliance Validation
+## 4. Establish safety and compliance validation
 
 Before production, custom models must satisfy enterprise governance requirements. Depending on the organization, there may be additional requirements. It's important to use the below as a neutral baseline.
 
-### Key Safety Criteria
+### Key safety criteria
 
 - Enforces role-based access to restricted content.
 
@@ -80,7 +80,7 @@ Before production, custom models must satisfy enterprise governance requirements
 
 - Maintains auditability and traceability of actions.
 
-### Risk-Mitigation Requirements
+### Risk-mitigation requirements
 
 - Human-in-the-loop review for sensitive workflows.
 
@@ -88,22 +88,22 @@ Before production, custom models must satisfy enterprise governance requirements
 
 - Verified grounding exclusively in authorized knowledge sources.
 
-## 5. Operational Validation Criteria
+## 5. Operational validation criteria
 
 Operational validation ensures the model can be trusted in real systems.
 
-### Areas to Validate
+### Areas to validate
 
 - **Scalability** - Stable behavior under varying compute and workload patterns.<br>**Resilience** - Recovery from errors, timeouts, or dependency interruptions.<br>**Integration Reliability** - Works consistently with APIs, connectors, or orchestration components.<br>**Monitoring Support** - Telemetry produced is adequate for observability and triage.
 
-## 6. Example Validation Metrics for Custom Models
+## 6. Example validation metrics for custom models
 
 | Validation Area | Metric / Criteria | Success Threshold |
 |---|---|---|
 | Performance | Latency | < 2 seconds |
 | | Throughput | 95th percentile stable |
 | Quality | Accuracy | ≥ 90% correctness |
-| | Hallucination Rate | ≤ 3% |
+| | Incorrect Information Rate | ≤ 3% |
 | Safety | Guardrail Violations | 0 |
 | | Sensitive Output Detection | 100% blocked |
 | Cost Efficiency | Token Utilization | On par with baseline |

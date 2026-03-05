@@ -2,7 +2,7 @@
 
 This unit teaches solution architects how to build a repeatable, scalable strategy for creating high-quality test cases using Copilot. The guidance focuses on strengthening reliability, coverage, and consistency across complex business applications and enterprise AI solutions.<br>By the end of this unit, learners will understand how to guide Copilot to generate meaningful test cases, evaluate the completeness of those cases, and implement a validation pipeline that evolves as solution requirements change.
 
-## 1. Understanding Copilot's Role in Test Case Design
+## 1. Understanding Copilot's role in test case design
 
 ### Copilot can significantly accelerate test case creation by:
 
@@ -16,9 +16,9 @@ This unit teaches solution architects how to build a repeatable, scalable strate
 
 Solution architects must design the _strategy_ around Copilot—not just use Copilot reactively. This includes defining the prompts, validation criteria, governance requirements, and quality thresholds for generated test cases.
 
-## 2. Foundations of a Copilot-Driven Test Case Strategy
+## 2. Foundations of a Copilot-driven test case strategy
 
-### 2.1 Define the Testing Objectives
+### 2.1 Define the testing objectives
 
 #### Before using Copilot, clarify:
 
@@ -32,11 +32,11 @@ Solution architects must design the _strategy_ around Copilot—not just use Cop
 
 - When objectives are clear, Copilot can be instructed to generate aligned test scenarios.
 
-### 2.2 Establish a Test Case Blueprint
+### 2.2 Establish a test case blueprint
 
 Copilot performs best when following consistent patterns. A recommended blueprint:
 
-#### Test Case Template Structure
+#### Test case template structure
 
 | Field | Description | Example |
 |---|---|---|
@@ -51,7 +51,7 @@ Copilot performs best when following consistent patterns. A recommended blueprin
 
 Providing this template in the prompt ensures Copilot outputs predictable, high-quality test cases.
 
-## 3. Creating Effective Prompts for Copilot
+## 3. Creating effective prompts for Copilot
 
 ### Architects should create standardized prompt patterns that include:
 
@@ -60,71 +60,11 @@ Providing this template in the prompt ensures Copilot outputs predictable, high-
 - **Constraints -** Specify format, tone, coverage depth, and required test granularity.
 - **Quality Expectations - Define what "good" means (e.g., "Include at least two negative tests per scenario").**
 
-## 4. Professional Visual - Test Case Creation Strategy Map (Text Diagram)
+## 4. Test case creation strategy map
 
-          +-----------------------------+
+:::image type="content" source="../media/test-case-creation-strategy-map.png" alt-text="Diagram showing the test case creation strategy map, including defining objectives, establishing blueprints, creating prompts, generating test cases with Copilot, and validating outputs." border="false":::
 
-          |   Business Requirements     |
-
-          +-------------+---------------+
-
-                        |
-
-                        v
-
-          +-----------------------------+
-
-          |    Architect Prompt Plan    |
-
-          | - Goal                      |
-
-          | - Context                   |
-
-          | - Constraints               |
-
-          | - Blueprint Template        |
-
-          +-------------+---------------+
-
-                        |
-
-                        v
-
-          +-----------------------------+
-
-          |  Copilot Test Case Drafts   |
-
-          +-------------+---------------+
-
-                        |
-
-                        v
-
-          +-----------------------------+
-
-          |  Architect Validation Pass  |
-
-          | - Completeness              |
-
-          | - Accuracy                  |
-
-          | - Edge Cases Included       |
-
-          | - Compliance                |
-
-          +-------------+---------------+
-
-                        |
-
-                        v
-
-          +-----------------------------+
-
-          | Final Test Case Library     |
-
-          +-----------------------------+
-
-## 5. Validating Copilot-Generated Test Cases
+## 5. Validating Copilot-generated test cases
 
 Solution architects must review:
 
@@ -154,7 +94,7 @@ Solution architects must review:
 
 - Naming conventions and formats consistent.
 
-## 6. Automating and Scaling the Strategy
+## 6. Automating and scaling the strategy
 
 ### To make Copilot-driven testing scalable:
 
@@ -166,7 +106,7 @@ Solution architects must review:
 
 - Use regression triggers to request Copilot to generate updated tests when requirements change.
 
-## 7. Copilot Test Maturity Ladder
+## 7. Copilot test maturity ladder
 
 :::image type="content" source="../media/copilot-test-maturity-ladder.png" alt-text="Diagram showing the Copilot test maturity ladder with five levels: ad hoc prompting, standard prompt templates, automated prompt pipelines integrated with CI/CD, continuous risk-based testing with dynamic regeneration, and enterprise-wide prompt governance and reusable test frameworks." border="false":::
 

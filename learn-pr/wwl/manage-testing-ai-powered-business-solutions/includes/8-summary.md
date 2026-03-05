@@ -4,7 +4,7 @@ Throughout the module, architects explore how to design repeatable testing proce
 
 The module reinforces the importance of scalable and governed testing strategies. Learners gain strategies for using Copilot to accelerate test case generation, maintain consistency across releases, uncover edge cases, and apply structured quality checks. By the end, solution architects will be able to design and implement end-to-end testing frameworks that ensure AI solutions remain trustworthy, predictable, and aligned to enterprise outcomes.
 
-## Key Takeaways
+## Key takeaways
 
 - AI systems require **new testing practices** due to probabilistic outputs and dynamic data dependency.
 

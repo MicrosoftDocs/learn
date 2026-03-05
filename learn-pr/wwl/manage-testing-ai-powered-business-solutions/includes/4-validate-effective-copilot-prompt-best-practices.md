@@ -2,7 +2,7 @@
 
 This unit equips solution architects with a deep understanding of how to validate effective Copilot prompt best practices across varied business scenarios. Because prompts directly influence Copilot's reasoning, clarity, output quality, and safety, solution architects must evaluate prompt effectiveness using structured validation approaches.<br>Learners will explore prompt components, evaluation criteria, iterative refinement techniques, and validation frameworks for ensuring predictable, high-quality AI output in enterprise environments.
 
-## 1. Foundations of Effective Prompting
+## 1. Foundations of effective prompting
 
 ### Effective prompts help Copilot generate responses that are **relevant**, **goal-aligned**, and **usable**. Validation focuses on determining whether a prompt is:
 
@@ -16,7 +16,7 @@ This unit equips solution architects with a deep understanding of how to validat
 
 - Suitable for repeated use at scale
 
-### Core Components to Validate
+### Core components to validate
 
 - **Goal** - The intended outcome or transformation
 
@@ -26,15 +26,15 @@ This unit equips solution architects with a deep understanding of how to validat
 
 - **Examples** - Only when they add clarity, not clutter
 
-## 2. Prompt Validation Framework for Solution Architects
+## 2. Prompt validation framework for solution architects
 
 Solution architects validate prompts not as one-off instructions, but as **repeatable system components** in enterprise workflows.
 
-### Prompt Validation Lifecycle
+### Prompt validation lifecycle
 
 :::image type="content" source="../media/prompt-validation-lifecycle.png" alt-text="Diagram showing the prompt validation lifecycle: Define Goal, Add Context, Apply Structure, Run Prompt, Evaluate Output, Refine and Re-Test, Approve for Use, and Document." border="false":::
 
-### Validation Steps
+### Validation steps
 
 - **Define outcome expectations** What should Copilot produce? What does "good" look like?
 
@@ -48,11 +48,11 @@ Solution architects validate prompts not as one-off instructions, but as **repea
 
 - **Run multi-scenario testing** Validate prompt quality across multiple phrasings and user types.
 
-## 3. Metrics for Evaluating Prompt Effectiveness
+## 3. Metrics for evaluating prompt effectiveness
 
 Solution architects use measurable indicators to determine whether a prompt is valid for enterprise use.
 
-### Prompt Quality Metrics
+### Prompt quality metrics
 
 - **Accuracy** - Output correctness and alignment with user intent
 
@@ -64,17 +64,17 @@ Solution architects use measurable indicators to determine whether a prompt is v
 
 - **Tone Alignment** - Matches organizational or audience standards
 
-### Behavioral Metrics
+### Behavioral metrics
 
 - Reduction of user re-prompts
 
 - Lower clarification requests
 
-- Fewer hallucinations or irrelevant outputs
+- Fewer instances of incorrect information or irrelevant outputs
 
-## 4. Enterprise-Ready Prompt Patterns
+## 4. Enterprise-ready prompt patterns
 
-### Recommended Best Practices
+### Recommended best practices
 
 - Start with **goal + context + constraints** in that order.
 
@@ -88,7 +88,7 @@ Solution architects use measurable indicators to determine whether a prompt is v
 
 - Keep examples concise and targeted.
 
-### High-Quality Prompt Pattern
+### High-quality prompt pattern
 
 | Element | Content |
 |---|---|
@@ -98,9 +98,9 @@ Solution architects use measurable indicators to determine whether a prompt is v
 | Include | 3 bullet points calling out risk areas |
 | Exclude | Marketing campaign details; customer quotes |
 
-## 5. Validation Methods
+## 5. Validation methods
 
-### A/B Prompt Testing
+### A/B prompt testing
 
 Use two variations of the same prompt and compare:
 
@@ -112,7 +112,7 @@ Use two variations of the same prompt and compare:
 
 - Required follow-up steps/prompts
 
-### Scenario-Based Testing
+### Scenario-based testing
 
 Test prompts across multiple:
 
@@ -122,23 +122,23 @@ Test prompts across multiple:
 
 - Task complexities
 
-### Structured Evaluation Checklist
+### Structured evaluation checklist
 
-[ ] Clear goal defined  
+- Clear goal defined  
 
-[ ] Adequate context included  
+- Adequate context included  
 
-[ ] Format and tone specified  
+- Format and tone specified  
 
-[ ] No ambiguous language  
+- No ambiguous language  
 
-[ ] Meets safety/guardrail expectations  
+- Meets safety/guardrail expectations  
 
-[ ] Produces consistent outputs  
+- Produces consistent outputs  
 
-[ ] Suitable for enterprise-scale reuse
+- Suitable for enterprise-scale reuse
 
-## 6. Refinement Techniques
+## 6. Refinement techniques
 
 - Break a long prompt into modular instructions
 
