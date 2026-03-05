@@ -7865,3 +7865,8 @@ achievements:
   title: Get started with SQL Server 2025
   summary: Learn about SQL Server 2025's major capabilities including AI features, analytics improvements, developer tools, and performance optimization.
   iconUrl: /training/achievements/sqlserver/introduction-to-sql-server-2025.svg
+- uid: learn.wwl.understand-hybrid-data-platform-sql-server-2022.badge
+  type: badge
+  title: Understand hybrid data platform on SQL Server 2025
+  summary: Learn about the cloud connected capabilities of SQL Server 2025 for hybrid data platforms.
+  iconUrl: /learn/achievements/generic-badge.svg
