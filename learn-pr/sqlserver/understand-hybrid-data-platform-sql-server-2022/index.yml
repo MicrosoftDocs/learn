@@ -36,7 +36,6 @@ products:
 - sql-server
 units:
 - learn.wwl.understand-hybrid-data-platform-sql-server-2022.introduction
-- learn.wwl.understand-hybrid-data-platform-sql-server-2022.business-continuity-with-azure-sql-managed-instance
 - learn.wwl.understand-hybrid-data-platform-sql-server-2022.near-real-time-analytics-synapse-link-for-sql
 - learn.wwl.understand-hybrid-data-platform-sql-server-2022.knowledge-check
 - learn.wwl.understand-hybrid-data-platform-sql-server-2022.summary
