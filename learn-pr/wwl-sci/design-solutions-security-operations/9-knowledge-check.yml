@@ -4,7 +4,7 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: "Knowledge check for module on the topic: design solutions for security operations."
-  ms.date: 09/26/2024
+  ms.date: 03/06/2026
   author: ceperezb
   ms.author: ceperezb
   ms.topic: unit
@@ -86,4 +86,4 @@ quiz:
         - content: "To map detections and responses to specific adversary tactics and techniques."
           isCorrect: true
           explanation: "The MITRE ATT&CK framework offers a common language used by security teams to describe attacker behavior, test security defenses, and understand whether the implemented security measures are effective at stopping or identifying attacks in real-time."
-
+
