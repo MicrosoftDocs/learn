@@ -17,7 +17,7 @@ prerequisites: |
   - Experience with networks: Some familiarity with networking concepts and Azure Virtual Networks.
 summary: |
   Develop the skills necessary to configure a secure deployment solution for cloud-native apps. Learn how to build, deploy, scale, and manage containerized cloud-native apps using Azure Container Apps, Azure Container Registry, and Azure Pipelines.
-iconUrl: /training/achievements/generic-trophy.svg
+iconUrl: /training/achievements/azure-container-apps-learning-path.svg
 levels:
 - intermediate
 roles:

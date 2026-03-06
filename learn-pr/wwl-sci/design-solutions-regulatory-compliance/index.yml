@@ -39,8 +39,8 @@ subjects:
   - cloud-security
 units:
 - learn.wwl.design-solutions-regulatory-compliance.introduction-regulatory-compliance
-- learn.wwl.design-solutions-regulatory-compliance.ai-compliance-considerations
 - learn.wwl.design-solutions-regulatory-compliance.translate-compliance-requirements-security-solution
+- learn.wwl.design-solutions-regulatory-compliance.ai-compliance-considerations
 - learn.wwl.design-solutions-regulatory-compliance.address-compliance-requirements-microsoft-purview
 - learn.wwl.design-solutions-regulatory-compliance.address-privacy-requirements-microsoft-priva
 - learn.wwl.design-solutions-regulatory-compliance.address-security-compliance-requirements-azure-policy

@@ -18,7 +18,7 @@ abstract: |
   - Enable Traffic Analytics
   - Configure access to flow logs
 prerequisites: ''
-iconUrl: /training/achievements/generic-badge.svg
+iconUrl: /training/achievements/azure-monitor-module.svg
 levels:
 - intermediate
 roles:

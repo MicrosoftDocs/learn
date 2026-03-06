@@ -23,7 +23,7 @@ prerequisites: |
   *   Knowledge of Azure container services, including Azure Container Registry, would be beneficial.
   *   Experience with Azure portal or Azure CLI for managing Azure resources.
   *   Understanding of networking concepts and protocols.
-iconUrl: /training/achievements/generic-badge.svg
+iconUrl: /training/achievements/azure-container-apps-module.svg
 levels:
 - intermediate
 roles:
@@ -44,4 +44,4 @@ units:
 - learn.wwl.configure-azure-container-registry-container-app-deployments.summary
 badge:
   uid: learn.wwl.configure-azure-container-registry-container-app-deployments.badge
-
+
