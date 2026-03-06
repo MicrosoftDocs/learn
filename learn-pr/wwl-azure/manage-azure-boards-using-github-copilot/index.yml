@@ -23,7 +23,7 @@ prerequisites: |
   - Familiarity with Azure DevOps Boards basics
   - Familiarity with GitHub repositories and pull requests
   - Access to an Azure DevOps project and a GitHub repository
-iconUrl: /training/achievements/manage-azure-boards-using-github-copilot.svg
+iconUrl: /training/achievements/azure-devops/choose-an-agile-approach-to-software-development.svg
 levels:
   - intermediate
 roles:
