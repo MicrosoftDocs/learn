@@ -159,7 +159,7 @@ Microsoft Purview Audit automatically captures user interactions with Copilot an
 
 | Category | Scope | Billing model |
 |----------|-------|---------------|
-| **Microsoft Copilot interactions** | M365 Copilot, Security Copilot, Copilot in Fabric, and other Microsoft copilots | Included in Audit (Standard) |
+| **Microsoft Copilot interactions** | Microsoft 365 Copilot, Security Copilot, Copilot in Fabric, and other Microsoft copilots | Included in Audit (Standard) |
 | **Connected AI apps** | Enterprise AI applications registered through Microsoft Entra or deployed in your organization | Pay-as-you-go |
 | **Third-party AI apps** | External AI services (such as ChatGPT) accessed through browsers | Pay-as-you-go |
 
