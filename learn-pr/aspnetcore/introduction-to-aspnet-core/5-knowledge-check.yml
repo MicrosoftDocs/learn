@@ -6,7 +6,7 @@ metadata:
   description: Check your knowledge about what ASP.NET Core is and when you should use it to build your apps.
   ms.date: 11/01/2024
   author: wadepickett
-  ms.author: wpickett
+  ms.author: daroth
   ms.topic: unit
   module_assessment: true
 durationInMinutes: 1
