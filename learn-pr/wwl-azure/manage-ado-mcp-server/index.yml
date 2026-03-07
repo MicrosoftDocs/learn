@@ -24,7 +24,7 @@ prerequisites: |
   - Familiarity with GitHub Copilot Chat in Visual Studio Code
   - Access to an Azure DevOps project with Contributor permissions
   - Node.js 18 or later and Visual Studio Code installed
-iconUrl: /training/achievements/manage-azure-boards-using-github-copilot.svg
+iconUrl: /training/achievements/azure-devops/get-started-with-devops.svg
 levels:
   - intermediate
 roles:
