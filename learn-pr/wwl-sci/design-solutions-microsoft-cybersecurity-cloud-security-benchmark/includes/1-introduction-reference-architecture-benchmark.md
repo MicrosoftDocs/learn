@@ -55,5 +55,5 @@ As organizations adopt AI technologies, cybersecurity architects must address th
 - **Securing AI systems** - Protecting AI models, training data, and AI-powered applications from attacks such as model theft, data poisoning, and prompt injection.
 - **Using AI for security** - Using AI capabilities to enhance threat detection, automate security operations, and improve security posture through tools like Microsoft Security Copilot.
 
-The MCRA includes content on AI security considerations to help you understand how AI affects your security architecture. For comprehensive guidance on securing AI workloads, see [Security for AI](/security/ai/) and [AI security best practices](/security/ai/secure-ai-best-practices).
+The MCRA includes content on AI security considerations to help you understand how AI affects your security architecture. For comprehensive guidance on securing AI workloads, see [Security for AI](/security/security-for-ai/) and [AI security best practices](/azure/security/fundamentals/ai-security-best-practices).
 
