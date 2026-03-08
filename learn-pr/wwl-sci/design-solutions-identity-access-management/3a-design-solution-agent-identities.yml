@@ -3,7 +3,7 @@ uid: learn.wwl.design-solutions-identity-access-management.design-solution-agent
 title: Design a solution for agent identities using Microsoft Entra Agent ID
 metadata:
   title: Design a solution for agent identities using Microsoft Entra Agent ID
-  description: "Design an agent identity solution using Microsoft Entra Agent ID, including agent identity architecture, governance, identity protection, network controls, and security design considerations for AI agents."
+  description: "Design an agent identity solution using Microsoft Entra Agent ID."
   ms.date: 03/03/2026
   author: ceperezb
   ms.author: ceperezb

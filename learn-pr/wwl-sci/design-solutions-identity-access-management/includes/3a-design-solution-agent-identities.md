@@ -40,11 +40,11 @@ When designing an agent identity solution, your architecture must mitigate sever
 
 AI agents expand the organizational attack surface in ways that require specific design responses:
 
-- **External accessibility** — Agents interacting with external systems or the public internet create pathways for adversaries to compromise agents and pivot into organizational resources.
-- **Permission escalation risk** — Agents are frequently provisioned with permissions broader than necessary, violating least privilege.
-- **Autonomous decision-making** — Compromised agents with purchasing authority or administrative privileges can take harmful actions at machine speed.
-- **Prompt injection** — Malicious instructions inserted into data processed by the agent can manipulate agent behavior—an attack vector unique to AI.
-- **Agent-to-agent propagation** — A compromised orchestration agent can target other agents through A2A flows, propagating compromise across agent ecosystems.
+- **External accessibility**—Agents interacting with external systems or the public internet create pathways for adversaries to compromise agents and pivot into organizational resources.
+- **Permission escalation risk**—Agents are frequently provisioned with permissions broader than necessary, violating least privilege.
+- **Autonomous decision-making**—Compromised agents with purchasing authority or administrative privileges can take harmful actions at machine speed.
+- **Prompt injection**—Malicious instructions inserted into data processed by the agent can manipulate agent behavior—an attack vector unique to AI.
+- **Agent-to-agent propagation**—A compromised orchestration agent can target other agents through A2A flows, propagating compromise across agent ecosystems.
 
 ### Agent sprawl
 
