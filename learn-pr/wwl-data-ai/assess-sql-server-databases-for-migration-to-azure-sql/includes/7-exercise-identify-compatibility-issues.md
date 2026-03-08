@@ -7,4 +7,4 @@ In this exercise, you'll learn how to use Azure Migrate to assess SQL Server ins
 
 Launch the exercise and follow the instructions.
 
-[![Button to launch exercise.](../media/launch-exercise.png)](https://microsoftlearning.github.io/mslearn-sql-migration/Instructions/Labs/01-assess-sql-migration-azure-migrate.html?azure-portal=true)
+[![Button to launch exercise.](../media/launch-exercise.png)](https://microsoftlearning.github.io/mslearn-sql-migration/Instructions/Labs/01-identify-compatibility-issues.html)
