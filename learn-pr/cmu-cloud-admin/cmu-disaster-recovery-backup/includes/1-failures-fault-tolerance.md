@@ -102,7 +102,7 @@ A cloud platform (which includes public cloud-based services, but also may inclu
 
 2. _Sidiroglou, Stelios, *et al.* *ASSURE: Automatic Software Self-healing Using Rescue Points.* Columbia University, 2009._
 
-3. _Kwon Yong-Chul, *et al*. *Fault-tolerant Stream Processing Using a Distributed, Replicated File System*. Association for Computing Machinery, 2008. <https://db.cs.washington.edu/projects/moirae/moirae-vldb08.pdf>._
+3. _Kwon Yong-Chul, *et al*. *Fault-tolerant Stream Processing Using a Distributed, Replicated File System*. Association for Computing Machinery, 2008. <https://dl.acm.org/doi/abs/10.14778/1453856.1453920>._
 
 4. _Yang, Chen. *Checkpoint and Restoration of Micro-service in Docker Containers.* School of Information Security Engineering, Shanghai Jiao Tong University, China, 2015. <https://download.atlantis-press.com/article/25844460.pdf>._
 
@@ -110,7 +110,7 @@ A cloud platform (which includes public cloud-based services, but also may inclu
 
 [^1]:  <http://scholar.harvard.edu/files/cristescu/files/paper.pdf>  "Ioana, Cristescu. *A Record-and-Replay Fault Tolerant System for Multithreading Applications*. Technical University of Cluj Napoca."
 
-[^3]:  <https://db.cs.washington.edu/projects/moirae/moirae-vldb08.pdf>  "Kwon Yong-Chul, *et al*. *Fault-tolerant Stream Processing Using a Distributed, Replicated File System*. Association for Computing Machinery, 2008."
+[^3]:  <https://dl.acm.org/doi/abs/10.14778/1453856.1453920>  "Kwon Yong-Chul, *et al*. *Fault-tolerant Stream Processing Using a Distributed, Replicated File System*. Association for Computing Machinery, 2008."
 
 [^4]:  <https://download.atlantis-press.com/article/25844460.pdf>  "Yang, Chen. *Checkpoint and Restoration of Micro-service in Docker Containers*. School of Information Security Engineering, Shanghai Jiao Tong University, China, 2015."
 
