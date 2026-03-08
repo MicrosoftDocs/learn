@@ -42,4 +42,4 @@ This approach reduces the risk of masking the root cause and makes it easier to 
 Use these resources to learn how scaling behaves in Container Apps and which settings influence replica counts. They also help you validate defaults and constraints for CPU, memory, and scaling policies.
 
 - [Azure Container Apps scale applications](/azure/container-apps/scale-app)
-- [Azure Container Apps manage applications](/azure/container-apps/manage)
+- [Azure Container Apps manage applications](/azure/container-apps/overview)
