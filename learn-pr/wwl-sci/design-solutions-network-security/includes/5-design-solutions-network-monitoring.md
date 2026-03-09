@@ -2,7 +2,7 @@ Effective network monitoring gives you continuous visibility into the traffic fl
 
 ## Capture traffic data with virtual network flow logs
 
-Virtual network flow logs are the foundation of network traffic monitoring in Azure. They record metadata about every IP flow entering and leaving a virtual network, including source and destination addresses, ports, protocol, traffic direction, and whether the flow was allowed or denied. Flow logs operate at Layer 4 and are collected at one-minute intervals without affecting your resources or network performance.
+Virtual network flow logs are a Network Watcher traffic capability and the foundation of network traffic monitoring in Azure. They record metadata about every IP flow entering and leaving a virtual network, including source and destination addresses, ports, protocol, traffic direction, and whether the flow was allowed or denied. Flow logs operate at Layer 4 and are collected at one-minute intervals without affecting your resources or network performance.
 
 Virtual network flow logs offer several advantages over the older network security group (NSG) flow logs:
 
@@ -26,7 +26,7 @@ When you design your flow log strategy, consider the following factors:
 
 ## Analyze traffic patterns with Traffic Analytics
 
-Raw flow logs produce large volumes of data that are difficult to interpret on their own. Traffic Analytics processes flow log data to produce actionable insights about your network traffic.
+Raw flow logs produce large volumes of data that are difficult to interpret on their own. Traffic Analytics, another Network Watcher traffic capability, processes flow log data to produce actionable insights about your network traffic.
 
 Traffic Analytics aggregates raw flows, reduces the data volume by combining flows with common attributes, and enriches each record with geographic, security, and topology information. It stores the processed data in a Log Analytics workspace, where you can query it with Kusto Query Language (KQL) or view it through a built-in dashboard.
 
@@ -41,7 +41,7 @@ To use Traffic Analytics, you need virtual network flow logs (or NSG flow logs f
 
 ## Monitor connectivity with Connection Monitor
 
-While flow logs capture what traffic is flowing, Connection Monitor tests whether traffic *can* flow. It provides continuous, end-to-end connectivity monitoring between Azure VMs, virtual machine scale sets, on-premises hosts (through Azure Arc), and external endpoints such as URLs or IP addresses.
+Connection Monitor is a Network Watcher monitoring capability that tests whether traffic *can* flow between endpoints. While flow logs capture what traffic is flowing, Connection Monitor provides continuous, end-to-end connectivity monitoring between Azure VMs, virtual machine scale sets, on-premises hosts (through Azure Arc), and external endpoints such as URLs or IP addresses.
 
 Connection Monitor measures packet loss, latency, and round-trip time using TCP, ICMP, and HTTP probes. It visualizes the end-to-end network path including hop-by-hop performance, helping you identify where connectivity degrades.
 

@@ -1,0 +1,59 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-implement-rag-with-sql.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 02/04/2026
+  author: calopez
+  ms.author: calopez
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is the primary advantage of RAG over fine-tuning?"
+    choices:
+    - content: "RAG produces faster Large Language Models (LLM) responses than fine-tuned models"
+      isCorrect: false
+      explanation: "Incorrect. Response speed depends on the model and infrastructure, not on whether RAG or fine-tuning is used."
+    - content: "RAG uses data retrieved at query time, so responses reflect current information without retraining"
+      isCorrect: true
+      explanation: "Correct. RAG retrieves data for each request, meaning changes in the database are immediately reflected in responses. Fine-tuning requires retraining the model to incorporate new data."
+    - content: "RAG requires less storage space than fine-tuned models"
+      isCorrect: false
+      explanation: "Incorrect. Storage requirements aren't the primary differentiator between RAG and fine-tuning."
+  - content: "Which T-SQL option removes the square brackets from JSON output when retrieving a single row for RAG context?"
+    choices:
+    - content: "INCLUDE_NULL_VALUES"
+      isCorrect: false
+      explanation: "Incorrect. INCLUDE_NULL_VALUES includes null fields in the JSON output rather than omitting them. It doesn't affect array brackets."
+    - content: "ROOT('name')"
+      isCorrect: false
+      explanation: "Incorrect. ROOT adds a named root element to wrap the JSON output. It doesn't remove the array brackets."
+    - content: "WITHOUT_ARRAY_WRAPPER"
+      isCorrect: true
+      explanation: "Correct. WITHOUT_ARRAY_WRAPPER removes the square brackets that FOR JSON adds by default, producing a single JSON object rather than an array."
+  - content: "What permission must be granted to a database user before they can call sp_invoke_external_rest_endpoint?"
+    choices:
+    - content: "EXECUTE ANY EXTERNAL ENDPOINT"
+      isCorrect: true
+      explanation: "Correct. The EXECUTE ANY EXTERNAL ENDPOINT database permission is required to invoke external REST endpoints from Azure SQL Database."
+    - content: "CONTROL SERVER"
+      isCorrect: false
+      explanation: "Incorrect. CONTROL SERVER is a broad server-level permission. The more specific EXECUTE ANY EXTERNAL ENDPOINT permission is designed for this purpose."
+    - content: "ALTER ANY DATABASE SCOPED CREDENTIAL"
+      isCorrect: false
+      explanation: "Incorrect. This permission is for managing credentials, not for executing external endpoint calls."
+  - content: "When a query parses an Azure OpenAI chat completion response from sp_invoke_external_rest_endpoint, which JSON path extracts the assistant's message content?"
+    choices:
+    - content: "$.response.message.content"
+      isCorrect: false
+      explanation: "Incorrect. The response section contains HTTP status information. The actual API result is in the result section."
+    - content: "$.result.choices[0].message.content"
+      isCorrect: true
+      explanation: "Correct. The sp_invoke_external_rest_endpoint wraps the API response in a result property. For Azure OpenAI chat completions, the assistant message is at choices[0].message.content within that result."
+    - content: "$.result.content"
+      isCorrect: false
+      explanation: "Incorrect. Azure OpenAI chat completion responses include a choices array with message objects. The content isn't directly under result."

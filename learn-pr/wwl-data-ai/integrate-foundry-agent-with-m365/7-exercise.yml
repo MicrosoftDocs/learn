@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.integrate-foundry-agent-with-m365.exercise
+title: Exercise - Publish a Foundry agent to Teams
+metadata:
+  title: Exercise - Publish a Foundry agent to Teams
+  description: Interactive exercise to create a simple agent in Microsoft Foundry and publish it to Microsoft Teams.
+  ms.date: 02/17/2026
+  author: ivorb
+  ms.author: berryivor
+  ms.topic: unit
+  ai-usage: ai-assisted
+durationInMinutes: 30
+content: |
+  [!include[](includes/7-exercise.md)]

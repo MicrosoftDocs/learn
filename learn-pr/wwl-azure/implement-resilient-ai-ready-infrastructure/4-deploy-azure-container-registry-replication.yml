@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-resilient-ai-ready-infrastructure.deploy-azure-container-registry-replication
+title: "Deploy Azure Container Registry with geo-replication"
+metadata:
+  title: "Deploy Azure Container Registry with geo-replication"
+  description: "Deploy Azure Container Registry with geo-replication."
+  ms.date: 02/03/2026
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: unit
+durationInMinutes: 11
+content: |
+  [!include[](includes/4-deploy-azure-container-registry-replication.md)]

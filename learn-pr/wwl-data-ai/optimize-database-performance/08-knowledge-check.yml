@@ -1,0 +1,99 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.optimize-database-performance.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 07/07/2025
+  author: calopez
+  ms.author: calopez
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "A team needs I/O latency under 2 milliseconds and a free read-only replica for reporting queries. Which Azure SQL Database service tier should they choose?"
+    choices:
+    - content: "General Purpose"
+      isCorrect: false
+      explanation: "Incorrect. General Purpose uses remote Azure Blob Storage, which provides 5 millisecond to 10-millisecond latency and doesn't include a free read-only replica."
+    - content: "Business Critical"
+      isCorrect: true
+      explanation: "Correct. Business Critical uses locally attached SSDs with 1 millisecond to 2-millisecond latency and includes a free read-only replica through Always On availability groups."
+    - content: "Hyperscale"
+      isCorrect: false
+      explanation: "Incorrect. Hyperscale can achieve low latency for cached data and supports named replicas, but it doesn't include a free read-only replica by default like Business Critical."
+    - content: "DTU Standard"
+      isCorrect: false
+      explanation: "Incorrect. The Database Transaction Unit (DTU) Standard tier doesn't provide sub-2-millisecond latency or read-only replicas."
+  - content: "Which isolation level is the default in Azure SQL Database and uses row versioning to prevent readers from blocking writers?"
+    choices:
+    - content: "READ COMMITTED with shared locks"
+      isCorrect: false
+      explanation: "Incorrect. READ COMMITTED with shared locks is the default in SQL Server, but Azure SQL Database enables READ COMMITTED SNAPSHOT by default."
+    - content: "READ COMMITTED SNAPSHOT (RCSI)"
+      isCorrect: true
+      explanation: "Correct. Read Committed Snapshot Isolation (RCSI) is enabled by default in Azure SQL Database. Readers access row versions from the version store instead of acquiring shared locks, which prevents read-write blocking."
+    - content: "SNAPSHOT"
+      isCorrect: false
+      explanation: "Incorrect. SNAPSHOT isolation provides transaction-level consistency using row versioning, but it must be explicitly enabled and isn't the default."
+    - content: "SERIALIZABLE"
+      isCorrect: false
+      explanation: "Incorrect. SERIALIZABLE uses range locks to prevent phantom reads and significantly reduces concurrency. It's never the default isolation level."
+  - content: "Which Query Store feature restores query performance after a plan regression without modifying application code?"
+    choices:
+    - content: "Query Store hints"
+      isCorrect: false
+      explanation: "Incorrect. Query Store hints apply query hints to specific queries, but they don't directly revert to a previous plan."
+    - content: "Regressed Queries view"
+      isCorrect: false
+      explanation: "Incorrect. The Regressed Queries view helps identify plan regressions, but it doesn't fix them on its own."
+    - content: "Plan forcing"
+      isCorrect: true
+      explanation: "Correct. Plan forcing directs the optimizer to use a specific previously captured execution plan. Force a plan using sp_query_store_force_plan without any changes to application code."
+    - content: "Wait statistics"
+      isCorrect: false
+      explanation: "Incorrect. Wait statistics helps understand what resources queries are waiting on, but they don't control which plan the optimizer uses."
+  - content: "An execution plan shows a Key Lookup operator that accounts for most of the query cost. What is the recommended approach to eliminate it?"
+    choices:
+    - content: "Add a filtered index on the predicate columns"
+      isCorrect: false
+      explanation: "Incorrect. A filtered index limits the rows covered by the index but doesn't address the missing nonkey columns that cause the lookup."
+    - content: "To reduce fragmentation, rebuild the clustered index"
+      isCorrect: false
+      explanation: "Incorrect. Rebuilding the clustered index doesn't change the columns available in the nonclustered index, so the lookup remains."
+    - content: "Add included columns to the nonclustered index"
+      isCorrect: true
+      explanation: "Correct. A Key Lookup occurs when the nonclustered index doesn't cover all columns the query needs. Adding the missing columns as included columns creates a covering index and eliminates the extra lookup."
+    - content: "Switch the query to use the NOLOCK hint"
+      isCorrect: false
+      explanation: "Incorrect. NOLOCK changes the isolation level to READ UNCOMMITTED. It doesn't affect whether the index covers the required columns."
+  - content: "How do you identify the head blocker in a blocking chain using dynamic management views?"
+    choices:
+    - content: "Query sys.dm_exec_requests for the session with the highest wait_time"
+      isCorrect: false
+      explanation: "Incorrect. The longest wait time might belong to a blocked session, not the head blocker."
+    - content: "Query sys.dm_exec_sessions for sessions with status = 'running'"
+      isCorrect: false
+      explanation: "Incorrect. The head blocker might be sleeping with an uncommitted transaction, not actively running."
+    - content: "Query sys.dm_exec_requests for sessions where blocking_session_id = 0 that also appear as blocking_session_id for other sessions"
+      isCorrect: true
+      explanation: "Correct. The head blocker is the session that blocks others (appears in other sessions' blocking_session_id) but no other session blocks it (its own blocking_session_id is 0)."
+    - content: "Query sys.dm_tran_locks for the session holding the most exclusive locks"
+      isCorrect: false
+      explanation: "Incorrect. The number of locks held doesn't identify the head blocker. A session can hold many locks without blocking others if no conflicting requests exist."
+  - content: "Two transactions running under SNAPSHOT isolation both read the same row, then each tries to update it. What happens?"
+    choices:
+    - content: "Both updates succeed because snapshot isolation uses row versions instead of locks"
+      isCorrect: false
+      explanation: "Incorrect. Snapshot isolation doesn't allow unrestricted concurrent writes. It detects conflicts between concurrent modifications."
+    - content: "The second update blocks until the first transaction commits"
+      isCorrect: false
+      explanation: "Incorrect. Under SNAPSHOT isolation, the second update doesn't block. Instead, the engine checks for write-write conflicts."
+    - content: "The first transaction to commit succeeds; the second transaction fails with an update conflict error"
+      isCorrect: true
+      explanation: "Correct. Snapshot isolation raises an update conflict (error 3960) when a transaction tries to modify a row that another transaction changed after the snapshot began. The conflicting transaction must be rolled back and retried."
+    - content: "The deadlock monitor detects a circular dependency and terminates one transaction"
+      isCorrect: false
+      explanation: "Incorrect. This scenario is a write-write conflict, not a deadlock. Snapshot isolation detects it immediately as an update conflict rather than waiting for a deadlock cycle."

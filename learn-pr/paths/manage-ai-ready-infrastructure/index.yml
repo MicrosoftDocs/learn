@@ -1,0 +1,34 @@
+### YamlMime:LearningPath
+uid: learn.wwl.manage-ai-ready-infrastructure
+metadata:
+  title: Manage AI-ready infrastructure
+  description: Learn to manage AI infrastructure by planning compute capacity, enforcing governance, configuring monitoring, and optimizing costs to support scalable, compliant, and high-performing AI workloads without budget overruns or operational risks.
+  ms.date: 02/11/2026
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: learning-path
+title: Manage AI-ready infrastructure
+prerequisites: |
+  - Familiarity with Azure infrastructure fundamentals including virtual machines, storage accounts, and resource groups
+  - Basic understanding of AI and machine learning workloads such as model training and inference
+  - Experience navigating the Azure portal or executing Azure CLI commands
+summary: |
+  Learn to manage AI infrastructure by planning compute capacity, enforcing governance, configuring monitoring, and optimizing costs to support scalable, compliant, and high-performing AI workloads.
+iconUrl: /training/achievements/generic-trophy.svg
+levels:
+- intermediate
+roles:
+- administrator
+products:
+- azure
+- ai-services 
+subjects:
+- artificial-intelligence
+- infrastructure
+modules:
+- learn.wwl.configure-ai-ready-infrastructure-microsoft-foundry
+- learn.wwl.manage-monitoring-ai-ready-infrastructure
+- learn.wwl.manage-secure-ai-ready-infrastructure
+- learn.wwl.implement-resilient-ai-ready-infrastructure
+trophy:
+  uid: learn.wwl.manage-ai-ready-infrastructure.trophy

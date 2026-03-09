@@ -1,0 +1,41 @@
+### YamlMime:Module
+uid: learn.wwl.implement-resilient-ai-ready-infrastructure
+metadata:
+  title: "Implement resilient AI-ready infrastructure"
+  description: "This module explains building resilient, multi-region AI infrastructure using Microsoft Foundry hubs, geo-redundant storage, and Azure Container Registry geo-replication. It shows how coordinated replication and failover protect data, model images, and AI services during regional outages."
+  ms.date: 02/03/2026
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: module
+  ms.service: azure
+title: "Implement resilient AI-ready infrastructure"
+summary: This module explains building resilient, multi-region AI infrastructure using Microsoft Foundry hubs, geo-redundant storage, and Azure Container Registry geo-replication. It shows how coordinated replication and failover protect data, model images, and AI services during regional outages.
+abstract: |
+  By the end of this module, you're able to:
+   - Explain how Azure Monitor and Log Analytics Workspace support infrastructure management.
+   - Configure metrics collection and visualization for Azure resources.
+   - Implement alert rules and processing rules to respond to infrastructure events.
+   - Query log data to diagnose infrastructure issues.
+prerequisites: |
+  - Azure Fundamentals: Basic understanding of Azure services, resource groups, and subscription management.
+  - Disaster Recovery Concepts: Familiarity with backup, failover, and business continuity principles.
+  - AI Workload Basics: Awareness of AI solution architecture and operational requirements in cloud environments.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- administrator
+products:
+- azure
+subjects:
+- infrastructure
+units:
+- learn.wwl.implement-resilient-ai-ready-infrastructure.introduction
+- learn.wwl.implement-resilient-ai-ready-infrastructure.configure-microsoft-foundry-hubs-region
+- learn.wwl.implement-resilient-ai-ready-infrastructure.implement-geo-redundant-storage-data
+- learn.wwl.implement-resilient-ai-ready-infrastructure.deploy-azure-container-registry-replication
+- learn.wwl.implement-resilient-ai-ready-infrastructure.exercise-configure-resilient-infrastructure
+- learn.wwl.implement-resilient-ai-ready-infrastructure.knowledge-check
+- learn.wwl.implement-resilient-ai-ready-infrastructure.summary
+badge:
+  uid: learn.wwl.implement-resilient-ai-ready-infrastructure.badge

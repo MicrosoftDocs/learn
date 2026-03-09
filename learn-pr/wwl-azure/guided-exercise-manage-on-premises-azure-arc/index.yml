@@ -26,7 +26,7 @@ abstract: |
 
   -   Configuring on-premises Windows servers by using Azure VM extensions and CLI
 prerequisites: None
-iconUrl: /training/achievements/generic-badge.svg
+iconUrl: /training/achievements/azure-arc-module.svg
 levels:
 - intermediate
 roles:
@@ -44,4 +44,4 @@ units:
 - learn.wwl.guided-exercise-manage-on-premises-azure-arc.knowledge-check
 - learn.wwl.guided-exercise-manage-on-premises-azure-arc.summary
 badge:
-  uid: learn.wwl.guided-exercise-manage-on-premises-azure-arc.badge
+  uid: learn.wwl.guided-exercise-manage-on-premises-azure-arc.badge

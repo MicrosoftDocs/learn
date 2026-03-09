@@ -4,7 +4,7 @@ title: Design and implement a data partitioning scheme
 metadata:
   title: Design and Implement a Data Partitioning Scheme
   description: Learn how to design and implement effective data partitioning schemes in Azure Databricks to optimize query performance and manage large-scale datasets.
-  ms.date: 01/15/2026
+  ms.date: 02/10/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit

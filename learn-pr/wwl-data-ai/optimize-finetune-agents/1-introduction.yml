@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.optimize-finetune-agents.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: Introduction to advanced fine-tuning decision-making for AI agents, covering method selection, agent quality problem recognition, training data preparation, and optimization strategy design.
+  author: madiepev
+  ms.author: madiepev
+  ms.date: 02/25/2026
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 1
+content: |
+  [!include[](includes/1-introduction.md)]
+
+

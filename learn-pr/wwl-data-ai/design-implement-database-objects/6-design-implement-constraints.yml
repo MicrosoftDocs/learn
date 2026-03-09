@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-implement-database-objects.design-implement-constraints
+title: Enforce data integrity with constraints
+metadata:
+  title: Enforce data integrity with constraints
+  description: "Learn how to design and implement database constraints including primary key, foreign key, unique, CHECK, and DEFAULT"
+  ms.date: 02/24/2026
+  author: JulianePadrao
+  ms.author: jupadrao
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 12
+content: |
+  [!include[](includes/6-design-implement-constraints.md)]

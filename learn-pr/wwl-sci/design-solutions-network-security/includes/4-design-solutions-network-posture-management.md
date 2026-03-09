@@ -62,7 +62,7 @@ Network verifier is useful during both the design and post-deployment phases of 
 
 ## Validate posture with Network Watcher diagnostics
 
-Azure Network Watcher provides diagnostic tools that help you verify your network configurations match your intended design. While the next unit covers network monitoring in depth, several Network Watcher capabilities are especially relevant for posture validation:
+Azure Network Watcher provides a suite of monitoring, diagnostic, and traffic analysis tools for Azure IaaS network resources. Network Watcher diagnostics capabilities are especially relevant for posture validation (Azure Network Watcher tools that support network monitoring and traffic analysis are covered in the next unit).
 
 - **IP flow verify** and **NSG diagnostics** check whether specific traffic is allowed or denied by evaluating the effective security rules at the VM or subnet level. Use these tools to confirm that your NSG configurations enforce the traffic-filtering policies you designed, without waiting for actual traffic to trigger a flow log entry.
 

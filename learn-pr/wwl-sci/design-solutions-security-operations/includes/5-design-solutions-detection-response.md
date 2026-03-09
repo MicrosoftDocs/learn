@@ -103,12 +103,14 @@ The Microsoft Defender portal provides unified security operations integrating:
 
 The portal combines Microsoft Defender XDR, Microsoft Sentinel, Microsoft Security Exposure Management, and Microsoft Security Copilot. This provides a single location to monitor, detect, investigate, remediate, and respond to pre- and post-breach cybersecurity risks.
 
+:::image type="content" source="../media/defender-xdr-siem-portal.png" alt-text="A diagram that depicts the components of Microsoft Defender XDR and Microsoft Sentinel with the Microsoft Defender portal." lightbox="../media/defender-xdr-siem-portal.png":::
+
 ### Integration benefits
 
 When Microsoft Sentinel is connected with Microsoft Defender XDR in the unified portal:
 
 - **Shared data and unified incidents** enable seamless investigation across both platforms
-- **Automatic attack disruption** signals from Defender XDR are available in Sentinel
+- **Automatic attack disruption** signals from Defender XDR are available in Microsoft Sentinel
 - **AI summarization** through Security Copilot accelerates triage and investigation
 - **Enriched investigation paths** combine XDR deep insights with SIEM breadth
 
@@ -131,7 +133,7 @@ As a security architect, design your detection strategy to balance coverage, qua
 
 ### Detection coverage strategy
 
-- **Map detections to MITRE ATT&CK** - Use the coverage matrix in Sentinel to identify gaps across tactics and techniques
+- **Map detections to MITRE ATT&CK** - Use the coverage matrix in Microsoft Sentinel to identify gaps across tactics and techniques
 - **Layer detection types** - Combine rule-based, ML-based, and threat intelligence detections for defense in depth
 - **Prioritize high-impact techniques** - Focus detection engineering on techniques most commonly used against your industry
 - **Plan for detection maintenance** - Allocate ongoing effort to tune rules, reduce false positives, and adapt to evolving threats

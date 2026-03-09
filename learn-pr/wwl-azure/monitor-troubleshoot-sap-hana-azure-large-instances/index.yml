@@ -4,8 +4,8 @@ metadata:
   title: Monitor and troubleshoot SAP HANA on Azure (Large Instances)
   description: This module investigates monitoring tools and methods used for SAP HANA on Azure (Large Instances). Prepare for Exam AZ-120 Planning and Administering Microsoft Azure for SAP Workloads.
   ms.date: 07/06/2022
-  author: wwlpublish
-  ms.author: eric
+  author: bradjoseph
+  ms.author: bradj
   ms.topic: module
   ms.service: sap-on-azure
 title: Monitor and troubleshoot SAP HANA on Azure (Large Instances)
@@ -40,4 +40,4 @@ units:
 - learn.wwl.monitor-troubleshoot-sap-hana-azure-large-instances.summary
 badge:
   uid: learn.wwl.monitor-troubleshoot-sap-hana-azure-large-instances.badge
-
+

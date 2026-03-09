@@ -4,7 +4,7 @@ title: Detect and manage schema drift
 metadata:
   title: Detect and Manage Schema Drift
   description: Learn how to detect and manage schema drift in Azure Databricks data pipelines using Delta Lake, Auto Loader, schema evolution, and error handling strategies.
-  ms.date: 12/07/2025
+  ms.date: 02/19/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit

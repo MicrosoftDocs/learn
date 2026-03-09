@@ -1,147 +1,97 @@
-This unit will focus on the use of Azure Web Application Firewall, which can be deployed on Azure App Gateway and Azure Front Door.
+Web applications are frequent targets for attacks that exploit common vulnerabilities like SQL injection and cross-site scripting (XSS). Preventing these attacks solely through application code is challenging and requires rigorous maintenance across multiple layers. Azure Web Application Firewall (WAF) provides centralized protection that complements your application-level security controls.
+
+As a cybersecurity architect, you determine where to deploy WAF, which rule sets to apply, and how to integrate WAF into your overall application security architecture.
 
 ## What is Azure Web Application Firewall?
 
-Web Application Firewall (WAF) provides centralized protection of your web applications from common exploits and vulnerabilities. Web applications are increasingly targeted by malicious attacks that exploit commonly known vulnerabilities. SQL injection and cross-site scripting are among the most common attacks.
+Azure WAF provides centralized, cloud-native protection of web applications from common exploits and vulnerabilities. It inspects incoming HTTP/HTTPS traffic against a set of rules and can block, log, or redirect malicious requests before they reach your application. A centralized WAF simplifies security management because you patch known vulnerabilities in one place rather than securing each web application individually. While WAF is an Azure-native security service, it doesn't operate as a standalone service. A WAF policy is its own Azure resource that you create independently, but it has no effect until you associate it with one of the supported hosting services listed below.
 
-![Diagram that shows Web application firewall.](../media/web-application-firewall-overview.png)
+:::image type="content" source="../media/web-application-firewall-overview.png" alt-text="Diagram that shows Web application firewall." lightbox="../media/web-application-firewall-overview.png":::
 
-Preventing such attacks in application code is challenging. It can require rigorous maintenance, patching, and monitoring at multiple layers of the application topology. A centralized web application firewall helps make security management much simpler. A WAF also gives application administrators better assurance of protection against threats and intrusions.
+Azure WAF can be deployed with the following services:
 
-A WAF solution can react to a security threat faster by centrally patching a known vulnerability, instead of securing each individual web application.
+- **Azure Application Gateway:** a layer 7 load balancer for regional traffic.
+- **Azure Front Door:** a global content delivery and application acceleration service.
+- **Azure Application Gateway for Containers:** an application gateway that manages traffic to containerized workloads. WAF support for Application Gateway for Containers uses the DRS 2.1 managed rule set only and has some feature limitations compared to WAF on Azure Application Gateway.
 
-### Supported services
+> [!NOTE]
+> WAF on Azure Content Delivery Network (CDN) is no longer accepting new customers. Use WAF on Azure Front Door for new deployments requiring global edge protection.
 
-WAF can be deployed with Azure Application Gateway, Azure Front Door, and Azure Content Delivery Network (CDN) service from Microsoft. WAF on Azure CDN is currently under public preview. WAF has features that are customized for each specific service. For more information about WAF features for each service, see the overview for each service.
+Each deployment option shares the same core WAF engine but offers service-specific capabilities that influence your architectural decisions.
 
-## WAF on Azure App Gateway
+## WAF on Azure Application Gateway
 
-Azure Web Application Firewall (WAF) on Azure Application Gateway provides centralized protection of your web applications from common exploits and vulnerabilities. Web applications are increasingly targeted by malicious attacks that exploit commonly known vulnerabilities. SQL injection and cross-site scripting are among the most common attacks.
+Azure Application Gateway is a regional, layer 7 load balancer. When you enable WAF on Application Gateway, it inspects every inbound HTTP/HTTPS request to protect against web application attacks.
 
-WAF on Application Gateway is based on the [Core Rule Set (CRS)](/azure/web-application-firewall/ag/application-gateway-crs-rulegroups-rules) from the Open Web Application Security Project (OWASP).
+:::image type="content" source="../media/application-gateway.png" alt-text="Diagram that illustrates how a web application firewall works with Azure Application Gateway." lightbox="../media/application-gateway.png":::
 
-All of the WAF features listed below exist inside of a WAF policy. You can create multiple policies, and they can be associated with an Application Gateway, to individual listeners, or to path-based routing rules on an Application Gateway. This way, you can have separate policies for each site behind your Application Gateway if needed. For more information on WAF policies, see [Create a WAF Policy](/azure/web-application-firewall/ag/create-waf-policy-ag).
+Key capabilities include:
 
-![Diagram that shows Application Gateway Web Application Firewall.](/azure/web-application-firewall/media/ag-overview/waf1.png)
+- **Managed rule sets.** WAF uses rule sets based on the Open Worldwide Application Security Project (OWASP) Core Rule Set (CRS) to protect against SQL injection, XSS, file inclusion, command injection, HTTP request smuggling, and other OWASP Top 10 vulnerabilities. The Default Rule Set (DRS) and Bot Manager rule set are maintained by Azure and updated as new attack patterns emerge.
+- **Custom rules.** Create rules that evaluate requests based on IP address, geo-location, URI path, request headers, query strings, or request body content. Custom rules take priority over managed rules, allowing you to tailor protection to your application's specific requirements.
+- **WAF modes.** Run WAF in Detection mode (logs requests that match rules but doesn't block them) to tune policies before switching to Prevention mode (blocks requests matching rules). Start with Detection mode to identify false positives and create exclusions before enforcing.
+- **Per-site and per-URI policies.** Apply different WAF policies to different sites or URI paths hosted behind the same Application Gateway. For example, apply stricter rules to authentication endpoints and relaxed rules to a static content path.
+- **Bot protection.** The Bot Manager rule set classifies traffic as good bots (search engine crawlers), bad bots (scrapers, vulnerability scanners), and unknown bots, allowing you to block or challenge malicious automated traffic.
 
-Application Gateway operates as an application delivery controller (ADC). It offers Transport Layer Security (TLS), previously known as Secure Sockets Layer (SSL), termination, cookie-based session affinity, round-robin load distribution, content-based routing, ability to host multiple websites, and security enhancements.
+WAF logs integrate with Azure Monitor and can be forwarded to Microsoft Sentinel for correlation with other security events. Microsoft Defender for Cloud can also assess your WAF configuration and generate recommendations for improvements.
 
-Application Gateway security enhancements include TLS policy management and end-to-end TLS support. Application security is strengthened by WAF integration into Application Gateway. The combination protects your web applications against common vulnerabilities. And it provides an easy-to-configure central location to manage.
-<!--
-[](/azure/web-application-firewall/ag/ag-overview#benefits)
--->
+## WAF on Azure Front Door
 
-### Benefits
+Azure Front Door is a global service that accelerates application delivery and provides global load balancing. WAF on Front Door inspects traffic at Azure edge locations before it reaches your origin servers, reducing latency for block decisions and protecting against geographically distributed attacks.
 
-This section describes the core benefits that WAF on Application Gateway provides.
+Key considerations for WAF on Azure Front Door vs. WAF on Azure Application Gateway:
 
-#### Protection
+- **Global vs. regional.** WAF on Azure Front Door operates at the edge, providing protection close to the source of traffic. WAF on Azure Application Gateway operates regionally, in the Azure region where your application runs. For globally distributed applications, WAF on Azure Front Door provides lower-latency protection. For regional applications, WAF on Azure Application Gateway provides greater integration with virtual network architectures.
+- **DDoS protection.** Azure Front Door includes built-in platform-level DDoS protection at network layers 3 and 4. Combined with WAF's layer 7 protection, this provides defense-in-depth against volumetric and application-layer attacks. For origin servers with public IPs, also enable Azure DDoS Protection to guard against attacks that bypass the edge.
+- **Rate limiting.** WAF on Azure Front Door supports rate limiting rules that restrict the number of requests from a single source within a time window, protecting against brute force attacks and API abuse.
 
--   Protect your web applications from web vulnerabilities and attacks without modification to back-end code.
-    
--   Protect multiple web applications at the same time. An instance of Application Gateway can host up to 40 websites that are protected by a web application firewall.
-    
--   Create custom WAF policies for different sites behind the same WAF
-    
--   Protect your web applications from malicious bots with the IP Reputation ruleset
-    
-<!--
-[](/azure/web-application-firewall/ag/ag-overview#monitoring)
--->
+> [!IMPORTANT]
+> Managed rule sets are supported only on Azure Front Door Premium and Azure Front Door (classic). Front Door Standard supports custom rules only.
 
-#### Monitoring
+WAF on Azure Front Door policies combine custom rules and managed rule sets, processed in this order:
 
--   Monitor attacks against your web applications by using a real-time WAF log. The log is integrated with [Azure Monitor](/azure/azure-monitor/overview) to track WAF alerts and easily monitor trends.
--   The Application Gateway WAF is integrated with Microsoft Defender for Cloud. Defender for Cloud provides a central view of the security state of all your Azure, hybrid, and multicloud resources.
+1. **Custom rules:** organization-specific allow or block logic, such as geo-filtering or IP restrictions. Custom rules act immediately on match—if a request matches a custom rule, no further rules are evaluated.
+2. **Managed rule sets:** Azure-managed protection against common vulnerabilities, using the Default Rule Set (DRS). DRS versions 2.0 and later use **anomaly scoring**, where rule matches accumulate a severity-based score and the request is blocked only when the total exceeds a threshold. This reduces false positives for complex applications where a legitimate request might trigger a single low-severity rule. Earlier DRS versions (before 2.0) use per-rule blocking, where each rule match triggers immediate action.
 
-#### Customization
+Because custom rules are evaluated first, you can define organization-specific logic without disabling baseline protections in the managed rule sets. This layered approach lets you tailor protection to your application's requirements while maintaining the Azure-managed baseline.
 
--   Customize WAF rules and rule groups to suit your application requirements and eliminate false positives.
--   Associate a WAF Policy for each site behind your WAF to allow for site-specific configuration
--   Create custom rules to suit the needs of your application
+## Comparing WAF across deployment options
 
-### Features
+All three deployment options share the same core WAF engine and inspect HTTP/HTTPS traffic against OWASP-based rule sets. The differences come down to where inspection happens, which rule sets are available, and what extra capabilities the hosting service adds.
 
--   SQL injection protection.
--   Cross-site scripting protection.
--   Protection against other common web attacks, such as command injection, HTTP request smuggling, HTTP response splitting, and remote file inclusion.
--   Protection against HTTP protocol violations.
--   Protection against HTTP protocol anomalies, such as missing host user-agent and accept headers.
--   Protection against crawlers and scanners.
--   Detection of common application misconfigurations (for example, Apache and IIS).
--   Configurable request size limits with lower and upper bounds.
--   Exclusion lists let you omit certain request attributes from a WAF evaluation. A common example is Active Directory-inserted tokens that are used for authentication or password fields.
--   Create custom rules to suit the specific needs of your applications.
--   Geo-filter traffic to allow or block certain countries/regions from gaining access to your applications.
--   Protect your applications from bots with the bot mitigation ruleset.
--   Inspect JSON and XML in the request body
+- **WAF on Azure Application Gateway** inspects traffic regionally, inside your Azure virtual network. It supports the widest range of managed rule sets (CRS 3.x and DRS 2.x), rate-limit custom rules, bot protection, and per-site or per-URI policies. Choose Application Gateway when you need virtual network integration or when your application runs in a single region.
+- **WAF on Azure Front Door** inspects traffic at global edge locations before it reaches your origin, providing lower-latency block decisions for distributed users. Managed rule sets and bot protection require the Premium tier; Standard supports custom rules only. Rate limiting is available on both tiers.
+- **WAF on Application Gateway for Containers** targets containerized workloads managed through Kubernetes Gateway API. It supports DRS 2.1 and Bot Manager 1.0/1.1, but has feature limitations—no custom block responses, no X-Forwarded-For in custom rules, and no JavaScript/Captcha challenge actions for bot rules.
 
-## WAF on Azure Front Door Service
+## Designing a WAF strategy
 
-<!--
-/azure/web-application-firewall/afds/afds-overview
--->
-Azure Web Application Firewall (WAF) on Azure Front Door provides centralized protection for your web applications. WAF defends your web services against common exploits and vulnerabilities. It keeps your service highly available for your users and helps you meet compliance requirements.
+As an architect, consider these decisions when incorporating WAF into your application security architecture:
 
-WAF on Front Door is a global and centralized solution. It's deployed on Azure network edge locations around the globe. WAF enabled web applications inspect every incoming request delivered by Front Door at the network edge.
+### Choose the deployment model
 
-WAF prevents malicious attacks close to the attack sources, before they enter your virtual network. You get global protection at scale without sacrificing performance. A WAF policy easily links to any Front Door profile in your subscription. New rules can be deployed within minutes, so you can respond quickly to changing threat patterns.
+| Scenario | Recommended WAF service |
+|---|---|
+| Single-region web applications, or applications requiring virtual network integration at the WAF layer | WAF on Azure Application Gateway |
+| Globally distributed web applications requiring edge acceleration | WAF on Azure Front Door |
+| Containerized workloads using Kubernetes Gateway API | WAF on Application Gateway for Containers |
+| Multi-region applications needing global failover and WAF | WAF on Azure Front Door with regional Application Gateways |
 
-![Diagram showing an overview of Azure web application firewall.](../media/web-application-firewall-overview.png)
+For high-security architectures, chain WAF on Azure Front Door (edge protection) with WAF on Azure Application Gateway (regional, VNet-integrated protection) for defense in depth.
 
-Azure Front Door has [two tiers](/azure/frontdoor/standard-premium/overview): Front Door Standard and Front Door Premium. WAF is natively integrated with Front Door Premium with full capabilities. For Front Door Standard, only [custom rules](/azure/web-application-firewall/afds/afds-overview#custom-authored-rules) are supported.
+### Tune before enforcing
 
-<!--
-[](/azure/web-application-firewall/afds/afds-overview#waf-policy-and-rules)
--->
-### WAF policy and rules
+Deploy WAF in Detection mode first to understand traffic patterns and identify false positives. Analyze WAF logs to create exclusions for legitimate traffic that triggers rules incorrectly. Only switch to Prevention mode after you're confident that the policy doesn't block legitimate requests.
 
-You can configure a [WAF policy](/azure/web-application-firewall/afds/waf-front-door-create-portal) and associate that policy to one or more Front Door front-ends for protection. A WAF policy consists of two types of security rules:
+### Integrate with broader security monitoring
 
-- Custom rules that are authored by the customer.
-- Managed rule sets that are a collection of Azure-managed pre-configured set of rules.
+Forward WAF logs to Microsoft Sentinel for correlation with other security signals, providing context for incident response.
 
-When both are present, custom rules are processed before processing the rules in a managed rule set. A rule is made of a match condition, a priority, and an action. Action types supported are: ALLOW, BLOCK, LOG, and REDIRECT. You can create a fully customized policy that meets your specific application protection requirements by combining managed and custom rules.
+### Complement application-level security
 
-Rules within a policy are processed in a priority order. Priority is a unique integer that defines the order of rules to process. Smaller integer value denotes a higher priority and those rules are evaluated before rules with a higher integer value. Once a rule is matched, the corresponding action that was defined in the rule is applied to the request. Once such a match is processed, rules with lower priorities aren't processed further.
+WAF isn't a substitute for secure coding practices. Input validation, parameterized queries, output encoding, and proper authentication remain essential. WAF provides defense in depth, catching threats that application-layer controls might miss.
 
-A web application delivered by Front Door can have only one WAF policy associated with it at a time. However, you can have a Front Door configuration without any WAF policies associated with it. If a WAF policy is present, it's replicated to all of our edge locations to ensure consistent security policies across the world.
-<!--
-[](/azure/web-application-firewall/afds/afds-overview#waf-modes)
--->
-### WAF modes
+### Consider compliance requirements
 
-WAF policy can be configured to run in the following two modes:
+Several regulatory frameworks require WAF or equivalent application-layer protection for internet-facing applications. Document your WAF deployment as a security control in compliance evidence for PCI-DSS, SOC 2, and other frameworks.
 
--   **Detection mode:** When run in detection mode, WAF doesn't take any other actions other than monitors and logs the request and its matched WAF rule to WAF logs. You can turn on logging diagnostics for Front Door. When you use the portal, go to the **Diagnostics** section.
-    
--   **Prevention mode:** In prevention mode, WAF takes the specified action if a request matches a rule. If a match is found, no further rules with lower priority are evaluated. Any matched requests are also logged in the WAF logs.
 
-<!--
-[](/azure/web-application-firewall/afds/afds-overview#waf-actions)
--->
-### WAF actions
-
-WAF customers can choose to run from one of the actions when a request matches a rule’s conditions:
-
--   **Allow:** Request passes through the WAF and is forwarded to back-end. No further lower priority rules can block this request.
--   **Block:** The request is blocked and WAF sends a response to the client without forwarding the request to the back-end.
--   **Log:** Request is logged in the WAF logs and WAF continues evaluating lower priority rules.
--   **Redirect:** WAF redirects the request to the specified URI. The URI specified is a policy level setting. Once configured, all requests that match the **Redirect** action will be sent to that URI.
--   **Anomaly score:** This is the default action for Default Rule Set (DRS) 2.0 or later and is not applicable for the Bot Manager ruleset. The total anomaly score is increased incrementally when a rule with this action is matched.
-
-### Azure-managed rule sets
-
-Azure-managed rule sets provide an easy way to deploy protection against a common set of security threats. Since such rulesets are managed by Azure, the rules are updated as needed to protect against new attack signatures. The Azure-managed Default Rule Set includes rules against the following threat categories:
-
--   Cross-site scripting
--   Java attacks
--   Local file inclusion
--   PHP injection attacks
--   Remote command execution
--   Remote file inclusion
--   Session fixation
--   SQL injection protection
--   Protocol attackers
-
-Custom rules are always applied before rules in the Default Rule Set are evaluated. If a request matches a custom rule, the corresponding rule action is applied. The request is either blocked or passed through to the back-end. No other custom rules or the rules in the Default Rule Set are processed. You can also remove the Default Rule Set from your WAF policies.

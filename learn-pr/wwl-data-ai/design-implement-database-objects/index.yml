@@ -1,0 +1,61 @@
+### YamlMime:Module
+uid: learn.wwl.design-implement-database-objects
+metadata:
+  title: Design and implement database objects with SQL
+  description: "Learn how to design and implement database objects in SQL Server, Azure SQL, and SQL databases in Microsoft Fabric, including tables, indexes, constraints, and specialized table types."
+  ms.date: 02/24/2026
+  author: JulianePadrao
+  ms.author: jupadrao
+  ms.topic: module
+  ms.service: sql
+  ms.subservice: t-sql
+  ms.devlang: tsql
+title: Design and implement database objects with SQL
+summary: This module covers designing and implementing various database objects including tables with different data types, specialized table types, indexes, constraints, and partitioning strategies. You'll learn how to create and optimize database objects for modern SQL platforms.
+abstract: |
+  After completing this module, you'll be able to:
+  - Design and implement tables with appropriate data types, sizes, and columns
+  - Implement specialized tables including in-memory, temporal, external, LEDGER, and GRAPH tables
+  - Design and implement JSON columns and indexes
+  - Design and implement database constraints including primary key, foreign key, unique key, CHECK, and DEFAULT
+  - Design and implement SEQUENCES
+  - Design and implement partitioning strategies for tables and indexes
+prerequisites: |
+  Before starting this module, you should have:
+  - Experience writing T-SQL queries
+  - Basic understanding of database concepts
+  - Familiarity with relational database design principles
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+- advanced
+roles:
+- data-engineer
+- database-administrator
+- developer
+- solution-architect
+products:
+- sql-server
+- azure-sql-database
+- azure-sql-managed-instance
+- fabric
+subjects:
+- databases
+- data-management
+- data-engineering
+- cloud-computing
+- app-development
+units:
+- learn.wwl.design-implement-database-objects.introduction
+- learn.wwl.design-implement-database-objects.understanding-platform-choices
+- learn.wwl.design-implement-database-objects.design-implement-tables
+- learn.wwl.design-implement-database-objects.design-implement-indexes
+- learn.wwl.design-implement-database-objects.specialized-table-types
+- learn.wwl.design-implement-database-objects.design-implement-constraints
+- learn.wwl.design-implement-database-objects.design-implement-json
+- learn.wwl.design-implement-database-objects.design-implement-partitioning
+- learn.wwl.design-implement-database-objects.exercise-create-database-objects
+- learn.wwl.design-implement-database-objects.knowledge-check
+- learn.wwl.design-implement-database-objects.summary
+badge:
+  uid: learn.wwl.design-implement-database-objects.badge

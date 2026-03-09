@@ -12,3 +12,7 @@ Now that you've finished this module, you should be able to:
 - [What is GitHub Copilot?](https://docs.github.com/copilot/about-github-copilot/what-is-github-copilot)
 - [Coyote Logistics saves countless developer hours with GitHub's cutting-edge offerings](https://github.com/customer-stories/coyote-logistics)
 - [Duolingo empowers its engineers to be force multipliers for expertise with GitHub Copilot](https://github.com/customer-stories/duolingo)
+
+## Provide feedback
+
+Use this [issue form](https://github.com/githubpartners/microsoft-learn/issues/new/choose) to provide content feedback or suggested changes for this Microsoft Learn module. GitHub maintains this content and a team member will triage the request. Thank you for taking the time to improve our content!

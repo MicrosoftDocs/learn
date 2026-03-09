@@ -22,7 +22,7 @@ abstract: |
 
   -   Enhance web app performance with Azure Front Door and CDN, and deploy WAF and DDoS Protection for robust defense against attacks.
 prerequisites: '-   None'
-iconUrl: /training/achievements/generic-badge.svg
+iconUrl: /training/achievements/azure-module.svg
 levels:
 - intermediate
 roles:

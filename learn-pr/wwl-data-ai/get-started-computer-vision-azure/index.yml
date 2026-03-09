@@ -1,7 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.get-started-computer-vision
+hidden: true
 metadata:
-  title: Get started with computer vision in Microsoft Foundry
+  title: (AI-900) Get started with computer vision in Microsoft Foundry
   description: Azure Vision service enables software engineers to create intelligent solutions that extract information from images; a common task in many artificial intelligence (AI) scenarios. Learn how to use the Azure Vision service to analyze images.
   author: wwlpublish
   ms.author: sheryang
@@ -11,33 +12,32 @@ metadata:
   ms.topic: module
   ms.collection:
     - wwl-ai-copilot
-title: Get started with computer vision in Microsoft Foundry
+title: (AI-900) Get started with computer vision in Microsoft Foundry
 summary: Azure Vision service enables software engineers to create intelligent solutions that extract information from images; a common task in many artificial intelligence (AI) scenarios.
 abstract: Learn how to use the Azure Vision service to analyze images.
 prerequisites: Ability to navigate the Azure portal
 iconUrl: /training/achievements/read-text-computer-vision.svg
 levels:
-- beginner
+  - beginner
 roles:
-- ai-engineer
-- data-scientist
-- developer
-- solution-architect
-- student
+  - ai-engineer
+  - data-scientist
+  - developer
+  - solution-architect
+  - student
 products:
-- ai-services
-- azure-ai-foundry
+  - ai-services
+  - azure-ai-foundry
 subjects:
-- classification-analysis
+  - classification-analysis
 units:
-- learn.wwl.get-started-computer-vision.introduction
-- learn.wwl.get-started-computer-vision.azure-ai-vision
-- learn.wwl.get-started-computer-vision.image-service
-- learn.wwl.get-started-computer-vision.face-service
-- learn.wwl.get-started-computer-vision.azure-ai-foundry
-- learn.wwl.get-started-computer-vision.exercise
-- learn.wwl.get-started-computer-vision.knowledge-check
-- learn.wwl.get-started-computer-vision.summary
+  - learn.wwl.get-started-computer-vision.introduction
+  - learn.wwl.get-started-computer-vision.azure-ai-vision
+  - learn.wwl.get-started-computer-vision.image-service
+  - learn.wwl.get-started-computer-vision.face-service
+  - learn.wwl.get-started-computer-vision.azure-ai-foundry
+  - learn.wwl.get-started-computer-vision.exercise
+  - learn.wwl.get-started-computer-vision.knowledge-check
+  - learn.wwl.get-started-computer-vision.summary
 badge:
   uid: learn.wwl.get-started-computer-vision.badge
-

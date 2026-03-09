@@ -135,14 +135,16 @@ In Copilot CLI, configuration is handled via:
    * `/list-dirs` view allowed directories
    * `/mcp` MCP server settings
 
-2. **`copilot configure` command** (non-interactive mode)
+2. **Copilot CLI configuration** (non-interactive mode)
 
-   ```bash
-   copilot configure
-   ```
+  Copilot CLI configuration is managed through permission prompts, command-line flags, and local configuration files. These settings control what Copilot can access and do on your behalf.
 
-   * Lets you set global preferences like default model, theme, or optional usage analytics.
-   * Feedback settings and organizational access can be managed here.
+Common configuration options include:
+
+- Trusted directories – Control where Copilot can read, edit, and run files.
+- Tool permissions – Allow or restrict Copilot from running shell commands or modifying files using flags like `--allow-tool` or `--deny-tool`.
+- Path permissions – Control which directories Copilot can access.
+- URL permissions – Manage which external domains Copilot can connect to.
 
 Refer to the [official GitHub Copilot CLI documentation](https://github.com/github/copilot-cli) for full configuration options.
 

@@ -3,8 +3,8 @@ uid: learn.wwl.generate-documentation-using-github-copilot-tools
 metadata:
   title: Generate Documentation Using GitHub Copilot Tools
   description: "This module explores the generation of code explanations, project documentation, and inline code comment documentation using the GitHub Copilot Chat extension for Visual Studio Code."
-  ms.date: 08/25/2025
-  author: wwlpublish
+  ms.date: 03/03/2026
+  author: chrishowd
   ms.author: cahowd
   ms.topic: module-standard-task-based
   ms.collection: wwl-ai-copilot

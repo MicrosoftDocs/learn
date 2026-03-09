@@ -4,8 +4,8 @@ metadata:
   title: Securely connect to SAP on Azure
   description: "Learn to describe Azure Networking services and components for connecting and securing SAP S/4 HANA in Azure, and learn how different requirements might adjust networking services requirements."
   ms.date: 12/10/2021
-  author: wwlpublish
-  ms.author: eric
+  author: bradjoseph
+  ms.author: bradj
   ms.topic: module
   ms.service: sap-on-azure
 title: Securely connect to SAP on Azure
@@ -43,4 +43,4 @@ units:
 - learn.wwl.protect-azure-for-sap-workloads.summary
 badge:
   uid: learn.wwl.protect-azure-for-sap-workloads.badge
-
+

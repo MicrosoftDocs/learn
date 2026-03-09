@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.write-advanced-sql-code.exercise-write-advanced-sql-code
+title: Exercise - Work with JSON functions
+metadata:
+  title: Exercise - Work with JSON functions
+  description: Practice building JSON output and parsing JSON data using the AdventureWorksLT database.
+  ms.date: 01/28/2026
+  author: JulianePadrao
+  ms.author: jupadrao
+  ms.topic: unit
+durationInMinutes: 30
+content: |
+  [!include[](includes/10-exercise-write-advanced-sql-code.md)]

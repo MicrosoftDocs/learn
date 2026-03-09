@@ -31,7 +31,7 @@ One way to think of different generative AI applications is by grouping them in 
 |**Extendable**| Some ready-to-use applications can also be extended using your own data. These customizations enable the assistant to better support specific business processes or tasks. Microsoft Copilot is an example of technology that is ready-to-use and extendable.| 
 |**Applications you build from the foundation**| You can build your own assistants and assistants with agentic capabilities starting from a language model.| 
 
-Often, you will use services to extend or build generative AI applications. These services provide the infrastructure, tools, and frameworks necessary to develop, train, and deploy generative AI models. For example, Microsoft provides services such as Copilot Studio to extend Microsoft 365 Copilot and Microsoft Microsoft Foundry to build AI from different models.  
+Often, you will use services to extend or build generative AI applications. These services provide the infrastructure, tools, and frameworks necessary to develop, train, and deploy generative AI models. For example, Microsoft provides services such as Copilot Studio to extend Microsoft 365 Copilot and Microsoft Foundry to build AI from different models.  
 
 Next let's look at tools used to extend and build generative AI applications.
 

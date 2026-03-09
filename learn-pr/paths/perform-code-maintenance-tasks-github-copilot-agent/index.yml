@@ -1,0 +1,35 @@
+### YamlMime:LearningPath
+uid: learn.wwl.perform-code-maintenance-tasks-github-copilot-agent
+metadata:
+  title: Perform Code Maintenance Tasks using GitHub Copilot Agent
+  description: Learn how to accelerate common code maintenance tasks using GitHub Copilot Agent. This training covers how to resolve issues quickly and accurately by using GitHub Copilot Agent to refactor code in a Visual Studio Code environment.
+  ms.date: 03/05/2026
+  author: chrishowd
+  ms.author: cahowd
+  ms.topic: learning-path
+title: Perform code maintenance tasks using GitHub Copilot Agent
+prerequisites: |
+  -   An active subscription for GitHub Copilot is required for either a personal GitHub account or a GitHub account managed by an organization or enterprise.
+  -   One or more years of code development experience is recommended.
+  -   Some experience developing C# applications in Visual Studio Code with the C# Dev Kit extension is recommended.
+summary: |
+  Learn how to accelerate common code maintenance tasks using GitHub Copilot Agent. This training covers how to resolve issues quickly and accurately by using GitHub Copilot Agent to refactor code in a Visual Studio Code environment.
+iconUrl: /training/achievements/generic-trophy.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- github
+subjects:
+- app-development
+- productivity
+modules:
+- learn.consolidate-duplicate-logic-github-copilot-agent
+- learn.refactor-large-functions-github-copilot
+- learn.simplify-complex-conditionals-github-copilot-agent
+- learn.wwl.implement-code-improvements-using-github-copilot-tools
+- learn.resolve-github-issues-github-copilot-agent
+- learn.resolve-github-secret-scanning-alerts-github-copilot-agent
+trophy:
+  uid: learn.wwl.perform-code-maintenance-tasks-github-copilot-agent.trophy

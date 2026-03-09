@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-data-security-compliance.design-implement-row-level-security
+title: Implement row-level security
+metadata:
+  title: Implement row-level security
+  description: Learn how to implement Row-Level Security to control access to individual rows in SQL Server, Azure SQL, and SQL databases in Microsoft Fabric.
+  ms.date: 02/04/2026
+  author: JulianePadrao
+  ms.author: jupadrao
+  ms.topic: unit
+durationInMinutes: 11
+content: |
+  [!include[](includes/4-design-implement-row-level-security.md)]

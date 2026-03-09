@@ -21,3 +21,7 @@ At the end of this module, you can:
 * [Using GitHub Copilot with Visual Studio](https://docs.github.com/copilot/using-github-copilot/getting-code-suggestions-in-your-ide-with-github-copilot?tool=visualstudio#about-github-copilot-and-visual-studio)
 * [Viewing GitHub Copilot Logs in Your Environment](https://docs.github.com/copilot/troubleshooting-github-copilot/viewing-logs-for-github-copilot-in-your-environment)
 * [Subscribing to GitHub Copilot as an Individual User](https://docs.github.com/en/copilot/managing-copilot/managing-copilot-as-an-individual-subscriber/managing-your-copilot-subscription/subscribing-to-copilot-as-an-individual-user)
+
+## Provide feedback
+
+Use this [issue form](https://github.com/githubpartners/microsoft-learn/issues/new/choose) to provide content feedback or suggested changes for this Microsoft Learn module. GitHub maintains this content and a team member will triage the request. Thank you for taking the time to improve our content!

@@ -1,0 +1,69 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.queue-process-operations-service-bus.knowledge-check
+title: Module assessment
+metadata:
+  title: Module Assessment
+  description: Module assessment
+  ms.date: 06/26/2025
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: unit
+durationInMinutes: 5
+content: "Choose the best response for each of the following questions."
+quiz:
+  questions:
+  - content: "Your AI platform completes a document analysis, and three independent services need to react to the result: a notification service alerts the user, an audit service logs the result for compliance, and a dashboard service updates metrics. Which Service Bus entity type supports this requirement?"
+    choices:
+    - content: "A topic with three subscriptions"
+      isCorrect: true
+      explanation: "A topic distributes copies of each message to all attached subscriptions. Each subscription acts as an independent virtual queue, so the notification, audit, and dashboard services each receive and process their own copy of the message independently."
+    - content: "A queue with three competing consumers"
+      isCorrect: false
+      explanation: "A queue delivers each message to exactly one competing consumer. With three consumers on one queue, only one service would receive each message, so the other two services wouldn't receive the result."
+    - content: "Three separate queues with the sender publishing to each one"
+      isCorrect: false
+      explanation: "While sending to three separate queues would deliver messages to all three services, this approach tightly couples the sender to each consumer. Topics with subscriptions decouple the sender from the receivers, allowing you to add or remove subscribers without modifying the producer's code."
+  - content: "You're building an AI inference pipeline where losing a customer's request is unacceptable. If a worker crashes while processing a message, the message must become available to another worker. Which receive mode should you configure?"
+    choices:
+    - content: "Peek-lock mode"
+      isCorrect: true
+      explanation: "Peek-lock mode locks the message without removing it from the queue. If the worker crashes before settling the message, the lock expires and Service Bus makes the message available for another consumer. This provides at-least-once delivery, which is essential when losing requests isn't acceptable."
+    - content: "Receive-and-delete mode"
+      isCorrect: false
+      explanation: "Receive-and-delete mode removes the message from the queue immediately upon delivery. If the worker crashes before completing inference, the message is permanently lost because it's already been removed from the queue."
+    - content: "Deferred receive mode"
+      isCorrect: false
+      explanation: "Deferred receive isn't a receive mode. Deferral is a settlement operation that keeps a message in the queue but removes it from regular delivery, requiring retrieval by sequence number. The two receive modes are peek-lock and receive-and-delete."
+  - content: "A message in your inference queue consistently causes a processing error every time a worker attempts it. After 10 delivery attempts, what does Service Bus do with the message?"
+    choices:
+    - content: "Moves the message to the dead-letter queue with the reason MaxDeliveryCountExceeded"
+      isCorrect: true
+      explanation: "Service Bus tracks the delivery count for each message. When the count exceeds the queue's max_delivery_count (default 10), Service Bus automatically moves the message to the dead-letter subqueue with the reason MaxDeliveryCountExceeded. This prevents a poison message from blocking the queue indefinitely."
+    - content: "Deletes the message permanently from the queue"
+      isCorrect: false
+      explanation: "Service Bus doesn't silently delete messages that exceed the max delivery count. It preserves them in the dead-letter queue so developers can inspect the failures, diagnose the root cause, and resubmit the messages after fixing the issue."
+    - content: "Returns the message to the back of the queue for continued retry attempts"
+      isCorrect: false
+      explanation: "Service Bus doesn't continue retrying indefinitely. The max_delivery_count setting exists specifically to prevent a poison message from cycling through delivery and failure in an infinite loop. Once the count is exceeded, the message moves to the dead-letter queue."
+  - content: "Your AI pipeline needs to process 500-MB document files, but Azure Service Bus Premium tier supports messages up to 100 MB via AMQP. Which pattern addresses this constraint?"
+    choices:
+    - content: "The claim-check pattern, uploading files to Azure Blob Storage and sending only the blob URI in the message"
+      isCorrect: true
+      explanation: "The claim-check pattern separates the large payload from the message. The producer uploads the file to Azure Blob Storage and sends a small Service Bus message containing only the blob URI. The consumer retrieves the full payload from storage using the URI. This works within any tier's size limits and reduces broker throughput costs."
+    - content: "Splitting the document into five 100-MB messages and reassembling them at the consumer"
+      isCorrect: false
+      explanation: "While splitting could technically work, it adds significant complexity for message ordering, reassembly, and partial failure handling. The claim-check pattern is the recommended approach because it keeps messages small, works within any tier's limits, and avoids the complexity of splitting and reassembling payloads."
+    - content: "Encoding the document as base64 and sending it as the message body on the Premium tier"
+      isCorrect: false
+      explanation: "Base64 encoding increases the payload size by approximately 33%, making a 500-MB file even larger (~667 MB). This exceeds the Premium tier's 100-MB AMQP limit. The claim-check pattern is the correct approach for payloads that exceed Service Bus message size limits."
+  - content: "You set the correlation_id property on every Service Bus message in your AI pipeline. What is the primary purpose of this property?"
+    choices:
+    - content: "Tracking a request end-to-end across all pipeline stages, from the API through processing to result delivery"
+      isCorrect: true
+      explanation: "The correlation_id provides end-to-end request tracking. The client generates a unique identifier when submitting the original request, and this ID follows the message through every stage of the pipeline. When troubleshooting a failed inference, you can search logs, dead-letter queues, and result stores by correlation ID to trace the full lifecycle of a request."
+    - content: "Enabling duplicate detection so Service Bus discards repeated submissions of the same request"
+      isCorrect: false
+      explanation: "Duplicate detection uses the message_id property, not correlation_id. When duplicate detection is enabled on a queue, Service Bus checks the message_id within the detection window to discard duplicates. The correlation_id serves a different purpose: tracking a request across pipeline stages."
+    - content: "Routing messages to specific subscriptions based on filter rules"
+      isCorrect: false
+      explanation: "While correlation filters can match on the correlation_id property, routing isn't the primary purpose of setting correlation_id on every message. The primary purpose is end-to-end request tracking across pipeline stages. Routing decisions are typically based on application properties like model_name or priority that describe the message's content, not its tracking identifier."
