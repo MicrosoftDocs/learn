@@ -145,4 +145,4 @@ AI services introduce unique privileged access challenges due to their access to
 - **AI agent identities**: Use managed identities with minimal required permissions; avoid shared credentials
 - **Monitoring**: Ensure AI administrative activities flow to Microsoft Sentinel for correlation with other security events
 
-For more information on securing AI workloads, see [Azure AI services security baseline](/security/benchmark/azure/baselines/azure-ai-services-security-baseline).
+For more information on securing AI workloads, see [Azure AI services security baseline](/security/benchmark/azure/baselines/cognitive-services-security-baseline).
