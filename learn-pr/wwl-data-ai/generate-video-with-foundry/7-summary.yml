@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.generate-video-with-foundry.summary
+title: Summary
+metadata:
+  title: Summary
+  description: "Reflect on what you've learned about generating videos with Sora 2 in Microsoft Foundry."
+  ms.date: 03/02/2026
+  author: buzahid
+  ms.author: buzahid
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/7-summary.md)]

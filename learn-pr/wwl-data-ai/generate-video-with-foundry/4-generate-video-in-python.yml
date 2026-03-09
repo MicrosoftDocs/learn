@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.generate-video-with-foundry.generate-video-in-python
+title: Generate video in Python
+metadata:
+  title: Generate video in Python
+  description: "Use the Azure OpenAI SDK to generate videos in Python."
+  ms.date: 03/02/2026
+  author: buzahid
+  ms.author: buzahid
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-generate-video-in-python.md)]
