@@ -4,7 +4,7 @@ As a cybersecurity architect, you determine where to deploy WAF, which rule sets
 
 ## What is Azure Web Application Firewall?
 
-Azure WAF provides centralized, cloud-native protection of web applications from common exploits and vulnerabilities. It inspects incoming HTTP/HTTPS traffic against a set of rules and can block, log, or redirect malicious requests before they reach your application. A centralized WAF simplifies security management because you patch known vulnerabilities in one place rather than securing each web application individually.
+Azure WAF provides centralized, cloud-native protection of web applications from common exploits and vulnerabilities. It inspects incoming HTTP/HTTPS traffic against a set of rules and can block, log, or redirect malicious requests before they reach your application. A centralized WAF simplifies security management because you patch known vulnerabilities in one place rather than securing each web application individually. WAF is not a standalone service. A WAF policy is its own Azure resource that you create independently, but it has no effect until you associate it with one of the supported hosting services listed below.
 
 :::image type="content" source="../media/web-application-firewall-overview.png" alt-text="Diagram that shows Web application firewall." lightbox="../media/web-application-firewall-overview.png":::
 
@@ -71,9 +71,8 @@ As an architect, consider these decisions when incorporating WAF into your appli
 
 | Scenario | Recommended WAF service |
 |---|---|
-| Single-region web applications behind a load balancer | WAF on Azure Application Gateway |
+| Single-region web applications, or applications requiring virtual network integration at the WAF layer | WAF on Azure Application Gateway |
 | Globally distributed web applications requiring edge acceleration | WAF on Azure Front Door |
-| Applications requiring virtual network integration at the WAF layer | WAF on Azure Application Gateway |
 | Containerized workloads using Kubernetes Gateway API | WAF on Application Gateway for Containers |
 | Multi-region applications needing global failover and WAF | WAF on Azure Front Door with regional Application Gateways |
 
