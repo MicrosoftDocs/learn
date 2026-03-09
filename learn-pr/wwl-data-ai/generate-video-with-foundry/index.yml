@@ -3,7 +3,7 @@ uid: learn.wwl.generate-video-with-foundry
 metadata:
   title: Generate videos with Microsoft Foundry
   description: "Learn how to generate videos from text prompts with Sora 2 in Microsoft Foundry."
-    ms.date: 03/02/2026
+  ms.date: 03/02/2026
   author: buzahid
   ms.author: buzahid
   ms.topic: module-standard-task-based # Please don't edit, used for our analytics
