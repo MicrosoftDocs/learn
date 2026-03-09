@@ -12,8 +12,10 @@ Azure WAF can be deployed with the following services:
 
 - **Azure Application Gateway:** a layer 7 load balancer for regional traffic.
 - **Azure Front Door:** a global content delivery and application acceleration service.
-- **Azure Application Gateway for Containers:** an application gateway that manages traffic to containerized workloads.
-- **Azure Content Delivery Network (CDN):** Content Delivery Network from Azure.
+- **Azure Application Gateway for Containers:** an application gateway that manages traffic to containerized workloads. WAF support for Application Gateway for Containers uses the DRS 2.1 managed rule set only and has some feature limitations compared to Application Gateway WAF.
+
+> [!NOTE]
+> WAF on Azure Content Delivery Network (CDN) is no longer accepting new customers. Use WAF on Azure Front Door for new deployments requiring global edge protection.
 
 Each deployment option shares the same core WAF engine but offers service-specific capabilities that influence your architectural decisions.
 
@@ -40,15 +42,17 @@ Azure Front Door is a global service that accelerates application delivery and p
 Key considerations for Front Door WAF vs. Application Gateway WAF:
 
 - **Global vs. regional.** Front Door WAF operates at the edge, providing protection close to the source of traffic. Application Gateway WAF operates regionally, in the Azure region where your application runs. For globally distributed applications, Front Door WAF provides lower-latency protection. For regional applications, Application Gateway WAF provides greater integration with virtual network architectures.
-- **DDoS protection.** Azure Front Door includes built-in DDoS layer 3 and 4 protection. Combined with WAF's layer 7 protection, this provides defense-in-depth against volumetric and application-layer attacks.
+- **DDoS protection.** Azure Front Door includes built-in platform-level DDoS protection at network layers 3 and 4. Combined with WAF's layer 7 protection, this provides defense-in-depth against volumetric and application-layer attacks. For origin servers with public IPs, also enable Azure DDoS Protection to guard against attacks that bypass the edge.
 - **Rate limiting.** Front Door WAF supports rate limiting rules that restrict the number of requests from a single source within a time window. This protects against brute force attacks and API abuse.
 - **Geo-filtering.** Block or allow traffic from specific countries/regions. This reduces attack surface for applications that only serve specific geographic markets.
 
-Front Door WAF policies combine custom rules and Azure-managed rule sets, processed in this order:
+> [!IMPORTANT]
+> Managed rule sets are supported only on Azure Front Door Premium and Azure Front Door (classic). Front Door Standard supports custom rules only.
 
-1. **Custom rules:** organization-specific allow or block logic, such as geo-filtering or IP restrictions. Custom rules act immediately on match.
-2. **Managed rule sets:** Azure-managed protection against common vulnerabilities, using the Default Rule Set (DRS). For managed rules, you choose between **anomaly scoring** (rule matches accumulate a score, and the request is blocked only when the total exceeds a threshold) or **per-rule blocking** (each rule match triggers immediate action). Anomaly scoring reduces false positives for complex applications where legitimate requests may trigger a single rule but not multiple rules. Per-rule blocking provides stricter enforcement but requires more tuning. Choose based on your organization's tolerance for false positives versus the sensitivity of the application.
-3. **Default rules:** catch-all rules for traffic not matching other rules.
+Front Door WAF policies combine custom rules and managed rule sets, processed in this order:
+
+1. **Custom rules:** organization-specific allow or block logic, such as geo-filtering or IP restrictions. Custom rules act immediately on match — if a request matches a custom rule, no further rules are evaluated.
+2. **Managed rule sets:** Azure-managed protection against common vulnerabilities, using the Default Rule Set (DRS). DRS versions 2.0 and later use **anomaly scoring**, where rule matches accumulate a severity-based score and the request is blocked only when the total exceeds a threshold. This reduces false positives for complex applications where a legitimate request might trigger a single low-severity rule. Earlier DRS versions (before 2.0) use per-rule blocking, where each rule match triggers immediate action.
 
 Because custom rules are evaluated first, you can define organization-specific logic without disabling baseline protections in the managed rule sets. This layered approach lets you tailor protection to your application's requirements while maintaining the Azure-managed baseline.
 
