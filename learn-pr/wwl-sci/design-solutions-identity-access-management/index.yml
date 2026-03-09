@@ -17,6 +17,7 @@ abstract: |
   - Design access strategies for SaaS, PaaS, IaaS, hybrid, and multicloud resources using identity, networking, and application controls
   - Design a solution for Microsoft Entra ID, including hybrid and multicloud environments
   - Design a solution for external identities, including B2B collaboration and customer identity
+  - Design a solution for agent identities using Microsoft Entra Agent ID
   - Design modern authentication and authorization strategies
   - Validate Conditional Access alignment with Zero Trust
   - Specify requirements for securing Active Directory Domain Services
@@ -48,6 +49,7 @@ units:
 - learn.wwl.design-solutions-identity-access-management.design-solution-entra-hybrid-multicloud
 - learn.wwl.design-solutions-identity-access-management.design-solution-external-identities
 - learn.wwl.design-solutions-identity-access-management.design-modern-authentication-authorization-strategies
+- learn.wwl.design-solutions-identity-access-management.design-solution-agent-identities
 - learn.wwl.design-solutions-identity-access-management.conditional-access-agent-id
 - learn.wwl.design-solutions-identity-access-management.align-conditional-access-zero-trust
 - learn.wwl.design-solutions-identity-access-management.specify-requirements-secure-active-directory-domain-services
