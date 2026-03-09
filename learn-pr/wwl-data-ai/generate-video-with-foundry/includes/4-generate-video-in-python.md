@@ -68,7 +68,7 @@ Video jobs can return these status values:
 | `in_progress` | Video is being generated |
 | `completed` | Video is ready for download |
 | `failed` | Generation failed (check error details) |
-| `cancelled` | Job was cancelled |
+| `cancelled` | Job was canceled |
 
 When a job fails, check `video.error` for details about what went wrong.
 

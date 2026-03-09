@@ -33,7 +33,7 @@ quiz:
       explanation: "Correct. Reference images must match the target video resolution exactly (1280x720 or 720x1280)."
     - content: "The image must contain at least one human face"
       isCorrect: false
-      explanation: "Incorrect. Reference images with human faces are currently rejected by Sora 2."
+      explanation: "Incorrect. Sora 2 currently rejects reference images with human faces."
   - content: "What is the remix feature used for in Sora 2?"
     choices:
     - content: "Combining multiple videos into one"
