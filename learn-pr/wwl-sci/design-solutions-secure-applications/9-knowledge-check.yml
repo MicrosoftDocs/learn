@@ -31,8 +31,8 @@ quiz:
     choices:
       - content: "A practice that ensures system uptime by maintaining optimal replica volumes."
         isCorrect: false
-        explanation: "DevSecOps isn't concerned with replica volumes of systems, which refers to replication strategies used in high availability deployment scenarios."
-      - content: "A security model used by developers to certify that code changes do not affect production environments."
+        explanation: "DevSecOps isn't concerned with replica volumes of systems, which refer to replication strategies used in high availability deployment scenarios."
+      - content: "A security model used by developers to certify that code changes don't affect production environments."
         isCorrect: false
         explanation: "There's no certification process involved in DevSecOps. The idea behind DevSecOps is that security mechanisms are integrated throughout the development cycle to increase the overall security posture."
       - content: "A set of principles designed to integrate security testing and evaluation into the software development lifecycle (SDLC)."
@@ -59,7 +59,7 @@ quiz:
       explanation: "Subscription keys can be passed through Azure Front Door and Application Gateway. The limitation is that they don't identify individual callers, not that they're incompatible with other Azure services."
     - content: "Because subscription keys can only authenticate requests from Azure-hosted applications."
       isCorrect: false
-      explanation: "Subscription keys can be used by any API consumer regardless of where the application is hosted. The issue is that they are shared secrets that don't provide individual caller identification."
+      explanation: "Subscription keys can be used by any API consumer regardless of where the application is hosted. The issue is that they're shared secrets that don't provide individual caller identification."
   - content: "What type of threats is the Azure web application firewall designed to protect against?"
     choices:
     - content: "Server-level attacks such as shared hosting violations"
