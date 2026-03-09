@@ -1,3 +1,5 @@
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=23dc491a-a896-40ed-83b6-984f46a7e651]
+
 When you work on data engineering projects, you need a systematic way to define, package, and deploy your Databricks resources across environments. **Databricks Asset Bundles (DABs)** provide an **infrastructure-as-code** approach that lets you describe jobs, pipelines, and other resources in YAML configuration files. By configuring and customizing these bundles, you can **automate deployments** and ensure consistency between development and production workspaces.
 
 :::image type="content" source="../media/5-configure-package-databricks-asset-bundles.png" alt-text="Diagram explaining Databricks asset bundles." border="false" lightbox="../media/5-configure-package-databricks-asset-bundles.png":::

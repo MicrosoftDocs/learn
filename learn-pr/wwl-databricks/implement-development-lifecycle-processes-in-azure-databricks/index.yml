@@ -3,7 +3,7 @@ uid: learn.wwl.implement-development-lifecycle-processes-azure-databricks
 metadata:
   title: Implement Development Lifecycle Processes in Azure Databricks
   description: Learn how to implement development lifecycle processes in Azure Databricks, including Git version control, branching strategies, testing approaches, and Databricks Asset Bundle deployment using the CLI.
-  ms.date: 12/07/2025
+  ms.date: 03/09/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: module
