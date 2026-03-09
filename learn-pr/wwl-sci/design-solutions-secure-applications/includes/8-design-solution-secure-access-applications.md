@@ -4,7 +4,7 @@ As a cybersecurity architect, you determine where to deploy WAF, which rule sets
 
 ## What is Azure Web Application Firewall?
 
-Azure WAF provides centralized, cloud-native protection of web applications from common exploits and vulnerabilities. It inspects incoming HTTP/HTTPS traffic against a set of rules and can block, log, or redirect malicious requests before they reach your application. A centralized WAF simplifies security management because you patch known vulnerabilities in one place rather than securing each web application individually. WAF is not a standalone service. A WAF policy is its own Azure resource that you create independently, but it has no effect until you associate it with one of the supported hosting services listed below.
+Azure WAF provides centralized, cloud-native protection of web applications from common exploits and vulnerabilities. It inspects incoming HTTP/HTTPS traffic against a set of rules and can block, log, or redirect malicious requests before they reach your application. A centralized WAF simplifies security management because you patch known vulnerabilities in one place rather than securing each web application individually. While WAF is an Azure-native security service, it doesn't operate as a standalone service. A WAF policy is its own Azure resource that you create independently, but it has no effect until you associate it with one of the supported hosting services listed below.
 
 :::image type="content" source="../media/web-application-firewall-overview.png" alt-text="Diagram that shows Web application firewall." lightbox="../media/web-application-firewall-overview.png":::
 
@@ -50,7 +50,7 @@ Key considerations for WAF on Azure Front Door vs. WAF on Azure Application Gate
 
 WAF on Azure Front Door policies combine custom rules and managed rule sets, processed in this order:
 
-1. **Custom rules:** organization-specific allow or block logic, such as geo-filtering or IP restrictions. Custom rules act immediately on match — if a request matches a custom rule, no further rules are evaluated.
+1. **Custom rules:** organization-specific allow or block logic, such as geo-filtering or IP restrictions. Custom rules act immediately on match—if a request matches a custom rule, no further rules are evaluated.
 2. **Managed rule sets:** Azure-managed protection against common vulnerabilities, using the Default Rule Set (DRS). DRS versions 2.0 and later use **anomaly scoring**, where rule matches accumulate a severity-based score and the request is blocked only when the total exceeds a threshold. This reduces false positives for complex applications where a legitimate request might trigger a single low-severity rule. Earlier DRS versions (before 2.0) use per-rule blocking, where each rule match triggers immediate action.
 
 Because custom rules are evaluated first, you can define organization-specific logic without disabling baseline protections in the managed rule sets. This layered approach lets you tailor protection to your application's requirements while maintaining the Azure-managed baseline.
@@ -61,7 +61,7 @@ All three deployment options share the same core WAF engine and inspect HTTP/HTT
 
 - **WAF on Azure Application Gateway** inspects traffic regionally, inside your Azure virtual network. It supports the widest range of managed rule sets (CRS 3.x and DRS 2.x), rate-limit custom rules, bot protection, and per-site or per-URI policies. Choose Application Gateway when you need virtual network integration or when your application runs in a single region.
 - **WAF on Azure Front Door** inspects traffic at global edge locations before it reaches your origin, providing lower-latency block decisions for distributed users. Managed rule sets and bot protection require the Premium tier; Standard supports custom rules only. Rate limiting is available on both tiers.
-- **WAF on Application Gateway for Containers** targets containerized workloads managed through Kubernetes Gateway API. It supports DRS 2.1 and Bot Manager 1.0/1.1, but has feature limitations — no custom block responses, no X-Forwarded-For in custom rules, and no JavaScript/Captcha challenge actions for bot rules.
+- **WAF on Application Gateway for Containers** targets containerized workloads managed through Kubernetes Gateway API. It supports DRS 2.1 and Bot Manager 1.0/1.1, but has feature limitations—no custom block responses, no X-Forwarded-For in custom rules, and no JavaScript/Captcha challenge actions for bot rules.
 
 ## Designing a WAF strategy
 
