@@ -10,7 +10,7 @@ The entity type overview shows three sections for the selected entity type.
 
 **Entity instances table**—the list of actual instances populated from your bound data, showing RoomId, RoomNumber, DepartmentId, and RoomType for each room. Selecting any instance opens its detail view, showing that room's property values and its connections to other entities.
 
-:::image type="content" source="../media/preview-experience.png" alt-text="Screenshot showing the entity type overview for Room showing the relationship graph with VitalSignEquipment, Department, and Patient connections, property charts for RoomNumber, DepartmentId, and RoomType, and an entity instances table listing 10 rooms." lightbox="../media/preview-experience.png":::
+:::image type="content" source="../media/preview-experience.png" alt-text="Screenshot of Room entity overview with relationship graph, property charts, and entity instances table." lightbox="../media/preview-experience.png":::
 
 > [!NOTE]
 > When you first open the preview experience, you'll see an **"Updating your ontology"** message while the system processes your data in the background. After 1-2 minutes, refresh your browser to display the entity type overview.

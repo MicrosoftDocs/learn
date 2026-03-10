@@ -8,7 +8,7 @@ Power BI semantic models organize data for business intelligence—they define t
 
 With this approach, you select an existing Direct Lake semantic model and Fabric IQ automatically generates entity types, properties, and relationship types. Each table becomes an entity type, columns become properties, and model relationships become relationship types.
 
-:::image type="content" source="../media/power-bi-semantic-model.png" alt-text="Screenshot of the Semantic model canvas showing five tables—vitalsignequipment, patients, rooms, departments, and hospitals—with relationship connectors between them." lightbox="../media/power-bi-semantic-model.png":::
+:::image type="content" source="../media/power-bi-semantic-model.png" alt-text="Screenshot of Semantic model canvas with five tables and relationship connectors between them." lightbox="../media/power-bi-semantic-model.png":::
 
 This automation saves significant setup time. Within minutes, you have working ontology structure ready to refine into business vocabulary.
 

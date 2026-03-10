@@ -30,7 +30,7 @@ For a *contains* relationship between Hospital and Department, the source table 
 
 After selecting the table, select a **Source column** for each entity type—the column whose values match that entity type's key. For Hospital, select HospitalId. For Department, select DepartmentId, as shown below.
 
-:::image type="content" source="../media/relationship-configuration.png" alt-text="Screenshot showing the Relationship configuration pane showing LamnaHealthcareLH as the lakehouse, departments as the source table, Hospital with HospitalId mapped to its key, and Department with DepartmentId mapped to its key." lightbox="../media/relationship-configuration.png":::
+:::image type="content" source="../media/relationship-configuration.png" alt-text="Screenshot of Relationship configuration with departments table and HospitalId and DepartmentId mapped to entity keys." lightbox="../media/relationship-configuration.png":::
 
 Every row with values in both columns creates one relationship instance connecting those specific entities.
 

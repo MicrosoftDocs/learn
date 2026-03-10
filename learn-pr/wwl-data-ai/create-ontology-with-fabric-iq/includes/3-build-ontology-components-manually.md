@@ -20,7 +20,7 @@ To create an entity type, select **Add entity type** from the ontology ribbon. Y
 
 A hospital administrator thinks "Hospital"—not a technical table name. A care coordinator thinks "Patient"—not a database record. Choose names that make sense when spoken aloud: "Hospital contains Department" or "Patient assigned to Room."
 
-:::image type="content" source="../media/create-entity.png" alt-text="Screenshot of the ontology editor showing the Add entity type button in the ribbon at the top of the screen, with an empty canvas below and Entity Types pane on the left." lightbox="../media/create-entity.png":::
+:::image type="content" source="../media/create-entity.png" alt-text="Screenshot of ontology editor with Add entity type button in ribbon and Entity Types pane on left." lightbox="../media/create-entity.png":::
 
 The ribbon at the top contains all ontology actions. The Entity Types pane on the left lists each entity type as you create them, and the canvas in the center is where you see entity types and relationships laid out visually.
 
@@ -48,7 +48,7 @@ For each property, you make three critical decisions:
 
 You add properties for the Hospital entity type—HospitalName (string, static), City (string, static), State (string, static), and HospitalId (integer, static)—as shown in the image below. You select **Save** to create the properties.
 
-:::image type="content" source="../media/hospital-properties.png" alt-text="Screenshot of the Add properties dialog showing filled table with four rows: HospitalName (string, static), City (string, static), State (string, static), HospitalId (integer, static)." lightbox="../media/hospital-properties.png":::
+:::image type="content" source="../media/hospital-properties.png" alt-text="Screenshot of Add properties dialog with Hospital properties: HospitalName, City, State, and HospitalId." lightbox="../media/hospital-properties.png":::
 
 Each row in the dialog becomes a property on the Hospital entity type. Once saved, the properties appear in the Entity type configuration pane on the right.
 
@@ -62,7 +62,7 @@ To configure the entity type key, select **Add entity type key** in the Entity t
 
 Keys can only use string or integer properties—other data types don't work as identifiers. Keys are required before you can bind the entity type to data sources. Without a key, the system can't create instances from your source data.
 
-:::image type="content" source="../media/configured-properties.png" alt-text="Screenshot of the Entity type configuration pane showing Hospital entity type with Properties tab selected, listing properties HospitalName, City, State, HospitalId, and Entity type key section at bottom showing HospitalId configured as the key." lightbox="../media/configured-properties.png":::
+:::image type="content" source="../media/configured-properties.png" alt-text="Screenshot of Hospital entity type configuration showing properties list and HospitalId configured as the key." lightbox="../media/configured-properties.png":::
 
 You repeat this pattern for each business concept in your domain, for example, Department, Room, Patient. Each entity type gets business-friendly properties, appropriate data types, and a key, for instance,  identification.
 
@@ -78,7 +78,7 @@ To create a relationship type, select an entity type on the canvas (the visual w
 
 For a relationship from Hospital to Department, choose Hospital as the source entity and Department as the target entity. The direction matters—"Hospital contains Department" describes how hospitals organize, while "Department belongs to Hospital" describes the reverse perspective. Choose the direction that matches how people ask questions about your business.
 
-:::image type="content" source="../media/relationship-structure.png" alt-text="Screenshot of the Add relationship type dialog showing Source entity dropdown with Hospital selected, Target entity dropdown with Department selected, Name field with contains entered, and Add button at bottom." lightbox="../media/relationship-structure.png":::
+:::image type="content" source="../media/relationship-structure.png" alt-text="Screenshot of Add relationship dialog with Hospital as source and Department as target." lightbox="../media/relationship-structure.png":::
 
 Name the relationship type with business vocabulary that reads naturally: "Hospital contains Department" makes sense when you read source, relationship name, target together. Other examples: "Department has rooms" for Department to Room, or "Room has Patient" for Room to Patient. The name should describe what the relationship means, not just that a relationship exists.
 

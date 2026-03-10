@@ -75,7 +75,7 @@ To configure a time series data binding, follow the same steps as a static bindi
 
 Select **Timeseries** as the binding type, then choose the timestamp column—in this case, **Timestamp**. The interface then separates properties into two groups: **Static** (for the linking key, EquipmentId) and **Timeseries** (for the measured values, such as HeartRate and OxygenSaturation), as shown below.
 
-:::image type="content" source="../media/time-series-binding.png" alt-text="Screenshot showing the Configure data binding screen with Timeseries selected as the binding type, Timestamp chosen as the source data timestamp column, and properties divided into Static and Timeseries sections." lightbox="../media/time-series-binding.png":::
+:::image type="content" source="../media/time-series-binding.png" alt-text="Screenshot of Configure data binding with Timeseries type and properties divided into Static and Timeseries sections." lightbox="../media/time-series-binding.png":::
 
 The static property in a time series binding is the linking key—not a new static data binding, but the column that connects each reading back to its equipment entity. The timeseries properties are the measurements that update with each new reading.
 
