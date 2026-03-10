@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.analyze-images-with-content-understanding.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: "Get started with Content Understanding in Microsoft Foundry."
+  ms.date: 03/04/2026
+  author: buzahid
+  ms.author: buzahid
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/1-introduction.md)]
