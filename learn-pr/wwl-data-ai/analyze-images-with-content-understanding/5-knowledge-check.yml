@@ -12,37 +12,37 @@ durationInMinutes: 3
 content: |
 quiz:
   questions:
-  - content: "What video durations does Sora 2 support?"
+  - content: "What is the purpose of grounding in Content Understanding?"
     choices:
-    - content: "1 to 20 seconds in 1-second increments"
+    - content: "To connect Content Understanding to Azure storage"
       isCorrect: false
-      explanation: "Incorrect. Sora 2 supports specific duration values, not a continuous range."
-    - content: "4, 8, or 12 seconds"
+      explanation: "Incorrect. Grounding identifies where in the content each extracted value was found."
+    - content: "To identify the specific regions in content where each value was extracted"
       isCorrect: true
-      explanation: "Correct. Sora 2 supports video durations of 4, 8, or 12 seconds."
-    - content: "Any duration up to 60 seconds"
+      explanation: "Correct. Grounding allows users to trace extracted values back to their origin in the source content for verification."
+    - content: "To filter out harmful content from images"
       isCorrect: false
-      explanation: "Incorrect. Sora 2 has specific supported duration values."
-  - content: "What is required when using a reference image with Sora 2?"
+      explanation: "Incorrect. Content filtering is handled separately by Azure AI Content Safety, not by grounding."
+  - content: "What does a confidence score of 0.95 indicate for an extracted field?"
     choices:
-    - content: "The image must be smaller than 1 MB"
+    - content: "The extraction failed and needs manual review"
       isCorrect: false
-      explanation: "Incorrect. The key requirement is that the image resolution must match the target video size."
-    - content: "The image resolution must match the target video size"
+      explanation: "Incorrect. A score of 0.95 is high confidence, indicating the value can be trusted."
+    - content: "The value can be trusted for automated processing"
       isCorrect: true
-      explanation: "Correct. Reference images must match the target video resolution exactly (1280x720 or 720x1280)."
-    - content: "The image must contain at least one human face"
+      explanation: "Correct. High confidence scores (0.9+) indicate accurate data extraction that can be used in automated workflows."
+    - content: "The field was classified rather than extracted"
       isCorrect: false
-      explanation: "Incorrect. Reference images with human faces are currently rejected by Sora 2."
-  - content: "What is the remix feature used for in Sora 2?"
+      explanation: "Incorrect. Confidence scores indicate reliability, not the extraction method used."
+  - content: "Which prebuilt analyzer would you use to extract vendor names and item totals from a purchase receipt?"
     choices:
-    - content: "Combining multiple videos into one"
+    - content: "prebuilt-image"
       isCorrect: false
-      explanation: "Incorrect. Remix modifies an existing video while preserving its structure."
-    - content: "Making targeted adjustments to an existing video without regenerating from scratch"
+      explanation: "Incorrect. While prebuilt-image provides general analysis, prebuilt-receipt is optimized for receipt extraction."
+    - content: "prebuilt-invoice"
+      isCorrect: false
+      explanation: "Incorrect. prebuilt-invoice is designed for invoices, not receipts."
+    - content: "prebuilt-receipt"
       isCorrect: true
-      explanation: "Correct. The remix feature lets you modify specific aspects while preserving scene transitions, visual layout, and overall structure."
-    - content: "Adding background music to generated videos"
-      isCorrect: false
-      explanation: "Incorrect. Remix is for making visual adjustments to existing videos."
+      explanation: "Correct. The prebuilt-receipt analyzer is optimized to extract vendor names, items, totals, and dates from receipt images."
 
