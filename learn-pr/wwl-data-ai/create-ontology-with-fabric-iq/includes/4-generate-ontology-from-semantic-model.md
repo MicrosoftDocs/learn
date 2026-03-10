@@ -30,8 +30,8 @@ Generation handles several tasks automatically, saving significant manual effort
 
 After generation, complete these tasks to finalize your ontology:
 
-1. **Review entity type keys** — Verify each entity type has a key defined. Keys are inferred from the semantic model's relationship structure, and most are configured automatically, but you should verify they're all present.
+- **Review entity type keys** — Verify each entity type has a key defined. Keys are inferred from the semantic model's relationship structure, and most are configured automatically, but you should verify they're all present.
 
-2. **Verify and configure relationship types** — Relationship bindings are created based on the semantic model structure. Depending on how the model defines relationships, some bindings are configured automatically while others require manual configuration to make them queryable.
+- **Verify and configure relationship types** — Relationship bindings are created based on the semantic model structure. Depending on how the model defines relationships, some bindings are configured automatically while others require manual configuration to make them queryable.
 
-3. **Add time series bindings for streaming data** — Static entity bindings from the lakehouse are configured automatically. For entity types that need real-time streaming data, add time series bindings to connect eventhouse data sources.
+- **Add time series bindings for streaming data** — Static entity bindings from the lakehouse are configured automatically. For entity types that need real-time streaming data, add time series bindings to connect eventhouse data sources.
