@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.analyze-images-with-content-understanding.what-is-content-understanding
+title: What is Content Understanding?
+metadata:
+  title: What is Content Understanding?
+  description: "Learn about Azure Content Understanding and how it can analyze images to extract structured data."
+  ms.date: 03/04/2026
+  author: buzahid
+  ms.author: buzahid
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-what-is-content-understanding.md)]
