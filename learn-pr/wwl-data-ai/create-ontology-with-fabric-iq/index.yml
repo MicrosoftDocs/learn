@@ -1,0 +1,47 @@
+### YamlMime:Module
+uid: learn.wwl.create-ontology-with-fabric-iq
+metadata:
+  title: Create an ontology (preview) with Fabric IQ
+  description: Learn how to create ontologies in Fabric IQ by building manually or generating from Power BI semantic models, then bind ontology definitions to lakehouse tables and eventhouse streams.
+  ms.date: 02/27/2026
+  author: theresa-i
+  ms.author: theresai
+  ms.topic: module
+  ms.service: fabric
+  ai-usage: ai-generated
+title: Create an ontology (preview) with Fabric IQ
+summary: Ontologies in Fabric IQ transform your data into a business vocabulary that everyone can understand. In this module, you'll learn two ways to create ontologies - building manually to understand the core components, or generating automatically from Power BI semantic models to accelerate development. You'll practice both approaches and learn how to connect your ontology to data sources in OneLake, including lakehouse tables and eventhouse streams.
+abstract: |
+  By the end of this module, you'll be able to:
+  - Evaluate two approaches for creating an ontology in Fabric IQ
+  - Build an ontology manually by working with entity types, properties, keys, and relationships
+  - Generate an ontology from a Power BI semantic model
+  - Connect an ontology to data sources and preview the ontology
+prerequisites: |
+  Before starting this module, you should have:
+  - Familiarity with Power BI semantic models
+  - Understanding of relational database concepts such as tables, columns, and relationships
+  - Ability to navigate Microsoft Fabric workspaces and create items
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- data-analyst
+products:
+- fabric
+subjects:
+- data-analytics
+units:
+- learn.wwl.create-ontology-with-fabric-iq.introduction
+- learn.wwl.create-ontology-with-fabric-iq.evaluate-ontology-creation-approaches
+- learn.wwl.create-ontology-with-fabric-iq.build-ontology-components-manually
+- learn.wwl.create-ontology-with-fabric-iq.generate-ontology-from-semantic-model
+- learn.wwl.create-ontology-with-fabric-iq.connect-ontology-to-data
+- learn.wwl.create-ontology-with-fabric-iq.configure-relationships
+- learn.wwl.create-ontology-with-fabric-iq.preview-ontology
+- learn.wwl.create-ontology-with-fabric-iq.exercise-build-ontology-manually
+- learn.wwl.create-ontology-with-fabric-iq.exercise-build-ontology-semantic-model
+- learn.wwl.create-ontology-with-fabric-iq.knowledge-check
+- learn.wwl.create-ontology-with-fabric-iq.summary
+badge:
+  uid: learn.wwl.create-ontology-with-fabric-iq.badge
