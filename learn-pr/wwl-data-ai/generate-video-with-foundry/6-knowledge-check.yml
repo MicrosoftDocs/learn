@@ -1,0 +1,48 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.generate-video-with-foundry.knowledge-check
+title: Module assessment
+metadata:
+  title: Module assessment
+  description: "Check your learning on video generation with Sora 2."
+  ms.date: 03/02/2026
+  author: buzahid
+  ms.author: buzahid
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+quiz:
+  questions:
+  - content: "What video durations does Sora 2 support?"
+    choices:
+    - content: "1 to 20 seconds in 1-second increments"
+      isCorrect: false
+      explanation: "Incorrect. Sora 2 supports specific duration values, not a continuous range."
+    - content: "4, 8, or 12 seconds"
+      isCorrect: true
+      explanation: "Correct. Sora 2 supports video durations of 4, 8, or 12 seconds."
+    - content: "Any duration up to 60 seconds"
+      isCorrect: false
+      explanation: "Incorrect. Sora 2 has specific supported duration values."
+  - content: "What is required when using a reference image with Sora 2?"
+    choices:
+    - content: "The image must be smaller than 1 MB"
+      isCorrect: false
+      explanation: "Incorrect. The key requirement is that the image resolution must match the target video size."
+    - content: "The image resolution must match the target video size"
+      isCorrect: true
+      explanation: "Correct. Reference images must match the target video resolution exactly (1280x720 or 720x1280)."
+    - content: "The image must contain at least one human face"
+      isCorrect: false
+      explanation: "Incorrect. Sora 2 currently rejects reference images with human faces."
+  - content: "What is the remix feature used for in Sora 2?"
+    choices:
+    - content: "Combining multiple videos into one"
+      isCorrect: false
+      explanation: "Incorrect. Remix modifies an existing video while preserving its structure."
+    - content: "Making targeted adjustments to an existing video without regenerating from scratch"
+      isCorrect: true
+      explanation: "Correct. The remix feature lets you modify specific aspects while preserving scene transitions, visual layout, and overall structure."
+    - content: "Adding background music to generated videos"
+      isCorrect: false
+      explanation: "Incorrect. Remix is for making visual adjustments to existing videos."
+

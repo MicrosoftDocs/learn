@@ -1,0 +1,60 @@
+### YamlMime:Module
+uid: learn.wwl.manage-ado-mcp-server
+metadata:
+  title: Manage Azure DevOps By Using MCP Server
+  description: "Use Azure DevOps MCP Server with GitHub Copilot to manage projects, work items, pull requests, and pipelines through natural language workflows."
+  ms.date: 02/26/2026
+  author: petender
+  ms.author: petender
+  ms.topic: module
+  ms.service: azure-devops
+  ai-usage: ai-assisted
+title: Manage Azure DevOps by using MCP Server
+summary: This module explains how to set up Azure DevOps MCP Server in Visual Studio Code, authenticate and authorize tool access, and perform common Azure DevOps operations with natural language prompts while preserving governance and quality.
+abstract: |
+  By the end of this module, you're able to:
+
+  - Explain the Azure DevOps MCP Server interaction model.
+  - Configure Azure DevOps MCP Server in Visual Studio Code.
+  - Use MCP tools to query and update work items.
+  - Perform pull request and pipeline operations through GitHub Copilot.
+  - Apply governance and safety controls for AI-assisted DevOps workflows.
+prerequisites: |
+  - Familiarity with Azure DevOps organizations, projects, and repositories
+  - Familiarity with GitHub Copilot Chat in Visual Studio Code
+  - Access to an Azure DevOps project with Contributor permissions
+  - Node.js 18 or later and Visual Studio Code installed
+iconUrl: /training/achievements/azure-devops/get-started-with-devops.svg
+levels:
+  - intermediate
+roles:
+  - administrator
+  - developer
+  - devops-engineer
+  - technology-manager
+products:
+  - azure
+  - azure-devops
+  - azure-boards
+  - azure-pipelines
+  - azure-repos
+  - github
+subjects:
+  - devops
+units:
+  - learn.wwl.manage-ado-mcp-server.introduction
+  - learn.wwl.manage-ado-mcp-server.understand-azure-devops-mcp-server
+  - learn.wwl.manage-ado-mcp-server.install-configure-azure-devops-mcp-vscode
+  - learn.wwl.manage-ado-mcp-server.authenticate-validate-tools
+  - learn.wwl.manage-ado-mcp-server.explore-project-sprint-context
+  - learn.wwl.manage-ado-mcp-server.create-link-work-items
+  - learn.wwl.manage-ado-mcp-server.update-work-items-batch-operations
+  - learn.wwl.manage-ado-mcp-server.manage-pull-requests
+  - learn.wwl.manage-ado-mcp-server.run-monitor-pipelines
+  - learn.wwl.manage-ado-mcp-server.inspect-build-logs
+  - learn.wwl.manage-ado-mcp-server.apply-governance-security-practices
+  - learn.wwl.manage-ado-mcp-server.guided-exercise-manage-ado-mcp-server
+  - learn.wwl.manage-ado-mcp-server.knowledge-check
+  - learn.wwl.manage-ado-mcp-server.summary
+badge:
+  uid: learn.wwl.manage-ado-mcp-server.badge

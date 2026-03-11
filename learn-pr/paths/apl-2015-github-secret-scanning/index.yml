@@ -1,0 +1,31 @@
+### YamlMime:LearningPath
+uid: learn.wwl.apl-2015-github-secret-scanning
+hidden: true
+metadata:
+  title: Resolve GitHub Secret Scanning Alerts using GitHub Copilot Agent
+  description: Learn how to resolve GitHub Secret Scanning alerts using GitHub Copilot's Ask and Agent modes. The training focuses on detecting hard-coded secrets in source code and implementing secure configuration patterns to replace them.
+  ms.date: 03/05/2026
+  author: chrishowd
+  ms.author: cahowd
+  ms.topic: learning-path
+title: Resolve GitHub Secret Scanning alerts using GitHub Copilot Agent
+prerequisites: |
+  -   An active subscription for GitHub Copilot is required for either a personal GitHub account or a GitHub account managed by an organization or enterprise.
+  -   One or more years of code development experience is recommended.
+  -   Some experience developing C# applications in Visual Studio Code with the C# Dev Kit extension is recommended.
+summary: |
+  Learn how to resolve GitHub Secret Scanning alerts using GitHub Copilot's Ask and Agent modes. The training focuses on detecting hard-coded secrets in source code and implementing secure configuration patterns to replace them.
+iconUrl: /training/achievements/generic-trophy.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- github
+subjects:
+- app-development
+- productivity
+modules:
+- learn.resolve-github-secret-scanning-alerts-github-copilot-agent
+trophy:
+  uid: learn.wwl.apl-2015-github-secret-scanning.trophy

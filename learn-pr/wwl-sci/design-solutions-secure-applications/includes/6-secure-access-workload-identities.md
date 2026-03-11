@@ -50,15 +50,15 @@ Assigning identities to workloads isn't sufficient. You need to secure those ide
 
 ### Conditional Access for workload identities
 
-Apply Conditional Access policies to service principals owned by your organization. For example, restrict workload identity sign-ins to specific named locations or require risk-based authentication. Continuous access evaluation (CAE) for workload identities enables real-time enforcement of these policies, revoking access immediately when conditions change rather than waiting for token expiration.
+Apply Conditional Access policies to single-tenant service principals owned by your organization. Third-party SaaS apps, multitenant apps, and managed identities are not covered by Conditional Access policies for workload identities. Supported policies include blocking service principals from outside known public IP ranges and blocking access based on risk detected by Microsoft Entra ID Protection. Because workload identities can't perform multifactor authentication, the only available grant control is **Block access**. Continuous access evaluation (CAE) for workload identities enables real-time enforcement of Conditional Access location and risk policies. CAE currently applies only to access requests sent to Microsoft Graph as a resource provider and does not support managed identities.
 
 ### Microsoft Entra ID Protection for workload identities
 
-Detect risks to workload identities, including leaked credentials and anomalous sign-in patterns. Identity Protection applies machine learning models to detect suspicious activity for service principals, such as sign-ins from unexpected locations, impossible travel patterns, or access to resources outside normal behavior patterns.
+Detect risks to workload identities, including leaked credentials, suspicious sign-ins, anomalous service principal activity, malicious or suspicious applications, and suspicious API traffic. Identity Protection applies machine learning models to detect suspicious activity for service principals, such as sign-ins with unusual properties (unfamiliar IP address, target resource, user agent, or credential type), anomalous changes to the directory, and abnormal Graph API traffic or directory enumeration. Managed identities are not currently in scope for ID Protection risk detections.
 
 ### Access reviews for service principals
 
-Review service principals and managed identities that are assigned to privileged Microsoft Entra directory roles. Access reviews, created through Privileged Identity Management (PIM), verify whether these workload identities still require their role assignments. Reviewers can confirm, remove, or adjust access to ensure that service principals don't retain unnecessary privileges. This capability requires Microsoft Entra Workload Identities Premium licensing in addition to Microsoft Entra ID P2 or Microsoft Entra ID Governance licensing.
+Review service principals and managed identities that are assigned to privileged Microsoft Entra directory roles or Azure resource roles. In Privileged Identity Management (PIM), when you create an access review for a role, you can select **Service Principals** as the user scope to review workload identities that have direct access to that role. Reviewers can then confirm, remove, or adjust access to ensure that service principals don't retain unnecessary privileges. This capability requires Microsoft Entra Workload Identities Premium licensing in addition to Microsoft Entra ID P2 or Microsoft Entra ID Governance licensing.
 
 ## Architect design considerations
 

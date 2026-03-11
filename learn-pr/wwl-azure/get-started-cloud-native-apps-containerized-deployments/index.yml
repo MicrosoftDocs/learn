@@ -23,7 +23,7 @@ prerequisites: |
   -   Knowledge of containers: Understanding the concept of containers, their benefits, and how they differ from traditional apps and virtual machines.
   -   Familiarity with container orchestration: Basic understanding of container orchestration platforms like Kubernetes and their role in managing containerized applications.
   -   Experience with Azure: Some familiarity with Microsoft Azure and its core container services, such as Azure Container Registry, Azure Kubernetes Service, and Azure Container Apps.
-iconUrl: /training/achievements/generic-badge.svg
+iconUrl: /training/achievements/azure-container-apps-module.svg
 levels:
 - intermediate
 roles:
@@ -41,4 +41,4 @@ units:
 - learn.wwl.get-started-cloud-native-apps-containerized-deployments.summary
 badge:
   uid: learn.wwl.get-started-cloud-native-apps-containerized-deployments.badge
-
+

@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.design-solutions-secure-privileged-access.design-identity-governance-solutions
-title: Evaluate the security and governance of Microsoft Entra ID solutions
+title: Evaluate security and governance with Microsoft Entra ID solutions
 metadata:
-  title: Evaluate the security and governance of Microsoft Entra ID solutions
-  description: "Learn to evaluate the security and governance of Microsoft Entra ID, including PIM, entitlement management, and access reviews for the SC-100 certification."
-  ms.date: 01/27/2026
+  title: Evaluate security and governance with Microsoft Entra ID solutions
+  description: "Learn to evaluate security and governance of solutions with Microsoft Entra ID, including PIM, entitlement management, and access reviews."
+  ms.date: 03/04/2026
   author: ceperezb
   ms.author: ceperezb
   ms.topic: unit
   ms.custom: sfi-ga-nochange
-durationInMinutes: 7
+durationInMinutes: 8
 content: |
   [!include[](includes/3-design-identity-governance-solutions.md)]

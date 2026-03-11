@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.generate-video-with-foundry.exercise
+title: Exercise - Generate video with Sora 2 in Microsoft Foundry
+metadata:
+  title: Exercise - Generate video with Sora 2 in Microsoft Foundry
+  description: "Get practical experience with generating videos using Sora 2 in Microsoft Foundry."
+  ms.date: 03/02/2026
+  author: buzahid
+  ms.author: buzahid
+  ms.topic: unit
+durationInMinutes: 30
+content: |
+  [!include[](includes/5-exercise.md)]

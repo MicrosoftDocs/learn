@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-ado-mcp-server.create-link-work-items
+title: Create and link work items
+metadata:
+  title: Create And Link Work Items
+  description: "Create and link work items"
+  ms.date: 02/27/2026
+  author: wwlpublish
+  ms.author: petender
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/6-create-link-work-items.md)]

@@ -1,3 +1,5 @@
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=37d8134b-cfef-4d1b-bd83-aacb9cdbae26]
+
 When you configure job triggers in Lakeflow Jobs, you enable automated pipeline execution based on data events rather than fixed schedules. Your jobs can respond to changes in source tables, new file arrivals, or run continuously to process data as it becomes available.
 
 In this unit, you learn how to configure event-based triggers that automate your data workflows.

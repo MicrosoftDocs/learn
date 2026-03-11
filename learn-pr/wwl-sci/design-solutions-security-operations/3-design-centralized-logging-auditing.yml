@@ -4,10 +4,10 @@ title: Design solutions to support centralized logging and auditing
 metadata:
   title: Design solutions to support centralized logging and auditing 
   description: "SC-100 preparatory unit on the topic: design centralized logging and auditing."
-  ms.date: 02/02/2026
+  ms.date: 03/06/2026
   author: ceperezb
   ms.author: ceperezb
   ms.topic: unit
-durationInMinutes: 20
+durationInMinutes: 19
 content: |
   [!include[](includes/3-design-centralized-logging-auditing.md)]

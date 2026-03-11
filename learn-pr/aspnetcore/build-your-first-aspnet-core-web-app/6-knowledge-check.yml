@@ -6,7 +6,7 @@ metadata:
   description: Check your knowledge about creating and running an ASP.NET Core app using the .NET CLI.
   ms.date: 9/9/2024
   author: wadepickett
-  ms.author: wpickett
+  ms.author: daroth
   ms.topic: unit
   module_assessment: true
 durationInMinutes: 3

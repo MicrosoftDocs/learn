@@ -6,7 +6,8 @@ You've learned how to:
 -   Design and implement standards and practices for securing the application development process
 -   Design a solution for workload identity to authenticate and access Azure cloud resources
 -   Design a solution for API management and security
--   Design a solution for secure access to applications
+-   Design solutions that secure applications by using Azure Web Application Firewall (WAF)
+-   Map technologies to application security requirements
 
 ## Learn more
 
