@@ -1,47 +1,38 @@
-To develop a client app that engages in audio-based chats with a multimodal model, you can use the same basic techniques used for text-based chats. You require a connection to the endpoint where the model is deployed, and you use that endpoint to submit prompts that consists of messages to the model and process the responses.
+Speech transcription, or *speech-to-text*, involves submitting audio content to a model, which responds with a text-based transcript of the speech in the audio source.
 
-The key difference is that prompts for an audio-based chat include multi-part user messages that contain both a *text* content item and an *audio* content item.
+Models that support speech-to-text operations include:
 
-![Diagram of a multi-part prompt being submitted to a model.](../media/multi-part-prompt.png)
+- **gpt-4o-transcribe**
+- **gpt-4o-mini-transcribe**
+- **gpt-4o-transcribe-diarize**
 
-The JSON representation of a prompt that includes a multi-part user message looks something like this:
+> [!NOTE]
+> Model availability varies by region. Review the **[model regional availability](/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure?pivots=azure-openai#model-summary-table-and-region-availability&azure-portal=true)** table in the Microsoft Foundry documentation.
 
-```json
-{ 
-    "messages": [ 
-        { "role": "system", "content": "You are a helpful assistant." }, 
-        { "role": "user", "content": [  
-            { 
-                "type": "text", 
-                "text": "Transcribe this audio:" 
-            },
-            { 
-                "type": "audio_url",
-                "audio_url": {
-                    "url": "https://....."
-                }
-            }
-        ] } 
-    ]
-} 
+## Using a speech-to-text model
+
+To use a speech-to-text model in your own application, you can use the **AzureOpenAI** client in the OpenAI SDK to connect to the endpoint for your Microsoft Foundry resource, and upload the contents of an audio file to the model for transcription.
+
+```python
+from openai import AzureOpenAI
+from pathlib import Path
+
+client = AzureOpenAI(
+    azure_endpoint=YOUR_FOUNDRY_ENDPOINT,
+    api_key=YOUR_FOUNDRY_KEY,
+    api_version="2025-03-01-preview"
+)
+
+# Get the audio file
+file_path = Path("speech.mp3")
+audio_file = open(file_path, "rb")
+
+# Use the model to transcribe the audio file
+transcription = client.audio.transcriptions.create(
+    model=YOUR_MODEL_DEPLOYMENT,
+    file=audio_file,
+    response_format="text"
+)
+
+print(transcription)
 ```
-
-The audio content item can be:
-
-- A URL to an audio file in a web site.
-- Binary audio data
-
-When using binary data to submit a local audio file, the **audio_url** content takes the form of a base64 encoded value in a data URL format:
-
-```json
-{
-    "type": "audio_url",
-    "audio_url": {
-       "url": "data:audio/mp3;base64,<binary_audio_data>"
-    }
-}
-```
-
-Depending on the model type, and where you deployed it, you can use Microsoft Azure AI Model Inference or OpenAI APIs to submit audio-based prompts. These libraries also provide language-specific SDKs that abstract the underlying REST APIs.
-
-In the exercise that follows in this module, you can use the Python or .NET SDK for the Azure AI Model Inference API and the OpenAI API to develop an audio-enabled chat application.

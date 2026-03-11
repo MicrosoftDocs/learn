@@ -1,7 +1,11 @@
-In this module, you learned about audio-enabled generative AI models and how to implement chat solutions that include audio-based input.
+In this module, you learned how to use speech-capable generative AI models to transcribe and synthesize speech.
 
-Audio-enabled models let you create AI solutions that can understand audio and respond to related questions or instructions. Beyond just identifying spoken words, some models can also use reasoning based on what they hear. For instance, they can summarize a message or assess the speaker's sentiment.
+Speech transcription and synthesis are useful capabilities in many scenarios, including:
+
+- Documenting spoken conversations in calls and meetings.
+- Generating captions for videos or presentations.
+- Creating audio information for vision-impaired users.
+- Developing hands-free AI assistants that read text messages or emails aloud.
 
 > [!TIP]
-> For more information about working with multimodal models in Microsoft Foundry, see **[How to use image and audio in chat completions with Azure AI model inference](/azure/ai-foundry/model-inference/how-to/use-chat-multi-modal)** and **[Quickstart: Use speech and audio in your AI chats](/azure/ai-services/openai/realtime-audio-quickstart)**.
-
+> For more information about speech-capable models in Microsoft Foundry, see **[Audio models](/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure?pivots=azure-openai#audio-models&azure-portal=true)** in the Microsoft Foundry documentation.
