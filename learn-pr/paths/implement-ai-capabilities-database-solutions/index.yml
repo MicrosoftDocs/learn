@@ -26,8 +26,8 @@ subjects:
 - artificial-intelligence
 - databases
 modules:
-- learn.wwl.design-implement-intelligent-search-with-sql
 - learn.wwl.design-implement-models-embeddings-with-sql
+- learn.wwl.design-implement-intelligent-search-with-sql
 - learn.wwl.design-implement-rag-with-sql
 trophy:
   uid: learn.wwl.implement-ai-capabilities-database-solutions.badge
