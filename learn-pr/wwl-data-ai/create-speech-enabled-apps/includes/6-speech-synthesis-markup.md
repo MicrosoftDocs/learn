@@ -33,7 +33,7 @@ This SSML specifies a spoken dialog between two different neural voices, like th
 To submit an SSML description to the Speech service, you can use an appropriate method of a **SpeechSynthesizer** object, like this:
 
 ```python
-speech_synthesizer.speak_ssml('<speak>...');
+speech_synthesis_result = speech_synthesizer.speak_ssml_async('<speak>...').get()
 ```
 
 For more information about SSML, see the [Azure Speech SDK documentation](/azure/ai-services/speech-service/speech-synthesis-markup).
