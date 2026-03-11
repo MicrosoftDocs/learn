@@ -29,7 +29,7 @@ roles:
   - developer
 products: 
   - azure-ai-foundry
-  - ai-services
+  - foundry-tools
   - azure-openai
   - ms-copilot
 subjects: 
