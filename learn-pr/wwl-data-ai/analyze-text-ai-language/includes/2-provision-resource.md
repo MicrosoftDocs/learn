@@ -22,7 +22,7 @@ After you have provisioned a Foundry resource in your Azure subscription, you ca
 To authenticate using *key-based* authentication, use the key associated with your Foundry resource - you can find this information in the Foundry portal.
 
 > [!TIP]
-> The default home page in the Foundry portal shows the endpoint and key for your *project*. To view the key and endpoint for your *resource*, you can view the parent resource for your project in the **Admin** tab of the **Operate** page of the portal. The project and foundry resource keys are the same, and the project endpoint is the resource endpoint with */api/projects/<project-name>* appended - so if the project endpoint is `https://my-ai-app-foundry.services.ai.azure.com/api/projects/my-ai-app`, then the resource endpoint is `https://my-ai-app-foundry.services.ai.azure.com`.
+> The default home page in the Foundry portal shows the endpoint and key for your *project*. To view the key and endpoint for your *resource*, you can view the parent resource for your project in the **Admin** tab of the **Operate** page of the portal. The project and foundry resource keys are the same, and the project endpoint is the resource endpoint with */api/projects/{project_name}* appended - so if the project endpoint is `https://my-ai-app-foundry.services.ai.azure.com/api/projects/my-ai-app`, then the resource endpoint is `https://my-ai-app-foundry.services.ai.azure.com`.
 
 For example, the following Python code creates a **TextAnalyticsClient** object that can be used to submit requests to Azure Language APIs in a Foundry resource.
 

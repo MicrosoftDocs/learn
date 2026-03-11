@@ -20,7 +20,7 @@ After you have provisioned a Foundry resource in your Azure subscription, you ca
 The initial object you need to create to provide access to the Azure Speech in Foundry Toole endpoint is a **SpeechConfig** object; which encapsulates the connection details for the service in your Foundry resource.
 
 > [!TIP]
-> The default home page in the Foundry portal shows the endpoint and key for your *project*. To view the key and endpoint for your *resource*, you can view the parent resource for your project in the **Admin** tab of the **Operate** page of the portal. The project and foundry resource keys are the same, and the project endpoint is the resource endpoint with */api/projects/<project-name>* appended - so if the project endpoint is `https://my-ai-app-foundry.services.ai.azure.com/api/projects/my-ai-app`, then the resource endpoint is `https://my-ai-app-foundry.services.ai.azure.com`.
+> The default home page in the Foundry portal shows the endpoint and key for your *project*. To view the key and endpoint for your *resource*, you can view the parent resource for your project in the **Admin** tab of the **Operate** page of the portal. The project and foundry resource keys are the same, and the project endpoint is the resource endpoint with */api/projects/{project_name}* appended - so if the project endpoint is `https://my-ai-app-foundry.services.ai.azure.com/api/projects/my-ai-app`, then the resource endpoint is `https://my-ai-app-foundry.services.ai.azure.com`.
 
 For example, the following Python code creates a **SpeechConfig** object that can be used to submit requests to Azure Speech APIs in a Foundry resource.
 
