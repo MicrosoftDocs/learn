@@ -37,7 +37,7 @@ After identifying a problematic job, drill into its longest stage to examine tas
 
 Resource bottlenecks manifest differently depending on which resource is constrained. The compute metrics interface helps you identify these patterns by showing CPU, memory, and network utilization across nodes.
 
-:::image type="content" source="../media/4-identify-resolve-resource-bottlenecks.png" alt-text="Diagram exlaining how to identify and resolve resource bottlenecks." border="false" lightbox="../media/4-identify-resolve-resource-bottlenecks.png":::
+:::image type="content" source="../media/4-identify-resolve-resource-bottlenecks.png" alt-text="Diagram explaining how to identify and resolve resource bottlenecks." border="false" lightbox="../media/4-identify-resolve-resource-bottlenecks.png":::
 
 **Memory pressure** appears as high memory utilization across workers or the driver. In the Spark UI, look for spill indicators showing data being written to disk because memory is insufficient. You can address memory issues by increasing worker instance sizes, reducing partition counts, or optimizing transformations to minimize data held in memory.
 
