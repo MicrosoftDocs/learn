@@ -27,7 +27,7 @@ roles:
   - developer
 products: 
   - azure
-  - ai-services
+  - foundry-tools
   - content-safety
 modules:
   - learn.moderate-content-detect-harm-azure-ai-content-safety-studio
