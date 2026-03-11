@@ -32,6 +32,8 @@ When the Azure Connected Machine agent is installed on vCenter-managed VMs, Admi
 - Monitor operating system performance and discover application components to monitor processes and dependencies with other resources using VM insights.
 - Collect other log data, such as performance data and events, from the operating system or workloads running on the machine with the Azure Monitor Agent. 
 
+[![Diagram of connected machine agent architecture.](../media/connected-machine-agent.png)](../media/connected-machine-agent.png#lightbox)
+
 The Azure Connected Machine agent is updated regularly to address bug fixes, stability enhancements, and new functionality. Azure Advisor identifies resources that aren't using the latest version of the machine agent and recommends that you upgrade to the latest version. It notifies you when you select the Azure Arc-enabled server by presenting a banner on the Overview page, or when you access Advisor through the Azure portal.
 
 The Azure Connected Machine agent for Windows and Linux can be upgraded to the latest release manually or automatically, depending on your requirements. Installing, upgrading, or uninstalling the Azure Connected Machine Agent doesn't require you to restart your server.
@@ -96,3 +98,5 @@ For SQL Server environments that run in a VM in Azure VMware Solution, you can u
    - ESU subscription
    - Automated patching
 1. Select Subscribe to Extended Security Updates. It sets the host configuration property EnableExtendedSecurityUpdates to True. The subscription is activated after you select Save.
+
+[![Image of SQL Server configuration in Azure portal.](../media/azure-portal-sql.png)](../media/azure-portal-sql.png#lightbox)
