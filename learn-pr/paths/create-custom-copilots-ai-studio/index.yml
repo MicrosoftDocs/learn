@@ -22,7 +22,7 @@ roles:
 - data-scientist
 - ai-engineer
 products:
-- ai-services
+- foundry-tools
 - microsoft-foundry
 subjects:
 - artificial-intelligence
