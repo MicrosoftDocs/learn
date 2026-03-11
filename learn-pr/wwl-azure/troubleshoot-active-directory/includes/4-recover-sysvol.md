@@ -28,10 +28,10 @@ There are a number of ways to perform an authoritative restore of SYSVOL. After 
 
 - Edit the `msDFSR-Options` attribute
 
-- Perform a system state restore using `wbadmin –authsysvol`
+- Perform a system state restore using `wbadmin -authsysvol`
 
 > [!TIP]
-> If you have the option to restore a system state backup (that is, you are restoring AD DS to the same hardware and operating system instance) then using `wbadmin –authsysvol` is simpler. 
+> If you have the option to restore a system state backup (that is, you are restoring AD DS to the same hardware and operating system instance) then using `wbadmin -authsysvol` is simpler. 
 
 But if you need to perform a bare metal restore, then you need to edit the `msDFSR-Options` attribute.
 
