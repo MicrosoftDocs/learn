@@ -1,3 +1,5 @@
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=0f312bb1-11ec-45f9-bd5a-d48888191353]
+
 When a Lakeflow Job fails, you must quickly identify the problem, understand the root cause, and take corrective action. Navigating failures efficiently keeps your pipelines running and your downstream consumers satisfied.
 
 ## Understand job failure states

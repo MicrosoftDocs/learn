@@ -1,3 +1,5 @@
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=aafb4cc3-3e5a-4168-8e10-d78366db752c]
+
 Running data workloads in Azure Databricks at scale requires more than setting up clusters and writing pipelines—it demands continuous attention to resource consumption, job health, and performance optimization. When compute costs climb unexpectedly, jobs fail without clear explanations, or queries that once ran quickly now take hours, you need systematic approaches to identify problems and apply targeted fixes.
 
 Azure Databricks provides comprehensive tools for monitoring and troubleshooting across all compute types. **Cluster metrics** reveal CPU, memory, and network utilization patterns that help you right-size resources. **The Spark UI** exposes job execution details, stage-level metrics, and task distributions that pinpoint bottlenecks. **System tables** enable you to query billing data and usage patterns directly, supporting cost attribution and chargeback processes.

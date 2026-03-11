@@ -3,7 +3,7 @@ uid: learn.wwl.monitor-troubleshoot-optimize-workloads-azure-databricks
 metadata:
   title: Monitor, Troubleshoot and Optimize Workloads in Azure Databricks
   description: Learn how to monitor cluster consumption, troubleshoot job failures, diagnose Spark performance issues, and implement log streaming to Azure Log Analytics for centralized monitoring of Azure Databricks workloads.
-  ms.date: 12/07/2025
+  ms.date: 03/10/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: module

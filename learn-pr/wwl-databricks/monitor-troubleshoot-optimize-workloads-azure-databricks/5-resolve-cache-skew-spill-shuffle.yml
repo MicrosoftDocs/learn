@@ -4,7 +4,7 @@ title: Investigate caching, skewing, spilling, shuffle
 metadata:
   title: Investigate Caching, Skewing, Spilling, Shuffle
   description: Learn how to investigate and resolve caching, skewing, spilling, and shuffle issues in Azure Databricks using the DAG, Spark UI, and query profile.
-  ms.date: 12/07/2025
+  ms.date: 03/10/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit

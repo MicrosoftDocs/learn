@@ -1,3 +1,5 @@
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=c416d267-6b68-41dd-8973-8caba17fd6da]
+
 When a Spark job fails or runs slower than expected, your ability to quickly diagnose and resolve the issue directly impacts business operations. As a data engineer, you need a systematic approach to investigate problems, identify root causes, and take corrective action.
 
 ## Understand common causes of Spark job failures
