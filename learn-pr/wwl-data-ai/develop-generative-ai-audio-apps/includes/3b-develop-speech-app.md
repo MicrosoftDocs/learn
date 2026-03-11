@@ -16,6 +16,7 @@ Similarly to speech-to-text models, you can use the **AzureOpenAI** client in th
 from openai import AzureOpenAI
 from pathlib import Path
 
+# Create an AzureOpenAI client
 client = AzureOpenAI(
     azure_endpoint=YOUR_FOUNDRY_ENDPOINT,
     api_key=YOUR_FOUNDRY_KEY,

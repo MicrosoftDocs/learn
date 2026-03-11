@@ -1,7 +1,8 @@
-Generative AI models make it possible to build intelligent chat-based applications that can understand and reason over input. Traditionally, text input is the primary mode of interaction with AI models, but multimodal models are increasingly becoming available. These models make it possible for chat applications to respond to audio input that contains speech as well as text, and to respond using audible speech.
+Speech transcription and synthesis are useful capabilities in many scenarios, including:
 
-In this module, we'll discuss speech-enabled generative AI and explore how you can use Microsoft Foundry to create speech-capable generative AI solutions that:
+- Documenting spoken conversations in calls and meetings.
+- Generating captions for videos or presentations.
+- Creating audio information for vision-impaired users.
+- Developing hands-free AI assistants that read text messages or emails aloud.
 
-- Respond to spoken prompts.
-- Transcribe speech to text.
-- Synthesize speech from text.
+In this module, we'll explore how to use speech-capable generative AI models in Microsoft Foundry to convert speech to text and text to speech.

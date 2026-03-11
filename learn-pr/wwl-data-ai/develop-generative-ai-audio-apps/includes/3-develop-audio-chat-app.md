@@ -17,6 +17,7 @@ To use a speech-to-text model in your own application, you can use the **AzureOp
 from openai import AzureOpenAI
 from pathlib import Path
 
+# Create an AzureOpenAI client
 client = AzureOpenAI(
     azure_endpoint=YOUR_FOUNDRY_ENDPOINT,
     api_key=YOUR_FOUNDRY_KEY,
