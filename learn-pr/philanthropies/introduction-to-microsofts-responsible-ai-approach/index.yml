@@ -31,7 +31,7 @@ roles:
 - data-engineer
 - school-leader
 products:
-- ai-services
+- foundry-tools
 - azure-machine-learning
 - azure-machine-learning-designer
 - m365-apps
