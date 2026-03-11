@@ -19,7 +19,7 @@ levels:
 roles:
 - ai-engineer
 products:
-- ai-services
+- foundry-tools
 - azure-ai-foundry
 - azure-ai-foundry-agent-service
 - azure-ai-foundry-sdk
