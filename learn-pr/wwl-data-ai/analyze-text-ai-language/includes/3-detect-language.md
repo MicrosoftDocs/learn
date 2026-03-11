@@ -1,13 +1,13 @@
 
 The Azure Language detection API evaluates text input and, for each document submitted, returns language identifiers with a score indicating the strength of the analysis.
 
-This capability is useful for content stores that collect arbitrary text, where language is unknown. Another scenario could involve a chat application.  If a user starts a session with the application, language detection can be used to determine which language they are using and allow you to configure your application's responses in the appropriate language.
+This capability is useful for content stores that collect arbitrary text, where language is unknown. Another scenario could involve a chat application.  If a user starts a session with the application, language detection can be used to determine which language they're using and allow you to configure your application's responses in the appropriate language.
 
 You can parse the results of this analysis to determine which language is used in the input document. The response also returns a score, which reflects the confidence of the model (a value between 0 and 1).
 
 Language detection can work with documents or single phrases. It's important to note that the document size must be under 5,120 characters.  The size limit is per document and each collection is restricted to 1,000 items (IDs).  A sample of a properly formatted JSON payload that you might submit to the service in the request body is shown here, including a collection of **documents**, each containing a unique **id** and the **text** to be analyzed.
 
-For example, the following Python code analyzes two (very short) documents to detect the language in which they are written.
+For example, the following Python code analyzes two (short) documents to detect the language in which they're written.
 
 ```python
 # Assumes code to create TextAnalyticsClient is above...
@@ -39,6 +39,6 @@ Document: 1
 
 In our sample, both languages show a high confidence value, mostly because the text is relatively simple and easy to identify the language for.
 
-If you try to detect the language of a document that has multilingual content, for example "*I know a very cool AI developer. He has a certain je ne sais quoi!*", the response may reflect some ambiguity.  Mixed language content within the same document returns the language with the largest representation in the content, but with a lower positive rating, reflecting the marginal strength of that assessment.
+If you try to detect the language of a document that has multilingual content, for example `I know a cool AI developer. He has a certain je ne sais quoi!`, the response may reflect some ambiguity.  Mixed language content within the same document returns the language with the largest representation in the content, but with a lower positive rating, reflecting the marginal strength of that assessment.
 
-The last condition to consider is when there is ambiguity as to the language content.  The scenario might happen if you submit textual content that the analyzer is not able to parse, for example because of character encoding issues when converting the text to a string variable.  As a result, the response for the language name and ISO code will be returned as "*(unknown)*" and the score value will be returned as *0*.  
+The last condition to consider is when there's ambiguity as to the language content.  The scenario might happen if you submit textual content that the analyzer isn't able to parse, for example because of character encoding issues when converting the text to a string variable.  As a result, the response for the language name and ISO code will be returned as `(unknown)` and the score value will be returned as `0`.  
