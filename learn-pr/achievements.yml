@@ -7865,6 +7865,11 @@ achievements:
   title: Get started with SQL Server 2025
   summary: Learn about SQL Server 2025's major capabilities including AI features, analytics improvements, developer tools, and performance optimization.
   iconUrl: /training/achievements/sqlserver/introduction-to-sql-server-2025.svg
+- uid: learn.azure.cna-orchestrate-containers.badge
+  type: badge
+  title: Orchestrate containers for cloud-native apps with AKS 
+  summary: Cloud-native applications are modular in nature, with components separated and self-contained. Components can be encapsulated in containers, such as those created with Docker, or published from an Azure service.
+  iconUrl: /training/achievements/cloud-native-apps-orchestrate-containers.svg
 - uid: learn.wwl.understand-hybrid-data-platform-sql-server-2022.badge
   type: badge
   title: Understand hybrid data platform on SQL Server 2025
