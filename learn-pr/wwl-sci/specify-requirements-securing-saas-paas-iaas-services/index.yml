@@ -34,8 +34,7 @@ products:
 - defender-for-cloud
 - defender-for-cloud-apps
 - defender-identity
-- microsoft-sentinel
-- azure-ai-foundry
+- microsoft-foundry
 subjects:
   - security
   - cloud-security
