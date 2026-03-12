@@ -35,7 +35,7 @@ units:
 - learn.wwl.run-training-scripts-track-models-mlflow.convert-notebook-script
 - learn.wwl.run-training-scripts-track-models-mlflow.run-script-command-job
 - learn.wwl.run-training-scripts-track-models-mlflow.use-parameters-command-job
-- learn.wwl.run-training-scripts-track-models-mlflow.track-metrics-mlflow
+- learn.wwl.run-training-scripts-track-models-mlflow.track-metrics
 - learn.wwl.run-training-scripts-track-models-mlflow.view-metrics-evaluate-models
 - learn.wwl.run-training-scripts-track-models-mlflow.exercise
 - learn.wwl.run-training-scripts-track-models-mlflow.knowledge-check
