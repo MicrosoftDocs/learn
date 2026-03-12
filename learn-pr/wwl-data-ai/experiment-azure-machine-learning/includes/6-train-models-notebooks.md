@@ -46,7 +46,7 @@ As soon as `mlflow.xgboost.autolog()` is called, MLflow starts a run within an e
 
 When the job completes, you can review all logged metrics in the studio.
 
-:::image type="content" source="../media/auto-results.png" alt-text="Screenshot of overview page of MLflow experiment with autologging in Azure Machine Learning studio." lightbox="../media/autolog-results.png":::
+:::image type="content" source="../media/auto-results.png" alt-text="Screenshot of overview page of MLflow experiment with autologging in Azure Machine Learning studio." lightbox="../media/auto-results.png":::
 
 ### Use custom logging
 
