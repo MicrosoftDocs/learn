@@ -7,6 +7,7 @@ You learned how to:
 - Specify security requirements for web workloads covering authentication, network protection, and application security.
 - Specify security requirements for containers and container orchestration including cluster security, image integrity, and runtime protection.
 - Evaluate security controls for AI services using MCSB v2 AI-specific controls and the AI shared responsibility model.
+- Evaluate security for Microsoft Foundry workloads including resource/project architecture, identity controls, connection security, network isolation, and model governance.
 
 ## Learn more
 
@@ -40,7 +41,7 @@ Use these resources to deepen your understanding of the topics covered in this m
 ### AI services security
 
 - [Azure security baseline for Azure OpenAI](/security/benchmark/azure/baselines/azure-openai-security-baseline)
-- [Azure AI Foundry security baseline](/security/benchmark/azure/baselines/azure-ai-foundry-security-baseline)
+- [Microsoft Foundry security baseline](/security/benchmark/azure/baselines/azure-ai-foundry-security-baseline)
 - [Azure AI Content Safety](/azure/ai-services/content-safety/overview)
 - [Threat protection for AI workloads](/azure/defender-for-cloud/ai-threat-protection)
 - [AI shared responsibility model](/azure/security/fundamentals/shared-responsibility-ai)
