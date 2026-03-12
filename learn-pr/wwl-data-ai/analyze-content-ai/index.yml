@@ -30,7 +30,7 @@ roles:
 - developer
 products:
 - ai-services
-- azure-ai-foundry
+- microsoft-foundry
 subjects:
 - artificial-intelligence
 units:
