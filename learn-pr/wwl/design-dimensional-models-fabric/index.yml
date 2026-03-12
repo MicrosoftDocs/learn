@@ -34,7 +34,7 @@ units:
 - learn.wwl.design-dimensional-models-fabric.describe-schema-types
 - learn.wwl.design-dimensional-models-fabric.design-fact-tables
 - learn.wwl.design-dimensional-models-fabric.design-dimension-tables
-- learn.wwl.design-dimensional-models-fabric.implement-scd
+- learn.wwl.design-dimensional-models-fabric.implement-slowly-changing-dimensions
 - learn.wwl.design-dimensional-models-fabric.exercise
 - learn.wwl.design-dimensional-models-fabric.knowledge-check
 - learn.wwl.design-dimensional-models-fabric.summary
