@@ -8,7 +8,7 @@ metadata:
   ms.author: calopez
   ms.topic: module
   ms.service: azure-cosmos-db
-  ms.subservice: mongodb-vcore
+  ms.subservice: mongodb
   ai-usage: human-only
 title: Manage a vCore-based Azure Cosmos DB for MongoDB cluster
 summary: Learn to manage a vCore-based Azure Cosmos DB for MongoDB cluster, focusing on scaling, high availability, backup and restoration processes, and diagnostic monitoring.
@@ -37,4 +37,4 @@ units:
 - learn.wwl.manage-vcore-based-azure-cosmos-db-mongodb-cluster.knowledge-check
 - learn.wwl.manage-vcore-based-azure-cosmos-db-mongodb-cluster.summary
 badge:
-  uid: learn.wwl.manage-vcore-based-azure-cosmos-db-mongodb-cluster.badge
+  uid: learn.wwl.manage-vcore-based-azure-cosmos-db-mongodb-cluster.badge
