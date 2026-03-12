@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.experiment-azure-machine-learning.exercise
+title: Exercise - Find the best classification model with Azure Machine Learning
+metadata:
+  title: Exercise - Find the best classification model with Azure Machine Learning
+  description: Practice finding the best classification model by using AutoML and MLflow-tracked notebooks in Azure Machine Learning.
+  author: wwlpublish
+  ms.author: madiepev
+  ms.date: 03/11/2026
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+  ms.custom: devx-track-python
+durationInMinutes: 30
+content: |
+  [!include[](includes/7-exercise.md)]

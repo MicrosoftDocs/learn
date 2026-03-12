@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.experiment-azure-machine-learning.responsible-ai-dashboard
+title: Evaluate models with the Responsible AI dashboard
+metadata:
+  title: Evaluate models with the Responsible AI dashboard
+  description: Learn how to evaluate a trained model using the Responsible AI dashboard in Azure Machine Learning.
+  author: wwlpublish
+  ms.author: madiepev
+  ms.date: 03/12/2026
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 8
+content: |
+  [!include[](includes/7-responsible-ai-dashboard.md)]

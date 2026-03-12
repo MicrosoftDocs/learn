@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.wwl.experiment-azure-machine-learning
+metadata:
+  title: Experiment with Azure Machine Learning
+  description: Learn how to find the best model with automated machine learning (AutoML) and by experimenting in notebooks.
+  author: wwlpublish
+  ms.author: madiepev
+  ms.date: 03/11/2026
+  ms.service: azure-machine-learning
+  ms.topic: module
+  ms.collection:
+    - wwl-ai-copilot
+title: Experiment with Azure Machine Learning
+summary: Learn how to find the best model with automated machine learning (AutoML) and by experimenting in notebooks.
+abstract: |
+  In this module, you'll learn how to:
+  - Prepare your data to use AutoML for classification.
+  - Configure and run an AutoML experiment.
+  - Evaluate and compare AutoML models.
+  - Configure MLflow for model tracking in notebooks.
+  - Use MLflow for model tracking in notebooks.
+prerequisites: |
+  None
+iconUrl: /training/achievements/find-best-classification-model-automated-machine-learning.svg
+levels:
+- beginner
+roles:
+- data-scientist
+products:
+- azure-machine-learning
+subjects:
+- machine-learning
+units:
+- learn.wwl.experiment-azure-machine-learning.introduction
+- learn.wwl.experiment-azure-machine-learning.preprocess-data-configure-featurization
+- learn.wwl.experiment-azure-machine-learning.run-job
+- learn.wwl.experiment-azure-machine-learning.evaluate-compare-models
+- learn.wwl.experiment-azure-machine-learning.use-mlflow-model-tracking
+- learn.wwl.experiment-azure-machine-learning.train-models-notebooks
+- learn.wwl.experiment-azure-machine-learning.exercise
+- learn.wwl.experiment-azure-machine-learning.knowledge-check
+- learn.wwl.experiment-azure-machine-learning.summary
+badge:
+  uid: learn.wwl.experiment-azure-machine-learning.badge
