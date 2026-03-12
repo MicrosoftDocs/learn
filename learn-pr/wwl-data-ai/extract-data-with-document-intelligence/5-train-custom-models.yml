@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.extract-data-with-document-intelligence.train-custom-models
+title: Train and use custom models
+metadata:
+  title: Train and use custom models
+  description: Learn how to train custom neural and template models and use them to extract data from your documents.
+  ms.date: 03/11/2026
+  author: ivorb
+  ms.author: berryivor
+  ms.topic: unit
+  ai-usage: ai-assisted
+durationInMinutes: 8
+content: |
+  [!include[](includes/5-train-custom-models.md)]
