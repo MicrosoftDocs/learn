@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.run-training-scripts-track-models-mlflow.convert-notebook-script
+title: Convert a notebook to a script
+metadata:
+  title: Convert a notebook to a script
+  description: Learn how to get your code production ready.
+  author: wwlpublish
+  ms.author: madiepev
+  ms.date: 03/12/2026
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 9
+content: |
+  [!include[](includes/2-convert-notebook-script.md)]

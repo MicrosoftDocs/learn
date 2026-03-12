@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.run-training-scripts-track-models-mlflow.view-metrics-evaluate-models
+title: View metrics and evaluate models
+metadata:
+  title: View metrics and evaluate models
+  description: Learn how to retrieve metrics and evaluate models in Azure Machine Learning.
+  author: wwlpublish
+  ms.author: madiepev
+  ms.date: 03/12/2026
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 8
+content: |
+  [!include[](includes/6-view-metrics-evaluate-models.md)]

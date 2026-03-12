@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.run-training-scripts-track-models-mlflow.use-parameters-command-job
+title: Use parameters in a command job
+metadata:
+  title: Use parameters in a command job
+  description: Learn how to use parameters in a command job.
+  author: wwlpublish
+  ms.author: madiepev
+  ms.date: 03/12/2026
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 7
+content: |
+  [!include[](includes/4-use-parameters-command-job.md)]

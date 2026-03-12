@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.wwl.run-training-scripts-track-models-mlflow
+metadata:
+  title: Run training scripts and track models with MLflow in Azure Machine Learning
+  description: Learn how to run scripts as command jobs and track model training with MLflow in Azure Machine Learning.
+  author: wwlpublish
+  ms.author: madiepev
+  ms.date: 03/12/2026
+  ms.service: azure-machine-learning
+  ms.topic: module
+  ms.collection:
+    - wwl-ai-copilot
+title: Run training scripts and track models with MLflow in Azure Machine Learning
+summary: Learn how to convert your code to a script, run it as a command job, and track model training with MLflow in Azure Machine Learning.
+abstract: |
+  In this module, you'll learn how to:
+  - Convert a notebook to a script.
+  - Test scripts in a terminal.
+  - Run a script as a command job.
+  - Use parameters in a command job.
+  - Use MLflow when you run a script as a job.
+  - Review metrics, parameters, artifacts, and models from a run.
+prerequisites: ''
+iconUrl: /training/achievements/run-training-scripts-track-models-mlflow.svg
+levels:
+- beginner
+roles:
+- data-scientist
+products:
+- azure-machine-learning
+subjects:
+- machine-learning
+units:
+- learn.wwl.run-training-scripts-track-models-mlflow.introduction
+- learn.wwl.run-training-scripts-track-models-mlflow.convert-notebook-script
+- learn.wwl.run-training-scripts-track-models-mlflow.run-script-command-job
+- learn.wwl.run-training-scripts-track-models-mlflow.use-parameters-command-job
+- learn.wwl.run-training-scripts-track-models-mlflow.track-metrics-mlflow
+- learn.wwl.run-training-scripts-track-models-mlflow.view-metrics-evaluate-models
+- learn.wwl.run-training-scripts-track-models-mlflow.exercise
+- learn.wwl.run-training-scripts-track-models-mlflow.knowledge-check
+- learn.wwl.run-training-scripts-track-models-mlflow.summary
+badge:
+  uid: learn.wwl.run-training-scripts-track-models-mlflow.badge
