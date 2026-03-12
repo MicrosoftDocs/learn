@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.discover-data-onelake.exercise
+title: Exercise - Discover and connect to data in OneLake
+metadata:
+  title: Exercise - Discover and connect to data in OneLake
+  description: Interactive exercise to practice discovering data through the OneLake catalog, creating shortcuts, querying with SQL, and exploring semantic models.
+  ms.date: 02/19/2026
+  author: angierudduck
+  ms.author: anrudduc
+  ms.topic: unit
+  ai-usage: ai-assisted
+durationInMinutes: 30
+content: |
+  [!include[](includes/5-exercise.md)]
