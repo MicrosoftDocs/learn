@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.design-dimensional-models-fabric.implement-scd
+uid: learn.wwl.design-dimensional-models-fabric.implement-slowly-changing-dimensions
 title: Implement slowly changing dimensions
 metadata:
   title: Implement Slowly Changing Dimensions
