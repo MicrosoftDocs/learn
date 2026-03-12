@@ -36,7 +36,7 @@ units:
 - learn.wwl.experiment-azure-machine-learning.preprocess-data-configure-featurization
 - learn.wwl.experiment-azure-machine-learning.run-job
 - learn.wwl.experiment-azure-machine-learning.evaluate-compare-models
-- learn.wwl.experiment-azure-machine-learning.use-mlflow-model-tracking
+- learn.wwl.experiment-azure-machine-learning.model-tracking
 - learn.wwl.experiment-azure-machine-learning.train-models-notebooks
 - learn.wwl.experiment-azure-machine-learning.responsible-ai-dashboard
 - learn.wwl.experiment-azure-machine-learning.exercise
