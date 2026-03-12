@@ -31,9 +31,10 @@ subjects:
 modules:
 - learn.wwl.experiment-azure-machine-learning
 - learn.wwl.use-azure-machine-learn-job-for-automation
+- learn.wwl.perform-hyperparameter-tuning-azure-machine-learning-pipelines
+- learn.wwl.run-pipelines-azure-machine-learning
 - learn.wwl.trigger-azure-machine-learn-jobs-github-actions
 - learn.wwl.trigger-github-actions-trunk-based-development
-- learn.wwl.work-linting-unit-test-github-actions
 - learn.wwl.work-environments-github-actions
 - learn.wwl.deploy-model-github-actions
 trophy:
