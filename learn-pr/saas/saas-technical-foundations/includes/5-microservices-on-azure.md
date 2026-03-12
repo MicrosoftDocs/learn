@@ -47,7 +47,7 @@ Azure Container Instances can be thought of as a lower-level "building block" op
 - ACI is suitable for scenarios where you don't want to manage the complexity of a full Kubernetes cluster but need the flexibility of deploying single containers without much configuration.
 - If your microservices architecture consists of independent, stateless microservices that don't require advanced orchestration, ACI might be a good fit.
 
-Azure offers a range of container hosting services that are designed to accommodate various workloads, architectures, and business requirements.  You can follow this [guidance](https://learn.microsoft.com/azure/architecture/guide/choose-azure-container-service) to understand which Azure container service is best suited to your workload scenarios and requirements.
+Azure offers a range of container hosting services that are designed to accommodate various workloads, architectures, and business requirements.  You can follow this [guidance](/azure/architecture/guide/choose-azure-container-service) to understand which Azure container service is best suited to your workload scenarios and requirements.
 
 ### Data and storage
 
