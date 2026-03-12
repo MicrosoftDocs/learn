@@ -1,0 +1,32 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.choose-data-store-fabric.evaluate-warehouse
+title: Evaluate warehouse capabilities
+metadata:
+  title: Evaluate Warehouse Capabilities
+  description: "Evaluate when to choose a warehouse in Microsoft Fabric. Understand full T-SQL support, multi-table ACID transactions, schema-on-write governance, and ideal use cases for BI reporting and dimensional modeling."
+  ms.date: 02/24/2026
+  author: angierudduck
+  ms.author: anrudduc
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/4-evaluate-warehouse.md)]
+quiz:
+  title: "Check your understanding"
+  questions:
+  - content: "A BI team with 10+ years of SQL Server experience needs to build dimensional models with daily dimension updates. They need to support complex multi-table joins for Power BI reports. Is warehouse the right choice?"
+    choices:
+    - content: "Yes, warehouse is ideal for this scenario"
+      isCorrect: true
+      explanation: "Correct. SQL Server expertise translates directly to warehouse T-SQL, dimensional models are optimized in warehouse, transactional updates work for dimension maintenance, and Power BI Direct Lake provides optimal performance."
+    - content: "No, choose a different store"
+      isCorrect: false
+      explanation: "Incorrect. Warehouse is purpose-built for structured BI workloads with T-SQL and dimensional modeling."
+  - content: "An analytics team works entirely in T-SQL and needs to query data across multiple sources: two different warehouses and Delta tables from a lakehouse. They don't want to copy or move data. Is warehouse the right choice for their queries?"
+    choices:
+    - content: "Yes, warehouse is ideal for this scenario"
+      isCorrect: true
+      explanation: "Correct. Warehouse cross-database queries support three-part naming to join data across multiple warehouses and lakehouse SQL analytics endpoints without copying data. This is exactly what the team needs."
+    - content: "No, choose a different store"
+      isCorrect: false
+      explanation: "Incorrect. Since the team uses T-SQL and needs to query across warehouses and lakehouses, warehouse's cross-database query capability is ideal."
