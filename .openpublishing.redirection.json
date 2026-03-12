@@ -49525,6 +49525,56 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/azure/cloud-native-apps-orchestrate-containers/index.md",
+      "redirect_url": "/training/paths/create-cloud-native-apps-with-azure-open-source/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/cloud-native-apps-orchestrate-containers/1-introduction.md",
+      "redirect_url": "/training/paths/create-cloud-native-apps-with-azure-open-source/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/cloud-native-apps-orchestrate-containers/2-run-containers-with-aks.md",
+      "redirect_url": "/training/paths/create-cloud-native-apps-with-azure-open-source/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/cloud-native-apps-orchestrate-containers/3-exercise-create-aks-instance.md",
+      "redirect_url": "/training/paths/create-cloud-native-apps-with-azure-open-source/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/cloud-native-apps-orchestrate-containers/4-develop-with-containers-and-aks.md",
+      "redirect_url": "/training/paths/create-cloud-native-apps-with-azure-open-source/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/cloud-native-apps-orchestrate-containers/5-exercise-setup-aks.md",
+      "redirect_url": "/training/paths/create-cloud-native-apps-with-azure-open-source/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/cloud-native-apps-orchestrate-containers/6-connect-components.md",
+      "redirect_url": "/training/paths/create-cloud-native-apps-with-azure-open-source/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/cloud-native-apps-orchestrate-containers/7-exercise-connect-container-to-web-app.md",
+      "redirect_url": "/training/paths/create-cloud-native-apps-with-azure-open-source/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/cloud-native-apps-orchestrate-containers/8-knowledge-check.md",
+      "redirect_url": "/training/paths/create-cloud-native-apps-with-azure-open-source/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/cloud-native-apps-orchestrate-containers/9-summary.md",
+      "redirect_url": "/training/paths/create-cloud-native-apps-with-azure-open-source/",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/azure/azure-sql-case-studies/index.md",
       "redirect_url": "/training/paths/azure-data-fundamentals-explore-relational-data/",
       "redirect_document_id": false

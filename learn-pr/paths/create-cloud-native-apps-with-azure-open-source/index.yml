@@ -43,7 +43,7 @@ subjects:
 - cloud-computing
 modules:
 - learn.azure.intro-to-cloud-native-apps
-- learn.azure.cna-orchestrate-containers
+# - learn.azure.cna-orchestrate-containers
 # - learn.azure.cna-set-up-apps-use-scale
 trophy:
   uid: learn.azure.cna-architect-modern-apps.trophy
