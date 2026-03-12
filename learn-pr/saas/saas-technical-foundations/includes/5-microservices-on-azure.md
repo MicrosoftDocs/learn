@@ -58,8 +58,6 @@ Microsoft Azure offers a wide range of data options for building Software as a S
 - **Azure Table Storage**: Azure Table Storage is a NoSQL data store that provides key/attribute-based access to semi-structured data. It's a cost-effective option for SaaS solutions that need to store and query large volumes of semi-structured data.
 - **Azure Data Lake Storage**: Azure Data Lake Storage is a scalable and secure data lake solution that can store and analyze large amounts of structured and unstructured data. It's suitable for SaaS solutions that deal with big data and require analytics and machine learning capabilities.
 - **Azure Blob Storage**: Azure Blob Storage is an object storage service that is ideal for storing large binary and unstructured data, such as images, videos, and backups. It can be used in conjunction with other Azure services to build SaaS solutions that require file storage or content delivery.
-- **Azure Cache for Redis**: Azure Cache for Redis is a fully managed, in-memory data store that can be used to improve the performance and scalability of SaaS applications. It's commonly used for caching frequently accessed data and session management.
-
 
 
 In addition to databases and storage options, there are several services which are widely used in SaaS and microservices architectures, where it is necessary to implement event-driven architecture and eventual consistency. 
