@@ -108,7 +108,7 @@ The instructions from Chef to Knife are explicit. Chef is about defining, and th
 
 ## Red Hat Ansible
 
-Ansible is a CM tool that shares some traits with Puppet, although it also subscribes to the notion of a complete inventory list, like Azure Resource Manager templates. Its goal is to produce a single script that installs, configures, and maintains a given service or application on any server infrastructure. It's based on the concept of *push configuration*. Unlike the situation with both Puppet and Chef, where client-side agents make requests for updated configurations from a master server, there are no remote agents in the Ansible system.
+Ansible is a CM tool that shares some traits with Puppet, although it also subscribes to the notion of a complete inventory list, like Azure Resource Manager templates. Its goal is to produce a single script that installs, configures, and maintains a given service or application on any server infrastructure. It's based on the concept of *push configuration*. Unlike the situation with both Puppet and Chef, where client-side agents make requests for updated configurations from a central server, there are no remote agents in the Ansible system.
 
 Configuration tasks for each node (not "clients" because there's no direct relationship between them and the server) are based around common *playbooks*. A playbook is actually a database, not an instructional script, containing the conditions that must be met for a configuration to be complete --- for example, for the components of a LAMP stack to be installed. The Ansible server adapts this playbook for each node's peculiarities and eccentricities, using its infrastructure inventory database as a guide.
 
