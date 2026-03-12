@@ -30,7 +30,7 @@ The grain also determines which dimension keys belong in the fact table. For exa
 
 There are three types of fact tables, each suited to a different analytical need:
 
-:::image type="content" source="../media/fact-table-types.svg" alt-text="Comparison of three fact table types: transaction fact recording individual events, periodic snapshot capturing state at intervals, and accumulating snapshot tracking process milestones." lightbox="../media/fact-table-types.svg":::
+:::image type="content" source="../media/fact-table-types.svg" alt-text="Diagram that shows a comparison of three fact table types: transaction, periodic snapshot, and accumulating snapshot." lightbox="../media/fact-table-types.svg":::
 
 ### Transaction fact tables
 

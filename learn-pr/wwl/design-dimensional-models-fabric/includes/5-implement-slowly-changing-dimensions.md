@@ -40,7 +40,7 @@ When a change occurs, the ETL process:
 
 Type 2 is essential when you need to analyze the past accurately. For example, if you need to report sales by the region a salesperson was assigned to at the time of each sale, Type 2 tracking preserves that context.
 
-:::image type="content" source="../media/scd-type-2.svg" alt-text="Before-and-after diagram of SCD Type 2, showing how a customer's region change creates a new dimension row with updated surrogate key, dates, and current flag while the original row is expired." lightbox="../media/scd-type-2.svg":::
+:::image type="content" source="../media/slowly-changing-dimension-type-2.svg" alt-text="Diagram that shows SCD Type 2 before and after a customer's region change, with a new row added and the original row expired." lightbox="../media/slowly-changing-dimension-type-2.svg":::
 
 ### Type 3: Add new column
 

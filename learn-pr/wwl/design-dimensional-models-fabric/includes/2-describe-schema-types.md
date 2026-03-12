@@ -19,7 +19,7 @@ There are several schema types you can use to arrange fact and dimension tables.
 
 A star schema places a fact table at the center with dimension tables radiating outward. Each dimension table connects directly to the fact table through key relationships. The name comes from the visual appearance: a central fact table with dimension tables forming points of a star.
 
-:::image type="content" source="../media/star-schema.svg" alt-text="Star schema diagram showing a central Fact_Sales table connected to four dimension tables: Dim_Product, Dim_Customer, Dim_Date, and Dim_Store." lightbox="../media/star-schema.svg":::
+:::image type="content" source="../media/star-schema.svg" alt-text="Diagram that shows a star schema with a central Fact_Sales table connected to four dimension tables: Dim_Product, Dim_Customer, Dim_Date, and Dim_Store." lightbox="../media/star-schema.svg":::
 
 Star schema is the recommended approach for most analytics workloads in Microsoft Fabric. It delivers several advantages:
 
@@ -37,7 +37,7 @@ A star schema often contains multiple fact tables, each representing a different
 
 A snowflake schema extends the star schema by normalizing dimension tables. Instead of storing all attributes in a single dimension table, related attributes are split into separate, related tables. For example, a product dimension might have separate tables for subcategory and category, each linked by foreign keys.
 
-:::image type="content" source="../media/snowflake-schema.svg" alt-text="Snowflake schema diagram showing a central fact table with normalized dimension tables branching outward, where product splits into subcategory and category, and customer splits into geography." lightbox="../media/snowflake-schema.svg":::
+:::image type="content" source="../media/snowflake-schema.svg" alt-text="Diagram that shows a snowflake schema with a central fact table and normalized dimension tables branching outward into subcategory, category, and geography." lightbox="../media/snowflake-schema.svg":::
 
 The term *snowflake* comes from the branching pattern that appears when you diagram the relationships. Each branch of the snowflake represents a level of normalization.
 
