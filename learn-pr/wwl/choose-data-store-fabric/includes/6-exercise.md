@@ -131,7 +131,7 @@ The team needs the same Spark and Python capabilities as the engineering lakehou
 
 # [Recommendation](#tab/recommendation-ml)
 
-**A dedicated data science lakehouse.** This second lakehouse is separate from the engineering lakehouse, that provides workload isolation.
+**A dedicated data science lakehouse.** This second lakehouse is separate from the engineering lakehouse, which provides workload isolation.
 
 | Factor | Requirement | Why a dedicated lakehouse fits |
 |--------|------------|-------------------------------|
