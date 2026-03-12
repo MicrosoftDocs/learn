@@ -8,6 +8,7 @@ The Voice live API provides real-time communication using WebSocket connections.
 - Events are categorized into client events (sent from client to server) and server events (sent from server to client).
 
 Key features include:
+
 - Real-time audio processing with support for multiple formats like PCM16 and G.711.
 - Advanced voice options, including OpenAI voices and Azure custom voices.
 - Avatar integration using WebRTC for video and animation.
@@ -20,7 +21,7 @@ For a table of supported models and regions, visit the [Voice Live API overview]
 
 ## Connect to the Voice Live API
 
-The Voice live API supports two authentication methods: Microsoft Entra (keyless) and API key. Microsoft Entra uses token-based authentication for a Microsoft Foundry resource. You apply a retrieved authentication token using a `Bearer` token with the `Authorization` header. 
+The Voice live API supports two authentication methods: Microsoft Entra (keyless) and API key. Microsoft Entra uses token-based authentication for a Microsoft Foundry resource. You apply a retrieved authentication token using a `Bearer` token with the `Authorization` header.
 
 For the recommended keyless authentication with Microsoft Entra ID, you need to assign the **Cognitive Services User** role to your user account or a managed identity. You generate a token using the Azure CLI or Azure SDKs. The token must be generated with the `https://ai.azure.com/.default` scope, or the legacy `https://cognitiveservices.azure.com/.default` scope. Use the token in the `Authorization` header of the WebSocket connection request, with the format `Bearer <token>`.
 
@@ -31,10 +32,10 @@ For key access, an API key can be provided in one of two ways. You can use an `a
 
 ### WebSocket endpoint
 
-The endpoint to use varies depending on how you want to access your resources. You can access resources through a connection to the AI Foundry project (Agent), or through a connection to the model. 
+The endpoint to use varies depending on how you want to access your resources. You can access resources through a connection to the Foundry project when implementing an agent, or through a direct connection to a model.
 
 - **Project connection:** The endpoint is `wss://<your-ai-foundry-resource-name>.services.ai.azure.com/voice-live/realtime?api-version=2025-10-01`
-- **Model connection:** The endpoint is `wss://<your-ai-foundry-resource-name>.cognitiveservices.azure.com/voice-live/realtime?api-version=2025-10-01`. 
+- **Model connection:** The endpoint is `wss://<your-ai-foundry-resource-name>.cognitiveservices.azure.com/voice-live/realtime?api-version=2025-10-01`.
 
 The endpoint is the same for all models. The only difference is the required `model` query parameter, or, when using the Agent service, the `agent_id` and `project_id` parameters.
 
@@ -137,6 +138,3 @@ Example configuration:
 
 > [!TIP]
 > Use high-resolution video settings for enhanced visual quality in avatar interactions.
-
-
-
