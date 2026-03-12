@@ -4,6 +4,8 @@ The Microsoft Cloud Security Benchmark v2 (preview) introduces a dedicated Artif
 
 ## Understand AI shared responsibility
 
+Earlier in this module, the AI shared responsibility model was introduced to help define security baseline boundaries across SaaS, PaaS, and IaaS AI deployment types. Here, the same model serves as an evaluation framework—helping you assess whether a proposed AI solution implements adequate security controls for the layers your organization is responsible for.
+
 The AI shared responsibility model extends traditional cloud responsibilities across three AI-specific layers that determine what security controls you must evaluate versus what Microsoft provides.
 
 **AI Platform layer** encompasses the underlying model infrastructure, including foundation models, safety systems, and compute resources. Microsoft maintains responsibility for model training security, platform abuse monitoring, and base safety mechanisms. For PaaS AI services like Azure OpenAI, customers share responsibility for prompt engineering security, model customization risks, and application integration.
@@ -119,7 +121,7 @@ Verify that diagnostic settings are enabled for AI services, routing audit, requ
 
 ## Key evaluation criteria summary
 
-When evaluating Azure AI services security, verify the solution addresses MCSB v2 AI-specific controls:
+When evaluating AI workload security, verify the solution addresses MCSB v2 AI-specific controls:
 
 | MCSB Control | Key evaluation points |
 | ------------ | --------------------- |
