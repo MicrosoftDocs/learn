@@ -99,4 +99,4 @@ For SQL Server environments that run in a VM in Azure VMware Solution, you can u
    - Automated patching
 1. Select Subscribe to Extended Security Updates. It sets the host configuration property EnableExtendedSecurityUpdates to True. The subscription is activated after you select Save.
 
-[![Image of SQL Server configuration in Azure portal.](../media/azure-portal-sql.png)](../media/azure-portal-sql.png#lightbox)
+[![Screenshot of SQL Server configuration in Azure portal.](../media/azure-portal-sql.png)](../media/azure-portal-sql.png#lightbox)
