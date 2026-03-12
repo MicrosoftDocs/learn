@@ -9,7 +9,7 @@ You can create and run an application to use Voice Live with a Microsoft Foundry
 
 As you develop an agent in the Microsoft Foundry portal, you can enable **voice mode** to easily integrate Voice Live into your agent, and test it in the playground.
 
-![Screenshot of the agent playground with voice mode enabled](../media/voice-mode.png)
+![Screenshot of the agent playground with voice mode enabled.](../media/voice-mode.png)
 
 After enabling voice mode, you can use the **Configuration** pane to enable Voice Live settings, including:
 
@@ -18,7 +18,7 @@ After enabling voice mode, you can use the **Configuration** pane to enable Voic
   - Voice activity detection (VAD) settings to detect interruptions and end of speech.
   - Audio enhancement to mitigate background noise and audio quality.
 - **Voice**: The specific voice used by the agent, and advanced voice settings to control the tone and speaking rate.
-- **Interim response**: The agent can automatically generate speech while waiting for a model's response (for example )
+- **Interim response**: The agent can automatically generate speech while waiting for a model's response.
 - **Avatar**: Inclusion of a visual avatar to represent the agent.
 
 ## Create a voice agent using code
@@ -101,7 +101,7 @@ To use your agent, you need to build a client application that:
 While you can implement these tasks using any of the functionality available in the APIs, the recommended pattern for Voice Live client applications is to:
 
 - Use Microsoft Entra ID authentication to connect to the agent in a Microsoft Foundry project.
-- Implement a custom **VoiceAssistant** class that encapsulates strongly-typed agent configuration, defines functions to configure and start the Voice live session, and processes voice events.
+- Implement a custom **VoiceAssistant** class that encapsulates strongly typed agent configuration, defines functions to configure and start the Voice live session, and processes voice events.
 - Implement a custom **AudioProcessor** class that encapsulates input and output through audio devices.
 
 The following example shows a minimal implementation of this pattern in Python (using the *PyAudio* library for audio input and output).
