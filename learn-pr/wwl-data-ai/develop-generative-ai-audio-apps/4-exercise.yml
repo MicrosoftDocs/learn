@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.develop-generative-ai-audio-apps.exercise
-title: Exercise - Develop an audio-enabled chat app
+title: Exercise - Use speech-capable generative AI models
 metadata:
-  title: Exercise - Develop an audio-enabled chat app
-  description: "Get practical experience of deploying a multimodal model and creating an audio-enabled chat app."
-  ms.date: 05/6/2025
+  title: Exercise - Use speech-capable generative AI models
+  description: "Get practical experience of using speech-capable generative AI models."
+  ms.date: 03/11/2026
   author: graememalcolm
   ms.author: gmalc
   ms.topic: unit
