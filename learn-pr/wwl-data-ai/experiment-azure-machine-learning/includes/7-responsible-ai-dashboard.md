@@ -40,6 +40,9 @@ Alternatively, find the dashboard in the **Responsible AI** tab of the registere
 
 :::image type="content" source="../media/responsible-model.png" alt-text="Screenshot of the Responsible AI tab of a registered model in Azure Machine Learning studio.":::
 
+> [!Tip]
+> Select each tab below to explore what information each RAI component provides.
+
 # [Error analysis](#tab/error-analysis)
 
 Error analysis shows how prediction errors are distributed across your dataset. You can use the **error tree map** to find combinations of subgroups with higher error rates, or the **error heat map** to see errors across one or two features.
