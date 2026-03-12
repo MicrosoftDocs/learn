@@ -5,6 +5,7 @@ You learned how to:
 - Design access strategies for SaaS, PaaS, IaaS, hybrid, and multicloud resources using identity, networking, and application controls
 - Design a solution for Microsoft Entra ID, including hybrid and multicloud environments
 - Design a solution for external identities, including B2B collaboration and customer identity
+- Design a solution for agent identities using Microsoft Entra Agent ID
 - Design modern authentication and authorization strategies
 - Validate Conditional Access alignment with Zero Trust
 - Specify requirements for securing Active Directory Domain Services

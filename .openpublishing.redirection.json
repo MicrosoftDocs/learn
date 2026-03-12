@@ -64652,6 +64652,141 @@
       "source_path": "learn-pr/wwl-azure/active-directory-domain-services-migration/7-summary-resources.yml",
       "redirect_url": "https://learn.microsoft.com/en-us/training/paths/migrate-servers-workloads-premises-hybrid-environments?tabs=portal",
       "redirect_document_id": false
-    }      
+    },
+    {
+      "source_path": "learn-pr/sqlserver/introduction-sql-server-2022-t-sql-enhancements/index.md",
+      "redirect_url": "/training/modules/introduction-sql-server-t-sql-enhancements/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/introduction-sql-server-2022-t-sql-enhancements/06-date-numeric-enhancements.md",
+      "redirect_url": "/training/modules/introduction-sql-server-t-sql-enhancements/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/introduction-sql-server-2022-t-sql-enhancements/05-encoding-similarity.md",
+      "redirect_url": "/training/modules/introduction-sql-server-t-sql-enhancements/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/introduction-sql-server-2022-t-sql-enhancements/01-introduction.md",
+      "redirect_url": "/training/modules/introduction-sql-server-t-sql-enhancements/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/introduction-sql-server-2022-t-sql-enhancements/04-json-string-aggregation.md",
+      "redirect_url": "/training/modules/introduction-sql-server-t-sql-enhancements/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/introduction-sql-server-2022-t-sql-enhancements/07-knowledge-check.md",
+      "redirect_url": "/training/modules/introduction-sql-server-t-sql-enhancements/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/introduction-sql-server-2022-t-sql-enhancements/03-pattern-matching-text.md",
+      "redirect_url": "/training/modules/introduction-sql-server-t-sql-enhancements/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/introduction-sql-server-2022-t-sql-enhancements/08-summary.md",
+      "redirect_url": "/training/modules/introduction-sql-server-t-sql-enhancements/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/introduction-sql-server-2022-t-sql-enhancements/02-vector-ai-integration.md",
+      "redirect_url": "/training/modules/introduction-sql-server-t-sql-enhancements/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/introduction-to-sql-server-2022/index.md",
+      "redirect_url": "/training/modules/introduction-to-sql-server/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/introduction-to-sql-server-2022/3-ai-powered.md",
+      "redirect_url": "/training/modules/introduction-to-sql-server/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/introduction-to-sql-server-2022/4-analytics.md",
+      "redirect_url": "/training/modules/introduction-to-sql-server/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/introduction-to-sql-server-2022/2-deploy-and-feature-difference.md",
+      "redirect_url": "/training/modules/introduction-to-sql-server/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/introduction-to-sql-server-2022/5-developers.md",
+      "redirect_url": "/training/modules/introduction-to-sql-server/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/introduction-to-sql-server-2022/1-introduction.md",
+      "redirect_url": "/training/modules/introduction-to-sql-server/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/introduction-to-sql-server-2022/8-knowledge-check.md",
+      "redirect_url": "/training/modules/introduction-to-sql-server/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/introduction-to-sql-server-2022/6-performance.md",
+      "redirect_url": "/training/modules/introduction-to-sql-server/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/introduction-to-sql-server-2022/7-security-scalability.md",
+      "redirect_url": "/training/modules/introduction-to-sql-server/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/introduction-to-sql-server-2022/9-summary.md",
+      "redirect_url": "/training/modules/introduction-to-sql-server/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/understand-hybrid-data-platform-sql-server-2022/index.md",
+      "redirect_url": "/training/modules/understand-hybrid-data-platform-sql-server/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/understand-hybrid-data-platform-sql-server-2022/5-azure-active-directory-azure-ad-authentication.md",
+      "redirect_url": "/training/modules/understand-hybrid-data-platform-sql-server/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/understand-hybrid-data-platform-sql-server-2022/3-azure-arc-enabled.md",
+      "redirect_url": "/training/modules/understand-hybrid-data-platform-sql-server/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/understand-hybrid-data-platform-sql-server-2022/2-business-continuity-with-azure-sql-managed-instance.md",
+      "redirect_url": "/training/modules/understand-hybrid-data-platform-sql-server/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/understand-hybrid-data-platform-sql-server-2022/1-introduction.md",
+      "redirect_url": "/training/modules/understand-hybrid-data-platform-sql-server/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/understand-hybrid-data-platform-sql-server-2022/6-knowledge-check.md",
+      "redirect_url": "/training/modules/understand-hybrid-data-platform-sql-server/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/understand-hybrid-data-platform-sql-server-2022/4-near-real-time-analytics-synapse-link-for-sql.md",
+      "redirect_url": "/training/modules/understand-hybrid-data-platform-sql-server/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/understand-hybrid-data-platform-sql-server-2022/7-summary.md",
+      "redirect_url": "/training/modules/understand-hybrid-data-platform-sql-server/",
+      "redirect_document_id": false
+    }
   ]
 }

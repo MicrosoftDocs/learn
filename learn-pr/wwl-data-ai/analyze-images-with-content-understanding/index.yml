@@ -1,0 +1,43 @@
+### YamlMime:Module
+uid: learn.wwl.analyze-images-with-content-understanding
+metadata:
+  title: Analyze Images with Content Understanding
+  description: "Learn how to analyze images with Azure Content Understanding."
+  ms.date: 03/04/2026
+  author: buzahid
+  ms.author: buzahid
+  ms.topic: module-standard-task-based # Please don't edit, used for our analytics
+  ai-usage: ai-assisted
+  ms.service: azure-ai-foundry
+title: Analyze images with Content Understanding
+summary: Learn how to analyze images with Azure Content Understanding.
+abstract: |
+  After completing this module, you'll be able to:
+  - Deploy a content-understanding AI model in Microsoft Foundry.
+  - Test an image-based prompt in the chat playground.
+  - Use the Azure OpenAI SDK to analyze images in Python.
+prerequisites: |
+  Before starting this module, you should have:
+  - Experience with deploying generative AI models in Microsoft Foundry.
+  - Programming experience.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+  - intermediate
+roles: 
+  - ai-engineer
+products: 
+  - azure-ai-foundry
+  - azure-ai-foundry-sdk
+subjects: 
+  - artificial-intelligence
+units:
+- learn.wwl.analyze-images-with-content-understanding.introduction
+- learn.wwl.analyze-images-with-content-understanding.what-is-content-understanding
+- learn.wwl.analyze-images-with-content-understanding.analyze-images-with-content-understanding
+- learn.wwl.analyze-images-with-content-understanding.exercise
+- learn.wwl.analyze-images-with-content-understanding.knowledge-check
+- learn.wwl.analyze-images-with-content-understanding.summary
+badge:
+  uid: learn.wwl.analyze-images-with-content-understanding.badge
+
+

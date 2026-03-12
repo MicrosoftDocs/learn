@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.wwl.generate-video-with-foundry
+metadata:
+  title: Generate videos with Microsoft Foundry
+  description: "Learn how to generate videos from text prompts with Sora 2 in Microsoft Foundry."
+  ms.date: 03/02/2026
+  author: buzahid
+  ms.author: buzahid
+  ms.topic: module-standard-task-based # Please don't edit, used for our analytics
+  ai-usage: ai-assisted
+  ms.service: azure-ai-foundry
+title: Generate videos with Microsoft Foundry
+summary: Learn how to generate videos from text prompts with Sora 2 in Microsoft Foundry.
+abstract: |
+  After completing this module, you'll be able to:
+  - Deploy a video-generating AI model in Microsoft Foundry.
+  - Test a video-based prompt in the chat playground.
+  - Use the Azure OpenAI SDK to generate and remix videos in Python.
+prerequisites: |
+  Before starting this module, you should have:
+  - Experience with deploying generative AI models in Microsoft Foundry.
+  - Programming experience.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+  - intermediate
+roles: 
+  - ai-engineer
+products: 
+  - azure-ai-foundry
+  - azure-ai-foundry-sdk
+subjects: 
+  - artificial-intelligence
+units:
+- learn.wwl.generate-video-with-foundry.introduction
+- learn.wwl.generate-video-with-foundry.deploy-video-model
+- learn.wwl.generate-video-with-foundry.generate-video-from-prompt
+- learn.wwl.generate-video-with-foundry.generate-video-in-python
+- learn.wwl.generate-video-with-foundry.exercise
+- learn.wwl.generate-video-with-foundry.knowledge-check
+- learn.wwl.generate-video-with-foundry.summary
+badge:
+  uid: learn.wwl.generate-video-with-foundry.badge
+
+

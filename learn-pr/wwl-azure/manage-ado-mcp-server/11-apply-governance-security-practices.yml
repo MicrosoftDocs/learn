@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-ado-mcp-server.apply-governance-security-practices
+title: Apply governance and security practices
+metadata:
+  title: Apply Governance And Security Practices
+  description: "Apply governance and security practices"
+  ms.date: 02/27/2026
+  author: wwlpublish
+  ms.author: petender
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/11-apply-governance-security-practices.md)]

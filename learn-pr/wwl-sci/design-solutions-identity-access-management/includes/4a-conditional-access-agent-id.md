@@ -1,20 +1,19 @@
-As AI agents become more prevalent in enterprise environments, they introduce identity and access management challenges that traditional controls weren't designed to address. Conditional Access for Agent ID is a capability in Microsoft Entra ID that extends Conditional Access evaluation and enforcement to AI agents. It treats agents as first-class identities and evaluates their access requests using agent-specific logic, applying the same Zero Trust controls that protect human users and workload identities.
+The previous unit introduced agent identities as a distinct identity class with purpose-built constructs for lifecycle management, governance, and risk detection. Conditional Access for Agent ID builds on that foundation by extending Conditional Access evaluation and enforcement to AI agents—evaluating their access requests using agent-specific logic.
 
-As a security architect, you need to understand how agent identities differ from human and workload identities, when Conditional Access applies to agent flows, and how to design policies that govern agent access without creating coverage gaps.
+As a security architect, you need to understand when Conditional Access applies to agent flows and how to design policies that govern agent access without creating coverage gaps.
 
-## Agent identity architecture in Microsoft Entra
+## Agent identity constructs relevant to Conditional Access
 
-
-Microsoft Entra Agent ID introduces first-class identity constructs specifically for agents. These constructs are modeled as applications (agent identities) and users (agent users), separate from existing human user and workload identity models.
+The previous unit introduced the agent identity hierarchy. The following table recaps each construct with its relevance to Conditional Access policy design:
 
 | Term | Description |
 |---|---|
-| **Agent blueprint** | A logical definition of an agent type, represented by a service principal in the tenant. Blueprints can't independently access resources—they exist only to create agent identities and agent users. |
-| **Agent identity** | An instantiated agent identity that performs token acquisitions to access resources. This is the identity that performs agentic tasks. |
-| **Agent user** | A nonhuman user identity used for agent experiences that require a user account. Performs token acquisitions to access resources. |
-| **Agent resource** | An agent blueprint or agent identity acting as the resource application, for example in agent-to-agent (A2A) flows. |
+| **Agent blueprint** | A logical definition of an agent type, represented by a service principal in the tenant. Blueprints can't independently access resources—they exist to create agent identities and agent users. Policies targeting a blueprint automatically cover all child agent identities. |
+| **Agent identity** | An instantiated identity that performs token acquisitions and accesses resources. This is the identity evaluated by Conditional Access during resource access flows. |
+| **Agent user** | A nonhuman user identity for scenarios requiring a user account—mailbox access, Teams membership, or collaborative workflows. Evaluated by Conditional Access separately from agent identities. |
+| **Agent resource** | An agent blueprint or agent identity acting as the target of another agent's access request in agent-to-agent (A2A) flows. |
 
-Understanding this hierarchy matters for policy design. For example, policies targeting an agent blueprint automatically cover the agent identities parented by that blueprint, allowing you to manage groups of related agents through a single policy assignment.
+When an agent accesses another agent as a resource, both the actor and the target are evaluated by Conditional Access. Blueprint-level scoping is the recommended approach for managing related agent families, since policies cascade to all child agent identities.
 
 ## When Conditional Access applies to agents
 

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-testing-ai-powered-business-solutions.recommend-process-metrics-test-agents
+title: "Recommend process metrics for testing AI agents"
+metadata:
+  title: "Recommend Process Metrics for Testing AI Agents"
+  description: "Learn how to recommend process metrics for testing AI agents to ensure reliability, usability, and compliance before production deployment."
+  ms.date: 02/13/2026
+  author: msdavidram
+  ms.author: taeldin
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/2-recommend-process-metrics-test-agents.md)]
