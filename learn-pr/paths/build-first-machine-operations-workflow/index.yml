@@ -29,6 +29,7 @@ subjects:
 - artificial-intelligence
 - machine-learning
 modules:
+- learn.wwl.experiment-azure-machine-learning
 - learn.wwl.use-azure-machine-learn-job-for-automation
 - learn.wwl.trigger-azure-machine-learn-jobs-github-actions
 - learn.wwl.trigger-github-actions-trunk-based-development
