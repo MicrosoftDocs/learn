@@ -8,7 +8,7 @@ metadata:
   ms.author: calopez
   ms.topic: module
   ms.service: azure-cosmos-db
-  ms.subservice: mongodb-vcore
+  ms.subservice: mongodb
   ai-usage: human-only
 title: Migrate to vCore-based Azure Cosmos DB for MongoDB
 summary: Explore migrating to vCore-based Azure Cosmos DB for MongoDB, utilizing Azure Data Studio, MongoDB migration tools, and Azure Databricks for data migration.
@@ -35,4 +35,4 @@ units:
 - learn.wwl.migrate-vcore-based-azure-cosmos-db-mongodb.knowledge-check
 - learn.wwl.migrate-vcore-based-azure-cosmos-db-mongodb.summary
 badge:
-  uid: learn.wwl.migrate-vcore-based-azure-cosmos-db-mongodb.badge
+  uid: learn.wwl.migrate-vcore-based-azure-cosmos-db-mongodb.badge

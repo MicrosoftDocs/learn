@@ -1,17 +1,15 @@
-To handle prompts that include audio, you need to deploy a *multimodal* generative AI model - in other words, a model that supports not only text-based input, but audio-based input as well. Multimodal models available in Microsoft Foundry include (among others):
+Microsoft Foundry Models is a model catalog that includes generative AI models from multiple providers. Different models have different capabilities, and are optimized for different use-cases.
 
-- Microsoft **Phi-4-multimodal-instruct**
-- OpenAI **gpt-4o**
-- OpenAI **gpt-4o-mini**
+To find a suitable model, you can use the filter and search features in the Microsoft Foundry Portal.
+
+![Screenshot of the model catalog in the Foundry Portal.](../media/model-catalog.png)
+
+When it comes to speech-capable models, there are two common use-cases to consider:
+
+- Generative AI models that can transcribe speech to text.
+- Generative AI models that can synthesize text to speech.
+
+Microsoft Foundry provides models that support both of these use-cases, including specialized speech-capable models from the **gpt-4o** family of OpenAI models.
 
 > [!TIP]
-> To learn more about available models in Microsoft Foundry, see the **[Model catalog and collections in Microsoft Foundry portal](/azure/ai-foundry/how-to/model-catalog-overview)** article in the Microsoft Foundry documentation.
-
-## Testing multimodal models with audio-based prompts
-
-After deploying a multimodal model, you can test it in the chat playground in Microsoft Foundry portal. Some models allow you to include audio attachments in the playground, either by uploading a file or recording a message.
-
-![Screenshot of the chat playground with an audio-based prompt.](../media/audio-prompt.png)
-
-In the chat playground, you can upload a local audio file and add text to the message to elicit a response from a multimodal model.
-
+> To learn more about available models in Microsoft Foundry, see the **[Microsoft Foundry Models overview](/azure/foundry/concepts/foundry-models-overview?azure-portal=true)** article in the Microsoft Foundry documentation.

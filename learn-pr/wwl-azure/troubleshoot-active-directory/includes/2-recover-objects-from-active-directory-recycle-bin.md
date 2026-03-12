@@ -15,11 +15,11 @@ If you have not enabled Active Directory Recycle Bin, you can reanimate a delete
 > The AD DS database is self-maintaining. Every 12 hours, by default, each domain controller runs garbage collection. This accomplishes two tasks. First, it removes deleted objects that have outlived their tombstone lifetime. Second, the garbage collection process performs online defragmentation. 
 
 
-To reanimate a deleted object, you can use the Ldp tool. Ldp.exe is a command-line tool that you use to perform Lightweight Directory Access Protocol (LDAP) searches against AD DS. You also can use it to perform maintenance on AD DS or Active Directory Lightweight Directory Services (AD LDS).
+To reanimate a deleted object, you can use the Ldp tool. Ldp.exe is a GUI-based LDAP tool that you use to perform Lightweight Directory Access Protocol (LDAP) searches against AD DS. You also can use it to perform maintenance on AD DS or Active Directory Lightweight Directory Services (AD LDS).
 
 ## Implement Active Directory Recycle Bin
 
-Active Directory Recycle Bin simplifies the process for restoring deleted objects through authoritative restore and tombstone reanimation. With Active Directory Recycle Bin, you can restore deleted objects with full functionality without having to:
+Active Directory Recycle Bin simplifies the process for restoring deleted objects compared to authoritative restore and tombstone reanimation. With Active Directory Recycle Bin, you can restore deleted objects with full functionality without having to:
 
 - Restore Active Directory data from backups
 
