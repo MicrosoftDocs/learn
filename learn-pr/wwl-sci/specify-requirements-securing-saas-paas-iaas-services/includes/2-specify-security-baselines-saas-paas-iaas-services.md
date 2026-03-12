@@ -95,7 +95,7 @@ For web applications hosted on [Azure App Service](/azure/app-service/overview) 
 - **Transport security**: Enforce HTTPS-only traffic and require TLS 1.2 or higher
 - **Key protection**: Store secrets, certificates, and encryption keys in [Azure Key Vault](/azure/key-vault/general/overview)
 - **Web application firewall**: Deploy [Azure WAF](/azure/web-application-firewall/overview) to protect against common exploits like SQL injection and cross-site scripting
-- **Network isolation**: Use [Private Link (private endpoints)](/azure/app-service/overview-private-endpoint) and [VNet integration](/azure/app-service/overview-vnet-integration) to restrict access to PaaS resources and disable public network exposure where possible
+- **Network isolation**: Use [Private Link (private endpoints)](/azure/app-service/overview-private-endpoint) and [VNet integration](/azure/app-service/overview-vnet-integration) to restrict access to PaaS resources and disable public network exposure where possible.
 
 ### Threat modeling
 
