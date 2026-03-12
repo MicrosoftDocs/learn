@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.run-training-scripts-track-models-mlflow.exercise
-title: Exercise - Run a training script and track with MLflow
+title: Exercise - Optimize model training in Azure Machine Learning
 metadata:
-  title: Exercise - Run a training script and track with MLflow
+  title: Exercise - Optimize model training in Azure Machine Learning
   description: Explore how to run a script as a command job and track model metrics with MLflow in Azure Machine Learning through hands-on exercises.
   author: wwlpublish
   ms.author: madiepev
