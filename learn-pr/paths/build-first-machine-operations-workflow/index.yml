@@ -3,13 +3,10 @@ uid: learn.wwl.build-first-machine-operations-workflow
 metadata:
   title: Operationalize machine learning models (MLOps)
   description: Learn the full MLOps lifecycle for machine learning models, from experimentation and pipeline automation to CI/CD, automated testing, and model deployment in production.
-  ms.date: 12/01/2025
+  ms.date: 03/12/2026
   author: wwlpublish
   ms.author: madiepev
   ms.topic: learning-path
-  ms.custom:
-    - build-2023
-    - build-2023-dataai
 title: Operationalize machine learning models (MLOps)
 prerequisites: |
   - Programming experience with Python or R
