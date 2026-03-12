@@ -83,58 +83,42 @@ To demonstrate good use of Key Vault, modify your app to load secrets from the v
 1. Open `Program.cs`, delete the contents, and replace them with the following code.
 
     ```csharp
-    using System;
     using Azure.Identity;
-    using Microsoft.AspNetCore;
-    using Microsoft.AspNetCore.Hosting;
-    using Microsoft.Extensions.Configuration;
-    using Microsoft.Extensions.Hosting;
 
-    namespace KeyVaultDemoApp
-    {
-        public class Program
-        {
-            public static void Main(string[] args)
-            {
-                CreateHostBuilder(args).Build().Run();
-            }
+    var builder = WebApplication.CreateBuilder(args);
 
-            public static IHostBuilder CreateHostBuilder(string[] args) =>
-                Host.CreateDefaultBuilder(args)
-                    .ConfigureWebHostDefaults(webBuilder =>
-                    {
-                        webBuilder.UseStartup<Startup>();
-                    })
-                    .ConfigureAppConfiguration((context, config) =>
-                    {
-                        // Build the current set of configuration to load values from
-                        // JSON files and environment variables, including VaultName.
-                        var builtConfig = config.Build();
+    // Get the vault name from configuration
+    var vaultName = builder.Configuration["VaultName"];
+    var vaultUri = new Uri($"https://{vaultName}.vault.azure.net/");
 
-                        // Use VaultName from the configuration to create the full vault URI.
-                        var vaultName = builtConfig["VaultName"];
-                        Uri vaultUri = new Uri($"https://{vaultName}.vault.azure.net/");
+    // Load all secrets from the vault into configuration. This will automatically
+    // authenticate to the vault using a managed identity. If a managed identity
+    // is not available, it will check if Visual Studio and/or the Azure CLI are
+    // installed locally and see if they are configured with credentials that can
+    // access the vault.
+    builder.Configuration.AddAzureKeyVault(vaultUri, new DefaultAzureCredential());
 
-                        // Load all secrets from the vault into configuration. This will automatically
-                        // authenticate to the vault using a managed identity. If a managed identity
-                        // is not available, it will check if Visual Studio and/or the Azure CLI are
-                        // installed locally and see if they are configured with credentials that can
-                        // access the vault.
-                        config.AddAzureKeyVault(vaultUri, new DefaultAzureCredential());
-                    });
-        }
-    }
+    // Add services to the container
+    builder.Services.AddControllers();
+
+    var app = builder.Build();
+
+    app.UseHttpsRedirection();
+    app.UseAuthorization();
+    app.MapControllers();
+
+    app.Run();
     ```
 
     > [!IMPORTANT]
     > Make sure to save files when you're done editing them. You can save files either through the "..." menu, or the accelerator key (**Ctrl**+**S** on Windows and Linux, **Cmd**+**S** on macOS).
 
-    The only change from the starter code is the addition of `ConfigureAppConfiguration`. This element is where we load the vault name from configuration and call `AddAzureKeyVault` with it.
+    This code uses the .NET minimal hosting model. It loads the vault name from configuration and calls `AddAzureKeyVault` to load all secrets from the vault at startup.
 
 1. For the controller, create a new file in the `Controllers` folder called `SecretTestController.cs`, and paste in the following code.
 
     > [!TIP]
-    > To create a new file, use the `touch` command in Cloud Shell. In this case, run the `touch Controllers/SecretTestController.cs` command. To find it in the top right corner of the *Files* pane of the editor, select the **Refresh** icon.
+    > To create a new file, use the `mkdir` and `touch` commands in Cloud Shell. In this case, run `mkdir Controllers && touch Controllers/SecretTestController.cs`. To find it in the top right corner of the *Files* pane of the editor, select the **Refresh** icon.
 
     ```csharp
     using System;

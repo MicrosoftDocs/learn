@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.write-first-query-kusto-query-language.exercise-select-columns-project-operator
+title: Exercise - Select columns to return by using the project operator
+metadata:
+  unitType: exercise
+  title: Exercise - Select columns to return by using the project operator
+  description: Exercise - Select columns to return by using the project operator.
+  ms.date: 02/09/2026
+  author: Naorbt00
+  ms.author: naorbiton 
+  ms.topic: unit
+durationInMinutes: 4 
+content: |
+  [!include[](includes/5-exercise-select-columns-project-operator.md)]

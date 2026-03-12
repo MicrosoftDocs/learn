@@ -2,6 +2,9 @@
 
 >[!VIDEO https://learn-video.azurefd.net/vod/player?id=373e395b-a17e-4b40-ae2b-e1977ff6859f]
 
+> [!TIP]
+> [Try the Computing History app shown in this video for yourself](https://aka.ms/mslearn-ai-workloads?azure-portal=true).
+
 > [!NOTE]
 > See the **Text and images** tab for more details!
 

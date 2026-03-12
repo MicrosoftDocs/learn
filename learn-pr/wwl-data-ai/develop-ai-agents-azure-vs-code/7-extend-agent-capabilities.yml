@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.develop-ai-agents-azure-vs-code.extend-agent-capabilities
+title: Extend agent capabilities with tools
+metadata:
+  title: Extend Agent Capabilities with Tools
+  description: Learn how to add built-in tools and Model Context Protocol servers to extend agent functionality.
+  ms.date: 02/12/2026
+  author: ivorb
+  ms.author: berryivor
+  ms.topic: unit
+  ai-usage: ai-generated
+durationInMinutes: 9
+content: |
+  [!include[](includes/7-extend-agent-capabilities.md)]

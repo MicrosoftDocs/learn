@@ -1,16 +1,16 @@
 ### YamlMime:ModuleUnit
 uid: learn.security-copilot-describe-agents.describe-phishing-triage-agent
-title: Describe the Phishing Triage Agent
+title: Describe the Security Copilot agents in Microsoft Defender
 metadata:
-  title: Describe the Phishing Triage Agent
-  description: Describe the Phishing Triage Agent.
+  title: Describe the Security Copilot agents in Microsoft Defender
+  description: Describe the Security Copilot agents in Microsoft Defender.
   author: wwlpublish
   ms.author: ceperezb
-  ms.date: 05/08/2025
+  ms.date: 02/15/2026
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
-durationInMinutes: 4
+durationInMinutes: 5
 content: |
   [!include[](includes/5-describe-phishing-triage-agent.md)]
 

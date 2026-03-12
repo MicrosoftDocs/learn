@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-implement-sql-solutions-ai-assisted-tools.describe-ai-assisted-development-tools
+title: Describe AI-assisted development tools available for Microsoft SQL platforms
+metadata:
+  title: Describe AI-assisted development tools available for Microsoft SQL platforms
+  description: Learn about GitHub Copilot and Fabric Copilot, the primary AI-assisted development tools for SQL Server, Azure SQL, and SQL databases in Microsoft Fabric.
+  ms.date: 02/02/2026
+  author: JulianePadrao
+  ms.author: jupadrao
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-describe-ai-assisted-development-tools.md)]

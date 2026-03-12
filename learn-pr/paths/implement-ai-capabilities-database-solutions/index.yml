@@ -1,0 +1,33 @@
+### YamlMime:LearningPath
+uid: learn.wwl.implement-ai-capabilities-database-solutions
+metadata:
+  title: Implement AI capabilities in database solutions
+  description: Learn to design intelligent search, work with models and embeddings, and build Retrieval Augmented Generation (RAG) patterns in T-SQL.
+  ms.date: 02/05/2026
+  author: calopez
+  ms.author: calopez
+  ms.topic: learning-path
+title: Implement AI capabilities in database solutions
+prerequisites: |
+  Before starting this learning path, you should have experience working with Azure SQL Database or SQL Server, writing Transact-SQL queries, and a general understanding of AI concepts.
+summary: |
+  This learning path explores how to implement AI capabilities directly in Azure SQL Database. You learn to design intelligent search using full-text and vector search, integrate AI models and embeddings, and build Retrieval Augmented Generation (RAG) solutions entirely in T-SQL.
+iconUrl: /training/achievements/generic-trophy.svg
+levels:
+- intermediate
+roles:
+- developer
+- data-engineer
+products:
+- azure-sql-database
+- sql-server
+- ai-services
+subjects:
+- artificial-intelligence
+- databases
+modules:
+- learn.wwl.design-implement-intelligent-search-with-sql
+- learn.wwl.design-implement-models-embeddings-with-sql
+- learn.wwl.design-implement-rag-with-sql
+trophy:
+  uid: learn.wwl.implement-ai-capabilities-database-solutions.badge

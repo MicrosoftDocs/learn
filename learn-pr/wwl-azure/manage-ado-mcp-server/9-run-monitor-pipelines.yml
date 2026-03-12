@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-ado-mcp-server.run-monitor-pipelines
+title: Run and monitor pipelines
+metadata:
+  title: Run And Monitor Pipelines
+  description: "Run and monitor pipelines"
+  ms.date: 02/27/2026
+  author: wwlpublish
+  ms.author: petender
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/9-run-monitor-pipelines.md)]

@@ -3,7 +3,7 @@ uid: learn.wwl.discover-agents-with-a2a
 metadata:
   title: Discover Azure AI Agents with A2A
   description: Learn how to implement the A2A protocol to enable agent discovery, direct communication, and coordinated task execution across remote agents.
-  ms.date: 08/01/2025
+  ms.date: 02/24/2026
   author: buzahid
   ms.author: buzahid
   ms.topic: module-standard-task-based # Please don't edit, used for our analytics

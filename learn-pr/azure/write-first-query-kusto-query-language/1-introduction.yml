@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.write-first-query-kusto-query-language.introduction
+title: Introduction
+metadata:
+  unitType: introduction
+  title: Introduction
+  description: Introduction.
+  ms.date: 02/09/2026
+  author: Naorbt00
+  ms.author: naorbiton 
+  ms.topic: unit
+durationInMinutes: 2 
+content: |
+  [!include[](includes/1-introduction.md)]

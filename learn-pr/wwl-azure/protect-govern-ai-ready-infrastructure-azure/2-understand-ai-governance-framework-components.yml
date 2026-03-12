@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.protect-govern-ai-ready-infrastructure-azure.understand-ai-governance-framework-components
+title: "Understand AI governance framework components"
+metadata:
+  title: "Understand AI governance framework components"
+  description: "Understand AI governance framework components."
+  ms.date: 02/03/2026
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: unit
+durationInMinutes: 12
+content: |
+  [!include[](includes/2-understand-ai-governance-framework-components.md)]

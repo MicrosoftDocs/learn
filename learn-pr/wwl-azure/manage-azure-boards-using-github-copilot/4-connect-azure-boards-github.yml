@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-azure-boards-using-github-copilot.connect-azure-boards-github
+title: Connect Azure Boards to GitHub repositories
+metadata:
+  title: Connect Azure Boards to GitHub repositories
+  description: "Connect Azure Boards to GitHub repositories"
+  ms.date: 02/25/2026
+  author: wwlpublish
+  ms.author: petender
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/4-connect-azure-boards-github.md)]

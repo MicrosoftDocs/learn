@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.instrument-app-opentelemetry.debug-distributed-flows-trace-data
+title: Debug distributed flows with trace data
+metadata:
+  title: Debug Distributed Flows with Trace Data
+  description: Debug distributed flows with trace data
+  ms.date: 02/19/2026
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: unit
+durationInMinutes: 9
+content: |
+  [!include[](includes/6-debug-distributed-flows-trace-data.md)]

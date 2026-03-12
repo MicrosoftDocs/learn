@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.wwl.protect-govern-ai-ready-infrastructure-azure
+metadata:
+  title: "Protect and Govern AI Ready Infrastructure with Azure"
+  description: "Design and deploy governed AI infrastructure by understanding governance frameworks, enforcing policies and access controls, implementing responsible AI safeguards, and completing hands-on exercises to ensure compliant, secure AI workloads."
+  ms.date: 02/03/2026
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: module
+  ms.service: azure
+title: "Protect and govern AI ready infrastructure with Azure"
+summary: Design and deploy governed AI infrastructure by understanding governance frameworks, enforcing policies and access controls, implementing responsible AI safeguards, and completing hands-on exercises to ensure compliant, secure AI workloads.
+abstract: |
+  In this module, you learn to:
+  - Evaluate AI governance requirements and align them with Microsoft Foundry capabilities
+  - Configure Azure Policy and role-based access controls for AI workloads
+  - Implement content filtering and responsible AI safeguards using Azure AI services
+  - Establish monitoring and audit trails for AI operations using Azure Monitor and Microsoft Purview
+  - Apply governance best practices for model lifecycle management and data protection
+prerequisites: |
+  - Familiarity with Azure fundamentals, including subscriptions, resource groups, and Azure role-based access control (RBAC)
+  - Basic understanding of Azure AI services and Microsoft Foundry concepts and deployment models
+  - Awareness of AI governance, security, and compliance principles such as data residency and policy enforcement
+  - Experience navigating the Azure portal and reviewing resource configurations, logs, and monitoring data
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- administrator
+- ai-engineer
+products:
+- azure
+subjects:
+- infrastructure
+units:
+- learn.wwl.protect-govern-ai-ready-infrastructure-azure.introduction
+- learn.wwl.protect-govern-ai-ready-infrastructure-azure.understand-ai-governance-framework-components
+- learn.wwl.protect-govern-ai-ready-infrastructure-azure.configure-policies-access-controls
+- learn.wwl.protect-govern-ai-ready-infrastructure-azure.implement-responsible-safeguards-content-filter
+- learn.wwl.protect-govern-ai-ready-infrastructure-azure.exercise-deploy-governed-ai-infrastructure
+- learn.wwl.protect-govern-ai-ready-infrastructure-azure.knowledge-check
+- learn.wwl.protect-govern-ai-ready-infrastructure-azure.summary
+badge:
+  uid: learn.wwl.protect-govern-ai-ready-infrastructure-azure.badge

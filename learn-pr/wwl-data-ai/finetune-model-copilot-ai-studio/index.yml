@@ -2,10 +2,10 @@
 uid: learn.wwl.finetune-model-copilot-ai-studio
 metadata:
   title: Fine-tune a language model with Microsoft Foundry
-  description: When you want to maximize the consistency in the responses of your language model, you can fine-tune a base model before integrating the model into your chat application. Learn how to fine-tune a language model and then integrate the model with Microsoft Foundry.
+  description: Learn how to fine-tune language models using supervised fine-tuning, reinforcement fine-tuning, or direct preference optimization. Discover how to prepare training data manually or generate synthetic data to maximize consistency in your model's responses.
   author: madiepev
   ms.author: madiepev
-  ms.date: 08/28/2025
+  ms.date: 02/01/2026
   ms.service: azure-ai-foundry
   ms.topic: module-standard-task-based
   ai-usage: ai-assisted
@@ -17,7 +17,8 @@ summary: "Train a base language model on a chat-completion task. The model catal
 abstract: |
   By the end of this module, you'll be able to:
     - Understand when to fine-tune a model.
-    - Prepare your data to fine-tune a chat completion model.
+    - Explore different fine-tuning techniques including supervised fine-tuning, reinforcement fine-tuning, and direct preference optimization.
+    - Prepare your data to fine-tune a chat completion model, including generating synthetic data.
     - Fine-tune a base model in the Microsoft Foundry portal.
 prerequisites: |
   Before starting this module, you should be familiar with fundamental AI concepts and services in Azure.

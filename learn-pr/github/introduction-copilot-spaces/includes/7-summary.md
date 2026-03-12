@@ -12,3 +12,7 @@ Here are some links to more information on the topics we discussed in this modul
 
 - [What is GitHub Copilot?](https://docs.github.com/en/copilot/overview-of-github-copilot)
 - [What is GitHub Copilot Spaces? Centralize your project's context | GitHub Checkout](https://youtu.be/a0LWEWLUt48?si=rXvrTPJJBIBbYBJA)
+
+## Provide feedback
+
+Use this [issue form](https://github.com/githubpartners/microsoft-learn/issues/new/choose) to provide content feedback or suggested changes for this Microsoft Learn module. GitHub maintains this content and a team member will triage the request. Thank you for taking the time to improve our content!

@@ -2,17 +2,12 @@
 uid: learn.wwl.introduction-zero-trust-best-practice-frameworks.knowledge-check
 title: Module assessment
 metadata:
-  hidden_question_numbers: ["944F9AAF_22","944F9AAF_34","944F9AAF_79","944F9AAF_87"]
-  ai_generated_module_assessment: true
   title: Module assessment
   description: "Knowledge check for module on the topic: Introduction to Zero Trust and best practice frameworks."
-  ms.date: 09/26/2024
+  ms.date: 02/11/2026
   author: ceperezb
   ms.author: ceperezb
   ms.topic: unit
-  content_well_notification: 
-    - AI-contribution
-  ai-usage: ai-assisted
   module_assessment: true
 durationInMinutes: 3
 ###########################################################################
@@ -32,56 +27,58 @@ durationInMinutes: 3
 content: |
 quiz:
   questions:
-  - content: "What is the core principle of Zero Trust security?"
+  - content: "Which of the following best describes an antipattern in cybersecurity?"
     choices:
-      - content: "Assume everything inside the network is safe"
-        isCorrect: false
-        explanation: "The core principle of Zero Trust is to assume nothing inside or outside the network is safe and to verify every access request."
-      - content: "Assume nothing inside or outside the network is safe and verify every access request"
-        isCorrect: true
-        explanation: "The core principle of Zero Trust is to assume nothing inside or outside the network is safe and to verify every access request."
-      - content: "Allow all access requests by default"
-        isCorrect: false
-        explanation: "Zero Trust does not allow all access requests by default, but verifies every access request."
-      - content: "Only allow access requests from trusted sources"
-        isCorrect: false
-        explanation: "Zero Trust does not only allow access requests from trusted sources, but verifies every access request."
-  - content: "What does the Zero Trust Rapid Modernization Plan (RaMP) aim to do?"
-    choices:
-    - content: "Rapidly migrate all network traffic to a Zero Trust architecture"
+    - content: "A recommended approach that has been found to be most effective"
       isCorrect: false
-      explanation: "The Zero Trust RaMP does not aim to rapidly migrate all network traffic to a Zero Trust architecture, but rather to provide a structured approach to implement Zero Trust principles in phases."
-    - content: "Provide a structured approach to implement Zero Trust principles in phases"
+      explanation: "A recommended approach that has been found to be most effective describes a best practice, not an antipattern. An antipattern is a common mistake that leads to negative outcomes."
+    - content: "A common mistake that leads to negative security outcomes"
       isCorrect: true
-      explanation: "The Zero Trust RaMP aims to provide a structured approach to implement Zero Trust principles in phases, rather than rapidly migrating all network traffic to a Zero Trust architecture."
-    - content: "Implement a single Zero Trust solution for all security needs"
+      explanation: "An antipattern is a common mistake that leads to negative outcomes. It's the opposite of a best practice. Many best practices are designed to help organizations avoid antipatterns."
+    - content: "A security control that monitors compliance against industry standards"
       isCorrect: false
-      explanation: "The Zero Trust RaMP does not aim to implement a single Zero Trust solution for all security needs, but rather to provide a structured approach to implement Zero Trust principles in phases."
-    - content: "Reduce the number of security controls to simplify the security architecture"
-      isCorrect: false
-      explanation: "The Zero Trust RaMP does not aim to reduce the number of security controls to simplify the security architecture, but rather to provide a structured approach to implement Zero Trust principles in phases."
-  - content: "What is the purpose of the Secure Data with Zero Trust initiative?"
+      explanation: "Monitoring compliance against industry standards describes a function of the Microsoft cloud security benchmark, not an antipattern. An antipattern is a common mistake that leads to negative outcomes."
+  - content: "What are the three guiding principles of Zero Trust?"
     choices:
-    - content: "To ensure data is encrypted at rest and in transit"
+    - content: "Confidentiality, integrity, and availability"
       isCorrect: false
-      explanation: "While encryption is a part of securing data with Zero Trust, the initiative is broader and aims to protect data through measures such as data classification, access controls, and auditing."
-    - content: "To implement a secure data center"
-      isCorrect: false
-      explanation: "The Secure Data with Zero Trust initiative is not specifically aimed at implementing a secure data center, but rather at protecting data through measures such as data classification, access controls, and auditing."
-    - content: "To protect data through data classification, access controls, and auditing"
+      explanation: "Confidentiality, integrity, and availability are the CIA triad of information security. The three guiding principles of Zero Trust are verify explicitly, use least privilege access, and assume breach."
+    - content: "Verify explicitly, use least privilege access, and assume breach"
       isCorrect: true
-      explanation: "The purpose of the Secure Data with Zero Trust initiative is to protect data through measures such as data classification, access controls, and auditing. While encryption is a part of securing data with Zero Trust, the initiative is broader and aimed at ensuring that data is protected at all times."
-  - content: "What is the role of automation and orchestration in implementing Zero Trust security?"
+      explanation: "The three guiding principles of Zero Trust are verify explicitly, use least privilege access, and assume breach. These principles form the foundation of the Zero Trust security strategy."
+    - content: "Authenticate users, encrypt data, and segment networks"
+      isCorrect: false
+      explanation: "While these are important security practices, they aren't the three guiding principles of Zero Trust. The correct principles are verify explicitly, use least privilege access, and assume breach."
+  - content: "Which framework provides prescriptive security controls organized into security domains and mapped to industry compliance standards like CIS, NIST, and PCI-DSS?"
     choices:
-    - content: "To replace human decision-making and intervention"
+    - content: "The Cloud Adoption Framework (CAF)"
       isCorrect: false
-      explanation: "Automation and orchestration do not aim to replace human decision-making and intervention, but rather to streamline security processes and enable faster response times."
-    - content: "To increase the complexity of security processes"
+      explanation: "CAF is a structured roadmap for cloud adoption, not a controls-based compliance framework. The Microsoft cloud security benchmark (MCSB) provides prescriptive security controls mapped to industry standards."
+    - content: "The Azure Well-Architected Framework (WAF)"
       isCorrect: false
-      explanation: "Automation and orchestration do not aim to increase the complexity of security processes, but rather to streamline security operations and make them more efficient."
-    - content: "To streamline security processes and enable faster response times"
+      explanation: "WAF is a design framework focused on improving workload quality across five pillars. The Microsoft cloud security benchmark (MCSB) provides prescriptive security controls mapped to industry standards."
+    - content: "The Microsoft cloud security benchmark (MCSB)"
       isCorrect: true
-      explanation: "The role of automation and orchestration in implementing Zero Trust security is to streamline security operations, enable faster response times, and reduce the risk of human error by automating repetitive tasks and providing a centralized view of security data."
-    - content: "To replace all security tools with automated solutions"
+      explanation: "MCSB provides prescriptive best practices and recommendations for cloud security, with controls mapped to industry standards such as CIS, NIST, and PCI-DSS."
+  - content: "How does the Zero Trust adoption framework differ from the Cloud Adoption Framework in its approach to scaling?"
+    choices:
+    - content: "It introduces new security configurations across an entire digital estate rather than introducing new apps and services one at a time."
+      isCorrect: true
+      explanation: "The Cloud Adoption Framework focuses on introducing new apps into an organization, with a repeatable process for each workload. The Zero Trust adoption framework introduces new security configurations across the entire digital estate, scaling in two dimensions."
+    - content: "It focuses exclusively on Azure workloads while the Cloud Adoption Framework covers multicloud environments."
       isCorrect: false
-      explanation: "Automation and orchestration do not aim to replace all security tools with automated solutions, but rather to integrate and orchestrate existing security tools and processes."
+      explanation: "The Zero Trust adoption framework applies across the entire digital estate, not just Azure workloads. Its key difference from CAF is that it introduces security configurations across all assets rather than adding individual apps and services."
+    - content: "It replaces the Cloud Adoption Framework with a faster deployment methodology."
+      isCorrect: false
+      explanation: "The Zero Trust adoption framework doesn't replace CAF. It adapts CAF's lifecycle phases for security transformation. Both frameworks can be used together for complementary purposes."
+  - content: "At which level does the Azure Well-Architected Framework (WAF) primarily operate?"
+    choices:
+    - content: "The organizational and strategy level"
+      isCorrect: false
+      explanation: "The organizational and strategy level describes the Cloud Adoption Framework (CAF) or the Zero Trust adoption framework. WAF operates at the workload level, helping teams improve individual workload quality."
+    - content: "The workload level"
+      isCorrect: true
+      explanation: "WAF operates at the workload level. It helps teams responsible for improving individual workloads and addressing cross-cutting design concerns across five pillars: Reliability, Security, Cost Optimization, Operational Excellence, and Performance Efficiency."
+    - content: "The security control and compliance level"
+      isCorrect: false
+      explanation: "The security control and compliance level describes the Microsoft cloud security benchmark (MCSB). WAF operates at the workload level, focusing on design quality across five pillars."

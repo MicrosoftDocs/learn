@@ -4,7 +4,7 @@ title: Choose granularity on a column or table based on requirements
 metadata:
   title: Choose Granularity on a Column or Table Based on Requirements
   description: Learn how to choose the appropriate data granularity for fact and dimension tables in Azure Databricks based on business requirements, query patterns, and cost considerations.
-  ms.date: 12/07/2025
+  ms.date: 02/10/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit

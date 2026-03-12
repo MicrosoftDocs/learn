@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-identity-based-security-azure-machine-learning.summary
+title: "Summary"
+metadata:
+  title: "Summary"
+  description: "Learn key principles and advanced controls to secure AI workspaces in Azure Machine Learning while maintaining agility and compliance."
+  ms.date: 02/05/2026
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/8-summary.md)]

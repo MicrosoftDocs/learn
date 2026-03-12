@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.introduction-zero-trust-best-practice-frameworks.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: "Introduction to the module on Zero Trust and best practice frameworks for cybersecurity architects."
+  ms.date: 02/11/2026
+  author: ceperezb
+  ms.author: ceperezb
+  ms.topic: unit
+  ai-usage: ai-generated
+durationInMinutes: 2
+content: |
+  [!include[](includes/0-introduction.md)]

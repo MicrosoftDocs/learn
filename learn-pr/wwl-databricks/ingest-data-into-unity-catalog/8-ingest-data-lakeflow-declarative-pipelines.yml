@@ -4,7 +4,7 @@ title: Ingest data with Lakeflow Spark Declarative Pipelines
 metadata:
   title: Ingest Data with Lakeflow Spark Declarative Pipelines
   description: Learn how to ingest data into Azure Databricks using Lakeflow Spark Declarative Pipelines, including configuring streaming tables, flows, and handling schema evolution for ingestion from cloud storage and message buses.
-  ms.date: 12/07/2025
+  ms.date: 02/16/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit

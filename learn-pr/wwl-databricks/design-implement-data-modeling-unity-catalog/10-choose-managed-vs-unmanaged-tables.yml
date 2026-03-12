@@ -4,7 +4,7 @@ title: Choose managed vs unmanaged tables
 metadata:
   title: Choose Managed vs Unmanaged Tables
   description: Learn how to choose between managed and external (unmanaged) tables in Azure Databricks Unity Catalog based on data ownership, lifecycle, governance, and integration requirements.
-  ms.date: 12/07/2025
+  ms.date: 02/10/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit

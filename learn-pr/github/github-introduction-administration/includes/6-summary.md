@@ -28,3 +28,7 @@ Here are some links to more information on the topics we discussed in this modul
 - [Setting base permissions for an organization](https://docs.github.com/organizations/managing-user-access-to-your-organizations-repositories/setting-base-permissions-for-an-organization?azure-portal=true)
 - [Roles in an enterprise](https://docs.github.com/enterprise-cloud@latest/admin/user-management/managing-users-in-your-enterprise/roles-in-an-enterprise?azure-portal=true)
 - [Enforcing repository management policies in your enterprise](https://docs.github.com/enterprise-cloud@latest/admin/policies/enforcing-policies-for-your-enterprise/enforcing-repository-management-policies-in-your-enterprise#enforcing-a-policy-on-default-repository-permissions?azure-portal=true)
+
+## Provide feedback
+
+Use this [issue form](https://github.com/githubpartners/microsoft-learn/issues/new/choose) to provide content feedback or suggested changes for this Microsoft Learn module. GitHub maintains this content and a team member will triage the request. Thank you for taking the time to improve our content!

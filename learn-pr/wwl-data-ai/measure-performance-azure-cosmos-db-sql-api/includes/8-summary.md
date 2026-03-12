@@ -17,7 +17,7 @@ For more information about the topics discussed in this module, see:
 - [Monitoring Azure Cosmos DB data reference][/azure/cosmos-db/monitor-cosmos-db-reference]
 - [How to monitor throughput or request unit usage of an operation in Azure Cosmos DB][/azure/cosmos-db/monitor-request-unit-usage]
 - [Optimize your Azure Cosmos DB application using rate limiting][/azure/cosmos-db/rate-limiting-requests]
-- [Diagnose and troubleshoot Azure Cosmos DB request rate too large (429) exceptions][/azure/cosmos-db/sql/troubleshoot-request-rate-too-large]
+- [Diagnose and troubleshoot Azure Cosmos DB request rate too large (429) exceptions][/azure/cosmos-db/troubleshoot-request-rate-too-large]
 - [Troubleshoot issues with diagnostics queries][/azure/cosmos-db/cosmosdb-monitor-logs-basic-queries]
 - [Monitor Azure Cosmos DB data by using diagnostic settings in Azure][/azure/cosmos-db/cosmosdb-monitor-resource-logs]
 - [Create diagnostic settings to send Azure Monitor platform logs and metrics to different destinations][/azure/azure-monitor/essentials/diagnostic-settings]

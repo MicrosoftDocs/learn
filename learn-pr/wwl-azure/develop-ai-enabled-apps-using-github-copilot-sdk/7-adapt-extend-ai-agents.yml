@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.develop-ai-enabled-apps-using-github-copilot-sdk.adapt-extend-ai-agents
+title: "Adapt and extend AI agents for deployment"
+metadata:
+  title: "Adapt and Extend AI Agents for Deployment"
+  description: "Adapt and extend AI agents for deployment."
+  ms.date: 02/13/2026
+  author: chrishowd
+  ms.author: cahowd
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/7-adapt-extend-ai-agents.md)]

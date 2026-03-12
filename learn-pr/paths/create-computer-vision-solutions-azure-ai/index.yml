@@ -25,7 +25,7 @@ products:
 - azure-computer-vision
 - azure-face
 - azure-video-indexer
-- azure-ai-foundry
+- microsoft-foundry
 subjects:
 - artificial-intelligence
 modules:

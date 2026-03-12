@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-cicd-sql-database-projects.implement-cicd-pipelines
+title: Implement CI/CD pipelines
+metadata:
+  title: Implement CI/CD pipelines
+  description: Implement CI/CD pipelines for SQL Database Projects with GitHub Actions and Azure DevOps, including secrets management and deployment controls.
+  author: calopez
+  ms.author: calopez
+  ms.date: 07/14/2025
+  ms.topic: unit
+  ai-usage: ai-generated
+durationInMinutes: 12
+content: |
+  [!include[](includes/06-implement-cicd-pipelines.md)]

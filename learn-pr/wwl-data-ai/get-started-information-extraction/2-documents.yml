@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-started-information-extraction.documents
+title: Extract information from documents
+metadata:
+  title: Extract information from documents
+  description: Use Azure Vision to extract information from documents.
+  author: sherzyang
+  ms.author: sheryang
+  ms.date: 02/21/2026
+  ms.topic: unit
+  zone_pivot_groups: video-or-text
+durationInMinutes: 8
+content: |
+  [!include[](includes/2-documents.md)]
+
+

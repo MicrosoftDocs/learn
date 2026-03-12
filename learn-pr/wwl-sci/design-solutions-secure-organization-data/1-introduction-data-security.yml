@@ -4,11 +4,11 @@ title: Data security design principles and frameworks
 metadata:
   title: Data security design principles and frameworks
   description: "SC-100 preparatory unit on the topic: data security design principles and frameworks."
-  ms.date: 07/25/2025
+  ms.date: 01/26/2026
   author: ceperezb
   ms.author: ceperezb
   ms.topic: unit
-  ai-usage: ai-assisted
-durationInMinutes: 3
+  ai-usage: ai-generated
+durationInMinutes: 2
 content: |
   [!include[](includes/1-introduction-data-security.md)]

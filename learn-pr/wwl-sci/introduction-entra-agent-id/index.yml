@@ -1,0 +1,43 @@
+### YamlMime:Module
+uid: learn.wwl.introduction-entra-agent-id
+metadata:
+  title: Introduction to Microsoft Entra Agent ID
+  description: "Learn about Microsoft Entra Agent ID, a specialized identity type designed for AI agents. Understand how agent identities differ from other identity types, which Microsoft products use them, and how to view and manage them in the Microsoft Entra admin center."
+  ms.date: 02/09/2026
+  author: wwlpublish
+  ms.author: roberts
+  ms.topic: module
+  ms.service: entra-id
+title: Introduction to Microsoft Entra Agent ID
+summary: Microsoft Entra Agent ID provides specialized identity constructs designed for AI agents. In this module, you learn what agent identities are, how they compare to other identity types, which Microsoft products use them, and how to view and manage agent identities through the Microsoft Entra admin center and Microsoft Graph.
+abstract: |
+  By the end of this module, you'll be able to:
+  - Describe what Microsoft Entra Agent ID is and explain when to use agent identities versus service principals or managed identities
+  - Identify which Microsoft products automatically create and use agent identities
+  - Navigate to the Microsoft Entra admin center to view and filter agent identities
+  - Identify the required Microsoft Entra roles for managing agent identities and explain how permission inheritance works
+  - Describe how Microsoft Graph can be used to programmatically query agent identities
+prerequisites: |
+  - Understanding of Microsoft Entra ID fundamentals
+  - Experience using the Azure portal or Microsoft Entra admin center
+  - Awareness of AI agents and Microsoft Copilot technologies
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- administrator
+- identity-access-admin
+products:
+- entra-id
+- entra
+units:
+- learn.wwl.introduction-entra-agent-id.introduction
+- learn.wwl.introduction-entra-agent-id.describe-agent-id-compare-identities
+- learn.wwl.introduction-entra-agent-id.identify-products-use-agent-identities
+- learn.wwl.introduction-entra-agent-id.navigate-admin-center-view-agents
+- learn.wwl.introduction-entra-agent-id.understand-access-permissions
+- learn.wwl.introduction-entra-agent-id.understand-microsoft-graph-operations
+- learn.wwl.introduction-entra-agent-id.knowledge-check
+- learn.wwl.introduction-entra-agent-id.summary
+badge:
+  uid: learn.wwl.introduction-entra-agent-id.badge

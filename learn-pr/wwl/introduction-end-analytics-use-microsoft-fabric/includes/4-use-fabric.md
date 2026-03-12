@@ -1,14 +1,12 @@
 Before you can explore the end-to-end capabilities of Microsoft Fabric, it must be enabled for your organization. You might need to work with your IT department to enable Fabric for your organization, including one of the following roles:
 
-- _Fabric admin (formerly Power BI admin)_: Manages Fabric settings and configurations.
-- _Power Platform admin_: Oversees Power Platform services, including Fabric.
-- _Microsoft 365 admin_: Manages organization-wide Microsoft services, including Fabric.
+- _Fabric administrator_: Manages Fabric settings and configurations.
+- _Power Platform administrator_: Oversees Power Platform services, including Fabric.
+- _Global administrator_: Has implicit Fabric admin rights through organization-wide permissions.
 
 ## Enable Microsoft Fabric
 
 Admins can enable Fabric in the **Admin portal > Tenant settings** in the Power BI service. Fabric can be enabled for the entire organization or for specific Microsoft 365 or Microsoft Entra security groups. Admins can also delegate this ability to other users at the capacity level.
-
-:::image type="content" border="true" source="../media/enable-fabric.png" alt-text="Screenshot of the Fabric admin portal where you can enable Fabric items.":::
 
 > [!NOTE]
 > If your organization isn't using Fabric or Power BI today, you can sign up for a [free Fabric trial](/fabric/get-started/fabric-trial) to explore its features.
@@ -32,7 +30,7 @@ You can manage workspace access through four roles: _admin_, _contributor_, _mem
 
 ## Discover data with OneLake catalog
 
-The OneLake catalog in Microsoft Fabric helps users easily find and access various data sources within their organization. Users explore and connect to data sources, ensuring they have the right data for their needs. Users only see items shared with them. Here are some considerations when using OneLake catalog:
+The OneLake catalog in Microsoft Fabric helps you find and access data sources within your organization. You can explore and connect to data sources, ensuring you have the right data for your needs. You only see items that have been shared with you. Here are some considerations when using OneLake catalog:
 
 - Narrow results by workspaces or domains (if implemented).
 - Explore default categories to quickly locate relevant data.
@@ -46,38 +44,41 @@ After you create your Fabric enabled workspace, you can start creating items in 
 
 - **Data Engineering**: Create lakehouses and operationalize workflows to build, transform, and share your data estate.
 - **Data Factory**: Ingest, transform, and orchestrate data.
-- **Data Science**: Detect trends, identify outliers, and predict values using machine learning.
 - **Data Warehouse**: Combine multiple sources in a traditional warehouse for analytics.
-- **Databases**: Create and manage databases with tools to insert, query, and extract data.
-- **Industry Solutions**: Use out-of-the-box industry data solutions.
 - **Real-Time Intelligence**: Process, monitor, and analyze streaming data.
+- **Industry Solutions**: Use out-of-the-box industry data solutions.
+- **Data Science**: Detect trends, identify outliers, and predict values using machine learning.
+- **Databases**: Create and manage databases with tools to insert, query, and extract data.
+- **IQ (preview)**: Unify data across OneLake and organize it according to the language of your business using ontologies, graphs, and semantic models.
 - **Power BI**: Create reports and dashboards to make data-driven decisions.
 
 Fabric integrates capabilities from existing Microsoft tools like Power BI, Azure Synapse Analytics, and Azure Data Factory into a unified platform. Fabric also supports a data mesh architecture, allowing decentralized data ownership while maintaining centralized governance. This design eliminates the need for direct Azure resource access, simplifying data workflows.
 
-## Enhance productivity with Copilot in Fabric
+## AI capabilities in Microsoft Fabric
 
-Microsoft Copilot in Fabric is a generative AI assistant that enhances productivity and accelerates insights across all Fabric workloads. Copilot uses large language models (LLMs) to provide intelligent assistance for data professionals, self-service users, and business users.
+Fabric includes features that support AI development as well as AI-powered productivity across workloads.
 
-### Copilot capabilities across workloads
+**Fabric IQ** (preview) is a Fabric workload for unifying data across OneLake and organizing it according to the language of your business. Its core item is the **ontology**, which defines your business concepts, relationships, and rules so that AI agents can reason across domains using consistent business language rather than raw table schemas.
 
-Copilot provides tailored assistance for each Fabric workload:
+Fabric IQ is one of three IQ workloads that Microsoft provides to give agents access to different aspects of your organization:
 
-- **Data Engineering and Data Science**: Intelligent code completion, automated routine tasks, industry-standard code templates, and contextual code suggestions that adapt to specific tasks. Copilot helps with data preparation, pipeline building, and insight generation.
+- **Fabric IQ** models business data (ontologies, semantic models, and graphs) so agents can reason over analytics in OneLake and Power BI.
+- **Foundry IQ** connects structured and unstructured data across Azure, SharePoint, OneLake, and the web so agents can access permission-aware enterprise knowledge.
+- **Work IQ** captures collaboration signals from documents, meetings, chats, and workflows, providing agents with insight into how your organization operates.
 
-- **Data Factory**: AI-enhanced toolset supporting both citizen and professional data wranglers with intelligent code generation for data transformation and code explanations for complex tasks.
+Each IQ workload is standalone, but you can use them together to provide comprehensive organizational context for agents.
 
-- **Data Warehouse and SQL Database**: Natural language to SQL conversion, code completion, quick actions, and intelligent insights. Users can describe what they want in plain language, and Copilot generates the appropriate SQL queries.
+**Fabric data agents** let you build conversational interfaces where users ask questions about organizational data in natural language. Agents translate those questions into structured queries across your lakehouses, warehouses, and semantic models.
 
-- **Power BI**: Automatic report generation, summary creation for report pages, synonym generation for better Q&A capabilities, and natural language querying of data. Business users can also use Copilot to extract more insights and chat with the report data.
+In the Fabric IQ workload, data agents can connect to your ontology as a source, enabling them to understand and use your business concepts when answering questions.
 
-- **Real-Time Intelligence**: Advanced AI tool that translates natural language questions into Kusto Query Language (KQL) queries, streamlining data analysis for both experienced users and citizen data scientists.
+### Copilot across workloads
 
-### Enabling Copilot
+Microsoft Copilot in Fabric is a generative AI assistant available across all Fabric workloads. Copilot helps data professionals and business users complete common tasks more efficiently. Key capabilities include:
 
-Administrators must enable Copilot in the **Admin portal > Tenant settings** in the Power BI service.
+- **Code completion and generation**: Copilot provides intelligent code suggestions in notebooks, generates SQL queries from natural language descriptions, and translates questions into Kusto Query Language (KQL) for real-time analysis.
+- **Data transformation guidance**: In Data Factory, Copilot supports both citizen and professional data wranglers with code generation for data transformation and plain-language explanations of complex logic.
+- **Report and insight generation**: In Power BI, Copilot generates reports automatically, creates page summaries, and lets business users ask questions about their data in natural language.
 
-Copilot helps users work more efficiently by providing AI assistance for common tasks like writing code, generating queries, and creating reports. This support is available to both technical and business users while maintaining organizational security policies.
-
-> [!TIP]
-> For more information, see the [Copilot for Microsoft Fabric and Power BI](/fabric/fundamentals/copilot-faq-fabric) documentation.
+> [!NOTE]
+> Copilot in Microsoft Fabric is enabled by default. Administrators can disable Copilot from the **Admin portal > Tenant settings** or control access for specific security groups or at the capacity level.

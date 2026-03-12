@@ -1,13 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.get-started-data-warehouse.model-data
-title: Prepare data for analysis and reporting
+title: Model data in a warehouse
 metadata:
-  title: Prepare data for analysis and reporting
-  description: "Prepare data for analysis and reporting"
-  ms.date: 5/15/2025
-  author: JulianePadrao
-  ms.author: jupadrao
+  title: Model Data in a Warehouse
+  description: "Model data in a warehouse"
+  ms.date: 03/04/2026
+  author: theresa-i
+  ms.author: theresai
   ms.topic: unit
-durationInMinutes: 6
+durationInMinutes: 7
 content: |
   [!include[](includes/5-model-data.md)]

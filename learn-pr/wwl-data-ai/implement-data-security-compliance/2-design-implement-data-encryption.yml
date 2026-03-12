@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-data-security-compliance.design-implement-data-encryption
+title: Protect data with encryption
+metadata:
+  title: Protect data with encryption
+  description: Learn how to implement data encryption in SQL databases using Always Encrypted, column-level encryption, and Transparent Data Encryption.
+  ms.date: 02/04/2026
+  author: JulianePadrao
+  ms.author: jupadrao
+  ms.topic: unit
+durationInMinutes: 12
+content: |
+  [!include[](includes/2-design-implement-data-encryption.md)]

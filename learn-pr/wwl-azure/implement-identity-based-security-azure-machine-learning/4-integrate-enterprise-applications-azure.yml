@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-identity-based-security-azure-machine-learning.integrate-enterprise-applications-azure
+title: "Integrate enterprise applications with Azure Machine Learning"
+metadata:
+  title: "Integrate Enterprise Applications with Azure Machine Learning"
+  description: "Learn how to integrate enterprise applications with Azure Machine Learning using service principals and managed identities for secure automation."
+  ms.date: 02/05/2026
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: unit
+durationInMinutes: 11
+content: |
+  [!include[](includes/4-integrate-enterprise-applications-azure.md)]

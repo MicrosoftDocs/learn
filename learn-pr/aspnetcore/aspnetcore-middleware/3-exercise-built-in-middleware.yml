@@ -7,7 +7,7 @@ metadata:
   description: This unit is an exercise that demonstrates how to use built-in middleware in an ASP.NET Core app.
   ms.date: 8/29/2024
   author: camsoper
-  ms.author: casoper
+  ms.author: daroth
   ms.topic: unit
 durationInMinutes: 5
 content: |

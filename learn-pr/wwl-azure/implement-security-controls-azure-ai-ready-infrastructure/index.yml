@@ -1,0 +1,53 @@
+### YamlMime:Module
+uid: learn.wwl.implement-security-controls-azure-ai-ready-infrastructure
+metadata:
+  title: "Implement Security Controls for Azure AI-ready Infrastructure" 
+  description: "This module equips you to configure Azure's foundational security controls for AI workloads. You'll start by configuring Microsoft Entra ID security principals that define *who* and *what* can access your AI resources—from data scientists needing interactive workspace access to managed identities enabling secure service-to-service communication."
+  ms.date: 02/09/2026
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: module-intro-to-product
+  ms.service: azure
+title: "Implement security controls for Azure AI-ready infrastructure"
+summary: This module equips you to configure Azure's foundational security controls for AI workloads. You'll start by configuring Microsoft Entra ID security principals that define *who* and *what* can access your AI resources—from data scientists needing interactive workspace access to managed identities enabling secure service-to-service communication.
+abstract: |
+  By the end of this module, you are able to:
+  - Configure Microsoft Entra ID security principals for AI workload access control.
+  - Implement Azure governance scopes across subscriptions, resource groups, and AI resources.
+  - Apply Azure Policy as the primary governance mechanism for infrastructure compliance.
+  - Evaluate security controls for production AI infrastructure deployment.
+prerequisites: |
+  - Azure fundamentals including resource groups, virtual networks, and identity management.
+  - Basic AI and machine learning concepts.
+  - Container fundamentals and Docker basics.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- data-scientist
+- database-administrator
+- business-owner
+- administrator
+- developer
+products:
+- azure
+- azure-machine-learning
+- azure-machine-learning-studio
+- azure-machine-learning-designer
+- azure-data-science-vm
+subjects:
+- security
+- cloud-security
+- infrastructure
+- information-protection-governance
+- devops
+units:
+- learn.wwl.implement-security-controls-azure-ai-ready-infrastructure.introduction
+- learn.wwl.implement-security-controls-azure-ai-ready-infrastructure.configure-microsoft-entra-id-security-principals
+- learn.wwl.implement-security-controls-azure-ai-ready-infrastructure.implement-azure-governance-scopes-ai-resources
+- learn.wwl.implement-security-controls-azure-ai-ready-infrastructure.apply-azure-policy-primary-governance
+- learn.wwl.implement-security-controls-azure-ai-ready-infrastructure.exercise-configure-secure-ai-infrastructure
+- learn.wwl.implement-security-controls-azure-ai-ready-infrastructure.knowledge-check
+- learn.wwl.implement-security-controls-azure-ai-ready-infrastructure.summary
+badge:
+  uid: learn.wwl.implement-security-controls-azure-ai-ready-infrastructure.badge

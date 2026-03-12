@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-implement-database-objects.specialized-table-types
+title: Use specialized table types
+metadata:
+  title: Use specialized table types
+  description: "Learn how to implement in-memory, temporal, external, LEDGER, and GRAPH tables"
+  ms.date: 02/24/2026
+  author: JulianePadrao
+  ms.author: jupadrao
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 12
+content: |
+  [!include[](includes/5-specialized-table-types.md)]

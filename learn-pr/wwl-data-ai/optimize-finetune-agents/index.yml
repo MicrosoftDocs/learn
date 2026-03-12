@@ -1,0 +1,49 @@
+### YamlMime:Module
+uid: learn.wwl.optimize-finetune-agents
+metadata:
+  title: Optimize and fine-tune AI agents for production
+  description: Learn how to select fine-tuning methods (SFT, RFT, DPO), recognize agent quality problems, prepare training data, and design optimization strategies using hyperparameter configuration and iterative evaluation.
+  author: madiepev
+  ms.author: madiepev
+  ms.date: 02/25/2026
+  ms.service: azure-ai-foundry
+  ms.topic: module-standard-task-based
+  ai-usage: ai-assisted
+  ms.custom: ai-learning-hub
+  ms.collection:
+    - wwl-ai-copilot
+title: Optimize and fine-tune AI agents for production
+summary: "Learn to evaluate and select fine-tuning methods, recognize agent quality problems, prepare training data, and design optimization strategies using hyperparameter configuration and iterative evaluation."
+abstract: |
+  By the end of this module, you'll be able to:
+    - Evaluate and select fine-tuning methods including supervised fine-tuning (SFT), reinforcement fine-tuning (RFT), and direct preference optimization (DPO) based on quality requirements, data availability, and cost constraints.
+    - Recognize agent quality problems and determine which fine-tuning approach addresses the root cause for format inconsistency, tone misalignment, or reasoning failures.
+    - Prepare training data by validating format requirements for each fine-tuning method and applying quality principles to create effective datasets.
+    - Design an optimization strategy by evaluating baseline performance, setting measurable targets, splitting your dataset, and configuring hyperparameters for your chosen method.
+prerequisites: |
+  Before starting this module, you should be familiar with fundamental AI concepts and services in Azure.
+iconUrl: /learn/achievements/generic-badge.svg
+levels: 
+  - intermediate
+roles: 
+  - data-scientist
+  - ai-engineer
+products: 
+  - azure-ai-foundry
+subjects: 
+  - artificial-intelligence
+  - machine-learning
+  - natural-language-processing
+units:
+- learn.wwl.optimize-finetune-agents.introduction
+- learn.wwl.optimize-finetune-agents.select-finetune-method
+- learn.wwl.optimize-finetune-agents.scenarios
+- learn.wwl.optimize-finetune-agents.prepare-data
+- learn.wwl.optimize-finetune-agents.optimize-finetune
+- learn.wwl.optimize-finetune-agents.exercise
+- learn.wwl.optimize-finetune-agents.knowledge-check
+- learn.wwl.optimize-finetune-agents.summary
+badge:
+  uid: learn.wwl.optimize-finetune-agents.badge
+
+

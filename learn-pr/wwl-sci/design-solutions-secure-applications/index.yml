@@ -3,7 +3,7 @@ uid: learn.wwl.design-solutions-secure-applications
 metadata:
   title: Design Solutions for Securing Applications
   description: "You learn how to secure applications, APIs and the development process using techniques like posture management, threat modeling, and secure access for workload identities."
-  ms.date: 07/30/2025
+  ms.date: 02/10/2026
   author: ceperezb
   ms.author: ceperezb
   ms.topic: module
@@ -42,12 +42,13 @@ subjects:
 units:
 - learn.wwl.design-solutions-secure-applications.introduction-application-security
 - learn.wwl.design-solutions-secure-applications.design-implement-standards-secure-application-development
+- learn.wwl.design-solutions-secure-applications.design-full-lifecycle-strategy-application-security
 - learn.wwl.design-solutions-secure-applications.evaluate-security-posture-existing-application-portfolios
 - learn.wwl.design-solutions-secure-applications.evaluate-application-threats-threat-modeling
-- learn.wwl.design-solutions-secure-applications.design-security-lifecycle-strategy-applications
 - learn.wwl.design-solutions-secure-applications.secure-access-workload-identities
 - learn.wwl.design-solutions-secure-applications.design-solution-api-management-security
 - learn.wwl.design-solutions-secure-applications.design-solution-secure-access-applications
+- learn.wwl.design-solutions-secure-applications.map-technologies-application-security-requirements
 - learn.wwl.design-solutions-secure-applications.knowledge-check
 - learn.wwl.design-solutions-secure-applications.summary
 badge:

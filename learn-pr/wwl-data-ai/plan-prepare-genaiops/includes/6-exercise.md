@@ -7,4 +7,4 @@ In this exercise, you evaluate the performance of two models to select a languag
 
 Launch the exercise and follow the instructions.
 
-[![Button to launch exercise.](../media/launch-exercise.png)](https://go.microsoft.com/fwlink/?linkid=2307800&azure-portal=true)
+[![Button to launch exercise.](../media/launch-exercise.png)](https://microsoftlearning.github.io/mslearn-genaiops/?linkid=2307800&azure-portal=true)

@@ -1,0 +1,35 @@
+### YamlMime:LearningPath
+uid: learn.wwl.integrate-backend-services-ai-solutions
+metadata:
+  title: Integrate Backend Services for AI Solutions
+  description: Learn how to integrate backend services for AI solutions on Azure.
+  ms.date: 02/13/2026
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: learning-path
+title: Integrate backend services for AI solutions
+prerequisites: |
+  - Programming experience with Python.
+  - Basic understanding of Azure services and cloud computing concepts.
+  - Familiarity with distributed systems concepts and event-driven architectures.
+  - Familiarity with REST APIs and asynchronous messaging patterns.
+summary: |
+  This learning path teaches you how to build and integrate backend services that support AI solutions on Azure. You start by using Azure Service Bus to decouple AI application components, queue inference requests, and process messages reliably with queues, topics, and dead-letter queues. You then build event-driven workflows with Azure Event Grid to route events between services with low latency, configure delivery policies, and publish custom events from AI applications. Finally, you create serverless AI backends with Azure Functions, including inference endpoints, event processors, and secure integrations with other Azure services.
+iconUrl: /training/achievements/generic-trophy.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- azure-service-bus
+- azure-event-grid
+- azure-functions
+subjects:
+- backend-development
+- artificial-intelligence
+modules:
+- learn.wwl.queue-process-operations-service-bus
+- learn.wwl.event-driven-workflows-event-grid
+- learn.wwl.build-backends-azure-functions
+trophy:
+  uid: learn.wwl.integrate-backend-services-ai-solutions.trophy

@@ -1,150 +1,184 @@
-DevSecOps integrates security practices into every phase of the software development lifecycle rather than treating security as a final checkpoint. For cybersecurity architects, designing DevSecOps processes that align with the Cloud Adoption Framework (CAF) ensures that security is embedded from the earliest stages of development through deployment and operations.
+DevSecOps (Development, Security, and Operations) integrates security practices into every phase of the software development lifecycle. The Cloud Adoption Framework (CAF) Secure methodology provides structured guidance across six phases—strategy, plan, ready, adopt, govern, and manage—that maps directly to DevSecOps process design and aligns with the Microsoft Cloud Security Benchmark (MCSB) for specific technical controls. As a cybersecurity architect, you use these best practices to embed security from the earliest stages of development through deployment and operations.
 
-## Understanding DevSecOps
+## How the CAF Secure methodology supports DevSecOps
 
-DevSecOps stands for development, security, and operations. It's a framework that integrates security as a shared responsibility throughout the entire IT lifecycle. DevSecOps represents an evolution from traditional approaches where security was applied at the end of development cycles. Instead, security becomes integral to every phase:
+The CAF Secure methodology is organized around core security principles that each map to specific DevSecOps practices:
 
-- **Plan**: Security requirements are defined alongside functional requirements.
-- **Develop**: Secure coding practices and peer reviews catch vulnerabilities early.
-- **Build**: Automated security scanning integrates into continuous integration pipelines.
-- **Test**: Security testing runs alongside functional testing.
-- **Release**: Security gates validate that code meets security standards before deployment.
-- **Deploy**: Infrastructure as code (IaC) applies security configurations consistently.
-- **Operate**: Continuous monitoring detects threats in production environments.
-- **Monitor**: Security telemetry feeds back into improvement cycles.
+- **Security posture modernization**: The continuous elevation of defenses, detections, and resilience capabilities. This principle drives the shift-left approach and automated security controls in CI/CD pipelines.
+- **Incident preparedness and response**: Proactive planning for detecting, containing, and recovering from security events. This principle shapes how you integrate threat detection and response into DevOps toolchains.
+- **CIA Triad**: Confidentiality, integrity, and availability as foundational requirements. These principles guide access controls, code integrity checks, and deployment reliability.
+- **Security sustainment**: The disciplined cycle of measuring, improving, and validating control efficacy. This principle ensures that DevSecOps processes include continuous improvement loops.
 
-## Aligning DevSecOps with CAF security guidance
+Each phase builds on the previous: strategy defines security objectives, planning translates them into actionable controls, readiness prepares the cloud foundation, adoption implements controls in development and platform practices, governance enforces them through policy, and management sustains them through continuous improvement.
 
-The Cloud Adoption Framework's Secure methodology provides a structured approach that aligns naturally with DevSecOps practices. As a cybersecurity architect, you should design DevSecOps processes that incorporate CAF's core security principles.
+The CAF also identifies DevSecOps as a component of **innovation security** within its landing zone security guidance, which complements the Secure methodology. This guidance describes a four-stage control model:
 
-### Security posture modernization in DevSecOps
+- **Secure the design**: Bring security into the planning phase through threat modeling, IDE security plugins, precommit hooks, and peer review.
+- **Secure the code**: Implement vulnerability scanning in centralized repositories to discover risks and perform remediation.
+- **Secure the pipeline**: Use build and release pipelines for automation and standardization to deploy secure code efficiently.
+- **Secure operations**: Manage security in production using infrastructure scanning and penetration testing.
 
-The CAF emphasizes continuous elevation of defenses, detections, and resilience capabilities. In a DevSecOps context, this means:
+This four-stage model complements the Secure methodology and provides a comprehensive framework for embedding security into every aspect of DevSecOps.
 
-- **Automate security baselines**: Use off-the-shelf security baseline analysis tools to establish clear security foundations for development environments.
-- **Integrate Zero Trust principles**: Implement strong access controls and identity management in CI/CD pipelines to ensure only authorized personnel and processes can deploy code.
-- **Embrace automation**: Automate routine security tasks to reduce human error and improve consistency across the software development lifecycle.
+:::image type="content" source="../media/development-security-operations-security.png" alt-text="Diagram that shows the four-stage model for designing a DevSecOps process that aligns with best practices of the CAF secure methodology." lightbox="../media/development-security-operations-security.png":::
 
-### Shift-left security strategy
+## Align security strategy with DevSecOps goals
 
-A fundamental DevSecOps principle is shifting security left in the development process. This approach, aligned with CAF guidance, redirects security focus from auditing at the end to development at the beginning:
+The Secure methodology's strategy guidance establishes the strategic direction for security across cloud adoption. Several strategic commitments directly shape how you design DevSecOps processes.
+
+### Adopt Zero Trust as a strategic foundation
+
+The strategy guidance recommends adopting Zero Trust as the overarching security strategy, founded on three principles that map directly to DevSecOps design decisions:
+
+- **Verify explicitly**: Always authenticate and authorize based on all available data points. In DevSecOps, this means requiring identity verification for every pipeline action, code commit, and deployment.
+- **Use least privilege**: Limit user and service access with just-in-time and just-enough-access policies. This principle drives how you scope developer permissions, service identities, and pipeline access controls.
+- **Assume breach**: Minimize blast radius and segment access. This principle informs how you isolate pipeline environments, enforce code signing, and design containment procedures for compromised components.
+
+By establishing these principles at the strategy level, you create a consistent framework that guides every subsequent DevSecOps design decision.
+
+### Define integrity and automation commitments
+
+The Secure methodology's integrity strategy emphasizes automation for policy management, data classification, infrastructure deployments, and update management. When you commit to automation as a strategic objective, you set the expectation that manual security gates are replaced by automated controls embedded in CI/CD pipelines—including automated code scanning, compliance checks, deployment validation, and incident response.
+
+The security sustainment strategy establishes continuous improvement as an organizational commitment, ensuring that DevSecOps processes include feedback loops, metrics tracking, and regular posture reviews rather than treating security as a one-time implementation.
+
+## Plan security into the development lifecycle
+
+The Secure methodology's planning guidance translates strategic objectives into actionable security plans that shape DevSecOps process design.
+
+### Plan for Zero Trust across technology pillars
+
+The planning guidance structures Zero Trust adoption across seven technology pillars. Each pillar maps to specific DevSecOps controls that you should plan for before beginning adoption:
+
+- **Identity**: Plan for strong authentication and least-privilege access in DevOps platforms and CI/CD systems.
+- **Endpoints**: Plan for securing developer workstations and build agents that interact with code and deployment environments.
+- **Data**: Plan for protecting sensitive data in repositories, configuration files, and deployment artifacts.
+- **Apps**: Plan for securing the applications and services produced by development teams.
+- **Infrastructure**: Plan for securing cloud infrastructure through infrastructure as code (IaC) standards and deployment policies.
+- **Network**: Plan for network segmentation, traffic inspection, and encryption across development and production environments.
+- **Visibility, automation, and orchestration**: Plan for operational policies that enforce Zero Trust principles through automated monitoring and response.
+
+### Standardize development and operational practices
+
+The planning guidance recommends standardizing development tools and practices to ensure deployments adhere to the CIA Triad and incorporate safe deployment practices. For DevSecOps, this means defining enforceable standards for:
+
+- Source control workflows and branching strategies
+- Build and release pipeline configurations
+- Testing requirements and quality gates
+- Deployment patterns and rollback procedures
+
+Standardization reduces configuration drift and ensures that security controls are applied consistently across all projects and teams. The plan phase also recommends standardizing operational tools and practices so that operators maintain confidentiality, integrity, and availability consistently across environments.
+
+### Establish a security baseline
+
+Before adopting new DevSecOps controls, the Secure methodology recommends understanding your current security posture. Use automated tools like Microsoft Secure Score to establish a measurable baseline. This baseline provides a reference point for tracking improvement, prioritizing which DevSecOps controls to implement first, and measuring the impact of each improvement.
+
+## Ready the cloud foundation for secure development
+
+The Secure methodology's Ready guidance centers on building your cloud foundation through Azure landing zones—the secure, scalable, modular design pattern that serves as the starting point for implementation. This phase bridges planning and adoption by establishing the foundational infrastructure, identity, and integrity mechanisms that DevSecOps controls depend on.
+
+### Build the foundation with Azure landing zones
+
+The Ready guidance positions Azure landing zones as the primary mechanism for preparing your secure cloud estate:
+
+- **Standardized architecture**: Landing zones separate domains—such as development, staging, and production—into governed environments with consistent security controls, ensuring that build agents, deployment pipelines, and developer workstations operate with appropriate isolation.
+- **Infrastructure as code deployment**: Deploy landing zones through IaC in CI/CD pipelines, applying the same safe deployment practices used for software deployments.
+- **Landing zone accelerators**: Use prepackaged, workload-specific deployments for services like Azure Kubernetes Service (AKS) and Azure API Management as security-compliant starting points.
+- **Design area coverage**: Even if you don't adopt a full enterprise landing zone, understand the design areas (identity, networking, governance, security, and others) and implement controls for each area.
+
+### Establish identity and network readiness
+
+Implement Zero Trust identity controls as part of your landing zone foundation before workload deployment begins:
+
+- **Identity controls**: Configure RBAC, multifactor authentication (MFA), and Conditional Access policies for developer accounts, build agents, and pipeline service identities.
+- **Network segmentation**: Design network architecture using virtual networks, subnets, and network security groups to separate development, build, and production environments, minimizing blast radius if a pipeline component is compromised.
+
+### Prepare for system integrity and monitoring
+
+Prepare your landing zone design with automated management and monitoring:
+
+- **Configuration and patch management**: Automate configuration management and codify update management policies.
+- **Security monitoring**: Select SIEM and threat detection tooling for centralized visibility.
+- **Data classification**: Establish data classification frameworks for handling secrets in repositories.
+
+## Adopt secure development and platform practices
+
+Adoption is the broadest phase for DevSecOps. The Secure methodology's adoption guidance addresses how you implement security controls across development workflows, platform infrastructure, CI/CD pipelines, and incident response.
+
+### Posture modernization
+
+Security posture modernization starts with establishing baselines and automating controls:
+
+- **Operationalize your security baseline**: Apply the baseline established during planning as the standard against which all development environments and pipeline configurations are measured. Use security posture scoring tools to track progress and generate actionable recommendations.
+- **Embrace automation**: Use IaC tools with declarative templates integrated into CI/CD pipelines for infrastructure deployments, testing, monitoring, and scaling. Automation reduces the risk of human error and improves consistency across environments.
+
+### Shift-left security
+
+The shift-left approach moves security from end-of-development auditing to continuous integration throughout the lifecycle:
 
 | Traditional approach | Shift-left approach |
 | --- | --- |
-| Security review at release | Security requirements at planning |
+| Security review at release | Threat modeling during planning |
 | Manual security testing | Automated security scanning in CI |
 | Remediation in production | Vulnerability fixes during development |
 | Security as a gate | Security as continuous feedback |
 
-Shifting left helps produce robust code and resolves problems early when they're easier and less expensive to fix.
+Shifting left produces more robust code and resolves problems early when they're easier and less expensive to fix.
 
-## Designing secure deployment pipelines
+### Secure the DevOps platform
 
-The CAF Adopt methodology emphasizes building CI/CD pipelines with integrated security checks. As a cybersecurity architect, design pipelines that include:
+A compromised DevOps platform undermines all other security controls, so platform hardening is a critical part of adoption.
 
-### Static code analysis
+- **Apply least-privilege access**: Use RBAC through a centralized identity provider, entitlement management for time-bound developer access, and just-in-time privileged access for platform administrator roles. Manage platform role assignments through centralized identity group memberships.
+- **Protect code and environments**: Restrict repository access with security groups, set branch permissions, and require code reviews from security-aware reviewers before merging to protected branches. Consider disabling permission inheritance to prevent unintended access escalation.
+- **Use workload identity federation for automated deployments**: Never use user accounts. Create separate identities per application and environment, scope permissions to only the required cloud subscriptions or resource groups, and store all secrets in a dedicated management solution. Deploy identities and federated credentials through IaC in a secure subscription vending process.
 
-Implement static application security testing (SAST) to analyze source code for vulnerabilities before compilation. Key considerations include:
+### Implement CI/CD pipeline security controls
 
-- Integrate code scanning tools that detect defects as early as possible
-- Configure pre-deployment checks to validate and confirm changes before deployment
-- Enable secret scanning to detect exposed credentials in code repositories
+The Microsoft Cloud Security Benchmark (MCSB) defines security controls for CI/CD pipelines. Design your pipelines to implement these controls at each stage:
 
-### Dependency and supply chain security
+- **Static application security testing (SAST)**: Integrate source code analysis, binary analysis, and credential scanning tools as gating controls that prevent vulnerable packages from committing, building, or deploying.
+- **Dynamic application security testing (DAST)**: Integrate runtime application testing and automated penetration testing into your CI/CD workflow.
+- **Software supply chain security**: Use dependency scanning tools to inventory vulnerabilities, automated update tools to upgrade dependencies, and cloud security posture management (CSPM) solutions to identify vulnerable container images.
+- **Infrastructure as code security**: Colocate IaC assets with application code, use CSPM to discover misconfigurations in templates, and configure managed deployment environments with curated, security-compliant templates.
 
-Secure your software supply chain by:
+Use deployment management features to manage cloud resources as a single cohesive unit, and use deny settings to prevent unauthorized modifications.
 
-- Implementing dependency review to identify vulnerable packages
-- Using automated agents that continuously monitor security advisories
-- Configuring automated upgrades when newer or more secure versions of packages become available
-- Verifying the integrity of third-party components before inclusion
+### Prepare for incidents
 
-### Infrastructure as code security
+A well-designed DevSecOps process includes built-in capabilities for detecting, responding to, and recovering from security incidents:
 
-When deploying infrastructure through code:
+- **Threat detection**: Implement extended detection and response (XDR) and SIEM solutions integrated with your DevOps toolchain. XDR solutions provide automated investigation and response functionality that reduces response time.
+- **Vulnerability management**: Use the patch management and monitoring tools established during readiness for risk-based assessment, prioritization, and remediation.
+- **Incident response**: Develop and maintain an incident response plan that includes detection, analysis, and remediation steps. Automate containment actions through orchestrated workflows.
+- **Recovery procedures**: Design pipelines that can rapidly deploy secure, validated code to recover from incidents. Automate recovery activities as much as possible to reduce mean time to recovery.
 
-- Deploy all infrastructure through code without exception
-- Colocate IaC assets with application code and apply the same safe deployment practices
-- Use CSPM tools to discover misconfigurations in IaC templates
-- Implement deployment controls to manage resources as cohesive units and prevent unauthorized modifications
+## Govern DevSecOps with policy enforcement
 
-## DevSecOps toolchain design considerations
-
-The CAF provides guidance on selecting and integrating DevOps tools with security capabilities. Consider the following when designing your DevSecOps toolchain:
-
-### Code repository security
-
-Your source code management platform should provide:
-
-- **Semantic code analysis**: Tools that understand code context to find vulnerabilities
-- **Secret scanning**: Automated detection of exposed credentials and secrets in code
-- **Dependency review**: Identification of vulnerable dependencies before merging
-- **Branch protection**: Policies that enforce security reviews before code merges
-
-### Pipeline security controls
-
-Design your CI/CD pipelines with:
-
-- Fine-grained permissions that limit who can modify pipeline configurations
-- Security gates that block deployments failing security checks
-- Separation of duties between development and production deployments
-- Audit logging of all pipeline activities
-
-### Security monitoring integration
-
-Connect your DevSecOps pipeline to operational security:
-
-- Integrate with your SIEM for centralized security event management
-- Implement continuous security monitoring across environments
-- Enable automated threat detection and response capabilities
-
-## Governance and compliance in DevSecOps
-
-The CAF emphasizes governance as essential to sustaining security. Design DevSecOps processes that enforce:
+The Secure methodology's governance guidance emphasizes policy-driven governance as essential to sustaining security across DevSecOps processes. Governance ensures consistent implementation by defining policies once and applying them automatically.
 
 ### Policy-as-code
 
-Implement policy-as-code to:
+Design DevSecOps processes that enforce governance through automation:
 
-- Enforce organizational security standards automatically
-- Assess compliance at scale across deployments
-- Prevent infrastructure that doesn't meet security requirements from being deployed
+- Use cloud policy enforcement tools to enforce organizational standards and assess compliance at scale across deployments.
+- Use CSPM security policies to automate compliance with security standards.
+- Define policies that block noncompliant infrastructure from deploying. This ensures that security requirements are enforced at the point of deployment rather than discovered after the fact.
+- Automate governance for infrastructure deployments, hardening measures, data protection, and identity management standards.
 
-### Compliance integration
+### Continuous compliance monitoring
 
-Design pipelines that:
+The governance guidance also recommends automated compliance monitoring that provides real-time insights and alerts:
 
-- Validate compliance with regulatory requirements
-- Generate audit evidence automatically
-- Track security controls and their effectiveness
+- Track secure score controls in your CSPM solution to quantify gaps.
+- Automate drift detection through policy, configuration baselines, and deployment pipelines.
+- Review audit logs regularly. Stream DevOps platform audit logs to a centralized SIEM solution for long-term storage and correlation.
 
-## Security teams and roles in DevSecOps
+## Sustain security across DevSecOps operations
 
-The CAF Secure methodology identifies key roles that support DevSecOps:
+The Secure methodology's management guidance ensures that the security controls adopted and governed in earlier phases remain effective over time. Design DevSecOps processes that support ongoing improvement. Examples include:
 
-| Role | DevSecOps responsibility |
-| --- | --- |
-| Security architecture and engineering | Define security requirements, design secure pipeline patterns |
-| Security operations (SecOps) | Monitor production, respond to security events |
-| Security governance, risk, and compliance | Define policies, ensure compliance, manage risk |
-| Infrastructure/Platform teams | Implement secure infrastructure, maintain baselines |
-| Development teams | Write secure code, remediate vulnerabilities, follow secure coding practices |
-
-As a cybersecurity architect, you're responsible for defining how these roles collaborate within the DevSecOps process and ensuring that security responsibilities are clearly assigned.
-
-## Incident preparedness in DevSecOps
-
-Integrate incident response capabilities into your DevSecOps design:
-
-- **Threat detection automation**: Implement tools that detect threats in real-time across the development and deployment pipeline
-- **Automated response**: Use automated investigation and response capabilities to contain incidents quickly
-- **Recovery procedures**: Design pipelines that can rapidly deploy secure, validated code to recover from incidents
-
-## Continuous improvement and security sustainment
-
-Design DevSecOps processes that support ongoing security improvement:
-
-- **Vulnerability management**: Implement continuous vulnerability scanning and prioritized remediation
-- **Security metrics**: Track metrics like mean time to detect (MTTD), mean time to remediate, and security coverage
-- **Feedback loops**: Feed security findings from production back into development processes
-- **MITRE ATT&CK integration**: Use threat intelligence frameworks to inform security testing and monitoring
+- **Vulnerability management**: Integrate vulnerability findings directly into development backlogs so that remediation follows standard sprint workflows and risk scores are continuously tracked.
+- **Threat intelligence integration**: Use the MITRE ATT&CK knowledge base to develop threat models and inform security testing. Feed incident retrospectives and threat intelligence into backlog refinement so that posture changes align with live adversary behaviors.
+- **Security metrics**: Track metrics like mean time to detect (MTTD), secure score trends, and security coverage. Use these metrics to drive backlog prioritization and demonstrate security improvement to stakeholders.
+- **System integrity monitoring**: Enforce infrastructure changes only through IaC and approved deployment protocols. Investigate changes outside approved protocols immediately.

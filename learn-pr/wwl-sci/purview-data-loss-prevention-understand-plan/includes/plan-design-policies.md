@@ -20,7 +20,7 @@ DLP can run across many workloads, but enforcement shouldn't begin everywhere at
 - Where blocking would cause the most disruption
 - Where visibility is more valuable than control early on
 
-Beginning with visibility gives you behavioral insight before introducing restrictions.
+In many cases, visibility provides more value than control at the start. Observing how data moves and which actions are most common helps establish a baseline before restrictions are introduced. That insight makes it easier to introduce enforcement in places where it reduces risk without interrupting legitimate work.
 
 ## Scope policies intentionally
 

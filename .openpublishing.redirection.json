@@ -6,6 +6,56 @@
       "redirect_document_id": false
     },
     {
+      "source_path_from_root": "/learn-pr/device-partner-university/learning-zone/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/device-partner-university/learning-zone/1-intro.yml",
+      "redirect_url": "https://learn.microsoft.com/training",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/device-partner-university/learning-zone/2-microsoft-learn.yml",
+      "redirect_url": "https://learn.microsoft.com/training",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/device-partner-university/learning-zone/3-activate.yml",
+      "redirect_url": "https://learn.microsoft.com/training",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/device-partner-university/learning-zone/4-personalized-lessons.yml",
+      "redirect_url": "https://learn.microsoft.com/training",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/device-partner-university/learning-zone/5-new-lesson.yml",
+      "redirect_url": "https://learn.microsoft.com/training",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/device-partner-university/learning-zone/6-assign-manage.yml",
+      "redirect_url": "https://learn.microsoft.com/training",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/device-partner-university/learning-zone/7-insights.yml",
+      "redirect_url": "https://learn.microsoft.com/training",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/device-partner-university/learning-zone/8-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/device-partner-university/learning-zone/9-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training",
+      "redirect_document_id": false
+    },
+    {
       "source_path_from_root": "/learn-pr/azure/deploy-java-spring-boot-app-service-mysql/1-introduction.yml",
       "redirect_url": "https://learn.microsoft.com/azure/app-service/tutorial-java-spring-cosmosdb",
       "redirect_document_id": false
@@ -407,41 +457,6 @@
     {
       "source_path_from_root": "/learn-pr/azure/intro-to-azure-monitor/index.yml",
       "redirect_url": "https://learn.microsoft.com/training/modules/monitor-azure-vm-using-diagnostic-data",
-      "redirect_document_id": false
-    },
-    {
-      "source_path_from_root": "/learn-pr/azure/intro-to-azure-data-explorer/1-introduction.yml",
-      "redirect_url": "https://learn.microsoft.com/training/modules/upload-download-and-manage-data-with-azure-storage-explorer",
-      "redirect_document_id": false
-    },
-    {
-      "source_path_from_root": "/learn-pr/azure/intro-to-azure-data-explorer/2-what-is-azure-data-explorer.yml",
-      "redirect_url": "https://learn.microsoft.com/training/modules/upload-download-and-manage-data-with-azure-storage-explorer",
-      "redirect_document_id": false
-    },
-    {
-      "source_path_from_root": "/learn-pr/azure/intro-to-azure-data-explorer/3-how-azure-data-explorer-works.yml",
-      "redirect_url": "https://learn.microsoft.com/training/modules/upload-download-and-manage-data-with-azure-storage-explorer",
-      "redirect_document_id": false
-    },
-    {
-      "source_path_from_root": "/learn-pr/azure/intro-to-azure-data-explorer/4-when-to-use-azure-data-explorer.yml",
-      "redirect_url": "https://learn.microsoft.com/training/modules/upload-download-and-manage-data-with-azure-storage-explorer",
-      "redirect_document_id": false
-    },
-    {
-      "source_path_from_root": "/learn-pr/azure/intro-to-azure-data-explorer/5-knowledge-check.yml",
-       "redirect_url": "https://learn.microsoft.com/training/modules/upload-download-and-manage-data-with-azure-storage-explorer",
-      "redirect_document_id": false
-    },
-    {
-      "source_path_from_root": "/learn-pr/azure/intro-to-azure-data-explorer/6-summary.yml",
-      "redirect_url": "https://learn.microsoft.com/training/modules/upload-download-and-manage-data-with-azure-storage-explorer",
-      "redirect_document_id": false
-    },
-    {
-      "source_path_from_root": "/learn-pr/azure/intro-to-azure-data-explorer/index.yml",
-      "redirect_url": "https://learn.microsoft.com/training/modules/upload-download-and-manage-data-with-azure-storage-explorer",
       "redirect_document_id": false
     },
     {
@@ -49420,66 +49435,6 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/azure/write-first-query-kusto-query-language/index.md",
-      "redirect_url": "/training/paths/analyze-monitoring-data-with-kql/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/azure/write-first-query-kusto-query-language/1-introduction.md",
-      "redirect_url": "/training/paths/analyze-monitoring-data-with-kql/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/azure/write-first-query-kusto-query-language/2-understand-basic-structure-kusto-query-language.md",
-      "redirect_url": "/training/paths/analyze-monitoring-data-with-kql/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/azure/write-first-query-kusto-query-language/3-exercise-connect-to-resources.md",
-      "redirect_url": "/training/paths/analyze-monitoring-data-with-kql/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/azure/write-first-query-kusto-query-language/4-exercise-return-number-rows-take-operator.md",
-      "redirect_url": "/training/paths/analyze-monitoring-data-with-kql/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/azure/write-first-query-kusto-query-language/5-exercise-select-columns-project-operator.md",
-      "redirect_url": "/training/paths/analyze-monitoring-data-with-kql/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/azure/write-first-query-kusto-query-language/6-exercise-filter-data-where-operator.md",
-      "redirect_url": "/training/paths/analyze-monitoring-data-with-kql/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/azure/write-first-query-kusto-query-language/7-exercise-reorder-returned-data-sort-operator.md",
-      "redirect_url": "/training/paths/analyze-monitoring-data-with-kql/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/azure/write-first-query-kusto-query-language/8-challenge.md",
-      "redirect_url": "/training/paths/analyze-monitoring-data-with-kql/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/azure/write-first-query-kusto-query-language/9-solution.md",
-      "redirect_url": "/training/paths/analyze-monitoring-data-with-kql/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/azure/write-first-query-kusto-query-language/10-knowledge-check.md",
-      "redirect_url": "/training/paths/analyze-monitoring-data-with-kql/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/azure/write-first-query-kusto-query-language/11-summary.md",
-      "redirect_url": "/training/paths/analyze-monitoring-data-with-kql/",
-      "redirect_document_id": false
-    },
-    {
       "source_path": "learn-pr/azure/multi-table-queries-with-kusto-query-language/index.md",
       "redirect_url": "/training/paths/analyze-monitoring-data-with-kql/",
       "redirect_document_id": false
@@ -64508,6 +64463,46 @@
       "redirect_url": "https://learn.microsoft.com/azure/storage/files/storage-files-introduction",
       "redirect_document_id": false
     },
+    {
+      "source_path": "learn-pr/paths/build-workflows-with-logic-apps/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/logic-apps/logic-apps-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-logic-apps/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/logic-apps/logic-apps-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-logic-apps/2-what-is-logic-apps.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/logic-apps/logic-apps-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-logic-apps/3-how-logic-apps-works.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/logic-apps/logic-apps-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-logic-apps/4-when-to-use-logic-apps.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/logic-apps/logic-apps-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-logic-apps/5-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/logic-apps/logic-apps-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-logic-apps/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/logic-apps/logic-apps-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-logic-apps/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/logic-apps/logic-apps-overview",
+      "redirect_document_id": false
+    },
     {                                                                    
       "source_path": "learn-pr/azure/intro-to-azure-arc/index.yml",
       "redirect_url": "https://learn.microsoft.com/azure/azure-arc/overview",
@@ -64601,6 +64596,196 @@
     { 
       "source_path": "learn-pr/wwl-data-ai/get-started-with-generative-ai-and-agents/5-using-an-agent.yml",
       "redirect_url": "https://learn.microsoft.com/training/modules/get-started-with-generative-ai-and-agents/4-creating-an-agent",
+      "redirect_document_id": false
+    },
+    { 
+      "source_path": "learn-pr/paths/deploy-a-website-with-azure-app-service/index.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/app-service/deploy-staging-slots?tabs=portal",
+      "redirect_document_id": false
+    },
+    { 
+      "source_path": "learn-pr/azure/stage-deploy-app-service-deployment-slots/index.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/app-service/deploy-staging-slots?tabs=portal",
+      "redirect_document_id": false
+    },
+    { 
+      "source_path": "learn-pr/azure/stage-deploy-app-service-deployment-slots/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/app-service/deploy-staging-slots?tabs=portal",
+      "redirect_document_id": false
+    },  
+    { 
+      "source_path": "learn-pr/azure/stage-deploy-app-service-deployment-slots/2-create-deployment-slots.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/app-service/deploy-staging-slots?tabs=portal",
+      "redirect_document_id": false
+    },
+    { 
+      "source_path": "learn-pr/azure/stage-deploy-app-service-deployment-slots/3-exercise-create-deployment-slots.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/app-service/deploy-staging-slots?tabs=portal",
+      "redirect_document_id": false
+    },
+    { 
+      "source_path": "learn-pr/azure/stage-deploy-app-service-deployment-slots/4-deploy-a-web-app-by-swapping-deployment-slots.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/app-service/deploy-staging-slots?tabs=portal",
+      "redirect_document_id": false
+    },
+    { 
+      "source_path": "learn-pr/azure/stage-deploy-app-service-deployment-slots/5-exercise-deploy-a-web-app-by-using-deployment-slots.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/app-service/deploy-staging-slots?tabs=portal",
+      "redirect_document_id": false
+    },  
+    { 
+      "source_path": "learn-pr/azure/stage-deploy-app-service-deployment-slots/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/app-service/deploy-staging-slots?tabs=portal",
+      "redirect_document_id": false
+    },                    
+    { 
+      "source_path": "learn-pr/wwl-azure/active-directory-domain-services-migration/5-explore-active-directory-migration-tool.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/training/paths/migrate-servers-workloads-premises-hybrid-environments?tabs=portal",
+      "redirect_document_id": false
+    },    
+    { 
+      "source_path": "learn-pr/wwl-azure/active-directory-domain-services-migration/6-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/training/paths/migrate-servers-workloads-premises-hybrid-environments?tabs=portal",
+      "redirect_document_id": false
+    },
+        { 
+      "source_path": "learn-pr/wwl-azure/active-directory-domain-services-migration/7-summary-resources.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/training/paths/migrate-servers-workloads-premises-hybrid-environments?tabs=portal",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/introduction-sql-server-2022-t-sql-enhancements/index.md",
+      "redirect_url": "/training/modules/introduction-sql-server-t-sql-enhancements/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/introduction-sql-server-2022-t-sql-enhancements/06-date-numeric-enhancements.md",
+      "redirect_url": "/training/modules/introduction-sql-server-t-sql-enhancements/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/introduction-sql-server-2022-t-sql-enhancements/05-encoding-similarity.md",
+      "redirect_url": "/training/modules/introduction-sql-server-t-sql-enhancements/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/introduction-sql-server-2022-t-sql-enhancements/01-introduction.md",
+      "redirect_url": "/training/modules/introduction-sql-server-t-sql-enhancements/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/introduction-sql-server-2022-t-sql-enhancements/04-json-string-aggregation.md",
+      "redirect_url": "/training/modules/introduction-sql-server-t-sql-enhancements/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/introduction-sql-server-2022-t-sql-enhancements/07-knowledge-check.md",
+      "redirect_url": "/training/modules/introduction-sql-server-t-sql-enhancements/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/introduction-sql-server-2022-t-sql-enhancements/03-pattern-matching-text.md",
+      "redirect_url": "/training/modules/introduction-sql-server-t-sql-enhancements/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/introduction-sql-server-2022-t-sql-enhancements/08-summary.md",
+      "redirect_url": "/training/modules/introduction-sql-server-t-sql-enhancements/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/introduction-sql-server-2022-t-sql-enhancements/02-vector-ai-integration.md",
+      "redirect_url": "/training/modules/introduction-sql-server-t-sql-enhancements/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/introduction-to-sql-server-2022/index.md",
+      "redirect_url": "/training/modules/introduction-to-sql-server/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/introduction-to-sql-server-2022/3-ai-powered.md",
+      "redirect_url": "/training/modules/introduction-to-sql-server/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/introduction-to-sql-server-2022/4-analytics.md",
+      "redirect_url": "/training/modules/introduction-to-sql-server/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/introduction-to-sql-server-2022/2-deploy-and-feature-difference.md",
+      "redirect_url": "/training/modules/introduction-to-sql-server/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/introduction-to-sql-server-2022/5-developers.md",
+      "redirect_url": "/training/modules/introduction-to-sql-server/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/introduction-to-sql-server-2022/1-introduction.md",
+      "redirect_url": "/training/modules/introduction-to-sql-server/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/introduction-to-sql-server-2022/8-knowledge-check.md",
+      "redirect_url": "/training/modules/introduction-to-sql-server/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/introduction-to-sql-server-2022/6-performance.md",
+      "redirect_url": "/training/modules/introduction-to-sql-server/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/introduction-to-sql-server-2022/7-security-scalability.md",
+      "redirect_url": "/training/modules/introduction-to-sql-server/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/introduction-to-sql-server-2022/9-summary.md",
+      "redirect_url": "/training/modules/introduction-to-sql-server/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/understand-hybrid-data-platform-sql-server-2022/index.md",
+      "redirect_url": "/training/modules/understand-hybrid-data-platform-sql-server/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/understand-hybrid-data-platform-sql-server-2022/5-azure-active-directory-azure-ad-authentication.md",
+      "redirect_url": "/training/modules/understand-hybrid-data-platform-sql-server/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/understand-hybrid-data-platform-sql-server-2022/3-azure-arc-enabled.md",
+      "redirect_url": "/training/modules/understand-hybrid-data-platform-sql-server/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/understand-hybrid-data-platform-sql-server-2022/2-business-continuity-with-azure-sql-managed-instance.md",
+      "redirect_url": "/training/modules/understand-hybrid-data-platform-sql-server/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/understand-hybrid-data-platform-sql-server-2022/1-introduction.md",
+      "redirect_url": "/training/modules/understand-hybrid-data-platform-sql-server/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/understand-hybrid-data-platform-sql-server-2022/6-knowledge-check.md",
+      "redirect_url": "/training/modules/understand-hybrid-data-platform-sql-server/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/understand-hybrid-data-platform-sql-server-2022/4-near-real-time-analytics-synapse-link-for-sql.md",
+      "redirect_url": "/training/modules/understand-hybrid-data-platform-sql-server/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/understand-hybrid-data-platform-sql-server-2022/7-summary.md",
+      "redirect_url": "/training/modules/understand-hybrid-data-platform-sql-server/",
       "redirect_document_id": false
     }
   ]

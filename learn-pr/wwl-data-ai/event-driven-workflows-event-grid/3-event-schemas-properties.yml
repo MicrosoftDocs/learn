@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.event-driven-workflows-event-grid.event-schemas-properties
+title: Work with event schemas and properties
+metadata:
+  title: Work with Event Schemas and Properties
+  description: Learn how to structure events using the CloudEvents schema, define custom event types, and configure event subscription filters.
+  ms.date: 02/13/2026
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: unit
+durationInMinutes: 11
+content: |
+  [!include[](includes/3-event-schemas-properties.md)]

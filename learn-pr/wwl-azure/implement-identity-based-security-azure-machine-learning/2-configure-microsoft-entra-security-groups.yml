@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-identity-based-security-azure-machine-learning.configure-microsoft-entra-security-groups
+title: "Configure Microsoft Entra security groups for AI teams"
+metadata:
+  title: "Configure Microsoft Entra Security Groups"
+  description: "Learn how to configure Microsoft Entra security groups to manage Azure Machine Learning roles, automate user provisioning, and enhance team collaboration."
+  ms.date: 02/05/2026
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: unit
+durationInMinutes: 12
+content: |
+  [!include[](includes/2-configure-microsoft-entra-security-groups.md)]

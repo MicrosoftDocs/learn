@@ -4,7 +4,7 @@ title: Implement a slowly changing dimension (SCD) type 2
 metadata:
   title: Implement a Slowly Changing Dimension (SCD) Type 2
   description: Learn how to implement slowly changing dimension type 2 in Azure Databricks to maintain historical data changes for accurate reporting and analysis.
-  ms.date: 12/07/2025
+  ms.date: 02/10/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit

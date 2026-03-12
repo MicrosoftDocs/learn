@@ -2,9 +2,9 @@
 uid: learn.wwl.configure-storage-accounts.knowledge-check
 title: Module assessment
 metadata:
+  module_assessment_regen_label: regen-1770740921837
   adobe-target: true
   prefetch-feature-rollout: true
-  hidden_question_numbers: ["C4E438F6_42","C4E438F6_46","C4E438F6_67","C4E438F6_75","C4E438F6_91","C4E438F6_100","C4E438F6_108","C4E438F6_132"]
   ai_generated_module_assessment: true
   title: Module assessment
   description: "Knowledge check"
@@ -25,7 +25,7 @@ quiz:
     choices:
     - content: "Locally redundant storage"
       isCorrect: false
-      explanation: "Incorrect. Locally redundant storage replicates data three times within a single data center in the primary region."
+      explanation: "Incorrect. Locally redundant storage replicates data three times within a single data center in the primary region. "
     - content: "Read-access geo-redundant storage"
       isCorrect: true
       explanation: "Correct. Read-access geo-redundant storage is the default replication option. Geo-redundant storage (GRS) copies the data synchronously three times within a single physical location in the primary region by using LRS. The data is then copied asynchronously to a single physical location in the secondary region."

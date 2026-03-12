@@ -20,27 +20,37 @@ def recent_snowfall(location: str) -> str:
     mock_snow_data = {"Seattle": "0 inches", "Denver": "2 inches"}
     snow = mock_snow_data.get(location, "Data not available.")
     return json.dumps({"location": location, "snowfall": snow})
-
-user_functions: Set[Callable[..., Any]] = {
-    recent_snowfall,
-}
 ```
 
 Register the function with your agent using the Azure AI SDK:
 
 ```python
-# Initialize agent toolset with user functions
-functions = FunctionTool(user_functions)
-toolset = ToolSet()
-toolset.add(functions)
-agent_client.enable_auto_function_calls(toolset=toolset)
+# Define a function tool for the model to use
+function_tool = FunctionTool(
+    name="recent_snowfall",
+    parameters={
+        "type": "object",
+        "properties": {
+            "location": {"type": "string", "description": "The city name to check snowfall for."},
+        },
+        "required": ["location"],
+        "additionalProperties": False
+    },
+    description="Get recent snowfall totals for a given location.",
+    strict=True,
+)
+
+# Add the function tool to a list of tools for the agent
+tools: list[Tool] = [function_tool]
 
 # Create your agent with the toolset
-agent = agent_client.create_agent(
-    model="gpt-4o-mini",
+agent = project_client.agents.create_version(
     name="snowfall-agent",
-    instructions="You are a weather assistant tracking snowfall. Use the provided functions to answer questions.",
-    toolset=toolset
+    definition=PromptAgentDefinition(
+        model="gpt-4.1",
+        instructions="You are a weather assistant tracking snowfall. Use the provided functions to answer questions.",
+        tools=tools,
+    )
 )
 ```
 
@@ -57,33 +67,38 @@ First, develop and deploy your Azure Function. In this example, imagine we have 
 When your Azure Function is in place, integrate add it to the agent definition as an Azure Function tool:
 
   ```python
-  storage_service_endpoint = "https://<your-storage>.queue.core.windows.net"
-  
-  azure_function_tool = AzureFunctionTool(
-      name="get_snowfall",
-      description="Get snowfall information using Azure Function",
-      parameters={
-              "type": "object",
-              "properties": {
-                  "location": {"type": "string", "description": "The location to check snowfall."},
+  tool = AzureFunctionTool(
+      azure_function=AzureFunctionDefinition(
+          input_binding=AzureFunctionBinding(
+              storage_queue=AzureFunctionStorageQueue(
+                  queue_name="STORAGE_INPUT_QUEUE_NAME",
+                  queue_service_endpoint="STORAGE_QUEUE_SERVICE_ENDPOINT",
+              )
+          ),
+          output_binding=AzureFunctionBinding(
+              storage_queue=AzureFunctionStorageQueue(
+                  queue_name="STORAGE_OUTPUT_QUEUE_NAME",
+                  queue_service_endpoint="STORAGE_QUEUE_SERVICE_ENDPOINT",
+              )
+          ),
+          function=AzureFunctionDefinitionFunction(
+              name="queue_trigger",
+              description="Get weather for a given location",
+              parameters={
+                  "type": "object",
+                  "properties": {"location": {"type": "string", "description": "location to determine weather for"}},
               },
-              "required": ["location"],
-          },
-      input_queue=AzureFunctionStorageQueue(
-          queue_name="input",
-          storage_service_endpoint=storage_service_endpoint,
-      ),
-      output_queue=AzureFunctionStorageQueue(
-          queue_name="output",
-          storage_service_endpoint=storage_service_endpoint,
-      ),
+          ),
+      )
   )
-  
-  agent = agent_client.create_agent(
-      model=os.environ["MODEL_DEPLOYMENT_NAME"],
-      name="azure-function-agent",
-      instructions="You are a snowfall tracking agent. Use the provided Azure Function to fetch snowfall based on location.",
-      tools=azure_function_tool.definitions,
+
+  agent = project_client.agents.create_version(
+      agent_name="MyAgent",
+      definition=PromptAgentDefinition(
+          model="gpt-4.1",
+          instructions="You are a helpful weather assistant. Use the provided Azure Function to get weather information for a location when needed.",
+          tools=[tool],
+      ),
   )
   ```
 
@@ -98,47 +113,69 @@ OpenAPI defined tools allow agents to interact with external APIs using standard
 
 ### Example: Using an OpenAPI specification
 
-First, create a JSON file ( in this example, called *snowfall_openapi.json*) describing the API.
+First, create a JSON file ( in this example, called *weather_openapi.json*) describing the API.
 
   ```json
   {
-    "openapi": "3.0.0",
+    "openapi": "3.1.0",
     "info": {
-      "title": "Snowfall API",
-      "version": "1.0.0"
+      "title": "get weather data",
+      "description": "Retrieves current weather data for a location based on wttr.in.",
+      "version": "v1.0.0"
     },
+    "servers": [
+      {
+        "url": "https://wttr.in"
+      }
+    ],
+    "auth": [],
     "paths": {
-      "/snow": {
+      "/{location}": {
         "get": {
-          "summary": "Get snowfall information",
+          "description": "Get weather information for a specific location",
+          "operationId": "GetCurrentWeather",
           "parameters": [
             {
               "name": "location",
-              "in": "query",
+              "in": "path",
+              "description": "City or location to retrieve the weather for",
               "required": true,
               "schema": {
                 "type": "string"
               }
+            },
+            {
+            "name": "format",
+            "in": "query",
+            "description": "Always use j1 value for this parameter",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "j1"
             }
+          }
           ],
           "responses": {
             "200": {
               "description": "Successful response",
               "content": {
-                "application/json": {
+                "text/plain": {
                   "schema": {
-                    "type": "object",
-                    "properties": {
-                      "location": {"type": "string"},
-                      "snow": {"type": "string"}
-                    }
+                    "type": "string"
                   }
                 }
               }
+            },
+            "404": {
+              "description": "Location not found"
             }
-          }
+          },
+          "deprecated": false
         }
       }
+    },
+    "components": {
+      "schemes": {}
     }
   }
   ```
@@ -146,23 +183,31 @@ First, create a JSON file ( in this example, called *snowfall_openapi.json*) des
 Then, register the OpenAPI tool in the agent defintion:
 
   ```python
-  from azure.ai.agents.models import OpenApiTool, OpenApiAnonymousAuthDetails
+  from azure.ai.projects.models import OpenApiTool, OpenApiAnonymousAuthDetails
   
-  with open("snowfall_openapi.json", "r") as f:
-      openapi_spec = json.load(f)
+  with open(weather_asset_file_path, "r") as f:
+        openapi_weather = cast(dict[str, Any], jsonref.loads(f.read()))
+
+  tool = OpenApiTool(
+      openapi=OpenApiFunctionDefinition(
+          name="get_weather",
+          spec=openapi_weather,
+          description="Retrieve weather information for a location.",
+          auth=OpenApiAnonymousAuthDetails(),
+      )
+  )
   
-  auth = OpenApiAnonymousAuthDetails()
-  openapi_tool = OpenApiTool(name="snowfall_api", spec=openapi_spec, auth=auth)
-  
-  agent = agent_client.create_agent(
-      model="gpt-4o-mini",
-      name="openapi-agent",
-      instructions="You are a snowfall tracking assistant. Use the API to fetch snowfall data.",
-      tools=[openapi_tool]
+agent = project_client.agents.create_version(
+      agent_name="openapi-agent",
+      definition=PromptAgentDefinition(
+          model="gpt-4.1",
+          instructions="You are a weather assistant. Use the API to fetch weather data.",
+          tools=[openapi_tool],
+      ),
   )
   ```
 
-The agent can now use the OpenAPI tool to fetch snowfall data dynamically.
+The agent can now use the OpenAPI tool to fetch weather data dynamically.
 
 > [!NOTE]
 > One of the concepts related to agents and custom tools that developers often have difficulty with is the *declarative* nature of the solution. You don't need to write code that explicitly *calls* your custom tool functions - the agent itself decides to call tool functions based on messages in prompts. By providing the agent with functions that have meaningful names and well-documented parameters, the agent can "figure out" when and how to call the function all by itself!

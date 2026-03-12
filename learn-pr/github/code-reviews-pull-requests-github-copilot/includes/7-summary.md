@@ -38,3 +38,8 @@ To deepen your understanding of GitHub Copilot code review and related workflows
 - [Configuring Automatic Code Review by GitHub Copilot](https://docs.github.com/copilot/how-tos/use-copilot-agents/request-a-code-review/configure-automatic-review)
 
 - [Configuring Coding Guidelines for GitHub Copilot Code Review](https://docs.github.com/copilot/how-tos/configure-custom-instructions/add-repository-instructions)
+
+## Provide feedback
+
+Use this [issue form](https://github.com/githubpartners/microsoft-learn/issues/new/choose) to provide content feedback or suggested changes for this Microsoft Learn module. GitHub maintains this content and a team member will triage the request. Thank you for taking the time to improve our content!
+

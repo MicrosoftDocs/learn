@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-implement-database-objects.design-implement-tables
+title: Build effective tables
+metadata:
+  title: Build effective tables
+  description: "Learn how to design and implement tables with appropriate data types, sizes, and indexes"
+  ms.date: 02/24/2026
+  author: JulianePadrao
+  ms.author: jupadrao
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 8
+content: |
+  [!include[](includes/3-design-implement-tables.md)]

@@ -10,12 +10,6 @@ In this module, you learn how to:
 
 - Use the Microsoft Cybersecurity Reference Architecture (MCRA) to design more secure solutions.
 - Use Microsoft Cloud Security Benchmark (MCSB) to design more secure solutions.
-- Design solutions with best practices for security capabilities and controls.
-- Design solutions for protecting against insider threats, external attacks, and supply chain attacks.
-- Design AI solutions that align to the Microsoft Cloud Security Benchmark.
-- Design solutions to align to a Zero Trust rapid modernization plan.
-
-The content in the module helps you prepare for the certification exam SC-100: Microsoft Cybersecurity Architect.
 
 ## Prerequisites
 

@@ -1,0 +1,84 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.introduction-to-arm-surface.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge Check
+  description: This content is part of the "Introduction to Arm on Microsoft Surface" module.
+  ms.date: 02/17/2026
+  author: ozahran7
+  ms.author: v-zahranomar
+  ms.topic: unit
+durationInMinutes: 5
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "What is the primary purpose of Arm on Microsoft Surface as described in the module?"
+    choices:
+        - content: "To replace all x86 processors in Surface devices immediately"
+          isCorrect: false
+          explanation: "Incorrect. The module states that Surface for Business devices offer both traditional x86 and modern Arm solutions."
+        - content: "To enable long battery life while delivering strong performance for business users"
+          isCorrect: true
+          explanation: "Correct. The introduction explains that Arm on Microsoft Surface enables long battery life while delivering exceptional performance for modern business users."
+        - content: "To eliminate the need for Windows emulation entirely"
+          isCorrect: false
+          explanation: "Incorrect. The module explains that emulation is still used to run x86 and x64 apps on Arm devices."
+        - content: "To focus exclusively on gaming and graphics-intensive workloads"
+          isCorrect: false
+          explanation: "Incorrect. The module notes that Prism doesn't work well for graphics-heavy apps such as certain games."
+  - content: "Which statement best describes the difference between Arm and ARM in this module?"
+    choices:
+        - content: "Arm refers to the operating system, while ARM refers to a specific Surface device"
+          isCorrect: false
+          explanation: "Incorrect. The module doesn't define Arm as an operating system or ARM as a device."
+        - content: "Arm is the company that designs and licenses processor architecture, while ARM refers to the architecture itself"
+          isCorrect: true
+          explanation: "Correct. The content explains that Arm is an organization that licenses IP and designs, while ARM refers to the licensed processor architecture."
+        - content: "Arm manufactures processors, while ARM only licenses software"
+          isCorrect: false
+          explanation: "Incorrect. The module clearly states that Arm doesn't manufacture processors."
+        - content: "Arm and ARM refer to different and unrelated technologies"
+          isCorrect: false
+          explanation: "Incorrect. The module explicitly notes that Arm and ARM refer to the same processor architecture, with different usage contexts."
+  - content: "Which benefit is directly associated with using Arm architecture on Surface devices?"
+    choices:
+        - content: "Built-in security features at the System on Chip (SoC) level"
+          isCorrect: true
+          explanation: "Correct. The module lists security features built directly into the SoC as a benefit of Arm architecture."
+        - content: "Mandatory use of external graphics cards"
+          isCorrect: false
+          explanation: "Incorrect. The module discusses consolidation of components within the SoC, not reliance on external hardware."
+        - content: "Higher power consumption compared to other PCs"
+          isCorrect: false
+          explanation: "Incorrect. The content highlights lower power consumption and long battery life as advantages."
+        - content: "Exclusive support for legacy x86 hardware drivers"
+          isCorrect: false
+          explanation: "Incorrect. The module explains that some drivers requiring direct hardware or kernel access may not work well under emulation."
+  - content: "What is Prism in the context of Arm-powered Surface devices?"
+    choices:
+        - content: "A hardware security module built into Snapdragon processors"
+          isCorrect: false
+          explanation: "Incorrect. Prism is described as an emulation engine, not a security module."
+        - content: "A new Windows emulation engine that improves performance on Arm devices"
+          isCorrect: true
+          explanation: "Correct. The module explains that Prism is the new Windows emulation engine included with Windows 11 24H2 that improves performance and lowers CPU usage."
+        - content: "A cloud-based application management service"
+          isCorrect: false
+          explanation: "Incorrect. App Assure is mentioned for app compatibility, not Prism."
+        - content: "A native Arm64 productivity application"
+          isCorrect: false
+          explanation: "Incorrect. Prism isn't an application but an emulation engine."
+  - content: "Which user scenario is identified as ideal for ARM-based Surface devices?"
+    choices:
+        - content: "Users who rely heavily on OpenGL or DirectX 12 games"
+          isCorrect: false
+          explanation: "Incorrect. The module states that Prism doesn't work well for games or apps using OpenGL or DirectX 12."
+        - content: "Mobile professionals who need portability and long battery life"
+          isCorrect: true
+          explanation: "Correct. The module highlights mobile professionals as an ideal use case due to portability, fanless design, and long battery life."
+        - content: "Workloads requiring direct kernel-level hardware access"
+          isCorrect: false
+          explanation: "Incorrect. Apps or drivers needing direct hardware or kernel access are listed as scenarios where emulation doesn't work well."
+        - content: "Systems that depend on anti-cheat or DRM software"
+          isCorrect: false
+          explanation: "Incorrect. The module specifically lists apps with anti-cheat or DRM software as problematic under emulation."

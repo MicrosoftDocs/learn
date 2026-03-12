@@ -6,7 +6,7 @@ metadata:
   description: Introduction to ASP.NET Core dependency injection.
   ms.date: 11/7/2024
   author: camsoper
-  ms.author: casoper
+  ms.author: daroth
   ms.topic: unit
 durationInMinutes: 1
 content: |

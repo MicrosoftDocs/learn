@@ -1,0 +1,42 @@
+### YamlMime:Module
+uid: learn.wwl.introduction-sql-server-t-sql-enhancements
+metadata:
+  title: Transform Development Workflows with T-SQL in SQL Server 2025
+  description: "Explore the new T-SQL enhancements in SQL Server 2025, including AI integration, pattern matching, JSON aggregation, and more."
+  ms.date: 10/14/2025
+  author: MScalopez
+  ms.author: calopez
+  ms.topic: module
+  ms.service: azure-sql-database
+title: Transform development workflows with T-SQL in SQL Server 2025
+summary: |
+  Learn about the new T-SQL capabilities introduced in SQL Server 2025 that expand data processing, AI integration, and query flexibility.
+abstract: |
+  This module covers:
+  - Vector and AI integration
+  - Pattern matching and text extraction
+  - JSON and string aggregation
+  - Encoding and similarity functions
+  - Date and numeric enhancements
+prerequisites: |
+  You should be familiar with basic SQL syntax and T-SQL concepts in SQL Server.
+iconUrl: /learn/achievements/sql-server.svg
+levels:
+- intermediate
+roles:
+- data-engineer
+- database-administrator
+products:
+- sql-server
+- azure-sql-database
+units:
+- learn.wwl.introduction-sql-server-t-sql-enhancements.introduction
+- learn.wwl.introduction-sql-server-t-sql-enhancements.vector-ai-integration
+- learn.wwl.introduction-sql-server-t-sql-enhancements.pattern-matching-text-extraction
+- learn.wwl.introduction-sql-server-t-sql-enhancements.json-string-aggregation
+- learn.wwl.introduction-sql-server-t-sql-enhancements.encoding-similarity
+- learn.wwl.introduction-sql-server-t-sql-enhancements.date-numeric-enhancements
+- learn.wwl.introduction-sql-server-t-sql-enhancements.knowledge-check
+- learn.wwl.introduction-sql-server-t-sql-enhancements.summary
+badge:
+  uid: learn.wwl.introduction-sql-server-t-sql-enhancements.badge

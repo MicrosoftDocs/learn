@@ -1,13 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.get-started-lakehouses.fabric-lakehouse
-title: Explore the Microsoft Fabric lakehouse
+title: Describe lakehouse features and capabilities
 metadata:
-  title: Explore the Microsoft Fabric lakehouse
-  description: "Explore the Microsoft Fabric lakehouse"
-  ms.date: 03/19/2025
+  title: Describe Lakehouse Features and Capabilities
+  description: "Describe the features and capabilities of a lakehouse in Microsoft Fabric"
+  ms.date: 03/04/2026
   author: angierudduck
   ms.author: anrudduc
   ms.topic: unit
+  ai-usage: ai-assisted
 durationInMinutes: 5
 content: |
   [!include[](includes/2-fabric-lakehouse.md)]

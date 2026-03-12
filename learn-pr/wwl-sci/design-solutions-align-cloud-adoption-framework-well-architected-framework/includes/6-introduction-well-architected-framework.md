@@ -22,6 +22,9 @@ The framework consists of five pillars:
 | **Operational Excellence** | Holistic observability and DevOps practices | Integrate security into deployment pipelines |
 | **Performance Efficiency** | Scalability and load testing | Ensure security controls don't become bottlenecks |
 
+:::image type="content" source="../media/waf-diagram-revised.png" alt-text="Diagram showing the five pillars of the Azure Well Architected framework." lightbox="../media/waf-diagram-revised.png":::
+
+
 ## Why security architects need the Well-Architected Framework
 
 Security isn't a standalone concern. Every architectural decision involves tradeoffs between pillars. For example, adding encryption at rest improves security but might affect performance. Implementing redundant security controls improves reliability but increases costs. The Well-Architected Framework helps you make these tradeoffs deliberately rather than accidentally.

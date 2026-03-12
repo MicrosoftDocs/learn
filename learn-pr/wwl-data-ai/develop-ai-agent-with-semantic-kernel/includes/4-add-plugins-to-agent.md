@@ -20,6 +20,10 @@ These tools are automatically available and don't require any extra setup.
 
 When creating custom tools for your Microsoft Foundry Agent, you need to understand several key concepts:
 
+1. **Use the tool decorator**
+
+    Create a custom function tool by defining a Python function and decorating it with the `@tool` decorator from the Microsoft Agent Framework. This decorator registers your function as a tool that the AI can call. The `@tool` decorator includes parameters for providing a name and description for your tool, as well as the `approval_mode` to specify whether tool calls require approval.
+
 1. **Function definition and annotations**
     
     Create your tool by defining a regular Python function with proper type annotations. Use `Annotated` and `Field` from Pydantic to provide detailed descriptions that help the AI understand the function's purpose and how to use its parameters. The more descriptive your annotations, the better the AI can understand when and how to call your function.

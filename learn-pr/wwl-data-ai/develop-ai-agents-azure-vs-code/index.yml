@@ -1,0 +1,54 @@
+### YamlMime:Module
+uid: learn.wwl.develop-ai-agents-azure-vs-code
+metadata:
+  title: Develop AI agents with Microsoft Foundry and Visual Studio Code
+  description: Learn how to build, test, and deploy AI agents using Microsoft Foundry Agent Service through both the Azure portal and Visual Studio Code extension.
+  author: ivorb
+  ms.author: berryivor
+  ms.date: 02/12/2026
+  ms.service: azure-ai-foundry
+  ms.topic: module-standard-task-based
+  ai-usage: ai-generated
+title: Develop AI agents with Microsoft Foundry and Visual Studio Code
+summary: Learn how to build, test, and deploy AI agents using Microsoft Foundry Agent Service through both the Azure portal and Visual Studio Code extension.
+abstract: |
+  By the end of this module, you'll be able to:
+  - Describe the purpose and capabilities of AI agents
+  - Explain the key features of Microsoft Foundry Agent Service
+  - Set up and configure the Microsoft Foundry extension in Visual Studio Code
+  - Build and configure AI agents using multiple development approaches
+  - Extend agent capabilities with tools and functions
+  - Test agents using integrated playgrounds
+  - Deploy and integrate agents into applications
+prerequisites: |
+  - Familiarity with Azure and the Azure portal
+  - An understanding of generative AI (recommended: [Fundamentals of Generative AI](/training/modules/fundamentals-generative-ai/) module)
+  - Basic familiarity with Visual Studio Code
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+  - intermediate
+roles:
+  - ai-engineer
+  - developer
+  - data-scientist
+  - solution-architect
+products:
+  - azure-ai-foundry
+  - azure-ai-foundry-agent-service
+  - azure-ai-foundry-sdk
+subjects:
+  - artificial-intelligence
+units:
+- learn.wwl.develop-ai-agents-azure-vs-code.introduction
+- learn.wwl.develop-ai-agents-azure-vs-code.understand-ai-agents-foundry
+- learn.wwl.develop-ai-agents-azure-vs-code.explore-development-approaches
+- learn.wwl.develop-ai-agents-azure-vs-code.build-agent-azure-portal
+- learn.wwl.develop-ai-agents-azure-vs-code.set-up-vs-code
+- learn.wwl.develop-ai-agents-azure-vs-code.configure-manage-agents
+- learn.wwl.develop-ai-agents-azure-vs-code.extend-agent-capabilities
+- learn.wwl.develop-ai-agents-azure-vs-code.test-deploy-integrate
+- learn.wwl.develop-ai-agents-azure-vs-code.exercise
+- learn.wwl.develop-ai-agents-azure-vs-code.knowledge-check
+- learn.wwl.develop-ai-agents-azure-vs-code.summary
+badge:
+  uid: learn.wwl.develop-ai-agents-azure-vs-code.badge

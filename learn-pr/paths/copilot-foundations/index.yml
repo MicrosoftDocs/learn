@@ -26,10 +26,7 @@ subjects:
 - machine-learning
 - natural-language-processing
 modules:
-- learn.wwl.fundamentals-generative-ai
 - learn-bizapps.power-virtual-agent-bots
-- learn.wwl.prepare-azure-ai-development
-- learn.wwl.build-copilot-ai-studio
 trophy:
   uid: learn.wwl.copilot-foundations.trophy
 

@@ -4,7 +4,7 @@ title: Ingest data with Spark Structured Streaming
 metadata:
   title: Ingest Data with Spark Structured Streaming
   description: Learn how to ingest streaming data from message buses like Kafka and Azure Event Hubs into Unity Catalog tables using Spark Structured Streaming in Azure Databricks.
-  ms.date: 01/15/2026
+  ms.date: 02/16/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit
