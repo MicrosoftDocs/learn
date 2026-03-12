@@ -54,7 +54,7 @@ To pass parameter values to a script, you need to provide the argument value in 
 
 For example, if you would pass a parameter value when running a script in a terminal, you would use the following command:
 
-```
+```python
 python train.py --training_data diabetes.csv
 ```
 
