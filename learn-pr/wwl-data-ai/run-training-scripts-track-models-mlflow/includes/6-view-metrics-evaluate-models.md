@@ -1,16 +1,16 @@
-After you've trained and tracked models with MLflow in Azure Machine Learning, you can explore the metrics and evaluate your models. 
+After you trained and tracked models with MLflow in Azure Machine Learning, you can explore the metrics and evaluate your models. 
 
 - Review metrics in the Azure Machine Learning studio.
-- Retrieve runs and metrics with MLflow. 
+- Retrieve runs and metrics with MLflow.
 
 > [!Note]
-> Azure Machine Learning uses the concept of jobs when you run a script. Multiple job runs in Azure Machine Learning can be grouped within one experiment. MLflow uses a similar syntax where each script is a run, which is part of an experiment. 
+> Azure Machine Learning uses the concept of jobs when you run a script. Multiple job runs in Azure Machine Learning can be grouped within one experiment. MLflow uses a similar syntax where each script is a run, which is part of an experiment.
 
 ## View the metrics in the Azure Machine Learning studio
 
 When your job is completed, you can review the logged parameters, metrics, and artifacts in the Azure Machine Learning studio.
 
-When you review job runs in the Azure Machine Learning studio, you'll explore a job run's metrics, which is part of an experiment.
+When you review job runs in the Azure Machine Learning studio, you explore a job run's metrics, which is part of an experiment.
 
 To view the metrics through an intuitive user interface, you can:
 
@@ -28,7 +28,7 @@ To view the metrics through an intuitive user interface, you can:
 
 When you run a training script as a job in Azure Machine Learning, and track your model training with MLflow, you can query the runs in a notebook by using MLflow. Using MLflow in a notebook gives you more control over which runs you want to retrieve to compare.
 
-When using MLflow to query your runs, you'll refer to experiments and runs. 
+When using MLflow to query your runs, you refer to experiments and runs. 
 
 ### Search all the experiments
 You can get all the active experiments in the workspace using MLFlow:
@@ -61,7 +61,7 @@ print(exp)
 
 ### Retrieve runs
 
-MLflow allows you to search for runs inside of any experiment. You need either the experiment ID or the experiment name. 
+MLflow allows you to search for runs inside of any experiment. You need either the experiment ID or the experiment name.
 
 For example, when you want to retrieve the metrics of a specific run:
 
@@ -69,7 +69,7 @@ For example, when you want to retrieve the metrics of a specific run:
 mlflow.search_runs(exp.experiment_id)
 ```
 
-You can search runs across multiple experiments if necessary. Searching across experiments may be useful in case you want to compare runs of the same model when it's being logged in different experiments (by different people or different project iterations). 
+You can search runs across multiple experiments if necessary, which is useful when you want to compare runs of the same model across different experiments. For example, different people or different project iterations can log the same model in separate experiments.
 
 You can use `search_all_experiments=True` if you want to search across all the experiments in the workspace.
 

@@ -22,7 +22,7 @@ name: mlflow-env
 channels:
   - conda-forge
 dependencies:
-  - python=3.8
+  - python=3.10
   - pip
   - pip:
     - numpy
@@ -65,7 +65,8 @@ Depending on the type of value you want to log, use the MLflow command to store 
 
 - `mlflow.log_param()`: Log single key-value parameter. Use this function for an input parameter you want to log.
 - `mlflow.log_metric()`: Log single key-value metric. Value must be a number. Use this function for any output you want to store with the run.
-- `mlflow.log_artifact()`: Log a file. Use this function for any plot you want to log, save as image file first.
+- `mlflow.log_figure()`: Log a matplotlib figure directly as an artifact. Use this function to log plots without saving them to disk first.
+- `mlflow.log_image()`: Log a numpy or PIL image object as an artifact. Use this function to log images directly without saving them to disk first.
 
 To add MLflow to an existing training script, you can add the following code:
 
@@ -81,6 +82,6 @@ mlflow.log_param("Regularization rate", reg_rate)
 
 ## Submit the job
 
-Finally, you need to submit the training script as a job in Azure Machine Learning. When you use MLflow in a training script and run it as a job, all tracked parameters, metrics, and artifacts are stored with the job run. 
+Finally, you need to submit the training script as a job in Azure Machine Learning. When you use MLflow in a training script, all tracked parameters, metrics, and artifacts are stored with the job run. You can review them for each run after submitting the job. 
 
 You configure the job as usual. You only need to make sure that the environment you refer to in the job includes the necessary packages, and the script describes which metrics you want to log.

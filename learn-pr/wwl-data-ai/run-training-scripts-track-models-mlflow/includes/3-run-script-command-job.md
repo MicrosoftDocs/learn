@@ -1,10 +1,10 @@
-When you have a script that train a machine learning model, you can run it as a command job in Azure Machine Learning. 
+When you have a script that trains a machine learning model, you can run it as a command job in Azure Machine Learning. 
 
 ## Configure and submit a command job
 
-To run a script as a command job, you'll need to configure and submit the job.
+To run a script as a command job, you need to configure and submit the job.
 
-To configure a command job with the Python SDK (v2), you'll use the `command` function. To run a script, you'll need to specify values for the following parameters:
+To configure a command job with the Python SDK (v2), you use the `command` function. To run a script, you need to specify values for the following parameters:
 
 - `code`: The folder that includes the script to run.
 - `command`: Specifies which file to run.
@@ -32,13 +32,13 @@ job = command(
     )
 ```
 
-When your job is configured, you can submit it, which will initiate the job and run the script:
+When your job is configured, you can submit it, which initiates the job and run the script:
 
 ```python
 # submit job
 returned_job = ml_client.create_or_update(job)
 ```
 
-You can monitor and review the job in the Azure Machine Learning studio. All jobs with the same experiment name will be grouped under the same experiment. You can find an individual job using the specified display name. 
+You can monitor and review the job in the Azure Machine Learning studio. All jobs with the same experiment name are grouped under the same experiment. You can find an individual job using the specified display name.
 
 All inputs and outputs of a command job are tracked. You can review which command you specified, which compute was used, and which environment was used to run the script on the specified compute.

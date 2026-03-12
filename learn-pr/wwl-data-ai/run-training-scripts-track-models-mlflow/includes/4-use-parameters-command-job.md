@@ -1,4 +1,4 @@
-You can increase the flexibility of your scripts by using parameters. For example, you might have created a script that trains a machine learning model. You can use the same script to train a model on different datasets, or using various hyperparameter values. 
+You can increase the flexibility of your scripts by using parameters. Imagine you created a script that trains a machine learning model. You can use the same script to train a model on different datasets, or using various hyperparameter values. 
 
 ## Working with script arguments
 
@@ -50,7 +50,7 @@ Any parameters you expect should be defined in the script. In the script, you ca
 
 ## Passing arguments to a script
 
-To pass parameter values to a script, you need to provide the argument value in the command. 
+To pass parameter values to a script, you need to provide the argument value in the command.
 
 For example, if you would pass a parameter value when running a script in a terminal, you would use the following command:
 
@@ -60,7 +60,7 @@ python train.py --training_data diabetes.csv
 
 In the example, `diabetes.csv` is a local file. Alternatively, you could specify the path to a data asset created in the Azure Machine Learning workspace.
 
-Similarly, when you want to pass a parameter value to a script you want to run as a command job, you'll specify the values in the command:
+Similarly, when you want to pass a parameter value to a script you want to run as a command job, you specify the values in the command:
 
 ```python
 from azure.ai.ml import command
