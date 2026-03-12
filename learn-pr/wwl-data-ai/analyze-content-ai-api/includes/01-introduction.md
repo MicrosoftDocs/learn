@@ -3,11 +3,8 @@ Azure Content Understanding is a multimodal service that simplifies the creation
 > [!TIP]
 > To learn how to build Azure Content Understanding analyzers, complete the **[Create a multimodal analysis solution with Azure Content Understanding](/training/modules/analyze-content-ai/)** module.
 
-You can develop client applications that use Azure Content Understanding analyzers by using the Azure Content Understanding REST API; which is the focus of this module.
+You can develop client applications that use Azure Content Understanding analyzers by using the Python SDK or the REST API; which is the focus of this module.
 
 ![Diagram of Azure Content Understanding and a client application.](../media/content-understanding.png)
 
-In this module, you'll learn how to write code that uses the REST API to submit a content file to an analyzer and process the results.
-
-> [!NOTE]
-> Azure Content Understanding is currently in public preview. Details described in this module are subject to change.
+In this module, you'll learn how to write code that uses the Python SDK and REST API to submit a content file to an analyzer and process the results.
