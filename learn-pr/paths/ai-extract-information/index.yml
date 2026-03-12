@@ -29,7 +29,7 @@ roles:
 subjects:
 - artificial-intelligence
 products:
-- ai-services
+- foundry-tools
 - microsoft-foundry
 - azure-cognitive-search
 modules:

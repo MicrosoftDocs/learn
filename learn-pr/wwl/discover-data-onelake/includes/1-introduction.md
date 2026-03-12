@@ -1,0 +1,5 @@
+Traditional analytics environments scatter data across separate storage accounts, databases, and file systems. Each team maintains its own data copies, leading to duplication, inconsistency, and wasted time searching for the right data. Before you can transform data or build reports, you need to discover what exists and where it lives.
+
+Imagine your organization recently adopted Microsoft Fabric. Other teams have been creating lakehouses, warehouses, and streaming feeds, but you don't know what data exist or where to find them. You need to discover and connect to their data before you can build your analytical solutions. Navigating a shared data environment requires understanding OneLake's discovery and connection capabilities.
+
+In this module, you explore how OneLake serves as a unified storage layer that brings all Fabric workloads together in one place. You learn to use the OneLake catalog to browse and find existing data across your organization, create shortcuts that connect to data, and discover streaming data sources through Real-Time hub.
