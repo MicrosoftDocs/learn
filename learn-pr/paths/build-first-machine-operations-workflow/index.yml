@@ -30,7 +30,6 @@ subjects:
 - machine-learning
 modules:
 - learn.wwl.experiment-azure-machine-learning
-- learn.wwl.use-azure-machine-learn-job-for-automation
 - learn.wwl.perform-hyperparameter-tuning-azure-machine-learning-pipelines
 - learn.wwl.run-pipelines-azure-machine-learning
 - learn.wwl.trigger-azure-machine-learn-jobs-github-actions
