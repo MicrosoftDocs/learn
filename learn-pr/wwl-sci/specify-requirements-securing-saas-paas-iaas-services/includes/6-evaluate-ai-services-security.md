@@ -20,7 +20,7 @@ Responsibility allocation varies by deployment model. SaaS AI solutions like Mic
 
 When evaluating solutions, assess whether the architecture implements appropriate authentication and authorization mechanisms.
 
-Evaluate whether the solution uses Microsoft Entra ID for authentication rather than API keys. Entra ID enables conditional access policies, multifactor authentication, and centralized identity governance. API keys should be disabled where possible, as they cannot support fine-grained access control or user-level audit trails.
+Evaluate whether the solution uses Microsoft Entra ID for authentication rather than API keys. Microsoft Entra ID enables conditional access policies, multifactor authentication, and centralized identity governance. API keys should be disabled where possible, as they can't support fine-grained access control or user-level audit trails.
 
 Assess role-based access control configurations for least privilege. The **Cognitive Services OpenAI User** role provides inference-only access, while **Cognitive Services OpenAI Contributor** enables model deployment and management. Evaluate whether the proposed role assignments align with the principle of least privilege for each identity type.
 
@@ -36,7 +36,7 @@ Assess whether the solution uses private endpoints to eliminate public internet 
 
 For AI platforms that provide managed virtual networks, evaluate whether the chosen isolation mode aligns with organizational security requirements and data classification. Platform-specific network isolation configurations, such as those for Microsoft Foundry, are covered in the next unit.
 
-Review network security group rules to verify traffic is restricted to necessary communications. Assess whether Azure Firewall provides additional filtering for internet-bound traffic.
+Review network security group rules to verify traffic are restricted to necessary communications. Assess whether Azure Firewall provides additional filtering for internet-bound traffic.
 
 ## Evaluate content safety controls
 
@@ -66,7 +66,7 @@ Beyond content filtering, AI applications require security controls specific to 
 
 ### Model governance evaluation (MCSB AI-1)
 
-Assess whether the solution implements formal model approval processes enforced through Azure Policy. The built-in policy **Cognitive Services Deployments should only use approved Registry Models** restricts which models can be deployed by matching model asset IDs. Additionally, evaluate whether local API key authentication is disabled via policy, requiring Entra ID authentication. Evaluate model provenance tracking to ensure organizations can identify the source and modification history of deployed models. Unverified models may contain backdoors, poisoned training data, or supply chain compromises.
+Assess whether the solution implements formal model approval processes enforced through Azure Policy. The built-in policy **Cognitive Services Deployments should only use approved Registry Models** restricts which models can be deployed by matching model asset IDs. Additionally, evaluate whether local API key authentication is disabled via policy, requiring Microsoft Entra ID authentication. Evaluate model provenance tracking to ensure organizations can identify the source and modification history of deployed models. Unverified models may contain backdoors, poisoned training data, or supply chain compromises.
 
 ### Agent function privileges (MCSB AI-4)
 
@@ -135,7 +135,7 @@ Additionally evaluate traditional security controls:
 
 | Area | Key evaluation points |
 | ---- | --------------------- |
-| **Identity** | Microsoft Entra ID authentication, managed identities, Entra Agent ID, least privilege RBAC |
+| **Identity** | Microsoft Entra ID authentication, managed identities, Microsoft Entra Agent ID, least privilege RBAC |
 | **Network** | Private endpoints, managed virtual network isolation, NSG configurations |
 | **Data protection** | Customer-managed keys, Purview Data Security Posture Management, sensitivity labels, data residency compliance, diagnostic logging |
 | **Availability** | Quota monitoring, API Management gateway, DDoS protection |

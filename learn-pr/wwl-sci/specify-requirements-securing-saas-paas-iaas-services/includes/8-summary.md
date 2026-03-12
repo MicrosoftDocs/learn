@@ -2,12 +2,12 @@ In this module, you learned how security architects specify security requirement
 
 You learned how to:
 
-- Specify security baselines for SaaS, PaaS, and IaaS services using the shared responsibility model.
-- Specify security requirements for IoT workloads including device identity, network segmentation, and monitoring.
-- Specify security requirements for web workloads covering authentication, network protection, and application security.
-- Specify security requirements for containers and container orchestration including cluster security, image integrity, and runtime protection.
-- Evaluate security controls for AI services using MCSB v2 AI-specific controls and the AI shared responsibility model.
-- Evaluate security for Microsoft Foundry workloads including resource/project architecture, identity controls, connection security, network isolation, and model governance.
+- Specify security baselines for SaaS, PaaS, and IaaS services
+- Specify security requirements for IoT workloads
+- Specify security requirements for web workloads
+- Specify security requirements for containers and container orchestration
+- Specify security requirements for AI workloads
+- Evaluate security for Microsoft Foundry workloads
 
 ## Learn more
 

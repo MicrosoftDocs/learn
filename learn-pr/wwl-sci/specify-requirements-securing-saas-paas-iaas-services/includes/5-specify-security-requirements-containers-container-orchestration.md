@@ -4,7 +4,7 @@ Organizations increasingly adopt containers and container orchestration platform
 
 Access control for container orchestration platforms must address both the management plane and the data plane. Security architects should specify requirements for identity integration and role-based access.
 
-For cluster authentication specifications, require integration with Microsoft Entra ID to leverage your organization's existing identity governance. This integration enables:
+For cluster authentication specifications, require integration with Microsoft Entra ID to use your organization's existing identity governance. This integration enables:
 
 - Conditional access policies
 - Multifactor authentication
@@ -20,7 +20,7 @@ Specify requirements for service account management. Default service accounts sh
 
 ## Network security requirements
 
-Container orchestration platforms require network security at multiple layers. Traditional network security groups filter traffic at the infrastructure level, but container platforms need additional controls.
+Container orchestration platforms require network security at multiple layers. Traditional network security groups filter traffic at the infrastructure level, but container platforms need extra controls.
 
 Specify requirements for API server protection. Private clusters restrict API server access to private endpoints within your virtual network, eliminating public internet exposure. For scenarios requiring public access, define authorized IP ranges that can communicate with the API server.
 
@@ -88,7 +88,7 @@ Define requirements for container runtime security contexts:
 
 - Containers must not run as root unless explicitly required and approved.
 - Require read-only root filesystems where possible.
-- Restrict containers from mounting sensitive host paths or acquiring additional capabilities.
+- Restrict containers from mounting sensitive host paths or acquiring extra capabilities.
 - Use Linux security features such as **AppArmor** and **seccomp** to provide granular control over container actions and further limit the attack surface.
 
 ## Secrets management requirements
@@ -102,7 +102,7 @@ When specifying container and orchestration security requirements, prioritize:
 - Microsoft Entra ID integration with Kubernetes RBAC for identity and access control
 - Private clusters with network policies enforcing default-deny communication and egress traffic routed through Azure Firewall
 - Private container registries with vulnerability scanning at all lifecycle stages and minimal base images
-- Defender for Containers for runtime threat detection, binary drift detection, and security posture management integrated with Defender XDR and Sentinel
+- Defender for Containers for runtime threat detection, binary drift detection, and security posture management integrated with Defender XDR and Microsoft Sentinel
 - Azure Key Vault with Secrets Store CSI Driver for centralized secrets management
 - Pod Security Standards enforcing baseline or restricted configurations with AppArmor and seccomp hardening
 

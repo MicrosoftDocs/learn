@@ -15,7 +15,7 @@ Foundry divides operations into control plane (resource management) and data pla
 
 ### Authentication method evaluation
 
-Foundry supports two authentication methods: Microsoft Entra ID and API keys. Evaluate whether the solution uses Entra ID for production workloads, which enables conditional access, managed identities, and granular RBAC. API keys remain available for rapid prototyping but lack per-user traceability and should be disabled via Azure Policy for production environments.
+Foundry supports two authentication methods: Microsoft Entra ID and API keys. Evaluate whether the solution uses Microsoft Entra ID for production workloads, which enables conditional access, managed identities, and granular RBAC. API keys remain available for rapid prototyping but lack per-user traceability and should be disabled via Azure Policy for production environments.
 
 ### RBAC assignment evaluation
 
@@ -43,16 +43,16 @@ Foundry connections define how the resource and projects authenticate to depende
 
 Evaluate whether connections use Microsoft Entra ID authentication rather than API keys. Foundry connections support the following authentication methods, with availability varying by connector type:
 
-- **Managed identity** (system or user-assigned) — preferred for keyless credential management
+- **Managed identity** (system or user-assigned)—preferred for keyless credential management
 - **Service principal** (client ID/secret or certificate)
-- **API key** — for services that don't support Entra ID
-- **SAS token** — for specific storage scenarios
+- **API key**—for services that don't support Microsoft Entra ID
+- **SAS token**—for specific storage scenarios
 
 ### Key Vault integration
 
 For connections that require secrets (API keys, connection strings), verify that a dedicated Azure Key Vault is configured through a Key Vault connection at the Foundry resource level. This dedicated vault should:
 
-- Store only Foundry-managed secrets — not be shared with other workload components
+- Store only Foundry-managed secrets—not be shared with other workload components
 - Have access restricted to the Foundry resource managed identity
 - Use Azure Monitor and activity logs for auditing create, update, and delete events on secrets
 
@@ -118,7 +118,7 @@ Foundry follows a shared responsibility model for vulnerability management. Micr
 Evaluate whether Azure Policy is configured to control model deployments at the Foundry resource level:
 
 - **Cognitive Services Deployments should only use approved Registry Models**: Restricts which models can deploy by matching model asset IDs. Prevents unauthorized or untested models from reaching production.
-- **Configure Azure AI Services resources to disable local key access**: Forces Entra ID authentication by disabling API key access at the resource level.
+- **Configure Azure AI Services resources to disable local key access**: Forces Microsoft Entra ID authentication by disabling API key access at the resource level.
 
 ### Model catalog evaluation
 
@@ -134,7 +134,7 @@ Verify that diagnostic settings are enabled for the Foundry resource, routing th
 - **RequestResponse**: API requests and model responses for compliance
 - **AllMetrics**: Usage metrics including token consumption and compute utilization
 
-Azure Monitor provides segmented metrics by scope — resource-level metrics for management operations and project-level metrics for agent activity and evaluation performance.
+Azure Monitor provides segmented metrics by scope—resource-level metrics for management operations and project-level metrics for agent activity and evaluation performance.
 
 ### Security monitoring integration
 
@@ -147,9 +147,9 @@ When evaluating Microsoft Foundry platform security, verify the solution address
 | Area | Key evaluation points |
 | ---- | --------------------- |
 | **Architecture** | Resource/project separation, project isolation boundaries, workload segmentation |
-| **Identity** | Entra ID authentication, API keys disabled, Foundry RBAC roles (Azure AI User, Project Manager, Account Owner, Owner), managed identities |
-| **Connections** | Entra ID preferred, dedicated Key Vault, project-scoped connections, lifecycle management |
-| **Network** | Public access disabled, private endpoints, managed VNet isolation mode, connected resource isolation |
+| **Identity** | Microsoft Entra ID authentication, API keys disabled, Foundry RBAC roles (Azure AI User, Project Manager, Account Owner, Owner), managed identities |
+| **Connections** | Microsoft Entra ID preferred, dedicated Key Vault, project-scoped connections, lifecycle management |
+| **Network** | Public access disabled, private endpoints, managed virtual network isolation mode, connected resource isolation |
 | **Data protection** | Customer-managed keys, project data isolation, vulnerability management |
 | **Model governance** | Azure Policy for approved models, disable local auth, model provenance tracking |
 | **Monitoring** | Diagnostic settings, Defender for Cloud, Azure Activity Log |

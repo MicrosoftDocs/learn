@@ -10,12 +10,12 @@ Your organization operates a diverse Azure environment with IoT devices collecti
 
 By the end of this module, you're able to:
 
-- Specify security baselines for SaaS, PaaS, and IaaS services using the Microsoft Cloud Security Benchmark
-- Specify security requirements for IoT workloads including device authentication, network isolation, and threat detection
-- Specify security requirements for web workloads including WAF protection, identity controls, and secure deployment
-- Specify security requirements for containers and container orchestration including AKS cluster security, image security, and pod security standards
-- Evaluate solutions that include Azure AI services security using MCSB v2 AI-specific controls
-- Evaluate security for Microsoft Foundry workloads including identity controls, connection security, network isolation, and model governance
+- Specify security baselines for SaaS, PaaS, and IaaS services
+- Specify security requirements for IoT workloads
+- Specify security requirements for web workloads
+- Specify security requirements for containers and container orchestration
+- Specify security requirements for AI workloads
+- Evaluate security for Microsoft Foundry workloads
 
 ## Prerequisites
 
