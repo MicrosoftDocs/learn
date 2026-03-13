@@ -9,7 +9,7 @@ As covered in the previous unit, the Microsoft Sentinel solution for SAP applica
 
 Deploy the LogServ integration solution provided by SAP alongside the Microsoft Sentinel for SAP solution for full coverage across the entire SAP RISE/ECS stack.
 
-:::image type="content" source="../media/logserv-architecture.png" alt-text="Diagram showing high-level integration flow of SAP LogServ with Microsoft Sentinel across the full SAP RISE stack." lightbox="../media/logserv-architecture.png":::
+:::image type="content" source="../media/logserv-architecture.png" alt-text="Diagram showing high-level integration architecture of SAP LogServ with Microsoft Sentinel across the full SAP RISE stack." lightbox="../media/logserv-architecture.png":::
 
 The combined architecture provides coverage across three layers:
 
@@ -69,7 +69,7 @@ SAP LogServ is an optional add-on for SAP RISE/ECS and SAP Cloud ERP private edi
 4. **Configure log selection** — Choose which infrastructure and database log sources to ingest based on your security and compliance requirements.
 5. **Enable analytic rules** — Activate the built-in HANA and infrastructure detection rules alongside the existing application-layer rules.
 
-:::image type="content" source="../media/logserv-deployment-view.png" alt-text="Diagram showing high-level integration flow of SAP LogServ with Microsoft Sentinel across the full SAP RISE stack." lightbox="../media/logserv-deployment-view.png":::
+:::image type="content" source="../media/logserv-deployment-view.png" alt-text="Diagram showing high-level deployment  flow of SAP LogServ with Microsoft Sentinel across the full SAP RISE stack." lightbox="../media/logserv-deployment-view.png":::
 
 For detailed deployment instructions, see the [SAP LogServ integration with Microsoft Sentinel blog series](https://community.sap.com/t5/enterprise-resource-planning-blog-posts-by-members/ultimate-blog-series-sap-logserv-integration-with-microsoft-sentinel/ba-p/14126401).
 
