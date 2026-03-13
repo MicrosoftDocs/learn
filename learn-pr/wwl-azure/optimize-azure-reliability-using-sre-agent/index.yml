@@ -36,13 +36,12 @@ subjects:
   - cloud-computing
   - devops
 units:
-  - learn.wwl.optimize-azure-reliability-using-sre-agent.intro-sre
+  - learn.wwl.optimize-azure-reliability-using-sre-agent.introduction
   - learn.wwl.optimize-azure-reliability-using-sre-agent.sre-azure-context
   - learn.wwl.optimize-azure-reliability-using-sre-agent.what-why-sre-agent
   - learn.wwl.optimize-azure-reliability-using-sre-agent.architecture
   - learn.wwl.optimize-azure-reliability-using-sre-agent.setup-deployment
   - learn.wwl.optimize-azure-reliability-using-sre-agent.use-cases
-  - learn.wwl.optimize-azure-reliability-using-sre-agent.demo-appservice
   - learn.wwl.optimize-azure-reliability-using-sre-agent.governance
   - learn.wwl.optimize-azure-reliability-using-sre-agent.exercise.sre.agent
   - learn.wwl.optimize-azure-reliability-using-sre-agent.summary
