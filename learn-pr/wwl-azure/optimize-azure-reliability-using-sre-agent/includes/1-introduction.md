@@ -20,9 +20,13 @@ In practice, many organizations adopt both: DevOps as the cultural foundation fo
 Despite decades of investment in monitoring, alerting, workflows, and runbooks, operating production workloads remain challenging for most organizations:
 
 - **Alert fatigue** overwhelms on-call engineers with noisy, low-signal notifications. Studies consistently show that a significant percentage of alerts in production environments are either false positives or duplicates. Which is why engineers ignore or miss responding to notifications that might actually matter.
+
 - **Manual log and metric correlation** during incidents is time-consuming and error-prone. When an outage occurs, engineers typically navigate across different systems, multiple platforms, dashboards and consoles. Building a timeline of events. Trying to find the root-cause of the alert. This process can consume 30 minutes or more before the engineering team even begins to understand the root cause.
+
 - **Mean Time to Resolution (MTTR)** remains high because diagnosis depends on knowledge. The engineer who deployed last week's change or the architect who understands the networking topology may not be the person on call this weekend. Critical operational context is often locked in individual engineers' heads rather than documented in systems. The longer the resolution time takes, the longer the outage is in place.
+
 - **Repetitive operational toil** consumes engineering time that could be spent on reliability improvements. Routine tasks like checking certificate expiry, validating configuration drift, reviewing resource health, and triaging recurring alerts are performed manually by engineers, day after day, with little variation.
+
 - **Post-incident follow-through is inconsistent.** Even when postmortems are conducted, action items frequently lose priority, remediation work goes untracked, and the same failure patterns recur weeks or months later.
 
 These problems intensify as systems become more distributed, dynamic, and cloud-native. Microservice architectures, containerized workloads, multi-region deployments, and rapid CI/CD cycles all increase the operational surface area that teams must manage. Traditional deterministic tools such as automation—scripts, runbooks and scheduled tasks, all help with repeatability for known scenarios. However, these often fail when production reality deviates from the expected playbook.

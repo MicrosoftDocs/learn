@@ -1,29 +1,8 @@
-Azure SRE Agent is a cloud-native service built on **generative AI** (using large language models), combined with deep integration into the Azure platform. it'sn't a simple chatbot layer on top of monitoring. Instead, it's an orchestrated agentic system that combines reasoning capabilities with tool access, telemetry ingestion, and governed execution paths. Microsoft hosts the underlying models, without needing customer-managed model deployments. There is no requirement for fine-tuning or being an expert in prompt engineering. The agent's intelligence is delivered as a managed service, abstracting the AI infrastructure so that operations teams can focus on reliability outcomes rather than model management.
+Azure SRE Agent is a cloud-native service built on **generative AI** (using large language models), combined with deep integration into the Azure platform. it isn't a simple chatbot layer on top of monitoring. Instead, it's an orchestrated agentic system that combines reasoning capabilities with tool access, telemetry ingestion, and governed execution paths. Microsoft hosts the underlying models, without needing customer-managed model deployments. There is no requirement for fine-tuning or being an expert in prompt engineering. The agent's intelligence is delivered as a managed service, abstracting the AI infrastructure so that operations teams can focus on reliability outcomes rather than model management.
 
 ## Architecture layers
 
 The architecture follows a four-layer reference model. Each layer has a distinct responsibility, and the separation between layers is what enables the governance controls that make agentic operations enterprise-viable.
-
-```text
-┌─────────────────────────────────────────────────────────────┐
-│                  Signal & Context Layer                     │
-│  Azure Monitor · Log Analytics · App Insights · Change data │
-│  Resource topology · Deployment history · Incident history  │
-├─────────────────────────────────────────────────────────────┤
-│                 Reasoning & Planning Layer                  │
-│  LLM-powered reasoning · Intent interpretation              │
-│  Multi-step investigation · Tradeoff evaluation             │
-│  Root cause correlation · Evidence generation               │
-├─────────────────────────────────────────────────────────────┤
-│              Control Plane (Governance Layer)               │
-│  RBAC · Managed Identity · Approval gates · Policy          │
-│  Audit logging · Tool mediation · Scope enforcement         │
-├─────────────────────────────────────────────────────────────┤
-│                    Execution Plane                          │
-│  Azure CLI · REST APIs · Deployment slot operations         │
-│  Scaling actions · Service restarts · Rollback operations   │
-└─────────────────────────────────────────────────────────────┘
-```
 
 ### Layer 1 – Signal & context layer
 
@@ -37,7 +16,7 @@ The agent consumes signals from Azure Monitor, Log Analytics, Application Insigh
 
 ### Layer 2 – Reasoning & planning layer
 
-The reasoning layer activates when an alert gets trigger, or when an engineers runs prompts. The reasoning layer forms the generative AI core of the system, and its capabilities go far beyond data retrieval or log summarization:
+The reasoning layer activates when an alert gets triggered, or when an engineer runs prompts. The reasoning layer forms the generative AI core of the system, and its capabilities go far beyond data retrieval or log summarization:
 
 - **Multi-source correlation** – The agent correlates telemetry with recent deployments, configuration changes, and resource state changes simultaneously. It doesn't just search for anomalies, but rather constructs a causal narrative explaining how observed symptoms relate to underlying changes.
 - **Dependency chain mapping** – The agent traces failure propagation across connected resources. If a SQL database connection fails, the agent performs a sequence of checks. Perhaps starting with examining the database's health and validating the network path. Next, the agent performs checks to validate the App Service's connection string configuration or looks into Azure Key Vault where credentials are stored.

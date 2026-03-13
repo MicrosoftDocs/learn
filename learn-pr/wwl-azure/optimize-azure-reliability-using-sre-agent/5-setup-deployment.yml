@@ -8,6 +8,7 @@ metadata:
   author: petender
   ms.author: petender
   ms.topic: unit
+  ms.custom: references_regions
 durationInMinutes: 6
 content: |
   [!include[](includes/5-setup-deployment.md)]
