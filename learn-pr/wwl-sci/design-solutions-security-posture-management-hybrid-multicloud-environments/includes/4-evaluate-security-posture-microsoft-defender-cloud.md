@@ -48,11 +48,11 @@ Key security controls include:
 
 Secure score appears in multiple locations, each serving a different evaluation purpose:
 
-**Overview dashboard**: The Defender for Cloud overview shows your current score alongside other key security metrics including active recommendations, security alerts, and resource health.
+- **Overview dashboard**: The Defender for Cloud overview shows your current score alongside other key security metrics including active recommendations, security alerts, and resource health.
 
-**Secure score dedicated page**: Breaks down the score by subscription. Use this view to compare posture across subscriptions and identify which environments need the most attention.
+- **Secure score dedicated page**: Breaks down the score by subscription. Use this view to compare posture across subscriptions and identify which environments need the most attention.
 
-**Management group view**: Toggle the management group view on the secure score page to see scores organized by your Azure management group hierarchy. This helps evaluate posture across organizational units and identify management groups with the weakest security posture.
+- **Management group view**: Toggle the management group view on the secure score page to see scores organized by your Azure management group hierarchy. This helps evaluate posture across organizational units and identify management groups with the weakest security posture.
 
 # [Overview dashboard](#tab/overview)
 :::image type="content" source="../media/score-on-main-dashboard.png" alt-text="Screenshot of the Defender for Cloud overview page highlighting the secure score section." lightbox="../media/score-on-main-dashboard.png":::

@@ -20,7 +20,7 @@ The key design principle: enable protection plans based on workloads present in 
 | APIs | Defender for APIs | APIs published in Azure API Management |
 | Key Vault | Defender for Key Vault | Azure Key Vault secrets, keys, and certificates |
 | Resource Manager | Defender for Resource Manager | Azure Resource Manager control plane activity |
-| AI workloads | Defender for AI Services | Azure OpenAI and other Azure AI services |
+| AI workloads | Defender for AI Services | AI workloads, including  Azure OpenAI Service and Microsoft Foundry |
 
 ## Designing server protection
 
@@ -41,9 +41,7 @@ Server protection requires the most architectural decisions. Defender for Server
 
 **Plan selection**: Choose Plan 1 for EDR integration and agent-based vulnerability scanning. Choose Plan 2 for agentless scanning, just-in-time access, file integrity monitoring, or premium vulnerability management features. Consider Plan 2 for production servers and Plan 1 for development environments.
 
-:::image type="content" source="../media/agentless-scanning-process.png" alt-text="Diagram showing the agentless scanning process where a disk snapshot is taken from a virtual machine, analyzed in an isolated scanning environment, and results sent to Defender for Cloud." lightbox="../media/agentless-scanning-process.png":::
-
-**Coverage scope**: Enable at the subscription level for simplest management. Plan 1 can enable at the resource level; Plan 2 requires subscription-level enablement. For multicloud and on-premises servers, deploy Azure Arc for full functionality.
+**Coverage scope**: Enable at the subscription level to automatically protect all servers in that subscription. This is the simplest approach. Plan 1 allows you to selectively enable protection on individual VMs/servers rather than the whole subscription—useful when you only want to protect specific machines. Plan 2 can only be enabled at the subscription level—you can't pick and choose individual resources. For servers outside Azure (on-premises, AWS, GCP), you need to onboard them via Azure Arc first so Defender for Cloud can manage and protect them.
 
 ## Designing container protection
 
@@ -77,7 +75,7 @@ Defender for Storage provides activity monitoring (detecting unusual access patt
 
 **Defender for Resource Manager** monitors control plane operations for suspicious activity like persistence techniques or lateral movement. Both Key Vault and Resource Manager protection operate at subscription level with no additional configuration.
 
-**Defender for AI Services** protects Azure OpenAI and other AI resources, detecting prompt injection attacks and unusual usage patterns. Enable for subscriptions with AI deployments processing sensitive data.
+**Defender for AI Services** protects AI workloads, including Azure OpenAI Service and Microsoft Foundry, detecting prompt injection attacks and unusual usage patterns. Enable for subscriptions with AI deployments processing sensitive data.
 
 **Design consideration**: Key Vault and Resource Manager protection are foundational controls with minimal overhead - consider enabling these broadly across all production subscriptions. App Service, APIs, and AI Services protection should align with where those workloads exist.
 

@@ -2,7 +2,7 @@ Microsoft Defender for Cloud serves as the primary tool for evaluating security 
 
 ## Understanding the Microsoft Cloud Security Benchmark
 
-MCSB is a comprehensive set of security best practices organized into security domains. Each domain groups related security recommendations that address a specific area of concern:
+MCSB is a comprehensive set of security best practices organized into security domains. Each domain groups related security recommendations that address a specific area of concern. The following table shows the 12 security domains defined in MCSB v2:
 
 | Security domain | Focus area |
 |---|---|
@@ -17,7 +17,6 @@ MCSB is a comprehensive set of security best practices organized into security d
 | Endpoint security (ES) | Endpoint detection and response, anti-malware |
 | Backup and recovery (BR) | Backup configuration, protection, validation |
 | DevOps security (DS) | Code security, pipeline integrity, supply chain security |
-| Governance and strategy (GS) | Security roles, strategy, architecture, policies |
 | Artificial intelligence security (AI) | AI platform security, AI application security, AI security monitoring |
 
 Each security domain contains security controls and security subcontrols that provide granular, actionable implementation guidance. Controls include a control ID, description, and platform-specific guidance for Azure, AWS, and GCP. MCSB also maps each control to industry frameworks including NIST SP 800-53, CIS Controls, and PCI-DSS, making it suitable as a unified standard for organizations operating across multiple cloud providers.
@@ -57,13 +56,13 @@ When designing your posture management solution, use security baselines to defin
 
 Use the following approach to evaluate your security posture against MCSB:
 
-**Assess control coverage**: Review each MCSB control domain and determine which controls apply to your environment. Not every control applies to every organization—document which controls are applicable based on your workload types and cloud platforms.
+- **Assess control coverage**: Review each MCSB control domain and determine which controls apply to your environment. Not every control applies to every organization—document which controls are applicable based on your workload types and cloud platforms.
 
-**Review recommendations by domain**: In Defender for Cloud, filter security recommendations by MCSB control domain to identify where your resources meet the benchmark and where gaps exist. Focus attention on controls in domains most relevant to your risk profile, such as data protection for environments handling sensitive information, or network security for internet-facing workloads.
+- **Review recommendations by domain**: In Defender for Cloud, filter security recommendations by MCSB control domain to identify where your resources meet the benchmark and where gaps exist. Focus attention on controls in domains most relevant to your risk profile, such as data protection for environments handling sensitive information, or network security for internet-facing workloads.
 
-**Map regulatory requirements**: If your organization must comply with standards like NIST SP 800-53, PCI-DSS, or ISO 27001, use MCSB's framework mapping to identify which controls satisfy your regulatory requirements and where extra controls are needed.
+- **Map regulatory requirements**: If your organization must comply with standards like NIST SP 800-53, PCI-DSS, or ISO 27001, use MCSB's framework mapping to identify which controls satisfy your regulatory requirements and where extra controls are needed.
 
-**Design an exception process**: For controls that don't apply to specific workloads, create documented exceptions that include the specific control and reasoning, any compensating controls in place, a review cadence for reevaluation, and approval from the appropriate stakeholder.
+- **Design an exception process**: For controls that don't apply to specific workloads, create documented exceptions that include the specific control and reasoning, any compensating controls in place, a review cadence for reevaluation, and approval from the appropriate stakeholder.
 
 ## Extending beyond MCSB
 

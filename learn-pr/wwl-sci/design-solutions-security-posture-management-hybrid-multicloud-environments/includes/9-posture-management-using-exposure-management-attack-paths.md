@@ -92,40 +92,40 @@ Initiatives provide structure for managing exposure across specific security are
 
 Design your posture management process with these requirements:
 
-**Critical asset identification**: Before Exposure Management provides maximum value, identify and classify critical assets. Without proper classification, attack paths may not reflect your true business risk.
+- **Critical asset identification**: Before Exposure Management provides maximum value, identify and classify critical assets. Without proper classification, attack paths may not reflect your true business risk.
 
-**Licensing and integration**: Ensure all relevant Defender workloads are licensed and contributing data. Attack paths are only as complete as the data sources feeding them.
+- **Licensing and integration**: Ensure all relevant Defender workloads are licensed and contributing data. Attack paths are only as complete as the data sources feeding them.
 
-**Scope management**: For large organizations, use device group scoping to filter data by business unit, geography, or environment. Initiative scores calculate based on the selected scope.
+- **Scope management**: For large organizations, use device group scoping to filter data by business unit, geography, or environment. Initiative scores calculate based on the selected scope.
 
-**Remediation workflows**: Design processes for:
-- Reviewing new attack paths (especially high-risk paths to critical assets)
-- Addressing choke points for maximum impact
-- Responding to security events when scores drop
-- Tracking initiative progress toward target scores
+- **Remediation workflows**: Design processes for:
+  - Reviewing new attack paths (especially high-risk paths to critical assets)
+  - Addressing choke points for maximum impact
+  - Responding to security events when scores drop
+  - Tracking initiative progress toward target scores
 
 ## Setting priorities for remediation
 
 Structure your remediation priorities using Exposure Management data:
 
-**Priority 1 - Choke points on paths to critical assets**: These represent the highest-impact remediation opportunities. Fixing one choke point can eliminate multiple attack paths.
+- **Priority 1 - Choke points on paths to critical assets**: These represent the highest-impact remediation opportunities. Fixing one choke point can eliminate multiple attack paths.
 
-**Priority 2 - High-risk attack paths**: Paths exploiting known vulnerabilities with available exploits, especially those with external entry points.
+- **Priority 2 - High-risk attack paths**: Paths exploiting known vulnerabilities with available exploits, especially those with external entry points.
 
-**Priority 3 - Initiative score improvements**: Focus on initiatives with the largest gap between current and target scores, particularly those aligned with compliance requirements or business objectives.
+- **Priority 3 - Initiative score improvements**: Focus on initiatives with the largest gap between current and target scores, particularly those aligned with compliance requirements or business objectives.
 
-**Priority 4 - Metric-specific remediation**: Address metrics showing significant exposure (low progress scores) within your priority initiatives.
+- **Priority 4 - Metric-specific remediation**: Address metrics showing significant exposure (low progress scores) within your priority initiatives.
 
 ## Integrating with security operations
 
 Design how Exposure Management integrates with your broader security operations:
 
-**Incident context**: During incident investigation, use blast radius analysis to understand potential impact and prioritize containment.
+- **Incident context**: During incident investigation, use blast radius analysis to understand potential impact and prioritize containment.
 
-**Proactive hunting**: Use the enterprise exposure graph to query for specific risk conditions before they become incidents.
+- **Proactive hunting**: Use the enterprise exposure graph to query for specific risk conditions before they become incidents.
 
-**Continuous improvement**: Track initiative scores over time to demonstrate security posture improvements. Use the 14-day trend graphs to identify positive or negative trajectories.
+- **Continuous improvement**: Track initiative scores over time to demonstrate security posture improvements. Use the 14-day trend graphs to identify positive or negative trajectories.
 
-**Collaboration**: Share initiative progress with stakeholders to demonstrate security investments' effectiveness and justify additional resources for remaining gaps.
+- **Collaboration**: Share initiative progress with stakeholders to demonstrate security investments' effectiveness and justify additional resources for remaining gaps.
 
 Your posture management design should create a continuous cycle: discover assets and attack paths, prioritize based on critical asset risk, remediate through initiative-aligned actions, and validate improvements through score tracking.
