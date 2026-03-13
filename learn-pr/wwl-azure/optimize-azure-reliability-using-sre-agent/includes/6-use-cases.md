@@ -1,8 +1,8 @@
-This section describes five practical scenarios where Azure SRE Agent delivers measurable operational value. Each use case maps to a real-world challenge that SRE and operations teams face daily, illustrating how agentic operations translates from architecture diagrams into tangible outcomes.
+This section describes five practical scenarios where Azure SRE Agent delivers measurable operational value. Each use case maps to a real-world challenge that SRE and operations teams face daily, illustrating how agentic operations translate from architecture diagrams into tangible outcomes.
 
 ## Use case 1: Automated incident response
 
-**Challenge:** When a production alert fires at 2:00 AM, the on-call engineer must wake up, open a laptop, log into the Azure Portal, identify which resource(s) is/are affected, and begin manual triage. This first-response phase typically consumes 15–30 minutes before any diagnostic work even begins. For organizations with high alert volumes, this process repeats multiple times per on-call shift, leading to fatigue, slow response, and inconsistent triage quality.
+**Challenge:** When a production alert fires at 2:00 AM, the on-call engineer must wake up, open a laptop, log on to the Azure portal, identify which resource is affected, and begin manual triage. This first-response phase typically consumes 15–30 minutes before any diagnostic work even begins. For organizations with high alert volumes, this process repeats multiple times per on-call shift, leading to fatigue, slow response, and inconsistent triage quality.
 
 **How Azure SRE Agent helps:** The agent integrates with Azure Monitor alert rules and can also receive incident notifications from third-party systems like ServiceNow and PagerDuty. When an alert fires, the agent automatically:
 
@@ -24,21 +24,21 @@ The result is a dramatic compression of the first-response phase—from 15–30 
 - *"Is this related to the certificate rotation we did yesterday?"*
 - *"Show me the dependency chain for this App Service and highlight any unhealthy resources."*
 
-The agent correlates telemetry, deployment events, configuration changes, and resource topology to produce concise, reasoned explanations with supporting evidence—specific timestamps, metrics snapshots, deployment commit SHAs, and configuration diffs. It performs in seconds the multi-tab, multi-query correlation work that would take an engineer 30+ minutes. Critically, the agent's reasoning is documented in the chat history, creating a reusable diagnostic record that benefits future investigations of similar issues.
+The agent correlates telemetry, deployment events, configuration changes, and resource topology to produce concise, reasoned explanations with supporting evidence—specific timestamps, metrics snapshots, deployment commits, and configuration diffs. It performs in seconds the multi-tab, multi-query correlation work that would take an engineer 30+ minutes. Critically, the agent's reasoning is documented in the chat history, creating a reusable diagnostic record that benefits future investigations of similar issues.
 
 ## Use case 3: Proactive and scheduled reliability tasks
 
-**Challenge:** Not all SRE work is reactive. Significant operational toil comes from routine reliability tasks that must be performed regularly. However, they are often deprioritized when incident response consumes the team's bandwidth. TLS Certificate expiry checks, resource health verification, quota monitoring, and configuration drift detection are important but rarely urgent. Until they cause a critical application outage.
+**Challenge:** Not all SRE work is reactive. Significant operational toil comes from routine reliability tasks that must be performed regularly. However, they're often deprioritized when incident response consumes the team's bandwidth. Security certificate expiry checks, resource health verification, quota monitoring, and configuration drift detection are important but rarely urgent. Until they cause a critical application outage.
 
 **How Azure SRE Agent helps:** The agent supports **scheduled workflows** that automate routine reliability tasks on a recurring cadence:
 
 - **Daily health checks** to verify resource status across all monitored Resource Groups, flag degraded or stopped resources, check certificate expiry dates, and validate that quota utilization is within safe thresholds.
-- **Configuration drift detection** to identify and compare the actual deployed state of Azure resources against their desired state (defined in Bicep templates, Terraform configurations, or organizational baselines which might be stored in source control and retrievable through Azure SRE Agent connector). Mark deviations before they cause incidents.
+- **Configuration drift detection** to identify and compare the actual deployed state of Azure resources against their desired state. This might be stored in source control and reachable through the SRE Agent connectors.
 - **Compliance and best-practice reviews** by flagging resources that deviate from organizational standards: missing diagnostic settings, disabled HTTPS enforcement, overly permissive network rules, or resources without tags.
 
 ## Use case 4: Container Apps operational remediation
 
-**Challenge:** Not all production incidents are caused by code defects. Operational incidents such as a Container App accidentally stoppedstopping, a scaling rule being misconfigured, a revision getting stuck in a failed state. Not uncommon in heavily-used containerized environments. While usually common and straightforward to remediate, this is often done using manual detection and requiring manual intervention. Such incidents often do not require developer involvement, yet they consume the same incident response process as code-level issues.
+**Challenge:** Not all production outages are linked to code issues. Operational incidents are not uncommon in heavily used containerized environments. While often straightforward to remediate, it usually is done using manual detection. Such incidents often don't require developer involvement, yet they consume the same incident response process as code-level issues.
 
 **How Azure SRE Agent helps:** Consider a specific scenario:
 
@@ -48,10 +48,10 @@ The agent correlates telemetry, deployment events, configuration changes, and re
 4. The agent proposes restarting the Container App with an updated memory configuration.
 5. The on-call engineer reviews the proposal, approves, and the agent executes the remediation.
 
-This demonstrates that **agentic operations delivers immediate ROI** on purely operational issues. No developer engagement is needed. The return to a healthy state on infrastructure-level, is executed with human approval at the decision point.
+This scenario demonstrates that **agentic operations delivers immediate ROI** on purely operational issues. No developer engagement is needed. The return to a healthy state on infrastructure-level is executed with human approval at the decision point.
 
 ## Use case 5: Post-incident workflow integration
 
-**Challenge:** After an incident is resolved, the follow-up often falls short. Engineers intend to write postmortem documentation, update work items, and share findings with the team. Unfortunately, the pressure of the next alert, the next sprint, or the next on-call rotation pushes this off the priority list. Operational knowledge is getting lost when it is not captured systematically.
+**Challenge:** After an incident is resolved, the follow-up often falls short. Engineers intend to write postmortem documentation, update work items, and share findings with the team. Unfortunately, the pressure of the next alert pushes this work off the priority list. Operational knowledge is getting lost when it isn't captured systematically.
 
 **How Azure SRE Agent helps:** When an incident is resolved - whether through agent-assisted remediation or manual intervention - the agent can automatically generate structured post-incident artifacts such as **comprehensive incident summary** information, containing all details from detection, mitigation to resolution. Thanks to source control connectors, this could be done in the form of a **GitHub Issue** or **Azure DevOps Work Item** created directly in the connected repository. The work item includes the incident summary, diagnostic evidence, remediation steps, and recommendations for preventing recurrence.

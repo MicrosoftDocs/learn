@@ -1,6 +1,6 @@
-Azure SRE Agent represents the beginning of agentic operations in Azure—a shift from reactive tooling to proactive, reasoning-capable systems that participate in the operational lifecycle. As the platform evolves, expect deeper integration with Azure services, broader resource type coverage, more sophisticated multi-agent coordination, and richer knowledge management capabilities.
+Azure SRE Agent represents the beginning of agentic operations in Azure—a shift from reactive tooling to proactive, reasoning-capable systems that participate in the operational lifecycle.
 
-The organizations that benefit most will be those that invest in the foundational practices that make agentic operations effective: clear SLOs, comprehensive observability, structured operational knowledge, and disciplined governance. The agent amplifies these investments; it does not substitute for them.
+The organizations that benefit most are those that invest in the foundational practices that make agentic operations effective: clear SLOs, comprehensive observability, structured operational knowledge, and disciplined governance. The agent amplifies these investments; it does not substitute for them.
 
 Let's wrap up this module with some key takeaways. 
 
@@ -14,7 +14,7 @@ Let's wrap up this module with some key takeaways.
 
 4. **Human oversight is a feature, not a limitation.** Approval gates, RBAC scoping, and comprehensive audit logging are engineering features that make agentic systems trustworthy in enterprise and regulated environments. The most effective deployments treat the *human-in-the-loop* as a foundation of the system's design.
 
-5. **Incidents become learning opportunities.** Every incident the agent investigates produces structured artifacts: investigation timelines, root cause summaries, remediation records, and post-incident documentation. Over time, these artifacts build import knowledge that improves both the agent's effectiveness as well as the engineering team's operational maturity.
+5. **Incidents become learning opportunities.** Every incident the agent investigates produces structured artifacts: investigation timelines, root cause summaries, remediation records, and post-incident documentation. Over time, these artifacts build import knowledge that improves both the agent's effectiveness and the engineering team's operational maturity.
 
 
 ## Further reading
@@ -24,6 +24,6 @@ Let's wrap up this module with some key takeaways.
 - [What is Infrastructure as Code?](https://learn.microsoft.com/devops/deliver/what-is-infrastructure-as-code)
 - [Azure Monitor Overview](https://learn.microsoft.com/azure/azure-monitor/overview)
 - [Microsoft Responsible AI Principles](https://www.microsoft.com/ai/responsible-ai)
-- [Azure Well-Architected Framework — Operational Excellence](https://learn.microsoft.com/azure/well-architected/operational-excellence/)
+- [Azure Well-Architected Framework](https://learn.microsoft.com/azure/well-architected/operational-excellence/)
 
 

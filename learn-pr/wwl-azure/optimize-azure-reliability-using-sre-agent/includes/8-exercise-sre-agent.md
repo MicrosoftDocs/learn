@@ -5,7 +5,7 @@ This scenario demonstrates the full agentic operations control loop:
 
 **Detect → Investigate → Explain → Propose → Approve → Execute → Verify**
 
-which gets applied to a traditional Azure workload architecture using App Service and Cosmos DB. Starting from a successfully running scenario, you will simulate a managed identity authorization failure error, resulting in HTTP 500 error messages. By using Azure SRE Agent and Agentic AI concepts, you will gain experience in using Azure SRE Agent to investigate, troubleshoot, mitigate the incident. The outcome is having a reliable workload scenario back, at the end of the exercise.
+Which gets applied to a traditional Azure workload architecture using App Service and Cosmos DB. Starting from a successfully running scenario, you simulate a managed identity authorization failure error, resulting in HTTP 500 error messages. By using Azure SRE Agent and Agentic AI concepts, you gain experience in using Azure SRE Agent to investigate, troubleshoot, mitigate the incident. The outcome is having a reliable workload scenario back, at the end of the exercise.
 
 > [!IMPORTANT]
 > The focus of this exercise is deploying Azure SRE Agent and optimizing the Azure workload reliability.

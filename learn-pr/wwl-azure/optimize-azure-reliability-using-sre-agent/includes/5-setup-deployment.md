@@ -8,30 +8,30 @@ To deploy Azure SRE Agent, the following prerequisites must be in place before y
 - Permissions to assign RBAC roles at the subscription or resource group level (`Microsoft.Authorization/roleAssignments/write`). This is typically held by users with the **Owner** or **User Access Administrator** role.
 - Network access to the `*.azuresre.ai` domain. If your organization uses network security groups, firewalls, or proxy servers, ensure that outbound connectivity to this domain is allowed. The agent communicates with Microsoft-hosted services over this endpoint.
 - Deployment in a **supported region**. At the time of writing, Azure SRE Agent is available in a limited set of regions. For example, **Sweden Central**, **East US 2** and **Australia East** to provide global coverage. Check the [official documentation]((https://learn.microsoft.com/azure/sre-agent) for the current list of supported regions, as this expands over time.
-- **Azure Monitor and Application Insights** should be configured for the resources you want the agent to monitor. While the agent can function with basic Azure platform metrics, its diagnostic capabilities are significantly enhanced when Application Insights is enabled for application-level telemetry (request traces, dependency tracking, exception logging).
+- **Azure Monitor and Application Insights** should be configured for the resources you want the agent to monitor. While the agent can function with basic Azure platform metrics, its diagnostic capabilities are enhanced when Application Insights is enabled for application-level telemetry (request traces, dependency tracking, exception logging).
 
 ## Creating an Azure SRE Agent
 
-The deployment process is straightforward and takes place entirely within the Azure Portal:
+The deployment process is straightforward and takes place entirely within the Azure portal:
 
-1. In the **Azure Portal**, search for **Azure SRE Agent** in the top search bar.
+1. In the **Azure portal**, search for **Azure SRE Agent** in the top search bar.
 2. Select **Create Agent** from the service landing page.
 3. Create or select a **dedicated Resource Group** for the agent itself. It is a best practice to keep the agent's own resources separate from the application resources it monitors. This separation simplifies RBAC management and prevents accidental deletion of the agent during application resource group cleanup operations.
-4. Choose a **supported region**. The agent's region does not need to match the region of the resources it monitors.
-5. **Associate one or more Resource Groups to monitor.** This is the core configuration step. The agent automatically gains visibility into all resources within the associated Resource Groups, including App Services, Container Apps, SQL databases, Key Vaults, Storage Accounts, and other supported resource types. You can associate additional Resource Groups after initial deployment.
+4. Choose a **supported region**. The agent's region doesn't need to match the region of the resources it monitors.
+5. **Associate one or more Resource Groups to monitor.** The agent automatically gains visibility into all resources within the associated Resource Groups. You can associate more Resource Groups after initial deployment.
 6. Complete the deployment and wait for the agent to initialize. Initialization typically takes a few minutes as the agent establishes connections to telemetry sources and builds its initial understanding of resource topology.
 
-Once deployed, the agent's **chat interface** becomes available directly in the Azure Portal. You can begin interacting with the agent immediately. Asking diagnostic questions, investigating recent alerts, or reviewing the health of monitored resources.
+Once deployed, the agent's **chat interface** becomes available directly in the Azure portal. You can begin interacting with the agent immediately. Asking diagnostic questions, investigating recent alerts, or reviewing the health of monitored resources.
 
 ## Connecting a code repository
 
 Azure SRE Agent can be linked to source code repositories to enable **code-aware diagnosis** and **automated work item creation**. Repository connection transforms the agent from a purely infrastructure-focused tool into one that understands the relationship between code changes and production behavior. To also meet the requirements of DevOps teams, within the broader organization's SRE scope.
 
-At present, both **GitHub** (Cloud) and **Azure DevOps Organizations** are supported.
+Both **GitHub** (Cloud) and **Azure DevOps Organizations** are supported.
 
 ## Connecting to other sources
 
-Apart from source code integration, **Azure SRE Agent Connectors** are available to extend reach to external systems, such as Kusto clusters, collaboration tools, custom APIs and MCP Servers. Connectors give your agent access to data and actions, such as querying logs, sending notifications, and reading code.
+Apart from source code integration, **Azure SRE Agent Connectors** are available to extend reach to external systems, such as Kusto clusters, collaboration tools, custom APIs, and MCP Servers. Connectors give your agent access to data and actions, such as querying logs, sending notifications, and reading code.
 
 Some common examples for SRE teams:
 - Database queries to Azure Data Explorer
@@ -45,8 +45,8 @@ The SRE Agent operates under a **system-assigned managed identity** that is auto
 
 Key considerations for configuring the agent's identity:
 
-- **Grant least privilege by default.** Start with read-only permissions (`Reader`, `Monitoring Reader`, `Log Analytics Reader`) and only add write permissions (`Contributor`, `Website Contributor`) when you are ready to enable approval-gated remediation actions.
-- **Separate read and write permissions explicitly.** Diagnostic capabilities (querying logs, examining configuration) require read access. Remediation capabilities (slot swaps, restarts, scaling) require write access. Granting these separately gives you fine-grained control over the agent's operational scope.
+- **Grant least privilege by default.** Start with read-only permissions (`Reader`, `Monitoring Reader`, `Log Analytics Reader`) and only add write permissions (`Contributor`, `Website Contributor`) when you're ready to enable approval-gated remediation actions.
+- **Separate read and write permissions explicitly.** Diagnostic capabilities (querying logs, examining configuration) require read access. Remediation capabilities (slot swaps, restarts, scaling) require write access. Granting these permissions separately gives you fine-grained control over the agent's operational scope.
 - **Scope permissions to specific resource groups or resources.** Avoid granting subscription-level write permissions. Scope the agent's identity to the specific resource groups it monitors, following the principle of least privilege.
-- **Apply the human-equivalence rule:** If a human engineer would need manager approval for an action (e.g., modifying production configuration), the agent should require the same approval. Azure SRE Agent's approval gates enforce this by default for all write operations.
-- **Review permissions regularly.** As additional resource groups are onboarded or removed from the agent's monitoring scope, review and update RBAC assignments to prevent permission creep.
+- **Apply the human-equivalence rule:** If a human engineer would need manager approval for an action (for example, modifying production configuration), the agent should require the same approval. Azure SRE Agent's approval gates enforce this by default for all write operations.
+- **Review permissions regularly.** As more resource groups are onboarded or removed from the agent's monitoring scope, review and update RBAC assignments to prevent permission creep.
