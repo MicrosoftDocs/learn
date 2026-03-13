@@ -42,10 +42,10 @@ Not all MFA methods offer the same level of protection. Microsoft Entra ID intro
 
 The security hierarchy, from least to most secure, is:
 
-1. Password only (no MFA)
-2. Password + SMS or voice call
-3. Password + Microsoft Authenticator app
-4. Passwordless sign-in (Windows Hello for Business, FIDO2 security keys, passkeys in Microsoft Authenticator, certificate-based authentication)
+- Password only (no MFA)
+- Password + SMS or voice call
+- Password + Microsoft Authenticator app
+- Passwordless sign-in (Windows Hello for Business, FIDO2 security keys, passkeys in Microsoft Authenticator, certificate-based authentication)
 
 For sensitive resources — such as administrative portals or financial systems — authentication strength policies let you require **phishing-resistant MFA**. Microsoft Entra ID's built-in phishing-resistant strength covers four method families: Windows Hello for Business, FIDO2 security keys, passkeys in Microsoft Authenticator, and certificate-based authentication (CBA). This distinction is critical when designing access policies for Contoso's privileged accounts.
 
