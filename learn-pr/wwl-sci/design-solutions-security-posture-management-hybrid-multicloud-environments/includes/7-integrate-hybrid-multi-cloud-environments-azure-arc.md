@@ -4,6 +4,8 @@ Azure Arc provides the foundation for extending Azure security capabilities to r
 
 Azure Arc projects resources from on-premises datacenters, other clouds (AWS, GCP), and edge locations into Azure Resource Manager. Once projected, these resources can use Azure's security services including Defender for Cloud, Azure Policy, and Microsoft Sentinel.
 
+:::image type="content" source="../media/azure-arc-control-plane.png" alt-text="Diagram showing Azure Arc architecture with on-premises, multicloud, and edge resources projecting through Azure Resource Manager into unified operations, management, compliance, security, and governance." lightbox="../media/azure-arc-control-plane.png":::
+
 Azure Arc supports several resource types critical to security posture:
 
 | Resource type | Arc capability | Security integration |

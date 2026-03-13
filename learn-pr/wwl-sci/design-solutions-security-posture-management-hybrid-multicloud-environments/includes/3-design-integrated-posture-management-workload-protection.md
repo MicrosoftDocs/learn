@@ -1,24 +1,22 @@
 Designing an integrated security posture management solution for hybrid and multicloud environments requires architectural decisions that balance coverage, capability, and operational complexity. An effective design combines multiple components: security frameworks like MCSB for baseline standards, tooling for continuous assessment and protection, and operational processes for governance and remediation. Microsoft Defender for Cloud serves as a central component in this integrated design, providing a cloud-native application protection platform (CNAPP) that extends across Azure, AWS, GCP, and on-premises resources.
 
-## Understanding the Defender for Cloud architecture
+## Why Defender for Cloud for multicloud CSPM
 
-When including Defender for Cloud in your posture management solution, understand what capabilities the platform provides. The platform combines three capabilities: development security operations (DevSecOps) for code-level security, cloud security posture management (CSPM) for configuration assessment, and cloud workload protection (CWPP) for threat detection and response.
+Defender for Cloud is a CNAPP that includes CSPM, cloud workload protection, and DevSecOps capabilities. This unit focuses on the CSPM capability—workload protection is covered in a later unit.
 
 ![Diagram that shows the core functionality of Microsoft Defender for Cloud.](../media/defender-for-cloud-pillars.png)
 
-For posture management specifically, you choose between two tiers. Foundational CSPM provides free assessment against MCSB, asset inventory, recommendations, and secure score across Azure, AWS, and GCP. Defender CSPM adds attack path analysis, cloud security explorer, governance workflows, regulatory compliance dashboards, and agentless vulnerability scanning.
+The primary benefit for multicloud environments is a single posture management plane. Instead of using separate security tools for each cloud, Defender for Cloud gives you one dashboard with unified recommendations, one secure score, and consistent MCSB assessment across Azure, AWS, and GCP. Two CSPM tiers are available—Foundational and Defender CSPM—compared in the next section.
 
-**Design consideration**: Defender for Cloud capabilities are progressively integrating into the unified Microsoft Defender portal. This consolidation brings cloud security posture management alongside endpoint, identity, and other security workloads in a single interface. When designing your security operations, plan for teams to work across both the Azure portal and the Defender portal during this transition. The Defender portal provides a unified view of security posture across your entire digital estate, while the Azure portal remains the primary interface for Azure-specific configuration and resource management.
+## Defining your multicloud scope
 
-## Designing for multicloud coverage
+A key design decision involves defining which environments Defender for Cloud must cover within your integrated solution. Most organizations operate across multiple environments, and your architecture must account for each:
 
-A key design decision involves defining the scope of coverage for Defender for Cloud within your integrated solution. Most organizations operate across multiple environments, and your architecture must account for each.
+- **Azure**: Native integration with no extra configuration. All Azure subscriptions can enable Foundational CSPM at no cost for immediate visibility.
+- **AWS and GCP**: Require cloud connectors deployed through the Defender for Cloud portal. Connector design decisions—such as organization-level versus account/project-level—are covered later in this unit.
+- **On-premises and edge**: Require Azure Arc to project servers, Kubernetes clusters, and SQL Server instances into Azure. A later unit covers Azure Arc integration in detail.
 
-**For Azure resources**, Defender for Cloud provides native integration with no extra configuration. All Azure subscriptions can enable Foundational CSPM at no cost, giving you immediate visibility into security posture.
-
-**For AWS and GCP**, you deploy cloud connectors that use native APIs to assess resources. Design your connector strategy to match your cloud account structure. In AWS, you can connect at the organization level to cover all accounts, or connect individual accounts for more granular control. GCP supports similar project-level or organization-level connectivity.
-
-**For on-premises resources**, the design becomes more complex. Defender for Cloud requires Azure Arc to project on-premises servers, Kubernetes clusters, and SQL Server instances into Azure for management. This dependency shapes your architecture—you must plan Azure Arc deployment alongside your Defender for Cloud design. A later unit covers Azure Arc integration in detail.
+Document each environment in scope, the resource types it contains, and any constraints (such as network restrictions or regulatory boundaries). This scoping exercise drives all subsequent design decisions—connector architecture, CSPM tier selection, agent strategy, and governance structure.
 
 ## Choosing the right CSPM tier
 
@@ -28,48 +26,53 @@ The decision between Foundational and Defender CSPM depends on your security req
 |--------------|-------------------|---------------|
 | **Best for** | Organizations starting their cloud security journey, or those with mature processes who need basic assessment | Organizations requiring proactive risk identification and compliance beyond MCSB |
 | **Attack path analysis** | Not available | Identifies exploitable paths to critical assets across your environment |
+| **Cloud security explorer** | Not available | Graph-based queries to proactively identify security risks across your multicloud environment |
 | **Governance workflows** | Manual tracking of remediation | Assign recommendations to owners with due dates and track progress |
-| **Regulatory compliance** | MCSB only | More standards including PCI-DSS, ISO 27001, SOC 2, and custom frameworks |
-| **Agentless scanning** | Not available | Discovers vulnerabilities without deploying agents to machines |
+| **Regulatory compliance** | MCSB only | Additional standards including PCI-DSS, ISO 27001, SOC 2, and custom frameworks |
+| **Agentless scanning** | Not available | Discovers vulnerabilities, secrets, and malware without deploying agents to machines |
+| **Sensitive data discovery** | Not available | Discovers managed cloud data resources containing sensitive data, integrated with Microsoft Purview |
+| **Permissions management (CIEM)** | Not available | Identifies over-permissioned identities and excess entitlements across cloud environments |
 
 For most enterprise environments, start with Foundational CSPM to establish baseline visibility, then enable Defender CSPM on subscriptions containing critical workloads or sensitive data. This tiered approach optimizes cost while ensuring advanced protection where it matters most.
 
 ## Designing the agent strategy
 
-Your architecture must address how you collect security data from compute resources. Defender for Cloud supports both agent-based and agentless approaches.
+Your architecture must address how you collect security data from compute resources across clouds. Defender for Cloud supports both agent-based and agentless approaches.
 
-**Agentless scanning** uses cloud APIs and disk snapshots to assess machine configurations and vulnerabilities without installing software. This approach reduces operational overhead and works well for environments where agent deployment is restricted. However, agentless scanning provides point-in-time assessment rather than continuous monitoring.
+**Agentless scanning** uses cloud APIs and disk snapshots to assess machine configurations and vulnerabilities without installing software. This approach reduces operational overhead and works across Azure, AWS, and GCP for environments where agent deployment is restricted.
 
-**Agent-based collection** through the Azure Monitor Agent or Defender for Endpoint provides richer telemetry including runtime behavior, process execution, and network connections. Agents enable capabilities like just-in-time VM access and adaptive application controls that require real-time interaction.
+**Agent-based collection** through the Azure Monitor Agent or Defender for Endpoint provides richer telemetry including runtime behavior and network connections. Agents enable capabilities like just-in-time VM access and adaptive application controls.
 
-Design your approach based on workload requirements. Use agentless scanning for broad coverage across development and test environments where operational simplicity matters. Deploy agents to production workloads and systems processing sensitive data where deeper visibility justifies the management overhead.
+Design your approach by workload risk: agentless scanning for broad coverage across development and test environments, and agents for production workloads processing sensitive data where deeper visibility justifies the management overhead.
 
-## Integrating Azure Policy with Defender for Cloud
+## Designing unified assessment across clouds
 
-Azure Policy serves as the enforcement engine that underpins Defender for Cloud's posture assessments. Understanding this relationship helps you design a cohesive solution that uses both tools effectively.
+A core challenge in multicloud posture management is achieving consistent security assessment when each cloud provider has its own native security tools, terminology, and configuration model. Defender for Cloud addresses this by normalizing assessments into a single recommendation framework.
 
-**How the integration works**: When Defender for Cloud evaluates your resources against security standards like MCSB, it uses Azure Policy definitions to perform those assessments. Each security recommendation in Defender for Cloud maps to one or more policy definitions. The MCSB initiative alone contains hundreds of policies covering network security, identity management, data protection, and other security domains.
+**How cross-cloud assessment works**: For Azure, Defender for Cloud uses Azure Policy definitions to evaluate resource configurations. For AWS and GCP, Defender for Cloud deploys cloud-native connectors that call provider APIs (such as AWS Security Hub and GCP Security Command Center) to gather configuration data. Regardless of the source, findings surface as unified recommendations in a single dashboard, mapped to MCSB controls.
 
-**Design decisions for policy integration**:
+**Connector architecture decisions**: Design your connectors to match your cloud governance model:
 
-- **Assessment vs. enforcement**: Azure Policy supports both *audit* and *deny* effects. Defender for Cloud uses audit mode by default—it reports noncompliant resources but doesn't block deployment. For critical security controls, consider enabling deny mode through Azure Policy to prevent noncompliant resources from being created in the first place.
+- **AWS**: Connect at the AWS organization level for automatic coverage of all current and future accounts. Use account-level connectors only when you need to limit scope or apply different Defender plans per account. Organization-level connectors can autoprovision Azure Arc agents on EC2 instances.
+- **GCP**: Connect at the GCP organization level for broad coverage, or at the project level for granular control. Similar to AWS, organization-level connectors simplify onboarding and reduce management overhead.
+- **On-premises**: Defender for Cloud requires Azure Arc to extend posture management to on-premises servers, Kubernetes clusters, and SQL Server instances. Plan Azure Arc deployment as a prerequisite—a later unit covers this integration in detail.
 
-- **Custom policies**: When your security requirements extend beyond built-in standards, create custom Azure Policy definitions. Once deployed, custom policies appear in Defender for Cloud alongside built-in recommendations, providing a unified view of compliance.
+**Achieving consistent standards**: MCSB provides platform-specific implementation guidance for each control across Azure, AWS, and GCP. When you enable MCSB in Defender for Cloud, each cloud environment is assessed against controls tailored to that platform's services. For example, the Network Security control evaluates Azure NSGs, AWS Security Groups, and GCP firewall rules using platform-appropriate criteria but reports findings under the same MCSB control.
 
-- **Initiative assignment scope**: Assign policy initiatives at the management group level to ensure consistent coverage across subscriptions. This approach aligns with Defender for Cloud's hierarchical view of your environment.
+For compliance beyond MCSB, Defender CSPM supports adding regulatory standards. Some standards—like AWS Foundational Security Best Practices—are AWS-specific. Others—like PCI-DSS and ISO 27001—apply across clouds. Design your compliance dashboard to include cross-cloud standards for unified reporting and cloud-specific standards where regulations or organizational policy require them.
 
-- **Exemptions**: Both Azure Policy and Defender for Cloud support exemptions for resources that intentionally don't meet a control. Manage exemptions through Azure Policy to maintain a single source of truth, and they'll reflect automatically in Defender for Cloud assessments.
+**Multicloud attack path analysis**: With Defender CSPM enabled, the cloud security graph correlates assets, identities, and permissions across Azure, AWS, and GCP. Attack path analysis can identify cross-cloud exploit chains—for example, an over-permissioned AWS IAM role that could be used to access Azure resources through a federated identity. This cross-cloud visibility is only available with Defender CSPM and requires connectors to be configured for each cloud environment.
 
-**Complementary enforcement**: Use Azure Policy for preventive controls (blocking noncompliant deployments) and Defender for Cloud for detective controls (identifying existing misconfigurations). This layered approach ensures new resources deploy securely while giving you visibility into resources that predate your policies.
+**Design consideration**: For Azure resources, you can go further than detective assessment. Azure Policy supports deny effects that block noncompliant deployments at creation time, providing preventive enforcement that isn't available for AWS or GCP resources through Defender for Cloud. Factor this asymmetry into your design—Azure environments can enforce guardrails proactively, while AWS and GCP rely on Defender for Cloud's detective recommendations and their own native enforcement tools.
 
 ## Establishing governance and accountability
 
-Beyond technical configuration, your design must address how your organization operationalizes posture management. Consider these architectural elements:
+Beyond technical configuration, your design must address how your organization operationalizes posture management across clouds:
 
-- **Subscription organization**: Structure Azure subscriptions and AWS accounts to align with ownership boundaries. This alignment simplifies assigning security recommendations to the teams responsible for remediation.
+- **Account organization**: Structure Azure subscriptions, AWS accounts, and GCP projects to align with ownership boundaries. This simplifies assigning security recommendations to responsible teams.
 
-- **Role-based access**: Define who can view recommendations, who can remediate, and who can change Defender for Cloud settings. The Security Reader, Security Admin, and Contributor roles provide graduated access levels.
+- **Role-based access**: Define who can view recommendations, remediate issues, and change Defender for Cloud settings. Security Reader, Security Admin, and Contributor roles provide graduated access.
 
-- **Integration with workflows**: Determine how security recommendations flow into your existing remediation processes. Defender for Cloud integrates with Azure DevOps, ServiceNow, and other ticketing systems to create work items automatically.
+- **Workflow integration**: Determine how recommendations flow into remediation processes. Defender for Cloud integrates with Azure DevOps, ServiceNow, and other ticketing systems for automatic work item creation.
 
-Your integrated posture management solution may also include complementary tools such as Defender External Attack Surface Management for internet-facing asset discovery, Security Exposure Management for cross-domain attack path analysis, and specialized solutions for specific workload types, which are covered in subsequent units. The following unit explores how to use Defender for Cloud's evaluation features, such as Secure Score to measure and improve your security posture across this integrated architecture.
+Your integrated posture management solution may also include complementary tools such as Defender External Attack Surface Management for internet-facing asset discovery, Security Exposure Management for cross-domain attack path analysis, and specialized solutions for specific workload types, which subsequent units cover. The following unit examines selecting the right cloud workload protection plans to protect running workloads across this integrated architecture.
