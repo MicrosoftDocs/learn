@@ -9,4 +9,4 @@ By completing this module, you can:
 
 ## More reading
 
-- [Microsoft Sentinel product documentation](https://docs.microsoft.com/azure/sentinel/)
+- [Microsoft Sentinel product documentation](/azure/sentinel/)
