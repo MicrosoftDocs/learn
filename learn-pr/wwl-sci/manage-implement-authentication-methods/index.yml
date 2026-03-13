@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.wwl.manage-implement-authentication-methods
+metadata:
+  title: Manage and Implement Authentication Methods in Microsoft Entra ID
+  description: "Learn to plan, deploy, and manage secure authentication in Microsoft Entra ID. This module covers authentication methods, MFA with Conditional Access, passwordless options, and self-service password reset."
+  ms.date: 03/13/2026
+  author: roberts
+  ms.author: roberts
+  ms.topic: module
+  ms.service: entra-id
+  ai-usage: ai-assisted
+title: Manage and implement authentication methods in Microsoft Entra ID
+summary: Learn to plan, deploy, and manage secure authentication in Microsoft Entra ID. This module covers authentication methods, MFA with Conditional Access, passwordless options, and self-service password reset.
+abstract: |
+ After completing this module, you'll be able to:
+  - Describe Microsoft Entra ID authentication methods and authentication strength concepts.
+  - Configure multi-factor authentication using Conditional Access policies and named locations.
+  - Implement passwordless authentication methods, including Windows Hello for Business, passkeys, and FIDO2 security keys.
+  - Configure self-service password reset for users in a hybrid environment.
+prerequisites: |
+  Fundamental knowledge of Microsoft Entra ID and identity and access management concepts is recommended.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+  - intermediate
+roles:
+  - administrator
+  - identity-access-admin
+  - security-engineer
+products:
+  - entra
+  - entra-id
+subjects:
+  - identity-access
+units:
+  - learn.wwl.manage-implement-authentication-methods.introduction
+  - learn.wwl.manage-implement-authentication-methods.explore-authentication-methods
+  - learn.wwl.manage-implement-authentication-methods.configure-mfa
+  - learn.wwl.manage-implement-authentication-methods.implement-passwordless-authentication
+  - learn.wwl.manage-implement-authentication-methods.configure-self-service-password-reset
+  - learn.wwl.manage-implement-authentication-methods.exercise-configure-authentication-methods
+  - learn.wwl.manage-implement-authentication-methods.knowledge-check
+  - learn.wwl.manage-implement-authentication-methods.summary
+badge:
+  uid: learn.wwl.introduction-entra-agent-id.badge

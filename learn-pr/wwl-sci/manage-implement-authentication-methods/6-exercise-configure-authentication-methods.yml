@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-implement-authentication-methods.exercise-configure-authentication-methods
+title: "Exercise - Configure authentication methods in Microsoft Entra ID"
+metadata:
+  title: "Exercise - Configure Authentication Methods in Microsoft Entra ID"
+  description: "Hands-on exercise: enable the MFA registration policy in Identity Protection, require MFA for cloud admin portals using Conditional Access, and enable phishing-resistant sign-in with passkeys (FIDO2) in Microsoft Entra ID."
+  ms.date: 03/13/2026
+  author: roberts
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-assisted
+durationInMinutes: 2
+content: |
+  [!include[](includes/6-exercise-configure-authentication-methods.md)]

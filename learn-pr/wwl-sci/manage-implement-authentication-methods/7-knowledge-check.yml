@@ -1,0 +1,71 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-implement-authentication-methods.knowledge-check
+title: Module assessment
+metadata:
+  title: Module assessment
+  description: "Knowledge check"
+  ms.date: 03/05/2026
+  author: roberts
+  ms.author: roberts
+  ms.topic: unit
+  module_assessment: true
+  ai_generated_module_assessment: false
+durationInMinutes: 3
+quiz:
+  title: ""
+  questions:
+  - content: "An organization wants to enforce phishing-resistant MFA for its privileged administrators. Which of the following authentication methods qualifies as phishing-resistant?"
+    choices:
+    - content: "SMS one-time passcode"
+      isCorrect: false
+      explanation: "SMS OTP is susceptible to SIM-swapping and real-time phishing attacks, so it does not qualify as phishing-resistant."
+    - content: "FIDO2 security key"
+      isCorrect: true
+      explanation: "FIDO2 security keys use public-key cryptography bound to the origin, making them resistant to phishing and credential replay attacks."
+    - content: "OATH hardware token"
+      isCorrect: false
+      explanation: "OATH TOTP codes are time-based passcodes that can be intercepted and replayed by a phishing site, so they are not phishing-resistant."
+  - content: "A security architect is designing MFA enforcement for all users in a Microsoft Entra ID tenant. Which mechanism does Microsoft recommend over per-user MFA or security defaults for most organizations?"
+    choices:
+    - content: "Enabling security defaults in the Entra admin center"
+      isCorrect: false
+      explanation: "Security defaults are a baseline for organizations without a Microsoft Entra ID P1/P2 license and do not offer the granular control that most organizations need."
+    - content: "Enabling per-user MFA for every account"
+      isCorrect: false
+      explanation: "Per-user MFA is a legacy approach that lacks the context-awareness and flexibility of modern policy-driven enforcement."
+    - content: "Using Conditional Access policies to require MFA"
+      isCorrect: true
+      explanation: "Conditional Access is the recommended MFA enforcement mechanism because it allows granular, risk- and context-based rules that can target specific users, apps, and conditions."
+  - content: "A company is deploying passwordless authentication. Frontline workers share physical kiosks in a warehouse and do not have assigned Windows laptops. Which passwordless method is the best fit for this persona?"
+    choices:
+    - content: "Windows Hello for Business"
+      isCorrect: false
+      explanation: "Windows Hello for Business stores credentials on a specific device, making it unsuitable for shared kiosk scenarios where multiple workers use the same hardware."
+    - content: "FIDO2 security key"
+      isCorrect: true
+      explanation: "FIDO2 security keys are portable and device-independent, making them ideal for shared or unassigned devices where workers need to authenticate without a dedicated corporate laptop."
+    - content: "Synced passkey stored in a password manager"
+      isCorrect: false
+      explanation: "Synced passkeys are best suited for BYOD scenarios where users authenticate from their own personal devices across multiple platforms."
+  - content: "An administrator is reviewing which authentication methods are eligible for self-service password reset (SSPR). Which of the following methods is NOT supported for SSPR?"
+    choices:
+    - content: "Mobile app code (TOTP from Microsoft Authenticator)"
+      isCorrect: false
+      explanation: "The Microsoft Authenticator app code (TOTP) is a supported SSPR method that users can register and use to verify their identity during a reset."
+    - content: "FIDO2 security key / passkey"
+      isCorrect: true
+      explanation: "FIDO2 security keys and passkeys are sign-in-only credentials. They can confirm a sign-in but are not available as verification methods during a self-service password reset flow."
+    - content: "Email address verification"
+      isCorrect: false
+      explanation: "Email is a supported SSPR method and is commonly used as an alternate contact verification option."
+  - content: "A help desk technician needs to onboard a new employee who has no existing authentication methods registered. The technician wants to issue a short-lived credential that lets the employee securely complete first-time MFA registration. Which feature is designed for this purpose?"
+    choices:
+    - content: "Send a password"
+      isCorrect: false
+      explanation: "Sending a password does not provide a secure, time-limited credential for first-time authentication registration."
+    - content: "A Conditional Access policy scoped to the 'Register security information' user action"
+      isCorrect: false
+      explanation: "This policy controls who can register, but it does not itself provide a credential that allows an unregistered user to authenticate for the first time."
+    - content: "Temporary Access Pass (TAP)"
+      isCorrect: true
+      explanation: "TAP is a time-limited passcode issued by an admin that allows a user with no existing methods to sign in and bootstrap their first MFA registration, including passkeys and FIDO2 keys."
