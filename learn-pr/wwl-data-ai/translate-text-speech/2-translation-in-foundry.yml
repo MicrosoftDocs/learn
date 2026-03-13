@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.translate-text-speech.translation-in-foundry
+title: Translation in Microsoft Foundry
+metadata:
+  title: Translation in Microsoft Foundry
+  description: Overview of translation in Microsoft Foundry
+  author: GraemeMalcolm
+  ms.author: gmalc
+  ms.date: 3/13/2026
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-translation-in-foundry.md)]
