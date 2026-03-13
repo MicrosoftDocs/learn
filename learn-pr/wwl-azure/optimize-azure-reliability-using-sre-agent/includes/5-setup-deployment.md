@@ -7,7 +7,7 @@ To deploy Azure SRE Agent, the following prerequisites must be in place before y
 - An **active Azure subscription** with sufficient permissions to create resources and assign roles.
 - Permissions to assign RBAC roles at the subscription or resource group level (`Microsoft.Authorization/roleAssignments/write`). This is typically held by users with the **Owner** or **User Access Administrator** role.
 - Network access to the `*.azuresre.ai` domain. If your organization uses network security groups, firewalls, or proxy servers, ensure that outbound connectivity to this domain is allowed. The agent communicates with Microsoft-hosted services over this endpoint.
-- Deployment in a **supported region**. At the time of writing, Azure SRE Agent is available in a limited set of regions. For example, **Sweden Central**, **East US 2** and **Australia East** to provide global coverage. Check the [official documentation]((https://learn.microsoft.com/azure/sre-agent) for the current list of supported regions, as this expands over time.
+- Deployment in a **supported region**. At the time of writing, Azure SRE Agent is available in a limited set of regions. For example, **Sweden Central**, **East US 2** and **Australia East** to provide global coverage.
 - **Azure Monitor and Application Insights** should be configured for the resources you want the agent to monitor. While the agent can function with basic Azure platform metrics, its diagnostic capabilities are enhanced when Application Insights is enabled for application-level telemetry (request traces, dependency tracking, exception logging).
 
 ## Creating an Azure SRE Agent

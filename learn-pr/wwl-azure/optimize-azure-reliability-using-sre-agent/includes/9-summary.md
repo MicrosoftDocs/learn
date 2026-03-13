@@ -17,13 +17,3 @@ Let's wrap up this module with some key takeaways.
 5. **Incidents become learning opportunities.** Every incident the agent investigates produces structured artifacts: investigation timelines, root cause summaries, remediation records, and post-incident documentation. Over time, these artifacts build import knowledge that improves both the agent's effectiveness and the engineering team's operational maturity.
 
 
-## Further reading
-
-- [Azure SRE Agent Documentation](https://learn.microsoft.com/azure/sre-agent/)
-- [Create and Use Azure SRE Agent](https://learn.microsoft.com/azure/sre-agent/usage)
-- [What is Infrastructure as Code?](https://learn.microsoft.com/devops/deliver/what-is-infrastructure-as-code)
-- [Azure Monitor Overview](https://learn.microsoft.com/azure/azure-monitor/overview)
-- [Microsoft Responsible AI Principles](https://www.microsoft.com/ai/responsible-ai)
-- [Azure Well-Architected Framework](https://learn.microsoft.com/azure/well-architected/operational-excellence/)
-
-
