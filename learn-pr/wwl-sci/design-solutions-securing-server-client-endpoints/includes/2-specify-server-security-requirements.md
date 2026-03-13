@@ -9,6 +9,7 @@ When specifying server security requirements, organize them into categories that
 - **Identity and access management**: Authentication methods, privileged access controls, service account management
 - **Network security**: Traffic filtering, segmentation, exposure reduction
 - **Data protection**: Encryption at rest and in transit, key management
+- **Backup and recovery**: Immutable backups, tested restoration procedures, ransomware resilience
 - **Vulnerability management**: Scanning, patching, remediation timelines
 - **Security monitoring**: Logging, alerting, threat detection
 - **Configuration management**: Hardening baselines, drift detection
@@ -17,12 +18,19 @@ For each category, specify requirements that are measurable and auditable. For e
 
 ### MCSB Endpoint Security controls
 
-The Microsoft Cloud Security Benchmark (MCSB) provides a structured framework for endpoint security requirements. The Endpoint Security (ES) domain defines three controls specific to servers and other endpoints:
+The Microsoft Cloud Security Benchmark (MCSB) provides a structured framework for endpoint security requirements. In MCSB v2, the Endpoint Security (ES) domain is organized into two pillars:
+
+**Cloud endpoint threat protection** — Deploy comprehensive threat detection and response capabilities for servers, including anti-malware and behavioral analysis:
 
 | Control | Requirement | Implementation guidance |
 | --- | --- | --- |
 | ES-1 | Use Endpoint Detection and Response (EDR) | Deploy EDR solutions like Microsoft Defender for Endpoint to detect, investigate, and respond to advanced threats on servers |
 | ES-2 | Use modern anti-malware software | Require anti-malware solutions that provide real-time protection, behavior monitoring, and integration with cloud-based threat intelligence |
+
+**Cloud endpoint security configuration** — Enforce security baselines and hardening standards across all servers:
+
+| Control | Requirement | Implementation guidance |
+| --- | --- | --- |
 | ES-3 | Ensure anti-malware software and signatures are updated | Configure automatic updates for anti-malware definitions and engines; specify maximum acceptable age for signatures |
 
 These controls apply across Windows and Linux servers in Azure, AWS, GCP, and on-premises environments. Microsoft Defender for Servers implements ES-1 and ES-2 through its integration with Defender for Endpoint. For detailed implementation guidance, see [Endpoint security controls in MCSB](/security/benchmark/azure/mcsb-endpoint-security).
@@ -59,7 +67,7 @@ Server security requirements vary based on where servers are deployed. Your spec
 
 For Azure-hosted servers, use platform capabilities in your requirements:
 
-- **Microsoft Defender for Servers**: Require either Plan 1 or Plan 2 based on protection needs. Plan 1 provides Defender for Endpoint integration for EDR capabilities. Plan 2 adds agentless scanning, file integrity monitoring, and just-in-time VM access.
+- **Microsoft Defender for Servers**: Require either Plan 1 or Plan 2 based on protection needs. Plan 1 provides Defender for Endpoint integration for EDR capabilities. Plan 2 adds agentless scanning (vulnerabilities, secrets, and malware), file integrity monitoring, just-in-time VM access, compliance assessment, and a free data ingestion benefit. Defender for Servers no longer relies on the Log Analytics agent or Azure Monitor Agent — all security features are delivered through the Defender for Endpoint integration and agentless machine scanning.
 - **Network security groups**: Require NSGs on all subnets with rules that follow least-privilege principles
 - **Azure Bastion**: Require Azure Bastion for administrative access instead of exposing RDP/SSH ports
 - **Managed identities**: Require managed identities for Azure resource access instead of stored credentials
@@ -69,7 +77,7 @@ For Azure-hosted servers, use platform capabilities in your requirements:
 
 For servers in AWS or GCP, specify how to integrate with your security management:
 
-- **Azure Arc onboarding**: Require all non-Azure servers to connect through Azure Arc for centralized management
+- **Azure Arc onboarding**: Require all non-Azure servers to connect through Azure Arc for centralized management. The multicloud connector enabled by Azure Arc can auto-discover EC2 instances and GCP VMs and install the Connected Machine agent at scale.
 - **Connector configuration**: Specify whether to connect at the organization/account level or individual project/account level
 - **Defender for Servers coverage**: Extend Microsoft Defender for Servers protection to EC2 instances and Compute Engine VMs
 - **Compliance standards**: Apply consistent standards across clouds—AWS Foundational Security Best Practices, GCP CIS benchmarks, and MCSB all map to common controls
@@ -78,7 +86,8 @@ For servers in AWS or GCP, specify how to integrate with your security managemen
 
 On-premises servers require additional considerations:
 
-- **Azure Arc deployment**: Require the Azure Connected Machine agent on all servers to enable cloud-based management
+- **Azure Arc deployment**: Require the Azure Connected Machine agent on all servers to enable cloud-based management and full Plan 2 functionality
+- **Direct Defender for Endpoint onboarding**: For servers where Azure Arc isn't feasible, installing the Defender for Endpoint agent directly provides Plan 1 functionality only (EDR and premium Defender Vulnerability Management features, but no agentless scanning, FIM, or JIT access)
 - **Network connectivity**: Specify required endpoints for Azure Arc, Defender for Cloud, and any extensions
 - **Proxy configuration**: Define proxy requirements for servers without direct internet access
 - **Update management**: Integrate with Azure Update Manager for centralized patching across hybrid environments
@@ -101,7 +110,11 @@ Specify scanning frequency and remediation timelines:
 
 **File integrity monitoring**
 
-For servers processing sensitive data, require monitoring of critical system files and configuration files with alerts on unauthorized changes.
+For servers processing sensitive data, require monitoring of critical system files and configuration files with alerts on unauthorized changes. File integrity monitoring is now delivered through the Defender for Endpoint integration in Defender for Servers Plan 2, replacing the previous Log Analytics agent-based approach.
+
+**Backup and recovery**
+
+Require immutable or offline backups for critical servers to protect against ransomware. Specify backup frequency, retention periods, and regular restoration testing. MCSB includes a dedicated Backup and Recovery (BR) domain with controls for backup configuration, protection, and validation.
 
 **Security alerts**
 
@@ -127,11 +140,15 @@ When specifying Defender for Servers requirements, choose the appropriate plan b
 | Consideration | Plan 1 | Plan 2 |
 | --- | --- | --- |
 | **Best for** | Standard workloads requiring EDR | Critical workloads requiring comprehensive protection |
-| **Defender for Endpoint** | ✓ Included | ✓ Included |
-| **Vulnerability assessment** | Basic | Premium (Defender Vulnerability Management) |
-| **Agentless scanning** | Not available | ✓ Software inventory, secrets, malware |
+| **Defender for Endpoint (EDR)** | ✓ Included | ✓ Included |
+| **Vulnerability assessment (agent-based)** | ✓ Included | ✓ Included |
+| **Vulnerability assessment (agentless)** | Not available | ✓ Included |
+| **Agentless malware and secrets scanning** | Not available | ✓ Software inventory, secrets, malware |
+| **Premium Defender Vulnerability Management** | Not available | ✓ Security baselines, block vulnerable apps, certificate and hardware assessment |
 | **Just-in-time VM access** | Not available | ✓ Reduces attack surface |
-| **File integrity monitoring** | Not available | ✓ Detects unauthorized changes |
+| **File integrity monitoring** | Not available | ✓ Via Defender for Endpoint integration |
+| **Compliance assessment** | Not available | ✓ Regulatory standards assessment |
+| **Free data ingestion** | Not available | ✓ 500 MB/day for specific data types |
 
 For most organizations, specify Plan 1 as the baseline requirement for all servers, with Plan 2 required for servers that process sensitive data, are internet-facing, or are otherwise deemed critical.
 
