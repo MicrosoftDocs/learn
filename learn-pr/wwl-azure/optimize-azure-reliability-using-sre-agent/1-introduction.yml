@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.optimize-azure-reliability-using-sre-agent.intro-sre
+title: Introduction to Site Reliability Engineering
+metadata:
+  title: Introduction to Site Reliability Engineering
+  description: "Learn about SRE principles including SLOs, error budgets, toil reduction, incident management, and observability."
+  ms.date: 03/08/2026
+  author: petender
+  ms.author: petender
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/1-introduction.md)]

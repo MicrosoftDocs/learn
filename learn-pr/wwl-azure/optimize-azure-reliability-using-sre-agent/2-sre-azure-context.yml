@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.optimize-azure-reliability-using-sre-agent.sre-azure-context
+title: SRE in the context of Azure cloud operations
+metadata:
+  title: SRE in the context of Azure cloud operations
+  description: "Understand how Azure cloud environments amplify SRE challenges and how agentic operations addresses them."
+  ms.date: 03/08/2026
+  author: petender
+  ms.author: petender
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/2-sre-azure-context.md)]
