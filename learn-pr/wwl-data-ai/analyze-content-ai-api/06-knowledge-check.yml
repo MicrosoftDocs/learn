@@ -4,31 +4,31 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: Check your knowledge.
-  author: wwlpublish
-  ms.author: gmalc
-  ms.date: 05/15/2025
+  author: ivorb
+  ms.author: berryivor
+  ms.date: 03/11/2026
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
 durationInMinutes: 3
 quiz:
   questions:
-  - content: "What configuration values are needed to use the Azure Content Understanding REST API?"
+  - content: "What configuration values are needed to use the Azure Content Understanding API?"
     choices:
     - content: "The name of the resource group where the Azure service is deployed."
       isCorrect: false
-      explanation: "Incorrect. The resource group name isn't required to use the REST API."
+      explanation: "Incorrect. The resource group name isn't required to use the API."
     - content: "The Azure subscription ID and tenant ID."
       isCorrect: false
-      explanation: "Incorrect. The subscription ID and tenant ID aren't required to use the REST API."
-    - content: "The endpoint and key for the Azure AI service."
+      explanation: "Incorrect. The subscription ID and tenant ID aren't required to use the API."
+    - content: "The endpoint and key for the Foundry resource."
       isCorrect: true
-      explanation: "Correct. The endpoint and key are required to use the REST API."
+      explanation: "Correct. The endpoint and key are required to use the API."
   - content: "What must be specified when calling the *analyze* method to extract fields from content?"
     choices:
-    - content: "The name of the Foundry Tools resource."
+    - content: "The name of the Foundry resource."
       isCorrect: false
-      explanation: "Incorrect. The name of the Foundry Tools resource isn't required."
+      explanation: "Incorrect. The name of the Foundry resource isn't required."
     - content: "The name of the analyzer."
       isCorrect: true
       explanation: "Correct. The name of the analyzer is required to extract fields from content."
