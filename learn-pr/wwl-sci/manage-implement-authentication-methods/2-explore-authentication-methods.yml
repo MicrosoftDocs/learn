@@ -5,7 +5,7 @@ metadata:
   title: Explore Microsoft Entra ID Authentication Methods
   description: Explore the spectrum of Microsoft Entra ID authentication methods, from password-based to passwordless, and understand authentication strength and security hierarchy.
   ms.date: 03/04/2026
-  author: roberts
+  author: r-c-stewart
   ms.author: roberts
   ms.topic: unit
   ai-usage: ai-assisted

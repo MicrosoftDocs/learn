@@ -5,7 +5,7 @@ metadata:
   title: Configure Multi-Factor Authentication in Microsoft Entra ID
   description: Learn how to deploy and configure multi-factor authentication (MFA) in Microsoft Entra ID using Conditional Access policies, named locations, and secure user registration.
   ms.date: 03/04/2026
-  author: roberts
+  author: r-c-stewart
   ms.author: roberts
   ms.topic: unit
   ai-usage: ai-assisted

@@ -4,7 +4,7 @@ metadata:
   title: Manage and Implement Authentication Methods in Microsoft Entra ID
   description: "Learn to plan, deploy, and manage secure authentication in Microsoft Entra ID. This module covers authentication methods, MFA with Conditional Access, passwordless options, and self-service password reset."
   ms.date: 03/13/2026
-  author: roberts
+  author: r-c-stewart
   ms.author: roberts
   ms.topic: module
   ms.service: entra-id
@@ -41,4 +41,4 @@ units:
   - learn.wwl.manage-implement-authentication-methods.knowledge-check
   - learn.wwl.manage-implement-authentication-methods.summary
 badge:
-  uid: learn.wwl.introduction-entra-agent-id.badge
+  uid: learn.wwl.manage-implement-authentication-methods.badge

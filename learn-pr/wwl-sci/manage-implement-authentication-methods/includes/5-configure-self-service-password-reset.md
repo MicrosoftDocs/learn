@@ -45,7 +45,7 @@ Key policy guidance:
 
 ## Enforce registration and configure password writeback
 
-:::image type="content" source="../media/sspr-flow.png" alt-text="Activity flow diagram showing the SSPR user journey: user goes to aka.ms/sspr, verifies identity with registered methods, sets a new password, and writeback updates on-premises Active Directory when configured.":::
+:::image type="content" source="../media/password-reset-flow.png" alt-text="Activity flow diagram showing the SSPR user journey: user goes to aka.ms/sspr, verifies identity with registered methods, sets a new password, and writeback updates on-premises Active Directory when configured.":::
 
 Use Conditional Access targeting **Register security information** to enforce registration. For first-time users or recovery scenarios, issue a **Temporary Access Pass (TAP)** to bootstrap secure enrollment.
 

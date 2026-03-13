@@ -5,7 +5,7 @@ metadata:
   title: Introduction
   description: Introduction to implementing and managing authentication methods in Microsoft Entra ID for Contoso's hybrid environment.
   ms.date: 03/05/2026
-  author: roberts
+  author: r-c-stewart
   ms.author: roberts
   ms.topic: unit
   ai-usage: ai-assisted

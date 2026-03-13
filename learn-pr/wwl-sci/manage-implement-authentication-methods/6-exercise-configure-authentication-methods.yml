@@ -5,7 +5,7 @@ metadata:
   title: "Exercise - Configure Authentication Methods in Microsoft Entra ID"
   description: "Hands-on exercise: enable the MFA registration policy in Identity Protection, require MFA for cloud admin portals using Conditional Access, and enable phishing-resistant sign-in with passkeys (FIDO2) in Microsoft Entra ID."
   ms.date: 03/13/2026
-  author: roberts
+  author: r-c-stewart
   ms.author: roberts
   ms.topic: unit
   ai-usage: ai-assisted
