@@ -12,7 +12,7 @@ You may also encounter **per-user MFA (legacy)** in older environments. It still
 
 ## Configure named locations and trusted IP boundaries
 
-One of the first refinements Contoso's security team makes is defining **named locations**. Named locations are logical groupings of IP ranges or countries that represent trusted boundaries, such as corporate offices and VPN egress addresses.
+One of the first refinements Contoso's security team makes is defining **named locations**. Named locations are logical groupings of IP ranges or areas that represent trusted boundaries, such as corporate offices and VPN egress addresses.
 
 When named locations are used in Conditional Access, you can reduce friction for trusted sign-ins while still requiring MFA for sign-ins outside those boundaries. This helps balance usability and security.
 
