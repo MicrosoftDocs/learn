@@ -76,7 +76,7 @@ Bulgarian (bg)
 ```
 
 > [!TIP]
-> For more information about the **get_supported_language** method, see the [Azure Translator Python SDK documentation](python/api/azure-ai-translation-text/azure.ai.translation.text.texttranslationclient?azure-portal=true#azure-ai-translation-text-texttranslationclient-get-supported-languages).
+> For more information about the **get_supported_language** method, see the [Azure Translator Python SDK documentation](/python/api/azure-ai-translation-text/azure.ai.translation.text.texttranslationclient?azure-portal=true#azure-ai-translation-text-texttranslationclient-get-supported-languages).
 
 ### Translate text
 
