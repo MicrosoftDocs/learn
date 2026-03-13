@@ -14,7 +14,7 @@ summary: Learn to plan, deploy, and manage secure authentication in Microsoft En
 abstract: |
  After completing this module, you'll be able to:
   - Describe Microsoft Entra ID authentication methods and authentication strength concepts.
-  - Configure multi-factor authentication using Conditional Access policies and named locations.
+  - Configure multifactor authentication using Conditional Access policies and named locations.
   - Implement passwordless authentication methods, including Windows Hello for Business, passkeys, and FIDO2 security keys.
   - Configure self-service password reset for users in a hybrid environment.
 prerequisites: |

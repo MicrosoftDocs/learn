@@ -14,9 +14,9 @@ Modern passwordless methods eliminate the password entirely. Instead of typing a
 
 :::image type="content" source="../media/authentication-methods-spectrum.png" alt-text="Diagram showing the spectrum from password-only authentication on the left, through password plus MFA in the middle, to fully passwordless methods on the right, with security strength increasing from left to right.":::
 
-## Multi-factor authentication as the bridge
+## multifactor authentication as the bridge
 
-For organizations that can't immediately move to passwordless, **multi-factor authentication (MFA)** provides a critical intermediate security layer. MFA requires users to verify their identity using two or more factors from different categories — for example, something they know (a password) combined with something they have (a registered phone).
+For organizations that can't immediately move to passwordless, **multifactor authentication (MFA)** provides a critical intermediate security layer. MFA requires users to verify their identity using two or more factors from different categories — for example, something they know (a password) combined with something they have (a registered phone).
 
 Microsoft Entra ID supports several MFA methods:
 
@@ -34,7 +34,7 @@ Microsoft Entra ID supports several MFA methods:
 > [!IMPORTANT]
 > SMS and voice call verification are considered legacy MFA methods. They're vulnerable to SIM-swapping attacks. Microsoft recommends migrating users away from these methods toward app-based or hardware-based alternatives.
 
-The next unit on multi-factor authentication explores how to configure and enforce these methods across your user population.
+The next unit on multifactor authentication explores how to configure and enforce these methods across your user population.
 
 ## Authentication strength and security hierarchy
 
@@ -60,4 +60,4 @@ When a user signs in, the request flows through the **Microsoft identity platfor
 
 For devices joined to Microsoft Entra ID, a **Primary Refresh Token (PRT)** is issued after the first successful sign-in. The PRT enables single sign-on (SSO) across apps and services without requiring re-authentication — a meaningful gain in user experience that complements the security improvements from stronger authentication methods.
 
-Understanding this architecture helps you anticipate how changes to authentication policies affect users and applications across the organization. Importantly, the same authentication policies that govern access to Microsoft 365 and Azure management also apply to AI-powered services like Azure AI Foundry and Microsoft Copilot for Microsoft 365 — making strong authentication the first line of defense for Contoso's AI investments as well. With this foundation in place, you're ready to dive into configuring multi-factor authentication in the next unit.
+Understanding this architecture helps you anticipate how changes to authentication policies affect users and applications across the organization. Importantly, the same authentication policies that govern access to Microsoft 365 and Azure management also apply to AI-powered services like Azure AI Foundry and Microsoft Copilot for Microsoft 365 — making strong authentication the first line of defense for Contoso's AI investments as well. With this foundation in place, you're ready to dive into configuring multifactor authentication in the next unit.

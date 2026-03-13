@@ -1,4 +1,4 @@
-With Contoso's authentication strategy defined, your team is ready to enforce multi-factor authentication (MFA) for users, services, and emerging AI-driven workloads. For organizations with Microsoft Entra ID P1 or P2 licenses, **Conditional Access policies** remain the recommended way to require MFA in context, not on every sign-in.
+With Contoso's authentication strategy defined, your team is ready to enforce multifactor authentication (MFA) for users, services, and emerging AI-driven workloads. For organizations with Microsoft Entra ID P1 or P2 licenses, **Conditional Access policies** remain the recommended way to require MFA in context, not on every sign-in.
 
 ## Deploy MFA with the right enforcement model
 
