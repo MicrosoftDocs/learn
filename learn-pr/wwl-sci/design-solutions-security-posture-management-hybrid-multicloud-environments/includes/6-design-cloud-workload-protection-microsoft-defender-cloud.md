@@ -2,7 +2,7 @@ While cloud security posture management identifies misconfigurations before atta
 
 ## Understanding workload protection in Defender for Cloud
 
-Defender for Cloud provides workload protection through plans targeting specific resource types. Unlike CSPM which assesses configuration state, these plans monitor runtime behavior to detect threats like malware execution, suspicious network connections, and exploitation attempts.
+Defender for Cloud provides workload protection through plans targeting specific resource types. Unlike CSPM, which assesses configuration state, these plans monitor runtime behavior to detect threats like malware execution, suspicious network connections, and exploitation attempts.
 
 The key design principle: enable protection plans based on workloads present in your environment and their risk profile. Not every workload requires every protection.
 
@@ -40,6 +40,8 @@ Server protection requires the most architectural decisions. Defender for Server
 | Premium Defender Vulnerability Management features | No | Yes |
 
 **Plan selection**: Choose Plan 1 for EDR integration and agent-based vulnerability scanning. Choose Plan 2 for agentless scanning, just-in-time access, file integrity monitoring, or premium vulnerability management features. Consider Plan 2 for production servers and Plan 1 for development environments.
+
+:::image type="content" source="../media/agentless-scanning-process.png" alt-text="Diagram showing the agentless scanning process where a disk snapshot is taken from a virtual machine, analyzed in an isolated scanning environment, and results sent to Defender for Cloud." lightbox="../media/agentless-scanning-process.png":::
 
 **Coverage scope**: Enable at the subscription level for simplest management. Plan 1 can enable at the resource level; Plan 2 requires subscription-level enablement. For multicloud and on-premises servers, deploy Azure Arc for full functionality.
 
@@ -83,7 +85,7 @@ Defender for Storage provides activity monitoring (detecting unusual access patt
 
 **High priority** - Enable full protection for:
 - Production servers processing customer data
-- Databases containing PII
+- Databases containing personal data
 - Customer-facing containers and applications
 - Storage accounts receiving external uploads
 - Workloads subject to compliance requirements

@@ -30,6 +30,8 @@ Attack paths show how an attacker could move from an entry point to a critical a
 
 **Hybrid attack paths**: With Defender for Cloud integration, attack paths can span on-premises and cloud environments—showing how an attacker might move from a compromised on-premises server to cloud resources or vice versa.
 
+:::image type="content" source="../media/security-map.png" alt-text="Screenshot of a conceptualized graph showing the complexity of security graphing with multiple interconnected assets, identities, and attack paths across an environment." lightbox="../media/security-map.png":::
+
 ## Designing attack surface management
 
 The enterprise exposure graph and attack surface map visualize your entire attack surface across endpoints, identities, cloud resources, and external exposure.
