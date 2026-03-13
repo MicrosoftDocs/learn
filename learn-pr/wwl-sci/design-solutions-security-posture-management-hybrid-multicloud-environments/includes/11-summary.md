@@ -2,7 +2,7 @@ In this module, you learned how to design security posture management solutions 
 
 You learned how to:
 
-- Evaluate security posture by using Microsoft Cloud Security Benchmark, Microsoft Defender for Cloud, and secure scores
+- Evaluate security posture by using Microsoft cloud security benchmark, Microsoft Defender for Cloud, and secure scores
 - Design integrated security posture management and workload protection solutions in hybrid and multicloud environments
 - Design cloud workload protection solutions that use Microsoft Defender for Cloud
 - Design solutions for Microsoft Defender External Attack Surface Management (Defender EASM)
@@ -12,7 +12,7 @@ With these capabilities, security architects can deliver comprehensive visibilit
 
 ## Learn more
 
-- [Microsoft Cloud Security Benchmark overview](/security/benchmark/azure/introduction)
+- [Microsoft cloud security benchmark overview](/security/benchmark/azure/introduction)
 - [Overview of Cloud Security Posture Management (CSPM)](/azure/defender-for-cloud/concept-cloud-security-posture-management)
 - [Secure score in Microsoft Defender for Cloud](/azure/defender-for-cloud/secure-score-security-controls)
 - [Cloud workload protection in Microsoft Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction#protect-cloud-workloads)

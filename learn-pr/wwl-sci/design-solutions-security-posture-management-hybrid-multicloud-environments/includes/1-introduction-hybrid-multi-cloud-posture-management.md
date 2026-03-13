@@ -8,7 +8,7 @@ This module guides you through designing that solution using Microsoft Defender 
 
 By the end of this module, you're able to:
 
-- Evaluate security posture by using Microsoft Cloud Security Benchmark, Microsoft Defender for Cloud, and secure scores
+- Evaluate security posture by using Microsoft cloud security benchmark, Microsoft Defender for Cloud, and secure scores
 - Design integrated security posture management and workload protection solutions in hybrid and multicloud environments
 - Design cloud workload protection solutions that use Microsoft Defender for Cloud
 - Design solutions for Microsoft Defender External Attack Surface Management (Defender EASM)

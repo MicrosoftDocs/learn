@@ -1,6 +1,6 @@
-Microsoft Defender for Cloud serves as the primary tool for evaluating security posture across cloud environments. At the core of this evaluation is the Microsoft Cloud Security Benchmark (MCSB), which defines the security standards against which your resources are assessed.
+Microsoft Defender for Cloud serves as the primary tool for evaluating security posture across cloud environments. At the core of this evaluation is the Microsoft cloud security benchmark (MCSB), which defines the security standards against which your resources are assessed.
 
-## Understanding the Microsoft Cloud Security Benchmark
+## Understanding the Microsoft cloud security benchmark
 
 MCSB is a comprehensive set of security best practices organized into security domains. Each domain groups related security recommendations that address a specific area of concern. The following table shows the 12 security domains defined in MCSB v2:
 

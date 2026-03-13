@@ -6,7 +6,7 @@ Microsoft provides several secure scores across its security portfolio, each mea
 
 | Score | Domain | Portal | Primary sources |
 |-------|--------|--------|-----------------|
-| Microsoft Secure Score | Identity, devices, apps, data | Microsoft Defender portal (security.microsoft.com) | Microsoft Entra, Defender for Endpoint, Defender for Cloud Apps, M365 services |
+| Microsoft Secure Score | Identity, devices, apps, data | Microsoft Defender portal (security.microsoft.com) | Microsoft Entra, Defender for Endpoint, Defender for Cloud Apps, Microsoft 365 services |
 | Cloud Secure Score | Cloud posture (multicloud) | Microsoft Defender portal → Exposure Management → Initiatives | Microsoft Defender for Cloud (Azure, AWS, GCP) |
 | Classic Secure Score | Cloud posture (control-based) | Azure portal → Defender for Cloud | Microsoft Defender for Cloud (MCSB controls) |
 | Exposure Secure Score | Device and endpoint posture | Microsoft Defender portal → Exposure Management | Microsoft Defender for Endpoint |

@@ -29,7 +29,7 @@ quiz:
   questions:
     - content: "An organization operates workloads across Azure, AWS, and GCP. Which capability requires Defender CSPM rather than Foundational CSPM?"
       choices:
-        - content: "Continuous assessment of resources against the Microsoft Cloud Security Benchmark (MCSB)."
+        - content: "Continuous assessment of resources against the Microsoft cloud security benchmark (MCSB)."
           isCorrect: false
           explanation: "Foundational CSPM includes continuous assessment against MCSB at no cost across Azure, AWS, and GCP."
         - content: "Generating a secure score that quantifies overall security posture."
@@ -57,7 +57,7 @@ quiz:
           isCorrect: false
           explanation: "AWS Security Hub isn't used to enable workload protection. Defender for Cloud uses its own connectors and Azure Arc to provide runtime threat detection on non-Azure machines."
 
-    - content: "Which statement accurately describes how the Microsoft Cloud Security Benchmark (MCSB) supports multicloud security assessment?"
+    - content: "Which statement accurately describes how the Microsoft cloud security benchmark (MCSB) supports multicloud security assessment?"
       choices:
         - content: "MCSB evaluates all cloud providers using Azure-specific configuration checks translated to equivalent settings."
           isCorrect: false
