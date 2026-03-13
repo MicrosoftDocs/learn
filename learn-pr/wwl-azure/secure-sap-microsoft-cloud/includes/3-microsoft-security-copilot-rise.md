@@ -1,4 +1,4 @@
-[Security Copilot](https://learn.microsoft.com/copilot/security/microsoft-security-copilot) is a generative AI security product that empowers security and IT professionals respond to cyber threats, process signals, and assess risk exposure at the speed and scale of AI. It has its own and embedded experiences in Microsoft Defender XDR, Microsoft Sentinel, and Intune.
+[Security Copilot](/copilot/security/microsoft-security-copilot) is a generative AI security product that empowers security and IT professionals respond to cyber threats, process signals, and assess risk exposure at the speed and scale of AI. It has its own and embedded experiences in Microsoft Defender XDR, Microsoft Sentinel, and Intune.
 
 ### How does Security Copilot work?
 Security Copilot capabilities can be accessed through a standalone experience and through embedded experiences in other Microsoft security products. The foundation language model and proprietary Microsoft technologies work together in an underlying system that helps increase the efficiency and capabilities of Defenders.
@@ -20,7 +20,7 @@ Security Copilot can be used with any data source that Defender XDR and Microsof
 
 :::image type="content" source="../media/sap-rise-security-copilot.png" alt-text="Screenshot of Security Copilot experience with SAP RISE/ECS incidents." lightbox="../media/sap-rise-security-copilot.png":::
 
-In addition to that the Security Copilot experience is embedded on the Defender XDR portal. Next to an AI-generated summary, recommendations, and remediation like password reset for SAP are provided out-of-the-box. Learn more about fully automatic SAP attack disruption [here](https://learn.microsoft.com/azure/sentinel/sap/deployment-attack-disrupt) and semi-automatic SAP attack disruption [here](https://www.youtube.com/watch?v=b-AZnR-nQpg).
+In addition to that the Security Copilot experience is embedded on the Defender XDR portal. Next to an AI-generated summary, recommendations, and remediation like password reset for SAP are provided out-of-the-box. Learn more about fully automatic SAP attack disruption [here](/azure/sentinel/sap/deployment-attack-disrupt) and semi-automatic SAP attack disruption [here](https://www.youtube.com/watch?v=b-AZnR-nQpg).
 
 :::image type="content" source="../media/sap-rise-security-copilot-defender-portal.png" alt-text="Screenshot of embedded Security Copilot experience in Defender with SAP RISE/ECS incidents." lightbox="../media/sap-rise-security-copilot-defender-portal.png":::
 

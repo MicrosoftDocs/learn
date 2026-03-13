@@ -7,4 +7,4 @@ For more information on Microsoft Sentinel and SOAR for SAP, see the blog series
 This image shows an SAP incident detected by Microsoft Sentinel offering the option to block the suspicious user on the SAP ERP, SAP Business Technology Platform, or Microsoft Entra ID.
 
 
-For more information on Microsoft Sentinel and SAP, including a deployment guide, see [Microsoft Sentinel product documentation](https://learn.microsoft.com/azure/sentinel/sap/deployment-overview).
+For more information on Microsoft Sentinel and SAP, including a deployment guide, see [Microsoft Sentinel product documentation](/azure/sentinel/sap/deployment-overview).

@@ -37,7 +37,7 @@ The LogServ integration comes with built-in security content in Microsoft Sentin
 
 ### Application-layer analytic rules (Microsoft Sentinel for SAP)
 
-The Microsoft Sentinel for SAP solution ships with [60+ built-in analytic rules](https://learn.microsoft.com/azure/sentinel/sap/sap-solution-security-content?pivots=connection-agentless) covering the application layer — detecting threats like privilege escalation, unauthorized changes, sensitive transactions, and data exfiltration.
+The Microsoft Sentinel for SAP solution ships with [60+ built-in analytic rules](/azure/sentinel/sap/sap-solution-security-content?pivots=connection-agentless) covering the application layer — detecting threats like privilege escalation, unauthorized changes, sensitive transactions, and data exfiltration.
 
 :::image type="content" source="../media/app-layer-analytic-rules.png" alt-text="Screenshot showing application-layer analytic rules from the Microsoft Sentinel for SAP solution." lightbox="../media/app-layer-analytic-rules.png":::
 

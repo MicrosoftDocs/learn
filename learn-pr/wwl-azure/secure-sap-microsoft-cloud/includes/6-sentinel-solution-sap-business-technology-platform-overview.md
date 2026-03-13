@@ -50,6 +50,6 @@ With the Microsoft Sentinel solution for SAP BTP, you can:
 
 The solution includes:
 
-- The **SAP BTP** connector, which allows you to connect your BTP subaccounts and global account to Microsoft Sentinel via the [Audit Log service for SAP BTP API](https://help.sap.com/docs/btp/sap-business-technology-platform/security-events-logged-by-cf-services). Learn how to [install the solution and data connector](https://learn.microsoft.com/azure/sentinel/sap/deploy-sap-btp-solution).
-- **[Built-in analytics rules](https://learn.microsoft.com/azure/sentinel/sap/sap-btp-security-content#built-in-analytics-rules)** for SAP Integration Suite, SAP Cloud Identity Services, low-code application development scenarios using event sources such as Trust and Authorization Provider, Business Application Studio (BAS) and more.
-- The **[BTP activity workbook](https://learn.microsoft.com/azure/sentinel/sap/sap-btp-security-content#sap-btp-workbook)**, which provides a dashboard overview of subaccounts and a grid of threat related events.
+- The **SAP BTP** connector, which allows you to connect your BTP subaccounts and global account to Microsoft Sentinel via the [Audit Log service for SAP BTP API](https://help.sap.com/docs/btp/sap-business-technology-platform/security-events-logged-by-cf-services). Learn how to [install the solution and data connector](/azure/sentinel/sap/deploy-sap-btp-solution).
+- **[Built-in analytics rules](/azure/sentinel/sap/sap-btp-security-content#built-in-analytics-rules)** for SAP Integration Suite, SAP Cloud Identity Services, low-code application development scenarios using event sources such as Trust and Authorization Provider, Business Application Studio (BAS) and more.
+- The **[BTP activity workbook](/azure/sentinel/sap/sap-btp-security-content#sap-btp-workbook)**, which provides a dashboard overview of subaccounts and a grid of threat related events.

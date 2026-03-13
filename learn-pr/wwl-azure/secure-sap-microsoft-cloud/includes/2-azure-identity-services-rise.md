@@ -3,9 +3,9 @@ This module details integration of Azure identity and security services with an 
 ## Single sign-on for SAP RISE
 
 Single sign-on (SSO) is configured for many SAP environments. With SAP workloads running in ECS/RISE, steps to implement don't differ from a natively run SAP system. The integration steps with Microsoft Entra ID based SSO are available for typical ECS/RISE managed workloads:
-- [Tutorial: Microsoft Entra Single sign-on (SSO) integration with SAP NetWeaver](https://learn.microsoft.com/entra/identity/saas-apps/sap-netweaver-tutorial)
-- [Tutorial: Microsoft Entra single sign-on (SSO) integration with SAP Fiori](https://learn.microsoft.com/entra/identity/saas-apps/sap-fiori-tutorial)
-- [Tutorial: Microsoft Entra integration with SAP HANA](https://learn.microsoft.com/entra/identity/saas-apps/saphana-tutorial)
+- [Tutorial: Microsoft Entra Single sign-on (SSO) integration with SAP NetWeaver](/entra/identity/saas-apps/sap-netweaver-tutorial)
+- [Tutorial: Microsoft Entra single sign-on (SSO) integration with SAP Fiori](/entra/identity/saas-apps/sap-fiori-tutorial)
+- [Tutorial: Microsoft Entra integration with SAP HANA](/entra/identity/saas-apps/saphana-tutorial)
 
 | SSO method |   Identity Provider   | Typical use case                 | Implementation                    |
 | :--------- | :-------------------: | :------------------------------- | :-------------------------------- |
@@ -24,9 +24,9 @@ While SSO secures the sign-in experience, organizations increasingly require mul
 
 ### Approach 1: Microsoft Entra Private Access with Global Secure Access client (recommended)
 
-[Microsoft Entra Private Access](https://learn.microsoft.com/entra/global-secure-access/concept-private-access), part of [Global Secure Access (GSA)](https://learn.microsoft.com/entra/global-secure-access/), provides a Zero Trust Network Access (ZTNA) approach to MFA for SAP GUI — without requiring any SAP BTP services.
+[Microsoft Entra Private Access](/entra/global-secure-access/concept-private-access), part of [Global Secure Access (GSA)](/entra/global-secure-access/), provides a Zero Trust Network Access (ZTNA) approach to MFA for SAP GUI — without requiring any SAP BTP services.
 
-The [GSA client](https://learn.microsoft.com/entra/global-secure-access/concept-clients) installed on the user's workstation intercepts SNC traffic to the SAP system. Before the connection is established, the GSA client routes the request through Entra ID, where a Conditional Access policy enforces MFA (for example, passwordless authentication via the Microsoft Authenticator app). After successful MFA, the Kerberos-based SNC connection is established for SSO to the SAP system.
+The [GSA client](/entra/global-secure-access/concept-clients) installed on the user's workstation intercepts SNC traffic to the SAP system. Before the connection is established, the GSA client routes the request through Entra ID, where a Conditional Access policy enforces MFA (for example, passwordless authentication via the Microsoft Authenticator app). After successful MFA, the Kerberos-based SNC connection is established for SSO to the SAP system.
 
 Key benefits of this approach:
 - **Minimum set of components required** — SAP Secure Login and Microsoft GSA client are enough.
@@ -54,4 +54,4 @@ SAP Identity Management (SAP IDM) has been a widely used solution for managing S
 
 [Microsoft Entra ID Governance](/entra/id-governance/identity-governance-overview) and built-in integrations with SAP Cloud Identity Service are an ideal fit to handle SAP user lifecycle and their authorizations across both eco-systems.
 
-Learn more from this [Microsoft Learn article](https://learn.microsoft.com/entra/id-governance/scenarios/migrate-from-sap-idm) and the [SAP scenarios hub](https://microsoft.github.io/EntraIDGovernance-Training/SAPScenarios/).
+Learn more from this [Microsoft Learn article](/entra/id-governance/scenarios/migrate-from-sap-idm) and the [SAP scenarios hub](https://microsoft.github.io/EntraIDGovernance-Training/SAPScenarios/).
