@@ -11,7 +11,7 @@ metadata:
   module_assessment: true
 durationInMinutes: 8
 content: |
-  [!include[](includes/8-knowledge-check.md)]
+  [!include[](includes/9-knowledge-check.md)]
 quiz:
   title: "Check your knowledge"
   questions:
@@ -20,7 +20,7 @@ quiz:
     - content: "Web GUI, SAP Enterprise Portal."
       isCorrect: false
       explanation: "Incorrect. Web GUI and SAP Enterprise Portal are typically used with SPNEGO SSO method, not SAML/OAuth."
-    - content: "SAP Fiori, Web GUI, Portal, HANA."
+    - content: "Microsoft Copilot, Microsoft Power Platform, Microsoft Teams, SAP Fiori, Web GUI, Portal."
       isCorrect: true
       explanation: "Correct. SAML/OAuth SSO method is typically used with SAP Fiori, Web GUI, Portal, and HANA."
     - content: "SAP GUI."
@@ -31,9 +31,9 @@ quiz:
     - content: "Continue using SAP IDM beyond 2027."
       isCorrect: false
       explanation: "Incorrect. SAP has announced the retirement of SAP IDM by 2027."
-    - content: "Migrate to Microsoft Entra."
+    - content: "Migrate to Microsoft Entra ID Governance."
       isCorrect: true
-      explanation: "Correct. SAP recommends its IDM users to migrate to Microsoft Entra."
+      explanation: "Correct. SAP recommends its IDM users to migrate to Microsoft Entra ID Governance."
     - content: "Migrate to SAP Cloud Identity Service."
       isCorrect: false
       explanation: "Incorrect. While SAP Cloud Identity Service is integrated with Microsoft Entra, it is not the recommended migration path for SAP IDM users."
@@ -42,9 +42,9 @@ quiz:
     - content: "It provides a stand-alone experience for SAP RISE/ECS incidents."
       isCorrect: false
       explanation: "Incorrect. While it does provide a stand-alone experience, its main function is to empower security and IT professionals to respond to cyber threats."
-    - content: "It empowers security and IT professionals to respond to cyber threats, process signals, and assess risk exposure at the speed and scale of AI."
+    - content: "It empowers security and IT professionals to respond to cyber threats, correlate signals across the whole enterprise, and assess risk exposure at the speed and scale of AI."
       isCorrect: true
-      explanation: "Correct. Microsoft Security Copilot's main function is to empower security and IT professionals to respond to cyber threats, process signals, and assess risk exposure at the speed and scale of AI."
+      explanation: "Correct. Microsoft Security Copilot's main function is to empower security and IT professionals to respond to cyber threats, correlate signals, and assess risk exposure at the speed and scale of AI."
     - content: "It is an AI-generated summary tool for SAP RISE/ECS incidents."
       isCorrect: false
       explanation: "Incorrect. Although it does generate AI summaries, its primary role is to aid in responding to cyber threats."
@@ -53,12 +53,23 @@ quiz:
     - content: "It only works with SAP systems hosted on Azure."
       isCorrect: false
       explanation: "Incorrect. The solution works with SAP systems hosted on Azure, other clouds, or on-premises infrastructure."
-    - content: "It allows monitoring, detection, and response to suspicious activities on SAP systems hosted on Azure, other clouds, or on-premises infrastructure."
+    - content: "It allows monitoring, detection, and response to suspicious activities on SAP systems hosted on Azure, other clouds, RISE, or on-premises infrastructure."
       isCorrect: true
-      explanation: "Correct. The Microsoft Sentinel solution provides comprehensive security capabilities for SAP applications."
+      explanation: "Correct. The Microsoft Sentinel solution provides comprehensive security capabilities for SAP applications anywhere."
     - content: "It only monitors user activities on SAP RISE/ECS and the SAP business logic layers."
       isCorrect: false
       explanation: "Incorrect. While it does monitor user activities, it also allows detection and response to suspicious activities, and customization based on needs."
+  - content: "What does the SAP LogServ add-on provide for Microsoft Sentinel that the agentless data connector does not?"
+    choices:
+    - content: "SAP application-layer audit logs and user activity data."
+      isCorrect: false
+      explanation: "Incorrect. Application-layer logs are already provided by the agentless data connector through RFC calls."
+    - content: "Infrastructure and SAP HANA database logs from the SAP-managed environment."
+      isCorrect: true
+      explanation: "Correct. LogServ extends Sentinel coverage to infrastructure and HANA database logs that are otherwise not accessible to customers under the RISE shared responsibility model."
+    - content: "SAP BTP audit logs from the Audit Log Management service."
+      isCorrect: false
+      explanation: "Incorrect. SAP BTP audit logs are provided by the separate Microsoft Sentinel solution for SAP BTP, not by LogServ."
   - content: "What is a common first scenario for using prebuilt playbooks for security, orchestration, automation, and response capabilities (SOAR) with Microsoft Sentinel?"
     choices:
     - content: "SAP user blocking with intervention option from Microsoft Teams."
