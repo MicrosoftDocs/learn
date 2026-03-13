@@ -1,6 +1,19 @@
 Microsoft Defender for Cloud uses secure score as the primary metric for evaluating and tracking your security posture. Understanding how secure score works helps you prioritize remediation, set targets, and demonstrate posture improvement to stakeholders.
 
-## Understanding secure score models
+## Microsoft secure scores in context
+
+Microsoft provides several secure scores across its security portfolio, each measuring posture for a different domain. Before diving into the Defender for Cloud scores used for cloud posture management, it helps to understand where they fit in the broader landscape:
+
+| Score | Domain | Portal | Primary sources |
+|-------|--------|--------|-----------------|
+| Microsoft Secure Score | Identity, devices, apps, data | Microsoft Defender portal (security.microsoft.com) | Microsoft Entra, Defender for Endpoint, Defender for Cloud Apps, M365 services |
+| Cloud Secure Score | Cloud posture (multicloud) | Microsoft Defender portal → Exposure Management → Initiatives | Microsoft Defender for Cloud (Azure, AWS, GCP) |
+| Classic Secure Score | Cloud posture (control-based) | Azure portal → Defender for Cloud | Microsoft Defender for Cloud (MCSB controls) |
+| Exposure Secure Score | Device and endpoint posture | Microsoft Defender portal → Exposure Management | Microsoft Defender for Endpoint |
+
+For this module's focus on **security posture management in hybrid and multicloud environments**, the relevant scores are the **Cloud Secure Score** and the **Classic Secure Score**—both from Microsoft Defender for Cloud. The broader Microsoft Secure Score covers identity, device, and application posture, which falls outside the scope of cloud infrastructure posture management. However, all these scores are visible in the Microsoft Defender portal's Exposure Management experience, giving security architects a consolidated view across domains.
+
+## Understanding Defender for Cloud secure score models
 
 Defender for Cloud provides two secure score models, each available in different portals:
 
