@@ -11,4 +11,3 @@ Supplemental Resources:
 - [Implement certifications in academic programs](https://aka.ms/ImplementationLP)
 - [Languages Availability](https://aka.ms/mslelanguages)
 - [Microsoft Learn Student Ambassador Program](https://mvp.microsoft.com/studentambassadors)
-- [Microsoft Learn Career Connected](/training/career-paths/career-connected)
