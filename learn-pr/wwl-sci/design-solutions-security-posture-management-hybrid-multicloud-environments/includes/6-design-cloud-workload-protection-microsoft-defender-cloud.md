@@ -1,104 +1,85 @@
-While cloud security posture management identifies misconfigurations before attackers exploit them, cloud workload protection (CWP) detects and responds to active threats against running workloads. As a security architect, you design a workload protection strategy that provides appropriate coverage without creating operational burden or unnecessary cost.
+While cloud security posture management identifies misconfigurations before attackers exploit them, cloud workload protection (CWP) detects and responds to active threats against running workloads. As a security architect, you select the right combination of workload protection plans in Microsoft Defender for Cloud to provide appropriate coverage across your hybrid and multicloud environment without creating unnecessary cost or operational burden.
 
-## Understanding workload protection in Defender for Cloud
+## How workload protection complements posture management
 
-Defender for Cloud provides workload protection through plans targeting specific resource types. Unlike CSPM, which assesses configuration state, these plans monitor runtime behavior to detect threats like malware execution, suspicious network connections, and exploitation attempts.
+Defender for Cloud provides workload protection through plans targeting specific resource types. Unlike CSPM, which assesses configuration state, these plans monitor runtime behavior to detect threats like malware execution, suspicious network connections, and exploitation attempts. Together, CSPM and CWP create defense in depth: posture management reduces the attack surface by fixing misconfigurations, while workload protection detects and responds when attackers exploit remaining vulnerabilities.
 
-The key design principle: enable protection plans based on workloads present in your environment and their risk profile. Not every workload requires every protection.
+The key selection principle: enable protection plans based on the workloads present in your environment and their risk profile. Not every workload requires every protection plan.
 
-## Mapping protection plans to workloads
+## Available workload protection plans
 
-| Workload type | Defender plan | What it protects |
-|--------------|---------------|------------------|
-| Virtual machines and servers | Defender for Servers | Windows and Linux machines in Azure, AWS, GCP, and on-premises via Azure Arc |
-| Containers | Defender for Containers | Kubernetes clusters, container registries, images, and cluster nodes |
-| SQL databases | Defender for SQL | Azure SQL Database, SQL Managed Instance, and SQL Server on machines |
+Defender for Cloud offers plans for the following workload types. Each plan is enabled independently, allowing you to tailor protection to your environment.
+
+| Workload type | Defender plan | Multicloud coverage |
+|--------------|---------------|---------------------|
+| Virtual machines and servers | Defender for Servers (Plan 1 or Plan 2) | Azure, AWS, GCP, on-premises via Azure Arc |
+| Containers | Defender for Containers | Azure AKS, AWS EKS, GCP GKE, Arc-enabled clusters |
+| SQL databases | Defender for SQL | Azure SQL, SQL Managed Instance, SQL Server on machines (including Arc-enabled) |
 | Open-source databases | Defender for open-source relational databases | Azure Database for PostgreSQL, MySQL, and MariaDB |
 | Azure Cosmos DB | Defender for Azure Cosmos DB | Azure Cosmos DB accounts |
-| Storage accounts | Defender for Storage | Blob storage, Azure Files, and Azure Data Lake Storage Gen2 |
-| App Service | Defender for App Service | Web apps, API apps, and function apps |
+| Storage accounts | Defender for Storage | Blob storage, Azure Files, Azure Data Lake Storage Gen2 |
+| App Service | Defender for App Service | Azure App Service web apps, API apps, function apps |
 | APIs | Defender for APIs | APIs published in Azure API Management |
-| Key Vault | Defender for Key Vault | Azure Key Vault secrets, keys, and certificates |
-| Resource Manager | Defender for Resource Manager | Azure Resource Manager control plane activity |
-| AI workloads | Defender for AI Services | AI workloads, including  Azure OpenAI Service and Microsoft Foundry |
+| Key Vault | Defender for Key Vault | Azure Key Vault |
+| Resource Manager | Defender for Resource Manager | Azure Resource Manager control plane |
+| AI workloads | Defender for AI Services | Azure OpenAI Service and Microsoft Foundry |
 
-## Designing server protection
+> [!NOTE]
+> Other modules cover workload-specific security design in depth—including server endpoint protection, data security for SQL and Storage, container security requirements, and application security. This unit focuses on **selecting** the right plans as part of your overall hybrid and multicloud posture management strategy.
 
-Server protection requires the most architectural decisions. Defender for Servers offers two plans:
+## Selection criteria for workload protection plans
 
-| Capability | Plan 1 | Plan 2 |
-|-----------|--------|--------|
-| Defender for Endpoint integration (EDR) | Yes | Yes |
-| Defender for Endpoint license included | Yes | Yes |
-| Vulnerability assessment (agent-based) | Yes | Yes |
-| Agentless scanning (vulnerabilities, secrets, malware) | No | Yes |
-| Just-in-time VM access | No | Yes |
-| File integrity monitoring | No | Yes |
-| OS configuration assessment (MCSB baselines) | No | Yes |
-| OS system updates assessment | No | Yes |
-| Defender for DNS alerts | No | Yes |
-| Premium Defender Vulnerability Management features | No | Yes |
+Use the following criteria when deciding which plans to enable and where:
 
-**Plan selection**: Choose Plan 1 for EDR integration and agent-based vulnerability scanning. Choose Plan 2 for agentless scanning, just-in-time access, file integrity monitoring, or premium vulnerability management features. Consider Plan 2 for production servers and Plan 1 for development environments.
+### Workload presence and environment scope
 
-**Coverage scope**: Enable at the subscription level to automatically protect all servers in that subscription. This is the simplest approach. Plan 1 allows you to selectively enable protection on individual VMs/servers rather than the whole subscription—useful when you only want to protect specific machines. Plan 2 can only be enabled at the subscription level—you can't pick and choose individual resources. For servers outside Azure (on-premises, AWS, GCP), you need to onboard them via Azure Arc first so Defender for Cloud can manage and protect them.
+Inventory the workload types across your Azure subscriptions, AWS accounts, GCP projects, and on-premises environments. Enable plans only where the corresponding workloads exist. For example, if a subscription contains no storage accounts, there's no reason to enable Defender for Storage on it.
 
-## Designing container protection
+For plans that support subscription-level enablement (most plans do), enabling at the subscription level automatically protects new resources of that type as they're deployed. This is the recommended approach for production subscriptions to avoid protection gaps.
 
-Container protection addresses security across five domains: posture management (agentless cluster discovery and configuration assessment), vulnerability assessment (image scanning in registries and running containers), runtime threat protection (60+ Kubernetes-aware analytics mapped to MITRE ATT&CK), software supply chain protection (gated deployment blocking risky images), and deployment monitoring.
+### Multicloud and hybrid reach
 
-**Design consideration**: Agentless capabilities provide discovery and vulnerability assessment without components. The Defender sensor (a DaemonSet on Kubernetes nodes) enables runtime threat protection. Plan sensor deployment alongside Arc onboarding for clusters outside Azure.
+Not all plans have equal reach across clouds. When selecting plans for a hybrid or multicloud environment, consider:
 
-## Designing database protection
+- **Cross-cloud plans**: Defender for Servers and Defender for Containers extend to AWS, GCP, and on-premises resources through Azure Arc and cloud connectors. These are critical selections for organizations with multicloud compute workloads.
+- **Azure-native plans**: Plans like Defender for Storage, Defender for App Service, Defender for Key Vault, and Defender for Resource Manager protect Azure-native services only. Select these based on your Azure workload footprint.
+- **Arc dependency**: Workloads outside Azure—on-premises servers, SQL Server instances, and Kubernetes clusters in other clouds—require Azure Arc onboarding before Defender for Cloud can protect them. Factor Arc deployment as a prerequisite when selecting plans for non-Azure workloads.
 
-Database protection monitors queries and access patterns without impacting performance.
+### Plans with tier choices
 
-**Defender for SQL** detects anomalous query patterns, SQL injection attacks, brute force attempts, and unusual access locations. Protection covers Azure SQL Database, SQL Managed Instance, and SQL Server virtual machines. For SQL Server outside Azure, deploy Azure Arc-enabled SQL Server for full integration.
+Some plans offer multiple tiers. Selection should align with the level of protection needed:
 
-**Defender for open-source relational databases** monitors PostgreSQL, MySQL, and MariaDB workloads. **Defender for Azure Cosmos DB** detects SQL injection, known malicious actors, and suspicious access patterns.
+- **Defender for Servers**: Plan 1 provides endpoint detection and response (EDR) through Microsoft Defender for Endpoint integration and agent-based vulnerability scanning. Plan 2 adds agentless scanning, just-in-time VM access, file integrity monitoring, and OS baseline assessment. A common approach is Plan 2 for production and Plan 1 for development.
+- **Defender CSPM versus Foundational CSPM**: While CSPM tiers were covered in the previous unit, your CSPM tier choice also affects workload protection—Defender CSPM's agentless scanning capabilities complement CWP plans by providing vulnerability discovery without additional agents.
 
-**Design consideration**: For SQL Server running on-premises or in other clouds, plan Azure Arc deployment as a prerequisite for Defender for SQL integration. Azure-native databases require no additional components.
+### Foundational versus workload-specific plans
 
-## Designing storage protection
+Some plans protect infrastructure that spans all workloads rather than targeting specific resource types:
 
-Defender for Storage provides activity monitoring (detecting unusual access patterns and data exfiltration), malware scanning (near real-time scanning of uploaded files), and sensitive data threat detection (monitoring for breach attempts on sensitive data).
+- **Defender for Resource Manager** monitors control plane operations for suspicious activity and persistence techniques across the entire Azure subscription.
+- **Defender for Key Vault** detects unusual access to secrets, keys, and certificates—compromised vaults can enable broader breaches across many workloads.
 
-**Design consideration**: Pricing is per storage account plus per-gigabyte for malware scanning. Configure scanning caps to control costs. Enable at subscription level to automatically cover new storage accounts.
+These plans operate at subscription level with minimal configuration overhead. Consider enabling them broadly across all production subscriptions as foundational controls, regardless of which workload-specific plans you select.
 
-## Designing application and infrastructure protection
+## Prioritizing plan enablement
 
-**Defender for App Service** monitors web applications for attacks including vulnerability scanning attempts, malicious IP connections, and suspicious execution patterns. Enable for all production web applications exposed to the internet.
+When budgets or operational capacity require phased rollout, prioritize plan selection using risk:
 
-**Defender for APIs** protects APIs in Azure API Management, identifying posture issues like unauthenticated endpoints and detecting suspicious usage patterns. Prioritize APIs handling sensitive data.
+| Priority | Selection criteria | Examples |
+|----------|-------------------|----------|
+| **High** | Workloads processing customer or regulated data; internet-facing resources; environments subject to compliance mandates | Production servers, customer-facing containers, databases with personal data, storage receiving external uploads |
+| **Medium** | Internal business workloads; shared infrastructure; environments with copies of production data | Internal applications, development environments with production data copies |
+| **Lower** | Isolated environments with test data or no sensitive data; temporary resources; workloads with existing protection | Test environments, ephemeral build agents, resources covered by separate tooling |
 
-**Defender for Key Vault** detects unusual access attempts to secrets, keys, and certificates. Compromised vaults can enable broader breaches.
+Use Defender for Cloud's coverage dashboard to visualize which subscriptions and resource types have protection plans enabled and identify gaps. This dashboard maps directly to your selection decisions and helps track plan rollout across your multicloud environment.
 
-**Defender for Resource Manager** monitors control plane operations for suspicious activity like persistence techniques or lateral movement. Both Key Vault and Resource Manager protection operate at subscription level with no additional configuration.
+## Integrating workload protection alerts into operations
 
-**Defender for AI Services** protects AI workloads, including Azure OpenAI Service and Microsoft Foundry, detecting prompt injection attacks and unusual usage patterns. Enable for subscriptions with AI deployments processing sensitive data.
+Selecting plans is only effective if the resulting alerts reach security operations teams:
 
-**Design consideration**: Key Vault and Resource Manager protection are foundational controls with minimal overhead - consider enabling these broadly across all production subscriptions. App Service, APIs, and AI Services protection should align with where those workloads exist.
+- **Unified incident management**: Defender for Cloud integrates with Microsoft Defender XDR, surfacing CWP alerts alongside endpoint, identity, and application alerts in a single incident queue.
+- **SIEM integration**: Export alerts to Microsoft Sentinel, Event Hubs, or Log Analytics for correlation with other security data sources across your hybrid environment.
+- **Workflow automation**: Configure Logic Apps to trigger automated responses—such as isolating a compromised VM or rotating credentials—based on specific alert types.
+- **Suppression rules**: Create rules for known false positives to reduce alert fatigue and keep security teams focused on genuine threats.
 
-## Prioritizing protection based on risk
-
-**High priority** - Enable full protection for:
-- Production servers processing customer data
-- Databases containing personal data
-- Customer-facing containers and applications
-- Storage accounts receiving external uploads
-- Workloads subject to compliance requirements
-
-**Medium priority**: Internal business applications, development environments with production data copies, shared infrastructure.
-
-**Lower priority**: Isolated test environments with synthetic data, temporary workloads, resources with existing protection tools.
-
-## Integration with security operations
-
-Your design must address how alerts flow to security operations:
-
-- **Alert routing**: Defender for Cloud integrates with Microsoft Defender XDR for unified incident management
-- **SIEM integration**: Export alerts to Microsoft Sentinel, Event Hubs, or Log Analytics
-- **Workflow automation**: Use Logic Apps for immediate responses like VM isolation or credential rotation
-- **Suppression rules**: Create rules for known false positives to reduce alert fatigue
-
-The combination of CSPM and workload protection creates defense in depth: posture management reduces attack surface by fixing misconfigurations, while workload protection detects and responds when attackers exploit remaining vulnerabilities.
+When designing alert routing, ensure coverage for alerts from all clouds. Workload protection alerts from AWS and GCP connectors flow through the same Defender for Cloud pipeline as Azure alerts, providing a single pane for multicloud threat detection.
