@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-ontology-with-fabric-iq.build-ontology-components-manually
+title: Build an ontology manually
+metadata:
+  title: Build an Ontology Manually
+  description: "Learn how to create entity types with properties and keys, and define relationship types between entities"
+  ms.date: 02/27/2026
+  author: theresa-i
+  ms.author: theresai
+  ms.topic: unit
+  ai-usage: ai-generated
+azureSandbox: false
+labModal: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-build-ontology-components-manually.md)]

@@ -15,7 +15,7 @@ abstract: |
   - Explain VM Insights and how to use it to monitor IaaS VM performance
   - Enable data collection rules to collect operating system and application logs
 prerequisites: ''
-iconUrl: /training/achievements/generic-badge.svg
+iconUrl: /training/achievements/azure-monitor-module.svg
 levels:
 - intermediate
 roles:

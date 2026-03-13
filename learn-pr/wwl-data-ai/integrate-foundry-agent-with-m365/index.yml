@@ -1,0 +1,48 @@
+### YamlMime:Module
+uid: learn.wwl.integrate-foundry-agent-with-m365
+metadata:
+  title: Integrate your agent with Microsoft 365
+  description: Learn how to publish Microsoft Foundry agents to Microsoft Teams and Microsoft 365 Copilot, access workplace data with Work IQ, and test your integrated agents.
+  author: ivorb
+  ms.author: berryivor
+  ms.date: 02/17/2026
+  ms.service: azure-ai-foundry
+  ms.topic: module-standard-task-based
+  ai-usage: ai-assisted
+title: Integrate your agent with Microsoft 365
+summary: Learn how to publish Microsoft Foundry agents to Microsoft Teams and Microsoft 365 Copilot, access workplace data with Work IQ, and test your integrated agents.
+abstract: |
+  By the end of this module, you'll be able to:
+  - Explain the options for publishing Foundry agents to Microsoft 365
+  - Publish an agent from the Foundry portal to Teams and Microsoft 365 Copilot
+  - Use Work IQ to access Microsoft 365 data in your agents
+  - Test and troubleshoot agents integrated with Microsoft 365
+prerequisites: |
+  - Familiarity with Azure and the Azure portal
+  - Experience building agents in Microsoft Foundry (recommended: [Develop AI agents with Microsoft Foundry and Visual Studio Code](/training/modules/develop-ai-agents-azure-vs-code/) module)
+  - A Microsoft 365 subscription with access to Teams
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+  - intermediate
+roles:
+  - ai-engineer
+  - developer
+  - solution-architect
+products:
+  - azure-ai-foundry
+  - azure-ai-foundry-agent-service
+  - microsoft-365-copilot
+subjects:
+  - artificial-intelligence
+units:
+- learn.wwl.integrate-foundry-agent-with-m365.introduction
+- learn.wwl.integrate-foundry-agent-with-m365.understand-publishing-options
+- learn.wwl.integrate-foundry-agent-with-m365.publish-agent-foundry-portal
+- learn.wwl.integrate-foundry-agent-with-m365.agents-toolkit-advanced
+- learn.wwl.integrate-foundry-agent-with-m365.access-m365-data-workiq
+- learn.wwl.integrate-foundry-agent-with-m365.test-iterate-agent
+- learn.wwl.integrate-foundry-agent-with-m365.exercise
+- learn.wwl.integrate-foundry-agent-with-m365.knowledge-check
+- learn.wwl.integrate-foundry-agent-with-m365.summary
+badge:
+  uid: learn.wwl.integrate-foundry-agent-with-m365.badge

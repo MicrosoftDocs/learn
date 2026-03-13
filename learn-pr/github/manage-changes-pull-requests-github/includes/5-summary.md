@@ -16,3 +16,7 @@ Now that you're familiar with merging commits using pull requests, learn to [Set
 - [Reviewing changes in pull requests](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/reviewing-changes-in-pull-requests?azure-portal=true)
 - [Incorporating changes from a pull request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/incorporating-changes-from-a-pull-request?azure-portal=true)
 - [About code owners](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/about-code-owners?azure-portal=true)
+
+## Provide feedback
+
+Use this [issue form](https://github.com/githubpartners/microsoft-learn/issues/new/choose) to provide content feedback or suggested changes for this Microsoft Learn module. GitHub maintains this content and a team member will triage the request. Thank you for taking the time to improve our content!

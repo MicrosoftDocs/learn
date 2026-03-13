@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-implement-intelligent-search-with-sql.implement-hybrid-search-ranking
+title: Implement hybrid search and ranking
+metadata:
+  title: Implement hybrid search and ranking
+  description: Learn how to implement hybrid search combining full-text and vector search, and use Reciprocal Rank Fusion for result ranking.
+  author: calopez
+  ms.author: calopez
+  ms.date: 02/03/2026
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/06-implement-hybrid-search-ranking.md)]

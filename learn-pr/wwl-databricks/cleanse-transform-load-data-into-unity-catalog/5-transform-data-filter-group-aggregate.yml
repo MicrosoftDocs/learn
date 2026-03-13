@@ -4,7 +4,7 @@ title: Transform data with filters and aggregations
 metadata:
   title: Transform Data With Filters and Aggregations
   description: Learn how to filter, group, and aggregate data in Azure Databricks using PySpark and SQL to transform raw data into meaningful summaries.
-  ms.date: 01/15/2026
+  ms.date: 02/17/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit

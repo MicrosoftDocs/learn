@@ -1,0 +1,60 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.run-training-scripts-track-models-mlflow.knowledge-check
+title: Module assessment
+metadata:
+  title: Module assessment
+  description: Knowledge check
+  author: wwlpublish
+  ms.author: madiepev
+  ms.date: 03/12/2026
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+  module_assessment: true
+durationInMinutes: 4
+quiz:
+  questions:
+  - content: "A data scientist wants to run a script as a command job to train a PyTorch model, setting the batch size and learning rate hyperparameters to specified values each time the job runs. What should be done by the data scientist?"
+    choices:
+    - content: "Create multiple script files – one for each batch size and learning rate combination you want to use."
+      isCorrect: false
+      explanation: "Incorrect. To use different values each time, define arguments in the script and pass them using the arguments parameter of the command job."
+    - content: "Set the batch size and learning rate properties of the command job before submitting the job."
+      isCorrect: false
+      explanation: "Incorrect. To use different values each time, define arguments in the script and pass them using the arguments parameter of the command job."
+    - content: "Add arguments for batch size and learning rate to the script, and set them in the command property of the command job."
+      isCorrect: true
+      explanation: "Correct. To use different values each time, define arguments in the script and pass them using the arguments parameter of the command job."
+  - content: "A data scientist has trained a model in a notebook. The model should be retrained every week on new data. What should the data scientist do to make the code production-ready?"
+    choices:
+    - content: "Copy and paste the code from each cell to a script."
+      isCorrect: false
+      explanation: "Incorrect. The code in a notebook is likely to contain nonessential exploratory code that should be omitted in a script."
+    - content: "Convert the code to one function in a script that reads the data and trains the model."
+      isCorrect: false
+      explanation: "Incorrect. A script will be easier to test and maintain by others when it exists of multiple functions."
+    - content: "Convert the code to multiple functions in a script that read the data and train the model."
+      isCorrect: true
+      explanation: "Correct. A script consisting of multiple functions is best to use for production workloads."
+  - content: "A data scientist trains a regression model and wants to track the model's performance by storing the Root Mean Squared Error (RMSE) with the experiment run. Which method can be used to log the RMSE?"
+    choices:
+    - content: "`mlflow.log_param()`"
+      isCorrect: false
+      explanation: "Incorrect. Use `mlflow.log_param()` to log an input parameter."
+    - content: "`mlflow.log_artifact()`"
+      isCorrect: false
+      explanation: "Incorrect. Use `mlflow.artifact()` to log plots and images."
+    - content: "`mlflow.log_metric()`"
+      isCorrect: true
+      explanation: "Correct. Use `mlflow.log_metric()` to log a metric like the RMSE."
+  - content: "When a data scientist enables MLflow autologging, where can all model assets be found?"
+    choices:
+    - content: "In the model folder under **Outputs + logs**."
+      isCorrect: true
+      explanation: "Correct. Model assets like the model pickle file will be stored in the model folder under Outputs + logs."
+    - content: "In the outputs folder under **Outputs + logs**."
+      isCorrect: false
+      explanation: "Incorrect. When the data scientist enables autologging, the model assets won't be stored in the outputs folder."
+    - content: "In the model folder under **Metrics**."
+      isCorrect: false
+      explanation: "Incorrect. Artifacts like the model assets aren't stored under Metrics."

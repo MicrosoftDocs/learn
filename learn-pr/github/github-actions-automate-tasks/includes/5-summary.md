@@ -31,3 +31,7 @@ Here are some links to more information on the topics we discussed in this modul
 - [Disabling and enabling a workflow](https://docs.github.com/actions/managing-workflow-runs/disabling-and-enabling-a-workflow)
 - [Sharing workflows, secrets, and runners with your organization](https://docs.github.com/en/actions/how-tos/reuse-automations/share-with-your-organization)
 - [Scheduled events](https://docs.github.com/actions/using-workflows/events-that-trigger-workflows#schedule)
+
+## Provide feedback
+
+Use this [issue form](https://github.com/githubpartners/microsoft-learn/issues/new/choose) to provide content feedback or suggested changes for this Microsoft Learn module. GitHub maintains this content and a team member will triage the request. Thank you for taking the time to improve our content!

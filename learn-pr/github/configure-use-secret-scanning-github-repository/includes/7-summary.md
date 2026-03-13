@@ -36,3 +36,8 @@ With secret scanning in GitHub, you can find exposed secrets early and act quick
 * [Defining Custom Patterns for Secret Scanning](https://docs.github.com/code-security/secret-scanning/defining-custom-patterns-for-secret-scanning)—How to scan for custom or organization-specific secrets.
 * [Supported Secret Scanning Patterns](https://docs.github.com/code-security/secret-scanning/introduction/supported-secret-scanning-patterns)—Patterns GitHub can detect by default.
 * [Granting Access to Security Alerts](https://docs.github.com/repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/managing-security-and-analysis-settings-for-your-repository#granting-access-to-security-alerts)—How to give the right people access to review and resolve security alerts.
+
+## Provide feedback
+
+Use this [issue form](https://github.com/githubpartners/microsoft-learn/issues/new/choose) to provide content feedback or suggested changes for this Microsoft Learn module. GitHub maintains this content and a team member will triage the request. Thank you for taking the time to improve our content!
+

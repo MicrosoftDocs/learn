@@ -5,4 +5,4 @@ If you have an Azure subscription, you can complete this exercise to develop a v
 
 Launch the exercise and follow the instructions.
 
-[![Button to launch exercise.](../media/launch-exercise.png)](https://go.microsoft.com/fwlink/?linkid=2318613&azure-portal=true)
+[![Button to launch exercise.](../media/launch-exercise.png)](https://go.microsoft.com/fwlink/?linkid=2356207&azure-portal=true)

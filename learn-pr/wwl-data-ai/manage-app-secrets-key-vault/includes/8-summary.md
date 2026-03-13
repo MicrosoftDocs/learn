@@ -1,0 +1,8 @@
+In this module, you learned how Azure Key Vault provides centralized, secure storage for the secrets, keys, and certificates that AI applications depend on. You explored the three object types that Key Vault stores and how to organize vaults with per-application boundaries, descriptive naming conventions, and tags for metadata. You also learned how Azure RBAC controls access through fine-grained roles such as Key Vault Secrets User and Key Vault Secrets Officer, and how managed identities eliminate the need to store vault credentials in application code. You retrieved secrets programmatically using the Python `azure-keyvault-secrets` SDK with `DefaultAzureCredential`, which chains multiple authentication methods to work seamlessly across development and production environments. You examined Key Vault's versioning model, where each `set_secret()` call creates a new version, and explored rotation strategies including manual rotation, automated rotation with Event Grid, and dual-credential rotation for services that support two active keys. You implemented a retry-on-auth-failure pattern that enables zero-downtime credential transitions. Finally, you built caching strategies that reduce Key Vault API calls from thousands per hour to a handful of periodic refreshes, using time-based in-memory caching and event-driven invalidation through Event Grid to balance performance with credential freshness.
+
+## Additional resources
+
+- [Azure Key Vault documentation](/azure/key-vault/)
+- [Azure Key Vault secrets client library for Python](/python/api/overview/azure/keyvault-secrets-readme)
+- [Best practices for using Azure Key Vault](/azure/key-vault/general/best-practices)
+- [Automate secret rotation](/azure/key-vault/secrets/tutorial-rotation-dual)

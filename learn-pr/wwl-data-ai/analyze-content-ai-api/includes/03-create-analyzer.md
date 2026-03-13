@@ -1,4 +1,4 @@
-In most scenarios, you should consider creating and testing analyzers using the visual interface in the Microsoft Foundry portal. However, in some cases you might want to create an analyzer by submitting a JSON definition of the schema for your desired content fields to the REST API.
+In most scenarios, you should consider creating and testing analyzers using the visual interface in Content Understanding Studio. However, in some cases you might want to create an analyzer by submitting a JSON definition of the schema for your desired content fields to the API.
 
 ## Defining a schema for an analyzer
 
@@ -7,7 +7,7 @@ Analyzers are based on schemas that define the fields you want to extract or gen
 ```json
 {
     "description": "Simple business card",
-    "baseAnalyzerId": "prebuilt-documentAnalyzer",
+    "baseAnalyzerId": "prebuilt-document",
     "config": {
         "returnDetails": true
     },
@@ -24,28 +24,77 @@ Analyzers are based on schemas that define the fields you want to extract or gen
                 "description": "Email address on business card"
             }
         }
+    },
+    "models": {
+        "completion": "gpt-4.1",
+        "embedding": "text-embedding-3-large"
     }
 }
 ```
 
-This example of a custom analyzer schema is based on the pre-built *document* analyzer, and describes two fields that you would expect to find on a business card: *ContactName* and *EmailAddress*. Both fields are defined as string data types, and are expected to be *extracted* from a document (in other words, the string values are expected to exist in the document so they can be "read"; rather than being fields that can be *generated* by inferring information about the document).
+This example of a custom analyzer schema is based on the pre-built *document* analyzer, and describes two fields that you would expect to find on a business card: *ContactName* and *EmailAddress*. Both fields are defined as string data types, and are expected to be *extracted* from a document (in other words, the string values are expected to exist in the document so they can be "read"; rather than being fields that can be *generated* by inferring information about the document). The `models` object specifies the generative models that the analyzer uses for processing.
 
 > [!NOTE]
-> This example is deliberately simple, with the minimal information needed to create a working analyzer. In reality, the schema would likely include more fields of different types, and the analyzer definition would include more configuration settings. The JSON might even include a sample document. See the [Azure Content Understanding REST API documentation](/rest/api/contentunderstanding/content-analyzers/create-or-replace) for more details.
+> This example is deliberately simple, with the minimal information needed to create a working analyzer. In reality, the schema would likely include more fields of different types, and the analyzer definition would include more configuration settings. The JSON might even include a sample document. See the [Azure Content Understanding API documentation](/rest/api/contentunderstanding/content-analyzers/create-or-replace) for more details.
+
+## Using the Python SDK to create an analyzer
+
+With your analyzer definition in place, you can use the Python SDK to create the analyzer. The `ContentUnderstandingClient` class provides a `begin_create_analyzer` method that handles the asynchronous creation process for you.
+
+```python
+from azure.ai.contentunderstanding import ContentUnderstandingClient
+from azure.core.credentials import AzureKeyCredential
+
+# Authenticate the client
+endpoint = "<YOUR_ENDPOINT>"
+credential = AzureKeyCredential("<YOUR_API_KEY>")
+client = ContentUnderstandingClient(endpoint=endpoint, credential=credential)
+
+# Define the analyzer
+analyzer_name = "business_card_analyser"
+analyzer_definition = {
+    "description": "Simple business card",
+    "baseAnalyzerId": "prebuilt-document",
+    "config": {"returnDetails": True},
+    "fieldSchema": {
+        "fields": {
+            "ContactName": {
+                "type": "string",
+                "method": "extract",
+                "description": "Name on business card"
+            },
+            "EmailAddress": {
+                "type": "string",
+                "method": "extract",
+                "description": "Email address on business card"
+            }
+        }
+    },
+    "models": {
+        "completion": "gpt-4.1",
+        "embedding": "text-embedding-3-large"
+    }
+}
+
+# Create the analyzer and wait for completion
+poller = client.begin_create_analyzer(analyzer_name, body=analyzer_definition)
+result = poller.result()
+print(f"Analyzer created: {result.analyzer_id}")
+```
 
 ## Using the REST API to create an analyzer
 
-With your analyzer definition in place, you can use the REST API to submit it to Azure Content Understanding to be created. The JSON data is submitted as a `PUT` request to the endpoint with the API key in the request header to start the analyzer creation operation. 
+Alternatively, you can use the REST API directly. The JSON data is submitted as a `PUT` request to the endpoint with the API key in the request header to start the analyzer creation operation. 
 
 The response from the `PUT` request includes a **Operation-Location** in the header, which provides a *callback* URL that you can use to check on the status of the request by submitting a `GET` request.
 
-You can use any HTTP-capable client tool or language to submit the request. For example, the following Python code submits a request to create an analyzer based on the contents of a file named *card.json* (which is assumed to contain the JSON definition described previously)
+The following Python code submits a request to create an analyzer based on the contents of a file named *card.json* (which is assumed to contain the JSON definition described previously):
 
 ```python
 import json
 import requests
 
-# Get the buisness card schema
+# Get the business card schema
 with open("card.json", "r") as file:
     schema_json = json.load(file)
 
@@ -56,7 +105,7 @@ headers = {
     "Ocp-Apim-Subscription-Key": "<YOUR_API_KEY>",
     "Content-Type": "application/json"}
 
-url = f"{<YOUR_ENDPOINT>}/contentunderstanding/analyzers/{analyzer_name}?api-version=2025-05-01-preview"
+url = f"{<YOUR_ENDPOINT>}/contentunderstanding/analyzers/{analyzer_name}?api-version=2025-11-01"
 
 response = requests.put(url, headers=headers, data=json.dumps(schema_json))
 

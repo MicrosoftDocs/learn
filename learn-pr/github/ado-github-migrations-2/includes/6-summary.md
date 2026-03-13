@@ -26,3 +26,8 @@ Here are additional resources to deepen your migration expertise:
 - [GitHub CLI ADO2GH extension documentation](https://github.com/github/gh-ado2gh)
 - [Repository governance and rulesets best practices](https://docs.github.com/repositories/configuring-branches-and-merges-in-your-repository/managing-rulesets)
 - [Enterprise Managed Users documentation](https://docs.github.com/enterprise-cloud@latest/admin/identity-and-access-management/using-enterprise-managed-users-for-iam)
+
+## Provide feedback
+
+Use this [issue form](https://github.com/githubpartners/microsoft-learn/issues/new/choose) to provide content feedback or suggested changes for this Microsoft Learn module. GitHub maintains this content and a team member will triage the request. Thank you for taking the time to improve our content!
+

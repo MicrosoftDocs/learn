@@ -28,19 +28,7 @@ The framework includes several core features that power agent functionality:
 
 - **Conversation management**
 
-    Agents can maintain conversation history across multiple interactions using `AgentThread`, allowing them to track previous interactions and adapt responses accordingly. The structured message system uses roles (USER, ASSISTANT, SYSTEM, TOOL) for persistent conversation context.
-
-### Types of agents
-
-The Microsoft Agent Framework supports several different types of agents from multiple providers:
-
-- **Microsoft Foundry Agent** - a specialized agent within the Microsoft Agent Framework designed to provide enterprise-grade conversational capabilities with seamless tool integration. It automatically handles tool calling and securely manages conversation history using threads, reducing the overhead of maintaining state. Microsoft Foundry Agents support built-in tools and provide integration capabilities for Azure AI Search, Azure Functions, and other Azure services.
-
-- **ChatAgent**: designed for general conversation and task completion interfaces. The `ChatAgent` type provides natural language processing, contextual understanding, and dialogue management with support for custom tools and instructions.
-
-- **OpenAI Assistant Agent**: designed for advanced capabilities using OpenAI's Assistant API. This agent type supports goal-driven interactions with features like code interpretation and file search through the OpenAI platform.
-
-- **Anthropic Agent**: provides access to Anthropic's Claude models with the framework's unified interface, supporting advanced reasoning and conversation capabilities.
+    Agents can maintain conversation history across multiple interactions using `AgentSession`, allowing them to track previous interactions and adapt responses accordingly. The structured message system uses roles (USER, ASSISTANT, SYSTEM, TOOL) for persistent conversation context.
 
 ## Why you should use the Microsoft Agent Framework
 

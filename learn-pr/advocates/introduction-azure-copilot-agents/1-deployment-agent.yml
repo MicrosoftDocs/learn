@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-azure-copilot-agents.deployment-agent
+title: Deployment agent
+metadata:
+  title: Deployment Agent
+  description: Understand how to use the Deployment Agent to automate and streamline your Azure resource deployments, ensuring consistency and efficiency in your operations tasks.
+  ms.date: 02/13/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/1-deployment-agent.md)]

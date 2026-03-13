@@ -25,7 +25,7 @@ prerequisites: |
   -   Knowledge of Azure container services, including Azure Container Registry and Azure Container Apps, would be beneficial.
   -   Understanding of continuous integration and continuous deployment (CI/CD) concepts.
   -   Experience with Azure DevOps or other CI/CD tools.
-iconUrl: /training/achievements/generic-badge.svg
+iconUrl: /training/achievements/azure-container-apps-module.svg
 levels:
 - intermediate
 roles:
@@ -45,4 +45,4 @@ units:
 - learn.wwl.configure-continuous-deployment-container-apps.summary
 badge:
   uid: learn.wwl.configure-continuous-deployment-container-apps.badge
-
+

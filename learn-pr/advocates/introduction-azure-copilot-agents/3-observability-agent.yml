@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-azure-copilot-agents.observability-agent
+title: Observability agent
+metadata:
+  title: Observability Agent
+  description: Understand how to use the Observability Agent to automate and streamline your Azure resource monitoring and diagnostics, ensuring consistency and efficiency in your operations tasks.
+  ms.date: 02/13/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 12
+content: |
+  [!include[](includes/3-observability-agent.md)]

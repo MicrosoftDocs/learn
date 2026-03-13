@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-started-with-text-analysis-in-azure.azure-language
+title: Azure Language
+metadata:
+  title: Azure Language
+  description: "Understand text analysis capabilities in Azure Language and the Foundry Language Playground."
+  ms.date: 02/10/2026
+  author: wwlpublish
+  ms.author: sheryang
+  ms.topic: unit
+  zone_pivot_groups: video-or-text
+durationInMinutes: 5
+content: |
+  [!include[](includes/2-azure-language.md)]

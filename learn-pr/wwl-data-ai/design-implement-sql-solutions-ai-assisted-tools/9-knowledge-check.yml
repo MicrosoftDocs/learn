@@ -1,0 +1,91 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-implement-sql-solutions-ai-assisted-tools.knowledge-check
+title: Module assessment
+metadata:
+  ai_generated_module_assessment: true
+  title: Module assessment
+  description: Knowledge check for designing and implementing SQL solutions using AI-assisted tools
+  ms.date: 02/02/2026
+  author: JulianePadrao
+  ms.author: jupadrao
+  ms.topic: unit
+  module_assessment: false
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+quiz:
+  questions:
+  - content: "A database developer wants to use AI assistance while writing T-SQL in SQL Server Management Studio. Which tool should they install?"
+    choices:
+    - content: "Fabric Copilot extension"
+      isCorrect: false
+      explanation: "Incorrect. Fabric Copilot is available within Microsoft Fabric workspaces, not SSMS. For SSMS, you need GitHub Copilot."
+    - content: "GitHub Copilot through the AI Assistance workload"
+      isCorrect: true
+      explanation: "Correct. GitHub Copilot is installed in SSMS 22+ through the Visual Studio Installer by selecting the AI Assistance workload."
+    - content: "Azure OpenAI extension"
+      isCorrect: false
+      explanation: "Incorrect. While Azure OpenAI powers some AI features, SSMS uses GitHub Copilot, which is installed through the AI Assistance workload."
+    - content: "SQL IntelliSense extension"
+      isCorrect: false
+      explanation: "Incorrect. IntelliSense provides code completion but isn't an AI assistant. GitHub Copilot provides AI-powered assistance in SSMS."
+
+  - content: "What security practice should you follow when using AI-assisted tools with database credentials?"
+    choices:
+    - content: "Store credentials in instruction files so Copilot can access them"
+      isCorrect: false
+      explanation: "Incorrect. Never store credentials in instruction files or any files that AI tools can access. Use environment variables instead."
+    - content: "Include connection strings in prompts for accurate suggestions"
+      isCorrect: false
+      explanation: "Incorrect. Never paste credentials or connection strings with passwords into AI prompts. This exposes sensitive information."
+    - content: "Use environment variables and never paste credentials into prompts"
+      isCorrect: true
+      explanation: "Correct. Store credentials in environment variables and never include actual passwords or secrets in prompts or files visible to AI assistants."
+    - content: "Grant AI tools full database access for better context"
+      isCorrect: false
+      explanation: "Incorrect. Follow the principle of least privilege. AI tools typically only need read-only schema access, not full database permissions."
+
+  - content: "What does Model Context Protocol (MCP) enable AI assistants to do?"
+    choices:
+    - content: "Generate code faster by using more powerful models"
+      isCorrect: false
+      explanation: "Incorrect. MCP doesn't change the AI model's speed or power. It provides context by connecting to external data sources."
+    - content: "Connect directly to data sources for real-time schema and metadata access"
+      isCorrect: true
+      explanation: "Correct. MCP allows AI assistants to query your actual database schema, metadata, and sample data to provide more accurate, contextual suggestions."
+    - content: "Encrypt communications between the IDE and AI service"
+      isCorrect: false
+      explanation: "Incorrect. While security is important, MCP's primary purpose is enabling AI assistants to access external data sources, not encryption."
+    - content: "Store AI conversations for later reference"
+      isCorrect: false
+      explanation: "Incorrect. MCP is about connecting to data sources for context, not storing conversation history."
+
+  - content: "Where should you place a copilot-instructions.md file to apply custom instructions to a repository?"
+    choices:
+    - content: "In the repository root folder"
+      isCorrect: false
+      explanation: "Incorrect. The instruction file should be in the GitHub configuration folder at the repository root, not directly in the root folder."
+    - content: "In the VS Code configuration folder"
+      isCorrect: false
+      explanation: "Incorrect. The VS Code folder is for workspace settings and MCP configuration. Copilot instructions go in the GitHub configuration folder."
+    - content: "In the GitHub configuration folder at the repository root"
+      isCorrect: true
+      explanation: "Correct. The copilot-instructions.md file should be placed in the GitHub configuration folder at your repository root to apply instructions to all repository users."
+    - content: "In the user's home directory"
+      isCorrect: false
+      explanation: "Incorrect. User-level settings are separate from repository instructions. Repository-wide instructions go in the GitHub configuration folder."
+
+  - content: "A team wants to connect their AI assistant to a Fabric Lakehouse. What should they configure?"
+    choices:
+    - content: "Install the MSSQL extension and connect directly"
+      isCorrect: false
+      explanation: "Incorrect. While the MSSQL extension works for SQL databases, Fabric Lakehouse requires publishing a data agent as an MCP server or using the Fabric MCP Server extension."
+    - content: "Publish a Fabric data agent as an MCP server and connect using the MCP endpoint URL"
+      isCorrect: true
+      explanation: "Correct. Fabric data agents can be published as MCP servers. Copy the MCP server URL from the agent's settings and configure it in your mcp.json file."
+    - content: "Use Azure Blob Storage connection strings"
+      isCorrect: false
+      explanation: "Incorrect. Fabric Lakehouse uses MCP servers, not direct blob storage connections, for AI assistant integration."
+    - content: "Configure GitHub Actions to sync with Fabric"
+      isCorrect: false
+      explanation: "Incorrect. GitHub Actions are for CI/CD workflows, not for connecting AI assistants to Fabric Lakehouse. Use MCP servers instead."

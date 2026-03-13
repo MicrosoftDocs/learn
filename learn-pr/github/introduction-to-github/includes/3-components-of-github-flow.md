@@ -84,9 +84,11 @@ Now that we know the basics of GitHub we can walk through the GitHub flow and it
 
 ## Git flow
 
-:::image type="content" source="../media/2-git-flow-image.png" alt-text="Diagram illustrating the Git flow workflow with parallel lanes for feature branches, develop, release branches, hotfixes, and master. It shows how features are merged into develop, release branches are created from develop, hotfixes are branched from master, and all changes are eventually merged back into master and develop with tagged versions." border="false":::
-
 While GitHub Flow is a lightweight workflow designed for continuous delivery, **Git flow** is a more structured branching model often used in release-driven environments. Git flow has been around longer than GitHub Flow, and you may still see the term **`master`** used instead of **`main`** as the default branch.
+
+:::image type="content" source="../media/nvie-git-flow.png" alt-text="Nvie's diagram of a Git branching model showing feature branches, a develop branch, release branches, hotfixes, and the master branch over time. Colored commit nodes and arrows illustrate how features are merged into develop, how release branches are created for version 1.0, how bug fixes flow back into develop, and how hotfixes are applied directly to master. Tags mark releases 0.1, 0.2, and 1.0." border="false":::
+
+*Image by Vincent Driessen, from ['A successful Git branching model'](https://nvie.com/posts/a-successful-git-branching-model/)*
 
 ### Git flow Branch Types
 

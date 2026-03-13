@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-started-with-speech-in-azure.exercise
+title: Exercise - Get started with speech in Microsoft Foundry
+metadata:
+  title: Exercise - Get started with speech in Microsoft Foundry
+  description: "Exercise - Get started with speech in Microsoft Foundry"
+  ms.date: 02/13/2026
+  author: sherzyang
+  ms.author: sheryang
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 25
+content: |
+  [!include[](includes/5-exercise.md)]

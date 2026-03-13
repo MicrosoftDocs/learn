@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.evaluate-optimize-agents.evaluate-agent-responses
+metadata:
+  title: Use evaluation rubrics for consistent scoring
+  description: Learn how to create detailed evaluation rubrics, train human evaluators through calibration exercises, and maintain inter-rater reliability for consistent agent quality assessment.
+  ms.date: 02/17/2026
+  author: madiepev
+  ms.author: madiepev
+  ms.topic: unit
+  ai-usage: ai-generated
+title: Apply evaluation rubrics for consistent scoring
+durationInMinutes: 7
+content: |
+  [!include[](includes/4-evaluate-agent-responses.md)]

@@ -19,8 +19,6 @@ Now that you've finished this module, you should be able to:
 - [GitHub Copilot Features page](https://github.com/features/copilot)
 - [GitHub Copilot Enterprise Announcement at GitHub Universe](https://github.blog/2023-11-08-universe-2023-copilot-transforms-github-into-the-ai-powered-developer-platform/)
 
-## How to provide feedback
+## Provide feedback
 
-Let us know if you have [content feedback or suggested changes for this Microsoft Learn module](https://github.com/githubpartners/microsoft-learn/issues/new/choose). GitHub maintains this content and a team member triages all requests.
-
-Thank you for taking the time to improve our content!
+Use this [issue form](https://github.com/githubpartners/microsoft-learn/issues/new/choose) to provide content feedback or suggested changes for this Microsoft Learn module. GitHub maintains this content and a team member will triage the request. Thank you for taking the time to improve our content!

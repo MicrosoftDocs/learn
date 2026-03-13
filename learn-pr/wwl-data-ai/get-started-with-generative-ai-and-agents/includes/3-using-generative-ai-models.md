@@ -21,13 +21,13 @@ Several *model arguments* or *parameters* influence runtime behavior, performanc
 - **Max output tokens** – caps response length; affects token consumption and throttling behavior.
 - **System instructions** – sets behavior and role of the model.
 
-Unlike the user prompt, which is the end-user request or question (example: Where should I travel?), a **System prompt** sets behavior, tone, tools, and guardrails for the assistant. An example of a system prompt is: "You are a helpful, step‑by‑step tutor. Cite sources. Decline medical advice." 
+Unlike the user prompt, which is the end-user request or question (example: Where should I travel?), a **System prompt** sets behavior, tone, tools, and guardrails for the assistant. An example of a system prompt is: "You are a helpful, step‑by‑step tutor. Cite sources. Decline medical advice."
 
-The playground is a useful bridge between Foundry and code. After you test representative prompts, you can use the same system and user prompts and parameter values in your code. The playground provides code that can call your Foundry deployment via the OpenAI‑compatible *Responses* API. The code is essentially what is running when you use the chat interface to configure settings and send user prompts. 
+The playground is a useful bridge between Foundry and code. After you test representative prompts, you can use the same system and user prompts and parameter values in your code. The playground provides code that can call your Foundry deployment via the OpenAI‑compatible *Responses* API. The code is essentially what is running when you use the chat interface to configure settings and send user prompts.
 
 ![Screenshot of code example in Foundry portal that is based in the playground.](../media/chat-code-example.png)
 
-You can take the code as a starting point for creating your own chat client. 
+You can take the code as a starting point for creating your own chat client.
 
 ## Create a lightweight chat client by using the Foundry SDK
 
@@ -38,14 +38,11 @@ A **lightweight client application** is a small, minimal app whose primary job i
 - Has a **small code footprint** and minimal configuration (often just environment variables + a short script).
 - Is easy to prototype, easy to run locally, and easy to extend later.
 
-For Foundry, a lightweight chat client is often a **single Python file** that connects to a Foundry project endpoint and sends chat messages to a deployed model. The Foundry SDK exposes a **Project client** (Foundry‑native ops) and an **OpenAI‑compatible client** for calling models via the **Responses API**. Most apps use both. 
+For Foundry, a lightweight chat client is often a **single Python file** that connects to a Foundry project endpoint and sends chat messages to a deployed model. The Foundry SDK exposes a **Project client** (Foundry‑native ops) and an **OpenAI‑compatible client** for calling models via the **Responses API**. Most apps use both.
 
 #### Build a Python chat client
 
-After you created a **Foundry project** and **deployed a chat model** (for example, `gpt-4.1`), you can use the Foundry SDK. In the example, the client application uses authentication to connect to the endpoint for the model, submit a prompt, and display the response. 
-
->[!NOTE]
->In order to use the SDK, you need to install the `azure-ai-projects` package. The package is the core Azure AI Projects (Foundry) SDK used to connect to your Foundry project and obtain an OpenAI-compatible client.
+After you created a **Foundry project** and **deployed a chat model** (for example, `gpt-4.1`), you can use the Foundry SDK. In the example, the client application uses authentication to connect to the endpoint for the model, submit a prompt, and display the response.
 
 ```python
 # pip install openai>=1.3.0
@@ -77,7 +74,8 @@ In Microsoft Foundry, **generative AI models** and **agents** are related but se
 - **Models = raw intelligence**
 - **Agents = packaged, task‑oriented workers built on top of that intelligence**
 
-When you use a generative AI model on its own: 
+When you use a generative AI model on its own:
+
 - You want pure inference: "Take this prompt and generate output."
 - You’re experimenting in the Playground
 - You call the model via the **OpenAI Responses API**

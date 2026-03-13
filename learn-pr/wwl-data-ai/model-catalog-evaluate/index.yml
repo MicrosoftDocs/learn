@@ -1,0 +1,47 @@
+### YamlMime:Module
+uid: learn.wwl.model-catalog-evaluate
+metadata:
+  title: Select, deploy, and evaluate models from the catalog in Microsoft Foundry portal
+  description: Explore how to select appropriate models from the model catalog using benchmarks, deploy them to endpoints, and evaluate their performance using manual and automated approaches in Microsoft Foundry portal.
+  ms.date: 02/13/2026
+  author: ivorb
+  ms.author: berryivor
+  ms.topic: module-standard-task-based
+  ai-usage: ai-assisted
+  ms.service: azure-ai-foundry
+  ms.custom: ai-learning-hub
+title: Select, deploy, and evaluate models from the catalog in Microsoft Foundry portal
+summary: Explore how to select appropriate models from the model catalog using benchmarks, deploy them to endpoints, and evaluate their performance using manual and automated approaches in Microsoft Foundry portal.
+abstract: |
+  By the end of this module, you'll be able to:
+    - Explore and filter models in the model catalog
+    - Compare models using benchmark metrics for quality, safety, cost, and performance
+    - Deploy a model to an endpoint and test it in the playground
+    - Evaluate model performance using manual and automated approaches
+    - Understand different evaluation metrics and when to use them
+prerequisites: |
+  Before starting this module, you should be familiar with fundamental AI concepts and services in Azure.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+  - intermediate
+roles:
+  - data-scientist
+  - ai-engineer
+products:
+  - azure-ai-foundry
+subjects:
+  - cloud-computing
+  - artificial-intelligence
+  - machine-learning
+  - natural-language-processing
+units:
+- learn.wwl.model-catalog-evaluate.introduction
+- learn.wwl.model-catalog-evaluate.explore-model-catalog
+- learn.wwl.model-catalog-evaluate.select-models-benchmarks
+- learn.wwl.model-catalog-evaluate.deploy-models
+- learn.wwl.model-catalog-evaluate.evaluate-performance
+- learn.wwl.model-catalog-evaluate.exercise
+- learn.wwl.model-catalog-evaluate.knowledge-check
+- learn.wwl.model-catalog-evaluate.summary
+badge:
+  uid: learn.wwl.model-catalog-evaluate.badge

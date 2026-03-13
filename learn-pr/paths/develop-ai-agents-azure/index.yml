@@ -1,11 +1,10 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.develop-ai-agents-azure
-hidden: true
 metadata:
   title: Develop AI Agents on Azure 
   description: Learn how to develop AI agents on Azure using the Microsoft Foundry Agent Service and Microsoft Agent Framework. AI-3026
-  ms.date: 02/12/2026
-  author: wwlpublish
+  ms.date: 02/18/2026
+  author: ivorb
   ms.author: berryivor
   ms.topic: learning-path
   ms.collection: wwl-ai-copilot
@@ -21,9 +20,7 @@ roles:
 - ai-engineer
 products:
 - ai-services
-- azure-ai-foundry
-- azure-ai-foundry-agent-service
-- azure-ai-foundry-sdk
+- microsoft-foundry
 subjects:
 - artificial-intelligence
 - machine-learning
@@ -33,8 +30,8 @@ modules:
 - learn.wwl.build-agent-with-custom-tools
 - learn.wwl.connect-agent-to-mcp-tools
 - learn.wwl.introduction-foundry-iq
+- learn.wwl.integrate-foundry-agent-with-m365
 - learn.wwl.build-agent-workflows-microsoft-foundry
-- learn.wwl.develop-multi-agent-azure-ai-foundry
 - learn.wwl.develop-ai-agent-with-semantic-kernel
 - learn.wwl.orchestrate-sk-multi-agent-solution
 - learn.wwl.discover-agents-with-a2a

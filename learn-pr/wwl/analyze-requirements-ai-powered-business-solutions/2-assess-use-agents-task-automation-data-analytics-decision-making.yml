@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.analyze-requirements-ai-powered-business-solutions.assess-use-agents-task-automation-data-analytics-decision-making
+title: "Assess the use of agents in task automation, data analytics, and decision-making"
+metadata:
+  title: "Assess the Use of Agents in Task Automation, Data Analytics, and Decision-Making"
+  description: "Learn how AI agents automate tasks, analyze data, and support decision-making. Explore Microsoft Copilot and generative AI for enterprise productivity."
+  ms.date: 02/04/2026
+  author: Randall-Knapp
+  ms.author: taeldin
+  ms.topic: unit
+  ai-usage: ai-assisted
+durationInMinutes: 5
+content: |
+  [!include[](includes/2-assess-use-agents-task-automation-data-analytics-decision-making.md)]

@@ -24,7 +24,7 @@ abstract: |
 
   -   Apply dynamic masking and Transparent Database Encryption, and recommend Always Encrypted for client-side data protection.
 prerequisites: '-   None'
-iconUrl: /training/achievements/generic-badge.svg
+iconUrl: /training/achievements/azure-sql-database-module.svg
 levels:
 - intermediate
 roles:
