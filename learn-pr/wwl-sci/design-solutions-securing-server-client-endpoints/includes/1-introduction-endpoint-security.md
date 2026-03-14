@@ -22,4 +22,3 @@ By the end of this module, you're able to:
 - Experience with hybrid and cloud implementations
 - Familiarity with Microsoft Defender for Cloud and Microsoft Defender for Endpoint
 
-The content in this module helps you prepare for the SC-100: Microsoft Cybersecurity Architect certification exam.

@@ -22,14 +22,14 @@ The [Microsoft Cloud Security Benchmark (MCSB) v2 (preview)](/security/benchmark
 
 The Endpoint Security (ES) domain is organized into two pillars:
 
-**Cloud endpoint threat protection** — Deploy comprehensive threat detection and response capabilities for servers, including behavioral analysis and extended detection and response (XDR) integration:
+**Cloud endpoint threat protection—Deploy comprehensive threat detection and response capabilities for servers, including behavioral analysis and extended detection and response (XDR) integration:
 
 | Control | Requirement | Implementation guidance |
 | --- | --- | --- |
 | ES-1 | Use Endpoint Detection and Response (EDR) | Deploy EDR solutions like Microsoft Defender for Endpoint to detect, investigate, and respond to advanced threats on servers. Includes subcontrols for EDR deployment (ES-1.1), XDR integration (ES-1.2), and EDR automation (ES-1.3). |
 | ES-2 | Use modern anti-malware software | Require anti-malware solutions that provide real-time protection, behavior monitoring, and integration with cloud-based threat intelligence |
 
-**Cloud endpoint security configuration** — Enforce security baselines and hardening standards across all servers:
+**Cloud endpoint security configuration—Enforce security baselines and hardening standards across all servers:
 
 | Control | Requirement | Implementation guidance |
 | --- | --- | --- |
@@ -55,7 +55,7 @@ Windows Server environments require specific attention to:
 
 Linux security requirements vary by distribution but should address:
 
-- **Microsoft Defender for Endpoint on Linux**: Require Defender for Endpoint for real-time antimalware protection, EDR capabilities, and vulnerability assessment on supported Linux distributions
+- **Microsoft Defender for Endpoint on Linux**: Require Defender for Endpoint for real-time anti-malware protection, EDR capabilities, and vulnerability assessment on supported Linux distributions
 - **SSH hardening**: Require key-based authentication, disable root sign-in, and limit SSH access to specific users or groups
 - **SELinux or AppArmor**: Specify mandatory access control requirements based on your distribution (SELinux for RHEL-based distributions, AppArmor for Ubuntu/SUSE)
 - **Firewall configuration**: Require firewall or iptables rules that implement least-privilege network access
@@ -82,7 +82,7 @@ For Azure-hosted servers, use platform capabilities in your requirements:
 
 For servers in AWS or GCP, specify how to integrate with your security management:
 
-- **Azure Arc onboarding**: Require all non-Azure servers to connect through Azure Arc for centralized management. The Defender for Cloud multicloud connectors for AWS and GCP can auto-discover EC2 instances and GCP VMs and install the Azure Connected Machine agent at scale.
+- **Azure Arc onboarding**: Require all non-Azure servers to connect through Azure Arc for centralized management. The Defender for Cloud multicloud connectors for AWS and GCP can autodiscover EC2 instances and GCP VMs and install the Azure Connected Machine agent at scale.
 - **Connector configuration**: Specify whether to connect at the organization/account level or individual project/account level
 - **Defender for Servers coverage**: Extend Microsoft Defender for Servers protection to EC2 instances and Compute Engine VMs
 - **Compliance standards**: Apply consistent standards across clouds—AWS Foundational Security Best Practices, GCP CIS benchmarks, and MCSB all map to common controls
@@ -92,7 +92,7 @@ For servers in AWS or GCP, specify how to integrate with your security managemen
 On-premises servers require additional considerations:
 
 - **Azure Arc deployment**: Require the Azure Connected Machine agent on all servers to enable cloud-based management and full Plan 2 functionality
-- **Direct Defender for Endpoint onboarding**: For servers where Azure Arc isn't feasible, you can onboard directly with the Defender for Endpoint agent. With Plan 1, direct onboarding provides all Plan 1 features. With Plan 2, directly onboarded servers get Plan 1 features plus premium Defender Vulnerability Management capabilities, but don't get agentless scanning, file integrity monitoring, JIT VM access, or OS configuration assessment — those capabilities require Azure Arc
+- **Direct Defender for Endpoint onboarding**: For servers where Azure Arc isn't feasible, you can onboard directly with the Defender for Endpoint agent. With Plan 1, direct onboarding provides all Plan 1 features. With Plan 2, directly onboarded servers get Plan 1 features plus premium Defender Vulnerability Management capabilities, but don't get agentless scanning, file integrity monitoring, JIT VM access, or OS configuration assessment—those capabilities require Azure Arc
 - **Network connectivity**: Specify required endpoints for Azure Arc, Defender for Cloud, and any extensions
 - **Proxy configuration**: Define proxy requirements for servers without direct internet access
 - **Update management**: Integrate with Azure Update Manager for centralized patching across hybrid environments

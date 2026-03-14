@@ -17,7 +17,7 @@ Evaluate which Windows LAPS scenario matches your environment:
 | Microsoft Entra joined devices | Microsoft Entra ID | Cloud-native or hybrid environments with Intune management |
 | Windows Server AD-joined clients | Windows Server Active Directory | On-premises environments with Group Policy management |
 | Windows Server AD domain controllers | Windows Server Active Directory | DSRM account password management |
-| Hybrid joined devices | Either directory | Organizations with both cloud and on-premises identity |
+| Hybrid joined devices | Either directory (one at a time) | Organizations with both cloud and on-premises identity |
 
 ## Backup directory evaluation
 
@@ -35,30 +35,18 @@ Your choice of backup directory affects security model, management tools, and ac
 
 - Passwords are stored in attributes on computer objects
 - Access control uses ACLs on computer objects and organizational units
-- Optional password encryption requires Windows Server 2016 Domain Functional Level or later
-- Password history can be stored (not available with Microsoft Entra ID)
+- Optional password encryption uses CNG DPAPI (AES-256) and requires Windows Server 2016 Domain Functional Level or later. You can configure which security principal can decrypt (defaults to Domain Admins).
+- Password history can be stored (requires encryption enabled; not available with Microsoft Entra ID)
 - Recommended to enable password encryption when storing passwords in AD
 
-## Policy configuration options
+## Policy capabilities
 
-When evaluating Windows LAPS, consider these configurable policy settings:
+When evaluating Windows LAPS, consider these capabilities:
 
-**Password settings**
-
-- Password length (8-64 characters) and complexity requirements
-- Passphrase support with configurable word count (new in Windows 11 24H2)
-- Improved readability option that excludes easily confused characters
-
-**Account management**
-
-- Manage the built-in administrator account (identified by RID, not name)
-- Specify a custom local administrator account name
-- Automatic account creation (new feature for managed local accounts)
-
-**Rotation settings**
-
-- Password age (how long before automatic rotation)
-- Post-authentication actions (what happens after the managed password is used)
+- **Password complexity**: Supports configurable password length and complexity, plus passphrase generation (Windows 11 24H2 and later)
+- **Account targeting**: Can manage the built-in administrator account (identified by RID, not name), a named custom account, or an automatically created managed account
+- **Automatic rotation**: Passwords are rotated based on a configurable age policy
+- **Post-authentication actions**: After the managed password is used for authentication, Windows LAPS can automatically reset the password and sign out the account, reboot the device, or terminate remaining processes. This limits the window during which a retrieved password remains valid.
 
 ## Security model comparison
 
@@ -70,6 +58,14 @@ When evaluating Windows LAPS, consider these configurable policy settings:
 | Password history | Not supported | Supported |
 | Audit logging | Microsoft Entra audit logs | Windows event logs |
 | DSRM password support | Not supported | Supported |
+| Password expiration protection | N/A | Prevents tampering with expiration date in AD |
+| Account tampering protection | Supported | Supported |
+
+**Password expiration protection** (`PasswordExpirationProtectionEnabled`, enabled by default) prevents modification of the password expiration attribute in Active Directory, which could otherwise be used to prevent rotation. **Account password tampering protection** rejects unauthorized attempts to change the managed account's password outside of LAPS, returning an error and logging the event.
+
+## Licensing
+
+The Windows LAPS feature is available at no additional cost. Backing up passwords to Windows Server Active Directory has no licensing requirements. Backing up passwords to Microsoft Entra ID requires Microsoft Entra ID Free or higher. Intune management features and Conditional Access may require additional licensing.
 
 ## Migration from legacy LAPS
 
@@ -84,24 +80,11 @@ The legacy Microsoft LAPS product is deprecated as of Windows 11 23H2. Installat
 
 Evaluate which management approach fits your operational model:
 
-**Microsoft Intune**
-
-- Endpoint security policies for account protection
-- Centralized management for Microsoft Entra joined and hybrid joined devices
-- Password rotation through device actions in Intune admin center
-- View managed account details directly in Intune
-
-**Group Policy**
-
-- Traditional management for AD-joined devices
-- Windows LAPS administrative templates included in Windows
-- Familiar deployment and targeting mechanisms
-
-**PowerShell**
-
-- `Get-LapsADPassword` to retrieve passwords from AD
-- `Reset-LapsPassword` to force immediate rotation
-- `Set-LapsADReadPasswordPermission` to configure access
+| Tool | Best for | Key consideration |
+| --- | --- | --- |
+| **Microsoft Intune** | Microsoft Entra joined and hybrid joined devices | Centralized endpoint security policies, password rotation through device actions, direct password retrieval in admin center |
+| **Group Policy** | AD-joined devices in traditional environments | Windows LAPS administrative templates are included in Windows; familiar targeting through OUs |
+| **PowerShell** | Unplanned operations and scripting | Password retrieval, forced rotation, and permission configuration for AD-backed scenarios |
 
 ## Evaluation criteria checklist
 
@@ -135,8 +118,9 @@ When evaluating Windows LAPS for your organization, assess these factors:
 
 Windows LAPS is available on these platforms:
 
-- Windows 11 (all supported versions)
+- Windows 11 23H2 and later (natively included); Windows 11 22H2 and 21H2 with April 2023 update
 - Windows 10 (with April 2023 update or later)
+- Windows Server 2025 and later (natively included)
 - Windows Server 2022 (with April 2023 update or later)
 - Windows Server 2019 (with April 2023 update or later)
 
