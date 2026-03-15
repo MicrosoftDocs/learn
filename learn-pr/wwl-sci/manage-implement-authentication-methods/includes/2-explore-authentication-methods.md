@@ -14,7 +14,7 @@ Modern passwordless methods eliminate the password entirely. Instead of typing a
 
 :::image type="content" source="../media/authentication-methods-spectrum.png" alt-text="Diagram showing the spectrum from password-only authentication on the left, through password plus MFA in the middle, to fully passwordless methods on the right, with security strength increasing from left to right.":::
 
-## multifactor authentication as the bridge
+## Multifactor authentication as the bridge
 
 For organizations that can't immediately move to passwordless, **multifactor authentication (MFA)** provides a critical intermediate security layer. MFA requires users to verify their identity using two or more factors from different categories — for example, something they know (a password) combined with something they have (a registered phone).
 
