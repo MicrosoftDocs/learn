@@ -2,7 +2,7 @@ Azure Speech in Foundry Tools provides multiple APIs that you can use to build s
 
 ## Use Azure Speech translation in application code
 
-To support speech translation, Azure Speech provides an APi that you can use from your application code through the **TranslationRecognizer** object; which you can create by connecting to your Azure Speech resource using a **SpeechTranslationConfig** object.
+To support speech translation, Azure Speech provides an API that you can use from your application code through the **TranslationRecognizer** object; which you can create by connecting to your Azure Speech resource using a **SpeechTranslationConfig** object.
 
 ### Connect to an Azure Speech resource
 
