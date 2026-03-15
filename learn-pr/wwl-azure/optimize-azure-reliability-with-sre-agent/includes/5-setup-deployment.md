@@ -37,7 +37,7 @@ Some common examples for SRE teams:
 - Database queries to Azure Data Explorer
 - Integration with GitHub MCP Server tools to reach wiki knowledge and documentation
 - Collaboration connectors to Outlook or Teams for sending notifications
-- Generic MCP Server support to connect your agent to any system (for example your on-premises databases, multi-cloud application information, third-party platforms such as DataDog, Splunk, Grafana and other).
+- Generic MCP Server support to connect your agent to any system (for example your on-premises databases, multicloud application information, third-party platforms such as DataDog, Splunk, Grafana and other).
 
 ## Identity, permissions, and security
 
