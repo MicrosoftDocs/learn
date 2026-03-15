@@ -22,18 +22,18 @@ The [Microsoft Cloud Security Benchmark (MCSB) v2 (preview)](/security/benchmark
 
 The Endpoint Security (ES) domain is organized into two pillars:
 
-**Cloud endpoint threat protection—Deploy comprehensive threat detection and response capabilities for servers, including behavioral analysis and extended detection and response (XDR) integration:
+- **Cloud endpoint threat protection**: Deploy comprehensive threat detection and response capabilities for servers, including behavioral analysis and extended detection and response (XDR) integration.
 
-| Control | Requirement | Implementation guidance |
-| --- | --- | --- |
-| ES-1 | Use Endpoint Detection and Response (EDR) | Deploy EDR solutions like Microsoft Defender for Endpoint to detect, investigate, and respond to advanced threats on servers. Includes subcontrols for EDR deployment (ES-1.1), XDR integration (ES-1.2), and EDR automation (ES-1.3). |
-| ES-2 | Use modern anti-malware software | Require anti-malware solutions that provide real-time protection, behavior monitoring, and integration with cloud-based threat intelligence |
+    | Control | Requirement | Implementation guidance |
+    | --- | --- | --- |
+    | ES-1 | Use Endpoint Detection and Response (EDR) | Deploy EDR solutions like Microsoft Defender for Endpoint to detect, investigate, and respond to advanced threats on servers. Includes subcontrols for EDR deployment (ES-1.1), XDR integration (ES-1.2), and EDR automation (ES-1.3). |
+    | ES-2 | Use modern anti-malware software | Require anti-malware solutions that provide real-time protection, behavior monitoring, and integration with cloud-based threat intelligence |
 
-**Cloud endpoint security configuration—Enforce security baselines and hardening standards across all servers:
+- **Cloud endpoint security configuration**: Enforce security baselines and hardening standards across all servers.
 
-| Control | Requirement | Implementation guidance |
-| --- | --- | --- |
-| ES-3 | Ensure anti-malware software and signatures are updated | Configure automatic updates for anti-malware definitions and engines; specify maximum acceptable age for signatures |
+    | Control | Requirement | Implementation guidance |
+    | --- | --- | --- |
+    | ES-3 | Ensure anti-malware software and signatures are updated | Configure automatic updates for anti-malware definitions and engines; specify maximum acceptable age for signatures |
 
 These controls apply across Windows and Linux servers in Azure, AWS, GCP, and on-premises environments. Microsoft Defender for Servers implements ES-1 and ES-2 through its integration with Defender for Endpoint. For detailed implementation guidance, see [Endpoint security controls in MCSB v2](/security/benchmark/azure/mcsb-v2-endpoint-security).
 
