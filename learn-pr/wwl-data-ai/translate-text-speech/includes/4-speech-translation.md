@@ -86,7 +86,7 @@ Manual synthesis is a straightforward way to synthesize the results of speech tr
 1. Use a **TranslationRecognizer** to translate spoken input into text transcriptions in one or more target languages.
 1. Iterate through the **Translations** in the result of the translation operation, using a **SpeechSynthesizer** to synthesize an audio stream for each language.
 
-For example, we could expanded the previous example to use Azure Speech to synthesize each translation that is returned, like this:
+For example, we could expand the previous example to use Azure Speech to synthesize each translation that is returned, like this:
 
 ```python
 import azure.cognitiveservices.speech as speech_sdk
