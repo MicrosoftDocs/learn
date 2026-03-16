@@ -5,8 +5,8 @@ metadata:
   description: Microsoft Azure offers multiple services that enable developers to build amazing AI-powered solutions. Proper planning and preparation involves identifying the services you'll use and creating an optimal working environment for your development team.
   author: wwlpublish
   ms.author: gmalc
-  ms.date: 02/26/2026
-  ms.service: azure-ai-foundry
+  ms.date: 3/16/2026
+  ms.service: microsoft-foundry
   ms.topic: module-standard-task-based
   ai-usage: ai-assisted
   ms.collection:
@@ -17,8 +17,8 @@ summary: "Microsoft Azure offers multiple services that enable developers to bui
 abstract: |
   By the end of this module, you'll be able to:
     - Identify common AI capabilities that you can implement in applications
-    - Describe Foundry Tools and considerations for using them
     - Describe Microsoft Foundry and considerations for using it
+    - Describe Foundry Tools and considerations for using them
     - Identify appropriate developer tools and SDKs for an AI project
     - Describe considerations for responsible AI
 prerequisites: |
@@ -33,21 +33,19 @@ roles: # see role taxonomy https://review.learn.microsoft.com/help/contribute/me
   - ai-engineer
 products: # see product taxonomy https://review.learn.microsoft.com/help/contribute/metadata-taxonomies?branch=main#product
   - foundry-tools
-  - azure-ai-foundry
+  - microsoft-foundry
 subjects: # see subject taxonomy https://review.learn.microsoft.com/help/contribute/metadata-taxonomies?branch=main#subject
   - artificial-intelligence
   - app-development
 units:
-- learn.wwl.prepare-azure-ai-development.introduction
-- learn.wwl.prepare-azure-ai-development.what-is-ai
-- learn.wwl.prepare-azure-ai-development.azure-ai-services
-- learn.wwl.prepare-azure-ai-development.azure-ai-foundry
-- learn.wwl.prepare-azure-ai-development.tools-and-sdks
-- learn.wwl.prepare-azure-ai-development.responsible-ai
-- learn.wwl.prepare-azure-ai-development.exercise-explore-ai-foundry
-- learn.wwl.prepare-azure-ai-development.knowledge-check
-- learn.wwl.prepare-azure-ai-development.summary
+  - learn.wwl.prepare-azure-ai-development.introduction
+  - learn.wwl.prepare-azure-ai-development.what-is-ai
+  - learn.wwl.prepare-azure-ai-development.azure-ai-foundry
+  - learn.wwl.prepare-azure-ai-development.azure-ai-services
+  - learn.wwl.prepare-azure-ai-development.tools-and-sdks
+  - learn.wwl.prepare-azure-ai-development.responsible-ai
+  - learn.wwl.prepare-azure-ai-development.exercise-explore-ai-foundry
+  - learn.wwl.prepare-azure-ai-development.knowledge-check
+  - learn.wwl.prepare-azure-ai-development.summary
 badge:
   uid: learn.wwl.prepare-azure-ai-development.badge
-
-

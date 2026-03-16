@@ -30,11 +30,8 @@ GitHub is the world's most popular platform for source control and DevOps manage
 
 ## Programming languages, APIs, and SDKs
 
-You can develop AI applications using many common programming languages and frameworks, including Microsoft C#, Python, Node, TypeScript, Java, and others. When building AI solutions on Azure, some common SDKs you should plan to install and use include:
+You can develop AI applications using many common programming languages and frameworks, including Microsoft C#, Python, Node, TypeScript, Java, and others. When building AI solutions on Azure, some common APIs and SDKs you should plan to use include:
 
-- The **[Microsoft Foundry SDK](/azure/ai-studio/how-to/develop/sdk-overview?azure-portal=true)**, which enables you to write code to connect to Microsoft Foundry projects and access resource connections, which you can then work with using service-specific SDKs.
-- The **[Microsoft Foundry Models API](/rest/api/aifoundry/modelinference/)**, which provides an interface for working with generative AI model endpoints hosted in Microsoft Foundry.
-- The **[Azure OpenAI in Microsoft Foundry Models API](/azure/ai-services/openai/reference)**, which enables you to build chat applications based on OpenAI models hosted in Microsoft Foundry.
+- The **[Microsoft Foundry SDK](/foundry/how-to/develop/sdk-overview?azure-portal=true)**, which enables you to write code to connect to Microsoft Foundry projects and access Foundry-specific assets, like agents and Foundry IQ knowledge stores.
+- The **[The OpenAI API](/azure/foundry/openai/latest)**, which enables you to use openAI SDKs to build chat applications based on Foundry models that support OpenAI syntax.
 - **[Foundry Tools SDKs](/azure/ai-services/reference/sdk-package-resources?azure-portal=true)** - AI service-specific libraries for multiple programming languages and frameworks that enable you to consume Foundry Tools resources in your subscription. You can also use Foundry Tools through their [REST APIs](/azure/ai-services/reference/rest-api-resources).
-- The **[Microsoft Foundry Agent Service](/azure/ai-services/agents/overview?azure-portal=true)**, which is accessed through the Microsoft Foundry SDK and can be integrated with frameworks like [Semantic Kernel](/semantic-kernel/overview?azure-portal=true) to build comprehensive AI agent solutions.
-
