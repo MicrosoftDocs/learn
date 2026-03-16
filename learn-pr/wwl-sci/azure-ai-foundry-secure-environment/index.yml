@@ -34,7 +34,7 @@ roles:
 - developer
 products:
 - azure
-- azure-ai-foundry
+- microsoft-foundry
 - defender-for-cloud
 subjects:
 - security
