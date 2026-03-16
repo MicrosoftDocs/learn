@@ -2,7 +2,7 @@ The SAP RISE certified Microsoft Sentinel solution for SAP applications allows y
 
 Correlation of SAP security signals with other enterprise data sources in Microsoft Defender allows you to detect sophisticated attacks that span across multiple systems and services. With built-in detections, workbooks, and playbooks, you can get started quickly and customize the solution to fit your needs.
 
-:::image type="content" source="../media/security-copilot-diagram.png" alt-text="Diagram showing how Security Copilot works with other products." lightbox="../media/security-copilot-diagram.png":::
+:::image type="content" source="../media/sap-rise-security-copilot-defender-portal.png" alt-text="Screenshot of embedded Security Copilot experience in Defender with SAP RISE/ECS incidents." lightbox="../media/sap-rise-security-copilot-defender-portal.png":::
 
 The solution allows you to gain visibility to user activities on SAP RISE/ECS and the SAP business logic layers and apply Microsoft Sentinel’s built-in content.
 -	Use a single console to monitor all your enterprise estate including SAP instances in SAP RISE/ECS on Azure and other clouds, SAP Azure native, and on-premises estate.
