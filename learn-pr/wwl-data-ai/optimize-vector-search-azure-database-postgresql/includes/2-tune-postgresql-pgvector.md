@@ -92,4 +92,4 @@ Effective tuning follows a systematic approach rather than random parameter chan
 
 - [Server parameters in Azure Database for PostgreSQL](/azure/postgresql/flexible-server/concepts-server-parameters)
 - [pgvector on Azure Database for PostgreSQL](/azure/postgresql/flexible-server/how-to-use-pgvector)
-- [Performance recommendations for Azure Database for PostgreSQL](/azure/postgresql/flexible-server/concepts-performance-recommendations)
+- [Performance recommendations for Azure Database for PostgreSQL](/azure/postgresql/configure-maintain/concepts-azure-advisor-recommendations)
