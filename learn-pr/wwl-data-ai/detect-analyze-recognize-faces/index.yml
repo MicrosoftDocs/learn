@@ -32,7 +32,7 @@ roles:
 products:
 - azure-computer-vision
 - azure-face
-- azure-ai-foundry
+- microsoft-foundry
 subjects:
 - artificial-intelligence
 units:
