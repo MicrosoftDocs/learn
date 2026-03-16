@@ -30,7 +30,7 @@ roles:
 - data-engineer
 - school-leader
 products:
-- ai-services
+- foundry-tools
 - m365-apps
 - azure-translator-text
 - azure-translator-speech
