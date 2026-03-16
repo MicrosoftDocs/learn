@@ -26,7 +26,7 @@ roles:
   - solution-architect
   - student
 products:
-  - ai-services
+  - foundry-tools
   - azure-ai-foundry
 subjects:
   - classification-analysis

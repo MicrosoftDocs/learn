@@ -174,22 +174,8 @@ Defender for IoT assists with compliance requirements common in industrial envir
 
 When evaluating Defender for IoT for your organization, consider:
 
-**Sensor sizing**
-
-Match sensor hardware or VM specifications to monitored bandwidth. Under-provisioned sensors may drop packets during traffic spikes.
-
-**Network architecture**
-
-Ensure traffic mirroring infrastructure (SPAN ports, network TAPs) can capture all relevant traffic without impacting production.
-
-**Change management**
-
-Plan for initial learning mode where sensors establish baselines. Alert tuning reduces false positives after deployment.
-
-**Operational impact**
-
-Validate that passive monitoring doesn't introduce latency or affect deterministic behavior of control systems.
-
-**Licensing**
-
-Defender for IoT licenses based on committed devices. Plan capacity based on expected device count across all sites.
+- **Sensor sizing**: Match sensor hardware or VM specifications to monitored bandwidth. Under-provisioned sensors may drop packets during traffic spikes.
+- **Network architecture**: Ensure traffic mirroring infrastructure (SPAN ports, network TAPs) can capture all relevant traffic without impacting production.
+- **Change management**: Plan for initial learning mode where sensors establish baselines. Alert tuning reduces false positives after deployment.
+- **Operational impact**: Validate that passive monitoring doesn't introduce latency or affect deterministic behavior of control systems.
+- **Licensing**: Defender for IoT licenses based on committed devices. Plan capacity based on expected device count across all sites.
