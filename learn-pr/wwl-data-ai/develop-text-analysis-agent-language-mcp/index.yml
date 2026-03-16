@@ -9,7 +9,7 @@ metadata:
   ms.topic: module-standard-task-based
   ms.service: azure-ai-language
   ai-usage: ai-generated
-title: Develop a Text Analysis Agent with the Azure Language MCP Server
+title: Develop a text analysis agent with the Azure Language MCP server
 summary: Learn how to build an AI agent that uses the Azure Language MCP server to perform text analysis tasks like entity recognition, sentiment analysis, and summarization.
 abstract: |
   After completing this module, you'll be able to:

@@ -21,7 +21,7 @@ roles:
 - ai-engineer
 - developer
 products:
-- ai-services
+- foundry-tools
 - microsoft-foundry
 subjects:
 - natural-language-processing

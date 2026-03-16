@@ -9,7 +9,7 @@ metadata:
   ms.topic: module-standard-task-based
   ms.service: azure-ai-speech
   ai-usage: ai-generated
-title: Develop a Speech Agent with the Azure Speech MCP Server
+title: Develop a speech agent with the Azure Speech MCP server
 summary: Learn how to build an AI agent that uses the Azure Speech MCP server to perform speech-to-text and text-to-speech tasks.
 abstract: |
   After completing this module, you'll be able to:

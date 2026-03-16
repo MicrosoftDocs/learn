@@ -27,7 +27,7 @@ levels:
 roles:
 - ai-engineer
 products:
-- ai-services
+- foundry-tools
 - document-intelligence
 - azure-ai-foundry
 subjects:

@@ -28,7 +28,7 @@ roles:
 - ai-engineer
 - developer
 products:
-- ai-services
+- foundry-tools
 - azure-video-indexer
 subjects:
 - classification-analysis
