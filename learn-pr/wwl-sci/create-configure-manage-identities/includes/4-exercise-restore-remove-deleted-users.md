@@ -1,4 +1,4 @@
-**Exercise environment needs** - this lab assumes you have a basic Microsoft Entra tenant with at least User Administrator rights to complete it.  You can get a free trial subscription for at [Try Azure for Free](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn).
+**Exercise environment needs** - this lab assumes you have a basic Microsoft Entra tenant with at least User Administrator rights to complete it. You can get a free trial subscription at [Try Microsoft Azure for free](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn).
 
 ## Remove a user from Microsoft Entra ID
 
@@ -7,7 +7,7 @@
 3. In the **Users** list, select the check box for a user to delete. For example, select **Chris Green**.
     
    > [!TIP]
-   > Selecting users from the list allows you to manage multiple users at the same time. If you select the user, to open that user’s page, you'll only be managing that individual user.
+   > Selecting users from the list allows you to manage multiple users at the same time. If you select the user, to open that user’s page, you are only be managing that individual user.
    
    :::image type="content" source="../media/remove-user.png" alt-text="Screenshot of Microsoft Entra ID all users' list with one user check box selected.":::
     
