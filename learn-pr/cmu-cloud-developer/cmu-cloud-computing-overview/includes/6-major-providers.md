@@ -1,4 +1,4 @@
-We will now do a quick comparison of two cloud stacks that are currently popular in the market. We will quickly glance over the services offered by Azure and OpenStack (the open cloud computing platform).
+Let's compare two cloud stacks that are currently popular in the market. We'll quickly glance over the services offered by Azure and OpenStack (the open cloud computing platform).
 
 ## Microsoft Azure
 
@@ -16,7 +16,7 @@ Microsoft Azure is one of the fastest-growing cloud services in the market, with
 
 Microsoft Azure is a proprietary stacks hosted by Microsoft on their public cloud. The OpenStack model is markedly different as it's an open-source cloud stack that is available for both public and private clouds. OpenStack defines itself as a "cloud operating system that controls large pools of compute, storage, and networking resources throughout a datacenter, all managed and provisioned through APIs with common authentication mechanisms." OpenStack can be deployed anywhere, from a bunch of machines to an entire datacenter. Public clouds that offer OpenStack include Rackspace and Cloudsuite.
 
-**Compute**: OpenStack's compute offering provides similar services to public cloud counterparts, with the ability to manage virtualized and commodity server resources with API-based access. OpenStack's compute system (called Nova) supports creating virtual machines and bare-metal servers (through the use of Ironic), and has limited support for system containers.
+**Compute**: OpenStack's compute offering provides similar services to public cloud counterparts, with the ability to manage virtualized and commodity server resources with API-based access. OpenStack's compute system (called Nova) supports creating virtual machines and bare-metal servers (by using Ironic), and has limited support for system containers.
 
 **Storage**: OpenStack offers two types of storage services: an object storage service (called Swift) and a block storage service (called Cinder). These can be deployed and scaled according to environment and application needs. Database systems can be deployed on top of virtual machines and storage services, if required, but OpenStack does not use or promote any particular type of database solution. Public clouds that use OpenStack offer MySQL, Percona, or MariaDB deployed on top of OpenStack VMs as a service.
 
