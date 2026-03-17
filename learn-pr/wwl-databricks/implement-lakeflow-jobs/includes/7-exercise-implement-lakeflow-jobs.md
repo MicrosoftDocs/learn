@@ -1,7 +1,7 @@
 Now it's your chance to implement Lakeflow Jobs with Azure Databricks. In this lab, you configure and automate a CDR data pipeline for TelConnect using Lakeflow Jobs. You run a pre-built parameterized notebook that processes Call Detail Records through bronze, silver, and gold layers, then configure a Lakeflow Job in the Azure Databricks UI with task dependencies, a job parameter, scheduled and event-based triggers, failure notifications, and retry policies.
 
 > [!NOTE]
-> To complete this lab, you will need an [Azure subscription](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn) in which you have administrative access.
+> To complete this lab, you'll need an [Azure subscription](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn) in which you have administrative access.
 
 Launch the exercise and follow the instructions.
 

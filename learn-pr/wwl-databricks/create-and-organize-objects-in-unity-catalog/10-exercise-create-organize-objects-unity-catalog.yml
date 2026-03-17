@@ -12,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 45
 content: |
-  [!include[](includes/10-exercise-create-and-organize-objects-in-unity-catalog.md)]
+  [!include[](includes/10-exercise-create-organize-objects-unity-catalog.md)]
