@@ -2,11 +2,11 @@
 uid: learn.wwl.foundry-sdk.responses-api
 title: Generate responses with the Responses API
 metadata:
-  title: Generate responses with the Responses API
-  description: Learn to use the Responses API to generate AI responses in applications.
+  title: Generate responses with the Responses API in the Foundry SDK
+  description: Learn to use the Responses API in the Foundry SDK to generate AI responses in applications.
   author: ivorb
   ms.author: berryivor
-  ms.date: 02/20/2026
+  ms.date: 03/17/2026
   ms.topic: unit
   ai-usage: ai-generated
   ms.collection:
