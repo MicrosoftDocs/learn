@@ -9,6 +9,7 @@ If your Copilot+ PC features pen and inking support, you can take handwritten no
 For this example, you'll be using OneNote to take notes during your class. OneNote supports both typed and handwritten notes—an ideal solution for someone that is more comfortable handwriting notes than typing them. To handwrite class notes while using touchscreen inking and OneNote do the following:
 
 - Open the **OneNote** application.
+  
 :::image type="content" border="true" source="../media/one-note-pen-selection.png" alt-text="Screenshot of OneNote with the Draw tab selected.":::
 
 - On the ribbon, choose the **Draw** tab.
