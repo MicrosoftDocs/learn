@@ -43,8 +43,6 @@ Let's review the steps for setting up your multimonitor setup:
 
 Now that your monitors are set up, you can start working on your research. Windows 11 Pro PCs devices feature powerful processors to handle multitasking across multiple applications. To run these simultaneously, a great tool to use is Snap Layouts—allowing you to transition from one app to the next without disrupting your workflow.
 
-:::image type="content" border="true" source="../media/windows-snap-layouts.gif" alt-text="Animation showing how to use Snap Layouts in Windows 11.":::
-
 Snap allows you to quickly resize and position windows on your screen by dragging them to the edges or corners. This helps you work more efficiently by arranging multiple windows to maximize your screen space. Here are the ways that you can use Snap:
 
 - **Snap to the side:** drag a window to the left or right edge of the screen to snap it to that side.
