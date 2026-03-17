@@ -22,7 +22,7 @@ roles:
 - solution-architect
 - student
 products:
-- azure-ai-foundry
+- microsoft-foundry
 units:
 - learn.wwl.get-started-with-ai-in-azure.introduction
 - learn.wwl.get-started-with-ai-in-azure.what-is-azure

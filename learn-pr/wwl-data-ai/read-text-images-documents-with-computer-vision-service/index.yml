@@ -30,7 +30,7 @@ roles:
 products:
 - foundry-tools
 - azure-computer-vision
-- azure-ai-foundry
+- microsoft-foundry
 subjects:
 - artificial-intelligence
 units:

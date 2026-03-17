@@ -27,7 +27,7 @@ roles:
 - student
 products:
 - foundry-tools
-- azure-ai-foundry
+- microsoft-foundry
 subjects:
 - artificial-intelligence
 - natural-language-processing

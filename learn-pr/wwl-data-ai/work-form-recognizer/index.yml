@@ -35,7 +35,7 @@ roles:
 products:
 - foundry-tools
 - document-intelligence
-- azure-ai-foundry
+- microsoft-foundry
 subjects:
 - artificial-intelligence
 units:
