@@ -24,7 +24,7 @@ roles:
   - solution-architect
   - student
 products:
-  - azure-ai-foundry
+  - microsoft-foundry
 units:
   - learn.wwl.get-started-generative-ai-azure.introduction
   - learn.wwl.get-started-generative-ai-azure.generative-ai
