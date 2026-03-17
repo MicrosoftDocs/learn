@@ -1,0 +1,46 @@
+### YamlMime:Module
+uid: learn.dpu.microsoft-higher-education
+title: Empowering higher education with Copilot+ PCs, Windows 11 Pro, and Microsoft 365
+metadata:
+  title: Empowering Higher Education With Copilot+ PCs, Windows 11 Pro, And Microsoft 365
+  description: 'Learn how Copilot+ PCs, Windows 11 Pro, and Microsoft 365 can empower higher education institutions to adapt to modern educational realities, keep students organized, enhance educator workflows, and secure device deployment for administrators.'
+  ms.date: 03/17/2026
+  author: ozahran7
+  ms.author: v-zahranomar
+  ms.topic: module
+  ms.service: microsoft-365-education
+summary: >
+  This module explores how Copilot+ PCs, Windows 11 Pro, and Microsoft 365 can transform higher education by enhancing student organization, improving educator workflows, and securing device deployment for administrators.
+
+abstract: |
+  By the end of this module, you're able to:
+  - Understand how Copilot+ PCs, Windows 11 Pro, and Microsoft 365 can empower higher education institutions.
+  - Adapt to modern educational realities by leveraging technology to enhance learning experiences.
+  - Keep students organized with tools and features designed to streamline their academic journey.
+  - Enhance educator workflows by utilizing technology to save time and improve efficiency.
+  - Secure device deployment for administrators by implementing best practices and leveraging security features.
+
+prerequisites: |
+  - None
+iconUrl: /training/achievements/microsoft-higher-education-badge.svg
+ratingEnabled: false
+levels:
+  - beginner
+roles:
+  - administrator
+  - business-leader
+  - business-owner
+  - business-user
+  - technology-manager
+products:
+  - m365-education
+units:
+  - learn.dpu.microsoft-higher-education.introduction
+  - learn.dpu.microsoft-higher-education.adapt-to-modern-educational-realities
+  - learn.dpu.microsoft-higher-education.keep-students-organized
+  - learn.dpu.microsoft-higher-education.enhance-educator-workflows
+  - learn.dpu.microsoft-higher-education.secure-device-deployment-for-administrators
+  - learn.dpu.microsoft-higher-education.knowledge-check
+  - learn.dpu.microsoft-higher-education.summary
+badge:
+  uid: learn.dpu.microsoft-higher-education.badge
