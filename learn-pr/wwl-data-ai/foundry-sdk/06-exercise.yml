@@ -13,4 +13,4 @@ metadata:
     - wwl-ai-copilot
 durationInMinutes: 10
 content: |
-  [!include[](includes/05-exercise.md)]
+  [!include[](includes/06-exercise.md)]
