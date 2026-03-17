@@ -11,6 +11,6 @@ metadata:
   ai-usage: ai-generated
   ms.collection:
     - wwl-ai-copilot
-durationInMinutes: 10
+durationInMinutes: 45
 content: |
   [!include[](includes/05-exercise.md)]
