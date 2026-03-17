@@ -29,7 +29,6 @@ roles:
 - developer
 products:
 - foundry-tools
-- azure-computer-vision
 - microsoft-foundry
 subjects:
 - artificial-intelligence
