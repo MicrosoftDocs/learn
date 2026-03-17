@@ -1,3 +1,5 @@
+The Foundry SDK provides a unified interface for managing agents, invoking tools, and handling responses. With the Foundry SDK, you can build complex agent workflows that integrate multiple tools and services, all while maintaining traceability and observability.
+
 The Responses API brings together capabilities from chat completions and the Assistants API in a unified experience. It provides stateful, multi-turn response generation, making it ideal for conversational AI applications. With the Microsoft Foundry SDK, you can access the Responses API through an OpenAI-compatible client.
 
 ## Understanding the Responses API
@@ -36,31 +38,14 @@ openai_client = project_client.get_openai_client(api_version="2024-10-21")
 Once you have the OpenAI-compatible client, you can generate responses using the **responses.create()** method:
 
 ```python
-from azure.identity import DefaultAzureCredential
-from azure.ai.projects import AIProjectClient
+# Generate a response using the OpenAI-compatible client
+response = openai_client.responses.create(
+    model="gpt-4.1",  # Your model deployment name
+    input="What is Microsoft Foundry?"
+)
 
-try:
-    # Connect to project
-    project_endpoint = "https://<resource-name>.services.ai.azure.com/api/projects/<project-name>"
-    project_client = AIProjectClient(
-        credential=DefaultAzureCredential(),
-        endpoint=project_endpoint
-    )
-    
-    # Get OpenAI-compatible client
-    openai_client = project_client.get_openai_client(api_version="2024-10-21")
-    
-    # Generate a response
-    response = openai_client.responses.create(
-        model="gpt-4.1",  # Your model deployment name
-        input="What is Microsoft Foundry?"
-    )
-    
-    # Display the response
-    print(response.output_text)
-
-except Exception as ex:
-    print(f"Error: {ex}")
+# Display the response
+print(response.output_text)
 ```
 
 The **input** parameter accepts a text string containing your prompt. The model generates a response based on this input.
@@ -68,6 +53,31 @@ The **input** parameter accepts a text string containing your prompt. The model 
 ## Creating conversational experiences
 
 For more complex conversational scenarios, you can provide system instructions and build multi-turn conversations:
+
+```python
+# First turn in the conversation
+response1 = openai_client.responses.create(
+    model="gpt-4.1",
+    instructions="You are a helpful AI assistant that explains technology concepts clearly.",
+    input="What is machine learning?"
+)
+
+print("Assistant:", response1.output_text)
+
+# Continue the conversation
+response2 = openai_client.responses.create(
+    model="gpt-4.1",
+    instructions="You are a helpful AI assistant that explains technology concepts clearly.",
+    input="Can you give me an example?",
+    previous_response_id=response1.id
+)
+
+print("Assistant:", response2.output_text)
+```
+
+The **previous_response_id** parameter links responses together, maintaining conversation context across multiple API calls.
+
+You can also create and manage a conversation object directly that will maintain the full message history for you:
 
 ```python
 from azure.identity import DefaultAzureCredential
@@ -84,34 +94,47 @@ try:
     # Get OpenAI-compatible client
     openai_client = project_client.get_openai_client(api_version="2024-10-21")
     
-    # First turn in the conversation
-    response1 = openai_client.responses.create(
-        model="gpt-4.1",
-        instructions="You are a helpful AI assistant that explains technology concepts clearly.",
-        input="What is machine learning?"
+    # Create an agent
+    agent = project_client.agents.create_version(
+        agent_name="MyAgent",
+        definition=PromptAgentDefinition(
+            model=os.environ["AZURE_AI_MODEL_DEPLOYMENT_NAME"],
+            instructions="You are a helpful assistant that answers general questions",
+        ),
     )
-    
-    print("Assistant:", response1.output_text)
-    
-    # Continue the conversation
-    response2 = openai_client.responses.create(
-        model="gpt-4.1",
-        instructions="You are a helpful AI assistant that explains technology concepts clearly.",
-        input="Can you give me an example?",
-        previous_response_id=response1.id
+    print(f"Agent created (id: {agent.id}, name: {agent.name}, version: {agent.version})")
+
+    # Use the OpenAI-compatible client to create a conversation
+    conversation = openai_client.conversations.create(
+        items=[{"type": "message", "role": "user", "content": "What is the size of France in square miles?"}],
     )
-    
-    print("Assistant:", response2.output_text)
+    print(f"Created conversation with initial user message (id: {conversation.id})")
+
+    # Generate a response using the Responses API, referencing the agent
+    response = openai_client.responses.create(
+        conversation=conversation.id,
+        extra_body={"agent_reference": {"name": agent.name, "type": "agent_reference"}},
+    )
+    print(f"Response output: {response.output_text}")
 
 except Exception as ex:
     print(f"Error: {ex}")
 ```
 
-The **previous_response_id** parameter links responses together, maintaining conversation context across multiple API calls.
+It is important to note that keeping conversation history can increase token usage. For a single run, the active context window typically includes:
+
+- System instructions (agent instructions, safety rules)
+- Your current prompt
+- Conversation history (previous user + assistant messages)
+- Tool schemas (functions, OpenAPI specs, MCP tools, etc.)
+- Tool outputs (search results, code interpreter output, files)
+- Retrieved memory or documents (from memory stores, RAG, file search)
+
+All of these are concatenated, tokenized, and sent to the model together on every request. The SDK helps you manage state, but it does not automatically make token usage cheaper.
 
 ### Alternative: Manual conversation chaining
 
-You can also manage conversations manually by building the message history yourself. This approach gives you more control over what context is included:
+You can manage conversations manually by building the message history yourself. This approach gives you more control over what context is included:
 
 ```python
 from azure.identity import DefaultAzureCredential

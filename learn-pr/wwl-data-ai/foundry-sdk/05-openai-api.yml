@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.foundry-sdk.openai-api
+title: Generate responses with the OpenAI SDK
+metadata:
+  title: Generate responses with the OpenAI SDK
+  description: Learn to use the OpenAI SDK to generate AI responses in applications.
+  author: ivorb
+  ms.author: berryivor
+  ms.date: 03/17/2026
+  ms.topic: unit
+  ai-usage: ai-generated
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 10
+content: |
+  [!include[](includes/05-openai-api.md)]
