@@ -7,4 +7,4 @@ In this exercise, you use the Microsoft Foundry SDK to connect to a project and 
 
 Launch the exercise and follow the instructions.
 
-[![Button to launch exercise.](../media/launch-exercise.png)](https://go.microsoft.com/fwlink/?linkid=2303427&azure-portal=true)
+[![Button to launch exercise.](../media/launch-exercise.png)](https://go.microsoft.com/fwlink/?linkid=2354411&azure-portal=true)
