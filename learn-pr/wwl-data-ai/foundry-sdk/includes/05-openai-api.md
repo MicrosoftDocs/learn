@@ -194,4 +194,26 @@ response = client.responses.create(
 print(response.output_text)
 ```
 
+## Azure OpenAI support
+
+In some cases, you may want to support different Azure OpenAI patterns. To use this library with Azure OpenAI, use the `AzureOpenAI` class instead of the `OpenAI` class and specify the API version.
+
+```python
+# gets the API Key from environment variable AZURE_OPENAI_API_KEY
+client = AzureOpenAI(
+    api_version="2023-07-01-preview",
+    azure_endpoint="https://example-endpoint.openai.azure.com",
+)
+
+completion = client.chat.completions.create(
+    model="deployment-name",
+    messages=[
+        {
+            "role": "user",
+            "content": "How do I output all files in a directory using Python?",
+        },
+    ],
+)
+```
+
 The OpenAI SDK provides a straightforward way to integrate AI capabilities into your applications with full compatibility across OpenAI and Azure OpenAI endpoints.
