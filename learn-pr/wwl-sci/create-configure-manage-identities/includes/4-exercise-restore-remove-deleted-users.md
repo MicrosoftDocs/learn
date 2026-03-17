@@ -7,7 +7,7 @@
 3. In the **Users** list, select the check box for a user to delete. For example, select **Chris Green**.
     
    > [!TIP]
-   > Selecting users from the list allows you to manage multiple users at the same time. If you select the user, to open that user’s page, you are only be managing that individual user.
+   > Selecting users from the list allows you to manage multiple users at the same time. If you select the user, to open that user’s page, you'll only be managing that individual user.
    
    :::image type="content" source="../media/remove-user.png" alt-text="Screenshot of Microsoft Entra ID all users' list with one user check box selected.":::
     
