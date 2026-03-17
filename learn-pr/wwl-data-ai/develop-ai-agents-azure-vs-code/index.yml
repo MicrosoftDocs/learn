@@ -33,7 +33,7 @@ roles:
   - data-scientist
   - solution-architect
 products:
-  - azure-ai-foundry
+  - microsoft-foundry
   - azure-ai-foundry-agent-service
   - azure-ai-foundry-sdk
 subjects:
