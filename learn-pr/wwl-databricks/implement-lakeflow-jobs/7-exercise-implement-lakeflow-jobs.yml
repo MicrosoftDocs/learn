@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-lakeflow-jobs.exercise
+title: Exercise - Implement Lakeflow Jobs with Azure Databricks
+metadata:
+  title: Exercise - Implement Lakeflow Jobs with Azure Databricks
+  description: "Exercise - Implement Lakeflow Jobs with Azure Databricks"
+  ms.date: 03/05/2026
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 45
+content: |
+  [!include[](includes/7-exercise-implement-lakeflow-jobs.md)]

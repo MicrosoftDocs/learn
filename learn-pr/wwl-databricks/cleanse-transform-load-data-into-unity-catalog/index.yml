@@ -3,7 +3,7 @@ uid: learn.wwl.cleanse-transform-load-data-into-unity-catalog
 metadata:
   title: Cleanse, Transform, and Load Data into Unity Catalog
   description: Learn how to cleanse, transform, and load data into Unity Catalog tables in Azure Databricks by profiling data, handling duplicates and nulls, applying transformations, and using various loading strategies.
-  ms.date: 02/17/2026
+  ms.date: 03/17/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: module
@@ -43,6 +43,7 @@ units:
   - learn.wwl.cleanse-transform-load-data-into-unity-catalog.transform-data-join-union-intersect-except
   - learn.wwl.cleanse-transform-load-data-into-unity-catalog.transform-data-denormalize-pivot-unpivot
   - learn.wwl.cleanse-transform-load-data-into-unity-catalog.load-data-merge-insert-append
+  - learn.wwl.cleanse-transform-load-data-into-unity-catalog.exercise
   - learn.wwl.cleanse-transform-load-data-into-unity-catalog.knowledge-check
   - learn.wwl.cleanse-transform-load-data-into-unity-catalog.summary
 badge:

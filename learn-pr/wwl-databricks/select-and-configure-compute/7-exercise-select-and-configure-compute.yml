@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.select-and-configure-compute.exercise
+title: Exercise - Select and Configure Compute in Azure Databricks
+metadata:
+  title: Exercise - Select and Configure Compute in Azure Databricks
+  description: "Exercise - Select and Configure Compute in Azure Databricks"
+  ms.date: 01/23/2026
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 45
+content: |
+  [!include[](includes/7-exercise-select-and-configure-compute.md)]

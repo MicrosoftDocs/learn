@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-implement-data-pipelines.exercise
+title: Exercise - Design and Implement Data Pipelines with Azure Databricks
+metadata:
+  title: Exercise - Design and Implement Data Pipelines with Azure Databricks
+  description: "Exercise - Design and Implement Data Pipelines with Azure Databricks"
+  ms.date: 03/03/2026
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 45
+content: |
+  [!include[](includes/8-exercise-design-implement-data-pipelines.md)]

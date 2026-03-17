@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-and-organize-objects-in-unity-catalog.exercise
+title: Exercise - Create and Organize Objects in Unity Catalog
+metadata:
+  title: Exercise - Create and Organize Objects in Unity Catalog
+  description: "Exercise - Create and Organize Objects in Unity Catalog"
+  ms.date: 01/30/2026
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 45
+content: |
+  [!include[](includes/10-exercise-create-and-organize-objects-in-unity-catalog.md)]
