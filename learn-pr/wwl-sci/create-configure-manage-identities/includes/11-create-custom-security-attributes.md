@@ -6,7 +6,7 @@ Custom security attributes in Microsoft Entra ID are business-specific attribute
 
 ### Why use custom security attributes?
 
-- Extend user profiles, such as add Employee Hire Date and Hourly Salary to all my employees.
+- Extend user profiles, such as add Hourly Salary to all my employees.
 - Ensure only administrators can see the Hourly Salary attribute in my employees' profiles.
 - Categorize hundreds or thousands of applications to easily create a filterable inventory for auditing.
 - Grant users access to the Azure Storage blobs belonging to a project.
@@ -14,9 +14,11 @@ Custom security attributes in Microsoft Entra ID are business-specific attribute
 ### What can I do with custom security attributes?
 
 - Define business-specific information (attributes) for your tenant.
-- Add a set of custom security attributes on users, applications, Microsoft Entra resources, or Azure resources.
+- Add custom security attributes to Microsoft Entra users and enterprise applications (service principals).
 - Manage Microsoft Entra objects using custom security attributes with queries and filters.
 - Provide attribute governance so attributes determine who can get access.
+
+Custom security attributes are **not** supported in Microsoft Entra Domain Services, SAML token claims, or JSON Web Token (JWT) claims.
 
 ### Features of custom security attributes
 
