@@ -141,7 +141,7 @@ for event in stream:
 
 ## Async usage
 
-For high-performance applications, `AsyncOpenAI` is available as the asynchronous client that allows you to make non-blocking API calls. To use it, import `AsyncOpenAI` instead of `OpenAI` and use `await` with each API call:
+For high-performance applications, `AsyncOpenAI` is available as the asynchronous client that allows you to make non-blocking API calls. Asynchronous usage is ideal for long-running requests or when you want to handle multiple requests concurrently without blocking your application. To use it, import `AsyncOpenAI` instead of `OpenAI` and use `await` with each API call:
 
 
 ```python
