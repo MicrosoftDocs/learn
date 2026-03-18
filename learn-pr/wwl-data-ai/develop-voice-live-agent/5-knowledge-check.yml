@@ -42,7 +42,7 @@ quiz:
           isCorrect: false
           explanation: "You can configure and test Voice Live agent integration in the Foundry Portal."
         - content: "In the Azure Speech in Foundry Tools Voice Live playground"
-          isCorrect: true
+          isCorrect: false
           explanation: "You can use Voice Live playground to test the Voice live API; but not to integrate it with an agent."
         - content: "Enable Voice mode in the agent playground"
           isCorrect: true
