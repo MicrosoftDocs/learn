@@ -1,6 +1,6 @@
 Now it's your turn to try using the Microsoft Foundry SDK!
 
-In this exercise, you use the Microsoft Foundry SDK to connect to a project and create an application that generates AI responses using the Responses API.
+In this exercise, you deploy a generative model in Microsoft Foundry, and create an application that chats with it.
 
 > [!NOTE]
 > To complete this lab, you need an **[Azure subscription](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn)** in which you have administrative access.
