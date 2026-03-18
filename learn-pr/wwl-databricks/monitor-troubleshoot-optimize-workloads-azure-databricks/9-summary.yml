@@ -1,14 +1,14 @@
 ### YamlMime: ModuleUnit
-uid: learn.wwl.govern-unity-catalog-objects.summary
+uid: learn.wwl.monitor-troubleshoot-optimize-workloads-azure-databricks.summary
 title: Summary
 metadata:
   title: Summary
   description: "Summary"
-  ms.date: 02/05/2026
+  ms.date: 03/17/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit
   ai-usage: ai-generated
-durationInMinutes: 2
+durationInMinutes: 3
 content: |
   [!include[](includes/9-summary.md)]
