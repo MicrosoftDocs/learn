@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.github.deploy-to-azure.exercise
+title: Exercise - Deploy a containerized app to Azure with GitHub Actions
+metadata:
+  title: Exercise - Deploy a containerized app to Azure with GitHub Actions
+  description: Validate your knowledge on deploying a containerized application to Microsoft Azure using GitHub Actions.
+  author: a-a-ron
+  ms.author: aastewar
+  ms.date: 03/18/2026
+  ms.topic: unit
+durationInMinutes: 60
+content: |
+  [!include[](includes/deploy-to-azure-exercise.md)]
