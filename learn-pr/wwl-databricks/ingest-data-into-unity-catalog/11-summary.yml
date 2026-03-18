@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.design-implement-data-modeling-unity-catalog.summary
+uid: learn.wwl.ingest-data-into-unity-catalog.summary
 title: Summary
 metadata:
   title: Summary
   description: "Summary"
-  ms.date: 02/10/2026
+  ms.date: 02/16/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit
   ai-usage: ai-generated
-durationInMinutes: 3
+durationInMinutes: 2
 content: |
-  [!include[](includes/13-summary.md)]
+  [!include[](includes/11-summary.md)]

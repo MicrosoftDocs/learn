@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.secure-unity-catalog-objects.exercise
+title: Exercise - Secure Unity Catalog Objects
+metadata:
+  title: Exercise - Secure Unity Catalog Objects
+  description: "Exercise - Secure Unity Catalog Objects"
+  ms.date: 02/03/2026
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 45
+content: |
+  [!include[](includes/9-exercise-secure-unity-catalog-objects.md)]

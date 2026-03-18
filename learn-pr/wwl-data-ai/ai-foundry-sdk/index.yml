@@ -29,8 +29,7 @@ roles:
 - ai-engineer
 - developer
 products:
-- azure-ai-foundry
-- azure-ai-foundry-sdk
+- microsoft-foundry
 subjects:
 - artificial-intelligence
 units:
