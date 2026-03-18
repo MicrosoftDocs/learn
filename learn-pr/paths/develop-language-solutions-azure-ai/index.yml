@@ -28,8 +28,8 @@ subjects:
 modules:
   - learn.wwl.analyze-text-ai-language
   - learn.wwl.develop-text-analysis-agent-language-mcp
-  - learn.wwl.create-speech-enabled-apps
   - learn.wwl.develop-generative-ai-audio-apps
+  - learn.wwl.create-speech-enabled-apps
   - learn.wwl.develop-speech-agent-speech-mcp
   - learn.wwl.develop-voice-live-agent
   - learn.wwl.translate-text-speech
