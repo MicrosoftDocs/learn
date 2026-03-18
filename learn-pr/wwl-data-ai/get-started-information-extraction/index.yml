@@ -30,7 +30,6 @@ roles:
 - ai-engineer
 products:
 - foundry-tools
-- azure-cognitive-search
 - microsoft-foundry
 subjects:
 - artificial-intelligence
