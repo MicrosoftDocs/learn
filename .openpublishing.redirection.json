@@ -64829,6 +64829,102 @@
       "source_path": "learn-pr/sqlserver/understand-hybrid-data-platform-sql-server-2022/7-summary.md",
       "redirect_url": "/training/modules/understand-hybrid-data-platform-sql-server/",
       "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-databricks/cleanse-transform-load-data-into-unity-catalog/9-knowledge-check.yml",
+      "redirect_url": "/training/wwl-databricks/cleanse-transform-load-data-into-unity-catalog/10-knowledge-check"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-databricks/cleanse-transform-load-data-into-unity-catalog/10-summary.yml",
+      "redirect_url": "/training/wwl-databricks/cleanse-transform-load-data-into-unity-catalog/11-summary"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-databricks/create-and-organize-objects-in-unity-catalog/10-knowledge-check.yml",
+      "redirect_url": "/training/wwl-databricks/create-and-organize-objects-in-unity-catalog/11-knowledge-check"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-databricks/create-and-organize-objects-in-unity-catalog/11-summary.yml",
+      "redirect_url": "/training/wwl-databricks/create-and-organize-objects-in-unity-catalog/12-summary"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-databricks/design-implement-data-modeling-unity-catalog/12-knowledge-check.yml",
+      "redirect_url": "/training/wwl-databricks/design-implement-data-modeling-unity-catalog/13-knowledge-check"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-databricks/design-implement-data-modeling-unity-catalog/13-summary.yml",
+      "redirect_url": "/training/wwl-databricks/design-implement-data-modeling-unity-catalog/14-summary"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-databricks/design-implement-data-pipelines/8-knowledge-check.yml",
+      "redirect_url": "/training/wwl-databricks/design-implement-data-pipelines/9-knowledge-check"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-databricks/design-implement-data-pipelines/9-summary.yml",
+      "redirect_url": "/training/wwl-databricks/design-implement-data-pipelines/10-summary"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-databricks/govern-unity-catalog-objects/8-knowledge-check.yml",
+      "redirect_url": "/training/wwl-databricks/govern-unity-catalog-objects/9-knowledge-check"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-databricks/govern-unity-catalog-objects/9-summary.yml",
+      "redirect_url": "/training/wwl-databricks/govern-unity-catalog-objects/10-summary"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-databricks/implement-development-lifecycle-processes-in-azure-databricks/7-knowledge-check.yml",
+      "redirect_url": "/training/wwl-databricks/implement-development-lifecycle-processes-in-azure-databricks/8-knowledge-check"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-databricks/implement-development-lifecycle-processes-in-azure-databricks/8-summary.yml",
+      "redirect_url": "/training/wwl-databricks/implement-development-lifecycle-processes-in-azure-databricks/9-summary"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-databricks/implement-lakeflow-jobs/7-knowledge-check.yml",
+      "redirect_url": "/training/wwl-databricks/implement-lakeflow-jobs/8-knowledge-check"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-databricks/implement-lakeflow-jobs/8-summary.yml",
+      "redirect_url": "/training/wwl-databricks/implement-lakeflow-jobs/9-summary"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-databricks/implement-manage-data-quality-constraints-unity-catalog/6-knowledge-check.yml",
+      "redirect_url": "/training/wwl-databricks/implement-manage-data-quality-constraints-unity-catalog/7-knowledge-check"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-databricks/implement-manage-data-quality-constraints-unity-catalog/7-summary.yml",
+      "redirect_url": "/training/wwl-databricks/implement-manage-data-quality-constraints-unity-catalog/8-summary"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-databricks/ingest-data-into-unity-catalog/9-knowledge-check.yml",
+      "redirect_url": "/training/wwl-databricks/ingest-data-into-unity-catalog/10-knowledge-check"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-databricks/ingest-data-into-unity-catalog/10-summary.yml",
+      "redirect_url": "/training/wwl-databricks/ingest-data-into-unity-catalog/11-summary"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-databricks/monitor-troubleshoot-optimize-workloads-azure-databricks/7-knowledge-check.yml",
+      "redirect_url": "/training/wwl-databricks/monitor-troubleshoot-optimize-workloads-azure-databricks/8-knowledge-check"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-databricks/monitor-troubleshoot-optimize-workloads-azure-databricks/8-summary.yml",
+      "redirect_url": "/training/wwl-databricks/monitor-troubleshoot-optimize-workloads-azure-databricks/9-summary"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-databricks/secure-unity-catalog-objects/9-knowledge-check.yml",
+      "redirect_url": "/training/wwl-databricks/secure-unity-catalog-objects/10-knowledge-check"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-databricks/secure-unity-catalog-objects/10-summary.yml",
+      "redirect_url": "/training/wwl-databricks/secure-unity-catalog-objects/11-summary"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-databricks/select-and-configure-compute/7-knowledge-check.yml",
+      "redirect_url": "/training/wwl-databricks/select-and-configure-compute/8-knowledge-check"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-databricks/select-and-configure-compute/8-summary.yml",
+      "redirect_url": "/training/wwl-databricks/select-and-configure-compute/9-summary"
     }
   ]
 }
