@@ -7,8 +7,7 @@ metadata:
   author: r-c-stewart
   ms.author: roberts
   ms.topic: module
-  ms.service: azure
-  ms.subservice: entra-id
+  ms.service: entra-id  
   ai-usage: ai-assisted
 title: Implement and configure Privileged Identity Management (PIM)
 summary: Implement Just-in-Time privileged access using Privileged Identity Management (PIM) to reduce standing privilege across Microsoft Entra roles, Azure resources, and group-based access for cloud and AI environments.
