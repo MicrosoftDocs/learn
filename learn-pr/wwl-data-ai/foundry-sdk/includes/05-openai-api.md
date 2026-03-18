@@ -18,7 +18,7 @@ print(completion.choices[0].message.content)
 
 ## Retaining conversational context
 
-Unlike the *Responses* API, the *ChatCompletins* API does not provide a stateful response tracking feature. To retain conversational context, you must write code to manually track previous prompts and responses.
+Unlike the *Responses* API, the *ChatCompletins* API doesn't provide a stateful response tracking feature. To retain conversational context, you must write code to manually track previous prompts and responses.
 
 ```python
 # Initial messages
@@ -124,4 +124,4 @@ Assistant: Goodbye!
 
 Each new user prompt and completion is added to the conversation, and the entire conversation history is submitted in each turn.
 
-While not a fully-featured as the *Responses* API, the *ChatCompletions* API is well-established in the generative AI model ecosystem, so it's useful to be familiar with it.
+While not as fully featured as the *Responses* API, the *ChatCompletions* API is well established in the generative AI model ecosystem, so it's useful to be familiar with it.
