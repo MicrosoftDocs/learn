@@ -1,10 +1,10 @@
-Before you write code with the Microsoft Foundry SDK, it's helpful to explore what your project can do through the Foundry portal. The portal provides interactive tools for testing models and generating code samples that you can use as starting points for your applications.
+Before you write code to build a generative Ai chat application, it's helpful to explore what your project can do through the Foundry portal. The portal provides interactive tools for testing models and generating code samples that you can use as starting points for your applications.
 
-[![Screenshot of the Chat playground in Microsoft Foundry portal.](../media/foundry-playground.png)](../media/foundry-playground.png#lightbox)
+[![Screenshot of the Model playground in Microsoft Foundry portal.](../media/foundry-playground.png)](../media/foundry-playground.png#lightbox)
 
-## Exploring with the Chat playground
+## Exploring with the Model playground
 
-The **Chat playground** in the Foundry portal provides an interactive environment for testing models before you write any code. You can access it by selecting **Chat playground** from the left navigation.
+The **Model playground** in the Foundry portal provides an interactive environment for testing models before you write any code. You can access it by selecting **Model playground** from the left navigation.
 
 The playground lets you:
 
@@ -17,7 +17,7 @@ This no-code environment helps you understand how models respond to different in
 
 ## Generating code samples
 
-One of the most useful features of the Chat playground is the **Code** button in the chat pane. At any point during your experimentation, you can select this button to see code samples to reproduce a chat session in your app.
+One of the most useful features of the Model playground is the **Code** button in the chat pane. At any point during your experimentation, you can select this button to see code samples to reproduce a chat session in your app.
 
 The generated code samples include choices for:
 
