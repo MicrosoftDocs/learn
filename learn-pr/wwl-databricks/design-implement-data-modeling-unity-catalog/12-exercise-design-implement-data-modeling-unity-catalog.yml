@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-implement-data-modeling-unity-catalog.exercise
+title: Exercise - Design and Implement Data Modeling with Azure Databricks
+metadata:
+  title: Exercise - Design and Implement Data Modeling with Azure Databricks
+  description: "Exercise - Design and Implement Data Modeling with Azure Databricks"
+  ms.date: 02/10/2026
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 45
+content: |
+  [!include[](includes/12-exercise-design-implement-data-modeling-unity-catalog.md)]
