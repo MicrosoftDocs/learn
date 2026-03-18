@@ -1,10 +1,8 @@
-The Foundry SDK provides a unified interface for managing agents, invoking tools, and handling responses. With the Foundry SDK, you can build complex agent workflows that integrate multiple tools and services, all while maintaining traceability and observability.
-
-The Responses API brings together capabilities from chat completions and the Assistants API in a unified experience. It provides stateful, multi-turn response generation, making it ideal for conversational AI applications. With the Microsoft Foundry SDK, you can access the Responses API through an OpenAI-compatible client.
+The OoenAI *Responses* API brings together capabilities from two previously separate APIs (*ChatCompletions* and *Assistants*) in a unified experience. It provides stateful, multi-turn response generation, making it ideal for conversational AI applications. You can access the Responses API through an OpenAI-compatible client using either the Foundry SDK or the OpenAI SDK.
 
 ## Understanding the Responses API
 
-The Responses API offers several advantages over traditional chat completions:
+The *Responses* API offers several advantages over traditional chat completions:
 
 - **Stateful conversations**: Maintains conversation context across multiple turns
 - **Unified experience**: Combines chat completions and Assistants API patterns
@@ -12,30 +10,11 @@ The Responses API offers several advantages over traditional chat completions:
 - **Simple integration**: Access through the OpenAI-compatible client
 
 > [!NOTE]
-> The Responses API is the recommended approach for generating AI responses in Microsoft Foundry applications. It replaces the older chat completions API for most scenarios.
-
-## Getting started with the Responses API
-
-To use the Responses API, you first need to connect to your project and obtain an OpenAI-compatible client:
-
-```python
-from azure.identity import DefaultAzureCredential
-from azure.ai.projects import AIProjectClient
-
-# Connect to the project
-project_endpoint = "https://<resource-name>.services.ai.azure.com/api/projects/<project-name>"
-project_client = AIProjectClient(
-    credential=DefaultAzureCredential(),
-    endpoint=project_endpoint
-)
-
-# Get OpenAI-compatible client
-openai_client = project_client.get_openai_client(api_version="2024-10-21")
-```
+> The *Responses* API is the recommended approach for generating AI responses in Microsoft Foundry applications. It replaces the older *ChatCompletions* API for most scenarios.
 
 ## Generating a simple response
 
-Once you have the OpenAI-compatible client, you can generate responses using the **responses.create()** method:
+With an OpenAI-compatible client, you can generate responses using the **responses.create()** method:
 
 ```python
 # Generate a response using the OpenAI-compatible client
@@ -49,6 +28,79 @@ print(response.output_text)
 ```
 
 The **input** parameter accepts a text string containing your prompt. The model generates a response based on this input.
+
+## Understanding response structure
+
+A response object contains several useful properties:
+
+- **output_text**: The generated text response
+- **id**: Unique identifier for this response
+- **status**: Response status (for example, "completed")
+- **usage**: Token usage information (input, output, and total tokens)
+- **model**: The model used to generate the response
+
+You can access these properties to handle responses effectively:
+
+```python
+response = openai_client.responses.create(
+    model="gpt-4.1",
+    input="Explain machine learning in simple terms."
+)
+
+print(f"Response: {response.output_text}")
+print(f"Response ID: {response.id}")
+print(f"Tokens used: {response.usage.total_tokens}")
+print(f"Status: {response.status}")
+```
+
+### Adding instructions
+
+In addition to the user *input*, you can provide *instructions* (often referred to as a *system prompt*) to guide the model's behavior:
+
+```python
+response = client.responses.create(
+    model="gpt-4.1",
+    instructions="You are a helpful AI assistant that answers questions clearly and concisely.",
+    input="Explain neural networks."
+)
+
+print(response.output_text)
+```
+
+## Controlling response generation
+
+You can control response generation with additional parameters:
+
+```python
+response = openai_client.responses.create(
+    model="gpt-4.1",
+    instructions="You are a helpful AI assistant that answers questions clearly and concisely.",
+    input="Write a creative story about AI.",
+    temperature=0.8,  # Higher temperature for more creativity
+    max_output_tokens=200  # Limit response length
+)
+
+print(response.output_text)
+```
+
+- **temperature**: Controls randomness (0.0-2.0). Higher values make output more creative and varied
+- **max_output_tokens**: Limits the maximum number of tokens in the response
+- **top_p**: Alternative to temperature for controlling randomness
+
+## Working with Foundry direct models
+
+When using the FoundrySDK or AzureOpenAI client to connect to a *project* endpoint, the Responses API works with both Azure OpenAI models and Foundry direct models (such as Microsoft Phi, DeepSeek, or other models hosted directly in Microsoft Foundry):
+
+```python
+# Using a Foundry direct model
+response = openai_client.responses.create(
+    model="microsoft-phi-4",  # Example Foundry direct model
+    instructions="You are a helpful AI assistant that answers questions clearly and concisely.",
+    input="What are the benefits of small language models?"
+)
+
+print(response.output_text)
+```
 
 ## Creating conversational experiences
 
@@ -75,84 +127,69 @@ response2 = openai_client.responses.create(
 print("Assistant:", response2.output_text)
 ```
 
-The **previous_response_id** parameter links responses together, maintaining conversation context across multiple API calls.
-
-You can also create and manage a conversation object directly that will maintain the full message history for you:
+In reality, the implementation is likely to be constructed as a loop in which a user can interactively enter messages based on each response received from the model:
 
 ```python
-from azure.identity import DefaultAzureCredential
-from azure.ai.projects import AIProjectClient
+# Track responses
+last_response_id = None
 
-try:
-    # Connect to project
-    project_endpoint = "https://<resource-name>.services.ai.azure.com/api/projects/<project-name>"
-    project_client = AIProjectClient(
-        credential=DefaultAzureCredential(),
-        endpoint=project_endpoint
-    )
-    
-    # Get OpenAI-compatible client
-    openai_client = project_client.get_openai_client(api_version="2024-10-21")
-    
-    # Create an agent
-    agent = project_client.agents.create_version(
-        agent_name="MyAgent",
-        definition=PromptAgentDefinition(
-            model=os.environ["AZURE_AI_MODEL_DEPLOYMENT_NAME"],
-            instructions="You are a helpful assistant that answers general questions",
-        ),
-    )
-    print(f"Agent created (id: {agent.id}, name: {agent.name}, version: {agent.version})")
+# Loop until the user wants to quit
+print("Assistant: Enter a prompt (or type 'quit' to exit)")
+while True:
+    input_text = input('\nYou: ')
+    if input_text.lower() == "quit":
+        print("Assistant: Goodbye!")
+        break
 
-    # Use the OpenAI-compatible client to create a conversation
-    conversation = openai_client.conversations.create(
-        items=[{"type": "message", "role": "user", "content": "What is the size of France in square miles?"}],
-    )
-    print(f"Created conversation with initial user message (id: {conversation.id})")
-
-    # Generate a response using the Responses API, referencing the agent
+    # Get a response
     response = openai_client.responses.create(
-        conversation=conversation.id,
-        extra_body={"agent_reference": {"name": agent.name, "type": "agent_reference"}},
+                model=model_name,
+                instructions="You are a helpful AI assistant that explains technology concepts clearly.",
+                input=input_text,
+                previous_response_id=last_response_id
     )
-    print(f"Response output: {response.output_text}")
-
-except Exception as ex:
-    print(f"Error: {ex}")
+    assistant_text = response.output_text
+    print("\nAssistant:", assistant_text)
+    last_response_id = response.id 
 ```
 
-It is important to note that keeping conversation history can increase token usage. For a single run, the active context window typically includes:
+The output from this example looks similar to this:
 
-- System instructions (agent instructions, safety rules)
-- Your current prompt
-- Conversation history (previous user + assistant messages)
-- Tool schemas (functions, OpenAPI specs, MCP tools, etc.)
-- Tool outputs (search results, code interpreter output, files)
-- Retrieved memory or documents (from memory stores, RAG, file search)
+```text
+Assistant: Enter a prompt (or type 'quit' to exit)
 
-All of these are concatenated, tokenized, and sent to the model together on every request. The SDK helps you manage state, but it does not automatically make token usage cheaper.
+You: What is machine learning?
+
+Assistant: Machine learning is a type of artificial intelligence (AI) that enables computers to learn from data and improve their performance over time without being explicitly programmed. It involves training algorithms on large datasets to recognize patterns, make predictions, or take actions based on those patterns. This allows machines to become more accurate and efficient in their tasks as they are exposed to more data.
+
+You: Can you give me an example?
+
+Assistant: Certainly! Let's look at a simple example of supervised learning—predicting house prices based on features like size, location, and number of rooms.
+Imagine you want to build a machine learning model that can predict the price of a house based on various factors.
+...
+    { the example provided in the model response may be extensice}
+...
+
+You: quit
+
+Assistant: Goodbye!
+```
+
+As the user enters new input in each turn, the data sent to the model includes the *Instructions* system message, the *input* from the user, and the *previous* response received from the model. In this way, the new input is grounded in the context provided by the response the model generated for the previous input.
 
 ### Alternative: Manual conversation chaining
 
 You can manage conversations manually by building the message history yourself. This approach gives you more control over what context is included:
 
 ```python
-from azure.identity import DefaultAzureCredential
-from azure.ai.projects import AIProjectClient
-
 try:
-    # Connect to project
-    project_endpoint = "https://<resource-name>.services.ai.azure.com/api/projects/<project-name>"
-    project_client = AIProjectClient(
-        credential=DefaultAzureCredential(),
-        endpoint=project_endpoint
-    )
-    
-    openai_client = project_client.get_openai_client(api_version="2024-10-21")
-    
     # Start with initial message
     conversation_history = [
-        {"type": "message", "role": "user", "content": "What is machine learning?"}
+        {
+            "type": "message",
+            "role": "user",
+            "content": "What is machine learning?"
+        }
     ]
     
     # First response
@@ -186,52 +223,18 @@ except Exception as ex:
 ```
 
 This manual approach is useful when you need to:
+
 - Customize which messages are included in context
 - Implement conversation pruning to manage token limits
 - Store and restore conversation history from a database
 
-## Understanding response structure
-
-A response object contains several useful properties:
-
-- **output_text**: The generated text response
-- **id**: Unique identifier for this response
-- **status**: Response status (for example, "completed")
-- **usage**: Token usage information (input, output, and total tokens)
-- **model**: The model used to generate the response
-
-You can access these properties to handle responses effectively:
-
-```python
-response = openai_client.responses.create(
-    model="gpt-4.1",
-    input="Explain neural networks briefly."
-)
-
-print(f"Response: {response.output_text}")
-print(f"Response ID: {response.id}")
-print(f"Tokens used: {response.usage.total_tokens}")
-print(f"Status: {response.status}")
-```
-
-## Retrieving previous responses
+### Retrieving specific previous responses
 
 The Responses API maintains response history, allowing you to retrieve previous responses:
 
 ```python
-from azure.identity import DefaultAzureCredential
-from azure.ai.projects import AIProjectClient
-
-try:
-    # Connect and get client
-    project_endpoint = "https://<resource-name>.services.ai.azure.com/api/projects/<project-name>"
-    project_client = AIProjectClient(
-        credential=DefaultAzureCredential(),
-        endpoint=project_endpoint
-    )
-    
-    openai_client = project_client.get_openai_client(api_version="2024-10-21")
-    
+try:   
+   
     # Retrieve a previous response
     response_id = "resp_67cb61fa3a448190bcf2c42d96f0d1a8"  # Example ID
     previous_response = openai_client.responses.retrieve(response_id)
@@ -242,37 +245,92 @@ except Exception as ex:
     print(f"Error: {ex}")
 ```
 
-## Controlling response generation
+### Context window considerations
 
-You can control response generation with additional parameters:
+The **previous_response_id** parameter links responses together, maintaining conversation context across multiple API calls.
+
+It is important to note that keeping conversation history can increase token usage. For a single run, the active context window can include:
+
+- System instructions (instructions, safety rules)
+- Your current prompt
+- Conversation history (previous user + assistant messages)
+- Tool schemas (functions, OpenAPI specs, MCP tools, etc.)
+- Tool outputs (search results, code interpreter output, files)
+- Retrieved memory or documents (from memory stores, RAG, file search)
+
+All of these are concatenated, tokenized, and sent to the model together on every request. The SDK helps you manage state, but it does not automatically make token usage cheaper.
+
+## Creating responsive chat apps
+
+Responses from a model can take some time to generate depending on factors like the specific model being used, the context window size, and the size of the prompt. User's may become frustrated if the app appears to "freeze" while waiting for a response, so it's important to consider app responsiveness in your implementation.
+
+### Streaming responses
+
+For long responses, you can use streaming to receive output incrementally - so the user sees partially complete responses as output becomes available:
 
 ```python
-response = openai_client.responses.create(
+stream = openai_client.responses.create(
     model="gpt-4.1",
-    input="Write a creative story about AI.",
-    temperature=0.8,  # Higher temperature for more creativity
-    max_output_tokens=200  # Limit response length
+    input="Write a short story about a robot learning to paint.",
+    stream=True
 )
 
-print(response.output_text)
+for event in stream:
+    print(event, end="", flush=True)
 ```
 
-- **temperature**: Controls randomness (0.0-2.0). Higher values make output more creative and varied
-- **max_output_tokens**: Limits the maximum number of tokens in the response
-- **top_p**: Alternative to temperature for controlling randomness
-
-## Working with Foundry direct models
-
-The Responses API works with both Azure OpenAI models and Foundry direct models (such as Microsoft Phi, DeepSeek, or other models hosted directly in Microsoft Foundry):
+If you're tracking conversation history when streaming, you can get the response ID when the stream ends, like this:
 
 ```python
-# Using a Foundry direct model
-response = openai_client.responses.create(
-    model="microsoft-phi-4",  # Example Foundry direct model
-    input="What are the benefits of small language models?"
+stream = openai_client.responses.create(
+    model="gpt-4.1",
+    input="Write a short story about a robot learning to paint.",
+    stream=True
 )
-
-print(response.output_text)
+for event in stream:
+                if event.type == "response.output_text.delta":
+                    print(event.delta, end="")
+                elif event.type == "response.completed":
+                    response_id = event.response.id
 ```
 
-By using the Responses API through the Microsoft Foundry SDK, you can build sophisticated conversational AI applications that maintain context, support multiple model types, and provide a unified development experience.
+### Async usage
+
+For high-performance applications, you can use an asynchronous client that allows you to make non-blocking API calls. Asynchronous usage is ideal for long-running requests or when you want to handle multiple requests concurrently without blocking your application. To use it, import `AsyncOpenAI` instead of `OpenAI` and use `await` with each API call:
+
+```python
+import asyncio
+from openai import AsyncOpenAI
+
+client = AsyncOpenAI(
+    base_url="https://<resource-name>.openai.azure.com/openai/v1/",
+    api_key=token_provider,
+)
+
+async def main():
+    response = await client.responses.create(
+        model="gpt-4.1",
+        input="Explain quantum computing briefly."
+    )
+    print(response.output_text)
+
+asyncio.run(main())
+```
+
+Async streaming works the same way:
+
+```python
+async def stream_response():
+    stream = await client.responses.create(
+        model="gpt-4.1",
+        input="Write a haiku about coding.",
+        stream=True
+    )
+    
+    async for event in stream:
+        print(event, end="", flush=True)
+
+asyncio.run(stream_response())
+```
+
+By using the *Responses* API through the Microsoft Foundry SDK, you can build sophisticated conversational AI applications that maintain context, support multiple model types, and provide a responsive user experience.
