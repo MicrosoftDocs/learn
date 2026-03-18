@@ -1,119 +1,11 @@
-The OpenAI SDK is the official client library for calling the OpenAI API. Use it when you want full OpenAI API compatibility and maximum portability with existing OpenAI code. The OpenAI SDK supports the Responses API for interacting with models. It also supports chat completions and image generation for Azure OpenAI endpoints.
+The OpenAI *ChatCompletions* API is commonly used across generative AI models and platforms. Although the *Responses* API is recommended for new project development, it's likely that you'll encounter scenarios where the *ChatCompletions* API is useful for code maintenance of cross-platform compatibility.
 
-## Installing the SDK
+## Submitting a prompt
 
-Install the OpenAI SDK along with Azure identity support:
-
-```bash
-pip install openai azure-identity
-```
-
-## Creating a client
-
-Create an OpenAI client by providing your Azure OpenAI endpoint and credentials for Entra ID authentication:
+The *ChatCompletions* API uses collections of *message* objects in JSON format to encapsulate prompts:
 
 ```python
-from openai import OpenAI
-from azure.identity import DefaultAzureCredential, get_bearer_token_provider
-
-token_provider = get_bearer_token_provider(
-    DefaultAzureCredential(), "https://ai.azure.com/.default"
-)
-
-client = OpenAI(
-    base_url="https://<resource-name>.openai.azure.com/openai/v1/",
-    api_key=token_provider,
-)
-```
-
-> [!TIP]
-> Find your endpoint and API keys in the Azure portal under your resource's **Keys and Endpoint** page, or in the Microsoft Foundry portal.
-
-### Authentication options
-
-In addition to Microsoft Entra ID (recommended), you can authenticate using an API key or environment variables.
-
-**API key authentication:**
-
-```python
-import os
-from openai import OpenAI
-
-client = OpenAI(
-    api_key=os.getenv("AZURE_OPENAI_API_KEY"),
-    base_url="https://<resource-name>.openai.azure.com/openai/v1/"
-)
-```
-
-> [!IMPORTANT]
-> Use API keys with caution. Store them securely in Azure Key Vault and never include them directly in your code.
-
-**Environment variables:**
-
-If you set `OPENAI_BASE_URL` and `OPENAI_API_KEY` environment variables, the client uses them automatically:
-
-```python
-from openai import OpenAI
-
-client = OpenAI()  # Uses environment variables
-```
-
-## Generating responses
-
-The Responses API is the primary way to generate AI responses. Use `responses.create()` with your model deployment name and input:
-
-```python
-response = client.responses.create(
-    model="gpt-4.1",  # Your model deployment name
-    input="What is the size of France in square miles?"
-)
-
-print(response.output_text)
-```
-
-### Adding instructions
-
-Provide system instructions to guide the model's behavior:
-
-```python
-response = client.responses.create(
-    model="gpt-4.1",
-    instructions="You are a helpful AI assistant that answers questions clearly and concisely.",
-    input="Explain machine learning in simple terms."
-)
-
-print(response.output_text)
-```
-
-### Maintaining conversation context
-
-Link responses together using `previous_response_id` to maintain conversation context:
-
-```python
-# First turn
-response1 = client.responses.create(
-    model="gpt-4.1",
-    instructions="You are a helpful assistant.",
-    input="What is Python?"
-)
-print(response1.output_text)
-
-# Continue the conversation
-response2 = client.responses.create(
-    model="gpt-4.1",
-    instructions="You are a helpful assistant.",
-    input="What are its main uses?",
-    previous_response_id=response1.id
-)
-print(response2.output_text)
-```
-
-## Using chat completions
-
-For compatibility with existing code, you can use the chat completions API:
-
-```python
-completion = client.chat.completions.create(
+completion = openai_client.chat.completions.create(
     model="gpt-4o",  # Your model deployment name
     messages=[
         {"role": "system", "content": "You are a helpful assistant."},
@@ -124,96 +16,112 @@ completion = client.chat.completions.create(
 print(completion.choices[0].message.content)
 ```
 
-## Streaming responses
+## Retaining conversational context
 
-For long responses, use streaming to receive output incrementally:
+Unlike the *Responses* API, the *ChatCompletins* API does not provide a stateful response tracking feature. To retain conversational context, you must write code to manually track previous prompts and responses.
 
 ```python
-stream = client.responses.create(
-    model="gpt-4.1",
-    input="Write a short story about a robot learning to paint.",
-    stream=True
+# Initial messages
+conversation_messages=[
+    {
+        "role": "system",
+        "content": "You are a helpful AI assistant that answers questions and provides information."
+    }
+]
+
+# Add the first user message
+conversation_messages.append(
+    {"role": "user",
+    "content": "When was Microsoft founded?"}
 )
 
-for event in stream:
-    print(event, end="", flush=True)
-```
+# Get a completion
+completion = openai_client.chat.completions.create(
+    model="gpt-4o",
+    messages=conversation_messages
+)
+assistant_message = completion.choices[0].message.content
+print("Assistant:", assistant_text)
 
-## Async usage
-
-For high-performance applications, `AsyncOpenAI` is available as the asynchronous client that allows you to make non-blocking API calls. Asynchronous usage is ideal for long-running requests or when you want to handle multiple requests concurrently without blocking your application. To use it, import `AsyncOpenAI` instead of `OpenAI` and use `await` with each API call:
-
-
-```python
-import asyncio
-from openai import AsyncOpenAI
-
-client = AsyncOpenAI(
-    base_url="https://<resource-name>.openai.azure.com/openai/v1/",
-    api_key=token_provider,
+# Append the response to the conversation
+conversation_messages.append(
+    {"role": "assistant", "content": assistant_text}
 )
 
-async def main():
-    response = await client.responses.create(
-        model="gpt-4.1",
-        input="Explain quantum computing briefly."
-    )
-    print(response.output_text)
+# Add the next user message
+conversation_messages.append(
+    {"role": "user",
+    "content": "Who founded it?"}
+)
 
-asyncio.run(main())
+# Get a completion
+completion = openai_client.chat.completions.create(
+    model="gpt-4o",
+    messages=conversation_messages
+)
+assistant_message = completion.choices[0].message.content
+print("Assistant:", assistant_text)
+
+# and so on...
 ```
 
-Async streaming works the same way:
+In a real application, the conversation is likely to be implemented in a loop; like this:
 
 ```python
-async def stream_response():
-    stream = await client.responses.create(
-        model="gpt-4.1",
-        input="Write a haiku about coding.",
-        stream=True
+# Initial messages
+conversation_messages=[
+    {
+        "role": "system",
+        "content": "You are a helpful AI assistant that answers questions and provides information."
+    }
+]
+
+# Loop until the user wants to quit
+print("Assistant: Enter a prompt (or type 'quit' to exit)")
+while True:
+    input_text = input('\nYou: ')
+    if input_text.lower() == "quit":
+        print("Assistant: Goodbye!")
+        break
+
+    # Add the user message
+    conversation_messages.append(
+        {"role": "user",
+        "content": input_text}
     )
+
+    # Get a completion
+    completion = openai_client.chat.completions.create(
+        model="gpt-4o",
+        messages=conversation_messages
+    )
+    assistant_message = completion.choices[0].message.content
+    print("\nAssistant:", assistant_message)
     
-    async for event in stream:
-        print(event, end="", flush=True)
-
-asyncio.run(stream_response())
+    # Append the response to the conversation
+    conversation_messages.append(
+        {"role": "assistant", "content": assistant_message}
+    )
 ```
 
-## Controlling response generation
+The output from this example looks similar to this:
 
-Use parameters to control how the model generates responses:
+```text
+Assistant: Enter a prompt (or type 'quit' to exit)
 
-```python
-response = client.responses.create(
-    model="gpt-4.1",
-    input="Write a creative story about AI.",
-    temperature=0.8,  # Higher = more creative (0.0-2.0)
-    max_output_tokens=200  # Limit response length
-)
+You: When was Microsoft founded?
 
-print(response.output_text)
+Assistant: Microsoft was founded on April 4, 1975 in Albuquerque, New Mexico, USA.
+
+You: Who founded it?
+
+Assistant: Microsoft was founded by Bill Gates and Paul Allen.
+
+You: quit
+
+Assistant: Goodbye!
 ```
 
-## Azure OpenAI support
+Each new user prompt and completion is added to the conversation, and the entire conversation history is submitted in each turn.
 
-In some cases, you may want to support different Azure OpenAI patterns. To use this library with Azure OpenAI, use the `AzureOpenAI` class instead of the `OpenAI` class and specify the API version.
-
-```python
-# gets the API Key from environment variable AZURE_OPENAI_API_KEY
-client = AzureOpenAI(
-    api_version="2023-07-01-preview",
-    azure_endpoint="https://example-endpoint.openai.azure.com",
-)
-
-completion = client.chat.completions.create(
-    model="deployment-name",
-    messages=[
-        {
-            "role": "user",
-            "content": "How do I output all files in a directory using Python?",
-        },
-    ],
-)
-```
-
-The OpenAI SDK provides a straightforward way to integrate AI capabilities into your applications with full compatibility across OpenAI and Azure OpenAI endpoints.
+While not a fully-featured as the *Responses* API, the *ChatCompletions* API is well-established in the generative AI model ecosystem, so it's useful to be familiar with it.

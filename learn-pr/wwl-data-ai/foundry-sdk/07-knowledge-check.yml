@@ -6,7 +6,7 @@ metadata:
   description: Check your understanding of the Microsoft Foundry SDK.
   author: ivorb
   ms.author: berryivor
-  ms.date: 02/20/2026
+  ms.date: 03/18/2026
   ms.topic: unit
   ai-usage: ai-generated
   ms.collection:
@@ -15,58 +15,58 @@ durationInMinutes: 5
 quiz:
   title: Check your knowledge
   questions:
-  - content: What is the primary purpose of the project client in the Microsoft Foundry SDK?
-    choices:
-    - content: To generate AI responses using the Responses API
-      isCorrect: false
-      explanation: Incorrect. The OpenAI-compatible client is used to generate AI responses.
-    - content: To access Foundry-native operations like listing connections and managing project properties
-      isCorrect: true
-      explanation: Correct. The project client provides access to Foundry-native operations that don't have OpenAI equivalents.
-    - content: To deploy new AI models to the project
-      isCorrect: false
-      explanation: Incorrect. Model deployment is done through the Foundry portal, not the SDK.
-  - content: Which method do you use to generate responses with the Responses API?
-    choices:
-    - content: client.chat.completions.create()
-      isCorrect: false
-      explanation: Incorrect. This is the older chat completions API method.
-    - content: client.responses.create()
-      isCorrect: true
-      explanation: Correct. The Responses API uses the responses.create() method.
-    - content: client.generate.response()
-      isCorrect: false
-      explanation: Incorrect. This method doesn't exist in the SDK.
-  - content: What does the previous_response_id parameter do in the Responses API?
-    choices:
-    - content: It links responses together to maintain conversation context
-      isCorrect: true
-      explanation: Correct. The previous_response_id parameter maintains conversation context across multiple API calls.
-    - content: It retrieves an older response from the database
-      isCorrect: false
-      explanation: Incorrect. Use the responses.retrieve() method to retrieve previous responses.
-    - content: It deletes previous responses to save storage space
-      isCorrect: false
-      explanation: Incorrect. The parameter doesn't delete responses.
-  - content: Which package must you install to use the Microsoft Foundry SDK in Python?
-    choices:
-    - content: Package `azure-foundry`
-      isCorrect: false
-      explanation: Incorrect. This package doesn't exist.
-    - content: Package `azure-ai-projects`
-      isCorrect: true
-      explanation: Correct. The `azure-ai-projects` package provides the Microsoft Foundry SDK for Python.
-    - content: Package `microsoft-foundry-sdk`
-      isCorrect: false
-      explanation: Incorrect. This package doesn't exist.
-  - content: What advantage does the Responses API offer over traditional chat completions?
-    choices:
-    - content: It works only with Azure OpenAI models
-      isCorrect: false
-      explanation: Incorrect. The Responses API works with both Azure OpenAI and Foundry direct models.
-    - content: It provides stateful, multi-turn conversation support
-      isCorrect: true
-      explanation: Correct. The Responses API maintains conversation context and provides stateful interactions.
-    - content: It requires less authentication configuration
-      isCorrect: false
-      explanation: Incorrect. Both APIs require the same authentication approach.
+    - content: What is the primary purpose of the project client in the Microsoft Foundry SDK?
+      choices:
+        - content: To generate AI responses using the Responses API
+          isCorrect: false
+          explanation: Incorrect. The OpenAI-compatible client is used to generate AI responses.
+        - content: To access Foundry-native operations like listing connections and managing project properties
+          isCorrect: true
+          explanation: Correct. The project client provides access to Foundry-native operations that don't have OpenAI equivalents.
+        - content: To deploy new AI models to the project
+          isCorrect: false
+          explanation: Incorrect. Model deployment is done through the Foundry portal, not the SDK.
+    - content: Which method do you use to generate responses with the Responses API?
+      choices:
+        - content: client.chat.completions.create()
+          isCorrect: false
+          explanation: Incorrect. This is the older chat completions API method.
+        - content: client.responses.create()
+          isCorrect: true
+          explanation: Correct. The Responses API uses the responses.create() method.
+        - content: client.generate.response()
+          isCorrect: false
+          explanation: Incorrect. This method doesn't exist in the SDK.
+    - content: What does the previous_response_id parameter do in the Responses API?
+      choices:
+        - content: It links responses together to maintain conversation context
+          isCorrect: true
+          explanation: Correct. The previous_response_id parameter maintains conversation context across multiple API calls.
+        - content: It retrieves an older response from the database
+          isCorrect: false
+          explanation: Incorrect. Use the responses.retrieve() method to retrieve previous responses.
+        - content: It deletes previous responses to save storage space
+          isCorrect: false
+          explanation: Incorrect. The parameter doesn't delete responses.
+    - content: Which package must you install to use the Microsoft Foundry SDK in Python?
+      choices:
+        - content: Package `azure-foundry`
+          isCorrect: false
+          explanation: Incorrect. This package doesn't exist.
+        - content: Package `azure-ai-projects`
+          isCorrect: true
+          explanation: Correct. The `azure-ai-projects` package provides the Microsoft Foundry SDK for Python.
+        - content: Package `microsoft-foundry-sdk`
+          isCorrect: false
+          explanation: Incorrect. This package doesn't exist.
+    - content: What advantage does the Responses API offer over the ChatCompletions API?
+      choices:
+        - content: It works only with Azure OpenAI models
+          isCorrect: false
+          explanation: Incorrect. The Responses API works with both Azure OpenAI and Foundry direct models.
+        - content: It provides stateful, multi-turn conversation support
+          isCorrect: true
+          explanation: Correct. The Responses API maintains conversation context and provides stateful interactions.
+        - content: It requires less authentication configuration
+          isCorrect: false
+          explanation: Incorrect. Both APIs require the same authentication approach.
