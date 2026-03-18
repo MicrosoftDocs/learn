@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.github.deploy-to-azure.exercise
+uid: learn.github.github-actions-cd.exercise
 title: Exercise - Deploy a containerized app to Azure with GitHub Actions
 metadata:
   title: Exercise - Deploy a containerized app to Azure with GitHub Actions
