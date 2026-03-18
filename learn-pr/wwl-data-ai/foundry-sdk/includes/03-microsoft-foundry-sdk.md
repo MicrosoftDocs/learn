@@ -1,6 +1,6 @@
-Microsoft Foundry provides a unified approach for building AI applications by connecting to a single project endpoint. The Microsoft Foundry SDK enables developers to work with resources in a Foundry project through language-specific client libraries, making it easier to build AI apps that leverage models, connections, and other resources.
+Microsoft Foundry supports two SDKs for building AI applications: the **Foundry SDK** for project-level features like agents, evaluations, and connections, and the **OpenAI SDK** for model inference with full OpenAI API compatibility.
 
-## Understanding the Microsoft Foundry SDK
+## Understanding the Foundry SDK
 
 The Microsoft Foundry SDK provides programmatic access to resources in your projects through a REST API and language-specific client libraries. Available SDKs include:
 
@@ -11,7 +11,7 @@ The Microsoft Foundry SDK provides programmatic access to resources in your proj
 > [!NOTE]
 > This module uses Python code examples for common tasks. You can refer to the language-specific SDK documentation for equivalent code in your preferred language. Each SDK is developed and maintained independently, so some functionality may be at different stages of implementation.
 
-## Installing the SDK
+### Installing the SDK
 
 To use the Azure AI Projects library in Python, install the **azure-ai-projects** package from PyPI along with supporting packages:
 
@@ -19,32 +19,16 @@ To use the Azure AI Projects library in Python, install the **azure-ai-projects*
 pip install azure-ai-projects azure-identity openai
 ```
 
-## Two client types
-
-The Microsoft Foundry SDK exposes two distinct client types to support different operations:
-
-### Project client
+### Foundry project client
 
 The **project client** (`AIProjectClient`) provides access to Foundry-native operations that don't have OpenAI equivalents. Use the project client to:
 
-- List and retrieve resource connections
-- Access project properties and configuration
-- Enable application tracing
+- Retrieve resource connections
+- Access project configuration
+- Enable tracing
 - Manage datasets and indexes
 
-### OpenAI-compatible client
-
-The **OpenAI-compatible client** handles operations that build on OpenAI concepts and patterns. Use this client for:
-
-- Generating responses with the Responses API
-- Working with agents
-- Running evaluations
-- Fine-tuning models
-- Accessing Foundry direct models (non-Azure-OpenAI models)
-
-Most applications use both clients: the project client for setup and configuration, and the OpenAI-compatible client for generating AI responses.
-
-## Connecting to a project
+### Connecting to a project
 
 Each Foundry project has a unique endpoint that you can find on the project's **Overview** page in the Foundry portal at [https://ai.azure.com](https://ai.azure.com?azure-portal=true).
 
@@ -73,23 +57,79 @@ project_client = AIProjectClient(
 > [!TIP]
 > To access the project successfully, the code must run in an authenticated Azure session. For example, you can use the Azure CLI `az login` command to sign in before running the code.
 
-## Getting an OpenAI-compatible client
+## Understanding the OpenAI SDK
 
-Once you have a project client, you can retrieve an OpenAI-compatible client to work with models and generate responses:
+The OpenAI SDK is the official client library for calling the OpenAI API. It handles HTTP requests, authentication, retries, and response parsing. The SDK works with OpenAI-hosted models, Azure OpenAI deployments, and Foundry models using the same patterns.
 
-```python
-from azure.identity import DefaultAzureCredential
-from azure.ai.projects import AIProjectClient
+### Installing the SDK
 
-# Connect to the project
-project_endpoint = "https://<resource-name>.services.ai.azure.com/api/projects/<project-name>"
-project_client = AIProjectClient(
-    credential=DefaultAzureCredential(),
-    endpoint=project_endpoint
-)
+To use the OpenAI library in Python, install the **openai** package from PyPI along with supporting packages:
 
-# Get an OpenAI-compatible client
-openai_client = project_client.get_openai_client(api_version="2024-10-21")
+```bash
+pip install openai azure-identity
 ```
 
-The OpenAI-compatible client provides access to the Responses API and other OpenAI-style operations, which you'll learn about in subsequent units.
+### OpenAI client
+
+The **OpenAI client** handles model inference operations. Use it for:
+
+- Generating responses with the Responses API
+- Chat completions and image generation
+- Accessing Foundry direct models (non-Azure OpenAI models)
+
+### Creating an OpenAI client
+
+Each Foundry project includes an OpenAI endpoint that you can find on the project's **Overview** page in the Foundry portal at [https://ai.azure.com](https://ai.azure.com?azure-portal=true).
+
+The project endpoint follows this format:
+```
+https://<resource-name>.openai.azure.com/openai/v1
+```
+
+Use this endpoint to create an **AIProjectClient** object:
+
+Create an OpenAI client with your endpoint and Azure credentials:
+
+```python
+from openai import OpenAI
+from azure.identity import DefaultAzureCredential, get_bearer_token_provider
+
+token_provider = get_bearer_token_provider(
+    DefaultAzureCredential(), "https://ai.azure.com/.default"
+)
+
+client = OpenAI(  
+  base_url = "https://YOUR-RESOURCE-NAME.openai.azure.com/openai/v1/",  
+  api_key=token_provider,
+)
+```
+
+## Choosing between the Foundry SDK and OpenAI SDK
+
+Microsoft Foundry supports two approaches for building AI applications. Each serves different purposes, and understanding when to use each one helps you build the right solution.
+
+### When to use the Foundry SDK
+
+Use the Foundry SDK when your application needs Foundry-specific capabilities:
+
+- **Foundry Agent Service** for building and managing AI agents
+- **Tool invocation and approval** workflows
+- **Cloud evaluations** for testing and validating AI responses
+- **Tracing and observability** for monitoring application behavior
+- **Foundry direct models** (non-Azure OpenAI models available through the model catalog)
+- **Project metadata, connections, and governance** features
+
+Microsoft recommends the Foundry SDK when building apps with agents, evaluations, or Foundry-specific features.
+
+### When to use the OpenAI SDK
+
+Use the OpenAI SDK when you need maximum compatibility with the OpenAI API:
+
+- **Full OpenAI API compatibility** for existing code and tooling
+- **Portability** between OpenAI and Azure OpenAI deployments
+- **Chat Completions, Responses, and Images** APIs
+- **Minimal dependency** on Foundry-specific concepts
+
+The OpenAI SDK is ideal for model inference workloads where you want existing OpenAI code to work with minimal changes. However, this approach doesn't provide Foundry-specific features like agents or evaluations.
+
+Microsoft Foundry gives you flexibility in how you build AI applications. Use the Foundry SDK with `AIProjectClient` when you need project-level features like agents, evaluations, tracing, and connections. Use the OpenAI SDK when you need straightforward model inference with maximum OpenAI compatibility. Both SDKs work with your Foundry project endpoint, so you can combine them as needed in your applications. You can also use both SDKs together in the same application—the Foundry SDK for project features and the OpenAI SDK for model inference.
