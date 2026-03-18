@@ -10,6 +10,6 @@ A partial list of the fully managed databases available on Azure includes:
 
 - [Azure Cosmos DB](https://azure.microsoft.com/products/cosmos-db)
 
-- [Azure Cache for Redis](https://azure.microsoft.com/products/cache/)
+- [Azure Managed Redis](https://azure.microsoft.com/products/managed-redis/)
 
 You can find a complete, up-to-date list of fully managed databases in the [Types of Databases on Azure](https://azure.microsoft.com/products/category/databases/) article.
