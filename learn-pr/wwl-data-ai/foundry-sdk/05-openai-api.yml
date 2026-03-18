@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.foundry-sdk.openai-api
-title: Generate responses with the OpenAI SDK
+title: Generate responses with the ChatCompletions API
 metadata:
-  title: Generate responses with the OpenAI SDK
-  description: Learn to use the OpenAI SDK to generate AI responses in applications.
+  title: Generate responses with the ChatCompletions API
+  description: Learn to use the ChatCompletions API to generate AI responses in applications.
   author: ivorb
   ms.author: berryivor
-  ms.date: 03/17/2026
+  ms.date: 03/18/2026
   ms.topic: unit
   ai-usage: ai-generated
   ms.collection:
