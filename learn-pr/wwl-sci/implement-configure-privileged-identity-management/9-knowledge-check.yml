@@ -1,0 +1,73 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-configure-privileged-identity-management.knowledge-check
+title: Module assessment
+metadata:
+  title: Module Assessment
+  description: "Assess your understanding of implementing and configuring Privileged Identity Management (PIM)."
+  ms.date: 03/18/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  module_assessment: true
+  ai_generated_module_assessment: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/9-knowledge-check.md)]
+quiz:
+  title: ""
+  questions:
+  - content: "A security engineer is reviewing PIM assignments for a team of 15 analysts who all need the same eligible access to a production resource group. Each analyst currently has an individual eligible assignment with slightly different activation durations. What is the most significant risk of this configuration?"
+    choices:
+    - content: "The analysts will experience more activation friction than necessary."
+      isCorrect: false
+      explanation: "Activation friction is a usability concern, not a security risk. The primary problem is the inconsistency across individual assignments."
+    - content: "Non-uniform activation settings across individual assignments create policy drift that auditors flag and attackers probe for."
+      isCorrect: true
+      explanation: "When each eligible assignment has different settings, policy changes must be applied manually to every assignment. Any missed update creates an inconsistency that weakens the access control posture."
+    - content: "Individual eligible assignments exceed the maximum number of assignments allowed per resource group."
+      isCorrect: false
+      explanation: "There is no platform limit on the number of eligible assignments per resource group. The issue is configuration consistency, not quantity."
+  - content: "An AI pipeline agent needs read access to an Azure Blob Storage container to retrieve inference inputs. A security engineer proposes making the agent's identity eligible for the Storage Blob Data Reader role in PIM. Why is this approach incorrect?"
+    choices:
+    - content: "The Storage Blob Data Reader role doesn't support PIM eligible assignments."
+      isCorrect: false
+      explanation: "Azure RBAC roles can be assigned as eligible in PIM. The problem isn't the role — it's the identity type."
+    - content: "Managed identities and service principals can't perform interactive PIM activation, so eligible assignments aren't supported for workload identities."
+      isCorrect: true
+      explanation: "PIM eligible assignments require interactive activation — MFA, justification, and approval. Managed identities and service principals authenticate non-interactively, so they can't complete activation steps. The correct model is a permanent, scoped RBAC assignment."
+    - content: "PIM for Azure resource roles only supports user identities at the subscription scope, not resource scope."
+      isCorrect: false
+      explanation: "PIM supports eligible assignments at subscription, resource group, and individual resource scope. The limitation described doesn't exist."
+  - content: "A team is configuring PIM for a Global Administrator role. They want to ensure that no single engineer can elevate to Global Administrator without a second person approving the request. Which PIM activation control should they configure?"
+    choices:
+    - content: "Set the maximum activation duration to 1 hour."
+      isCorrect: false
+      explanation: "Limiting activation duration prevents prolonged access after a task completes, but it doesn't require a second person to approve the elevation."
+    - content: "Require justification on activation."
+      isCorrect: false
+      explanation: "Requiring justification creates an audit record of why access was requested, but it doesn't prevent unilateral escalation — the user can write any justification and activate without another person's involvement."
+    - content: "Require approval to activate the role, and designate at least two approvers."
+      isCorrect: true
+      explanation: "The approval control requires that a designated approver grants the request before the role becomes active. This prevents any single engineer from unilaterally elevating to Global Administrator."
+  - content: "A production subscription is protected by PIM with eligible assignments. The organization's two primary PIM approvers are both unavailable during a critical outage. Which account type is specifically designed to handle this scenario?"
+    choices:
+    - content: "A service account with an active Global Administrator assignment."
+      isCorrect: false
+      explanation: "Service accounts with permanent active assignments create standing privilege — the problem PIM is designed to eliminate. They also don't address the approval dependency issue."
+    - content: "A break-glass emergency access account with a permanent Global Administrator assignment, excluded from PIM activation requirements."
+      isCorrect: true
+      explanation: "Break-glass accounts exist precisely because PIM's activation path — which depends on approver availability, MFA service health, and federation — can fail during the outage conditions that require emergency access. They're excluded from normal JIT flows, not from governance."
+    - content: "An additional eligible assignment for a backup administrator with a lower approval threshold."
+      isCorrect: false
+      explanation: "Lowering the approval threshold still requires the approval service to be functioning. If the issue is that approvers are unavailable or the service itself is degraded, a lower threshold doesn't solve the dependency problem."
+  - content: "A security engineer is configuring PIM for Groups to manage access to a set of production Azure resources. They create a standard Microsoft Entra security group, assign it the necessary roles, and make team members eligible for group membership. What security risk does using a role-assignable group instead mitigate?"
+    choices:
+    - content: "A standard group doesn't support eligible membership assignments in PIM for Groups."
+      isCorrect: false
+      explanation: "PIM for Groups works with both standard security groups and role-assignable groups. The difference is the governance controls around who can modify group membership, not whether PIM is supported."
+    - content: "Lower-privileged administrators such as Groups Administrators can modify standard group membership outside the PIM workflow, potentially bypassing the activation audit trail."
+      isCorrect: true
+      explanation: "A standard group can be modified by lower-privileged roles such as Groups Administrator or Directory Writer, without triggering a PIM approval or audit entry. A role-assignable group requires at least Privileged Role Administrator to make membership changes, reducing the risk of unauthorized bypass."
+    - content: "Standard groups don't support MFA enforcement during PIM activation."
+      isCorrect: false
+      explanation: "MFA enforcement during activation is a PIM role settings configuration — it applies based on the group's PIM policy, not on whether the group is role-assignable."
