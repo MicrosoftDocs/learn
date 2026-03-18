@@ -10,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 60
 content: |
-  [!include[](includes/deploy-to-azure-exercise.md)]
+  [!include[](includes/exercise.md)]
