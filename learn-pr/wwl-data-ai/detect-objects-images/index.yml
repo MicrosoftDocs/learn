@@ -1,5 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.detect-objects-images
+hidden: true
 metadata:
   title: Detect objects in images
   description: Detect objects in images
@@ -24,23 +25,22 @@ prerequisites: |
   - Programming experience.
 iconUrl: /training/achievements/artificial-intelligence-detect-objects.svg
 levels:
-- intermediate
+  - intermediate
 roles:
-- ai-engineer
-- developer
+  - ai-engineer
+  - developer
 products:
-- foundry-tools
-- azure-custom-vision
+  - foundry-tools
+  - azure-custom-vision
 subjects:
-- artificial-intelligence
+  - artificial-intelligence
 units:
-- learn.wwl.detect-objects-images.introduction
-- learn.wwl.detect-objects-images.understand-object-detection
-- learn.wwl.detect-objects-images.train-object-detector
-- learn.wwl.detect-objects-images.use-trained-detector
-- learn.wwl.detect-objects-images.exercise-custom-vision
-- learn.wwl.detect-objects-images.knowledge-check
-- learn.wwl.detect-objects-images.summary
+  - learn.wwl.detect-objects-images.introduction
+  - learn.wwl.detect-objects-images.understand-object-detection
+  - learn.wwl.detect-objects-images.train-object-detector
+  - learn.wwl.detect-objects-images.use-trained-detector
+  - learn.wwl.detect-objects-images.exercise-custom-vision
+  - learn.wwl.detect-objects-images.knowledge-check
+  - learn.wwl.detect-objects-images.summary
 badge:
   uid: learn.wwl.detect-objects-images.badge
-
