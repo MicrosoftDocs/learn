@@ -13,7 +13,7 @@ Navigate to **ID Governance** > **Privileged Identity Management** > **Azure res
 | **Discovery required** | No | No—PIM manages Azure resources automatically |
 | **Example roles** | Global Administrator, Security Administrator | Owner, Contributor, Key Vault Administrator |
 
-:::image type="content" source="../media/azure-resource-scope-hierarchy.png" alt-text="Azure resource scope hierarchy: management group, subscription, resource group, and individual resource.":::
+:::image type="content" source="../media/azure-resource-scope-hierarchy.png" alt-text="Diagram of Azure resource scope hierarchy: management group, subscription, resource group, and individual resource.":::
 
 ## Identify which resources need the tightest access controls
 
