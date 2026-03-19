@@ -29,7 +29,7 @@ quiz:
         - content: "get_supported_language"
           isCorrect: false
           explanation: "Incorrect. Detection determines in which language text is written."
-        - content: translate"
+        - content: "translate"
           isCorrect: false
           explanation: "Incorrect. Translation converts text from one language to another."
         - content: "transliterate"

@@ -249,7 +249,7 @@ except Exception as ex:
 
 The **previous_response_id** parameter links responses together, maintaining conversation context across multiple API calls.
 
-It is important to note that keeping conversation history can increase token usage. For a single run, the active context window can include:
+It's important to note that keeping conversation history can increase token usage. For a single run, the active context window can include:
 
 - System instructions (instructions, safety rules)
 - Your current prompt
@@ -258,7 +258,7 @@ It is important to note that keeping conversation history can increase token usa
 - Tool outputs (search results, code interpreter output, files)
 - Retrieved memory or documents (from memory stores, RAG, file search)
 
-All of these are concatenated, tokenized, and sent to the model together on every request. The SDK helps you manage state, but it does not automatically make token usage cheaper.
+All of these are concatenated, tokenized, and sent to the model together on every request. The SDK helps you manage state, but it doesn't automatically make token usage cheaper.
 
 ## Creating responsive chat apps
 
