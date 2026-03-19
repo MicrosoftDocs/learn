@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-configure-privileged-identity-management.review-design-patterns
+title: JIT design patterns and best practices
+metadata:
+  title: JIT Design Patterns and Best Practices
+  description: "Select appropriate just-in-time access patterns based on risk and workload type, and understand how design patterns connect individual PIM controls into a coherent privileged access strategy."
+  ms.date: 03/18/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/8-review-design-patterns.md)]
