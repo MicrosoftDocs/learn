@@ -3,7 +3,7 @@ uid: learn.wwl.get-started-generative-ai-azure
 hidden: true
 metadata:
   title: (AI-900) Get started with generative AI and agents in Microsoft Foundry (deprecated)
-  description: "This module is deprecated, as is the associated Microsoft course [AI-900 (Introduction to AI in Azure)](/training/courses/ai-900t00). This course has been replaced with a new, updated course, [AI-901 (Introduction to AI in Azure)](/training/courses/ai-901t00). The new course provides a more comprehensive and up-to-date introduction to AI concepts and Azure-based AI solutions."
+  description: "Get started with generative AI and agents in Microsoft Foundry."
   ms.date: 12/5/2025
   author: wwlpublish
   ms.author: sheryang

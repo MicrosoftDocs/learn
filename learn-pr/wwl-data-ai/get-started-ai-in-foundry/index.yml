@@ -7,7 +7,7 @@ metadata:
   ms.date: 12/8/2025
   author: sherzyang
   ms.author: sheryang
-  ms.topic: module-concept
+  ms.topic: module-standard-task-based
   ms.service: azure-ai-foundry
 title: (AI-900) Get started with Microsoft Foundry (deprecated)
 summary: This module is deprecated, as is the associated Microsoft course [AI-900 (Introduction to AI in Azure)](/training/courses/ai-900t00). This course has been replaced with a new, updated course, [AI-901 (Introduction to AI in Azure)](/training/courses/ai-901t00). The new course provides a more comprehensive and up-to-date introduction to AI concepts and Azure-based AI solutions.
