@@ -41,7 +41,7 @@ Each compute instance has a system-assigned managed identity enabled, allowing a
 ## Prerequisites
 - **Azure subscription**: If you don't have an Azure subscription, [create a free account](https://azure.microsoft.com/free/) before you begin.
 - **Permissions**: To create Azure AI Services resources, you should have the Owner role assigned at the Azure subscription.
-- **Familiarity with Microsoft Foundry resource types**: To learn more, refer to [Choose an Azure resource type for AI foundry](https://azure/ai-foundry/concepts/resource-types).
+- **Familiarity with Microsoft Foundry resource types**: To learn more, refer to [Choose an Azure resource type for AI foundry](/azure/foundry-classic/concepts/resource-types).
 
 ## Estimated time
 10 minutes
@@ -66,7 +66,7 @@ Collected telemetry is routed to both a Log Analytics workspace and a Storage ac
 ### Prerequisites
 - **Azure subscription**: If you don't have an Azure subscription, [create a free account](https://azure.microsoft.com/free/) before you begin.
 - **Permissions**: To create Azure AI Services resources, you should have the Owner role assigned at the Azure subscription.
-- **Familiarity with Microsoft Foundry resource types**: To learn more, refer to [Choose an Azure resource type for AI foundry](https://azure/ai-foundry/concepts/resource-types?view=foundry-classic).
+- **Familiarity with Microsoft Foundry resource types**: To learn more, refer to [Choose an Azure resource type for AI foundry](/azure/foundry-classic/concepts/resource-types).
 
 ### Estimated time
 25 minutes
@@ -92,7 +92,7 @@ To track service reliability and increase operational awareness, your company es
 ### Prerequisites
 - **Azure subscription**: If you don't have an Azure subscription, [create a free account](https://azure.microsoft.com/free/) before you begin.
 - **Permissions**: To create Azure AI Services resources, you should have the Owner role assigned at the Azure subscription.
-- **Familiarity with Microsoft Foundry resource types**: To learn more, refer to [Choose an Azure resource type for AI foundry](https://azure/ai-foundry/concepts/resource-types).
+- **Familiarity with Microsoft Foundry resource types**: To learn more, refer to [Choose an Azure resource type for AI foundry](/azure/foundry-classic/concepts/resource-types).
 
 ### Estimated time
 25 minutes
