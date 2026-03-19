@@ -32,7 +32,7 @@ Requiring activation isn't a policy gap—it's a mechanism constraint. PIM requi
 
 The right model for workload identities is permanent role-based access control (RBAC) assignment, scoped as narrowly as possible to the specific resource and operation, with **least privilege** enforced by scope rather than time.
 
-:::image type="content" source="../media/privileged-human-vs-workload-access.png" alt-text="Two access tracks to Azure AI: human activates PIM-eligible role; managed identity holds a permanent scoped RBAC role.":::
+:::image type="content" source="../media/privileged-human-vs-workload-access.png" alt-text="Diagram of two access tracks to Azure AI: human activates PIM-eligible role; managed identity holds a permanent scoped RBAC role.":::
 
 ## Choosing the right access model
 
