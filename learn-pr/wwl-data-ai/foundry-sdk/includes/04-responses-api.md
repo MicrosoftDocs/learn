@@ -167,7 +167,7 @@ You: Can you give me an example?
 Assistant: Certainly! Let's look at a simple example of supervised learning—predicting house prices based on features like size, location, and number of rooms.
 Imagine you want to build a machine learning model that can predict the price of a house based on various factors.
 ...
-    { the example provided in the model response may be extensice}
+    { the example provided in the model response may be extensive}
 ...
 
 You: quit
