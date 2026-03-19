@@ -3,7 +3,7 @@ uid: learn.azure-container-registry.build-image
 metadata:
   title: Exercise - Build container images using Azure Container Registry Tasks
   description: Build container images using Azure Container Registry Tasks
-  ms.date: 03/20/2026
+  ms.date: 03/19/2026
   author: davidsmatlak
   ms.author: davidsmatlak
   ms.topic: unit
