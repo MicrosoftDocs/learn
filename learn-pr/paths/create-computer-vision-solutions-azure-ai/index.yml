@@ -14,7 +14,7 @@ prerequisites: |
   - Familiarity with Azure and the Azure portal.
   - Programming experience.
 summary: |
-  This learning path is deprecated, and is being maintained to support existing learners. Please check out the new [Develop computer vision solutions with Microsoft Foundry](https://learn.microsoft.com/training/paths/develop-computer-vision-with-foundry/) learning path, which includes updated content and guidance.
+  This learning path is deprecated, and is being maintained to support existing learners. Please check out the new [Develop computer vision solutions with Microsoft Foundry](/training/paths/develop-computer-vision-with-foundry/) learning path, which includes updated content and guidance.
 iconUrl: /training/achievements/cognitive-services-computer-vision.svg
 levels:
   - intermediate

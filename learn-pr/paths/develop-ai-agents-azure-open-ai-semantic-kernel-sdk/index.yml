@@ -15,7 +15,7 @@ prerequisites: |
   -   Familiarity with Azure and the Azure portal.
   -   Access to Azure OpenAI.
 summary: |
-  This learning path is deprecated, and is being maintained to support existing learners. Please check out the new [Develop AI agents in Azure](https://learn.microsoft.com/training/paths/develop-ai-agents-azure/) learning path, which includes updated content and guidance.
+  This learning path is deprecated, and is being maintained to support existing learners. Please check out the new [Develop AI agents in Azure](/training/paths/develop-ai-agents-azure/) learning path, which includes updated content and guidance.
 iconUrl: /training/achievements/generic-trophy.svg
 levels:
   - intermediate

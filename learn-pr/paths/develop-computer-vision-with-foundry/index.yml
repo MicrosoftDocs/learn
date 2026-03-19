@@ -20,13 +20,9 @@ roles:
   - ai-engineer
 products:
   - foundry-tools
-  - azure-ai-foundry
-  - foundry-agent-service
-  - azure-ai-foundry-sdk
+  - microsoft-foundry
 subjects:
   - artificial-intelligence
-  - machine-learning
-  - natural-language-processing
 modules:
   - learn.wwl.develop-generative-ai-vision-apps
   - learn.wwl.generate-images-azure-openai
