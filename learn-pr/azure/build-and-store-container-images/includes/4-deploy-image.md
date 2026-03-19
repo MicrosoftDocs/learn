@@ -70,3 +70,10 @@ After you verify the container instance works as expected, disable the registry 
 ```azurecli
 az acr update --name $ACR_NAME --admin-enabled false
 ```
+
+You should also clear the `ACR_USERNAME` and `ACR_PASSWORD` variables to remove their values from your Bash session.
+
+```azurecli
+ACR_USERNAME=""
+ACR_PASSWORD=""
+```
