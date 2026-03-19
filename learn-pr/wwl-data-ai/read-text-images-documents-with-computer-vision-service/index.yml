@@ -1,5 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.read-text-images-documents-with-computer-vision-service
+hidden: true
 metadata:
   title: Read text in images
   description: Azure's Vision service uses advanced algorithms to process images and return information based on the visual features you're interested in. This module teaches you how to use the Azure Vision Image Analysis OCR feature.
@@ -23,22 +24,21 @@ prerequisites: |
   - Programming experience.
 iconUrl: /training/achievements/read-text-images-documents-with-computer-vision-service.svg
 levels:
-- intermediate
+  - intermediate
 roles:
-- ai-engineer
-- developer
+  - ai-engineer
+  - developer
 products:
-- foundry-tools
-- microsoft-foundry
+  - foundry-tools
+  - microsoft-foundry
 subjects:
-- artificial-intelligence
+  - artificial-intelligence
 units:
-- learn.wwl.read-text-images-documents-with-computer-vision-service.introduction
-- learn.wwl.read-text-images-documents-with-computer-vision-service.options-for-reading-text
-- learn.wwl.read-text-images-documents-with-computer-vision-service.using-read-api
-- learn.wwl.read-text-images-documents-with-computer-vision-service.exercise
-- learn.wwl.read-text-images-documents-with-computer-vision-service.knowledge-check
-- learn.wwl.read-text-images-documents-with-computer-vision-service.summary
+  - learn.wwl.read-text-images-documents-with-computer-vision-service.introduction
+  - learn.wwl.read-text-images-documents-with-computer-vision-service.options-for-reading-text
+  - learn.wwl.read-text-images-documents-with-computer-vision-service.using-read-api
+  - learn.wwl.read-text-images-documents-with-computer-vision-service.exercise
+  - learn.wwl.read-text-images-documents-with-computer-vision-service.knowledge-check
+  - learn.wwl.read-text-images-documents-with-computer-vision-service.summary
 badge:
   uid: learn.wwl.read-text-images-documents-with-computer-vision-service.badge
-
