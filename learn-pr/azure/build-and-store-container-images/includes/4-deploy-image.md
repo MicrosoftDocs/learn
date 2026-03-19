@@ -1,4 +1,4 @@
-You can pull container images from Azure Container Registry using various container management platforms, such as Azure Container Instances, Azure Kubernetes Service, or Docker for Windows or Mac. In this module, you deploy the image to an Azure Container Instance.
+You can pull container images from Azure Container Registry using various container management platforms, like Azure Container Instances, Azure Kubernetes Service, or Docker for Windows or Mac. In this module, you deploy the image to an Azure Container Instance.
 
 ## Registry authentication
 
@@ -54,11 +54,11 @@ Azure Container Registry doesn't support unauthenticated access and requires aut
       --output table
     ```
 
-1. In a separate browser tab, navigate to the IP address of the container. If everything is configured correctly, you should see the following web page:
+1. In a separate browser tab, navigate to the container's IP address. If everything is configured correctly, you should see the following web page:
 
    ```output
    Hello World
-   Version: 25.2.1
+   Version: 25.8.1
    ```
 
    Port 80 is used so the web page address is `http://<IP_ADDRESS>`.
