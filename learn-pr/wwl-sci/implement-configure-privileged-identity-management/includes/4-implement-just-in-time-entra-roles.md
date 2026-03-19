@@ -19,7 +19,7 @@ Not every role in your tenant demands just-in-time (JIT) treatment. Most users r
 > [!IMPORTANT]
 > Before you make Global Administrator eligible in PIM, verify that at least two emergency access (break-glass) accounts hold a permanent active assignment to the role. Store the break-glass credentials securely offline. Without this safeguard, a misconfiguration or an identity provider outage could lock every administrator out of the tenant with no recovery path.
 
-## Assign eligible access to an Microsoft Entra role
+## Assign eligible access to a Microsoft Entra role
 
 When you assign a user to a role as eligible, you convert them from always holding the role to holding only the entitlement. The role grants no active permissions until the user initiates an activation. The procedure makes that conversion for any Microsoft Entra ID role in PIM.
 
