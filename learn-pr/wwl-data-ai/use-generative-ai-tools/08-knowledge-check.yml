@@ -30,7 +30,7 @@ quiz:
         - content: "Wait for the model to run the function automatically"
           isCorrect: false
           explanation: "Incorrect. The model requests the function call, but your application must run it."
-        - content: "run the function in your code and send a function_call_output back to the model"
+        - content: "Run the function in your code and send a function_call_output back to the model"
           isCorrect: true
           explanation: "Correct. Your app runs the function and then returns the output so the model can complete the response."
         - content: "Convert the function call into a web_search request"
