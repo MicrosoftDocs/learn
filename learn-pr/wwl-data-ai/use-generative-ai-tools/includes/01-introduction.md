@@ -9,7 +9,7 @@ Tools bridge the gap between AI reasoning and real-world actions. They enable yo
 
 - **Access real-time information**: Fetch current data, weather, stock prices, or API responses that weren't in the model's training data
 - **Take actions**: perform tasks like sending emails, creating database records, or triggering workflows based on AI decisions
-- **Ground responses in facts**: Retrieve specific, authoritative information to reduce hallucinations and improve accuracy
+- **Ground responses in facts**: Retrieve specific, authoritative information to reduce incorrect information and improve accuracy
 - **Extend functionality**: Connect to your existing systems, databases, and business logic seamlessly
 - **Build intelligent workflows**: Chain multiple operations together so AI coordinates complex, multi-step processes
 
