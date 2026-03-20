@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.generative-ai-tools.exercise
+title: Exercise - Create a generative AI chat app that uses tools
+metadata:
+  title: Exercise - Create a generative AI chat app that uses tools
+  description: Use the file_search tool to create a chat app that uses your data.
+  author: graememalcolm
+  ms.author: gmalc
+  ms.date: 03/19/2026
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 30
+content: |
+  [!include[](includes/07-exercise.md)]

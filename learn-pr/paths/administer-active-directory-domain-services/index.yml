@@ -14,7 +14,7 @@ prerequisites: |
   -   Core networking technologies.
 summary: |
   This learning path helps prepare you for the APL-1008 Administer Active Directory Domain Services modern credential. You'll learn how to create, deploy, and maintain an Active Directory Domain Services environment.
-iconUrl: /training/achievements/generic-trophy.svg
+iconUrl: /training/achievements/entra-learning-path.svg
 levels:
 - intermediate
 roles:

@@ -31,7 +31,7 @@ roles: # see role taxonomy https://review.docs.microsoft.com/help/contribute/met
   - solution-architect
   - student
 products: # see product taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#product
-  - ai-services
+  - foundry-tools
 subjects: # see subject taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#subject
   - cloud-computing
   - data-management

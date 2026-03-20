@@ -4,7 +4,7 @@ title: Configure job alerts
 metadata:
   title: Configure Job Alerts
   description: Learn how to configure job alerts and notifications in Azure Databricks, including notification events, system destinations, and best practices for avoiding alert fatigue.
-  ms.date: 12/07/2025
+  ms.date: 03/05/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit

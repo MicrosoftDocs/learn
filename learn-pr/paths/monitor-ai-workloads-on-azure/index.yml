@@ -28,7 +28,7 @@ roles:
 - support-engineer
 - data-scientist
 products:
-- ai-services
+- foundry-tools
 - azure-monitor
 - azure-log-analytics
 modules:

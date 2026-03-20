@@ -13,6 +13,8 @@ To connect your VMware vCenter Server to Azure Arc, you need to deploy the Azure
 
 vSphere resources are automatically discovered when you connect a VMware vCenter Server to Azure. After initial discovery, regular synchronization between the vCenter Server and Azure ensures that this inventory data is kept up-to-date.
 
+[![Diagram of Azure Arc-enabled VMware vSphere architecture.](../media/arc-vmware-architecture.png)](../media/arc-vmware-architecture.png#lightbox)
+
 Guest OS-based capabilities are provided by enabling guest management. Guest management involves installing the Arc agent on the VMs running in the VMware environment. Once you enable guest management, you can deploy VM extensions to extend the Azure management capabilities. For example, by enabling guest management, you can perform virtual hardware operations such as VM resizing, adding and deleting disks, and VM restarts.
 
 Arc-enabled VMware vSphere works with vCenter Server versions 7 and 8. You can onboard multiple vCenters using a single Azure Arc resource bridge as long as the total number of VMs managed across all onboarded systems doesn't exceed 9500. 

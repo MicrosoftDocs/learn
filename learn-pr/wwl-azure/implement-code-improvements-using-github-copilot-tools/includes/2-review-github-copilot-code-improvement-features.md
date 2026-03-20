@@ -10,14 +10,14 @@ Visual Studio Code provides easy access to the following GitHub Copilot features
 
 ### Chat view
 
-The Chat view is a dedicated panel in Visual Studio Code that allows you to interact with GitHub Copilot Chat. You can use the Chat view to submit prompts, receive suggestions, and implement updates to your codebase. The Chat view provides a user-friendly interface for managing chat conversations and accessing GitHub Copilot's features. The Chat view includes the following chat modes:
+The Chat view is a dedicated panel in Visual Studio Code that allows you to interact with GitHub Copilot Chat. You can use the Chat view to submit prompts, receive suggestions, and implement updates to your codebase. The Chat view provides a user-friendly interface for managing chat conversations and accessing GitHub Copilot's features. The Chat view includes the following built-in agents:
 
-- Ask mode: Use the Ask mode to ask questions about your codebase or technology concepts. You can use Ask mode explain code, suggest revisions or fixes, or provide information related to the codebase.
-- Edit mode: Use the Edit mode to make edits across multiple files in your codebase. You can use Edit mode to refactor code, add comments, or make other changes to your code.
-- Agent mode: Use the Agent mode to start an agentic coding workflow. You can use Agent mode to run commands, execute code, or perform other tasks in your workspace.
+- Agent: Use the Agent to autonomously plan and implement changes across files, run terminal commands, and invoke tools.
+- Plan: Use the Plan agent to create a structured, step-by-step implementation plan before writing any code. When the plan looks right, hand it off to an implementation agent to execute it.
+- Ask: Use Ask to answer questions about coding concepts, your codebase, or VS Code itself without making file changes.
 
 > [!IMPORTANT]
-> When you use the Chat view in Agent mode, GitHub Copilot may make multiple premium requests to complete a single task. Premium requests can be used by user-initiated prompts and follow-up actions Copilot takes on your behalf. The total premium requests used will depend on the complexity of the task, the number of steps involved, and the model selected.
+> When you use the Agent, GitHub Copilot may make multiple premium requests to complete a single task. Premium requests can be used by user-initiated prompts and follow-up actions GitHub Copilot takes on your behalf. The total premium requests used will depend on the complexity of the task, the number of steps involved, and the model selected.
 
 ### Inline chat
 

@@ -4,10 +4,10 @@ title: Design a solution for secure remote access
 metadata:
   title: Design a solution for secure remote access 
   description: Learn how to design secure remote access to virtual machines in Azure landing zones using Azure Bastion, just-in-time access, and hybrid connectivity options.
-  ms.date: 02/07/2026
+  ms.date: 03/14/2026
   author: ceperezb
   ms.author: ceperezb
   ms.topic: unit
-durationInMinutes: 8
+durationInMinutes: 12
 content: |
   [!include[](includes/7-design-solution-secure-remote-access.md)]

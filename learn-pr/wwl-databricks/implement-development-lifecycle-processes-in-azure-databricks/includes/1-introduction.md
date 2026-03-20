@@ -1,3 +1,5 @@
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=31cbad27-483b-4952-a0fc-0e52a1a460f4]
+
 Building reliable data engineering solutions in Azure Databricks requires more than writing code that works—it demands processes that enable collaboration, ensure quality, and support consistent deployments across environments. When data pipelines grow in complexity and team members contribute simultaneously, you need systematic approaches to track changes, validate code, and move work from development to production reliably.
 
 Azure Databricks integrates with established development practices through **Git folders**, which bring version control directly into your workspace. This integration lets you clone repositories, create branches, commit changes, and collaborate with team members without leaving your development environment. Combined with **Databricks Asset Bundles (DABs)**, you gain an infrastructure-as-code approach for defining and deploying jobs, pipelines, and other resources consistently across workspaces.

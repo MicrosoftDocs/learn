@@ -29,10 +29,10 @@ After completing this module, you'll be able to:
 
 Before you begin, confirm:
 
-- [ ] You can access an Azure DevOps organization and project.
-- [ ] You can access a GitHub repository and create pull requests.
-- [ ] Your environment has GitHub Copilot capabilities enabled.
-- [ ] You understand your team's review and merge policy.
+- You can access an Azure DevOps organization and project.
+- You can access a GitHub repository and create pull requests.
+- Your environment has GitHub Copilot capabilities enabled.
+- You understand your team's review and merge policy.
 
 > [!IMPORTANT]
 > To complete this GitHub Copilot training, you must have an active subscription for both Azure DevOps and GitHub Copilot, or you must be assigned to a subscription managed by an organization or enterprise. The GitHub Copilot Free Subscription is not compatible with Azure Boards integration. 

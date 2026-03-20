@@ -2,29 +2,29 @@
 uid: learn.wwl.apl-3031-create-ai-agent-foundry
 hidden: true
 metadata:
-  title: Create an AI agent with Microsoft Foundry
+  title: Create an AI agent with Microsoft Foundry (Microsoft Applied Skill)
   description: Learn how to create an AI agent using Microsoft Foundry. (MAS-3031)
   ms.date: 12/08/2025
   author: wwlpublish
   ms.author: berryivor
   ms.topic: learning-path
   ms.collection: wwl-ai-copilot
-title: Create an AI agent with Microsoft Foundry
+title: Create an AI agent with Microsoft Foundry (Microsoft Applied Skill)
 prerequisites: |
   Before starting this module, you should be familiar with fundamental AI concepts and services in Azure. You should also have programming experience.
 summary: |
-  Generative Artificial Intelligence (AI) is becoming more functional and accessible, and AI agents are a key component of this evolution. This module will help you understand the AI agents, including when to use them and how to build them using Microsoft Foundry.
+  This learning path prepares you for the Microsoft Applied Skill [Create an AI agent with Microsoft Foundry](/credentials/applied-skills/create-an-ai-agent/).
 iconUrl: /training/achievements/generic-badge.svg
 levels:
-- intermediate
+  - intermediate
 roles:
-- ai-engineer
+  - ai-engineer
 products:
-- ai-services
-- microsoft-foundry
+  - foundry-tools
+  - microsoft-foundry
 subjects:
-- artificial-intelligence
+  - artificial-intelligence
 modules:
-- learn.wwl.ai-agent-fundamentals
+  - learn.wwl.ai-agent-fundamentals
 trophy:
   uid: learn.wwl.apl-3031-create-ai-agent-foundry.trophy

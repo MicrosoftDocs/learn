@@ -16,10 +16,10 @@ Avoid parallel delegation when items share the same critical files, migration st
 
 Use a repeatable coordination process before and during parallel execution. This makes it easier to understand ownership, reduce overlap, and resolve conflicts early.
 
-1. Refine both work items with explicit boundaries.
-2. Delegate each item to a separate pull request.
-3. Track each PR status in Azure Boards.
-4. Use Copilot Chat to assess overlap risk before merge.
+- Refine both work items with explicit boundaries.
+- Delegate each item to a separate pull request.
+- Track each PR status in Azure Boards.
+- Use Copilot Chat to assess overlap risk before merge.
 
 ## Cross-PR validation questions
 

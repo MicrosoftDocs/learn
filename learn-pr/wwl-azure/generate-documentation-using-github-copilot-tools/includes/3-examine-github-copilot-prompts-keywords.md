@@ -18,7 +18,7 @@ GitHub Copilot uses the following keywords to help you specify the context and i
 
 - Chat participants: Chat participants are like experts in a specific field that help GitHub Copilot generate better responses. Chat participants are specified using the `@` symbol.
 
-- Slash commands: Slash commands help to describe the intent (the goal or objective) of your prompt. One of Copilot Chat's tasks when answering questions is to determine the intent, understanding what you want to do. Slash commands can help clarify your intent.
+- Slash commands: Slash commands help to describe the intent (the goal or objective) of your prompt. One of GitHub Copilot Chat's tasks when answering questions is to determine the intent, understanding what you want to do. Slash commands can help clarify your intent.
 
 - Chat variables: Chat variables provide domain-specific context. You can reference a chat variable in your chat prompt by using the `#` symbol. By using a chat variable, you can be more specific about the context that you include in your chat prompt.
 
@@ -26,18 +26,18 @@ GitHub Copilot uses the following keywords to help you specify the context and i
 
 GitHub Copilot Chat provides better responses when it understands the context that you're interested in and can apply the best resources. You can help GitHub Copilot Chat generate better responses by adding a Chat participant to your prompts. Chat participants are like experts in a specific field that provide better responses. Chat participants are specified using the `@` symbol.
 
-Currently, Copilot Chat supports the following built-in chat participants:
+Currently, GitHub Copilot Chat supports the following built-in chat participants:
 
 - `@workspace`: The `@workspace` participant can help answer questions about the code in your workspace or suggest ways to refactor or improve your code.
 - `@vscode`: The `@vscode` participant knows about commands and features in the Visual Studio Code editor itself, and can help you use them.
 - `@terminal`: The `@terminal` participant can help with the integrated terminal shell and its contents.
 - `@github`: The `@github` participant can help get answers grounded in web search, code search, and your enterprise's knowledge bases.
 
-You can prefix your prompt with a specific chat participant to help Copilot generate a more relevant response.
+You can prefix your prompt with a specific chat participant to help GitHub Copilot generate a more relevant response.
 
 ### Slash commands
 
-Slash commands help Copilot Chat understand your intent when you ask a question. Are you learning about a code base (`/explain`), do you want help with fixing an issue (`/fix`), or are you creating test cases (`/tests`)? By letting Copilot Chat know what you're trying to do, it can tune its reply to your task and provide helpful commands, settings, and code snippets.
+Slash commands help GitHub Copilot Chat understand your intent when you ask a question. Are you learning about a code base (`/explain`), do you want help with fixing an issue (`/fix`), or are you creating test cases (`/tests`)? By letting GitHub Copilot Chat know what you're trying to do, it can tune its reply to your task and provide helpful commands, settings, and code snippets.
 
 Chat participants are often bundled with slash commands. The slash command is a concise way to explain your intent to the chat participant. The `/explain` slash command is often bundled with the `@workspace` chat participant. The combination of a chat participant and a slash command is a powerful way to clarify your intent.
 
@@ -103,14 +103,14 @@ About the `@workspace` keyword:
 - The `@workspace` keyword is a chat participant that's dedicated to answering questions about your codebase.
 - The `@workspace` keyword takes control of the user prompt and uses the codebase to provide an answer.
 - The `@workspace` keyword can't invoke other tools.
-- The `@workspace` keyword can only be used when you're using the ask mode.
+- The `@workspace` keyword can only be used when you're using the Ask agent mode.
 - Example: "`@workspace how can I validate a date?`"
 
 About the `#codebase` keyword:
 
 - The `#codebase` keyword is a tool that performs a codebase search based on the user prompt and adds the relevant code as context to the chat prompt.
 - When you use the `#codebase` keyword, the language model remains in control and can combine `#codebase` with other tools for editing scenarios.
-- The `#codebase` keyword can be used in all chat modes (Ask, Edit, and Agent).
+- The `#codebase` keyword can be used in all chat modes (Ask, Agent, and Plan).
 - Examples: "`add a tooltip to this button, consistent with other button #codebase`", "`add unit tests and run them #codebase`"
 
 GitHub recommends using `#codebase` in your chat prompts, as it provides more flexibility.

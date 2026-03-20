@@ -3,7 +3,7 @@ uid: learn.wwl.introduction-end-analytics-use-microsoft-fabric
 metadata:
   title: Introduction to end-to-end analytics using Microsoft Fabric
   description: "Discover how Microsoft Fabric can meet your enterprise's analytics needs in one platform. Discover the capabilities Fabric has to offer, understand how it works, and identify how you can use Fabric for your analytics needs."
-  ms.date: 08/05/2025
+  ms.date: 03/04/2026
   author: angierudduck
   ms.author: anrudduc
   ms.topic: module
@@ -15,6 +15,7 @@ abstract: |
   In this module, you learn how to:
   - Identify the capabilities of Microsoft Fabric.
   - Implement Microsoft Fabric to meet your enterprise's analytics needs.
+  - Describe how Fabric supports AI capabilities through Copilot, data agents, and Fabric IQ.
 prerequisites: |
   You should be familiar with data analytics and engineering concepts and terminology.
 iconUrl: /training/achievements/introduction-end-analytics-use-microsoft-fabric.svg
