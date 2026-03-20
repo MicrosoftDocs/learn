@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.generative-ai-tools.knowledge-check
+title: Module assessment
+metadata:
+  title: Module assessment
+  description: Check your knowledge.
+  author: graememalcolm
+  ms.author: gmalc
+  ms.date: 03/19/2026
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+  module_assessment: true
+durationInMinutes: 3
+quiz:
+  questions:
+    - content: "Which tool should you use when a model needs to answer questions from your own uploaded policy documents?"
+      choices:
+        - content: "web_search"
+          isCorrect: false
+          explanation: "Incorrect. The web search tool retrieves public web content, not your private indexed files."
+        - content: "file_search"
+          isCorrect: true
+          explanation: "Correct. The file_search tool retrieves relevant passages from files in your vector store."
+        - content: "code_interpreter"
+          isCorrect: false
+          explanation: "Incorrect. The code_interpreter tool runs Python code; it isn't a document retrieval tool."
+    - content: "In a function-calling workflow, what should your application do after the model returns a function_call item?"
+      choices:
+        - content: "Wait for the model to run the function automatically"
+          isCorrect: false
+          explanation: "Incorrect. The model requests the function call, but your application must run it."
+        - content: "run the function in your code and send a function_call_output back to the model"
+          isCorrect: true
+          explanation: "Correct. Your app runs the function and then returns the output so the model can complete the response."
+        - content: "Convert the function call into a web_search request"
+          isCorrect: false
+          explanation: "Incorrect. Function calls should be handled by executing the requested function, not by switching tools."
+    - content: "Which statement about the code_interpreter tool is correct?"
+      choices:
+        - content: "It can run Python code in a sandboxed runtime to help solve tasks"
+          isCorrect: true
+          explanation: "Correct. code_interpreter provides a Python runtime the model can use to run code and return results."
+        - content: "It can browse external websites directly during code execution"
+          isCorrect: false
+          explanation: "Incorrect. The module notes code_interpreter runs in a sandboxed environment without external network access."
+        - content: "It only supports file uploads and can't perform calculations"
+          isCorrect: false
+          explanation: "Incorrect. code_interpreter supports calculations, analysis, and other Python-based processing."
