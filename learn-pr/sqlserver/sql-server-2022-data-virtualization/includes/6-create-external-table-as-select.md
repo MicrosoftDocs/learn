@@ -61,15 +61,13 @@ The input can be a table running locally on your SQL Server instance, a network 
 
 ## CETAS T-SQL structure
 
-To better understand CETAS, you can break down the overall T-SQL syntax. CETAS T-SQL structure follows a bottom-up logic approach. It's easier to start at the end of the statement, and then work your way to the top of the T-SQL statement.
+To better understand CETAS, you can break down the overall T-SQL syntax into three parts:
 
-:::image type="content" source="../media/create-external-table-as-select-t-sql-structure.png" alt-text="Image of the T-SQL structure of CREATE EXTERNAL TABLE as SELECT statement." border="false":::
+1. **`CREATE EXTERNAL TABLE` clause** — This is the first part of the statement, where you declare the external table name and specify the destination location, file name, and file format using the `WITH` clause (which includes `LOCATION`, `DATA_SOURCE`, and `FILE_FORMAT` options).
+1. **Optional reject parameters** — Between the `WITH` clause and the `AS` keyword, you can include optional parameters to filter or reject data that you don't want to export.
+1. **`SELECT` statement** — The final part of the statement is a standard `SELECT` query that defines what data to export. This query determines the column definitions, data types, and the source of the exported data.
 
-- The bottom of the CETAS structure contains a SELECT statement you use to define what data to export.
-- In the middle, there are optional parameters you can use to reject data that you don't want to export.
-- At the top of the CETAS statement, after declaring CREATE EXTERNAL TABLE, you add information about the destination location, filename, and file format.
-
-This structure allows CETAS to be combined with any SELECT statement to query data outside SQL Server, within SQL Server, or from any other supported database. SQL Server 2025 automatically creates the file name and splits the results in multiple files for optimization. For example, a table exported as a Parquet can generate several files, depending on the exported data size. The select statement defines the external table column definition and type.
+The CETAS syntax follows a logical flow: first you define *where* and *how* to export, then you define *what* to export. This structure allows CETAS to be combined with any `SELECT` statement to query data outside SQL Server, within SQL Server, or from any other supported database. SQL Server 2025 automatically creates the file name and splits the results in multiple files for optimization. For example, a table exported as a Parquet can generate several files, depending on the exported data size.
 
 ### Export a table from SQL Server as Parquet
 
