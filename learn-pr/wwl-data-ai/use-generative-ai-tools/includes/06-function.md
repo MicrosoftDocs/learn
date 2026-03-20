@@ -14,7 +14,7 @@ Key features include:
 - **Multi-turn orchestration** - Return tool output and let the model continue reasoning
 - **Grounded responses** - Answers can include live, system-generated data
 
-## Common Use Cases
+## Common use cases
 
 | Use Case | Example |
 |----------|---------|
@@ -134,7 +134,7 @@ The general process for using the function tool is:
 5. **You return function output** - Send a `function_call_output` item with the result.
 6. **Model completes the answer** - It incorporates tool results into the final response.
 
-## Best Practices
+## Best practices
 
 - **Keep tools focused** - Small, single-purpose functions are easier to control and test
 - **Validate function inputs** - Never trust tool arguments blindly in production systems

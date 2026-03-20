@@ -12,7 +12,7 @@ Key features include:
 - **Real-time Feedback**: The model sees code execution results and can iterate or fix errors
 - **Complex Problem Solving**: Tackle math problems, simulations, and logic puzzles through executable code
 
-## Common Use Cases
+## Common use cases
 
 | Use Case | Example |
 |----------|---------|
@@ -70,7 +70,7 @@ The general process for using the code_interpreter tool is:
 4. **Code runs**: The code runs in a sandboxed environment with access to common libraries (for example, *pandas*, *numpy*, and *math*).
 5. **Results returned**: The model receives the output and incorporates it into its response.
 
-## Best Practices
+## Best practices
 
 - **Be specific**: Describe the data format and expected output clearly. Many models internally use the name *python tool* to identify the code_interpreter tool - so use this language in your instructions.
 - **Provide context**: Include relevant domain knowledge in your prompts
