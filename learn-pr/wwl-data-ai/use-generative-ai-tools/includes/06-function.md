@@ -24,7 +24,7 @@ Key features include:
 
 ## A simple example
 
-Here's the existing example that exposes a `get_time` function and lets the model call it when needed:
+Here's an example that exposes a `get_time` function and lets the model call it when needed:
 
 ```python
 import time
