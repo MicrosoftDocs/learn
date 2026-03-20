@@ -4,7 +4,7 @@ Microsoft Foundry Models includes models that are capable of using tools to find
 
 When you develop a generative AI application using Microsoft Foundry, you can search Foundry Models for a model with tool calling capabilities and deploy it. Then, you can develop client applications that use the OpenAI Responses API to submit prompts to the deployed model, specifying the tools that the model can use.
 
-> [NOTE]
+> [!NOTE]
 > By default, the *model* chooses when to use a tool (and which one), based on the prompt. You can configure tool selection rules and use the *Instructions* (system prompt) parameter to guide this choice.
 
 Some of the commonly used tools available in the *Responses* API, include:
