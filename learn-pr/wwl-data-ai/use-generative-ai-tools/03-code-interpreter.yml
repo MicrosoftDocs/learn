@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.generative-ai-tools.code-interpreter
+title: Use the code_interpreter tool
+metadata:
+  title: Use the code_interpreter tool
+  description: Use the code_interpreter tool to run code and analyze data.
+  author: graememalcolm
+  ms.author: gmalc
+  ms.date: 03/19/2026
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 5
+content: |
+  [!include[](includes/03-code-interpreter.md)]
