@@ -1,4 +1,6 @@
-This module details integration of Azure identity and security services with an SAP RISE workload. Additionally use of some Azure monitoring services are explained for an SAP RISE landscape.
+This module details integration of Azure identity and security services with an SAP RISE workload.
+
+Microsoft Entra is a foundational component of the SAP RISE security and identity architecture, providing centralized identity, access control, and governance across SAP landscapes. Through native integration with SAP Cloud Identity Services (CIS), Microsoft Entra enables enterprise‑grade Single Sign‑On (SSO), allowing users to access SAP applications with their corporate identity. Access is centrally controlled using Conditional Access, which enforces policies based on user risk, device compliance, and location.
 
 ## Single sign-on for SAP RISE
 
@@ -15,8 +17,9 @@ Single sign-on (SSO) is configured for many SAP environments. With SAP workloads
 
 SSO against Active Directory (AD) of your Windows domain for ECS/RISE managed SAP environment, with SAP SSO Secure sign in Client requires AD integration for end user devices. With SAP RISE, any Windows systems aren't integrated with the customer's Active Directory Domain. The domain integration isn't necessary for SSO with AD/Kerberos as the domain security token is read on the client device and exchanged securely with SAP system. Contact SAP if you require any changes to integrate AD based SSO or using third party products other than SAP SSO Secure sign in Client.
 
-
 For more information about SNC, see [Getting started with SAP SNC for RFC integrations - SAP blog](https://community.sap.com/t5/enterprise-resource-planning-blogs-by-members/getting-started-with-sap-snc-for-rfc-integrations/ba-p/13983462).
+
+Microsoft Entra also supports passwordless and phishing‑resistant authentication methods such as Microsoft Authenticator and Passkeys (FIDO2), improving security while simplifying the user sign‑in experience.
 
 ## Multi-factor authentication for SAP GUI with Microsoft Entra
 
@@ -47,11 +50,21 @@ For a detailed walkthrough, see [SAP GUI MFA with SAP Secure Login Service and M
 
 ## Identity governance for SAP RISE with Microsoft Entra ID Governance
 
-SAP Identity Management (SAP IDM) has been a widely used solution for managing SAP user lifecycle and their authorizations. With the retirement of SAP IDM by 2027, Microsoft Entra ID Governance is the recommended migration path for SAP IDM users. Microsoft Entra ID Governance provides comprehensive identity governance capabilities, including access reviews, entitlement management, and privileged identity management, which can be leveraged to manage SAP user identities and their access rights effectively.
+[Microsoft Entra ID Governance](/entra/id-governance/identity-governance-overview) provides comprehensive identity governance capabilities, including access reviews, entitlement management, and privileged identity management, which can be leveraged to manage SAP user identities and their access rights effectively.
 
 > [!NOTE]
 > SAP [announced retirement](https://community.sap.com/t5/technology-blogs-by-sap/preparing-for-sap-identity-management-s-end-of-maintenance-in-2027/ba-p/13596101) of SAP Identity Management (SAP IDM) by 2027. [SAP recommends](https://community.sap.com/t5/technology-blogs-by-sap/preparing-for-sap-identity-management-s-end-of-maintenance-in-2027/ba-p/13596101) to customers to migrate to Microsoft Entra.
+ 
+Microsoft Entra ID Governance modernizes SAP access management by enabling HR‑driven provisioning, entitlement management, access reviews, and policy‑based controls, reducing operational overhead while strengthening security and compliance. 
 
-[Microsoft Entra ID Governance](/entra/id-governance/identity-governance-overview) and built-in integrations with SAP Cloud Identity Service are an ideal fit to handle SAP user lifecycle and their authorizations across both eco-systems.
+Through native integration with SAP Cloud Identity Services (CIS), Microsoft Entra enables automated user and group provisioning, ensuring consistent identity lifecycle management and a seamless user experience across SAP applications, including SAP S/4HANA, SAP BTP, SAP SaaS and On-Premises solutions.
 
-Learn more from this [Microsoft Learn article](/entra/id-governance/scenarios/migrate-from-sap-idm) and the [SAP scenarios hub](https://microsoft.github.io/EntraIDGovernance-Training/SAPScenarios/).
+For advanced SAP authorization governance, Microsoft Entra provides a native integration with SAP Identity Access Governance (SAP IAG), allowing SAP business roles to be managed directly within Entra access packages. This delivers a unified governance model, streamlined approvals, and automated role assignments across SAP systems, aligned with Zero Trust principles. 
+
+[SAP Cloud Identity Services + Microsoft Entra (SSO & Provisioning) | Microsoft Learn](/entra/identity/saas-apps/sap-cloud-platform-identity-authentication-provisioning-tutorial)
+
+[Manage access to SAP applications with Microsoft Entra ID Governance | Microsoft Learn](/entra/id-governance/sap)
+
+[Microsoft Entra entitlement management integration with SAP IAG | Microsoft Learn](/entra/id-governance/entitlement-management-sap-integration)
+
+[Microsoft Entra ID Governance for SAP – Scenario Hub | Microsoft Learn](https://microsoft.github.io/EntraIDGovernance-Training/SAPScenarios/)
