@@ -12,4 +12,4 @@ metadata:
     - wwl-ai-copilot
 durationInMinutes: 5
 content: |
-  [!include[](includes/06-functions.md)]
+  [!include[](includes/06-function.md)]
