@@ -1,7 +1,7 @@
 In this exercise, we'll introduce using *Azure Database Migration Services* (***DMS***) to migrate to an Azure Cosmos DB for MongoDB account. 
 
 > [!NOTE]
-> To complete this exercise, you'll need a Microsoft Azure subscription. If you don't already have one, you can sign up for a free trial at ***https://azure.microsoft.com/free***. You cannot use a Microsoft Learn sandbox subscription for this exercise..
+> To complete this exercise, you'll need a Microsoft Azure subscription. If you don't already have one, you can sign up for a free trial at ***https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn***. You cannot use a Microsoft Learn sandbox subscription for this exercise..
 
 ## Prerequisites for this exercise
 
