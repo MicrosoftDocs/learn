@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.generative-ai-tools.functions
+title: Use the functions tool
+metadata:
+  title: Use the functions tool
+  description: Use the functions tool to interact with web-based functions.
+  author: graememalcolm
+  ms.author: gmalc
+  ms.date: 03/19/2026
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 5
+content: |
+  [!include[](includes/06-functions.md)]
