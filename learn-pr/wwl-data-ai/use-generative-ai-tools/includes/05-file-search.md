@@ -14,7 +14,7 @@ Key features include:
 - **Citations and transparency** - Include matched results for debugging and traceability
 - **Better enterprise relevance** - Use organization-specific knowledge in model outputs
 
-## Common Use Cases
+## Common use cases
 
 | Use Case | Example |
 |----------|---------|
@@ -46,7 +46,7 @@ client.vector_stores.files.upload_and_poll(
 response = client.responses.create(
     model=model_deployment,
     instructions="You are an AI assistant that provides information from HR policy documents.",
-    input=prompt,
+    input="What's the maximum amount I can claim for a tsxi ride?",
     tools=[{
         "type": "file_search",
         "vector_store_ids": [vector_store.id]
@@ -68,7 +68,7 @@ The general process for using the file_search tool is:
 4. **Results are injected** - Matching passages are provided to the model.
 5. **Response is generated** - The model answers using retrieved document context.
 
-## Best Practices
+## Best practices
 
 - **Use high-quality source files** - Clean, current documents improve retrieval accuracy
 - **Write focused prompts** - Ask specific questions to reduce ambiguous matches

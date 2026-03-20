@@ -14,7 +14,7 @@ Key features include:
 - **Automatic query generation** - The model decides when and how to search based on user intent
 - **Seamless user experience** - Search and response generation happen in one flow
 
-## Common Use Cases
+## Common use cases
 
 | Use Case | Example |
 |----------|---------|
@@ -61,7 +61,7 @@ The general process for using the web_search tool is:
 4. **Results are reviewed** - Relevant pages are selected and summarized.
 5. **Response is generated** - The model combines search findings into the final answer.
 
-## Best Practices
+## Best practices
 
 - **Ask time-aware questions clearly** - Include words like "latest", "current", or date ranges when needed
 - **Set expectations for sources** - Prompt for reputable or official sources when accuracy matters
