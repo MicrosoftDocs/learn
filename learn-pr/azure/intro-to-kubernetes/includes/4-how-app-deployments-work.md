@@ -4,7 +4,7 @@ The drone-tracking app has several components that are deployed separately from 
 
 ## Pod deployment options
 
-There are several options to manage the deployment of pods in a Kubernetes cluster when you're using `kubectl`. The options are:
+There are several options to manage pod deployments in a Kubernetes cluster when you're using `kubectl`. The options are:
 
 - Pod templates
 - Replication controllers
@@ -79,7 +79,7 @@ To simplify communication, Kubernetes expects you to configure networking in suc
 - Nodes can communicate with all pods, and vice versa, without NAT.
 - Agents on a node can communicate with all nodes and pods.
 
-Kubernetes offers several networking options that you can install to configure networking. Examples include Antrea, Cisco Application Centric Infrastructure (ACI), Cilium, Flannel, Kubenet, VMware NSX-T, and Weave Net.  
+Kubernetes offers several networking options that you can install to configure networking. Examples include Antrea, Cisco Application Centric Infrastructure (ACI), Cilium, Flannel, Kubenet, VMware NSX-T, and Weave Net.
 
 Cloud providers also provide their own networking solutions. For example, Azure Kubernetes Service (AKS) supports the Azure Virtual Network container network interface (CNI), Kubenet, Flannel, Cilium, and Antrea.
 
@@ -92,11 +92,8 @@ Kubernetes assigns a service an IP address on creation, just like a node or pod.
 In the drone-tracking app, network communication is as follows:
 
 - The website and RESTful API are accessible to users outside the cluster.
-
 - The in-memory cache and message queue services are accessible to the front end and the RESTful API, respectively, but not to external users.
-
 - The message queue needs access to the data-processing service, but not to external users.
-
 - The NoSQL database is accessible to the in-memory cache and data processing service, but not to external users.
 
 To support these scenarios, you can configure three types of services to expose your app's components.
@@ -111,7 +108,7 @@ In the drone-tracking app, you might decide to expose the tracking website and t
 
 ## How to group pods
 
-Managing pods by IP address isn't practical. Pod IP addresses change as controllers re-create them, and you might have any number of pods running.
+Managing pods by IP address isn't practical. Pod IP addresses change as controllers re-create them, and you might have many pods running.
 
 :::image type="content" source="../media/4-service-with-selector.svg" alt-text="Diagram of a service with selector labels." border="false":::
 
@@ -125,9 +122,9 @@ Kubernetes uses the same storage volume concept that you find when using Docker.
 
 :::image type="content" source="../media/4-kubernetes-storage.svg" alt-text="Diagram of a service with selector labels again." border="false":::
 
-Kubernetes provides options to provision persistent storage with the use of *PersistentVolumes*. You can also request specific storage for pods by using *PersistentVolumeClaims*.
+Kubernetes provides options to provision persistent storage with the use of _PersistentVolumes_. You can also request specific storage for pods by using _PersistentVolumeClaims_.
 
-Keep both of these options in mind when you're deploying app components that require persisted storage, like message queues and databases.
+Keep both of these options in mind when you're deploying app components that require persistent storage, like message queues and databases.
 
 ## Cloud integration considerations
 
@@ -143,4 +140,4 @@ Recall from earlier that Kubernetes doesn't provide any of the following service
 
 In this drone-tracking solution, there are three services that provide middleware functionality: a NoSQL database, an in-memory cache service, and a message queue. You might select MongoDB Atlas for the NoSQL solution, Redis to manage in-memory cache and, RabbitMQ or Kafka depending on your message-queue needs.
 
-When you're using a cloud environment such as Azure, it's a best practice to use services outside the Kubernetes cluster. This decision can simplify the cluster's configuration and management. For example, you can use *Azure Managed Redis* for the in-memory caching services, *Azure Service Bus messaging* for the message queue, and *Azure Cosmos DB* for the NoSQL database.
+When you're using a cloud environment such as Azure, it's a best practice to use services outside the Kubernetes cluster. This decision can simplify the cluster's configuration and management. For example, you can use _Azure Managed Redis_ for the in-memory caching services, _Azure Service Bus messaging_ for the message queue, and _Azure Cosmos DB_ for the NoSQL database.
