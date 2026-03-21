@@ -1,23 +1,23 @@
-In this module, you learned about general cloud concepts. You started with things like just understanding what cloud computing is. You also learned about the shared responsibility model and how you and your cloud provider share the responsibility of keeping your information in the cloud secure. You briefly covered the differences between the cloud models (public, private, hybrid, and multicloud). Then, you wrapped up with a unit on how the cloud shifts IT spend from a capital expense to an operational expense.
+In this module, you learned about general cloud concepts. You started with an understanding of what cloud computing is. You also learned about the shared responsibility model and how you and your cloud provider share the responsibility of keeping your information in the cloud secure. You covered the differences between the cloud models (public, private, hybrid, and multicloud). Then, you wrapped up with a unit on how the cloud shifts IT spend from a capital expense to an operational expense.
 
 ## Learning objectives
 
 You should now be able to:
 
- -  Define cloud computing.
- -  Describe the shared responsibility model.
- -  Define cloud models, including public, private, and hybrid.
- -  Identify appropriate use cases for each cloud model.
- -  Describe the consumption-based model.
- -  Compare cloud pricing models.
+- Define cloud computing.
+- Describe the shared responsibility model.
+- Define cloud models, including public, private, and hybrid.
+- Identify appropriate use cases for each cloud model.
+- Describe the consumption-based model.
+- Compare cloud pricing models.
 
 ## Additional resources
 
 The following resources provide more information on topics in this module or related to this module.
 
- -  [Shared responsibility model](/azure/security/fundamentals/shared-responsibility) The shared responsibility model is the sharing of responsibilities for the cloud between you and your cloud provider.
- -  [Introduction to Azure VMware Solution](/learn/modules/intro-azure-vmware-solution/) is a Microsoft Learn course that dives deeper into Azure VMware Solution.
- -  [Introduction to Azure hybrid cloud services](/learn/modules/intro-to-azure-hybrid-services/) is a Microsoft Learn course that explains hybrid cloud in greater detail.
+- [Shared responsibility model](/azure/security/fundamentals/shared-responsibility) - The sharing of responsibilities for the cloud between you and your cloud provider.
+- [Introduction to Azure VMware Solution](/learn/modules/intro-azure-vmware-solution/) - A Microsoft Learn course that dives deeper into Azure VMware Solution.
+- [Introduction to Azure hybrid cloud services](/learn/modules/intro-to-azure-hybrid-services/) - A Microsoft Learn course that explains hybrid cloud in greater detail.
 
 ## Explore with Copilot
 
@@ -27,5 +27,3 @@ The following resources provide more information on topics in this module or rel
 > - "Explain shared responsibility across on-premises, IaaS, PaaS, and SaaS using one concrete business application example."
 > - "Compare public, private, hybrid, and multicloud models, then recommend the best fit for three different organizational scenarios."
 > - "Create a financial comparison of CapEx versus OpEx for moving a workload to a consumption-based cloud model."
-
-

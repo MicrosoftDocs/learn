@@ -1,6 +1,6 @@
-Microsoft Azure is a cloud computing platform with an ever-expanding set of services to help you build solutions that meet your technical goals. Azure services support everything from simple to complex. Azure has simple web services for hosting internet-facing apps in the cloud. Azure also supports running fully virtualized computers that manage your custom software solutions. Azure provides a wealth of cloud-based services like remote storage, database hosting, and centralized account management. Azure also offers new capabilities like artificial intelligence (AI) and Internet of Things (IoT) focused services.
+Microsoft Azure is a cloud computing platform with an ever-expanding set of services to help you build solutions that meet your technical goals. Azure services support everything from simple to complex. You can host simple web services for internet-facing apps, run fully virtualized computers for custom software solutions, or use cloud-based services like remote storage, database hosting, and centralized account management. Azure also offers capabilities in artificial intelligence (AI) and Internet of Things (IoT).
 
-In this series, you’ll cover cloud computing basics, be introduced to some of the core services provided by Microsoft Azure, and will learn more about the governance and compliance services that you can use.
+In this series, you cover cloud computing basics, get introduced to some of the core services provided by Microsoft Azure, and learn more about the governance and compliance services that you can use.
 :::image type="content" source="../media/azure-services-diagram.png" alt-text="Diagram showing Azure at the center with six core service categories: Compute, Storage, Networking, Databases, AI and ML, and IoT.":::
 
 ## What is Azure Fundamentals?
@@ -19,8 +19,8 @@ If you're just beginning to work with the cloud, or if you already have cloud ex
 
 No matter your goals, Azure Fundamentals has something for you. You should take this course if you:
 
- -  Have general interest in Azure or in cloud computing
- -  Want to earn official certification from Microsoft (AZ-900)
+- Have general interest in Azure or in cloud computing
+- Want to earn official certification from Microsoft (AZ-900)
 
 The Azure Fundamentals learning path series can help you prepare for Exam AZ-900: Microsoft Azure Fundamentals. This exam includes three knowledge domain areas:
 

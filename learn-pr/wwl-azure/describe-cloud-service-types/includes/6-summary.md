@@ -4,10 +4,10 @@ In this module, you learned about the cloud service types and some common scenar
 
 You should now be able to:
 
- -  Describe infrastructure as a service (IaaS).
- -  Describe platform as a service (PaaS).
- -  Describe software as a service (SaaS).
- -  Identify appropriate use cases for each cloud service (IaaS, PaaS, SaaS).
+- Describe infrastructure as a service (IaaS).
+- Describe platform as a service (PaaS).
+- Describe software as a service (SaaS).
+- Identify appropriate use cases for each cloud service (IaaS, PaaS, SaaS).
 
 ## Explore with Copilot
 
@@ -17,5 +17,3 @@ You should now be able to:
 > - "For one application portfolio, choose IaaS, PaaS, or SaaS for each workload and explain the responsibility tradeoffs."
 > - "Show how operational responsibilities shift when moving from IaaS to PaaS, including security, patching, and scalability implications."
 > - "Create a short scenario quiz on cloud service types with answer explanations focused on selecting the right model."
-
-

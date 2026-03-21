@@ -4,9 +4,9 @@ When building or deploying a cloud application, two of the biggest consideration
 
 :::image type="content" source="../media/high-availability.png" alt-text="Diagram showing high availability with a 99.99% uptime gauge and SLA tier badges showing allowed downtime per year.":::
 
-When you’re deploying an application, a service, or any IT resources, it’s important the resources are available when needed. High availability focuses on ensuring maximum availability, regardless of disruptions or events that may occur.
+When you're deploying an application, a service, or any IT resources, it's important the resources are available when needed. High availability focuses on ensuring maximum availability, regardless of disruptions or events that may occur.
 
-When you’re architecting your solution, you’ll need to account for service availability guarantees. Azure is a highly available cloud environment with uptime guarantees depending on the service. These guarantees are part of the service-level agreements (SLAs).
+When you're architecting your solution, you need to account for service availability guarantees. Azure is a highly available cloud environment with uptime guarantees depending on the service. These guarantees are part of the service-level agreements (SLAs).
 
 This short video describes Azure SLAs in more detail.
 
@@ -28,5 +28,4 @@ With vertical scaling, if you were developing an app and you needed more process
 
 ### Horizontal scaling
 
-With horizontal scaling, if you suddenly experienced a steep jump in demand, your deployed resources could be scaled out (either automatically or manually). For example, you could add additional virtual machines or containers, scaling out. In the same manner, if there was a significant drop in demand, deployed resources could be scaled in (either automatically or manually), scaling in.
-
+With horizontal scaling, if you suddenly experienced a steep jump in demand, your deployed resources could be scaled out (either automatically or manually). For example, you could add additional virtual machines or containers. In the same manner, if there was a significant drop in demand, deployed resources could be scaled in (either automatically or manually).

@@ -4,16 +4,16 @@ In traditional IT budgeting, you may hear the terms capital expenditure (CapEx) 
 
 The consumption-based model offers several key benefits:
 
- -  No upfront costs for hardware or datacenter infrastructure.
- -  No need to purchase and manage capacity that may go underutilized.
- -  The ability to add resources when demand increases.
- -  The ability to release resources when demand decreases.
+- No upfront costs for hardware or datacenter infrastructure.
+- No need to purchase and manage capacity that may go underutilized.
+- The ability to add resources when demand increases.
+- The ability to release resources when demand decreases.
 
 ## Capacity planning: traditional vs. cloud
 
 :::image type="content" source="../media/capacity-planning-comparison.png" alt-text="Diagram comparing traditional datacenter fixed capacity with cloud elastic scaling across five quarters, showing how fixed capacity leads to waste or shortfall while cloud capacity tracks actual demand.":::
 
-With a traditional datacenter, you estimate future resource needs in advance. Overestimate, and you overspend on infrastructure that sits idle. Underestimate, and your applications suffer degraded performance — and fixing the problem means ordering, installing, and provisioning additional hardware, power, and cooling.
+With a traditional datacenter, you estimate future resource needs in advance. Overestimate, and you overspend on infrastructure that sits idle. Underestimate, and your applications suffer degraded performance. Fixing the problem means ordering, installing, and provisioning additional hardware, power, and cooling.
 
 In a cloud-based model, you adjust resources to match actual demand. Add virtual machines when you need more capacity; remove them when demand drops. You pay only for what you use, not for idle capacity. In practice, you can scale out during peak demand and scale back in when traffic subsides.
 
@@ -21,8 +21,8 @@ In a cloud-based model, you adjust resources to match actual demand. Add virtual
 
 Cloud providers use a pay-as-you-go pricing model. You typically pay only for the services you consume, which helps you:
 
- -  Plan and manage operating costs.
- -  Run infrastructure more efficiently.
- -  Scale as workload needs change.
+- Plan and manage operating costs.
+- Run infrastructure more efficiently.
+- Scale as workload needs change.
 
-The cloud provider maintains the underlying infrastructure — power, cooling, hardware, networking — so you can focus on solving business problems and delivering new capabilities to your users.
+The cloud provider maintains the underlying infrastructure, including power, cooling, hardware, and networking, so you can focus on solving business problems and delivering new capabilities to your users.
