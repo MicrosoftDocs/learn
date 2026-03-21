@@ -1,30 +1,28 @@
-When comparing IT infrastructure models, there are two types of expenses to consider. Capital expenditure (CapEx) and operational expenditure (OpEx).
+Cloud computing operates on a consumption-based model. You pay for the IT resources you use, and nothing more. Instead of buying and maintaining your own datacenter infrastructure, you rent compute power and storage and release those resources when you're done.
 
-CapEx is typically a one-time, up-front expenditure to purchase or secure tangible resources. A new building, repaving the parking lot, building a datacenter, or buying a company vehicle are examples of CapEx.
+In traditional IT budgeting, you may hear the terms capital expenditure (CapEx) and operational expenditure (OpEx). CapEx refers to up-front spending on physical infrastructure like servers, network hardware, and datacenter space. OpEx refers to ongoing spending on services over time. Because you pay for cloud services as you consume them, cloud computing is classified as an operational expense.
 
-In contrast, OpEx is spending money on services or products over time. Renting a convention center, leasing a company vehicle, or signing up for cloud services are all examples of OpEx.
+The consumption-based model offers several key benefits:
 
-Cloud computing falls under OpEx because cloud computing operates on a consumption-based model. With cloud computing, you don’t pay for the physical infrastructure, the electricity, the security, or anything else associated with maintaining a datacenter. Instead, you pay for the IT resources you use. If you don’t use any IT resources this month, you don’t pay for any IT resources.
+ -  No upfront costs for hardware or datacenter infrastructure.
+ -  No need to purchase and manage capacity that may go underutilized.
+ -  The ability to add resources when demand increases.
+ -  The ability to release resources when demand decreases.
 
-This consumption-based model has many benefits, including:
+## Capacity planning: traditional vs. cloud
 
- -  No upfront costs.
- -  No need to purchase and manage costly infrastructure that users might not use to its fullest potential.
- -  The ability to pay for more resources when they're needed.
- -  The ability to stop paying for resources that are no longer needed.
+:::image type="content" source="../media/capacity-planning-comparison.png" alt-text="Diagram comparing traditional datacenter fixed capacity with cloud elastic scaling across five quarters, showing how fixed capacity leads to waste or shortfall while cloud capacity tracks actual demand.":::
 
-With a traditional datacenter, you try to estimate the future resource needs. If you overestimate, you spend more on your datacenter than you need to and potentially waste money. If you underestimate, your datacenter will quickly reach capacity and your applications and services may suffer from decreased performance. Fixing an under-provisioned datacenter can take a long time. You may need to order, receive, and install more hardware. You'll also need to add power, cooling, and networking for the extra hardware.
+With a traditional datacenter, you estimate future resource needs in advance. Overestimate, and you overspend on infrastructure that sits idle. Underestimate, and your applications suffer degraded performance — and fixing the problem means ordering, installing, and provisioning additional hardware, power, and cooling.
 
-In a cloud-based model, you don’t have to worry about getting the resource needs just right. If you find that you need more virtual machines, you add more. If the demand drops and you don’t need as many virtual machines, you remove machines as needed. Either way, you’re only paying for the virtual machines that you use, not the “extra capacity” that the cloud provider has on hand.
+In a cloud-based model, you adjust resources to match actual demand. Add virtual machines when you need more capacity; remove them when demand drops. You pay only for what you use, not for idle capacity. In practice, you can scale out during peak demand and scale back in when traffic subsides.
 
-## Compare cloud pricing models
+## Cloud pricing
 
-Cloud computing is the delivery of computing services over the internet by using a pay-as-you-go pricing model. You typically pay only for the cloud services you use, which helps you:
+Cloud providers use a pay-as-you-go pricing model. You typically pay only for the services you consume, which helps you:
 
- -  Plan and manage your operating costs.
- -  Run your infrastructure more efficiently.
- -  Scale as your business needs change.
+ -  Plan and manage operating costs.
+ -  Run infrastructure more efficiently.
+ -  Scale as workload needs change.
 
-To put it another way, cloud computing is a way to rent compute power and storage from someone else’s datacenter. You can treat cloud resources like you would resources in your own datacenter. However, unlike in your own datacenter, when you're done using cloud resources, you give them back. You’re billed only for what you use.
-
-Instead of maintaining CPUs and storage in your datacenter, you rent them for the time that you need them. The cloud provider takes care of maintaining the underlying infrastructure for you. The cloud enables you to quickly solve your toughest business challenges and bring cutting-edge solutions to your users.
+The cloud provider maintains the underlying infrastructure — power, cooling, hardware, networking — so you can focus on solving business problems and delivering new capabilities to your users.

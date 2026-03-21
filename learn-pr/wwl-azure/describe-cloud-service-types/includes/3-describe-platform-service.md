@@ -1,14 +1,12 @@
-Platform as a service (PaaS) is a middle ground between renting space in a datacenter (infrastructure as a service) and paying for a complete and deployed solution (software as a service). In a PaaS environment, the cloud provider maintains the physical infrastructure, physical security, and connection to the internet. They also maintain the operating systems, middleware, development tools, and business intelligence services that make up a cloud solution. In a PaaS scenario, you don't have to worry about the licensing or patching for operating systems and databases.
+Platform as a service (PaaS) is a middle ground between renting space in a datacenter (infrastructure as a service) and paying for a complete and deployed solution (software as a service). In a PaaS environment, the cloud provider maintains the physical infrastructure, physical security, and connection to the internet. They also maintain the operating systems, middleware, development tools, and analytics services that make up a cloud solution. In a PaaS scenario, you don't have to worry about the licensing or patching for operating systems and databases.
 
 PaaS is well suited to provide a complete development environment without the headache of maintaining all the development infrastructure.
 
-## Shared responsibility model
+## Responsibility focus in PaaS
 
-The shared responsibility model applies to all the cloud service types. PaaS splits the responsibility between you and the cloud provider. The cloud provider is responsible for maintaining the physical infrastructure and its access to the internet, just like in IaaS. In the PaaS model, the cloud provider will also maintain the operating systems, databases, and development tools. Think of PaaS like using a domain joined machine: IT maintains the device with regular updates, patches, and refreshes.
+In PaaS, the cloud provider manages the physical infrastructure and platform components such as operating systems, middleware, and managed runtimes. You focus on your application code, data, and access controls. Depending on service configuration, some networking and application security settings are shared.
 
-Depending on the configuration, you or the cloud provider may be responsible for networking settings and connectivity within your cloud environment, network and application security, and the directory infrastructure.
-
-:::image type="content" source="../media/shared-responsibility-b3829bfe.svg" alt-text="Diagram showing the responsibilities of the shared responsibility model.":::
+:::image type="content" source="../media/describe-platform-service.png" alt-text="Diagram showing PaaS responsibility split with customer managing applications and data and provider managing the platform and infrastructure, plus common scenarios.":::
 
 
 ## Scenarios
@@ -16,4 +14,5 @@ Depending on the configuration, you or the cloud provider may be responsible for
 Some common scenarios where PaaS might make sense include:
 
  -  Development framework: PaaS provides a framework that developers can build upon to develop or customize cloud-based applications. Similar to the way you create an Excel macro, PaaS lets developers create applications using built-in software components. Cloud features such as scalability, high-availability, and multi-tenant capability are included, reducing the amount of coding that developers must do.
- -  Analytics or business intelligence: Tools provided as a service with PaaS allow organizations to analyze and mine their data, finding insights and patterns and predicting outcomes to improve forecasting, product design decisions, investment returns, and other business decisions.
+ -  Analytics or BI: Tools provided as a service with PaaS allow teams to analyze and mine their data, find insights and patterns, and predict outcomes to improve planning and operational decisions.
+

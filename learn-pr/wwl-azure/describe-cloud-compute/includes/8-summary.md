@@ -18,3 +18,14 @@ The following resources provide more information on topics in this module or rel
  -  [Shared responsibility model](/azure/security/fundamentals/shared-responsibility) The shared responsibility model is the sharing of responsibilities for the cloud between you and your cloud provider.
  -  [Introduction to Azure VMware Solution](/learn/modules/intro-azure-vmware-solution/) is a Microsoft Learn course that dives deeper into Azure VMware Solution.
  -  [Introduction to Azure hybrid cloud services](/learn/modules/intro-to-azure-hybrid-services/) is a Microsoft Learn course that explains hybrid cloud in greater detail.
+
+## Explore with Copilot
+
+> [!TIP]
+> Try one of these prompts in Copilot Chat:
+>
+> - "Explain shared responsibility across on-premises, IaaS, PaaS, and SaaS using one concrete business application example."
+> - "Compare public, private, hybrid, and multicloud models, then recommend the best fit for three different organizational scenarios."
+> - "Create a financial comparison of CapEx versus OpEx for moving a workload to a consumption-based cloud model."
+
+

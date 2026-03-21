@@ -2,17 +2,19 @@ Software as a service (SaaS) is the most complete cloud service model from a pro
 
 While the SaaS model may be the least flexible, it’s also the easiest to get up and running. It requires the least amount of technical knowledge or expertise to fully employ.
 
-## Shared responsibility model
+## Responsibility focus in SaaS
 
-The shared responsibility model applies to all the cloud service types. SaaS is the model that places the most responsibility with the cloud provider and the least responsibility with the user. In a SaaS environment you’re responsible for the data that you put into the system, the devices that you allow to connect to the system, and the users that have access. Nearly everything else falls to the cloud provider. The cloud provider is responsible for physical security of the datacenters, power, network connectivity, and application development and patching.
+In SaaS, the cloud provider manages almost all of the application stack, including infrastructure, platform, and application maintenance. You primarily manage your data, identity and access settings, and device access posture. SaaS has the lowest operational overhead for customers.
 
-:::image type="content" source="../media/shared-responsibility-b3829bfe.svg" alt-text="Diagram showing the responsibilities of the shared responsibility model.":::
+:::image type="content" source="../media/describe-software-service.png" alt-text="Diagram showing SaaS responsibility split with customer managing data and access and provider managing everything else, plus common scenarios.":::
 
+For example, a team using a SaaS collaboration platform can focus on user onboarding, access controls, and data governance while the provider handles infrastructure patching, application updates, and availability.
 
 ## Scenarios
 
 Some common scenarios for SaaS are:
 
  -  Email and messaging.
- -  Business productivity applications.
+ -  Productivity applications.
  -  Finance and expense tracking.
+
