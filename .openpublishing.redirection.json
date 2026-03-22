@@ -1,4 +1,4 @@
-﻿{
+{
   "redirections": [
     {
       "source_path_from_root": "/learn-pr/azure/deploy-java-spring-boot-app-service-mysql/index.yml",
@@ -64925,6 +64925,41 @@
     {
       "source_path_from_root": "/learn-pr/wwl-databricks/select-and-configure-compute/8-summary.yml",
       "redirect_url": "/training/wwl-databricks/select-and-configure-compute/9-summary"
+    },
+    {
+      "source_path": "learn-pr/azure/configure-and-manage-azure-key-vault/index.yml",
+      "redirect_url": "/azure/key-vault/general/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/configure-and-manage-azure-key-vault/includes/1-introduction.md",
+      "redirect_url": "/azure/key-vault/general/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/configure-and-manage-azure-key-vault/includes/2-key-vault-usage.md",
+      "redirect_url": "/azure/key-vault/general/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/configure-and-manage-azure-key-vault/includes/3-manage-access-and-permissions-to-secrets.md",
+      "redirect_url": "/azure/key-vault/general/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/configure-and-manage-azure-key-vault/includes/4-store-secrets-in-akv.md",
+      "redirect_url": "/azure/key-vault/general/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/configure-and-manage-azure-key-vault/includes/5-manage-certificates.md",
+      "redirect_url": "/azure/key-vault/general/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/configure-and-manage-azure-key-vault/includes/6-summary.md",
+      "redirect_url": "/azure/key-vault/general/overview",
+      "redirect_document_id": false
     }
   ]
 }
