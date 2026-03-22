@@ -11,7 +11,7 @@ metadata:
   ms.custom:
   - N/A
   ms.service: azure
-  ai-usage: human-only
+  ai-usage: ai-generated
 title: Describe the benefits of using cloud services
 summary: This module introduces you to the benefits cloud computing can offer you or your organization.
 abstract: |
@@ -24,6 +24,8 @@ abstract: |
   -   Describe the benefits of security and governance in the cloud.
 
   -   Describe the benefits of manageability in the cloud.
+
+  -   Describe sustainability considerations and benefits in the cloud.
 prerequisites: '-   Basic familiarity with IT terms and concepts'
 iconUrl: /training/achievements/describe-benefits-use-cloud-services.svg
 levels:
@@ -43,6 +45,7 @@ units:
 - learn.wwl.describe-benefits-use-cloud-services.reliability-predictability-cloud
 - learn.wwl.describe-benefits-use-cloud-services.security-governance-cloud
 - learn.wwl.describe-benefits-use-cloud-services.manageability-cloud
+- learn.wwl.describe-benefits-use-cloud-services.sustainability-cloud
 - learn.wwl.describe-benefits-use-cloud-services.knowledge-check
 - learn.wwl.describe-benefits-use-cloud-services.summary
 badge:
