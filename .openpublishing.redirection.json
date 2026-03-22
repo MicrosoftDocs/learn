@@ -64932,32 +64932,32 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/azure/configure-and-manage-azure-key-vault/includes/1-introduction.md",
+      "source_path": "learn-pr/azure/configure-and-manage-azure-key-vault/1-introduction.yml",
       "redirect_url": "/azure/key-vault/general/overview",
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/azure/configure-and-manage-azure-key-vault/includes/2-key-vault-usage.md",
+      "source_path": "learn-pr/azure/configure-and-manage-azure-key-vault/2-key-vault-usage.yml",
       "redirect_url": "/azure/key-vault/general/overview",
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/azure/configure-and-manage-azure-key-vault/includes/3-manage-access-and-permissions-to-secrets.md",
+      "source_path": "learn-pr/azure/configure-and-manage-azure-key-vault/3-manage-access-and-permissions-to-secrets.yml",
       "redirect_url": "/azure/key-vault/general/overview",
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/azure/configure-and-manage-azure-key-vault/includes/4-store-secrets-in-akv.md",
+      "source_path": "learn-pr/azure/configure-and-manage-azure-key-vault/4-store-secrets-in-akv.yml",
       "redirect_url": "/azure/key-vault/general/overview",
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/azure/configure-and-manage-azure-key-vault/includes/5-manage-certificates.md",
+      "source_path": "learn-pr/azure/configure-and-manage-azure-key-vault/5-manage-certificates.yml",
       "redirect_url": "/azure/key-vault/general/overview",
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/azure/configure-and-manage-azure-key-vault/includes/6-summary.md",
+      "source_path": "learn-pr/azure/configure-and-manage-azure-key-vault/6-summary.yml",
       "redirect_url": "/azure/key-vault/general/overview",
       "redirect_document_id": false
     }
